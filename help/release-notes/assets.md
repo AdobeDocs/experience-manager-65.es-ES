@@ -2,9 +2,9 @@
 title: Notas de la versión de [!DNL Adobe Experience Manager Assets] 6.5.
 description: Las nuevas capacidades y mejoras de [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 41%
 
 ---
@@ -68,7 +68,7 @@ En las grandes empresas se puede distribuir la infraestructura necesaria para cr
 
 [!DNL Dynamic Media] proporciona envío y creación de medios enriquecidos mejorados  [!DNL Experience Manager Assets] para impulsar experiencias de vanguardia que son envolventes y personalizadas. Al cargar un único recurso maestro de alta calidad y utilizar nuestros visores y procesamiento avanzados en la nube, puede distribuir cualquier combinación de representaciones sobre la marcha para respaldar la estrategia de medios de su organización.
 
-Para obtener más información sobre las nuevas [!DNL Dynamic Media] funciones, consulte [Notas de la versión de Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+Para obtener más información sobre las nuevas [!DNL Dynamic Media] funciones, consulte [Notas de la versión de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### Compatibilidad con video de 360 {#video-support}
 
@@ -80,7 +80,7 @@ Ahora puede personalizar las miniaturas de sus recursos de vídeo utilizando fot
 
 ### Mejoras de accesibilidad {#accessibility-enhancements}
 
-[!DNL Dynamic Media] los visores ahora admiten funciones de accesibilidad mejoradas como compatibilidad con Aria, lectores de pantalla y texto alternativo. Para obtener información adicional, consulte [Notas de versión de los visores de Dynamic Media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+[!DNL Dynamic Media] los visores ahora admiten funciones de accesibilidad mejoradas como compatibilidad con Aria, lectores de pantalla y texto alternativo. Para obtener información adicional, consulte [Notas de versión de los visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 ## Mejora de la opción de búsqueda {#experience-enhancement-for-searching}
 
