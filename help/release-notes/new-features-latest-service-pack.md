@@ -4,9 +4,9 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1c633e87d773f864c65320d3ce658f61271d086d
+source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
 workflow-type: tm+mt
-source-wordcount: '2807'
+source-wordcount: '2818'
 ht-degree: 1%
 
 ---
@@ -52,11 +52,11 @@ Ahora puede realizar los movimientos de página y los despliegues de MSM como op
 
 ### Modelo de datos de formulario Configuración de cliente HTTP para optimizar el rendimiento {#fdm-http-client-config}
 
-[!DNL Experience Manager Forms] modelo de datos de formulario al integrarse con los servicios web RESTful como origen de datos ahora incluye configuraciones de cliente HTTP para la optimización del rendimiento.
+[!DNL Experience Manager Forms] modelo de datos de formulario al integrarse con los servicios web RESTful como origen de datos ahora incluye configuraciones de cliente HTTP para la optimización del rendimiento. Consulte [Configuración de fuentes de datos](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
 
 ### Disponibilidad de la opción Restablecer para cada componente en el modo Diseño {#reset-option-layout-mode}
 
-Ahora puede utilizar la opción de restablecimiento para cada componente en el modo Diseño de un formulario adaptable. Al definir un diseño de varias columnas para un panel, puede utilizar esta función para restablecer componentes individuales dentro del panel.
+Ahora puede utilizar la opción de restablecimiento para cada componente en el modo Diseño de un formulario adaptable. Al definir un diseño de varias columnas para un panel, puede utilizar esta función para restablecer componentes individuales dentro del panel. Consulte [Uso del modo de diseño para cambiar el tamaño de los componentes](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
 ## Características clave de los paquetes de servicios [!DNL Experience Manager] 6.5 anteriores {#key-features-previous-service-packs}
 
