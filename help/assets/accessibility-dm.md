@@ -1,13 +1,13 @@
 ---
 title: Accesibilidad en Dynamic Media
-description: Obtenga información sobre la accesibilidad en Dynamic Media y los visores de Dynamic Media
+description: Obtenga información sobre la compatibilidad con la accesibilidad en visores de Dynamic Media y Dynamic Media
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 696aaa54007e4a78fe6b07d8ba65660595286dca
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Consulte [Edición del recorte inteligente o muestra inteligente de una sola ima
 
 Todos los componentes de visores [!DNL Dynamic Media] listos para usar admiten la accesibilidad del teclado para sus clientes.
 
-Consulte [Navegación y accesibilidad del teclado](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) en la Guía de referencia de visores de Dynamic Media.
+Consulte [Navegación y accesibilidad del teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) en la Guía de referencia de visores de Dynamic Media.
 
 ## Compatibilidad con tecnología de asistencia en visores [!DNL Dynamic Media] {#assistive-technology-support-for-dm-viewers}
 
