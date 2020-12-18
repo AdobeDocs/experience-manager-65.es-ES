@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f63e13486792f9975c84202b2cd3ddcf618ce0fc
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '11812'
+source-wordcount: '11277'
 ht-degree: 8%
 
 ---
@@ -27,9 +27,9 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 >[!NOTE]
 >
->Antes de trabajar con vídeo en Dynamic Media, asegúrese de que el administrador de AEM ya ha activado y configurado los Cloud Services de Dynamic Media en el modo Dynamic Media (Scene7) o Dynamic Media (Dynamic Media) en el modo híbrido.
+>Antes de trabajar con vídeo en Dynamic Media, asegúrese de que el administrador de AEM ya ha habilitado y configurado Cloud Services de Dynamic Media en modo Dynamic Media - Scene7 o Dynamic Media - híbrido.
 >
->* Consulte [Configuración de Cloud Services de Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media - modo Scene7 y [Resolución de problemas de Dynamic Media - modo Scene7.](/help/assets/troubleshoot-dms7.md)
+>* Consulte [Configuración de Cloud Services de Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media - modo Scene7 y [Solución de problemas de Dynamic Media - modo Scene7.](/help/assets/troubleshoot-dms7.md)
    >
    >
 * Consulte [Configuración de Cloud Services de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media - Modo híbrido.
@@ -38,7 +38,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 
 
-1. **Cargue** los vídeos de Dynamic Media de la siguiente manera:
+1. **Cargue los** vídeos de Dynamic Media de la siguiente manera:
 
    * Cree su propio perfil de codificación de vídeo. O bien, puede utilizar el perfil predefinido _Codificación de vídeo adaptable_ que se incluye con Dynamic Media.
 
@@ -58,7 +58,7 @@ La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para 
 
 
 
-1. **Administre** los vídeos de Dynamic Media realizando una de las acciones siguientes:
+1. **Administre sus** vídeos de Dynamic Media realizando una de las siguientes acciones:
 
    * Organización, exploración y búsqueda de recursos de vídeo
 
@@ -98,7 +98,7 @@ recursos digitalesObtenga más información sobre las  [prácticas recomendadas 
 
 
 
-1. **Publique** los vídeos de Dynamic Media siguiendo uno de estos procedimientos:
+1. **Publique sus** vídeos de Dynamic Media siguiendo uno de estos procedimientos:
 
    * Si utiliza Adobe Experience Manager como sistema de gestoras de contenido web, puede agregar vídeos directamente a sus páginas web.
 
@@ -119,7 +119,7 @@ recursos digitalesObtenga más información sobre las  [prácticas recomendadas 
 
 ## Uso de vídeo en Dynamic Media {#working-with-video-in-dynamic-media}
 
-Vídeo en Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para flujo continuo en varias pantallas, incluidos equipos de escritorio, iOS, Android, Blackberry y dispositivos móviles Windows. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo codificadas con diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
+Video en Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para transmitir en varias pantallas, incluidos dispositivos móviles de escritorio, iOS, Android, Blackberry y Windows. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo codificadas con diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
 
 Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptable. El vídeo se transmite a equipos de escritorio, dispositivos móviles o tablets.
 
@@ -146,13 +146,13 @@ Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admite lo 
 * Organice, explore y busque vídeos con compatibilidad total con metadatos para una administración eficaz de los recursos de vídeo.
 * Distribuya conjuntos de vídeos adaptables en la Web, así como en equipos de escritorio y dispositivos móviles, incluidos iPhone, iPad, Android, Blackberry y Windows Phone.
 
-El flujo de vídeo adaptable es compatible con diversas plataformas de iOS. Consulte [Guía de referencia de visores de medios dinámicos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
+El flujo de vídeo adaptable es compatible con diversas plataformas de iOS. Consulte [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
 Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. Puede encontrar los dispositivos Blackberry compatibles con este formato de vídeo en: [Formatos de vídeo admitidos en Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 Puede encontrar los dispositivos Windows compatibles con este formato de vídeo en los siguientes: [Formatos de vídeo compatibles con Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
-* Reproducción de vídeo con ajustes preestablecidos de visor de vídeo de Dynamic Media, incluidos los siguientes:
+* Reproducción de vídeo con los ajustes preestablecidos de visor de vídeo de Dynamic Media, incluidos los siguientes:
 
    * Visores de vídeos únicos.
    * Visores de medios mixtos que combinan contenido de vídeo y de imagen.
@@ -265,7 +265,7 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
 
 ## Arquitectura de la solución de vídeo de Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
-El siguiente gráfico muestra el flujo de trabajo general de creación de vídeos que se cargan y codifican mediante DMGgateway (en modo híbrido de Dynamic Media) y están disponibles para el consumo público.
+El siguiente gráfico muestra el flujo de trabajo general de creación de vídeos que se cargan y codifican mediante DMGgateway (en modo Dynamic Media híbrido) y que están disponibles para el consumo público.
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -748,9 +748,9 @@ Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. E
 
 >[!NOTE]
 >
->Cuando se ejecuta en el modo Dynamic Media: Scene7, tenga en cuenta que la publicación inmediata no se publica automáticamente en YouTube. Cuando se configura el modo Dynamic Media - Scene7, hay dos opciones de publicación entre las que elegir: **[!UICONTROL Inmediatamente]** o **[!UICONTROL Tras la Activación.]**
+>Cuando se ejecuta en modo Dynamic Media - Scene7, tenga en cuenta que la publicación inmediata no se publica automáticamente en YouTube. Cuando se configura el modo Dynamic Media - Scene7, hay dos opciones de publicación entre las que elegir: **[!UICONTROL Inmediatamente]** o **[!UICONTROL Tras la Activación.]**
 >
->**[!UICONTROL Publicar]** inmediatamente significa que el recurso cargado (una vez sincronizado con IPS) se publica automáticamente en el sistema de envío. Aunque esto es cierto para los medios dinámicos, no es cierto para YouTube. Para publicar en YouTube, debe publicar mediante AEM Author.
+>**[!UICONTROL Publicar]** inmediatamente significa que el recurso cargado (una vez sincronizado con IPS) se publica automáticamente en el sistema de envío. Aunque eso es cierto para Dynamic Media, no es cierto para YouTube. Para publicar en YouTube, debe publicar mediante AEM Author.
 
 >[!NOTE]
 >
@@ -790,7 +790,7 @@ Después de ocho horas si todavía ve un mensaje de estado que dice **[!UICONTRO
 
 ### Vinculación de direcciones URL de YouTube a su Aplicación web {#linking-youtube-urls-to-your-web-application}
 
-Puede obtener una cadena URL de YouTube generada por Dynamic Media después de publicar el vídeo. Al copiar la URL de YouTube, ésta se coloca en el portapapeles para que pueda pegarla según sea necesario en las páginas del sitio web o la aplicación.
+Puede obtener una cadena URL de YouTube que Dynamic Media genera después de publicar el vídeo. Al copiar la URL de YouTube, ésta se coloca en el portapapeles para que pueda pegarla según sea necesario en las páginas del sitio web o la aplicación.
 
 >[!NOTE]
 >
@@ -960,7 +960,7 @@ La configuración de la notificación depende de si desea recibir notificaciones
 
 >[!NOTE]
 >
->Los informes de vídeo solo están disponibles cuando se ejecuta el modo Dynamic Media - Híbrido.
+>Los informes de vídeo solo están disponibles cuando se ejecuta Dynamic Media en modo híbrido.
 
 Los informes de vídeo muestran varias métricas acumuladas durante un período de tiempo determinado para ayudarle a supervisar que *los vídeos acumulados e individuales publicados funcionan según lo esperado. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
 
@@ -984,7 +984,7 @@ Consulte también [Configuración de Cloud Services de Dynamic Media](/help/asse
 
 De forma predeterminada, la primera vez que se ingresa a Informes de video, el informe muestra los datos de video comenzando en el primer mes actual y finalizando con la fecha del mes actual. Sin embargo, puede anular el intervalo de fechas predeterminado especificando su propio intervalo de fechas. La próxima vez que ingrese Informes de video, se utilizará el intervalo de fechas especificado.
 
-Para que los informes de vídeo funcionen correctamente, se crea automáticamente una ID de grupo de informes cuando se configuran Cloud Services de medios dinámicos. Al mismo tiempo, la ID del grupo de informes se transfiere al servidor de publicación para que esté disponible para la función Copiar URL al realizar la previsualización de recursos. Sin embargo, esto requiere que el servidor de publicación ya esté configurado. Si el servidor de publicación no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, deberá volver a la configuración de Dynamic Media Cloud y tocar **[!UICONTROL Aceptar.]**
+Para que los informes de vídeo funcionen correctamente, se crea automáticamente una ID de grupo de informes cuando se configuran Cloud Services de Dynamic Media. Al mismo tiempo, la ID del grupo de informes se transfiere al servidor de publicación para que esté disponible para la función Copiar URL al realizar la previsualización de recursos. Sin embargo, esto requiere que el servidor de publicación ya esté configurado. Si el servidor de publicación no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, deberá volver a la Configuración de Dynamic Media Cloud y tocar **[!UICONTROL Aceptar.]**
 
 Para vista de informes de vídeo:
 
@@ -1001,66 +1001,67 @@ Especifique el intervalo de fechas de inicio y finalización para el que desea d
 
 1. En la tabla que lista los principales vídeos publicados, toque un nombre de vídeo para reproducir el vídeo y también vea el informe desplegable de retención de audiencias del vídeo.
 
-### Visualización de informes de vídeo basados en un visor de vídeo creado con el SDK de visor de Scene7 HMTL5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+<!-- OBSOLETE CONTENT ### Viewing video reports based on a video viewer that you created using the Scene7 HMTL5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Si está utilizando un visor de vídeo incorporado proporcionado por Dynamic Media o si ha creado un ajuste preestablecido de visor personalizado basado en un visor de vídeo incorporado, no se requieren pasos adicionales para la vista de informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en el SDK de visor HTML5 de Scene7, siga estos pasos para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
+If you are using an out-of-box video viewer provided by Dynamic Media, or if you created a custom viewer preset based off of an out-of-box video viewer, then no additional steps are required to view video reports. However, if you have created your own video viewer based off the Scene7 HTML5 Viewer SDK, then use the following steps to ensure the your video viewer is sending tracking events to Dynamic Media Video Reports.
 
-Utilice la referencia de visores de medios dinámicos y el SDK de visores HTML5 de Scene7 para crear sus propios visores de vídeo.
+Use the Dynamic Media Viewers Reference and the Scene7 HTML5 Viewers SDK to create your own video viewers.
 
-Consulte [Guía de referencia de visores de medios dinámicos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). -->
 
-<!-- Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
+<!-- OBSOLETE CONTENT Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
 See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-Para vista de informes de vídeo basados en un visor de vídeo creado con el SDK de visor HTML5 de Scene7:
+<!-- OBSOLETE CONTENT To view Video Reports based on a video viewer that you created using the Scene7 HTML5 Viewer SDK:
 
-1. Navegue a cualquier recurso de vídeo publicado.
-1. Junto a la esquina superior izquierda de la página del recurso, en la lista desplegable, seleccione **[!UICONTROL Visualizadores.]**
-1. Seleccione cualquier ajuste preestablecido de visor de vídeo y copie el código incrustado.
-1. En el código incrustado, busque la línea con lo siguiente:
+1. Navigate to any published video asset.
+1. Near the upper-left corner of the asset's page, from the drop-down list, select **[!UICONTROL Viewers.]**
+1. Select any video viewer preset and copy the embed code.
+1. In the embed code, find the line with the following:
 
    `videoViewer.setParam("config2", "<value>");`
 
-   El parámetro `config2` habilita el seguimiento en los visores HTML5. También es un ajuste preestablecido específico para la compañía que contiene la información de configuración para el Sistema de informes de vídeo y para las configuraciones de Adobe Analytics específicas del cliente.
+   The `config2` parameter enables tracking in HTML5 Viewers. It is also a company-specific preset that contains the configuration information for Video Reporting, and for customer-specific Adobe Analytics configurations.
 
-   El valor correcto del parámetro config2 se encuentra tanto en la función **Embed Code **como en la función copy **URL **1. En la URL desde el comando copy **URL **, el parámetro que se busca es `&config2=<value>` . El valor es casi siempre `companypreset`, pero en algunos casos también puede ser `companypreset-1`, `companypreset-2`, etc.
+   The correct value for the config2 parameter is found in both the **Embed Code **and in the copy **URL **function. In the URL from the copy **URL **command, the parameter to look for is `&config2=<value>` . The value is almost always `companypreset`, but in some instances it can also be `companypreset-1`, `companypreset-2`, and so forth.
 
-1. En el código del visor de vídeo personalizado, agregue AppMeasurementBridge.jsp a la página del visor haciendo lo siguiente:
+1. In your custom video viewer code, add AppMeasurementBridge .jsp to the viewer page by doing the following:
 
-   * Primero, determine si necesita el parámetro `&preset`.
-Si el parámetro `config2` es `companypreset`, *no necesita `&preset=parameter`.
-Si `config2` es cualquier otra cosa, establezca el parámetro preestablecido igual que el parámetro `config2`. Por ejemplo, si `config2=companypreset-2`, agregue `&param2=companypreset-2` a la dirección URL de AppMeasurementBridge.jsp.
+    * First, determine if you need the `&preset` parameter.
+      If the `config2` parameter is `companypreset`, you do *not *need `&preset=parameter`.
+      If `config2` is anything else, set the preset parameter the same as the `config2` parameter. For example, if `config2=companypreset-2`, add `&param2=companypreset-2` to the AppMeasurmentBridge.jsp URL.
 
-   * A continuación, agregue la secuencia de comandos AppMeasurementBridge.jsp:
+    * Then, add the AppMeasurementBridge.jsp script:
       `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
-1. Cree el componente TrackingManager haciendo lo siguiente:
+1. Create the TrackingManager component by doing the following:
 
-   * Después de llamar a `s7sdk.Utils.init();`, cree una instancia de TrackingManager para rastrear eventos agregando lo siguiente:
+    * After calling `s7sdk.Utils.init();` create a TrackingManager instance to track events by adding the following:
       `var trackingManager = new s7sdk.TrackingManager();`
 
-   * Conecte los componentes a TrackingManager haciendo lo siguiente:
-En el controlador de evento `s7sdk.Event.SDK_READY`, adjunte el componente que desee rastrear al TrackingManager.
-Por ejemplo, si el componente es `videoPlayer`, agregue
+    * Connect components to TrackingManager by doing the following:
+      In the `s7sdk.Event.SDK_READY` event handler, attach the component you want to track to the TrackingManager.
+      For example, if the component is `videoPlayer`, add
       `trackingManager.attach(videoPlayer);`
-para asociar el componente al trackingManager. Para realizar el seguimiento de varios visores en una página, utilice varios componentes del administrador de seguimiento.
+      to attach the component to the trackingManager. To track multiple viewers on a page, use multiple tracking mangaer components.
 
-   * Cree el objeto AppMeasurementBridge agregando lo siguiente:
+    * Create the AppMeasurementBridge object by adding the following:
 
       ```
       var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
       ```
 
-   * Añada la función de seguimiento agregando lo siguiente:
+    * Add the tracking function by adding the following:
 
       ```
       trackingManager.setCallback(appMeasurementBridge.track,
        appMeasurementBridge);
       ```
-   El objeto appMeasurementBridge tiene una función de seguimiento integrada. Sin embargo, puede proporcionar su propio equipo para admitir varios sistemas de seguimiento u otra funcionalidad.
 
-   Para obtener más información, consulte *Uso del componente TrackingManager* en la *Guía del usuario del SDK del visor HTML5 de Scene7* disponible para su descarga en [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+   The appMeasurementBridge object has a built-in track function. However, you can provide your own to support multiple tracking systems or other functionality.
+
+   For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 ## Añadir subtítulos a vídeo {#adding-captions-to-video}
 
@@ -1074,7 +1075,7 @@ El subtítulo también permite una buena accesibilidad mediante subtítulos opci
 
 Dynamic Media tiene la capacidad de convertir archivos de subtítulos al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear e indexar el contenido para que los vídeos se puedan descubrir más fácilmente y proporcionar a los clientes detalles adicionales sobre el contenido del vídeo.
 
-Consulte [Servicio de contenido estático (no de imagen)](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) en la *Ayuda de la API de servicio de imágenes de Scene7* para obtener más información sobre el uso de la función JSON en una dirección URL.
+Consulte [Servicio de contenido estático (no de imagen)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) en la *Ayuda de la API de servicio y procesamiento de imágenes de Dynamic Media* para obtener más información sobre el uso de la función JSON en una dirección URL.
 
 Para agregar subtítulos o subtítulos a un vídeo:
 
@@ -1127,9 +1128,9 @@ Puede facilitar la visualización y navegación de los vídeos de formato largo 
 
 >[!NOTE]
 >
->El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media admiten marcadores de capítulo, pero puede que no sea así el uso de reproductores de vídeo de terceros.
+>El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media sí admiten marcadores de capítulo, pero puede que no sea así el uso de reproductores de vídeo de terceros.
 
-Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de utilizar un ajuste preestablecido de visor de vídeo. Para obtener instrucciones sobre cómo crear su propio visor HTML5 con navegación por capítulos, en la guía SDK de visor de Adobe Scene7 para HTML5, haga referencia al encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. El SDK de visor de Adobe Scene7 está disponible como descarga de [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
+<!-- OBSOLETE CONTENT If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 Puede crear una lista de capítulo para el vídeo de la misma manera que crea rótulos. Es decir, se crea un archivo WebVTT. Tenga en cuenta, sin embargo, que este archivo debe ser independiente de cualquier archivo de subtítulos WebVTT que también esté utilizando; no puede combinar rótulos y capítulos en un archivo WebVTT.
 
@@ -1211,11 +1212,11 @@ Tenga en cuenta que una imagen en miniatura de vídeo personalizada que seleccio
 
 La posibilidad de personalizar una miniatura de vídeo solo está disponible después de haber aplicado un perfil de vídeo a la carpeta en la que se encuentra el vídeo.
 
-Consulte también [Acerca de las miniaturas de vídeo en Dynamic Media: modo híbrido](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
+Consulte también [Acerca de las miniaturas de vídeo en Dynamic Media - Modo híbrido](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
 
 ### Añadir una miniatura de vídeo personalizada {#adding-a-custom-video-thumbnail}
 
-Estos pasos solo se aplican a los medios dinámicos que se ejecutan en el modo &quot;Dynamicmedia_Scene7&quot;.
+Estos pasos solo se aplican a Dynamic Media que se ejecuta en el modo &quot;Dynamicmedia_Scene7&quot;.
 
 T **para agregar una miniatura de vídeo personalizada**,
 
@@ -1257,7 +1258,7 @@ Lo ideal es añadir una miniatura de vídeo en cualquier momento después de car
 
 Si lo prefiere, puede elegir cargar una miniatura personalizada para representar el vídeo en lugar de usar una miniatura generada por Dynamic Media. Por ejemplo, puede crear una imagen en miniatura personalizada que tenga el título del vídeo, una imagen de apertura llamativa o una imagen muy específica capturada en el vídeo. La imagen en miniatura de vídeo personalizada que cargue debe tener una resolución máxima de 1280 x 720 píxeles (anchura mínima de 640 píxeles) y no debe superar los 2 MB.
 
-Consulte también [Acerca de las miniaturas de vídeo en Dynamic Media: modo Scene7](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
+Consulte también [Acerca de las miniaturas de vídeo en Dynamic Media - modo Scene7](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
 ### Añadir una miniatura de vídeo {#adding-a-video-thumbnail}
 
