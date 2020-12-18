@@ -2,9 +2,9 @@
 title: Verificador de vínculos
 description: El Verificador de vínculos ayuda a validar los vínculos internos y externos y permite la reescritura de vínculos.
 translation-type: tm+mt
-source-git-commit: 861cd74e1b2fd3d210647d83dee5d9a6fcead22a
+source-git-commit: 8a551cce581056cb274b1d8567f579fc73a95d3c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -65,14 +65,14 @@ Para utilizar el Comprobador de vínculos externos:
 1. Mediante **Navegación**, seleccione **Herramientas** y luego **Sitios**.
 1. Seleccione **Comprobador de vínculos externos** y se mostrará una lista de todos los vínculos externos.
 
-![](assets/external-link-checker.png)
+![Ventana Comprobador de vínculos externos](assets/external-link-checker.png)
 
 Se muestra la siguiente información:
 
-* **Estado** : el estado de validación del vínculo
+* **Estado** : el estado de validación del vínculo que puede ser uno de los siguientes:
    * **Válido** : el comprobador de vínculos puede acceder al vínculo externo
    * **Pendiente** : el vínculo externo se agregó al contenido del sitio pero aún no ha sido validado por el Verificador de vínculos
-   * **No válido** : el Verificador de vínculos no puede establecer contacto con el vínculo externo.
+   * **No válido** : el comprobador de vínculos no puede establecer contacto con el vínculo externo
 * **URL** : vínculo externo
 * **Remitente del reenvío** : la página de contenido que contiene el vínculo externo
    * Solo se rellena [si está configurado.](#configuring)
@@ -80,7 +80,7 @@ Se muestra la siguiente información:
    * La frecuencia con la que se comprueban los vínculos [es configurable.](#configuring)
 * **Último estado** : el último código de estado HTML devuelto cuando el vínculo activado marcó por última vez el vínculo externo
 * **Última disponibilidad** : hora desde la última vez que el vínculo estuvo disponible para el Verificador de vínculos
-* **Último acceso** : hora desde la última vez que el Verificador de vínculos accedió al vínculo
+* **Último acceso** : hora desde la última vez que se accedió a la página con el vínculo externo en la interfaz de creación
 
 Puede manipular el contenido de la ventana utilizando los dos botones de la parte superior de la lista de vínculos:
 
