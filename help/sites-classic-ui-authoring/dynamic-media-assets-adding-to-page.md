@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1718'
 ht-degree: 55%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 55%
 
 # Agregar recursos de Dynamic Media a las páginas{#adding-dynamic-media-assets-to-pages}
 
-Para agregar la funcionalidad Dynamic Media a los recursos que utilice en sus sitios web, puede agregar el componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL Interactive Media]** directamente en la página. Para ello, introduzca el modo [!UICONTROL Diseño] y habilite los componentes de medios dinámicos. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media y Medios interactivos son inteligentes; es decir, saben si va a añadir una imagen o un vídeo, y las opciones disponibles cambian según corresponda.
+Para agregar la funcionalidad de Dynamic Media a los recursos que utilice en sus sitios web, puede agregar el componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL Medios interactivos]** directamente en la página. Para ello, introduzca el modo [!UICONTROL Diseño] y habilite los componentes de medios dinámicos. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media y Medios interactivos son inteligentes; es decir, saben si va a añadir una imagen o un vídeo, y las opciones disponibles cambian según corresponda.
 
 Puede agregar recursos de medios dinámicos directamente a la página si está utilizando AEM como WCM.
 
@@ -30,25 +30,25 @@ Puede agregar recursos de medios dinámicos directamente a la página si está u
 
 ## Añadir un componente de Dynamic Media en una página {#adding-a-dynamic-media-component-to-a-page}
 
-Añadir el componente [!UICONTROL Medios dinámicos] o [!UICONTROL Medios interactivos] en una página es lo mismo que agregar un componente a cualquier página. Los componentes [!UICONTROL Medios dinámicos] y [!UICONTROL Medios interactivos] se describen en detalle en las siguientes secciones.
+Añadir el componente [!UICONTROL Dynamic Media] o [!UICONTROL Medios interactivos] en una página es lo mismo que agregar un componente a cualquier página. Los componentes [!UICONTROL Dynamic Media] y [!UICONTROL Medios interactivos] se describen detalladamente en las secciones siguientes.
 
 Para añadir un componente o visor de Dynamic Media a una página:
 
 1. En AEM, abra la página a la que desea añadir el componente de Dynamic Media.
-1. Si no hay ningún componente de Dynamic Media disponible, haga clic en la regla de la [!UICONTROL barra de tareas] para entrar al modo **[!UICONTROL Diseño]**, haga clic en **[!UICONTROL Editar]** parsys y seleccione **[!UICONTROL Medios dinámicos]** para que los componentes de Dynamic Media estén disponibles.
+1. Si no hay ningún componente de Dynamic Media disponible, haga clic en la regla en la [!UICONTROL barra de tareas] para entrar en el modo **[!UICONTROL Diseño]**, haga clic en **[!UICONTROL Editar]** parsys y seleccione **[!UICONTROL Dynamic Media]** para que los componentes de Dynamic Media estén disponibles.
 
    >[!NOTE]
    >
    >Consulte [Configuración de componentes en el modo Diseño](/help/sites-authoring/default-components-designmode.md) para obtener más información.
 
 1. Vuelva al modo **[!UICONTROL Editar]** haciendo clic en el icono de lápiz en la [!UICONTROL barra de tareas].
-1. Arrastre el componente **[!UICONTROL Medios dinámicos]** o **[!UICONTROL Medios interactivos]** del grupo **[!UICONTROL Otros]** de la barra de tareas a la página en la ubicación deseada.
+1. Arrastre el componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL Medios interactivos]** desde el grupo **[!UICONTROL Otro]** de la barra de tareas a la página en la ubicación deseada.
 1. Haga clic en **[!UICONTROL Editar]** para abrir el componente.
 1. [](#dynamic-media-component)Edite el componente según sea necesario y haga clic en **[!UICONTROL Aceptar]** para guardar los cambios.
 
 ## Componentes de Dynamic Media {#dynamic-media-components}
 
-[!UICONTROL Medios dinámicos ] y  [!UICONTROL medios ] interactivos están disponibles en el   Sidekickunder Medios  **[!UICONTROL dinámicos.]** El componente de **[!UICONTROL Medios interactivos]** se utiliza para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para todos los demás componentes de Dynamic Media, utilice el componente de **[!UICONTROL Dynamic Media]**.
+[!UICONTROL Los ] medios dinámicos y los medios  [!UICONTROL interactivos ] están disponibles en   Sidekickunder  **[!UICONTROL Dynamic Media.]** El componente de **[!UICONTROL Medios interactivos]** se utiliza para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para todos los demás componentes de Dynamic Media, utilice el componente de **[!UICONTROL Dynamic Media]**.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
@@ -95,7 +95,7 @@ Esta es la única opción disponible al visualizar conjuntos de imágenes, conju
 
 Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-**[!UICONTROL Modificadores]**  de imagen: puede cambiar los efectos de imagen proporcionando comandos de imagen adicionales. Se describen en [Administración de ajustes preestablecidos de imagen](/help/assets/managing-viewer-presets.md) y en la [referencia de comando](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Modificadores]**  de imagen: puede cambiar los efectos de imagen proporcionando comandos de imagen adicionales. Se describen en [Administración de ajustes preestablecidos de imagen](/help/assets/managing-viewer-presets.md) y en la [referencia de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
@@ -141,7 +141,7 @@ Puede editar la siguiente configuración [!UICONTROL Avanzada] haciendo clic en 
 
 En AEM 6.2, cuando instala [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), puede controlar si un vídeo se entrega sobre una conexión SSL segura (HTTPS) o una conexión no segura (HTTP). De manera predeterminada, el protocolo de envío de vídeo se hereda automáticamente del protocolo de la página web en el que se integra el vídeo. Si la página web se carga sobre HTTPS, el vídeo también se envía sobre HTTPS. Del mismo modo, si la página web se carga sobre HTTP, el vídeo se envía sobre HTTP. En la mayoría de los casos, el comportamiento predeterminado es adecuado y no hace falta realizar cambios en la configuración. Sin embargo, puede sustituir este comportamiento predeterminado si anexa `VideoPlayer.ssl=on` al final de una ruta de URL o a la lista de otros parámetros de configuración de visor en un fragmento de código integrado para forzar el envío de vídeo seguro.
 
-Para obtener más información sobre el envío de vídeo seguro y el uso del atributo de configuración `VideoPlayer.ssl`   en la ruta de URL, consulte [Envío de vídeo seguro](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) en la Guía de referencia de visores. Además del visor de vídeo, el envío de vídeo seguro está disponible para el visor de medios mixtos y el visor de vídeo interactivo.
+Para obtener más información sobre el envío de vídeo seguro y el uso del atributo de configuración `VideoPlayer.ssl`   en la ruta de URL, consulte [Envío de vídeo seguro](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) en la Guía de referencia de visores. Además del visor de vídeo, el envío de vídeo seguro está disponible para el visor de medios mixtos y el visor de vídeo interactivo.
 
 ### Componente de Medios interactivos {#interactive-media-component}
 
