@@ -1,8 +1,8 @@
 ---
 title: Firma digital y certificación de Documentos
 seo-title: Firma digital y certificación de Documentos
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Signature para agregar y eliminar campos de firma digital a un documento PDF, recuperar los nombres de los campos de firma ubicados en un documento PDF, modificar los campos de firma, firmar digitalmente documentos PDF, certificar documentos PDF, validar firmas digitales ubicadas en un documento PDF, validar todas las firmas digitales ubicadas en un documento PDF y quitar una firma digital de un campo de firma.
+seo-description: Utilice el servicio Signature para agregar y eliminar campos de firma digital a un documento PDF, recuperar los nombres de los campos de firma ubicados en un documento PDF, modificar los campos de firma, firmar digitalmente documentos PDF, certificar documentos PDF, validar firmas digitales ubicadas en un documento PDF, validar todas las firmas digitales ubicadas en un documento PDF y quitar una firma digital de un campo de firma.
 uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '16977'
+source-wordcount: '17099'
 ht-degree: 0%
 
 ---
