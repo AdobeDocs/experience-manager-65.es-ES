@@ -1,8 +1,8 @@
 ---
 title: Administración de extremos mediante programación
 seo-title: Administración de extremos mediante programación
-description: nulo
-seo-description: nulo
+description: Utilice el servicio de Registro de Extremos para agregar extremos de EJB, agregar puntos finales de SOAP, agregar puntos finales de carpetas vigiladas, agregar puntos finales de correo electrónico, agregar puntos finales de Remoting, agregar puntos finales de Administrador de Tareas, modificar puntos finales, eliminar puntos finales y recuperar información del conector del extremo.
+seo-description: Utilice el servicio de Registro de Extremos para agregar extremos de EJB, agregar puntos finales de SOAP, agregar puntos finales de carpetas vigiladas, agregar puntos finales de correo electrónico, agregar puntos finales de Remoting, agregar puntos finales de Administrador de Tareas, modificar puntos finales, eliminar puntos finales y recuperar información del conector del extremo.
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '10781'
+source-wordcount: '10849'
 ht-degree: 1%
 
 ---
@@ -874,7 +874,7 @@ Para agregar un extremo de TaskManager a un servicio, realice las siguientes tar
 1. Incluir archivos de proyecto.
 1. Cree un objeto `EndpointRegistryClient`.
 1. Cree una categoría para el extremo.
-1. Defina los atributos de extremo de TaskManager.
+1. Definir atributos de extremo de TaskManager.
 1. Cree un extremo de TaskManager.
 1. Habilite el punto final.
 
