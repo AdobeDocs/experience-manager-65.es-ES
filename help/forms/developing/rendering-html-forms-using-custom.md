@@ -1,8 +1,8 @@
 ---
 title: Representación de HTML en Forms mediante archivos CSS personalizados
 seo-title: Representación de HTML en Forms mediante archivos CSS personalizados
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Forms para hacer referencia a archivos CSS personalizados para procesar formularios HTML en respuesta a una solicitud HTTP de un explorador Web. Puede procesar un formulario HTML que utilice un archivo CSS mediante la API de Java y la API de servicio Web.
+seo-description: Utilice el servicio Forms para hacer referencia a archivos CSS personalizados para procesar formularios HTML en respuesta a una solicitud HTTP de un explorador Web. Puede procesar un formulario HTML que utilice un archivo CSS mediante la API de Java y la API de servicio Web.
 uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
-source-git-commit: fcbe1d860410e215cb7c438f94579e0b14d262a5
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1724'
 ht-degree: 0%
 
 ---
