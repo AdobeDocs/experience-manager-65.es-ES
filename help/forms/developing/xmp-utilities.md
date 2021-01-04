@@ -1,8 +1,8 @@
 ---
 title: Uso de utilidades XMP
 seo-title: Uso de utilidades XMP
-description: nulo
-seo-description: nulo
+description: Utilice las API de servicios web y Java de Utilidades de XMP para importar mediante programación metadatos de XMP en un documento PDF y recuperar y guardar XMP metadatos de un documento PDF.
+seo-description: Utilice las API de servicios web y Java de Utilidades de XMP para importar mediante programación metadatos de XMP en un documento PDF y recuperar y guardar XMP metadatos de un documento PDF.
 uuid: 90ce6cef-efe1-456a-8e0c-5ba90249dda0
 contentOwner: admin
 content-type: reference
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 1%
+source-wordcount: '1423'
+ht-degree: 0%
 
 ---
 
