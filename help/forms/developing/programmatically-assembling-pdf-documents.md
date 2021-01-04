@@ -1,8 +1,8 @@
 ---
 title: Compilación programada de Documentos PDF
 seo-title: Compilación programada de Documentos PDF
-description: nulo
-seo-description: nulo
+description: Utilice la API de servicio de ensamblador para ensamblar varios documentos PDF en un solo documento PDF mediante la API de Java y la API de servicio Web.
+seo-description: Utilice la API de servicio de ensamblador para ensamblar varios documentos PDF en un solo documento PDF mediante la API de Java y la API de servicio Web.
 uuid: aa3f8f39-1fbc-48d0-82ff-6caaadf125fc
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2092'
+source-wordcount: '2138'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Después de crear el cliente de servicio, hacer referencia a un archivo DDX, cre
 
 El servicio Ensamblador devuelve un objeto `java.util.Map`, que se puede obtener del objeto `AssemblerResult` y que contiene resultados de la operación. El objeto `java.util.Map` devuelto contiene los documentos resultantes y las excepciones que se pueden hacer.
 
-En la siguiente tabla se resumen algunos de los valores clave y tipos de objetos que se pueden ubicar en el objeto `java.util.Map` devuelto.
+En la siguiente tabla se resumen algunos de los valores clave y tipos de objetos que pueden ubicarse en el objeto `java.util.Map` devuelto.
 
 <table>
  <thead>
