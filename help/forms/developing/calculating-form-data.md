@@ -1,8 +1,8 @@
 ---
 title: Cálculo de datos de formulario
 seo-title: Cálculo de datos de formulario
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Forms para calcular los valores que un usuario introduce en un formulario y mostrar los resultados. El servicio Forms calcula los valores mediante la API de Java y la API de servicio Web.
+seo-description: Utilice el servicio Forms para calcular los valores que un usuario introduce en un formulario y mostrar los resultados. El servicio Forms calcula los valores mediante la API de Java y la API de servicio Web.
 uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1902'
 ht-degree: 0%
 
 ---
