@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 1%
 
 ---
@@ -110,6 +110,6 @@ Si elige [ASRP](asrp.md), [DSRP](dsrp.md) o [MSRP](msrp.md) para producción, ta
 
    Básicamente, el contenido del sitio se almacena en un almacén de nodos. Para Assets, se puede configurar un almacén de datos para almacenar datos binarios. Para Comunidades, se debe configurar un almacén común para seleccionar el SRP.
 
-* [Elementos de almacenamiento en AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Elementos de almacenamiento](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
    Describe las implementaciones de almacenamiento de dos nodos: Tar y MongoDB.
