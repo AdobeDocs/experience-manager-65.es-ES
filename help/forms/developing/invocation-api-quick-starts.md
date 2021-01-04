@@ -1,8 +1,8 @@
 ---
 title: Inicios rápidos de la API de invocación
 seo-title: Inicios rápidos de la API de invocación
-description: nulo
-seo-description: nulo
+description: Utilice los Inicios rápidos para invocar los servicios de AEM Forms mediante programación.
+seo-description: Utilice los Inicios rápidos para invocar los servicios de AEM Forms mediante programación.
 uuid: acf67177-98a4-4c99-95a5-3086907d7c2c
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1249'
 ht-degree: 3%
 
 ---
@@ -229,7 +229,7 @@ El siguiente ejemplo de código Java invoca un proceso de corta duración llamad
 
 ## Inicio rápido: Invocación de un servicio mediante base64 en un proyecto de Microsoft .NET {#quick-start-invoking-a-service-using-base64-in-a-microsoft-net-project}
 
-El siguiente ejemplo de código C# invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto de Microsoft .NET con codificación Base64. (Consulte [Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)).
+El siguiente ejemplo de código C# invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto de Microsoft .NET que utiliza la codificación Base64. (Consulte [Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)).
 
 Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms. El proceso devuelve un documento PDF con contraseña cifrada que se guarda como archivo PDF con el nombre *EncryptedPDF.pdf*.
 
