@@ -1,8 +1,8 @@
 ---
 title: Compilación de Documentos PDF no interactivos
 seo-title: Compilación de Documentos PDF no interactivos
-description: nulo
-seo-description: nulo
+description: Utilice un formulario PDF no interactivo como entrada para montar un documento PDF no interactivo mediante la API de Java y la API de servicio Web.
+seo-description: Utilice un formulario PDF no interactivo como entrada para montar un documento PDF no interactivo mediante la API de Java y la API de servicio Web.
 uuid: 0c7adeb4-9a3a-4ec5-ba33-c3642928d4ea
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1800'
 ht-degree: 0%
 
 ---
