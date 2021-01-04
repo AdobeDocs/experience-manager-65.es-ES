@@ -1,8 +1,8 @@
 ---
 title: Representación de Forms como HTML
 seo-title: Representación de Forms como HTML
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Forms para procesar formularios como HTML en respuesta a una solicitud HTTP procedente de un navegador web. Puede utilizar la API de Java y la API de servicio Web para procesar formularios como HTML.
+seo-description: Utilice el servicio Forms para procesar formularios como HTML en respuesta a una solicitud HTTP procedente de un navegador web. Puede utilizar la API de Java y la API de servicio Web para procesar formularios como HTML.
 uuid: bd8edb6f-333b-4ceb-9877-618f5377f56f
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4174'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Un autor de formulario especifica si una secuencia de comandos se ejecuta en el 
 
 El servicio Forms puede ejecutar secuencias de comandos mientras se procesa el formulario. Como resultado, puede rellenar previamente un formulario con datos conectándose a una base de datos o a servicios Web que pueden no estar disponibles en el cliente. También puede configurar el evento `Click` de un botón para que se ejecute en el servidor de modo que el cliente redondee los datos al servidor. Esto permite al cliente ejecutar secuencias de comandos que pueden requerir recursos del servidor, como una base de datos empresarial, mientras el usuario interactúa con un formulario. Para los formularios HTML, las secuencias de comandos de formato solo se pueden ejecutar en el servidor. Como resultado, debe marcar estas secuencias de comandos para que se ejecuten en `server` o `both`.
 
-Puede diseñar formularios que se desplacen entre páginas (paneles) llamando a los métodos `xfa.host.pageUp` y `xfa.host.pageDown`. Esta secuencia de comandos se coloca en el evento `Click` de un botón y el atributo `runAt` se establece en `Both`. La razón por la que elige `Both` es que Adobe Reader o Acrobat (para formularios procesados como PDF) pueden cambiar las páginas sin ir al servidor y los formularios HTML pueden cambiar las páginas al enviar datos de ida y vuelta al servidor. Es decir, se envía un formulario al servicio Forms y se procesa un formulario como HTML con la nueva página mostrada.
+Puede diseñar formularios que se desplacen entre páginas (paneles) llamando a los métodos `xfa.host.pageUp` y `xfa.host.pageDown`. Esta secuencia de comandos se coloca en el evento `Click` de un botón y el atributo `runAt` se establece en `Both`. La razón por la que elige `Both` es que Adobe Reader o Acrobat (para formularios procesados como PDF) pueden cambiar las páginas sin ir al servidor y los formularios HTML pueden cambiar las páginas mediante la transferencia de datos al servidor. Es decir, se envía un formulario al servicio Forms y se procesa un formulario como HTML con la nueva página mostrada.
 
 Se recomienda no asignar a las variables de secuencia de comandos y a los campos de formulario los mismos nombres, como item. Es posible que algunos exploradores Web, como Internet Explorer, no inicialicen una variable con el mismo nombre que un campo de formulario que produzca un error de secuencia de comandos. Se recomienda asignar nombres diferentes a los campos de formulario y a las variables de secuencia de comandos.
 
