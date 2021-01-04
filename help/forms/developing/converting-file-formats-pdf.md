@@ -1,8 +1,8 @@
 ---
 title: Conversión entre formatos de archivo y PDF
 seo-title: Conversión entre formatos de archivo y PDF
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Generar PDF para convertir formatos de archivo nativos a PDF. El servicio Generar PDF también convierte PDF a otros formatos de archivo y optimiza el tamaño de los documentos PDF.
+seo-description: Utilice el servicio Generar PDF para convertir formatos de archivo nativos a PDF. El servicio Generar PDF también convierte PDF a otros formatos de archivo y optimiza el tamaño de los documentos PDF.
 uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '7842'
+source-wordcount: '7898'
 ht-degree: 0%
 
 ---
