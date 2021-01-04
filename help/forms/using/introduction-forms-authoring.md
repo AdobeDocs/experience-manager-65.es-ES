@@ -10,7 +10,7 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a69e0354b5599ab555df650858f8f3200e21d2b8
+source-git-commit: f3b5b22c1d5573492867aef60457413ad5cf419f
 workflow-type: tm+mt
 source-wordcount: '3145'
 ht-degree: 3%
@@ -159,11 +159,11 @@ Permite arrastrar y soltar elementos del modelo de formulario en el formulario a
    <td>Añade un campo que lista todos los archivos adjuntos cargados mediante el componente Archivo adjunto.</td>
   </tr>
   <tr>
-   <td>Pie de página<br /> </td>
+   <td>Encabezado<br /> </td>
    <td>Añade el encabezado de página que generalmente incluye el logotipo de una empresa, el título del formulario y el resumen.<br /> </td>
   </tr>
   <tr>
-   <td>Encabezado</td>
+   <td>Pie de página</td>
    <td>Añade el pie de página que generalmente incluye información de copyright y vínculos a otras páginas. </td>
   </tr>
   <tr>
