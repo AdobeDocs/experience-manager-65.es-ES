@@ -1,8 +1,8 @@
 ---
 title: Administración de usuarios
 seo-title: Administración de usuarios
-description: nulo
-seo-description: nulo
+description: Utilice la API de administración de usuarios para crear aplicaciones cliente que puedan administrar funciones, permisos y entidades principales (que pueden ser usuarios o grupos), así como autenticar usuarios.
+seo-description: Utilice la API de administración de usuarios para crear aplicaciones cliente que puedan administrar funciones, permisos y entidades principales (que pueden ser usuarios o grupos), así como autenticar usuarios.
 uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '6191'
+source-wordcount: '6243'
 ht-degree: 0%
 
 ---
@@ -744,7 +744,7 @@ En la tabla siguiente se describen los pasos de este diagrama
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>El usuario accede a un sitio web y especifica un nombre de usuario y una contraseña. Esta información se envía a un servidor de aplicaciones J2EE que aloja AEM Forms.</p></td>
   </tr>
   <tr>
