@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
+source-git-commit: 3202866bd38779a9784e44ab470152df61c585f5
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -97,9 +97,9 @@ Para que la configuración idéntica esté disponible en el entorno de publicaci
 
 En la instancia de AEM Author:
 
-* Vaya del menú principal a **[!UICONTROL Herramientas > Operaciones > Replicación]**.
+* Vaya del menú principal a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Replicación]**
 * Seleccione **Activar árbol**
-* **Ruta** de inicio: buscar  `/etc/socialconfig/srpc/`
+* **Ruta** de inicio: buscar  `/conf/global/settings/communities/srpc/`
 * Anule la selección de **Solo modificado**
 * Seleccione **Activar**
 
@@ -144,8 +144,8 @@ Asegúrese de que el ASRP se haya configurado para que sea el proveedor predeter
 
 En todas las instancias de creación y publicación de AEM, vuelva a la consola de Configuración de Almacenamiento o compruebe el repositorio de AEM.
 
-En JCR, si [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
+En JCR, si [/conf/global/settings/communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* No contiene un nodo [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa que el proveedor de almacenamiento es JSRP.
-* Si el nodo srpc existe y contiene el nodo [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), las propiedades de configuración predeterminada definen ASRP como el proveedor predeterminado.
+* No contiene un nodo [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp), significa que el proveedor de almacenamiento es JSRP.
+* Si el nodo srpc existe y contiene el nodo [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration), las propiedades de configuración predeterminada definen ASRP como el proveedor predeterminado.
 
