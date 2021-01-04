@@ -1,8 +1,8 @@
 ---
 title: Inicio rápido de la API de Java del servicio de firma (SOAP)
 seo-title: Inicio rápido de la API de Java del servicio de firma (SOAP)
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Signature para agregar un campo de firma a un documento PDF, recuperar nombres de campo de firma, modificar un campo de firma, firmar digitalmente un documento PDF, firmar digitalmente un formulario basado en XFA, certificar un documento PDF, comprobar una firma digital, comprobar varias firmas digitales y eliminar una firma digital.
+seo-description: Utilice el servicio Signature para agregar un campo de firma a un documento PDF, recuperar nombres de campo de firma, modificar un campo de firma, firmar digitalmente un documento PDF, firmar digitalmente un formulario basado en XFA, certificar un documento PDF, comprobar una firma digital, comprobar varias firmas digitales y eliminar una firma digital.
 uuid: ae6adf23-b119-45f6-bd57-73d8d9ca8ecb
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
