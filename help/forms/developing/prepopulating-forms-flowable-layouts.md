@@ -1,8 +1,8 @@
 ---
 title: Rellenado previo de Forms con diseños de posición variable
 seo-title: Rellenado previo de Forms con diseños de posición variable
-description: nulo
-seo-description: nulo
+description: Rellenar previamente formularios con presentación flexible para mostrar datos a los usuarios dentro de un formulario procesado mediante la API de Java y la API de servicio Web.
+seo-description: Rellenar previamente formularios con presentación flexible para mostrar datos a los usuarios dentro de un formulario procesado mediante la API de Java y la API de servicio Web.
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '3489'
-ht-degree: 1%
+source-wordcount: '3533'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ Los dos orígenes de datos XML siguientes pueden rellenar previamente un formula
 
 Debe existir un elemento XML para cada campo de formulario que desee rellenar previamente. El nombre del elemento XML debe coincidir con el nombre del campo. Un elemento XML se omite si no se corresponde con un campo de formulario o si el nombre del elemento XML no coincide con el nombre del campo. No es necesario coincidir con el orden en que se muestran los elementos XML, siempre que se especifiquen todos los elementos XML.
 
-Cuando se rellena previamente un formulario que ya contiene datos, se deben especificar los datos que ya se muestran en el origen de datos XML. Supongamos que un formulario que contiene 10 campos tiene datos en cuatro campos. A continuación, supongamos que desea rellenar previamente los seis campos restantes. En este caso, debe especificar 10 elementos XML en el origen de datos XML que se utilizan para rellenar previamente el formulario. Si sólo especifica seis elementos, los cuatro campos originales están vacíos.
+Cuando se rellena previamente un formulario que ya contiene datos, se deben especificar los datos que ya se muestran en el origen de datos XML. Supongamos que un formulario que contiene 10 campos tiene datos en cuatro campos. A continuación, supongamos que desea rellenar previamente los seis campos restantes. En este caso, debe especificar 10 elementos XML en el origen de datos XML que se utiliza para rellenar previamente el formulario. Si sólo especifica seis elementos, los cuatro campos originales están vacíos.
 
 Por ejemplo, puede rellenar previamente un formulario, como el formulario de confirmación de ejemplo. (Consulte &quot;Formulario de confirmación&quot; en [Representación de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
