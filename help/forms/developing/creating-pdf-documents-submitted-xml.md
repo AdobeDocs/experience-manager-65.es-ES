@@ -1,8 +1,8 @@
 ---
 title: Creación de Documentos PDF con datos XML enviados
 seo-title: Creación de Documentos PDF con datos XML enviados
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Forms para recuperar los datos del formulario que el usuario ha introducido en un formulario interactivo. Transfiera los datos del formulario a otra operación de servicio de AEM Forms y cree un documento PDF con los datos.
+seo-description: Utilice el servicio Forms para recuperar los datos del formulario que el usuario ha introducido en un formulario interactivo. Transfiera los datos del formulario a otra operación de servicio de AEM Forms y cree un documento PDF con los datos.
 uuid: 2676c614-8988-451b-ac7c-bd07731a3f5f
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
