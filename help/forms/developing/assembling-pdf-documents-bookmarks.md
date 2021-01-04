@@ -1,8 +1,8 @@
 ---
 title: Compilación de Documentos PDF con marcadores
 seo-title: Compilación de Documentos PDF con marcadores
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Ensamblador para modificar un documento PDF que no contenga marcadores e incluir marcadores mediante la API de Java y la API de servicio Web.
+seo-description: Utilice el servicio Ensamblador para modificar un documento PDF que no contenga marcadores e incluir marcadores mediante la API de Java y la API de servicio Web.
 uuid: a306d2a6-0b12-4eb3-bff4-968a33417486
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
