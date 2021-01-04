@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Se ha creado un usuario de servicio llamado **ssl-service** para esta función. 
 
 1. Una vez ingresadas las credenciales, haga clic en **Siguiente** en la esquina superior derecha de la página. A continuación, cargue la clave privada y el certificado asociados para la conexión SSL.
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-106](assets/chlimage_1-105.png)
 
    >[!NOTE]
    >
@@ -160,7 +160,7 @@ También puede automatizar la configuración de SSL cargando un paquete que ya c
 
 ### Generación de un par de claves privadas/certificados para utilizarlo con el Asistente {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-A continuación encontrará un ejemplo para crear un certificado autofirmado en formato DER que puede utilizar el Asistente para SSL.
+A continuación encontrará un ejemplo para crear un certificado autofirmado en formato DER que puede utilizar el Asistente para SSL. Instale OpenSSL en función del sistema operativo, abra el símbolo del sistema OpenSSL y cambie el directorio a la carpeta en la que desee generar el certificado o clave privada.
 
 >[!NOTE]
 >
@@ -176,7 +176,7 @@ A continuación encontrará un ejemplo para crear un certificado autofirmado en 
 1. A continuación, genere una solicitud de firma de certificado (CSR) utilizando la clave privada:
 
    ```shell
-   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj '/CN=localhost'
+   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
 1. Genere el certificado SSL y fírmelo con la clave privada. En este ejemplo, caducará dentro de un año:
