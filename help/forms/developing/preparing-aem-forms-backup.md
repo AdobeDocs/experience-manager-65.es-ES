@@ -1,8 +1,8 @@
 ---
 title: Preparación de AEM Forms para Backup
 seo-title: Preparación de AEM Forms para Backup
-description: nulo
-seo-description: nulo
+description: Obtenga información sobre cómo utilizar el servicio de copia de seguridad y restauración para entrar y salir del modo de copia de seguridad para el servidor de AEM Forms mediante la API de Java y la API de servicio web.
+seo-description: Obtenga información sobre cómo utilizar el servicio de copia de seguridad y restauración para entrar y salir del modo de copia de seguridad para el servidor de AEM Forms mediante la API de Java y la API de servicio web.
 uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2540'
 ht-degree: 0%
 
 ---
