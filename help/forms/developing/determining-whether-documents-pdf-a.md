@@ -1,8 +1,8 @@
 ---
 title: Determinación de si los Documentos son compatibles con PDF/A
 seo-title: Determinación de si los Documentos son compatibles con PDF/A
-description: nulo
-seo-description: nulo
+description: Utilice el servicio Compilador para determinar si un documento PDF es compatible con PDF/A mediante la API de Java y la API de servicio Web.
+seo-description: Utilice el servicio Compilador para determinar si un documento PDF es compatible con PDF/A mediante la API de Java y la API de servicio Web.
 uuid: 4e9d8c8f-2153-411b-9c4b-2d14b3c8f4bb
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2109'
 ht-degree: 0%
 
 ---
