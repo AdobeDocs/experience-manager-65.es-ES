@@ -1,8 +1,8 @@
 ---
 title: Desmontar un documento PDF mediante la API de servicio Web
 seo-title: Desmontar un documento PDF mediante la API de servicio Web
-description: nulo
-seo-description: nulo
+description: Desmontar un documento PDF mediante la API de servicio de ensamblador
+seo-description: Desmontar un documento PDF mediante la API de servicio de ensamblador
 uuid: d6283dc5-e333-49d0-abde-1d390662f4fe
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/programmatically_disassembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 49584fb4-8c3a-4d73-acd6-0879a67f6093
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
