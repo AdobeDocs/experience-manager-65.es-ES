@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notas de la versión anterior de Ser
 description: Notas de la versión de los Service Packs [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 9be522fd8354674ad40691e99b349a6fd7bff2b5
+source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
 workflow-type: tm+mt
 source-wordcount: '14953'
 ht-degree: 20%
@@ -66,7 +66,7 @@ La siguiente es la lista de correcciones que se proporciona en la versión [!DNL
    ![Captura de pantalla que ilustra el problema de falta de menú en la IU clásica](assets/33949_missing_menu.png)
 
 * Un [!DNL Content Fragment] no se puede usar como `TemplatedResource` porque falla en `ContentFragmentUsePojo` (NPR-33911).
-* Las operaciones de movimiento sincrónico y asíncrono pueden provocar errores debido a transferencias simultáneas. Las operaciones de movimiento de página están restringidas a movimiento sincrónico solamente. Evita el movimiento simultáneo de páginas (NPR-33875).
+* Las operaciones de movimiento sincrónico y asíncrono pueden provocar errores debido a transferencias simultáneas. Las operaciones de movimiento de página están restringidas sólo al movimiento asincrónico. Evita el movimiento simultáneo de páginas (NPR-33875).
 * [!UICONTROL La operación Administrar ] publicación para replicar contenido de la instancia Autor a Publicación falla y genera un error de JavaScript (NPR-33872).
 * Cuando se seleccionan varias páginas o recursos para crear versiones, la nueva versión se crea solo para la última página o recurso seleccionado (NPR-33866).
 * Mueva una página de modelo con copias en vivo a otra carpeta. Al moverlo a la carpeta original, la operación de movimiento falla sin ningún error (NPR-33864).
