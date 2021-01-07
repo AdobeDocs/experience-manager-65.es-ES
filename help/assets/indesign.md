@@ -3,9 +3,9 @@ title: Integrar [!DNL Assets] con [!DNL InDesign Server]
 description: Aprenda a integrar [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: a31fa2712e541dfdc7a5b08ee9b33782f190f00b
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1578'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 * Trabajador proxy para definir y administrar una tarea específica.
 Pueden abarcar una amplia variedad de tareas; por ejemplo, si se utiliza un [!DNL InDesign Server] para procesar archivos.
 
-Para cargar archivos completamente en [!DNL Experience Manager Assets] que ha creado con [!DNL Adobe InDesign] se utiliza un proxy. Esto utiliza un trabajador proxy para comunicarse con [!DNL Adobe InDesign Server], donde [las secuencias de comandos](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) se ejecutan para extraer metadatos y generar varias representaciones para [!DNL Experience Manager Assets]. El trabajador proxy habilita la comunicación bidireccional entre las instancias [!DNL InDesign Server] y [!DNL Experience Manager] en una configuración de nube.
+Para cargar archivos completamente a [!DNL Experience Manager Assets] que ha creado con [!DNL Adobe InDesign] se utiliza un proxy. Esto utiliza un trabajador proxy para comunicarse con [!DNL Adobe InDesign Server], donde [las secuencias de comandos](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) se ejecutan para extraer metadatos y generar varias representaciones para [!DNL Experience Manager Assets]. El trabajador proxy habilita la comunicación bidireccional entre las instancias [!DNL InDesign Server] y [!DNL Experience Manager] en una configuración de nube.
 
 >[!NOTE]
 >
@@ -165,15 +165,15 @@ de IDSLos extremos de SOAP que se utilizarán para la comunicación con el  [!DN
 
 ### Configurar Externalizador de vínculos de CQ de día {#configuring-day-cq-link-externalizer}
 
-Si los [!DNL InDesign Server] y [!DNL Experience Manager] se ejecutan en diferentes hosts o bien cualquiera de estas aplicaciones o ambas no se ejecutan en puertos predeterminados, configure [!UICONTROL Day CQ Link Externalizer] para establecer el nombre de host, el puerto y la ruta de contenido para [!DNL InDesign Server].
+Si [!DNL InDesign Server] y [!DNL Experience Manager] están en diferentes hosts o si una o ambas aplicaciones no funcionan en puertos predeterminados, configure [!UICONTROL Day CQ Link Externalizer] para establecer el nombre de host, el puerto y la ruta de contenido para [!DNL InDesign Server].
 
 1. Acceda a la consola web en `https://[aem_server]:[port]/system/console/configMgr`.
-1. Busque la configuración **[!UICONTROL Day CQ Link Externalizer]** y haga clic en **[!UICONTROL Editar]** para abrirla.
-1. Especifique el nombre de host y la ruta de contexto para [!DNL Adobe InDesign Server] y haga clic en **Guardar**.
+1. Busque la configuración **[!UICONTROL Day CQ Link Externalizer]**. Haga clic en **[!UICONTROL Editar]** para abrir.
+1. La configuración del Externalizador de vínculos ayuda a crear direcciones URL absolutas para la implementación [!DNL Experience Manager] y para [!DNL InDesign Server]. Utilice el campo **[!UICONTROL Dominios]** para especificar el nombre de host y la ruta de contexto para [!DNL Adobe InDesign Server]. Haga clic en **Guardar**.
 
-   ![chlimage_1-97](assets/chlimage_1-290.png)
+   ![Configuración del externalizador de vínculos](assets/link-externalizer-config.png)
 
-### Habilitar procesamiento de trabajos en paralelo para [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}
+### Habilitar procesamiento de trabajos en paralelo para [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server}
 
 Ahora puede habilitar el procesamiento de trabajos paralelos para IDS. Determinar el número máximo de trabajos paralelos (`x`) que un [!DNL InDesign Server] puede procesar:
 
