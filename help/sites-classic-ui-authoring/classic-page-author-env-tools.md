@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 88%
@@ -62,7 +62,7 @@ Puede utilizar el buscador de contenido para ubicar toda una serie de medios. Cu
 * [Imágenes](#finding-images)
 * [Documentos](#finding-documents)
 * [Películas](#finding-movies)
-* [Navegador de medios de Scene 7](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Navegador Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [](#products) [Páginas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
 
 * [Párrafos](#referencing-paragraphs-from-other-pages)
@@ -77,7 +77,7 @@ En esta ficha aparece una lista con las imágenes del repositorio.
 
 Después de crear un párrafo de imagen en la página, puede arrastrar un elemento y colocarlo adentro del párrafo.
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-191](assets/chlimage_1-111.png)
 
 ### Búsqueda de documentos {#finding-documents}
 
@@ -85,7 +85,7 @@ En esta ficha, se muestra una lista con los documentos del repositorio.
 
 Después de crear un párrafo Download en la página, puede arrastrar un elemento y colocarlo adentro del párrafo.
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Búsqueda de películas {#finding-movies}
 
@@ -99,13 +99,13 @@ Después de crear un párrafo apropiado (por ejemplo, Flash) en la página, pued
 
 Esta ficha enumera los productos. Después de crear un párrafo apropiado (por ejemplo, Producto) en la página, puede arrastrar un elemento y colocarlo dentro del párrafo.
 
-![chlimage_1-115](assets/chlimage_1-114.png)
+![chlimage_1-114](assets/chlimage_1-114.png)
 
 ### Búsqueda de páginas {#finding-pages}
 
 Esta ficha muestra todas las páginas. Haga clic con el doble en cualquier página para abrirla y editarla.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 ### Referencia a párrafos de otras páginas {#referencing-paragraphs-from-other-pages}
 
