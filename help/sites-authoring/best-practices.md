@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
-source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 83%
+source-wordcount: '302'
+ht-degree: 72%
 
 ---
 
@@ -38,7 +38,7 @@ Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
 
 ## Assets {#assets}
 
-Las prácticas recomendadas sobre los recursos, incluidas la capacidad Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
+Las prácticas recomendadas en torno a los recursos, incluida la capacidad de Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
 
 <table>
  <tbody>
@@ -55,7 +55,7 @@ Las prácticas recomendadas sobre los recursos, incluidas la capacidad Dynamic M
   <tr>
    <td>Imágenes dinámicas</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Prácticas recomendadas de las imágenes dinámicas</a></td>
-   <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor forma de optimizar la calidad de las imágenes en caso de que utilice la funcionalidad de medios dinámicos o integre con Scene7. </p> </td>
+   <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor manera de optimizar la calidad de las imágenes si utiliza la funcionalidad de Dynamic Media o si se integra con Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Recursos multilingües</td>
