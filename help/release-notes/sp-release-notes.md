@@ -4,9 +4,9 @@ description: Notas de la versión específicas de [!DNL Adobe Experience Manager
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
+source-git-commit: fa8d8c9a001b56006f1c0a30eb5a342754e63573
 workflow-type: tm+mt
-source-wordcount: '4243'
+source-wordcount: '4227'
 ht-degree: 5%
 
 ---
@@ -351,8 +351,6 @@ La siguiente es la lista de correcciones que se proporciona en la versión [!DNL
 **:Seguridad de los documentos**
 
 * Cuando se guarda una nueva directiva de seguridad de documento, Forms Experience Manager muestra el mensaje de error `Relative validity period is required` (NPR-34679).
-
-* Cuando se guarda una nueva directiva de seguridad de documento, Forms Experience Manager muestra el mensaje de error `Invalid filed value.Numeric value is required` (NPR-34678).
 
 * Documento Security no puede proteger el documento PDF 2.0 (CQ-4305851).
 
