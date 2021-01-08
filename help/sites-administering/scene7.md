@@ -1,6 +1,6 @@
 ---
-title: Integración con Dynamic Media Classic (Scene7)
-seo-title: Integración con Dynamic Media Classic (Scene7)
+title: Integración con Dynamic Media Classic
+seo-title: Integración con Dynamic Media Classic
 description: Aprenda a integrar AEM con Dynamic Media Classic.
 seo-description: Aprenda a integrar AEM con Dynamic Media Classic.
 uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
@@ -10,17 +10,17 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '5485'
+source-wordcount: '5464'
 ht-degree: 1%
 
 ---
 
 
-# Integración con Dynamic Media Classic (Scene7){#integrating-with-dynamic-media-classic-scene}
+# Integración con Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
-[Adobe Dynamic Media ](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classicis es una solución alojada para administrar, mejorar, publicar y distribuir recursos de medios enriquecidos en pantallas e impresiones web, móviles, de correo electrónico y conectadas a Internet.
+Adobe Dynamic Media Classic es una solución alojada para administrar, mejorar, publicar y distribuir recursos de medios enriquecidos en pantallas e impresiones web, móviles, de correo electrónico y conectadas a Internet.
 
 Para utilizar Dynamic Media Classic, debe configurar la configuración de nube para que Dynamic Media Classic y AEM Assets puedan interactuar entre sí. Este documento describe cómo configurar AEM y Dynamic Media Classic.
 
@@ -363,7 +363,7 @@ Para habilitarlo:
 
 ### Añadir el tiempo de espera configurable al flujo de trabajo de carga de Dynamic Media Classic {#adding-configurable-timeout-to-scene-upload-workflow}
 
-Cuando se configura una instancia de AEM para gestionar la codificación de vídeo a través de Dynamic Media Classic (Scene7), de forma predeterminada, se agota el tiempo de espera de 35 minutos en cualquier trabajo de carga. Para dar cabida a trabajos de codificación de vídeo potencialmente más largos, puede configurar esta configuración:
+Cuando se configura una instancia de AEM para gestionar la codificación de vídeo a través de Dynamic Media Classic, de forma predeterminada, se agotará el tiempo de espera de 35 minutos en cualquier trabajo de carga. Para dar cabida a trabajos de codificación de vídeo potencialmente más largos, puede configurar esta configuración:
 
 1. Vaya a **http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**.
 
