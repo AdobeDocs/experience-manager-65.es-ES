@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe392c24-d01e-4d5b-9af9-9ec500adc61a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '88'
 ht-degree: 68%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 68%
 
 # Aviso de fin de vida útil para el visualizador Flash{#flash-viewers-end-of-life-notice}
 
-*A partir del 31 de enero de 2017, Adobe Dynamic Media Classic (Scene7) dejó de ofrecer asistencia técnica para la plataforma de visor de Flash.*
+*A partir del 31 de enero de 2017, Adobe Dynamic Media Classic (anteriormente Scene7) dejó de ofrecer asistencia técnica para la plataforma de visor de Flash.*
 
 *Para obtener más información sobre este cambio importante, consulte el siguiente sitio web de preguntas más frecuentes:*
 
