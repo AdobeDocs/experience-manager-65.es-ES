@@ -2,9 +2,9 @@
 title: Uso del modo Diseño para cambiar el tamaño de los componentes en formularios adaptables
 description: 'Definir la posición de los componentes mediante la cuadrícula adaptable disponible en el modo Diseño '
 translation-type: tm+mt
-source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
+source-git-commit: 923c31bf67c7ad480ef3c3a1e312b4bd841bac6d
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,11 @@ Seleccione **Presentación** en la lista desplegable que aparece en la parte sup
 
    La barra de herramientas que se muestra después de tocar componentes consta de las siguientes opciones:
 
-   * **Principal:** seleccione el elemento principal de un componente.
-   * **Flotar a una línea nueva:** Mueva el componente a la línea siguiente si hay varios componentes dentro de la misma línea.
+   * **[!UICONTROL Principal]**: Seleccione el elemento principal de un componente.
+   * **[!UICONTROL Revertir diseño]** de punto de interrupción: Deshace todos los cambios de tamaño y aplica el diseño predeterminado al componente.
+   * **[!UICONTROL Flotar a nueva línea]**: Mueva el componente a la línea siguiente si hay varios componentes dentro de la misma línea.
 
-   Además, puede deshacer todos los cambios de tamaño y aplicar el diseño predeterminado al panel que contiene los componentes cuyo tamaño ha cambiado mediante la opción **[!UICONTROL Revertir diseño de punto de interrupción]** ( ![Revertir punto de interrupción](assets/reverttopreviouslypublishedversion.png)). Toque el elemento principal del componente cuyo tamaño ha cambiado para aplicar vista a la opción.
-
-   Puede tocar el componente y utilizar la opción **[!UICONTROL Revertir diseño de punto de interrupción]** para deshacer todos los cambios de tamaño y aplicar el diseño predeterminado en el nivel del componente.
+   También puede utilizar la opción **[!UICONTROL Revertir diseño de punto de interrupción]** ( ![Revertir punto de interrupción](assets/reverttopreviouslypublishedversion.png)) en el nivel de panel para deshacer todos los cambios de tamaño.
 
    >[!NOTE]
    >
