@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
+source-git-commit: 01c30e78d1f89e8c07abeb0ac19af38722010dd0
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '2428'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,14 @@ Para habilitar la clasificación:
    Del mismo modo, un encabezado de columna con una flecha hacia abajo representa que los valores de la columna se muestran en orden descendente.
 
    También puede realizar cambios en la tabla en el modo **Previsualización** y volver a hacer clic en el encabezado de columna para ordenar los valores de columna.
+
+## Configurar el ancho de columna de una tabla {#set-column-width}
+
+Siga los pasos siguientes para definir el ancho de columna de una tabla:
+
+1. En la ficha **[!UICONTROL Contenido]**, toque el componente **[!UICONTROL Tabla]** y toque el icono Configurar (![Configurar](assets/configure-icon.svg)).
+
+1. Introduzca la lista de valores separados por comas en el campo **[!UICONTROL Ancho de columna]** para especificar el ancho proporcionado de cada columna de la tabla. Por ejemplo, para una tabla que incluye 3 columnas, si se especifica 2,4,6 como valor en el campo **[!UICONTROL Ancho de columna]**, el ancho de las columnas se define como 2/12 para la primera columna, 4/12 para la segunda columna y 6/12 para la tercera columna. 2/12, ya que la anchura de la primera columna se refiere a una sexta parte de la anchura de la tabla. Del mismo modo, 4/12 define el ancho de la segunda columna como un tercio del ancho de la tabla y 6/12 define el ancho de la tercera columna como la mitad del ancho de la tabla.
 
 ## Configurar estilo de tabla {#configure}
 
