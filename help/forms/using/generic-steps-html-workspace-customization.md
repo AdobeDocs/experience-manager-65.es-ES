@@ -11,29 +11,29 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: e863089a4328b7222b60429c82ca3df2b8e1dd05
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '317'
 ht-degree: 1%
 
 ---
 
 
-# Pasos genéricos para la personalización del espacio de trabajo de AEM Forms{#generic-steps-for-aem-forms-workspace-customization}
+# Pasos genéricos para la personalización del espacio de trabajo de AEM Forms {#generic-steps-for-aem-forms-workspace-customization}
 
 Los pasos genéricos para realizar cualquier personalización son:
 
 1. Inicie sesión en el CRXDE Lite accediendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Cree una carpeta con el nombre `ws`en `/apps`, si no existe. Haga clic en **[!UICONTROL Guardar todo]**.
+1. Cree una carpeta `sling:Folder` con el nombre `ws` en `/apps`, si no existe. Para crear una carpeta `sling:Folder`, haga clic con el botón derecho en la carpeta `apps` y seleccione **[!UICONTROL Crear]** > **[!UICONTROL Crear nodo]**. Especifique el nombre como `ws`, seleccione el tipo como `sling:Folder` y haga clic en **[!UICONTROL Aceptar]**. Haga clic en **[!UICONTROL Guardar todo]**.
 1. Vaya a `/apps/ws` y vaya a la ficha **[!UICONTROL Control de acceso]**.
-1. En la lista **[!UICONTROL Control de acceso]**, haga clic en **[!UICONTROL +]** para agregar una nueva entrada. Vuelva a hacer clic en **[!UICONTROL +]**.
+1. Seleccione la opción **[!UICONTROL Repositorio]**. En la lista **[!UICONTROL Control de acceso]**, haga clic en **[!UICONTROL +]** para agregar una nueva entrada. Vuelva a hacer clic en **[!UICONTROL +]**.
 1. Busque y seleccione la **entidad de seguridad PERM_WORKSPACE_USER**.
 
    ![Seleccione el principal PERM_WORKSPACE_USER como parte de los pasos genéricos para personalizar HTML Workspace](assets/perm_workspace_user.png)
 
 1. Otorgue `jcr:read` privilegios al director.
 1. Haga clic en **[!UICONTROL Guardar todo]**.
-1. Copie los archivos `GET.jsp` y `html.jsp`de la carpeta `/libs/ws`a la carpeta `/apps/ws`.
+1. Copie los archivos `GET.jsp`, `index` y `html.jsp` de la carpeta `/libs/ws` a la carpeta `/apps/ws`.
 1. Copie la carpeta `/libs/ws/locales` en la carpeta `/apps/ws`. Haga clic en **[!UICONTROL Guardar todo]**.
 1. Actualice las referencias y las rutas relativas en el archivo `GET.jsp`, como se muestra a continuación, y haga clic en **[!UICONTROL Guardar todo]**.
 
@@ -64,7 +64,7 @@ Los pasos genéricos para realizar cualquier personalización son:
 
    >[!NOTE]
    >
-   >Coloque la entrada del archivo CSS definido por el usuario después de la entrada de newStyle.css, como se muestra arriba.
+   >Coloque la entrada del archivo CSS definido por el usuario después de la entrada de style.css, como se muestra arriba.
 
 1. En el archivo /apps/ws/html.jsp, cambie de
 
@@ -80,13 +80,11 @@ Los pasos genéricos para realizar cualquier personalización son:
 
 1. Haga lo siguiente:
 
-   1. Cree una carpeta con el nombre `js`en `/apps/ws`. Haga clic en **[!UICONTROL Guardar todo]**.
+   1. Cree una carpeta con el nombre `js` en `/apps/ws`. Haga clic en **[!UICONTROL Guardar todo]**.
 
-   1. Cree una carpeta con el nombre `libs`en `/apps/ws/js`. Haga clic en **[!UICONTROL Guardar todo]**.
+   1. Cree una carpeta con el nombre `libs` en `/apps/ws/js`. Haga clic en **[!UICONTROL Guardar todo]**.
 
-   1. Cree una carpeta con el nombre `jqueryui`en `/apps/ws/js/libs`. Haga clic en **[!UICONTROL Guardar todo]**.
-
-   1. Copie `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` en `/apps/ws/js/libs/jqueryui`. Haga clic en **[!UICONTROL Guardar todo]**.
+   1. Copie la carpeta `/libs/ws/js/libs/jqueryui` en `/apps/ws/js/libs`. Haga clic en **[!UICONTROL Guardar todo]**.
 
 1. Para las personalizaciones de HTML, haga lo siguiente:
 
