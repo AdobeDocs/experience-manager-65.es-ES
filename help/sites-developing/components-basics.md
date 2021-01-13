@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 0a6f50457efda42a9d496c0c9202cb7d7b8f6eb9
 workflow-type: tm+mt
-source-wordcount: '4718'
+source-wordcount: '4974'
 ht-degree: 1%
 
 ---
@@ -608,6 +608,39 @@ Existen muchas configuraciones existentes en el repositorio. Puede buscar fácil
 * Para buscar un nodo secundario de `cq:editConfig`, por ejemplo, puede buscar `cq:dropTargets`, que es de tipo `cq:DropTargetConfig`; puede utilizar la herramienta Consulta en** CRXDE Lite** y buscar con la siguiente cadena de consulta XPath:
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
+
+### Marcadores de posición de componente {#component-placeholders}
+
+Los componentes siempre deben representar algún HTML que sea visible para el autor, incluso cuando el componente no tenga contenido. De lo contrario, podría desaparecer visualmente de la interfaz del editor, haciéndolo técnicamente presente pero invisible en la página y en el editor. En tal caso, los autores no podrán seleccionar e interactuar con el componente vacío.
+
+Por este motivo, los componentes deben representar un marcador de posición siempre y cuando no representen ningún resultado visible cuando la página se procese en el editor de páginas (cuando el modo WCM sea `edit` o `preview`).
+El marcado HTML típico de un marcador de posición es el siguiente:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="Component Name"></div>
+```
+
+La secuencia de comandos HTML típica que procesa el código HTML del marcador de posición anterior es la siguiente:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
+     data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
+```
+
+En el ejemplo anterior, `isEmpty` es una variable que solo es verdadera cuando el componente no tiene contenido y es invisible para el autor.
+
+Para evitar la repetición, Adobe recomienda que los implementadores de componentes utilicen una plantilla HTL para estos marcadores de posición, [como la proporcionada por los Componentes principales.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+
+El uso de la plantilla en el vínculo anterior se realiza con la siguiente línea de HTL:
+
+```HTML
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
+```
+
+En el ejemplo anterior, `model.text` es la variable que solo es verdadera cuando el contenido tiene contenido y es visible.
+
+Se puede ver un ejemplo del uso de esta plantilla en los componentes principales, [como en el componente Título.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### Configuración con propiedades cq:EditConfig {#configuring-with-cq-editconfig-properties}
 
