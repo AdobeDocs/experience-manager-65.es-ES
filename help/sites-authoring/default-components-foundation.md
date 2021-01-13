@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: 0362be4d78fa39ac73c9be5dd5d08ccfebd21edc
 workflow-type: tm+mt
-source-wordcount: '7287'
-ht-degree: 89%
+source-wordcount: '7364'
+ht-degree: 88%
 
 ---
 
@@ -312,6 +312,10 @@ La aplicación externa se integra en el sistema de párrafos de la página AEM; 
 >
 >Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
 
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
+
 El componente Flash permite cargar una película Flash. Puede arrastrar un recurso flash desde el buscador de contenido al componente, o bien, puede utilizar el cuadro de diálogo:
 
 * **Flash**
@@ -523,6 +527,10 @@ En el siguiente ejemplo se muestra un componente **Lista** del modo en que puede
 >
 >Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
 
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
+
 Este componente proporciona los campos Nombre de usuario y Contraseña.
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
@@ -558,6 +566,10 @@ Puede configurar:
       Texto que indica que el usuario ya ha iniciado sesión.
 
 ### Estado de orden {#order-status}
+
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
 
 * **Título**
 
@@ -700,7 +712,11 @@ Si es obligatorio, se puede configurar:
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [componente principal de carrusel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [componente principal de carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html) en su lugar.
+
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
 
 Este componente permite cargar una serie de imágenes para mostrar como presentación en la página. Puede añadir o eliminar las imágenes y asignar un título a cada una. En Avanzado puede especificar el tamaño del área de visualización.
 
@@ -885,7 +901,11 @@ En el siguiente ejemplo se muestra un componente **Título**; el diseño se dete
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [Componente incrustado de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) en su lugar.
+
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
 
 El componente **Vídeo** permite colocar un elemento de vídeo predefinido, listo para utilizar en una página.
 
@@ -948,7 +968,7 @@ Los componentes de formulario se usan para crear formularios para que los visita
 
 >[!NOTE]
 >
->Consulte la [Ayuda de formularios de AEM](/help/forms/home.md) para obtener más información sobre los formularios de AEM.
+>Consulte la [Ayuda de AEM Forms](/help/forms/home.md) para obtener más información sobre los AEM Forms.
 
 Los formularios incluyen diferentes componentes:
 
@@ -1313,6 +1333,10 @@ El componente está configurado para su uso inmediato, pero es posible cambiar l
 >[!CAUTION]
 >
 >Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en su lugar.
+
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
 
 El componente Captcha requiere que el usuario escriba una cadena alfanumérica tal y como se muestra en pantalla. La cadena cambia con cada actualización.
 
