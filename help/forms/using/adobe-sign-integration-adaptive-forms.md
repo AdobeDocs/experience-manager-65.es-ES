@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
+source-git-commit: c451948c43004d084bc3fce7a2c6ad99381f1ea8
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,9 @@ Una vez implementados los requisitos previos, realice los siguientes pasos para 
    **na1** hace referencia a la base de datos predeterminada compartida.
 
    Puede modificar el valor del uso compartido de la base de datos. Reinicie el servidor para poder usar el nuevo valor para el uso compartido de la base de datos.
+
+   >[!NOTE]
+   Asegúrese de que las configuraciones de la instancia de creación y publicación apuntan al mismo uso compartido. Si crea varias configuraciones de Adobe Sign para una organización, asegúrese de que todas las configuraciones utilicen el mismo uso compartido.
 
 1. Especifique el **ID del cliente** (también denominado ID de aplicación) y el **Secreto del cliente** copiados en el paso 8. Seleccione la opción **[!UICONTROL Habilitar Adobe Sign para archivos adjuntos también]** para anexar archivos adjuntos a un formulario adaptable al documento [!DNL Adobe Sign] correspondiente enviado para firmar.
 
