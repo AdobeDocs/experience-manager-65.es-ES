@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: 535a175486a2d0f31762d71954c4fead2ef246e1
+source-git-commit: 0362be4d78fa39ac73c9be5dd5d08ccfebd21edc
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 0%
+source-wordcount: '500'
+ht-degree: 2%
 
 ---
 
@@ -23,6 +23,14 @@ ht-degree: 0%
 El [componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) permite colocar un recurso de vídeo predefinido y listo para usar (OOTB) en la página.
 
 Para que se produzca una transcodificación adecuada, un administrador instala FFmpeg por separado. Consulte [Instalar FFmpeg y configurar AEM](#install-ffmpeg). Los administradores también [configuran Perfiles de vídeo](#configure-video-profiles) para utilizarlos con elementos HTML5.
+
+>[!CAUTION]
+>
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [Componente incrustado de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) en su lugar.
+
+>[!CAUTION]
+>
+>Ya no se espera que este componente funcione de forma predeterminada sin una amplia personalización a nivel de proyecto.
 
 ## Configurar perfiles de vídeo {#configure-video-profiles}
 
