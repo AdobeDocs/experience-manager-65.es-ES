@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 428d675bd254c18651c1188de26b706b5ad3d55c
+source-git-commit: 4d95d0e38acc54e1ebbb9f9e31761205533e99f9
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,7 @@ Algunas limitaciones, recomendaciones y puntos importantes que hay que tener en 
 
 * Se recomienda utilizar formularios adaptables basados en esquema XSD en formularios adaptables basados en XFA para configurar la carga diferida en formularios grandes. El aumento de rendimiento debido a la implementación de carga lenta en formularios adaptables basados en XFA es relativamente menor que ganancia en formularios adaptables basados en XSD.
 * No configure la carga diferida en fragmentos en un formulario adaptable que utilice **[!UICONTROL Responsivo -todo en una página sin el diseño de navegación]** para el panel raíz. Como resultado de la configuración de diseño interactivo, todos los fragmentos se cargan simultáneamente en un formulario adaptable. También puede provocar una degradación del rendimiento.
+* Se recomienda no configurar la carga diferida en el primer fragmento en un formulario adaptable.
 * Se recomienda no configurar la carga diferida en fragmentos en el primer panel que se procesa al cargar el formulario adaptable.
 * La carga diferida se admite hasta dos niveles en la jerarquía de fragmentos.
 * Asegúrese de que los campos marcados como globales son únicos en un formulario adaptable.
