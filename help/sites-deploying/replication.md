@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8adbf52b29cf6e548bf14df57bc12b44821c9def
+source-git-commit: 17d70e532ab5d825dd4dc0ea4c891c5b7cb8d345
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3443'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Las solicitudes se [ponen en cola](/help/sites-deploying/osgi-configuration-sett
 
 La replicación, en una instancia de publicación o un despachante, se realiza en varios pasos:
 
-* el autor solicita que se publique determinado contenido (se active); esto se puede iniciar mediante una solicitud manual o mediante activadores automáticos preconfigurados.
+* el autor solicita que se publique determinado contenido (se active); esto puede iniciarse mediante una solicitud manual o mediante déclencheur automáticos preconfigurados.
 * la solicitud se pasa al agente de replicación predeterminado apropiado; un entorno puede tener varios agentes predeterminados que siempre se seleccionarán para dichas acciones.
 * el agente de replicación &quot;empaqueta&quot; el contenido y lo coloca en la cola de replicación.
 * en la ficha Sitios web, se establece el [indicador de estado de color](/help/sites-authoring/publishing-pages.md#determiningpagepublicationstatus) para las páginas individuales.
@@ -322,7 +322,7 @@ Solo se necesita la siguiente configuración si se necesita un proxy:
 
 #### Desencadenadores {#triggers}
 
-Estas configuraciones se utilizan para definir activadores para la replicación automatizada:
+Estas configuraciones se utilizan para definir déclencheur para la replicación automatizada:
 
 * **Omitir predeterminado**
 
@@ -338,7 +338,7 @@ Estas configuraciones se utilizan para definir activadores para la replicación 
 
 * **Tiempo de activación/desactivación alcanzado**
 
-   Esto activará la replicación automática (para activar o desactivar una página según corresponda) cuando se produzcan las veces u horas de inactividad definidas para una página. Esto se utiliza principalmente para agentes Dispatcher Flush.
+   Esto déclencheur la replicación automática (para activar o desactivar una página según corresponda) cuando se produzcan las veces u horas de inactividad definidas para una página. Esto se utiliza principalmente para agentes Dispatcher Flush.
 
 * **En estado de recepción**
 
@@ -593,19 +593,3 @@ El editor descomprimirá todos los elementos, los guardará y se informará al a
 ## Recursos adicionales {#additional-resources}
 
 Para obtener más información sobre la solución de problemas, puede leer la página [Resolución de problemas de replicación](/help/sites-deploying/troubleshoot-rep.md).
-
-Para obtener información adicional, Adobe tiene una serie de artículos de la Base de conocimiento relacionados con la replicación:
-
-[https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationListener.](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/replication-stuck.](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)
-[htmlhttps://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)
-[ ](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)
-[ ](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)
-[.htmlhttps://helpx.adobe.com/experience-manager/kb/ACLReplication.htmlhttps://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication...](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)
