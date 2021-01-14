@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e3f1c932a5937e8a115e2849935b8f5ea5c2613d
+source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
 workflow-type: tm+mt
-source-wordcount: '4833'
-ht-degree: 96%
+source-wordcount: '4901'
+ht-degree: 95%
 
 ---
 
@@ -148,7 +148,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
 >[!CAUTION]
 >
->No introduzca nunca en una plantilla información que deba [internacionalizarse](/help/sites-developing/i18n.md).
+>No introduzca nunca en una plantilla información que deba [internacionalizarse. ](/help/sites-developing/i18n.md) Para fines de internalización, se recomiendan las [características de localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Creación de una carpeta de plantillas: administrador {#creating-a-template-folder-admin}
 
@@ -208,6 +208,12 @@ Para ver o editar las propiedades:
 1. En la **Consola de plantillas**, seleccione la plantilla.
 1. Para abrir el cuadro de diálogo, seleccione **Ver propiedades** en la barra de herramientas o en las opciones rápidas.
 1. Ahora puede ver o editar las propiedades de la plantilla.
+
+>[!NOTE]
+>
+>Las plantillas son herramientas poderosas para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden abrumar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
+>
+>Adobe no recomienda tener más de 1000 plantillas debido a posibles impactos en el rendimiento.
 
 >[!NOTE]
 >
@@ -335,7 +341,7 @@ El selector **Modo** de la barra de herramientas le permite seleccionar y editar
 * [Contenido inicial](#editingatemplateinitialcontent)
 * [Diseño](#editingatemplatelayout)
 
-![chlimage_1-135](assets/chlimage_1-133.png)
+![chlimage_1-133](assets/chlimage_1-133.png)
 
 Mientras que la opción **Política de la página** del menú **Información de página** le permite [seleccionar las políticas de la página requeridas](#editingatemplatepagepolicies):
 
@@ -482,7 +488,7 @@ En el modo de **Estructura** del editor de plantillas:
 
    >[!CAUTION]
    >
-   >Tenga en cuenta que, en AEM, las proporciones de recorte se definen como **altura/anchura**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas heredados. Los usuarios de creación de páginas no notarán ninguna diferencia siempre que defina claramente el **Nombre**, ya que esto es lo que se muestra en la interfaz de usuario.
+   >Tenga en cuenta que, en AEM, las proporciones de recorte se definen como **altura/anchura**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios de creación de páginas no notarán ninguna diferencia siempre que defina claramente el **Nombre**, ya que esto es lo que se muestra en la interfaz de usuario.
 
    >[!NOTE]
    >
