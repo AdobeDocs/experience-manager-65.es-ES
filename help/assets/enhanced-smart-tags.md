@@ -3,17 +3,17 @@ title: Etiquetas inteligentes mejoradas
 description: Etiquetas inteligentes mejoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e124025295f29d6f3999dc52467301d48bceee75
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 1%
+source-wordcount: '1514'
+ht-degree: 2%
 
 ---
 
 
 # Comprender, aplicar y conservar etiquetas inteligentes {#enhanced-smart-tags}
 
-Las organizaciones que se ocupan de los activos digitales utilizan cada vez más el vocabulario controlado por taxonomía en los metadatos de los recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes utilizan comúnmente para referirse a los recursos digitales de una clase en particular y buscarlos. Etiquetar recursos con vocabulario controlado por taxonomía garantiza que se puedan identificar y recuperar fácilmente mediante búsquedas basadas en etiquetas.
+Las organizaciones que se ocupan de los activos digitales utilizan cada vez más el vocabulario controlado por taxonomía en los metadatos de los recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes utilizan comúnmente para referirse a los recursos digitales de una clase en particular y buscarlos. El etiquetado de activos con vocabulario controlado por taxonomía garantiza que los activos se puedan identificar y recuperar fácilmente.
 
 En comparación con los vocabularios del lenguaje natural, etiquetar los activos digitales en función de la taxonomía empresarial ayuda a alinearlos con el negocio de una compañía y garantiza que los activos más relevantes aparezcan en las búsquedas.
 
@@ -25,7 +25,7 @@ Una vez preparada y preparada la etiqueta, el servicio ahora puede aplicarla a l
 
 En segundo plano, Smart Content Service utiliza el marco de trabajo de Adobe Sensei AI para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. Esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a un conjunto diferente de recursos.
 
-Smart Content Service es un servicio en la nube alojado en Adobe I/O. Para utilizarlo en [!DNL Adobe Experience Manager], el administrador del sistema debe integrar su implementación [!DNL Experience Manager] con Adobe I/O.
+Smart Content Service es un servicio en la nube alojado en [!DNL Adobe I/O]. Para utilizarlo en [!DNL Adobe Experience Manager], el administrador del sistema debe integrar su implementación [!DNL Experience Manager] con [!DNL Adobe I/O].
 
 En resumen, estos son los pasos principales para utilizar el servicio de contenido inteligente:
 
@@ -34,19 +34,19 @@ En resumen, estos son los pasos principales para utilizar el servicio de conteni
 * Formación del servicio de contenido inteligente
 * Etiquetado automático
 
-![diagrama de flujo](assets/flowchart.gif)
+![Diagrama de flujo](assets/flowchart.gif)
 
 ## Requisitos previos {#prerequisites}
 
-Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en Adobe I/O:
+Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en [!DNL Adobe I/O]:
 
 * Cuenta de Adobe ID que tiene privilegios de administrador para la organización.
 * El servicio de Smart Content Service está habilitado para su organización.
-* El paquete base de servicios de contenido inteligente solo se puede agregar a una implementación en la que se hayan otorgado licencias a un paquete base [!DNL Sites] y a [!DNL Assets] complemento.
+* El paquete base de servicios de contenido inteligente solo se puede agregar a una implementación en la que se hayan otorgado licencias para un paquete base [!DNL Adobe Experience Manager Sites] y un complemento [!DNL Assets].
 
 ## Incorporación {#onboarding}
 
-El servicio de contenido inteligente está disponible para su compra como complemento de [!DNL Experience Manager]. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a Adobe I/O.
+El servicio de contenido inteligente está disponible para su compra como complemento de [!DNL Experience Manager]. Después de realizar la compra, se envía un correo electrónico al administrador de la organización con un vínculo a [!DNL Adobe I/O].
 
 El administrador puede seguir el vínculo para integrar el servicio de contenido inteligente con [!DNL Experience Manager]. Para integrar el servicio con [!DNL Experience Manager Assets], consulte [Configuración de etiquetas inteligentes](config-smart-tagging.md).
 
@@ -73,25 +73,25 @@ Añada los recursos a una carpeta y aplique las etiquetas a cada recurso desde l
 
 ## Comprender los resultados de la búsqueda [!DNL Experience Manager] con las etiquetas inteligentes {#understandsearch}
 
-De manera predeterminada, la búsqueda [!DNL Experience Manager] combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` adicional para encontrar cualquiera de los términos de búsqueda en las etiquetas inteligentes de aplicación. Por ejemplo: considere buscar `woman running`. Los recursos con sólo `woman` o `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, un recurso etiquetado con `woman` o `running` mediante etiquetas inteligentes aparece en una consulta de búsqueda de este tipo. Los resultados de la búsqueda son una combinación de:
+De manera predeterminada, la búsqueda [!DNL Experience Manager] combina los términos de búsqueda con una cláusula `AND`. El uso de etiquetas inteligentes no cambia este comportamiento predeterminado. El uso de etiquetas inteligentes agrega una cláusula `OR` adicional para encontrar cualquiera de los términos de búsqueda relacionados con las etiquetas inteligentes. Por ejemplo: considere buscar `woman running`. Los recursos con sólo `woman` o `running` palabra clave en los metadatos no aparecen en los resultados de búsqueda de forma predeterminada. Sin embargo, un recurso etiquetado con `woman` o `running` mediante etiquetas inteligentes aparece en una consulta de búsqueda de este tipo. Los resultados de la búsqueda son una combinación de:
 
-* recursos con palabras clave `woman` y `running` en los metadatos.
+* Recursos con palabras clave `woman` y `running` en los metadatos.
 
-* los recursos se etiquetaron de forma inteligente con cualquiera de las palabras clave.
+* Recursos etiquetados de forma inteligente con cualquiera de las palabras clave.
 
 Los resultados de búsqueda que coinciden con todos los términos de búsqueda en los campos de metadatos se muestran primero, seguidos de los resultados de búsqueda que coinciden con cualquiera de los términos de búsqueda en las etiquetas inteligentes. En el ejemplo anterior, el orden aproximado de visualización de los resultados de búsqueda es:
 
-1. coincidencias de `woman running` en los distintos campos de metadatos.
-1. coincidencias de `woman running` en las etiquetas inteligentes.
-1. coincidencias de `woman` o de `running` en las etiquetas inteligentes.
+1. Coincide con `woman running` en los distintos campos de metadatos.
+1. Coincide con `woman running` en las etiquetas inteligentes.
+1. Coincide con `woman` o con `running` en las etiquetas inteligentes.
 
 >[!CAUTION]
 >
->Si la indexación de Lucene se realiza a partir de [!DNL Adobe Experience Manager], la búsqueda basada en etiquetas inteligentes no funciona del modo esperado.
+>Si la indexación de Lucene se realiza a partir de [!DNL Adobe Experience Manager], la búsqueda basada en etiquetas inteligentes no funciona de la manera esperada.
 
 ## Etiquetar recursos automáticamente {#tagging-assets-automatically}
 
-Una vez que haya formado el servicio de contenido inteligente, puede activar el flujo de trabajo de etiquetado para aplicar automáticamente las etiquetas adecuadas a un conjunto diferente de recursos similares.
+Una vez que haya formado el servicio de contenido inteligente, puede aplicar el déclencheur del flujo de trabajo de etiquetado para aplicar automáticamente las etiquetas correspondientes a un conjunto diferente de recursos similares.
 
 Puede ejecutar el flujo de trabajo de etiquetado de forma periódica o siempre que sea necesario.
 
@@ -107,7 +107,7 @@ Una vez seleccionada esta opción para una carpeta, el servicio de contenido int
 
 ### Etiquetado a petición {#on-demand-tagging}
 
-Puede activar el flujo de trabajo de etiquetado desde la consola de flujo de trabajo o desde la línea de tiempo para etiquetar los recursos al instante.
+Puede déclencheur del flujo de trabajo de etiquetado desde la consola de flujo de trabajo o desde la línea de tiempo para etiquetar los recursos al instante.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Puede activar el flujo de trabajo de etiquetado desde la consola de flujo de tra
 
 >[!NOTE]
 >
->En los ciclos de etiquetado posteriores, solo los recursos modificados se etiquetan de nuevo con etiquetas recién formadas.Sin embargo, incluso los recursos sin modificar se etiquetan si el espacio entre los últimos y los actuales ciclos de etiquetado del flujo de trabajo de etiquetado supera las 24 horas. Para los flujos de trabajo de etiquetado periódicos, los recursos sin modificar se etiquetan cuando el lapso de tiempo supera los 6 meses.
+>En los ciclos de etiquetado posteriores, solo los recursos modificados se etiquetan de nuevo con etiquetas recién formadas. Sin embargo, incluso los recursos sin modificar se etiquetan si el espacio entre los ciclos de etiquetado más recientes y más recientes para el flujo de trabajo de etiquetado supera las 24 horas. Para los flujos de trabajo de etiquetado periódicos, los recursos sin modificar se etiquetan cuando el lapso de tiempo supera los seis meses.
 
 ## Depurar o moderar las etiquetas inteligentes aplicadas {#manage-smart-tags}
 
