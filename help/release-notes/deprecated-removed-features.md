@@ -2,10 +2,10 @@
 title: Funciones obsoletas y eliminadas en la versión 6.5 de Adobe Experience Manager.
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 1e6feac534fe990d614997c4bd3ab999a4a8d479
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 45%
+source-wordcount: '1719'
+ht-degree: 43%
 
 ---
 
@@ -34,7 +34,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 | Recursos | Si un usuario no tiene permisos suficientes (de lectura y escritura) en `/content/dam/collections`, no puede crear una colección. | Coincidir con la configuración de control de acceso del usuario y comprobar los permisos adecuados. |
 | Adobe Search &amp; Promote | La integración con Adobe Search &amp; Promote está en desuso. Adobe no tiene previsto realizar más mejoras en la integración de Search &amp; Promote. Tenga en cuenta que la integración de Search &amp; Promote será totalmente compatible mientras esté en desuso. |  |
 | Administrador de etiquetas DTM | La integración con DTM (Dynamic Tag Manager) está en desuso. | Utilice Adobe Experience Platform Launch como administrador de etiquetas. |
-| Adobe Target | Al añadir la capacidad de AEM para conectarse al servicio de Adobe Target mediante la API Adobe Target Standard basada en Adobe E/S (API de Rest) en AEM 6.5, el método de la API de Target Classic (XML) quedará en desuso. | Vuelva a configurar la integración para [usar la nueva API](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html). |
+| Adobe Target | Al agregar la capacidad de AEM para conectarse al servicio Adobe Target mediante la API estándar de Adobe Target (Rest API) basada en [!DNL Adobe I/O] en AEM 6.5, el modo de la API de Destinatario Classic (XML) queda obsoleto. | Vuelva a configurar la integración para [usar la nueva API](https://helpx.adobe.com/experience-manager/kt/sites/using/aem-sites-target-standard-technical-video-understand.html). |
 | Adobe Target | El uso de la integración basada en `mbox.js` con Adobe Target en AEM está obsoleto. | Cambie a utilizar `at.js` 1.x. |
 | Comercio | [En 2018 se proporcionó CIF ](https://github.com/adobe/commerce-cif-api) REST como un conjunto de microservicios para permitir integraciones entre motores de AEM y de comercio. Después de que Adobe adquirió Magento a mediados de 2018, el Adobe decidió cambiar su enfoque por dos razones. Magento tiene su propio conjunto de API de comercio (REST y GraphQL) y no es recomendable mantener dos conjuntos de API. Las tendencias del mercado indicaban que los clientes avanzaban hacia GraphQL, ya que es una forma más eficiente de consultar datos. En 2019, Adobe lanzó el nuevo Commerce Integration Framework usando las API GraphQL de Magento como fuente de verdad. El Adobe no planea realizar ninguna inversión adicional en CIF REST. Se recomienda encarecidamente a los clientes que utilicen la solución de reemplazo. | Para integraciones AEM-Magento, cambie a [AEM Arquetipo CIF](https://github.com/adobe/aem-cif-project-archetype) y [AEM Componentes principales CIF](https://github.com/adobe/aem-core-cif-components). Consulte Integración de AEM y Magento [mediante Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md). El apoyo a las integraciones de terceros (que no sean Magento) con el nuevo enfoque está en nuestra hoja de ruta. |
 | Componentes (AEM Sites) | Adobe no tiene previsto realizar mejoras adicionales en la mayoría de los componentes de base almacenados en `/libs/foundation/components`. Busque la propiedad `cq:deprecated` y `cq:deprecatedReason` en la carpeta de componentes. AEM 6.5 incluye los componentes de base, y los clientes que actualicen desde versiones anteriores pueden seguir usándolos tal cual. Además, los componentes de base son totalmente compatibles aunque estén en desuso. | Adobe recomienda utilizar los componentes principales para futuros proyectos. Los sitios existentes pueden permanecer tal cual o utilizar el [AEM Modernizar grupo de herramientas](https://github.com/adobe/aem-modernize-tools) para refactorizar el sitio y utilizar los componentes principales. |
