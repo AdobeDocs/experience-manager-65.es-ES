@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Notas de la versión anterior de Ser
 description: Notas de la versión de los Service Packs [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '14953'
+source-wordcount: '14944'
 ht-degree: 20%
 
 ---
@@ -633,7 +633,7 @@ La siguiente es la lista de correcciones que se proporciona en la versión [!DNL
 * La caché interna se borra cuando se publica una página con un componente de Adobe Target (NPR-33162).
 * La integración con Adobe Target no funciona con [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Al configurar Adobe Target, los campos [!UICONTROL Compañía] y [!UICONTROL Grupo de informes] no aparecen al seleccionar un origen de sistema de informes (NPR-32502).
-* Al exportar [!DNL Experience Fragments] mediante Adobe I/O, los metadatos como Producto de origen no se exportan a Adobe Target (NPR-32159).
+* Al exportar [!DNL Experience Fragments] mediante [!DNL Adobe I/O], los metadatos como Producto de origen no se exportan a Adobe Target (NPR-32159).
 * Los usuarios de IMS autorizados en el grupo de administración de Experience Manager locales no pueden crear ni modificar configuraciones de IMS (NPR-33045).
 * La página de configuraciones de Inicio de Adobe no muestra todos los registros (NPR-33011).
 * Los usuarios del grupo de autores de contenido no pueden editar las propiedades de un componente de Adobe Target debido a un error de JavaScript (NPR-32996).
@@ -704,7 +704,7 @@ Adobe Experience Manager 6.5.4.0 es una actualización importante que incluye nu
 
 Algunas de las funciones y mejoras clave introducidas en Adobe Experience Manager 6.5.4.0 incluyen:
 
-* Adobe Experience Manager Assets ahora se configura con Brand Portal a través de la consola de Adobe I/O.
+* Adobe Experience Manager Assets ahora se configura con Brand Portal a través de la consola [!DNL Adobe I/O].
 
 * Ahora hay disponible un nuevo paso [Generar salida imprimible](../forms/using/aem-forms-workflow-step-reference.md) para flujos de trabajo de Adobe Experience Manager Forms.
 
@@ -770,7 +770,7 @@ Para obtener una lista completa de las características y los aspectos destacado
 
 ### Assets {#assets-6540-enhancements}
 
-* El botón para activar el flujo de trabajo en la página de recopilación de recursos está desactivado (NPR-32471).
+* El botón para el flujo de trabajo de déclencheur en la página de recopilación de recursos está desactivado (NPR-32471).
 
 * Se crea una carpeta sin nombre en SPS (Scene7 Publishing System) mientras se mueve un recurso de una carpeta a otra en Experience Manager con la configuración de Dynamic Media Scene7 (NPR-32440).
 
@@ -868,7 +868,7 @@ Para obtener una lista completa de las características y los aspectos destacado
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Los usuarios de Brand Portal no pueden publicar recursos de carpetas de contribución en [!DNL Assets] al actualizar a Adobe I/O en Experience Manager 6.5.4 (CQDOC-15655). Para una corrección inmediata en Experience Manager 6.5.4, se recomienda [descargar la revisión](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e instalarla en la instancia de creación.
+* Los usuarios de Brand Portal no pueden publicar recursos de carpetas de contribución en [!DNL Assets] al actualizar a [!DNL Adobe I/O] en Experience Manager 6.5.4 (CQDOC-15655). Para una corrección inmediata en Experience Manager 6.5.4, se recomienda [descargar la revisión](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) e instalarla en la instancia de creación.
 
 * Los valores emergentes de esquema de metadatos no están visibles en las propiedades del recurso (CQ-4283287).
 
@@ -1257,7 +1257,7 @@ Algunos aspectos destacados de esta versión del Service Pack son:
 * El formulario del esquema de metadatos de carpeta no detecta automáticamente el tipo de datos y, por lo tanto, no crea el elemento TypeHint relacionado al enviar el formulario. NPR-30599: revisión para CQ-4275227
 * Las opciones de edición de recorte y rotación de recursos están desactivadas en la IU de creación de DMS7. NPR-30118: revisión para CQ-4273221
 * La función Compartir vínculo no funciona en la instancia [!DNL Experience Manager] con la configuración de DMS7. NPR-30080, NPR-30492: revisión para CQ-4273651
-* Añadir el componente [!DNL Dynamic Media]-Scene7 a la página y luego publicar la página no activa la configuración de dmscene7 cada vez. NPR-30641: revisión para CQ-4275962
+* Añadir el componente [!DNL Dynamic Media]-Scene7 a la página y luego publicar la página no déclencheur la configuración de dmscene7 cada vez. NPR-30641: revisión para CQ-4275962
 * Se añadió un IPSJobJournal en [!DNL Experience Manager] para crear solo un trabajo de sistemas de prevención de intrusiones (IPS) por perfil de procesamiento. NPR-30490: revisión para CQ-4273614
 * [!DNL Dynamic Media]:: Se han añadido filtros predeterminados para excluir recursos de la replicación en el nodo de  [!DNL Experience Manager] publicación. NPR-30538: revisión para CQ-4274678
 * Se ha introducido un flujo de trabajo de reprocesamiento externo para la compatibilidad con varios recursos a fin de permitir que la carpeta sea una carga útil. El flujo de trabajo consta de dos pasos: vuelve a procesar los recursos sin controladores mediante el mapa de metadatos al paso siguiente y vuelve a cargar todos los recursos sin el control de recursos en S7 en un solo trabajo de IPS. Para obtener más información, consulte Configuración de Cloud Services [!DNL Dynamic Media]. NPR-30489: revisión para CQ-4272903
