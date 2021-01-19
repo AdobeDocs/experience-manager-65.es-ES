@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a876a1a8d4aeb9e9a94c93a16742a4058307b0a8
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Una vez que conozca las plantillas y los componentes de forma básica, consulte 
 * [Creación y Añade de plantillas y componentes](/help/mobile/mobile-ondemand-app-templates.md)
 * [Uso de las propiedades del contenido para exportar contenido](/help/mobile/on-demand-content-properties-exporting.md)
 * [Prácticas recomendadas  ](/help/mobile/best-practices-aem-mobile.md)
-* [Desarrollo de AEM Mobile Content Services](//help/mobile/developing-content-services.md)
+* [Desarrollo de AEM Mobile Content Services](/help/mobile/developing-content-services.md)
 
 ### Recursos adicionales {#additional-resources}
 
