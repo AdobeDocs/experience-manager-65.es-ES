@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
-source-git-commit: 741ba6f6ef3270414c0ddabb1a1d02d5c436b7d9
+source-git-commit: bb50e530f0d015c0e7d06650157e3e3994082483
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,5 +34,4 @@ Las opciones de Filtro de disposición del contenido proporcionan la siguiente f
 
 * Rutas de recursos excluidas: Una lista de recursos excluidos, cada ruta de recursos debe proporcionarse como ruta absoluta y completa. No se admiten caracteres comodín/coincidencia de prefijos.
 
-* Habilitar para todas las rutas de recursos: este indicador controla si se habilita este filtro para todas las rutas, excepto para las rutas excluidas definidas por Rutas de recursos excluidas. Si se establece en &#39;true&#39;, se ignora la ruta de disposición del contenido. Independientemente de la configuración, solo se cubren las rutas de recursos que contienen una propiedad denominada &#39;jcr:data&#39; o &#39;jcr:content jcr:data&#39;.
-
+* Habilitar para todas las rutas de recursos: este indicador controla si se habilita este filtro para todas las rutas, excepto para las rutas excluidas definidas por Rutas de recursos excluidas. Si se establece en &#39;true&#39;, se ignora la ruta de disposición del contenido. Independientemente de la configuración, solo se cubren las rutas de recursos que contienen una propiedad denominada &#39;jcr:data&#39; o &#39;jcr:content/jcr:data&#39;.
