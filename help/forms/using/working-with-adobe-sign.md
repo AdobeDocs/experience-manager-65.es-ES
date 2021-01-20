@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70fff9b4029ba70fe0667dafa69fc6172f4b1733
+source-git-commit: 77c3624a780bd0d2e3bb3e82004cce73e5b66b32
 workflow-type: tm+mt
-source-wordcount: '3755'
+source-wordcount: '3827'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Siga estos pasos para agregar campos a un formulario adaptable y personalizar di
    >[!NOTE]
    >
    >    * El uso del bloque [!DNL Adobe Sign] no es obligatorio para utilizar [!DNL Adobe Sign] en un formulario adaptable. Si no utiliza el bloque [!DNL Adobe Sign] y agrega campos para los firmantes, el campo de firma predeterminado se muestra en la parte inferior de los documentos de firma.
-   >    * Utilice el bloque [!DNL Adobe Sign] sólo para aquellos formularios adaptables que generen automáticamente Documento de registro. Si utiliza un XDP personalizado para generar Documentos de registro o un formulario adaptable basado en plantilla de formulario, no es necesario el bloque [!DNL Adobe Sign].
+   >    * Utilice el bloque [!DNL Adobe Sign] sólo para aquellos formularios adaptables que generen automáticamente Documento de registro. Si utiliza un XDP personalizado para generar Documentos de registro o un formulario adaptable basado en plantilla de formulario, no se admite el bloque [!DNL Adobe Sign].
 
 
 1. Seleccione el componente **[!UICONTROL Bloque de Adobe Sign]** y toque el icono **Editar** ![aem_6_3_edit](assets/aem_6_3_edit.png). Muestra opciones para agregar campos y dar formato al aspecto de un campo.
@@ -300,7 +300,8 @@ Realice los siguientes pasos para configurar el componente Paso de firma:
       > Algunas prácticas recomendadas son:
    > * El panel Formulario adaptable que contiene el paso Firma siempre se encuentra en el último o segundo panel de un formulario adaptable. Puede ser el segundo último panel solo cuando el último panel contiene el paso Resumen.
    > * El panel que contiene el componente de paso Firma o Resumen no puede contener ningún otro componente.
-   > * Los formularios adaptables que contengan Paso de firma no pueden tener botón de envío. El envío se realiza mediante un servicio en segundo plano o el paso Resumen.
+   > * Los formularios adaptables que contengan Paso de firma no pueden tener botón de envío.
+   > * El envío de los formularios adaptables que contienen el paso Firma se gestiona mediante un servicio en segundo plano o el paso Resumen. Si hay un firmante configurado que también está rellenando el formulario, la ventaja de gestionar el envío del formulario adaptable mediante el paso Resumen es que evalúa inmediatamente que el firmante ha firmado el formulario e invoca la acción de envío. Un servicio en segundo plano tarda más tiempo en evaluar si todos los firmantes configurados han firmado el formulario y retrasa el envío del formulario adaptable.
    > * Diseñe el formulario para que un usuario no pueda desplazarse hacia atrás desde un panel que contenga el paso Firma o Resumen.
 
 
