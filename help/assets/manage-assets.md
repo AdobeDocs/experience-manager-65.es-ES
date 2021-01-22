@@ -4,9 +4,9 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '9562'
+source-wordcount: '9590'
 ht-degree: 4%
 
 ---
@@ -50,7 +50,7 @@ Puede cargar varios tipos de recursos (como imágenes, archivos PDF, archivos RA
 
 >[!NOTE]
 >
->En el modo Dynamic Media: Scene7, solo puede cargar recursos cuyo tamaño de archivo sea de 2 GB o inferior.
+>En el modo Dynamic Media - Scene7, solo puede cargar recursos cuyo tamaño de archivo sea de 2 GB o inferior.
 
 Puede elegir cargar recursos en carpetas con o sin un perfil de procesamiento asignado a ellas.
 
@@ -82,7 +82,7 @@ Al hacer clic en **[!UICONTROL Pausar]**, cambia a la opción **[!UICONTROL Repr
 
 ![Reanudar la carga de recursos en pausa](assets/resume-paused-upload.png)
 
-Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Al cancelar la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
+Para cancelar una carga en curso, haga clic en cerrar (`X`) al lado de la barra de progreso. Cuando cancela la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
 
 La capacidad de reanudar la carga resulta especialmente útil en situaciones de bajo ancho de banda y problemas de red, donde la carga de un recurso de gran tamaño tarda mucho tiempo. Puede pausar la operación de carga y continuar más tarde cuando mejore la situación. Cuando se reanuda, se cargan inicios desde el punto en el que se detuvo.
 
@@ -157,7 +157,7 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 
 >[!NOTE]
 >
->En el modo Dynamic Media: Scene7, solo puede cargar recursos cuyo tamaño de archivo sea de 2 GB o inferior.
+>En el modo Dynamic Media - Scene7, solo puede cargar recursos cuyo tamaño de archivo sea de 2 GB o inferior.
 
 >[!NOTE]
 >
@@ -168,8 +168,12 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 **Para cargar recursos mediante FTP**
 
 1. Con el cliente FTP que elija, inicie sesión en el servidor FTP con el nombre de usuario y la contraseña de FTP que recibió del correo electrónico de aprovisionamiento. En el cliente FTP, cargue archivos o carpetas en el servidor FTP.
-1. [Inicie sesión en las credenciales de ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) clasificación de Dynamic Media recibidas del correo electrónico de aprovisionamiento. En la barra de navegación global, haga clic en **[!UICONTROL Cargar]**.
 
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) e inicie sesión en su cuenta.
+
+   Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
+
+1. En la barra de navegación global, haga clic en **[!UICONTROL Cargar]**.
 1. En la página Cargar, cerca de la esquina superior izquierda, haga clic en la ficha **[!UICONTROL Por medio de FTP]**.
 1. En la parte izquierda de la página, elija una carpeta FTP desde la que cargar los archivos; a la derecha de la página, elija una carpeta de destino.
 1. Cerca de la esquina inferior derecha de la página, haga clic en **[!UICONTROL Opciones de trabajo]** y, a continuación, defina las opciones que desee en función de los recursos de la carpeta seleccionada.
@@ -252,7 +256,7 @@ Al cargar archivos de imagen PostScript (EPS) o Illustrator (AI), puede darles f
 
 Los archivos Documento de Photoshop (PSD) se utilizan con mayor frecuencia para crear plantillas de imagen. Al cargar un archivo PSD, puede crear una plantilla de imagen automáticamente a partir del archivo (seleccione la opción [!UICONTROL Crear plantilla] en la pantalla Cargar).
 
-Dynamic Media crea varias imágenes a partir de un archivo PSD con capas si se utiliza el archivo para crear una plantilla; crea una imagen para cada capa.
+Dynamic Media crea varias imágenes a partir de un archivo PSD con capas si utiliza el archivo para crear una plantilla; crea una imagen para cada capa.
 
 Utilice las [!UICONTROL Opciones de recorte] y [!UICONTROL Opciones de Perfil de color], descritas anteriormente, con las opciones de carga de Photoshop.
 
@@ -369,7 +373,7 @@ Para previsualización de recursos mediante el teclado, siga estos pasos:
 
 >[!MORELIKETHIS]
 >
->* [Previsualización de recursos](/help/assets/previewing-assets.md) de medios dinámicos.
+>* [Previsualización de Dynamic Media Assets](/help/assets/previewing-assets.md).
 >* [Subrecursos](managing-linked-subassets.md#viewing-subassets) de vista.
 
 
@@ -583,7 +587,7 @@ Consulte [Descarga de recursos desde Experience Manager](/help/assets/download-a
 
 >[!NOTE]
 >
->Para obtener más información específica de Dynamic Media, consulte [Publicación de recursos de Dynamic Media.](/help/assets/publishing-dynamicmedia-assets.md)
+>Para obtener más información específica de Dynamic Media, consulte [Publicación de Dynamic Media Assets.](/help/assets/publishing-dynamicmedia-assets.md)
 
 1. Vaya a la ubicación de los recursos o carpetas que desee publicar.
 
