@@ -1,18 +1,14 @@
 ---
 title: Integración con Dynamic Media Classic
-seo-title: Integración con Dynamic Media Classic
-description: Aprenda a integrar AEM con Dynamic Media Classic.
-seo-description: Aprenda a integrar AEM con Dynamic Media Classic.
-uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
+description: Aprenda a integrar Adobe Experience Manager con Dynamic Media Classic.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '5464'
+source-wordcount: '5452'
 ht-degree: 1%
 
 ---
@@ -174,7 +170,7 @@ Para utilizar Dynamic Media y Dynamic Media Classic simultáneamente:
 Cuando tiene activados Dynamic Media Classic y Dynamic Media, existen las siguientes limitaciones:
 
 * La carga manual a Dynamic Media Classic seleccionando un recurso y arrastrándolo a un componente de Dynamic Media Classic en una página AEM no funciona.
-* Aunque los recursos sincronizados AEM-Dynamic Media Classic se actualizan automáticamente a Dynamic Media Classic cuando se edita el recurso en Recursos, una acción de reversión no activa una nueva carga, por lo tanto Dynamic Media Classic no obtendría la última versión inmediatamente después de una reversión. La solución consiste en volver a editarse una vez que se haya completado la reversión.
+* Aunque los recursos sincronizados AEM-Dynamic Media Classic se actualizan automáticamente a Dynamic Media Classic cuando se edita en Recursos, una acción de reversión no déclencheur una nueva carga, por lo tanto Dynamic Media Classic no obtendría la última versión inmediatamente después de una reversión. La solución consiste en volver a editarse una vez que se haya completado la reversión.
 * Si necesita utilizar Dynamic Media para un caso de uso e integración con Dynamic Media Classic para otro caso de uso, de modo que los recursos de Dynamic Media no interactúen con el sistema Dynamic Media Classic, no aplique la configuración de Dynamic Media Classic a la carpeta Dynamic Media ni la configuración de Dynamic Media (perfil de procesamiento) a una carpeta Dynamic Media Classic.
 
 ## Prácticas recomendadas para integrar Dynamic Media Classic con AEM {#best-practices-for-integrating-scene-with-aem}
@@ -449,7 +445,7 @@ Si utiliza esta función, tenga en cuenta las siguientes limitaciones:
 
 >[!NOTE]
 >
->Si un usuario publica el recurso en AEM, lo activa automáticamente en el recurso activo/de producción (el recurso ya no estará en previsualización segura/sin publicar).
+>Si un usuario publica el recurso en AEM, déclencheur automáticamente el recurso S7 al recurso activo/de producción (el recurso ya no estará en previsualización segura/no se publicará).
 
 Para definir el estado de los recursos insertados en Dynamic Media Classic como no publicados:
 
