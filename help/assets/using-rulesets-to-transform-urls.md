@@ -1,16 +1,14 @@
 ---
 title: Uso de conjuntos de reglas para transformar direcciones URL
 description: Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones.
-uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '762'
 ht-degree: 5%
 
 ---
@@ -29,7 +27,7 @@ Puede implementar conjuntos de reglas en Dynamic Media para transformar direccio
 
    Consulte [Compatibilidad de Adobe Dynamic Media Classic con SEO](/help/assets/assets/s7_seo.pdf).
 
-* Configuración de la disposición del contenido para activar una descarga.
+* Configuración de la disposición del contenido para el déclencheur de una descarga.
 * Simplifique las direcciones URL de plantilla del servicio de imágenes para su personalización. Por ejemplo: convierta `rgb{XX,YY,ZZ}` en el `\redXX\greenYY\blueZZ` listo para RTF
 
 * Solicite que se codifiquen determinados caracteres, como `$`, `{` y `}`, y que se descodifiquen determinados caracteres para ImageServer. Por ejemplo, Facebook no funciona bien con las direcciones URL que contienen caracteres especiales.
@@ -61,9 +59,7 @@ Consulte también [Uso de la imagen &#39;asset&#39; en lugar de &#39;is&#39; en 
 
 **Para implementar conjuntos de reglas XML:**
 
-1. Inicie sesión en su cuenta de Dynamic Media Classic:
-
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Inicie sesión en su [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
    Adobe proporcionó las credenciales y el inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
