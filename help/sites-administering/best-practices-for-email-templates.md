@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1130'
 ht-degree: 1%
 
 ---
@@ -157,7 +157,7 @@ Actualmente hay [siete componentes disponibles para su uso dentro de plantillas 
 | Texto y personalización | /libs/mcm/campaña/components/personalization |
 | Textimage | /libs/mcm/campaña/components/textimage |
 | Vínculo | /libs/mcm/campaña/components/reference |
-| Plantilla de imagen de Scene7 | /libs/mcm/campaña/s7image |
+| Plantilla de imagen de Dynamic Media Classic (anteriormente Scene7) | /libs/mcm/campaña/s7image |
 | Referencia de objetivo | /libs/mcm/campaña/components/reference |
 
 >[!NOTE]
