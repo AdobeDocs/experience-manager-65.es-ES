@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 translation-type: tm+mt
-source-git-commit: 6396660b642fd78ac7f311fa416efe0e0d52a9e3
+source-git-commit: 838e194f699b0832839c80f4ba9503c9d5a15945
 workflow-type: tm+mt
 source-wordcount: '2721'
 ht-degree: 2%
@@ -85,7 +85,7 @@ Es decir, el `sling:resourceType` de la configuración de ContextHub debe ser re
    <td><strong>Orientación de reestructuración</strong></td>
    <td><p>Cualquier modelo de flujo de trabajo nuevo o modificado debe migrarse a /conf/global/workflow/models.</p>
     <ol>
-     <li>Implemente los modelos de flujo de trabajo modificados en una instancia de desarrollo AEM 6.4 local, de forma que existan en la ubicación Anterior.</li>
+     <li>Implemente los modelos de flujo de trabajo modificados en una instancia de desarrollo AEM 6.5 local, de forma que existan en la ubicación Anterior.</li>
      <li>Edite el modelo de flujo de trabajo con AEM editor de modelos de flujo de trabajo en AEM &gt; Herramientas &gt; Flujo de trabajo &gt; Modelos.</li>
      <li>Al migrar modelos de flujo de trabajo modificados proporcionados por AEM
       <ol>
