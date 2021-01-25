@@ -4,9 +4,9 @@ description: Notas de la versión específicas de [!DNL Adobe Experience Manager
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
+source-git-commit: eec0e8f466c4a228b16ee2c1249052bfc3250dec
 workflow-type: tm+mt
-source-wordcount: '4255'
+source-wordcount: '4302'
 ht-degree: 5%
 
 ---
@@ -465,6 +465,8 @@ Revise si utiliza una función o una capacidad en una implementación. Además, 
 | Conectores | El conector JCR de Adobe para Microsoft SharePoint 2010 y Microsoft SharePoint 2013 está en desuso para AEM 6.5. | N/D |
 
 ## Problemas conocidos {#known-issues}
+
+* Si tiene problemas en la respuesta [!DNL Experience Manager] debido al temporizador bloqueado del Registro de componentes, [instale este paquete](https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr/2.1.20). La resolución de estos problemas está programada para incluirse en la próxima [versión del Service Pack de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-on-prem-managed-services).
 
 * Ignore los siguientes errores en el archivo `error.log` durante la instalación de Experience Manager 6.5.7.0:
 
