@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 5aa2fe48578633cbe5e4324f9e956e1dbbdab8af
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1533'
 ht-degree: 1%
 
 ---
@@ -111,7 +111,7 @@ Realice los siguientes pasos para crear un grupo de informes.
 La configuración del Cloud Service es información sobre su cuenta de Adobe Analytics. La configuración permite que Adobe Experience Manager (AEM) se conecte a Adobe Analytics. Cree una configuración independiente para cada cuenta de Analytics que utilice.
 
 1. Inicie sesión en la instancia de creación de AEM como administrador.
-1. En la esquina superior izquierda, haga clic en **Adobe Experience Manager** > **Herramientas** ![](/help/forms/using/assets/tools.png) > **Implementación** > **Cloud Services**.
+1. En la esquina superior izquierda, haga clic en **Adobe Experience Manager** > **Herramientas** ![](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services heredados**.
 1. Busque el icono **Adobe Analytics**. Haga clic en **Mostrar configuraciones** y luego haga clic en **[+]** para agregar nueva configuración.
 
    Si es la primera vez que utiliza la aplicación, haga clic en **Configurar ahora**.
