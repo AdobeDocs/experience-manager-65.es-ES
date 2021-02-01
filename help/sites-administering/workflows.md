@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5a99daa208d1d109d2736525fdca3accdcfb4dd1
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Un flujo de trabajo puede tener uno de los siguientes estados:
 * **EJECUTANDO**: La instancia de flujo de trabajo se está ejecutando.
 * **COMPLETADO**: La instancia de flujo de trabajo ha finalizado correctamente.
 
-* **SUSPENDIDO**: Se ha suspendido la instancia de flujo de trabajo.
+* **SUSPENDIDO**: Marca el flujo de trabajo como suspendido. Sin embargo, consulte la nota de advertencia siguiente sobre un problema conocido con este estado.
 * **ABORTADO**: La instancia de flujo de trabajo ha finalizado.
 * **ESTILO**: La progresión de la instancia de flujo de trabajo requiere que se ejecute un trabajo en segundo plano, pero el trabajo no se puede encontrar en el sistema. Esta situación puede producirse cuando se produce un error al ejecutar el flujo de trabajo.
 
@@ -107,7 +107,12 @@ Un flujo de trabajo puede tener uno de los siguientes estados:
 
 Según el estado actual, puede realizar acciones en las instancias de flujo de trabajo en ejecución cuando necesite intervenir en la progresión normal de una instancia de flujo de trabajo:
 
-* **Suspender**: Detiene temporalmente la ejecución del flujo de trabajo. Suspender es útil en casos excepcionales cuando no desea que continúe el flujo de trabajo, por ejemplo para mantenimiento. La suspensión cambia el estado del flujo de trabajo a Suspendido.
+* **Suspender**: La suspensión cambia el estado del flujo de trabajo a Suspendido. Consulte Precaución a continuación:
+
+>[!CAUTION]
+>
+>Marcar un estado de flujo de trabajo como &quot;Suspender&quot; tiene un problema conocido. En este estado, es posible realizar acciones en elementos de flujo de trabajo suspendidos en una Bandeja de entrada.
+
 * **Reanudar**: Reinicia un flujo de trabajo suspendido en el mismo punto de ejecución en el que se suspendió, utilizando la misma configuración.
 * **Finalizar**: Finaliza la ejecución del flujo de trabajo y cambia el estado a  **ABORTED**. No se puede reiniciar una instancia de flujo de trabajo anulada.
 
