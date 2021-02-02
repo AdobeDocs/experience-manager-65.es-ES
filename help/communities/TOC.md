@@ -6,10 +6,10 @@ user-guide-title: Guía del usuario de AEM 6.5 Communities
 breadcrumb-title: Guía de Communities
 user-guide-description: Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales.
 translation-type: tm+mt
-source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 11%
+source-wordcount: '501'
+ht-degree: 10%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 11%
 + Introducción a AEM Communities {#introduction}
    + [Sitios de comunidades](administer-landing.md)
    + [Información general de AEM Communities](overview.md)
-   + [Notas de versión de AEM Communities](/help/release-notes/communities-release-notes.md)
+   + [Notas de versión de AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Introducción a Comunidades de AEM](getting-started.md)
    + [Introducción a AEM Communities para la habilitación](getting-started-enablement.md)
    + [Configuración inicial](setup.md)
@@ -38,7 +38,7 @@ ht-degree: 11%
    + [Configuración de Dispatcher para Comunidades](dispatcher.md)
 + Administración {#administer}
    + [Servicio de administración de usuarios y usuarios por usuario en AEM Communities](user-ugc-management-service.md)
-   + [Sitios de comunidades](administer-landing.md)
+   + [Sitios de comunidades](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Consolas de comunidades](consoles.md)
    + [Funciones de configuración de Analytics para comunidades](analytics.md)
    + [Configuración de las funciones de habilitación](enablement.md)
@@ -165,4 +165,4 @@ ht-degree: 11%
    + [Tendencias de actividad](trends.md)
    + [Uso de la nube de etiquetas de Social](tagcloud.md)
    + [Uso de la votación](voting.md)
-   + [Crear una página de muestra](create-sample-page.md)
+   + [Crear una página de muestra](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)
