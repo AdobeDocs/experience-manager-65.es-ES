@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: 9b65f7194dc648ba9a6dbc127bc8d5951f126269
+source-git-commit: 6ca333c64fcd7d3b91b1ae8ef98c53ed770479d4
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 1%
@@ -98,6 +98,23 @@ A veces, la ventana de inicio rápido de WCM AEM tiene el mensaje &quot;AEM WCM 
 
 Si todo lo demás falla, compruebe los registros para averiguar qué ha pasado.
 
+### El sitio web no se carga o falla intermitentemente con Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
+
+Existe un problema conocido con AEM 6.5 ejecutándose en Java 11 en el que es posible que el sitio web no se cargue o falle de forma intermitente.
+
+Si esto sucede, siga la siguiente solución:
+
+1. Abra el archivo `sling.properties` en la carpeta `crx-quickstart/conf/`
+1. Busque la línea siguiente:
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.`
+
+1. Sustitúyalo por lo siguiente:
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
+
+1. Reinicie la instancia.
+
 ## Resolución de problemas de instalación con un servidor de aplicaciones {#troubleshooting-installations-with-an-application-server}
 
 ### Página no encontrada devuelta al solicitar una página de geometrixx-exterior {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
@@ -130,20 +147,3 @@ Si la instalación de AEM utiliza almacenamiento externo, por ejemplo, un servid
 
 Si instala o actualiza archivos JSP al Experience Manager en JBoss y no se compilan los servlets correspondientes, asegúrese de que el compilador JBoss JSP esté correctamente configurado. Para obtener más información, consulte la
 [Artículo Problemas de compilación JSP en JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html).
-
-### El sitio web no se carga o falla intermitentemente con Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
-
-Existe un problema conocido con AEM 6.5 ejecutándose en Java 11 en el que es posible que el sitio web no se cargue o falle de forma intermitente.
-
-Si esto sucede, siga la siguiente solución:
-
-1. Abra el archivo `sling.properties` en la carpeta `crx-quickstart/conf/`
-1. Busque la línea siguiente:
-
-   `org.osgi.framework.bootdelegation=sun.,com.sun.`
-
-1. Sustitúyalo por lo siguiente:
-
-   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
-
-1. Reinicie la instancia.
