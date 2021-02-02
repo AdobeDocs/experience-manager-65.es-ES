@@ -6,9 +6,9 @@ user-guide-title: Guía del usuario de AEM 6.5 Mobile
 breadcrumb-title: Guía móvil
 user-guide-description: Cree y gestione contenido para aplicaciones móviles.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '331'
 ht-degree: 11%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 11%
    + [Plantillas de página para aplicaciones móviles](phonegap-apps-arch-page-templates.md)
    + [Configuración de Adobe Target Cloud Service](aem-mobile-configuring-cloud-service.md)
    + [Aplicaciones de una sola página](phonegap-single-page-applications.md)
-   + [Modelos en el repositorio](administer-mobile-apps.md)
+   + [Modelos en el repositorio](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/administering/administer-mobile-apps.html)
    + [Inicio AEM PhoneGap](starting-aem-phonegap-app.md)
    + [Prueba de aplicaciones móviles](develop-mobile-apps-testing.md)
    + [Estructurar una aplicación](phonegap-structure-an-app.md)
