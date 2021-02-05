@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ade3747ba608164a792a62097b82c55626245891
+source-git-commit: 2d54d115529126162c92e9943a188d05159535f9
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '934'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,6 @@ También puede configurar el procesamiento en caché de formularios adaptables e
 ### Requisitos previos {#pre-requisites}
 
 * Habilite la opción [combinando o prefiriendo datos en el cliente](prepopulate-adaptive-form-fields.md#prefill-at-client). Ayuda a combinar datos únicos para cada instancia de un formulario precumplimentado.
-* [Habilite el agente de vaciado para cada instancia](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) de publicación. Ayuda a mejorar el rendimiento del almacenamiento en caché para formularios adaptables. La dirección URL predeterminada de los agentes de vaciado es `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
 ### Consideraciones para almacenar en caché formularios adaptables en un despachante {#considerations}
 
@@ -63,7 +62,7 @@ También puede configurar el procesamiento en caché de formularios adaptables e
 
 Siga los pasos que se indican a continuación para habilitar y configurar la caché de formularios adaptables en el despachante:
 
-1. Abra la siguiente URL para cada instancia de publicación de su entorno y configure el agente de replicación:
+1. Abra la siguiente URL para cada instancia de publicación de su entorno y [habilite el agente de vaciado para las instancias de publicación de su entorno](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Añada lo siguiente en el archivo](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files) dispatcher.any:
@@ -143,17 +142,7 @@ Al seleccionar y agregar imágenes o vídeos mediante el navegador de recursos a
 
 Después de publicar las imágenes y el vídeo, anule explícitamente la publicación y publique los formularios adaptables que hacen referencia a estos recursos.
 
-### Algunos formularios adaptables que contienen fragmentos de contenido o de experiencia no se invalidan automáticamente desde la caché del despachante {#content-or-experience-fragment-not-auto-invalidated}
-
-#### Problema {#issue2}
-
-Cuando se agrega un fragmento de contenido o de experiencia a un formulario adaptable y estos recursos se editan y publican de forma independiente, los formularios adaptables que contengan dichos recursos no se invalidan automáticamente desde la caché del despachante.
-
-#### Solución {#Solution2}
-
-Después de publicar fragmentos de contenido o fragmentos de experiencia actualizados, anule explícitamente la publicación y publique los formularios adaptables que utilizan estos recursos.
-
-### Solo se almacena en caché la primera instancia de un formulario adaptable{#only-first-insatnce-of-adptive-forms-is-cached}
+### Solo se almacena en caché la primera instancia de un formulario adaptable {#only-first-instance-of-adaptive-forms-is-cached}
 
 #### Problema {#issue3}
 
