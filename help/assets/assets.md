@@ -73,7 +73,7 @@ Al trabajar con recursos digitales en [!DNL Experience Manager], debe comprender
 
 ### Cómo trabajar con recursos {#how-to-work-with-assets}
 
-Las acciones se realizan sobre activos o colecciones. Sirven para crear o modificar activos, colecciones y representaciones. Muchas de las acciones básicas que realiza en los recursos (cargar, eliminar, actualizar y guardar subrecursos) activan flujos de trabajo preconfigurados. Estos se activan automáticamente en [!DNL Assets] y se describen en detalle en [!DNL Assets] controladores de medios.
+Las acciones se realizan sobre activos o colecciones. Sirven para crear o modificar activos, colecciones y representaciones. Muchas de las acciones básicas que realiza en los recursos (cargar, eliminar, actualizar y guardar subrecursos) realizan déclencheur en flujos de trabajo preconfigurados. Estos se activan automáticamente en [!DNL Assets] y se describen en detalle en [!DNL Assets] controladores de medios.
 
 Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 
