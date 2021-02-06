@@ -34,7 +34,7 @@ Esta función agrega la posibilidad de configurar una nueva contraseña de admin
 
 ## ¿Cómo Lo Utilizo? {#how-do-i-use-it}
 
-Esta característica se activará automáticamente si elige instalar AEM a través de la línea de comandos, en lugar de hacer clic en el doble en el JAR desde un explorador de filesystems.
+Esta función se déclencheur automáticamente si elige instalar AEM a través de la línea de comandos, en lugar de hacer clic en el doble en el JAR desde un explorador del sistema de archivos.
 
 El sintaxis general para ejecutar una instancia de AEM desde la línea de comandos es:
 
