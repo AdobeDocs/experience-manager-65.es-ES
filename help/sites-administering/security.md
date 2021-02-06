@@ -596,7 +596,7 @@ Para eliminar miembros de un grupo en una ruta determinada:
 
 1. Vaya a la ruta a la que desee quitar permisos y haga clic en **Detalles**. La parte inferior de la ventana de detalles proporciona información sobre quién tiene permisos para esa página.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. Seleccione la casilla de verificación de la columna **Miembro** para los miembros que desea que tengan permisos para esa ruta. Desactive la casilla de verificación del miembro para el que desea quitar permisos. Aparece un triángulo rojo en la celda en la que ha realizado cambios.
 1. Haga clic en **Aceptar** para guardar los cambios.
@@ -701,7 +701,7 @@ Para suplantar un usuario existente:
 1. Haga clic en la ficha **Suplantadores**.
 1. Haga clic en el usuario que desea que pueda suplantar al usuario seleccionado. Arrastre el usuario (que suplantará) desde la lista al panel Suplantar. El nombre aparece en la lista.
 
-   ![chlimage_1-114](assets/chlimage_1-115.png)
+   ![chlimage_1-115](assets/chlimage_1-115.png)
 
 1. Haga clic en **Guardar**.
 
