@@ -319,7 +319,7 @@ Para ayudar a evitar el uso indebido de DoS, puede:
 >
 >Esta mitigación solo debe realizarse en entornos de AEM que no utilicen Forms.
 
-Dado que AEM no proporciona índices predeterminados para `FormChooserServlet`, el uso de selectores de formularios en consultas desencadenará una costosa inversión del repositorio, que generalmente interrumpe la instancia de AEM. Los selectores de formulario se pueden detectar con la presencia del **&amp;ast;.form.&amp;ast;** cadena en consultas.
+Dado que AEM no proporciona índices predeterminados para `FormChooserServlet`, el uso de selectores de formulario en consultas déclencheur una inversión costosa del repositorio, que normalmente interrumpe la instancia de AEM. Los selectores de formulario se pueden detectar con la presencia del **&amp;ast;.form.&amp;ast;** cadena en consultas.
 
 Para mitigar esto, siga los pasos a continuación:
 
