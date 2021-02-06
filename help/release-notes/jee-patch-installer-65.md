@@ -82,7 +82,7 @@ Si tiene configurada la autenticación SAML y tiene problemas con metadatos de I
 
 ## Módulos afectados {#impacted-modules}
 
-* Servicios de documentos
+* Servicios de documento
 * :Seguridad de los documentos
 * Base JEE
 
