@@ -42,7 +42,7 @@ La comunidad de AEM crea constantemente flujos de trabajo de ejemplo, tutoriales
 AEM se utiliza de muchas formas distintas en las organizaciones y su gama de funciones es lo bastante amplia como para que pueda beneficiarse una empresa al completo. Si quiere obtener información sobre cómo empezar a usar AEM, consulte nuestras guías de introducción:
 
 * [Introducción a AEM plataformas y sitios](/help/sites-deploying/deploy.md#getting-started)
-* [Introducción a Formularios AEM](/help/forms/using/introduction-aem-forms.md)
+* [Introducción a AEM Forms](/help/forms/using/introduction-aem-forms.md)
 * [Introducción a AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Introducción a Comunidades de AEM](/help/communities/getting-started.md)
 * [Introducción a Livefyre de AEM](https://answers.livefyre.com/developers/getting-started/)
