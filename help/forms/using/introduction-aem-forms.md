@@ -26,7 +26,7 @@ Para obtener información sobre las últimas funciones y mejoras de AEM Forms, c
 
 Adobe Experience Manager (AEM) proporciona una solución fácil de usar para crear, administrar, publicar y actualizar formularios digitales complejos al tiempo que se integra con los procesos back-end, las reglas comerciales y los datos.
 
-Formularios AEM combina la creación, gestión y publicación de formularios junto con las funciones de gestión de correspondencia, seguridad de documentos y análisis integrados para crear experiencias integrales atractivas. AEM Forms, diseñado para funcionar en canales web y móviles, puede integrarse de manera eficaz en sus procesos empresariales, reduciendo los procesos y errores de papel y mejorando al mismo tiempo la eficacia.
+AEM Forms combina la creación, gestión y publicación de formularios junto con las funciones de gestión de correspondencia, seguridad de documentos y análisis integrados para crear experiencias integrales atractivas. AEM Forms, diseñado para funcionar en canales web y móviles, puede integrarse de manera eficaz en sus procesos empresariales, reduciendo los procesos y errores de papel y mejorando al mismo tiempo la eficacia.
 
 En las grandes empresas, los formularios suelen crearse una vez y reutilizarse copiándolos a un sistema gestor de contenido. Mantener una amplia base de datos de formularios actualizados y hacerlos descubribles puede ser un reto considerable. AEM ofrece un Forms Portal personalizable que garantiza que los clientes encuentren y accedan a los formularios que necesitan en los canales web y móvil.
 
