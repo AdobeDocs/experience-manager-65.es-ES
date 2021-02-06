@@ -30,7 +30,7 @@ ht-degree: 45%
 
 [Cree, administre, distribuya y optimice recursos digitales.](/help/assets/home.md)
 
-## Formularios AEM {#aem-forms}
+## AEM Forms {#aem-forms}
 
 [Cree, gestione, publique y actualice formularios digitales.](/help/forms/home.md)
 
