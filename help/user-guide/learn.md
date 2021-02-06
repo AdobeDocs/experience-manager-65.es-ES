@@ -26,16 +26,16 @@ Activos AEM permite que su organización cree, administre, distribuya y optimice
 * [Trabajo con Dynamic Media](/help/assets/dynamic-media.md)
 * [Notas de la versión de Activos AEM](/help/release-notes/assets.md)
 
-## Formularios AEM {#aem-forms}
+## AEM Forms {#aem-forms}
 
 AEM ofrece una solución fácil de usar para crear, gestionar, publicar y actualizar formularios digitales complejos a la vez que se integra con procesos back-end, reglas comerciales y datos.
 
-Formularios AEM combina la creación, gestión y publicación de formularios junto con las funciones de gestión de correspondencia, seguridad de documentos y análisis integrados para crear experiencias integrales atractivas. [Explore algunos de nuestros nuevos tutoriales de funciones de vídeo para AEM Forms.](https://helpx.adobe.com/experience-manager/kt/forms/index/aem-6-5-forms.html)
+AEM Forms combina la creación, gestión y publicación de formularios junto con las funciones de gestión de correspondencia, seguridad de documentos y análisis integrados para crear experiencias integrales atractivas. [Explore algunos de nuestros nuevos tutoriales de funciones de vídeo para AEM Forms.](https://helpx.adobe.com/experience-manager/kt/forms/index/aem-6-5-forms.html)
 
-* [Introducción a Formularios AEM](/help/forms/using/introduction-aem-forms.md)
-* [Novedades en Formularios AEM](/help/forms/using/whats-new.md)
-* [Arquitecturas y topologías de Formularios AEM](/help/forms/using/aem-forms-architecture-deployment.md)
-* [Ajuste del rendimiento en Formularios AEM](/help/forms/using/performance-tuning-aem-forms.md)
+* [Introducción a AEM Forms](/help/forms/using/introduction-aem-forms.md)
+* [Novedades en AEM Forms](/help/forms/using/whats-new.md)
+* [Arquitecturas y topologías de AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
+* [Ajuste del rendimiento en AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
 
 ## AEM Screens {#aem-screens}
 
