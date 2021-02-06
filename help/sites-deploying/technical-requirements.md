@@ -374,17 +374,17 @@ por ejemplo, `https://www.yourserver.com:4502`
 * el caso predeterminado de `localhost` se interpretará para las instalaciones de red IPv4 e IPv6
 por ejemplo, `https://localhost:4502`
 
-### Requisitos para el Añado de Dynamic Media AEM {#requirements-for-aem-dynamic-media-add-on}
+### Requisitos para AEM Añada de Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
 
 AEM Dynamic Media está deshabilitado de forma predeterminada. Consulte aquí para [habilitar Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
-Con Dynamic Media activado, se aplican los siguientes requisitos técnicos adicionales.
+Con Dynamic Media habilitado, se aplican los siguientes requisitos técnicos adicionales.
 
 >[!NOTE]
 >
->Estos requisitos del sistema **sólo** se aplican si utiliza Dynamic Media - modo híbrido; Medios dinámicos: el modo híbrido tiene un servidor de imágenes incrustado, que solo está certificado en determinados sistemas operativos.
+>Estos requisitos del sistema **sólo** se aplican si utiliza el modo Dynamic Media - Híbrido; Dynamic Media - El modo híbrido tiene un servidor de imágenes incrustado, que solo está certificado en determinados sistemas operativos.
 >
->Para los clientes de Dynamic Media que ejecutan Dynamic Media - modo Scene7 (es decir, modo de ejecución **dynamicmedia_scene7**), no hay requisitos adicionales del sistema; solo los mismos requisitos del sistema que AEM. Medios dinámicos: la arquitectura del modo Scene7 utiliza el servicio de imágenes basado en la nube y no el servicio incrustado en AEM.
+>Para los clientes de Dynamic Media que ejecutan Dynamic Media - modo Scene7 (es decir, **dynamicmedia_scene7** runmode), no hay requisitos adicionales del sistema; solo los mismos requisitos del sistema que AEM. Dynamic Media: la arquitectura del modo Scene7 utiliza el servicio de imágenes basado en la nube y no el servicio incrustado en AEM.
 
 #### Hardware {#hardware}
 
@@ -431,7 +431,7 @@ Si utiliza Dynamic Media en Linux, deben cumplirse los siguientes requisitos pre
 * Microsoft Windows Server 2016
 * Intercambiar espacio igual al menos al doble de la cantidad de memoria física (RAM)
 
-Para usar Dynamic Media en Windows, instale Microsoft Visual Studio 2010, 2013 y 2015 redistribuibles para x64 y x86.
+Para usar Dynamic Media en Windows, instale las redistribuibles de Microsoft Visual Studio 2010, 2013 y 2015 para x64 y x86.
 
 Para Windows x64:
 
