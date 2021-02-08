@@ -1,12 +1,12 @@
 ---
-title: Introducción a [!DNL Adobe Experience Manager Assets].
+title: Introducción a [!DNL Adobe Experience Manager Assets]
 description: Descubra qué es la administración de recursos digitales, sus casos de uso y la oferta [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 130a03c821fd2a1e9ecda70039241720052a8920
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 36%
+source-wordcount: '868'
+ht-degree: 34%
 
 ---
 
@@ -38,7 +38,7 @@ La interfaz de usuario básica es la misma que la de [!DNL Sites]. Consulte [Inf
 
 Al determinar si se debe colocar una imagen en un repositorio DAM o usar un componente de imagen, tenga en cuenta el ciclo vital de la imagen:
 
-* Si la imagen tiene el mismo ciclo de vida que la página, utilice el componente de imagen.
+* Si la imagen tiene el mismo ciclo de vida que la página, utilice el componente Imagen.
 * Si la imagen tiene un ciclo de vida independiente, por ejemplo, si utiliza la imagen dos veces o fuera de WCM, emplee [!DNL Assets].
 
 ## ¿Qué son los recursos digitales? {#what-are-digital-assets}
@@ -67,11 +67,11 @@ Al trabajar con recursos digitales en [!DNL Experience Manager], debe comprender
 
 * **Representaciones**: Una representación es la representación binaria de un recurso. [!DNL Assets] siempre tiene una representación principal: la del archivo cargado. Pueden tener una multitud de representaciones adicionales que se crean, por ejemplo, por medio de flujos de trabajo personalizados o al cargar un recurso. Las representaciones pueden tener tamaños y resoluciones distintas, y tener agregadas marcas de agua o cualquier otra característica modificada.
 
-* **Versiones**: Al generar una versión, se crea una instantánea de los recursos digitales en un momento específico. Los activos se pueden restaurar a versiones anteriores. Consulte [versión en Assets](manage-assets.md#asset-versioning).
+* **Versiones**: Al generar una versión, se crea una instantánea de los recursos digitales en un momento específico. Los activos se pueden restaurar a versiones anteriores. Consulte [versión en [!DNL Assets]](manage-assets.md#asset-versioning).
 
 * **Subrecursos**: Los subrecursos son recursos que conforman un recurso, por ejemplo, capas de un  [!DNL Adobe Photoshop] archivo o páginas de un archivo PDF. En [!DNL Assets], puede administrar los subrecursos como lo haría con los recursos.
 
-### Cómo trabajar con recursos {#how-to-work-with-assets}
+### Cómo trabajar con recursos digitales {#how-to-work-with-assets}
 
 Las acciones se realizan sobre activos o colecciones. Sirven para crear o modificar activos, colecciones y representaciones. Muchas de las acciones básicas que realiza en los recursos (cargar, eliminar, actualizar y guardar subrecursos) realizan déclencheur en flujos de trabajo preconfigurados. Estos se activan automáticamente en [!DNL Assets] y se describen en detalle en [!DNL Assets] controladores de medios.
 
@@ -82,8 +82,13 @@ Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 * Generar representaciones y miniaturas del recurso; incluido el cambio de tamaño y el recorte automáticos cuando sea necesario.
 * Transcodificar el recurso cuando sea necesario. Por ejemplo, los vídeos para uso en móviles e Internet se transcodifican con 24 fotogramas por segundo y se descargan con 30 fotogramas por segundo. El audio para uso móvil y web se transcodifica con 128 Kbps, y el audio se descarga con 192 Kbps.
 
-Los flujos de trabajo también se pueden aplicar manualmente. Consulte en [Controladores de medios de Assets](/help/assets/media-handlers.md) la lista de flujos de trabajo predeterminados.
+Los flujos de trabajo también se pueden aplicar manualmente. Consulte en [Controladores de medios de Assets](media-handlers.md) la lista de flujos de trabajo predeterminados.
 
-## [!DNL Experience Manager Assets] y  [!DNL MediaLibrary] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] y  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Consulte [Recursos y MediaLibrary](/help/assets/medialibrary.md) para obtener información sobre las diferencias.
+Consulte [Recursos y biblioteca de medios](medialibrary.md) para obtener información sobre las diferencias.
+
+>[!MORELIKETHIS]
+>
+>* [Recursos Experience Manager como DAM moderno](https://www.youtube.com/embed/PBwQqZgC-yo)
+
