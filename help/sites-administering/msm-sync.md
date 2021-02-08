@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
+source-git-commit: 31f546400f4c3335953d05b1df9394445b5feb56
 workflow-type: tm+mt
-source-wordcount: '2673'
-ht-degree: 77%
+source-wordcount: '2707'
+ht-degree: 76%
 
 ---
 
@@ -30,7 +30,11 @@ Realice las siguientes tareas para controlar cómo y cuándo se sincronizan los 
 
 Esta sección proporciona información sobre las opciones de configuración de lanzamiento instaladas y las acciones de sincronización que utilizan, así como información para crear opciones de configuración personalizadas si es necesario.
 
-### Activadores de lanzamiento  {#rollout-triggers}
+>[!CAUTION]
+>
+>Se recomienda actualizar o cambiar una configuración de implementación predeterminada (instalada) **no**. Si hay un requisito para una acción en directo personalizada, debe agregarse en una configuración de implementación personalizada.
+
+### Activadores de lanzamiento {#rollout-triggers}
 
 Cada configuración de lanzamiento utiliza un activador de lanzamiento que hace que se produzca el lanzamiento. En las opciones de configuración de lanzamiento se puede utilizar uno de los siguientes activadores:
 
