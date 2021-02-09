@@ -4,9 +4,9 @@ description: Novedades de Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
+source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2780'
 ht-degree: 1%
 
 ---
@@ -53,6 +53,10 @@ Ahora puede realizar los movimientos de página y los despliegues de MSM como op
 ### Disponibilidad de la opción Restablecer para cada componente en el modo Diseño {#reset-option-layout-mode}
 
 Ahora puede utilizar la opción de restablecimiento para cada componente en el modo Diseño de un formulario adaptable. Al definir un diseño de varias columnas para un panel, puede utilizar esta función para restablecer componentes individuales dentro del panel. Consulte [Uso del modo de diseño para cambiar el tamaño de los componentes](../../help/forms/using/resize-using-layout-mode.md#resize-components).
+
+### Compatibilidad con Microsoft SQL Server 2019
+
+[!DNL Experience Manager Forms] ahora admite Microsoft SQL Server 2019.
 
 ## Características clave de los paquetes de servicios [!DNL Experience Manager] 6.5 anteriores {#key-features-previous-service-packs}
 
