@@ -1,34 +1,30 @@
 ---
-title: Creación de formularios adaptables mediante Esquema XML
-seo-title: Creación de formularios adaptables mediante Esquema XML
-description: Los formularios adaptables pueden utilizar el esquema XML como modelo de formulario, lo que permite aprovechar las plantillas XSD existentes para crear formularios adaptables. Puede arrastrar y soltar elementos de esquema desde XSD en el formulario adaptable.
-seo-description: Los formularios adaptables pueden utilizar el esquema XML como modelo de formulario, lo que permite aprovechar las plantillas XSD existentes para crear formularios adaptables. Puede arrastrar y soltar elementos de esquema desde XSD en el formulario adaptable.
-uuid: 84c35728-1b6c-4286-854b-51c03bfd0eac
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0d6c12b3-3a70-48e9-a83b-974360a8b0b6
-docset: aem65
+title: ¿Cómo crear un Forms adaptable mediante el Esquema XML?
+description: Aprenda a utilizar el esquema XML como modelo de formulario en un formulario adaptable. Puede aplicar plantillas XSD existentes para crear formularios adaptables y arrastrar y soltar elementos de esquema desde XSD en el formulario adaptable. Profundice con un ejemplo de esquema XML, agregue propiedades especiales a los campos mediante el esquema XML y limite los valores aceptables para un componente de formulario adaptable.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: ec8a4c3941b5434f10ad0727be02fcf296cd4da7
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1073'
 ht-degree: 5%
 
 ---
 
 
-# Creación de formularios adaptables con Esquema XML{#creating-adaptive-forms-using-xml-schema}
+# Creación de formularios adaptables mediante el Esquema XML {#creating-adaptive-forms-using-xml-schema}
 
 ## Requisitos previos {#prerequisites}
 
 La creación de un formulario adaptable con un esquema XML como modelo de formulario requiere una comprensión básica de los esquemas XML. Además, se recomienda leer el siguiente contenido antes de este artículo.
 
-* [Creación de un formulario adaptable](../../forms/using/creating-adaptive-form.md)
+* [Creación de un formulario adaptable](creating-adaptive-form.md)
 * [ESQUEMA XML](https://www.w3.org/TR/xmlschema-2/)
 
 ## Uso de un esquema XML como modelo de formulario {#using-an-xml-schema-as-form-model}
 
-AEM Forms admite la creación de un formulario adaptable utilizando un esquema XML existente como modelo de formulario. Este esquema XML representa la estructura en la que el sistema back-end de la organización produce o consume datos.
+[!DNL Experience Manager Forms] admite la creación de un formulario adaptable utilizando un esquema XML existente como modelo de formulario. Este esquema XML representa la estructura en la que el sistema back-end de la organización produce o consume datos.
 
 Las características clave del uso de un esquema XML son:
 
@@ -305,7 +301,7 @@ El campo bindRef</code> muestra la asociación entre un elemento de árbol y un 
 
 **¿Por qué no se pueden arrastrar elementos individuales de un subformulario (estructura generada a partir de cualquier tipo complejo) para subformularios repetibles (los valores minOccours o maxoccur son buenos a partir de 1)?**
 
-En un subformulario repetible, debe utilizar el subformulario completo. Si solo desea campos selectivos, utilice toda la estructura y elimine los no deseados.
+En un subformulario repetible, debe utilizar el subformulario Completar. Si solo desea campos selectivos, utilice toda la estructura y elimine los no deseados.
 
 **Tengo una estructura larga y compleja en Content Finder. ¿Cómo puedo encontrar un elemento específico?**
 
