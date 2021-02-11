@@ -39,7 +39,7 @@ La consola [Audiencias](/help/sites-authoring/managing-audiences.md) se utiliza 
 
 Para acceder a los segmentos, en la navegación global seleccione **Navegación > Personalización > Audiencias**.
 
-![chlimage_1-311](assets/chlimage_1-310.png)
+![chlimage_1-310](assets/chlimage_1-310.png)
 
 ## Editor de segmentos {#segment-editor}
 
@@ -136,7 +136,7 @@ Para definir el nuevo segmento:
 
 1. toque o haga clic en el botón Crear y seleccione **Crear segmento de ContextHub**.
 
-   ![chlimage_1-311](assets/chlimage_1-311.png)
+   ![chlimage_1-310](assets/chlimage_1-311.png)
 
 1. En el **Nuevo segmento de ContextHub**, introduzca un título para el segmento, así como un valor de ampliación si es necesario y, a continuación, toque o haga clic en **Crear**.
 
