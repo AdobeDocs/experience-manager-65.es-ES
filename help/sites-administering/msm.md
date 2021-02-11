@@ -320,7 +320,7 @@ Cuando crea una Live Copy en AEM puede ver y navegar por la rama Live Copy, y ut
 
 Cuando usted (o un proceso) crea una [nueva página dentro de una Live Copy](#live-copy-with-non-live-copy-pages) existente, esta nueva página también se puede configurar como una Live Copy de un modelo diferente. Esto se conoce como Live Copy anidada, donde el comportamiento de la segunda Live Copy (interna) se ve afectado por la primera Live Copy (externa) de la siguiente manera:
 
-* Un despliegue profundo activado para la Live Copy de nivel superior se puede continuar en la Live Copy anidada (por ejemplo, si el activador coincide).
+* Un despliegue profundo activado para la Live Copy de nivel superior se puede continuar en la Live Copy anidada (por ejemplo, si el déclencheur coincide).
 * Los vínculos entre las fuentes se reescribirán dentro de las copias en vivo.
 
    Por ejemplo, los vínculos del segundo al primer modelo se reescribirán como vínculos desde la Live Copy anidada/segunda a la primera Live Copy.
@@ -378,11 +378,11 @@ Un despliegue es la acción MSM central que sincroniza las copias en vivo con su
 
 ### Opciones de configuración del lanzamiento {#rollout-configurations}
 
-Una configuración de implementación define cuándo y cómo se sincroniza una Live Copy con el contenido de origen. Una configuración de implementación consiste en un activador y una o varias acciones de sincronización:
+Una configuración de implementación define cuándo y cómo se sincroniza una Live Copy con el contenido de origen. Una configuración de implementación consiste en un déclencheur y una o varias acciones de sincronización:
 
 * **Activador**
 
-   Un activador es un evento que provoca la sincronización de la acción activa, como la activación de una página de origen. MSM define los activadores que puede utilizar.
+   Un déclencheur es un evento que provoca la sincronización de la acción activa, como la activación de una página de origen. MSM define los déclencheur que puede utilizar.
 
 * **Acciones de sincronización**
 
@@ -441,7 +441,7 @@ Los siguientes pasos describen el procedimiento estándar para utilizar MSM para
 MSM proporciona herramientas para que la implementación se pueda adaptar a las complejidades excepcionales que pueden existir al compartir contenido:
 
 * **Configuraciones de implementación personalizadas**
-   [Cree una ](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) configuración de implementación cuando las configuraciones de implementación instaladas no cumplan con sus requisitos. Puede utilizar cualquier activador de despliegue y acción de sincronización disponibles.
+   [Cree una ](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) configuración de implementación cuando las configuraciones de implementación instaladas no cumplan con sus requisitos. Puede utilizar cualquier déclencheur de implementación y acción de sincronización disponibles.
 
 * **Acciones de sincronización personalizada**
    [Cree una ](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) acción de sincronización personalizada cuando las acciones instaladas no cumplan los requisitos específicos de la aplicación. MSM proporciona una API de Java para crear acciones de sincronización personalizadas.
