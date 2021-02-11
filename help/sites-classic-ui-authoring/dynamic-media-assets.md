@@ -28,5 +28,5 @@ En la IU clásica, no es posible trabajar con Dynamic Media. Consulte [Uso de Dy
 
 >[!NOTE]
 >
->Si utiliza Dynamic Media, no puede utilizar cargas automáticas disponibles simultáneamente si [integra Dynamic Media Classic en AEM](/help/sites-administering/scene7.md). Consulte [activación de Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media está desactivado de forma predeterminada.
+>Si está utilizando Dynamic Media, no puede utilizar simultáneamente cargas automáticas disponibles si [integra Dynamic Media Classic en AEM](/help/sites-administering/scene7.md). Consulte [habilitación de Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media está desactivado de forma predeterminada.
 
