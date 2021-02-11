@@ -234,7 +234,7 @@ Descargue manualmente las bibliotecas de la administración dinámica de etiquet
 
 1. En el carril, haga clic en Herramientas > Operaciones > Nube > Cloud Services.
 1. En el área Administración dinámica de etiquetas, haga clic en Mostrar configuraciones y, a continuación, haga clic en su configuración.
-1. En el área Ajustes de ensayo o en el área Ajustes de producción, haga clic en el botón Activar flujo de trabajo de descarga para descargar e implementar el paquete de biblioteca.
+1. En el área Ajustes de ensayo o en el área Ajustes de producción, haga clic en el botón Flujo de trabajo de descarga de Déclencheur para descargar e implementar el paquete de biblioteca.
 
    ![chlimage_1-356](assets/chlimage_1-356.png)
 
