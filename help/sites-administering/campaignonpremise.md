@@ -132,7 +132,7 @@ Debe instalar el paquete **Integración de AEM** en Adobe Campaign. Para ello:
 
 1. Haga clic en **Instalar un paquete estándar** y, a continuación, seleccione el paquete **Integración de AEM**.
 
-   ![chlimage_1-135](assets/chlimage_1-133a.png)
+   ![chlimage_1-133](assets/chlimage_1-133a.png)
 
 1. Haga clic en **Siguiente** y luego en **Inicio**.
 
