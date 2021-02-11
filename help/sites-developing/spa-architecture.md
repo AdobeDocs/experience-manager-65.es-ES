@@ -124,7 +124,7 @@ Siga estos pasos para preparar el SPA existente para trabajar con AEM.
 
 ## Instrucciones para desarrolladores de front-end {#instructions-for-front-end-developers}
 
-La principal tarea de lograr que un desarrollador front-end cree un SPA para AEM es acordar los componentes y sus modelos JSON.
+La tarea principal de lograr que un desarrollador front-end cree un SPA para AEM es acordar los componentes y sus modelos JSON.
 
 A continuación se describen los pasos que debe seguir un desarrollador front-end al desarrollar un SPA para AEM.
 
@@ -160,7 +160,7 @@ A continuación se describen los pasos que debe seguir un desarrollador front-en
 
 1. **Implemente una solución de enrutamiento que utilice la  `History` API de HTML5.**
 
-   Cuando `ModelRouter` está habilitado, llamar a las funciones `pushState` y `replaceState` activará una solicitud a `PageModelManager` para recuperar un fragmento que falta del modelo.
+   Cuando `ModelRouter` está habilitado, llamar a las funciones `pushState` y `replaceState` déclencheur una solicitud a `PageModelManager` para recuperar un fragmento que falta del modelo.
 
    La versión actual de `ModelRouter` solo admite el uso de direcciones URL que apunten a la ruta de recursos real de los puntos de entrada del Modelo Sling. No admite el uso de direcciones URL personales o alias.
 
