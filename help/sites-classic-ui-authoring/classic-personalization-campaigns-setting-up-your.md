@@ -150,7 +150,7 @@ Si ya dispone de experiencias, puede añadir un touchpoint directamente desde la
 
 1. Haga clic en **Añadir Touchpoint...** para abrir el cuadro de diálogo. Especifique la experiencia que desee añadir:
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-29](assets/chlimage_1-21.png)
 
 1. Haga clic en **Aceptar** para guardar.
 
