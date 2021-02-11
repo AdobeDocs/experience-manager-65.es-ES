@@ -401,7 +401,7 @@ Al hacer clic en la zona interactiva se abre un cuadro de diálogo que permite e
 
 1. Haga clic en uno de los iconos de forma.
 
-   ![chlimage_1-21](do-not-localize/chlimage_1-21.png)
+   ![chlimage_1-29](do-not-localize/chlimage_1-21.png)
 
 1. Modifique y mueva la forma según sea necesario.
 1. Haga clic en la forma.
