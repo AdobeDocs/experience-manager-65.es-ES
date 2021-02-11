@@ -105,7 +105,7 @@ Para cada proyecto DAM, asegúrese de establecer un régimen de pruebas de rendi
 
 Hasta ahora, se han utilizado los siguientes ajustes de rendimiento en los proyectos:
 
-* Generación selectiva de representaciones: solo genere las representaciones que necesite agregando condiciones al flujo de trabajo de procesamiento de recursos, de modo que las representaciones más costosas solo se generen para los recursos seleccionados.
+* Generación selectiva de representaciones: solo genere las representaciones que necesite agregando condiciones al flujo de trabajo de procesamiento de recursos, de modo que solo se generen representaciones más costosas para los recursos seleccionados.
 * Almacén de datos compartidos entre instancias: cuando el espacio en disco es reducido, esto puede reducir considerablemente la cantidad de espacio en disco necesario a costa de mayores esfuerzos de configuración y perder la limpieza automática del almacén de datos.
 
 ## Lectura adicional {#further-reading}
