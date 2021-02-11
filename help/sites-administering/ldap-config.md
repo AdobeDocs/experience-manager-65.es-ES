@@ -220,7 +220,7 @@ Están disponibles las siguientes opciones de configuración:
 | **Clasificación JAAS** | Especificar la clasificación (es decir, el orden) de esta entrada del módulo de inicio de sesión. Las entradas se ordenan en orden descendente (es decir, las configuraciones clasificadas de mayor valor son las primeras). |
 |---|---|
 | **Marca de control JAAS** | Propiedad que especifica si se REQUIERE o no un LoginModule, REQUISITO, SUFICIENTE u OPCIONAL.Consulte la documentación de configuración de JAAS para obtener más detalles sobre el significado de estos indicadores. |
-| **Dominio de JAAS** | Nombre de territorio (o nombre de aplicación) con el que se registra el LoginModule. Si no se proporciona ningún nombre de dominio, LoginModule se registra con un dominio predeterminado, tal como se configura en la configuración Félix JAAS. |
+| **Dominio de JAAS** | Nombre de territorio (o nombre de aplicación) con el que se registra el LoginModule. Si no se proporciona ningún nombre de dominio, LoginModule se registra con un dominio predeterminado, tal como se ha configurado en la configuración Félix JAAS. |
 | **Nombre del proveedor de identidad** | Nombre del proveedor de identidad. |
 | **Nombre del controlador de sincronización** | Nombre del controlador de sincronización. |
 
