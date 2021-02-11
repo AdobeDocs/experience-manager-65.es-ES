@@ -77,7 +77,7 @@ En esta ficha aparece una lista con las imágenes del repositorio.
 
 Después de crear un párrafo de imagen en la página, puede arrastrar un elemento y colocarlo adentro del párrafo.
 
-![chlimage_1-191](assets/chlimage_1-111.png)
+![chlimage_1-111](assets/chlimage_1-111.png)
 
 ### Búsqueda de documentos {#finding-documents}
 
@@ -99,7 +99,7 @@ Después de crear un párrafo apropiado (por ejemplo, Flash) en la página, pued
 
 Esta ficha enumera los productos. Después de crear un párrafo apropiado (por ejemplo, Producto) en la página, puede arrastrar un elemento y colocarlo dentro del párrafo.
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 ### Búsqueda de páginas {#finding-pages}
 
