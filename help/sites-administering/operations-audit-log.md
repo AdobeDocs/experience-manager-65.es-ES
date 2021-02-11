@@ -34,7 +34,7 @@ Existen tres tipos de opciones de Depuración del registro de auditoría:
 1. [Depuración del registro de auditoría DAM](/help/sites-administering/operations-audit-log.md#configure-dam-audit-log-purging)
 1. [Depuración del registro de auditoría de replicación](/help/sites-administering/operations-audit-log.md#configure-replication-audit-log-purging)
 
-Cada una de ellas se puede configurar creando reglas en la consola web de AEM. Una vez configurados, puede activarlos si ingresa a **Herramientas - Operaciones - Mantenimiento - Ventana de mantenimiento semanal** y ejecuta la **Tarea de mantenimiento de AuditLog**.
+Cada una de ellas se puede configurar creando reglas en la consola web de AEM. Después de configurarlas, puede realizar el déclencheur de las mismas si ingresa a **Herramientas - Operaciones - Mantenimiento - Ventana de mantenimiento semanal** y ejecuta la Tarea de mantenimiento **AuditLog**.
 
 ## Configurar la depuración del registro de auditoría de página {#configure-page-audit-log-purging}
 
