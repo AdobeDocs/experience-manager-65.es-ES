@@ -828,7 +828,7 @@ Added new sync directory: /tmp/workspace/vltsync/jcr_root
 
 >[!NOTE]
 >
->El comando `register` no desencadena una sincronización hasta que se configura la configuración `sync-once`.
+>El comando `register` no déclencheur una sincronización hasta que se configura la configuración `sync-once`.
 
 ### Eliminando una carpeta de sincronización {#removing-a-sync-folder}
 
