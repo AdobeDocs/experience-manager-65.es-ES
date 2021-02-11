@@ -1,17 +1,13 @@
 ---
-title: Creación de un formulario adaptable
-seo-title: Creación de un formulario adaptable
-description: Cómo crear un formulario adaptable con AEM Forms. Los formularios adaptables son formularios HTML5 interactivos que facilitan la recopilación y el procesamiento de información.
-seo-description: Cómo crear un formulario adaptable con AEM Forms. Los formularios adaptables son formularios HTML5 interactivos que facilitan la recopilación y el procesamiento de información.
-uuid: 444f461a-9e88-4385-b5ee-e985067ab7bc
-content-type: reference
-topic-tags: author
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
+title: Cómo crear un formulario adaptable
+description: 'Obtenga información sobre cómo crear un formulario adaptable con [!DNL Experience Manager Forms]. Los formularios adaptables son formularios HTML5 interactivos que facilitan la recopilación y el procesamiento de información. Descubra cómo crear un formulario adaptable basado en un modelo de datos de formulario, una plantilla de formulario XFA y un esquema XML o JSON. '
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner
 translation-type: tm+mt
-source-git-commit: 3cbcd23254e16231a199276aa2f9e70d6ff39b34
+source-git-commit: 52fedc234b3edf581393bb42325902d2da3ab46e
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '1856'
 ht-degree: 0%
 
 ---
@@ -23,9 +19,9 @@ ht-degree: 0%
 
 Siga estos pasos para crear un formulario adaptable.
 
-1. Acceda a la instancia de AEM Forms Author en `https://'[server]:[port]'/<custom-context-if-any>.`
+1. Acceder a [!DNL Experience Manager Forms] instancia de autor en `https://'[server]:[port]'/<custom-context-if-any>.`
 
-1. Introduzca sus credenciales en la página de inicio de sesión de AEM.
+1. Introduzca sus credenciales en la página de inicio de sesión del Experience Manager.
 
    Después de iniciar sesión, en la esquina superior izquierda, toque **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms y Documentos]**.
 
@@ -34,24 +30,24 @@ Siga estos pasos para crear un formulario adaptable.
    >Para una instalación predeterminada, el inicio de sesión es `admin` y la contraseña es `admin`.
 
 1. Toque **[!UICONTROL Crear]** y seleccione **[!UICONTROL Formulario adaptable]**.
-1. Aparece una opción para seleccionar una plantilla. Para obtener más información acerca de las plantillas, consulte [Plantillas de formulario adaptables](/help/forms/using/creating-adaptive-form.md#p-adaptive-form-templates-p). Toque una plantilla para seleccionarla y toque Siguiente.
+1. Aparece una opción para seleccionar una plantilla. Para obtener más información acerca de las plantillas, consulte [Plantillas de formulario adaptables](creating-adaptive-form.md#p-adaptive-form-templates-p). Toque una plantilla para seleccionarla y toque Siguiente.
 1. Aparece una opción para &#39;Añadir propiedades&#39;. Especifique los valores de los siguientes campos de propiedad. Los campos Título y Nombre son obligatorios:
 
-   * **[!UICONTROL Título:]** especifica el nombre para mostrar del formulario. El título le ayuda a identificar el formulario en la interfaz de usuario de AEM Forms.
+   * **[!UICONTROL Título:]** especifica el nombre para mostrar del formulario. El título le ayuda a identificar el formulario en la interfaz de usuario [!DNL Experience Manager Forms].
    * **[!UICONTROL Nombre:]** especifica el nombre del formulario. En el repositorio se crea un nodo con el nombre especificado. Al escribir un título con inicio, se genera automáticamente el valor del campo de nombre. Puede cambiar el valor sugerido. El campo de nombre solo puede incluir caracteres alfanuméricos, guiones y guiones bajos. Todas las entradas no válidas se reemplazan con un guión.
    * **[!UICONTROL Descripción:]** especifica la información detallada sobre el formulario.
-   * **[!UICONTROL Etiquetas:]** especifica etiquetas para identificar exclusivamente el formulario adaptable. Las etiquetas ayudan a buscar en el formulario. Para crear etiquetas, escriba nuevos nombres de etiquetas en el cuadro **Etiquetas**.
+   * **[!UICONTROL Etiquetas:]** especifica etiquetas para identificar exclusivamente el formulario adaptable. Las etiquetas ayudan a buscar en el formulario. Para crear etiquetas, escriba nuevos nombres de etiquetas en el cuadro **[!UICONTROL Etiquetas]**.
 
 1. Puede crear un formulario adaptable basado en uno de los siguientes modelos de formulario:
 
    * [Modelo de datos de formulario](#fdm)
-   * [Plantilla de formulario XFA](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p)
-   * [ESQUEMA XML o JSON](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-xml-or-json-schema-p)
+   * [Plantilla de formulario XFA](#create-an-adaptive-form-based-on-an-xfa-form-template)
+   * [ESQUEMA XML o JSON](#create-an-adaptive-form-based-on-xml-or-json-schema)
    * Ninguno o sin ningún modelo de formulario
 
    Puede configurarlas desde la ficha **[!UICONTROL Modelo de formulario]** en la página **[!UICONTROL Añadir propiedades]**. De forma predeterminada, el modelo de formulario seleccionado es **[!UICONTROL Ninguno]**.
 
-1. Toque **Crear**. Se crea un formulario adaptable y aparece un cuadro de diálogo para abrir el formulario y editarlo.
+1. Toque **[!UICONTROL Crear]**. Se crea un formulario adaptable y aparece un cuadro de diálogo para abrir el formulario y editarlo.
 
    Una vez que haya terminado de especificar todas las propiedades, haga clic en **[!UICONTROL Crear]**. Se crea un formulario adaptable y aparece un cuadro de diálogo para abrir el formulario y editarlo.
 
@@ -61,7 +57,7 @@ Siga estos pasos para crear un formulario adaptable.
 
    En función del tipo de formulario adaptable, los elementos de formulario presentes en la plantilla de formulario XFA, el esquema XML o el esquema JSON asociados se muestran en la ficha **[!UICONTROL Objetos del modelo de datos]** del **[!UICONTROL Explorador de contenido]** de la barra lateral. También puede arrastrar y soltar estos elementos para crear el formulario adaptable.
 
-   Para obtener información sobre la interfaz de creación de formularios adaptables y los componentes disponibles, consulte [Introducción a la creación de formularios adaptables](/help/forms/using/introduction-forms-authoring.md).
+   Para obtener información sobre la interfaz de creación de formularios adaptables y los componentes disponibles, consulte [Introducción a la creación de formularios adaptables](introduction-forms-authoring.md).
 
    >[!NOTE]
    >
@@ -69,7 +65,7 @@ Siga estos pasos para crear un formulario adaptable.
 
 ## Crear un formulario adaptable basado en un modelo de datos de formulario {#fdm}
 
-[La ](/help/forms/using/data-integration.md) integración de datos de AEM Forms le permite integrar varios orígenes de datos y unir sus entidades y servicios para crear un modelo de datos de formulario. Es una extensión del esquema JSON. Puede utilizar un modelo de datos de formulario para crear un formulario adaptable. Las entidades u objetos del modelo de datos configurados en un modelo de datos de formulario están disponibles como objetos del modelo de datos para la creación de formularios. Se enlazan a las fuentes de datos respectivas y se utilizan para rellenar previamente un formulario y escribir los datos enviados de vuelta a las fuentes de datos respectivas. También puede invocar servicios configurados en un modelo de datos de formulario mediante reglas de formulario adaptables.
+[[!DNL Experience Manager Forms] la ](data-integration.md) integración de datos permite integrar varios orígenes de datos y unir sus entidades y servicios para crear un modelo de datos de formulario. Es una extensión del esquema JSON. Puede utilizar un modelo de datos de formulario para crear un formulario adaptable. Las entidades u objetos del modelo de datos configurados en un modelo de datos de formulario están disponibles como objetos del modelo de datos para la creación de formularios. Se enlazan a las fuentes de datos respectivas y se utilizan para rellenar previamente un formulario y escribir los datos enviados de vuelta a las fuentes de datos respectivas. También puede llamar a servicios configurados en un modelo de datos de formulario mediante reglas de formulario adaptables.
 
 Para utilizar un modelo de datos de formulario para crear un formulario adaptable:
 
@@ -91,21 +87,21 @@ Para utilizar un modelo de datos de formulario para crear un formulario adaptabl
 
 Puede reutilizar las plantillas de formulario XFA para crear formularios adaptables. Para reutilizar, cargue y asocie una plantilla de formulario XFA con un formulario adaptable. Los elementos de la plantilla de formulario (formulario XFA) están disponibles para su uso en el buscador de contenido en el momento de la creación de formularios adaptables. Desde Content Finder, puede arrastrar y soltar los elementos de la plantilla de formulario en el formulario.
 
->[!NOTE]
+<!-- >>[!NOTE]
 >
->[Cargue la plantilla de formulario XFA ](/help/forms/using/get-xdp-pdf-documents-aem.md) en AEM Forms antes de crear inicio un formulario adaptable basado en la plantilla de formulario.
+>[Upload the XFA Form Template](get-xdp-pdf-documents-aem.md) to AEM Forms before you start creating an adaptive form based on the form template.
 
-Para utilizar una plantilla de formulario XFA como modelo de formulario para el formulario adaptable, haga lo siguiente:
+Do the following to use an XFA form template as form model for your adaptive form:
 
-1. En la página **[!UICONTROL Añadir propiedades]**, abra la ficha **[!UICONTROL Modelo de formulario]**.
-1. En la ficha Modelo de formulario, en la lista desplegable, seleccione **[!UICONTROL Plantillas de formulario]**. Todas las plantillas de formulario cargadas en el repositorio mediante la interfaz de usuario de AEM Forms se muestran para su selección. Seleccione una plantilla de la lista.
+1. On the **[!UICONTROL Add Properties]** page, open the **[!UICONTROL Form Model]** tab.
+1. In the Form Model tab, from the drop-down list, select **[!UICONTROL Form Templates]**. All the form templates that are uploaded to the repository via AEM Forms UI are listed for selection. Select a template from the list.
 
-   ![Asociar plantilla de formulario XFA con un formulario adaptable](assets/form_model_xfa_associate.png)
-   **Figura:** *Selección de una plantilla de formulario*
+   ![Associate XFA Form Template with an Adaptive Form](assets/form_model_xfa_associate.png)
+**Figure:** *Selecting a form template*
 
    >[!NOTE]
    >
-   >También puede cambiar la plantilla de formulario para un formulario adaptable. Para ver los pasos detallados, consulte [Editar propiedades del modelo de formulario de un formulario adaptable](#edit-form-model).
+   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model). -->
 
 ## Crear un formulario adaptable basado en el esquema XML o JSON {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
@@ -113,8 +109,8 @@ Los esquemas XML y JSON representan la estructura en la que el sistema back-end 
 
 Consulte los siguientes documentos para comprender cómo diseñar el esquema XML o JSON para la creación de formularios adaptables.
 
-* [Creación de formularios adaptables mediante esquema XML](/help/forms/using/adaptive-form-xml-schema-form-model.md)
-* [Creación de formularios adaptables con esquema JSON](/help/forms/using/adaptive-form-json-schema-form-model.md)
+* [Creación de formularios adaptables mediante esquema XML](adaptive-form-xml-schema-form-model.md)
+* [Creación de formularios adaptables con esquema JSON](adaptive-form-json-schema-form-model.md)
 
 Para utilizar el esquema XML o JSON como modelo de formulario para un formulario adaptable, haga lo siguiente:
 
@@ -124,7 +120,7 @@ Para utilizar el esquema XML o JSON como modelo de formulario para un formulario
 1. Toque **[!UICONTROL Seleccionar Esquema]** y realice una de las siguientes acciones:
 
    * **[!UICONTROL Cargar desde el disco]** : seleccione esta opción y toque Cargar definición de Esquema para buscar y cargar un esquema XML o un esquema JSON desde el sistema de archivos. El archivo de esquema cargado reside en el formulario y no es accesible para otros formularios adaptables.
-   * **[!UICONTROL Buscar en el repositorio]** : seleccione esta opción para seleccionar entre la lista de archivos de definición de esquema disponibles en el repositorio. Seleccione el archivo de esquema XML o JSON como modelo de formulario. El esquema seleccionado se asociará al formulario por referencia y será accesible para su uso en otros formularios adaptables.
+   * **[!UICONTROL Buscar en el repositorio]** : seleccione esta opción para seleccionar entre la lista de archivos de definición de esquema disponibles en el repositorio. Seleccione el archivo de esquema XML o JSON como modelo de formulario. El esquema seleccionado está asociado al formulario por referencia y es accesible para su uso en otros formularios adaptables.
 
    >[!CAUTION]
    >
@@ -144,13 +140,13 @@ Para utilizar el esquema XML o JSON como modelo de formulario para un formulario
 
 ## Plantillas de formulario adaptables {#adaptive-form-templates}
 
-Una plantilla proporciona una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. De forma predeterminada, AEM Forms proporciona algunas plantillas de formulario adaptables. Para obtener el paquete completo de plantillas, incluidas las plantillas avanzadas, debe instalar el paquete del complemento AEM Forms. Para obtener más información, consulte [Instalación del paquete de complemento de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+Una plantilla proporciona una estructura básica y define el aspecto (diseños y estilos) de un formulario adaptable. Tiene componentes con formato previo que contienen determinadas propiedades y estructura de contenido. <!-- Out of the box, AEM Forms provides some adaptive form templates. To get the complete template package including advanced templates, you need to install the AEM Forms add-on package. For more information, see [Installing AEM Forms add-on package](installing-configuring-aem-forms-osgi.md).-->
 
-Además, puede utilizar el editor de plantillas para crear sus propias plantillas. Para obtener más información sobre cómo trabajar con plantillas, consulte [Plantillas de formulario adaptables](/help/forms/using/template-editor.md).
+Además, puede utilizar el editor de plantillas para crear sus propias plantillas. Para obtener más información sobre cómo trabajar con plantillas, consulte [Plantillas de formulario adaptables](template-editor.md).
 
 >[!NOTE]
 >
->Cuando se abre un formulario adaptable creado con la plantilla avanzada para edición, aparece un mensaje de error. La plantilla avanzada tiene un componente Paso de firma y Adobe Sign está habilitado para ella de forma predeterminada. Cree y seleccione una [configuración de nube de Adobe Sign](/help/forms/using/adobe-sign-integration-adaptive-forms.md) y [configure un firmante](working-with-adobe-sign.md#addsignerstoanadaptiveform) para resolver el error.
+>Cuando se abre un formulario adaptable creado con la plantilla avanzada para edición, aparece un mensaje de error. La plantilla avanzada tiene un componente Paso de firma y Adobe Sign está habilitado para ella de forma predeterminada. Cree y seleccione una [configuración de nube de Adobe Sign](adobe-sign-integration-adaptive-forms.md) y [configure un firmante](working-with-adobe-sign.md#addsignerstoanadaptiveform) para resolver el error.
 
 ## Editar propiedades del modelo de formulario de un formulario adaptable {#edit-form-model}
 
@@ -180,17 +176,17 @@ De forma predeterminada, la opción de guardado automático no está activada. P
 1. Para acceder a la sección de guardado automático de las propiedades, seleccione un componente, toque ![campo-nivel](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]** y luego toque ![cmppr](assets/cmppr.png).
 1. En la sección **[!UICONTROL Guardado automático]**, **[!UICONTROL Habilite]** la opción de guardado automático.
 1. En el cuadro **[!UICONTROL Evento de formulario adaptable]**, especifique 1 o TRUE para guardar automáticamente el formulario cuando se cargue en el explorador en inicio para guardarlo. También puede especificar una expresión condicional para un evento, que cuando se activa y devuelve verdadero, inicios que guardan el contenido del formulario.
-1. Especifique el activador. El guardado automático se activa según la configuración. Sus opciones son:
+1. Especifique el Déclencheur. El guardado automático se activa según la configuración. Sus opciones son:
 
    * **[!UICONTROL Basado en el tiempo:]** seleccione la opción para guardar en inicio el contenido en función de un intervalo de tiempo específico.
    * **[!UICONTROL Basado en evento:]** seleccione la opción para guardar en inicio el contenido en función de cuándo se activa un evento.
 
-   Al seleccionar un activador, se activa el cuadro Configuración de estrategia. El cuadro Configuración de estrategia permite:
+   Al seleccionar un déclencheur, se activa el cuadro de configuración de estrategia. El cuadro Configuración de estrategia permite:
 
-   * Especifique un intervalo de tiempo si selecciona **[!UICONTROL activador basado en tiempo]**.
-   * Especifique un nombre de evento si selecciona **[!UICONTROL activador basado en Evento]**.
+   * Especifique un intervalo de tiempo si selecciona el déclencheur **[!UICONTROL basado en tiempo]**.
+   * Especifique un nombre de evento si selecciona el déclencheur **[!UICONTROL basado en Evento]**.
 
-   También puede crear y agregar su propia estrategia personalizada a la lista. Para obtener más información, consulte [Implementación de una estrategia personalizada para guardar automáticamente los formularios](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
+   <!-- You can also create and add your own custom strategy to the list. For details, see [Implement a custom strategy to autosave the forms](auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p). -->
 
 1. (Solo guardado automático basado en el tiempo) Realice los siguientes pasos para configurar las opciones de guardado automático basado en el tiempo.
 
@@ -198,12 +194,12 @@ De forma predeterminada, la opción de guardado automático no está activada. P
 
 1. (Solo guardado automático basado en Eventos) Realice los siguientes pasos para configurar las opciones de guardado automático basado en Eventos.
 
-   1. En el cuadro **Guardar automáticamente después de este evento**, especifique un evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). El formulario se guarda cada vez que la expresión se evalúa como VERDADERA.
+   1. En el cuadro **[!UICONTROL Guardar automáticamente después de este evento]**, especifique un evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). El formulario se guarda cada vez que la expresión se evalúa como VERDADERA.
 
-1. (Opcional) Para guardar automáticamente el contenido para usuarios anónimos, seleccione la opción **Habilitar guardado automático para usuarios anónimos** y haga clic en **[!UICONTROL Aceptar]**.
+1. (Opcional) Para guardar automáticamente el contenido para usuarios anónimos, seleccione la opción **[!UICONTROL Habilitar guardado automático para usuarios anónimos]** y haga clic en **[!UICONTROL Aceptar]**.
 
    >[!NOTE]
    >
    >Para que la opción de guardado automático funcione para usuarios anónimos, asegúrese de configurar el servicio de configuración común de Forms para permitir que todos los usuarios realicen previsualizaciones, verifiquen y firmen formularios.
    >
-   >Para configurar el servicio, vaya a AEM configuración de la consola web en `https://'[server]:[port]'system/console/configMgr` y edite el **[!UICONTROL Servicio de configuración común de Forms]** para elegir la opción **[!UICONTROL Todos los usuarios]** en el campo **[!UICONTROL Permitir]** y guarde la configuración.
+   >Para configurar el servicio, vaya a la configuración de Adobe Experience Manager Web Console en `https://'[server]:[port]'system/console/configMgr` y edite el **[!UICONTROL Servicio de configuración común de Forms]** para elegir la opción **[!UICONTROL Todos los usuarios]** en el campo **[!UICONTROL Permitir]** y guarde la configuración.
