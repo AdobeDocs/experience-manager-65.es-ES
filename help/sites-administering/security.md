@@ -701,7 +701,7 @@ Para suplantar un usuario existente:
 1. Haga clic en la ficha **Suplantadores**.
 1. Haga clic en el usuario que desea que pueda suplantar al usuario seleccionado. Arrastre el usuario (que suplantará) desde la lista al panel Suplantar. El nombre aparece en la lista.
 
-   ![chlimage_1-115](assets/chlimage_1-115.png)
+   ![chlimage_1-114](assets/chlimage_1-115.png)
 
 1. Haga clic en **Guardar**.
 
