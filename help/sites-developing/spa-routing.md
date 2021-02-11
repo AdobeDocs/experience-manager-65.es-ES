@@ -56,7 +56,7 @@ La implementación actual se basa en el supuesto de que el proyecto SPA utiliza 
 
 ### Configuración {#configuration}
 
-El `ModelRouter` admite el concepto de enrutamiento de modelo a medida que escucha las llamadas `pushState` y `replaceState` para recuperar previamente fragmentos de modelo. Internamente activa el `PageModelManager` para cargar el modelo que corresponde a una dirección URL determinada y activa un evento `cq-pagemodel-route-changed` que otros módulos pueden escuchar.
+El `ModelRouter` admite el concepto de enrutamiento de modelo a medida que escucha las llamadas `pushState` y `replaceState` para recuperar previamente fragmentos de modelo. Internamente, déclencheur a `PageModelManager` para cargar el modelo que corresponde a una dirección URL determinada y activa un evento `cq-pagemodel-route-changed` que otros módulos pueden escuchar.
 
 De forma predeterminada, este comportamiento se activa automáticamente. Para deshabilitarlo, el SPA debe representar la siguiente propiedad meta:
 
