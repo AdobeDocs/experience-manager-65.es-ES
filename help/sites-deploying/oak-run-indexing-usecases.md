@@ -175,7 +175,7 @@ En este escenario no es necesario detener el servidor de AEM ni aprovisionar nin
 
 Para las instalaciones `SegmentNodeStore` el reindexado se puede realizar mediante un único comando de ejecución de roble. Sin embargo, la instancia de AEM debe cerrarse.
 
-Puede activar la reindexación con el siguiente comando:
+Puede déclencheur la reindexación con el siguiente comando:
 
 ```shell
 java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-write --fds-path=/path/to/datastore  /path/to/segmentstore/
