@@ -94,7 +94,7 @@ Los objetos principales de la API de MSM interactúan de la siguiente manera (co
 
 * **`RolloutConfig`** El  `RolloutConfig` contiene una lista de  `LiveActions`, que se utilizará cuando se active. El `LiveCopy` hereda el `RolloutConfig` y el resultado está presente en el `LiveRelationship`.
 
-   * La configuración de una Live Copy por primera vez también utiliza un RolloutConfig (que activa LiveActions).
+   * La configuración de una Live Copy por primera vez también utiliza un RolloutConfig (que déclencheur LiveActions).
 
 ## Creación de una nueva acción de sincronización {#creating-a-new-synchronization-action}
 
@@ -553,7 +553,7 @@ Cree la configuración de implementación MSM que utiliza el `LiveActionFactory`
 
    * **Título**: Ejemplo de configuración de despliegue
    * **Nombre**: examplerolloutconfig
-   * **cq:desencadenador**:  `publish`
+   * **cq:déclencheur**:  `publish`
 
 ### Añadir la acción en directo a la configuración de despliegue de ejemplo {#add-the-live-action-to-the-example-rollout-configuration}
 
