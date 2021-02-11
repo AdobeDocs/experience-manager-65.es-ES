@@ -193,7 +193,7 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
 * Rutas de exploración
 
-   ![bh-05](assets/bh-05.png)
+   ![bh-03](assets/bh-05.png)
 
    Las rutas de exploración, que se encuentran en el centro del raíl y siempre muestran la descripción del elemento seleccionado, le permiten desplazarse dentro de una consola específica. Desde la consola Sitios puede desplazarse por los niveles de su sitio web.
 
@@ -398,7 +398,7 @@ En todas las vistas, es posible anular la selección de todos los elementos pres
 
 1. Por ejemplo, en la vista de tarjeta:
 
-   ![bh-17](assets/bh-15.png)
+   ![bh-15](assets/bh-15.png)
 
 1. Una vez que haya seleccionado un recurso, el encabezado superior se cubre con [acciones de la barra de herramientas](#actionstoolbar) para proporcionar acceso a las acciones aplicables actualmente al recurso seleccionado.
 
@@ -416,7 +416,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
    * El nombre del recurso y las comillas angulares se resaltarán cuando los toque o haga clic en ellos.
 
-   ![bh-17](assets/bh-17.png)
+   ![bh-15](assets/bh-17.png)
 
    * Los elementos secundarios del recurso que ha tocado o en el que ha hecho clic se muestran en la columna a la derecha de dicho recurso.
    * Si toca o hace clic en el nombre de un recurso sin elementos secundarios, sus detalles se muestran en la última columna.
