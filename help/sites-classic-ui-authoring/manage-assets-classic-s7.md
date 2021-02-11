@@ -98,7 +98,7 @@ Para publicar en Scene7 directamente desde un recurso digital:
 
 Adobe recomienda publicar recursos en Scene7 solo desde recursos de la carpeta de destino de Scene7. Sin embargo, si necesita cargar recursos desde una carpeta fuera de la carpeta destinatario, puede hacerlo cargándolos en una carpeta **ad-hoc** de Scene7.
 
-En primer lugar, debe ajustar la configuración de nube de la página en la que aparecerá el recurso. A continuación, añada un componente de Scene7 a la página y arrastre y suelte un recurso en el componente. Una vez definidas las propiedades de página para esa página, aparece un vínculo **Publicar en Scene7** que cuando se seleccionan los desencadenantes que se cargan en Scene7.
+En primer lugar, debe ajustar la configuración de nube de la página en la que aparecerá el recurso. A continuación, añada un componente de Scene7 a la página y arrastre y suelte un recurso en el componente. Una vez definidas las propiedades de página para esa página, aparece un vínculo **Publicar en Scene7** que cuando se cargan déclencheur seleccionados en Scene7.
 
 >[!NOTE]
 >
