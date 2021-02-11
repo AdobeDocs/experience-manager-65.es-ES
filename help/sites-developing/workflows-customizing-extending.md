@@ -858,7 +858,7 @@ Una forma sencilla de crear su propio paso personalizado es copiar un paso exist
 
 1. Ahora puede abrir un modelo de flujo de trabajo para editarlo. En el explorador de pasos puede filtrar para ver **Mi paso personalizado**:
 
-   ![wf-36](assets/wf-36.png)
+   ![wf-34](assets/wf-36.png)
 
    Al arrastrar **Mi paso personalizado** al modelo se muestra la tarjeta:
 
