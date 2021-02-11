@@ -442,7 +442,7 @@ El complemento `cardLayout` presenta los elementos `UL` adjuntos en función de 
 
 Una utilidad combina uno o varios elementos básicos con un complemento de javascript para formar elementos de IU de &quot;nivel superior&quot;. Estos pueden implementar un comportamiento más complejo y también una apariencia más compleja que la que podría ofrecer un solo elemento. Algunos buenos ejemplos son los widgets de riel o de selector de etiquetas.
 
-Una utilidad puede activar y escuchar eventos personalizados para cooperar con otras utilidades de la página. Algunos widgets son en realidad widgets de jQuery nativos que utilizan los elementos HTML de Coral.
+Una utilidad puede déclencheur y escuchar eventos personalizados para cooperar con otras utilidades de la página. Algunos widgets son en realidad widgets de jQuery nativos que utilizan los elementos HTML de Coral.
 
 Función:
 
