@@ -100,7 +100,7 @@ Las Consultas JCR son una poderosa herramienta cuando se utilizan correctamente.
 * consultas reales del usuario final, como búsquedas de texto completo en contenido.
 * ocasiones en las que el contenido estructurado debe encontrarse en todo el repositorio.
 
-   En estos casos, asegúrese de que las consultas solo se ejecuten cuando sea absolutamente necesario, por ejemplo, en la activación de componentes o la invalidación de caché (a diferencia de los pasos de Flujos de trabajo, los controladores de Evento que activan modificaciones de contenido, Filtros, etc.).
+   En estos casos, asegúrese de que las consultas solo se ejecuten cuando sea absolutamente necesario, por ejemplo, en la activación de componentes o la invalidación de caché (a diferencia de, por ejemplo, los pasos de Flujos de trabajo, los controladores de Evento que déclencheur en modificaciones de contenido, Filtros, etc.).
 
 Las Consultas JCR nunca deben utilizarse para solicitudes de procesamiento puras. Por ejemplo, las Consultas JCR no son apropiadas para
 
