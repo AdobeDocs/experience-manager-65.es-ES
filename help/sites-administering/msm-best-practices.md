@@ -98,7 +98,7 @@ A continuación se indican algunas consideraciones que deben tenerse en cuenta a
 
 * Para crear un nuevo sitio, necesita una [configuración de modelo](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * Para permitir la selección de rutas de idioma que se van a crear en un nuevo sitio, las raíces de idioma correspondientes deben existir en el modelo (origen).
-* Una vez que un [nuevo sitio se ha creado como una Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (mediante **Crear**, luego **Sitio**), los dos primeros niveles de esta Live Copy son *superficiales*. Los elementos secundarios de la página no pertenecen a la relación activa, pero un despliegue seguirá descendiendo si se encuentra una relación activa que coincida con el activador.
+* Una vez que un [nuevo sitio se ha creado como una Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (mediante **Crear**, luego **Sitio**), los dos primeros niveles de esta Live Copy son *superficiales*. Los elementos secundarios de la página no pertenecen a la relación de vida activa, pero un despliegue seguirá descendiendo si se encuentra una relación de vida que coincida con el déclencheur.
 
    Ayuda a evitar:
 
@@ -143,7 +143,7 @@ Las modificaciones en la estructura de contenido de un modelo o árbol de origen
 
 >[!NOTE]
 >
->Esto solo funcionará con el [activador de despliegue de activación](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
+>Esto solo funcionará con el [déclencheur de despliegue de On](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
 
 * Cree una configuración de implementación personalizada:
 
@@ -171,16 +171,16 @@ Las modificaciones en la estructura de contenido de un modelo o árbol de origen
 
 Las configuraciones de implementación de MSM son altamente personalizables. Debe tener en cuenta que la automatización de las implementaciones puede tener consecuencias de gran alcance. Como práctica recomendada, debe planificar *muy* cuidadosamente antes, por ejemplo:
 
-* automatización de implementaciones; por ejemplo, con [activadores onModify](#onmodify),
+* automatización de implementaciones; por ejemplo, con [déclencheur onModify](#onmodify),
 * personalizar [tipos/propiedades de nodo](#node-types-properties),
 * iniciar flujos de trabajo subsiguientes,
 * y/o activar contenido como parte de los lanzamientos.
 
 ### onModify {#onmodify}
 
-Al utilizar el [activador de despliegue](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` debe tener en cuenta lo siguiente:
+Al utilizar el [déclencheur de implementación](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` debe tener en cuenta lo siguiente:
 
-* La automatización de los despliegues con `onModify` activadores puede tener un impacto negativo en el rendimiento de la creación, ya que activan los despliegues después de *cada* modificación de la página.
+* La automatización de las implementaciones con `onModify` déclencheur puede tener un impacto negativo en el rendimiento de la creación, ya que déclencheur las implementaciones después de *cada* modificación de página.
 
 * El resultado de la implementación puede diferir del esperado, ya que:
 
@@ -189,7 +189,7 @@ Al utilizar el [activador de despliegue](/help/sites-administering/msm-sync.md#r
 
 * El uso de una configuración de implementación de este tipo podría provocar conflictos de confirmación si se producen actualizaciones simultáneas del mismo recurso.
 
-Por lo tanto, se recomienda que *sólo* utilice `onModify` activadores si los beneficios de la iniciación automática de la implementación superan cualquier posible problema de performance.
+Por lo tanto, se recomienda que *sólo* utilice `onModify` déclencheur si los beneficios de la iniciación automática de la implementación superan cualquier problema potencial de rendimiento.
 
 ### Tipos de nodo/Propiedades {#node-types-properties}
 
