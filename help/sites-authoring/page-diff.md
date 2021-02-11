@@ -53,7 +53,7 @@ Por ejemplo, si se comparan versiones, la versión actual se muestra a la izquie
 
 El origen de ambas páginas se muestra claramente en la barra de encabezado de la parte superior de la ventana del navegador.
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 La comparación de diferencias detecta los cambios en el nivel de componente y de HTML. Los elementos modificados se resaltan con colores diferentes.
 
