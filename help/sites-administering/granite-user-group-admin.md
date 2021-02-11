@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# Operaciones de granito - Administración de usuarios y grupos{#granite-operations-user-and-group-administration}
+# Operaciones de granito: Administración de usuarios y grupos{#granite-operations-user-and-group-administration}
 
 A medida que Granite incorpora la implementación del repositorio CRX de la especificación de API de JCR, cuenta con su propia administración de usuarios y grupos.
 
