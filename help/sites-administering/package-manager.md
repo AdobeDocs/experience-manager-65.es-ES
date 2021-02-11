@@ -162,7 +162,7 @@ Los filtros pueden incluir cero o más reglas. Cuando no hay reglas definidas, e
 
 Puede definir una o varias definiciones de filtro para un paquete. Utilice más de un filtro para incluir contenido de varias rutas raíz.
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 En la tabla siguiente se describen estas reglas y se proporcionan ejemplos:
 
