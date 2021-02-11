@@ -104,7 +104,7 @@ La tabla siguiente muestra el tipo de recopilación de datos innecesarios del al
 
 ### Ejecución de la recolección de elementos no utilizados del almacén de datos mediante el Panel de operaciones {#running-data-store-garbage-collection-via-the-operations-dashboard}
 
-La ventana de mantenimiento semanal integrada, disponible a través del [Panel de operaciones](/help/sites-administering/operations-dashboard.md), contiene una tarea integrada para activar la recopilación de elementos no utilizados del almacén de datos a la 1 am los domingos.
+La ventana de mantenimiento semanal integrada, disponible a través del [Panel de operaciones](/help/sites-administering/operations-dashboard.md), contiene una tarea integrada para el déclencheur de la recopilación de elementos no utilizados del almacén de datos a la 1 am los domingos.
 
 Si necesita ejecutar la recopilación de elementos no utilizados del almacén de datos fuera de este tiempo, puede activarse manualmente mediante el Panel de operaciones.
 
@@ -160,7 +160,7 @@ Para ejecutar la recolección de elementos no utilizados:
 
 Si es posible, la recopilación de datos no utilizados del almacén de datos debe ejecutarse cuando el sistema tenga poca carga, por ejemplo por la mañana.
 
-La ventana de mantenimiento semanal integrada, disponible a través del [Panel de operaciones](/help/sites-administering/operations-dashboard.md), contiene una tarea integrada para activar la recopilación de elementos no utilizados del almacén de datos a la 1 am los domingos. También debe comprobar que no hay copias de seguridad en ejecución en este momento. El inicio de la ventana de mantenimiento se puede personalizar a través del panel según sea necesario.
+La ventana de mantenimiento semanal integrada, disponible a través del [Panel de operaciones](/help/sites-administering/operations-dashboard.md), contiene una tarea integrada para el déclencheur de la recopilación de elementos no utilizados del almacén de datos a la 1 am los domingos. También debe comprobar que no hay copias de seguridad en ejecución en este momento. El inicio de la ventana de mantenimiento se puede personalizar a través del panel según sea necesario.
 
 >[!NOTE]
 >
