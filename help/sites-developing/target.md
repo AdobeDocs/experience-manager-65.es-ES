@@ -218,7 +218,7 @@ La configuración de Destinatario incluye un archivo mbox.js personalizado, [el 
 
 La mayoría de los componentes se pueden convertir en componentes de destino mediante el comando Destinatario del menú contextual.
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-29](assets/chlimage_1-21.png)
 
 Para quitar el comando Destinatario del menú contextual, agregue la siguiente propiedad al nodo cq:editConfig del componente:
 
