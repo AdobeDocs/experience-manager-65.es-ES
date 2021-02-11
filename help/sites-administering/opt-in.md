@@ -174,7 +174,7 @@ No es necesario modificar las configuraciones de nube. Sin embargo, puede config
 
 ## Configuración del programa de instalación y aprovisionamiento mediante script {#configuring-the-setup-and-provisioning-via-script}
 
-Como administrador, puede que desee activar la configuración y el aprovisionamiento con una secuencia de comandos en lugar de pasar manualmente por el asistente. Puede hacerlo mediante:
+Como administrador, es posible que desee realizar déclencheur de configuración y aprovisionamiento con una secuencia de comandos en lugar de pasar manualmente por el asistente. Puede hacerlo mediante:
 
 * Envío de una solicitud de POST a **/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json** con los parámetros requeridos.
 
