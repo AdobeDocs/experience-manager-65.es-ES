@@ -41,7 +41,7 @@ Las actividades se muestran con una etiqueta que describe qué tipo de actividad
 * A/B: prueba de A/B de Adobe Target
 * AEM: segmentación de Adobe Experience Manager (basado en contexthub o clientcontext)
 
-![chlimage_1-115](assets/chlimage_1-114.png)
+![chlimage_1-114](assets/chlimage_1-114.png)
 
 >[!NOTE]
 >
@@ -178,7 +178,7 @@ Para ver el rendimiento de las actividades y convertirlas en experiencias ganado
 1. Haga clic o pulse la marca de la cual quiera ver actividades.
 1. Seleccione la actividad y pulse o haga clic en **Ver propiedades**, seleccione la pestaña **Informes** y haga clic en la actividad para la que desee ver el rendimiento o convertir las experiencias ganadoras. Se muestran los datos de rendimiento.
 
-   ![chlimage_1-114](assets/chlimage_1-115.png)
+   ![chlimage_1-115](assets/chlimage_1-115.png)
 
 1. Toque o haga clic en el vínculo **Impulsar al ganador** para insertar esa experiencia como experiencia predeterminada.
 
