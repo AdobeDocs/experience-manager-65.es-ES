@@ -174,7 +174,7 @@ Las funciones de la comunidad como blogs, foros y calendarios resultan en la cre
 
 Con la extensión [AEM Communities 6.1](/help/communities/overview.md), este problema se resuelve mediante el uso de un [almacén común para UGC](/help/communities/working-with-srp.md). Por lo que respecta a la personalización, Communities incluye [Inicio de sesión en Social](/help/communities/social-login.md): la capacidad de proporcionar la opción para que los visitantes del sitio inicien sesión con Facebook y Twitter.
 
-Sin la extensión de Comunidades, varios métodos para explorar para abordar el problema de la coherencia de los UGC son:
+Sin la extensión de Comunidades, varios métodos para explorar para abordar el problema de la coherencia de la UGC son:
 
 * Sincronice las varias instancias de publicación cuando sea necesario
 * Envíe el UGC desde la instancia de publicación al entorno de creación, desde donde se puede publicar de forma similar a como se publica el contenido de la página
