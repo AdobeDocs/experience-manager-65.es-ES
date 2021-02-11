@@ -204,7 +204,7 @@ Un valor `boolean`:
 
 #### publishReadiness() {#announcereadiness}
 
-Activa el evento `ready` para esta tienda. Esta función no tiene parámetros y no devuelve ningún valor.
+Déclencheur el evento `ready` para esta tienda. Esta función no tiene parámetros y no devuelve ningún valor.
 
 #### clean() {#clean}
 
@@ -296,7 +296,7 @@ Pone en pausa los eventos de la tienda para que no se active ningún evento. Est
 
 Quita un par clave/valor de la tienda.
 
-Cuando se elimina una clave, la función activa el evento `data`. Los datos de evento incluyen el nombre del almacén, el nombre de la clave que se eliminó, el valor que se eliminó, el nuevo valor de la clave (nulo) y el tipo de acción &quot;remove&quot;.
+Cuando se elimina una clave, la función déclencheur el evento `data`. Los datos de evento incluyen el nombre del almacén, el nombre de la clave que se eliminó, el valor que se eliminó, el nuevo valor de la clave (nulo) y el tipo de acción &quot;remove&quot;.
 
 Opcionalmente, puede evitar la activación del evento `data`.
 
@@ -369,7 +369,7 @@ Reanuda el evento de esta tienda para que se activen eventos. Esta función no d
 
 Añade un par clave/valor en la tienda.
 
-Activa el evento `data` sólo si el valor de la clave es diferente al valor que está almacenado actualmente para la clave. Opcionalmente, puede evitar la activación del evento `data`.
+Déclencheur el evento `data` sólo si el valor de la clave es diferente al valor que está almacenado actualmente para la clave. Opcionalmente, puede evitar la activación del evento `data`.
 
 Los datos de evento incluyen el nombre del almacén, la clave, el valor anterior, el nuevo valor y el tipo de acción `set`.
 
@@ -492,7 +492,7 @@ inicializa el objeto ContextHub.Store.JSONPStore.
 
 Consulta el servicio JSONP remoto y almacena en caché la respuesta. Si la cantidad de tiempo desde la llamada anterior a esta función es menor que el valor de `config.service.ttl`, no se llama al servicio y no se cambia la respuesta en caché. Opcionalmente, puede forzar la llamada del servicio. La propiedad `config.service.ttl`se establece al llamar a la función [init](/help/sites-developing/contexthub-api.md#init-name-config) para inicializar el almacén.
 
-Activa el evento listo cuando la consulta ha finalizado. Si la URL del servicio JSONP no está configurada, la función no hace nada.
+Déclencheur el evento listo cuando la consulta haya finalizado. Si la URL del servicio JSONP no está configurada, la función no hace nada.
 
 **Parámetros**
 
