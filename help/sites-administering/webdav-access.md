@@ -32,7 +32,7 @@ AEM compatibilidad con WebDAV de ofertas que le permite mostrar y editar el cont
 http://localhost:4502
 ```
 
-![chlimage_1-111](assets/chlimage_1-111a.png)
+![chlimage_1-191](assets/chlimage_1-111a.png)
 
 Esta dirección URL, cuando se conecta desde el nivel de sistema operativo, proporciona acceso WebDAV al espacio de trabajo predeterminado ( `crx.default`). Aunque resulta más sencillo para el usuario, no les proporciona la flexibilidad adicional de especificar nombres de espacio de trabajo, lo que se puede lograr con direcciones URL [WebDAV](/help/sites-administering/webdav-access.md#webdav-urls) adicionales.
 
@@ -170,7 +170,7 @@ Para conectarse a AEM mediante WebDAV en un entorno de Windows:
 
 1. Escriba el nombre de usuario `admin` y la contraseña `admin`. Adobe recomienda utilizar la cuenta de administrador preconfigurada para realizar pruebas.
 
-   ![chlimage_1-115](assets/chlimage_1-114a.png)
+   ![chlimage_1-114](assets/chlimage_1-114a.png)
 
 1. El asistente se cierra y la unidad recién asignada se abre en una ventana del Explorador de Windows o del Explorador de archivos.
 
