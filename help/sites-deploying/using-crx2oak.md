@@ -209,7 +209,7 @@ También puede habilitar la información de depuración para el proceso de migra
 
 ## Otras consideraciones {#other-considerations}
 
-Al migrar a un conjunto de réplicas de MongoDB, asegúrese de establecer el parámetro `WriteConcern` en `2` en todas las conexiones a las bases de datos de Mongo.
+Al migrar a un conjunto de réplicas MongoDB, asegúrese de establecer el parámetro `WriteConcern` en `2` en todas las conexiones a las bases de datos Mongo.
 
 Para ello, agregue el parámetro `w=2` al final de la cadena de conexión, como se muestra a continuación:
 
