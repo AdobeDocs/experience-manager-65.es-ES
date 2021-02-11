@@ -115,7 +115,7 @@ Todos los sitios de muestra AEM como Geometrixx Outdoors tienen este código inc
 
 ### El Evento sitecatalystAfterCollect {#the-sitecatalystaftercollect-event}
 
-La secuencia de comandos `cloudservices` desencadena el evento `sitecatalystAfterCollect`:
+La secuencia de comandos `cloudservices` déclencheur el evento `sitecatalystAfterCollect`:
 
 ```
 $CQ(document).trigger("sitecatalystAfterCollect");
@@ -140,7 +140,7 @@ Los componentes pueden interactuar con la estructura de Adobe Analytics cuando e
 * `cq:componentName`:: Nombre del componente que aparece en la barra de tareas.
 * `cq:componentGroup`:: Grupo en la barra de tareas que incluye el componente.
 
-El código en el JSP del componente agrega javascript a la página que activa el seguimiento y define los datos que se rastrean. El nombre del evento y los nombres de datos utilizados en javascript deben coincidir con los valores correspondientes de las propiedades del nodo `analytics`.
+El código en el JSP del componente agrega javascript a la página que déclencheur el seguimiento y define los datos que se rastrean. El nombre del evento y los nombres de datos utilizados en javascript deben coincidir con los valores correspondientes de las propiedades del nodo `analytics`.
 
 * Utilice el atributo de seguimiento de datos para rastrear los datos de evento cuando se cargue una página. (Consulte [Seguimiento de Eventos personalizados en la carga de página](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load)).
 * Utilice la función CQ_Analytics.record para realizar un seguimiento de los datos de evento cuando los usuarios interactúan con las funciones de la página. (Consulte [Seguimiento de Eventos personalizados tras carga de página](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load)).
