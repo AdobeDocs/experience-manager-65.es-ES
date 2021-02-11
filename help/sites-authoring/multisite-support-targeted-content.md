@@ -142,7 +142,7 @@ Sin embargo, si configuró la herencia mediante MSM entre los dos sitios, puede 
 
 >[!NOTE]
 >
->La implementación predeterminada desencadena despliegues posteriores del contenido de destino siempre que una página sea una Live Copy que se vincule a un área que en sí es una Live Copy del área vinculada al modelo de Páginas.
+>El despliegue predeterminado déclencheur los posteriores lanzamientos del contenido de destino siempre que una página sea una Live Copy que se vincule a un área que en sí es una Live Copy del área vinculada al modelo de Páginas.
 
 Por ejemplo, en el siguiente diagrama, hay cuatro sitios donde dos de ellos comparten el área principal (y todas las actividades que forman parte de esa área), uno que tiene un área que es una Live Copy de un área, por lo que comparte las actividades durante el despliegue, y un sitio que es completamente independiente (y que, por lo tanto, requiere un área para sus actividades).
 
