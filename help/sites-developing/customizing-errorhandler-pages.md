@@ -94,7 +94,7 @@ Para gestionar errores 500, el nombre de archivo de la secuencia de comandos del
 >
 >En una instancia de autor, [el filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md) está habilitado de forma predeterminada. Esto siempre resulta en el código de respuesta 200. El controlador de error predeterminado responde escribiendo el seguimiento de pila completo en la respuesta.
 >
->Para un controlador de errores personalizado, se necesitan respuestas con código 500, por lo que el [filtro de depuración de CQ WCM debe deshabilitarse](/help/sites-deploying/osgi-configuration-settings.md). Esto garantiza que se devuelve el código de respuesta 500, que a su vez activa el controlador de error Sling correcto.
+>Para un controlador de errores personalizado, se necesitan respuestas con código 500, por lo que el [filtro de depuración de CQ WCM debe deshabilitarse](/help/sites-deploying/osgi-configuration-settings.md). Esto garantiza que se devuelve el código de respuesta 500, que a su vez déclencheur el controlador de error Sling correcto.
 >
 >En una instancia de publicación, el filtro de depuración de CQ WCM está *siempre* deshabilitado (aunque esté configurado como habilitado).
 
