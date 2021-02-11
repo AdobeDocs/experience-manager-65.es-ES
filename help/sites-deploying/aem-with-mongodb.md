@@ -384,7 +384,7 @@ Esta directiva asigna la memoria de forma rodada en todos los nodos de CPU, lo q
 
 ### Problemas de NUMA {#numa-issues}
 
-Si el proceso `mongod` se inicia desde una ubicación distinta a la carpeta `/etc/init.d`, es probable que no se inicie con la directiva NUMA correcta. Dependiendo de la política predeterminada, pueden surgir problemas. Esto se debe a que los diversos instaladores del administrador de paquetes Linux para MongoDB también instalan un servicio con archivos de configuración ubicados en `/etc/init.d` que realizan el paso descrito anteriormente. Si instala y ejecuta MongoDB directamente desde un archivo ( `.tar.gz`), tendrá que ejecutar manualmente mondios bajo el proceso `numactl`.
+Si el proceso `mongod` se inicia desde una ubicación distinta a la carpeta `/etc/init.d`, es probable que no se inicie con la directiva NUMA correcta. Dependiendo de la política predeterminada, pueden surgir problemas. Esto se debe a que los diversos instaladores del administrador de paquetes Linux para MongoDB también instalan un servicio con archivos de configuración ubicados en `/etc/init.d` que realizan el paso descrito anteriormente. Si instala y ejecuta MongoDB directamente desde un archivo ( `.tar.gz`), deberá ejecutar manualmente mondios bajo el proceso `numactl`.
 
 >[!NOTE]
 >
