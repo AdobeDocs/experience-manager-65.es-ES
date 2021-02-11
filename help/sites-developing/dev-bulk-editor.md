@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Desarrollo del Editor masivo{#developing-the-bulk-editor}
 
-Esta sección describe cómo desarrollar la herramienta de edición masiva y cómo extender el componente de Lista de productos, que se basa en el editor masivo.
+En esta sección se describe cómo desarrollar la herramienta de edición masiva y cómo extender el componente de Lista del producto, que se basa en el editor masivo.
 
 ## Parámetros de Consulta del Editor masivo {#bulk-editor-query-parameters}
 
