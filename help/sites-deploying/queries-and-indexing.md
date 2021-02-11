@@ -101,7 +101,7 @@ El índice de propiedades tiene las siguientes opciones de configuración:
 * El indicador **único** que, si se establece en **true** agrega una restricción de unicidad en el índice de propiedades.
 
 * La propiedad **declaringNodeTypes** permite especificar un tipo de nodo determinado al que sólo se aplicará el índice.
-* El indicador **reindexar** que si se establece en **true**, activará un reíndice de contenido completo.
+* El indicador **reindexar** que si se establece en **true**, déclencheur un reíndice de contenido completo.
 
 ### Índice ordenado {#the-ordered-index}
 
@@ -134,7 +134,7 @@ El índice Lucene tiene las siguientes opciones de configuración:
 * La propiedad **async** que debe establecerse en **async**. Esto enviará el proceso de actualización del índice a un subproceso en segundo plano.
 * La propiedad **includePropertyTypes**, que definirá qué subconjunto de tipos de propiedad se incluirá en el índice.
 * La propiedad **excludePropertyNames** que definirá una lista de nombres de propiedades: propiedades que deben excluirse del índice.
-* El indicador **reindexar** que, cuando se establece en **true**, desencadena un re-índice de contenido completo.
+* El indicador **reindexar** que, cuando se establece en **true**, déclencheur un reíndice de contenido completo.
 
 ### Índice de propiedades de Lucene {#the-lucene-property-index}
 
