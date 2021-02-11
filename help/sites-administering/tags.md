@@ -134,7 +134,7 @@ Para seleccionar la etiqueta para operaciones y para realizar varias selecciones
 
 Cuando se selecciona una Área de nombres u otra, al seleccionar el icono **`View Properties`** se muestra información sobre el `name`, la hora de la última edición y el número de referencias. Si se publica, se muestra la hora en que se publicó por última vez y la identificación del editor. Esta información aparecerá en una columna a la izquierda de las columnas de etiquetas.
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![chlimage_1-109](assets/chlimage_1-189.png)
 
 ### Mostrando referencias de etiqueta {#showing-tag-references}
 
@@ -144,7 +144,7 @@ Cuando se selecciona una Área de nombres u otra, al seleccionar el icono **Refe
 
 La visualización inicial es un recuento de etiquetas aplicadas.
 
-![chlimage_1-111](assets/chlimage_1-191.png)
+![chlimage_1-191](assets/chlimage_1-191.png)
 
 Al seleccionar la flecha a la derecha del recuento, se muestran los nombres de referencia.
 
