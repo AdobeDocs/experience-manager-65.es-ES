@@ -25,7 +25,7 @@ AEM envía notificaciones por correo electrónico a los usuarios que:
 * Se han suscrito a eventos de página, por ejemplo, modificación o replicación. La sección [Bandeja de entrada de notificaciones](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) describe cómo suscribirse a dichos eventos.
 
 * Se han suscrito a los eventos del foro.
-* Debe realizar un paso en un flujo de trabajo. La sección [Paso del participante](/help/sites-developing/workflows-step-ref.md#participant-step) describe cómo activar la notificación por correo electrónico en un flujo de trabajo.
+* Debe realizar un paso en un flujo de trabajo. En la sección [Paso del participante](/help/sites-developing/workflows-step-ref.md#participant-step) se describe cómo déclencheur la notificación por correo electrónico en un flujo de trabajo.
 
 Requisitos previos:
 
