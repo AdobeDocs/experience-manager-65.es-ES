@@ -37,7 +37,7 @@ Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
 
 ## Assets {#assets}
 
-Las prácticas recomendadas sobre los recursos, incluidas la capacidad Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
+Las prácticas recomendadas en torno a los recursos, incluidas la capacidad de Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
 
 <table>
  <tbody>
@@ -62,7 +62,7 @@ Las prácticas recomendadas sobre los recursos, incluidas la capacidad Dynamic M
    <td>Como parte de la documentación sobre <a href="/help/assets/managing-image-presets.md">Administración de ajustes preestablecidos de imagen</a>, estos temas describen los ajustes preestablecidos de imagen y las prácticas recomendadas para seleccionar las opciones de ajustes preestablecidos de imagen.</td>
   </tr>
   <tr>
-   <td>Medios dinámicos frente a la integración directa con Scene7</td>
+   <td>Dynamic Media frente a la integración directa con Scene7</td>
    <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integración de Scene7/AEM frente a Dynamic Media</a></td>
    <td>Describe cuándo es mejor utilizar la solución Dynamic Media, cuándo integrar S7 con AEM o cuándo usar ambos.</td>
   </tr>
