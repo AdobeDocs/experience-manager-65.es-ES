@@ -20,7 +20,7 @@ ht-degree: 84%
 
 # Entrega de recursos de Dynamic Media{#delivering-dynamic-media-assets}
 
-El modo de distribuir los recursos de Dynamic Media, tanto de vídeo como de imágenes, depende de cómo se implemente el sitio web.
+La manera de distribuir los recursos de Dynamic Media (vídeo e imágenes) depende de la implementación del sitio web.
 
 Con Dynamic Media dispone de varias opciones:
 
