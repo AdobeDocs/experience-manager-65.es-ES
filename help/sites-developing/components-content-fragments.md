@@ -106,7 +106,7 @@ Para utilizar el componente de fragmento de contenido incorporado como modelo de
 * Vuelva a utilizar la secuencia de comandos de procesamiento HTL y su POJO asociado para ver cómo se implementa la función de contenido intermedio.
 * Reutilice el nodo de fragmento de contenido: `cq:editConfig`
 
-   * Los oyentes `afterinsert`/ `afteredit`/ `afterdelete` se utilizan para desencadenar eventos JS. Estos eventos se gestionarán en la biblioteca del cliente `cq.authoring.editor.plugin.cfm` para mostrar el contenido asociado en el panel lateral.
+   * Los oyentes `afterinsert`/ `afteredit`/ `afterdelete` se utilizan para déclencheur de eventos JS. Estos eventos se gestionarán en la biblioteca del cliente `cq.authoring.editor.plugin.cfm` para mostrar el contenido asociado en el panel lateral.
    * Los `cq:dropTargets` están configurados para admitir la posibilidad de arrastrar recursos de fragmento de contenido.
    * `cq:inplaceEditing` está configurado para admitir la creación de un fragmento de contenido en el editor de páginas. El editor in-situ de fragmentos se define en la biblioteca de cliente `cq.authoring.editor.plugin.cfm` y permite un vínculo rápido para abrir el [elemento/variación](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) actual en el [editor de fragmentos](/help/assets/content-fragments/content-fragments-variations.md).
 
