@@ -64,7 +64,7 @@ se recomienda no utilizar estos caracteres especiales:
 
    * **Descripción**
 (
-*Opcional*) Una descripción de la etiqueta.
+*Opcional*) Una descripción para la etiqueta.
 
    * seleccionar **Crear**
 
