@@ -113,7 +113,7 @@ Un ejemplo sería un componente que incluye un componente de imagen principal pa
 
 Otro caso de uso común es cuando los componentes de contenedor incluyen componentes secundarios editables, como un Contenedor de diseño. En este caso, cada niño incluido necesita imperativamente un envoltorio para que funcione el editor (a menos que esté explícitamente deshabilitado con la propiedad `cq:noDecoration`).
 
-Dado que el componente incluido es en este caso un componente independiente, necesita un elemento envolvente para que funcione el editor y para definir su diseño y estilo que aplicar. Para activar este comportamiento, está la opción `decoration=true`.
+Dado que el componente incluido es en este caso un componente independiente, necesita un elemento envolvente para que funcione el editor y para definir su diseño y estilo que aplicar. Para déclencheur de este comportamiento, está la opción `decoration=true`.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
