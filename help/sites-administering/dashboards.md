@@ -143,7 +143,7 @@ Cada componente también define ajustes específicos.
 
 Este componente muestra un gráfico sobre la sección más visitada del sitio web según la configuración siguiente.
 
-![chlimage_1-21](assets/chlimage_1-29a.png)
+![chlimage_1-29](assets/chlimage_1-29a.png)
 
 **No. de elementos principales** Número de sección mostrada por en el informe.
 
