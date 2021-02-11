@@ -1,8 +1,8 @@
 ---
 title: Reestructuración del repositorio de Dynamic Media en AEM 6.5
 seo-title: Reestructuración del repositorio de Dynamic Media en AEM 6.5
-description: Obtenga información sobre cómo realizar los cambios necesarios para migrar a la nueva estructura de repositorio en AEM 6.5 para Dynamic Media.
-seo-description: Obtenga información sobre cómo realizar los cambios necesarios para migrar a la nueva estructura de repositorio en AEM 6.5 para Dynamic Media.
+description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorio en AEM 6.5 para Dynamic Media.
+seo-description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorio en AEM 6.5 para Dynamic Media.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -19,14 +19,14 @@ ht-degree: 4%
 
 # Reestructuración del repositorio de Dynamic Media en AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Como se describe en la página principal [Reestructuración del repositorio en AEM 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a AEM 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución Dynamic Media. Algunos cambios requieren esfuerzo de trabajo durante el proceso de actualización a AEM 6.5, mientras que otros se pueden posponer hasta una actualización futura.
+Como se describe en la página principal [Reestructuración del repositorio en AEM 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a AEM 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de Dynamic Media. Algunos cambios requieren esfuerzo de trabajo durante el proceso de actualización a AEM 6.5, mientras que otros se pueden posponer hasta una actualización futura.
 
 **Antes de la actualización futura**
 
 * [Configuraciones personalizadas de codificación de vídeo adaptable](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
 * [Configuración de nube de Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
-* [Configuración de Cloud Service de Dynamic Media (DM híbrido)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
-* [Medios dinámicos: configuración del Cloud Service de YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
+* [Configuración del Cloud Service Dynamic Media (DM híbrido)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
+* [Dynamic Media: configuración del Cloud Service de YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
 * [Misc](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Antes de la actualización futura {#prior-to-upgrade}
@@ -81,7 +81,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
  </tbody>
 </table>
 
-### Configuración del Cloud Service de Dynamic Media (DM Hybrid) {#cloudserviceconfiguration}
+### Configuración del Cloud Service Dynamic Media (DM Hybrid) {#cloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -104,7 +104,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
  </tbody>
 </table>
 
-### Medios dinámicos: configuración del Cloud Service de YouTube {#youtubecloudserviceconfiguration}
+### Dynamic Media - Configuración del Cloud Service de YouTube {#youtubecloudserviceconfiguration}
 
 <table>
  <tbody>
