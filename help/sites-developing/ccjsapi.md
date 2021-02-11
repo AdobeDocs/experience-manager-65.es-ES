@@ -374,7 +374,7 @@ Llama al servicio JSONP. La URL de JSONP es la URL del servicio con el sufijo de
 
 **Parámetros**
 
-* serviceURL: (Opcional) Cadena. El servicio JSONP al que llamar. Un valor nulo hace que se utilice la dirección URL de servicio ya configurada. Un valor que no sea nulo establece el servicio JSONP que se utilizará para este objeto. (Consulte setServiceURL.)
+* serviceURL: (Opcional) Cadena. El servicio JSONP al que llamar. Un valor nulo hace que se utilice la URL de servicio ya configurada. Un valor que no sea nulo establece el servicio JSONP que se utilizará para este objeto. (Consulte setServiceURL.)
 * dynamicData: (Opcional). Datos JSON para anexar a los datos de inicialización del almacén antes de llamar a la función de llamada de retorno.
 * llamada de retorno: (Opcional) Cadena. Nombre de la función que se va a llamar para procesar el objeto JSONP que devuelve el servicio JSONP. La función de llamada de retorno debe definir un solo parámetro que sea un objeto CQ_Analytics.JSONPStore.
 
