@@ -2,9 +2,9 @@
 title: Creación y sincronización de Live Copies
 description: Obtenga información sobre cómo crear y sincronizar Live Copies.
 translation-type: tm+mt
-source-git-commit: 7d40fbfb55755d815a11b1872c41dd8e1a0e1ffd
+source-git-commit: 1725f19d0676680ae89ad7ea39fa3ae1deaeb8a3
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4170'
 ht-degree: 1%
 
 ---
@@ -206,7 +206,7 @@ Las páginas de modelo (a las que se hace referencia en una configuración de mo
 
 ### Despliegue de un modelo {#rolling-out-a-blueprint}
 
-Despliegue una página de modelo para insertar los cambios de contenido en copias en vivo. Una acción **Despliegue** ejecuta las configuraciones de implementación que utilizan el activador [Al despliegue](/help/sites-administering/msm-sync.md#rollout-triggers).
+Despliegue una página de modelo para insertar los cambios de contenido en copias en vivo. Una acción **Despliegue** ejecuta las configuraciones de implementación que utilizan el déclencheur [Al implementarse](/help/sites-administering/msm-sync.md#rollout-triggers).
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ Sincronice una Live Copy para extraer los cambios del origen a la Live Copy.
 
 >[!NOTE]
 >
->La sincronización ejecuta las configuraciones de implementación que utilizan el activador [Al implementar](/help/sites-administering/msm-sync.md#rollout-triggers).
+>La sincronización ejecuta las configuraciones de implementación que utilizan el déclencheur [Al implementar](/help/sites-administering/msm-sync.md#rollout-triggers).
 
 1. En la consola **Sitios**, seleccione la página de Live Copy y abra las propiedades.
 1. Abra la ficha **Live Copy**.
@@ -355,6 +355,10 @@ Puede suspender la herencia de Live Copy para una página de Live Copy, de modo 
 >[!NOTE]
 >
 >También puede [separar una Live Copy](#detaching-a-live-copy) de su modelo para eliminar todas las conexiones. La acción Desconectar es permanente e irreversible.
+
+>[!NOTE]
+>
+>Si el componente está marcado como contenedor, las acciones de cancelación y suspensión no se aplican a sus componentes secundarios. Consulte también [Prácticas recomendadas de MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) para obtener más información.
 
 #### Suspensión de herencia de propiedades de página {#suspending-inheritance-from-page-properties}
 
@@ -459,6 +463,10 @@ Para especificar o cambiar la profundidad:
 ### Cancelación de la herencia de un componente {#cancelling-inheritance-for-a-component}
 
 Cancele la herencia de Live Copy de un componente para que el componente ya no se sincronice con el componente de origen. Si es necesario, puede activar la herencia más adelante.
+
+>[!NOTE]
+>
+>Si el componente está marcado como contenedor, las acciones de cancelación y suspensión no se aplican a sus componentes secundarios. Consulte también [Prácticas recomendadas de MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) para obtener más información.
 
 >[!NOTE]
 >
