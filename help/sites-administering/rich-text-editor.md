@@ -157,11 +157,11 @@ Configure las siguientes propiedades que se aplican en el modo de edición de cu
 
    Cuando esta propiedad es verdadera, la edición de Richtext se inicia, de forma predeterminada, en el evento &quot;foundation-contentloaded&quot;.
 
-   Para evitarlo, establezca la propiedad `customStart` en `True`y active el evento &#39;rte-inicio&#39; en la edición RTE de inicio. Cuando esta propiedad es &#39;true&#39;, el comportamiento predeterminado, inicio de velocidad al hacer clic, no funciona.
+   Para evitarlo, establezca la propiedad `customStart` en `True`y déclencheur el evento &#39;rte-inicio&#39; en la edición RTE de inicio. Cuando esta propiedad es &#39;true&#39;, el comportamiento predeterminado, inicio de velocidad al hacer clic, no funciona.
 
 * `customStart`:: Establezca esta propiedad booleana definida en el nodo RTE en  `True`, para controlar cuándo se debe activar el inicio RTE activando el evento  `rte-start`.
 
-* `rte-start`:: Activar este evento en el  `contenteditable-div` editor de texto enriquecido, al editar inicio RTE. Esto solo funciona si `customStart` se ha establecido en true.
+* `rte-start`:: Déclencheur este evento en el  `contenteditable-div` editor de texto enriquecido, cuándo editar el inicio RTE. Esto solo funciona si `customStart` se ha establecido en true.
 
 Cuando se utiliza RTE en el cuadro de diálogo táctil, es obligatorio establecer la propiedad `useFixedInlineToolbar` en true para evitar problemas.
 
