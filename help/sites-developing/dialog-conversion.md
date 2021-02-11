@@ -89,7 +89,7 @@ Siga estos pasos para convertir uno o varios cuadros de diálogo:
 
 1. Seleccione uno o varios cuadros de diálogo para la conversión y toque o haga clic **Convertir cuadros de diálogo X** para inicio del proceso de conversión.
 
-   ![chlimage_1-29](assets/chlimage_1-21a.png)
+   ![chlimage_1-21](assets/chlimage_1-21a.png)
 
 1. Los cuadros de diálogo seleccionados se muestran con los resultados de sus conversiones. Si la conversión se ha realizado correctamente, la fila contiene vínculos para la vista del cuadro de diálogo convertido o para abrirlo en CRXDE Lite.
 
