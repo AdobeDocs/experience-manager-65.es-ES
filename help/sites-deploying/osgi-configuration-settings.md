@@ -373,7 +373,7 @@ FormatoIndica el formato en el que se proporciona el ID de usuario. Uso:
 
 **Filtro de depuración de CQ WCM de díaResulta útil cuando se desarrolla, ya que permite el uso de sufijos como ?debug=layout al acceder a una página.** Por ejemplo, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout proporcionará información de diseño que puede ser de interés para el desarrollador.
 
-* Desactívela en las instancias de producción para garantizar el rendimiento y la seguridad.
+* Desactívelo en las instancias de producción para garantizar el rendimiento y la seguridad.
 
 **Day CQ WCM** FilterConfigurar:
 
@@ -461,7 +461,7 @@ Consulte también [Activación de HTTP sobre SSL](/help/sites-administering/ssl-
 Controla el analizador de HTML para el reescritor de CQ.
 
 * **Etiquetas adicionales para procesar** : puede agregar o quitar etiquetas HTML para que el analizador las procese. De forma predeterminada, se procesan las etiquetas siguientes: A,IMG,ÁREA,FORMULARIO,BASE,VÍNCULO,SECUENCIA DE COMANDOS,CUERPO,HEAD.
-* **Conservar mayúsculas y minúsculas** : de forma predeterminada, el analizador HTML convierte atributos en mayúsculas y minúsculas (por ejemplo, eBay) en minúsculas (por ejemplo, ebay). Puede desactivarlo para conservar los atributos de mayúsculas y minúsculas del camello. Esto resulta útil cuando se utilizan marcos de interfaz como Angular 2.
+* **Conservar mayúsculas y minúsculas** : de forma predeterminada, el analizador HTML convierte atributos en mayúsculas y minúsculas (por ejemplo, eBay) en minúsculas (por ejemplo, ebay). Puede desactivarlo para conservar los atributos de mayúsculas y minúsculas del camello. Esto resulta útil cuando se utilizan marcos de front-end como Angular 2.
 
 **Day Commons JDBC Connections** PoolConfigure el acceso a una base de datos externa que se utiliza como fuente de contenido.
 
