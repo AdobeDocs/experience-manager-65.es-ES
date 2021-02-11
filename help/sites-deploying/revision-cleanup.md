@@ -596,7 +596,7 @@ java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurati
 
 ### Métodos adicionales para activar la limpieza de revisión {#additional-methods-of-triggering-revision-cleanup}
 
-Además de los métodos presentados anteriormente, también puede activar el mecanismo de limpieza de revisión mediante la consola JMX de la siguiente manera:
+Además de los métodos descritos anteriormente, también puede realizar el déclencheur del mecanismo de limpieza de revisiones mediante la consola JMX de la siguiente manera:
 
 1. Abra la consola de JMX en [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)
 1. Haga clic en el MBean **RevisionGarbageCollection**.
@@ -614,7 +614,7 @@ Además de los métodos presentados anteriormente, también puede activar el mec
    <td><strong>¿Cuál es la diferencia entre una revisión y una versión de página?</strong></td>
    <td>
     <ul>
-     <li><strong>Revisión de roble:</strong> Oak organiza todo el contenido en una jerarquía de árbol grande que consta de nodos y propiedades. Cada instantánea o revisión de este árbol de contenido es inmutable y los cambios en el árbol se expresan como una secuencia de nuevas revisiones. Normalmente, cada modificación de contenido desencadena una nueva revisión. Consulte también <a href="https://jackrabbit.apache.org/dev/ngp.html" target="_blank"> Seguir vínculo</a>.</li>
+     <li><strong>Revisión de roble:</strong> Oak organiza todo el contenido en una jerarquía de árbol grande que consta de nodos y propiedades. Cada instantánea o revisión de este árbol de contenido es inmutable y los cambios en el árbol se expresan como una secuencia de nuevas revisiones. Normalmente, cada modificación de contenido déclencheur una nueva revisión. Consulte también <a href="https://jackrabbit.apache.org/dev/ngp.html" target="_blank"> Seguir vínculo</a>.</li>
      <li><strong>Versión de página:</strong> Al generar versiones se crea una "instantánea" de una página en un punto específico en el tiempo. Normalmente, se crea una nueva versión cuando se activa una página. Para obtener más información, consulte <a href="/help/sites-authoring/working-with-page-versions.md" target="_blank">Uso de versiones de página</a>.</li>
     </ul> </td>
   </tr>
