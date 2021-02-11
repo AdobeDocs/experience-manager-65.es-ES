@@ -152,7 +152,7 @@ Las distintas codificaciones de vídeo se crean según los ajustes preestablecid
 1. En AEM, vaya a **[!UICONTROL Herramientas]** y seleccione **[!UICONTROL Consola de configuración.]** En la Consola de configuración, vaya a  **[!UICONTROL Herramientas]** >  **[!UICONTROL Recursos]** >  **[!UICONTROL Perfil de]** vídeo en el árbol de navegación.
 1. Cree un nuevo Perfil de vídeo Dynamic Media Classic. En **[!UICONTROL Nuevo...]**, seleccione **[!UICONTROL Crear página]** y, a continuación, seleccione la plantilla Perfil de vídeo Dynamic Media Classic. Asigne un nombre a la página nueva del perfil de vídeo y haga clic en **[!UICONTROL Crear.]**
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Edite el nuevo perfil de vídeo. Seleccione primero la configuración de nube. A continuación, seleccione el mismo ajuste preestablecido de codificación que el que se ha seleccionado en la configuración de nube.
 
