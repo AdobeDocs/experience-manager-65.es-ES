@@ -309,7 +309,7 @@ La función de la comprobación de estado compuesta consiste en acumulado de var
   </tr>
   <tr>
    <td>Comprobación de caché de código</td>
-   <td><p>Es una comprobación de estado que comprueba varias condiciones de JVM que pueden activar un error de CodeCache presente en Java 7:</p>
+   <td><p>Es una comprobación de estado que comprueba varias condiciones de JVM que pueden déclencheur de un error de CodeCache presente en Java 7:</p>
     <ul>
      <li>devuelve la opción Advertir si la instancia se está ejecutando en Java 7, con el vaciado de caché de código habilitado</li>
      <li>devuelve una advertencia si la instancia se está ejecutando en Java 7 y el tamaño de caché de código reservado es menor que un umbral mínimo (el valor predeterminado es 90 MB)</li>
@@ -414,7 +414,7 @@ La interfaz de usuario de los mensajes de registro mostrará todos los mensajes 
 
 Los mensajes de registro utilizan un anexador de registro en memoria y, por lo tanto, no están relacionados con los archivos de registro. Otra consecuencia es que al cambiar los niveles de registro en esta interfaz de usuario no se cambiará la información que se registra en los archivos de registro tradicionales. Añadir y eliminar los inicios de sesión en esta interfaz de usuario solo afectará al registrador en memoria. Además, tenga en cuenta que el cambio de las configuraciones del registrador se reflejará en el futuro del registrador de memoria: las entradas que ya están registradas y que ya no son relevantes no se eliminan, pero las entradas similares no se registrarán en el futuro.
 
-Puede configurar lo que se registra proporcionando configuraciones de registrador desde el botón de engranaje superior izquierdo en la interfaz de usuario. Allí puede agregar, eliminar o actualizar configuraciones de registrador. Una configuración de registrador está compuesta por un **nivel de registro** (WARN / INFO / DEBUG) y un **nombre de filtro**. El **nombre del filtro** tiene la función de filtrar el origen de los mensajes de registro que se registran. Como alternativa, si un registrador debe capturar todos los mensajes de registro para el nivel especificado, el nombre del filtro debe ser &quot;**raíz**&quot;. La configuración del nivel de un registrador activará la captura de todos los mensajes con un nivel igual o superior al especificado.
+Puede configurar lo que se registra proporcionando configuraciones de registrador desde el botón de engranaje superior izquierdo en la interfaz de usuario. Allí puede agregar, eliminar o actualizar configuraciones de registrador. Una configuración de registrador está compuesta por un **nivel de registro** (WARN / INFO / DEBUG) y un **nombre de filtro**. El **nombre del filtro** tiene la función de filtrar el origen de los mensajes de registro que se registran. Como alternativa, si un registrador debe capturar todos los mensajes de registro para el nivel especificado, el nombre del filtro debe ser &quot;**raíz**&quot;. Al establecer el nivel de un registrador se déclencheur la captura de todos los mensajes con un nivel igual o superior al especificado.
 
 Ejemplos:
 
@@ -521,7 +521,7 @@ La IU se puede utilizar para filtrar índices de la tabla escribiendo los criter
 
 ### Descargar zip de estado {#download-status-zip}
 
-Esto activará la descarga de un zip que contiene información útil sobre el estado y la configuración del sistema. El archivo contiene configuraciones de instancias, una lista de paquetes, OSGI, métricas de Sling y estadísticas, lo que puede resultar en un archivo grande. Puede reducir el impacto de los archivos de estado de gran tamaño mediante la ventana **ZIP de estado de descarga**. Se puede acceder a la ventana desde:**AEM > Herramientas > Operaciones > Diagnóstico > Descargar ZIP de estado.**
+Esto déclencheur la descarga de un archivo comprimido que contenga información útil sobre el estado y la configuración del sistema. El archivo contiene configuraciones de instancias, una lista de paquetes, OSGI, métricas de Sling y estadísticas, lo que puede resultar en un archivo grande. Puede reducir el impacto de los archivos de estado de gran tamaño mediante la ventana **ZIP de estado de descarga**. Se puede acceder a la ventana desde:**AEM > Herramientas > Operaciones > Diagnóstico > Descargar ZIP de estado.**
 
 Desde esta ventana puede seleccionar qué exportar (archivos de registro y/o archivos de subproceso) y el número de días de registros incluidos en la descarga en relación con la fecha actual.
 
@@ -529,11 +529,11 @@ Desde esta ventana puede seleccionar qué exportar (archivos de registro y/o arc
 
 ### Descargar volcados de procesos {#download-thread-dump}
 
-Esto activará la descarga de un zip que contiene información sobre los subprocesos presentes en el sistema. Se proporciona información sobre cada subproceso, como su estado, el cargador de clase y el seguimiento de pila.
+Esto déclencheur la descarga de un archivo comprimido que contenga información sobre los subprocesos presentes en el sistema. Se proporciona información sobre cada subproceso, como su estado, el cargador de clase y el seguimiento de pila.
 
 ### Descargar volcado de pila {#download-heap-dump}
 
-También puede descargar una instantánea del montón para analizarla más adelante. Tenga en cuenta que esto activará la descarga de un archivo grande, en el orden de cientos de megabytes.
+También puede descargar una instantánea del montón para analizarla más adelante. Tenga en cuenta que esto déclencheur la descarga de un archivo grande, en el orden de cientos de megabytes.
 
 ## Tareas de mantenimiento automatizadas {#automated-maintenance-tasks}
 
@@ -697,7 +697,7 @@ El **Panel Información general del sistema** muestra una visión general de alt
 
 >[!NOTE]
 >
->También puede [ver este vídeo](https://video.tv.adobe.com/v/21340?captions=spa) para obtener una introducción al Panel Información general del sistema.
+>También puede [ver este vídeo](https://video.tv.adobe.com/v/21340) para obtener una introducción al Panel Información general del sistema.
 
 ### Cómo Acceder {#how-to-access}
 
