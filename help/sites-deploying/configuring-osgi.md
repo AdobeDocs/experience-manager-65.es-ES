@@ -277,7 +277,7 @@ Esto significa que una configuración genérica en `/libs` puede enmascararse co
 
 ### Orden de resolución en tiempo de ejecución {#resolution-order-at-runtime}
 
-Los cambios de configuración realizados mientras el sistema está ejecutando activan una recarga con la configuración modificada.
+Los cambios de configuración realizados mientras el sistema está ejecutando déclencheur una recarga con la configuración modificada.
 
 A continuación, se aplica el siguiente orden de prioridad:
 
