@@ -810,7 +810,7 @@ El componente de Control de columna permite a los usuarios seleccionar cómo qui
 Los componentes de formulario se usan para crear formularios para que los visitantes introduzcan información. Los formularios y los componentes de formulario pueden utilizarse para recopilar información, incluidos los comentarios de usuario (por ejemplo, un cuestionario de satisfacción de los clientes) e información sobre los usuarios (por ejemplo, registro de usuarios).
 
 >[!NOTE]
-Consulte la [Ayuda de formularios de AEM](/help/forms/home.md) para obtener más información sobre los formularios de AEM.
+Consulte la [Ayuda de AEM Forms](/help/forms/home.md) para obtener más información sobre los AEM Forms.
 
 Los formularios incluyen diferentes componentes:
 
