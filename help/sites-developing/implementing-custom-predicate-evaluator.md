@@ -176,7 +176,7 @@ El proyecto `cq-search` contiene la clase abstracta `AbstractPredicateEvaluator`
 >
 >El nombre del `PredicateEvaluator` es el nombre del predicado, que se utiliza al generar consultas.
 
-1. Anular:
+1. Omitir:
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
