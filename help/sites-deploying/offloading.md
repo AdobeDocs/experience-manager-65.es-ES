@@ -42,7 +42,7 @@ Cuando JobManager crea un trabajo, el marco de descargas selecciona un clúster 
 
 Consulte [Configuración del consumo del tema](/help/sites-deploying/offloading.md#configuring-topic-consumption) para obtener información sobre cómo refinar la distribución de trabajos.
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 Cuando el marco de descarga selecciona un clúster para ejecutar un trabajo y el clúster está compuesto de varias instancias, Sling Distribution determina qué instancia del clúster ejecuta el trabajo.
 
@@ -193,7 +193,7 @@ Los trabajos se distribuyen entre las instancias que tienen activado el tema aso
 1. Para desactivar el consumo de un tema para una instancia, haga clic en Deshabilitar, junto a la instancia, debajo del nombre del tema.
 1. Para configurar todo el consumo de temas de una instancia, haga clic en el identificador de instancia debajo de cualquier tema.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. Haga clic en uno de los siguientes botones junto a un tema para configurar el comportamiento de consumo de la instancia y, a continuación, haga clic en Guardar:
 
@@ -287,7 +287,7 @@ Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Transporte > Usuario de transporte | Usuario de replicación en instancia de destinatario |
    | Transporte > Contraseña de transporte | Contraseña de usuario de replicación en la instancia de destinatario |
    | Extended > Método HTTP | POST |
-   | Activadores > Ignorar predeterminado | Verdadero |
+   | Déclencheur > Ignorar valores predeterminados | Verdadero |
 
 ### Creación del agente inverso {#creating-the-reverse-agent}
 
@@ -311,7 +311,7 @@ Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Configuración > Tipo de serialización | Predeterminado |
    | Transporte > URI de transporte | repo://var/replication/outbox |
-   | Activador > Ignorar predeterminado | Verdadero |
+   | Déclencheur > Ignorar predeterminado | Verdadero |
 
 ### Búsqueda del ID de Sling {#finding-the-sling-id}
 
