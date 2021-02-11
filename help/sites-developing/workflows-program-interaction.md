@@ -579,7 +579,7 @@ Si necesita avanzar automáticamente un paso **Participante** que no se haya com
 
 1. Implemente un detector de eventos OSGI para escuchar la creación y modificación de tareas.
 1. Especifique un tiempo de espera (fecha límite) y, a continuación, cree un trabajo de sling programado para que se active en ese momento.
-1. Escriba un controlador de trabajo que reciba una notificación cuando caduque el tiempo de espera y active el trabajo.
+1. Escriba un controlador de trabajo que reciba una notificación cuando caduque el tiempo de espera y déclencheur el trabajo.
 
    Este controlador realizará la acción necesaria en la tarea si la tarea aún no se ha completado
 
