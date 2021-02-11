@@ -34,7 +34,7 @@ Para averiguar en qué componentes se utiliza un xtype determinado en AEM, puede
 >
 >Esta página describe el uso de xtypes de ExtJS dentro de la IU clásica.
 >
->Adobe recomienda aprovechar la IU [estándar, moderna y](/help/sites-developing/touch-ui-concepts.md) táctil basada en la IU [](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral y la IU [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
+>Adobe recomienda aprovechar la IU táctil estándar, moderna y [basada en [IU de Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) y [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).](/help/sites-developing/touch-ui-concepts.md)
 
 ## xtypes {#xtypes}
 
@@ -70,7 +70,7 @@ A continuación encontrará una lista de los xtype disponibles en Adobe Experien
 
    [CQ.wcm.msm.BlueprintConfig](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig)
 
-   BlueprintConfig proporciona un panel para la vista de las Live Copies de un modelo y la edición de estas propiedades de modelo (desencadenamiento de sincronización y acciones de sincronización).
+   BlueprintConfig proporciona un panel para la vista de las Live Copies de un modelo y la edición de estas propiedades de modelo ( sincronizar acciones de déclencheur y sincronización ).
 
 * blueprintstatus
 
@@ -146,7 +146,7 @@ A continuación encontrará una lista de los xtype disponibles en Adobe Experien
 
    [CQ.form.ClearableComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ClearableComboBox)
 
-   ClearableComboBox es un cuadro combinado no editable con un activador para borrar su valor.
+   ClearableComboBox es un cuadro combinado no editable con un déclencheur para borrar su valor.
 
 * colorfield
 
@@ -310,7 +310,7 @@ A continuación encontrará una lista de los xtype disponibles en Adobe Experien
 
    [CQ.Ext.data.DirectStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectStore)
 
-   Clase auxiliar pequeña para crear un [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) configurado con un [CQ.Ext.data.DirectProxy](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectProxy) y [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader) para interactuar con un [CQ.Ext.Direct](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Direct) servidor &lt;a4> a8/>Proveedor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.direct.Provider) más fácil.[
+   Clase auxiliar pequeña para crear un [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) configurado con un [CQ.Ext.data.DirectProxy](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectProxy) y [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader) para interactuar con un [CQ.Ext.Direct](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Direct) servidor [ a8/>Proveedor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.direct.Provider) más fácil.
 
 * displayfield
 
@@ -474,7 +474,7 @@ A continuación encontrará una lista de los xtype disponibles en Adobe Experien
 
    [CQ.wcm.msm.LiveCopyProperties](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties)
 
-   LiveCopyProperties proporciona un panel para la vista y edición de las propiedades de Live Copy (herencia de relaciones, desencadenado de sincronización y acciones de sincronización).
+   LiveCopyProperties proporciona un panel para la vista y edición de las propiedades de Live Copy (herencia de relaciones, sincronización de déclencheur y acciones de sincronización).
 
 * lvbooleancolumn
 
@@ -608,7 +608,7 @@ A continuación encontrará una lista de los xtype disponibles en Adobe Experien
 
    [CQ.form.ParagraphReference](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ParagraphReference)
 
-   El campo de referencia de párrafo permite examinar páginas y seleccionar uno de sus párrafos. Consiste en un campo desencadenador y un cuadro de diálogo de exploración de párrafo asociado.
+   El campo de referencia de párrafo permite examinar páginas y seleccionar uno de sus párrafos. Consiste en un campo de déclencheur y un cuadro de diálogo de exploración de párrafo asociado.
 
 * password
 
@@ -780,7 +780,7 @@ A continuación encontrará una lista de los xtype disponibles en Adobe Experien
 
    [CQ.form.Spinner](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Spinner)
 
-   El Giro es un campo desencadenador para valores numéricos, de fecha o de hora. El valor se puede aumentar y reducir mediante los activadores de dirección, la rueda de desplazamiento o las teclas proporcionados.
+   El Giro es un campo de déclencheur para valores numéricos, de fecha o de hora. El valor se puede aumentar y reducir utilizando los déclencheur arriba y abajo, la rueda de desplazamiento o las teclas proporcionados.
 
 * divitbutton
 
@@ -912,11 +912,11 @@ A continuación encontrará una lista de los xtype disponibles en Adobe Experien
 
    [Los ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreeNode)TreeNodes añadidos al TreePanel pueden contener cada uno de ellos metadatos utilizados por la aplicación en su propiedad  [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreeNode) attribute.
 
-* activar
+* déclencheur
 
    [CQ.Ext.form.TriggerField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField)
 
-   Proporciona un envoltorio práctico para TextFields que agrega un botón desencadenador en el que se puede hacer clic (de forma predeterminada, parece un cuadro combinado). El activador no tiene ninguna acción predeterminada, por lo que debe asignar una función para implementar el controlador de clics del desencadenador anulando [onTriggerClick](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField). Puede crear un TriggerField directamente, ya que se representa exactamente como un cuadro combinado.
+   Proporciona un envoltorio práctico para TextFields que agrega un botón de déclencheur en el que se puede hacer clic (se parece a un cuadro combinado de forma predeterminada). El déclencheur no tiene ninguna acción predeterminada, por lo que debe asignar una función para implementar el controlador de clics de déclencheur anulando [onTriggerClick](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField). Puede crear un TriggerField directamente, ya que se representa exactamente como un cuadro combinado.
 
 * upload addialog
 
