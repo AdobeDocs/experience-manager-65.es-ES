@@ -72,7 +72,7 @@ Por ejemplo:
 
 **Patrón** `^[^/]+/[^/]+/welcome$`
 
-activará el:
+déclencheur:
 
 **Reemplazo** `/libs/cq/core/content/welcome.html`.
 
