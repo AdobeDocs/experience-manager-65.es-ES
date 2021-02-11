@@ -77,7 +77,7 @@ Configuraciones de fábricaPermite crear una instancia del objeto de funcionalid
 
 Al seleccionar cualquier entrada de las listas se mostrarán los parámetros relacionados con esa configuración:
 
-![chlimage_1-21](assets/chlimage_1-21a.png)
+![chlimage_1-29](assets/chlimage_1-21a.png)
 
 A continuación, puede actualizar los parámetros según sea necesario y:
 
