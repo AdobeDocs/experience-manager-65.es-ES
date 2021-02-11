@@ -114,7 +114,7 @@ Para crear una superposición o sobrescritura, debe volver a crear el nodo origi
 
       A continuación, actualice la propiedad `jcr:title` según sea necesario.
 
-* Ignorar
+* Omitir
 
    * La definición del cuadro de diálogo táctil para la consola Textos se define en:
 
@@ -253,7 +253,7 @@ La fusión de recursos de Sling incluye dos proveedores de recursos personalizad
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
-* Anular:
+* Omitir:
 
    * propósito: combinar recursos en función de su supertipo
    * punto de montaje: `/mnt/overide`
@@ -271,7 +271,7 @@ Se describen algunos ejemplos:
    * [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md)
    * [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)
 
-* Anular:
+* Omitir:
 
    * [Configuración de las propiedades de la página](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
 
