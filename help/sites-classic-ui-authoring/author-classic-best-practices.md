@@ -38,7 +38,7 @@ Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
 
 ## Assets {#assets}
 
-Las prácticas recomendadas sobre los recursos, incluidas la capacidad Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
+Las prácticas recomendadas en torno a los recursos, incluidas la capacidad de Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
 
 <table>
  <tbody>
@@ -55,7 +55,7 @@ Las prácticas recomendadas sobre los recursos, incluidas la capacidad Dynamic M
   <tr>
    <td>Imágenes dinámicas</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Prácticas recomendadas de las imágenes dinámicas</a></td>
-   <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor manera de optimizar la calidad de las imágenes si utiliza la funcionalidad Dynamic Media o si se está integrando con Dynamic Media Classic. </p> </td>
+   <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor manera de optimizar la calidad de las imágenes si utiliza la funcionalidad de Dynamic Media o si se integra con Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Recursos multilingües</td>
