@@ -35,7 +35,7 @@ Adobe recomienda que consulte la [integración existente de AEM-Adobe Analytics]
 
 En AEM, los componentes **Llamada a acción** - **ClickThroughLink** y **GraphicalLink** - mostrados aquí en la barra de tareas, se pueden asignar a variables de Adobe Analytics.
 
-![chlimage_1-21](assets/chlimage_1-21a.jpeg)
+![chlimage_1-29](assets/chlimage_1-21a.jpeg)
 
 ### Asignación de componentes de Página de aterrizaje a Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
 
