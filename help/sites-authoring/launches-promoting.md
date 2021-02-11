@@ -131,7 +131,7 @@ Después de crear un lanzamiento anidado, puede promocionarlo a cualquiera de lo
       * **Promocionar página actual**
       * **Promocionar la página actual y sus páginas secundarias**
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-106](assets/chlimage_1-105.png)
 
 1. Seleccione **Siguiente**.
 1. Revise los detalles de la promoción antes de seleccionar **Promocionar**:
