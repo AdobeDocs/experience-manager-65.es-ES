@@ -353,7 +353,7 @@ function getName(){
 
 ### Creación de un detector para reaccionar ante una actualización del almacén de sesiones {#creating-a-listener-to-react-to-a-session-store-update}
 
-La sesión almacena eventos de activación, de modo que es posible agregar oyentes y activar eventos en función de estos eventos.
+La sesión almacena eventos de encendido, por lo que es posible agregar oyentes y eventos de déclencheur en función de estos eventos.
 
 Los almacenes de sesiones se crean según el patrón `Observable`. Se extienden [ `CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) que proporciona el método ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)`.
 
