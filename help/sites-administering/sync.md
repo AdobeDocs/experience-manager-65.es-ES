@@ -226,7 +226,7 @@ Verificar `Name`: `socialpubsync-reverse`
 
 ![](assets/screen-shot_2019-05-24at090809.png)
 
-### 6. Activador de distribución de Apache Sling - Fábrica de activadores programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### 6. Déclencheur de distribución de Apache Sling - Fábrica de Déclencheur programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(Opcional) modificar el intervalo de sondeo**
 
@@ -314,7 +314,7 @@ Lista predeterminada de los tipos de nodo que sincronizar:
    * nt:resource
 
 * ****
-Propiedades ignorablesEs la lista de propiedades que se omitirán si se detecta algún cambio. Los cambios realizados en estas propiedades pueden sincronizarse como un efecto secundario de otros cambios (ya que la sincronización siempre se encuentra en el nivel de nodo), pero los cambios realizados en estas propiedades no activarán la sincronización por sí mismos.
+Propiedades ignorablesEs la lista de propiedades que se omitirán si se detecta algún cambio. Los cambios realizados en estas propiedades pueden sincronizarse como un efecto secundario de otros cambios (ya que la sincronización siempre se encuentra en el nivel de nodo), pero los cambios realizados en estas propiedades no se traducirán por sí mismos en una sincronización de déclencheur.
 Propiedad predeterminada que se debe ignorar:
 
    * cq:lastModified
@@ -494,7 +494,7 @@ A continuación se presentan vistas de cómo deben aparecer las configuraciones 
 
 ![](assets/chlimage_1-33.png)
 
-#### (autor) Un activador de distribución de Apache Sling: Fábrica de activadores programados {#author-one-apache-sling-distribution-trigger-scheduled-triggers-factory}
+#### (autor) Un Déclencheur de distribución Apache Sling: Déclencheur programados Fábrica {#author-one-apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 ![](assets/chlimage_1-34.png)
 
