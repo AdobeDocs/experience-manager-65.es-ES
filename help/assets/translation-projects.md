@@ -3,29 +3,27 @@ title: Creación de proyectos de traducción
 description: Aprenda a crear proyectos de traducción en [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: 534a3d75ebb6a6d297354cce4840bdc1dfa25707
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 16%
+source-wordcount: '1878'
+ht-degree: 17%
 
 ---
 
 
 # Crear proyectos de traducción {#creating-translation-projects}
 
-Para crear una copia de idioma, active una de las siguientes flujos de trabajo de copia de idioma disponibles en el carril Referencias de la interfaz de usuario [!DNL Experience Manager].
+Para crear una copia de idioma, déclencheur uno de los siguientes flujos de trabajo de copia de idioma disponibles en el carril Referencias de la interfaz de usuario [!DNL Experience Manager].
 
 * **Crear y traducir**: En este flujo de trabajo, los recursos que se van a traducir se copian en la raíz de idioma del idioma al que se desea traducir. Además, según las opciones que elija, se creará un proyecto de traducción para los recursos en la consola Proyectos. Según la configuración, el proyecto de traducción puede iniciarse manualmente o puede ejecutarse automáticamente en cuanto se cree el proyecto de traducción.
 
 * **Actualizar copias** de idioma: Ejecute este flujo de trabajo para traducir un grupo adicional de recursos e incluirlo en una copia de idioma para una configuración regional concreta. En este caso, los recursos traducidos se agregan a la carpeta de destinatario que ya contiene recursos traducidos anteriormente.
 
->[!NOTE]
+>[!PREREQUISITES]
 >
->Los binarios de recursos se traducen únicamente si el proveedor de servicio de traducción admite la traducción de binarios.
+>* Los usuarios que crean proyectos de traducción son miembros del grupo `projects-administrators`.
+>* El proveedor de servicio de traducción admite la traducción de binarios.
 
->[!NOTE]
->
->Si se inicia un flujo de trabajo de traducción para recursos complejos, como archivos PDF y [!DNL Adobe InDesign], sus subrecursos o representaciones (si los hay) no se envían para su traducción.
 
 ## Crear y traducir flujo de trabajo {#create-and-translate-workflow}
 
@@ -40,17 +38,14 @@ El flujo de trabajo de creación y traducción se utiliza para generar copias de
 Utilice la opción **[!UICONTROL Crear solo estructura]** para diseñar una jerarquía de carpetas de destino dentro de la raíz del idioma de destino para que coincida con la jerarquía de la carpeta de origen dentro de la raíz del idioma de origen. En este caso, los recursos de origen se copian en la carpeta de destino. Sin embargo, no se genera ningún proyecto de traducción.
 
 1. En la interfaz [!DNL Assets], seleccione la carpeta de origen para la que desea crear una estructura en la raíz del lenguaje de destinatario.
+
 1. Abra el panel **[!UICONTROL Referencias]** y haga clic en **[!UICONTROL Copias de idioma]** en **[!UICONTROL Copias]**.
 
-   ![chlimage_1-57](assets/chlimage_1-57.png)
+   ![Copias de idioma](assets/translation-language-copies.png)
 
-1. Haga clic en **[!UICONTROL Crear y traducir]** en la parte inferior.
-
-1. En la lista **[!UICONTROL Idiomas de Destinatario]**, seleccione el idioma para el que desea crear una estructura de carpetas.
+1. Haga clic en **[!UICONTROL Crear y traducir]**. En la lista **[!UICONTROL Idiomas de Destinatario]**, seleccione el idioma para el que desea crear una estructura de carpetas.
 
 1. En la lista **[!UICONTROL Proyecto]**, seleccione **[!UICONTROL Crear estructura únicamente]**.
-
-   ![chlimage_1-60](assets/chlimage_1-60.png)
 
 1. Haga clic en **[!UICONTROL Crear]**. La nueva estructura del idioma de destinatario se muestra en **[!UICONTROL Copias de idioma]**.
 
@@ -109,7 +104,7 @@ Si utiliza esta opción, los recursos que se van a traducir se copian en la raí
 
    Para obtener más información sobre los estados de los trabajos, consulte [Monitoreo del estado de un trabajo de traducción](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Vaya a la interfaz de usuario [!DNL Assets] y abra la página Propiedades de cada uno de los recursos traducidos para vista de los metadatos traducidos.
+1. Vaya a la interfaz de usuario [!DNL Assets] y abra la página [!UICONTROL Propiedades] de cada uno de los recursos traducidos para vista de los metadatos traducidos.
 
    ![vista de los metadatos traducidos en la página Propiedades del recurso](assets/translated-metadata-asset-properties.png)
 
@@ -132,8 +127,6 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
 
 1. En la lista **[!UICONTROL Proyecto]**, seleccione **[!UICONTROL Agregar a proyecto de traducción]** existente para ejecutar el flujo de trabajo de traducción en la carpeta.
 
-   ![chlimage_1-77](assets/chlimage_1-77.png)
-
    >[!NOTE]
    >
    >Si elige la opción **[!UICONTROL Añadir a proyecto de traducción existente]**, el proyecto de traducción se agrega a un proyecto preexistente sólo si la configuración del proyecto coincide exactamente con la configuración del proyecto preexistente. De lo contrario, se crea un nuevo proyecto.
@@ -154,10 +147,6 @@ Si utiliza esta opción, el flujo de trabajo de traducción se ejecuta para los 
    >[!NOTE]
    >
    >Si elimina la entrada de etiquetas o metadatos, no se traducirá ninguna etiqueta o metadatos para ninguno de los recursos.
-
-   >[!NOTE]
-   >
-   >Si utiliza Traducción automática, los binarios de recursos no se traducen.
 
    >[!NOTE]
    >
@@ -197,8 +186,6 @@ Si utiliza esta opción, se crea un proyecto de traducción para el conjunto de 
 1. Haga clic en **[!UICONTROL Actualizar copias de idioma]** en la parte inferior.
 
 1. En la lista **[!UICONTROL Project]**, elija **[!UICONTROL Crear un nuevo proyecto de traducción]**.
-
-   ![chlimage_1-86](assets/chlimage_1-86.png)
 
 1. En el campo **[!UICONTROL Título del proyecto]**, introduzca un título.
 
@@ -279,7 +266,7 @@ Cuando se ejecuta un flujo de trabajo de traducción para actualizar una copia d
 
 1. Para realizar la vista de los metadatos traducidos, vaya a la consola [!DNL Assets] y abra la página [!UICONTROL Propiedades] de cada uno de los recursos traducidos.
 
->[!MORELIKETHIS]
->
->* [Sugerencias para traducir metadatos](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/) de forma eficaz.
+## Sugerencias y limitaciones {#tips-limitations}
 
+* Si se inicia un flujo de trabajo de traducción para recursos complejos, como archivos PDF y [!DNL Adobe InDesign], sus subrecursos o representaciones (si los hay) no se envían para su traducción.
+* Si utiliza la traducción automática, los binarios de recursos no se traducen.
