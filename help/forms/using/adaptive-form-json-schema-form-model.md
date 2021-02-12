@@ -1,34 +1,30 @@
 ---
-title: Creación de formularios adaptables con Esquema JSON
-seo-title: Creación de formularios adaptables con Esquema JSON
-description: Los formularios adaptables pueden utilizar el esquema JSON como modelo de formulario, lo que le permite aprovechar los esquemas JSON existentes para crear formularios adaptables.
-seo-description: Los formularios adaptables pueden utilizar el esquema JSON como modelo de formulario, lo que le permite aprovechar los esquemas JSON existentes para crear formularios adaptables.
-uuid: bdeaeae8-65a3-4c46-b27d-fe68481e31f1
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 375ba8fc-3152-4564-aec5-fcff2a95cf4c
-docset: aem65
+title: ¿Cómo crear un Forms adaptable mediante el Esquema JSON?
+description: Aprenda a crear formularios adaptables con el esquema JSON como modelo de formulario. Puede utilizar esquemas JSON existentes para crear formularios adaptables. Profundice con una muestra de un esquema JSON, preconfigure los campos en la definición de esquema JSON, limite los valores aceptables para un componente de formulario adaptable y aprenda construcciones no compatibles.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 37ab98c9c78af452887c32101287b6d7f18d9d91
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 5%
+source-wordcount: '1448'
+ht-degree: 6%
 
 ---
 
 
-# Creación de formularios adaptables con Esquema JSON{#creating-adaptive-forms-using-json-schema}
+# Creación de formularios adaptables mediante el Esquema JSON {#creating-adaptive-forms-using-json-schema}
 
 ## Requisitos previos {#prerequisites}
 
 La creación de un formulario adaptable con un Esquema JSON como modelo de formulario requiere una comprensión básica del Esquema JSON. Se recomienda leer el siguiente contenido antes de este artículo.
 
-* [Creación de un formulario adaptable](../../forms/using/creating-adaptive-form.md)
+* [Creación de un formulario adaptable](creating-adaptive-form.md)
 * [Esquema JSON](https://json-schema.org/)
 
 ## Uso de un Esquema JSON como modelo de formulario {#using-a-json-schema-as-form-model}
 
-AEM Forms admite la creación de un formulario adaptable utilizando un Esquema JSON existente como modelo de formulario. Este Esquema JSON representa la estructura en la que el sistema back-end de su organización produce o consume datos. El Esquema JSON que utilice debe cumplir con [especificaciones v4](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms] admite la creación de un formulario adaptable utilizando un Esquema JSON existente como modelo de formulario. Este Esquema JSON representa la estructura en la que el sistema back-end de su organización produce o consume datos. El Esquema JSON que utilice debe cumplir con [especificaciones v4](https://json-schema.org/draft-04/schema).
 
 Las características clave del uso de un Esquema JSON son:
 
@@ -82,7 +78,7 @@ Esta asignación de elementos JSON con componentes de formulario adaptables es l
     </ul> </td>
   </tr>
   <tr>
-   <td><p>{</p> <p>"type" : "string",</p> <p>}</p> </td>
+   <td><p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>}</code></p> </td>
    <td><br /> <br /> Campo de texto<br /> <br /> <br /> </td>
   </tr>
   <tr>
@@ -112,16 +108,16 @@ Esta asignación de elementos JSON con componentes de formulario adaptables es l
 
 El formulario adaptable utiliza la información disponible en el Esquema JSON para asignar cada campo generado. En particular:
 
-* La propiedad title sirve como etiqueta para los componentes del formulario adaptable.
-* La propiedad description se define como una descripción larga para un componente de formulario adaptable.
-* La propiedad predeterminada sirve como valor inicial de un campo de formulario adaptable.
-* La propiedad maxLength se establece como el atributo maxlength del componente de campo de texto.
-* Para el componente de cuadro numérico se utilizan las propiedades Minimum, Maximum, uniqueMinimum y uniqueMaximum como mínimo.
-* Para admitir el intervalo para el componente DatePicker, se proporcionan las propiedades de Esquema JSON minDate y maxDate adicionales.
-* Las propiedades minItems y maxItems se utilizan para restringir el número de elementos/campos que se pueden agregar o quitar de un componente de panel.
-* La propiedad readOnly establece el atributo de sólo lectura de un componente de formulario adaptable.
-* La propiedad required marca el campo de formulario adaptable como obligatorio, mientras que en el caso de panel (donde type es object), los datos JSON enviados por última vez tienen campos con el valor vacío correspondiente a ese objeto.
-* La propiedad pattern se define como el patrón de validación (expresión regular) en forma adaptable.
+* La propiedad `title` sirve como etiqueta para los componentes del formulario adaptable.
+* La propiedad `description` se establece como descripción larga para un componente de formulario adaptable.
+* La propiedad `default` sirve como valor inicial de un campo de formulario adaptable.
+* La propiedad `maxLength` se establece como atributo `maxlength` del componente de campo de texto.
+* Las propiedades `minimum`, `maximum`, `exclusiveMinimum` y `exclusiveMaximum` se utilizan para el componente de cuadro numérico.
+* Para admitir el intervalo para `DatePicker component` propiedades de Esquema JSON adicionales `minDate` y `maxDate` se proporcionan.
+* Las propiedades `minItems` y `maxItems` se utilizan para restringir el número de elementos/campos que se pueden agregar o quitar de un componente de panel.
+* La propiedad `readOnly` establece el atributo `readonly` de un componente de formulario adaptable.
+* La propiedad `required` marca el campo de formulario adaptable como obligatorio, mientras que en panel (donde type es object), los datos JSON enviados por última vez tienen campos con un valor vacío correspondiente a ese objeto.
+* La propiedad `pattern` se establece como patrón de validación (expresión regular) en formato adaptable.
 * La extensión del archivo Esquema JSON debe conservarse como .esquema.json. Por ejemplo, &lt;filename>.esquema.json.
 
 ## Esquema JSON de muestra {#sample-json-schema}
@@ -361,7 +357,7 @@ Puede utilizar la propiedad **aem:afProperties** para preconfigurar el campo de 
 
 ## Configurar secuencias de comandos o expresiones para objetos de formulario {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de secuencias de comandos de formularios adaptables. Puede preconfigurar objetos de formulario para [evaluar una expresión](../../forms/using/adaptive-form-expressions.md) en un evento de formulario.
+JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de secuencias de comandos de formularios adaptables. Puede preconfigurar objetos de formulario para [evaluar una expresión](adaptive-form-expressions.md) en un evento de formulario.
 
 Utilice la propiedad aem:afproperties para preconfigurar expresiones de formularios adaptables o secuencias de comandos para componentes de formularios adaptables. Por ejemplo, cuando se activa el evento initialize, el código siguiente establece el valor del campo telefónico e imprime un valor en el registro:
 
@@ -381,7 +377,7 @@ Utilice la propiedad aem:afproperties para preconfigurar expresiones de formular
 }
 ```
 
-Debe ser miembro del grupo [form-power-user](/help/forms/using/forms-groups-privileges-tasks.md) para configurar secuencias de comandos o expresiones para objetos de formulario. La tabla siguiente lista todos los eventos de secuencia de comandos admitidos para un componente de formulario adaptable.
+Debe ser miembro del grupo [form-power-user](forms-groups-privileges-tasks.md) para configurar secuencias de comandos o expresiones para objetos de formulario. La tabla siguiente lista todos los eventos de secuencia de comandos admitidos para un componente de formulario adaptable.
 
 <table>
  <tbody>
@@ -485,7 +481,7 @@ Debe ser miembro del grupo [form-power-user](/help/forms/using/forms-groups-priv
    <td><img alt="" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
-   <td>Desplegable</td>
+   <td>Lista desplegable</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -586,9 +582,9 @@ Debe ser miembro del grupo [form-power-user](/help/forms/using/forms-groups-priv
  </tbody>
 </table>
 
-Algunos ejemplos de uso de eventos en un JSON están ocultando un campo en el evento de inicialización y configurando el valor de otro campo en el evento de confirmación de valor. Para obtener información detallada sobre la creación de expresiones para los eventos de secuencias de comandos, consulte [Expresiones de formularios adaptables](../../forms/using/adaptive-form-expressions.md).
+Algunos ejemplos de uso de eventos en un JSON están ocultando un campo en el evento de inicialización y configurando el valor de otro campo en el evento de confirmación de valor. Para obtener información detallada sobre la creación de expresiones para los eventos de secuencias de comandos, consulte [Expresiones de formularios adaptables](adaptive-form-expressions.md).
 
-Este es el código JSON de muestra para los ejemplos mencionados.
+Este es el código JSON de muestra para los ejemplos mencionados anteriormente.
 
 ### Ocultar un campo en el evento de inicialización {#hiding-a-field-on-initialize-event}
 
@@ -711,13 +707,13 @@ Puede agregar las siguientes restricciones a los elementos de Esquema JSON para 
     </ul> </td>
   </tr>
   <tr>
-   <td>maxItems</td>
+   <td><code>maxItems</code></td>
    <td>Cadena</td>
    <td>Especifica el número máximo de elementos de una matriz. Los elementos máximos deben ser iguales o buenos a cero.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>minItems</td>
+   <td><code>minItems</code></td>
    <td>Cadena</td>
    <td>Especifica el número mínimo de elementos de una matriz. Los elementos mínimos deben ser iguales o buenos a cero.</td>
    <td> </td>
