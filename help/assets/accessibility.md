@@ -3,7 +3,7 @@ title: Accesibilidad en [!DNL Experience Manager Assets]
 description: Obtenga información sobre cómo las funciones de accesibilidad de [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] ayudan a los usuarios con discapacidades.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
+source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 2%
@@ -65,13 +65,13 @@ Las funciones principales de [!DNL Assets] son más accesibles que antes y se ac
 
 ## Compatibilidad con el uso del teclado {#keyboard-use}
 
-Muchos elementos de la interfaz de usuario en los que se puede hacer clic o en los que se puede realizar una acción con un puntero también se pueden utilizar con el teclado. Con un teclado, los usuarios pueden centrarse en los elementos de la interfaz de usuario y realizar una acción adecuada. Los usuarios pueden utilizar directamente los métodos abreviados de teclado para activar un comando o una acción sin tener que centrarse en los elementos de la interfaz de usuario y activarlos con el teclado. Por ejemplo, los usuarios pueden abrir la línea de tiempo de un recurso en la parte izquierda de la interfaz de usuario navegando hasta el control de la interfaz de usuario mediante un teclado, seleccionando `Return` y seleccionando `Alt + 2` método abreviado de teclado.
+Muchos elementos de la interfaz de usuario en los que se puede hacer clic o en los que se puede realizar una acción con un puntero también se pueden utilizar con el teclado. Con un teclado, los usuarios pueden centrarse en los elementos de la interfaz de usuario y realizar una acción adecuada. Los usuarios pueden utilizar directamente los métodos abreviados de teclado para déclencheur de un comando o una acción sin tener que centrarse en los elementos de la interfaz de usuario y realizar el déclencheur mediante el teclado. Por ejemplo, los usuarios pueden abrir la línea de tiempo de un recurso en la parte izquierda de la interfaz de usuario navegando hasta el control de la interfaz de usuario mediante un teclado, seleccionando `Return` y seleccionando `Alt + 2` método abreviado de teclado.
 
 <!-- TBD items:
 
-* The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
+* The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
 * How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’. What about setting preferences and impersonating a user?
-* Using the [!DNL Experience Manager] tag browser and operating the buttons like delete tag? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
+* Using the [!DNL Experience Manager] tag browser and operating the options like delete tag? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
 * Read-only form fields can be focused with the keyboard. Can users tab to these fields to understand the contents and are they able to copy text from the fields?
 -->
 
@@ -130,7 +130,7 @@ In [!DNL Experience Manager] header section, when navigating in browse mode, scr
   * The Searching Help status message that is displayed when user enters a search string in Search for Help field under Help option
   * The error message if incorrect value is entered in Impersonate as field under User option and focus correctly moves to the text field (NPR-33804).
 
-Review CQ-4282133 before adding - Close button in a coral-dialog wasn't accessible through keyboard, due to which user cannot trigger close button through keyboard press in version preview dialog. After fix, user can close dialog through close button using keyboard.
+Review CQ-4282133 before adding - Close option in a coral-dialog wasn't accessible through keyboard, due to which user cannot trigger close option through keyboard press in version preview dialog. After fix, user can close dialog through close option using keyboard.
 
 * CQ-4273122 - Assets of video/audio type will have aria-label in format "Multimedia player: <Title>" so users relying on screen-reader will get to know that they are video/audio assets.
 -->
@@ -174,7 +174,7 @@ Para las operaciones de metadatos que normalmente realizan funciones como los es
 
 ## Buscar recursos digitales {#search-assets}
 
-Una experiencia de búsqueda de recursos rápida y fluida aumenta la velocidad de contenido. Los casos de uso de velocidad de contenido forman parte de la funcionalidad principal [!DNL Assets]. Para inicio de una búsqueda desde la barra de Omniture, los usuarios pueden utilizar el método abreviado de teclado `/` o `Tab` junto con los lectores de pantalla para localizar rápidamente la opción de búsqueda. El lector de pantalla narra el nombre de la opción como &quot;Botón de búsqueda&quot; cuando el enfoque está en la opción de búsqueda ![opción de búsqueda](assets/do-not-localize/search_icon.png). Los usuarios pueden seleccionar `Return` para abrir el cuadro Omnisearch. El lector de pantalla no sólo narra la palabra clave escrita en el cuadro de búsqueda, sino que también narra las sugerencias ofrecidas por [!DNL Experience Manager Assets]. Los usuarios pueden utilizar una combinación de teclas de flecha, `Return` y `Tab` para acceder a las distintas opciones y activar una búsqueda.
+Una experiencia de búsqueda de recursos rápida y fluida aumenta la velocidad de contenido. Los casos de uso de velocidad de contenido forman parte de la funcionalidad principal [!DNL Assets]. Para inicio de una búsqueda desde la barra de Omniture, los usuarios pueden utilizar el método abreviado de teclado `/` o `Tab` junto con los lectores de pantalla para localizar rápidamente la opción de búsqueda. El lector de pantalla narra el nombre de la opción como &quot;Botón de búsqueda&quot; cuando el enfoque está en la opción de búsqueda ![opción de búsqueda](assets/do-not-localize/search_icon.png). Los usuarios pueden seleccionar `Return` para abrir el cuadro Omnisearch. El lector de pantalla no sólo narra la palabra clave escrita en el cuadro de búsqueda, sino que también narra las sugerencias ofrecidas por [!DNL Experience Manager Assets]. Los usuarios pueden utilizar una combinación de teclas de flecha, `Return` y `Tab` para acceder a las distintas opciones de déclencheur de una búsqueda.
 
 La funcionalidad de búsqueda se hace accesible mediante la siguiente funcionalidad:
 
