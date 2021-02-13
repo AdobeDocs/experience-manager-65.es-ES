@@ -3,9 +3,9 @@ title: Crear y configurar páginas del editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del editor de recursos y editar varios recursos simultáneamente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2125'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ La administración de activos digitales se utiliza en cada vez más escenarios. 
 
 Estas aplicaciones centradas en los recursos pueden ser simples galerías de fotos en una intranet donde los empleados pueden cargar fotos de las visitas a los espectáculos comerciales o de un centro de prensa en un sitio web público. Las aplicaciones centradas en los recursos también pueden extenderse a soluciones completas, incluidos carros de compras, cierres de compra y procesos de verificación.
 
-La creación de una aplicación centrada en los recursos se convierte en gran medida en un proceso de configuración que no requiere codificación, solo conocimiento de los grupos de usuarios y sus necesidades, así como conocimiento de los metadatos que se utilizan. Las aplicaciones centradas en recursos creadas con [!DNL Assets] son extensibles: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
+La creación de una aplicación centrada en los recursos se convierte en gran medida en un proceso de configuración que no requiere codificación, solo el conocimiento de los grupos de usuarios y sus necesidades, así como el conocimiento de los metadatos que se utilizan. Las aplicaciones centradas en recursos creadas con [!DNL Assets] son extensibles: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
 
 Una aplicación centrada en recursos en [!DNL Experience Manager] consiste en una página del editor de recursos, que puede utilizarse para obtener una vista detallada de un recurso específico. La página Editor de recursos también permite editar metadatos, siempre que el usuario que accede al recurso tenga los permisos necesarios.
 
@@ -268,7 +268,7 @@ El formulario de metadatos es un formulario que incluye un inicio y una acción 
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Cree una acción de finalización haciendo clic en **Editar** en el área Final del formulario. Por ejemplo, es posible que desee crear un botón **Enviar** para permitir que los usuarios envíen sus cambios en los metadatos. Opcionalmente, puede agregar un botón **Restaurar** que restablezca los metadatos en su estado original.
+1. Cree una acción de finalización haciendo clic en **Editar** en el área Final del formulario. Por ejemplo, es posible que desee crear una opción **[!UICONTROL Enviar]** para permitir que los usuarios envíen sus cambios en los metadatos. Opcionalmente, puede agregar una opción **Restaurar** que restablezca los metadatos en su estado original.
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
@@ -381,7 +381,7 @@ Están disponibles las siguientes acciones:
 | [!UICONTROL Referencias] | Haga clic aquí para mostrar en qué páginas   se está utilizando el recurso. |
 | [!UICONTROL Versiones] | Permite crear y restaurar   versiones de un recurso. |
 
-1. Arrastre la acción adecuada al área **Acciones** de la página. Al hacerlo, se crea un botón que se utiliza para ejecutar esa acción.
+1. Arrastre la acción adecuada al área **Acciones** de la página. Crea una opción que se utiliza para ejecutar la acción que se arrastra a la página.
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
