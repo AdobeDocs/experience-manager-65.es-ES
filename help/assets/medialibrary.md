@@ -3,7 +3,7 @@ title: Comparar [!DNL Assets] y ofertas de la biblioteca de medios
 description: Compare [!DNL Experience Manager Assets] y las funciones de la biblioteca de medios y conozca las diferencias.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ca54c880cbda2a573d6c1229900fd80082c5f5aa
+source-git-commit: 82c2df0e53e8ef595ad158ef46089d6e4964ca26
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
@@ -106,5 +106,6 @@ En este caso de uso no es necesario comprar [!DNL Assets], ni siquiera es necesa
 
 >[!MORELIKETHIS]
 >
->*[[!DNL Experience Manager] 6.5 Descripción del producto de Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->*[[!DNL Experience Manager] 6.5 descripción del producto local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>* [[!DNL Experience Manager] 6.5 Descripción del producto de Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager] 6.5 Descripción del producto in situ](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+
