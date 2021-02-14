@@ -3,10 +3,10 @@ title: Etiquetas inteligentes mejoradas
 description: Etiquetas inteligentes mejoradas
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 09bb767ae8565624e7a6b9786a5cd4c581fe0b9a
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 2%
+source-wordcount: '1610'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,7 @@ Una vez preparada y preparada la etiqueta, el servicio ahora puede aplicarla a l
 
 En segundo plano, Smart Content Service utiliza el marco de trabajo de Adobe Sensei AI para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. Esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes a un conjunto diferente de recursos.
 
-Smart Content Service es un servicio en la nube alojado en [!DNL Adobe I/O]. Para utilizarlo en [!DNL Adobe Experience Manager], el administrador del sistema debe integrar su implementación [!DNL Experience Manager] con [!DNL Adobe I/O].
+Smart Content Service es un servicio en la nube alojado en [!DNL Adobe Developer Console]. Para utilizarlo en [!DNL Adobe Experience Manager], el administrador del sistema debe integrar su implementación [!DNL Experience Manager] con [!DNL Adobe Developer Console].
 
 En resumen, estos son los pasos principales para utilizar el servicio de contenido inteligente:
 
@@ -36,13 +36,40 @@ En resumen, estos son los pasos principales para utilizar el servicio de conteni
 
 ![Diagrama de flujo](assets/flowchart.gif)
 
-## Requisitos previos {#prerequisites}
+## Requisitos previos y formatos admitidos {#prerequisites}
 
-Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en [!DNL Adobe I/O]:
+Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en [!DNL Adobe Developer Console]:
 
 * Cuenta de Adobe ID que tiene privilegios de administrador para la organización.
 * El servicio de Smart Content Service está habilitado para su organización.
 * El paquete base de servicios de contenido inteligente solo se puede agregar a una implementación en la que se hayan otorgado licencias para un paquete base [!DNL Adobe Experience Manager Sites] y un complemento [!DNL Assets].
+
+Las etiquetas inteligentes solo se aplican a recursos con los siguientes tipos MIME:
+
+* image/jpeg
+* image/tiff
+* image/png
+* image/bmp
+* image/gif
+* image/pjpeg
+* image/x-portable-anymap
+* image/x-portable-bitmap
+* image/x-portable-graymap
+* image/x-portable-pixmap
+* image/x-rgb
+* image/x-xbitmap
+* image/x-xpixmap
+* image/x-icon
+* image/photoshop
+* image/x-photoshop
+* image/psd
+* image/vnd.adobe.photoshop
+
+Solo se admite el etiquetado inteligente de representaciones de recursos para los siguientes tipos MIME:
+
+* image/jpeg
+* image/pjpeg
+* image/png
 
 ## Incorporación {#onboarding}
 
@@ -162,3 +189,4 @@ También puede asignar una clasificación superior a una etiqueta para aumentar 
 
 * El uso de Smart Content Services está limitado a hasta 2 millones de imágenes etiquetadas por año. Todas las imágenes de duplicado procesadas y etiquetadas se cuentan como imágenes etiquetadas.
 * Si ejecuta el flujo de trabajo de etiquetado desde la línea de tiempo, puede aplicar etiquetas a un máximo de 15 recursos a la vez.
+* Las etiquetas inteligentes solo funcionan con los formatos de imagen PNG y JPG. Por lo tanto, los recursos admitidos que tienen representaciones creadas en estos dos formatos se etiquetan con etiquetas inteligentes.
