@@ -109,7 +109,7 @@ Para obtener los metadatos específicos de Apple, primero debe crear la aplicaci
 
 El archivo zip descargado contiene un archivo itmsp que puede inspeccionarse para buscar el archivo metadata.xml. El archivo itmsp contiene los metadatos exportados (dentro del archivo metadata.xml), junto con todas las capturas de pantalla asociadas.
 
-La funcionalidad de exportación se utiliza para proporcionar una manera conveniente de recopilar las capturas de pantalla y los metadatos que se pueden pasar al editor de la aplicación para su entrada en el almacén de aplicaciones específico del proveedor.
+La funcionalidad de exportación se utiliza para proporcionar una manera conveniente de recopilar las capturas de pantalla y los metadatos que pueden pasarse al editor de la aplicación para su entrada en el almacén de aplicaciones específico del proveedor.
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -117,7 +117,7 @@ La funcionalidad de exportación se utiliza para proporcionar una manera conveni
 
 Al seleccionar la plataforma de Android, no hay metadatos personalizados que se puedan definir en este punto. Al hacer clic en el botón de descarga como archivo zip, se generará con un archivo de propiedades que contiene todos los metadatos y las capturas de pantalla asociadas.
 
-La funcionalidad de exportación se utiliza para proporcionar una manera conveniente de recopilar las capturas de pantalla y los metadatos que se pueden pasar al editor de la aplicación para su entrada en el almacén de aplicaciones específico del proveedor.
+La funcionalidad de exportación se utiliza para proporcionar una manera conveniente de recopilar las capturas de pantalla y los metadatos que pueden pasarse al editor de la aplicación para su entrada en el almacén de aplicaciones específico del proveedor.
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 
