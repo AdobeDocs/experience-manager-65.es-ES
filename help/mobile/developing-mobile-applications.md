@@ -43,7 +43,7 @@ AEM se integra con el Adobe **[servicio de PhoneGap Build](https://build.phonega
 
 Los desarrolladores pueden utilizar el [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) junto con los recursos adicionales que se encuentran en [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) para arrancar aplicaciones de AEM con PhoneGap, incluida una aplicación nativa de referencia que ejecute Cordova Webviews.
 
-El archivo léame del repositorio de Starter Kit Git incluye un tutorial para el uso del kit de arranque:
+El archivo léame del repositorio de Starter Kit Git incluye un tutorial para utilizar el kit de arranque:
 
 * Personalización de la marca
 * Destinatarios de implementación y compilación de muestra de Maven
@@ -74,7 +74,7 @@ Los desarrolladores de IOS deben tener en cuenta un problema abierto con las apl
 
 >[!NOTE]
 >
->Para obtener más información sobre &quot;Seguridad del transporte de aplicaciones&quot;, consulte la siguiente sección de [documentos de evaluación de iOS9 de Apple](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) y este [análisis del desbordamiento de la pila](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
+>Para obtener más información sobre &quot;App Transport Security&quot;, consulte la siguiente sección de [documentos de evaluación de iOS9 de Apple](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) y este [análisis de desbordamiento de pila](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
 ## Desarrollo de aplicaciones móviles en AEM {#developing-mobile-applications-in-aem-1}
 
