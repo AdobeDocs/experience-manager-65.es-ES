@@ -402,9 +402,9 @@ Como ejemplo, supongamos que el vídeo de origen es de 1920 x 1080. En la tabla 
 
 | Tipo de vídeo | Anchura x Altura | Proporción de anchura | Proporción de altura |
 |--- |--- |--- |--- |
-| Origen | 1920x1080 | 1 | 3 |
+| Origen | 1920x1080 | 1 | 1 |
 | Codificado | 960 x 540 | 2 | 2 |
-| Codificado | 640 x 360 | 3 | 1 |
+| Codificado | 640 x 360 | 3 | 3 |
 | Codificado | 480 x 270 | 4 | 4 |
 
 ### Formato de archivo de vídeo codificado {#encoded-video-file-format}
@@ -1125,7 +1125,7 @@ Consulte [Servicio de contenido estático (no de imagen)](https://experienceleag
 
 ## Añadir marcadores de capítulo a vídeo {#adding-chapter-markers-to-video}
 
-Puede facilitar la visualización y navegación de los vídeos de formato largo agregando marcadores de capítulo a vídeos únicos o a conjuntos de vídeos adaptables. Cuando un usuario reproduce el vídeo, puede hacer clic en los marcadores de capítulo en la línea de tiempo del vídeo (también conocida como la barra de desplazamiento del vídeo) para desplazarse fácilmente a su punto de interés o para acceder inmediatamente a nuevo contenido, demostraciones, tutoriales, etc.
+Puede facilitar la visualización y navegación de los vídeos de formato largo agregando marcadores de capítulo a vídeos únicos o a conjuntos de vídeos adaptables. Cuando un usuario reproduce el vídeo, puede hacer clic en los marcadores de capítulo en la línea de tiempo del vídeo (también conocida como la barra de desplazamiento de vídeo) para desplazarse fácilmente a su punto de interés o para acceder inmediatamente a nuevo contenido, demostraciones, tutoriales, etc.
 
 >[!NOTE]
 >
@@ -1319,7 +1319,7 @@ Estos pasos solo se aplican a Dynamic Media que se ejecuta en modo híbrido.
 T **para agregar una miniatura de vídeo personalizada**,
 
 1. Vaya a un recurso de vídeo cargado que desee agregar a una miniatura de vídeo personalizada.
-1. En el modo de selección de recursos, ya sea desde la Vista de Lista o desde la Vista de tarjetas, toque el recurso de vídeo.
+1. En el modo de selección de recursos, ya sea desde la Vista de Lista o desde la Vista de tarjeta, toque el recurso de vídeo.
 1. En la barra de herramientas, toque el icono **[!UICONTROL Propiedades de la Vista]** (un círculo con una &quot;i&quot;).
 1. En la página Propiedades del vídeo, toque **[!UICONTROL Cambiar miniatura.]**
 1. En la página Cambiar miniatura, en la barra de herramientas, toque **[!UICONTROL Cargar nueva miniatura.]**
