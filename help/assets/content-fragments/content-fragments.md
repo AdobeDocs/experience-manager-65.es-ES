@@ -128,7 +128,7 @@ Los fragmentos de contenido son una estructura de contenido que:
 * Puede [contener o estar conectado a imágenes](#fragments-with-visual-assets).
 * Puede utilizar [contenido intermedio](#in-between-content-when-page-authoring-with-content-fragments) cuando se hace referencia a él en una página.
 
-* Son independientes del mecanismo de envío (p. ej. página, canal).
+* Son independientes del mecanismo de envío (es decir, página, canal).
 
 ### Fragmentos con recursos visuales {#fragments-with-visual-assets}
 
