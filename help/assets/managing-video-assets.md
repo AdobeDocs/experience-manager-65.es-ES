@@ -57,13 +57,13 @@ Para configurar un límite de tamaño de archivo mayor, realice los siguientes p
 1. En la barra de herramientas, haga clic en **[!UICONTROL Guardar todo]**.
 1. En [!DNL Experience Manager], haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola Web]**.
 1. En la página [!DNL Adobe Experience Manager] [!UICONTROL Web Console Bundles], en la columna Nombre de la tabla, localice y haga clic en **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
-1. En la página [!UICONTROL Controlador de trabajo de proceso externo de granito de Adobe], establezca los segundos para los campos **[!UICONTROL Tiempo de espera predeterminado]** y **[!UICONTROL Tiempo de espera máximo]** en `18000` (cinco horas). Haga clic en **[!UICONTROL Guardar]**.
+1. En la página [!UICONTROL Controlador de trabajo de proceso externo de Adobe Granite Workflow], establezca los segundos para los campos **[!UICONTROL Tiempo de espera predeterminado]** y **[!UICONTROL Tiempo de espera máximo]** en `18000` (cinco horas). Haga clic en **[!UICONTROL Guardar]**.
 1. En [!DNL Experience Manager], haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
-1. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Vídeo de codificación de Dynamic Media]** y haga clic en **[!UICONTROL Editar]**.
+1. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Dynamic Media Encode Video]** y haga clic en **[!UICONTROL Editar]**.
 1. En la página de flujo de trabajo, haga clic con el doble en el componente **[!UICONTROL Proceso del servicio de vídeo de Dynamic Media]**.
 1. En el cuadro de diálogo [!UICONTROL Propiedades del paso], en la pestaña **[!UICONTROL Común]**, expanda **Configuración avanzada**.
-1. En el campo **[!UICONTROL Tiempo de espera]**, especifique un valor de `18000` y haga clic en **[!UICONTROL Aceptar]** para volver a la página de flujo de trabajo **[!UICONTROL Vídeo de codificación de Dynamic Media]**.
-1. Cerca de la parte superior de la página, debajo del título de la página [!UICONTROL Codificación de vídeo de Dynamic Media], haga clic en **[!UICONTROL Guardar]**.
+1. En el campo **[!UICONTROL Tiempo de espera]**, especifique un valor de `18000` y haga clic en **[!UICONTROL Aceptar]** para volver a la página de flujo de trabajo **[!UICONTROL Dynamic Media Encode Video]**.
+1. Cerca de la parte superior de la página, debajo del título de la página [!UICONTROL Dynamic Media Encode Video], haga clic en **[!UICONTROL Guardar]**.
 
 ## Publicación de recursos de vídeo {#publish-video-assets}
 
