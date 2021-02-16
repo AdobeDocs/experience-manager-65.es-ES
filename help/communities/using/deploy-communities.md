@@ -129,7 +129,7 @@ Los pasos necesarios son:
 1. Si realiza la instalación en una implementación existente después de haber configurado JDBC, vuelva a conectar JDBC al nuevo conector al volver a guardar la configuración JDBC desde la consola web:
 
    * Por ejemplo, https://localhost:4502/system/console/configMgr
-   * Localice la configuración `Day Commons JDBC Connections Pool` y seleccione para abrir la configuración.
+   * Busque la configuración `Day Commons JDBC Connections Pool` y seleccione para abrir la configuración.
    * Seleccione `Save`.
 
 1. Repita los pasos 3 y 4 en todas las instancias de creación y publicación.
@@ -335,7 +335,7 @@ por ejemplo,
 
 #### Replicación del repositorio {#repository-replication}
 
-El hecho de tener el material clave almacenado en el repositorio, como ocurrió con AEM 6.2 y versiones anteriores, se puede conservar especificando la siguiente propiedad del sistema en el primer inicio de cada instancia de AEM (que crea el repositorio inicial):
+El hecho de tener el material clave almacenado en el repositorio, como ocurrió con AEM 6.2 y anteriores, se puede conservar especificando la siguiente propiedad del sistema en el primer inicio de cada instancia de AEM (que crea el repositorio inicial):
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
