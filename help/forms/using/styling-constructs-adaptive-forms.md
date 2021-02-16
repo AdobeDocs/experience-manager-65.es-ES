@@ -831,7 +831,7 @@ La clase guideNavIcon proporciona un icono predeterminado para los navegadores d
   </tr>
   <tr>
    <td><p><code>wizard-tabs-active-font-color</code></p> </td>
-   <td><p>Color de fuente cuando el panel está enfocado (enfocado)</p> </td>
+   <td><p>Color de fuente cuando el panel está enfocado (centrado)</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-completed-bg-color</code></p> </td>
