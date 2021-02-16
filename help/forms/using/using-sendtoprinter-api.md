@@ -64,7 +64,7 @@ La tabla siguiente listas:
 
 ## Compatibilidad con autenticación {#authentication-support}
 
-La autenticación solo se admite para la impresión CIFS. Para autenticar, proporcione el nombre de usuario/contraseña/dominio en PrinterSpec. Puede cifrar una contraseña con AEM servicio de asistencia técnica personalizada Granite siguiendo estos pasos:
+La autenticación solo se admite para la impresión CIFS. Para autenticar, proporcione el nombre de usuario/contraseña/dominio en PrinterSpec. Puede cifrar una contraseña mediante AEM servicio de asistencia técnica personalizada Granite siguiendo estos pasos:
 
 1. Vaya a https://&lt;server>:&lt;port>/system/console.
 
