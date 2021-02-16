@@ -177,7 +177,7 @@ Al pasar el ratón por encima de una tarjeta de comentarios se muestran las acci
 
 Existen dos formas de acceder al sistema de informes de los alumnos y a los recursos de activación.
 
-En el autor, navegue a la **Consola de [Recursos](resources.md)**, donde se administran los recursos de habilitación, y después de seleccionar un sitio de comunidad, se pueden generar informes para
+En el autor, navegue a la **consola de [Recursos](resources.md)**, donde se administran los recursos de habilitación, y después de seleccionar un sitio de comunidad, se podrán generar informes para
 
 * Todos los recursos de habilitación y rutas de aprendizaje
 * Un recurso de habilitación específico o una ruta de aprendizaje
