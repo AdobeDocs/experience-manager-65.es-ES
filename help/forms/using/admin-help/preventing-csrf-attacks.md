@@ -36,7 +36,7 @@ Por ejemplo, considere un escenario en el que haya iniciado sesión en la consol
 
 * solicitudes realizadas en puntos finales SOAP o REST desde Acrobat
 * cualquier cliente de escritorio que realice una solicitud HTTP en un extremo SOAP o REST de formularios AEM
-* cuando se abre una nueva ventana del explorador y se introduce la dirección URL de cualquier página de inicio de sesión de la aplicación Web de formularios AEM
+* cuando se abre una nueva ventana del explorador y se introduce la dirección URL de cualquier página de inicio de sesión de la aplicación web de formularios AEM
 
 Permitir un referente nulo en los extremos SOAP y REST. También permita un referente nulo en todas las páginas de inicio de sesión de URI como /adminui y /contentspace y sus correspondientes recursos asignados. Por ejemplo, el servlet asignado para /contentspace es /contentspace/faces/jsp/login.jsp, que debe ser una excepción de referente nulo. Esta excepción solo es necesaria si se activa el filtrado de GET para la aplicación web. Las aplicaciones pueden especificar si se permiten referentes nulos. Consulte &quot;Protección contra los ataques de falsificación de solicitudes entre sitios&quot; en [Endurecimiento y seguridad para formularios AEM](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
