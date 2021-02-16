@@ -185,7 +185,7 @@ Los administradores o los moderadores de la comunidad pueden realizar la acción
 
 Marcar es un medio para que cualquier miembro que haya iniciado sesión, excepto el creador del contenido, indique que hay un problema con el contenido de una publicación. Una vez marcado, aparecerá un icono de desmarca que permitirá al mismo miembro desmarcar el contenido.
 
-La moderación en contexto se puede configurar para permitir que los miembros seleccionen un motivo al marcar una publicación. La lista de motivos de indicador seleccionables se puede configurar, incluso si se puede especificar o no un motivo personalizado. El motivo del indicador se guarda con el UGC, pero el motivo no activa ninguna acción en particular. Solo el número de indicadores activa una notificación. El contenido marcado se anotará como tal, de manera que los moderadores puedan actuar en él.
+La moderación en contexto se puede configurar para permitir que los miembros seleccionen un motivo al marcar una publicación. La lista de motivos de indicador seleccionables se puede configurar, incluso si se puede especificar o no un motivo personalizado. El motivo del indicador se guarda con el UGC, pero el motivo no déclencheur ninguna acción en particular. Solo el número de indicadores déclencheur una notificación. El contenido marcado se anotará como tal, de manera que los moderadores puedan actuar en él.
 
 El sistema realiza un seguimiento de todos los indicadores, que se marcan, y del motivo del indicador y envía un evento cuando se alcanza el umbral. Si un moderador de la comunidad permite el UGC, estos indicadores se archivan. Después de permitir y archivar, si se producen retazos posteriores, se archivarían como si no hubiera habido retazos anteriores.
 
