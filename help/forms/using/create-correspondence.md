@@ -328,7 +328,7 @@ Esta opción existe para las personas que tienen problemas con el almacenamiento
 
 ## Modos de representación de la previsualización de letras: Previsualización de formularios móviles y previsualización PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-La Administración de correspondencia de AEM Forms muestra una carta como HTML en la interfaz de usuario Crear correspondencia. Sin embargo, la administración de correspondencia aún admite la reversión a la previsualización PDF en lugar de a la previsualización HTML. Para obtener más información sobre cómo cambiar entre el modo de previsualización HTML y PDF, consulte [Cambiar el modo de representación de la letra](#changerenditionmode).
+La Administración de correspondencia de AEM Forms muestra una carta como HTML en la interfaz de usuario Crear correspondencia. Sin embargo, la administración de correspondencia aún admite la revertir a la previsualización PDF en lugar de a la previsualización HTML. Para obtener más información sobre cómo cambiar entre el modo de previsualización HTML y PDF, consulte [Cambiar el modo de representación de la letra](#changerenditionmode).
 
 A continuación se describen las ventajas y la funcionalidad disponibles en la previsualización de HTML y PDF.
 
