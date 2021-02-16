@@ -31,7 +31,7 @@ La búsqueda general de un proceso es más adecuada si conoce la ID del proceso 
 Introduzca criterios básicos para realizar una búsqueda general. Si introduce varios criterios, la búsqueda se realiza con una condición Y implícita.
 
 1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de Forms > Buscar en procesos.
-1. En la página Buscar proceso, en Búsqueda general, proporcione los siguientes criterios:
+1. En la página Buscar proceso, en Búsqueda general, especifique los siguientes criterios:
 
    * **ID de proceso:** el entero positivo que identifica cada instancia de proceso única.
    * **Estado del proceso:** seleccione un estado en la lista.
