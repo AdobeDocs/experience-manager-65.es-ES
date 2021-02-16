@@ -120,7 +120,7 @@ Para obtener más información sobre los informes de análisis de formularios, c
 
 #### Paso 3: Analizar puntos de datos {#step-analyze-data-points}
 
-En este paso, analizará los puntos de datos en el informe de análisis e informará sobre el rendimiento del formulario. Si no cumple con los KPI de éxito, creará hipótesis basadas en datos y encontrará posibles soluciones para solucionar los problemas. Por ejemplo:
+En este paso, analizará los puntos de datos en el informe de análisis e informará sobre el rendimiento del formulario. Si no cumple los KPI de éxito, creará hipótesis basadas en datos y encontrará posibles soluciones para solucionar los problemas. Por ejemplo:
 
 * Si el tiempo de relleno medio del formulario es superior al esperado, es posible que el formulario sea complejo para los clientes, que el formulario no utilice terminologías estándar, que el formulario sea demasiado largo, etc. En este caso, es posible que desee simplificar la estructura y los campos del formulario, volver a trabajar en el diseño de formulario, acortar la longitud del formulario o agregar descripciones y ejemplos de ayuda para campos de formulario no estándar.
 * Si los datos indican que la mayoría de los clientes están accediendo a la ayuda de un panel de formularios, es evidente que los clientes están perplejos con la información que se va a rellenar. Es posible que desee utilizar una terminología alternativa o agregar algunas entradas de ejemplo y una descripción de ayuda para ese panel.
