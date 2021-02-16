@@ -491,7 +491,7 @@ En una instancia de autor, ha iniciado sesión con privilegios administrativos:
    * Seleccione **[!UICONTROL Guardar todo]**.
 
 
-* Para el **nombre** `oauthid-123`, reemplace *123* por la ***ID de la aplicación*** o la clave ***de consumo (API) de Twitter*** que es el valor del **ID del cliente** en el Adobe &lt;a111/>Configuración de Granite OAuth Application y Provider](social-login.md#adobe-granite-oauth-application-and-provider).[
+* Para el **nombre** `oauthid-123`, reemplace *123* por la ***ID de la aplicación*** o la clave ***de consumo (API) de Twitter*** que es el valor del **ID del cliente** en el Adobe [Configuración de Granite OAuth Application y Provider](social-login.md#adobe-granite-oauth-application-and-provider).
 
    ![graniteoauth-crxde](assets/graniteoauth-crxde.png)
 
