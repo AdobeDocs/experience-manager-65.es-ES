@@ -63,7 +63,7 @@ Lista de diseños de panel en formularios adaptables
 
 Utilice este diseño de panel para crear un diseño interactivo que se ajuste al tamaño de pantalla del dispositivo sin necesidad de navegación especializada.
 
-Con esta presentación, puede colocar varios componentes de **[!UICONTROL formulario adaptable de panel]** uno tras otro dentro del panel.
+Con esta presentación, puede colocar varios componentes **[!UICONTROL Formulario adaptable de panel]** uno tras otro dentro del panel.
 
 ![Un formulario con una presentación adaptable como se ve en una pantalla pequeña](assets/responsive_layout_seen_on_small_screen.png)
 
@@ -121,7 +121,7 @@ Fichas que aparecen en la parte superior de un panel
 
 Las maquetaciones móviles permiten una navegación sencilla en los dispositivos móviles con pantallas relativamente más pequeñas. Las maquetaciones móviles utilizan estilos tabulados o de asistente para la navegación por formularios. La aplicación de un diseño para móviles proporciona una sola presentación para todo el formulario.
 
-Este diseño controla la navegación mediante una barra de navegación y un menú de navegación. La barra de navegación muestra el icono **&lt;** y **** para indicar **siguiente** y **anteriores** pasos de navegación en el formulario.
+Este diseño controla la navegación mediante una barra de navegación y un menú de navegación. La barra de navegación muestra el icono **&lt;** y **** para indicar los pasos de navegación **next** y **previous** en el formulario.
 
 Los diseños móviles están disponibles en `/libs/fd/af/layouts/mobile/` ubicación. De forma predeterminada, los siguientes diseños móviles están disponibles en formularios adaptables.
 
