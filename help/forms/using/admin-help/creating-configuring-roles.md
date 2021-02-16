@@ -107,7 +107,7 @@ Se pueden incluir las siguientes funciones predeterminadas adicionales, según l
 
    >[!NOTE]
    >
-   >Cuando se utiliza MySQL, no se pueden crear dos roles que tengan el mismo nombre pero que difieran en el uso de caracteres extendidos. Por ejemplo, intentar crear una función llamada abcde cuando ya existe una llamada âbcdè resulta en un error.
+   >Cuando se utiliza MySQL, no se pueden crear dos roles que tengan el mismo nombre pero que difieran en el uso de caracteres extendidos. Por ejemplo, intentar crear una función denominada &quot;abcde&quot; cuando ya existe una llamada &quot;âbcdè&quot; resulta en un error.
 
 1. Haga clic en Buscar permisos y seleccione los permisos que desee agregar a la función.
 1. Haga clic en Aceptar y, a continuación, en Siguiente.
@@ -175,7 +175,7 @@ Puede cambiar los permisos de cualquiera de las funciones que ha creado. No se p
    De forma predeterminada, la página Administración de roles muestra todas las funciones de la base de datos de Administración de usuarios. Si la lista de roles es grande, utilice el área Buscar en la parte superior de la página para buscar un nombre de rol específico.
 
 1. Seleccione la función para la que desea asignar permisos de vista y haga clic en la ficha Permisos.
-1. Para cambiar estos permisos, haga clic en Buscar permisos, seleccione las casillas de verificación de los permisos que desea agregar a la función, haga clic en Aceptar y, a continuación, en Guardar.
+1. Para cambiar estos permisos, haga clic en Buscar permisos, seleccione las casillas de verificación de los permisos que desee agregar a la función, haga clic en Aceptar y, a continuación, en Guardar.
 1. Para eliminar un permiso, selecciónelo, haga clic en Eliminar y, a continuación, en Guardar.
 
 ### Permisos de formularios AEM {#aem-forms-permissions}
