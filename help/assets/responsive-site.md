@@ -40,7 +40,7 @@ Consulte también [Vinculación de direcciones URL a la Aplicación web.](linkin
    >
    >El recurso seleccionado *y* el ajuste preestablecido de imagen o visualizador seleccionado deben publicarse para que los botones **[!UICONTROL URL]** o **[!UICONTROL RESS]** estén disponibles.
    >
-   >Medios dinámicos: el modo híbrido requiere que publique los ajustes preestablecidos de imagen; Medios dinámicos: el modo Scene7 publica automáticamente ajustes preestablecidos de imagen.
+   >Dynamic Media - El modo híbrido requiere que publique los ajustes preestablecidos de imagen; Dynamic Media: el modo Scene7 publica automáticamente ajustes preestablecidos de imagen.
 
 1. Toque **[!UICONTROL RESS]**.
 
@@ -51,6 +51,6 @@ Consulte también [Vinculación de direcciones URL a la Aplicación web.](linkin
 
 ## Uso de HTTP/2 para el envío de los recursos de Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
-HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. El envío de recursos de Dynamic Media se admite mediante HTTP/2, que proporciona mejores tiempos de carga y respuesta.
+HTTP/2 es el nuevo protocolo web actualizado que mejora la forma en que se comunican los exploradores y los servidores. Proporciona una transferencia de información más rápida y reduce la cantidad de potencia de procesamiento necesaria. El envío de recursos de Dynamic Media se admite mediante HTTP/2, que proporciona mejores tiempos de respuesta y carga.
 
 Consulte [Envío HTTP2 de contenido](http2.md) para obtener información detallada sobre cómo empezar a utilizar HTTP/2 con su cuenta de Dynamic Media.
