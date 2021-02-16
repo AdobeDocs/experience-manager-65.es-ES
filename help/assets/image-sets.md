@@ -85,7 +85,7 @@ Para ayudarle a ponerse en marcha rápidamente:
 
 Para editar conjuntos de imágenes, consulte [edición de conjuntos de imágenes.](#editing-image-sets) Además, puede realizar vistas y editar las propiedades [ del conjunto ](/help/assets/manage-assets.md#editing-properties)de imágenes.
 
-Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Resolución de problemas de Dynamic Media: modo Scene7](/help/assets/troubleshoot-dms7.md#images-and-sets).
+Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Solución de problemas de Dynamic Media - modo Scene7](/help/assets/troubleshoot-dms7.md#images-and-sets).
 
 ## Carga de recursos en conjuntos de imágenes {#uploading-assets-in-image-sets}
 
@@ -188,7 +188,7 @@ Sin embargo, los conjuntos creados con ajustes preestablecidos de conjunto de lo
 
    ![6_5_imageset-setspulldownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* En la búsqueda, puede seleccionar **[!UICONTROL Filtro]**, luego expandir **[!UICONTROL Medios dinámicos]** y seleccionar **[!UICONTROL Conjuntos.]**
+* En la búsqueda, puede seleccionar **[!UICONTROL Filtro]**, luego expandir **[!UICONTROL Dynamic Media]** y seleccionar **[!UICONTROL Conjuntos.]**
 
    La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjunto por lotes. Para los conjuntos automatizados, la consulta de búsqueda se lleva a cabo utilizando criterios de búsqueda &quot;Inicios con&quot; que son diferentes de AEM búsqueda basada en el uso de criterios de búsqueda &quot;Contiene&quot;. Definir el filtro como **[!UICONTROL Conjuntos]** es la única manera de buscar conjuntos automatizados.
 
