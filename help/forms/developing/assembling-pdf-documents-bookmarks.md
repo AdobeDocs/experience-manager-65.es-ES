@@ -224,7 +224,7 @@ Monte un documento PDF con marcadores mediante la API de servicio de ensamblador
 
    * Un objeto `com.adobe.idp.Document` que representa el documento DDX que se va a utilizar
    * Un objeto `java.util.Map` que contiene el documento PDF de entrada y el documento XML de marcador.
-   * Un objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica las opciones en tiempo de ejecución, incluidos el nivel predeterminado de fuente y registro de trabajos
+   * Un objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica las opciones en tiempo de ejecución, incluido el nivel predeterminado de fuente y registro de trabajos
 
    El método `invokeDDX` devuelve un objeto `com.adobe.livecycle.assembler.client.AssemblerResult` que contiene los resultados del trabajo y las excepciones que se hayan producido.
 
