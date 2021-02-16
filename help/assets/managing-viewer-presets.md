@@ -444,7 +444,7 @@ Consulte [Consideraciones especiales para crear un ajuste preestablecido de viso
 
       Al importar un archivo CSS, el editor visual comprueba si el CSS utiliza los marcadores de visor correctos. Por ejemplo, si está creando un visor de zoom, todas las reglas CSS importadas deben definirse con el nombre de clase de visor `.s7mixedmediaviewer` definido en un elemento de visor principal.
 
-      Puede importar CSS arbitrario hecho a mano siempre y cuando defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización del *&lt;nombre del visor>* visor&quot; de la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Por ejemplo, si desea leer sobre los marcadores de CSS para el visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)). Sin embargo, es posible que el editor visual no entienda algunos valores de CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
+      Puede importar CSS arbitrario hecho a mano siempre y cuando defina correctamente los marcadores CSS de un visor determinado. (Los marcadores CSS se describen en cualquier tema de ayuda &quot;Personalización del *&lt;nombre del visor>* visor&quot; de la [Guía de referencia de visores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Por ejemplo, si desea leer sobre los marcadores de CSS para el visor de zoom, consulte [Personalización del visor de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) Sin embargo, es posible que el editor visual no entienda algunos valores de CSS. En estos casos, el editor visual intenta anular los errores para que el CSS pueda seguir funcionando.
    >[!NOTE]
    >
    >Si prefiere editar la CSS directamente en su formulario sin procesar, pulse **[!UICONTROL Mostrar/Ocultar CSS]** debajo del menú desplegable Tipo seleccionado (puede que necesite desplazar el editor visual hacia arriba para verlo).
@@ -530,7 +530,7 @@ Utilizando el ejemplo de la tabla anterior, 30 segundos / 3 subsegmentos de víd
 
 #### Consideraciones especiales para crear ajustes preestablecidos de visor de letreros carrusel {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
-Al crear ajustes preestablecidos de visor de pancartas carrusel, se puede acceder a cambiar el estilo de las zonas interactivas de la siguiente manera:
+Al crear ajustes preestablecidos del visor de pancartas carrusel, se puede acceder a cambiar el estilo de las zonas interactivas de la siguiente manera:
 
 |  | **Descripción** | **Acciones** |
 |---|---|---|
