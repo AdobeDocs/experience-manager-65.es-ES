@@ -156,7 +156,7 @@ El predicado de etiquetas permite realizar búsquedas de recursos basadas en eti
 
 ## Añadir otros predicados {#adding-other-predicates}
 
-De forma similar a como se agrega un predicado de propiedad o un predicado de opciones, se pueden agregar los siguientes predicados adicionales al panel Buscar:
+De forma similar a como agrega un predicado de propiedad o un predicado de opciones, puede agregar los siguientes predicados adicionales al panel Buscar:
 
 | Nombre del predicado | Descripción | Propiedades |
 |---|---|---|
