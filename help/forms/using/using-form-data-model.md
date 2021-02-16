@@ -41,7 +41,7 @@ Un modelo de datos de formulario es una extensión del esquema JSON que puede ut
 
 Puede crear [formularios adaptables](../../forms/using/creating-adaptive-form.md) y [fragmentos de formulario adaptables](../../forms/using/adaptive-form-fragments.md) basados en un modelo de datos de formulario. Para utilizar un modelo de datos de formulario al crear un formulario adaptable o un fragmento de formulario adaptable, haga lo siguiente:
 
-1. En la ficha Modelo de formulario de la pantalla Añadir propiedades, seleccione **[!UICONTROL Modelo de datos de formulario]** en la lista desplegable **[!UICONTROL Seleccionar desde]**.
+1. En la ficha Modelo de formulario de la pantalla Añadir propiedades, seleccione **[!UICONTROL Modelo de datos de formulario]** en la lista desplegable **[!UICONTROL Seleccionar de]**.
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
