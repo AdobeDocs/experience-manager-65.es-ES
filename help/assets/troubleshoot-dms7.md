@@ -1,6 +1,6 @@
 ---
 title: 'Resolución de problemas de Dynamic Media: modo Scene7'
-description: Solución de problemas de Dynamic Media cuando se ejecuta en modo Scene7.
+description: Solución de problemas de Dynamic Media cuando se está ejecutando en modo Scene7.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Resolución de problemas de Dynamic Media - Modo Scene7{#troubleshooting-dynamic-media-scene-mode}
+# Solución de problemas de Dynamic Media - Modo Scene7{#troubleshooting-dynamic-media-scene-mode}
 
 El siguiente documento describe la solución de problemas para Dynamic Media que ejecuta el modo de ejecución **dynamicmedia_scene7**.
 
@@ -42,13 +42,13 @@ Los siguientes son algunos trucos y sugerencias generales para todos los recurso
 
 ### Propiedades de estado de sincronización de recursos {#asset-synchronization-status-properties}
 
-Las siguientes propiedades de recurso se pueden revisar en CRXDE Lite para confirmar la sincronización correcta del recurso de AEM a Dynamic Media:
+Las siguientes propiedades de recurso se pueden revisar en CRXDE Lite para confirmar que la sincronización del recurso se ha realizado correctamente de AEM a Dynamic Media:
 
 | **Propiedad** | **Ejemplo** | **Descripción** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Indicador general de que el nodo está vinculado a Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **** PublicarCompletar o texto de error | Estado de la carga de recursos a Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Debe rellenarse para poder generar direcciones URL en un recurso remoto de Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Debe rellenarse para poder generar direcciones URL para el recurso remoto de Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **** sucesor  **fallido:`<error text>`** | Estado de sincronización de conjuntos (conjuntos de giros, conjuntos de imágenes, etc.), ajustes preestablecidos de imagen, ajustes preestablecidos de visor, actualizaciones de mapas de imagen para un recurso o imágenes editadas. |
 
 ### Registro de sincronización {#synchronization-logging}
@@ -69,7 +69,7 @@ Al reemplazar un recurso de Dynamic Media existente (el mismo nombre y la misma 
 
 * Al mantener ambos, se creará un nuevo recurso con un nombre único para la URL del recurso publicado. Por ejemplo, `image.jpg` es el recurso original y `image1.jpg` es el recurso recién cargado.
 
-* La creación de una versión no es compatible con Dynamic Media: envío en modo Scene7. La nueva versión reemplazará al recurso existente en envío.
+* La creación de una versión no es compatible con el envío de modo Dynamic Media - Scene7. La nueva versión reemplazará al recurso existente en envío.
 
 ## Imágenes y conjuntos {#images-and-sets}
 
@@ -114,7 +114,7 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes in
    <td><p>Utilice solo imágenes con el mismo tamaño para el carrusel.</p> </td>
   </tr>
   <tr>
-   <td>La imagen no previsualización con el visor de Dynamic Media</td>
+   <td>La imagen no se previsualización con el visor de Dynamic Media</td>
    <td><p>Compruebe que el recurso contiene <code>dam:scene7File</code> en las propiedades de metadatos (CRXDE Lite)</p> </td>
    <td><p>Compruebe que todos los recursos han terminado de procesarse.</p> </td>
   </tr>
@@ -160,7 +160,7 @@ Si tiene problemas con el vídeo, consulte las siguientes instrucciones para sol
      <li>Asigne un perfil de vídeo a la carpeta.</li>
      <li>Edite el perfil de vídeo para incluir más de un ajuste preestablecido de codificación.</li>
      <li>Espere a que el vídeo termine de procesarse.</li>
-     <li>Para volver a cargar el vídeo, asegúrese de que el flujo de trabajo de codificación de vídeo de Dynamic Media no se está ejecutando.<br /> </li>
+     <li>Para volver a cargar el vídeo, asegúrese de que el flujo de trabajo de Dynamic Media Encode Video no se está ejecutando.<br /> </li>
      <li>Vuelva a cargar el vídeo.</li>
     </ol> </td>
   </tr>
@@ -169,13 +169,13 @@ Si tiene problemas con el vídeo, consulte las siguientes instrucciones para sol
    <td>
     <ul>
      <li>Compruebe que el modo de ejecución es <code>dynamicmedia_scene7</code>.</li>
-     <li>Compruebe si el servicio de nube de Dynamic Media está configurado.</li>
+     <li>Compruebe si el servicio en la nube de Dynamic Media está configurado.</li>
      <li>Compruebe si un perfil de vídeo está asociado a la carpeta de carga.</li>
     </ul> </td>
    <td>
     <ol>
      <li>Compruebe la instancia de AEM con <code>-r dynamicmedia_scene7</code></li>
-     <li>Compruebe que la Configuración de Dynamic Media en Cloud Services está correctamente configurada.</li>
+     <li>Compruebe que la configuración de Dynamic Media en Cloud Services está correctamente configurada.</li>
      <li>Compruebe que la carpeta tiene un perfil de vídeo. Además, compruebe el perfil del vídeo.</li>
     </ol> </td>
   </tr>
@@ -230,7 +230,7 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para s
    <td>La ilustración de Ajustes preestablecidos de visor devuelve 404 desde la previsualización en los detalles del recurso o desde la URL de copia o el código incrustado</td>
    <td><p>En CRXDE Lite, haga lo siguiente:</p>
     <ol>
-     <li>Vaya a la carpeta <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> dentro de la carpeta de sincronización de Dynamic Media (por ejemplo, <code>/content/dam/_CSS/_OOTB</code>),</li>
+     <li>Vaya a la carpeta <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> de la carpeta de sincronización de Dynamic Media (por ejemplo, <code>/content/dam/_CSS/_OOTB</code>),</li>
      <li>Busque el nodo de metadatos del recurso problemático (por ejemplo, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
      <li>Compruebe la presencia de propiedades <code>dam:scene7*</code>. Si el recurso se sincronizó y publicó correctamente, verá que el <code>dam:scene7FileStatus</code> conjunto es <strong>PublishComplete</strong>.</li>
      <li>Intente solicitar la ilustración directamente desde Dynamic Media concatenando los valores de las siguientes propiedades y literales de cadena
@@ -253,9 +253,9 @@ Si tiene problemas con los visores, consulte las siguientes instrucciones para s
        <li>Buscar el paquete de visor en la lista (inicio con <code>cq-dam-scene7-viewers-content</code>)</li>
        <li>Haga clic en <strong>Volver a instalar</strong>.</li>
       </ol> </li>
-     <li>En Cloud Services, vaya a la página Configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo de configuración de Dynamic Media - S7.
+     <li>En Cloud Services, vaya a la página de configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo de configuración para la configuración de Dynamic Media - S7.
       <ul>
-       <li>No realice cambios, haga clic en <strong>Guardar</strong>. Esto desencadena la lógica de nuevo para crear y sincronizar los recursos de muestra, el ajuste preestablecido de visor CSS y la ilustración.<br />  </li>
+       <li>No realice cambios, haga clic en <strong>Guardar</strong>. Esto vuelve a déclencheur la lógica para crear y sincronizar los recursos de muestra, el ajuste preestablecido de visor CSS y la ilustración.<br />  </li>
       </ul> </li>
     </ol> </td>
   </tr>
