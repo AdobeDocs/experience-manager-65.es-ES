@@ -157,7 +157,7 @@ Coloque el archivo proporcionado en la ruta proporcionada para crear un recurso 
 
 ## Actualizar un binario de recursos {#update-asset-binary}
 
-Actualiza el binario de un recurso (representación con el nombre original). Una actualización desencadena el flujo de trabajo predeterminado de procesamiento de recursos para ejecutarse, si está configurado.
+Actualiza el binario de un recurso (representación con el nombre original). Una actualización déclencheur el flujo de trabajo de procesamiento de recursos predeterminado que se va a ejecutar, si se ha configurado.
 
 **Solicitud**:  `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
