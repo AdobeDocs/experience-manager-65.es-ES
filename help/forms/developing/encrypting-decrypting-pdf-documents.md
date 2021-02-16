@@ -39,7 +39,7 @@ Puede realizar estas tareas mediante el servicio Cifrado:
 
 ## Cifrar Documentos PDF con una contraseña {#encrypting-pdf-documents-with-a-password}
 
-Al cifrar un documento PDF con una contraseña, el usuario debe especificar la contraseña para abrir el documento PDF en Adobe Reader o Acrobat. Además, antes de que se pueda realizar otra operación de AEM Forms, como la firma digital del documento PDF, en el documento, se debe desbloquear un documento PDF con contraseña cifrada.
+Al cifrar un documento PDF con una contraseña, el usuario debe especificar la contraseña para abrir el documento PDF en Adobe Reader o Acrobat. Además, antes de que otra operación de AEM Forms, como la firma digital del documento PDF, se pueda realizar en el documento, se debe desbloquear un documento PDF con contraseña cifrada.
 
 >[!NOTE]
 >
@@ -279,7 +279,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 **Creación de un objeto de API de cliente de codificación**
 
@@ -489,7 +489,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 **Crear un cliente de servicio de cifrado**
 
@@ -797,7 +797,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 **Crear un cliente de servicio de cifrado**
 
@@ -974,7 +974,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 **Crear un cliente de servicio**
 
