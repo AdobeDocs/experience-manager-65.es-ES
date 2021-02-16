@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Representación de Forms por valor {#rendering-forms-by-value}
 
-Normalmente, un diseño de formulario creado en Designer se pasa por referencia al servicio Forms. Los diseños de formulario pueden ser grandes y, como resultado, es más eficaz pasarlos por referencia para evitar tener que calcular los bytes de diseño de formulario por valor. El servicio Forms también puede almacenar en caché el diseño de formulario para que, cuando se almacena en caché, no tenga que leer continuamente el diseño de formulario.
+Normalmente, un diseño de formulario creado en Designer se pasa por referencia al servicio Forms. Los diseños de formulario pueden ser grandes y, por tanto, es más eficaz pasarlos por referencia para evitar tener que calcular los bytes de diseño de formulario por valor. El servicio Forms también puede almacenar en caché el diseño de formulario para que, cuando se almacena en caché, no tenga que leer continuamente el diseño de formulario.
 
 Si un diseño de formulario contiene un atributo UUID, se almacena en la caché. El valor UUID es único para todos los diseños de formulario y se utiliza para identificar un formulario de forma única. Cuando se procesa un formulario por valor, el formulario solo se debe almacenar en caché cuando se utiliza repetidamente. Sin embargo, si el formulario no se utiliza repetidamente y tiene que ser único, puede evitar guardar el formulario en la caché mediante las opciones de almacenamiento en caché que se establecen con la API de AEM Forms.
 
