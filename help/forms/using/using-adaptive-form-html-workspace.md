@@ -38,7 +38,7 @@ Dado que los formularios adaptables se encuentran en el repositorio de AEM, la e
 
 ## Experiencia del usuario en formularios adaptables en HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
 
-HTML Workspace proporciona algunos controles adaptables específicos de formularios, además de los controles disponibles para formularios móviles. Un usuario puede agregar datos adjuntos, guardarlos, firmarlos, enviarlos y navegar por los formularios adaptables en el espacio de trabajo HTML cuando abre una Tarea o un punto de Inicio. Los siguientes son los detalles específicos:
+HTML Workspace proporciona algunos controles adaptables específicos del formulario, además de los controles disponibles para los formularios móviles. Un usuario puede agregar datos adjuntos, guardarlos, firmarlos, enviarlos y navegar por los formularios adaptables en el espacio de trabajo HTML cuando abre una Tarea o un punto de Inicio. Los siguientes son los detalles específicos:
 
 1. Para adjuntar archivos, utilice archivos adjuntos de Tarea, como ocurrió en Mobile Forms. Cualquier botón de tipo Archivo adjunto del formulario adaptable está oculto.
 
