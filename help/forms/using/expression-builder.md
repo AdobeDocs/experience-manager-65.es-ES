@@ -82,7 +82,7 @@ Puede crear un paquete personalizado para exportar sus propias funciones remotas
 
    1. **Habilitado**: Determina si este método está habilitado. El Administrador de expresiones ignora los métodos deshabilitados.
    1. **familyId**: Especifica la familia (grupo) del método. Si está vacío, el Administrador de Expresiones supone que el método pertenece a la familia predeterminada. No hay un registro de familias (excepto el predeterminado) desde donde se eligen las funciones. El Administrador de expresiones crea dinámicamente el Registro realizando una unión de todos los ID de familia especificados por todas las funciones exportadas por los distintos paquetes. Asegúrese de que el ID que especifique aquí sea razonablemente legible, ya que también se muestra en la interfaz de usuario de creación de expresiones.
-   1. **displayName**: Un nombre legible en lenguaje natural para la función. Este nombre se utiliza con fines de visualización en la interfaz de usuario de creación. Si está vacío, el Administrador de Expresiones construye un nombre predeterminado utilizando el prefijo y el nombre local de la función.
+   1. **displayName**: Un nombre legible en lenguaje natural para la función. Este nombre se utiliza con fines de visualización en la interfaz de usuario de creación. Si está vacío, el Administrador de Expresiones crea un nombre predeterminado utilizando el prefijo y el nombre local de la función.
    1. **Descripción**: Descripción detallada de la función. Esta descripción se utiliza con fines de visualización en la interfaz de usuario de creación. Si está vacío, el Administrador de Expresiones crea una descripción predeterminada utilizando el prefijo y el nombre local de la función.
 
    ```java
