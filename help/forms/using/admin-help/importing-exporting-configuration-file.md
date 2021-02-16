@@ -26,7 +26,7 @@ Para evitar riesgos de seguridad, el valor de la contraseña de enlace para el s
 
 >[!NOTE]
 >
->La importación del archivo de configuración reconfigura AEM formularios en función de la información del archivo. Solo un administrador del sistema o un consultor de servicios profesionales que esté familiarizado con el producto de formularios AEM y XML debe considerar la posibilidad de modificar el archivo de configuración. Es posible que necesiten editar el archivo de configuración, por ejemplo, para volver a configurar una configuración dañada.
+>La importación del archivo de configuración reconfigura AEM formularios en función de la información del archivo. Sólo un administrador del sistema o un consultor de servicios profesionales que esté familiarizado con el producto de formularios AEM y XML debe considerar la posibilidad de modificar el archivo de configuración. Es posible que necesiten editar el archivo de configuración, por ejemplo, para volver a configurar una configuración dañada.
 
 **Exportar la información de configuración**
 
