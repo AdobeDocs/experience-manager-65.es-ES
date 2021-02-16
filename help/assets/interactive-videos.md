@@ -1,6 +1,6 @@
 ---
 title: Vídeos interactivos
-description: Aprenda a trabajar con vídeo interactivo y vídeo de ventas en Dynamic Media
+description: Aprenda a trabajar con vídeos interactivos y vídeos de ventas en Dynamic Media
 uuid: c3ff6839-fff5-4709-8163-5c4245b80e6d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -86,7 +86,7 @@ Para finalizar, publique los recursos de vídeo interactivos. La publicación cr
 Consulte [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. **Añadir un vídeo interactivo a su sitio web o a su sitio web en**
-AEMIsi utiliza AEM Sites, o AEM comercio electrónico, o ambos, puede agregar el vídeo interactivo directamente a una página web en AEM arrastrando el componente Medios interactivos a la página. Consulte [Añadir recursos de medios dinámicos en páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+AEMIsi utiliza AEM Sites, o AEM comercio electrónico, o ambos, puede agregar el vídeo interactivo directamente a una página web en AEM arrastrando el componente Medios interactivos a la página. Consulte [Añadir recursos de Dynamic Media a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 Utilice el código incrustado o la URL para integrar el vídeo interactivo con las experiencias del sitio web. Consulte [Integración de un vídeo interactivo con su sitio Web](#integrating-an-interactive-video-with-your-website).
 Si está utilizando un WCM de terceros (Web Content Manager), debe integrar el nuevo vídeo interactivo con la implementación de vista rápida existente que se utiliza en el sitio web. Consulte [Integración de un vídeo interactivo con una vista rápida](#integrating-an-interactive-video-with-an-existing-quickview) existente.
    [Adición de recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md)
@@ -104,7 +104,7 @@ Inicio identificando las variables dinámicas utilizadas por la implementación 
 
 Cuando agrega segmentos de tiempo a un vídeo, asigna un SKU y cualquier variable adicional a cada miniatura que agregue a un segmento. Estas variables se utilizan más adelante para mostrar el producto de vista rápida correcto.
 
-Es importante identificar correctamente qué variables son necesarias para activar de forma exclusiva una vista rápida del producto.
+Es importante identificar correctamente qué variables son necesarias para el déclencheur exclusivo de una vista rápida del producto.
 
 A veces puede bastar con consultar con especialistas de TI responsables de la implementación de Quickview existente. Es probable que conozcan el conjunto mínimo de datos necesario para identificar la vista rápida en el sistema. Sin embargo, en la mayoría de los casos también es posible simplemente analizar el comportamiento existente del código front-end.
 
@@ -115,7 +115,7 @@ La mayoría de las implementaciones de Quickview utilizan el siguiente paradigma
 * Los datos de la vista rápida se traducen al contenido como preparación para su procesamiento en la página web.
 * Por último, el código front-end procesa visualmente dicho contenido en la pantalla.
 
-Por lo tanto, el método consiste en visitar diferentes áreas del sitio web existente donde se implementa Quickview, activar la vista rápida y capturar la URL de Ajax que envía la página web para cargar los datos o el contenido de la vista rápida.
+Por lo tanto, el método consiste en visitar diferentes áreas del sitio web existente donde se implementa Quickview, déclencheur de la vista rápida y captura la URL de Ajax que envía la página web para cargar los datos o el contenido de la vista rápida.
 
 Normalmente no es necesario que utilice ninguna herramienta de depuración especializada. Los navegadores web modernos cuentan con inspectores web que realizan un trabajo adecuado. Estos son algunos ejemplos de exploradores Web que incluyen inspectores Web:
 
@@ -125,11 +125,11 @@ Normalmente no es necesario que utilice ninguna herramienta de depuración espec
 
 * En Internet Explorer, active la herramienta de depuración pulsando **F12**.
 
-Cuando la supervisión de red está activada en el explorador, active la vista rápida en la página.
+Cuando la supervisión de red está activada en el explorador, déclencheur la vista rápida en la página.
 
-Ahora encuentre la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para análisis futura. En la mayoría de los casos, cuando se activa la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una ruta o parte de cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
+Ahora encuentre la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para análisis futura. En la mayoría de los casos, cuando se déclencheur la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una ruta o parte de cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
 
-Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes que son comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
+Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
 
 En el caso más sencillo, la única parte variable de la URL de vista rápida es el SKU del producto. En este caso, el valor de SKU del producto es la única pieza de datos necesaria para agregar miniaturas a un segmento de tiempo en el vídeo interactivo de AEM.
 
@@ -223,7 +223,7 @@ Puede omitir esta tarea y continuar con la siguiente si desea utilizar cualquier
 
 Cuando se hace clic en una miniatura en el entorno de creación, aparece una previsualización del cuadro de diálogo Vista rápida.
 
-![chlimage_1-29](assets/chlimage_1-127.png)
+![chlimage_1-21](assets/chlimage_1-127.png)
 
 Si lo desea, puede crear su propio ajuste preestablecido de visor de vídeo interactivo personalizado. Puede determinar, entre otras cosas, el estilo del reproductor de vídeo, las miniaturas interactivas y la vista de cuadrícula de miniaturas que aparece al final del vídeo.
 
@@ -237,7 +237,7 @@ Consulte [Creación de un nuevo ajuste preestablecido de visor](/help/assets/man
 
 Si ya ha cargado los recursos de vídeo y miniaturas, continúe [Añadiendo la interactividad en el vídeo](#adding-interactivity-to-your-video).
 
-Si ha cargado los vídeos o imágenes incorrectos o desea eliminar los vídeos o imágenes cargados que ya no necesita, consulte [Eliminación de recursos](/help/assets/manage-assets.md#deleting-assets).
+Si ha cargado los vídeos o las imágenes incorrectos o desea eliminar los vídeos o las imágenes cargados que ya no necesita, consulte [Eliminación de recursos](/help/assets/manage-assets.md#deleting-assets).
 
 Para cargar un vídeo y sus recursos de miniaturas asociados:
 
@@ -430,7 +430,7 @@ Para añadir interactividad al vídeo:
        </ul><strong>Nota</strong>: Tenga en cuenta que las herramientas de uso compartido de medios sociales en vídeo interactivo no son compatibles cuando incrusta el visor en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visor que no tengan herramientas de uso compartido en medios sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencia.</p></tr>&lt;&gt; 
       <tr> 
       <td>Para editar una acción ya asignada a una imagen en miniatura</td> 
-      <td>Dentro de un segmento de línea de tiempo, toque una imagen en miniatura que tenga un vínculo de cadena a la derecha de su etiqueta de texto. El vínculo de cadena indica que se le asigna una acción. Toque la ficha <strong>Acciones</strong> para realizar los cambios.</td> 
+      <td>En un segmento de línea de tiempo, toque una imagen en miniatura que tenga un vínculo de cadena a la derecha de su etiqueta de texto. El vínculo de cadena indica que se le asigna una acción. Toque la ficha <strong>Acciones</strong> para realizar los cambios.</td> 
       </tr> 
       <tr> 
       <td>Cambio de la etiqueta de texto de una imagen en miniatura</td> 
@@ -502,7 +502,7 @@ Consulte [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md) par
 
 Después de cargar un vídeo, agregar segmentos de línea de tiempo y publicar el vídeo interactivo, ya estará listo para agregarlo al sitio web existente.
 
-Si es cliente de AEM Sites, puede agregar el vídeo interactivo arrastrando el componente Medios interactivos a la página. Consulte [Añadir recursos de medios dinámicos en páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Si es cliente de AEM Sites, puede agregar el vídeo interactivo arrastrando el componente Medios interactivos a la página. Consulte [Añadir Dynamic Media Assets a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 Si es cliente independiente de AEM Assets, puede agregar manualmente el vídeo interactivo a su sitio web como se describe en esta sección.
 
@@ -516,7 +516,7 @@ El código incrustado copiado se establece para un entorno interactivo, por lo q
 
 >[!NOTE]
 En este punto, si ha agregado interactividad solo con páginas web con hipervínculos, ya no estará.
-Sin embargo, si ha agregado interactividad para activar una vista rápida, las miniaturas adyacentes al vídeo interactivo solo se muestran con fines de visualización; aún no están integrados con las vistas rápidas existentes. En este caso, ahora debe integrar el vídeo interactivo con las vistas de ciclo de vida existentes en su sitio web.
+Sin embargo, si ha añadido interactividad a déclencheur de una vista rápida, las miniaturas adyacentes al vídeo interactivo solo se muestran para fines de visualización; aún no están integrados con las vistas rápidas existentes. En este caso, ahora debe integrar el vídeo interactivo con las vistas de ciclo de vida existentes en su sitio web.
 
 **Ejemplo**
 
@@ -564,7 +564,7 @@ El último paso de este proceso es integrar el vídeo interactivo con una implem
 
 La implementación de vista rápida existente normalmente representa una cadena de acciones interrelacionadas que se producen en la página web en el siguiente orden:
 
-1. Un usuario activa un elemento en la interfaz de usuario del sitio web.
+1. Un usuario déclencheur un elemento en la interfaz de usuario del sitio web.
 1. El código front-end obtiene una URL de vista rápida basada en el elemento de interfaz de usuario que se activó en el paso 1.
 1. El código front-end envía una solicitud de AJAX utilizando la dirección URL obtenida en el paso 2.
 1. La lógica back-end devuelve los datos o el contenido de vista rápida correspondientes al código front-end.
@@ -580,9 +580,9 @@ En un controlador de evento de este tipo, el código front-end hace lo siguiente
 
 * Escucha un evento emitido por el vídeo interactivo.
 * Construye una URL de vista rápida basada en los datos de miniaturas.
-* Activa el proceso de cargar la vista rápida desde el servidor y procesarla en la pantalla para su visualización.
+* Déclencheur el proceso de cargar la vista rápida desde el servidor y procesarla en la pantalla para su visualización.
 
-Además, el visor de vídeo interactivo admite el modo de funcionamiento a pantalla completa. El usuario final activa las vistas rápidas haciendo clic en una miniatura sin salir de la pantalla completa. Para lograr esta funcionalidad, modifique el código del front-end de modo que el cuadro de diálogo modal de vista rápida esté adjunto al contenedor del visor. No agregue el CUERPO documento ni ningún otro elemento de página web que no esté disponible cuando el visor esté en modo de pantalla completa. El código que realiza este trabajo debe escuchar otra llamada de retorno de visor que se envía después de que el visor se cargue en la página.
+Además, el visor de vídeo interactivo admite el modo de funcionamiento a pantalla completa. El usuario final déclencheur las vistas rápidas haciendo clic en una miniatura sin salir de la pantalla completa. Para lograr esta funcionalidad, modifique el código del front-end de modo que el cuadro de diálogo modal de vista rápida esté adjunto al contenedor del visor. No agregue el CUERPO documento ni ningún otro elemento de página web que no esté disponible cuando el visor esté en modo de pantalla completa. El código que realiza este trabajo debe escuchar otra llamada de retorno de visor que se envía después de que el visor se cargue en la página.
 
 El código incrustado devuelto por AEM ya tiene un controlador de evento listo para usar. Se comenta como se ve en el siguiente fragmento de código resaltado:
 
@@ -633,7 +633,7 @@ El código incrustado devuelto por AEM ya tiene un controlador de evento listo p
 
 Por lo tanto, solo es necesario descomentar el fragmento de código resaltado de arriba y reemplazar el cuerpo de controladores ficticios por un código específico para la página web en particular.
 
-Hay dos controladores de llamada de retorno predeterminados presentes en el código incrustado estándar: `quickViewActivate` y `initComplete`. El controlador `quickViewActivate` se desencadena cuando se hace clic en una miniatura en el visor. Utilícelo para integrar el visor con la lógica de activación de vista rápida. El controlador `initComplete` se desencadena sólo una vez cuando el visor se carga en la página. Este controlador se utiliza para ajustar la ubicación del cuadro de diálogo Vista rápida en el DOM de la página web.
+Hay dos controladores de llamada de retorno predeterminados presentes en el código incrustado estándar: `quickViewActivate` y `initComplete`. El controlador `quickViewActivate` déclencheur cuando se hace clic en una miniatura en el visor. Utilícelo para integrar el visor con la lógica de activación de vista rápida. El controlador `initComplete` solo déclencheur una vez cuando el visor se carga en la página. Este controlador se utiliza para ajustar la ubicación del cuadro de diálogo Vista rápida en el DOM de la página web.
 
 El proceso de construir la URL de vista rápida es opuesto al proceso de identificar las variables de miniatura que se trataron anteriormente en este tema. Con los ejemplos de URL de vista rápida identificados anteriormente, puede ver cómo se construye la URL de vista rápida en cada caso:
 
@@ -666,7 +666,7 @@ El proceso de construir la URL de vista rápida es opuesto al proceso de identif
   </tbody>
 </table>
 
-El último paso para activar la URL de vista rápida y activar el panel de vista rápida requiere probablemente la asistencia de una persona de TI del cliente de su departamento de TI. Tienen los conocimientos para saber mejor cómo activar con precisión la implementación de Vista rápida desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
+El último paso para el déclencheur de la URL de vista rápida y la activación del panel de vista rápida requiere probablemente la asistencia de una persona de TI del front-end del departamento de TI. Tienen los conocimientos para saber mejor cómo déclencheur con precisión la implementación de Quickview desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
 
 Puede ver cómo se aplican estos pasos al sitio web de demostración para integrar completamente un vídeo interactivo con el código de vista rápida. Anteriormente, en este tema, la estructura de la URL de vista rápida se identificaba como la siguiente:
 
