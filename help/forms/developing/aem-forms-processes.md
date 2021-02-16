@@ -57,7 +57,7 @@ Cuando se invoca este proceso de corta duración, realiza las siguientes accione
 
    >[!NOTE]
    >
-   >Normalmente, un proceso de corta duración consiste en más de tres acciones. Los procesos se crean mediante Workbench. (Consulte [Uso de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+   >Generalmente, un proceso de corta duración consiste en más de tres acciones. Los procesos se crean mediante Workbench. (Consulte [Uso de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
    *La programación con* formularios de AEM describe las siguientes formas en las que puede invocar mediante programación este proceso de corta duración:
 
