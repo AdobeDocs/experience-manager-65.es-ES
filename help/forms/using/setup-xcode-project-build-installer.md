@@ -128,7 +128,7 @@ Para obtener información detallada sobre la firma de código y la adición de d
    >
    >Este paso solo es necesario si la aplicación de AEM Forms necesita conectarse a un servidor que no cumpla los requisitos de seguridad del transporte de aplicaciones.
 
-1. En **PROJECT**, seleccione **AEM Forms** y asegúrese de que la firma apropiada está seleccionada para **Identidad de firma de código**, **Depurar**, **Versión** y **Cualquier SDK para iOS&lt;a111/>.**
+1. En **PROJECT**, seleccione **AEM Forms** y asegúrese de que la firma apropiada está seleccionada para **Identidad de firma de código**, **Depurar**, **Versión** y **Cualquier SDK para iOS**.
 1. Conecte un iPad aprovisionado a un ordenador Mac.
 1. Seleccione el dispositivo aprovisionado para el proyecto **AEM Forms**.
 
