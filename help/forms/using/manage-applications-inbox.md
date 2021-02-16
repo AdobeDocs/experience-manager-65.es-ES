@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Administrar aplicaciones y tareas de Forms en AEM Bandeja de entrada{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Una de las muchas formas de iniciar o activar un flujo de trabajo centrado en Forms es a través de las aplicaciones de AEM Bandeja de entrada. Debe crear una aplicación de flujo de trabajo para que un flujo de trabajo de Forms esté disponible como aplicación en la Bandeja de entrada. Para obtener más información sobre la aplicación de flujo de trabajo y otras formas de iniciar flujos de trabajo de Forms, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](../../forms/using/aem-forms-workflow.md#launch).
+Una de las muchas maneras de iniciar o déclencheur un flujo de trabajo centrado en Forms es a través de las aplicaciones de AEM Bandeja de entrada. Debe crear una aplicación de flujo de trabajo para que un flujo de trabajo de Forms esté disponible como aplicación en la Bandeja de entrada. Para obtener más información sobre la aplicación de flujo de trabajo y otras formas de iniciar flujos de trabajo de Forms, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](../../forms/using/aem-forms-workflow.md#launch).
 
 Además, AEM Bandeja de entrada consolida las notificaciones y tareas de diversos componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de formularios que contiene un paso Asignar tarea, la aplicación asociada aparece como una tarea en la Bandeja de entrada del usuario asignado. Si el usuario asignado es un grupo, la tarea aparece en la Bandeja de entrada de todos los miembros del grupo hasta que un individuo reclame o delega la tarea.
 
@@ -40,7 +40,7 @@ En resumen, la Bandeja de entrada permite crear una nueva aplicación y administ
 
 ## Administrar tareas {#manage-tasks}
 
-Cuando se activa un flujo de trabajo de Forms y usted es un usuario asignado o parte del grupo asignado, aparece una tarea en la Bandeja de entrada. Puede vista de los detalles de la tarea y realizar las acciones disponibles en la tarea desde la Bandeja de entrada.
+Cuando un flujo de trabajo de Forms déclencheur y usted es un usuario asignado o parte del grupo de usuarios asignados, aparecerá una tarea en la Bandeja de entrada. Puede vista de los detalles de la tarea y realizar las acciones disponibles en la tarea desde la Bandeja de entrada.
 
 ### Reclamar o delegar tareas {#claim-or-delegate-tasks}
 
@@ -65,7 +65,7 @@ Las tareas asignadas a un grupo aparecen en la Bandeja de entrada de todos los m
 Al abrir una tarea, puede realizar vistas de los detalles de la tarea y realizar las acciones disponibles. Las acciones disponibles para una tarea se definen en el paso Asignar tarea del flujo de trabajo de Forms asociado.
 
 1. Toque para seleccionar la miniatura de la tarea. Las opciones para abrir o delegar la tarea seleccionada aparecen en la parte superior.
-1. Toque **Abrir** para ver los detalles de la tarea de vista y tome medidas. Se abre la vista de tarea detallada. En esta vista, puede realizar vistas en los detalles de tarea y realizar acciones en la tarea.
+1. Toque **Abrir** para obtener detalles de la tarea de vista y realizar acciones. Se abre la vista de tarea detallada. En esta vista, puede realizar vistas en los detalles de tarea y realizar acciones en la tarea.
 
    >[!NOTE]
    >
@@ -131,7 +131,7 @@ El propietario de un modelo de flujo de trabajo no puede vista elementos relacio
 
 1. Utilice uno de los siguientes métodos para agregar índices:
 
-   * Cree los siguientes nodos en CRX DE en `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` con las propiedades correspondientes, tal como se especifica en la tabla siguiente:
+   * Cree los siguientes nodos en CRX DE en `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` con las propiedades correspondientes, como se especifica en la tabla siguiente:
 
       | Nodo | Propiedad | Tipo |
       |---|---|---|
