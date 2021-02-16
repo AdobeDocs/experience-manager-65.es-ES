@@ -349,7 +349,7 @@ Si no es así, la función de catálogo se puede añadir fácilmente. Esto permi
 
 Si la estructura del sitio ya contiene la función de catálogo, se puede cambiar su Título.
 
-Para modificar la estructura del sitio, navegue a la consola **[!UICONTROL Communities]** > **[!UICONTROL Sites]**, abra la carpeta `enable` y seleccione el icono **Editar sitio** para acceder a las propiedades de `Enablement Tutorial`.
+Para modificar la estructura del sitio, vaya a la consola **[!UICONTROL Communities]** > **[!UICONTROL Sites]**, abra la carpeta `enable` y seleccione el icono **Editar sitio** para acceder a las propiedades de `Enablement Tutorial`.
 
 Seleccione el panel ESTRUCTURA para añadir un catálogo o modificar uno existente:
 
