@@ -24,13 +24,13 @@ Configure el sitio de referencia tal como se describe en [Configure y configure 
 
 ## Artículo del usuario {#user-story}
 
-* Formularios AEM
+* AEM Forms
 
    * Conversión automatizada de formularios
    * Creación  
    * Modelos de datos de formulario/Fuentes de datos
 
-* Formularios AEM
+* AEM Forms
 
    * Captura de datos
    * (Opcional) Integración de datos (MS Dynamics)
