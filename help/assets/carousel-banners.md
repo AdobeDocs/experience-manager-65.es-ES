@@ -19,7 +19,7 @@ ht-degree: 4%
 
 # Banner de carrusel{#carousel-banners}
 
-Los letreros de carrusel permiten a los especialistas en marketing impulsar la conversión creando fácilmente contenido promocional interactivo rotatorio y entregándolo a cualquier pantalla.
+Los letreros de carrusel permiten a los especialistas en marketing impulsar la conversión creando fácilmente contenido promocional interactivo rotatorio y entregándolo en cualquier pantalla.
 
 La creación y modificación de contenido destacado en las pancartas promocionales puede llevar mucho tiempo, lo que limita la capacidad de publicar contenido nuevo rápidamente o de hacerlo más específico. Los letreros de carrusel le permiten crear o modificar rápidamente letreros rotativos, agregar interactividad, como puntos interactivos vinculados a los detalles del producto o recursos relacionados, y distribuirlos en cualquier pantalla, lo que le permite comercializar más rápidamente contenido promocional.
 
@@ -119,16 +119,16 @@ La mayoría de las implementaciones de vista rápida utilizan el siguiente parad
 * Los datos de vista rápida se traducen al contenido como preparación para su procesamiento en la página web.
 * Por último, el código front-end procesa visualmente dicho contenido en la pantalla.
 
-El método consiste en visitar diferentes áreas del sitio web existente donde se implementa la función de vista rápida, activar la vista rápida y capturar la URL de Ajax enviada por la página web para cargar los datos o el contenido de vista rápida.
+El método consiste en visitar diferentes áreas del sitio web existente donde se implementa la función de vista rápida, déclencheur de la vista rápida y captura la URL de Ajax enviada por la página web para cargar los datos o el contenido de vista rápida.
 
 Normalmente no es necesario que utilice ninguna herramienta de depuración especializada. Los navegadores web modernos cuentan con inspectores web que realizan un trabajo adecuado. Estos son algunos ejemplos de exploradores Web que incluyen inspectores Web:
 
 * Para ver todas las solicitudes HTTP salientes en Google Chrome, pulse F12 (Windows) o Comando-Opción-I (Mac) para abrir el panel Herramientas del desarrollador y, a continuación, toque la ficha Red.
 * En Firefox, puede activar el complemento Firebug pulsando F12 (Windows) o Comando-Opción-I (Mac) y utilizar su ficha Red, o puede utilizar la herramienta Inspector integrada y su ficha Red.
 
-Cuando la supervisión de red está activada en el explorador, active la vista rápida en la página.
+Cuando se activa la supervisión de red en el navegador, se déclencheur la vista rápida en la página.
 
-Encuentre ahora la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para futuras análisis. En la mayoría de los casos, cuando se activa la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una ruta o parte de cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
+Encuentre ahora la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para futuras análisis. En la mayoría de los casos, cuando se déclencheur la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una ruta o parte de cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
 
 Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. La razón es que las direcciones URL de vista rápida pueden tener partes comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
 
@@ -178,7 +178,7 @@ Considere los siguientes ejemplos de direcciones URL de vista rápida y las vari
 
 ## Carga de letreros de imagen {#uploading-image-banners}
 
-Si ya ha cargado las imágenes que desea utilizar, avance al paso siguiente, [Creación de conjuntos de carrusel](#creating-carousel-sets). Tenga en cuenta que las imágenes utilizadas en el carrusel deben cargarse después de habilitar Dynamic Media.
+Si ya ha cargado las imágenes que desea utilizar, avance al paso siguiente, [Creación de conjuntos de carrusel](#creating-carousel-sets). Tenga en cuenta que las imágenes utilizadas en el carrusel deben cargarse una vez que Dynamic Media esté habilitado.
 
 Para cargar letreros de imagen, consulte [Carga de recursos](/help/assets/manage-assets.md).
 
@@ -367,7 +367,7 @@ Puede utilizar la Previsualización para ver el aspecto que tendrá la pancarta 
 Cuando esté satisfecho con la pancarta de carrusel, puede publicarla.
 Consulte [Incrustación del visor de imágenes o vídeos en una página Web](/help/assets/embed-code.md).
 Consulte [Vinculación de direcciones URL a la aplicación Web](/help/assets/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
-Consulte [Añadir recursos de Dynamic Media en páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Consulte [Añadir Dynamic Media Assets a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 Puede previsualización de letreros de carrusel desde el Editor de carrusel (método preferido) o desde la lista **[!UICONTROL Visores]**.
 
@@ -391,20 +391,20 @@ Puede previsualización de letreros de carrusel desde el Editor de carrusel (mé
 
 ## Publicación de letreros de carrusel {#publishing-carousel-banners}
 
-Debe publicar el carrusel para utilizarlo. Al publicar un conjunto de carrusel se activan la URL y el código incrustado. También publica el carrusel en la nube de Dynamic Media, que está integrada con una CDN para un envío escalable y de rendimiento.
+Debe publicar el carrusel para utilizarlo. Al publicar un conjunto de carrusel se activan la URL y el código incrustado. También publica el carrusel en la nube de Dynamic Media, que está integrado con una CDN para un envío escalable y de rendimiento.
 
 >[!NOTE]
 Si utiliza una imagen interactiva existente con zonas interactivas para la pancarta de carrusel, debe publicar la imagen interactiva por separado después de publicar la pancarta de carrusel.
 Además, si modifica una imagen interactiva publicada previamente que está utilizando en una pancarta de carrusel, debe publicar la imagen interactiva antes de que esos cambios se reflejen en la pancarta de carrusel.
 
-Consulte [Publicación de recursos de medios dinámicos](/help/assets/publishing-dynamicmedia-assets.md) para obtener información sobre cómo publicar letreros de carrusel.
+Consulte [Publicación de Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md) para obtener información sobre cómo publicar letreros de carrusel.
 
 ## Añadir una pancarta de carrusel a la página de su sitio web {#adding-a-carousel-banner-to-your-website-page}
 
 Una vez cargadas las imágenes de los letreros para crear un carrusel, añadidas zonas interactivas y/o mapas de imagen al letrero y publicado el conjunto de carrusel, ya estará listo para agregarlo a la página del sitio web existente.
 
 >[!NOTE]
-Si es cliente de AEM Sites, puede agregar la pancarta de carrusel directamente a la página arrastrando el componente Medios interactivos a la página. Consulte [Añadir recursos de medios dinámicos en páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Si es cliente de AEM Sites, puede agregar la pancarta de carrusel directamente a la página arrastrando el componente Medios interactivos a la página. Consulte [Añadir Dynamic Media Assets a páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 Sin embargo, si es cliente de recursos AEM independientes, puede agregar manualmente la pancarta de carrusel a la página de aterrizaje de su sitio web como se describe en esta sección.
 
@@ -422,7 +422,7 @@ El último paso en este proceso es integrar la pancarta de carrusel con una impl
 
 La implementación de vista rápida existente normalmente representa una cadena de acciones interrelacionadas que se producen en la página web en el siguiente orden:
 
-1. Un usuario activa un elemento en la interfaz de usuario del sitio web.
+1. Un usuario déclencheur un elemento en la interfaz de usuario del sitio web.
 1. El código front-end obtiene una URL de vista rápida basada en el elemento de interfaz de usuario que se activó en el paso 1.
 1. El código front-end envía una solicitud de Ajax utilizando la dirección URL obtenida en el paso 2.
 1. La lógica back-end devuelve los datos o el contenido de vista rápida correspondientes al código front-end.
@@ -438,7 +438,7 @@ En un controlador de evento de este tipo, el código front-end hace lo siguiente
 
 * Escucha un evento emitido por la pancarta de carrusel.
 * Construye una URL de vista rápida en función de los datos de puntos interactivos o mapas de imagen.
-* Activa el proceso de cargar la vista rápida desde el servidor y procesarla en la pantalla para su visualización.
+* Déclencheur el proceso de cargar la vista rápida desde el servidor y procesarla en la pantalla para su visualización.
 
 El código incrustado devuelto por AEM Assets ya tiene un controlador de eventos listo para usar en su lugar con comentarios.
 
@@ -448,7 +448,7 @@ El proceso de construir la URL de vista rápida es básicamente opuesto al proce
 
 Consulte [Identificación de variables de zona interactiva y mapa de imagen](#identifying-hotspot-and-image-map-variables).
 
-El último paso para activar la dirección URL de vista rápida y activar el panel de vista rápida requiere, muy probablemente, la asistencia de una persona de TI del cliente de su departamento de TI. Tienen los conocimientos para saber mejor cómo activar con precisión la implementación de vista rápida desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
+El último paso para realizar el déclencheur de la URL de vista rápida y activar el panel de vista rápida requiere, probablemente, la asistencia de una persona de TI del cliente de su departamento de TI. Tienen los conocimientos para saber mejor cómo déclencheur con precisión la implementación rápida de vistas desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
 
 ## Uso de las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
