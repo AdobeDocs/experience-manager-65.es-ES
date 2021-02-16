@@ -36,7 +36,7 @@ Debe realizar una copia de seguridad de las siguientes partes del sistema de for
 
 ## Realice una copia de seguridad de un entorno en clúster {#back-up-a-clustered-environment}
 
-En este tema se analizan las siguientes estrategias para realizar copias de seguridad de cualquier entorno agrupado de formularios AEM:
+En este tema se analizan las siguientes estrategias para realizar una copia de seguridad de cualquier entorno agrupado de formularios AEM:
 
 * Backup sin conexión con tiempo de inactividad
 * Backup sin conexión sin tiempo de inactividad (copia de seguridad de un nodo secundario que está apagado)
