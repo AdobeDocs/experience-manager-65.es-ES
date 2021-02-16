@@ -36,7 +36,7 @@ AEM Forms es una potente plataforma de clase empresarial. El flujo de trabajo ce
 
 ## Topología de implementación {#deployment-topology}
 
-El paquete de complementos de AEM Forms es una aplicación implementada en AEM. Solo se necesita un mínimo de una instancia de AEM Author o de procesamiento (autor de producción) para ejecutar el flujo de trabajo centrado en Forms en la función OSGi. Una instancia de procesamiento es una instancia [de AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) reforzada. No realice ninguna creación real, como la creación de flujos de trabajo o formularios adaptables, en el autor de la producción.
+El paquete de complementos de AEM Forms es una aplicación implementada en AEM. Solo se requiere un mínimo de una instancia de AEM Author o de procesamiento (autor de producción) para ejecutar el flujo de trabajo centrado en Forms en la función OSGi. Una instancia de procesamiento es una instancia [de AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) reforzada. No realice ninguna creación real, como la creación de flujos de trabajo o formularios adaptables, en el autor de la producción.
 
 La siguiente topología es una topología indicativa para ejecutar AEM Forms Interactive Communications, Correspondence Management, la captura de datos de AEM Forms y el flujo de trabajo Forms-Centric en funcionalidades OSGi. Para obtener información detallada sobre la topología, consulte [Topologías de arquitectura e implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
@@ -172,7 +172,7 @@ Dispatcher es una herramienta de almacenamiento en caché y equilibrio de carga 
 El almacenamiento en caché es un mecanismo para reducir los tiempos de acceso a los datos, reducir la latencia y mejorar las velocidades de entrada y salida (E/S). La caché de formularios adaptables almacena solo el contenido HTML y la estructura JSON de un formulario adaptable sin guardar datos precargados. Ayuda a reducir el tiempo necesario para procesar un formulario adaptable.
 
 * Al utilizar la caché de formularios adaptables, utilice el [AEM despachante](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) para almacenar en caché las bibliotecas cliente (CSS y JavaScript) de un formulario adaptable.
-* Al desarrollar componentes personalizados, mantenga la caché de formularios adaptables deshabilitada en el servidor que se utiliza para el desarrollo.
+* Al desarrollar componentes personalizados, mantenga la caché de formularios adaptables deshabilitada en el servidor utilizado para el desarrollo.
 
 Realice los siguientes pasos para configurar la caché de formularios adaptables:
 
