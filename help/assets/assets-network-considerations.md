@@ -68,7 +68,7 @@ En los diagramas de ejemplo, puede concluir que seis dispositivos comparten un c
 
 El diseño de la topología del entorno [!DNL Experience Manager] requiere un conocimiento detallado de la configuración del sistema y de cómo se conecta la red dentro del entorno del usuario.
 
-El escenario de ejemplo incluye un conjunto de servidores de publicación con cinco servidores, un almacén binario S3 y Dynamic Media configurados.
+El escenario de ejemplo incluye un conjunto de servidores de publicación con cinco servidores, un almacén binario S3 y Dynamic Media configurado.
 
 El despachante comparte su conexión de 100 Mbps con dos entidades, el mundo exterior y la implementación [!DNL Experience Manager]. Para las operaciones de carga y descarga simultáneas, debe dividir este número por dos. El almacenamiento externo adjunto utiliza una conexión independiente.
 
@@ -78,14 +78,14 @@ Al revisar la red desde el dispositivo cliente a la implementación [!DNL Experi
 
 ## Flujos de trabajo definidos de la implementación [!DNL Experience Manager] {#defined-workflows-of-the-aem-deployment}
 
-Al considerar el rendimiento de la red, puede ser importante tener en cuenta los flujos de trabajo y la publicación que se producirán en el sistema. Además, S3 u otro almacenamiento conectado a la red que utilice y las solicitudes de E/S consumen ancho de banda de red. Por lo tanto, incluso en una red totalmente optimizada, el rendimiento puede verse limitado por la E/S de disco.
+Al considerar el rendimiento de la red, puede ser importante tener en cuenta los flujos de trabajo y publicaciones que se producirán en el sistema. Además, S3 u otro almacenamiento conectado a la red que utilice y las solicitudes de E/S consumen ancho de banda de red. Por lo tanto, incluso en una red totalmente optimizada, el rendimiento puede verse limitado por la E/S de disco.
 
 Para optimizar los procesos relacionados con la ingestión de recursos (especialmente al cargar un gran número de recursos), explore los flujos de trabajo de recursos y conozca mejor su configuración.
 
 Al evaluar la topología del flujo de trabajo interno, debe analizar lo siguiente:
 
 * Procedimientos para escribir un activo
-* Flujos de trabajo/eventos que se activan al modificar recursos/metadatos
+* Flujos de trabajo/eventos que déclencheur cuando se modifican recursos/metadatos
 * Procedimientos para leer un activo
 
 Estos son algunos de los temas a considerar:
