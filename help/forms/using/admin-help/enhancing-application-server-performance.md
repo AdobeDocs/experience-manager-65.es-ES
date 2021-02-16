@@ -188,7 +188,7 @@ El uso de la agrupación de conexiones en la conexión de búsqueda puede reduci
 1. Haga clic con el doble en el panel derecho para establecer el valor TcpTimedWaitDelay. En Base, seleccione Decimal y, en el cuadro Valor, escriba `30`.
 1. Haga clic con el doble en el panel derecho para establecer el valor de MaxUserPort. En Base, seleccione Decimal y, en el cuadro Valor, escriba `65534`.
 1. Haga clic con el doble dentro del panel derecho para establecer el valor de MaxHashTableSize. En Base, seleccione Decimal y, en el cuadro Valor, escriba `65536`.
-1. Haga clic con el doble dentro del panel derecho para establecer el valor de MaxFreeTcbs. En Base, seleccione Decimal y, en el cuadro Valor, escriba `16000`.
+1. Haga clic con el doble en el panel derecho para establecer el valor de MaxFreeTcbs. En Base, seleccione Decimal y, en el cuadro Valor, escriba `16000`.
 
 >[!NOTE]
 >
