@@ -88,7 +88,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Una página web contiene un vínculo que accede a un servlet Java que invoca el servicio Forms.</p></td>
   </tr>
   <tr>
