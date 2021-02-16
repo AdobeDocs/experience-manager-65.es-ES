@@ -32,15 +32,15 @@ Para un formulario adaptable, la opción de guardado automático no está activa
 1. Para acceder a la sección de guardado automático de las propiedades, seleccione un componente, toque ![campo-nivel](assets/field-level.png) > **[!UICONTROL Contenedor de formulario adaptable]** y luego toque ![cmppr](assets/cmppr.png).
 1. En la sección **[!UICONTROL Guardado automático]**, **[!UICONTROL Habilite]** la opción de guardado automático.
 1. En el cuadro **[!UICONTROL Evento de formulario adaptable]**, especifique 1 o TRUE para guardar automáticamente el formulario cuando se cargue en el explorador en inicio para guardarlo. También puede especificar una expresión condicional para un evento, que cuando se activa y devuelve verdadero, inicios que guardan el contenido del formulario.
-1. Especifique el activador. El guardado automático se activa según la configuración. Sus opciones son:
+1. Especifique el Déclencheur. El guardado automático se activa según la configuración. Sus opciones son:
 
    * **[!UICONTROL Basado en el tiempo:]** seleccione la opción para guardar en inicio el contenido en función de un intervalo de tiempo específico.
    * **[!UICONTROL Basado en evento:]** seleccione la opción para guardar en inicio el contenido en función de cuándo se activa un evento.
 
-   Al seleccionar un activador, se activa el cuadro Configuración de estrategia. El cuadro Configuración de estrategia permite:
+   Al seleccionar un déclencheur, se activa el cuadro de configuración de estrategia. El cuadro Configuración de estrategia permite:
 
-   * Especifique un intervalo de tiempo si selecciona **[!UICONTROL activador basado en tiempo]**.
-   * Especifique un nombre de evento si selecciona **[!UICONTROL activador basado en Evento]**.
+   * Especifique un intervalo de tiempo si selecciona el déclencheur **[!UICONTROL basado en tiempo]**.
+   * Especifique un nombre de evento si selecciona el déclencheur **[!UICONTROL basado en Evento]**.
 
    También puede crear y agregar su propia estrategia personalizada a la lista. Para obtener más información, consulte [Implementación de una estrategia personalizada para guardar automáticamente los formularios](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
 
@@ -62,11 +62,11 @@ Para un formulario adaptable, la opción de guardado automático no está activa
 
 ## Implementar una estrategia personalizada para habilitar el guardado automático para formularios adaptables {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
 
-Puede implementar un evento personalizado para activar la funcionalidad de guardado automático. Realice los siguientes pasos para crear e implementar el evento personalizado:
+Puede implementar un evento personalizado para déclencheur de la funcionalidad de guardado automático. Realice los siguientes pasos para crear e implementar el evento personalizado:
 
 1. Cree carpetas de biblioteca de cliente y de biblioteca de cliente. Para ver los pasos detallados, consulte el [documento Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md).
 
-   Por ejemplo, la siguiente secuencia de comandos utiliza el evento personalizado `emailFocusChange`para activar la funcionalidad de guardado automático:
+   Por ejemplo, la siguiente secuencia de comandos utiliza el evento personalizado `emailFocusChange`para déclencheur de la funcionalidad de guardado automático:
 
    ```javascript
    window.addEventListener("bridgeInitializeStart", function (){
