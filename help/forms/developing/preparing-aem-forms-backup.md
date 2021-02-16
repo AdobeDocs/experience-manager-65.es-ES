@@ -112,7 +112,7 @@ Introduzca el modo de copia de seguridad mediante la API de servicio de copia de
    * adobe-livecycle-client.jar
    * adobe-usermanager-client.jar
    * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-   * jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+   * jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 1. Creación de un objeto de API de cliente de BackupService
 
@@ -227,7 +227,7 @@ Deje el modo de copia de seguridad mediante la API de servicio de copia de segur
    * adobe-livecycle-client.jar
    * adobe-usermanager-client.jar
    * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-   * jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+   * jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 1. Creación de un objeto de API de cliente de BackupService
 
