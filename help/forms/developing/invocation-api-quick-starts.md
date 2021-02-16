@@ -229,7 +229,7 @@ El siguiente ejemplo de código Java invoca un proceso de corta duración llamad
 
 ## Inicio rápido: Invocación de un servicio mediante base64 en un proyecto de Microsoft .NET {#quick-start-invoking-a-service-using-base64-in-a-microsoft-net-project}
 
-El siguiente ejemplo de código C# invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto de Microsoft .NET que utiliza la codificación Base64. (Consulte [Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)).
+El siguiente ejemplo de código C# invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto de Microsoft .NET con codificación Base64. (Consulte [Invocación de AEM Forms mediante codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)).
 
 Un documento PDF no seguro basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms. El proceso devuelve un documento PDF con contraseña cifrada que se guarda como archivo PDF con el nombre *EncryptedPDF.pdf*.
 
