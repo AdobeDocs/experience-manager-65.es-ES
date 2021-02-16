@@ -519,7 +519,7 @@ Puede utilizar el servicio de configuración de temas para agregar más fuentes 
 
 #### Selección de fuentes en el editor de temas {#selecting-fonts-in-theme-editor}
 
-Puede utilizar el botón + para agregar una fuente. Cuando agrega una fuente, aparece en la barra lateral.
+Puede utilizar el botón + para añadir una fuente. Cuando agrega una fuente, aparece en la barra lateral.
 
 ![Nueva fuente enumerada en el editor de temas](assets/theme-font.png)
 
