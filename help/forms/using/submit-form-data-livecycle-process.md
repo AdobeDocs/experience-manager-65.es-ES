@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Configuración de AEM Forms para enviar datos de formulario a un AEM Forms en un proceso JEE{#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
 
-Los formularios adaptables admiten el envío de datos a un proceso AEM Forms en JEE para un procesamiento posterior. Permite activar un proceso de AEM Forms en JEE con los datos disponibles en el formulario enviado. Realice los siguientes pasos para permitir que la instancia de AEM Forms envíe un formulario adaptable a AEM Forms en el proceso JEE:
+Los formularios adaptables admiten el envío de datos a un proceso AEM Forms en JEE para un procesamiento posterior. Permite el déclencheur de un proceso de AEM Forms en JEE con los datos disponibles en el formulario enviado. Realice los siguientes pasos para permitir que la instancia de AEM Forms envíe un formulario adaptable a AEM Forms en el proceso JEE:
 
 ## Configure el servidor de AEM Forms {#configure-your-aem-forms-server}
 
