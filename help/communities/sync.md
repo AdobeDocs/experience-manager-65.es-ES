@@ -91,7 +91,7 @@ Para el contenido generado por el usuario (UGC), se accede a los datos introduci
 
 De forma predeterminada, la sincronización de usuarios está **deshabilitada**. Habilitar la sincronización de usuarios implica modificar las configuraciones de OSGi *existentes*. No se deben agregar nuevas configuraciones como resultado de habilitar la sincronización de usuarios.
 
-La sincronización de usuarios depende del entorno de creación para administrar las distribuciones de datos de usuario, aunque los datos de usuario no se hayan creado en el autor.
+La sincronización de usuarios depende del entorno de creación para administrar las distribuciones de datos de usuarios, aunque los datos de usuario no se hayan creado en el autor.
 
 **Requisitos previos**
 
@@ -130,7 +130,7 @@ Para configurar los agentes de sincronización de Apache Sling:
    * Seleccione **Usar varias colas.**
    * Especifique **Extremos del exportador** y **Extremos del importador** (puede agregar más extremos del exportador y del importador).
 
-      Estos extremos definen de dónde desea obtener el contenido y desde dónde desea insertar el contenido. El autor obtiene el contenido del extremo del exportador especificado y lo envía a los editores (excepto al editor del que obtuvo el contenido).
+      Estos extremos definen de dónde desea obtener el contenido y desde dónde desea insertar el contenido. El autor obtiene el contenido del extremo del exportador especificado y lo envía a los editores (excepto al editor desde el que obtuvo el contenido).
    ![sync-agent-facto](assets/sync-agent-fact.png)
 
 ### Distribución de granito de Adobe: Proveedor secreto de transporte de contraseña cifrada {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
@@ -202,7 +202,7 @@ Para garantizar la sincronización de miembros:
 
    ![diff-obs](assets/diff-obs.png)
 
-### Activador de distribución de Apache Sling - Fábrica de activadores programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### Déclencheur de distribución de Apache Sling - Fábrica de Déclencheur programados {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 Esta configuración le permite configurar el intervalo de sondeo (después de lo cual el autor hace ping a los editores y extrae los cambios) para sincronizar los cambios entre los editores.
 
@@ -212,15 +212,15 @@ Para modificar el intervalo de sondeo:
 
 1. Inicie sesión con privilegios de administrador en su instancia de autor de AEM.
 1. Acceda a la [Consola Web](/help/sites-deploying/configuring-osgi.md), por ejemplo, [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-1. Localizar **Activador de distribución de Apache Sling: Fábrica de activadores programados**
+1. Localice **Déclencheur de distribución de Apache Sling: Déclencheur programados**
 
    * Seleccione la configuración existente para abrirla y editarla (icono de lápiz).
 
-      Verificar **socialpubsync -schedule-desencadenador**
+      Verificar **socialpubsync -schedule-déclencheur**
 
    * Establezca el intervalo en segundos en el intervalo deseado y guárdelo.
 
-   ![schedule-desencadenador](assets/scheduled-trigger.png)
+   ![déclencheur programado](assets/scheduled-trigger.png)
 
 ### Escucha de sincronización de usuarios de AEM Communities {#aem-communities-user-sync-listener}
 
@@ -240,7 +240,7 @@ En cada instancia de publicación AEM:
 1. Busque **Listener de sincronización de usuarios de AEM Communities**.
 1. Seleccione la configuración existente para abrirla y editarla (icono de lápiz)
 
-   Verificar nombre: **socialpubsync -schedule-activation**
+   Verificar nombre: **socialpubsync -schedule-déclencheur**
 
 1. Establezca los siguientes **TiposDeNodo**:
 
