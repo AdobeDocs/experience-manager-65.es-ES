@@ -31,7 +31,7 @@ Puede configurar manualmente el archivo FontManagerResources.properties para asi
 1. Busque el archivo FontManagerResources.properties y ábralo en un editor de texto.
 1. Modifique los nombres y las ubicaciones de fuentes genéricas y de reserva según sea necesario y guarde el archivo.
 
-   Las entradas de fuente del archivo FontManagerResources.properties son relativas al directorio *`[aem-forms root]`*/fonts. Si especifica fuentes que no son predeterminadas AEM fuentes de formularios, debe instalar dichas fuentes dentro de esta estructura de directorio (ya sea dentro de un directorio existente o en uno recién creado).
+   Las entradas de fuente del archivo FontManagerResources.properties son relativas al directorio *`[aem-forms root]`*/fonts. Si especifica fuentes que no son predeterminadas AEM las fuentes de formularios, debe instalar dichas fuentes dentro de esta estructura de directorio (ya sea dentro de un directorio existente o en uno recién creado).
 
    >[!NOTE]
    >
