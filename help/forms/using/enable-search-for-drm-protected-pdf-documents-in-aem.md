@@ -54,7 +54,7 @@ Puede utilizar uno de los siguientes métodos para establecer la conexión segur
 * Configurar el paquete SDK de Adobe LiveCycle Client con AEM Forms en las credenciales de administrador de JEE
 * Configurar el paquete SDK del cliente de Adobe LiveCycle mediante autenticación mutua
 
-#### Configurar el paquete SDK de cliente de Adobe LiveCycle con AEM Forms en las credenciales de administrador de JEE {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
+#### Configurar el paquete de SDK de cliente de Adobe LiveCycle con AEM Forms en las credenciales de administrador de JEE {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
 1. Abra AEM consola web. La dirección URL es https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Busque y abra el **paquete del SDK del cliente de Adobe LiveCycle**. Especifique un valor para los campos siguientes:
