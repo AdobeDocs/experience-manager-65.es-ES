@@ -71,7 +71,7 @@ Si lo necesita, puede editar [Conjuntos de medios mixtos](#editing-mixed-media-s
 
 >[!NOTE]
 >
->Si tiene problemas al crear conjuntos, consulte [Resolución de problemas de Dynamic Media: modo Scene7](/help/assets/troubleshoot-dms7.md).
+>Si tiene problemas al crear conjuntos, consulte [Solución de problemas de Dynamic Media - modo Scene7](/help/assets/troubleshoot-dms7.md).
 
 ## Carga de recursos {#uploading-assets}
 
