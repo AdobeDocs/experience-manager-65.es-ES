@@ -57,7 +57,7 @@ Para incrustar un formulario adaptable o una comunicación interactiva mediante 
 
    * **Tipo de recurso:** seleccione el tipo de recurso que desea incrustar. Las opciones son formulario adaptable y comunicación interactiva
    * **Ruta** del recurso: Busque y seleccione el formulario adaptable o la comunicación interactiva que desea incrustar. Se rellena automáticamente si se ha soltado desde el navegador de recursos.
-   * (Sólo formulario adaptable) **Envío de anuncio**: Seleccione la acción que se activará al enviar el formulario. Puede elegir mostrar un mensaje de agradecimiento o una página de agradecimiento.
+   * (Sólo formulario adaptable) **Envío de anuncio**: Seleccione la acción a déclencheur en el envío del formulario. Puede elegir mostrar un mensaje de agradecimiento o una página de agradecimiento.
 
       * **Mensaje** de agradecimiento: Escriba un mensaje con el editor de texto enriquecido para mostrarlo en el envío del formulario. Esta opción solo está disponible cuando elige mostrar un mensaje de agradecimiento.
       * **Página** de agradecimiento: Explore y seleccione la página que desea mostrar al enviar el formulario. Esta opción solo está disponible cuando elige mostrar una página de agradecimiento.
