@@ -156,7 +156,7 @@ Para personalizar la gestión de correspondencia a fin de permitir que los usuar
 
    1. Haga clic en **Aceptar**. La estructura de carpetas se crea en la carpeta de aplicaciones. Haga clic en **Guardar todo**.
 
-1. En la carpeta js, cree un archivo llamado formaction.js con el código para el control de acciones del botón mediante los siguientes pasos:
+1. En la carpeta js, cree un archivo llamado formaction.js con el código para la gestión de acciones del botón mediante los siguientes pasos:
 
    1. Haga clic con el botón derecho en la carpeta **js** en la siguiente ruta y seleccione **Crear > Crear archivo**:
 
