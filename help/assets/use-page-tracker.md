@@ -17,7 +17,7 @@ El rastreador de páginas es un fragmento de código JavaScript que se incluye e
 
 Para capturar eventos, como clics, etc., específicos de los recursos, también debe incluir el código incrustado en el código de sitios web de terceros.
 
-El siguiente código de ejemplo muestra cómo se ve una página web que contiene tanto el código del rastreador de páginas como el código incrustado:
+El siguiente código de ejemplo muestra cómo se ve una página web que contiene el código del rastreador de páginas y el código incrustado:
 
 ```html
 <!DOCTYPE html>
