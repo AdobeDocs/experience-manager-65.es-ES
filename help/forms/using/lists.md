@@ -229,7 +229,7 @@ Una lista es un grupo de contenido relacionado que se puede utilizar en una plan
 * Al crear una lista, puede especificar un tipo, como:
 * **Sin formato**: No se aplica ningún formato de estilo adicional a la lista.
 * **Con viñetas**: Lista con formato de viñeta simple.
-* **Numerado**: Una lista numérica con la opción de numerales Estándar (1,2,...), Alta romana (I, II, ...) y Baja romana (i, ii,...).
+* **Numerado**: Una lista numérica con la elección de números estándar (1,2,...), romanos superiores (I, II, ...) y romanos inferiores (i, ii,...).
 * **Escritos**: Una lista alfabética con la elección de letras en minúsculas (a,b,...) y mayúsculas (A,B,...).
 * **Personalizado**: Puede crear cualquier tipo Numerado/Escrito y los valores de prefijo y sufijo que desee.
 
