@@ -71,5 +71,5 @@ La estandarización del uso de metadatos, la nominación de archivos y la estruc
 >* [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md).
 >* [Perfiles de metadatos](/help/assets/metadata-config.md#metadata-profiles).
 >* [Perfiles](video-profiles.md) de vídeo.
->* [Perfiles](image-profiles.md) de imagen de Dynamic Media.
+>* [perfiles](image-profiles.md) de imagen de Dynamic Media.
 
