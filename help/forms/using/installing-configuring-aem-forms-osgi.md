@@ -198,7 +198,7 @@ Dispatcher es una herramienta de almacenamiento en caché y/o equilibrio de carg
 El almacenamiento en caché es un mecanismo para reducir los tiempos de acceso a los datos, reducir la latencia y mejorar las velocidades de entrada y salida (E/S). La caché de formularios adaptables almacena solo el contenido HTML y la estructura JSON de un formulario adaptable sin guardar datos precargados. Ayuda a reducir el tiempo necesario para procesar un formulario adaptable.
 
 * Al utilizar la caché de formularios adaptables, utilice el [AEM despachante](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) para almacenar en caché las bibliotecas cliente (CSS y JavaScript) de un formulario adaptable.
-* Al desarrollar componentes personalizados, mantenga la caché de formularios adaptables deshabilitada en el servidor que se utiliza para el desarrollo.
+* Al desarrollar componentes personalizados, mantenga la caché de formularios adaptables deshabilitada en el servidor utilizado para el desarrollo.
 
 Realice los siguientes pasos para configurar la caché de formularios adaptables:
 
