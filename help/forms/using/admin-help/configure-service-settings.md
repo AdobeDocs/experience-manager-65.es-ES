@@ -411,7 +411,7 @@ Según el servidor LDAP, el nombre de usuario podría ser un nombre de usuario s
 
 ## Configuración del servicio de configuración de Microsoft SharePoint {#microsoft-sharepoint-configuration-service-settings}
 
-El servicio de configuración de Microsoft SharePoint `(MSSharePointConfigService)`permite especificar credenciales para el usuario de formularios AEM que tiene permisos de suplantación. Para obtener información sobre los permisos de suplantación, consulte [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
+El servicio de configuración de Microsoft SharePoint `(MSSharePointConfigService)`le permite especificar credenciales para el usuario de formularios AEM que tiene permisos de suplantación. Para obtener información sobre los permisos de suplantación, consulte [Configuración del conector para Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 Los siguientes ajustes están disponibles para el servicio de configuración de Microsoft SharePoint:
 
@@ -705,7 +705,7 @@ Si se está extrayendo un gran volumen de archivos, haga que el tamaño del lote
 
 Cuando los archivos se colocan en la carpeta vigilada, se lista la entrada de los archivos, lo que puede reducir el rendimiento si se realiza el análisis cada segundo. El aumento del intervalo de exploración puede mejorar el rendimiento. Si el volumen de archivos que se van a soltar es pequeño, ajuste el tamaño del lote y el intervalo de repetición en consecuencia. Por ejemplo, si se pierden 10 archivos cada segundo, intente establecer el intervalo de repetición en 1 segundo y el tamaño del lote en 10.
 
-En una configuración de clúster, el tamaño del lote de un extremo de carpeta vigilado no se escala a varios nodos de clúster. Por ejemplo, si el tamaño del lote se establece en `2` para un clúster de dos nodos y se selecciona la opción Aceleración, los nodos procesan los archivos de forma colectiva en lotes de dos en lugar de que cada nodo procese dos archivos a la vez.
+En una configuración de clúster, el tamaño de lote de un extremo de carpeta vigilado no se escala a varios nodos de clúster. Por ejemplo, si el tamaño del lote se establece en `2` para un clúster de dos nodos y se selecciona la opción Aceleración, los nodos procesan los archivos de forma colectiva en lotes de dos en lugar de que cada nodo procese dos archivos a la vez.
 
 **Sobrescribir nombres de archivo de Duplicado:** una cadena booleana que especifica si la carpeta vigilada sobrescribe los nombres de archivo de resultados de duplicado y si se deben sobrescribir los documentos conservados del mismo nombre.
 
@@ -834,7 +834,7 @@ Se instalan perfiles de seguridad predeterminados, que se pueden configurar para
    * **MODIFY_VERSION_PERM:** Para modificar una versión del servicio
    * **READ_PERM:** vista del servicio
    * **PROCESS_OWNER_PERM:** Para utilizarlo en una versión futura de AEM formularios. No utilice este permiso.
-   * **SERVICE_MANAGER_PERM:** Para su uso en una versión futura de AEM formularios. No utilice este permiso.
+   * **SERVICE_MANAGER_PERM:** Para utilizarlo en una versión futura de AEM formularios. No utilice este permiso.
    * **SERVICE_AGENT_PERM:** Para su uso en una versión futura de AEM formularios. No utilice este permiso.
 
 1. Haga clic en Agregar.
