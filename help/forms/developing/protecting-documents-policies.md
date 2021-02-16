@@ -152,7 +152,7 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si va a crear una 
 Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 
 * adobe-rightsmanagement-client.jar
-* área de nombres.jar (si AEM Forms está implementado en JBoss)
+* Área de nombres.jar (si AEM Forms está implementado en JBoss)
 * jaxb-api.jar (si AEM Forms se implementa en JBoss)
 * jaxb-impl.jar (si AEM Forms está implementado en JBoss)
 * jaxb-libs.jar (si AEM Forms se implementa en JBoss)
