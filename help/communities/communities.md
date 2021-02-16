@@ -79,7 +79,7 @@ Los componentes, las funciones y las características de AEM Communities proporc
 ## Administración de datos {#managing-data}
 
 * [SRP y UGC Essentials](srp-and-ugc.md)  - Métodos y ejemplos de utilidad de la API de SRP
-* [Tag Essentials](tag.md) : capacidad para que los miembros de la comunidad etiqueten recursos de habilitación de catálogos y/o UGC
+* [Tag Essentials](tag.md) : capacidad para que los miembros de la comunidad etiqueten recursos de habilitación de catálogos o UGC
 
 ## Tutoriales {#tutorials}
 
