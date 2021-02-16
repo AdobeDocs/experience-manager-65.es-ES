@@ -582,7 +582,7 @@ Interacciones de componentes para conversión de archivos nativos
 
 Este documento utiliza el término *aplicación nativa* para indicar la aplicación utilizada para producir un formato de archivo nativo, como Microsoft Word.
 
-** AppMonis es un componente empresarial que interactúa con una aplicación nativa del mismo modo en que un usuario navegará por los cuadros de diálogo presentados por esa aplicación. Las gramáticas XML utilizadas por AppMon para indicar a una aplicación, como Microsoft Word, que abra e imprima un archivo con estas tareas secuenciales:
+** AppMonis es un componente empresarial que interactúa con una aplicación nativa de la misma manera que un usuario navegaría por los cuadros de diálogo presentados por esa aplicación. Las gramáticas XML utilizadas por AppMon para indicar a una aplicación, como Microsoft Word, que abra e imprima un archivo con estas tareas secuenciales:
 
 1. Abrir el archivo seleccionando Archivo > Abrir
 1. Asegurarse de que aparece el cuadro de diálogo Abrir; si no es así, la gestión del error
@@ -595,7 +595,7 @@ AppMon utiliza las API estándar Win32 para interactuar con aplicaciones de terc
 
 Debido a una limitación con estas API de Win32, AppMon no puede distribuir estos eventos de interfaz de usuario a algunos tipos específicos de ventanas, como barras de menús flotantes (que se encuentran en algunas aplicaciones como TextPad) y determinados tipos de diálogos cuyo contenido no se puede recuperar con las API de Win32.
 
-Es fácil identificar visualmente una barra de menús flotante; sin embargo, tal vez no sea posible identificar los tipos especiales de diálogos sólo mediante una inspección visual. Necesitaría una aplicación de terceros como Microsoft Spy++ (parte del entorno de desarrollo de Microsoft Visual C++) o su WinID equivalente (que se puede descargar gratuitamente desde [https://www.dennisbabkin.com/php/download.php?what=WinID](https://www.dennisbabkin.com/php/download.php?what=WinID)) para examinar un cuadro de diálogo y determinar si AppMon podría interactuar con él mediante las API estándar Win32.
+Es fácil identificar visualmente una barra de menús flotante; sin embargo, tal vez no sea posible identificar los tipos especiales de diálogos sólo mediante una inspección visual. Necesitaría una aplicación de terceros como Microsoft Spy++ (parte del entorno de desarrollo de Microsoft Visual C++) o su WinID equivalente (que se puede descargar gratuitamente desde [https://www.dennisbabkin.com/php/download.php?what=WinID](https://www.dennisbabkin.com/php/download.php?what=WinID)) para examinar un cuadro de diálogo y determinar si AppMon podría interactuar con él mediante las API Win32 estándar.
 
 Si WinID es capaz de extraer el contenido del cuadro de diálogo como el texto, las subventanas, la ID de la clase de ventana, etc., AppMon también podría hacer lo mismo.
 
