@@ -91,7 +91,7 @@ Puede insertar una condición en línea en una letra insertando la condición en
 
 ## Repetir {#repeat}
 
-Puede tener información dinámica en la comunicación/carta interactiva, como las transacciones en un extracto de tarjeta de crédito, cuya instancia o incidencia puede seguir cambiando con cada carta generada. Si utiliza la opción de repetición, puede dar formato y estructurar dicha información dinámica en el fragmento de documento de texto.
+Puede tener información dinámica en la comunicación o carta interactiva, como transacciones en un extracto de tarjeta de crédito, cuya instancia o incidencia puede seguir cambiando con cada carta generada. Si utiliza la opción de repetición, puede dar formato y estructurar dicha información dinámica en el fragmento de documento de texto.
 
 Además, puede especificar una regla o condición dentro de la construcción repetida para condicionalizar la información o las entradas que se procesan en la comunicación o letra interactiva.
 
