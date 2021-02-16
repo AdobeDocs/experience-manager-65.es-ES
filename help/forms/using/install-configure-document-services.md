@@ -55,7 +55,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM. 
 
 >[!NOTE]
 >
->Aunque AEM Forms le permite configurar y ejecutar todas las funcionalidades desde un único servidor, debe planificar la capacidad, equilibrar la carga y configurar servidores dedicados para funciones específicas en un entorno de producción. Por ejemplo, para un entorno que utilice el servicio de generación de archivos PDF para convertir miles de páginas al día y varios formularios adaptables para capturar datos, configure servidores AEM Forms independientes para el servicio de generación de archivos PDF y funciones de formularios adaptables. Ayuda a proporcionar un rendimiento óptimo y a escalar los servidores de forma independiente.
+>Aunque AEM Forms le permite configurar y ejecutar todas las funcionalidades desde un único servidor, debe planificar la capacidad, balancear la carga y configurar servidores dedicados para funciones específicas en un entorno de producción. Por ejemplo, para un entorno que utilice el servicio de generación de archivos PDF para convertir miles de páginas al día y varios formularios adaptables para capturar datos, configure servidores AEM Forms independientes para el servicio de generación de archivos PDF y funciones de formularios adaptables. Ayuda a proporcionar un rendimiento óptimo y a escalar los servidores de forma independiente.
 
 ## Requisitos del sistema {#system-requirements}
 
