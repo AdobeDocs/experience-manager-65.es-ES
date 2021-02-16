@@ -132,7 +132,7 @@ Realice los pasos siguientes para crear una prueba A/B para un formulario adapta
 
 1. Vaya a la interfaz de usuario de Forms y Documentos, seleccione el formulario adaptable, haga clic en **Más** y seleccione **Prueba A/B de Inicio**.
 
-La prueba A/B se está ejecutando y la audiencia especificada se ofrecerá aleatoriamente a las experiencias según la distribución especificada.
+La prueba A/B se está ejecutando y la audiencia especificada se ofrecerá aleatoriamente a las experiencias en función de la distribución especificada.
 
 ## Actualizar la prueba A/B {#update-a-b-test}
 
