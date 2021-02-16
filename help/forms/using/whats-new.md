@@ -208,7 +208,7 @@ AEM Forms se puede configurar mediante cualquier combinación de sistemas operat
 
 #### Nuevas IU basadas en HTML5 {#new-html-based-uis}
 
-En línea con la EOL planificada de Flash Player de Adobe y la dirección general de la migración de contenido basado en Flash a estándares abiertos, AEM 6.5 Forms ha sustituido la IU basada en Flashes de la interfaz de usuario de la interfaz de usuario de la supervisión de mantenimiento, la administración de procesos, la extensión de Reader y la administración de Categorías de AEM Forms en la consola de administración de JEE con la IU basada en HTML5.
+En línea con la EOL planificada de Flash Player de Adobe y la dirección general de la migración de contenido basado en Flash a estándares abiertos, AEM 6.5 Forms ha sustituido la IU basada en Flashes de la interfaz de usuario de la interfaz de usuario de la supervisión de estado, la administración de procesos, la extensión de Reader y la administración de Categorías de AEM Forms en la consola de administración de JEE con la IU basada en HTML5.
 
 #### Mejoras de seguridad {#security-improvements}
 
