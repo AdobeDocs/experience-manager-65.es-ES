@@ -117,7 +117,7 @@ Después de crear el cliente de servicio, hacer referencia a un archivo DDX, cre
 
 El servicio Ensamblador devuelve un objeto `java.util.Map`, que se puede obtener del objeto `AssemblerResult` y que contiene resultados de la operación. El objeto `java.util.Map` devuelto contiene los documentos resultantes y las excepciones que se pueden hacer.
 
-En la siguiente tabla se resumen algunos de los valores clave y tipos de objetos que pueden ubicarse en el objeto `java.util.Map` devuelto.
+En la siguiente tabla se resumen algunos de los valores clave y tipos de objetos que se pueden ubicar en el objeto `java.util.Map` devuelto.
 
 <table>
  <thead>
@@ -193,7 +193,7 @@ Monte un documento PDF mediante la API de servicio de ensamblador (Java):
 
    * Un objeto `com.adobe.idp.Document` que representa el documento DDX que se va a utilizar
    * Un objeto `java.util.Map` que contiene los archivos PDF de entrada que se van a ensamblar
-   * Un objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica las opciones en tiempo de ejecución, incluidos el nivel predeterminado de fuente y registro de trabajos
+   * Un objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica las opciones en tiempo de ejecución, incluido el nivel predeterminado de fuente y registro de trabajos
 
    El método `invokeDDX` devuelve un objeto `com.adobe.livecycle.assembler.client.AssemblerResult` que contiene los resultados del trabajo y las excepciones que se hayan producido.
 
