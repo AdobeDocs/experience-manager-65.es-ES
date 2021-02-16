@@ -178,7 +178,7 @@ A continuación se muestra la lista de recursos que ya se han creado en este tut
 1. Defina el estilo del texto del hipervínculo para que se muestre como un botón en la Comunicación interactiva siguiendo los pasos siguientes:
 
    1. Toque el componente de texto y seleccione ![editar](assets/edit.png) (Editar).
-   1. En la sección **Borde**, especifique **1,5px** como **Ancho del borde**, seleccione **Sólido** como **Estilo del borde** y especifique **46px** como &lt;a1>. 2/>Radio del borde **.**
+   1. En la sección **Borde**, especifique **1,5px** como **Ancho del borde**, seleccione **Sólido** como **Estilo del borde** y especifique **46px** como **. 2/>Radio del borde**.
 
    1. Seleccione Rojo como color de fondo para el botón en la sección **Fondo**.
    1. En el campo **Margen** de la sección **Dimension y posición**, toque el icono **Editar simultáneamente** y establezca el margen **Derecha** como **450px**. Los campos Superior, Inferior e Izquierda se definen como en blanco.
