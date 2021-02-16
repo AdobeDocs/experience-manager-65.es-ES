@@ -38,7 +38,7 @@ Puede desplazarse por la interfaz de usuario principal del espacio de trabajo de
 * Todos los botones de acción (Aprobar, Rechazar, Avanzar, Consultar, Bloquear y Compartir) muestran tanto el documento como la propiedad.
 * Haga clic en el icono Todas las opciones de la barra de navegación, en la parte inferior de la página, para reenviar la tarea a otro usuario, compartir la tarea con otro usuario, consultar la tarea con otro usuario o bloquear la tarea.
 * En la ficha Historial, seleccione una tarea para mostrar las fichas Datos adjuntos y Asignaciones de esa tarea.
-* Utilice la tecla de tabulación, las teclas de flecha y la barra espaciadora para navegar por el espacio de trabajo de AEM Forms sin utilizar el ratón.
+* Utilice la tecla de tabulación, las teclas de flecha y la barra espaciadora para navegar por el espacio de trabajo de AEM Forms sin utilizar un ratón.
 
 ## Uso del espacio de trabajo de AEM Forms con lectores de pantalla {#using-html-workspace-with-screen-readers}
 
