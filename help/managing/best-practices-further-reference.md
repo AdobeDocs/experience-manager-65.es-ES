@@ -410,7 +410,7 @@ Se recomienda utilizar un enfoque iterativo en todos los aspectos:
 
 >[!NOTE]
 >
->Divida el lanzamiento del proyecto en **Lanzamiento(s) en pantalla** (disponibilidad reducida, varias iteraciones) y **Inicio en disco** (disponibilidad completa - Activo) para permitir el ajuste, la optimización y la capacitación del usuario en condiciones realistas en el entorno de producción.
+>Divida el lanzamiento del proyecto en **Lanzamiento(s) suave(s)** (disponibilidad reducida, varias iteraciones) y **Inicio duro** (disponibilidad completa - Activo) para permitir el ajuste, la optimización y la capacitación del usuario en condiciones realistas en el entorno de producción.
 
 >[!NOTE]
 >
