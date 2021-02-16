@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Uso de Votación {#using-voting}
 
-El componente `Voting` es una herramienta útil que permite a los miembros de la comunidad clasificar un contenido determinado, como una respuesta dentro de un componente de control de calidad. Con el componente `Voting`, los miembros seleccionan flechas arriba o abajo para indicar su opinión.
+El componente `Voting` es una herramienta útil que permite a los miembros de la comunidad clasificar un contenido determinado, como una respuesta dentro de un componente QnA. Con el componente `Voting`, los miembros seleccionan flechas arriba o abajo para indicar su opinión.
 
 ## Añadir la votación en una página {#adding-voting-to-a-page}
 
