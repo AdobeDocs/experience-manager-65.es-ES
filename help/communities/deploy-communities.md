@@ -334,7 +334,7 @@ por ejemplo,
 
 #### Replicación del repositorio {#repository-replication}
 
-El hecho de tener el material clave almacenado en el repositorio, como ocurrió con AEM 6.2 y versiones anteriores, se puede conservar especificando la siguiente propiedad del sistema en el primer inicio de cada instancia de AEM (que crea el repositorio inicial):
+El hecho de tener el material clave almacenado en el repositorio, como ocurrió con AEM 6.2 y anteriores, se puede conservar especificando la siguiente propiedad del sistema en el primer inicio de cada instancia de AEM (que crea el repositorio inicial):
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
