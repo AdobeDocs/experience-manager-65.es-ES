@@ -190,7 +190,7 @@ La aplicación es el formulario adaptable asociado al flujo de trabajo. Cuando u
 
 ## Iniciar un flujo de trabajo centrado en Forms en OSGi {#launch}
 
-Puede iniciar o activar un flujo de trabajo centrado en Forms mediante:
+Puede iniciar o déclencheur un flujo de trabajo centrado en Forms mediante:
 
 * [Envío de una aplicación desde AEM Bandeja de entrada](#inbox)
 * [Envío de una aplicación desde la aplicación AEM Forms](#afa)
@@ -202,7 +202,7 @@ Puede iniciar o activar un flujo de trabajo centrado en Forms mediante:
 
 ### Envío de una aplicación desde AEM Bandeja de entrada {#inbox}
 
-La aplicación de flujo de trabajo que ha creado está disponible como una aplicación en la Bandeja de entrada. Los usuarios que son miembros del grupo de usuarios del flujo de trabajo pueden rellenar y enviar la aplicación que activa el flujo de trabajo asociado. Para obtener información sobre el uso de AEM Bandeja de entrada para enviar aplicaciones y administrar tareas, consulte [Administrar aplicaciones y tareas de Forms en AEM Bandeja de entrada](../../forms/using/manage-applications-inbox.md).
+La aplicación de flujo de trabajo que ha creado está disponible como una aplicación en la Bandeja de entrada. Los usuarios que son miembros del grupo de usuarios del flujo de trabajo pueden rellenar y enviar la aplicación que déclencheur el flujo de trabajo asociado. Para obtener información sobre el uso de AEM Bandeja de entrada para enviar aplicaciones y administrar tareas, consulte [Administrar aplicaciones y tareas de Forms en AEM Bandeja de entrada](../../forms/using/manage-applications-inbox.md).
 
 ### Envío de una aplicación desde la aplicación de AEM Forms {#afa}
 
@@ -212,7 +212,7 @@ La aplicación de AEM Forms se sincroniza con un servidor de AEM Forms y le perm
 
 Puede configurar las acciones de envío de un formulario adaptable para que el inicio de un flujo de trabajo se realice al enviar el formulario adaptable. Los formularios adaptables proporcionan la **acción de envío Invocar un flujo de trabajo de AEM** para inicio de un flujo de trabajo al enviar un formulario adaptable. Para obtener información detallada sobre la acción de envío, consulte [Configuración de la acción de envío](../../forms/using/configuring-submit-actions.md). Para enviar un formulario adaptable a través de la aplicación de AEM Forms, habilite Sincronizar con la aplicación de AEM Forms en las propiedades del formulario adaptable.
 
-Puede configurar un formulario adaptable para sincronizar, enviar y activar un flujo de trabajo desde la aplicación de AEM Forms. Para obtener más información, consulte [trabajo con un formulario](/help/forms/using/working-with-form.md).
+Puede configurar un formulario adaptable para sincronizar, enviar y déclencheur un flujo de trabajo desde la aplicación de AEM Forms. Para obtener más información, consulte [trabajo con un formulario](/help/forms/using/working-with-form.md).
 
 ### Uso de una carpeta controlada {#watched}
 
