@@ -132,7 +132,7 @@ Este controlador debe usarse en una configuración de ContentSync de shell de ap
 * ***targetRootDirectory - String*** - el prefijo que se agrega a las rutas como raíz de destinatario para la actualización de contenido para este controlador.
 * ***targetIconDirectory - String*** - el directorio donde se colocan los iconos de la aplicación
 
-**** mobileADBMobileConfigJSONI Incluya el archivo ADBMobileConfig.JSON si se ha configurado AMS cloudservice.
+**** mobileADBMobileConfigJSONI Incluya el archivo ADBMobileConfig.JSON si se ha configurado el servicio de nube AMS.
 
 Esto se utiliza en tiempo de compilación para configurar el complemento AMS para la compatibilidad analítica.
 
