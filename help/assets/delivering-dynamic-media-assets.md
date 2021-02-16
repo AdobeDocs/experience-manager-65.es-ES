@@ -36,7 +36,7 @@ Con Dynamic Media dispone de varias opciones:
 
 Para obtener más información, consulte los temas siguientes:
 
-* [Añadir recursos de Dynamic Media en páginas Web](/help/assets/adding-dynamic-media-assets-to-pages.md)
+* [Añadir Dynamic Media Assets a páginas Web](/help/assets/adding-dynamic-media-assets-to-pages.md)
 * [Incrustación del visor de imágenes o vídeos en una página web](/help/assets/embed-code.md)
 * [Activar la protección de los vínculos interactivos de Dynamic Media](hotlink-protection.md)
 * [Vinculación de direcciones URL a la Aplicación web](/help/assets/linking-urls-to-yourwebapplication.md)
