@@ -31,7 +31,7 @@ El paquete de complementos de AEM Forms también incluye la configuración OData
 
 Cuando se instala el paquete, las siguientes entidades y servicios están disponibles en la instancia de AEM Forms:
 
-* CLOUD SERVICE de MS Dynamics OData (servicio OData)
+* Cloud Service de MS Dynamics OData (servicio OData)
 * Modelo de datos de formulario con entidades y servicios preconfigurados de Microsoft Dynamics.
 
 Las entidades y servicios preconfigurados de Microsoft Dynamics en un modelo de datos de formulario solo están disponibles en la instancia de AEM Forms si el modo de ejecución de la instancia de AEM está establecido como `samplecontent` (predeterminado). El Cloud Service de MS Dynamics OData (servicio OData) también está disponible con otros modos de ejecución. Para obtener más información sobre la configuración de modos de ejecución para una instancia de AEM, consulte [Modos de ejecución](/help/sites-deploying/configure-runmodes.md).
