@@ -347,7 +347,7 @@ El cliente (comercial y de TI) tendrá políticas que definen los niveles de seg
 
 ### Directrices de especificación del cliente {#customer-specification-guidelines}
 
-Cualquier guía que tenga el cliente en relación con el formato, el envío y la firma de las especificaciones.
+Cualquier guía que el cliente tenga en relación con el formato, el envío y la firma de las especificaciones.
 
 ### Informes de prueba del cliente {#customer-test-reports}
 
