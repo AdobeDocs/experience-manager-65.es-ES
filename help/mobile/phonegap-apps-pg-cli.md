@@ -59,7 +59,7 @@ Una vez que haya superado con éxito el entorno de desarrollo, descargue la fuen
 >
 >El origen de desarrollo contiene el estado más reciente de la aplicación, al tiempo que incluye cambios no escalonados. Utilice el origen Ensayo para crear candidatos a la versión para enviarlos a los proveedores del almacén de aplicaciones.
 >
->Si nunca realiza la fase de la aplicación, al seleccionar Ensayo se activará el flujo de trabajo de ensayo (sugerencia: esto se mostrará como una aplicación escalonada en la aplicación PhoneGap Enterprise Viewer (disponible en AppStore y Google PlayStore).
+>Si nunca realiza la etapa de la aplicación, al seleccionar Ensayo se déclencheur el flujo de trabajo de ensayo (sugerencia: esto se mostrará como una aplicación escalonada en la aplicación PhoneGap Enterprise Viewer (disponible en AppStore y Google PlayStore).
 
 * Haga clic en Descargar y guarde el ZIP en su equipo.
 * Extraiga el archivo zip descargado en su área de trabajo.
