@@ -655,7 +655,7 @@ También puede especificar si desea o no realizar una comprobación de revocaci�
 
 Para realizar la comprobación de revocación en un certificado, puede especificar una URL para un servidor de lista de revocación de certificados (CRL) mediante un objeto `CRLOptionSpec`. Sin embargo, si desea realizar una comprobación de revocación y no especifica una URL a un servidor CRL, el servicio Signature obtiene la URL del certificado.
 
-En lugar de utilizar un servidor CRL, puede utilizar un servidor de protocolo de estado de certificado en línea (OCSP) al realizar la comprobación de revocación. Normalmente, cuando se utiliza un servidor OCSP en lugar de un servidor CRL, la comprobación de revocación se realiza más rápido. (Consulte &quot;Protocolo de estado de certificado en línea&quot; en [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560)).
+En lugar de utilizar un servidor CRL, puede utilizar un servidor de protocolo de estado de certificado en línea (OCSP) al realizar la comprobación de revocación. Normalmente, cuando se utiliza un servidor OCSP en lugar de un servidor CRL, la comprobación de revocación se realiza más rápido. (Consulte &quot;Protocolo de estado de certificado en línea&quot; en [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).)
 
 Puede establecer el orden de los servidores CRL y OCSP que utiliza el servicio de firmas mediante Aplicaciones y Servicios de Adobe. Por ejemplo, si el servidor OCSP se configura primero en Aplicaciones y servicios de Adobe, se selecciona el servidor OCSP, seguido del servidor CRL. (Consulte &quot;Administración de certificados y credenciales mediante el almacén de confianza&quot; en la Ayuda de AAC).
 
