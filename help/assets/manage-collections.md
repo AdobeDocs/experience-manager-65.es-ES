@@ -156,7 +156,7 @@ Puede editar los metadatos de varias colecciones simultáneamente. Esta funciona
 
    >[!NOTE]
    >
-   >* En la página [!UICONTROL Propiedades], puede quitar colecciones de la lista de colecciones anulando su selección. La lista de colecciones tiene todas las colecciones seleccionadas de forma predeterminada. [!DNL Experience Manager] no actualiza los metadatos de las colecciones que elimina.
+   >* En la página [!UICONTROL Propiedades], puede quitar colecciones de la lista de colecciones anulándolas. La lista de colecciones tiene todas las colecciones seleccionadas de forma predeterminada. [!DNL Experience Manager] no actualiza los metadatos de las colecciones que elimina.
    >* En la parte superior de la lista, active la casilla de verificación situada cerca de **[!UICONTROL Título]** para alternar entre seleccionar las colecciones y borrar la lista.
 
 
