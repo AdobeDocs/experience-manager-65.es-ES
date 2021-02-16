@@ -48,7 +48,7 @@ En la aplicación de AEM Forms, el barrido izquierdo abre una nueva tarea o punt
 
    `"EventName Selector": "Function"`
 
-   Cuando se activa un evento de JavaScript denominado `EventName`en un elemento HTML especificado por `Selector`, se llama a `Function`.
+   Cuando se déclencheur un evento de JavaScript denominado `EventName`en un elemento HTML especificado por `Selector`, se llama a `Function`.
 
 1. Buscar
 
