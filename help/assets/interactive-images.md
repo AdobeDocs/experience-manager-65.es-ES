@@ -31,7 +31,7 @@ Consulte las imágenes interactivas en acción en la página web de arriba, yend
 
 ## Observe cómo se crean los letreros de imagen interactivos {#watch-how-interactive-image-banners-are-created}
 
-Vea un tutorial de 10 minutos y 33 segundos sobre [cómo se crean los letreros de imagen interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). También aprenderá a crear previsualizaciones, editar y distribuir letreros de imagen interactivos.
+Vea un tutorial de 10 minutos y 33 segundos sobre [cómo se crean los letreros de imagen interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). También aprenderá a previsualización, edición y distribución de letreros de imagen interactivos.
 
 ## Inicio rápido: Imágenes interactivas {#quick-start-interactive-images}
 
@@ -96,7 +96,7 @@ La mayoría de las implementaciones de Quickview utilizan el siguiente paradigma
 * Los datos de la vista rápida se traducen al contenido como preparación para su procesamiento en la página web.
 * Por último, el código front-end procesa visualmente dicho contenido en la pantalla.
 
-El método consiste en visitar diferentes áreas del sitio web existente donde se implementa la función Vista rápida, activar la Vista rápida y capturar la URL de Ajax enviada por la página web para cargar los datos o el contenido de la Vista rápida.
+El método consiste en visitar diferentes áreas del sitio web existente donde se implementa la función Vista rápida, déclencheur la Vista rápida y captura la URL de Ajax que se envía por la página web para cargar los datos o el contenido de la Vista rápida.
 
 Normalmente no es necesario que utilice ninguna herramienta de depuración especializada. Los navegadores web modernos cuentan con inspectores web que realizan un trabajo adecuado. Estos son algunos ejemplos de exploradores Web que incluyen inspectores Web:
 
@@ -106,11 +106,11 @@ En un Mac, pulse Comando+Opción+I para abrir el panel Herramientas del desarrol
 * En Firefox, puede activar el complemento Firebug pulsando F12 y utilizando su ficha Red, o bien puede utilizar la herramienta Inspector integrada y su ficha Red.
 En un Mac, pulse Comando+Opción+I para abrir el panel Herramientas del desarrollador y, a continuación, haga clic en la ficha Inspector.
 
-Cuando la supervisión de red está activada en el explorador, active la vista rápida en la página.
+Cuando la supervisión de red está activada en el explorador, déclencheur la vista rápida en la página.
 
-Ahora encuentre la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para análisis futura. En la mayoría de los casos, cuando se activa la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una ruta o parte de cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
+Ahora encuentre la URL de Ajax de vista rápida en el registro de red y copie la URL grabada para análisis futura. En la mayoría de los casos, cuando se déclencheur la vista rápida, hay numerosas solicitudes que se envían al servidor. Normalmente, la URL de Ajax de vista rápida es una de las primeras de la lista. Tiene una ruta o parte de cadena de consulta compleja y su tipo MIME de respuesta es `text/html`, `text/xml` o `text/javascript`.
 
-Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes que son comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
+Durante este proceso es importante visitar diferentes áreas del sitio web, con diferentes tipos y categorías de productos. El motivo es que las direcciones URL de vista rápida pueden tener partes comunes para una categoría de sitio web determinada, pero solo cambian si se visita un área diferente del sitio web.
 
 En el caso más sencillo, la única parte variable de la URL de vista rápida es el SKU del producto. En este caso, el valor de SKU es la única pieza de datos que necesita para agregar zonas interactivas a la imagen de la pancarta.
 
@@ -128,7 +128,7 @@ Considere los siguientes ejemplos de direcciones URL de Quickview y sus variable
       <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>La única parte variable de la dirección URL es el valor del parámetro de cadena de consulta productId= y es claramente un valor de SKU. Por lo tanto, nuestros puntos interactivos solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
+    </ul> <p>La única parte variable de la dirección URL es el valor del parámetro de cadena productId= de consulta y es claramente un valor de SKU. Por lo tanto, nuestros puntos interactivos solo necesitan campos SKU rellenados con valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>SKU único, que se encuentra en la ruta de URL.</p> </td>
@@ -393,7 +393,7 @@ El último paso de este proceso es integrar la imagen interactiva con una implem
 
 La implementación de vista rápida existente normalmente representa una cadena de acciones interrelacionadas que se producen en la página web en el siguiente orden:
 
-1. Un usuario activa un elemento en la interfaz de usuario del sitio web.
+1. Un usuario déclencheur un elemento en la interfaz de usuario del sitio web.
 1. El código front-end obtiene una URL de vista rápida basada en el elemento de interfaz de usuario que se activó en el paso 1.
 1. El código front-end envía una solicitud de Ajax utilizando la dirección URL obtenida en el paso 2.
 1. La lógica back-end devuelve los datos o el contenido de vista rápida correspondientes al código front-end.
@@ -409,7 +409,7 @@ En un controlador de evento de este tipo, el código front-end hace lo siguiente
 
 * Escucha un evento emitido por la imagen interactiva de ventas.
 * Construye una URL de vista rápida basada en los datos de zona interactiva.
-* Activa el proceso de cargar la vista rápida desde el servidor y procesarla en la pantalla para su visualización.
+* Déclencheur el proceso de cargar la vista rápida desde el servidor y procesarla en la pantalla para su visualización.
 
 El código incrustado devuelto por AEM Assets ya tiene un controlador de evento listo para usar en su lugar, que se comenta, como se muestra en el siguiente fragmento de código resaltado:
 
@@ -472,7 +472,7 @@ Con los ejemplos anteriores de URL de vista rápida, puede ver, en los siguiente
  </tbody>
 </table>
 
-El último paso para activar la URL de vista rápida y activar el panel de vista rápida requiere probablemente la asistencia de una persona de TI del cliente de su departamento de TI. Tienen los conocimientos para saber mejor cómo activar con precisión la implementación de Vista rápida desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
+El último paso para el déclencheur de la URL de vista rápida y la activación del panel de vista rápida requiere probablemente la asistencia de una persona de TI del front-end del departamento de TI. Tienen los conocimientos para saber mejor cómo déclencheur con precisión la implementación de Quickview desde el paso adecuado, teniendo una URL de vista rápida lista para usar.
 
 Puede ver cómo se aplican estos pasos al sitio web de demostración para integrar completamente una imagen interactiva de ventas con el código de vista rápida. Anteriormente, la estructura de la URL de vista rápida se identificaba como la siguiente:
 
