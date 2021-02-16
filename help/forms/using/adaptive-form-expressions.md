@@ -221,7 +221,7 @@ GuideBridge es una colección de API que se puede utilizar para interactuar con 
 
 #### Uso de GuideBridge en varias expresiones {#guidebridge-usage-in-various-expressions}
 
-* Para restablecer los campos de formulario, puede activar la API `guideBridge.reset()` en la expresión de clic de un botón. Del mismo modo, existe una API de envío que se puede llamar como una expresión de clic `guideBridge.submit()`**.**
+* Para restablecer los campos de formulario, puede déclencheur `guideBridge.reset()` API en la expresión de clic de un botón. Del mismo modo, existe una API de envío que se puede llamar como una expresión de clic `guideBridge.submit()`**.**
 
 * Puede utilizar la API `setFocus()` para definir el enfoque en varios campos o paneles (el enfoque del panel se establece automáticamente en el primer campo). `setFocus()`proporciona una amplia gama de opciones para desplazarse, como navegación en paneles, recorrido anterior/siguiente, definición del enfoque en un campo concreto y muchas más. Por ejemplo, para desplazarse al panel siguiente, puede utilizar: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
