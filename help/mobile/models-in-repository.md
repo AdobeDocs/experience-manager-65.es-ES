@@ -51,7 +51,7 @@ El nodo de configuración de tipos de datos contiene una lista de elementos de t
 | fieldIcon | clase del icono CoralUI para representar el tipo de datos |
 | fieldPropResourceType | componente que representará todas las propiedades para configurar el tipo de datos |
 | fieldProperties | lista de varios valores de los componentes de propiedad que se utilizan cuando fieldPropResourceType es *mobileapps/caas/gui/components/models/editor/datatypes/field* |
-| fieldResourceType | resourceType del nodo persistente para el tipo de datos (es decir, el componente que representará la propiedad en el editor de entidades) |
+| fieldResourceType | resourceType del nodo persistente para el tipo de datos (es decir, el componente que procesará la propiedad en el editor de entidades) |
 | fieldViewResourceType | componente que se utilizará para procesar el tipo de datos en la vista del editor de modelos (se utilizará fieldResourceType si se omite esta propiedad) |
 | fieldTitle | nombre del tipo de datos que se mostrará en el editor de modelos |
 | multiFieldResourceType | tipo de recurso que se utilizará en un nodo persistente cuando se seleccione un valor múltiple |
@@ -116,7 +116,7 @@ Cuando se encuentra el andamiaje del modelo, el editor de modelos procesará lo 
 >
 >Todos los modelos son plantillas, por lo que siguen todas las reglas de plantilla AEM. Esto permite utilizar propiedades como *permissionParents* y *allowChildren*. Son eficaces a la hora de crear nuevas entidades basadas en un modelo. Las reglas de plantilla garantizan que las entidades solo se pueden basar en determinados modelos según su jerarquía.
 >
->Para obtener más información sobre la edición de un modelo desde el panel, consulte [Creación de un modelo](/help/mobile/administer-mobile-apps.md) en la sección de creación para aplicaciones móviles.
+>Para obtener más información sobre la edición de un modelo desde el panel, consulte [Creación de un modelo](/help/mobile/administer-mobile-apps.md) en la sección de creación de aplicaciones móviles.
 
 ### Modelos de sistema {#system-models}
 
