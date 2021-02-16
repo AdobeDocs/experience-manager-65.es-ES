@@ -300,7 +300,7 @@ La autenticación básica se basa en la autenticación básica J2EE estándar de
 Para la autenticación personalizada, el servidor envía un error al cliente para indicar que la autenticación es necesaria.
 
 >[!NOTE]
-Para obtener información sobre la autenticación mediante tokens HTTP, consulte [Creación de aplicaciones Flash Builder que realizan la autenticación SSO mediante tokens HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
+Para obtener información sobre cómo realizar la autenticación mediante tokens HTTP, consulte [Creación de aplicaciones Flash Builder que realizan la autenticación SSO mediante tokens HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
 
 ### Uso de autenticación personalizada {#using-custom-authentication}
 
