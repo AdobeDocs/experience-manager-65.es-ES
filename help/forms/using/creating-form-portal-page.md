@@ -129,7 +129,7 @@ El cuadro de diálogo **Editar** incluye varias fichas que proporcionan opciones
    <td><p>Configura un servlet en el que se envían los datos del formulario.</p> <p><strong>Nota:La dirección URL de </strong> <em>envío de un formulario se puede especificar en varios lugares y su orden de prioridad es el siguiente:</em></p>
     <ol>
      <li><em>La dirección URL de envío incrustada en el formulario (en el botón Enviar) tiene la prioridad más alta.</em></li>
-     <li><em>La URL de envío que se menciona en la interfaz de usuario de AEM Forms tiene la segunda prioridad.</em></li>
+     <li><em>La dirección URL de envío que se menciona en la interfaz de usuario de AEM Forms tiene la segunda prioridad.</em></li>
      <li><em>La dirección URL de envío mencionada en el portal de formularios tiene la prioridad más baja.</em></li>
     </ol> </td>
   </tr>
