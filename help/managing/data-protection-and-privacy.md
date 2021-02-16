@@ -126,7 +126,7 @@ AEM Communities concede a los sujetos de datos el derecho a su portabilidad de d
 
 Además, AEM Communities oferta la privacidad mediante el diseño gracias a su consola de Moderación masiva, que permite a los miembros privilegiados encontrar y eliminar las contribuciones y los detalles de los usuarios. La consola de administración Miembros permite limitar hasta el punto de prohibir un colaborador. Además, autoriza a los interesados a suprimir las contribuciones que hayan aportado.
 
-## Formularios AEM {#aem-forms}
+## AEM Forms {#aem-forms}
 
 AEM Forms incluye componentes y flujos de trabajo que capturan, procesan y almacenan datos para orquestar procesos empresariales y realizar transacciones digitales. Los diferentes componentes utilizan diferentes almacenes de datos y permiten la integración con los almacenes de datos personalizados. En la siguiente documentación se explican los procedimientos y las directrices para acceder a los datos de usuario y gestionarlos a fin de que sean compatibles con los flujos de trabajo de protección de datos y privacidad (por ejemplo, RGPD o CCPA) de un componente.
 
