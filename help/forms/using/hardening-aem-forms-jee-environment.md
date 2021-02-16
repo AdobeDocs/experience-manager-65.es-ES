@@ -350,7 +350,7 @@ En la tabla siguiente se describen algunas técnicas para proteger el servidor d
 
 ### Seguridad de la base de datos {#database-security}
 
-Al proteger la base de datos, debe implementar las medidas descritas por el proveedor de la base de datos. Debe asignar un usuario de base de datos con los permisos mínimos requeridos para la base de datos que AEM Forms ha concedido para su uso en JEE. Por ejemplo, no utilice una cuenta con privilegios de administrador de base de datos.
+Al proteger la base de datos, debe implementar las medidas descritas por el proveedor de la base de datos. Debe asignar un usuario de base de datos con los permisos mínimos requeridos de base de datos para su uso por AEM Forms en JEE. Por ejemplo, no utilice una cuenta con privilegios de administrador de base de datos.
 
 En Oracle, la cuenta de la base de datos que utilice sólo necesita los privilegios de CONNECT, RECURSO y CREATE VISTA. Para conocer requisitos similares en otras bases de datos, consulte [Preparación de la instalación de AEM Forms en JEE (un solo servidor)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
