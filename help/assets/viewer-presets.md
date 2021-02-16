@@ -25,7 +25,7 @@ Si es un administrador y necesita administrar, crear, ordenar y eliminar ajustes
 Consulte también [Ajustes preestablecidos de visor de publicaciones](managing-viewer-presets.md#publishing-viewer-presets).
 
 Es posible que no necesite publicar ajustes preestablecidos de visor en función del modo de publicación que esté utilizando.
-Cualquier problema con los ajustes preestablecidos de visor, consulte [Resolución de problemas de Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
+Cualquier problema con los ajustes preestablecidos de visor, consulte [Solución de problemas de Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
 
 ## Aplicación de un ajuste preestablecido de visor de Dynamic Media a un recurso {#applying-a-viewer-preset-to-an-asset}
 
