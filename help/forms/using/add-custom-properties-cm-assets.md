@@ -190,7 +190,7 @@ Este escenario muestra cómo se puede agregar una ficha personalizada, Destinata
 Con el procedimiento siguiente, puede agregar una ficha con un campo a todos los recursos:
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta denominada cmmetadataproperties con una ruta o estructura similar a la carpeta cmmetadataproperties (ubicada en la carpeta de contenido) siguiendo estos pasos:
+1. En la carpeta de aplicaciones, cree una carpeta con el nombre cmmetadataproperties con una ruta/estructura similar a la carpeta cmmetadataproperties (ubicada en la carpeta de contenido) siguiendo estos pasos:
 
    1. Haga clic con el botón derecho en la carpeta cmmetadataproperties en la siguiente ruta y seleccione **Nodo superpuesto**:
 
@@ -552,7 +552,7 @@ De forma predeterminada, las propiedades personalizadas agregadas a las fichas n
 
    `/apps/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items`
 
-1. Añada las siguientes propiedades al nodo recién creado (aquí col4) y haga clic en **Guardar todo**:
+1. Añada las siguientes propiedades en el nodo recién creado (aquí col4) y haga clic en **Guardar todo**:
 
 <table>
  <tbody>
