@@ -1,6 +1,6 @@
 ---
 title: Vídeo 360/VR
-description: Aprenda a trabajar con vídeos de 360 y Realidad virtual (VR) en Dynamic Media.
+description: Aprenda a trabajar con los vídeos 360 y Realidad virtual (VR) en Dynamic Media.
 uuid: c21bf2c0-7acc-401f-857e-0186de86e7a1
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Los vídeos de 360 grados graban una vista en todas las direcciones al mismo tiempo. Se graban con una cámara omnidireccional o con una colección de cámaras. Durante la reproducción en una pantalla plana, el usuario controla el ángulo de visualización; la reproducción en dispositivos móviles suele aprovechar los controles giroscópicos integrados.
 
-Medios dinámicos: el modo Scene7 incluye compatibilidad nativa con el envío de 360 recursos de vídeo. De forma predeterminada, no es necesaria ninguna configuración adicional para la visualización o reproducción. El vídeo 360 se distribuye con extensiones de vídeo estándar como .mp4, .mkv y .mov. El códec más común es H.264.
+Dynamic Media: el modo Scene7 incluye compatibilidad nativa con el envío de 360 recursos de vídeo. De forma predeterminada, no es necesaria ninguna configuración adicional para la visualización o reproducción. El vídeo 360 se distribuye con extensiones de vídeo estándar como .mp4, .mkv y .mov. El códec más común es H.264.
 
 En esta sección se describe cómo trabajar con el visor de vídeo de 360/VR para procesar vídeos equirectangulares para una experiencia de visualización envolvente de una sala, propiedad, ubicación, paisaje, procedimiento médico, etc.
 
@@ -100,7 +100,7 @@ Cuando esté satisfecho con el vídeo de 360, puede publicarlo.
 
 Consulte [Incrustación del visor de imágenes o vídeos en una página Web.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
 Consulte  [Vinculación de direcciones URL a la aplicación](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html) web. Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
-Consulte [Añadir recursos de Dynamic Media en páginas.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
+Consulte [Añadir Dynamic Media Assets a páginas.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
 
 **Para previsualización De Videos 360**
 
@@ -131,9 +131,9 @@ Consulte [Añadir recursos de Dynamic Media en páginas.](https://helpx.adobe.co
 
 ## Publicación de vídeo 360 {#publishing-video}
 
-Debe publicar el vídeo 360 para utilizarlo. La publicación de un vídeo de 360 activa la URL y el código incrustado. También publica el vídeo 360 en la nube de medios dinámicos, que está integrada con una CDN para un envío escalable y de rendimiento.
+Debe publicar el vídeo 360 para utilizarlo. La publicación de un vídeo de 360 activa la URL y el código incrustado. También publica el vídeo 360 en la nube de Dynamic Media, que está integrado con una CDN para un envío escalable y de rendimiento.
 
-Consulte [Publicación de recursos de medios dinámicos](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar vídeo 360.
+Consulte [Publicación de Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar Video 360.
 Consulte también [Incrustación del visor de imágenes o vídeos en una página Web](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
 Consulte también [Vinculación de direcciones URL a la aplicación Web](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
-Consulte también [Añadir recursos de Dynamic Media en páginas.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
+Consulte también [Añadir Dynamic Media Assets a páginas.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
