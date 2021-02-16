@@ -105,7 +105,7 @@ John Jacobs preselecciona al perfil de Sarah Rose para la selección de gerente 
 
 **Cómo funciona**
 
-La acción de envío del formulario Solicitud de trabajo desencadena un flujo de trabajo que crea una tarea en la bandeja de entrada de John Jacob para filtrar la aplicación. Cuando John revisa y enumera la aplicación, el flujo de trabajo crea una tarea en el administrador de contratación, la bandeja de entrada de Gloria.
+La acción de envío del formulario de solicitud de trabajo déclencheur un flujo de trabajo que crea una tarea en la bandeja de entrada de John Jacob para filtrar la aplicación. Cuando John revisa y enumera la aplicación, el flujo de trabajo crea una tarea en el administrador de contratación, la bandeja de entrada de Gloria.
 
 ### Véalo usted mismo {#see-it-yourself-1}
 
