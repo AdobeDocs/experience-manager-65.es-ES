@@ -401,7 +401,7 @@ Seleccione una de las siguientes opciones de compresión Flate en el menú despl
 
 **Optimizar el PDF para una Vista** Web rápida: Reestructura un documento PDF para la descarga página a página (servicio de bytes) desde servidores Web.
 
-**En Flujos Que Utilizan Codificación LZW, Utilice Flate En Su Lugar**: Aplica compresión Flate a todos los flujos de contenido e imágenes que utilizan codificación LZW.
+**En Flujos Que Utilizan Codificación LZW, Utilice Flate En Su Lugar**: Aplica compresión Flate a todos los flujos de contenido e imágenes que utilizan la codificación LZW.
 
 **Descartar vínculos** no válidos: Quita los vínculos que dirigen a destinos no válidos.
 
