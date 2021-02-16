@@ -119,7 +119,7 @@ El código siempre debe propagarse de abajo a arriba:
 
 El código (por ejemplo, las plantillas de diseño y la funcionalidad personalizada de la aplicación web) se transfiere generalmente con la exportación e importación de paquetes entre los distintos repositorios de contenido. Cuando es significativa, esta replicación puede configurarse como un proceso automático.
 
-AEM proyectos suelen activar la implementación de código:
+AEM proyectos a menudo déclencheur la implementación de código:
 
 * Automáticamente: para su transferencia a los entornos de desarrollo y control de calidad.
 * Manualmente: las implementaciones en los entornos de ensayo y producción se realizan de manera más controlada, a menudo manual; aunque la automatización es posible si es necesario.
