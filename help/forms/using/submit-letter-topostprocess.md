@@ -132,4 +132,4 @@ Se puede volver a cargar una instancia de borrador en la interfaz de usuario med
 
 LetterInstaceID: ID única de la instancia de carta enviada.
 
-Para obtener más información sobre cómo guardar un borrador de carta, consulte [Guardado de borradores y envío de instancias de carta](../../forms/using/create-correspondence.md#savingdrafts).
+Para obtener más información sobre cómo guardar un borrador de carta, consulte [Almacenamiento de borradores y envío de instancias de carta](../../forms/using/create-correspondence.md#savingdrafts).
