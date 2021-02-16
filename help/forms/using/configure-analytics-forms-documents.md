@@ -58,7 +58,7 @@ Realice los siguientes pasos para crear un grupo de informes.
 
    Crear nuevo grupo de informes
 
-1. Asegúrese de que la primera lista desplegable esté establecida en **Crear a partir de una plantilla** y, a continuación, seleccione **Comercio**.
+1. Asegúrese de que la primera lista desplegable esté configurada en **Crear a partir de una plantilla** y luego seleccione **Comercio**.
 1. Busque el campo **ID del grupo de informes** y agregue una nueva ID del grupo de informes. Por ejemplo, JJEsquire. Debajo del campo ID del grupo de informes aparece una ID del grupo de informes. Incluye un prefijo automático, que suele ser el nombre de la compañía.
 1. Añada el nuevo **Título del sitio**. Por ejemplo, Grupo de introducción de JJEsquire. Este título se utiliza en la interfaz de usuario de Analytics. Utilice la ID del grupo de informes en su código.
 1. Seleccione un **Huso horario** en el menú desplegable. Todos los datos que llegan a este grupo de informes se registran en función de la zona horaria definida.
