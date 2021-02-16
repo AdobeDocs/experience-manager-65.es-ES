@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Añadir datos adjuntos en formularios sincronizados con AEM Forms Workflow Server (AEM Forms en JEE) {#adding-annotations}
 
-La aplicación de AEM Forms permite adjuntar imágenes, notas con garabatos y notas de texto al formulario sincronizado con el servidor AEM Forms JEE. Si el formulario se carga desde un servidor de AEM Forms Workflow, los datos adjuntos se agregan al formulario. Puede tocar el botón de datos adjuntos ![attachment-app](assets/attachments-app.png) para ver todos los datos adjuntos de un formulario juntos. La notificación roja especifica el número de datos adjuntos en el formulario. Si no hay datos adjuntos en el formulario, no podrá ver el botón rojo de notificaciones. Si no hay datos adjuntos en el formulario, al tocar el botón ![adjuntar](assets/attch.png), obtendrá opciones para adjuntar fotos o garabatos.
+La aplicación de AEM Forms le permite adjuntar imágenes, notas con garabatos y notas de texto al formulario sincronizado con el servidor AEM Forms JEE. Si el formulario se carga desde un servidor de AEM Forms Workflow, los datos adjuntos se agregan al formulario. Puede tocar el botón de datos adjuntos ![attachment-app](assets/attachments-app.png) para ver todos los datos adjuntos de un formulario juntos. La notificación roja especifica el número de datos adjuntos en el formulario. Si no hay datos adjuntos en el formulario, no podrá ver el botón rojo de notificaciones. Si no hay datos adjuntos en el formulario, al tocar el botón ![adjuntar](assets/attch.png), obtendrá opciones para adjuntar fotos o garabatos.
 
 Sus opciones son:
 
