@@ -42,7 +42,7 @@ La función de grupos se mostrará como una carpeta en la que se crearán las in
 
 ## Crear grupo de artes principales {#create-main-arts-group}
 
-Este grupo se puede crear porque la estructura del sitio para la participación incluye una función de grupo. La configuración de la función en el `Reference Template` del sitio permite la selección de cualquier plantilla de grupo habilitada. Por lo tanto, la plantilla elegida para este nuevo grupo es `Reference Group`.
+Este grupo se puede crear porque la estructura del sitio para la participación incluye una función de grupo. La configuración de la función en el `Reference Template` del sitio permite de forma predeterminada la selección de cualquier plantilla de grupo habilitada. Por lo tanto, la plantilla elegida para este nuevo grupo es `Reference Group`.
 
 Estas consolas son similares a la consola Sitios de comunidades.
 
