@@ -34,7 +34,7 @@ Otros formularios se guardan como borrador en la ficha Borradores. Consulte [Gua
 
 1. Toque la tarea para abrirla.
 
-   Puede tocar **Resumen de Vista** para vista de instrucciones adicionales especificadas en el proceso de Workbench.
+   Puede tocar **Resumen de Vista** para vista de las instrucciones adicionales especificadas en el proceso de Workbench.
 
 **Para abrir una aplicación**
 
