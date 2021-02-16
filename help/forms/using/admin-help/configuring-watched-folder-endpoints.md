@@ -55,7 +55,7 @@ El resultado de la primera conversión iría a \path\result. La entrada para la 
 
 ## Cómo interactúan los usuarios con las carpetas vigiladas {#how-users-interact-with-watched-folders}
 
-Para un punto final de carpeta vigilada, los usuarios pueden invocar copiando o arrastrando archivos de entrada o carpetas de sus escritorios a una carpeta vigilada. Los archivos se procesarán en el orden en que lleguen.
+Para un extremo de carpeta vigilada, los usuarios pueden invocar copiando o arrastrando archivos de entrada o carpetas de sus escritorios a una carpeta vigilada. Los archivos se procesarán en el orden en que lleguen.
 
 Para los extremos de carpeta vigilados, si el trabajo solo requiere un archivo de entrada, el usuario puede copiar ese archivo en la raíz de la carpeta vigilada.
 
@@ -202,7 +202,7 @@ Para obtener más información sobre los patrones de archivo, consulte [Acerca d
 
 Por ejemplo, si es a las 8 pm del 17 de julio de 2009 y especifica `C:/Test/WF0/failure/%Y/%M/%D/%H/`, la carpeta de resultados es `C:/Test/WF0/failure/2009/07/17/20`.
 
-Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carpeta controlada. El valor predeterminado es result/%Y/%M/%D/, que es la carpeta Resultado dentro de la carpeta controlada. Para obtener más información sobre los patrones de archivo, consulte [Acerca de los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
+Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carpeta controlada. El valor predeterminado es result/%Y/%M/%D/, que es la carpeta Result dentro de la carpeta observada. Para obtener más información sobre los patrones de archivo, consulte [Acerca de los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 >[!NOTE]
 >
