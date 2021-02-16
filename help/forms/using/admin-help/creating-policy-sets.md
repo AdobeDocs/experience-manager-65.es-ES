@@ -36,7 +36,7 @@ Los coordinadores de conjuntos de políticas pueden realizar las siguientes tare
 
 Los superusuarios y los coordinadores de conjuntos de políticas que tienen permiso para hacerlo crean y eliminan conjuntos de políticas en la interfaz del administrador de seguridad de documento.
 
-Al eliminar un conjunto de directivas, las directivas que formaban parte del conjunto no se pueden aplicar a los nuevos documentos. Sin embargo, puede vista de la información de la política tanto en la consola de administración como en las páginas web del usuario final para las directivas que aún están en uso. Puede vista la información de la política desde la página de detalles del documento para cualquier documento protegido por la política. Las políticas que aún se están utilizando se pueden editar.
+Al eliminar un conjunto de directivas, las directivas que formaban parte del conjunto no se pueden aplicar a documentos nuevos. Sin embargo, puede vista de la información de la política tanto en la consola de administración como en las páginas web del usuario final para las directivas que aún están en uso. Puede vista la información de la política desde la página de detalles del documento para cualquier documento protegido por la política. Las políticas que aún se están utilizando se pueden editar.
 
 El superusuario o coordinador de conjuntos de políticas agrega los dominios creados en Administración de usuarios al usuario y grupo visibles para cada conjunto de políticas. Esta lista es visible para el coordinador de conjuntos de políticas y se utiliza para poner límites en los dominios que el coordinador de conjuntos de políticas puede examinar al elegir usuarios para agregar a las políticas.
 
@@ -109,7 +109,7 @@ Ahora puede agregar directivas al conjunto de directivas. (Consulte [Creación y
 
 ## Eliminar un conjunto de directivas {#delete-a-policy-set}
 
-Al eliminar un conjunto de directivas, las directivas que formaban parte del conjunto no se pueden aplicar a los nuevos documentos. Sin embargo, puede vista de la información de la política tanto en la consola de administración como en las páginas web del usuario final para las directivas que aún se están utilizando. Puede vista la información de la política desde la página de detalles del documento para cualquier documento protegido por la política. Las políticas que aún se están utilizando se pueden editar.
+Al eliminar un conjunto de directivas, las directivas que formaban parte del conjunto no se pueden aplicar a documentos nuevos. Sin embargo, puede vista de la información de la política tanto en la consola de administración como en las páginas web del usuario final para las directivas que aún se están utilizando. Puede vista la información de la política desde la página de detalles del documento para cualquier documento protegido por la política. Las políticas que aún se están utilizando se pueden editar.
 
 1. Haga clic en Directivas y, a continuación, en la ficha Conjuntos de directivas.
 1. Seleccione la casilla de verificación del conjunto de directivas que desea eliminar.
