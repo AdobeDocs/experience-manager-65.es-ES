@@ -78,7 +78,7 @@ de componentesIncluye componentes que se pueden utilizar para generar los canale
 
 * Utilice Fragmentos de diseño en el canal Imprimir para agregar tablas.
 
-** En el canal de impresión, las áreas de destinatario están predefinidas en la plantilla XDP/print. No puede agregar nuevas áreas de destinatario mediante la interfaz de usuario de creación de Interactive Communication.
+** En el canal de impresión, las áreas de destinatario están predefinidas en la plantilla XDP/print. No se pueden agregar nuevas áreas de destinatario mediante la interfaz de usuario de creación de Interactive Communication.
 
 * **Explorador**
 de fuentes de datosEl explorador de fuentes de datos muestra los orígenes de datos disponibles en el modelo de datos de formulario seleccionado al crear la comunicación interactiva.
