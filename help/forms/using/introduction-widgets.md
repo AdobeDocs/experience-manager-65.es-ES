@@ -23,10 +23,10 @@ Forms (formularios adaptables y formularios HTML5) utiliza bibliotecas [jQuery](
 
 Este artículo está dirigido a los desarrolladores con suficiente conocimiento de las utilidades jQuery y jQuery. Proporciona una visión detallada del marco de trabajo de apariencia y permite a los desarrolladores crear un aspecto alternativo para un campo de formulario.
 
-La estructura de aspecto se basa en diversas opciones, eventos (activadores) y funciones para capturar las interacciones del usuario con el formulario, y responde a los cambios del modelo para informar al usuario final. Además:
+La estructura de aspecto se basa en diversas opciones, eventos (déclencheur) y funciones para capturar las interacciones del usuario con el formulario, y responde a los cambios del modelo para informar al usuario final. Además:
 
 * La estructura proporciona un conjunto de opciones para el aspecto de un campo. Estas opciones son pares de clave-valor y se dividen en dos categorías: opciones comunes y opciones específicas de tipo de campo.
-* El aspecto, como parte del contrato, desencadena un conjunto de eventos como entrar y salir.
+* El aspecto, como parte del contrato, déclencheur un conjunto de eventos como entrar y salir.
 * El aspecto es necesario para implementar un conjunto de funciones. Algunas de las funciones son comunes, mientras que otras son específicas de las funciones de tipo de campo.
 
 ## Opciones comunes {#common-options}
@@ -90,7 +90,7 @@ Aparte de estas opciones, la estructura ofrece otras opciones que varían según
 
 ### Interacción con el marco de formularios {#interaction-with-forms-framework}
 
-Para interactuar con la estructura de formularios, una utilidad activa algunos eventos para permitir que funcione la secuencia de comandos del formulario. Si la utilidad no emite estos eventos, algunas de las secuencias de comandos escritas en el formulario para ese campo no funcionan.
+Para interactuar con la estructura de formularios, una utilidad déclencheur algunos eventos para permitir que funcione la secuencia de comandos del formulario. Si la utilidad no emite estos eventos, algunas de las secuencias de comandos escritas en el formulario para ese campo no funcionan.
 
 #### Eventos activados por la utilidad {#events-triggered-by-widget}
 
@@ -102,19 +102,19 @@ Para interactuar con la estructura de formularios, una utilidad activa algunos e
   </tr>
   <tr>
    <td>XFA_ENTER_EVENTO</td>
-   <td>Este evento se activa cada vez que el campo está activo. Permite que la secuencia de comandos "enter" se ejecute en el campo. La sintaxis para activar el evento es<br /> (utilidad)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENTO)<br /> </td>
+   <td>Este evento se activa cada vez que el campo está activo. Permite que la secuencia de comandos "enter" se ejecute en el campo. La sintaxis para activar el evento es<br /> (utilidad)._déclencheur(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENTO)<br /> </td>
   </tr>
   <tr>
    <td>XFA_EXIT_EVENTO</td>
-   <td>Este evento se activa cada vez que el usuario abandona el campo. Permite que el motor establezca el valor del campo y ejecute su secuencia de comandos "exit". La sintaxis para activar el evento es<br /> (utilidad)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENTO)<br /> </td>
+   <td>Este evento se activa cada vez que el usuario abandona el campo. Permite que el motor establezca el valor del campo y ejecute su secuencia de comandos "exit". La sintaxis para activar el evento es<br /> (utilidad)._déclencheur(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENTO)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CHANGE_EVENTO</td>
-   <td>Este evento se activa para permitir que el motor ejecute la secuencia de comandos de "cambio" escrita en el campo. La sintaxis para activar el evento es<br /> (utilidad)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENTO)<br /> </td>
+   <td>Este evento se activa para permitir que el motor ejecute la secuencia de comandos de "cambio" escrita en el campo. La sintaxis para activar el evento es<br /> (utilidad)._déclencheur(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENTO)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CLICK_EVENTO</td>
-   <td>Este evento se activa cada vez que se hace clic en el campo. permite al motor ejecutar la secuencia de comandos de "clic" escrita en el campo. La sintaxis para activar el evento es<br /> (utilidad)._desencadenador(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENTO)<br /> </td>
+   <td>Este evento se activa cada vez que se hace clic en el campo. permite al motor ejecutar la secuencia de comandos de "clic" escrita en el campo. La sintaxis para activar el evento es<br /> (utilidad)._déclencheur(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENTO)<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -201,7 +201,7 @@ Todos los widgets personalizados deben cumplir las especificaciones anteriores. 
   </tr>
   <tr>
    <td>multiselect<br /> </td>
-   <td>True si se permiten varias selecciones, en caso contrario false.<br /> </td>
+   <td>True si se permiten varias selecciones, de lo contrario false.<br /> </td>
   </tr>
  </tbody>
 </table>
