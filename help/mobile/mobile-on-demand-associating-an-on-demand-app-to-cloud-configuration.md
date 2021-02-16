@@ -40,7 +40,7 @@ Para configurar los Cloud Services bajo demanda móviles, haga clic en el engran
 
 Debe estar familiarizado con el panel de la aplicación y los mosaicos disponibles. Consulte [Panel de aplicaciones de AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obtener más información.
 
-### Configuración del vínculo a la configuración de la nube {#setting-up-link-to-cloud-configuration}
+### Configuración del vínculo a la configuración de nube {#setting-up-link-to-cloud-configuration}
 
 >[!CAUTION]
 >
