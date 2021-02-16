@@ -66,7 +66,7 @@ El documento DDX puede especificar documentos resultantes con estas característ
 
 * DOCUMENTO PDF que se monta a partir de varios documentos PDF
 * Varios documentos PDF que se separan de un solo documento PDF
-* PORTFOLIO PDF que incluye una interfaz de usuario independiente y varios documentos PDF y no PDF
+* Portfolio PDF que incluye una interfaz de usuario independiente y varios documentos PDF y no PDF
 * Documento XDP montado a partir de varios documentos XDP
 * Documento XDP que contiene fragmentos XML insertados dinámicamente en un documento XDP
 * DOCUMENTO PDF que empaqueta un documento XDP
