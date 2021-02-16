@@ -445,7 +445,7 @@ Las reglas de puntuación y de distintivo se pueden crear para componentes perso
 
 ## Temas y verbos {#topics-and-verbs}
 
-Cuando los miembros interactúan con las funciones de la comunidad, se envían eventos que pueden activar oyentes asincrónicos, como notificaciones y puntuación.
+Cuando los miembros interactúan con las funciones de la comunidad, se envían eventos que pueden dar déclencheur a los oyentes asincrónicos, como las notificaciones y la puntuación.
 
 La instancia de SocialEvent de un componente registra los eventos como `actions` que se producen para un `topic`. SocialEvent incluye un método para devolver un `verb` asociado a la acción. Existe una relación *n-1* entre `actions` y `verbs`.
 
