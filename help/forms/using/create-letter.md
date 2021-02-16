@@ -83,7 +83,7 @@ Los empleados orientados al cliente, como los reguladores de reclamaciones o los
 
 #### Controlada por el sistema {#system-driven}
 
-La generación de correspondencia es automatizada, impulsada por activadores de evento. Por ejemplo, un aviso de recordatorio enviado a una ciudadana pidiéndole que registre impuestos por adelantado, se genera combinando la plantilla predefinida con datos de ciudadanos. La carta final se puede enviar por correo electrónico, imprimir, enviar por fax o archivar.
+La generación de correspondencia es automatizada, impulsada por déclencheur de evento. Por ejemplo, un aviso de recordatorio enviado a una ciudadana pidiéndole que registre impuestos por adelantado, se genera combinando la plantilla predefinida con datos de ciudadanos. La carta final se puede enviar por correo electrónico, imprimir, enviar por fax o archivar.
 
 ![Correspondencia dirigida por el sistema](assets/us_cm_generate.png)
 
@@ -278,7 +278,7 @@ Cuando después de crear una correspondencia, toque Abrir, la Administración de
 
    ![Inserción de módulos de datos y fragmentos de diseño](assets/insertdmandlf.png)
 
-1. Seleccione Módulo de datos o Fragmento de diseño para estas opciones en cada uno de los subformularios y, a continuación, elija los módulos de datos o los fragmentos de diseño que desea insertar. Un fragmento de diseño permite insertar en él módulos de datos o fragmentos de diseño según su diseño (hasta cuatro niveles).
+1. Seleccione Módulo de datos o Fragmento de diseño para estas opciones en cada subformulario y, a continuación, elija los módulos de datos o los fragmentos de diseño que desea insertar. Un fragmento de diseño permite insertar en él módulos de datos o fragmentos de diseño según su diseño (hasta cuatro niveles).
 
    ![nestedlf](assets/nestedlf.png)
 
@@ -343,7 +343,7 @@ Cuando después de crear una correspondencia, toque Abrir, la Administración de
 
 1. Seleccione **Añadir recurso**.
 1. En la pantalla Seleccionar recurso, toque los recursos para adjuntarlos a la letra y toque **Listo**. Es necesario que los recursos se carguen primero en Recursos. Se recomienda adjuntar solo archivos PDF y documentos de Microsoft Office, pero también puede adjuntar imágenes. Para obtener más información sobre cómo cargar recursos en DAM, consulte [Carga de recursos](/help/assets/manage-assets.md).
-1. Para bloquear el orden de los recursos en la lista para que el ajuste de reclamaciones no pueda cambiar el orden, toque **Bloquear orden**. Si no selecciona esta opción, el ajuste de solicitudes puede cambiar el orden de los artículos de lista.
+1. Para bloquear el orden de los recursos en la lista de modo que el ajuste de reclamaciones no pueda cambiar el orden, toque **Bloquear orden**. Si no selecciona esta opción, el ajuste de solicitudes puede cambiar el orden de los artículos de lista.
 1. Para cambiar el orden de los recursos, arrastre y suelte un recurso que contenga el icono de reordenación de un recurso ( ![arrastrar](assets/dragndrop.png)).
 1. Toque **Editar** delante de un archivo adjunto y especifique un archivo adjunto como Obligatorio si no desea que el autor pueda eliminarlo. Especifique un archivo adjunto como Seleccionado si desea que se preseleccione en la interfaz de CCR.
 1. Seleccione **Acceso a biblioteca** para dar acceso a la biblioteca. Si Acceso a biblioteca está habilitado, el ajuste de solicitudes puede acceder a la biblioteca de contenido al crear una carta e insertar archivos adjuntos.
