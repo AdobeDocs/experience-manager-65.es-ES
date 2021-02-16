@@ -36,7 +36,7 @@ Las acciones de gestor de contenido son los componentes básicos que ayudan a cr
 
 ## Carga de recursos compartidos {#uploading-shared-resources-1}
 
-Normalmente, el contenido, como los artículos, debe tener el mismo aspecto en todos los autores e incluso en las aplicaciones. Por lo tanto, es esencial que las secuencias de comandos, las css y las fuentes estén disponibles para todos. Esta operación envía estos recursos compartidos a Mobile On-Demand, que se pueden consumir según sea necesario.
+Normalmente, el contenido como los artículos debe tener el mismo aspecto en todos los autores e incluso en las aplicaciones. Por lo tanto, es esencial que las secuencias de comandos, las css y las fuentes estén disponibles para todos. Esta operación envía estos recursos compartidos a Mobile On-Demand, que se pueden consumir según sea necesario.
 
 Una vez configurada y asociada la aplicación a una configuración de nube, puede cargar los recursos compartidos. Para obtener pasos detallados sobre cómo asociar la aplicación a una configuración de nube, haga clic [aquí](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
 
@@ -49,7 +49,7 @@ Siga estos pasos para cargar los recursos compartidos de un artículo:
 1. Seleccione el artículo en el mosaico **Administrar artículos**.
 1. Haga clic en **Cargar recursos compartidos** para cargar los recursos HTML compartidos.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 ### El paso siguiente {#the-next-step}
 
