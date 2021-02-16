@@ -721,7 +721,7 @@ Puede buscar recursos mediante programación mediante la API de Java del servici
 
 **Comportamiento de ordenación**
 
-El orden no se respeta al invocar el método `ResourceRepositoryClient` del objeto `searchProperties` y al especificar un criterio de ordenación. Por ejemplo, supongamos que crea un recurso con tres propiedades personalizadas, donde los nombres de atributo son `name`, `secondName` y `asecondName`. A continuación, se crea un elemento de orden de clasificación en el nombre del atributo y se establece el valor `ascending` en `true`.
+El orden no se respeta cuando se invoca el método `ResourceRepositoryClient` del objeto `searchProperties` y se especifica un criterio de ordenación. Por ejemplo, supongamos que crea un recurso con tres propiedades personalizadas, donde los nombres de atributo son `name`, `secondName` y `asecondName`. A continuación, se crea un elemento de orden de clasificación en el nombre del atributo y se establece el valor `ascending` en `true`.
 
 A continuación, invoque el método `ResourceRepositoryClient` del objeto `searchProperties` y pase el orden. La búsqueda devuelve el recurso correcto, con las tres propiedades. Sin embargo, las propiedades no se ordenan por nombre de atributo. Se devuelven en el orden en que se añadieron: `name`, `secondName` y `asecondName`.
 
