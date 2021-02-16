@@ -100,7 +100,7 @@ La configuración del área **Configuración global de caché** afecta a todos l
 
 ### Almacenamiento en caché de diseños de formulario {#caching-form-designs}
 
-Cuando el servicio Forms recibe una solicitud de procesamiento, recupera el diseño de formulario del repositorio y lo almacena en la caché. Este almacenamiento en caché mejora el rendimiento porque, para solicitudes de procesamiento posteriores, el servicio Forms recupera el diseño de formulario de la caché en lugar de hacerlo del repositorio.
+Cuando el servicio Forms recibe una solicitud de procesamiento, recupera el diseño de formulario del repositorio y lo almacena en caché. Este almacenamiento en caché mejora el rendimiento porque, para solicitudes de procesamiento posteriores, el servicio Forms recupera el diseño de formulario de la caché en lugar de hacerlo del repositorio.
 
 El servicio Forms siempre almacena en caché los diseños de formulario en el disco. Si los diseños de formulario se almacenan en el servidor, dichos archivos se consideran la caché de disco. El servicio Forms también almacena en caché los diseños de formulario en la memoria, según la configuración del área **Caché de plantilla de memoria**. Si cambia cualquiera de estas opciones, reinicie el servicio de Forms para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte [Inicio o detenga los servicios asociados con los módulos de formularios de AEM](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
