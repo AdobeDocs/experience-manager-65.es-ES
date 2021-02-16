@@ -164,7 +164,7 @@ Los Flujos de trabajo de AEM centrados en el formulario en OSGi y Flujos de trab
    <td>Compatible con <sup>[2]</sup></td>
   </tr>
   <tr>
-   <td>Servicios de documentos</td>
+   <td>Servicios de documento</td>
    <td>Compatible con <sup>[3]</sup></td>
    <td>Compatible con <sup>[3]</sup></td>
   </tr>
