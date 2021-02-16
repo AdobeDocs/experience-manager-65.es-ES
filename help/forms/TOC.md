@@ -69,7 +69,7 @@ ht-degree: 3%
       + [Instalación y configuración del servidor de seguridad de AEM Forms Documento](using/installing-and-configuring-the-document-security-server.md)
       + [Preparación de la instalación de AEM Forms (un solo servidor)](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
       + [Instalación e implementación de Adobe Experience Manager Forms en JEE para JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
-      + [Instalación e implementación de formularios Adobe Experience Manager en JEE para WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+      + [Instalación e implementación de formularios de Adobe Experience Manager en JEE para WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
       + [Instalación e implementación de AEM Forms en JEE para WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_65)
       + [Instalación de AEM Forms Workbench](using/install-workbench.md)
       + [Instalación y configuración de Designer](using/installing-configuring-designer.md)
