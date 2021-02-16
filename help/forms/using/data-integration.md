@@ -50,7 +50,7 @@ Una vez creado el modelo de datos de formulario, puede utilizarlo en varios fluj
 
 El primer paso para implementar la integración de datos es identificar y configurar las fuentes de datos que almacenan la información que desea aprovechar en formularios adaptables y casos de uso de comunicaciones interactivas. A continuación, se crea un modelo de datos de formulario que utiliza objetos, propiedades y servicios del modelo de datos de uno o varios orígenes de datos. Puede crear formularios adaptables y comunicaciones interactivas basadas en un modelo de datos de formulario en el que los campos de formulario adaptables o los marcadores de posición de las comunicaciones interactivas estén enlazados a las propiedades de origen de datos correspondientes.
 
-[!DNL AEM Forms] también permite crear un modelo de datos de formulario independiente de los orígenes de datos y asociar o enlazar objetos y propiedades del modelo de datos en el modelo de datos de formulario con el origen de datos más adelante. Elimina cualquier dependencia de los orígenes de datos mientras trabaja en un modelo de datos de formulario.
+[!DNL AEM Forms] también permite crear un modelo de datos de formulario independiente de los orígenes de datos y asociar o enlazar objetos y propiedades del modelo de datos en el modelo de datos de formulario con el origen de datos más adelante. Elimina las dependencias de los orígenes de datos mientras trabaja en un modelo de datos de formulario.
 
 Revise lo siguiente para empezar, comprender e implementar la integración de datos.
 
