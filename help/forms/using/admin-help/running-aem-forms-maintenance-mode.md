@@ -33,7 +33,7 @@ Evite invocar procesos mientras el servidor está en modo de mantenimiento. Esto
 
    `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=[administrator username]&password=[password]`
 
-   En la ventana del explorador se muestra un mensaje &quot;ahora en pausa&quot;.
+   Se muestra un mensaje &quot;ahora en pausa&quot; en la ventana del explorador.
 
    >[!NOTE]
    >
