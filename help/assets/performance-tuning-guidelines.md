@@ -180,7 +180,7 @@ Los clientes utilizan imágenes de diversos tamaños y formatos en su sitio web 
 
 Muchos clientes de Sitios implementan un servlet de imagen que cambia el tamaño y recorta las imágenes en el momento en que se solicitan, lo que impone una carga adicional en la instancia de publicación. Sin embargo, mientras estas imágenes se puedan almacenar en caché, el desafío se puede mitigar.
 
-Un enfoque alternativo es usar la tecnología de Dynamic Media para permitir la manipulación total de imágenes. Además, puede implementar Brand Portal que no solo se haga cargo de las responsabilidades de generación de representaciones de la infraestructura [!DNL Experience Manager], sino también de todo el nivel de publicación.
+Un método alternativo es utilizar la tecnología Dynamic Media para permitir la manipulación total de imágenes. Además, puede implementar Brand Portal que no solo se haga cargo de las responsabilidades de generación de representaciones de la infraestructura [!DNL Experience Manager], sino también de todo el nivel de publicación.
 
 #### ImageMagick {#imagemagick}
 
@@ -233,7 +233,7 @@ Al replicar recursos en un gran número de instancias de publicación, por ejemp
 
 1. Elija la instancia de publicación que desea utilizar para encadenar las replicaciones a
 1. En esa instancia de publicación, agregue agentes de replicación que apunten a otras instancias de publicación
-1. En cada uno de esos agentes de replicación, habilite &quot;Al recibir&quot; en la ficha &quot;Desencadenadores&quot;
+1. En cada uno de esos agentes de replicación, habilite &quot;Al recibir&quot; en la ficha &quot;Déclencheur&quot;
 
 >[!NOTE]
 >
@@ -269,7 +269,7 @@ Cuando cree consultas que generen grandes conjuntos de resultados, utilice el pa
 
 Existen dos problemas conocidos principales relacionados con archivos de gran tamaño en [!DNL Experience Manager]. Cuando los archivos alcanzan tamaños buenos de 2 GB, la sincronización en espera en frío puede encontrarse en una situación de memoria insuficiente. En algunos casos, evita que se ejecute la sincronización en espera. En otros casos, provoca el bloqueo de la instancia principal. Este escenario se aplica a cualquier archivo de [!DNL Experience Manager] que tenga más de 2 GB, incluidos los paquetes de contenido.
 
-Del mismo modo, cuando los archivos alcanzan 2 GB de tamaño mientras se utiliza un almacén de datos S3 compartido, puede que tarde algún tiempo en que el archivo se mantenga completamente desde la caché hasta el sistema de archivos. Como resultado, al utilizar la replicación sin binarios, es posible que los datos binarios no se hayan mantenido antes de que se complete la replicación. Esta situación puede dar lugar a problemas, especialmente si la disponibilidad de datos es importante.
+Del mismo modo, cuando los archivos alcanzan los 2 GB de tamaño mientras se utiliza un almacén de datos S3 compartido, puede que tarde algún tiempo en que el archivo permanezca completamente desde la caché hasta el sistema de archivos. Como resultado, al utilizar la replicación sin binarios, es posible que los datos binarios no se hayan mantenido antes de que se complete la replicación. Esta situación puede dar lugar a problemas, especialmente si la disponibilidad de datos es importante.
 
 ## Prueba de rendimiento {#performance-testing}
 
