@@ -1317,7 +1317,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
   </tr>
   <tr>
    <td>app.constants</td>
-   <td>Objeto envolvente para mantener varios valores constantes. Actualmente, esta propiedad devuelve un objeto con una sola propiedad, align.</td>
+   <td>Un objeto envolvente para mantener varios valores constantes. Actualmente, esta propiedad devuelve un objeto con una sola propiedad, align.</td>
    <td>Los formularios HTML5 devuelven un objeto de alineación vacío.</td>
   </tr>
   <tr>
