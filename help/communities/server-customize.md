@@ -70,7 +70,7 @@ Se obtiene un identificador del servicio OSGi invocando `com.adobe.cq.social.scf
 
 Los extremos del POST de API HTTP son clases PostOperation definidas mediante la implementación de la interfaz `SlingPostOperation` (paquete `org.apache.sling.servlets.post`).
 
-La implementación de `PostOperation` extremo `sling.post.operation` establece &lt;a1/> en un valor al que responderá la operación. Todas las solicitudes de POST con un parámetro:operation establecido en ese valor se delegarán en esta clase de implementación.
+La implementación de `PostOperation` extremo `sling.post.operation` establece  en un valor al que responderá la operación. Todas las solicitudes de POST con un parámetro:operation establecido en ese valor se delegarán en esta clase de implementación.
 
 El `PostOperation` invoca el `SocialOperation` que realiza las acciones necesarias para la operación.
 
