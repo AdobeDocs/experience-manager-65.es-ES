@@ -19,7 +19,7 @@ ht-degree: 4%
 * Trabajador proxy para definir y administrar una tarea específica.
 Pueden abarcar una amplia variedad de tareas; por ejemplo, si se utiliza un [!DNL InDesign Server] para procesar archivos.
 
-Para cargar archivos completamente a [!DNL Experience Manager Assets] que ha creado con [!DNL Adobe InDesign] se utiliza un proxy. Esto utiliza un trabajador proxy para comunicarse con [!DNL Adobe InDesign Server], donde [las secuencias de comandos](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) se ejecutan para extraer metadatos y generar varias representaciones para [!DNL Experience Manager Assets]. El trabajador proxy habilita la comunicación bidireccional entre las instancias [!DNL InDesign Server] y [!DNL Experience Manager] en una configuración de nube.
+Para cargar archivos completamente en [!DNL Experience Manager Assets] que ha creado con [!DNL Adobe InDesign] se utiliza un proxy. Esto utiliza un trabajador proxy para comunicarse con [!DNL Adobe InDesign Server], donde [las secuencias de comandos](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) se ejecutan para extraer metadatos y generar varias representaciones para [!DNL Experience Manager Assets]. El trabajador proxy habilita la comunicación bidireccional entre las instancias [!DNL InDesign Server] y [!DNL Experience Manager] en una configuración de nube.
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Para instalar y inicio el [!DNL InDesign Server] para utilizarlo con [!DNL Exper
 
 Este flujo de trabajo está configurado con valores predeterminados que se pueden adaptar para su configuración en las distintas instancias de creación (es un flujo de trabajo estándar, por lo que hay más información disponible en [Edición de un flujo de trabajo](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si está utilizando los valores predeterminados (incluido el puerto SOAP), no es necesaria ninguna configuración.
 
-Después de la configuración, la carga de [!DNL InDesign] archivos en [!DNL Experience Manager Assets] (por cualquiera de los métodos habituales) desencadena el flujo de trabajo para procesar el recurso y preparar las distintas representaciones. Pruebe la configuración cargando un archivo INDD en [!DNL Experience Manager Assets] para confirmar que ve las distintas representaciones creadas por IDS en `<*your_asset*>.indd/Renditions`
+Después de la configuración, cargar [!DNL InDesign] archivos en [!DNL Experience Manager Assets] (por cualquiera de los métodos habituales) déclencheur el flujo de trabajo para procesar el recurso y preparar las distintas representaciones. Pruebe la configuración cargando un archivo INDD en [!DNL Experience Manager Assets] para confirmar que ve las distintas representaciones creadas por IDS en `<*your_asset*>.indd/Renditions`
 
 #### Extracción de medios {#media-extraction}
 
@@ -213,7 +213,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 ## Habilitar compatibilidad con [!DNL InDesign Server] 10.0 o posterior {#enabling-support-for-indesign-server-or-later}
 
-Para [!DNL InDesign Server] 10.0 o superior, realice los siguientes pasos para habilitar la compatibilidad con varias sesiones.
+Para [!DNL InDesign Server] 10.0 o superior, lleve a cabo los siguientes pasos para habilitar la compatibilidad con varias sesiones.
 
 1. Abra Configuration Manager desde su instancia [!DNL Experience Manager Assets] `https://[aem_server]:[port]/system/console/configMgr`.
 1. Edite la configuración `com.day.cq.dam.ids.impl.IDSJobProcessor.name`.
