@@ -29,7 +29,7 @@ Los procesamientos listos para usar generalmente dirigen el repositorio y devuel
 
 AEM, a través de Sling, también admite el desarrollo e implementación de representaciones de sling personalizadas para tomar el control total del esquema y el contenido procesados.
 
-Los procesadores predeterminados de Content Services llenan la brecha entre los valores predeterminados de Sling predeterminados y el desarrollo personalizado, lo que permite la personalización y el control de muchos aspectos del contenido procesado sin necesidad de desarrollo.
+Los procesadores predeterminados de Content Services llenan el espacio entre los valores predeterminados de Sling predeterminados y el desarrollo personalizado, lo que permite la personalización y el control de muchos aspectos del contenido procesado sin necesidad de desarrollo.
 
 El diagrama siguiente muestra la representación de los servicios de contenido.
 
@@ -37,7 +37,7 @@ El diagrama siguiente muestra la representación de los servicios de contenido.
 
 ## Solicitando JSON {#requesting-json}
 
-Utilice **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.] jsonto para solicitar JSON.**
+Utilice **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto para solicitar JSON.]
 
 <table>
  <tbody>
