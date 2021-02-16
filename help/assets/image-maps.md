@@ -45,4 +45,4 @@ Los mapas de imagen le permiten agregar una o más áreas con hipervínculos que
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Si la opción Dynamic Media está activada, vaya al editor de recursos y haga clic en **[!UICONTROL Asignar]** para vista de todos los mapas de imagen aplicados.
+   Si la opción Dynamic Media está habilitada, vaya al editor de recursos y haga clic en **[!UICONTROL Asignar]** para vista de todos los mapas de imagen aplicados.
