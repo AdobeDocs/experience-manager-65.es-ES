@@ -20,7 +20,7 @@ ht-degree: 9%
 
 # Descripción de los componentes reutilizables {#description-of-reusable-components}
 
-El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizables](/help/forms/using/integrating-html-ws-components-web.md) que están organizados en una [estructura de carpetas](/help/forms/using/folder-structure.md) específica en CRX™. Cada componente tiene un modelo, una vista y un archivo de plantilla en la ubicación especificada en la estructura de carpetas, dependencias de JavaScript™ en otros archivos de componentes, eventos escuchados por el componente y objetos de JavaScript que activan estos eventos en el espacio de trabajo de AEM Forms. Aquí se proporciona la lista completa de los componentes reutilizables con nombres de archivo constituyentes y dependencias.
+El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizables](/help/forms/using/integrating-html-ws-components-web.md) que están organizados en una [estructura de carpetas](/help/forms/using/folder-structure.md) específica en CRX™. Cada componente tiene un modelo, una vista y un archivo de plantilla en la ubicación especificada en la estructura de carpetas, dependencias de JavaScript™ en otros archivos de componentes, eventos escuchados por el componente y objetos de JavaScript que déclencheur estos eventos en el espacio de trabajo de AEM Forms. Aquí se proporciona la lista completa de los componentes reutilizables con nombres de archivo constituyentes y dependencias.
 
 ## TaskList {#tasklist}
 
@@ -56,7 +56,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>filterSelected - modelo de lista de tareas</p></li>
@@ -69,7 +69,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 
 >[!NOTE]
 >
->Este componente se puede utilizar independientemente del espacio de trabajo de AEM Forms, siempre que active filterevento seleccionado para este componente desde la aplicación personalizada.
+>Este componente se puede utilizar independientemente del espacio de trabajo de AEM Forms, siempre que se utilice el déclencheur filterevento seleccionado para este componente desde la aplicación personalizada.
 
 ## Tarea {#task}
 
@@ -100,7 +100,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>submitComplete: modelo de tarea</p></li>
@@ -139,7 +139,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>buscado - modelo de lista de tareas </p></li>
@@ -211,7 +211,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>buscado - modelo de lista de tareas </p></li>
@@ -299,7 +299,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p> </td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
    <td>
     <ul>
      <li><p>reenviado - modelo de tarea</p> </li>
@@ -353,7 +353,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>allStartpointsFetched - modelo de lista de categorías </p></li>
@@ -396,7 +396,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>cambiado - modelo de categoría </p></li>
@@ -444,7 +444,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>categoría:seleccionada - modelo de lista de categorías </p></li>
@@ -456,7 +456,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 
 >[!NOTE]
 >
->Los componentes StartPointList y CategoryList comparten la clase de modelo, por lo que la primera depende de la segunda. CategoryList accede a la información sobre los puntos de inicio de la categoría que se muestran. Para utilizar StartPointList de forma independiente, simule el activador de evento de CategoryList.
+>Los componentes StartPointList y CategoryList comparten la clase de modelo, por lo que la primera depende de la segunda. CategoryList accede a la información sobre los puntos de inicio de la categoría que se muestran. Para utilizar StartPointList de forma independiente, simule el déclencheur de evento de CategoryList.
 
 ## StartPoint {#startpoint}
 
@@ -483,7 +483,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>modelo de tarea</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td><p>change - modelo de punto de partida </p></td>
   </tr>
  </tbody>
@@ -527,7 +527,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p> </td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
    <td>
     <ul>
      <li><p>categoría:seleccionada - modelo de lista de categorías</p> </li>
@@ -577,7 +577,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>modelo processname</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>add - modelo processnamelist </p></li>
@@ -617,7 +617,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>modelo processinstancelist</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td><p>change - modelo processname </p></td>
   </tr>
  </tbody>
@@ -648,7 +648,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>modelo processname</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>nombreproceso:seleccionado - modelo de lista de nombres de procesos </p></li>
@@ -660,7 +660,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 
 >[!NOTE]
 >
->ProcessInstanceList espera un evento de ProcessNameList que indica el nombre del proceso para recuperar y mostrar instancias. Para utilizar ProcessInstanceList de forma independiente, simule el activador de evento por separado.
+>ProcessInstanceList espera un evento de ProcessNameList que indica el nombre del proceso para recuperar y mostrar instancias. Para utilizar ProcessInstanceList de forma independiente, simule el déclencheur de evento por separado.
 
 ## ProcessInstance {#processinstance}
 
@@ -687,7 +687,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>modelo de lista de tareas</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td><p>change - modelo de instancia de proceso </p></td>
   </tr>
  </tbody>
@@ -722,7 +722,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>nombreproceso:seleccionado - modelo de lista de nombres de procesos </p></li>
@@ -762,7 +762,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>vista usersearch</p> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p> </td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
    <td>
     <ul>
      <li><p>outOfOfficeSettingsFetched - modelo de outtofoffice</p> </li>
@@ -803,7 +803,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>vista usersearch</p> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p> </td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
    <td>
     <ul>
      <li><p>queueAccessGranted - modelo sharequeue</p> </li>
@@ -847,7 +847,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>PreferencesFetched - modelo de configuración </p></li>
@@ -921,7 +921,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p> </td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
    <td>
     <ul>
      <li>userImageUrlFetched - modelo userinfo</li>
@@ -961,7 +961,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p></td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
    <td><p>newWsError - modelo de wserror </p></td>
   </tr>
  </tbody>
@@ -992,7 +992,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p> </td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
    <td>
     <ul>
      <li>principalSearched - modelo de búsqueda principal</li>
@@ -1027,7 +1027,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p> </td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
    <td><p>templateFetched - modelo de plantilla de búsqueda</p> </td>
   </tr>
  </tbody>
@@ -1058,7 +1058,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>modelo de plantilla de búsqueda</p> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p> </td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
    <td><p>change - searchtemplatelist modelo</p> </td>
   </tr>
  </tbody>
@@ -1089,7 +1089,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td>ND<br /> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Activador)</p> </td>
+   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
    <td><p>searchTemplate:selected - modelo de plantilla de búsqueda</p> </td>
   </tr>
  </tbody>
