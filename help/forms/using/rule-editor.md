@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-La función de editor de reglas de Adobe Experience Manager Forms permite a los usuarios y desarrolladores de formularios empresariales escribir reglas sobre objetos de formulario adaptables. Estas reglas definen acciones para activar objetos de formulario en función de condiciones preestablecidas, entradas de usuario y acciones del usuario en el formulario. Esto ayuda a optimizar aún más la experiencia de cumplimentación de formularios, asegurando la precisión y la velocidad.
+La función de editor de reglas de Adobe Experience Manager Forms permite a los usuarios y desarrolladores de formularios empresariales escribir reglas sobre objetos de formulario adaptables. Estas reglas definen acciones para el déclencheur de objetos de formulario en función de condiciones preestablecidas, entradas del usuario y acciones del usuario en el formulario. Esto ayuda a optimizar aún más la experiencia de cumplimentación de formularios, asegurando la precisión y la velocidad.
 
 El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada para escribir reglas. El editor de reglas oferta un editor visual para todos los usuarios. Además, solo para usuarios con poder de formularios, el editor de reglas proporciona un editor de código para escribir reglas y secuencias de comandos. Algunas de las acciones clave que se pueden realizar con objetos de formulario adaptables mediante reglas son:
 
@@ -45,11 +45,11 @@ El editor de reglas proporciona un conjunto de tipos de reglas predefinidos, com
 
 Una regla suele seguir una de las siguientes construcciones:
 
-**Condición-** AcciónEn esta construcción, una regla primero define una condición seguida de una acción para activar. La construcción es comparable a la afirmación if-then en lenguajes de programación.
+**Condición-** AcciónEn esta construcción, una regla primero define una condición seguida de una acción de déclencheur. La construcción es comparable a la afirmación if-then en lenguajes de programación.
 
 En el editor de reglas, el tipo de regla **When** fuerza la construcción de condición-acción.
 
-**Action-** ConditionEn esta construcción, una regla primero define una acción para activar seguida de condiciones para la evaluación. Otra variación de esta construcción es la acción alternativa-condición-acción, que también define una acción alternativa para activar si la condición devuelve False.
+**Action-** ConditionEn esta construcción, una regla primero define una acción al déclencheur seguida de condiciones para la evaluación. Otra variación de esta construcción es la acción alternativa-condición-acción, que también define una acción alternativa al déclencheur si la condición devuelve False.
 
 Los tipos de reglas Mostrar, Ocultar, Activar, Deshabilitar, Definir valor de y Validar del editor de reglas refuerzan la creación de reglas de condición de acción. De forma predeterminada, la acción alternativa para Mostrar es Ocultar y Activar es Deshabilitar, y viceversa. No se puede cambiar la acción alternativa predeterminada.
 
@@ -71,10 +71,10 @@ Aunque puede lograr la mayoría de los casos de uso utilizando cualquier constru
 
    Por ejemplo, para ocultar los campos B, C y D en función de la condición que comprueba el valor especificado por un usuario en el campo A, escriba una regla con la creación de condición-acción o Cuando el tipo de regla en el campo A y especifique acciones para controlar la visibilidad de los campos B, C y D. De lo contrario, necesita tres reglas independientes en los campos B, C y D, donde cada regla comprueba la condición y muestra u oculta el campo correspondiente. En este ejemplo, es más eficaz escribir el tipo de regla Cuándo en un objeto en lugar de Mostrar u Ocultar tipo de regla en tres objetos.
 
-* Para desencadenar una acción basada en varias condiciones, se recomienda utilizar la construcción de condición de acción. Por ejemplo, para mostrar y ocultar el campo A mediante la evaluación de condiciones en los campos B, C y D, utilice Mostrar u Ocultar tipo de regla en el campo A.
+* Para déclencheur de una acción basada en varias condiciones, se recomienda utilizar la construcción de condición de acción. Por ejemplo, para mostrar y ocultar el campo A mediante la evaluación de condiciones en los campos B, C y D, utilice Mostrar u Ocultar tipo de regla en el campo A.
 * Utilice la construcción de condición-acción o condición de acción si la regla contiene una acción para una condición.
 * Si una regla comprueba la existencia de una condición y realiza una acción inmediatamente después de proporcionar un valor en un campo o de salir de un campo, se recomienda escribir una regla con la construcción de acción-condición o el tipo de regla Cuándo en el campo en el que se evalúa la condición.
-* La condición de la regla Cuándo se evalúa cuando un usuario cambia el valor del objeto en el que se aplica la regla Cuándo. Sin embargo, si desea que la acción se active cuando el valor cambie en el servidor, como en el caso de rellenar previamente el valor, se recomienda escribir una regla de Cuándo que active la acción cuando se inicialice el campo.
+* La condición de la regla Cuándo se evalúa cuando un usuario cambia el valor del objeto en el que se aplica la regla Cuándo. Sin embargo, si desea que la acción tenga un déclencheur cuando el valor cambie en el servidor, como en el caso de rellenar previamente el valor, se recomienda escribir una regla de Cuándo que déclencheur la acción cuando se inicialice el campo.
 * Al escribir reglas para objetos de listas desplegables, botones de opción o casillas de verificación, las opciones o valores de estos objetos de formulario en el formulario se rellenan previamente en el editor de reglas.
 
 ## Tipos de operadores y eventos disponibles en el editor de reglas {#available-operator-types-and-events-in-rule-editor}
@@ -98,7 +98,7 @@ El editor de reglas proporciona un conjunto de tipos de reglas predefinidos que 
 
 ### Cuando {#whenruletype}
 
-El tipo de regla **Cuando** sigue la construcción de la regla **acción-condición-acción-alternativa** o, a veces, sólo la construcción **condición-acción**. En este tipo de regla, primero debe especificar una condición para la evaluación seguida de una acción para activar si se cumple la condición ( `True`). Al utilizar el tipo de regla Cuándo, puede utilizar varios operadores Y y O para crear [expresiones anidadas](#nestedexpressions).
+El tipo de regla **Cuando** sigue la construcción de la regla **acción-condición-acción-alternativa** o, a veces, sólo la construcción **condición-acción**. En este tipo de regla, primero debe especificar una condición para la evaluación seguida de una acción para el déclencheur si se cumple la condición ( `True`). Al utilizar el tipo de regla Cuándo, puede utilizar varios operadores Y y O para crear [expresiones anidadas](#nestedexpressions).
 
 Con el tipo de regla Cuándo, puede evaluar una condición en un objeto de formulario y realizar acciones en uno o varios objetos.
 
@@ -122,7 +122,7 @@ Por ejemplo, una lista tiene cuatro opciones: Rojo, Azul, Verde y Amarillo. Al c
 
 ![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
-Al escribir una regla de Cuándo, puede activar la acción Borrar valor de acción. Borrar valor de acción borra el valor del objeto especificado. La opción Tener un valor claro de como en la instrucción When le permite crear condiciones complejas con varios campos.
+Al escribir una regla de Cuándo, puede déclencheur el valor de acción Borrar. Borrar valor de acción borra el valor del objeto especificado. La opción Tener un valor claro de como en la instrucción When le permite crear condiciones complejas con varios campos.
 
 ![clearValue de](assets/clearvalueof.png)
 
@@ -212,7 +212,7 @@ Ejemplo de regla de valor establecido con el servicio de modelo de datos de form
 
 ### Mostrar {#show}
 
-Con el tipo de regla **Mostrar**, puede escribir una regla para mostrar u ocultar un objeto de formulario en función de si una condición se cumple o no. El tipo de regla Mostrar también activa la acción Ocultar en caso de que la condición no se cumpla o devuelva `False`.
+Con el tipo de regla **Mostrar**, puede escribir una regla para mostrar u ocultar un objeto de formulario en función de si una condición se cumple o no. El tipo de regla Mostrar también déclencheur la acción Ocultar en caso de que la condición no se cumpla o devuelva `False`.
 
 Una regla Mostrar típica está estructurada de la siguiente manera:
 
@@ -232,7 +232,7 @@ Una regla Mostrar típica está estructurada de la siguiente manera:
 
 ### Ocultar {#hide}
 
-De forma similar al tipo de regla Mostrar, puede utilizar el tipo de regla **Ocultar** para mostrar u ocultar un objeto de formulario en función de si una condición se cumple o no. El tipo de regla Ocultar también activa la acción Mostrar en caso de que la condición no se cumpla o devuelva `False`.
+De forma similar al tipo de regla Mostrar, puede utilizar el tipo de regla **Ocultar** para mostrar u ocultar un objeto de formulario en función de si una condición se cumple o no. El tipo de regla Ocultar también déclencheur la acción Mostrar en caso de que la condición no se cumpla o devuelva `False`.
 
 Una regla de Ocultar típica está estructurada de la siguiente manera:
 
@@ -252,7 +252,7 @@ Una regla de Ocultar típica está estructurada de la siguiente manera:
 
 ### Habilitar {#enable}
 
-El tipo de regla **Habilitar** permite habilitar o deshabilitar un objeto de formulario en función de si una condición se cumple o no. El tipo de regla Habilitar también activa la acción Deshabilitar en caso de que la condición no se cumpla o devuelva `False`.
+El tipo de regla **Habilitar** permite habilitar o deshabilitar un objeto de formulario en función de si una condición se cumple o no. El tipo de regla Habilitar también déclencheur la acción Deshabilitar en caso de que la condición no se cumpla o devuelva `False`.
 
 Una regla Habilitar típica está estructurada de la siguiente manera:
 
@@ -272,7 +272,7 @@ Una regla Habilitar típica está estructurada de la siguiente manera:
 
 ### Desactivar {#disable}
 
-De forma similar al tipo de regla Habilitar, el tipo de regla **Deshabilitar** permite habilitar o deshabilitar un objeto de formulario en función de si una condición se cumple o no. El tipo de regla Deshabilitar también activa la acción Habilitar en caso de que la condición no se cumpla o devuelva `False`.
+De forma similar al tipo de regla Habilitar, el tipo de regla **Deshabilitar** permite habilitar o deshabilitar un objeto de formulario en función de si una condición se cumple o no. El tipo de regla Deshabilitar también déclencheur la acción Habilitar en caso de que la condición no se cumpla o devuelva `False`.
 
 Una regla de desactivación típica está estructurada de la siguiente manera:
 
@@ -346,7 +346,7 @@ Veamos en detalle cada componente de la interfaz de usuario del editor de reglas
 
 ### A. Pantalla de regla de componente {#a-component-rule-display}
 
-Muestra el título del objeto de formulario adaptable a través del cual se inició el editor de reglas y el tipo de regla seleccionado actualmente. En el ejemplo anterior, el editor de reglas se inicia desde un objeto de formulario adaptable denominado Salario y el tipo de regla seleccionado es Cuándo.
+Muestra el título del objeto de formulario adaptable a través del cual se ha iniciado el editor de reglas y el tipo de regla seleccionado actualmente. En el ejemplo anterior, el editor de reglas se inicia desde un objeto de formulario adaptable denominado Salario y el tipo de regla seleccionado es Cuándo.
 
 ### B. Objetos y funciones de formulario {#b-form-objects-and-functions-br}
 
@@ -779,7 +779,7 @@ Las secuencias de comandos o expresiones que debe haber escrito en la ficha Secu
 
 ### Invocar el servicio del modelo de datos de formulario {#invoke}
 
-Considere un servicio Web `GetInterestRates` que toma el monto del préstamo, la tenencia y la calificación crediticia del solicitante como entrada y devuelve un plan de préstamo que incluye el monto del IME y el tipo de interés. Puede crear un modelo de datos de formulario utilizando el servicio Web como origen de datos. Los objetos del modelo de datos y un servicio `get` se agregan al modelo de formulario. El servicio aparece en la ficha Servicios del modelo de datos de formulario. A continuación, cree un formulario adaptable que incluya campos de objetos del modelo de datos para capturar las entradas del usuario para el importe del préstamo, la tenencia y la puntuación del crédito. Añada un botón que active el servicio Web para obtener los detalles del plan. El resultado se rellena en los campos correspondientes.
+Considere un servicio Web `GetInterestRates` que toma el monto del préstamo, la tenencia y la calificación crediticia del solicitante como entrada y devuelve un plan de préstamo que incluye el monto del IME y el tipo de interés. Puede crear un modelo de datos de formulario utilizando el servicio Web como origen de datos. Los objetos del modelo de datos y un servicio `get` se agregan al modelo de formulario. El servicio aparece en la ficha Servicios del modelo de datos de formulario. A continuación, cree un formulario adaptable que incluya campos de objetos del modelo de datos para capturar las entradas del usuario para el importe del préstamo, la tenencia y la puntuación del crédito. Añada un botón que déclencheur al servicio Web para obtener los detalles del plan. El resultado se rellena en los campos correspondientes.
 
 La regla siguiente muestra cómo configurará la acción del servicio Invocar para llevar a cabo el escenario de ejemplo.
 
@@ -789,13 +789,13 @@ Invocar el servicio del modelo de datos de formulario mediante una regla de form
 
 ### Activación de varias acciones mediante la regla Cuándo {#triggering-multiple-actions-using-the-when-rule}
 
-En un formulario de solicitud de préstamo, desea capturar si el solicitante del préstamo es un cliente existente o no. En función de la información que proporcione el usuario, el campo ID del cliente debe mostrarse u ocultarse. Además, si el usuario es un cliente existente, desea establecer el enfoque en el campo ID del cliente. El formulario de solicitud de préstamo tiene los siguientes componentes:
+En un formulario de solicitud de préstamo, desea capturar si el solicitante del préstamo es un cliente existente o no. En función de la información que proporcione el usuario, el campo ID del cliente debe mostrarse u ocultarse. Además, si el usuario es un cliente existente, debe centrarse en el campo ID del cliente. El formulario de solicitud de préstamo tiene los siguientes componentes:
 
 * Un botón de radio, **¿Es usted un cliente de Geometrixx existente?**, que proporciona las opciones Sí y No. El valor de Sí es **0** y No es **1**.
 
 * Campo de texto, **ID de cliente de Geometrixx**, para especificar el ID de cliente.
 
-Al escribir una regla de Cuándo en el botón de radio para implementar este comportamiento, la regla aparece de la siguiente manera en el editor de reglas visuales.  ![when-rule-example](assets/when-rule-example.png)
+Cuando se escribe una regla de Cuándo en el botón de radio para implementar este comportamiento, la regla aparece de la siguiente manera en el editor de reglas visuales.  ![when-rule-example](assets/when-rule-example.png)
 
 Regla en el editor visual
 
