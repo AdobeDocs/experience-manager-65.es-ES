@@ -1,8 +1,8 @@
 ---
 title: EVENTOS OSGi para componentes de comunidades
 seo-title: EVENTOS OSGi para componentes de comunidades
-description: Se envían eventos OSGi que pueden activar oyentes asincrónicos
-seo-description: Se envían eventos OSGi que pueden activar oyentes asincrónicos
+description: Se envían eventos OSGi que pueden déclencheur de oyentes asincrónicos
+seo-description: Se envían eventos OSGi que pueden déclencheur de oyentes asincrónicos
 uuid: 317e2add-689d-4c99-ae38-0703b6649cb7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ## Información general {#overview}
 
-Cuando los miembros interactúan con las funciones de Communities, se envían eventos OSGi que pueden activar oyentes asincrónicos, como notificaciones o gamificación (puntuación y distintivo).
+Cuando los miembros interactúan con las funciones de Communities, se envían eventos OSGi que pueden déclencheur de oyentes asincrónicos, como notificaciones o gamificación (puntuación y distintivo).
 
 La instancia [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) de un componente registra los eventos como `actions` que se producen para un `topic`. SocialEvent incluye un método para devolver un `verb` asociado a la acción. Existe una relación *n-1* entre `actions` y `verbs`.
 
