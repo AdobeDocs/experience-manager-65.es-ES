@@ -105,7 +105,7 @@ El alias contiene todos los parámetros que requiere un HSM o una cookie. Siga l
    * **Alias** de credencial: Especifique una cadena utilizada para identificar el alias. Este valor se utiliza como propiedad para algunas operaciones de firmas digitales, como la operación Firmar campo de firma.
    * **Ruta** de DLL: Especifique la ruta completa de su HSM o biblioteca de cliente activada en el servidor. Por ejemplo, C:\Program Files\LunaSA\cryptoki.dll. En un entorno agrupado, esta ruta debe ser idéntica para todos los servidores del clúster.
    * **Pin** HSM: Especifique la contraseña necesaria para acceder a la clave del dispositivo.
-   * **Id** de ranura HSM: Especifique un identificador de ranura de tipo entero. El ID de ranura se establece cliente por cliente. Si registra una segunda máquina en una partición diferente (por ejemplo, HSMPART2 en el mismo dispositivo HSM), entonces la ranura 1 se asocia con la partición HSMPART2 para el cliente.
+   * **Id** de ranura HSM: Especifique un identificador de ranura de tipo entero. El ID de ranura se establece cliente por cliente. Si registra una segunda máquina en una partición diferente (por ejemplo, HSMPART2 en el mismo dispositivo HSM), entonces la ranura 1 está asociada con la partición HSMPART2 para el cliente.
 
    >[!NOTE]
    >
