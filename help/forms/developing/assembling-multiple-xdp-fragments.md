@@ -22,15 +22,15 @@ ht-degree: 0%
 
 # Compilación de varios fragmentos XDP{#assembling-multiple-xdp-fragments}
 
-Puede montar varios fragmentos XDP en un solo documento XDP. Por ejemplo, piense en los fragmentos XDP donde cada archivo XDP contiene uno o más subformularios utilizados para crear un formulario de mantenimiento. La siguiente ilustración muestra la vista de esquema (representa el archivo tuc018_template_flowed.xdp utilizado en el *inicio rápido de &lt;a0/>Ensamblado de varios fragmentos XDP*):
+Puede montar varios fragmentos XDP en un solo documento XDP. Por ejemplo, piense en los fragmentos XDP donde cada archivo XDP contiene uno o más subformularios utilizados para crear un formulario de mantenimiento. La siguiente ilustración muestra la vista de esquema (representa el archivo tuc018_template_flowed.xdp utilizado en el *inicio rápido de Ensamblado de varios fragmentos XDP*):
 
 ![am_am_forma](assets/am_am_forma.png)
 
-La siguiente ilustración muestra la sección del paciente (representa el archivo tuc018_contact.xdp utilizado en el *inicio rápido de &lt;a0/>montaje de varios fragmentos XDP*):
+La siguiente ilustración muestra la sección del paciente (representa el archivo tuc018_contact.xdp utilizado en el *inicio rápido de montaje de varios fragmentos XDP*):
 
 ![am_am_formb](assets/am_am_formb.png)
 
-La siguiente ilustración muestra la sección de salud del paciente (representa el archivo tuc018_Patient.xdp utilizado en el *inicio rápido de &lt;a0/>montaje de varios fragmentos XDP*):
+La siguiente ilustración muestra la sección de salud del paciente (representa el archivo tuc018_Patient.xdp utilizado en el *inicio rápido de montaje de varios fragmentos XDP*):
 
 ![am_am_formc](assets/am_am_formc.png)
 
