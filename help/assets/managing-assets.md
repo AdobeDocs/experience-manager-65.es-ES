@@ -28,5 +28,5 @@ Los siguientes temas describen lo que debe hacer para administrar los recursos d
 
 * [Práctica recomendada para optimizar la calidad de las imágenes](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Vista previa de recursos de Dynamic Media](/help/assets/previewing-assets.md)
-* [Publicación de recursos de Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md)
+* [Publicación de Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md)
 * [Trabajar con selectores](/help/assets/working-with-selectors.md)
