@@ -1,6 +1,6 @@
 ---
 title: Previsualización de recursos
-description: Obtenga información sobre la previsualización de recursos en Dynamic Media
+description: Aprenda a previsualización de recursos en Dynamic Media
 uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
