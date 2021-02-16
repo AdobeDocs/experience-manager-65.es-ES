@@ -111,7 +111,7 @@ Estas son algunas de las formas en que puede montar documentos XDP:
 
 ### Monte un documento XDP simple {#assemble-a-simple-xdp-document}
 
-La siguiente ilustración muestra tres documentos XDP de origen que se están ensamblando en un solo documento XDP resultante. El documento XDP resultante contiene los tres documentos XDP de origen, incluidos sus datos asociados. El documento resultante obtiene atributos básicos del documento base, que es el primer documento XDP de origen.
+La siguiente ilustración muestra tres documentos XDP de origen que se están ensamblando en un solo documento XDP resultante. El documento XDP resultante contiene los tres documentos XDP de origen, incluidos los datos asociados. El documento resultante obtiene atributos básicos del documento base, que es el primer documento XDP de origen.
 
 ![Compilación de un documento XDP simple a partir de varios documentos XDP](assets/as_assembler_xdpassembly.png)
 
@@ -160,7 +160,7 @@ Puede especificar el modo en que el servicio Ensamblador gestiona las imágenes 
  </tbody> 
 </table>
 
-Puede especificar el valor del atributo resolveAssets en la etiqueta de origen XDP o en la etiqueta de resultado XDP principal. Si el atributo se especifica en la etiqueta de resultado XDP, todos los elementos de origen XDP que sean elementos secundarios del resultado XDP lo heredarán. Sin embargo, si se especifica explícitamente el atributo de un elemento de origen, se anula la configuración del elemento de resultado solo para ese documento de origen.
+Puede especificar el valor del atributo resolveAssets en la etiqueta de origen XDP o en la etiqueta de resultado XDP principal. Si el atributo se especifica en la etiqueta de resultado XDP, todos los elementos de origen XDP que sean secundarios de un resultado XDP lo heredarán. Sin embargo, si se especifica explícitamente el atributo de un elemento de origen, se anula la configuración del elemento de resultado solo para ese documento de origen.
 
 #### Resolver todas las referencias de origen en un documento XDP {#resolve-all-source-references-in-an-xdp-document}
 
