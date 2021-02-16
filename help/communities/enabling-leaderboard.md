@@ -143,7 +143,7 @@ Configuración del componente de la tabla de clasificación:
    * Regla de creación de distintivos = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Límite de visualización = `10`
 
-![experto: tabla de dirección](assets/experts-leaderboard.png)
+![experto: Consejo de Dirección](assets/experts-leaderboard.png)
 
 ### Información adicional {#additional-information}
 
