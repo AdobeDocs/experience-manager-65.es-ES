@@ -68,7 +68,7 @@ Para personalizar o ampliar los componentes, solo debe escribir las superposicio
 
 ## Módulo del lado del servidor {#server-side-framework}
 
-El marco proporciona API para acceder a la funcionalidad en el servidor y admite la interacción entre el cliente y el servidor.
+La estructura proporciona API para acceder a la funcionalidad en el servidor y admite la interacción entre el cliente y el servidor.
 
 ### API de Java {#java-apis}
 
@@ -136,7 +136,7 @@ En el servidor, cuando Sling resuelve una solicitud de GET, identifica la secuen
 
 ### Sin restricción de acceso {#no-access-restriction}
 
-Los archivos de plantilla de las barras de administración (HBS) (.hbs) son análogos a los archivos de plantilla .jsp y .html, excepto que pueden utilizarse para la representación tanto en el navegador del cliente como en el servidor. Por lo tanto, un navegador cliente que solicite una plantilla de cliente recibirá un archivo .hbs del servidor.
+Los archivos de plantilla de las barras de administración (HBS) (.hbs) son análogos a los archivos de plantilla .jsp y .html, excepto que pueden utilizarse para procesar tanto en el navegador del cliente como en el servidor. Por lo tanto, un navegador cliente que solicite una plantilla de cliente recibirá un archivo .hbs del servidor.
 
 Esto requiere que cualquier usuario pueda recuperar todas las plantillas HBS de la ruta de búsqueda sling (cualquier archivo .hbs en /libs/ o /apps) desde el autor o la publicación.
 
