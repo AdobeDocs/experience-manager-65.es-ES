@@ -1,8 +1,8 @@
 ---
 title: Configuración de la configuración de Adobe PDF
 seo-title: Configuración de la configuración de Adobe PDF
-description: Obtenga información sobre cómo configurar la configuración de Adobe PDF.
-seo-description: Obtenga información sobre cómo configurar la configuración de Adobe PDF.
+description: Obtenga información sobre cómo configurar las opciones de Adobe PDF.
+seo-description: Obtenga información sobre cómo configurar las opciones de Adobe PDF.
 uuid: 980c9d6a-f75e-4e7d-b050-d2d07a10ef33
 contentOwner: admin
 content-type: reference
@@ -45,7 +45,7 @@ La configuración de Adobe PDF solo se aplica a las conversiones basadas en PDFM
 
 ## Acerca de la configuración de PDF predefinida {#about-the-predefined-pdf-settings}
 
-PDF Generator proporciona varios ajustes predefinidos de PDF para su uso. No puede modificar esta configuración predefinida; sin embargo, puede crear una configuración basada en una existente editando la configuración y guardarla con un nombre nuevo.
+PDF Generator proporciona varios ajustes de PDF predefinidos para su uso. No puede modificar esta configuración predefinida; sin embargo, puede crear una configuración basada en una existente editando la configuración y guardarla con un nombre nuevo.
 
 **Imprimir de alta calidad:** crea archivos PDF para obtener una salida de alta calidad. Esta configuración:
 
@@ -391,7 +391,7 @@ Las funciones de transferencia se utilizan para el efecto artístico y para ajus
 
 **Conservar información de semitonos:** conserva toda la información de semitonos de los archivos. La información de semitonos consiste en puntos que controlan cuánto depositan los dispositivos de semitonos de tinta en una ubicación específica del papel. La variación del tamaño y la densidad del punto crea la ilusión de variaciones de color gris o continuo. Para una imagen CMYK, se utilizan cuatro pantallas de semitonos, una para cada tinta que se utiliza en el proceso de impresión.
 
-En la producción de impresión tradicional, se produce un semitono colocando una pantalla de semitonos entre una pieza de película y la imagen, y luego exponiendo la película. Los equivalentes electrónicos, como en Adobe Photoshop, permiten a los usuarios especificar los atributos de la pantalla de semitonos antes de producir la película o el papel. La información de semitonos está destinada a utilizarse con un dispositivo de salida concreto.
+En la producción de impresión tradicional, se produce un semitono colocando una pantalla de semitonos entre una pieza de película y la imagen, y luego exponiendo la película. Los equivalentes electrónicos, como en Adobe Photoshop, permiten a los usuarios especificar los atributos de pantalla de semitonos antes de producir la película o el papel. La información de semitonos está destinada a utilizarse con un dispositivo de salida concreto.
 
 ## Opciones avanzadas {#advanced-options}
 
