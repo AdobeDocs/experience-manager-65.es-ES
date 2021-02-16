@@ -48,7 +48,7 @@ La búsqueda de procesos/Tareas se utiliza para definir filtros para consultar i
 
 ### Para crear una consulta de búsqueda de proceso/Tarea {#to-create-a-process-task-search-query}
 
-1. Para vista de las consultas de búsqueda de procesos/Tareas guardadas o para crear una consulta, haga clic en **Consultas ad hoc** y, a continuación, haga clic en **Búsqueda de procesos/Tareas**.
+1. Para crear una vista de las consultas de búsqueda de proceso/Tarea guardadas o para crear una consulta, haga clic en **Consultas ad hoc** y, a continuación, haga clic en **Búsqueda de proceso/Tarea**.
 
    ![search_nodes](assets/search_nodes.png)
 
