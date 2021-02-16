@@ -202,7 +202,7 @@ La capacidad de un visitante del sitio para registrarse por sí mismo generalmen
 
 Solo los usuarios que son miembros del grupo `Community Enablement Managers` global pueden seleccionarse como `enablement manager` para un sitio de comunidad específico.
 
-Para crear un usuario al que se le pueda asignar la función de `Community Site Enablement Manager`, utilice la consola de seguridad de la IU clásica para especificar la ruta de acceso:
+Para crear un usuario al que se le pueda asignar la función de `Community Site Enablement Manager`, utilice la consola de seguridad de la IU clásica para especificar la ruta:
 
 En una instancia de autor:
 
