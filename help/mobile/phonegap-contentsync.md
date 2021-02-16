@@ -163,7 +163,7 @@ El tipo de imagen se utiliza para incluir el logotipo We.Retail en el archivo zi
 * **deep** - Propiedad booleana opcional que determina si también se deben incluir páginas secundarias. El valor predeterminado es *true.*
 
 * **includeImages** : propiedad booleana opcional que determina si se deben incluir imágenes. El valor predeterminado es *true*.
-De forma predeterminada, solo se consideran para la inclusión los componentes de imagen con un tipo de recurso de base/componentes/imagen. Puede agregar más tipos de recursos configurando el **controlador de actualización de páginas CQ WCM de &lt;a0/>día** en la consola Web.
+De forma predeterminada, solo se consideran para la inclusión los componentes de imagen con un tipo de recurso de base/componentes/imagen. Puede agregar más tipos de recursos configurando el **controlador de actualización de páginas CQ WCM de día** en la consola Web.
 
 **** reescribirEl nodo de reescritura define cómo se reescriben los vínculos en la página exportada. Los vínculos reescritos pueden apuntar a los archivos incluidos en el archivo zip o a los recursos del servidor.
 
