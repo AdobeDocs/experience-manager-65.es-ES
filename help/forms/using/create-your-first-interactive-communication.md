@@ -39,7 +39,7 @@ Al final de este tutorial, podrá:
 
 ## Caso de uso {#use-case}
 
-El viaje inicio con aprender el caso de uso:
+El recorrido inicio con el aprendizaje del caso de uso:
 
 Un operador de telecomunicaciones envía facturas mensuales a los clientes a través del correo electrónico. El proyecto de ley es una comunicación interactiva. El correo electrónico incluye:
 
