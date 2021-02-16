@@ -167,7 +167,7 @@ La siguiente es la lista de correcciones que se proporciona en la versión [!DNL
 
    * [!UICONTROL Buscar/Añadir ] dirección de correo electrónico en el cuadro de diálogo  [!UICONTROL Vincular ] uso compartido.
 
-   * [!UICONTROL Añadir usuario o ] grupo en  [!UICONTROL Usuario ] cerrado Agrupar la   ficha de permisos de  [!UICONTROL Propiedades]  de carpeta (NPR-34452).
+   * [!UICONTROL Añadir usuario o ] grupo en  [!UICONTROL Usuario ] cerrado Agrupar la ficha   de permisos de  [!UICONTROL Propiedades]  de carpeta (NPR-34452).
 
 **Problemas solucionados en Experience Manager Assets**
 
@@ -494,7 +494,7 @@ La siguiente es la lista de correcciones que se proporciona en la versión [!DNL
 
 * La información de estructura de tabla (como la fila 1, celda 1, tabla) del cuadro de diálogo [!UICONTROL Vínculo compartido] ya no la anuncian los lectores de pantalla cuando se abre el cuadro de diálogo (NPR-33268).
 
-* Los lectores de pantalla ahora anuncian correctamente el propósito de varios elementos de cuadro combinado (como el campo Ruta y la opción para abrir el cuadro de diálogo Selección en la ficha Básico de Propiedades del recurso) (NPR-33235).
+* El propósito de varios elementos de cuadro combinado (como el campo Ruta y la opción para abrir el cuadro de diálogo Selección en la ficha Básico de Propiedades del recurso) ahora lo anuncian correctamente los lectores de pantalla (NPR-33235).
 
 * La información de que las filas de la tabla de vista de listas son seleccionables ahora se comunica a los usuarios del lector de pantalla cuando el teclado está en ellas. Cuando se sitúa un puntero sobre las filas, los lectores de pantalla anuncian la información (NPR-33234).
 
