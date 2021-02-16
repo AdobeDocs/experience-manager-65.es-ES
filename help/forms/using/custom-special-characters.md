@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-Correspondence Management dispone de compatibilidad integrada y predeterminada para 210 caracteres especiales que puede insertar fácilmente en letras.
+Correspondence Management dispone de compatibilidad integrada y predeterminada con 210 caracteres especiales que puede insertar fácilmente en letras.
 
 Por ejemplo, puede insertar los siguientes caracteres especiales:
 
