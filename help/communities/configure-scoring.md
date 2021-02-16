@@ -73,7 +73,7 @@ Si es true, isAssigned indica que el distintivo se asignó a una función y que 
 
 Si es false, is Assigned indica que el distintivo se ha concedido para una puntuación ganada y que el distintivo debe mostrarse como una imagen.
 
-Cualquier cambio en este comportamiento se debe realizar en una secuencia de comandos personalizada (ya sea sobrescribir o superponer). Consulte [Personalización del cliente](/help/communities/client-customize.md).
+Cualquier cambio en este comportamiento se debe realizar en una secuencia de comandos personalizada (ya sea sobrescribir o superponer). Consulte [Personalización del lado del cliente](/help/communities/client-customize.md).
 
 ## Registro de depuración para Puntuación e Insignia {#debug-log-for-scoring-and-badging}
 
