@@ -205,7 +205,7 @@ Las siguientes secciones describen cómo aparecen los elementos de formulario ad
 
 ### Tablas {#tables}
 
-Los componentes de la tabla de formularios adaptables, como el encabezado, el pie de página y la fila, se asignan a los componentes XFA correspondientes. Puede asignar paneles repetibles a tablas en documento del registro.
+Los componentes de tabla de formularios adaptables, como encabezado, pie de página y asignación de fila, se asignan a los componentes XFA correspondientes. Puede asignar paneles repetibles a tablas en documento del registro.
 
 ## Plantilla base de un documento de registro {#base-template-of-a-document-of-record}
 
@@ -362,7 +362,7 @@ El documento de la configuración de registro de un componente está disponible 
 
 **Configuración de nivel de campo**
 
-* **Excluir Del Documento Del Registro**: Al establecer la propiedad true, se excluye el campo del documento del registro. Es una propiedad que se puede usar en secuencias de comandos denominada `excludeFromDoR`. Su comportamiento depende de la propiedad **Excluir campos del documento de trabajo si está oculta** a nivel de formulario.
+* **Excluir Del Documento Del Registro**: Al establecer la propiedad true, se excluye el campo del documento del registro. Es una propiedad que se puede usar en secuencias de comandos denominada `excludeFromDoR`. Su comportamiento depende de **Excluir campos del documento de trabajo si está oculta** propiedad de nivel de formulario.
 
 * **Mostrar panel como tabla:** Al establecer la propiedad, se muestra el panel como tabla en documento del registro si el panel tiene menos de 6 campos. Aplicable solo para panel.
 * **Excluir título del Documento de registro:al** establecer la propiedad se excluye el título del panel o la tabla del documento del registro. Aplicable solo para panel y tabla.
