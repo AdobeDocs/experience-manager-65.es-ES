@@ -170,7 +170,7 @@ Un campo relativo debe:
 
 * ser un XFA &lt;field> o &lt;exclGroup>
 * tener una referencia de enlace XFA
-* si es &lt;exclGroup>, debe tener al menos un campo de botón de radio secundario; de lo contrario, no se puede determinar su tipo de valor
+* si se trata de un &lt;exclGroup>, debe tener al menos un campo de botón de radio secundario; de lo contrario, no se puede determinar su tipo de valor
 
 Un campo relativo debe:
 
