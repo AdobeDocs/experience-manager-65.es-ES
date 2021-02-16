@@ -190,7 +190,7 @@ De izquierda a derecha están:
 
 * **Abrir sitio**
 
-   Seleccione el icono del lápiz para abrir el sitio de la comunidad en modo de edición del autor, para agregar o configurar componentes de página
+   Seleccione el icono del lápiz para abrir el sitio de la comunidad en modo de edición de autor, para agregar o configurar componentes de página
 
 * **Editar sitio**
 
