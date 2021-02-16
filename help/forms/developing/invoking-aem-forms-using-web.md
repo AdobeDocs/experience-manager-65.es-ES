@@ -361,7 +361,7 @@ El sitio web de desarrolladores de Adobe contiene el siguiente artículo que ana
 
 ## Creación de clases proxy de Java mediante JAX-WS {#creating-java-proxy-classes-using-jax-ws}
 
-Puede utilizar JAX-WS para convertir un servicio de Forms WSDL a clases proxy de Java. Estas clases le permiten invocar operaciones de servicios de AEM Forms. Apache Ant permite crear una secuencia de comandos de compilación que genera clases proxy de Java haciendo referencia a un WSDL de servicio de AEM Forms. Puede generar archivos proxy JAX-WS siguiendo estos pasos:
+Puede utilizar JAX-WS para convertir un servicio de Forms WSDL a clases proxy de Java. Estas clases le permiten invocar operaciones de servicios de AEM Forms. Apache Ant le permite crear una secuencia de comandos de compilación que genera clases proxy de Java haciendo referencia a un WSDL de servicio de AEM Forms. Puede generar archivos proxy JAX-WS siguiendo estos pasos:
 
 1. Instale Apache Ant en el equipo cliente. (Consulte [https://ant.apache.org/bindownload.cgi](https://ant.apache.org/bindownload.cgi)).
 
@@ -929,7 +929,7 @@ Para invocar el proceso `MyApplication/EncryptDocument` mediante archivos proxy 
 
 Puede invocar servicios de AEM Forms mediante servicios web y pasando datos BLOB a través de HTTP. Pasar datos BLOB por HTTP es una técnica alternativa en lugar de utilizar codificación base64, DIME o MIME. Por ejemplo, puede pasar datos a través de HTTP en un proyecto de Microsoft .NET que utilice Web Service Enhancement 3.0, que no admite DIME o MIME. Al utilizar datos BLOB a través de HTTP, los datos de entrada se cargan antes de invocar el servicio AEM Forms.
 
-&quot;Invocar a AEM Forms usando datos de BLOB sobre HTTP&quot; explica cómo invocar el siguiente proceso de corta duración de AEM Forms llamado `MyApplication/EncryptDocument` pasando datos de BLOB por HTTP.
+&quot;Invocando a AEM Forms usando datos de BLOB sobre HTTP&quot; analiza la invocación del siguiente proceso breve de AEM Forms llamado `MyApplication/EncryptDocument` pasando datos de BLOB por HTTP.
 
 >[!NOTE]
 >
@@ -1461,7 +1461,7 @@ A veces se producen problemas al invocar determinadas operaciones de servicios d
 
 ### Invocar operaciones de servicio asincrónicamente {#invoking-service-operations-asynchronously}
 
-Si intenta invocar de forma asíncrona una operación de servicio de AEM Forms, como la operación Generar archivo PDF `htmlToPDF`, se producirá un `SoapFaultException`. Para resolver este problema, cree un archivo XML de enlace personalizado que asigne el elemento `ExportPDF_Result` y otros elementos a diferentes clases. El siguiente XML representa un archivo de enlace personalizado.
+Si intenta invocar asincrónicamente una operación de servicio de AEM Forms, como la operación Generar archivo PDF `htmlToPDF`, se producirá un `SoapFaultException`. Para resolver este problema, cree un archivo XML de enlace personalizado que asigne el elemento `ExportPDF_Result` y otros elementos a diferentes clases. El siguiente XML representa un archivo de enlace personalizado.
 
 ```xml
  <bindings
