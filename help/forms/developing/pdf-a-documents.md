@@ -64,7 +64,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-usermanager-client.jar
 * adobe-docconverter-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -228,7 +228,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-usermanager-client.jar
 * adobe-docconverter-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
