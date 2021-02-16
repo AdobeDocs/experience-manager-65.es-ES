@@ -102,7 +102,7 @@ Para mostrar cómo crear una aplicación cliente que realiza la autenticación S
 
 En la ilustración anterior se describe el flujo de aplicaciones que se produce cuando se inicio la aplicación cliente.
 
-1. La aplicación cliente activa el evento `applicationComplete`.
+1. La aplicación cliente déclencheur el evento `applicationComplete`.
 1. Se realiza la llamada a `ISSOManager.singleSignOn`. La aplicación cliente envía una solicitud al servlet de seguridad de User Manager.
 1. Si el servlet de seguridad autentica al usuario, `ISSOManager` distribuye `SSOEvent.AUTHENTICATION_SUCCESS`. Como respuesta, la aplicación cliente muestra la página principal. En este ejemplo, la página principal invoca el proceso breve de AEM Forms denominado MyApplication/EncryptDocument.
 1. Si el servlet de seguridad no puede determinar si el usuario es válido, la aplicación solicita de nuevo las credenciales del usuario. La clase `ISSOManager` distribuye el evento `SSOEvent.AUTHENTICATION_REQUIRED`. La aplicación cliente muestra la página de inicio de sesión.
