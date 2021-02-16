@@ -122,4 +122,4 @@ Al probar su formulario mediante el uso de datos de ejemplo le garantiza la asig
 
 ## Formularios de previsualización ubicados en un repositorio {#html-preview-of-forms-in-forms-manager}
 
-En AEM Forms, puede realizar previsualizaciones de formularios y documentos en un repositorio. La previsualización ayuda a saber exactamente cómo se ven y se comportan los formularios cuando se utilizan para los usuarios finales.
+En AEM Forms, puede realizar previsualizaciones de formularios y documentos en un repositorio. La previsualización ayuda a saber exactamente cómo se ven y comportan los formularios cuando se van a utilizar los usuarios finales.
