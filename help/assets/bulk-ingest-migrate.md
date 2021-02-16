@@ -21,17 +21,17 @@ ht-degree: 1%
 
 La instalación del paquete de funciones 18912 es *opcional*.
 
-El paquete de funciones 18912 le permite ingestar recursos de forma masiva directamente en Dynamic Media (modo Scene7 en AEM mediante FTP) o migrar recursos de Dynamic Media Classic a Dynamic Media (modo Scene7 en AEM). El paquete de funciones está disponible en [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
+El paquete de funciones 18912 le permite realizar ingestas masivas de recursos directamente en Dynamic Media, en modo Scene7 en AEM mediante FTP, o migrar recursos de Dynamic Media Classic a Dynamic Media, en modo Scene7 en AEM. El paquete de funciones está disponible en [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
 
 >[!NOTE]
 >
->Aunque es posible utilizar el paquete de funciones para migrar recursos de forma masiva, desde el modo Dynamic Media Classic al modo Dynamic Media - Scene 7, en AEM o migrar recursos de forma masiva mediante la función de FTP en Dynamic Media Classic, Adobe *no* recomienda este método debido a la complejidad que implica.
+>Aunque es posible utilizar el paquete de funciones para migrar recursos por su cuenta de forma masiva del modo Dynamic Media Classic al modo Dynamic Media - Scene 7 en AEM o migrar recursos de forma masiva mediante la función de FTP de Dynamic Media Classic, Adobe *no* recomienda este método debido a la complejidad que implica.
 >
 >Por lo tanto, los paquetes de funciones de migración, como éste, sólo se *admiten como parte de un proyecto de migración cuando se realizan mediante [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).*
 
 Antes de instalar el paquete de funciones, primero debe crear un usuario de servicios y proporcionar esa información al servicio de asistencia de Adobe.
 
-Consulte también [Configuración de Dynamic Media - Modo Scene7](/help/assets/config-dms7.md).
+Consulte también [Configuración de Dynamic Media - modo Scene7](/help/assets/config-dms7.md).
 
 **Para instalar el paquete de funciones 18912 para la migración masiva de recursos**
 
