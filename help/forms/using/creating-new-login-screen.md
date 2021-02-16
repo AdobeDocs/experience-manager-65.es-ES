@@ -203,7 +203,7 @@ String browserLocale = "en";
    * de `/libs/livecycle/core/components/login`
    * hasta `/apps/livecycle/core/components/login`
 
-1. Ahora modifique el valor de la propiedad `sling:message` del nodo (debajo de la carpeta de código de configuración regional deseada) para la que desea cambiar el texto. La traducción se realiza mediante la clave mencionada en el valor de la propiedad `sling:key` del nodo.
+1. Ahora modifique el valor de la propiedad `sling:message` del nodo (en la carpeta de código de configuración regional deseada) para el que desea cambiar el texto. La traducción se realiza mediante la clave mencionada en el valor de la propiedad `sling:key` del nodo.
 
 1. Para agregar un nuevo par clave-valor, realice las siguientes acciones. Compruebe un ejemplo en la captura de pantalla siguiente.
 
