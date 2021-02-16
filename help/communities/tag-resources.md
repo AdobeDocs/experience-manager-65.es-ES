@@ -70,7 +70,7 @@ La función de catálogo utiliza etiquetas para definirse. Al configurar la func
 
 La función Catálogo incluye un ajuste de etiqueta que define las etiquetas que aparecen en la interfaz de usuario del filtro para el catálogo. La configuración &quot;Todas las Áreas de nombres&quot; hace referencia al ámbito de Áreas de nombres de etiquetas seleccionadas para el sitio de comunidad.
 
-![área de nombres de catálogo](assets/catalog-namespace.png)
+![Área de nombres de catálogo](assets/catalog-namespace.png)
 
 ## Aplicación de etiquetas a los recursos de habilitación {#applying-tags-to-enablement-resources}
 
