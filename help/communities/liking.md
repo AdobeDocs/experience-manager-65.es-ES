@@ -70,4 +70,4 @@ No se admite el &quot;Me gusta&quot; anónimo. Los visitantes del sitio deben re
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la página [&quot;Me gusta esencial](essentials-liking.md)&quot; para desarrolladores.
+Puede encontrar más información en la página [&quot;Me gusta Essentials](essentials-liking.md)&quot; para desarrolladores.
