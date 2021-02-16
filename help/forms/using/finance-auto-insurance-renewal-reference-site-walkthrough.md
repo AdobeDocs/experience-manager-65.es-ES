@@ -25,7 +25,7 @@ El sitio Web de We.Finance es un sitio de servicios financieros diseñado para a
 
 Lea el tutorial detallado del caso de uso de We.Finance Auto Insurance, que muestra cómo AEM formularios y su integración con Microsoft Dynamics ayudan a personalizar la experiencia del cliente en una compañía de servicios financieros. El tutorial interactivo está diseñado para facilitar la implementación de transacciones digitales complejas y la comunicación con los clientes en una compañía financiera.
 
-**El inicio del viaje con el caso de uso:**
+**El recorrido inicio con el caso de uso:**
 
 Sarah Rose es una cliente existente de We.Finance y ha adquirido una póliza de seguro de automóviles. Ahora es el momento del año para la renovación de su póliza de seguro. Gloria Rios, agente de seguros, We.Finance envía un recordatorio a Sarah sobre la renovación de su política. Sarah sigue las instrucciones proporcionadas en el correo electrónico y completa el proceso con éxito.
 
