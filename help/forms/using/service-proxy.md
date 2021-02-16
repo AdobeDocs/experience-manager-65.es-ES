@@ -28,7 +28,7 @@ El proxy de servicio elimina lo siguiente:
 
 * El flujo de trabajo de formularios HTML5 requiere la apertura del servicio de envío &quot;/content/xfaforms/submit/default&quot; para los usuarios de formularios HTML5. Expone AEM servidores a una audiencia no deseada más amplia.
 * La URL del servicio está incrustada en el modelo de tiempo de ejecución del formulario. No es posible cambiar la ruta de URL del servicio.
-* El envío es un proceso de dos pasos. Para enviar los datos del formulario, el envío requiere al menos dos viajes al servidor. Por lo tanto, aumenta la carga en el servidor.
+* El envío es un proceso de dos pasos. Para enviar los datos del formulario, el envío requiere al menos dos recorridos al servidor. Por lo tanto, aumenta la carga en el servidor.
 * Los formularios HTML5 envían datos en la solicitud de POST en lugar de en la solicitud PDF. Para el flujo de trabajo que incluye formularios PDF y HTML5, se requieren dos métodos diferentes de procesamiento de los envíos.
 
 ### Topologías {#topologies-br}
@@ -56,7 +56,7 @@ Las secuencias de comandos marcadas para ejecutarse en el servidor se conocen co
   </tr>
   <tr>
    <td><p>activity</p> </td>
-   <td><p>Actividad contiene los eventos que activan la solicitud. Tales como clic, salir o cambiar</p> </td>
+   <td><p>Actividad contiene los eventos que déclencheur la solicitud. Tales como clic, salir o cambiar</p> </td>
   </tr>
   <tr>
    <td><p>contextSom</p> </td>
