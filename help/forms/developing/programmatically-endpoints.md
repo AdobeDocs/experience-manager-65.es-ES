@@ -82,7 +82,7 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Se deben agregar l
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -187,7 +187,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 Estos archivos JAR son necesarios para crear un extremo SOAP. Sin embargo, se requieren archivos JAR adicionales si se utiliza el extremo SOAP para invocar el servicio. Para obtener información sobre los archivos JAR de AEM Forms, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -297,7 +297,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -530,7 +530,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -554,7 +554,7 @@ Debe especificar los valores de configuración para un extremo de correo electr�
 
 >[!NOTE]
 >
->La cuenta de correo electrónico que se supervisa es una cuenta especial que se utiliza solamente para el extremo de correo electrónico. Esta cuenta no es una cuenta de correo electrónico de un usuario normal. La cuenta de correo electrónico de un usuario normal no debe configurarse como la cuenta que utiliza el proveedor de correo electrónico porque este elimina los mensajes de correo electrónico de la bandeja de entrada después de que hayan finalizado con los mensajes.
+>La cuenta de correo electrónico que se monitorea es una cuenta especial que se utiliza solamente para el extremo de correo electrónico. Esta cuenta no es una cuenta de correo electrónico de un usuario normal. La cuenta de correo electrónico de un usuario normal no debe configurarse como la cuenta que utiliza el proveedor de correo electrónico porque este elimina los mensajes de correo electrónico de la bandeja de entrada después de que hayan finalizado con los mensajes.
 
 Los siguientes valores de configuración se establecen al agregar mediante programación un extremo de correo electrónico a un servicio:
 
@@ -567,7 +567,7 @@ Los siguientes valores de configuración se establecen al agregar mediante progr
 * **domainName**: Un valor de configuración obligatorio. El valor predeterminado es `DefaultDom`.
 * **domainPattern**: Especifica los patrones de dominio del correo electrónico entrante que acepta el proveedor. Por ejemplo: si se utiliza `adobe.com`, solo se procesa el correo electrónico de adobe.com, se ignora el correo electrónico de otros dominios.
 * **filePattern**: Especifica los patrones de archivos adjuntos entrantes que acepta el proveedor. Esto incluye archivos con extensiones de nombre de archivo específicas (&amp;ast;.dat, &amp;ast;.xml), archivos con nombres (datos) específicos y archivos con expresiones compuestas en el nombre y la extensión (&amp;ast;..[dD][aA]&#39;puerto&#39;). El valor predeterminado es `*`.
-* **destinationSuccessfulJob**: Dirección de correo electrónico a la que se envían mensajes para indicar los trabajos que se han realizado correctamente. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente. Si escribe `sender`, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, cada uno separado por una coma. Para desactivar esta opción, deje este valor en blanco. En algunos casos, es posible que desee activar un proceso y no desee recibir una notificación por correo electrónico del resultado. El valor predeterminado es `sender`.
+* **destinationSuccessfulJob**: Dirección de correo electrónico a la que se envían mensajes para indicar los trabajos que se han realizado correctamente. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente. Si escribe `sender`, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, cada uno separado por una coma. Para desactivar esta opción, deje este valor en blanco. En algunos casos, es posible que desee realizar un déclencheur en un proceso y no desee recibir una notificación por correo electrónico del resultado. El valor predeterminado es `sender`.
 * **destinationFailedJob**: Dirección de correo electrónico a la que se envían mensajes para indicar que se han producido errores en los trabajos. De forma predeterminada, siempre se envía un mensaje de trabajo fallido al remitente. Si escribe `sender`, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, cada uno separado por una coma. Para desactivar esta opción, deje este valor en blanco. El valor predeterminado es `sender`.
 * **inboxHost**: El nombre de host o la dirección IP de la bandeja de entrada que debe analizar el proveedor de correo electrónico.
 * **inboxPort**: El puerto que utiliza el servidor de correo electrónico. El valor predeterminado para POP3 es 110 y el valor predeterminado para IMAP es 143. Si SSL está habilitado, el valor predeterminado para POP3 es 995 y el valor predeterminado para IMAP es 993.
@@ -785,7 +785,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -874,7 +874,7 @@ Para agregar un extremo de TaskManager a un servicio, realice las siguientes tar
 1. Incluir archivos de proyecto.
 1. Cree un objeto `EndpointRegistryClient`.
 1. Cree una categoría para el extremo.
-1. Definir atributos de extremo de TaskManager.
+1. Defina los atributos de extremo de TaskManager.
 1. Cree un extremo de TaskManager.
 1. Habilite el punto final.
 
@@ -887,7 +887,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -952,7 +952,7 @@ Añada un extremo de TaskManager mediante la API de Java:
    * Cree la categoría invocando el método `EndpointRegistryClient` del objeto `createEndpointCategory` y pasando el objeto `CreateEndpointCategoryInfo`. Este método devuelve un objeto `EndpointCategory` que representa la nueva categoría.
 
 
-1. Defina los atributos de extremo de TaskManager.
+1. Definir atributos de extremo de TaskManager.
 
    * Cree un objeto `CreateEndpointInfo` utilizando su constructor.
    * Especifique el valor del identificador del conector invocando el método `CreateEndpointInfo` del objeto `setConnectorId` y pasando el valor de cadena `TaskManagerConnector`.
@@ -1008,7 +1008,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -1110,7 +1110,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 Para obtener información sobre la ubicación de estos archivos JAR, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -1202,7 +1202,7 @@ Se deben agregar los siguientes archivos JAR a la ruta de clases del proyecto:
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar (requerido si AEM Forms está implementado en el servidor de aplicaciones JBoss)
-* jbossall-client.jar (requerido si AEM Forms se implementa en el servidor de aplicaciones JBoss)
+* jbossall-client.jar (requerido si AEM Forms se implementa en JBoss Application Server)
 
 Si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no es JBoss, sustituya adobe-utilities.jar y jbossall-client.jar por archivos JAR específicos del servidor de aplicaciones J2EE en el que se implementa AEM Forms. Para obtener información sobre la ubicación de todos los archivos JAR de AEM Forms, consulte [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
