@@ -196,7 +196,7 @@ temasSi está activada, permita que los moderadores del lado de publicación mue
 
 * **Umbral de moderación**
 
-   Escriba el número de veces que los miembros deben marcar una pregunta o respuesta antes de que se notifique a los moderadores. El valor predeterminado es 1 (una vez).
+   Introduzca el número de veces que los miembros deben marcar una pregunta o respuesta antes de que se notifique a los moderadores. El valor predeterminado es 1 (una vez).
 
 * **Límite de indicación**
 
