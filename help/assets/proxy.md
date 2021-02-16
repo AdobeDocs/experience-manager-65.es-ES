@@ -162,7 +162,7 @@ El diagrama y los pasos siguientes detallan cómo proceder:
 
    Como ejemplo, consulte `IDSJob.IDS_EXTENDSCRIPT_JOB` para el trabajador proxy IDS.
 
-1. El paso externo se utiliza para desencadenar el evento y luego esperar hasta que finalice; esto se realiza sondeando en el identificador. Debe desarrollar su propio paso para implementar la nueva funcionalidad.
+1. El paso externo se utiliza para el déclencheur del evento y luego esperar hasta que se termine; esto se realiza sondeando en el identificador. Debe desarrollar su propio paso para implementar la nueva funcionalidad.
 
    Implemente un `WorkflowExternalProcess`, luego utilice la API de JobService y el tema de su trabajo para preparar un evento de trabajo y enviarlo al JobService (un servicio OSGi).
 
