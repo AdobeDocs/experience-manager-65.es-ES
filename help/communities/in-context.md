@@ -40,7 +40,7 @@ La interfaz de usuario presentada al moderador en la instancia de publicación e
 
 ## Ejemplo {#example}
 
-Mediante el uso del sitio [Participación de Geometrixx](http://localhost:4503/content/sites/engage/en.html) creado al [Introducción a AEM Communities](getting-started.md), es posible configurar rápidamente un subproceso en un foro en el que experimentar varias actividades de moderación en el entorno de publicación, como se muestra a continuación.
+Mediante el uso del [sitio de participación de Geometrixx](http://localhost:4503/content/sites/engage/en.html) creado al [Introducción a AEM Communities](getting-started.md), es posible configurar rápidamente un subproceso en un foro en el que experimentar varias actividades de moderación en el entorno de publicación, como se muestra a continuación.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) fue identificado como un miembro de la comunidad de confianza al agregarlo al grupo de moderadores de participación de la comunidad al crear el sitio.
 
@@ -56,7 +56,7 @@ Para obtener más información sobre los grupos de usuarios de la comunidad, vis
    * Seleccionar nuevo anuncio
    * Introduzca el asunto
 
-      Cuándo cambiar el néctar en el alimentador de pájaros de zumbido
+      Cuándo cambiar el néctar en el alimentador de aves que rebota
 
    * Introduzca el texto principal
 
