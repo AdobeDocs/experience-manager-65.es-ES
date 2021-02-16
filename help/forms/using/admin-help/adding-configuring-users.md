@@ -142,7 +142,7 @@ Evite crear nombres de usuario que comiencen con un signo de número (#). Al rea
 1. Para editar las funciones del usuario, haga clic en la ficha **[!UICONTROL Asignaciones de funciones]** y lleve a cabo estas tareas:
 
    * Para mostrar una lista de roles, haga clic en **[!UICONTROL Buscar roles]**.
-   * Para agregar una función, active la casilla de verificación de la función, haga clic en **[!UICONTROL Aceptar]** y, a continuación, haga clic en **[!UICONTROL Guardar]**.
+   * Para agregar una función, seleccione la casilla de verificación de la función, haga clic en **[!UICONTROL Aceptar]** y, a continuación, haga clic en **[!UICONTROL Guardar]**.
    * Para quitar una función, seleccione la casilla de verificación de la función, haga clic en **[!UICONTROL Cancelar asignación]** y, a continuación, haga clic en **[!UICONTROL Guardar]**.
 
 ## Eliminar un usuario {#delete-a-user}
