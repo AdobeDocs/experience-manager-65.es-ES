@@ -97,7 +97,7 @@ Una vez recuperados los detalles del cliente de la base de datos, puede actualiz
    >
    >No arrastre y suelte los campos **[!UICONTROL Nombre]** y **[!UICONTROL ID del cliente]** en la propiedad correspondiente de nombreDeTabla (por ejemplo, customerdetails.name). Ayuda a evitar actualizar el nombre y la ID del cliente por error.
 
-1. Arrastre y suelte el campo **[!UICONTROL ID del cliente]** de la ficha [!UICONTROL Objetos del formulario] al campo de identificación del cuadro **[!UICONTROL ENTRADA]**. Los campos sin un nombre de tabla preestablecido (por ejemplo, detalles del cliente en este caso de uso) sirven como parámetro de búsqueda para el servicio de actualización. El campo **[!UICONTROL id]** en este caso de uso identifica de forma exclusiva un registro en la tabla **detalles del cliente**.
+1. Arrastre y suelte el campo **[!UICONTROL ID del cliente]** de la ficha [!UICONTROL Objetos de formulario] al campo de identificación del cuadro **[!UICONTROL ENTRADA]**. Los campos sin un nombre de tabla preestablecido (por ejemplo, detalles del cliente en este caso de uso) sirven como parámetro de búsqueda para el servicio de actualización. El campo **[!UICONTROL id]** en este caso de uso identifica de forma exclusiva un registro en la tabla **detalles del cliente**.
 1. Toque **[!UICONTROL Listo]** para guardar la regla. En la ventana del editor de reglas, toque **[!UICONTROL Cerrar]**.
 1. Previsualización del formulario adaptable. Recupere los detalles de un cliente, actualice la dirección de envío y envíe el formulario. Al recuperar los detalles del mismo cliente de nuevo, se muestra la dirección de envío actualizada.
 
