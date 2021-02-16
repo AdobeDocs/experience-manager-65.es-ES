@@ -76,7 +76,7 @@ Su marca ahora aparece en la página Actividades.
 
    Para abrir un formulario o una comunicación interactiva en modo de edición, toque **Seleccionar** y, a continuación, toque **Abrir**.
 
-   También aparecen cuatro botones cuando mueve el puntero sobre el formulario o el icono de comunicación interactiva sin seleccionarlo. Puede tocar el botón **Editar** que aparece para abrir el formulario en modo de edición.
+   Como alternativa, aparecen cuatro botones al mover el puntero sobre el formulario o el icono de comunicación interactiva sin seleccionarlo. Puede tocar el botón **Editar** que aparece para abrir el formulario en modo de edición.
 
 1. En la barra de herramientas de la página, toque **Información de la página** ![opciones del tema](assets/theme-options.png) > **Abrir propiedades**.
 1. En la ficha General, elija una configuración para el campo **Adobe Target**. Toque **Guardar y cerrar**.
