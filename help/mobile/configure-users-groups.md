@@ -121,10 +121,10 @@ Además de estos permisos, también se puede mostrar u ocultar una acción en fu
 
 El mosaico no tiene acciones que requieran permisos, pero la página de detalles de la aplicación tiene las siguientes acciones:
 
-* ** Edición para app-author y app-admin (activador de interfaz de usuario - jcr:write - en /content/phonegap/{suffix})
-* ** Descargar para app-author y app-admin (activador de la interfaz de usuario: en /content/phonegap/{suffix})
+* ** Edición para app-author y app-admin (Déclencheur de la interfaz de usuario - jcr:write - en /content/phonegap/{suffix})
+* ** Descargar para app-author y app-admin (Déclencheur de la interfaz de usuario: en /content/phonegap/{suffix})
 
 La siguiente imagen muestra las opciones de descarga y edición de una aplicación:
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-29](assets/chlimage_1-21.png)
 
