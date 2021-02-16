@@ -56,7 +56,7 @@ La lógica de aplicación que utiliza la API de servicio de Forms se implementa 
 
 >[!NOTE]
 >
->Los inicios rápidos que se encuentran en Programación con v se basan en el servidor de formularios que está utilizando otro sistema operativo, como Unix, reemplaza las rutas específicas de Windows con las rutas admitidas por el sistema operativo aplicable. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Los inicios rápidos que se encuentran en Programación con v se basan en el servidor de formularios que está utilizando otro sistema operativo, como Unix, reemplaza las rutas específicas de Windows con las rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Sugerencia**: El sitio web de Adobe Developer contiene el siguiente artículo que explica cómo crear una aplicación ASP.NET que invoque el servicio de Forms y procese formularios. Consulte [Creación de formularios que procesen aplicaciones ASP.NET](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).
 
