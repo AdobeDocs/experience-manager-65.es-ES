@@ -46,7 +46,7 @@ Seleccione el componente `Reviews` colocado para acceder y seleccione el icono `
 
 En la ficha **[!UICONTROL Clasificaciones permitidas]**, especifique la lista completa de las clasificaciones que se mostrarán a los miembros. La primera clasificación debe ser general o general, ya que es la clasificación la que proporciona la clasificación promedio para el componente `Review Summary (Display)`. Las dos clasificaciones siguientes de la configuración predeterminada deben tener un título diferente, que no sea &quot;Subrating 1&quot; o &quot;Subrating 2&quot;.
 
-![clasificación permitida](assets/configure-review1.png)
+![permita-rating](assets/configure-review1.png)
 
 * **[!UICONTROL Clasificaciones permitidas]**
 
