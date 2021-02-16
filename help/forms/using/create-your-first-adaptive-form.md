@@ -33,7 +33,7 @@ Este tutorial proporciona un marco integral para crear un formulario adaptable. 
 
 ![create-adaptive-form-workflow](assets/create-daptive-form-workflow.png)
 
-El viaje inicio con aprender el caso de uso:
+El recorrido inicio con el aprendizaje del caso de uso:
 
 Un sitio web oferta una gama de productos para diversos clientes. Los clientes exploran el portal, seleccionan y solicitan los productos. Cada cliente crea una cuenta y proporciona direcciones de envío y facturación. Una cliente existente, Sara Rose, está buscando agregar su dirección de envío al sitio web. El sitio web proporciona un formulario en línea para agregar y actualizar las direcciones de envío.
 
@@ -84,12 +84,12 @@ Objetivos:
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Los formularios adaptables proporcionan un editor para escribir reglas en objetos de formulario adaptables. Estas reglas definen acciones para activar objetos de formulario en función de condiciones preestablecidas, entradas de usuario y acciones del usuario en el formulario. Ayuda a garantizar la precisión y acelera la experiencia de cumplimentación de formularios.
+Los formularios adaptables proporcionan un editor para escribir reglas en objetos de formulario adaptables. Estas reglas definen acciones para el déclencheur de objetos de formulario en función de condiciones preestablecidas, entradas del usuario y acciones del usuario en el formulario. Ayuda a garantizar la precisión y acelera la experiencia de cumplimentación de formularios.
 
 Objetivos:
 
 * Creación y aplicación de reglas a campos de formulario adaptables
-* Utilice reglas para activar los servicios del modelo de datos de formulario para actualizar datos a la base de datos
+* Usar reglas para déclencheur de servicios de modelos de datos de formularios para actualizar datos a la base de datos
 
 [![Consulte la Guía](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
