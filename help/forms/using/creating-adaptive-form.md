@@ -69,7 +69,7 @@ Siga estos pasos para crear un formulario adaptable.
 
 Para utilizar un modelo de datos de formulario para crear un formulario adaptable:
 
-1. En la ficha Modelo de formulario de la pantalla Añadir propiedades, seleccione **[!UICONTROL Modelo de datos de formulario]** en la lista desplegable **[!UICONTROL Seleccionar desde]**.
+1. En la ficha Modelo de formulario de la pantalla Añadir propiedades, seleccione **[!UICONTROL Modelo de datos de formulario]** en la lista desplegable **[!UICONTROL Seleccionar de]**.
 
    ![create-af-1-1](assets/create-af-1-1.png)
 
