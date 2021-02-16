@@ -34,7 +34,7 @@ ht-degree: 0%
 1. Añada un directorio o una interfaz de Proveedor de servicio personalizada (SPI). (Consulte [Añadir directorios o SPI personalizados](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis)).
 1. Haga clic en Finalizar y, a continuación, en Aceptar.
 
-Después de crear un dominio de empresa, sincronice manualmente el directorio o cree un activador para realizar una sincronización antes de que la Administración de usuarios pueda utilizarlo. A continuación, puede configurar una programación de sincronización de directorios y realizar la sincronización manual según sea necesario. (Consulte [Sincronización de directorios](/help/forms/using/admin-help/synchronizing-directories.md#synchronizing-directories).)
+Después de crear un dominio de empresa, sincronice manualmente el directorio o cree un déclencheur para realizar una sincronización antes de que la Administración de usuarios pueda utilizarlo. A continuación, puede configurar una programación de sincronización de directorios y realizar la sincronización manual según sea necesario. (Consulte [Sincronización de directorios](/help/forms/using/admin-help/synchronizing-directories.md#synchronizing-directories).)
 
 ## Añadir un dominio local {#add-a-local-domain}
 
