@@ -39,7 +39,7 @@ Para configurar el servicio de contenido inteligente, siga estos pasos de nivel 
 
 1. [Compruebe la configuración](#validate-the-configuration).
 
-1. De manera opcional, [habilite el etiquetado automático en la carga de recursos](#enable-smart-tagging-in-the-update-asset-workflow-optional).
+1. De forma opcional, [habilite el etiquetado automático en la carga de recursos](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
 ### Cree la configuración de Smart Content Service para obtener un certificado público {#obtain-public-certificate}
 
