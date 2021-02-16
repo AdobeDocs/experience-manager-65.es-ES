@@ -441,7 +441,7 @@ Si desea enviar la misma carta en distintos idiomas a sus clientes, puede locali
    DataDictionaryElement.person.displayName=person
    ```
 
-   La estructura del archivo de propiedades define una línea para la descripción y el nombre para mostrar del diccionario de datos y para cada elemento del diccionario de datos en el diccionario de datos. Además, el archivo de propiedades define una línea para un valor de enumeración establecido para cada elemento del diccionario de datos. Al igual que con un diccionario de datos, el archivo de propiedades correspondiente puede tener varias definiciones de elementos del diccionario de datos. Además, el archivo puede contener las definiciones de uno o varios conjuntos de valores enum.
+   La estructura del archivo de propiedades define una línea para la descripción y el nombre para mostrar del diccionario de datos y cada elemento del diccionario de datos en el diccionario de datos. Además, el archivo de propiedades define una línea para un valor de enumeración establecido para cada elemento del diccionario de datos. Al igual que con un diccionario de datos, el archivo de propiedades correspondiente puede tener varias definiciones de elementos del diccionario de datos. Además, el archivo puede contener las definiciones de uno o varios conjuntos de valores enum.
 
 1. Para actualizar el archivo .properties en una configuración regional diferente, actualice los valores de nombre para mostrar y descripción del archivo. Cree más instancias del archivo para cada idioma en el que desee localizar. Solo se admiten los idiomas francés, alemán, japonés e inglés.
 
