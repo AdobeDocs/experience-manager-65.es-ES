@@ -173,7 +173,7 @@ En esta tabla se describen los puertos predeterminados que deben abrirse durante
   </tr>
   <tr>
    <td>&gt;<p>WebSphere</p> </td>
-   <td><p>9060, si Global Security está habilitado, el valor predeterminado del puerto SSL es 9043.</p> <p>9080</p> </td>
+   <td><p>9060, si Seguridad global está habilitada, el valor predeterminado del puerto SSL es 9043.</p> <p>9080</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>Servidor BAM</p> </td>
@@ -216,7 +216,7 @@ JBoss Application Server utiliza 8080 como puerto HTTP predeterminado. JBoss tam
 
    Instalaciones de clúster: [Raíz de JBoss]/domain/configuration/domain.xml
 
-1. Cambie el valor del atributo **port** en la etiqueta **&lt;socket-binding>** por un número de puerto personalizado. Por ejemplo, los siguientes usuarios utilizan el puerto 8090:
+1. Cambie el valor del atributo **port** en la etiqueta **&lt;socket-binding>** a un número de puerto personalizado. Por ejemplo, los siguientes usuarios utilizan el puerto 8090:
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
 
