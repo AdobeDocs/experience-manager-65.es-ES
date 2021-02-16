@@ -110,7 +110,7 @@ Consulte también las descripciones de los componentes y las prácticas recomend
 
 ### Uso de reglas en formularios adaptables {#using-rules-in-adaptive-forms}
 
-AEM Forms proporciona un [editor de reglas](/help/forms/using/rule-editor.md) que permite crear reglas para agregar comportamiento dinámico a los componentes de formularios adaptables. Mediante estas reglas, puede evaluar condiciones y activar acciones en componentes, como mostrar u ocultar campos, calcular valores, cambiar dinámicamente la lista desplegable, etc.
+AEM Forms proporciona un [editor de reglas](/help/forms/using/rule-editor.md) que permite crear reglas para agregar comportamiento dinámico a los componentes de formularios adaptables. Mediante estas reglas, puede evaluar condiciones y acciones de déclencheur en componentes, como mostrar u ocultar campos, calcular valores, cambiar dinámicamente la lista desplegable, etc.
 
 El editor de reglas proporciona un editor visual y un editor de código para escribir reglas. Tenga en cuenta lo siguiente al escribir reglas con el modo de editor de código:
 
