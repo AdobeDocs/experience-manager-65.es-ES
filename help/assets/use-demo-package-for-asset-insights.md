@@ -18,7 +18,7 @@ Con el paquete de demostración, puede habilitar Adobe Asset Insights para captu
 ## [!DNL Use Experience Manager Assets] Perspectivas con la página web de muestra   {#using-aem-assets-insights-with-sample-web-page}
 
 1. Configure Asset Insights siguiendo las instrucciones de [Configuración de Asset Insights](configure-asset-insights.md).
-1. Descargue el paquete de muestra Assets desde abajo e instálelo desde el administrador de paquetes de CRXDE.
+1. Descargue el paquete de muestra Assets desde abajo e instálelo desde el administrador de paquetes CRXDE.
 
    [Obtener archivo](assets/insightsdemo.zip)
 
