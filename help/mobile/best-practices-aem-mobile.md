@@ -66,7 +66,7 @@ Las siguientes directrices ayudarán a los desarrolladores experimentados de AEM
 
 >[!NOTE]
 >
->Aquí[ puede obtener más información detallada sobre secuencias de comandos externas de bloqueo de procesamiento.](https://developers.google.com/speed/docs/insights/BlockingJS)
+>Aquí](https://developers.google.com/speed/docs/insights/BlockingJS) puede obtener más información detallada sobre secuencias de comandos externas de bloqueo de procesamiento.[
 
 **Prefiere las bibliotecas JS y CSS de cliente específicas de la aplicación en lugar de las bibliotecas específicas de la web**
 
