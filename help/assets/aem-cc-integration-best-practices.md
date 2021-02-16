@@ -59,7 +59,7 @@ Este artículo se centra principalmente en los dos primeros aspectos de las nece
 | Editar: trabajo en curso fuera de DAM | Sí: recurso disponible en la cuenta de almacenamiento del Creative Cloud del usuario sincronizada con el escritorio. | Sí |  |
 | Editar - cargar cambios | Sí: [acción de ingreso](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) con comentario opcional | Sí |  |
 | Cargar: archivo único | Sí: carga el documento activo actual | Sí | [Carga mediante interfaz web](manage-assets.md#uploading-assets) |
-| Cargar: varios archivos / estructuras de carpetas jerárquicas | No | Sí | [Cargar mediante ](manage-assets.md#uploading-assets) interfaz web o mediante una herramienta o una secuencia de comandos personalizada. |
+| Cargar: varios archivos / estructuras jerárquicas de carpetas | No | Sí | [Cargar mediante ](manage-assets.md#uploading-assets) interfaz web o mediante una herramienta o una secuencia de comandos personalizada. |
 | Misc: usuario e inicio de sesión | Se reconoce al usuario Creative Cloud que ha iniciado sesión en la aplicación de escritorio Creative Cloud (SSO) | [!DNL Experience Manager] usuario y credenciales | Los usuarios de ambas soluciones cuentan para la cuota de usuario [!DNL Experience Manager]. |
 | Misc: red y acceso | Requiere acceso desde el escritorio del usuario a la implementación [!DNL Experience Manager] a través de la red | Requiere acceso desde el escritorio del usuario a la implementación [!DNL Experience Manager] a través de la red | [!DNL Adobe Asset Link] no comparte el entorno de proxy de red. |
 | Misc - Migrar un gran número de recursos | No | No | [Guía de migración de recursos](assets-migration-guide.md) |
