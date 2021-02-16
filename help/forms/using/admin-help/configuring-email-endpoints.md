@@ -169,11 +169,11 @@ Utilice la siguiente configuración para configurar un extremo de correo electr�
 
 **Destinatarios del trabajo correctos:** una dirección de correo electrónico a la que se envían mensajes para indicar los trabajos que se han realizado correctamente. De forma predeterminada, siempre se envía un mensaje de trabajo correcto al remitente. Si escribe un remitente, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, separados por comas (,).
 
-Para desactivar esta configuración, deje la configuración en blanco. En algunos casos, desea activar un proceso y no desea recibir una notificación por correo electrónico del resultado.
+Para desactivar esta configuración, deje la configuración en blanco. En algunos casos, desea realizar un déclencheur de un proceso y no desea recibir una notificación por correo electrónico del resultado.
 
 **Destinatarios de trabajo fallidos:** una dirección de correo electrónico a la que se envían mensajes para indicar que se han producido errores en los trabajos. De forma predeterminada, siempre se envía un mensaje de trabajo fallido al remitente. Si escribe un remitente, los resultados del correo electrónico se envían al remitente. Se admiten hasta 100 destinatarios. Especifique destinatarios adicionales con direcciones de correo electrónico, separados por comas (,).
 
-Para desactivar esta configuración, deje la configuración en blanco. En algunos casos, desea activar un proceso y no desea recibir una notificación por correo electrónico del resultado.
+Para desactivar esta configuración, deje la configuración en blanco. En algunos casos, desea realizar un déclencheur de un proceso y no desea recibir una notificación por correo electrónico del resultado.
 
 **Host de bandeja de entrada:** el nombre de host de bandeja de entrada o la dirección IP que debe analizar el proveedor de correo electrónico.
 
