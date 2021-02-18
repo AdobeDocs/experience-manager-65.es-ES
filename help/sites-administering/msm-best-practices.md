@@ -10,9 +10,9 @@ topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: cacf15a4e9c407d86aef47d7a6dda19e8eda7fb7
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1639'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 1%
 MSM es un marco configurable para automatizar la implementación de contenido. Las implementaciones suelen incluir partes importantes de un sitio web y abarcan organizaciones y regiones geográficas. Por lo tanto, es muy recomendable planificar las implementaciones de MSM con el cuidado con que planifica el sitio web:
 
 * **estructura del plan y flujos de contenido** cuidadosamente antes de iniciar la implementación.
+* **Mantenga la cantidad mínima de copias activas.** El procesamiento de copias en directo es una tarea que utiliza muchos recursos. Cuanto más Live Copies haya en el sistema, más rendimiento se verá afectado: desde el procesamiento de índices de Live Copy internos, operaciones de Live Copy como rollouts, hasta operaciones de interfaz de usuario como mostrar relaciones de Live Copy en el carril de referencias de Administración de sitios. Lo mejor es crear copias en vivo de sitios o ramas de un sitio, donde las relaciones de Live Copy se heredan de las páginas del sitio o rama. Evite crear copias en vivo individuales para páginas en un sitio o rama cuando toda la estructura se pueda convertir en una Live Copy.
 * **Personalice tanto como sea necesario, pero tan poco como sea posible.** Aunque MSM admite un alto grado de personalización (por ejemplo, configuraciones de implementación), la mejor práctica para el rendimiento, la fiabilidad y la actualización del sitio Web es minimizar la personalización.
 * Establezca un modelo **de administración** antes y capacite a los usuarios en consecuencia para garantizar el éxito. Una práctica recomendada desde un punto de vista de la administración es **minimizar la autoridad que los productores de contenido local tienen** para asignar/conectar contenido a otros usuarios locales y sus respectivas copias en vivo. Esto se debe a que las herencias encadenadas y no gobernadas pueden aumentar significativamente la complejidad de una estructura de MSM y comprometer su rendimiento y fiabilidad.
 
