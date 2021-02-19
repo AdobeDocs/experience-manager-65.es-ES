@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: f8abdd7ed0212d5ee0602e2573c184203f22d4a4
+source-git-commit: 3024d0d66c5158e04fdfe848954dcf90542125b2
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 2%
@@ -252,8 +252,8 @@ curl -H "CQ-Action: Deactivate" -H "CQ-Handle: /content/test-site/" -H "CQ-Path:
 #### Compruebe el estado de un agente {#check-the-status-of-an-agent}
 
 ```shell
-curl -u <user>:<password> "http://localhost:4502/etc/replication/agents.author/publish/jcr:conten t.queue.json?agent=publish"
-http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on?agent=publish
+curl -u <user>:<password> "http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json?agent=publish"
+http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json?agent=publish
 ```
 
 #### Eliminar un agente {#delete-an-agent}
@@ -271,13 +271,13 @@ curl -u <user>:<password> -F "jcr:primaryType=cq:Page" -F "jcr:content/jcr:title
 #### Pausar un agente {#pause-an-agent}
 
 ```shell
-curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
+curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
 #### Borrar una cola de agente {#clear-an-agent-queue}
 
 ```shell
-curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.js on
+curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
 ### Communities {#communities}
