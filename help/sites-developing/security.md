@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: ea4de28525ec4c2094e84d98aad6a518b03f011e
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Inicios de seguridad de la aplicación durante la fase de desarrollo. Adobe reco
 
 ## Usar sesión de solicitud {#use-request-session}
 
-Siguiendo el principio de privilegios de leas, Adobe recomienda que cada acceso al repositorio se realice utilizando la sesión vinculada a la solicitud del usuario y el control de acceso adecuado.
+Siguiendo el principio de los menos privilegios, Adobe recomienda que cada acceso al repositorio se realice utilizando la sesión enlazada a la solicitud del usuario y el control de acceso adecuado.
 
 ## Protect contra scripts entre sitios (XSS) {#protect-against-cross-site-scripting-xss}
 
