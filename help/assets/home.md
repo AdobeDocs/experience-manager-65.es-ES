@@ -3,9 +3,9 @@ title: Guía de Assets
 description: Esta guía cubre todas las tareas de recursos Experience Manager, como la creación, administración, entrega y optimización de recursos digitales.
 user-guide-title: Guía de Assets
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '321'
 ht-degree: 12%
 
 ---
@@ -20,7 +20,6 @@ Esta guía abarca todas las tareas [!DNL Experience Manager Assets], como la cre
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
 
-* [Introducción a Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Notas de la versión de Experience Manager 6.5](/help/release-notes/home.md)
 * [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Lista de comprobación de seguridad](/help/sites-administering/security-checklist.md)
@@ -44,9 +43,9 @@ Esta guía abarca todas las tareas [!DNL Experience Manager Assets], como la cre
 
 ## Recursos clave [!DNL Experience Manager]
 
-* [Tutorials de vídeo Experience Manager](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [Tutorials de vídeo Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Foro de la comunidad de Experience Manager Assets](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
