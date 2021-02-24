@@ -3,9 +3,9 @@ title: 'Prácticas recomendadas para compartir carpetas con [!DNL Adobe Creative
 description: Configure [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] para intercambiar carpetas con usuarios de Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->La función [!DNL Experience Manager] a [!DNL Creative Cloud] Uso compartido de carpetas está en desuso. Adobe recomienda enfáticamente utilizar las nuevas funciones como [Vínculo de recursos de Adobe](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o [Aplicación de escritorio de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Obtenga más información en [optimizaciones para la integración de Experience Manager y Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La función [!DNL Experience Manager] a [!DNL Creative Cloud] Uso compartido de carpetas está en desuso. Adobe recomienda enfáticamente utilizar las nuevas funciones como [Vínculo de recursos de Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) o [Aplicación de escritorio de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Obtenga más información en [optimizaciones para la integración de Experience Manager y Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] se puede configurar para permitir  [!DNL Assets] a los usuarios de para que compartan carpetas con los usuarios de  [!DNL Adobe Creative Cloud] aplicaciones, de modo que estén disponibles como carpetas compartidas en el servicio de  [!DNL Adobe Creative Cloud] recursos. La función se puede utilizar para intercambiar archivos entre equipos creativos y [!DNL Assets] usuarios, especialmente cuando los usuarios creativos no tienen acceso a la implementación [!DNL Assets] (no están en la red empresarial).
 
