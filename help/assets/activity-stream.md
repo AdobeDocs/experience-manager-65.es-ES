@@ -3,10 +3,10 @@ title: Flujo de actividad de recursos digitales en la vista de línea de tiempo
 description: En este artículo se describe cómo mostrar los registros de actividades de los recursos en la línea de tiempo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 23%
+source-wordcount: '215'
+ht-degree: 21%
 
 ---
 
@@ -26,7 +26,7 @@ Las siguientes operaciones se registran en el flujo de actividad:
 * Rechazar
 * Mover
 
-Los registros de actividad que se mostrarán en la cronología se recuperan de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. Además, la actividad de la línea de tiempo se registra cuando se cargan nuevos recursos o cuando se modifican los recursos existentes y se registran en [!DNL Experience Manager] mediante [Vínculo de recursos de Adobe](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) o [aplicación de escritorio de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+Los registros de actividad que se mostrarán en la cronología se recuperan de la ubicación `/var/audit/com.day.cq.dam/content/dam` en CRX, donde se almacenan los archivos de registro. Además, la actividad de la línea de tiempo se registra cuando se cargan nuevos recursos o cuando se modifican los recursos existentes y se registran en [!DNL Experience Manager] mediante [Vínculo de recursos de Adobe](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) o [aplicación de escritorio de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 >[!NOTE]
 >
