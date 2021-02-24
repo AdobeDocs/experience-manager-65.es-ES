@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6ae8bffa2d9d59f5656b9344d8826128f12885c
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 1%
+source-wordcount: '392'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ Consulte también [Configuración de Dynamic Media - modo Scene7](/help/assets/c
 
 1. En la instancia de AEM, vaya a **[!UICONTROL Herramientas > Seguridad > Usuarios]** y seleccione **[!UICONTROL Crear usuario]**. Este usuario de servicio debe tener *permisos de lectura/escritura* para `/content/dam.`
 1. En los campos **[!UICONTROL ID]** y **[!UICONTROL Contraseña]**, introduzca un nombre de usuario y una contraseña; por ejemplo, **Usuario de FTP**. Este nombre aparece en la línea de tiempo como el usuario que creó el recurso. Cuando se carga un recurso desde FTP, se considera que se crea al cargarlo en el servidor FTP y se transfiere a AEM.
-1. Póngase en contacto con [Servicio de atención al cliente empresarial de Adobe para obtener Experience Manager](https://helpx.adobe.com/es/contact/enterprise-support.ec.html) para solicitar acceso al paquete de funciones 18912 para descargarlo. Es posible que necesite la siguiente información cuando se ponga en contacto con la asistencia técnica:
+1. Póngase en contacto con [Servicio de atención al cliente empresarial de Adobe para obtener Experience Manager](https://experienceleague.adobe.com/?support-solution=General#support) para solicitar acceso al paquete de funciones 18912 para descargarlo. Es posible que necesite la siguiente información cuando se ponga en contacto con la asistencia técnica:
 
    * Dirección IP del servidor para la instancia de Autor, incluido el número de puerto (de forma predeterminada, el número de puerto es 4502).
    * Nombre de usuario y contraseña del usuario del servicio de AEM del paso anterior.
