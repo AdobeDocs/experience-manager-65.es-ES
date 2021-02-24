@@ -1,38 +1,38 @@
 ---
 cloud: experience-cloud
-solution-title: Información y asistencia
+solution-title: Aprendizaje y asistencia
 solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-65.html
 solution-icon: assets/experience-cloud-logo-24.png
 getting-started-title: Introducción
 getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
 tutorials-title: Tutoriales
-tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html
+tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-65.es-ES
 solution: Experience Manager
-type: Documentation
+type: Documentación
 index: y
 translation-type: tm+mt
-source-git-commit: fff2c39561f54436f8e5613ac648cb91af888c66
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 9%
+source-wordcount: '153'
+ht-degree: 69%
 
 ---
 
 
 # Metadatos para uso interno
 
-El archivo metadata.md incluye metadatos de nivel de repos que pasan a los archivos TOC.md de la guía del usuario en la repo. Si desea cambiar el contenido de metadata.md para cualquier guía del usuario, hágalo en cualquier archivo TOC.md.
+El archivo metadata.md incluye metadatos de nivel de repositorio que pasan a los archivos TOC.md de la guía del usuario en el repositorio. Si desea cambiar el contenido de metadata.md para cualquier guía del usuario, hágalo en cualquier archivo TOC.md.
 
 | metadata | lo que hace |
 |--- |--- |
 | solution-title | Se utiliza en el encabezado del artículo como vínculo. |
 | solution-hub-url | Abre la página del centro de aprendizaje y asistencia técnica. |
-| solution-icon | Muestra el icono de la solución junto al título de la solución. Aún no se ha implementado. |
+| solution-icon | Muestra el icono de la solución junto al título de la solución. No implementado aún. |
 | getting-started-url | Vínculo a la página de introducción. |
 | tutorials-url | Vínculo a tutoriales de vídeo. |
-| niveles de mini toc | Determina el número de niveles de encabezado que aparecen en el carril derecho. El valor predeterminado es 2. |
+| mini-toc-levels | Determina el número de niveles de encabezado que aparecen en el carril derecho. El valor predeterminado es 2. |
 | git-repo | Especifica la ubicación de la repo principal para uso interno. |
 
 En el archivo TOC.md
