@@ -3,9 +3,9 @@ title: Procesar recursos con flujos de trabajo
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '961'
 ht-degree: 3%
 
 ---
@@ -106,5 +106,4 @@ Para un modelo de flujo de trabajo, los usuarios pueden crear un iniciador de fl
 >* [Creación de modelos de flujo de trabajo y ampliación de la funcionalidad de flujo de trabajo](/help/sites-developing/workflows.md)
 >* [Métodos para ejecutar flujos de trabajo](/help/sites-administering/workflows-starting.md)
 >* [Prácticas recomendadas del flujo de trabajo](/help/sites-developing/workflows-best-practices.md)
->* [Artículo de comunidad sobre la modificación de recursos mediante flujo de trabajo](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 
