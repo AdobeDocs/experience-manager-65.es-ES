@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1543'
 ht-degree: 0%
 
 ---
 
 
 # Validación de Documentos DDX {#validating-ddx-documents}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 Puede validar mediante programación un documento DDX que utilice el servicio Ensamblador. Es decir, con la API de servicio de ensamblador, puede determinar si un documento DDX es válido o no. Por ejemplo, si ha actualizado una versión anterior de AEM Forms y desea asegurarse de que el documento DDX es válido, puede validarlo con la API de servicio de ensamblador.
 
