@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1459'
 ht-degree: 0%
 
 ---
 
 
 # Optimización del rendimiento del servicio de Forms {#optimizing-the-performance-of-theforms-service}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 ## Optimización del rendimiento del servicio de Forms {#optimizing-the-performance-of-the-forms-service}
 
