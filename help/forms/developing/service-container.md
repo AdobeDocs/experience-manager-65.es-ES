@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
 
 
 # Contenedor de servicio {#service-container}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 Los servicios de AEM Forms ubicados en el contenedor de servicios (incluidos los servicios estándar como el servicio de cifrado, los procesos duraderos y de corta duración) se pueden invocar mediante varios proveedores, como un proveedor de EJB. Un proveedor EJB permite que los servicios de AEM Forms se invoquen a través de RMI/IIOP. Un proveedor de servicio web expone los servicios como servicios web (generación WSDL) mediante estándares como SOAP/HTTP y SOAP/JMS.
 
