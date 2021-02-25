@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1839'
 ht-degree: 0%
 
 ---
 
 
 # Creación de aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 Puede crear una aplicación cliente mediante Flash Builder que realice la autenticación de inicio de sesión único (SSO) mediante tokens HTTP. Supongamos, por ejemplo, que se crea una aplicación basada en Web mediante Flash Builder. A continuación, suponga que la aplicación contiene diferentes vistas, en las que cada vista invoca una operación de AEM Forms diferente. En lugar de autenticar a un usuario para cada operación de Forms, puede crear una página de inicio de sesión que permita al usuario autenticarse una vez. Una vez autenticado, un usuario puede invocar varias operaciones sin tener que volver a autenticarse. Por ejemplo, si un usuario ha iniciado sesión en Workspace (u otra aplicación de Forms), no tendrá que volver a autenticarse.
 
