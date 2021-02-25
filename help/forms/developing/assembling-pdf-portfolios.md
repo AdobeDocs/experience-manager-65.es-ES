@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
 
 
 # Compilación de Portfolio PDF {#assembling-pdf-portfolios}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 Puede montar un Portfolio PDF mediante el JRE del ensamblador y la API de servicio Web. Un portafolio puede combinar varios documentos de distintos tipos, incluidos archivos de palabras, archivos de imágenes (por ejemplo, un archivo jpeg) y documentos PDF. El diseño del portafolio puede configurarse en diferentes estilos, como la *cuadrícula con Previsualización*, el diseño *En una imagen* o incluso *Girar*.
 
