@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
 workflow-type: tm+mt
-source-wordcount: '6083'
+source-wordcount: '6072'
 ht-degree: 5%
 
 ---
@@ -33,13 +33,12 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos de 
 
 >[!NOTE]
 >
->La siguiente lista de funciones requiere el uso de la CDN lista para usar que se incluye con Adobe Experience Manager - Dynamic Media. Ninguna otra CDN personalizada es compatible con estas funciones.
+>La siguiente lista de funciones requiere que utilice el CDN incorporado con Adobe Experience Manager - Dynamic Media. Ninguna otra CDN personalizada es compatible con estas funciones.
 >
 >* [Imágenes inteligentes](/help/assets/imaging-faq.md)
 >* [Invalidez de caché](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 >* [Protección de Hotlink](/help/assets/hotlink-protection.md)
 >* [ENVÍO HTTP/2 del contenido](/help/assets/http2.md)
->* [Integración de visores de Dynamic Media con Adobe Analytics y Experience Platform Launch](/help/assets/launch.md)
 >* Redirección de URL a nivel de CDN
 >* Akamai ChinaCDN (para un envío óptimo en China)
 
@@ -108,7 +107,7 @@ Consulte [Instalación del paquete de funciones 18912 para la migración masiva 
    * **[!UICONTROL Publicación de recursos]** : puede elegir entre las tres opciones siguientes:
       * **** Inmediatamente significa que cuando se cargan recursos, el sistema los ingesta y proporciona la URL o incrustación al instante. No es necesaria la intervención del usuario para publicar recursos.
       * **[!UICONTROL Tras la]** activación, significa que primero debe publicar explícitamente el recurso antes de proporcionar un vínculo URL/Incrustar.
-      * **[!UICONTROL Publicación selectivaEsta opción le permite controlar qué carpetas se publican en Dynamic Media.]** Permite utilizar funciones como recorte inteligente o representaciones dinámicas, o determinar qué carpetas se publican exclusivamente en Experience Manager para la vista previa. Esos mismos recursos *no* se publican en Dynamic Media para su envío en el dominio público.<br>Puede definir esta opción aquí en  **[!UICONTROL Dynamic Media Cloud]** Configurationo, si lo prefiere, puede elegir establecer esta opción en el nivel de carpeta, en  **[!UICONTROL Propiedades]** de una carpeta.<br>Consulte  [Uso de la publicación selectiva en Dynamic Media.](/help/assets/selective-publishing.md)<br>Si posteriormente cambia esta configuración o posteriormente la cambia a nivel de carpeta, esos cambios solo afectarán a los nuevos recursos que cargue a partir de ese momento. El estado de publicación de los recursos existentes en la carpeta permanece tal cual hasta que los cambie manualmente desde **[!UICONTROL Publicación rápida]** o el cuadro de diálogo **[!UICONTROL Administrar publicación]**.
+      * **[!UICONTROL Publicación selectivaEsta opción le permite controlar qué carpetas se publican en Dynamic Media.]** Permite utilizar funciones como recorte inteligente o representaciones dinámicas, o determinar qué carpetas se publican exclusivamente en Experience Manager para la vista previa. Esos mismos recursos *no* se publican en Dynamic Media para su envío en el dominio público.<br>Puede establecer esta opción aquí en  **[!UICONTROL Dynamic Media Cloud]** Configurationo, si lo prefiere, puede elegir establecer esta opción en el nivel de carpeta, en  **[!UICONTROL Propiedades]** de una carpeta.<br>Consulte  [Uso de la publicación selectiva en Dynamic Media.](/help/assets/selective-publishing.md)<br>Si posteriormente cambia esta configuración o posteriormente la cambia a nivel de carpeta, esos cambios solo afectarán a los nuevos recursos que cargue a partir de ese momento. El estado de publicación de los recursos existentes en la carpeta permanece tal cual hasta que los cambie manualmente desde **[!UICONTROL Publicación rápida]** o el cuadro de diálogo **[!UICONTROL Administrar publicación]**.
    * **[!UICONTROL Servidor]**  de Previsualización segura: permite especificar la ruta de URL al servidor de previsualización de representaciones seguras. Es decir, una vez generadas las representaciones, el Experience Manager puede acceder a las representaciones remotas de Dynamic Media y realizar la previsualización de forma segura (no se envían archivos binarios a la instancia de Experience Manager).
 A menos que tenga una disposición especial para utilizar el servidor de su propia compañía o un servidor especial, Adobe recomienda que deje esta configuración como se especificó.
 
@@ -325,7 +324,7 @@ Puede agregar tipos MIME personalizados para formatos no admitidos en Recursos E
 
 Utilice los ajustes preestablecidos de conjunto de lotes para automatizar la creación de conjuntos de imágenes o conjuntos de giros mientras los recursos se cargan en Dynamic Media.
 
-En primer lugar, defina la convención de nombre para el modo en que los recursos se agrupan en un conjunto. A continuación, cree un ajuste preestablecido de conjunto de lotes con un nombre único y un conjunto de instrucciones independiente. Debe definir cómo construir el conjunto con imágenes que coincidan con las convenciones de nombres definidas en la fórmula preestablecida.
+En primer lugar, defina la convención de nombre para el modo en que los recursos se agrupan en un conjunto. A continuación, cree un ajuste preestablecido de conjunto de lotes con un nombre único y un conjunto de instrucciones independiente. Debe definir cómo construir el conjunto con imágenes que coincidan con las convenciones de nombre definidas en la fórmula preestablecida.
 
 Al cargar archivos, Dynamic Media crea automáticamente un conjunto con todos los archivos que coinciden con la convención de nombre definida en los ajustes preestablecidos activos.
 
