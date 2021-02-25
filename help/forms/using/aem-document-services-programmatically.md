@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: b4795930c87fa30d7c7ab60a50bc6f40da4f97d2
 workflow-type: tm+mt
-source-wordcount: '6355'
+source-wordcount: '6418'
 ht-degree: 1%
 
 ---
@@ -19,11 +19,15 @@ ht-degree: 1%
 
 # Uso de los servicios de Documento de AEM mediante programación {#using-aem-document-services-programmatically}
 
-Las clases de cliente necesarias para crear proyectos dinámicos con AEM Documento Services están disponibles en la carpeta [AEM Forms Client SDK](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html). Para obtener más información sobre varios proyectos, consulte [cómo crear el proyecto AEM con Maven](/help/sites-developing/ht-projects-maven.md).
+Los ejemplos y ejemplos de este documento le ayudan a comprender y utilizar AEM servicios de Documento en un AEM Forms en un entorno OSGi. Para ver ejemplos y ejemplos de AEM Forms en entorno JEE, consulte [Programación con AEM Forms en JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=en#programming-aem-forms-jee)
 
->[!NOTE]
->
->Antes de utilizar las API de servicio DocAssurance, [configure el servicio DocAssurance](/help/forms/using/install-configure-document-services.md).
+## Requisitos previos {#prerequisite}
+
+* Antes de utilizar las API de servicio DocAssurance, [configure el servicio DocAssurance](/help/forms/using/install-configure-document-services.md).
+
+* Descargue y configure [SDK de cliente de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) con AEM proyecto hecho. Las clases de cliente necesarias para crear proyectos de Maven mediante AEM servicios de Documento están disponibles en el [SDK del cliente de AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+
+* Conozca [cómo crear su proyecto de AEM con Maven](/help/sites-developing/ht-projects-maven.md)
 
 ## DocAssurance Service {#docassurance-service}
 
