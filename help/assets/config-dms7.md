@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '6123'
+source-wordcount: '6083'
 ht-degree: 5%
 
 ---
@@ -31,14 +31,15 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos de 
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Los clientes que no utilizan la CDN integrada con Dynamic Media Experience Manager no se benefician de las siguientes funciones:
->* [Imágenes inteligentes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/imaging-faq.html?lang=en#dynamicmedia)
->* [Invalidez de caché](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en#dynamicmedia)
->* [Protección de Hotlink](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/hotlink-protection.html?lang=en#dynamicmedia)
->* [ENVÍO HTTP/2 del contenido](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/http2faq.html?lang=en#dynamicmedia)
->* [Integración de visores de Dynamic Media con Adobe Analytics y Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/launch.html?lang=en#dynamicmedia)
+>La siguiente lista de funciones requiere el uso de la CDN lista para usar que se incluye con Adobe Experience Manager - Dynamic Media. Ninguna otra CDN personalizada es compatible con estas funciones.
+>
+>* [Imágenes inteligentes](/help/assets/imaging-faq.md)
+>* [Invalidez de caché](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [Protección de Hotlink](/help/assets/hotlink-protection.md)
+>* [ENVÍO HTTP/2 del contenido](/help/assets/http2.md)
+>* [Integración de visores de Dynamic Media con Adobe Analytics y Experience Platform Launch](/help/assets/launch.md)
 >* Redirección de URL a nivel de CDN
 >* Akamai ChinaCDN (para un envío óptimo en China)
 
