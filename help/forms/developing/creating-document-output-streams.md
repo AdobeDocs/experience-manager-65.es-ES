@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '19030'
+source-wordcount: '19044'
 ht-degree: 0%
 
 ---
 
 
 # Creación de flujos de salida de Documento {#creating-document-output-streams}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 **Acerca del servicio de salida**
 
@@ -1327,7 +1329,7 @@ Imprimir en un archivo con la API de salida (servicio web):
    * Un valor de cadena que especifica la ubicación de los archivos colaterales relacionados, como los archivos de imagen.
    * Un valor de cadena que especifica la ubicación del archivo XDC que se va a utilizar (puede pasar `null` si especificó el archivo XDC que se va a utilizar mediante el objeto `PrintedOutputOptionsSpec`).
    * El objeto `PrintedOutputOptionsSpec` que contiene las opciones de tiempo de ejecución de impresión necesarias para imprimir en un archivo.
-   * El objeto `BLOB` que contiene el origen de datos XML que contiene datos de formulario.
+   * El objeto `BLOB` que contiene el origen de datos XML que contiene los datos del formulario.
    * Un objeto `BLOB` que se rellena con el método `generatePDFOutput`. El método `generatePDFOutput` rellena este objeto con metadatos generados que describen el documento. (Este valor de parámetro solo es necesario para la invocación de servicio Web).
    * Un objeto `BLOB` que se rellena con el método `generatePDFOutput`. El método `generatePDFOutput` rellena este objeto con datos de resultados. (Este valor de parámetro solo es necesario para la invocación de servicio Web).
    * Un objeto `OutputResult` que contiene los resultados de la operación. (Este valor de parámetro solo es necesario para la invocación de servicio Web).
