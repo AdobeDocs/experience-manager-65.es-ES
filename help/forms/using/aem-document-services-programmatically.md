@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: b4795930c87fa30d7c7ab60a50bc6f40da4f97d2
+source-git-commit: c3fddf28c0f2f5377fff7561d29f073cc847c3ca
 workflow-type: tm+mt
-source-wordcount: '6418'
+source-wordcount: '6450'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,13 @@ ht-degree: 1%
 
 # Uso de los servicios de Documento de AEM mediante programación {#using-aem-document-services-programmatically}
 
-Los ejemplos y ejemplos de este documento le ayudan a comprender y utilizar AEM servicios de Documento en un AEM Forms en un entorno OSGi. Para ver ejemplos y ejemplos de AEM Forms en entorno JEE, consulte [Programación con AEM Forms en JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=en#programming-aem-forms-jee)
+Los ejemplos y ejemplos de este documento le ayudan a comprender y utilizar AEM servicios de Documento en un AEM Forms en un entorno OSGi. Para ver ejemplos y ejemplos de AEM Forms en el entorno JEE, consulte
+
+* [Inicio rápido de la API de Java del servicio de firma](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
+
+* [Inicio rápido de la API de Java del servicio de cifrado](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
+
+* [inicio rápido de la API de Java del servicio de extensiones de Acrobat Reader](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
 
 ## Requisitos previos {#prerequisite}
 
