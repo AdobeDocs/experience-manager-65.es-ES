@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -24,4 +24,4 @@ La vinculación interactiva se produce cuando un sitio web de terceros utiliza c
 
 >[!NOTE]
 >
->La protección de vínculos interactivos requiere que utilice la CDN integrada de Adobe. Para activar la protección mediante hotlink, un administrador debe crear un ticket de asistencia para solicitar el cambio de configuración en su cuenta de Dynamic Media. No hay costo adicional para activar la protección de los vínculos interactivos.
+>Esta función requiere que utilice el CDN incorporado con Adobe Experience Manager Dynamic Media. Esta función no admite ningún otro CDN personalizado. Para activar la protección de vínculos interactivos, un administrador debe crear un ticket de asistencia técnica del Servicio de atención al cliente de Adobe para solicitar el cambio de configuración en su cuenta de Dynamic Media. No hay costo adicional para activar la protección de los vínculos interactivos.
