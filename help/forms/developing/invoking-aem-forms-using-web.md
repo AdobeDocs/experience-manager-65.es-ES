@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '9990'
+source-wordcount: '10004'
 ht-degree: 0%
 
 ---
 
 
 # Invocación de AEM Forms mediante servicios Web {#invoking-aem-forms-using-web-services}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 La mayoría de los servicios de AEM Forms del contenedor de servicios están configurados para exponer un servicio Web, con compatibilidad total con la generación del lenguaje de definición de servicio Web (WSDL). Es decir, puede crear objetos proxy que consuman la pila de SOAP nativa de un servicio de AEM Forms. Como resultado, los servicios de AEM Forms pueden intercambiar y procesar los siguientes mensajes SOAP:
 
