@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1788'
 ht-degree: 0%
 
 ---
 
 
 # Desmontaje programático de Documentos PDF {#programmatically-disassembling-pdf-documents}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 Puede desmontar un documento PDF pasándolo al servicio Ensamblador. Normalmente, esta tarea resulta útil cuando el documento PDF se creó originalmente a partir de muchos documentos individuales, como una colección de instrucciones. En la siguiente ilustración, DocA se divide en varios documentos resultantes, donde el primer marcador de nivel 1 de una página identifica el inicio de un nuevo documento resultante.
 
