@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4188'
 ht-degree: 1%
 
 ---
 
 
 # Representación de Forms como HTML {#rendering-forms-as-html}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 El servicio Forms procesa los formularios como HTML en respuesta a una solicitud HTTP procedente de un navegador web. Una ventaja de procesar un formulario como HTML es que el equipo en el que se encuentra el navegador web del cliente no requiere Adobe Reader, Acrobat ni Flash Player (para las guías de formulario (obsoletas)).
 
