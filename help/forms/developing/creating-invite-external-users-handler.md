@@ -2,15 +2,17 @@
 title: Creación de un controlador de usuarios externos de invitación
 description: Creación de un controlador de usuarios externos de invitación
 translation-type: tm+mt
-source-git-commit: 92e5cc0b1934dad641357a22894e70a3660b774a
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
 
 
 # Creación de un controlador de usuarios externos de invitación {#create-invite-external-users-handler}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 Puede crear un controlador de usuarios externos de invitación para el servicio Rights Management. Un controlador de usuarios externos de invitación permite al servicio de Rights Management invitar a usuarios externos para que se conviertan en usuarios Rights Management. Una vez que un usuario se convierte en un usuario Rights Management, puede realizar tareas, como abrir un documento PDF protegido por una política. Después de implementar el controlador de usuarios externos de invitación en AEM Forms, puede utilizar la consola de administración para interactuar con él.
 
