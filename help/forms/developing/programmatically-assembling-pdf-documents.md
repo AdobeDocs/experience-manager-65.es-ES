@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2152'
 ht-degree: 0%
 
 ---
 
 
 # Compilación programada de Documentos PDF {#programmatically-assembling-pdf-documents}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 Puede utilizar la API de servicio de ensamblador para ensamblar varios documentos PDF en un solo documento PDF. La siguiente ilustración muestra tres documentos PDF que se están combinando en un solo documento PDF.
 
