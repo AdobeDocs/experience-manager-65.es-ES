@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
 
 
 # Trabajar con credenciales {#working-with-credentials}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 **Acerca del servicio de credenciales**
 
