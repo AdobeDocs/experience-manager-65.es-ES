@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '6243'
+source-wordcount: '6257'
 ht-degree: 0%
 
 ---
 
 
 # Administración de usuarios {#managing-users}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 **Acerca de la administración de usuarios**
 
@@ -752,7 +754,7 @@ En la tabla siguiente se describen los pasos de este diagrama
    <td><p>Las credenciales de usuario se autentican con el servicio Authentication Manager. Si las credenciales de usuario son válidas, el flujo de trabajo continúa con el paso 3. De lo contrario, se envía un mensaje al usuario en el que se indica que no es un usuario autorizado.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>La información del usuario y el diseño de formulario se recuperan de una base de datos empresarial segura. </p></td>
   </tr>
   <tr>
@@ -878,7 +880,7 @@ En la tabla siguiente se describen los pasos de este diagrama
    <td><p>AEM Forms realiza una operación de sincronización.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Se actualiza la información del usuario.</p></td>
   </tr>
   <tr>
