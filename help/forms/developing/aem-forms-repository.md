@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '9143'
+source-wordcount: '9157'
 ht-degree: 0%
 
 ---
 
 
 # Uso del repositorio de AEM Forms {#working-with-aem-forms-repository}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 **Acerca del servicio de repositorio**
 
@@ -444,7 +446,7 @@ Recursos de lista mediante la API del servicio Repositorio (Java):
 
 ### Recursos de lista mediante la API de servicio Web {#list-resources-using-the-web-service-api}
 
-Recursos de lista mediante la API de servicio Repositorio (servicio Web):
+Recursos de lista mediante la API del servicio Repositorio (servicio Web):
 
 1. Incluir archivos de proyecto
 
