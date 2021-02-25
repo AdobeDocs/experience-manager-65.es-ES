@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2846'
 ht-degree: 0%
 
 ---
 
 
 # Conversión de archivos PDF a archivos de imagen y postscript {#converting-pdf-to-postscript-andimage-files}
+
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
 
 **Acerca del servicio Convertir PDF**
 
