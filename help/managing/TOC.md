@@ -16,13 +16,13 @@ ht-degree: 62%
 
 # Guía del usuario de administración de AEM 6.5 {#managing}
 
-+ [Administración de la guía del usuario](home.md)
-+ Administración - Lista de comprobación de optimizaciones {#managing-best-practices-checklist}
-   + [Administración de proyectos - Lista de comprobación de optimizaciones](best-practices.md)
-   + [Lista de comprobación](best-practices-checklist.md)
++ [Guía del usuario de administración](home.md)
++ Administración - Lista de comprobación de prácticas recomendadas {#managing-best-practices-checklist}
+   + [Administración de proyectos: lista de comprobación de prácticas recomendadas](best-practices.md)
+   + [La lista de comprobación](best-practices-checklist.md)
    + [Glosario](best-practices-glossary.md)
-   + [Lista de comprobación: más referencia](best-practices-further-reference.md)
-+ Administración: más referencia {#managing-further-reference}
+   + [Lista de comprobación: referencia adicional](best-practices-further-reference.md)
++ Administración: referencia adicional {#managing-further-reference}
    + [Pautas para configurar el tamaño del hardware](hardware-sizing-guidelines.md) 
    + [Operaciones de desarrollo empresarial](enterprise-devops.md)
    + [Recomendaciones para la administración de direcciones URL y SEO](seo-and-url-management.md) 
