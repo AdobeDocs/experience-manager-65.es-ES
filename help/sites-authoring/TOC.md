@@ -17,7 +17,7 @@ ht-degree: 88%
 
 # Guía del usuario de creación de AEM 6.5 {#authoring}
 
-+ [Descripción general de la Guía del usuario de creación](home.md)
++ [Información general sobre la Guía del usuario sobre creación](home.md)
 + Tareas, herramientas y conceptos esenciales para la creación de AEM {#essentials}
    + [Primeros pasos de creación](first-steps.md)
    + [Creación de páginas](page-authoring.md)
@@ -75,7 +75,7 @@ ht-degree: 88%
    + [Aplicación de flujos de trabajo a las páginas](workflows-applying.md)
    + [Participación en flujos de trabajo](workflows-participating.md)
    + [Uso de flujos de trabajo de proyecto](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
-+ Rendimiento de la página {#page-performance}
++ Rendimiento de página {#page-performance}
    + [Perspectiva de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
    + [Analizar el rendimiento de la página](ci-analyze.md)
    + [Visualización de datos de análisis de la página](pa-using.md)
