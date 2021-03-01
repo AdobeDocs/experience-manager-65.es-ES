@@ -1,12 +1,12 @@
 ---
-title: Reutilización de recursos mediante MSM
-description: Utilice recursos en varias páginas o carpetas que se deriven de los recursos principales y estén vinculados a ellos. Los recursos permanecen sincronizados con una copia principal y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
+title: Reutilizar recursos mediante MSM
+description: Utilice recursos en varias páginas o carpetas que se deriven de recursos principales y estén vinculadas a ellos. Los recursos permanecen sincronizados con una copia principal y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 7eb569c86c45daa8b175f924b211693a5d5dde58
 workflow-type: tm+mt
-source-wordcount: '3367'
+source-wordcount: '3373'
 ht-degree: 10%
 
 ---
@@ -14,59 +14,59 @@ ht-degree: 10%
 
 # Reutilizar recursos con MSM para [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
-La funcionalidad Multi Site Manager (MSM) de [!DNL Adobe Experience Manager] permite a los usuarios reutilizar el contenido que se crea una vez y se reutiliza en varias ubicaciones Web. Lo mismo está disponible para los recursos digitales como MSM para la funcionalidad [!DNL Assets]. Con MSM para [!DNL Assets], puede:
+La funcionalidad de Multi Site Manager (MSM) en [!DNL Adobe Experience Manager] permite a los usuarios reutilizar contenido creado una vez y reutilizado en varias ubicaciones web. Lo mismo está disponible para los recursos digitales que MSM para la funcionalidad [!DNL Assets]. Con MSM para [!DNL Assets], puede:
 
 * Cree recursos una vez y, a continuación, haga copias de estos recursos para reutilizarlos en otras áreas del sitio.
-* Mantenga varias copias en sincronización y actualice la copia primaria original una vez para insertar los cambios en las copias secundarias.
-* Realice cambios locales suspendiendo temporal o permanentemente la vinculación entre los recursos principales y secundarios.
+* Mantenga varias copias en sincronización y actualice la copia principal original una vez para insertar los cambios en las copias secundarias.
+* Realice cambios locales suspendiendo temporal o permanentemente la vinculación entre recursos principales y secundarios.
 
-## Requisitos previos {#configprereq}
+## Requisitos previos {#prereq}
 
-Para utilizar MSM para [!DNL Assets], instale al menos Service Pack 1. Para obtener más información, consulte [las notas de la versión](/help/release-notes/sp-release-notes.md).
+Para usar MSM para [!DNL Assets], instale al menos [!DNL Experience Manager] 6.5 Service Pack 1. Para obtener más información, consulte [las notas de la versión del Service Pack más reciente](/help/release-notes/sp-release-notes.md).
 
-## Comprenda los beneficios y los conceptos {#concepts}
+## Comprender los beneficios y los conceptos {#concepts}
 
 ### Cómo funciona y los beneficios {#how-it-works-and-the-benefits}
 
-Para comprender los escenarios de uso para reutilizar el mismo contenido (texto y recursos) en varias ubicaciones Web, consulte [posibles escenarios de MSM](/help/sites-administering/msm.md). [!DNL Experience Manager] mantiene un vínculo entre el recurso original y sus copias vinculadas, denominadas copias en vivo (LC). La vinculación mantenida permite que los cambios centralizados se inserten en muchas copias en vivo. Esto permite actualizaciones más rápidas mientras se eliminan las limitaciones de la administración de copias de duplicado. La propagación de los cambios no tiene errores y está centralizada. La funcionalidad permite disponer de espacio para las actualizaciones que están limitadas a las copias en directo seleccionadas. Los usuarios pueden desasociar la vinculación, es decir, la herencia de salto, y realizar cambios locales que no se sobrescriban la próxima vez que se actualice la copia principal y se implementen los cambios. La desvinculación se puede realizar para unos pocos campos de metadatos seleccionados o para un recurso completo. Permite flexibilidad para actualizar localmente los recursos que se heredaron originalmente de una copia principal.
+Para comprender los escenarios de uso para reutilizar el mismo contenido (texto y recursos) en varias ubicaciones web, consulte [posibles escenarios de MSM](/help/sites-administering/msm.md). [!DNL Experience Manager] mantiene un vínculo entre el recurso original y sus copias vinculadas, denominadas Live Copies (LC). La vinculación mantenida permite insertar cambios centralizados en muchas Live Copies. Esto permite realizar actualizaciones más rápidas mientras se eliminan las limitaciones de la administración de copias duplicadas. La propagación de los cambios está libre de errores y centralizada. La funcionalidad permite disponer de espacio para actualizaciones que se limitan a copias en vivo seleccionadas. Los usuarios pueden desasociar la vinculación, es decir, interrumpir la herencia, y realizar ediciones locales que no se sobrescriban la próxima vez que se actualice la copia principal y se implementen los cambios. La desvinculación se puede realizar para unos pocos campos de metadatos seleccionados o para todo un recurso. Permite flexibilidad para actualizar localmente los recursos que se heredan originalmente de una copia principal.
 
-MSM mantiene una relación activa entre el recurso de origen y sus copias activas para que:
+MSM mantiene una relación activa entre el recurso de origen y sus Live Copies, de modo que:
 
-* Los cambios en los recursos de origen se aplican (se despliegan) también a las copias en vivo, es decir, las copias en vivo se sincronizan con el origen.
-* Puede actualizar las copias activas suspendiendo la relación activa o eliminando la herencia de algunos campos limitados. Las modificaciones al origen ya no se aplican a la Live Copy.
+* Los cambios en los recursos de origen se aplican (se implementan) también a las Live Copies, es decir, las Live Copies se sincronizan con el origen.
+* Puede actualizar las Live Copies suspendiendo la relación activa o eliminando la herencia de algunos campos limitados. Las modificaciones al origen ya no se aplican a la Live Copy.
 
 ### Glosario de MSM para [!DNL Assets] términos {#glossary}
 
-**Origen:** Los recursos o carpetas originales. Copia principal de la que se derivan las copias en vivo.
+**Fuente:** Los recursos o carpetas originales. Copia principal de la que provienen las Live Copies.
 
-**Live Copy:** La copia de los recursos o carpetas de origen que está en sincronización con su origen. Las Live Copies pueden ser una fuente de más Live Copies. Consulte cómo crear LC.
+**Live Copy:** la copia de los recursos o carpetas de origen que están en sincronización con su origen. Las Live Copies pueden ser una fuente de más Live Copies. Consulte cómo crear LC.
 
-**Herencia:** vínculo/referencia entre un recurso/carpeta de Live Copy y su origen que el sistema utiliza para recordar dónde enviar las actualizaciones. La herencia existe en un nivel granular para los campos de metadatos. La herencia se puede eliminar para los campos de metadatos selectivos, al tiempo que se conserva la relación activa entre el origen y su Live Copy.
+**Herencia:** un vínculo/referencia entre un recurso o carpeta de Live Copy y su origen que el sistema utiliza para recordar dónde enviar las actualizaciones. La herencia existe a nivel granular para los campos de metadatos. La herencia se puede eliminar para campos de metadatos selectivos, preservando al mismo tiempo la relación activa entre el origen y su Live Copy.
 
-**Despliegue:** una acción que mueve las modificaciones realizadas en el flujo descendente del origen a sus copias en vivo. Es posible actualizar una o varias copias en directo de una sola vez mediante la acción de implementación. Consulte despliegue.
+**Despliegue:**  acción que lleva las modificaciones realizadas en el flujo descendente de origen a sus Live Copies. Es posible actualizar una o más Live Copies en una misma vez mediante la acción de despliegue. Consulte despliegue.
 
-**Configuración de despliegue:** reglas que determinan qué propiedades se sincronizan, cómo y cuándo. Estas configuraciones se aplican al crear copias en directo; se puede editar más tarde; y un elemento secundario puede heredar la configuración de implementación de su recurso principal. Para MSM para [!DNL Assets], utilice sólo la configuración de implementación estándar. Las demás configuraciones de implementación no están disponibles para MSM para [!DNL Assets].
+**Configuración de lanzamiento:**  reglas que determinan qué propiedades se sincronizan, cómo y cuándo. Estas configuraciones se aplican al crear Live Copies; se puede editar más adelante; y un elemento secundario puede heredar la configuración de lanzamiento de su recurso principal. Para MSM para [!DNL Assets], utilice solamente la configuración de lanzamiento estándar. Las demás configuraciones de lanzamiento no están disponibles para MSM para [!DNL Assets].
 
-**Sincronizar:** otra acción, además de la implementación, que iguala el origen y la Live Copy, enviando las actualizaciones de origen a las Live Copies. Se inicia una sincronización para una copia en vivo concreta y la acción extrae los cambios del origen. Con esta acción, solo es posible actualizar una de las copias activas. Consulte Sincronizar acción.
+**Sincronizar:** otra acción, además de la implementación, que ofrece paridad entre la fuente y su Live Copy al enviar las actualizaciones de la fuente a las Live Copies. Se inicia una sincronización para una Live Copy concreta y la acción extrae los cambios del origen. Con esta acción, solo es posible actualizar una de las Live Copies. Consulte Sincronizar acción.
 
-**Suspender:** elimine temporalmente la relación activa entre una Live Copy y su recurso o carpeta de origen. Puede reanudar la relación. Consulte acción de suspensión.
+**Suspender:** elimine temporalmente la relación activa entre una Live Copy y su recurso o carpeta de origen. Puede reanudar la relación. Consulte suspender acción.
 
-**Reanudar:** Reanude la relación activa para que una Live Copy vuelva a recibir las actualizaciones desde el origen. Consulte la acción de reanudación.
+**Reanudar:** reanude la relación activa para que una copia activa vuelva a empezar a recibir las actualizaciones del origen. Consulte Reanudar acción.
 
-**La acción Restablecer:** Restablecer hace que la Live Copy vuelva a ser una réplica del origen sobrescribiendo los cambios locales. También elimina las cancelaciones de herencia y restablece la herencia en todos los campos de metadatos. Para realizar modificaciones locales en el futuro, debe cancelar de nuevo la herencia de campos específicos. Consulte las modificaciones locales a la LC.
+**Restablecer:** la acción Restablecer hace que la Live Copy vuelva a ser una réplica del origen sobrescribiendo los cambios locales. También elimina las cancelaciones de herencia y restablece la herencia en todos los campos de metadatos. Para realizar modificaciones locales en el futuro, debe cancelar de nuevo la herencia de campos específicos. Consulte modificaciones locales a la LC.
 
-**Detach:** elimine irrevocablemente la relación activa de una carpeta o recurso de Live Copy. Después de realizar la acción de separar, las copias en vivo nunca pueden recibir actualizaciones del origen y deja de ser una Live Copy. Consulte Eliminar relación.
+**Separar:** elimine irrevocablemente la relación activa de una carpeta o un recurso de Live Copy. Después de la acción de desasociar, las Live Copies nunca pueden recibir actualizaciones del origen y deja de ser una Live Copy. Consulte quitar relación.
 
 ## Crear una Live Copy de un recurso {#createlc}
 
-Para crear una Live Copy desde uno o varios recursos o carpetas de origen, siga uno de estos procedimientos:
+Para crear Live Copy desde uno o varios recursos o carpetas de origen, siga uno de los siguientes pasos:
 
-* Método 1: Seleccione los recursos de origen y haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]** en la barra de herramientas de la parte superior.
-* Método 2: En la interfaz de usuario [!DNL Experience Manager], haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]** desde la esquina superior derecha de la interfaz.
+* Método 1: Seleccione los recursos de origen y haga clic en **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** en la barra de herramientas de la parte superior.
+* Método 2: En la interfaz de usuario [!DNL Experience Manager], haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]** en la esquina superior derecha de la interfaz.
 
-Puede crear copias activas de un recurso o de una carpeta a la vez. Puede crear copias en vivo que se deriven de un recurso o de una carpeta que sea una copia en vivo. Los fragmentos de contenido (CF) no son compatibles con el caso de uso. Al intentar crear sus copias en vivo, los CF se copian como están sin ninguna relación. Los CF copiados son una instantánea a tiempo y no se actualizan cuando se actualizan los CF originales.
+Puede crear Live Copies de un recurso o de una carpeta de a una. Puede crear Live Copies que se deriven de un recurso o de una carpeta que sea una Live Copy en sí. Los fragmentos de contenido (CF) no son compatibles con el caso de uso. Al intentar crear sus Live Copies, los CF se copian tal cual sin ninguna relación. Los CF copiados son una instantánea a tiempo y no se actualizan cuando se actualizan los CF originales.
 
-Para crear copias en vivo con el primer método, siga estos pasos:
+Para crear Live Copies con el primer método, siga estos pasos:
 
 1. Seleccione los recursos o carpetas de origen. En la barra de herramientas, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]**.
 
@@ -75,10 +75,10 @@ Para crear copias en vivo con el primer método, siga estos pasos:
    *Figura: Cree una Live Copy desde la  [!DNL Experience Manager] interfaz.*
 
 1. Seleccione una carpeta de destino. Haga clic en **[!UICONTROL Siguiente]**. 
-1. Proporcione el título y el nombre. Los recursos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede optar por incluir o excluir elementos secundarios.
-1. Seleccione una configuración de despliegue. Haga clic en **[!UICONTROL Crear]**.
+1. Proporcione título y nombre. Los activos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede elegir incluir o excluir elementos secundarios.
+1. Seleccione una configuración de lanzamiento. Haga clic en **[!UICONTROL Crear]**.
 
-Para crear copias en vivo con el segundo método, siga estos pasos:
+Para crear Live Copies con el segundo método, siga estos pasos:
 
 1. En la interfaz [!DNL Experience Manager], en la esquina superior derecha, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]**.
 
@@ -86,53 +86,53 @@ Para crear copias en vivo con el segundo método, siga estos pasos:
 
    *Figura: Cree una Live Copy desde la  [!DNL Experience Manager] interfaz.*
 
-1. Seleccione el recurso o la carpeta de origen. Haga clic en **[!UICONTROL Siguiente]**. 
+1. Seleccione la carpeta o el recurso de origen. Haga clic en **[!UICONTROL Siguiente]**. 
 1. Seleccione la carpeta de destino. Haga clic en **[!UICONTROL Siguiente]**. 
-1. Proporcione el título y el nombre. Los recursos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede optar por incluir o excluir elementos secundarios.
-1. Seleccione una configuración de despliegue. Haga clic en **[!UICONTROL Crear]**.
+1. Proporcione título y nombre. Los activos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede elegir incluir o excluir elementos secundarios.
+1. Seleccione una configuración de lanzamiento. Haga clic en **[!UICONTROL Crear]**.
 
 >[!NOTE]
 >
 >Cuando se mueve un origen o una Live Copy, las relaciones se conservan. Cuando se elimina una Live Copy, se eliminan las relaciones.
 
-## Vista de varias propiedades y estados de la copia original y en directo {#properties}
+## Ver varias propiedades y estados del origen y la Live Copy {#properties}
 
-Puede realizar la vista de la información y los estados relacionados con MSM de la Live Copy, como la relación, la sincronización, los lanzamientos y mucho más, desde las distintas áreas de la interfaz de usuario [!DNL Experience Manager].
+Puede ver la información y los estados relacionados con MSM de Live Copy, como la relación, la sincronización, los lanzamientos, etc., desde las distintas áreas de la interfaz de usuario [!DNL Experience Manager].
 
 Los dos métodos siguientes funcionan para los recursos y las carpetas:
 
 * Seleccione un recurso de Live Copy y busque la información en su página Propiedades.
-* Seleccione la carpeta de origen y busque la información detallada de cada Live Copy desde la [!UICONTROL Consola de Live Copy].
+* Seleccione la carpeta de origen y busque la información detallada de cada Live Copy desde la [!UICONTROL Consola Live Copy].
 
 >[!TIP]
 >
->Para comprobar el estado de unas pocas copias en vivo independientes, utilice el primer método que se muestra en la página Propiedades. Para comprobar los estados de muchas Live Copies, utilice el segundo método, es decir, consulte la página **[!UICONTROL Estado de relación]**.
+>Para comprobar el estado de algunas Live Copies independientes, utilice el primer método para comprobar la página [!UICONTROL Properties]. Para comprobar los estados de muchas Live Copies, utilice el segundo método para comprobar la página **[!UICONTROL Estado de relación]**.
 
 ### Información y estado de una Live Copy {#statuslcasset}
 
-Para comprobar la información y los estados de un recurso de Live Copy o una carpeta, siga estos pasos.
+Para comprobar la información y los estados de un recurso de Live Copy o de una carpeta, siga estos pasos.
 
-1. Seleccione un recurso de Live Copy o una carpeta. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. Como alternativa, utilice el método abreviado de teclado `p`.
-1. Haga clic en **[!UICONTROL Live Copy]**. Puede comprobar la ruta del origen, el estado de la suspensión, el estado de la sincronización, la fecha de la última implementación y el usuario que realizó la última implementación.
+1. Seleccione un recurso de Live Copy o una carpeta. Haga clic en **[!UICONTROL Properties]** en la barra de herramientas. También puede utilizar el atajo de teclado `p`.
+1. Haga clic en **[!UICONTROL Live Copy]**. Puede comprobar la ruta del origen, el estado de la suspensión, el estado de la sincronización, la última fecha de lanzamiento y el usuario que realizó la última implementación.
 
-   ![La información y los estados de la Live Copy se muestran en una consola en Propiedades](assets/lcfolder_info_properties.png)
+   ![La información y los estados de Live Copy se muestran en una consola en Propiedades](assets/lcfolder_info_properties.png)
 
    *Figura: Información y estados de Live Copy.*
 
-1. Puede habilitar o deshabilitar si los recursos secundarios toman en préstamo la configuración de Live Copy.
+1. Puede habilitar o deshabilitar si los recursos secundarios piden prestado la configuración de Live Copy.
 
-1. Puede elegir la opción para que la Live Copy herede la configuración de implementación del elemento principal o cambie la configuración.
+1. Puede elegir la opción de la Live Copy para heredar la configuración de lanzamiento del elemento principal o cambiar la configuración.
 
-### Información y estados de todas las copias en vivo de una carpeta {#statuslcfolder}
+### Información y estados de todas las Live Copies de una carpeta {#status-lc-folder}
 
-[!DNL Experience Manager] proporciona una consola para comprobar las estatuas de todas las copias activas de una carpeta de origen. Esta consola muestra el estado de todos los recursos secundarios.
+[!DNL Experience Manager] proporciona una consola para comprobar los estados de todas las Live Copies de una carpeta de origen. Esta consola muestra el estado de todos los recursos secundarios.
 
-1. Seleccione una carpeta de origen. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. Como alternativa, utilice el método abreviado de teclado `p`.
+1. Seleccione una carpeta de origen. Haga clic en **[!UICONTROL Properties]** en la barra de herramientas. También puede utilizar el atajo de teclado `p`.
 1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**. Este tablero proporciona un estado de nivel superior de todos los recursos secundarios.
 
-   ![Estados de vista de copias en vivo en la consola de Live Copy del origen](assets/livecopy-statuses.png)
+   ![Ver estados de Live Copy en la consola de origen de Live Copy](assets/livecopy-statuses.png)
 
-   *Figura: Estados de vista de copias activas en  [!UICONTROL Live Copy ] Consoleof source.*
+   *Figura: Ver estados de Live Copies en la  [!UICONTROL consola ] Live Copy del origen.*
 
 1. Para ver la información detallada sobre cada recurso en la carpeta Live Copy, seleccione un recurso y haga clic en **[!UICONTROL Estado de relación]** en la barra de herramientas.
 
@@ -142,36 +142,36 @@ Para comprobar la información y los estados de un recurso de Live Copy o una ca
 
 >[!TIP]
 >
->Puede ver rápidamente los estados de las copias en vivo de otras carpetas sin tener que examinar demasiado. Simplemente cambie la carpeta en la lista emergente en la parte superior central de la interfaz **[!UICONTROL Live Copy Overview]**.
+>Puede ver rápidamente los estados de las Live Copies de otras carpetas sin tener que examinar demasiado. Cambie la carpeta desde la parte superior central de la interfaz **[!UICONTROL Información general de Live Copy]**.
 
 ### Acciones rápidas del carril Referencias para el origen {#refrailsource}
 
-Para un recurso o una carpeta de origen, puede ver la siguiente información y realizar las siguientes acciones directamente desde el carril Referencias:
+Para un recurso o carpeta de origen, puede ver la siguiente información y realizar las siguientes acciones directamente desde el carril Referencias:
 
-* Consulte las rutas de las copias en vivo.
-* Abra o revele una copia concreta en directo en la interfaz de usuario [!DNL Experience Manager].
+* Consulte las rutas de las Live Copies.
+* Abra o muestre una Live Copy específica en la interfaz de usuario [!DNL Experience Manager].
 * Sincronice las actualizaciones con una Live Copy específica.
-* Suspenda la relación o cambie la configuración de implementación para una Live Copy específica.
+* Suspenda la relación o cambie la configuración de lanzamiento para una Live Copy específica.
 * Acceda a la consola de información general de Live Copy.
 
-Seleccione el recurso o la carpeta de origen, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar la combinación de teclas `Alt + 4`. 
+Seleccione la carpeta o el recurso de origen, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar la combinación de teclas `Alt + 4`. 
 
-![Acciones e información disponibles en el carril Referencias del origen seleccionado](assets/referencerail_source.png)
+![Acciones e información disponible en el carril Referencias para el origen seleccionado](assets/referencerail_source.png)
 
-*Figura: Acciones e información disponibles en el carril Referencias del origen seleccionado.*
+*Figura: Acciones e información disponible en el carril Referencias para el origen seleccionado.*
 
-Para una Live Copy específica, haga clic en **[!UICONTROL Editar Live Copy]** para suspender la relación o cambiar la configuración de implementación.
+Para una Live Copy específica, haga clic en **[!UICONTROL Editar Live Copy]** para suspender la relación o cambiar la configuración de lanzamiento.
 
-![Para una Live Copy específica, se puede acceder a la opción de suspender la relación o cambiar la configuración de la implementación desde el carril Referencias cuando se selecciona el recurso de origen](assets/referencerail_editlc_options.png)
+![Para una Live Copy específica, se puede acceder a la opción de suspender la relación o cambiar la configuración de lanzamiento desde el carril Referencias cuando se selecciona el recurso de origen](assets/referencerail_editlc_options.png)
 
-*Figura: Suspenda la relación o cambie la configuración de implementación de una Live Copy específica.*
+*Figura: Suspenda la relación o cambie la configuración de lanzamiento de una Live Copy específica.*
 
-### Acciones rápidas del carril Referencias para la Live Copy {#refraillc}
+### Acciones rápidas del carril Referencias para la Live Copy {#ref-rail-lc}
 
 Para una carpeta o un recurso de Live Copy, puede ver la siguiente información y realizar las siguientes acciones directamente desde el carril Referencias:
 
 * Consulte la ruta de su origen.
-* Abra o revele una copia concreta en directo en la interfaz de usuario [!DNL Experience Manager].
+* Abra o muestre una Live Copy específica en la interfaz de usuario [!DNL Experience Manager].
 * Despliegue las actualizaciones.
 
 Seleccione una carpeta o un recurso de Live Copy, abra el carril izquierdo y haga clic en **[!UICONTROL Referencias]**. También puede seleccionar un recurso o una carpeta y utilizar la combinación de teclas `Alt + 4`. 
@@ -180,47 +180,47 @@ Seleccione una carpeta o un recurso de Live Copy, abra el carril izquierdo y hag
 
 *Figura: Acciones disponibles en el carril Referencias para la Live Copy seleccionada.*
 
-## Propagar modificaciones de origen a copias en vivo {#rolloutsync}
+## Propagación de modificaciones del origen a las Live Copies {#rolloutsync}
 
-Una vez modificado un origen, los cambios se pueden propagar a las copias en vivo mediante una acción de sincronización o de implementación. Para comprender la diferencia entre ambas acciones, consulte [glosario](#glossary).
+Una vez modificado el origen, los cambios se pueden propagar a las Live Copies mediante una acción de sincronización o de despliegue. Para comprender la diferencia entre ambas acciones, consulte [glosario](#glossary).
 
-### Acción de despliegue {#rollout}
+### Desplegar acción {#rollout}
 
-Puede iniciar una acción de despliegue desde el recurso de origen y actualizar todas o algunas copias activas seleccionadas.
+Puede iniciar una acción de despliegue desde el recurso de origen y actualizar todas o algunas Live Copies seleccionadas.
 
-1. Seleccione un recurso de Live Copy o una carpeta. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. Como alternativa, utilice el método abreviado de teclado `p`.
+1. Seleccione un recurso de Live Copy o una carpeta. Haga clic en **[!UICONTROL Properties]** en la barra de herramientas. También puede utilizar el atajo de teclado `p`.
 1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Haga clic en **[!UICONTROL Despliegue]** en la barra de herramientas de la parte superior.
-1. Seleccione las copias activas que desee actualizar. Haga clic en **[!UICONTROL Despliegue]**. Para desplegar las actualizaciones realizadas en los recursos secundarios, seleccione **[!UICONTROL Origen de despliegue y todos los elementos secundarios]**.
+1. Seleccione las Live Copies que desee actualizar. Haga clic en **[!UICONTROL Despliegue]**. Para desplegar las actualizaciones realizadas en los recursos secundarios, seleccione **[!UICONTROL Origen de lanzamiento y todos los elementos secundarios]**.
 
-   ![Despliegue las modificaciones del origen en unas pocas o todas las Live Copies](assets/livecopy_rollout_page.png)
+   ![Implementar las modificaciones del origen en algunas o todas las Live Copies](assets/livecopy_rollout_page.png)
 
-   *Figura: Despliegue las modificaciones del origen en unas pocas o todas las copias en vivo.*
+   *Figura: Lleve a cabo las modificaciones del origen en algunas o en todas las Live Copies.*
 
 >[!NOTE]
 >
->Las modificaciones realizadas en un recurso de origen solo se implementan en las copias en vivo directamente relacionadas. Si una Live Copy se deriva de otra Live Copy, las modificaciones no se implementan en la Live Copy derivada.
+>Las modificaciones realizadas en un recurso de origen solo se implementan en las Live Copies directamente relacionadas. Si una Live Copy se deriva de otra Live Copy, las modificaciones no se implementan en la Live Copy derivada.
 
-Como alternativa, puede iniciar una acción de despliegue desde el carril Referencias después de seleccionar una Live Copy específica. Para obtener más información, consulte [Acciones rápidas del carril Referencias para la Live Copy](#refraillc). En este método de implementación, solo se actualizan la Live Copy seleccionada y, opcionalmente, sus elementos secundarios.
+Como alternativa, puede iniciar una acción de despliegue desde el carril Referencias después de seleccionar una Live Copy específica. Para obtener más información, consulte [Acciones rápidas del carril Referencias para Live Copy](#ref-rail-lc). En este método de implementación, solo se actualizan la Live Copy seleccionada y, opcionalmente, sus elementos secundarios.
 
-![Despliegue las modificaciones del origen en la Live Copy seleccionada](assets/livecopy_rollout_dialog.png)
+![Implementar las modificaciones del origen en la Live Copy seleccionada](assets/livecopy_rollout_dialog.png)
 
 *Figura: Despliegue las modificaciones del origen en la Live Copy seleccionada.*
 
-### Acerca de la acción de sincronización {#aboutsync}
+### Acerca de la acción de sincronización {#about-sync}
 
-Una acción de sincronización extrae las modificaciones de un origen únicamente a la Live Copy seleccionada. La acción de sincronización respeta y mantiene las modificaciones locales realizadas tras cancelar la herencia. Las modificaciones locales no se sobrescriben y la herencia cancelada no se restablece. Puede iniciar una acción de sincronización de tres formas.
+Una acción de sincronización extrae las modificaciones de un origen solo a la Live Copy seleccionada. La acción de sincronización respeta y mantiene las modificaciones locales realizadas después de cancelar la herencia. Las modificaciones locales no se sobrescriben y la herencia cancelada no se restablece. Puede iniciar una acción de sincronización de tres formas.
 
-| Dónde está en la interfaz [!DNL Experience Manager] | Cuándo y por qué usar | Cómo usar |
+| Dónde en la interfaz [!DNL Experience Manager] | Cuándo y por qué utilizar | Cómo usar |
 |---|---|---|
-|  Barra de referencia | Sincronice rápidamente cuando ya haya seleccionado el origen. | Consulte [Acciones rápidas del carril Referencias para el origen](#refrailsource) |
-| Barra de herramientas de la página [!UICONTROL Propiedades] | Inicie una sincronización cuando ya tenga abiertas las propiedades de Live Copy. | Consulte [Sincronizar una Live Copy](#synclc) |
-| [!UICONTROL Live Copy ] Overviewconsole | Sincronice rápidamente varios recursos (no necesariamente todos) cuando la carpeta de origen está seleccionada o cuando la consola [!UICONTROL Live Copy Overview] ya está abierta. La acción de sincronización se inicia para un recurso a la vez, pero es una forma más rápida de sincronizar varios recursos de una sola vez. | Consulte [Acciones en muchos recursos de una carpeta de Live Copy](#bulkactions) |
+|  Carril de referencia | Sincronice rápidamente cuando ya tenga seleccionado el origen. | Consulte [Acciones rápidas del carril Referencias para el origen](#refrailsource) |
+| Barra de herramientas de la página [!UICONTROL Propiedades] | Inicie una sincronización cuando ya tenga abiertas las propiedades de Live Copy. | Consulte [Sincronizar una Live Copy](#sync-lc) |
+| [!UICONTROL Live Copy ] Overviewconsole | Sincronice rápidamente varios recursos (no necesariamente todos) cuando la carpeta de origen esté seleccionada o la consola [!UICONTROL Información general de Live Copy] ya esté abierta. La acción de sincronización se inicia para un recurso a la vez, pero es una forma más rápida de sincronizar varios recursos de una sola vez. | Consulte [Acciones sobre muchos recursos en una carpeta de Live Copy](#bulk-actions) |
 
-### Sincronizar una Live Copy {#synclc}
+### Sincronizar una Live Copy {#sync-lc}
 
 Para iniciar una acción de sincronización, abra la página **[!UICONTROL Propiedades]** de una Live Copy, haga clic en **[!UICONTROL Live Copy]** y, a continuación, seleccione la acción que desee en la barra de herramientas.
 
-Para ver los estados y la información relacionados con una acción de sincronización, consulte [Información y estado de una Live Copy](#statuslcasset) e [Información y estados de todas las Live Copy de una carpeta](#statuslcfolder).
+Para ver los estados y la información relacionados con una acción de sincronización, consulte [Información y estado de una Live Copy](#statuslcasset) e [Información y estados de todas las Live Copy de una carpeta](#status-lc-folder).
 
 ![La acción Sincronizar extrae los cambios realizados en el origen](assets/livecopy_sync.png)
 
@@ -228,105 +228,107 @@ Para ver los estados y la información relacionados con una acción de sincroniz
 
 >[!NOTE]
 >
->Si la relación está suspendida, la acción de sincronización no está disponible en la barra de herramientas. Aunque la acción de sincronización está disponible en el carril Referencias, las modificaciones no se propagan incluso si la implementación se ha realizado correctamente.
+>Si la relación está suspendida, la acción de sincronización no está disponible en la barra de herramientas. Mientras que la acción de sincronización está disponible en el carril Referencias, las modificaciones no se propagan aunque la implementación se haya realizado correctamente.
 
-## Suspender y reanudar la relación {#suspendresume}
+## Suspender y reanudar la relación {#suspend-resume}
 
-Puede suspender temporalmente la relación para evitar que una Live Copy reciba las modificaciones realizadas en el recurso o la carpeta de origen. La relación también se puede reanudar para la Live Copy al inicio que reciba las modificaciones del origen.
+Puede suspender temporalmente la relación para evitar que una Live Copy reciba las modificaciones realizadas en la carpeta o el recurso de origen. La relación también se puede reanudar para que Live Copy empiece a recibir las modificaciones del origen.
 
 Para suspender o reanudar, abra la página **[!UICONTROL Propiedades]** de una Live Copy, haga clic en **[!UICONTROL Live Copy]** y seleccione la acción que desee en la barra de herramientas.
 
-También puede suspender o reanudar rápidamente las relaciones de varios recursos en una carpeta de Live Copy desde la consola **[!UICONTROL Información general de Live Copy]**. Consulte [Realizar acciones en varios recursos de las carpetas de Live Copy](#bulkactions).
+También puede suspender o reanudar rápidamente las relaciones de varios recursos en una carpeta de Live Copy desde la consola **[!UICONTROL Información general de Live Copy]**. Consulte [Realizar acciones en varios recursos de las carpetas de Live Copy](#bulk-actions).
 
-## Realizar modificaciones locales en una Live Copy {#localmods}
+## Realizar modificaciones locales en una Live Copy {#local-mods}
 
-Una Live Copy es una réplica del origen original cuando se crea. Los valores de metadatos de una Live Copy se heredan del origen. Los campos de metadatos mantienen la herencia de forma individual con los campos respectivos del recurso de origen.
+Una Live Copy es una réplica del origen original cuando se crea. Los valores de metadatos de una Live Copy se heredan del origen. Los campos de metadatos mantienen individualmente la herencia con los respectivos campos del recurso de origen.
 
-Sin embargo, tiene la flexibilidad de realizar modificaciones locales en una Live Copy para cambiar algunas propiedades seleccionadas. Para realizar modificaciones locales, cancele la herencia de la propiedad deseada. Cuando se cancela la herencia de uno o varios campos de metadatos, se conserva la relación activa del recurso y la herencia de los demás campos de metadatos. Cualquier sincronización o implementación no sobrescribe las modificaciones locales. Para ello, abra la página **[!UICONTROL Propiedades]** de un recurso de Live Copy y haga clic en la opción **[!UICONTROL cancelar herencia]** junto a un campo de metadatos.
+Sin embargo, tiene la flexibilidad de realizar modificaciones locales en una Live Copy para cambiar algunas propiedades seleccionadas. Para realizar modificaciones locales, cancele la herencia de la propiedad deseada. Cuando se cancela la herencia de uno o varios campos de metadatos, se conserva la relación activa del recurso y la herencia de los demás campos de metadatos. Cualquier sincronización o implementación no sobrescribe las modificaciones locales. Para ello, abra la página **[!UICONTROL Properties]** de un recurso de Live Copy y haga clic en la opción **[!UICONTROL cancel herencia]** situada junto a un campo de metadatos.
 
-Puede deshacer todas las modificaciones locales y revertir el recurso al estado de su origen. La acción Restablecer anula de forma irrevocable e instantánea todas las modificaciones locales y restablece la herencia en todos los campos de metadatos. Para revertir, en la página **[!UICONTROL Propiedades]** de un recurso de Live Copy, haga clic en **[!UICONTROL Restablecer]** desde la barra de herramientas.
+Puede deshacer todas las modificaciones locales y revertir el recurso al estado de su origen. La acción Restablecer anula de forma irrevocable e instantánea todas las modificaciones locales y restablece la herencia en todos los campos de metadatos. Para revertir, en la página **[!UICONTROL Properties]** de un recurso de Live Copy, haga clic en **[!UICONTROL Reset]** en la barra de herramientas.
 
 ![La acción Restablecer sobrescribe las ediciones locales y trae la Live Copy en parte con su origen.](assets/livecopy_reset.png)
 
 *Figura: La acción Restablecer sobrescribe las ediciones locales y trae la Live Copy en parte con su origen.*
 
-## Eliminar relación activa {#detach}
+## Quitar relación activa {#detach}
 
-Puede eliminar completamente la relación entre un origen y una Live Copy mediante la acción Desasociar. La Live Copy se convierte en un recurso o una carpeta independiente después de desconectarla. Se muestra como un nuevo recurso en la interfaz [!DNL Experience Manager], inmediatamente después de la desvinculación. Para separar una Live Copy de su origen, siga estos pasos.
+Puede eliminar completamente la relación entre un origen y una Live Copy mediante la acción Separar. La Live Copy se convierte en un recurso independiente o en una carpeta después de separarse. Se muestra como un nuevo recurso en la interfaz [!DNL Experience Manager], inmediatamente después de la desconexión. Para separar una Live Copy de su origen, siga estos pasos.
 
-1. Seleccione una carpeta o un recurso de Live Copy. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. Como alternativa, utilice el método abreviado de teclado `p`.
+1. Seleccione una carpeta o un recurso de Live Copy. Haga clic en **[!UICONTROL Properties]** en la barra de herramientas. También puede utilizar el atajo de teclado `p`.
 
-1. Haga clic en **[!UICONTROL Live Copy]**. Haga clic en **[!UICONTROL Separar]** en la barra de herramientas. Haga clic en **[!UICONTROL Separar]** del cuadro de diálogo presentado.
+1. Haga clic en **[!UICONTROL Live Copy]**. Haga clic en **[!UICONTROL Desasociar]** en la barra de herramientas. Haga clic en **[!UICONTROL Desasociar]** del cuadro de diálogo presentado.
 
-   ![La acción Separar elimina completamente la relación entre la copia original y la Live Copy](assets/livecopy_detach.png)
+   ![La acción Separar elimina completamente la relación entre el origen y la Live Copy](assets/livecopy_detach.png)
 
-   *Figura: La acción Separar elimina completamente la relación entre la copia original y la Live Copy.*
+   *Figura: La acción Separar elimina completamente la relación entre el origen y la Live Copy.*
 
    >[!CAUTION]
    >
-   >La relación se elimina inmediatamente cuando hace clic en **[!UICONTROL Desasociar]** del cuadro de diálogo. No se puede deshacer haciendo clic en **[!UICONTROL Cancelar]** en la página Propiedades.
+   >La relación se elimina inmediatamente al hacer clic en **[!UICONTROL Desasociar]** del cuadro de diálogo. No puede deshacer la acción haciendo clic en **[!UICONTROL Cancelar]** en la página Propiedades.
 
-Como alternativa, puede separar rápidamente varios recursos de una carpeta de Live Copy desde la consola **[!UICONTROL Live Copy Overview]**. Consulte [Realizar acciones en varios recursos de las carpetas de Live Copy](#bulkactions).
+Como alternativa, puede separar rápidamente varios recursos en una carpeta de Live Copy desde la consola **[!UICONTROL Información general de Live Copy]**. Consulte [Realizar acciones en varios recursos de las carpetas de Live Copy](#bulk-actions).
 
-## Realizar acciones en muchos recursos de una carpeta de Live Copy {#bulkactions}
+## Acciones masivas en una carpeta de Live Copy {#bulk-actions}
 
-Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada recurso puede resultar tedioso. Puede iniciar rápidamente las acciones básicas en muchos recursos desde [!UICONTROL Live Copy Console]. Los métodos anteriores siguen funcionando para activos individuales.
+Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada recurso puede ser tedioso. Puede iniciar rápidamente las acciones básicas en muchos recursos desde [!UICONTROL Live Copy Console]. Los métodos anteriores siguen funcionando con recursos individuales.
 
-1. Seleccione una carpeta de origen. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas. Como alternativa, utilice el método abreviado de teclado `p`.
+1. Seleccione una carpeta de origen. Haga clic en **[!UICONTROL Properties]** en la barra de herramientas. También puede utilizar el atajo de teclado `p`.
 1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Para abrir la consola, haga clic en **[!UICONTROL Descripción general de Live Copy]**.
-1. En este tablero, seleccione un recurso de Live Copy de una carpeta de Live Copy. Haga clic en las acciones que desee en la barra de herramientas. Las acciones disponibles son **[!UICONTROL Sincronizar]**, **[!UICONTROL Restablecer]**, **[!UICONTROL Suspender]** y **[!UICONTROL Desconectar]**. Puede iniciar rápidamente estas acciones en cualquier recurso en cualquier número de carpetas de Live Copy que estén en una relación activa con la carpeta de origen seleccionada.
+1. En este tablero, seleccione un recurso de Live Copy de una carpeta de Live Copy. Haga clic en las acciones que desee en la barra de herramientas. Las acciones disponibles son **[!UICONTROL Sincronizar]**, **[!UICONTROL Restablecer]**, **[!UICONTROL Suspender]** y **[!UICONTROL Desconectar]**. Puede iniciar rápidamente estas acciones en cualquier recurso en cualquier número de carpetas de Live Copy que estén en relación activa con la carpeta de origen seleccionada.
 
    ![Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola Información general de Live Copy](assets/livecopyconsole_update_many_assets.png)
 
-   *Figura: Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola  [!UICONTROL Live Copy ] Overviewconsole.*
+   *Figura: Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola  [!UICONTROL Información general de Live Copy ] .*
 
-## Extender MSM para [!DNL Assets] {#extendapi}
+## Ampliar MSM para [!DNL Assets] {#extend-api}
 
-[!DNL Experience Manager] le permite ampliar la funcionalidad mediante las API de Java de MSM. Para [!DNL Assets], la extensión funciona igual que con MSM para [!DNL Sites]. Para obtener más información, consulte [Ampliación del MSM](/help/sites-developing/extending-msm.md) y lo siguiente para obtener información sobre tareas específicas:
+[!DNL Experience Manager] le permite ampliar la funcionalidad mediante las API de Java de MSM. Para [!DNL Assets], la extensión funciona igual que con MSM para [!DNL Sites]. Para obtener más información, consulte [Ampliación de MSM](/help/sites-developing/extending-msm.md) y lo siguiente para obtener información sobre tareas específicas:
 
 * [Información general sobre las API](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-* [Crear una nueva acción de sincronización](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [Crear una nueva configuración de implementación](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
-* [Crear y utilizar una clase LiveActionFactory sencilla](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
+* [Crear una acción de sincronización](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
+* [Crear una configuración de lanzamiento](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
+* [Cree y utilice una sencilla clase LiveActionFactory](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
 
 >[!NOTE]
 >
->* El modelo en MSM para [!DNL Sites] se denomina fuente Live Copy en MSM para [!DNL Assets].
->* La eliminación del paso de capítulos en el asistente para crear sitios no se admite en MSM para [!DNL Assets].
+>* El modelo en MSM para [!DNL Sites] se llama Origen de Live Copy en MSM para [!DNL Assets].
+>* MSM para [!DNL Assets] no admite la eliminación del paso capítulos en el asistente de creación de sitios.
 >* La configuración de los bloqueos MSM, en las propiedades de página (IU táctil), no es compatible con MSM para [!DNL Assets].
 
 
-## Impacto de las tareas de administración de activos en las copias en vivo {#manageassets}
+## Impacto de las tareas de administración de recursos en Live Copies {#manage-assets}
 
-Las copias en vivo y los orígenes son recursos o carpetas que se pueden administrar, en cierta medida, como recursos digitales. Algunas tareas de administración de activos en [!DNL Experience Manager] tienen un impacto específico en las copias en vivo.
+Las Live Copies y los orígenes son recursos o carpetas que se pueden administrar, en cierta medida, como recursos digitales. Algunas tareas de administración de recursos en [!DNL Experience Manager] tienen un impacto específico en las Live Copies.
 
 * Al copiar una Live Copy, se crea un recurso de Live Copy con el mismo origen que la primera Live Copy.
-* Al mover un origen o su Live Copy, se mantiene la relación activa.
+* Al mover un origen o su Live Copy, se conserva la relación activa.
 * La acción Editar no funciona para los recursos de Live Copy. Si la fuente de una Live Copy es una Live Copy en sí misma, la acción de edición no funciona para ella.
 * La acción de desprotección no está disponible para los recursos de Live Copy.
-* Para la carpeta de origen, está disponible la opción de crear tareas de revisión.
-* Al ver el listado de recursos en la vista de columnas y vistas de listas, un recurso de Live Copy o una carpeta muestran la &quot;Live Copy&quot; en su contra. Esto le ayuda a identificar fácilmente las copias en vivo en una carpeta.
+* Para la carpeta de origen, está disponible la opción para crear tareas de revisión.
+* Al ver el listado de recursos en la vista de lista y la vista de columna, un recurso de Live Copy o una carpeta muestra &quot;Live Copy&quot; en su contra. Ayuda a identificar fácilmente las Live Copies en una carpeta.
 
 ## Comparar MSM para [!DNL Assets] y [!DNL Sites] {#comparison}
 
-En más escenarios, MSM para [!DNL Assets] coincide con el comportamiento de la funcionalidad MSM para sitios. Algunas de las diferencias clave a tener en cuenta son:
+En más escenarios, MSM para [!DNL Assets] coincide con el comportamiento de la funcionalidad de MSM para sitios . Algunas diferencias clave a tener en cuenta son:
 
-* El modelo en MSM para [!DNL Sites] se denomina fuente Live Copy en MSM para [!DNL Assets].
-* En Sitios, puede comparar un modelo y su Live Copy, pero en [!DNL Assets] no es posible comparar un origen con su Live Copy.
+* El modelo en MSM para [!DNL Sites] se llama Origen de Live Copy en MSM para [!DNL Assets].
+* En Sites, puede comparar un modelo y su Live Copy, pero en [!DNL Assets] no es posible comparar una fuente con su Live Copy.
 * No puede editar una Live Copy en [!DNL Assets].
-* Los sitios generalmente tienen hijos, pero [!DNL Assets] no. La opción para incluir o excluir elementos secundarios no está presente al crear copias en vivo de recursos individuales.
-* La eliminación del paso de capítulos en el asistente para crear sitios no se admite en MSM para [!DNL Assets].
+* Los sitios suelen tener elementos secundarios, pero [!DNL Assets] no. La opción para incluir o excluir elementos secundarios no está presente al crear copias activas de recursos individuales.
+* MSM para [!DNL Assets] no admite la eliminación del paso capítulos en el asistente de creación de sitios.
 * La configuración de bloqueos MSM en propiedades de página (IU táctil) no es compatible con MSM para [!DNL Assets].
-* Para MSM para [!DNL Assets], utilice sólo la **[!UICONTROL configuración de implementación estándar]**. Las demás configuraciones de implementación no están disponibles para MSM para [!DNL Assets].
+* Para MSM para [!DNL Assets], utilice solamente la **[!UICONTROL Configuración de lanzamiento estándar]**. Las demás configuraciones de lanzamiento no están disponibles para MSM para [!DNL Assets].
 
-## Prácticas recomendadas {#bestpractices}
+## Prácticas recomendadas {#best-practices}
 
 Algunas prácticas recomendadas para MSM son:
 
-* Planifique las relaciones principales-secundarias de los recursos y los flujos de contenido antes de iniciar la implementación.
+* Planifique las relaciones padre-hijo de los recursos y los flujos de contenido antes de iniciar la implementación.
 
 ## Limitaciones y problemas conocidos de MSM para [!DNL Assets] {#limitations}
 
 A continuación se muestra una limitación de MSM para [!DNL Assets].
 
-* Los fragmentos de contenido (CF) no son compatibles con el caso de uso. Al intentar crear sus copias en vivo, los CF se copian como están sin ninguna relación. Los CF copiados son una instantánea a tiempo y no se actualizan cuando se actualizan los CF originales.
+* Los fragmentos de contenido (CF) no son compatibles con el caso de uso. Al intentar crear sus Live Copies, los CF se copian tal cual sin ninguna relación. Los CF copiados son una instantánea a tiempo y no se actualizan cuando se actualizan los CF originales.
+
+* MSM no funciona con la reescritura de metadatos habilitada. Al reescribir, la herencia se rompe.
