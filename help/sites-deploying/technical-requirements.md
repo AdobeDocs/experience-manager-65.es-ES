@@ -11,9 +11,9 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d62249ee2e2d40f2a437c1cb7f2a80f3f8e67efe
+source-git-commit: 06cb3a7cdd9b6de00aff67c66327abadce3e0920
 workflow-type: tm+mt
-source-wordcount: '3207'
+source-wordcount: '3205'
 ht-degree: 1%
 
 ---
@@ -512,13 +512,12 @@ Para Windows x86:
 
 ### Requisitos de AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server o Microsoft Windows 10
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server o Microsoft® Windows® 10
 * Procesador de 1 GHz o más rápido con soporte para PAE, NX y SSE2.
 * 1 GB de RAM para 32 bits o 2 GB de RAM para SO de 64 bits
 * 16 GB de espacio en disco para 32 o 20 GB de espacio en disco para SO de 64 bits
 * Memoria gráfica: 128 MB de GPU (se recomiendan 256 MB)
 * 2,35 GB de espacio disponible en disco duro
-* Unidad de DVD-ROM
 * Resolución de pantalla de 1024 X 768 píxeles o superior
 * Aceleración de hardware de vídeo (opcional)
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC.
