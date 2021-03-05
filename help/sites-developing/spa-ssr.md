@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a2fa9a56de8882731e8193696f572a74c98c6b89
+source-git-commit: 41e30a668c8c02f2c43e509ed708c4b9fa39a269
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Sin embargo, esto puede provocar tiempos de carga iniciales más largos, especia
 
 ## Cuándo se utiliza SSR {#when-to-use-ssr}
 
-La SSR no es necesaria en todos los proyectos. Aunque AEM es totalmente compatible con JS SSR para SPA, Adobe no recomienda implementarlo sistemáticamente para cada proyecto.
+La SSR no es necesaria en todos los proyectos. Aunque AEM admite totalmente JS SSR para SPA, Adobe no recomienda implementarlo sistemáticamente para cada proyecto.
 
 Al decidir implementar SSR, primero debe estimar qué complejidad adicional, esfuerzo y costo de agregar SSR representa de manera realista para el proyecto, incluido el mantenimiento a largo plazo. Una arquitectura SSR solo debe elegirse cuando el valor añadido exceda claramente los costes estimados.
 
