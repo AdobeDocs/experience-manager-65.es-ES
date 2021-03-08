@@ -11,21 +11,21 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: b9c77b9b50ae7f18198baddf82dffcd8de4f30be
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 85%
+source-wordcount: '1399'
+ht-degree: 84%
 
 ---
 
 
 # Proyectos{#projects}
 
-Los proyectos le permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de los proyectos. Los tipos de recursos que puede asociar con un proyecto se mencionan en AEM como Mosaicos. Los mosaicos pueden incluir información sobre el proyecto y el equipo, recursos, flujos de trabajo y otros tipos de información, como se describe en detalle en [Mosaico del proyecto.](#project-tiles)
+Los proyectos le permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de los proyectos. Los tipos de recursos que puede asociar con un proyecto se mencionan en AEM como Mosaicos. Los mosaicos pueden incluir información sobre el proyecto y el equipo, recursos, flujos de trabajo y otros tipos de información, tal como se describe detalladamente en [Mosaicos del proyecto.](#project-tiles)
 
 >[!CAUTION]
 >
->Para que los usuarios de los proyectos puedan ver otros usuarios o grupos mientras utilizan la funcionalidad Proyectos, como crear proyectos, crear tareas/flujos de trabajo, ver y administrar el equipo, esos usuarios necesitan tener acceso de lectura en **/home/users** y **/home/groups**. La manera más fácil de implementar esto es darle al grupo **usuarios de proyectos** acceso de lectura a **/inicio/usuarios** y**/inicio/grupos**.
+>Para que los usuarios de los proyectos puedan ver otros usuarios/grupos mientras utilizan la funcionalidad Proyectos , como crear proyectos, crear tareas/flujos de trabajo, ver y administrar el equipo, dichos usuarios deben tener acceso de lectura en **/home/users** y **/home/groups**. La forma más sencilla de implementar esto es dar al grupo **projects-users** acceso de lectura a **/home/users** y**/home/groups**.
 
 Como usuario, puede hacer lo siguiente:
 
@@ -53,7 +53,7 @@ La consola Proyectos permite acceder a los proyectos en AEM y administrarlos.
 * La opción **Alternar proyectos activos** permite cambiar entre todos los proyectos y solamente los que están activos.
 * La opción **Mostrar vista de estadísticas** permite ver estadísticas del proyecto relacionadas con las tareas completadas.
 
-## Mosaicos del proyecto {#project-tiles}
+## Mosaicos del proyecto  {#project-tiles}
 
 Con la consola Proyectos, se asocian distintos tipos de información a los proyectos. Estos se llaman **Mosaicos**. En esta sección se describe cada uno de los mosaicos y el tipo de información que contienen.
 
@@ -126,7 +126,7 @@ En el mosaico Trabajo de traducción puede iniciar una traducción y también pu
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-Haga clic en los puntos suspensivos en la parte inferior de la tarjeta **Trabajo de traducción** para vista de los recursos en el flujo de trabajo de traducción. En la lista de trabajos de traducción también se muestran las entradas para los metadatos y las etiquetas de los recursos. Estas entradas indican que los metadatos y las etiquetas de los recursos también se traducen.
+Haga clic en los puntos suspensivos en la parte inferior de la tarjeta **Translation Job** para ver los recursos en el flujo de trabajo de traducción. En la lista de trabajos de traducción también se muestran las entradas para los metadatos y las etiquetas de los recursos. Estas entradas indican que los metadatos y las etiquetas de los recursos también se traducen.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -174,7 +174,7 @@ El mosaico Lanzamientos muestra los lanzamientos que se hayan solicitado con un 
 
 ### Tareas {#tasks}
 
-En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Las tareas se tratan en detalle en [Uso de Tareas](/help/sites-authoring/task-content.md).
+En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Las tareas se tratan en detalle en [Trabajo con Tareas](/help/sites-authoring/task-content.md).
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -182,9 +182,9 @@ En Tareas puede supervisar el estado de cualquier tarea relacionada con el proye
 
 En AEM se incluyen tres plantillas predefinidas de fábrica:
 
-* Un proyecto simple: muestra de referencia para cualquier proyecto que no encaje en otras categorías (un captador global). Incluye tres funciones básicas (propietarios, editores y observadores) y cuatro flujos de trabajo (Aprobación del borrador, Solicitud de lanzamiento, Solicitud de página de aterrizaje y Solicitud de correo electrónico).
-* Un proyecto de medios: un proyecto de muestra de referencia para actividades relacionadas con los medios. Incluye varias funciones relacionadas con contenido multimedia del proyecto (fotógrafos, editores, redactores, diseñadores, propietarios y observadores). También incluye dos flujos de trabajo relacionados con el contenido multimedia: Solicitar copia (para solicitar y revisar texto) y Fotografía del producto (para administrar la fotografía relacionada con el producto)
-* [Proyecto](/help/sites-authoring/managing-product-information.md)  de sesión fotográfica del producto: muestra de referencia para administrar la fotografía del producto relacionada con el comercio electrónico. Incluye funciones para fotógrafos, editores, retocadores, propietarios, directores creativos, comerciales de redes sociales, directores de marketing, revisores y observadores.
+* Un proyecto simple: una muestra de referencia para cualquier proyecto que no se ajuste a otras categorías (un captador global). Incluye tres funciones básicas (propietarios, editores y observadores) y cuatro flujos de trabajo (Aprobación del borrador, Solicitud de lanzamiento, Solicitud de página de aterrizaje y Solicitud de correo electrónico).
+* Un proyecto de medios : un proyecto de muestra de referencia para actividades relacionadas con los medios. Incluye varias funciones relacionadas con contenido multimedia del proyecto (fotógrafos, editores, redactores, diseñadores, propietarios y observadores). También incluye dos flujos de trabajo relacionados con el contenido multimedia: Solicitar copia (para solicitar y revisar texto) y Sesión fotográfica del producto (para administrar la fotografía relacionada con el producto)
+* [Proyecto Sesión fotográfica del producto](/help/sites-authoring/managing-product-information.md) : una muestra de referencia para administrar la fotografía del producto relacionada con el comercio electrónico. Incluye funciones para fotógrafos, editores, retocadores, propietarios, directores creativos, comerciales de redes sociales, directores de marketing, revisores y observadores.
 * [Proyecto de traducción](/help/sites-administering/translation.md): una muestra de referencia para la administración de las actividades relacionadas con la traducción. Incluye tres funciones básicas (propietarios, editores y observadores). Incluye dos flujos de trabajo a los que se accede en la interfaz de usuario Flujos de trabajo.
 
 En función de la plantilla seleccionada, dispone de distintas opciones en relación con las funciones de usuario y los flujos de trabajo.
@@ -203,7 +203,7 @@ Todos los proyectos admiten las siguientes funciones predeterminadas para que pu
   <tr>
    <td><p><strong>Función</strong></p> </td>
    <td><p><strong>Descripción</strong></p> </td>
-   <td><p><strong>Permisos   </strong></p> </td>
+   <td><p><strong>Permisos</strong></p> </td>
    <td><p><strong>Pertenencia a grupos</strong></p> </td>
   </tr>
   <tr>
@@ -234,7 +234,7 @@ Todos los proyectos admiten las siguientes funciones predeterminadas para que pu
    <td>
     <ul>
      <li>Grupo de usuarios DAM (para poder crear un proyecto)</li>
-     <li>grupo de administradores de proyectos (para poder mover recursos)</li>
+     <li>grupo de administradores de proyectos (para poder crear un proyecto y mover recursos)</li>
     </ul> </td>
   </tr>
  </tbody>
