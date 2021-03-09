@@ -3,9 +3,9 @@ title: Administre metadatos de sus recursos digitales en [!DNL Adobe Experience 
 description: Obtenga información sobre los tipos de metadatos y cómo [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] permite organizar y procesar automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4ca77c7de6113127b123645a1955aaa70a91c1f3
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '2384'
+source-wordcount: '2388'
 ht-degree: 11%
 
 ---
@@ -78,11 +78,11 @@ Para personalizar la página de propiedades de metadatos, como agregar, modifica
 1. Seleccione los recursos para los que desea editar propiedades comunes.
 1. En la barra de herramientas, haga clic en **[!UICONTROL Propiedades]** para abrir la página de propiedades de los recursos seleccionados.
 1. Modifique las propiedades de metadatos de los recursos seleccionados en las distintas pestañas.
-1. Para ver el editor de metadatos de un recurso específico, anule la selección de los recursos restantes de la lista. Los campos del editor de metadatos se rellenan con los metadatos del recurso en cuestión.
+1. Para ver el editor de metadatos de un recurso específico, cancele la selección de los recursos restantes de la lista. Los campos del editor de metadatos se rellenan con los metadatos del recurso en cuestión.
 
    >[!NOTE]
    >
-   >* En la página de propiedades, puede quitar recursos de la lista de recursos anulando la selección. La lista de recursos tiene todos los recursos seleccionados de forma predeterminada. Los metadatos de los recursos que elimine de la lista no se actualizarán.
+   >* En la página de propiedades, puede eliminar recursos de la lista de recursos cancelando la selección. La lista de recursos tiene todos los recursos seleccionados de forma predeterminada. Los metadatos de los recursos que elimine de la lista no se actualizarán.
    >* En la parte superior de la lista de activos, active la casilla de verificación situada cerca de **[!UICONTROL Título]** para alternar entre seleccionar los recursos y borrar la lista.
 
 
