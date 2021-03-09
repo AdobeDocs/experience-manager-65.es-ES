@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
-source-git-commit: 7a96ff5cdd187291efe108d1171782bcbecfaeb0
+source-git-commit: 054b49fb8aacb9e267ed23552d788f72123ed3b3
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 3%
@@ -100,7 +100,7 @@ Se trata de un predicado de solo filtrado y no puede aprovechar un índice de b�
 
 * **operation**
 
-   &quot;`equals`&quot; para la coincidencia exacta, &quot;`!=`&quot; para la comparación de desigualdad, &quot;`greater`&quot; para la propiedad1 mayor que la propiedad2, &quot;`>=`&quot; para la propiedad1 mayor o igual que la propiedad2. El valor predeterminado es &quot;`equals`&quot;.
+   &quot; `equals`&quot; para la coincidencia exacta, &quot; `!=`&quot; para la comparación de desigualdad, &quot; `greater`&quot; para la propiedad1 mayor que la propiedad2, &quot; `>=`&quot; para la propiedad1 mayor o igual que la propiedad2. El valor predeterminado es &quot; `equals`&quot;.
 
 ### daterange {#daterange}
 
@@ -370,7 +370,7 @@ Admite la extracción de facetas. Proporcionará bloques para cada valor de prop
 
 * **operation**
 
-   &quot;`equals`&quot; para coincidencia exacta (predeterminada), &quot;`unequals`&quot; para comparación de desigualdad, &quot;`like`&quot; para usar la función xpath `jcr:like` (opcional), &quot; `not`&quot; para no coincidir (p. ej. &quot;`not(@prop)`&quot; en xpath, se ignorará el parámetro de valor) o &quot;`exists`&quot; para la comprobación de existencia (el valor puede ser true - la propiedad debe existir, el valor predeterminado - o false - igual que &quot;`not`&quot;)
+   &quot;`equals`&quot; para coincidencia exacta (predeterminada), &quot; `unequals`&quot; para comparación de desigualdad, &quot; `like`&quot; para usar la función xpath `jcr:like` (opcional), &quot; `not`&quot; para no coincidir (p. ej. &quot;`not(@prop)`&quot; en xpath, se ignorará el parámetro de valor) o &quot; `exists`&quot; para la comprobación de existencia (el valor puede ser true - la propiedad debe existir, el valor predeterminado - o false - igual que &quot; `not`&quot;)
 
 * **depth**
 
