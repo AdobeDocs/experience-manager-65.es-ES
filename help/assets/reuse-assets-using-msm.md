@@ -4,10 +4,10 @@ description: Utilice recursos en varias páginas o carpetas que se deriven de re
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7eb569c86c45daa8b175f924b211693a5d5dde58
+source-git-commit: 5c9907bf475796c5bbb61d6fcaf43730f9e79777
 workflow-type: tm+mt
-source-wordcount: '3373'
-ht-degree: 10%
+source-wordcount: '3366'
+ht-degree: 9%
 
 ---
 
@@ -70,7 +70,7 @@ Para crear Live Copies con el primer método, siga estos pasos:
 
 1. Seleccione los recursos o carpetas de origen. En la barra de herramientas, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]**.
 
-   ![Crear Live Copy desde la interfaz de Experience Manager](assets/create_lc1.png)
+   ![Crear Live Copy desde la  [!DNL Experience Manager] interfaz](assets/create_lc1.png)
 
    *Figura: Cree una Live Copy desde la  [!DNL Experience Manager] interfaz.*
 
@@ -82,7 +82,7 @@ Para crear Live Copies con el segundo método, siga estos pasos:
 
 1. En la interfaz [!DNL Experience Manager], en la esquina superior derecha, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Live Copy]**.
 
-   ![Crear Live Copy desde la interfaz de Experience Manager](assets/create_lc2.png)
+   ![Crear Live Copy desde la  [!DNL Experience Manager] interfaz](assets/create_lc2.png)
 
    *Figura: Cree una Live Copy desde la  [!DNL Experience Manager] interfaz.*
 
@@ -106,7 +106,7 @@ Los dos métodos siguientes funcionan para los recursos y las carpetas:
 
 >[!TIP]
 >
->Para comprobar el estado de algunas Live Copies independientes, utilice el primer método para comprobar la página [!UICONTROL Properties]. Para comprobar los estados de muchas Live Copies, utilice el segundo método para comprobar la página **[!UICONTROL Estado de relación]**.
+>Para comprobar el estado de algunas Live Copies independientes, utilice el primer método para comprobar la página **[!UICONTROL Properties]**. Para comprobar los estados de muchas Live Copies, utilice el segundo método para comprobar la página **[!UICONTROL Estado de relación]**.
 
 ### Información y estado de una Live Copy {#statuslcasset}
 
@@ -189,8 +189,9 @@ Una vez modificado el origen, los cambios se pueden propagar a las Live Copies m
 Puede iniciar una acción de despliegue desde el recurso de origen y actualizar todas o algunas Live Copies seleccionadas.
 
 1. Seleccione un recurso de Live Copy o una carpeta. Haga clic en **[!UICONTROL Properties]** en la barra de herramientas. También puede utilizar el atajo de teclado `p`.
-1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Haga clic en **[!UICONTROL Despliegue]** en la barra de herramientas de la parte superior.
-1. Seleccione las Live Copies que desee actualizar. Haga clic en **[!UICONTROL Despliegue]**. Para desplegar las actualizaciones realizadas en los recursos secundarios, seleccione **[!UICONTROL Origen de lanzamiento y todos los elementos secundarios]**.
+1. Haga clic en **[!UICONTROL Origen de Live Copy]**. Haga clic en **[!UICONTROL Despliegue]** en la barra de herramientas.
+1. Seleccione las Live Copies que desee actualizar. Haga clic en **[!UICONTROL Despliegue]**.
+1. Para desplegar las actualizaciones realizadas en los recursos secundarios, seleccione **[!UICONTROL Origen de lanzamiento y todos los elementos secundarios]**.
 
    ![Implementar las modificaciones del origen en algunas o todas las Live Copies](assets/livecopy_rollout_page.png)
 
@@ -210,7 +211,7 @@ Como alternativa, puede iniciar una acción de despliegue desde el carril Refere
 
 Una acción de sincronización extrae las modificaciones de un origen solo a la Live Copy seleccionada. La acción de sincronización respeta y mantiene las modificaciones locales realizadas después de cancelar la herencia. Las modificaciones locales no se sobrescriben y la herencia cancelada no se restablece. Puede iniciar una acción de sincronización de tres formas.
 
-| Dónde en la interfaz [!DNL Experience Manager] | Cuándo y por qué utilizar | Cómo usar |
+| Dónde en la interfaz [!DNL Experience Manager] | Cuándo y por qué utilizar | Utilización |
 |---|---|---|
 |  Carril de referencia | Sincronice rápidamente cuando ya tenga seleccionado el origen. | Consulte [Acciones rápidas del carril Referencias para el origen](#refrailsource) |
 | Barra de herramientas de la página [!UICONTROL Propiedades] | Inicie una sincronización cuando ya tenga abiertas las propiedades de Live Copy. | Consulte [Sincronizar una Live Copy](#sync-lc) |
