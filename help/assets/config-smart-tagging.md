@@ -3,9 +3,9 @@ title: Configuración del etiquetado de recursos mediante el servicio de conteni
 description: Aprenda a configurar el etiquetado inteligente y el etiquetado inteligente mejorado en [!DNL Adobe Experience Manager], mediante el servicio de contenido inteligente.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
+source-git-commit: 178b1433de1d6b1e20527755414a494d4291935e
 workflow-type: tm+mt
-source-wordcount: '2172'
+source-wordcount: '2170'
 ht-degree: 25%
 
 ---
@@ -20,14 +20,11 @@ Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguien
 * [Integración con Adobe Developer Console](#integrate-adobe-io).
 * [Capacite el servicio de contenido inteligente](#training-the-smart-content-service).
 
-   <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
-  -->
-
-* Instale el último [Service Pack de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* Instale el último [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ## Integración con Adobe Developer Console {#integrate-adobe-io}
 
-Cuando se integra con Adobe Developer Console, el servidor [!DNL Experience Manager] autentica las credenciales del servicio con la puerta de enlace de Adobe Developer Console antes de reenviar la solicitud al servicio de contenido inteligente. Para la integración, necesita una cuenta de Adobe ID que tenga privilegios de administrador para la organización y una licencia de Smart Content Service comprada y habilitada para su organización.
+Cuando se integra con Adobe Developer Console, el servidor [!DNL Experience Manager] autentica las credenciales del servicio con la puerta de enlace de Adobe Developer Console antes de reenviar la solicitud al servicio de contenido inteligente. Para integrarse, necesita una cuenta de Adobe ID con privilegios de administrador para la organización y una licencia del servicio de contenido inteligente comprada y habilitada para su organización.
 
 Para configurar el servicio de contenido inteligente, siga estos pasos de nivel superior:
 
@@ -51,7 +48,7 @@ El certificado público permite autenticar el perfil en Adobe Developer Console.
 
 1. En el cuadro de diálogo **[!UICONTROL Crear configuración]**, especifique un título y un nombre para la configuración de etiquetas inteligentes. Haga clic en **[!UICONTROL Crear]**.
 
-1. En el cuadro de diálogo **[!UICONTROL AEM Smart Content Service]**, utilice los siguientes valores:
+1. En el cuadro de diálogo **[!UICONTROL AEM servicio de contenido inteligente]**, utilice los siguientes valores:
 
    **[!UICONTROL URL de servicio]**: `https://mc.adobe.io/marketingcloud/smartcontent`
 
@@ -59,7 +56,7 @@ El certificado público permite autenticar el perfil en Adobe Developer Console.
 
    Deje los demás campos en blanco por ahora (para proporcionar más adelante). Haga clic en **[!UICONTROL Aceptar]**.
 
-   ![Cuadro de diálogo del servicio de contenido inteligente de Experience Manager para proporcionar la URL del servicio de contenido](assets/aem_scs.png)
+   ![Cuadro de diálogo del servicio de contenido inteligente del Experience Manager para proporcionar la URL del servicio de contenido](assets/aem_scs.png)
 
 
    *Figura: Cuadro de diálogo del servicio de contenido inteligente para proporcionar la URL del servicio de contenido*
@@ -98,7 +95,7 @@ Una vez caducado un certificado, ya no es de confianza. No puede renovar un cert
 
 ### Crear la integración de Adobe Developer Console {#create-adobe-i-o-integration}
 
-Para utilizar las API del servicio de contenido inteligente, cree una integración en Adobe Developer Console para obtener [!UICONTROL Clave de API] (generada en el campo [!UICONTROL CLIENT ID] de la integración de Adobe Developer Console), [!UICONTROL ID DE CUENTA TÉCNICA], [!UICONTROL ID de organización] y [!UICONTROL CLIENT RET] para [!UICONTROL Configuración del servicio de etiquetado inteligente de recursos] de la configuración de nube en [!DNL Experience Manager].
+Para utilizar las API del servicio de contenido inteligente, cree una integración en la consola del desarrollador de Adobe para obtener [!UICONTROL Clave de API] (generada en el campo [!UICONTROL CLIENT ID] de integración de la consola del desarrollador de Adobe), [!UICONTROL ID DE CUENTA TÉCNICA], [!UICONTROL ID de organización] y [!UICONTROL CLICLICLIENT SECRET] para [!UICONTROL Configuración del servicio de etiquetado inteligente de recursos] de la configuración de nube en [!DNL Experience Manager].
 
 1. Acceda a [https://console.adobe.io](https://console.adobe.io/) en el explorador. Seleccione la cuenta adecuada y compruebe que la función de organización asociada sea administrador del sistema.
 
@@ -119,13 +116,13 @@ Para utilizar las API del servicio de contenido inteligente, cree una integraci�
    ![En la pestaña Información general, puede revisar la información proporcionada para la integración.](assets/integration_details.png)
 
 
-   *Figura: Detalles de la integración en Adobe Developer Console*
+   *Figura: Detalles sobre la integración en Adobe Developer Console*
 
 ### Configuración del servicio de contenido inteligente {#configure-smart-content-service}
 
 Para configurar la integración, utilice los valores de los campos [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION ID], [!UICONTROL CLIENT SECRET] y [!UICONTROL CLIENT ID] de la integración de Adobe Developer Console. La creación de una configuración de nube de etiquetas inteligentes permite la autenticación de solicitudes de API desde la implementación [!DNL Experience Manager].
 
-1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Servicios de nube heredados]** para abrir la consola [!UICONTROL Cloud Services].
+1. En [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Services heredados]** para abrir la consola [!UICONTROL Cloud Services].
 
 1. En **[!UICONTROL Etiquetas inteligentes de recursos]**, abra la configuración creada anteriormente. En la página de configuración del servicio, haga clic en **[!UICONTROL Editar]**.
 
@@ -215,7 +212,7 @@ Por ejemplo, no es aconsejable etiquetar todas estas imágenes como `my-party` (
 
 ![Imágenes ilustrativas para ejemplificar las directrices de formación](/help/assets/assets/do-not-localize/coherence.png)
 
-**Cobertura**: Utilice una variedad suficiente en las imágenes de la formación. La idea es ofrecer algunos ejemplos, aunque razonablemente diversos, para que Experience Manager aprenda a centrarse en lo correcto. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo.
+**Cobertura**: Utilice una variedad suficiente en las imágenes de la formación. La idea es dar algunos ejemplos, pero razonablemente diversos, para que el Experience Manager aprenda a centrarse en las cosas correctas. Si está aplicando la misma etiqueta en imágenes visualmente diferentes, incluya al menos cinco ejemplos de cada tipo.
 
 Por ejemplo, para la etiqueta *model-down-pose*, incluya más imágenes de capacitación similares a la imagen resaltada a continuación para que el servicio identifique imágenes similares con mayor precisión durante el etiquetado.
 
