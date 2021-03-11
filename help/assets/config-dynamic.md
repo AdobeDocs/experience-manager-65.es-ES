@@ -10,7 +10,7 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: 99293a13fcdf06f37d9747683f7c32ebd9246d18
+source-git-commit: 54dd71655aeae00bcaa27847f91af07f15faf478
 workflow-type: tm+mt
 source-wordcount: '7840'
 ht-degree: 1%
@@ -977,6 +977,7 @@ Los casos de uso avanzados podrían utilizar un modificador `icc=` de configurac
 
 >[!NOTE]
 El conjunto estándar de perfiles de color de Adobe solo está disponible si tiene [Feature Pack 12445 de Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) instalado. Todos los paquetes de funciones y service packs están disponibles en [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). El paquete de características 12445 proporciona perfiles de color de Adobe.
+
 
 ### Instalación del Feature Pack 12445 {#installing-feature-pack}
 
