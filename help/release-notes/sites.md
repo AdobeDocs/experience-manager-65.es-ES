@@ -2,10 +2,10 @@
 title: Notas de versión de AEM Sites
 description: Notas de versión específicas de Adobe Experience Manager 6.5 Sites.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 23656e023a9a0bfc335655f9cfb0530aa917b3ef
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 71%
+source-wordcount: '872'
+ht-degree: 68%
 
 ---
 
@@ -20,7 +20,7 @@ Consulte las siguientes mejoras de AEM Sites 6.5 detalladamente:
 * Arquetipo de proyecto Maven 1.0.6 (o superior) de aplicaciones de página única para proyectos nuevos; consulte [Github para ver las notas de versión](https://github.com/adobe/aem-spa-project-archetype/releases).
 * Versión 1.4 de HTL; consulte [Github para ver las notas de versión](https://github.com/adobe/htl-spec/releases/tag/1.4).
 
-   * &quot;in&quot; para cadenas, matrices y objetos:
+   * operador &quot;in&quot; para cadenas, matrices y objetos:
 
       ```html
       ${'a' in 'abc’}
@@ -28,13 +28,13 @@ Consulte las siguientes mejoras de AEM Sites 6.5 detalladamente:
       ${'a' in myObject}
       ```
 
-   * Declaraciones de variables con data-asteril-set :
+   * Declaraciones de variables con data-sly-set :
       `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * Parámetros de control de lista y repetición: begin, step, end:
+   * Parámetros de control de lista y repetición: inicio, paso, final:
       `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
-   * Identificadores para data-il-unwrap:
+   * Identificadores para data-sly-unwrap:
 
       ```html
       <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
@@ -46,13 +46,13 @@ Consulte las siguientes mejoras de AEM Sites 6.5 detalladamente:
 
 * Componentes principales 2.3.2 (o superior); consulte [Github para ver las notas de versión](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 * Sistema de cuadrícula para contenedores de diseño; consulte [Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
-* Administrador de biblioteca de clientes: el compilador de cierre de Google se ha configurado de forma predeterminada para reducir la clientlibs de JavaScript (el valor predeterminado anterior era Yahoo YUI) y el compilador de cierre de Google se ha actualizado a la versión v20190121
+* Administrador de Clientlib: se ha hecho que Google Closure Compiler sea predeterminado en la minificación de clientlibs de JavaScript (el valor predeterminado anterior era Yahoo YUI) y se ha actualizado Google Closure Compiler a la versión v20190121
 * Editor de plantillas y políticas
 
    * Cree y edite plantillas para aplicaciones de página única que utilicen el SDK para JS (también denominado SPA Editor)
 
 * Sitio de referencia We.Retail 4.0; consulte [Github para ver las notas de versión](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
-* Kit de herramientas para actualizar los sitios existentes a fin de aprovechar las capacidades de edición más recientes, consulte [Repositorio de Github](https://github.com/adobe/aem-modernize-tools)
+* Kit de herramientas para actualizar los sitios existentes a fin de aprovechar las últimas funciones del editor, consulte [Repositorio de Github](https://github.com/adobe/aem-modernize-tools)
 
 >[!CAUTION]
 >
@@ -72,7 +72,7 @@ Consulte las siguientes mejoras de AEM Sites 6.5 detalladamente:
 ## Fragmentos de contenido y editor {#content-fragments-amp-editor}
 
 * La nueva barra de [Anotaciones](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) en el Editor de fragmentos de contenido se puede usar para realizar comentarios generales y ver comentarios en el texto (también se muestra en la barra de cronología)
-* Posibilidad de establecer el tipo de contenido predeterminado de un elemento de texto de varias líneas en un [modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) en texto simple, texto enriquecido o marcador
+* Posibilidad de establecer el tipo de contenido predeterminado de un elemento de texto multilínea en un [modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) en texto simple, texto enriquecido o Markdown
 * Agregue [comentarios o anotaciones](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) seleccionando texto en RTE (vista de pantalla completa)
 * [Comparar versiones](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) de un fragmento de contenido en paralelo a través de la barra de referencia
 * El informe de descarga de recursos ahora muestra los fragmentos de contenido correspondientes
@@ -83,7 +83,7 @@ Consulte las siguientes mejoras de AEM Sites 6.5 detalladamente:
 * Se ha mejorado la indexación de los [fragmentos de experiencias](/help/sites-authoring/experience-fragments.md) para que su contenido se encuentre al buscar las páginas donde estos se utilizan
 * La opción [Export to Target](/help/sites-administering/experience-fragments-target.md) (Exportar a destino) ahora permite enviar el fragmento de experiencia como JSON (el valor predeterminado es HTML) o ambos
 
-## Traducción  {#translation}
+## Traducción {#translation}
 
 * Simplifique la creación de proyectos de traducción mediante Project Masters
 * Simplifique la ejecución de proyectos de traducción estableciendo el estado de los trabajos de traducción en &quot;Aprobado&quot; de forma predeterminada
@@ -110,20 +110,26 @@ Consulte las siguientes mejoras de AEM Sites 6.5 detalladamente:
 
 >[!CAUTION]
 >
->at.js 2.x no es compatible con AEM en la versión AEM 6.5. Utilice la versión más reciente de at.js 1.x
+>Actualmente:
+>
+>* Solo se admite `at.js 1.x` si utiliza Adobe Target como motor de targeting en AEM consola de actividades.
+   >
+   >
+* Tanto `at.js. 1.x` como `at.js 2.x` son compatibles si utiliza la exportación de fragmentos de experiencias a Target y ejecuta actividades en la consola de Target.
 
-* La integración de Adobe Target ahora puede utilizar la API de Target Standard. Las versiones anteriores de AEM utilizan la API HTTP de Destinatario Classic, que ahora está en desuso.
-* Se incluye la versión 63 de Adobe Target `mbox.js`. Adobe recomienda encarecidamente cambiar la implementación a `at.js` v1.x.
-* `at.js` ahora se incluye la versión 1.5.0. Adobe recomienda utilizar [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) para aprovisionar `at.js` v1.x en el sitio.
+
+* La integración de Adobe Target ahora puede utilizar la API de Target Standard. Las versiones anteriores de AEM utilizan la API HTTP de Target Classic, que ahora está en desuso.
+* Se incluye la versión 63 de Adobe Target `mbox.js`. Adobe recomienda cambiar la implementación a `at.js` v1.x.
+* `at.js` ya se incluye la versión 1.5.0. Adobe recomienda utilizar [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) para aprovisionar `at.js` v1.x en el sitio.
 
 ## AEM y Adobe Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` Se incluye H.27.5. Adobe recomienda cambiar la implementación a `AppMeasurement.js`
-* `AppMeasurement.js` v1.8.0 se incluye. Adobe recomienda utilizar [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) para aprovisionar AppMeasurement.js en el sitio.
+* `AppMeasurement.js` Se incluye la versión 1.8.0. Adobe recomienda utilizar [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) para aprovisionar AppMeasurement.js en el sitio.
 
 ## AEM y comercio {#aem-commerce}
 
-Las mejoras del módulo de integración de comercio están en un ciclo de lanzamiento más rápido desde AEM 6.4. [Más información aquí](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
+Las mejoras en Commerce Integration Framework se encuentran en un ciclo de lanzamiento más rápido desde AEM 6.4. [Más información aquí](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
 
 ## Complemento de Communities {#communities-add-on}
 
@@ -131,8 +137,8 @@ Consulte la [página de las notas de versión de Communities](../release-notes/c
 
 ## Complemento de pantallas  {#screens-add-on}
 
-* Uso de inicios para planificar futuros cambios de contenido para contenido de letreros
+* Uso de lanzamientos para planificar futuros cambios en el contenido de señalización
 * Reproducción limitada en un canal de secuencias
 * Crear automáticamente la estructura del proyecto mediante un archivo de origen; por ejemplo, una hoja de Excel
 
-Para obtener más información sobre los cambios en AEM Screens, consulte las Notas de la versión en la [Guía del usuario de AEM Screens](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Para obtener más información sobre los cambios en AEM Screens, consulte las Notas de la versión en la [Guía del usuario de AEM Screens](https://docs.adobe.com/content/help/es-ES/experience-manager-screens/user-guide/aem-screens-introduction.html).
