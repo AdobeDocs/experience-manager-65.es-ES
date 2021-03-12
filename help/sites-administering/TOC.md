@@ -7,10 +7,10 @@ user-guide-title: Guía del usuario de administración de AEM 6.5
 breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
 translation-type: tm+mt
-source-git-commit: fd7a32c1070a0560ca744db041cf809f28672b33
+source-git-commit: ac2f3d69fd20d7779120a194c698d6f0dd6e6a84
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 16%
+source-wordcount: '675'
+ht-degree: 19%
 
 ---
 
@@ -55,9 +55,9 @@ ht-degree: 16%
    + [Editor masivo](bulk-editor.md)
    + [Configuración de notificaciones por correo electrónico](notification.md)
    + [El verificador de vínculos](external-link-checker.md)
-   + [Resolución de problemas de AEM](troubleshoot.md)
+   + [Solución de problemas AEM](troubleshoot.md)
    + [Administración del acceso a los flujos de trabajo](workflows-managing.md)
-   + [Empezar flujos de trabajo](workflows-starting.md)
+   + [Inicio de flujos de trabajo](workflows-starting.md)
    + [Administración de flujos de trabajo](workflows.md)
    + [Administración de instancias de flujo de trabajo](workflows-administering.md)
    + [Uso de cURL con AEM](curl.md)
@@ -69,15 +69,15 @@ ht-degree: 16%
    + [Configuración del contenedor de diseño y el modo de diseño](configuring-responsive-layout.md)
    + [Editor](enable-classic-ui-editor.md)
    + [Habilitar el acceso a la IU clásica](enable-classic-ui.md)
-   + [Consolas de administración](enable-classic-ui-admin.md)
+   + [Admin Console](enable-classic-ui-admin.md)
 + Seguridad {#security}
    + [Administración de usuarios y seguridad](security.md)
    + [Administración de derechos de usuario, grupo y acceso](user-group-ac-admin.md)
    + [Lista de comprobación de seguridad](security-checklist.md)
    + [OWASP Top 10](owasp-top10.md)
-   + [Ejecución de AEM en modo listo para la producción](production-ready.md)
+   + [Ejecución de AEM en el modo Producción lista](production-ready.md)
    + [Administración de identidades](identity-management.md)
-   + [Autenticación de Adobe IMS y compatibilidad con Admin Console para AEM Managed Services](ims-config-and-admin-console.md)
+   + [Autenticación de IMS de Adobe y compatibilidad con Admin Console para AEM Managed Services](ims-config-and-admin-console.md)
    + [Creación de un grupo de usuarios cerrado](cug.md)
    + [Mitigación de problemas de serialización en AEM](mitigating-serialization-issues.md)
    + [Sincronización de usuarios](sync.md)
@@ -85,18 +85,19 @@ ht-degree: 16%
    + [Inicio de sesión único](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)
    + [Cómo auditar las operaciones de administración de usuarios en AEM](audit-user-management-operations.md)
    + [SSL de forma predeterminada](ssl-by-default.md)
-   + [Gestor de autenticación SAML 2.0](saml-2-0-authenticationhandler.md)
+   + [Controlador de autenticación SAML 2.0](saml-2-0-authenticationhandler.md)
    + [Grupos de usuarios cerrados en AEM](closed-user-groups.md)
    + [Operaciones de Granite: administración de usuarios y grupos](granite-user-group-admin.md)
-   + [Habilitar CRXDE Lite en AEM](enabling-crxde-lite.md)
+   + [Activación del CRXDE Lite en AEM](enabling-crxde-lite.md)
    + [Configuración de LDAP con AEM 6](ldap-config.md)
    + [Configurar la contraseña de administrador en la instalación](security-configure-admin-password.md)
    + [Usuarios de servicio en AEM](security-service-users.md)
    + [Compatibilidad con cifrado para propiedades de configuración](encryption-support-for-configuration-properties.md)
-   + [Gestión de solicitudes de RGPD para AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
+   + [Gestión de solicitudes de RGPD para la base de AEM](handling-gdpr-requests-for-aem-platform.md)
    + [Vista principal para la administración de permisos](touch-ui-principal-view.md)
    + [Filtro Disposición de contenido](content-disposition-filter.md)
    + [Asignación de grupos de usuarios personalizados en AEM 6.5](/help/sites-administering/cug-mapping.md)
+   + [Compatibilidad con cookies del mismo sitio](same-site-cookie-support.md)
 + Personalización {#personalization}
    + [Personalización](personalization.md)
    + [Configuración de ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
@@ -111,9 +112,9 @@ ht-degree: 16%
    + [Conceptos ](concepts.md)
    + [Administración del comercio electrónico genérico](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-   + [AEM Commerce - Preparación para el RGPD](gdpr-compliance-commerce.md)
+   + [Commerce Cloud SAP](sap-commerce-cloud.md)
+   + [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
+   + [Comercio AEM - Preparación para el RGPD](gdpr-compliance-commerce.md)
 + Integración {#integration}
    + [Integración con servicios de terceros](third-party-services.md)
    + [Integración con Salesforce](salesforce.md)
@@ -121,7 +122,7 @@ ht-degree: 16%
    + [Integración con Adobe Analytics](adobeanalytics.md)
    + [Conexión a Adobe Analytics y creación de módulos](adobeanalytics-connect.md)
    + [Configuración del seguimiento de vínculos para Adobe Analytics](adobeanalytics-link.md)
-   + [Asignación de datos de componentes a propiedades de Adobe Analytics](adobeanalytics-mapping.md)
+   + [Asignación de datos de componente con propiedades de Adobe Analytics](adobeanalytics-mapping.md)
    + [Configuración del seguimiento de vídeo para Adobe Analytics](adobeanalytics-video.md)
    + [Preguntas frecuentes sobre la entrega de contenido HTTP2](scene7-http2faq.md)
    + [Resolución de problemas de la integración de Adobe Campaign](troubleshooting-campaignintegration.md)
@@ -133,11 +134,11 @@ ht-degree: 16%
    + [Integración con Adobe Campaign Standard](campaignstandard.md)
    + [Aviso de fin de vida útil para el visualizador Flash](flash-viewers-eol.md)
    + [Fuente de productos](product-feed.md)
-   + [Integración con Dynamic Tag Management de Adobe](dtm.md)
+   + [Integración con Adobe Dynamic Tag Management](dtm.md)
    + [Inclusión en Adobe Analytics y Adobe Target](opt-in.md)
-   + [Portales y portlets de AEM](aem-as-portal.md)
+   + [Portales AEM y portlets](aem-as-portal.md)
    + [Integración con Dynamic Media Classic (Scene7)](scene7.md)
-   + [Fórmulas de Livefyre de AEM](aem-livefyre-recipes.md)
+   + [Fórmulas de AEM Livefyre](aem-livefyre-recipes.md)
    + [Resolución de problemas de integración](troubleshooting-integration-issues.md)
    + [Integración con BrightEdge Content Optimizer](brightedge.md)
    + [Productor de catálogos](catalog-producer.md)
@@ -151,7 +152,7 @@ ht-degree: 16%
    + [Requisitos previos para la integración con Adobe Target](target-requirements.md)
    + [Integración con Adobe Target mediante Adobe I/O](integration-ims-adobe-io.md)
    + [Clasificaciones de Adobe](adobeanalytics-classifications.md)
-   + [Integración con Adobe Search&amp;Promote](search-and-promote.md)
+   + [Integración con el Search&amp;Promote de Adobe](search-and-promote.md)
    + [Integración de soluciones](integration.md)
    + [Exportación de fragmentos de experiencias a Adobe Target](experience-fragments-target.md)
    + [Prácticas recomendadas para plantillas de correo electrónico](best-practices-for-email-templates.md)
@@ -161,8 +162,8 @@ ht-degree: 16%
    + [Prácticas recomendadas de traducción](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html)
    + [Prácticas recomendadas de MSM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
    + [AEM Sites: preparación para el RGPD](gdpr-compliance-sites.md)
-   + [Gestión de solicitudes de RGPD para AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
-   + [AEM Commerce - Preparación para el RGPD](https://experienceleague.adobe.com/docs/experience-manager-65/administering/ecommerce/gdpr-compliance-commerce.html)
+   + [Gestión de solicitudes de RGPD para la base de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
+   + [Comercio AEM - Preparación para el RGPD](https://experienceleague.adobe.com/docs/experience-manager-65/administering/ecommerce/gdpr-compliance-commerce.html)
 + Administración de contenido {#contentmanagement}
    + [Cómo trabajar con paquetes](package-manager.md)
    + [Administración de etiquetas](tags.md)
