@@ -3,7 +3,7 @@ title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL S
 description: Utilice los recursos disponibles en una implementación remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d17749cb8e923848f8f81360c03b9afba7989ae2
+source-git-commit: 8714a76843231650555e84d3670ecad0bfec2566
 workflow-type: tm+mt
 source-wordcount: '2754'
 ht-degree: 29%
@@ -225,4 +225,4 @@ Para solucionar errores comunes, siga estos pasos:
 
 * Si no se recuperan las referencias remotas y se genera un mensaje de error, compruebe si la implementación de Sites está disponible y compruebe si hay problemas de conectividad de red. Vuelva a intentarlo más tarde para comprobarlo. [!DNL Assets] la implementación intenta establecer conexión dos veces con la  [!DNL Sites] implementación y luego informa de un error.
 
-![error al reintentar referencias remotas de recursos](assets/reference-report-failure.png)
+   ![error al reintentar referencias remotas de recursos](assets/reference-report-failure.png)
