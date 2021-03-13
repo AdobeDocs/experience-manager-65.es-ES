@@ -3,9 +3,9 @@ title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL S
 description: Utilice los recursos disponibles en una implementación remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8714a76843231650555e84d3670ecad0bfec2566
+source-git-commit: 8df7e4403c6664b52573cd4479b3a6a08d2cb6fa
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2717'
 ht-degree: 29%
 
 ---
@@ -106,13 +106,15 @@ Para configurar los recursos conectados y la conectividad local [!DNL Sites], si
    >
    >Todas las representaciones disponibles en la implementación remota de se recuperan cuando los autores recuperan un recurso. Si desea crear más representaciones de un recurso recuperado, omita este paso de configuración. El flujo de trabajo [!UICONTROL Activo de actualización de DAM] se activa y crea más representaciones. Estas representaciones solo están disponibles en la implementación local [!DNL Sites] y no en la implementación remota de DAM.
 
-1. Agregue la implementación [!DNL Sites] como origen permitido en la configuración CORS de la implementación [!DNL Assets].
+1. Agregue la implementación [!DNL Sites] como origen permitido en la configuración CORS de la implementación [!DNL Assets]. Para obtener más información, consulte [Understanding CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
 
-   1. Inicie sesión con las credenciales del administrador. Buscar `Cross-Origin`. Acceda a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
+<!-- TBD: See if these steps are not required.
+    1. Log in using the administrator credentials. Search for `Cross-Origin`. Access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-   1. Para crear una configuración CORS para la implementación [!DNL Sites], haga clic en agregar opción ![Agregar recursos icono](assets/do-not-localize/assets_add_icon.png) junto a **[!UICONTROL Política de uso compartido de recursos de origen cruzado de Adobe Granite]**.
+    1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![Assets add icon](assets/do-not-localize/assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
-   1. En el campo **[!UICONTROL Orígenes permitidos]**, introduzca la URL del [!DNL Sites] local, es decir, `https://[local_sites]:[port]`. Guarde la configuración.
+    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. Save the configuration.
+-->
 
 Puede comprobar la conectividad entre las implementaciones configuradas [!DNL Sites] y la implementación [!DNL Assets].
 
@@ -173,7 +175,7 @@ Para ver y administrar referencias en la implementación [!DNL Assets] , siga es
 1. Seleccione un recurso en la consola [!DNL Assets] y haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas.
 1. Haga clic en la pestaña **[!UICONTROL References]**. Consulte **[!UICONTROL Referencias locales]** para el uso del recurso en la implementación [!DNL Assets]. Consulte **[!UICONTROL Referencias remotas] para usar el recurso en la implementación [!DNL Sites] donde se recuperó el recurso mediante la funcionalidad Recursos conectados.
 
-   ![referencias remotas en Propiedades de recursos](assets/connected-assets-remote-reference.png)
+   ![referencias remotas en la página Propiedades del recurso](assets/connected-assets-remote-reference.png)
 
 1. Las referencias para las páginas [!DNL Sites] muestran el recuento total de referencias para cada [!DNL Sites] local. Puede tardar algún tiempo en encontrar todas las referencias y mostrar el número total de referencias.
 1. La lista de referencias es interactiva y los usuarios de DAM pueden hacer clic en una referencia para abrir la página de referencia. Si por algún motivo no se pueden recuperar referencias remotas, se muestra una notificación que informa al usuario del error.
@@ -223,6 +225,6 @@ Para solucionar errores comunes, siga estos pasos:
 
    ![Error de cookie en Chrome en modo incógnito](assets/chrome-cookies-incognito-dialog.png)
 
-* Si no se recuperan las referencias remotas y se genera un mensaje de error, compruebe si la implementación de Sites está disponible y compruebe si hay problemas de conectividad de red. Vuelva a intentarlo más tarde para comprobarlo. [!DNL Assets] la implementación intenta establecer conexión dos veces con la  [!DNL Sites] implementación y luego informa de un error.
+* Si no se recuperan las referencias remotas y se genera un mensaje de error, compruebe si la implementación [!DNL Sites] está disponible y compruebe si hay problemas de conectividad de red. Vuelva a intentarlo más tarde para comprobarlo. [!DNL Assets] la implementación intenta establecer conexión dos veces con la  [!DNL Sites] implementación y luego informa de un error.
 
    ![error al reintentar referencias remotas de recursos](assets/reference-report-failure.png)
