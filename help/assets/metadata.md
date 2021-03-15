@@ -3,9 +3,9 @@ title: Administre metadatos de sus recursos digitales en [!DNL Adobe Experience 
 description: Obtenga información sobre los tipos de metadatos y cómo [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] permite organizar y procesar automáticamente los recursos en función de sus metadatos.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: 31dcf48691fa849f757579e2e57dc3a9c2bbbbee
 workflow-type: tm+mt
-source-wordcount: '2388'
+source-wordcount: '2340'
 ht-degree: 11%
 
 ---
@@ -29,7 +29,7 @@ Se pueden utilizar los siguientes métodos para añadir metadatos a recursos dig
 
 * Para empezar, las aplicaciones nativas que crean recursos le añaden algunos metadatos. Por ejemplo, [Acrobat agrega algunos metadatos](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) a archivos PDF o una cámara agrega algunos metadatos básicos a las fotografías. Al generar recursos, puede añadir los metadatos en las propias aplicaciones nativas. Por ejemplo, puede [añadir metadatos IPTC en Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Antes de cargar un recurso en [!DNL Experience Manager], puede editar y modificar los metadatos mediante la aplicación nativa utilizada para crear un recurso o utilizando otra aplicación de edición de metadatos. Al cargar un recurso en Experience Manager, se procesan los metadatos. Por ejemplo, consulte cómo [trabajar con metadatos en [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) y vea el panel [etiquetas para [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) en [!DNL Adobe Exchange].
+* Antes de cargar un recurso en [!DNL Experience Manager], puede editar y modificar los metadatos mediante la aplicación nativa utilizada para crear un recurso o utilizando otra aplicación de edición de metadatos. Al cargar un recurso en el Experience Manager, se procesan los metadatos. Por ejemplo, consulte cómo [trabajar con metadatos en [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) y vea el panel [etiquetas para [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) en [!DNL Adobe Exchange].
 
 * En [!DNL Experience Manager Assets], puede añadir o editar manualmente los metadatos de los recursos en la página [!UICONTROL Propiedades].
 
@@ -59,7 +59,7 @@ Para editar los metadatos de un recurso en la interfaz de usuario [!DNL Assets] 
 
 Cualquier cambio en los metadatos de un recurso se vuelve a escribir en el binario original como parte de sus datos XMP. El flujo de trabajo de reescritura de metadatos agrega los metadatos al binario original. Los cambios realizados en las propiedades existentes (como `dc:title`) se sobrescriben y se agregan nuevas propiedades (incluidas propiedades personalizadas como `cq:tags`) al esquema.
 
-La reescritura XMP es compatible y está habilitada para las plataformas y formatos de archivo descritos en [requisitos técnicos.](/help/sites-deploying/technical-requirements.md)
+XMP escritura en retorno es compatible y está habilitada para las plataformas y los formatos de archivo descritos en [requisitos técnicos.](/help/sites-deploying/technical-requirements.md)
 
 ## Editar propiedades de metadatos de varios recursos {#editing-metadata-properties-of-multiple-assets}
 
@@ -78,27 +78,21 @@ Para personalizar la página de propiedades de metadatos, como agregar, modifica
 1. Seleccione los recursos para los que desea editar propiedades comunes.
 1. En la barra de herramientas, haga clic en **[!UICONTROL Propiedades]** para abrir la página de propiedades de los recursos seleccionados.
 1. Modifique las propiedades de metadatos de los recursos seleccionados en las distintas pestañas.
-1. Para ver el editor de metadatos de un recurso específico, cancele la selección de los recursos restantes de la lista. Los campos del editor de metadatos se rellenan con los metadatos del recurso en cuestión.
-
-   >[!NOTE]
-   >
-   >* En la página de propiedades, puede eliminar recursos de la lista de recursos cancelando la selección. La lista de recursos tiene todos los recursos seleccionados de forma predeterminada. Los metadatos de los recursos que elimine de la lista no se actualizarán.
-   >* En la parte superior de la lista de activos, active la casilla de verificación situada cerca de **[!UICONTROL Título]** para alternar entre seleccionar los recursos y borrar la lista.
-
-
-1. Para seleccionar un esquema de metadatos diferente para los recursos, haga clic en **[!UICONTROL Settings]** en la barra de herramientas y seleccione el esquema deseado.
-1. Guarde los cambios.
+1. Para ver los metadatos de un recurso específico, cancele la selección de los recursos restantes de la lista. Si cancela la selección de algunos recursos en la página [!UICONTROL Properties], los metadatos de dichos recursos no se actualizan.
+1. Para seleccionar un esquema de metadatos diferente para los recursos, haga clic en **[!UICONTROL Settings]** en la barra de herramientas y seleccione un esquema. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 1. Para anexar los nuevos metadatos con los metadatos existentes en los campos que contienen varios valores, seleccione el **[!UICONTROL modo Anexar]**. Si no selecciona esta opción, los metadatos nuevos sustituirán a los metadatos existentes en los campos. Haga clic en **[!UICONTROL Submit]**.
 
-   >[!CAUTION]
-   >
-   >En el caso de los campos de un solo valor, los nuevos metadatos no se anexan al valor existente en el campo aunque seleccione el modo **[!UICONTROL Anexar]**.
+![El esquema de metadatos se aplica de forma masiva a varios recursos](assets/metadata-schema-bulk-edit.gif)
+
+>[!CAUTION]
+>
+>En el caso de los campos de un solo valor, los nuevos metadatos no se anexan al valor existente en el campo aunque seleccione el modo **[!UICONTROL Anexar]**.
 
 ## Importar metadatos {#import-metadata}
 
 [!DNL Assets] permite importar metadatos de recursos de forma masiva mediante un archivo CSV. Puede realizar actualizaciones masivas de los recursos cargados recientemente o de los existentes mediante la importación de un archivo CSV. También puede introducir metadatos de recursos de forma masiva desde sistemas de terceros en formato CSV.
 
-La importación de metadatos es asíncrona y no impide el rendimiento del sistema. La actualización simultánea de los metadatos de varios recursos puede requerir muchos recursos debido a la actividad de reescritura XMP si se marca el indicador de flujo de trabajo. Planifique una importación de este tipo durante el uso del servidor liviano para que el rendimiento de otros usuarios no se vea afectado.
+La importación de metadatos es asíncrona y no impide el rendimiento del sistema. La actualización simultánea de los metadatos de varios recursos puede requerir muchos recursos debido a XMP actividad de reescritura si se marca el indicador de flujo de trabajo. Planifique una importación de este tipo durante el uso del servidor liviano para que el rendimiento de otros usuarios no se vea afectado.
 
 >[!NOTE]
 >
@@ -114,7 +108,7 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
    | [!UICONTROL Tamaño del lote] | Número de recursos de un lote para los que se van a importar metadatos. El valor predeterminado es 50. El valor máximo es 100. |
    | [!UICONTROL Separador de campos] | El valor predeterminado es `,` (una coma). Puede especificar cualquier otro carácter. |
    | [!UICONTROL Delimitador de varios valores] | Separador para valores de metadatos. El valor predeterminado es `|`. |
-   | [!UICONTROL Lanzar flujos de trabajo] | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada del Iniciador está en vigor para el flujo de trabajo [!UICONTROL DAM Metadata WriteBack] (que escribe metadatos en los datos binarios XMP). Al habilitar los flujos de trabajo de lanzamiento, el sistema se ralentiza. |
+   | [!UICONTROL Lanzar flujos de trabajo] | False de forma predeterminada. Cuando se establece en `true` y la configuración predeterminada de Launch está en vigor para el flujo de trabajo [!UICONTROL DAM Metadata WriteBack] (que escribe metadatos en los datos de XMP binarios). Al habilitar los flujos de trabajo de lanzamiento, el sistema se ralentiza. |
    | [!UICONTROL Nombre de columna de ruta de activos] | Define el nombre de columna del archivo CSV con recursos. |
 
 1. Haga clic **[!UICONTROL Import]** en la barra de herramientas. Una vez importados los metadatos, se muestra una notificación en la bandeja de entrada [!UICONTROL Notification].
@@ -238,7 +232,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 >
 >* [Conceptos y comprensión de metadatos](metadata-concepts.md).
 >* [Editar propiedades de metadatos de varias colecciones](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importación y exportación de metadatos en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Importación y exportación de metadatos en Recursos de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
