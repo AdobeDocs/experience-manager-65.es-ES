@@ -4,10 +4,10 @@ description: Novedades de [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2c6d11f63420040a500bbb75f1146c29f64bdcc5
+source-git-commit: f52fc643c30babab68bcf122eb3d91da5ce37a24
 workflow-type: tm+mt
-source-wordcount: '2883'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,6 +37,22 @@ Ahora puede ordenar las páginas de Live Copy disponibles para la implementació
 >[!NOTE]
 >
 >El paquete de complementos de [!DNL Experience Manager Forms] está disponible una semana después del lanzamiento programado del [!DNL Experience Manager] Service Pack.
+
+### Mostrar u ocultar el componente CAPTCHA en una forma adaptable basada en reglas {#show-hide-captcha}
+
+Ahora puede validar CAPTCHA en el envío de formularios adaptables o en la acción del usuario. También puede agregar condiciones para validar CAPTCHA en una acción del usuario y mostrar u ocultar el componente CAPTCHA en un formulario adaptable basado en reglas.
+
+### Agregar servicios personalizados de CAPTCHA {#add-custom-captcha-services}
+
+[!DNL Experience Manager Forms] proporciona compatibilidad para utilizar Google reCAPTCHA (se requiere una licencia independiente de las API de Google reCAPTCHA) como servicio de validación de CAPTCHA. También puede utilizar un servicio CAPTCHA personalizado para validar CAPTCHA.
+
+### Otras mejoras {#other-enhancements-forms-6580}
+
+* Se ha mejorado la accesibilidad del componente Selector de fecha [!DNL Experience Manager Forms].
+
+* Se ha agregado compatibilidad para generar una comunicación interactiva en formato PCL mediante la API PrintChannel.
+
+* Al realizar una conversión PDFG, ahora puede habilitar o deshabilitar los cambios del Registro [!DNL Experience Manager Forms] para la generación de marcadores personalizados.
 
 ## Funciones principales en los paquetes de servicios [!DNL Experience Manager] 6.5 anteriores {#key-features-previous-service-packs}
 
