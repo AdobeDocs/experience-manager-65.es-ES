@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 07f354ccfb8741f0de4fc85ba1575ead3b8ea6e4
+source-git-commit: 498896dccf80065195cc945b01cb8d037b8f6dab
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1557'
 ht-degree: 1%
 
 ---
@@ -231,7 +231,7 @@ Ahora se puede hacer referencia a la configuración para que un Cloud Service ut
 1. Introduzca los detalles en la pestaña **Configuración de Adobe Target**:
 
    * **Autenticación**: IMS
-   * **ID del inquilino**: el ID del inquilino de IMS de Adobe. Consulte también la sección [ID de inquilino y código de cliente](#tenant-client) a continuación.
+   * **ID del inquilino**: el ID del inquilino de IMS de Adobe. Consulte también la sección [ID de inquilino y código de cliente](#tenant-client) .
 
       >[!NOTE]
       >
@@ -242,7 +242,7 @@ Ahora se puede hacer referencia a la configuración para que un Cloud Service ut
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >A continuación, debe utilizar `yourtenantid`.
-   * **Código** de cliente: Consulte el ID del  [inquilino y el ](#tenant-client) código del cliente a continuación.
+   * **Código** de cliente: Consulte el ID del  [inquilino y el ](#tenant-client) código del cliente.
    * **Configuración** de IMS: seleccione el nombre de la configuración de IMS
    * **Tipo** de API: REST
    * **Configuración** de A4T Analytics Cloud: Seleccione la configuración de nube de Analytics que se utiliza para las métricas y los objetivos de las actividades de Target. Lo necesita si utiliza Adobe Analytics como fuente de informes al segmentar contenido. Si no ve la configuración de nube, consulte la nota en [Configuración de A4T Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
