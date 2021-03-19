@@ -7,23 +7,24 @@ uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
+feature: Formularios adaptables
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 15%
+source-wordcount: '225'
+ht-degree: 16%
 
 ---
 
 
 # Palabras clave de formularios adaptables {#adaptive-forms-keywords}
 
-Las palabras clave de formularios adaptables son identificadores predefinidos y reservados que tienen un significado especial para los formularios adaptables. Estas palabras clave no se pueden usar como identificadores en los formularios adaptables. La siguiente tabla lista todas las palabras clave que son identificadores reservados para formularios adaptables.
+Las palabras clave de los formularios adaptables son identificadores predefinidos y reservados que tienen un significado especial para los formularios adaptables. Estas palabras clave no se pueden usar como identificadores en los formularios adaptables. En la tabla siguiente se enumeran todas las palabras clave que son identificadores reservados para formularios adaptables.
 
 <table>
  <tbody>
   <tr>
-   <td><p>intializar</p> </td>
+   <td><p>Inicializar</p> </td>
    <td><p>getOnOffValues</p> </td>
    <td><p>minOccupr</p> </td>
   </tr>
@@ -44,12 +45,12 @@ Las palabras clave de formularios adaptables son identificadores predefinidos y 
   </tr>
   <tr>
    <td><p>playJson</p> </td>
-   <td><p>preparar</p> </td>
+   <td><p>prepare</p> </td>
    <td><p>instanceCount</p> </td>
   </tr>
   <tr>
    <td><p>resetData</p> </td>
-   <td><p>runpendingExpressions</p> </td>
+   <td><p>runPendingExpressions</p> </td>
    <td><p>repetible</p> </td>
   </tr>
   <tr>
@@ -73,7 +74,7 @@ Las palabras clave de formularios adaptables son identificadores predefinidos y 
    <td><p>getElement</p> </td>
   </tr>
   <tr>
-   <td><p>placholderText</p> </td>
+   <td><p>placeholderText</p> </td>
    <td><p>autoSaveStartExpression</p> </td>
    <td><p>elementos secundarios</p> </td>
   </tr>
@@ -149,7 +150,7 @@ Las palabras clave de formularios adaptables son identificadores predefinidos y 
   </tr>
   <tr>
    <td><p>navigationChangeExp</p> </td>
-   <td><p>manageEvent</p> </td>
+   <td><p>handleEvent</p> </td>
    <td><p>dataType</p> </td>
   </tr>
   <tr>
@@ -188,33 +189,33 @@ Las palabras clave de formularios adaptables son identificadores predefinidos y 
    <td><p>setFocus</p> </td>
   </tr>
   <tr>
-   <td><p>completionExp</p> </td>
+   <td><p>completeExp</p> </td>
    <td><p>sectionTitle</p> </td>
    <td><p>activeInstance</p> </td>
   </tr>
   <tr>
-   <td><p>completionExpReq</p> </td>
-   <td><p>completionScript</p> </td>
+   <td><p>completeExpReq</p> </td>
+   <td><p>completeScript</p> </td>
    <td><p>activePart</p> </td>
   </tr>
   <tr>
    <td><p>toolbar</p> </td>
-   <td><p>completionBeforeMessage</p> </td>
+   <td><p>completeBeforeMessage</p> </td>
    <td><p>isLastPart</p> </td>
   </tr>
   <tr>
    <td><p>instanceManager</p> </td>
-   <td><p>completionAfterMessage</p> </td>
+   <td><p>completeAfterMessage</p> </td>
    <td><p>isFirstPart</p> </td>
   </tr>
   <tr>
    <td><p>instanceIndex</p> </td>
-   <td><p>completionSuccessScript</p> </td>
+   <td><p>completeSuccessScript</p> </td>
    <td><p>currentActivePart</p> </td>
   </tr>
   <tr>
    <td><p>resumen</p> </td>
-   <td><p>completionFailureScript</p> </td>
+   <td><p>completeFailureScript</p> </td>
    <td><p>sectionName</p> </td>
   </tr>
   <tr>
@@ -224,11 +225,11 @@ Las palabras clave de formularios adaptables son identificadores predefinidos y 
   </tr>
   <tr>
    <td><p>fetchedFromService</p> </td>
-   <td><p>repeablePanelId</p> </td>
+   <td><p>repetiablePanelId</p> </td>
    <td><p>getSelectedIndex</p> </td>
   </tr>
   <tr>
-   <td><p>repeablePanelPath</p> </td>
+   <td><p>repetiblePanelPath</p> </td>
    <td><p>getItemIdentifier</p> </td>
    <td><p>mobileLayout</p> </td>
   </tr>
@@ -240,4 +241,4 @@ Las palabras clave de formularios adaptables son identificadores predefinidos y 
  </tbody>
 </table>
 
-Aparte de las palabras clave enumeradas anteriormente, evite utilizar nombres similares a [API de JavaScript de formularios adaptables](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Aparte de las palabras clave enumeradas anteriormente, evite utilizar nombres similares a las [API de JavaScript de formularios adaptables](https://adobe.com/go/learn_aemforms_javascript_api_63).
