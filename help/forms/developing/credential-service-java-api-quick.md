@@ -8,36 +8,37 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
+role: Desarrollador
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
 
-# Inicio rápido de la API de Java del servicio de credenciales (SOAP) {#credential-service-java-api-quickstart-soap}
+# Inicio rápido de API de Java (SOAP) de Credential Service {#credential-service-java-api-quickstart-soap}
 
-El Inicio rápido de la API de Java (SOAP) está disponible para el servicio de credenciales.
+El inicio rápido de la API de Java (SOAP) está disponible para el servicio Credential.
 
 [Inicio rápido (modo SOAP): Importación de credenciales mediante la API de Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Eliminación de credenciales mediante la API de Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
->Los inicios rápidos ubicados en Programación con formularios AEM se basan en FormsServer que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si utiliza otro sistema operativo, como Unix, sustituya las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Inicio rápido ubicado en Programación con formularios AEM se basan en FormsServer que se implementa en JBoss y en el sistema operativo Windows. Sin embargo, si está utilizando otro sistema operativo, como Unix, reemplace las rutas específicas de Windows con rutas compatibles con el sistema operativo aplicable. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
->No puede realizar operaciones de servicio de credenciales mediante servicios Web.
+>No puede realizar operaciones del servicio Credencial mediante servicios web.
 
 ## Inicio rápido (modo SOAP): Importación de credenciales mediante la API de Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-El siguiente ejemplo de código importa una credencial basada en un archivo llamado *cred.p12*. El valor de alias utilizado para importar la credencial es `Secure`. (Consulte [Importación de credenciales mediante la API del administrador de confianza](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)).
+El siguiente ejemplo de código importa una credencial basada en un archivo llamado *cred.p12*. El valor de alias utilizado para importar las credenciales es `Secure`. (Consulte [Importación de credenciales mediante la API del administrador de confianza](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)).
 
 ```java
  /*
@@ -138,7 +139,7 @@ El siguiente ejemplo de código importa una credencial basada en un archivo llam
 
 ## Inicio rápido (modo SOAP): Eliminación de credenciales mediante la API de Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-En el siguiente ejemplo de código se elimina una credencial basada en un valor de alias *secure*. (Consulte [Eliminación de credenciales mediante la API del administrador de confianza](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)).
+En el siguiente ejemplo de código se elimina una credencial basada en un valor de alias *secure*. (Consulte [Eliminación de credenciales utilizando la API del administrador de confianza](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)).
 
 ```java
  /*
