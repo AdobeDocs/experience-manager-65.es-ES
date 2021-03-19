@@ -1,6 +1,6 @@
 ---
-title: Almacenamiento personalizado para los borradores y el componente de envíos
-seo-title: Almacenamiento personalizado para los borradores y el componente de envíos
+title: Almacenamiento personalizado para borradores y componentes de envíos
+seo-title: Almacenamiento personalizado para borradores y componentes de envíos
 description: Consulte cómo personalizar el almacenamiento de datos de usuario para borradores y envíos.
 seo-description: Consulte cómo personalizar el almacenamiento de datos de usuario para borradores y envíos.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
@@ -8,33 +8,34 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
+feature: Forms Portal
 translation-type: tm+mt
-source-git-commit: 615b0db6da0986d7a74c42ec0d0e14bad7ede168
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 0%
+source-wordcount: '357'
+ht-degree: 1%
 
 ---
 
 
-# Almacenamiento personalizado para los borradores y el componente de envíos {#custom-storage-for-drafts-and-submissions-component}
+# Almacenamiento personalizado para borradores y componentes de envío {#custom-storage-for-drafts-and-submissions-component}
 
 ## Información general {#overview}
 
-AEM Forms permite guardar un formulario como borrador. La funcionalidad de borrador le permite mantener un formulario de trabajo en curso, que puede completar y enviar posteriormente desde cualquier dispositivo.
+AEM Forms permite guardar un formulario como borrador. La funcionalidad de borrador le permite mantener un formulario de trabajo en curso, que puede completar y enviar más tarde desde cualquier dispositivo.
 
-De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo `/content/forms/fp` de la instancia de Publish. Además, los componentes del portal de AEM Forms proporcionan servicios de datos, que puede utilizar para personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar datos de usuario en un almacén de datos.
+De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo `/content/forms/fp` de la instancia de publicación. Además, los componentes del portal de AEM Forms proporcionan servicios de datos, que puede utilizar para personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar datos de usuario en un almacén de datos.
 
 ## Requisitos previos  {#prerequisites}
 
 * Habilitar [componentes del portal de formularios](/help/forms/using/enabling-forms-portal-components.md)
-* Crear una [página de portal de formularios](/help/forms/using/creating-form-portal-page.md)
+* Crear una [página del portal de formularios](/help/forms/using/creating-form-portal-page.md)
 * Habilitar [formularios adaptables para el portal de formularios](/help/forms/using/draft-submission-component.md)
-* Obtenga información sobre [detalles de implementación de almacenamiento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Conozca los [detalles de implementación del almacenamiento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
-## Servicio de datos de borrador {#draft-data-service}
+## Borrador del servicio de datos {#draft-data-service}
 
-Para personalizar el almacenamiento de los datos de usuario para los borradores, debe implementar todos los métodos de la interfaz `DraftDataService`. El siguiente código de muestra describe los métodos y argumentos.
+Para personalizar el almacenamiento de los datos de usuario para los borradores, debe implementar todos los métodos de la interfaz `DraftDataService`. El siguiente código de ejemplo describe los métodos y argumentos.
 
 ```java
 /**
@@ -99,11 +100,11 @@ public interface DraftDataService {
 
 >[!NOTE]
 >
->El valor mínimo de la longitud del campo de ID de borrador es de 26 caracteres. Adobe recomienda definir la longitud del ID de borrador en 26 caracteres o más.
+>El valor mínimo de la longitud del campo de ID de borrador es de 26 caracteres. Adobe recomienda establecer la longitud del ID de borrador en 26 caracteres o más.
 
 ## Servicio de envío de datos {#submission-data-service}
 
-Para personalizar el almacenamiento de los datos de usuario para los envíos, debe implementar todos los métodos de la interfaz `SubmitDataService`. El siguiente código de muestra describe los métodos y argumentos.
+Para personalizar el almacenamiento de los datos de usuario para los envíos, debe implementar todos los métodos de la interfaz `SubmitDataService`. El siguiente código de ejemplo describe los métodos y argumentos.
 
 ```java
 /**
@@ -188,7 +189,7 @@ public interface SubmitDataService {
 }
 ```
 
-El portal de Forms utiliza el concepto de identificador único universal (UUID) para generar un ID único para cada borrador y formulario enviado. También puede generar una ID única propia. Puede implementar la interfaz FPKeyGeneratorService, anular sus métodos y desarrollar una lógica personalizada para generar una ID única personalizada para cada borrador y formulario enviado. Además, establezca la clasificación de servicio de la implementación de generación de ID personalizada más alta que 0. Garantiza que se utilice la implementación personalizada en lugar de la implementación predeterminada.
+El portal de Forms utiliza el concepto de identificador único universal (UUID) para generar un ID único para cada borrador y formulario enviado. También puede generar un ID único propio. Puede implementar la interfaz FPKeyGeneratorService, anular sus métodos y desarrollar una lógica personalizada para generar un ID único personalizado para cada formulario enviado y borrador. Además, establezca la clasificación de servicio de la implementación de generación de ID personalizada más alta que 0. Garantiza que se utilice la implementación personalizada en lugar de la implementación predeterminada.
 
 ```java
 public interface FPKeyGeneratorService {
