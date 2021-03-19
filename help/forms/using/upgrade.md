@@ -9,20 +9,21 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
+role: Administrador
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 0%
+source-wordcount: '233'
+ht-degree: 5%
 
 ---
 
 
 # Actualizar a AEM 6.5 Forms{#upgrade-to-aem-forms}
 
-AEM 6.5 Forms incluye varias funciones y mejoras nuevas que optimizan la creación, administración y experiencia del usuario con formularios y correspondencia. Para obtener más información sobre todas las nuevas funciones y mejoras de AEM 6.5 Forms, consulte [documento de resumen de nuevas funciones](../../forms/using/whats-new.md).
+AEM 6.5 Forms incluye varias funciones y mejoras nuevas que optimizan la creación, administración y experiencia del usuario con formularios y correspondencia. Para obtener más información sobre las nuevas funciones y mejoras de AEM 6.5 Forms, consulte [Nuevo documento resumen de funciones](../../forms/using/whats-new.md).
 
-Puede actualizar la instalación existente de LiveCycle o AEM Forms para obtener nuevas funciones y mejoras ofrecidas en AEM 6.5 Forms, manteniendo intactos los datos, procesos y recursos existentes. Al actualizar, también se conservan los metadatos y el estado de los procesos. Puede elegir una ruta de actualización para comenzar con la actualización.
+Puede actualizar su LiveCycle existente o la instalación de AEM Forms para obtener nuevas funciones y mejoras que se ofrecen en AEM 6.5 Forms, mientras mantiene intactos los datos, procesos y recursos existentes. En la actualización, también se conservan los metadatos y el estado de los procesos. Puede elegir una ruta de actualización para comenzar con la actualización.
 
 El diagrama siguiente muestra las rutas de actualización disponibles para AEM Forms en OSGi:
 
@@ -33,7 +34,7 @@ Puede realizar una actualización directa desde:
 * AEM 6.3 Forms en OSGi
 * AEM 6.4 Forms en OSGi
 
-También puede realizar una actualización de varios saltos desde
+También puede realizar una actualización multisalto desde
 
 * AEM 6.0 Forms en OSGi
 * AEM 6.1 Forms en OSGi
@@ -48,7 +49,7 @@ Puede realizar una actualización directa desde:
 * AEM 6.3 Forms en JEE
 * AEM 6.4 Forms en JEE
 
-También puede realizar una actualización de varios saltos desde
+También puede realizar una actualización multisalto desde
 
 * LiveCycle ES2
 * LiveCycle ES3
