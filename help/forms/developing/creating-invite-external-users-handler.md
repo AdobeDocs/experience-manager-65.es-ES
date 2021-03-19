@@ -1,10 +1,11 @@
 ---
 title: Creación de un controlador de usuarios externos de invitación
 description: Creación de un controlador de usuarios externos de invitación
+role: Desarrollador
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -12,9 +13,9 @@ ht-degree: 0%
 
 # Creación de un controlador de usuarios externos de invitación {#create-invite-external-users-handler}
 
-**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en un entorno JEE.**
 
-Puede crear un controlador de usuarios externos de invitación para el servicio Rights Management. Un controlador de usuarios externos de invitación permite al servicio de Rights Management invitar a usuarios externos para que se conviertan en usuarios Rights Management. Una vez que un usuario se convierte en un usuario Rights Management, puede realizar tareas, como abrir un documento PDF protegido por una política. Después de implementar el controlador de usuarios externos de invitación en AEM Forms, puede utilizar la consola de administración para interactuar con él.
+Puede crear un controlador de usuarios externos de invitación para el servicio de Rights Management. Un controlador de usuarios externos de invitación permite al servicio de Rights Management invitar a usuarios externos para que se conviertan en usuarios Rights Management. Una vez que un usuario se convierte en un usuario Rights Management, el usuario puede realizar tareas como abrir un documento PDF protegido por políticas. Una vez que el controlador de usuarios externos de invitación se haya implementado en AEM Forms, puede utilizar la consola de administración para interactuar con él.
 
 >[!NOTE]
 >
@@ -25,36 +26,36 @@ Puede crear un controlador de usuarios externos de invitación para el servicio 
 Para desarrollar un controlador de usuarios externos de invitación, debe realizar los siguientes pasos:
 
 1. Configure el entorno de desarrollo.
-1. Defina la implementación del controlador de invitados externos para usuarios.
+1. Defina la implementación del controlador de usuarios externos de invitación .
 1. Defina el archivo XML de componente.
 1. Implemente el controlador Invitar usuarios externos.
 1. Pruebe el controlador Invitar usuarios externos.
 
 ## Configuración del entorno de desarrollo {#setting-up-development-environment}
 
-Para configurar el entorno de desarrollo, debe crear un nuevo proyecto Java, como un proyecto Eclipse. La versión de Eclipse que se admite es `3.2.1` o posterior.
+Para configurar el entorno de desarrollo, debe crear un nuevo proyecto Java, como un proyecto de Eclipse. La versión de Eclipse compatible es `3.2.1` o posterior.
 
-El SPI Rights Management requiere que el archivo `edc-server-spi.jar` se establezca en la ruta de clases del proyecto. Si no hace referencia a este archivo JAR, no puede utilizar el SPI Rights Management en el proyecto Java. Este archivo JAR se instala con el SDK de AEM Forms en la carpeta `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
+El SPI del Rights Management requiere que el archivo `edc-server-spi.jar` se establezca en la ruta de clase del proyecto. Si no hace referencia a este archivo JAR, no puede utilizar el Rights Management SPI en su proyecto Java. Este archivo JAR se instala con el SDK para AEM Forms en la carpeta `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` .
 
-Además de agregar el archivo `edc-server-spi.jar` a la ruta de clases del proyecto, también debe agregar los archivos JAR necesarios para utilizar la API de servicio Rights Management. Estos archivos son necesarios para utilizar la API de servicio de Rights Management en el controlador de invitados externos para usuarios.
+Además de añadir el archivo `edc-server-spi.jar` a la ruta de clase de su proyecto, también debe añadir los archivos JAR necesarios para utilizar la API de servicio de Rights Management. Estos archivos son necesarios para utilizar la API del servicio de Rights Management en el controlador de usuarios externos de invitación.
 
-## Definición de la implementación del controlador de invitar usuarios externos {#define-invite-external-users-handler}
+## Definición de la implementación del controlador de usuarios externos de invitación {#define-invite-external-users-handler}
 
-Para desarrollar un controlador de usuarios externos de invitación, debe crear una clase Java que implemente la interfaz `com.adobe.edc.server.spi.ersp.InvitedUserProvider`. Esta clase contiene un método denominado `invitedUser`, que el servicio de Rights Management invoca cuando se envían direcciones de correo electrónico mediante la página **Añadir usuarios invitados** a la que se puede acceder desde la consola de administración.
+Para desarrollar un controlador de usuarios externos de invitación, debe crear una clase Java que implemente la interfaz `com.adobe.edc.server.spi.ersp.InvitedUserProvider`. Esta clase contiene un método denominado `invitedUser`, que el servicio de Rights Management invoca cuando las direcciones de correo electrónico se envían mediante la página **Agregar usuarios invitados** accesible a través de la consola de administración.
 
-El método `invitedUser` acepta una instancia `java.util.List`, que contiene direcciones de correo electrónico con tipo cadena que se envían desde la página **Añadir usuarios invitados**. El método `invitedUser` devuelve una matriz de objetos `InvitedUserProviderResult`, que generalmente es una asignación de direcciones de correo electrónico a objetos User (no devuelve null).
+El método `invitedUser` acepta una instancia `java.util.List`, que contiene direcciones de correo electrónico con tipo de cadena que se envían desde la página **Agregar usuarios invitados**. El método `invitedUser` devuelve una matriz de objetos `InvitedUserProviderResult`, que generalmente es una asignación de direcciones de correo electrónico a objetos User (no devuelve nulo).
 
 >[!NOTE]
 >
->Además de mostrar cómo crear un controlador de invitación de usuarios externos, esta sección también utiliza la API de AEM Forms.
+>Además de mostrar cómo crear un controlador de usuarios externos de invitación, esta sección también utiliza la API de AEM Forms.
 
-La implementación del controlador de usuarios externos de invitación contiene un método definido por el usuario denominado `createLocalPrincipalAccount`. Este método acepta un valor de cadena que especifica una dirección de correo electrónico como valor de parámetro. El método `createLocalPrincipalAccount` asume la preexistencia de un dominio local denominado `EDC_EXTERNAL_REGISTERED`. Puede configurar este nombre de dominio para que sea lo que desee; sin embargo, para una aplicación de producción, es posible que desee integrarla con un dominio empresarial.
+La implementación del controlador de usuarios externos de invitación contiene un método definido por el usuario llamado `createLocalPrincipalAccount`. Este método acepta un valor de cadena que especifica una dirección de correo electrónico como valor de parámetro. El método `createLocalPrincipalAccount` asume la preexistencia de un dominio local llamado `EDC_EXTERNAL_REGISTERED`. Puede configurar este nombre de dominio para que sea lo que desee; sin embargo, para una aplicación de producción, es posible que desee integrarla con un dominio de empresa.
 
-El método `createUsers` se repite en cada dirección de correo electrónico y crea un objeto User correspondiente (un usuario local en el dominio `EDC_EXTERNAL_REGISTERED`). Finalmente, se llama al método `doEmails`. Este método se deja intencionalmente como un código auxiliar en el ejemplo. En una implementación de producción, contendría lógica de aplicación para enviar mensajes de correo electrónico de invitación a los usuarios recién creados. Se deja en la muestra para mostrar el flujo lógico de la aplicación de una aplicación real.
+El método `createUsers` se repite sobre cada dirección de correo electrónico y crea un objeto User correspondiente (un usuario local en el dominio `EDC_EXTERNAL_REGISTERED` ). Finalmente, se llama al método `doEmails`. Este método se deja intencionalmente como un stub en la muestra. En una implementación de producción, contendría lógica de aplicación para enviar mensajes de correo electrónico de invitación a los usuarios recién creados. Se deja en el ejemplo para mostrar el flujo lógico de la aplicación de una aplicación real.
 
-### Definición de la implementación del controlador de invitar usuarios externos {#user-handler-implementation}
+### Definición de la implementación del controlador de usuarios externos de invitación {#user-handler-implementation}
 
-La siguiente implementación del controlador de invitar usuarios externos acepta las direcciones de correo electrónico enviadas desde la página Añadir usuarios invitados a la que se puede acceder desde la consola de administración.
+La siguiente implementación del controlador de usuarios externos de invitación acepta las direcciones de correo electrónico enviadas desde la página Agregar usuarios invitados a la que se puede acceder desde la consola de administración.
 
 ```as3
 package com.adobe.livecycle.samples.inviteexternalusers.provider; 
@@ -166,13 +167,13 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 >[!NOTE]
 >
->Esta clase de Java se guarda como un archivo JAVA llamado InviteExternalUsersSample.java.
+>Esta clase Java se guarda como un archivo JAVA llamado InviteExternalUsersSample.java.
 
 ## Definición del archivo XML de componentes para el controlador de autorización {#define-component-xml-authorization-handler}
 
 Debe definir un archivo XML de componente para implementar el componente de proceso de invitación de usuarios externos. Existe un archivo XML de componente para cada componente y proporciona metadatos sobre el componente.
 
-El siguiente archivo `component.xml` se utiliza para el controlador de invitar usuarios externos. Observe que el nombre del servicio es `InviteExternalUsersSample` y que la operación que este servicio expone se denomina `invitedUser`. El parámetro de entrada es una instancia `java.util.List` y el valor de salida es una matriz de instancias `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult`.
+El siguiente archivo `component.xml` se utiliza para el controlador de usuarios externos de invitación. Observe que el nombre del servicio es `InviteExternalUsersSample` y la operación que este servicio expone se llama `invitedUser`. El parámetro de entrada es una instancia `java.util.List` y el valor de salida es una matriz de instancias `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult`.
 
 ### Definición del archivo XML de componente para el controlador de usuarios externos de invitación {#component-xml-invite-external-users-handler}
 
@@ -201,48 +202,48 @@ El siguiente archivo `component.xml` se utiliza para el controlador de invitar u
 </component> 
 ```
 
-## Empaquetado del controlador de invitar usuarios externos {#packaging-invite-external-users-handler}
+## Empaquetado del controlador de usuarios externos de invitación {#packaging-invite-external-users-handler}
 
-Para implementar el controlador de invitar usuarios externos en AEM Forms, debe empaquetar el proyecto Java en un archivo JAR. Debe asegurarse de que los archivos JAR externos de los que depende la lógica empresarial del controlador de usuarios externos de invitación, como los archivos `edc-server-spi.jar` y `adobe-rightsmanagement-client.jar`, también se incluyen en el archivo JAR. Asimismo, el archivo XML de componente debe estar presente. El archivo `component.xml` y los archivos JAR externos deben estar ubicados en la raíz del archivo JAR.
+Para implementar el controlador de usuarios externos de invitación en AEM Forms, debe empaquetar el proyecto Java en un archivo JAR. Debe asegurarse de que los archivos JAR externos de los que depende la lógica empresarial del controlador de usuarios externos de invitación, como los archivos `edc-server-spi.jar` y `adobe-rightsmanagement-client.jar` también estén incluidos en el archivo JAR. Además, el archivo XML de componente debe estar presente. El archivo `component.xml` y los archivos JAR externos deben estar ubicados en la raíz del archivo JAR.
 
 >[!NOTE]
 >
 >En la siguiente ilustración, se muestra una clase `BootstrapImpl`. En esta sección no se explica cómo crear una clase `BootstrapImpl`.
 
-La siguiente ilustración muestra el contenido del proyecto Java que se empaqueta en el archivo JAR del controlador de usuarios externos de invitación.
+La siguiente ilustración muestra el contenido del proyecto Java empaquetado en el archivo JAR del controlador de usuarios externos de invitación.
 
-![Invitar a usuarios](assets/ci_ci_InviteUsers.png)
+![Invitar usuarios](assets/ci_ci_InviteUsers.png)
 
 A. Archivos JAR externos requeridos por el componente B. Archivo JAVA
 
-Debe empaquetar el controlador de invitar usuarios externos en un archivo JAR. En el diagrama anterior, observe que se muestran los archivos .JAVA. Una vez empaquetados en un archivo JAR, también se deben especificar los archivos .CLASS correspondientes. Sin los archivos .CLASS, el controlador de autorización no funciona.
+Debe empaquetar el controlador de usuarios externos de invitación en un archivo JAR. En el diagrama anterior, observe que se muestran los archivos .JAVA. Una vez empaquetado en un archivo JAR, también se deben especificar los archivos .CLASS correspondientes. Sin los archivos .CLASS, el controlador de autorización no funciona.
 
 >[!NOTE]
 >
->Después de empaquetar el controlador de autorización externo en un archivo JAR, puede implementar el componente en AEM Forms. Solo se puede implementar un controlador de usuarios externos de invitación en un momento dado.
+>Después de empaquetar el controlador de autorización externo en un archivo JAR, puede implementar el componente en AEM Forms. Solo se puede implementar un controlador de usuarios externos de invitación en un momento determinado.
 
 >[!NOTE]
 >
 >También puede implementar un componente mediante programación.
 
-## Prueba del controlador de invitar usuarios externos {#testing-invite-external-users-handler}
+## Prueba del controlador de usuarios externos de invitación {#testing-invite-external-users-handler}
 
-Para probar el controlador de invitar usuarios externos, puede agregar usuarios externos para invitar mediante la consola de administración.
+Para probar el controlador de invitar usuarios externos, puede agregar usuarios externos a la invitación mediante la consola de administración.
 
-Para agregar usuarios externos para invitar mediante la consola de administración:
+Para agregar usuarios externos a la invitación mediante la consola de administración:
 
 1. Implemente el archivo JAR del controlador de usuarios externos de invitación mediante Workbench.
 1. Reinicie el servidor de aplicaciones.
 1. Inicie sesión en la consola de administración.
-1. Haga clic en **[!UICONTROL Servicios]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuración]** > Registro de usuario invitado ****.
-1. Habilite el registro de usuarios invitados marcando la casilla **[!UICONTROL Habilitar el registro de usuarios invitados]**. En **[!UICONTROL Usar sistema de registro integrado]**, haga clic en **[!UICONTROL No]**. Guarde la configuración.
+1. Haga clic en **[!UICONTROL Servicios]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuración]** > **[!UICONTROL Registro de usuario]** invitado.
+1. Habilite el registro de usuario invitado marcando la casilla **[!UICONTROL Habilitar registro de usuario invitado]**. En **[!UICONTROL Usar sistema de registro integrado]**, haga clic en **[!UICONTROL No]**. Guarde la configuración.
 1. En la página de inicio de la consola de administración, haga clic en **[!UICONTROL Configuración]** > **[!UICONTROL Administración de usuarios]** > **[!UICONTROL Administración de dominios]**.
-1. Haga clic en **[!UICONTROL Nuevo dominio local]**. En la página siguiente, cree un dominio con el nombre y el valor de identificador `EDC_EXTERNAL_REGISTERED`. Guarde los cambios.
-1. En la página de inicio de la consola de administración, haga clic en **[!UICONTROL Servicios]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Usuarios invitados y locales]**. Aparece la página **[!UICONTROL Añadir usuario invitado]**.
-1. Escriba las direcciones de correo electrónico (como el controlador de usuarios externos de la invitación actual no envía realmente mensajes de correo electrónico, la dirección de correo electrónico no tiene que ser válida). Haga clic en **[!UICONTROL Aceptar]**. Se invita a los usuarios al sistema.
+1. Haga clic en **[!UICONTROL Nuevo dominio local]**. En la página siguiente, cree un dominio con el nombre y el valor de identificador de `EDC_EXTERNAL_REGISTERED`. Guarde los cambios.
+1. En la página de inicio de la consola de administración, haga clic en **[!UICONTROL Servicios]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Usuarios invitados y locales]**. Aparece la página **[!UICONTROL Agregar usuario invitado]**.
+1. Introduzca direcciones de correo electrónico (como el controlador de usuario externo de la invitación actual no envía realmente mensajes de correo electrónico, la dirección de correo electrónico no tiene que ser válida). Haga clic en **[!UICONTROL Aceptar]**. Los usuarios son invitados al sistema.
 1. En la página de inicio de la consola de administración, haga clic en **[!UICONTROL Configuración]** > **[!UICONTROL Administración de usuarios]** > **[!UICONTROL Usuarios y grupos]**.
-1. En el campo **[!UICONTROL Buscar]**, escriba una dirección de correo electrónico que especificó. Haga clic en **[!UICONTROL Buscar]**. El usuario invitado aparece como usuario en el dominio local `EDC_EXTERNAL_REGISTERED`.
+1. En el campo **[!UICONTROL Find]**, introduzca una dirección de correo electrónico especificada. Haga clic en **[!UICONTROL Buscar]**. El usuario que ha invitado aparece como un usuario en el dominio local `EDC_EXTERNAL_REGISTERED` .
 
 >[!NOTE]
 >
->El controlador de invitar usuarios externos falla si el componente se detiene o desinstala.
+>El controlador de usuarios externos de invitación falla si el componente se detiene o desinstala.
