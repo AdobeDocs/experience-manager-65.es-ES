@@ -2,10 +2,12 @@
 title: Etiquetas inteligentes mejoradas
 description: Etiquetas inteligentes mejoradas
 contentOwner: AG
+feature: Etiquetas inteligentes, buscar
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1602'
 ht-degree: 2%
 
 ---
@@ -23,7 +25,7 @@ Para que el servicio de contenido inteligente aplique las etiquetas correctas, e
 
 Una vez que una etiqueta está preparada y lista, el servicio ahora puede aplicar estas etiquetas en los recursos a través de un flujo de trabajo de etiquetado.
 
-En segundo plano, el servicio de contenido inteligente utiliza el marco de IA de Adobe Sensei para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes en un conjunto diferente de recursos.
+En segundo plano, el servicio de contenido inteligente utiliza el marco de Adobe Sensei AI para entrenar su algoritmo de reconocimiento de imágenes en la estructura de etiquetas y la taxonomía empresarial. A continuación, esta inteligencia de contenido se utiliza para aplicar etiquetas relevantes en un conjunto diferente de recursos.
 
 El servicio de contenido inteligente es un servicio en la nube alojado en [!DNL Adobe Developer Console]. Para utilizarlo en [!DNL Adobe Experience Manager], el administrador del sistema debe integrar su implementación [!DNL Experience Manager] con [!DNL Adobe Developer Console].
 
@@ -40,7 +42,7 @@ En resumen, estos son los pasos principales para utilizar el servicio de conteni
 
 Antes de utilizar el servicio de contenido inteligente, asegúrese de lo siguiente para crear una integración en [!DNL Adobe Developer Console]:
 
-* Una cuenta de Adobe ID con privilegios de administrador para la organización.
+* Cuenta de Adobe ID con privilegios de administrador para la organización.
 * Habilite el servicio de Smart Content Service para su organización.
 * Para agregar el paquete base de servicios de contenido inteligente a una implementación, licencia [!DNL Adobe Experience Manager Sites] Paquete base y [!DNL Assets] complemento.
 
@@ -95,7 +97,7 @@ Agregue los recursos a una carpeta y aplique las etiquetas a cada recurso desde 
 >
 >1. La formación es un proceso irrevocable. Adobe recomienda revisar las etiquetas del conjunto depurado de recursos antes de entrenar el servicio de contenido inteligente en las etiquetas.
 >1. Antes de recibir formación para una etiqueta, consulte [Directrices de formación del servicio de contenido inteligente](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
->1. Cuando imparte el servicio de contenido inteligente por primera vez, Adobe recomienda que lo imparta en al menos dos etiquetas diferentes.
+>1. Cuando entrena el servicio de contenido inteligente por primera vez, Adobe recomienda que lo entrene en al menos dos etiquetas diferentes.
 
 
 ## Comprender los [!DNL Experience Manager] resultados de búsqueda con etiquetas inteligentes {#understandsearch}
@@ -118,7 +120,7 @@ Los resultados de búsqueda que coinciden con todos los términos de búsqueda e
 
 ## Etiquetar recursos automáticamente {#tagging-assets-automatically}
 
-Una vez que haya formado el servicio de contenido inteligente, puede activar el flujo de trabajo de etiquetado para aplicar automáticamente las etiquetas adecuadas en un conjunto diferente de recursos similares.
+Una vez que haya formado el servicio de contenido inteligente, puede almacenar en déclencheur el flujo de trabajo de etiquetado para aplicar automáticamente las etiquetas adecuadas en un conjunto diferente de recursos similares.
 
 Puede ejecutar el flujo de trabajo de etiquetado periódicamente o siempre que sea necesario.
 
@@ -134,7 +136,7 @@ Una vez seleccionada esta opción para una carpeta, el servicio de contenido int
 
 ### Etiquetado a petición {#on-demand-tagging}
 
-Puede activar el flujo de trabajo de etiquetado desde la consola de flujo de trabajo o desde la cronología para etiquetar los recursos al instante.
+Puede almacenar en déclencheur el flujo de trabajo de etiquetado desde la consola de flujo de trabajo o desde la cronología para etiquetar los recursos al instante.
 
 >[!NOTE]
 >
