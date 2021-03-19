@@ -1,18 +1,19 @@
 ---
-title: Inicio rápido de la API de Java (SOAP)LiveCycleProcess
-seo-title: Inicio rápido de la API de Java (SOAP)LiveCycleProcess
-description: 'Utilice el Inicio rápido de la API de Java (SOAP) de LiveCycleProcess para buscar instancias de proceso, suspender instancias de proceso, inicio de instancias de proceso suspendidas, finalización de instancias de proceso, depuración de datos de proceso y recuperación del estado de un trabajo. '
-seo-description: Utilice el Inicio rápido de la API de Java (SOAP) de LiveCycleProcess para buscar instancias de proceso, suspender instancias de proceso, inicio de instancias de proceso suspendidas, finalización de instancias de proceso, depuración de datos de proceso y recuperación del estado de un trabajo.
+title: Inicio rápido de la API de Java (SOAP) de LiveCycleProcess
+seo-title: Inicio rápido de la API de Java (SOAP) de LiveCycleProcess
+description: 'Utilice el inicio rápido de la API Java (SOAP) de LiveCycleProcess para buscar instancias de proceso, suspender instancias de proceso, iniciar instancias de proceso suspendidas, finalizar instancias de proceso, depurar datos de proceso y recuperar el estado de un trabajo. '
+seo-description: Utilice el inicio rápido de la API Java (SOAP) de LiveCycleProcess para buscar instancias de proceso, suspender instancias de proceso, iniciar instancias de proceso suspendidas, finalizar instancias de proceso, depurar datos de proceso y recuperar el estado de un trabajo.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
+role: Desarrollador
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -20,11 +21,11 @@ ht-degree: 0%
 
 # Inicio rápido de la API de Java (SOAP) de LiveCycleProcess {#livecycleprocess-java-api-soap-quick-start}
 
-El Inicio rápido de la API de Java (SOAP) está disponible para los procesos. Una *instancia de proceso* es una incidencia de un proceso específico que se inició con un método de invocación como la API de invocación o desde Workspace.
+El inicio rápido de la API de Java (SOAP) está disponible para procesos. Una *instancia de proceso* es una ocurrencia de un proceso específico que se inició con un método de invocación como la API de invocación o desde Workspace.
 
 [Inicio rápido (modo SOAP): Búsqueda de instancias de proceso mediante la API de Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
-[Inicio rápido (modo SOAP): Suspensión de instancias de proceso mediante la API de Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
+[Inicio rápido (modo SOAP): Suspender instancias de proceso mediante la API de Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Inicio de instancias de proceso suspendidas mediante la API de Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
 
@@ -34,15 +35,15 @@ El Inicio rápido de la API de Java (SOAP) está disponible para los procesos. U
 
 [Inicio rápido (modo SOAP): Recuperación del estado de un trabajo mediante la API de Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
->Los inicios rápidos que se encuentran en Programación con AEM Forms se basan en el Forms si está utilizando otro sistema operativo, como Unix, reemplace las rutas específicas de Windows con las rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte [Configuración de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Los inicios rápidos ubicados en Programación con AEM Forms se basan en Forms si está utilizando otro sistema operativo, como Unix, reemplace las rutas específicas de windows con rutas compatibles con el sistema operativo aplicable. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)).
 
 ## Inicio rápido (modo SOAP): Búsqueda de instancias de proceso mediante la API de Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-El siguiente ejemplo de código Java busca instancias de proceso basadas en el proceso *Préstamo hipotecario - precompilado*.
+El siguiente ejemplo de código Java busca instancias de proceso basadas en el proceso *MortgageLoan - Prebuilt*.
 
 ```java
  /*
@@ -158,7 +159,7 @@ El siguiente ejemplo de código Java busca instancias de proceso basadas en el p
  
 ```
 
-## Inicio rápido (modo SOAP): Suspensión de instancias de proceso mediante la API de Java {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
+## Inicio rápido (modo SOAP): Suspender instancias de proceso mediante la API de Java {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
 
 El siguiente ejemplo de código Java suspende una instancia de proceso. Para suspender correctamente una instancia de proceso, necesita el identificador de invocación de proceso que se puede obtener al invocar un proceso de larga duración mediante la API de invocación.
 
@@ -252,7 +253,7 @@ El siguiente ejemplo de código Java suspende una instancia de proceso. Para sus
 
 ## Inicio rápido (modo SOAP): Inicio de instancias de proceso suspendidas mediante la API de Java {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
 
-El siguiente ejemplo de código Java inicio una instancia de proceso suspendida.
+El siguiente ejemplo de código Java inicia una instancia de proceso suspendida.
 
 ```java
  /*
@@ -431,7 +432,7 @@ El siguiente ejemplo de código Java finaliza una instancia de proceso con el va
 
 ## Inicio rápido (modo SOAP): Depuración de datos de proceso mediante la API de Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-El siguiente código Java purga los datos de un proceso denominado *SecureDocument*. Se utiliza un filtro que especifica la depuración de datos para las instancias de proceso en las que la variable de proceso denominada *inValue* es buena a 200.
+El siguiente código Java purga los datos de un proceso denominado *SecureDocument*. Se utiliza un filtro que especifica depurar los datos de las instancias de proceso en las que la variable de proceso *inValue* es buena a 200.
 
 ```java
  /*
