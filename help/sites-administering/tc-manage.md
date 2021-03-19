@@ -1,18 +1,19 @@
 ---
 title: Administración de proyectos de traducción
 seo-title: Administración de proyectos de traducción
-description: Obtenga información sobre cómo administrar proyectos de traducción en AEM.
-seo-description: Obtenga información sobre cómo administrar proyectos de traducción en AEM.
+description: Aprenda a administrar proyectos de traducción en AEM.
+seo-description: Aprenda a administrar proyectos de traducción en AEM.
 uuid: f6f79b5b-dc08-4dde-b464-719345d233a6
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
+feature: Copiar idioma
 translation-type: tm+mt
-source-git-commit: b9c77b9b50ae7f18198baddf82dffcd8de4f30be
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3455'
 ht-degree: 1%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 1%
 
 Después de preparar el contenido para la traducción, debe completar la estructura del idioma creando las copias de idioma que faltan y crear proyectos de traducción.
 
-Los proyectos de traducción permiten administrar la traducción del contenido de AEM. Un proyecto de traducción es un tipo de [proyecto](/help/sites-authoring/projects.md) de AEM que contiene recursos que se deben traducir a otros idiomas. Estos recursos son las páginas y los recursos de las [copias de idioma](/help/sites-administering/tc-prep.md) que se crean a partir del maestro de idioma.
+Los proyectos de traducción permiten administrar la traducción de AEM contenido. Un proyecto de traducción es un tipo de AEM [proyecto](/help/sites-authoring/projects.md) que contiene recursos que se deben traducir a otros idiomas. Estos recursos son las páginas y los recursos de las [copias de idioma](/help/sites-administering/tc-prep.md) que se crean a partir del maestro de idioma.
 
 Cuando se añaden recursos a un proyecto de traducción, se crea un trabajo de traducción para ellos. Los trabajos proporcionan comandos e información de estado que se utilizan para administrar los flujos de trabajo de traducción humana y traducción automática que se ejecutan en los recursos.
 
@@ -44,7 +45,7 @@ Los proyectos y trabajos de traducción se crean con los flujos de trabajo de pr
 
 ## Realización de traducciones iniciales y actualización de traducciones existentes {#performing-initial-translations-and-updating-existing-translations}
 
-AEM detecta si se está creando un proyecto de traducción para la traducción inicial de contenido o para actualizar las copias de idiomas ya traducidas. Cuando crea un proyecto de traducción para una página e indica los idiomas de las copias que traduce, AEM detecta si la página de origen ya existe en los idiomas de destino:
+AEM detecta si se está creando un proyecto de traducción para la traducción inicial del contenido o para actualizar las copias de idioma ya traducidas. Cuando crea un proyecto de traducción para una página e indica los textos de idiomas para los que está traduciendo, AEM detecta si la página de origen ya existe en los textos de idiomas de destino:
 
 * **La copia de idioma no incluye la página:** AEM trata esta situación como la traducción inicial. La página se copia inmediatamente en la copia de idioma y se incluye en el proyecto. Cuando la página traducida se importa a AEM, AEM la copia directamente en el idioma.
 * **La copia de idioma ya incluye la página:** AEM trata esta situación como una traducción actualizada. Se crea un lanzamiento, se agrega una copia de la página al lanzamiento y se incluye en el proyecto. Los lanzamientos permiten revisar las traducciones actualizadas antes de enviarlas a la copia de idioma:
@@ -54,7 +55,7 @@ AEM detecta si se está creando un proyecto de traducción para la traducción i
 
 Por ejemplo, la raíz de idioma /content/geometrixx/fr se crea para la traducción al francés del idioma maestro /content/geometrixx/en. No hay otras páginas en francés.
 
-* Se crea un proyecto de traducción para la página /content/geometrixx/en/products y todas las páginas secundarias, dirigiéndose a la copia en francés. Como la copia de idioma no incluye la página /content/geometrixx/fr/products, AEM copia inmediatamente la página /content/geometrixx/en/products y todas las páginas secundarias a la copia en francés. Las copias también se incluyen en el proyecto de traducción.
+* Se crea un proyecto de traducción para la página /content/geometrixx/en/products y todas las páginas secundarias, dirigiéndose a la copia en francés. Como la copia de idioma no incluye la página /content/geometrixx/fr/products , AEM copia inmediatamente la página /content/geometrixx/en/products y todas las páginas secundarias a la copia en francés. Las copias también se incluyen en el proyecto de traducción.
 * Se crea un proyecto de traducción para la página /content/geometrixx/en y todas las páginas secundarias, con el objetivo de la copia en francés. Como la copia de idioma incluye la página que corresponde a la página /content/geometrixx/en (la raíz del idioma), AEM copia la página /content/geometrixx/en y todas las páginas secundarias y las añade a un lanzamiento. Las copias también se incluyen en el proyecto de traducción.
 
 ## Creación de proyectos de traducción mediante el panel Referencias {#creating-translation-projects-using-the-references-panel}
@@ -87,7 +88,7 @@ Después de traducir, puede [revisar la traducción](#reviewing-and-promoting-up
 
 1. Utilice la consola Sitios para seleccionar la página que está agregando a los proyectos de traducción.
 
-   Por ejemplo, para traducir las páginas en inglés del sitio de demostración de Geometrixx, seleccione Sitio de demostración de Geometrixx > Inglés.
+   Por ejemplo, para traducir las páginas en inglés de Sitio de demostración de Geometrixx, seleccione Sitio de demostración de Geometrixx > Inglés.
 
 1. En la barra de herramientas, pulse o haga clic en Referencias.
 
@@ -109,7 +110,7 @@ Después de traducir, puede [revisar la traducción](#reviewing-and-promoting-up
 
 1. Utilice la consola Sitios para seleccionar la página que está agregando a los proyectos de traducción.
 
-   Por ejemplo, para traducir las páginas en inglés del sitio de demostración de Geometrixx, seleccione Sitio de demostración de Geometrixx > Inglés.
+   Por ejemplo, para traducir las páginas en inglés de Sitio de demostración de Geometrixx, seleccione Sitio de demostración de Geometrixx > Inglés.
 
 1. En la barra de herramientas, pulse o haga clic en Referencias.
 
@@ -136,7 +137,7 @@ Al igual que al crear un nuevo proyecto, al agregar páginas, se añaden copias 
 
 1. Utilice la consola Sitios para seleccionar la página que está agregando al proyecto de traducción.
 
-   Por ejemplo, para traducir las páginas en inglés del sitio de demostración de Geometrixx, seleccione Sitio de demostración de Geometrixx > Inglés.
+   Por ejemplo, para traducir las páginas en inglés de Sitio de demostración de Geometrixx, seleccione Sitio de demostración de Geometrixx > Inglés.
 
 1. En la barra de herramientas, pulse o haga clic en Referencias.
 
@@ -170,11 +171,11 @@ Puede agregar páginas, recursos, etiquetas o diccionarios i18n al trabajo de tr
 
 1. Toque o haga clic en Agregar y en Páginas/Recursos.
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
 1. Seleccione el elemento superior de la rama que desea agregar y, a continuación, toque o haga clic en el icono de marca de verificación. Puede realizar varias selecciones.
 
-   ![chlimage_1-248](assets/chlimage_1-248.png)
+   ![chlimage_1-247](assets/chlimage_1-248.png)
 
 1. También puede seleccionar el icono de búsqueda para buscar fácilmente páginas o recursos que desee agregar a su trabajo de traducción.
 
@@ -450,7 +451,7 @@ Puede descargar el contenido de un trabajo de traducción, por ejemplo, para env
 
 ## Importación de un trabajo de traducción {#importing-a-translation-job}
 
-Puede importar contenido traducido a AEM, por ejemplo, cuando su proveedor de traducción se lo envía porque no está integrado con AEM a través de un conector.
+Puede importar contenido traducido a AEM, por ejemplo, cuando el proveedor de traducción se lo envía porque no están integrados con AEM a través de un conector.
 
 1. En el menú desplegable del mosaico Trabajo de traducción , pulse o haga clic en Importar.
 1. Utilice el cuadro de diálogo del explorador web para seleccionar el archivo que desea importar.
