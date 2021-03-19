@@ -1,17 +1,18 @@
 ---
 title: API para trabajar con formularios enviados en el portal de formularios
 seo-title: API para trabajar con formularios enviados en el portal de formularios
-description: AEM Forms proporciona API que se pueden usar para realizar consultas y acciones en los datos de formularios enviados en el portal de formularios.
-seo-description: AEM Forms proporciona API que se pueden usar para realizar consultas y acciones en los datos de formularios enviados en el portal de formularios.
+description: AEM Forms proporciona API que puede utilizar para consultar y realizar acciones en los datos de formularios enviados en el portal de formularios.
+seo-description: AEM Forms proporciona API que puede utilizar para consultar y realizar acciones en los datos de formularios enviados en el portal de formularios.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
+feature: Forms Portal
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '572'
 ht-degree: 7%
 
 ---
@@ -19,15 +20,15 @@ ht-degree: 7%
 
 # API para trabajar con formularios enviados en el portal de formularios {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms proporciona API que puede utilizar para la consulta de datos de formularios enviados a través del portal de formularios. Además, puede publicar comentarios o actualizar las propiedades de los formularios enviados mediante las API explicadas en este documento.
+AEM Forms proporciona API que puede utilizar para consultar los datos de formularios enviados a través del portal de formularios. Además, puede publicar comentarios o actualizar las propiedades de los formularios enviados mediante las API explicadas en este documento.
 
 >[!NOTE]
 >
->Los usuarios que invoquen las API deben agregarse al grupo de revisores como se describe en [Asociación de revisores de envío a un formulario](/help/forms/using/adding-reviewers-form.md).
+>Los usuarios que invoquen las API deben agregarse al grupo de revisores tal como se describe en [Asociación de revisores de envío a un formulario](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
-Devuelve una lista de todos los formularios elegibles.
+Devuelve una lista de todos los formularios aptos.
 
 ### Parámetros de URL {#url-parameters}
 
@@ -35,7 +36,7 @@ Esta API no requiere parámetros adicionales.
 
 ### Respuesta {#response}
 
-El objeto response contiene una matriz JSON que incluye nombres de formularios y su ruta de repositorio. La estructura de la respuesta es la siguiente:
+El objeto response contiene una matriz JSON que incluye nombres de formularios y su ruta de acceso al repositorio. La estructura de la respuesta es la siguiente:
 
 ```json
 [
@@ -59,9 +60,9 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubsions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET /content/forms/portal/submission.review.json?func=getAllSubmission {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
-Devuelve detalles de todos los formularios enviados. Sin embargo, puede utilizar parámetros de URL para limitar los resultados.
+Devuelve los detalles de todos los formularios enviados. Sin embargo, puede usar parámetros de URL para limitar los resultados.
 
 ### Parámetros de URL {#url-parameters-1}
 
@@ -75,7 +76,7 @@ Especifique los siguientes parámetros en la dirección URL de la solicitud:
   </tr>
   <tr>
    <td><code>formPath</code></td>
-   <td>Especifica la ruta del repositorio de CRX donde reside el formulario. Si no especifica la ruta del formulario, devuelve una respuesta vacía.<br /> </td>
+   <td>Especifica la ruta del repositorio CRX donde reside el formulario. Si no especifica la ruta del formulario, devuelve una respuesta vacía.<br /> </td>
   </tr>
   <tr>
    <td><code>offset</code> (opcional)</td>
@@ -87,7 +88,7 @@ Especifique los siguientes parámetros en la dirección URL de la solicitud:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (opcional)</td>
-   <td>Especifica la propiedad para ordenar los resultados. El valor predeterminado es <strong>jcr:lastModified</strong>, que ordena los resultados en función de la última vez que se modificó.</td>
+   <td>Especifica la propiedad para ordenar los resultados. El valor predeterminado es <strong>jcr:lastModified</strong>, que ordena los resultados en función de la última hora de modificación.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (opcional)</td>
@@ -95,7 +96,7 @@ Especifique los siguientes parámetros en la dirección URL de la solicitud:
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (opcional)</td>
-   <td>Especifica una lista separada por comas de las propiedades del formulario que se incluirán en los resultados. Las propiedades predeterminadas son:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
+   <td>Especifica una lista de propiedades de formulario separadas por coma que se incluirán en los resultados. Las propiedades predeterminadas son:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> (opcional)</td>
@@ -131,7 +132,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 
 ## POST /content/forms/portal/submission.review.json?func=addComment {#post-content-forms-portal-submission-review-json-func-addcomment-br}
 
-Añade un comentario en la instancia de envío especificada.
+Agrega un comentario a la instancia de envío especificada.
 
 ### Parámetros de URL {#url-parameters-2}
 
@@ -140,7 +141,7 @@ Especifique los siguientes parámetros en la dirección URL de la solicitud:
 | Parámetro | Descripción |
 |---|---|
 | `submitID` | Especifica el ID de metadatos asociado a una instancia de envío. |
-| `Comment` | Especifica el texto que se va a agregar al comentario a la instancia de envío especificada. |
+| `Comment` | Especifica el texto para que el comentario se agregue a la instancia de envío especificada. |
 
 ### Respuesta {#response-2}
 
@@ -174,7 +175,7 @@ Especifique el siguiente parámetro en la dirección URL de la solicitud:
 
 ### Respuesta {#response-3}
 
-El objeto response contiene una matriz JSON que incluye todos los comentarios asociados al ID de envío especificado. La estructura de la respuesta es la siguiente:
+El objeto Response contiene una matriz JSON que incluye todos los comentarios asociados con el ID de envío especificado. La estructura de la respuesta es la siguiente:
 
 ```json
 [{
@@ -209,7 +210,7 @@ Especifique los siguientes parámetros en la dirección URL de la solicitud:
 | Parámetro | Descripción |
 |---|---|
 | `submitID` | Especifica el ID de metadatos asociado a una instancia de envío. |
-| `property` | Especifica la propiedad de formulario que se va a actualizar. |
+| `property` | Especifica la propiedad del formulario que se va a actualizar. |
 | `value` | Especifica el valor de la propiedad de formulario que se va a actualizar. |
 
 ### Respuesta {#response-4}
