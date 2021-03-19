@@ -1,41 +1,42 @@
 ---
-title: APIQ del servicio de backup y restauraciónInicios rápidos
-seo-title: APIQ del servicio de backup y restauraciónInicios rápidos
-description: APIQ del servicio de backup y restauraciónInicios rápidos
+title: Inicio de APIQuick de servicio de copia de seguridad y restauración
+seo-title: Inicio de APIQuick de servicio de copia de seguridad y restauración
+description: Inicio de APIQuick de servicio de copia de seguridad y restauración
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
+role: Desarrollador
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 
-# Inicios rápidos de la API de servicio de backup y restauración {#backup-and-restore-service-apiquick-starts}
+# Inicio rápido de API de servicio de copia de seguridad y restauración {#backup-and-restore-service-apiquick-starts}
 
-**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en un entorno JEE.**
 
-El Inicio rápido de la API de Java (SOAP) está disponible para la API de servicio de copia de seguridad y restauración.
+El inicio rápido de la API de Java (SOAP) está disponible para la API de servicio de copia de seguridad y restauración.
 
-[Inicio rápido: Entrada al modo de copia de seguridad mediante la API de Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Inicio rápido: Introducción del modo de copia de seguridad mediante la API de Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Inicio rápido: Salida del modo de copia de seguridad mediante la API de Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Inicio rápido: Abandono del modo de copia de seguridad mediante la API de Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
 
 >[!NOTE]
 >
->Los Inicios rápidos ubicados en Programación con AEM Forms se basan en el sistema operativo Forms. Sin embargo, si utiliza otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas que sean compatibles con el sistema operativo correspondiente. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Starts ubicado en Programación con AEM Forms se basan en el sistema operativo Forms. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas compatibles con el sistema operativo aplicable. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Inicio rápido (modo SOAP): Entrada al modo de copia de seguridad mediante la API de Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## Inicio rápido (modo SOAP): Introducción del modo de copia de seguridad mediante la API de Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-El siguiente ejemplo de código Java entra en el modo de copia de seguridad con una etiqueta única durante dos horas. Una vez que caduca el tiempo de copia de seguridad o si el modo de copia de seguridad se cierra explícitamente, el servidor de formularios vuelve a depurar archivos desde el Almacenamiento de Documento global. (Consulte [Introducción del modo de copia de seguridad en el servidor de formularios](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)).
+El siguiente ejemplo de código Java entra en el modo de copia de seguridad con una etiqueta única durante dos horas. Una vez transcurrido el tiempo de copia de seguridad o si el modo de copia de seguridad se cierra explícitamente, el servidor de formularios vuelve a depurar archivos del Almacenamiento de documentos global. (Consulte [Introducción del modo de copia de seguridad en el servidor de formularios](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)).
 
 ```java
  /*
@@ -150,7 +151,7 @@ El siguiente ejemplo de código Java entra en el modo de copia de seguridad con 
 
 ## Inicio rápido (modo SOAP): Dejar el modo de copia de seguridad mediante la API de Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-El siguiente ejemplo de código Java hace que Forms Server deje el modo de copia de seguridad y vuelva a depurar archivos del Almacenamiento de Documento global. (Consulte [Salida del modo de copia de seguridad en el servidor de formularios](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)).
+El siguiente ejemplo de código Java hace que un servidor de Forms salga explícitamente del modo de copia de seguridad y vuelva a purgar archivos del almacenamiento de documentos global. (Consulte [Dejar el modo de copia de seguridad en el servidor de formularios](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)).
 
 ```java
  /*
