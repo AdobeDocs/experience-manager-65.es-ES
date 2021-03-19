@@ -7,10 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
+feature: Formularios adaptables
 translation-type: tm+mt
-source-git-commit: 82fcc7ea1029f069aff95f50b3eb1a1581ec5c95
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1514'
 ht-degree: 1%
 
 ---
@@ -33,10 +34,10 @@ Las acciones de envío predeterminadas disponibles con los formularios adaptable
 * Enviar al extremo REST
 * Enviar correo electrónico
 * Enviar PDF por correo electrónico
-* Invocar un flujo de trabajo de formularios
+* Invocar un Forms Workflow
 * Enviar mediante modelo de datos de formulario
-* Acción de envío del portal de formularios
-* Invocar un flujo de trabajo de AEM
+* Acción de envío del portal de Forms
+* Invocar un flujo de trabajo AEM
 
 >[!NOTE]
 >
@@ -55,13 +56,13 @@ Puede escribir una acción de envío personalizada para formularios adaptables p
 
 ## Enviar al extremo REST {#submit-to-rest-endpoint}
 
-La opción de envío **Submit to REST endpoint** pasa los datos rellenados en el formulario a una página de confirmación configurada como parte de la solicitud HTTP GET. Puede añadir el nombre de los campos que desea solicitar. El formato de la solicitud es:
+La opción de envío **Submit to REST endpoint** pasa los datos rellenados en el formulario a una página de confirmación configurada como parte de la solicitud de GET HTTP. Puede añadir el nombre de los campos que desea solicitar. El formato de la solicitud es:
 
 `{fieldName}={request parameter name}`
 
 Como se muestra en la imagen siguiente, `param1` y `param2` se pasan como parámetros con valores copiados de los campos **textbox** y **numeric box** para la siguiente acción.
 
-También puede **Habilitar solicitud POST** y proporcionar una URL para publicar la solicitud. Para enviar datos al servidor de Experience Manager que aloja el formulario, utilice una ruta relativa correspondiente a la ruta raíz del servidor de Experience Manager. Por ejemplo, /content/forms/af/SampleForm.html. Para enviar datos a cualquier otro servidor, utilice la ruta absoluta.
+También puede **Habilitar solicitud de POST** y proporcionar una URL para publicar la solicitud. Para enviar datos al servidor Experience Manager que aloja el formulario, utilice una ruta relativa correspondiente a la ruta raíz del servidor Experience Manager. Por ejemplo, /content/forms/af/SampleForm.html. Para enviar datos a cualquier otro servidor, utilice la ruta absoluta.
 
 ![Configuración de la acción de envío de extremo de resto](assets/action-config.png)
 
@@ -76,7 +77,7 @@ Utilice la acción **Submit to REST Endpoint** para publicar los datos enviados 
 
 Para enviar datos a un servidor interno, proporcione la ruta del recurso. Los datos se publican en la ruta del recurso. Por ejemplo, /content/restEndPoint. Para esas solicitudes posteriores se utiliza la información de autenticación de la solicitud de envío.
 
-Para enviar datos a un servidor externo, proporcione una URL. El formato de la dirección URL es https://host:port/path_to_rest_end_point. Asegúrese de configurar la ruta para gestionar la solicitud POST de forma anónima.
+Para enviar datos a un servidor externo, proporcione una URL. El formato de la dirección URL es https://host:port/path_to_rest_end_point. Asegúrese de configurar la ruta para gestionar la solicitud del POST de forma anónima.
 
 ![Asignación de valores de campo pasados como parámetros de página de agradecimiento](assets/post-enabled-actionconfig.png)
 
@@ -107,11 +108,11 @@ La acción de envío **Send PDF via Email** envía un correo electrónico con un
 >[!NOTE]
 Esta acción de envío está disponible para formularios adaptables basados en XFA y formularios de adaptación basados en XSD que tienen la plantilla Documento de registro.
 
-## Invocar un flujo de trabajo de formularios {#invoke-a-forms-workflow}
+## Invocar un Forms Workflow {#invoke-a-forms-workflow}
 
-La opción **Submit to Forms Workflow** submit envía un xml de datos y archivos adjuntos (si los hay) a un proceso existente de Adobe LiveCycle o AEM Forms en JEE.
+La opción **Submit to Forms Workflow** submit envía un xml de datos y archivos adjuntos (si los hay) a un LiveCycle de Adobe existente o a AEM Forms en el proceso JEE.
 
-Para obtener información sobre cómo configurar la acción de envío Enviar al flujo de trabajo de formularios, consulte [Envío y procesamiento de los datos del formulario mediante flujos de trabajo de formularios](../../forms/using/submit-form-data-livecycle-process.md).
+Para obtener información sobre cómo configurar la acción Enviar al envío del Forms Workflow, consulte [Envío y procesamiento de los datos del formulario mediante flujos de trabajo de formulario](../../forms/using/submit-form-data-livecycle-process.md).
 
 ## Enviar mediante modelo de datos de formulario {#submit-using-form-data-model}
 
@@ -119,19 +120,19 @@ La acción de envío **Submit using Form Data Model** escribe los datos de formu
 
 Además, se puede enviar un archivo adjunto de formulario mediante un modelo de datos de formulario y un documento de registro (DoR) al origen de datos.
 
-Para obtener información sobre el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](../../forms/using/data-integration.md).
+Para obtener información sobre el modelo de datos de formulario, consulte [AEM Forms Data Integration](../../forms/using/data-integration.md).
 
-## Acción de envío del portal de formularios {#forms-portal-submit-action}
+## Acción de envío del portal de Forms {#forms-portal-submit-action}
 
-La opción **Acción de envío del portal de formularios** hace que los datos del formulario estén disponibles a través de un portal de AEM Forms.
+La opción **Acción de envío del portal de Forms** hace que los datos del formulario estén disponibles a través de un portal de AEM Forms.
 
-Para obtener más información sobre la acción de envío y el portal de formularios, consulte [Borradores y componentes de envío](../../forms/using/draft-submission-component.md).
+Para obtener más información sobre el portal de Forms y la acción de envío, consulte [Borradores y componentes de envío](../../forms/using/draft-submission-component.md).
 
-## Invocar un flujo de trabajo de AEM {#invoke-an-aem-workflow}
+## Invocar un flujo de trabajo AEM {#invoke-an-aem-workflow}
 
-La acción de envío **Invocar un flujo de trabajo de AEM** asocia un formulario adaptable con un flujo de trabajo de AEM. Cuando se envía un formulario, el flujo de trabajo asociado se inicia automáticamente en el nodo de procesamiento. Además, coloca el archivo de datos, los archivos adjuntos y el documento de registro, si corresponde, en la ubicación de carga útil del flujo de trabajo.
+La acción de envío **Invocar un flujo de trabajo AEM** asocia un formulario adaptable con un flujo de trabajo AEM. Cuando se envía un formulario, el flujo de trabajo asociado se inicia automáticamente en el nodo de procesamiento. Además, coloca el archivo de datos, los archivos adjuntos y el documento de registro, si corresponde, en la ubicación de carga útil del flujo de trabajo.
 
-Antes de utilizar la acción de envío **Invocar un flujo de trabajo de AEM**, [configure la configuración de Experience Manager DS](../../forms/using/configuring-the-processing-server-url-.md). Para obtener información sobre la creación de un flujo de trabajo de AEM, consulte [Flujos de trabajo centrados en formularios en OSGi](../../forms/using/aem-forms-workflow.md).
+Antes de utilizar la acción de envío **Invocar un flujo de trabajo AEM**, [configure el Experience Manager DS](../../forms/using/configuring-the-processing-server-url-.md). Para obtener información sobre la creación de un flujo de trabajo AEM, consulte [Flujos de trabajo centrados en formularios en OSGi](../../forms/using/aem-forms-workflow.md).
 
 ## Revalidación del lado del servidor en formato adaptable {#server-side-revalidation-in-adaptive-form}
 
@@ -162,7 +163,7 @@ La validación del lado del servidor valida el modelo de formulario. Se recomien
 
 ### Compatibilidad con funciones personalizadas en expresiones de validación {#supporting-custom-functions-in-validation-expressions-br}
 
-A veces, si hay reglas de validación complejas, la secuencia de comandos de validación exacta reside en funciones personalizadas y la llamada de autor realiza estas funciones personalizadas desde la expresión de validación de campo. Para que esta biblioteca de funciones personalizadas sea conocida y esté disponible mientras se realizan las validaciones del lado del servidor, el autor del formulario puede configurar el nombre de la biblioteca del cliente de AEM en la pestaña **Basic** de las propiedades del contenedor de formularios adaptables, como se muestra a continuación.
+A veces, si hay reglas de validación complejas, la secuencia de comandos de validación exacta reside en funciones personalizadas y la llamada de autor realiza estas funciones personalizadas desde la expresión de validación de campo. Para que esta biblioteca de funciones personalizada sea conocida y esté disponible mientras se realizan las validaciones del lado del servidor, el autor del formulario puede configurar el nombre de AEM biblioteca de cliente en la pestaña **Basic** de las propiedades del contenedor de formularios adaptables, como se muestra a continuación.
 
 ![Compatibilidad con funciones personalizadas en expresiones de validación](assets/clientlib-cat.png)
 
@@ -172,6 +173,6 @@ El autor puede configurar la biblioteca customJavaScript por formulario adaptabl
 
 ## Gestión de errores en la acción de envío {#error-handling-on-submit-action}
 
-Como parte de las directrices de seguridad y refuerzo de Experience Manager, configure páginas de error personalizadas como 404.jsp y 500.jsp. Se llama a estos controladores cuando aparecen errores al enviar un formulario 404 o 500. También se llama a los controladores cuando estos códigos de error se activan en el nodo Publish .
+Como parte de las directrices de seguridad y endurecimiento del Experience Manager, configure páginas de error personalizadas como 404.jsp y 500.jsp. Se llama a estos controladores cuando aparecen errores al enviar un formulario 404 o 500. También se llama a los controladores cuando estos códigos de error se activan en el nodo Publish .
 
 Para obtener más información, consulte [Personalización de páginas que muestra el Controlador de errores](/help/sites-developing/customizing-errorhandler-pages.md).
