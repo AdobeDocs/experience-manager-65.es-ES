@@ -2,11 +2,13 @@
 title: Introducción a [!DNL Adobe Experience Manager Assets]
 description: Descubra qué es la administración de recursos digitales, sus casos de uso y la oferta  [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
+feature: Administración de activos
+role: Encabezado, Arquitecto, Profesional Empresarial
 translation-type: tm+mt
-source-git-commit: b851bfb2758db60e960afd4720d04202934c18bc
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 34%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +59,7 @@ Al trabajar con recursos digitales en [!DNL Experience Manager], debe comprender
 
 * **Colección**: Una colección de recursos, ya sea en función de la ubicación física (carpeta), las propiedades comunes (carpeta de búsqueda guardada) o la selección de usuarios (carpetas Lightbox).
 
-* **** [!DNL Assets] Los metadatos tienen metadatos; por ejemplo, autor, fecha de caducidad, información de DRM (administración de derechos digitales), etc. Los metadatos están sujetos a control de acceso. [!DNL Assets] admite los siguientes esquemas comunes de metadatos predefinidos:
+* **** [!DNL Assets] Los metadatos tienen metadatos; por ejemplo, autor, fecha de caducidad, información de DRM (Digital Rights Management), etc. Los metadatos están sujetos a control de acceso. [!DNL Assets] admite los siguientes esquemas comunes de metadatos predefinidos:
 
    * Dublin Core: incluye autor, descripción, fecha, asunto, etc.
    * IPTC: incluye evento, modelo, ubicación, etc.
@@ -73,7 +75,7 @@ Al trabajar con recursos digitales en [!DNL Experience Manager], debe comprender
 
 ### Cómo trabajar con recursos digitales {#how-to-work-with-assets}
 
-Las acciones se realizan sobre activos o colecciones. Sirven para crear o modificar activos, colecciones y representaciones. Muchas de las acciones básicas que realiza en los recursos (cargar, eliminar, actualizar y guardar subrecursos) activan flujos de trabajo preconfigurados. Estos se activan automáticamente en [!DNL Assets] y se describen detalladamente en [!DNL Assets] controladores de medios.
+Las acciones se realizan sobre activos o colecciones. Sirven para crear o modificar activos, colecciones y representaciones. Muchas de las acciones básicas que realiza en los recursos (cargar, eliminar, actualizar y guardar subrecursos) realizan déclencheur en flujos de trabajo preconfigurados. Estos se activan automáticamente en [!DNL Assets] y se describen detalladamente en [!DNL Assets] controladores de medios.
 
 Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 
