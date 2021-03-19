@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -19,68 +20,68 @@ ht-degree: 0%
 
 # Creación de un perfil personalizado para formularios HTML5 {#creating-a-custom-profile-for-html-forms}
 
-Un perfil es un nodo de recursos en [Apache Sling](https://sling.apache.org/). Representa la versión personalizada del servicio de representación de formularios HTML5. Puede utilizar el servicio de representación de formularios HTML5 para personalizar el aspecto, el comportamiento y las interacciones de los formularios HTML5. Existe un nodo de perfil en la carpeta `/content` del repositorio JCR. Puede colocar el nodo directamente en la carpeta `/content` o en cualquier subcarpeta de la carpeta `/content`.
+Un perfil es un nodo de recursos en [Apache Sling](https://sling.apache.org/). Representa la versión personalizada del servicio de representación de formularios HTML5. Puede utilizar el servicio de representación de formularios HTML5 para personalizar el aspecto, el comportamiento y las interacciones de los formularios HTML5. Existe un nodo de perfil en la carpeta `/content` del repositorio JCR. Puede colocar el nodo directamente debajo de la carpeta `/content` o de cualquier subcarpeta de la carpeta `/content`.
 
-El nodo perfil tiene la propiedad **sling:resourceSuperType** y el valor predeterminado es **xfaforms/perfil**. La secuencia de comandos de procesamiento del nodo se encuentra en /libs/xfaforms/perfil.
+El nodo de perfil tiene la propiedad **sling:resourceSuperType** y el valor predeterminado es **xfaforms/profile**. La secuencia de comandos de renderización para el nodo se encuentra en /libs/xfaforms/profile.
 
-Los scripts Sling son scripts JSP. Estas secuencias de comandos JSP sirven como contenedores para reunir el HTML para el formulario solicitado y los artefactos JS/CSS requeridos. Estas secuencias de comandos de Sling también se denominan **secuencias de comandos del procesador de Perfil**. El procesador de perfil llama al servicio OSGi de Forms para procesar el formulario solicitado.
+Los scripts de Sling son scripts JSP. Estas secuencias de comandos JSP sirven como contenedores para reunir el HTML del formulario solicitado y los artefactos JS/CSS necesarios. Estos scripts de Sling también se denominan **Scripts de renderizador de perfil**. El procesador de perfiles llama al servicio OSGi de Forms para procesar el formulario solicitado.
 
-La secuencia de comandos de perfil está en html.jsp y html.POST.jsp para solicitudes de GET y POST. Puede copiar y modificar uno o varios archivos para anular y agregar las personalizaciones. No realice ningún cambio en el lugar, la actualización del parche sobrescribe dichos cambios.
+El script de perfil se encuentra en html.jsp y html.POST.jsp para solicitudes de GET y POST. Puede copiar y modificar uno o más archivos para anular y agregar las personalizaciones. No realice ningún cambio in situ, la actualización del parche sobrescribe dichos cambios.
 
-Un perfil contiene varios módulos. Los módulos son formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_filename.jsp y Football.jsp.
+Un perfil contiene varios módulos. Los módulos son formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_footer.jsp y footer.jsp.
 
 ## formRuntime.jsp {#formruntime-jsp-br}
 
-Los módulos formRuntime.jsp contienen referencias de las bibliotecas de cliente. También muestra métodos para extraer información de configuración regional de la solicitud e incluir los mensajes localizados en la misma. Puede incluir sus propias bibliotecas o estilos personalizados de JavaScript en formRuntime.jsp.
+Los módulos formRuntime.jsp contienen referencias de las bibliotecas cliente. También muestra los métodos para extraer información de configuración regional de la solicitud e incluir los mensajes localizados en la solicitud. Puede incluir sus propias bibliotecas o estilos personalizados de JavaScript en formRuntime.jsp.
 
 ## config.jsp {#config-jsp}
 
-El módulo config.jsp contiene varias configuraciones, como registro, servicios proxy y versión de comportamiento. Puede agregar su propia configuración y personalización de utilidades al módulo config.jsp. También puede agregar configuraciones como el registro de utilidades personalizadas al módulo config.jsp.
+El módulo config.jsp contiene varias configuraciones, como el registro, los servicios proxy y la versión de comportamiento. Puede agregar su propia configuración y personalización de utilidades al módulo config.jsp. También puede agregar configuraciones como el registro de utilidades personalizado al módulo config.jsp.
 
 ## toolbar.jsp {#toolbar-jsp}
 
-El archivo toolbar.jsp contiene código para crear una barra de herramientas de color. Para quitar la barra de herramientas, elimine toolbar.jsp del archivo HTML.jsp
+El archivo toolbar.jsp contiene código para crear una barra de herramientas de color. Para quitar la barra de herramientas, elimine toolbar.jsp de HTML.jsp
 
 ## formBody.jsp {#formbody-jsp}
 
 El módulo formBody.jsp es para la representación HTML del formulario XFA.
 
-## nav_filename.jsp {#nav-footer-jsp}
+## nav_footer.jsp {#nav-footer-jsp}
 
-Al principio, el formulario HTML5 procesa solo la primera página del formulario. Cuando un usuario desplaza el formulario, se carga el resto de los formularios. Hace que la carga sea más rápida. El componente nav_ada.jsp contiene todos los estilos y elementos necesarios para facilitar la carga de las páginas al desplazarse.
+Al principio, el formulario HTML5 solo procesa la primera página del formulario. Cuando un usuario desplaza el formulario, se carga el resto de los formularios. Hace que la experiencia de carga sea más rápida. El componente nav_footer.jsp contiene todos los estilos y elementos necesarios para facilitar la carga de las páginas en el desplazamiento.
 
-## pie de página.jsp {#footer-jsp}
+## footer.jsp {#footer-jsp}
 
-El módulo pie.jsp está vacío. Permite agregar secuencias de comandos que se utilizan únicamente para la interacción del usuario.
+El módulo footer.jsp está vacío. Permite añadir secuencias de comandos que solo se utilizan para la interacción del usuario.
 
-## Creación de Perfiles personalizados {#creating-custom-profiles}
+## Creación de perfiles personalizados {#creating-custom-profiles}
 
-Para crear un perfil personalizado, realice los siguientes pasos:
+Para crear un perfil personalizado, realice los pasos siguientes:
 
-### Crear nodo de Perfil {#create-profile-node}
+### Crear nodo de perfil {#create-profile-node}
 
-1. Vaya a la interfaz CRX DE en la dirección URL: `https://'[server]:[port]'/crx/de` e inicie sesión en la interfaz con credenciales de administrador.
+1. Vaya a la interfaz CRX DE en la URL: `https://'[server]:[port]'/crx/de` e inicie sesión en la interfaz con credenciales de administrador.
 
-1. En el panel izquierdo, navegue a la ubicación */content/xfaforms/perfiles*.
+1. En el panel izquierdo, vaya a la ubicación */content/xfaforms/profiles*.
 
-1. Copie el nodo predeterminado y pegue el nodo en otra carpeta (*/content/perfiles*) con el nombre *hrform*.
+1. Copie el nodo predeterminado y pegue el nodo en una carpeta diferente (*/content/profiles*) con el nombre *hrform*.
 
-1. Seleccione el nuevo nodo, *hrform*, y agregue una propiedad de cadena: *sling:resourceType* con valor: *formulario/demostración*.
+1. Seleccione el nuevo nodo, *hrform*, y añada una propiedad de cadena: *sling:resourceType* con valor: *hrform/demo*.
 
 1. Haga clic en Guardar todo en el menú de la barra de herramientas para guardar los cambios.
 
-### Crear la secuencia de comandos del procesador de perfil {#create-the-profile-renderer-script}
+### Cree el script del renderizador de perfil {#create-the-profile-renderer-script}
 
-Después de crear un perfil personalizado, agregue información de procesamiento a este perfil. Al recibir una solicitud para el nuevo perfil, CRX comprueba la existencia de la carpeta /apps para la página JSP que se va a procesar. Cree la página JSP en la carpeta /apps.
+Después de crear un perfil personalizado, agregue información de renderización a este perfil. Al recibir una solicitud para el nuevo perfil, CRX verifica la existencia de la carpeta /apps para que se represente la página JSP. Cree la página JSP en la carpeta /apps .
 
-1. En el panel izquierdo, desplácese a la carpeta `/apps`.
-1. Haga clic con el botón derecho en la carpeta `/apps` y elija crear una carpeta con el nombre **formulario**.
+1. En el panel izquierdo, vaya a la carpeta `/apps` .
+1. Haga clic con el botón derecho en la carpeta `/apps` y elija crear una carpeta con el nombre **hrform**.
 1. Dentro de la carpeta **hrform** cree una carpeta con el nombre **demo**.
-1. Haga clic en el botón **Guardar todo**.
+1. Haga clic en el botón **Save All**.
 1. Vaya a `/libs/xfaforms/profile/html.jsp` y copie el nodo **html.jsp**.
 1. Pegue el nodo **html.jsp** en la carpeta `/apps/hrform/demo` creada anteriormente con el mismo nombre **html.jsp** y haga clic en **Guardar**.
-1. Si tiene algún otro componente del script de perfil, siga los pasos 1 a 6 para copiar los componentes en la carpeta /apps/hrform/demo.
+1. Si tiene cualquier otro componente del script de perfil, siga los pasos del 1 al 6 para copiar los componentes en la carpeta /apps/hrform/demo .
 
-1. Para comprobar que se ha creado el perfil, abra la dirección URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
+1. Para verificar que el perfil se ha creado, abra la URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
-Para comprobar los formularios, [Importe los formularios](/help/forms/using/get-xdp-pdf-documents-aem.md) desde el sistema de archivos local a AEM Forms y [previsualización del formulario](/help/forms/using/previewing-forms.md) en AEM instancia de autor del servidor.
+Para comprobar los formularios, [Importe los formularios](/help/forms/using/get-xdp-pdf-documents-aem.md) desde el sistema de archivos local a AEM Forms y [obtenga una vista previa del formulario](/help/forms/using/previewing-forms.md) en AEM instancia de autor del servidor.
