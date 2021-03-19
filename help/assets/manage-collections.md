@@ -3,10 +3,11 @@ title: Administrar colecciones de recursos digitales
 description: Conozca las tareas para administrar las colecciones de recursos, como crear, ver, eliminar, editar y descargar colecciones.
 contentOwner: AG
 mini-toc-levels: 1
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2182'
 ht-degree: 11%
 
 ---
@@ -269,6 +270,6 @@ Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la co
 
 >[!MORELIKETHIS]
 >
->* [Configuración de las notificaciones por correo electrónico de Experience Manager Assets](/help/sites-administering/notification.md#assetsconfig)
+>* [Configuración de las notificaciones por correo electrónico de Recursos Experience Manager](/help/sites-administering/notification.md#assetsconfig)
 >* [Crear una tarea de revisión para colecciones](bulk-approval.md)
 
