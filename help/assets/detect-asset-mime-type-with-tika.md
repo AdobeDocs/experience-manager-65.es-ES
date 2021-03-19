@@ -1,17 +1,18 @@
 ---
-title: Detectar tipo MIME de recursos con Apache Tika
-description: Active Apache Tika para ayudar a [!DNL Experience Manager Assets] detectar el tipo MIME de los recursos del flujo de contenido durante la operación de carga en lugar de la extensión del archivo.
+title: Detectar el tipo MIME de los recursos que utilizan Apache Tika
+description: Habilite Apache Tika para ayudar [!DNL Experience Manager Assets] a detectar el tipo MIME de los recursos del flujo de contenido durante la operación de carga en lugar de la extensión del archivo.
 contentOwner: AG
+role: Administrador, Arquitecto
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
 
 
-# Detectar el tipo MIME de los recursos mediante [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
+# Detectar el tipo MIME de los recursos utilizando [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
 
 Normalmente, [!DNL Adobe Experience Manager Assets] detecta el tipo MIME de los recursos que se cargan desde su extensión de archivo.
 
@@ -21,13 +22,13 @@ Esta función está deshabilitada de forma predeterminada. Para habilitar la fun
 
 >[!NOTE]
 >
->La detección de tipo MIME que utiliza la biblioteca [!DNL Apache Tika] es una operación que utiliza muchos recursos.
+>La detección de tipo MIME que utiliza la biblioteca [!DNL Apache Tika] es una operación que consume muchos recursos.
 
 1. Para abrir la consola web de Configuration Manager, acceda a `https://[aem_server]:[port]/system/console/configMgr`.
 
-1. En la lista de servicios, ubique **[!UICONTROL Servicio de tipo Mime CQ DAM]** y haga clic en **[!UICONTROL Editar]**.
+1. En la lista de servicios, localice **[!UICONTROL Day CQ DAM Mime Type Service]** y haga clic en **[!UICONTROL Editar]**.
 
-1. Seleccione la opción **[!UICONTROL Detectar MIME del contenido]** para habilitar el análisis de los recursos cargados para determinar su tipo MIME mientras se omiten las extensiones de archivo. De forma predeterminada, esta opción no está seleccionada.
+1. Seleccione la opción **[!UICONTROL Detect MIME from content]** para habilitar el análisis de los recursos cargados para determinar su tipo MIME e ignorar las extensiones de archivo. De forma predeterminada, esta opción no está seleccionada.
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 
