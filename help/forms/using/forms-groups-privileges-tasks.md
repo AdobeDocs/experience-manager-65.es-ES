@@ -10,20 +10,21 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
+role: Administrador
 translation-type: tm+mt
-source-git-commit: a4314a30e2329aebe02f4983fd543240be920ee8
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 1%
+source-wordcount: '280'
+ht-degree: 2%
 
 ---
 
 
-# AEM Forms en grupos OSGi y privilegios{#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms en grupos y privilegios OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
-Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar directivas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de AEM. Estas directivas controlan los privilegios de los usuarios que forman parte del grupo.
+Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar directivas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de AEM. Estas políticas controlan los privilegios de los usuarios que forman parte del grupo.
 
-Una vez que instale [paquete de complementos de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), los grupos mencionados en este artículo, como usuarios de formularios y usuarios avanzados, estarán disponibles automáticamente para su asignación. La siguiente tabla lista las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
+Una vez que instale [AEM Forms add-on package](../../forms/using/installing-configuring-aem-forms-osgi.md), los grupos mencionados en este artículo, como los usuarios de formularios y los usuarios con capacidad para formularios, estarán disponibles automáticamente para su asignación. La siguiente tabla enumera las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
 
 <table>
  <tbody>
@@ -32,24 +33,24 @@ Una vez que instale [paquete de complementos de AEM Forms](../../forms/using/ins
    <td>Tareas</td> 
   </tr>
   <tr>
-   <td>forms-users <sup>[1]</sup></td> 
+   <td>usuarios de formularios <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>Creación, previsualización, publicación y envío de formularios adaptables</li> 
-     <li>Creación, previsualización y publicación de comunicaciones interactivas y fragmentos de documento</li> 
-     <li>Carga de recursos en una instancia de AEM</li> 
-     <li>Crear temáticas</li> 
+     <li>Crear, previsualizar, publicar y enviar formularios adaptables</li> 
+     <li>Crear, previsualizar y publicar comunicaciones interactivas y fragmentos de documento</li> 
+     <li>Cargar recursos a una instancia de AEM</li> 
+     <li>Crear temas</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>forms-power-users</td> 
    <td>
     <ul> 
-     <li>Creación, previsualización, publicación y envío de formularios adaptables</li> 
-     <li>Creación, previsualización y publicación de comunicaciones interactivas y fragmentos de documento</li> 
+     <li>Crear, previsualizar, publicar y enviar formularios adaptables</li> 
+     <li>Crear, previsualizar y publicar comunicaciones interactivas y fragmentos de documento</li> 
      <li>Creación de secuencias de comandos para formularios adaptables mediante el editor de código</li> 
      <li>Carga de recursos, incluidas secuencias de comandos</li> 
-     <li>Crear temáticas</li> 
+     <li>Crear temas</li> 
      <li>Importar paquetes que contengan XDP</li> 
     </ul> </td> 
   </tr>
@@ -57,29 +58,29 @@ Una vez que instale [paquete de complementos de AEM Forms](../../forms/using/ins
    <td>forms-submit-reviewers</td> 
    <td>
     <ul> 
-     <li>Revisar envíos</li> 
-     <li>Aprobar o rechazar envíos</li> 
+     <li>Revisar presentaciones</li> 
+     <li>Aprobar o rechazar presentaciones</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>templates-author <sup>[2]</sup></td> 
+   <td>autores de plantillas <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>Creación y previsualización de formularios adaptables o plantillas de comunicaciones interactivas</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td><p>fdm-author</p> </td> 
+   <td><p>fdm-authors</p> </td> 
    <td>
     <ul> 
-     <li>Crear y modificar un modelo de datos de formulario</li> 
+     <li>Creación y modificación de un modelo de datos de formulario</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>cm-agent-users</td> 
    <td>
     <ul> 
-     <li>Acceso a cartas de Correspondencia o comunicaciones interactivas mediante la interfaz de usuario del agente</li> 
+     <li>Acceda a cartas de gestión de correspondencia o comunicaciones interactivas mediante la interfaz de usuario del agente</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -91,10 +92,10 @@ Una vez que instale [paquete de complementos de AEM Forms](../../forms/using/ins
     </ul> </td> 
   </tr>
   <tr>
-   <td>flujos de trabajo-usuarios</td> 
+   <td>flujo de trabajo-usuarios</td> 
    <td>
     <ul> 
-     <li>Utilice AEM aplicaciones de bandeja de entrada<br /> <strong>Nota: </strong>Debe tener asignaciones de cm-agent-users y grupos de usuarios de flujo de trabajo para acceder a la interfaz de usuario de Interactive Communications Agent en AEM bandeja de entrada.</li> 
+     <li>Utilice AEM aplicaciones de bandeja de entrada<br /> <strong>Nota: </strong>Debe tener asignaciones de grupo cm-agent-users y workflow-users para acceder a la interfaz de usuario de Interactive Communications Agent en AEM bandeja de entrada.</li> 
      <li>Administrar instancias de flujo de trabajo</li> 
     </ul> </td> 
   </tr>
