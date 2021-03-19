@@ -5,11 +5,14 @@ audience: end-user
 user-guide-title: Guía del usuario de AEM 6.5 Communities
 breadcrumb-title: Guía de Communities
 user-guide-description: Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales.
+feature-set: Experience Manager
+feature: Communities
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 10%
+source-wordcount: '504'
+ht-degree: 12%
 
 ---
 
@@ -17,12 +20,12 @@ ht-degree: 10%
 # Guía de comunidades de Adobe Experience Manager 6.5 {#communities}
 
 + [Guía de Communities](home.md)
-+ Introducción a Comunidades de AEM {#introduction}
++ Introducción a AEM Communities {#introduction}
    + [Sitios de comunidades](administer-landing.md)
-   + [Información general de comunidades AEM](overview.md)
+   + [Información general de AEM Communities](overview.md)
    + [Notas de versión de AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Introducción a Comunidades de AEM](getting-started.md)
-   + [Introducción a Comunidades de AEM para la habilitación](getting-started-enablement.md)
+   + [Introducción a AEM Communities para la activación](getting-started-enablement.md)
    + [Configuración inicial](setup.md)
    + [Crear un nuevo sitio de comunidad](create-site.md)
    + [Experiencia del sitio publicado](published-site.md)
@@ -37,7 +40,7 @@ ht-degree: 10%
    + [Topologías recomendadas para comunidades](topologies.md)
    + [Configuración de Dispatcher para Communities](dispatcher.md)
 + Administración {#administer}
-   + [Servicio de administración de usuarios y UGC en Comunidades AEM](user-ugc-management-service.md)
+   + [Servicio de administración de usuarios y UGC en AEM Communities](user-ugc-management-service.md)
    + [Sitios de comunidades](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Consolas de comunidades](consoles.md)
    + [Funciones de Configuración de Analytics para Communities](analytics.md)
@@ -46,10 +49,10 @@ ht-degree: 10%
    + [Moderación del contenido de la comunidad](moderate-ugc.md)
    + [Configuración del correo electrónico](email.md)
    + [Notificaciones de comunidades](notifications.md)
-   + [Suscripciones a Communities](subscriptions.md)
+   + [Suscripciones de Communities](subscriptions.md)
    + [Puntuación y distintivos de comunidades](implementing-scoring.md)
    + [Administración de usuarios y grupos de usuarios](users.md)
-   + [Consola Grupos de la comunidad](groups.md)
+   + [Consola de grupos de la comunidad](groups.md)
    + [Inicio de sesión en Social con Facebook y Twitter](social-login.md)
    + [SRP: Almacenamiento de contenido de la comunidad](working-with-srp.md)
    + [Consola Sitios de comunidades](sites-console.md)
