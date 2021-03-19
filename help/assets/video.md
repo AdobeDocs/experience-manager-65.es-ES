@@ -8,10 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
+feature: Administración de activos
+role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '11740'
+source-wordcount: '11745'
 ht-degree: 8%
 
 ---
@@ -402,7 +404,7 @@ Por ejemplo, suponga que el vídeo de origen es de 1920 x 1080. En la tabla sigu
 
 | Tipo de vídeo | Anchura x Altura | Proporción de anchura | Proporción de altura |
 |--- |--- |--- |--- |
-| Origen | 1920x1080 | 1 | 1 |
+| Origen | 1920x1080 | 1 | 3 |
 | Codificado | 960 x 540 | 2 | 2 |
 | Codificado | 640 x 360 | 3 | 1 |
 | Codificado | 480 x 270 | 4 | 4 |
