@@ -1,8 +1,8 @@
 ---
-title: Diferenciación de funciones entre formularios HTML5 y PDF forms
-seo-title: Diferenciación de funciones entre formularios HTML5 y PDF forms
-description: Función admitida en formularios y PDF forms HTML5
-seo-description: Función admitida en formularios y PDF forms HTML5
+title: Diferenciación de características entre formularios HTML5 y PDF forms
+seo-title: Diferenciación de características entre formularios HTML5 y PDF forms
+description: Funcionalidad admitida en formularios y PDF forms HTML5
+seo-description: Funcionalidad admitida en formularios y PDF forms HTML5
 uuid: 6ddee197-d108-4897-9976-77d115a06504
 contentOwner: robhagat
 content-type: reference
@@ -10,18 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 3%
 
 ---
 
 
-# Diferenciación de funciones entre formularios HTML5 y PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
+# Diferenciación de características entre formularios HTML5 y PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-La siguiente tabla especifica la compatibilidad con funciones para formularios y PDF forms HTML5:
+La siguiente tabla especifica la compatibilidad de funciones proporcionada para los formularios y PDF forms HTML5:
 
 <table>
  <tbody>
@@ -37,7 +38,7 @@ La siguiente tabla especifica la compatibilidad con funciones para formularios y
   </tr>
   <tr>
    <td>Campo de firma<br /> </td>
-   <td><strong>No se admiten </strong> las firmas digitales, pero se agrega un nuevo  <strong>campo de firma </strong> manuscrita para el papel como las firmas. Puede garabatear su firma en el formulario mediante el campo <strong>Firma de garabatos</strong>. La firma se guarda en el formulario como una imagen. Puede guardar la información de geolocalización en el campo <strong>Firma de garabatos</strong>.</td>
+   <td><strong>Las </strong> firmas digitales no son compatibles, pero se agrega un nuevo  <strong>campo de firma </strong> manuscrita para el papel, como las firmas. Se puede garabatear su firma en el formulario utilizando el campo <strong>Scribble Signature</strong>. La firma se guarda en el formulario como una imagen. Puede guardar la información de geolocalización en el campo <strong>Scribble Signature</strong>.</td>
    <td>Campo de firma disponible para <strong>firmas digitales</strong>.</td>
   </tr>
   <tr>
@@ -47,17 +48,17 @@ La siguiente tabla especifica la compatibilidad con funciones para formularios y
   </tr>
   <tr>
    <td>Imágenes</td>
-   <td>El esquema de URI de datos se utiliza para mostrar imágenes. Todas las versiones modernas de los navegadores admiten este esquema, pero hay diferencias en la gama de formatos de imagen que admite cada navegador.<br /> </td>
-   <td>Se admiten los formatos .gif, .png, .jpeg, .bmp y .tiff.</td>
+   <td>El esquema de URI de datos se utiliza para mostrar imágenes. Todas las versiones modernas de los navegadores admiten este esquema, pero hay diferencias en el rango de formatos de imagen que admite cada navegador.<br /> </td>
+   <td>Los formatos .gif, .png, .jpeg, .bmp y .tiff son compatibles.</td>
   </tr>
   <tr>
    <td>Paginación<br /> </td>
-   <td><p>Un formulario HTML5 se divide en paneles y cuadros para que tenga un aspecto similar al de los PDF forms. El tamaño de la página se calcula de forma dinámica. Si se elimina o se marca como oculto todo el contenido de una página en un formulario HTML5, la página en blanco se oculta y no se muestra un espacio vacío (espacio en blanco) entre las páginas situadas encima y debajo de la página en blanco.</p> <p>Si la combinación de datos o las secuencias de comandos agregan contenido a una página, la longitud de la página se expande para dar cabida al contenido recién agregado. No se agregan páginas nuevas al formulario para dar cabida al contenido recién agregado. </p> <p><strong>Nota:</strong> Cuando se eliminan o se marcan ocultos todos los contenidos de una página en un formulario HTML5, la página en blanco (espacio en blanco) permanece visible entre la primera y la segunda página, pero no entre otras páginas.</p> </td>
-   <td>La paginación en PDF depende del contenido de datos combinado o del contenido del usuario, y el recuento de páginas aumenta o reduce en función de ello.</td>
+   <td><p>Un formulario HTML5 se divide en paneles y cuadros para que tenga un aspecto similar al de los PDF forms. El tamaño de la página se calcula dinámicamente. Si se elimina o se marca oculto todo el contenido de una página de un formulario HTML5, la página en blanco se oculta y no se muestra ningún espacio vacío (espacio en blanco) entre las páginas que aparecen encima y debajo de la página en blanco.</p> <p>Si la combinación de datos o las secuencias de comandos agregan contenido a una página, la longitud de la página se amplía para dar cabida al contenido recién agregado. No se agregan nuevas páginas al formulario para dar cabida al contenido recién agregado. </p> <p><strong>Nota:</strong> Cuando se elimina o marca todo el contenido de una página en un formulario HTML5 oculto, la página en blanco (espacio en blanco) permanece visible entre la primera y la segunda página, pero no entre ninguna otra página.</p> </td>
+   <td>La paginación en PDF depende del contenido de los datos fusionado o del contenido del usuario, y el recuento de páginas se incrementa/reduce en función de él.</td>
   </tr>
   <tr>
    <td>Encabezados/pies de página </td>
-   <td>Compatible. <br /> <br /> Como los formularios móviles HTML5 no admiten saltos de página, los encabezados y pies de página solo aparecen una vez. Sin embargo, puede configurarlas en la presentación para que aparezcan en varios lugares de la previsualización de formularios móviles.<br /> </td>
+   <td>Compatible. <br /> <br /> Como los formularios móviles HTML5 no admiten saltos de página, los encabezados y pies de página aparecen solo una vez. Sin embargo, puede configurarlas en la presentación para que aparezcan en varios lugares de la vista previa de formularios móviles.<br /> </td>
    <td>Compatible.</td>
   </tr>
   <tr>
@@ -67,8 +68,8 @@ La siguiente tabla especifica la compatibilidad con funciones para formularios y
   </tr>
   <tr>
    <td>API de script XFA</td>
-   <td>Admite las construcciones de secuencias de comandos XFA más utilizadas. Para obtener más información sobre la lista de construcciones admitidas, consulte <a href="/help/forms/using/scripting-support.md">compatibilidad con secuencias de comandos</a>.</td>
-   <td>Admite todas las construcciones de secuencias de comandos XFA.</td>
+   <td>Admite las construcciones de scripts XFA más utilizadas. Para obtener más información sobre las construcciones compatibles, consulte <a href="/help/forms/using/scripting-support.md">compatibilidad con secuencias de comandos</a>.</td>
+   <td>Admite todas las construcciones de scripts XFA.</td>
   </tr>
   <tr>
    <td>API de Acrobat Script </td>
