@@ -3,10 +3,11 @@ title: Reutilizar recursos mediante MSM
 description: Utilice recursos en varias páginas o carpetas que se deriven de recursos principales y estén vinculadas a ellos. Los recursos permanecen sincronizados con una copia principal y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
 contentOwner: AG
 mini-toc-levels: 1
+role: Profesional profesional, administrador, arquitecto
 translation-type: tm+mt
-source-git-commit: 5c9907bf475796c5bbb61d6fcaf43730f9e79777
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3370'
 ht-degree: 9%
 
 ---
