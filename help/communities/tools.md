@@ -1,8 +1,8 @@
 ---
 title: Herramientas de comunidades
 seo-title: Herramientas de comunidades
-description: Cómo acceder a la consola Herramientas de comunidades
-seo-description: Cómo acceder a la consola Herramientas de comunidades
+description: Cómo acceder a la consola Herramientas de Communities
+seo-description: Cómo acceder a la consola Herramientas de Communities
 uuid: 3172fe00-7132-4cee-9fd1-b6f96eb43200
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,32 +10,33 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
+role: Administrador
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 0%
+source-wordcount: '113'
+ht-degree: 1%
 
 ---
 
 
-# Herramientas de comunidades {#communities-tools}
+# Herramientas de Communities {#communities-tools}
 
-Para acceder a la consola de herramientas de Communities, inicie sesión en la instancia de creación:
+Para acceder a la consola de herramientas de Communities, inicie sesión en la instancia de autor:
 
 * Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]**.
 
    ![comunidades](assets/communities-home.png)
 
-* [Plantillas](sites.md)  de sitio: Consola para la creación y administración de plantillas de sitio.
+* [Plantillas de sitio](sites.md) : consola para la creación y administración de plantillas de sitio.
 
-* [Plantillas](tools-groups.md)  de grupo: consola para la creación y administración de plantillas de grupo.
+* [Plantillas de grupo](tools-groups.md) : consola para la creación y administración de plantillas de grupo.
 
-* [Funciones](functions.md)  de comunidad: consola para la creación y administración de funciones de comunidad.
+* [Funciones de la comunidad](functions.md) : consola para la creación y administración de funciones de la comunidad.
 
-* [Configuración](srp-config.md)  de almacenamiento: consola para la configuración y selección del  [SRP](working-with-srp.md) predeterminado.
+* [Configuración de almacenamiento](srp-config.md) : consola para la configuración y selección del  [SRP](working-with-srp.md) predeterminado.
 
-* [Guía](components-guide.md)  de componentes: abre un sitio interactivo que permite experimentar el funcionamiento de los componentes de SCF y la configuración o personalización de los mismos.
+* [Guía de componentes](components-guide.md) : abre un sitio interactivo que permite experimentar con cómo funcionan los componentes de SCF y cómo se pueden configurar o personalizar.
 
-* [Insignias](badges.md) : consola desde la que se pueden agregar insignias personalizadas para utilizarlas en las reglas de  [puntuación y marca](implementing-scoring.md)
+* [Distintivos](badges.md) : consola desde la que se pueden agregar distintivos personalizados para utilizarlos en las reglas de  [puntuación y distintivo](implementing-scoring.md)
 
