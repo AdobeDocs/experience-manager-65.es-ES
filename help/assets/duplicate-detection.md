@@ -1,31 +1,32 @@
 ---
-title: Habilitar la detección de recursos de duplicado
-description: Obtenga información sobre cómo activar la detección de recursos de duplicado en Experience Manager.
+title: Habilitar la detección de recursos duplicados
+description: Obtenga información sobre cómo habilitar la detección de recursos duplicados en Experience Manager.
 contentOwner: AG
+role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '160'
 ht-degree: 0%
 
 ---
 
 
-# Habilitar la detección de recursos de duplicado {#enable-detection-of-duplicate-assets}
+# Habilitar la detección de activos duplicados {#enable-detection-of-duplicate-assets}
 
-Si intenta cargar un recurso que existe en [!DNL Adobe Experience Manager Assets], la función de detección de duplicado lo identifica como duplicado. La detección de duplicados está deshabilitada de forma predeterminada. Para habilitar la función, realice los siguientes pasos:
+Si intenta cargar un recurso que existe en [!DNL Adobe Experience Manager Assets], la función de detección de duplicados lo identificará como duplicado. La detección de duplicados está deshabilitada de forma predeterminada. Para habilitar la función, siga estos pasos:
 
-1. Abra la página de configuración de la [!DNL Experience Manager] Consola Web accediendo a `https://[aem_server]:[port]/system/console/configMgr`.
+1. Abra la página de configuración de la Consola Web [!DNL Experience Manager] accediendo a `https://[aem_server]:[port]/system/console/configMgr`.
 1. Edite la configuración del servlet **[!UICONTROL Day CQ DAM Create Asset]**.
-1. Seleccione la opción **[!UICONTROL Detectar duplicado]** y haga clic en **[!UICONTROL Guardar]**.
+1. Seleccione la opción **[!UICONTROL detect duplicate]** y haga clic en **[!UICONTROL Save]**.
 
    ![Seleccione la opción Detectar duplicado en el servlet](assets/chlimage_1-377.png)
 
    *Figura: Seleccione la opción Detectar duplicado en el servlet.*
 
-La función Detectar duplicado ahora está habilitada en [!DNL Assets]. Cuando un usuario intenta cargar un recurso que existe en [!DNL Experience Manager], el sistema comprueba si hay conflictos y lo indica. Los recursos se identifican mediante hash SHA-1 almacenado en `jcr:content/metadata/dam:sha1`, lo que significa que los recursos de duplicado se detectan independientemente de los nombres de archivo.
+La función Detectar duplicado ahora está habilitada en [!DNL Assets]. Cuando un usuario intenta cargar un recurso que existe en [!DNL Experience Manager], el sistema comprueba si hay conflicto e lo indica. Los recursos se identifican utilizando el hash SHA-1 almacenado en `jcr:content/metadata/dam:sha1`, lo que significa que se detectan activos duplicados independientemente de los nombres de archivo.
 
 >[!MORELIKETHIS]
 >
->* [Duplicado de recursos en un repositorio existente (un tutorial de un miembro de la comunidad)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
+>* [Duplicar recursos en un repositorio existente (un tutorial de un miembro de la comunidad)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
 
