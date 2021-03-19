@@ -3,10 +3,11 @@ title: Administrar los recursos digitales
 description: Conozca las tareas de administración de recursos, como cargar, descargar, editar, buscar, eliminar, anotar y crear versiones de sus recursos digitales.
 contentOwner: AG
 mini-toc-levels: 1
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '9590'
+source-wordcount: '9592'
 ht-degree: 4%
 
 ---
