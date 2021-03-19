@@ -9,48 +9,49 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 3%
+source-wordcount: '840'
+ht-degree: 4%
 
 ---
 
 
 # Creación de estilos CSS para formularios HTML5 {#creating-css-styles-for-html-forms}
 
-La representación HTML5 de una plantilla de formulario basada en XFA consta de varios elementos HTML. Estos elementos se organizan en orden. Cada elemento tiene clases CSS bien definidas. Puede utilizar esta clase CSS para seleccionar y cambiar el aspecto de un elemento.
+La representación HTML5 de una plantilla de formulario basada en XFA consta de varios elementos HTML. Estos elementos se organizan en un orden. Cada elemento tiene clases CSS bien definidas. Puede utilizar estas clases CSS para seleccionar y cambiar el aspecto de un elemento.
 
 >[!NOTE]
 >
->En las clases CSS, no cambie el valor de los atributos width, height, border-thickness, top, left, right, bottom, padding, margin y otros atributos de posición y tamaño. Cualquier cambio en los atributos de posición y tamaño produce cambios en la presentación del formulario.
+>En las clases CSS, no cambie el valor de los atributos width, height, border-thickness, top, left, right, bottom, padding, margin y other position and size . Cualquier cambio en los atributos de posición y tamaño produce cambios en la presentación del formulario.
 
 ## Clases CSS  para elementos  {#css-classes-nbsp-for-elements-nbsp}
 
-Cada elemento contiene clases CSS bien definidas. Puede modificar estas clases para cambiar el aspecto de un elemento. Cada elemento, excepto los elementos field y draw, tiene dos clases CSS: clase Type y clase Name.
+Cada elemento contiene clases CSS bien definidas. Puede modificar estas clases para cambiar el aspecto de un elemento. Todos los elementos, excepto los elementos de campo y dibujo, tienen dos clases CSS: clase Type y clase Name.
 
-* La **clase Type** representa el tipo del campo XFA. Puede anular la clase `type` para modificar los estilos de todos los elementos de un tipo concreto.
+* La clase **Type** representa el tipo del campo XFA. Puede anular la clase `type` para modificar los estilos de todos los elementos de un tipo concreto.
 
-* La **clase Name** corresponde al nombre del campo XFA. Puede anular la clase `name` para modificar y aplicar un estilo personalizado a un elemento.
+* La **Name class** corresponde al nombre del campo XFA. Puede anular la clase `name` para modificar y aplicar estilo personalizado a un elemento.
 
 >[!NOTE]
 >
 >Algunos elementos XFA no tienen nombre. Para cambiar los estilos de dichos componentes, modifique todos los componentes de ese tipo concreto.
 
-Para las páginas sin nombre en AEM Forms Designer, los nombres de las páginas de un formulario HTML5 se asignan en el orden creciente de su número. Por ejemplo, para un formulario HTML5 con dos páginas, las páginas se denominan Página1, Página2.
+Para las páginas no nombradas en el Diseñador de AEM Forms, las páginas de un formulario HTML5 reciben un nombre en el orden creciente de su número. Por ejemplo, para un formulario HTML5 con dos páginas, las páginas se denominan Página1, Página2.
 
 ## Elemento de campo {#field-element}
 
-El elemento field contiene dos elementos anidados: y rótulo.
+El elemento de campo contiene dos elementos anidados: widget y rótulo.
 
-**Elemento de utilidad**
+**Elemento Widget**
 
-El elemento widget contiene el elemento de interfaz de usuario para interactuar con los usuarios. Tiene tres clases CSS:
+El elemento widget contiene el elemento de interfaz de usuario para la interacción con los usuarios. Tiene tres clases CSS:
 
 * **Utilidad**: Cada utilidad tiene esta clase.
-* **name**: Todos los widgets enviados con AEM contienen la clase de nombre del widget. Para widgets personalizados, el desarrollador de utilidades proporciona la clase Widget name.
-* **type**: Cada utilidad tiene un elemento de interfaz de usuario. Esta clase define el tipo del elemento de interfaz de usuario.
+* **nombre**: Todos los widgets enviados con AEM contienen la clase de nombre del widget. Para las utilidades personalizadas, el desarrollador de utilidades proporciona la clase Widget name .
+* **tipo**: Cada utilidad tiene un elemento de interfaz de usuario. Esta clase define el tipo del elemento de interfaz de usuario.
 
 ```xml
 <!--field with caption-->
@@ -69,7 +70,7 @@ El elemento widget contiene el elemento de interfaz de usuario para interactuar 
 </div>
 ```
 
-Además de la clase type y name, el componente field también contiene una clase CSS adicional denominada **subtype**. Un subtipo identifica qué tipo de campo es, por ejemplo, NumericField, DateField, TextField. Puede anular la clase de subtipo para modificar el estilo de todos los campos de tipo subtipo.
+Además de la clase type y name , el componente de campo también contiene una clase CSS adicional denominada **subtype**. Un subtipo identifica qué tipo de campo es, por ejemplo, NumericField, DateField, TextField. Puede anular la clase subtype para modificar el estilo de todos los campos de tipo subtype.
 
 ## Clases CSS para diferentes componentes {#css-classes-for-different-components}
 
@@ -83,7 +84,7 @@ Además de la clase type y name, el componente field también contiene una clase
   <tr>
    <td>Página</td>
    <td>page</td>
-   <td>Nombre definido por el usuario<br /> o<br /> Page&lt;pageNumber&gt; (predeterminado)</td>
+   <td>Nombre definido por el usuario<br /> o<br /> Página&lt;pageNumber&gt; (predeterminado)</td>
   </tr>
   <tr>
    <td>Área de contenido</td>
@@ -118,23 +119,23 @@ Además de la clase type y name, el componente field también contiene una clase
   <tr>
    <td>Widget</td>
    <td>widget</td>
-   <td>El desarrollador de utilidades lo define (para las utilidades definidas por el usuario, consulte la tabla en la siguiente sección)</td>
+   <td>El desarrollador de utilidades lo define (para widgets definidos por el usuario, consulte la tabla en la siguiente sección)</td>
   </tr>
  </tbody>
 </table>
 
 ## Clases CSS para diferentes campos {#css-classes-for-different-fields}
 
-AEM Forms Designer admite distintos tipos de campos en un formulario como NumericField, DecimalField y Date Field. Todos estos campos en HTML contienen las clases CSS mencionadas anteriormente. También contienen algunas clases adicionales en función del tipo de campo.
+AEM Forms Designer admite distintos tipos de campos en un formulario, como NumericField, DecimalField y Date Field. Todos estos campos en HTML contienen las clases CSS mencionadas anteriormente. También contienen algunas clases adicionales según el tipo de campo.
 
-Cada campo tiene una utilidad asociada que representa el elemento UI. A continuación se enumeran las clases de cada campo y las utilidades asociadas con cada campo.
+Cada campo tiene un widget asociado que representa el elemento UI. A continuación se enumeran las clases de cada campo y las utilidades asociadas a cada campo.
 
 <table>
  <tbody>
   <tr>
    <td><strong>Tipo de campo</strong></td>
    <td><strong>Subtipo</strong></td>
-   <td><strong>Nombre de utilidad</strong></td>
+   <td><strong>Nombre de la utilidad</strong></td>
    <td><strong>Tipo de utilidad</strong></td>
    <td><strong>Etiqueta de IU HTML</strong></td>
   </tr>
@@ -142,7 +143,7 @@ Cada campo tiene una utilidad asociada que representa el elemento UI. A continua
    <td>Botón<br type="_moz" /> </td>
    <td>ND</td>
    <td>xfaButton<br type="_moz" /> </td>
-   <td>utilidad de campo de botones<br type="_moz" /> </td>
+   <td>widget<br type="_moz" /> </td>
    <td>input type=button<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -170,19 +171,19 @@ Cada campo tiene una utilidad asociada que representa el elemento UI. A continua
    <td>Campo decimal<br type="_moz" /> </td>
    <td>Numericfield<br type="_moz" /> </td>
    <td>numericInput<br type="_moz" /> </td>
-   <td>widget de campo numérico<br type="_moz" /> </td>
+   <td>numericfieldwidget<br type="_moz" /> </td>
    <td>input type=text<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>DropDown<br type="_moz" /> </td>
-   <td>choicelist<br type="_moz" /> </td>
+   <td>lista de opciones<br type="_moz" /> </td>
    <td>dropDownListWidget<br type="_moz" /> </td>
    <td>choicelistwidget<br type="_moz" /> </td>
    <td>select</td>
   </tr>
   <tr>
    <td>ListBox<br type="_moz" /> </td>
-   <td>choicelist<br type="_moz" /> </td>
+   <td>lista de opciones<br type="_moz" /> </td>
    <td>listBoxWidget<br type="_moz" /> </td>
    <td>choicelistwidget<br type="_moz" /> </td>
    <td>ol</td>
@@ -191,12 +192,12 @@ Cada campo tiene una utilidad asociada que representa el elemento UI. A continua
    <td>NumericField<br type="_moz" /> </td>
    <td>Numericfield<br type="_moz" /> </td>
    <td>numericInput<br type="_moz" /> </td>
-   <td>widget de campo numérico<br type="_moz" /> </td>
+   <td>numericfieldwidget<br type="_moz" /> </td>
    <td>input type=text<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>Campo de contraseña<br type="_moz" /> </td>
-   <td>paswordfield<br type="_moz" /> </td>
+   <td>campo de contraseña<br type="_moz" /> </td>
    <td>defaultWidget<br type="_moz" /> </td>
    <td>passwordfieldwidget<br type="_moz" /> </td>
    <td>input type=password<br type="_moz" /> </td>
@@ -205,7 +206,7 @@ Cada campo tiene una utilidad asociada que representa el elemento UI. A continua
    <td>RadioButton<br type="_moz" /> </td>
    <td>radiocampo<br type="_moz" /> </td>
    <td>XfaCheckBox<br type="_moz" /> </td>
-   <td>utilidad de campo radioactivo<br type="_moz" /> </td>
+   <td>utilidad de radiocampo<br type="_moz" /> </td>
    <td>input type=radio<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -225,9 +226,9 @@ Cada campo tiene una utilidad asociada que representa el elemento UI. A continua
  </tbody>
 </table>
 
-## Clases CSS para diferentes elementos Draw {#css-classes-for-different-draw-elements}
+## Clases CSS para diferentes elementos de dibujo {#css-classes-for-different-draw-elements}
 
-Puede insertar elementos de dibujo estáticos como texto e imágenes mediante AEM Forms Designer. Para cada elemento de dibujo, se asocia una clase CSS independiente a ese elemento. La lista de clases CSS para elementos de dibujo se muestra a continuación. Cada elemento de dibujo tiene una clase de dibujo asociada.
+Con AEM Forms Designer, se pueden insertar elementos estáticos de dibujo como texto e imágenes. Para cada elemento de dibujo, se asocia una clase CSS independiente a ese elemento. A continuación se muestra la lista de clases CSS para elementos de dibujo. Cada elemento de dibujo tiene una clase de dibujo asociada a él.
 
 | **Dibujar tipo** | **Clase de CSS** |
 |---|---|
@@ -236,18 +237,18 @@ Puede insertar elementos de dibujo estáticos como texto e imágenes mediante AE
 | Rectángulo | rectangle |
 | Línea | line |
 
-## Aplicar estilo a otras partes del formulario {#styling-other-parts-of-the-form}
+## Estilo de otras partes del formulario {#styling-other-parts-of-the-form}
 
 Además del aspecto de los componentes de la interfaz de usuario en el formulario HTML, puede cambiar el estilo de elementos como Errores en línea, Advertencias en línea y campos con errores de validación.
 
 `Styling Inline Errors`
 
-Cuando la validación de un campo da como resultado un error, se muestra un error en línea cuando el campo está activo. Para cambiar el estilo de los errores en línea, sobrescriba el ID de CSS **error-msg**.
+Cuando la validación de un campo genera un error, se muestra un error en línea cuando el campo está activo. Para cambiar el estilo de los errores en línea, anule el ID de CSS **error-msg**.
 
 `Styling Inline Warnings`
 
-Cuando la validación de un campo da como resultado una advertencia, se muestra una advertencia en línea cuando el campo está activo. Para cambiar el estilo de estas advertencias en línea, sobrescriba el ID de CSS **warning-msg**.
+Cuando la validación de un campo genera una advertencia, se muestra una advertencia en línea cuando el campo está activo. Para cambiar el estilo de estas advertencias en línea, anule el identificador CSS **warning-msg**.
 
 `Styling Fields with Validation Errors`
 
-Cuando falla la validación de un campo, cambia el estilo de la utilidad. Este cambio de estilo se realiza aplicando una clase CSS **widgetError** en el componente de la utilidad. Para modificar el estilo predeterminado, sobrescriba la clase **widgetError**.
+Cuando falla la validación de un campo, cambia el estilo del widget. Este cambio de estilo se realiza aplicando una clase CSS **widgetError** en el componente widget. Para modificar el estilo predeterminado, anule la clase **widgetError**.
