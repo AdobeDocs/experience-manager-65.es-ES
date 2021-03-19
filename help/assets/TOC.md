@@ -6,11 +6,12 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, distribuya y optimice recursos digitales.
+feature-set: Experience Manager Assets
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 39%
+ht-degree: 42%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 39%
 + [Acerca de DAM](assets.md)
 + [Prácticas recomendadas para los recursos](best-practices-for-assets.md)
 + [Accesibilidad en [!DNL Assets]](accessibility.md)
-+ Usar Experience Manager Assets {#using}
++ Usar recursos de Experience Manager {#using}
    + [[!DNL Assets] experiencia de página de inicio](assets-home-page.md)
    + [Buscar recursos digitales](search-assets.md)
    + [Trabajar con metadatos de recursos](metadata.md)
@@ -78,7 +79,7 @@ ht-degree: 39%
    + [Vincular URL en la aplicación web](linking-urls-to-yourwebapplication.md)
    + [Usar conjuntos de reglas para transformar URL](using-rulesets-to-transform-urls.md)
    + [Publicar recursos de Dynamic Media](publishing-dynamicmedia-assets.md)
-   + [Uso de la publicación selectiva en Dynamic Media](selective-publishing.md)
+   + [Uso de Publicación selectiva en Dynamic Media](selective-publishing.md)
    + [Invalidación de la caché de CDN mediante Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
    + [Invalidación de la caché de CDN mediante Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Instalación del Feature Pack 18912 para la migración masiva de recursos](bulk-ingest-migrate.md)
@@ -119,7 +120,7 @@ ht-degree: 39%
    + [Uso del paquete de demostración para perspectivas de recursos](use-demo-package-for-asset-insights.md)
    + [Prácticas recomendadas del formato de los archivos de recursos](assets-file-format-best-practices.md)
    + [Prácticas recomendadas para monitorizar recursos](assets-monitoring-best-practices.md)
-   + [Compatibilidad con Camera Raw](camera-raw.md)
+   + [compatibilidad Camera Raw](camera-raw.md)
    + [Detectar el tipo MIME de los recursos que utilizan Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Biblioteca de transcodificación de imágenes](imaging-transcoding-library.md)
    + [Varios alquileres para colecciones, fragmentos y plantillas de fragmentos](multi-tenancy.md)
@@ -149,7 +150,7 @@ ht-degree: 39%
    + [Administrar recursos de vídeo](managing-video-assets.md)
    + [Crear proyectos de traducción](translation-projects.md)
    + [Preparación de recursos para su traducción](preparing-assets-for-translation.md)
-   + [Descargar recursos de Experience Manager](download-assets-from-aem.md)
+   + [Descargar recursos del Experience Manager](download-assets-from-aem.md)
    + [Lightbox](light-box.md)
    + [Perspectivas de recursos](asset-insights.md)
    + [Habilitar perspectivas de recursos a través de DTM](use-dtm-for-asset-insights.md)
