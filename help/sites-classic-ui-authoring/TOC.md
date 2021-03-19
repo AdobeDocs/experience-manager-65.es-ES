@@ -3,20 +3,23 @@ cloud: experience-cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guía del usuario de creación de IU de AEM 6.5 Classic
-user-guide-description: Esta guía cubre los conceptos de creación en AEM en la interfaz de usuario clásica.
+user-guide-title: Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic
+user-guide-description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
+feature-set: Experience Manager Sites
+feature: 'Creación  '
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '274'
 ht-degree: 84%
 
 ---
 
 
-# Guía del usuario de creación de IU clásica de AEM 6.5 {#classic-ui}
+# Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic {#classic-ui}
 
-+ [Introducción a la Guía de creación de IU clásica](home.md)
++ [Descripción general de la guía de creación de IU clásica](home.md)
 + Introducción a la creación de IU clásica {#introduction}
    + [Primeros pasos de creación](classic-page-author-first-steps.md)
    + [Crear en la IU clásica](classicui.md)
@@ -53,7 +56,7 @@ ht-degree: 84%
 + Flujos de trabajo {#workflows}
    + [Participación en flujos de trabajo](classic-workflows-participating.md)
    + [Uso de flujos de trabajo](classic-workflows.md)
-   + [Aplicación de flujos de trabajo a las páginas](classic-workflows-applying.md)
+   + [Aplicación de flujos de trabajo a páginas](classic-workflows-applying.md)
 + Lanzamientos {#launches}
    + [Lanzamientos](classic-launches.md)
    + [Creación de lanzamientos](classic-launches-creating.md)
