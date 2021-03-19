@@ -1,42 +1,43 @@
 ---
-title: Configure las perspectivas de recursos para obtener análisis.
+title: Configure Asset Insights para obtener análisis.
 description: Configure Asset Insights en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
+role: Arquitecto, Administrador
 translation-type: tm+mt
-source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '230'
 ht-degree: 7%
 
 ---
 
 
-# Configurar perspectivas de recursos {#configure-asset-insights}
+# Configurar Asset Insights {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] recoge datos de uso de recursos digitales utilizados por sitios web de terceros desde  [!DNL Adobe Analytics]. Para habilitar Asset Insights para recuperar estos datos y generar perspectivas, primero configure la función para integrarla con Adobe Analytics.
+[!DNL Adobe Experience Manager Assets] recupera los datos de uso relacionados con los recursos digitales utilizados por sitios web de terceros desde  [!DNL Adobe Analytics]. Para permitir que Asset Insights recupere estos datos y genere perspectivas, configure primero la función para integrarla con Adobe Analytics.
 
 >[!NOTE]
 >
->Las perspectivas solo son compatibles y se proporcionan para imágenes.
+>Las perspectivas solo se admiten y se proporcionan para imágenes.
 
 1. En [!DNL Experience Manager], haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]**.
 
    ![chlimage_1-72](assets/chlimage_1-210.png)
 
 1. Haga clic en la tarjeta **[!UICONTROL Configuración de información]**.
-1. En el asistente, seleccione un centro de datos y proporcione sus credenciales, incluido el nombre de su organización, el nombre de usuario y Shared Secret.
+1. En el asistente, seleccione un centro de datos y proporcione sus credenciales, incluidos el nombre de su organización, el nombre de usuario y el secreto compartido.
 
    ![Configuración de Adobe Analytics para Assets Insights en Experience Manager](assets/insights_config2.png)
 
-   *Figura: Configurar  [!DNL Adobe Analytics] para perspectivas de recursos en  [!DNL Experience Manager].*
+   *Figura: Configure  [!DNL Adobe Analytics] para Assets Insights en  [!DNL Experience Manager].*
 
 1. Haga clic en **[!UICONTROL Autenticar]**.
-1. Después de que [!DNL Experience Manager] autentique las credenciales, en la lista **[!UICONTROL Grupo de informes]**, elija un grupo de informes [!DNL Adobe Analytics] desde donde desee que Asset Insights recopile datos. Haga clic en **[!UICONTROL Agregar]**.
-1. Después de que [!DNL Experience Manager] configure el grupo de informes, haga clic en **[!UICONTROL Listo]**.
+1. Después de que [!DNL Experience Manager] autentique sus credenciales, en la lista **[!UICONTROL Grupo de informes]**, elija un grupo de informes [!DNL Adobe Analytics] desde el que desea que Asset Insights recupere datos. Haga clic en **[!UICONTROL Agregar]**.
+1. Una vez [!DNL Experience Manager] configurado el grupo de informes, haga clic en **[!UICONTROL Listo]**.
 
 ## Rastreador de páginas {#page-tracker}
 
-Después de configurar su cuenta [!DNL Adobe Analytics], se genera el código del rastreador de páginas. Para permitir que Assets Insights rastree [!DNL Experience Manager] recursos utilizados en sitios web de terceros, incluya el código del rastreador de páginas en el código del sitio web. Utilice la utilidad [!UICONTROL Rastreador de páginas] de [!DNL Experience Manager Assets] para generar el código del rastreador de páginas. Para obtener más información sobre cómo incluir el código del rastreador de páginas en páginas web de terceros, consulte [Uso del rastreador de páginas y código incrustado en páginas web](/help/assets/use-page-tracker.md).
+Después de configurar la cuenta de [!DNL Adobe Analytics], se genera el código del rastreador de páginas. Para permitir que Assets Insights rastree los [!DNL Experience Manager] recursos utilizados en sitios web de terceros, incluya el código del rastreador de páginas en el código del sitio web. Utilice la utilidad [!UICONTROL Page Tracker] de [!DNL Experience Manager Assets] para generar el código de seguimiento de páginas. Para obtener más información sobre cómo incluir el código del rastreador de páginas en páginas web de terceros, consulte [Uso del rastreador de páginas e incrustar código en páginas web](/help/assets/use-page-tracker.md).
 
 1. En [!DNL Experience Manager], haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]**.
 
