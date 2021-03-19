@@ -1,18 +1,19 @@
 ---
 title: Consola web
 seo-title: Consola web
-description: Aprenda a utilizar la consola web AEM.
-seo-description: Aprenda a utilizar la consola web AEM.
+description: Aprenda a utilizar la consola web de AEM.
+seo-description: Aprenda a utilizar la consola web de AEM.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
+feature: Configuración
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '729'
 ht-degree: 2%
 
 ---
@@ -20,19 +21,19 @@ ht-degree: 2%
 
 # Consola web{#web-console}
 
-La consola web de AEM se basa en la [consola de administración web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo comunitario para implementar la plataforma de servicio OSGi R4, que incluye el marco de trabajo OSGi y los servicios estándar.
+La consola web de AEM se basa en la [Consola de administración web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo comunitario para implementar la plataforma de servicio OSGi R4, que incluye el marco de OSGi y los servicios estándar.
 
 >[!NOTE]
 >
->En la consola web, cualquier descripción que mencione la configuración predeterminada se relaciona con los valores predeterminados de Sling.
+>En la consola web, cualquier descripción que mencione la configuración predeterminada está relacionada con los valores predeterminados de Sling.
 >
 >AEM tiene sus propios valores predeterminados, por lo que los valores predeterminados establecidos pueden diferir de los documentados en la consola.
 
-La consola web oferta una selección de fichas para mantener los paquetes OSGi, que incluyen:
+La consola web ofrece una selección de pestañas para mantener los paquetes OSGi, que incluyen:
 
-* [Configuración](#configuration): se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar los parámetros AEM sistema
-* [Paquetes](#bundles): utilizado para instalar paquetes
-* [Componentes](#components): se utiliza para controlar el estado de los componentes necesarios para la AEM
+* [Configuración](#configuration): se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar AEM parámetros del sistema
+* [Paquetes](#bundles): se utiliza para instalar paquetes
+* [Componentes](#components): se utiliza para controlar el estado de los componentes necesarios para AEM
 
 Cualquier cambio realizado se aplica inmediatamente al sistema en ejecución. No es necesario reiniciar.
 
@@ -42,42 +43,42 @@ Se puede acceder a la consola desde `../system/console`; por ejemplo:
 
 ## Configuración {#configuration}
 
-La ficha **Configuration** se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar AEM parámetros del sistema.
+La pestaña **Configuration** se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar AEM parámetros del sistema.
 
 >[!NOTE]
 >
->Consulte [Configuración de OSGi con la Consola Web](/help/sites-deploying/configuring-osgi.md) para obtener más detalles.
+>Consulte [Configuración de OSGi con la Consola Web](/help/sites-deploying/configuring-osgi.md) para obtener más información.
 
-Se puede acceder a la ficha **Configuración** desde:
+Se puede acceder a la pestaña **Configuration** desde:
 
-* Menú desplegable:
+* El menú desplegable:
 
    **los paquetes >**
 
-* La dirección URL; por ejemplo:
+* La URL; por ejemplo:
 
    `http://localhost:4502/system/console/configMgr`
 
-Se mostrará una lista de las configuraciones:
+Se mostrará una lista de configuraciones:
 
 ![screen_shot_2012-02-15at52308pm](assets/screen_shot_2012-02-15at52308pm.png)
 
-Existen dos tipos de configuraciones disponibles en las listas desplegables de esta pantalla:
+Hay dos tipos de configuraciones disponibles en las listas desplegables de esta pantalla:
 
 * ****
 ConfiguracionesPermite actualizar las configuraciones existentes. Tienen una identidad persistente (PID) y pueden ser:
 
    * estándar e integral para AEM; son obligatorios, si se eliminan, los valores vuelven a la configuración predeterminada.
-   * instancias creadas a partir de configuraciones de fábrica; estas instancias son creadas por el usuario, la eliminación elimina la instancia.
+   * instancias creadas a partir de Configuraciones de fábrica; el usuario crea estas instancias, la eliminación elimina la instancia.
 
 * ****
 Configuraciones de fábricaPermite crear una instancia del objeto de funcionalidad requerido.
 
-   Se asignará una identidad persistente y, a continuación, se incluirá en la lista desplegable Configuraciones.
+   Se le asignará una identidad persistente y, a continuación, se incluirá en la lista desplegable Configuraciones .
 
-Al seleccionar cualquier entrada de las listas se mostrarán los parámetros relacionados con esa configuración:
+Al seleccionar cualquier entrada de las listas, se mostrarán los parámetros relacionados con esa configuración:
 
-![chlimage_1-29](assets/chlimage_1-21a.png)
+![imagen_1-21](assets/chlimage_1-21a.png)
 
 A continuación, puede actualizar los parámetros según sea necesario y:
 
@@ -85,11 +86,11 @@ A continuación, puede actualizar los parámetros según sea necesario y:
 
    Guarde los cambios realizados.
 
-   Para una configuración de fábrica, se creará una nueva instancia con una identidad persistente. La nueva instancia se mostrará en Configuraciones.
+   Para una configuración de fábrica, se creará una nueva instancia con una identidad persistente. La nueva instancia aparece luego en Configuraciones.
 
 * **Restablecer**
 
-   Restablezca los parámetros que se muestran en pantalla a los guardados en último lugar.
+   Restablezca los parámetros mostrados en pantalla a los guardados en último lugar.
 
 * **Eliminar**
 
@@ -97,33 +98,33 @@ A continuación, puede actualizar los parámetros según sea necesario y:
 
 * **Desenlazar**
 
-   Desenlazar la configuración actual del paquete.
+   Desvincule la configuración actual del paquete.
 
 * **Cancelar**
 
-   Cancelar los cambios actuales.
+   Cancelar cualquier cambio actual.
 
 ## Paquetes {#bundles}
 
-La ficha **Bundles** es el mecanismo para instalar los paquetes OSGi necesarios para AEM. Se puede acceder a la ficha mediante cualquiera de los siguientes métodos:
+La pestaña **Bundles** es el mecanismo para instalar los paquetes OSGi requeridos para AEM. Se puede acceder a la pestaña mediante cualquiera de los métodos siguientes:
 
-* Menú desplegable:
+* El menú desplegable:
 
    **los paquetes >**
 
-* La dirección URL; por ejemplo:
+* La URL; por ejemplo:
 
    `http://localhost:4502/system/console/bundles`
 
 Se mostrará una lista de paquetes:
 
-![screen_shot_2012-02-15at44740pm](assets/screen_shot_2012-02-15at44740pm.png)
+![screen_shot_2012-02-15at4740pm](assets/screen_shot_2012-02-15at44740pm.png)
 
 Con esta ficha puede:
 
 * **Instalar o actualizar**
 
-   Puede **Examinar** para encontrar el archivo que contiene el paquete y especificar si debe **Inicio** inmediatamente y en qué **nivel de Inicio**.
+   Puede **Examinar** para encontrar el archivo que contiene su paquete y especificar si debe **Iniciar** inmediatamente y en qué **Nivel de inicio**.
 
 * **Volver a cargar**
 
@@ -133,11 +134,11 @@ Con esta ficha puede:
 
    Esto comprobará las referencias de todos los paquetes y se actualizará según sea necesario.
 
-   Por ejemplo, después de una actualización, es posible que tanto la versión antigua como la nueva sigan ejecutándose debido a referencias anteriores. Esta opción comprueba y mueve todas las referencias a la nueva versión, permitiendo que se detenga la versión anterior.
+   Por ejemplo, después de una actualización, la versión antigua y la nueva pueden seguir ejecutándose debido a referencias anteriores. Esta opción comprobará y moverá todas las referencias a la nueva versión, permitiendo que se detenga la versión antigua.
 
 * **Inicial**
 
-   Inicio un paquete según el nivel de inicio especificado.
+   Inicia un paquete según el nivel de inicio especificado.
 
 * **Detener**
 
@@ -149,31 +150,31 @@ Con esta ficha puede:
 
 * **ver el estado**
 
-   La lista especifica el estado actual del paquete; hacer clic en el nombre de un paquete específico con mostrar más información.
+   La lista especifica el estado actual del paquete; al hacer clic en el nombre de un paquete específico con mostrar más información.
 
 >[!NOTE]
 >
->Después de **Actualizar** se recomienda realizar un **Actualizar paquetes**.
+>Después de **Actualizar** se recomienda realizar **Actualizar paquetes**.
 
 ## Componentes {#components}
 
-La ficha **Componentes** permite activar y/o desactivar los distintos componentes. Se puede acceder a ella desde:
+La pestaña **Components** le permite activar o desactivar los distintos componentes. Puede acceder a ella desde:
 
-* Menú desplegable:
+* El menú desplegable:
 
    **Principal >**
 
-* La dirección URL; por ejemplo:
+* La URL; por ejemplo:
 
    `http://localhost:4502/system/console/components`
 
-Se mostrará una lista de los componentes. Hay varios iconos disponibles para permitirle habilitar, deshabilitar o (cuando corresponda) abrir detalles de configuración para un componente específico.
+Se mostrará una lista de componentes. Hay varios iconos disponibles para permitirle habilitar, deshabilitar o (cuando corresponda) abrir detalles de configuración de un componente específico.
 
 ![screen_shot_2012-02-15at52144pm](assets/screen_shot_2012-02-15at52144pm.png)
 
-Al hacer clic en el nombre de un componente en particular se mostrará más información sobre su estado. Aquí también puede habilitar, deshabilitar o volver a cargar el componente.
+Al hacer clic en el nombre de un componente en particular, se mostrará más información sobre su estado. Aquí también puede habilitar, deshabilitar o volver a cargar el componente.
 
-![chlimage_1-22](assets/chlimage_1-22a.png)
+![imagen_1-22](assets/chlimage_1-22a.png)
 
 >[!NOTE]
 >
