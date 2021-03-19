@@ -1,18 +1,19 @@
 ---
 title: Invocación de AEM Forms mediante Remoting
 seo-title: Invocación de AEM Forms mediante Remoting
-description: Utilice Remoting para invocar un proceso de AEM Forms para invocar procesos creados en Workbench. Puede invocar un proceso de AEM Forms desde una aplicación cliente creada con Flex.
-seo-description: Utilice Remoting para invocar un proceso de AEM Forms para invocar procesos creados en Workbench. Puede invocar un proceso de AEM Forms desde una aplicación cliente creada con Flex.
+description: Utilice Remoting para invocar un proceso de AEM Forms e invocar procesos creados en Workbench. Puede invocar un proceso AEM Forms desde una aplicación cliente creada con Flex.
+seo-description: Utilice Remoting para invocar un proceso de AEM Forms e invocar procesos creados en Workbench. Puede invocar un proceso AEM Forms desde una aplicación cliente creada con Flex.
 uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
+role: Desarrollador
 translation-type: tm+mt
-source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '4661'
+source-wordcount: '4662'
 ht-degree: 0%
 
 ---
@@ -20,30 +21,30 @@ ht-degree: 0%
 
 # Invocación de AEM Forms mediante Remoting {#invoking-aem-forms-using-remoting}
 
-**Los ejemplos y ejemplos de este documento son solo para AEM Forms en el entorno JEE.**
+**Los ejemplos y ejemplos de este documento son solo para AEM Forms en un entorno JEE.**
 
-Los procesos creados en Workbench se pueden invocar mediante Remoting. Es decir, puede invocar un proceso de AEM Forms desde una aplicación cliente creada con Flex. Esta función se basa en los servicios de datos.
-
->[!NOTE]
->
->Al utilizar Remoting, se recomienda invocar procesos creados en Workbench en lugar de los servicios de AEM Forms. Sin embargo, es posible invocar los servicios de AEM Forms directamente. (Consulte Codificación de documentos PDF mediante Remoting en el Centro de desarrolladores de AEM Forms).
+Los procesos creados en Workbench se pueden invocar mediante Remoting. Es decir, puede invocar un proceso AEM Forms desde una aplicación cliente creada con Flex. Esta función se basa en los servicios de datos.
 
 >[!NOTE]
 >
->Si un servicio de AEM Forms no está configurado para permitir el acceso anónimo, las solicitudes de un cliente de Flex resultan en un desafío para el explorador Web. El usuario debe introducir las credenciales de nombre de usuario y contraseña.
+>Al utilizar Remoting, se recomienda invocar procesos creados en Workbench en lugar de los servicios de AEM Forms. Sin embargo, es posible invocar los servicios de AEM Forms directamente. (Consulte Codificación de documentos PDF mediante Remoting en AEM Forms Developer Center).
 
-El siguiente proceso breve de AEM Forms, denominado `MyApplication/EncryptDocument`, se puede invocar mediante Remoting. (Para obtener información sobre este proceso, como los valores de entrada y salida, consulte [Ejemplo de proceso de corta duración](/help/forms/developing/aem-forms-processes.md)).
+>[!NOTE]
+>
+>Si un servicio de AEM Forms no está configurado para permitir el acceso anónimo, las solicitudes de un cliente de Flex resultan en un desafío para el explorador web. El usuario debe introducir las credenciales de nombre de usuario y contraseña.
+
+El siguiente proceso breve de AEM Forms, llamado `MyApplication/EncryptDocument`, se puede invocar mediante Remoting. (Para obtener información sobre este proceso, como sus valores de entrada y salida, consulte [Short life process example](/help/forms/developing/aem-forms-processes.md)).
 
 ![iu_iu_encryptdocumentprocess2](assets/iu_iu_encryptdocumentprocess2.png)
 
 >[!NOTE]
 >
->Para invocar un proceso de AEM Forms mediante una aplicación de Flex, asegúrese de que esté habilitado un extremo remoto. De forma predeterminada, se habilita un extremo remoto al implementar un proceso.
+>Para invocar un proceso de AEM Forms mediante una aplicación de Flex, asegúrese de que un extremo remoto esté habilitado. De forma predeterminada, un punto final remoto está habilitado cuando se implementa un proceso.
 
 Cuando se invoca este proceso, realiza las siguientes acciones:
 
-1. Obtiene el documento PDF no seguro que se pasa como un valor de entrada. Esta acción se basa en la operación `SetValue`. El nombre del parámetro de entrada es `inDoc` y su tipo de datos es `document`. (El tipo de datos `document` es un tipo de datos disponible desde Workbench).
-1. Codifica el documento PDF con una contraseña. Esta acción se basa en la operación `PasswordEncryptPDF`. El nombre del valor de salida para este proceso es `outDoc` y representa el documento PDF con contraseña cifrada. El tipo de datos de outDoc es `document`.
+1. Obtiene el documento PDF no protegido que se pasa como valor de entrada. Esta acción se basa en la operación `SetValue`. El nombre del parámetro de entrada es `inDoc` y su tipo de datos es `document`. (El tipo de datos `document` es un tipo de datos disponible desde Workbench).
+1. Codifica el documento PDF con una contraseña. Esta acción se basa en la operación `PasswordEncryptPDF`. El nombre del valor de salida para este proceso es `outDoc` y representa el documento PDF cifrado con contraseña. El tipo de datos de outDoc es `document`.
 1. Guarda el documento PDF con contraseña cifrada como archivo PDF en el sistema de archivos local. Esta acción se basa en la operación `WriteDocument`.
 
 >[!NOTE]
@@ -52,61 +53,61 @@ Cuando se invoca este proceso, realiza las siguientes acciones:
 
 >[!NOTE]
 >
->Para obtener información sobre el uso de Remoting para invocar un proceso duradero, consulte [Invocación de procesos prolongados centrados en el ser humano](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
+>Para obtener información sobre el uso de Remoting para invocar un proceso de larga duración, consulte [Invocación de procesos de larga duración centrados en el ser humano](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
 **Consulte también**
 
 [Inclusión del archivo de biblioteca Flex de AEM Forms](invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)
 
-[Gestión de documentos con AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)
+[Gestión de documentos con AEM Forms Remoting (obsoleto para AEM formularios)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)
 
-[Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
+[Invocación de un proceso de corta duración pasando un documento no seguro usando (obsoleto para formularios AEM) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
 
-[Autentificación de las aplicaciones cliente creadas con Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
+[Autenticación de aplicaciones cliente creadas con Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
 [Pasar documentos seguros para invocar procesos mediante Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
 
 [Invocación de servicios de componentes personalizados mediante Remoting](invoking-aem-forms-using-remoting.md#invoking-custom-component-services-using-remoting)
 
-[Creación de una aplicación cliente creada con Flex que invoque un proceso prolongado centrado en el ser humano](/help/forms/developing/invoking-human-centric-long-lived.md#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process)
+[Creación de una aplicación cliente creada con Flex que invoca un proceso prolongado centrado en el ser humano](/help/forms/developing/invoking-human-centric-long-lived.md#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process)
 
-[Creación de aplicaciones de Flash Builder que realizan la autenticación SSO mediante tokens HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
+[Creación de aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
 
-Para obtener información sobre cómo mostrar datos de proceso en un control de gráficos de Flex, consulte [Visualización de datos de proceso de AEM Forms en gráficos de Flex](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html).
+Para obtener información sobre cómo mostrar datos de proceso en un control de gráfico de Flex, consulte [Visualización de datos de proceso de AEM Forms en gráficos de Flex](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html).
 
 >[!NOTE]
 >
->*Asegúrese de colocar el archivo cross-domain.xml en el lugar adecuado. Por ejemplo, suponiendo que haya implementado AEM Forms en JBoss, coloque este archivo en la siguiente ubicación: &lt;install_directory>\Adobe_Experience_Manager_forms\jboss\server\lc_turnkey\deploy\jboss-web.deployer\ROOT.war.*
+>*Asegúrese de colocar el archivo cross-domain.xml en el lugar adecuado. Por ejemplo, suponiendo que haya implementado AEM Forms en JBoss, coloque este archivo en la siguiente ubicación: &lt;directorio_de_instalación>\Adobe_Experience_Manager_forms\jboss\server\lc_turnkey\deploy\jboss-web.deployer\ROOT.war.*
 
 ## Inclusión del archivo de biblioteca Flex de AEM Forms {#including-the-aem-forms-flex-library-file}
 
-Para invocar mediante programación los procesos de AEM Forms mediante Remoting, agregue el archivo adobe-remoting-provider.swc a la ruta de clases del proyecto de Flex. Este archivo SWC se encuentra en la siguiente ubicación:
+Para invocar mediante programación procesos de AEM Forms mediante Remoting, agregue el archivo adobe-remoting-provider.swc a la ruta de clase de su proyecto de Flex. Este archivo SWC se encuentra en la siguiente ubicación:
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-   donde &lt;*directorio_de_instalación*> es el directorio en el que está instalado AEM Forms.
+   donde &lt;*install_directory*> es el directorio donde está instalado AEM Forms.
 
 **Consulte también**
 
 [Invocación de AEM Forms mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
-[Gestión de documentos con AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)
+[Gestión de documentos con AEM Forms Remoting (obsoleto para AEM formularios)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)
 
-[Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
+[Invocación de un proceso de corta duración pasando un documento no seguro usando (obsoleto para formularios AEM) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
 
-[Autentificación de las aplicaciones cliente creadas con Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
+[Autenticación de aplicaciones cliente creadas con Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
-## Administración de documentos con Remoting {#handling-documents-with-remoting}
+## Gestión de documentos con Remoting {#handling-documents-with-remoting}
 
-Uno de los tipos Java no primitivos más importantes que se utiliza en AEM Forms es la clase `com.adobe.idp.Document`. Normalmente se requiere un documento para invocar una operación de AEM Forms. Se trata principalmente de un documento PDF, pero puede contener otros tipos de documentos como SWF, HTML, XML o un archivo DOC. (Consulte [Pasar datos a servicios de AEM Forms mediante la API de Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)).
+Uno de los tipos Java no primitivos más importantes que se usa en AEM Forms es la clase `com.adobe.idp.Document`. Normalmente, un documento es necesario para invocar una operación de AEM Forms. Es principalmente un documento PDF, pero puede contener otros tipos de documentos, como SWF, HTML, XML o un archivo DOC. (Consulte [Pasar datos a servicios de AEM Forms mediante la API de Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)).
 
-Una aplicación cliente creada con Flex no puede solicitar directamente un documento. Por ejemplo, no se puede iniciar Adobe Reader para solicitar una URL que produzca un archivo PDF. Las solicitudes de tipos de documento, como documentos PDF y Microsoft Word, devuelven un resultado que es una dirección URL. Es responsabilidad del cliente mostrar el contenido de la dirección URL. El servicio Administración de Documentos ayuda a generar la dirección URL y la información de tipo de contenido. Las solicitudes de documentos XML devuelven el documento XML completo en el resultado.
+Una aplicación cliente creada con Flex no puede solicitar directamente un documento. Por ejemplo, no se puede iniciar Adobe Reader para solicitar una URL que produzca un archivo PDF. Las solicitudes para tipos de documentos, como documentos PDF y Microsoft Word, devuelven un resultado que es una dirección URL. Es responsabilidad del cliente mostrar el contenido de la dirección URL. El servicio de Gestión de documentos ayuda a generar la información de tipo de contenido y dirección URL. Las solicitudes de documentos XML devuelven el documento XML completo en el resultado.
 
 ### Pasar un documento como parámetro de entrada {#passing-a-document-as-an-input-parameter}
 
 Una aplicación cliente creada con Flex no puede pasar un documento directamente a un proceso de AEM Forms. En su lugar, la aplicación cliente utiliza una instancia de la clase de ActionScript `mx.rpc.livecycle.DocumentReference` para pasar parámetros de entrada a una operación que espera una instancia `com.adobe.idp.Document`. Una aplicación cliente de Flex tiene varias opciones para configurar un objeto `DocumentReference`:
 
-* Cuando el documento se encuentra en el servidor y su ubicación de archivo es conocida, establezca la propiedad referenceType del objeto DocumentReference en REF_TYPE_FILE. Establezca la propiedad fileRef en la ubicación del archivo, como se muestra en el siguiente ejemplo:
+* Cuando el documento se encuentra en el servidor y se conoce su ubicación, establezca la propiedad referenceType del objeto DocumentReference en REF_TYPE_FILE. Establezca la propiedad fileRef en la ubicación del archivo, como se muestra en el siguiente ejemplo:
 
 ```java
  ... var docRef: DocumentReference = new DocumentReference(); 
@@ -114,7 +115,7 @@ Una aplicación cliente creada con Flex no puede pasar un documento directamente
  docRef.fileRef = "C:/install/adobe/cs2/How to Uninstall.pdf"; ...
 ```
 
-* Cuando el documento se encuentra en el servidor y conoce su URL, establezca la propiedad referenceType del objeto DocumentReference en REF_TYPE_URL. Establezca la propiedad url en la URL, como se muestra en el siguiente ejemplo:
+* Cuando el documento está en el servidor y conoce su URL, establezca la propiedad referenceType del objeto DocumentReference en REF_TYPE_URL. Establezca la propiedad url en la dirección URL, como se muestra en el siguiente ejemplo:
 
 ```java
 ... var docRef: DocumentReference = new DocumentReference(); 
@@ -122,7 +123,7 @@ docRef.referenceType = DocumentReference.REF_TYPE_URL; 
 docRef.url = "https://companyserver:8080/DocumentManager/116/7855"; ...
 ```
 
-* Para crear un objeto DocumentReference a partir de una cadena de texto en la aplicación cliente, establezca la propiedad referenceType del objeto DocumentReference en REF_TYPE_INLINE. Defina la propiedad text en el texto que se incluirá en el objeto, como se muestra en el siguiente ejemplo:
+* Para crear un objeto DocumentReference a partir de una cadena de texto en la aplicación cliente, establezca la propiedad referenceType del objeto DocumentReference en REF_TYPE_INLINE. Establezca la propiedad text en el texto que se incluirá en el objeto, como se muestra en el siguiente ejemplo:
 
 ```java
 ... var docRef: DocumentReference = new DocumentReference(); 
@@ -130,13 +131,13 @@ docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
 docRef.text = "Text for my document";  // Optionally, you can override the server’s default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
-* Cuando el documento no esté en el servidor, utilice el servlet de carga Remoting para cargar un documento en AEM Forms. En AEM Forms es una novedad la capacidad de cargar documentos seguros. Al cargar un documento seguro, debe utilizar un usuario que tenga la función *Usuario de aplicación de carga de Documento*. Sin esta función, el usuario no puede cargar un documento seguro. Se recomienda utilizar el inicio de sesión único para cargar un documento seguro. (Consulte [Paso de documentos seguros para invocar procesos mediante Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+* Cuando el documento no esté en el servidor, utilice el servlet Remoting upload para cargar un documento en AEM Forms. Lo nuevo en AEM Forms es la capacidad de cargar documentos seguros. Al cargar un documento seguro, debe utilizar un usuario que tenga la función *Document Upload Application User*. Sin esta función, el usuario no puede cargar un documento seguro. Se recomienda utilizar el inicio de sesión único para cargar un documento seguro. (Consulte [Pasar documentos seguros para invocar procesos mediante Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)).
 
 >[!NOTE]
-si AEM Forms está configurado para permitir la carga de documentos no seguros, puede usar un usuario que no tenga la función de usuario de la aplicación de carga de Documento para cargar un documento. Un usuario también puede tener el permiso de carga de Documento. Sin embargo, si AEM Forms está configurado para permitir solo documentos seguros, asegúrese de que el usuario tiene la función de usuario de la aplicación de carga de Documento o el permiso de carga de Documento. (Consulte [Configuración de AEM Forms para aceptar documentos seguros y no seguros](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
+si AEM Forms está configurado para permitir la carga de documentos no seguros, puede utilizar un usuario que no tenga la función de usuario de la aplicación de carga de documentos para cargar un documento. Un usuario también puede tener el permiso Carga de documento . Sin embargo, si AEM Forms está configurado para permitir solo documentos seguros, asegúrese de que el usuario tenga la función de usuario de la aplicación de carga de documentos o el permiso de carga de documentos. (Consulte [Configuración de AEM Forms para aceptar documentos seguros y no seguros](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
-Las funciones de carga de Flash estándar se utilizan para la URL de carga designada: `https://SERVER:PORT/remoting/lcfileupload`. Luego puede utilizar el objeto `DocumentReference` siempre que se espere un parámetro de entrada de tipo `Document`
-` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`El Inicio rápido de Remoting utiliza el servlet de carga Remoting para pasar un archivo PDF al proceso `MyApplication/EncryptDocument`. (Consulte [Invocación de un proceso de corta duración al pasar un documento no seguro mediante AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (obsoleto para formularios AEM).)
+Las funciones de carga de Flash estándar se usan para la URL de carga designada: `https://SERVER:PORT/remoting/lcfileupload`. A continuación, puede utilizar el objeto `DocumentReference` siempre que se espere un parámetro de entrada de tipo `Document`
+` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`El inicio rápido remoto utiliza el servlet de carga remota para pasar un archivo PDF al proceso `MyApplication/EncryptDocument`. (Consulte [Invocación de un proceso de corta duración pasando un documento no seguro usando (obsoleto para AEM formularios) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)).
 
 ```java
  
@@ -169,11 +170,11 @@ function completeHandler(event: DataEvent): void  { 
 }
 ```
 
-El Inicio rápido de Remoting utiliza el servlet de carga Remoting para pasar un archivo PDF al proceso `MyApplication/EncryptDocument`. (Consulte [Invocación de un proceso de corta duración al pasar un documento no seguro mediante AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (obsoleto para formularios AEM).)
+El inicio rápido remoto utiliza el servlet de carga remota para pasar un archivo PDF al proceso `MyApplication/EncryptDocument`. (Consulte [Invocación de un proceso de corta duración pasando un documento no seguro usando (obsoleto para AEM formularios) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)).
 
-### Devolución de un documento a una aplicación cliente {#passing-a-document-back-to-a-client-application}
+### Devolver un documento a una aplicación cliente {#passing-a-document-back-to-a-client-application}
 
-Una aplicación cliente recibe un objeto de tipo `mx.rpc.livecycle.DocumentReference` para una operación de servicio que devuelve una instancia `com.adobe.idp.Document` como parámetro de salida. Dado que una aplicación cliente se ocupa de objetos de ActionScript y no de Java, no se puede devolver un objeto de Documento basado en Java a un cliente de Flex. En su lugar, el servidor genera una dirección URL para el documento y la devuelve al cliente. La propiedad `DocumentReference` del objeto `referenceType` especifica si el contenido está en el objeto `DocumentReference` o debe recuperarse de una dirección URL en la propiedad `DocumentReference.url`. La propiedad `DocumentReference.contentType` especifica el tipo de documento.
+Una aplicación cliente recibe un objeto de tipo `mx.rpc.livecycle.DocumentReference` para una operación de servicio que devuelve una instancia `com.adobe.idp.Document` como parámetro de salida. Dado que una aplicación cliente trata de objetos de ActionScript y no de Java, no puede devolver un objeto Document basado en Java a un cliente de Flex. En su lugar, el servidor genera una dirección URL para el documento y la devuelve al cliente. La propiedad `DocumentReference` del objeto `referenceType` especifica si el contenido está en el objeto `DocumentReference` o si debe recuperarse de una dirección URL en la propiedad `DocumentReference.url`. La propiedad `DocumentReference.contentType` especifica el tipo de documento.
 
 **Consulte también**
 
@@ -181,33 +182,33 @@ Una aplicación cliente recibe un objeto de tipo `mx.rpc.livecycle.DocumentRefer
 
 [Inclusión del archivo de biblioteca Flex de AEM Forms](invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)
 
-[Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
+[Invocación de un proceso de corta duración pasando un documento no seguro usando (obsoleto para formularios AEM) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
 
-[Autentificación de las aplicaciones cliente creadas con Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
+[Autenticación de aplicaciones cliente creadas con Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
 [Pasar documentos seguros para invocar procesos mediante Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
 
-## Invocar un proceso de corta duración al pasar un documento no seguro mediante Remoting {#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting}
+## Invocación de un proceso de corta duración al pasar un documento no seguro mediante Remoting {#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting}
 
 Para invocar un proceso de AEM Forms desde una aplicación creada con Flex, realice las siguientes tareas:
 
 1. Cree una instancia `mx:RemoteObject`.
 1. Cree una instancia `ChannelSet`.
-1. Transfiera los valores de entrada necesarios.
-1. Gestionar valores devueltos.
+1. Pasa los valores de entrada necesarios.
+1. Gestione los valores devueltos.
 
 >[!NOTE]
-En esta sección se explica cómo invocar un proceso de AEM Forms y cargar un documento cuando AEM Forms está configurado para cargar documentos no seguros. Para obtener información sobre cómo invocar procesos de AEM Forms y cargar documentos seguros y cómo configurar AEM Forms para que acepte documentos seguros y no seguros, consulte [Paso de documentos seguros para invocar procesos mediante Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
+En esta sección se explica cómo invocar un proceso de AEM Forms y cargar un documento cuando AEM Forms está configurado para cargar documentos no seguros. Para obtener información sobre cómo invocar procesos de AEM Forms y cargar documentos seguros, y cómo configurar AEM Forms para aceptar documentos seguros y no seguros, consulte [Pasar documentos seguros para invocar procesos mediante Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
 **Creación de una instancia mx:RemoteObject**
 
-Puede crear una instancia `mx:RemoteObject` para invocar un proceso de AEM Forms creado en Workbench. Para crear una instancia `mx:RemoteObject`, especifique los siguientes valores:
+Puede crear una instancia `mx:RemoteObject` para invocar un proceso de AEM Forms creado en Workbench. Para crear una instancia `mx:RemoteObject` , especifique los siguientes valores:
 
 * **id:** el nombre de la  `mx:RemoteObject` instancia que representa el proceso que se va a invocar.
-* **destino:** el nombre del proceso de AEM Forms que se va a invocar. Por ejemplo, para invocar el proceso `MyApplication/EncryptDocument`, especifique `MyApplication/EncryptDocument`.
-* **resultado:** nombre del método Flex que controla el resultado.
+* **destino:** nombre del proceso de AEM Forms que se va a invocar. Por ejemplo, para invocar el proceso `MyApplication/EncryptDocument`, especifique `MyApplication/EncryptDocument`.
+* **resultado:** El nombre del método Flex que gestiona el resultado.
 
-En la etiqueta `mx:RemoteObject`, especifique una etiqueta `<mx:method>` que especifique el nombre del método de invocación del proceso. Normalmente, el nombre de un método de invocación de Forms es `invoke`.
+Dentro de la etiqueta `mx:RemoteObject` , especifique una etiqueta `<mx:method>` que especifique el nombre del método de invocación del proceso. Normalmente, el nombre de un método de invocación de Forms es `invoke`.
 
 El siguiente ejemplo de código crea una instancia `mx:RemoteObject` que invoca el proceso `MyApplication/EncryptDocument`.
 
@@ -217,9 +218,9 @@ El siguiente ejemplo de código crea una instancia `mx:RemoteObject` que invoca 
       </mx:RemoteObject>
 ```
 
-**Creación de un Canal en AEM Forms**
+**Creación de un canal en AEM Forms**
 
-Una aplicación cliente puede invocar AEM Forms especificando un Canal en MXML o ActionScript, como se muestra en el siguiente ejemplo de ActionScript. El Canal debe ser `AMFChannel`, `SecureAMFChannel`, `HTTPChannel` o `SecureHTTPChannel`.
+Una aplicación cliente puede invocar AEM Forms especificando un Canal en MXML o ActionScript, como se muestra en el siguiente ejemplo de ActionScript. El canal debe ser `AMFChannel`, `SecureAMFChannel`, `HTTPChannel` o `SecureHTTPChannel`.
 
 ```java
      ...
@@ -233,11 +234,11 @@ Una aplicación cliente puede invocar AEM Forms especificando un Canal en MXML o
      ...
 ```
 
-Asigne la instancia `ChannelSet` al campo `mx:RemoteObject` de la instancia `channelSet` (como se muestra en el ejemplo de código anterior). Generalmente, la clase canal se importa en una instrucción import en lugar de especificar el nombre completo al invocar el método `ChannelSet.addChannel`.
+Asigne la instancia `ChannelSet` al campo `mx:RemoteObject` de la instancia `channelSet` (como se muestra en el ejemplo de código anterior). Por lo general, se importa la clase channel en una instrucción de importación en lugar de especificar el nombre completo cuando se invoca el método `ChannelSet.addChannel`.
 
 **Pasar valores de entrada**
 
-Un proceso creado en Workbench puede tomar cero o más parámetros de entrada y devolver un valor de salida. Una aplicación cliente pasa parámetros de entrada dentro de un objeto `ActionScript` con campos que corresponden a parámetros que pertenecen al proceso de AEM Forms. El proceso de corta duración, denominado `MyApplication/EncryptDocument`, requiere un parámetro de entrada denominado `inDoc`. El nombre de la operación expuesta por el proceso es `invoke` (el nombre predeterminado para un proceso de corta duración). (Consulte [Invocación de AEM Forms mediante (obsoleto para formularios AEM) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Un proceso creado en Workbench puede tomar cero o más parámetros de entrada y devolver un valor de salida. Una aplicación cliente pasa parámetros de entrada dentro de un objeto `ActionScript` con campos que corresponden a parámetros que pertenecen al proceso AEM Forms. El proceso de corta duración, llamado `MyApplication/EncryptDocument`, requiere un parámetro de entrada denominado `inDoc`. El nombre de la operación expuesta por el proceso es `invoke` (el nombre predeterminado de un proceso de corta duración). (Consulte [Invocación de AEM Forms mediante (obsoleto para AEM formularios) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)).
 
 El siguiente ejemplo de código pasa un documento PDF al proceso `MyApplication/EncryptDocument`:
 
@@ -254,11 +255,11 @@ El siguiente ejemplo de código pasa un documento PDF al proceso `MyApplication/
      ...
 ```
 
-En este ejemplo de código, `pdfDocument` es una instancia `DocumentReference` que contiene un documento PDF no seguro. Para obtener más información sobre una `DocumentReference`, consulte [Administración de documentos con (obsoleto para formularios AEM) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting).
+En este ejemplo de código, `pdfDocument` es una instancia `DocumentReference` que contiene un documento PDF no protegido. Para obtener información sobre un `DocumentReference`, consulte [Gestión de documentos con (obsoleto para formularios AEM) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting).
 
 **Invocación de una versión específica de un servicio**
 
-Puede invocar una versión específica de un servicio de Forms utilizando un parámetro `_version` en el mapa de parámetros de invocación. Por ejemplo, para invocar la versión 1.2 del servicio `MyApplication/EncryptDocument`:
+Puede invocar una versión específica de un servicio de Forms utilizando un parámetro `_version` en el mapa de parámetros de la invocación. Por ejemplo, para invocar la versión 1.2 del servicio `MyApplication/EncryptDocument`:
 
 ```java
  var params:Object = new Object();
@@ -267,11 +268,11 @@ Puede invocar una versión específica de un servicio de Forms utilizando un par
  var token:AsyncToken = echoService.echoString(params);
 ```
 
-El parámetro `version` debe ser una cadena que contenga un solo punto. Los valores a la izquierda, la versión principal y la versión secundaria derecha del período deben ser enteros. Si no se especifica este parámetro, se invoca la versión principal activa.
+El parámetro `version` debe ser una cadena que contenga un solo punto. Los valores a la izquierda, la versión principal y la versión secundaria derecha del periodo deben ser enteros. Si no se especifica este parámetro, se invoca la versión principal activa.
 
 **Gestión de valores devueltos**
 
-Los parámetros de salida del proceso de AEM Forms se deserializan en objetos de ActionScript desde los que la aplicación cliente extrae parámetros específicos por nombre, como se muestra en el siguiente ejemplo. (El valor de salida del proceso `MyApplication/EncryptDocument` se denomina `outDoc`).
+Los parámetros de salida de proceso de AEM Forms se deserializan en objetos de ActionScript desde los que la aplicación cliente extrae parámetros específicos por nombre, como se muestra en el siguiente ejemplo. (El valor de salida del proceso `MyApplication/EncryptDocument` se denomina `outDoc`).
 
 ```java
      ...
@@ -284,42 +285,42 @@ Los parámetros de salida del proceso de AEM Forms se deserializan en objetos de
 
 Puede invocar el proceso `MyApplication/EncryptDocument` realizando los siguientes pasos:
 
-1. Cree una instancia `mx:RemoteObject` mediante ActionScript o MXML. Consulte Creación de una instancia mx:RemoteObject.
-1. Configure una instancia `ChannelSet` para comunicarse con AEM Forms y asóciela con la instancia `mx:RemoteObject`. Consulte Creación de un Canal en AEM Forms.
+1. Cree una instancia `mx:RemoteObject` mediante el ActionScript o el MXML. Consulte Creación de una instancia mx:RemoteObject .
+1. Configure una instancia `ChannelSet` para comunicarse con AEM Forms y asóciela a la instancia `mx:RemoteObject`. Consulte Crear un canal en AEM Forms.
 1. Llame al método `login` de ChannelSet o al método `setCredentials` del servicio para especificar el valor del identificador de usuario y la contraseña. (Consulte [Uso del inicio de sesión único](invoking-aem-forms-using-remoting.md#using-single-sign-on)).
-1. Rellene una instancia `mx.rpc.livecycle.DocumentReference` con un documento PDF no seguro para pasar al proceso `MyApplication/EncryptDocument`. (Consulte [Pasar un documento como parámetro de entrada](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
-1. Cifre el documento PDF llamando al método `mx:RemoteObject` de la instancia `invoke`. Pase el `Object` que contiene el parámetro de entrada (que es el documento PDF no seguro). Consulte Paso de valores de entrada.
+1. Rellene una instancia `mx.rpc.livecycle.DocumentReference` con un documento PDF no protegido para pasarlo al proceso `MyApplication/EncryptDocument`. (Consulte [Pasar un documento como parámetro de entrada](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter)).
+1. Codifique el documento PDF llamando al método `mx:RemoteObject` de la instancia `invoke`. Pase el `Object` que contiene el parámetro de entrada (que es el documento PDF no protegido). Consulte Pasar valores de entrada.
 1. Recupere el documento PDF cifrado con contraseña que se devuelve del proceso. Consulte Gestión de valores devueltos.
 
-[Inicio rápido: Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting (obsoleto para formularios AEM)](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
+[Inicio rápido: Invocación de un proceso de corta duración pasando un documento no seguro usando (obsoleto para formularios AEM) AEM Forms Remoting](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
 
-## Autentificación de las aplicaciones cliente creadas con Flex {#authenticating-client-applications-built-with-flex}
+## Autenticación de aplicaciones cliente creadas con Flex {#authenticating-client-applications-built-with-flex}
 
-Hay varias formas de que AEM administrador de usuarios de formularios pueda autenticar una solicitud Remoting desde una aplicación de Flex, incluido el inicio de sesión único de AEM Forms a través del servicio de inicio de sesión central, la autenticación básica y la autenticación personalizada. Cuando no se habilita el inicio de sesión único ni el acceso anónimo, una solicitud Remoting resulta en autenticación básica (la predeterminada) o personalizada.
+El administrador de usuarios de formularios AEM puede autenticar una solicitud Remoting desde una aplicación de Flex de varias maneras, incluido el inicio de sesión único de AEM Forms mediante el servicio de inicio de sesión central, la autenticación básica y la autenticación personalizada. Cuando no se habilita el inicio de sesión único ni el acceso anónimo, una solicitud Remoting resulta en una autenticación básica (la predeterminada) o personalizada.
 
-La autenticación básica se basa en la autenticación básica J2EE estándar del contenedor de la aplicación web. Para la autenticación básica, un error HTTP 401 genera un desafío en el explorador. Esto significa que cuando intenta conectarse a una aplicación de Forms mediante RemoteObject y aún no ha iniciado sesión desde la aplicación de Flex, el explorador le solicita un nombre de usuario y una contraseña.
+La autenticación básica se basa en la autenticación básica J2EE estándar del contenedor de aplicaciones web. Para la autenticación básica, un error HTTP 401 provoca un desafío en el explorador. Esto significa que cuando intenta conectarse a una aplicación de Forms mediante RemoteObject y aún no ha iniciado sesión desde la aplicación de Flex, el explorador le solicita un nombre de usuario y una contraseña.
 
-Para la autenticación personalizada, el servidor envía un error al cliente para indicar que la autenticación es necesaria.
+Para la autenticación personalizada, el servidor envía un error al cliente para indicar que se requiere autenticación.
 
 >[!NOTE]
-Para obtener información sobre cómo realizar la autenticación mediante tokens HTTP, consulte [Creación de aplicaciones Flash Builder que realizan la autenticación SSO mediante tokens HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
+Para obtener información sobre cómo realizar la autenticación mediante tokens HTTP, consulte [Creación de aplicaciones de Flash Builder que realizan la autenticación SSO mediante tokens HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
 
-### Uso de autenticación personalizada {#using-custom-authentication}
+### Uso de la autenticación personalizada {#using-custom-authentication}
 
 La autenticación personalizada se habilita en la consola de administración cambiando el método de autenticación de Básico a Personalizado en el extremo remoto. Si utiliza la autenticación personalizada, la aplicación cliente llama al método `ChannelSet.login` para iniciar sesión y al método `ChannelSet.logout` para cerrar la sesión.
 
 >[!NOTE]
-En la versión anterior de AEM Forms, las credenciales se enviaban a un destino llamando al método `RemoteObject.setCredentials`. El método `setCredentials` no pasó realmente las credenciales al servidor hasta el primer intento del componente de conectarse al servidor. Por lo tanto, si el componente generó un evento de error, no se puede estar seguro de si el error se produjo debido a un error de autenticación o por otro motivo. El método `ChannelSet.login` se conecta al servidor cuando lo llama para que pueda gestionar un problema de autenticación inmediatamente. Aunque puede seguir utilizando el método `setCredentials`, se recomienda que utilice el método `ChannelSet.login`.
+En la versión anterior de AEM Forms, se enviaron credenciales a un destino llamando al método `RemoteObject.setCredentials` . El método `setCredentials` no pasó realmente las credenciales al servidor hasta que el componente intentó conectarse al servidor por primera vez. Por lo tanto, si el componente generó un evento de error, no se puede saber con certeza si el error se produjo debido a un error de autenticación o por otro motivo. El método `ChannelSet.login` se conecta al servidor cuando lo llama para que pueda gestionar un problema de autenticación inmediatamente. Aunque puede seguir utilizando el método `setCredentials` , se recomienda utilizar el método `ChannelSet.login` .
 
 Dado que varios destinos pueden utilizar los mismos canales y el objeto ChannelSet correspondiente, al iniciar sesión en un destino, el usuario inicia sesión en cualquier otro destino que utilice el mismo canal o canales. Si dos componentes aplican credenciales diferentes al mismo objeto ChannelSet, se utilizan las últimas credenciales aplicadas. Si varios componentes utilizan el mismo objeto ChannelSet autenticado, al llamar al método `logout` se registran todos los componentes fuera de los destinos.
 
-El ejemplo siguiente utiliza los métodos `ChannelSet.login` y `ChannelSet.logout` con un control RemoteObject. Esta aplicación realiza las siguientes acciones:
+En el siguiente ejemplo se utilizan los métodos `ChannelSet.login` y `ChannelSet.logout` con un control RemoteObject. Esta aplicación realiza las siguientes acciones:
 
 * Crea un objeto `ChannelSet` en el controlador `creationComplete` que representa los canales utilizados por el componente `RemoteObject`
-* Pasa las credenciales al servidor llamando a la función `ROLogin` como respuesta a un evento de clic de botón
+* Pasa credenciales al servidor llamando a la función `ROLogin` como respuesta a un evento de clic de botón
 * Utiliza el componente RemoteObject para enviar una cadena al servidor como respuesta a un evento de clic de botón. El servidor devuelve la misma cadena al componente RemoteObject
-* Utiliza el evento resultante del componente RemoteObject para mostrar la cadena en un control TextArea
-* Cierre la sesión del servidor llamando a la función `ROLogout` en respuesta a un evento de clic de botón
+* Utiliza el suceso result del componente RemoteObject para mostrar la cadena en un control TextArea
+* Se cierra la sesión del servidor llamando a la función `ROLogout` en respuesta a un evento de clic de botón
 
 ```java
  <?xml version=”1.0”?>
@@ -441,36 +442,36 @@ El ejemplo siguiente utiliza los métodos `ChannelSet.login` y `ChannelSet.logou
  </mx:Application>
 ```
 
-Los métodos `login` y `logout` devuelven un objeto AsyncToken. Asigne controladores de evento al objeto AsyncToken para que el evento resultante gestione una llamada correcta y para que el evento de errores gestione un error.
+Los métodos `login` y `logout` devuelven un objeto AsyncToken. Asigne controladores de eventos al objeto AsyncToken para que el evento de resultado gestione una llamada correcta y para que el evento de error gestione un error.
 
 ### Uso del inicio de sesión único {#using-single-sign-on}
 
-Los usuarios de formularios AEM pueden conectarse a varias aplicaciones web de AEM Forms para realizar una tarea. A medida que los usuarios pasan de una aplicación web a otra, no es eficaz exigirles que inicien sesión por separado en cada aplicación web. El mecanismo de inicio de sesión único de AEM Forms permite a los usuarios iniciar sesión una vez y, a continuación, acceder a cualquier aplicación web de AEM Forms. Dado que los desarrolladores de AEM Forms pueden crear aplicaciones cliente para utilizarlas con AEM Forms, también deben poder aprovechar el mecanismo de inicio de sesión único.
+AEM usuarios de formularios pueden conectarse a varias aplicaciones web de AEM Forms para realizar una tarea. A medida que los usuarios pasan de una aplicación web a otra, no es eficiente exigirles que inicien sesión por separado en cada aplicación web. El mecanismo de inicio de sesión único de AEM Forms permite a los usuarios iniciar sesión una vez y, a continuación, acceder a cualquier aplicación web de AEM Forms. Dado que los desarrolladores de AEM Forms pueden crear aplicaciones cliente para utilizarlas con AEM Forms, también deben poder aprovechar el mecanismo de inicio de sesión único.
 
-Cada aplicación web de AEM Forms está empaquetada en su propio archivo Web Archive (WAR), que luego se empaqueta como parte de un archivo Enterprise Archive (EAR). Dado que un servidor de aplicaciones no permite el uso compartido de datos de sesión en diferentes aplicaciones web, AEM Forms utiliza cookies HTTP para almacenar información de autenticación. Las cookies de autenticación permiten al usuario iniciar sesión en una aplicación de Forms y luego conectarse a otras aplicaciones web de AEM Forms. Esta técnica se conoce como inicio de sesión único.
+Cada aplicación web de AEM Forms está empaquetada en su propio archivo Web Archive (WAR), que luego se empaqueta como parte de un archivo Enterprise Archive (EAR). Dado que un servidor de aplicaciones no permite compartir datos de sesión entre distintas aplicaciones web, AEM Forms utiliza cookies HTTP para almacenar información de autenticación. Las cookies de autenticación permiten al usuario iniciar sesión en una aplicación de Forms y luego conectarse a otras aplicaciones web de AEM Forms. Esta técnica se conoce como inicio de sesión único.
 
-Los desarrolladores de AEM Forms escriben aplicaciones cliente para ampliar la funcionalidad de las guías de formulario (obsoletas) y para personalizar Workspace. Por ejemplo, una aplicación de Workspace puede inicio de un proceso. A continuación, la aplicación cliente utiliza un extremo remoto para recuperar datos del servicio Forms.
+Los desarrolladores de AEM Forms escriben aplicaciones cliente para ampliar la funcionalidad de las guías del formulario (obsoleto) y para personalizar Workspace. Por ejemplo, una aplicación de Workspace puede iniciar un proceso. A continuación, la aplicación cliente utiliza un extremo remoto para recuperar datos del servicio Forms.
 
-Cuando se invoca un servicio de AEM Forms mediante AEM Forms Remoting (obsoleto para AEM formularios), la aplicación cliente pasa la cookie de autenticación como parte de la solicitud. Dado que el usuario ya se ha autenticado, no se requiere un inicio de sesión adicional para realizar una conexión desde la aplicación cliente al servicio AEM Forms.
+Cuando se invoca un servicio de AEM Forms mediante AEM Forms Remoting (obsoleto para AEM formularios), la aplicación cliente pasa la cookie de autenticación como parte de la solicitud. Como el usuario ya se ha autenticado, no se requiere inicio de sesión adicional para establecer una conexión desde la aplicación cliente al servicio AEM Forms.
 
 >[!NOTE]
-Si una cookie no es válida o falta, no hay redirección implícita a una página de inicio de sesión. Por lo tanto, puede llamar a un servicio anónimo.
+Si falta una cookie o no es válida, no hay redirección implícita a una página de inicio de sesión. Por lo tanto, aún puede llamar a un servicio anónimo.
 
-Puede omitir el mecanismo de inicio de sesión único de AEM Forms escribiendo una aplicación cliente que inicie sesión y cierre la sesión por su cuenta. Si evita el mecanismo de inicio de sesión único, puede utilizar autenticación básica o personalizada con la aplicación.
+Puede evitar el mecanismo de inicio de sesión único de AEM Forms escribiendo una aplicación cliente que inicie sesión y cierre la sesión por su cuenta. Si omite el mecanismo de inicio de sesión único, puede utilizar autenticación básica o personalizada con la aplicación.
 
 Dado que este mecanismo no utiliza el mecanismo de inicio de sesión único de AEM Forms, no se escribe ninguna cookie de autenticación en el cliente. Las credenciales de inicio de sesión se almacenan en el objeto `ChannelSet` del canal remoto. Por lo tanto, cualquier llamada `RemoteObject` que realice sobre el mismo `ChannelSet` se realiza en el contexto de esas credenciales.
 
 ### Configuración del inicio de sesión único en AEM Forms {#setting-up-single-sign-on-in-aem-forms}
 
-Para utilizar el inicio de sesión único en AEM Forms, instale el componente de flujo de trabajo de formularios, que incluye el servicio de inicio de sesión centralizado. Una vez que un usuario inicia sesión correctamente, el servicio de inicio de sesión centralizado devuelve una cookie de autenticación al usuario. Cada solicitud posterior a una aplicación web de Forms contiene la cookie. Si la cookie es válida, se considera que el usuario está autenticado y no tiene que volver a iniciar sesión.
+Para utilizar el inicio de sesión único en AEM Forms, instale el componente de flujo de trabajo de formularios, que incluye el servicio de inicio de sesión centralizado. Una vez que un usuario inicia sesión correctamente, el servicio de inicio de sesión centralizado devuelve una cookie de autenticación al usuario. Cada solicitud posterior a una aplicación web de Forms contiene la cookie . Si la cookie es válida, se considera que el usuario está autenticado y no tiene que iniciar sesión de nuevo.
 
-### Escritura de una aplicación cliente que utiliza el inicio de sesión único {#writing-a-client-application-that-uses-single-sign-on}
+### Escribir una aplicación cliente que utilice el inicio de sesión único {#writing-a-client-application-that-uses-single-sign-on}
 
-Al aprovechar el mecanismo de inicio de sesión único, espera que los usuarios inicien sesión mediante el servicio de inicio de sesión centralizado antes de iniciar una aplicación cliente. Es decir, una aplicación cliente no inicia sesión a través del explorador o llamando al método `ChannelSet.login`.
+Al aprovechar el mecanismo de inicio de sesión único, espera que los usuarios inicien sesión utilizando el servicio de inicio de sesión centralizado antes de iniciar una aplicación cliente. Es decir, una aplicación cliente no inicia sesión a través del explorador o llamando al método `ChannelSet.login` .
 
-Si utiliza el mecanismo de inicio de sesión único de AEM Forms, configure el extremo Remoting para que utilice la autenticación personalizada, no la básica. De lo contrario, al utilizar la autenticación básica, un error de autenticación genera un desafío en el explorador, que no desea que vea el usuario. En su lugar, la aplicación detecta el error de autenticación y, a continuación, muestra un mensaje que indica al usuario que inicie sesión con el servicio de inicio de sesión centralizado.
+Si utiliza el mecanismo de inicio de sesión único de AEM Forms, configure el extremo Remoting para utilizar la autenticación personalizada, no la básica. De lo contrario, al utilizar la autenticación básica, un error de autenticación provoca un desafío en el explorador, que no desea que vea el usuario. En su lugar, la aplicación detecta el error de autenticación y, a continuación, muestra un mensaje que indica al usuario que inicie sesión con el servicio de inicio de sesión centralizado.
 
-Una aplicación cliente accede a AEM Forms a través de un extremo remoto mediante el componente `RemoteObject`, como se muestra en el siguiente ejemplo.
+Una aplicación cliente accede a AEM Forms a través de un punto final remoto mediante el componente `RemoteObject`, como se muestra en el siguiente ejemplo.
 
 ```java
  <?xml version="1.0"?>
@@ -511,44 +512,44 @@ Una aplicación cliente accede a AEM Forms a través de un extremo remoto median
  </mx:Application>
 ```
 
-**Inicio de sesión como usuario nuevo mientras la aplicación Flex aún se esté ejecutando**
+**Inicio de sesión como usuario nuevo mientras la aplicación Flex sigue en ejecución**
 
-Una aplicación creada con Flex incluye la cookie de autenticación con cada solicitud a un servicio de AEM Forms. Por motivos de rendimiento, AEM Forms no valida la cookie en cada solicitud. Sin embargo, AEM Forms detecta si una cookie de autenticación se reemplaza por otra cookie de autenticación.
+Una aplicación creada con Flex incluye la cookie de autenticación con cada solicitud a un servicio de AEM Forms. Por motivos de rendimiento, AEM Forms no valida la cookie en cada solicitud. Sin embargo, AEM Forms detecta cuándo se sustituye una cookie de autenticación por otra cookie de autenticación.
 
-Por ejemplo, si inicio una aplicación cliente y mientras la aplicación está activa, utiliza el servicio de inicio de sesión centralizado para cerrar sesión. A continuación, puede iniciar sesión como un usuario diferente. El inicio de sesión como un usuario diferente sustituye la cookie de autenticación existente por una cookie de autenticación para el nuevo usuario.
+Por ejemplo, se inicia una aplicación cliente y, mientras la aplicación está activa, se utiliza el servicio de inicio de sesión centralizado para cerrar la sesión. A continuación, puede iniciar sesión como un usuario diferente. El inicio de sesión como un usuario diferente sustituye la cookie de autenticación existente por una cookie de autenticación para el nuevo usuario.
 
 En la siguiente solicitud de la aplicación cliente, AEM Forms detecta que la cookie ha cambiado y cierra la sesión del usuario. Por lo tanto, la primera solicitud después de un cambio de cookie falla. Todas las solicitudes posteriores se realizan en el contexto de la nueva cookie y se realizan correctamente.
 
-**Cerrar sesión**
+**Cierre de sesión**
 
-Para cerrar sesión de AEM Forms e invalidar una sesión, la cookie de autenticación debe eliminarse del equipo del cliente. Dado que el propósito del inicio de sesión único es permitir que un usuario inicie sesión una vez, no desea que una aplicación cliente elimine la cookie. Esta acción cierra la sesión del usuario de forma efectiva.
+Para cerrar la sesión de AEM Forms e invalidar una sesión, la cookie de autenticación debe eliminarse del equipo del cliente. Como el propósito del inicio de sesión único es permitir que un usuario inicie sesión una vez, no desea que una aplicación cliente elimine la cookie. Esta acción cierra la sesión del usuario.
 
-Por lo tanto, llamar al método `RemoteObject.logout` en una aplicación cliente genera un mensaje de error en el cliente que especifica que la sesión no se ha cerrado. En su lugar, el usuario puede utilizar el servicio de inicio de sesión centralizado para cerrar sesión y eliminar la cookie de autenticación.
+Por lo tanto, llamar al método `RemoteObject.logout` en una aplicación cliente genera un mensaje de error en el cliente que especifica que la sesión no se ha cerrado. En su lugar, el usuario puede utilizar el servicio de inicio de sesión centralizado para cerrar la sesión y eliminar la cookie de autenticación.
 
-**Cerrar sesión mientras la aplicación Flex aún se está ejecutando**
+**Cerrar sesión mientras la aplicación Flex sigue en ejecución**
 
-Puede inicio de una aplicación cliente creada con Flex y utilizar el servicio de inicio de sesión centralizado para cerrar sesión. Como parte del proceso de cierre de sesión, se elimina la cookie de autenticación. Si una solicitud remota se realiza sin una cookie o con una cookie no válida, la sesión del usuario se invalida. Esta acción es en efecto un cierre de sesión. La próxima vez que la aplicación cliente intente conectarse a un servicio de AEM Forms, se solicita al usuario que inicie sesión.
+Puede iniciar una aplicación cliente creada con Flex y utilizar el servicio de inicio de sesión centralizado para cerrar la sesión. Como parte del proceso de cierre de sesión, se elimina la cookie de autenticación. Si se realiza una solicitud remota sin una cookie, o con una cookie no válida, la sesión del usuario se invalida. Esta acción es en efecto un cierre de sesión. La próxima vez que la aplicación cliente intente conectarse a un servicio de AEM Forms, se solicitará al usuario que inicie sesión.
 
 **Consulte también**
 
 [Invocación de AEM Forms mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
-[Gestión de documentos con AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)
+[Gestión de documentos con AEM Forms Remoting (obsoleto para AEM formularios)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)
 
 [Inclusión del archivo de biblioteca Flex de AEM Forms](invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)
 
-[Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
+[Invocación de un proceso de corta duración pasando un documento no seguro usando (obsoleto para formularios AEM) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
 
 [Pasar documentos seguros para invocar procesos mediante Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
 
 ## Pasar documentos seguros para invocar procesos usando Remoting {#passing-secure-documents-to-invoke-processes-using-remoting}
 
-Puede pasar documentos seguros a AEM Forms cuando invoque un proceso que requiera uno o más documentos. Al aprobar un documento seguro, usted está protegiendo la información comercial y los documentos confidenciales. En este caso, un documento puede hacer referencia a un documento PDF, un documento XML, un documento de Word, etc. Se requiere pasar un documento seguro a AEM Forms desde una aplicación cliente escrita en Flex cuando AEM Forms está configurado para permitir documentos seguros. (Consulte [Configuración de AEM Forms para aceptar documentos seguros y no seguros](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)).
+Puede pasar documentos seguros a AEM Forms cuando invoque un proceso que requiera uno o más documentos. Al pasar un documento seguro, está protegiendo la información comercial y los documentos confidenciales. En este caso, un documento puede hacer referencia a un documento PDF, un documento XML, un documento Word, etc. Cuando AEM Forms está configurado para permitir documentos seguros, es necesario pasar un documento seguro a AEM Forms desde una aplicación cliente escrita en Flex. (Consulte [Configuración de AEM Forms para aceptar documentos seguros y no seguros](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)).
 
-Al pasar un documento seguro, utilice el inicio de sesión único y especifique un usuario de formularios AEM que tenga la función *Usuario de aplicación de carga de Documento*. Sin esta función, el usuario no puede cargar un documento seguro. Puede asignar una función a un usuario mediante programación. (Consulte [Administración de roles y permisos](/help/forms/developing/users.md#managing-roles-and-permissions).)
+Al pasar un documento seguro, utilice el inicio de sesión único y especifique un usuario de formularios AEM que tenga la función *Usuario de aplicación de carga de documentos*. Sin esta función, el usuario no puede cargar un documento seguro. Puede asignar una función mediante programación a un usuario. (Consulte [Administración de funciones y permisos](/help/forms/developing/users.md#managing-roles-and-permissions)).
 
 >[!NOTE]
-Cuando cree una función nueva y desee que los miembros de esa función carguen documentos seguros, asegúrese de especificar el permiso de carga de Documento.
+Cuando cree una función nueva y desee que los miembros de la misma carguen documentos seguros, asegúrese de especificar el permiso Carga de documento.
 
 AEM Forms admite una operación denominada `getFileUploadToken` que devuelve un token que se pasa al servlet de carga. El método `DocumentReference.constructRequestForUpload` requiere una dirección URL a AEM Forms junto con el token devuelto por el método `LC.FileUploadAuthenticator.getFileUploadToken`. Este método devuelve un objeto `URLRequest` que se utiliza en la invocación al servlet de carga. El siguiente código muestra esta lógica de aplicación.
 
@@ -607,24 +608,24 @@ AEM Forms admite una operación denominada `getFileUploadToken` que devuelve un 
 
 ### Configuración de AEM Forms para aceptar documentos seguros y no seguros {#configuring-aem-forms-to-accept-secure-and-unsecure-documents}
 
-Puede utilizar la consola de administración para especificar si los documentos son seguros al pasar un documento de una aplicación cliente de Flex a un proceso de AEM Forms. De forma predeterminada, AEM Forms está configurado para aceptar documentos seguros. Puede configurar AEM Forms para que acepte documentos seguros mediante los siguientes pasos:
+Puede utilizar la consola de administración para especificar si los documentos son seguros al pasar un documento de una aplicación cliente de Flex a un proceso de AEM Forms. De forma predeterminada, AEM Forms está configurado para aceptar documentos seguros. Puede configurar AEM Forms para que acepte documentos seguros siguiendo los pasos siguientes:
 
 1. Inicie sesión en la consola de administración.
 1. Haga clic en **Configuración**.
 1. Haga clic en **Configuración del sistema principal.**
 1. Haga clic en Configuraciones.
-1. Asegúrese de que la opción Permitir la carga de documentos no seguros desde las aplicaciones de Flex no está seleccionada.
+1. Asegúrese de que la opción Permitir carga de documentos no segura desde aplicaciones Flex no esté seleccionada.
 
 >[!NOTE]
-Para configurar AEM Forms para que acepte documentos no seguros, seleccione la opción Permitir la carga de documentos no seguros desde las aplicaciones de Flex. A continuación, reinicie una aplicación o servicio para asegurarse de que la configuración se aplica.
+Para configurar AEM Forms para que acepte documentos no seguros, seleccione la opción Permitir carga de documentos no segura desde aplicaciones de Flex . A continuación, reinicie una aplicación o servicio para asegurarse de que la configuración surta efecto.
 
-### Inicio rápido: Invocar un proceso de corta duración al pasar un documento seguro mediante Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
+### Inicio rápido: Invocación de un proceso de corta duración al pasar un documento seguro mediante Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 
-En el siguiente ejemplo de código se invoca `MyApplication/EncryptDocument.`Un usuario debe iniciar sesión para hacer clic en el botón Seleccionar archivo que se utiliza para cargar un archivo PDF e invocar el proceso. Es decir, una vez autenticado el usuario, se activa el botón Seleccionar archivo. La siguiente ilustración muestra la aplicación cliente de Flex después de autenticar a un usuario. Observe que la casilla de verificación autenticada está activada.
+El siguiente ejemplo de código invoca el `MyApplication/EncryptDocument.`Un usuario debe iniciar sesión para hacer clic en el botón Seleccionar archivo que se utiliza para cargar un archivo PDF e invocar el proceso. Es decir, una vez que el usuario está autenticado, el botón Seleccionar archivo está habilitado. La siguiente ilustración muestra la aplicación cliente Flex después de autenticar a un usuario. Observe que la casilla de verificación autenticada está activada.
 
 ![iu_iu_secureremotelogin](assets/iu_iu_secureremotelogin.png)
 
-si AEM Forms está configurado para permitir solamente la carga de documentos seguros y el usuario no tiene la función *Usuario de aplicación de carga de Documento*, se genera una excepción. Si el usuario tiene esta función, se carga el archivo y se invoca el proceso.
+si AEM Forms está configurado para permitir que solo se carguen documentos seguros y el usuario no tiene la función *Document Upload Application User*, se produce una excepción. Si el usuario tiene esta función, se carga el archivo y se invoca el proceso.
 
 ```java
  <?xml version="1.0" encoding="utf-8"?>
@@ -876,28 +877,28 @@ si AEM Forms está configurado para permitir solamente la carga de documentos se
 
 [Invocación de AEM Forms mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
-[Gestión de documentos con AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)
+[Gestión de documentos con AEM Forms Remoting (obsoleto para AEM formularios)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)
 
 [Inclusión del archivo de biblioteca Flex de AEM Forms](invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)
 
-[Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
+[Invocación de un proceso de corta duración pasando un documento no seguro usando (obsoleto para formularios AEM) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
 
-[Autentificación de las aplicaciones cliente creadas con Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
+[Autenticación de aplicaciones cliente creadas con Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
 ## Invocación de servicios de componentes personalizados mediante Remoting {#invoking-custom-component-services-using-remoting}
 
-Puede invocar servicios ubicados en un componente personalizado mediante Remoting. Por ejemplo, considere el componente Banco que contiene el servicio al cliente. Puede invocar operaciones que pertenecen al servicio al cliente mediante una aplicación cliente escrita en Flex. Para poder ejecutar el inicio rápido asociado con esta sección, debe crear el componente personalizado Banco.
+Puede invocar servicios ubicados en un componente personalizado mediante Remoting. Por ejemplo, considere el componente Banco que contiene el servicio al cliente. Puede invocar operaciones que pertenecen al servicio de atención al cliente utilizando una aplicación cliente escrita en Flex. Antes de ejecutar el inicio rápido asociado con esta sección, debe crear el componente personalizado Banco.
 
-El servicio al cliente expone una operación denominada `createCustomer`. Este análisis describe cómo crear una aplicación cliente de Flex que invoque el servicio al cliente y cree un cliente. Esta operación requiere un objeto complejo de tipo `com.adobe.livecycle.sample.customer.Customer` que represente al nuevo cliente. La siguiente ilustración muestra la aplicación cliente que invoca el servicio Cliente y crea un nuevo cliente. La operación `createCustomer` devuelve un valor de identificador de cliente. El valor del identificador se muestra en el cuadro de texto Identificador del cliente.
+El servicio de atención al cliente expone una operación denominada `createCustomer`. En esta conversación se describe cómo crear una aplicación cliente de Flex que invoque el servicio al cliente y cree un cliente. Esta operación requiere un objeto complejo de tipo `com.adobe.livecycle.sample.customer.Customer` que represente al nuevo cliente. La siguiente ilustración muestra la aplicación cliente que invoca el servicio Cliente y crea un nuevo cliente. La operación `createCustomer` devuelve un valor de identificador de cliente. El valor del identificador se muestra en el cuadro de texto Identificador de cliente .
 
 ![iu_iu_flexnewcust](assets/iu_iu_flexnewcust.png)
 
-La siguiente tabla lista los controles que forman parte de esta aplicación cliente.
+En la tabla siguiente se enumeran los controles que forman parte de esta aplicación cliente.
 
 <table>
  <thead>
   <tr>
-   <th><p>Nombre del control</p></th>
+   <th><p>Nombre de control</p></th>
    <th><p>Descripción</p></th>
   </tr>
  </thead>
@@ -932,18 +933,18 @@ La siguiente tabla lista los controles que forman parte de esta aplicación clie
   </tr>
   <tr>
    <td><p>txtCustId</p></td>
-   <td><p>Especifica el valor del identificador del cliente al que pertenece la nueva cuenta. Este cuadro de texto se rellena con el valor devuelto por la operación <code>createCustomer</code> del servicio al cliente. </p></td>
+   <td><p>Especifica el valor del identificador de cliente al que pertenece la nueva cuenta. Este cuadro de texto se rellena con el valor devuelto de la operación <code>createCustomer</code> del servicio al cliente. </p></td>
   </tr>
  </tbody>
 </table>
 
 ### Asignación de tipos de datos complejos de AEM Forms {#mapping-aem-forms-complex-data-types}
 
-Algunas operaciones de AEM Forms requieren tipos de datos complejos como valores de entrada. Estos tipos de datos complejos definen los valores de tiempo de ejecución utilizados por la operación. Por ejemplo, la operación `createCustomer` del servicio al cliente requiere una instancia `Customer` que contenga valores de tiempo de ejecución requeridos por el servicio. Sin el tipo complejo, el servicio al cliente emite una excepción y no realiza la operación.
+Algunas operaciones de AEM Forms requieren tipos de datos complejos como valores de entrada. Estos tipos de datos complejos definen los valores de tiempo de ejecución utilizados por la operación. Por ejemplo, la operación `createCustomer` del servicio de atención al cliente requiere una instancia `Customer` que contenga los valores de tiempo de ejecución requeridos por el servicio. Sin el tipo complejo, el servicio al cliente lanza una excepción y no realiza la operación.
 
-Al invocar un servicio de AEM Forms, cree objetos de ActionScript que se asignen a los tipos complejos de AEM Forms necesarios. Para cada tipo de datos complejo que requiere una operación, cree un objeto de ActionScript independiente.
+Al invocar un servicio de AEM Forms, cree objetos de ActionScript que se asignen a los tipos complejos de AEM Forms necesarios. Para cada tipo de datos complejo que requiera una operación, cree un objeto de ActionScript independiente.
 
-En la clase ActionScript, utilice la etiqueta de metadatos `RemoteClass` para asignarla al tipo complejo de AEM Forms. Por ejemplo, al invocar la operación `createCustomer` del servicio al cliente, cree una clase de ActionScript que se asigne al tipo de datos `com.adobe.livecycle.sample.customer.Customer`.
+En la clase de ActionScript, utilice la etiqueta de metadatos `RemoteClass` para asignarla al tipo complejo de AEM Forms. Por ejemplo, al invocar la operación `createCustomer` del servicio al cliente, cree una clase de ActionScript que se asigne al tipo de datos `com.adobe.livecycle.sample.customer.Customer`.
 
 La siguiente clase de ActionScript denominada Customer muestra cómo asignar al tipo de datos de AEM Forms `com.adobe.livecycle.sample.customer.Customer`.
 
@@ -966,18 +967,18 @@ La siguiente clase de ActionScript denominada Customer muestra cómo asignar al 
 
 El tipo de datos completo del tipo complejo de AEM Forms se asigna a la etiqueta de alias.
 
-Los campos de la clase ActionScript coinciden con los campos que pertenecen al tipo complejo de AEM Forms. Los seis campos ubicados en la clase ActionScript del cliente coinciden con los campos que pertenecen a `com.adobe.livecycle.sample.customer.Customer`.
+Los campos de la clase de ActionScript coinciden con los campos que pertenecen al tipo complejo de AEM Forms. Los seis campos ubicados en la clase Customer ActionScript coinciden con los campos que pertenecen a `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
-Una buena manera de determinar los nombres de campo que pertenecen a un tipo complejo de Forms es mediante la vista del WSDL de un servicio en un explorador Web. Un WSDL especifica los tipos complejos de un servicio y los miembros de datos correspondientes. Se utiliza el siguiente WSDL para el servicio al cliente: `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
+Una buena manera de determinar los nombres de campo que pertenecen a un tipo complejo de Forms es ver el WSDL de un servicio en un explorador web. Un WSDL especifica los tipos complejos de un servicio y los miembros de datos correspondientes. Se utiliza el siguiente WSDL para el servicio al cliente: `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
-La clase de ActionScript del cliente pertenece a un paquete denominado customer. Se recomienda colocar todas las clases de ActionScript que se asignen a tipos de datos complejos de AEM Forms en su propio paquete. Cree una carpeta en la carpeta src del proyecto de Flex y coloque el archivo ActionScript en la carpeta, como se muestra en la siguiente ilustración.
+La clase Customer ActionScript pertenece a un paquete denominado customer. Se recomienda colocar todas las clases de ActionScript que se asignen a tipos de datos AEM Forms complejos en su propio paquete. Cree una carpeta en la carpeta src del proyecto de Flex y coloque el archivo de ActionScript en ella, como se muestra en la siguiente ilustración.
 
 ![iu_iu_customeras](assets/iu_iu_customeras.png)
 
 ### Inicio rápido: Invocación del servicio personalizado del cliente mediante Remoting {#quick-start-invoking-the-customer-custom-service-using-remoting}
 
-El siguiente ejemplo de código invoca el servicio al cliente y crea un nuevo cliente. Cuando ejecute este ejemplo de código, asegúrese de rellenar todos los cuadros de texto. Además, asegúrese de crear el archivo Customer.as que se asigna a `com.adobe.livecycle.sample.customer.Customer`.
+El siguiente ejemplo de código invoca al servicio de atención al cliente y crea un nuevo cliente. Cuando ejecute este ejemplo de código, asegúrese de rellenar todos los cuadros de texto. Además, asegúrese de crear el archivo Customer.as que se asigna a `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 Para poder ejecutar este inicio rápido, debe crear e implementar el componente personalizado Banco.
@@ -1173,7 +1174,7 @@ Para poder ejecutar este inicio rápido, debe crear e implementar el componente 
 
 **Hoja de estilo**
 
-Este inicio rápido contiene una hoja de estilo denominada *bank.css*. El siguiente código representa la hoja de estilo que se utiliza.
+Este inicio rápido contiene una hoja de estilo llamada *bank.css*. El siguiente código representa la hoja de estilo que se utiliza.
 
 ```css
  /* CSS file */
@@ -1261,12 +1262,12 @@ Este inicio rápido contiene una hoja de estilo denominada *bank.css*. El siguie
 
 [Invocación de AEM Forms mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
-[Gestión de documentos con AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)
+[Gestión de documentos con AEM Forms Remoting (obsoleto para AEM formularios)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)
 
 [Inclusión del archivo de biblioteca Flex de AEM Forms](invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)
 
-[Invocar un proceso de corta duración pasando un documento no seguro mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
+[Invocación de un proceso de corta duración pasando un documento no seguro usando (obsoleto para formularios AEM) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)
 
-[Autentificación de las aplicaciones cliente creadas con Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
+[Autenticación de aplicaciones cliente creadas con Flex](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
 [Pasar documentos seguros para invocar procesos mediante Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
