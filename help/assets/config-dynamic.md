@@ -9,10 +9,11 @@ content-type: reference
 discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
+role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: 54dd71655aeae00bcaa27847f91af07f15faf478
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '7840'
+source-wordcount: '7843'
 ht-degree: 1%
 
 ---
@@ -924,7 +925,7 @@ Tabla de configuración de manifiesto y sus valores predeterminados:
   <tr>
    <td>defaultthumbpix</td>
    <td>100.100</td>
-   <td><p>Tamaño de miniatura predeterminado. Se utiliza en lugar del atributo::DefaultPix para solicitudes de miniaturas (req=tmb).</p> <p>El servidor restringe el tamaño de las imágenes de respuesta para que no superen esta anchura y altura. Esta acción es verdadera si una solicitud de miniatura (req=tmb) no especifica el tamaño explícitamente y no especifica el tamaño de la vista utilizando `wid=`, `hei=` o `scl=`.</p> <p>Se especifica como dos números enteros, 0 o más, separados por coma. Anchura y altura en píxeles. Puede establecerse uno o ambos valores en 0 para mantenerlos sin restricciones. </p> <p>No se aplica a solicitudes anidadas/incrustadas.</p> <p>Consulte también <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api">DefaultThumbPix</a> en la API de servicio de imágenes. </p> </td>
+   <td><p>Tamaño de miniatura predeterminado. Se utiliza en lugar del atributo::DefaultPix para solicitudes de miniatura (req=tmb).</p> <p>El servidor restringe el tamaño de las imágenes de respuesta para que no superen esta anchura y altura. Esta acción es verdadera si una solicitud de miniatura (req=tmb) no especifica el tamaño explícitamente y no especifica el tamaño de la vista utilizando `wid=`, `hei=` o `scl=`.</p> <p>Se especifica como dos números enteros, 0 o más, separados por coma. Anchura y altura en píxeles. Puede establecerse uno o ambos valores en 0 para mantenerlos sin restricciones. </p> <p>No se aplica a solicitudes anidadas/incrustadas.</p> <p>Consulte también <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api">DefaultThumbPix</a> en la API de servicio de imágenes. </p> </td>
   </tr>
   <tr>
    <td>caducidad</td>
