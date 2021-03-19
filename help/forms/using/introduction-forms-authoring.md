@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
+feature: Formularios adaptables
 translation-type: tm+mt
-source-git-commit: 103468b8e6e5bdf870156f85b7f547f190044561
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3169'
-ht-degree: 2%
+source-wordcount: '3171'
+ht-degree: 3%
 
 ---
 
@@ -63,7 +64,7 @@ La barra lateral le permite
 
 * Consulte el contenido del formulario, como paneles, componentes, campos y presentación.
 * Edite las propiedades del componente.
-* Busque, vea y utilice recursos en su repositorio de AEM Digital Asset Management (DAM).
+* Busque, vea y utilice recursos en su repositorio AEM de Digital Asset Management (DAM).
 * Añada componentes al formulario.
 
 ![Barra lateral](assets/sidebar-comps.png)
@@ -299,7 +300,7 @@ A continuación se indican algunas prácticas recomendadas y puntos clave que de
 
    1. En el servidor de AEM Forms, vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
    1. Busque y pulse **[!UICONTROL Adaptive Forms Configuration Service]**.
-   1. En el cuadro de diálogo Servicio de configuración de formularios adaptables, habilite **[!UICONTROL Convertir nombres de archivo en únicos]**. De forma predeterminada, está desactivado.
+   1. En el cuadro de diálogo Servicio de configuración de Forms adaptable, habilite **[!UICONTROL Convertir nombres de archivo en únicos]**. De forma predeterminada, está desactivado.
 
 * Para permitir que los usuarios adjunten un PDF utilizando el explorador Safari, asegúrese de que **application/pdf** se agrega a la propiedad Tipos de archivo compatibles del componente Archivo adjunto. Los formularios adaptables creados con la versión anterior de AEM Forms pueden contener **.pdf** en lugar de **application/pdf** en la propiedad Tipos de archivo compatibles.
 
