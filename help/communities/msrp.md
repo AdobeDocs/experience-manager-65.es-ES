@@ -1,28 +1,29 @@
 ---
-title: MSRP - Proveedor de recursos de Almacenamiento MongoDB
-seo-title: MSRP - Proveedor de recursos de Almacenamiento MongoDB
-description: Configure AEM Communities para utilizar una base de datos relacional como su almacén común
-seo-description: Configure AEM Communities para utilizar una base de datos relacional como su almacén común
+title: MSRP - Proveedor de recursos de almacenamiento MongoDB
+seo-title: MSRP - Proveedor de recursos de almacenamiento MongoDB
+description: Configuración de AEM Communities para utilizar una base de datos relacional como su tienda común
+seo-description: Configuración de AEM Communities para utilizar una base de datos relacional como su tienda común
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
+role: Administrador
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1210'
 ht-degree: 1%
 
 ---
 
 
-# MSRP - Proveedor de recursos de Almacenamiento MongoDB {#msrp-mongodb-storage-resource-provider}
+# MSRP - Proveedor de recursos de almacenamiento de MongoDB {#msrp-mongodb-storage-resource-provider}
 
-## Acerca de MSRP {#about-msrp}
+## Acerca del MSRP {#about-msrp}
 
-Cuando AEM Communities está configurado para utilizar MSRP como su almacén común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de creación y publicación sin necesidad de sincronización ni replicación.
+Cuando AEM Communities está configurado para utilizar MSRP como su tienda común, el contenido generado por el usuario (UGC) es accesible desde todas las instancias de autor y publicación sin necesidad de sincronización ni replicación.
 
 Consulte también [Características de las opciones de SRP](working-with-srp.md#characteristics-of-srp-options) y [Topologías recomendadas](topologies.md).
 
@@ -31,35 +32,35 @@ Consulte también [Características de las opciones de SRP](working-with-srp.md#
 * [MongoDB](https://www.mongodb.org/):
 
    * Versión 2.6 o buena
-   * No es necesario configurar los mongos ni el uso compartido
-   * Recomendar enérgicamente el uso de un [conjunto de réplicas](#mongoreplicaset)
-   * Puede ejecutarse en el mismo host que AEM o de forma remota
+   * No es necesario configurar los mongos o el uso compartido
+   * Recomendar encarecidamente el uso de un [conjunto de réplicas](#mongoreplicaset)
+   * Puede ejecutarse en el mismo host que AEM o ejecutar de forma remota
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
    * Versión de Solr 7.0
    * Solr requiere Java 1.7 o bueno
    * No se necesita ningún servicio
-   * Opción de modos de ejecución:
+   * Elección de modos de ejecución:
       * Modo independiente
-      * [Modo](solr.md#solrcloud-mode)  SolrCloud (recomendado para entornos de producción)
+      * [Modo SolrCloud](solr.md#solrcloud-mode)  (recomendado para entornos de producción)
    * Opción de búsqueda multilingüe (MLS):
       * [Instalación de MLS estándar](solr.md#installing-standard-mls)
       * [Instalación de MLS avanzados](solr.md#installing-advanced-mls)
 
 ## Configuración de MongoDB {#mongodb-configuration}
 
-### Seleccionar MSRP {#select-msrp}
+### Seleccione MSRP {#select-msrp}
 
-La [consola de configuración de Almacenamiento](srp-config.md) permite seleccionar la configuración de almacenamiento predeterminada, que identifica la implementación de SRP que se va a utilizar.
+La [consola de configuración de almacenamiento](srp-config.md) permite seleccionar la configuración de almacenamiento predeterminada, que identifica qué implementación de SRP utilizar.
 
-Al crear, para acceder a la consola de configuración de Almacenamiento:
+Al autor, para acceder a la consola de configuración de almacenamiento:
 
-* En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Configuración de Almacenamiento]**.
+* En la navegación global, seleccione **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Storage Configuration]**.
 
 ![msrp](assets/msrp.png)
 
-* Seleccione **[!UICONTROL Proveedor de recursos de Almacenamiento de MongoDB (MSRP)]**
+* Seleccione **[!UICONTROL Proveedor de recursos de almacenamiento de MongoDB (MSRP)]**
 * **[!UICONTROL Configuración de mongoDB]**
 
    * **[!UICONTROL URI de mongoDB]**
@@ -72,17 +73,17 @@ Al crear, para acceder a la consola de configuración de Almacenamiento:
 
    * **[!UICONTROL Colección de UGC mongoDB]**
 
-      *predeterminado*: content
+      *predeterminado*: contenido
 
    * **[!UICONTROL Colección de datos adjuntos mongoDB]**
 
-      *predeterminado*: adjuntos
+      *predeterminado*: archivos adjuntos
 
 * **[!UICONTROL SolrConfiguration]**
 
    * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Host de Zookeeper**
 
-      Cuando se ejecuta en [modo de SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper externo, establezca este valor en `HOST:PORT` para ZooKeeper, como *my.server.com:2181*
+      Cuando se ejecuta en [modo SolrCloud](solr.md#solrcloud-mode) con un ZooKeeper externo, establezca este valor en `HOST:PORT` para ZooKeeper, como *my.server.com:2181*
 
       Para un ensamblado ZooKeeper, introduzca valores `HOST:PORT` separados por coma, como *host1:2181,host2:2181*
 
@@ -91,28 +92,28 @@ Al crear, para acceder a la consola de configuración de Almacenamiento:
 
       * **[!UICONTROL Solr]**
 URLTURL utilizada para comunicarse con Solr en modo independiente.
-Deje en blanco si se ejecuta en el modo de SolrCloud.
+Déjelo en blanco si se ejecuta en el modo SolrCloud.
 
          *Predeterminado*: https://127.0.0.1:8983/solr/
 
-      * **[!UICONTROL Solr]**
-CollectionEl nombre de la colección Solr.
+      * **[!UICONTROL Colección]**
+SolrEl nombre de la colección Solr.
 
-         *Predeterminado*: collection1
+         *Predeterminado*: colección1
 
 * Seleccione **[!UICONTROL Enviar]**
 
 >[!NOTE]
 >
->La base de datos mongoDB, cuyo nombre predeterminado es `communities`, no debe configurarse en el nombre de una base de datos que se utiliza para [almacenes de nodos o almacenes de datos (binarios)](../../help/sites-deploying/data-store-config.md). Consulte también [Elementos de Almacenamiento en AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>La base de datos mongoDB, cuyo nombre predeterminado es `communities`, no debe establecerse en el nombre de una base de datos que se esté utilizando para [almacenes de nodos o almacenes de datos (binarios)](../../help/sites-deploying/data-store-config.md). Consulte también [Elementos de almacenamiento en AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
-### Conjunto de réplicas MongoDB {#mongodb-replica-set}
+### Conjunto de réplicas de MongoDB {#mongodb-replica-set}
 
-Para el entorno de producción, se recomienda enfáticamente configurar un conjunto de réplicas, un clúster de servidores MongoDB que implementa replicación primaria-secundaria y failover automatizado.
+Para el entorno de producción, se recomienda configurar un conjunto de réplicas, un clúster de servidores MongoDB que implementa replicación primaria-secundaria y failover automatizado.
 
-Para obtener más información sobre los conjuntos de réplicas, visite la documentación de [Replicación](https://docs.mongodb.org/manual/replication/) de MongoDB.
+Para obtener más información sobre los conjuntos de réplicas, visite la documentación [Replication](https://docs.mongodb.org/manual/replication/) de MongoDB.
 
-Para trabajar con conjuntos de réplicas y aprender a definir conexiones entre las aplicaciones y las instancias de MongoDB, visite la documentación [Formato URI de cadena de conexión](https://docs.mongodb.org/manual/reference/connection-string/) de MongoDB.
+Para trabajar con conjuntos de réplicas y aprender a definir conexiones entre aplicaciones y instancias de MongoDB, visite la documentación [Connection String URI Format](https://docs.mongodb.org/manual/reference/connection-string/) de MongoDB.
 
 #### Url de ejemplo para la conexión a un conjunto de réplicas {#example-url-for-connecting-to-a-replica-set}
 
@@ -126,32 +127,32 @@ mongodb://mongoserver1:<mongoport1>,mongoserver2:<mongoport2>,mongoserver3:<mong
 
 ## Configuración de Solr {#solr-configuration}
 
-Una instalación de Solr puede compartirse entre el almacén de nodos (Oak) y el almacén común (MSRP) mediante diferentes colecciones.
+Una instalación de Solr se puede compartir entre el almacén de nodos (Oak) y el almacén común (MSRP) utilizando diferentes colecciones.
 
-Si se utilizan intensamente las colecciones Oak y MSRP, se puede instalar un segundo Solr por motivos de rendimiento.
+Si se utilizan intensamente las colecciones Oak y MSRP, puede instalarse un segundo Solr por motivos de rendimiento.
 
-Para los entornos de producción, [el modo SolrCloud](solr.md#solrcloud-mode) proporciona un rendimiento mejorado sobre el modo independiente (una única configuración local de Solr).
+Para los entornos de producción, [SolrCloud mode](solr.md#solrcloud-mode) proporciona un rendimiento mejorado sobre el modo independiente (una única configuración local de Solr).
 
 Para obtener más información sobre la configuración, consulte [Configuración de Solr para SRP](solr.md).
 
 ### Actualización {#upgrading}
 
-Si se actualiza desde una versión anterior configurada con MSRP, será necesario:
+Si actualiza desde una versión anterior configurada con MSRP, será necesario:
 
-1. Realice la [actualización a AEM Communities](upgrade.md)
+1. Realizar la [actualización a AEM Communities](upgrade.md)
 1. Instalar nuevos archivos de configuración de Solr
    * Para [MLS estándar](solr.md#installing-standard-mls)
    * Para [MLS avanzados](solr.md#installing-advanced-mls)
 1. Reindexar MSRP
-Consulte la sección [Herramienta de reindexación del MSRP](#msrp-reindex-tool)
+Consulte la sección [Herramienta de reindexación de MSRP](#msrp-reindex-tool)
 
 ## Publicación de la configuración {#publishing-the-configuration}
 
-El MSRP debe identificarse como el almacén común en todas las instancias de creación y publicación.
+El MSRP debe identificarse como el almacén común en todas las instancias de autor y publicación.
 
-Para que la configuración idéntica esté disponible en el entorno de publicación, inicie sesión en la instancia de creación y siga los pasos:
+Para que la configuración idéntica esté disponible en el entorno de publicación, inicie sesión en la instancia de autor y siga los pasos:
 
-* Vaya del menú principal a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Replicación]**.
+* Vaya del menú principal a **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**.
 * Seleccione **[!UICONTROL Activar árbol]**
 * **[!UICONTROL Ruta de inicio]**:
    * Vaya a `/etc/socialconfig/srpc/`
@@ -159,22 +160,22 @@ Para que la configuración idéntica esté disponible en el entorno de publicaci
 
 ## Administración de datos de usuario {#managing-user-data}
 
-Para obtener información acerca de *usuarios*, *perfiles de usuario* y *grupos de usuarios*, que a menudo se introducen en el entorno de publicación, visite
+Para obtener información sobre los *usuarios*, *perfiles de usuario* y *grupos de usuarios*, que a menudo se introducen en el entorno de publicación, visite
 
 * [Sincronización de usuarios](sync.md)
 * [Administración de usuarios y grupos de usuarios](users.md)
 
-## Herramienta de reindexación MSRP {#msrp-reindex-tool}
+## Herramienta de reindexación de MSRP {#msrp-reindex-tool}
 
-Hay un extremo HTTP para volver a indexar Solr para MSRP al instalar nuevos archivos de configuración o reparar un índice Solr dañado.
+Hay un extremo HTTP para reindexar Solr para MSRP cuando se instalan nuevos archivos de configuración o se repare un índice Solr dañado.
 
-Con esta herramienta, MongoDB es la fuente de *verdad* para el MSRP; las copias de seguridad sólo se deben realizar de MongoDB.
+Con esta herramienta, MongoDB es la fuente de *verdad* para el MSRP; las copias de seguridad solo deben realizarse con MongoDB.
 
-El árbol UGC completo se puede volver a indexar, o solo un subárbol específico, tal como se especifica en el parámetro *path *data.
+El árbol UGC completo se puede reindexar, o solo un subárbol específico, como se especifica en el parámetro *path *data .
 
-Esta herramienta se puede ejecutar desde la línea de comandos mediante cURL o cualquier otra herramienta HTTP.
+Esta herramienta se puede ejecutar desde la línea de comandos utilizando cURL o cualquier otra herramienta HTTP.
 
-Al reindexar, hay un equilibrio entre la memoria y el rendimiento controlado por el parámetro *batchSize *data, que especifica cuántos registros UGC se reindexan por lote.
+Al reindexar, existe un equilibrio entre la memoria y el rendimiento controlado por el parámetro *batchSize *data , que especifica cuántos registros UGC se reindexan por lote.
 
 Un valor predeterminado razonable es 5000:
 
@@ -183,39 +184,39 @@ Un valor predeterminado razonable es 5000:
 
 ### Ejecución de la herramienta de reindexación MSRP mediante el comando cURL {#running-msrp-reindex-tool-using-curl-command}
 
-El siguiente comando cURL muestra lo que es necesario para que una solicitud HTTP vuelva a indexar UGC almacenado en MSRP.
+El siguiente comando cURL muestra lo que es necesario para que una solicitud HTTP reindexe el UGC almacenado en MSRP.
 
 El formato básico es:
 
 cURL -u *inicio de sesión* -d *datos* *reindex-url*
 
-*sign* = admin-id:password Por ejemplo: admin:admin
+*inicio de sesión* = id-administrador:contraseña Por ejemplo: admin:admin
 
 *data* = &quot;batchSize=*size*&amp;path=*path&quot;*
 
-*size* = cantidad de entradas UGC que se reindexarán por operación 
+*size*  = ¿cuántas entradas UGC reindexar por operación? 
 `/content/usergenerated/asi/mongo/`
 
-*path* = la ubicación raíz del árbol de UGC para volver a indexar
+*path*  = la ubicación raíz del árbol de UGC para reindexar
 
-* Para volver a indexar todo el UGC, especifique el valor de la propiedad `asipath`de
+* Para reindexar todo UGC, especifique el valor de la propiedad `asipath`de
    `/etc/socialconfig/srpc/defaultconfiguration`
 * Para limitar el índice a algún UGC, especifique un subárbol de `asipath`
 
-*reindex-url* = punto final para volver a indexar el SRP 
+*reindex-url* = el punto final para la reindexación de SRP 
 `http://localhost:4503/services/social/datastore/mongo/reindex`
 
 >[!NOTE]
 >
 >Si está [reindexando DSRP Solr](dsrp.md), la dirección URL es **/services/social/datastore/rdb/reindex**
 
-### Ejemplo de reindexación MSRP {#msrp-reindex-example}
+### Ejemplo de reindexación de MSRP {#msrp-reindex-example}
 
 ```shell
 curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo/' http://localhost:4503/services/social/datastore/mongo/reindex
 ```
 
-## Cómo Demostrar el MSRP {#how-to-demo-msrp}
+## Cómo mostrar el MSRP {#how-to-demo-msrp}
 
 Para configurar el MSRP para un entorno de demostración o desarrollo, consulte [HowTo Setup MongoDB for Demo](demo-mongo.md).
 
@@ -223,28 +224,28 @@ Para configurar el MSRP para un entorno de demostración o desarrollo, consulte 
 
 ### UGC no visible en MongoDB {#ugc-not-visible-in-mongodb}
 
-Compruebe la configuración de la opción de almacenamiento para asegurarse de que MSRP se ha configurado como el proveedor predeterminado. De forma predeterminada, el proveedor de recursos de almacenamiento es JSRP.
+Asegúrese de que MSRP se haya configurado para ser el proveedor predeterminado comprobando la configuración de la opción de almacenamiento. De forma predeterminada, el proveedor de recursos de almacenamiento es JSRP.
 
-En todas las instancias de creación y publicación de AEM, vuelva a visitar la [consola de configuración de Almacenamiento](srp-config.md) o compruebe el repositorio de AEM:
+En todas las instancias de autor y publicación de AEM, vuelva a la [consola de configuración de almacenamiento](srp-config.md) o compruebe el repositorio de AEM:
 
 * En JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
    * No contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa que el proveedor de almacenamiento es JSRP.
-   * Si el nodo srpc existe y contiene el nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), las propiedades predeterminadas de la configuración deben definir MSRP para que sea el proveedor predeterminado.
+   * Si el nodo srpc existe y contiene el nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), las propiedades de la configuración predeterminada deben definir MSRP para que sea el proveedor predeterminado.
 
-### UGC desaparece tras la actualización {#ugc-disappears-after-upgrade}
+### UGC desaparece después de la actualización {#ugc-disappears-after-upgrade}
 
-Si realiza la actualización desde un sitio AEM Communities 6.0 existente, cualquier UGC preexistente debe convertirse para cumplir con la estructura requerida para la API [SRP](srp.md) después de actualizar a AEM Communities 6.3.
+Si actualiza desde un sitio de AEM Communities 6.0 existente, cualquier UGC preexistente debe convertirse para ajustarse a la estructura requerida para la API [SRP](srp.md) después de actualizar a AEM Communities 6.3.
 
-Hay una herramienta de código abierto disponible en GitHub para este propósito:
+Hay una herramienta de código abierto disponible en GitHub para este fin:
 
 * [Herramienta de migración UGC de AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-La herramienta de migración se puede personalizar para exportar UGC de versiones anteriores de AEM comunidades sociales para importarlos a AEM Communities 6.1 o posterior.
+La herramienta de migración se puede personalizar para exportar UGC de versiones anteriores de AEM comunidades sociales para importarlo a AEM Communities 6.1 o posterior.
 
-### Error: id_proveedor_campo no definido {#error-undefined-field-provider-id}
+### Error: proveedor_id de campo no definido {#error-undefined-field-provider-id}
 
-Si aparece el siguiente error en los registros, indica que el archivo esquema Solr no está configurado correctamente.
+Si se ve el siguiente error en los registros, indica que el archivo de esquema Solr no está configurado correctamente.
 
 #### JsonMappingException: campo no definido provider_id {#jsonmappingexception-undefined-field-provider-id}
 
@@ -256,14 +257,14 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 ... 124 common frames omitted
 ```
 
-Para resolver el error, al seguir las instrucciones para [Instalación de MLS estándar](solr.md#installing-standard-mls), asegúrese de:
+Para resolver el error, al seguir las instrucciones de [Instalación de MLS estándar](solr.md#installing-standard-mls), asegúrese de:
 
-* Los archivos de configuración XML se copiaron en la ubicación de Solr correcta.
+* Los archivos de configuración XML se copiaron en la ubicación Solr correcta.
 * Solr se reinició después de que los nuevos archivos de configuración reemplazaran a los existentes.
 
 ### La conexión segura con MongoDB falla {#secure-connection-to-mongodb-fails}
 
-Si un intento de establecer una conexión segura con el servidor MongoDB falla debido a la falta de una definición de clase, es necesario actualizar el paquete de controladores MongoDB, `mongo-java-driver`, disponible en el repositorio público.
+Si falla un intento de establecer una conexión segura con el servidor MongoDB debido a la falta de una definición de clase, es necesario actualizar el paquete de controladores MongoDB, `mongo-java-driver`, disponible en el repositorio público maven.
 
 1. Descargue el controlador de [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versión 2.13.2 o posterior).
 1. Copie el paquete en la carpeta &quot;crx-quickstart/install&quot; para una instancia de AEM.
