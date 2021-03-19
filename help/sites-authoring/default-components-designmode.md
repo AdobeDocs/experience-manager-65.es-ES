@@ -1,7 +1,7 @@
 ---
 title: Configurar componentes en modo Diseño
 seo-title: Configurar componentes en modo Diseño
-description: nulo
+description: Configurar componentes en modo Diseño
 seo-description: nulo
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '911'
 ht-degree: 87%
 
 ---
@@ -36,7 +36,7 @@ Además de estos, también hay otros componentes disponibles. Se puede utilizar 
 >
 >El modo de diseño solo está disponible para las configuraciones de diseño almacenadas como contenido en ( `/etc`).
 >
->A partir de AEM 6.4, se recomienda almacenar diseños como datos de configuración en `/apps` para admitir escenarios de implementación continua. Los diseños almacenados en `/apps` no se pueden editar en tiempo de ejecución y el modo Diseño no estará disponible para los usuarios que no sean administradores para dichas plantillas.
+>A partir de AEM 6.4, se recomienda almacenar los diseños como datos de configuración en `/apps` para admitir escenarios de implementación continuos. Los diseños almacenados en `/apps` no se pueden editar durante la ejecución y el modo Diseño no estará disponible para los usuarios que no sean administradores para estas plantillas.
 
 Esto implica añadir o quitar los componentes permitidos en el sistema de párrafos de la página. El sistema de párrafos (`parsys`) es un componente compuesto que contiene todos los demás componentes de párrafos. El sistema de párrafos permite a los autores añadir componentes de distintos tipos a una página, ya que contiene todos los demás componentes de párrafos. Cada tipo de párrafo se representa como un componente.
 
@@ -92,7 +92,7 @@ Para activar o desactivar un componente:
 
    **Componentes permitidos**
 
-   En la ficha **Componentes permitidos**, se definen los componentes disponibles para parsys.
+   En la pestaña **Componentes permitidos**, defina qué componentes están disponibles para parsys.
 
    * Los componentes se agrupan por grupos de componentes, que se pueden expandir y contraer.
    * Es posible seleccionar un grupo completo marcando la casilla del nombre del grupo, y se puede anular la selección de todo desactivando la casilla de verificación.
@@ -152,9 +152,9 @@ Para activar o desactivar un componente:
 
    Utilice el botón **Añadir** para agregar más entradas a la lista del cuadro de diálogo de entrada múltiple.
 
-   ![chlimage_1-94](assets/chlimage_1-94.png)
+   ![imagen_1-94](assets/chlimage_1-94.png)
 
-   Utilice el icono** Eliminar **para eliminar una entrada de una lista de cuadro de diálogo de varias entradas.
+   Utilice el icono** Eliminar **para eliminar una entrada de una lista de cuadros de diálogo de entrada múltiple.
 
    ![](do-not-localize/screen_shot_2018-03-22at103809.png)
 
