@@ -1,16 +1,17 @@
 ---
 title: Trabajar con selectores
-description: Selección de recursos para imágenes interactivas, vídeos interactivos y pancartas de carrusel
+description: Selección de recursos para imágenes interactivas, vídeo interactivo y titulares de carrusel
 uuid: 6231739c-bf49-4069-90a4-57848cc68d9a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
+role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '729'
 ht-degree: 19%
 
 ---
@@ -18,29 +19,29 @@ ht-degree: 19%
 
 # Trabajar con selectores {#working-with-selectors}
 
-Al trabajar con una imagen interactiva, un vídeo interactivo o una pancarta de carrusel, se seleccionan recursos y se seleccionan sitios y productos para las zonas interactivas y los mapas de imagen con los que se desea establecer el vínculo. Al trabajar con conjuntos de imágenes, conjuntos de giros y conjuntos multimedia, también se seleccionan recursos con el selector de recursos.
+Al trabajar con una imagen interactiva, un vídeo interactivo o un titular de carrusel, se seleccionan los recursos y los sitios y productos para las zonas interactivas y los mapas de imágenes a los que se va a vincular. Al trabajar con conjuntos de imágenes, conjuntos de giros y conjuntos multimedia, también puede seleccionar recursos con el Selector de recursos.
 
-En este tema se explica cómo utilizar los selectores Producto, Sitio y Recursos, incluida la capacidad de examinar, filtrar y ordenar dentro de los selectores.
+En este tema se explica cómo utilizar los selectores de producto, sitio y recurso, incluida la capacidad de examinar, filtrar y ordenar dentro de los selectores.
 
-Puede acceder a los selectores mientras crea conjuntos de carrusel, agrega zonas interactivas y mapas de imagen, y crea vídeos e imágenes interactivos.
+Puede acceder a los selectores al crear conjuntos de carrusel, agregar zonas interactivas y mapas de imágenes, crear imágenes y vídeos interactivos.
 
-Por ejemplo, en este letrero de carrusel, utilice el selector de productos si está vinculando un punto interactivo o un mapa de imagen a una página de vista rápida; utilice el selector de sitio si está vinculando un punto interactivo o un mapa de imagen a un hipervínculo; utilice el selector de recursos cuando esté creando una nueva diapositiva.
+Por ejemplo, en este titular de carrusel, utilice el selector de productos si está vinculando un punto interactivo o un mapa de imagen a una página de vista rápida; utilice el selector de sitio si está vinculando un punto interactivo o un mapa de imagen a un hipervínculo; utilice el selector de recursos cuando esté creando una diapositiva nueva.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Cuando selecciona (en lugar de introducir manualmente) hacia dónde van las zonas interactivas o los mapas de imagen, está utilizando el selector. El selector de sitios solo funciona si es cliente de AEM Sites. El selector de productos también requiere AEM comercio.
+Cuando selecciona (en lugar de introducir manualmente) a dónde se dirigen los puntos interactivos o los mapas de imagen, está utilizando el selector. El selector de sitio solo funciona si es cliente de AEM Sites. El selector de productos también requiere AEM comercio.
 
 ## Selección de productos {#selecting-products}
 
-Utilice el selector de productos para elegir un producto cuando desee un punto interactivo o mapa de imagen para proporcionar una vista rápida a un producto específico del catálogo de productos.
+Utilice el selector de productos para elegir un producto cuando desee que un punto interactivo o un mapa de imagen proporcionen una vista rápida a un producto específico de su catálogo de productos.
 
 1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y pulse la pestaña **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
 
-   El selector de productos se encuentra en el área **[!UICONTROL Tipo de acción]**.
+   El selector de producto se encuentra en el área **[!UICONTROL Tipo de acción]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Toque el icono **[!UICONTROL Selector de producto]** (lupa) y navegue hasta un producto del catálogo.
+1. Pulse el icono **[!UICONTROL Selector de producto]** (lupa) y navegue hasta un producto del catálogo.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
@@ -48,11 +49,11 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Puede cambiar la ubicación en la que AEM exploran los datos del producto tocando **[!UICONTROL Examinar]** y navegando a otra carpeta.
+   Para cambiar el lugar donde AEM los datos del producto, pulse **[!UICONTROL Examinar]** y vaya a otra carpeta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Toque **[!UICONTROL Ordenar]** para cambiar si AEM ordena de nuevo a más antiguo o de más antiguo a más reciente.
+   Toque **[!UICONTROL Ordenar]** por para cambiar si AEM clasifica por más reciente a más antiguo o de más antiguo a más reciente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -64,13 +65,13 @@ Utilice el selector de productos para elegir un producto cuando desee un punto i
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. Cuando se encuentra en el modo **[!UICONTROL Previsualización]**, puede tocar el punto interactivo o el mapa de imagen y ver el aspecto de la vista rápida.
+1. En el modo **[!UICONTROL Vista previa]**, puede pulsar el punto interactivo o el mapa de imagen y ver el aspecto de la vista rápida.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
 ## Selección de sitios {#selecting-sites}
 
-Utilice el selector de sitios para elegir una página Web cuando desee que un punto interactivo o mapa de imágenes se vincule a una página Web administrada dentro de AEM sitios.
+Utilice el selector del sitio para elegir una página web cuando desee que un punto interactivo o mapa de imagen vincule a una página web que se administra dentro de AEM sitios.
 
 1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y pulse la pestaña **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
 
@@ -86,26 +87,26 @@ Utilice el selector de sitios para elegir una página Web cuando desee que un pu
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Cuando se encuentra en el modo **[!UICONTROL Previsualización]** si toca el punto interactivo o el mapa de imagen, navegue a la página del sitio AEM que especificó.
+1. En el modo **[!UICONTROL Vista previa]** si toca el punto interactivo o el mapa de imagen, puede navegar a la página del sitio AEM que especificó.
 
 ## Selección de recursos {#selecting-assets}
 
-Utilice este selector para elegir imágenes que se utilizarán en letreros de carrusel, vídeos interactivos, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de giros. En el vídeo interactivo, el selector de recursos está disponible cuando toca **[!UICONTROL Seleccionar recursos]** en la ficha **[!UICONTROL Contenido]**. En Conjuntos de carrusel, el selector de recursos está disponible al crear una nueva diapositiva. En los conjuntos de imágenes, los conjuntos de medios mixtos y los conjuntos de giros, el selector de recursos está disponible al crear un nuevo conjunto de imágenes, un conjunto de medios mixtos o un conjunto de giros, respectivamente.
+Utilice este selector para elegir imágenes que se utilizarán en un titular de carrusel, un vídeo interactivo, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de giros. En el vídeo interactivo, el selector de recursos está disponible al pulsar **[!UICONTROL Seleccionar recursos]** en la pestaña **[!UICONTROL Contenido]**. En Conjuntos de carrusel, el selector de recursos está disponible al crear una nueva diapositiva. En Conjuntos de imágenes, Conjuntos de medios mixtos y Conjuntos de giros, el selector de recursos está disponible al crear un nuevo conjunto de imágenes, conjunto de medios mixtos o conjunto de giros, respectivamente.
 
 Consulte también [Selector de recursos](search-assets.md#assetpicker) para obtener más información.
 
-1. Vaya al conjunto de carrusel y cree una nueva diapositiva. O bien, vaya a Vídeo interactivo, vaya a la ficha **[!UICONTROL Contenido]** y seleccione recursos. O bien, cree un conjunto de medios mixtos, un conjunto de imágenes o un conjunto de giros.
+1. Vaya al conjunto de carrusel y cree una nueva diapositiva. O bien, vaya al Vídeo interactivo, vaya a la pestaña **[!UICONTROL Contenido]** y seleccione recursos. O bien, cree un conjunto de medios mixtos, un conjunto de imágenes o un conjunto de giros.
 1. Pulse el icono **[!UICONTROL Selector de recursos]** (carpeta con lupa) y navegue hasta un recurso.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   También puede filtrar por palabra clave o etiqueta tocando **[!UICONTROL Filtro]** y escribiendo palabras clave, o agregando criterios, o ambos.
+   También puede filtrar por palabra clave o etiqueta tocando **[!UICONTROL Filtro]** e introduciendo palabras clave, o agregando criterios, o ambos.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Puede cambiar el lugar donde AEM exploran los recursos navegando a otra carpeta en el campo **[!UICONTROL Ruta]**.
+   Para cambiar la ubicación de los recursos AEM navegue a otra carpeta en el campo **[!UICONTROL Path]**.
 
-   Toque **[!UICONTROL Colección]** para buscar solo recursos dentro de las colecciones.
+   Toque **[!UICONTROL Collection]** para buscar solo recursos dentro de las colecciones.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
@@ -113,7 +114,7 @@ Consulte también [Selector de recursos](search-assets.md#assetpicker) para obte
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Toque la marca de verificación para seleccionar el recurso. Se muestra el recurso.
+1. Pulse la marca de verificación para seleccionar el recurso. Se muestra el recurso.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
 
