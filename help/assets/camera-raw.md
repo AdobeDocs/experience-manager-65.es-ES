@@ -1,42 +1,43 @@
 ---
 title: '[!DNL Adobe Camera Raw] asistencia técnica.'
-description: Obtenga información sobre cómo habilitar la compatibilidad con [!DNL Adobe Camera Raw] en [!DNL Adobe Experience Manager Assets].
+description: Aprenda a habilitar la compatibilidad con [!DNL Adobe Camera Raw] en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
+role: Administrador
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 1%
+source-wordcount: '376'
+ht-degree: 2%
 
 ---
 
 
 # Procesar imágenes con {#camera-raw-support} Camera Raw
 
-Puede habilitar la compatibilidad con [!DNL Adobe Camera Raw] para procesar formatos de archivo sin procesar, como CR2, NEF y RAF, y procesar las imágenes en formato JPEG. La funcionalidad se admite en [!DNL Adobe Experience Manager Assets] usando el [paquete Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible en Distribución de software.
+Puede habilitar la compatibilidad con [!DNL Adobe Camera Raw] para procesar formatos de archivo sin procesar, como CR2, NEF y RAF, y procesar las imágenes en formato JPEG. La funcionalidad se admite en [!DNL Adobe Experience Manager Assets] mediante el [paquete Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible en Distribución de software.
 
 >[!NOTE]
 >
->La funcionalidad solo admite representaciones JPEG. Se admite en Windows de 64 bits, Mac OS y RHEL 7.x.
+>La funcionalidad solo admite representaciones JPEG. Es compatible con Windows de 64 bits, Mac OS y RHEL 7.x.
 
 Para habilitar la compatibilidad con [!DNL Camera Raw] en [!DNL Experience Manager Assets], siga estos pasos:
 
-1. Descargue el [paquete Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) de Distribución de software.
-1. Acceso `https://[aem_server]:[port]/workflow`. Abra el flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]**.
-1. Abra el paso **[!UICONTROL Miniaturas de proceso]**.
-1. Proporcione la siguiente configuración en la ficha **[!UICONTROL Miniaturas]**:
+1. Descargue el [paquete Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) desde Distribución de software.
+1. Acceso `https://[aem_server]:[port]/workflow`. Abra el flujo de trabajo **[!UICONTROL DAM Update Asset]** .
+1. Abra el paso **[!UICONTROL Procesar miniaturas]**.
+1. Proporcione la siguiente configuración en la pestaña **[!UICONTROL Miniaturas]**:
 
    * **[!UICONTROL Miniaturas]**:  `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL Tipos MIME omitidos]**: `skip:image/dng, skip:image/x-raw-(.*)`
 
    ![chlimage_1-128](assets/chlimage_1-334.png)
 
-1. En la ficha **[!UICONTROL Imagen habilitada para Web]**, en el campo **[!UICONTROL Omitir Lista]**, especifique `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
+1. En la pestaña **[!UICONTROL Web Enabled Image]**, en el campo **[!UICONTROL Skip List]**, especifique `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
    ![chlimage_1-129](assets/chlimage_1-335.png)
 
-1. Desde el panel lateral, agregue el paso **[!UICONTROL Controlador Camera Raw/DNG]** debajo del paso **[!UICONTROL Creación de miniaturas]**.
-1. En el paso **[!UICONTROL Controlador Camera Raw/DNG]**, agregue la siguiente configuración en la ficha **[!UICONTROL Argumentos]**:
+1. En el panel lateral, añada el paso **[!UICONTROL Controlador Camera Raw/DNG]** debajo del paso **[!UICONTROL Creación de miniaturas]**.
+1. En el paso **[!UICONTROL Controlador Camera Raw/DNG]**, añada la siguiente configuración en la pestaña **[!UICONTROL Argumentos]**:
 
    * **[!UICONTROL Tipos]** Mime:  `image/dng` y  `image/x-raw-(.*)`
    * **[!UICONTROL Comando]**:
@@ -52,7 +53,7 @@ Para habilitar la compatibilidad con [!DNL Camera Raw] en [!DNL Experience Manag
 
 >[!NOTE]
 >
->Asegúrese de que la configuración anterior es la misma que la configuración del **[!UICONTROL recurso de actualización DAM de muestra con la configuración del paso de control Camera Raw y DNG]**.
+>Asegúrese de que la configuración anterior es la misma que la configuración **[!UICONTROL Ejemplo de Activo de actualización de DAM con la configuración del paso de manejo Camera Raw y DNG]**.
 
 Ahora puede importar archivos sin procesar de cámara en Assets. Después de instalar el paquete Camera Raw y configurar el flujo de trabajo necesario, aparece la opción **[!UICONTROL Ajuste de imagen]** en la lista de paneles laterales.
 
@@ -62,7 +63,7 @@ Ahora puede importar archivos sin procesar de cámara en Assets. Después de ins
 
 ![chlimage_1-132](assets/chlimage_1-338.png)
 
-*Figura: Utilice esta opción para realizar ediciones ligeras en las imágenes.*
+*Figura: Utilice la opción para realizar ediciones ligeras en las imágenes.*
 
 Después de guardar las ediciones en una imagen [!DNL Camera Raw], se genera una nueva representación `AdjustedPreview.jpg` para la imagen. Para otros tipos de imagen excepto [!DNL Camera Raw], los cambios se reflejan en todas las representaciones.
 
@@ -70,6 +71,6 @@ Después de guardar las ediciones en una imagen [!DNL Camera Raw], se genera una
 
 La funcionalidad tiene las siguientes limitaciones:
 
-* La funcionalidad solo admite representaciones JPEG. Se admite en Windows de 64 bits, Mac OS y RHEL 7.x.
+* La funcionalidad solo admite representaciones JPEG. Es compatible con Windows de 64 bits, Mac OS y RHEL 7.x.
 * La reescritura de metadatos no es compatible con los formatos RAW y DNG.
-* La biblioteca [!DNL Camera Raw] tiene limitaciones en cuanto al total de píxeles que puede procesar a la vez. Actualmente, puede procesar un máximo de 65000 píxeles en el lado largo de un archivo o 512 MP, sea cual sea el criterio que se encuentre primero.
+* La biblioteca [!DNL Camera Raw] tiene limitaciones en cuanto al total de píxeles que puede procesar a la vez. Actualmente, puede procesar un máximo de 65000 píxeles en el lado largo de un archivo o 512 MP independientemente de los criterios que se encuentren primero.
