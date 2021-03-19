@@ -10,10 +10,11 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
+feature: Copiar idioma
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -29,35 +30,35 @@ El asistente de copia de idioma es una experiencia guiada para crear e instrumen
 
 Para acceder a este asistente:
 
-1. En Sitios, seleccione una página y toque o haga clic en Crear.
+1. En Sitios, seleccione una página y pulse o haga clic en Crear.
 
-   ![chlimage_1-9](assets/chlimage_1-9.jpeg)
+   ![Chlimage_1-9](assets/chlimage_1-9.jpeg)
 
-1. Seleccione Copiar idioma y se abrirá el asistente.
+1. Seleccione Copia de idioma y se abrirá el asistente.
 
-   ![chlimage_1-10](assets/chlimage_1-10.jpeg)
+   ![imagen_1-10](assets/chlimage_1-10.jpeg)
 
-1. El paso **Seleccionar origen** del asistente le permite agregar o quitar páginas. También tiene la opción de incluir o excluir las subpáginas.
+1. El paso **Seleccionar origen** del asistente le permite agregar o eliminar páginas. También tiene la opción de incluir o excluir las subpáginas.
 
-   ![chlimage_1-11](assets/chlimage_1-11.jpeg)
+   ![imagen_1-11](assets/chlimage_1-11.jpeg)
 
-1. El botón **Siguiente** le lleva al paso **Configurar** del asistente. Aquí puede agregar o eliminar idiomas y seleccionar el método de traducción.
+1. El botón **Next** le lleva al paso **Configure** del asistente. Aquí puede añadir o eliminar idiomas y seleccionar el método de traducción.
 
-   ![chlimage_1-12](assets/chlimage_1-12.jpeg)
-
-   >[!NOTE]
-   >
-   >De forma predeterminada, solo hay una configuración de traducción. Para poder seleccionar otros ajustes, primero debe configurar las configuraciones de la nube. Consulte [Configuración del módulo de integración de traducción](/help/sites-administering/tc-tic.md).
-
-1. El botón **Siguiente** le lleva al paso **Traducir** del asistente. Aquí puede elegir entre crear la estructura únicamente, crear un nuevo proyecto de traducción o agregar a un proyecto de traducción existente.
+   ![imagen_1-12](assets/chlimage_1-12.jpeg)
 
    >[!NOTE]
    >
-   >Si seleccionó varios idiomas en el paso anterior, se crearán varios proyectos de traducción.
+   >De forma predeterminada, solo hay una configuración de traducción. Para poder seleccionar otros ajustes, primero debe configurar las configuraciones de nube. Consulte [Configuración del marco de integración de traducción](/help/sites-administering/tc-tic.md).
 
-   ![chlimage_1-13](assets/chlimage_1-13.jpeg)
+1. El botón **Next** le lleva al paso **Translate** del asistente. Aquí puede elegir entre crear solo la estructura, crear un nuevo proyecto de traducción o agregar a un proyecto de traducción existente.
 
-1. El botón **Crear** finaliza el asistente.
+   >[!NOTE]
+   >
+   >Si ha seleccionado varios idiomas en el paso anterior, se crearán varios proyectos de traducción.
 
-   ![chlimage_1-14](assets/chlimage_1-14.jpeg)
+   ![imagen_1-13](assets/chlimage_1-13.jpeg)
+
+1. El botón **Create** finaliza el asistente.
+
+   ![imagen_1-14](assets/chlimage_1-14.jpeg)
 
