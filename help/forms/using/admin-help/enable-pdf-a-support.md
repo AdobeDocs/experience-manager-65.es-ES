@@ -1,19 +1,20 @@
 ---
 title: Habilitar compatibilidad con PDF/A
 seo-title: Habilitar compatibilidad con PDF/A
-description: Obtenga información sobre cómo activar la compatibilidad con PDF/A. Los archivos compatibles con PDF/A se pueden crear a partir de archivos de Microsoft Excel, Microsoft PowerPoint y Microsoft Word.
-seo-description: Obtenga información sobre cómo activar la compatibilidad con PDF/A. Los archivos compatibles con PDF/A se pueden crear a partir de archivos de Microsoft Excel, Microsoft PowerPoint y Microsoft Word.
+description: Aprenda a activar la compatibilidad con PDF/A. Los archivos compatibles con PDF/A se pueden crear desde archivos de Microsoft Excel, Microsoft PowerPoint y Microsoft Word.
+seo-description: Aprenda a activar la compatibilidad con PDF/A. Los archivos compatibles con PDF/A se pueden crear desde archivos de Microsoft Excel, Microsoft PowerPoint y Microsoft Word.
 uuid: 663bc89d-9d8b-4178-9a88-6d2d5daac477
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17a6397b-0089-4fd1-b44a-686fdf60d7a9
+feature: Generador de PDF
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 0%
+source-wordcount: '136'
+ht-degree: 1%
 
 ---
 
