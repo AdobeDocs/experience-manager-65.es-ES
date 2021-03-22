@@ -1,12 +1,12 @@
 ---
-title: Oferta de la biblioteca multimedia para la administración de recursos digitales.
+title: Usar la biblioteca de medios para la administración básica de recursos digitales
 description: '[!DNL Experience Manager Assets] y Biblioteca de medios para la administración de recursos.'
 contentOwner: AG
 role: Arquitecto, Encabezado
 translation-type: tm+mt
-source-git-commit: 10e5ca2fb6e108a7201e6114b61b3d0266ff80d2
+source-git-commit: 31dc984d9cd93f7024229fd6773878eebfdadc57
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,6 @@ La biblioteca de medios abarca en general los siguientes casos de uso:
 * Experiencias de pantalla digital creadas con [!DNL Adobe Experience Manager Screens].
 * [!DNL Assets] API HTTP REST para operaciones sin encabezado.
 
-
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Basic metadata properties
@@ -65,7 +64,7 @@ La biblioteca de medios abarca en general los siguientes casos de uso:
 * Comments and annotation
 -->
 
-Puede realizar las siguientes tareas específicas mediante la Biblioteca de medios:
+Para utilizar la funcionalidad Biblioteca de medios, puede utilizar la interfaz de usuario predeterminada [!DNL Experience Manager]. La biblioteca multimedia forma parte de la instalación de [!DNL Experience Manager Sites] y no se requiere ninguna interfaz ni complemento independiente. Con la interfaz existente, los usuarios de la biblioteca multimedia tienen derechos para realizar las siguientes tareas:
 
 * Cree carpetas para organizar los recursos.
 * Cargar recursos.
