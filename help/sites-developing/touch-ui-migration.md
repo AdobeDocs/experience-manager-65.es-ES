@@ -1,8 +1,8 @@
 ---
-title: Migración a la IU táctil
-seo-title: Migración a la IU táctil
-description: Migración a la IU táctil
-seo-description: Migración a la IU táctil
+title: Migración a la interfaz de usuario táctil
+seo-title: Migración a la interfaz de usuario táctil
+description: Migración a la interfaz de usuario táctil
+seo-description: Migración a la interfaz de usuario táctil
 uuid: 47c43b56-532b-4ada-8503-04d66bab3564
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 6%
@@ -21,13 +21,13 @@ ht-degree: 6%
 
 # Migración a la IU táctil{#migration-to-the-touch-ui}
 
-A partir de la versión 6.0, Adobe Experience Manager (AEM) introdujo una nueva interfaz de usuario denominada *IU táctil* (también conocida como *IU táctil*). Está alineado con el Adobe Marketing Cloud y con las directrices generales de la interfaz de usuario de Adobe. Esta se ha convertido en la interfaz de usuario estándar en AEM con la interfaz heredada y orientada al escritorio denominada *IU clásica*.
+A partir de la versión 6.0, Adobe Experience Manager (AEM) introdujo una nueva interfaz de usuario denominada *IU táctil* (también conocida como *IU táctil*). Se alinea con Adobe Marketing Cloud y con las directrices generales de la interfaz de usuario del Adobe. Esta se ha convertido en la interfaz de usuario estándar en AEM con la interfaz heredada y orientada al escritorio denominada *IU clásica*.
 
-Si ha estado utilizando AEM con la IU clásica, deberá realizar una acción para migrar la instancia. Esta página tiene como objetivo actuar como trampolín proporcionando vínculos a recursos individuales.
+Si ha estado utilizando AEM con la IU clásica, deberá realizar una acción para migrar la instancia. Esta página pretende servir de trampolín al proporcionar vínculos a recursos individuales.
 
 >[!NOTE]
 >
->Este proyecto de migración puede tener un impacto significativo en su caso. Consulte [Administración de proyectos - Optimizaciones](/help/managing/best-practices.md) para obtener instrucciones recomendadas.
+>Este proyecto de migración puede tener un impacto significativo en su instancia. Consulte [Administración de proyectos: prácticas recomendadas](/help/managing/best-practices.md) para obtener instrucciones recomendadas.
 
 ## Conceptos básicos {#the-basics}
 
@@ -40,13 +40,13 @@ Al migrar, debe tener en cuenta las siguientes diferencias (principales) entre l
    <td>IU táctil</td>
   </tr>
   <tr>
-   <td>Se describe en el repositorio JCR como una estructura de nodos. Todos los nodos que representan un elemento de la interfaz de usuario se denominan <em>widget ExtJS</em> y se representan en el lado del cliente mediante <code>ExtJS</code>.</td>
-   <td>También se describe en el repositorio JCR como una estructura de nodos. Sin embargo, en este caso, cada nodo hace referencia a un tipo de recurso Sling (componente Sling), que se encarga de su procesamiento. La interfaz de usuario se representa básicamente en el servidor.</td>
+   <td>Se describe en el repositorio JCR como una estructura de nodos. Cada nodo que representa un elemento de la interfaz de usuario se denomina <em>utilidad ExtJS</em> y se representa en el lado del cliente mediante <code>ExtJS</code>.</td>
+   <td>También se describe en el repositorio JCR como una estructura de nodos. Sin embargo, en este caso cada nodo hace referencia a un tipo de recurso de Sling (componente Sling), que se encarga de su renderización. Por lo tanto, la interfaz de usuario se representa (básicamente) en el lado del servidor.</td>
   </tr>
   <tr>
    <td><p><code>sling:resourceType</code></p>
     <ul>
-     <li>no utilizado</li>
+     <li>no se usa</li>
     </ul> </td>
    <td><code>sling:resourceType</code>
     <ul>
@@ -63,7 +63,7 @@ Al migrar, debe tener en cuenta las siguientes diferencias (principales) entre l
    <td><p>Nodos de diálogo:</p>
     <ul>
      <li>Nombre: <code>cq:dialog</code></li>
-     <li>jcr:parentType: <code>nt:unstructured</code></li>
+     <li>jcr:primaryType: <code>nt:unstructured</code></li>
     </ul> </td>
   </tr>
   <tr>
@@ -73,59 +73,59 @@ Al migrar, debe tener en cuenta las siguientes diferencias (principales) entre l
     </ul> </td>
    <td><p>Ubicación de JavaScript:</p>
     <ul>
-     <li>Las partes imperativas no pueden incrustarse en la definición de cuadro de diálogo; separación de responsabilidades.</li>
+     <li>Las partes imperativas no se pueden incrustar en la definición del cuadro de diálogo; separación de responsabilidades.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Manejo de eventos:</p>
+   <td><p>Gestión de eventos:</p>
     <ul>
-     <li>Las utilidades de cuadro de diálogo hacen referencia directa al código Javascript.</li>
+     <li>Los widgets de cuadro de diálogo hacen referencia directamente al código JavaScript.</li>
     </ul> </td>
-   <td><p>Manejo de eventos:</p>
+   <td><p>Gestión de eventos:</p>
     <ul>
      <li>Javascript observa eventos de diálogo.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Representación realizada por el cliente:
+   <td>Renderización realizada por el cliente:
     <ul>
-     <li>El cliente crea dinámicamente los componentes de la interfaz de usuario.</li>
+     <li>El cliente crea de forma dinámica los componentes de la interfaz de usuario.</li>
      <li>El cliente solicita la definición del componente (como JSON) desde el servidor.</li>
     </ul> </td>
-   <td>Representación realizada por el servidor:
+   <td>Renderización realizada por el servidor:
     <ul>
      <li>El cliente solicita páginas junto con la IU relacionada.</li>
-     <li>El servidor envía (push) la interfaz de usuario como documentos HTML; uso de componentes de Coral UI.<br /> </li>
+     <li>El servidor envía (push) la interfaz de usuario como documentos HTML; uso de los componentes de Coral UI.<br /> </li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-En otras palabras, la migración de una sección de la interfaz de usuario de la IU clásica a la IU táctil significa transferir una *utilidad ExtJS* a un *componente Sling*. Para facilitar esto, la IU táctil se basa en el marco de la interfaz de usuario Granite, que ya proporciona algunos componentes Sling para la interfaz de usuario (denominados componentes de la interfaz de usuario Granite).
+En otras palabras, migrar una sección de la interfaz de usuario de la IU clásica a la táctil significa transferir un *widget ExtJS* a un *componente Sling*. Para facilitar esto, la IU táctil se basa en el marco de la interfaz de usuario de Granite, que ya proporciona algunos componentes de Sling para la interfaz de usuario (denominados componentes de Granite UI).
 
-Antes de realizar el inicio, compruebe el estado y las recomendaciones relacionadas:
+Antes de comenzar, compruebe el estado y las recomendaciones relacionadas:
 
-* [Estado de las funciones de la IU táctil](/help/release-notes/touch-ui-features-status.md)
+* [Estado de las funciones de la interfaz de usuario táctil](/help/release-notes/touch-ui-features-status.md)
 * [Interfaz de usuario de Recommendations para clientes](/help/sites-deploying/ui-recommendations.md)
 
 Los conceptos básicos del desarrollo de la IU táctil proporcionan una base sólida:
 
 * [Conceptos de la IU táctil AEM](/help/sites-developing/touch-ui-concepts.md)
-* [Estructura de la IU táctil AEM](/help/sites-developing/touch-ui-structure.md)
+* [Estructura de la interfaz de usuario táctil AEM](/help/sites-developing/touch-ui-structure.md)
 
 ## Migración de la creación de páginas {#migrating-page-authoring}
 
-Los diálogos son un factor importante a la hora de migrar los componentes:
+Los cuadros de diálogo son un factor importante a la hora de migrar los componentes:
 
-* [Desarrollo de componentes](/help/sites-developing/developing-components.md)  AEM (con la IU táctil)
+* [Desarrollo de componentes AEM](/help/sites-developing/developing-components.md)  (con la IU táctil)
 * [Migración desde un componente clásico](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [Herramienta](/help/sites-developing/dialog-conversion.md)  de conversión de cuadro de diálogo: para ayudarle a convertir los cuadros de diálogo de los componentes clásicos de la interfaz de usuario a la IU táctil
+* [AEM herramientas de modernización](/help/sites-developing/modernization-tools.md) : para ayudarle a convertir los cuadros de diálogo de los componentes de la IU clásica a la IU táctil
 
-   * Hay una capa de compatibilidad en la IU táctil para abrir un cuadro de diálogo de IU clásica en un &quot;ajustador de IU táctil&quot;, pero esta función tiene una funcionalidad limitada y no se recomienda para el largo plazo.
+   * Existe una capa de compatibilidad en la IU táctil para abrir un cuadro de diálogo de IU clásica dentro de un &quot;envoltorio de IU táctil&quot;, pero esta función tiene una funcionalidad limitada y no se recomienda a largo plazo.
 
-* [Personalización de los campos del cuadro de diálogo en la IU táctil](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Personalización de campos de cuadro de diálogo en la IU táctil](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Creación de un nuevo componente de campo de interfaz de usuario de Granite](/help/sites-developing/granite-ui-component.md)
-* [Personalización de la creación](/help/sites-developing/customizing-page-authoring-touch.md)  de páginas (con la IU táctil)
+* [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)  (con la IU táctil)
 
 ## Migración de consolas {#migrating-consoles}
 
@@ -135,7 +135,7 @@ También puede personalizar las consolas:
 
 ## Consideraciones relacionadas {#related-considerations}
 
-Aunque no están directamente relacionados con una migración a la IU táctil, hay problemas relacionados que vale la pena tener en cuenta al mismo tiempo, ya que también son una práctica recomendada:
+Aunque no está directamente relacionado con la migración a la interfaz de usuario táctil, hay problemas relacionados que vale la pena tener en cuenta al mismo tiempo, ya que también son una práctica recomendada:
 
 * [Plantillas](/help/sites-developing/templates.md) : plantillas  [editables](/help/sites-developing/page-templates-editable.md)
 * [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
@@ -143,20 +143,20 @@ Aunque no están directamente relacionados con una migración a la IU táctil, h
 
 >[!NOTE]
 >
->Consulte también [Desarrollo: optimizaciones](/help/sites-developing/best-practices.md).
+>Consulte también [Desarrollo: prácticas recomendadas](/help/sites-developing/best-practices.md).
 
 ## Recursos adicionales {#further-resources}
 
 Para obtener información completa sobre el desarrollo de AEM, consulte la recopilación de recursos en:
 
-* [Desarrollo de la guía del usuario](/help/sites-developing/home.md)
-* [Documentación de la interfaz de usuario de Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [AEM 6.5 Sitios, Tutorials y videos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
+* [Guía del usuario sobre desarrollo](/help/sites-developing/home.md)
+* [Documentación de Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Tutorials y vídeos de AEM 6.5 Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
 * [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/sites-developing/getting-started.md)
-* [Gemas AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
+* [AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
 * [Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
 >
->AEM herramientas de modernización son un esfuerzo de la comunidad y no están soportadas ni garantizadas por el Adobe.
+>AEM herramientas de modernización son un esfuerzo de la comunidad y no son compatibles ni están garantizadas por el Adobe.
 
