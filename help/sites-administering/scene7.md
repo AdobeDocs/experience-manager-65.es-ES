@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: ef975961ddcd6910b5fba2dea7e9302921f45055
+source-git-commit: d700510efb340598a7931647164e22d574884569
 workflow-type: tm+mt
-source-wordcount: '5511'
+source-wordcount: '5517'
 ht-degree: 1%
 
 ---
@@ -351,7 +351,7 @@ Para configurar el Experience Manager para que pueda publicar recursos en Dynami
 
 Habilite el Receptor de represas de Adobe CQ Dynamic Media Classic, que está deshabilitado de forma predeterminada.
 
-Para habilitarlo:
+Para habilitar el Receptor de represas de Adobe CQ Dynamic Media Classic:
 
 1. Pulse el icono [!UICONTROL Herramientas] y, a continuación, vaya a **[!UICONTROL Operaciones > Consola web]**. Se abre la consola web.
 1. Vaya a **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** y seleccione la casilla **[!UICONTROL Enabled]**.
@@ -525,7 +525,7 @@ Para configurar la configuración predeterminada:
 
 Puede configurar la carpeta a la que se cargan los recursos en Dynamic Media Classic cuando el recurso no está en la carpeta de destino de CQ. Consulte Publicación de recursos desde fuera de la carpeta de destino de CQ.
 
-Para configurar la carpeta ad hoc:
+Para configurar la carpeta Ad Hoc:
 
 1. Pulse el icono del Experience Manager y vaya a **[!UICONTROL Deployment > Cloud Services]**, pulse **[!UICONTROL Dynamic Media Classic]** y seleccione la configuración en Dynamic Media Classic.
 1. Para abrir la configuración, pulse **[!UICONTROL Editar]**.
