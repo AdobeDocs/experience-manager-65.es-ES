@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Búsqueda, metadatos
 role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: fd283b840830bef613689f81cf753e226fb834d7
 workflow-type: tm+mt
-source-wordcount: '5720'
+source-wordcount: '5577'
 ht-degree: 5%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 5%
 
 [!DNL Experience Manager Assets] admite los siguientes casos de uso y en este artículo se describen el uso, los conceptos, las configuraciones, las limitaciones y la resolución de problemas de estos casos de uso.
 
-| Buscar recursos | Configuración y administración | Trabajar con resultados de búsqueda |
+| Buscar recursos | Configuración y administración de la funcionalidad de búsqueda | Trabajar con resultados de búsqueda |
 |---|---|---|
 | [Búsquedas básicas](#searchbasics) | [Índice de búsqueda](#searchindex) | [Ordenar resultados](#sort) |
 | [Explicación de la interfaz de usuario de búsqueda](#searchui) | [Búsqueda visual o de similitud](#configvisualsearch) | [Comprobar propiedades y metadatos de un recurso](#checkinfo) |
 | [Sugerencias de búsqueda](#searchsuggestions) | [Metadatos obligatorios](#mandatorymetadata) | [Descargar](#download) |
 | [Comprender los resultados y el comportamiento de la búsqueda](#searchbehavior) | [Modificar facetas de búsqueda](#searchfacets) | [Actualizaciones masivas de metadatos](#metadataupdates) |
 | [Buscar clasificación y aumento](#searchrank) | [Extracción de texto](#extracttextupload) | [Colecciones inteligentes](#collections) |
-| [Búsqueda avanzada: filtrado y ámbito de búsqueda](#scope) | [Predicados personalizados](#custompredicates) | [Comprender y solucionar problemas relacionados con resultados inesperados](#unexpectedresults) |
-| [Buscar desde otras soluciones y aplicaciones](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[aplicación de escritorio de Experience Manager](#desktopapp)</li><li>[Imágenes de Adobe Stock](#adobestock)</li><li>[Recursos de Dynamic Media](#dynamicmedia)</li></ul> |  |  |
+| [Búsqueda avanzada: filtrado y ámbito de búsqueda](#scope) | [Predicados personalizados](#custompredicates) | [Comprender y solucionar problemas relacionados con resultados inesperados](#unexpected-results) |
+| [Buscar desde otras soluciones y aplicaciones](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[aplicación de escritorio de Experience Manager](#desktop-app)</li><li>[Imágenes de Adobe Stock](#adobe-stock)</li><li>[Recursos de Dynamic Media](#dynamic-media)</li></ul> |  |  |
 | [Selector de recursos](#assetpicker) |  |  |
 | [](#limitations) Limitaciones y  [sugerencias](#tips) |  |  |
 | [Ejemplos ilustrados](#samples) |  |  |
@@ -69,7 +69,7 @@ Para encontrar rápidamente los recursos relevantes, la interfaz enriquecida pro
 
 Cuando los resultados son muchos recursos, [!DNL Experience Manager] muestra los primeros 100 en la vista de tarjeta y los 200 en la vista de lista. A medida que los usuarios se desplazan, se cargan más recursos. Esto es para mejorar el rendimiento. Vea una demostración en vídeo del [número de recursos mostrados](https://www.youtube.com/watch?v=LcrGPDLDf4o).
 
-A veces, es posible que vea algunos recursos inesperados en los resultados de búsqueda. Para obtener más información, consulte [resultados inesperados](#troubleshoot-unexpected-search-results-and-issues).
+A veces, es posible que vea algunos recursos inesperados en los resultados de búsqueda. Para obtener más información, consulte [resultados inesperados](#unexpected-results).
 
 [!DNL Experience Manager] puede buscar muchos formatos de archivo y los filtros de búsqueda se pueden personalizar para adaptarlos a sus necesidades comerciales. Póngase en contacto con su administrador para comprender qué opciones de búsqueda están disponibles para su repositorio de DAM y qué restricciones tiene su cuenta.
 
@@ -82,11 +82,11 @@ De forma predeterminada, la búsqueda [!DNL Experience Manager] combina los tér
 * `woman-running`
 
 Sin embargo, la consulta `woman -running` devuelve activos sin `running` en sus metadatos.
-El uso de etiquetas inteligentes agrega una cláusula `OR` adicional para encontrar cualquiera de los términos de búsqueda como las etiquetas inteligentes aplicadas. Un recurso etiquetado con `woman` o `running` mediante etiquetas inteligentes también aparece en una consulta de búsqueda de este tipo. Así que los resultados de la búsqueda son una combinación de:
+El uso de etiquetas inteligentes agrega una cláusula `OR` adicional para encontrar cualquiera de los términos de búsqueda como las etiquetas inteligentes aplicadas. En una consulta de búsqueda también aparece un recurso etiquetado con `woman` o `running` mediante etiquetas inteligentes. Así que los resultados de la búsqueda son una combinación de:
 
 * Recursos con palabras clave `woman` y `running` en los metadatos (comportamiento predeterminado).
 
-* Recursos etiquetados de forma inteligente con cualquiera de las palabras clave (comportamiento de etiquetas inteligentes).
+* Recursos inteligentes etiquetados con cualquiera de las palabras clave (comportamiento de etiquetas inteligentes).
 
 ### Buscar sugerencias mientras escribe {#searchsuggestions}
 
@@ -144,7 +144,7 @@ Para buscar imágenes que sean visualmente similares a una imagen seleccionada p
 
 *Figura: Busque imágenes similares con la opción en la vista de tarjeta.*
 
-### Imágenes de Adobe Stock {#adobestock}
+### Imágenes de Adobe Stock {#adobe-stock}
 
 Desde la interfaz de usuario [!DNL Experience Manager], los usuarios pueden buscar [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) y obtener una licencia para los recursos necesarios. Agregue `Location: Adobe Stock` en la barra Omnisearch. También puede utilizar el panel Filtros para buscar todos los recursos con licencia o sin licencia, o buscar un recurso específico mediante el número de archivo de Adobe Stock.
 
@@ -152,35 +152,38 @@ Desde la interfaz de usuario [!DNL Experience Manager], los usuarios pueden busc
 
 Puede filtrar imágenes de Dynamic Media seleccionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** en el panel **[!UICONTROL Filtros]**. Filtra y muestra recursos como conjuntos de imágenes, carruseles, conjuntos de medios mixtos y conjuntos de giros.
 
-### Buscar utilizando valores específicos en campos de metadatos {#gqlsearch}
+### Búsqueda GQL que utiliza valores específicos en campos de metadatos {#gql-search}
 
-Puede buscar recursos en función de los valores exactos de campos de metadatos específicos como, por ejemplo, título, descripción y autor. La función de búsqueda de texto completo de GQL solo recupera los recursos cuyo valor de metadatos coincide exactamente con la consulta de búsqueda. Los nombres de las propiedades (por ejemplo, autor, título, etc.) y los valores distinguen entre mayúsculas y minúsculas.
+Puede buscar recursos en función de los valores exactos de los campos de metadatos, como el título, la descripción y el creador. La función de búsqueda de texto completo de GQL solo recupera los recursos cuyo valor de metadatos coincide exactamente con la consulta de búsqueda. Los nombres de las propiedades (Creador, Título, etc.) y los valores distinguen entre mayúsculas y minúsculas.
 
 | Campo de metadatos | Valor y uso de faceta |
-| ----------------------------------------- | --------------------------------------- |
-| Título | `title:John` |
-| Creador | `creator:John` |
-| Lugar de residencia | `location:NA` |
-| Descripción | `description:"Sample Image"` |
-| Herramienta Creador | `creatortool:"Adobe Photoshop CC 2020"` |
-| Propietario del copyright | `copyrightowner:"Adobe Systems"` |
-| Colaborador | `contributor:John` |
-| Condiciones de uso | `usageterms:"CopyRights Reserved"` |
-| Creado | `created`:AAAA-MM-DDTHH |
-| Fecha de caducidad | `expires`:AAAA-MM-DDTHH |
-| Tiempo de activación | `ontime`:AAAA-MM-DDTHH |
-| Tiempo de inactividad | `offtime`:AAAA-MM-DDTHH |
-| Intervalo de tiempo (caduca dateontime, offtime) | `facet field`: límite inferior..Upperbound |
+|---|---|
+| Título | title:John |
+| Creador | creador:John |
+| Lugar de residencia | ubicación:NA |
+| Descripción | description: &quot;Imagen de muestra&quot; |
+| Herramienta Creador | creatortool: &quot;Adobe Photoshop CC 2015&quot; |
+| Propietario del copyright | copyright:&quot;Adobe Systems&quot; |
+| Colaborador | colaborador:John |
+| Condiciones de uso | usageterms:&quot;CopyRights Reserved&quot; |
+| Creado | created:AAAA-MM-DDTHH |
+| Fecha de caducidad | caduca:AAAA-MM-DTHH |
+| Tiempo de activación | ontime:AAAA-MM-DDTHH |
+| Tiempo de inactividad | offtime:AAAA-MM-DDTHH |
+| Intervalo de tiempo (caduca dateontime, offtime) | campo de faceta : límite inferior..Upperbound |
 | Ruta | /content/dam/&lt;nombre de carpeta> |
-| Título del PDF | `pdftitle`: &quot;Documento de Adobe&quot; |
-| Asunto | `subject:"Training"` |
-| Etiquetas | `tags:"Location And Travel"` |
-| Tipo | `type:"image\png"` |
-| Anchura de la imagen | `width`: límite inferior..Upperbound |
-| Altura de la imagen | `height`: límite inferior..Upperbound |
-| Person | `person:John` |
+| Título del PDF | pdftitle:&quot;Documento de Adobe&quot; |
+| Asunto | asunto: &quot;Formación&quot; |
+| Etiquetas | etiquetas: &quot;Ubicación Y Viaje&quot; |
+| Tipo | tipo: &quot;image\png&quot; |
+| Anchura de la imagen | ancho:límite inferior..Upperbound |
+| Altura de la imagen | height:lowerbound..Upperbound |
+| Person | person:John |
 
 Las propiedades `path`, `limit`, `size` y `orderby` no se pueden combinar con el operador `OR` con ninguna otra propiedad.
+
+<!-- TBD: Where are the limit, size, orderby properties defined?
+-->
 
 La palabra clave de una propiedad generada por el usuario es su etiqueta de campo en el editor de propiedades en minúsculas, con espacios eliminados.
 
@@ -194,31 +197,31 @@ A continuación se muestran algunos ejemplos de formatos de búsqueda para consu
 * Para mostrar recursos con un valor de propiedad que contenga una cadena específica (por ejemplo: título = Sala de reuniones de Basilea): `title:*Meeting*`
 * Para mostrar los recursos que contienen una cadena concreta y tienen un valor de propiedad específico (por ejemplo: busque Adobe de cadena en los recursos que tengan title=John Doe): `*Adobe* title:"John Doe"`
 
-## Buscar recursos de otras [!DNL Experience Manager] ofertas o interfaces {#beyondomnisearch}
+## Buscar recursos de otras [!DNL Experience Manager] ofertas o interfaces {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] conecta el repositorio de DAM con varias otras  [!DNL Experience Manager] soluciones para proporcionar un acceso más rápido a los recursos digitales y optimizar los flujos de trabajo creativos. Cualquier detección de recursos comienza con la exploración o la búsqueda. El comportamiento de búsqueda sigue siendo el mismo en las distintas superficies y soluciones. Algunos métodos de búsqueda cambian a medida que la audiencia de destino, los casos de uso y la interfaz de usuario varían en las soluciones [!DNL Experience Manager]. Los métodos específicos se documentan para las soluciones individuales en los vínculos siguientes. Los consejos y comportamientos universalmente aplicables están documentados en este artículo.
 
 ### Buscar recursos desde el panel Vínculo de recursos de Adobe {#aal}
 
-Al utilizar Adobe Asset Link, los profesionales creativos ahora pueden acceder al contenido almacenado en [!DNL Experience Manager Assets], sin salir de las aplicaciones de Adobe Creative Cloud compatibles. Los creativos pueden examinar, buscar, extraer y registrar recursos sin problemas mediante el panel en la aplicación del [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] y [!DNL Adobe InDesign]. Asset Link también permite a los usuarios buscar resultados visualmente similares. Los resultados de visualización de la búsqueda visual utilizan algoritmos de aprendizaje automático de Adobe Sensei para ayudar a los usuarios a encontrar imágenes estéticas similares. Consulte [Buscar y examinar recursos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante el vínculo de recursos de Adobe.
+Al utilizar Adobe Asset Link, los profesionales creativos ahora pueden acceder al contenido almacenado en [!DNL Experience Manager Assets], sin salir de las aplicaciones de Adobe Creative Cloud compatibles. Los creativos pueden examinar, buscar, extraer y registrar recursos sin problemas mediante el panel en la aplicación de las aplicaciones [!DNL Adobe Creative Cloud]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] y [!DNL Adobe InDesign]. Asset Link también permite a los usuarios buscar resultados visualmente similares. Los resultados de visualización de la búsqueda visual utilizan algoritmos de aprendizaje automático de Adobe Sensei para ayudar a los usuarios a encontrar imágenes estéticas similares. Consulte [Buscar y examinar recursos](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mediante el vínculo de recursos de Adobe.
 
-### Buscar recursos en la aplicación de escritorio [!DNL Experience Manager] {#desktopapp}
+### Buscar recursos en la aplicación de escritorio [!DNL Experience Manager] {#desktop-app}
 
 Los profesionales creativos utilizan la aplicación de escritorio para que el [!DNL Experience Manager Assets] sea fácil de buscar y esté disponible en su escritorio local (Win o Mac). Los elementos creativos pueden revelar fácilmente los recursos deseados en el Buscador de Mac o en el Explorador de Windows, abrirlos en aplicaciones de escritorio y cambiarlos localmente. Los cambios se guardan de nuevo en [!DNL Experience Manager] con una nueva versión creada en el repositorio. La aplicación admite búsquedas básicas mediante una o más palabras clave, `*` y `?` comodines y el operador `AND`. Consulte [examinar, buscar y previsualizar recursos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en la aplicación de escritorio.
 
-### Buscar recursos en [!DNL Brand Portal] {#brandportal}
+### Buscar recursos en [!DNL Brand Portal] {#brand-portal}
 
 Los usuarios y especialistas en marketing de la línea de negocios utilizan Brand Portal para compartir de forma eficaz y segura los recursos digitales aprobados con sus equipos internos, socios y distribuidores ampliados. Consulte [Buscar recursos en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
-### Buscar [!DNL Adobe Stock] imágenes {#adobestock-1}
+### Buscar [!DNL Adobe Stock] imágenes {#adobe-stock1}
 
-Desde la interfaz de usuario [!DNL Experience Manager], los usuarios pueden buscar recursos de Adobe Stock y obtener licencias para los recursos necesarios. Agregue `Location: Adobe Stock` en el campo Omnisearch . También puede utilizar el panel **[!UICONTROL Filtros]** para encontrar todos los recursos con licencia o sin licencia, o buscar un recurso específico mediante el número de archivo de Adobe Stock. Consulte [administrar imágenes de Adobe Stock en Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Desde la interfaz de usuario [!DNL Experience Manager], los usuarios pueden buscar recursos de Adobe Stock y obtener licencias para los recursos necesarios. Agregue `Location: Adobe Stock` en el campo Omnisearch . También puede utilizar el panel **[!UICONTROL Filtros]** para encontrar todos los recursos con licencia o sin licencia, o buscar un recurso específico mediante el número de archivo de Adobe Stock. Consulte [administrar [!DNL Adobe Stock] imágenes en [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Buscar recursos de Dynamic Media {#dynamicmedia}
+### Buscar [!DNL Dynamic Media] activos {#dynamic-media}
 
 Puede filtrar imágenes de Dynamic Media seleccionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** en el panel **[!UICONTROL Filtros]**. Filtra y muestra recursos como conjuntos de imágenes, carruseles, conjuntos de medios mixtos y conjuntos de giros. Durante la creación de páginas web, los autores pueden buscar conjuntos desde el Buscador de contenido. Los filtros para conjuntos están disponibles en un menú emergente.
 
-### Buscar recursos en el Buscador de contenido al crear páginas web {#contentfinder}
+### Buscar recursos en el Buscador de contenido al crear páginas web {#content-finder}
 
 Los autores pueden utilizar el buscador de contenido para buscar en el repositorio de DAM los recursos relevantes y utilizar los recursos en las páginas web que crean. Los autores también pueden utilizar la funcionalidad Recursos conectados para buscar recursos disponibles en una implementación remota [!DNL Experience Manager]. Los autores pueden utilizar estos recursos en páginas web en una implementación local [!DNL Experience Manager]. Consulte [usar recursos remotos](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
@@ -226,13 +229,13 @@ Los autores pueden utilizar el buscador de contenido para buscar en el repositor
 
 [!DNL Experience Manager] la capacidad de búsqueda admite la búsqueda de colecciones y la búsqueda de recursos dentro de una colección. Consulte [buscar colecciones](/help/assets/manage-collections.md).
 
-## Selector de recursos {#assetpicker}
+## Selector de recursos {#asset-picker}
 
 >[!NOTE]
 >
 >El selector de recursos se llamaba [selector de recursos](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) en versiones anteriores de [!DNL Adobe Experience Manager].
 
-El selector de recursos le permite examinar, buscar y filtrar recursos DAM de una forma especial. Puede iniciar el selector de recursos en la instancia [!DNL Experience Manager] mediante `https://[aem-server]:[port]/aem/assetpicker.html`. Esta URL abre el selector de recursos en modo Examinar. Utilice los parámetros de solicitud admitidos como sufijo, como `mode` (selección única o múltiple) o `viewmode` con `assettype` (imagen, vídeo, texto) y `mimetype`. Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda en particular y permanecen intactos durante toda la selección. También puede recuperar los metadatos de los recursos que seleccione mediante esta funcionalidad.
+El selector de recursos permite buscar, filtrar y examinar los recursos DAM de una forma especial. El selector de recursos está disponible en `https://[aem_server]:[port]/aem/assetpicker.html`. Puede recuperar los metadatos de los recursos que seleccione mediante el selector de recursos. Puede iniciarlo con parámetros de solicitud admitidos, como el tipo de recurso (imagen, vídeo, texto) y el modo de selección (selección única o múltiple). Estos parámetros establecen el contexto del selector de recursos para una instancia de búsqueda en particular y permanecen intactos durante toda la selección.
 
 El selector de recursos utiliza el mensaje HTML5 `Window.postMessage` para enviar datos del recurso seleccionado al destinatario. Solo funciona en el modo de exploración y solo con la página de resultados de Omnisearch.
 
@@ -240,13 +243,13 @@ Pase los siguientes parámetros de solicitud en una dirección URL para iniciar 
 
 | Nombre | Valores | Ejemplo | Función |
 |---|---|---|---|
-| sufijo de recurso (B) | Ruta de carpeta como sufijo de recurso en la URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Para iniciar el selector de recursos con una carpeta concreta seleccionada, por ejemplo con la carpeta `/content/dam/we-retail/en/activities` seleccionada, la dirección URL debe tener el siguiente formato: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Si necesita seleccionar una carpeta concreta cuando se inicia el selector de recursos, pasarla como sufijo de recurso. |
-| `mode` | único, múltiple | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | En el modo múltiple, puede seleccionar varios recursos simultáneamente mediante el selector de recursos. |
+| sufijo de recurso (B) | Ruta de carpeta como sufijo de recurso en la URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Para iniciar el selector de recursos con una carpeta concreta seleccionada, por ejemplo con la carpeta `/content/dam/we-retail/en/activities` seleccionada, la dirección URL debe tener el siguiente formato: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Si necesita seleccionar una carpeta concreta cuando se inicia el selector de recursos, pasarla como sufijo de recurso. |
+| `mode` | único, múltiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | En el modo múltiple, puede seleccionar varios recursos simultáneamente mediante el selector de recursos. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilice estos parámetros para abrir el selector de recursos como cuadro de diálogo de Granite. Esta opción solo es aplicable cuando se inicia el selector de recursos a través de Granite Path Field y se configura como pickerSrc URL. |
-| `root` | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | Utilice esta opción para especificar la carpeta raíz del selector de recursos. En este caso, el selector de recursos permite seleccionar solo recursos secundarios (directos/indirectos) en la carpeta raíz. |
-| `viewmode` | búsqueda |  | Para iniciar el selector de recursos en modo de búsqueda, con parámetros de tipo de recurso y tipo de mimetype. |
-| `assettype` | imágenes, documentos, multimedia, archivos. | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives)</li></ul> | Utilice la opción para filtrar los tipos de recursos según el valor proporcionado. |
-| `mimetype` | Tipo MIME (`/jcr:content/metadata/dc:format`) de un recurso (también se admite el comodín). | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png)</li></ul> | Utilícelo para filtrar recursos según el tipo MIME. |
+| `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Utilice esta opción para especificar la carpeta raíz del selector de recursos. En este caso, el selector de recursos permite seleccionar solo recursos secundarios (directos/indirectos) en la carpeta raíz. |
+| `viewmode` | búsqueda |  | Para iniciar el selector de recursos en modo de búsqueda, con los parámetros `assettype` y `mimetype` . |
+| `assettype` | Imágenes, documentos, multimedia, archivos. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Utilice la opción para filtrar los tipos de recursos según el valor proporcionado. |
+| `mimetype` | Tipo MIME (`/jcr:content/metadata/dc:format`) de un recurso (también se admite el comodín). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Utilícelo para filtrar recursos según el tipo MIME. |
 
 Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server]:[port]/aem/assetpicker`. Vaya a la carpeta deseada y seleccione uno o varios recursos. Como alternativa, busque el recurso deseado en el cuadro Omnisearch , aplique el filtro según sea necesario y, a continuación, selecciónelo.
 
@@ -262,6 +265,7 @@ La capacidad de búsqueda en [!DNL Experience Manager Assets] tiene las siguient
 * [!DNL Experience Manager] puede seguir mostrando el término de búsqueda después de seleccionar las propiedades de un recurso en los resultados de búsqueda y luego cancelar la búsqueda.  <!-- (CQ-4273540) -->
 * Al buscar carpetas o archivos y carpetas, los resultados de la búsqueda no se pueden ordenar según ningún parámetro.
 * Si selecciona `Return` sin escribir en la barra de Omnisearch, [!DNL Experience Manager] devuelve una lista de sólo archivos y no carpetas. Si busca carpetas específicamente sin usar una palabra clave, [!DNL Experience Manager] no devuelve ningún resultado.
+* Puede realizar búsquedas de texto completo en carpetas. Especifique un término de búsqueda para que funcione la búsqueda.
 
 La búsqueda visual o la búsqueda por similitudes tienen las siguientes limitaciones:
 
@@ -335,7 +339,7 @@ Para excluir recursos específicos de los resultados de búsqueda, utilice la pr
 
 ### Búsqueda visual o de similitud {#configvisualsearch}
 
-La búsqueda visual utiliza el etiquetado inteligente y requiere [!DNL Experience Manager] 6.5.2.0 o posterior. Después de configurar la funcionalidad de etiquetado inteligente, siga estos pasos:
+La búsqueda visual utiliza etiquetas inteligentes. Después de configurar la funcionalidad de etiquetado inteligente, siga estos pasos.
 
 1. En [!DNL Experience Manager] CRXDE, en el nodo `/oak:index/lucene`, agregue las siguientes propiedades y valores y guarde los cambios.
 
@@ -355,7 +359,7 @@ La búsqueda visual utiliza el etiquetado inteligente y requiere [!DNL Experienc
    Guarde los cambios.
 
 1. Acceda a `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` y añada la propiedad `similarityTags` del tipo `Boolean` con el valor `true`.
-1. Aplique etiquetas inteligentes a los recursos de su repositorio [!DNL Experience Manager].
+1. Aplique etiquetas inteligentes a los recursos de su repositorio [!DNL Experience Manager]. Consulte [cómo configurar las etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
 1. En CRXDE, en el nodo `/oak-index/damAssetLucene`, establezca la propiedad `reindex` en `true`. Guarde los cambios.
 1. (Opcional) Si tiene un formulario de búsqueda personalizado, copie el nodo `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` en `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Guarde los cambios.
 
@@ -413,9 +417,9 @@ Puede hacer lo siguiente con los recursos que ha buscado en [!DNL Experience Man
 
 ### Ordenar resultados de búsqueda {#sort}
 
-Ordene los resultados de búsqueda para descubrir los recursos necesarios más rápido. Solo puede ordenar los resultados de búsqueda al seleccionar **[[!UICONTROL Archivos]](#searchui)** en el panel **[!UICONTROL Filtros]**. [!DNL Assets] utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
+Ordene los resultados de búsqueda para descubrir los recursos necesarios más rápido. Puede ordenar los resultados de búsqueda en la vista de lista y solo cuando selecciona **[[!UICONTROL Archivos]](#searchui)** en el panel **[!UICONTROL Filtros]**. [!DNL Assets] utiliza la ordenación del lado del servidor para ordenar rápidamente todos los recursos (aunque sean muchos) de una carpeta o los resultados de una consulta de búsqueda. La ordenación del lado del servidor proporciona resultados más rápidos y precisos que la ordenación del lado del cliente.
 
-Puede ordenar los resultados de búsqueda del mismo modo que puede ordenar los recursos en cualquier carpeta. La ordenación funciona en estas columnas: Nombre, Título, Estado, Dimension, Tamaño, Clasificación, Uso, (Fecha) Creado, (Fecha) Modificado, (Fecha) Publicado, Flujo de trabajo y Desprotegido.
+En la vista de lista, puede ordenar los resultados de búsqueda del mismo modo que puede ordenar los recursos en cualquier carpeta. La ordenación funciona en estas columnas: Nombre, Título, Estado, Dimension, Tamaño, Clasificación, Uso, (Fecha) Creado, (Fecha) Modificado, (Fecha) Publicado, Flujo de trabajo y Desprotegido.
 
 Para ver las limitaciones de la funcionalidad de ordenación, consulte [limitaciones](#limitations).
 
@@ -450,7 +454,7 @@ Una colección es un conjunto ordenado de recursos que pueden incluir recursos d
 
 Puede crear colecciones inteligentes basadas en los criterios de búsqueda. En el panel **[!UICONTROL Filtros]**, seleccione **[!UICONTROL Archivos]** y haga clic en **[!UICONTROL Guardar colección inteligente]**. Consulte [Gestión de colecciones](/help/assets/manage-collections.md).
 
-## Resultados y problemas de búsqueda inesperados {#unexpectedresults}
+## Resultados y problemas de búsqueda inesperados {#unexpected-results}
 
 | Error, problemas, síntomas | Motivo posible | Posible solución o comprensión del problema |
 |---|---|---|
