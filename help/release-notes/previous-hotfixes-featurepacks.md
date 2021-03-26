@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] Notas de la versión anterior de Service
 description: Notas de la versión de los Service Packs [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 131e564e4ed50c4f08412ba39c62f15b9c362b8c
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '17898'
+source-wordcount: '17912'
 ht-degree: 17%
 
 ---
@@ -36,6 +36,8 @@ Las funciones y mejoras clave introducidas en [!DNL Adobe Experience Manager] 6.
    * Conversión de un formulario PDF en un formulario adaptable mediante [!DNL Automated Forms Conversion service].
 
 * Soporte para [!DNL Microsoft SQL Server] 2019 en [!DNL Experience Manager Forms].
+
+* Soporte para grupos de disponibilidad [!DNL Microsoft] SQL Server 2016 Always On para alta disponibilidad para implementaciones OSGi.
 
 * El repositorio integrado (Apache Jackrabbit Oak) se ha actualizado a la versión 1.22.5.
 
@@ -825,7 +827,7 @@ La siguiente es la lista de correcciones que se proporcionan en la versión [!DN
 
 * Los lectores de pantalla ya no anuncian la información de estructura de la tabla (como la fila 1, celda 1, tabla) del cuadro de diálogo [!UICONTROL Compartir vínculo] cuando se abre el cuadro de diálogo (NPR-33268).
 
-* Los lectores de pantalla ahora anuncian correctamente el propósito de varios elementos de cuadro combinado (como el campo Ruta y la opción para abrir el cuadro de diálogo Selección en la pestaña Básico de las Propiedades del recurso) (NPR-33235).
+* Los lectores de pantalla ahora anuncian correctamente el propósito de varios elementos de cuadro combinado (como el campo Ruta y la opción de abrir el cuadro de diálogo Selección en la pestaña Básico de las Propiedades del recurso) (NPR-33235).
 
 * La información de que las filas de la tabla de vista de lista están seleccionables ahora se comunica a los usuarios del lector de pantalla cuando el foco del teclado está en ellas. Cuando un puntero se sitúa sobre las filas, los lectores de pantalla anuncian la información (NPR-33234).
 
@@ -887,7 +889,7 @@ La siguiente es la lista de correcciones que se proporcionan en la versión [!DN
 
 * Cuando se utiliza la ventana emergente en cascada en los esquemas de metadatos, al seleccionar y guardar una opción desplegable que contiene un apóstrofo (desde la lista desplegable secundaria), la opción de apóstrofo seleccionada desaparece después de volver a abrir el recurso [!UICONTROL Propiedades] (NPR-32649).
 
-* [!UICONTROL Asset Insights Sincroniza ] Jobstops y falla si encuentra entradas no válidas (en el lado de Analytics) en lugar de pasar a la siguiente entrada (NPR-32674).
+* [!UICONTROL Asset Insights Sincronice ] Jobstops y falla si encuentra entradas no válidas (en el lado de Analytics) en lugar de pasar a la siguiente entrada (NPR-32674).
 
 * Gyroscope no funciona porque los sensores de movimiento están desactivados de forma predeterminada en los navegadores móviles en el visor panorámico (CQ-4272937).
 
