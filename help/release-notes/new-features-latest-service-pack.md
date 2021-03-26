@@ -4,10 +4,10 @@ description: Novedades de [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52fc643c30babab68bcf122eb3d91da5ce37a24
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3041'
+ht-degree: 1%
 
 ---
 
@@ -232,6 +232,10 @@ El recorte inteligente para vídeo (una función opcional disponible en Perfiles
 * Validación de los valores de campo en el servidor al enviar un formulario adaptable.
 
 * Conversión de un formulario PDF en un formulario adaptable mediante [!DNL Automated Forms Conversion service].
+
+#### Compatibilidad con grupos de disponibilidad Always On de Microsoft SQL Server 2016 para alta disponibilidad (6.5.7.0) {#always-on-availability-groups}
+
+[!DNL Experience Manager Forms] ahora es compatible con los grupos de disponibilidad Always On de  [!DNL Microsoft] SQL Server 2016 para una alta disponibilidad en implementaciones de OSGi.
 
 #### Modelo de datos de formulario Configuración del cliente HTTP para optimizar el rendimiento (6.5.7.0) {#fdm-http-client-config}
 
