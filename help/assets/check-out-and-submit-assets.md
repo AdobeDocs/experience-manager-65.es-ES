@@ -1,12 +1,12 @@
 ---
-title: Insertar y extraer recursos para editarlos
+title: Insertar y extraer archivos en [!DNL Assets]
 description: Obtenga información sobre cómo extraer recursos para editarlos y volver a protegerlos una vez completados los cambios.
 contentOwner: AG
 role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: eb87d77e1366786e8574f84590dfe9a3303efda0
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,7 @@ Esta función ayuda a evitar que otros usuarios anulen los cambios realizados po
 ## Consulte los recursos {#checking-out-assets}
 
 1. En la interfaz de usuario [!DNL Assets], seleccione el recurso que desee extraer. También puede seleccionar varios recursos para desproteger.
-1. En la barra de herramientas, haga clic en **[!UICONTROL Cierre de compra]**.
-La opción **[!UICONTROL Checkout]** cambia a **[!UICONTROL Checkin]**.
+1. En la barra de herramientas, haga clic en **[!UICONTROL Cierre de compra]**. La opción **[!UICONTROL Checkout]** cambia a **[!UICONTROL Checkin]**.
 Para verificar si otros usuarios pueden editar el recurso que ha desprotegido, inicie sesión como un usuario diferente. Aparece un símbolo de bloqueo en la miniatura del recurso que ha extraído.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -33,7 +32,7 @@ Para verificar si otros usuarios pueden editar el recurso que ha desprotegido, i
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Puede hacer clic en **[!UICONTROL Ver propiedades]** para editar los metadatos del recurso bloqueado.
+   Para editar los metadatos del recurso bloqueado, haga clic en **[!UICONTROL Ver propiedades]**.
 
 1. Haga clic en **[!UICONTROL Editar]** para abrir el recurso en modo de edición.
 
@@ -64,6 +63,6 @@ Los administradores pueden proteger los recursos que han extraído otros usuario
 
 >[!MORELIKETHIS]
 >
->* [Comprender la entrada y la salida en la aplicación de escritorio de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
->* [Tutorial de vídeo para comprender la protección y desprotección en Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [Comprender la entrada y la salida en la aplicación de  [!DNL Experience Manager] escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Tutorial de vídeo para comprender cómo registrar y registrar [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 
