@@ -3,10 +3,11 @@ title: 'Prácticas recomendadas para monitorizar la implementación [!DNL Assets
 description: Prácticas recomendadas para monitorizar el entorno y el rendimiento de su implementación  [!DNL Adobe Experience Manager] después de implementarla.
 contentOwner: AG
 role: Administrador, Arquitecto
+feature: Administración de activos
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1672'
 ht-degree: 1%
 
 ---
