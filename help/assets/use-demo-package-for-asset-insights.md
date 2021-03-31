@@ -3,10 +3,11 @@ title: Uso del paquete de demostración para Asset Insights
 description: Utilice el paquete de demostración para permitir que Adobe Asset Insights capture datos de una página web y genere perspectivas para ella.
 contentOwner: AG
 role: Profesional empresarial, administrador
+feature: Información sobre Assets, Informes de Asset
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '167'
 ht-degree: 2%
 
 ---
