@@ -10,10 +10,10 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Formularios adaptables
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 7a3f54d90769708344e6751756b2a12ac6c962d7
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 0%
+source-wordcount: '2078'
+ht-degree: 1%
 
 ---
 
@@ -163,6 +163,24 @@ Los siguientes métodos abreviados del teclado están disponibles en AEM Forms.
 | Mover al panel anterior | Alt+Flecha izquierda |
 | Restablecer los datos rellenados en un formulario | Alt + R |
 | Enviar un formulario | Alt + S |
+
+Además, hay varias teclas de método abreviado de teclado disponibles para el componente **[!UICONTROL Selector de fecha]** en Forms adaptable. Para habilitar las teclas de método abreviado, pulse el componente **[!UICONTROL Selector de fecha]** y pulse ![Configurar](assets/configure-icon.svg) para abrir las propiedades. En la sección **[!UICONTROL Patrones]**, seleccione un patrón de visualización mediante las listas desplegables **[!UICONTROL Type]** y **[!UICONTROL Pattern]**. Guarde las propiedades para habilitar el uso de teclas de método abreviado para el componente **[!UICONTROL Selector de fecha]**.
+
+Las siguientes teclas de método abreviado de teclado están disponibles para el componente Selector de fecha en Forms adaptable:
+
+| Acción | Métodos abreviados del teclado |
+|---|---|
+| <ul><li>Mostrar las opciones del componente Selector de fecha cuando el tab focus resalta el icono de calendario</li><li>Suceso click cuando el tab focus resalte una opción</li> | Espacio o Entrar |
+| Ocultar las opciones del componente Selector de fecha | Esc |
+| <ul><li>Mueva el cursor hacia adelante por las opciones disponibles en el componente Selector de fecha .</li><li>Definir el enfoque de la pestaña en el icono del calendario cuando el campo de entrada de fecha está activo</li> | Ficha |
+| Mover el cursor hacia atrás a través de las opciones disponibles en el componente Selector de fecha | Mayús + Tab |
+| <ul><li>Mostrar las opciones del componente Selector de fecha cuando el tab focus resalta el campo de entrada de fecha</li><li>Mover el cursor hacia abajo en el calendario disponible en el componente Selector de fecha</li> | Flecha hacia abajo |
+| Mover el cursor hacia arriba en el calendario disponible en el componente Selector de fecha | Flecha hacia arriba |
+| Mover el cursor hacia atrás en el calendario disponible en el componente Selector de fecha | Flecha izquierda |
+| Mover el cursor hacia adelante en el calendario disponible en el componente Selector de fecha | Flecha derecha |
+| Realice la acción del rótulo disponible entre las flechas de navegación derecha e izquierda del calendario | Mayús + flecha arriba |
+| Realice la acción para el icono de flecha de navegación derecha ![flecha derecha](assets/right-navigation-icon.svg) disponible en el calendario | Mayús + flecha izquierda |
+| Realice la acción del icono de flecha de navegación izquierda ![flecha izquierda](assets/left-navigation-icon.svg) disponible en el calendario | Mayús + flecha derecha |
 
 ## Utilice la herramienta de accesibilidad para encontrar los problemas de accesibilidad restantes
 
