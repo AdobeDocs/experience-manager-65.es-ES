@@ -3,10 +3,11 @@ title: Consideraciones y requisitos de red
 description: Analiza las consideraciones de red al diseñar una implementación [!DNL Adobe Experience Manager Assets] .
 contentOwner: AG
 role: Arquitecto, Administrador
+feature: Herramientas para desarrolladores
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
