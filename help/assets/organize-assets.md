@@ -3,11 +3,12 @@ title: Organizar sus recursos digitales
 description: Organice los recursos digitales, las imágenes, los archivos, las carpetas, etc. mediante el Experience Manager.
 contentOwner: AG
 role: Profesional empresarial
+feature: Administración de recursos,Buscar
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '785'
+ht-degree: 1%
 
 ---
 
