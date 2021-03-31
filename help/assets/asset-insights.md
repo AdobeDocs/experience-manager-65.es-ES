@@ -2,11 +2,12 @@
 title: 'Información sobre Assets '
 description: Descubra cómo la función Asset Insights permite rastrear las clasificaciones de usuarios y las estadísticas de uso de imágenes que se utilizan en sitios web de terceros, campañas de marketing y soluciones creativas de Adobe.
 contentOwner: AG
-role: Profesional empresarial
+role: Profesional empresarial, administrador
+feature: Información sobre Assets, Informes de Asset
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '736'
 ht-degree: 7%
 
 ---
