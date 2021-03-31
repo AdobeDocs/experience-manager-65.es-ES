@@ -11,9 +11,9 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Formularios adaptables
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 7a3f54d90769708344e6751756b2a12ac6c962d7
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -98,3 +98,111 @@ Para utilizar CAPTCHA en formularios adaptables:
 1. Guarde las propiedades.
 
 El servicio reCAPTCHA está habilitado en el formulario adaptable. Puede obtener una vista previa del formulario y ver cómo funciona CAPTCHA.
+
+### Mostrar u ocultar el componente CAPTCHA basado en reglas {#show-hide-captcha}
+
+Puede seleccionar mostrar u ocultar el componente CAPTCHA en función de las reglas que aplique en un componente de un formulario adaptable. Pulse el componente, seleccione ![editar reglas](assets/edit-rules-icon.svg) y pulse **[!UICONTROL Crear]** para crear una regla. Para obtener más información sobre la creación de reglas, consulte [Editor de reglas](rule-editor.md).
+
+Por ejemplo, el componente CAPTCHA debe mostrarse en un formulario adaptable solo si el campo Valor de moneda del formulario tiene un valor superior a 25000.
+
+Pulse el campo **[!UICONTROL Currency Value]** del formulario y cree las siguientes reglas:
+
+![Mostrar u ocultar reglas](assets/rules-show-hide-captcha.png)
+
+### Validar CAPTCHA {#validate-captcha}
+
+Puede validar CAPTCHA en un formulario adaptable al enviar el formulario o basar la validación CAPTCHA en las acciones y condiciones del usuario.
+
+#### Validación de CAPTCHA en el envío de formulario {#validation-form-submission}
+
+Para validar un CAPTCHA automáticamente al enviar un formulario adaptable:
+
+1. Pulse el componente CAPTCHA y seleccione ![cmppr](assets/configure-icon.svg) para ver las propiedades del componente.
+1. En la sección **[!UICONTROL Validar CAPTCHA]**, seleccione **[!UICONTROL Validar CAPTCHA al enviar el formulario]**.
+1. Toque ![Listo](assets/save_icon.svg) para guardar las propiedades del componente.
+
+#### Validar CAPTCHA en acciones y condiciones del usuario {#validate-captcha-user-action}
+
+Para validar un CAPTCHA basado en condiciones y acciones del usuario:
+
+1. Pulse el componente CAPTCHA y seleccione ![cmppr](assets/configure-icon.svg) para ver las propiedades del componente.
+1. En la sección **[!UICONTROL Validar CAPTCHA]**, seleccione **[!UICONTROL Validar CAPTCHA en una acción del usuario]**.
+1. Toque ![Listo](assets/save_icon.svg) para guardar las propiedades del componente.
+
+[!DNL Experience Manager Forms] proporciona  `ValidateCAPTCHA` API para validar CAPTCHA mediante condiciones predefinidas. Puede invocar la API utilizando una acción de envío personalizada o definiendo reglas sobre los componentes de un formulario adaptable.
+
+El siguiente es un ejemplo de API `ValidateCAPTCHA` para validar CAPTCHA con condiciones predefinidas:
+
+```javascript
+if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
+    	GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
+        String formPath = slingRequest.getResource().getPath();
+        String captchaData = slingRequest.getParameter(GuideConstants.GUIDE_CAPTCHA_DATA);
+        if (!apiProvider.validateCAPTCHA(formPath, captchaData).isCaptchaValid()){
+            response.setStatus(400);
+            return;
+        }
+    }
+```
+
+El ejemplo significa que la API `ValidateCAPTCHA` valida el CAPTCHA en el formulario solo si el número de dígitos en el cuadro numérico especificado por el usuario mientras rellena el formulario es bueno a 5.
+
+**Opción 1: Utilice la API  [!DNL Experience Manager Forms] ValidateCAPTCHA para validar CAPTCHA mediante una acción de envío personalizada**
+
+Realice los siguientes pasos para utilizar la API `ValidateCAPTCHA` para validar CAPTCHA mediante una acción de envío personalizada:
+
+1. Agregue la secuencia de comandos que incluye la API `ValidateCAPTCHA` a la acción de envío personalizada. Para obtener más información sobre las acciones de envío personalizadas, consulte [Crear una acción de envío personalizada para Forms adaptable](custom-submit-action-form.md).
+1. Seleccione el nombre de la acción de envío personalizada en la lista desplegable **[!UICONTROL Acción de envío]** de las propiedades **[!UICONTROL Envío]** de un formulario adaptable.
+1. Toque **[!UICONTROL Enviar]**. El CAPTCHA se valida en función de las condiciones definidas en la API `ValidateCAPTCHA` de la acción de envío personalizada.
+
+**Opción 2: Utilice la API  [!DNL Experience Manager Forms] ValidateCAPTCHA para validar CAPTCHA en una acción del usuario antes de enviar el formulario**
+
+También puede invocar la API `ValidateCAPTCHA` aplicando reglas en un componente en un formulario adaptable.
+
+Por ejemplo, se agrega un botón **[!UICONTROL Validar CAPTCHA]** en un formulario adaptable y se crea una regla para invocar un servicio al hacer clic en un botón.
+
+La siguiente ilustración ilustra cómo puede invocar un servicio al hacer clic en un botón **[!UICONTROL Validar CAPTCHA]**:
+
+![Validar CAPTCHA](assets/captcha-validation1.gif)
+
+Puede invocar el servlet personalizado que incluye la API `ValidateCAPTCHA` mediante el editor de reglas y habilitar o deshabilitar el botón de envío del formulario adaptable en función del resultado de validación.
+
+Del mismo modo, puede utilizar el editor de reglas para incluir un método personalizado para validar CAPTCHA en un formulario adaptable.
+
+### Agregar servicios personalizados de CAPTCHA {#add-custom-captcha-service}
+
+[!DNL Experience Manager Forms] proporciona reCAPTCHA como servicio CAPTCHA. Sin embargo, puede agregar un servicio personalizado para que se muestre en la lista desplegable **[!UICONTROL Servicio CAPTCHA]**.
+
+A continuación se muestra un ejemplo de implementación de la interfaz para agregar un servicio CAPTCHA adicional al formulario adaptable:
+
+```javascript
+package com.adobe.aemds.guide.service;
+
+import org.osgi.annotation.versioning.ConsumerType;
+
+/**
+ * An interface to provide captcha validation at server side in Adaptive Form
+ * This interface can be used to provide custom implementation for different captcha services.
+ */
+@ConsumerType
+public interface GuideCaptchaValidator {
+    /**
+     * This method should define the actual validation logic of the captcha
+     * @param captchaPropertyNodePath path to the node with CAPTCHA configurations inside form container
+     * @param userResponseToken  The user response token provided by the CAPTCHA from client-side
+     *
+     * @return  {@link GuideCaptchaValidationResult} validation result of the captcha
+     */
+     GuideCaptchaValidationResult validateCaptcha(String captchaPropertyNodePath, String userResponseToken);
+
+    /**
+     * Returns the name of the captcha validator. This should be unique among the different implementations
+     * @return  name of the captcha validator
+     */
+     String getCaptchaValidatorName();
+}
+```
+
+`captchaPropertyNodePath` hace referencia a la ruta de recurso del componente CAPTCHA en el repositorio de Sling. Utilice esta propiedad para incluir detalles específicos del componente CAPTCHA. Por ejemplo, `captchaPropertyNodePath` incluye información para la configuración de nube reCAPTCHA configurada en el componente CAPTCHA. La información de configuración de la nube proporciona las configuraciones **[!UICONTROL Clave del sitio]** y **[!UICONTROL Clave secreta]** para implementar el servicio reCAPTCHA.
+
+`userResponseToken` hace referencia a  `g_recaptcha_response` que se genera después de resolver un CAPTCHA en un formulario.
