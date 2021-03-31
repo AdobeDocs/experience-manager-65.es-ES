@@ -3,10 +3,11 @@ title: Uso compartido de carpetas en las  [!DNL Adobe Creative Cloud] prácticas
 description: Configure [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] para intercambiar carpetas con usuarios de Adobe Creative Cloud (CC).
 contentOwner: AG
 role: Profesional empresarial, administrador
+feature: Colaboración
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
