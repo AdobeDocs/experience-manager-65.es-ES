@@ -10,18 +10,20 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
+feature: Fragmentos de contenido
+role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 22%
+source-wordcount: '246'
+ht-degree: 23%
 
 ---
 
 
 # Contenido asociado{#associated-content}
 
-El contenido asociado proporciona la conexión para que los recursos (es decir, los) se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad al [proporcionar una serie de recursos a los que acceder cuando se utiliza el fragmento de contenido en una página](/help/sites-authoring/content-fragments.md#using-associated-content), al tiempo que ayuda a reducir el tiempo necesario para buscar el recurso adecuado.
+El contenido asociado proporciona la conexión para que los recursos (es decir,) se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad al [proporcionar una serie de recursos a los que acceder cuando se utiliza el fragmento de contenido en una página](/help/sites-authoring/content-fragments.md#using-associated-content), a la vez que ayuda a reducir el tiempo necesario para buscar el recurso adecuado.
 
 ## Añadir contenido asociado {#adding-associated-content}
 
@@ -38,11 +40,11 @@ Para hacer la asociación, primero debe [agregar sus recursos de medios a una co
 1. Seleccione **Asociar contenido** o **Asociar colección** (según corresponda, dependiendo de si alguna colección ya se ha asociado o no).
 1. Seleccione la colección requerida.
 
-   Si lo desea, puede añadir el propio fragmento a la colección seleccionada; esto ayuda al seguimiento.
+   Si lo desea, puede añadir el fragmento a la colección seleccionada; esto ayuda al seguimiento.
 
    ![cfm-6420-04](assets/cfm-6420-04.png)
 
-1. Confirmar (con la marca de verificación). La colección se mostrará como asociada.
+1. Confirme (con la marca de verificación). La colección se enumerará como asociada.
 
    ![cfm-6420-05](assets/cfm-6420-05.png)
 
@@ -51,7 +53,7 @@ Para hacer la asociación, primero debe [agregar sus recursos de medios a una co
 Una vez asociada una colección, puede:
 
 * **** Elimine la asociación.
-* **Añadir recursos** en la colección.
+* **Agregue** recursos a la colección.
 * Seleccione un recurso para realizar más acciones.
 * Editar el recurso.
 
