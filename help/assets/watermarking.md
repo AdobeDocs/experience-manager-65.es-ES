@@ -3,10 +3,11 @@ title: Adición de una marca de agua a los recursos digitales
 description: Aprenda a utilizar la función de marca de agua para agregar una marca de agua digital a los recursos.
 contentOwner: AG
 role: Profesional empresarial, administrador
+feature: Administración de activos
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
