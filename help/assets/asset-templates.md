@@ -3,10 +3,11 @@ title: Plantillas de recursos
 description: Obtenga información sobre las plantillas de recursos en [!DNL Adobe Experience Manager Assets] y cómo usar las plantillas de recursos para crear material publicitario de marketing.
 contentOwner: AG
 role: Profesional empresarial
+feature: Administración de recursos,Herramientas para desarrolladores
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1550'
 ht-degree: 0%
 
 ---
@@ -103,11 +104,11 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
 1. Seleccione el campo de imagen de la lista de campos editables y, a continuación, arrastre una imagen desde el selector de recursos al campo editable.
 
-   ![chlimage_1-115](assets/chlimage_1-319.png)
+   ![chlimage_1-114](assets/chlimage_1-319.png)
 
    También puede buscar imágenes utilizando palabras clave, etiquetas y según su estado de publicación. Puede navegar por el repositorio [!DNL Experience Manager Assets] y navegar a la ubicación de la imagen deseada.
 
-   ![chlimage_1-115](assets/chlimage_1-320.png)
+   ![chlimage_1-114](assets/chlimage_1-320.png)
 
 1. Haga clic en **[!UICONTROL Preview]** para previsualizar la imagen.
 1. Para editar una página específica en un material de varias páginas, utilice el navegador de páginas de la parte inferior.
