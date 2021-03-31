@@ -3,10 +3,11 @@ title: Prácticas recomendadas para procesar los formatos de archivo admitidos
 description: Prácticas recomendadas para procesar los distintos tipos de archivos admitidos con [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Administrador
+feature: Administración de recursos,Herramientas para desarrolladores
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ Para obtener mejores resultados, Adobe recomienda utilizar la biblioteca Adobe P
 * Los archivos AI con miniaturas no se generan de forma predeterminada
 * Para archivos AI con colores SPOT (PMS)
 
-Las miniaturas y vistas previas generadas con el rasterizador de PDF son de mejor calidad en comparación con los resultados de raster predeterminados. La biblioteca Adobe PDF Rasterizer no admite ninguna conversión de espacio de color. Independientemente del espacio de color del archivo PDF de origen, Adobe PDF Rasterizer genera solo salida RGB.
+Las miniaturas y vistas previas generadas con el rasterizador de PDF son de mejor calidad en comparación con los resultados de raster predeterminados. La biblioteca Rasterizer de Adobe PDF no admite ninguna conversión de espacio de color. Independientemente del espacio de color del archivo PDF de origen, Adobe PDF Rasterizer genera solo salida RGB.
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
