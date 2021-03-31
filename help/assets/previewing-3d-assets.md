@@ -4,10 +4,11 @@ description: Obtenga información sobre cómo previsualizar recursos 3D
 contentOwner: Rick Brough
 docset: aem65
 feature: Recursos 3D
+role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '568'
 ht-degree: 16%
 
 ---
