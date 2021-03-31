@@ -3,11 +3,12 @@ title: Configurar restricciones de carga de recursos
 description: 'Restringir el tipo de recursos (archivos) que los usuarios pueden cargar '
 contentOwner: AG
 role: Desarrollador, administrador, arquitecto
+feature: Administración de recursos,Cargar
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 15%
+source-wordcount: '196'
+ht-degree: 14%
 
 ---
 
