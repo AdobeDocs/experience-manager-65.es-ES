@@ -1,8 +1,8 @@
 ---
 title: Markdown
 seo-title: Markdown
-description: Cuando se está creando, el editor de fragmentos de contenido utiliza la sintaxis de restricción para permitir escribir contenido fácilmente.
-seo-description: Cuando se está creando, el editor de fragmentos de contenido utiliza la sintaxis de restricción para permitir escribir contenido fácilmente.
+description: Cuando se crea, el editor de fragmentos de contenido utiliza la sintaxis Markdown para permitirle escribir contenido fácilmente.
+seo-description: Cuando se crea, el editor de fragmentos de contenido utiliza la sintaxis Markdown para permitirle escribir contenido fácilmente.
 uuid: afcbf82f-3a75-4491-9172-706188db65bb
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,10 +10,12 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
 docset: aem65
+feature: Fragmentos de contenido
+role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: 08bf8f42898446f2e5cca1fde55ceb84710a1e30
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '544'
 ht-degree: 4%
 
 ---
@@ -21,21 +23,21 @@ ht-degree: 4%
 
 # Markdown{#markdown}
 
-Cuando se [está creando](content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza la sintaxis *markdown* para permitirle escribir contenido fácilmente:
+Cuando esté [creando](content-fragments-variations.md#authoring-your-content), el editor de fragmentos de contenido utiliza la sintaxis *markdown* para permitirle escribir contenido fácilmente:
 
-![editor de marcas](/help/assets/content-fragments/assets/cfm-6420-08.png)
+![editor de markdown](/help/assets/content-fragments/assets/cfm-6420-08.png)
 
 Puede definir:
 
-* [Notación de encabezado](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
+* [Anotación de encabezado](/help/assets/content-fragments/content-fragments-markdown.md#heading-notation)
 * [Párrafos y saltos de línea](/help/assets/content-fragments/content-fragments-markdown.md#paragraphs-and-line-breaks)
 * [Vínculos](/help/assets/content-fragments/content-fragments-markdown.md#links)
 * [Imágenes](/help/assets/content-fragments/content-fragments-markdown.md#images)
-* [Bloquear cotizaciones](/help/assets/content-fragments/content-fragments-markdown.md#block-quotes)
+* [Comillas de bloque](/help/assets/content-fragments/content-fragments-markdown.md#block-quotes)
 * [Listas](/help/assets/content-fragments/content-fragments-markdown.md#lists)
 * [Énfasis](/help/assets/content-fragments/content-fragments-markdown.md#emphasis)
 * [Bloques de código](/help/assets/content-fragments/content-fragments-markdown.md#code-blocks)
-* [Escapadas de barra invertida](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
+* [Fuentes de barra invertida](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
 ## Notación de encabezado {#heading-notation}
 
@@ -47,7 +49,7 @@ Para crear un encabezado, coloque una etiqueta (#) delante del encabezado. Se ut
 
     `###### This is a H6`
 
-De forma opcional, puede crear una H1 subrayando el texto en signos iguales y crear una H2 subrayando el texto en signos menos. Por ejemplo:
+De forma opcional, puede crear una H1 subrayando el texto en signos iguales y creando una H2 subrayando el texto en signos menos. Por ejemplo:
 
     `This is an H1`
 
@@ -59,15 +61,15 @@ De forma opcional, puede crear una H1 subrayando el texto en signos iguales y cr
 
 ## Párrafos y saltos de línea {#paragraphs-and-line-breaks}
 
-Un párrafo es simplemente una o varias líneas consecutivas de texto, separadas por una o varias líneas en blanco. Una línea en blanco es una línea que sólo contiene espacios o fichas. Los párrafos normales no se deben aplicar sangría con espacios ni fichas.
+Un párrafo es simplemente una o más líneas consecutivas de texto, separadas por una o más líneas en blanco. Una línea en blanco es una línea que contiene únicamente espacios o tabulaciones. Los párrafos normales no deben tener sangría con espacios o tabulaciones.
 
-Un salto de línea se crea finalizando una línea con dos o más espacios que un retorno.
+Un salto de línea se crea terminando una línea con dos o más espacios que un retorno.
 
 ## Vínculos {#links}
 
 Puede crear vínculos en línea y de referencia.
 
-En ambos estilos, el texto del vínculo se delimita entre corchetes `[]`.
+En ambos estilos, el texto del vínculo está delimitado por corchetes `[]`.
 
 Estos son ejemplos de vínculos en línea:
 
@@ -77,7 +79,7 @@ Estos son ejemplos de vínculos en línea:
 
     `[This link](https://example.net/) has no title attribute.`
 
-Un vínculo de referencia tiene la sintaxis siguiente:
+Un vínculo de referencia tiene la siguiente sintaxis:
 
     `Hey you should [checkout][0] this [cool thing][wiki] that I [made][].`
 
@@ -89,7 +91,7 @@ Un vínculo de referencia tiene la sintaxis siguiente:
 
 ## Imágenes {#images}
 
-La sintaxis de las imágenes es similar a la de los vínculos. Puede crear imágenes en línea y referenciadas.
+La sintaxis de las imágenes es similar a los vínculos. Puede crear imágenes en línea y referenciadas.
 
 Por ejemplo, una imagen en línea tiene la siguiente sintaxis:
 
@@ -99,21 +101,21 @@ Por ejemplo, una imagen en línea tiene la siguiente sintaxis:
 
 La sintaxis incluye:
 
-* Signo de exclamación: !;
-* seguido de un conjunto de corchetes que contiene el texto del atributo alt de la imagen;
-* seguido de un conjunto de paréntesis, que contiene la dirección URL o la ruta de la imagen, y un atributo de título opcional entre comillas simples o dobles.
+* Un signo de exclamación: !;
+* seguido de un conjunto de corchetes, que contienen el texto del atributo alternativo de la imagen;
+* seguido de un conjunto de paréntesis, que contiene la dirección URL o la ruta a la imagen, y de un atributo de título opcional entre comillas dobles o simples.
 
 Una imagen de estilo de referencia tiene la siguiente sintaxis:
 
     `![Alt text][id]`
 
-Donde &quot;id&quot; es el nombre de una referencia de imagen definida. Las referencias de imagen se definen con sintaxis idéntica a las referencias de vínculo:
+Donde &quot;id&quot; es el nombre de una referencia de imagen definida. Las referencias de imagen se definen con una sintaxis idéntica a las referencias de vínculo:
 
     `[id]: url/to/image "Optional title attribute"`
 
 ## Comillas de bloque {#block-quotes}
 
-Puede citar texto agregando el símbolo > delante del texto. Por ejemplo:
+Puede citar texto añadiendo el símbolo > antes del texto. Por ejemplo:
 
     `>This is block quotes`
 
@@ -137,7 +139,7 @@ Puede tener comillas de bloque anidadas. Por ejemplo:
 
 Puede crear listas ordenadas y sin ordenar.
 
-Para crear una lista sin orden, utilice &amp;ast; antes de los elementos de la lista. Por ejemplo:
+Para crear una lista desordenada, utilice &amp;ast; antes de los elementos de la lista. Por ejemplo:
 
     `* item in list`
 
@@ -145,7 +147,7 @@ Para crear una lista sin orden, utilice &amp;ast; antes de los elementos de la l
 
     `* item in list`
 
-Para crear una lista ordenada, agregue los números, seguidos de un punto, antes de cada elemento de la lista. Por ejemplo:
+Para crear una lista ordenada, añada los números, seguidos de un punto, antes de cada elemento de la lista. Por ejemplo:
 
     `1. First item in list.`
 
@@ -173,7 +175,7 @@ Puede aplicar negrita al texto de la siguiente manera:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Para indicar un fragmento de código, envuélvalo con comillas (`). A diferencia de un bloque de código con formato previo, un espacio de código indica código dentro de un párrafo normal.
+Para indicar un intervalo de código, encapsúltelo con comillas de rebote (`). A diferencia de los bloques de código preformateados, un intervalo de código indica el código dentro de un párrafo normal.
 
 Por ejemplo:
 
@@ -181,19 +183,19 @@ Por ejemplo:
 
 ## Bloques de código {#code-blocks}
 
-Los bloques de código generalmente se utilizan para ilustrar el código fuente. Puede crear bloques de código sangrando el código mediante una ficha o un mínimo de 4 espacios. Por ejemplo:
+Los bloques de código generalmente se utilizan para ilustrar el código fuente. Puede crear bloques de código aplicando sangría al código utilizando una pestaña o un mínimo de 4 espacios. Por ejemplo:
 
     `This is a normal paragraph.`
 
         `This is a code block.`
 
-## Escapadas de barra invertida {#backslash-escapes}
+## Fuentes de barra invertida {#backslash-escapes}
 
-Puede utilizar los escapes de barra invertida para generar caracteres literales con un significado especial en la sintaxis de formato. Por ejemplo, si desea rodear una palabra con asteriscos literales (en lugar de una etiqueta HTML &lt;em>), puede utilizar barras invertidas antes de los asteriscos, como esta:
+Puede utilizar las secuencias de escape de barra invertida para generar caracteres literales que tengan un significado especial en la sintaxis del formato. Por ejemplo, si desea rodear una palabra con asteriscos literales (en lugar de una etiqueta HTML &lt;em> ), puede utilizar barras invertidas antes de los asteriscos, de esta manera:
 
     `\\*literal asterisks\\*`
 
-Los escapes de barra invertida están disponibles para los siguientes caracteres:
+Las secuencias de escape de barra invertida están disponibles para los siguientes caracteres:
 
     ` \ backslash`
 
