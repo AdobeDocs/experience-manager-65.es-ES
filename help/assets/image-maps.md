@@ -3,10 +3,11 @@ title: Adición de mapas de imagen con hipervínculos
 description: Aprenda a añadir mapa de imagen con hipervínculos a una imagen.
 contentOwner: AG
 role: Profesional empresarial, administrador
+feature: Administración de activos
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
