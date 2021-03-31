@@ -4,10 +4,11 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 role: Profesional empresarial
+feature: Administración de recursos,Buscar
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '9592'
+source-wordcount: '9595'
 ht-degree: 4%
 
 ---
