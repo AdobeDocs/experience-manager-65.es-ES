@@ -4,9 +4,9 @@ description: Aprenda a crear referencias a recursos digitales desde  [!DNL Adobe
 contentOwner: AG
 role: Profesional empresarial, administrador
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: e6a0cab17d203183cc4169563179060338596cc3
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1381'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Además de eliminar la redundancia, hacer referencia a los activos en las aplica
 
 Las referencias se resuelven en función de la ruta, el ID del documento y el ID de instancia de los recursos a los que se hace referencia.
 
-## Agregar recursos digitales como referencias en [!DNL Adobe Illustrator] {#refai}
+## [!DNL Adobe Illustrator]: Agregar recursos digitales como referencias  {#refai}
 
 Puede hacer referencia a recursos digitales existentes desde un archivo [!DNL Adobe Illustrator] .
 
@@ -45,7 +45,7 @@ Puede hacer referencia a recursos digitales existentes desde un archivo [!DNL Ad
 
    *Figura: Referencias de recursos en detalles de recursos.*
 
-## Agregar recursos digitales como referencias en [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]: Agregar recursos digitales como referencias  {#add-aem-assets-as-references-in-adobe-indesign}
 
 Para hacer referencia a recursos digitales desde un archivo [!DNL InDesign], arrastre los recursos al archivo [!DNL InDesign] o exporte el archivo [!DNL InDesign] como archivo ZIP.
 
@@ -55,6 +55,8 @@ Los recursos a los que se hace referencia ya existen en [!DNL Experience Manager
 >
 >Si el [!DNL InDesign Server] es proxy, los archivos [!DNL InDesign] tienen la vista previa incrustada en sus metadatos XMP. En este caso, la extracción de miniaturas no es explícitamente necesaria. Sin embargo, si el [!DNL InDesign Server] no se procesa como proxy, las miniaturas deben extraerse explícitamente para los archivos [!DNL InDesign].
 
+Cuando se carga un archivo INDD, las referencias se recuperan consultando los recursos que tienen propiedades `xmpMM:InstanceID` y `xmpMM:DocumentID` en el repositorio.
+
 ### Crear referencias arrastrando recursos {#create-references-by-dragging-aem-assets}
 
 Este procedimiento es similar a [añadir recursos digitales como referencias en Adobe Illustrator](#refai).
@@ -62,12 +64,12 @@ Este procedimiento es similar a [añadir recursos digitales como referencias en 
 ### Crear referencias a recursos exportando un archivo ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Siga los pasos en [Crear modelos de flujo de trabajo](/help/sites-developing/workflows-models.md) para crear un nuevo flujo de trabajo.
-1. Utilice la función Paquete de [!DNL Adobe InDesign] para exportar el documento. [!DNL Adobe InDesign] puede exportar un documento y los recursos vinculados como un paquete. En este caso, la carpeta exportada contiene una carpeta Links que contiene subactivos en el archivo [!DNL InDesign].
+1. Utilice la [Package feature](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) de [!DNL Adobe InDesign] para exportar el documento. [!DNL Adobe InDesign] puede exportar un documento y los recursos vinculados como un paquete. En este caso, la carpeta exportada contiene una carpeta `Links` que contiene subrecursos en el archivo [!DNL InDesign]. La carpeta `Links` está presente en la misma carpeta que el archivo INDD.
 1. Cree un archivo ZIP y cárguelo en el repositorio [!DNL Experience Manager].
 1. Inicie el flujo de trabajo `Unarchiver`.
 1. Cuando se completa el flujo de trabajo, se hace referencia automáticamente a las referencias de la carpeta Links como subactivos. Para ver una lista de los recursos referidos, vaya a la página de detalles del recurso [!DNL InDesign] y cierre el [carril](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Agregar recursos digitales como referencias en [!DNL Adobe Photoshop] {#refps}
+## [!DNL Adobe Photoshop]: Agregar recursos digitales como referencias  {#refps}
 
 1. Utilice la aplicación de escritorio [!DNL Experience Manager] para acceder a [!DNL Experience Manager Assets]. Descargue y muestre los recursos en el sistema de archivos local. Utilice la funcionalidad [!UICONTROL Colocar vinculado] en [!DNL Adobe Photoshop]. Consulte [Colocación de recursos en la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
