@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 sub-product: formularios
 solution: Experience Manager, Experience Manager Forms
@@ -10,7 +10,7 @@ user-guide-description: Cree, gestione, publique y actualice formularios digital
 feature-set: Experience Manager Forms
 role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
 workflow-type: tm+mt
 source-wordcount: '3720'
 ht-degree: 4%
@@ -620,7 +620,7 @@ ht-degree: 4%
          + [APIuick Start (SOAP) de PDF Utilities Service para Java](developing/pdf-utilities-service-java-api.md)
          + [Inicio rápido de la API del servicio de repositorio](developing/repository-service-api-quick-starts.md)
          + [Inicio rápido de la API de Java del servicio de firma (SOAP)](developing/signature-service-java-api-quick.md)
-         + [Inicio rápido (SOAP) de la API de Java del servicio del Administrador de tareas](developing/task-manager-service-java-api.md)
+         + [Inicio rápido (SOAP) de la API de Java del servicio del administrador de tareas](developing/task-manager-service-java-api.md)
          + [Inicio rápido de la API de Java del Administrador de usuarios (SOAP)](developing/user-manager-java-api-quick.md)
          + [XMP Utilities Service Java APIQuick Start (SOAP)](developing/xmp-utilities-service-java-api.md)
       + Invocación de AEM Forms en JEE mediante API {#invoking-aem-forms-jee-apis}
