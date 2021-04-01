@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Guía del usuario de AEM 6.5 Mobile
@@ -9,10 +9,10 @@ feature-set: Experience Manager Sites
 feature: Móvil
 role: Profesional empresarial
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
