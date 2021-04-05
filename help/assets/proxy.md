@@ -3,14 +3,14 @@ title: '[!DNL Assets] desarrollo de proxy'
 description: Un proxy es un proxy [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] , operaciones compatibles, componentes proxy y cómo desarrollar un trabajador proxy personalizado.
 contentOwner: AG
 role: Administrador, Arquitecto
+exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Assets] desarrollo de proxy  {#assets-proxy-development}
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Un proxy es una instancia de Experience Manager específica (y a veces independiente) que utiliza los trabajadores proxy como procesadores responsables de gestionar un trabajo y crear un resultado. Un trabajador proxy puede utilizarse para una amplia variedad de tareas. En el caso de un proxy [!DNL Assets] , se puede utilizar para cargar recursos para procesarlos en Assets. Por ejemplo, el [IDS proxy worker](indesign.md) utiliza un [!DNL Adobe InDesign] Servidor para procesar archivos y utilizarlos en Assets.
 
-Cuando el proxy es una instancia [!DNL Experience Manager] independiente, esto ayuda a reducir la carga en las instancias de creación del Experience Manager. De forma predeterminada, [!DNL Assets] ejecuta las tareas de procesamiento de recursos en la misma JVM (externalizada mediante proxy) para reducir la carga en la instancia de creación del Experience Manager.
+Cuando el proxy es una instancia [!DNL Experience Manager] independiente, esto ayuda a reducir la carga en las instancias de creación [!DNL Experience Manager]. De forma predeterminada, [!DNL Assets] ejecuta las tareas de procesamiento de recursos en la misma JVM (externalizada a través de Proxy) para reducir la carga en la instancia de creación [!DNL Experience Manager].
 
 ## Proxy (acceso HTTP) {#proxy-http-access}
 
