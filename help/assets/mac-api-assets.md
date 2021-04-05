@@ -4,14 +4,14 @@ description: Cree, lea, actualice, elimine y administre recursos digitales media
 contentOwner: AG
 role: Desarrollador
 feature: API, API HTTP de Assets, Herramientas para desarrolladores
+exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1730'
 ht-degree: 1%
 
 ---
-
 
 # [!DNL Assets] API HTTP  {#assets-http-api}
 
@@ -314,4 +314,4 @@ Elimina un recurso (-tree) en la ruta proporcionada.
 
 * [La API HTTP actualiza las ](#update-asset-metadata) propiedades de metadatos en el  `jcr` espacio de nombres. Sin embargo, la interfaz de usuario del Experience Manager actualiza las propiedades de los metadatos en el espacio de nombres `dc`.
 
-* La API de recursos no devuelve los metadatos completos. En la API, las áreas de nombres están codificadas y solo se devuelven. Si necesita metadatos completos, consulte la ruta del recurso `/jcr_content/metadata.json`.
+* La API HTTP de recursos no devuelve los metadatos completos. Las áreas de nombres están codificadas y solo se devuelven esas áreas de nombres. Para ver los metadatos completos, consulte la ruta del recurso `/jcr_content/metadata.json`.
