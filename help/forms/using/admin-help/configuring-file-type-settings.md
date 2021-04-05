@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: Generador de PDF
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 3bb12f6323398971ec315f49611a39977bd548a2
 workflow-type: tm+mt
-source-wordcount: '6148'
+source-wordcount: '6171'
 ht-degree: 2%
 
 ---
@@ -515,6 +515,8 @@ Estas opciones determinan cómo se convierten los archivos de Microsoft Word. Pa
 **[!UICONTROL Habilitar etiquetado]** avanzado: Añade etiquetas avanzadas para mejorar la accesibilidad.
 
 **[!UICONTROL Convertir todos los estilos en marcadores]**: Convierte todos los estilos del documento de Word en marcadores del documento PDF.
+
+**[!UICONTROL Convertir estilos especificados en marcadores]**: Convierte los estilos definidos en el campo  **[!UICONTROL Estilos con]** niveles en marcadores en el documento PDF.
 
 **[!UICONTROL Estilos con niveles]**: Especifica qué estilos del documento de Word se convierten en marcadores en el documento PDF. También especifica el nivel de los marcadores. Para utilizar esta función, anule la selección de la opción **[!UICONTROL Convertir todos los estilos a marcadores]** y especifique los nombres de estilo en el siguiente formato:
 
