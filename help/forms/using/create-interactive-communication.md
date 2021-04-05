@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Comunicación interactiva
+exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 92092e1c050c9264c19e3cd9da9b240607af7bab
 workflow-type: tm+mt
-source-wordcount: '6122'
+source-wordcount: '6212'
 ht-degree: 1%
 
 ---
-
 
 # Crear una comunicación interactiva{#create-an-interactive-communication}
 
@@ -611,3 +611,23 @@ La interfaz de creación de canales web facilita la agrupación de los component
 
    ![content_tree_grouping](assets/content_tree_grouping.png)
 
+## Formato de salida para el canal de impresión {#output-format-print-channel}
+
+Utilice la API PrintChannel para definir el formato de salida del canal Print de una comunicación interactiva. Si no define un formato de salida, AEM Forms genera la salida en formato PDF.
+
+```javascript
+//options for rendering print channel of a multi-channel document
+PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
+PrintDocument printDocument = printChannel.render(renderOptions);
+```
+
+Para generar la salida en cualquier otro formato, especifique el tipo de formato de salida. Consulte [PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) para obtener la lista de tipos de formato de salida compatibles.
+
+Por ejemplo, puede utilizar el siguiente ejemplo para definir PCL como formato de salida para una comunicación interactiva:
+
+```javascript
+//options for rendering print channel of a multi-channel document
+PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
+renderOptions.setRenderFormat(PrintConfig.HP_PCL_5e);
+PrintDocument printDocument = printChannel.render(renderOptions);
+```
