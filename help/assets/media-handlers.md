@@ -4,14 +4,14 @@ description: Obtenga información sobre los controladores de medios y cómo util
 contentOwner: AG
 role: Profesional empresarial
 feature: Flujo de trabajo,Representaciones
+exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '2165'
+source-wordcount: '2168'
 ht-degree: 4%
 
 ---
-
 
 # Procesamiento de recursos mediante controladores de medios y flujos de trabajo {#processing-assets-using-media-handlers-and-workflows}
 
@@ -46,6 +46,8 @@ Los siguientes controladores de medios están disponibles en [!DNL Assets] y adm
 | [!UICONTROL OpenOfficeHandler] | com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
 | [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | aplicación/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | reserva en caso de que no se encontrara ningún otro controlador para extraer datos de un recurso |
+
+{style=&quot;table-layout:auto&quot;}
 
 Todos los controladores realizan las siguientes tareas:
 
