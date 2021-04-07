@@ -7,15 +7,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
-role: Profesional empresarial, administrador
+role: Business Practitioner, Administrator
+exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
+feature: Publicación,Configuración
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '726'
 ht-degree: 2%
 
 ---
-
 
 # Entrega HTTP/2 de contenido {#http-delivery-of-content}
 
