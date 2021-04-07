@@ -4,15 +4,16 @@ description: 'El boletín Dynamic Media de Experience League es un boletín mens
 keywords: Dynamic Media;boletín;actualizaciones de productos;sugerencias y trucos;eventos;éxito del cliente;blog;blogs;imágenes;vídeos;funciones;funciones
 contentOwner: Rick Brough
 solution: Dynamic Media Classic, Experience Manager
-role: Profesional empresarial, administrador
+role: Business Practitioner, Administrator
+exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
+feature: Colaboración,Dynamic Media Classic
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1172'
 ht-degree: 0%
 
 ---
-
 
 # ![Logotipo de Dynamic Media Newsletter](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
