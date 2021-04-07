@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
+exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 95%
+source-wordcount: '854'
+ht-degree: 92%
 
 ---
-
 
 # Lanzamientos{#launches}
 
@@ -99,9 +99,16 @@ Los lanzamientos permiten realizar lo siguiente:
 
 >[!NOTE]
 >
->La creación y edición de inicios requiere derechos de acceso a `/content/launches`, como con el grupo predeterminado `content-authors`.
+>La creación y edición de lanzamientos requiere derechos de acceso a `/content/launches`, como con el grupo predeterminado `content-authors`.
 >
 >Si experimenta algún problema, póngase en contacto con el administrador del sistema. 
+
+>[!CAUTION]
+>
+>No se admite la reordenación de componentes en una página de Launch.
+>
+>Cuando se promocione la página, se reflejarán los cambios de contenido, pero las posiciones de los componentes no cambiarán.
+
 
 ### Consola Lanzamientos {#the-launches-console}
 
