@@ -7,15 +7,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
-role: Profesional empresarial, administrador
+role: Business Practitioner, Administrator
+exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
+feature: Selectores
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '727'
 ht-degree: 19%
 
 ---
-
 
 # Trabajar con selectores {#working-with-selectors}
 
@@ -23,7 +24,7 @@ Al trabajar con una imagen interactiva, un vídeo interactivo o un titular de ca
 
 En este tema se explica cómo utilizar los selectores de producto, sitio y recurso, incluida la capacidad de examinar, filtrar y ordenar dentro de los selectores.
 
-Puede acceder a los selectores al crear conjuntos de carrusel, agregar zonas interactivas y mapas de imágenes, crear imágenes y vídeos interactivos.
+Puede acceder a los selectores al crear conjuntos de carrusel, agregar zonas interactivas y mapas de imágenes, crear vídeos e imágenes interactivos.
 
 Por ejemplo, en este titular de carrusel, utilice el selector de productos si está vinculando un punto interactivo o un mapa de imagen a una página de vista rápida; utilice el selector de sitio si está vinculando un punto interactivo o un mapa de imagen a un hipervínculo; utilice el selector de recursos cuando esté creando una diapositiva nueva.
 
@@ -117,4 +118,3 @@ Consulte también [Selector de recursos](search-assets.md#assetpicker) para obte
 1. Pulse la marca de verificación para seleccionar el recurso. Se muestra el recurso.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
-
