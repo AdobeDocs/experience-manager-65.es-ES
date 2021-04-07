@@ -6,15 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Profesional empresarial, administrador
+role: Business Practitioner, Administrator
+exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
+feature: Configuración,modo Scene7
 translation-type: tm+mt
-source-git-commit: 6f4cbacb89a891ea8193ca2f495aba353bea6b1a
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
 source-wordcount: '6154'
 ht-degree: 5%
 
 ---
-
 
 # Configuración de Dynamic Media: modo Scene7{#configuring-dynamic-media-scene-mode}
 
