@@ -9,15 +9,16 @@ content-type: reference
 discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
-role: Profesional empresarial, administrador
+role: Business Practitioner, Administrator
+exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
+feature: Configuración,Modo híbrido
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
 source-wordcount: '7843'
 ht-degree: 1%
 
 ---
-
 
 # Configuración de Dynamic Media: modo híbrido {#configuring-dynamic-media-hybrid-mode}
 
