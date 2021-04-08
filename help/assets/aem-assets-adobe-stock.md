@@ -3,15 +3,15 @@ title: Administrar  [!DNL Adobe Stock] recursos
 description: Busque, recupere, conceda licencias y administre  [!DNL Adobe Stock] recursos desde  [!DNL Adobe Experience Manager]. Utilice los recursos con licencia como cualquier otro recurso digital.
 contentOwner: AG
 feature: Buscar, Adobe Stock
-role: Profesional empresarial, administrador
+role: Business Practitioner, Administrator
+exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1091'
 ht-degree: 13%
 
 ---
-
 
 # Usar [!DNL Adobe Stock] recursos en [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
@@ -35,11 +35,11 @@ Para permitir la comunicación entre [!DNL Experience Manager] y [!DNL Adobe Sto
 
 1. En la interfaz de usuario [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**. Haga clic en **[!UICONTROL Crear]** y seleccione **[!UICONTROL Solución de nube]** > **[!UICONTROL Adobe Stock]**.
 1. Vuelva a utilizar un certificado existente o seleccione **[!UICONTROL Crear nuevo certificado]**.
-1. Haga clic en **[!UICONTROL Crear certificado]**. Una vez creada, descargue la clave pública. Haga clic en **[!UICONTROL Siguiente]**. 
-1. Agregue la clave pública descargada a su cuenta de servicio [!DNL Adobe Developer Console]. Haga clic en **[!UICONTROL Siguiente]**. Deje abierta la pantalla [!UICONTROL Configuración de cuenta técnica de IMS de Adobe] para proporcionar los valores en breve.
+1. Haga clic en **[!UICONTROL Crear certificado]**. Una vez creada, descargue la clave pública. Haga clic en **[!UICONTROL Siguiente]**. Deje abierta la pantalla [!UICONTROL Configuración de cuenta técnica de IMS de Adobe] para proporcionar los valores necesarios en breve.
 1. Acceda a [Consola de desarrollador de Adobe](https://console.adobe.io). Asegúrese de que su cuenta tiene permisos de administrador para la organización para la que se requiere la integración.
-1. Haga clic en **[!UICONTROL Crear nuevo proyecto]** y en **[!UICONTROL Agregar API]**. Seleccione **[!UICONTROL Adobe Stock]** de la lista de API disponibles. Seleccione [!UICONTROL OAUTH 2.0 Web]. Configure y copie los distintos valores presentados.
-1. En [!DNL Experience Manager] proporcione los valores en los campos **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]** y **[!UICONTROL Payload]**. Consulte [Inicio rápido de la autenticación JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) para obtener información detallada sobre estos valores.
+1. Haga clic en **[!UICONTROL Crear nuevo proyecto]** y en **[!UICONTROL Agregar API]**. Seleccione **[!UICONTROL Adobe Stock]** de la lista de API disponibles. Seleccione [!UICONTROL OAUTH 2.0 Web].
+1. Proporcione valores **[!UICONTROL de URI de redireccionamiento predeterminado]** y **[!UICONTROL Patrón de URI de redireccionamiento]**. Haga clic en **[!UICONTROL Guardar API configurada]**. Copie el ID y el secreto generados.
+1. En la pantalla [!UICONTROL Configuración de cuenta técnica de IMS de Adobe], proporcione los valores en los cuadros **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]** y **[!UICONTROL Payload]** . Para obtener información detallada sobre estos valores, consulte [Inicio rápido de la autenticación JWT](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
 
 <!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
