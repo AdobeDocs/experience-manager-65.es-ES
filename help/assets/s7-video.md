@@ -7,15 +7,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
-role: Profesional empresarial, administrador
+role: Business Practitioner, Administrator
+exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
+feature: Vídeo
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 54%
+source-wordcount: '1583'
+ht-degree: 55%
 
 ---
-
 
 # Vídeo {#video}
 
@@ -190,4 +191,3 @@ El componente **[!UICONTROL Vídeo base]** debe saber qué perfiles de vídeo ut
 1. Los perfiles de vídeo deben estar activados.
 1. Configure el diseño del componente **[!UICONTROL Foundation Video]** en la página.
 1. Active el diseño cuando haya terminado con los cambios de diseño.
-
