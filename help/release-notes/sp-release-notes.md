@@ -5,9 +5,9 @@ docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 translation-type: tm+mt
-source-git-commit: e2eb007eb7660004f98b4c26aba00a6a6e2a2f1a
+source-git-commit: 9b23e9d5bbdbdde864ce71f434d6536439067f82
 workflow-type: tm+mt
-source-wordcount: '3418'
+source-wordcount: '3413'
 ht-degree: 5%
 
 ---
@@ -158,7 +158,7 @@ La siguiente es la lista de correcciones que se proporcionan en la versión [!DN
 * Al eliminar [!UICONTROL Todos los usuarios] del campo [!UICONTROL Administradores], estos no se eliminan del back-end (NPR-35592, NPR-35611).
 * El componente [!UICONTROL Componer mensaje] no devuelve ningún resultado cuando el texto introducido coincide parcialmente (NPR-35666).
 
-* Al intentar agregar etiquetas a un nuevo blog seleccionando **Agregar etiquetas**, se observa cierto impacto en el rendimiento. Para mejorar el rendimiento, instale [cqTagLucene-0.0.1.zip hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip) que resuelva el problema de sugerencia de etiquetas. Puede descargar la corrección desde [!DNL Software Distribution].
+* Es posible que observe cierto impacto en el rendimiento y lentitud al intentar agregar etiquetas a un nuevo blog seleccionando **[!UICONTROL Agregar etiquetas]**. Para mejorar el rendimiento, instale [cqTagLucene-0.0.1.zip hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip) que está disponible en [!DNL Software Distribution].
 
 ### [!DNL Brand Portal] {#brandportal-6580}
 
