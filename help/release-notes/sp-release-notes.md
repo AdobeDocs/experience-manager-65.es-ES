@@ -3,14 +3,14 @@ title: '[!DNL Experience Manager] Notas de la versión de service pack 6.5'
 description: Notas de versión específicas de [!DNL Adobe Experience Manager] 6.5 service pack 8
 docset: aem65
 mini-toc-levels: 1
+exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 translation-type: tm+mt
-source-git-commit: fb1423b7ae110b8a3cf8e0e389394e9266157a9f
+source-git-commit: e2eb007eb7660004f98b4c26aba00a6a6e2a2f1a
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3418'
 ht-degree: 5%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] Notas de la versión de service pack 6.5  {#aem-service-pack-release-notes}
 
@@ -154,9 +154,11 @@ La siguiente es la lista de correcciones que se proporcionan en la versión [!DN
 
 * Al agregar una estructura de página a un grupo de comunidad, el título [!UICONTROL Grupo] de la ruta de exploración se cambia al título de la primera [!UICONTROL Página] (NPR-35803).
 * A diferencia de los moderadores, un miembro estándar de la comunidad no puede acceder ni editar ningún borrador del anuncio (NPR-35339).
-* Se han roto el control de acceso y la denegación de servicio con DSRPReindexServlet, lo que hace que el sitio de las comunidades caiga hasta que se complete la indexación (NPR-35591).
+* Se han roto el control de acceso y la denegación de servicio con `DSRPReindexServlet`, lo que hace que el sitio de comunidades se cierre hasta que se complete la indexación (NPR-35591).
 * Al eliminar [!UICONTROL Todos los usuarios] del campo [!UICONTROL Administradores], estos no se eliminan del back-end (NPR-35592, NPR-35611).
 * El componente [!UICONTROL Componer mensaje] no devuelve ningún resultado cuando el texto introducido coincide parcialmente (NPR-35666).
+
+* Al intentar agregar etiquetas a un nuevo blog seleccionando **Agregar etiquetas**, se observa cierto impacto en el rendimiento. Para mejorar el rendimiento, instale [cqTagLucene-0.0.1.zip hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip) que resuelva el problema de sugerencia de etiquetas. Puede descargar la corrección desde [!DNL Software Distribution].
 
 ### [!DNL Brand Portal] {#brandportal-6580}
 
