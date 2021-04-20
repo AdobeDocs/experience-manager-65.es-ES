@@ -3,8 +3,8 @@ title: Administrar colecciones de recursos digitales
 description: Conozca las tareas para administrar las colecciones de recursos, como crear, ver, eliminar, editar y descargar colecciones.
 contentOwner: AG
 mini-toc-levels: 1
-role: Profesional empresarial
-feature: Colecciones,Administración de activos
+role: Business Practitioner
+feature: Collections,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

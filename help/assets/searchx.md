@@ -2,8 +2,8 @@
 title: Amplíe la funcionalidad de búsqueda.
 description: Amplíe las capacidades de búsqueda de [!DNL Adobe Experience Manager Assets] más allá de los valores predeterminados.
 contentOwner: AG
-role: Desarrollador
-feature: 'Búsqueda  '
+role: Developer
+feature: Search
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

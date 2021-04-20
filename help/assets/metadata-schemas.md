@@ -2,8 +2,8 @@
 title: 'Esquemas de metadatos para definir el diseño de la página de propiedades de metadatos en [!DNL Adobe Experience Manager Assets]. '
 description: El esquema de metadatos define el diseño de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar un esquema de metadatos y cómo aplicar un esquema de metadatos a los recursos.
 contentOwner: AG
-role: Profesional empresarial, administrador
-feature: Metadatos
+role: Business Practitioner, Administrator
+feature: Metadata
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

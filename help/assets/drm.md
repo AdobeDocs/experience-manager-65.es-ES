@@ -2,8 +2,8 @@
 title: Digital Rights Management de los activos
 description: Aprenda a administrar los estados de caducidad de los recursos y la información de los recursos con licencia en [!DNL Experience Manager].
 contentOwner: AG
-role: Profesional empresarial, administrador
-feature: DRM,Administración de activos
+role: Business Practitioner, Administrator
+feature: DRM,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

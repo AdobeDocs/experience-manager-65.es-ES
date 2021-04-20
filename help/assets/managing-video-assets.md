@@ -2,8 +2,8 @@
 title: Administrar recursos de vídeo
 description: Cargar, previsualizar, anotar y publicar recursos de vídeo en [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Profesional empresarial
-feature: Administración de activos
+role: Business Practitioner
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

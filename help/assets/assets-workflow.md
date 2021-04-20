@@ -2,8 +2,8 @@
 title: Procesamiento de recursos mediante flujos de trabajo
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
-feature: Flujo de trabajo, representaciones
-role: Profesional empresarial, administrador
+feature: Workflow, Renditions
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

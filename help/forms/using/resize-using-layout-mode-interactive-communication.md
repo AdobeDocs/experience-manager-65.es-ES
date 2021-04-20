@@ -1,7 +1,7 @@
 ---
 title: Utilice el modo Diseño para cambiar el tamaño de los componentes para la comunicación interactiva
 description: 'Definir la posición de los componentes mediante la cuadrícula adaptable disponible en el modo Diseño '
-feature: Comunicación interactiva
+feature: Interactive Communication
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

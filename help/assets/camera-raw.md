@@ -2,8 +2,8 @@
 title: '[!DNL Adobe Camera Raw] asistencia técnica.'
 description: Aprenda a habilitar la compatibilidad con [!DNL Adobe Camera Raw] en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Administrador
-feature: Herramientas para desarrolladores
+role: Administrator
+feature: Developer Tools
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

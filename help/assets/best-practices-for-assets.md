@@ -2,8 +2,8 @@
 title: Prácticas recomendadas para [!DNL Assets]
 description: Mejora la estabilidad del sistema y el rendimiento bajo carga al identificar y cumplir con las prácticas recomendadas que dependen de su implementación y configuración.
 contentOwner: AG
-feature: Administración de activos
-role: Arquitecto, Administrador
+feature: Asset Management
+role: Architect, Administrator
 translation-type: tm+mt
 source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt

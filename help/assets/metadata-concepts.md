@@ -2,8 +2,8 @@
 title: Explicación de los conceptos de metadatos
 description: Obtenga información sobre la necesidad de y los tipos de metadatos que permiten una categorización y organización más sencillas de los recursos.
 contentOwner: AG
-role: Profesional empresarial, administrador
-feature: Metadatos
+role: Business Practitioner, Administrator
+feature: Metadata
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

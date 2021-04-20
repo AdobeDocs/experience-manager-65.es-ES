@@ -7,7 +7,7 @@ user-guide-title: Guía del usuario de administración de AEM 6.5
 breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
 feature-set: Experience Manager Sites,Experience Manager Assets,Experience Manager
-feature: Administración
+feature: Administering
 role: Administrator
 translation-type: tm+mt
 source-git-commit: b8970a8b2f7063a9bc5f7882ffa3598cabdef548

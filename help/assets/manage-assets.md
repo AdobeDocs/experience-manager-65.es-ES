@@ -4,7 +4,7 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner
-feature: Administración de recursos,Buscar
+feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 translation-type: tm+mt
 source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0

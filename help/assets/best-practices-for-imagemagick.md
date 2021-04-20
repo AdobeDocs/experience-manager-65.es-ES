@@ -2,8 +2,8 @@
 title: Instalación y configuración de ImageMagick
 description: Obtenga información sobre el software ImageMagick, cómo instalarlo, configurar el paso del proceso de la línea de comandos y utilizarlo para editar, componer y generar miniaturas de imágenes.
 contentOwner: AG
-role: Administrador
-feature: Representaciones,Herramientas para desarrolladores
+role: Administrator
+feature: Renditions,Developer Tools
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

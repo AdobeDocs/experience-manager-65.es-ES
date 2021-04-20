@@ -4,8 +4,8 @@ description: Obtenga información sobre la compatibilidad con la accesibilidad e
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: Accesibilidad
-role: Profesional empresarial, administrador
+feature: Accessibility
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: Habilitar la detección de recursos duplicados
 description: Obtenga información sobre cómo habilitar la detección de recursos duplicados en Experience Manager.
 contentOwner: AG
-role: Profesional empresarial, administrador
-feature: Administración de activos,Informes de activos
+role: Business Practitioner, Administrator
+feature: Asset Management,Asset Reports
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

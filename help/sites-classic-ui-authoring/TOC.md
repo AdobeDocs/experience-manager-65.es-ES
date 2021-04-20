@@ -6,8 +6,8 @@ audience: end-user
 user-guide-title: Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic
 user-guide-description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
 feature-set: Experience Manager Sites
-feature: 'Creación  '
-role: Profesional empresarial
+feature: Authoring
+role:  Business Practitioner
 translation-type: tm+mt
 source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
 workflow-type: tm+mt

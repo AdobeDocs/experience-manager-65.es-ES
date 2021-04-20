@@ -2,8 +2,8 @@
 title: Configuración y administración de la funcionalidad de metadatos.
 description: Configuración y administración de la funcionalidad [!DNL Experience Manager Assets] relacionada con la adición y administración de metadatos.
 contentOwner: AG
-role: Profesional empresarial, administrador
-feature: Metadatos
+role: Business Practitioner, Administrator
+feature: Metadata
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

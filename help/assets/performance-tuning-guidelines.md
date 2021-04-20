@@ -3,8 +3,8 @@ title: Ajuste de rendimiento [!DNL Assets].
 description: Sugerencias y sugerencias sobre [!DNL Experience Manager] configuración, cambios en hardware, software y componentes de red para eliminar cuellos de botella y optimizar el rendimiento de [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
-role: Arquitecto, Administrador
-feature: Administración de activos
+role: Architect, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

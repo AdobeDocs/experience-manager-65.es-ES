@@ -2,8 +2,8 @@
 title: Activos relacionados
 description: Aprenda a relacionar recursos digitales que comparten algunos atributos comunes. Cree también relaciones derivadas de origen entre recursos digitales.
 contentOwner: AG
-role: Profesional empresarial
-feature: Colaboración,Administración de activos
+role: Business Practitioner
+feature: Collaboration,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

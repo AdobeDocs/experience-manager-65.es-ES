@@ -2,8 +2,8 @@
 title: '[!DNL Assets] guía de tamaño'
 description: Prácticas recomendadas para determinar métricas eficientes para estimar la infraestructura y los recursos necesarios para implementar [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Arquitecto, Administrador
-feature: Administración de activos
+role: Architect, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

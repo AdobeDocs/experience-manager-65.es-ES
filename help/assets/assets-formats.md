@@ -2,8 +2,8 @@
 title: Formatos de archivo compatibles y tipos MIME
 description: Formatos de archivo y tipos MIME admitidos por [!DNL Assets] and [!DNL Dynamic Media] y las funciones compatibles con cada formato.
 contentOwner: AG
-role: Profesional empresarial, administrador
-feature: Administración de recursos,Representaciones
+role: Business Practitioner, Administrator
+feature: Asset Management,Renditions
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

@@ -3,8 +3,8 @@ title: Vista previa de recursos 3D
 description: Obtenga información sobre cómo previsualizar recursos 3D
 contentOwner: Rick Brough
 docset: aem65
-feature: Recursos 3D
-role: Profesional empresarial
+feature: 3D Assets
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

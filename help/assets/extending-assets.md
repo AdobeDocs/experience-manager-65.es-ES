@@ -2,8 +2,8 @@
 title: Personalizar y ampliar [!DNL Assets]
 description: Conozca las formas en que puede personalizar y ampliar Asset Share y Asset Editor, que presentan a los usuarios una interfaz y un conjunto de funciones específicos.
 contentOwner: AG
-role: Desarrollador
-feature: Herramientas para desarrolladores
+role: Developer
+feature: Developer Tools
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

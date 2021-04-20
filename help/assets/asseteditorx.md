@@ -2,8 +2,8 @@
 title: Ampliar editor de recursos
 description: Obtenga información sobre cómo ampliar las capacidades del Editor de recursos mediante componentes personalizados.
 contentOwner: AG
-role: Profesional empresarial, administrador
-feature: Herramientas para desarrolladores
+role: Business Practitioner, Administrator
+feature: Developer Tools
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

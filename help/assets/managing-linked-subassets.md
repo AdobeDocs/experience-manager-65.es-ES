@@ -2,8 +2,8 @@
 title: Administrar recursos compuestos con referencias y varias páginas
 description: Aprenda a crear referencias a recursos digitales desde  [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para ver páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
-role: Profesional empresarial, administrador
-feature: Administración de activos
+role: Business Practitioner, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
 workflow-type: tm+mt

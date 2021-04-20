@@ -2,8 +2,8 @@
 title: Configuración del etiquetado de recursos mediante el servicio de contenido inteligente
 description: Aprenda a configurar el etiquetado inteligente y el etiquetado inteligente mejorado en [!DNL Adobe Experience Manager], mediante el servicio de contenido inteligente.
 contentOwner: AG
-role: Administrador
-feature: Etiquetado,Etiquetas inteligentes
+role: Administrator
+feature: Tagging,Smart Tags
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

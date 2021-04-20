@@ -2,8 +2,8 @@
 title: Plantillas de recursos
 description: Obtenga información sobre las plantillas de recursos en [!DNL Adobe Experience Manager Assets] y cómo usar las plantillas de recursos para crear material publicitario de marketing.
 contentOwner: AG
-role: Profesional empresarial
-feature: Administración de recursos,Herramientas para desarrolladores
+role: Business Practitioner
+feature: Asset Management,Developer Tools
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

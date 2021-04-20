@@ -1,7 +1,7 @@
 ---
 title: Creación y sincronización de Live Copies
 description: Aprenda a crear y sincronizar Live Copies.
-feature: Administrador de varios sitios
+feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 translation-type: tm+mt
 source-git-commit: 05dc73448d6902ccdbc92782fff39ef1a6339056
