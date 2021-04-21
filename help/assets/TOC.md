@@ -6,12 +6,11 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, procese y distribuya recursos digitales.
-feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: 36454754ac726471c611adcc942548d3501109b7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
