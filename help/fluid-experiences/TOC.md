@@ -4,12 +4,11 @@ user-guide-title: AEM experiencias fluidas
 breadcrumb-title: Guía de experiencias fluidas
 user-guide-description: AEM Experiencias fluidas se basa en los potentes conjuntos de funciones de AEM Sites, AEM Dynamic Media y AEM Assets para proporcionar una solución sólida para la entrega de contenido sin objetivos.
 index: n
-feature-set: Experience Manager Sites
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '41'
 ht-degree: 0%
 
 ---
