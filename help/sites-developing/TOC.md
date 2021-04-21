@@ -6,13 +6,12 @@ audience: end-user
 user-guide-title: Guía del usuario sobre desarrollo en AEM 6.5
 breadcrumb-title: Guía de desarrollo
 user-guide-description: Esta guía explica cómo crear una instancia de AEM.
-feature-set: Experience Manager Sites
-feature: Developing
+feature: Desarrollo de
 role: Developer
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '919'
 ht-degree: 16%
 
 ---
