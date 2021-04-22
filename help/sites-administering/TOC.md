@@ -9,10 +9,10 @@ user-guide-description: Obtenga más información sobre la administración de AE
 feature: Administración
 role: Administrator
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 06cbf5ccc957b0cb5bd24c820f5209821ae92cd9
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 19%
+source-wordcount: '665'
+ht-degree: 20%
 
 ---
 
@@ -165,6 +165,7 @@ ht-degree: 19%
    + [AEM Sites: preparación para el RGPD](gdpr-compliance-sites.md)
    + [Gestión de solicitudes de RGPD para la base de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [Comercio AEM - Preparación para el RGPD](gdpr-compliance-commerce.md)
++ Administración de contenido {#contentmanagement}
    + [Cómo trabajar con paquetes](package-manager.md)
    + [Administración de etiquetas](tags.md)
    + [El Exportador de páginas](page-exporter.md)
