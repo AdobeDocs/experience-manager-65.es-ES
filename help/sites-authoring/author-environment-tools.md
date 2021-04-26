@@ -10,14 +10,14 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
+exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2239'
 ht-degree: 97%
 
 ---
-
 
 # Creación: Entorno y herramientas{#authoring-the-environment-and-tools}
 
@@ -141,7 +141,7 @@ Desde la barra de herramientas superior del navegador de recursos puede filtrar 
 * Nombre
 * Ruta
 * Tipo de recurso, por ejemplo imágenes, manuscritos, documentos, vídeos, páginas, párrafos y productos
-* Características del recurso, como Orientación (vertical, horizontal, cuadrada) y Estilo (color, monocromo, escala de grises)
+* Características de los recursos, como Orientación (Vertical, Horizontal, Cuadrado) y Estilo (Color, Monocromo, Escala de grises)
 
    * Disponible solo para determinados tipos de recursos
 
@@ -243,7 +243,7 @@ Seleccione el tipo de referencia apropiado para obtener más información. En de
 
 * Instancias de contenido prestado mediante el componente de **referencia**; desde aquí puede navegar hasta la página de referencia o a la que se hace referencia
 
-* [Referencias a páginas de producto](/help/sites-administering/generic.md#showing-product-references) (disponibles desde la consola Comercio - Productos)
+* [Referencias a páginas de producto](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponibles desde la consola Comercio - Productos)
 * [Lanzamientos](/help/sites-authoring/launches.md), que proporciona acceso a lanzamientos relacionados.
 * [](/help/sites-administering/msm.md)Live Copies muestra las rutas de todas las Live Copies que se basan en el recurso seleccionado.
 * [Modelo](/help/sites-administering/msm-best-practices.md), proporciona detalles y diversas acciones
@@ -286,7 +286,7 @@ La Información de página (icono de ecualizador) abre un menú que también mue
 Por ejemplo, cuando corresponda, **Información de página** también dispone de las opciones siguientes:
 
 * [Promocionar lanzamiento](/help/sites-authoring/launches-promoting.md) si la página es nueva.
-* [Abrir en la ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) IU clásicasi un administrador ha  [habilitado estas opciones](/help/sites-administering/enable-classic-ui-editor.md)
+* [Abrir en la ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interfaz de usuario clásicasi esta opción ha sido  [habilitada por un administrador](/help/sites-administering/enable-classic-ui-editor.md)
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones cuando es necesario.
 
