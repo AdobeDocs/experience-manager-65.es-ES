@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
-feature: Carousel Banners
+feature: Banner de carrusel
 role: Business Practitioner, Administrator
+exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '4807'
+source-wordcount: '4804'
 ht-degree: 4%
 
 ---
-
 
 # Banner de carrusel{#carousel-banners}
 
@@ -57,7 +57,7 @@ Para ponerle en marcha rápidamente:
 
    >[!NOTE]
    >
-   >Si es cliente de AEM Sites o comercio electrónico, puede utilizar la función integrada para navegar a las páginas de producto y buscar los SKU existentes en el catálogo de productos. No es necesario introducir manualmente variables de zona interactiva o mapa de imagen. Consulte la información sobre la [configuración de eCommerce](/help/sites-administering/generic.md).
+   >Si es cliente de AEM Sites o comercio electrónico, puede utilizar la función integrada para navegar a las páginas de producto y buscar los SKU existentes en el catálogo de productos. No es necesario introducir manualmente variables de zona interactiva o mapa de imagen. Consulte la información sobre la [configuración de eCommerce](/help/commerce/cif-classic/administering/generic.md).
    >
    >
    >Si es cliente de AEM Assets y Dynamic Media, debe introducir manualmente los datos de las zonas interactivas y los mapas de imágenes y, a continuación, integrar la URL publicada o el código incrustado con el sistema de administración de contenido de terceros.
@@ -104,7 +104,7 @@ Al agregar zonas interactivas o mapas de imágenes a una imagen de banner en AEM
 
 >[!NOTE]
 >
->Si es cliente de AEM Sites o AEM comercio electrónico, omita este paso. No es necesario identificar manualmente las variables de zona interactiva o mapa de imagen; puede utilizar la integración con comercio electrónico para la integración del producto. Consulte la información sobre la [configuración de eCommerce](/help/sites-administering/generic.md). Además, puede utilizar el componente interactivo y añadirlo a su página web.
+>Si es cliente de AEM Sites o AEM comercio electrónico, omita este paso. No es necesario identificar manualmente las variables de zona interactiva o mapa de imagen; puede utilizar la integración con comercio electrónico para la integración del producto. Consulte la información sobre la [configuración de eCommerce](/help/commerce/cif-classic/administering/generic.md). Además, puede utilizar el componente interactivo y añadirlo a su página web.
 >
 >Si es cliente de AEM Assets o Media, publica la URL o el código incrustado y, a continuación, integre el sistema de administración de contenido de terceros e identifique los puntos interactivos y los mapas de imágenes manualmente.
 
