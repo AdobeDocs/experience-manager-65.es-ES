@@ -9,10 +9,10 @@ user-guide-description: Obtenga más información sobre la administración de AE
 feature: Administración
 role: Administrator
 translation-type: tm+mt
-source-git-commit: 06cbf5ccc957b0cb5bd24c820f5209821ae92cd9
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 20%
+source-wordcount: '637'
+ht-degree: 18%
 
 ---
 
@@ -109,13 +109,6 @@ ht-degree: 20%
    + [Configuración de la segmentación](campaign-segmentation.md)
    + [Ampliación y configuración del Importador de diseños para páginas de aterrizaje](extending-the-design-importer-for-landingpages.md)
    + [Integración de páginas de aterrizaje con Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
-+ eCommerce {#ecommerce}
-   + [eCommerce](ecommerce.md)
-   + [Conceptos ](concepts.md)
-   + [Administración del comercio electrónico genérico](generic.md)
-   + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   + [Commerce Cloud SAP](sap-commerce-cloud.md)
-   + [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
 + Integración {#integration}
    + [Integración con servicios de terceros](third-party-services.md)
    + [Integración con Salesforce](salesforce.md)
