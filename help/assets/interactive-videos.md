@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
-feature: Interactive Videos
+feature: Vídeos interactivos
 role: Business Practitioner, Administrator
+exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '6061'
+source-wordcount: '6058'
 ht-degree: 5%
 
 ---
-
 
 # Vídeos interactivos{#interactive-videos}
 
@@ -73,7 +73,7 @@ Pasos de vídeo interactivo:
 
 1. **(Opcional) Identificación de variables de vista rápida** : comience identificando las variables dinámicas que usa la implementación de vista rápida existente. Las variables se utilizan para asignar miniaturas de productos a la vista rápida de su producto correspondiente al crear el vídeo interactivo. Consulte [(Opcional) Identificación de variables de vista rápida](#optional-identifying-quickview-variables).
    *Tenga en cuenta que este paso solo es necesario si se cumplen todas las condiciones siguientes*: ・ Desea agregar interactividad al vídeo activando las vistas rápidas.
-・ La implementación de AEM *no* utiliza un marco de integración de comercio electrónico para extraer datos de productos de AEM de cualquier solución de comercio electrónico, como IBM Websphere Commerce, Elastic Path, hybris o Intershop. Consulte [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).
+・ La implementación de AEM *no* utiliza un marco de integración de comercio electrónico para extraer datos de productos de AEM de cualquier solución de comercio electrónico, como IBM Websphere Commerce, Elastic Path, hybris o Intershop. Consulte [eCommerce concepts in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Opcional) Creación de un ajuste preestablecido de visualizador de vídeo interactivo** : Personalice el aspecto y el comportamiento de los distintos componentes que componen el reproductor, como la barra de desplazamiento del vídeo y las miniaturas interactivas.
 No es necesario crear su propio ajuste preestablecido de visualizador de vídeo interactivo si desea utilizar en su lugar los ajustes preestablecidos de visualizador de vídeo interactivo `Shoppable_Video_Light` o `Shoppable_Video_Dark` predeterminados.
@@ -98,7 +98,7 @@ Si utiliza un WCM de terceros (Web Content Manager), debe integrar el nuevo víd
 >[!NOTE]
 Esta tarea solo es necesaria si los siguientes son verdaderos:
 * Desea agregar interactividad al vídeo activando las vistas rápidas.
-* Su implementación de AEM utiliza *no* un marco de integración de comercio electrónico para extraer datos de productos de AEM de cualquier solución de comercio electrónico, como IBM Websphere Commerce, Elastic Path, hybris o Intershop. Consulte [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).
+* Su implementación de AEM utiliza *no* un marco de integración de comercio electrónico para extraer datos de productos de AEM de cualquier solución de comercio electrónico, como IBM Websphere Commerce, Elastic Path, hybris o Intershop. Consulte [eCommerce concepts in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 Si la implementación de AEM utiliza eCommerce, puede omitir esta tarea y continuar con la siguiente tarea.
 
@@ -470,7 +470,7 @@ Para añadir interactividad al vídeo:
       En la línea de tiempo, pulse un segmento que desee dividir por la mitad y, a continuación, pulse **[!UICONTROL Dividir segmento]** en la barra de herramientas.
 
       Al seleccionar dos o más segmentos, se deshabilita la función **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Dividir un segmento seleccionado de diez segundos en dos segmentos de cinco segundos cada uno.
 
