@@ -10,14 +10,14 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
+exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 translation-type: tm+mt
-source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 95%
 
 ---
-
 
 # Gestión básica{#basic-handling}
 
@@ -103,12 +103,12 @@ En Navegación, las consolas disponibles son:
    <td>Estas consolas le permiten importar y <a href="/help/assets/home.md">administrar recursos digitales</a>, como imágenes, vídeos, documentos y archivos de audio. Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM. </td>
   </tr>
   <tr>
-   <td>Comunidades</td>
+   <td>Communities</td>
    <td>Esta consola permite crear y administrar <a href="/help/communities/sites-console.md">sitios de comunidad</a> para <a href="/help/communities/overview.md#engagement-community">participar</a> en ellos según se vayan <a href="/help/communities/overview.md#enablement-community">activando</a>.</td>
   </tr>
   <tr>
    <td>Comercio</td>
-   <td>Esto le permite administrar productos, catálogos de productos y pedidos relacionados con sus sitios de <a href="/help/sites-administering/ecommerce.md">comercio</a>.</td>
+   <td>Esto le permite administrar productos, catálogos de productos y pedidos relacionados con sus sitios de <a href="/help/commerce/cif-classic/administering/ecommerce.md">comercio</a>.</td>
   </tr>
   <tr>
    <td>Fragmentos de experiencias</td>
@@ -147,7 +147,7 @@ En el panel Herramientas, todas las opciones del panel lateral contienen distint
 
 El encabezado siempre está presente en la parte superior de la pantalla. Aunque la mayoría de las opciones del encabezado no varían en todo el sistema, algunas dependen del contexto.
 
-![bh-05](assets/bh-03.png)
+![bh-03](assets/bh-03.png)
 
 * [Navegación global](#navigatingconsolesandtools)
 
@@ -193,7 +193,7 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
 * Rutas de exploración
 
-   ![bh-03](assets/bh-05.png)
+   ![bh-05](assets/bh-05.png)
 
    Las rutas de exploración, que se encuentran en el centro del raíl y siempre muestran la descripción del elemento seleccionado, le permiten desplazarse dentro de una consola específica. Desde la consola Sitios puede desplazarse por los niveles de su sitio web.
 
@@ -225,9 +225,9 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
 * Navegación por teclado
 
-   Puede navegar por un sitio web utilizando solo el teclado. Utiliza la funcionalidad estándar del explorador de la tecla **TAB** (o **OPT+TAB**) para desplazar al usuario entre los elementos de la página que pueden *centrarse*.
+   Puede navegar por un sitio web utilizando solo el teclado. Utiliza la funcionalidad estándar del explorador de la tecla **TAB** (u **OPT+TAB**) para desplazarlo entre los elementos de la página que son *enfocables*.
 
-   En la consola **Sites** hay una opción agregada para **Omitir al contenido principal**. Esto se hace visible a medida que *tab* pasa por las opciones de encabezado y acelera la navegación permitiéndole omitir los elementos estándar en la barra de herramientas (producto) y llevándolo directamente al contenido principal.
+   En la consola **Sites** hay una opción agregada para **Omitir al contenido principal**. Esto se hace visible a medida que *tab* pasa por las opciones de encabezado y acelera la navegación al permitirle omitir los elementos estándar en la barra de herramientas (del producto) y llevarle directamente al contenido principal.
 
    ![bh-30](assets/bh-30.png)
 
@@ -345,13 +345,13 @@ La selección de un recurso específico depende de la vista y el dispositivo com
    <td>Vista de tarjeta<br /> </td>
    <td>
     <ul>
-     <li>Escritorio:<br /> pase el ratón por encima y, a continuación, utilice la acción rápida de marca de verificación</li>
+     <li>Escritorio:<br /> pase el ratón por encima y utilice la acción rápida de marca de verificación</li>
      <li>Dispositivo móvil: <br /> toque y mantenga pulsada la tarjeta.</li>
     </ul> </td>
    <td>
     <ul>
      <li>Escritorio:<br /> Haga clic en la tarjeta</li>
-     <li>Dispositivo móvil:<br /> toque la tarjeta</li>
+     <li>Dispositivo móvil:<br /> Toque la tarjeta</li>
     </ul> </td>
   </tr>
   <tr>
@@ -416,7 +416,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
    * El nombre del recurso y las comillas angulares se resaltarán cuando los toque o haga clic en ellos.
 
-   ![bh-15](assets/bh-17.png)
+   ![bh-17](assets/bh-17.png)
 
    * Los elementos secundarios del recurso que ha tocado o en el que ha hecho clic se muestran en la columna a la derecha de dicho recurso.
    * Si toca o hace clic en el nombre de un recurso sin elementos secundarios, sus detalles se muestran en la última columna.
@@ -593,4 +593,3 @@ La sección **Referencias** muestra cualquier conexión con el recurso seleccion
 Se abrirá un panel similar al de [Buscar](/help/sites-authoring/search.md) con filtros de ubicación apropiados ya establecidos, lo que le permite filtrar aún más el contenido que desea ver.
 
 ![bh-29](assets/bh-29.png)
-
