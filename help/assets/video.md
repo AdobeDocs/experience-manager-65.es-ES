@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
-feature: Asset Management
+feature: Administración de activos
 role: Business Practitioner, Administrator
+exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '11745'
+source-wordcount: '11752'
 ht-degree: 8%
 
 ---
-
 
 # Vídeo en Dynamic Media {#video}
 
@@ -404,7 +404,7 @@ Por ejemplo, suponga que el vídeo de origen es de 1920 x 1080. En la tabla sigu
 
 | Tipo de vídeo | Anchura x Altura | Proporción de anchura | Proporción de altura |
 |--- |--- |--- |--- |
-| Origen | 1920x1080 | 1 | 3 |
+| Origen | 1920x1080 | 1 | 1 |
 | Codificado | 960 x 540 | 2 | 2 |
 | Codificado | 640 x 360 | 3 | 1 |
 | Codificado | 480 x 270 | 4 | 4 |
@@ -419,19 +419,19 @@ Puede publicar recursos de vídeo locales AEM directamente en un canal de YouTub
 
 Para publicar recursos de vídeo en YouTube, configure AEM Assets con etiquetas. Estas etiquetas se asocian a un canal de YouTube. Si la etiqueta de un recurso de vídeo coincide con la etiqueta de un canal de YouTube, el vídeo se publica en YouTube. La publicación en YouTube se produce junto con una publicación normal del vídeo, siempre que se utilice una etiqueta asociada.
 
-YouTube hace su propia codificación. De este modo, el archivo de vídeo original que se cargó en AEM se publica en YouTube en lugar de en cualquier representación de vídeo que haya creado la codificación de Dynamic Media. Aunque no es necesario procesar vídeos con Dynamic Media, se espera que lo hagan en caso de que se necesite un ajuste preestablecido de visualizador para la reproducción.
+YouTube hace su propia codificación. De este modo, el archivo de vídeo original que se cargó en AEM se publica en YouTube en lugar de en cualquier representación de vídeo que se haya creado con la codificación de Dynamic Media. Aunque no es necesario procesar vídeos con Dynamic Media, se espera que lo hagan en caso de que se necesite un ajuste preestablecido de visualizador para la reproducción.
 
 Al omitir el perfil de procesamiento de vídeo y publicar directamente en YouTube, solo significa que el recurso de vídeo en AEM recurso puede no obtener una miniatura visible. También significa que si se ejecuta en los modos de ejecución dynamic media o dynamic_media_scene7, los vídeos que no están codificados no funcionarán con ninguno de los tipos de recursos de Dynamic Media.
 
-La publicación de recursos de vídeo en servidores de YouTube implica completar las siguientes tareas para garantizar la autenticación segura de servidor a servidor con YouTube:
+La publicación de recursos de vídeo en servidores de YouTube implica completar las siguientes tareas para garantizar una autenticación segura de servidor a servidor con YouTube:
 
 1. [Configuración de la configuración de Google Cloud](#configuring-google-cloud-settings)
 1. [Creación de un canal de YouTube](#creating-a-youtube-channel)
 1. [Adición de etiquetas para la publicación](#adding-tags-for-publishing)
-1. [Activación del agente de replicación de publicación de YouTube](#enabling-the-youtube-publish-replication-agent)
+1. [Habilitar el agente de replicación de publicación de YouTube](#enabling-the-youtube-publish-replication-agent)
 1. [Configuración de YouTube en AEM](#setting-up-youtube-in-aem)
-1. [(Opcional) Automatización de la configuración de las propiedades predeterminadas de YouTube para los vídeos cargados](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Publicación de vídeos en su canal de YouTube](#publishing-videos-to-your-youtube-channel)
+1. [(Opcional) Automatización de la configuración de las propiedades de YouTube predeterminadas para los vídeos cargados](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
+1. [Publicación de vídeos en el canal de YouTube](#publishing-videos-to-your-youtube-channel)
 1. [(Opcional) Verificación del vídeo publicado en YouTube](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
 1. [Vinculación de URL de YouTube a la aplicación web](#linking-youtube-urls-to-your-web-application)
 
@@ -443,7 +443,7 @@ Para publicar en YouTube, necesita una cuenta de Google. Si tiene una cuenta de 
 
 La cuenta utilizada con Google Cloud y la cuenta de Google utilizada para YouTube no tienen por qué ser la misma.
 
-Tenga en cuenta que Google realiza cambios periódicamente en su interfaz de usuario. Como tal, los pasos para publicar videos en YouTube pueden variar ligeramente con respecto a lo que se documenta a continuación. Esta advertencia también se aplica a YouTube cuando se intenta comprobar si los vídeos se han cargado en él.
+Tenga en cuenta que Google realiza cambios periódicamente en su interfaz de usuario. Como tal, los pasos para publicar vídeos en YouTube pueden variar ligeramente con respecto a lo que se documenta a continuación. Esta advertencia también se aplica a YouTube cuando intenta comprobar si los vídeos se han cargado en él.
 
 >[!NOTE]
 >
@@ -481,7 +481,7 @@ Para configurar la configuración de Google Cloud:
 
 1. Cerca de la parte superior de la página API y servicios, pulse **[!UICONTROL Habilitar API y servicios.]**
 1. En la página Biblioteca de API, a la izquierda, en **[!UICONTROL Category]**, pulse **[!UICONTROL YouTube.]** En el lado derecho de la página, pulse la API de datos de  **[!UICONTROL YouTube.]**
-1. En la página API de datos de YouTube v3 , pulse **[!UICONTROL Habilitar.]**
+1. En la página API de datos de YouTube v3, pulse **[!UICONTROL Habilitar.]**
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
@@ -491,7 +491,7 @@ Para configurar la configuración de Google Cloud:
 
 1. En la página **[!UICONTROL Agregar credenciales al proyecto]**, paso 1, haga lo siguiente:
 
-   * Desde **[!UICONTROL Qué API está utilizando?]** lista desplegable, seleccione API de datos de  **[!UICONTROL YouTube v3.]**
+   * Desde **[!UICONTROL Qué API está utilizando?]** en la lista desplegable, seleccione API de datos de  **[!UICONTROL YouTube v3.]**
 
    * Desde **[!UICONTROL Desde dónde va a llamar a la API?]** lista desplegable, seleccione Servidor  **[!UICONTROL web (por ejemplo, node.js, Tomcat)]**
 
@@ -526,7 +526,7 @@ Para configurar la configuración de Google Cloud:
 
 1. En el encabezado **[!UICONTROL Product name displayed to users]** , en el campo de texto, introduzca lo que desee mostrar en la pantalla de consentimiento.
 
-   La pantalla de consentimiento se muestra al administrador de AEM cuando se autentican en YouTube; AEM contactará YouTube para obtener permiso.
+   La pantalla de consentimiento se muestra al administrador de AEM cuando se autentican en YouTube; AEM se pondrá en contacto con YouTube para obtener permiso.
 
 1. Haga clic en **[!UICONTROL Continuar.]**
 1. En la página Agregar credenciales a su proyecto, paso 4, bajo el encabezado **[!UICONTROL Descargar credenciales]**, pulse **[!UICONTROL Descargar.]**
@@ -543,7 +543,7 @@ Para configurar la configuración de Google Cloud:
 
 ### Creación de un canal de YouTube {#creating-a-youtube-channel}
 
-Para publicar vídeos en YouTube es necesario que tenga uno o más canales. Si ya ha creado un canal de YouTube, puede omitir esta tarea y ir a [Añadir etiquetas para publicar](/help/assets/video.md#adding-tags-for-publishing).
+La publicación de vídeos en YouTube requiere que tenga uno o más canales. Si ya ha creado un canal de YouTube, puede omitir esta tarea y ir a [Añadir etiquetas para publicar](/help/assets/video.md#adding-tags-for-publishing).
 
 >[!CAUTION]
 >
@@ -552,7 +552,7 @@ Para publicar vídeos en YouTube es necesario que tenga uno o más canales. Si y
 Para crear un canal de YouTube:
 
 1. Vaya a [https://www.youtube.com](https://www.youtube.com/) e inicie sesión con sus credenciales de cuenta de Google.
-1. En la esquina superior derecha de la página de YouTube, haga clic en la imagen de perfil (también puede aparecer como una carta dentro de un círculo de color sólido) y, a continuación, haga clic en **[!UICONTROL Configuración de YouTube]** (icono de engranaje redondo).
+1. En la esquina superior derecha de la página de YouTube, haga clic en la imagen de perfil (también puede aparecer como una letra dentro de un círculo de color sólido) y, a continuación, haga clic en **[!UICONTROL YouTube settings]** (icono de engranaje redondo).
 1. En la página Información general , en el encabezado Funciones adicionales , haga clic en **[!UICONTROL Ver todos mis canales o crear un nuevo canal.]**
 1. En la página Canales, haga clic en **[!UICONTROL Crear un nuevo canal.]**
 1. En la página Cuenta de marca , en el campo Nombre de cuenta de marca , introduzca un nombre comercial o cualquier otro nombre de canal que elija donde desea publicar los recursos de vídeo y, a continuación, haga clic en **[!UICONTROL Crear.]**
@@ -565,13 +565,13 @@ Para crear un canal de YouTube:
 
 ### Adición de etiquetas para la publicación {#adding-tags-for-publishing}
 
-Para publicar en sus vídeos en YouTube, AEM asocia etiquetas a uno o varios canales de YouTube. Para agregar etiquetas para la publicación, consulte [Administración de etiquetas](/help/sites-administering/tags.md).
+Para publicar en YouTube sus vídeos, AEM asocia etiquetas a uno o varios canales de YouTube. Para agregar etiquetas para la publicación, consulte [Administración de etiquetas](/help/sites-administering/tags.md).
 
-O bien, si tiene intención de utilizar las etiquetas predeterminadas en AEM, puede omitir esta tarea y ir a [Activación del agente de replicación de publicación de YouTube](#enabling-the-youtube-publish-replication-agent).
+O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir esta tarea y ir a [Activación del agente de replicación de YouTube Publish](#enabling-the-youtube-publish-replication-agent).
 
-### Activación del agente de replicación de publicación de YouTube {#enabling-the-youtube-publish-replication-agent}
+### Habilitar el agente de replicación de YouTube Publish {#enabling-the-youtube-publish-replication-agent}
 
-Después de habilitar el agente de replicación de publicación de YouTube, si desea probar la conexión con la cuenta de Google Cloud, pulse **[!UICONTROL Probar conexión.]** La ficha del explorador muestra los resultados de la conexión. Si ha añadido canales de YouTube, se mostrará un listado de estos como parte de la prueba.
+Después de habilitar el agente de replicación de YouTube Publish, si desea probar la conexión con la cuenta de Google Cloud, pulse **[!UICONTROL Probar conexión.]** La ficha del explorador muestra los resultados de la conexión. Si ha añadido canales de YouTube, se mostrará un listado de estos como parte de la prueba.
 
 1. En la esquina superior izquierda de AEM, haga clic en el logotipo de AEM y, a continuación, en el carril izquierdo, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Replicación]** > **[!UICONTROL Agentes en Author.]**
 1. En la página Agentes del autor, haga clic en **[!UICONTROL Publicación de YouTube (youtube).]**
@@ -598,7 +598,7 @@ A partir de AEM 6.4, se introdujo un nuevo método de interfaz de usuario tácti
 1. En la página Crear configuración de YouTube, en Configuración de plataforma de Google Cloud, en el campo **[!UICONTROL Nombre de aplicación]**, introduzca el ID de proyecto de Google.
 
    Ha especificado el ID del proyecto al configurar Google Cloud por primera vez.
-Deje abierta la página Crear configuración de YouTube; regresarás a él en un momento.
+Deje abierta la página Crear configuración de YouTube . regresarás a él en un momento.
 
    ![6_5_youtubepublish-createyoutubfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -640,7 +640,7 @@ Deje abierta la página Crear configuración de YouTube; regresarás a él en un
 1. Asegúrese de iniciar sesión en la instancia de Dynamic Media as a Administrator.
 
 1. En la esquina superior izquierda de AEM, pulse el logotipo de AEM y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Services.]**
-1. Bajo el encabezado Servicios de terceros, en YouTube, pulse **[!UICONTROL Configurar ahora.]**
+1. En el encabezado Servicios de terceros, en YouTube, pulse **[!UICONTROL Configurar ahora.]**
 1. En el cuadro de diálogo Crear configuración, introduzca un título (obligatorio) y un nombre (opcional) en los campos correspondientes.
 1. Toque **[!UICONTROL Crear.]**
 1. En el cuadro de diálogo Configuración de cuenta de YouTube, en el campo **[!UICONTROL Nombre de la aplicación]**, introduzca el ID del proyecto de Google.
@@ -681,7 +681,7 @@ Deje abierto el cuadro de diálogo Configuración de cuenta de YouTube; regresar
 
    Ahora publica vídeos en su canal de YouTube.
 
-### (Opcional) Automatización de la configuración de las propiedades predeterminadas de YouTube para los vídeos cargados {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### (Opcional) Automatización de la configuración de las propiedades de YouTube predeterminadas para los vídeos cargados {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
 Opcionalmente, puede automatizar la configuración de las propiedades de YouTube al cargar los vídeos. Esto se logra creando un perfil de procesamiento de metadatos en AEM.
 
@@ -717,7 +717,7 @@ Pegue el valor copiado en el editor de texto abierto. Necesitará este valor má
 1. En la página Perfiles de metadatos , cerca de la esquina superior derecha de la página, haga clic en **[!UICONTROL Crear.]**
 1. En el cuadro de diálogo Agregar perfil de metadatos, en el campo de texto **[!UICONTROL Título del perfil]**, escriba el nombre `YouTube Video` y haga clic en **[!UICONTROL Crear.]**
 1. En la página Editor de perfiles de metadatos , haga clic en la pestaña **[!UICONTROL Avanzar]**.
-1. Agregue al perfil los valores de Publicación de YouTube copiados haciendo lo siguiente:
+1. Agregue al perfil los valores de publicación de YouTube copiados haciendo lo siguiente:
 
    * A la derecha de la página, haga clic en la pestaña **[!UICONTROL Generar formulario]**.
    * (Opcional) Arrastre el componente etiquetado **[!UICONTROL Encabezado de sección]** a la izquierda y suéltelo en el área del formulario.
@@ -726,7 +726,7 @@ Pegue el valor copiado en el editor de texto abierto. Necesitará este valor má
    * Haga clic en la ficha **[!UICONTROL Generar formulario]**, arrastre el componente etiquetado **[!UICONTROL Texto de varios valores]** y suéltelo en el encabezado **[!UICONTROL Publicación de YouTube]** que acaba de crear.
 
    * Haga clic en **[!UICONTROL Etiqueta de campo]** para seleccionar el componente.
-   * A la derecha de la página, en la ficha Configuración , pegue los valores de Publicación de YouTube (valor de Etiqueta de campo y Valor de propiedad Asignar a ) que ha copiado anteriormente en sus respectivos campos del formulario. Pegue el valor Opciones en el campo Valor predeterminado .
+   * A la derecha de la página, en la ficha Configuración , pegue los valores de Publicación de YouTube (valor de Etiqueta de campo y Valor de Asignar a propiedad ) que ha copiado anteriormente en sus respectivos campos del formulario. Pegue el valor Opciones en el campo Valor predeterminado .
 
 1. Agregue al perfil los valores de privacidad de YouTube copiados haciendo lo siguiente:
 
@@ -737,34 +737,34 @@ Pegue el valor copiado en el editor de texto abierto. Necesitará este valor má
    * Haga clic en la ficha **[!UICONTROL Generar formulario]**, arrastre el componente etiquetado **[!UICONTROL Texto de varios valores]** y suéltelo en el encabezado **[!UICONTROL Privacidad de YouTube]** que acaba de crear.
 
    * Haga clic en **[!UICONTROL Etiqueta de campo]** para seleccionar el componente.
-   * A la derecha de la página, en la ficha Configuración , pegue los valores de Publicación de YouTube (valor de Etiqueta de campo y Valor de propiedad Asignar a ) que ha copiado anteriormente en sus respectivos campos del formulario. Pegue el valor Opciones en el campo Valor predeterminado .
+   * A la derecha de la página, en la ficha Configuración , pegue los valores de Publicación de YouTube (valor de Etiqueta de campo y Valor de Asignar a propiedad ) que ha copiado anteriormente en sus respectivos campos del formulario. Pegue el valor Opciones en el campo Valor predeterminado .
 
 1. Junto a la esquina superior derecha de la página, haga clic en **[!UICONTROL Guardar.]**
-1. Aplique el perfil de metadatos de publicación de YouTube a las carpetas en las que va a cargar los vídeos. Deberá tener configurados tanto el perfil de metadatos como el perfil de vídeo.
+1. Aplique el perfil de metadatos de publicación de YouTube a las carpetas donde vaya a cargar los vídeos. Deberá tener configurados tanto el perfil de metadatos como el perfil de vídeo.
 
    Consulte [Perfiles de metadatos](/help/assets/metadata-config.md#metadata-profiles) y [Perfiles de vídeo](/help/assets/video-profiles.md).
 
-### Publicación de vídeos en su canal de YouTube {#publishing-videos-to-your-youtube-channel}
+### Publicación de vídeos en el canal de YouTube {#publishing-videos-to-your-youtube-channel}
 
-Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. Este proceso permite AEM qué recursos publicar en su canal de YouTube.
-
->[!NOTE]
->
->Cuando se ejecuta en modo Dynamic Media - Scene7, tenga en cuenta que la publicación inmediata no se publica automáticamente en YouTube. Cuando se configura el modo Dynamic Media - Scene7, hay dos opciones de publicación entre las que elegir: **[!UICONTROL Inmediatamente]** o **[!UICONTROL Tras la activación.]**
->
->**[!UICONTROL Publicar]** inmediatamente significa que el recurso cargado (una vez sincronizado con IPS) se publica automáticamente en el sistema de envío. Aunque eso es cierto para Dynamic Media, no es cierto para YouTube. Para publicar en YouTube, debe publicar mediante AEM Author.
+Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. Este proceso permite AEM qué recursos publicar en el canal de YouTube.
 
 >[!NOTE]
 >
->Para publicar contenido de YouTube, AEM utiliza el flujo de trabajo **[!UICONTROL Publicar en YouTube]** , que permite supervisar el progreso y ver la información sobre cualquier error.
+>Cuando se ejecute en el modo Dynamic Media - Scene7, tenga en cuenta que la publicación inmediata no se publica automáticamente en YouTube. Cuando se configura el modo Dynamic Media - Scene7, hay dos opciones de publicación entre las que elegir: **[!UICONTROL Inmediatamente]** o **[!UICONTROL Tras la activación.]**
+>
+>**[!UICONTROL Publicar]** inmediatamente significa que el recurso cargado (una vez sincronizado con IPS) se publica automáticamente en el sistema de envío. Aunque eso es cierto para Dynamic Media, no es así para YouTube. Para publicar en YouTube, debe publicar mediante AEM Author.
+
+>[!NOTE]
+>
+>Para publicar contenido de YouTube, AEM utiliza el flujo de trabajo **[!UICONTROL Publicar en YouTube]** , que permite supervisar el progreso y ver la información de los errores.
 >
 >Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
->Para obtener información de progreso más detallada, puede supervisar el registro de YouTube en la replicación. Sin embargo, tenga en cuenta que esta supervisión requiere acceso de administrador.
+>Para obtener información de progreso más detallada, puede monitorizar el registro de YouTube en la replicación. Sin embargo, tenga en cuenta que esta supervisión requiere acceso de administrador.
 
-Para publicar vídeos en su canal de YouTube:
+Para publicar vídeos en el canal de YouTube:
 
-1. En AEM, busque un recurso de vídeo que desee publicar en su canal de YouTube.
+1. En AEM, vaya a un recurso de vídeo que desee publicar en el canal de YouTube.
 1. Seleccione el recurso de vídeo (el conjunto de vídeos adaptables).
 1. En la barra de herramientas, haga clic en **[!UICONTROL Propiedades.]**
 1. En la pestaña Básico , bajo el encabezado Metadatos , haga clic en **[!UICONTROL Abrir cuadro de diálogo de selección]** a la derecha del campo Etiquetas .
@@ -778,11 +778,11 @@ Para publicar vídeos en su canal de YouTube:
 
    Consulte también [Uso de Administración de publicaciones con AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
 
-   Opcionalmente, puede verificar el vídeo publicado en su canal de YouTube.
+   Si lo desea, puede verificar el vídeo publicado en su canal de YouTube.
 
 ### (Opcional) Verificación del vídeo publicado en YouTube {#optional-verifying-the-published-video-on-youtube}
 
-Opcionalmente, puede supervisar el progreso de su publicación en YouTube (o cancelar la publicación).
+Si lo desea, puede supervisar el progreso de su publicación en YouTube (o cancelar la publicación).
 
 Consulte [Supervisión de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
@@ -792,7 +792,7 @@ Después de ocho horas si todavía ve un mensaje de estado que dice **[!UICONTRO
 
 ### Vinculación de URL de YouTube a la aplicación web {#linking-youtube-urls-to-your-web-application}
 
-Puede obtener una cadena de URL de YouTube que Dynamic Media genera después de publicar el vídeo. Cuando copia la URL de YouTube, esta se coloca en el Portapapeles para que pueda pegarla según sea necesario en las páginas de su sitio web o aplicación.
+Puede obtener una cadena URL de YouTube que Dynamic Media genera después de publicar el vídeo. Cuando copia la URL de YouTube, esta se coloca en el Portapapeles para que pueda pegarla según sea necesario en las páginas de su sitio web o aplicación.
 
 >[!NOTE]
 >
@@ -802,11 +802,11 @@ Para vincular URL de YouTube a su aplicación web:
 
 1. Vaya al recurso de vídeo *YouTube publicado* cuya URL desea copiar y, a continuación, selecciónelo.
 
-   Recuerde que las URL de YouTube solo están disponibles para copiar *después* de publicar primero *los recursos de vídeo en YouTube.*
+   Recuerde que las direcciones URL de YouTube solo están disponibles para copiar *después* primero ha publicado *los recursos de vídeo* en YouTube.
 
 1. En la barra de herramientas, haga clic en **[!UICONTROL Propiedades.]**
 1. Haga clic en la pestaña **[!UICONTROL Advanced]**.
-1. En el encabezado Publicación de YouTube, en la Lista de URL de YouTube, seleccione y copie el texto de la URL en el navegador web para obtener una vista previa del recurso o para agregarlo a la página de contenido web.
+1. En el encabezado Publicación de YouTube , en la Lista de URL de YouTube, seleccione y copie el texto de la URL en el navegador web para obtener una vista previa del recurso o para agregarlo a la página de contenido web.
 
 ### Cancelando la publicación de vídeos para eliminarlos de YouTube {#unpublishing-videos-to-remove-them-from-youtube}
 
@@ -814,7 +814,7 @@ Cuando se cancela la publicación de un recurso de vídeo en AEM, el vídeo se e
 
 >[!CAUTION]
 >
->Si elimina un vídeo directamente desde YouTube, AEM desconoce y sigue comportándose como si el vídeo aún se hubiera publicado en YouTube. Cancele siempre la publicación de un recurso de vídeo de YouTube mediante AEM.
+>Si elimina un vídeo directamente desde YouTube, AEM desconoce y continúa comportándose como si el vídeo aún se hubiera publicado en YouTube. Cancele siempre la publicación de un recurso de vídeo de YouTube mediante AEM.
 
 >[!NOTE]
 >
@@ -837,7 +837,7 @@ Cuando se carga un nuevo vídeo en una carpeta que tiene codificación de vídeo
 
 ### Monitorización del progreso {#monitoring-progress}
 
-Para monitorizar el progreso (incluida la codificación fallida/publicación en YouTube):
+Para monitorizar el progreso (incluida la codificación/publicación fallida de YouTube):
 
 1. Vea el progreso de la codificación de vídeo en la carpeta de recursos:
 
@@ -857,7 +857,7 @@ Para monitorizar el progreso (incluida la codificación fallida/publicación en 
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
-   La información del flujo de trabajo (como la codificación) se muestra en la cronología. Para la publicación en YouTube, la cronología de flujo de trabajo también incluye el nombre del canal de YouTube y la URL del vídeo de YouTube. Además, puede ver cualquier notificación de error en la cronología del flujo de trabajo una vez finalizada la publicación.
+   La información del flujo de trabajo (como la codificación) se muestra en la cronología. Para la publicación en YouTube, la cronología de flujo de trabajo también incluye el nombre del canal de YouTube y la URL de vídeo de YouTube. Además, puede ver cualquier notificación de error en la cronología del flujo de trabajo una vez finalizada la publicación.
 
    >[!NOTE]
    >
@@ -922,7 +922,7 @@ Para monitorizar el progreso (incluida la codificación fallida/publicación en 
 >
 >Es posible que necesite derechos administrativos para acceder al menú **[!UICONTROL Tools]**.
 
-La configuración de la notificación depende de si desea que se envíen notificaciones para trabajos de codificación o trabajos de publicación en YouTube:
+La configuración de la notificación depende de si desea que se envíen notificaciones para trabajos de codificación o trabajos de publicación de YouTube:
 
 * Para los trabajos de codificación, puede acceder a la página de configuración de todas las notificaciones de correo electrónico AEM flujo de trabajo en **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** y buscando el **[!UICONTROL Day CQ Workflow Notification Service.]** Consulte  [Configuración de notificaciones por correo electrónico en AEM](/help/sites-administering/notification.md). Puede seleccionar o desmarcar las casillas de verificación de **[!UICONTROL Notificar al anular]** o **[!UICONTROL Notificar al completar]** según corresponda.
 
@@ -930,7 +930,7 @@ La configuración de la notificación depende de si desea que se envíen notific
 
 1. En AEM, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos.]**
 1. En la página Modelos de flujo de trabajo , seleccione **[!UICONTROL Publicar en YouTube]** y, a continuación, pulse **[!UICONTROL Editar]** en la barra de herramientas.
-1. Cerca de la esquina superior derecha de la página de flujo de trabajo Publicar en YouTube, pulse **[!UICONTROL Editar.]**
+1. Cerca de la esquina superior derecha de la página de flujo de trabajo Publicar en YouTube , pulse **[!UICONTROL Editar.]**
 1. Pase el puntero del ratón sobre el componente Carga de YouTube y, a continuación, pulse una vez para mostrar la barra de herramientas en línea.
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
@@ -939,7 +939,7 @@ La configuración de la notificación depende de si desea que se envíen notific
 
    ![6_5_publishtoyoutubeworkflow-configurationicon](assets/6_5_publishtoyoutubeworkflow-configurationicon.png)
 
-1. En el cuadro de diálogo Proceso de carga de YouTube: Propiedades del paso , pulse la pestaña **[!UICONTROL Argumentos]**.
+1. En el cuadro de diálogo Proceso de carga de YouTube: Propiedades de los pasos, pulse la pestaña **[!UICONTROL Argumentos]**.
 
    ![6_5_publishtoyoutubeworkflow-discussions-tab](assets/6_5_publishtoyoutubeworkflow-arguments-tab.png)
 
@@ -949,7 +949,7 @@ La configuración de la notificación depende de si desea que se envíen notific
    * Error durante la publicación
    * Finalización de la publicación : incluye información sobre canales y direcciones URL
 
-   Si desactiva una casilla de verificación, no recibirá la notificación de correo electrónico especificada del flujo de trabajo de publicación de YouTube.
+   Si desactiva una casilla de verificación, no recibirá la notificación de correo electrónico especificada del flujo de trabajo de YouTube Publish.
 
    >[!NOTE]
    >
@@ -1133,7 +1133,7 @@ Puede hacer que los vídeos de formulario largos sean más fáciles de ver y nav
 >
 >El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media sí admiten marcadores de capítulo, pero es posible que no utilicen reproductores de vídeo de terceros.
 
-Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de usar un ajuste preestablecido de visualizador de vídeo. Para obtener instrucciones sobre la creación de su propio visor HTML5 con navegación por capítulos, en la API del SDK del visor HTML5 de Adobe, haga referencia al encabezado &quot;Personalización del comportamiento con modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. Consulte la documentación [HTML5 Viewer SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) .
+Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de usar un ajuste preestablecido de visualizador de vídeo. Para obtener instrucciones sobre la creación de su propio visor HTML5 con navegación por capítulos, en la API del SDK del visor HTML5 de Adobe, haga referencia al encabezado &quot;Personalización del comportamiento con modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. Consulte la documentación [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) .
 
 <!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1329,4 +1329,3 @@ T **para añadir una miniatura de vídeo personalizada**,
 1. Una vez que haya cargado y publicado correctamente la imagen, en la página Cambiar miniatura, pulse **[!UICONTROL Guardar cambios.]**
 
    La miniatura personalizada se añade al vídeo.
-
