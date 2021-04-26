@@ -2,10 +2,10 @@
 title: Notas de la versión de contenido y comercio de AEM 2021
 description: Notas de la versión de contenido y comercio de AEM 2021
 translation-type: tm+mt
-source-git-commit: 2d0b52dbf85e1fbe91c09a8366744aa77f25cd73
+source-git-commit: 1a6d713e74056333b18ed68f58876c2a75d535b8
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 10%
+source-wordcount: '498'
+ht-degree: 11%
 
 ---
 
@@ -27,13 +27,11 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
 | Componente | Versión | Detalles |
 |:-------|:-----:|---------------------:|
-| Complemento CIF | v2021.04.22 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| Complemento CIF | v021.04.22 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | Componentes principales de CIF | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | Sitio de referencia de Venia del CIF | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novedades {#what-is-new-april}
-
-* **El complemento CIF ya está disponible a través de la distribución de software de  [Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). El antiguo conector del CIF de AEM está entrando en modo de mantenimiento y ya no debería usarse. Migrar al nuevo complemento CIF.**
 
 * Compatibilidad con UID de categoría : esto desbloquea las integraciones de comercio de terceros para sistemas que utilizan Strings para id de categoría
 
