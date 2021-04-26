@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
+exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 92%
 
 ---
-
 
 # Componentes{#components}
 
@@ -60,9 +60,9 @@ Las páginas siguientes proporcionan vínculos a información adicional e import
 
 * [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html): los componentes principales ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
 
-* [Comunidades](/help/communities/author-communities.md): los componentes proporcionan funciones interactivas para un sitio web, como foros y comentarios. Muchos de estos componentes se incluyen cuando se crea un [sitio de comunidad](/help/communities/overview.md).
+* [Comunidades](/help/communities/author-communities.md): los componentes proporcionan funciones interactivas para un sitio web, como foros y comentarios. Muchos de estos componentes se incluyen cuando se crea un [sitio de la comunidad](/help/communities/overview.md).
 
-* [eCommerce](/help/sites-administering/ecommerce.md) : La funcionalidad eCommerce de AEM también incluye una serie de componentes. El uso real puede depender del motor de comercio que se utilice.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) : la funcionalidad eCommerce de AEM también incluye una serie de componentes. El uso real puede depender del motor de comercio utilizado.
 
 ### Configurar componentes {#configuring-components}
 
@@ -70,4 +70,3 @@ Además de los componentes a los que los autores pueden acceder en una instalaci
 
 * Si la página se basa en una plantilla moderna, editable y recomendada, puede [editar la plantilla](/help/sites-authoring/templates.md), habilitar o deshabilitar estas y editar los parámetros de componentes específicos.
 * Si la página está basada en una plantilla estática, puede utilizar el [modo de diseño](/help/sites-authoring/default-components-designmode.md#enable-disable-components) para habilitar/deshabilitar estas y editar los parámetros para componentes específicos.
-
