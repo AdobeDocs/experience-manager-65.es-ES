@@ -4,7 +4,7 @@ user-guide-title: AEM Commerce
 breadcrumb-title: Guía de Commerce
 user-guide-description: Aprenda a utilizar y administrar Experience Manager Commerce.
 translation-type: tm+mt
-source-git-commit: 59c9f513c80bfd453493ec1b26adf18c6a3ca4eb
+source-git-commit: 96bb4904818e7f3f64613c810eeb48f223e287c7
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 35%
@@ -33,7 +33,7 @@ ht-degree: 35%
       + [Personalización de componentes CIF](cif/customizing/customize-cif-components.md)
       + [Uso de selectores de catálogo del CIF](cif/customizing/use-cif-pickers.md)
 + [Migración](cif/migration.md)
-+ [Notas de la versión] {#release-notes}
++ Notas de la versión {#release-notes}
    + [2021](cif/release-notes/release-notes-2021.md)
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
