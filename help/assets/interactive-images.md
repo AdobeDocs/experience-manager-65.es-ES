@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
-feature: Interactive Images
+feature: Imágenes interactivas
 role: Business Practitioner, Administrator
+exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '4335'
+source-wordcount: '4332'
 ht-degree: 2%
 
 ---
-
 
 # Imágenes interactivas{#interactive-images}
 
@@ -49,7 +49,7 @@ Pasos de imágenes interactivas:
 
 1. **(Opcional) Identificación de variables de puntos interactivos** : si utiliza AEM Assets y Dynamic Media de forma independiente, comience identificando las variables dinámicas utilizadas en la implementación de vista rápida existente de modo que pueda introducir datos de puntos interactivos al crear la imagen interactiva. Consulte [(Opcional) Identificación de variables de puntos interactivos](#optional-identifying-hotspot-variables).
 Sin embargo, si utiliza AEM Sites, AEM comercio electrónico o ambos, este paso no es necesario.
-Consulte [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).
+Consulte [eCommerce concepts in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Opcional) Creación de un ajuste preestablecido de visualizador de imagen interactiva** : personalice la imagen gráfica que se utiliza para representar zonas interactivas. No es necesario crear su propio ajuste preestablecido de visualizador de imagen interactiva si quiere usar el ajuste preestablecido de visualizador de imagen interactiva predeterminado, denominado `Shoppable_Banner` en su lugar.
 Consulte [(Opcional) Creación de un ajuste preestablecido de visualizador de imagen interactivo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
@@ -75,7 +75,7 @@ Si utiliza un WCM de terceros (Web Content Manager), debe integrar el nuevo víd
 >Esta tarea solo es necesaria si los siguientes son verdaderos:
 >
 >* Desea agregar interactividad a la imagen activando las vistas rápidas.
->* Su implementación de AEM utiliza *no* un marco de integración de comercio electrónico para extraer datos de productos de AEM de cualquier solución de comercio electrónico, como IBM Websphere Commerce, Elastic Path, hybris o Intershop. Consulte [eCommerce concepts in AEM Assets](/help/sites-administering/concepts.md).
+>* Su implementación de AEM utiliza *no* un marco de integración de comercio electrónico para extraer datos de productos de AEM de cualquier solución de comercio electrónico, como IBM Websphere Commerce, Elastic Path, hybris o Intershop. Consulte [eCommerce concepts in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 >
 >
