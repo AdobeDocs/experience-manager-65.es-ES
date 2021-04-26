@@ -1,22 +1,22 @@
 ---
-title: Guía del usuario de capacidades de AEM 6.5
-seo-title: Guía del usuario de capacidades de AEM 6.5
-description: Una visión general de las capacidades esenciales de la AEM 6.5
-seo-description: Una visión general de las capacidades esenciales de la AEM 6.5
+title: Guía del usuario de funciones de AEM 6.5
+seo-title: Guía del usuario de funciones de AEM 6.5
+description: Una visión general de las capacidades esenciales de AEM 6.5
+seo-description: Una visión general de las capacidades esenciales de AEM 6.5
+exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 45%
+source-wordcount: '157'
+ht-degree: 44%
 
 ---
 
-
-# AEM 6.5 Capacidades Guías del usuario {#aem-65-capabilities-user-guides}
+# Guías del usuario de capacidades de AEM 6.5 {#aem-65-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluida la implementación en la nube de Adobe Managed Services.
+[Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.5](/help/sites-deploying/home.md), incluida nuestra implementación en la nube de Adobe Managed Services.
 
 [Obtenga información sobre cómo administrar un proyecto de AEM](/help/managing/home.md).
 
@@ -36,7 +36,11 @@ ht-degree: 45%
 
 ## AEM Screens {#aem-screens}
 
-[Obtenga información sobre la solución de publicidad dinámica e interactiva para publicar experiencias dinámicas e interactivas.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[Obtenga información sobre la solución de señalización digital para publicar experiencias dinámicas e interactivas.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+
+## AEM Commerce {#aem-commerce}
+
+[Obtenga más información sobre AEM Comercio.](/help/commerce/home.md)
 
 ## AEM Communities {#aem-communities}
 
