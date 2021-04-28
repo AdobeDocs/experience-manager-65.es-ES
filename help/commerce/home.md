@@ -1,16 +1,16 @@
 ---
-title: AEM Commerce
-description: Recursos informativos y enlaces a la documentación de AEM Commerce
+title: AEM Contenido y comercio
+description: Recursos informativos y enlaces a la documentación sobre contenido y comercio de AEM
 translation-type: tm+mt
-source-git-commit: b8a46b96db1b81897186f1c8078c06bea64789c4
+source-git-commit: 7b03772e3c7f185cb107c6576e2423275c1a6ccc
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 33%
+source-wordcount: '315'
+ht-degree: 32%
 
 ---
 
 
-# AEM Commerce {#commerce-guide}
+# AEM Contenido y comercio {#commerce-guide}
 
 En esta página se muestran los recursos informativos relacionados con AEM comercio.
 
