@@ -5,9 +5,9 @@ topics: Commerce
 feature: Marco de integración de Commerce
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 3df590b5b5dd4a72af1808fe55c8e61338334d0d
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '682'
 ht-degree: 5%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 Para comenzar con AEM Contenido y comercio, debe instalar el complemento Contenido y comercio de AEM para AEM 6.5.
 
-## Requisitos mínimos de software
+## Requisito mínimo de software
 
 [Se requiere AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)  7 o posterior.
 
@@ -28,7 +28,7 @@ La incorporación para AEM contenido y comercio es un proceso de dos pasos:
 
 2. Conectar AEM con su solución de comercio
 
-### Instale el complemento Contenido y comercio de AEM para AEM 6.5 {#install-add-on}
+### Instalación del complemento de contenido y comercio de AEM para AEM 6.5 {#install-add-on}
 
 Descargue e instale AEM Commerce Add-On para AEM 6.5 desde el portal [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
@@ -54,7 +54,7 @@ El complemento CIF proporciona un servlet proxy de GraphQL en `/api/graphql` que
 
 ## Configuración de tiendas y catálogos {#catalog}
 
-El complemento y los [componentes principales del CIF](https://github.com/adobe/aem-core-cif-components) se pueden usar en varias estructuras del sitio de AEM conectadas a diferentes tiendas de comercio (o vistas de tiendas, etc.). De forma predeterminada, el complemento CIF se implementa con una configuración predeterminada que se conecta al catálogo y almacén predeterminados de Adobe Commerce (Magento).
+El complemento y los [componentes principales del CIF](https://github.com/adobe/aem-core-cif-components) se pueden usar en varias estructuras del sitio de AEM conectadas a diferentes tiendas de comercio (o vistas del almacén, etc.). De forma predeterminada, el complemento CIF se implementa con una configuración predeterminada que se conecta al catálogo y almacén predeterminados de Adobe Commerce (Magento).
 
 Esta configuración se puede ajustar para el proyecto mediante la configuración del Cloud Service del CIF siguiendo estos pasos:
 
