@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
-feature: Security
+feature: Seguridad
 translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
-source-wordcount: '6891'
+source-wordcount: '6886'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ El efecto de una política CUG única en la evaluación de los permisos puede re
 
 Se deben tener en cuenta las siguientes prácticas recomendadas para definir el acceso restringido de lectura a través de CUG:
 
-* Tome una decisión consciente sobre si su necesidad de un CUG es restringir el acceso de lectura o un requisito de autenticación. En el caso de estos últimos o si hay necesidad de ambos, consulte la sección Prácticas recomendadas para obtener más detalles sobre el requisito de autenticación
+* Tome una decisión consciente sobre si su necesidad de un CUG es restringir el acceso de lectura o un requisito de autenticación. En el caso de estos últimos o si hay necesidad de ambos, consulte la sección de Prácticas recomendadas para obtener más detalles sobre el requisito de autenticación
 * Cree un modelo de amenaza para los datos o el contenido que debe protegerse para identificar los límites de amenaza y obtener una imagen clara sobre la sensibilidad de los datos y las funciones asociadas con el acceso autorizado
 * Modele el contenido del repositorio y los CUG teniendo en cuenta aspectos generales relacionados con la autorización y prácticas recomendadas:
 
@@ -773,7 +773,7 @@ La configuración de CUG junto con LiveCopy se representa en el repositorio medi
 
 Ambos elementos se crean en `cq:Page`. Con el diseño actual, MSM solo gestiona nodos y propiedades que se encuentran bajo el nodo `cq:PageContent` (`jcr:content`).
 
-Por lo tanto, los grupos CUG no se pueden revertir de un modelo a una Live Copy. Planee esto según corresponda al configurar una Live Copy.
+Por lo tanto, los grupos CUG no se pueden desplegar en Live Copies desde modelos. Planee esto al configurar Live Copy.
 
 ## Cambios con la nueva implementación de CUG {#changes-with-the-new-cug-implementation}
 
