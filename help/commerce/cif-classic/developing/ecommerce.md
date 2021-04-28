@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: platform
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 7%
+source-wordcount: '151'
+ht-degree: 4%
 
 ---
 
@@ -47,6 +47,3 @@ Los paquetes proporcionan la API de eCommerce:
 
 Consulte la [documentación de API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) para obtener más información.
 
->[!NOTE]
->
->Para ver un artículo completo que detalle todos los pasos para crear un proveedor de comercio electrónico, consulte [Creación de proveedores de comercio electrónico personalizados de Adobe Experience Manager 6.2](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
