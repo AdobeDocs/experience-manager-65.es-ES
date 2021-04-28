@@ -7,9 +7,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 8ead3d1b24177effa4d40141408c5676eaabcc30
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '874'
 ht-degree: 32%
 
 ---
@@ -30,11 +30,11 @@ Se recomienda contar con un entorno de desarrollo local para trabajar con proyec
 
 >[!NOTE]
 >
->Las siguientes instrucciones le ayudan a configurar un entorno de desarrollo de AEM local para AEM Commerce con CIF enfocado para AEM 6.5). Si utiliza AEM como Cloud Service, consulte la documentación de [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/home.html) .
+>Las siguientes instrucciones le ayudan a configurar un entorno de desarrollo de AEM local para AEM Commerce con CIF enfocado para AEM 6.5). Si utiliza AEM como Cloud Service, consulte la documentación de [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) .
 
 AEM complemento de comercio para AEM 6.5 también conocido como El complemento CIF también está disponible para el desarrollo local y se proporciona como paquete AEM. Se puede descargar desde el [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) como paquete de funciones.
 
-### Software necesario
+### Software requerido
 
 Lo siguiente debe instalarse de manera local:
 
@@ -46,7 +46,7 @@ Lo siguiente debe instalarse de manera local:
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
-### Acceso al complemento CIF.
+### Acceso al complemento CIF
 
 El complemento CIF se puede descargar desde el [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), buscar el &quot;complemento AEM comercio&quot;.
 
@@ -58,7 +58,7 @@ El complemento CIF se puede descargar desde el [Portal de distribución de softw
 
 Para el desarrollo de proyectos del CIF local mediante el AEM y el complemento del CIF, siga estos pasos:
 
-1. Obtenga la versión AEM 6.5 e instale el Service Pack AEM 6.5. Se requiere AEM 6.5 Service Pack 7, pero recomendamos instalar el último Service Pack disponible.
+1. Obtenga la versión AEM 6.5 e instale el Service Pack AEM 6.5. Se necesita AEM 6.5 Service Pack 7, pero recomendamos instalar el último Service Pack disponible.
 
 1. Desempaquete el archivo .jar de AEM para crear la carpeta `crx-quickstart` , ejecute:
 
