@@ -9,10 +9,10 @@ feature: Marco de integración de Commerce
 kt: 4933
 thumbnail: 34350.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 95%
+source-wordcount: '791'
+ht-degree: 88%
 
 ---
 
@@ -65,7 +65,7 @@ Las reescrituras de URL también se pueden realizar mediante una HTTP del servid
 
 ## Ejemplo
 
-El proyecto [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia) incluye configuraciones de muestra para demostrar el uso de direcciones URL personalizadas para páginas de productos y categorías. Esto permite que cada proyecto configure los patrones de URL individuales para las páginas de productos y categorías según sus necesidades de SEO. Se utiliza una combinación de asignaciones de CIF `UrlProvider` y de Sling como se describe anteriormente.
+El proyecto [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia) incluye configuraciones de muestra para demostrar el uso de direcciones URL personalizadas para páginas de productos y categorías. Esto permite que cada proyecto configure patrones de URL individuales para páginas de productos y categorías según sus necesidades de SEO. Se utiliza una combinación de asignaciones de CIF `UrlProvider` y de Sling como se describe anteriormente.
 
 >[!NOTE]
 >
@@ -74,5 +74,5 @@ El proyecto [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-gui
 ## Recursos adicionales
 
 * [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia)
-* [Asignación de recursos de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [Asignación de recursos de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Asignaciones de Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
