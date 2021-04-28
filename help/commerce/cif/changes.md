@@ -3,7 +3,7 @@ title: Cambios importantes del complemento Commerce Integration Framework (CIF)
 description: Cambios importantes del complemento Commerce Integration Framework (CIF) en comparación con las versiones anteriores del CIF.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 translation-type: tm+mt
-source-git-commit: a8dba82029168660b84b085ab46d0406b19961ef
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 1%
@@ -16,7 +16,7 @@ Este documento destaca las importantes diferencias entre el complemento Commerce
 
 ## Instalación y actualizaciones
 
-El paquete de complementos del CIF de AEM se instala y actualiza con AEM administrador de paquetes.
+El paquete de complementos del CIF de AEM se instala y actualiza con AEM Administrador de paquetes.
 
 **Versiones anteriores del CIF**
 
@@ -34,7 +34,7 @@ El punto final se configura mediante la consola OSGi.
 
 ## Implementación del proyecto CIF Venia
 
-Proyecto disponible en [Guías de AEM de GitHub - Proyecto Venia del CIF](https://github.com/adobe/aem-cif-guides-venia) e implementación realizada mediante el administrador de AEM de paquetes
+Proyecto disponible en [Guías de AEM de GitHub - Proyecto Venia del CIF](https://github.com/adobe/aem-cif-guides-venia) e implementación realizada a través AEM Administrador de paquetes.
 
 **Versiones anteriores del CIF**
 
