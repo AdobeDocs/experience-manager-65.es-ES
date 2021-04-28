@@ -3,10 +3,10 @@ title: Introducción y descripción general
 description: Introducción y descripción general del contenido y el comercio. Experience Manager Commerce Integration Framework (CIF) es el patrón recomendado por el Adobe para integrar y ampliar los servicios de comercio de Magento y otras soluciones de comercio de terceros con el Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 3%
+source-wordcount: '869'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ Las marcas pueden integrar Experience Manager con Adobe Commerce, parte de Adobe
 
 * Escalar e innovar más rápido
 * Personalización de experiencias para impulsar la conversión
-* Cree una vez y publique en todas partes
+* Crear una vez y publicar en todas partes
 * Enriquecimiento y diferenciación de experiencias para los clientes
 * Optimice la creación con acceso a datos de comercio
 
@@ -58,7 +58,7 @@ Las potentes herramientas del CIF en AEM permiten a los creadores de contenido c
 
 ### Tiempo para el valor (TTV)
 
-Acelera el desarrollo de proyectos con [AEM Componentes principales](https://www.aemcomponents.dev/), [AEM tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia), [AEM tipo de archivo del proyecto](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html) y patrones de integración para PWA (comercio y contenido sin encabezado).
+Acelera el desarrollo de proyectos con [AEM Componentes principales](https://www.aemcomponents.dev/), [AEM tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia), [AEM Tipo de archivo del proyecto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) y patrones de integración para PWA (Contenido y comercio sin encabezado).
 
 El CIF está diseñado para la innovación continua con un complemento siempre actualizado, que permite al cliente acceder a funciones nuevas y mejoradas.
 
