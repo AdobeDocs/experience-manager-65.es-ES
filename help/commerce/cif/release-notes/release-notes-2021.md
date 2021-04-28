@@ -2,16 +2,16 @@
 title: Notas de la versión de contenido y comercio de AEM 2021
 description: Notas de la versión de contenido y comercio de AEM 2021
 translation-type: tm+mt
-source-git-commit: 1a6d713e74056333b18ed68f58876c2a75d535b8
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
 # Información general sobre la versión de Commerce Integration Framework GitHub
 
-## Resumen de los requisitos del sistema
+## Descripción general de los requisitos del sistema
 
 Revise los requisitos mínimos del sistema en la siguiente tabla para la versión del CIF que está utilizando o que planea usar en el futuro.
 
@@ -27,7 +27,7 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
 | Componente | Versión | Detalles |
 |:-------|:-----:|---------------------:|
-| Complemento CIF | v021.04.22 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| Complemento CIF | 2021.04.22 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | Componentes principales de CIF | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | Sitio de referencia de Venia del CIF | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -57,7 +57,7 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
 * Compatibilidad con el Magento 2.4.2
 
-### Mejoras
+### Novedades mejoradas
 
 * Se ha mejorado la reutilización del componente de detalles del producto para páginas controladas por contenido
 
@@ -79,9 +79,9 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
 * Se han ampliado las propiedades de la consola de producto para mostrar los recursos vinculados y los fragmentos de experiencia, incluida la acción para navegar rápidamente al contenido asociado.
 
-### Mejoras  {#what-is-improved-february}
+### Qué se ha mejorado {#what-is-improved-february}
 
-* Capa de datos del lado del cliente mejorada con url de imagen de producto e información de categoría
+* Se ha mejorado la capa de datos del lado del cliente con la dirección url de la imagen del producto y la información de categoría.
 
 * Varias correcciones de errores.
 
@@ -97,7 +97,7 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
 * Administración de experiencia del producto: Nueva pestaña de la propiedad &quot;Comercio&quot; para los fragmentos de experiencias y recursos. Esta pestaña le permite vincular recursos y fragmentos de experiencias a productos y categorías. La pestaña también muestra datos en tiempo real de objetos de comercio vinculados y un vínculo para mostrar detalles en la consola del producto.
 
-### Mejoras  {#what-is-improved-january}
+### Qué se ha mejorado {#what-is-improved-january}
 
 * Envíe los datos de usuario después de la autenticación a la capa de datos del cliente de Adobe.
 
