@@ -2,10 +2,10 @@
 title: Notas de la versión de contenido y comercio de AEM 2021
 description: Notas de la versión de contenido y comercio de AEM 2021
 translation-type: tm+mt
-source-git-commit: c859aa89e481e852302e9cda0adf2acc04d68a55
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 12%
+source-wordcount: '1324'
+ht-degree: 11%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 12%
 
 * Tienda de referencia de Venia actualizada para usar el fragmento de experiencia para el pie de página. Los usuarios empresariales pueden editar el pie de página mediante AEM herramientas de creación.
 
-### Mejoras {#what-is-improved-november}
+### Qué se ha mejorado {#what-is-improved-november}
 
 * Se ha mejorado el componente de cierre de compra para que los compradores puedan entrar en el país de destino y permitir direcciones de facturación/envío fuera de los Estados Unidos.
 
@@ -48,7 +48,7 @@ ht-degree: 12%
 
 * Los componentes principales del CIF se ampliaron para hidratar la capa de datos del cliente de Adobe al enviar datos de comercio. La capa de datos del cliente de Adobe es un método estandarizado para recopilar datos y comunicarlos a los servidores de informes y análisis digitales. Para obtener más información, consulte [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki).
 
-* Las páginas Detalles del producto y Lista de productos se han ampliado para rellenar automáticamente los metadatos de SEO (p. ej., título, metadescripción, palabras clave) configurados desde la interfaz de usuario del administrador del Magento
+* Las páginas Detalles del producto y Lista de productos se han ampliado para rellenar automáticamente los metadatos de SEO (como título, meta descripción, metapalabras clave) configurados desde la interfaz de usuario del administrador del Magento
 
 * Se ha corregido un error del componente teaser de comercio.
 
@@ -120,7 +120,7 @@ ht-degree: 12%
 
 * La interfaz de usuario de configuración de CIF Cloud admite acciones de publicación/cancelación de publicación.
 
-### Mejoras {#what-is-improved-july}
+### Qué se ha mejorado {#what-is-improved-july}
 
 * El componente de inicio de sesión se ha trasladado al menú desplegable del usuario para facilitar el acceso.
 
@@ -138,7 +138,7 @@ ht-degree: 12%
 
 ### Novedades {#what-is-new-june}
 
-Esta es la primera versión de los componentes principales del CIF que se admiten en Adobe Experience Manager.
+Esta es la primera versión de los componentes principales de CIF que se admiten en Adobe Experience Manager.
 
 * Se ha agregado la clasificación de productos en la página Lista de productos y en la página Resultados de búsqueda para permitir que los compradores ordenen según la relevancia, el precio y el nombre del producto.
 
@@ -146,7 +146,7 @@ Esta es la primera versión de los componentes principales del CIF que se admite
 
 * Se ha agregado la asignación de usuarios de servicio como parte de los requisitos de seguridad para garantizar el acceso a /conf a través de los usuarios de servicio y no manipulando directamente las ACL. Los componentes principales de CIF ahora deben utilizar un usuario de servicio para acceder a las configuraciones.
 
-### Mejoras {#what-is-improved-june}
+### Qué se ha mejorado {#what-is-improved-june}
 
 * La página Lista de productos y la página Resultado de la búsqueda muestran el número total de elementos. El número de elementos se actualiza cuando se aplican filtros de comprador.
 
@@ -174,7 +174,7 @@ Esta es la primera versión de los componentes principales del CIF que se admite
 
 * Enlace de productos creado automáticamente cuando se crea una configuración de nube.
 
-### Mejoras
+### Novedades mejoradas
 
 * La configuración de nube se ha ampliado para mostrar la acción &quot;Crear carpeta&quot;.
 
@@ -192,7 +192,7 @@ Esta es la primera versión de los componentes principales del CIF que se admite
 
 * Ajustes de configuración para conector del CIF unificado y simplificado. Para obtener más información, consulte [Introducción](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) o [Nueva configuración del proyecto del CIF de AEM](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
 
-### Mejoras {#what-is-improved-april}
+### Qué se ha mejorado {#what-is-improved-april}
 
 * El flujo de carro de compras y cierre de compra se ha ampliado para admitir compradores registrados.
 
@@ -218,9 +218,9 @@ Esta es la primera versión de los componentes principales del CIF que se admite
 
 * Se ha agregado compatibilidad de búsqueda en el Selector de categorías.
 
-* Paginación en el componente Lista de catálogos para admitir grandes conjuntos de catálogos.
+* Paginación en el componente Lista de categorías para admitir grandes conjuntos de catálogos.
 
-### Mejoras {#what-is-improved-february}
+### Qué se ha mejorado {#what-is-improved-february}
 
 * Carro de compras mejorado para mostrar descuentos.
 
@@ -248,7 +248,7 @@ Esta es la primera versión de los componentes principales del CIF que se admite
 
 * Componente de producto relacionado genérico disponible.
 
-### Mejoras {#what-is-improved-january}
+### Qué se ha mejorado {#what-is-improved-january}
 
 * Compatibilidad para mostrar el botón CTA en el teaser de productos.
 
@@ -256,6 +256,6 @@ Esta es la primera versión de los componentes principales del CIF que se admite
 
 * Opción para ocultar o mostrar el título o el banner en el componente Lista de productos .
 
-* Función de arrastrar y soltar aplicada al componente Carrusel de producto.
+* Función de arrastrar y soltar aplicada al componente Carrusel del producto.
 
 * Se han aplicado varias correcciones de errores.
