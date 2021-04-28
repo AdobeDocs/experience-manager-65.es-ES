@@ -2,10 +2,10 @@
 title: Notas de la versión de contenido y comercio de AEM 2021
 description: Notas de la versión de contenido y comercio de AEM 2021
 translation-type: tm+mt
-source-git-commit: c2fb9af056fa4be13cfd7e60e8a44485e8712c0b
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 10%
 
 * Se agregó soporte de pago para Braintree en AEM tienda Venia.
 
-### Mejoras {#what-is-improved-november}
+### Qué se ha mejorado {#what-is-improved-november}
 
 * Selector de categoría/producto mejorado para respetar la vista especificada del almacén de Magento en una configuración de varias tiendas.
 
@@ -53,7 +53,7 @@ ht-degree: 10%
 
 * Componentes basados en React del lado del cliente para la administración de cuentas. Esta versión es compatible con las siguientes funcionalidades: Inicio de sesión, contraseña olvidada y creación de cuenta.
 
-### Mejoras {#what-is-improved-october}
+### Qué se ha mejorado {#what-is-improved-october}
 
 * Los componentes detalle del producto y de la lista de productos se han mejorado para mostrar datos ficticios y proporcionar a los autores una vista previa del diseño cuando estos componentes se colocan en una plantilla o página.
 
@@ -77,7 +77,7 @@ ht-degree: 10%
 
 * El componente Cierre de compra incluye formularios de direcciones, selección de pagos y selección de métodos de envío.
 
-### Mejoras {#what-is-improved-september}
+### Qué se ha mejorado {#what-is-improved-september}
 
 * Los componentes teaser de productos y carrusel de productos admiten variantes de producto.
 
@@ -105,7 +105,7 @@ ht-degree: 10%
 
 * Botón para permitir que los autores coloquen en una página AEM y vinculen a una página AEM, a una página de detalles del producto, a una página de lista de productos o a un vínculo externo.
 
-### Mejoras {#what-is-improved-august}
+### Qué se ha mejorado {#what-is-improved-august}
 
 * La configuración del almacén de Magento se ha trasladado de OSGi a AEM consola de producto para que la configuración de la integración sea más fácil de usar para el autor.
 
@@ -131,7 +131,7 @@ ht-degree: 10%
 
 * Lista de categorías destacadas del lado del servidor para mostrar la lista de categorías en una página AEM.
 
-### Mejoras {#what-is-improved-july}
+### Qué se ha mejorado {#what-is-improved-july}
 
 * La compatibilidad con el Magento 2.3.2 y las correcciones de errores relacionadas con las propiedades del producto se muestran en la consola del producto.
 
