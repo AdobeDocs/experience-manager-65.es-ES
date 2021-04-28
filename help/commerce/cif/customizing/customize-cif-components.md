@@ -11,10 +11,10 @@ feature: Marco de integración de Commerce
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '2549'
-ht-degree: 29%
+source-wordcount: '2541'
+ht-degree: 27%
 
 ---
 
@@ -61,7 +61,7 @@ Clonaremos el [Proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y 
 
 1. Añada las configuraciones de OSGi necesarias para conectar la instancia de AEM a una instancia de Magento o añadir las configuraciones al proyecto recién creado.
 
-1. En este punto, debería tener una versión de trabajo de una tienda conectada a una instancia de Magento. Vaya a la página `US` > `Home` en: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. En este punto, debe tener una versión de trabajo de una tienda conectada a una instancia de Magento. Vaya a la página `US` > `Home` en: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    Hay que ver que la tienda esté usando actualmente el tema de Venia. Al expandir el menú principal de la tienda, verá varias categorías que indican que la conexión con Magento está funcionando.
 
@@ -326,7 +326,7 @@ Utilice [el IDE de su elección](https://docs.adobe.com/content/help/en/experien
    }
    ```
 
-   En el método anterior, se utiliza `productRetriever` para recuperar el producto y el método `getAsInteger()` se utiliza para obtener el valor del atributo `eco_friendly`. Basándonos en las consultas de GraphQL que ejecutamos anteriormente sabemos que el valor esperado cuando el atributo `eco_friendly` se establece en &quot;**Yes**&quot; es en realidad un número entero de **1**.
+   En el método anterior, el `productRetriever` se utiliza para recuperar el producto y el método `getAsInteger()` se utiliza para obtener el valor del atributo `eco_friendly`. Basándonos en las consultas de GraphQL que ejecutamos anteriormente sabemos que el valor esperado cuando el atributo `eco_friendly` se establece en &quot;**Yes**&quot; es en realidad un número entero de **1**.
 
    Ahora que se ha actualizado el modelo Sling, es necesario actualizar el marcado del componente para que muestre un indicador **Eco Friendly** basado en el modelo Sling.
 
@@ -494,8 +494,8 @@ Revise la funcionalidad del distintivo **New** que ya se ha implementado en el t
 
 ## Recursos adicionales {#additional-resources}
 
-- [Tipo de archivo de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html)
+- [Tipo de archivo de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [Componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components)
 - [Personalización de los componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [Personalización de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/customizing.html)
-- [Introducción a AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Personalización de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [Introducción a AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
