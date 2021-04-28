@@ -3,9 +3,9 @@ title: 'AEM: Preguntas frecuentes sobre la integración comercial con Commerce I
 description: 'AEM: Preguntas frecuentes sobre la integración comercial con Commerce Integration Framework'
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45,aece1190-9530-4060-9b08-022da7068987
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '946'
 ht-degree: 47%
 
 ---
@@ -36,7 +36,7 @@ El complemento CIF utilizado con AEM permite que los datos fluyan de la solució
 
 ## 6. ¿Qué tamaño de catálogo AEM con la compatibilidad con CIF?
 
-Esto depende de algunos aspectos adicionales que tenga que tener en cuenta. ¿Cuál es la proporción de caché de sus datos y páginas de catálogo? ¿Cuántas solicitudes simultáneas espera durante las horas de mayor actividad? ¿Qué tan escalables son las API de sus soluciones de comercio?
+Esto depende de algunos aspectos adicionales que tenga que tener en cuenta. ¿Cuál es la proporción de caché de sus datos y páginas de catálogo? ¿Cuántas solicitudes simultáneas espera durante las horas de mayor actividad? ¿Hasta qué punto son escalables las API de sus soluciones de comercio?
 
 ## 7. ¿Cómo actúa PIM en este marco?
 
@@ -64,7 +64,7 @@ Los datos del producto generalmente ya se traducen en PIM o en Magento. La integ
 
 ## 13. ¿Existe alguna manera de mejorar los datos del producto con texto comercial? ¿Dónde se hace esto? ¿En AEM o en la solución de comercio?
 
-Se recomienda administrar los datos y el contenido relacionados con el marketing en AEM. Decore los datos de productos de su solución de comercio con atributos adicionales utilizando fragmentos de contenido o cree y vincule fragmentos de experiencias para contenido no estructurado con sus productos.
+Se recomienda administrar los datos y el contenido relacionados con el marketing en AEM. Decore los datos de productos de su solución de comercio con atributos adicionales mediante fragmentos de contenido o cree y vincule fragmentos de experiencias para contenido no estructurado con sus productos.
 
 ## 14. ¿Cómo podemos garantizar el cumplimiento de PCI al utilizar AEM para toda la capa de presentación?
 
