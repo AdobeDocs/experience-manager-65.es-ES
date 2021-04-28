@@ -9,10 +9,10 @@ feature: Marco de integración de Commerce
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 33%
+source-wordcount: '2566'
+ht-degree: 28%
 
 ---
 
@@ -65,17 +65,17 @@ Clonaremos el [Proyecto Venia](https://github.com/adobe/aem-cif-guides-venia) y 
 
 ## Bibliotecas de cliente y módulo ui.frontend {#introduction-to-client-libraries}
 
-CSS y JavaScript responsables de procesar el tema o los estilos de la tienda se gestionan en AEM en una [biblioteca de cliente](/help/sites-developing/clientlibs.md) o clientlibs para abreviar. Las bibliotecas de cliente proporcionan un mecanismo para organizar CSS y Javascript en el código de un proyecto y luego distribuirlas en la página.
+CSS y JavaScript responsables de procesar el tema o los estilos de la tienda se administran en AEM mediante una [biblioteca de cliente](/help/sites-developing/clientlibs.md) o clientlibs para abreviar. Las bibliotecas de cliente proporcionan un mecanismo para organizar CSS y Javascript en el código de un proyecto y luego distribuirlas en la página.
 
 Los estilos específicos de marca se pueden aplicar a AEM componentes principales del CIF añadiendo y anulando el CSS administrado por estas bibliotecas de cliente. Es fundamental comprender cómo se estructuran e incluyen las bibliotecas de cliente en la página.
 
 El [ui.frontend](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/uifrontend.html) es un proyecto [webpack](https://webpack.js.org/) dedicado para administrar todos los recursos del front-end de un proyecto. Esto permite a los desarrolladores de front-end utilizar cualquier cantidad de idiomas y tecnologías como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) y mucho más.
 
-El módulo `ui.frontend` también es un módulo Maven e integrado con el proyecto más grande mediante el uso de un módulo NPM [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Durante una compilación, `aem-clientlib-generator` copia los archivos CSS y JavaScript compilados en una biblioteca de cliente del módulo `ui.apps` .
+El módulo `ui.frontend` también es un módulo Maven e integrado con el proyecto más grande mediante el uso de un módulo NPM [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Durante una compilación, `aem-clientlib-generator` copia los archivos CSS y JavaScript compilados en una biblioteca de cliente del módulo `ui.apps`.
 
 ![ui.frontend para la arquitectura ui.apps](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*CSS y Javascript compilados se copian del  `ui.frontend` módulo en el  `ui.apps` módulo como biblioteca de cliente durante una compilación de Maven*
+*CSS y Javascript compilados se copian del  `ui.frontend` módulo al  `ui.apps` módulo como una biblioteca de cliente durante una compilación de Maven*
 
 ## Actualizar el estilo del teaser {#ui-frontend-module}
 
@@ -164,7 +164,7 @@ A continuación, realice un pequeño cambio en el estilo Teaser para ver cómo f
 
    ![CSS del sitio compilado en ui.apps](../assets/style-cif-component/comiled-css-ui-apps.png)
 
-   Este es el archivo `site.css` copiado en el proyecto `ui.apps`. Ahora forma parte de una clientlibrary denominada `clientlib-site` con una categoría de `venia.site`. Una vez que el archivo forma parte del módulo `ui.apps`, se puede implementar en AEM.
+   Esto copia el archivo `site.css` en el proyecto `ui.apps`. Ahora forma parte de una biblioteca de cliente denominada `clientlib-site` con una categoría `venia.site`. Una vez que el archivo forma parte del módulo `ui.apps`, se puede implementar en AEM.
 
    >[!NOTE]
    >
@@ -174,7 +174,7 @@ A continuación, realice un pequeño cambio en el estilo Teaser para ver cómo f
 
    ![Otras bibliotecas de cliente](../assets/style-cif-component/other-clientlibs.png)
 
-   El módulo `ui.frontend` no administra estas bibliotecas de cliente. En su lugar, estas bibliotecas de cliente incluyen dependencias CSS y JavaScript proporcionadas por Adobe. La definición de estas bibliotecas de clientes se encuentra en el archivo `.content.xml` debajo de cada carpeta.
+   El módulo `ui.frontend` no administra estas bibliotecas de cliente. En su lugar, estas bibliotecas de cliente incluyen dependencias CSS y JavaScript proporcionadas por Adobe. La definición de estas bibliotecas de cliente se encuentra en el archivo `.content.xml` debajo de cada carpeta.
 
    **clientlib-base**: es una biblioteca de cliente vacía que simplemente incrusta las dependencias necesarias de los [componentes principales de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html). La categoría es `venia.base`.
 
@@ -225,7 +225,7 @@ A continuación, verifique la inclusión de las bibliotecas de cliente en la pá
 
    ![Ver como aparece publicado](../assets/style-cif-component/view-as-published.png)
 
-   De este modo se abre la página sin que se hayan cargado los archivos JavaScript del Autor de AEM, ya que aparecería en el sitio publicado. Observe que la dirección URL tiene el parámetro de consulta `?wcmmode=disabled` anexado. Al desarrollar CSS y Javascript, se recomienda utilizar este parámetro para simplificar la página sin ningún elemento del Autor de AEM.
+   De este modo se abre la página sin que se hayan cargado los archivos JavaScript del Autor de AEM, ya que aparecería en el sitio publicado. Observe que la dirección URL tiene el parámetro de consulta `?wcmmode=disabled` anexado. Al desarrollar CSS y Javascript, se recomienda utilizar este parámetro para simplificar la página sin nada de AEM autor.
 
 1. Vea el origen de la página y debe poder identificar varias bibliotecas de cliente incluidas:
 
@@ -275,12 +275,12 @@ Existen varias opciones para incluir una biblioteca del lado del cliente. A cont
 
    ![Política de página: página de aterrizaje](../assets/style-cif-component/page-policy-properties.png)
 
-   A la derecha puede ver una lista de **categorías** de bibliotecas de clientes que se incluirán en todas las páginas que utilicen esta plantilla.
+   A la derecha puede ver una lista de bibliotecas de cliente **categorías** que se incluirán en todas las páginas que utilicen esta plantilla.
 
    * `venia.dependencies` : proporciona todas las bibliotecas de proveedores de las que  `venia.site` depende.
    * `venia.site` - Esta es la categoría para la  `clientlib-site` que genera el  `ui.frontend` módulo.
 
-   Tenga en cuenta que otras plantillas utilizan la misma directiva, la **página de contenido**, la **página de aterrizaje**, etc. Al reutilizar la misma directiva, podemos garantizar que se incluyan las mismas bibliotecas de cliente en todas las páginas.
+   Tenga en cuenta que otras plantillas utilizan la misma directiva, **Página de contenido**, **Página de aterrizaje**, etc. Al reutilizar la misma directiva, podemos asegurarnos de que se incluyan las mismas bibliotecas de cliente en todas las páginas.
 
    La ventaja de utilizar las plantillas y las directivas de página para administrar la inclusión de bibliotecas de cliente es que puede cambiar la directiva por plantilla. Por ejemplo: quizás esté administrando dos marcas diferentes dentro de la misma instancia de AEM. Cada marca tendrá su propio estilo o *tema* único, pero las bibliotecas base y el código serán los mismos. Otro ejemplo: si tiene una biblioteca de cliente más grande que solo desea que aparezca en determinadas páginas, puede crear una directiva de página única solo para esa plantilla.
 
@@ -328,7 +328,7 @@ El webpack-dev-server proxy imágenes y parte del CSS/JavaScript de la instancia
 
    >[!CAUTION]
    >
-   > Si aparece un error relacionado con Sass, detenga el servidor y ejecute el comando `npm rebuild node-sass` y repita los pasos anteriores. Esto puede ocurrir si se tiene una versión diferente de `npm` y `node` y luego se especifica en el proyecto `aem-cif-guides-venia/pom.xml`.
+   > Si aparece un error relacionado con Sass, detenga el servidor y ejecute el comando `npm rebuild node-sass` y repita los pasos anteriores. Esto puede ocurrir si tiene una versión diferente de `npm` y `node` especificada en el proyecto `aem-cif-guides-venia/pom.xml`.
 
 1. Vaya a [http://localhost:8080/](http://localhost:8080/) en una nueva pestaña con el mismo explorador que un registrado en la instancia de AEM. Debería ver la página de inicio de Venia a través del webpack-dev-server:
 
