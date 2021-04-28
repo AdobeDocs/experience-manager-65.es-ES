@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
-feature: Multi Site Manager
+feature: Administrador de varios sitios
+exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1667'
 ht-degree: 1%
 
 ---
-
 
 # Prácticas recomendadas de MSM{#msm-best-practices}
 
@@ -68,6 +68,10 @@ Los beneficios adicionales de utilizar una configuración de modelo son que:
 En caso de que no se haga referencia a una configuración de modelo, los lanzamientos solo se pueden iniciar desde las propias Live Copies, lo que esencialmente extrae contenido del origen.
 
 Al crear un nuevo sitio con Live Copy, es conveniente crear configuraciones de modelo para garantizar la disponibilidad del conjunto de funciones MSM completo.
+
+>[NOTA!]
+>
+> Tenga en cuenta que los CUG de la ficha Permisos no se pueden desplegar en Live Copies desde modelos. Planee esto al configurar Live Copy.
 
 ## Sincronización de componentes y contenedores {#components-and-container-synchronization}
 
@@ -207,4 +211,3 @@ Esta y las siguientes páginas tratan los problemas relacionados:
 * [Consola de información general de Live Copy](/help/sites-administering/msm-livecopy-overview.md)
 * [Configuración de la sincronización de Live Copy](/help/sites-administering/msm-sync.md)
 * [Conflictos de implementación de MSM](/help/sites-administering/msm-rollout-conflicts.md)
-
