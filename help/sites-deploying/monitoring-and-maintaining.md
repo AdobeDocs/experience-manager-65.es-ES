@@ -77,7 +77,7 @@ Para ello, debe [realizar una copia de seguridad de todo el repositorio](#backin
 
 >[!CAUTION]
 >
->Si está gestionando un servidor de aplicaciones de terceros, es posible que las carpetas adicionales estén en una ubicación diferente y que también sea necesario realizar una copia de seguridad. Consulte [Cómo instalar AEM con un servidor de aplicaciones](/help/sites-deploying/application-server-install.md) para obtener información sobre la instalación de servidores de aplicaciones. [](/content/docs/en/aem/6-3/deploy/installing.md#installation adobe experience manager with an application server)
+>Si está gestionando un servidor de aplicaciones de terceros, es posible que las carpetas adicionales estén en una ubicación diferente y que también sea necesario realizar una copia de seguridad. Consulte [Cómo instalar AEM con un servidor de aplicaciones](/help/sites-deploying/application-server-install.md) para obtener información sobre la instalación de servidores de aplicaciones.
 
 >[!CAUTION]
 >
