@@ -1,17 +1,17 @@
 ---
-title: 'Esquemas de metadatos para definir el diseño de la página de propiedades de metadatos en [!DNL Adobe Experience Manager Assets]. '
+title: 'Los esquemas de metadatos definen el diseño de la página de propiedades de metadatos '
 description: El esquema de metadatos define el diseño de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar un esquema de metadatos y cómo aplicar un esquema de metadatos a los recursos.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
+role: Business Practitioner,Administrator
+feature: Metadatos
+exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+source-git-commit: ae0c8bda918e2e8a7a6a32e0228d1a2410b283d9
 workflow-type: tm+mt
-source-wordcount: '3605'
+source-wordcount: '3571'
 ht-degree: 7%
 
 ---
-
 
 # Esquemas de metadatos {#metadata-schemas}
 
@@ -27,9 +27,9 @@ Para ver y editar la página de propiedades de un recurso, siga estos pasos:
 
    ![Pestaña básica de Propiedades del recurso, donde no se puede cambiar el tipo de recurso](assets/asset-properties-basic-tab.png)
 
-*Figura: Ficha Básico de las  [!UICONTROL Propiedades] del recurso.*
+   *Figura: Ficha Básico de las  [!UICONTROL Propiedades] del recurso.*
 
-Para modificar el tipo MIME de un recurso, utilice un formulario de esquema de metadatos personalizado o modifique un formulario existente. Consulte [Editar esquema de metadatos Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) para obtener más información. Si modifica el esquema de metadatos de un tipo MIME, se modifica el diseño de página de propiedades de los recursos y todos los subtipos. Por ejemplo, modificar un esquema jpeg en `default/image` solo modifica el diseño de metadatos (propiedades de recursos) para los recursos con tipo MIME `image/jpeg`. Sin embargo, si edita el esquema predeterminado, los cambios modificarán el diseño de metadatos para todos los tipos de recursos.
+   Para modificar el tipo MIME de un recurso, utilice un formulario de esquema de metadatos personalizado o modifique un formulario existente. Consulte [Editar esquema de metadatos Forms](#edit-metadata-schema-forms) para obtener más información. Si modifica el esquema de metadatos de un tipo MIME, se modifica el diseño de página de propiedades de los recursos y todos los subtipos. Por ejemplo, modificar un esquema jpeg en `default/image` solo modifica el diseño de metadatos (propiedades de recursos) para los recursos con tipo MIME `image/jpeg`. Sin embargo, si edita el esquema predeterminado, los cambios modificarán el diseño de metadatos para todos los tipos de recursos.
 
 ## Formularios de esquema de metadatos {#default-metadata-schema-forms}
 
@@ -113,7 +113,7 @@ Los siguientes son los valores válidos para esta propiedad:
 
 * `./jcr:content/metadata/dc:title`: Almacena el valor en el nodo de metadatos del recurso como propiedad `dc:title`.
 
-* `./jcr:created`: Almacena la fecha y hora de creación de un recurso. Es una propiedad protegida. Si configura estas propiedades, Adobe recomienda marcarlas como Deshabilitar edición .
+* `./jcr:created`: Almacena la fecha y hora de creación de un recurso. Es una propiedad protegida. Si configura estas propiedades, Adobe recomienda marcarlas como Deshabilitar edición . De lo contrario, se produce el fallo “Error al modificar los recursos” al guardar las propiedades del recurso.
 
 Para asegurarse de que el componente se muestra correctamente en el formulario de esquema de metadatos, la ruta de la propiedad no debe incluir espacios.
 
@@ -301,7 +301,7 @@ En este caso, cree un nodo en `/etc/dam/metadataeditor/mimetypemappings` en el r
 [!DNL Assets] asigna los siguientes tipos MIME y formularios de esquema:
 
 | Formulario de esquema | Tipos MIME |
-| --------------------------- | --------------------------------------------------- |
+|---|---|
 | image/jpeg | image/pjpeg |
 | image/tiff | image/x-tiff |
 | application/pdf | application/postscript |
@@ -326,9 +326,7 @@ Por ejemplo, puede definir una variante del esquema de metadatos predeterminado 
 
 Solo los recursos cargados en la carpeta a la que se aplica este esquema se ajustan a los metadatos modificados definidos en el esquema de metadatos de la variante. [!DNL Assets] en otras carpetas donde se aplica el esquema original, siga ajustándose a los metadatos definidos en el esquema original.
 
-La herencia de metadatos por recursos se basa en el esquema que se aplica a la carpeta de primer nivel de la jerarquía. En otras palabras, si una carpeta no contiene subcarpetas, los recursos de la carpeta heredan los metadatos del esquema aplicado a la carpeta.
-
-Puede aplicar un esquema diferente en la subcarpeta. Los recursos de una subcarpeta heredan el esquema de metadatos de la subcarpeta inmediata. Si no se aplica ningún esquema o el mismo esquema en el nivel de subcarpeta, sus recursos heredan el esquema de la carpeta principal.
+La herencia de metadatos por recursos se basa en el esquema que se aplica a la carpeta de nivel superior de la jerarquía. Las subcarpetas aplican o heredan el mismo esquema. Si se aplica un esquema diferente en el nivel de subcarpeta, la herencia se detiene.
 
 1. En la interfaz [!DNL Experience Manager], vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**. Se muestra la página **[!UICONTROL Formularios de esquema de metadatos]**.
 1. Seleccione la casilla de verificación situada antes de un formulario, por ejemplo el formulario de metadatos predeterminado, y haga clic en **[!UICONTROL Copiar]** y guárdelo como un formulario personalizado. Especifique un nombre personalizado para el formulario, por ejemplo `my_default`. También puede crear un formulario personalizado.
