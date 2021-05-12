@@ -11,11 +11,10 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
-feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Seguridad
+source-git-commit: 1c6ee9b547fd0870feb510e35ffdcb8e3f857f18
 workflow-type: tm+mt
-source-wordcount: '2842'
+source-wordcount: '2873'
 ht-degree: 0%
 
 ---
@@ -26,7 +25,7 @@ Esta sección trata de los distintos pasos que debe realizar para garantizar que
 
 >[!NOTE]
 >
->También está disponible más información [sobre las amenazas de seguridad más peligrosas publicadas por Open Web Application Security Project (OWASP)](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+>También hay más información disponible sobre las amenazas de seguridad más peligrosas publicadas por [Open Web Application Security Project (OWASP)](https://owasp.org/www-project-top-ten/).
 
 >[!NOTE]
 >
@@ -333,11 +332,9 @@ Para mitigar esto, siga los siguientes pasos:
 
 **Mitigar frente a errores causados por el servlet de descarga de recursos**
 
-El servlet de descarga de recursos predeterminado en AEM permite que los usuarios autenticados emitan solicitudes de descarga concurrentes de gran tamaño arbitrario para crear archivos ZIP de recursos visibles para ellos que puedan sobrecargar el servidor o la red.
+El servlet predeterminado de descarga de recursos permite a los usuarios autenticados emitir solicitudes de descarga concurrentes de gran tamaño arbitrario para crear archivos ZIP de recursos. La creación de archivos ZIP de gran tamaño puede sobrecargar el servidor y la red. Para mitigar un posible riesgo de denegación de servicio (DoS) causado por este comportamiento, el componente OSGi `AssetDownloadServlet` está deshabilitado de forma predeterminada en la instancia de publicación [!DNL Experience Manager]. Está habilitado en la instancia de autor [!DNL Experience Manager] de forma predeterminada.
 
-Para mitigar los posibles riesgos de DoS causados por esta función, el componente `AssetDownloadServlet` OSGi está deshabilitado de forma predeterminada para las instancias de publicación en las últimas versiones de AEM.
-
-Si la configuración requiere que el servidor de descarga de recursos esté habilitado, consulte [este artículo](/help/assets/download-assets-from-aem.md) para obtener más información.
+Si no necesita la capacidad de descarga, deshabilite el servlet en las implementaciones de autor y publicación. Si la configuración requiere que la capacidad de descarga de recursos esté habilitada, consulte [este artículo](/help/assets/download-assets-from-aem.md) para obtener más información. Además, puede definir un límite máximo de descarga que su implementación pueda admitir.
 
 ### Deshabilitar WebDAV {#disable-webdav}
 
@@ -452,4 +449,4 @@ Adobe recomienda encarecidamente realizar una prueba de penetración de su infra
 
 ### Prácticas recomendadas de desarrollo {#development-best-practices}
 
-Es fundamental que el nuevo desarrollo siga las [Prácticas recomendadas de seguridad](/help/sites-developing/security.md) para garantizar que el entorno AEM permanezca seguro.
+Es fundamental que el nuevo desarrollo siga las [Prácticas recomendadas de seguridad](/help/sites-developing/security.md) para garantizar que el entorno de AEM permanezca seguro.
