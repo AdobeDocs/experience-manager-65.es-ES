@@ -3,15 +3,14 @@ title: Descargar recursos
 description: Obtenga información sobre cómo descargar recursos de [!DNL Adobe Experience Manager] y habilitar o deshabilitar la funcionalidad de descarga.
 contentOwner: AG
 role: Business Practitioner
-feature: Asset Management,Asset Distribution
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Administración de recursos,Distribución de recursos
+exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
+source-git-commit: 92983232216a5c7c563ebddc3baf6fcd81aaa4e2
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 4%
+source-wordcount: '891'
+ht-degree: 3%
 
 ---
-
 
 # Descargar recursos de [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
@@ -64,6 +63,8 @@ Para permitir la descarga de recursos de su DAM, por ejemplo, al usar algo como 
    enabled=B"true"
    asset.download.prezip.maxcontentsize=I"102400"
    ```
+
+De forma predeterminada, para las `GET` solicitudes de descarga de archivos, [!DNL Experience Manager] impone un límite de 50 MB en el tamaño de descarga del archivo ZIP. Las descargas iniciadas mediante solicitudes `POST` o la interfaz de usuario no se ven afectadas por este límite.
 
 ## Deshabilitar servlet de descarga de recursos {#disable-asset-download-servlet}
 
