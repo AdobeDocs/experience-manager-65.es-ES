@@ -1,8 +1,6 @@
 ---
 title: Pasos de actualización para las instalaciones del servidor de aplicaciones
-seo-title: Pasos de actualización para las instalaciones del servidor de aplicaciones
 description: Obtenga información sobre cómo actualizar instancias de AEM que se implementan mediante servidores de aplicaciones.
-seo-description: Obtenga información sobre cómo actualizar instancias de AEM que se implementan mediante servidores de aplicaciones.
 uuid: e4020966-737c-40ea-bfaa-c63ab9a29cee
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,10 +10,9 @@ discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
 docset: aem65
 feature: Actualización
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-translation-type: tm+mt
-source-git-commit: d99f4ce072688f8e7d453199742618f0b2357d07
+source-git-commit: 64f55369819104f2f622c61de1ecdb885e6708d9
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
