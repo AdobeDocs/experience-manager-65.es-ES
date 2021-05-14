@@ -10,7 +10,7 @@ discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
 docset: aem65
 feature: Actualización
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: 64f55369819104f2f622c61de1ecdb885e6708d9
+source-git-commit: 69d960da90176058e8bb8b685325529e6cc10a31
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
@@ -85,7 +85,7 @@ Todos los ejemplos de este procedimiento utilizan Tomcat como servidor de aplica
 
    * Añada la siguiente línea a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
-      ```customBlobStore=true```
+      `customBlobStore=true`
 
    * A continuación, agregue las siguientes líneas a `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
