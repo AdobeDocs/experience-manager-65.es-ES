@@ -12,9 +12,9 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Seguridad de los documentos
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
+source-git-commit: ffba6ecf6c3d75a71c3e6f970fd9a20ce467492d
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2562'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,7 @@ Los coordinadores de conjuntos de políticas pueden realizar las siguientes tare
 
 >[!NOTE]
 >
->Puede recuperar un máximo de 1000 nombres de conjuntos de directivas de la base de datos.
+>Puede recuperar un máximo de 1000 nombres de conjuntos de directivas de la base de datos mediante la API `getAllPolicysetnames()`.
 
 Los administradores y los coordinadores de conjuntos de políticas que tienen permiso para hacerlo crean y eliminan conjuntos de políticas en las páginas web de la administración de seguridad de documentos.
 
