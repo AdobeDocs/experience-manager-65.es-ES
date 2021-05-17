@@ -10,15 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Seguridad de los documentos
+exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
+source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
-
 
 # Acerca de la seguridad del documento {#about-document-security}
 
@@ -223,6 +222,10 @@ Los coordinadores de conjuntos de políticas pueden realizar las siguientes tare
 * Ver eventos de directivas y documentos para cualquier directiva o documento dentro del conjunto de directivas
 * Revocar el acceso a los documentos
 * Cambiar directivas para el documento.
+
+>[!NOTE]
+>
+>Puede recuperar un máximo de 1000 nombres de conjuntos de directivas de la base de datos.
 
 Los administradores y los coordinadores de conjuntos de políticas que tienen permiso para hacerlo crean y eliminan conjuntos de políticas en las páginas web de la administración de seguridad de documentos.
 
