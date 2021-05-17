@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
-feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Copiar idioma
+exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
+source-git-commit: bed7ffd413c7826cf0e419fa1c31e3d3c325d4b1
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1571'
 ht-degree: 2%
 
 ---
-
 
 # Configuración del marco de integración de traducción{#configuring-the-translation-integration-framework}
 
@@ -40,6 +39,7 @@ Los siguientes proveedores de traducción proporcionan una implementación de la
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
 * [Palabras clave](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
+* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
@@ -203,7 +203,7 @@ Para configurar la traducción de las páginas de origen a otros idiomas, asocie
 * La configuración de nube que se conecta AEM con su proveedor de traducción.
 * Marco de integración de traducción que configura los detalles de la traducción.
 
-Tenga en cuenta que la configuración de nube del marco de integración de traducción identifica la configuración de nube que se utilizará para conectarse al proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco.
+Tenga en cuenta que la configuración de nube del marco de integración de traducción identifica la configuración de nube que se utilizará para la conexión con el proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco.
 
 Cuando asocia una página con una configuración de nube, los descendientes de la página heredan la asociación. Por ejemplo, si asocia la página /content/geometrixx/en/products con un marco de integración de traducción, la página Productos y todas las páginas debajo se traducen según el marco.
 
@@ -228,4 +228,3 @@ Asocie una página al marco de integración de traducción que define cómo dese
 1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la pestaña Cloud Services .
 1. Toque o haga clic en Agregar configuración > Integración de traducción.
 1. Seleccione el marco de integración de traducción que desea utilizar y, a continuación, toque o haga clic en Finalizado.
-
