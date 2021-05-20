@@ -4,12 +4,11 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner
-feature: Asset Management,Search
+feature: Administración de recursos,Buscar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-translation-type: tm+mt
-source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '9798'
+source-wordcount: '9796'
 ht-degree: 4%
 
 ---
@@ -114,7 +113,7 @@ Puede reemplazar un recurso existente, crear otra versión o conservar ambas cam
 >
 >Cuando selecciona **[!UICONTROL Reemplazar]** en el cuadro de diálogo [!UICONTROL Conflicto de nombres], el ID de recurso se regenera para el nuevo recurso. Este ID es diferente del ID del recurso anterior.
 >
->Si Asset Insights está habilitado para rastrear impresiones/clics con Adobe Analytics, el ID de recurso regenerado invalida los datos capturados para el recurso en Analytics.
+>Si Asset Insights está habilitado para rastrear impresiones o clics con [!DNL Adobe Analytics], el ID de recurso regenerado invalida los datos capturados para el recurso en [!DNL Analytics].
 
 Si el recurso que carga existe en [!DNL Assets], el cuadro de diálogo **[!UICONTROL Duplicados detectados]** advierte que está intentando cargar un recurso duplicado. El cuadro de diálogo solo aparece si el valor de suma de comprobación `SHA 1` del binario del recurso existente coincide con el valor de suma de comprobación del recurso que se carga. En este caso, los nombres de los recursos no importan.
 
@@ -327,7 +326,7 @@ Si carga muchos recursos en Adobe Experience Manager, las solicitudes de E/S al 
 >
 >La carga de flujo continuo está deshabilitada para Adobe Experience Manager que se ejecuta en el servidor JEE con versiones de servlet-api inferiores a 3.1.
 
-### Extraer archivo ZIP que contenga recursos {#extractzip}
+### Extraer archivo ZIP que contiene recursos {#extractzip}
 
 Puede cargar archivos ZIP como cualquier otro recurso admitido. Las mismas reglas de nombre de archivo se aplican a los archivos ZIP. [!DNL Experience Manager] permite extraer un archivo ZIP en una ubicación DAM. Si los archivos de archivo no contienen ZIP como extensión, habilite la detección de tipo de archivo mediante contenido.
 
