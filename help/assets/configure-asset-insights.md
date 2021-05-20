@@ -3,19 +3,18 @@ title: Configure Asset Insights para obtener análisis.
 description: Configure Asset Insights en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Architect, Administrator
-feature: Asset Insights,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Información sobre Assets, Informes de Asset
+exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 7%
+source-wordcount: '253'
+ht-degree: 6%
 
 ---
 
-
 # Configurar Asset Insights {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] recupera los datos de uso relacionados con los recursos digitales utilizados por sitios web de terceros desde  [!DNL Adobe Analytics]. Para permitir que Asset Insights recupere estos datos y genere perspectivas, configure primero la función para integrarla con Adobe Analytics.
+[!DNL Adobe Experience Manager Assets] recupera los datos de uso relacionados con los recursos digitales utilizados por sitios web de terceros desde  [!DNL Adobe Analytics]. Para permitir que Asset Insights recupere estos datos y genere perspectivas, configure primero la función para integrarla con [!DNL Adobe Analytics]. Para utilizar esta función, compre la licencia [!DNL Adobe Analytics] por separado. Los clientes de [!DNL Managed Services] reciben [!DNL Analytics] licencia incluida con [!DNL Experience Manager]. Consulte [Descripción del producto de Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
