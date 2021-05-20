@@ -3,10 +3,9 @@ title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL S
 description: Utilice los recursos disponibles en una implementación remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
 role: Business Practitioner, Administrator, Leader
-feature: Connected Assets,User and Groups
+feature: Recursos, usuarios y grupos conectados
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-translation-type: tm+mt
-source-git-commit: 48e5b55a1d79fef6172f684cb65a4137113fb7fb
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
 source-wordcount: '2739'
 ht-degree: 29%
@@ -182,7 +181,7 @@ Para ver y administrar referencias en la implementación [!DNL Assets] , siga es
 
 ## Limitaciones y prácticas recomendadas {#tip-and-limitations}
 
-* Para obtener información sobre el uso de los recursos, configure la funcionalidad [Asset Insight](/help/assets/asset-insights.md) en la instancia [!DNL Sites] .
+* Para obtener información sobre el uso de los recursos, configure la funcionalidad [Insight de recursos](/help/assets/asset-insights.md) en la instancia [!DNL Sites] .
 
 ### Permisos y administración de recursos {#permissions-and-managing-assets}
 
