@@ -8,10 +8,9 @@ breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
 feature: Administración
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '627'
 ht-degree: 18%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 18%
 
 + [Información general sobre la guía del usuario de administración](home.md)
 + Funciones de sitios {#introduction}
-   + [Administración de sitios web](msm-and-translation.md) 
+   + [Administración de sitios web ](msm-and-translation.md)
    + [Trabajos asincrónicos](asynchronous-jobs.md)
    + [Reutilización del contenido: administrador de varios sitios y Live Copy](msm.md)
    + [Consola de información general de Live Copy](msm-livecopy-overview.md)
@@ -136,7 +135,6 @@ ht-degree: 18%
    + [Resolución de problemas de integración](troubleshooting-integration-issues.md)
    + [Integración con BrightEdge Content Optimizer](brightedge.md)
    + [Productor de catálogos](catalog-producer.md)
-   + [Configuración de la integración de AEM Assets con Experience Cloud y Creative Cloud](configure-assets-cc-integration.md)
    + [Integración con Silverpop Engage](silverpop.md)
    + [Integración con Adobe Campaign](campaign.md)
    + [Integración con ExactTarget](exacttarget.md)
