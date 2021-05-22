@@ -1,8 +1,8 @@
 ---
 title: Uso compartido de carpetas con Adobe Creative Cloud
 seo-title: Uso compartido de carpetas con Adobe Creative Cloud
-description: Más información sobre el uso compartido de carpetas con Adobe Creative Cloud
-seo-description: Más información sobre el uso compartido de carpetas con Adobe Creative Cloud
+description: Obtenga información sobre cómo compartir carpetas con Adobe Creative Cloud
+seo-description: Obtenga información sobre cómo compartir carpetas con Adobe Creative Cloud
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,11 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 525b11fbb60fc3568ecc028562ffbf174b8e4c37
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 2%
+source-wordcount: '80'
+ht-degree: 12%
 
 ---
 
@@ -23,25 +22,28 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->La función de uso compartido de carpetas de AEM a Creative Cloud está en desuso. Se recomienda encarecidamente a los clientes que utilicen las nuevas funciones, como [Vínculo de recursos de Adobe](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o [AEM aplicación de escritorio](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Obtenga más información en [Prácticas recomendadas de integración de AEM y Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La función de uso compartido de carpetas de AEM a Creative Cloud está en desuso. Se recomienda encarecidamente a los clientes que utilicen funciones más nuevas, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o [AEM aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es). Obtenga más información en [AEM y prácticas recomendadas de integración del Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
-Recursos Adobe Experience Manager (AEM) permite compartir carpetas que contienen recursos con usuarios de Adobe Creative Cloud. Para obtener más información sobre cómo configurar Adobe Marketing Cloud para que pueda compartir recursos con Adobe Creative Cloud, consulte [Configuración de la integración de Creative Cloud de recursos](/help/sites-administering/configure-assets-cc-integration.md).
+<!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 
-1. En la consola Recursos, seleccione una carpeta para compartir con Creative Cloud.
+Adobe Experience Manager (AEM) Assets lets you share folders containing assets with Adobe Creative Cloud users. For details on how to configure Adobe Marketing Cloud to let you share assets with Adobe Creative Cloud, see [Configuring Assets-Creative Cloud integration](/help/sites-administering/configure-assets-cc-integration.md).
+
+1. In the Assets console, select a folder to share with Creative Cloud.
 
    ![](assets/chlimage_1-139.png)
 
-1. En la barra de herramientas, haga clic en **Compartir**.
+1. From the toolbar, click **Share**.
 
    ![](assets/chlimage_1-140.png)
 
-1. En la lista, seleccione la opción **Adobe Creative Cloud**.
+1. From the list, select the **Adobe Creative Cloud** option.
 
    ![](assets/chlimage_1-141.png)
 
-1. En la página **Uso compartido de Creative Cloud**, agregue el usuario para compartir la carpeta con y haga clic en **Guardar**.
+1. In the **Creative Cloud Sharing** page, add the user to share the folder with and then click **Save**.
 
    ![](assets/chlimage_1-142.png)
 
-1. Haga clic en **Aceptar** para cerrar el mensaje de confirmación.
-1. Inicie sesión en el Creative Cloud con las credenciales del usuario con el que ha compartido la carpeta. La carpeta compartida está disponible en Creative Cloud.
+1. Click **Ok** to close the confirmation message.
+1. Log on to Creative Cloud with the credentials of the user you shared the folder with. The shared folder is available in Creative Cloud.
+-->
