@@ -2,16 +2,15 @@
 title: Configuración de la integración de AEM Assets con Experience Cloud
 description: Obtenga información sobre cómo configurar la integración de AEM Assets con Experience Cloud.
 contentOwner: AG
-feature: Asset Management
+feature: Administración de activos
 role: Business Practitioner, Architect, Administrator
-translation-type: tm+mt
-source-git-commit: a9c9194ac1d163be3ab642ab5a6323de02d67363
+exl-id: d167cf97-6829-45a7-ba46-2239d530b060
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
-
 
 # Configurar la integración de AEM Assets con el Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
@@ -27,7 +26,7 @@ En el servidor back-end, el servidor AEM autentica el perfil con la puerta de en
 
 >[!NOTE]
 >
->Esta función está en desuso en AEM Assets. Busque reemplazos en [AEM y prácticas recomendadas de integración del Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Si tiene alguna consulta, [póngase en contacto con el Servicio de atención al cliente de Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
+>Esta función está en desuso en [!DNL Assets]. Busque reemplazos en [AEM y prácticas recomendadas de integración del Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Si tiene alguna consulta, [póngase en contacto con el Servicio de atención al cliente de Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-48.png)
@@ -172,5 +171,4 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [Prácticas recomendadas para la integración de recursos y Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
->* [Prácticas recomendadas de uso compartido de recursos en carpetas de Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
 
