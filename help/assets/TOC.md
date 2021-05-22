@@ -6,11 +6,10 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, procese y distribuya recursos digitales.
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 42%
+source-wordcount: '582'
+ht-degree: 43%
 
 ---
 
@@ -27,7 +26,7 @@ ht-degree: 42%
    + [Buscar recursos digitales](search-assets.md)
    + [Trabajar con metadatos de recursos](metadata.md)
    + [Recursos multilingües](multilingual-assets.md)
-   + [ [!DNL Adobe Stock] Uso de recursos en Assets](aem-assets-adobe-stock.md)
+   + [Usar  [!DNL Adobe Stock] recursos en Assets](aem-assets-adobe-stock.md)
    + [Vista previa de recursos 3D](previewing-3d-assets.md)
    + [Revisar recursos y colecciones de carpetas](bulk-approval.md)
    + [Etiquetas inteligentes mejoradas](enhanced-smart-tags.md)
@@ -87,11 +86,11 @@ ht-degree: 42%
    + [Personalizar y ampliar [!DNL Assets]](extending-assets.md)
    + [Procesamiento de recursos mediante controladores de medios y flujos de trabajo](media-handlers.md)
    + [Ampliar funcionalidad de búsqueda](searchx.md)
-   + [Instale y  [!DNL ImageMagick] configure para trabajar con [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Instale y configure [!DNL ImageMagick] para trabajar con [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Integración de recursos con el flujo de actividades](extending-activity-stream.md)
    + [Ampliar editor de recursos](asseteditorx.md)
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
-   + [Compatibilidad con fragmentos de contenido  [!DNL Assets] en la API HTTP](assets-api-content-fragments.md)
+   + [Compatibilidad con fragmentos de contenido en la API  [!DNL Assets] HTTP](assets-api-content-fragments.md)
    + [[!DNL Assets] desarrollo de proxy](proxy.md)
 + Administrar recursos {#administer}
    + [Formatos de archivo compatibles](assets-formats.md)
@@ -100,7 +99,7 @@ ht-degree: 42%
    + [Configuración de la funcionalidad de metadatos](metadata-config.md)
    + [Esquemas de metadatos](metadata-schemas.md)
    + [Reescritura XMP en representaciones](xmp-writeback.md)
-   + [Uso compartido de vínculos de activos](link-sharing.md)
+   + [Uso compartido de vínculos de recursos](link-sharing.md)
    + [Informes de Asset](asset-reports.md)
    + [Configuración del servicio de contenido inteligente para el etiquetado](config-smart-tagging.md)
    + [Perfiles para procesar metadatos, imágenes y vídeos](processing-profiles.md)
@@ -125,9 +124,8 @@ ht-degree: 42%
    + [Varios alquileres para colecciones, fragmentos y plantillas de fragmentos](multi-tenancy.md)
    + [Marcar los recursos con agua](watermarking.md)
    + [Plantillas de recursos](asset-templates.md)
-   + [Prácticas recomendadas para compartir carpetas con [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
-   + [ [!DNL Assets] Configurar con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configurar [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicar recursos en [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Publicar carpetas en [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Publicar colecciones en [!DNL Brand Portal]](brand-portal-publish-collection.md)
