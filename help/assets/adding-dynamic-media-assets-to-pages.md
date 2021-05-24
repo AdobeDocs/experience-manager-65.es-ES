@@ -10,12 +10,11 @@ discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
-feature: Components,Publishing
-translation-type: tm+mt
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+feature: Componentes,Publicación
+source-git-commit: fde3cb4a2461ca80f410f360fd5d56f359cec149
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 31%
+source-wordcount: '3274'
+ht-degree: 30%
 
 ---
 
@@ -151,39 +150,50 @@ También puede configurar el ajuste preestablecido de visor, el ajuste preestabl
 >
 >De forma predeterminada, el componente de imagen Dynamic Media es adaptable. Si desea convertirlo en un tamaño fijo, configúrelo en el componente en la ficha **[!UICONTROL Avanzado]** con los valores de **[!UICONTROL Anchura]** y **[!UICONTROL Altura.]**
 
-* **[!UICONTROL Ajuste preestablecido de visualizador]**: seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Consulte Administración de ajustes preestablecidos de visor. No es posible seleccionar un ajuste preestablecido de visor si utiliza un ajuste preestablecido de imagen, y viceversa.
+* **[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Consulte Administración de ajustes preestablecidos de visor. No es posible seleccionar un ajuste preestablecido de visor si utiliza un ajuste preestablecido de imagen, y viceversa.
 
    Esta es la única opción disponible al visualizar conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos. Los ajustes preestablecidos de visor que se muestran también son inteligentes: solo aparecen los ajustes preestablecidos del visor pertinente.
 
-* **[!UICONTROL Modificadores del visualizador]**: los modificadores del visualizador toman la forma de par nombre=valor con un delimitador &amp; y permiten cambiar los visualizadores como se describe en la Guía de referencia del visualizador. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1`, que establece una imagen diferente para la miniatura del vídeo y asocia un archivo de subtítulo/subtítulo/subtítulo cerrado con el vídeo.
+* **[!UICONTROL Modificadores del visualizador]** : Los modificadores del visualizador toman la forma de par nombre=valor con un delimitador &amp; y permiten cambiar los visualizadores como se describe en la Guía de referencia del visualizador. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1`, que establece una imagen diferente para la miniatura del vídeo y asocia un archivo de subtítulo/subtítulo/subtítulo cerrado con el vídeo.
 
-* **[!UICONTROL Ajuste preestablecido de imagen]**: seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que busca no está visible, es posible que tenga que hacerlo visible. Consulte Administración de ajustes preestablecidos de imagen. No es posible seleccionar un ajuste preestablecido de visor si utiliza un ajuste preestablecido de imagen, y viceversa.
-
-   Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
-
-* **[!UICONTROL Modificadores de imagen]**: puede aplicar efectos de imagen suministrando comandos de imagen adicionales. Estos se describen en Ajustes preestablecidos de imagen y en la referencia del comando de servicio de imágenes.
+* **[!UICONTROL Ajuste preestablecido de imagen]** : seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que busca no está visible, es posible que tenga que hacerlo visible. Consulte Administración de ajustes preestablecidos de imagen. No es posible seleccionar un ajuste preestablecido de visor si utiliza un ajuste preestablecido de imagen, y viceversa.
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-* **[!UICONTROL Puntos de interrupción]**: si utiliza este recurso en un sitio interactivo, debe agregar los puntos de interrupción de la imagen. Los puntos de interrupción de imagen deben separarse por comas (,). Esta opción funciona cuando no se ha definido ninguna altura o anchura en el ajuste preestablecido de una imagen.
+* **[!UICONTROL Modificadores de imagen]** : puede aplicar efectos de imagen suministrando comandos de imagen adicionales. Estos se describen en Ajustes preestablecidos de imagen y en la referencia del comando de servicio de imágenes.
+
+   Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+
+* **[!UICONTROL Puntos de interrupción]** : si utiliza este recurso en un sitio interactivo, debe agregar los puntos de interrupción de la imagen. Los puntos de interrupción de imagen deben separarse por comas (,). Esta opción funciona cuando no se ha definido ninguna altura o anchura en el ajuste preestablecido de una imagen.
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
    Puede editar la siguiente Configuración avanzada tocando **[!UICONTROL Editar]** en el componente.
 
-* **[!UICONTROL Título]**: permite cambiar el título de la imagen.
+* **[!UICONTROL Optimizar para dispositivos]**  de mayor resolución: seleccione (predeterminado) la casilla de verificación para permitir la optimización del RGPD (proporción de píxeles del dispositivo).
 
-* **[!UICONTROL Texto alternativo]**: Agregue un título a la imagen para los usuarios que tengan los gráficos desactivados.
+   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/imaging-faq.md#dpr).
+
+   Tenga en cuenta que los valores del RGPD de imágenes inteligentes de Adobe Experience Manager Dynamic Media se ignoran.
+
+   La opción **[!UICONTROL Optimizar para dispositivos de mayor resolución]** solo se muestra cuando se cumple el siguiente criterio:
+   * En Tipo de ajuste preestablecido, **[!UICONTROL Ajuste preestablecido de imagen]** está seleccionado y **[!UICONTROL RESS_IP]** está seleccionado en la lista desplegable **[!UICONTROL Ajuste preestablecido de imagen]**.
+
+   ![ajuste de la proporción de píxeles del dispositivo para el ajuste preestablecido de imagen](/help/assets/assets-dm/dpr-ress-ip.png)
+
+* **[!UICONTROL Título]** : cambie el título de la imagen.
+
+* **[!UICONTROL Texto alternativo]** : agregue un título a la imagen para los usuarios que tengan los gráficos desactivados.
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-* **[!UICONTROL URL, Abrir en]**: puede configurar un recurso para abrir un vínculo. Defina la dirección URL y, en Abrir en, indique si quiere que se abra en la misma ventana o en una nueva.
+* **[!UICONTROL URL, Abrir en]** : puede configurar un recurso para abrir un vínculo. Defina la dirección URL y, en Abrir en, indique si quiere que se abra en la misma ventana o en una nueva.
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-* **[!UICONTROL Anchura]**: introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
+* **[!UICONTROL Anchura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
-* **[!UICONTROL Altura]**: introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
+* **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
 
 #### Uso de vídeos {#when-working-with-video}
@@ -198,22 +208,22 @@ Debe editar la siguiente Configuración de Dynamic Media haciendo clic en **[!UI
 >
 >De forma predeterminada, el componente de vídeo de Dynamic Media es adaptable. Si desea que tenga un tamaño fijo, configúrelo en el componente con la **[!UICONTROL Anchura]** y **[!UICONTROL Altura]** en la pestaña **[!UICONTROL Avanzado]**.
 
-* **[!UICONTROL Ajuste preestablecido de visualizador]**: seleccione un ajuste preestablecido de visualizador de vídeo existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Consulte Administración de ajustes preestablecidos de visor. 
+* **[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un ajuste preestablecido de visualizador de vídeo existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Consulte Administración de ajustes preestablecidos de visor. 
 
-* **[!UICONTROL Modificadores del visualizador]**: los modificadores del visualizador toman la forma de par nombre=valor con un delimitador &amp; y permiten cambiar los visualizadores como se describe en la Guía de referencia del visualizador de Adobe. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1`
+* **[!UICONTROL Modificadores del visualizador]** : Los modificadores del visualizador toman la forma de par nombre=valor con un delimitador &amp; y permiten cambiar los visualizadores como se describe en la Guía de referencia del visualizador de Adobe. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1`
 
    Con los modificadores del visor, puede, por ejemplo, hacer lo siguiente:
 
    * Asocie un archivo de rótulo con un vídeo: [subtítulo][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Asocie un archivo de navegación con un vídeo: [navegación][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
-   Puede editar la siguiente Configuración avanzada haciendo clic en **[!UICONTROL Editar]** en el componente.
+      Puede editar la siguiente Configuración avanzada haciendo clic en **[!UICONTROL Editar]** en el componente.
 
-* **[!UICONTROL Título]**: permite cambiar el título del vídeo.
+* **[!UICONTROL Título]** : cambie el título del vídeo.
 
-* **[!UICONTROL Anchura]**: introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
+* **[!UICONTROL Anchura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
-* **[!UICONTROL Altura]**: introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
+* **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
 #### Al trabajar con Recorte inteligente {#when-working-with-smart-crop}
 
@@ -229,25 +239,39 @@ Debe editar la siguiente configuración de Dynamic Media haciendo clic en **[!UI
 >
 >De forma predeterminada, el componente de imagen Dynamic Media es adaptable. Si desea convertirlo en un tamaño fijo, configúrelo en el componente en la ficha **[!UICONTROL Avanzado]** con los valores de **[!UICONTROL Anchura]** y **[!UICONTROL Altura.]**
 
-* **[!UICONTROL Modificadores de imagen]**: puede aplicar efectos de imagen suministrando comandos de imagen adicionales. Estos se describen en Ajustes preestablecidos de imagen y en la referencia del comando de servicio de imágenes.
+* **[!UICONTROL Modificadores de imagen]** : puede aplicar efectos de imagen suministrando comandos de imagen adicionales. Estos se describen en Ajustes preestablecidos de imagen y en la referencia del comando de servicio de imágenes.
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
    Puede editar la siguiente Configuración avanzada haciendo clic en **[!UICONTROL Editar]** en el componente.
 
-* **[!UICONTROL Título]**: permite cambiar el título de la imagen de recorte inteligente.
+* **[!UICONTROL Habilitar coincidencia de relación de aspecto]** : para permitir que Dynamic Media elija una representación de recorte inteligente con una relación de aspecto que coincida mejor con la relación de aspecto de la imagen original, seleccione esta opción.
 
-* **[!UICONTROL Texto alternativo]**: Agregue un título a la imagen de recorte inteligente para los usuarios que tengan los gráficos desactivados.
+* **[!UICONTROL Optimizar para dispositivos]**  de mayor resolución: seleccione (predeterminado) la casilla de verificación para permitir la optimización del RGPD (proporción de píxeles del dispositivo).
+
+   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/imaging-faq.md#dpr).
+
+   Tenga en cuenta que los valores del RGPD de imágenes inteligentes de Adobe Experience Manager Dynamic Media se ignoran.
+
+   La opción **[!UICONTROL Optimizar para dispositivos de mayor resolución]** solo se muestra cuando se cumple el siguiente criterio:
+
+   * En Tipo de ajuste preestablecido, la opción **[!UICONTROL Recorte inteligente]** está seleccionada.
+
+   ![configuración de la proporción de píxeles del dispositivo para el recorte inteligente](/help/assets/assets-dm/dpr-smartcrop.png)
+
+* **[!UICONTROL Título]** : cambie el título de la imagen de recorte inteligente.
+
+* **[!UICONTROL Texto alternativo]** : agregue un título a la imagen de recorte inteligente para los usuarios que tengan los gráficos desactivados.
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-* **[!UICONTROL URL, Abrir en]**: puede configurar un recurso para abrir un vínculo. Defina la dirección URL y, en Abrir en, indique si quiere que se abra en la misma ventana o en una nueva.
+* **[!UICONTROL URL, Abrir en]** : puede configurar un recurso para abrir un vínculo. Defina la dirección URL y, en Abrir en, indique si quiere que se abra en la misma ventana o en una nueva.
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-* **[!UICONTROL Anchura]**: introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
+* **[!UICONTROL Anchura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
-* **[!UICONTROL Altura]**: introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
+* **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
 ### Componente de Medios interactivos {#interactive-media-component}
 
@@ -272,21 +296,21 @@ Tenga en cuenta que no se admite la asignación de un ajuste preestablecido de v
 
 Puede editar la siguiente configuración **[!UICONTROL General]** tocando **[!UICONTROL Editar]** en el componente.
 
-* **[!UICONTROL Ajuste preestablecido de visualizador]**: seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Los ajustes preestablecidos de visor se deben publicar para que se puedan usar. Consulte Administración de ajustes preestablecidos de visor. 
+* **[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visor que busca no está visible, es posible que tenga que hacerlo visible. Los ajustes preestablecidos de visor se deben publicar para que se puedan usar. Consulte Administración de ajustes preestablecidos de visor. 
 
-* **[!UICONTROL Título]**: permite cambiar el título del vídeo.
+* **[!UICONTROL Título]** : cambie el título del vídeo.
 
-* **[!UICONTROL Anchura]**: introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
+* **[!UICONTROL Anchura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
-* **[!UICONTROL Altura]**: introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
+* **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
    Puede editar las siguientes opciones de configuración **[!UICONTROL Añadir a carro]** al hacer clic en **[!UICONTROL Editar]** en el componente.
 
-* **[!UICONTROL Mostrar recurso de producto]**: de forma predeterminada, este valor está seleccionado. El recurso del producto muestra una imagen del producto, según se ha definido en el módulo Commerce. Desactive la casilla para no mostrar el recurso del producto.
+* **[!UICONTROL Mostrar recurso de producto]** : de forma predeterminada, este valor está seleccionado. El recurso del producto muestra una imagen del producto, según se ha definido en el módulo Commerce. Desactive la casilla para no mostrar el recurso del producto.
 
-* **[!UICONTROL Mostrar precio del producto]**: de forma predeterminada, este valor está seleccionado. El precio del producto muestra el precio del artículo, según se ha definido en el módulo Commerce. Desactive la casilla para no mostrar el precio del producto.
+* **[!UICONTROL Mostrar precio del producto]** : de forma predeterminada, se selecciona este valor. El precio del producto muestra el precio del artículo, según se ha definido en el módulo Commerce. Desactive la casilla para no mostrar el precio del producto.
 
-* **[!UICONTROL Mostrar formulario de producto]**: de forma predeterminada, este valor no está seleccionado. En el formulario del producto se incluye las variantes de producto, como talla y color. Desactive la casilla para no mostrar las variantes del producto.
+* **[!UICONTROL Mostrar formulario de producto]** : de forma predeterminada, este valor no está seleccionado. En el formulario del producto se incluye las variantes de producto, como talla y color. Desactive la casilla para no mostrar las variantes del producto.
 
 ### Componente de medios panorámicos {#panoramic-media-component}
 
@@ -314,7 +338,7 @@ Tenga en cuenta que no se admite la asignación de un ajuste preestablecido de v
 
 Puede editar la siguiente configuración tocando **[!UICONTROL Configurar]** en el componente.
 
-* **[!UICONTROL Ajuste preestablecido de visualizador]**: seleccione un visualizador existente en el menú desplegable Ajuste preestablecido de visualizador.
+* **[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un visualizador existente en el menú desplegable Ajuste preestablecido de visualizador.
 
 Si el ajuste preestablecido de visualizador que está buscando no está visible, compruebe que se ha publicado. Debe publicar ajustes preestablecidos de visualizador para poder utilizarlos. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). 
 
@@ -330,7 +354,7 @@ El visor incluye compatibilidad nativa con la entrega de 360 recursos de vídeo.
 
 Puede editar la siguiente configuración tocando **[!UICONTROL Configurar]** en el componente.
 
-* **[!UICONTROL Ajuste preestablecido de visualizador]**: seleccione un visualizador existente en el menú desplegable Ajuste preestablecido de visualizador. Utilice Video360VR para usuarios finales que utilicen lentes de realidad virtuales. Incluye controles básicos de reproducción de vídeo y funciones de medios sociales. Utilice Video360_social, que incluye controles básicos de reproducción de vídeo. El procesamiento de vídeo se realiza en modo estéreo. El control de punto de vista manual está desactivado, pero el control giroscópico está activado. No hay características de medios sociales.
+* **[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un visualizador existente en el menú desplegable Ajuste preestablecido de visualizador. Utilice Video360VR para usuarios finales que utilicen lentes de realidad virtuales. Incluye controles básicos de reproducción de vídeo y funciones de medios sociales. Utilice Video360_social, que incluye controles básicos de reproducción de vídeo. El procesamiento de vídeo se realiza en modo estéreo. El control de punto de vista manual está desactivado, pero el control giroscópico está activado. No hay características de medios sociales.
 
 Si el ajuste preestablecido de visualizador que está buscando no está visible, compruebe que se ha publicado. Debe publicar ajustes preestablecidos de visualizador para poder utilizarlos. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). 
 
