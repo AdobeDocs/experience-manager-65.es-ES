@@ -1,20 +1,18 @@
 ---
 title: Imágenes inteligentes
 description: Las imágenes inteligentes aplican las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes adecuadas optimizadas para su experiencia, lo que resulta en un mejor rendimiento y participación.
-uuid: c11e52ba-8d64-4dc5-b30a-fc10c2b704e5
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
-feature: Asset Management
+feature: Administración de recursos,Representaciones
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-translation-type: tm+mt
-source-git-commit: 8d27457ad88cb84e670e78bab4c40da36fcfc629
+source-git-commit: fde3cb4a2461ca80f410f360fd5d56f359cec149
 workflow-type: tm+mt
-source-wordcount: '1912'
-ht-degree: 2%
+source-wordcount: '2626'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +40,53 @@ Los siguientes ejemplos de recursos de imagen ilustran la optimización de imág
 |  |  |  |  | Media = 51% |
 
 De forma similar a lo anterior, Adobe también realizó una prueba con 7009 URL de sitios de clientes activos. Pudieron lograr una optimización promedio de un 38% más del tamaño de archivo para JPEG. Para PNG con formato WebP, fueron capaces de lograr un promedio de un 31% más de optimización del tamaño de archivo. Este tipo de optimización es posible debido a la capacidad de las imágenes inteligentes.
+
+En la web móvil, los desafíos se ven agravados por dos factores:
+
+* Gran variedad de dispositivos con diferentes factores de forma y pantallas de alta resolución.
+* Ancho de banda de red limitado.
+
+En términos de imágenes, el objetivo es servir las imágenes de mejor calidad de la manera más eficiente posible.
+
+### Acerca de la optimización de la proporción de píxeles del dispositivo {#dpr}
+
+La proporción de píxeles del dispositivo (DPR), también conocida como proporción de píxeles de CSS, es la relación entre los píxeles físicos de un dispositivo y los píxeles lógicos. Especialmente con la llegada de las pantallas de retina, la resolución de píxeles de los dispositivos móviles modernos está creciendo a una velocidad rápida.
+
+Al habilitar la optimización de la proporción de píxeles del dispositivo, la imagen se muestra en la resolución nativa de la pantalla, lo que la hace parecer nítida.
+
+Activar la configuración del RGPD de imágenes inteligentes ajusta automáticamente la imagen solicitada en función de la densidad de píxeles de la pantalla desde la que se presenta la solicitud. Actualmente, la densidad de píxeles de la visualización proviene de los valores de encabezado de CDN de Akamai.
+
+| Valores permitidos en la dirección URL de una imagen | Descripción |
+|---|---|
+| `dpr=off` | Desactive la optimización del RGPD en un nivel de URL de imagen individual. |
+| `dpr=on,dprValue` | Sobrescriba el valor de RGPD detectado por las imágenes inteligentes, con un valor personalizado (tal y como lo detecte cualquier lógica del lado del cliente u otro medio). El valor permitido para `dprValue` es cualquier número bueno que 0. Los valores especificados de 1.5, 2 o 3 son típicos. |
+
+>[!NOTE]
+>
+>* Puede utilizar `dpr=on,dprValue` incluso si la configuración del RGPD a nivel de empresa está desactivada.
+>* Debido a la optimización del RGPD, cuando la imagen resultante es buena que la configuración de Dynamic Media MaxPix, el ancho de MaxPix siempre se reconoce manteniendo la relación de aspecto de la imagen.
+
+
+| Tamaño de la imagen solicitado | Valor de RGPD | Tamaño de la imagen entregada |
+|---|---|---|
+| 816 x 500 | 1 | 816 x 500 |
+| 816 x 500 | 2 | 1632x1000 |
+
+Consulte también [Al trabajar con imágenes](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Al trabajar con Recorte inteligente](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+
+### Acerca de la optimización del ancho de banda de la red {#network-bandwidth-optimization}
+
+Activar el ancho de banda de red ajusta automáticamente la calidad de imagen ofrecida en función del ancho de banda de red real. Para un ancho de banda de red deficiente, la optimización del RGPD se desactiva automáticamente, incluso si ya está activada.
+
+Si lo desea, su empresa puede excluir la optimización del ancho de banda de la red a nivel de imagen individual añadiendo `network=off` a la dirección URL de la imagen.
+
+| Valor permitido en la dirección URL de una imagen | Descripción |
+|---|---|
+| `network=off` | Desactiva la optimización de red a nivel de URL de imagen individual. |
+
+>[!NOTE]
+>
+>Los valores de RGPD y ancho de banda de red se basan en los valores detectados del lado del cliente de la CDN agrupada. Estos valores a veces son inexactos. Por ejemplo, iPhone5 con DPR=2 e iPhone12 con DPR=3, ambos muestran DPR=2. Sin embargo, para los dispositivos de alta resolución, el envío del RGPD=2 es mejor que el envío del RGPD=1. Próximamente: Adobe está trabajando en código del lado del cliente para determinar con precisión el RGPD de un usuario final.
 
 ## ¿Cuáles son las ventajas clave de las últimas imágenes inteligentes? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -135,13 +180,23 @@ Para utilizar imágenes inteligentes, la cuenta de Experience Manager de Dynamic
 
 Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en la cuenta o cuentas de su empresa.
 
-Pulse **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general]**. Busque el campo denominado **[!UICONTROL Published Server Name]**. Si está utilizando un dominio genérico, puede solicitar pasar a su propio dominio personalizado como parte de esta transición cuando envíe un ticket de asistencia técnica.
+Pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]** Busque el campo etiquetado **[!UICONTROL Nombre del servidor publicado]**. Si está utilizando un dominio genérico, puede solicitar pasar a su propio dominio personalizado como parte de esta transición cuando envíe un ticket de asistencia técnica.
 
 El primer dominio personalizado no tiene coste adicional con una licencia de Dynamic Media.
 
 ## ¿Cuál es el proceso para habilitar las imágenes inteligentes para mi cuenta? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
 Se inicia la solicitud para utilizar imágenes inteligentes; no se activa automáticamente.
+
+De forma predeterminada, el RGPD de imágenes inteligentes y la optimización de la red están deshabilitados (desactivados) para una cuenta de empresa de Dynamic Media. Si desea habilitar (activar) una o ambas mejoras integradas, cree un caso de asistencia como se describe a continuación.
+
+La programación de versiones para la optimización del RGPD y la red de imágenes inteligentes es la siguiente:
+
+| Región | Fecha objetivo |
+|---|---|
+| América del Norte | 24 de mayo de 2021 |
+| Europa, Oriente Medio, África | 25 de junio de 2021 |
+| Asia-Pacífico | 19 de julio de 2021 |
 
 1. [Utilice el Admin Console para crear un caso de asistencia.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 1. Proporcione la siguiente información en su caso de asistencia:
@@ -151,7 +206,7 @@ Se inicia la solicitud para utilizar imágenes inteligentes; no se activa autom�
 
       Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en la cuenta o cuentas de su empresa.
 
-      Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**.
+      Haga clic en **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 
       Busque el campo denominado **[!UICONTROL Nombre del servidor publicado.]**
    1. Compruebe que está utilizando la CDN a través de la Adobe y que no se administra con una relación directa.
@@ -159,7 +214,7 @@ Se inicia la solicitud para utilizar imágenes inteligentes; no se activa autom�
 
       Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en la cuenta o cuentas de su empresa.
 
-      Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**.
+      Haga clic en **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 
       Busque el campo denominado **[!UICONTROL Published Server Name]**. Si está utilizando un dominio genérico de Dynamic Media Classic, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
    1. Indique si también necesita que las imágenes inteligentes funcionen con HTTP/2.
@@ -190,7 +245,7 @@ Durante la transición inicial, las imágenes no almacenadas en caché llegan di
 ## ¿Cómo puedo verificar si las imágenes inteligentes funcionan según lo esperado?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Una vez configurada la cuenta con imágenes inteligentes, cargue una URL de imagen de Dynamic Media Classic o Adobe Experience Manager - Dynamic Media en el explorador.
-1. Abra el panel del desarrollador de Chrome haciendo clic en **[!UICONTROL View > Developer > Developer Tools]** en el explorador. O bien, elija cualquier herramienta para desarrolladores de navegador que desee.
+1. Abra el panel del desarrollador de Chrome haciendo clic en **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** en el explorador. O bien, elija cualquier herramienta para desarrolladores de navegador que desee.
 
 1. Asegúrese de que la caché esté deshabilitada cuando las herramientas para desarrolladores estén abiertas.
 
@@ -210,14 +265,26 @@ Durante la transición inicial, las imágenes no almacenadas en caché llegan di
 
 Sí. Puede desactivar las imágenes inteligentes añadiendo el modificador `bfc=off` a la dirección URL.
 
+## ¿Puedo solicitar que la optimización del RGPD y de la red se desactive a nivel de empresa? {#dpr-companylevel-turnoff}
+
+Sí. Para desactivar la optimización de la red y el RGPD en su empresa, cree un caso de asistencia como se describió anteriormente en este tema.
+
 ## ¿Qué &quot;ajuste&quot; está disponible? ¿Hay alguna configuración o comportamiento que se pueda definir? (#tuning-settings)
 
-Actualmente, puede activar o desactivar las imágenes inteligentes. No hay ningún otro ajuste disponible.
+Actualmente, puede activar o desactivar las imágenes inteligentes. No hay otro ajuste disponible.
 
 ## Si Imágenes inteligentes administra la configuración de calidad, ¿hay mínimos y máximos que configurar? Por ejemplo, ¿es posible configurar &quot;no menos de 60&quot; y &quot;no buena que 80 calidad&quot;? (#Minimum-maximum)
 
 No existe esta capacidad de aprovisionamiento en la imagen inteligente actual.
 
-## A veces, se devuelve una imagen JPEG a Chrome en lugar de una imagen WebP. ¿Por qué? (#jpeg-webp)
+## A veces, se devuelve una imagen JPEG a Chrome en lugar de una imagen WebP. ¿Por qué ocurre ese cambio? (#jpeg-webp)
 
 Las imágenes inteligentes determinan si la conversión es beneficiosa o no. Devuelve la nueva imagen solo si la conversión resulta en un tamaño de archivo más pequeño con una calidad comparable.
+
+## ¿Cómo funciona la optimización del RGPD de imágenes inteligentes con los componentes de Adobe Experience Manager Sites y los visores de Dynamic Media?
+
+* Los componentes principales de Experience Manager Sites están configurados de forma predeterminada para la optimización del RGPD. Para evitar imágenes sobredimensionadas debido a la optimización del RGPD de imágenes inteligentes en el lado del servidor, `dpr=off` siempre se agrega a las imágenes de Dynamic Media de los componentes principales de los sitios del Experience Manager.
+* Dado que el componente base de Dynamic Media está configurado de forma predeterminada para la optimización del RGPD, para evitar imágenes de tamaño excesivo debido a la optimización del RGPD de imágenes inteligentes en el servidor, `dpr=off` siempre se añade a las imágenes de los componentes de Dynamic Media Foundation. Aunque el cliente anule la selección de la optimización de RGPD en el componente de base de DM, el RGPD de imágenes inteligentes del lado del servidor no se inicia. En resumen, en el componente de base de DM, la optimización del RGPD entra en vigor solo en función de la configuración del nivel de componente de base de DM .
+* Cualquier optimización del RGPD del lado del visor funciona junto con la optimización del RGPD de imágenes inteligentes del lado del servidor y no genera imágenes de tamaño excesivo. En otras palabras, independientemente de dónde gestione el visor el RGPD, como la vista principal solo en un visor con zoom habilitado, no se activan los valores del RGPD de imágenes inteligentes del lado del servidor. Del mismo modo, siempre que los elementos del visualizador, como muestras y miniaturas, no tengan gestión de RGPD, se activa el valor RGPD de imágenes inteligentes del lado del servidor.
+
+Consulte también [Al trabajar con imágenes](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Al trabajar con Recorte inteligente](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
