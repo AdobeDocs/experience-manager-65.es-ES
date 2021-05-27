@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 188434543403fab48f79be06356b86e132e2888a
+exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
+source-git-commit: 4d5f7057178ea0a1f00ea363b76dacdfb714b5e3
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 97%
+source-wordcount: '1487'
+ht-degree: 69%
 
 ---
-
 
 # Uso de versiones de página  {#working-with-page-versions}
 
@@ -46,7 +45,7 @@ Puede crear una versión de su recurso desde:
 1. Seleccione **Guardar como versión**.
 1. Si procede, introduzca un valor en **Etiqueta** y en **Comentario**.
 
-   ![chlimage_1-42](assets/chlimage_1-42.png)
+   ![imagen_1-42](assets/chlimage_1-42.png)
 
 1. Confirme la nueva versión con **Crear**.
 
@@ -65,36 +64,105 @@ Puede crear una versión de su recurso desde:
 
    La línea de tiempo se abrirá con información actualizada para indicar la nueva versión. 
 
-## Reversión a una versión de la página {#reverting-to-a-page-version}
+## Restablecimiento de versiones {#reinstating-versions}
 
-Cuando haya creado una versión, puede volver a dicha versión si es necesario.
+Una vez creada una versión de la página, existen varios métodos para restablecer una versión anterior:
+
+* la opción **Revertir a esta versión** del carril [Línea de tiempo](/help/sites-authoring/basic-handling.md#timeline)
+
+   Restablezca una versión anterior de una página seleccionada.
+
+* las opciones **Restaurar** de la barra de herramientas de acciones [superior](/help/sites-authoring/basic-handling.md#actions-toolbar)
+
+   * **Restaurar versión**
+
+      Restablecer versiones de páginas especificadas dentro de la carpeta seleccionada actualmente; esto también puede incluir la restauración de páginas que se han eliminado anteriormente.
+
+   * **Restaurar árbol**
+
+      Restablecer una versión de todo un árbol en una fecha y hora especificadas; esto puede incluir páginas que se han eliminado anteriormente.
 
 >[!NOTE]
 >
->Al restaurar una página, la versión creada formará parte de una rama nueva.
+>Al restablecer una página, la versión creada formará parte de una rama nueva.
 >
 >Como ejemplo:
 >
 >1. Cree una versión de una página cualquiera.
 >1. Las etiquetas y los nombres de nodo iniciales serán 1.0., 1.1, 1.2, etc.
->1. Restaure la primera versión; p. ej. 1.0.
+>1. Restablecer la primera versión; es decir, 1.0.
 >1. Vuelva a crear versiones nuevas.
 >1. Las etiquetas generadas y los nombres de nodo ahora serán 1.0.0, 1.0.1, 1.0.2, etc.
 
->
 
+### Revertir a una versión {#revert-to-a-version}
 
-
-Para volver a una versión anterior:
+Para **Revertir** la página seleccionada a una versión anterior:
 
 1. Desplácese para mostrar la página que quiere revertir a una versión anterior.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**. Se enumerarán las versiones de página de la página seleccionada.
 1. Seleccione la versión a la que desee revertir. Se mostrarán las opciones posibles:
 
-   ![screen-shot_2019-03-05at112505](assets/screen-shot_2019-03-05at112505.png)
+   ![Volver a esta versión](assets/screen-shot_2019-03-05at112505.png)
 
 1. Seleccione **Revertir a esta versión**. Se restaurará la versión seleccionada y se actualizará la información en la línea de tiempo.
+
+### Restaurar versión {#restore-version}
+
+Este método se puede utilizar para restaurar versiones de páginas especificadas dentro de la carpeta actual; esto también puede incluir la restauración de páginas que se han eliminado anteriormente:
+
+1. Vaya a la carpeta requerida y [seleccione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+
+1. Seleccione **Restaurar** y, a continuación, **Restaurar versión** en la barra de herramientas de acciones](/help/sites-authoring/basic-handling.md#actions-toolbar) superior.[
+
+   >[!NOTE]
+   >
+   >Si:
+   >
+   >* ha seleccionado una sola página, que nunca ha tenido páginas secundarias,
+   >* o ninguna de las páginas de la carpeta tiene versiones,
+
+   >
+   >A continuación, la pantalla estará vacía ya que no hay versiones aplicables.
+
+1. Se enumerarán las versiones disponibles:
+
+   ![Restaurar versión: lista de todas las páginas de la carpeta](/help/sites-authoring/assets/versions-restore-version-01.png)
+
+1. Para una página específica, utilice el selector desplegable en **RESTAURAR A VERSIÓN** para seleccionar la versión requerida para esa página.
+
+   ![Restaurar versión: seleccionar versión](/help/sites-authoring/assets/versions-restore-version-02.png)
+
+1. En la pantalla principal, seleccione la página requerida para la restauración:
+
+   ![Restaurar versión: seleccionar página](/help/sites-authoring/assets/versions-restore-version-03.png)
+
+1. Seleccione **Restaurar** para la versión seleccionada, de la página seleccionada, que se restaurará como versión actual.
+
+>[!NOTE]
+>
+>El orden en que se selecciona una página requerida y la versión relacionada son intercambiables.
+
+### Restaurar árbol {#restore-tree}
+
+Este método puede utilizarse para restaurar una versión de un árbol en una fecha y hora especificadas; esto puede incluir páginas que se han eliminado anteriormente:
+
+1. Vaya a la carpeta requerida y [seleccione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+
+1. Seleccione **Restaurar** y, a continuación, **Restaurar árbol** en la barra de herramientas de acciones](/help/sites-authoring/basic-handling.md#actions-toolbar) superior. [ Se mostrará la última versión del árbol:
+
+   ![Restaurar árbol](/help/sites-authoring/assets/versions-restore-tree-02.png)
+
+1. Utilice el selector de fecha y hora **Últimas versiones en fecha** para seleccionar otra versión del árbol: la que se va a restaurar.
+
+1. Establezca el indicador **Páginas sin versiones conservadas** según sea necesario:
+
+   * Si está activo (seleccionado), las páginas sin versiones se mantendrán y no se verán afectadas por la restauración.
+
+   * Si está inactivo (sin seleccionar), todas las páginas sin versiones se eliminarán, ya que no existían en el árbol con versiones.
+
+1. Seleccione **Restaurar** para que la versión seleccionada del árbol se restaure como la versión *actual*.
 
 ## Vista previa de una versión    {#previewing-a-version}
 
@@ -129,7 +197,7 @@ Para comparar una versión anterior con la página actual:
 
 1. Seleccione **Comparar con actual**. Se abrirá [Diferencias de página](/help/sites-authoring/page-diff.md) para mostrar las diferencias.
 
-## Deformación de tiempo    {#timewarp}
+## Deformación de tiempo   {#timewarp}
 
 Deformación de tiempo es una función diseñada para simular el estado *publicado* de una página en periodos específicos en el pasado.
 
@@ -172,4 +240,4 @@ Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en 
 
 >[!CAUTION]
 >
->Deformación de tiempo se ha diseñado como una herramienta para ayudar a los autores a comprender y crear su contenido. No se trata de un registro de auditoría ni de un registro jurídico.
+>Deformación de tiempo está diseñada como una herramienta para ayudar a los autores a comprender y crear su contenido. No se trata de un registro de auditoría ni de un registro jurídico.
