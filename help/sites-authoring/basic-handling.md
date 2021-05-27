@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2980'
 ht-degree: 95%
 
 ---
@@ -155,7 +154,7 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
    ![screen_shot_2018-03-23at103615](assets/screen_shot_2018-03-23at103615.png)
 
-* [Buscar](/help/sites-authoring/search.md)
+* [Búsqueda  ](/help/sites-authoring/search.md)
 
    ![](do-not-localize/screen_shot_2018-03-23at103542.png)
 
@@ -271,7 +270,7 @@ Recursos y descargas para desarrolladores
    >Para obtener información general sobre todos los métodos abreviados del teclado, consulte la documentación siguiente:
    >
    >    * [Métodos abreviados del teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   >    * [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
+   * [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Barra de herramientas Acciones {#actions-toolbar}
@@ -288,11 +287,10 @@ El modo de [seleccionar un recurso](/help/sites-authoring/basic-handling.md#view
 
 Debido a las restricciones de espacio en algunas ventanas, es posible que la barra de herramientas supere rápidamente la longitud disponible. Cuando esto ocurre, aparecen opciones adicionales. Al tocar o hacer clic en el símbolo de elipsis (los tres puntos o **...**), se abre un selector desplegable con el resto de las acciones. Por ejemplo, después de seleccionar una página en la consola **Sitios**: 
 
-![bh-12](assets/bh-12.png)
+![Barra de herramientas Acciones](assets/bh-12.png)
 
 >[!NOTE]
->
->Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
+Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
 
 ## Acciones rápidas     {#quick-actions}
 
@@ -311,11 +309,10 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 * [Vista de columna](#column-view)
 * [Vista de tarjeta](#card-view)
 
-* [Vista de lista  ](#list-view)
+* [Vista de lista   ](#list-view)
 
 >[!NOTE]
->
->De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
+De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
 
 ### Selección de recursos     {#selecting-resources}
 
@@ -499,8 +496,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 * Cambie el orden de los elementos mediante la barra vertical de puntos en la parte más a la derecha de cada elemento en la lista.
 
    >[!NOTE]
-   >
-   >Solo es posible cambiar el orden en una carpeta ordenada que tiene el valor `jcr:primaryType` establecido como `sling:OrderedFolder`.
+   Solo es posible cambiar el orden en una carpeta ordenada que tiene el valor `jcr:primaryType` establecido como `sling:OrderedFolder`.
 
    ![bh-22](assets/bh-22.png)
 
@@ -525,8 +521,7 @@ Por ejemplo, en Sitios puede seleccionar contenido solamente (el valor predeterm
 Si se selecciona contenido solamente, después solo aparece el icono de raíl. Cuando se selecciona cualquier otra opción, el nombre de la opción aparece al lado del icono de raíl.
 
 >[!NOTE]
->
->[Los métodos abreviados del teclado](/help/sites-authoring/keyboard-shortcuts.md) están disponibles para cambiar rápidamente entre las opciones de visualización de raíl.
+[Los métodos abreviados del teclado](/help/sites-authoring/keyboard-shortcuts.md) están disponibles para cambiar rápidamente entre las opciones de visualización de raíl.
 
 ### Árbol de contenido {#content-tree}
 
@@ -537,10 +532,8 @@ Al utilizar el panel lateral del árbol de contenido junto con una vista de list
 ![bh-26](assets/bh-26.png)
 
 >[!NOTE]
->
->Una vez seleccionada una entrada en la vista de jerarquía, las teclas de flecha se pueden utilizar para desplazarse con rapidez por la jerarquía.
->
->Consulte los [métodos abreviados del teclado](/help/sites-authoring/keyboard-shortcuts.md) para obtener más información.
+Una vez seleccionada una entrada en la vista de jerarquía, las teclas de flecha se pueden utilizar para desplazarse con rapidez por la jerarquía.
+Consulte los [métodos abreviados del teclado](/help/sites-authoring/keyboard-shortcuts.md) para obtener más información.
 
 ### Escala de tiempo {#timeline}
 
