@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Administración de recursos,Buscar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
+source-git-commit: a7f8e98729dd27f6976d3289a51f22435fced585
 workflow-type: tm+mt
-source-wordcount: '9796'
+source-wordcount: '9775'
 ht-degree: 4%
 
 ---
@@ -811,10 +811,6 @@ Para imprimir las anotaciones y revisar el estado, haga clic en **[!UICONTROL Im
    ![Seleccionar la posición de la anotación o el estado de la revisión que se mostrará en el PDF desde el cuadro de diálogo Imprimir](assets/Print-annotation-dialog.png)
 
    Puede elegir otros ajustes en función de la posición en la que desea que aparezcan las anotaciones o el estado en el PDF impreso. Si desea que las anotaciones o el estado aparezcan en una página independiente del recurso impreso, elija **[!UICONTROL Página siguiente]**.
-
-   >[!NOTE]
-   >
-   >Es posible que las anotaciones largas no se representen correctamente en el archivo PDF. Para una representación óptima, Adobe recomienda limitar las anotaciones a 50 palabras.
 
 1. Haga clic en **[!UICONTROL Imprimir]**. Según la opción elegida en el paso 2, el PDF generado muestra las anotaciones/el estado en la posición especificada. Por ejemplo, si elige imprimir las anotaciones y el estado de la revisión mediante la configuración **Superior izquierda**, la salida generada se parece al archivo PDF que se muestra aquí.
 
