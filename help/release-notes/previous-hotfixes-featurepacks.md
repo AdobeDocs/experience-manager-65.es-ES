@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] Notas de la versión anterior de Service
 description: Notas de la versión de los Service Packs [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: 8c69687ef4fbc2e4ee729d98232fe56db9b1df5a
+source-git-commit: d06e60baac692c92358244944226b77d5dad4022
 workflow-type: tm+mt
 source-wordcount: '20321'
 ht-degree: 15%
@@ -1045,7 +1045,7 @@ La siguiente es la lista de correcciones que se proporcionan en la versión [!DN
 
 * Los lectores de pantalla ya no anuncian la información de estructura de la tabla (como la fila 1, celda 1, tabla) del cuadro de diálogo [!UICONTROL Compartir vínculo] cuando se abre el cuadro de diálogo (NPR-33268).
 
-* Los lectores de pantalla ahora anuncian correctamente el propósito de varios elementos de cuadro combinado (como el campo Ruta y la opción para abrir el cuadro de diálogo Selección en la pestaña Básico de las Propiedades del recurso) (NPR-33235).
+* Los lectores de pantalla ahora anuncian correctamente el propósito de varios elementos de cuadro combinado (como el campo Ruta y la opción de abrir el cuadro de diálogo Selección en la pestaña Básico de las Propiedades del recurso) (NPR-33235).
 
 * La información de que las filas de la tabla de vista de lista están seleccionables ahora se comunica a los usuarios del lector de pantalla cuando el foco del teclado está en ellas. Cuando un puntero se sitúa sobre las filas, los lectores de pantalla anuncian la información (NPR-33234).
 
@@ -1107,7 +1107,7 @@ La siguiente es la lista de correcciones que se proporcionan en la versión [!DN
 
 * Cuando se utiliza la ventana emergente en cascada en los esquemas de metadatos, al seleccionar y guardar una opción desplegable que contiene un apóstrofo (desde la lista desplegable secundaria), la opción de apóstrofo seleccionada desaparece después de volver a abrir el recurso [!UICONTROL Propiedades] (NPR-32649).
 
-* [!UICONTROL Asset Insights Sincroniza ] Jobstops y falla si encuentra entradas no válidas (en el lado de Analytics) en lugar de pasar a la siguiente entrada (NPR-32674).
+* [!UICONTROL Assets Insights Sincroniza ] Jobstops y falla si encuentra entradas no válidas (en el lado de Analytics) en lugar de pasar a la siguiente entrada (NPR-32674).
 
 * Gyroscope no funciona porque los sensores de movimiento están desactivados de forma predeterminada en los navegadores móviles en el visor panorámico (CQ-4272937).
 
