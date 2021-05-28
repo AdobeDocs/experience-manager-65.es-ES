@@ -1,32 +1,31 @@
 ---
-title: Habilitar Asset Insights a través de DTM
-description: Aprenda a utilizar Adobe Dynamic Tag Management (DTM) para habilitar Asset Insights.
+title: Habilitar Assets Insights a través de DTM
+description: Aprenda a utilizar Adobe Dynamic Tag Management (DTM) para habilitar Assets Insights.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Insights,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Información sobre Assets, Informes de Asset
+exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
 
+# Habilitar Assets Insights a través de DTM {#enable-asset-insights-through-dtm}
 
-# Habilitar Asset Insights a través de DTM {#enable-asset-insights-through-dtm}
-
-Adobe Dynamic Tag Management es una herramienta que activa las herramientas de marketing digital. Se proporciona de forma gratuita a los clientes de Adobe Analytics. Puede personalizar el código de seguimiento para permitir que las soluciones de CMS de terceros utilicen Asset Insights o puede utilizar DTM para insertar etiquetas de Asset Insights. Las perspectivas solo se admiten y se proporcionan para imágenes.
+Adobe Dynamic Tag Management es una herramienta que activa las herramientas de marketing digital. Se proporciona de forma gratuita a los clientes de Adobe Analytics. Puede personalizar el código de seguimiento para permitir que las soluciones de CMS de terceros utilicen Assets Insights o puede utilizar DTM para insertar etiquetas de Assets Insights. Las perspectivas solo se admiten y se proporcionan para imágenes.
 
 >[!CAUTION]
 >
 >Adobe DTM está en desuso en favor de [!DNL Adobe Experience Platform Launch] y pronto llegará al [fin de vida](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recomienda utilizar [para perspectivas de recursos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html). [!DNL Launch] 
 
-Siga estos pasos para habilitar Asset Insights mediante DTM.
+Siga estos pasos para habilitar Assets Insights mediante DTM.
 
 1. Haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
 1. [Configuración de la implementación del Experience Manager con el Cloud Service de DTM](/help/sites-administering/dtm.md)
 
-   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite **[!UICONTROL Configuración de la cuenta]** en el perfil del usuario. Este paso no es necesario desde el punto de vista de Asset Insights, ya que la integración de Experience Manager Sites con Asset Insights aún está en funcionamiento.
+   El token de API debe estar disponible una vez que inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y visite **[!UICONTROL Configuración de la cuenta]** en el perfil del usuario. Este paso no es necesario desde el punto de vista de Assets Insights, ya que la integración de Experience Manager Sites con Assets Insights aún está en funcionamiento.
 
 1. Inicie sesión en [https://dtm.adobe.com](https://dtm.adobe.com/) y seleccione una empresa, según corresponda.
 1. Crear o abrir una propiedad web existente
@@ -52,7 +51,7 @@ Siga estos pasos para habilitar Asset Insights mediante DTM.
    >
    >* `AppMeasurement.js` se elimina. Se espera que esté disponible a través de la herramienta Adobe Analytics de DTM.
    >* Se ha eliminado la llamada a `assetAnalytics.dispatcher.init()`. Se espera que se llame a la función una vez que la herramienta Adobe Analytics de DTM termine de cargarse.
-   >* Dependiendo de dónde esté alojado el rastreador de páginas de Asset Insights (por ejemplo, Experience Manager, CDN, etc.), el origen del origen del script puede requerir cambios.
+   >* Dependiendo de dónde esté alojado el rastreador de páginas de Assets Insights (por ejemplo, Experience Manager, CDN, etc.), el origen de la secuencia de comandos puede requerir cambios.
    >* Para el rastreador de páginas alojado por el Experience Manager, el origen debe señalar a una instancia de publicación utilizando el nombre de host de la instancia de Dispatcher.
 
 
