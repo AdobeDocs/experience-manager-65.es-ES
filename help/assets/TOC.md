@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, procese y distribuya recursos digitales.
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 43%
+ht-degree: 42%
 
 ---
 
@@ -115,7 +115,7 @@ ht-degree: 43%
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] integración](aem-cc-integration-best-practices.md)
    + [Integrar con [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management en recursos](drm.md)
-   + [Uso del paquete de demostración para perspectivas de recursos](use-demo-package-for-asset-insights.md)
+   + [Uso del paquete de demostración para Assets insights](use-demo-package-for-asset-insights.md)
    + [Prácticas recomendadas del formato de los archivos de recursos](assets-file-format-best-practices.md)
    + [Prácticas recomendadas para monitorizar recursos](assets-monitoring-best-practices.md)
    + [compatibilidad Camera Raw](camera-raw.md)
@@ -149,7 +149,7 @@ ht-degree: 43%
    + [Preparación de recursos para su traducción](preparing-assets-for-translation.md)
    + [Descargar recursos del Experience Manager](download-assets-from-aem.md)
    + [Lightbox](light-box.md)
-   + [Perspectivas de recursos](asset-insights.md)
+   + [Información sobre Assets](asset-insights.md)
    + [Habilitar perspectivas de recursos a través de DTM](use-dtm-for-asset-insights.md)
    + [Configuración de perspectivas de recursos](configure-asset-insights.md)
    + [Insertar y registrar recursos](check-out-and-submit-assets.md)
