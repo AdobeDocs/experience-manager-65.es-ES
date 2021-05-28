@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Administración de recursos,Buscar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: a7f8e98729dd27f6976d3289a51f22435fced585
+source-git-commit: d06e60baac692c92358244944226b77d5dad4022
 workflow-type: tm+mt
 source-wordcount: '9775'
 ht-degree: 4%
@@ -113,7 +113,7 @@ Puede reemplazar un recurso existente, crear otra versión o conservar ambas cam
 >
 >Cuando selecciona **[!UICONTROL Reemplazar]** en el cuadro de diálogo [!UICONTROL Conflicto de nombres], el ID de recurso se regenera para el nuevo recurso. Este ID es diferente del ID del recurso anterior.
 >
->Si Asset Insights está habilitado para rastrear impresiones o clics con [!DNL Adobe Analytics], el ID de recurso regenerado invalida los datos capturados para el recurso en [!DNL Analytics].
+>Si Assets Insights está habilitado para rastrear impresiones o clics con [!DNL Adobe Analytics], el ID de recurso regenerado invalida los datos capturados para el recurso en [!DNL Analytics].
 
 Si el recurso que carga existe en [!DNL Assets], el cuadro de diálogo **[!UICONTROL Duplicados detectados]** advierte que está intentando cargar un recurso duplicado. El cuadro de diálogo solo aparece si el valor de suma de comprobación `SHA 1` del binario del recurso existente coincide con el valor de suma de comprobación del recurso que se carga. En este caso, los nombres de los recursos no importan.
 
@@ -420,7 +420,7 @@ Para obtener una vista previa de un recurso mediante el teclado, siga estos paso
    * Canales/dispositivos a través de los cuales se utilizó el recurso
    * Soluciones creativas en las que se ha utilizado recientemente el recurso
 
-   Para obtener más información, consulte [Asset Insights](/help/assets/asset-insights.md).
+   Para obtener más información, consulte [Assets Insights](/help/assets/asset-insights.md).
 
 1. Haga clic en **[!UICONTROL Guardar y cerrar]**.
 1. Vaya a la interfaz de usuario [!DNL Assets]. Las propiedades de metadatos editadas, como título, descripción, clasificaciones, etc., se muestran en la tarjeta de recursos de la vista de tarjeta y en las columnas relevantes de la vista de lista.
