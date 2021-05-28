@@ -11,15 +11,14 @@ content-type: reference
 discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Actualización
+exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 4%
 
 ---
-
 
 # Actualización a AEM 6.5 {#upgrading-to-aem}
 
@@ -54,11 +53,11 @@ A continuación se indican los cambios más importantes que se han producido en 
 
 AEM 6.0 introdujo el nuevo repositorio de Jackrabbit Oak. Los administradores de persistencia se reemplazaron por [Micro Kernels](/help/sites-deploying/platform.md#contentbody_title_4). A partir de la versión 6.1, CRX2 ya no es compatible. Se debe ejecutar una herramienta de migración llamada crx2oak para migrar repositorios CRX2 de instancias 5.6.1. Para obtener más información, consulte [Uso de la herramienta de migración CRX2OAK](/help/sites-deploying/using-crx2oak.md).
 
-Si se va a utilizar Asset Insights y se actualiza desde una versión anterior a AEM 6.2, los recursos deben migrarse y deben generarse ID a través de un bean JMX. En nuestras pruebas internas, se migraron 125.000 activos en un entorno TarMK en una hora, pero los resultados pueden variar.
+Si se va a utilizar Assets Insights y se está actualizando desde una versión anterior a AEM 6.2, los recursos deben migrarse y deben generarse ID a través de un bean JMX. En nuestras pruebas internas, se migraron 125.000 activos en un entorno TarMK en una hora, pero los resultados pueden variar.
 
 6.3 introdujo un nuevo formato para el `SegmentNodeStore`, que es la base de la implementación de TarMK. Si está actualizando desde una versión anterior a AEM 6.3, esto requerirá una migración del repositorio como parte de la actualización, lo que implica downtime del sistema.
 
-Adobe Engineering estima que esto será de unos 20 minutos. Tenga en cuenta que la reindexación no será necesaria. Además, se ha lanzado una nueva versión de la herramienta crx2oak para trabajar con el nuevo formato de repositorio.
+Adobe Engineering estima que esto será de unos 20 minutos. Tenga en cuenta que no será necesario volver a indexar. Además, se ha lanzado una nueva versión de la herramienta crx2oak para trabajar con el nuevo formato de repositorio.
 
 **Esta migración no es necesaria si se actualiza de AEM 6.3 a AEM 6.5.**
 
@@ -94,4 +93,3 @@ En la versión 6.5 se prestó gran atención a mantener todas las nuevas funcion
 Por último, en su ciclo de desarrollo 6.5, las funciones introducidas en Actualizaciones sostenibles (consulte [Actualizaciones sostenibles](/help/sites-deploying/sustainable-upgrades.md)) le ayudan a seguir las prácticas recomendadas para hacer que las futuras actualizaciones sean aún más eficientes y fluidas.
 
 ![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
-
