@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Administración de recursos,Representaciones
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: fde3cb4a2461ca80f410f360fd5d56f359cec149
+source-git-commit: d407162e18f85f4fee0596581f004f8cf4c99458
 workflow-type: tm+mt
-source-wordcount: '2626'
+source-wordcount: '1917'
 ht-degree: 1%
 
 ---
@@ -41,52 +41,51 @@ Los siguientes ejemplos de recursos de imagen ilustran la optimización de imág
 
 De forma similar a lo anterior, Adobe también realizó una prueba con 7009 URL de sitios de clientes activos. Pudieron lograr una optimización promedio de un 38% más del tamaño de archivo para JPEG. Para PNG con formato WebP, fueron capaces de lograr un promedio de un 31% más de optimización del tamaño de archivo. Este tipo de optimización es posible debido a la capacidad de las imágenes inteligentes.
 
-En la web móvil, los desafíos se ven agravados por dos factores:
+<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 On the mobile web, the challenges are compounded by two factors:
 
-* Gran variedad de dispositivos con diferentes factores de forma y pantallas de alta resolución.
-* Ancho de banda de red limitado.
+* Large variety of devices with different form factors and high-resolution displays.
+* Constrained network bandwidth.
 
-En términos de imágenes, el objetivo es servir las imágenes de mejor calidad de la manera más eficiente posible.
+In terms of images, the goal is to serve the best quality images as efficiently as possible.
 
-### Acerca de la optimización de la proporción de píxeles del dispositivo {#dpr}
+### About device pixel ratio optimization {#dpr}
 
-La proporción de píxeles del dispositivo (DPR), también conocida como proporción de píxeles de CSS, es la relación entre los píxeles físicos de un dispositivo y los píxeles lógicos. Especialmente con la llegada de las pantallas de retina, la resolución de píxeles de los dispositivos móviles modernos está creciendo a una velocidad rápida.
+Device pixel ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device’s physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
 
-Al habilitar la optimización de la proporción de píxeles del dispositivo, la imagen se muestra en la resolución nativa de la pantalla, lo que la hace parecer nítida.
+Enabling Device Pixel Ratio optimization renders the image at the native resolution of the screen which makes it look crisp.
 
-Activar la configuración del RGPD de imágenes inteligentes ajusta automáticamente la imagen solicitada en función de la densidad de píxeles de la pantalla desde la que se presenta la solicitud. Actualmente, la densidad de píxeles de la visualización proviene de los valores de encabezado de CDN de Akamai.
+Turning on Smart Imaging DPR configuration automatically adjusts the requested image based on pixel density of the display the request is being served from. Currently, the pixel density of the display comes from Akamai CDN header values.
 
-| Valores permitidos en la dirección URL de una imagen | Descripción |
+| Permitted values in the URL of an image | Description |
 |---|---|
-| `dpr=off` | Desactive la optimización del RGPD en un nivel de URL de imagen individual. |
-| `dpr=on,dprValue` | Sobrescriba el valor de RGPD detectado por las imágenes inteligentes, con un valor personalizado (tal y como lo detecte cualquier lógica del lado del cliente u otro medio). El valor permitido para `dprValue` es cualquier número bueno que 0. Los valores especificados de 1.5, 2 o 3 son típicos. |
+| `dpr=off` | Turn off DPR optimization at an individual image URL level.| 
+| `dpr=on,dprValue` | Override the DPR value detected by Smart Imaging, with a custom value (as detected by any client-side logic or other means). Permitted value for `dprValue` is any number greater than 0. Specified values of 1.5, 2, or 3 are typical. |
 
 >[!NOTE]
 >
->* Puede utilizar `dpr=on,dprValue` incluso si la configuración del RGPD a nivel de empresa está desactivada.
->* Debido a la optimización del RGPD, cuando la imagen resultante es buena que la configuración de Dynamic Media MaxPix, el ancho de MaxPix siempre se reconoce manteniendo la relación de aspecto de la imagen.
+>* You can use `dpr=on,dprValue` even if the company level DPR setting as off.
+>* Owing to DPR optimization, when the resultant image is greater than the MaxPix Dynamic Media setting, MaxPix width is always recognized by maintaining the image's aspect ratio.
 
-
-| Tamaño de la imagen solicitado | Valor de RGPD | Tamaño de la imagen entregada |
+| Requested Image size | DPR value | Delivered image size |
 |---|---|---|
-| 816 x 500 | 1 | 816 x 500 |
-| 816 x 500 | 2 | 1632x1000 |
+| 816x500 | 1 | 816x500 |
+| 816x500 | 2 | 1632x1000 |
 
-Consulte también [Al trabajar con imágenes](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Al trabajar con Recorte inteligente](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+See also [When working with images](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-### Acerca de la optimización del ancho de banda de la red {#network-bandwidth-optimization}
+### About network bandwidth optimization {#network-bandwidth-optimization}
 
-Activar el ancho de banda de red ajusta automáticamente la calidad de imagen ofrecida en función del ancho de banda de red real. Para un ancho de banda de red deficiente, la optimización del RGPD se desactiva automáticamente, incluso si ya está activada.
+Turning on Network Bandwidth automatically adjusts the image quality that is served based on actual network bandwidth. For poor network bandwidth, DPR optimization is automatically turned off, even if it is already on.
 
-Si lo desea, su empresa puede excluir la optimización del ancho de banda de la red a nivel de imagen individual añadiendo `network=off` a la dirección URL de la imagen.
+If desired, your company can opt out of network bandwidth optimization at the individual image level by appending `network=off` to the URL of the image.
 
-| Valor permitido en la dirección URL de una imagen | Descripción |
+| Permitted value in the URL of an image | Description |
 |---|---|
-| `network=off` | Desactiva la optimización de red a nivel de URL de imagen individual. |
+| `network=off` | Turns off network optimization at an individual image URL level. |
 
 >[!NOTE]
 >
->Los valores de RGPD y ancho de banda de red se basan en los valores detectados del lado del cliente de la CDN agrupada. Estos valores a veces son inexactos. Por ejemplo, iPhone5 con DPR=2 e iPhone12 con DPR=3, ambos muestran DPR=2. Sin embargo, para los dispositivos de alta resolución, el envío del RGPD=2 es mejor que el envío del RGPD=1. Próximamente: Adobe está trabajando en código del lado del cliente para determinar con precisión el RGPD de un usuario final.
+>DPR and network bandwidth values are based on the detected client-side values of the bundled CDN. These values are sometimes inaccurate. For example, iPhone5 with DPR=2 and iPhone12 with DPR=3, both show DPR=2. Still, for high-resolution devices, sending DPR=2 is better than sending DPR=1. Coming soon: Adobe is working on client-side code to accurately determine an end user's DPR. -->
 
 ## ¿Cuáles son las ventajas clave de las últimas imágenes inteligentes? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -188,15 +187,15 @@ El primer dominio personalizado no tiene coste adicional con una licencia de Dyn
 
 Se inicia la solicitud para utilizar imágenes inteligentes; no se activa automáticamente.
 
-De forma predeterminada, el RGPD de imágenes inteligentes y la optimización de la red están deshabilitados (desactivados) para una cuenta de empresa de Dynamic Media. Si desea habilitar (activar) una o ambas mejoras integradas, cree un caso de asistencia como se describe a continuación.
+<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 By default, Smart Imaging DPR and network optimization is disabled (turned off) for a Dynamic Media company account. If you want to enable (turn on) one or both of these out-of-the-box enhancements, create a support case as described below.
 
-La programación de versiones para la optimización del RGPD y la red de imágenes inteligentes es la siguiente:
+The release schedule for Smart Imaging DPR and network optimization is as follows:
 
-| Región | Fecha objetivo |
+| Region | Target date |
 |---|---|
-| América del Norte | 24 de mayo de 2021 |
-| Europa, Oriente Medio, África | 25 de junio de 2021 |
-| Asia-Pacífico | 19 de julio de 2021 |
+| North America | 24 May 2021 | 
+| Europe, Middle East, Africa | 25 Jun 2021 | 
+| Asia-Pacific | 19 Jul 2021 | -->
 
 1. [Utilice el Admin Console para crear un caso de asistencia.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 1. Proporcione la siguiente información en su caso de asistencia:
@@ -265,13 +264,13 @@ Durante la transición inicial, las imágenes no almacenadas en caché llegan di
 
 Sí. Puede desactivar las imágenes inteligentes añadiendo el modificador `bfc=off` a la dirección URL.
 
-## ¿Puedo solicitar que la optimización del RGPD y de la red se desactive a nivel de empresa? {#dpr-companylevel-turnoff}
+<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 ## Can I request DPR and network optimization to be turned off at the company level? {#dpr-companylevel-turnoff}
 
-Sí. Para desactivar la optimización de la red y el RGPD en su empresa, cree un caso de asistencia como se describió anteriormente en este tema.
+Yes. To disable DPR and network optimization at your company, create a support case as described earlier in this topic. -->
 
 ## ¿Qué &quot;ajuste&quot; está disponible? ¿Hay alguna configuración o comportamiento que se pueda definir? (#tuning-settings)
 
-Actualmente, puede activar o desactivar las imágenes inteligentes. No hay otro ajuste disponible.
+Actualmente, puede activar o desactivar las imágenes inteligentes. No hay ningún otro ajuste disponible.
 
 ## Si Imágenes inteligentes administra la configuración de calidad, ¿hay mínimos y máximos que configurar? Por ejemplo, ¿es posible configurar &quot;no menos de 60&quot; y &quot;no buena que 80 calidad&quot;? (#Minimum-maximum)
 
@@ -281,10 +280,10 @@ No existe esta capacidad de aprovisionamiento en la imagen inteligente actual.
 
 Las imágenes inteligentes determinan si la conversión es beneficiosa o no. Devuelve la nueva imagen solo si la conversión resulta en un tamaño de archivo más pequeño con una calidad comparable.
 
-## ¿Cómo funciona la optimización del RGPD de imágenes inteligentes con los componentes de Adobe Experience Manager Sites y los visores de Dynamic Media?
+<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 ## How does Smart Imaging DPR optimization work with Adobe Experience Manager Sites components and Dynamic Media viewers?
 
-* Los componentes principales de Experience Manager Sites están configurados de forma predeterminada para la optimización del RGPD. Para evitar imágenes sobredimensionadas debido a la optimización del RGPD de imágenes inteligentes en el lado del servidor, `dpr=off` siempre se agrega a las imágenes de Dynamic Media de los componentes principales de los sitios del Experience Manager.
-* Dado que el componente base de Dynamic Media está configurado de forma predeterminada para la optimización del RGPD, para evitar imágenes de tamaño excesivo debido a la optimización del RGPD de imágenes inteligentes en el servidor, `dpr=off` siempre se añade a las imágenes de los componentes de Dynamic Media Foundation. Aunque el cliente anule la selección de la optimización de RGPD en el componente de base de DM, el RGPD de imágenes inteligentes del lado del servidor no se inicia. En resumen, en el componente de base de DM, la optimización del RGPD entra en vigor solo en función de la configuración del nivel de componente de base de DM .
-* Cualquier optimización del RGPD del lado del visor funciona junto con la optimización del RGPD de imágenes inteligentes del lado del servidor y no genera imágenes de tamaño excesivo. En otras palabras, independientemente de dónde gestione el visor el RGPD, como la vista principal solo en un visor con zoom habilitado, no se activan los valores del RGPD de imágenes inteligentes del lado del servidor. Del mismo modo, siempre que los elementos del visualizador, como muestras y miniaturas, no tengan gestión de RGPD, se activa el valor RGPD de imágenes inteligentes del lado del servidor.
+* Experience Manager Sites Core Components are configured by default for DPR optimization. To avoid oversized images owing to server-side Smart Imaging DPR optimization, `dpr=off` is always added to Experience Manager Sites Core Components Dynamic Media images.
+* Given Dynamic Media Foundation Component is configured by default for DPR optimization, to avoid oversized images owing to server-side Smart Imaging DPR optimization, `dpr=off` is always added to Dynamic Media Foundation Component images. Even if customer deselects DPR optimization in DM Foundation Component, server-side Smart Imaging DPR does not kick in. In summary, in the DM Foundation Component, DPR optimization comes into effect based on DM Foundation Component level setting only.
+* Any viewer side DPR optimization works in tandem with server-side Smart Imaging DPR optimization, and does not result in over-sized images. In other words, wherever DPR is handled by the viewer, such as the main view only in a zoom-enabled viewer, the server-side Smart Imaging DPR values are not triggered. Likewise, wherever viewer elements, such as swatches and thumbnails, do not have DPR handling, the server-side Smart Imaging DPR value is triggered.
 
-Consulte también [Al trabajar con imágenes](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) y [Al trabajar con Recorte inteligente](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+See also [When working with images](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop). -->
