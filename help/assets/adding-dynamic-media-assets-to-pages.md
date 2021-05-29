@@ -11,10 +11,10 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Componentes,Publicación
-source-git-commit: 00fc290d91de3c194ada837a931f1d86a5557939
+source-git-commit: 8199702fe778f11cc2a953979a4ccfdcef3f1154
 workflow-type: tm+mt
-source-wordcount: '3108'
-ht-degree: 23%
+source-wordcount: '3210'
+ht-degree: 22%
 
 ---
 
@@ -170,16 +170,16 @@ Para editar la siguiente configuración de Dynamic Media, pulse el icono **[!UIC
 
    Puede editar la siguiente Configuración avanzada tocando **[!UICONTROL Editar]** en el componente.
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
+* **[!UICONTROL Optimizar para dispositivos]**  de mayor resolución: seleccione (predeterminado) la casilla de verificación para permitir la optimización del RGPD (proporción de píxeles del dispositivo).
 
-  See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
+   La opción **[!UICONTROL Optimizar para dispositivos de mayor resolución]** solo se muestra cuando se cumple el siguiente criterio:
+   * En Tipo de ajuste preestablecido, **[!UICONTROL Ajuste preestablecido de imagen]** está seleccionado y **[!UICONTROL RESS_IP]** está seleccionado en la lista desplegable **[!UICONTROL Ajuste preestablecido de imagen]**.
 
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+   ![ajuste de la proporción de píxeles del dispositivo para el ajuste preestablecido de imagen](/help/assets/assets-dm/dpr-ress-ip.png)
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
-  * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
+<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
 
-  ![device pixel ratio setting for image preset](/help/assets/assets-dm/dpr-ress-ip.png) -->
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Título]** : cambie el título de la imagen.
 
@@ -247,17 +247,17 @@ Edite la siguiente configuración de Dynamic Media haciendo clic en **[!UICONTRO
 
 * **[!UICONTROL Habilitar coincidencia de relación de aspecto]** : para permitir que Dynamic Media elija una representación de recorte inteligente con una relación de aspecto que coincida mejor con la relación de aspecto de la imagen original, seleccione esta opción.
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
+* **[!UICONTROL Optimizar para dispositivos]**  de mayor resolución: seleccione (predeterminado) la casilla de verificación para permitir la optimización del RGPD (proporción de píxeles del dispositivo).
 
-  See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
+   La opción **[!UICONTROL Optimizar para dispositivos de mayor resolución]** solo se muestra cuando se cumple el siguiente criterio:
 
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
+   * En Tipo de ajuste preestablecido, la opción **[!UICONTROL Recorte inteligente]** está seleccionada.
 
-  The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+   ![configuración de la proporción de píxeles del dispositivo para el recorte inteligente](/help/assets/assets-dm/dpr-smartcrop.png)
 
-  * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
+<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
 
-  ![device pixel ratio setting for smart crop](/help/assets/assets-dm/dpr-smartcrop.png) -->
+  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Título]** : cambie el título de la imagen de recorte inteligente.
 
