@@ -7,28 +7,27 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
-feature: Asset Management
+feature: Administración de activos
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
+source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1448'
 ht-degree: 5%
 
 ---
-
 
 # Práctica recomendada para optimizar la calidad de las imágenes {#best-practices-for-optimizing-the-quality-of-your-images}
 
 La optimización de la calidad de la imagen puede ser un proceso largo, ya que muchos factores contribuyen a que se obtengan resultados aceptables. El resultado es en parte subjetivo porque las personas perciben la calidad de la imagen de manera diferente. La experimentación estructurada es clave.
 
-AEM incluye más de 100 comandos de envío de imágenes de Dynamic Media para ajustar y optimizar imágenes y procesar resultados. Las siguientes directrices pueden ayudarle a agilizar el proceso y a obtener buenos resultados rápidamente mediante algunos comandos esenciales y prácticas recomendadas.
+Adobe Experience Manager incluye más de 100 comandos de envío de imágenes de Dynamic Media para ajustar y optimizar imágenes y procesar resultados. Las siguientes directrices pueden ayudarle a agilizar el proceso y a obtener buenos resultados rápidamente mediante algunos comandos esenciales y prácticas recomendadas.
 
 ## Prácticas recomendadas para el formato de imagen (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG o PNG son las mejores opciones para ofrecer imágenes de buena calidad y con un tamaño y peso manejables.
 * Si no se proporciona ningún comando de formato en la URL, Dynamic Media Image Delivery toma como valor predeterminado JPG para su envío.
-* JPG comprime a una proporción de 10:1 y normalmente produce tamaños de archivo de imagen más pequeños. PNG se comprime a una proporción de aproximadamente 2:1, excepto en algunos casos, como cuando las imágenes contienen un fondo blanco. Por lo general, los tamaños de archivo PNG son más grandes que los archivos JPG.
+* JPG comprime a una proporción de 10:1 y normalmente produce tamaños de archivo de imagen más pequeños. PNG se comprime a una proporción de aproximadamente 2:1, excepto a veces, como cuando las imágenes contienen un fondo blanco. Por lo general, los tamaños de archivo PNG son más grandes que los archivos JPG.
 * JPG utiliza compresión con pérdidas, lo que significa que los elementos de imagen (píxeles) se pierden durante la compresión. Por otro lado, PNG utiliza compresión sin pérdidas.
 * JPG a menudo comprime las imágenes fotográficas con mejor fidelidad que las imágenes sintéticas con bordes nítidos y contraste.
 * Si sus imágenes contienen transparencia, utilice PNG porque JPG no admite transparencia.
@@ -46,14 +45,14 @@ Como práctica recomendada para el tamaño de la imagen, utilice `&wid=<value>&h
 
 ## Prácticas recomendadas para enfocar la imagen {#best-practices-for-image-sharpening}
 
-El enfoque de imágenes es el aspecto más complejo de controlar las imágenes en su sitio web, y donde se cometen muchos errores. Tómese el tiempo para obtener más información sobre cómo funciona la máscara de enfoque y enfoque en AEM, refiriéndose a los siguientes recursos útiles:
+El enfoque de imágenes es el aspecto más complejo de controlar las imágenes en su sitio web, y donde se cometen muchos errores. Tómese el tiempo para obtener más información sobre cómo funciona la máscara de enfoque y enfoque en el Experience Manager haciendo referencia a los siguientes recursos útiles:
 
-El documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) también se aplica a AEM.
+Documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) que también se aplica al Experience Manager.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
 
-Con AEM, puede enfocar las imágenes sobre la ingesta, el envío o ambos. Sin embargo, en la mayoría de los casos, las imágenes se deben enfocar utilizando solo un método o el otro, pero no ambos. Por lo general, el enfoque de imágenes en la entrega, en una dirección URL, le proporciona los mejores resultados.
+Con Experience Manager, puede enfocar las imágenes en la ingesta, en la entrega o en ambos. Por lo general, sin embargo, enfoca las imágenes utilizando solo un método o el otro, pero no ambos. Por lo general, el enfoque de imágenes en la entrega, en una dirección URL, le proporciona los mejores resultados.
 
 Hay dos métodos de perfeccionamiento de imagen que puede utilizar:
 
@@ -72,11 +71,11 @@ Hay dos métodos de perfeccionamiento de imagen que puede utilizar:
          Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL threshold]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
       Para obtener más información sobre cómo configurar estos tres parámetros, incluidas las prácticas recomendadas para usar con el filtro, consulte los siguientes recursos:
 
-      AEM tema de ayuda sobre cómo enfocar una imagen.
+      Tema de ayuda del Experience Manager sobre cómo enfocar una imagen.
 
       Documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
-   * AEM también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
+   * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
 
 
 Se recomienda comenzar con el parámetro de radio de máscara de enfoque. La configuración de radio con la que puede empezar es la siguiente:
@@ -124,9 +123,8 @@ Si la imagen requiere mayor optimización, ajuste gradualmente los parámetros d
 
 Si los resultados de nitidez siguen siendo insatisfactorios, aumente el radio en incrementos decimales. Para cada incremento decimal, reinicie la cantidad a 1,75 y aumente gradualmente a 4. Repita este proceso hasta obtener el resultado deseado. Aunque los valores anteriores son un enfoque que los estudios creativos han validado, recuerde que puede empezar con otros valores y seguir otras estrategias. Si los resultados son satisfactorios para usted o no es un asunto subjetivo, por lo tanto la experimentación estructurada es clave.
 
-A medida que experimenta, también puede encontrar útiles las siguientes sugerencias generales para optimizar el flujo de trabajo:
+A medida que experimenta, las siguientes sugerencias generales pueden resultar útiles para optimizar aún más el flujo de trabajo:
 
 * Pruebe diferentes parámetros en tiempo real, directamente en una dirección URL.
-* Como práctica recomendada, recuerde que puede agrupar los comandos de Dynamic Media Image Serving en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente macros de comandos de URL con nombres preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre de ajuste preestablecido personalizado en una ruta URL hace una llamada a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para diferentes patrones de uso de imágenes en su sitio web y acorta la longitud total de las direcciones URL.
-* AEM también proporciona métodos más avanzados para ajustar la calidad de imagen, como la aplicación de imágenes de nitidez durante la ingesta. En los casos de uso avanzado en los que esta opción pueda ajustar y optimizar los resultados de procesamiento, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) puede ayudarle con las prácticas recomendadas y la perspectiva personalizada.
-
+* Como práctica recomendada, recuerde que puede agrupar los comandos de Dynamic Media Image Serving en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente macros de comandos de URL con nombres preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre de ajuste preestablecido personalizado en una ruta de URL llama a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para diferentes patrones de uso de imágenes en su sitio web y acorta la longitud total de las direcciones URL.
+* Experience Manager también proporciona formas más avanzadas de ajustar la calidad de imagen, como la aplicación de imágenes de nitidez durante la ingesta. En los casos de uso avanzado en los que existen opciones para ajustar y optimizar los resultados de procesamiento, [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html) puede ayudarle con las prácticas recomendadas y la perspectiva personalizada.
