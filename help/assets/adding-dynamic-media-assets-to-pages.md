@@ -11,7 +11,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Componentes,Publicación
-source-git-commit: 8199702fe778f11cc2a953979a4ccfdcef3f1154
+source-git-commit: 1c95217c98cdf24182eebbfea09c807318b2d514
 workflow-type: tm+mt
 source-wordcount: '3210'
 ht-degree: 22%
@@ -173,13 +173,12 @@ Para editar la siguiente configuración de Dynamic Media, pulse el icono **[!UIC
 * **[!UICONTROL Optimizar para dispositivos]**  de mayor resolución: seleccione (predeterminado) la casilla de verificación para permitir la optimización del RGPD (proporción de píxeles del dispositivo).
 
    La opción **[!UICONTROL Optimizar para dispositivos de mayor resolución]** solo se muestra cuando se cumple el siguiente criterio:
+
    * En Tipo de ajuste preestablecido, **[!UICONTROL Ajuste preestablecido de imagen]** está seleccionado y **[!UICONTROL RESS_IP]** está seleccionado en la lista desplegable **[!UICONTROL Ajuste preestablecido de imagen]**.
 
    ![ajuste de la proporción de píxeles del dispositivo para el ajuste preestablecido de imagen](/help/assets/assets-dm/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
-
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Título]** : cambie el título de la imagen.
 
@@ -255,9 +254,7 @@ Edite la siguiente configuración de Dynamic Media haciendo clic en **[!UICONTRO
 
    ![configuración de la proporción de píxeles del dispositivo para el recorte inteligente](/help/assets/assets-dm/dpr-smartcrop.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
-
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Título]** : cambie el título de la imagen de recorte inteligente.
 
