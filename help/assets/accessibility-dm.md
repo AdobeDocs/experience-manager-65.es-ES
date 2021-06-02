@@ -4,16 +4,15 @@ description: Obtenga información sobre la compatibilidad con la accesibilidad e
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: Accessibility
+feature: Accesibilidad
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
+source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
-
 
 # Accesibilidad en [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
@@ -21,18 +20,18 @@ ht-degree: 0%
 
 ## Compatibilidad con la accesibilidad del teclado en [!DNL Dynamic Media]
 
-Como [!DNL Dynamic Media] es un complemento de [!DNL Adobe Experience Manager Assets], la mayoría del comportamiento de control del teclado es exactamente el mismo que en [!DNL Experience Manager Assets]. Por ejemplo, el botón `Cancel` de [!DNL Dynamic Media] tiene el mismo resaltado que en [!DNL Experience Manager Assets] y reacciona a la clave `Spacebar` que en [!DNL Experience Manager Assets]. Consulte [Métodos abreviados de teclado en Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Como [!DNL Dynamic Media] es un complemento de [!DNL Adobe Experience Manager Assets], la mayoría del comportamiento de control del teclado es el mismo que en [!DNL Experience Manager Assets]. Por ejemplo, el botón `Cancel` de [!DNL Dynamic Media] tiene el mismo resaltado que en [!DNL Experience Manager Assets] y reacciona a la clave `Spacebar` que en [!DNL Experience Manager Assets]. Consulte [Métodos abreviados de teclado en Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Las pulsaciones de teclas admitidas por los elementos individuales de la interfaz de usuario en [!DNL Dynamic Media] son, en la mayoría de los casos, obvias y fáciles de descubrir. El control de teclado en [!DNL Dynamic Media] es aproximadamente lo siguiente:
 
 * Posibilidad de utilizar pulsaciones de teclas `Tab` y `Shift+Tab` para desplazarse entre los elementos interactivos de la página.
 El uso de `Tab` avanza el enfoque de entrada al siguiente elemento de la interfaz de usuario en el orden de tabulación; el uso de `Shift+Tab` devuelve el enfoque de entrada al elemento de interfaz de usuario anterior.
 El enfoque transversal sigue la ubicación del elemento de la interfaz de usuario natural en la pantalla y se mueve de izquierda a derecha y, a continuación, de arriba a abajo. Además, si algún campo presenta un error, puede pulsar `Tab` para mover el enfoque a él.
-* Capacidad para utilizar las claves `Spacebar` y `Enter` para activar elementos estándar de la interfaz de usuario, como botones, listas desplegables, etc.
-* Posibilidad de ver el resaltado del foco del teclado en el elemento activo. El elemento de la interfaz de usuario que tiene selección de entrada puede recibir una indicación de enfoque visual como borde representado alrededor del elemento de la interfaz de usuario.
+* Capacidad para utilizar las claves `Spacebar` y `Enter` para activar elementos estándar de la interfaz de usuario, como botones y listas desplegables.
+* Posibilidad de ver el resaltado del foco del teclado en el elemento activo. El elemento de interfaz de usuario que tiene enfoque de entrada recibe una indicación de enfoque visual como borde representado alrededor del elemento de interfaz de usuario.
 * En el editor de puntos interactivos, puede utilizar algunas pulsaciones de teclas personalizadas, como teclas de flecha, para interactuar con elementos complejos de la interfaz de usuario con el fin de cambiar la posición de los puntos interactivos.
-* En el editor de vídeo interactivo, puede utilizar `Spacebar` para seleccionar una imagen y añadirla a un segmento. Además, puede utilizar la clave `Backspace` para eliminar el elemento seleccionado de la pestaña **[!UICONTROL Contenido]**. Además, si presiona `Tab` , las funciones funcionan como desee para desplazarse entre los elementos interactivos de la página.
-* En el editor Recorte de imagen/Recorte inteligente , tiene la capacidad de hacer lo siguiente:
+* En el editor de vídeo interactivo, puede utilizar `Spacebar` para seleccionar una imagen y añadirla a un segmento. Además, puede utilizar la clave `Backspace` para eliminar el elemento seleccionado de la pestaña **[!UICONTROL Content]**. Además, si presiona `Tab` , las funciones funcionan como desee para desplazarse entre los elementos interactivos de la página.
+* En el editor Recorte de imagen/Recorte inteligente, puede hacer lo siguiente:
    * Utilice las teclas de flecha para recortar el tamaño del marco, o para cambiar la posición de la imagen, o ambas.
    * La primera `Tab` parada resalta todo el marco de la imagen. A continuación, puede utilizar las teclas de flecha del teclado para cambiar la posición del marco.
    * Las cuatro `Tab` paradas siguientes son las cuatro esquinas del marco. Cuando el enfoque se coloca en una esquina de marco, la esquina se resalta. De nuevo, puede utilizar las teclas de flecha del teclado para mover la esquina enfocada.
