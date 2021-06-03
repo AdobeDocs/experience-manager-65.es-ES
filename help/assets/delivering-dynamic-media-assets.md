@@ -10,12 +10,11 @@ discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 274af114-845a-46bd-b091-802cf589687a
-feature: Asset Management,Renditions
-translation-type: tm+mt
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+feature: Administración de recursos,Representaciones
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 9%
+source-wordcount: '313'
+ht-degree: 6%
 
 ---
 
@@ -23,10 +22,10 @@ ht-degree: 9%
 
 El modo de distribuir los recursos de Dynamic Media (vídeos e imágenes) depende de cómo se implemente el sitio web.
 
-Con Dynamic Media dispone de varias opciones:
+Con Dynamic Media, tiene varias opciones:
 
-* Si el sitio web está alojado en AEM, quiere agregar los recursos de Dynamic Media directamente a la página.
-* Si el sitio web no está AEM, puede elegir una de las opciones siguientes:
+* Si el sitio web está alojado en Adobe Experience Manager, quiere agregar los recursos de Dynamic Media directamente a la página.
+* Si el sitio web no está en Experience Manager, puede elegir una de las opciones siguientes:
 
    * Incrustar el vídeo o la imagen en el sitio web.
    * Vincule las URL a la aplicación web. Utilice la vinculación cuando desee enviar un reproductor de vídeo como ventana emergente o modal.
@@ -40,7 +39,7 @@ Para obtener más información, consulte los temas siguientes:
 
 * [Adición de recursos de Dynamic Media a páginas web](/help/assets/adding-dynamic-media-assets-to-pages.md)
 * [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/embed-code.md)
-* [Activar la protección de los vínculos interactivos de Dynamic Media](hotlink-protection.md)
+* [Activar la protección de los vínculos interactivos de Dynamic Media](/help/assets/hotlink-protection.md)
 * [Vinculación de URL a la aplicación web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Entrega de imágenes optimizadas para un sitio interactivo](/help/assets/responsive-site.md)
 * [Entrega HTTP2 de contenido](/help/assets/http2.md)
@@ -50,6 +49,6 @@ Para obtener más información, consulte los temas siguientes:
 
 ## Entrega HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
-AEM ahora admite la entrega de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, una URL publicada o un código incrustado para la imagen o el vídeo están disponibles para integrarse con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega mediante el protocolo HTTP/2. Este método de envío mejora la forma en que se comunican los exploradores y los servidores, lo que permite mejorar los tiempos de respuesta y carga de todos los recursos de Dynamic Media.
+Ahora, el Experience Manager admite la entrega de todo el contenido de Dynamic Media (imágenes y vídeo) a través de HTTP/2. Es decir, una URL publicada o un código incrustado para la imagen o el vídeo están disponibles para integrarse con cualquier aplicación que acepte un recurso alojado. Ese recurso publicado se entrega mediante el protocolo HTTP/2. Este método de envío mejora la forma en que se comunican los exploradores y los servidores, lo que permite mejorar los tiempos de respuesta y carga de todos los recursos de Dynamic Media.
 
-Consulte [HTTP/2 Entrega de contenido preguntas más frecuentes](/help/sites-administering/scene7-http2faq.md) para obtener más información.
+Para obtener más información, consulte [HTTP/2 Entrega de contenido preguntas más frecuentes](/help/sites-administering/scene7-http2faq.md).
