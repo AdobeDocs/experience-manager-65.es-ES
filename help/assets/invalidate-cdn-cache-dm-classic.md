@@ -5,11 +5,10 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-feature: CDN Cache,Dynamic Media Classic
+feature: Caché de CDN,Dynamic Media Classic
 role: Business Practitioner, Administrator
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
-translation-type: tm+mt
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 16%
@@ -36,7 +35,7 @@ Consulte también [Información general de caché en Dynamic Media Classic (Scen
 
    Adobe proporcionó las credenciales y el inicio de sesión en el momento de la provisión. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
 
-1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general.]**
+1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 1. En la página Configuración general de la aplicación , en el encabezado del grupo Servidores , busque el cuadro de texto **[!UICONTROL Plantilla de invalidación de CDN]**.
 
 1. Especifique la plantilla que se utiliza para invalidar la caché de la CDN (red de entrega de contenido).
@@ -47,8 +46,8 @@ Consulte también [Información general de caché en Dynamic Media Classic (Scen
 
    Si la plantilla solo contiene `<ID>`, Dynamic Media rellena `https://<server>/is/image` donde `<server>` es el nombre del servidor de publicación definido en Configuración general y &lt;ID> es el recurso seleccionado para invalidarse.
 
-1. En la esquina inferior derecha de la página, haga clic en **[!UICONTROL Cerrar.]**
-1. En la interfaz de usuario de Dynamic Media Classic, seleccione uno o varios recursos y haga clic en **[!UICONTROL Archivo > Invalidar CDN.]** Puede ver una lista de una o más direcciones URL generadas a partir de la plantilla creada y los recursos seleccionados. Utiliza la URL del servidor que aparece en &quot;Nombre del servidor publicado&quot; en Configuración general de la aplicación.
+1. En la esquina inferior derecha de la página, haga clic en **[!UICONTROL Cerrar]**.
+1. En la interfaz de usuario de Dynamic Media Classic, seleccione uno o varios recursos y haga clic en **[!UICONTROL Archivo]** > **[!UICONTROL Invalidar CDN]**. Puede ver una lista de una o más direcciones URL generadas a partir de la plantilla creada y los recursos seleccionados. Utiliza la URL del servidor que aparece en &quot;Nombre del servidor publicado&quot; en Configuración general de la aplicación.
 
    Por ejemplo, con la plantilla de invalidación de CDN establecida en el paso anterior, supongamos que ha seleccionado una sola imagen de recurso de imagen denominada `Backpack_B`. Al pulsar **[!UICONTROL Archivo > Invalidar CDN]**, se genera la siguiente URL en la interfaz de usuario de Invalidación de CDN:
 
@@ -58,7 +57,7 @@ Consulte también [Información general de caché en Dynamic Media Classic (Scen
 
    Después de hacer clic en **[!UICONTROL Continue]**, se muestra un indicador que proporciona una estimación del tiempo que se tardará en borrar la caché.
 
-   Si ha seleccionado varios recursos y ha pulsado **[!UICONTROL Archivo > Invalidar CDN]**, se hace referencia a cada recurso en la **[!UICONTROL URL de plantilla guardada.]** Por lo tanto, puede definir una plantilla de invalidación de  **[!UICONTROL CDN que]** haga referencia a cada ajuste preestablecido de imagen URL al que se hace referencia en el sitio web (como detalles del producto y resultados de búsqueda). A continuación, al seleccionar una o varias imágenes para la invalidación desde la caché, las direcciones URL rellenan automáticamente la interfaz.
+   Si ha seleccionado varios recursos y ha pulsado **[!UICONTROL Archivo > Invalidar CDN]**, se hace referencia a cada recurso en la **[!UICONTROL URL de plantilla]** guardada. Por lo tanto, puede definir una **[!UICONTROL Plantilla de invalidación de CDN]** que haga referencia a cada ajuste preestablecido de imagen URL al que se hace referencia en el sitio web (como detalles del producto y resultados de búsqueda). A continuación, al seleccionar una o varias imágenes para la invalidación desde la caché, las direcciones URL rellenan automáticamente la interfaz.
 
    >[!NOTE]
    >
