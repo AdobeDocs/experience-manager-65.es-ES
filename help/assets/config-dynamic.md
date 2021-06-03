@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuración,Modo híbrido
-source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
+source-git-commit: c4221ede672c131aa0864438bc9fd16c73ddf10c
 workflow-type: tm+mt
 source-wordcount: '7843'
 ht-degree: 1%
@@ -259,16 +259,18 @@ Después de configurar el agente de replicación, debe [validar y probar que se 
 El límite de memoria predeterminado para la creación de PTIFF es de 3 GB en todos los flujos de trabajo. Por ejemplo, puede procesar una imagen que requiera 3 GB de memoria mientras otros flujos de trabajo están en pausa, o puede procesar 10 imágenes en paralelo que requieran 300 MB de memoria cada una.
 El límite de memoria es configurable y se ajusta a la disponibilidad de recursos del sistema y al tipo de contenido de imagen que se está procesando. Si tiene muchos recursos grandes y tiene suficiente memoria en el sistema, puede aumentar este límite para garantizar que las imágenes se procesen en paralelo.
 Se rechaza una imagen que requiere más del límite máximo de memoria.
-Para cambiar el límite de memoria para la creación de PTIFF, vaya a **[!UICONTROL Tools > Operations > Web Console > Adobe CQ Scene7 PTiffManager]** y cambie el valor **[!UICONTROL maxMemory]**.
+Para cambiar el límite de memoria para la creación de PTIFF, vaya a **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** y cambie el valor **[!UICONTROL maxMemory]**.
 
 ### Configuración de la autenticación {#setting-up-authentication}
 
 Configure la autenticación de replicación en el autor para que pueda replicar imágenes en el servicio de entrega de imágenes de Dynamic Media. Primero obtiene un KeyStore y luego lo guarda en el usuario **[!UICONTROL dynamic-media-replication]** y lo configura. El administrador de su empresa recibió un correo electrónico de bienvenida con el archivo KeyStore y las credenciales necesarias durante el proceso de aprovisionamiento. Si no recibió esta información, póngase en contacto con el Servicio de atención al cliente de Adobe.
 
-**Para configurar la autenticación**
+**Para configurar la autenticación:**
 
 1. Póngase en contacto con el Servicio de atención al cliente de Adobe para obtener su archivo y contraseña de KeyStore si todavía no tiene el archivo y la contraseña. Esta información es una parte necesaria del aprovisionamiento. Asocia las claves a su cuenta.
+
 1. En el Experience Manager, pulse el logotipo del Experience Manager para acceder a la consola de navegación global y, a continuación, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Usuarios]**.
+
 1. En la página Administración de usuarios , vaya al usuario **[!UICONTROL dynamic-media-replication]** y, a continuación, pulse para abrir.
 
    ![dm-replication](assets/dm-replication.png)
@@ -818,7 +820,7 @@ Dynamic Media funciona de forma predeterminada [después de estar habilitado](#e
 Para definir la configuración del servidor de imágenes de Dynamic Media:
 
 1. En la esquina superior izquierda del Experience Manager, pulse **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global y, a continuación, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]**.
-1. En la página Configuración de la consola web de Adobe Experience Manager, pulse **[!UICONTROL OSGi > Configuración]** para enumerar todos los paquetes que se están ejecutando actualmente en el Experience Manager.
+1. En la página Configuración de la consola web de Adobe Experience Manager, pulse **[!UICONTROL OSGi]** > **[!UICONTROL Configuración]** para enumerar todos los paquetes que se están ejecutando actualmente en el Experience Manager.
 
    Los servidores de envío de Dynamic Media se encuentran en los nombres siguientes de la lista:
 
@@ -966,7 +968,7 @@ La gestión de color de Dynamic Media permite colorear los recursos correctos pa
 
 Con la corrección de color, los recursos incorporados conservan su espacio de color (RGB, CMYK, Gris) y su perfil de color incrustado en la representación TIFF de la pirámide generada. Cuando se solicita una representación dinámica, el color de la imagen se corrige en el espacio de color de destino. Puede configurar el perfil de color de salida en la configuración de publicación de Dynamic Media en el JCR.
 
-La gestión de color de Adobe utiliza perfiles ICC (International Color Consortium), un formato definido por ICC.
+La gestión de color del Adobe utiliza perfiles ICC (International Color Consortium), un formato definido por ICC.
 
 Puede configurar la administración de color de Dynamic Media y los ajustes preestablecidos de imagen mediante la salida CMYK, RGB o Gris. Consulte [Configuración de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md).
 
