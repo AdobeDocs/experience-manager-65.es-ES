@@ -4,9 +4,9 @@ description: Novedades de [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: f0398d63aa7d9c994c56217cce52b3fb4de04769
+source-git-commit: 3d6b0c696b625869bc4ed682a310399b3b6301fb
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: '3727'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,13 @@ ht-degree: 1%
 [!DNL Adobe Experience Manager] 6.5 Los Service Packs proporcionan nuevas funciones, mejoras solicitadas por el cliente y mejoras de rendimiento, estabilidad y seguridad a intervalos trimestrales. La disponibilidad trimestral facilita el acceso y la adopción de nuevas características e innovaciones.
 
 Este artículo resalta las funciones incluidas en el Service Pack más reciente, las [características clave incluidas en los Service Pack 6.5 anteriores](#key-features-previous-service-packs) y las [versiones clave desde la última versión del Service Pack](#key-releases-since-last-sp).
+
+>[!NOTE]
+>
+>A partir de AEM Service Pack 9, los clientes [!DNL Experience Manager] pueden desarrollar y operar sus [!DNL Experience Manager] aplicaciones con distribuciones de las [!DNL Azul Zulu] compilaciones de OpenJDK, compatibles con los estándares de Java SE.
+>El Adobe también proporciona soporte para los [!DNL Azul Zulu] JDK a los clientes [!DNL Experience Manager].
+>Puede descargar las versiones relevantes de [!DNL Azul Zulu JDKs] desde [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+>Los derechos de uso de la tecnología Java de Oracle, tal como se distribuyen por Adobe, expirarán a finales de diciembre de 2022. [!DNL Experience Manager] se recomienda a los clientes que planifiquen e implementen el uso de para los  [!DNL Azul Zulu] JDK a más tardar para esta fecha. Para obtener más información sobre el uso de la tecnología [!DNL Oracle Java] y la tecnología [!DNL Azul Zulu], consulte las [preguntas frecuentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) asociadas.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -78,6 +85,36 @@ Ahora puede restaurar las páginas eliminadas y toda la vista de árbol en una p
 >[!NOTE]
 >
 >El paquete de complementos de [!DNL Experience Manager Forms] está disponible una semana después del lanzamiento programado del [!DNL Experience Manager] Service Pack.
+
+### Compatibilidad con [!DNL Azul Zulu OpenJDK] {#support-azul-zulu}
+
+Ahora puede desarrollar y operar aplicaciones con [!DNL Azul Zulu] compilaciones de [!DNL OpenJDK] para [!DNL Experience Manager Forms] en implementaciones OSGi. Para obtener más información, consulte [Experience Manager 6.5 Service Pack 9 Notas de la versión](sp-release-notes.md) y [Requisitos técnicos](../sites-deploying/technical-requirements.md).
+
+### Capacidad para enviar un correo electrónico de notificación a un grupo mediante [!UICONTROL Asignar tarea] {#group-notification-email}
+
+Ahora puede enviar un correo electrónico de notificación a una dirección de correo electrónico de grupo mediante el paso Asignar tarea del flujo de trabajo.
+
+### Capacidad para recuperar un borrador de comunicación interactiva después de modificar la comunicación interactiva de origen {#retrieve-draft-after-source-modifications}
+
+Ahora puede recuperar una comunicación interactiva guardada como borrador después de realizar cambios en la comunicación interactiva de origen.
+
+### Configure un nombre de dominio personalizado para cargar, procesar y validar el servicio reCAPTCHA {#set-custom-domain-name-recaptcha}
+
+El servicio reCAPTCHA utiliza `https://www.recaptcha.net/` como dominio predeterminado. Ahora puede modificar la configuración para establecer `https://www.google.com/` o cualquier nombre de dominio personalizado para cargar, procesar y validar el servicio reCAPTCHA.
+
+### Mejoras en los datos de entrada para el paso [!UICONTROL Invocar el servicio del modelo de datos de formulario] del flujo de trabajo {#input-data-enhancements-fdm}
+
+Cuando se selecciona un modelo de datos de formulario y un servicio en el paso de flujo de trabajo [!UICONTROL Invocar el servicio del modelo de datos de formulario], se especifican argumentos de servicio para los datos de entrada.
+
+Si selecciona la opción [!UICONTROL Relative to Payload] para adjuntar un archivo como argumento de servicio, ahora puede especificar la ruta de la carpeta que contiene el archivo en lugar del nombre real del archivo. La definición del nombre de la carpeta, en lugar del nombre del archivo adjunto, permite reutilizar modelos de flujo de trabajo. No se limita el modelo de flujo de trabajo a un único nombre de archivo adjunto.
+
+### Capacidad para utilizar varias páginas de formato en una plantilla de documento de registro {#use-multiple-master-pages-dor-template}
+
+Ahora puede utilizar varias páginas de formato en una plantilla Documento de registro . Como resultado, ahora puede tener diferentes encabezados, pies de página, fuentes, información de logotipo en la página de título y otras páginas de la plantilla.
+
+### Saltos de página de soporte en el documento de registro {#support-page-breaks-dor}
+
+Ahora puede agregar saltos de página a un documento de registro. Como resultado, si un panel se rompe en las páginas, puede agregar un salto de página para mover el panel a una nueva página de un Documento de registro.
 
 ## Funciones principales en los paquetes de servicios [!DNL Experience Manager] 6.5 anteriores {#key-features-previous-service-packs}
 
