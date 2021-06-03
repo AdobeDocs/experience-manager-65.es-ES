@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
-feature: Viewer Presets
+feature: Ajustes preestablecidos de visor
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 25%
+source-wordcount: '219'
+ht-degree: 26%
 
 ---
-
 
 # Aplicación de ajustes preestablecidos de visor de Dynamic Media {#applying-viewer-presets}
 
@@ -31,12 +30,12 @@ Cualquier problema con los ajustes preestablecidos de visor, consulte [Solución
 
 ## Aplicación de un ajuste preestablecido de visualizador de Dynamic Media a un recurso {#applying-a-viewer-preset-to-an-asset}
 
-1. Abra el recurso y en el carril izquierdo y pulse **[!UICONTROL Visualizadores.]**
+1. Abra el recurso y en el carril izquierdo y pulse **[!UICONTROL Visualizadores]**.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
    * Los botones **[!UICONTROL URL]** e **[!UICONTROL Incrustar]** aparecen después de seleccionar un ajuste preestablecido de visualizador.
-   * El sistema muestra numerosos ajustes preestablecidos de visualizador al seleccionar Visualizadores en la **[!UICONTROL vista de detalles de un recurso.]** Puede aumentar el número de ajustes preestablecidos vistos. Consulte [Aumento del número de ajustes preestablecidos de visor que se muestran](managing-viewer-presets.md).
+   * El sistema muestra numerosos ajustes preestablecidos de visualizador al seleccionar Visualizadores en la **[!UICONTROL vista de detalles de un recurso]**. Puede aumentar el número de ajustes preestablecidos vistos. Consulte [Aumento del número de ajustes preestablecidos de visor que se muestran](managing-viewer-presets.md).
 
 1. Seleccione un visualizador del panel izquierdo para aplicarlo al recurso como se ve en el panel derecho. También puede [copiar la URL para compartir](linking-urls-to-yourwebapplication.md) con otros usuarios.
 
