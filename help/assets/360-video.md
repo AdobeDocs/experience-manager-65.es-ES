@@ -11,7 +11,7 @@ docset: aem65
 feature: Vídeo de RV 360
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Los 360 recursos de vídeo que se cargan en Adobe Experience Manager están etiq
 **Para cargar recursos para usarlos con el visor de vídeos 360:**
 
 1. Se ha creado una carpeta dedicada al recurso de vídeo 360.
-1. [Aplique un perfil de vídeo adaptable a la carpeta .](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
+1. [Aplicar un perfil de vídeo adaptable a la carpeta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    El procesamiento de contenido de vídeo 360 supone un requisito mayor para la resolución de vídeo de origen y para la resolución de representaciones codificadas que el contenido de vídeo estándar no 360.
 
@@ -99,9 +99,9 @@ Consulte también [Edición de ajustes preestablecidos de visualizador](/help/as
 
 Cuando esté satisfecho con el vídeo 360, puede publicarlo.
 
-Consulte [Incrustación del visualizador de imágenes o vídeos en una página web.](/help/assets/embed-code.md)
-Consulte  [Vinculación de URL a la aplicación](/help/assets/linking-urls-to-yourwebapplication.md) web. El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
-Consulte [Adición de recursos de Dynamic Media a las páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Consulte [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/embed-code.md).
+Consulte [Vinculación de URL a la aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
+Consulte [Adición de recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Para previsualizar los vídeos 360:**
 
@@ -111,7 +111,7 @@ Consulte [Adición de recursos de Dynamic Media a las páginas.](/help/assets/ad
 
    Pulse el recurso de vídeo 360 para poder previsualizar el vídeo.
 
-1. En la página de vista previa, cerca de la esquina superior izquierda de la página, pulse la lista desplegable y, a continuación, seleccione **[!UICONTROL Visualizadores.]**
+1. En la página de vista previa, cerca de la esquina superior izquierda de la página, pulse la lista desplegable y, a continuación, seleccione **[!UICONTROL Visualizadores]**.
 
    ![6_5_360visores de vista previa de vídeo](assets/6_5_360video-preview-viewers.png)
 
@@ -122,13 +122,13 @@ Consulte [Adición de recursos de Dynamic Media a las páginas.](/help/assets/ad
 
    ![Captura de pantalla de vídeo de 6_5_360video-preview-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360.*
 
-   * En la lista Visualizadores, pulse **[!UICONTROL Video360VR.]**
+   * En la lista Visualizadores, pulse **[!UICONTROL Video360VR]**.
 
       El vídeo de Realidad virtual (VR) es contenido de vídeo inmersivo al que se accede mediante auriculares de realidad virtual. Al igual que con los vídeos normales, se crean vídeos VR al principio cuando se graba o captura un vídeo con cámaras de vídeo de 360 grados.
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Captura de pantalla de un video de 360 VR.*
 
-1. Cerca de la parte superior derecha de la página de vista previa, pulse **[!UICONTROL Cerrar.]**
+1. Cerca de la parte superior derecha de la página de vista previa, pulse **[!UICONTROL Cerrar]**.
 
 ## Publicación de vídeo 360 {#publishing-video}
 
@@ -137,4 +137,4 @@ Publique el vídeo 360 para que pueda utilizarlo. Al publicar un vídeo de 360 s
 Consulte [Publicación de recursos de Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar vídeos de 360.
 Consulte también [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/embed-code.md).
 Consulte también [Vinculación de URL a la aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
-Consulte también [Adición de recursos de Dynamic Media a las páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Consulte también [Adición de recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
