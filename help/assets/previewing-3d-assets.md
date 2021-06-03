@@ -6,8 +6,7 @@ docset: aem65
 feature: Recursos 3D
 role: Business Practitioner
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-translation-type: tm+mt
-source-git-commit: 666bc5d943af371726708cb2ef157a9b3f07eb8e
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 15%
@@ -56,7 +55,7 @@ Además, las capacidades del equipo cliente (como una estación de trabajo, un p
 
 1. Asegúrese de haber cargado recursos 3D en Experience Manager.
 Consulte [Formatos admitidos para la vista previa 3D](#supported-3d-previewing-assets) y [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
-1. En el Experience Manager, en la página **[!UICONTROL Navegación]**, pulse **[!UICONTROL Assets > Archivos.]**
+1. En el Experience Manager, en la página **[!UICONTROL Navegación]**, pulse **[!UICONTROL Assets > Archivos]**.
 
    ![Página de navegación](/help/assets/assets-dm/navigation-assets.png)
 
@@ -80,4 +79,4 @@ Consulte [Formatos admitidos para la vista previa 3D](#supported-3d-previewing-a
    | **Restablecer** | Cerca de la esquina inferior derecha de la página, pulse el icono Restablecer para restaurar el punto de destino de la vista al centro del recurso 3D. Restablecer también mueve la cámara más cerca o más lejos para mostrar el recurso en su totalidad y con un tamaño de visualización razonable. |  |  |
    | **Modo de pantalla completa** | Para entrar al modo de pantalla completa, en la esquina inferior derecha de la página, pulse el icono de pantalla completa . |  |  |
 
-1. Cuando haya terminado, pulse **[!UICONTROL Cerrar.]** cerca de la esquina superior derecha de la página
+1. Cuando haya terminado, pulse **[!UICONTROL Cerrar]** cerca de la esquina superior derecha de la página.
