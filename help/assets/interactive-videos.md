@@ -11,8 +11,7 @@ docset: aem65
 feature: Vídeos interactivos
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '6058'
 ht-degree: 5%
@@ -53,7 +52,8 @@ Mire este tutorial de 7 minutos y 30 segundos sobre [cómo se crean los vídeos 
 El seminario web &quot;Uso de vídeo interactivo, uso compartido de vínculos y uso compartido de YouTube en AEM Assets&quot; le enseña cómo utilizar vídeo interactivo y otras funciones para enlazar eventos impulsados por conversión con su contenido de marketing de vídeo.
 
 >[!NOTE]
-[Uso compartido de vínculos, vídeos interactivos y YouTube en AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+>
+>[Uso compartido de vínculos, vídeos interactivos y YouTube en AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## Inicio rápido: Vídeos interactivos {#quick-start-interactive-videos}
 
@@ -96,10 +96,14 @@ Si utiliza un WCM de terceros (Web Content Manager), debe integrar el nuevo víd
 ## (Opcional) Identificación de variables de vista rápida {#optional-identifying-quickview-variables}
 
 >[!NOTE]
-Esta tarea solo es necesaria si los siguientes son verdaderos:
-* Desea agregar interactividad al vídeo activando las vistas rápidas.
-* Su implementación de AEM utiliza *no* un marco de integración de comercio electrónico para extraer datos de productos de AEM de cualquier solución de comercio electrónico, como IBM Websphere Commerce, Elastic Path, hybris o Intershop. Consulte [eCommerce concepts in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
+>
+>Esta tarea solo es necesaria si los siguientes son verdaderos:
+>
+>* Desea agregar interactividad al vídeo activando las vistas rápidas.
+>* Su implementación de AEM utiliza *no* un marco de integración de comercio electrónico para extraer datos de productos de AEM de cualquier solución de comercio electrónico, como IBM Websphere Commerce, Elastic Path, hybris o Intershop. Consulte [eCommerce concepts in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
+>
+>
 Si la implementación de AEM utiliza eCommerce, puede omitir esta tarea y continuar con la siguiente tarea.
 
 Comience por identificar las variables dinámicas que usa la implementación de Quickview existente, de modo que pueda asignar miniaturas de productos a la vista rápida de su producto correspondiente durante el proceso de creación de vídeo interactivo.
@@ -225,7 +229,7 @@ Puede omitir esta tarea y continuar con la siguiente si desea utilizar cualquier
 
 Cuando se hace clic en una miniatura en el entorno de creación, aparece una vista previa del cuadro de diálogo Vista rápida .
 
-![imagen_1-21](assets/chlimage_1-127.png)
+![chlimage_1-29](assets/chlimage_1-127.png)
 
 Si lo desea, puede crear su propio ajuste preestablecido de visualizador de vídeo interactivo personalizado. Puede determinar, entre otras cosas, el estilo del reproductor de vídeo, las miniaturas interactivas y la vista de cuadrícula en miniatura que aparece al final del vídeo.
 
@@ -259,10 +263,12 @@ Después de agregar segmentos de cronología, agregue imágenes en miniatura den
 Consulte [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
-Tenga en cuenta que las herramientas de uso compartido de medios sociales en Vídeo interactivo no son compatibles cuando incrusta el visor en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido en redes sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencias.
+>
+>Tenga en cuenta que las herramientas de uso compartido de medios sociales en Vídeo interactivo no son compatibles cuando incrusta el visor en un fragmento de experiencia. Para solucionar este problema, puede utilizar o crear ajustes preestablecidos de visualizador que no tengan herramientas de uso compartido en redes sociales. Estos ajustes preestablecidos de visor permiten incrustarlos correctamente en fragmentos de experiencias.
 
 >[!NOTE]
-El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
+>
+>El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 
 Las opciones Deshacer y Rehacer, cerca de la esquina superior derecha de la página, son compatibles durante la sesión de creación/edición actual.
 
@@ -273,11 +279,11 @@ Para añadir interactividad al vídeo:
 1. En la vista Recursos, desplácese hasta el vídeo que ha cargado y desee hacer interactivo.
 1. Realice una de las acciones siguientes:
 
-   * Pase el ratón sobre la imagen y, a continuación, pulse **[!UICONTROL Seleccionar]** (icono de marca de verificación). En la barra de herramientas, pulse **[!UICONTROL Editar.]**
+   * Pase el ratón sobre la imagen y, a continuación, pulse **[!UICONTROL Seleccionar]** (icono de marca de verificación). En la barra de herramientas, pulse **[!UICONTROL Editar]**.
 
-   * Pase el ratón sobre la imagen y, a continuación, pulse **[!UICONTROL Más acciones]** (icono de tres puntos) **[!UICONTROL Editar.]**
+   * Pase el ratón sobre la imagen y, a continuación, pulse **[!UICONTROL Más acciones]** (icono de tres puntos) **[!UICONTROL Editar]**.
 
-   * Pulse la imagen para abrirla en la página Vista de detalles . En la barra de herramientas, pulse **[!UICONTROL Editar.]**
+   * Pulse la imagen para abrirla en la página Vista de detalles . En la barra de herramientas, pulse **[!UICONTROL Editar]**.
 
 1. En la página Crear vídeo interactivo , realice una de las acciones siguientes:
 
@@ -285,7 +291,7 @@ Para añadir interactividad al vídeo:
 
       Por cada segmento de tiempo que agregue, puede asignarle una o más imágenes en miniatura y luego vincular esas miniaturas a páginas de productos de vista rápida para que los clientes las compren o a páginas web para obtener más información.
 
-   * Pulse el botón **[!UICONTROL Play]** para comenzar a reproducir el vídeo. Cuando entre en la vista un producto, servicio o detalle concreto que desee resaltar, pulse **[!UICONTROL Pausa.]** Puntee en  **[!UICONTROL Agregar segmento.]**
+   * Pulse el botón **[!UICONTROL Play]** para comenzar a reproducir el vídeo. Cuando entre en la vista un producto, servicio o detalle concreto que desee resaltar, pulse **[!UICONTROL Pausar]**. Toque **[!UICONTROL Agregar segmento]**.
 
       Continúe reproduciendo y pausando el vídeo en los puntos de la cronología en los que desee agregar un segmento hasta que llegue al final del vídeo.
 
@@ -364,9 +370,9 @@ Para añadir interactividad al vídeo:
 
    * Para eliminar un segmento
 
-      Seleccione el último segmento que se encuentra en la cronología y, en la barra de herramientas, pulse **[!UICONTROL Eliminar segmento.]** Si se seleccionan dos o más segmentos, la función Eliminar segmento se desactiva.
+      Seleccione el último segmento que se encuentra en la cronología y, en la barra de herramientas, pulse **[!UICONTROL Eliminar segmento]**. Si se seleccionan dos o más segmentos, la función Eliminar segmento se desactiva.
 
-      Solo puede eliminar el último segmento. Por ejemplo, si desea eliminar todos los segmentos de la cronología, siempre debe seleccionar el último y, a continuación, pulsar **[!UICONTROL Eliminar segmento.]**
+      Solo puede eliminar el último segmento. Por ejemplo, si desea eliminar todos los segmentos de la cronología, siempre debe seleccionar el último y, a continuación, pulsar **[!UICONTROL Eliminar segmento]**.
 
 
 1. Seleccione un segmento de tiempo al que desee asociar una o más imágenes en miniatura.
@@ -470,7 +476,7 @@ Para añadir interactividad al vídeo:
       En la línea de tiempo, pulse un segmento que desee dividir por la mitad y, a continuación, pulse **[!UICONTROL Dividir segmento]** en la barra de herramientas.
 
       Al seleccionar dos o más segmentos, se deshabilita la función **[!UICONTROL Dividir segmento]**.
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Dividir un segmento seleccionado de diez segundos en dos segmentos de cinco segundos cada uno.
 
@@ -480,10 +486,11 @@ Para añadir interactividad al vídeo:
 
    Si ha creado su propio ajuste preestablecido de visualizador de vídeo interactivo, también lo verá en la lista de ajustes preestablecidos entre los que puede elegir.
 
-   Cuando haya terminado, pulse **[!UICONTROL Guardar.]**
+   Cuando haya terminado, pulse **[!UICONTROL Guardar]**.
 
    >[!NOTE]
-   Al guardar el vídeo interactivo, se guarda automáticamente un archivo asociado de `.vtt`. El archivo de `.vtt`se guarda en la carpeta `_VTT` situada en la raíz de **[!UICONTROL Assets.]** El archivo y la carpeta son necesarios para que el vídeo interactivo se reproduzca correctamente en el sitio web. Como tal, no mueva, edite ni elimine la carpeta `_VTT` ni su contenido.
+   >
+   >Al guardar el vídeo interactivo, se guarda automáticamente un archivo asociado de `.vtt`. El archivo de `.vtt`se guarda en la carpeta `_VTT` situada en la raíz de **[!UICONTROL Assets]**. El archivo y la carpeta son necesarios para que el vídeo interactivo se reproduzca correctamente en el sitio web. Como tal, no mueva, edite ni elimine la carpeta `_VTT` ni su contenido.
 
 1. Publique el vídeo interactivo. La publicación crea el código incrustado o la URL que, finalmente, copiará y pegará en las experiencias del sitio web.
 
@@ -492,7 +499,8 @@ Para añadir interactividad al vídeo:
    Consulte [Publicación de recursos](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   Para publicar un vídeo de ventas con Quickviews, asegúrese de publicar cada uno de los recursos de imagen relacionados del vídeo desde el área de comercio, por separado.
+   >
+   >Para publicar un vídeo de ventas con Quickviews, asegúrese de publicar cada uno de los recursos de imagen relacionados del vídeo desde el área de comercio, por separado.
 
    Después de agregar segmentos de cronología y publicar el vídeo interactivo, estará listo para agregarlo a la página de aterrizaje del sitio web existente. Consulte [Integración de un vídeo interactivo con su sitio web.](#integrating-an-interactive-video-with-your-website)
 
@@ -517,8 +525,10 @@ Si ha añadido interactividad con las vistas rápidas, utilice únicamente el c�
 El código incrustado copiado está configurado para un entorno interactivo, por lo que debe ajustarse automáticamente al área ocupada anteriormente por el vídeo estático.
 
 >[!NOTE]
-En este punto, si ha añadido interactividad solo con páginas web hipervinculadas, ha terminado.
-Sin embargo, si ha añadido interactividad al déclencheur de una vista rápida, las miniaturas adyacentes al vídeo interactivo solo tienen fines de visualización; aún no están integrados con las vistas rápidas existentes. En este caso, ahora debe integrar el vídeo interactivo con las vistas rápidas existentes en su sitio web.
+>
+>En este punto, si ha añadido interactividad solo con páginas web hipervinculadas, ha terminado.
+>
+>Sin embargo, si ha añadido interactividad al déclencheur de una vista rápida, las miniaturas adyacentes al vídeo interactivo solo tienen fines de visualización; aún no están integrados con las vistas rápidas existentes. En este caso, ahora debe integrar el vídeo interactivo con las vistas rápidas existentes en su sitio web.
 
 **Ejemplo**
 
@@ -560,7 +570,8 @@ La integración es tan sencilla como eliminar el código incrustado de vídeo y 
 ## Integración de un vídeo interactivo con una vista rápida existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-Esta tarea solo se aplica si es cliente independiente de AEM Assets.
+>
+>Esta tarea solo se aplica si es cliente independiente de AEM Assets.
 
 El último paso de este proceso es integrar el vídeo interactivo con una implementación de vista rápida existente que se utiliza en el sitio web. No existe una solución para la integración que funcione en todos los casos. Cada implementación de QuickView es única. Como tal, se necesita un enfoque específico que muy probablemente implique la asistencia de una persona de TI de front-end.
 
