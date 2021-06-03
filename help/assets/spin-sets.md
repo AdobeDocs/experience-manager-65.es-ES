@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
-feature: Spin Sets,Asset Management
+feature: Conjuntos de giros,Administración de recursos
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1829'
 ht-degree: 11%
 
 ---
-
 
 # Conjuntos de giros{#spin-sets}
 
@@ -25,7 +24,7 @@ Un conjunto de giros simula el acto real de girar un objeto para examinarlo. Los
 
 Un conjunto de giros simula una experiencia de visualización de 360 grados. Dynamic Media ofrece conjuntos de giros de un solo eje en los que los espectadores pueden rotar un elemento. Además, los usuarios pueden aplicar zoom &quot;de forma libre&quot; y recorrer cualquiera de las vistas con unos pocos clics sencillos del ratón. De este modo, los usuarios pueden examinar un elemento más de cerca desde un punto de vista particular.
 
-Los conjuntos de giros se designan mediante un banner con la palabra **[!UICONTROL SPINSET.]** Además, si se publica el conjunto de giros, se muestra la fecha de publicación, indicada por el  **** Worldicon, junto con la fecha de la última modificación, indicada por el  **** lápiz.
+Los conjuntos de giros se designan mediante un banner con la palabra **[!UICONTROL SPINSET]**. Además, si se publica el conjunto de giros, se muestra la fecha de publicación, indicada por el icono **[!UICONTROL World]**, junto con la fecha de la última modificación, indicada por el icono **[!UICONTROL Lápiz]**.
 
 ![Chlimage_1-](assets/chlimage_1-380.png)
 
@@ -75,7 +74,7 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
    AEM Assets crea llamadas de URL para conjuntos de giros y los activa después de publicar los conjuntos de giros. Puede copiar estas direcciones URL cuando obtiene una vista previa de los recursos. También puede incrustarlos en el sitio web.
 
-   Seleccione el conjunto de giros y, a continuación, en el menú desplegable del carril izquierdo, seleccione **[!UICONTROL Visualizadores.]**
+   Seleccione el conjunto de giros y, a continuación, en el menú desplegable del carril izquierdo, seleccione **[!UICONTROL Visualizadores]**.
 
    Consulte [Vinculación de un conjunto de giros a una página web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incrustación del visualizador de imágenes o vídeos](/help/assets/embed-code.md).
 
@@ -112,9 +111,9 @@ En esta sección se describe cómo crear conjuntos de giros en AEM.
 >
 >Orden en el que aparecen las imágenes en un conjunto de giros. Asegúrese de ordenarlas para que el giro sea una vista suave de 360 grados.
 
-**Creación de conjuntos de giros**
+**Para crear conjuntos de giros:**
 
-1. En Assets, navegue hasta el lugar donde desee crear un conjunto de giros, haga clic en **[!UICONTROL Crear]** y seleccione **[!UICONTROL Conjunto de giros.]** También puede crear el conjunto desde una carpeta que contenga los recursos. Aparece el Editor de conjuntos de giros.
+1. En Assets, navegue hasta el lugar donde desee crear un conjunto de giros, haga clic en **[!UICONTROL Crear]** y seleccione **[!UICONTROL Conjunto de giros]**. También puede crear el conjunto desde una carpeta que contenga los recursos. Aparece el Editor de conjuntos de giros.
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -124,16 +123,16 @@ En esta sección se describe cómo crear conjuntos de giros en AEM.
 
    >[!NOTE]
    >
-   >Al crear el conjunto de giros, puede cambiar la miniatura del conjunto de giros o permitir que AEM seleccione la miniatura automáticamente en función de los recursos del conjunto de giros. Para seleccionar una miniatura, haga clic en **[!UICONTROL Cambiar miniatura]** y seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que AEM generar una del conjunto de giros, seleccione **[!UICONTROL Cambiar a miniatura automática.]**
+   >Al crear el conjunto de giros, puede cambiar la miniatura del conjunto de giros o permitir que AEM seleccione la miniatura automáticamente en función de los recursos del conjunto de giros. Para seleccionar una miniatura, haga clic en **[!UICONTROL Cambiar miniatura]** y seleccione cualquier imagen (puede navegar también a otras carpetas para buscar imágenes). Si ha seleccionado una miniatura y, a continuación, decide que AEM generar una del conjunto de giros, seleccione **[!UICONTROL Cambiar a miniatura automática]**.
 
 1. Realice una de las siguientes acciones:
 
-   * Cerca de la esquina superior izquierda de la página Editor de conjuntos de giros, pulse **[!UICONTROL Agregar recurso.]**
+   * Cerca de la esquina superior izquierda de la página Editor de conjuntos de giros, pulse **[!UICONTROL Agregar recurso]**.
 
-   * Cerca de la mitad de la página Editor de conjuntos de giros, pulse **[!UICONTROL Toque para abrir el Selector de recursos.]**
-   Pulse para seleccionar los recursos que desea incluir en el conjunto de giros. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, pulse **[!UICONTROL Seleccionar.]** cerca de la esquina superior derecha de la página
+   * Cerca de la mitad de la página Editor de conjuntos de giros, pulse **[!UICONTROL Toque para abrir el Selector de recursos]**.
+   Pulse para seleccionar los recursos que desea incluir en el conjunto de giros. Los recursos seleccionados tienen un icono de marca de verificación sobre ellos. Cuando haya terminado, pulse **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha de la página.
 
-   Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista.]**
+   Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
 
    Consulte [Uso de selectores](/help/assets/working-with-selectors.md).
 
@@ -149,11 +148,11 @@ En esta sección se describe cómo crear conjuntos de giros en AEM.
 
 1. (Opcional) Realice cualquiera de las siguientes acciones:
 
-   * Para eliminar una imagen, seleccione la imagen y pulse **[!UICONTROL Eliminar recurso.]**
+   * Para eliminar una imagen, seleccione la imagen y pulse **[!UICONTROL Eliminar recurso]**.
 
    * Para aplicar un ajuste preestablecido, cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Ajuste preestablecido]** y, a continuación, seleccione un ajuste preestablecido para aplicar a todos los recursos a la vez.
 
-1. Haga clic en **[!UICONTROL Guardar.]** El conjunto de giros recién creado aparece en la carpeta en la que lo creó.
+1. Haga clic en **[!UICONTROL Guardar]**. El conjunto de giros recién creado aparece en la carpeta en la que lo creó.
 
 ## Visualización de conjuntos de giros {#viewing-spin-sets}
 
@@ -173,7 +172,7 @@ Puede crear conjuntos de giros en la interfaz de usuario o automáticamente util
 
    ![chlimage_1-157](assets/chlimage_1-385.png)
 
-1. Desde la búsqueda, puede seleccionar **[!UICONTROL Filtros]**, luego expandir **[!UICONTROL Dynamic Media]** y seleccionar **[!UICONTROL Conjuntos.]**
+1. Desde la búsqueda, puede seleccionar **[!UICONTROL Filtros]**, luego expandir **[!UICONTROL Dynamic Media]** y seleccionar **[!UICONTROL Conjuntos]**.
 
    La búsqueda devuelve conjuntos coincidentes creados manualmente en la interfaz de usuario o creados automáticamente mediante ajustes preestablecidos de conjuntos de lotes. Para los conjuntos automatizados, la consulta de búsqueda se realiza utilizando `Starts with` criterios de búsqueda diferentes de AEM búsqueda que se basa en el uso de `Contains` criterios de búsqueda. Definir el filtro como **[!UICONTROL Sets]** es la única manera de buscar conjuntos automatizados.
 
@@ -202,9 +201,9 @@ Puede realizar diversas tareas de edición en los conjuntos de giros, como las s
 
    * Para reordenar las imágenes, arrastre una imagen a una nueva ubicación (seleccione el icono de reordenar para mover elementos).
    * Para ordenar los elementos en orden ascendente o descendente, haga clic en el encabezado de la columna.
-   * Para agregar un recurso o actualizar un recurso existente, haga clic en **[!UICONTROL Agregar recurso.]** Vaya a un recurso, selecciónelo y, a continuación, pulse  **** Seleccionar cerca de la esquina superior derecha.
+   * Para agregar un recurso o actualizar un recurso existente, haga clic en **[!UICONTROL Agregar recurso]**. Vaya a un recurso, selecciónelo y pulse **[!UICONTROL Seleccionar]** cerca de la esquina superior derecha.
 Si elimina la imagen que AEM usa para la miniatura reemplazándola por otra imagen, el recurso original seguirá apareciendo.
-   * Para eliminar un recurso, selecciónelo y toque o haga clic en **[!UICONTROL Eliminar recurso.]**
+   * Para eliminar un recurso, selecciónelo y pulse o haga clic en **[!UICONTROL Eliminar recurso]**.
    * Para aplicar un ajuste preestablecido, pulse o haga clic en el icono Ajuste preestablecido y seleccione un ajuste preestablecido.
    * Para eliminar un conjunto de giros completo, vaya al conjunto de giros, selecciónelo y seleccione **[!UICONTROL Eliminar]**
 
