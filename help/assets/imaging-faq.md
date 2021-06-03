@@ -9,7 +9,7 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Administración de recursos,Representaciones
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: d407162e18f85f4fee0596581f004f8cf4c99458
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 1%
@@ -207,7 +207,7 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
 
       Haga clic en **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 
-      Busque el campo denominado **[!UICONTROL Nombre del servidor publicado.]**
+      Busque el campo denominado **[!UICONTROL Published Server Name]**.
    1. Compruebe que está utilizando la CDN a través de la Adobe y que no se administra con una relación directa.
    1. Compruebe que está utilizando un dominio dedicado como `images.company.com` o `mycompany.scene7.com` y no un dominio genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
@@ -270,7 +270,7 @@ Yes. To disable DPR and network optimization at your company, create a support c
 
 ## ¿Qué &quot;ajuste&quot; está disponible? ¿Hay alguna configuración o comportamiento que se pueda definir? (#tuning-settings)
 
-Actualmente, puede activar o desactivar las imágenes inteligentes. No hay ningún otro ajuste disponible.
+Actualmente, puede activar o desactivar las imágenes inteligentes. No hay otro ajuste disponible.
 
 ## Si Imágenes inteligentes administra la configuración de calidad, ¿hay mínimos y máximos que configurar? Por ejemplo, ¿es posible configurar &quot;no menos de 60&quot; y &quot;no buena que 80 calidad&quot;? (#Minimum-maximum)
 
