@@ -11,8 +11,7 @@ docset: aem65
 feature: Imágenes interactivas
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '4332'
 ht-degree: 2%
@@ -192,23 +191,23 @@ Al crear un ajuste preestablecido personalizado del visualizador de imagen inter
 
 Después de guardar el ajuste preestablecido de visualizador, se activa automáticamente (se activa) en la página de lista Ajustes preestablecidos de visualizador de AEM Assets. Esta funcionalidad significa que está visible en el componente de Medios interactivos y siempre que se vea un recurso. Sin embargo, para *entregar *un banner interactivo con este ajuste preestablecido de visualizador, también debe *publicar *el ajuste preestablecido de visualizador (esto es cierto para los ajustes preestablecidos de visualizador personalizados o integrados).
 
-**Para crear un ajuste preestablecido de visualizador de imagen interactivo**
+**Para crear un ajuste preestablecido de visualizador de imagen interactiva:**
 
-1. En el carril izquierdo, pulse **[!UICONTROL Herramientas > Recursos > Ajustes preestablecidos de visor.]**
-1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Crear.]**
+1. En el carril izquierdo, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Ajustes preestablecidos de visualizador]**.
+1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Crear]**.
 1. En el cuadro de diálogo Nuevo ajuste preestablecido de visualizador, escriba un nombre para describir el ajuste preestablecido de visualizador de banners interactivo.
 
    Este es el título que aparecerá en la página de lista de ajustes preestablecidos de visor una vez guardado.
 
-1. En el menú desplegable Tipo de medio enriquecido, seleccione **[!UICONTROL Imagen interactiva.]**
-1. Toque **[!UICONTROL Crear.]**
+1. En el menú desplegable Tipo de medio enriquecido, seleccione **[!UICONTROL Imagen interactiva]**.
+1. Toque **[!UICONTROL Crear]**.
 1. En la página Editar ajuste preestablecido de visualizador , pulse la pestaña **[!UICONTROL Aspecto]**.
 1. Realice una de las acciones siguientes:
 
    * Para cargar su propia imagen de zona interactiva que desee utilizar en imágenes, pulse el icono Selector de recursos . En la página Seleccionar contenido , vaya a la imagen de zona interactiva que desee usar, selecciónela y, a continuación, pulse el icono Marca de verificación en la esquina superior derecha.
    * Para seleccionar una imagen de zona interactiva predefinida, pulse el icono Galería de puntos interactivos . En la paleta galería de zonas interactivas, pulse la imagen de zona interactiva que desee utilizar.
 
-1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Guardar.]**
+1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]**.
 
    Asegúrese de publicar el nuevo ajuste preestablecido de visor.
 
@@ -220,7 +219,7 @@ Después de guardar el ajuste preestablecido de visualizador, se activa automát
 
 Si ya ha cargado las imágenes que desea usar, avance al siguiente paso, [Añadir zonas interactivas a un titular de imagen](#adding-hotspots-to-an-image-banner).
 
-**Para cargar un titular de imagen**
+**Para cargar un titular de imagen:**
 
 1. Cargue banners de imagen que desee hacer interactivos.
 
@@ -263,32 +262,32 @@ Consulte [(Opcional) Vista previa de imágenes interactivas](#optional-previewin
 1. En la vista Recursos, desplácese hasta el banner de imagen que desee convertir en interactivo.
 1. Realice una de las acciones siguientes:
 
-   * Pase el ratón sobre la imagen y, a continuación, pulse **[!UICONTROL Seleccionar]** (icono de marca de verificación). En la barra de herramientas, pulse **[!UICONTROL Editar.]**
+   * Pase el ratón sobre la imagen y, a continuación, pulse **[!UICONTROL Seleccionar]** (icono de marca de verificación). En la barra de herramientas, pulse **[!UICONTROL Editar]**.
 
-   * Pase el ratón sobre la imagen y, a continuación, pulse **[!UICONTROL Más acciones]** (icono de tres puntos) **[!UICONTROL Editar.]**
+   * Pase el ratón sobre la imagen y, a continuación, pulse **[!UICONTROL Más acciones]** (icono de tres puntos) **[!UICONTROL Editar]**.
 
-   * Pulse la imagen para abrirla en la página Vista de detalles . En la barra de herramientas, pulse **[!UICONTROL Editar.]**
+   * Pulse la imagen para abrirla en la página Vista de detalles . En la barra de herramientas, pulse **[!UICONTROL Editar]**.
 
 1. Cerca de la esquina superior izquierda de la página, pulse **[!UICONTROL Agregar zona interactiva]** (icono con el dedo) para abrir la página de administración de puntos interactivos.
-1. Cerca de la esquina superior izquierda de la página, pulse **[!UICONTROL Zona interactiva.]**
+1. Cerca de la esquina superior izquierda de la página, pulse **[!UICONTROL Zona interactiva]**.
 
-1. Cerca de la esquina superior izquierda de la página Administración de puntos interactivos, pulse **[!UICONTROL Zona interactiva.]**
-1.  En la imagen, pulse una ubicación en la que desee que aparezca el punto interactivo. Si es necesario, arrastre la zona interactiva para ajustar su ubicación.
-1. Agregue más zonas interactivas según sea necesario repitiendo los pasos a y b.
-1. (Opcional) Para eliminar una zona interactiva, selecciónela en la imagen y, a continuación, pulse **[!UICONTROL Eliminar]** (icono de la papelera) en el encabezado **[!UICONTROL Zonas interactivas]**.
+   1. Cerca de la esquina superior izquierda de la página Administración de puntos interactivos, pulse **[!UICONTROL Zona interactiva]**.
+   1.  En la imagen, pulse una ubicación en la que desee que aparezca el punto interactivo. Si es necesario, arrastre la zona interactiva para ajustar su ubicación.
+   1. Agregue más zonas interactivas según sea necesario repitiendo los pasos a y b.
+   1. (Opcional) Para eliminar una zona interactiva, selecciónela en la imagen y, a continuación, pulse **[!UICONTROL Eliminar]** (icono de la papelera) en el encabezado **[!UICONTROL Zonas interactivas]**.
 
 1. En el campo de texto Nombre , escriba el nombre de la zona interactiva. Este nombre también aparece en la lista desplegable Zona interactiva seleccionada .
 1. Realice una de las acciones siguientes:
 
-   * Toque **[!UICONTROL Quickview.]**
+   * Toque **[!UICONTROL Quickview]**.
 
-      * Si es cliente de AEM Sites o de comercio electrónico, toque o haga clic en el icono Selector de productos (lupa) para abrir la página Seleccionar producto . Toque o haga clic en el producto que desee utilizar y, a continuación, pulse **Seleccionar **en la esquina superior derecha de la página para volver a la página de administración de puntos interactivos.
+      * Si es cliente de AEM Sites o de comercio electrónico, toque o haga clic en el icono Selector de productos (lupa) para abrir la página Seleccionar producto . Toque o haga clic en el producto que desee utilizar y, a continuación, pulse **Seleccionar** en la esquina superior derecha de la página para volver a la página de administración de puntos interactivos.
       * Si es *no* cliente de AEM Sites o de comercio electrónico
 
          * Consulte [Identificación de variables de puntos interactivos](#optional-identifying-hotspot-variables); deberá definir estas variables.
          * A continuación, introduzca manualmente el valor de SKU. En el campo de texto Valor de SKU , escriba el SKU del producto (unidad de mantenimiento de stock), que es un identificador único para cada producto o servicio distinto que ofrezca. El valor de SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida, de modo que el sistema sepa que debe asociar la zona interactiva tocada con la vista rápida de un SKU en particular.
-         * (Opcional) Si hay otras variables dentro de la vista rápida que debe utilizar para identificar un producto, pulse **[!UICONTROL Agregar variable genérica.]** En el campo de texto, especifique una variable adicional. Por ejemplo, `category=Mens` es una variable agregada.
-   * Toque **[!UICONTROL Hipervínculo.]**
+         * (Opcional) Si hay otras variables dentro de la vista rápida que debe utilizar para identificar un producto, pulse **[!UICONTROL Agregar variable genérica]**. En el campo de texto, especifique una variable adicional. Por ejemplo, `category=Mens` es una variable agregada.
+   * Toque **[!UICONTROL Hipervínculo]**.
 
       * Si es cliente de AEM Sites, toque o haga clic en el icono (carpeta) Selector de sitio para desplazarse a una dirección URL. Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
       * Si es cliente independiente, en el campo de texto HREF especifique la ruta de URL completa a una página web vinculada.
@@ -297,7 +296,7 @@ Consulte [(Opcional) Vista previa de imágenes interactivas](#optional-previewin
 
    Consulte [Uso de selectores](/help/assets/working-with-selectors.md) para obtener más información.
 
-   * Pulse **[!UICONTROL Fragmento de experiencias.]**
+   * Pulse **[!UICONTROL Fragmento de experiencias]**.
 
       * Si es cliente de AEM Sites, toque o haga clic en el icono de búsqueda (lupa) para abrir la página Fragmento de experiencia . Toque o haga clic en el fragmento de experiencia que desee utilizar y, a continuación, pulse Seleccionar en la esquina superior derecha de la página para volver a la página de administración de puntos interactivos.
 Consulte [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
@@ -332,10 +331,10 @@ Consulte [Incrustación del visualizador de imágenes o vídeos en una página w
 Consulte [Vinculación de URL a la aplicación web](/help/assets/linking-urls-to-yourwebapplication.md). Tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de AEM Sites.
 Consulte [Adición de recursos de Dynamic Media a las páginas.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-**Para previsualizar imágenes interactivas**
+**Para previsualizar imágenes interactivas:**
 
 1. En la vista Recursos, desplácese a la imagen interactiva existente que haya creado y pulse para abrirla en Vista previa.
-1. Cerca de la esquina superior izquierda de la página Vista previa, en la lista desplegable Contenido, pulse **[!UICONTROL Visualizadores.]**
+1. Cerca de la esquina superior izquierda de la página Vista previa, en la lista desplegable Contenido, pulse **[!UICONTROL Visualizadores]**.
 1. En la lista Visualizadores, pulse **[!UICONTROL Shoppable_Banner]** o el nombre del ajuste preestablecido del visualizador de imágenes interactivo que ha creado.
 1. Pulse las zonas interactivas de la imagen para probar las acciones asociadas.
 
