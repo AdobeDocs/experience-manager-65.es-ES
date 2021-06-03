@@ -10,9 +10,8 @@ discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
-feature: Troubleshooting
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Solución de problemas
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
@@ -33,7 +32,7 @@ Asegúrese de que Dynamic Media se ha configurado correctamente haciendo lo sigu
 
    Este paquete de funciones opcional es compatible con FTP o si está migrando recursos a Dynamic Media desde Dynamic Media Classic.
 
-* Vaya a la interfaz de usuario de Cloud Services y confirme que la cuenta aprovisionada aparece en **[!UICONTROL Configuraciones disponibles.]**
+* Vaya a la interfaz de usuario de Cloud Services y confirme que la cuenta aprovisionada aparece en **[!UICONTROL Configuraciones disponibles]**.
 * Asegúrese de que el agente de replicación `Dynamic Media Asset Activation (scene7)` esté habilitado.
 
    Este agente de replicación se encuentra en Agentes en Autor.
