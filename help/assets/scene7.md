@@ -9,14 +9,13 @@ topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 815f577d-4774-4830-8baf-0294bd085b83
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '2866'
+source-wordcount: '2863'
 ht-degree: 26%
 
 ---
-
 
 # Adición de funciones de Dynamic Media Classic a la página {#adding-scene-features-to-your-page}
 
@@ -89,7 +88,7 @@ Añadir un componente de Dynamic Media Classic (Scene7) a una página es lo mism
 
 1. En AEM, abra la página a la que desea añadir el componente Dynamic Media Classic (Scene7).
 
-1. Si no hay componentes de Dynamic Media Classic disponibles, haga clic en el modo **[!UICONTROL Diseño]**, pulse cualquier componente con un borde azul, pulse el icono **[!UICONTROL Principal]** y, a continuación, el icono **[!UICONTROL Configuración]**. En **[!UICONTROL Parsys (Design)]**, seleccione todos los componentes de Dynamic Media Classic para que estén disponibles y haga clic en **[!UICONTROL OK.]**
+1. Si no hay componentes de Dynamic Media Classic disponibles, haga clic en el modo **[!UICONTROL Diseño]**, pulse cualquier componente con un borde azul, pulse el icono **[!UICONTROL Principal]** y, a continuación, el icono **[!UICONTROL Configuración]**. En **[!UICONTROL Parsys (Design)]**, seleccione todos los componentes de Dynamic Media Classic para que estén disponibles y haga clic en **[!UICONTROL OK]**.
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
@@ -212,7 +211,7 @@ Pulse **[!UICONTROL Editar]** para configurar el componente. Puede configurar la
 
 #### Cambio del texto de forma dinámica {#changing-text-dynamically}
 
-Para cambiar el texto de forma dinámica, escriba el nuevo texto en los campos y haga clic en **[!UICONTROL Aceptar.]** En este ejemplo, el **[!UICONTROL Precio]** es ahora $50 y el envío cuesta 99 centavos.
+Para cambiar el texto de forma dinámica, escriba el nuevo texto en los campos y haga clic en **[!UICONTROL Aceptar]**. En este ejemplo, el **[!UICONTROL Precio]** es ahora $50 y el envío cuesta 99 centavos.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -222,7 +221,7 @@ El texto de la imagen cambia. Para restablecer el texto al valor original, pulse
 
 #### Cambio del texto para reflejar un valor de ClientContext {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-Para vincular un campo a un valor de ClientContext, pulse **[!UICONTROL Seleccionar]** para abrir el menú Client-Context, seleccione ClientContext y pulse **[!UICONTROL Aceptar.]** En este ejemplo, el nombre cambia en función de la vinculación de valor de Nombre con el nombre con formato que consta en el perfil.
+Para vincular un campo a un valor de ClientContext, pulse **[!UICONTROL Seleccionar]** para abrir el menú Client-Context, seleccione ClientContext y pulse **[!UICONTROL Aceptar]**. En este ejemplo, el nombre cambia en función de la vinculación de valor de Nombre con el nombre con formato que consta en el perfil.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -232,12 +231,12 @@ El texto refleja el nombre del usuario de la sesión actual. Para restablecer el
 
 #### Convertir la plantilla de imagen de Dynamic Media Classic en un vínculo {#making-the-scene-image-template-a-link}
 
-1. En la página con el componente **[!UICONTROL Plantilla de imagen]** de Dynamic Media Classic, pulse **[!UICONTROL Editar.]**
+1. En la página con el componente **[!UICONTROL Plantilla de imagen]** de Dynamic Media Classic, pulse **[!UICONTROL Editar]**.
 1. En el campo **[!UICONTROL URL]**, introduzca la dirección URL a la que se dirigen los usuarios cuando toca la imagen. En el campo **[!UICONTROL Open in]**, seleccione si desea que se abra el destino (una nueva ventana o la misma ventana).
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. Toque **[!UICONTROL Aceptar.]**
+1. Pulse **[!UICONTROL Aceptar]**.
 
 ### Componente de vídeo {#video-component}
 
@@ -348,7 +347,6 @@ De forma predeterminada, AEM realiza la búsqueda en la carpeta seleccionada y t
 
 
 
-**[!UICONTROL Estado de publicación]** : puede filtrar los recursos en función del estado de publicación:  **** Sin publicar o  **[!UICONTROL publicado.]** Si no selecciona ningún estado de  **[!UICONTROL publicación]**, AEM de forma predeterminada busca todos los estados de publicación.
+**[!UICONTROL Estado de publicación]** : puede filtrar los recursos en función del estado de publicación:  **** Sin publicar o  **[!UICONTROL publicado]**. Si no selecciona ningún **[!UICONTROL Estado de publicación]**, AEM de forma predeterminada busca todos los estados de publicación.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
-
