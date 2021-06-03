@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
-feature: Asset Management
+feature: Administración de activos
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1346'
 ht-degree: 3%
 
 ---
-
 
 # Vista previa de recursos mediante la interfaz de software {#previewing-assets}
 
@@ -39,7 +38,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
 **Para previsualizar recursos mediante la interfaz de software**
 
 1. Desde **[!UICONTROL Adobe Experience Manager]**, en la página **[!UICONTROL Navegación]**, pulse **[!UICONTROL Recursos]** y, a continuación, pulse **[!UICONTROL Archivos]** para acceder a los recursos.
-1. Cerca de la esquina superior derecha de la página, en la lista desplegable **[!UICONTROL Ver]**, pulse **[!UICONTROL Vista de lista.]**
+1. Cerca de la esquina superior derecha de la página, en la lista desplegable **[!UICONTROL Ver]**, pulse **[!UICONTROL Vista de lista]**.
 1. (Opcional) Utilice la columna **[!UICONTROL Type]** para ordenar los recursos por el tipo de vista previa.
 1. En la columna **[!UICONTROL Title]** , haga clic en el nombre del título (no en la imagen en miniatura) del recurso cuya vista previa desea ver.
 1. En función del tipo de recurso en el que haya hecho clic, realice una de las siguientes acciones:
