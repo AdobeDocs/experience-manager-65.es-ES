@@ -10,7 +10,7 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: Business Practitioner, Administrator
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publicación
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 5%
@@ -21,8 +21,8 @@ ht-degree: 5%
 
 Para publicar los recursos de Dynamic Media, seleccione los que ya ha cargado y pulse **[!UICONTROL Publicar]** o **[!UICONTROL Publicación rápida]**. Una vez publicados los recursos de Dynamic Media, quedan disponibles para su inclusión en una página web mediante una URL o incrustando el código en la página.
 
-También puede publicar instantáneamente los recursos que cargue, sin intervención del usuario. Consulte [Configuración de Dynamic Media - modo Scene7.](config-dms7.md)
-O bien, puede publicar selectivamente recursos en Dynamic Media o AEM, mutuamente excluyentes entre sí, mediante  **[!UICONTROL Publicación selectiva]** en el nivel de carpeta. Consulte [Uso de la publicación selectiva en Dynamic Media.](/help/assets/selective-publishing.md)
+También puede publicar instantáneamente los recursos que cargue, sin intervención del usuario. Consulte [Configuración de Dynamic Media - Modo Scene7](config-dms7.md).
+O bien, puede publicar selectivamente recursos en Dynamic Media o AEM, mutuamente excluyentes entre sí, utilizando **[!UICONTROL Publicación selectiva]** en el nivel de carpeta. Consulte [Uso de la publicación selectiva en Dynamic Media](/help/assets/selective-publishing.md).
 
 En la **[!UICONTROL Vista de tarjeta]**, aparece un pequeño icono de globo terráqueo directamente debajo del nombre de un recurso y a la izquierda de la fecha y la hora para indicar que se ha publicado. En la **[!UICONTROL vista de lista]**, una columna **[!UICONTROL Publicada]** indica qué recursos se publican o cuáles no.
 
@@ -45,7 +45,7 @@ Consulte también [Incrustación del visualizador de imágenes o vídeos de Dyna
 
 
 
-Para obtener información detallada sobre la publicación de un conjunto o recurso, consulte [Publicación de recursos.](manage-assets.md)
+Para obtener información detallada sobre la publicación de un conjunto o recurso, consulte [Publicación de recursos](manage-assets.md).
 
 ## Entrega HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
