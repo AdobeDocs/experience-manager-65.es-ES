@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
-feature: Asset Management
+feature: Administración de activos
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 11%
+source-wordcount: '333'
+ht-degree: 12%
 
 ---
-
 
 # Distribución de imágenes adaptables para un sitio interactivo {#delivering-optimized-images-for-a-responsive-site}
 
@@ -24,11 +23,11 @@ Utilice la función de código interactivo cuando desee compartir el código par
 
 Esta función tiene sentido utilizarla si el sitio web se encuentra en un WCM de terceros. Sin embargo, si el sitio web está en AEM, un servidor de imágenes externos procesa la imagen y la suministra a la página web.
 
-Consulte también [Incrustación del visualizador de vídeo en una página web.](embed-code.md)
+Consulte también [Incrustación del visualizador de vídeo en una página web](embed-code.md).
 
-Consulte también [Vinculación de URL a la aplicación web.](linking-urls-to-yourwebapplication.md)
+Consulte también [Vinculación de URL a su aplicación web](linking-urls-to-yourwebapplication.md).
 
-**Para ofrecer imágenes optimizadas para un sitio interactivo**:
+**Para ofrecer imágenes optimizadas para un sitio interactivo:**
 
 1. Vaya a la imagen para la que desee proporcionar código interactivo y, en el menú desplegable, pulse **[!UICONTROL Representaciones]**.
 
