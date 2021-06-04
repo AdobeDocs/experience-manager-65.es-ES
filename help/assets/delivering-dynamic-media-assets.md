@@ -11,7 +11,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Administración de recursos,Representaciones
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 6%
@@ -29,7 +29,7 @@ Con Dynamic Media, tiene varias opciones:
 
    * Incrustar el vídeo o la imagen en el sitio web.
    * Vincule las URL a la aplicación web. Utilice la vinculación cuando desee enviar un reproductor de vídeo como ventana emergente o modal.
-   * Si el sitio es interactivo, puede [entregar imágenes optimizadas.](/help/assets/responsive-site.md)
+   * Si su sitio es interactivo, puede [entregar imágenes optimizadas](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
