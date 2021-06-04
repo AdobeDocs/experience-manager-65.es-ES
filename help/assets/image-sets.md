@@ -11,7 +11,7 @@ docset: aem65
 feature: Conjuntos de imágenes,Administración de recursos
 role: Business Practitioner, Administrator
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '2085'
 ht-degree: 13%
@@ -24,7 +24,7 @@ Los conjuntos de imágenes proporcionan a los usuarios una experiencia de visual
 
 Los conjuntos de imágenes se designan mediante una pancarta con la palabra `IMAGESET`. Además, si se publica el conjunto de imágenes, se muestra la fecha de publicación, indicada por el icono **[!UICONTROL Mundo]**, junto con la fecha de la última modificación, indicada por el icono **[!UICONTROL Lápiz]**.
 
-![chlimage_1-133](assets/chlimage_1-339.png)
+![chlimage_1-135](assets/chlimage_1-339.png)
 
 Dentro del conjunto de imágenes, también puede crear muestras creando un conjunto de imágenes y agregando miniaturas.
 
@@ -40,13 +40,13 @@ Por ejemplo, supongamos que desea presentar imágenes de mayúsculas con diferen
 
 **Para ponerle en marcha rápidamente:**
 
-1. [Cargue las imágenes de origen principales para varias vistas.](#uploading-assets-in-image-sets)
+1. [Cargue las imágenes de origen principales para varias vistas](#uploading-assets-in-image-sets).
 
    Comience por cargar las imágenes de los conjuntos de imágenes. Al elegir imágenes, recuerde que los clientes pueden aplicar zoom a las imágenes en el visor de conjuntos de imágenes. Asegúrese de que las imágenes tengan al menos 2000 píxeles en la dimensión más grande para obtener un detalle de zoom óptimo. Dynamic Media puede procesar imágenes de hasta 25 megapíxeles cada una. Por ejemplo, puede utilizar una imagen de 5000 x 5000 megapíxeles o cualquier otra combinación de tamaño de hasta 25 megapíxeles.
 
    Adobe Experience Manager Assets admite muchos formatos de archivo de imagen, pero se recomiendan las imágenes TIFF, PNG y EPS sin pérdida.
 
-1. [Crear conjuntos de imágenes.](#creating-image-sets)
+1. [Crear conjuntos de imágenes](#creating-image-sets).
 
    En los conjuntos de imágenes, los usuarios hacen clic en las imágenes en miniatura en el visor de conjuntos de imágenes.
 
@@ -59,7 +59,7 @@ Por ejemplo, supongamos que desea presentar imágenes de mayúsculas con diferen
 
    Consulte [Preparación de recursos de conjuntos de imágenes para cargar y cargar los archivos](#uploading-assets-in-image-sets).
 
-   Consulte [Uso de selectores.](/help/assets/working-with-selectors.md)
+   Consulte [Uso de selectores](/help/assets/working-with-selectors.md).
 
 1. Agregue [Ajustes preestablecidos del visualizador de conjuntos de imágenes](/help/assets/managing-viewer-presets.md) según sea necesario.
 
@@ -68,11 +68,11 @@ Por ejemplo, supongamos que desea presentar imágenes de mayúsculas con diferen
    Consulte **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Ajustes preestablecidos de visualizador]** si desea crear o editar ajustes preestablecidos de visualizador.
 
 1. (Opcional) [Visualización de conjuntos de imágenes](/help/assets/image-sets.md#viewing-image-sets) que se crearon mediante ajustes preestablecidos de conjuntos de lotes.
-1. [Vista previa de conjuntos de imágenes.](/help/assets/previewing-assets.md)
+1. [Vista previa de conjuntos de imágenes](/help/assets/previewing-assets.md).
 
    Seleccione el conjunto de imágenes y podrá previsualizarlo. Haga clic en los iconos de miniaturas para poder examinar el conjunto de imágenes en el visor seleccionado. Puede elegir diferentes visores desde el menú **[!UICONTROL Visualizadores]**, disponible en el menú desplegable del carril izquierdo.
 
-1. [Publicar conjuntos de imágenes.](/help/assets/publishing-dynamicmedia-assets.md)
+1. [Publicar conjuntos de imágenes](/help/assets/publishing-dynamicmedia-assets.md).
 
    Al publicar un conjunto de imágenes, se activa la dirección URL y el código incrustado. Además, debe [publicar cualquier ajuste preestablecido de visualizador personalizado](/help/assets/managing-viewer-presets.md) que haya creado. Ya se han publicado los ajustes preestablecidos del visor integrado.
 
@@ -84,7 +84,7 @@ Por ejemplo, supongamos que desea presentar imágenes de mayúsculas con diferen
 
    Consulte [Vinculación de un conjunto de imágenes a una página web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incrustación del visualizador de imágenes o vídeos](/help/assets/embed-code.md).
 
-Para editar los conjuntos de imágenes, consulte [edición de conjuntos de imágenes.](#editing-image-sets) Además, puede ver y editar las  [propiedades](/help/assets/manage-assets.md#editing-properties) del conjunto de imágenes.
+Para editar los conjuntos de imágenes, consulte [edición de conjuntos de imágenes](#editing-image-sets). Además, puede ver y editar [Propiedades del conjunto de imágenes](/help/assets/manage-assets.md#editing-properties).
 
 Si tiene problemas al crear conjuntos, consulte Imágenes y conjuntos en [Solución de problemas de Dynamic Media - modo Scene7](/help/assets/troubleshoot-dms7.md#images-and-sets).
 
@@ -148,7 +148,7 @@ Cuando se añaden recursos al conjunto, estos se añaden automáticamente en ord
 
    Con el Selector de recursos, puede buscar recursos escribiendo una palabra clave y pulsando o haciendo clic en **[!UICONTROL Retorno]**. También puede aplicar filtros para restringir los resultados de búsqueda. Puede filtrar por ruta, colección, tipo de archivo y etiqueta. Seleccione el filtro y, a continuación, pulse el icono **[!UICONTROL Filtro]** en la barra de herramientas. Para cambiar la vista, pulse el icono Ver y seleccione **[!UICONTROL Vista de columna]**, **[!UICONTROL Vista de tarjeta]** o **[!UICONTROL Vista de lista]**.
 
-   Consulte [Uso de selectores.](/help/assets/working-with-selectors.md)
+   Consulte [Uso de selectores](/help/assets/working-with-selectors.md).
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 
