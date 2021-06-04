@@ -11,7 +11,7 @@ docset: aem65
 feature: Combinar conjuntos de medios,Administración de recursos
 role: Business Practitioner, Administrator
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 28%
@@ -38,11 +38,11 @@ Para poner en marcha rápidamente los conjuntos de medios mixtos, siga estos pas
 
    Comience por cargar las imágenes y los vídeos de los conjuntos de medios mixtos. Si es necesario, cree los [conjuntos de imágenes](/help/assets/image-sets.md) y los [conjuntos de giros](/help/assets/spin-sets.md). Dado que los usuarios pueden aplicar zoom a las imágenes en el visualizador de conjuntos de medios mixtos, tenga en cuenta el zoom al elegir las imágenes. Compruebe que las imágenes tengan al menos 2000 píxeles en la dimensión más grande.
 
-1. [Crear conjuntos de medios mixtos.](#creating-mixed-media-sets)
+1. [Crear conjuntos de medios mixtos](#creating-mixed-media-sets).
 
    Para crear un conjunto de medios mixtos, en la página Assets, pulse **[!UICONTROL Crear > Conjunto de medios mixtos]** y, a continuación, asigne un nombre al conjunto, elija los recursos y elija el orden en que aparecen las imágenes.
 
-   Consulte [Uso de selectores.](/help/assets/working-with-selectors.md)
+   Consulte [Uso de selectores](/help/assets/working-with-selectors.md).
 
 1. Configure los [ajustes preestablecidos del visualizador de medios mixtos](/help/assets/managing-viewer-presets.md) según sea necesario.
 
@@ -50,13 +50,13 @@ Para poner en marcha rápidamente los conjuntos de medios mixtos, siga estos pas
 
    Consulte **[!UICONTROL Herramientas > Assets > Ajustes preestablecidos de visor]** para crear o editar ajustes preestablecidos de visor.
 
-   Consulte [Adición y edición de ajustes preestablecidos de visualizador.](/help/assets/managing-viewer-presets.md)
+   Consulte [Adición y edición de ajustes preestablecidos de visualizador](/help/assets/managing-viewer-presets.md).
 
-1. [Vista previa de conjuntos de medios mixtos.](#previewing-mixed-media-sets)
+1. [Vista previa de conjuntos de medios mixtos](#previewing-mixed-media-sets).
 
    Seleccione el conjunto de medios mixtos y podrá previsualizarlo. Haga clic en los iconos de miniaturas para examinar el conjunto de medios mixtos en el visualizador seleccionado. Puede elegir diferentes visores desde el menú **[!UICONTROL Visualizadores]**, disponible en el menú desplegable del carril izquierdo.
 
-1. [Publicar Conjuntos De Medios Mixtos.](#publishing-mixed-media-sets)
+1. [Publicar conjuntos de medios mixtos](#publishing-mixed-media-sets).
 
    Al publicar un conjunto de medios mixtos, se activa la dirección URL y la cadena de incrustación. Además, debe [publicar el ajuste preestablecido de visor](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -86,7 +86,7 @@ Puede agregar imágenes, conjuntos de imágenes, conjuntos de giros y vídeos al
 
 Cuando se añaden recursos al conjunto, estos se añaden automáticamente en orden alfanumérico. Puede volver a ordenar u ordenar manualmente los recursos una vez añadidos.
 
-**Para crear un conjunto de medios mixtos**
+**Para crear un conjunto de medios mixtos:**
 
 1. En Assets, desplácese hasta donde desee crear un conjunto de medios mixtos, haga clic en **[!UICONTROL Crear]** y seleccione **[!UICONTROL Conjunto de medios mixtos]**. También puede crear el conjunto desde una carpeta que contenga los recursos. Se muestra el Editor de conjuntos de medios mixtos.
 
@@ -132,7 +132,7 @@ Puede realizar diversas tareas de edición en los recursos de los conjuntos de m
 * Aplicar ajustes preestablecidos de visor.
 * Cambie la miniatura predeterminada.
 
-**Para editar un conjunto de medios mixtos**
+**Para editar un conjunto de medios mixtos:**
 
 1. Realice una de las siguientes acciones:
 
