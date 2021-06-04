@@ -11,7 +11,7 @@ docset: aem65
 feature: Conjuntos de giros,Administración de recursos
 role: Business Practitioner, Administrator
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 11%
@@ -36,11 +36,11 @@ Los conjuntos de giros se designan mediante un banner con la palabra **[!UICONTR
 
 Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
-1. [Cargue las imágenes para varias vistas.](#uploading-assets-for-spin-sets)
+1. [Cargue las imágenes para varias vistas](#uploading-assets-for-spin-sets).
 
    Como mínimo, necesitará entre 8 y 12 tomas de un elemento para un conjunto de giros unidimensional y entre 16 y 24 para un conjunto de giros bidimensional. Las tomas deben realizarse a intervalos regulares para dar la impresión de que el objeto está girando y siendo volteado. Por ejemplo, si un conjunto de giros unidimensional incluye 12 tomas, gire el elemento 30 grados (360/12) para cada toma.
 
-1. [Crear conjuntos de giros.](#creating-spin-sets)
+1. [Crear conjuntos de giros](#creating-spin-sets).
 
    Para crear un conjunto de giros, seleccione **[!UICONTROL Crear > Conjunto de giros]** y asigne un nombre al conjunto, elija los recursos y elija el orden en que aparecen las imágenes.
 
@@ -56,17 +56,17 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
    Consulte **[!UICONTROL Herramientas > Assets > Ajustes preestablecidos de visor]** para crear o editar ajustes preestablecidos de visor.
 
-   Consulte [Adición y edición de ajustes preestablecidos de visualizador.](/help/assets/managing-viewer-presets.md)
+   Consulte [Adición y edición de ajustes preestablecidos de visualizador](/help/assets/managing-viewer-presets.md).
 
 1. [Visualización de conjuntos de giros](#viewing-spin-sets).
 
    Puede ver y acceder a los conjuntos creados mediante ajustes preestablecidos de conjuntos de lotes de tres formas diferentes. (Los conjuntos creados con ajustes preestablecidos de conjuntos de lotes no *no* aparecen en la interfaz de usuario).
 
-1. [Vista previa de conjuntos de giros.](/help/assets/previewing-assets.md)
+1. [Vista previa de conjuntos de giros](/help/assets/previewing-assets.md).
 
    Seleccione el conjunto de giros y podrá previsualizarlo. Rotar el conjunto de giros. Puede elegir diferentes visores desde el menú **[!UICONTROL Visualizadores]**, disponible en el menú desplegable del carril izquierdo.
 
-1. [Publicar conjuntos de giros.](/help/assets/publishing-dynamicmedia-assets.md)
+1. [Publicar conjuntos de giros](/help/assets/publishing-dynamicmedia-assets.md).
 
    Al publicar un conjunto de giros, se activa la dirección URL y la cadena Incrustar. Además, debe [publicar el ajuste preestablecido de visor](/help/assets/managing-viewer-presets.md).
 
@@ -142,7 +142,7 @@ En esta sección se describe cómo crear conjuntos de giros en AEM.
 
    Si es necesario, arrastre el icono Reordenar de un recurso a la derecha del nombre del archivo del recurso para reordenar las imágenes hacia arriba o hacia abajo en la lista de conjunto.
 
-   ![Reordenar el fotograma 11 del conjunto de giros arrastrándolo a una nueva ubicación.](assets/6_5_spinset-reorderassets.png)
+   ![Reordenar el fotograma 11 del conjunto de giros arrastrándolo a una nueva ubicación](assets/6_5_spinset-reorderassets.png).
 
    Reordenar el fotograma 11 del conjunto de giros arrastrándolo a una nueva ubicación.
 
@@ -162,7 +162,7 @@ Puede crear conjuntos de giros en la interfaz de usuario o automáticamente util
 >
 >También puede ver los conjuntos mediante la interfaz de usuario que se describe en [Edición de conjuntos de giros](#editing-spin-sets).
 
-**Visualización de conjuntos de giros**
+**Para ver los conjuntos de giros:**
 
 1. Al abrir las propiedades de un recurso individual. Las propiedades indican los conjuntos de miembros del recurso seleccionado (en **[!UICONTROL Member of Sets]**). Haga clic en el nombre del conjunto para ver todo el conjunto.
 
@@ -188,7 +188,7 @@ Puede realizar diversas tareas de edición en los conjuntos de giros, como las s
 * Aplicar ajustes preestablecidos de visor.
 * Elimine el conjunto de giros.
 
-**Para editar un conjunto de giros**
+**Para editar un conjunto de giros:**
 
 1. Realice una de las siguientes acciones:
 
