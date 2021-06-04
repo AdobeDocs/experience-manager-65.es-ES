@@ -8,7 +8,7 @@ content-type: reference
 feature: Caché de CDN,Dynamic Media Classic
 role: Business Practitioner, Administrator
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '725'
 ht-degree: 16%
@@ -25,7 +25,7 @@ La CDN (red de distribución de contenido) almacena en caché los recursos de Dy
 
 >[!IMPORTANT]
 >
->Los siguientes pasos se aplican únicamente a Dynamic Media en AEM 6.5, Service Pack 5 (AEM 6.5.5) o anterior.<br>Si utiliza Dynamic Media en AEM 6.5, Service Pack 6 (AEM 6.5.6) o posterior, siga los pasos que se encuentran en  [Invalidación de la caché de CDN mediante Dynamic Media.](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>Los siguientes pasos se aplican únicamente a Dynamic Media en AEM 6.5, Service Pack 5 (AEM 6.5.5) o anterior.<br>Si utiliza Dynamic Media en AEM 6.5, Service Pack 6 (AEM 6.5.6) o posterior, siga los pasos que se encuentran en  [Invalidación de la caché de CDN mediante Dynamic Media](/help/assets/invalidate-cdn-cache-dynamic-media.md).
 
 Consulte también [Información general de caché en Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
