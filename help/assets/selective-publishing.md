@@ -9,7 +9,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publicación
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '2935'
 ht-degree: 4%
@@ -38,10 +38,10 @@ Independientemente de si confía en el valor **[!UICONTROL Publicar recursos]** 
 
 Después de configurar la publicación selectiva en una carpeta, puede realizar cualquiera de las siguientes acciones:
 
-* [Publicar recursos de forma selectiva en Dynamic Media o AEM mediante Administrar publicación.](#selective-publish-manage-publication)
-* [Cancelar la publicación de forma selectiva desde Dynamic Media o AEM mediante Administrar publicación.](#selective-unpublish-manage-publication)
-* [Publicación de recursos en Dynamic Media o AEM mediante Publicación rápida.](#quick-publish-aem-dm)
-* [Publicar o cancelar la publicación de forma selectiva mediante resultados de búsqueda.](#selective-publish-unpublish-search-results)
+* [Publicar recursos de forma selectiva en Dynamic Media o AEM mediante Administrar publicación](#selective-publish-manage-publication).
+* [Cancelar la publicación de forma selectiva desde Dynamic Media o AEM mediante Administrar publicación](#selective-unpublish-manage-publication).
+* [Publicación de recursos en Dynamic Media o AEM mediante Publicación rápida](#quick-publish-aem-dm).
+* [Publicar o cancelar la publicación de forma selectiva mediante los resultados](#selective-publish-unpublish-search-results) de búsqueda.
 
 **Para configurar la publicación selectiva en el nivel de carpeta en Dynamic Media**
 
@@ -186,7 +186,7 @@ Puede utilizar **[!UICONTROL Publicación rápida]** para casos sencillos de act
 
 Los resultados de búsqueda pueden mostrar recursos de todas las carpetas de recursos que tengan diferentes configuraciones de publicación de Dynamic Media. Si ha seleccionado uno o varios recursos de los resultados de búsqueda y los recursos tienen diferentes configuraciones del modo de publicación de Dynamic Media, puede almacenar en déclencheur **[!UICONTROL Administrar publicación]** desde la barra de herramientas para publicar o cancelar la publicación.
 
-Consulte también [Buscar recursos en AEM.](/help/assets/search-assets.md)
+Consulte también [Buscar recursos en AEM](/help/assets/search-assets.md).
 
 **Para publicar o cancelar la publicación de recursos de forma selectiva mediante los resultados de búsqueda**
 
