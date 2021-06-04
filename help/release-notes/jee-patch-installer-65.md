@@ -4,14 +4,13 @@ description: Instalador de parches JEE de AEM Forms
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6b17472b-9226-4319-b305-4dba862d21af
+source-git-commit: ecac6269b5e12b847136f4af534016bc7b88bb2b
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 28%
+source-wordcount: '483'
+ht-degree: 29%
 
 ---
-
 
 # Instalador de parches JEE de AEM Forms {#aem-forms-jee-patch-installer}
 
@@ -53,10 +52,12 @@ LinuxVaya al directorio apropiado y, desde el símbolo del sistema, escriba
 1. Lea la información del resumen previo a la instalación y haga clic en **[!UICONTROL Instalar]**.
 1. Una vez finalizada la instalación, haga clic en **[!UICONTROL Siguiente]** para aplicar las actualizaciones de correcciones rápidas a los archivos instalados.
 
-1. Anule la selección de la opción Iniciar administrador de configuración antes de hacer clic en Listo. Antes de ejecutar el administrador de configuración utilizando **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, vaya al directorio *&lt;AEMForms_Install_Dir>\configurationManager\bin* y actualice **axis.jar** al eje **1.4.1.1.1 jar** en los siguientes archivos:
+1. Anule la selección de la opción Iniciar administrador de configuración antes de hacer clic en Listo. Antes de ejecutar el administrador de configuración utilizando **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, vaya al directorio *&lt;AEMForms_Install_Dir>\configurationManager\bin* y actualice los archivos `ConfigurationManager.lax` y `ConfigurationManager_IPv6.lax` con las siguientes operaciones de cambio de nombre:
 
-   * ConfigurationManager.lax
-   * ConfigurationManager_IPv6.lax
+   * `axis.jar` hasta `axis-1.4.1.1.jar`
+   * `serializer-2.7.1.jar` hasta `serializer-2.7.2.jar`
+   * `xalan-2.7.1.jar` hasta `xalan-2.7.2.jar`
+   * `xercesImpl-2.9.1.jar` hasta `xercesImpl-2.12.0.jar`
 
 1. La casilla de verificación Iniciar Administrador de configuración está seleccionada de forma predeterminada. Haga clic en **[!UICONTROL Listo]** para ejecutar el Administrador de configuración.
 
