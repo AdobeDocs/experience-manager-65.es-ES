@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Ajustes preestablecidos de visor
 role: Business Practitioner, Administrator
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
-source-wordcount: '4338'
+source-wordcount: '4339'
 ht-degree: 14%
 
 ---
@@ -61,7 +61,7 @@ Consulte [Biblioteca de imágenes interactivas](https://experienceleague.adobe.c
 >[!NOTE]
 >
 >Tenga en cuenta que debe publicar todos los visores integrados antes de usarlos por primera vez.
->Consulte [Ajustes preestablecidos del visualizador de publicaciones.](#publishing-viewer-presets)
+>Consulte [Ajustes preestablecidos del visualizador de publicaciones].(#publishing-viewer-presets)
 
 ### Compatibilidad del sistema con ajustes preestablecidos de visor {#viewer-preset-system-compatibility}
 
