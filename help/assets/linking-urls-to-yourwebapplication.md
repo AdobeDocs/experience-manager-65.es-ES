@@ -10,7 +10,7 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuración
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 11%
@@ -21,7 +21,7 @@ ht-degree: 11%
 
 Sus sitios web y aplicaciones acceden a los servicios de Dynamic Media mediante llamadas URL. Después de publicar un recurso, Dynamic Media activa una cadena URL que hace referencia al recurso. Puede pegar estas direcciones URL en un navegador web para realizar pruebas.
 
-El vínculo a las direcciones URL solo se realiza si está *no* usando AEM como WCM. La vinculación frente a la incrustación se utiliza cuando se desea enviar un reproductor de vídeo como ventana emergente o modal. Si utiliza AEM como WCM, [los recursos se añaden directamente en la página.](adding-dynamic-media-assets-to-pages.md)
+El vínculo a las direcciones URL solo se realiza si está *no* usando AEM como WCM. La vinculación frente a la incrustación se utiliza cuando se desea enviar un reproductor de vídeo como ventana emergente o modal. Si utiliza AEM como WCM, [los recursos se añaden directamente en la página](adding-dynamic-media-assets-to-pages.md).
 
 Para colocar estas cadenas URL en sus páginas web y aplicaciones, cópielas desde Dynamic Media.
 
@@ -29,13 +29,13 @@ Para colocar estas cadenas URL en sus páginas web y aplicaciones, cópielas des
 >
 >Las cadenas URL solo están disponibles para representaciones dinámicas de recursos. Actualmente no están disponibles para recursos estáticos que residen en DAM y no en el servidor de Dynamic Media. El botón URL no aparece en las representaciones estáticas.
 
-Consulte también [Incrustación del visualizador de imágenes o vídeos en una página web.](embed-code.md)
+Consulte también [Incrustación del visualizador de imágenes o vídeos en una página web](embed-code.md).
 
-Consulte también [Vinculación de URL de YouTube a la aplicación web.](video.md)
+Consulte también [Vinculación de URL de YouTube a la aplicación web](video.md).
 
-Consulte también [Entrega de imágenes optimizadas para un sitio interactivo.](responsive-site.md)
+Consulte también [Entrega de imágenes optimizadas para un sitio interactivo](responsive-site.md).
 
-Consulte también [Carga de recursos.](manage-assets.md#uploading-assets)
+Consulte también [Carga de recursos](manage-assets.md#uploading-assets).
 
 ## Obtención de una URL para un recurso {#obtaining-a-url-for-an-asset}
 
@@ -59,7 +59,7 @@ Existen varias formas de obtener una cadena de URL. Sin embargo, los pasos sigui
 
    Recuerde que las direcciones URL solo están disponibles para copiarse *después* de *publicar* los recursos por primera vez. Además, también se debe publicar el ajuste preestablecido de visualizador o de imagen.
 
-   Consulte [Publicación de recursos.](publishing-dynamicmedia-assets.md)
+   Consulte [Publicación de recursos](publishing-dynamicmedia-assets.md).
 
    Consulte [Ajustes preestablecidos del visualizador de publicaciones](managing-viewer-presets.md#publishing-viewer-presets).
 
