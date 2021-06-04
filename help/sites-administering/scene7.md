@@ -5,14 +5,13 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-translation-type: tm+mt
-source-git-commit: d700510efb340598a7931647164e22d574884569
+exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '5517'
 ht-degree: 1%
 
 ---
-
 
 # Integración con Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
@@ -54,7 +53,7 @@ Cuando trabaje con recursos en esta solución, realice una de las siguientes acc
 * Cargue recursos directamente en Dynamic Media Classic y, a continuación, acceda a través del explorador de contenido **Dynamic Media Classic** para la creación de páginas o
 * Cargue en Recursos Experience Manager y, a continuación, active la publicación automática en Dynamic Media Classic; puede acceder a través del explorador de contenido **Assets** para la creación de páginas
 
-Los componentes que utiliza para esta integración se encuentran en el área del componente **Dynamic Media Classic** en [modo Diseño.](/help/sites-authoring/author-environment-tools.md#page-modes)
+Los componentes que utiliza para esta integración se encuentran en el área del componente **Dynamic Media Classic** en [Design mode](/help/sites-authoring/author-environment-tools.md#page-modes).
 
 ### Experience Manager Dynamic Media {#aem-dynamic-media}
 
@@ -424,8 +423,8 @@ Sin embargo, si no desea que los recursos insertados en Dynamic Media Classic se
 
 Para insertar recursos en Dynamic Media Classic sin publicarlos, debe configurar lo siguiente:
 
-1. [Utilice el Admin Console para crear un caso de asistencia.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) En su caso de asistencia, solicite la activación de la vista previa segura para su cuenta de Dynamic Media Classic.
-1. Siga las indicaciones para [configurar la vista previa segura para su cuenta de Dynamic Media Classic.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. [Utilice el Admin Console para crear un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de asistencia. En su caso de asistencia, solicite la activación de la vista previa segura para su cuenta de Dynamic Media Classic.
+1. Siga las indicaciones para [configurar la vista previa segura para su cuenta de Dynamic Media Classic](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html).
 
 Estos pasos son los mismos que seguiría para crear cualquier configuración de prueba segura en Dynamic Media Classic.
 
@@ -623,4 +622,3 @@ Si tiene problemas para integrar Experience Manager con Dynamic Media Classic, c
 >La importación de recursos desde una cuenta de empresa de Dynamic Media Classic existente puede tardar bastante en mostrarse en Experience Manager. Asegúrese de designar una carpeta en Dynamic Media Classic que no tenga demasiados recursos. Por ejemplo, la carpeta raíz suele tener demasiados recursos.
 >
 >Si desea probar la unidad de integración, haga que la carpeta raíz apunte solo a una subcarpeta, en lugar de a toda la empresa.
-
