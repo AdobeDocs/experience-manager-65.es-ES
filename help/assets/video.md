@@ -11,9 +11,9 @@ docset: aem65
 feature: Administración de activos
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
 workflow-type: tm+mt
-source-wordcount: '11655'
+source-wordcount: '11657'
 ht-degree: 5%
 
 ---
@@ -120,7 +120,7 @@ recursos digitalesObtenga más información sobre las  [prácticas recomendadas 
 
 ## Uso de vídeo en Dynamic Media {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para su transmisión en varias pantallas, incluidos equipos de escritorio, iOS, Android™, Blackberry y dispositivos móviles Windows. Un conjunto de vídeos adaptables agrupa versiones del mismo vídeo codificadas a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
+Video in Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para su transmisión en varias pantallas, incluidos equipos de escritorio, iOS, Android™, BlackBerry® y dispositivos móviles Windows. Un conjunto de vídeos adaptables agrupa versiones del mismo vídeo codificadas a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
 
 Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas tasas de bits de vídeo del conjunto de vídeos adaptables. El vídeo se transmite a escritorios, dispositivos móviles o tabletas.
 
@@ -145,11 +145,11 @@ Para administrar conjuntos de vídeos adaptables y de vídeo único, se admite l
 
 * Subtítulos de vídeo en todos los visores de vídeo HTML5.
 * Organice, examine y busque vídeos con compatibilidad para metadatos completa para una administración eficiente de los recursos de vídeo.
-* Envíe conjuntos de vídeos adaptables a la web y a los escritorios, así como a los dispositivos móviles, incluidos el iPhone, el iPad, Android, Blackberry y el teléfono Windows.
+* Distribuya conjuntos de vídeos adaptables a la web y a los escritorios, así como a los dispositivos móviles, incluidos iPhone, iPad, Android™, BlackBerry® y Windows Phone.
 
 El flujo de vídeo adaptable es compatible con varias plataformas iOS. Consulte [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
-Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. Puede encontrar los dispositivos Blackberry compatibles con este formato de vídeo en el siguiente enlace: [Formatos de vídeo compatibles con Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. Puede encontrar los dispositivos BlackBerry® compatibles con este formato de vídeo en el siguiente enlace: [Formatos de vídeo compatibles con BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 Puede encontrar los dispositivos de Windows compatibles con este formato de vídeo en el siguiente enlace: [Códecs de medios compatibles con Windows Phone 8](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))
 
@@ -239,17 +239,17 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   </tr>
   <tr>
    <td>Móvil</td>
-   <td>Chrome (Android 6 o anterior)</td>
+   <td>Chrome (Android™ 6 o anterior)</td>
    <td>Descarga progresiva.</td>
   </tr>
   <tr>
    <td>Móvil</td>
-   <td>Chrome (Android 7 o posterior)</td>
+   <td>Chrome (Android™ 7 o posterior)</td>
    <td>HLS</td>
   </tr>
   <tr>
    <td>Móvil</td>
-   <td>Android (navegador predeterminado)</td>
+   <td>Android™ (navegador predeterminado)</td>
    <td>Descarga progresiva.</td>
   </tr>
   <tr>
@@ -264,7 +264,7 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   </tr>
   <tr>
    <td>Móvil</td>
-   <td>BlackBerry</td>
+   <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
  </tbody>
@@ -602,7 +602,7 @@ A partir de Experience Manager 6.4, se introdujo un nuevo método de interfaz de
 1. En la página Crear configuración de YouTube, en Configuración de plataforma de Google Cloud, en el campo **[!UICONTROL Nombre de aplicación]**, introduzca el ID de proyecto de Google.
 
    Ha especificado el ID del proyecto al configurar Google Cloud por primera vez.
-Deje abierta la página Crear configuración de YouTube . regresarás a él en un momento.
+Deje abierta la página Crear configuración de YouTube . en un momento, volverás a eso.
 
    ![6_5_youtubepublish-createyoutubfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -837,7 +837,7 @@ Cuando cancela la publicación de un recurso de vídeo en Experience Manager, el
 
 ## Monitorización de la codificación de vídeo y del progreso de publicación de YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-Cuando se carga un nuevo vídeo en una carpeta que tiene codificación de vídeo aplicada o se publica el vídeo en YouTube, se puede supervisar el progreso de la codificación de vídeo o publicación en YouTube (o su fallo). El progreso real de publicación de YouTube solo está disponible mediante los registros. Sin embargo, su fracaso o éxito se enumera de maneras adicionales descritas en el siguiente procedimiento. Además, recibe notificaciones por correo electrónico cuando se completa o interrumpe un flujo de trabajo de publicación o una codificación de vídeo de YouTube.
+Cuando se carga un nuevo vídeo en una carpeta que tiene aplicada una codificación de vídeo, o se publica el vídeo en YouTube, se puede supervisar el progreso (o el error) de la codificación de vídeo o publicación en YouTube. El progreso real de publicación de YouTube solo está disponible mediante los registros. Sin embargo, su fracaso o éxito se enumera de maneras adicionales descritas en el siguiente procedimiento. Además, recibe notificaciones por correo electrónico cuando se completa o interrumpe un flujo de trabajo de publicación o una codificación de vídeo de YouTube.
 
 ### Monitorización del progreso {#monitoring-progress}
 
@@ -1038,7 +1038,7 @@ Utilice la [Guía de referencia de visores de Dynamic Media de Adobe](https://ex
 
 1. Cree el componente TrackingManager haciendo lo siguiente:
 
-   * Después de llamar a `s7sdk.Util.init();` cree una instancia de TrackingManager para rastrear eventos agregando lo siguiente:
+   * Después de llamar a `s7sdk.Util.init();`, cree una instancia de TrackingManager para rastrear eventos agregando lo siguiente:
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
@@ -1211,7 +1211,7 @@ Consulte [WebVTT: El formato de seguimiento de texto de vídeo web](https://w3c.
 
 Una miniatura de vídeo es una versión reducida de un fotograma de vídeo o un recurso de imagen que representa el vídeo al cliente. La miniatura sirve para animar a un cliente a hacer clic en el vídeo.
 
-Todos los vídeos del Experience Manager deben tener una miniatura asociada; no puede eliminar una miniatura sin reemplazarla. De forma predeterminada, cuando se carga un vídeo en el Experience Manager, el primer fotograma se utiliza como miniatura. Sin embargo, puede personalizar la miniatura con fines de promoción de la marca o búsqueda visual, por ejemplo. Al personalizar una miniatura de vídeo, puede reproducir el vídeo y pausar el fotograma que desee usar, o bien seleccionar un recurso de imagen que ya haya cargado y *publicado* en el administrador de recursos digitales.
+Todos los vídeos del Experience Manager deben tener una miniatura asociada; no puede eliminar una miniatura sin reemplazarla. De forma predeterminada, cuando se carga un vídeo en el Experience Manager, el primer fotograma se utiliza como miniatura. Sin embargo, puede personalizar la miniatura con fines de promoción de la marca o búsqueda visual, por ejemplo. Al personalizar una miniatura de vídeo, puede reproducir el vídeo y pausar el fotograma que desee utilizar. O bien, puede seleccionar un recurso de imagen que ya haya cargado y *publicado* en su administrador de recursos digitales.
 
 Una imagen en miniatura de vídeo personalizada que seleccione en un vídeo no se extrae ni se guarda en DAM como un recurso independiente y distinto. Sin embargo, la miniatura de vídeo personalizada que seleccione en un recurso de imagen existente se guarda en el JCR. La ruta del recurso seleccionado se almacena en el nodo del recurso de vídeo como en la siguiente ruta de acceso de ejemplo:
 
