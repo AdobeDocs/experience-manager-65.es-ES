@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] Notas de la versión anterior de Service
 description: Notas de la versión de los Service Packs [!DNL Adobe Experience Manager] 6.5.
 contentOwner: AK
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: d06e60baac692c92358244944226b77d5dad4022
+source-git-commit: 29e045ef3080866a94e0925bc0c176a91092c729
 workflow-type: tm+mt
-source-wordcount: '20321'
+source-wordcount: '20313'
 ht-degree: 15%
 
 ---
@@ -590,9 +590,9 @@ Las funciones y mejoras clave introducidas en Adobe Experience Manager 6.5.6.0 i
 
 * [Almacenamiento en caché mejorado para páginas](../../help/forms/using/configure-adaptive-forms-cache.md) de formularios adaptables traducidas.
 
-* Compatibilidad con [Etiquetas de texto de Adobe Sign en el servicio de Automated forms conversion](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
+* Compatibilidad con [Etiquetas de texto de Adobe Sign en el servicio de Automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
 
-* Compatibilidad con [convertir formularios de color en formularios adaptables](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) mediante [!DNL Automated Forms Conversion service].
+* Compatibilidad con [convertir formularios de color en formularios adaptables](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) mediante [!DNL Automated Forms Conversion service].
 
 * Compatibilidad con los protocolos SMB 2 y SMB 3.
 
@@ -1001,7 +1001,7 @@ La siguiente es la lista de correcciones que se proporcionan en la versión [!DN
 
 >[!IMPORTANT]
 >
->Se recomienda a los usuarios de Windows de [!DNL Experience Manager desktop app] que actualicen a la [aplicación de escritorio versión 2.0.3.2](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html#whats-new-added) para acceder al repositorio DAM en la instancia [!DNL Adobe Experience Manager 6.5.5.0]. Como pueden encontrar problemas al acceder al repositorio de DAM en la instancia [!DNL Adobe Experience Manager] 6.5.5.0 usando la aplicación de escritorio versión 2.0.2.
+>Se recomienda a los usuarios de Windows de [!DNL Experience Manager desktop app] que actualicen a la [aplicación de escritorio versión 2.0.3.2](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html#what-is-new) para acceder al repositorio DAM en la instancia [!DNL Adobe Experience Manager 6.5.5.0]. Como pueden encontrar problemas al acceder al repositorio de DAM en la instancia [!DNL Adobe Experience Manager] 6.5.5.0 usando la aplicación de escritorio versión 2.0.2.
 
 **Mejoras de accesibilidad en Recursos Experience Manager**
 
@@ -2183,7 +2183,7 @@ Los aspectos destacados de [!DNL Experience Manager Forms] 6.5.1.0 son:
 
 #### Recursos - Incluido
 
-* Se habilitó la compatibilidad con Multi-Site Manager para [!DNL Experience Manager Assets]. Para obtener más información, consulte [Reutilización de recursos con MSM para recursos de Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/reuse-assets-using-msm.html). NPR-29199: revisión para CQ-4259922
+* Se habilitó la compatibilidad con Multi-Site Manager para [!DNL Experience Manager Assets]. Para obtener más información, consulte [Reutilización de recursos con MSM para recursos de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html). NPR-29199: revisión para CQ-4259922
 
 #### Sitios: incluidos
 
