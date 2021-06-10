@@ -4,9 +4,9 @@ description: Notas de versión específicas de [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 7d3c8d9266bdec3f75211cfa0636217fd8b054ca
+source-git-commit: 2e01bb0b16728a8073e5de47deb88de69486d408
 workflow-type: tm+mt
-source-wordcount: '3874'
+source-wordcount: '3877'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ Las funciones y mejoras clave introducidas en [!DNL Adobe Experience Manager] 6.
 
 * Compatibilidad para que un nuevo usuario actualice el token de acceso mediante un token de actualización para el servicio de configuración de correo.
 
-* Compatibilidad con el mecanismo [!DNL SMTP XOAUTH2] para el servicio de configuración de buzones.
+* [Compatibilidad con el mecanismo SMTP XOAUTH2](/help/sites-administering/notification.md#setting-up-oauth)  para el servicio de configuración de correo.
 
 * Compatibilidad con las versiones [!DNL MongoDB] 4.2 y 4.4.
 
