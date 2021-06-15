@@ -11,9 +11,9 @@ docset: aem65
 feature: Banner de carrusel
 role: Business Practitioner, Administrator
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
 workflow-type: tm+mt
-source-wordcount: '4734'
+source-wordcount: '4740'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Los banners de carrusel permiten a los especialistas en marketing impulsar la co
 
 La creación y modificación del contenido de los titulares promocionales puede llevar mucho tiempo, lo que limita su capacidad de publicar rápidamente contenido nuevo o de dirigirlo mejor. Los banners de carrusel permiten crear o modificar rápidamente banners giratorios. Puede añadir interactividad, como puntos interactivos vinculados a los detalles del producto o recursos relacionados, y entregarlos a cualquier pantalla, lo que le permite llevar el nuevo contenido promocional al mercado más rápido.
 
-Los banners de carrusel se designan mediante un banner con la palabra **[!UICONTROL CAROUSELSET]**:
+Los banners de carrusel se designan mediante un banner con la palabra **[!UICONTROL CAROUSELSET]**
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -48,7 +48,7 @@ Reproduzca un tutorial en [cómo se crean los banners de carrusel](https://s7d5.
 
 ## Inicio rápido: Banner de carrusel {#quick-start-carousel-banners}
 
-Para ponerle en marcha rápidamente:
+Para ponerte en marcha rápidamente con los titulares de carrusel:
 
 1. [Identifique las variables de zona interactiva y mapa de imagen](#identifying-hotspot-and-image-map-variables)  (solo para clientes que utilicen Recursos Experience Manager + Dynamic Media)
 
@@ -56,7 +56,7 @@ Para ponerle en marcha rápidamente:
 
    >[!NOTE]
    >
-   >Si es Experience Manager de Sitios o cliente de comercio electrónico, puede utilizar la función integrada para navegar a páginas de productos y buscar los SKU existentes en el catálogo de productos. No es necesario introducir manualmente variables de zona interactiva o mapa de imagen. Consulte la información sobre la [configuración de eCommerce](/help/commerce/cif-classic/administering/generic.md).
+   >Si es Experience Manager de Sitios o cliente de comercio electrónico, puede utilizar la función integrada para navegar a las páginas de producto y buscar los SKU existentes (unidad de mantenimiento de stock) en el catálogo de productos. No es necesario introducir manualmente variables de zona interactiva o mapa de imagen. Consulte la información sobre la [configuración de eCommerce](/help/commerce/cif-classic/administering/generic.md).
    >
    >
    >Si es cliente de Recursos Experience Manager y Dynamic Media, introduzca manualmente los datos de las zonas interactivas y los mapas de imágenes y, a continuación, integre la URL publicada o el código incrustado en su sistema de administración de contenido de terceros.
