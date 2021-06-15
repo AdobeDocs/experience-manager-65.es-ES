@@ -11,9 +11,9 @@ docset: aem65
 role: Business Practitioner, Administrator
 feature: Flujo de trabajo,Administración de recursos,Representaciones
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1379'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Un perfil es una fórmula para las opciones que se aplican a los recursos que se cargan en una carpeta. Por ejemplo, puede especificar qué perfil de metadatos y perfil de codificación de vídeo se aplicarán a los recursos de vídeo que cargue. O bien, qué perfil de imagen aplicar a los recursos de imagen para recortarlos correctamente.
 
-Estas reglas pueden incluir la adición de metadatos, el recorte inteligente de imágenes o el establecimiento de perfiles de codificación de vídeo. En AEM, puede crear tres tipos de perfiles, que se describen detalladamente en los siguientes vínculos:
+Estas reglas pueden incluir la adición de metadatos, el recorte inteligente de imágenes o el establecimiento de perfiles de codificación de vídeo. En Adobe Experience Manager, puede crear tres tipos de perfiles, que se describen detalladamente en los siguientes vínculos:
 
 * [Perfiles de metadatos](/help/assets/metadata-config.md#metadata-profiles)
 * [Perfiles de imagen](/help/assets/image-profiles.md)
@@ -32,8 +32,8 @@ Debe tener derechos de administrador para crear, editar y eliminar metadatos, im
 
 Después de crear los metadatos, la imagen o el perfil de vídeo, los asigna a una o varias carpetas que utiliza como destino para los recursos recién cargados.
 
-Un concepto importante respecto al uso de perfiles en AEM Assets es que se asignan a carpetas. Dentro de un perfil hay configuraciones en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma de asignar nombres a archivos y carpetas, organizar subcarpetas y administrar los archivos de estas carpetas tiene un impacto significativo en la forma en que un perfil procesa esos recursos.
-Si utiliza estrategias de nomenclatura de archivos y carpetas coherentes y adecuadas, junto con prácticas recomendadas en materia de metadatos, puede sacar el máximo partido de la recopilación de recursos digitales y asegurarse de que el perfil correcto procesa los archivos adecuados.
+Un concepto importante con respecto al uso de perfiles en recursos de Experience Manager es que se asignan a carpetas. Dentro de un perfil hay configuraciones en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma de asignar nombres a archivos y carpetas, organizar subcarpetas y administrar los archivos de estas carpetas tiene un impacto significativo en la forma en que un perfil procesa esos recursos.
+Al utilizar estrategias de asignación de nombres de archivos y carpetas coherentes y adecuadas, así como prácticas recomendadas en materia de metadatos, aproveche al máximo la recopilación de recursos digitales y asegúrese de que el perfil correcto procesa los archivos adecuados.
 
 >[!NOTE]
 >
@@ -45,35 +45,36 @@ Si utiliza estrategias de nomenclatura de archivos y carpetas coherentes y adecu
 
 >[!NOTE]
 >
->Se aplica a *Dynamic Media - Scene7 mode* solo en AEM 6.4.6.0 o posterior.
+>Se aplica a *Dynamic Media - Scene7 mode* solo en Experience Manager 6.4.6.0 o posterior.
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de procesamiento existente que haya cambiado posteriormente.
 
 Por ejemplo, supongamos que ha creado un perfil de imagen y lo ha asignado a una carpeta. Los recursos de imagen que haya cargado en la carpeta de forma automática tenían el perfil de imagen aplicado a los recursos. Sin embargo, más adelante decidirá agregar una nueva proporción de recorte inteligente al perfil. Ahora, en lugar de tener que seleccionar y volver a cargar los recursos en la carpeta de nuevo, simplemente ejecute el *Scene7: Volver a procesar el flujo de trabajo de Assets*.
 
-Puede ejecutar el flujo de trabajo de reprocesamiento en un recurso cuyo procesamiento haya fallado por primera vez. Por lo tanto, aunque no haya editado un perfil de procesamiento ni aplicado un perfil de procesamiento, puede ejecutar el flujo de trabajo de reprocesamiento en una carpeta de recursos en cualquier momento.
+Puede ejecutar el flujo de trabajo de reprocesamiento en un recurso cuyo procesamiento haya fallado por primera vez. De este modo, aunque no haya editado un perfil de procesamiento ni aplicado un perfil de procesamiento, puede ejecutar el flujo de trabajo de reprocesamiento en una carpeta de recursos en cualquier momento.
 
-Si lo desea, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos hasta 1000. Al ejecutar el _Scene7: Reprocesar el flujo de trabajo de Assets_ en una carpeta, los recursos se agrupan en lotes y se envían al servidor de Dynamic Media para su procesamiento. Después del procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en AEM. Si el tamaño del lote es muy grande, puede experimentar un retraso en el procesamiento. O, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
+Si lo desea, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos hasta 1000. Al ejecutar el _Scene7: Reprocesar el flujo de trabajo de Assets_ en una carpeta, los recursos se agrupan en lotes y se envían al servidor de Dynamic Media para su procesamiento. Tras el procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en el Experience Manager. Si el tamaño del lote es grande, puede experimentar un retraso en el procesamiento. O, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
 
 Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#adjusting-load).
 
 >[!NOTE]
 >
->Si está realizando una migración masiva de recursos de Dynamic Media Classic a AEM, debe habilitar el agente de replicación de migración en el servidor de Dynamic Media. Una vez completada la migración, asegúrese de desactivar el agente.
+>Si está realizando una migración masiva de recursos de Dynamic Media Classic a Experience Manager, debe habilitar el agente de replicación de migración en el servidor de Dynamic Media. Una vez completada la migración, asegúrese de desactivar el agente.
 >
 >El agente de publicación de migración debe estar deshabilitado en el servidor de Dynamic Media para que el flujo de trabajo de reprocesamiento funcione según lo esperado.
 
 <!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
-**Para volver a procesar los recursos en una carpeta**:
-1. En AEM, en la página Recursos, vaya a una carpeta de recursos que tenga un perfil de procesamiento asignado y para la que desee aplicar el **Scene7: Volver a procesar el flujo de trabajo de Asset**,
+**Para volver a procesar los recursos en una carpeta:**
+
+1. En Experience Manager, en la página Recursos, vaya a una carpeta de recursos que tenga un perfil de procesamiento asignado y para la que desee aplicar el **[!UICONTROL Scene7: Volver a procesar el flujo de trabajo de Asset]**,
 
    Las carpetas que ya tienen un perfil de procesamiento asignado se indican mostrando el nombre del perfil directamente debajo del nombre de la carpeta en la vista de tarjeta.
 
 1. Seleccione una carpeta.
 
    * El flujo de trabajo tiene en cuenta todos los archivos de la carpeta seleccionada de forma recursiva.
-   * Si hay una o más subcarpetas con recursos en la carpeta principal seleccionada, el flujo de trabajo vuelve a procesar todos los recursos en la jerarquía de carpetas.
+   * Si hay una o más subcarpetas con recursos en la carpeta principal seleccionada, el flujo de trabajo vuelve a procesar cada recurso en la jerarquía de carpetas.
    * Como práctica recomendada, debe evitar ejecutar este flujo de trabajo en una jerarquía de carpetas que tenga más de 1000 activos.
 
 1. Cerca de la esquina superior izquierda de la página, en la lista desplegable, haga clic en **[!UICONTROL Cronología]**.
@@ -89,11 +90,11 @@ Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#
 
 1. Haga clic en **[!UICONTROL Start]** y, a continuación, haga clic en **[!UICONTROL Confirm]**.
 
-   Para monitorizar el flujo de trabajo o comprobar su progreso, en la página de la consola principal de AEM, haga clic en **[!UICONTROL Tools]** > **[!UICONTROL Workflow]**. En la página Instancias de flujo de trabajo , seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo .
+   Para monitorizar el flujo de trabajo o comprobar su progreso, en la página de la consola principal del Experience Manager, haga clic en **[!UICONTROL Tools]** > **[!UICONTROL Workflow]**. En la página Instancias de flujo de trabajo , seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo .
 
 ### Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento {#adjusting-load}
 
-(Opcional) El tamaño predeterminado del lote en el flujo de trabajo de reprocesamiento es de 50 activos por trabajo. Este tamaño de lote óptimo se rige por el tamaño medio del recurso y los tipos MIME de los recursos en los que se ejecuta el reprocesamiento. Un valor superior significa que tendrá muchos archivos en un solo trabajo de reprocesamiento. Por lo tanto, el banner de procesamiento permanece en AEM recursos durante más tiempo. Sin embargo, si el tamaño promedio del archivo es pequeño-1 MB o menor de Adobe, se recomienda aumentar el valor a varios cientos, pero nunca más de 1000. Si el tamaño promedio del archivo es de cientos de megabytes-Adobe, se recomienda reducir el tamaño del lote hasta 10.
+(Opcional) El tamaño predeterminado del lote en el flujo de trabajo de reprocesamiento es de 50 activos por trabajo. Este tamaño de lote óptimo se rige por el tamaño medio del recurso y los tipos MIME de los recursos en los que se ejecuta el reprocesamiento. Un valor superior significa que tiene muchos archivos en un solo trabajo de reprocesamiento. Por lo tanto, el banner de procesamiento permanece en los recursos del Experience Manager durante más tiempo. Sin embargo, si el tamaño promedio del archivo es pequeño (1 MB o menos), Adobe recomienda aumentar el valor a varios 100, pero nunca más de 1000. Si el tamaño promedio del archivo es grande, como cientos de megabytes, Adobe recomienda reducir el tamaño del lote hasta 10.
 
 **Para ajustar opcionalmente el tamaño del lote del flujo de trabajo de reprocesamiento:**
 
@@ -108,7 +109,7 @@ Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#
 
    ![Componente Carga por lotes de Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. En el cuadro de diálogo **[!UICONTROL Carga por lotes a Scene7—Propiedades de los pasos]**, configure lo siguiente:
+1. En el cuadro de diálogo **[!UICONTROL Carga por lotes a Scene7 - Propiedades de los pasos]**, configure lo siguiente:
    * En los campos de texto **[!UICONTROL Title]** y **[!UICONTROL Description]**, introduzca un nuevo título y una descripción para el trabajo, si lo desea.
    * Seleccione **[!UICONTROL Avance del controlador]** si el controlador va a avanzar al siguiente paso.
    * En el campo **[!UICONTROL Timeout]**, introduzca el tiempo de espera del proceso externo (segundos).
@@ -143,5 +144,5 @@ Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
