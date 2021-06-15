@@ -10,7 +10,7 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Administración de activos
 role: Business Practitioner, Administrator
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 6%
@@ -81,10 +81,10 @@ Hay dos métodos de perfeccionamiento de imagen que puede utilizar:
 
 Se recomienda comenzar con el parámetro de radio de máscara de enfoque. La configuración de radio con la que puede empezar es la siguiente:
 
-* **[!UICONTROL Sitio web]**: 0,2-0,3 píxeles
-* **[!UICONTROL Impresión fotográfica (250-300 ppi)]**: 0,3-0,5 píxeles
-* **[!UICONTROL Impresión offset (266-300 ppp)]**: 0,7-1,0 píxeles
-* **[!UICONTROL Impresión de lienzo (150 ppi)]**: 1,5-2,0 píxeles
+* **[!UICONTROL Sitio web]** : 0,2-0,3 píxeles
+* **[!UICONTROL Impresión fotográfica (250-300 ppp)]** : 0,3-0,5 píxeles
+* **[!UICONTROL Impresión offset (266-300 ppp)]** : 0,7-1,0 píxeles
+* **[!UICONTROL Impresión de lienzo (150 ppi)]** : 1,5-2,0 píxeles
 
 Aumentar gradualmente la cantidad de 1,75 a 4. Si el enfoque sigue sin ser el que desea, aumente el radio en un punto decimal y ejecute de nuevo la cantidad de 1,75 a 4. Repita el proceso según sea necesario.
 
