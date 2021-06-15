@@ -11,7 +11,7 @@ docset: aem65
 feature: Vídeo de RV 360
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -82,8 +82,8 @@ De forma predeterminada, el Experience Manager detecta el vídeo como &quot;360&
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **Tipo** de propiedad: Duplicado
-   * **Valor**: relación de aspecto de coma flotante, predeterminada 2.0.
+   * **Tipo de propiedad** : doble
+   * **Valor** : relación de aspecto de coma flotante, predeterminada 2,0.
 
 Después de establecer esta propiedad, esta entra en vigor inmediatamente en los vídeos existentes y en los nuevos cargados.
 
