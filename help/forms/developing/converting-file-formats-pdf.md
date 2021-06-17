@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '7913'
+source-wordcount: '7911'
 ht-degree: 0%
 
 ---
-
 
 # Conversión entre formatos de archivo y PDF {#converting-between-file-formatsand-pdf}
 
@@ -851,7 +850,7 @@ Si crea una secuencia de comandos para una aplicación nativa que no se admitía
 
 >[!NOTE]
 >
->En este contexto, el término adicional significa el contenido del archivo `appmon.[applicationname].addition.[locale]`.xml`. Este archivo especifica anulaciones y adiciones al archivo XML de diálogo.
+>En este contexto, el término adicional significa el contenido del archivo `appmon.[applicationname].addition.[locale].xml`. Este archivo especifica anulaciones y adiciones al archivo XML de diálogo.
 
 También puede modificar el archivo XML de cuadro de diálogo adicional para una aplicación nativa con estos fines:
 
@@ -1146,4 +1145,3 @@ Este ejemplo especifica cómo el servicio Generate PDF debe interactuar con el B
     <abortMessage msg="15078"/>
 </application>
 ```
-
