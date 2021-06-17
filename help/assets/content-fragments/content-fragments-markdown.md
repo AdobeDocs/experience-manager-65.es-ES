@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
 docset: aem65
-feature: Content Fragments
+feature: Fragmentos de contenido
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 4%
 
 ---
-
 
 # Markdown{#markdown}
 
@@ -175,7 +174,7 @@ Puede aplicar negrita al texto de la siguiente manera:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Para indicar un intervalo de código, encapsúltelo con comillas de rebote (`). A diferencia de los bloques de código preformateados, un intervalo de código indica el código dentro de un párrafo normal.
+Para indicar un intervalo de código, encapsúlelo con comillas de rebote (&amp;grave;). A diferencia de los bloques de código preformateados, un intervalo de código indica el código dentro de un párrafo normal.
 
 Por ejemplo:
 
@@ -218,4 +217,3 @@ Las secuencias de escape de barra invertida están disponibles para los siguient
     ` - minus sign (hyphen)`
 
     ` . dot`
-
