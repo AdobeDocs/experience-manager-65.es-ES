@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1907'
 ht-degree: 4%
 
 ---
-
 
 # Instale y configure las funcionalidades de captura de datos{#install-and-configure-data-capture-capabilities}
 
@@ -192,7 +191,7 @@ Dispatcher es una herramienta de equilibrio de carga o almacenamiento en caché 
 
 1. Configure el servicio de filtros del referente:
 
-   Inicie sesión en el gestor de configuración de Apache Felix como administrador. La dirección URL predeterminada del administrador de configuración es `https://[server]:[port_number]/system/console/configMgr`. En el menú **Configurations**, seleccione la opción **Apache Sling Referrer Filter**. En el campo Permitir hosts , introduzca el nombre de host del Dispatcher para permitirlo como referente y haga clic en **Guardar**. El formato de la entrada es &quot;https://[server]:[port]&quot;.
+   Inicie sesión en el gestor de configuración de Apache Felix como administrador. La dirección URL predeterminada del administrador de configuración es `https://[server]:[port_number]/system/console/configMgr`. En el menú **Configurations**, seleccione la opción **Apache Sling Referrer Filter**. En el campo Permitir hosts , introduzca el nombre de host del Dispatcher para permitirlo como referente y haga clic en **Guardar**. El formato de la entrada es `https://[server]:[port]`.
 
 #### Configurar caché {#configure-cache}
 
@@ -243,4 +242,3 @@ Ha configurado un entorno para utilizar las funciones de captura de datos de AEM
 * [Cree su primer formulario adaptable](/help/forms/using/create-your-first-adaptive-form.md)
 * [Crear el primer formulario PDF](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [Introducción a HTML5 Forms](/help/forms/using/introduction.md)
-
