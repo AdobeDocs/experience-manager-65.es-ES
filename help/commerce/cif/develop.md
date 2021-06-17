@@ -6,8 +6,7 @@ feature: Marco de integración de Commerce
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 32%
@@ -15,7 +14,7 @@ ht-degree: 32%
 ---
 
 
-# Desarrollo de AEM Commerce {#develop}
+# Desarrollo AEM comercio {#develop}
 
 El desarrollo de proyectos AEM Commerce basados en Commerce Integration Framework (CIF) para AEM sigue las mismas reglas y prácticas recomendadas como otros proyectos de AEM. Primero revise estos:
 
@@ -48,7 +47,7 @@ Lo siguiente debe instalarse de manera local:
 
 ### Acceso al complemento CIF
 
-El complemento CIF se puede descargar desde el [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), buscar el &quot;complemento AEM comercio&quot;.
+El complemento CIF se puede descargar desde el [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), busque el complemento &quot;AEM Commerce&quot;.
 
 >[!TIP]
 >
