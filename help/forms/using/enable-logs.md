@@ -11,14 +11,13 @@ topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '647'
 ht-degree: 6%
 
 ---
-
 
 # Habilitar el registro para formularios HTML5{#enable-logging-for-html-forms}
 
@@ -53,7 +52,7 @@ Puede utilizar los siguientes métodos para habilitar el registro en el lado del
 
 ### Habilitación del registro mediante el parámetro de solicitud {#enabling-logging-using-request-parameter}
 
-Con este método, puede generar registros para una solicitud en particular. El nombre del parámetro de solicitud es `log. La URL de registro es la siguiente:
+Con este método, puede generar registros para una solicitud en particular. El nombre del parámetro de solicitud es `log`. La URL de registro es la siguiente:
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
@@ -95,7 +94,7 @@ La configuración de registro está formada por el nivel de registro y la catego
    <td>DESACTIVADO<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>3</td>
+   <td>1</td>
    <td>FATAL<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -103,7 +102,7 @@ La configuración de registro está formada por el nivel de registro y la catego
    <td>ERROR<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>1</td>
+   <td>3</td>
    <td>AVISAR<br type="_moz" /> </td>
   </tr>
   <tr>
