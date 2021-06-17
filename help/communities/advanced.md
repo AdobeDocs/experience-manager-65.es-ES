@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1060'
 ht-degree: 1%
 
 ---
-
 
 # Puntuación avanzada y distintivos{#advanced-scoring-and-badges}
 
@@ -185,28 +184,28 @@ En la versión beta se incluyen dos reglas de puntuación avanzadas para la [fun
 
 1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
-   * `subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule
+   ```
 
 1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
-   * `subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   ```
 
 **Notas:**
 
 * Los nodos `rules` y `sub-rules` son de tipo `cq:Page`.
-
-* `subRules` es un atributo del tipo String [] en el  `jcr:content` nodo de la regla.
-
+* `subRules` es un atributo del tipo String `[]` en el  `jcr:content` nodo de la regla.
 * `sub-rules` puede compartirse entre distintas reglas de puntuación.
-
 * `rules` debe estar ubicado en una ubicación de repositorio con permiso de lectura para todos.
-
 * Los nombres de las reglas deben ser únicos independientemente de la ubicación.
 
 ### Reglas de distintivo incluidas {#included-badging-rules}
@@ -221,4 +220,3 @@ En la versión se incluyen dos reglas de distintivo avanzadas que corresponden a
 * `rules` los nodos son del tipo cq:Page.
 * `rules` debe estar ubicado en una ubicación de repositorio con permiso de lectura para todos.
 * Los nombres de las reglas deben ser únicos independientemente de la ubicación.
-
