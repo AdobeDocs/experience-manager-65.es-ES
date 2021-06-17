@@ -2,13 +2,12 @@
 title: Funciones e interfaces accesibles de [!DNL Experience Manager Assets]
 description: Conozca cómo las funciones de accesibilidad de [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] ayudan a los usuarios con discapacidades.
 contentOwner: AG
-feature: Asset Management
+feature: Administración de activos
 role: Business Practitioner, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-translation-type: tm+mt
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '1924'
+source-wordcount: '1926'
 ht-degree: 2%
 
 ---
@@ -86,7 +85,7 @@ Las siguientes acciones de [!DNL Assets] funcionan con los métodos abreviados d
 | Vista de columna en la interfaz de usuario [!DNL Assets] | Teclas de flecha arriba y abajo | Vaya a archivos y carpetas dentro de la misma jerarquía. |
 | Vista de columna en la interfaz de usuario [!DNL Assets] | Teclas de flecha izquierda y derecha | Vaya a los archivos y carpetas situados encima o debajo de la carpeta actual. |
 | Exploración de carpetas en [!DNL Assets] | `/` | Invocar la búsqueda abriendo el cuadro Omnisearch . |
-| [!DNL Assets] Consola | ` | Conmutar raíles laterales |
+| [!DNL Assets] Consola | &amp;grave; | Conmutar raíles laterales |
 | [!DNL Assets] Consola | `Alt + 1` | Abra el árbol de contenido. |
 | [!DNL Assets] Consola | `Alt + 2` | Abra el carril izquierdo [!UICONTROL Navigation]. |
 | [!DNL Assets] Consola | `Alt + 3` | Mostrar [!UICONTROL Línea de tiempo] de un recurso seleccionado. |
@@ -104,7 +103,7 @@ Las siguientes acciones de [!DNL Assets] funcionan con los métodos abreviados d
 | Páginas de propiedad de recursos | `Ctrl + S` | Guarde los cambios. |
 | [!DNL Assets] Consola | `?` | Consulte una lista de métodos abreviados del teclado. |
 
-## Iniciar sesión y navegar por la [!DNL Assets] interfaz de usuario {#login}
+## Iniciar sesión y navegar por la interfaz de usuario [!DNL Assets] {#login}
 
 Los usuarios pueden utilizar el teclado para desplazarse hasta el campo de inicio de sesión y rellenarlo para iniciar sesión. Los lectores de pantalla anuncian los mensajes de error debido a combinaciones incorrectas de nombre de usuario y contraseña en la página de inicio de sesión cada vez que se produce el error.
 
