@@ -10,10 +10,9 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 exl-id: 1c3d0d48-5c31-42a8-8698-922d7c2127e9
-translation-type: tm+mt
-source-git-commit: cd895fcab5adce600ce230fb6867392e45963c16
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -30,7 +29,7 @@ Puede ver el [Filtro de disposición de contenido de Apache Sling en GitHub](htt
 
 Las opciones del Filtro de disposición de contenido proporcionan las siguientes funciones:
 
-* **Rutas de disposición de contenido:** una lista de rutas en las que se aplicará el filtro seguida de una lista de tipos de mime que se excluirán en esa ruta. Esta ruta debe ser una ruta absoluta y puede contener un comodín (`*`) al final, para que coincida cada ruta de recurso con el prefijo de ruta dado. Por ejemplo: `/content/*:image/jpeg,image/svg+xml` aplicará el filtro a cada nodo en `/content? excepto imágenes jpg y svg
+* **Rutas de disposición de contenido:** una lista de rutas en las que se aplicará el filtro seguida de una lista de tipos de mime que se excluirán en esa ruta. Esta ruta debe ser una ruta absoluta y puede contener un comodín (`*`) al final, para que coincida cada ruta de recurso con el prefijo de ruta dado. Por ejemplo: `/content/*:image/jpeg,image/svg+xml` aplicará el filtro a todos los nodos de `/content?` excepto a las imágenes jpg y svg
 
 * **Rutas de recurso excluidas:** una lista de recursos excluidos, cada ruta de recurso debe proporcionarse como ruta absoluta y completa. No se admiten caracteres comodín/coincidentes de prefijo.
 
