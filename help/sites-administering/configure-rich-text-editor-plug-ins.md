@@ -3,10 +3,9 @@ title: Configuración de los complementos del Editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de Adobe Experience Manager para habilitar funcionalidades individuales.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-translation-type: tm+mt
-source-git-commit: 443115b306ff34ee98da9403222874a9700d8aed
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4395'
 ht-degree: 3%
 
 ---
@@ -21,7 +20,7 @@ Para obtener más información sobre las otras configuraciones de RTE, consulte 
 >
 >Cuando trabaje con CRXDE Lite, se recomienda guardar los cambios con regularidad mediante la opción [!UICONTROL Guardar todo].
 
-## Activar un complemento y configurar la propiedad {#activateplugin} de funciones
+## Activar un complemento y configurar la propiedad de funciones {#activateplugin}
 
 Para activar un complemento, siga estos pasos. Algunos pasos solo son necesarios cuando configura un complemento por primera vez, ya que los nodos correspondientes no existen.
 
@@ -65,7 +64,7 @@ Después de activar un complemento, siga estas directrices para configurar la pr
 | Tipo | Cadena | String[] (multi-string; establezca Type en String y haga clic en Multi in CRXDE Lite) | Cadena |
 | Value | `*` (un asterisco) | se establece en uno o varios valores de función | - |
 
-## Comprender el complemento de Findreplace {#findreplace}
+## Comprender el complemento Findreplace {#findreplace}
 
 El complemento `findreplace` no necesita ninguna configuración. Funciona de forma predeterminada.
 
@@ -118,7 +117,7 @@ La configuración permite los tres tipos de casos de uso siguientes:
    * **Tipo** `String`
    * **** ValorUno de los modos de pegado  `browser`,  `plaintext` o  `wordhtml` necesarios.
 
-### Configure los formatos permitidos al pegar contenido {#pasteformats}
+### Configurar los formatos permitidos al pegar contenido {#pasteformats}
 
 El modo pegar como Microsoft Word (`paste-wordhtml`) se puede configurar aún más para que pueda definir explícitamente qué estilos se permiten al pegar en AEM desde otro programa, como Microsoft Word.
 
@@ -226,7 +225,7 @@ Ejemplo de una estructura `htmlPasteRules` válida:
 
 1. Guarde todos los cambios.
 
-## Configurar estilos de texto {#textstyles}
+## Configuración de estilos de texto {#textstyles}
 
 Los autores pueden aplicar Estilos para cambiar el aspecto de una parte del texto. Los estilos se basan en clases CSS predefinidas en la hoja de estilos CSS. El contenido estilizado se incluye en etiquetas `span` utilizando el atributo `class` para hacer referencia a la clase CSS. Por ejemplo:
 
@@ -339,7 +338,7 @@ Para crear el estilo que los autores pueden aplicar al texto en japonés, siga e
 
 1. Cree un nuevo nodo en el nodo de estilos. Consulte [especificar un nuevo estilo](#stylesindropdown).
    * Nombre: `jpn-word-wrap`
-   * Tipo: `nt:unstructure
+   * Tipo: `nt:unstructure`
 
 1. Agregue la propiedad `cssName` al nodo para hacer referencia a la clase CSS. Este nombre de clase es un nombre reservado para la función de ajuste de palabras en japonés.
    * Nombre: `cssName`
@@ -365,7 +364,7 @@ Para crear el estilo que los autores pueden aplicar al texto en japonés, siga e
 
    ![Hoja de estilo para que la función de ajuste de palabras en japonés esté disponible para los autores](assets/rte_jpwordwrap_stylesheet.jpg)
 
-## Configurar los formatos de párrafo {#paraformats}
+## Configuración de los formatos de párrafo {#paraformats}
 
 Cualquier texto creado en RTE se coloca dentro de una etiqueta de bloque, siendo el valor predeterminado `<p>`. Al habilitar el complemento `paraformat`, se especifican etiquetas de bloque adicionales que se pueden asignar a los párrafos mediante una lista desplegable de selección. Los formatos de párrafo determinan el tipo de párrafo asignando la etiqueta de bloque correcta. El autor puede seleccionarlos y asignarlos mediante el selector de formato. Las etiquetas de bloque de ejemplo incluyen, entre otras, el párrafo estándar &lt;p> y los encabezados &lt;h1>, &lt;h2>, entre otros.
 
@@ -384,7 +383,7 @@ Cuando el complemento Formatos de párrafo está habilitado por primera vez, no 
 
 Para las configuraciones posteriores (re-), digamos para añadir más formatos, siga solamente la parte relevante de las instrucciones.
 
-### Habilitar el selector desplegable Formato {#formatselectorlist}
+### Activación del selector desplegable Formato {#formatselectorlist}
 
 Primero habilite el complemento paraformat :
 
@@ -407,7 +406,7 @@ Si el complemento no está configurado, se habilitan los siguientes formatos pre
 >[!CAUTION]
 Al configurar los formatos de párrafo de RTE, no elimine la etiqueta de párrafo &lt;p> como opción de formato. Si se elimina la etiqueta `<p>` , el autor del contenido no puede seleccionar la opción **Paragraph format** aunque haya otros formatos configurados.
 
-### Especifique los formatos de párrafo disponibles {#paraformatsindropdown}
+### Especificar los formatos de párrafo disponibles {#paraformatsindropdown}
 
 Los formatos de párrafo pueden seleccionarse mediante:
 
@@ -443,7 +442,7 @@ Los formatos de párrafo pueden seleccionarse mediante:
 >[!CAUTION]
 Si define formatos personalizados, se eliminarán los formatos predeterminados (`<p>`, `<h1>`, `<h2>` y `<h3>`). Vuelva a crear el formato `<p>` porque es el formato predeterminado.
 
-## Configurar caracteres especiales {#spchar}
+## Configuración de caracteres especiales {#spchar}
 
 En una instalación de AEM estándar, cuando el complemento `misctools` está habilitado para caracteres especiales (`specialchars`), inmediatamente se puede utilizar una selección predeterminada; por ejemplo, los símbolos copyright y marca comercial.
 
@@ -490,7 +489,7 @@ En CRXDE, una vez guardada la propiedad, se muestra el carácter representado. C
 
 ![En CRXDE, añada un solo carácter para que esté disponible en la ](assets/chlimage_1-106.png "barra de herramientas RTE. En CRXDE, añada un solo carácter para que esté disponible en la barra de herramientas RTE")
 
-### Defina un rango de caracteres {#definerangechar}
+### Definir un rango de caracteres {#definerangechar}
 
 1. Utilice los pasos del 1 al 3 desde [Definición de un solo carácter](#definesinglechar).
 1. En `chars` agregue un nuevo nodo para mantener la definición del intervalo de caracteres:
@@ -582,7 +581,7 @@ Copiar y pegar tablas en o desde el componente RTE depende del explorador. No es
 
 Repita los pasos anteriores para cada estilo necesario.
 
-### Configurar encabezados ocultos en tablas para accesibilidad {#hiddenheader}
+### Configuración de encabezados ocultos en tablas para accesibilidad {#hiddenheader}
 
 A veces, puede crear tablas de datos sin texto visual en el encabezado de una columna suponiendo que el propósito del encabezado esté implícito en la relación visual de la columna con otras columnas. En este caso, es necesario proporcionar texto interno oculto dentro de la celda en la celda del encabezado para permitir que los lectores de pantalla y otras tecnologías de asistencia ayuden a los lectores con distintas necesidades a comprender el propósito de la columna.
 
@@ -628,7 +627,7 @@ Una instalación de AEM estándar incluye los diccionarios para inglés american
 El corrector ortográfico RTE está disponible bajo demanda. No se ejecuta automáticamente cuando empieza a escribir texto. Para ejecutar el corrector ortográfico, haga clic en [!UICONTROL Corrector ortográfico] en la barra de herramientas. RTE comprueba la ortografía de las palabras y resalta las palabras mal escritas.
 Si incorpora cualquier cambio que sugiera el corrector ortográfico, el estado del texto cambia y las palabras mal escritas ya no se resaltan. Para ejecutar el corrector ortográfico, toque o haga clic de nuevo en el botón corrector ortográfico.
 
-## Configurar el tamaño del historial para las acciones de deshacer y rehacer {#undohistory}
+## Configurar el tamaño del historial para acciones de deshacer y rehacer {#undohistory}
 
 RTE permite a los autores deshacer o rehacer algunas de las últimas ediciones. De forma predeterminada, se almacenan 50 ediciones en el historial. Puede configurar este valor según sea necesario.
 
@@ -641,7 +640,7 @@ RTE permite a los autores deshacer o rehacer algunas de las últimas ediciones. 
 
 1. Guarde los cambios.
 
-## Configurar el tamaño de la pestaña {#tabsize}
+## Configuración del tamaño de la pestaña {#tabsize}
 
 Cuando se presiona el carácter de tabulación dentro de cualquier texto, se inserta un número predefinido de espacios. de forma predeterminada, se trata de tres espacios de no separación y un espacio.
 
@@ -656,7 +655,7 @@ Para definir el tamaño de la pestaña:
 
 1. Guarde los cambios.
 
-## Establecer margen de sangría {#indentmargin}
+## Definir margen de sangría {#indentmargin}
 
 Cuando la sangría está activada (opción predeterminada), puede definir el tamaño de la sangría:
 
@@ -670,7 +669,7 @@ Este tamaño de guión solo se aplica a los párrafos (bloques) del texto; no af
    * **Tipo**: `Long`
    * **Valor**: número de píxeles necesarios para el margen de sangría.
 
-## Configurar la altura del espacio editable {#editablespace}
+## Configuración de la altura del espacio editable {#editablespace}
 
 >[!NOTE]
 Esto solo es aplicable cuando se utiliza el RTE en un cuadro de diálogo (no la edición in situ en la IU clásica).
@@ -688,7 +687,7 @@ Puede definir la altura del espacio editable que se muestra en el cuadro de diá
 
 1. Guarde los cambios.
 
-## Configuración de estilos y protocolos para los vínculos {#linkstyles}
+## Configuración de estilos y protocolos para vínculos {#linkstyles}
 
 Al agregar vínculos en AEM, puede definir:
 
