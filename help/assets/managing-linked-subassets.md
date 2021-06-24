@@ -3,15 +3,14 @@ title: Administrar recursos compuestos con referencias y varias páginas
 description: Aprenda a crear referencias a recursos digitales desde  [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para ver páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
+feature: Administración de activos
+exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
-
 
 # Administrar recursos compuestos y de varias páginas {#managing-compound-assets}
 
@@ -23,7 +22,7 @@ Además de eliminar la redundancia, hacer referencia a los activos en las aplica
 
 Las referencias se resuelven en función de la ruta, el ID del documento y el ID de instancia de los recursos a los que se hace referencia.
 
-## [!DNL Adobe Illustrator]: Agregar recursos digitales como referencias  {#refai}
+## [!DNL Adobe Illustrator]: Agregar recursos digitales como referencias {#refai}
 
 Puede hacer referencia a recursos digitales existentes desde un archivo [!DNL Adobe Illustrator] .
 
@@ -46,7 +45,7 @@ Puede hacer referencia a recursos digitales existentes desde un archivo [!DNL Ad
 
    *Figura: Referencias de recursos en detalles de recursos.*
 
-## [!DNL Adobe InDesign]: Agregar recursos digitales como referencias  {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]: Agregar recursos digitales como referencias {#add-aem-assets-as-references-in-adobe-indesign}
 
 Para hacer referencia a recursos digitales desde un archivo [!DNL InDesign], arrastre los recursos al archivo [!DNL InDesign] o exporte el archivo [!DNL InDesign] como archivo ZIP.
 
@@ -70,11 +69,9 @@ Este procedimiento es similar a [añadir recursos digitales como referencias en 
 1. Inicie el flujo de trabajo `Unarchiver`.
 1. Cuando se completa el flujo de trabajo, se hace referencia automáticamente a las referencias de la carpeta Links como subactivos. Para ver una lista de los recursos referidos, vaya a la página de detalles del recurso [!DNL InDesign] y cierre el [carril](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## [!DNL Adobe Photoshop]: Agregar recursos digitales como referencias  {#refps}
+## [!DNL Adobe Photoshop]: Agregar recursos digitales como referencias {#refps}
 
 1. Utilice la aplicación de escritorio [!DNL Experience Manager] para acceder a [!DNL Experience Manager Assets]. Descargue y muestre los recursos en el sistema de archivos local. Utilice la funcionalidad [!UICONTROL Colocar vinculado] en [!DNL Adobe Photoshop]. Consulte [Colocación de recursos en la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
-
-   ![chlimage_1-87](assets/chlimage_1-261.png)
 
 1. Guarde en el archivo [!DNL Photoshop] en la unidad montada o [cargue](/help/assets/manage-assets.md#uploading-assets) en el repositorio [!DNL Experience Manager].
 1. Una vez finalizado el flujo de trabajo, las referencias a los recursos existentes [!DNL Experience Manager] se enumeran en la página de detalles del recurso.
