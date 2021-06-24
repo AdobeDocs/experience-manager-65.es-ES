@@ -3,15 +3,14 @@ title: Adición de mapas de imagen con hipervínculos
 description: Aprenda a añadir mapa de imagen con hipervínculos a una imagen.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Administración de activos
+exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
+source-git-commit: 1cfa58bb7dcbe70906071a22fbae4a9f479a31d9
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
-
 
 # Agregar mapas de imagen {#adding-image-maps}
 
@@ -27,8 +26,6 @@ Los mapas de imagen le permiten agregar una o más áreas hipervinculadas que fu
 
    * En la vista **[!UICONTROL Card]** o **[!UICONTROL List]**, seleccione el recurso y haga clic en **[!UICONTROL Edit]** en la barra de herramientas.
    * Haga clic en **[!UICONTROL Editar]** en la página de recursos.
-
-      ![opción editar](assets/do-not-localize/edit_icon.png)
 
 1. Para insertar un mapa de imagen, haga clic en **[!UICONTROL Iniciar mapa]** ![mapa de imagen](assets/do-not-localize/image-map-icon.png) en la barra de herramientas.
 1. Seleccione la forma del mapa de imagen. El punto interactivo de la forma seleccionada se coloca en la imagen.
