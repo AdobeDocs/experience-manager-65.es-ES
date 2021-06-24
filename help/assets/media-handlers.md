@@ -3,12 +3,11 @@ title: Procesamiento de recursos mediante controladores de medios y flujos de tr
 description: Obtenga información sobre los controladores de medios y cómo utilizar flujos de trabajo para realizar tareas en los recursos digitales.
 contentOwner: AG
 role: Business Practitioner
-feature: Workflow,Renditions
+feature: Flujo de trabajo,Representaciones
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-translation-type: tm+mt
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2166'
 ht-degree: 4%
 
 ---
@@ -62,7 +61,7 @@ Para ver los controladores de medios activos:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Uso de controladores de medios en flujos de trabajo para realizar tareas en los recursos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Uso de controladores de medios en flujos de trabajo para realizar tareas en recursos {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 Los controladores de medios son servicios que generalmente se utilizan en combinación con flujos de trabajo.
 
@@ -83,7 +82,7 @@ Para habilitar/deshabilitar un controlador de medios:
 1. Actualice la página: se muestra un icono junto al controlador de medios que indica que está desactivado.
 1. Para habilitar el controlador de medios, haga clic en **[!UICONTROL Enable]** junto al nombre del controlador de medios.
 
-### Crear un nuevo controlador de medios {#creating-a-new-media-handler}
+### Creación de un nuevo controlador de medios {#creating-a-new-media-handler}
 
 Para admitir un nuevo tipo de contenido o ejecutar tareas específicas en un recurso, es necesario crear un nuevo controlador de medios. En esta sección se describe cómo continuar.
 
@@ -369,7 +368,7 @@ Después de realizar el siguiente procedimiento, al cargar un archivo TXT en [!D
      Layer watermarkLayer;
      try {
       final Session session = node.getSession();
-      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/geometrixx/icons/certificate.png");
+      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/samplesite/icons/certificate.png");
       watermarkLayer.setX(MARGIN);
       watermarkLayer.setY(MARGIN);
       layer.merge(watermarkLayer);
