@@ -5,10 +5,9 @@ contentOwner: AG
 role: Business Practitioner,Administrator
 feature: Metadatos
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-translation-type: tm+mt
-source-git-commit: ae0c8bda918e2e8a7a6a32e0228d1a2410b283d9
+source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3547'
 ht-degree: 7%
 
 ---
@@ -66,17 +65,13 @@ Para agregar un formulario de esquema de metadatos, siga estos pasos:
 
 1. En el cuadro de diálogo, proporcione el título del formulario de esquema y haga clic en **[!UICONTROL Create]** para completar el proceso de creación del formulario.
 
-## Editar formularios de esquema de metadatos {#edit-metadata-schema-forms}
+## Edición de formularios de esquema de metadatos {#edit-metadata-schema-forms}
 
 Puede editar un formulario de esquema de metadatos nuevo o existente. El formulario de esquema de metadatos incluye fichas y elementos de formulario en fichas. Puede asignar/configurar estos elementos de formulario a un campo dentro de un nodo de metadatos en el repositorio CRX. Puede agregar fichas o elementos de formulario al formulario de esquema de metadatos. Las fichas y los elementos de formulario derivados del elemento principal están en estado bloqueado. No se pueden modificar en el nivel secundario.
 
 1. En la página [!UICONTROL Metadata Schema Forms] , seleccione un formulario y haga clic en **[!UICONTROL Edit]** en la barra de herramientas.
 
 1. En la página **[!UICONTROL Editor de formularios de esquemas de metadatos]**, personalice el formulario de metadatos. Arrastre los componentes necesarios desde la ficha **[!UICONTROL Generar formulario]** a una de las fichas.
-
-   ![Editor de esquemas de metadatos para personalizar la página Propiedades del recurso](assets/metadata-schema-editor.png)
-
-   *Figura: Una página  [!UICONTROL del ] Editor de formularios de esquemas de metadatos con pestañas disponibles.*
 
 1. Para configurar un componente, selecciónelo y modifique sus propiedades en la pestaña **[!UICONTROL Settings]**.
 
@@ -145,15 +140,13 @@ Para mostrar cualquier pestaña en la página de propiedades además de la pesta
 
 *Figura: Metadatos contextuales de la página de propiedades de recursos.*
 
-### Especificar propiedades en el archivo JSON {#specify-properties-in-json-file}
+### Especificar propiedades en un archivo JSON {#specify-properties-in-json-file}
 
 En lugar de especificar propiedades para las opciones de la pestaña **[!UICONTROL Configuración]**, puede definir las opciones de un archivo JSON especificando los pares de clave-valor correspondientes. Especifique la ruta del archivo JSON en el campo **[!UICONTROL Ruta de JSON]**.
 
-#### Agregar o eliminar una ficha en el formulario de esquema {#adding-deleting-a-tab-in-the-schema-form}
+#### Agregar o eliminar una ficha del formulario de esquema {#adding-deleting-a-tab-in-the-schema-form}
 
 El editor de esquemas permite agregar o eliminar una pestaña. El formulario de esquema predeterminado incluye las pestañas **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]** y **[!UICONTROL IPTC Extension]**.
-
-![Tabulaciones predeterminadas en el formulario Esquema de metadatos](assets/metadata-schema-form-tabs.png)
 
 Haga clic en `+` para añadir una pestaña en un formulario de esquema. De forma predeterminada, la nueva pestaña tiene el nombre `Unnamed-1`. Puede modificar el nombre desde la pestaña **[!UICONTROL Settings]**. Haga clic en `X` para eliminar una pestaña.
 
@@ -350,7 +343,7 @@ La herencia de metadatos por recursos se basa en el esquema que se aplica a la c
 1. Haga clic en **OK** para cerrar el mensaje de éxito.
 1. Vaya a la carpeta a la que aplicó el esquema de metadatos modificado.
 
-## Definir metadatos obligatorios {#define-mandatory-metadata}
+## Definición de metadatos obligatorios {#define-mandatory-metadata}
 
 Puede definir campos obligatorios a nivel de carpeta, que se aplican a los recursos que se cargan en la carpeta. Si carga recursos con metadatos que faltan para los campos obligatorios definidos anteriormente, en la vista de tarjeta aparece una indicación visual de los metadatos que faltan en los recursos.
 
