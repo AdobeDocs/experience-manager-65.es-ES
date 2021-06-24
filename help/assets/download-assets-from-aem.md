@@ -5,9 +5,9 @@ contentOwner: AG
 role: Business Practitioner
 feature: Administración de recursos,Distribución de recursos
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '875'
 ht-degree: 3%
 
 ---
@@ -29,11 +29,6 @@ Los tipos de recurso Conjuntos de imágenes, Conjuntos de giros, Conjuntos de me
 1. Vaya a una carpeta que contenga los recursos que desee descargar.
 1. Seleccione la carpeta o seleccione uno o varios recursos de la carpeta.
 1. En la barra de herramientas, haga clic en **[!UICONTROL Descargar]**.
-
-   ![Opciones disponibles al descargar recursos desde Recursos de Experience Manager](/help/assets/assets/asset-download1.png)
-
-   *Figura: Opciones disponibles en el cuadro de diálogo de descarga.*
-
 1. En el cuadro de diálogo Descargar, seleccione las opciones de descarga que desee.
 
    | Opción de exportación o descarga | Descripción |
@@ -66,7 +61,7 @@ Para permitir la descarga de recursos de su DAM, por ejemplo, al usar algo como 
 
 De forma predeterminada, para las `GET` solicitudes de descarga de archivos, [!DNL Experience Manager] impone un límite de 50 MB en el tamaño de descarga del archivo ZIP. Las descargas iniciadas mediante solicitudes `POST` o la interfaz de usuario no se ven afectadas por este límite.
 
-## Deshabilitar servlet de descarga de recursos {#disable-asset-download-servlet}
+## Deshabilitar el servlet de descarga de recursos {#disable-asset-download-servlet}
 
 El `Asset Download Servlet` se puede deshabilitar en instancias de publicación [!DNL Experience Manager] actualizando la configuración de Dispatcher para bloquear cualquier solicitud de descarga de recursos. El servlet también se puede deshabilitar manualmente a través de la consola OSGi directamente.
 
