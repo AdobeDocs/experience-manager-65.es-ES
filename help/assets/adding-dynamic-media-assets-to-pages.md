@@ -11,9 +11,9 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Componentes,Publicación
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3221454e2d2dfd90b645a4c0303404d44f8d373d
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3252'
 ht-degree: 22%
 
 ---
@@ -28,7 +28,7 @@ Los recursos de Dynamic Media se agregan directamente a la página si utiliza Ad
 >
 >Asegúrese de publicar los recursos antes de agregarlos a las páginas en el Experience Manager. Consulte [Publicación de recursos de Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md).
 
-## Adición de un componente Dynamic Media a una página {#adding-a-dynamic-media-component-to-a-page}
+## Adición de un componente de Dynamic Media a una página {#adding-a-dynamic-media-component-to-a-page}
 
 Añadir un componente de medios 3D, Dynamic Media, Medios interactivos, Medios panorámicos, Recorte inteligente de vídeo o Vídeo 360 a una página es lo mismo que añadir un componente a cualquier página. Los componentes de Dynamic Media se describen en las secciones siguientes.
 
@@ -178,7 +178,7 @@ Para editar la siguiente configuración de Dynamic Media, pulse el icono **[!UIC
 
    ![ajuste de la proporción de píxeles del dispositivo para el ajuste preestablecido de imagen](/help/assets/assets-dm/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/imaging-faq.md#dpr). Tenga en cuenta que los valores del RGPD de imágenes inteligentes de Adobe Experience Manager Dynamic Media se ignoran.
 
 * **[!UICONTROL Título]** : cambie el título de la imagen.
 
@@ -224,7 +224,7 @@ Edite la siguiente configuración de Dynamic Media haciendo clic en **[!UICONTRO
 
 * **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
-#### Al trabajar con Recorte inteligente {#when-working-with-smart-crop}
+#### Trabajar con Recorte inteligente {#when-working-with-smart-crop}
 
 Utilice el componente Dynamic Media para añadir recursos de imagen de recorte inteligente a sus páginas web. Al editar el componente, puede elegir utilizar un ajuste preestablecido de visualizador de vídeo predefinido para reproducir el vídeo en la página.
 
@@ -254,7 +254,7 @@ Edite la siguiente configuración de Dynamic Media haciendo clic en **[!UICONTRO
 
    ![configuración de la proporción de píxeles del dispositivo para el recorte inteligente](/help/assets/assets-dm/dpr-smartcrop.png)
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/imaging-faq.md#dpr). Tenga en cuenta que los valores del RGPD de imágenes inteligentes de Adobe Experience Manager Dynamic Media se ignoran.
 
 * **[!UICONTROL Título]** : cambie el título de la imagen de recorte inteligente.
 
@@ -339,7 +339,7 @@ Puede editar la siguiente configuración tocando **[!UICONTROL Configurar]** en 
 
 Si el ajuste preestablecido de visualizador que está buscando no está visible, compruebe que se ha publicado. Publicar ajustes preestablecidos de visualizador antes de usarlos. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). 
 
-### Componente multimedia de Video 360 {#video-media-component}
+### Componente de medios de vídeo 360 {#video-media-component}
 
 Utilice el componente **[!UICONTROL Video 360 Media]** para representar un vídeo equirectangular en la página web para obtener una experiencia de visualización inmersiva de una habitación, propiedad, ubicación, paisaje o procedimiento médico.
 
