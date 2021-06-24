@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Administración de recursos,Buscar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d06e60baac692c92358244944226b77d5dad4022
+source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
 workflow-type: tm+mt
-source-wordcount: '9775'
+source-wordcount: '9743'
 ht-degree: 4%
 
 ---
@@ -77,11 +77,9 @@ El tamaño por encima del cual un recurso se considera un recurso grande se pued
 
 La opción [!UICONTROL Pausar] no muestra si se carga un archivo de buenos más de 1000 MB con un archivo de menos de 1000 MB. Sin embargo, si cancela la carga de menos de 1000 MB, aparecerá la opción **[!UICONTROL Pausar]**.
 
-Para modificar el límite de tamaño, configure la propiedad `chunkUploadMinFileSize` del nodo `fileupload`en el repositorio CRX.
+Para modificar el límite de tamaño, configure la propiedad `chunkUploadMinFileSize` del nodo `fileupload` en el repositorio CRX.
 
 Al hacer clic en **[!UICONTROL Pausar]**, se desplaza a la opción **[!UICONTROL Reproducir]**. Para reanudar la carga, haga clic en **[!UICONTROL Reproducir]**.
-
-![Reanudar la carga de recursos pausada](assets/resume-paused-upload.png)
 
 Para cancelar una carga continua, haga clic en cerrar (`X`) junto a la barra de progreso. Al cancelar la operación de carga, [!DNL Assets] elimina la parte parcialmente cargada del recurso.
 
@@ -152,7 +150,7 @@ Para superar esta situación, [!DNL Assets] ingesta un recurso a la vez (carga s
 
 La carga serie de recursos está activada de forma predeterminada. Para desactivar la función y permitir la carga simultánea, superponga el nodo `fileupload` en Crx-de y establezca el valor de la propiedad `parallelUploads` en `true`.
 
-### Cargar recursos mediante FTP {#uploading-assets-using-ftp}
+### Carga de recursos mediante FTP {#uploading-assets-using-ftp}
 
 Dynamic Media permite la carga por lotes de recursos a través del servidor FTP. Si tiene intención de cargar recursos de gran tamaño (>1 GB) o carpetas y subcarpetas completas, debe utilizar FTP. Incluso puede configurar la carga FTP para que se produzca de forma programada y recurrente.
 
@@ -212,7 +210,7 @@ Para cancelar un trabajo de carga en curso, haga clic en **[!UICONTROL Cancelar]
 |  | Opciones de eVideo | Puede transcodificar un archivo de vídeo eligiendo un ajuste preestablecido de vídeo.<br> Consulte  [Configuración de las opciones de carga de eVideo](#setting-evideo-upload-options). |
 |  | Valores preestablecidos de conjunto por lotes | Para crear un conjunto de imágenes o un conjunto de giros a partir de los archivos cargados, haga clic en la columna Activo del ajuste preestablecido que desee utilizar. Puede seleccionar más de un ajuste preestablecido. Los ajustes preestablecidos se crean en la página Ajustes de aplicación/Ajustes preestablecidos de conjunto de lotes de Dynamic Media Classic.<br> Consulte  [Configuración de ajustes preestablecidos de conjuntos de lotes para generar automáticamente conjuntos de imágenes y conjuntos de giros ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) para obtener más información sobre la creación de ajustes preestablecidos de conjuntos de lotes.<br> Consulte  [Configuración de ajustes preestablecidos de conjuntos de lotes al cargar](#setting-batch-set-presets-at-upload). |
 
-#### Definir las opciones de edición de imágenes al cargar {#setting-image-editing-options-at-upload}
+#### Definir opciones de edición de imágenes al cargar {#setting-image-editing-options-at-upload}
 
 Al cargar archivos de imagen, incluidos archivos AI, EPS y PSD, puede realizar las siguientes acciones de edición en el cuadro de diálogo [!UICONTROL Opciones de carga de trabajo]:
 
@@ -277,7 +275,7 @@ Utilice las [!UICONTROL Opciones de recorte] y [!UICONTROL Opciones de perfil de
 |  | Photoshop y nombre de capa | Nombra las imágenes después del archivo PSD seguido del nombre de la capa o el número de capa. El número de capa se utiliza si los nombres de capa del archivo PSD son nombres de capa predeterminados de Photoshop. Por ejemplo, una capa denominada Price Tag en un archivo PSD llamado SpringAd se llama Spring Ad_Price Tag. Una capa con el nombre predeterminado Capa 2 se llama Anuncio de primavera_2. |
 | Ancla |  | Especifique cómo se anclan las imágenes en plantillas generadas a partir de la composición en capas producida a partir del archivo PSD. De forma predeterminada, el anclaje es el centro. Un anclaje central permite que las imágenes de reemplazo ocupen el mismo espacio, independientemente de la proporción de aspecto de la imagen de reemplazo. Las imágenes con un aspecto diferente que reemplazan a esta imagen, al hacer referencia a la plantilla y utilizar la sustitución de parámetros, ocupan efectivamente el mismo espacio. Cambie a una configuración diferente si la aplicación requiere que las imágenes de reemplazo rellenen el espacio asignado en la plantilla. |
 
-#### Definir las opciones de carga de PDF {#setting-pdf-upload-options}
+#### Definir opciones de carga de PDF {#setting-pdf-upload-options}
 
 Al cargar un archivo PDF, puede aplicarle formato de varias formas. Recorte sus páginas, extraiga palabras de búsqueda, introduzca una resolución de píxeles por pulgada y elija un espacio de color. Los archivos PDF suelen contener un margen de recorte, marcas de recorte, marcas de registro y otras marcas de impresora. Puede recortar estas marcas desde los lados de las páginas a medida que carga un archivo PDF.
 
@@ -300,7 +298,7 @@ Elija entre las siguientes opciones:
 |  | Forzar como CMYK | Se convierte al espacio de color CMYK. |
 |  | Forzar como escala de grises | Se convierte al espacio de color de escala de grises. |
 
-#### Establecer las opciones de carga de eVideo {#setting-evideo-upload-options}
+#### Definir las opciones de carga de eVideo {#setting-evideo-upload-options}
 
 Para transcodificar un archivo de vídeo eligiendo entre una variedad de ajustes preestablecidos de vídeo.
 
@@ -541,7 +539,7 @@ Al mover recursos arrastrándolos, no se abre el asistente [!UICONTROL Mover rec
 
    Del mismo modo, puede personalizar la imagen de la página Anotación superponiendo `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![Superponga el nodo del selector de representación en CRXDE para personalizar la imagen de la página de anotación](assets/renditionpicker-node-crxde.png)
+   ![Superponga el nodo del selector de representación en CRXDE para personalizar la imagen de la página de anotación](assets/renditionpicker-node.png)
 
    Para configurar las dimensiones de representación de un recurso de vídeo, vaya al nodo `videopicker` en el repositorio CRX en la ubicación `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, superponga el nodo y, a continuación, edite la propiedad adecuada.
 
@@ -655,8 +653,6 @@ En la vista de lista y de columna, aparece la opción **[!UICONTROL Seleccionar]
 
 En la vista de tarjeta, la opción **[!UICONTROL Select]** aparece como una acción rápida.
 
-![Seleccionar una acción rápida en la vista de tarjeta](assets/select_quick_action.png)
-
 Al examinar una carpeta o una colección en la interfaz de usuario [!DNL Assets] en un explorador, puede seleccionar todos los recursos mostrados o cargados mediante la opción [!UICONTROL Seleccionar todo] de la esquina superior derecha. Inicialmente, solo se cargan 100 recursos en la vista de tarjeta y 200 en la vista de lista. Se cargan más recursos a la vista mientras se desplaza por la página de resultados de la búsqueda. La opción [!UICONTROL Select All] selecciona solo los recursos cargados.
 
 Para obtener más información, consulte [ver y seleccionar sus recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -678,8 +674,6 @@ Las herramientas de edición de la interfaz [!DNL Assets] permiten realizar pequ
 1. Para recortar la imagen, haga clic en **[!UICONTROL Recortar]** ![Opción para recortar una imagen](assets/do-not-localize/crop.png).
 
 1. Seleccione la opción que desee en la lista. El área de recorte aparece en la imagen según la opción elegida. La opción **Mano libre** permite recortar la imagen sin restricciones de proporción de aspecto.
-
-   ![Opciones de recorte](assets/crop-options.png)
 
 1. Seleccione el área que desea recortar y cambie el tamaño o la posición en la imagen.
 
@@ -736,11 +730,9 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
 1. Agregue un comentario en el cuadro **[!UICONTROL Comentario]** de la parte inferior de la cronología. También puede marcar un área de la imagen y agregar una anotación en el cuadro de diálogo **[!UICONTROL Agregar anotación]**.
 
-   ![Cuadro Comentario del cuadro de diálogo Agregar anotación](assets/annotation-comment-box.png)
-
 1. Para notificar a un usuario sobre una anotación, especifique la dirección de correo electrónico del usuario y añada el comentario. Por ejemplo, para notificar a Aaron MacDonald sobre una anotación, escriba @aa. Las sugerencias para todos los usuarios coincidentes se muestran en una lista. Seleccione la dirección de correo electrónico de Aaron de la lista para etiquetarla con el comentario. Del mismo modo, puede etiquetar a más usuarios en cualquier lugar dentro de la anotación o antes o después de ella.
 
-   ![Especificar la dirección de correo electrónico del usuario y agregar un comentario para notificar al usuario](assets/annotation-add-user-email.png)
+   ![Especificar la dirección de correo electrónico del usuario y agregar un comentario para notificar al usuario](assets/annotate-gif.gif)
 
    >[!NOTE]
    >
@@ -807,8 +799,6 @@ Para imprimir las anotaciones y revisar el estado, haga clic en **[!UICONTROL Im
 1. Haga clic en **[!UICONTROL Imprimir]** en la barra de herramientas.
 
 1. En el cuadro de diálogo Imprimir, elija la posición en la que desea que se muestre el estado de las anotaciones/revisiones en el PDF. Por ejemplo, si desea que las anotaciones o el estado se impriman en la parte superior derecha de la página que contiene la imagen impresa, utilice la configuración **Superior izquierda**. Se selecciona de forma predeterminada.
-
-   ![Seleccionar la posición de la anotación o el estado de la revisión que se mostrará en el PDF desde el cuadro de diálogo Imprimir](assets/Print-annotation-dialog.png)
 
    Puede elegir otros ajustes en función de la posición en la que desea que aparezcan las anotaciones o el estado en el PDF impreso. Si desea que las anotaciones o el estado aparezcan en una página independiente del recurso impreso, elija **[!UICONTROL Página siguiente]**.
 
@@ -922,7 +912,7 @@ Una colección es un conjunto ordenado de recursos. Utilice las colecciones para
 
 Para obtener más información sobre la administración de colecciones, consulte [administrar colecciones](/help/assets/manage-collections.md).
 
-## Ocultar recursos caducados al ver recursos en la aplicación de escritorio o en el Adobe Asset Link {#hide-expired-assets-via-acp-api}
+## Ocultar recursos caducados al ver recursos en la aplicación de escritorio o en el vínculo de recursos de Adobe {#hide-expired-assets-via-acp-api}
 
 [!DNL Experience Manager] la aplicación de escritorio permite acceder al repositorio DAM desde Windows o Mac Desktop. Adobe Asset Link permite acceder a los recursos desde las aplicaciones de escritorio [!DNL Creative Cloud] compatibles.
 
