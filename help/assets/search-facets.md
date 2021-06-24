@@ -3,15 +3,14 @@ title: Facetas de búsqueda para filtrar los resultados de búsqueda
 description: Cómo crear, modificar y usar facetas de búsqueda en [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Administrator, Developer
-feature: Search
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: 'Búsqueda  '
+exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
-source-wordcount: '2427'
+source-wordcount: '2397'
 ht-degree: 17%
 
 ---
-
 
 # Facetas de búsqueda {#search-facets}
 
@@ -31,8 +30,6 @@ Para las búsquedas de texto completo, agregue el predicado [!UICONTROL Texto co
 
 1. Haga clic en el logotipo [!DNL Experience Manager] y, a continuación, vaya a **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. En la página Buscar en Forms, seleccione **[!UICONTROL Carril de búsqueda de administración de recursos]** y haga clic en **[!UICONTROL Editar]** ![icono de edición](assets/do-not-localize/aemassets_edit.png).
-
-   ![Localizar y seleccionar los recursos o el carril de búsqueda de administración](assets/assets_admin_searchrail.png)
 
    >[!NOTE]
    >
@@ -72,7 +69,7 @@ Para las búsquedas de texto completo, agregue el predicado [!UICONTROL Texto co
 1. Vaya al panel Buscar en la interfaz de usuario [!DNL Assets] . El predicado Propiedad se agrega al panel.
 1. Escriba una descripción para el recurso que se buscará en el cuadro de texto. Por ejemplo, escriba `Adobe`. Cuando realice una búsqueda, los recursos con una descripción que coincida con `Adobe` se enumerarán en los resultados de la búsqueda.
 
-## Agregar un predicado de opciones {#adding-an-options-predicate}
+## Agregar un predicado Opciones {#adding-an-options-predicate}
 
 El predicado Opciones permite agregar varias opciones de búsqueda en el panel Filtros . Puede seleccionar una o varias de estas opciones en el panel Filtros para buscar recursos. Por ejemplo, para buscar recursos en función del tipo de archivo, configure las opciones, como Imágenes, Multimedia, Documentos y Archivos, en el formulario de búsqueda. Después de configurar estas opciones, la búsqueda se realiza en recursos de tipo GIF, JPEG, PNG, etc., al seleccionar la opción Imágenes en el panel Filtros .
 
@@ -139,7 +136,7 @@ El predicado Propiedad de varios valores permite buscar recursos en busca de var
 1. Vaya al panel Filtros de la interfaz de usuario [!DNL Assets] . El predicado **[!UICONTROL Propiedad de varios valores]** se agrega al panel.
 1. Especifique varios valores en el campo Multi Value separados por los delimitadores y realice la búsqueda. El predicado busca una coincidencia de texto exacta para los valores especificados.
 
-## Agregar un predicado Etiquetas {#adding-a-tags-predicate}
+## Agregar un predicado de etiquetas {#adding-a-tags-predicate}
 
 El predicado de etiquetas permite realizar búsquedas de recursos basadas en etiquetas. De forma predeterminada, [!DNL Assets] busca en los recursos una o más etiquetas que coincidan en función de las etiquetas que especifique. En otras palabras, la consulta de búsqueda realiza una operación OR utilizando las etiquetas especificadas. Sin embargo, puede utilizar la opción que coincida con todas las etiquetas para buscar recursos que incluyan todas las etiquetas que especifique.
 
@@ -181,7 +178,7 @@ De forma similar a como se agrega un predicado Propiedad o un predicado Opciones
 
 De forma predeterminada, aparece un icono de bloqueo ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) antes de **[!UICONTROL Assets Admin Search Rail]** en la página **[!UICONTROL Search Forms]**. El icono Bloquear con una opción de la página Buscar en Forms indica que la configuración predeterminada está intacta y no está personalizada. El icono ![bloquear icono cerrado](assets/do-not-localize/lock_closed_icon.svg) desaparece si agrega facetas de búsqueda al formulario indicando que se ha modificado el formulario predeterminado.
 
-![El icono Bloquear con una opción de la página Buscar en Forms indica que la configuración predeterminada está intacta y no está personalizada.](assets/locked_admin_rail.png)
+![Icono Bloquear](assets/locked_admin_rail.png)
 
 Para restaurar la faceta de búsqueda predeterminada, realice estos pasos:
 
@@ -204,5 +201,5 @@ Si no se le ha asignado una función de administrador, aquí tiene una lista de 
 >[!MORELIKETHIS]
 >
 >* [Ampliar la capacidad de búsqueda de recursos](searchx.md)
->* [Buscar recursos](search-assets.md)
+* [Buscar recursos](search-assets.md)
 
