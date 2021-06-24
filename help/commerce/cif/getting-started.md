@@ -4,10 +4,10 @@ description: Obtenga información sobre cómo implementar un proyecto de Conteni
 topics: Commerce
 feature: Marco de integración de Commerce
 thumbnail: 37843.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
+source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '721'
 ht-degree: 5%
 
 ---
@@ -79,6 +79,9 @@ Se pueden configurar las siguientes propiedades:
    >
    > La compatibilidad con los UID se ha introducido en Adobe Commerce (Magento) 2.4.2. Habilite esta opción solo si su servidor de comercio admite un esquema de GraphQL de la versión 2.4.2 o posterior.
 - Identificador de categoría raíz del catálogo: el identificador (UID o ID) de la raíz del catálogo del almacén
+   >[!CAUTION]
+   >
+   > A partir de la versión 2.0.0 de los componentes principales de CIF, la compatibilidad con `id` se eliminó y se reemplazó por `uid`. Si su proyecto utiliza los componentes principales del CIF versión 2.0.0, debe activar la compatibilidad con el UID del catálogo y utilizar un UID de categoría válido como &quot;Identificador de categoría raíz del catálogo&quot;.
 
 La configuración que se muestra arriba es para referencia. Los proyectos deben proporcionar sus propias configuraciones.
 
