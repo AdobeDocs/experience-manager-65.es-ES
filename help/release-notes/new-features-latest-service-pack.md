@@ -4,9 +4,9 @@ description: Novedades de [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 29e045ef3080866a94e0925bc0c176a91092c729
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3726'
+source-wordcount: '3680'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Este artículo resalta las funciones incluidas en el Service Pack más reciente,
 
 >[!NOTE]
 >
->A partir de AEM Service Pack 9, los clientes [!DNL Experience Manager] pueden desarrollar y operar sus [!DNL Experience Manager] aplicaciones con distribuciones de las [!DNL Azul Zulu] compilaciones de OpenJDK, compatibles con los estándares de Java SE.
+>A partir de [!DNL Experience Manager] Service Pack 9, los clientes [!DNL Experience Manager] pueden desarrollar y operar sus [!DNL Experience Manager] aplicaciones con distribuciones de las [!DNL Azul Zulu] compilaciones de OpenJDK, compatibles con Java SE.
 >El Adobe también proporciona soporte para los [!DNL Azul Zulu] JDK a los clientes [!DNL Experience Manager].
 >Puede descargar las versiones relevantes de los [!DNL Azul Zulu] JDK desde [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 >Los derechos de uso de la tecnología Java de Oracle, tal como se distribuyen por Adobe, expirarán a finales de diciembre de 2022. [!DNL Experience Manager] se recomienda a los clientes que planifiquen e implementen el uso de para los  [!DNL Azul Zulu] JDK a más tardar para esta fecha. Para obtener más información sobre el uso de la tecnología [!DNL Oracle Java] y la tecnología [!DNL Azul Zulu], consulte las [preguntas frecuentes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) asociadas.
@@ -36,49 +36,23 @@ Ahora puede restaurar las páginas eliminadas y toda la vista de árbol en una p
 
 * Se ha actualizado el nombre de las regiones y escenarios chinos relacionados con Hong Kong, Macao y Taiwán, para hacerlos coherentes con las opiniones políticas y sociales chinas.
 
-* Se introduce una configuración opcional para minúsculas de los ID de correo electrónico en la respuesta de la api ACP de [!DNL Adobe Experience Manager].
+* Se introduce una configuración opcional para cambiar la cadena en los ID de correo electrónico en la respuesta de API ACP de [!DNL Adobe Experience Manager].
 
-   ![configuración para minúsculas de los ID de correo electrónico en la respuesta ACP de AEM](assets/email-lowcase-config.png)
+   ![configuración para cambiar los ID de correo electrónico a minúsculas en la respuesta ACP de  [!DNL Experience Manager]](assets/email-lowcase-config.png)
 
-* El contraste (con fondo) de texto e iconos en varios lugares se mejora según WCAG, para que sea accesible para usuarios con visión y percepción limitadas del color. Para obtener más información, consulte [Mejoras de accesibilidad en Assets](sp-release-notes.md#assets-accessibility-6590).
+* El contraste del texto y los iconos en el fondo se mejora para diversas funciones. Esta implementación de las directrices WCAG hace que [!DNL Assets] sea más accesible para los usuarios con visión y percepción limitadas del color. Consulte [mejoras de accesibilidad en [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590).
 
-### Dynamic Media {#assets-dynamic-media}
+### [!DNL Dynamic Media] {#assets-dynamic-media}
 
-* [Los medios dinámicos son más ](sp-release-notes.md#assets-accessibility-6590) accesibles en términos de:
+* [[!DNL Dynamic Media] es más ](sp-release-notes.md#assets-accessibility-6590) accesible en términos de:
 
-   * facilidad de uso con teclas de teclado.
-   * contraste (con fondo) de texto, texto de marcador de posición y controles en varios editores.
-   * accesibilidad y narración por parte de los lectores de pantalla.
+   * Facilidad de uso con teclas de teclado.
+   * Contraste (con fondo) de texto, texto de marcador de posición y controles en varios editores.
+   * Accesibilidad y narración por parte de los lectores de pantalla.
 
-* El RGPD de imágenes inteligentes (proporción de píxeles de dispositivo) y la optimización del ancho de banda de la red le permiten ofrecer imágenes de la mejor calidad de forma eficaz; en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Para obtener más información, consulte [Preguntas frecuentes sobre imágenes inteligentes](/help/assets/imaging-faq.md).
+* El RGPD de imágenes inteligentes (proporción de píxeles de dispositivo) y la optimización del ancho de banda de la red le permiten ofrecer imágenes de la mejor calidad de forma eficaz; en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Para obtener más información y cronología, consulte [preguntas frecuentes sobre imágenes inteligentes](/help/assets/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >El calendario de versiones para las mejoras de imágenes inteligentes anteriores es:
-   >
-   >* América del Norte 24 de mayo de 2021 en NA,
-      >
-      >
-   * Europa, Oriente Medio y África 25 de junio de 2021,
-      >
-      >
-   * Asia-Pacífico 19 de julio de 2021.
-
-
-* Se ha introducido compatibilidad con el formato de imagen de próxima generación AVIF en la entrega de Dynamic Media (modificador de URL fmt). Para obtener más información, consulte [servicio de imágenes y renderización de api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
-
-   >[!NOTE]
-   >
-   >El calendario de versiones para la compatibilidad con AVIF es:
-   >
-   >* Norteamérica, 10 de mayo de 2021,
-      >
-      >
-   * Europa, Oriente Medio y África 24 de mayo de 2021,
-      >
-      >
-   * Asia-Pacífico 24 de junio de 2021.
-
+* [!DNL Dynamic Media] delivery (modificador de `fmt` URL) ahora es compatible con el formato de imagen de próxima generación AVIF (formato de imagen AV1). Para obtener más información y cronología, consulte [servicio de imágenes y renderización de API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -102,25 +76,25 @@ Ahora puede recuperar una comunicación interactiva guardada como borrador despu
 
 El servicio reCAPTCHA utiliza `https://www.recaptcha.net/` como dominio predeterminado. Ahora puede modificar la configuración para establecer `https://www.google.com/` o cualquier nombre de dominio personalizado para cargar, procesar y validar el servicio reCAPTCHA.
 
-### Mejoras en los datos de entrada para el paso [!UICONTROL Invocar el servicio del modelo de datos de formulario] del flujo de trabajo {#input-data-enhancements-fdm}
+### Mejoras en los datos de entrada para el paso del flujo de trabajo [!UICONTROL Invocar el servicio del modelo de datos de formulario] {#input-data-enhancements-fdm}
 
 Cuando se selecciona un modelo de datos de formulario y un servicio en el paso de flujo de trabajo [!UICONTROL Invocar el servicio del modelo de datos de formulario], se especifican argumentos de servicio para los datos de entrada.
 
 Si selecciona la opción [!UICONTROL Relative to Payload] para adjuntar un archivo como argumento de servicio, ahora puede especificar la ruta de la carpeta que contiene el archivo en lugar del nombre real del archivo. La definición del nombre de la carpeta, en lugar del nombre del archivo adjunto, permite reutilizar modelos de flujo de trabajo. No se limita el modelo de flujo de trabajo a un único nombre de archivo adjunto.
 
-### Capacidad para utilizar varias páginas de formato en una plantilla de documento de registro {#use-multiple-master-pages-dor-template}
+### Capacidad para utilizar varias páginas de formato en una plantilla Documento de registro {#use-multiple-master-pages-dor-template}
 
 Ahora puede utilizar varias páginas de formato en una plantilla Documento de registro . Como resultado, ahora puede tener diferentes encabezados, pies de página, fuentes, información de logotipo en la página de título y otras páginas de la plantilla.
 
-### Saltos de página de soporte en el documento de registro {#support-page-breaks-dor}
+### Saltos de página de asistencia en el documento de registro {#support-page-breaks-dor}
 
 Ahora puede agregar saltos de página a un documento de registro. Como resultado, si un panel se rompe en las páginas, puede agregar un salto de página para mover el panel a una nueva página de un Documento de registro.
 
-## Funciones principales en los paquetes de servicios [!DNL Experience Manager] 6.5 anteriores {#key-features-previous-service-packs}
+## Funciones principales en paquetes de servicios anteriores de [!DNL Experience Manager] 6.5 {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
-#### Ordene las páginas de Live Copy disponibles para el lanzamiento (6.5.8.0) {#sort-livecopy-pages}
+#### Ordenar las páginas de Live Copy disponibles para el lanzamiento (6.5.8.0) {#sort-livecopy-pages}
 
 Ahora puede ordenar las páginas de Live Copy disponibles para la implementación mediante las propiedades [!UICONTROL Name], [!UICONTROL Last modified date] y [!UICONTROL Last rollout date]. La [!UICONTROL Última fecha de lanzamiento] para una página es una nueva propiedad introducida en esta versión.
 
@@ -164,7 +138,7 @@ La operación de movimiento de página ya está disponible en modo asíncrono. A
 
 Ahora puede seleccionar estilos en el cuadro de diálogo de componentes mediante el sistema de estilos mejorado.
 
-#### Mejoras de rendimiento en varias áreas (6.5.4.0) {#performance-improvements}
+#### Mejoras de rendimiento en diversas áreas (6.5.4.0) {#performance-improvements}
 
 * Se ha reducido el tiempo para cargar e inicializar ContextHub en un sitio (`contexthub.kernel.js`). El resultado es una carga de página más rápida durante una visita al sitio.
 
@@ -230,7 +204,7 @@ Ahora puede seleccionar estilos en el cuadro de diálogo de componentes mediante
 
 [!DNL Assets] el flujo de la interfaz de usuario de tiene una mejor gestión de excepciones. Si un recurso no tiene un tipo para su dimensión, la excepción observada se registra en los archivos de registro.
 
-#### Compatibilidad con activos 3D en [!DNL Dynamic Media] (6.5.5.0) {#support-for-3d}
+#### Compatibilidad con recursos 3D en [!DNL Dynamic Media] (6.5.5.0) {#support-for-3d}
 
 La compatibilidad con imágenes 3D en [!DNL Dynamic Media] permite a los clientes publicar y agregar contenido 3D a páginas web y aplicaciones. La compatibilidad incluye:
 
@@ -265,7 +239,7 @@ Se añade una nueva columna clasificable para la fecha de creación de los recur
 
 ![Columna ordenable para la fecha creada](assets/asset-created-date.png)
 
-#### Búsqueda visual de [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
+#### Búsqueda visual para [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
 [!DNL Assets] los usuarios pueden buscar imágenes visualmente similares. Experience Manager muestra las imágenes con etiquetas inteligentes del repositorio de DAM similares a una imagen seleccionada por el usuario. Consulte [Búsqueda visual](../assets/search-assets.md).
 
@@ -356,7 +330,7 @@ Puede utilizar [!DNL Automated Forms Conversion service] para convertir los PDF 
 
 Ahora puede especificar [configuración regional como selector en la URL del formulario adaptable en lugar de como argumento en la URL del formulario adaptable](../../help/forms/using/supporting-new-language-localization.md). Ayuda a almacenar en caché formularios adaptables traducidos en [!DNL Experience Manager Dispatcher]. En versiones anteriores no se podía almacenar en caché el formulario adaptable traducido. Para obtener información detallada sobre la configuración del almacenamiento en caché para utilizar la configuración regional como selector en la URL del formulario adaptable, consulte [Configuración de la caché del formulario adaptable en Dispatcher](../../help/forms/using/configure-adaptive-forms-cache.md).
 
-#### Guarde el resultado del servicio del modelo de datos de formulario en una variable (6.5.6.0) {#save-fdm-service-to-variable}
+#### Guardar el resultado del servicio del modelo de datos de formulario en una variable (6.5.6.0) {#save-fdm-service-to-variable}
 
 El modelo de datos de formulario permite guardar el resultado de un servicio del modelo de datos de formulario en una variable. [!DNL Experience Manager Forms] ahora asigna automáticamente el tipo del servicio del modelo de datos de formulario al tipo de variable.
 
@@ -364,19 +338,19 @@ El modelo de datos de formulario permite guardar el resultado de un servicio del
 
 Ahora puede [adjuntar varios archivos](../../help/forms/using/introduction-forms-authoring.md) al componente [!UICONTROL Archivo adjunto] de los formularios adaptables.
 
-#### Personalizar las columnas bandeja de entrada de Adobe Experience Manager (6.5.5.0) {#customize-aem-inbox-columns}
+#### Personalizar las columnas Bandeja de entrada de Adobe Experience Manager (6.5.5.0) {#customize-aem-inbox-columns}
 
 Puede personalizar una bandeja de entrada [!DNL Experience Manager] para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo. Los miembros del grupo `administrators` o `workflow-administrators` pueden personalizar las columnas. Para obtener más información, consulte [Control de administración](../sites-authoring/inbox.md#inbox-admin-control).
 
 ![Personalizar columnas de la bandeja de entrada del Experience Manager](assets/customize-columns.gif)
 
-#### Guarde las comunicaciones interactivas como borrador (6.5.5.0) {#save-as-draft}
+#### Guardar comunicaciones interactivas como borrador (6.5.5.0) {#save-as-draft}
 
 Puede utilizar la interfaz de usuario del agente para guardar uno o más borradores para cada comunicación interactiva y recuperar el borrador más adelante para seguir trabajando en él. Puede especificar un nombre diferente para cada borrador para identificarlo. Para obtener más información, consulte [Guardar comunicaciones interactivas como borrador](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
 
 ![Guardar como borrador](assets/save-as-draft.gif)
 
-#### [!DNL Oracle WebLogic] compatibilidad con el servidor de aplicaciones (6.5.5.0)  {#weblogic-support}
+#### [!DNL Oracle WebLogic] compatibilidad con el servidor de aplicaciones (6.5.5.0) {#weblogic-support}
 
 Adobe Experience Manager Forms ha agregado compatibilidad con [!DNL Oracle WebLogic 12] para Adobe Experience Manager Forms en JEE. Puede actualizar desde una versión anterior o configurar un nuevo Experience Manager 6.5 Forms en el servidor JEE en [!DNL Oracle WebLogic] 12.2.1.4 y posterior. Posteriormente corresponde a los cambios menores de la versión, donde x en 12.2.1.x se sustituye por un número de versión.
 
@@ -400,13 +374,13 @@ El modelo de datos de formulario ahora es compatible con la autenticación basad
 
 * Se ha agregado compatibilidad con [!DNL Oracle Real Applications Cluster (RAC) 19c].
 
-#### Generar resultados imprimibles en flujos de trabajo de Forms de Experience Manager (6.5.4.0) {#generate-printable-output}
+#### Generar resultados imprimibles en flujos de trabajo de Experience Manager Forms (6.5.4.0) {#generate-printable-output}
 
 El paso Generar flujo de trabajo de salida imprimible permite integrar un archivo de plantilla de origen con un archivo de datos. Esta integración permite imprimir o guardar diferentes copias del archivo de plantilla. El paso genera una salida PCL, PostScript, ZPL, IPL, TPCL o DPL. Para obtener más información sobre esta función, consulte [Flujo de trabajo centrado en Forms en OSGi - Referencia de pasos](../forms/using/aem-forms-workflow-step-reference.md).
 
 ![Generar salida imprimible](assets/generate-print-output-step.gif)
 
-#### Compatibilidad con múltiples columnas para formularios adaptables y comunicaciones interactivas en el modo Diseño (6.5.4.0) {#multi-column-adaptive-forms}
+#### Compatibilidad con varias columnas para formularios adaptables y comunicaciones interactivas en el modo Diseño (6.5.4.0) {#multi-column-adaptive-forms}
 
 Ahora puede definir el número de columnas de un panel en formularios adaptables y comunicaciones interactivas. Cambie al modo de diseño para utilizar la nueva opción de varias columnas. Para obtener más información, consulte [Uso del modo Diseño para cambiar el tamaño de los componentes](../forms/using/resize-using-layout-mode.md).
 
@@ -434,11 +408,11 @@ Experience Manager Forms incluye las siguientes mejoras de accesibilidad:
 
 * Cada página de un formulario adaptable ahora incluye un título y una etiqueta de referencia principal.
 
-#### Compartir y solicitar acceso a los elementos de la bandeja de entrada de un usuario de Forms Experience Manager (6.5.3.0) {#share-request-access}
+#### Compartir y solicitar acceso a elementos de la bandeja de entrada de un usuario de Forms Experience Manager (6.5.3.0) {#share-request-access}
 
 Puede compartir los elementos de la bandeja de entrada con otro usuario. Una vez que otro usuario obtiene acceso a los elementos de la bandeja de entrada, el usuario puede reclamar y tomar las medidas adecuadas sobre los elementos compartidos. Del mismo modo, puede solicitar acceso a los elementos de la Bandeja de entrada a otros usuarios. Consulte [Compartir y solicitar acceso a los elementos de la bandeja de entrada de un usuario](../forms/using/configure-shared-queues-osgi.md).
 
-#### Configure las opciones fuera de la oficina para los elementos de la Bandeja de entrada de un usuario de Forms Experience Manager (6.5.3.0) {#configure-out-of-office}
+#### Configurar las opciones fuera de la oficina para los elementos de la Bandeja de entrada de un usuario de Forms Experience Manager (6.5.3.0) {#configure-out-of-office}
 
 Si planea estar fuera de la oficina, puede especificar qué sucede con los artículos que se le han asignado durante ese período.
 Tiene la opción de especificar una fecha y hora de inicio y una fecha y hora de finalización para que la configuración fuera de la oficina esté en vigor. Puede establecer una persona predeterminada a la que se envían todos los elementos. Consulte [Configuración fuera de Office](../forms/using/configure-out-of-office-settings.md).
