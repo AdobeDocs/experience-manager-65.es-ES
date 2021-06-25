@@ -1,17 +1,16 @@
 ---
-title: Amplíe la funcionalidad de búsqueda.
+title: Ampliar funcionalidad de búsqueda
 description: Amplíe las capacidades de búsqueda de [!DNL Adobe Experience Manager Assets] más allá de los valores predeterminados.
 contentOwner: AG
 role: Developer
-feature: Search
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: 'Búsqueda  '
+exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '839'
 ht-degree: 19%
 
 ---
-
 
 # Ampliar la búsqueda de recursos {#extending-assets-search}
 
@@ -248,7 +247,7 @@ Para crear un predicado de grupo:
 1. Vaya al explorador y, en la página de muestra (por ejemplo, **press.html**), cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos del predicado (por ejemplo, **left**).
 1. En el modo **Editar** , el nuevo componente ahora está disponible en la barra de tareas (que se encuentra en el grupo **Buscar**). Inserte el componente en la columna **Predicates**.
 
-## Widgets de predicado instalados {#installed-predicate-widgets}
+## Widgets de predicados instalados {#installed-predicate-widgets}
 
 Los siguientes predicados están disponibles como widgets preconfigurados de ExtJS.
 
