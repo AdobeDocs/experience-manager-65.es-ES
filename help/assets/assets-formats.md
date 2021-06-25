@@ -2,16 +2,16 @@
 title: Formatos de archivo compatibles y tipos MIME
 description: Formatos de archivo y tipos MIME admitidos por [!DNL Assets] and [!DNL Dynamic Media] y las funciones compatibles con cada formato.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner, Administrator
-feature: Asset Management,Renditions
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Administración de recursos,Representaciones
+exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1582'
 ht-degree: 10%
 
 ---
-
 
 # Formatos admitidos en [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
@@ -140,7 +140,7 @@ Consulte [Biblioteca de transcodificación de imágenes](imaging-transcoding-lib
 
 La biblioteca [!DNL Adobe Camera Raw] permite a [!DNL Assets] introducir imágenes sin procesar. Consulte [Soporte Camera Raw](camera-raw.md).
 
-## Formatos de documento [!DNL Assets] admitidos {#supported-document-formats}
+## Formatos de documento [!DNL Assets] compatibles {#supported-document-formats}
 
 Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes:
 
