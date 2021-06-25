@@ -11,15 +11,14 @@ topic-tags: deploying
 discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuración
+exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
+source-git-commit: e7038e9c2949cb6326470d0248b640e576c7f919
 workflow-type: tm+mt
-source-wordcount: '3424'
+source-wordcount: '3487'
 ht-degree: 1%
 
 ---
-
 
 # Configuración de almacenes de nodos y almacenes de datos en AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
@@ -58,7 +57,7 @@ Para configurar el almacén de nodos y el almacén de datos, siga estos pasos:
 >
 >En caso de que esté leyendo este artículo como preparación para una actualización desde una instalación de **AEM 5.x**, asegúrese de consultar primero la documentación de [actualización](https://docs.adobe.com/content/docs/en/aem/6-0/deploy/upgrade.html).
 
-### Almacenamiento de nodos de segmento {#segment-node-store}
+### Almacén de nodos de segmento {#segment-node-store}
 
 El almacén de nodos del segmento es la base de la implementación de TarMK de Adobe en AEM6. Utiliza el PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` para la configuración.
 
@@ -143,7 +142,7 @@ Estas opciones de configuración están disponibles:
 >
 >Cuando utilice un NAS para almacenar almacenes de datos de archivos compartidos, asegúrese de usar solamente dispositivos de alto rendimiento para evitar problemas de performance.
 
-## Almacén de datos Amazon S3 {#amazon-s-data-store}
+## Almacenamiento de datos de Amazon S3 {#amazon-s-data-store}
 
 AEM puede configurarse para almacenar datos en el servicio de almacenamiento simple (S3) de Amazon. Utiliza el PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` para la configuración.
 
@@ -230,7 +229,7 @@ Puede utilizar el archivo de configuración con las siguientes opciones:
 * stagingPurgeInterval: El intervalo en segundos para la depuración finalizó las cargas desde la caché de ensayo. El valor predeterminado es **300** segundos (5 minutos).
 * stagingRetryInterval: Intervalo de reintentos en segundos para cargas fallidas. El valor predeterminado es **600** segundos (10 minutos).
 
-### Opciones de región del depósito {#bucket-region-options}
+### Opciones de región de depósito {#bucket-region-options}
 
 <table>
  <tbody>
@@ -470,6 +469,14 @@ Para ejecutar la colección de residuos del almacén de datos, haga lo siguiente
 >
 >Al realizar la colección de residuos en una configuración de almacén de datos agrupada o compartida (con Mongo o Segment Tar), el registro puede mostrar advertencias sobre la incapacidad de eliminar ciertos ID de blob. Esto sucede porque otros clústeres o nodos compartidos a los que no hay información sobre las eliminaciones de ID hacen referencia incorrectamente a los ID de blob eliminados en una colección de residuos anterior. Como resultado, cuando se realiza la colección de residuos, registra una advertencia cuando intenta eliminar un ID que ya se ha eliminado en la última ejecución. Este comportamiento no afecta al rendimiento ni a la funcionalidad.
 
+>[!NOTE]
+> Si está utilizando una configuración compartida del almacén de datos y la colección de residuos del almacén de datos está deshabilitada, la ejecución de la tarea de limpieza binaria de Lucene puede aumentar repentinamente el espacio en disco utilizado. Para evitarlo, debe deshabilitar BlobTracker en todas las instancias de autor y publicación de la siguiente manera:
+>
+> 1. Detenga la instancia de AEM.
+> 2. Añada el parámetro `blobTrackSnapshotIntervalInSecs=L"0"` en el archivo `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`. Este parámetro requiere Oak 1.12.0, 1.10.2 o posterior.
+> 3. Vuelva a iniciar la instancia de AEM.
+
+
 Con versiones más recientes de AEM, la colección de residuos del almacén de datos también se puede ejecutar en almacenes de datos compartidos por más de un repositorio. Para poder ejecutar la colección de residuos del almacén de datos en un almacén de datos compartido, siga los siguientes pasos:
 
 1. Asegúrese de que todas las tareas de mantenimiento configuradas para la colección de residuos del almacén de datos estén deshabilitadas en todas las instancias del repositorio que compartan el almacén de datos.
@@ -482,6 +489,4 @@ Con versiones más recientes de AEM, la colección de residuos del almacén de d
    1. Vaya a la consola JMX y seleccione el Mbean de Repository Manager.
    1. Haga clic en el enlace **Click startDataStoreGC(boolean markOnly)**.
    1. En el cuadro de diálogo siguiente, escriba `false` de nuevo para el parámetro `markOnly`.
-
    Esto recopilará todos los archivos encontrados utilizando la fase de marca utilizada anteriormente y eliminará el resto que no se utilice del almacén de datos.
-
