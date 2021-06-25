@@ -4,14 +4,14 @@ description: Notas de versión específicas de [!DNL Adobe Experience Manager] 6
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 101cbd0d06d370da315e1579a8c2f274a6138b9a
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3857'
+source-wordcount: '3805'
 ht-degree: 4%
 
 ---
 
-# [!DNL Adobe Experience Manager] Notas de la versión de service pack 6.5  {#aem-service-pack-release-notes}
+# [!DNL Adobe Experience Manager] Notas de la versión de service pack 6.5 {#aem-service-pack-release-notes}
 
 ## Información de la versión {#release-information}
 
@@ -30,7 +30,7 @@ Las funciones y mejoras clave introducidas en [!DNL Adobe Experience Manager] 6.
 
 * [!DNL Experience Manager Sites] El componente Dynamic Media Foundation ahora permite activar o desactivar la optimización para dispositivos de mayor resolución al utilizar ajustes preestablecidos de imagen o Recorte inteligente interactivos.
 
-* Para mejorar el rendimiento, la condición hidden=false se mueve de la consulta JCR al evaluador QueryBuilder. Para comprobar que un predicado oculto funciona después del cambio, el Experience Manager comprueba que no se muestra ninguna carpeta oculta en la interfaz.
+* Para mejorar el rendimiento, la condición `hidden=false` se mueve de la consulta JCR al evaluador [!UICONTROL QueryBuilder]. Para comprobar que un predicado oculto funciona después del cambio, [!DNL Experience Manager] comprueba que no se muestra ninguna carpeta oculta.
 
 * Posibilidad de restaurar páginas y árboles eliminados en una página [!DNL Experience Manager Sites].
 
@@ -42,37 +42,11 @@ Las funciones y mejoras clave introducidas en [!DNL Adobe Experience Manager] 6.
 
 * Las ocurrencias de nombres relacionados con Hong Kong, Macao y Taiwán se actualizan según las nuevas convenciones de nomenclatura para las regiones y configuraciones regionales chinas.
 
-* Mejoras de accesibilidad en [!DNL Experience Manager] [Assets](#assets-accessibility-6590) y [Dynamic Media](#accessibility-dm-6590).
+* Mejoras de accesibilidad en [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) y [[!DNL Dynamic Media]](#accessibility-dm-6590).
 
-* El RGPD de imágenes inteligentes (proporción de píxeles de dispositivo) y la optimización del ancho de banda de la red le permiten ofrecer imágenes de la mejor calidad de forma eficaz; en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Para obtener más información, consulte [Preguntas frecuentes sobre imágenes inteligentes](/help/assets/imaging-faq.md).
+* El RGPD de imágenes inteligentes (proporción de píxeles de dispositivo) y la optimización del ancho de banda de la red le permiten ofrecer imágenes de la mejor calidad de forma eficaz; en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Para obtener más información y cronología, consulte [preguntas frecuentes sobre imágenes inteligentes](/help/assets/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >La cronología de versiones para las mejoras de imágenes inteligentes anteriores es:
-   >
-   >* América del Norte 24 de mayo de 2021 en NA,
-      >
-      >
-   * Europa, Oriente Medio y África 25 de junio de 2021,
-      >
-      >
-   * Asia-Pacífico 19 de julio de 2021.
-
-
-* Se ha introducido compatibilidad con el formato de imagen de próxima generación AVIF en la entrega de Dynamic Media (modificador de URL fmt). Para obtener más información, consulte [servicio de imágenes y renderización de api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
-
-   >[!NOTE]
-   >
-   >El calendario de versiones para la compatibilidad con AVIF es:
-   >
-   >* Norteamérica, 10 de mayo de 2021,
-      >
-      >
-   * Europa, Oriente Medio y África 24 de mayo de 2021,
-      >
-      >
-   * Asia-Pacífico 24 de junio de 2021.
-
+* [!DNL Dynamic Media] delivery (modificador de `fmt` URL) es compatible con el formato de imagen de próxima generación AVIF (formato de imagen AV1). Para obtener más información y cronología, consulte [servicio de imágenes y renderización de API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 * Capacidad para enviar un correo electrónico de notificación a un grupo mediante el paso de flujo de trabajo [!UICONTROL Asignar tarea].
 
@@ -376,7 +350,7 @@ Para obtener información sobre las actualizaciones de seguridad, consulte la [[
 >
 >Adobe no recomienda quitar o desinstalar el paquete [!DNL Adobe Experience Manager] 6.5.9.0.
 
-### Instale el Service Pack {#install-service-pack}
+### Instalación del Service Pack {#install-service-pack}
 
 Para instalar el Service Pack en una instancia [!DNL Adobe Experience Manager] 6.5, siga estos pasos:
 
@@ -494,7 +468,7 @@ Para recuperar la copia de tiempo de ejecución, Adobe recomienda sincronizar la
    * La zona interactiva de una imagen interactiva de Dynamic Media no está visible al previsualizar el recurso mediante el visor de banners de ventas.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Tiempo de espera de que el cambio de registro se complete sin registrar.
 
-## Los paquetes OSGi y los paquetes de contenido están incluidos {#osgi-bundles-and-content-packages-included}
+## Paquetes de contenido y paquetes OSGi incluidos {#osgi-bundles-and-content-packages-included}
 
 Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de contenido incluidos en [!DNL Experience Manager] 6.5.9.0:
 
