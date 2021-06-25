@@ -42,7 +42,7 @@ Los siguientes métodos abreviados están disponibles para las consolas Sitios, 
 | Consolas | `?` | Ayuda de métodos abreviados del teclado |
 |  | `/` | Invocar la [búsqueda](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Alterne qué opción de [selector de carril](/help/sites-authoring/basic-handling.md#rail-selector) se debe ver |
-|  | ` | Ocultar raíl |
+|  | &grave; | Ocultar raíl |
 |  | `e` | Editar |
 |  | `p` | Propiedades |
 |  | `m` | Mover |
