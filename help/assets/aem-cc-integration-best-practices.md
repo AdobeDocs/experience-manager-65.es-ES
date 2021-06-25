@@ -2,18 +2,18 @@
 title: Integración con las prácticas recomendadas de Adobe Creative Cloud
 description: Prácticas recomendadas para integrar [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] para optimizar los flujos de trabajo de transferencia de recursos y lograr una alta velocidad de contenido.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner, Administrator
-feature: Collaboration,Adobe Asset Link,Desktop App
+feature: Colaboración,Adobe Asset Link,Aplicación de escritorio
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-translation-type: tm+mt
-source-git-commit: c4cfb709162ca8f8f6e8508516c39542347c6bc4
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
 source-wordcount: '3254'
 ht-degree: 16%
 
 ---
 
-# [!DNL Adobe Experience Manager] y prácticas recomendadas de  [!DNL Creative Cloud] integración  {#aem-and-creative-cloud-integration-best-practices}
+# [!DNL Adobe Experience Manager] y prácticas recomendadas de  [!DNL Creative Cloud] integración {#aem-and-creative-cloud-integration-best-practices}
 
 [!DNL Adobe Experience Manager Assets] es una solución de administración de recursos digitales (DAM) con la que se puede integrar  [!DNL Adobe Creative Cloud] para ayudar a los usuarios de DAM a trabajar junto con los equipos creativos, lo que optimiza la colaboración en el proceso de creación de contenido.
 
@@ -33,7 +33,7 @@ Siga leyendo para saber qué integraciones escoger entre el escritorio y el DAM 
 | Proporcionar activos listos para usar de alta calidad desde [!DNL Adobe Stock] | Los especialistas en marketing ayudan a acelerar el proceso de creación de contenido mediante la asistencia en el abastecimiento y descubrimiento de recursos. Los profesionales creativos utilizan los recursos aprobados directamente desde sus herramientas creativas. | [!DNL Experience Manager Assets];  [!DNL Adobe Stock] marketplace; campos de metadatos |
 | Distribuir y compartir recursos por organizaciones | Los departamentos internos/las sucursales locales y los socios, distribuidores y agencias externos utilizan los recursos aprobados compartidos por la organización principal. La organización desea compartir de forma segura y transparente los recursos creados para una reutilización más amplia. | Brand Portal, Asset Share Commons |
 
-## Las ofertas de Adobe para soportar la colaboración necesitan {#adobe-offerings-to-support-the-collaboration-need}
+## Ofertas de Adobe para apoyar la necesidad de colaboración {#adobe-offerings-to-support-the-collaboration-need}
 
 | Propuesta de valor para las personas implicadas | oferta de Adobe | Superficies implicadas |
 |---|---|---|
@@ -41,7 +41,7 @@ Siga leyendo para saber qué integraciones escoger entre el escritorio y el DAM 
 | Los usuarios empresariales simplifican la apertura y el uso de recursos, editan y cargan cambios en [!DNL Experience Manager] y cargan nuevos archivos en [!DNL Experience Manager] desde el entorno de escritorio. Utilizan una integración genérica para abrir cualquier tipo de recurso en la aplicación de escritorio nativa, incluidos los que no sean de Adobe. | [aplicación de escritorio de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] aplicación de escritorio en escritorio Win y Mac |
 | Los especialistas en marketing y los usuarios empresariales descubren, previsualizan, otorgan licencias y guardan y administran los [!DNL Adobe Stock] recursos desde [!DNL Experience Manager]. Los recursos con licencia y guardados proporcionan [!DNL Adobe Stock] metadatos seleccionados para un mejor gobierno. | [Integración de Experience Manager y Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] interfaz web |
 
-Este artículo se centra principalmente en los dos primeros aspectos de las necesidades de colaboración. La distribución y el abastecimiento de activos a escala se mencionan brevemente como un caso de uso. Para estas necesidades, considere Adobe Brand Portal o Asset Share Commons. Las soluciones alternativas como [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), las soluciones que se pueden crear en función de los componentes de [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/), [Link Share](/help/assets/link-sharing.md), utilizando [Recursos Experience Manager](/help/assets/manage-assets.md) deben revisarse en función de requisitos específicos.
+Este artículo se centra principalmente en los dos primeros aspectos de las necesidades de colaboración. La distribución y el abastecimiento de activos a escala se mencionan brevemente como un caso de uso. Para estas necesidades, considere Adobe Brand Portal o Asset Share Commons. Las soluciones alternativas como [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html), las soluciones que se pueden crear en función de los componentes de [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/), [Link Share](/help/assets/link-sharing.md), utilizando [Experience Manager Assets](/help/assets/manage-assets.md) deben revisarse en función de requisitos específicos.
 
 ![conexiones del Creative Cloud para el Experience Manager, decida qué capacidad utilizar](assets/creative-connections-aem.png)
 
@@ -177,7 +177,7 @@ Las agencias externas y los trabajadores independientes sin acceso directo a la 
 Utilice las siguientes estrategias para proporcionar acceso a los recursos finales/aprobados:
 
 * Utilice la aplicación de escritorio si Asset Link no funciona.
-* Utilice [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para distribuir recursos de forma segura a socios externos
+* Utilice [Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) Experience Manager para distribuir recursos de forma segura a socios externos
 * Utilice una implementación personalizada de un portal de distribución y abastecimiento basado en [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Utilice el control de acceso configurado en [!DNL Experience Manager] y la infraestructura de red necesaria (por ejemplo, la lista de permitidos VPN e IP) para proporcionar a las partes externas acceso a un área específica de contenido en su DAM. Pueden utilizar la [!DNL Experience Manager] interfaz de usuario web para obtener recursos y cargar contenido nuevo en su DAM.
 
