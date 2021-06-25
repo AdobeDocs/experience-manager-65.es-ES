@@ -2,10 +2,11 @@
 title: 'Los esquemas de metadatos definen el diseño de la página de propiedades de metadatos '
 description: El esquema de metadatos define el diseño de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar un esquema de metadatos y cómo aplicar un esquema de metadatos a los recursos.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner,Administrator
 feature: Metadatos
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
+source-git-commit: 9ac5582b2e4859bf4f101c5caa5258fc755ebc46
 workflow-type: tm+mt
 source-wordcount: '3547'
 ht-degree: 7%
