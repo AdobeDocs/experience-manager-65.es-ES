@@ -3,17 +3,16 @@ title: Explicación de los conceptos de metadatos
 description: Obtenga información sobre la necesidad de y los tipos de metadatos que permiten una categorización y organización más sencillas de los recursos.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Metadatos
+exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2735'
+source-wordcount: '2730'
 ht-degree: 6%
 
 ---
 
-
-# Comprender los conceptos de metadatos {#why-we-need-metadata}
+# Explicación de los conceptos de metadatos {#why-we-need-metadata}
 
 Metadatos significa datos sobre los datos. A este respecto, los datos hacen referencia a su recurso digital, por ejemplo una imagen. Los metadatos son esenciales para una administración eficiente de los recursos.
 
@@ -29,7 +28,7 @@ Lo anterior son las propiedades de metadatos básicas que [!DNL Experience Manag
 
 Puede agregar más datos de alto nivel a los recursos digitales, por ejemplo:
 
-* Tipo de recurso (¿es una imagen, un vídeo, un clip de audio o un documento?).
+* Tipo de recurso (una imagen, un vídeo, un clip de audio o un documento).
 * Propietario del recurso.
 * Título del recurso.
 * Descripción del recurso.
@@ -224,7 +223,7 @@ Todos los metadatos heredados de EXIF, ID3 o Microsoft Office se traducen autom�
 Los metadatos de XMP constan de un conjunto de propiedades. Estas propiedades siempre están asociadas con un
 entidad concreta denominada recurso; es decir, las propiedades son &quot;about&quot; el recurso. En el caso de XMP, el recurso siempre es el recurso.
 
-### ecosistema de XMP {#xmp-ecosystem}
+### XMP ecosistema {#xmp-ecosystem}
 
 XMP define un modelo de [metadatos](https://es.wikipedia.org/wiki/Metadatos) que se puede utilizar con cualquier conjunto definido de elementos de metadatos. XMP también define [esquemas](https://en.wikipedia.org/wiki/XML_schema) específicos para propiedades básicas útiles para registrar el historial de un recurso a medida que pasa por varios pasos de procesamiento, desde ser fotografiado, [escaneado](https://es.wikipedia.org/wiki/Esc%C3%A1ner_inform%C3%A1tico) o creado como texto, pasando por etapas de edición fotográfica (como [recorte](https://en.wikipedia.org/wiki/Cropping_%28image%29) o ajuste de color), hasta ensamblarse en una imagen final. XMP permite a cada programa o dispositivo de software añadir su propia información a un recurso digital, que se puede retener en el archivo digital final.
 
@@ -265,11 +264,11 @@ XMP incluir propiedades de uno o varios esquemas. Por ejemplo, un subconjunto t�
 * esquema de administración de derechos de XMP: `xmpRights:WebStatement`, `xmpRights:Marked`.
 * esquema XMP media management: `xmpMM:DocumentID`.
 
-#### Alternativas de idioma {#language-alternatives}
+#### Alternativas lingüísticas {#language-alternatives}
 
 XMP permite agregar una propiedad `xml:lang` a las propiedades de texto para especificar el idioma del texto.
 
-## Trabajar con metadatos IPTC {#support-for-iptc-metadata}
+## Trabajo con metadatos IPTC {#support-for-iptc-metadata}
 
 Descubra cómo [!DNL Adobe Experience Manager Assets] admite los metadatos IPTC, las clasificaciones creativas y las palabras clave agregadas a los recursos a través de [!DNL Adobe Bridge] y otras aplicaciones [!DNL Adobe Creative Cloud].
 
