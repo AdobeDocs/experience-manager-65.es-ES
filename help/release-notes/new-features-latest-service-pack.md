@@ -4,9 +4,9 @@ description: Novedades de [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
+source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
 workflow-type: tm+mt
-source-wordcount: '3680'
+source-wordcount: '3674'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Ahora puede restaurar las páginas eliminadas y toda la vista de árbol en una p
    * Contraste (con fondo) de texto, texto de marcador de posición y controles en varios editores.
    * Accesibilidad y narración por parte de los lectores de pantalla.
 
-* El RGPD de imágenes inteligentes (proporción de píxeles de dispositivo) y la optimización del ancho de banda de la red le permiten ofrecer imágenes de la mejor calidad de forma eficaz; en dispositivos con pantallas de alta resolución y ancho de banda de red restringido. Para obtener más información y cronología, consulte [preguntas frecuentes sobre imágenes inteligentes](/help/assets/imaging-faq.md).
+* Ofrezca imágenes de la mejor calidad de forma eficaz en dispositivos con pantallas de alta resolución y ancho de banda limitado de la red, con imágenes inteligentes DPR (Device Pixel Ratio) y optimización del ancho de banda de la red. Consulte [Preguntas frecuentes sobre imágenes inteligentes](/help/assets/imaging-faq.md).
 
 * [!DNL Dynamic Media] delivery (modificador de `fmt` URL) ahora es compatible con el formato de imagen de próxima generación AVIF (formato de imagen AV1). Para obtener más información y cronología, consulte [servicio de imágenes y renderización de API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
