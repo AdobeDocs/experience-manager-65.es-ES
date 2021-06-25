@@ -1,14 +1,14 @@
 ---
 title: Administrar metadatos de los recursos digitales
-description: Obtenga información sobre los tipos de metadatos y cómo [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] permite organizar y procesar automáticamente los recursos en función de sus metadatos.
+description: Obtenga información sobre los tipos de metadatos y cómo administrar los metadatos de los recursos para organizar y procesar fácilmente los recursos.
 contentOwner: AG
-feature: Tagging, Metadata
+mini-toc-levels: 1
+feature: Etiquetado, metadatos
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-translation-type: tm+mt
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2341'
+source-wordcount: '2339'
 ht-degree: 11%
 
 ---
@@ -117,7 +117,7 @@ La importación de metadatos es asíncrona y no impide el rendimiento del sistem
 
 1. Para verificar la importación correcta, vaya a la página [!UICONTROL Properties] de un recurso y compruebe los valores en los campos.
 
-Para agregar fecha y marca de hora al importar metadatos, use el formato `YYYY-MM-DDThh:mm:ss.fff-00:00` para fecha y hora. La fecha y la hora están separadas por `T`, `hh` es horas en formato de 24 horas, `fff` es nanosegundos y `-00:00` es desplazamiento de zona horaria. Por ejemplo, `2020-03-26T11:26:00.000-07:00` es el 26 de marzo de 2020 a las 11:26:00.000 (hora PST).
+Para agregar fecha y marca de hora al importar metadatos, use el formato `YYYY-MM-DDThh:mm:ss.fff-00:00` para fecha y hora. La fecha y la hora están separadas por `T`, `hh` es horas en formato de 24 horas, `fff` es nanosegundos y `-00:00` es desplazamiento de zona horaria. Por ejemplo, `2020-03-26T11:26:00.000-07:00` es el 26 de marzo de 2020 a las 11:26:00.000 AM, hora del PST.
 
 >[!CAUTION]
 >
@@ -179,7 +179,7 @@ Las carpetas que ya tienen un perfil asignado se indican mediante la visualizaci
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets).
 
-### Aplicación de perfiles de metadatos a carpetas desde la [!UICONTROL interfaz de usuario {#applying-metadata-profiles-to-folders-from-profiles-user-interface} Profiles]
+### Aplicación de perfiles de metadatos a carpetas desde la interfaz de usuario [!UICONTROL Profiles] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Siga los pasos para aplicar el perfil de metadatos:
 
@@ -202,13 +202,13 @@ Las carpetas que ya tienen un perfil asignado se indican mediante la visualizaci
 
 For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
-### Eliminación de un perfil de metadatos de las carpetas {#removing-a-metadata-profile-from-folders}
+### Eliminación de perfiles de metadatos de carpetas {#removing-a-metadata-profile-from-folders}
 
 Al quitar un perfil de metadatos de una carpeta, las subcarpetas heredan automáticamente la eliminación del perfil de su carpeta principal. Sin embargo, cualquier procesamiento de archivos que se haya producido dentro de las carpetas permanece intacto.
 
 Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL Tools]** o desde **[!UICONTROL Properties]** desde la carpeta .
 
-#### Eliminar perfiles de metadatos de carpetas a través de la interfaz de usuario de Perfiles {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+#### Eliminación de perfiles de metadatos de carpetas a través de la interfaz de usuario Perfiles {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 1. Haga clic en el logotipo [!DNL Experience Manager] y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 1. Seleccione el perfil de metadatos que desea eliminar de una carpeta o varias carpetas.
@@ -216,7 +216,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 
    Puede confirmar que el perfil de metadatos ya no se aplica a una carpeta porque el nombre ya no aparece debajo del nombre de la carpeta.
 
-#### Eliminar perfiles de metadatos de carpetas mediante Propiedades {#removing-metadata-profiles-from-folders-via-properties}
+#### Eliminación de perfiles de metadatos de carpetas mediante Propiedades {#removing-metadata-profiles-from-folders-via-properties}
 
 1. Haga clic en el logotipo de [!DNL Experience Manager] y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta desde la que desea eliminar un perfil de metadatos.
 1. En la carpeta, haga clic en la marca de verificación para seleccionarla y, a continuación, haga clic en **[!UICONTROL Properties]**.
@@ -234,7 +234,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 >
 >* [Conceptos y comprensión de metadatos](metadata-concepts.md).
 >* [Editar propiedades de metadatos de varias colecciones](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importación y exportación de metadatos en Recursos de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+* [Importación y exportación de metadatos en Recursos de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
