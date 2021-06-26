@@ -11,9 +11,9 @@ docset: aem65
 feature: Vídeo de RV 360
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -37,20 +37,20 @@ Pulse [Space Station 360](https://mobiletest.scene7.com/s7viewers/html5/Video360
 ![360 ](assets/6_5_360videoiss_simplified.png)
 *Ejemplo de vídeoFotograma de vídeo de la estación espacial 360*
 
-## Vídeo 360/VR y Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
+## Vídeo y Adobe Premiere Pro 360/VR {#vr-video-and-adobe-premiere-pro}
 
 Puede utilizar Adobe Premier Pro para ver y editar material de archivo 360/VR. Por ejemplo, puede colocar logotipos y texto correctamente en una escena y aplicar efectos y transiciones diseñados específicamente para medios equirectangulares.
 
 Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
-## Carga de recursos para su uso con el visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
+## Carga de recursos para su uso con el visor de vídeos 360 {#uploading-assets-for-use-with-the-video-viewer}
 
 Los 360 recursos de vídeo que se cargan en Adobe Experience Manager están etiquetados como **Multimedia** en una página de Asset, de forma similar al recurso de vídeo normal.
 
 ![6_5_360video-](assets/6_5_360video-selecttopreview.png)
 *selecttopreviewRecurso de vídeo cargado 360 que se ve en la vista de tarjeta. El recurso está etiquetado como multimedia.*
 
-**Para cargar recursos para usarlos con el visor de vídeos 360:**
+**Cargue recursos para utilizarlos con el visor de vídeos 360:**
 
 1. Se ha creado una carpeta dedicada al recurso de vídeo 360.
 1. [Aplicar un perfil de vídeo adaptable a la carpeta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
@@ -62,7 +62,7 @@ Los 360 recursos de vídeo que se cargan en Adobe Experience Manager están etiq
    * Lo ideal es que su contenido original de vídeo 360 tenga una de las siguientes resoluciones:
 
       * 1080p - 1920 x 1080, conocida como resolución Full HD o FHD,
-      * 2160p - 3840 x 2160, conocida como resolución de alta definición en 4K, UHD o Ultra. Esta gran resolución de pantalla suele encontrarse en los televisores de gama alta y en los monitores de ordenador. La resolución 2160p a menudo se denomina &quot;4K&quot; porque la anchura es cercana a los 4000 píxeles. En otras palabras, ofrece cuatro veces los píxeles de 1080p.
+      * 2160p - 3840 x 2160, conocida como resolución de alta definición de 4 k, UHD o Ultra. Esta gran resolución de pantalla suele encontrarse en los televisores de gama alta y en los monitores de ordenador. La resolución 2160p a menudo se denomina &quot;4k&quot; porque la anchura es cercana a los 4000 píxeles. En otras palabras, ofrece cuatro veces los píxeles de 1080p.
    * [Cree un ](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) perfil de vídeo adaptable personalizado con representaciones de mayor calidad. Por ejemplo, cree un perfil de vídeo adaptable que contenga las tres configuraciones siguientes:
 
       * width=auto; height=720; velocidad de bits=2500 kbps
@@ -74,7 +74,7 @@ Los 360 recursos de vídeo que se cargan en Adobe Experience Manager están etiq
 
 1. [Cargue el vídeo en la carpeta](/help/assets/managing-video-assets.md#upload-and-preview-video-assets) .
 
-## Anulación de la relación de aspecto predeterminada de 360 vídeos {#overriding-the-default-aspect-ratio-of-videos}
+## Anulación de la proporción de aspecto predeterminada de 360 vídeos  {#overriding-the-default-aspect-ratio-of-videos}
 
 Para que un recurso cargado se clasifique como vídeo de 360 que pretenda usar con el visor de vídeo de 360, el recurso debe tener una proporción de aspecto de 2.
 
@@ -130,7 +130,7 @@ Consulte [Adición de recursos de Dynamic Media a las páginas](/help/assets/add
 
 1. Cerca de la parte superior derecha de la página de vista previa, pulse **[!UICONTROL Cerrar]**.
 
-## Publicación de vídeo 360 {#publishing-video}
+## Publicar vídeo 360 {#publishing-video}
 
 Publique el vídeo 360 para que pueda utilizarlo. Al publicar un vídeo de 360 se activa la dirección URL y el código incrustado. También publica el vídeo 360 en la nube de Dynamic Media, que está integrado con una CDN para una entrega escalable y con rendimiento.
 
