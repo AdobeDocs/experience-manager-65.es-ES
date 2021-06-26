@@ -11,9 +11,9 @@ docset: aem65
 feature: Vídeos interactivos
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 3110c1d4424179dbc9eda9e07cf3353c4b4bb4b0
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '6014'
+source-wordcount: '6013'
 ht-degree: 3%
 
 ---
@@ -42,13 +42,13 @@ Para ver un vídeo interactivo y de ventas en acción, haga clic en [Demostracio
 >
 >Si crea un vídeo interactivo para iniciar una página web cuando un usuario hace clic en una imagen en miniatura, algunos dispositivos impiden que se abra la página web emergente. En estos casos, debe cambiar la configuración del bloqueador de ventanas emergentes en el dispositivo. Por ejemplo, en un iPhone 6 de Apple, pulse **[!UICONTROL Configuración]** > **Safari** > **Bloquear ventanas emergentes** y, a continuación, deslice el control a **[!UICONTROL Desactivado]**. Ahora, al reproducir un vídeo interactivo y hacer clic en una miniatura, se le pedirá que abra la ventana emergente. Si lo acepta, se abre la página web.
 
-### Vea cómo se crean los vídeos interactivos {#watch-how-interactive-videos-are-created}
+### Ver cómo se crean los vídeos interactivos {#watch-how-interactive-videos-are-created}
 
 Descubra cómo se crean los vídeos interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) (7 minutos y 30 segundos).
 [
 Aunque el tutorial de vídeo está marcado con Assets on Demand, los principios y pasos siguen aplicándose a Vídeo interactivo en Adobe Experience Manager Assets.
 
-### Seminario web de éxito del cliente de Adobe {#adobe-customer-success-webinar}
+### Seminario web sobre el éxito de los clientes de Adobe {#adobe-customer-success-webinar}
 
 El seminario web &quot;Uso de vídeo interactivo, uso compartido de vínculos y uso compartido de YouTube en recursos de Experience Manager&quot; le enseña cómo utilizar vídeo interactivo y otras funciones para enlazar eventos impulsados por conversión con su contenido de marketing de vídeo.
 
@@ -254,7 +254,7 @@ Consulte [Carga de recursos mediante la programación de trabajos mediante FTP](
 
    Ahora agregue interactividad al vídeo.
 
-## Añadir interactividad al vídeo {#adding-interactivity-to-your-video}
+## Adición de interactividad al vídeo {#adding-interactivity-to-your-video}
 
 Agregue segmentos de línea de tiempo a un vídeo mediante el editor visual local de la página Crear vídeo interactivo .
 
@@ -508,7 +508,7 @@ Después de guardar el vídeo interactivo, el vídeo se abre inmediatamente en l
 
 Consulte [Publicación de recursos](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de vídeo interactivos.
 
-## Integración de un vídeo interactivo con su sitio web {#integrating-an-interactive-video-with-your-website}
+## Integración de un vídeo interactivo con el sitio web {#integrating-an-interactive-video-with-your-website}
 
 Después de cargar un vídeo, añadir segmentos de cronología y publicar el vídeo interactivo, ya está listo para agregarlo al sitio web existente.
 
@@ -712,7 +712,7 @@ Donde `inner_container` es una referencia a un elemento `DIV` administrado por e
 
 Los pasos para localizar realmente el elemento del cuadro de diálogo modal y adjuntarlo al contenedor anterior dependen de las mayúsculas y minúsculas. Una vez más, puede solicitar la ayuda de su desarrollador de front-end que esté familiarizado con la implementación de Quickview que es necesaria.
 
-En el caso del sitio web de muestra, el cuadro de diálogo modal de vista rápida se implementa como `DIV` con el ID modal de vista rápida adjunto directamente al documento `BODY`. Por lo tanto, el código para mover ese cuadro de diálogo al contenedor del visor es tan sencillo como el siguiente:
+Si utilizamos el sitio web de muestra, el cuadro de diálogo modal de vista rápida se implementa como `DIV` con el ID modal de vista rápida adjunto directamente al documento `BODY`. Por lo tanto, el código para mover ese cuadro de diálogo al contenedor del visor es tan sencillo como el siguiente:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -767,6 +767,6 @@ El sitio web de la demostración final con el vídeo interactivo totalmente inte
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Crear ventanas emergentes personalizadas mediante las vistas rápidas {#using-quickviews-to-create-custom-pop-ups}
+## Crear ventanas emergentes personalizadas con vistas rápidas {#using-quickviews-to-create-custom-pop-ups}
 
 Consulte [Creación de ventanas emergentes personalizadas mediante vistas rápidas](/help/assets/custom-pop-ups.md).
