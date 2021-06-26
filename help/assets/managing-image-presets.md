@@ -2,6 +2,7 @@
 title: Administración de ajustes preestablecidos de imagen de Dynamic Media
 description: Comprenda los ajustes preestablecidos de imagen de Dynamic Media y aprenda a crear, modificar y administrar ajustes preestablecidos de imagen
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
+mini-toc-levels: 3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Ajustes preestablecidos de imagen
 role: Business Practitioner, Administrator
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3851'
 ht-degree: 8%
 
 ---
@@ -67,7 +68,7 @@ Para administrar los ajustes preestablecidos de imagen en el Experience Manager,
 >
 >El sistema muestra varias representaciones al seleccionar **[!UICONTROL Representaciones]** en la Vista de detalles de un recurso. Puede aumentar o disminuir el número de ajustes preestablecidos de imagen que se muestran. Consulte [Aumento del número de ajustes preestablecidos de imagen que se muestran](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Los formatos de recorte inteligente, Adobe Illustrator (AI), Postscript (EPS) y archivos PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Formatos de archivo de SmartCultivos, Adobe Illustrator (AI), Postscript (EPS) y PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 >[!NOTE]
 >
@@ -107,7 +108,7 @@ Puede acceder a las opciones de los componentes de proceso `Rasterize PDF/AI Ima
 
 Toque en Adobe Experience Manager en la parte superior izquierda, vaya a **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. En la página Modelos de flujo de trabajo , seleccione **[!UICONTROL Recurso de actualización de DAM]** y, en la barra de herramientas, pulse **[!UICONTROL Editar]**. En la página de flujo de trabajo [!UICONTROL Activo de actualización de DAM], pulse dos veces el componente de proceso `Rasterize PDF/AI Image Preview Rendition` para abrir su cuadro de diálogo Propiedades del paso.
 
-#### Rasterizar las opciones de representación de vista previa de imágenes PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
+#### Rasterizar opciones de representación de vista previa de imágenes PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Argumentos para rasterizar el flujo de trabajo de PDF o AI](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -149,7 +150,7 @@ La anchura máxima y la altura máxima limitan la resolución a la que se debe r
 
 El componente de proceso `Rasterize PDF/AI Image Preview Rendition` tiene un máximo definido para garantizar que no cree imágenes demasiado grandes en la memoria. Estas imágenes grandes pueden desbordarse la memoria proporcionada a la JVM (máquina virtual Java™). Se debe tener cuidado de proporcionar a la JVM suficiente memoria para administrar el número configurado de flujos de trabajo paralelos, con cada uno con el potencial de crear una imagen al tamaño máximo configurado.
 
-### Formato de archivo de InDesign (INDD) {#indesign-indd-file-format}
+### Formato del archivo InDesign (INDD) {#indesign-indd-file-format}
 
 Si tiene intención de admitir la ingesta de archivos INDD para poder generar una representación dinámica de este formato de archivo, es posible que desee revisar la siguiente información antes de crear ajustes preestablecidos de imagen.
 
@@ -180,7 +181,7 @@ La integración de Dynamic Media utiliza las siguientes secuencias de comandos:
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>Sí</td>
-   <td>Genera un subrecurso JPEG de 300 ppp para cada página. El subrecurso JPEG es un recurso real almacenado bajo el recurso de InDesign. También está optimizado y se convierte en un PTIFF mediante el flujo de trabajo <code>DAM Update Asset</code>.<br /> </td>
+   <td>Genera un subrecurso JPEG de 300 ppi para cada página. El subrecurso JPEG es un recurso real almacenado bajo el recurso de InDesign. También está optimizado y se convierte en un PTIFF mediante el flujo de trabajo <code>DAM Update Asset</code>.<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -228,7 +229,7 @@ El tamaño de las miniaturas se define en el siguiente formato: **[!UICONTROL wi
 
 Los ajustes preestablecidos de imagen que cree estarán disponibles como representaciones dinámicas cuando se previsualizan los recursos. El Experience Manager muestra varias representaciones dinámicas al ver un recurso desde **[!UICONTROL Vista de detalles > Representaciones]**. Puede aumentar o reducir el límite de representaciones que se muestran.
 
-**Para aumentar o reducir el número de ajustes preestablecidos de imagen de Dynamic Media que se muestran:**
+**Aumente o disminuya el número de ajustes preestablecidos de imagen de Dynamic Media que se muestran:**
 
 1. Vaya al CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Vaya al nodo de listado de ajustes preestablecidos de imagen en `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -358,7 +359,7 @@ Cuando crea o edita ajustes preestablecidos de imagen, tiene las opciones descri
  </tbody>
 </table>
 
-#### Opciones de pestaña avanzadas {#advanced-tab-options}
+#### Opciones de ficha avanzadas {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -408,7 +409,7 @@ Cuando crea o edita ajustes preestablecidos de imagen, tiene las opciones descri
     </ul>
     <div>
       El enfoque se describe en
-     <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/sharpening_images.pdf">Imágenes de enfoque</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">Imágenes de enfoque</a>.
     </div> </td>
   </tr>
   <tr>
@@ -502,7 +503,7 @@ A continuación se presentan algunos ejemplos básicos de lo que puede hacer con
 1. Seleccione un ajuste preestablecido y haga clic en **[!UICONTROL Editar]**. Se abre la ventana **[!UICONTROL Editar ajuste preestablecido de imagen]**.
 1. Realice cambios y haga clic en **[!UICONTROL Guardar]** para guardar los cambios o en **[!UICONTROL Cancelar]** para cancelar los cambios.
 
-## Publicar ajustes preestablecidos de imagen de Dynamic Media {#publishing-image-presets}
+## Publicación de ajustes preestablecidos de imagen de Dynamic Media {#publishing-image-presets}
 
 Si está ejecutando Dynamic Media en modo híbrido, debe publicar manualmente los ajustes preestablecidos de imagen.
 
