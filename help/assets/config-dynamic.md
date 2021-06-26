@@ -1,6 +1,7 @@
 ---
 title: 'Configuración de Dynamic Media: modo híbrido'
 description: Obtenga información sobre cómo configurar Dynamic Media en modo híbrido.
+mini-toc-levels: 3
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuración,Modo híbrido
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 48463a72108621e94f1c50cf43f911794ec759dd
 workflow-type: tm+mt
-source-wordcount: '7843'
+source-wordcount: '7838'
 ht-degree: 1%
 
 ---
@@ -60,7 +61,7 @@ Si es cliente de Dynamic Media, debe utilizar el envío híbrido como mecanismo 
 
 ![chlimage_1-507](assets/chlimage_1-507.png)
 
-## Configuraciones admitidas de Dynamic Media {#supported-dynamic-media-configurations}
+## Configuraciones de Dynamic Media compatibles {#supported-dynamic-media-configurations}
 
 Las tareas de configuración que siguen hacen referencia a los términos siguientes:
 
@@ -187,25 +188,25 @@ Para habilitar Dynamic Media, debe habilitar el modo de ejecución de Dynamic Me
 
    Estos registros solo se utilizan cuando Dynamic Media está habilitado. No se incluyen en el paquete **Download Full** que se genera desde la página `system/console/status-Bundlelist`; cuando llame al servicio de atención al cliente si tiene un problema con Dynamic Media, anexe ambos registros al problema.
 
-### Si instaló un Experience Manager en un puerto o una ruta de contexto diferente... {#if-you-installed-aem-to-a-different-port-or-context-path}
+### Si instaló el Experience Manager en un puerto o ruta de contexto diferente... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-Si está implementando el [Experience Manager en un servidor de aplicaciones](/help/sites-deploying/application-server-install.md) y tiene Dynamic Media habilitado, debe configurar el dominio **self** en el externalizador. De lo contrario, la generación de miniaturas de los recursos no funciona correctamente para los recursos de Dynamic Media.
+Si está implementando el [Experience Manager en un servidor de aplicaciones](/help/sites-deploying/application-server-install.md) y tiene Dynamic Media habilitado, debe configurar el **autodominio** en el externalizador. De lo contrario, la generación de miniaturas de los recursos no funciona correctamente para los recursos de Dynamic Media.
 
-Además, si ejecuta inicio rápido en un puerto o ruta de contexto diferente, también debe cambiar el dominio **self**.
+Además, si ejecuta inicio rápido en un puerto o ruta de contexto diferente, también debe cambiar el **autodominio**.
 
 Cuando Dynamic Media está habilitado, las representaciones de miniaturas estáticas para los recursos de imagen se generan mediante Dynamic Media. Para que la generación de miniaturas funcione correctamente en Dynamic Media, el Experience Manager debe realizar una solicitud de URL y conocer el número de puerto y la ruta de contexto.
 
 En Experience Manager:
 
-* El dominio **self** del [externalizador](/help/sites-developing/externalizer.md) se utiliza para recuperar el número de puerto y la ruta de contexto.
-* Si no hay ningún dominio **self** configurado, el número de puerto y la ruta de contexto se recuperan del servicio HTTP Jetty.
+* El **autodominio** del [externalizador](/help/sites-developing/externalizer.md) se utiliza para recuperar el número de puerto y la ruta de contexto.
+* Si no se ha configurado ningún **autodominio**, el número de puerto y la ruta de contexto se recuperan del servicio HTTP Jetty.
 
-En una implementación de QuickStart WAR para Experience Manager, el número de puerto y la ruta de contexto no se pueden derivar, por lo que debe configurar un dominio **self**. Consulte la [documentación del externalizador](/help/sites-developing/externalizer.md) sobre cómo configurar el dominio **self**.
+En una implementación de QuickStart WAR para Experience Manager, el número de puerto y la ruta de contexto no se pueden derivar, por lo tanto debe configurar un **autodominio**. Consulte la [documentación del externalizador](/help/sites-developing/externalizer.md) sobre cómo configurar el **autodominio**.
 
 >[!NOTE]
-En una implementación independiente [Quickstart del Experience Manager](/help/sites-deploying/deploy.md), generalmente no es necesario configurar un dominio **self** porque el número de puerto y la ruta de contexto se pueden configurar automáticamente. Sin embargo, si todas las interfaces de red están desactivadas, debe configurar el dominio **self**.
+En una [implementación independiente de inicio rápido del Experience Manager](/help/sites-deploying/deploy.md), generalmente no es necesario configurar un **autodominio** porque el número de puerto y la ruta de contexto se pueden configurar automáticamente. Sin embargo, si todas las interfaces de red están desactivadas, debe configurar el **autodominio**.
 
-## Desactivación de Dynamic Media {#disabling-dynamic-media}
+## Desactivación de Dynamic Media  {#disabling-dynamic-media}
 
 Dynamic Media no está habilitado de forma predeterminada. Sin embargo, si ha habilitado previamente Dynamic Media, puede desactivarlo más tarde.
 
@@ -227,7 +228,7 @@ Para deshabilitar Dynamic Media después de haberla habilitado, debe quitar el i
    Una vez desactivado el modo de ejecución de Dynamic Media, el paso del flujo de trabajo que genera la representación `cqdam.pyramid.tiff` se omite automáticamente. También deshabilita la compatibilidad con representaciones dinámicas y otras funciones de Dynamic Media.
    Tenga en cuenta también que cuando el modo de ejecución de Dynamic Media está desactivado después de configurar el servidor de Experience Manager, todos los recursos cargados en ese modo de ejecución no son válidos.
 
-## (Opcional) Migración de ajustes preestablecidos y configuraciones de Dynamic Media de 6.3 a 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (Opcional) Migración de ajustes preestablecidos y configuraciones de Dynamic Media de 6.3 a 6.5 a cero tiempos de inactividad {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 Si está actualizando Experience Manager - Dynamic Media de 6.3 a 6.5 (que ahora incluye la capacidad de cero implementaciones de tiempo de inactividad), debe ejecutar el siguiente comando curl. El comando migra todos los ajustes preestablecidos y configuraciones de `/etc` a `/conf` en el CRXDE Lite.
 
@@ -350,7 +351,7 @@ También puede comprobarlo realizando una de las siguientes acciones:
 
 Al configurar la autenticación, estos son algunos problemas con los que puede encontrar soluciones. Antes de comprobar estos problemas, asegúrese de haber configurado la replicación.
 
-#### Problema: Código de estado HTTP 401 con mensaje - Autorización requerida {#problem-http-status-code-with-message-authorization-required}
+#### Problema: Código de estado HTTP 401 con mensaje: se requiere autorización {#problem-http-status-code-with-message-authorization-required}
 
 Este problema puede deberse a un error al configurar KeyStore para el usuario `dynamic-media-replication`.
 
@@ -414,7 +415,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
 **Solución:**
 asegúrese de que el proceso Java™ del Autor del Experience Manager tiene la propiedad del sistema  `-Djavax.net.ssl.trustStore=` configurada en un almacén de confianza válido.
 
-#### Problema: KeyStore no está configurado o no se inicializa {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### Problema: KeyStore no está configurado o no está inicializado {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 Es probable que este problema se deba a una corrección o a un paquete de funciones que sobrescribe el nodo de usuario de Dynamic Media o del almacén de claves.
 
@@ -498,7 +499,7 @@ Asegúrese de que ya ha hecho lo siguiente antes de comenzar esta prueba:
 
 Otra forma de probar que los recursos se han entregado es añadir req=exists a su URL.
 
-## Configuración de los Cloud Services de Dynamic Media {#configuring-dynamic-media-cloud-services}
+## Configuración de Cloud Services de Dynamic Media {#configuring-dynamic-media-cloud-services}
 
 El Cloud Service de Dynamic Media admite la publicación y entrega híbridos de imágenes y vídeo, análisis de vídeo y codificación de vídeo, entre otras cosas.
 
@@ -662,7 +663,7 @@ Los filtros permiten excluir *los recursos* de la replicación en el nodo de pub
 
 ### Uso de filtros de recurso predeterminados para la replicación {#using-default-asset-filters-for-replication}
 
-Si está utilizando Dynamic Media para (1) imágenes en producción de **o** (2) imágenes y vídeo, puede utilizar los filtros predeterminados que Adobe proporciona tal cual. Los siguientes filtros están activos de forma predeterminada:
+Si utiliza Dynamic Media para (1) imágenes en producción de *o* (2) imágenes y vídeo, puede utilizar los filtros predeterminados que Adobe proporciona tal cual. Los siguientes filtros están activos de forma predeterminada:
 
 <table>
  <tbody>
@@ -889,7 +890,7 @@ Para definir la configuración del servidor de imágenes de Dynamic Media:
    | Tamaño máximo de caché | 20000000 | Tamaño máximo de la caché de respuesta en bytes. |
    | Entradas máximas en caché | 100 000 | Número máximo de entradas permitidas en la caché. |
 
-### Configuración de manifiesto predeterminada {#default-manifest-settings}
+### Configuración predeterminada de manifiesto {#default-manifest-settings}
 
 El manifiesto predeterminado permite configurar los valores predeterminados que se utilizan para generar las respuestas de entrega de Dynamic Media. Puede ajustar la calidad (calidad JPEG, resolución, modo de remuestreo), el almacenamiento en caché (caducidad) y evitar la representación de imágenes demasiado grandes (defaultpix, defaultthumbpix, maxpix).
 
@@ -1092,11 +1093,11 @@ Están instalados los siguientes perfiles de color:
  <tbody>
   <tr>
    <th><p>Nombre</p> </th>
-   <th><p>Espacio color</p> </th>
+   <th><p>Espacio de colores</p> </th>
    <th><p>Descripción</p> </th>
   </tr>
   <tr>
-   <td>AdobeRGB</td>
+   <td>Adobe RGB</td>
    <td>RGB</td>
    <td>Adobe RGB (1998)</td>
   </tr>
@@ -1138,12 +1139,12 @@ Están instalados los siguientes perfiles de color:
   <tr>
    <td>EuroscaleCoated</td>
    <td>CMYK</td>
-   <td>Euroscale Coated v2</td>
+   <td>Euro scale Coated v2</td>
   </tr>
   <tr>
    <td>EuroscaleUncovered</td>
    <td>CMYK</td>
-   <td>Euroscale Uncovered v2</td>
+   <td>Euro scale Uncovered v2</td>
   </tr>
   <tr>
    <td>JapanColorCoated</td>
@@ -1315,6 +1316,6 @@ Consulte [Entrega de recursos de Dynamic Media](/help/assets/delivering-dynamic-
  </tbody>
 </table>
 
-### Componentes de WCM Dynamic Media y Medios interactivos {#wcm-dynamic-media-and-interactive-media-components}
+### WCM Dynamic Media y componentes de medios interactivos {#wcm-dynamic-media-and-interactive-media-components}
 
 Las páginas WCM que hacen referencia a componentes de Dynamic Media y Medios interactivos hacen referencia al servicio de entrega.
