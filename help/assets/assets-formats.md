@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner, Administrator
 feature: Administración de recursos,Representaciones
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1581'
 ht-degree: 10%
 
 ---
@@ -89,7 +89,7 @@ Consulte también [Uso de recursos 3D en Dynamic Media.](/help/assets/assets-3d.
 
 ## Formatos de imagen de trama no admitidos en Dynamic Media {#unsupported-image-formats-dynamic-media}
 
-En la siguiente lista se describen los subtipos de formatos de archivo de imagen de trama que *no* son compatibles con Dynamic Media.
+La siguiente lista describe los subtipos de formatos de archivo de imagen de trama que *no* son compatibles con Dynamic Media.
 
 Consulte también [Detectar formatos de archivo no compatibles para Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
@@ -136,7 +136,7 @@ La biblioteca de transcodificación de imágenes admite los tipos MIME JPG/JPEG,
 
 Consulte [Biblioteca de transcodificación de imágenes](imaging-transcoding-library.md).
 
-## Cámara sin procesar compatible {#supported-camera-raw}
+## Admitido Camera Raw {#supported-camera-raw}
 
 La biblioteca [!DNL Adobe Camera Raw] permite a [!DNL Assets] introducir imágenes sin procesar. Consulte [Soporte Camera Raw](camera-raw.md).
 
@@ -211,10 +211,10 @@ Además de la funcionalidad anterior, considere lo siguiente:
 | MP4 | MPEG-4 | H264/AVC (todos los perfiles) | - |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, XDCAM de Sony, DVCAM de Sony, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, animación de Apple |
 | FLV, F4V | Flash de Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectoriales) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
 | M4V | Apple iTunes | H264/AVC | - |
-| AVI | Intercalación A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI | Intercalación A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MXF | MXF | XDCAM de Sony, MPEG-2, MPEG-4, DVCP de Panasonic | - |
@@ -251,7 +251,7 @@ A continuación se describe la aplicabilidad de las funcionalidades habituales d
 
 >[!NOTE]
 >
->Cargar y distribuir archivos JavaScript puede o no ser seguro. Si es necesario, las superposiciones se pueden utilizar para evitar que los usuarios carguen archivos JS.
+>Cargar y distribuir archivos JavaScript puede o no ser seguro. Si es necesario, puede utilizar superposiciones para evitar que los usuarios carguen archivos JS.
 
 ## Tipos MIME admitidos {#supported-mime-types}
 
@@ -301,7 +301,7 @@ Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/globa
 | PPT | application/vnd.ms-powerpoint |  |  |
 | PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
-| RTF | application/rtf |  |  |
+| TTF | application/rtf |  |  |
 | SVG | image/svg+xml |  |  |
 | SWF | aplicación/x-shock-flash |  |  |
 | TAR | application/x-tar |  |  |
