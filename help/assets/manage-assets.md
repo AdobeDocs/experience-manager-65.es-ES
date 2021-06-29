@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Administración de recursos,Buscar
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
+source-git-commit: dc483b9871cebce64f7b60fec2144f1f19ef28ec
 workflow-type: tm+mt
-source-wordcount: '9743'
+source-wordcount: '9788'
 ht-degree: 4%
 
 ---
@@ -765,7 +765,17 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 
 ### Ver anotaciones guardadas {#viewing-saved-annotations}
 
-1. Para ver las anotaciones guardadas para un recurso, vaya a la ubicación del recurso y abra la página del recurso.
+Solo se puede ver una anotación a la vez.
+
+>[!NOTE]
+>
+>Si selecciona varias anotaciones, la anotación más reciente estará visible en la interfaz de usuario.
+>
+>La selección múltiple solo es compatible para imprimir el recurso anotado como PDF.
+
+**Para ver las anotaciones guardadas de un recurso:**
+
+1. Vaya a la ubicación del recurso y abra la página del recurso.
 
 1. En la interfaz del Experience Manager, seleccione **[!UICONTROL Línea de tiempo]**.
 1. En la lista **[!UICONTROL Mostrar todo]** de la cronología, seleccione **[!UICONTROL Comentarios]** para filtrar los resultados según las anotaciones.
@@ -781,6 +791,10 @@ Las anotaciones de vídeo solo se admiten en navegadores con formatos de vídeo 
 Si un recurso tiene anotaciones o se ha sometido a un flujo de trabajo de revisión, puede imprimir el recurso junto con anotaciones y revisar el estado como archivo PDF para su revisión sin conexión.
 
 También puede elegir imprimir solo las anotaciones o el estado de revisión.
+
+>[!NOTE]
+>
+>Puede seleccionar varias anotaciones al imprimir el recurso anotado como PDF.
 
 Para imprimir las anotaciones y revisar el estado, haga clic en **[!UICONTROL Imprimir]** y siga las instrucciones del asistente. La opción **[!UICONTROL Imprimir]** aparece en la barra de herramientas solo cuando el recurso tiene asignado al menos una anotación o un estado de revisión.
 
