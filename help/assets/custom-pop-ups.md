@@ -1,6 +1,6 @@
 ---
-title: Creación de ventanas emergentes personalizadas mediante vistas rápidas
-seo-title: Uso de las vistas rápidas para crear ventanas emergentes personalizadas
+title: Crear ventanas emergentes personalizadas con la vista rápida
+seo-title: Utilice la vista rápida para crear ventanas emergentes personalizadas
 description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en las ventanas emergentes.
 seo-description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en las ventanas emergentes.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
@@ -12,18 +12,18 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Visores
 role: Business Practitioner, Administrator
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# Uso de las vistas rápidas para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
+# Utilice la vista rápida para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
 
 La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede almacenar en déclencheur contenido personalizado para que se muestre en las ventanas emergentes. En función del visor, esta funcionalidad permite a los usuarios pulsar en un punto interactivo, una imagen en miniatura o un mapa de imágenes para ver información o contenido relacionado.
 
-Las vistas rápidas son compatibles con los siguientes visores en Dynamic Media:
+Quickview es compatible con los siguientes visores en Dynamic Media:
 
 * Imágenes interactivas (zonas interactivas en las que se puede hacer clic)
 * Vídeo interactivo (imágenes en miniatura en las que se puede hacer clic durante la reproducción del vídeo)
@@ -31,7 +31,7 @@ Las vistas rápidas son compatibles con los siguientes visores en Dynamic Media:
 
 Aunque la funcionalidad de cada visor es diferente, el proceso de creación de una vista rápida es el mismo en los tres visualizadores admitidos.
 
-**Para usar las vistas rápidas para crear ventanas emergentes personalizadas:**
+**Para usar la vista rápida para crear ventanas emergentes personalizadas:**
 
 1. Cree una vista rápida para un recurso cargado.
 
@@ -114,7 +114,7 @@ EjemploSupongamos que utiliza el siguiente código incrustado de ejemplo en la p
 
 1. Ahora debe configurar el controlador `quickViewActivate`.
 
-   El controlador `quickViewActivate` controla las vistas rápidas en el visor. El controlador contiene la lista de variables y las llamadas de función que se utilizan con la vista rápida. El código incrustado proporciona una asignación para la variable de SKU establecida en la vista rápida y una llamada de función `loadQuickView` de ejemplo.
+   El controlador `quickViewActivate` controla la vista rápida en el visor. El controlador contiene la lista de variables y las llamadas de función que se utilizan con la vista rápida. El código incrustado proporciona una asignación para la variable de SKU establecida en la vista rápida y una llamada de función `loadQuickView` de ejemplo.
 
    **Variables**
 mappingMap para usar en su página web con el valor SKU y las variables genéricas contenidas en Quickview:
