@@ -11,9 +11,9 @@ docset: aem65
 feature: Vídeos interactivos
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
-source-wordcount: '6013'
+source-wordcount: '6015'
 ht-degree: 3%
 
 ---
@@ -72,35 +72,35 @@ Cuando termine el tutorial en la última sección Ejemplo , la página web de de
 
 Pasos de vídeo interactivo:
 
-1. **(Opcional) Identificación de variables de vista rápida** : comience identificando las variables dinámicas que usa la implementación de vista rápida existente. Las variables se utilizan para asignar miniaturas de productos a la vista rápida de su producto correspondiente al crear el vídeo interactivo. Consulte [(Opcional) Identificación de variables de vista rápida](#optional-identifying-quickview-variables).
-   *Este paso solo es necesario si se cumple* lo siguiente: ・ Desea agregar interactividad al vídeo activando Quickviews.
-・ La implementación de Experience Manager *no* utiliza un marco de integración de comercio electrónico para extraer datos de productos a Experience Manager desde cualquier solución de comercio electrónico, como IBM® WebSphere® Commerce, Elastic Path, hybris o Intershop. Consulte [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+1. **(Opcional) Identifique las variables de vista rápida** : comience identificando las variables dinámicas que usa su implementación de vista rápida existente. Las variables se utilizan para asignar miniaturas de productos a la vista rápida de su producto correspondiente al crear el vídeo interactivo. Consulte [(Opcional) Identificar variables de vista rápida](#optional-identifying-quickview-variables).
+   *Este paso solo es necesario si se cumple* lo siguiente: ・ Desea agregar interactividad al vídeo activando Quickview.
+・ La implementación de Experience Manager *no* utiliza un marco de integración de comercio electrónico para extraer datos de productos a Experience Manager desde cualquier solución de comercio electrónico, como IBM® WebSphere® Commerce, Elastic Path, Hybris o Intershop. Consulte [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
-1. **(Opcional) Creación de un ajuste preestablecido de visualizador de vídeo interactivo** : Personalice el aspecto y el comportamiento de los distintos componentes que componen el reproductor, como la barra de desplazamiento del vídeo y las miniaturas interactivas.
+1. **(Opcional) Crear un ajuste preestablecido de visualizador de vídeo interactivo** : personalice el aspecto y el comportamiento de los distintos componentes que componen el reproductor, como la barra de desplazamiento del vídeo y las miniaturas interactivas.
 No es necesario crear su propio ajuste preestablecido de visualizador de vídeo interactivo si desea utilizar en su lugar los ajustes preestablecidos de visualizador de vídeo interactivo `Shoppable_Video_Light` o `Shoppable_Video_Dark` predeterminados.
-Consulte [Creación de un nuevo ajuste preestablecido de visualizador](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) (opcional) y [Consideraciones especiales para crear un ajuste preestablecido de visualizador interactivo](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
+Consulte [Crear un ajuste preestablecido de visualizador](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) (opcional) y [Consideraciones especiales para crear un ajuste preestablecido de visualizador interactivo](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
 
-1. **Carga de un vídeo y sus recursos de imagen asociados** : cargue un vídeo y las imágenes asociadas que desee que sean interactivas.
-Consulte [Carga de un vídeo y sus recursos de miniaturas asociados](#uploading-a-video-and-its-associated-thumbnail-assets).
+1. **Cargue un vídeo y sus recursos de imagen asociados** : cargue un vídeo y las imágenes asociadas que desee que sean interactivas.
+Consulte [Cargar un vídeo y sus recursos de miniaturas asociados](#uploading-a-video-and-its-associated-thumbnail-assets).
 
-1. **Adición de interactividad al vídeo** : añada uno o más segmentos de tiempo al vídeo. A continuación, asocie miniaturas de imágenes dentro de esos segmentos de tiempo. Asigne cada miniatura de imagen a una acción, como un hipervínculo, una vista rápida o un fragmento de experiencia.
+1. **Añadir interactividad al vídeo** : añada uno o más segmentos de tiempo al vídeo. A continuación, asocie miniaturas de imágenes dentro de esos segmentos de tiempo. Asigne cada miniatura de imagen a una acción, como un hipervínculo, una vista rápida o un fragmento de experiencia.
 (El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager).
 Para terminar, publique los recursos de vídeo interactivos. La publicación crea el código incrustado o la URL que se copian y aplican a la página de aterrizaje del sitio web. Consulte [Añadir interactividad al vídeo](#adding-interactivity-to-your-video).
-Consulte [Publicación de recursos](/help/assets/publishing-dynamicmedia-assets.md).
+Consulte [Publicar recursos](/help/assets/publishing-dynamicmedia-assets.md).
 
-1. **Adición de un vídeo interactivo al sitio web o al sitio web en Experience Manager** : si utiliza Sitios Experience Manager o Comercio electrónico, o ambos, puede agregar el vídeo interactivo a una página web. Arrastre el componente Medios interactivos a la página en Experience Manager. Consulte [Adición de recursos de Dynamic Media a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
-Utilice el código incrustado o la URL para integrar el vídeo interactivo con las experiencias del sitio web. Consulte [Integración de un vídeo interactivo con su sitio web](#integrating-an-interactive-video-with-your-website).
-Si utiliza un WCM de terceros (Web Content Manager), debe integrar el nuevo vídeo interactivo con la implementación de vista rápida existente que se utiliza en el sitio web. Consulte [Integración de un vídeo interactivo con una vista rápida](#integrating-an-interactive-video-with-an-existing-quickview) existente.
-   [Adición de recursos de Dynamic Media a las páginas](/help/assets/adding-dynamic-media-assets-to-pages.md)
+1. **Agregue un vídeo interactivo a su sitio web o a su sitio web en Experience Manager** : si usa Sitios Experience Manager o Comercio electrónico, o ambos, puede agregar el vídeo interactivo a una página web. Arrastre el componente Medios interactivos a la página en Experience Manager. Consulte [Agregar recursos de Dynamic Media a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Utilice el código incrustado o la URL para integrar el vídeo interactivo con las experiencias del sitio web. Consulte [Integrar un vídeo interactivo con su sitio web](#integrating-an-interactive-video-with-your-website).
+Si utiliza un WCM de terceros (Web Content Manager), debe integrar el nuevo vídeo interactivo con la implementación de vista rápida existente que se utiliza en el sitio web. Consulte [Integrar un vídeo interactivo con una vista rápida](#integrating-an-interactive-video-with-an-existing-quickview) existente.
+   [Agregar recursos de Dynamic Media a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-## (Opcional) Identificación de variables de vista rápida {#optional-identifying-quickview-variables}
+## (Opcional) Identifique las variables de vista rápida {#optional-identifying-quickview-variables}
 
 >[!NOTE]
 >
 >Esta tarea solo es necesaria si los siguientes son verdaderos:
 >
->* Desea agregar interactividad al vídeo activando las vistas rápidas.
->* Su implementación de Experience Manager *no* utiliza un marco de integración de comercio electrónico para extraer datos de productos a Experience Manager desde cualquier solución de comercio electrónico, como IBM® WebSphere® Commerce, Elastic Path, hybris o Intershop. Consulte [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+>* Desea agregar interactividad al vídeo activando en Quickview.
+>* Su implementación de Experience Manager *no* utiliza un marco de integración de comercio electrónico para extraer datos de productos a Experience Manager desde cualquier solución de comercio electrónico, como IBM® WebSphere® Commerce, Elastic Path, Hybris o Intershop. Consulte [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 >
 >
@@ -187,7 +187,7 @@ Cuando se aplica el enfoque anterior al sitio web de Ejemplo, tiene una página 
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
-Después de activar todas las vistas rápidas del producto disponibles en la página, obtiene la siguiente lista de solicitudes de vista rápida realizadas en el servidor:
+Después de activar todas las vistas rápidas del producto que están disponibles en la página, obtiene la siguiente lista de solicitudes de vista rápida realizadas en el servidor:
 
 * datafeed/candles-233396346.json
 * datafeed/candles-233978050.json
@@ -223,7 +223,7 @@ En función de este análisis, concluye que puede utilizar las dos variables sig
 
 Ya está listo para cargar un vídeo y sus recursos de miniaturas asociados.
 
-## (Opcional) Creación de un ajuste preestablecido de visualizador de vídeo interactivo {#optional-creating-an-interactive-video-viewer-preset}
+## (Opcional) Crear un ajuste preestablecido de visualizador de vídeo interactivo {#optional-creating-an-interactive-video-viewer-preset}
 
 Puede omitir esta tarea y continuar con la siguiente si desea utilizar cualquiera de los tipos de ajustes preestablecidos de visualizador de vídeo interactivo predeterminados y predeterminados `Shoppable_Video_dark` o `Shoppable_Video_light`.
 
@@ -235,15 +235,15 @@ Si lo desea, puede crear su propio ajuste preestablecido de visualizador de víd
 
 Un ajuste preestablecido de visualizador de vídeo interactivo procesa correctamente el vídeo y todos los segmentos de línea de tiempo que ha añadido. También utiliza una vista rápida predeterminada de ejemplo al hacer clic en una miniatura de producto en el modo de vista previa, de modo que pueda probar su interactividad antes de publicarla.
 
-Después de guardar el ajuste preestablecido de visualizador, su estado se establece automáticamente en **On **en la página Ajustes preestablecidos del visualizador. Este estado significa que está visible en el componente Dynamic Media y siempre que se obtiene una vista previa de un vídeo con él. Asegúrese de publicar también manualmente el nuevo ajuste preestablecido de visualizador.
+Después de guardar el ajuste preestablecido de visualizador, su estado se establece automáticamente en **Activado** en la página Ajustes preestablecidos de visualizador. Este estado significa que está visible en el componente Dynamic Media y siempre que se obtiene una vista previa de un vídeo con él. Asegúrese de publicar también manualmente el nuevo ajuste preestablecido de visualizador.
 
-Consulte [Creación de un nuevo ajuste preestablecido de visualizador](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) para crear su propio ajuste preestablecido de visualizador de vídeo interactivo.
+Consulte [Crear un nuevo ajuste preestablecido de visualizador](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) para crear su propio ajuste preestablecido de visualizador de vídeo interactivo.
 
-## Carga de un vídeo y sus recursos de miniaturas asociados {#uploading-a-video-and-its-associated-thumbnail-assets}
+## Cargar un vídeo y sus recursos de miniaturas asociados {#uploading-a-video-and-its-associated-thumbnail-assets}
 
 Si ya ha cargado los recursos de vídeo y miniaturas, vaya a [Añadir interactividad al vídeo](#adding-interactivity-to-your-video).
 
-Si ha cargado los vídeos o las imágenes incorrectas o desea eliminar los vídeos o imágenes cargados que ya no necesite, consulte [Eliminación de recursos](/help/assets/manage-assets.md#deleting-assets).
+Si ha cargado los vídeos o las imágenes incorrectas o desea eliminar los vídeos o imágenes cargados que ya no necesite, consulte [Eliminar recursos](/help/assets/manage-assets.md#deleting-assets).
 
 Para cargar un vídeo y sus recursos de miniaturas asociados:
 
@@ -254,7 +254,7 @@ Consulte [Carga de recursos mediante la programación de trabajos mediante FTP](
 
    Ahora agregue interactividad al vídeo.
 
-## Adición de interactividad al vídeo {#adding-interactivity-to-your-video}
+## Añadir interactividad al vídeo {#adding-interactivity-to-your-video}
 
 Agregue segmentos de línea de tiempo a un vídeo mediante el editor visual local de la página Crear vídeo interactivo .
 
@@ -494,31 +494,31 @@ Después de guardar el vídeo interactivo, el vídeo se abre inmediatamente en l
 
 1. Publique el vídeo interactivo. La publicación crea el código incrustado o la URL que, finalmente, copia y pega en las experiencias del sitio web.
 
-   Si ha añadido interactividad con las vistas rápidas, utilice únicamente el código incrustado; si ha añadido interactividad con páginas web hipervinculadas, también puede utilizar la URL publicada. Sin embargo, tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
+   Si ha añadido interactividad con Quickview, utilice únicamente el código incrustado; si ha añadido interactividad con páginas web hipervinculadas, también puede utilizar la URL publicada. Sin embargo, tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
 
-   Consulte [Publicación de recursos](publishing-dynamicmedia-assets.md).
+   Consulte [Publicar recursos](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
    >
-   >Para publicar un vídeo de ventas con Quickviews, asegúrese de publicar cada uno de los recursos de imagen relacionados del vídeo desde el área de comercio, por separado.
+   >Para publicar un vídeo de ventas con Quickview, asegúrese de publicar también cada uno de los recursos de imagen relacionados del vídeo desde el área de comercio, por separado.
 
-   Después de agregar segmentos de cronología y publicar el vídeo interactivo, estará listo para agregarlo a la página de aterrizaje del sitio web existente. Consulte [Integración de un vídeo interactivo con su sitio web](#integrating-an-interactive-video-with-your-website).
+   Después de agregar segmentos de cronología y publicar el vídeo interactivo, estará listo para agregarlo a la página de aterrizaje del sitio web existente. Consulte [Integrar un vídeo interactivo con su sitio web](#integrating-an-interactive-video-with-your-website).
 
-## Publicación de recursos de vídeo interactivos {#publishing-interactive-video-assets}
+## Publicar recursos de vídeo interactivos {#publishing-interactive-video-assets}
 
-Consulte [Publicación de recursos](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de vídeo interactivos.
+Consulte [Publicar recursos](/help/assets/publishing-dynamicmedia-assets.md) para obtener más información sobre cómo publicar recursos de vídeo interactivos.
 
 ## Integración de un vídeo interactivo con el sitio web {#integrating-an-interactive-video-with-your-website}
 
 Después de cargar un vídeo, añadir segmentos de cronología y publicar el vídeo interactivo, ya está listo para agregarlo al sitio web existente.
 
-Si es cliente de Sitios Experience Manager, puede agregar el vídeo interactivo arrastrando el componente de Medios interactivos a su página. Consulte [Adición de recursos de Dynamic Media a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Si es cliente de Sitios Experience Manager, puede agregar el vídeo interactivo arrastrando el componente de Medios interactivos a su página. Consulte [Agregar recursos de Dynamic Media a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Si es cliente independiente de Recursos Experience Manager, puede agregar manualmente el vídeo interactivo al sitio web tal como se describe en esta sección.
 
 1. Copie el código incrustado o la URL del vídeo interactivo publicado.
-Consulte [Incrustación del visualizador de imágenes o vídeos en una página web](/help/assets/embed-code.md).
-Si ha añadido interactividad con las vistas rápidas, utilice únicamente el código incrustado; si ha añadido interactividad con páginas web hipervinculadas, también puede utilizar la URL publicada. Sin embargo, tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
+Consulte [Incrustar el visualizador de imágenes o vídeos en una página web](/help/assets/embed-code.md).
+Si ha añadido interactividad con Quickview, utilice únicamente el código incrustado; si ha añadido interactividad con páginas web hipervinculadas, también puede utilizar la URL publicada. Sin embargo, tenga en cuenta que el método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
 
 1. En el código de página web del objetivo, identifique dónde se encuentra el vídeo estático.
 1. Elimine el vídeo estático y reemplace el código por el código incrustado o la URL que ha copiado de Recursos Experience Manager, tal como está.
@@ -528,7 +528,7 @@ El código incrustado copiado está configurado para un entorno interactivo, de 
 >
 >En este punto, si ha añadido interactividad solo con páginas web hipervinculadas, ha terminado.
 >
->Sin embargo, si ha añadido interactividad al déclencheur de una vista rápida, las miniaturas junto al vídeo interactivo solo tienen fines de visualización; aún no están integrados con las vistas rápidas existentes. En este caso, ahora debe integrar el vídeo interactivo con las vistas rápidas existentes en el sitio web.
+>Sin embargo, si ha añadido interactividad al déclencheur de una vista rápida, las miniaturas junto al vídeo interactivo solo tienen fines de visualización; aún no están integrados con su vista rápida existente. En este caso, ahora debe integrar el vídeo interactivo con la vista rápida existente en el sitio web.
 
 **Ejemplo**
 
@@ -563,7 +563,7 @@ Tenga en cuenta que el código incrustado es estándar:
 </script>
 ```
 
-La integración es tan sencilla como eliminar el código incrustado de vídeo y reemplazarlo por el código incrustado de vídeo interactivo de Experience Manager. Puede ver el resultado en la siguiente URL. Aunque muestra un vídeo interactivo presente en la página, aún no está integrado con las vistas rápidas existentes:
+La integración es tan sencilla como eliminar el código incrustado de vídeo y reemplazarlo por el código incrustado de vídeo interactivo de Experience Manager. Puede ver el resultado en la siguiente URL. Aunque muestra un vídeo interactivo presente en la página, aún no está integrado con la vista rápida existente:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
@@ -595,7 +595,7 @@ En un controlador de eventos de este tipo, el código front-end hace lo siguient
 * Crea una URL de vista rápida basada en los datos de las miniaturas.
 * Déclencheur el proceso de carga de la vista rápida desde el servidor y de renderización en la pantalla para su visualización.
 
-Además, el visor de vídeo interactivo es compatible con el modo de funcionamiento de pantalla completa. El usuario final déclencheur las vistas rápidas haciendo clic en una miniatura sin salir de la pantalla completa. Para lograr esta funcionalidad, se modifica el código del front-end de modo que el cuadro de diálogo modal de vista rápida esté adjunto al contenedor del visor. No agregue el BODY del documento ni ningún otro elemento de página web que no esté disponible cuando el visor esté en modo de pantalla completa. El código que realiza este trabajo debe escuchar una o más llamadas de retorno de visualizador que se envían después del visualizador que se carga en la página.
+Además, el visor de vídeo interactivo es compatible con el modo de funcionamiento de pantalla completa. El usuario final déclencheur Quickview haciendo clic en una miniatura sin salir de la pantalla completa. Para lograr esta funcionalidad, se modifica el código del front-end de modo que el cuadro de diálogo modal de vista rápida esté adjunto al contenedor del visor. No agregue el BODY del documento ni ningún otro elemento de página web que no esté disponible cuando el visor esté en modo de pantalla completa. El código que realiza este trabajo debe escuchar una o más llamadas de retorno de visualizador que se envían después del visualizador que se carga en la página.
 
 El código incrustado devuelto por el Experience Manager ya tiene un controlador de eventos listo para usar. Se comenta como se ve en el siguiente fragmento de código resaltado:
 
@@ -712,7 +712,7 @@ Donde `inner_container` es una referencia a un elemento `DIV` administrado por e
 
 Los pasos para localizar realmente el elemento del cuadro de diálogo modal y adjuntarlo al contenedor anterior dependen de las mayúsculas y minúsculas. Una vez más, puede solicitar la ayuda de su desarrollador de front-end que esté familiarizado con la implementación de Quickview que es necesaria.
 
-Si utilizamos el sitio web de muestra, el cuadro de diálogo modal de vista rápida se implementa como `DIV` con el ID modal de vista rápida adjunto directamente al documento `BODY`. Por lo tanto, el código para mover ese cuadro de diálogo al contenedor del visor es tan sencillo como el siguiente:
+Si utiliza el sitio web de muestra, el cuadro de diálogo modal de vista rápida se implementa como `DIV` con el ID modal de vista rápida adjunto directamente al documento `BODY`. Por lo tanto, el código para mover ese cuadro de diálogo al contenedor del visor es tan sencillo como el siguiente:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -767,6 +767,6 @@ El sitio web de la demostración final con el vídeo interactivo totalmente inte
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Crear ventanas emergentes personalizadas con vistas rápidas {#using-quickviews-to-create-custom-pop-ups}
+## Crear ventanas emergentes personalizadas con la vista rápida {#using-quickviews-to-create-custom-pop-ups}
 
-Consulte [Creación de ventanas emergentes personalizadas mediante vistas rápidas](/help/assets/custom-pop-ups.md).
+Consulte [Creación de ventanas emergentes personalizadas mediante Quickview](/help/assets/custom-pop-ups.md).
