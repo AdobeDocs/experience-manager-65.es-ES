@@ -2,14 +2,13 @@
 cloud: Experience Cloud
 product: adobe experience manager
 sub-product: formularios
-solution: Experience Manager, Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms, Experience Manager 6.5
 audience: end-user
 user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '3718'
 ht-degree: 4%
@@ -132,7 +131,7 @@ ht-degree: 4%
    + [Trabajo con el modelo de datos de formulario](using/work-with-form-data-model.md)
    + [Uso del modelo de datos de formulario](using/using-form-data-model.md)
 + Forms adaptable: creación básica {#adaptive-forms-basic-authoring}
-   + [Prácticas recomendadas para usar formularios adaptables](using/adaptive-forms-best-practices.md) 
+   + [Prácticas recomendadas para usar formularios adaptables ](using/adaptive-forms-best-practices.md)
    + [Creación de un formulario adaptable](using/creating-adaptive-form.md)
    + [Fragmentos de formulario adaptables](using/adaptive-form-fragments.md)
    + [Configuración de la acción Enviar](using/configuring-submit-actions.md)
@@ -568,7 +567,7 @@ ht-degree: 4%
    + Servicio de información del sistema {#system-information-service}
       + [Configuración del servicio de información del sistema](/help/forms/using/admin-help/set-system-information-service.md)
       + [API del servicio de información del sistema](/help/forms/using/admin-help/system-information-service-apis.md)
-+ Informes de procesos  {#process-reporting}
++ Informes de procesos {#process-reporting}
    + [Introducción a la creación de informes de procesos](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [Introducción a la creación de informes de procesos](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [Funcionamiento de los informes de procesos](/help/forms/using/process-reporting/process-reporting-architecture.md)
@@ -619,7 +618,7 @@ ht-degree: 4%
          + [APIuick Start (SOAP) de PDF Utilities Service para Java](developing/pdf-utilities-service-java-api.md)
          + [Inicio rápido de la API del servicio de repositorio](developing/repository-service-api-quick-starts.md)
          + [Inicio rápido de la API de Java del servicio de firma (SOAP)](developing/signature-service-java-api-quick.md)
-         + [Inicio rápido (SOAP) de la API de Java del servicio del administrador de tareas](developing/task-manager-service-java-api.md)
+         + [Inicio rápido (SOAP) de la API de Java del servicio del Administrador de tareas](developing/task-manager-service-java-api.md)
          + [Inicio rápido de la API de Java del Administrador de usuarios (SOAP)](developing/user-manager-java-api-quick.md)
          + [XMP Utilities Service Java APIQuick Start (SOAP)](developing/xmp-utilities-service-java-api.md)
       + Invocación de AEM Forms en JEE mediante API {#invoking-aem-forms-jee-apis}
