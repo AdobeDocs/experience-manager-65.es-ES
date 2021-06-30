@@ -1,15 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: Guía del usuario sobre desarrollo en AEM 6.5
 breadcrumb-title: Guía de desarrollo
 user-guide-description: Esta guía explica cómo crear una instancia de AEM.
 feature: Desarrollo de
 role: Developer
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 16%
@@ -43,7 +42,7 @@ ht-degree: 16%
    + [Bibliotecas de etiquetas](taglib.md)
    + Plantillas{#templates}
       + [Plantillas](templates.md)
-      + [Plantillas de página: editables  ](page-templates-editable.md)
+      + [Plantillas de página: editables ](page-templates-editable.md)
       + [Plantillas de página: estáticas](page-templates-static.md)
       + [Plantillas de fragmento de contenido](content-fragment-templates.md)
       + [Representación de plantilla adaptable](templates-adaptive-rendering.md)
