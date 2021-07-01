@@ -3,16 +3,15 @@ title: Buscar recursos digitales e imágenes en [!DNL Adobe Experience Manager]
 description: Obtenga información sobre cómo encontrar los recursos necesarios en [!DNL Adobe Experience Manager] mediante el panel Filtros y cómo utilizar los recursos que aparecen en la búsqueda.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Search, Metadata
+feature: Búsqueda, metadatos
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: fd283b840830bef613689f81cf753e226fb834d7
+exl-id: 588433b2-564a-430f-9d04-480465ece2ad
+source-git-commit: 791f5b5b2544eed1b3564dabf4bc3ed8df092653
 workflow-type: tm+mt
-source-wordcount: '5577'
+source-wordcount: '5575'
 ht-degree: 5%
 
 ---
-
 
 # Buscar recursos en [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
@@ -29,7 +28,7 @@ ht-degree: 5%
 | [Buscar clasificación y aumento](#searchrank) | [Extracción de texto](#extracttextupload) | [Colecciones inteligentes](#collections) |
 | [Búsqueda avanzada: filtrado y ámbito de búsqueda](#scope) | [Predicados personalizados](#custompredicates) | [Comprender y solucionar problemas relacionados con resultados inesperados](#unexpected-results) |
 | [Buscar desde otras soluciones y aplicaciones](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[aplicación de escritorio de Experience Manager](#desktop-app)</li><li>[Imágenes de Adobe Stock](#adobe-stock)</li><li>[Recursos de Dynamic Media](#dynamic-media)</li></ul> |  |  |
-| [Selector de recursos](#assetpicker) |  |  |
+| [Selector de recursos](#asset-picker) |  |  |
 | [](#limitations) Limitaciones y  [sugerencias](#tips) |  |  |
 | [Ejemplos ilustrados](#samples) |  |  |
 
@@ -88,7 +87,7 @@ El uso de etiquetas inteligentes agrega una cláusula `OR` adicional para encont
 
 * Recursos inteligentes etiquetados con cualquiera de las palabras clave (comportamiento de etiquetas inteligentes).
 
-### Buscar sugerencias mientras escribe {#searchsuggestions}
+### Buscar sugerencias a medida que escribe {#searchsuggestions}
 
 Cuando empieza a escribir palabras clave, [!DNL Experience Manager] sugiere las posibles palabras clave o frases de búsqueda. Las sugerencias se basan en los metadatos de los recursos existentes. [!DNL Experience Manager] indexa todos los campos de metadatos para ayudarle con la búsqueda. Para proporcionar sugerencias de búsqueda, el sistema utiliza los valores de los siguientes campos de metadatos. Para proporcionar sugerencias de búsqueda, considere rellenar los campos siguientes con palabras clave adecuadas:
 
@@ -148,7 +147,7 @@ Para buscar imágenes que sean visualmente similares a una imagen seleccionada p
 
 Desde la interfaz de usuario [!DNL Experience Manager], los usuarios pueden buscar [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) y obtener una licencia para los recursos necesarios. Agregue `Location: Adobe Stock` en la barra Omnisearch. También puede utilizar el panel Filtros para buscar todos los recursos con licencia o sin licencia, o buscar un recurso específico mediante el número de archivo de Adobe Stock.
 
-### Recursos Dynamic Media {#dmassets}
+### Recursos de Dynamic Media {#dmassets}
 
 Puede filtrar imágenes de Dynamic Media seleccionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** en el panel **[!UICONTROL Filtros]**. Filtra y muestra recursos como conjuntos de imágenes, carruseles, conjuntos de medios mixtos y conjuntos de giros.
 
@@ -217,11 +216,11 @@ Los usuarios y especialistas en marketing de la línea de negocios utilizan Bran
 
 Desde la interfaz de usuario [!DNL Experience Manager], los usuarios pueden buscar recursos de Adobe Stock y obtener licencias para los recursos necesarios. Agregue `Location: Adobe Stock` en el campo Omnisearch . También puede utilizar el panel **[!UICONTROL Filtros]** para encontrar todos los recursos con licencia o sin licencia, o buscar un recurso específico mediante el número de archivo de Adobe Stock. Consulte [administrar [!DNL Adobe Stock] imágenes en [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Buscar [!DNL Dynamic Media] activos {#dynamic-media}
+### Buscar [!DNL Dynamic Media] recursos {#dynamic-media}
 
 Puede filtrar imágenes de Dynamic Media seleccionando **[!UICONTROL Dynamic Media]** > **[!UICONTROL Conjuntos]** en el panel **[!UICONTROL Filtros]**. Filtra y muestra recursos como conjuntos de imágenes, carruseles, conjuntos de medios mixtos y conjuntos de giros. Durante la creación de páginas web, los autores pueden buscar conjuntos desde el Buscador de contenido. Los filtros para conjuntos están disponibles en un menú emergente.
 
-### Buscar recursos en el Buscador de contenido al crear páginas web {#content-finder}
+### Buscar recursos en el buscador de contenido al crear páginas web {#content-finder}
 
 Los autores pueden utilizar el buscador de contenido para buscar en el repositorio de DAM los recursos relevantes y utilizar los recursos en las páginas web que crean. Los autores también pueden utilizar la funcionalidad Recursos conectados para buscar recursos disponibles en una implementación remota [!DNL Experience Manager]. Los autores pueden utilizar estos recursos en páginas web en una implementación local [!DNL Experience Manager]. Consulte [usar recursos remotos](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
@@ -331,7 +330,7 @@ Utilice comillas dobles alrededor de las palabras clave para encontrar recursos 
 
 ## Tareas de configuración y administración relacionadas con la funcionalidad de búsqueda {#configadmin}
 
-### Configuraciones de índice de búsqueda {#searchindex}
+### Buscar configuraciones de índice {#searchindex}
 
 La detección de recursos se basa en la indexación del contenido de DAM, incluidos los metadatos. La detección de recursos más rápida y precisa depende de la indexación optimizada y las configuraciones adecuadas. Consulte [índice de búsqueda](/help/assets/performance-tuning-guidelines.md#search-indexes), [consultas oak e indexación](/help/sites-deploying/queries-and-indexing.md) y [prácticas recomendadas](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -423,7 +422,7 @@ En la vista de lista, puede ordenar los resultados de búsqueda del mismo modo q
 
 Para ver las limitaciones de la funcionalidad de ordenación, consulte [limitaciones](#limitations).
 
-### Compruebe la información detallada de un recurso {#checkinfo}
+### Comprobar información detallada de un recurso {#checkinfo}
 
 Puede comprobar la información detallada de los recursos buscados desde la página de resultados de la búsqueda.
 
