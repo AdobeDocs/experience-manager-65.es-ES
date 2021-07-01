@@ -12,9 +12,9 @@ docset: aem65
 feature: Administración de activos
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 54230d68fc86c9098f7712044bc501bdc4f16502
+source-git-commit: 0c5759786a698f7c7503a56da7f472229d18f763
 workflow-type: tm+mt
-source-wordcount: '11668'
+source-wordcount: '11672'
 ht-degree: 5%
 
 ---
@@ -23,21 +23,11 @@ ht-degree: 5%
 
 En esta sección se describe cómo trabajar con vídeo en Dynamic Media.
 
-Problemas de reproducción de vídeo conocidos actualmente en Dynamic Media:
-
-* 
-
-   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
-
-* 
-
-   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
-
 ## Inicio rápido: Vídeos {#quick-start-videos}
 
 La siguiente descripción paso a paso del flujo de trabajo está diseñada para ayudarle a poner en marcha rápidamente los conjuntos de vídeos adaptables en Dynamic Media. Después de cada paso, hay referencias cruzadas a encabezados de temas donde puede encontrar más información.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Antes de trabajar con vídeo en Dynamic Media, asegúrese de que su administrador de Adobe Experience Manager ya haya habilitado y configurado los Cloud Services de Dynamic Media en Dynamic Media - modo Scene7 o Dynamic Media - modo híbrido.
 >
@@ -45,7 +35,16 @@ La siguiente descripción paso a paso del flujo de trabajo está diseñada para 
    >
    >
 * Consulte [Configuración de Cloud Services de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media: modo híbrido.
+>
+>
+Problemas de reproducción de vídeo conocidos actualmente en Dynamic Media *en el Experience Manager 6.5.9.0 only*:
+>
+>* 
 
+   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+>* 
+
+   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 >
 
 
@@ -419,7 +418,7 @@ Por ejemplo, suponga que el vídeo de origen es de 1920 x 1080. En la tabla sigu
 
 | Tipo de vídeo | Anchura x Altura | Proporción de anchura | Proporción de altura |
 |--- |--- |--- |--- |
-| Origen | 1920x1080 | 1 | 1 |
+| Origen | 1920x1080 | 1 | 3 |
 | Codificado | 960 x 540 | 2 | 2 |
 | Codificado | 640 x 360 | 3 | 3 |
 | Codificado | 480 x 270 | 4 | 4 |
