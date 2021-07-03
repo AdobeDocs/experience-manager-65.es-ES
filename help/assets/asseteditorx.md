@@ -2,16 +2,15 @@
 title: Ampliar editor de recursos
 description: Obtenga información sobre cómo ampliar las capacidades del Editor de recursos mediante componentes personalizados.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Developer Tools
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Herramientas para desarrolladores
+exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '690'
 ht-degree: 11%
 
 ---
-
 
 # Ampliar editor de recursos {#extending-asset-editor}
 
@@ -63,7 +62,7 @@ Algunos de los componentes [!DNL Assets] utilizan la biblioteca de widgets. Para
 
 Los componentes de página de muestra requieren que todos los selectores empiecen por `.asseteditor` de `static.css` (`/etc/designs/geometrixx/static.css`). Práctica recomendada: Copie todos los selectores `.asseteditor` en la hoja de estilo y ajuste las reglas como desee.
 
-### Selector de formulario: Ajustes para recursos cargados al final {#formchooser-adjustments-for-eventually-loaded-resources}
+### Selector de formulario: Ajustes para recursos cargados finalmente {#formchooser-adjustments-for-eventually-loaded-resources}
 
 El Editor de recursos utiliza el Selector de formularios, que le permite editar recursos (en este caso, recursos) en la misma página de formulario simplemente añadiendo un selector de formulario y la ruta del formulario a la dirección URL del recurso.
 
@@ -122,7 +121,7 @@ En la parte HTML, utilice el conjunto de títulos anterior (ya sea un recurso o 
 <title><%= title %></title>
 ```
 
-## Crear un componente de campo de formulario simple {#creating-a-simple-form-field-component}
+## Creación de un componente de campo de formulario sencillo {#creating-a-simple-form-field-component}
 
 En este ejemplo se describe cómo crear un componente que muestre y muestre los metadatos de un recurso cargado.
 
@@ -203,7 +202,7 @@ En este ejemplo se describe cómo crear un componente que muestre y muestre los 
 
 1. En el modo de **edición**, el nuevo componente (por ejemplo, **Metadatos de muestra**) ya está disponible en la barra de tareas (que se encuentra en el grupo **Editor de recursos**). Inserte el componente. Para poder almacenar los metadatos, estos se deben agregar al formulario de metadatos.
 
-## Modificar las opciones de metadatos {#modifying-metadata-options}
+## Modificación de las opciones de metadatos {#modifying-metadata-options}
 
 Puede modificar las áreas de nombres disponibles en el [formulario de metadatos](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
