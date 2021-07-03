@@ -2,18 +2,17 @@
 title: Prácticas recomendadas para procesar los formatos de archivo admitidos
 description: Prácticas recomendadas para procesar los distintos tipos de archivos admitidos con [!DNL Experience Manager Assets].
 contentOwner: AG
-role: Administrator
-feature: Asset Management,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin
+feature: Administración de recursos,Herramientas para desarrolladores
+exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
-
-# Prácticas recomendadas sobre el formato de los archivos de activos {#assets-file-format-best-practices}
+# Prácticas recomendadas del formato de los archivos de recursos {#assets-file-format-best-practices}
 
 [!DNL Adobe Experience Manager Assets] admite muchas bibliotecas de formato de archivos propietarias y de terceros para satisfacer los diversos requisitos de compatibilidad de archivos de los usuarios. Las bibliotecas de Adobe admitidas son [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer y [!DNL Adobe InDesign Server]. Además, [!DNL Experience Manager Assets] admite bibliotecas de terceros, incluidas [!DNL ImageMagick], [!DNL TwelveMonkeys], etc.
 
@@ -23,7 +22,7 @@ Para ver los formatos de archivo compatibles, consulte [Formatos compatibles con
 >
 >Si utiliza [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con el Servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos PSD o PSB de gran tamaño. Trabaje con el representante del Servicio de atención al cliente de Adobe para implementar estas prácticas recomendadas para su implementación de AMS y elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
-## [!DNL Adobe Camera Raw] biblioteca  {#adobe-camera-raw-library}
+## [!DNL Adobe Camera Raw] biblioteca {#adobe-camera-raw-library}
 
 Para obtener un rendimiento óptimo, Adobe recomienda utilizar la biblioteca [!DNL Adobe Camera Raw] para archivos RAW y DNG.
 
@@ -39,7 +38,7 @@ Para obtener mejores resultados, Adobe recomienda utilizar la biblioteca Adobe P
 * Los archivos AI con miniaturas no se generan de forma predeterminada
 * Para archivos AI con colores SPOT (PMS)
 
-Las miniaturas y vistas previas generadas con el rasterizador de PDF son de mejor calidad en comparación con los resultados de raster predeterminados. La biblioteca Rasterizer de Adobe PDF no admite ninguna conversión de espacio de color. Independientemente del espacio de color del archivo PDF de origen, Adobe PDF Rasterizer genera solo salida RGB.
+Las miniaturas y vistas previas generadas con el rasterizador de PDF son de mejor calidad en comparación con los resultados de raster predeterminados. La biblioteca Adobe PDF Rasterizer no admite ninguna conversión de espacio de color. Independientemente del espacio de color del archivo PDF de origen, Adobe PDF Rasterizer genera solo salida RGB.
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
