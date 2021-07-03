@@ -2,18 +2,17 @@
 title: Varios alquileres para colecciones, fragmentos y plantillas de fragmento
 description: Descubra cómo la función de inquilinos múltiples le permite segregar contenido en el repositorio CRX en función de la organización del cliente para evitar el acceso no autorizado.
 contentOwner: AG
-role: Architect, Administrator, Leader
-feature: Collections
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin, Leader
+feature: Colecciones
+exl-id: f95560c9-f1b9-4e86-94a7-70347d268d8f
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 1%
 
 ---
 
-
-# Varios alquileres para colecciones, fragmentos y plantillas de fragmentos {#multi-tenancy-for-collections-snippets-and-snippet-templates}
+# Varios alquileres para colecciones, fragmentos y plantillas de fragmento {#multi-tenancy-for-collections-snippets-and-snippet-templates}
 
 La función de inquilinos múltiples le permite segregar contenido en CRX en función del prefijo de organización y el ID de organización para proteger el contenido de acceso no autorizado por parte de usuarios de otras organizaciones.
 
