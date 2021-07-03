@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de contenido
+role: User, Admin
+exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
-
 
 # Creación de proyectos de traducción para fragmentos de contenido {#creating-translation-projects-for-content-fragments}
 
@@ -36,7 +35,7 @@ En este flujo de trabajo, los fragmentos de contenido que se van a traducir se c
 
 Cuando se actualiza o modifica el fragmento de contenido de origen, es necesario volver a traducir el fragmento de contenido específico de la configuración regional o del idioma correspondiente. El flujo de trabajo de copia de idioma de actualización traduce un grupo adicional de fragmentos de contenido y lo incluye en una copia de idioma para una configuración regional concreta. En este caso, los fragmentos de contenido traducidos se añaden a la carpeta de destino que ya contiene fragmentos de contenido traducidos anteriormente.
 
-## Crear y traducir flujo de trabajo {#create-and-translate-workflow}
+## Creación y traducción de flujos de trabajo {#create-and-translate-workflow}
 
 El flujo de trabajo Crear y traducir incluye las siguientes opciones. Los pasos de procedimiento asociados con cada opción son similares a los asociados con la opción correspondiente para los recursos.
 
@@ -165,4 +164,3 @@ Para poder traducir fragmentos de contenido que incluyen medios mixtos, edite pr
    >[!NOTE]
    >
    >Los procedimientos para añadir un fragmento de contenido a un proyecto existente o para realizar flujos de trabajo de actualización son similares a los procedimientos correspondientes para los recursos. Para obtener orientación sobre estos procedimientos, consulte los procedimientos descritos para los activos.
-
