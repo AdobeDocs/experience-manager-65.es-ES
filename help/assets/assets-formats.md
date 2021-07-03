@@ -3,10 +3,10 @@ title: Formatos de archivo compatibles y tipos MIME
 description: Formatos de archivo y tipos MIME admitidos por [!DNL Assets] and [!DNL Dynamic Media] y las funciones compatibles con cada formato.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Administración de recursos,Representaciones
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 10%
@@ -301,7 +301,7 @@ Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/globa
 | PPT | application/vnd.ms-powerpoint |  |  |
 | PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
-| TTF | application/rtf |  |  |
+| RTF | application/rtf |  |  |
 | SVG | image/svg+xml |  |  |
 | SWF | aplicación/x-shock-flash |  |  |
 | TAR | application/x-tar |  |  |
