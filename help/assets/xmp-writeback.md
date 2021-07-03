@@ -2,16 +2,15 @@
 title: Reescritura XMP en representaciones
 description: Descubra cómo la función XMP reescritura propaga los cambios de metadatos de un recurso a todas las representaciones del recurso o a algunas de ellas.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Metadatos
+exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '785'
 ht-degree: 5%
 
 ---
-
 
 # Reescritura XMP en representaciones {#xmp-writeback-to-renditions}
 
@@ -29,7 +28,7 @@ En este caso, [!DNL Experience Manager Assets] guarda los cambios en la propieda
 
 Sin embargo, [!DNL Experience Manager Assets] no propaga automáticamente ningún cambio en los metadatos de las representaciones de un recurso. Consulte [cómo habilitar XMP reescritura](#enable-xmp-writeback).
 
-## Habilitar XMP escritura {#enable-xmp-writeback}
+## Habilitar reescritura XMP {#enable-xmp-writeback}
 
 Para permitir que los cambios en los metadatos se propaguen a las representaciones del recurso al cargarlo, modifique la configuración **[!UICONTROL Adobe CQ DAM Rendition Maker]** en Configuration Manager.
 
@@ -39,7 +38,7 @@ Para permitir que los cambios en los metadatos se propaguen a las representacion
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
-## Activación de XMP escritura para representaciones específicas {#enabling-xmp-writeback-for-specific-renditions}
+## Activación de la reescritura XMP para representaciones específicas {#enabling-xmp-writeback-for-specific-renditions}
 
 Para permitir que la función XMP de escritura propague los cambios de metadatos para seleccionar representaciones, especifique estas representaciones en el paso de flujo de trabajo XMP proceso de escritura del flujo de trabajo [!UICONTROL DAM Metadata WriteBack] . De forma predeterminada, este paso se configura con la representación original.
 
