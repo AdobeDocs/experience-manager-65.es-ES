@@ -2,18 +2,17 @@
 title: 'Prácticas recomendadas para monitorizar la implementación [!DNL Assets] '
 description: Prácticas recomendadas para monitorizar el entorno y el rendimiento de su implementación  [!DNL Adobe Experience Manager] después de implementarla.
 contentOwner: AG
-role: Administrator, Architect
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Admin, Architect
+feature: Administración de activos
+exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1670'
 ht-degree: 1%
 
 ---
 
-
-# Prácticas recomendadas para monitorizar la implementación [!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
+# Prácticas recomendadas para supervisar la implementación de [!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
 
 Desde el punto de vista [!DNL Experience Manager Assets], la supervisión debe incluir la observación y el sistema de informes de los siguientes procesos y tecnologías:
 
@@ -26,7 +25,7 @@ Desde el punto de vista [!DNL Experience Manager Assets], la supervisión debe i
 
 Generalmente, [!DNL Experience Manager Assets] se puede monitorear de dos maneras, mediante monitoreo activo y monitoreo a largo plazo.
 
-## Monitorización en directo {#live-monitoring}
+## Supervisión en directo {#live-monitoring}
 
 Debe realizar monitorización en vivo durante la fase de prueba de rendimiento de su desarrollo o durante situaciones de carga alta para comprender las características de rendimiento de su entorno. Normalmente, la monitorización en vivo debe realizarse con un conjunto de herramientas. Estas son algunas recomendaciones:
 
@@ -54,11 +53,11 @@ Normalmente, estas herramientas se utilizan juntas para obtener una idea complet
 
 ![chlimage_1-32](assets/chlimage_1-142.png)
 
-## Monitorización a largo plazo {#long-term-monitoring}
+## Seguimiento a largo plazo {#long-term-monitoring}
 
 La monitorización a largo plazo de una implementación [!DNL Experience Manager] implica monitorizar durante más tiempo las mismas partes que se supervisan en tiempo real. También incluye la definición de alertas específicas del entorno.
 
-### Agregación de registros y creación de informes {#log-aggregation-and-reporting}
+### Agregación de registros y sistema de informes {#log-aggregation-and-reporting}
 
 Hay varias herramientas disponibles para agregar registros, por ejemplo Splunk(TM) y Elastic Search, Logstash y Kabana (ELK). Para evaluar el tiempo de actividad de su implementación [!DNL Experience Manager], es importante que entienda los eventos de registro específicos del sistema y cree alertas basadas en ellos. Un buen conocimiento de las prácticas de desarrollo y operaciones puede ayudarle a comprender mejor cómo ajustar el proceso de agregación de registros para generar alertas críticas.
 
@@ -75,7 +74,7 @@ La monitorización del entorno incluye la monitorización de lo siguiente:
 
 Necesita herramientas externas, como NewRelic(TM) y AppDynamics(TM) para supervisar cada elemento. Con estas herramientas, puede definir las alertas específicas de su sistema, por ejemplo, una alta utilización del sistema, una copia de seguridad del flujo de trabajo, errores de comprobación de estado o un acceso no autenticado a su sitio web. Adobe no recomienda ninguna herramienta en particular sobre otras. Encuentre la herramienta que funciona y aproveche esta herramienta para monitorizar los elementos discutidos.
 
-#### Monitorización interna de aplicaciones {#internal-application-monitoring}
+#### Supervisión interna de las aplicaciones {#internal-application-monitoring}
 
 La supervisión interna de las aplicaciones incluye el monitoreo de los componentes de la aplicación que conforman la pila [!DNL Experience Manager], incluyendo JVM, el repositorio de contenido y el monitoreo a través del código de aplicación personalizado creado en la plataforma. En general, se realiza a través de Java Mbeans que pueden ser monitoreados directamente por muchas soluciones de monitoreo populares, como SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM), etc. Para los sistemas que no admiten una conexión directa con JMX, puede escribir secuencias de comandos shell para extraer los datos JMX y exponerlos a estos sistemas en un formato que entiendan de forma nativa.
 
@@ -189,7 +188,7 @@ Estas son algunas comprobaciones de estado integradas que son útiles para monit
    * Umbral de alarma: Cuando el estado no es correcto
    * Definición de alarma: Hay errores en los archivos de registro. Consulte el atributo log para obtener más información sobre la causa del problema.
 
-## Problemas y resoluciones comunes {#common-issues-and-resolutions}
+## Cuestiones y resoluciones comunes  {#common-issues-and-resolutions}
 
 En el proceso de monitorización, si se producen problemas, estas son algunas tareas de solución de problemas que puede realizar para resolver problemas comunes con implementaciones de [!DNL Experience Manager]:
 
