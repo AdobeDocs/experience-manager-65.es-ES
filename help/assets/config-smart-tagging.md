@@ -2,18 +2,17 @@
 title: Configuración del etiquetado de recursos mediante el servicio de contenido inteligente
 description: Aprenda a configurar el etiquetado inteligente y el etiquetado inteligente mejorado en [!DNL Adobe Experience Manager], mediante el servicio de contenido inteligente.
 contentOwner: AG
-role: Administrator
-feature: Tagging,Smart Tags
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin
+feature: Etiquetado,Etiquetas inteligentes
+exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2173'
 ht-degree: 25%
 
 ---
 
-
-# Preparar [!DNL Assets] para el etiquetado inteligente {#configure-asset-tagging-using-the-smart-content-service}
+# Preparación [!DNL Assets] para el etiquetado inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
 Antes de empezar a etiquetar sus recursos mediante Smart Content Services, integre [!DNL Experience Manager Assets] con Adobe Developer Console para aprovechar el servicio inteligente de [!DNL Adobe Sensei]. Una vez configurado, entrene el servicio con algunas imágenes y una etiqueta.
 
@@ -40,7 +39,7 @@ Para configurar el servicio de contenido inteligente, siga estos pasos de nivel 
 
 1. De forma opcional, [habilite el etiquetado automático en la carga de recursos](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
-### Obtenga un certificado público creando la configuración del servicio de contenido inteligente {#obtain-public-certificate}
+### Obtener un certificado público creando la configuración del servicio de contenido inteligente {#obtain-public-certificate}
 
 El certificado público permite autenticar el perfil en Adobe Developer Console.
 
@@ -74,7 +73,7 @@ El certificado público permite autenticar el perfil en Adobe Developer Console.
 
    *Figura: Configuración del servicio de etiquetado inteligente.*
 
-#### Vuelva a configurar cuándo caduca un certificado {#certrenew}
+#### Volver a configurar cuándo caduca un certificado {#certrenew}
 
 Una vez caducado un certificado, ya no es de confianza. No puede renovar un certificado caducado. Para agregar un certificado, siga estos pasos.
 
@@ -95,7 +94,7 @@ Una vez caducado un certificado, ya no es de confianza. No puede renovar un cert
 
 1. Acceda a [https://console.adobe.io](https://console.adobe.io) y vaya a los servicios de contenido inteligente existentes en la página **[!UICONTROL Integraciones]**. Cargue el nuevo certificado. Para obtener más información, consulte las instrucciones de [Creación de la integración de Adobe Developer Console](#create-adobe-i-o-integration).
 
-### Crear la integración de Adobe Developer Console {#create-adobe-i-o-integration}
+### Creación de la integración de Adobe Developer Console {#create-adobe-i-o-integration}
 
 Para utilizar las API del servicio de contenido inteligente, cree una integración en la consola del desarrollador de Adobe para obtener [!UICONTROL Clave de API] (generada en el campo [!UICONTROL CLIENT ID] de integración de la consola del desarrollador de Adobe), [!UICONTROL ID DE CUENTA TÉCNICA], [!UICONTROL ID de organización] y [!UICONTROL CLICLICLIENT SECRET] para [!UICONTROL Configuración del servicio de etiquetado inteligente de recursos] de la configuración de nube en [!DNL Experience Manager].
 
@@ -190,7 +189,7 @@ Los resultados de validación se muestran en el mismo cuadro de diálogo.
 
 1. Haga clic en **[!UICONTROL Aceptar]** para cerrar el paso del proceso y, a continuación, guarde el flujo de trabajo.
 
-## Capacite el servicio de contenido inteligente {#training-the-smart-content-service}
+## Formación del servicio de contenido inteligente {#training-the-smart-content-service}
 
 Para que el servicio de contenido inteligente reconozca su taxonomía empresarial, ejecútelo en un conjunto de recursos que ya incluyen etiquetas que son relevantes para su negocio. Para etiquetar de forma eficaz las imágenes de marca, el servicio de contenido inteligente requiere que las imágenes de formación se ajusten a determinadas directrices. Después de la formación, el servicio puede aplicar la misma taxonomía en un conjunto de activos similar.
 
@@ -287,5 +286,5 @@ Para comprobar si el servicio de contenido inteligente ha recibido formación so
 >[!MORELIKETHIS]
 >
 >* [Descripción general y formación de etiquetas inteligentes](enhanced-smart-tags.md)
->* [Tutorial en vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+* [Tutorial en vídeo sobre etiquetas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 
