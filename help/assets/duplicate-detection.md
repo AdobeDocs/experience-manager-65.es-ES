@@ -2,18 +2,17 @@
 title: Habilitar la detección de recursos duplicados
 description: Obtenga información sobre cómo habilitar la detección de recursos duplicados en Experience Manager.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Asset Management,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: Administración de activos,Informes de activos
+exl-id: a403d60e-2193-4835-8f37-4a40f2d01819
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
 
-
-# Habilitar la detección de activos duplicados {#enable-detection-of-duplicate-assets}
+# Habilitar la detección de recursos duplicados {#enable-detection-of-duplicate-assets}
 
 Si intenta cargar un recurso que existe en [!DNL Adobe Experience Manager Assets], la función de detección de duplicados lo identificará como duplicado. La detección de duplicados está deshabilitada de forma predeterminada. Para habilitar la función, siga estos pasos:
 
