@@ -2,16 +2,15 @@
 title: Organizar sus recursos digitales
 description: Organice los recursos digitales, las imágenes, los archivos, las carpetas, etc. mediante el Experience Manager.
 contentOwner: AG
-role: Business Practitioner
-feature: Asset Management,Search
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Administración de recursos,Buscar
+exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '783'
 ht-degree: 1%
 
 ---
-
 
 # Organizar sus recursos digitales {#organize-digital-assets}
 
@@ -62,7 +61,7 @@ Any hints/recommendations of when to use what method of organizing? Some example
 Add back links to blog posts by marketing?
 -->
 
-## Organice los recursos para utilizar perfiles {#organize-to-use-profiles}
+## Organizar los recursos para utilizar perfiles {#organize-to-use-profiles}
 
 Un perfil de procesamiento contiene [!DNL Assets] comandos de procesamiento que se aplican a los recursos que se cargan en carpetas predefinidas. Los perfiles se utilizan para automatizar el procesamiento de los contenidos de una carpeta o de los recursos cargados recientemente. Puede aprovechar los perfiles para organizar mejor los recursos.
 
