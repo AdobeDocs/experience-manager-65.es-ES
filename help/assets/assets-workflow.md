@@ -2,22 +2,21 @@
 title: Procesamiento de recursos mediante flujos de trabajo
 description: Procesamiento de recursos para convertir formatos, crear representaciones, administrar recursos, validar recursos y ejecutar flujos de trabajo.
 contentOwner: AG
-feature: Workflow, Renditions
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Flujo de trabajo, representaciones
+role: User, Admin
+exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '963'
 ht-degree: 3%
 
 ---
-
 
 # Procesar recursos digitales {#process-assets}
 
 [!DNL Adobe Experience Manager Assets] le permite trabajar en sus recursos digitales de muchas maneras para permitir un procesamiento de recursos robusto. Puede utilizar los métodos de procesamiento predeterminados o personalizados para garantizar la finalización de procesos empresariales integrales, auditorías y cumplimiento de normas, descubrimiento y distribución, y la sanidad básica de sus recursos digitales. Puede realizar las tareas de administración de recursos y lograr la escala y personalización necesarias.
 
-## Comprender los flujos de trabajo {#understand-workflows}
+## Explicación de los flujos de trabajo {#understand-workflows}
 
 Para el procesamiento de recursos, [!DNL Experience Manager] utiliza flujos de trabajo. Los flujos de trabajo ayudan a automatizar la lógica empresarial o las actividades. De forma predeterminada, se proporcionan pasos granulares para realizar tareas específicas y los desarrolladores pueden crear sus propios pasos personalizados. Estos pasos se pueden combinar en un orden lógico para crear flujos de trabajo. Por ejemplo, un flujo de trabajo puede aplicar una marca de agua en las imágenes cargadas según un criterio específico, como la carpeta a la que se carga, la resolución de la imagen, etc. Otro ejemplo es un flujo de trabajo configurado para marcar con agua y añadir simultáneamente metadatos, crear representaciones, agregar etiquetas inteligentes y publicar en un almacén de datos.
 
@@ -31,7 +30,7 @@ Para ver los distintos modelos de flujo de trabajo disponibles de forma predeter
 
 *Figura: Algunos de los flujos de trabajo predeterminados disponibles en  [!DNL Experience Manager].*
 
-## Aplicar flujos de trabajo para procesar recursos {#applying-workflows-to-assets}
+## Aplicación de flujos de trabajo para procesar recursos {#applying-workflows-to-assets}
 
 La aplicación de flujos de trabajo a recursos digitales es la misma que para las páginas de sitios web. Para obtener una guía completa sobre cómo crear y utilizar flujos de trabajo, consulte [iniciar flujos de trabajo](/help/sites-authoring/workflows-participating.md).
 
@@ -41,7 +40,7 @@ Utilice flujos de trabajo en recursos digitales para activar el recurso o crear 
 >
 >Si un flujo de trabajo disponible en la IU clásica no está disponible en la IU táctil, como [!UICONTROL Solicitud de activación] y [!UICONTROL Solicitud de desactivación], consulte [Creación de modelos de flujo de trabajo](/help/sites-developing/workflows-models.md#classic2touchui).
 
-## Aplicar un flujo de trabajo a un recurso {#apply-a-workflow-to-an-asset}
+## Aplicación de un flujo de trabajo a un recurso {#apply-a-workflow-to-an-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
@@ -66,7 +65,7 @@ Para aplicar un flujo de trabajo a un recurso, siga estos pasos:
 
    ![chlimage_1-256](assets/chlimage_1-52.png)
 
-## Aplicar un flujo de trabajo a varios recursos {#applying-a-workflow-to-multiple-assets}
+## Aplicación de un flujo de trabajo a varios recursos {#applying-a-workflow-to-multiple-assets}
 
 1. Desde la consola [!DNL Assets], vaya a la ubicación de los recursos para los que desea iniciar un flujo de trabajo y seleccione los recursos. Seleccione **[!UICONTROL Línea de tiempo]** en el menú para mostrar la línea de tiempo.
 
@@ -80,15 +79,15 @@ Para aplicar un flujo de trabajo a un recurso, siga estos pasos:
 1. (Opcional) Especifique un título para el flujo de trabajo, que se puede utilizar para hacer referencia a la instancia de flujo de trabajo.
 1. Haga clic en **[!UICONTROL Iniciar]** y, a continuación, en **[!UICONTROL Confirmar]** en el cuadro de diálogo. El flujo de trabajo se ejecuta en todos los recursos seleccionados.
 
-## Aplicar un flujo de trabajo a varias carpetas {#applying-a-workflow-to-multiple-folders}
+## Aplicación de un flujo de trabajo a varias carpetas {#applying-a-workflow-to-multiple-folders}
 
 El procedimiento para aplicar un flujo de trabajo a varias carpetas es similar al procedimiento para aplicar un flujo de trabajo a varios recursos. Seleccione las carpetas en la interfaz [!DNL Assets] y realice los pasos 2 a 7 del procedimiento [aplicar un flujo de trabajo a varios recursos](/help/assets/assets-workflow.md#applying-a-workflow-to-multiple-assets).
 
-## Aplicar un flujo de trabajo a una colección {#applying-a-workflow-to-a-collection}
+## Aplicación de un flujo de trabajo a una colección {#applying-a-workflow-to-a-collection}
 
 Consulte [aplicar un flujo de trabajo en una colección](/help/assets/manage-collections.md#running-a-workflow-on-a-collection).
 
-## Inicie automáticamente un flujo de trabajo para procesar los recursos de forma condicional {#auto-execute-workflow-on-some-assets}
+## Inicio automático de un flujo de trabajo para procesar los recursos de forma condicional {#auto-execute-workflow-on-some-assets}
 
 Los administradores pueden configurar el flujo de trabajo para que ejecuten y procesen automáticamente los recursos en función de condiciones predefinidas. La funcionalidad es útil para los usuarios de la línea de negocios y los especialistas en marketing, por ejemplo, para crear un flujo de trabajo personalizado en carpetas específicas. Digamos que todos los activos de la sesión fotográfica de una agencia pueden estar marcados con agua o que todos los activos cargados por un profesional independiente pueden procesarse para crear representaciones específicas.
 
@@ -105,7 +104,7 @@ Para un modelo de flujo de trabajo, los usuarios pueden crear un iniciador de fl
 >[!MORELIKETHIS]
 >
 >* [Aplicar y participar en flujos de trabajo](/help/sites-authoring/workflows.md)
->* [Creación de modelos de flujo de trabajo y ampliación de la funcionalidad del flujo de trabajo](/help/sites-developing/workflows.md)
->* [Métodos para ejecutar flujos de trabajo](/help/sites-administering/workflows-starting.md)
->* [Prácticas recomendadas del flujo de trabajo](/help/sites-developing/workflows-best-practices.md)
+* [Creación de modelos de flujo de trabajo y ampliación de la funcionalidad del flujo de trabajo](/help/sites-developing/workflows.md)
+* [Métodos para ejecutar flujos de trabajo](/help/sites-administering/workflows-starting.md)
+* [Prácticas recomendadas del flujo de trabajo](/help/sites-developing/workflows-best-practices.md)
 
