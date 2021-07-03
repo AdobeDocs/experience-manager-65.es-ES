@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuración,Modo Scene7
-source-git-commit: 90737593086c680f0a948f5b9cab6e58767b6373
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '6153'
 ht-degree: 5%
@@ -44,7 +44,7 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos de 
 * Akamai ChinaCDN (para una entrega óptima en China)
 
 
-## Activación de Dynamic Media en modo Scene7 {#enabling-dynamic-media-in-scene-mode}
+## Habilitar Dynamic Media en modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
 [Dynamic Media está desactivado de forma predeterminada. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Para aprovechar las funciones de Dynamic Media, debe habilitarlas.
 
@@ -57,7 +57,7 @@ Para habilitar Dynamic Media, debe iniciar el Experience Manager utilizando el m
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
-## (Opcional) Migración de ajustes preestablecidos y configuraciones de Dynamic Media de 6.3 a 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (Opcional) Migración de ajustes preestablecidos y configuraciones de Dynamic Media de 6.3 a 6.5 a cero tiempos de inactividad {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 La actualización de Experience Manager Dynamic Media de 6.3 a 6.4 o 6.5 ahora incluye la capacidad de no realizar implementaciones de downtime. Para migrar todos los ajustes preestablecidos y configuraciones de `/etc` a `/conf` en el CRXDE Lite, asegúrese de ejecutar el siguiente comando curl.
 
@@ -184,7 +184,7 @@ La pantalla Servidor de imágenes establece la configuración predeterminada par
 * **[!UICONTROL Atributos de compatibilidad]** : esta configuración permite que los párrafos iniciales y finales de las capas de texto se traten como en la versión 3.6 para la compatibilidad con versiones anteriores.
 * **[!UICONTROL Compatibilidad con la localización]** : Esta configuración le permite administrar varios atributos de configuración regional. También le permite especificar una cadena de asignación de configuración regional para que pueda definir qué idiomas desea admitir para las distintas informaciones de objeto en Visualizadores. Para obtener más información sobre la configuración de **[Localization Support]**, consulte [Consideraciones al configurar la localización de recursos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets).
 
-#### Configuración de la configuración general de la aplicación {#configuring-application-general-settings}
+#### Configuración general de la aplicación {#configuring-application-general-settings}
 
 Para abrir la página Configuración general de la aplicación , en la barra de navegación global de Dynamic Media Classic, pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 
@@ -206,7 +206,7 @@ Para mantener la coherencia con el Experience Manager, elija siempre esta config
 De forma predeterminada, el sistema muestra 15 representaciones al seleccionar **[!UICONTROL Representaciones]** y 15 ajustes preestablecidos de visualizador al seleccionar **[!UICONTROL Visualizadores]** en la vista de detalles del recurso. Puede aumentar este límite. Consulte [Aumento del número de ajustes preestablecidos de imagen que se muestran](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumento del número de ajustes preestablecidos de visor que se muestran](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 
-#### Configuración de la administración de color {#configuring-color-management}
+#### Configuración de la gestión de color {#configuring-color-management}
 
 La administración de color de Dynamic Media le permite colorear los recursos correctos. Con la corrección de color, los recursos incorporados conservan su espacio de color (RGB, CMYK, Gris) y su perfil de color incrustado. Cuando se solicita una representación dinámica, el color de la imagen se corrige en el espacio de color de destino mediante la salida CMYK, RGB o Gris. Consulte [Configuración de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md).
 
@@ -236,7 +236,7 @@ Al hacerlo, se haría lo siguiente:
 * Representaciones dinámicas que devuelven la salida RGB y la devuelven en el espacio de color *sRGB*.
 * Representaciones dinámicas que devuelven la salida CMYK, la devuelven en el espacio de color *WebCoated*.
 
-#### Edición de tipos MIME para formatos admitidos {#editing-mime-types-for-supported-formats}
+#### Edición de tipos MIME para formatos compatibles {#editing-mime-types-for-supported-formats}
 
 Puede definir qué tipos de recursos procesa Dynamic Media y personalizar los parámetros avanzados de procesamiento de recursos. Por ejemplo, puede especificar parámetros de procesamiento de recursos para hacer lo siguiente:
 
@@ -270,7 +270,7 @@ Consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
 
 1. En la esquina superior izquierda de la página, pulse **[!UICONTROL CRXDE Lite]** para volver al Experience Manager.
 
-#### Añadir tipos MIME para formatos no admitidos {#adding-mime-types-for-unsupported-formats}
+#### Adición de tipos MIME para formatos no admitidos {#adding-mime-types-for-unsupported-formats}
 
 Puede añadir tipos MIME personalizados para formatos no compatibles en Recursos Experience Manager. Asegúrese de que el Experience Manager no elimina ningún nodo nuevo que agregue al CRXDE Lite moviendo el tipo MIME antes de `image_`. Además, asegúrese de que su valor habilitado esté establecido en **[!UICONTROL false]**.
 
@@ -486,7 +486,7 @@ Cuando se carga y publica el conjunto de giros, se activa el nombre de la fórmu
 
    Al activar el ajuste preestablecido, se garantiza que, al cargar recursos en Dynamic Media, el ajuste preestablecido de conjunto de lotes se aplique para generar el conjunto.
 
-### (Opcional) Ajuste del rendimiento de Dynamic Media - Modo Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### (Opcional) Ajuste del rendimiento de Dynamic Media: modo Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Para mantener Dynamic Media en modo Scene7 funcionando sin problemas, Adobe recomienda los siguientes consejos de ajuste del rendimiento/escalabilidad de la sincronización:
 
