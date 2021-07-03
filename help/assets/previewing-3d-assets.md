@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo previsualizar recursos 3D
 contentOwner: Rick Brough
 docset: aem65
 feature: Recursos 3D
-role: Business Practitioner
+role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 15%
@@ -21,7 +21,7 @@ El visor 3D interactivo está disponible en la página de detalles de recursos d
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
-## Formatos compatibles con la vista previa 3D en el Experience Manager {#supported-3d-previewing-assets}
+## Formatos admitidos para la vista previa 3D en el Experience Manager {#supported-3d-previewing-assets}
 
 La vista previa 3D interactiva admite los siguientes formatos de archivo:
 
