@@ -2,10 +2,10 @@
 title: Información sobre Assets
 description: Descubra cómo la función Assets Insights permite rastrear las clasificaciones de usuario y las estadísticas de uso de las imágenes que se utilizan en sitios web de terceros, campañas de marketing y soluciones creativas de Adobe.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Información sobre Assets, Informes de Asset
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '760'
 ht-degree: 6%
@@ -63,7 +63,7 @@ Puede ver las puntuaciones de Assets Insights desde la página de metadatos.
 
    ![imagen_1-98](assets/chlimage_1-303.png)
 
-## Ver estadísticas agregadas para imágenes {#viewing-aggregate-statistics-for-images}
+## Ver estadísticas acumuladas de imágenes {#viewing-aggregate-statistics-for-images}
 
 Puede ver las puntuaciones de todos los recursos de una carpeta simultáneamente mediante la **[!UICONTROL Vista de la información]**.
 
