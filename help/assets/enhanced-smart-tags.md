@@ -2,18 +2,17 @@
 title: Etiquetas inteligentes mejoradas
 description: Etiquetas inteligentes mejoradas
 contentOwner: AG
-feature: Smart Tags, Search
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Etiquetas inteligentes, buscar
+role: User
+exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1600'
 ht-degree: 2%
 
 ---
 
-
-# Comprender, aplicar y depurar etiquetas inteligentes {#enhanced-smart-tags}
+# Explicación, aplicación y organización de etiquetas inteligentes {#enhanced-smart-tags}
 
 Las organizaciones que se ocupan de los recursos digitales utilizan cada vez más el vocabulario controlado por taxonomía en los metadatos de los recursos. Básicamente, incluye una lista de palabras clave que los empleados, socios y clientes suelen utilizar para referirse a recursos digitales de una clase en particular y buscar dichos recursos. El etiquetado de activos con vocabulario controlado por taxonomía garantiza que los activos se identifiquen y recuperen fácilmente.
 
@@ -142,7 +141,7 @@ Puede almacenar en déclencheur el flujo de trabajo de etiquetado desde la conso
 >
 >Si ejecuta el flujo de trabajo de etiquetado desde la línea de tiempo, puede aplicar etiquetas en un máximo de 15 recursos a la vez.
 
-#### Etiquetar recursos de la consola de flujo de trabajo {#tagging-assets-from-the-workflow-console}
+#### Etiquetado de recursos desde la consola de flujo de trabajo {#tagging-assets-from-the-workflow-console}
 
 1. En la interfaz [!DNL Experience Manager], vaya a **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. En la página **[!UICONTROL Modelos de flujo de trabajo]**, seleccione el flujo de trabajo **[!UICONTROL Recursos de etiquetas inteligentes DAM]** y haga clic en **[!UICONTROL Iniciar flujo de trabajo]** en la barra de herramientas.
