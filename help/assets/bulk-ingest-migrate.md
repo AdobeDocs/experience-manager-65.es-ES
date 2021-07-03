@@ -8,16 +8,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
-feature: Asset Management
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Administración de activos
+role: User, Admin
+exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
-
 
 # Instalación del paquete de características 18912 para la migración masiva de recursos{#installing-feature-pack-for-bulk-asset-migration}
 
