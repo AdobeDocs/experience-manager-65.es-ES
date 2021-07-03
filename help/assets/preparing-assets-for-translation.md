@@ -2,18 +2,17 @@
 title: Preparación de recursos para su traducción
 description: Cree carpetas raíz de idioma para preparar los recursos para la traducción y admitirlos en recursos multilingües.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Projects
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Proyectos
+exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '441'
 ht-degree: 1%
 
 ---
 
-
-# Preparar recursos para su traducción {#preparing-assets-for-translation}
+# Preparación de recursos para su traducción {#preparing-assets-for-translation}
 
 Recursos multilingües significa recursos con binarios, metadatos y etiquetas en varios idiomas. Por lo general, los binarios, los metadatos y las etiquetas de los recursos existen en un idioma, y luego se traducen a otros idiomas para su uso en proyectos multilingües.
 
