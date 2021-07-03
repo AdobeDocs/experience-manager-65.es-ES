@@ -1,17 +1,16 @@
 ---
 title: Activos relacionados
-description: Aprenda a relacionar recursos digitales que comparten algunos atributos comunes. Cree también relaciones derivadas de origen entre recursos digitales.
+description: Obtenga información sobre cómo relacionar recursos digitales que comparten algunos atributos comunes. Cree también relaciones derivadas de origen entre recursos digitales.
 contentOwner: AG
-role: Business Practitioner
-feature: Collaboration,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Colaboración,Administración de activos
+exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 1%
+source-wordcount: '635'
+ht-degree: 0%
 
 ---
-
 
 # Activos relacionados {#related-assets}
 
