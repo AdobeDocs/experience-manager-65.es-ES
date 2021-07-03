@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Administración de activos
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 6%
@@ -34,7 +34,7 @@ Adobe Experience Manager incluye más de 100 comandos de envío de imágenes de 
 
 Como práctica recomendada para el formato de imagen, comience con la configuración más común `&fmt=JPG`.
 
-## Prácticas recomendadas para el tamaño de imagen {#best-practices-for-image-size}
+## Prácticas recomendadas para el tamaño de la imagen {#best-practices-for-image-size}
 
 La reducción dinámica del tamaño de la imagen es una de las tareas más comunes. Requiere especificar el tamaño y, opcionalmente, qué modo de disminución de resolución se utiliza para reducir la escala de la imagen.
 
@@ -43,7 +43,7 @@ La reducción dinámica del tamaño de la imagen es una de las tareas más comun
 
 Como práctica recomendada para el tamaño de la imagen, utilice `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
 
-## Prácticas recomendadas para enfocar la imagen {#best-practices-for-image-sharpening}
+## Prácticas recomendadas para el perfeccionamiento de imágenes {#best-practices-for-image-sharpening}
 
 El enfoque de imágenes es el aspecto más complejo de controlar las imágenes en su sitio web, y donde se cometen muchos errores. Tómese el tiempo para obtener más información sobre cómo funciona la máscara de enfoque y enfoque en el Experience Manager haciendo referencia a los siguientes recursos útiles:
 
