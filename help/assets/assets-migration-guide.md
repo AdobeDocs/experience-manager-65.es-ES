@@ -2,16 +2,15 @@
 title: Migración de recursos de forma masiva
 description: Describe cómo importar recursos a [!DNL Adobe Experience Manager], aplicar metadatos, generar representaciones y activarlos para publicar instancias.
 contentOwner: AG
-role: Architect, Administrator
-feature: Migration,Renditions,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Architect, Admin
+feature: Migración,Representaciones,Administración de recursos
+exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1803'
 ht-degree: 8%
 
 ---
-
 
 # Cómo migrar recursos de forma masiva {#assets-migration-guide}
 
@@ -48,7 +47,7 @@ La migración de recursos a [!DNL Experience Manager] requiere varios pasos y de
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-### Desactivar flujos de trabajo {#disabling-workflows}
+### Desactivación de flujos de trabajo {#disabling-workflows}
 
 Antes de iniciar la migración, deshabilite los iniciadores para el flujo de trabajo [!UICONTROL DAM Update Asset]. Es mejor ingerir todos los recursos en el sistema y luego ejecutar los flujos de trabajo en lotes. Si ya está activo mientras se realiza la migración, puede programar estas actividades para que se ejecuten en horas extras.
 
@@ -73,7 +72,7 @@ Hay dos desventajas principales en el uso del enfoque de pasar por https:
 
 El otro método para la ingesta de recursos es extraer recursos del sistema de archivos local. Sin embargo, si no puede obtener una unidad externa o un recurso compartido de red montados en el servidor para realizar un método basado en extracción, la mejor opción es publicar los recursos a través de HTTP.
 
-#### Recuperación del sistema de archivos local {#pulling-from-the-local-filesystem}
+#### Buscar desde el sistema de archivos local {#pulling-from-the-local-filesystem}
 
 El [ACS AEM Tools CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrae recursos del sistema de archivos y metadatos de recursos de un archivo CSV para la importación de recursos. La API del administrador de recursos del Experience Manager se utiliza para importar los recursos en el sistema y aplicar las propiedades de metadatos configuradas. Lo ideal es que los recursos se monten en el servidor mediante un montaje de archivo de red o a través de una unidad externa.
 
