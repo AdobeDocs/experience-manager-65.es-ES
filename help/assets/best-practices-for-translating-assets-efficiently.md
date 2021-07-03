@@ -2,16 +2,15 @@
 title: Prácticas recomendadas para traducir recursos
 description: Prácticas recomendadas para una administración eficiente de los recursos con el fin de sincronizar varias versiones traducidas y optimizar los flujos de trabajo de traducción.
 contentOwner: AG
-role: Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Admin
+feature: Administración de activos
+exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
-
 
 # Prácticas recomendadas para traducir recursos {#best-practices-for-translating-assets-efficiently}
 
