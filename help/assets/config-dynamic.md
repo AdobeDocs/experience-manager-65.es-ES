@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuración,Modo híbrido
-source-git-commit: 48463a72108621e94f1c50cf43f911794ec759dd
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '7838'
 ht-degree: 1%
@@ -971,7 +971,7 @@ La gestión de color de Dynamic Media permite colorear los recursos correctos pa
 
 Con la corrección de color, los recursos incorporados conservan su espacio de color (RGB, CMYK, Gris) y su perfil de color incrustado en la representación TIFF de la pirámide generada. Cuando se solicita una representación dinámica, el color de la imagen se corrige en el espacio de color de destino. Puede configurar el perfil de color de salida en la configuración de publicación de Dynamic Media en el JCR.
 
-La gestión de color de Adobe utiliza perfiles ICC (International Color Consortium), un formato definido por ICC.
+La gestión de color del Adobe utiliza perfiles ICC (International Color Consortium), un formato definido por ICC.
 
 Puede configurar la administración de color de Dynamic Media y los ajustes preestablecidos de imagen mediante la salida CMYK, RGB o Gris. Consulte [Configuración de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md).
 
