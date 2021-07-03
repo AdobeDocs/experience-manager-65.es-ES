@@ -2,18 +2,17 @@
 title: '[!DNL Assets] guía de tamaño'
 description: Prácticas recomendadas para determinar métricas eficientes para estimar la infraestructura y los recursos necesarios para implementar [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Architect, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Administración de activos
+exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Assets] guía de tamaño  {#assets-sizing-guide}
+# [!DNL Assets] guía de tamaño {#assets-sizing-guide}
 
 Al cambiar el tamaño del entorno para una implementación [!DNL Adobe Experience Manager Assets], es importante asegurarse de que haya suficientes recursos disponibles en términos de disco, CPU, memoria, E/S y rendimiento de red. Para cambiar el tamaño de muchos de estos recursos es necesario conocer la cantidad de recursos que se están cargando en el sistema. Si no hay una métrica mejor disponible, puede dividir el tamaño de la biblioteca existente por la edad de la biblioteca para encontrar la tasa a la que se crean los recursos.
 
@@ -67,7 +66,7 @@ El almacén de datos se puede compartir entre una instancia de autor principal y
 
 Debido a algunos inconvenientes, no se recomienda compartir un almacén de datos en todos los casos.
 
-#### Un solo punto de error {#single-point-of-failure}
+#### Un solo punto de fallo {#single-point-of-failure}
 
 Al tener un almacén de datos compartido, introduce un solo punto de fallo en una infraestructura. Considere un escenario en el que su sistema tiene un autor y dos instancias de publicación, cada una con su propio almacén de datos. Si alguno de ellos se bloquea, los otros dos pueden seguir ejecutándose. Sin embargo, si se comparte el almacén de datos, una única falla de disco puede eliminar toda la infraestructura. Por lo tanto, asegúrese de mantener una copia de seguridad del almacén de datos compartido desde el que pueda restaurar el almacén de datos rápidamente.
 
@@ -114,7 +113,7 @@ El tamaño del archivo no es el único factor que contribuye a los problemas de 
 
 Además, puede editar la propiedad de tamaño de umbral del componente `com.day.cq.dam.commons.handler.StandardImageHandler` en Configuration Manager para utilizar un archivo temporal intermedio bueno a cero.
 
-## Número máximo de activos {#maximum-number-of-assets}
+## Número máximo de recursos {#maximum-number-of-assets}
 
 El límite en el número de archivos que pueden existir en un almacén de datos puede ser de 2.1 billones debido a las limitaciones del sistema de archivos. Es probable que el repositorio encuentre problemas debido a un gran número de nodos mucho antes de alcanzar el límite del almacén de datos.
 
