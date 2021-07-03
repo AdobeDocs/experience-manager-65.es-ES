@@ -2,18 +2,17 @@
 title: Creación y configuración de páginas del Editor de recursos
 description: Obtenga información sobre cómo crear páginas personalizadas del Editor de recursos y editar varios recursos simultáneamente.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Developer Tools,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: Herramientas para desarrolladores,Administración de recursos
+exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2129'
 ht-degree: 1%
 
 ---
 
-
-# Crear y configurar páginas del Editor de recursos {#creating-and-configuring-asset-editor-pages}
+# Creación y configuración de páginas del Editor de recursos {#creating-and-configuring-asset-editor-pages}
 
 En este documento se describe lo siguiente:
 
@@ -218,7 +217,7 @@ Para personalizar la página Editor de recursos, utilice elementos de la barra d
 
 ![recurso compartido6](assets/assetshare6.png)
 
-#### Configure un Editor de recursos para que se abra desde una página Uso compartido de recursos {#setting-which-asset-editor-opens-from-an-asset-share-page}
+#### Definir un Editor de recursos para que se abra desde una página Uso compartido de recursos {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
 Después de crear la página del Editor de recursos personalizada, debe asegurarse de que, al hacer doble clic en los recursos, el recurso compartido de recursos personalizado que ha creado abra los recursos en la página Editor personalizado.
 
