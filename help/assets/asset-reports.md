@@ -2,16 +2,15 @@
 title: Informes sobre el uso y uso compartido de recursos
 description: Informes sobre los recursos en [!DNL Adobe Experience Manager Assets] que le ayudan a comprender el uso, la actividad y el uso compartido de los recursos digitales.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Asset Reports,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: Informes de activos,Administración de activos
+exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1143'
 ht-degree: 9%
 
 ---
-
 
 # Informes de Asset {#asset-reports}
 
@@ -114,7 +113,7 @@ Para generar informes, haga lo siguiente:
 
    Haga clic en **[!UICONTROL Descargar]** desde la barra de herramientas para descargar el informe en formato CSV.
 
-## Agregar columnas personalizadas {#add-custom-columns}
+## Añadir columnas personalizadas {#add-custom-columns}
 
 Puede agregar columnas personalizadas a los siguientes informes para mostrar más datos según sus necesidades personalizadas:
 
