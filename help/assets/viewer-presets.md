@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 feature: Ajustes preestablecidos de visor
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 25%
@@ -39,6 +39,6 @@ Cualquier problema con los ajustes preestablecidos de visor, consulte [Solución
 
 1. Seleccione un visor del panel izquierdo para aplicarlo al recurso como se ve en el panel derecho. También puede [copiar la URL para compartir](linking-urls-to-yourwebapplication.md) con otros usuarios.
 
-## Obtención de direcciones URL preestablecidas de visor {#obtaining-viewer-preset-urls}
+## Obtención de direcciones URL preestablecidas del visor {#obtaining-viewer-preset-urls}
 
 Para obtener las direcciones URL de los ajustes preestablecidos de visor, consulte [Vinculación de direcciones URL a la aplicación web](linking-urls-to-yourwebapplication.md).
