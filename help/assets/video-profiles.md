@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 feature: Perfiles de vídeo
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '3697'
 ht-degree: 13%
@@ -391,7 +391,7 @@ Consulte también [Reprocesamiento de recursos en una carpeta después de editar
 1. Pulse **[!UICONTROL Aplicar perfil a las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para recibir los recursos cargados recientemente y pulse **[!UICONTROL Aplicar]**. Las carpetas que ya tienen un perfil asignado se indican mostrando el nombre del perfil directamente debajo del nombre de la carpeta en el modo **[!UICONTROL Vista de tarjeta]**.
 Puede [monitorizar el progreso de un trabajo de procesamiento de perfiles de vídeo](#monitoring-the-progress-of-an-encoding-job).
 
-#### Aplicación de un perfil de vídeo a carpetas desde Propiedades {#applying-video-profiles-to-folders-from-properties}
+#### Aplicación de un perfil de vídeo a carpetas de Propiedades {#applying-video-profiles-to-folders-from-properties}
 
 1. Toque o haga clic en el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta a la que desee aplicar un perfil de vídeo.
 1. En la carpeta, pulse la marca de verificación para seleccionarla y, a continuación, pulse **[!UICONTROL Propiedades]**.
@@ -400,7 +400,7 @@ Puede [monitorizar el progreso de un trabajo de procesamiento de perfiles de ví
    ![chlimage_1-518](assets/chlimage_1-518.png)
 Puede  [monitorizar el progreso de un trabajo](#monitoring-the-progress-of-an-encoding-job) de procesamiento de perfiles de vídeo.
 
-### Aplicación global de un perfil de vídeo {#applying-a-video-profile-globally}
+### Aplicación de un perfil de vídeo globalmente {#applying-a-video-profile-globally}
 
 Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en Recursos de Experience Manager en cualquier carpeta tenga aplicado el perfil seleccionado.
 
@@ -419,7 +419,7 @@ Se muestra un indicador de procesamiento (o barra de progreso) para que pueda su
 
 También puede ver el archivo `error.log` para supervisar el progreso de un trabajo de codificación, para ver si la codificación ha finalizado o si se han producido errores en el trabajo. El `error.log` se encuentra en la carpeta `logs` donde está instalada la instancia de Experience Manager.
 
-## Eliminación de un perfil de vídeo de las carpetas {#removing-a-video-profile-from-folders}
+## Eliminación de perfiles de vídeo de carpetas {#removing-a-video-profile-from-folders}
 
 Al quitar un perfil de vídeo de una carpeta, las subcarpetas heredan automáticamente la eliminación del perfil de su carpeta principal. Sin embargo, cualquier procesamiento de archivos que se haya producido dentro de las carpetas permanece intacto.
 
