@@ -2,10 +2,10 @@
 title: Integrar [!DNL Assets] con [!DNL InDesign Server]
 description: Aprenda a integrar [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Publicación
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 3c1a30f36222c319c354afa408555982bfe2804e
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 4%
@@ -88,7 +88,7 @@ Para instalar e iniciar el [!DNL InDesign Server] para usar con [!DNL Experience
    >Si desea guardar los mensajes de salida en un archivo, utilice la redirección; por ejemplo, en Windows:
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### Configurar el flujo de trabajo [!DNL Experience Manager Assets] {#configuring-the-aem-assets-workflow}
+### Configuración del flujo de trabajo [!DNL Experience Manager Assets] {#configuring-the-aem-assets-workflow}
 
 [!DNL Experience Manager Assets] tiene un flujo de trabajo preconfigurado  **[!UICONTROL DAM Update Asset]**, que tiene varios pasos de proceso específicos para  [!DNL InDesign]:
 
@@ -125,7 +125,7 @@ El script `ThumbnailExport.jsx` ejecutado por el paso del flujo de trabajo de ex
 
 Puede configurar el paso del flujo de trabajo Procesar miniaturas para generar representaciones estáticas de diferentes tamaños. Asegúrese de no eliminar los valores predeterminados, ya que son necesarios para la interfaz [!DNL Experience Manager Assets]. Por último, el paso Eliminar representación de vista previa de imagen del flujo de trabajo elimina la representación de miniaturas JPG, ya que ya no es necesaria.
 
-#### Extracción de página {#page-extraction}
+#### Extracción de páginas {#page-extraction}
 
 Esto crea una página [!DNL Experience Manager] a partir de los elementos extraídos. Un controlador de extracción se utiliza para extraer datos de una representación (actualmente HTML o IDML). Estos datos se utilizan para crear una página con PageBuilder.
 
@@ -147,7 +147,7 @@ En una instalación estándar [!DNL Experience Manager] está disponible lo sigu
 
 * **Diseño** de página: El diseño de página que se utilizará al generar la página resultante.
 
-### Configure el trabajador proxy para [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
+### Configurar el trabajador del proxy para [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Para [!DNL InDesign Server] 10.0 o superior, realice los siguientes pasos para h
 >
 >Para la integración [!DNL InDesign Server] con [!DNL Experience Manager Assets], utilice un procesador de varios núcleos porque la función de soporte de sesión necesaria para la integración no es compatible con sistemas de un solo núcleo.
 
-## Configurar [!DNL Experience Manager] credenciales {#configure-aem-credentials}
+## Configurar las credenciales [!DNL Experience Manager] {#configure-aem-credentials}
 
 Puede cambiar las credenciales de administrador predeterminadas (nombre de usuario y contraseña) para acceder a [!DNL InDesign Server] desde su implementación [!DNL Experience Manager] sin romper la integración con [!DNL InDesign Server].
 
