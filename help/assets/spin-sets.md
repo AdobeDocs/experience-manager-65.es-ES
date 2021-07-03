@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 feature: Conjuntos de giros,Administración de recursos
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 11%
@@ -217,6 +217,6 @@ Si elimina la imagen que AEM usa para la miniatura reemplazándola por otra imag
 
 Consulte [Vista previa de recursos](/help/assets/previewing-assets.md).
 
-## Conjuntos de giros de publicación {#publishing-spin-sets}
+## Publicación de conjuntos de giros {#publishing-spin-sets}
 
 Consulte [Publicación de recursos](/help/assets/publishing-dynamicmedia-assets.md).
