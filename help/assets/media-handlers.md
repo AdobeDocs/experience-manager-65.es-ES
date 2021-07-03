@@ -3,10 +3,10 @@ title: Procesamiento de recursos mediante controladores de medios y flujos de tr
 description: Obtenga información sobre los controladores de medios y cómo utilizar flujos de trabajo para realizar tareas en los recursos digitales.
 mini-toc-levels: 1
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: Flujo de trabajo,Representaciones
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 4%
