@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 feature: Recursos 3D,Administración de activos
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 1c95217c98cdf24182eebbfea09c807318b2d514
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2306'
 ht-degree: 5%
@@ -84,7 +84,7 @@ Consulte [Configuración de Cloud Services de Dynamic Media](/help/assets/config
    * [Publicación de recursos estáticos de Dynamic Media 3D](#publishing-three-d-assets)
    * [Métodos alternativos para publicar recursos de Dynamic Media 3D mediante el visor Dimensional](#alternate-publish-methods)
 
-## Acerca de la visualización y la interacción con activos 3D {#viewing-three-d-assets}
+## Acerca de la visualización y la interacción con recursos 3D {#viewing-three-d-assets}
 
 En esta sección se describe cómo ver e interactuar con recursos 3D de dos formas diferentes: desde la página de detalles del recurso y desde el componente de medios 3D en Sitios.
 
@@ -162,7 +162,7 @@ componente de medios 3D Un recurso 3D totalmente interactivo tal y como se muest
    | **Restablecer** | Cerca de la esquina inferior derecha de la página, pulse el icono Restablecer para restaurar el punto de destino de la vista al centro del recurso 3D. Restablecer también mueve la cámara más cerca o más lejos para mostrar el recurso en su totalidad y con un tamaño de visualización razonable. |  |  |
    | **Modo de pantalla completa** | Para entrar al modo de pantalla completa, en la esquina inferior derecha de la página, pulse el icono de pantalla completa . |  |  |
 
-## Acerca del trabajo con el componente multimedia 3D {#working-with-three-d-media-component}
+## Acerca del trabajo con el componente de medios 3D {#working-with-three-d-media-component}
 
 Dynamic Media incluye un componente de medios 3D de Dynamic Media que puede utilizar en Adobe Experience Manager Sites para permitir la visualización interactiva de modelos 3D en sus páginas web.
 
@@ -210,7 +210,7 @@ Ya está listo para asignar un recurso 3D al componente.
 
 Consulte [Asignación de un recurso 3D al componente de medios 3D](#assigning-a-three-d-asset-to-the-component).
 
-### Opcional: Configuración del componente multimedia 3D {#configuring-the-three-d-component}
+### Opcional: Configuración del componente de medios 3D {#configuring-the-three-d-component}
 
 1. En el editor de páginas Sitios del Experience Manager, seleccione el componente **[!UICONTROL Visor de medios 3D]** que agregó anteriormente a la página.
 1. Pulse el icono **[!UICONTROL Configuration]** (llave inglesa) para poder abrir el cuadro de diálogo de configuración de componentes.
@@ -275,7 +275,7 @@ Consulte también [Publicación de páginas](/help/sites-authoring/publishing-pa
 
 1. Pulse **[!UICONTROL URL]** para poder mostrar la URL de producción directa del recurso 3D que puede copiar y utilizar en páginas web.
 
-### Métodos alternativos para publicar recursos de Dynamic Media 3D mediante el visor de dimensiones {#alternate-publish-methods}
+### Métodos alternativos para publicar recursos de Dynamic Media 3D mediante el visor Dimensional {#alternate-publish-methods}
 
 Utilice los dos métodos siguientes para publicar recursos de Dynamic Media 3D si utiliza *not* como Experience Manager de WCM.
 
