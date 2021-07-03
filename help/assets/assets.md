@@ -2,16 +2,15 @@
 title: Introducción a [!DNL Adobe Experience Manager Assets]
 description: Descubra qué es la administración de recursos digitales, sus casos de uso y la oferta  [!DNL Adobe Experience Manager Asset] .
 contentOwner: AG
-feature: Asset Management
-role: Leader, Architect, Business Practitioner
-translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+feature: Administración de activos
+role: Leader, Architect, User
+exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 35%
 
 ---
-
 
 # Acerca de [!DNL Adobe Experience Manager Assets] como solución DAM {#administering-assets}
 
@@ -36,7 +35,7 @@ ht-degree: 0%
 
 La interfaz de usuario básica es la misma que la de [!DNL Sites]. Consulte [Información general de los sitios](/help/sites-authoring/page-authoring.md) para obtener más información.
 
-### Administración de activos digitales frente a componente de imagen {#digital-asset-management-versus-image-component}
+### Administración de recursos digitales frente a componente de imagen {#digital-asset-management-versus-image-component}
 
 Cuando determine si desea colocar una imagen en un repositorio DAM o utilizar un componente de imagen, tenga en cuenta el ciclo de vida de la imagen:
 
@@ -53,7 +52,7 @@ Un activo es, en esencia, un binario más metadatos, representaciones y subactiv
 >
 >Cargar o editar un gran volumen de recursos (especialmente imágenes) puede afectar al rendimiento de su implementación [!DNL Experience Manager].
 
-### [!DNL Experience Manager Assets] terminología  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] terminología {#aem-assets-terminology}
 
 Al trabajar con recursos digitales en [!DNL Experience Manager], debe comprender la siguiente terminología:
 
@@ -86,9 +85,9 @@ Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 
 Los flujos de trabajo también se pueden aplicar manualmente. Consulte en [Controladores de medios de Assets](media-handlers.md) la lista de flujos de trabajo predeterminados.
 
-## [!DNL Experience Manager Assets] y  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] y [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Consulte [Recursos y Biblioteca de medios](medialibrary.md) para obtener información sobre las diferencias.
+Consulte [Assets y Media Library](medialibrary.md) para obtener información sobre las diferencias.
 
 >[!MORELIKETHIS]
 >
