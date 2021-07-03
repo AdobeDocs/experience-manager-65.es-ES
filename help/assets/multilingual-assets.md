@@ -2,16 +2,15 @@
 title: Recursos multilingües y traducción de recursos
 description: Aprenda a automatizar los flujos de trabajo para traducir recursos, incluidos binarios, metadatos y etiquetas a varios idiomas.
 contentOwner: AG
-feature: Asset Management
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Administración de activos
+role: Admin
+exl-id: edccf23c-087e-4253-babb-dd4c6610517d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 3%
+source-wordcount: '169'
+ht-degree: 2%
 
 ---
-
 
 # Recursos multilingües {#multilingual-assets}
 
