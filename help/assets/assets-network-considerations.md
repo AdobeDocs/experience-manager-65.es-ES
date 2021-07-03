@@ -2,18 +2,17 @@
 title: Consideraciones y requisitos de red
 description: Analiza las consideraciones de red al diseñar una implementación [!DNL Adobe Experience Manager Assets] .
 contentOwner: AG
-role: Architect, Administrator
-feature: Developer Tools
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Herramientas para desarrolladores
+exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Assets] consideraciones de red  {#assets-network-considerations}
+# [!DNL Assets] consideraciones de red {#assets-network-considerations}
 
 Comprender su red es tan importante como comprender [!DNL Adobe Experience Manager Assets]. La red puede afectar a la carga, descarga y experiencia del usuario. La elaboración de diagramas de topología de red ayuda a identificar los puntos de interrupción y las áreas suboptimizadas de la red que debe corregir para mejorar el rendimiento de la red y la experiencia del usuario.
 
@@ -48,7 +47,7 @@ El equipo mostrado a la derecha tiene un flujo ascendente limitado a la red corp
 
 El diagrama muestra velocidades de enlace ascendente más altas dentro de la red corporativa que las utilizadas generalmente. Estas tuberías son recursos compartidos. Si se espera que el conmutador compartido gestione 50 clientes, puede ser un punto de interrupción. En el diagrama inicial, solo dos equipos comparten la conexión concreta.
 
-## Vínculo ascendente a Internet desde la red corporativa y [!DNL Experience Manager] entorno {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Vínculo ascendente a Internet desde la red corporativa y el entorno [!DNL Experience Manager] {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -64,7 +63,7 @@ Este es el punto de estrangulamiento más pequeño orientado al cliente. Sin emb
 
 A partir de los diagramas de ejemplo, puede concluir que seis dispositivos comparten un canal conceptual de 10 Mbps. Según el tamaño de los activos apalancados, esto puede ser inadecuado para satisfacer las expectativas del usuario.
 
-## Topología del [!DNL Experience Manager] entorno {#topology-of-the-aem-environment}
+## Topología del entorno [!DNL Experience Manager] {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
