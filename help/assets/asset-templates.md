@@ -2,16 +2,15 @@
 title: Plantillas de recursos
 description: Obtenga información sobre las plantillas de recursos en [!DNL Adobe Experience Manager Assets] y cómo usar las plantillas de recursos para crear material publicitario de marketing.
 contentOwner: AG
-role: Business Practitioner
-feature: Asset Management,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Administración de recursos,Herramientas para desarrolladores
+exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1548'
 ht-degree: 0%
 
 ---
-
 
 # Plantillas de recursos {#asset-templates}
 
@@ -37,7 +36,7 @@ Al elegir una plantilla para el material colateral, [!DNL Experience Manager Ass
 
 Puede exportar el archivo actualizado dentro de la carpeta principal en los formatos INDD, PDF o JPG. También puede descargar la salida en estos formatos en su sistema de archivos local.
 
-## Crear un colateral {#creating-a-collateral}
+## Creación de un colateral {#creating-a-collateral}
 
 Considere un escenario en el que desee crear garantías digitales imprimibles, como folletos, folletos y publicidades para una próxima campaña, y compartirlas con tiendas de venta en todo el mundo. La creación de material colateral basado en una plantilla ayuda a ofrecer una experiencia de cliente unificada en todos los canales. Los diseñadores pueden crear las plantillas de campaña (de una sola página o de varias páginas) mediante una solución creativa como [!DNL InDesign] y cargar las plantillas en [!DNL Experience Manager Assets] para usted. Antes de crear un colateral, haga que una o más plantillas INDD se carguen en y estén disponibles con [!DNL Experience Manager] antelación.
 
@@ -65,7 +64,7 @@ Considere un escenario en el que desee crear garantías digitales imprimibles, c
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
-## Editar un colateral {#editing-a-collateral}
+## Editar una garantía {#editing-a-collateral}
 
 Puede editar un colateral inmediatamente después de crearlo. También puede abrirlo desde la página [!UICONTROL Plantillas] o la página de recursos.
 
@@ -94,7 +93,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
 1. Para modificar el texto de un campo editable, haga clic en el campo de texto de la lista de campos editables y edite el texto en el campo.
 
-   ![chlimage_1-191](assets/chlimage_1-316.png)
+   ![chlimage_1-111](assets/chlimage_1-316.png)
 
    Puede editar las propiedades del texto, por ejemplo el estilo de fuente, el color y el tamaño, utilizando las opciones proporcionadas.
 
@@ -108,7 +107,7 @@ Puede editar un colateral inmediatamente después de crearlo. También puede abr
 
    También puede buscar imágenes utilizando palabras clave, etiquetas y según su estado de publicación. Puede navegar por el repositorio [!DNL Experience Manager Assets] y navegar a la ubicación de la imagen deseada.
 
-   ![chlimage_1-114](assets/chlimage_1-320.png)
+   ![chlimage_1-115](assets/chlimage_1-320.png)
 
 1. Haga clic en **[!UICONTROL Preview]** para previsualizar la imagen.
 1. Para editar una página específica en un material de varias páginas, utilice el navegador de páginas de la parte inferior.
