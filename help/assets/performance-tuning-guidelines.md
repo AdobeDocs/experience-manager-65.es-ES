@@ -3,20 +3,19 @@ title: Ajuste de rendimiento [!DNL Assets].
 description: Sugerencias y sugerencias sobre [!DNL Experience Manager] configuración, cambios en hardware, software y componentes de red para eliminar cuellos de botella y optimizar el rendimiento de [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
-role: Architect, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Administración de activos
+exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2743'
 ht-degree: 0%
 
 ---
 
-
 <!-- TBD: Get reviewed by engineering. -->
 
-# [!DNL Adobe Experience Manager Assets] guía de ajuste del rendimiento  {#assets-performance-tuning-guide}
+# [!DNL Adobe Experience Manager Assets] guía de ajuste del rendimiento {#assets-performance-tuning-guide}
 
 Una configuración [!DNL Experience Manager Assets] contiene una serie de componentes de hardware, software y red. Según el escenario de implementación, es posible que necesite cambios específicos en la configuración del hardware, software y componentes de red para eliminar los cuellos de botella en el rendimiento.
 
@@ -70,13 +69,13 @@ Establezca los siguientes parámetros de JVM:
 * `-Dupdate.limit`=250000
 * `-Doak.fastQuerySize`=verdadero
 
-## Almacenamiento de datos y configuración de memoria {#data-store-and-memory-configuration}
+## Configuración del almacén de datos y la memoria {#data-store-and-memory-configuration}
 
 ### Configuración del almacén de datos de archivo {#file-data-store-configuration}
 
 Se recomienda separar el almacén de datos del almacén de segmentos para todos los usuarios de [!DNL Experience Manager Assets]. Además, la configuración de los parámetros `maxCachedBinarySize` y `cacheSizeInMB` puede ayudar a maximizar el rendimiento. Establezca `maxCachedBinarySize` en el tamaño de archivo más pequeño que se pueda guardar en la caché. Especifique el tamaño de la caché en memoria que se utilizará para el almacén de datos en `cacheSizeInMB`. Adobe recomienda establecer este valor entre el 2 % y el 10 % del tamaño total de pila. Sin embargo, las pruebas de carga/rendimiento pueden ayudar a determinar la configuración ideal.
 
-### Configure el tamaño máximo de la caché de imágenes almacenada en búfer {#configure-the-maximum-size-of-the-buffered-image-cache}
+### Configurar el tamaño máximo de la caché de imágenes almacenada en búfer {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Al cargar grandes cantidades de activos en [!DNL Adobe Experience Manager], para permitir picos inesperados en el consumo de memoria y para evitar que JVM falle con OutOfMemoryErrors, reduzca el tamaño máximo configurado de la caché de imágenes almacenada en búfer. Tomemos un ejemplo de que tiene un sistema con una pila máxima (- `Xmx`param) de 5 GB, un Oak BlobCache establecido en 1 GB y una caché de documentos de 2 GB. En este caso, la caché almacenada en búfer tomaría un máximo de 1,25 GB y memoria, lo que dejaría solo 0,75 GB de memoria para picos inesperados.
 
@@ -113,7 +112,7 @@ accessKey=<snip>
  migrateFailuresCount=400
 ```
 
-## Optimización de red {#network-optimization}
+## Optimización de la red {#network-optimization}
 
 Adobe recomienda habilitar HTTPS porque muchas empresas tienen cortafuegos que olfatean el tráfico HTTP, lo que afecta negativamente a las cargas y corrompe los archivos. Para cargas de archivos grandes, asegúrese de que los usuarios tengan conexiones cableadas a la red porque una red WiFi se satura rápidamente. Para obtener instrucciones sobre la identificación de cuellos de botella de red, consulte [Guía de tamaño de recursos](/help/assets/assets-sizing-guide.md). Para evaluar el rendimiento de la red analizando la topología de la red, consulte [Consideraciones de la red de recursos](/help/assets/assets-network-considerations.md).
 
@@ -164,7 +163,7 @@ De forma predeterminada, [!DNL Experience Manager] ejecuta un número máximo de
 
 Establecer una cola para la mitad de los procesadores disponibles es una solución viable para empezar. Sin embargo, es posible que tenga que aumentar o reducir este número para lograr el máximo rendimiento y ajustarlo por entorno. Existen colas independientes para flujos de trabajo transitorios y no transitorios, así como otros procesos, como flujos de trabajo externos. Si varias colas configuradas en el 50% de los procesadores están activos simultáneamente, el sistema puede sobrecargarse rápidamente. Las colas que se utilizan con frecuencia varían considerablemente entre las implementaciones de los usuarios. Por lo tanto, es posible que tenga que configurarlos cuidadosamente para lograr la máxima eficiencia sin sacrificar la estabilidad del servidor.
 
-### Configuración de recursos de actualización de DAM {#dam-update-asset-configuration}
+### Configuración de recursos de actualización DAM {#dam-update-asset-configuration}
 
 El flujo de trabajo [!UICONTROL Activo de actualización de DAM] contiene un conjunto completo de pasos que se configuran para tareas como la generación de Dynamic Media PTIFF y la integración [!DNL Adobe InDesign Server]. Sin embargo, es posible que la mayoría de los usuarios no necesiten varios de estos pasos. Adobe recomienda crear una copia personalizada del modelo de flujo de trabajo [!UICONTROL DAM Update Asset] y eliminar los pasos innecesarios. En este caso, actualice los lanzadores para [!UICONTROL DAM Update Asset] para que apunten al nuevo modelo.
 
@@ -176,7 +175,7 @@ Normalmente, la tarea de recolección de basura del almacén de datos se ejecuta
 
 Si tiene un espacio de disco limitado y ejecuta los flujos de trabajo [!UICONTROL DAM Update Asset] intensamente, considere la posibilidad de programar la tarea de colección de residuos con más frecuencia.
 
-#### Generación de representación en tiempo de ejecución {#runtime-rendition-generation}
+#### Generación de representaciones en tiempo de ejecución {#runtime-rendition-generation}
 
 Los clientes utilizan imágenes de diversos tamaños y formatos en su sitio web o para su distribución a socios comerciales. Dado que cada representación se añade a la huella del recurso en el repositorio, Adobe recomienda utilizar esta función con cautela. Para reducir la cantidad de recursos necesarios para procesar y almacenar imágenes, puede generar estas imágenes en tiempo de ejecución en lugar de como representaciones durante la ingesta.
 
@@ -215,7 +214,7 @@ Además, establezca la ruta de acceso de la carpeta temporal de ImageMagick en e
 
 Si utiliza [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con el Servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos PSD o PSB de gran tamaño. Trabaje con el representante del Servicio de atención al cliente de Adobe para implementar estas prácticas recomendadas para su implementación de AMS y elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
-### XMP escritura {#xmp-writeback}
+### XMP reescritura {#xmp-writeback}
 
 XMP reescritura actualiza el recurso original cada vez que se modifican los metadatos en [!DNL Experience Manager], lo que resulta en lo siguiente:
 
@@ -261,7 +260,7 @@ Si los usuarios no necesitan realizar búsquedas de texto completo de los recurs
 1. En la interfaz [!DNL Experience Manager], acceda al [!UICONTROL Administrador de paquetes].
 1. Cargue e instale el paquete disponible en [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
-### Total de hipótesis {#guess-total}
+### Total de la oferta {#guess-total}
 
 Al crear consultas que generen grandes conjuntos de resultados, utilice el parámetro `guessTotal` para evitar una gran utilización de la memoria al ejecutarlas.
 
@@ -287,14 +286,14 @@ Para todos los problemas de rendimiento de la red del cliente, realice las sigui
 * Utilizando una herramienta de referencia de red
 * Realización de pruebas con Dispatcher
 
-### [!DNL Experience Manager] prueba de implementación  {#aem-deployment-testing}
+### [!DNL Experience Manager] prueba de implementación {#aem-deployment-testing}
 
 Para minimizar la latencia y lograr un alto rendimiento a través de la utilización eficiente de la CPU y el uso compartido de la carga, supervise regularmente el rendimiento de su implementación [!DNL Experience Manager]. En particular:
 
 * Ejecute pruebas de carga para la implementación [!DNL Experience Manager].
 * Monitorice el rendimiento de carga y la capacidad de respuesta de la interfaz de usuario.
 
-## [!DNL Experience Manager Assets] lista de comprobación de rendimiento e impacto de las tareas de administración de recursos  {#checklist}
+## [!DNL Experience Manager Assets] lista de comprobación de rendimiento e impacto de las tareas de administración de recursos {#checklist}
 
 * Habilite HTTPS para evitar cualquier husmeador de tráfico HTTP corporativo.
 * Utilice una conexión por cable para la carga pesada de recursos.
