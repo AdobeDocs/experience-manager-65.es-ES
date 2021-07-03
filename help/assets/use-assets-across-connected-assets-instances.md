@@ -2,10 +2,10 @@
 title: Utilice los recursos conectados para compartir recursos de DAM en [!DNL Sites]
 description: Utilice los recursos disponibles en una implementación remota [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] .
 contentOwner: AG
-role: Business Practitioner, Administrator, Leader
+role: User, Admin, Leader
 feature: Recursos, usuarios y grupos conectados
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 9e99d25a15aee56721112e2afd4b570ba7854bd7
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2742'
 ht-degree: 29%
@@ -162,7 +162,7 @@ Utilice la configuración anterior para probar la experiencia de creación y com
 
 Los recursos recuperados se pueden usar como cualquier otro recurso local, pero los metadatos asociados no se pueden editar.
 
-### Comprobar el uso de un recurso en varias páginas web {#asset-usage-references}
+### Comprobar el uso de un recurso en las páginas web {#asset-usage-references}
 
 [!DNL Experience Manager] permite a los usuarios de DAM comprobar todas las referencias a un recurso. Ayuda a comprender y administrar el uso de un recurso en [!DNL Sites] remoto y en recursos compuestos. Muchos autores de páginas web en la implementación [!DNL Experience Manager Sites] pueden utilizar un recurso en un [!DNL Assets] remoto en diferentes páginas web. Para simplificar la administración de recursos y no provocar referencias rotas, es importante que los usuarios de DAM comprueben el uso de un recurso en las páginas web locales y remotas. La pestaña [!UICONTROL Referencias] de la página [!UICONTROL Propiedades] de un recurso muestra las referencias locales y remotas del recurso.
 
