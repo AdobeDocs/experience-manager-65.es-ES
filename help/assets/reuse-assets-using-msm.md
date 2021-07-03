@@ -3,16 +3,15 @@ title: Reutilizar recursos mediante MSM
 description: Utilice recursos en varias páginas o carpetas que se deriven de recursos principales y estén vinculadas a ellos. Los recursos permanecen sincronizados con una copia principal y, con unos pocos clics, reciben las actualizaciones de los recursos principales.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner, Administrator, Architect
-feature: Asset Management,Multi Site Manager
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin, Architect
+feature: Administración de recursos, administrador de varios sitios
+exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '3375'
+source-wordcount: '3371'
 ht-degree: 9%
 
 ---
-
 
 # Reutilizar recursos con MSM para [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
@@ -37,7 +36,7 @@ MSM mantiene una relación activa entre el recurso de origen y sus Live Copies, 
 * Los cambios en los recursos de origen se aplican (se implementan) también a las Live Copies, es decir, las Live Copies se sincronizan con el origen.
 * Puede actualizar las Live Copies suspendiendo la relación activa o eliminando la herencia de algunos campos limitados. Las modificaciones al origen ya no se aplican a la Live Copy.
 
-### Glosario de MSM para [!DNL Assets] términos {#glossary}
+### Glosario de MSM para términos [!DNL Assets] {#glossary}
 
 **Fuente:** Los recursos o carpetas originales. Copia principal de la que provienen las Live Copies.
 
@@ -182,11 +181,11 @@ Seleccione una carpeta o un recurso de Live Copy, abra el carril izquierdo y hag
 
 *Figura: Acciones disponibles en el carril Referencias para la Live Copy seleccionada.*
 
-## Propagación de modificaciones del origen a las Live Copies {#rolloutsync}
+## Propagación de modificaciones del origen a Live Copies {#rolloutsync}
 
 Una vez modificado el origen, los cambios se pueden propagar a las Live Copies mediante una acción de sincronización o de despliegue. Para comprender la diferencia entre ambas acciones, consulte [glosario](#glossary).
 
-### Desplegar acción {#rollout}
+### Acción de despliegue {#rollout}
 
 Puede iniciar una acción de despliegue desde el recurso de origen y actualizar todas o algunas Live Copies seleccionadas.
 
