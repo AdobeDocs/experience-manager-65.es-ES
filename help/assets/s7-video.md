@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Vídeo
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1568'
 ht-degree: 34%
@@ -93,13 +93,13 @@ Para configurar los ajustes preestablecidos universales:
 
 1. Los perfiles de codificación seleccionados se aplican automáticamente a todos los vídeos cargados en la carpeta de destino de CQ DAM que ha configurado para esta configuración de nube de Scene7. Puede establecer diversas configuraciones de nube de Scene7 con diferentes carpetas de destino para aplicar distintos perfiles de codificación según sea necesario.
 
-## Actualizar los ajustes preestablecidos del visor y de codificación  {#updating-viewer-and-encoding-presets}
+## Actualizar los ajustes preestablecidos del visor y de codificación {#updating-viewer-and-encoding-presets}
 
 Para actualizar los ajustes preestablecidos de visor y codificación para vídeo porque los ajustes preestablecidos se actualizaron en Scene7, vaya a la configuración de Scene7 en la Configuración de nube y pulse **[!UICONTROL Actualizar los ajustes preestablecidos de visor y codificación]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Carga del vídeo de origen principal a Scene7 desde Adobe DAM {#uploading-your-master-video}
+## Carga del vídeo de origen principal en Scene7 desde Adobe DAM {#uploading-your-master-video}
 
 1. Vaya a la carpeta de destino de CQ DAM en que ha establecido la configuración de nube con perfiles de codificación de Scene7.
 1. Haga clic en **[!UICONTROL Cargar]** para cargar el vídeo de origen principal. La carga y codificación de vídeo se completan después de que el flujo de trabajo [!UICONTROL DAM Update Asset] se haya completado y **[!UICONTROL Publish to Scene7]** tenga una marca de verificación.
@@ -140,7 +140,7 @@ La siguiente tabla ofrece una comparación de alto nivel de las funciones admiti
 | Capacidad de ampliación | Sí | No |
 | Vídeo móvil | Sí | Sí |
 
-### Configuración  {#setting-up}
+### Configuración {#setting-up}
 
 #### Creación de perfiles de vídeo {#creating-video-profiles}
 
