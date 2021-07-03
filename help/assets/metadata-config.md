@@ -2,16 +2,15 @@
 title: Configuración y administración de la funcionalidad de metadatos.
 description: Configuración y administración de la funcionalidad [!DNL Experience Manager Assets] relacionada con la adición y administración de metadatos.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Metadatos
+exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1952'
 ht-degree: 6%
 
 ---
-
 
 # Configuración y administración de la funcionalidad de metadatos en [!DNL Assets] {#config-metadata}
 
@@ -23,7 +22,7 @@ ht-degree: 6%
 
 [!DNL Adobe Experience Manager Assets] conserva los metadatos de cada recurso. Permite una categorización y organización más sencillas de los recursos, y ayuda a las personas que buscan un recurso específico. Con la capacidad de mantener y administrar metadatos con los recursos, puede organizar y procesar automáticamente los recursos en función de sus metadatos. [!DNL Adobe Experience Manager Assets] permite a los administradores configurar y personalizar la funcionalidad de metadatos para modificar la oferta de Adobe predeterminada.
 
-## Editar esquema de metadatos {#metadata-schema}
+## Edición del esquema de metadatos {#metadata-schema}
 
 Para obtener más información, consulte [edición de formularios de esquema de metadatos](metadata-schemas.md#edit-metadata-schema-forms).
 
@@ -36,7 +35,7 @@ Puede agregar sus propios espacios de nombres dentro de [!DNL Experience Manager
 1. Para agregar un área de nombres, haga clic en **[!UICONTROL New]** en la parte inferior de la página.
 1. Especifique un área de nombres personalizada en la convención de área de nombres XML. Especifique el ID en forma de URI y un prefijo asociado para el ID. Haga clic en **[!UICONTROL Guardar]**.
 
-## Configurar límites para la actualización de metadatos masivos {#bulk-metadata-update-limit}
+## Configuración de límites para la actualización de metadatos masivos {#bulk-metadata-update-limit}
 
 Para evitar una situación similar a la de denegación de servicio (DOS), [!DNL Enterprise Manager] limita el número de parámetros admitidos en una solicitud de Sling. Al actualizar los metadatos de muchos recursos de una sola vez, puede que llegue al límite y los metadatos no se actualicen para obtener más recursos. Enterprise Manager genera la siguiente advertencia en los registros:
 
@@ -104,7 +103,7 @@ Un perfil de metadatos permite aplicar metadatos predeterminados a los recursos 
 
    ![Una copia del perfil de metadatos añadido en la página Perfiles de metadatos](assets/copy-metadata-profile.png)
 
-### Eliminar un perfil de metadatos {#deleting-a-metadata-profile}
+### Eliminación de un perfil de metadatos {#deleting-a-metadata-profile}
 
 1. En la página **[!UICONTROL Perfiles de metadatos]**, seleccione un perfil que desee eliminar.
 
@@ -131,7 +130,7 @@ To apply a metadata profile globally, follow these steps:
   ![See applied metadata profile to a folder in the JCR in CRXDE](assets/metadata-profile-folder-setting2.png)
 -->
 
-## Esquema de metadatos para una carpeta {#folder-metadata-schema}
+## Esquema de metadatos de una carpeta {#folder-metadata-schema}
 
 [!DNL Adobe Experience Manager Assets] le permite crear esquemas de metadatos para carpetas de recursos, que definen el diseño y los metadatos mostrados en las páginas de propiedades de las carpetas.
 
