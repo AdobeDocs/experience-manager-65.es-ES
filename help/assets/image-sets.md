@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 feature: Conjuntos de imágenes,Administración de recursos
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2085'
 ht-degree: 13%
@@ -24,7 +24,7 @@ Los conjuntos de imágenes proporcionan a los usuarios una experiencia de visual
 
 Los conjuntos de imágenes se designan mediante una pancarta con la palabra `IMAGESET`. Además, si se publica el conjunto de imágenes, se muestra la fecha de publicación, indicada por el icono **[!UICONTROL Mundo]**, junto con la fecha de la última modificación, indicada por el icono **[!UICONTROL Lápiz]**.
 
-![chlimage_1-135](assets/chlimage_1-339.png)
+![chlimage_1-133](assets/chlimage_1-339.png)
 
 Dentro del conjunto de imágenes, también puede crear muestras creando un conjunto de imágenes y agregando miniaturas.
 
@@ -241,6 +241,6 @@ Puede realizar varias tareas de edición en conjuntos de imágenes, como las sig
 
 Consulte [Vista previa de recursos](/help/assets/previewing-assets.md).
 
-## Conjuntos de imágenes de publicación {#publishing-image-sets}
+## Publicar conjuntos de imágenes {#publishing-image-sets}
 
 Consulte [Publicación de recursos](/help/assets/publishing-dynamicmedia-assets.md).
