@@ -8,9 +8,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Perfiles de imagen
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2752'
 ht-degree: 12%
@@ -122,7 +122,7 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 
 1. Si está editando, guarde los cambios. Si elimina, confirme que desea eliminar el perfil.
 
-## Aplicación de un perfil de imagen de Dynamic Media a las carpetas {#applying-an-image-profile-to-folders}
+## Aplicación de un perfil de imagen de Dynamic Media a carpetas {#applying-an-image-profile-to-folders}
 
 Al asignar un perfil de imagen a una carpeta, las subcarpetas heredan automáticamente el perfil de su carpeta principal. Este flujo de trabajo significa que solo puede asignar un perfil de imagen a una carpeta. Como tal, considere detenidamente la estructura de carpetas en la que carga, almacena, utiliza y archiva recursos.
 
@@ -144,7 +144,7 @@ Las carpetas que ya tienen un perfil asignado se indican mediante la visualizaci
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets).
 
-#### Aplicación de perfiles de imagen Dynamic Media a carpetas desde la interfaz de usuario Perfiles {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Aplicación de perfiles de imagen de Dynamic Media a carpetas desde la interfaz de usuario Perfiles {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
 1. Seleccione el perfil de imagen que desea aplicar a una o varias carpetas.
@@ -153,7 +153,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 1. Pulse **[!UICONTROL Aplicar perfil de procesamiento a las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para recibir los recursos cargados recientemente y pulse o haga clic en **[!UICONTROL Aplicar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
-#### Aplicación de perfiles de imagen Dynamic Media a carpetas desde Propiedades {#applying-image-profiles-to-folders-from-properties}
+#### Aplicación de perfiles de imagen de Dynamic Media a carpetas desde Propiedades {#applying-image-profiles-to-folders-from-properties}
 
 1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta a la que desea aplicar un perfil de imagen.
 1. En la carpeta, pulse la marca de verificación para seleccionarla y, a continuación, pulse **[!UICONTROL Propiedades]**.
@@ -161,7 +161,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Aplicación global de un perfil de imagen de Dynamic Media {#applying-an-image-profile-globally}
+### Aplicación de un perfil de imagen de Dynamic Media globalmente {#applying-an-image-profile-globally}
 
 Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en recursos de Experience Manager en cualquier carpeta tenga aplicado el perfil seleccionado.
 
@@ -263,13 +263,13 @@ Si es necesario, puede volver a ejecutar el recorte inteligente para volver a ge
 
 1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]** y, a continuación, pulse **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
 
-## Eliminación de un perfil de imagen de las carpetas {#removing-an-image-profile-from-folders}
+## Eliminación de perfiles de imagen de carpetas {#removing-an-image-profile-from-folders}
 
 Al quitar un perfil de imagen de una carpeta, las subcarpetas heredan automáticamente la eliminación del perfil de su carpeta principal. Sin embargo, cualquier procesamiento de archivos que se haya producido dentro de las carpetas permanece intacto.
 
 Puede quitar un perfil de imagen de una carpeta desde el menú **[!UICONTROL Herramientas]** o, si está en la carpeta, desde **[!UICONTROL Propiedades]**. En esta sección se describe cómo quitar perfiles de imagen de las carpetas de ambos modos.
 
-### Eliminación de perfiles de imagen Dynamic Media de las carpetas mediante la interfaz de usuario Perfiles {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Eliminación de perfiles de imagen de Dynamic Media de carpetas mediante la interfaz de usuario Perfiles {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
 1. Seleccione el perfil de imagen que desea eliminar de una carpeta o de varias carpetas.
