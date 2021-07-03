@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
-feature: Asset Management
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Administración de activos
+role: User, Admin
+exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '116'
 ht-degree: 13%
 
 ---
-
 
 # Acerca de la administración de recursos de Dynamic Media {#managing-assets}
 
