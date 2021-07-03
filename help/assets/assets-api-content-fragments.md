@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de contenido
+role: User, Admin
+exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1861'
 ht-degree: 3%
 
 ---
-
 
 # Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets{#content-fragments-support-in-aem-assets-http-api}
 
@@ -79,7 +78,7 @@ Todas las solicitudes son atómicas.
 
 Esto significa que las solicitudes posteriores (`write`) no se pueden combinar en una sola transacción que pueda tener éxito o fallar como una sola entidad.
 
-### API de REST de AEM (Assets) frente a componentes de AEM {#aem-assets-rest-api-versus-aem-components}
+### API de REST de AEM (Assets) y componentes AEM {#aem-assets-rest-api-versus-aem-components}
 
 <table>
  <tbody>
@@ -179,7 +178,7 @@ La respuesta contendrá información de paginación como parte de la sección `p
 ...
 ```
 
-## Tipos de entidad {#entity-types}
+## Tipos de entidades {#entity-types}
 
 ### Carpetas {#folders}
 
@@ -380,4 +379,3 @@ Para obtener más información, consulte:
 
 * [Documentación de la API HTTP de Assets](/help/assets/mac-api-assets.md)
 * [AEM sesión de Gem: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-
