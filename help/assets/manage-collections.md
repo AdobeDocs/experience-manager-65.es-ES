@@ -3,16 +3,15 @@ title: Administrar colecciones de recursos digitales
 description: Conozca las tareas para administrar las colecciones de recursos, como crear, ver, eliminar, editar y descargar colecciones.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner
-feature: Collections,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Colecciones,Administración de activos
+exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2183'
 ht-degree: 11%
 
 ---
-
 
 # Administrar colecciones {#managing-collections}
 
@@ -28,7 +27,7 @@ Las colecciones son de los siguientes tipos, según la forma en que recopilan lo
 
 * Colección inteligente que incluye recursos de forma dinámica en función de criterios de búsqueda.
 
-## Acceda a la consola de colecciones {#navigating-the-collections-console}
+## Acceso a la consola de colecciones {#navigating-the-collections-console}
 
 Para abrir **[!UICONTROL Collections]**, en la interfaz [!DNL Experience Manager], vaya a **[!UICONTROL Assets]** > **[!UICONTROL Colecciones]**.
 
@@ -58,7 +57,7 @@ Puede crear una colección con referencias estáticas, por ejemplo, una colecci�
 
    Para añadir recursos a la colección, vaya a la interfaz de usuario [!DNL Assets] . Para obtener más información, consulte [Agregar recursos a una colección](#adding-assets-to-a-collection).
 
-### Crear colecciones utilizando dropzone {#create-collections-using-dropzone}
+### Crear colecciones mediante dropzone {#create-collections-using-dropzone}
 
 Puede arrastrar recursos de la interfaz de usuario [!DNL Assets] a una colección. También puede crear una copia de una colección y arrastrar los recursos allí.
 
@@ -259,7 +258,7 @@ Para eliminar las búsquedas guardadas, siga estos pasos:
 
 1. En el cuadro de diálogo, haga clic en **[!UICONTROL Eliminar]** para eliminar la búsqueda guardada.
 
-## Ejecutar un flujo de trabajo en una colección {#running-a-workflow-on-a-collection}
+## Ejecución de un flujo de trabajo en una colección {#running-a-workflow-on-a-collection}
 
 Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la colección contiene colecciones anidadas, el flujo de trabajo también se ejecuta en los recursos de las colecciones anidadas. Sin embargo, si la colección y la colección anidada contienen recursos duplicados, el flujo de trabajo solo se ejecuta una vez para estos recursos.
 
@@ -272,5 +271,5 @@ Puede ejecutar un flujo de trabajo para los recursos de una colección. Si la co
 >[!MORELIKETHIS]
 >
 >* [Configuración de las notificaciones por correo electrónico de Recursos Experience Manager](/help/sites-administering/notification.md#assetsconfig)
->* [Crear una tarea de revisión para colecciones](bulk-approval.md)
+* [Crear una tarea de revisión para colecciones](bulk-approval.md)
 
