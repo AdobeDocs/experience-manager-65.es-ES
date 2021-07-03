@@ -2,16 +2,15 @@
 title: Biblioteca de transcodificación de imágenes
 description: Aprenda a configurar y utilizar la biblioteca de transcodificación de imágenes de Adobe, una solución de procesamiento de imágenes que puede realizar funciones básicas de gestión de imágenes, como codificación, transcodificación, remuestreo de imágenes y cambio de tamaño de imágenes.
 contentOwner: AG
-role: Administrator
-feature: Renditions,Developer Tools,Asset Processing
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin
+feature: Representaciones,Herramientas para desarrolladores,Procesamiento de recursos
+exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
-
 
 # Biblioteca de transcodificación de imágenes {#imaging-transcoding-library}
 
@@ -72,7 +71,7 @@ Puede configurar las siguientes opciones para el parámetro `-resize` :
 
 Para configurar el procesamiento de ITL, cree un archivo de configuración y actualice el flujo de trabajo para ejecutarlo.
 
-### Crear archivo de configuración para el paquete extraído {#create-conf-file}
+### Creación de un archivo de configuración para un paquete extraído {#create-conf-file}
 
 Para configurar la biblioteca, cree un archivo CONF para indicar las bibliotecas siguiendo los pasos siguientes. Necesita permisos de administrador o raíz.
 
@@ -103,7 +102,7 @@ Para configurar la biblioteca, cree un archivo CONF para indicar las bibliotecas
 
 1. Para asegurarse de que el valor de la ruta está establecido en `.`, utilice el comando `echo $LD_LIBRARY_PATH`. El resultado debe ser `.`. Si el valor no está establecido en `.`, reinicie la sesión.
 
-### Configurar [!UICONTROL Activo de actualización de DAM] flujo de trabajo {#configure-dam-asset-update-workflow}
+### Configurar el flujo de trabajo [!UICONTROL Activo de actualización de DAM] {#configure-dam-asset-update-workflow}
 
 Actualice el flujo de trabajo [!UICONTROL DAM Update Asset] para utilizar la biblioteca para procesar imágenes.
 
