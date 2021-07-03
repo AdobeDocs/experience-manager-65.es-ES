@@ -2,18 +2,17 @@
 title: '[!DNL Adobe Camera Raw] asistencia técnica.'
 description: Aprenda a habilitar la compatibilidad con [!DNL Adobe Camera Raw] en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Administrator
-feature: Developer Tools
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Admin
+feature: Herramientas para desarrolladores
+exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 2%
 
 ---
 
-
-# Procesar imágenes con {#camera-raw-support} Camera Raw
+# Procesamiento de imágenes con Camera Raw {#camera-raw-support}
 
 Puede habilitar la compatibilidad con [!DNL Adobe Camera Raw] para procesar formatos de archivo sin procesar, como CR2, NEF y RAF, y procesar las imágenes en formato JPEG. La funcionalidad se admite en [!DNL Adobe Experience Manager Assets] mediante el [paquete Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) disponible en Distribución de software.
 
