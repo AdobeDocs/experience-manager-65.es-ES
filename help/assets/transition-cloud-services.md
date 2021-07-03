@@ -2,16 +2,15 @@
 title: Aplicar servicios de nube de traducción a carpetas
 description: Aplicar servicios de nube de traducción a carpetas
 contentOwner: AG
-role: Administrator
-feature: Translation
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Admin
+feature: Traducción
+exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '386'
 ht-degree: 44%
 
 ---
-
 
 # Aplicar servicios de nube de traducción a carpetas {#applying-translation-cloud-services-to-folders}
 
@@ -39,7 +38,7 @@ La aplicación de servicios de traducción en la nube directamente a la carpeta 
 
 1. En la barra de herramientas, haga clic en **[!UICONTROL Save]** y, a continuación, haga clic en **[!UICONTROL OK]** para cerrar el cuadro de diálogo. El servicio de traducción se aplica a la carpeta.
 
-## Aplicar conector de traducción personalizado {#applying-custom-translation-connector}
+## Aplicar conector de traducción personalizado  {#applying-custom-translation-connector}
 
 Si desea aplicar un conector personalizado para los servicios de traducción que desea utilizar en los flujos de trabajo de traducción. Para aplicar un conector personalizado, primero instale el conector desde el Administrador de paquetes. A continuación, configure el conector desde la consola de Cloud Services. Después de configurar el conector, estará disponible en la lista de conectores de la pestaña Cloud Services que se describe en [Aplicación de los serviciosde traducción](transition-cloud-services.md#applying-the-translation-services). Después de aplicar el conector personalizado y ejecutar los flujos de trabajo de traducción, el mosaico **[!UICONTROL Resumen de traducción]** del proyecto de traducción muestra los detalles del conector en los encabezados **[!UICONTROL Proveedor]** y **[!UICONTROL Método]**.
 
