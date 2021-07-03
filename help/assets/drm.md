@@ -2,16 +2,15 @@
 title: Digital Rights Management de los activos
 description: Aprenda a administrar los estados de caducidad de los recursos y la información de los recursos con licencia en [!DNL Experience Manager].
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: DRM,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: DRM,Administración de activos
+exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1401'
 ht-degree: 5%
 
 ---
-
 
 # Digital Rights Management para los recursos {#digital-rights-management-in-assets}
 
@@ -81,7 +80,7 @@ Para permitir que la consola [!DNL Assets] muestre los recursos compuestos de re
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
-## Estados de recursos {#asset-states}
+## Estados de los recursos {#asset-states}
 
 La consola [!DNL Assets] puede mostrar varios estados para los recursos. En función del estado actual de un recurso concreto, su vista de tarjeta muestra una etiqueta que describe su estado, por ejemplo, Caducado, Publicado, Aprobado, Rechazado, etc.
 
