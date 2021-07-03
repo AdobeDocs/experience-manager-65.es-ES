@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2849'
 ht-degree: 17%
@@ -229,7 +229,7 @@ El texto refleja el nombre del usuario de la sesión actual. Para restablecer el
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-#### Convertir la plantilla de imagen de Dynamic Media Classic en un vínculo {#making-the-scene-image-template-a-link}
+#### Conversión de la plantilla de imagen de Dynamic Media Classic en un vínculo {#making-the-scene-image-template-a-link}
 
 1. En la página con el componente **[!UICONTROL Plantilla de imagen]** de Dynamic Media Classic, pulse **[!UICONTROL Editar]**.
 1. En el campo **[!UICONTROL URL]**, introduzca la dirección URL a la que se dirigen los usuarios cuando toca la imagen. En el campo **[!UICONTROL Open in]**, seleccione si desea que se abra el destino (una nueva ventana o la misma ventana).
