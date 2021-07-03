@@ -6,17 +6,17 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publicación
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2944'
 ht-degree: 4%
 
 ---
 
-# Configuración de la publicación selectiva a nivel de carpeta en Dynamic Media {#selective-publish-configure-folder}
+# Configuración de una publicación selectiva a nivel de carpeta en Dynamic Media {#selective-publish-configure-folder}
 
 Puede elegir entre publicar o cancelar la publicación de recursos en Adobe Experience Manager o Dynamic Media en el nivel de carpeta, o desde ellos. Puede utilizar **[!UICONTROL Administrar publicación]** o **[!UICONTROL Publicación rápida]** en lugar de basarse únicamente en la **[!UICONTROL Configuración de Dynamic Media]** cuya configuración sea global para todas las carpetas de la instancia de Dynamic Media.
 
@@ -74,7 +74,7 @@ Después de configurar la publicación selectiva en una carpeta, puede realizar 
 
 1. En la esquina superior derecha de la página, pulse **[!UICONTROL Guardar y cerrar]** y, a continuación, pulse **[!UICONTROL Aceptar]** para volver a Recursos Experience Manager.
 
-## Publicar selectivamente recursos en Dynamic Media o Experience Manager mediante Administrar publicación{#selective-publish-manage-publication}
+## Publicar recursos de forma selectiva en Dynamic Media o Experience Manager mediante Administrar publicación{#selective-publish-manage-publication}
 
 Antes de utilizar **[!UICONTROL Administrar publicación]** para publicar selectivamente recursos en Dynamic Media o Experience Manager, asegúrese de haber configurado una de las siguientes opciones:
 
@@ -262,7 +262,7 @@ Cuando se utiliza **[!UICONTROL Vista de lista]**, aparece una columna adicional
    * Una carpeta *not* configurada para sincronizar con Dynamic Media no muestra la columna Dynamic Media.
       ![Vista de lista y línea de tiempo](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
-## Solución de problemas de publicación selectiva {#selective-publish-troubleshoot}
+## Resolución de problemas de publicación selectiva {#selective-publish-troubleshoot}
 
 Un recurso que no está sincronizado con Dynamic Media pero tiene una acción de publicación de Dynamic Media activada provoca el siguiente mensaje de error y solución:
 
