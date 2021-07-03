@@ -2,16 +2,15 @@
 title: Flujo de actividad de recursos digitales en la vista de cronología
 description: Este artículo describe cómo mostrar los registros de actividad de los recursos en la cronología.
 contentOwner: AG
-feature: Asset Management
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Administración de activos
+role: User, Admin
+exl-id: 28dc0aa5-f2be-4e27-b7d8-415569b7ecd4
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 20%
+source-wordcount: '217'
+ht-degree: 21%
 
 ---
-
 
 # Flujo de actividad en la cronología {#activity-stream-in-timeline}
 
