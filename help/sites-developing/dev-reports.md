@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 08269877be5e98405474e4b1793526763cab174f
+source-git-commit: 071bc0e36ed2d8eb4ce7bd0ba46823adc0e43095
 workflow-type: tm+mt
 source-wordcount: '5252'
 ht-degree: 0%
@@ -50,34 +50,17 @@ Para los informes estándar entregados con AEM:
 >En los ejemplos y definiciones que aparecen a continuación, se utiliza la notación siguiente:
 >
 >* Cada línea define un nodo o una propiedad donde:
-   >
-   >  
-* `N:<name> [<nodeType>]`
-   >
-   >     
-   Describe un nodo con el nombre `<*name*>` y el tipo de nodo `<*nodeType*>`*.*
-   >
-   >  
-* `P:<name> [<propertyType]`
-   >
-   >     
-   Describe una propiedad con el nombre `<*name*>` y un tipo de propiedad `<*propertyType*>`.
-   >
-   >  
-* `P:<name> = <value>`
-   >
-   >     
-   Describe una propiedad `<name>` que debe establecerse en el valor de `<value>`.
+   >  `N:<name> [<nodeType>]` : Describe un nodo con el nombre  `<*name*>` y el tipo de nodo de  `<*nodeType*>`*.*
+   >  `P:<name> [<propertyType]` : Describe una propiedad con el nombre de  `<*name*>` y un tipo de propiedad de  `<*propertyType*>`.
+   >  `P:<name> = <value>` : Describe una propiedad  `<name>` que debe establecerse en el valor de  `<value>`.
    >
    >
 * La sangría muestra las dependencias jerárquicas entre los nodos.
->* Elementos separados por | denota una lista de posibles elementos; por ejemplo, tipos o nombres:
+>* Elementos separados por | denota una lista de posibles elementos; por ejemplo, tipos o nombres; p. ej. `String|String[]` significa que la propiedad puede ser String o String[].
 
->
->  
-p. ej. `String|String[]` significa que la propiedad puede ser String o String[].
->
->* `[]` representa una matriz; como [] Cadenas o una matriz de nodos como en la  [Definición de consulta](#query-definition).
+   >
+   >
+* `[]` representa una matriz; como [] Cadenas o una matriz de nodos como en la  [Definición de consulta](#query-definition).
 >
 >
 A menos que se indique lo contrario, los tipos predeterminados son:
@@ -99,7 +82,7 @@ El marco de presentación de informes se basa en los siguientes principios:
 
 El marco de informes (ilustrado por la estructura de un informe estándar) utiliza los siguientes componentes básicos, alimentados por la cola de procesamiento:
 
-![chlimage_1-247](assets/chlimage_1-248.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 ### Página Informe {#report-page}
 
