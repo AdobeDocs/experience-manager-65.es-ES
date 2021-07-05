@@ -1,13 +1,12 @@
 ---
-sub-product: AEM Contenido y comercio
+sub-product: AEM Content and Commerce
 user-guide-title: AEM Contenido y comercio
 breadcrumb-title: Guía de Commerce
-user-guide-description: Aprenda a utilizar y administrar AEM contenido y comercio.
-translation-type: tm+mt
-source-git-commit: 8612e7c4105a9872fc8bba1988716eaa4b18d550
+user-guide-description: Aprenda a utilizar y administrar AEM Content and Commerce.
+source-git-commit: 538dc7620317f86c0b3d762eaef597d0a7969ace
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 33%
+source-wordcount: '108'
+ht-degree: 52%
 
 ---
 
@@ -32,6 +31,7 @@ ht-degree: 33%
       + [Diseño de componentes del CIF](cif/customizing/style-cif-component.md)
       + [Personalización de componentes CIF](cif/customizing/customize-cif-components.md)
       + [Uso de selectores de catálogo del CIF](cif/customizing/use-cif-pickers.md)
++ [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [Migración](cif/migration.md)
 + Notas de la versión {#release-notes}
    + [2021](cif/release-notes/release-notes-2021.md)
