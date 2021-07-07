@@ -3,9 +3,9 @@ title: Configuración de los complementos del Editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de Adobe Experience Manager para habilitar funcionalidades individuales.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 7f8263a9304ff51e08878c13115c8aeeafce3de3
+source-git-commit: 11cda989e6a28428f03a269c407a7672e6eab747
 workflow-type: tm+mt
-source-wordcount: '4405'
+source-wordcount: '4406'
 ht-degree: 3%
 
 ---
@@ -245,19 +245,11 @@ A continuación, especifique la ubicación de las hojas de estilo a las que dese
 >
 >El Editor de texto enriquecido utiliza un elemento DOM de contenedor con un ID de `CQrte` que puede utilizarse para proporcionar distintos estilos para ver y editar:
 >
+>`#CQ td {`
+>` // defines the style for viewing }`
 >
-```
->#CQ td {
-> // defines the style for viewing
-> }
->```
->
->
-```
->#CQrte td {
-> // defines the style for editing
-> }
->```
+>`#CQrte td {`
+>` // defines the style for editing }`
 
 ### Especifique los estilos disponibles en la lista emergente {#stylesindropdown}
 
@@ -496,7 +488,7 @@ Copiar y pegar tablas en o desde el componente RTE depende del explorador. No es
 
    * **Nombre** `features`
    * **Tipo** `String`
-   * **Valor** `*`
+   * **Valor** `*`  (asterisco)
 
    >[!NOTE]
    Si no desea habilitar todas las funciones de la tabla, puede crear la propiedad `features` como:
@@ -613,7 +605,7 @@ Para definir el tamaño de la pestaña:
 
    * **Nombre** `tabSize`
    * **Tipo** `String`
-   * **** Valore el número de caracteres de espacio que se utilizarán en la tabulación.
+   * **** Valore el número de caracteres de espacio que se utilizarán en la tabuladora
 
 1. Guarde los cambios.
 
