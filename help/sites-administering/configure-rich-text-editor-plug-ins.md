@@ -3,14 +3,15 @@ title: Configuración de los complementos del Editor de texto enriquecido
 description: Aprenda a configurar los complementos del Editor de texto enriquecido de Adobe Experience Manager para habilitar funcionalidades individuales.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 7f8263a9304ff51e08878c13115c8aeeafce3de3
 workflow-type: tm+mt
-source-wordcount: '4395'
+source-wordcount: '4405'
 ht-degree: 3%
 
 ---
 
-# Configurar los complementos del Editor de texto enriquecido {#configure-the-rich-text-editor-plug-ins}
+
+# Configuración de los complementos del Editor de texto enriquecido {#configure-the-rich-text-editor-plug-ins}
 
 Las funcionalidades de RTE están disponibles a través de una serie de complementos, cada uno con propiedad de características. Puede configurar la propiedad de funciones para habilitar o deshabilitar, una o más características de RTE. Este artículo describe cómo configurar específicamente los complementos RTE.
 
@@ -72,7 +73,7 @@ Al utilizar la funcionalidad de reemplazo, la cadena de reemplazo que se va a re
 
 El cuadro de diálogo buscar y reemplazar se vuelve transparente cuando se hace clic en buscar y se vuelve opaco cuando se hace clic en reemplazar. Esto permite al autor revisar el texto que reemplazará el autor. Si los usuarios hacen clic en reemplazar todo, el cuadro de diálogo se cerrará y mostrará el número de reemplazos realizados.
 
-## Configurar los modos de pegado {#paste-modes}
+## Configuración de los modos de pegado {#paste-modes}
 
 Al utilizar RTE, los autores pueden pegar contenido en uno de los tres modos siguientes:
 
@@ -82,7 +83,7 @@ Al utilizar RTE, los autores pueden pegar contenido en uno de los tres modos sig
 
 * **Modo** MS Word: Pegue el texto, incluidas las tablas, con formato al copiar desde MS Word. No se admite la copia y el pegado de texto desde otro origen, como una página web o MS Excel, y solo se conserva el formato parcial.
 
-### Configurar las opciones de pegado disponibles en la barra de herramientas de RTE {#configure-paste-options-available-on-the-rte-toolbar}
+### Configurar las opciones de pegado disponibles en la barra de herramientas de RTE  {#configure-paste-options-available-on-the-rte-toolbar}
 
 Puede proporcionar algunos, todos o ninguno de estos tres iconos a sus autores en la barra de herramientas de RTE:
 
@@ -98,7 +99,7 @@ Para configurar RTE para que muestre los iconos necesarios, siga estos pasos.
 1. Vaya al nodo `rtePlugins/edit`. Consulte [activar un complemento](#activateplugin) si el nodo no existe.
 1. Cree la propiedad `features` en el nodo `edit` y agregue una o más de las funciones. Guarde todos los cambios.
 
-### Configure el comportamiento del icono Pegar (Ctrl+V) y el acceso directo {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
+### Configuración del comportamiento del icono y el acceso directo Pegar (Ctrl+V) {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
 Puede preconfigurar el comportamiento del icono **[!UICONTROL Pegar (Ctrl+V)]** siguiendo estos pasos. Esta configuración también define el comportamiento del método abreviado de teclado Ctrl+V que utilizan los autores para pegar contenido.
 
@@ -155,53 +156,18 @@ Para configurar qué formatos se permiten al pegar texto en AEM desde otro progr
    >
    >Si no se define explícitamente, se utiliza el valor predeterminado de true y se acepta el formato .
 
-1. También se pueden definir otros formatos utilizando una serie de otras propiedades o nodos, aplicados también al nodo `htmlPasteRules`:
+1. También se pueden definir otros formatos utilizando una serie de otras propiedades o nodos, aplicados también al nodo `htmlPasteRules`. Guarde todos los cambios.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propiedad</strong></td>
-   <td><strong>Tipo</strong></td>
-   <td><strong>Descripción</strong></td>
-  </tr>
-  <tr>
-   <td>allowBlockTags</td>
-   <td>Cadena[]</td>
-   <td><p>Define la lista de etiquetas de bloque permitidas.</p> <p>Algunas etiquetas de bloque posibles son:</p>
-    <ul>
-     <li>encabezados (h1, h2, h3)</li>
-     <li>párrafos p)</li>
-     <li>listas (ol, ul)</li>
-     <li>tablas (tabla)</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>fallbackBlockTag</td>
-   <td>Cadena</td>
-   <td><p>Define la etiqueta de bloque utilizada para cualquier bloque que tenga una etiqueta de bloque no incluida en allowBlockTags.</p> <p> p es suficiente en la mayoría de los casos.</p> </td>
-  </tr>
-  <tr>
-   <td>tabla</td>
-   <td>nt:unstructured</td>
-   <td><p>Define el comportamiento al pegar tablas.<br /> </p> <p>Este nodo debe tener la propiedad <code>allow</code> (type <code>Boolean</code>) para definir si se permite pegar tablas.</p> <p>Si <code>allow</code> está establecido en <code>false</code>, debe especificar la propiedad <code>ignoreMode</code> (type<code> String</code>) para definir cómo se gestiona el contenido de la tabla pegada. Los valores válidos para <code>ignoreMode</code> son:</p>
-    <ul>
-     <li><code>remove</code>: Quita el contenido de la tabla.</li>
-     <li><code>paragraph</code>: Convierte celdas de tabla en párrafos.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>list</td>
-   <td>nt:unstructured</td>
-   <td><p>Define el comportamiento al pegar listas.<br /> </p> <p>Debe tener la propiedad <code>allow</code> (type <code>Boolean</code>) para definir si se permite el pegado de listas.</p> <p>Si <code>allow</code> está establecido en <code>false</code>, debe especificar la propiedad <code>ignoreMode</code> (type <code>String</code>) para definir cómo administrar el contenido de la lista pegado. Los valores válidos para <code>ignoreMode</code> son:</p>
-    <ul>
-     <li><code>remove</code>: Elimina el contenido de la lista.</li>
-     <li><code>paragraph</code>: Convierte los elementos de la lista en párrafos.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+Puede utilizar las siguientes propiedades para `htmlPasteRules`.
 
-Ejemplo de una estructura `htmlPasteRules` válida:
+| Propiedad | Tipo | Descripción |
+|---|---|---|
+| `allowBlockTags` | Cadena | Define la lista de etiquetas de bloque permitidas. Algunas etiquetas de bloque posibles son: <ul> <li>encabezados (h1, h2, h3)</li> <li>párrafos p)</li> <li>listas (ol, ul)</li> <li>tablas (tabla)</li> </ul> |
+| `fallbackBlockTag` | Cadena | Define la etiqueta de bloque utilizada para cualquier bloque que tenga una etiqueta de bloque no incluida en `allowBlockTags`. `p` es suficiente en la mayoría de los casos. |
+| tabla | nt:unstructured | Define el comportamiento al pegar tablas. Este nodo debe tener la propiedad `allow` (type Boolean) para definir si se permite pegar tablas. Si allow está establecido en `false`, debe especificar la propiedad `ignoreMode` (tipo String) para definir cómo se gestiona el contenido de la tabla pegada. Los valores válidos para `ignoreMode` son: <ul> <li>`remove`: Quita el contenido de la tabla.</li> <li>`paragraph`: Convierte celdas de tabla en párrafos.</li> </ul> |
+| list | nt:unstructured | Define el comportamiento al pegar listas. Debe tener la propiedad `allow` (tipo booleano) para definir si se permite pegar listas. Si `allow` está establecido en `false`, debe especificar la propiedad `ignoreMode` (tipo String) para definir cómo administrar el contenido de la lista pegado. Los valores válidos para `ignoreMode` son: <ul><li> `remove`: Elimina el contenido de la lista.</li> <li>`paragraph`: Convierte los elementos de la lista en párrafos.</li> </ul> |
+
+A continuación se muestra un ejemplo de una estructura `htmlPasteRules` válida.
 
 ```xml
 "htmlPasteRules": {
@@ -223,13 +189,9 @@ Ejemplo de una estructura `htmlPasteRules` válida:
 }
 ```
 
-1. Guarde todos los cambios.
-
 ## Configuración de estilos de texto {#textstyles}
 
-Los autores pueden aplicar Estilos para cambiar el aspecto de una parte del texto. Los estilos se basan en clases CSS predefinidas en la hoja de estilos CSS. El contenido estilizado se incluye en etiquetas `span` utilizando el atributo `class` para hacer referencia a la clase CSS. Por ejemplo:
-
-`<span class=monospaced>Monospaced Text Here</span>`
+Los autores pueden aplicar Estilos para cambiar el aspecto de una parte del texto. Los estilos se basan en clases CSS predefinidas en la hoja de estilos CSS. El contenido estilizado se incluye en etiquetas `span` utilizando el atributo `class` para hacer referencia a la clase CSS. Por ejemplo, `<span class=monospaced>Monospaced Text Here</span>`.
 
 Cuando el complemento Estilos está habilitado por primera vez, no hay estilos predeterminados disponibles. La lista emergente está vacía. Para proporcionar a los autores estilos, haga lo siguiente:
 
@@ -237,11 +199,11 @@ Cuando el complemento Estilos está habilitado por primera vez, no hay estilos p
 * Especifique la ubicación de las hojas de estilo.
 * Especifique los estilos individuales que se pueden seleccionar en la lista desplegable Estilo .
 
-Para las configuraciones posteriores (re-), por ejemplo, para añadir más estilos, siga solo las instrucciones para hacer referencia a una nueva hoja de estilo y especificar los estilos adicionales.
+Para configuraciones posteriores, por ejemplo, para agregar más estilos, siga solamente las instrucciones para hacer referencia a una nueva hoja de estilo y especificar los estilos adicionales.
 
 >[!NOTE]
 >
->Los estilos también se pueden definir para [tablas o celdas de tabla](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Estas configuraciones requieren procedimientos separados.
+>Puede definir Estilos para [tablas o celdas de tabla](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Estas configuraciones requieren procedimientos separados.
 
 ### Habilitar la lista de selector desplegable Estilo {#styleselectorlist}
 
@@ -708,10 +670,7 @@ Para configurar cómo se agregan vínculos en AEM desde otro programa, defina la
    * **Tipo** `String`
    * **Valor** `richtext`
 
-   La ubicación del nodo `../items/text` puede variar, según la estructura del cuadro de diálogo; dos ejemplos son:
-   * `/apps/myProject>/components/text/dialog/items/text`
-   * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
-
+   La ubicación del nodo `../items/text` puede variar, según la estructura del cuadro de diálogo; dos ejemplos son `/apps/myProject>/components/text/dialog/items/text` y `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. En `htmlRules`, cree un nuevo nodo.
 
