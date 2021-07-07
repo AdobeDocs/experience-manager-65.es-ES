@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Colaboración,Adobe Asset Link,Aplicación de escritorio
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '3254'
+source-wordcount: '3250'
 ht-degree: 16%
 
 ---
@@ -89,7 +89,7 @@ Para admitir casos de uso de distribución de recursos, se deben considerar otra
 
 ### Consideraciones al utilizar la integración [!DNL Experience Manager] y [!DNL Creative Cloud] {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* Consulte [prácticas recomendadas de la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
+* Consulte [prácticas recomendadas de la aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Consulte [Integración con Adobe Stock](aem-assets-adobe-stock.md)
 * Consulte [Vínculo de recursos de Adobe](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
@@ -177,7 +177,7 @@ Las agencias externas y los trabajadores independientes sin acceso directo a la 
 Utilice las siguientes estrategias para proporcionar acceso a los recursos finales/aprobados:
 
 * Utilice la aplicación de escritorio si Asset Link no funciona.
-* Utilice [Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) Experience Manager para distribuir recursos de forma segura a socios externos
+* Utilice [Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) Experience Manager para distribuir los recursos de forma segura a socios externos
 * Utilice una implementación personalizada de un portal de distribución y abastecimiento basado en [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Utilice el control de acceso configurado en [!DNL Experience Manager] y la infraestructura de red necesaria (por ejemplo, la lista de permitidos VPN e IP) para proporcionar a las partes externas acceso a un área específica de contenido en su DAM. Pueden utilizar la [!DNL Experience Manager] interfaz de usuario web para obtener recursos y cargar contenido nuevo en su DAM.
 
@@ -209,7 +209,7 @@ La descripción hace referencia a la carga de archivos operacionalmente (por eje
 
 Puede aprovechar las siguientes capacidades de carga:
 
-* Para cargar carpetas grandes/jerárquicas de forma masiva, utilice la aplicación de escritorio [!DNL Experience Manager] que proporciona funcionalidad [de carga de carpetas](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#upload-and-add-new-assets-to-aem). También puede cargar estructuras de carpetas jerárquicas. [!DNL Assets] se cargan en segundo plano y, por lo tanto, no están vinculados a una sesión de explorador web
+* Para cargar carpetas grandes/jerárquicas de forma masiva, utilice la aplicación de escritorio [!DNL Experience Manager] que proporciona funcionalidad [de carga de carpetas](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem). También puede cargar estructuras de carpetas jerárquicas. [!DNL Assets] se cargan en segundo plano y, por lo tanto, no están vinculados a una sesión de explorador web
 * Para cargar algunos archivos de una sola carpeta, arrástrelos directamente a la interfaz web o utilice la opción Crear de la interfaz web [!DNL Assets].
 * Según los requisitos empresariales, también puede utilizar el cargador personalizado.
 
