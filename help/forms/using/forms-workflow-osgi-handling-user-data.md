@@ -6,15 +6,14 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
-
 
 # Flujos de trabajo centrados en Forms en OSGi | Gestión de datos de usuario {#forms-centric-workflows-on-osgi-handling-user-data}
 
@@ -30,7 +29,7 @@ Un flujo de trabajo centrado en formularios se puede activar o iniciar mediante 
 
 Para obtener más información sobre los flujos de trabajo y las capacidades de AEM centrados en Forms, consulte [Flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md).
 
-## Almacenamiento de datos y datos de usuario {#user-data-and-data-stores}
+## Almacenamiento de datos y datos de usuarios {#user-data-and-data-stores}
 
 Cuando se activa un flujo de trabajo, se genera automáticamente una carga útil para la instancia del flujo de trabajo. A cada instancia de flujo de trabajo se le asigna un ID de instancia único y un ID de carga útil asociado. La carga útil contiene las ubicaciones del repositorio para los datos de usuario y formulario asociados a una instancia de flujo de trabajo. Además, los borradores y los datos históricos de una instancia de flujo de trabajo también se almacenan en el repositorio de AEM.
 
@@ -161,4 +160,3 @@ También puede utilizar API para acceder a nodos y propiedades y eliminarlos. Co
 * [Cómo acceder mediante programación al JCR de AEM](/help/sites-developing/access-jcr.md)
 * [Eliminación de nodos y propiedades](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [Referencia de API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
-
