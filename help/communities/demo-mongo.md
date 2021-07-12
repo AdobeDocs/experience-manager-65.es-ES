@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
-
 
 # Configuración de MongoDB para demostración {#how-to-setup-mongodb-for-demo}
 
@@ -109,14 +108,14 @@ Los siguientes comandos son un ejemplo de configuración de un conjunto de répl
    * No se necesita ningún servicio.
    * La carpeta Solr instalada se denominará &lt;solr-install>.
 
-### Configurar Solr para AEM Communities {#configure-solr-for-aem-communities}
+### Configuración de Solr para AEM Communities {#configure-solr-for-aem-communities}
 
 Para configurar una colección Solr para MSRP para demostración, hay dos decisiones que se deben tomar (seleccione los enlaces a la documentación principal para obtener más información):
 
 1. Ejecute Solr en modo independiente o [SolrCloud](msrp.md#solrcloudmode).
 1. Instale [standard](msrp.md#installingstandardmls) o [advanced](msrp.md#installingadvancedmls) búsqueda multilingüe (MLS).
 
-### Solr independiente {#standalone-solr}
+### Solar independiente {#standalone-solr}
 
 El método para ejecutar Solr puede variar según la versión y la forma de instalación. La [Guía de referencia de Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) es la documentación autorizada.
 
