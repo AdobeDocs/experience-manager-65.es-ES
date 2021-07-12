@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
-
 
 # Conexión de AEM Forms con el LiveCycle de Adobe {#connecting-aem-forms-with-adobe-livecycle}
 
@@ -153,11 +152,11 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 ...
 ```
 
-## Soporte de RunAs {#runas-support}
+## Compatibilidad con RunAs {#runas-support}
 
 Casi todos los servicios de documentos de LiveCycle requieren autenticación. Puede utilizar cualquiera de las siguientes opciones para iniciar estos servicios sin proporcionar credenciales explícitas en el código:
 
-### Configuración de lista de permitidos {#allowlist-configuration}
+### configuración de lista de permitidos {#allowlist-configuration}
 
 La configuración del SDK del cliente de LiveCycle contiene una configuración sobre los nombres de servicio. Esta configuración es una lista de servicios para los que la lógica de invocación utiliza credenciales de administrador listas para usar. Por ejemplo, si agrega los servicios de DirectoryManager (parte de la API de administración de usuarios) a esta lista, cualquier código de cliente puede utilizar directamente el servicio y la capa de invocación pasa automáticamente las credenciales configuradas como parte de la solicitud enviada al servidor de LiveCycle
 
@@ -193,7 +192,7 @@ List<Component> components = runAsManager.doPrivileged(new PrivilegedAction<List
 },credential);
 ```
 
-### InvocationRequest {#invocationrequest-property}
+### InvocationRequest, propiedad {#invocationrequest-property}
 
 Si llama a un proceso o utiliza directamente la clase ServiceClientFactory y crea una InvocationRequest, puede especificar una propiedad para indicar que la capa de invocación debe utilizar credenciales configuradas.
 
@@ -258,7 +257,7 @@ Los siguientes servicios están disponibles:
 </dependency>
 ```
 
-### LiveCycle de Adobe TaskManager Paquete de cliente {#adobe-livecycle-taskmanager-client-bundle}
+### LiveCycle de Adobe Paquete de cliente de TaskManager {#adobe-livecycle-taskmanager-client-bundle}
 
 Los siguientes servicios están disponibles:
 
@@ -409,7 +408,7 @@ El siguiente servicio está disponible:
 </dependency>
 ```
 
-### LiveCycle de Adobe Rights Manager Paquete de cliente {#adobe-livecycle-rights-manager-client-bundle}
+### Paquete de cliente de Adobe LiveCycle Rights Manager {#adobe-livecycle-rights-manager-client-bundle}
 
 Los siguientes servicios están disponibles:
 
@@ -431,7 +430,7 @@ Los siguientes servicios están disponibles:
 </dependency>
 ```
 
-### LiveCycle de Adobe Firmas Paquete de cliente {#adobe-livecycle-signatures-client-bundle}
+### Paquete de cliente de firmas de LiveCycle de Adobe {#adobe-livecycle-signatures-client-bundle}
 
 El siguiente servicio está disponible:
 
