@@ -6,15 +6,14 @@ uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
-
 
 # Administración de usuarios de Forms | Gestión de datos de usuario {#forms-user-management-handling-user-data}
 
@@ -28,7 +27,7 @@ La administración de usuarios es un componente JEE de AEM Forms que permite cre
 
 <!-- Fix broken links For more information about how user management works and configured, see AEM Forms JEE administration help. -->
 
-## Almacenamiento de datos y datos de usuario {#user-data-and-data-stores}
+## Almacenamiento de datos y datos de usuarios {#user-data-and-data-stores}
 
 La administración de usuarios almacena datos de usuarios en una base de datos, como My Sql, Oracle, MS SQL Server e IBM DB2. Además, cualquier usuario que haya iniciado sesión al menos una vez en aplicaciones de Forms en AEM autor en `https://'[server]:[port]'lc`, el usuario se creará en AEM repositorio. Por lo tanto, la administración de usuarios se almacena en los siguientes almacenes de datos:
 
@@ -87,7 +86,7 @@ La administración de usuarios almacena los datos de usuario en las siguientes t
  </tbody>
 </table>
 
-### Repositorio de AEM {#aem-repository}
+### repositorio AEM {#aem-repository}
 
 Los datos de administración de usuarios para usuarios que hayan accedido al menos una vez a las aplicaciones de Forms en `https://'[server]:[port]'lc` también se almacenan en AEM repositorio.
 
@@ -176,7 +175,7 @@ Haga lo siguiente para eliminar los datos de administración de usuarios de un I
 
 1. Inicie el servidor de AEM Forms.
 
-### Repositorio de AEM {#aem-repository-1}
+### repositorio AEM {#aem-repository-1}
 
 Los usuarios de Forms JEE tienen sus datos en AEM repositorio si han accedido a la instancia de autor de AEM Forms al menos a uno. Puede acceder a sus datos de usuario y eliminarlos de AEM repositorio.
 
@@ -192,4 +191,3 @@ Para eliminar un usuario:
 1. Busque un usuario y haga doble clic en el nombre de usuario para abrir las propiedades de usuario. Copie la propiedad `Path` .
 1. Vaya a AEM CRX DELite en `https://'[server]:[port]'/lc/crx/de/index.jsp` y navegue o busque la ruta del usuario.
 1. Elimine la ruta y haga clic en **[!UICONTROL Guardar todo]** para eliminar permanentemente al usuario de AEM repositorio.
-
