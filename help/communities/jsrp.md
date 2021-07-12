@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 1%
+source-wordcount: '462'
+ht-degree: 0%
 
 ---
 
-
-# JSRP - Proveedor de recursos de almacenamiento JCR {#jsrp-jcr-storage-resource-provider}
+# JSRP: proveedor de recursos de almacenamiento JCR {#jsrp-jcr-storage-resource-provider}
 
 ## Acerca de JSRP {#about-jsrp}
 
@@ -31,7 +30,7 @@ Consulte también [Características de las opciones de SRP](working-with-srp.md#
 
 ## Configuración {#configuration}
 
-### Seleccione JSRP {#select-jsrp}
+### Seleccionar JSRP {#select-jsrp}
 
 De forma predeterminada, JSRP es la opción de almacenamiento para UGC.
 
