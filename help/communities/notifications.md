@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 1%
 
 ---
-
 
 # Notificaciones de comunidades {#communities-notifications}
 
@@ -70,7 +69,7 @@ Los componentes deben configurarse para habilitar lo siguiente. Las funciones qu
 
 * Los perfiles de miembro ya están configurados para permitir que otros miembros puedan seguir.
 
-## Notificaciones de la siguiente {#notifications-from-following}
+## Notificaciones de lo siguiente {#notifications-from-following}
 
 ![notificaciones](assets/notifications.png)
 
@@ -89,7 +88,7 @@ Aparecerá el botón **[!UICONTROL Follow]**:
 
    * Sigue toda la actividad de esa entrada específica.
 
-## Administración de la configuración de notificación {#managing-notification-settings}
+## Administración de la configuración de notificaciones {#managing-notification-settings}
 
 Al seleccionar el vínculo Configuración de notificación de la página Notificaciones , es posible que cada miembro administre cómo se reciben las notificaciones.
 
@@ -107,7 +106,7 @@ Un miembro puede activarlo, pero aun así depende del correo electrónico que se
 
 ![notifications3](assets/notifications3.png)
 
-## Visualización de notificaciones{#viewing-notifications} 
+## Visualización de notificaciones  {#viewing-notifications}
 
 ### Notificaciones web {#web-notifications}
 
@@ -117,13 +116,13 @@ Al visitar el sitio publicado, seleccionar el enlace `Notifications` mostrará t
 
 ![notifications4](assets/notifications4.png)
 
-### Notificaciones de correo electrónico {#email-notifications}
+### Notificaciones por correo electrónico {#email-notifications}
 
 Cuando el canal de correo electrónico está habilitado, el miembro recibe un correo electrónico que contiene un vínculo al contenido de la web.
 
 ![notifications5](assets/notifications5.png)
 
-## Personalizar notificaciones por correo electrónico {#customize-email-notifications}
+## Personalización de las notificaciones por correo electrónico {#customize-email-notifications}
 
 Las organizaciones pueden personalizar las notificaciones por correo electrónico [superponiendo](/help/communities/client-customize.md#overlays) las plantillas en **/libs/settings/community/templates/email/html**.
 
@@ -136,4 +135,3 @@ Para modificar la plantilla de notificaciones de correo electrónico para @menti
     A new mention <a href="{{objectUrl}}">comment</a> {{#if this.target.properties.[jcr:title]}}to the article "{{{target.displayName}}}" {{/if}}was added by {{{user.name}}} on {{dateUtil this.published format="EEE, d MMM yyyy HH:mm:ss z"}}.\n \
 {{/equals}}\
 ```
-
