@@ -9,27 +9,26 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2803'
 ht-degree: 1%
 
 ---
 
+# Inicio de sesión en Social con Facebook y Twitter {#social-login-with-facebook-and-twitter}
 
-# Inicio de sesión social con Facebook y Twitter {#social-login-with-facebook-and-twitter}
-
-El inicio de sesión en Social es la capacidad de presentar a un visitante del sitio la opción de iniciar sesión con su cuenta de Facebook o Twitter. Por lo tanto, incluya los datos permitidos de Facebook o Twitter en su perfil de AEM miembro.
+El inicio de sesión en Social es la capacidad para presentar a un visitante del sitio la opción de iniciar sesión con su cuenta de Facebook o Twitter. Por lo tanto, incluya los datos permitidos de Facebook o Twitter en su perfil de miembro AEM.
 
 ![socialloginweretail](assets/socialloginweretail.png)
 
-## Información general de inicio de sesión social {#social-login-overview}
+## Información general de inicio de sesión en Social {#social-login-overview}
 
 Para incluir el inicio de sesión social, es *necesario* crear aplicaciones personalizadas de Facebook y Twitter.
 
-Aunque el ejemplo de comercio minorista de Internet proporciona aplicaciones de ejemplo de Facebook y Twitter y servicios en la nube, no están disponibles en un [sitio web de producción](../../help/sites-administering/production-ready.md).
+Aunque el ejemplo de venta minorista proporciona aplicaciones y servicios en la nube de Facebook y Twitter de ejemplo, no están disponibles en un [sitio web de producción](../../help/sites-administering/production-ready.md).
 
 Los pasos necesarios son:
 
@@ -59,21 +58,21 @@ Existen dos conceptos básicos:
 
 1. **Fields**  (parámetros) especifica los datos reales solicitados mediante parámetros de URL.
 
-   * Estos campos se especifican en [Proveedor OAuth de AEM Communities Facebook](#aem-communities-facebook-oauth-provider) y [Proveedor OAuth de AEM Communities Twitter](#aem-communities-twitter-oauth-provider).
+   * Estos campos se especifican en [Proveedor de OAuth de AEM Communities Facebook](#aem-communities-facebook-oauth-provider) y [Proveedor de OAuth de AEM Communities Twitter](#aem-communities-twitter-oauth-provider).
    * Los campos predeterminados son suficientes para la mayoría de los casos de uso, pero se pueden modificar.
 
-## Inicio de sesión en Facebook {#facebook-login}
+## Inicio de sesión en facebook {#facebook-login}
 
-### Versión de API de Facebook {#facebook-api-version}
+### Versión de la API de facebook {#facebook-api-version}
 
-El inicio de sesión en Social y la muestra de Facebook de venta minorista se desarrollaron cuando la API de gráfico de Facebook era la versión 1.0.
-A partir de AEM 6.4 GA y AEM 6.3 SP1, el inicio de sesión social se actualizó para funcionar con la versión más reciente de la API de gráfico de Facebook 2.5.
+El inicio de sesión en Social y la muestra de Facebook para minoristas se desarrollaron cuando la API de Facebook Graph era la versión 1.0.
+A partir de AEM 6.4 GA y AEM 6.3 SP1, el inicio de sesión social se actualizó para funcionar con la versión más reciente de la API 2.5 de Facebook Graph.
 
 >[!NOTE]
 >
 >Para las versiones anteriores de AEM, si se enfrenta a una excepción en los registros **No se puede extraer un token de este**, actualice a la última versión de CFP para esa versión de AEM.
 
-Para obtener información sobre la versión de la API de gráfico de Facebook, consulte el [registro de cambios de la API de Facebook](https://developers.facebook.com/docs/apps/changelog).
+Para obtener información sobre la versión de la API de Facebook Graph, consulte el [registro de cambios de la API de Facebook](https://developers.facebook.com/docs/apps/changelog).
 
 ### Crear una aplicación de Facebook {#create-a-facebook-app}
 
@@ -86,9 +85,9 @@ En general, desde la API de Facebook v2.7:
 * *Agregar nueva aplicación de Facebook*
    * Para *Platform*, elija Sitio web:
       * Para *URL del sitio*, introduzca `  https://<server>:<port>.`
-      * Para *Display Name*, introduzca un título para usarlo como Título del servicio de conexión de Facebook.
+      * Para *Display Name*, introduzca un título para utilizarlo como Título del servicio de conexión de Facebook.
       * Para *Category*, se recomienda elegir *Aplicaciones para páginas*, pero puede ser cualquier cosa.
-      * *Agregar producto: Inicio de sesión en Facebook*
+      * *Agregar producto: Inicio de sesión en facebook*
       * Para *URI de redireccionamiento válidos de OAuth*, introduzca `  https://<server>:<port>.`
 
 >[!NOTE]
@@ -97,7 +96,7 @@ En general, desde la API de Facebook v2.7:
 
 Una vez creada la aplicación, localice los ajustes **[!UICONTROL App ID]** y **[!UICONTROL App Secret]**. Esta información es necesaria para configurar el [servicio en la nube de Facebook](#createafacebookcloudservice).
 
-### Crear un Cloud Service de Facebook Connect {#create-a-facebook-connect-cloud-service}
+### Creación de un Cloud Service de Facebook Connect {#create-a-facebook-connect-cloud-service}
 
 La instancia [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider), creada mediante la creación de una configuración de servicio en la nube, identifica la aplicación de Facebook y los grupos de miembros a los que se agregan los nuevos usuarios.
 
@@ -118,8 +117,8 @@ La instancia [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth
 
    ![fbsocialloginconfigpng](assets/fbsocialloginconfigpng.png)
 
-   * **[!UICONTROL Título]**  (*obligatorio*) Introduzca un título para mostrar que identifique la aplicación de Facebook. Se recomienda utilizar el mismo nombre introducido que el *Nombre para mostrar* para la aplicación de Facebook.
-   * **[!UICONTROL ID de aplicación/Clave de API]**  (*obligatorio*) Introduzca el  ***ID de aplicación*** para la aplicación de Facebook. Esto identifica la instancia [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) creada a partir del cuadro de diálogo.
+   * **[!UICONTROL Título]**  (*obligatorio*) Introduzca un título para mostrar que identifique la aplicación Facebook. Se recomienda utilizar el mismo nombre introducido que el *Nombre para mostrar* para la aplicación de Facebook.
+   * **[!UICONTROL ID de aplicación/Clave de API]**  (*obligatorio*) Introduzca el  ***ID de la aplicación*** para la aplicación de Facebook. Esto identifica la instancia [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) creada a partir del cuadro de diálogo.
    * **[!UICONTROL Secreto de la aplicación]**  (*obligatorio*) Especifique el  ***Secretario de la aplicación*** para la aplicación de Facebook.
    * **[!UICONTROL Crear]** usuariosSi está activado, el inicio de sesión con una cuenta de Facebook creará una entrada de usuario AEM y la agregará como miembro a los grupos de usuarios seleccionados.  El valor predeterminado está marcado (se recomienda encarecidamente).
    * **[!UICONTROL Enmascarar ID de usuario]**: Deje sin seleccionar.
@@ -137,7 +136,7 @@ La instancia [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth
 
 El resultado es una instancia de [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) que no requiere ninguna modificación adicional a menos que agregue un ámbito (permisos) adicional. El ámbito predeterminado son los permisos estándar para el inicio de sesión en Facebook. Si desea un ámbito adicional, es necesario editar la configuración OSGI directamente. Si hay modificaciones realizadas directamente a través del sistema o la consola, evite editar las configuraciones del servicio en la nube desde la interfaz de usuario táctil para evitar sobrescribirlas.
 
-### Proveedor de OAuth de Facebook de AEM Communities {#aem-communities-facebook-oauth-provider}
+### Proveedor de OAuth de AEM Communities Facebook {#aem-communities-facebook-oauth-provider}
 
 El proveedor de AEM Communities extiende la instancia de [Adobe Granite OAuth Application y Provider](#adobe-granite-oauth-application-and-provider).
 
@@ -179,11 +178,11 @@ Si es necesario editar, en cada instancia de publicación AEM:
 
    * **[!UICONTROL Habilitar campos]**
 
-      Si está activada, los campos enumerados se especifican en la solicitud a Facebook para obtener autenticación e información de los usuarios. Se anula la selección del valor predeterminado.
+      Si está activada, los campos que aparecen en la lista se especifican en la solicitud a Facebook para obtener autenticación e información de los usuarios. Se anula la selección del valor predeterminado.
 
    * **[!UICONTROL Fields]**
 
-      Cuando los campos están habilitados, se incluyen los siguientes campos al llamar a la API de gráfico de Facebook. Los campos deben estar permitidos dentro del ámbito definido en la configuración del servicio en la nube. Los campos adicionales pueden requerir la aprobación de Facebook. Consulte la sección Permisos de inicio de sesión de Facebook de la documentación de Facebook. Los campos predeterminados añadidos como parámetros son:
+      Cuando los campos están habilitados, se incluyen los siguientes campos al llamar a la API de Facebook Graph. Los campos deben estar permitidos dentro del ámbito definido en la configuración del servicio en la nube. Los campos adicionales pueden requerir la aprobación de Facebook. Consulte la sección Permisos de inicio de sesión de Facebook de la documentación de Facebook . Los campos predeterminados añadidos como parámetros son:
 
       * id
       * name
@@ -211,11 +210,11 @@ Los siguientes pasos son los mismos para Facebook y Twitter:
 * [Publicar las configuraciones del servicio en la nube](#publishcloudservices)
 * [Habilitar para un sitio de la comunidad](#enable-social-login)
 
-## Inicio de sesión en Twitter {#twitter-login}
+## Inicio de sesión en twitter {#twitter-login}
 
 ### Crear una aplicación de Twitter {#create-a-twitter-app}
 
-Se requiere una aplicación de Twitter configurada para habilitar el inicio de sesión social en Twitter.
+Se requiere una aplicación de Twitter configurada para habilitar el inicio de sesión social de Twitter.
 
 Siga las instrucciones más recientes para crear una nueva aplicación de Twitter en [https://apps.twitter.com](https://apps.twitter.com/).
 
@@ -234,7 +233,7 @@ En general:
 
 1. Una vez creada la aplicación, localice el Secreto **[!UICONTROL Consumidor (API)]** y **[!UICONTROL Consumidor (API)]**. Esta información será necesaria para configurar el [servicio en la nube de Twitter](#createatwittercloudservice).
 
-#### Permisos    {#permissions}
+#### Permisos {#permissions}
 
 En la sección Permisos de la administración de aplicaciones de Twitter:
 
@@ -245,11 +244,11 @@ En la sección Permisos de la administración de aplicaciones de Twitter:
 * **[!UICONTROL Permisos]** adicionales: De forma opcional, elija  `Request email addresses from users`.
 
    * Si no se selecciona, el perfil de usuario de AEM no incluirá su dirección de correo electrónico.
-   * Las instrucciones de Twitter señalan pasos adicionales a seguir.
+   * En las instrucciones de twitter se indican otros pasos que hay que seguir.
 
 La única solicitud REST realizada para el inicio de sesión social es *[cuenta de GET/comprobar credenciales](https://dev.twitter.com/rest/reference/get/account/verify_credentials)*.
 
-### Crear un Cloud Service de Twitter Connect {#create-a-twitter-connect-cloud-service}
+### Creación de un Cloud Service de Twitter Connect {#create-a-twitter-connect-cloud-service}
 
 La instancia [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider), creada mediante la creación de una configuración de servicio en la nube, identifica la aplicación de Twitter y los grupos de miembros a los que se agregan los nuevos usuarios.
 
@@ -266,7 +265,7 @@ La instancia [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth
 
    * Consulte la documentación [Configuration Browser](/help/sites-administering/configurations.md) para obtener más información.
 
-1. Crear/editar la configuración del servicio en la nube de Twitter.
+1. Cree/edite la configuración del servicio en la nube de Twitter.
 
    ![twittersocialloginpng](assets/twittersocialloginpng.png)
 
@@ -284,7 +283,7 @@ La instancia [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth
 
    * **[!UICONTROL Crear usuarios]**
 
-      Si se selecciona, el inicio de sesión con una cuenta de Twitter creará una entrada de usuario AEM y la agregará como miembro al grupo o grupos de usuarios seleccionados. El valor predeterminado está marcado (se recomienda encarecidamente).
+      Si se selecciona, el inicio de sesión con una cuenta de Twitter creará una entrada de usuario AEM y la agregará como miembro a los grupos de usuarios seleccionados. El valor predeterminado está marcado (se recomienda encarecidamente).
 
    * **[!UICONTROL Enmascarar los ID de usuario]**
 
@@ -319,7 +318,7 @@ Si es necesario editar, en cada instancia de publicación AEM:
 
    * **[!UICONTROL ID de proveedor de OAuth]**
 
-   (*Requerido*) El valor predeterminado es *soco-twitter*. No edite.
+   (*Requerido*) El valor predeterminado es *soco -twitter*. No edite.
 
    * **[!UICONTROL Configuración del Cloud Service]**
 
@@ -349,7 +348,7 @@ Los siguientes pasos son los mismos para Facebook y Twitter:
 
 ## Habilitar inicio de sesión social {#enable-social-login}
 
-### Consola Sitios de AEM Communities {#aem-communities-sites-console}
+### Consola AEM Communities Sites {#aem-communities-sites-console}
 
 Una vez configurado un servicio en la nube, puede habilitarse para la configuración de inicio de sesión social correspondiente para un sitio de la comunidad mediante el subpanel [Configuración de administración de usuarios](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) durante la creación del sitio de la comunidad [](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) o [administración](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties).
 
@@ -373,7 +372,7 @@ Por ejemplo, http://localhost:4503/content/sites/engage/en.html
 * Seleccione **[!UICONTROL Iniciar sesión en]**.
 * Seleccione **[!UICONTROL Iniciar sesión con Facebook]** o **[!UICONTROL Iniciar sesión con Twitter]**.
 * Si aún no ha iniciado sesión en Facebook o Twitter, inicie sesión con las credenciales adecuadas.
-* Puede ser necesario conceder permiso en función del cuadro de diálogo mostrado por la aplicación de Facebook o Twitter.
+* Puede ser necesario conceder permiso en función del cuadro de diálogo que muestre la aplicación Facebook o Twitter.
 * Observe que la barra de herramientas de la parte superior de la página se actualiza para reflejar el inicio de sesión correcto.
 * Seleccione **[!UICONTROL Perfil]**: la página Perfil muestra la imagen de avatar, el nombre y los apellidos del usuario. También muestra la información del perfil de Facebook o Twitter según los campos o parámetros permitidos.
 
@@ -400,9 +399,9 @@ Por ejemplo, http://localhost:4503/system/console/configMgr
 
 ![graniteoauth1](assets/graniteoauth1.png)
 
-### Adobe Granite OAuth Application and Provider {#adobe-granite-oauth-application-and-provider}
+### Adobe Granite OAuth Aplicación y Proveedor {#adobe-granite-oauth-application-and-provider}
 
-Cuando se crea un servicio de nube para Facebook o Twitter, se crea una instancia de `Adobe Granite OAuth Authentication Handler`.
+Cuando se crea un servicio en la nube para Facebook o Twitter, se crea una instancia de `Adobe Granite OAuth Authentication Handler`.
 
 Para localizar la instancia creada para una aplicación de Facebook o Twitter:
 
@@ -437,7 +436,7 @@ Para localizar la instancia creada para una aplicación de Facebook o Twitter:
 
    * **[!UICONTROL ID del proveedor]**
 
-      (*Obligatorio*) El ID del proveedor para AEM Communities se establece cuando se creó el servicio en la nube. No edite. Para Facebook Connect, el valor es *soco -facebook*. Para Twitter Connect, el valor es *soco-twitter*.
+      (*Obligatorio*) El ID del proveedor para AEM Communities se establece cuando se creó el servicio en la nube. No edite. Para Facebook Connect, el valor es *soco -facebook*. Para Twitter Connect, el valor es *soco -twitter*.
 
    * **[!UICONTROL Grupos]**
 
@@ -492,7 +491,7 @@ En una instancia de autor, ha iniciado sesión con privilegios administrativos:
    * Seleccione **[!UICONTROL Guardar todo]**.
 
 
-* Para el **nombre** `oauthid-123`, reemplace *123* por la ***App ID*** o la clave ***de consumidor (API) de Twitter*** que es el valor del **Client ID** en el Adobe [Aplicación OAuth de Granite y configuración de Proveedor](social-login.md#adobe-granite-oauth-application-and-provider).
+* Para el **nombre** `oauthid-123`, reemplace *123* por la ***App ID*** o la clave ***Consumidor (API) de Twitter*** que es el valor del **Client ID** en el Adobe [Aplicación OAuth de Granite y configuración de Proveedor](social-login.md#adobe-granite-oauth-application-and-provider).
 
    ![graniteoauth-crxde](assets/graniteoauth-crxde.png)
 
