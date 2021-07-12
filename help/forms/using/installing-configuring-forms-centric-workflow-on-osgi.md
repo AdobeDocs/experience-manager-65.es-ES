@@ -7,15 +7,14 @@ uuid: 1ceae822-215a-4b83-a562-4609a09c3a54
 topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: '1642'
 ht-degree: 5%
 
 ---
-
 
 # Instalación y configuración del flujo de trabajo centrado en Forms en OSGi{#installing-and-configuring-forms-centric-workflow-on-osgi}
 
@@ -123,14 +122,14 @@ AEM Forms tiene algunas configuraciones obligatorias y opcionales. Las configura
 
 ### Configuraciones posteriores a la instalación obligatorias {#mandatory-post-installation-configurations}
 
-#### Configurar las bibliotecas RSA y BouncyCastle {#configure-rsa-and-bouncycastle-libraries}
+#### Configuración de las bibliotecas RSA y BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
 Realice los siguientes pasos en todas las instancias de Autor y Publicación para iniciar y delegar las bibliotecas:
 
 1. Detenga la instancia de AEM subyacente.
 1. Abra el archivo [AEM installation directory]\crx-quickstart\conf\sling.properties para editarlo.
 
-   Si ha utilizado [AEM directorio de instalación]\crx-quickstart\bin\start.bat para iniciar AEM, edite las propiedades sling que se encuentran en [AEM_root]\crx-quickstart\.
+   Si ha utilizado [AEM directorio de instalación]\crx-quickstart\bin\start.bat para comenzar AEM, edite las propiedades sling que se encuentran en [AEM_root]\crx-quickstart\.
 
 1. Agregue las siguientes propiedades al archivo sling.properties :
 
@@ -141,7 +140,7 @@ Realice los siguientes pasos en todas las instancias de Autor y Publicación par
 1. Guarde y cierre el archivo e inicie la instancia de AEM.
 1. Repita los pasos del 1 al 4 en todas las instancias de Autor y Publicación.
 
-#### Configure el agente de serialización {#configure-the-serialization-agent}
+#### Configuración del agente de serialización {#configure-the-serialization-agent}
 
 Siga estos pasos en todas las instancias de Autor y Publicación para añadir el paquete a la lista de permitidos:
 
@@ -150,7 +149,7 @@ Siga estos pasos en todas las instancias de Autor y Publicación para añadir el
 1. Agregue el paquete **sun.util.calendar** al campo **lista de permitidos**. Haga clic en Guardar.
 1. Repita los pasos del 1 al 3 en todas las instancias de Autor y Publicación .
 
-### Configuraciones postinstalación opcionales {#optional-post-installation-configurations}
+### Configuraciones posteriores a la instalación opcionales {#optional-post-installation-configurations}
 
 #### Configurar Dispatcher {#configure-dispatcher}
 
@@ -184,7 +183,7 @@ Realice los siguientes pasos para configurar la caché de formularios adaptables
    >
    >Para deshabilitar la caché, establezca el valor en el campo Número de Forms adaptable en **0**. La caché se restablece y todos los formularios y documentos se eliminan de la caché cuando se desactiva o cambia la configuración de la caché.
 
-#### Configurar Adobe Sign {#configure-adobe-sign}
+#### Configuración de Adobe Sign {#configure-adobe-sign}
 
 Adobe Sign permite los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para áreas legales, de ventas, de nómina, de gestión de recursos humanos y muchas otras áreas.
 
@@ -199,4 +198,3 @@ Ha configurado un entorno para utilizar el flujo de trabajo centrado en Forms en
 * [Uso del flujo de trabajo centrado en Forms en OSGi](../../forms/using/aem-forms-workflow.md)
 * [Referencia de pasos de flujo de trabajo](/help/sites-developing/workflows-step-ref.md)
 * [Procesamiento posterior de cartas y comunicaciones interactivas](../../forms/using/submit-letter-topostprocess.md)
-
