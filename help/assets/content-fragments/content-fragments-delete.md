@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de contenido
+role: User, Admin
+exl-id: cc212f95-0be0-4705-8dfd-beda9bfb13e0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '457'
 ht-degree: 13%
 
 ---
-
 
 # Fragmentos de contenido: Eliminar consideraciones{#content-fragments-delete-considerations}
 
@@ -49,7 +48,7 @@ Con respecto a los permisos de eliminación, los fragmentos de contenido deben c
 >
 >Consulte también [Cómo auditar las operaciones de administración de usuarios en AEM](/help/sites-administering/audit-user-management-operations.md).
 
-## Permisos necesarios para la funcionalidad del editor {#permissions-required-for-editor-functionality-only}
+## Permisos necesarios para la funcionalidad del editor únicamente {#permissions-required-for-editor-functionality-only}
 
 Para los usuarios que necesiten editar o actualizar un fragmento de contenido, **sin permitirles eliminar un fragmento completo**, se deben asignar permisos específicos, ya que la operación básica del editor de fragmentos de contenido requiere que se puedan eliminar subelementos transitorios.
 
@@ -96,4 +95,3 @@ Los privilegios `add` y `modify` también se pueden administrar en el CRXDE Lite
 Por ejemplo, la definición de los privilegios `remove` para un grupo `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)
-
