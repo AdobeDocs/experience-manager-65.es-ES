@@ -2,11 +2,10 @@
 title: ¿Cómo se crea Forms adaptable utilizando el esquema XML?
 description: Aprenda a utilizar el esquema XML como modelo de formulario en un formulario adaptable. Puede aplicar plantillas XSD existentes para crear formularios adaptables y arrastrar y soltar elementos de esquema de XSD en el formulario adaptable. Profundizar con una muestra de un esquema XML, añadir propiedades especiales a los campos utilizando el esquema XML y limitar los valores aceptables para un componente de formulario adaptable.
 feature: Formularios adaptables
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 6%
@@ -125,7 +124,7 @@ Este es un ejemplo de esquema XML.
 >
 >Asegúrese de que el esquema XML tenga solo un elemento raíz. No se admite un esquema XML con más de un elemento raíz.
 
-## Adición de propiedades especiales a campos mediante el esquema XML {#adding-special-properties-to-fields-using-xml-schema}
+## Adición de propiedades especiales a campos mediante esquema XML {#adding-special-properties-to-fields-using-xml-schema}
 
 Puede añadir los siguientes atributos a los elementos del esquema XML para añadir propiedades especiales a los campos del formulario adaptable asociado.
 
