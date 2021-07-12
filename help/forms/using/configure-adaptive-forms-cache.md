@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '934'
 ht-degree: 1%
 
 ---
-
 
 # Configuración de la caché de formularios adaptables {#configure-adaptive-forms-cache}
 
 Una caché es un mecanismo para acortar los tiempos de acceso a los datos, reducir la latencia y mejorar las velocidades de entrada y salida (E/S). La caché de formularios adaptables almacena únicamente contenido HTML y estructura JSON de un formulario adaptable sin guardar datos precargados. Ayuda a reducir el tiempo necesario para procesar un formulario adaptable en el cliente. Está diseñado específicamente para formularios adaptables.
 
-## Configurar la caché de formularios adaptables en las instancias de autor y publicación {#configure-adaptive-forms-caching-at-author-and-publish-instances}
+## Configuración de la caché de formularios adaptables en las instancias de autor y publicación {#configure-adaptive-forms-caching-at-author-and-publish-instances}
 
 1. Vaya a AEM administrador de configuración de la consola web en `https://[server]:[port]/system/console/configMgr`.
 1. Haga clic en **[!UICONTROL Configuración del canal web de formulario adaptable y comunicación interactiva]** para editar sus valores de configuración.
@@ -40,7 +39,7 @@ Una caché es un mecanismo para acortar los tiempos de acceso a los datos, reduc
 El entorno está configurado para utilizar formularios adaptables de caché y recursos relacionados.
 
 
-## (Opcional) Configure la caché de formularios adaptables en Dispatcher {#configure-the-cache}
+## (Opcional) Configuración de la caché de formularios adaptables en Dispatcher {#configure-the-cache}
 
 También puede configurar el almacenamiento en caché de formularios adaptables en Dispatcher para mejorar el rendimiento.
 
@@ -48,7 +47,7 @@ También puede configurar el almacenamiento en caché de formularios adaptables 
 
 * Active la opción [combinar o prefiere los datos en el cliente](prepopulate-adaptive-form-fields.md#prefill-at-client). Ayuda a combinar datos únicos para cada instancia de un formulario prerellenado.
 
-### Consideraciones para almacenar en caché formularios adaptables en un Dispatcher {#considerations}
+### Consideraciones para almacenar en caché formularios adaptables en un despachante {#considerations}
 
 * Cuando utilice la caché de formularios adaptables, utilice el AEM [!DNL Dispatcher] para almacenar en caché las bibliotecas de cliente (CSS y JavaScript) de un formulario adaptable.
 * Durante el desarrollo de componentes personalizados, en el servidor utilizado para el desarrollo, mantenga deshabilitada la caché de formularios adaptables.
