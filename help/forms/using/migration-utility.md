@@ -11,15 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-strategy: max-2018
 discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1810'
+source-wordcount: '1809'
 ht-degree: 3%
 
 ---
-
 
 # Migrar recursos y documentos de AEM Forms{#migrate-aem-forms-assets-and-documents}
 
@@ -34,7 +33,7 @@ La utilidad de migración convierte los [activos de Forms adaptables](../../form
 >
 >En caso de una actualización fuera de lugar, en el caso de los recursos de Gestión de correspondencia, puede ejecutar la migración cada vez que importe los recursos. Para la migración de la gestión de correspondencia, debe tener instalado el paquete de compatibilidad de Forms.
 
-## Enfoque para la migración {#approach-to-migration}
+## Enfoque de la migración {#approach-to-migration}
 
 Puede [actualizar](../../forms/using/upgrade.md) a la última versión de AEM Forms 6.5 desde AEM Forms 6.4, 6.3 o 6.2 o realizar una nueva instalación. Dependiendo de si ha actualizado la instalación anterior o ha realizado una instalación nueva, debe realizar una de las siguientes acciones:
 
@@ -52,7 +51,7 @@ A continuación, debe importar el paquete de recursos (zip o cmp) en la nueva co
 
 Debido a los cambios [relacionados con la compatibilidad con versiones anteriores](/help/sites-deploying/backward-compatibility.md), se cambian las ubicaciones de algunas carpetas en el repositorio crx. Exportar e importar manualmente dependencias (bibliotecas y recursos personalizados) de la configuración anterior a un entorno nuevo.
 
-## Lea antes de continuar con la migración {#prerequisites}
+## Lea esto antes de continuar con la migración {#prerequisites}
 
 Para los activos de Gestión de Correspondencia:
 
@@ -69,9 +68,9 @@ Para los activos de Gestión de Correspondencia:
 * Las configuraciones del Compositor de recursos cambian a las configuraciones de Gestión de correspondencia.
 * Los recursos se mueven en carpetas con nombres como Texto existente y Lista existente.
 
-## Uso de la utilidad de migración {#using-the-migration-utility}
+## Uso de la utilidad Migración {#using-the-migration-utility}
 
-### Ejecución de la utilidad de migración {#runningmigrationutility}
+### Ejecución de la utilidad Migración {#runningmigrationutility}
 
 Ejecute la utilidad de migración antes de realizar cambios en los recursos o crear recursos. Se recomienda que no ejecute la utilidad después de realizar cambios o crear recursos. Asegúrese de que la interfaz de usuario de Gestión de correspondencia o Recursos Forms adaptables no esté abierta mientras se esté ejecutando el proceso de migración.
 
@@ -203,4 +202,3 @@ Después de ejecutar la utilidad de migración, debe encargarse de las siguiente
 
 1. Publique todos los recursos publicados en el sistema anterior antes de la migración. La utilidad de migración actualiza los recursos solo en la instancia de autor y para actualizar los recursos en la instancia de publicación es necesario publicar los recursos.
 1. En AEM Forms 6.4 y 6.5, se cambian algunos de los derechos de los grupos de usuarios de formularios. Si desea que cualquiera de los usuarios pueda cargar XDP y Adaptive Forms que contengan secuencias de comandos o utilizar el editor de código, debe agregarlos al grupo de usuarios que puedan acceder a formularios. Del mismo modo, los autores de plantillas ya no pueden utilizar el editor de código del Editor de reglas. Para que los usuarios puedan utilizar el editor de código, agréguelos al grupo af-template-script-writers. Para obtener instrucciones sobre cómo agregar usuarios a grupos, consulte [Administración de usuarios y grupos de usuarios](/help/communities/users.md).
-
