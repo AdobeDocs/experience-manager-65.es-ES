@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 15e16572-c692-41fc-86e4-c1d475afa63c
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2979'
 ht-degree: 5%
 
 ---
 
-
-# Consola Recursos de Habilitación {#enablement-resources-console}
+# Consola Recursos de habilitación {#enablement-resources-console}
 
 Para AEM Communities, la consola Recursos es donde [Enablement Managers](users.md) crean, administran y asignan recursos a los miembros de un sitio de la comunidad de habilitación.
 
@@ -72,7 +71,7 @@ Para [comunidades de habilitación](overview.md#enablement-community), se recomi
 
 ## Acceso a los recursos de habilitación de un sitio de la comunidad {#accessing-a-community-site-s-enablement-resources}
 
-### Vaya a Recursos de Communities {#navigate-to-communities-resources}
+### Navegar a los recursos de Communities {#navigate-to-communities-resources}
 
 En el entorno de creación, para llegar a la consola Recursos
 
@@ -90,7 +89,7 @@ Una vez seleccionado un sitio de comunidad específico, se puede acceder a los r
 
 ![recursos de la comunidad](assets/community-resources.png)
 
-#### Búsqueda {#search-features}
+#### Búsqueda   {#search-features}
 
 ![searchsite](assets/searchsite.png)
 
@@ -527,7 +526,7 @@ El informe Estado del usuario asignado, en función del número de alumnos, desc
 
 El informe de clasificaciones se basa en el número de estudiantes que han clasificado el recurso de habilitación, que muestran el número de cada clasificación por estrella seguida de un resumen del número total de clasificaciones y la clasificación promedio.
 
-#### Resumen de informes {#report-summary}
+#### Resumen del informe {#report-summary}
 
 Para un recurso de habilitación, el resumen del informe es una lista de tabla.
 
