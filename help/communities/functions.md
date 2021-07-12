@@ -10,11 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2458'
 ht-degree: 6%
 
 ---
@@ -30,7 +29,7 @@ Una vez creado un sitio de comunidad, se puede añadir contenido a las páginas 
 >
 >Las consolas para la creación de [sitios de la comunidad](/help/communities/sites-console.md), [plantillas de sitios de la comunidad](/help/communities/sites.md), [plantillas de grupos de la comunidad](/help/communities/tools-groups.md) y [funciones de la comunidad](/help/communities/functions.md) solo se deben usar en el entorno de creación.
 
-## Consola de funciones de la comunidad {#community-functions-console}
+## Consola Funciones de la comunidad {#community-functions-console}
 
 Para llegar a la consola de funciones de la comunidad en el entorno de creación:
 
