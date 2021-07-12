@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 2%
+source-wordcount: '927'
+ht-degree: 1%
 
 ---
-
 
 # Ajuste del rendimiento del servidor AEM Forms{#performance-tuning-of-aem-forms-server}
 
@@ -175,6 +174,5 @@ Para mejorar el rendimiento, puede dirigir el software antivirus para que excluy
 >* Si utiliza una ubicación diferente para GDS y un directorio temporal, abra AdminUI en `https://'[server]:[port]'/adminui`, vaya a **Inicio > Configuración > Configuración del sistema principal > Configuraciones principales** para confirmar la ubicación en uso.
 
 * Si el servidor AEM Forms funciona lentamente incluso después de excluir los directorios sugeridos, excluya también el archivo ejecutable Java (java.exe).
-
 
 
