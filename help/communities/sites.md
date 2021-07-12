@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 05a944a3-adb1-47b4-b4a5-15bac91c995e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '463'
 ht-degree: 4%
 
 ---
-
 
 # Plantillas de sitios {#site-templates}
 
@@ -27,7 +26,7 @@ La consola Plantillas de sitio es muy similar a la consola [Plantillas de grupo]
 >
 >Las consolas para la creación de [sitios de la comunidad](sites-console.md), [plantillas de sitios de la comunidad](sites.md), [plantillas de grupos de la comunidad](tools-groups.md) y [funciones de la comunidad](functions.md) solo se deben usar en el entorno de creación.
 
-## Consola Plantillas de sitio {#site-templates-console}
+## Consola Plantillas del sitio {#site-templates-console}
 
 En el entorno de creación, para llegar a la consola de sitios de la comunidad:
 
@@ -87,7 +86,7 @@ La función page proporciona una página vacía. La función de grupos permite c
 
 ![site-editor](assets/site-editor.png)
 
-### Función {#group-templates-for-groups-function} Plantillas de grupo para grupos
+### Plantillas de grupo para la función Grupos {#group-templates-for-groups-function}
 
 Al incluir una función de grupos en la plantilla de sitio, la configuración requiere la especificación de las opciones de plantilla de grupo permitidas cuando se crea un nuevo grupo en el entorno de publicación.
 
@@ -101,7 +100,7 @@ Al seleccionar dos o más plantillas de grupo de comunidad, se proporciona una o
 
 ![site-function](assets/site-functions1.png)
 
-## Editar plantilla del sitio{#edit-site-template}
+## Editar plantilla del sitio {#edit-site-template}
 
 Al ver las plantillas de sitio en la consola principal [Plantillas de sitio](#site-templates-console), es posible seleccionar una plantilla de sitio existente para editarla.
 
