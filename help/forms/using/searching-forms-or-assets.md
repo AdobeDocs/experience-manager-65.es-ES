@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: e65925ff-1fbf-4da6-bf09-0cf056c86e5a
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '721'
 ht-degree: 4%
 
 ---
-
 
 # Búsqueda de formularios y recursos{#searching-for-forms-and-assets}
 
