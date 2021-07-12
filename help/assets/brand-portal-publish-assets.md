@@ -11,15 +11,14 @@ content-type: reference
 discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
 feature: Brand Portal
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: User
+exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '373'
 ht-degree: 44%
 
 ---
-
 
 # Publicar recursos en Brand Portal {#publish-assets-to-brand-portal}
 
@@ -76,4 +75,3 @@ Para programar la publicación de recursos en Brand Portal para una fecha u hora
 Ahora, inicie sesión en Brand Portal para ver si los recursos publicados están disponibles en la interfaz de Brand Portal.
 
 ![bp_landing_page](assets/bp_landing_page.png)
-
