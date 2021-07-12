@@ -10,22 +10,21 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de contenido
+role: User, Admin
+exl-id: ced7c902-193c-4e97-9070-2a4d958b64a3
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '243'
 ht-degree: 23%
 
 ---
-
 
 # Contenido asociado{#associated-content}
 
 El contenido asociado proporciona la conexión para que los recursos (es decir,) se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido. Esto proporciona flexibilidad al [proporcionar una serie de recursos a los que acceder cuando se utiliza el fragmento de contenido en una página](/help/sites-authoring/content-fragments.md#using-associated-content), a la vez que ayuda a reducir el tiempo necesario para buscar el recurso adecuado.
 
-## Añadir contenido asociado {#adding-associated-content}
+## Adición de contenido asociado {#adding-associated-content}
 
 >[!NOTE]
 >
@@ -56,4 +55,3 @@ Una vez asociada una colección, puede:
 * **Agregue** recursos a la colección.
 * Seleccione un recurso para realizar más acciones.
 * Editar el recurso.
-
