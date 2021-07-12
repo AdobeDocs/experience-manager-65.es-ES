@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
-
 
 # Configuración del programador de sincronización {#configuring-the-synchronization-scheduler}
 
@@ -51,7 +50,7 @@ Puede utilizar la opción **Sincronizar recursos del repositorio** para sincroni
 
    **Figura: Cuadro de diálogo** *Sincronización*
 
-## Solución de problemas de error de sincronización {#troubleshooting-synchronization-error}
+## Solución de problemas de sincronización {#troubleshooting-synchronization-error}
 
 Puede crear nuevas aplicaciones en el diseñador de flujos de trabajo (Área de trabajo de LiveCycle).
 
