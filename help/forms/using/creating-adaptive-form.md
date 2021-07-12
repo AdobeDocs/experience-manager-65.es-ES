@@ -2,11 +2,10 @@
 title: Cómo crear un formulario adaptable
 description: 'Aprenda a crear un formulario adaptable utilizando [!DNL Experience Manager Forms]. Los formularios adaptables son formularios HTML5 adaptables que agilizan la recopilación y el procesamiento de la información. Descubra más información sobre cómo crear un formulario adaptable basado en un modelo de datos de formulario, una plantilla de formulario XFA y un esquema XML o JSON. '
 feature: Formularios adaptables
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 0%
@@ -63,7 +62,7 @@ Siga estos pasos para crear un formulario adaptable.
    >
    >Permita que las ventanas emergentes del explorador abran el formulario recién creado en una nueva ficha.
 
-## Crear un formulario adaptable basado en un modelo de datos de formulario {#fdm}
+## Creación de un formulario adaptable basado en un modelo de datos de formulario {#fdm}
 
 [[!DNL Experience Manager Forms] la ](data-integration.md) integración de datos permite integrar varias fuentes de datos y unir sus entidades y servicios para crear un modelo de datos de formulario. Es una extensión del esquema JSON. Puede utilizar un modelo de datos de formulario para crear un formulario adaptable. Las entidades u objetos del modelo de datos configurados en un modelo de datos de formulario están disponibles como objetos del modelo de datos para la creación de formularios. Están enlazados a los respectivos orígenes de datos y se utilizan para rellenar previamente un formulario y escribir los datos enviados en los respectivos orígenes de datos. También puede llamar a servicios configurados en un modelo de datos de formulario mediante reglas de formulario adaptables.
 
@@ -148,7 +147,7 @@ Además, puede utilizar el editor de plantillas para crear sus propias plantilla
 >
 >Cuando se abre un formulario adaptable creado con la plantilla avanzada para su edición, aparece un mensaje de error. La plantilla avanzada tiene un componente Paso de firma y Adobe Sign está habilitado para él de forma predeterminada. Cree y seleccione una [configuración de nube de Adobe Sign](adobe-sign-integration-adaptive-forms.md) y [configure un firmante](working-with-adobe-sign.md#addsignerstoanadaptiveform) para resolver el error.
 
-## Editar propiedades del modelo de formulario de un formulario adaptable {#edit-form-model}
+## Edición de las propiedades del modelo de formulario de un formulario adaptable {#edit-form-model}
 
 Los formularios adaptables se crean sin un modelo de formulario (con la opción Ninguno del modelo de formulario) o utilizando un modelo de formulario como una plantilla de formulario, un esquema XML o JSON o un modelo de datos de formulario. Puede cambiar el modelo de formulario para un formulario adaptable de Ninguno a otro modelo de formulario. Para los formularios adaptables basados en un modelo de formulario, puede elegir otra plantilla de formulario, un esquema XML, un esquema JSON o un modelo de datos de formulario para el mismo modelo de formulario. Sin embargo, no puede cambiar de un modelo de formulario a otro.
 
