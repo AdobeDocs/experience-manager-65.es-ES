@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '478'
 ht-degree: 5%
 
 ---
-
 
 # Sitios de comunidades {#communities-sites}
 
@@ -33,7 +32,7 @@ Para obtener información general y tutoriales de introducción, visite:
 
 ## Temas de administración y configuración {#administration-and-configuration-topics}
 
-### Creación y administración de sitios de Communities {#communities-site-creation-and-management}
+### Creación y administración de sitios de comunidades {#communities-site-creation-and-management}
 
 * Comunidades [consolas](consoles.md)
 
@@ -99,7 +98,7 @@ Es importante instalar la versión más reciente de Communities en la plataforma
 
 Consulte la página de implementación para obtener información específica de otras comunidades, como [Actualización](upgrade.md), [Dispatcher](dispatcher.md) y [Replicación](deploy-communities.md#replication-agents-on-author).
 
-## Documentación de comunidades relacionadas {#related-communities-documentation}
+## Documentación de Communities relacionadas {#related-communities-documentation}
 
 * Visite [Implementación de Communities](deploy-communities.md) para obtener más información sobre las implementaciones recomendadas.
 
