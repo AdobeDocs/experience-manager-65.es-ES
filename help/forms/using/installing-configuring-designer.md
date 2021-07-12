@@ -10,15 +10,14 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 49%
+source-wordcount: '213'
+ht-degree: 48%
 
 ---
-
 
 # Instalar y configurar Designer{#installing-and-configuring-designer}
 
