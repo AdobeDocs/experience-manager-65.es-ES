@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de contenido
+role: User, Admin
+exl-id: ded05f24-ab5c-4195-b5c4-704a9fd93c7e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1746'
 ht-degree: 16%
 
 ---
-
 
 # Variaciones: Crear contenido de fragmentos{#variations-authoring-fragment-content}
 
@@ -171,7 +170,7 @@ Cuando el editor de pantalla completa está abierto, la acción **Estadísticas 
 
 ![cfx-6420-22](assets/cfx-6420-22.png)
 
-### Cargar contenido {#uploading-content}
+### Carga de contenido {#uploading-content}
 
 Para facilitar el proceso de creación de fragmentos de contenido, puede cargar texto, preparado en un editor externo y añadirlo directamente al fragmento.
 
@@ -238,7 +237,7 @@ Para realizar anotaciones en un fragmento:
 
 1. Cierre el editor de pantalla completa y **Guarde** el fragmento.
 
-### Visualización, edición y eliminación de anotaciones {#viewing-editing-deleting-annotations}
+### Visualización, Edición, Eliminación De Anotaciones {#viewing-editing-deleting-annotations}
 
 Anotaciones:
 
@@ -382,4 +381,3 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 1. Seleccione **Sincronizar**, la variación se actualizará y se mostrará.
-
