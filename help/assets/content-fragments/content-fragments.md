@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de contenido
+role: User, Admin
+exl-id: b204df18-2aef-4905-82f8-c777928ba828
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1975'
 ht-degree: 7%
 
 ---
-
 
 # Trabajar con fragmentos de contenido{#working-with-content-fragments}
 
@@ -132,7 +131,7 @@ Los fragmentos de contenido son una estructura de contenido que:
 
 * Son independientes del mecanismo de envío (es decir, página, canal).
 
-### Fragmentos con activos visuales {#fragments-with-visual-assets}
+### Fragmentos con recursos visuales {#fragments-with-visual-assets}
 
 Para que los autores tengan un mayor control sobre su contenido, las imágenes se pueden añadir o integrar con un fragmento de contenido.
 
@@ -162,7 +161,7 @@ Los recursos se pueden utilizar con un fragmento de contenido de varias formas; 
    * No proporciona el concepto de ser aprobado para un fragmento específico.
    * Consulte [Navegador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser) para obtener más información.
 
-### Componentes de un fragmento de contenido {#constituent-parts-of-a-content-fragment}
+### Partes constitutivas de un fragmento de contenido {#constituent-parts-of-a-content-fragment}
 
 Los recursos de fragmento de contenido están formados por las siguientes partes (directa o indirectamente):
 
@@ -289,7 +288,7 @@ Para crear, editar y utilizar fragmentos de contenido también necesita:
    * Los fragmentos necesitan uno o más componentes dedicados para definir el diseño y proporcionar algunos elementos o variaciones y contenido asociado, o todos ellos.
    * Al arrastrar un fragmento a una página en la creación, se asociará automáticamente el componente requerido.
 
-## Ejemplo de uso {#example-usage}
+## Uso de ejemplo {#example-usage}
 
 Un fragmento, con sus elementos y variaciones, se puede utilizar para crear contenido coherente para varios canales. Al diseñar el fragmento, debe tener en cuenta qué se utilizará donde.
 
