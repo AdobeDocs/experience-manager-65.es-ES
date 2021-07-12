@@ -11,15 +11,14 @@ content-type: reference
 discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1678'
 ht-degree: 2%
 
 ---
-
 
 # Consola de grupos de la comunidad {#community-groups-console}
 
@@ -110,11 +109,11 @@ La raíz predeterminada es el sitio principal, pero la raíz se puede mover a cu
 
 ### Paso 2: Diseño {#step-design}
 
-### TEMA {#community-group-theme} DEL GRUPO DE LA COMUNIDAD
+### TEMA DEL GRUPO COMUNITARIO {#community-group-theme}
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-El marco utiliza [Twitter Bootstrap](https://twitterbootstrap.org/) para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar uno de los muchos temas del Bootstrap precargados para que tengan un estilo con la plantilla de grupo de comunidad seleccionada, o se puede cargar un tema del Bootstrap.
+El marco de trabajo utiliza [Twitter Bootstrap](https://twitterbootstrap.org/) para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar uno de los muchos temas del Bootstrap precargados para que tengan un estilo con la plantilla de grupo de comunidad seleccionada, o se puede cargar un tema del Bootstrap.
 
 Cuando se selecciona, el tema se superpone con una marca de verificación azul opaco.
 
@@ -122,7 +121,7 @@ Es posible seleccionar un tema que difiera del tema del sitio principal.
 
 Una vez publicado el sitio de la comunidad, es posible [editar las propiedades](#modifyinggroupproperties) y seleccionar un tema diferente.
 
-### MARCA DE GRUPO DE LA COMUNIDAD {#community-group-branding}
+### MARCA DEL GRUPO COMUNITARIO {#community-group-branding}
 
 ![marca de grupo de la comunidad](assets/community-group-branding.png)
 
