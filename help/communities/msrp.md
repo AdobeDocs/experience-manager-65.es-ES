@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1209'
 ht-degree: 1%
 
 ---
 
-
-# MSRP - Proveedor de recursos de almacenamiento de MongoDB {#msrp-mongodb-storage-resource-provider}
+# MSRP - Proveedor de recursos de almacenamiento MongoDB {#msrp-mongodb-storage-resource-provider}
 
 ## Acerca del MSRP {#about-msrp}
 
@@ -50,7 +49,7 @@ Consulte también [Características de las opciones de SRP](working-with-srp.md#
 
 ## Configuración de MongoDB {#mongodb-configuration}
 
-### Seleccione MSRP {#select-msrp}
+### Seleccionar MSRP {#select-msrp}
 
 La [consola de configuración de almacenamiento](srp-config.md) permite seleccionar la configuración de almacenamiento predeterminada, que identifica qué implementación de SRP utilizar.
 
@@ -115,7 +114,7 @@ Para obtener más información sobre los conjuntos de réplicas, visite la docum
 
 Para trabajar con conjuntos de réplicas y aprender a definir conexiones entre aplicaciones y instancias de MongoDB, visite la documentación [Connection String URI Format](https://docs.mongodb.org/manual/reference/connection-string/) de MongoDB.
 
-#### Url de ejemplo para la conexión a un conjunto de réplicas {#example-url-for-connecting-to-a-replica-set}
+#### Url de ejemplo para conectarse a un conjunto de réplicas  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -243,11 +242,11 @@ Hay una herramienta de código abierto disponible en GitHub para este fin:
 
 La herramienta de migración se puede personalizar para exportar UGC de versiones anteriores de AEM comunidades sociales para importarlo a AEM Communities 6.1 o posterior.
 
-### Error: proveedor_id de campo no definido {#error-undefined-field-provider-id}
+### Error: identificador_proveedor_campo no definido {#error-undefined-field-provider-id}
 
 Si se ve el siguiente error en los registros, indica que el archivo de esquema Solr no está configurado correctamente.
 
-#### JsonMappingException: campo no definido provider_id {#jsonmappingexception-undefined-field-provider-id}
+#### JsonMappingException: field provider_id no definido {#jsonmappingexception-undefined-field-provider-id}
 
 ```xml
 Caused by: com.fasterxml.jackson.databind.JsonMappingException: undefined field provider_id
@@ -262,7 +261,7 @@ Para resolver el error, al seguir las instrucciones de [Instalación de MLS est�
 * Los archivos de configuración XML se copiaron en la ubicación Solr correcta.
 * Solr se reinició después de que los nuevos archivos de configuración reemplazaran a los existentes.
 
-### La conexión segura con MongoDB falla {#secure-connection-to-mongodb-fails}
+### Falla la conexión segura con MongoDB {#secure-connection-to-mongodb-fails}
 
 Si falla un intento de establecer una conexión segura con el servidor MongoDB debido a la falta de una definición de clase, es necesario actualizar el paquete de controladores MongoDB, `mongo-java-driver`, disponible en el repositorio público maven.
 
@@ -274,4 +273,3 @@ Si falla un intento de establecer una conexión segura con el servidor MongoDB d
 
 * [AEM con MongoDB](../../help/sites-deploying/aem-with-mongodb.md)
 * [Documentación de MongoDB](https://docs.mongodb.org/)
-
