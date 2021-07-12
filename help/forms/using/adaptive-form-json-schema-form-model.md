@@ -2,11 +2,10 @@
 title: ¿Cómo se crea Forms adaptable mediante el esquema JSON?
 description: Aprenda a crear formularios adaptables utilizando el esquema JSON como modelo de formulario. Puede utilizar esquemas JSON existentes para crear formularios adaptables. Profundizar con una muestra de un esquema JSON, preconfigurar campos en la definición del esquema JSON, limitar los valores aceptables para un componente de formulario adaptable y aprender construcciones no compatibles.
 feature: Formularios adaptables
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 6%
@@ -22,7 +21,7 @@ La creación de un formulario adaptable utilizando un esquema JSON como modelo d
 * [Creación de un formulario adaptable](creating-adaptive-form.md)
 * [Esquema JSON](https://json-schema.org/)
 
-## Uso de un esquema JSON como modelo de formulario {#using-a-json-schema-as-form-model}
+## Uso de un esquema JSON como modelo de formulario  {#using-a-json-schema-as-form-model}
 
 [!DNL Adobe Experience Manager Forms] admite la creación de un formulario adaptable utilizando un esquema JSON existente como modelo de formulario. Este esquema JSON representa la estructura en la que el sistema back-end de su organización produce o consume datos. El esquema JSON que utilice debe cumplir con las especificaciones [v4](https://json-schema.org/draft-04/schema).
 
@@ -120,7 +119,7 @@ El formulario adaptable utiliza la información disponible en el esquema JSON pa
 * La propiedad `pattern` se establece como patrón de validación (expresión regular) en forma adaptable.
 * La extensión del archivo de esquema JSON debe conservarse como .schema.json. Por ejemplo, &lt;filename>.schema.json.
 
-## Ejemplo de esquema JSON {#sample-json-schema}
+## Esquema JSON de muestra {#sample-json-schema}
 
 Este es un ejemplo de esquema JSON.
 
@@ -333,7 +332,7 @@ Las claves de definición se utilizan para identificar esquemas reutilizables. L
 
 El ejemplo anterior define un registro de cliente, en el que cada cliente tiene una dirección de envío y de facturación. La estructura de ambas direcciones es la misma (las direcciones tienen una dirección de calle, una ciudad y un estado), por lo que es aconsejable no duplicar las direcciones. También facilita la adición y eliminación de campos para cualquier cambio futuro.
 
-## Preconfiguración de campos en la definición de esquema JSON {#pre-configuring-fields-in-json-schema-definition}
+## Preconfiguración de campos en la definición del esquema JSON {#pre-configuring-fields-in-json-schema-definition}
 
 Puede utilizar la propiedad **aem:afProperties** para preconfigurar el campo Esquema JSON para asignarlo a un componente de formulario adaptable personalizado. A continuación se muestra un ejemplo:
 
@@ -355,7 +354,7 @@ Puede utilizar la propiedad **aem:afProperties** para preconfigurar el campo Esq
 }
 ```
 
-## Configuración de secuencias de comandos o expresiones para objetos de formulario {#configure-scripts-or-expressions-for-form-objects}
+## Configuración de secuencias de comandos o expresiones para objetos de formulario  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones de JavaScript válidas y utilizan API de modelos de secuencias de comandos de formularios adaptables. Puede preconfigurar objetos de formulario para [evaluar una expresión](adaptive-form-expressions.md) en un suceso de formulario.
 
@@ -721,7 +720,7 @@ Puede añadir las siguientes restricciones a los elementos del esquema JSON para
  </tbody>
 </table>
 
-## Construcciones no compatibles {#non-supported-constructs}
+## Construcciones no compatibles  {#non-supported-constructs}
 
 Los formularios adaptables no admiten las siguientes construcciones de esquema JSON:
 
