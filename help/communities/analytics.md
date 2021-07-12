@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2757'
+source-wordcount: '2756'
 ht-degree: 4%
 
 ---
 
-
-# Configuración de Analytics para funciones de Communities {#analytics-configuration-for-communities-features}
+# Funciones de Configuración de Analytics para Communities {#analytics-configuration-for-communities-features}
 
 ## Información general {#overview}
 
@@ -163,7 +162,7 @@ Cuando Video Heartbeat Analytics está habilitado, el código JavaScript (JS) de
 
 Si no está habilitado, nunca se crea una instancia del código de Video Heartbeat y solo el seguimiento de progreso y de posición de reanudación del vídeo se mantiene en SRP para los informes.
 
-## Configuración del servicio de Analytics Cloud de AEM {#aem-analytics-cloud-service-configuration}
+## Configuración del servicio AEM Analytics Cloud {#aem-analytics-cloud-service-configuration}
 
 Para crear una nueva integración de Analytics que integre Adobe Analytics con el sitio de la comunidad AEM, utilice la IU estándar en la instancia de autor:
 
@@ -173,7 +172,7 @@ Para crear una nueva integración de Analytics que integre Adobe Analytics con e
 
 ![cloud-config](assets/cloud-config1.png)
 
-### Crear cuadro de diálogo de configuración {#create-configuration-dialog}
+### Cuadro de diálogo Crear configuración {#create-configuration-dialog}
 
 * Seleccione el icono `[+]` junto a **[!UICONTROL Configuraciones disponibles]** para crear una nueva configuración
 
@@ -199,7 +198,7 @@ Por ejemplo, introduzca *communities*
 
    * Inicia la página de configuración y abre el cuadro de diálogo `Analytics Settings`
 
-### Diálogo Configuración de Analytics {#analytics-settings-dialog}
+### Cuadro de diálogo Configuración de Analytics {#analytics-settings-dialog}
 
 La creación inicial de una nueva configuración de Analytics hace que se muestre la configuración y un nuevo cuadro de diálogo para introducir la configuración de Analytics. Este cuadro de diálogo requiere la [información de cuenta de requisito previo](#prerequisites) obtenida del representante de la cuenta.
 
@@ -388,7 +387,7 @@ Si se crean nuevos componentes personalizados instrumentados para Analytics, est
 >
 >Los componentes del diario se utilizan para implementar la función de blog.
 
-### Se asignó Analytics a variables de AEM {#mapped-analytics-to-aem-variables}
+### Analytics asignado a variables AEM {#mapped-analytics-to-aem-variables}
 
 Una vez que el sitio de la comunidad se guarde con Analytics habilitado y el marco de configuración de la nube seleccionado, las variables AEM se asignarán automáticamente a las eVars y los eventos de Analytics que comiencen por evar1 y event1, respectivamente, y que aumentarán en 1.
 
@@ -560,13 +559,13 @@ Si las eVars y los eventos de Communities sobrescriben las asignaciones que exis
 
 ![analytics-mapping-evar1](assets/analytics-mapping-evar1.png)
 
-#### Ejemplo de paso 3: AEM var eventdata.siteId reasignado a Analytics evar14 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
+#### Ejemplo de paso 3: AEM var eventdata.siteId reasignado a la evar14 de Analytics {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
 
 ![analytics-mapping-evar2](assets/analytics-mapping-evar2.png)
 
 ## Publicación del sitio de la comunidad {#publishing-the-community-site}
 
-### Verificar la asignación de Analytics a AEM variable {#verify-analytics-to-aem-variable-mapping}
+### Verificación de la asignación de Analytics a AEM variable {#verify-analytics-to-aem-variable-mapping}
 
 Es aconsejable verificar la asignación de variables antes de publicar el sitio de la comunidad, que también publica el marco y el servicio en la nube de Analytics.
 
@@ -603,7 +602,7 @@ Para obtener instrucciones específicas, consulte la sección del editor princip
 >
 >Es importante que el publicador principal esté configurado para evitar que se sondeen varias instancias de publicación.
 
-### Replicar la clave de cifrado {#replicate-the-crypto-key}
+### Replicar la clave criptográfica {#replicate-the-crypto-key}
 
 Las credenciales de Adobe Analytics están cifradas. Para facilitar la replicación o transmisión de credenciales de análisis cifrados entre creadores y editores, todas las instancias de AEM deben compartir la misma clave de cifrado principal.
 
