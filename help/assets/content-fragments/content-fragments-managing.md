@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de contenido
+role: User, Admin
+exl-id: 636daf55-2225-4780-9c57-1a2d7464fe2c
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1488'
 ht-degree: 11%
 
 ---
-
 
 # Administrar fragmentos de contenido{#managing-content-fragments}
 
@@ -124,7 +123,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones a
 >
 >Muchas de ellas son [acciones estándar para Assets](/help/assets/manage-assets.md) o [AEM aplicación de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
 
-## Apertura del Editor de fragmentos {#opening-the-fragment-editor}
+## Apertura del editor de fragmentos {#opening-the-fragment-editor}
 
 Para abrir el fragmento para editarlo:
 
@@ -225,7 +224,7 @@ Una vez abierto el fragmento, puede utilizar la pestaña [Variations](/help/asse
 
 Una vez creado el contenido principal, puede crear y administrar [Variaciones](/help/assets/content-fragments/content-fragments-variations.md) de dicho contenido.
 
-## Asociación del contenido con el fragmento {#associating-content-with-your-fragment}
+## Asociación del contenido al fragmento {#associating-content-with-your-fragment}
 
 También puede [asociar contenido](/help/assets/content-fragments/content-fragments-assoc-content.md) con un fragmento. Esto proporciona una conexión para que los recursos (es decir, las imágenes) se puedan utilizar (opcionalmente) con el fragmento cuando se añada a una página de contenido.
 
@@ -303,7 +302,7 @@ Se mostrarán en paralelo, donde:
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Revertir a una versión {#reverting-to-a-version}
+## Reversión a una versión  {#reverting-to-a-version}
 
 Puede volver a una versión específica del fragmento:
 
@@ -347,4 +346,3 @@ Para eliminar un fragmento:
    >[!CAUTION]
    >
    >Si ya se hace referencia al fragmento en una página, verá un mensaje de advertencia y será necesario para confirmar que desea continuar con la **eliminación forzada**. El fragmento, junto con su componente de fragmento de contenido, se eliminará de cualquier página de contenido.
-
