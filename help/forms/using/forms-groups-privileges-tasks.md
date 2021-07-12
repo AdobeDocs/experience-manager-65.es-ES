@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 2%
+source-wordcount: '279'
+ht-degree: 1%
 
 ---
-
 
 # AEM Forms en grupos y privilegios OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
@@ -113,4 +112,3 @@ Una vez que instale [AEM Forms add-on package](../../forms/using/installing-conf
 
 1. El usuario con privilegios de grupo de usuarios de formularios no puede escribir secuencias de comandos para formularios adaptables.
 1. El usuario con privilegios de grupo de autores de plantillas no puede escribir secuencias de comandos para plantillas.
-
