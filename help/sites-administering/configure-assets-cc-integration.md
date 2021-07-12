@@ -3,16 +3,16 @@ title: Configuración de la integración de AEM Assets con Experience Cloud
 description: Obtenga información sobre cómo configurar la integración de AEM Assets con Experience Cloud.
 contentOwner: AG
 feature: Administración de activos
-role: Business Practitioner, Architect, Administrator
+role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 1%
 
 ---
 
-# Configurar la integración de AEM Assets con el Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
+# Configuración de la integración de AEM Assets con Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
 Si es cliente de Adobe Experience Cloud, puede sincronizar los recursos dentro de Adobe Experience Manager Assets con Adobe Creative Cloud y viceversa. También puede sincronizar los recursos con el Experience Cloud y viceversa. Puede configurar esta sincronización mediante [!DNL Adobe I/O]. El nombre actualizado de [!DNL Adobe Marketing Cloud] es [!DNL Adobe Experience Cloud].
 
@@ -91,7 +91,7 @@ En el servidor back-end, el servidor AEM autentica el perfil con la puerta de en
 
 1. En la página de configuración, haga clic en **[!UICONTROL Mostrar clave pública]** para mostrar la clave pública generada para la instancia. También puede hacer clic en **[!UICONTROL Descargar clave pública para la puerta de enlace de OAuth]** para descargar el archivo que contiene la clave pública. A continuación, abra el archivo para mostrar la clave pública.
 
-## Activar sincronización {#enable-synchronization}
+## Habilitar sincronización {#enable-synchronization}
 
 1. Muestre la clave pública utilizando uno de los siguientes métodos mencionados en el último paso del procedimiento [añadir una nueva configuración al Experience Cloud](#add-a-new-configuration). Haga clic en **[!UICONTROL Mostrar clave pública]**.
 
@@ -127,7 +127,7 @@ En el servidor back-end, el servidor AEM autentica el perfil con la puerta de en
 
 -->
 
-## Intercambiar recursos entre AEM Assets y el Experience Cloud {#exchange-assets-between-aem-and-experience-cloud}
+## Intercambiar recursos entre AEM Assets y Experience Cloud {#exchange-assets-between-aem-and-experience-cloud}
 
 1. Inicie sesión en AEM Assets.
 1. En la consola Recursos, cree una carpeta y cargue algunos recursos en ella. Por ejemplo, cree una carpeta **mc-demo** y cargue un recurso en ella.
