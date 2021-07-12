@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1483'
 ht-degree: 2%
 
 ---
-
 
 # Configuración de Solr para SRP {#solr-configuration-for-srp}
 
@@ -68,7 +67,7 @@ JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CM
 
 Cuando se ejecuta en modo SolrCloud, antes de la instalación de MLS, es necesario utilizar y conocer los siguientes comandos de configuración de SolrCloud.
 
-#### 1. Cargue una configuración en ZooKeeper {#upload-a-configuration-to-zookeeper}
+#### 1. Cargar una configuración a ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Referencia:
 [https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
@@ -143,7 +142,7 @@ En total, los siguientes 33 idiomas son compatibles con Advanced MLS.
 | Finés | Letón | Thai |
 | Francés | Lituano | Turco |
 
-#### Comparación de AEM 6.1 Solr search, Standard MLS y Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
+#### Comparación de AEM búsqueda de Solr 6.1, MLS estándar y MLS avanzado {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
 **Nota**: AEM 6.1 se refiere a AEM 6.1 Comunidades FP3 y anteriores.
 
@@ -217,7 +216,7 @@ Los archivos MLS estándar se almacenan en el repositorio de AEM.
 1. Reinicie Solr.
 1. Para MSRP, ejecute [MSRP Reindex Tool](#msrpreindextool), a menos que se trate de una instalación nueva.
 
-### Instalación de Advanced MLS {#installing-advanced-mls}
+### Instalación de MLS avanzados {#installing-advanced-mls}
 
 Para que la colección SRP (MSRP o DSRP) admita MLS avanzados, se requieren nuevos complementos Solr, además de un esquema personalizado y una configuración Solr. Todos los elementos necesarios se empaquetan en un archivo zip descargable. Además, se incluye un script de instalación para su uso cuando se implementa Solr en modo independiente.
 
