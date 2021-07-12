@@ -6,9 +6,8 @@ user-guide-title: Guía del usuario de AEM 6.5 Communities
 breadcrumb-title: Guía de Communities
 user-guide-description: Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales.
 feature: Communities
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+role: User
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 12%
@@ -16,7 +15,7 @@ ht-degree: 12%
 ---
 
 
-# Guía de comunidades de Adobe Experience Manager 6.5 {#communities}
+# Guía de Adobe Experience Manager 6.5 Communities {#communities}
 
 + [Guía de Communities](home.md)
 + Introducción a AEM Communities {#introduction}
@@ -143,7 +142,7 @@ ht-degree: 12%
    + [Convenciones de nomenclatura](naming-conventions.md)
    + [Refactorización de SocialUtils](socialutils.md)
 + Creación {#authoring}
-   + [Componentes de las comunidades](author-communities.md) 
+   + [Componentes de Communities](author-communities.md)
    + [Conceptos básicos de los componentes de Communities](basics.md)
    + [Función Flujos de actividad](activities.md)
    + [Función de asignaciones](assignments.md)
