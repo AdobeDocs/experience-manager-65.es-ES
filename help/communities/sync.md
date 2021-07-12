@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2510'
-ht-degree: 2%
+source-wordcount: '2509'
+ht-degree: 1%
 
 ---
-
 
 # Sincronización de usuarios de Communities {#communities-user-synchronization}
 
@@ -32,7 +31,7 @@ En AEM Communities, desde el entorno de publicación (según los permisos config
 
 Para obtener más información sobre los datos de usuario, visite [Administración de usuarios y grupos de usuarios](/help/communities/users.md).
 
-## Sincronización de usuarios entre una granja de publicación {#synchronizing-users-across-a-publish-farm}
+## Sincronización de usuarios en un conjunto de servidores de publicación {#synchronizing-users-across-a-publish-farm}
 
 Por diseño, los datos de usuario creados en el entorno de publicación no aparecen en el entorno de creación.
 
@@ -48,7 +47,7 @@ Para obtener instrucciones detalladas paso a paso sobre cómo habilitar la sincr
 
 * [Sincronización de usuarios](/help/sites-administering/sync.md)
 
-## Sincronización de usuarios en segundo plano {#user-sync-in-the-background}
+## Sincronización de usuarios en segundo plano  {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
@@ -60,7 +59,7 @@ Para obtener instrucciones detalladas paso a paso sobre cómo habilitar la sincr
 
    Contiene información de distribución para Sling. Esa es información sobre dónde debe distribuirse el contenido y cuándo se distribuyó por última vez.
 
-## Qué sucede cuando ... {#what-happens-when}
+## Qué sucede cuando... {#what-happens-when}
 
 ### Publicar sitio desde la consola Sitios de Communities {#publish-site-from-communities-sites-console}
 
@@ -84,7 +83,7 @@ Por diseño, los datos de usuario creados en el entorno de publicación no apare
 
 Cuando se utiliza la consola [Administración de usuarios y seguridad](/help/sites-administering/security.md) para agregar nuevos usuarios en el entorno de publicación, la sincronización de usuarios sincroniza a los nuevos usuarios y su pertenencia a grupos con otras instancias de publicación, si es necesario. La sincronización de usuarios también sincronizará los grupos de usuarios creados mediante la consola de seguridad.
 
-### Publicaciones de usuario Contenido en publicación {#user-posts-content-on-publish}
+### Publicaciones de usuario de contenido al publicar {#user-posts-content-on-publish}
 
 Para el contenido generado por el usuario (UGC), se accede a los datos introducidos en una instancia de publicación a través del [SRP](/help/communities/srp-config.md) configurado.
 
@@ -102,7 +101,7 @@ La sincronización de usuarios depende del entorno de creación para administrar
 
 1. Asegúrese de que se ha instalado el código más reciente:
 
-   * [AEM actualizaciones de la plataforma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=es)
+   * [AEM actualizaciones de la plataforma](https://helpx.adobe.com/es/experience-manager/kb/aem62-available-hotfixes.html)
    * [Actualizaciones de AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
 Las siguientes configuraciones son necesarias para habilitar la sincronización de usuarios en AEM Communities. Asegúrese de que estas configuraciones son correctas para evitar que la distribución de contenido de sling falle.
@@ -134,7 +133,7 @@ Para configurar la configuración de los agentes de sincronización de Apache Sl
       Estos puntos finales definen de dónde desea obtener el contenido y desde dónde desea insertar el contenido. El autor obtiene el contenido del extremo del exportador especificado y lo envía a los editores (distintos del editor desde el que obtuvo el contenido).
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Distribución de Granite de Adobe: Proveedor secreto de transporte de contraseña cifrada {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Distribución de Adobe Granite: proveedor secreto de transporte de contraseña cifrada {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Permite al autor identificar al usuario autorizado como si tuviera permiso para sincronizar datos de usuario de autor a publicación.
 
@@ -181,7 +180,7 @@ Para configurar los datos (rutas de nodos) para sincronizar:
 
    ![queue-agent-fact](assets/queue-agents-fact.png)
 
-### Distribución de granito de Adobe: fábrica de observación de diff {#adobe-granite-distribution-diff-observer-factory}
+### Distribución de Adobe Granite - Fábrica de Observadores de Diff {#adobe-granite-distribution-diff-observer-factory}
 
 Esta configuración sincroniza la pertenencia a grupos entre editores.
 Si al cambiar la pertenencia a un grupo en un publicador no se actualiza su pertenencia a otros editores, asegúrese de que **ref:Members** se añada a **nombres de propiedades miradas**.
@@ -223,7 +222,7 @@ Para modificar el intervalo de sondeo:
 
    ![déclencheur programado](assets/scheduled-trigger.png)
 
-### Escucha de sincronización de usuarios de AEM Communities {#aem-communities-user-sync-listener}
+### Oyente de sincronización de usuarios de AEM Communities {#aem-communities-user-sync-listener}
 
 Para los problemas en la distribución de Sling donde hay una discrepancia en las suscripciones y que se muestra a continuación, compruebe si las siguientes propiedades en las configuraciones **AEM Communities User Sync Listener** están configuradas:
 
@@ -308,7 +307,7 @@ Para garantizar un ID de Sling único de los editores en la granja de publicacio
 
 Repita estos pasos hasta que todas las instancias de publicación tengan un ID de Sling único.
 
-### Fábrica del Generador de paquetes Vault {#vault-package-builder-factory}
+### Fábrica de generador de paquetes de almacenamiento {#vault-package-builder-factory}
 
 Para que las actualizaciones se sincronicen correctamente, es necesario modificar el creador de paquetes de bóveda para la sincronización de usuarios.
 En `/home/users`, se crea un nodo `*/rep:cache`. Es una caché que se utiliza para encontrar que si consultamos el nombre principal de un nodo, esta caché se puede utilizar directamente.
