@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '963'
 ht-degree: 4%
 
 ---
-
 
 # Consolas de administración de miembros y grupos {#members-groups-management-consoles}
 
@@ -25,11 +24,11 @@ ht-degree: 4%
 
 Las funciones de AEM Communities suelen requerir que los visitantes del sitio se registren e inicien sesión antes de participar en una comunidad del entorno de publicación. Su registro de usuario solo debe existir en el entorno de publicación y comúnmente se los denomina *miembros* para distinguirlos de *usuarios* registrados en el entorno de creación.
 
-### Miembros (usuarios) en Publicar {#members-users-on-publish}
+### Miembros (usuarios) en Publicación {#members-users-on-publish}
 
 Mediante las consolas Miembros de Communities y Grupos , los miembros y grupos de miembros registrados en el entorno *publish* se pueden crear y administrar desde el entorno *author* . Esto solo es posible cuando el [servicio de túnel](deploy-communities.md#tunnel-service-on-author) está habilitado.
 
-### Usuarios en Autor {#users-on-author}
+### Usuarios en Author {#users-on-author}
 
 Para administrar usuarios y grupos registrados en el entorno *author* , es necesario utilizar la consola de seguridad de la plataforma:
 
@@ -52,7 +51,7 @@ En el entorno de creación, para llegar a la consola Miembros para administrar m
 
 ![consola miembro1](assets/member-console1.png)
 
-### Búsqueda {#search-features}
+### Búsqueda   {#search-features}
 
 Seleccione el icono del panel lateral en el lado izquierdo del encabezado `Members` para abrir el panel lateral de búsqueda.
 
@@ -81,7 +80,7 @@ Seleccione `Create Member` para crear un usuario en el entorno de publicación.
 
 ![create-member1](assets/create-member1.png)
 
-### GENERAL: Detalles del miembro {#general-member-details}
+### GENERAL - Detalles de los miembros {#general-member-details}
 
 La mayoría de los campos son campos opcionales que el miembro puede rellenar posteriormente en su perfil.
 
@@ -142,15 +141,15 @@ Consulte [Límites de contribución de miembros](limits.md).
 
 Para proporcionar un avatar para el miembro, comience seleccionando **[!UICONTROL Upload Image]** y elija una imagen de tipo .jpg, .png, .tif o .gif. El tamaño preferido para una imagen es de 240 x 240 píxeles a 72 ppp.
 
-### GENERAL: Agregar miembro a sitios {#general-add-member-to-sites}
+### GENERAL: Agregar miembros a sitios {#general-add-member-to-sites}
 
 El miembro puede agregarse a uno o más grupos de miembros de sitios de la comunidad. Comience por introducir texto en el cuadro de texto.
 
-### GENERAL: Agregar miembro a grupos {#general-add-member-to-groups}
+### GENERAL - Agregar miembros a grupos {#general-add-member-to-groups}
 
 El miembro puede agregarse a uno o más grupos de miembros. Comience por introducir texto en el cuadro de texto.
 
-### Pestaña BADGES {#badges-tab}
+### PESTAÑA BADGES {#badges-tab}
 
 El panel `BADGES` permite asignar manualmente distintivos y revocarlos. Los distintivos pueden ser para funciones asignadas, así como para distintivos que normalmente se ganan.
 
