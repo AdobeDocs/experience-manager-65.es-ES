@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
-
 
 # Obtención de documentos XDP y PDF en AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
@@ -89,4 +88,3 @@ Al quitar una plantilla de formulario, se corrompe el formulario adaptable o la 
 Se mantiene un indicador para indicar si un formulario adaptable está sucio. Esta información está disponible en la página de propiedades del formulario, junto con los metadatos del formulario. Solo para formularios adaptables sucios, una propiedad de metadatos `Model Refresh` muestra el valor `Recommended` .
 
 ![Indicación de que un formulario adaptable no está sincronizado con el modelo XFA](assets/model-refresh.png)
-
