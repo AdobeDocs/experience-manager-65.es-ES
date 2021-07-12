@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '1994'
 ht-degree: 1%
 
 ---
-
 
 # Administrar metadatos de formulario{#manage-form-metadata}
 
@@ -29,7 +28,7 @@ De forma predeterminada, AEM Forms proporciona un conjunto definido de metadatos
 
 Si es desarrollador o propietario de un sitio, puede personalizar Forms Portal, la interfaz de usuario final de AEM Forms para reflejar los metadatos que utiliza en su organización. Para obtener más información sobre Forms Portal, consulte [Introducción a la publicación de formularios en un portal](../../forms/using/introduction-publishing-forms.md).
 
-## Metadatos de AEM Forms {#metadata-in-aem-forms}
+## Metadatos en AEM Forms {#metadata-in-aem-forms}
 
 En AEM Forms, la lista de propiedades de metadatos asociadas a un recurso depende de su tipo. Además, si agrega cualquier propiedad de metadatos personalizada, se agrega a todos los recursos del tipo en el que se agregaron los metadatos personalizados.
 
@@ -205,11 +204,11 @@ Los recursos tienen valores de propiedad existentes, que se pueden ver en modo d
    * El panel derecho contiene propiedades de metadatos en modo de solo lectura, distribuidas entre varias pestañas.
 
 
-## Agregar/actualizar valores de metadatos de formulario {#add-update-form-metadata-values}
+## Agregar o actualizar valores de metadatos de formulario {#add-update-form-metadata-values}
 
 Puede editar el valor de las propiedades de metadatos existentes o agregar nuevos valores a un campo de propiedad de metadatos existente (por ejemplo, cuando un campo de metadatos está en blanco).
 
-### Actualizar los valores de las propiedades de metadatos {#update-metadata-property-values}
+### Actualizar valores de propiedad de metadatos {#update-metadata-property-values}
 
 1. Siga los pasos mencionados en la sección anterior para abrir la página de propiedades donde se pueden ver los metadatos existentes del formulario seleccionado.
 
@@ -253,7 +252,7 @@ Se proporciona una herramienta (Editor de esquemas de metadatos) para definir el
 
 AEM Forms expone los esquemas de metadatos de los tipos de formularios admitidos en esta herramienta. De este modo, puede acceder a estos esquemas y utilizar la funcionalidad proporcionada en el editor de esquemas de metadatos para añadir propiedades personalizadas.
 
-### Vaya al editor de esquemas de metadatos {#navigate-the-metadata-schema-editor}
+### Navegar por el editor de esquemas de metadatos {#navigate-the-metadata-schema-editor}
 
 1. Vaya a **[!UICONTROL Herramientas > Assets > Esquemas de metadatos]**.
 
@@ -284,7 +283,7 @@ AEM Forms expone los esquemas de metadatos de los tipos de formularios admitidos
    1. Puede agregar un campo personalizado del tipo deseado arrastrando el componente de campo de la sección **[!UICONTROL Generar formulario]** a la página de esquema.
    1. Las especificaciones de este campo se pueden proporcionar en la sección **[!UICONTROL Settings]** después de hacer clic en el campo.
 
-### Agregar propiedad de metadatos personalizada en el editor de esquemas {#add-custom-metadata-property-in-schema-editor}
+### Añadir propiedad de metadatos personalizada en el editor de esquemas {#add-custom-metadata-property-in-schema-editor}
 
 1. Vaya a la pestaña (existente o nueva) donde desee agregar la propiedad personalizada.
 
