@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: '2490'
 ht-degree: 0%
 
 ---
-
 
 # Arquitectura y topologías de implementación para AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
@@ -88,11 +87,11 @@ Una instancia de procesamiento está configurada para ejecutarse en el modo de e
 * Permite la replicación inversa de los datos de formulario sin procesar de una instancia de Publish. El controlador de almacenamiento de datos predeterminado requiere la función de replicación inversa.
 * AEM Los flujos de trabajo, que son el principal medio de procesar los datos de formulario sin procesar que llegan desde una instancia de publicación, se recomiendan para ejecutarse en un sistema de estilo autor.
 
-## Muestra de topologías físicas para AEM Forms en JEE {#sample-physical-topologies-for-aem-forms-on-jee}
+## Topologías físicas de muestra para AEM Forms en JEE {#sample-physical-topologies-for-aem-forms-on-jee}
 
 Las topologías de AEM Forms en JEE recomendadas a continuación están destinadas principalmente a clientes que actualizan desde LiveCycle o una versión anterior de AEM Forms en JEE. Adobe recomienda utilizar AEM Forms en OSGi para instalaciones nuevas. Una nueva instalación de AEM Forms en JEE solo se recomienda para utilizar las funciones de seguridad de documentos y administración de procesos.
 
-### Topología para usar document services o funciones de seguridad de documentos {#topology-for-using-document-services-or-document-security-capabilities}
+### Topología para utilizar document services o funciones de seguridad de documentos {#topology-for-using-document-services-or-document-security-capabilities}
 
 Los clientes de AEM Forms que planeen utilizar únicamente servicios de documentos o capacidades de seguridad de documentos pueden tener una topología similar a la que se muestra a continuación. Esta topología recomienda utilizar una sola instancia de AEM Forms. También puede crear un clúster o una granja de servidores de AEM Forms, si es necesario. Esta topología se recomienda cuando la mayoría de los usuarios acceden mediante programación a las capacidades del servidor AEM Forms y la intervención a través de la interfaz de usuario es mínima. La topología es útil en las operaciones de procesamiento por lotes de document services. Por ejemplo, el uso del servicio de salida para crear cientos de documentos PDF no editables diariamente.
 
@@ -127,13 +126,13 @@ Puede realizar los siguientes cambios o personalizaciones en la topología suger
 
 ## Muestra de topologías físicas para usar AEM Forms en OSGi {#sample-physical-topologies-for-using-aem-forms-on-osgi}
 
-### Topología para la captura de datos, comunicación interactiva, flujo de trabajo centrado en formularios en las capacidades de OSGi {#topology-for-data-capture-interactive-communication-form-centric-workflow-on-osgi-capabilities}
+### Topología para la captura de datos, comunicación interactiva, flujo de trabajo centrado en formularios sobre las capacidades de OSGi {#topology-for-data-capture-interactive-communication-form-centric-workflow-on-osgi-capabilities}
 
 Los clientes de AEM Forms que planean utilizar las funciones de captura de datos de AEM Forms, por ejemplo, formularios adaptables, HTML5 Forms, PDF forms, pueden tener una topología similar a la que se muestra a continuación. Esta topología también se recomienda para utilizar comunicaciones interactivas y flujos de trabajo centrados en Forms en la capacidad OSGi, por ejemplo, para utilizar AEM Bandeja de entrada y AEM Forms App para flujos de trabajo de procesos empresariales.
 
 ![Interactive-use-cases-af-cm-osgi-workflow](assets/interactive-use-cases-af-cm-osgi-workflow.png)
 
-### Topología para usar capacidades de carpeta vigiladas para el procesamiento por lotes sin conexión {#topology-for-using-watched-folder-capabilities-for-offline-batch-processing}
+### Topología para el uso de las funciones de carpeta vigilada para el procesamiento por lotes sin conexión {#topology-for-using-watched-folder-capabilities-for-offline-batch-processing}
 
 Los clientes de AEM Forms que planean utilizar Carpetas vigiladas para el procesamiento por lotes pueden tener una topología similar a la que se muestra a continuación. La topología muestra un entorno agrupado, pero usted decide utilizar una instancia única o una granja de servidores AEM Forms en función de la carga. La fuente de datos de terceros es su propio sistema de registro. Actúa como fuente de entrada para carpetas vigiladas. La topología también muestra los resultados en forma de archivo impreso. También puede almacenar el contenido de salida en un sistema de archivos, enviarlo por correo electrónico y utilizar otros métodos personalizados para consumir resultados.
 
@@ -146,4 +145,3 @@ Los clientes de AEM Forms que planean utilizar únicamente la funcionalidad de d
 Aunque AEM Forms le permite configurar y ejecutar todas las funcionalidades desde un solo servidor, debe planificar la capacidad, equilibrar la carga y configurar servidores dedicados para funcionalidades específicas en un entorno de producción. Por ejemplo, para un entorno que utiliza el servicio Generador de PDF para convertir miles de páginas al día y varios formularios adaptables para capturar datos, configure servidores AEM Forms independientes para el servicio Generador de PDF y las funciones de formularios adaptables. Ayuda a proporcionar un rendimiento óptimo y a escalar los servidores de forma independiente entre sí.
 
 ![offline-api-based-processing](assets/offline-api-based-processing.png)
-
