@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 3%
 
 ---
-
 
 # DSRP - Proveedor de recursos de almacenamiento de bases de datos relacionales {#dsrp-relational-database-storage-resource-provider}
 
@@ -54,7 +53,7 @@ Para los entornos de producción, el modo SolrCloud proporciona un rendimiento m
 
 Para obtener más información sobre la instalación y configuración, consulte [Configuración de Solr para SRP](solr.md).
 
-### Seleccione DSRP {#select-dsrp}
+### Seleccionar DSRP {#select-dsrp}
 
 La [consola de configuración de almacenamiento](srp-config.md) permite seleccionar la configuración de almacenamiento predeterminada, que identifica qué implementación de SRP utilizar.
 
@@ -149,4 +148,3 @@ Por ejemplo, un comando curl para reindexar DSRP tendría este aspecto:
 ```shell
 curl -u admin:password -X POST -F path=/ https://host:port/services/social/datastore/rdb/reindex
 ```
-
