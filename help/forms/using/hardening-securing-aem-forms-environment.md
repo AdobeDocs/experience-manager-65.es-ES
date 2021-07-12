@@ -6,15 +6,14 @@ seo-description: Conozca las recomendaciones y prácticas recomendadas para prot
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
-
 
 # Endurecimiento y seguridad de los formularios AEM en el entorno OSGi {#hardening-and-securing-aem-forms-on-osgi-environment}
 
@@ -39,11 +38,11 @@ AEM Forms es altamente personalizable y puede funcionar en muchos entornos difer
 
 Las vulnerabilidades de seguridad de capa de transporte están entre las primeras amenazas para cualquier servidor de aplicaciones orientado a Internet o a la intranet. En esta sección se describe el proceso de endurecimiento de los hosts de la red contra estas vulnerabilidades. Se ocupa de la segmentación de red, el refuerzo de la pila del Protocolo de control de transmisión/Protocolo Internet (TCP/IP) y el uso de cortafuegos para la protección del host.
 
-### Límite de extremos abiertos {#limit-open-endpoints}
+### Límite de extremos abiertos  {#limit-open-endpoints}
 
 Una organización puede tener un cortafuegos externo para restringir el acceso entre un usuario final y la granja de servidores de publicación de AEM Forms. La organización también puede tener un firewall interno para limitar el acceso entre un conjunto de servidores de publicación y otros dentro de los elementos de organización (por ejemplo, la instancia de autor, la instancia de procesamiento y las bases de datos). Permita que los cortafuegos permitan el acceso a un número limitado de URL de AEM Forms para usuarios finales y dentro de los elementos de la organización:
 
-#### Configurar firewall externo {#configure-external-firewall}
+#### Configuración de cortafuegos externo  {#configure-external-firewall}
 
 Puede configurar un cortafuegos externo para permitir que determinadas URL de AEM Forms accedan a Internet. Se requiere acceso a estas direcciones URL para rellenar o enviar un formulario adaptable, HTML5, carta de administración de correspondencia o para iniciar sesión en un servidor de AEM Forms:
 
@@ -97,7 +96,7 @@ Puede configurar un cortafuegos externo para permitir que determinadas URL de AE
  </tbody>
 </table>
 
-#### Configurar el firewall interno {#configure-internal-firewall}
+#### Configuración del cortafuegos interno  {#configure-internal-firewall}
 
 Puede configurar el cortafuegos interno para permitir que ciertos componentes de AEM Forms (por ejemplo, instancia de autor, instancia de procesamiento, bases de datos) se comuniquen con el conjunto de servidores de publicación y otros componentes internos mencionados en el diagrama de topología:
 
@@ -130,7 +129,7 @@ De forma predeterminada, los recursos disponibles en los nodos de publicación s
 * /etc.clientlibs/fd/&amp;ast;
 * /libs/fd/&amp;ast;
 
-## Administre de forma segura los datos de los formularios {#securely-handle-forms-data}
+## Administrar de forma segura los datos de los formularios  {#securely-handle-forms-data}
 
 AEM Forms almacena datos en ubicaciones predefinidas y carpetas temporales. Debe proteger los datos para evitar un uso no autorizado.
 
@@ -157,7 +156,7 @@ La integración de datos también proporciona métodos para autorizar solicitude
 
 **Autorización posterior al proceso:**  puede utilizar la autorización posterior al proceso para validar y controlar los resultados antes de devolver los resultados al solicitante. También puede filtrar, recortar e insertar datos adicionales en los resultados.
 
-### Limitar el acceso del usuario {#limit-user-access}
+### Limitar el acceso de los usuarios {#limit-user-access}
 
 Se requiere un conjunto diferente de personalidades de usuario para las instancias de autor, publicación y procesamiento. No ejecute ninguna instancia con credenciales de administrador.
 
@@ -197,6 +196,6 @@ En general, los clústeres de procesamiento y el complemento de Forms Workflow (
 
 Un clúster de procesamiento se ejecuta en modo de autor, pero no lo utiliza para actividades de desarrollo. No permita que se incluya a un usuario normal en los grupos de autores de contenido y usuarios de formularios de un clúster de procesamiento.
 
-### AEM prácticas recomendadas para proteger un entorno de AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
+### Usar AEM prácticas recomendadas para proteger un entorno de AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
 Este documento proporciona instrucciones específicas para el entorno de AEM Forms. Debe asegurarse de que la instalación de AEM subyacente sea segura cuando se implemente. Para obtener instrucciones detalladas, consulte la documentación [AEM Security Checklist](/help/sites-administering/security-checklist.md).
