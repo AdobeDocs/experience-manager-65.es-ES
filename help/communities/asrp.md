@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 1%
+source-wordcount: '833'
+ht-degree: 0%
 
 ---
 
-
-# ASRP - Proveedor de recursos de almacenamiento de Adobe {#asrp-adobe-storage-resource-provider}
+# ASRP: proveedor de recursos de almacenamiento de Adobe {#asrp-adobe-storage-resource-provider}
 
 ## Acerca de ASRP {#about-asrp}
 
@@ -43,7 +42,7 @@ Las claves de consumidor y secreto se comparten entre todos los grupos de inform
 
 ## Configuración {#configuration}
 
-### Seleccione ASRP {#select-asrp}
+### Seleccionar ASRP {#select-asrp}
 
 La [consola de configuración de almacenamiento](/help/communities/srp-config.md) permite seleccionar la configuración de almacenamiento predeterminada, que identifica qué implementación de SRP utilizar.
 
@@ -74,7 +73,7 @@ Después de enviar la configuración, pruebe la conexión:
 
 * Asegúrese de que las direcciones URL del sitio para los datos de perfil se pueden enrutar desde el centro de datos [externalizando vínculos](#externalize-links).
 
-### Replicar la clave de cifrado {#replicate-the-crypto-key}
+### Replicar la clave criptográfica {#replicate-the-crypto-key}
 
 La clave de consumidor y la clave secreta están cifradas. Para que las claves se cifren o desencripten correctamente, la clave principal de Granite Crypto debe ser la misma en todas las instancias AEM.
 
@@ -149,4 +148,3 @@ En JCR, si [/conf/global/settings/communities](https://localhost:4502/crx/de/ind
 
 * No contiene un nodo [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp), significa que el proveedor de almacenamiento es JSRP.
 * Si el nodo srpc existe y contiene el nodo [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) , las propiedades de configuración predeterminada definen ASRP como el proveedor predeterminado.
-
