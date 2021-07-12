@@ -9,15 +9,14 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1082'
 ht-degree: 1%
 
 ---
-
 
 # Consideraciones generales de seguridad para AEM Forms en JEE{#general-security-considerations-for-aem-forms-on-jee}
 
@@ -224,7 +223,7 @@ El servidor de aplicaciones JBoss utiliza 8080 como puerto HTTP predeterminado. 
 1. Guarde y cierre el archivo.
 1. Reinicie el servidor de aplicaciones JBoss.
 
-## AEM Forms en consideraciones de seguridad JEE {#aem-forms-on-jee-security-considerations}
+## AEM Forms en consideraciones de seguridad de JEE {#aem-forms-on-jee-security-considerations}
 
 En esta sección se describen algunos problemas de seguridad específicos de JEE de AEM Forms que debe conocer.
 
@@ -232,7 +231,7 @@ En esta sección se describen algunos problemas de seguridad específicos de JEE
 
 Las credenciales de correo electrónico almacenadas por las aplicaciones no se cifran antes de almacenarse en la base de datos de AEM Forms en JEE. Al configurar un extremo de servicio para que utilice el correo electrónico, la información de contraseña utilizada como parte de esa configuración de extremo no se cifra cuando se almacena en la base de datos.
 
-### Contenido confidencial para el Rights Management en la base de datos {#sensitive-content-for-rights-management-in-the-database}
+### Contenido confidencial para el Rights Management de la base de datos {#sensitive-content-for-rights-management-in-the-database}
 
 AEM Forms en JEE utiliza la base de datos AEM Forms en JEE para almacenar información confidencial de claves de documentos y otro material criptográfico que se utiliza para documentos de políticas. Proteger la base de datos contra intrusiones ayuda a proteger esta información confidencial.
 
