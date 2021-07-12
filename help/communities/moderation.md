@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2111'
+source-wordcount: '2110'
 ht-degree: 4%
 
 ---
-
 
 # Consola de moderación {#moderation-console}
 
@@ -374,4 +373,3 @@ Para volver a la visualización del área de contenido de varios anuncios UGC, s
 Por ejemplo:
 
 ![view1](assets/view1.png)
-
