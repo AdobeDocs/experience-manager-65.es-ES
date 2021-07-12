@@ -6,15 +6,14 @@ uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
-
 
 # Gestión de correspondencia | Gestión de datos de usuario {#correspondence-management-handling-user-data}
 
@@ -26,7 +25,7 @@ Cuando un usuario empresarial o un agente guarda una correspondencia como borrad
 >
 >En AEM 6.5 Forms, la administración de correspondencia no está disponible de forma predeterminada. Si está actualizando desde una versión anterior de AEM Forms, instale el paquete de compatibilidad y migre los recursos de administración de correspondencia para seguir usándolos en AEM 6.5 Forms. Para obtener más información, consulte [Paquete de compatibilidad](/help/forms/using/compatibility-package.md).
 
-## Almacenamiento de datos y datos de usuario {#data}
+## Almacenamiento de datos y datos de usuarios {#data}
 
 La gestión de correspondencia almacena datos para cartas en borrador y enviadas en AEM repositorio solo si la instancia de publicación está configurada para administrar instancias de carta. Para obtener más información sobre la configuración, consulte [Propiedades de configuración de Gestión de correspondencia](/help/forms/using/cm-configuration-properties.md).
 
