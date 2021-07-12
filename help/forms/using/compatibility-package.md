@@ -10,15 +10,14 @@ topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '343'
 ht-degree: 6%
 
 ---
-
 
 # Paquete de compatibilidad{#compatibility-package}
 
@@ -50,7 +49,7 @@ Asegúrese de tener [AEM Paquete de compatibilidad](https://helpx.adobe.com/aem-
 
    Para obtener más información, consulte [utilidad de migración](../../forms/using/migration-utility.md).
 
-## Recursos compatibles con AEM Forms 6.5 al instalar el paquete de compatibilidad {#assetsmadecompatible}
+## Recursos compatibles con AEM Forms 6.5 mediante la instalación del paquete Compatibilidad {#assetsmadecompatible}
 
 Al instalar el paquete Compatibilidad, puede hacer que los siguientes recursos y plantillas sean compatibles con AEM Forms 6.5:
 
@@ -77,4 +76,3 @@ Al instalar el paquete Compatibilidad, puede hacer que los siguientes recursos y
    * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedensubscription
    * /libs/fd/afaddon/components/page/Advancedensubscription
-
