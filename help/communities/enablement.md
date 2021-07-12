@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: b635e2ed-4637-4b2f-a746-ec8dc7541bab
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 2%
+source-wordcount: '447'
+ht-degree: 1%
 
 ---
 
-
-# Configuración de las funciones de habilitación {#configuring-enablement-features}
+# Configuración de funciones de habilitación {#configuring-enablement-features}
 
 ## Información general {#overview}
 
