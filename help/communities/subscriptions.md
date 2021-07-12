@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '361'
 ht-degree: 2%
 
 ---
-
 
 # Suscripciones de Communities {#communities-subscriptions}
 
@@ -45,7 +44,7 @@ Para obtener instrucciones sobre la configuración del correo electrónico, cons
 
 Los componentes deben configurarse para habilitar las suscripciones *y* siguientes. Las funciones que permiten suscripciones son [blog](blog-feature.md), [foro](forum.md) y [QnA](working-with-qna.md).
 
-## Suscripciones de la siguiente {#subscriptions-from-following}
+## Suscripciones de lo siguiente {#subscriptions-from-following}
 
 ![suscripción siguiente](assets/subscription-following.png)
 
@@ -70,4 +69,3 @@ Si responden al correo electrónico, el contenido que introduzcan en la respuest
 La cantidad de tiempo que se tarda en publicar una respuesta está controlada por el [intervalo de actualización del importador de encuestas](email.md#configure-polling-importer).
 
 ![QA](assets/qa.png)
-
