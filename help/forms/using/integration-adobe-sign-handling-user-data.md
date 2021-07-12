@@ -7,15 +7,14 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 feature: Adobe Sign
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
-
 
 # Integración con Adobe Sign | Gestión de datos de usuario {#integration-with-adobe-sign-handling-user-data}
 
@@ -25,7 +24,7 @@ Cuando un firmante o varios firmantes firman y envían un formulario adaptable, 
 
 Para obtener más información sobre la integración [!DNL AEM Forms] con [!DNL Adobe Sign], consulte [Uso de Adobe Sign en forma adaptativa](/help/forms/using/working-with-adobe-sign.md).
 
-## Almacenamiento de datos y datos de usuario {#data}
+## Almacenamiento de datos y datos de usuarios {#data}
 
 [!DNL Adobe Sign] el formulario adaptable habilitado incluye información sobre los firmantes y puede incluir otros datos de usuario recopilados por el formulario adaptable. El servicio [!DNL Adobe Sign] guarda los datos de usuario con la firma dentro del acuerdo. El acuerdo se guarda en el servidor [!DNL Adobe Sign] configurado en los servicios en la nube [!DNL AEM Forms]. Además, si el formulario adaptable está configurado para utilizar la acción de envío de Forms Portal, los datos del acuerdo se guardan en el almacén de datos del portal de formularios junto con los datos del formulario.
 
