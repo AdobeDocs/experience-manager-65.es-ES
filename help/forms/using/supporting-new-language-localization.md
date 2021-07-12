@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
-feature: Adaptive Forms
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formularios adaptables
+role: Admin
+exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
-
 
 # Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables{#supporting-new-locales-for-adaptive-forms-localization}
 
@@ -58,7 +57,7 @@ Si no hay información de configuración regional, el formulario adaptable se en
 
 Si no existe una biblioteca de cliente para la configuración regional solicitada, se busca una biblioteca de cliente para el código de idioma presente en la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (inglés sudafricano) y la biblioteca de cliente para `en_ZA` no existe, el formulario adaptable utilizará la biblioteca de cliente para `en` (inglés), si existe. Sin embargo, si no existe ninguno, el formulario adaptable utiliza el diccionario para la configuración regional `en`.
 
-## Agregar compatibilidad con localización para configuraciones regionales no admitidas {#add-localization-support-for-non-supported-locales}
+## Agregar compatibilidad con la localización para configuraciones regionales no admitidas {#add-localization-support-for-non-supported-locales}
 
 AEM Forms admite actualmente la localización de contenido de formularios adaptables en las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-taiwanés (zh-TW) y coreano (ko-KR).
 
@@ -72,7 +71,7 @@ Para añadir compatibilidad con una nueva configuración regional en el tiempo d
 1. [Agregar compatibilidad con la configuración regional para el diccionario](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [Reinicio del servidor](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
-### Agregar una configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service-br}
+### Añadir una configuración regional al servicio de localización de guías {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Ir a `https://'[server]:[port]'/system/console/configMgr`.
 1. Haga clic en para editar el componente **Guide Localization Service**.
@@ -80,7 +79,7 @@ Para añadir compatibilidad con una nueva configuración regional en el tiempo d
 
 ![GuideLocalizationService](assets/configservice.png)
 
-### Agregar la biblioteca de cliente XFA para una configuración regional {#add-xfa-client-library-for-a-locale-br}
+### Agregar una biblioteca de cliente XFA para una configuración regional {#add-xfa-client-library-for-a-locale-br}
 
 Cree un nodo de tipo `cq:ClientLibraryFolder` en `etc/<folderHierarchy>`, con la categoría `xfaforms.I18N.<locale>`, y agregue los siguientes archivos a la biblioteca del cliente:
 
@@ -100,7 +99,7 @@ Cree un nodo de tipo `cq:ClientLibraryFolder` en `etc/<folderHierarchy>`, con ca
 
 Agregue los siguientes archivos a la biblioteca de cliente:
 
-* **i18n.** jsdefining  `guidelib.i18n`, que tiene patrones de &quot;calendarSymbols&quot;,  `datePatterns`,  `timePatterns`,  `dateTimeSymbols`,  `numberPatterns`,  `numberSymbols`,  `currencySymbols`, para  `typefaces` las especificaciones XFA descritas en  `<locale>` Especificación del conjunto de configuraciones regionales [ ](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf). También puede ver cómo se define para otras configuraciones regionales compatibles en `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
+* **i18n.** jsdefining  `guidelib.i18n`, que tiene patrones de &quot;calendarSymbols&quot;,  `datePatterns`,  `timePatterns`,  `dateTimeSymbols`,  `numberPatterns`,  `numberSymbols`,  `currencySymbols`, para  `typefaces` las especificaciones XFA descritas en  `<locale>` Especificación de configuración regional [ ](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf). También puede ver cómo se define para otras configuraciones regionales compatibles en `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
 * **LogMessages.** jsdefining  `guidelib.i18n.strings` y  `guidelib.i18n.LogMessages` para el  `<locale>` definido en  `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
 * **js.** texto que contiene lo siguiente:
 
@@ -109,7 +108,7 @@ i18n.js
 LogMessages.js
 ```
 
-### Agregar compatibilidad de configuración regional para el diccionario {#add-locale-support-for-the-dictionary-br}
+### Agregar compatibilidad con la configuración regional para el diccionario {#add-locale-support-for-the-dictionary-br}
 
 Realice este paso solo si el `<locale>` que está agregando no está entre `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
 
@@ -122,11 +121,11 @@ Realice este paso solo si el `<locale>` que está agregando no está entre `en`,
 
 El `<locale>` aparecerá en `https://'[server]:[port]'/libs/cq/i18n/translator.html`.
 
-### Reinicie el servidor {#restart-the-server}
+### Reinicio del servidor {#restart-the-server}
 
 Reinicie el servidor de AEM para que la configuración regional añadida entre en vigor.
 
-## Bibliotecas de muestra para agregar compatibilidad con español {#sample-libraries-for-adding-support-for-spanish}
+## Bibliotecas de muestra para agregar compatibilidad con el español {#sample-libraries-for-adding-support-for-spanish}
 
 Bibliotecas de cliente de muestra para agregar compatibilidad con el español
 
