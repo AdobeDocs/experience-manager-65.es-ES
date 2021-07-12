@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 4%
+source-wordcount: '248'
+ht-degree: 3%
 
 ---
 
-
-# Etiquetado de contenido generado por el usuario {#tagging-user-generated-content}
+# Etiquetado del contenido generado por el usuario {#tagging-user-generated-content}
 
 ## Información general {#overview}
 
@@ -47,7 +46,7 @@ Consulte [Tag Essentials](tag.md) para obtener información sobre el desarrollad
 
 Consulte [Uso de Social Tag Cloud](tagcloud.md) para agregar un componente de Social Tag Cloud a una página para facilitar la búsqueda de UGC publicado con las etiquetas aplicadas.
 
-### Permisos de etiqueta {#tag-permissions}
+### Permisos de etiquetas {#tag-permissions}
 
 Los permisos predeterminados se establecen para que todos los usuarios del entorno de publicación no puedan leer los espacios de nombres de etiquetas.
 
@@ -58,4 +57,3 @@ Consulte [Configuración de permisos de etiquetas](../../help/sites-administerin
 A continuación se muestra cómo aparece en CRXDE cuando un administrador aplica permisos de lectura a `/etc/tag/discussions` para el grupo `Community Engage Members`.
 
 ![tag-permissions](assets/tag-permissions.png)
-
