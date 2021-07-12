@@ -9,16 +9,15 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Fragmentos de contenido
+role: User, Admin
+exl-id: 76f3a684-027d-4822-9eb4-220fc96956e3
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '755'
 ht-degree: 21%
 
 ---
-
 
 # Modelos de fragmento de contenido{#content-fragment-models}
 
@@ -35,7 +34,7 @@ Para habilitar los modelos de fragmento de contenido, debe:
 * Habilitar el uso de modelos de fragmento de contenido en el [Navegador de configuración](/help/sites-administering/configurations.md)
 * Aplique la configuración a la carpeta Assets
 
-### Habilitar los modelos de fragmento de contenido en el Administrador de configuración {#enable-content-fragment-models-in-configuration-manager}
+### Habilitar modelos de fragmento de contenido en el Administrador de configuración {#enable-content-fragment-models-in-configuration-manager}
 
 Para [crear un nuevo modelo de fragmento de contenido](#creating-a-content-fragment-model) primero debe **habilitarlos** mediante el Administrador de configuración:
 
@@ -161,4 +160,3 @@ Para publicar un modelo de fragmento de contenido:
 
    >[!NOTE]
    Si publica un fragmento de contenido para el que el modelo aún no se ha publicado, una lista de selección lo indicará y el modelo se publicará con el fragmento.
-
