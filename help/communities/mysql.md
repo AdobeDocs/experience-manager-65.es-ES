@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 2d33e6ba-cd32-40d1-8983-58f636b21470
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1093'
 ht-degree: 2%
 
 ---
-
 
 # Configuración MySQL para características de habilitación {#mysql-configuration-for-enablement-features}
 
@@ -139,7 +138,7 @@ Asegúrese de instalar el esquema antes de instalar los datos.
 >Si se cambia el nombre de la base de datos, asegúrese de especificarlo correctamente en:
 >
 >* [Configuración JDBC](#configure-jdbc-connections)
->* [Configuración de SCORM](#configure-scorm)
+* [Configuración de SCORM](#configure-scorm)
 
 
 #### Paso 1: abrir archivo SQL {#step-open-sql-file}
@@ -230,7 +229,7 @@ Cuando MySQL se ejecuta en un servidor diferente de AEM, el nombre de host del s
       Solo para uso interno: Es para un usuario de servicio especial utilizado por AEM Communities para comunicarse con el motor de escorm.
 * Seleccione **[!UICONTROL Guardar]**
 
-### Filtro CSRF de Granite de Adobe {#adobe-granite-csrf-filter}
+### Filtro Adobe Granite CSRF {#adobe-granite-csrf-filter}
 
 Para garantizar que los cursos de habilitación funcionen correctamente en todos los navegadores, es necesario agregar Mozilla como agente de usuario que no esté seleccionado por el filtro CSRF.
 
@@ -245,4 +244,3 @@ Para garantizar que los cursos de habilitación funcionen correctamente en todos
 * Seleccione el icono `[+]` para agregar un agente de usuario seguro.
 * Escriba `Mozilla/*`.
 * Seleccione **[!UICONTROL Guardar]**.
-
