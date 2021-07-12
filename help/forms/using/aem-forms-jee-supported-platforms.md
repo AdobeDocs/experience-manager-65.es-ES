@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 3d6b0c696b625869bc4ed682a310399b3b6301fb
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '3323'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Plataformas compatibles {#supported-platforms}
 
-### Niveles de soporte {#support-levels}
+### Niveles de asistencia {#support-levels}
 
 AEM Forms en el servidor JEE se puede configurar utilizando cualquier combinación de sistemas operativos compatibles, servidores de aplicaciones, bases de datos, controladores de base de datos, JDK, servidores LDAP y servidores de correo electrónico.
 
@@ -130,7 +130,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
 >* AEM Forms en JEE solo admite JVM de 64 bits en entornos de producción.
 
 
-### Bases de datos y persistencia de CRX {#databases-and-crx-persistence}
+### Bases de datos y persistencia CRX {#databases-and-crx-persistence}
 
 <table>
  <tbody>
@@ -327,7 +327,7 @@ Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Si
  </tbody>
 </table>
 
-### Excepciones a plataformas de servidor admitidas {#exceptions-to-supported-server-platforms}
+### Excepciones a plataformas de servidor compatibles {#exceptions-to-supported-server-platforms}
 
 Tenga en cuenta las siguientes excepciones al elegir una plataforma para configurar AEM Forms en el servidor JEE.
 
@@ -425,7 +425,7 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
 * Cordova Android 6.0.0
 * Cordova Windows 4.4.3
 
-### Soporte de software para PDF Generator {#software-support-for-pdf-generator}
+### Compatibilidad con software para PDF Generator {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
@@ -483,7 +483,7 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
 
 
 
-### Excepciones al soporte de accesibilidad {#exceptions-to-accessibility-support}
+### Excepciones a la compatibilidad con la accesibilidad {#exceptions-to-accessibility-support}
 
 Los siguientes subsistemas de AEM Forms no son [508](https://www.section508.gov/) compatibles:
 
@@ -688,7 +688,7 @@ Para obtener más información, consulte:
 
 
 
-### Aplicación de AEM Forms {#aem-forms-workspace-app}
+### aplicación AEM Forms {#aem-forms-workspace-app}
 
 #### Compatibilidad con dispositivos móviles {#mobile-device-support}
 
@@ -719,7 +719,7 @@ La aplicación AEM Forms está disponible en las plataformas siguientes:
 >
 >Adobe [dejará de actualizar y distribuir el Flash Player a finales de 2020](https://theblog.adobe.com/adobe-flash-update/).
 
-### Extensión de Adobe Document Security para Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
+### Adobe Document Security Extension para Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
 Haga clic [aquí](https://www.adobe.com/es/products/livecycle/rightsmanagement/extension/downloads.html) para ver los requisitos del sistema para la extensión de seguridad de documentos de Adobe para Microsoft® Office.
 
