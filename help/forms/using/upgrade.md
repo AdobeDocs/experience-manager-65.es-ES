@@ -9,15 +9,14 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '232'
 ht-degree: 5%
 
 ---
-
 
 # Actualizar a AEM 6.5 Forms{#upgrade-to-aem-forms}
 
