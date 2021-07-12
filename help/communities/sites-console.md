@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '3293'
+source-wordcount: '3292'
 ht-degree: 4%
 
 ---
 
 
-# Consola Sitios de Communities {#communities-sites-console}
+# Consola Sitios de comunidades {#communities-sites-console}
 
 La consola Sitios de Communities proporciona acceso a:
 
@@ -78,7 +77,7 @@ El proceso se inicia seleccionando el botón `Create` situado en la parte superi
 
 El proceso de creación es una serie de pasos presentados como paneles que contienen un conjunto de funciones que se deben configurar (presentados como subpaneles). Es posible pasar al paso **Siguiente** o **Atrás** al paso anterior antes de comprometer el sitio en el paso final.
 
-### Paso 1 : Plantilla de sitio {#step-site-template}
+### Paso 1 : Plantilla del sitio {#step-site-template}
 
 ![newsitetemplate](assets/newsitetemplate.png)
 
@@ -131,13 +130,13 @@ El panel Diseño contiene 2 subpaneles para seleccionar el tema y el banner de m
 
 ![sitetheme](assets/sitetheme.png)
 
-El marco utiliza [Twitter Bootstrap](https://twitterbootstrap.org/) para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar uno de los muchos temas del Bootstrap precargados para darle estilo a la plantilla del sitio de la comunidad seleccionada, o se puede cargar un tema del Bootstrap.
+El marco de trabajo utiliza [Twitter Bootstrap](https://twitterbootstrap.org/) para llevar un diseño flexible y adaptable al sitio. Se puede seleccionar uno de los muchos temas del Bootstrap precargados para darle estilo a la plantilla del sitio de la comunidad seleccionada, o se puede cargar un tema del Bootstrap.
 
 Cuando se selecciona, el tema se superpone con una marca de verificación azul opaca.
 
 Una vez publicado el sitio de la comunidad, es posible [editar las propiedades](#modifying-site-properties) y seleccionar un tema diferente.
 
-#### MARCA DEL SITIO DE LA COMUNIDAD {#community-site-branding}
+#### MARCA DE SITIOS DE LA COMUNIDAD {#community-site-branding}
 
 ![promoción de la marca del sitio](assets/site-branding.png)
 
@@ -211,20 +210,20 @@ El valor predeterminado no está seleccionado.
 * **Permitir inicios de sesión de redes sociales: Facebook**
 
    Si está marcada esta opción, permita que los visitantes del sitio inicien sesión con sus credenciales de cuenta de Facebook. La [configuración de nube de Facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) seleccionada debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez que se haya creado el sitio de la comunidad.
-Si está desactivada, no se muestra ningún inicio de sesión en Facebook.
+Si está desactivada, no se muestra ningún inicio de sesión de Facebook.
 Deje sin marcar un *privado* sitio de la comunidad. El valor predeterminado no está seleccionado.
 
 * **Permitir inicios de sesión de redes sociales: Twitter**
 
    Si está marcada esta opción, permita que los visitantes del sitio inicien sesión con sus credenciales de cuenta de Twitter. La [configuración de nube de Twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) seleccionada debe configurarse para agregar usuarios al grupo de miembros del sitio de la comunidad una vez que se haya creado el sitio de la comunidad.
-Si está desactivada, no se muestra ningún inicio de sesión en Twitter.
+Si está desactivada, no se muestra ningún inicio de sesión de Twitter.
 Deje sin marcar un *privado* sitio de la comunidad. El valor predeterminado no está seleccionado.
 
 >[!NOTE]
 >
 >**Permitir inicios de sesión sociales**
 >
->Aunque pueden existir configuraciones de muestra de Facebook y Twitter que se pueden seleccionar, para un [entorno de producción](/help/sites-administering/production-ready.md), es necesario crear aplicaciones personalizadas de Facebook y Twitter. Consulte [Inicio de sesión social con Facebook y Twitter](/help/communities/social-login.md).
+>Aunque pueden existir configuraciones de Facebook y Twitter de ejemplo que se pueden seleccionar, para un [entorno de producción](/help/sites-administering/production-ready.md), es necesario crear aplicaciones de Facebook y Twitter personalizadas. Consulte [Inicio de sesión social con Facebook y Twitter](/help/communities/social-login.md).
 
 #### ETIQUETADO {#tagging}
 
@@ -236,7 +235,7 @@ Además, la selección de áreas de nombres de etiquetas para el sitio de la com
 
 * cuadro de búsqueda de texto : Comience a escribir para identificar las etiquetas permitidas para su uso en el sitio.
 
-#### ROLES {#roles}
+#### FUNCIONES {#roles}
 
 ![Funciones de la comunidad](assets/site-admin-2.png)
 
@@ -523,7 +522,7 @@ Tenga en cuenta que UGC no se incluye en el paquete del sitio.
 
 Para eliminar el sitio de la comunidad, seleccione el icono Eliminar sitio que aparece al pasar el ratón por encima del sitio en la Consola de sitio de Communities. Esta acción elimina todos los elementos asociados con el sitio, como UGC, grupos de usuarios, activos y registros de base de datos.
 
-## Grupos de usuarios de la comunidad creados {#created-community-user-groups}
+## Grupos de usuarios de la comunidad creada {#created-community-user-groups}
 
 Una vez publicado el nuevo sitio de la comunidad, se crean nuevos grupos de miembros (los grupos de usuarios se crean en el entorno de publicación) que tienen los permisos adecuados establecidos para diversas funciones administrativas y de miembro.
 
