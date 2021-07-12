@@ -4,15 +4,14 @@ seo-title: Instalación de Workbench
 description: Instale Workbench.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
-
 
 # Instalar Workbench {#install-workbench}
 
@@ -54,7 +53,7 @@ Los recursos de esta tabla pueden ayudarle a obtener más información y a empez
 >
 >Flex Workspace está en desuso para AEM Forms. Está disponible para la versión de AEM Forms.
 
-## Antes de instalar {#before-you-install}
+## Antes de la instalación {#before-you-install}
 
 ### Información general sobre la instalación de Workbench {#workbench-installation-overview}
 
@@ -101,7 +100,7 @@ WorkbenchSe recomiendan los siguientes requisitos como mínimo: Espacio en disco
 
 Consulte la lista completa de plataformas admitidas para Workbench en [Plataformas admitidas por AEM Forms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
-## Consideraciones de instalación de Designer {#designer-installation-considerations}
+## Consideraciones sobre la instalación de Designer {#designer-installation-considerations}
 
 De forma predeterminada, la instalación de Workbench incluye una versión correspondiente de Designer en inglés únicamente. Si la aplicación de instalación de Workbench detecta una versión existente de Designer en el equipo, la instalación puede finalizar y se le pedirá que elimine la versión actual de Designer antes de poder continuar.
 La tabla siguiente contiene una lista completa de los posibles escenarios de instalación de Designer que puede encontrar, así como las acciones que debe realizar al instalar Workbench.
@@ -274,4 +273,3 @@ Antes de que el administrador de la impresora de red utilice el Editor XDC, reub
 **Para obtener la ayuda** del Editor XDC:
 1. Vaya al sitio web de documentación de AEM Forms.
 1. Haga clic en la pestaña **Develop** y vaya a Creación de perfiles de dispositivo mediante el Editor XDC. Descargue el archivo xdc_editor_help_web.zip e instale los archivos de ayuda siguiendo las instrucciones proporcionadas en el archivo Léame.
-
