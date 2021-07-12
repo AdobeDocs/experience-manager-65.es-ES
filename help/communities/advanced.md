@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -155,9 +155,9 @@ En lugar de asociar puntos con una imagen de distintivo, solo es necesario ident
  </tbody>
 </table>
 
-## Reglas incluidas y distintivo {#included-rules-and-badge}
+## Reglas y distintivo incluidos {#included-rules-and-badge}
 
-### Distintivo {#included-badge} incluido
+### Distintivo incluido {#included-badge}
 
 Esta versión beta incluye un distintivo de experto basado en premios:
 
