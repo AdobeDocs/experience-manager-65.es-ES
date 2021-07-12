@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 4237085a-d70d-41de-975d-153f58336daa
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 1%
+source-wordcount: '2183'
+ht-degree: 0%
 
 ---
-
 
 # Administración de usuarios y grupos de usuarios {#managing-users-and-user-groups}
 
@@ -73,7 +72,7 @@ Las [consolas Miembros y grupos de Communities](members.md) tienen el único pro
 
 Para administrar usuarios y grupos de usuarios registrados en el entorno de creación, utilice la [Consola de seguridad](../../help/sites-administering/security.md)
 
-### Funciones de grupo de creación {#author-group-roles}
+### Funciones del grupo de creación {#author-group-roles}
 
 | Si es miembro del grupo... | Función principal |
 |---|---|
@@ -84,7 +83,7 @@ Para administrar usuarios y grupos de usuarios registrados en el entorno de crea
 | Comunidad &lt;*nombre del sitio* > Administradores de habilitación de sitios | El grupo Administradores de habilitación de sitios de la comunidad está formado por usuarios asignados para administrar la habilitación de [recursos](resources.md) de un sitio de la comunidad. |
 | Ninguna | Es posible que un visitante anónimo del sitio no acceda al entorno de creación. |
 
-### Administradores de sistemas {#system-administrators}
+### Administradores del sistema {#system-administrators}
 
 Los miembros del grupo de administradores son administradores del sistema que pueden realizar la configuración inicial de una instalación de AEM para los entornos de autor y publicación.
 
@@ -106,13 +105,13 @@ En el entorno de publicación, según la [configuración](sites-console.md#user-
 
 * Cuando el sitio de la comunidad es público (abierto):
    * Por registro propio
-   * Por inicio de sesión social con Facebook y Twitter
+   * Mediante inicio de sesión social con Facebook y Twitter
 
 >[!NOTE]
 >
 >Si el visitante de un sitio se registra como miembro de un sitio de comunidad abierto, automáticamente se convierte en miembro de otros sitios de comunidad abiertos en el mismo entorno de publicación.
 
-### Publicar roles de grupo {#publish-group-roles}
+### Publicar funciones de grupo {#publish-group-roles}
 
 | Si es miembro del grupo... | Función principal |
 |---|---|
@@ -197,7 +196,7 @@ Hay cuatro consolas independientes disponibles solo en el entorno de creación:
 | administre | usuarios en author | grupos de usuarios en author | miembros al publicar | grupos de miembros al publicar |
 | requirements | permiso de administrador | permiso de administrador | permiso de administrador, servicio de túnel, sincronización de usuarios para la granja de publicaciones | permiso de administrador, servicio de túnel, sincronización de usuarios para la granja de publicaciones |
 
-### Función del Administrador de habilitación de la comunidad {#community-enablement-manager-role}
+### Función Administrador de habilitación de la comunidad {#community-enablement-manager-role}
 
 La capacidad para que un visitante del sitio se registre de forma automática generalmente no está permitida para una [comunidad de habilitación](overview.md#enablement-community), ya que hay costos asociados a cada miembro. Los recursos y aprendices de habilitación son administrados por un usuario asignado a la [función](#author-group-roles) de `enablement manager` [durante la creación del sitio](sites-console.md#enablement) en el autor (añadida como miembro del grupo `Community <site-name> Siteenablementmanagers`). `enablement manager` también es responsable de [asignar recursos de aprendizaje](resources.md) a los miembros de la comunidad del autor.
 
@@ -262,7 +261,7 @@ Esto hace que los usuarios se asignen automáticamente al grupo de miembros del 
 
 * El valor `User auto membership` debe ser la propiedad `rep:authorizableId`, no el `givenName` (nombre para mostrar) del perfil.
 
-## Sincronización de usuarios entre instancias AEM {#synchronizing-users-among-aem-instances}
+## Sincronización de usuarios entre instancias de AEM {#synchronizing-users-among-aem-instances}
 
 Cuando utilice un [conjunto de servidores de publicación](topologies.md), asegúrese de que los usuarios tengan la misma ruta en cada instancia de publicación importando primero a los usuarios en una instancia y [habilitando la sincronización de usuarios](sync.md) para que Sling distribuya los usuarios a las otras instancias de publicación.
 
@@ -270,7 +269,7 @@ Si importa grupos de usuarios, para asegurarse de que los grupos de usuarios ten
 
 Aunque la sincronización de grupos de usuarios mediante la sincronización de usuarios se incluirá en una versión futura, actualmente solo la *pertenencia* de un grupo de usuarios se sincronizará cuando se ejecute la sincronización de usuarios.
 
-## Acerca de los grupos de la comunidad {#about-community-groups}
+## Acerca de los grupos de comunidades {#about-community-groups}
 
 Al discutir grupos, hay dos temas diferentes:
 
