@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 7%
 
 ---
-
 
 # Consola Informes {#reports-console}
 
@@ -183,7 +182,7 @@ Seleccione **[!UICONTROL Generate]** para crear el informe.
 
 Si no aparece ningún sitio de la comunidad, asegúrese de que Adobe Analytics esté habilitado para un sitio. Si elige informes sobre asignaciones, asegúrese de que la función de asignaciones esté en la estructura del sitio de la comunidad.
 
-### Los informes no se muestran en la instancia {#reports-do-not-show-in-aem-author-instance} de AEM Author
+### Los informes no se muestran en la instancia de autor de AEM {#reports-do-not-show-in-aem-author-instance}
 
 Si los informes no aparecen en la instancia de AEM Author, compruebe las personalizaciones, como la asignación de URL en la instancia de publicación. Si la asignación de URL solo se realiza en la instancia de publicación de AEM del sitio de comunidades, asegúrese de que lo mismo se haya configurado en la instancia de autor de AEM en la configuración **Site Trend Report Social Component Factory** .
 
