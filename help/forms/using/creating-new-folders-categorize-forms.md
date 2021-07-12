@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
-
 
 # Crear nuevas carpetas para aplicar categorías a los formularios {#create-new-folders-to-categorize-forms}
 
@@ -57,4 +56,3 @@ Puede crear una carpeta en AEM Forms de una de las siguientes maneras:
 1. Haga clic en el icono editar ![aem6forms_edit](assets/aem6forms_edit.png) de la barra de herramientas.
 1. Introduzca el nuevo título. El campo de texto se rellena previamente con el valor actual del título de la carpeta. Puede cambiarlo a un nuevo valor.
 1. Haga clic en **[!UICONTROL Enviar].**
-
