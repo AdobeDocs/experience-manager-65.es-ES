@@ -7,17 +7,16 @@ uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
-feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Comunicación interactiva
+exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
+source-git-commit: b6774acc4ec32c87a5ad5f5b2ea885e1e1aa867e
 workflow-type: tm+mt
-source-wordcount: '2062'
+source-wordcount: '2041'
 ht-degree: 0%
 
 ---
 
-
-# Prepare y envíe comunicación interactiva mediante la interfaz de usuario del agente {#prepare-and-send-interactive-communication-using-the-agent-ui}
+# Preparación y envío de comunicación interactiva mediante la interfaz de usuario del agente {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 La interfaz de usuario del agente permite a los agentes preparar y enviar la comunicación interactiva al proceso posterior. El agente realiza las modificaciones necesarias según lo permitido y envía la comunicación interactiva a un proceso posterior, como correo electrónico o impresión.
 
@@ -108,7 +107,7 @@ En la pestaña Contenido , administre el contenido, como los fragmentos del docu
 
    Si las vistas previas le parecen satisfactorias, pulse **[!UICONTROL Enviar]** para enviar la comunicación interactiva a un proceso posterior. O para realizar cambios, salga de la vista previa para volver a los cambios realizados.
 
-## Formato de texto {#formattingtext}
+## Texto de formato {#formattingtext}
 
 Al editar un fragmento de texto en la interfaz de usuario del agente, la barra de herramientas cambia según el tipo de ediciones que elija realizar: Fuente, párrafo o lista:
 
@@ -138,7 +137,7 @@ Para resaltar o resaltar partes de texto en un fragmento editable, seleccione el
 
 La interfaz de usuario del agente ha incorporado la compatibilidad con 210 caracteres especiales. El administrador puede [añadir compatibilidad para más caracteres especiales personalizados mediante personalización](/help/forms/using/custom-special-characters.md).
 
-#### Entrega de archivos adjuntos {#attachmentdelivery}
+#### Entrega de datos adjuntos {#attachmentdelivery}
 
 * Cuando la comunicación interactiva se procesa con API del lado del servidor como PDF interactivo o no interactivo, el PDF procesado contiene archivos adjuntos como archivos adjuntos PDF.
 * Cuando se carga un proceso de publicación asociado a una comunicación interactiva como parte de Enviar mediante la interfaz de usuario del agente, los archivos adjuntos se pasan como parámetro List&lt;com.adobe.idp.Document> inAttachmentDocs .
@@ -163,7 +162,7 @@ La interfaz de usuario del agente ha incorporado la compatibilidad con 210 carac
 * Selección (icono de ojo): Incluye\excluye el fragmento de documento de la comunicación interactiva.
 * Valores no rellenados (información): Indica el número de variables no rellenadas en el fragmento de documento.
 
-### Lista de fragmentos de documento {#list-document-fragments}
+### Enumerar fragmentos de documento {#list-document-fragments}
 
 ![listoptions](assets/listoptions.png)
 
@@ -204,7 +203,7 @@ Realice los siguientes pasos para guardar una comunicación interactiva como bor
 
 Una vez guardada la comunicación interactiva como borrador, pulse **[!UICONTROL Guardar cambios]** para guardar cualquier cambio adicional en el borrador.
 
-### Recupere el borrador de una comunicación interactiva {#retrieve-draft}
+### Recuperar el borrador de una comunicación interactiva {#retrieve-draft}
 
 Después de guardar una comunicación interactiva como borrador, puede recuperarla para continuar trabajando en ella. Recupere la comunicación interactiva mediante:
 
@@ -212,11 +211,7 @@ Después de guardar una comunicación interactiva como borrador, puede recuperar
 
 [] borrador hace referencia al identificador único de la versión borrador que se genera después de guardar una comunicación interactiva como borrador.
 
->[!NOTE]
->
->Si realiza cambios en la Comunicación interactiva después de guardarla como borrador, la versión de borrador no se abre.
-
-### Ejemplo de implementación de crDocumentInstance SPI {#sample-ccrDocumentInstance-spi}
+### Ejemplo de implementación de ccrDocumentInstance SPI {#sample-ccrDocumentInstance-spi}
 
 Implemente el SPI `ccrDocumentInstance` para guardar una comunicación interactiva como borrador. A continuación se muestra una implementación de muestra del SPI `ccrDocumentInstance`.
 
