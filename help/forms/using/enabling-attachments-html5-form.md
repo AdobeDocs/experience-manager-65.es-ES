@@ -9,28 +9,32 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
+source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 0%
+source-wordcount: '353'
+ht-degree: 1%
 
 ---
-
 
 # Activación de archivos adjuntos en un formulario HTML5 {#enabling-attachments-for-an-html-form}
 
 Puede cargar, previsualizar y enviar archivos adjuntos con formularios HTML5. De forma predeterminada, la compatibilidad con archivos adjuntos está deshabilitada. Para habilitar el soporte de datos adjuntos:
 
-1. Cree un [perfil personalizado](/help/forms/using/custom-profile.md) con la propiedad de cadena de selección múltiple `mfAttachmentOptions`.
-1. En el perfil personalizado, especifique las propiedades `fileSizeLimit`, `multiSelect` y `buttonTex`t para configurar las opciones del widget de archivos adjuntos. Si es necesario, también puede especificar más propiedades personalizadas.
+1. Cree un [perfil personalizado](/help/forms/using/custom-profile.md) con una propiedad de cadena de selección múltiple `mfAttachmentOptions`. Cada cadena de la propiedad `mfAttachmentOptions` debe tener un formato `property=value` para configurar las opciones del widget de archivos adjuntos. Los `property` y `value` pueden tener cualquiera de los siguientes valores:
 
-1. En el perfil personalizado, utilice las siguientes configuraciones:
+   | Propiedad | Value |
+   |--- |---|
+   | multiSelect | true o false (true de forma predeterminada) |
+   | fileSizeLimit | Número en MB (2 MBs de forma predeterminada). Por ejemplo, 5. |
+   | buttonText | Texto del botón de la ventana emergente (&quot;Adjuntar&quot; de forma predeterminada) |
+   | accept | lista separada por comas de los tipos de archivo que se van a aceptar (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; de forma predeterminada) |
 
-   * **multiSelect** -> true o false (true de forma predeterminada)
-   * **fileSizeLimit** -> value_in_mb (digamos 5) (2 MB de forma predeterminada)
-   * **buttonText**  -> Texto del botón de la ventana emergente (&quot;Adjuntar&quot; de forma predeterminada)
-   * **aceptar** -> tipos de archivo que aceptar (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; de forma predeterminada)
+   Por ejemplo:
+
+   ![configurar opciones](assets/mfAttachmentOptions.png)
+
+   Si es necesario, también puede especificar más opciones personalizadas para la propiedad `mfAttachmentOptions` .
 
    >[!NOTE]
    >
