@@ -8,9 +8,9 @@ discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: Configuración
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ ht-degree: 0%
 
 Si administra Dynamic Media, son de interés los temas siguientes:
 
-* [Configuración del modo](config-dms7.md)  Dynamic Media-Scene7 : utilice esta configuración si es un cliente nuevo de Dynamic Media.
-* [Configuración del modo](config-dynamic.md)  híbrido de Dynamic Media: utilice esta configuración si ya es Experience Manager de actualización de clientes de Dynamic Media.
-* [Administración de ajustes preestablecidos de imagen](managing-image-presets.md)
-* [Administración de ajustes preestablecidos de visor](managing-viewer-presets.md)
-* [Solución de problemas de Dynamic Media: modo Scene7](troubleshoot-dms7.md)
+* [Configurar Dynamic Media: modo Scene7](config-dms7.md) : utilice esta configuración si es un cliente nuevo de Dynamic Media.
+* [Configurar Dynamic Media: modo híbrido](config-dynamic.md) : utilice esta configuración si ya es Experience Manager de actualización de clientes de Dynamic Media.
+* [Administrar ajustes preestablecidos de imagen](managing-image-presets.md)
+* [Administrar ajustes preestablecidos de visor](managing-viewer-presets.md)
+* [Resolución de problemas de Dynamic Media: modo Scene7](troubleshoot-dms7.md)
 
 Consulte también los siguientes temas:
 
