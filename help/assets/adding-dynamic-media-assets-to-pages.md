@@ -11,14 +11,14 @@ docset: aem65
 role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Componentes,Publicación
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '3252'
-ht-degree: 22%
+source-wordcount: '3260'
+ht-degree: 21%
 
 ---
 
-# Adición de recursos de Dynamic Media a las páginas{#adding-dynamic-media-assets-to-pages}
+# Agregar recursos de Dynamic Media a páginas{#adding-dynamic-media-assets-to-pages}
 
 Para añadir la funcionalidad Dynamic Media a los recursos que utilice en sus sitios web, puede agregar directamente en la página el componente **Dynamic Media**, **Interactive Media**, **Panoramic Media** o **Video 360 Media**. Para agregar componentes, entre en el modo Diseño y active los componentes de Dynamic Media. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes de Dynamic Media son inteligentes: saben si va a añadir una imagen o un vídeo y las opciones de configuración disponibles cambian en consecuencia.
 
@@ -26,23 +26,25 @@ Los recursos de Dynamic Media se agregan directamente a la página si utiliza Ad
 
 >[!NOTE]
 >
->Asegúrese de publicar los recursos antes de agregarlos a las páginas en el Experience Manager. Consulte [Publicación de recursos de Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md).
+>Asegúrese de publicar los recursos antes de agregarlos a las páginas en el Experience Manager. Consulte [Publicar recursos de Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md).
 
-## Adición de un componente de Dynamic Media a una página {#adding-a-dynamic-media-component-to-a-page}
+## Añadir un componente de Dynamic Media a una página {#adding-a-dynamic-media-component-to-a-page}
 
 Añadir un componente de medios 3D, Dynamic Media, Medios interactivos, Medios panorámicos, Recorte inteligente de vídeo o Vídeo 360 a una página es lo mismo que añadir un componente a cualquier página. Los componentes de Dynamic Media se describen en las secciones siguientes.
 
+**Para añadir un componente de Dynamic Media a una página:**
+
 1. En el Experience Manager, abra la página a la que desee añadir el componente Dynamic Media.
-1. En el panel del lado izquierdo de la página (si es necesario, cambie la visualización del panel lateral), haga clic en el icono **[!UICONTROL Componentes]**.
+1. En el panel del lado izquierdo de la página (si es necesario, cambie la visualización del panel lateral), seleccione el icono **[!UICONTROL Componentes]**.
 1. En el encabezado **[!UICONTROL Componentes]**, en la lista desplegable, seleccione **[!UICONTROL Dynamic Media]**.
 
-   Si no hay ninguna lista de componentes de Dynamic Media disponible, debe activar los componentes de Dynamic Media que desee utilizar. Consulte [Habilitación de componentes de Dynamic Media](#enabling-dynamic-media-components).
+   Si no hay ninguna lista de componentes de Dynamic Media disponible, debe activar los componentes de Dynamic Media que desee utilizar. Consulte [Habilitar los componentes de Dynamic Media](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](/help/assets/assets/6_5_360video_wcmcomponent.png)
 
 1. Arrastre un componente **[!UICONTROL Dynamic Media]** que desee utilizar y suéltelo en la ubicación deseada de la página.
 
-1. Pase el puntero del ratón directamente sobre el componente. Cuando el componente esté rodeado por un cuadro azul, pulse una vez para mostrar la barra de herramientas del componente. Pulse el icono **[!UICONTROL Configuration (wFrench)]**.
+1. Pase el puntero del ratón directamente sobre el componente. Cuando el componente esté rodeado por un cuadro azul, seleccione una vez para mostrar la barra de herramientas del componente. Seleccione el icono **[!UICONTROL Configuración (llave inglesa)]**.
 
    ![6_5_360video_wcmcomponentconfigure](/help/assets/assets/6_5_360video_wcmcomponentconfigure.png)
 
@@ -54,34 +56,36 @@ Añadir un componente de medios 3D, Dynamic Media, Medios interactivos, Medios p
 
    Componente de medios de Dynamic Media Video 360.
 
-1. Cuando haya terminado, en la esquina superior derecha del cuadro de diálogo, pulse la marca de verificación para guardar los cambios.
+1. Cuando haya terminado, en la esquina superior derecha del cuadro de diálogo, seleccione la marca de verificación para guardar los cambios.
 
-### Habilitación de componentes de Dynamic Media {#enabling-dynamic-media-components}
+### Habilitar componentes de Dynamic Media {#enabling-dynamic-media-components}
 
 Si no hay componentes de Dynamic Media disponibles para agregarlos a una página, es probable que primero deba habilitar los componentes que desee utilizar.
 
+**Para habilitar componentes de Dynamic Media:**
+
 1. En el Experience Manager, abra la página a la que desee añadir el componente Dynamic Media.
-1. En el lado izquierdo de la barra de herramientas, cerca de la parte superior de la página, pulse el icono Información de página y, a continuación, pulse **[!UICONTROL Editar plantilla]** en la lista desplegable.
+1. En el lado izquierdo de la barra de herramientas, cerca de la parte superior de la página, seleccione el icono Información de página y, a continuación, seleccione **[!UICONTROL Editar plantilla]** en la lista desplegable.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
 
-1. En el lado derecho de la barra de herramientas, cerca de la parte superior de la página, en la lista desplegable, pulse **[!UICONTROL Estructura]**.
+1. En el lado derecho de la barra de herramientas, cerca de la parte superior de la página, en la lista desplegable, seleccione **[!UICONTROL Estructura]**.
 
    ![Política](/help/assets/assets-dm/structure-mode.png)
 
-1. Cerca de la parte inferior de la página, pulse **[!UICONTROL Contenedor de diseño]** para abrir su barra de herramientas y, a continuación, pulse el icono Política .
+1. Cerca de la parte inferior de la página, seleccione **[!UICONTROL Contenedor de diseño]** para abrir su barra de herramientas y, a continuación, seleccione el icono Política .
 1. En la página **[!UICONTROL Contenedor de diseño]**, en el encabezado **[!UICONTROL Propiedades]**, asegúrese de que la pestaña **[!UICONTROL Componentes permitidos]** está seleccionada.
 
    ![Componentes permitidos](/help/assets/assets-dm/allowed-components.png)
 
 1. Desplácese hasta que vea **[!UICONTROL Dynamic Media]**.
-1. Pulse el icono > a la izquierda de **[!UICONTROL Dynamic Media]** para poder expandir la lista y, a continuación, seleccione los componentes de Dynamic Media que desea habilitar.
+1. Seleccione el icono > a la izquierda de **[!UICONTROL Dynamic Media]** para poder expandir la lista y, a continuación, seleccione los componentes de Dynamic Media que desea habilitar.
 
    ![Lista de componentes de Dynamic Media](/help/assets/assets-dm/dm-components-select.png)
 
-1. Cerca de la esquina superior derecha de la página **[!UICONTROL Contenedor de diseño]**, pulse el icono Listo (marca de verificación).
+1. Cerca de la esquina superior derecha de la página **[!UICONTROL Contenedor de diseño]**, seleccione el icono Listo (marca de verificación).
 
-1. En el lado derecho de la barra de herramientas, cerca de la parte superior de la página, en la lista desplegable, pulse **[!UICONTROL Contenido inicial]** y, a continuación, [añada un componente de Dynamic Media a una página](#adding-a-dynamic-media-component-to-a-page) como de costumbre.
+1. En el lado derecho de la barra de herramientas cerca de la parte superior de la página, en la lista desplegable, seleccione **[!UICONTROL Contenido inicial]** y, a continuación, [añada un componente de Dynamic Media a una página](#adding-a-dynamic-media-component-to-a-page) como de costumbre.
 
 ## Localización de componentes de Dynamic Media {#localizing-dynamic-media-components}
 
@@ -91,7 +95,7 @@ Puede localizar los componentes de Dynamic Media de una de las dos maneras sigui
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
-* En el selector de sitio, seleccione la página o el grupo de páginas que desee. Pulse **[!UICONTROL Properties]** y seleccione la pestaña **[!UICONTROL Advanced]**. Seleccione el idioma que desee para la localización.
+* En el selector de sitio, seleccione la página o el grupo de páginas que desee. Seleccione **[!UICONTROL Properties]** y seleccione la pestaña **[!UICONTROL Advanced]**. Seleccione el idioma que desee para la localización.
 
    >[!NOTE]
    >
@@ -99,7 +103,7 @@ Puede localizar los componentes de Dynamic Media de una de las dos maneras sigui
 
 ## Componentes de Dynamic Media {#dynamic-media-components}
 
-Los componentes de Dynamic Media están disponibles cuando toca el icono **[!UICONTROL Componentes]** y luego filtra en **[!UICONTROL Dynamic Media]**.
+Los componentes de Dynamic Media están disponibles cuando selecciona el icono **[!UICONTROL Componentes]** y luego filtra en **[!UICONTROL Dynamic Media]**.
 
 Los componentes de Dynamic Media disponibles son los siguientes:
 
@@ -116,7 +120,7 @@ Los componentes de Dynamic Media disponibles son los siguientes:
 
 ### Componente de Dynamic Media {#dynamic-media-component}
 
-El componente Dynamic Media es inteligente. Según si agrega una imagen o un vídeo, tiene varias opciones. El componente admite ajustes preestablecidos de imagen, visores basados en imágenes, como conjuntos de imágenes, conjuntos de giros, conjuntos de medios mixtos y vídeo. Además, el visor es interactivo: el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visores son visores HTML5.
+El componente Dynamic Media es inteligente. Ya sea que añada una imagen o un vídeo, tiene varias opciones. El componente admite ajustes preestablecidos de imagen, visores basados en imágenes, como conjuntos de imágenes, conjuntos de giros, conjuntos de medios mixtos y vídeo. Además, el visor es interactivo: el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visores son visores HTML5.
 
 >[!NOTE]
 >
@@ -142,7 +146,7 @@ El componente de Dynamic Media permite añadir imágenes dinámicas, como conjun
 
 También puede configurar el ajuste preestablecido de visor, el ajuste preestablecido de imagen o el formato de imagen directamente en el componente. Para que una imagen sea interactiva, puede establecer puntos de interrupción o aplicar un ajuste preestablecido de imagen interactiva.
 
-Para editar la siguiente configuración de Dynamic Media, pulse el icono **[!UICONTROL Editar]** en el componente y, a continuación, **[!UICONTROL Configuración de Dynamic Media]**.
+Edite la siguiente Configuración de Dynamic Media seleccionando el icono **[!UICONTROL Editar]** en el componente y luego **[!UICONTROL Configuración de Dynamic Media]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
@@ -150,7 +154,7 @@ Para editar la siguiente configuración de Dynamic Media, pulse el icono **[!UIC
 >
 >De forma predeterminada, el componente de imagen Dynamic Media es adaptable. Si desea que tenga un tamaño fijo, configúrelo en el componente de la pestaña **[!UICONTROL Avanzado]** con la **[!UICONTROL anchura]** y la **[!UICONTROL altura]** apropiadas.
 
-* **[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visualizador que está buscando no está visible, debe hacerlo visible. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). No se puede seleccionar un ajuste preestablecido de visualizador si se utiliza un ajuste preestablecido de imagen y, a la inversa,
+* **[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visualizador que está buscando no está visible, debe hacerlo visible. Consulte [Administrar ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). No se puede seleccionar un ajuste preestablecido de visualizador si se utiliza un ajuste preestablecido de imagen y, a la inversa,
 
    Esta opción es la única disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos. Los ajustes preestablecidos de visor que se muestran son inteligentes; solo aparecen los ajustes preestablecidos de visor relevantes.
 
@@ -168,7 +172,7 @@ Para editar la siguiente configuración de Dynamic Media, pulse el icono **[!UIC
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-   Puede editar la siguiente Configuración avanzada tocando **[!UICONTROL Editar]** en el componente.
+   Puede editar la siguiente Configuración avanzada seleccionando **[!UICONTROL Editar]** en el componente.
 
 * **[!UICONTROL Optimizar para dispositivos]**  de mayor resolución: seleccione (predeterminado) la casilla de verificación para permitir la optimización del RGPD (proporción de píxeles del dispositivo).
 
@@ -178,7 +182,7 @@ Para editar la siguiente configuración de Dynamic Media, pulse el icono **[!UIC
 
    ![ajuste de la proporción de píxeles del dispositivo para el ajuste preestablecido de imagen](/help/assets/assets-dm/dpr-ress-ip.png)
 
-   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/imaging-faq.md#dpr). Tenga en cuenta que los valores del RGPD de imágenes inteligentes de Adobe Experience Manager Dynamic Media se ignoran.
+   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/imaging-faq.md#dpr). Se omiten todos los valores de RGPD de imágenes inteligentes de Adobe Experience Manager Dynamic Media.
 
 * **[!UICONTROL Título]** : cambie el título de la imagen.
 
@@ -194,20 +198,19 @@ Para editar la siguiente configuración de Dynamic Media, pulse el icono **[!UIC
 
 * **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
-
 #### Uso de vídeos {#when-working-with-video}
 
 Utilice el componente Dynamic Media para añadir vídeo dinámico a las páginas web. Al editar el componente, puede elegir utilizar un ajuste preestablecido de visualizador de vídeo predefinido para reproducir el vídeo en la página.
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-Edite la siguiente configuración de Dynamic Media haciendo clic en **[!UICONTROL Editar]** en el componente.
+Edite la siguiente Configuración de Dynamic Media seleccionando **[!UICONTROL Editar]** en el componente.
 
 >[!NOTE]
 >
 >De forma predeterminada, el componente de vídeo de Dynamic Media es adaptable. Si desea que tenga un tamaño fijo, configúrelo en el componente con la **[!UICONTROL Anchura]** y **[!UICONTROL Altura]** en la pestaña **[!UICONTROL Avanzado]**.
 
-* **[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un ajuste preestablecido de visualizador de vídeo existente en el menú desplegable. Si el ajuste preestablecido de visualizador que está buscando no está visible, debe hacerlo visible. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). 
+* **[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un ajuste preestablecido de visualizador de vídeo existente en el menú desplegable. Si el ajuste preestablecido de visualizador que está buscando no está visible, debe hacerlo visible. Consulte [Administrar ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md).
 
 * **[!UICONTROL Modificadores del visualizador]** : Los modificadores del visualizador toman la forma de par nombre=valor con un delimitador &amp; y permiten cambiar los visualizadores como se describe en la Guía de referencia del visualizador de Adobe. Un ejemplo de modificador de visor es `posterimage=img.jpg&caption=text.vtt,1`
 
@@ -216,7 +219,7 @@ Edite la siguiente configuración de Dynamic Media haciendo clic en **[!UICONTRO
    * Asocie un archivo de rótulo con un vídeo: [subtítulo][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
    * Asocie un archivo de navegación con un vídeo: [navegación][https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
-      Puede editar la siguiente Configuración avanzada haciendo clic en **[!UICONTROL Editar]** en el componente.
+      Puede editar la siguiente Configuración avanzada seleccionando **[!UICONTROL Editar]** en el componente.
 
 * **[!UICONTROL Título]** : cambie el título del vídeo.
 
@@ -232,7 +235,7 @@ Consulte también [Perfiles de imagen](/help/assets/image-profiles.md).
 
 ![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
 
-Edite la siguiente configuración de Dynamic Media haciendo clic en **[!UICONTROL Edit]** en el componente.
+Edite la siguiente configuración de Dynamic Media seleccionando **[!UICONTROL Edit]** en el componente.
 
 >[!NOTE]
 >
@@ -242,7 +245,7 @@ Edite la siguiente configuración de Dynamic Media haciendo clic en **[!UICONTRO
 
    Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-   Puede editar la siguiente Configuración avanzada haciendo clic en **[!UICONTROL Editar]** en el componente.
+   Puede editar la siguiente Configuración avanzada seleccionando **[!UICONTROL Editar]** en el componente.
 
 * **[!UICONTROL Habilitar coincidencia de relación de aspecto]** : para permitir que Dynamic Media elija una representación de recorte inteligente con una relación de aspecto que coincida mejor con la relación de aspecto de la imagen original, seleccione esta opción.
 
@@ -254,7 +257,7 @@ Edite la siguiente configuración de Dynamic Media haciendo clic en **[!UICONTRO
 
    ![configuración de la proporción de píxeles del dispositivo para el recorte inteligente](/help/assets/assets-dm/dpr-smartcrop.png)
 
-   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/imaging-faq.md#dpr). Tenga en cuenta que los valores del RGPD de imágenes inteligentes de Adobe Experience Manager Dynamic Media se ignoran.
+   Consulte también [Acerca de la optimización de la proporción de píxeles del dispositivo](/help/assets/imaging-faq.md#dpr). Se omiten todos los valores de RGPD de imágenes inteligentes de Adobe Experience Manager Dynamic Media.
 
 * **[!UICONTROL Título]** : cambie el título de la imagen de recorte inteligente.
 
@@ -291,7 +294,7 @@ No se admite la asignación de un ajuste preestablecido de visualizador diferent
 
 ![chlimage_1-174](assets/chlimage_1-541.png)
 
-Puede editar la siguiente configuración **[!UICONTROL General]** tocando **[!UICONTROL Editar]** en el componente.
+Puede editar la siguiente configuración **[!UICONTROL General]** seleccionando **[!UICONTROL Editar]** en el componente.
 
 * **[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visualizador que está buscando no está visible, debe hacerlo visible. Los ajustes preestablecidos de visor se deben publicar para que se puedan usar. Consulte Administración de ajustes preestablecidos de visor. 
 
@@ -301,7 +304,7 @@ Puede editar la siguiente configuración **[!UICONTROL General]** tocando **[!UI
 
 * **[!UICONTROL Altura]** : introduzca el valor en píxeles si desea que la imagen tenga un tamaño fijo. Dejar este valor en blanco hace que el recurso sea adaptable.
 
-   Puede editar las siguientes opciones de configuración **[!UICONTROL Añadir a carro]** al hacer clic en **[!UICONTROL Editar]** en el componente.
+   Puede editar la siguiente configuración **[!UICONTROL Agregar al carro]** seleccionando **[!UICONTROL Editar]** en el componente.
 
 * **[!UICONTROL Mostrar recurso de producto]** : de forma predeterminada, este valor está seleccionado. El recurso del producto muestra una imagen del producto, según se ha definido en el módulo Commerce. Desactive la casilla para no mostrar el recurso del producto.
 
@@ -333,7 +336,7 @@ No se admite la asignación de un ajuste preestablecido de visualizador diferent
 
 ![panorámico-media-viewer-preset](assets/panoramic-media-viewer-preset.png)
 
-Puede editar la siguiente configuración tocando **[!UICONTROL Configurar]** en el componente.
+Puede editar la siguiente configuración seleccionando **[!UICONTROL Configurar]** en el componente.
 
 * **[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un visualizador existente en el menú desplegable Ajuste preestablecido de visualizador.
 
@@ -349,7 +352,7 @@ El visor incluye compatibilidad nativa con la entrega de 360 recursos de vídeo.
 
 ![6_5_360video_wcmcomponent-1](assets/6_5_360video_wcmcomponent-1.png)
 
-Puede editar la siguiente configuración tocando **[!UICONTROL Configurar]** en el componente.
+Puede editar la siguiente configuración seleccionando **[!UICONTROL Configurar]** en el componente.
 
 * **[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un visualizador existente en el menú desplegable Ajuste preestablecido de visualizador. Utilice Video360VR para usuarios finales que utilicen lentes de realidad virtuales. Incluye controles básicos de reproducción de vídeo y funciones de medios sociales. Utilice Video360_social, que incluye controles básicos de reproducción de vídeo. El procesamiento de vídeo se realiza en modo estéreo. El control de punto de vista manual está desactivado, pero el control giroscópico está activado. No hay características de medios sociales.
 
@@ -365,8 +368,8 @@ Consulte [Entrega HTTP2 de contenido](/help/assets/http2.md) para obtener inform
 >
 >* [Uso del reproductor de vídeo en Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-player-feature-video-use.html)
 >* [Uso de vídeo interactivo con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-interactive-video-feature-video-use.html)
->* [Explicación del visualizador de recursos con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
+>* [Comprender el visualizador de recursos con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-viewer-feature-video-understand.html)
 >* [Uso de la miniatura de vídeo personalizada con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Explicación de la administración de color con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
+>* [Comprensión de la administración de color con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-color-management-technical-video-setup.html)
 >* [Uso del enfoque de imagen con Experience Manager Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html)
 
