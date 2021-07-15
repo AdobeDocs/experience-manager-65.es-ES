@@ -1,5 +1,5 @@
 ---
-title: Práctica recomendada para optimizar la calidad de las imágenes
+title: Prácticas recomendadas para optimizar la calidad de las imágenes en Dynamic Media
 description: Conozca las prácticas recomendadas para optimizar la calidad de imagen en Dynamic Media
 uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Administración de activos
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 6%
+source-wordcount: '1451'
+ht-degree: 4%
 
 ---
 
-# Práctica recomendada para optimizar la calidad de las imágenes {#best-practices-for-optimizing-the-quality-of-your-images}
+# Prácticas recomendadas para optimizar la calidad de las imágenes en Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
 
 La optimización de la calidad de la imagen puede ser un proceso largo, ya que muchos factores contribuyen a que se obtengan resultados aceptables. El resultado es en parte subjetivo porque las personas perciben la calidad de la imagen de manera diferente. La experimentación estructurada es clave.
 
@@ -47,7 +47,7 @@ Como práctica recomendada para el tamaño de la imagen, utilice `&wid=<value>&h
 
 El enfoque de imágenes es el aspecto más complejo de controlar las imágenes en su sitio web, y donde se cometen muchos errores. Tómese el tiempo para obtener más información sobre cómo funciona la máscara de enfoque y enfoque en el Experience Manager haciendo referencia a los siguientes recursos útiles:
 
-Documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) que también se aplica al Experience Manager.
+Documento técnico de prácticas recomendadas [Enfocar imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) que también se aplica al Experience Manager.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
@@ -59,14 +59,14 @@ Hay dos métodos de perfeccionamiento de imagen que puede utilizar:
 * Perfeccionamiento simple ( `&op_sharpen`): similar al filtro de enfoque utilizado en Photoshop, el enfoque simple aplica un enfoque básico a la vista final de la imagen después del cambio de tamaño dinámico. Sin embargo, este método no es configurable por el usuario. La práctica recomendada es no utilizar &amp;op_sharpen a menos que sea necesario.
 * Enmascaramiento de enfoque ( `&op_USM`): el enmascaramiento de enfoque es un filtro de enfoque estándar del sector. Se recomienda enfocar las imágenes con máscaras de enfoque siguiendo las directrices que se indican a continuación. La máscara de enfoque permite controlar los tres parámetros siguientes:
 
-   * `&op_sharpen=`amount,radius,threshold
+   * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL cantidad]**  (0-5, fuerza del efecto).
-      * **[!UICONTROL radius]**  (0-250, ancho de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medido en píxeles).
+      * **[!UICONTROL *cantidad *]**(0-5, fuerza del efecto).
+      * **[!UICONTROL *radius *]**(0-250, ancho de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medido en píxeles).
 
       Tenga en cuenta que los parámetros radius e amount funcionan entre sí. La reducción del radio se puede compensar aumentando la cantidad. El radio permite un control más preciso, ya que un valor inferior afila sólo los píxeles de borde, mientras que un valor más alto afila una banda más amplia de píxeles.
 
-      * **[!UICONTROL umbral]**  (0-255, sensibilidad del efecto).
+      * **[!UICONTROL *umbral *]**(0-255, sensibilidad del efecto).
 
              Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL Umbral]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
          
@@ -74,7 +74,7 @@ Hay dos métodos de perfeccionamiento de imagen que puede utilizar:
 
          Tema de ayuda del Experience Manager sobre cómo enfocar una imagen.
 
-         Documento técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+         Documento técnico de prácticas recomendadas [Enfocar imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
       * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
 
