@@ -6,8 +6,8 @@ audience: end-user
 user-guide-title: Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic
 user-guide-description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
 feature: 'Creación  '
-role: Business Practitioner
-source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
+role: User
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 84%
