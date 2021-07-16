@@ -12,26 +12,26 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Visores
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1088'
 ht-degree: 1%
 
 ---
 
-# Utilice la vista rápida para crear ventanas emergentes personalizadas {#using-quickviews-to-create-custom-pop-ups}
+# Crear ventanas emergentes personalizadas con la vista rápida {#using-quickviews-to-create-custom-pop-ups}
 
-La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede almacenar en déclencheur contenido personalizado para que se muestre en las ventanas emergentes. En función del visor, esta funcionalidad permite a los usuarios pulsar en un punto interactivo, una imagen en miniatura o un mapa de imágenes para ver información o contenido relacionado.
+La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede almacenar en déclencheur contenido personalizado para que se muestre en las ventanas emergentes. Según el visor, esta funcionalidad permite a los usuarios seleccionar una zona interactiva, una imagen en miniatura o un mapa de imágenes para ver información o contenido relacionado.
 
 Quickview es compatible con los siguientes visores en Dynamic Media:
 
-* Imágenes interactivas (zonas interactivas en las que se puede hacer clic)
+* Imagen interactiva (zonas interactivas en las que se puede hacer clic)
 * Vídeo interactivo (imágenes en miniatura en las que se puede hacer clic durante la reproducción del vídeo)
-* Banners de carrusel (zonas interactivas o mapas de imágenes en las que se puede hacer clic)
+* Banner de carrusel (zonas interactivas o mapas de imágenes en las que se puede hacer clic)
 
 Aunque la funcionalidad de cada visor es diferente, el proceso de creación de una vista rápida es el mismo en los tres visualizadores admitidos.
 
-**Para usar la vista rápida para crear ventanas emergentes personalizadas:**
+**Para crear ventanas emergentes personalizadas con la vista rápida:**
 
 1. Cree una vista rápida para un recurso cargado.
 
