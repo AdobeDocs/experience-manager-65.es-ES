@@ -9,7 +9,7 @@ docset: aem65
 role: User, Admin
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuración,Modo Scene7
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: 752eacca9d29b272c040b48c35e4717b13e34b12
 workflow-type: tm+mt
 source-wordcount: '6160'
 ht-degree: 4%
@@ -270,7 +270,7 @@ Consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
 
 1. En la esquina superior izquierda de la página, seleccione **[!UICONTROL CRXDE Lite]** para volver al Experience Manager.
 
-#### Añadir tipos MIME para formatos no compatibles {#adding-mime-types-for-unsupported-formats}
+#### Adición de tipos MIME para formatos no admitidos {#adding-mime-types-for-unsupported-formats}
 
 Puede añadir tipos MIME personalizados para formatos no compatibles en Recursos Experience Manager. Asegúrese de que el Experience Manager no elimina ningún nodo nuevo que agregue al CRXDE Lite moviendo el tipo MIME antes de `image_`. Además, asegúrese de que su valor habilitado esté establecido en **[!UICONTROL false]**.
 
