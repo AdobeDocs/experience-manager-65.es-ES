@@ -1,5 +1,5 @@
 ---
-title: Trabajo con Dynamic Media
+title: Trabajar con Dynamic Media
 description: Aprenda a utilizar Dynamic Media para distribuir recursos para consumo en sitios web, móviles y sociales.
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
@@ -10,10 +10,10 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Colaboración,Administración de activos
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 22%
+source-wordcount: '422'
+ht-degree: 9%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 22%
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos de origen principales, Dynamic Media genera y ofrece múltiples variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
 
-Dynamic Media proporciona experiencias de visualización interactivas, que incluyen zoom, giro de 360 grados y vídeo. Dynamic Media introduce de forma exclusiva los flujos de trabajo de la solución de administración de recursos digitales (Recursos) de Adobe Experience Manager para simplificar y agilizar el proceso de administración de campañas digitales.
+Dynamic Media proporciona experiencias de visualización interactivas, como zoom, giro de 360 grados y vídeo. Dynamic Media incorpora de forma exclusiva los flujos de trabajo de la solución de administración de recursos digitales (Assets) de Adobe Experience Manager para simplificar y optimizar el proceso de administración de campañas digitales.
 
 <!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
@@ -29,7 +29,7 @@ Dynamic Media proporciona experiencias de visualización interactivas, que inclu
 
 ## Qué puede hacer con Dynamic Media {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media permite administrar los recursos antes de publicarlos. Cómo trabajar con recursos en general se explica en detalle en [Uso de recursos digitales](manage-assets.md). Los temas generales incluyen la carga, descarga, edición y publicación de recursos; ver y editar propiedades, y buscar recursos.
+Dynamic Media permite administrar los recursos antes de publicarlos. Cómo trabajar con recursos en general se explica en detalle en [Trabajo con recursos digitales](manage-assets.md). Los temas generales incluyen la carga, descarga, edición y publicación de recursos; ver y editar propiedades, y buscar recursos.
 
 Las funciones solo de Dynamic Media incluyen lo siguiente:
 
@@ -42,9 +42,9 @@ Las funciones solo de Dynamic Media incluyen lo siguiente:
 
 * [Conjuntos de giros](spin-sets.md)
 * [Vídeo](video.md)
-* [Envío de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
-* [Administración de recursos](managing-assets.md)
-* [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
+* [Enviar recursos de Dynamic Media](delivering-dynamic-media-assets.md)
+* [Administrar recursos](managing-assets.md)
+* [Crear ventanas emergentes personalizadas con la vista rápida](custom-pop-ups.md)
 
 Consulte también [Configuración de Dynamic Media](administering-dynamic-media.md).
 
@@ -60,7 +60,7 @@ Puede saber si Dynamic Media está habilitado (activado) por las siguientes cara
 * Hay disponibles conjuntos de imágenes, conjuntos de giros y conjuntos de medios mixtos.
 * Se crean representaciones PTIFF.
 
-Al hacer clic en un recurso de imagen, la vista del recurso es diferente con Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media utiliza los visores HTML5 bajo demanda.
+Al seleccionar un recurso de imagen, la vista del recurso es diferente con Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media utiliza los visores HTML5 bajo demanda.
 
 ### Representaciones dinámicas {#dynamic-renditions}
 
