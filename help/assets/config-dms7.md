@@ -9,7 +9,7 @@ docset: aem65
 role: User, Admin
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuración,Modo Scene7
-source-git-commit: 752eacca9d29b272c040b48c35e4717b13e34b12
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '6160'
 ht-degree: 4%
@@ -208,7 +208,7 @@ De forma predeterminada, el sistema muestra 15 representaciones al seleccionar *
 
 #### Configuración de la gestión de color {#configuring-color-management}
 
-La administración de color de Dynamic Media le permite colorear los recursos correctos. Con la corrección de color, los recursos incorporados conservan su espacio de color (RGB, CMYK, Gris) y su perfil de color incrustado. Cuando se solicita una representación dinámica, el color de la imagen se corrige en el espacio de color de destino mediante la salida CMYK, RGB o Gris. Consulte [Configurar ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md).
+La gestión de color de Dynamic Media le permite colorear los recursos correctos. Con la corrección de color, los recursos incorporados conservan su espacio de color (RGB, CMYK, Gris) y su perfil de color incrustado. Cuando se solicita una representación dinámica, el color de la imagen se corrige en el espacio de color de destino mediante la salida CMYK, RGB o Gris. Consulte [Configurar ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md).
 
 Para configurar las propiedades de color predeterminadas de modo que la corrección de color esté habilitada cuando se soliciten imágenes:
 
