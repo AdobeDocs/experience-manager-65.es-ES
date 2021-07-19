@@ -1,29 +1,27 @@
 ---
-title: Entrega de recursos de Dynamic Media
-description: Con Dynamic Media tiene varias opciones para enviar sus recursos de Dynamic Media, tanto vídeo como imágenes, a su sitio web.
+title: Enviar recursos de Dynamic Media
+description: Con Dynamic Media, tiene varias opciones para enviar los recursos de Dynamic Media, tanto vídeo como imágenes, a su sitio web.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+exl-id: 40f41bb0-b3cb-4c16-b5db-ac8ea1a86aa3
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 43%
+source-wordcount: '109'
+ht-degree: 6%
 
 ---
 
-
-# Entrega de recursos de Dynamic Media{#delivering-dynamic-media-assets}
+# Enviar recursos de Dynamic Media{#delivering-dynamic-media-assets}
 
 El modo de distribuir los recursos de Dynamic Media (vídeos e imágenes) depende de cómo se implemente el sitio web.
 
-Con Dynamic Media dispone de varias opciones:
+Con Dynamic Media, tiene varias opciones:
 
-* Si el sitio web está alojado en AEM, quiere agregar los recursos de Dynamic Media directamente a la página.
-* Si el sitio web no se aloja en AEM, consulte [Envío de recursos de Dynamic Media](/help/assets/delivering-dynamic-media-assets.md) en la interfaz de usuario táctil.
+* Si el sitio web está alojado en Adobe Experience Manager, quiere agregar los recursos de Dynamic Media directamente a la página.
+* Si el sitio web no está en Experience Manager, consulte [Entregar recursos de Dynamic Media](/help/assets/delivering-dynamic-media-assets.md) en la interfaz de usuario táctil.
 
 Para obtener más información, consulte los temas siguientes:
 
-* [Agregar recursos de Dynamic Media a las páginas](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
-
+* [Agregar recursos de Dynamic Media a páginas](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
