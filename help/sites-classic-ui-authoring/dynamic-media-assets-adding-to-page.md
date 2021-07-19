@@ -1,19 +1,19 @@
 ---
-title: Agregar recursos de Dynamic Media a las páginas
+title: Agregar recursos de Dynamic Media a páginas
 description: Para añadir la funcionalidad de Dynamic Media a los recursos que utilice en sus sitios web, puede añadir el componente Dynamic Media o Medios interactivos directamente en la página.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 32%
+ht-degree: 30%
 
 ---
 
-# Agregar recursos de Dynamic Media a las páginas{#adding-dynamic-media-assets-to-pages}
+# Agregar recursos de Dynamic Media a páginas{#adding-dynamic-media-assets-to-pages}
 
 Para añadir la funcionalidad de Dynamic Media a los recursos que utilice en sus sitios web, puede añadir el componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL Interactive Media]** directamente en la página. Introduzca el modo **[!UICONTROL Design]** y habilite los componentes de Dynamic Media. A continuación, puede añadir estos componentes a la página y añadir recursos al componente. Los componentes Dynamic Media y los medios interactivos son inteligentes: saben si va a añadir una imagen o un vídeo y las opciones disponibles cambian en consecuencia.
 
@@ -23,14 +23,16 @@ Los recursos de Dynamic Media se agregan directamente a la página si utiliza Ad
 >
 >Para los titulares de carrusel, hay mapas de imágenes disponibles de fábrica.
 
-## Adición de un componente Dynamic Media a una página {#adding-a-dynamic-media-component-to-a-page}
+## Añadir un componente de Dynamic Media a una página {#adding-a-dynamic-media-component-to-a-page}
 
 Añadir el componente [!UICONTROL Dynamic Media] o [!UICONTROL Medios interactivos] a una página es lo mismo que añadir un componente a cualquier página. Los componentes [!UICONTROL Dynamic Media] y [!UICONTROL Interactive Media] se describen detalladamente en las secciones siguientes.
 
 Para añadir un componente o visor de Dynamic Media a una página:
 
 1. En el Experience Manager, abra la página a la que desee añadir el componente Dynamic Media.
-1. Si no hay ningún componente de Dynamic Media disponible, haga clic en la regla de la [!UICONTROL Barra de tareas] para entrar en el modo **[!UICONTROL Diseño]**, haga clic en **[!UICONTROL Editar]** parsys y seleccione **[!UICONTROL Dynamic Media]** para que los componentes de Dynamic Media estén disponibles.
+1. Si no hay ningún componente de Dynamic Media disponible, seleccione la regla en la [!UICONTROL Barra de tareas] para entrar al modo **[!UICONTROL Diseño]**.
+1. Seleccione **[!UICONTROL Edit]** parsys.
+1. Seleccione **[!UICONTROL Dynamic Media]** para que pueda disponer de los componentes de Dynamic Media.
 
    >[!NOTE]
    >
@@ -38,8 +40,9 @@ Para añadir un componente o visor de Dynamic Media a una página:
 
 1. Vuelva al modo **[!UICONTROL Editar]** haciendo clic en el icono de lápiz de la [!UICONTROL Barra de tareas].
 1. Arrastre el componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL Medios interactivos]** del grupo **[!UICONTROL Otro]** de la barra de tareas a la página en la ubicación deseada.
-1. Haga clic en **[!UICONTROL Editar]** para que se abra el componente.
-1. [](#dynamic-media-component)Edite el componente según sea necesario y haga clic en **[!UICONTROL Aceptar]** para guardar los cambios.
+1. Seleccione **[!UICONTROL Editar]** para que se abra el componente.
+1. [Edite los ](#dynamic-media-component) componentes necesarios.
+1. Seleccione **[!UICONTROL OK]** para guardar los cambios.
 
 ## Componentes de Dynamic Media {#dynamic-media-components}
 
@@ -132,7 +135,7 @@ Puede editar las siguientes opciones de configuración [!UICONTROL Advanced] hac
 
 **[!UICONTROL Anchura y altura]** : introduzca el valor en píxeles si desea que el vídeo tenga un tamaño fijo. Si deja estos valores en blanco, hace que el vídeo sea adaptable.
 
-#### Procedimiento para enviar vídeo seguro {#how-to-delivery-secure-video}
+#### Entregar vídeo seguro {#how-to-delivery-secure-video}
 
 En el Experience Manager 6.2, al instalar [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), puede controlar si un vídeo se entrega a través de una conexión SSL segura (HTTPS) o una conexión no segura (HTTP). De manera predeterminada, el protocolo de envío de vídeo se hereda automáticamente del protocolo de la página web en el que se integra el vídeo. Si la página web se carga sobre HTTPS, el vídeo también se envía sobre HTTPS. Por el contrario, si la página web está en HTTP, el vídeo se envía a través de HTTP. Normalmente, este comportamiento predeterminado es correcto y no es necesario realizar ningún cambio en la configuración. Sin embargo, puede anular este comportamiento predeterminado. Anexe `VideoPlayer.ssl=on` al final de una ruta de URL o a la lista de otros parámetros de configuración del visor en un fragmento de código incrustado. Cualquier acción fuerza la entrega segura de vídeo.
 
@@ -148,7 +151,7 @@ El componente [!UICONTROL Medios interactivos] es inteligente, ya que, dependien
 
 Puede editar las siguientes opciones de configuración **[!UICONTROL General]** al hacer clic en **[!UICONTROL Editar]** en el componente.
 
-**[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visualizador que está buscando no está visible, debe hacerlo visible. Los ajustes preestablecidos de visor se deben publicar para que se puedan usar. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). 
+**[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visualizador que está buscando no está visible, debe hacerlo visible. Los ajustes preestablecidos de visor se deben publicar para que se puedan usar. Consulte [Administrar ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md).
 
 **[!UICONTROL Título]** : cambie el título del vídeo.
 
