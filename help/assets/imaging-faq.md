@@ -1,6 +1,6 @@
 ---
 title: Imágenes inteligentes
-description: Las imágenes inteligentes aplican las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes adecuadas optimizadas para su experiencia, lo que resulta en un mejor rendimiento y participación.
+description: Las imágenes inteligentes aplican las características de visualización únicas de cada usuario para ofrecer automáticamente las imágenes adecuadas optimizadas para su experiencia, lo que mejora el rendimiento y la participación.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Administración de recursos,Representaciones
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '2626'
+source-wordcount: '2633'
 ht-degree: 1%
 
 ---
@@ -94,13 +94,13 @@ Como las imágenes constituyen la mayor parte del tiempo de carga de una página
 
 Mejoras en la última versión de imágenes inteligentes:
 
-* Se ha mejorado la clasificación SEO de Google para páginas web que utilizan las últimas imágenes inteligentes.
+* Se ha mejorado la clasificación SEO de Google para páginas web que utilizan la última imagen inteligente.
 * Proporciona contenido optimizado inmediatamente (en tiempo de ejecución).
 * Utiliza la tecnología de Adobe Sensei para realizar la conversión según la calidad (qlt) especificada en la solicitud de imagen.
 * Las imágenes inteligentes se pueden desactivar utilizando el parámetro de URL &quot;bfc&quot;.
 * TTL (Tiempo de vida) independiente. Anteriormente, para que funcionara la imagen inteligente era obligatorio un TTL mínimo de 12 horas.
 * Anteriormente, las imágenes originales y las imágenes derivadas se almacenaban en caché y era un proceso de 2 pasos para invalidar la caché. En las últimas imágenes inteligentes, solo se almacenan en caché los derivados, lo que permite un proceso de invalidación de caché de un solo paso.
-* Los clientes que utilizan encabezados personalizados en su conjunto de reglas se benefician de las últimas imágenes inteligentes, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes. Por ejemplo, &quot;Origen de permiso de temporización&quot;, &quot;Robot X&quot;, tal como se sugiere en [Adición de un valor de encabezado personalizado a las respuestas de imágenes|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
+* Los clientes que utilizan encabezados personalizados en su conjunto de reglas se benefician de las últimas imágenes inteligentes, ya que estos encabezados no están bloqueados, a diferencia de la versión anterior de imágenes inteligentes. Por ejemplo, &quot;Origen de permiso de temporización&quot;, &quot;Robot X&quot;, como se sugiere en [Agregue un valor de encabezado personalizado a las respuestas de imagen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
 ## ¿Hay algún costo de licencia asociado con las imágenes inteligentes? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -180,7 +180,7 @@ Para utilizar imágenes inteligentes, la cuenta de Experience Manager de Dynamic
 
 Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en la cuenta o cuentas de su empresa.
 
-Pulse **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]** Busque el campo etiquetado **[!UICONTROL Nombre del servidor publicado]**. Si está utilizando un dominio genérico, puede solicitar pasar a su propio dominio personalizado como parte de esta transición cuando envíe un ticket de asistencia técnica.
+Vaya a **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** Busque el campo etiquetado **[!UICONTROL Published Server Name]**. Si está utilizando un dominio genérico, puede solicitar pasar a su propio dominio personalizado como parte de esta transición cuando envíe un ticket de asistencia técnica.
 
 El primer dominio personalizado no tiene coste adicional con una licencia de Dynamic Media.
 
@@ -206,7 +206,7 @@ La programación de versiones para la optimización del RGPD y la red de imágen
 
       Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en la cuenta o cuentas de su empresa.
 
-      Haga clic en **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
+      Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 
       Busque el campo denominado **[!UICONTROL Published Server Name]**.
    1. Compruebe que está utilizando la CDN a través de la Adobe y que no se administra con una relación directa.
@@ -214,7 +214,7 @@ La programación de versiones para la optimización del RGPD y la red de imágen
 
       Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en la cuenta o cuentas de su empresa.
 
-      Haga clic en **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
+      Vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 
       Busque el campo denominado **[!UICONTROL Published Server Name]**. Si está utilizando un dominio genérico de Dynamic Media Classic, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
    1. Indique si también necesita que las imágenes inteligentes funcionen con HTTP/2.
@@ -225,7 +225,7 @@ La programación de versiones para la optimización del RGPD y la red de imágen
 1. El Servicio de atención al cliente le notifica una vez que la haya completado.
 1. Para maximizar las mejoras de rendimiento de las imágenes inteligentes, Adobe recomienda establecer el tiempo de vida (TTL) en 24 horas o más. El TTL define cuánto tiempo la CDN almacena en caché los recursos. Para cambiar esta configuración:
 
-   1. Si utiliza Dynamic Media Classic, haga clic en **[!UICONTROL Configuración > Configuración de la aplicación > Configuración de publicación > Servidor de imágenes]**. Establezca el valor **[!UICONTROL Tiempo de caché de cliente predeterminado en activo]** en 24 o más.
+   1. Si utiliza Dynamic Media Classic, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Publicar configuración]** > **[!UICONTROL Servidor de imágenes]**. Establezca el valor **[!UICONTROL Tiempo de caché de cliente predeterminado en activo]** en 24 o más.
    1. Si usa Dynamic Media, siga [estas instrucciones](config-dynamic.md). Establezca el valor **[!UICONTROL Expiration]** 24 horas o más.
 
 ## ¿Cuándo puedo esperar que mi cuenta esté habilitada con imágenes inteligentes? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
@@ -245,7 +245,7 @@ Durante la transición inicial, las imágenes no almacenadas en caché llegan di
 ## ¿Cómo puedo verificar si las imágenes inteligentes funcionan según lo esperado?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Una vez configurada la cuenta con imágenes inteligentes, cargue una URL de imagen de Dynamic Media Classic o Adobe Experience Manager - Dynamic Media en el explorador.
-1. Abra el panel del desarrollador de Chrome haciendo clic en **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** en el explorador. O bien, elija cualquier herramienta para desarrolladores de navegador que desee.
+1. Abra el panel del desarrollador de Chrome navegando hasta **[!UICONTROL View]** > **[!UICONTROL Developer]** > **[!UICONTROL Developer Tools]** en el explorador. O bien, elija cualquier herramienta para desarrolladores de navegador que desee.
 
 1. Asegúrese de que la caché esté deshabilitada cuando las herramientas para desarrolladores estén abiertas.
 
