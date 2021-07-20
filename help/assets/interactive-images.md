@@ -11,18 +11,18 @@ docset: aem65
 feature: Imágenes interactivas
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '4286'
+source-wordcount: '4277'
 ht-degree: 1%
 
 ---
 
 # Imágenes interactivas{#interactive-images}
 
-Puede hacer que las imágenes estáticas sean ricas y atractivas para los clientes arrastrando y soltando puntos interactivos &quot;de ventas&quot; en una imagen. Los hotspots de ventas combinan información adicional sobre un producto o servicio con una capacidad directa y de punto de venta &quot;Añadir al carro&quot; o &quot;Comprar&quot;. Los clientes pueden tocar o hacer clic en estos puntos interactivos y estar vinculados directamente al producto o servicio, agregarlos a un carro de compras o vincularlos a una página web. Las experiencias directas como estas aumentan las participaciones de los clientes y las conversiones en el sitio web.
+Puede hacer que las imágenes estáticas sean ricas y atractivas para los clientes arrastrando y soltando puntos interactivos &quot;de ventas&quot; en una imagen. Los hotspots de ventas combinan información adicional sobre un producto o servicio con una capacidad directa y de punto de venta &quot;Añadir al carro&quot; o &quot;Comprar&quot;. Los clientes pueden seleccionar estos puntos interactivos y estar vinculados directamente al producto o servicio, agregarlos a un carro de compras o estar vinculados a una página web. Las experiencias directas como estas aumentan las participaciones de los clientes y las conversiones en el sitio web.
 
-El siguiente es un banner de ventas con una ventana emergente de vista rápida. Un usuario activa la vista rápida tocando el círculo o la &quot;zona interactiva&quot; del modelo.
+El siguiente es un banner de ventas con una ventana emergente de vista rápida. Un usuario activa la vista rápida seleccionando el círculo o la &quot;zona interactiva&quot; en el modelo.
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
@@ -32,7 +32,7 @@ Consulte imágenes interactivas en acción en la página web anterior. Para ello
 
 ## Ver cómo se crean los titulares de imagen interactivos {#watch-how-interactive-image-banners-are-created}
 
-Reproduzca un tutorial sobre [cómo se crean los banners de imagen interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minutos y 33 segundos). También aprenderá a previsualizar, editar y distribuir banners de imagen interactivos.
+Reproduzca un tutorial en [cómo se crean los banners de imagen interactivos](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minutos y 33 segundos). También aprenderá a previsualizar, editar y distribuir banners de imagen interactivos.
 
 ## Inicio rápido: Imágenes interactivas {#quick-start-interactive-images}
 
@@ -93,7 +93,7 @@ A veces es suficiente consultar a los especialistas de TI responsables de la imp
 
 La mayoría de las implementaciones de vista rápida utilizan el siguiente paradigma:
 
-* El usuario activa un elemento de interfaz de usuario en el sitio web. Por ejemplo, al hacer clic en el botón &quot;Vista rápida&quot;.
+* El usuario activa un elemento de interfaz de usuario en el sitio web. Por ejemplo, si selecciona el botón &quot;Vista rápida&quot;.
 * El sitio web envía una solicitud de Ajax al servidor para cargar los datos o el contenido de la vista rápida, si es necesario.
 * Los datos de vista rápida se traducen al contenido como preparación para su renderización en la página web.
 * Por último, el código front-end procesa visualmente dicho contenido en la pantalla.
@@ -102,11 +102,11 @@ El método entonces es visitar diferentes áreas del sitio web existente donde s
 
 Normalmente no es necesario que utilice ninguna herramienta de depuración especializada. Los navegadores web modernos cuentan con inspectores web que realizan un trabajo adecuado. A continuación se indican algunos ejemplos de exploradores web que incluyen inspectores web:
 
-* Para ver todas las solicitudes HTTP salientes en Google Chrome, pulse F12 para abrir el panel Herramientas para desarrolladores y, a continuación, haga clic en la pestaña Red.
-En un Mac, pulse Comando+Opción+I para abrir el panel Herramientas para desarrolladores y, a continuación, haga clic en la ficha Red.
+* Para ver todas las solicitudes HTTP salientes en Google Chrome, pulse F12 para abrir el panel Herramientas para desarrolladores y, a continuación, seleccione la pestaña Red.
+En un Mac, pulse Comando+Opción+I para abrir el panel Herramientas para desarrolladores y, a continuación, seleccione la ficha Red.
 
 * En Firefox, puede activar el complemento Firebug pulsando F12 y utilizando su pestaña Red, o puede utilizar la herramienta Inspector integrada y su pestaña Red.
-En un Mac, pulse Comando+Opción+I para abrir el panel Herramientas para desarrolladores y, a continuación, haga clic en la ficha Inspector.
+En un Mac, pulse Comando+Opción+I para abrir el panel Herramientas para desarrolladores y, a continuación, seleccione la ficha Inspector .
 
 Cuando la supervisión de red está activada en el explorador, ponga en déclencheur la vista rápida en la página.
 
@@ -164,7 +164,7 @@ Puede aplicar el mismo enfoque utilizado en los tres ejemplos anteriores a la p�
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-La página web de demostración tiene varias miniaturas de productos, cada una con un botón de vista rápida etiquetado como &quot;Ver más&quot;. Con la herramienta de depuración del explorador web aún activada, haga clic en cada botón y anote las URL de vista rápida registradas. Después de activar los cuatro productos de Quickview disponibles en la página, tiene la siguiente lista de solicitudes de Quickview realizadas en el servidor:
+La página web de demostración tiene varias miniaturas de productos, cada una con un botón de vista rápida etiquetado como &quot;Ver más&quot;. Con la herramienta de depuración del explorador web aún activada, seleccione cada botón y anote las URL de vista rápida registradas. Después de activar los cuatro productos de Quickview disponibles en la página, tiene la siguiente lista de solicitudes de Quickview realizadas en el servidor:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -194,21 +194,21 @@ Después de guardar el ajuste preestablecido de visualizador, se activa automát
 
 **Para crear un ajuste preestablecido de visualizador de imagen interactiva:**
 
-1. En el carril izquierdo, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Ajustes preestablecidos de visualizador]**.
-1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Crear]**.
+1. En el carril izquierdo, vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
+1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Crear]**.
 1. En el cuadro de diálogo Nuevo ajuste preestablecido de visualizador, escriba un nombre para describir el ajuste preestablecido de visualizador de banners interactivo.
 
    El título aparece en la página de lista Ajustes preestablecidos de visor después de guardarlo.
 
 1. En el menú desplegable Tipo de medio enriquecido, seleccione **[!UICONTROL Imagen interactiva]**.
-1. Toque **[!UICONTROL Crear]**.
-1. En la página Editar ajuste preestablecido de visualizador , pulse la pestaña **[!UICONTROL Aspecto]**.
+1. Seleccione **[!UICONTROL Crear]**.
+1. En la página Editar ajuste preestablecido de visualizador, seleccione la pestaña **[!UICONTROL Aspecto]**.
 1. Realice una de las acciones siguientes:
 
-   * Para cargar su propia imagen de zona interactiva que desee utilizar en imágenes, pulse el icono Selector de recursos . En la página Seleccionar contenido , vaya a la imagen de zona interactiva que desee usar, selecciónela y, a continuación, pulse el icono Marca de verificación en la esquina superior derecha.
-   * Para seleccionar una imagen de zona interactiva predefinida, pulse el icono Galería de puntos interactivos . En la paleta Galería de puntos interactivos, pulse la imagen de zona interactiva que desee utilizar.
+   * Para cargar su propia imagen de zona interactiva que desee utilizar en imágenes, seleccione el icono Selector de recursos . En la página Seleccionar contenido , vaya a la imagen de zona interactiva que desee utilizar, selecciónela y, a continuación, seleccione el icono Marca de verificación en la esquina superior derecha.
+   * Para seleccionar una imagen de zona interactiva predefinida, seleccione el icono Galería de puntos interactivos . En la paleta Galería de puntos interactivos, seleccione la imagen de zona interactiva que desee utilizar.
 
-1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]**.
+1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**.
 
    Asegúrese de publicar el nuevo ajuste preestablecido de visor.
 
@@ -260,43 +260,43 @@ Si edita imágenes interactivas con zonas interactivas y recorta la imagen, se e
 1. En la vista Recursos, desplácese hasta el banner de imagen que desee convertir en interactivo.
 1. Realice una de las acciones siguientes:
 
-   * Pase el ratón sobre la imagen y, a continuación, pulse **[!UICONTROL Seleccionar]** (icono de marca de verificación). En la barra de herramientas, pulse **[!UICONTROL Editar]**.
+   * Pase el ratón sobre la imagen y, a continuación, seleccione **[!UICONTROL Seleccionar]** (icono de marca de verificación). En la barra de herramientas, seleccione **[!UICONTROL Editar]**.
 
-   * Pase el ratón sobre la imagen y, a continuación, pulse **[!UICONTROL Más acciones]** (icono de tres puntos) **[!UICONTROL Editar]**.
+   * Pase el ratón sobre la imagen y, a continuación, seleccione **[!UICONTROL Más acciones]** (icono de tres puntos) **[!UICONTROL Editar]**.
 
-   * Pulse la imagen para poder abrirla en la página Vista de detalles . En la barra de herramientas, pulse **[!UICONTROL Editar]**.
+   * Seleccione la imagen para abrirla en la página Vista de detalles . En la barra de herramientas, seleccione **[!UICONTROL Editar]**.
 
-1. Cerca de la esquina superior izquierda de la página, pulse **[!UICONTROL Agregar zona interactiva]** (icono con el dedo) para abrir la página de administración de puntos interactivos.
-1. Cerca de la esquina superior izquierda de la página, pulse **[!UICONTROL Zona interactiva]**.
+1. Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Agregar zona interactiva]** (icono con el dedo) para abrir la página de administración de puntos interactivos.
+1. Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Zona interactiva]**.
 
-   1. Cerca de la esquina superior izquierda de la página Administración de puntos interactivos, pulse **[!UICONTROL Zona interactiva]**.
-   1.  En la imagen, pulse una ubicación en la que desee que aparezca el punto interactivo. Si es necesario, arrastre la zona interactiva para ajustar su ubicación.
+   1. Cerca de la esquina superior izquierda de la página Administración de puntos interactivos, seleccione **[!UICONTROL Zona interactiva]**.
+   1. En la imagen, seleccione una ubicación en la que desee que aparezca el punto interactivo. Si es necesario, arrastre la zona interactiva para ajustar su ubicación.
    1. Agregue más zonas interactivas según sea necesario repitiendo los pasos a y b.
-   1. (Opcional) Para eliminar una zona interactiva, selecciónela en la imagen y, a continuación, pulse **[!UICONTROL Eliminar]** (icono de la papelera) en el encabezado **[!UICONTROL Zonas interactivas]**.
+   1. (Opcional) Para eliminar una zona interactiva, selecciónela en la imagen y, a continuación, seleccione **[!UICONTROL Eliminar]** (icono de la papelera) en el encabezado **[!UICONTROL Zonas interactivas]**.
 
 1. En el campo de texto Nombre , escriba el nombre de la zona interactiva. Este nombre también aparece en la lista desplegable Zona interactiva seleccionada .
 1. Realice una de las acciones siguientes:
 
-   * Toque **[!UICONTROL Quickview]**.
+   * Seleccione **[!UICONTROL Quickview]**.
 
-      * Si es Experience Manager de sitios o cliente de comercio electrónico, toque o haga clic en el icono Selector de productos (lupa) para abrir la página Seleccionar producto . Toque o haga clic en el producto que desee utilizar y, a continuación, pulse **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página para poder volver a la página de administración de puntos interactivos.
+      * Si es Experience Manager de Sitios o cliente de comercio electrónico, seleccione el icono Selector de productos (lupa) para abrir la página Seleccionar producto . Seleccione el producto que desea utilizar y, a continuación, seleccione **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página para que pueda volver a la página de administración de puntos interactivos.
       * Si es *no* cliente de Sites Experience Manager o comercio electrónico
 
          * Consulte [Identificar variables de puntos interactivos](#optional-identifying-hotspot-variables); debe definir estas variables.
-         * A continuación, introduzca manualmente el valor de SKU. En el campo de texto Valor de SKU , escriba el SKU del producto (unidad de mantenimiento de stock), que es un identificador único para cada producto o servicio distinto que ofrezca. El valor de SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida, de modo que el sistema sepa que debe asociar la zona interactiva tocada con la vista rápida de un SKU en particular.
-         * (Opcional) Si hay otras variables dentro de la vista rápida que debe utilizar para identificar un producto, pulse **[!UICONTROL Agregar variable genérica]**. En el campo de texto, especifique una variable adicional. Por ejemplo, `category=Males` es una variable agregada.
-   * Toque **[!UICONTROL Hipervínculo]**.
+         * A continuación, introduzca manualmente el valor de SKU. En el campo de texto Valor de SKU , escriba el SKU del producto (unidad de mantenimiento de stock), que es un identificador único para cada producto o servicio distinto que ofrezca. El valor SKU introducido rellena automáticamente la parte variable de la plantilla de vista rápida, de modo que el sistema sepa asociar la zona interactiva seleccionada con la vista rápida de un SKU concreto.
+         * (Opcional) Si hay otras variables dentro de la vista rápida que debe utilizar para identificar un producto, seleccione **[!UICONTROL Agregar variable genérica]**. En el campo de texto, especifique una variable adicional. Por ejemplo, `category=Males` es una variable agregada.
+   * Seleccione **[!UICONTROL Hipervínculo]**.
 
-      * Si es cliente de Sites de Experience Manager, toque o haga clic en el icono (carpeta) Selector de sitio para desplazarse a una dirección URL. El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
+      * Si es cliente de Sites Experience Manager, seleccione el icono Selector de sitio (carpeta) para navegar a una dirección URL. El método de vinculación basado en URL no es posible si el contenido interactivo tiene vínculos con direcciones URL relativas, especialmente vínculos a páginas de sitios Experience Manager.
       * Si es cliente independiente, en el campo de texto HREF especifique la ruta de URL completa a una página web vinculada.
 
    Asegúrese de especificar si desea abrir el vínculo en una nueva pestaña del explorador (opción predeterminada recomendada) o en la misma pestaña.
 
    Consulte [Trabajar con selectores](/help/assets/working-with-selectors.md) para obtener más información.
 
-   * Pulse **[!UICONTROL Fragmento de experiencias]**.
+   * Seleccione **[!UICONTROL Fragmento de experiencia]**.
 
-      * Si es cliente de Sitios Experience Manager, toque o haga clic en el icono de Buscar (lupa) para abrir la página Fragmento de experiencias . Pulse el fragmento de experiencia que desee utilizar y, a continuación, pulse **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página para poder volver a la página de administración de puntos interactivos.
+      * Si es cliente de Sitios Experience Manager, seleccione el icono de búsqueda (lupa) para abrir la página Fragmento de experiencias . Seleccione el fragmento de experiencia que desee utilizar y, a continuación, seleccione **[!UICONTROL Seleccionar]** en la esquina superior derecha de la página para que pueda volver a la página de administración de puntos interactivos.
 Consulte [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md).
 
       * Especifique la anchura y la altura del fragmento de experiencia tal como desea que aparezca en el banner.
@@ -306,7 +306,7 @@ Consulte [Fragmentos de experiencias](/help/sites-authoring/experience-fragments
 
 
 
-1. Toque **[!UICONTROL Guardar]** para guardar el trabajo y volver a la página Examinar.
+1. Seleccione **[!UICONTROL Guardar]** para guardar el trabajo y volver a la página Examinar.
 1. Publique la imagen interactiva. La publicación permite entregar el banner a través de la nube y también genera código incrustado si necesita integrarlo con un sitio web de terceros.
 
    Consulte [Publicar recursos](/help/assets/manage-assets.md#publishing-assets).
@@ -329,10 +329,10 @@ Consulte [Agregar recursos de Dynamic Media a páginas](/help/assets/adding-dyna
 
 **Para previsualizar imágenes interactivas:**
 
-1. En la vista Recursos, desplácese a la imagen interactiva existente que haya creado y pulse para abrirla en Vista previa.
-1. Cerca de la esquina superior izquierda de la página Vista previa, en la lista desplegable Contenido, pulse **[!UICONTROL Visualizadores]**.
-1. En la lista Visualizadores, pulse **[!UICONTROL Shoppable_Banner]** o el nombre del ajuste preestablecido del visualizador de imágenes interactivo que ha creado.
-1. Pulse las zonas interactivas de la imagen si desea probar las acciones asociadas.
+1. En la vista Recursos, desplácese a la imagen interactiva existente que haya creado y seleccione para abrirla en Vista previa.
+1. Cerca de la esquina superior izquierda de la página Vista previa, en la lista desplegable Contenido, seleccione **[!UICONTROL Visualizadores]**.
+1. En la lista Visualizadores, seleccione **[!UICONTROL Shoppable_Banner]** o el nombre del ajuste preestablecido del visualizador de imágenes interactivo que ha creado.
+1. Seleccione las zonas interactivas de la imagen si desea probar las acciones asociadas.
 
 ## Publicar recursos de imagen interactivos {#publishing-interactive-image-assets}
 
@@ -398,7 +398,7 @@ La implementación de vista rápida existente representa normalmente una cadena 
 
 Estas llamadas no representan llamadas de API públicas independientes a las que la lógica de página web puede llamar desde un paso arbitrario. En su lugar, se trata de una llamada encadenada en la que cada paso siguiente se oculta en la última fase (llamada de retorno) del paso anterior.
 
-Al mismo tiempo que la imagen interactiva de ventas sustituye al paso 1 y al paso 2 parcialmente, cuando un usuario hace clic en un punto interactivo dentro de la imagen de ventas, el visor gestiona dicha interacción del usuario. El visor devuelve un evento a la página web que contiene todos los datos de zona interactiva añadidos anteriormente a Recursos de Experience Manager.
+Al mismo tiempo que la imagen interactiva de ventas sustituye al paso 1 y al paso 2 parcialmente, cuando un usuario selecciona un punto interactivo dentro de la imagen de ventas, el visor gestiona dicha interacción del usuario. El visor devuelve un evento a la página web que contiene todos los datos de zona interactiva añadidos anteriormente a Recursos de Experience Manager.
 
 En un controlador de eventos de este tipo, el código front-end hace lo siguiente:
 
