@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Perfiles de imagen
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 6ac0be454a5410f55155490941cb5aa6e2d8620b
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '2755'
-ht-degree: 12%
+source-wordcount: '2790'
+ht-degree: 10%
 
 ---
 
@@ -39,43 +39,15 @@ Cada generación de recorte inteligente que cree requiere un procesamiento adici
 
 Tiene dos opciones de recorte de imagen entre las que elegir. También tiene la opción de automatizar la creación de muestras de color e imagen.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Opción</strong></td>
-   <td><strong>Cuándo se utiliza</strong></td>
-   <td><strong>Descripción</strong></td>
-  </tr>
-  <tr>
-   <td>Recorte de píxeles</td>
-   <td>Recorte masivo de imágenes basado únicamente en dimensiones.</td>
-   <td><p>Para utilizar esta opción, seleccione <strong>Recorte de píxeles</strong> en la lista desplegable Opciones de recorte.</p> <p>Para recortar desde los lados de una imagen, introduzca el número de píxeles que se recortarán desde cualquier lado o lado de la imagen. La cantidad de imagen recortada depende de la configuración de ppi (píxeles por pulgada) en el archivo de imagen.</p> <p>Un recorte de píxeles de perfil de imagen se procesa de la siguiente manera:<br /> </p>
-    <ul>
-     <li>Los valores son Superior, Inferior, Izquierda y Derecha.</li>
-     <li>La parte superior izquierda se considera 0,0 y el recorte de píxeles se calcula a partir de ahí.</li>
-     <li>Punto inicial de recorte: La izquierda es X y la superior es Y</li>
-     <li>Cálculo horizontal: dimensión de píxeles horizontal de la imagen original menos Izquierda y luego menos Derecha.</li>
-     <li>Cálculo vertical: altura vertical de píxeles menos Superior y, a continuación, menos Inferior.</li>
-    </ul> <p>Por ejemplo, supongamos que tiene una imagen de 4000 x 3000 píxeles. Se utilizan valores: Superior=250, Inferior=500, Izquierda=300, Derecha=700.</p> <p>Desde la parte superior izquierda (300.250), recorte utilizando el espacio de relleno (4000-300-700, 3000-250-500 o 3000.2250).</p> </td>
-  </tr>
-  <tr>
-   <td>Recorte inteligente</td>
-   <td>Imágenes de recorte masivo basadas en su punto focal visual.</td>
-   <td><p>Smart Crop utiliza el poder de la inteligencia artificial en Adobe Sensei para automatizar rápidamente el recorte de imágenes en masa. El recorte inteligente detecta y recorta automáticamente al punto focal de cualquier imagen para capturar el punto de interés deseado, independientemente del tamaño de la pantalla.</p> <p>Para utilizar Recorte inteligente, seleccione <strong>Recorte inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de Recorte de imagen adaptable, active (active) la función.</p> <p>Los tamaños predeterminados de los puntos de interrupción Grande, Medio y Pequeño generalmente abarcan toda la gama de tamaños que la mayoría de las imágenes se utilizan en dispositivos móviles y tabletas, equipos de escritorio y titulares. Si lo desea, puede editar los nombres predeterminados de Grande, Medio y Pequeño.</p> <p>Para agregar más puntos de interrupción, haga clic en <strong>Agregar recorte</strong>; para eliminar un recorte, haga clic en el icono de la papelera.</p> </td>
-  </tr>
-  <tr>
-   <td>Muestra de color e imagen</td>
-   <td>Bulk genera una muestra de imagen para cada imagen.</td>
-   <td><p><strong>Nota</strong>: La muestra inteligente no es compatible con Dynamic Media Classic.</p> <p>Localice y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.</p> <p>Para utilizar la Muestra de color e imagen, seleccione <strong>Recorte inteligente</strong> en la lista desplegable Opciones de recorte y, a continuación, a la derecha de la Muestra de color e imagen, active (active) la función. Introduzca un valor de píxel en los cuadros de texto Ancho y Alto.</p> <p>Aunque todos los cultivos de imagen están disponibles en el carril Representaciones , las muestras solo se utilizan mediante la función Copiar URL . Utilice su propio componente de visualización para representar la muestra en el sitio. (La excepción a esta regla son los banners de carrusel. Dynamic Media proporciona el componente de visualización para la muestra utilizada en los banners de carrusel).</p> <p><strong>Uso de muestras de imagen</strong></p> <p>La dirección URL de las muestras de imagen es sencilla. Es:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>donde <code>:Swatch</code> se anexa a la solicitud de recurso.</p> <p><strong>Uso de muestras de color</strong></p> <p>Para utilizar muestras de color, realice una solicitud <code>req=userdata</code> con lo siguiente:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Por ejemplo, el siguiente es un recurso de muestra en Dynamic Media Classic:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>y aquí está la URL <code>req=userdata</code> correspondiente del recurso de muestra:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>La respuesta <code>req=userdata</code> es la siguiente:</p> <p><code class="code">SmartCropDef=Swatch
-       SmartCropHeight=200.0
-       SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
-       SmartCropType=Swatch
-       SmartCropWidth=200.0
-       SmartSwatchColor=0xA56DB2</code></p> <p>También puede solicitar una respuesta <code>req=userdata</code> en formato XML o JSON, como en los siguientes ejemplos de URL respectivos:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml</code></p><p><code>SmartSwatchColor</code></p><p></p></td></tr></tbody></table>
+| Opción | Cuándo se utiliza | Descripción |
+| --- | --- | --- |
+| Recorte de píxeles | Recorte masivo de imágenes basado únicamente en dimensiones. | Para utilizar esta opción, seleccione **[!UICONTROL Recorte de píxeles]** en la lista desplegable Opciones de recorte.<br><br>Para recortar desde los lados de una imagen, introduzca el número de píxeles que se recortarán desde cualquier lado o lado de la imagen. La cantidad de imagen recortada depende de la configuración de ppi (píxeles por pulgada) en el archivo de imagen.<br><br>Un recorte de píxeles de perfil de imagen se procesa de la siguiente manera:<br> los valores de ・ son Superior, Inferior, Izquierda y Derecha.<br>・ Se considera la parte superior izquierda  `0,0` y el recorte de píxeles se calcula a partir de ahí.<br>・ Punto inicial del recorte: Izquierda es X y Superior es Y<br> ・ Cálculo horizontal: dimensión de píxeles horizontal de la imagen original menos Izquierda y luego menos Derecha.<br>・ Cálculo vertical: altura vertical de píxeles menos Superior y, a continuación, menos Inferior.<br><br>Por ejemplo, supongamos que tiene una imagen de 4000 x 3000 píxeles. Se utilizan valores: Superior=250, Inferior=500, Izquierda=300, Derecha=700.<br><br>Desde la parte superior izquierda (300.250), recorte utilizando el espacio de relleno (4000-300-700, 3000-250-500 o 3000.2250). |
+| Recorte inteligente | Imágenes de recorte masivo basadas en su punto focal visual. | Smart Crop utiliza el poder de la inteligencia artificial en Adobe Sensei para automatizar rápidamente el recorte de imágenes en masa. El recorte inteligente detecta y recorta automáticamente al punto focal de cualquier imagen para capturar el punto de interés deseado, independientemente del tamaño de la pantalla.</p> <p>Para utilizar Recorte inteligente, seleccione **[!UICONTROL Recorte inteligente]** en la lista desplegable Opciones de recorte y, a continuación, a la derecha de Recorte de imagen adaptable, active (active) la función.</p> <p>Los tamaños predeterminados de los puntos de interrupción Grande, Medio y Pequeño generalmente abarcan toda la gama de tamaños que la mayoría de las imágenes se utilizan en dispositivos móviles y tabletas, equipos de escritorio y titulares. Si lo desea, puede editar los nombres predeterminados de Grande, Medio y Pequeño.</p> <p>Para agregar más puntos de interrupción, seleccione **[!UICONTROL Agregar recorte]** para eliminar un recorte, seleccione el icono Basura. |
+| Muestra de color e imagen | Bulk genera una muestra de imagen para cada imagen. | **Nota**: La muestra inteligente no es compatible con Dynamic Media Classic.<br><br>Localice y genere automáticamente muestras de alta calidad a partir de imágenes de productos que muestren color o textura.<br><br>Para utilizar la muestra de color e imagen, seleccione  **[!UICONTROL Recorte]** inteligente en la lista desplegable Opciones de recorte y, a continuación, a la derecha de Color y Muestra de imagen, active (active) la función. Introduzca un valor de píxel en los cuadros de texto Ancho y Alto.<br><br>Aunque todos los cultivos de imagen están disponibles en el carril Representaciones , las muestras solo se utilizan mediante la función Copiar URL . Utilice su propio componente de visualización para representar la muestra en el sitio. (La excepción a esta regla son los banners de carrusel. Dynamic Media proporciona el componente de visualización para la muestra utilizada en los banners de carrusel).<br><br>**Uso de**<br> muestras de imagenLa URL de las muestras de imagen es sencilla. Es:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>donde `:Swatch` se anexa a la solicitud de recurso.<br><br>**Uso de**<br> muestras de colorPara utilizar muestras de color, realice una  `req=userdata` solicitud con lo siguiente:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br> Por ejemplo, el siguiente es un recurso de muestra en Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br> y aquí está la  `req=userdata` URL correspondiente del recurso de muestra:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br> La  `req=userdata` respuesta es la siguiente:<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br> También puede solicitar una  `req=userdata` respuesta en formato XML o JSON, como en los siguientes ejemplos de URL respectivos: <br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Nota:**  Crear su propio componente WCM para solicitar una muestra de color y analizar el  `SmartSwatchColor` atributo, representado por un valor hexadecimal RGB de 24 bits.<br><br>Consulte también  [`userdata` en la Guía](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html) de referencia de visores. |
 
 ## Máscara de enfoque {#unsharp-mask}
 
-La **[!UICONTROL máscara de enfoque]** se utiliza para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se ignora. Este efecto utiliza las mismas opciones que el filtro “Máscara de enfoque” de Adobe Photoshop.
+La **[!UICONTROL máscara de enfoque]** se utiliza para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se ignora. Este efecto utiliza las mismas opciones que el filtro *Máscara de enfoque* de Adobe Photoshop.
 
 >[!NOTE]
 >
@@ -101,8 +73,8 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 
 **Para crear perfiles de imagen de Dynamic Media:**
 
-1. Pulse el logotipo de Adobe Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
-1. Toque **[!UICONTROL Crear]** para agregar un perfil de imagen.
+1. Seleccione el logotipo de Adobe Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
+1. Seleccione **[!UICONTROL Crear]** para agregar un perfil de imagen.
 1. Introduzca un nombre de perfil y valores para máscara de enfoque, recorte o muestra, o ambos.
 
    Utilice un nombre de perfil específico para el propósito deseado. Por ejemplo, si desea crear un perfil que genere muestras únicamente, es decir, el Recorte inteligente está desactivado y la Muestra de color e imagen está activada, utilice el nombre de perfil &quot;Muestras inteligentes&quot;.
@@ -111,18 +83,18 @@ Consulte también [Prácticas recomendadas para organizar los recursos digitales
 
    ![recortarla](assets/crop.png)
 
-1. Toque **[!UICONTROL Guardar]**. El perfil recién creado aparece en la lista de perfiles disponibles.
+1. Seleccione **[!UICONTROL Guardar]**. El perfil recién creado aparece en la lista de perfiles disponibles.
 
-## Edición o eliminación de perfiles de imagen de Dynamic Media {#editing-or-deleting-image-profiles}
+## Editar o eliminar perfiles de imagen de Dynamic Media {#editing-or-deleting-image-profiles}
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
-1. Seleccione el perfil de imagen que desee editar o eliminar. Para editarlo, seleccione **[!UICONTROL Editar perfil de procesamiento de imagen]**. Para eliminarlo, seleccione **[!UICONTROL Eliminar perfil de procesamiento de imagen]**.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
+1. Seleccione el perfil de imagen que desee editar o eliminar. Para editarlo, seleccione **[!UICONTROL Editar perfil de imagen]**. Para eliminarlo, seleccione **[!UICONTROL Eliminar perfil de imagen]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
 1. Si está editando, guarde los cambios. Si elimina, confirme que desea eliminar el perfil.
 
-## Aplicación de un perfil de imagen de Dynamic Media a carpetas {#applying-an-image-profile-to-folders}
+## Aplicar un perfil de imagen de Dynamic Media a las carpetas {#applying-an-image-profile-to-folders}
 
 Al asignar un perfil de imagen a una carpeta, las subcarpetas heredan automáticamente el perfil de su carpeta principal. Este flujo de trabajo significa que solo puede asignar un perfil de imagen a una carpeta. Como tal, considere detenidamente la estructura de carpetas en la que carga, almacena, utiliza y archiva recursos.
 
@@ -134,7 +106,7 @@ Las carpetas que tienen un perfil asignado se indican en la interfaz de usuario 
 
 Puede aplicar perfiles de imagen a carpetas específicas o globalmente a todos los recursos.
 
-Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de imagen existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets).
+Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de imagen existente que haya cambiado posteriormente. Consulte [Reprocesar recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets).
 
 ### Aplicación de perfiles de imagen de Dynamic Media a carpetas específicas {#applying-image-profiles-to-specific-folders}
 
@@ -142,26 +114,26 @@ Puede aplicar un perfil de imagen a una carpeta desde el menú **[!UICONTROL Her
 
 Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
-Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte el artículo [Reprocesamiento de recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets).
+Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de vídeo existente que haya cambiado posteriormente. Consulte [Reprocesar recursos en una carpeta después de editar su perfil de procesamiento](processing-profiles.md#reprocessing-assets).
 
 #### Aplicación de perfiles de imagen de Dynamic Media a carpetas desde la interfaz de usuario Perfiles {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
 1. Seleccione el perfil de imagen que desea aplicar a una o varias carpetas.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Pulse **[!UICONTROL Aplicar perfil de procesamiento a las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para recibir los recursos cargados recientemente y pulse o haga clic en **[!UICONTROL Aplicar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
+1. Seleccione **[!UICONTROL Aplicar perfil de procesamiento a las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para recibir los recursos cargados recientemente y seleccione **[!UICONTROL Aplicar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
 #### Aplicación de perfiles de imagen de Dynamic Media a carpetas desde Propiedades {#applying-image-profiles-to-folders-from-properties}
 
-1. Pulse el logotipo de AEM y vaya a **[!UICONTROL Assets]**. A continuación, vaya a la carpeta principal de la carpeta a la que desea aplicar un perfil de imagen.
-1. En la carpeta, pulse la marca de verificación para seleccionarla y, a continuación, pulse **[!UICONTROL Propiedades]**.
-1. Pulse la pestaña **[!UICONTROL Perfiles de imagen]**. En la lista desplegable **[!UICONTROL Nombre del perfil]**, seleccione el perfil y, a continuación, pulse **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
+1. Seleccione el logotipo del Experience League y vaya a **[!UICONTROL Assets]**. A continuación, vaya a la carpeta principal de la carpeta a la que desea aplicar un perfil de imagen.
+1. En la carpeta, seleccione la marca de verificación para seleccionarla y, a continuación, seleccione **[!UICONTROL Properties]**.
+1. Seleccione la pestaña **[!UICONTROL Image Profiles]**. En la lista desplegable **[!UICONTROL Nombre del perfil]**, seleccione el perfil y, a continuación, seleccione **[!UICONTROL Guardar y cerrar]**. Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Aplicación de un perfil de imagen de Dynamic Media globalmente {#applying-an-image-profile-globally}
+### Aplicar un perfil de imagen de Dynamic Media globalmente {#applying-an-image-profile-globally}
 
 Además de aplicar un perfil a una carpeta, también puede aplicarlo de forma global para que cualquier contenido cargado en recursos de Experience Manager en cualquier carpeta tenga aplicado el perfil seleccionado.
 
@@ -171,17 +143,17 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 1. Realice una de las acciones siguientes:
 
-   * Vaya a `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`, aplique el perfil adecuado y pulse **[!UICONTROL Guardar]**.
+   * Vaya a `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam`, aplique el perfil adecuado y seleccione **[!UICONTROL Guardar]**.
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * Vaya al CRXDE Lite al nodo siguiente: `/content/dam/jcr:content`.
 
-      Agregue la propiedad `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` y pulse **[!UICONTROL Guardar todo]**.
+      Agregue la propiedad `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` y seleccione **[!UICONTROL Guardar todo]**.
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
-## Edición del recorte inteligente o de la muestra inteligente de una sola imagen {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
+## Editar el recorte inteligente o la muestra inteligente de una sola imagen {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!NOTE]
 >
@@ -193,26 +165,26 @@ Después de editar un recorte inteligente y guardarlo, el cambio se propaga en t
 
 Si es necesario, puede volver a ejecutar el recorte inteligente para volver a generar los cultivos adicionales.
 
-Consulte también [Edición del recorte inteligente o muestra inteligente de varias imágenes](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
+Consulte también [Editar el recorte inteligente o la muestra inteligente de varias imágenes](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
 **Para editar el recorte inteligente o la muestra inteligente de una sola imagen:**
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta a la que se le haya aplicado un perfil de imagen de muestra inteligente o de recorte inteligente.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta a la que se le haya aplicado un perfil de imagen de muestra inteligente o de recorte inteligente.
 
-1. Pulse la carpeta para poder abrir su contenido.
-1. Pulse la imagen cuyo recorte inteligente o muestra inteligente desee ajustar.
-1. En la barra de herramientas, pulse **[!UICONTROL Recorte inteligente]**.
+1. Seleccione la carpeta para poder abrir su contenido.
+1. Seleccione la imagen cuyo recorte inteligente o muestra inteligente desee ajustar.
+1. En la barra de herramientas, seleccione **[!UICONTROL Recorte inteligente]**.
 
 1. Realice una de las acciones siguientes:
 
    * Cerca de la esquina superior derecha de la página, arrastre la barra deslizante a la izquierda o a la derecha para aumentar o reducir la visualización de la imagen, respectivamente.
    * En la imagen, arrastre un controlador de esquina para ajustar el tamaño del área visible del recorte o muestra.
    * En la imagen, arrastre el cuadro/muestra a una nueva ubicación. Solo se pueden editar muestras de imágenes; las muestras de color son estáticas.
-   * Sobre la imagen, pulse **[!UICONTROL Revertir]** para deshacer todas las ediciones y restaurar el recorte o muestra original.
+   * Sobre la imagen, seleccione **[!UICONTROL Revertir]** para deshacer todas las ediciones y restaurar el recorte o muestra original.
 
-1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]** y, a continuación, pulse **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
+1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]** y, a continuación, seleccione **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
 
-## Edición del recorte inteligente o de la muestra inteligente de varias imágenes {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+## Editar el recorte inteligente o la muestra inteligente de varias imágenes {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 Después de aplicar un perfil de imagen (que contiene Recorte inteligente) a una carpeta, todas las imágenes de esa carpeta tienen un recorte aplicado a ellas. Si lo desea, puede *manualmente* realinear o cambiar el tamaño de la ventana de recorte inteligente en varias imágenes para reducir aún más su punto focal.
 
@@ -222,8 +194,8 @@ Si es necesario, puede volver a ejecutar el recorte inteligente para volver a ge
 
 **Para editar el recorte inteligente o la muestra inteligente de varias imágenes:**
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a una carpeta a la que se le haya aplicado un perfil de imagen de muestra inteligente o de recorte inteligente.
-1. En la carpeta, pulse el icono **[!UICONTROL Más acciones]** (...) y, a continuación, pulse **[!UICONTROL Recorte inteligente]**.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a una carpeta que tenga aplicado un perfil de imagen de muestra inteligente o un recorte inteligente.
+1. En la carpeta, seleccione el icono **[!UICONTROL Más acciones]** (...) y, a continuación, seleccione **[!UICONTROL Recorte inteligente]**.
 
 1. En la página **[!UICONTROL Editar Recortes inteligentes]**, realice una de las acciones siguientes:
 
@@ -242,46 +214,46 @@ Si es necesario, puede volver a ejecutar el recorte inteligente para volver a ge
    * Cambie el tamaño del cuadro de recorte inteligente. Realice una de las siguientes acciones:
 
       * Si la imagen tiene un recorte inteligente o solo una muestra inteligente, arrastre en la imagen el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte.
-      * Si la imagen tiene un recorte inteligente y una muestra inteligente, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte. O bien, toque o haga clic en la muestra inteligente situada debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible de la muestra.
+      * Si la imagen tiene un recorte inteligente y una muestra inteligente, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible del recorte. O bien, seleccione la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el controlador de esquina del cuadro de recorte para ajustar el tamaño del área visible de la muestra.
 
       ![Cambiar el tamaño del recorte inteligente de una imagen](assets/edit_smart_crops-resize.png)
 
    * Mueva el cuadro de recorte inteligente. Realice una de las siguientes acciones:
 
       * Si la imagen tiene un recorte inteligente o solo una muestra inteligente, arrastre el cuadro de recorte a una nueva ubicación.
-      * Si la imagen tiene un recorte inteligente y una muestra inteligente, arrastre el cuadro de recorte inteligente a una nueva ubicación. O bien, toque o haga clic en la muestra inteligente situada debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el cuadro de recorte de muestras inteligente a una nueva ubicación.
+      * Si la imagen tiene un recorte inteligente y una muestra inteligente, arrastre el cuadro de recorte inteligente a una nueva ubicación. O bien, seleccione la muestra inteligente debajo de la imagen (las muestras de color son estáticas) y, a continuación, arrastre el cuadro de recorte de muestras inteligentes a una nueva ubicación.
 
       ![edit_smart_farms-move](assets/edit_smart_crops-move.png)
 
    * Deshacer todas las ediciones y restaurar el recorte inteligente o la muestra inteligente original (se aplica solo a la sesión de edición actual).
 
-      Toque **[!UICONTROL Revertir]** encima de la imagen.
+      Seleccione **[!UICONTROL Revertir]** encima de la imagen.
 
       ![edit_smart_farms-revert](assets/edit_smart_crops-revert.png)
 
 
 
-1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]** y, a continuación, pulse **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
+1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]** y, a continuación, seleccione **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
 
-## Eliminación de perfiles de imagen de carpetas {#removing-an-image-profile-from-folders}
+## Eliminación de un perfil de imagen de Dynamic Media de las carpetas {#removing-an-image-profile-from-folders}
 
 Al quitar un perfil de imagen de una carpeta, las subcarpetas heredan automáticamente la eliminación del perfil de su carpeta principal. Sin embargo, cualquier procesamiento de archivos que se haya producido dentro de las carpetas permanece intacto.
 
 Puede quitar un perfil de imagen de una carpeta desde el menú **[!UICONTROL Herramientas]** o, si está en la carpeta, desde **[!UICONTROL Propiedades]**. En esta sección se describe cómo quitar perfiles de imagen de las carpetas de ambos modos.
 
-### Eliminación de perfiles de imagen de Dynamic Media de carpetas mediante la interfaz de usuario Perfiles {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Eliminación de perfiles de imagen de Dynamic Media de las carpetas mediante la interfaz de usuario Perfiles {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
+1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
 1. Seleccione el perfil de imagen que desea eliminar de una carpeta o de varias carpetas.
-1. Pulse **[!UICONTROL Quitar perfil de procesamiento de las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para quitar el perfil y pulse **[!UICONTROL Quitar]**.
+1. Seleccione **[!UICONTROL Quitar perfil de procesamiento de las carpetas]** y seleccione la carpeta o carpetas que desee utilizar para quitar el perfil y seleccione **[!UICONTROL Quitar]**.
 
    Puede confirmar que el perfil de imagen ya no se aplica a una carpeta porque el nombre ya no aparece debajo del nombre de la carpeta.
 
 ### Eliminación de perfiles de imagen de Dynamic Media de las carpetas mediante Propiedades {#removing-image-profiles-from-folders-via-properties}
 
-1. Pulse el logotipo del Experience Manager y vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta desde la que desea quitar un perfil de imagen.
-1. En la carpeta, pulse la marca de verificación para seleccionarla y, a continuación, pulse **[!UICONTROL Propiedades]**.
+1. Seleccione el logotipo del Experience Manager, vaya a **[!UICONTROL Assets]** y, a continuación, a la carpeta desde la que desea quitar un perfil de imagen.
+1. En la carpeta, seleccione la marca de verificación para seleccionarla y, a continuación, seleccione **[!UICONTROL Properties]**.
 1. Seleccione la pestaña **[!UICONTROL Image Profiles]**.
-1. En la lista desplegable **[!UICONTROL Nombre del perfil]**, seleccione **[!UICONTROL Ninguno]** y, a continuación, pulse **[!UICONTROL Guardar y cerrar]**.
+1. En la lista desplegable **[!UICONTROL Nombre del perfil]**, seleccione **[!UICONTROL Ninguno]** y, a continuación, seleccione **[!UICONTROL Guardar y cerrar]**.
 
    Las carpetas que ya tienen un perfil asignado se indican mediante la visualización del nombre del perfil directamente debajo del nombre de la carpeta.
