@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, procese y distribuya recursos digitales.
-source-git-commit: ed213692bc72ab727a5fa105796fb68aef33904e
+source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 42%
+source-wordcount: '584'
+ht-degree: 40%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 42%
    + [Imágenes interactivas](interactive-images.md)
    + [Vídeos interactivos](interactive-videos.md)
    + [Vídeo de RV 360](/help/assets/360-video.md)
-   + [Integración de visualizadores de Dynamic Media con Adobe Analytics y Adobe Launch](/help/assets/launch.md)
+   + [Integración de visores de Dynamic Media con etiquetas de Adobe Analytics y Adobe Experience Platform](/help/assets/tags.md)
    + [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
    + [Distribución de imágenes adaptables para un sitio interactivo](responsive-site.md)
    + [Vista previa de recursos de Dynamic Media](previewing-assets.md)
