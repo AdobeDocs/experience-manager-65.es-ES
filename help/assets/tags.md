@@ -1,6 +1,6 @@
 ---
 title: Integración de visores de Dynamic Media con Adobe Analytics y etiquetas de Experience Platform
-description: La extensión de visores de Dynamic Media para etiquetas de Experience Platform y visores de Dynamic Media 5.13 permite a los clientes de Adobe Analytics y Etiquetas de Experience Platform utilizar eventos y datos específicos para los visualizadores de Dynamic Media en la configuración de etiquetas de Experience Platform.
+description: Obtenga información sobre la extensión Visores de Dynamic Media para Etiquetas de Experience Platform y Visores de Dynamic Media 5.13. Permite a los clientes de Adobe Analytics y Etiquetas de Experience Platform utilizar eventos y datos específicos para Visualizadores de Dynamic Media en la configuración de Etiquetas de Experience Platform.
 mini-toc-levels: 3
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -10,9 +10,9 @@ docset: aem65
 feature: Visores
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
+source-git-commit: 997eeafa03d3148fb0754eaa27a5a99217e0d1bc
 workflow-type: tm+mt
-source-wordcount: '6630'
+source-wordcount: '6636'
 ht-degree: 6%
 
 ---
@@ -802,7 +802,7 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 
 1. En la página **[!UICONTROL Configuraciones de etiquetas de Experience Platform]**, en el panel izquierdo, seleccione un sitio de Experience Manager para el que desee aplicar la configuración de etiquetas de Experience Platform.
 
-   Solo con fines de ejemplo, el `We.Retail` Sitio se selecciona en la captura de pantalla siguiente.
+   Solo con fines de ejemplo, el sitio **`We.Retail`** se selecciona en la captura de pantalla siguiente.
 
    ![26-12-2019-07-20-06](assets/2019-07-26_12-20-06.png)
 
