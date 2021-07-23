@@ -6,7 +6,7 @@ contentOwner: AG
 role: User
 feature: Flujo de trabajo,Representaciones
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4851d61d9897ac71c6512829fdccf1895ad58bcd
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 4%
@@ -37,7 +37,7 @@ Los siguientes controladores de medios están disponibles en [!DNL Assets] y adm
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>aplicación/ilustrador</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b>: al cargar un archivo MP3, se [procesa con una biblioteca de terceros](http://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). La biblioteca calcula una longitud aproximada no precisa si el MP3 tiene velocidad de bits variable (VBR). |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Importante</b>: al cargar un archivo MP3, se [procesa con una biblioteca de terceros](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). La biblioteca calcula una longitud aproximada no precisa si el MP3 tiene velocidad de bits variable (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>aplicación/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -56,7 +56,7 @@ Todos los controladores realizan las siguientes tareas:
 
 Para ver los controladores de medios activos:
 
-1. En el explorador, vaya a `http://localhost:4502/system/console/components`.
+1. En el explorador, vaya a `https://localhost:4502/system/console/components`.
 1. Haga clic `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Se muestra una lista con todos los controladores de medios activos. Por ejemplo:
 
@@ -494,7 +494,7 @@ Instale [!DNL ImageMagick] en el disco que hospeda el servidor [!DNL Experience 
 Para probar el flujo de trabajo modificado, añada un recurso a `/content/dam`.
 
 1. En el sistema de archivos, obtenga una imagen TIFF de su elección. Cambie el nombre a `myImage.tiff` y cópielo a `/content/dam`, por ejemplo utilizando WebDAV.
-1. Vaya a la consola **[!UICONTROL CQ5 DAM]**, por ejemplo `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Vaya a la consola **[!UICONTROL CQ5 DAM]**, por ejemplo `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Abra el recurso **[!UICONTROL myImage.tiff]** y verifique que se hayan creado la imagen volteada y las tres miniaturas.
 
 #### Configurar el paso del proceso CommandLineProcess {#configuring-the-commandlineprocess-process-step}
