@@ -12,10 +12,10 @@ discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 85596d4c2204aa1dd34c409b45d25eeffdb9c046
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
@@ -29,7 +29,7 @@ El instalador de AEM Forms Designer requiere la versión de 32 bits del [paquete
 
 Designer está disponible como instalador independiente y también se incluye en WorkBench. Si utiliza un instalador independiente para Designer, realice los siguientes pasos:
 
-1. Póngase en contacto con la asistencia de Adobe para descargar el instalador de Designer.
+1. Descargue Designer de Adobe [sitio web de licencias](https://licensing.adobe.com/).
 
    >[!NOTE]
    >
