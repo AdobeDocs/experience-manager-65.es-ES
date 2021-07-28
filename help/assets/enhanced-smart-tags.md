@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Etiquetas inteligentes, buscar
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1632'
 ht-degree: 2%
 
 ---
@@ -188,6 +188,7 @@ También puede asignar una clasificación superior a una etiqueta para aumentar 
 
 ## Sugerencias y limitaciones {#tips-best-practices-limitations}
 
+* Para entrenar el modelo, utilice las imágenes más adecuadas. La formación no se puede revertir o el modelo de formación no se puede eliminar. La precisión del etiquetado depende de la formación actual, por lo que debe hacerse con cuidado.
 * El uso de Smart Content Services está limitado a hasta 2 millones de imágenes etiquetadas al año. Las imágenes duplicadas que se procesan y etiquetan se cuentan como imágenes etiquetadas.
 * Si ejecuta el flujo de trabajo de etiquetado desde la línea de tiempo, puede aplicar etiquetas en un máximo de 15 recursos a la vez.
 * Las etiquetas inteligentes solo funcionan para los formatos de imagen PNG y JPG. Por lo tanto, los recursos admitidos que tienen representaciones creadas en estos dos formatos se etiquetan con etiquetas inteligentes.
