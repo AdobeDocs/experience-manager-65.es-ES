@@ -2,9 +2,9 @@
 title: Notas de la versión de contenido y comercio de AEM 2021
 description: Notas de la versión de contenido y comercio de AEM 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 71782a3caae3f74a4886c52cf9b29f9e998913fa
+source-git-commit: d1e2a2b11bd4eaece80a2538ddc34ada59e63578
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '867'
 ht-degree: 8%
 
 ---
@@ -15,19 +15,36 @@ ht-degree: 8%
 
 Revise los requisitos mínimos del sistema en la siguiente tabla para la versión del CIF que está utilizando o que planea usar en el futuro.
 
-**Con la versión de abril hemos reemplazado el conector del CIF de GitHub por el complemento CIF que está disponible en la [Distribución del software del Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). El cambio al complemento incluye buenas ventajas para los proyectos:
+**Con la versión de abril, hemos reemplazado el conector del CIF de GitHub por el complemento CIF** que está disponible en la distribución del software de  [Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). El cambio al complemento incluye buenas ventajas para los proyectos:
 
 * La mayoría de las nuevas funciones estarán disponibles inmediatamente en AEM 6.5 (ya no se espera el puerto lateral de las funciones)
 * Fácil de actualizar a nuevas versiones de complementos
 * Listo para Cloud Service
 
-El antiguo conector del CIF de AEM está entrando en modo de mantenimiento y ya no debería usarse. Sustituya el conector del CIF por el nuevo complemento CIF. Simplemente, la sustitución de paquetes debería ser posible para la mayoría de los proyectos. **
+El antiguo conector del CIF de AEM está entrando en modo de mantenimiento y ya no debería usarse. Sustituya el conector del CIF por el nuevo complemento CIF. Simplemente, la sustitución de paquetes debería ser posible para la mayoría de los proyectos.
 
 | Componente | Requisitos del sistema |
 |:-------|:-----:|
 | Complemento CIF | Mínimo: AEM 6.5.7, Magento 2.3.5 Esquemas de GraphQL |
 | Componentes principales de CIF | [Requisitos del sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Tipo de archivo del proyecto AEM | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Fecha de versión: Julio de 2021
+
+| Componente | Versión | Detalles |
+|:-------|:-----:|---------------------:|
+| Complemento CIF | 2021.07.21 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
+| Componentes principales de CIF | 1,13,0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.13.0) |
+| Sitio de referencia de Venia del CIF | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
+
+### Novedades {#what-is-new-july}
+
+* Componentes principales de CIF v2
+   * Configuraciones simplificadas y mejoradas para URL PDP/PLP y SEO
+   * Indicador visual para datos de productos clasificados en modo de creación para una mejor visibilidad de los próximos cambios
+   * Nuevo componente de mapa del sitio para páginas de contenido y comercio
+
+* Compatibilidad con la recomendación de producto [Adobe Commerce Sensei, con tecnología de Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) en AEM Tienda, con recomendaciones predefinidas o creadas sobre la marcha
 
 ## Fecha de versión: Junio de 2021
 
@@ -79,8 +96,6 @@ El antiguo conector del CIF de AEM está entrando en modo de mantenimiento y ya 
 * AEM extensión para el PWA Studio incl. integración de ejemplo
 
 * Nuevo componente principal de navegación del CIF que amplía el componente principal de navegación de WCM
-
-* Indicador visual para datos de catálogo clasificados en AEM tienda
 
 ### Corrección de errores {#bug-fixes-april}
 
