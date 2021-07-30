@@ -8,11 +8,11 @@ audience: administrator
 feature: Marco de integración de Commerce
 kt: 4933
 thumbnail: 34350.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
+source-git-commit: dbd38aa75caa7c3c2feee79702ab85ab397eb583
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 88%
+source-wordcount: '745'
+ht-degree: 42%
 
 ---
 
@@ -24,36 +24,61 @@ Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-c
 
 ## Configuración {#configuration}
 
-Para configurar el servicio `UrlProvider` según los requisitos de SEO y las necesidades, un proyecto debe proporcionar una configuración OSGI para la configuración del &quot;proveedor de URL del CIF&quot; y configurar el servicio como se describe a continuación.
+Para configurar el servicio `UrlProvider` según los requisitos de SEO y las necesidades, un proyecto debe proporcionar una configuración OSGI para la &quot;configuración del proveedor de URL del CIF&quot;.
 
 >[!NOTE]
 >
-> El proyecto [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia) que se muestra a continuación, incluye configuraciones de muestra para demostrar el uso de direcciones URL personalizadas para páginas de productos y categorías.
+> Desde la versión 2.0.0 de los componentes principales del CIF de AEM, la configuración del proveedor de URL solo proporciona formatos de URL predefinidos, en lugar de los formatos configurables de texto libre conocidos en las versiones 1.x. Además, el uso de selectores para pasar datos en direcciones URL se ha sustituido por sufijos.
 
-### Plantilla de dirección URL de la página del producto {#product}
+### Formato de la dirección URL de la página del producto {#product}
 
-Esto configura las direcciones URL de las páginas de productos con las siguientes propiedades:
+Esto configura las direcciones URL de las páginas de producto y admite las siguientes opciones:
 
-* **Plantilla de dirección URL del producto**: define el formato de las direcciones URL con un conjunto de marcadores de posición. El valor predeterminado es `{{page}}.{{url_key}}.html#{{variant_sku}}`, que termina generando direcciones URL como, por ejemplo, `/content/venia/us/en/products/product-page.chaz-kangeroo-hoodie.html#MH01-M-Orange` donde
-   * `{{page}}` se ha reemplazado con `/content/venia/us/en/products/product-page`
-   * `{{url_key}}` se ha reemplazado por la propiedad `url_key` del producto Magento, aquí `chaz-kangeroo-hoodie`
-   * `{{variant_sku}}` se ha reemplazado por la variante seleccionada actualmente, aquí `MH01-M-Orange`
-* **Ubicación del identificador de producto**: define la ubicación del identificador que se utilizará para recuperar los datos del producto. El valor predeterminado es `SELECTOR`, el otro valor posible es `SUFFIX`. Con la URL del ejemplo anterior, esto significa que el identificador `chaz-kangeroo-hoodie` se utilizará para recuperar los datos del producto.
-* **Tipo del identificador de producto**: define el tipo del identificador que se utiliza para recuperar los datos del producto. El valor predeterminado es `URL_KEY`, el otro valor posible es `SKU`. Con la URL del ejemplo anterior, esto significa que los datos del producto se recuperarán con un filtro de Magento GraphQL como `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`.
+* `{{page}}.html/{{sku}}.html#{{variant_sku}}` (predeterminada)
+* `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
+* `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
+* `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
+* `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-### Plantilla URL de la página de lista de productos {#product-list}
+En el caso del [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia):
 
-Esto configura las direcciones URL de las páginas de categorías o listas de productos con las siguientes propiedades:
+* `{{page}}` se sustituye por  `/content/venia/us/en/products/product-page`
+* `{{sku}}` será reemplazado por el sku del producto, p. ej.  `VP09`
+* `{{url_key}}` se reemplazará por la  `url_key` propiedad del producto, por ejemplo  `lenora-crochet-shorts`
+* `{{url_path}}` se reemplazarán por el  `url_path`del producto, p. ej.  `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` se reemplazará por la variante seleccionada actualmente, por ejemplo:  `VP09-KH-S`
 
-* **Plantilla de dirección URL de categorías**: define el formato de las direcciones URL con un conjunto de marcadores de posición. El valor predeterminado es `{{page}}.{{id}}.html`, que termina generando direcciones URL como, por ejemplo, `/content/venia/us/en/products/category-page.3.html` donde
-   * `{{page}}` se ha reemplazado con `/content/venia/us/en/products/category-page`
-   * `{{id}}` es reemplazado por la propiedad de la `id` categoría de Magento aquí `3`
-* **Ubicación del identificador de categoría**: define la ubicación del identificador que se utilizará para recuperar los datos del producto. El valor predeterminado es `SELECTOR`, el otro valor posible es `SUFFIX`. Con la URL del ejemplo anterior, esto significa que el identificador `3` se utilizará para recuperar los datos del producto.
-* **Tipo del identificador de categoría**: define el tipo del identificador que se utiliza para recuperar los datos del producto. El valor predeterminado y solo el valor admitido actualmente es `ID`. Con la URL del ejemplo anterior, esto significa que los datos de la categoría se recuperarán con un filtro de Magento GraphQL como `category(id:3)`.
+Con los datos del ejemplo anterior, la dirección URL de una variante de producto con formato de URL predeterminada será similar a `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
-Es posible añadir propiedades personalizadas para cada plantilla, siempre que los componentes que utilicen la plantilla estén configurando los datos correspondientes de `UrlProvider`. Consulte, por ejemplo, el código de la `ProductListItemImpl` clase para averiguar cómo se implementa.
+### Formato de dirección URL de la página de categoría {#product-list}
 
-También es posible reemplazar el servicio `UrlProvider` con un servicio OSGi completamente personalizado. En este caso, se debe implementar la `UrlProvider` interfaz y registrarla con una clasificación de servicio más alta para reemplazar la implementación predeterminada.
+Esto configura las direcciones URL de las páginas de categorías o listas de productos y admite las siguientes opciones:
+
+* `{{page}}.html/{{url_path}}.html` (predeterminada)
+* `{{page}}.html/{{url_key}}.html`
+
+En el caso del [Tienda de referencia de Venia](https://github.com/adobe/aem-cif-guides-venia):
+
+* `{{page}}` se sustituye por  `/content/venia/us/en/products/category-page`
+* `{{url_key}}` se reemplazará por la  `url_key` propiedad de la categoría
+* `{{url_path}}` se reemplazará por el  `url_path`
+
+Con los datos del ejemplo anterior, la dirección URL de una página de categoría con formato de URL predeterminado será como `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
+
+>[!NOTE]
+> 
+> El `url_path` es una concatenación de los `url_keys` antepasados de un producto o categoría y de los `url_key` del producto o categoría separados por `/` barra oblicua.
+
+## Formatos de URL personalizados {#custom-url-format}
+
+Para proporcionar un formato de URL personalizado, un proyecto puede implementar la [`UrlFormat` interfaz](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) y registrar la implementación como servicio OSGI, usándola como página de categoría o formato de URL de página de producto. La propiedad de servicio `UrlFormat#PROP_USE_AS` indica cuál de los formatos predefinidos configurados para reemplazar:
+
+* `useAs=productPageUrlFormat`, reemplazará el formato de URL de la página de producto configurado
+* `useAs=categoryPageUrlFormat`, reemplazará el formato de dirección url de la página de categoría configurado
+
+Si hay varias implementaciones del `UrlFormat` registrado como servicios OSGI, el que tenga la clasificación de servicio más alta reemplaza a los que tengan la clasificación de servicio más baja.
+
+El `UrlFormat` debe implementar un par de métodos para generar una URL a partir de un mapa de parámetros determinado y para analizar una URL y devolver el mismo mapa de parámetros. Los parámetros son los mismos que se describieron anteriormente, solo para las categorías se proporciona un parámetro `{{uid}}` adicional al `UrlFormat`.
 
 ## Combinación con asignaciones de Sling {#sling-mapping}
 
