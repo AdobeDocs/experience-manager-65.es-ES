@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Representaciones
 exl-id: null
-source-git-commit: 865370e38368072c39ad337eb52259c586403efb
+source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -25,9 +25,9 @@ Experience Manager permite procesar muchas imágenes que se pueden usar para gen
 Puede utilizar ImageMagick para procesar imágenes, incluso para generar representaciones de FPO. Estas representaciones se reducen de muestra, es decir, las dimensiones en píxeles de la representación se reducen proporcionalmente si la imagen original tiene un PPI mayor que 72. Consulte [instalar y configurar ImageMagick para trabajar con Recursos Experience Manager](best-practices-for-imagemagick.md).
 
 |  | Uso del flujo de trabajo integrado de Experience Manager | Uso del flujo de trabajo ImageMagick | Observaciones |
-|— |— |—|— |
+|--- |--- |---|--- |
 | Para nuevos activos | Habilitar la representación de FPO ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Agregar la línea de comandos ImageMagick en el flujo de trabajo del Experience Manager ([help](#generate-renditions-of-new-assets-using-imagemagick)) | El Experience Manager ejecuta el flujo de trabajo de recursos de actualización de DAM para cada carga. |
-| Para activos existentes | Habilitar la representación de FPO en un nuevo flujo de trabajo de Experience Manager dedicado ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Agregar la línea de comandos ImageMagick en un nuevo flujo de trabajo dedicado del Experience Manager ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | Las representaciones de FPO de los activos existentes se pueden crear a petición o en masa. |
+| Para activos existentes | Habilitar la representación de FPO en un nuevo flujo de trabajo de Experience Manager dedicado ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Añadir la línea de comandos ImageMagick en un nuevo flujo de trabajo dedicado al Experience Manager ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | Las representaciones de FPO de los activos existentes se pueden crear a petición o en masa. |
 
 >[!CAUTION]
 >
