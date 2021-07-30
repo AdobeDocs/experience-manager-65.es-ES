@@ -9,20 +9,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
+source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
+# Personalización de temas {#theme-customization}
 
-# Personalización de tema {#theme-customization}
+Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplicación AEM Forms un aspecto y una presentación distintos específicos de la organización. Por ejemplo, puede cambiar el color de fondo y la altura de las tareas o puntos de inicio. El ejemplo siguiente proporciona instrucciones para cambiar:
 
-Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplicación de AEM Forms un aspecto y una presentación distintos específicos de la organización. Por ejemplo, puede cambiar el color de fondo y la altura de las tareas o los puntos de inicio. El siguiente ejemplo proporciona instrucciones para cambiar:
-
-* mostrar instrucciones en lugar de la descripción
+* instrucciones de visualización en lugar de la descripción
 * número de rutas de visualización
 * color de degradado de fondo
 
@@ -36,9 +35,9 @@ Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplic
 
 1. Vaya a la carpeta de plantillas.
 
-   * En Xcode, vaya a la carpeta **Capture > www > wsmobile > js > tiempo de ejecución > plantillas**.
-   * En Eclipse, vaya a la carpeta **assets > www > wsmobile > js > Runtime > templates**.
-   * En Visual Studio, vaya a la carpeta **MWSWinwindows > www > wsmobile > js > tiempo de ejecución > plantillas**.
+   * En Xcode, vaya a la carpeta **Capture > www > wsmobile > js > runtime > templates** .
+   * En Eclipse, vaya a la carpeta **assets > www > wsmobile > js > runtime > templates** .
+   * En Visual Studio, vaya a la carpeta **MWSWinwindows > www > wsmobile > js > runtime > templates**.
 
 1. Abra el archivo `template.html` para editarlo.
 1. Busque la siguiente cadena:
@@ -75,7 +74,7 @@ Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplic
 
 1. Vaya a la carpeta css.
 
-   * En Xcode, vaya a **Capturar > www > wsmobile > css**.
+   * En Xcode, vaya a **Capture > www > wsmobile > css**.
    * En Eclipse, vaya a **assets > www > wsmobile > css**.
    * En Visual Studio, vaya a **MWSWinwindows > www > wsmobile > css**.
 
@@ -84,4 +83,4 @@ Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplic
 1. Guarde los cambios y cierre el archivo `_style.css`.
 1. Abra la aplicación de AEM Forms.
 
-   La aplicación de AEM Forms ahora muestra las instrucciones en lugar de la descripción.
+   La aplicación AEM Forms ahora muestra instrucciones en lugar de descripción.
