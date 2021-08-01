@@ -8,9 +8,9 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
 workflow-type: tm+mt
-source-wordcount: '3718'
+source-wordcount: '3771'
 ht-degree: 4%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 4%
       + [Forms Portal](using/forms-portal-handling-user-data.md)
       + [Administración de correspondencia](using/correspondence-management-handling-user-data.md)
       + [Integración con Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
-      + [Seguridad de los documentos](/help/forms/using/document-security-handling-user-data.md)
+      + [Document Security](/help/forms/using/document-security-handling-user-data.md)
    + Endurecimiento del entorno de AEM Forms {#hardening-aem-forms-environment}
       + [Endurecimiento y seguridad de los formularios AEM en el entorno OSGi](using/hardening-securing-aem-forms-environment.md)
       + [Consideraciones generales de seguridad para AEM Forms en JEE](using/general-security-considerations.md)
@@ -679,3 +679,10 @@ ht-degree: 4%
          + [Gestión programática de los nodos de preferencias](developing/programmatically-preferences-nodes.md)
          + [Protección de documentos con directivas](developing/protecting-documents-policies.md)
          + [Validación de un documento DDX mediante la API de servicio web](developing/validate-ddx-document-using-web.md)
+      + Documentación heredada {#legacy-documentation}
+         + [Uso del servicio de ejecución de secuencias de comandos en AEM Forms en JEE Workbench para generar datos XML](developing/building-xml.md)
+         + [Compresión y descompresión de archivos mediante una AEM Forms en una DSC personalizada JEE](developing/compressing-decompressing-custom-dsc.md)
+         + [Configuración y solución de problemas de un AEM Forms en un clúster de servidores JEE](developing/configure-server-cluster.md)
+         + [Generación y trabajo con hash en PDF forms dinámicos](developing/hashing-forms.md)
+         + [Pasar credenciales mediante encabezados WS-Security](developing/passing-credentials.md)
+
