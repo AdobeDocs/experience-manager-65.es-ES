@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, procese y distribuya recursos digitales.
-source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 40%
+ht-degree: 22%
 
 ---
 
@@ -36,17 +36,17 @@ ht-degree: 40%
    + [Reutilizar recursos mediante MSM](reuse-assets-using-msm.md)
    + [Recursos conectados con [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
-   + [Newsletter sobre Dynamic Media de Experience League](dynamic-media-newsletter.md)
+   + [Archivo de newsletter de Dynamic Media por Experience League](dynamic-media-newsletter.md)
    + [Configuración de Dynamic Media](administering-dynamic-media.md)
-   + [Trabajo con Dynamic Media](dynamic-media.md)
+   + [Trabajar con Dynamic Media](dynamic-media.md)
    + [Configuración de Dynamic Media: modo Scene7](config-dms7.md)
    + [Configuración de Dynamic Media: modo híbrido](config-dynamic.md)
-   + [Solución de problemas de Dynamic Media: modo Scene7](troubleshoot-dms7.md)
+   + [Resolución de problemas de Dynamic Media: modo Scene7](troubleshoot-dms7.md)
    + [Accesibilidad en Dynamic Media](accessibility-dm.md)
    + [Migración de Dynamic Media: modo híbrido a Dynamic Media: modo S7](migrate-from-hybrid-to-dms7.md)
    + [Administrar recursos de Dynamic Media](managing-assets.md)
    + [Práctica recomendada para optimizar la calidad de las imágenes](best-practices-for-optimizing-the-quality-of-your-images.md)
-   + [Administrar ajustes preestablecidos del visualizador de Dynamic Media](managing-viewer-presets.md)
+   + [Administrar ajustes preestablecidos de visualizador de Dynamic Media](managing-viewer-presets.md)
    + [Aplicar ajustes preestablecidos de visualizador de Dynamic Media](viewer-presets.md)
    + [Administrar ajustes preestablecidos de imagen de Dynamic Media](managing-image-presets.md)
    + [Aplicar ajustes preestablecidos de imagen de Dynamic Media](image-presets.md)
@@ -54,10 +54,10 @@ ht-degree: 40%
    + [Perfiles de imagen de Dynamic Media](image-profiles.md)
    + [Imágenes inteligentes](imaging-faq.md)
    + [Vídeo](s7-video.md)
-   + [Adición de funciones de Dynamic Media a la página](scene7.md)
+   + [Añadir funciones de Dynamic Media a su página](scene7.md)
    + [Entrega HTTP2 de contenido](http2.md)
-   + [Entrega de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
-   + [Activar la protección de los vínculos interactivos de Dynamic Media](hotlink-protection.md)
+   + [Enviar recursos de Dynamic Media](delivering-dynamic-media-assets.md)
+   + [Activar la protección de los vínculos interactivos en Dynamic Media](hotlink-protection.md)
    + [Compatibilidad con 3D](/help/assets/assets-3d.md)
    + [Conjuntos de imágenes](image-sets.md)
    + [Imágenes panorámicas](panoramic-images.md)
@@ -69,17 +69,17 @@ ht-degree: 40%
    + [Vídeos interactivos](interactive-videos.md)
    + [Vídeo de RV 360](/help/assets/360-video.md)
    + [Integración de visores de Dynamic Media con etiquetas de Adobe Analytics y Adobe Experience Platform](/help/assets/tags.md)
-   + [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
-   + [Distribución de imágenes adaptables para un sitio interactivo](responsive-site.md)
+   + [Crear ventanas emergentes personalizadas con la vista rápida](custom-pop-ups.md)
+   + [Distribución de imágenes optimizadas para un sitio interactivo](responsive-site.md)
    + [Vista previa de recursos de Dynamic Media](previewing-assets.md)
-   + [Agregar recursos de Dynamic Media a las páginas](adding-dynamic-media-assets-to-pages.md)
+   + [Agregar recursos de Dynamic Media a páginas](adding-dynamic-media-assets-to-pages.md)
    + [Incrustar Dynamic Video o el visualizador de imágenes en una página web](embed-code.md)
-   + [Vincular URL en la aplicación web](linking-urls-to-yourwebapplication.md)
+   + [Vincular URL a la aplicación web](linking-urls-to-yourwebapplication.md)
    + [Usar conjuntos de reglas para transformar URL](using-rulesets-to-transform-urls.md)
    + [Publicar recursos de Dynamic Media](publishing-dynamicmedia-assets.md)
-   + [Uso de Publicación selectiva en Dynamic Media](selective-publishing.md)
-   + [Invalidación de la caché de CDN mediante Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
-   + [Invalidación de la caché de CDN mediante Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
+   + [Trabajar con publicación selectiva en Dynamic Media](selective-publishing.md)
+   + [Invalidar la caché de CDN mediante Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
+   + [Invalidar la caché de CDN mediante Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Instalación del Feature Pack 18912 para la migración masiva de recursos](bulk-ingest-migrate.md)
    + [Trabajar con selectores](working-with-selectors.md)
 + Ampliar recursos {#extending}
