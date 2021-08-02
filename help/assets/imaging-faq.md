@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Administración de recursos,Representaciones
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
+source-git-commit: a166ea9e56ba6b69793e9949a920a7a24b5b9b25
 workflow-type: tm+mt
-source-wordcount: '2633'
+source-wordcount: '2607'
 ht-degree: 1%
 
 ---
@@ -190,13 +190,13 @@ Se inicia la solicitud para utilizar imágenes inteligentes; no se activa autom�
 
 De forma predeterminada, el RGPD de imágenes inteligentes y la optimización de la red están deshabilitados (desactivados) para una cuenta de empresa de Dynamic Media. Si desea habilitar (activar) una o ambas mejoras integradas, cree un caso de asistencia como se describe a continuación.
 
-La programación de versiones para la optimización del RGPD y la red de imágenes inteligentes es la siguiente:
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is as follows:
 
-| Región | Fecha objetivo |
+| Region | Target date |
 |---|---|
-| América del Norte | En directo |
-| Europa, Oriente Medio, África | 13 de agosto de 2021 |
-| Asia-Pacífico | 22 de julio de 2021 |
+| North America | Live |
+| Europe, Middle East, Africa | 13 Aug 2021 |
+| Asia-Pacific | 22 Jul 2021 | -->
 
 1. [Utilice el Admin Console para crear un caso](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) de asistencia.
 1. Proporcione la siguiente información en su caso de asistencia:
