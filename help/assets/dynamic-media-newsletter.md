@@ -1,30 +1,34 @@
 ---
-title: Newsletter de Dynamic Media
-description: 'El boletín Dynamic Media Newsletter by Experience League es un boletín mensual. Está diseñado para ayudarle a ponerse al día con Dynamic Media y Dynamic Media Classic, de modo que pueda obtener ventajas de inmediato. En este boletín informativo de una sola sede encontrará valiosos recursos para la creación de conocimientos. Incluye vídeos, descripciones generales de soluciones e introducción a algunas de las funciones y capacidades clave, como ajustes preestablecidos de imagen, ajustes preestablecidos de visor, perfiles de vídeo, etc. '
+title: Archivo de newsletter de Dynamic Media
+description: 'El boletín Dynamic Media archivado por Experience League era un boletín mensual. Se ha diseñado para ayudarle a ponerse al día con Dynamic Media y Dynamic Media Classic, de modo que pueda obtener ventajas de inmediato. Los boletines archivados contienen valiosos recursos para la creación de conocimientos que estaban disponibles en este boletín informativo de una sola ventanilla, que ya no se incluye. Los boletines archivados incluyen vídeos explicativos y descripciones generales de soluciones. También hay introducciones a funciones y capacidades clave como ajustes preestablecidos de imagen, ajustes preestablecidos de visor y perfiles de vídeo. '
 keywords: Dynamic Media;boletín;actualizaciones de productos;sugerencias y trucos;eventos;éxito del cliente;blog;blogs;imágenes;vídeos;funciones;funciones
 contentOwner: Rick Brough
 solution: Experience Manager, Dynamic Media Classic
 role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Colaboración,Dynamic Media Classic
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
 
 # ![Logotipo de Dynamic Media Newsletter](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
-El boletín mensual de Dynamic Media de Experience League está diseñado para ayudarle a ponerse al día con Dynamic Media y Dynamic Media Classic, de modo que pueda obtener ventajas de inmediato.
+>[!NOTE]
+>
+>El boletín mensual ya no se incluye. Sin embargo, aún puede acceder a los archivos de la newsletter que aparecen a continuación.
 
-En este boletín informativo de una sola sede encontrará valiosos recursos para la creación de conocimientos. Incluye vídeos, descripciones generales de soluciones e introducción a algunas de las funciones y capacidades clave, como ajustes preestablecidos de imagen, ajustes preestablecidos de visor, perfiles de vídeo, etc.
+El boletín de Dynamic Media de Experience League se ha diseñado para ayudarle a ponerse al día con Dynamic Media y Dynamic Media Classic, de modo que pueda obtener ventajas de inmediato.
 
-## inspirarse: Manténgase informado
+En este boletín archivado de una sola tienda, puede encontrar recursos valiosos para la creación de conocimientos, como vídeos explicativos y descripciones generales de soluciones. También hay introducciones a funciones y capacidades clave como ajustes preestablecidos de imagen, ajustes preestablecidos de visor y perfiles de vídeo.
 
-[Regístrese ](https://www.adobe.com/subscription/dynamic-media-newsletter.html) para recibir el boletín de Dynamic Media mensualmente en su bandeja de entrada.
+<!-- ## Get inspired - Stay informed
 
-## ¿Se ha perdido un número del boletín de Dynamic Media?
+[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox. -->
+
+## Archivo de newsletter de Dynamic Media
 
 <!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
@@ -52,9 +56,9 @@ En este boletín informativo de una sola sede encontrará valiosos recursos para
    * Obtenga más información sobre las auditorías gratuitas de Dynamic Media Classic de Adobe.
    * Conozca a John Monroe, Director de Programas Senior para Servicios de Éxito de Clientes.
 
-      >[!IMPORTANT]
-      >
-      >Adobe desea asegurarse de que solo están enviando el boletín de Dynamic Media a las personas que deseen recibirlo. Para seguir recibiendo el boletín después de este número, regístrese [aquí](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0) para suscribirse.
+<!--     >[!IMPORTANT]
+    >
+    >Adobe wants to make sure they are only sending the Dynamic Media newsletter to people who want to receive it. To continue receiving the newsletter after this issue, please sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0). -->
 
 * **[Febrero de 2020, número 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -153,7 +157,7 @@ En este boletín informativo de una sola sede encontrará valiosos recursos para
 
 * **[Abril de 2019, número 04](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 
-   Le damos la bienvenida al número de inauguración del boletín de Dynamic Media, el nuevo boletín mensual del Adobe, que contiene noticias, eventos y recursos para los usuarios de Dynamic Media en Adobe Experience Manager Assets y el Adobe Dynamic Media Classic.
+   Le damos la bienvenida al número de inauguración del boletín de Dynamic Media, al boletín del Adobe lleno de noticias, eventos y recursos para los usuarios de Dynamic Media dentro de Adobe Experience Manager Assets y el Adobe Dynamic Media Classic.
 
    En este número:
    * Regístrese en el seminario web Funciones ocultas de Dynamic Media Classic de Adobe.
