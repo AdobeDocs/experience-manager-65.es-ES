@@ -12,9 +12,9 @@ docset: aem65
 feature: Administración de activos
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: b42a14729a88bda563b0773dac735ad569ad3097
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
-source-wordcount: '11665'
+source-wordcount: '11702'
 ht-degree: 5%
 
 ---
@@ -60,8 +60,10 @@ Problemas de reproducción de vídeo conocidos actualmente en Dynamic Media *en 
       * [Aplicar un perfil de vídeo a las carpetas](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
       * Obtenga más información sobre [Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar perfiles de procesamiento](/help/assets/organize-assets.md).
       * Obtenga más información sobre [Organizar recursos digitales](/help/assets/organize-assets.md).
-   * Cargue los vídeos de origen principales en las carpetas. Puede cargar archivos de vídeo de hasta 15 GB cada uno. Al agregar vídeos a la carpeta, estos se codifican según el perfil de procesamiento de vídeo que asignó a la carpeta.
+   * Cargue los vídeos de origen principales en las carpetas. Al agregar vídeos a la carpeta, estos se codifican según el perfil de procesamiento de vídeo que asignó a la carpeta.
 
+      * Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos.
+      * Puede cargar archivos de vídeo de hasta 15 GB cada uno.
       * [Cargue sus vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * Obtenga más información sobre [Formatos de archivo de entrada compatibles](/help/assets/assets-formats.md#supported-multimedia-formats).
    * Monitorice cómo progresa la [codificación de vídeo](#monitoring-video-encoding-and-youtube-publishing-progress) desde la vista de recursos o flujos de trabajo.
@@ -303,6 +305,9 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 ### Archivos de vídeo de origen {#source-video-files}
 
 Cuando codifique un archivo de vídeo, utilice un archivo de vídeo de origen de la máxima calidad posible. Evite utilizar archivos de vídeo codificados anteriormente porque estos archivos ya están comprimidos y una codificación adicional crea un vídeo de calidad inferior.
+
+* Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos.
+* Puede cargar archivos de vídeo de origen primarios de hasta 15 GB cada uno.
 
 En la tabla siguiente se describe el tamaño recomendado, la proporción de aspecto y la velocidad de bits mínima que deben tener los archivos de vídeo de origen antes de codificarlos:
 
