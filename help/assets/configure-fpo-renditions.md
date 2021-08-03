@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Representaciones
 exl-id: null
-source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
+source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,11 @@ A continuación se indican los pasos para configurar el modelo de flujo de traba
 
 En Experience Manager, el flujo de trabajo de recursos de actualización de DAM se ejecuta cuando se carga un nuevo recurso. Para utilizar ImageMagick para procesar representaciones de recursos recientemente cargados, agregue un nuevo comando al modelo de flujo de trabajo.
 
-1. Haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**. Seleccione el modelo **[!UICONTROL DAM Update Asset]** y haga clic en **[!UICONTROL Editar]**.
+1. Haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
 
-1. Haga clic en **[!UICONTROL Alternar panel lateral]** en la esquina superior izquierda. Busque el paso de la línea de comandos.
+1. Seleccione el modelo **[!UICONTROL DAM Update Asset]** y haga clic en **[!UICONTROL Editar]**.
+
+1. Haga clic en **[!UICONTROL Alternar panel lateral]** en la esquina superior izquierda y busque el paso de la línea de comandos.
 
 1. Arrastre el paso **[!UICONTROL Línea de comandos]** y agréguela antes del paso **[!UICONTROL Procesar miniaturas]**.
 
@@ -89,13 +91,21 @@ Para obtener información detallada sobre las capacidades de la línea de comand
 
 Para utilizar el flujo de trabajo de Experience Manager para generar la representación de FPO de los recursos existentes, cree un modelo de flujo de trabajo dedicado que utilice la opción de representación de FPO integrada.
 
-1. Haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**. Para crear un modelo, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Crear modelo]**. Añada un **[!UICONTROL Título]** significativo y un **[!UICONTROL Nombre]**.
+1. Haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
 
-1. Seleccione el modelo y haga clic en **[!UICONTROL Edit]**. Haga clic en **[!UICONTROL Información de página]** > **[!UICONTROL Abrir propiedades]**. Seleccione **[!UICONTROL Flujo de trabajo transitorio]**. Esto mejora la escalabilidad y el rendimiento. Haga clic en ******[!UICONTROL Guardar y cerrar]**.
+1. Para crear un modelo, haga clic en **[!UICONTROL Crear]** > **[!UICONTROL Crear modelo]**.
 
-1. Haga clic en **[!UICONTROL Alternar panel lateral]** en la esquina superior izquierda. Busque el paso de miniaturas del proceso. Arrastre el paso **[!UICONTROL Procesar miniaturas]**.
+1. Añada un **[!UICONTROL Título]** significativo y **[!UICONTROL Nombre]**.
 
-1. Seleccione **[!UICONTROL Procesar miniaturas]** y haga clic en **[!UICONTROL Configurar]**. Siga la [configuración para generar la representación de nuevos recursos mediante el flujo de trabajo del Experience Manager](#generate-renditions-of-new-assets-using-aem-workflow). Para activar los cambios, haga clic en **[!UICONTROL Sincronizar]**.
+1. Seleccione el modelo y haga clic en **[!UICONTROL Edit]**. Haga clic en **[!UICONTROL Información de página]** > **[!UICONTROL Abrir propiedades]** y, a continuación, seleccione **[!UICONTROL Flujo de trabajo transitorio]**. Esto mejora la escalabilidad y el rendimiento.
+
+1. Haga clic en ******[!UICONTROL Guardar y cerrar]**.
+
+1. Haga clic en **[!UICONTROL Alternar panel lateral]** en la esquina superior izquierda y busque el paso en miniatura del proceso.
+
+1. Seleccione **[!UICONTROL Procesar miniaturas]** y haga clic en **[!UICONTROL Configurar]**. Siga la [configuración para generar la representación de nuevos recursos mediante el flujo de trabajo del Experience Manager](#generate-renditions-of-new-assets-using-aem-workflow).
+
+1. Para activar los cambios, haga clic en **[!UICONTROL Sincronizar]**.
 
 
 ## Generar representaciones de recursos existentes mediante ImageMagick {#generate-renditions-of-existing-assets-using-imagemagick}
