@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User,Admin
 feature: Metadatos
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
+source-git-commit: d3fcf3e55af1c57bed1db9191aa76576d3bedb29
 workflow-type: tm+mt
-source-wordcount: '3547'
+source-wordcount: '3597'
 ht-degree: 7%
 
 ---
@@ -28,6 +28,8 @@ Para ver y editar la página de propiedades de un recurso, siga estos pasos:
    ![Pestaña básica de Propiedades del recurso, donde no se puede cambiar el tipo de recurso](assets/asset-properties-basic-tab.png)
 
    *Figura: Ficha Básico de las  [!UICONTROL Propiedades] del recurso.*
+
+   Asegúrese de que solo una propiedad está asignada a un campo mientras crea o edita el esquema de metadatos.
 
    Para modificar el tipo MIME de un recurso, utilice un formulario de esquema de metadatos personalizado o modifique un formulario existente. Consulte [Editar esquema de metadatos Forms](#edit-metadata-schema-forms) para obtener más información. Si modifica el esquema de metadatos de un tipo MIME, se modifica el diseño de página de propiedades de los recursos y todos los subtipos. Por ejemplo, modificar un esquema jpeg en `default/image` solo modifica el diseño de metadatos (propiedades de recursos) para los recursos con tipo MIME `image/jpeg`. Sin embargo, si edita el esquema predeterminado, los cambios modificarán el diseño de metadatos para todos los tipos de recursos.
 
@@ -99,13 +101,13 @@ La ficha **[!UICONTROL Generar formulario]** enumera los elementos de formulario
 
 #### Editar el componente de metadatos {#edit-the-metadata-component}
 
-Para editar las propiedades de un componente de metadatos en el formulario, haga clic en el componente para editar todas o un subconjunto de las siguientes propiedades en la pestaña **[!UICONTROL Settings]**.
+Para editar las propiedades de un componente de metadatos en el formulario, haga clic en el componente para editar todas o un subconjunto de las siguientes propiedades en la pestaña **[!UICONTROL Settings]**. Se recomienda asignar solo un campo a una propiedad determinada del esquema de metadatos. De lo contrario, el sistema selecciona el último campo añadido asignado a la propiedad.
 
 **Etiqueta** de campo: Nombre de la propiedad de metadatos que se muestra en la página de propiedades del recurso.
 
 **Asignar a propiedad**: Esta propiedad especifica la ruta relativa o el nombre del nodo de recurso donde se guarda en el repositorio CRX. Comienza con `./` para indicar que la ruta está bajo el nodo del recurso.
 
-Los siguientes son los valores válidos para esta propiedad:
+Los siguientes son ejemplos de valores válidos para una propiedad:
 
 * `./jcr:content/metadata/dc:title`: Almacena el valor en el nodo de metadatos del recurso como propiedad `dc:title`.
 
