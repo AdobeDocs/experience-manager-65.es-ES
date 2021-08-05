@@ -10,16 +10,16 @@ discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: Administración de activos
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b0286341c1b643bd39a3009185c0d4c8d76ccba5
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 13%
 
 ---
 
 # Acerca de la administración de recursos de Dynamic Media {#managing-assets}
 
-La administración de recursos de Dynamic Media: imágenes, vídeos y recursos interactivos (una vez cargados) implica muchas tareas, como previsualizarlos, descargarlos o publicarlos.
+La administración de recursos de Dynamic Media (imágenes, vídeos y recursos interactivos) una vez cargados implica muchas tareas, como previsualizarlos, descargarlos o publicarlos.
 
 Al obtener una vista previa, también puede aplicar ajustes preestablecidos de imagen (solo para imágenes) o ajustes preestablecidos de visor (para vídeo e imágenes). No puede aplicar ambos a un recurso. Consulte [Aplicación de ajustes preestablecidos de visor](/help/assets/viewer-presets.md) y [Aplicación de ajustes preestablecidos de imagen](/help/assets/image-sets.md).
 
