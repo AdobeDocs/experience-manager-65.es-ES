@@ -10,10 +10,10 @@ discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: Administración de activos
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: b0286341c1b643bd39a3009185c0d4c8d76ccba5
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 13%
+source-wordcount: '114'
+ht-degree: 14%
 
 ---
 
@@ -25,7 +25,7 @@ Al obtener una vista previa, también puede aplicar ajustes preestablecidos de i
 
 La información general sobre la administración de recursos se encuentra en [Administrar recursos](/help/assets/manage-assets.md).
 
-Los siguientes temas describen lo que debe hacer para administrar los recursos de Dynamic Media:
+En los temas siguientes se describe cómo administrar los recursos de Dynamic Media:
 
 * [Práctica recomendada para optimizar la calidad de las imágenes](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Vista previa de recursos de Dynamic Media](/help/assets/previewing-assets.md)
