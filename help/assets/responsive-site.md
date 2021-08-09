@@ -10,26 +10,26 @@ discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: Administración de activos
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 12%
+source-wordcount: '336'
+ht-degree: 9%
 
 ---
 
-# Distribución de imágenes adaptables para un sitio interactivo {#delivering-optimized-images-for-a-responsive-site}
+# Distribución de imágenes optimizadas para un sitio interactivo {#delivering-optimized-images-for-a-responsive-site}
 
 Utilice la función de código interactivo cuando desee compartir el código para la entrega interactiva con su desarrollador web. Copie el código adaptable (**[!UICONTROL RESS]**) en el portapapeles para poder compartirlo con el desarrollador web.
 
-Esta función tiene sentido utilizarla si el sitio web se encuentra en un WCM de terceros. Sin embargo, si el sitio web está en AEM, un servidor de imágenes externos procesa la imagen y la suministra a la página web.
+Esta función tiene sentido utilizarla si el sitio web se encuentra en un WCM de terceros. Sin embargo, si el sitio web está en Adobe Experience Manager, un servidor de imágenes externos procesa la imagen y la suministra a la página web.
 
-Consulte también [Incrustación del visualizador de vídeo en una página web](embed-code.md).
+Consulte también [Incrustar el visualizador de vídeo en una página web](embed-code.md).
 
-Consulte también [Vinculación de URL a su aplicación web](linking-urls-to-yourwebapplication.md).
+Consulte también [Vincular URL a su aplicación web](linking-urls-to-yourwebapplication.md).
 
 **Para ofrecer imágenes optimizadas para un sitio interactivo:**
 
-1. Vaya a la imagen para la que desee proporcionar código interactivo y, en el menú desplegable, pulse **[!UICONTROL Representaciones]**.
+1. Vaya a la imagen para la que desee proporcionar código interactivo y, en el menú desplegable, seleccione **[!UICONTROL Representaciones]**.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -43,12 +43,12 @@ Consulte también [Vinculación de URL a su aplicación web](linking-urls-to-you
    >
    >Dynamic Media: el modo híbrido requiere que publique los ajustes preestablecidos de imagen; Dynamic Media: el modo Scene7 publica automáticamente ajustes preestablecidos de imagen.
 
-1. Toque **[!UICONTROL RESS]**.
+1. Seleccione **[!UICONTROL RESS]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. En el cuadro de diálogo **[!UICONTROL Incrustar imagen interactiva]**, seleccione y copie el texto del código interactivo y péguelo en el sitio web para acceder al recurso interactivo.
-1. Edite los puntos de interrupción predeterminados en el código incrustado para que coincidan con los del sitio web interactivo directamente en el código. Además, pruebe las distintas resoluciones de imagen que se proporcionan en diferentes puntos de interrupción de página.
+1. En el cuadro de diálogo **[!UICONTROL Incrustar imagen interactiva]**, seleccione, copie el texto del código interactivo y péguelo en el sitio web para acceder al recurso interactivo.
+1. Edite los puntos de interrupción predeterminados en el código incrustado para que coincidan con los puntos de interrupción del sitio web adaptable, directamente en el código. Además, pruebe las distintas resoluciones de imagen que se proporcionan en diferentes puntos de interrupción de página.
 
 ## Uso de HTTP/2 para enviar los recursos de Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
