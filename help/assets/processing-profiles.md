@@ -11,10 +11,10 @@ docset: aem65
 role: User, Admin
 feature: Flujo de trabajo,Administración de recursos,Representaciones
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '1379'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ Al utilizar estrategias de asignación de nombres de archivos y carpetas coheren
 >
 >Lo mismo ocurre incluso cuando se mueven recursos entre dos carpetas que tienen el mismo perfil asignado.
 
-## Reprocesamiento de recursos en una carpeta {#reprocessing-assets}
+## Volver a procesar los recursos en una carpeta {#reprocessing-assets}
 
 >[!NOTE]
 >
@@ -77,20 +77,20 @@ Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#
    * Si hay una o más subcarpetas con recursos en la carpeta principal seleccionada, el flujo de trabajo vuelve a procesar cada recurso en la jerarquía de carpetas.
    * Como práctica recomendada, debe evitar ejecutar este flujo de trabajo en una jerarquía de carpetas que tenga más de 1000 activos.
 
-1. Cerca de la esquina superior izquierda de la página, en la lista desplegable, haga clic en **[!UICONTROL Cronología]**.
-1. Cerca de la esquina inferior izquierda de la página, a la derecha del campo Comentario , haga clic en el icono del carro ( **^** ) .
+1. Cerca de la esquina superior izquierda de la página, en la lista desplegable, seleccione **[!UICONTROL Línea de tiempo]**.
+1. Cerca de la esquina inferior izquierda de la página, a la derecha del campo Comentario , seleccione el icono del carro ( **^** ) .
 
    ![Flujo de trabajo de reprocesamiento de recursos 1](/help/assets/assets/reprocess-assets1.png)
 
-1. Haga clic en **[!UICONTROL Iniciar flujo de trabajo]**.
+1. Seleccione **[!UICONTROL Iniciar flujo de trabajo]**.
 1. En la lista desplegable **[!UICONTROL Iniciar flujo de trabajo]**, elija **[!UICONTROL Scene7: Volver a procesar los recursos]**.
 1. (Opcional) En el campo de texto **Enter title of workflow** introduzca un nombre para el flujo de trabajo. Puede utilizar el nombre para hacer referencia a la instancia de flujo de trabajo, si es necesario.
 
    ![Volver a procesar los recursos 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Haga clic en **[!UICONTROL Start]** y, a continuación, haga clic en **[!UICONTROL Confirm]**.
+1. Seleccione **[!UICONTROL Start]** y, a continuación, seleccione **[!UICONTROL Confirm]**.
 
-   Para monitorizar el flujo de trabajo o comprobar su progreso, en la página de la consola principal del Experience Manager, haga clic en **[!UICONTROL Tools]** > **[!UICONTROL Workflow]**. En la página Instancias de flujo de trabajo , seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo .
+   Para monitorizar el flujo de trabajo o comprobar su progreso, en la página de la consola principal del Experience Manager, seleccione **[!UICONTROL Tools]** > **[!UICONTROL Workflow]**. En la página Instancias de flujo de trabajo , seleccione un flujo de trabajo. En la barra de menús, seleccione **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo .
 
 ### Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento {#adjusting-load}
 
@@ -98,14 +98,14 @@ Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#
 
 **Para ajustar opcionalmente el tamaño del lote del flujo de trabajo de reprocesamiento:**
 
-1. En el Experience Manager, haga clic en **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global y, a continuación, haga clic en el icono **[!UICONTROL Herramientas]** (martillo) > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
+1. En el Experience Manager, seleccione **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global y, a continuación, seleccione el icono **[!UICONTROL Herramientas]** (martillo) > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
 1. En la página Modelos de flujo de trabajo , en Vista de tarjeta o Vista de lista, seleccione **[!UICONTROL Scene7: Volver a procesar los recursos]**.
 
    ![Página Modelos de flujo de trabajo con Scene7: Flujo de trabajo de reprocesamiento de recursos seleccionado en Vista de tarjeta](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. En la barra de herramientas, haga clic en **[!UICONTROL Editar]**. Una nueva pestaña del explorador abre Scene7: Volver a procesar la página del modelo de flujo de trabajo de Assets.
-1. En Scene7: Vuelva a procesar la página de flujo de trabajo de Assets, cerca de la esquina superior derecha, haga clic en **[!UICONTROL Editar]** para &quot;desbloquear&quot; el flujo de trabajo.
-1. En el flujo de trabajo, seleccione el componente Carga por lotes de Scene7 para abrir la barra de herramientas y, a continuación, haga clic en **[!UICONTROL Configurar]** en la barra de herramientas.
+1. En la barra de herramientas, seleccione **[!UICONTROL Editar]**. Una nueva pestaña del explorador abre Scene7: Volver a procesar la página del modelo de flujo de trabajo de Assets.
+1. En Scene7: página de flujo de trabajo Volver a procesar los recursos , cerca de la esquina superior derecha, seleccione **[!UICONTROL Editar]** para &quot;desbloquear&quot; el flujo de trabajo.
+1. En el flujo de trabajo, seleccione el componente Carga por lotes de Scene7 para abrir la barra de herramientas y, a continuación, seleccione **[!UICONTROL Configurar]** en la barra de herramientas.
 
    ![Componente Carga por lotes de Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -119,16 +119,16 @@ Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#
 
    ![Cuadro de diálogo Propiedades](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. En la esquina superior derecha del cuadro de diálogo **[!UICONTROL Carga por lotes a Scene7 - Propiedades por pasos]**, haga clic en **[!UICONTROL Listo]**.
+1. En la esquina superior derecha del cuadro de diálogo **[!UICONTROL Carga por lotes a Scene7 - Propiedades por pasos]**, seleccione **[!UICONTROL Listo]**.
 
-1. En la esquina superior derecha de Scene7: Vuelva a procesar la página del modelo de flujo de trabajo de Assets y haga clic en **[!UICONTROL Sincronizar]**. Cuando ve **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución del flujo de trabajo se sincroniza correctamente y está listo para volver a procesar los recursos en una carpeta.
+1. En la esquina superior derecha de Scene7: página del modelo de flujo de trabajo de reprocesamiento de recursos, seleccione **[!UICONTROL Sincronizar]**. Cuando ve **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución del flujo de trabajo se sincroniza correctamente y está listo para volver a procesar los recursos en una carpeta.
 
-   ![Sincronización del modelo de flujo de trabajo](/help/assets/assets-dm/reprocess-assets1.png)
+   ![Sincronizar el modelo de flujo de trabajo](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Cierre la ficha del explorador que muestra el Scene7: Reprocesar el modelo de flujo de trabajo de Assets.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -139,10 +139,10 @@ Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, select **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
+1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
