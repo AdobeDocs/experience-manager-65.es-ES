@@ -10,19 +10,19 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publicación
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
-# Publicación de recursos de Dynamic Media {#publishing-dynamic-media-assets}
+# Publicar recursos de Dynamic Media {#publishing-dynamic-media-assets}
 
 Para publicar los recursos de Dynamic Media, seleccione los que ya ha cargado y pulse **[!UICONTROL Publicar]** o **[!UICONTROL Publicación rápida]**. Una vez publicados los recursos de Dynamic Media, quedan disponibles para su inclusión en una página web mediante una URL o incrustando el código en la página.
 
-También puede publicar recursos instantáneamente que cargue, sin intervención del usuario. Consulte [Configuración de Dynamic Media - Modo Scene7](config-dms7.md).
-O bien, puede publicar selectivamente recursos en Dynamic Media o Adobe Experience Manager, mutuamente excluyentes entre sí, mediante **[!UICONTROL Publicación selectiva]** en el nivel de carpeta. Consulte [Uso de la publicación selectiva en Dynamic Media](/help/assets/selective-publishing.md).
+También puede publicar recursos instantáneamente que cargue, sin intervención del usuario. Consulte [Configuración de Dynamic Media - modo Scene7](config-dms7.md).
+O bien, puede publicar selectivamente recursos en Dynamic Media o Adobe Experience Manager, mutuamente excluyentes entre sí, mediante **[!UICONTROL Publicación selectiva]** en el nivel de carpeta. Consulte [Trabajar con publicación selectiva en Dynamic Media](/help/assets/selective-publishing.md).
 
 En la **[!UICONTROL Vista de tarjeta]**, aparece un pequeño icono de globo terráqueo directamente debajo del nombre de un recurso y a la izquierda de la fecha y la hora para indicar que se ha publicado. En la **[!UICONTROL vista de lista]**, una columna **[!UICONTROL Publicada]** indica qué recursos se publican o cuáles no.
 
@@ -32,9 +32,9 @@ En la **[!UICONTROL Vista de tarjeta]**, aparece un pequeño icono de globo terr
 
 Si tiene intención de publicar recursos de vídeo inmediatamente después de codificarlos, asegúrese de que la codificación esté completa. Mientras se codifican los vídeos, el sistema le permite saber que hay un flujo de trabajo de procesamiento de vídeo en curso. Cuando haya terminado la codificación de vídeo, puede obtener una vista previa de las representaciones de vídeo. En este punto, es seguro que publique los vídeos sin incurrir en errores de publicación.
 
-Consulte también [Vinculación de URL a su aplicación web](linking-urls-to-yourwebapplication.md).
+Consulte también [Vincular URL a su aplicación web](linking-urls-to-yourwebapplication.md).
 
-Consulte también [Incrustación del visualizador de imágenes o vídeos de Dynamic Media en una página web](embed-code.md)
+Consulte también [Incrustar el visualizador de imágenes o vídeos de Dynamic Media en una página web](embed-code.md)
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Consulte también [Incrustación del visualizador de imágenes o vídeos de Dyna
 
 
 
-Para obtener información detallada sobre la publicación de un conjunto o recurso, consulte [Publicación de recursos](manage-assets.md).
+Para obtener información detallada sobre la publicación de un conjunto o recurso, consulte [Publicar recursos](manage-assets.md).
 
 ## Entrega HTTP/2 de recursos de Dynamic Media {#http-delivery-of-dynamic-media-assets}
 
