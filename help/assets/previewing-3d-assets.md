@@ -6,14 +6,14 @@ docset: aem65
 feature: Recursos 3D
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 15%
+source-wordcount: '555'
+ht-degree: 10%
 
 ---
 
-# Vista previa de recursos 3D en Adobe Experience Manager{#previewing-3d-assets-aem}
+# Vista previa de recursos 3D en Adobe Experience Manager {#previewing-3d-assets-aem}
 
 Experience Manager admite la carga, entrega y previsualización interactiva de recursos 3D como parte del proceso de creación.
 
@@ -49,22 +49,22 @@ La vista previa 3D interactiva admite los siguientes formatos de archivo:
 
 El tiempo que se tarda en abrir un recurso 3D en la página de vista de detalles del recurso depende de varios factores, como el ancho de banda, la complejidad de la imagen y las latencias del servidor.
 
-Además, las capacidades del equipo cliente (como una estación de trabajo, un portátil o un dispositivo táctil móvil) también son importantes de tener en cuenta al manipular la cámara de forma interactiva. Un sistema razonablemente potente con buenas capacidades gráficas puede hacer que la experiencia de visualización interactiva en 3D sea más cómoda y agradable.
+Además, las capacidades del equipo cliente, como una estación de trabajo, un ordenador portátil o un dispositivo táctil móvil, también son importantes de tener en cuenta al manipular la cámara de forma interactiva. Un sistema razonablemente potente con buenas capacidades gráficas puede hacer que la experiencia de visualización interactiva en 3D sea más cómoda y agradable.
 
 **Para previsualizar recursos 3D en el Experience Manager:**
 
 1. Asegúrese de haber cargado recursos 3D en Experience Manager.
 Consulte [Formatos admitidos para la vista previa 3D](#supported-3d-previewing-assets) y [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
-1. En el Experience Manager, en la página **[!UICONTROL Navegación]**, pulse **[!UICONTROL Assets > Archivos]**.
+1. En el Experience Manager, en la página **[!UICONTROL Navegación]**, seleccione **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
 
    ![Página de navegación](/help/assets/assets-dm/navigation-assets.png)
 
-1. Cerca de la esquina superior derecha de la página, en la lista desplegable Ver, pulse **[!UICONTROL Vista de tarjeta]** y, a continuación, desplácese hasta un recurso 3D que quiera previsualizar.
+1. Cerca de la esquina superior derecha de la página, en la lista desplegable Ver, seleccione **[!UICONTROL Vista de tarjeta]** y, a continuación, desplácese hasta un recurso 3D que quiera previsualizar.
 
    ![Selección de tarjeta 3D](/help/assets/assets-dm/3d-card-select.png)
-   _En Vista de tarjeta, pulse la tarjeta del recurso 3D que desea previsualizar._
+   _En Vista de tarjeta, seleccione la tarjeta del recurso 3D que desea previsualizar._
 
-1. Pulse la tarjeta del recurso 3D.
+1. Seleccione la tarjeta del recurso 3D.
 
    ![Vista previa interactiva en 3D](/help/assets/assets-dm/3d-preview.png)
    _Vista previa interactiva de un recurso 3D en la página de vista de detalles del recurso._
@@ -76,7 +76,7 @@ Consulte [Formatos admitidos para la vista previa 3D](#supported-3d-previewing-a
    | **Panorámica de la cámara** | Desplace la vista hacia la izquierda, hacia la derecha, hacia arriba o hacia abajo. | Haga clic con el botón derecho y arrastre. | Presione con dos dedos y arrastre. |
    | **Ampliar la cámara** | Entrada y salida de áreas en la escena 3D. | Rueda de desplazamiento. | Pellizque con dos dedos. |
    | **Vuelva a introducir la cámara** | Vuelva a introducir la cámara en un punto de un objeto de la escena 3D. | Hacer doble clic. | Toque dos veces. |
-   | **Restablecer** | Cerca de la esquina inferior derecha de la página, pulse el icono Restablecer para restaurar el punto de destino de la vista al centro del recurso 3D. Restablecer también mueve la cámara más cerca o más lejos para mostrar el recurso en su totalidad y con un tamaño de visualización razonable. |  |  |
-   | **Modo de pantalla completa** | Para entrar al modo de pantalla completa, en la esquina inferior derecha de la página, pulse el icono de pantalla completa . |  |  |
+   | **Restablecer** | Cerca de la esquina inferior derecha de la página, seleccione el icono Restablecer para restaurar el punto de destino de la vista al centro del recurso 3D. Restablecer también mueve la cámara más cerca o más lejos para mostrar el recurso en su totalidad y con un tamaño de visualización razonable. |  |  |
+   | **Modo de pantalla completa** | Para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, seleccione el icono Pantalla completa . |  |  |
 
-1. Cuando haya terminado, pulse **[!UICONTROL Cerrar]** cerca de la esquina superior derecha de la página.
+1. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Cerrar]**.
