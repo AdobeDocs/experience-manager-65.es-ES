@@ -6,9 +6,9 @@ seo-description: Una lista de las plataformas de cliente y servidor compatibles 
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 5ce72a51d69e97d7e07e9f734bfd7547fccd51f1
+source-git-commit: 0f0dfe8af5feed5227a091b89d65ef58d71eb299
 workflow-type: tm+mt
-source-wordcount: '3273'
+source-wordcount: '3266'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Requisitos mínimos para ejecutar Adobe Experience Manager:
 
 Para obtener más información, consulte las [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md).
 
-### Niveles de soporte {#support-levels}
+### Niveles de compatibilidad {#support-levels}
 
 Este documento enumera las plataformas de cliente y servidor compatibles con Adobe Experience Manager. Adobe proporciona varios niveles de soporte, tanto para configuraciones recomendadas como para otras configuraciones.
 
@@ -132,7 +132,7 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
  </tbody>
 </table>
 
-1. El soporte y la distribución de los edificios Azul Zulu de OpenJDK, incluyendo todas las actualizaciones de mantenimiento de las versiones LTS serán apoyados directamente por Adobe para todos los clientes AEM que usen los edificios Azul Zulu de OpenJDK, a partir de AEM 6.5 SP9 resp. AEM 6.5 SP10 para AEM Forms Java EE. Para obtener más información, consulte la [compatibilidad de Azul Java con Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf).
+1. El soporte y la distribución de los edificios Azul Zulu de OpenJDK, incluyendo todas las actualizaciones de mantenimiento de las versiones LTS serán apoyados directamente por Adobe para todos los clientes AEM que usen los edificios Azul Zulu de OpenJDK, a partir de AEM 6.5 SP9 resp. Para obtener más información, consulte la [compatibilidad de Azul Java con Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf).
 
 1. Oracle ha adoptado un modelo de soporte a largo plazo (LTS) para los productos Oracle Java SE. Java 9, Java 10 y Java 12 son versiones no LTS por Oracle (consulte [Oracle Java SE support plan](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implementar AEM en el entorno de producción, Adobe solo ofrece soporte para las versiones LTS de Java. El soporte técnico y la distribución del Oracle Java SE JDK, incluidas todas las actualizaciones de mantenimiento de las versiones de LTS más allá del final de las actualizaciones públicas, serán compatibles directamente con el Adobe para todos los clientes AEM que usen la tecnología de Oracle Java SE **hasta diciembre de 2022**. Para obtener más información, consulte [Compatibilidad con Java de Oracle para Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf).
 
@@ -241,7 +241,7 @@ En todos los demás casos de implementación de AEM en Azure o AWS, o en cualqui
 
 Para obtener recomendaciones sobre cómo implementar AEM en Azure o AWS, fuera de Adobe Managed Services, Adobe recomienda trabajar directamente con el proveedor de nube o los socios de Adobe que admitan la implementación de AEM en el entorno de nube que elija. El proveedor o socio de nube seleccionado será responsable de las especificaciones de tamaño, el diseño y la implementación de la arquitectura, para satisfacer sus requisitos específicos de rendimiento, carga, escalabilidad y seguridad.
 
-### Plataformas de Dispatcher (Servidores Web) {#dispatcher-platforms-web-servers}
+### Plataformas de Dispatcher (servidores web) {#dispatcher-platforms-web-servers}
 
 Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [Descargue la última versión](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html) de Dispatcher. Experience Manager 6.5 requiere la versión 4.3.2 o superior de Dispatcher.
 
@@ -260,7 +260,7 @@ Los siguientes servidores web son compatibles para su uso con Dispatcher versió
 
 1. Dispatcher no está disponible para Apache 2.4.x para sistemas operativos Windows.
 
-## Plataformas de cliente admitidas {#supported-client-platforms}
+## Plataformas de cliente compatibles {#supported-client-platforms}
 
 ### Exploradores admitidos para la creación de la interfaz de usuario {#supported-browsers-for-authoring-user-interface}
 
