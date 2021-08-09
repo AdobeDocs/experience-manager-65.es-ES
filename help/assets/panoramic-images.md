@@ -11,7 +11,7 @@ docset: aem65
 feature: Imágenes panorámicas,Administración de activos
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 En esta sección se describe cómo trabajar con el visor de imágenes panorámicas para representar imágenes panorámicas esféricas y así obtener una experiencia de visualización de 360° inmersiva de una habitación, propiedad, ubicación o paisaje.
 
-Consulte también [Administración de ajustes preestablecidos de visualizador](/help/assets/managing-viewer-presets.md).
+Consulte también [Administrar ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md).
 
 ![imagen panorámica2](assets/panoramic-image2.png)
 
-## Carga de recursos para su uso con el visor de imágenes panorámicas {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Cargar recursos para utilizarlos con el visor de imágenes panorámicas {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 Para que un recurso cargado pueda considerarse una imagen panorámica esférica que pretenda usar con el visor de imágenes panorámicas, el recurso debe tener una o ambas de las siguientes opciones:
 
@@ -38,7 +38,7 @@ Puede anular la configuración predeterminada de relación de aspecto de 2 en CR
 
 Tanto la proporción de aspecto como los criterios de palabra clave se aplican a los recursos panorámicos para la página de detalles del recurso y el componente WCM `Panoramic Media`.
 
-Para cargar recursos para usarlos con el visor de imágenes panorámicas, consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
+Para cargar recursos para usarlos con el visor de imágenes panorámicas, consulte [Cargar recursos](/help/assets/manage-assets.md#uploading-assets).
 
 ## Configuración de Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
@@ -46,7 +46,7 @@ Para que el visor de imágenes panorámicas funcione correctamente en Adobe Expe
 
 1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e inicie sesión en su cuenta.
 
-1. Cerca de la esquina superior derecha de la página, haga clic en **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
+1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
 1. En la página Publicación del servidor de imágenes , en el menú desplegable **[!UICONTROL Publicar contexto]** cerca de la parte superior, seleccione **[!UICONTROL Servicio de imágenes]**.
 
 1. En la misma página Publicación del servidor de imágenes, busque el encabezado **[!UICONTROL Atributos de solicitud]**.
@@ -65,15 +65,15 @@ Para que el visor de imágenes panorámicas funcione correctamente en Adobe Expe
 
    Estos ajustes son necesarios para utilizar el componente WCM `Panoramic Media` en el Experience Manager.
 
-1. En la parte inferior de la página Publicación del servidor de imágenes, en el lado izquierdo, haga clic en **[!UICONTROL Guardar]**.
+1. En la parte inferior de la página Publicación del servidor de imágenes, en la parte izquierda, seleccione **[!UICONTROL Guardar]**.
 
-1. En la esquina inferior derecha, haga clic en **[!UICONTROL Cerrar]**.
+1. En la esquina inferior derecha, seleccione **[!UICONTROL Cerrar]**.
 
 ### Solución de problemas del componente WCM de medios panorámicos {#troubleshooting-the-panoramic-media-wcm-component}
 
 Si ha colocado una imagen en el componente de medios panorámicos de su WCM y el marcador de posición del componente se ha contraído, solucione los problemas siguientes:
 
-* Si se produce un error de 403 prohibido, puede deberse a que el tamaño de la imagen solicitada sea demasiado grande. Revise la configuración de **[!UICONTROL Reply Image Size Limit]** en [Configuración de Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Si se produce un error de 403 prohibido, puede deberse a que el tamaño de la imagen solicitada sea demasiado grande. Revise la configuración de **[!UICONTROL Reply Image Size Limit]** en [Configurar Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * Para obtener un &quot;Bloqueo no válido&quot; en el recurso o un &quot;Error de análisis&quot; mostrado en la página, marque Modo de ofuscación de solicitudes y Modo de bloqueo de solicitudes para asegurarse de que están desactivados.
 * En caso de error de lienzo contaminado, configure una Ruta de archivo de definición de conjunto de reglas e Invalidar CTN para las solicitudes anteriores del recurso de imagen.
@@ -85,4 +85,4 @@ Consulte [Vista previa de recursos](/help/assets/previewing-assets.md).
 
 ## Publicar imágenes panorámicas {#publishing-panoramic-images}
 
-Consulte [Publicación de recursos](/help/assets/publishing-dynamicmedia-assets.md).
+Consulte [Publicar recursos](/help/assets/publishing-dynamicmedia-assets.md).
