@@ -9,10 +9,11 @@ topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '2849'
+source-wordcount: '2850'
 ht-degree: 15%
 
 ---
@@ -103,7 +104,7 @@ Añadir un componente de Dynamic Media Classic (Scene7) a una página es lo mism
    >
    >Solo en la IU táctil, debe arrastrar y soltar la imagen o el vídeo en el componente de Dynamic Media Classic que haya colocado en la página. No se admite la selección y edición del componente Dynamic Media Classic y la selección del recurso.
 
-### Agregar experiencias de visualización interactivas a un sitio interactivo {#adding-interactive-viewing-experiences-to-a-responsive-website}
+### Agregar una experiencia de visualización interactiva a un sitio interactivo {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 El diseño interactivo de los recursos significa que el recurso se adapta según el lugar en que se muestre. Con un diseño interactivo, los mismos recursos se pueden mostrar de forma eficaz en varios dispositivos.
 
@@ -169,11 +170,11 @@ El componente **[!UICONTROL Image]** de Dynamic Media Classic le permite añadir
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
-**[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visualizador que está buscando no está visible, debe hacerlo visible. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). No se puede seleccionar un ajuste preestablecido de visualizador si se utiliza un ajuste preestablecido de imagen y, a la inversa,
+**[!UICONTROL Ajuste preestablecido de visualizador]** : seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visualizador que está buscando no está visible, debe hacerlo visible. Consulte [Administrar ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). No se puede seleccionar un ajuste preestablecido de visualizador si se utiliza un ajuste preestablecido de imagen y, a la inversa,
 
 **[!UICONTROL Configuración de Dynamic Media Classic]** : seleccione la configuración de Dynamic Media Classic que desee utilizar para recuperar ajustes preestablecidos de imagen activos de SPS.
 
-**[!UICONTROL Ajuste preestablecido de imagen]** : seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte [Administración de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md). No se puede seleccionar un ajuste preestablecido de visualizador si se utiliza un ajuste preestablecido de imagen y, a la inversa,
+**[!UICONTROL Ajuste preestablecido de imagen]** : seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte [Administrar ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md). No se puede seleccionar un ajuste preestablecido de visualizador si se utiliza un ajuste preestablecido de imagen y, a la inversa,
 
 **[!UICONTROL Formato de salida]** : seleccione el formato de salida de la imagen, por ejemplo jpeg. Según el formato de salida que seleccione, hay opciones de configuración adicionales. Consulte [Prácticas recomendadas para ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md#image-preset-options).
 
