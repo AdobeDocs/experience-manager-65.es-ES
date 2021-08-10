@@ -1,5 +1,5 @@
 ---
-title: Uso de conjuntos de reglas para transformar direcciones URL
+title: Usar conjuntos de reglas para transformar direcciones URL
 description: Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,14 +8,14 @@ content-type: reference
 role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
 feature: Configuración,Conjuntos de reglas
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 5%
+source-wordcount: '761'
+ht-degree: 0%
 
 ---
 
-# Uso de conjuntos de reglas para transformar direcciones URL {#using-rulesets-to-transform-urls}
+# Usar conjuntos de reglas para transformar direcciones URL {#using-rulesets-to-transform-urls}
 
 Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones. Cada regla consta de al menos una condición y una acción. Una regla evalúa los datos XML comparándolos con las condiciones y, si se cumple una condición, toma la acción adecuada. Algunos ejemplos de conjuntos de reglas son los siguientes:
 
@@ -33,7 +33,7 @@ Puede implementar conjuntos de reglas en Dynamic Media para transformar direccio
 
 * Solicite que se codificen ciertos caracteres, como `$`, `{` y `}`, y que se descodificen ciertos caracteres para ImageServer. Por ejemplo, Facebook no funciona bien con las direcciones URL que contienen caracteres especiales.
 
-   Consulte [Eliminación de caracteres especiales de las direcciones URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
+   Consulte [Eliminar caracteres especiales de las direcciones URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
 En el contexto de Dynamic Media, los sitios web que utilizan un sistema basado en XML para administrar la información de recursos pueden cargar archivos XML a Dynamic Media. Puede designar uno de estos archivos como archivo del conjunto de reglas de procesamiento previo para servir recursos de Dynamic Media. Este archivo reestructura el formato de protocolo de URL estándar para satisfacer la lógica empresarial de los sistemas que se integran con Dynamic Media. Se especifica un archivo XML para que sirva como ruta de archivo de definiciones de conjuntos de reglas.
 
@@ -56,7 +56,7 @@ Consulte la aplicación de escritorio [Adobe Dynamic Media Classic para obtener 
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
 * **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
-Consulte también [Uso de la imagen &quot;asset&quot; en lugar de la imagen &quot;is&quot; en un conjunto de reglas](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
+Consulte también [Utilizar &#39;asset&#39; en lugar de &#39;is&#39; image en un conjunto de reglas](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
 **Para implementar conjuntos de reglas XML:**
 
@@ -66,21 +66,21 @@ Consulte también [Uso de la imagen &quot;asset&quot; en lugar de la imagen &quo
 
 1. Cargue el archivo del conjunto de reglas haciendo lo siguiente:
 
-   * En la barra de navegación global, haga clic en **[!UICONTROL Cargar]**.
-   * En la página **[!UICONTROL Upload]**, cerca de la esquina superior izquierda, haga clic en **[!UICONTROL Browse]**.
+   * En la barra de navegación global, seleccione **[!UICONTROL Cargar]**.
+   * En la página **[!UICONTROL Upload]**, cerca de la esquina superior izquierda, seleccione **[!UICONTROL Browse]**.
    * En el cuadro de diálogo **[!UICONTROL Abrir]**, busque el archivo del conjunto de reglas (XML).
-   * Seleccione el archivo y haga clic en **[!UICONTROL Open]**.
+   * Seleccione el archivo y, a continuación, seleccione **[!UICONTROL Open]**.
    * A la derecha de la página **[!UICONTROL Upload]**, seleccione una carpeta de destino para el archivo del conjunto de reglas.
-   * Cerca de la parte inferior de la página, asegúrese de que **[!UICONTROL Publicar después de cargar]** está marcado.
-   * En la esquina inferior derecha de la página, haga clic en **[!UICONTROL Enviar carga]**.
-   * En la barra de navegación global, haga clic en **[!UICONTROL Trabajos]** para comprobar el estado del trabajo de carga. Cuando la columna **[!UICONTROL Status]** de la página **[!UICONTROL Job]** indique Upload Done, continúe con los pasos siguientes.
+   * Cerca de la parte inferior de la página, asegúrese de que **[!UICONTROL Publicar después de cargar]** está marcada.
+   * En la esquina inferior derecha de la página, seleccione **[!UICONTROL Enviar carga]**.
+   * En la barra de navegación global, seleccione **[!UICONTROL Jobs]** para comprobar el estado del trabajo de carga. Cuando la columna **[!UICONTROL Status]** de la página **[!UICONTROL Job]** indique Upload Done, continúe con los pasos siguientes.
 
-1. En la barra de navegación cerca de la parte superior de la página, haga clic en **[!UICONTROL Configuración > Configuración de la aplicación > Configuración de la publicación > Servidor de imágenes]**.
-1. En la página **[!UICONTROL Publicación del servidor de imágenes]**, en el grupo **[!UICONTROL Administración de catálogos]**, busque **[!UICONTROL Ruta del archivo de definición de conjunto de reglas]** y haga clic en **[!UICONTROL Seleccionar]**.
-1. En la página **[!UICONTROL Seleccionar archivo de definición de conjunto de reglas (XML)]**, busque el archivo de conjunto de reglas y, en la esquina inferior derecha de la página, haga clic en **[!UICONTROL Seleccionar]**.
-1. En la esquina inferior derecha de la página Configuración, haga clic en **[!UICONTROL Cerrar]**.
+1. En la barra de navegación cerca de la parte superior de la página, seleccione **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
+1. En la página **[!UICONTROL Publicación del servidor de imágenes]**, en el grupo **[!UICONTROL Administración de catálogos]**, busque **[!UICONTROL Ruta del archivo de definición de conjunto de reglas]** y seleccione **[!UICONTROL Seleccionar]**.
+1. En la página **[!UICONTROL Seleccionar archivo de definición de conjunto de reglas (XML)]**, busque el archivo de conjunto de reglas y, en la esquina inferior derecha de la página, seleccione **[!UICONTROL Seleccionar]**.
+1. En la esquina inferior derecha de la página Configuración, seleccione **[!UICONTROL Cerrar]**.
 1. Ejecute un trabajo de publicación de Image Server.
 
    Las condiciones del conjunto de reglas se aplican en las solicitudes a los servidores de imágenes de Dynamic Media activos.
 
-   Si realiza cambios en el archivo del conjunto de reglas, los cambios se aplican inmediatamente cuando vuelve a cargar y publicar el archivo del conjunto de reglas actualizado.
+   Si cambia el archivo del conjunto de reglas, los cambios se aplican inmediatamente cuando vuelve a cargar y publicar el archivo del conjunto de reglas actualizado.
