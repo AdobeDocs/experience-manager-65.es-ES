@@ -8,12 +8,13 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Vídeo
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '1568'
-ht-degree: 34%
+source-wordcount: '1564'
+ht-degree: 31%
 
 ---
 
@@ -45,7 +46,7 @@ Los formatos siguientes se admiten para el componente de vídeo de Scene7:
 * F4V H.264
 * MP4 H.264
 
-## Decidir dónde cargar el vídeo {#deciding-where-to-upload-your-video}
+## Decida dónde cargar el vídeo {#deciding-where-to-upload-your-video}
 
 Decidir dónde cargar los recursos de vídeo depende de las acciones siguientes:
 
@@ -70,11 +71,9 @@ Si no necesita un flujo de trabajo o crear versiones de los recursos, cárguelos
 1. En el Experience Manager, acceda a los recursos de vídeo de WCM en la pestaña **[!UICONTROL Scene7]** del Buscador de contenido.
 1. Autor con el componente **[!UICONTROL Scene7 Video]**.
 
-## Configuración de la integración con vídeo de Scene7 {#configuring-integration-with-scene-video}
+## Configurar la integración con Scene7 Video {#configuring-integration-with-scene-video}
 
-Para configurar los ajustes preestablecidos universales:
-
-1. En **[!UICONTROL Servicios de nube]**, vaya a la configuración de **[!UICONTROL Scene7]** y haga clic en **[!UICONTROL Editar]**.
+1. En **[!UICONTROL Cloud Services]**, vaya a la configuración **[!UICONTROL Scene7]** y seleccione **[!UICONTROL Editar]**.
 1. Seleccione la pestaña **[!UICONTROL Vídeo]**.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -95,14 +94,14 @@ Para configurar los ajustes preestablecidos universales:
 
 ## Actualizar los ajustes preestablecidos del visor y de codificación {#updating-viewer-and-encoding-presets}
 
-Para actualizar los ajustes preestablecidos de visor y codificación para vídeo porque los ajustes preestablecidos se actualizaron en Scene7, vaya a la configuración de Scene7 en la Configuración de nube y pulse **[!UICONTROL Actualizar los ajustes preestablecidos de visor y codificación]**.
+Para actualizar los ajustes preestablecidos de visor y codificación para vídeo porque los ajustes preestablecidos se actualizaron en Scene7, vaya a la configuración de Scene7 en la Configuración de nube y seleccione **[!UICONTROL Actualizar los ajustes preestablecidos de visor y codificación]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Carga del vídeo de origen principal en Scene7 desde Adobe DAM {#uploading-your-master-video}
+## Cargar el vídeo de origen principal a Scene7 desde Adobe DAM {#uploading-your-master-video}
 
 1. Vaya a la carpeta de destino de CQ DAM en que ha establecido la configuración de nube con perfiles de codificación de Scene7.
-1. Haga clic en **[!UICONTROL Cargar]** para cargar el vídeo de origen principal. La carga y codificación de vídeo se completan después de que el flujo de trabajo [!UICONTROL DAM Update Asset] se haya completado y **[!UICONTROL Publish to Scene7]** tenga una marca de verificación.
+1. Seleccione **[!UICONTROL Upload]** para cargar el vídeo de origen principal. La carga y codificación de vídeo se completan después de que el flujo de trabajo [!UICONTROL DAM Update Asset] se haya completado y **[!UICONTROL Publish to Scene7]** tenga una marca de verificación.
 
    >[!NOTE]
    >
@@ -150,9 +149,9 @@ Las distintas codificaciones de vídeo se crean de acuerdo con los ajustes prees
 >
 >Los perfiles de vídeo nuevos, así como los cambios que se realicen en ellos, deben activarse para publicarse.
 
-1. En el Experience Manager, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL Consola de configuración]**.
+1. En el Experience Manager, seleccione **[!UICONTROL Tools]** > **[!UICONTROL Configuration Console]**.
 1. En la **[!UICONTROL Consola de configuración]**, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL DAM]** > **[!UICONTROL Perfiles de vídeo]** en el árbol de navegación.
-1. Crear un perfil de vídeo de S7. En el menú **[!UICONTROL Nuevo]**., seleccione **[!UICONTROL Crear página]** y, a continuación, seleccione la plantilla Perfil de vídeo de Scene7. Asigne un nombre a la página nueva del perfil de vídeo y haga clic en **[!UICONTROL Crear]**.
+1. Crear un perfil de vídeo de S7. En el menú **[!UICONTROL Nuevo]**., seleccione **[!UICONTROL Crear página]** y, a continuación, seleccione la plantilla Perfil de vídeo de Scene7. Asigne un nombre a la nueva página de perfil de vídeo y seleccione **[!UICONTROL Crear]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -168,7 +167,7 @@ Las distintas codificaciones de vídeo se crean de acuerdo con los ajustes prees
 
    Repita este paso para todos los ajustes preestablecidos de codificación seleccionados en la configuración de nube que desea utilizar en el componente de vídeo.
 
-#### Configuración del diseño {#configuring-design}
+#### Configurar diseño {#configuring-design}
 
 El componente **[!UICONTROL Vídeo base]** debe saber qué perfiles de vídeo utilizar para crear la lista de fuentes de vídeo. Abra el cuadro de diálogo de diseño de componentes de vídeo y configure el diseño de componentes para utilizar los nuevos perfiles de vídeo.
 
