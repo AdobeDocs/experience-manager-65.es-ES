@@ -10,7 +10,7 @@ docset: aem65
 feature: Visores
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 997eeafa03d3148fb0754eaa27a5a99217e0d1bc
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '6636'
 ht-degree: 6%
@@ -811,7 +811,7 @@ Por ejemplo, `https://ims-na1.adobelogin.com/`
 
    * **[!UICONTROL Título]** : introduzca un título de configuración descriptivo. Por ejemplo, `We.Retail Tags cloud configuration`.
 
-   * **[!UICONTROL Configuración de IMS de Adobe asociado]** : seleccione la configuración de IMS que creó anteriormente en  [Configuración de IMS de Experience Manager](#configuring-aem-ims).
+   * **[!UICONTROL Configuración de IMS de Adobe asociado]** : seleccione la configuración de IMS que creó anteriormente en  [Configurar IMS de Experience Manager](#configuring-aem-ims).
 
    * **[!UICONTROL Empresa]** : en la lista  **** desplegable Empresa, seleccione la empresa Experience Cloud. La lista se rellena automáticamente.
 
