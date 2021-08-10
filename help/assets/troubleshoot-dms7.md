@@ -1,6 +1,6 @@
 ---
-title: 'Solución de problemas de Dynamic Media: modo Scene7'
-description: Solución de problemas de Dynamic Media cuando se está ejecutando en modo Scene7.
+title: 'Resolución de problemas de Dynamic Media: modo Scene7'
+description: Solucionar problemas de Dynamic Media cuando se está ejecutando en modo Scene7.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,14 +11,14 @@ docset: aem65
 role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Solución de problemas
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
 
 ---
 
-# Solución de problemas de Dynamic Media: modo Scene7{#troubleshooting-dynamic-media-scene-mode}
+# Resolución de problemas de Dynamic Media: modo Scene7{#troubleshooting-dynamic-media-scene-mode}
 
 En el siguiente documento se describe la solución de problemas para Dynamic Media que ejecuta el modo de ejecución **dynamic_media_scene7**.
 
@@ -26,8 +26,8 @@ En el siguiente documento se describe la solución de problemas para Dynamic Med
 
 Asegúrese de que Dynamic Media se ha configurado correctamente haciendo lo siguiente:
 
-* El comando Start up contiene el argumento `-r dynamicmedia_scene7` runmode.
-* Cualquier paquete AEM 6.4 de correcciones acumulativas (CFP) se ha instalado primero *antes* de cualquier paquete de funciones de Dynamic Media disponible.
+* El comando Start up contiene el argumento `-r dynamicmedia_scene7` run mode.
+* Cualquier paquete de correcciones acumulativas (CFP) de Adobe Experience Manager 6.4 se ha instalado primero *antes* de cualquier paquete de funciones de Dynamic Media disponible.
 * Se ha instalado el paquete de funciones opcional 18912.
 
    Este paquete de funciones opcional es compatible con FTP o si está migrando recursos a Dynamic Media desde Dynamic Media Classic.
@@ -43,7 +43,7 @@ A continuación se ofrecen algunos consejos y trucos generales para todos los re
 
 ### Propiedades del estado de sincronización de recursos {#asset-synchronization-status-properties}
 
-Las siguientes propiedades de recursos se pueden revisar en CRXDE Lite para confirmar que la sincronización del recurso se ha realizado correctamente de AEM a Dynamic Media:
+Las siguientes propiedades de recursos se pueden revisar en CRXDE Lite para confirmar que la sincronización del recurso se ha realizado correctamente de Experience Manager a Dynamic Media:
 
 | **Propiedad** | **Ejemplo** | **Descripción** |
 |---|---|---|
@@ -54,7 +54,7 @@ Las siguientes propiedades de recursos se pueden revisar en CRXDE Lite para conf
 
 ### Registro de sincronización {#synchronization-logging}
 
-Los errores y problemas de sincronización se registran en `error.log` (directorio de servidor AEM `/crx-quickstart/logs/`). Hay suficientes registros disponibles para determinar la causa raíz de la mayoría de los problemas, pero puede aumentar el registro en DEBUG en el paquete `com.adobe.cq.dam.ips` a través de la Consola Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) para recopilar más información.
+Los errores y problemas de sincronización se registran en `error.log` (directorio del servidor Experience Manager `/crx-quickstart/logs/`). Hay suficientes registros disponibles para determinar la causa raíz de la mayoría de los problemas, pero puede aumentar el registro en DEBUG en el paquete `com.adobe.cq.dam.ips` a través de la Consola Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) para recopilar más información.
 
 ### Mover, copiar, eliminar {#move-copy-delete}
 
@@ -66,11 +66,11 @@ Antes de realizar una operación Mover, Copiar o Eliminar, haga lo siguiente:
 
 ### Control de versión {#version-control}
 
-Al reemplazar un recurso de Dynamic Media existente (el mismo nombre y ubicación), tiene la opción de mantener ambos recursos o de reemplazar/crear una versión:
+Al reemplazar un recurso de Dynamic Media existente (el mismo nombre y ubicación), puede mantener ambos recursos o reemplazar/crear una versión:
 
-* Mantener ambos creará un nuevo recurso con un nombre único para la URL del recurso publicado. Por ejemplo, `image.jpg` es el recurso original y `image1.jpg` es el recurso recién cargado.
+* Al mantener ambos, se crea un recurso con un nombre único para la URL del recurso publicado. Por ejemplo, `image.jpg` es el recurso original y `image1.jpg` es el recurso recién cargado.
 
-* La creación de una versión no es compatible con el envío en modo Dynamic Media - Scene7. La nueva versión reemplazará al recurso existente en la entrega.
+* La creación de una versión no es compatible con el envío en modo Dynamic Media - Scene7. La nueva versión sustituye al recurso existente en la entrega.
 
 ## Imágenes y conjuntos {#images-and-sets}
 
@@ -89,11 +89,11 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes di
     <ol>
      <li><p>Vaya a CRX/DE:</p>
       <ul>
-       <li>Compruebe si el ajuste preestablecido en el JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> definido. Tenga en cuenta que esta ubicación se aplica si ha actualizado de AEM 6.x a 6.4 y ha excluido la migración. De lo contrario, la ubicación es <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
+       <li>Compruebe si el ajuste preestablecido en el JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code> definido. Esta ubicación se aplica si ha actualizado de Experience Manager 6.x a 6.4 y ha excluido la migración. De lo contrario, la ubicación es <code>/conf/global/settings/dam/dm/presets/viewer</code>.</li>
        <li>Compruebe que el recurso en el JCR tenga <code>dam:scene7FileStatus</code><strong> </strong>en Los metadatos se muestran como <code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
-   <td><p>Actualice la página/navegue a otra página y vuelva (es necesario volver a compilar el JSP del carril lateral)</p> <p>Si eso no funciona:</p>
+   <td><p>Actualice la página/navegue a otra página y vuelva (el JSP del carril lateral debe volver a compilarse)</p> <p>Si eso no funciona:</p>
     <ul>
      <li>Publicar recurso.</li>
      <li>Vuelva a cargar el recurso y publíquelo.</li>
@@ -107,7 +107,7 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes di
   <tr>
    <td><strong></strong> El botón Seleccionar no está activo después de seleccionar un recurso como parte de la edición de un conjunto</td>
    <td><p> </p> <p>Problema conocido que se solucionará en la versión 6.4</p> <p> </p> </td>
-   <td><p>Haga clic en otra carpeta en el Selector de recursos primero y vuelva para seleccionar el recurso.</p> </td>
+   <td><p>Seleccione primero en otra carpeta del Selector de recursos y vuelva para seleccionar el recurso.</p> </td>
   </tr>
   <tr>
    <td>La zona interactiva de carrusel se desplaza después de cambiar entre diapositivas</td>
@@ -161,7 +161,7 @@ Si tiene problemas con el vídeo, consulte las siguientes directrices para la re
      <li>Asigne un perfil de vídeo a la carpeta .</li>
      <li>Edite el perfil de vídeo para incluir más de un ajuste preestablecido de codificación.</li>
      <li>Espere a que el vídeo termine de procesarse.</li>
-     <li>Para volver a cargar el vídeo, asegúrese de que el flujo de trabajo de codificación de vídeo de Dynamic Media no se esté ejecutando.<br /> </li>
+     <li>Asegúrese de que el flujo de trabajo de codificación de vídeo de Dynamic Media no se esté ejecutando.<br /> </li>
      <li>Vuelva a cargar el vídeo.</li>
     </ol> </td>
   </tr>
@@ -175,7 +175,7 @@ Si tiene problemas con el vídeo, consulte las siguientes directrices para la re
     </ul> </td>
    <td>
     <ol>
-     <li>Compruebe la instancia de AEM con <code>-r dynamicmedia_scene7</code></li>
+     <li>Compruebe la instancia de Experience Manager con <code>-r dynamicmedia_scene7</code></li>
      <li>Compruebe que la configuración de Dynamic Media en Cloud Services esté correctamente configurada.</li>
      <li>Compruebe que la carpeta tiene un perfil de vídeo. Compruebe también el perfil de vídeo.</li>
     </ol> </td>
@@ -218,12 +218,12 @@ Si tiene problemas con los visualizadores, consulte las siguientes directrices p
   </tr>
   <tr>
    <td>Los ajustes preestablecidos de visor no se publican</td>
-   <td><p>Continúe con la página de diagnóstico del administrador de muestras: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe los valores calculados. Cuando funcione correctamente, debería ver:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: Los recursos del visor pueden tardar unos 10 minutos en sincronizarse tras la configuración de la nube de Dynamic Media.</p> <p>Si quedan recursos desactivados, haga clic en cualquiera de los botones <strong>List all Unactivate Assets</strong> para ver los detalles.</p> </td>
+   <td><p>Continúe con la página de diagnóstico del administrador de muestras: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe los valores calculados. Cuando funciona correctamente, puede ver lo siguiente:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Nota</strong>: Los recursos del visor pueden tardar unos 10 minutos en sincronizarse tras la configuración de la nube de Dynamic Media.</p> <p>Si los recursos desactivados permanecen, seleccione cualquiera de los botones <strong>List all Unactivate Assets</strong> para ver los detalles.</p> </td>
    <td>
     <ol>
      <li>Vaya a la lista de ajustes preestablecidos de visor en las herramientas de administración: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Seleccione todos los ajustes preestablecidos de visor y haga clic en <strong>Publicar</strong>.</li>
+     <li>Seleccione todos los ajustes preestablecidos de visor y, a continuación, seleccione <strong>Publicar</strong>.</li>
      <li>Vuelva al administrador de muestras y observe que el recuento de recursos no activados es ahora cero.</li>
     </ol> </td>
   </tr>
@@ -243,20 +243,20 @@ Si tiene problemas con los visualizadores, consulte las siguientes directrices p
        <li>Ejemplo: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
       </ul> </li>
     </ol> </td>
-   <td><p>Si los recursos de muestra o las ilustraciones preestablecidas del visualizador no se han sincronizado o publicado, reinicie todo el proceso de copia/sincronización:</p>
+   <td><p>Si la ilustración de ajustes preestablecidos de visor o recursos de muestra no se han sincronizado ni publicado, reinicie todo el proceso de copia y sincronización:</p>
     <ol>
      <li>Vaya al CRXDE Lite.
       <ul>
        <li>Eliminar <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
       </ul> </li>
-     <li>Vaya al gestor de paquetes CRX: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
+     <li>Vaya al Administrador de paquetes CRX: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
       <ol>
        <li>Busque el paquete de visor en la lista (comienza con <code>cq-dam-scene7-viewers-content</code>)</li>
-       <li>Haga clic en <strong>Reinstall</strong>.</li>
+       <li>Seleccione <strong>Reinstall</strong>.</li>
       </ol> </li>
      <li>En Cloud Services, vaya a la página Configuración de Dynamic Media y, a continuación, abra el cuadro de diálogo de configuración para la configuración de Dynamic Media - S7.
       <ul>
-       <li>No realice cambios, haga clic en <strong>Guardar</strong>. Esto vuelve a almacenar en déclencheur la lógica para crear y sincronizar los recursos de ejemplo, el CSS preestablecido de visor y la ilustración.<br />  </li>
+       <li>No realice cambios, seleccione <strong>Guardar</strong>. Esta acción vuelve a almacenar en déclencheur la lógica para crear y sincronizar los recursos de ejemplo, el CSS preestablecido del visor y la ilustración.<br />  </li>
       </ul> </li>
     </ol> </td>
   </tr>
