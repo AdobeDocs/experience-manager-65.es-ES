@@ -10,10 +10,10 @@ discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 role: User, Admin
 exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
 feature: Selectores
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 16%
+source-wordcount: '725'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Al trabajar con una imagen interactiva, un vídeo interactivo o un titular de ca
 
 En este tema se explica cómo utilizar los selectores de producto, sitio y recurso, incluida la capacidad de examinar, filtrar y ordenar dentro de los selectores.
 
-Puede acceder a los selectores al crear conjuntos de carrusel, agregar zonas interactivas y mapas de imágenes, crear vídeos e imágenes interactivos.
+Puede acceder a los selectores al crear conjuntos de carrusel, agregar zonas interactivas y mapas de imágenes, crear imágenes y vídeos interactivos.
 
 Por ejemplo, en este titular de carrusel, utilice el selector de productos si está vinculando un punto interactivo o un mapa de imagen a una página de vista rápida. Utilice el selector de sitio si está vinculando un punto interactivo o un mapa de imagen a un hipervínculo; utilice el selector de recursos cuando esté creando una diapositiva.
 
@@ -31,17 +31,17 @@ Por ejemplo, en este titular de carrusel, utilice el selector de productos si es
 
 Cuando selecciona (en lugar de introducir manualmente) a dónde se dirigen los puntos interactivos o los mapas de imagen, está utilizando el selector. El selector de sitio solo funciona si es cliente de Sites Experience Manager. El selector de productos también requiere Experience Manager Commerce.
 
-## Selección de productos {#selecting-products}
+## Uso del selector de productos {#selecting-products}
 
 Utilice el selector de productos para elegir un producto cuando desee que un punto interactivo o un mapa de imagen proporcionen una vista rápida a un producto específico de su catálogo de productos.
 
-1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y pulse la pestaña **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
+1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y seleccione la pestaña **[!UICONTROL Actions]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
 
    El selector de producto se encuentra en el área **[!UICONTROL Tipo de acción]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Pulse el icono **[!UICONTROL Selector de producto]** (lupa) y navegue hasta un producto del catálogo.
+1. Seleccione el icono **[!UICONTROL Selector de producto]** (lupa) y vaya a un producto del catálogo.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
@@ -53,11 +53,11 @@ Utilice el selector de productos para elegir un producto cuando desee que un pun
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Toque **[!UICONTROL Ordenar]** por para cambiar si el Experience Manager ordena de más reciente a más antiguo o de más antiguo a más reciente.
+   Seleccione **[!UICONTROL Ordenar]** por para cambiar si el Experience Manager ordena de más reciente a más antiguo o de más antiguo a más reciente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Puntee en **[!UICONTROL Ver como]** para cambiar la forma en que ve los productos, ya sea en **[!UICONTROL Vista de lista]** o en **[!UICONTROL Vista de tarjeta]**.
+   Seleccione **[!UICONTROL Ver como]** para cambiar la forma en que ve los productos: **[!UICONTROL Vista de lista]** o **[!UICONTROL Vista de tarjeta]**.
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -65,21 +65,21 @@ Utilice el selector de productos para elegir un producto cuando desee que un pun
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. En el modo **[!UICONTROL Vista previa]**, puede pulsar el punto interactivo o el mapa de imagen y ver el aspecto de la vista rápida.
+1. En el modo **[!UICONTROL Preview]**, puede seleccionar el punto interactivo o el mapa de imagen y ver el aspecto que tendrá la vista rápida.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Selección de sitios {#selecting-sites}
+## Uso del selector de sitios {#selecting-sites}
 
 Utilice el selector del sitio para elegir una página web cuando desee que un punto interactivo o un mapa de imagen se vincule a una página web que se administra dentro de Sitios Experience Manager.
 
-1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y pulse la pestaña **[!UICONTROL Acciones]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
+1. Vaya al conjunto de carrusel, la imagen interactiva o el vídeo interactivo y seleccione la pestaña **[!UICONTROL Actions]** (solo disponible si ha definido un punto interactivo o un mapa de imagen).
 
    El Selector de sitio se encuentra en el área **[!UICONTROL Tipo de acción]**.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Pulse el icono **[!UICONTROL Selector de sitio]** (carpeta con lupa) y navegue a una página de los sitios Experience Manager a los que desee vincular el punto interactivo o el mapa de imagen.
+1. Seleccione el icono **[!UICONTROL Selector de sitio]** (carpeta con lupa) y navegue a una página de los sitios Experience Manager a los que desee vincular el punto interactivo o el mapa de imagen.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -87,16 +87,16 @@ Utilice el selector del sitio para elegir una página web cuando desee que un pu
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. En el modo **[!UICONTROL Vista previa]** si toca el punto interactivo o el mapa de imagen, puede navegar a la página del sitio Experience Manager que especificó.
+1. En el modo **[!UICONTROL Vista previa]** si selecciona el punto interactivo o el mapa de imagen, puede navegar a la página del sitio Experience Manager que especificó.
 
-## Selección de recursos {#selecting-assets}
+## Uso del selector de recursos {#selecting-assets}
 
-Utilice este selector para elegir imágenes que se utilizarán en un titular de carrusel, un vídeo interactivo, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de giros. En el vídeo interactivo, el selector de recursos está disponible al pulsar **[!UICONTROL Seleccionar recursos]** en la pestaña **[!UICONTROL Contenido]**. En Conjuntos de carrusel, el selector de recursos está disponible al crear una diapositiva. En Conjuntos de imágenes, Conjuntos de medios mixtos y Conjuntos de giros, el selector de recursos está disponible al crear un conjunto de imágenes, un conjunto de medios mixtos o un conjunto de giros, respectivamente.
+Utilice este selector para elegir imágenes que se utilizarán en un titular de carrusel, un vídeo interactivo, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de giros. En el vídeo interactivo, el selector de recursos está disponible cuando selecciona **[!UICONTROL Seleccionar recursos]** en la pestaña **[!UICONTROL Contenido]**. En Conjuntos de carrusel, el selector de recursos está disponible al crear una diapositiva. En Conjuntos de imágenes, Conjuntos de medios mixtos y Conjuntos de giros, el selector de recursos está disponible al crear un conjunto de imágenes, un conjunto de medios mixtos o un conjunto de giros, respectivamente.
 
 Consulte también [Selector de recursos](search-assets.md#assetpicker) para obtener más información.
 
 1. Vaya al conjunto de carrusel y cree una diapositiva. O bien, vaya al Vídeo interactivo, vaya a la pestaña **[!UICONTROL Contenido]** y seleccione recursos. O bien, cree un conjunto de medios mixtos, un conjunto de imágenes o un conjunto de giros.
-1. Pulse el icono **[!UICONTROL Selector de recursos]** (carpeta con lupa) y navegue hasta un recurso.
+1. Seleccione el icono **[!UICONTROL Selector de recursos]** (carpeta con lupa) y vaya a un recurso.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
@@ -106,11 +106,11 @@ Consulte también [Selector de recursos](search-assets.md#assetpicker) para obte
 
    Cambie el lugar donde el Experience Manager navega por los recursos navegando a otra carpeta en el campo **[!UICONTROL Path]**.
 
-   Toque **[!UICONTROL Collection]** para buscar solo recursos dentro de las colecciones.
+   Seleccione **[!UICONTROL Collection]** para buscar solo recursos dentro de las colecciones.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Pulse **[!UICONTROL Ver como]** para cambiar la forma en que ve los productos: **[!UICONTROL vista de lista]**, **[!UICONTROL vista de columna]** o **[!UICONTROL vista de tarjeta]**.
+   Seleccione **[!UICONTROL Ver como]** para cambiar la forma en que ve los productos: **[!UICONTROL Vista de lista]**, **[!UICONTROL Vista de columna]** o **[!UICONTROL Vista de tarjeta]**.
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
