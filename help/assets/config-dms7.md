@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuración,Modo Scene7
-source-git-commit: 5769ddeefe2d01d32bb9a0611dc06af68a848936
+source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
 workflow-type: tm+mt
 source-wordcount: '6941'
 ht-degree: 4%
@@ -168,7 +168,7 @@ Si tiene intención de utilizar esta función, tenga en cuenta los siguientes re
 * Asegúrese de que la instancia de Experience Manager esté configurada con el almacenamiento de Amazon S3 o Microsoft® Azure Blob.
 
    >[!NOTE]
-   Configure el almacenamiento del blob de Azure con ambas claves de acceso (clave1 y clave2) porque esta función de carga grande no es compatible con AzureSas en la configuración de almacenamiento del Blob.
+   Configure el almacenamiento del blob de Azure con una clave de acceso y una clave secreta porque esta función de carga grande no es compatible con AzureSas en la configuración de almacenamiento del blob.
 
 * Oak [Direct Binary Access download](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) está habilitado (no se requiere Oak *Direct Binary Access upload*).
 
