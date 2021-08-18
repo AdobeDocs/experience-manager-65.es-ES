@@ -1,8 +1,8 @@
 ---
 title: Ascripciones esenciales
 seo-title: Ascripciones esenciales
-description: Descripción general de la función Asignaciones para comunidades de habilitación
-seo-description: Descripción general de la función Asignaciones para comunidades de habilitación
+description: Información general sobre la función Asignaciones para comunidades de habilitación
+seo-description: Información general sobre la función Asignaciones para comunidades de habilitación
 uuid: e49fce26-1091-4f37-93e8-c4ec85371811
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,28 +10,27 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '222'
 ht-degree: 13%
 
 ---
 
+# Ascripciones esenciales {#assignments-essentials}
 
-# Assignments Essentials {#assignments-essentials}
-
-Continúe leyendo para conocer la información esencial para trabajar con la función de asignaciones de [sitios de comunidad de habilitación](/help/communities/overview.md#enablement-community).
+Siga leyendo para conocer la información esencial para trabajar con la función de asignaciones de los sitios de [comunidad de habilitación](/help/communities/overview.md#enablement-community).
 
 La función de asignaciones es la capacidad de asignar recursos de habilitación y rutas de aprendizaje a miembros de comunidades de habilitación.
 
-## Esenciales para el cliente {#essentials-for-client-side}
+## Elementos esenciales para el cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/habilitación/componentes/hbs/miasignados</td>
+   <td>social/habilitación/componentes/hbs/myassigned</td>
   </tr>
   <tr>
    <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
@@ -39,7 +38,7 @@ La función de asignaciones es la capacidad de asignar recursos de habilitación
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassign<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningPath</td>
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learn.path</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -58,7 +57,7 @@ La función de asignaciones es la capacidad de asignar recursos de habilitación
 
 ### Estado de finalización y éxito {#completion-and-success-status}
 
-El estado de Finalización y Éxito se utiliza en los informes y las pancartas de estado de las asignaciones.
+El estado de Finalización y Éxito se utiliza en los informes y los titulares de estado en Asignaciones.
 
 Estado de finalización:
 
@@ -73,7 +72,7 @@ Estado de éxito:
 * Pase
 * Error
 
-Las únicas combinaciones posibles de estado de finalización y éxito son:
+Las únicas combinaciones posibles de Estado de finalización y éxito son:
 
 | **Finalización** | **Correcto** |
 |---|---|
@@ -82,17 +81,16 @@ Las únicas combinaciones posibles de estado de finalización y éxito son:
 | Completar | Pase |
 | Completar | Error |
 
-## Esenciales para servidor {#essentials-for-server-side}
+## Elementos esenciales para el servidor {#essentials-for-server-side}
 
 ### Función Asignaciones {#assignments-function}
 
-Una estructura de sitio de comunidad que incluye la [función Asignaciones](/help/communities/functions.md#assignments-function), incluye un componente ` [assignments](/help/communities/assignments.md)` configurado.
+Una estructura de sitio de la comunidad que incluye la [Función de asignaciones](/help/communities/functions.md#assignments-function), incluye un componente ` [assignments](/help/communities/assignments.md)` configurado.
 
 ### API de referencia {#reference-apis}
 
 * [API de habilitación](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [API de sistema de informes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
+* [API de informes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API de sistema de informes Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
-
+* [API de informes de Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/model/api/package-summary.html)
