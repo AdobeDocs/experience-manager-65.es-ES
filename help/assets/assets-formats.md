@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Administración de recursos,Representaciones
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f0a0ea53675afa16463a3cf863257020ba5374d3
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1555'
 ht-degree: 10%
 
 ---
@@ -217,12 +217,8 @@ Además de la funcionalidad anterior, considere lo siguiente:
 | AVI | Intercalación A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| MXF | MXF | XDCAM de Sony, MPEG-2, MPEG-4, DVCP de Panasonic | - |
-| MTS | AVCHD | H264/AVC | - |
 | MKV | Matroska | H264/AVC | - |
-| R3D, RM | Vídeo rojo sin procesar | MJPEG 2000 | - |
 | RAM, RM | RealVideo | No admitido | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC | Flac nativo | Códec de audio sin pérdidas gratuito | - |
 | MJ2 | Motion JPEG 2000 | Códec Motion JPEG 2000 | - |
 
 ## Formatos de archivo compatibles {#supported-archive-formats}
@@ -307,7 +303,7 @@ Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/globa
 | TAR | application/x-tar |  |  |
 | TIF/TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| TTF | application/x-font-ttf |  |  |
+| RTF | application/x-font-ttf |  |  |
 | VOB | video/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |
