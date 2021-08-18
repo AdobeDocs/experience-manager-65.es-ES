@@ -12,9 +12,9 @@ discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2050'
 ht-degree: 4%
 
 ---
@@ -242,11 +242,11 @@ El [proyecto de muestra](https://github.com/Adobe-Marketing-Cloud/aem-communitie
 
 Para instalar el ejemplo para el filtro Etiquetas :
 
-1. Abra el administrador de paquetes en la instancia de AEM Author ([https://[aem-author]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)) y AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
+1. Abra el administrador de paquetes en la instancia de AEM Author (`https://[aem-author]:4502/crx/packmgr/index.jsp`) y en la instancia de AEM Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
 1. Cree el paquete `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` desde el código de Github, e instale y habilite lo mismo.
 1. Abra la consola de paquetes en la instancia de AEM Author ( `https://[aem-author]:4502/system/console/bundles`) y en la instancia de AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`).
-1. Cree el paquete ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` desde Github, e instale y habilite lo mismo.
-1. Vaya al nodo **/apps/social/moderation/facets** en AEM Author ([https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) y AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
+1. Cree el paquete (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) desde Github, e instale y habilite el mismo.
+1. Vaya al nodo **/apps/social/moderation/facets** en AEM Author (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) y AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
 1. Agregue un usuario técnico **communities-Utility-reader** con permisos `jcr:read`.
 
 Para exponer los filtros personalizados en sitios de la comunidad existentes:
