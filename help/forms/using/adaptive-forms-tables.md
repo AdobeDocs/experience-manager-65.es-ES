@@ -8,15 +8,14 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formularios adaptables
+exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '2430'
 ht-degree: 0%
 
 ---
-
 
 # Tablas en formularios adaptables{#tables-in-adaptive-forms}
 
@@ -130,9 +129,9 @@ Puede ver las propiedades de estilo en la barra lateral.
 
 >[!NOTE]
 >
->Puede cambiar el tema de color de las filas de encabezado y de trabajo cambiando los valores de las variables LESS. Para obtener más información, consulte [Temas en AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
+>Puede cambiar el tema de color de las filas de encabezado y de trabajo cambiando los valores de las variables LESS. Para obtener más información, consulte [Temas en AEM Forms](/help/forms/using/themes.md).
 
-## Agregar o eliminar una fila de forma dinámica {#add-or-delete-a-row-dynamically}
+## Añadir o eliminar una fila de forma dinámica {#add-or-delete-a-row-dynamically}
 
 Las tablas proporcionan compatibilidad para agregar o eliminar filas de forma dinámica durante la ejecución.
 
@@ -170,7 +169,7 @@ La expresión de visibilidad de una tabla o fila se puede definir en la pestaña
 
 Para obtener la lista completa de clases de formularios adaptables, eventos, objetos y API públicas, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
-## Diseños móviles {#mobile-layouts}
+## Presentaciones móviles {#mobile-layouts}
 
 Las tablas de formularios adaptables proporcionan una experiencia incomparable para dispositivos móviles debido a su diseño fluido y adaptable. AEM Forms ofrece dos tipos de diseños móviles para tablas: encabezados en columnas a la izquierda y contraíbles.
 
@@ -206,7 +205,7 @@ Columnas contraídas de una tabla con solo dos columnas que se muestran en un di
 
 Columna ampliada de una tabla en un dispositivo móvil
 
-## Combinación de datos en una tabla {#merge-data-in-a-table}
+## Combinar datos en una tabla {#merge-data-in-a-table}
 
 Las tablas de formularios adaptables permiten rellenar la tabla durante la ejecución utilizando datos de un archivo XML. El archivo XML de datos puede residir en el sistema de archivos local del equipo en el que se está ejecutando el servidor AEM Forms o en el repositorio CRX.
 
@@ -288,7 +287,7 @@ Para combinar estos datos con la tabla durante la ejecución, es necesario seña
 
 ![data-merge-table](assets/data-merged-table.png)
 
-## Utilice componentes XDP y tipos complejos XSD {#use-xdp-components-and-xsd-complex-types}
+## Uso de componentes XDP y tipos complejos XSD {#use-xdp-components-and-xsd-complex-types}
 
 Si ha creado un formulario adaptable basado en una plantilla de formulario XFA, los elementos XFA están disponibles en la ficha Modelo de datos de AEM Buscador de contenido. Puede arrastrar y soltar estos elementos XFA, incluidas tablas, en el formulario adaptable.
 
@@ -314,4 +313,3 @@ Además, puede arrastrar y soltar un grupo de elementos de tipo complejo XSD par
 * Cada celda de cuerpo de una tabla predeterminada tiene asociado un nombre de elemento predefinido. Si agrega otra tabla en el formulario adaptable, las celdas de cuerpo predeterminadas de la nueva tabla tendrán el mismo nombre de elemento que en la primera tabla. En este caso, los datos generados al enviar el formulario incluirán datos en las celdas de cuerpo predeterminadas de solo una de las tablas. Por lo tanto, asegúrese de cambiar el nombre de los elementos de las celdas de cuerpo predeterminadas para mantenerlos únicos en todas las tablas y evitar la pérdida de datos.
 
    Tenga en cuenta que esto solo es aplicable a las celdas de cuerpo predeterminadas. Si agrega más filas o columnas a una tabla, se generarán automáticamente nombres de elementos únicos para celdas de cuerpo no predeterminadas.
-
