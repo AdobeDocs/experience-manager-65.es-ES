@@ -8,10 +8,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: 812d1a43176a75ff22e3a0bc07bc658cb5070a62
 workflow-type: tm+mt
-source-wordcount: '3009'
+source-wordcount: '3002'
 ht-degree: 4%
 
 ---
@@ -175,7 +174,7 @@ Se necesita un scaffold para cada tipo de producto distinto. El scaffold adecuad
 1. Mediante:
 
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [Modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+   * [modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
    Seleccione el icono **Ver datos del producto**:
 
@@ -183,9 +182,9 @@ Se necesita un scaffold para cada tipo de producto distinto. El scaffold adecuad
 
 1. Se mostrarán los [atributos de producto](/help/commerce/cif-classic/administering/concepts.md#product-attributes). Utilice **Editar** y **Listo** para realizar cualquier cambio.
 
-### Muestra de referencias del producto {#showing-product-references}
+### Mostrar referencias del producto {#showing-product-references}
 
-#### Muestra de referencias del producto: IU táctil {#showing-product-references-touch-optimized-ui}
+#### Mostrar referencias del producto: IU táctil {#showing-product-references-touch-optimized-ui}
 
 1. Mediante la consola **Products** (a través de **Commerce**) vaya a la información del producto.
 1. Abra el carril secundario Referencias con el icono :
@@ -230,7 +229,7 @@ Puede modificar una faceta existente o agregar otras nuevas mediante el CRXDE Li
 1. Puede modificar el `propertyValues`. Por ejemplo, puede agregar XS o XXL, o quitar un tamaño.
 1. Haga clic en **Guardar todo** y vaya a la página de búsqueda de productos. Los cambios deben aparecer.
 
-### Recursos múltiples {#multiple-assets}
+### Varios recursos {#multiple-assets}
 
 Puede agregar varios recursos en el componente del producto y, a continuación, especificar el recurso que aparecerá en la página del producto.
 
@@ -322,7 +321,7 @@ El mecanismo para seleccionar la imagen que se va a mostrar es el siguiente:
 
 ### Publicar/cancelar la publicación de información de producto {#publishing-unpublishing-product-information}
 
-#### Publicación/Cancelación de la publicación de información del producto: IU táctil {#publishing-unpublishing-product-information-touch-optimized-ui}
+#### Publicación/cancelación de la publicación de información del producto: IU táctil {#publishing-unpublishing-product-information-touch-optimized-ui}
 
 >[!NOTE]
 >
@@ -334,7 +333,7 @@ El mecanismo para seleccionar la imagen que se va a mostrar es el siguiente:
 1. Mediante:
 
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [Modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+   * [modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
    Seleccione el icono **Publicar** o **Cancelar publicación** según sea necesario:
 
@@ -353,7 +352,7 @@ La integración de Search&amp;Promote le permite:
 
 Para obtener más información, lea [Fuente de productos](/help/sites-administering/product-feed.md).
 
-### Controlador de eventos para actualizaciones de producto {#event-handler-for-product-updates}
+### Controlador de eventos para actualizaciones de productos {#event-handler-for-product-updates}
 
 Existe un controlador de eventos que registra un evento cuando se agrega, modifica o elimina un producto y cuando se añade, modifica o elimina una página de producto. Existen los siguientes eventos de OSGi:
 
@@ -372,7 +371,7 @@ Puede verlas en la consola web en los eventos OSGI ( `/system/console/events`), 
 
 >[!NOTE]
 >
->Lea también [Gestión de eventos en AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>Lea también [Gestión de eventos en AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/).
 
 ### Imagen con vínculos Añadir a carro {#image-with-add-to-cart-links}
 
@@ -520,7 +519,7 @@ Para desplegar un catálogo:
 1. Mediante:
 
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [Modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+   * [modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
    Seleccione el icono **Rollout Changes**:
 
@@ -543,7 +542,7 @@ Para desplegar un catálogo:
 
 ### Importador de modelo {#blueprint-importer}
 
-#### Importador de modelo: IU táctil {#blueprint-importer-touch-optimized-ui}
+#### Importador de modelos: IU táctil {#blueprint-importer-touch-optimized-ui}
 
 1. Vaya a la consola **Catálogos** a través de **Comercio**.
 1. Desplácese a la ubicación en la que desea importar el modelo de catálogo.
@@ -615,7 +614,7 @@ Para desplegar un catálogo:
 
 1. Ahora puede activar el vale, de modo que los compradores puedan utilizarlo en sus carros en la instancia de publicación.
 
-### Eliminación de comprobantes {#removing-vouchers}
+### Eliminación de cupones {#removing-vouchers}
 
 #### Eliminación de cupones: IU clásica {#removing-vouchers-classic-ui}
 
@@ -626,13 +625,13 @@ Para que un vale no esté disponible para los clientes, puede:
 
 Ambas acciones se pueden realizar desde la consola **Sitios web**.
 
-### Modificación de contadores {#modifying-vouchers}
+### Modificación de comprobantes {#modifying-vouchers}
 
-#### Modificación de comprobadores: IU clásica {#modifying-vouchers-classic-ui}
+#### Modificación de cupones: IU clásica {#modifying-vouchers-classic-ui}
 
 Para cambiar las propiedades de un vale o promoción, puede hacer doble clic en él en la consola **Sitios web** y hacer clic en **Editar**. Después de guardarlo, debe activarlo para que los cambios se inserten en las instancias de publicación.
 
-### Adición de cupones a un carro {#adding-vouchers-to-a-cart}
+### Adición de cupones a un carro de compras {#adding-vouchers-to-a-cart}
 
 Para permitir que los usuarios agreguen comprobantes a sus carros, puede utilizar el componente integrado **Cupones** (categoría Comercio). Debe agregarlo a la misma página en la que se muestra el carro de compras (pero no es obligatorio). El componente de cupones es simplemente un formulario en el que el usuario puede introducir un código de cupón; es el componente de carro de compras el que muestra la lista de cupones aplicados y su descuento.
 
@@ -655,9 +654,9 @@ En el sitio de demostración (Geometrixx Outdoors - Inglés) puede ver el formul
 >
 >La información de pedidos de los clientes se guarda en sus directorios principales y se expone en el Historial de pedidos de su cuenta. Esta información se publica junto con el resto de su directorio de inicio.
 
-### Creación de Información de Pedido {#creating-order-information}
+### Creación de la información del pedido {#creating-order-information}
 
-#### Creación de información de pedido: IU táctil {#creating-order-information-touch-optimized-ui}
+#### Creación de información del pedido: IU táctil {#creating-order-information-touch-optimized-ui}
 
 1. Con la consola **Orders** vaya a la ubicación requerida.
 1. Utilice el icono **Crear** para seleccionar **Crear orden**.
@@ -668,7 +667,7 @@ En el sitio de demostración (Geometrixx Outdoors - Inglés) puede ver el formul
 
 1. Seleccione **Crear** para guardar la información.
 
-### Edición de la información del pedido {#editing-order-information}
+### Edición de la información del orden {#editing-order-information}
 
 #### Edición de la información del orden: IU táctil {#editing-order-information-touch-optimized-ui}
 
@@ -676,7 +675,7 @@ En el sitio de demostración (Geometrixx Outdoors - Inglés) puede ver el formul
 1. Mediante:
 
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [Modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+   * [modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
    Seleccione el icono **Ver datos de pedido**:
 
