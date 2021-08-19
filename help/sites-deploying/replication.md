@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuración
+exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '3444'
+source-wordcount: '3437'
 ht-degree: 3%
 
 ---
-
 
 # Replicación{#replication}
 
@@ -36,7 +35,7 @@ Las solicitudes están [en cola](/help/sites-deploying/osgi-configuration-settin
 >
 >Para varias instancias de publicación, los datos de usuario se distribuyen en Sling cuando [Sincronización de usuarios](/help/sites-administering/sync.md) está habilitada.
 
-## Replicar desde autor para publicar {#replicating-from-author-to-publish}
+## Duplicación de autor a publicación {#replicating-from-author-to-publish}
 
 La replicación, para una instancia de publicación o Dispatcher, se realiza en varios pasos:
 
@@ -63,7 +62,7 @@ En otros casos, como en el caso de las funciones de Communities (por ejemplo, fo
 
 AEM [Communities](/help/communities/overview.md) nunca utiliza la replicación para UGC. En su lugar, la implementación para Communities requiere un almacén común para UGC (consulte [Almacenamiento de contenido de la comunidad](/help/communities/working-with-srp.md)).
 
-### Replicación: lista para usar {#replication-out-of-the-box}
+### Replicación predeterminada {#replication-out-of-the-box}
 
 El sitio web de venta minorista que se incluye en una instalación estándar de AEM puede utilizarse para ilustrar la replicación.
 
@@ -125,7 +124,7 @@ Este es un &quot;Agente que almacena una representación estática de un nodo en
 Por ejemplo, con la configuración predeterminada, las páginas de contenido y los recursos DAM se almacenan en `/tmp` como HTML o con el formato de recurso adecuado. Consulte las pestañas `Settings` y `Rules` para ver la configuración.
 Esto se solicitó para que cuando la página se solicite directamente desde el servidor de aplicaciones, se pueda ver el contenido. Se trata de un agente especializado y (probablemente) no será necesario en la mayoría de los casos.
 
-## Agentes de replicación: Parámetros de configuración {#replication-agents-configuration-parameters}
+## Agentes de replicación: parámetros de configuración {#replication-agents-configuration-parameters}
 
 Al configurar un agente de replicación desde la consola Herramientas , hay cuatro pestañas disponibles en el cuadro de diálogo:
 
@@ -363,7 +362,7 @@ Desde la pestaña Herramientas del entorno de creación puede configurar los age
 
 >[!NOTE]
 >
->Cuando un despachante gestiona solicitudes HTTP para instancias de autor o publicación, la solicitud HTTP del agente de replicación debe incluir el encabezado PATH. Además del siguiente procedimiento, debe añadir el encabezado PATH a la lista de dispatcher de encabezados de cliente. (Consulte [/encabezados de cliente (encabezados de cliente)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders). [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+>Cuando un despachante gestiona solicitudes HTTP para instancias de autor o publicación, la solicitud HTTP del agente de replicación debe incluir el encabezado PATH. Además del siguiente procedimiento, debe añadir el encabezado PATH a la lista de dispatcher de encabezados de cliente. (Consulte [/encabezados de cliente (encabezados de cliente)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 
 
 1. Acceda a la pestaña **Tools** en AEM.
