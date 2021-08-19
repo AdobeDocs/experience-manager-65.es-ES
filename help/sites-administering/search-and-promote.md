@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
 exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '875'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,6 @@ Configure una o más conexiones a Search&amp;Promote para que las páginas web p
    >
    >con sus credenciales válidas de Search&amp;Promote (correo electrónico/contraseña).
    >A continuación, debe mirar la dirección URL en la barra de direcciones del explorador, que debería tener este aspecto:
-   >[](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
    >[https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
