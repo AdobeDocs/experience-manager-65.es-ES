@@ -13,7 +13,7 @@ discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 3%
@@ -191,7 +191,7 @@ Cuando ejecuta la Utilidad de migración por primera vez, se crea un registro co
 
 ### Tareas domésticas después de ejecutar la utilidad de migración {#housekeepingtasks}
 
-Después de ejecutar la utilidad de migración, debe encargarse de las siguientes tareas de mantenimiento: [](../../forms/using/import-export-forms-templates.md)
+Después de ejecutar la utilidad de migración, debe encargarse de las siguientes tareas de mantenimiento:
 
 1. Compruebe que la versión XFA de diseños y diseños de fragmento sea 3.3 o posterior. Si utiliza diseños y diseños de fragmento de una versión anterior, podría haber problemas al procesar la carta. Para actualizar la versión de un XFA anterior a la versión más reciente, complete los siguientes pasos:
 
