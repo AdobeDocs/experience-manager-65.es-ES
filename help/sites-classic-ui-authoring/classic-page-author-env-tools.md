@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 88%
+ht-degree: 87%
 
 ---
-
 
 # Creación: Entorno y herramientas {#authoring-the-environment-and-tools}
 
@@ -37,7 +36,7 @@ Hay un editor de páginas independiente en la IU clásica; utiliza el buscador d
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-## Acceso a la Ayuda {#accessing-help}
+## Acceso a la Ayuda   {#accessing-help}
 
 Se puede acceder a varios medios de **Ayuda** directamente desde AEM:
 
@@ -62,11 +61,11 @@ Puede utilizar el buscador de contenido para ubicar toda una serie de medios. Cu
 * [Imágenes](#finding-images)
 * [Documentos](#finding-documents)
 * [Películas](#finding-movies)
-* [Navegador Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
-* [](#products) [Páginas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
+* [Explorador Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Páginas](#finding-pages)
 
 * [Párrafos](#referencing-paragraphs-from-other-pages)
-* [Productos](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)
+* [Productos](#products)
 * O bien para [examinar el sitio web según la estructura del repositorio](#the-content-finder)
 
 Puede [buscar elementos específicos](#the-content-finder) con todas las opciones.
@@ -85,7 +84,7 @@ En esta ficha, se muestra una lista con los documentos del repositorio.
 
 Después de crear un párrafo Download en la página, puede arrastrar un elemento y colocarlo adentro del párrafo.
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![chlimage_1-192](assets/chlimage_1-112.png)
 
 ### Búsqueda de películas {#finding-movies}
 
@@ -99,13 +98,13 @@ Después de crear un párrafo apropiado (por ejemplo, Flash) en la página, pued
 
 Esta ficha enumera los productos. Después de crear un párrafo apropiado (por ejemplo, Producto) en la página, puede arrastrar un elemento y colocarlo dentro del párrafo.
 
-![chlimage_1-115](assets/chlimage_1-114.png)
+![chlimage_1-114](assets/chlimage_1-114.png)
 
 ### Búsqueda de páginas {#finding-pages}
 
-Esta ficha muestra todas las páginas. Haga clic con el doble en cualquier página para abrirla y editarla.
+Esta ficha muestra todas las páginas. Haga doble clic en cualquier página para abrirla y editarla.
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 ### Referencia a párrafos de otras páginas {#referencing-paragraphs-from-other-pages}
 
@@ -164,7 +163,7 @@ Para mostrar referencias de páginas directas:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Seleccione **Mostrar referencias...** AEM abre la ventana Referencias y muestra qué páginas hacen referencia a la página seleccionada, incluidas sus rutas.
+1. Seleccionar **Mostrar referencias...** AEM abre la ventana Referencias y muestra qué páginas hacen referencia a la página seleccionada, incluidas sus rutas de acceso.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -187,7 +186,7 @@ Se puede acceder al **registro de auditoría** desde la ficha **Información** d
 
 La consola Sitio web también [proporciona información sobre el estado actual de la página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) como publicación, modificación, bloqueo, Live Copy, etc.
 
-## Modos de página    {#page-modes}
+## Modos de página   {#page-modes}
 
 Al editar una página con la IU clásica hay varios modos a los que se puede acceder mediante los iconos en la parte inferior de la barra de tareas:
 
@@ -206,10 +205,10 @@ En este modo, puede configurar los componentes accesibles para editar el diseño
 >
 >Hay otras opciones disponibles:
 >
->* [Andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [ClientContext](/help/sites-administering/client-context.md)
->* Sitios web: abrirá la consola Sitios web
->* Volver a cargar: actualizará la página.
+>* [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
+* [ClientContext](/help/sites-administering/client-context.md)
+* Sitios web - abrirá la consola Sitios web .
+* Volver a cargar: actualizará la página.
 
 
 ## Métodos abreviados del teclado {#keyboard-shortcuts}
