@@ -7,8 +7,8 @@ uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
+source-git-commit: 61691c300322edcdee33b121ca400e4c89256e45
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Después de la instalación, puede configurar la instancia:
 1. [Configurar el importador de catálogos](#configure-the-catalog-importer).
 1. Utilice el [importador para importar el catálogo](#catalog-import) en una ubicación específica de AEM.
 
-## Configurar la búsqueda por facetas de Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
+## Configuración de la búsqueda por facetas para Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ La **Versión del catálogo** ( `hybris.catalog.version`) importada se puede con
 
 El resultado del registro proporciona comentarios sobre las páginas y los componentes creados e informa de posibles errores.
 
-## Configurar la estructura de importación {#configure-the-import-structure}
+## Configuración de la estructura de importación {#configure-the-import-structure}
 
 El siguiente listado muestra una estructura de muestra (de recursos, páginas y componentes) creada de forma predeterminada:
 
@@ -166,7 +166,7 @@ La estructura que se genera al importar se puede configurar para:
 
 Al trabajar con AEM hay varios métodos para administrar los ajustes de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información. Consulte también la consola para obtener una lista completa de los parámetros configurables y sus valores predeterminados.
 
-## Configure los Atributos del producto para que se carguen {#configure-the-product-attributes-to-load}
+## Configuración de los atributos de producto para cargar {#configure-the-product-attributes-to-load}
 
 El analizador de respuestas se puede configurar para definir las propiedades y los atributos que se van a cargar para los productos (variante):
 
@@ -181,7 +181,7 @@ El analizador de respuestas se puede configurar para definir las propiedades y l
    >
    >Al trabajar con AEM hay varios métodos para administrar los ajustes de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información. Consulte también la consola para obtener una lista completa de los parámetros configurables y sus valores predeterminados.
 
-## Importación de los datos del producto {#importing-the-product-data}
+## Importación de datos del producto {#importing-the-product-data}
 
 Existen varias formas de importar los datos del producto. Los datos del producto se pueden importar al configurar inicialmente el entorno o después de realizar cambios en los datos de híbridos:
 
@@ -274,7 +274,7 @@ Las siguientes propiedades indican el vínculo con hybris:
    ```
 
 
-### Actualización exprés {#express-update}
+### Actualización Express {#express-update}
 
 El proceso de importación puede tardar mucho tiempo, por lo que como extensión de la sincronización de productos puede seleccionar áreas específicas del catálogo para una actualización rápida que se activa manualmente. Esto utiliza la fuente de exportación junto con la configuración de atributos estándar.
 
@@ -309,9 +309,7 @@ El proceso de importación puede tardar mucho tiempo, por lo que como extensión
        /etc/commerce/products
    ```
 
-   ` [](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
-
-## Configurar el importador de catálogos {#configure-the-catalog-importer}
+## Configuración del importador de catálogos {#configure-the-catalog-importer}
 
 El catálogo de híbris se puede importar en AEM, utilizando el importador de lotes para catálogos, categorías y productos de híbridos.
 
