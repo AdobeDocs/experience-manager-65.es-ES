@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
+exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '4901'
 ht-degree: 95%
 
 ---
-
 
 # Creación de plantillas de página  {#creating-page-templates}
 
@@ -46,7 +45,7 @@ Para obtener información detallada acerca de cómo funcionan las plantillas edi
 
 >[!CAUTION]
 >
->Las páginas y plantillas creadas con la **Consola de plantillas** no están pensadas para utilizarse con la IU clásica y no se admite dicho uso.
+>Las páginas y plantillas creadas con la **Consola de plantillas** no están pensadas para utilizarse con la IU clásica y este uso no es compatible.
 
 ## Antes de comenzar {#before-you-start}
 
@@ -111,11 +110,11 @@ Actualmente, AEM ofrece dos tipos básicos de plantillas:
    * Las [proporcionan los desarrolladores](/help/sites-developing/page-templates-static.md), por lo que los autores no las pueden crear ni editar.
    * Se copian para crear la página nueva, pero no existe ninguna conexión dinámica después de esto (aunque el nombre de plantilla se registra a título informativo).
    * Utilice el [modo de diseño](/help/sites-authoring/default-components-designmode.md) para mantener las propiedades del diseño.
-   * Dado que la edición de plantillas estáticas es la tarea exclusiva de un desarrollador, consulte el documento para desarrolladores [Plantillas de página - Estático](/help/sites-developing/page-templates-static.md) para obtener más información.
+   * Como editar plantillas estáticas es tarea exclusiva de un desarrollador, consulte el documento para desarrolladores [Plantillas de página: estáticas](/help/sites-developing/page-templates-static.md) para obtener más información.
 
 Por definición, la consola y el editor de plantillas solo permiten la creación y edición de plantillas editables. Por tanto, el documento se centra exclusivamente en plantillas editables.
 
-### Uso de una plantilla para crear una página  {#using-a-template-to-create-a-page}
+### Uso de una plantilla para crear una página {#using-a-template-to-create-a-page}
 
 Al utilizar una plantilla [para crear una página nueva](/help/sites-authoring/managing-pages.md#creating-a-new-page), no existe ninguna diferencia visible ni ninguna indicación entre las plantillas estáticas y las editables. Para el autor de la página, el proceso es transparente.
 
@@ -128,7 +127,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
    * O directamente en: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Puede [crear una carpeta para las plantillas](#creating-a-template-folder-admin), si lo necesita.
-* [Crea una plantilla nueva](#creatinganewtemplateauthor), que inicialmente estará vacía.  [](#templatedefinitions)
+* [Crea una plantilla nueva](#creatinganewtemplateauthor), que inicialmente estará vacía.
 
 * [Define propiedades adicionales](#definingtemplatepropertiesauthor) para la plantilla, si así lo necesita.
 * [Edita la plantilla](#editingtemplates) para definir los elementos siguientes:
@@ -184,7 +183,7 @@ Se debe crear una carpeta de plantillas para su proyecto que contenga las planti
    >
    >Cuando se crea una plantilla nueva, se marca como **Borrador** en la consola; esto indica que aún no está disponible para que los autores de páginas la utilicen.
 
-### Definición de las propiedades de la plantilla: autor de plantillas    {#defining-template-properties-template-author}
+### Definición de las propiedades de la plantilla: autor de plantillas   {#defining-template-properties-template-author}
 
 Una plantilla puede tener las propiedades siguientes:
 
@@ -211,7 +210,7 @@ Para ver o editar las propiedades:
 
 >[!NOTE]
 >
->Las plantillas son herramientas poderosas para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden abrumar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
+>Las plantillas son herramientas útiles para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden sobrecargar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
 >
 >Adobe no recomienda tener más de 1000 plantillas debido a posibles impactos en el rendimiento.
 
@@ -235,7 +234,7 @@ Para definir la miniatura de plantilla:
 
 1. Cuando esté satisfecho con la miniatura, toque o haga clic en **Guardar y cerrar**.
 
-### Activación y autorización de una plantilla: autor de plantillas    {#enabling-and-allowing-a-template-template-author}
+### Activación y autorización de una plantilla: autor de plantillas   {#enabling-and-allowing-a-template-template-author}
 
 Para poder utilizar una plantilla al crear una página, debe:
 
@@ -279,7 +278,7 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
    >Si la lista **Plantillas permitidas** se deja vacía, el árbol ascenderá hasta que se encuentre un valor o una lista.
    >
    >
-   >Consulte [Disponibilidad de la plantilla](/help/sites-developing/templates.md#template-availability): los principios para las plantillas permitidas siguen siendo los mismos.
+   >Consulte [Disponibilidad de plantillas](/help/sites-developing/templates.md#template-availability): los principios para las plantillas permitidas siguen siendo los mismos.
 
 1. Haga clic en **Guardar** para guardar los cambios realizados en las propiedades de la página.
 
@@ -297,7 +296,7 @@ Puesto que la plantilla se toma como referencia cuando se representa la página,
 
 1. Seleccione **Publicar** en la barra de herramientas para completar la acción.
 
-## Edición de plantillas: autores de plantillas    {#editing-templates-template-authors}
+## Edición de plantillas: autores de plantillas   {#editing-templates-template-authors}
 
 Al crear o editar una plantilla, hay distintas proporciones que se pueden definir. Editar plantillas es similar a crear páginas.
 
@@ -341,7 +340,7 @@ El selector **Modo** de la barra de herramientas le permite seleccionar y editar
 * [Contenido inicial](#editingatemplateinitialcontent)
 * [Diseño](#editingatemplatelayout)
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-135](assets/chlimage_1-133.png)
 
 Mientras que la opción **Política de la página** del menú **Información de página** le permite [seleccionar las políticas de la página requeridas](#editingatemplatepagepolicies):
 
@@ -474,7 +473,7 @@ En el modo de **Estructura** del editor de plantillas:
 
    Para quitar una configuración, toque o haga clic en el botón **Eliminar** situado a la derecha de la configuración.
 
-   Para eliminar una configuración, toque o haga clic en el botón** Eliminar**.
+   Para quitar una configuración, toque o haga clic en el botón** Eliminar**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -696,7 +695,7 @@ Con la opción **Propiedades de la página inicial**, puede definir las [propied
 
 1. Confirme las definiciones con **Listo**.
 
-## Prácticas recomendadas    {#best-practices}
+## Prácticas recomendadas   {#best-practices}
 
 Al crear plantillas debe tener en cuenta:
 
