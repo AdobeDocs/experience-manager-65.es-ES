@@ -10,15 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configuración
+exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
+source-git-commit: 83383d46a4200eb3d21deee15c71032314694860
 workflow-type: tm+mt
-source-wordcount: '5892'
+source-wordcount: '5878'
 ht-degree: 0%
 
 ---
-
 
 # Supervisión y mantenimiento de la instancia de AEM{#monitoring-and-maintaining-your-aem-instance}
 
@@ -66,7 +65,7 @@ A menudo se realiza una copia de seguridad completa a intervalos regulares (por 
 >
 >Para obtener más información sobre el rendimiento de las copias de seguridad, lea la sección [Rendimiento de copia de seguridad](/help/sites-deploying/configuring-performance.md#backup-performance).
 
-### Copia de seguridad de la instalación de software {#backing-up-your-software-installation}
+### Copia de seguridad de la instalación del software {#backing-up-your-software-installation}
 
 Después de la instalación, o cambios significativos en la configuración, realice una copia de seguridad de la instalación del software.
 
@@ -177,7 +176,7 @@ AEM WCM registra registros detallados. Después de desempaquetar e iniciar Quick
 
 * `<cq-installation-dir>/crx-quickstart/repository/`
 
-#### Rotación del archivo de registro {#log-file-rotation}
+#### Rotación de archivos de registro {#log-file-rotation}
 
 La rotación del archivo de registro se refiere al proceso que limita el crecimiento del archivo al crear un nuevo archivo periódicamente. En AEM, un archivo de registro llamado `error.log` se girará una vez al día según las reglas dadas:
 
@@ -442,7 +441,7 @@ La Consola Felix también proporciona información sobre la compatibilidad con e
 
 Los registros de auditoría se mantienen para proporcionar un registro de quién hizo qué y cuándo. Se generan diferentes registros de auditoría tanto para AEM eventos WCM como OSGi.
 
-#### AEM registros de auditoría de WCM que se muestran al crear la página {#aem-wcm-audit-records-shown-when-page-authoring}
+#### AEM registros de auditoría de WCM que se muestran al crear páginas {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Abra una página.
 1. Desde la barra de tareas puede seleccionar la ficha con el icono de bloqueo y luego hacer doble clic en **Registro de auditoría...**
@@ -458,7 +457,7 @@ Dentro de la carpeta `/var/audit` , los registros de auditoría se mantienen seg
 
 Estas entradas contienen la misma información que se muestra al editar una página.
 
-#### Registros de auditoría de OSGi de la Consola Web {#osgi-audit-records-from-the-web-console}
+#### Registros de auditoría de OSGi de la consola web {#osgi-audit-records-from-the-web-console}
 
 Los eventos OSGi también generan registros de auditoría que se pueden ver desde la pestaña **Configuration Status** -> **Log Files** en la consola web de AEM:
 
@@ -739,7 +738,7 @@ Se deben realizar pruebas para determinar cuántos usuarios simultáneos puede g
 31/Mar/2009:11:45:44 +0200 [337] <- 304 text/html 0ms
 ```
 
-### Uso de rlog.jar para encontrar solicitudes con tiempos de larga duración {#using-rlog-jar-to-find-requests-with-long-duration-times}
+### Uso de rlog.jar para encontrar solicitudes con largos tiempos de duración {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
 AEM incluye varias herramientas de ayuda ubicadas en:
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
@@ -887,7 +886,7 @@ Se recomienda que cada proyecto incluya `html comments` para el rendimiento del 
 El comando de herramienta `jconsole` está disponible con el JDK.
 
 1. Inicie la instancia de AEM.
-1. Ejecutar `jconsole.`
+1. Ejecución `jconsole.`
 1. Seleccione la instancia de AEM y **Connect**.
 
 1. Desde la aplicación `Local`, haga doble clic en `com.day.crx.quickstart.Main`; la Información general se mostrará de forma predeterminada:
@@ -1114,7 +1113,7 @@ Si el sistema se está quedando sin espacio en disco o observa que se está inic
    * [Configuración de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [CQ HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
    * [Filtro de depuración de CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Usuarios](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level) [](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices)
+   * [Usuarios](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * Si ha configurado [Version Purging](/help/sites-deploying/version-purging.md) y cómo lo ha hecho
 * La base de conocimientos:
@@ -1122,7 +1121,7 @@ Si el sistema se está quedando sin espacio en disco o observa que se está inic
    * [Demasiados archivos abiertos](https://helpx.adobe.com/experience-manager/kb/TooManyOpenFiles.html)
    * [El diario consume demasiado espacio en disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
-### Degradación del rendimiento regular {#regular-performance-degradation}
+### Degradación del rendimiento normal {#regular-performance-degradation}
 
 Si ve que el rendimiento de su instancia se deteriora después de cada reinicio (a veces una semana o más después), se puede comprobar lo siguiente:
 
