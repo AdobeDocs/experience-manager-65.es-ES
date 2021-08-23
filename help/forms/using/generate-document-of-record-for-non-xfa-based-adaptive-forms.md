@@ -9,15 +9,14 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Formularios adaptables
+exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
+source-git-commit: a81367c2a07031d8c6cf549050a1445ff0c1a8dc
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 3%
+source-wordcount: '3508'
+ht-degree: 2%
 
 ---
-
 
 # Generar documento de registro para formularios adaptables{#generate-document-of-record-for-adaptive-forms}
 
@@ -293,7 +292,7 @@ También puede seleccionar un modelo de formulario al crear un formulario.
 
 1. Haga clic en **Listo.**
 
-## Personalice la información de marca en el documento de registro {#customize-the-branding-information-in-document-of-record}
+## Personalización de la información de marca en el documento de registro {#customize-the-branding-information-in-document-of-record}
 
 Durante la generación de un documento de registro, puede cambiar la información de marca del documento de registro en la ficha Documento de registro. La ficha Documento de registro incluye opciones como logotipo, apariencia, diseño, encabezado y pie de página, renuncia de responsabilidad y si desea incluir o no las opciones de casillas de verificación y botones de opción no seleccionadas.
 
@@ -322,6 +321,12 @@ Para localizar la información de marca que introduce en la ficha Documento de r
    * **Incluir objetos de formulario que no estén enlazados al modelo de datos**
    * **Excluir campos ocultos del documento de registro**
    * **Ocultar descripción de paneles**
+
+   Si la plantilla XDP personalizada que seleccione incluye varias páginas de formato, las propiedades de esas páginas aparecen en la sección **[!UICONTROL content]** de la ficha **[!UICONTROL Documento de registro]**.
+
+   ![Propiedades de la página de formato](assets/master-page-properties.png)
+
+   Las propiedades de la página de formato incluyen Imagen de logotipo, Texto de encabezado, Título del formulario, Etiqueta de exención de responsabilidad y Texto de exención de responsabilidad. Puede aplicar propiedades de formulario adaptables o de plantilla XDP al documento de registro. AEM Forms aplica las propiedades de la plantilla al documento de registro de forma predeterminada. También puede definir valores personalizados para las propiedades de la página de formato. Para obtener información sobre cómo aplicar varias páginas de formato en un documento de registro, consulte [Aplicación de varias páginas de formato a un documento de registro](#apply-multiple-master-pages-dor).
 
    >[!NOTE]
    >
@@ -355,7 +360,7 @@ Campos de un panel procesado en una presentación de tabla en el documento de re
 
 Campos de un panel procesado en una presentación de columna del documento de registro
 
-## Documento de configuración de registro {#document-of-record-settings}
+## Configuración del documento de registro {#document-of-record-settings}
 
 La configuración del documento de registro permite elegir las opciones que desea incluir en el documento de registro. Por ejemplo, un banco acepta el nombre, la edad, el número de la seguridad social y el número de teléfono en un formulario. El formulario genera un número de cuenta bancaria y detalles de sucursal. Puede elegir mostrar únicamente el nombre, el número de la seguridad social, la cuenta bancaria y los detalles de sucursal en el documento de registro.
 
@@ -368,13 +373,70 @@ El documento de configuración de registro de un componente está disponible en 
 * **Mostrar panel como tabla:** al establecer la propiedad, se muestra el panel como tabla en el documento de registro si el panel tiene menos de 6 campos. Aplicable solo para panel.
 * **Excluir título del documento de registro:** al establecer la propiedad se excluye el título del panel o tabla del documento de registro. Aplicable solo para panel y tabla.
 * **Excluir descripción del documento de registro:** al establecer la propiedad, se excluye la descripción del panel/tabla del documento de registro. Aplicable solo para panel y tabla.
+* **[!UICONTROL Paginación]**  >  **[!UICONTROL Lugar]**: Determina dónde se selecciona para colocar el panel.
+   * **[!UICONTROL Colocar]**  >  **[!UICONTROL Siguiente]**: Coloca el panel después del objeto anterior en el panel principal.
+   * **[!UICONTROL Lugar]**  >  **[!UICONTROL En el área]**  de contenido > Nombre del área de contenido: Coloca el panel en el área de contenido especificada.
+   * **[!UICONTROL Colocar]**  >  **[!UICONTROL Principio de la siguiente área]** de contenido: Coloca el panel en la parte superior de la siguiente área de contenido.
+   * **[!UICONTROL Lugar]**  >  **[!UICONTROL Principio del área]**  de contenido > Nombre del área de contenido: Coloca el panel en la parte superior del área de contenido especificada.
+   * **[!UICONTROL Colocar]**  >  **[!UICONTROL En la página]**  > Nombre de la página de formato: Coloca el panel en la página especificada. Si un salto de página no se inserta automáticamente, [!DNL AEM Forms] añade un salto de página.
+   * **[!UICONTROL Lugar]**  >  **[!UICONTROL Principio de la página]** siguiente: Coloca el panel al principio de la siguiente página. Si un salto de página no se inserta automáticamente, [!DNL AEM Forms] añade un salto de página.
+   * **[!UICONTROL Lugar]**  >  **[!UICONTROL Principio de la página]**  > Nombre de la página de formato: Coloca el panel al principio de la página, cuando se representa la página especificada. Si un salto de página no se inserta automáticamente, [!DNL AEM Forms] añade un salto de página.
+* **[!UICONTROL Paginación]**  >  **[!UICONTROL Después]**: Determina qué área se rellenará después de colocar un panel. Los siguientes campos están disponibles en la  **** sección posterior:
+   * **[!UICONTROL Después]**  >  **[!UICONTROL Continuar relleno principal]**: Continúa combinando los datos de todos los objetos que quedan por rellenar en el panel principal.
+   * **[!UICONTROL Después]**  >  **[!UICONTROL Ir al área]** de contenido siguiente: Comienza a rellenar la siguiente área de contenido después de colocar el panel.
+   * **[!UICONTROL Después]**  >  **[!UICONTROL Ir al área]**  de contenido > Nombre del área de contenido: Comienza a rellenar el área de contenido especificada después de colocar el panel.
+   * **[!UICONTROL Después]**  >  **[!UICONTROL Ir a la página]** siguiente: Comienza a rellenar la página siguiente después de colocar el panel.
+   * **[!UICONTROL Después]**  >  **[!UICONTROL Ir a la página]**  > Nombre de la página: Comienza a rellenar la página especificada después de colocar el panel.
+* **[!UICONTROL Paginación]**  >  **[!UICONTROL Desbordamiento]**: Define un desbordamiento para un panel o una tabla que ocupa páginas. Los siguientes campos están disponibles en la sección **[!UICONTROL Overflow]**:
+   * **[!UICONTROL Desbordamiento]**  >  **[!UICONTROL Ninguno]**: Comienza a rellenar la página siguiente. Si un salto de página no se inserta automáticamente, [!DNL AEM Forms] añade un salto de página.
+   * **[!UICONTROL Desbordamiento]**  >  **[!UICONTROL Ir al área]**  de contenido > Nombre del área de contenido: Comienza a rellenar el área de contenido especificada.
+   * **[!UICONTROL Desbordamiento]**  >  **[!UICONTROL Ir a la página]**  > Nombre de la página: Comienza a rellenar la página especificada.
+
+Para obtener información sobre cómo aplicar saltos de página y aplicar varias páginas de formato en un documento de registro, consulte [Aplicar salto de página en un documento de registro](#apply-page-breaks-in-dor) y [Aplicar varias páginas de formato a un documento de registro](#apply-multiple-master-pages-dor).
 
 **Configuración del nivel de formulario**
 
 * **Incluir campos no enlazados en DoR:** la configuración de la propiedad incluye campos no enlazados del formulario adaptable basado en esquema en el documento de registro. De forma predeterminada, es true.
 * **Excluir campos de DoR si está oculto:** al establecer la propiedad se anula el comportamiento de la propiedad de nivel de campo &quot;Excluir del documento de registro&quot; cuando no es verdadero. Si los campos están ocultos en el momento del envío del formulario, se excluirán del documento de registro si la propiedad está establecida en true, siempre que la propiedad &quot;Excluir del documento de registro&quot; no esté establecida.
 
-## Consideraciones clave al trabajar con el documento de registro {#key-considerations-when-working-with-document-of-record}
+## Aplicar un salto de página en un documento de registro {#apply-page-breaks-in-dor}
+
+Puede aplicar saltos de página en un documento de registro utilizando varios métodos.
+
+Para aplicar un salto de página a un documento de registro:
+
+1. Pulse el panel y seleccione ![Configurar](assets/configure-icon.svg).
+
+1. Expanda **[!UICONTROL Documento de registro]** para ver las propiedades.
+
+1. En la sección **[!UICONTROL Paginación]**, pulse ![Carpeta](assets/folder-icon.svg) en el campo **[!UICONTROL Colocar]**.
+1. Pulse **[!UICONTROL Principio de la página siguiente]** y pulse **[!UICONTROL Seleccionar]**. También puede pulsar **[!UICONTROL Principio de la página]**, seleccionar la página de formato y pulsar **[!UICONTROL Seleccionar]** para aplicar el salto de página.
+1. Toque ![Guardar](assets/save_icon.svg) para guardar las propiedades.
+
+El panel seleccionado se mueve a la página siguiente.
+
+## Aplicar varias páginas de formato a un documento de registro {#apply-multiple-master-pages-dor}
+
+Si la plantilla XDP personalizada que seleccione incluye varias páginas de formato, las propiedades de esas páginas aparecen en la sección [!UICONTROL content] de la ficha [!UICONTROL Documento de registro]. Para obtener más información, consulte [Personalización de la información de marca en el documento de registro](#customize-the-branding-information-in-document-of-record).
+
+Puede aplicar varias páginas de formato a un documento de registro aplicando diferentes páginas de formato a los componentes de un formulario adaptable. Utilice la sección [Paginación](#document-of-record-settings) de las propiedades Documento de registro para aplicar varias páginas de formato.
+
+A continuación se muestra un ejemplo de cómo aplicar varias páginas de formato a un documento de registro:
+Se carga una plantilla XDP que incluye cuatro páginas de formato en el servidor [!DNL AEM Forms]. [!DNL AEM Forms] aplica las propiedades de la plantilla al documento de registro de forma predeterminada. [!DNL AEM Forms] también aplica las primeras propiedades de página de formato de la plantilla al documento de registro.
+
+Para aplicar las propiedades de la segunda página de formato a un panel y las propiedades de la tercera página de formato a los paneles siguientes, ejecute los pasos siguientes:
+
+1. Pulse el panel para aplicar la segunda página de formato y seleccione ![Configurar](assets/configure-icon.svg).
+1. En la sección **[!UICONTROL Paginación]**, pulse ![Carpeta](assets/folder-icon.svg) en el campo **[!UICONTROL Colocar]**.
+1. Toque **[!UICONTROL En la página]**, seleccione la segunda página de formato y pulse **[!UICONTROL Seleccionar]**.
+AEM Forms aplica la segunda página de formato al panel y a todos los paneles posteriores del formulario adaptable.
+1. En la sección **[!UICONTROL Paginación]**, pulse ![Carpeta](assets/folder-icon.svg) en el campo **[!UICONTROL Después]**.
+1. Toque **[!UICONTROL Ir a la página]**, seleccione la tercera página de formato y pulse **[!UICONTROL Seleccionar]**.
+1. Toque ![Guardar](assets/save_icon.svg) para guardar las propiedades.
+AEM Forms aplica la tercera página de formato al panel y a todos los paneles posteriores del formulario adaptable.
+
+
+## Consideraciones clave al trabajar con un documento de registro {#key-considerations-when-working-with-document-of-record}
 
 Tenga en cuenta las siguientes consideraciones y limitaciones al trabajar en el documento de registro para formularios adaptables.
 
@@ -382,4 +444,3 @@ Tenga en cuenta las siguientes consideraciones y limitaciones al trabajar en el 
 * Los fragmentos de documento en un formulario adaptable no aparecen en el documento de registro. Sin embargo, se admiten fragmentos de formulario adaptables.
 * No se admite el enlace de contenido en el documento de registro generado para el formulario adaptable basado en el esquema XML.
 * La versión localizada del documento de registro se crea bajo demanda para una configuración regional cuando el usuario solicita la renderización del documento de registro. La localización del documento de registro se produce junto con la localización del formulario adaptable. Para obtener más información sobre la localización de documentos de registro y formularios adaptables, consulte [Uso de AEM flujo de trabajo de traducción para localizar formularios adaptables y documento de registro](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
-
