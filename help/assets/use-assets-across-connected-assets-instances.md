@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 37073594b45995ade7f0e73c519feb21adf48482
+source-git-commit: 3e4e9ab8b3940f539228bccf759dcade03a8b015
 workflow-type: tm+mt
-source-wordcount: '2732'
-ht-degree: 29%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ La funcionalidad Recursos conectados admite el caso de uso anterior mediante la 
 
 ## Información general sobre los recursos conectados {#overview-of-connected-assets}
 
-Al editar páginas en [!UICONTROL Editor de páginas] como destino, los autores pueden buscar, examinar e incrustar recursos sin problemas desde una implementación [!DNL Assets] diferente que actúa como fuente de recursos. Los administradores crean una integración única de una implementación de [!DNL Experience Manager] con capacidad [!DNL Sites] con otra implementación de [!DNL Experience Manager] con capacidad [!DNL Assets].
+Al editar páginas en [!UICONTROL Editor de páginas] como destino, los autores pueden buscar, examinar e incrustar recursos sin problemas desde una implementación [!DNL Assets] diferente que actúa como fuente de recursos. Los administradores crean una integración única de una implementación de [!DNL Experience Manager] con capacidad [!DNL Sites] con otra implementación de [!DNL Experience Manager] con capacidad [!DNL Assets]. Los creadores del sitio también pueden utilizar imágenes de Dynamic Media en las páginas web de su sitio a través de los recursos conectados y aprovechar las funcionalidades de Dynamic Media, como los ajustes preestablecidos de imagen y recorte inteligente.
 
 Para los autores [!DNL Sites], los recursos remotos están disponibles como recursos locales de solo lectura. La función admite la búsqueda y el uso ininterrumpidos de algunos recursos remotos a la vez. Para que varios recursos remotos estén disponibles en una implementación [!DNL Sites] en un solo uso, considere migrar los recursos de forma masiva. Consulte [Guía de migración de recursos de Experience Manager](/help/assets/assets-migration-guide.md).
 
@@ -115,6 +115,25 @@ Puede comprobar la conectividad entre las implementaciones configuradas [!DNL Si
 
 ![Prueba de conexión de los recursos conectados configurada  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *Figura: Prueba de conexión de los recursos conectados configurados  [!DNL Sites].*
+
+### Configuración de una conexión para recursos de Dynamic Media{#sites-dynamic-media-connected-assets}
+
+Puede configurar una conexión entre la implementación [!DNL Sites] y la implementación [!DNL Dynamic Media] que permita que los autores de las páginas web utilicen imágenes [!DNL Dynamic Media] en sus páginas web. Durante la creación de páginas web, la experiencia de usar recursos remotos e implementaciones [!DNL Dynamic Media] remotas permanece igual.
+
+Para configurar la funcionalidad Recursos conectados para implementaciones de Dynamic Media, siga estos pasos:
+
+1. Habilite y configure [!DNL Dynamic Media] como configuración global en la implementación de autor [!DNL Assets] remota. Para configurar Dynamic Media, consulte [Configuración de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).<br/>
+En la  [!DNL Assets] implementación remota, en el modo [!UICONTROL  de sincronización de ]Dynamic Media, seleccione  **[!UICONTROL Habilitado de forma predeterminada]**.
+
+1. Cree la configuración de los recursos conectados como se describe en [Configure la conexión entre las implementaciones de sitios y recursos](#configure-a-connection-between-sites-and-assets-deployments). Además, seleccione la opción **[!UICONTROL Buscar representación original para los recursos conectados con Dynamic Media]**.
+
+1. Configure [!DNL Dynamic Media] en implementaciones locales [!DNL Sites] y remotas [!DNL Assets]. Siga las instrucciones para [configurar [!DNL Dynamic Media]](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
+
+   * Utilice el mismo nombre de empresa en todas las configuraciones.
+   * En [!DNL Sites] local, en [!UICONTROL modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Deshabilitado de forma predeterminada]**. La implementación [!DNL Sites] solo necesita acceso de solo lectura a la cuenta [!DNL Dynamic Media].
+   * En [!DNL Sites] local, en la opción **[!UICONTROL Publicar recursos]**, seleccione **[!UICONTROL Publicación selectiva]**. No seleccione **[!UICONTROL Sincronizar todo el contenido]**.
+
+1. Habilite la compatibilidad con [[!DNL Dynamic Media] en el componente principal de imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Esta función permite que el [componente de imagen](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) predeterminado muestre [!DNL Dynamic Media] imágenes cuando los autores utilizan [!DNL Dynamic Media] imágenes en páginas web en la implementación local [!DNL Sites].
 
 ## Usar recursos remotos {#use-remote-assets}
 
@@ -226,3 +245,6 @@ Para solucionar errores comunes, siga estos pasos:
 * Si no se recuperan las referencias remotas y se genera un mensaje de error, compruebe si la implementación [!DNL Sites] está disponible y compruebe si hay problemas de conectividad de red. Vuelva a intentarlo más tarde para comprobarlo. [!DNL Assets] la implementación intenta establecer conexión dos veces con la  [!DNL Sites] implementación y luego informa de un error.
 
    ![error al recuperar referencias remotas de recursos](assets/reference-report-failure.png)
+
+
+
