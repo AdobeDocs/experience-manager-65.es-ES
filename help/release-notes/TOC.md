@@ -5,12 +5,12 @@ audience: end-user
 user-guide-title: Notas de la versión de Adobe Experience Manager 6.5
 breadcrumb-title: Notas de la versión
 user-guide-description: Obtenga información sobre las últimas funciones nuevas de AEM 6.5 en las notas de la versión.
-feature: Información de la versión
+feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4fca7799bf33bf90f601ab72a354f76e48ccdb04
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 36%
+source-wordcount: '75'
+ht-degree: 34%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 36%
 + [Notas de la versión generales](release-notes.md)
 + Notas de la versión de Service Pack {#service-pack}
    + [Novedades](new-features-latest-service-pack.md)
-   + [Notas de la versión de Service Pack 9](sp-release-notes.md)
+   + [Notas de la versión de Service Pack 10](sp-release-notes.md)
    + [Notas de la versión anterior de Service Pack](previous-hotfixes-featurepacks.md)
 + [Notas de versión de AEM Sites](sites.md)
 + [Notas de versión de AEM Assets](assets.md)
