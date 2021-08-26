@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 3e4e9ab8b3940f539228bccf759dcade03a8b015
+source-git-commit: 218e97eb31061e833f3b291a6607b2ebf4762471
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2967'
+ht-degree: 26%
 
 ---
 
@@ -116,7 +116,7 @@ Puede comprobar la conectividad entre las implementaciones configuradas [!DNL Si
 ![Prueba de conexión de los recursos conectados configurada  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *Figura: Prueba de conexión de los recursos conectados configurados  [!DNL Sites].*
 
-### Configuración de una conexión para recursos de Dynamic Media{#sites-dynamic-media-connected-assets}
+### Configuración de una conexión para recursos de Dynamic Media {#sites-dynamic-media-connected-assets}
 
 Puede configurar una conexión entre la implementación [!DNL Sites] y la implementación [!DNL Dynamic Media] que permita que los autores de las páginas web utilicen imágenes [!DNL Dynamic Media] en sus páginas web. Durante la creación de páginas web, la experiencia de usar recursos remotos e implementaciones [!DNL Dynamic Media] remotas permanece igual.
 
