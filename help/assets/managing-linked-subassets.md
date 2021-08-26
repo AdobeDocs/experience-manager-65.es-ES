@@ -3,11 +3,11 @@ title: Administrar recursos compuestos con referencias y varias páginas
 description: Aprenda a crear referencias a recursos digitales desde  [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Utilice la función Visor de páginas para ver páginas de subrecursos individuales de archivos de varias páginas, como archivos PDF, INDD, PPT, PPTX y AI.
 contentOwner: AG
 role: User, Admin
-feature: Administración de activos
+feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
@@ -103,6 +103,10 @@ Para generar los subrecursos, realice una de las siguientes acciones:
    * Seleccione un recurso y haga clic en [!UICONTROL Create] > [!UICONTROL Workflow] en la barra de herramientas. En el cuadro de diálogo emergente, seleccione el flujo de trabajo [!UICONTROL Activo de actualización de DAM], haga clic en [!UICONTROL Inicio] y haga clic en [!UICONTROL Continuar].
 
 Específicamente para documentos de Microsoft Word, ejecute el flujo de trabajo **[!UICONTROL DAM Parse Word Documents]**. Genera un componente `cq:Page` a partir del contenido del documento de Microsoft Word. Se hace referencia a las imágenes extraídas del documento desde el componente `cq:Page`. Estas imágenes se extraen incluso si la generación de subrecursos está deshabilitada.
+
+>[!NOTE]
+>
+>En [!UICONTROL Crear proceso de subrecursos: propiedades de paso] en [!UICONTROL Argumentos de proceso], puede especificar el número de subrecursos que genera [!DNL Experience Manager]. El valor predeterminado es 5. Para generar todos los subrecursos, deje vacío el campo . Si el campo tiene un valor negativo, no se genera ningún subrecurso.
 
 ## Ver subrecursos {#viewing-subassets}
 

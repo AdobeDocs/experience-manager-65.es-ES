@@ -4,9 +4,9 @@ description: Novedades de [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: d83f8d6e4b99ac7f287c0f091b84bbbf9d82fc75
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '3974'
+source-wordcount: '3983'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 1%
 [!DNL Adobe Experience Manager] 6.5 Los Service Packs proporcionan nuevas funciones, mejoras solicitadas por el cliente y mejoras de rendimiento, estabilidad y seguridad a intervalos trimestrales. La disponibilidad trimestral facilita el acceso y la adopción de nuevas características e innovaciones.
 
 Este artículo resalta las funciones incluidas en el Service Pack más reciente, las [características clave incluidas en los Service Pack 6.5 anteriores](#key-features-previous-service-packs) y las [versiones clave desde la última versión del Service Pack](#key-releases-since-last-sp).
-
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -41,13 +40,13 @@ Este artículo resalta las funciones incluidas en el Service Pack más reciente,
 
 * [!DNL Experience Manager] amplía la funcionalidad Recursos conectados al uso de  [!DNL Dynamic Media] imágenes en los componentes principales correspondientes. Consulte [Uso de recursos conectados](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* Al compartir recursos individuales y colecciones como vínculo (mediante el cuadro de diálogo [!UICONTROL Uso compartido de vínculos]), los usuarios pueden elegir si desean que el receptor descargue los recursos originales, sus representaciones o ambos.
+* Al compartir recursos individuales y colecciones como vínculo (mediante el cuadro de diálogo [!UICONTROL Uso compartido de vínculos]), los usuarios pueden elegir si desean que el receptor descargue los recursos originales, sus representaciones o ambos. Consulte [Compartir recursos mediante el enlace](/help/assets/link-sharing.md).
 
-   ![para descargar solo los recursos originales, solo las representaciones o ambos](/help/assets/assets/share-renditions.png)
+   ![para permitir la descarga solo de los recursos originales, solo de las representaciones o de ambos](/help/release-notes/assets/share-assets-as-link.png)
 
 * Cuando los usuarios descargan los recursos que se han compartido con ellos como vínculo, pueden optar por descargar los recursos originales, las representaciones o ambos.
 
-* Los administradores pueden limitar el número de subrecursos que [!DNL Experience Manager] genera para recursos compuestos como archivos PDF, PowerPoint, InDesign y Keynote.
+* **Limitar subrecursos generados**: Los administradores pueden limitar el número de subrecursos que  [!DNL Experience Manager] generan para recursos compuestos como archivos PDF, PowerPoint, InDesign y Keynote.
 
    ![limitar la generación de subactivos](/help/assets/assets/sub-asset-limit.png)
 

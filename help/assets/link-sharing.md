@@ -3,11 +3,11 @@ title: Compartir recursos mediante un vínculo
 description: Comparta recursos, carpetas y colecciones como URL.
 contentOwner: AG
 role: User
-feature: Compartir vínculos, Administración de activos
+feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '998'
 ht-degree: 5%
 
 ---
@@ -24,20 +24,17 @@ ht-degree: 5%
 
 ## Compartir recursos {#share-assets}
 
-Para generar la dirección URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo Uso compartido de vínculos. Los usuarios con privilegios de administrador o con permisos de lectura en la ubicación `/var/dam/share` pueden ver los vínculos compartidos con ellos.
+Para generar la dirección URL de los recursos que desea compartir con los usuarios, utilice el cuadro de diálogo [!UICONTROL Uso compartido de vínculos]. Los usuarios con privilegios de administrador o con permisos de lectura en la ubicación `/var/dam/share` pueden ver los vínculos compartidos con ellos.
 
 1. En la interfaz de usuario [!DNL Assets], seleccione el recurso que desea compartir como vínculo.
-1. En la barra de herramientas, haga clic en el icono **[!UICONTROL Compartir vínculo]** ![compartir recursos](assets/do-not-localize/assets_share.png). El vínculo que se creará después de hacer clic en **[!UICONTROL Compartir]** se muestra de antemano en el campo [!UICONTROL Compartir vínculo]. El vínculo aún no se ha creado hasta que haga clic en **[!UICONTROL Submit]**.
 
-   ![Diálogo con el uso compartido de vínculos](assets/Link-sharing-dialog-box.png)
+1. En la barra de herramientas, haga clic en el icono **[!UICONTROL Compartir vínculo]** ![compartir recursos](assets/do-not-localize/assets_share.png). El vínculo que se creará después de hacer clic en **[!UICONTROL Compartir]** se muestra de antemano en el campo [!UICONTROL Compartir vínculo]. El vínculo no se crea hasta que seleccione **[!UICONTROL Submit]**.
+
+   ![Diálogo con el uso compartido de vínculos](/help/assets/assets/share-assets-as-link.png)
 
    *Figura: El cuadro de diálogo para compartir recursos como vínculo.*
 
 1. En el apartado de la dirección de correo electrónico del cuadro de diálogo **[!UICONTROL Uso compartido de vínculos]**, escriba el ID de correo electrónico del usuario con el que desea compartir el vínculo. Puede agregar uno o más usuarios.
-
-   ![Compartir vínculos con recursos directamente desde el cuadro de diálogo Uso compartido de vínculos](assets/Asset-Sharing-LinkShareDialog.png)
-
-   *Figura: Comparta vínculos a recursos directamente desde el cuadro de  [!UICONTROL diálogo ] Compartir vínculos .*
 
    >[!NOTE]
    >
@@ -51,7 +48,7 @@ Para generar la dirección URL de los recursos que desea compartir con los usuar
 
    ![Establecer fecha de caducidad del vínculo compartido](assets/Set-shared-link-expiration.png)
 
-1. Para permitir que los usuarios descarguen el recurso original junto con las representaciones, seleccione **[!UICONTROL Permitir descarga del archivo original]**. De forma predeterminada, los usuarios solo pueden descargar las representaciones del recurso que comparta como vínculo.
+1. Para permitir que los usuarios descarguen el recurso original, seleccione **[!UICONTROL Permitir descarga del archivo original]**. Para permitir que los usuarios descarguen únicamente las representaciones de los recursos compartidos, seleccione **[!UICONTROL Permitir descarga de representaciones de archivo]**.
 
 1. Haga clic en **[!UICONTROL Compartir]**. Un mensaje confirma que el vínculo se comparte con los usuarios por correo electrónico.
 
