@@ -1,32 +1,42 @@
 ---
 title: Administrar fragmentos de contenido
-seo-title: Administrar fragmentos de contenido
-description: Los fragmentos de contenido se almacenan como recursos, por lo que se administran principalmente desde la consola Recursos.
-seo-description: Los fragmentos de contenido se almacenan como recursos, por lo que se administran principalmente desde la consola Recursos.
-uuid: 675e1a6b-2583-488f-bbb4-210daed3e1b0
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: content-fragments
-content-type: reference
-discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
-docset: aem65
-feature: Fragmentos de contenido
-role: User, Admin
-exl-id: 636daf55-2225-4780-9c57-1a2d7464fe2c
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido AEM, la base del contenido sin encabezado.
+feature: Content Fragments
+role: User
+source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1314'
 ht-degree: 11%
 
 ---
 
-# Administrar fragmentos de contenido{#managing-content-fragments}
+# Administrar fragmentos de contenido {#managing-content-fragments}
 
-Los fragmentos de contenido se almacenan como **Assets**, por lo que se administran principalmente desde la consola **Assets**.
+Aprenda a utilizar la consola Recursos para administrar los fragmentos de contenido AEM, la base del contenido sin encabezado.
+
+Después de definir los [Modelos de fragmento de contenido](#creating-a-content-model) puede utilizarlos para [crear sus fragmentos de contenido](#creating-a-content-fragment).
+
+El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona varios [modos](#modes-in-the-content-fragment-editor) que le permiten:
+
+* [Edite el ](#editing-the-content-of-your-fragment) contenido y  [administre Variaciones](#creating-and-managing-variations-within-your-fragment)
+* [Anotar el fragmento](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Asociar contenido al fragmento](#associating-content-with-your-fragment)
+* [Configuración de los metadatos](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [Ver el árbol de estructura](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Vista previa de la representación JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
+
 
 >[!NOTE]
 >
->A continuación, los fragmentos de contenido se utilizan con las páginas de creación; consulte [Creación de páginas con fragmentos de contenido](/help/sites-authoring/content-fragments.md).
+>Se pueden utilizar fragmentos de contenido:
+>
+>* al crear páginas; consulte [Creación de páginas con fragmentos de contenido](/help/sites-authoring/content-fragments.md).
+>* para [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+
+
+>[!NOTE]
+>
+>Los fragmentos de contenido se almacenan como **Assets**, por lo que se administran principalmente desde la consola **Assets**.
 
 ## Creación de fragmentos de contenido {#creating-content-fragments}
 
@@ -34,28 +44,21 @@ Los fragmentos de contenido se almacenan como **Assets**, por lo que se administ
 
 [Los ](/help/assets/content-fragments/content-fragments-models.md) modelos de fragmentos de contenido se pueden habilitar y crear antes de crear fragmentos de contenido con contenido estructurado.
 
->[!NOTE]
->
->Consulte [Desarrollo de fragmentos de contenido](/help/sites-developing/customizing-content-fragments.md) para obtener más información sobre las plantillas; se utiliza para fragmentos de contenido simples.
-
 ### Creación de un fragmento de contenido {#creating-a-content-fragment}
 
-El método para crear un fragmento de contenido es (básicamente) el mismo para fragmentos simples y estructurados:
+El método para crear un fragmento de contenido es:
 
 1. Vaya a la carpeta **Assets** en la que desea crear el fragmento.
 1. Seleccione **Crear** y, a continuación, **Fragmento de contenido** para abrir el asistente.
 1. El primer paso del asistente requiere que especifique la base del nuevo fragmento.
 
-   * Puede ser un:
+   * [Modelo](/help/assets/content-fragments/content-fragments-models.md) : se utiliza para crear un fragmento que requiere contenido estructurado; por ejemplo,  **** Adventuremodel
 
-      * [Plantilla](/help/sites-developing/content-fragment-templates.md) : por ejemplo, Fragmento  **simple**
-
-      * [Modelo](/help/assets/content-fragments/content-fragments-models.md) : se utiliza para crear un fragmento que requiere contenido estructurado; por ejemplo, el  **** modelo de aeropuertos
-   * Se muestran todas las plantillas y modelos disponibles.
+      * Se muestran todos los modelos disponibles.
 
    Después de la selección, utilice **Next** para continuar.
 
-   ![cfm-6420-15](assets/cfm-6420-15.png)
+   ![base de fragmento](assets/cfm-managing-01.png)
 
 1. En el paso **Propiedades**, especifique:
 
@@ -81,14 +84,17 @@ El método para crear un fragmento de contenido es (básicamente) el mismo para 
 
 1. Seleccione **Crear** para completar la acción y, a continuación, **Abra** el fragmento para editarlo o vuelva a la consola pulsando **Listo**.
 
-## Acciones para un fragmento de contenido {#actions-for-a-content-fragment}
+   >[!NOTE]
+   >En el modo **List** de la consola, puede actualizar la **View Settings** para habilitar la columna **Content Fragment Model**.
+
+## Acciones para un fragmento de contenido en la consola Recursos {#actions-for-a-content-fragment-assets-console}
 
 En la consola **Assets** hay una serie de acciones disponibles para los fragmentos de contenido:
 
 * Desde la barra de herramientas; después de seleccionar el fragmento, están disponibles todas las acciones adecuadas.
 * Como [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions); un subconjunto de acciones disponibles para las tarjetas de fragmento individuales.
 
-![cfm-6420-17](assets/cfm-6420-17.png)
+![acciones](assets/cfm-managing-02.png)
 
 Seleccione el fragmento para mostrar la barra de herramientas con las acciones aplicables:
 
@@ -108,12 +114,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones a
 
 * **Administrar etiquetas**
 * **A la colección**
-
-   * Agregue el fragmento a una colección.
-   * Esto también se puede hacer cuando [asocia una colección con el fragmento](/help/assets/content-fragments/content-fragments-assoc-content.md#adding-associated-content).
-
-* **Copiar**/**Pegar**
-
+* **Copiar**  (y  **pegar**)
 * **Mover**
 * **Publicación rápida**
 * **Administrar publicación**
@@ -121,7 +122,7 @@ Seleccione el fragmento para mostrar la barra de herramientas con las acciones a
 
 >[!NOTE]
 >
->Muchas de ellas son [acciones estándar para Assets](/help/assets/manage-assets.md) o [AEM aplicación de escritorio](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
+>Muchas de ellas son [acciones estándar para Assets](/help/assets/manage-assets.md) o [AEM aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es).
 
 ## Apertura del editor de fragmentos {#opening-the-fragment-editor}
 
@@ -131,90 +132,156 @@ Para abrir el fragmento para editarlo:
 >
 >Para editar un fragmento de contenido necesita [los permisos adecuados](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Póngase en contacto con el administrador del sistema si tiene problemas.
 
+>[!CAUTION]
+>
+>Para editar un fragmento de contenido, necesita los permisos adecuados. Póngase en contacto con el administrador del sistema si tiene problemas.
+
 1. Utilice la consola **Assets** para desplazarse a la ubicación del fragmento de contenido.
 1. Abra el fragmento para editarlo mediante:
 
    * Tocando o haciendo clic en el fragmento o vínculo de fragmento (depende de la vista de la consola).
    * Seleccione el fragmento y, a continuación, **Edit** en la barra de herramientas.
 
-   Se abrirá el editor de fragmentos:
+1. Se abrirá el editor de fragmentos. Realice los cambios según sea necesario:
 
-   ![cfm-6420-18](assets/cfm-6420-18.png)
+   ![editor de fragmentos](assets/cfm-managing-03.png)
 
-   >[!NOTE]
-   >
-   >1. Se mostrará un mensaje cuando ya se haga referencia al fragmento en una página de contenido.
-   >2. El panel lateral se puede ocultar o mostrar mediante el icono **Alternar panel lateral**.
+1. Después de realizar los cambios, utilice **Guardar y cerrar**.
 
-
-1. Desplácese por los tres modos utilizando los iconos del panel lateral:
-
-   * Variaciones: [Edición del contenido](#editing-the-content-of-your-fragment) y [Administración de las variaciones](#creating-and-managing-variations-within-your-fragment)
-
-   * [Anotaciones](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-   * [Contenido asociado](#associating-content-with-your-fragment)
-   * [Metadatos](#viewing-and-editing-the-metadata-properties-of-your-fragment)
-
-   ![cfm-10](assets/cfm-10.png)
-
-1. Después de realizar los cambios, utilice **Guardar** o **Cancelar** según sea necesario.
+<!-- 
+1. After making changes, use **Save**, **Save & close** or **Close** as required.
 
    >[!NOTE]
    >
-   >Tanto **Guardar** como **Cancelar** le sacarán del editor; consulte [Guardar, Cancelar y Versiones](#save-cancel-and-versions) para obtener información completa sobre cómo funcionan ambas opciones para los fragmentos de contenido.
+   >**Save & close** is available via the **Save** dropdown.
 
-## Guardar, cancelar y versiones {#save-cancel-and-versions}
+   >[!NOTE]
+   >
+   >Both **Save & Close** and **Close** will exit the editor - see [Save, Close and Versions](#save-close-and-versions) for full information on how the various options operate for content fragments.
+-->
+
+## Modos y acciones en el editor de fragmentos de contenido {#modes-actions-content-fragment-editor}
+
+Hay varios modos y acciones disponibles en el Editor de fragmentos de contenido.
+
+### Modos en el editor de fragmentos de contenido {#modes-in-the-content-fragment-editor}
+
+Desplácese por los distintos modos utilizando los iconos del panel lateral:
+
+* Variaciones: [Edición del contenido](#editing-the-content-of-your-fragment) y [Administración de las variaciones](#creating-and-managing-variations-within-your-fragment)
+
+* [Anotaciones](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+* [Contenido asociado](#associating-content-with-your-fragment)
+* [Metadatos](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [Árbol de estructura](/help/assets/content-fragments/content-fragments-structure-tree.md)
+* [Vista previa](/help/assets/content-fragments/content-fragments-json-preview.md)
+
+![modos](assets/cfm-managing-04.png)
+
+### Acciones de barra de herramientas en el editor de fragmentos de contenido {#toolbar-actions-in-the-content-fragment-editor}
+
+Algunas funciones de la barra de herramientas superior están disponibles en varios modos:
+
+<!-- screenshot changed from original text see commented out below -->
+
+![modos](assets/cfm-managing-03.png)
+
+* Se mostrará un mensaje cuando ya se haga referencia al fragmento en una página de contenido. Puede **Cerrar** el mensaje.
+
+* El panel lateral se puede ocultar o mostrar mediante el icono **Alternar panel lateral**.
+
+* Debajo del nombre del fragmento puede ver el nombre del [Modelo de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) utilizado para crear el fragmento actual:
+
+   * El nombre también es un vínculo que abrirá el editor de modelos.
+
+* Ver el estado del fragmento; por ejemplo, información sobre cuándo se creó, modificó o publicó.
+
+* **Guardar y cerrar**
+
+<!--
+Some features in the top toolbar are available from multiple modes:
+
+![modes](assets/cfm-managing-top-toolbar.png)
+
+* A message will be shown when the fragment is already referenced on a content page. You can **Close** the message.
+
+* The side panel can be hidden/shown using the **Toggle Side Panel** icon.
+
+* Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
+
+  * The name is also a link that will open the model editor.
+
+* See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
+
+  * **New**: grey
+  * **Draft**: blue
+  * **Published**: green
+  * **Modified**: orange
+  * **Deactivated**: red
+
+* **Save** provides access to the **Save & close** option.
+  
+* The three dots (**...**) drop-down provides access to additional actions:
+  * **Update page references**
+    * This updates any page references. 
+  * **[Quick publish](#publishing-and-referencing-a-fragment)**
+  * **[Manage Publication](#publishing-and-referencing-a-fragment)**
+-->
+
+<!--
+This updates any page references and ensures that the Dispatcher is flushed as required. -->
+
+<!--
+## Save, Close and Versions {#save-close-and-versions}
 
 >[!NOTE]
 >
->Las versiones también se pueden [crear, comparar y revertir desde la línea de tiempo](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+>Versions can also be [created, compared and reverted from the Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-El editor tiene dos opciones:
+The editor has various options:
 
-* **Guardar**
+* **Save** and **Save & close**
 
-   Guardará los cambios más recientes y cerrará el editor.
+  * **Save** will save the latest changes and remain in the editor.
+  * **Save & close** will save the latest changes and exit the editor.
 
-   >[!CAUTION]
-   >
-   >Para editar un fragmento de contenido necesita [los permisos adecuados](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Póngase en contacto con el administrador del sistema si tiene problemas.
+  >[!CAUTION]
+  >
+  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
+
+  >[!NOTE]
+  >
+  >It is possible to remain in the editor, making a series of changes, before saving.
+
+  >[!CAUTION]
+  >
+  >In addition to simply saving your changes, the actions also update any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
+  >
+  >Please bear this in mind when using **Save & close** and then quickly re-entering the fragment editor to make and save further changes.
+
+* **Close**
+
+  Will exit the editor without saving the latest changes (i.e made since the last **Save**).
+
+While editing your content fragment AEM automatically creates versions to ensure that prior content can be restored if you cancel your changes (using **Close** without saving):
+
+1. When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an *editing session* exists:
+
+   1. If the token is found, the fragment is considered to be part of the existing editing session.
+   2. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.
+
+2. While there is an *active* editing session, the content being edited is automatically saved every 600 seconds (default).
 
    >[!NOTE]
    >
-   >Es posible permanecer en el editor haciendo una serie de cambios antes de seleccionar **Guardar**.
-
-   >[!CAUTION]
+   >The auto save interval is configurable using the `/conf` mechanism.
    >
-   >Además de guardar los cambios simplemente, **Save** también actualiza las referencias y garantiza que el despachante se vacíe según sea necesario. Estos cambios pueden tardar un tiempo en procesarse. Debido a esto, puede haber un impacto en el rendimiento de un sistema grande/complejo/con gran carga.
-   >
-   >
-   >Tenga esto en cuenta al utilizar **Guardar** y luego volver a introducir rápidamente el editor de fragmentos para realizar y guardar más cambios.
+   >Default value, see:
+   >&nbsp;&nbsp;`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-* **Cancelar**
-
-   Saldrá del editor sin guardar los cambios más recientes.
-
-Al editar el fragmento de contenido AEM crea automáticamente versiones para garantizar que el contenido anterior se pueda restaurar si **Cancelar** los cambios:
-
-1. Cuando se abre un fragmento de contenido para editarlo AEM comprueba la existencia del token basado en cookies que indica si existe una *sesión de edición*:
-
-   1. Si se encuentra el token, el fragmento se considera parte de la sesión de edición existente.
-   2. Si el token *no* está disponible y el usuario comienza a editar contenido, se crea una versión y se envía un token para esta nueva sesión de edición al cliente, donde se guarda en una cookie.
-
-2. Aunque hay una sesión de edición *activa*, el contenido que se está editando se guarda automáticamente cada 600 segundos (valor predeterminado).
-
-   >[!NOTE]
-   >
-   >El intervalo de guardado automático se puede configurar mediante el mecanismo `/conf` .
-   >
-   >
-   >Valor predeterminado, consulte:
-   >
-   >
-   >`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
-
-3. Si el usuario selecciona **Cancelar** la edición, la versión creada al principio de la sesión de edición se restaura y se elimina el token para finalizar la sesión de edición.
-4. Si el usuario selecciona **Guardar** las ediciones, los elementos/variaciones actualizados se mantienen y el token se elimina para finalizar la sesión de edición.
+3. If the user cancels the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
+4. If the user selects to **Save** the edits, the updated elements/variations are persisted and the token is removed to end the editing session.
+-->
 
 ## Edición del contenido del fragmento {#editing-the-content-of-your-fragment}
 
@@ -260,8 +327,7 @@ Además de las opciones estándar, [Línea de tiempo](/help/assets/manage-assets
 >* Relacionado con el recurso de fragmento
 
 >
->
-Las anotaciones (para fragmentos de contenido) son:
+>Las anotaciones (para fragmentos de contenido) son:
 >
 >* Introducido en el editor de fragmentos
 >* Específico para un segmento seleccionado de texto dentro del fragmento
@@ -269,10 +335,9 @@ Las anotaciones (para fragmentos de contenido) son:
 >
 
 
-
 Por ejemplo:
 
-![cfm-6420-19-2019](assets/cfm-6420-19-2019.png)
+![cronología](assets/cfm-managing-05.png)
 
 ## Comparación de versiones de fragmento {#comparing-fragment-versions}
 
@@ -284,7 +349,7 @@ Se abrirá:
 
 * la versión seleccionada **v&lt;*x.y*** (derecha)
 
-Se mostrarán en paralelo, donde:
+Se mostrarán una al lado de la otra, donde:
 
 * Se resaltan todas las diferencias
 
@@ -300,7 +365,7 @@ Se mostrarán en paralelo, donde:
 >
 >No se puede editar el contenido del fragmento al comparar fragmentos.
 
-![cfm-6420-20](assets/cfm-6420-20.png)
+![comparar](assets/cfm-managing-06.png)
 
 ## Reversión a una versión  {#reverting-to-a-version}
 
@@ -322,7 +387,8 @@ Puede volver a una versión específica del fragmento:
 
 Los fragmentos de contenido deben publicarse para su uso en el entorno de publicación. Se pueden publicar:
 
-* Después de la creación; desde la consola **Assets**.
+* Después de la creación; uso de [acciones disponibles en la consola de Assets](#actions-for-a-content-fragment-assets-console).
+* Desde el [Editor de fragmentos de contenido](#toolbar-actions-in-the-content-fragment-editor).
 * Cuando [publica una página que utiliza el fragmento](/help/sites-authoring/content-fragments.md#publishing); el fragmento se enumerará en las referencias de página.
 
 >[!CAUTION]
