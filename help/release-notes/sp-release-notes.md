@@ -4,9 +4,9 @@ description: Notas de versión específicas del  [!DNL Adobe Experience Manager]
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 9c262f57b3c3b7a1d2deaba78d13d02b74c5208d
+source-git-commit: 8c345f5f78ca5f9e8981611ef377e23309fcbe3d
 workflow-type: tm+mt
-source-wordcount: '3652'
+source-wordcount: '4376'
 ht-degree: 3%
 
 ---
@@ -55,6 +55,23 @@ Las funciones y mejoras clave introducidas en [!DNL Adobe Experience Manager] 6.
    * [!DNL Experience Manager] muestra directamente una lista de todos los modelos de contenido en una carpeta sin que los autores de contenido tengan que navegar por la estructura de archivos. La función ahora requiere menos clics y mejora la eficacia de la creación.
 
    * El campo de ruta en el editor [!DNL Sites] permite a los autores arrastrar recursos desde [!DNL Content Finder].
+
+* Se ha agregado compatibilidad con la API `GuideBridge#getGuidePath` en [!DNL AEM Forms].
+
+* Ahora puede utilizar el servicio de Automated forms conversion para [convertir PDF forms en francés, alemán y español](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) a formularios adaptables.
+
+* **Mensajes de error en el navegador** de propiedades: Se han añadido mensajes de error para cada propiedad en el explorador de propiedades de Forms adaptable. Estos mensajes ayudan a comprender los valores permitidos para un campo.
+
+* **Compatibilidad para utilizar la opción literal para establecer el valor de una variable** de tipo JSON: Puede utilizar la opción literal para establecer el valor de una variable de tipo JSON en el paso de variable de conjunto de un flujo de trabajo AEM. La opción literal le permite especificar un JSON en forma de cadena.
+
+* **Actualizaciones** de plataforma:  [!DNL Adobe Experience Manager Forms] en JEE ha agregado compatibilidad con las siguientes plataformas:
+   * [!DNL Adobe Acrobat 2020]
+   * [!DNL Ubuntu 20.04]
+   * [!DNL Open Office 4.1.10]
+   * [!DNL Microsoft Office 2019]
+   * [!DNL Microsoft Windows Server 2019]
+   * [!DNL RHEL8.3]
+   * [!DNL Apache Geode cache solution]
 
 Para obtener una lista de todas las funciones y mejoras introducidas en [!DNL Experience Manager] 6.5.10.0, consulte [novedades en [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -255,6 +272,71 @@ Need to verify with Engineering, the status is currently showing as Resolved
 >* [!DNL Experience Manager Forms] lanza los paquetes de complementos una semana después de la fecha de lanzamiento programada del paquete de servicio de [!DNL Experience Manager].
 
 
+**Formularios adaptables**
+
+* Si las validaciones realizadas en los valores de campo en un formulario adaptable se realizan correctamente, [!DNL AEM Forms] no invoca el Modelo de datos de formulario (CQ-4325491).
+
+* Cuando agrega un diccionario de idioma a un proyecto de traducción y luego abre el proyecto, [!DNL AEM Forms] muestra un mensaje de error (CQ-4324933):
+
+   ```TXT
+   Uncaught TypeError: Cannot read property 'PROJECT_LISTING_PATH' of undefined
+   at openButtonClickHandler (clientlibs.js:245)
+   at HTMLButtonElement.onclick (clientlibs.js:258)
+   ```
+
+* Problemas de rendimiento después de instalar [!DNL AEM Forms] Service Pack 7 (CQ-4326828).
+
+**Administración de correspondencia**
+
+* Retraso en la visualización de caracteres en la pestaña [!UICONTROL Data] así como en la vista previa de la carta HTML (NPR-37020).
+
+* Cuando edita un fragmento de documento de texto, las nuevas palabras se muestran como etiquetas HTML después de guardar el fragmento (NPR-36837).
+
+* No se pueden ver las letras guardadas como borradores (NPR-36816).
+
+* Cuando edita un fragmento de documento de texto y luego obtiene una vista previa de la carta, AEM Forms muestra el idioma de expresión en la vista previa de la carta HTML (CQ-4322331).
+
+* Problemas al procesar datos con una plantilla de carta de autoservicio (NPR-37161).
+
+
+**Comunicaciones interactivas**
+
+* Un carácter de tabulación duplica entre dos palabras cada vez que imprime la vista previa de una comunicación interactiva después de editar un fragmento de documento de texto (NPR-37021).
+
+* [!DNL AEM Forms] muestra un error al guardar un fragmento de documento de texto que supera el límite de tamaño máximo (NPR-36874).
+
+* Al añadir una imagen a una comunicación interactiva, aparece un bloque vacío adicional después de la imagen (NPR-36659).
+
+* Cuando selecciona todo el texto en un editor, no puede cambiar el texto de la fuente a Arial (NPR-36646).
+
+* Cuando se crea una URL en un editor y se previsualizan los cambios, aparece un fondo negro en lugar del texto de la URL (NPR-36640).
+
+* Al copiar y pegar texto en un editor, hay problemas al cambiar la fuente a Arial para las viñetas disponibles en el documento (NPR-36628).
+
+* Problemas de sangría para viñetas en el editor de texto (NPR-36513).
+
+**Designer**
+
+* El Reader de pantalla no puede leer los datos de campo flotante colocados dentro de la etiqueta de texto en la página de formato o en las páginas de subformulario en un PDF dinámico (CQ-4321587).
+
+**Servicios de documento**
+
+* Al convertir archivos XDP en archivos PDF y, a continuación, ensamblar el PDF resultante, las generaciones de PDF fallan y muestran el siguiente mensaje de error:
+
+   ```TXT
+   Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
+   ```
+
+**Flujo de trabajo de formularios**
+
+* No se puede enviar un formulario a un proceso de Workbench después de actualizar a AEM Forms Service Pack 8 (CQ-4325846).
+
+**Formularios HTML5**
+
+* Cuando establece el valor de la propiedad `mfAllowAttachments` como `True` en el repositorio CRX DE, el `dataXml` se daña al enviar el formulario HTML5 (NPR-37035).
+
+* Cuando se procesa un XDP como HTML mediante `dataXml`, [!DNL AEM Forms] muestra un error `Page Unresponsive` (NPR-36631).
+
 ### Comercio {#commerce-65100}
 
 * El valor del campo **[!UICONTROL Published By]** mostrado es incorrecto en la vista Columna (NPR-36902).
@@ -319,35 +401,32 @@ B. Utilice la API [HTTP del Administrador de paquetes](/help/sites-administering
 
 Para saber cuáles son las plataformas certificadas para funcionar con esta versión, consulte los [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-<!--
-
-### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+### Instalación del paquete de complementos de Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
->Skip if you are not using Experience Manager Forms. Fixes in Experience Manager Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+>Omita este paso si no utiliza Experience Manager Forms. Las correcciones en Experience Manager Forms se entregan mediante un paquete de complementos independiente una semana después de la versión programada del Service Pack [!DNL Experience Manager].
 
-1. Ensure that you have installed the Adobe Experience Manager Service Pack.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) for your operating system.
-1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-
->[!NOTE]
->
->Experience Manager 6.5.10.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to Experience Manager 6.5.10.0, install the latest version of the package post installation of Forms Add-On Package.
-
-### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+1. Asegúrese de que ha instalado el Service Pack de Adobe Experience Manager.
+1. Descargue el paquete de complementos de Forms correspondiente que aparece en las [versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) para su sistema operativo.
+1. Instale el paquete de complementos de Forms como se describe en [Instalación de paquetes de complementos de AEM Forms](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
 >[!NOTE]
 >
->Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
+>Experience Manager 6.5.10.0 incluye una nueva versión de [Paquete de compatibilidad de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). Si utiliza una versión anterior del paquete de compatibilidad de AEM Forms y la actualiza al Experience Manager 6.5.10.0, instale la versión más reciente del paquete tras la instalación del paquete de complementos de Forms.
 
-For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
+### Instalar Adobe Experience Manager Forms en JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+>Omita este paso si no utiliza AEM Forms en JEE. Las correcciones en Adobe Experience Manager Forms en JEE se entregan mediante un instalador independiente.
 
--->
+Para obtener información sobre la instalación del instalador acumulativo para Forms Experience Manager en JEE y la configuración posterior a la implementación, consulte las [notas de la versión](jee-patch-installer-65.md).
+
+>[!NOTE]
+>
+>Después de instalar el instalador acumulativo para Experience Manager Forms en JEE, instale el último paquete de complementos de Forms, elimine el paquete de complementos de Forms de la carpeta `crx-repository\install` y reinicie el servidor.
+
 
 ### UberJar {#uber-jar}
 
@@ -380,6 +459,8 @@ Revise si utiliza una función o una capacidad en una implementación. Además, 
 | Conectores | El conector JCR de Adobe para Microsoft® SharePoint 2010 y Microsoft® SharePoint 2013 está obsoleto para Experience Manager 6.5. | N/D |
 
 ## Problemas conocidos {#known-issues}
+
+* Como [!DNL Microsoft Windows Server 2019] no admite [!DNL MySQL 5.7] y [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] no admite instalaciones llave en mano para [!DNL AEM Forms 6.5.10.0].
 
 * Si está actualizando la instancia [!DNL Experience Manager] de la versión 6.5 a la versión 6.5.10.0, puede ver `RRD4JReporter` excepciones en el archivo `error.log`. Para resolver el problema, reinicie la instancia.
 
