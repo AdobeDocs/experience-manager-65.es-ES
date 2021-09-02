@@ -4,7 +4,7 @@ description: Notas de versión específicas del  [!DNL Adobe Experience Manager]
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 8c345f5f78ca5f9e8981611ef377e23309fcbe3d
+source-git-commit: f9b53df7d235fa6be2cee8c05071790114a91da1
 workflow-type: tm+mt
 source-wordcount: '4376'
 ht-degree: 3%
@@ -70,8 +70,7 @@ Las funciones y mejoras clave introducidas en [!DNL Adobe Experience Manager] 6.
    * [!DNL Open Office 4.1.10]
    * [!DNL Microsoft Office 2019]
    * [!DNL Microsoft Windows Server 2019]
-   * [!DNL RHEL8.3]
-   * [!DNL Apache Geode cache solution]
+   * [!DNL RHEL8]
 
 Para obtener una lista de todas las funciones y mejoras introducidas en [!DNL Experience Manager] 6.5.10.0, consulte [novedades en [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -455,7 +454,7 @@ Revise si utiliza una función o una capacidad en una implementación. Además, 
 
 | Área | Función | Reemplazo |
 |---|---|---|
-| Integraciones | La pantalla de inclusión **[!UICONTROL AEM Cloud Services]** está en desuso ya que la integración [!DNL Experience Manager] y [!DNL Adobe Target] se actualiza en Experience Manager 6.5. La integración es compatible con la API de Adobe Target Standard. La API utiliza la autenticación mediante el Adobe IMS y [!DNL Adobe I/O] y admite la función creciente de Adobe Launch para instrumentar páginas [!DNL Experience Manager] para el análisis y la personalización. El asistente de inclusión carece de relevancia funcional. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones [!DNL Adobe I/O] a través de los respectivos servicios en la nube [!DNL Experience Manager]. |
+| Integraciones | La pantalla de inclusión **[!UICONTROL AEM Cloud Services]** está en desuso ya que la integración [!DNL Experience Manager] y [!DNL Adobe Target] se actualiza en Experience Manager 6.5. La integración es compatible con la API de Adobe Target Standard. La API utiliza la autenticación mediante Adobe IMS y [!DNL Adobe I/O] y admite la función creciente de Launch de Adobe para instrumentar páginas [!DNL Experience Manager] para el análisis y la personalización. El asistente de inclusión carece de relevancia funcional. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones [!DNL Adobe I/O] a través de los respectivos servicios en la nube [!DNL Experience Manager]. |
 | Conectores | El conector JCR de Adobe para Microsoft® SharePoint 2010 y Microsoft® SharePoint 2013 está obsoleto para Experience Manager 6.5. | N/D |
 
 ## Problemas conocidos {#known-issues}
