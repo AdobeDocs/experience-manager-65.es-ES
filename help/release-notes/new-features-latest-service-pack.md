@@ -4,7 +4,7 @@ description: Novedades de [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: f9b53df7d235fa6be2cee8c05071790114a91da1
+source-git-commit: 496516f7f4b0e59bbfdae4cbe061a793f28449d2
 workflow-type: tm+mt
 source-wordcount: '4106'
 ht-degree: 1%
@@ -68,7 +68,7 @@ Este artículo resalta las funciones incluidas en el Service Pack más reciente,
 
 * **Compatibilidad para utilizar la opción literal para establecer el valor de una variable** de tipo JSON: Puede utilizar la opción literal para establecer el valor de una variable de tipo JSON en el paso de variable de conjunto de un flujo de trabajo AEM. La opción literal le permite especificar un JSON en forma de cadena.
 
-* **Actualizaciones** de plataforma:  [!DNL Adobe Experience Manager Forms] en JEE ha agregado compatibilidad con las siguientes plataformas:
+* [Actualizaciones](../forms/using/aem-forms-jee-supported-platforms.md) de plataforma:  [!DNL Adobe Experience Manager Forms] en JEE ha agregado compatibilidad con las siguientes plataformas:
    * [!DNL Adobe Acrobat 2020]
    * [!DNL Ubuntu 20.04]
    * [!DNL Open Office 4.1.10]
