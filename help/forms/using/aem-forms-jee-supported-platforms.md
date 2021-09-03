@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 496516f7f4b0e59bbfdae4cbe061a793f28449d2
+source-git-commit: 2095159a76380f7d17abcea9965ed6f82da69c8c
 workflow-type: tm+mt
-source-wordcount: '3472'
+source-wordcount: '3248'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <td>R: Compatibilidad restringida</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.34 </td>
+   <td>MySQL 5.7.19 </td>
    <td>-</td>
    <td>R: Compatibilidad restringida</td>
   </tr>  
@@ -277,29 +277,14 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <th><p><strong> Plataforma</strong></p> </th>
    <th><p><strong>Nivel de asistencia</strong></p> </th>
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
-  </tr>
-   <tr>
-   <td>Microsoft Windows Server 2019 (64 bits)</td>
+  </tr>   
+  <tr>
+   <td>Microsoft Windows Server 2016 (64 bits)</td>
    <td>A: Admitido</td>
    <td>Service Packs y actualizaciones críticas</td>
-  </tr>
+  </tr>  
   <tr>
-   <td>Ubuntu 20.04</td>
-   <td>A: Admitido</td>
-   <td>Service Packs y actualizaciones críticas</td>
-  </tr>
-  <tr>
-   <td>Microsoft Windows Server 2016 (64 bits) (obsoleto)</td>
-   <td>A: Admitido</td>
-   <td>Service Packs y actualizaciones críticas</td>
-  </tr>
-  <tr>
-   <td><p>Red Hat Enterprise Linux 8 (Kernel 4.x) (64 bits)</p> </td>
-   <td><p>A: Admitido</p> </td>
-   <td><p>Versiones menores, actualizaciones acumulativas y actualizaciones críticas</p> </td>
-  </tr>
-  <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits) (obsoleto)</td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)</td>
    <td><p>A: Admitido</p> </td>
    <td><p>Versiones menores, actualizaciones acumulativas y actualizaciones críticas</p> </td>
   </tr>
@@ -447,57 +432,33 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
   <tr>
    <th><p><strong>Producto</strong></p> </th>
    <th><p><strong>Formatos compatibles para la conversión a PDF</strong></p> </th>
-  </tr>
+  </tr>  
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 clásico </a> trackÚltima versión</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic </a> trackÚltima versión</td>
    <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF y DWF</td>
-  </tr>
+  </tr> 
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic </a> tracklast version (obsoleto)</td>
-   <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF y DWF</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2019</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2016 (obsoleto)</td>
+   <td>Microsoft® Office 2016</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
   </tr>
   <tr>
    <td>WordPerfect X7</td>
    <td>WP, WPD</td>
-  </tr>
+  </tr>  
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
+   <td>Microsoft® Office Visio 2016<br /> </td>
    <td>VSD, VSDX</td>
-  </tr>
+  </tr>  
   <tr>
-   <td>Microsoft® Office Visio 2016 (obsoleto)<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2019<br /> </td>
+   <td>Microsoft® Publisher 2016<br /> </td>
    <td>PUB</td>
-  </tr>
+  </tr>  
   <tr>
-   <td>Microsoft® Publisher 2016 (obsoleto)<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2019<br /> </td>
+   <td>Microsoft® Project 2016<br /> </td>
    <td>MPP</td>
-  </tr>
+  </tr>  
   <tr>
-   <td>Microsoft® Project 2016 (obsoleto)<br /> </td>
-   <td>MPP</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.10</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, TF y TXT</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (obsoleto)</td>
+   <td>OpenOffice 4.1.2</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, TF y TXT</td>
   </tr>  
  </tbody>
@@ -509,7 +470,7 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
 >
 >Además:
 >
->* PDF Generator requiere una versión de 32 bits de [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 version 17.011.30078 para realizar la conversión.
+>* PDF Generator requiere una versión de 32 bits de [Acrobat 2017 versión 17.011.30078](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) para realizar la conversión.
 >* PDF Generator solo admite la versión comercial de 32 bits de Microsoft Office Professional Plus y otro software necesario para la conversión.
 >* PDF Generator no es compatible con Microsoft Office 365.
 >* Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux.
@@ -618,12 +579,8 @@ Para obtener más información, consulte:
    <th><p><strong>Acrobat y Adobe Reader (Base)</strong></p> </th>
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
   </tr>
-  <tr>
-   <td>Acrobat 2020 (Classic track)</td>
-   <td>Versión 20.004.30006 o posterior<br /> </td>
-  </tr>
-  <tr>
-   <td>Acrobat 2017 (Classic track) (obsoleto)</td>
+    <tr>
+   <td>Acrobat 2017 (Classic track)</td>
    <td>Versión 17.011.30078 o posterior<br /> </td>
   </tr>
 
@@ -786,37 +743,9 @@ Adobe se reserva el derecho de cambiar las plataformas de referencia de terceros
 
 Para obtener información adicional sobre parches de terceros, consulte los artículos de la base de conocimientos relacionados con su producto en el sitio de asistencia técnica de Adobe Enterprise.
 
-## Actualizaciones de plataforma {#platform-updates}
-
-Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.10.0 de AEM Forms del 2 de septiembre de 2021:
-
-* Adobe Acrobat 2017: [La compatibilidad principal con Adobe Acrobat 2017 finaliza el 6 de junio de 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
-
-* Microsoft Windows Server 2016 (64 bits)
-
-* Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)
-
-* Microsoft® Office 2016
-
-* OpenOffice 4.1.2
-
->[!NOTE]
->
->Las plataformas marcadas como [obsoletas siguen siendo compatibles hasta la versión de AEM Forms 6.5 Service Pack 15 (6.5.15.0)](https://helpx.adobe.com/support/programs/eol-matrix.html).
-
-
-
 ## Historial de revisiones {#revision-history}
 
 * 9 de septiembre de 2020
    * Se ha cambiado la versión compatible de iOS para la aplicación de AEM Forms a iOS 12. La versión anterior era iOS 11.
 
-* 2 de septiembre de 2021
-   * **Actualizaciones** de plataforma:  [!DNL Adobe Experience Manager Forms] en JEE ha agregado compatibilidad con las siguientes plataformas:
-      * [!DNL Adobe Acrobat 2020]
-      * [!DNL Ubuntu 20.04]
-      * [!DNL Open Office 4.1.10]
-      * [!DNL Microsoft Office 2019]
-      * [!DNL Microsoft Windows Server 2019]
-      * [!DNL RHEL8]
 

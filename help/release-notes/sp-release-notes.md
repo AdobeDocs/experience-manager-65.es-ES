@@ -4,9 +4,9 @@ description: Notas de versión específicas del  [!DNL Adobe Experience Manager]
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: a3d52ecf9284ba22cac3739ba543e5dd5c855331
+source-git-commit: 2095159a76380f7d17abcea9965ed6f82da69c8c
 workflow-type: tm+mt
-source-wordcount: '4205'
+source-wordcount: '4245'
 ht-degree: 3%
 
 ---
@@ -272,8 +272,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 >[!NOTE]
 >
->* [!DNL Experience Manager Forms] lanza los paquetes de complementos una semana después de la fecha de lanzamiento programada del paquete de servicio de [!DNL Experience Manager].
-
+>El Service Pack le permite ejecutar [!DNL AEM Forms] en los últimos sistemas operativos del servidor, servidores de aplicaciones y bases de datos. También incorpora algunas funciones disponibles en Cloud Service al entorno local y proporciona correcciones para problemas notificados por los clientes. [!DNL AEM Forms] en OSGi service pack está disponible para descargar e instalar. [!DNL AEM Forms on JEE]  service pack estaría disponible el 09 de septiembre de 2021.
 
 **Formularios adaptables**
 
