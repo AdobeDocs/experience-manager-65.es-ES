@@ -11,7 +11,7 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 0b5b545f796a5a36f7e7f160c11ebd64e5a3c2ce
+source-git-commit: 54ace42972b2d6c7b807dbb2c7a40c2542c0b7c0
 workflow-type: tm+mt
 source-wordcount: '3250'
 ht-degree: 1%
@@ -524,10 +524,10 @@ Los siguientes subsistemas de AEM Forms no son [508](https://www.section508.gov/
  </tbody>
 </table>
 
-Para obtener más información, consulte:
+Para conocer los requisitos adicionales, consulte:
 
-* [Requisitos del sistema para un AEM Forms de un solo servidor en una implementación JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
-* [Requisitos del sistema para una implementación de AEM Forms en clúster en JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
+* [Requisitos del sistema para un AEM Forms de un solo servidor en una implementación JEE](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+* [Requisitos del sistema para una implementación de AEM Forms en clúster en JEE](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ## Clientes admitidos para AEM Forms en JEE {#supported-clients-for-aem-forms-on-jee}
 
