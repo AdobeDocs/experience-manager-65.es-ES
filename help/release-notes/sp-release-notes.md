@@ -4,9 +4,9 @@ description: Notas de versión específicas del  [!DNL Adobe Experience Manager]
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 2095159a76380f7d17abcea9965ed6f82da69c8c
+source-git-commit: f75c6898eee9bbd6cdf9ce5e21dacc7898b80938
 workflow-type: tm+mt
-source-wordcount: '4245'
+source-wordcount: '4392'
 ht-degree: 3%
 
 ---
@@ -64,17 +64,13 @@ Las funciones y mejoras clave introducidas en [!DNL Adobe Experience Manager] 6.
 
 * **Compatibilidad para utilizar la opción literal para establecer el valor de una variable** de tipo JSON: Puede utilizar la opción literal para establecer el valor de una variable de tipo JSON en el paso de variable de conjunto de un flujo de trabajo AEM. La opción literal le permite especificar un JSON en forma de cadena.
 
-<!--
-
-* [Platform Updates](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
-  * [!DNL Adobe Acrobat 2020]
-  * [!DNL Ubuntu 20.04]
-  * [!DNL Open Office 4.1.10]
-  * [!DNL Microsoft Office 2019]
-  * [!DNL Microsoft Windows Server 2019]
-  * [!DNL RHEL8]
-
-  -->
+* [Actualizaciones](../forms/using/aem-forms-jee-supported-platforms.md) de plataforma:  [!DNL Adobe Experience Manager Forms] en JEE ha agregado compatibilidad con las siguientes plataformas:
+   * [!DNL Adobe Acrobat 2020]
+   * [!DNL Ubuntu 20.04]
+   * [!DNL Open Office 4.1.10]
+   * [!DNL Microsoft Office 2019]
+   * [!DNL Microsoft Windows Server 2019]
+   * [!DNL RHEL8]
 
 Para obtener una lista de todas las funciones y mejoras introducidas en [!DNL Experience Manager] 6.5.10.0, consulte [novedades en [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -270,17 +266,21 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 ### [!DNL Forms] {#forms-65100}
 
+
 >[!NOTE]
 >
->El Service Pack le permite ejecutar [!DNL AEM Forms] en los últimos sistemas operativos del servidor, servidores de aplicaciones y bases de datos. También incorpora algunas funciones disponibles en Cloud Service al entorno local y proporciona correcciones para problemas notificados por los clientes. [!DNL AEM Forms] en OSGi service pack está disponible para descargar e instalar. [!DNL AEM Forms on JEE]  service pack estaría disponible el 09 de septiembre de 2021.
+>* [!DNL Experience Manager Forms] lanza los paquetes de complementos una semana después de la fecha de lanzamiento programada del paquete de servicio de [!DNL Experience Manager].
+
+
+[!DNL AEM Forms 6.5.10.0] incluye las siguientes correcciones de errores:
+
+* Al instalar [!DNL AEM Forms 6.5], las siguientes bibliotecas de terceros se instalan automáticamente (CQDOC-18373):
+   * [!DNL Microsoft Visual C++ 2008 Service Pack 1 (x86)]
+   * [!DNL Microsoft Visual C++ 2010 Service Pack 1 (x86)]
 
 **Formularios adaptables**
 
-<!--
-
-* When the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
-
--->
+* Si las validaciones realizadas en los valores de campo en un formulario adaptable se realizan correctamente, [!DNL AEM Forms] no invoca el Modelo de datos de formulario (CQ-4325491).
 
 * Cuando agrega un diccionario de idioma a un proyecto de traducción y luego abre el proyecto, [!DNL AEM Forms] muestra un mensaje de error (CQ-4324933):
 
@@ -315,26 +315,19 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Cuando selecciona todo el texto en un editor, no puede cambiar el texto de la fuente a Arial (NPR-36646).
 
-<!--
-
-* When you create a URL in an editor and preview the changes, a black background displays instead of the URL text (NPR-36640).
-
--->
+* Cuando se crea una URL en un editor y se previsualizan los cambios, aparece un fondo negro en lugar del texto de la URL (NPR-36640).
 
 * Al copiar y pegar texto en un editor, hay problemas al cambiar la fuente a Arial para las viñetas disponibles en el documento (NPR-36628).
 
 * Problemas de sangría para viñetas en el editor de texto (NPR-36513).
 
-<!--
 **Designer**
 
-* Screen Reader fails to read floating field data placed inside text label on the Master page or on Subform pages in a dynamic PDF (CQ-4321587).
-
--->
+* El Reader de pantalla no puede leer los datos de campo flotante colocados dentro de la etiqueta de texto en la página de formato o en las páginas de subformulario en un PDF dinámico (CQ-4321587).
 
 **Servicios de documento**
 
-* Al convertir archivos XDP en archivos PDF y, a continuación, ensamblar el PDF resultante, las generaciones de PDF fallan y muestran el siguiente mensaje de error (CQ-4328666):
+* Al convertir archivos XDP en archivos PDF y, a continuación, ensamblar el PDF resultante, las generaciones de PDF fallan y muestran el siguiente mensaje de error:
 
    ```TXT
    Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
@@ -428,21 +421,18 @@ Para saber cuáles son las plataformas certificadas para funcionar con esta vers
 >
 >Experience Manager 6.5.10.0 incluye una nueva versión de [Paquete de compatibilidad de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). Si utiliza una versión anterior del paquete de compatibilidad de AEM Forms y la actualiza al Experience Manager 6.5.10.0, instale la versión más reciente del paquete tras la instalación del paquete de complementos de Forms.
 
-<!--
-
-### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+### Instalar Adobe Experience Manager Forms en JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
+>Omita este paso si no utiliza AEM Forms en JEE. Las correcciones en Adobe Experience Manager Forms en JEE se entregan mediante un instalador independiente.
 
-For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
+Para obtener información sobre la instalación del instalador acumulativo para Forms Experience Manager en JEE y la configuración posterior a la implementación, consulte las [notas de la versión](jee-patch-installer-65.md).
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+>Después de instalar el instalador acumulativo para Experience Manager Forms en JEE, instale el último paquete de complementos de Forms, elimine el paquete de complementos de Forms de la carpeta `crx-repository\install` y reinicie el servidor.
 
--->
 
 ### UberJar {#uber-jar}
 
@@ -471,19 +461,12 @@ Revise si utiliza una función o una capacidad en una implementación. Además, 
 
 | Área | Función | Reemplazo |
 |---|---|---|
-| Integraciones | La pantalla de inclusión **[!UICONTROL AEM Cloud Services]** está en desuso ya que la integración [!DNL Experience Manager] y [!DNL Adobe Target] se actualiza en Experience Manager 6.5. La integración es compatible con la API de Adobe Target Standard. La API utiliza la autenticación mediante Adobe IMS y [!DNL Adobe I/O] y admite la función creciente de Launch de Adobe para instrumentar páginas [!DNL Experience Manager] para el análisis y la personalización. El asistente de inclusión carece de relevancia funcional. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones [!DNL Adobe I/O] a través de los respectivos servicios en la nube [!DNL Experience Manager]. |
+| Integraciones | La pantalla de inclusión **[!UICONTROL AEM Cloud Services]** está en desuso ya que la integración [!DNL Experience Manager] y [!DNL Adobe Target] se actualiza en Experience Manager 6.5. La integración es compatible con la API de Adobe Target Standard. La API utiliza la autenticación mediante el Adobe IMS y [!DNL Adobe I/O] y admite la función creciente de Adobe Launch para instrumentar páginas [!DNL Experience Manager] para el análisis y la personalización. El asistente de inclusión carece de relevancia funcional. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones [!DNL Adobe I/O] a través de los respectivos servicios en la nube [!DNL Experience Manager]. |
 | Conectores | El conector JCR de Adobe para Microsoft® SharePoint 2010 y Microsoft® SharePoint 2013 está obsoleto para Experience Manager 6.5. | N/D |
 
 ## Problemas conocidos {#known-issues}
 
-<!--
-
-* (For JBoss on Microsoft Windows only) To continue using the Create PDF service on [!DNL AEM Forms on JEE], download [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip) from Software Distribution, extract and copy the folder available in the Zip file to the following location:
-`[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
-
-* As [!DNL Microsoft Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
-
--->
+* Como [!DNL Microsoft Windows Server 2019] no admite [!DNL MySQL 5.7] y [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] no admite instalaciones llave en mano para [!DNL AEM Forms 6.5.10.0].
 
 * Si está actualizando la instancia [!DNL Experience Manager] de la versión 6.5 a la versión 6.5.10.0, puede ver `RRD4JReporter` excepciones en el archivo `error.log`. Para resolver el problema, reinicie la instancia.
 
