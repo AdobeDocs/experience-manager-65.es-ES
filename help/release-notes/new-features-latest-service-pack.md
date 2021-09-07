@@ -4,9 +4,9 @@ description: Novedades de [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: f75c6898eee9bbd6cdf9ce5e21dacc7898b80938
+source-git-commit: 355cea8e5d3d3426788cd23e6d55297363adf05b
 workflow-type: tm+mt
-source-wordcount: '4106'
+source-wordcount: '4108'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ Este artículo resalta las funciones incluidas en el Service Pack más reciente,
 >
 >El paquete de complementos de [!DNL Experience Manager Forms] está disponible una semana después del lanzamiento programado del [!DNL Experience Manager] Service Pack.
 
-* Ahora puede utilizar el servicio de Automated forms conversion para [convertir PDF forms en francés, alemán y español](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) a formularios adaptables.
+* Ahora puede utilizar el servicio de Automated forms conversion para [convertir PDF forms en francés, alemán, español, italiano y portugués](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) en formularios adaptables.
 
 * **Mensajes de error en el navegador** de propiedades: Se han añadido mensajes de error para cada propiedad en el explorador de propiedades de Forms adaptable. Estos mensajes ayudan a comprender los valores permitidos para un campo.
 
