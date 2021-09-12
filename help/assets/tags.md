@@ -7,12 +7,12 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
-feature: Visores
+feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '6636'
+source-wordcount: '6633'
 ht-degree: 6%
 
 ---
@@ -241,7 +241,7 @@ El ejemplo configurado anteriormente también afecta a la duración del valor de
 
 En cualquier caso, los valores de los elementos de datos impulsados por los visualizadores de Dynamic Media no se almacenan en el almacenamiento local ni en el servidor; en su lugar, solo se mantienen en la biblioteca de etiquetas del Experience Platform del lado del cliente. Los valores de dicho elemento de datos desaparecen cuando la página web se vuelve a cargar.
 
-Por lo general, el editor de elementos de datos admite la [selección de duración del almacenamiento](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=en#create-a-data-element). Sin embargo, los elementos de datos que utilizan la extensión Visualizadores de Dynamic Media solo admiten la opción de duración del almacenamiento **[!UICONTROL None]**. Es posible establecer cualquier otro valor en la interfaz de usuario, pero el comportamiento del elemento de datos no está definido en este caso. La extensión administra el valor del elemento de datos por su cuenta: el elemento de datos que mantiene el valor del argumento de evento del visor durante todo el ciclo de vida del visor.
+Por lo general, el editor de elementos de datos admite la [selección de duración del almacenamiento](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element). Sin embargo, los elementos de datos que utilizan la extensión Visualizadores de Dynamic Media solo admiten la opción de duración del almacenamiento **[!UICONTROL None]**. Es posible establecer cualquier otro valor en la interfaz de usuario, pero el comportamiento del elemento de datos no está definido en este caso. La extensión administra el valor del elemento de datos por su cuenta: el elemento de datos que mantiene el valor del argumento de evento del visor durante todo el ciclo de vida del visor.
 
 ### Acerca de las reglas en la extensión Visualizadores de Dynamic Media {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -678,7 +678,7 @@ La configuración del Experience Manager consta de los dos pasos principales sig
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. En la página Configuración de IMC de Adobe, cerca de la esquina superior izquierda, seleccione **[!UICONTROL Crear]**.
-1. En la página **[!UICONTROL Configuración de cuenta técnica de IMS de Adobe]**, en la lista desplegable **[!UICONTROL Solución de nube]**, seleccione **[!UICONTROL Etiquetas de Experience Platform]**.
+1. En la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]**, en la lista desplegable **[!UICONTROL Solución de nube]**, seleccione **[!UICONTROL Etiquetas de Experience Platform]**.
 1. Active **[!UICONTROL Crear nuevo certificado]** y, a continuación, en el campo de texto, introduzca cualquier valor significativo para el certificado. Por ejemplo, *AdobeLaunchIMSCert*. Seleccione **[!UICONTROL Crear certificado]**.
 
    Se muestra el siguiente mensaje de información:
@@ -739,7 +739,7 @@ La configuración del Experience Manager consta de los dos pasos principales sig
 
 1. Vuelva a la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]** que dejó abierta anteriormente. En la esquina superior derecha de la página, seleccione **[!UICONTROL Siguiente]** para abrir la página **[!UICONTROL Cuenta]** en la ventana **[!UICONTROL Configuración de cuenta técnica de IMS de Adobe]**.
 
-   (Si ha cerrado la página anteriormente, vuelva al autor del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS del Adobe]**. Seleccione **[!UICONTROL Crear]**. En la lista desplegable **[!UICONTROL Cloud Solution]**, seleccione **[!UICONTROL Etiquetas de Experience Platform]**. En la lista desplegable **[!UICONTROL Certificado]**, seleccione el nombre del certificado creado anteriormente.)
+   (Si ha cerrado la página anteriormente, vuelva al autor del Experience Manager y, a continuación, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de Adobe IMS]**. Seleccione **[!UICONTROL Crear]**. En la lista desplegable **[!UICONTROL Cloud Solution]**, seleccione **[!UICONTROL Etiquetas de Experience Platform]**. En la lista desplegable **[!UICONTROL Certificado]**, seleccione el nombre del certificado creado anteriormente.)
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 

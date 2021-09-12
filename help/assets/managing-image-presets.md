@@ -10,12 +10,12 @@ content-type: reference
 discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
-feature: Ajustes preestablecidos de imagen
+feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '3843'
+source-wordcount: '3839'
 ht-degree: 8%
 
 ---
@@ -202,12 +202,10 @@ El tamaño de las miniaturas se define en el siguiente formato: **[!UICONTROL wi
 >[!NOTE]
 >
 >* Los tamaños de miniatura para archivos EPS se configuran en el paso **[!UICONTROL Miniaturas EPS]**, en la pestaña **[!UICONTROL Argumentos]** en Miniaturas.
-   >
-   >
-* Los tamaños de miniatura para vídeos se configuran en el paso **[!UICONTROL Miniaturas FFmpeg]**, en la pestaña **[!UICONTROL Proceso]** en **[!UICONTROL Argumentos]**.
+>
+>* Los tamaños de miniatura para vídeos se configuran en el paso **[!UICONTROL Miniaturas FFmpeg]**, en la pestaña **[!UICONTROL Proceso]** en **[!UICONTROL Argumentos]**.
 
 >
-
 
 
 **Para configurar el tamaño de las miniaturas de la imagen:**
@@ -429,7 +427,7 @@ Cuando crea o edita ajustes preestablecidos de imagen, tiene las opciones descri
   </tr>
   <tr>
    <td><strong>Modificador de imagen</strong></td>
-   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la referencia del comando <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api">Image Server Protocol</a>.</p> <p>Importante: No se admite la siguiente funcionalidad enumerada en la API:</p>
+   <td><p>Más allá de la configuración de imagen común disponible en la interfaz de usuario, Dynamic Media admite numerosas modificaciones de imagen avanzadas que se pueden especificar en el campo <strong>Modificadores de imagen</strong>. Estos parámetros se definen en la referencia del comando <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api">Image Server Protocol</a>.</p> <p>Importante: No se admite la siguiente funcionalidad enumerada en la API:</p>
     <ul>
      <li>Plantillas básicas y comandos de renderización de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> y <code>textPs=</code></li>
      <li>Comandos de localización: <code>locale=</code> y <code>req=xlate</code></li>

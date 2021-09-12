@@ -9,10 +9,10 @@ docset: aem65
 role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
-feature: Configuración,Modo Scene7
-source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
+feature: Configuration,Scene7 Mode
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '6941'
+source-wordcount: '6936'
 ht-degree: 4%
 
 ---
@@ -39,11 +39,11 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos de 
 >La siguiente lista de funciones requiere que utilice la CDN predeterminada incluida con Adobe Experience Manager - Dynamic Media. Ninguna otra CDN personalizada es compatible con estas funciones.
 >
 >* [Imágenes inteligentes](/help/assets/imaging-faq.md)
-* [Invalidación de caché](/help/assets/invalidate-cdn-cache-dynamic-media.md)
-* [Protección de Hotlink](/help/assets/hotlink-protection.md)
-* [Entrega de contenido HTTP/2](/help/assets/http2.md)
-* Redireccionamiento de URL a nivel de CDN
-* Akamai ChinaCDN (para una entrega óptima en China)
+>* [Invalidación de caché](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [Protección de Hotlink](/help/assets/hotlink-protection.md)
+>* [Entrega de contenido HTTP/2](/help/assets/http2.md)
+>* Redireccionamiento de URL a nivel de CDN
+>* Akamai ChinaCDN (para una entrega óptima en China)
 
 
 ## Habilitar Dynamic Media en modo Scene7 {#enabling-dynamic-media-in-scene-mode}
@@ -51,7 +51,8 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos de 
 [Dynamic Media está desactivado de forma predeterminada. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Para aprovechar las funciones de Dynamic Media, debe habilitarlas.
 
 >[!WARNING]
-Dynamic Media - El modo Scene7 es para la instancia *Autor del Experience Manager solamente*. Como tal, debe configurar `runmode=dynamicmedia_scene7` en la instancia de Autor del Experience Manager, *no* en la instancia de Publicación del Experience Manager.
+>
+>Dynamic Media - El modo Scene7 es para la instancia *Autor del Experience Manager solamente*. Como tal, debe configurar `runmode=dynamicmedia_scene7` en la instancia de Autor del Experience Manager, *no* en la instancia de Publicación del Experience Manager.
 
 Para habilitar Dynamic Media, debe iniciar el Experience Manager utilizando el modo de ejecución `dynamicmedia_scene7` desde la línea de comandos introduciendo lo siguiente en una ventana de terminal (por ejemplo, el puerto utilizado es 4502):
 
@@ -64,7 +65,8 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 La actualización de Experience Manager Dynamic Media de 6.3 a 6.4 o 6.5 ahora incluye la capacidad de no realizar implementaciones de downtime. Para migrar todos los ajustes preestablecidos y configuraciones de `/etc` a `/conf` en el CRXDE Lite, asegúrese de ejecutar el siguiente comando curl.
 
 >[!NOTE]
-Si ejecuta la instancia de Experience Manager en modo de compatibilidad (es decir, tiene instalada la compatibilidad empaquetada), no es necesario ejecutar estos comandos.
+>
+>Si ejecuta la instancia de Experience Manager en modo de compatibilidad (es decir, tiene instalada la compatibilidad empaquetada), no es necesario ejecutar estos comandos.
 
 Para todas las actualizaciones, ya sea con o sin el paquete de compatibilidad, puede copiar los ajustes preestablecidos de visor predeterminados y listos para usar que se incluyeron originalmente con Dynamic Media ejecutando el siguiente comando Linux® curl:
 
@@ -273,7 +275,7 @@ La pantalla Servidor de imágenes establece la configuración predeterminada par
 * **[!UICONTROL Predeterminados para los campos del catálogo]**: estos ajustes pertenecen a la resolución y al tipo de miniatura predeterminado de las imágenes.
 * **[!UICONTROL Atributos de administración de color]** : esta configuración determina qué perfiles de color ICC se utilizan.
 * **[!UICONTROL Atributos de compatibilidad]** : esta configuración permite que los párrafos iniciales y finales de las capas de texto se traten como en la versión 3.6 para la compatibilidad con versiones anteriores.
-* **[!UICONTROL Compatibilidad con la localización]** : Esta configuración le permite administrar varios atributos de configuración regional. También le permite especificar una cadena de asignación de configuración regional para que pueda definir qué idiomas desea admitir para las distintas informaciones de objeto en Visualizadores. Para obtener más información sobre la configuración de **[Localization Support]**, consulte [Consideraciones al configurar la localización de recursos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets).
+* **[!UICONTROL Compatibilidad con la localización]** : Esta configuración le permite administrar varios atributos de configuración regional. También le permite especificar una cadena de asignación de configuración regional para que pueda definir qué idiomas desea admitir para las distintas informaciones de objeto en Visualizadores. Para obtener más información sobre la configuración de **[Localization Support]**, consulte [Consideraciones al configurar la localización de recursos](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
 
 #### Configuración general de la aplicación {#configuring-application-general-settings}
 
@@ -295,7 +297,6 @@ Para mantener la coherencia con el Experience Manager, elija siempre esta config
 
 >[!NOTE]
 De forma predeterminada, el sistema muestra 15 representaciones al seleccionar **[!UICONTROL Representaciones]** y 15 ajustes preestablecidos de visualizador al seleccionar **[!UICONTROL Visualizadores]** en la vista de detalles del recurso. Puede aumentar este límite. Consulte [Aumente el número de ajustes preestablecidos de imagen que muestran](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumente el número de ajustes preestablecidos de visor que muestran](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
-
 
 #### Configuración de la gestión de color {#configuring-color-management}
 
@@ -658,7 +659,7 @@ La configuración de conexión de carga de Scene7 sincroniza los recursos de Exp
 
 **Para actualizar la conexión de carga de Dynamic Media Classic:**
 
-1. Ir a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Vaya a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. En el campo **[!UICONTROL Number of Connections]** o en el campo **[!UICONTROL Active job timeout]**, cambie el número como desee.
 
    La configuración **[!UICONTROL Number of Connections]** controla el número máximo de conexiones HTTP permitidas para el Experience Manager en la carga de Dynamic Media; normalmente, el valor predefinido de diez conexiones es suficiente.
@@ -722,7 +723,7 @@ Los filtros se aplican a tipos MIME y no pueden ser específicos de la ruta.
    | + | Incluye recursos para replicación |
    | - | Excluye los activos de la replicación |
 
-   Ir a `content/dam/<locate your asset>/jcr:content/renditions`.
+   Vaya a `content/dam/<locate your asset>/jcr:content/renditions`.
 
    El siguiente gráfico es un ejemplo de las representaciones de un recurso.
 

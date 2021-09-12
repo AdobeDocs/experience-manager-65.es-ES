@@ -12,10 +12,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
-feature: Configuración,Modo híbrido
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+feature: Configuration,Hybrid Mode
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '7797'
+source-wordcount: '7792'
 ht-degree: 1%
 
 ---
@@ -44,8 +44,7 @@ Obtenga más información sobre cómo trabajar con [video](/help/assets/video.md
 >* `ImageServing.log`
 
 >
->
-Están documentados en [Monitor y mantienen su instancia de Experience Manager](/help/sites-deploying/monitoring-and-maintaining.md).
+>Están documentados en [Monitor y mantienen su instancia de Experience Manager](/help/sites-deploying/monitoring-and-maintaining.md).
 
 La publicación y entrega híbridas es una función central de la adición de Dynamic Media a Adobe Experience Manager. La publicación híbrida permite enviar recursos de Dynamic Media, como imágenes, conjuntos y vídeos, desde la nube en lugar de desde los nodos de publicación del Experience Manager.
 
@@ -344,7 +343,6 @@ Replication test succeeded
 También puede comprobarlo realizando una de las siguientes acciones:
 * Compruebe los registros de replicación para asegurarse de que el recurso se replica.
 * Publicar una imagen. Seleccione la imagen y seleccione **[!UICONTROL Visualizadores]** en el menú desplegable y, a continuación, seleccione un ajuste preestablecido de visualizador. Seleccione **[!UICONTROL URL]**. Para comprobar que puede ver la imagen, copie y pegue la ruta URL en el explorador.
-
 
 
 ### Resolución de problemas de autenticación {#troubleshooting-authentication}
@@ -784,7 +782,7 @@ Si hay muchos filtros diferentes en un autor, cada agente necesita que se le asi
    | `+` | Incluye recursos para replicación |
    | `-` | Excluye los activos de la replicación |
 
-   Ir a `content/dam/<locate your asset>/jcr:content/renditions`.
+   Vaya a `content/dam/<locate your asset>/jcr:content/renditions`.
 
    El siguiente gráfico es un ejemplo de las representaciones de un recurso.
 
@@ -869,7 +867,7 @@ Tabla de configuración de manifiesto y sus valores predeterminados:
 | `defaultthumbpix` | `100,100` | Tamaño de miniatura predeterminado. Se utiliza en lugar del atributo::DefaultPix para solicitudes de miniatura (`req=tmb`).<br>El servidor restringe el tamaño de las imágenes de respuesta para que no superen esta anchura y altura. Esta acción es verdadera si una solicitud de miniatura (`req=tmb`) no especifica el tamaño explícitamente y no especifica el tamaño de vista utilizando `wid=`, `hei=` o `scl=`.<br>Se especifica como dos números enteros, 0 o más, separados por coma. Anchura y altura en píxeles. Puede establecerse uno o ambos valores en 0 para mantenerlos sin restricciones.<br>No se aplica a solicitudes anidadas/incrustadas.<br>Consulte también  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) DefaultThumbPixin en la API de servicio de imágenes. |
 | `expiration` | `36000000` | Tiempo de vida predeterminado de la caché del cliente. Proporciona un intervalo de caducidad predeterminado en caso de que un registro de catálogo en particular no contenga un valor de catálogo válido::Expiration .<br>Número real, 0 o bueno. Número de milisegundos hasta la caducidad desde que se generaron los datos de respuesta. Establézcalo en 0 para que siempre caduque la imagen de respuesta inmediatamente, lo que deshabilita efectivamente el almacenamiento en caché del cliente. De forma predeterminada, este valor se establece en 10 horas, lo que significa que si se publica una nueva imagen, tardará 10 horas en que la imagen antigua deje la caché del usuario. Póngase en contacto con el Servicio de atención al cliente si necesita que la caché se borre antes.<br>Consulte también  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) Caducidad en la API de servicio de imágenes. |
 | `jpegquality` | `80` | Atributos de codificación JPEG predeterminados. Especifica los atributos predeterminados para las imágenes de respuesta JPEG.<br>Número entero y marca, separados por coma. El primer valor está en el rango 1.100 y define la calidad. El segundo valor puede ser 0 para el comportamiento normal o 1 para desactivar el muestreo descendente de cromaticidad RGB empleado por los codificadores JPEG.<br>Consulte también  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) JpegQualityen la API de servicio de imágenes. |
-| `maxpix` | `2000,2000` | Responder límite de tamaño de imagen. Ancho y alto máximo de la imagen de respuesta que se devuelve al cliente.<br>El servidor devuelve un error si una solicitud causa una imagen de respuesta cuyo ancho o alto es mayor que el atributo::MaxPix.<br>Consulte también  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=en#image-serving-api) MaxPixin en la API de servicio de imágenes. |
+| `maxpix` | `2000,2000` | Responder límite de tamaño de imagen. Ancho y alto máximo de la imagen de respuesta que se devuelve al cliente.<br>El servidor devuelve un error si una solicitud causa una imagen de respuesta cuyo ancho o alto es mayor que el atributo::MaxPix.<br>Consulte también  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) MaxPixin en la API de servicio de imágenes. |
 | `resmode` | `SHARP2` | Modo de remuestreo predeterminado. Especifica los atributos de remuestreo e interpolación predeterminados que se utilizarán para escalar datos de imagen.<br>Se utiliza cuando no  `resMode=` se especifica en una solicitud.<br>Los valores permitidos son  `BILIN`,  `BICUB` o  `SHARP2`.<br>Enum. Establézcalo en 2 para `bilin`, 3 para `bicub` o 4 para el modo de interpolación `sharp2`. Utilice `sharp2` para obtener los mejores resultados.<br>Consulte también  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) ResModein en la API de servicio de imágenes. |
 | `resolution` | `72` | Resolución de objeto predeterminada. Proporciona una resolución de objeto predeterminada en caso de que un registro de catálogo concreto no contenga un valor de catálogo válido::Resolution .<br>Número real, mayor que 0. Normalmente se expresa como píxeles por pulgada, pero también puede estar en otras unidades, como píxeles por metro.<br>Consulte también  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) Resolución en la API de servicio de imágenes. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | Estos valores representan una instantánea del tiempo de reproducción de vídeo y se pasan a [encoding.com](https://www.encoding.com/). Consulte [Acerca de la miniatura de vídeo](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) para obtener más información. |
@@ -936,7 +934,7 @@ Después de instalar el paquete de características, configure los perfiles de c
   </tr>
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
-   <td>Cadena</td>
+   <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Nombre del perfil de color RGB predeterminado.</td>
   </tr>
