@@ -3,11 +3,11 @@ title: Digital Rights Management de los activos
 description: Aprenda a administrar los estados de caducidad de los recursos y la información de los recursos con licencia en [!DNL Experience Manager].
 contentOwner: AG
 role: User, Admin
-feature: DRM,Administración de activos
+feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: e87facbad559aa7e45656f621de17e6ef3109273
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1398'
 ht-degree: 5%
 
 ---
@@ -69,7 +69,7 @@ Para permitir que la consola [!DNL Assets] muestre los recursos compuestos de re
 1. Abra el Administrador de configuración [!DNL Experience Manager].
 1. Seleccione **[!UICONTROL Notificación de caducidad de Adobe CQ DAM]**. De forma predeterminada, está seleccionado **[!UICONTROL Programador basado en tiempo]**, que programa un trabajo para comprobar en un momento específico si un recurso tiene subrecursos caducados. Una vez finalizado el trabajo, los recursos que tienen subrecursos caducados y recursos a los que se hace referencia se muestran como caducados en los resultados de la búsqueda.
 
-1. Para ejecutar el trabajo periódicamente, desactive el campo **[!UICONTROL Regla de planificador basada en tiempo]** y modifique el tiempo en segundos en el campo **[!UICONTROL Programador periódico]**. Por ejemplo, la expresión de ejemplo `0 0 0 &ast; &ast; ?` déclencheur el trabajo a las 00 horas.
+1. Para ejecutar el trabajo periódicamente, desactive el campo **[!UICONTROL Regla de planificador basada en tiempo]** y modifique el tiempo en segundos en el campo **[!UICONTROL Programador periódico]**. Por ejemplo, la expresión de ejemplo `0 0 0 * * ?` déclencheur el trabajo a las 00 horas.
 1. Seleccione **[!UICONTROL enviar correo electrónico]** para recibir correos electrónicos cuando caduque un recurso.
 
    >[!NOTE]
