@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
-feature: Publicación
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Publishing
+source-git-commit: a5164c0c2ef175f1bf63ef911bf92df36e413a6f
 workflow-type: tm+mt
-source-wordcount: '2945'
+source-wordcount: '2960'
 ht-degree: 4%
 
 ---
@@ -70,6 +70,8 @@ Después de configurar la publicación selectiva en una carpeta, puede realizar 
    >[!IMPORTANT]
    >
    >Independientemente de la opción del modo de publicación de Dynamic Media que seleccione, cualquier actualización que realice posteriormente en un recurso que ya esté *publicado*, esas actualizaciones se publican inmediatamente sin que el usuario tome ninguna otra medida.
+   >
+   >Si se actualiza un vídeo publicado, debe volver a publicarse para reflejar los cambios en la entrega.
 
    | Opción de modo Publicación de Dynamic Media | Descripción |
    | --- | --- |
