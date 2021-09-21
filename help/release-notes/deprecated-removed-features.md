@@ -2,10 +2,10 @@
 title: Funciones obsoletas y eliminadas en la versión 6.5 de Adobe Experience Manager.
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: becdfee534e4464147811302ed67de74b8044a24
 workflow-type: tm+mt
-source-wordcount: '1736'
-ht-degree: 43%
+source-wordcount: '1745'
+ht-degree: 42%
 
 ---
 
@@ -28,6 +28,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 
 | Área | Función | Reemplazo |
 |---|---|---|
+| [!DNL Sites] | Fragmentos de contenido simples basados en plantillas. | [Fragmentos de contenido estructurados basados en ](/help/assets/content-fragments/content-fragments-models.md) modelos. |
 | Ingregación de Creative Cloud | AEM al uso compartido de carpetas de Creative Cloud se introdujo en AEM 6.2 como una forma de proporcionar a los usuarios creativos acceso a los recursos de AEM, de modo que puedan abrirlos en aplicaciones CC y cargar nuevos archivos o guardar cambios en AEM. Adobe Asset Link, la nueva capacidad de la aplicación Creative Cloud, proporciona experiencia de usuario mejorada y un acceso más eficaz a los recursos de AEM directamente desde Photoshop, InDesign e Illustrator. Adobe no tiene previsto realizar más mejoras en la integración del uso compartido de carpetas de Creative Cloud en AEM. Aunque la función se incluye en AEM, se recomienda a los clientes utilizar soluciones alternativas. | Se aconseja a los clientes que cambien a las nuevas funciones de integración de Creative Cloud, como Adobe Asset Link o AEM aplicación de escritorio. |
 | Assets | `AssetDownloadServlet` está desactivado de forma predeterminada para las instancias publicadas. Para obtener más información, consulte la [AEM security checklist (lista de comprobación de seguridad de AEM)](/help/sites-administering/security-checklist.md). | Configuración descrita en la [AEM Security checklist (lista de comprobación de seguridad de AEM)](/help/sites-administering/security-checklist.md). |
 | Recursos | Si un usuario no tiene permisos suficientes (de lectura y escritura) en `/content/dam/collections`, no puede crear una colección. | Coincidir con la configuración de control de acceso del usuario y comprobar los permisos adecuados. |
@@ -70,7 +71,7 @@ Esta sección enumera las funciones y capacidades que se han eliminado de AEM 6.
 | [!DNL Assets] | La función de descarga de recursos se ha eliminado en [!DNL Adobe Experience Manager] 6.5. | No hay reemplazo disponible. |
 | Caché | `system/console/slingjsp` elimina ya no está disponible en AEM 6.5. | Classes y Slightly cache se almacenan bajo el paquete Apache Sling Commons FileSystem ClassLoader . Puede comprobar el número de paquete en la consola web de AEM y eliminar la carpeta de caché directamente del sistema de archivos (`crx-quickstart/launchpad/felix/bundle<ID>`). |
 
-## Anuncio previo de la próxima versión {#pre-announcement-for-next-release}
+## Anuncio previo para la próxima versión {#pre-announcement-for-next-release}
 
 Esta sección se utiliza para anunciar previamente los próximos cambios en las próximas versiones. Los cambios anunciados aún no son efectivos, pero afectarán a los clientes. Por ejemplo, las funciones aún no están en desuso, pero afectan a los usuarios después de su desuso. Estas actualizaciones se proporcionan con fines de planificación.
 
