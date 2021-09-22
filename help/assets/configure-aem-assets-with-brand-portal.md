@@ -12,9 +12,9 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: d995173140237f34a03c8e84128ad9d657c9a026
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '2053'
 ht-degree: 10%
 
 ---
@@ -120,7 +120,7 @@ La clave pública (certificado) autentica el perfil en Adobe Developer Console.
 
 1. En el panel **Herramientas** ![Herramientas](assets/do-not-localize/tools.png), vaya a **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**.
 
-1. En la página Configuraciones de IMS de Adobe, haga clic en **[!UICONTROL Crear]**. Se redirigirá a la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]**. De forma predeterminada, se abre la pestaña **Certificate**.
+1. En la página Configuraciones de IMS de Adobe, haga clic en **[!UICONTROL Crear]**. Se redirigirá a la página **[!UICONTROL Configuración de cuenta técnica de IMS de Adobe]**. De forma predeterminada, se abre la pestaña **Certificate**.
 
 1. Seleccione **[!UICONTROL Adobe Brand Portal]** en la lista desplegable **[!UICONTROL Solución de nube]**.
 
@@ -338,6 +338,8 @@ Realice los siguientes pasos para validar la configuración:
    >Evite desactivar cualquiera de los agentes de replicación, ya que puede provocar errores en la replicación de los recursos (que se ejecutan en la cola).
    >
    >Asegúrese de que los cuatro agentes de replicación estén configurados para evitar errores de tiempo de espera. Consulte [solución de problemas en la publicación paralela en Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >
+   >No modifique ninguna configuración generada automáticamente.
 
 Ahora puede:
 
