@@ -8,9 +8,9 @@ breadcrumb-title: Guía de desarrollo
 user-guide-description: Esta guía explica cómo crear una instancia de AEM.
 feature: Developing
 role: Developer
-source-git-commit: 1eb2ef06ed0541026ff3ba436dfab0d261af7356
+source-git-commit: b82544398ca414afab867f188f33ae60989596f3
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '910'
 ht-degree: 16%
 
 ---
@@ -97,7 +97,7 @@ ht-degree: 16%
       + [Uso de xtype (IU clásica)](xtypes.md)
       + [Desarrollo de Forms (IU clásica)](developing-forms.md)
 + Administración de experiencias sin objetivos{#headless}
-   + [Sin cabezal e híbrido con AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Sin cabezal e híbrido con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Activación de la exportación de JSON para un componente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
    + Aplicaciones de una sola página{#spas}
       + [Introducción y tutorial de SPA](spa-walkthrough.md)
