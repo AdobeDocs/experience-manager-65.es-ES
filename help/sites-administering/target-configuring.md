@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 7da4a482e709a8b6bcc5537905ce811b5363e19b
+source-git-commit: b0ccbf9e63cd9db00004ae96b2556df43f4b1478
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2199'
 ht-degree: 4%
 
 ---
@@ -88,28 +88,33 @@ Para ello, debe especificar la configuración de nube de A4T con la que conectar
    >Al configurar A4T con AEM, es posible que vea una entrada que falta en una referencia de configuración. Para poder seleccionar el marco de análisis, haga lo siguiente:
    >
    >1. Vaya a **Tools** > **General** > **CRXDE Lite**.
-   >1. Vaya a: `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
+   1. Vaya a [1] (consulte a continuación)
    1. Establezca la propiedad **disable** en **false**.
    1. Toque o haga clic en **Guardar todo**.
 
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+[1]
 
-   Haga clic en **Aceptar**. Al dirigir contenido con Adobe Target, puede [seleccionar el origen del informe](/help/sites-authoring/content-targeting-touch.md).
+```
+   >/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
+```
+
+![chlimage_1-159](assets/chlimage_1-159.png)
+
+Haga clic en **Aceptar**. Al dirigir contenido con Adobe Target, puede [seleccionar el origen del informe](/help/sites-authoring/content-targeting-touch.md).
 
 ## Integración manual con Adobe Target {#manually-integrating-with-adobe-target}
 
 Integre manualmente con Adobe Target en lugar de utilizar el asistente de inclusión.
 
 >[!NOTE]
->
->El archivo de biblioteca de Target, [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html), es una nueva biblioteca de implementación para Adobe Target que está diseñada tanto para implementaciones web típicas como para aplicaciones de una sola página. Adobe recomienda usar AT.js en lugar de mbox.js como biblioteca de cliente.
->AT.js ofrece varias mejoras con respecto a la biblioteca mbox.js :
->* Se han mejorado los tiempos de carga de las páginas en implementaciones web
->* Seguridad mejorada
->* Mejores opciones de implementación para aplicaciones de una sola página
->* AT.js contiene los componentes que se incluían en target.js, de modo que ya no se llama a target.js
->Puede seleccionar AT.js o mbox.js en el menú desplegable **Biblioteca de cliente**.
+El archivo de biblioteca de Target, [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html), es una nueva biblioteca de implementación para Adobe Target que está diseñada tanto para implementaciones web típicas como para aplicaciones de una sola página. Adobe recomienda usar AT.js en lugar de mbox.js como biblioteca de cliente.
+AT.js ofrece varias mejoras con respecto a la biblioteca mbox.js :
+* Se han mejorado los tiempos de carga de las páginas en implementaciones web
+* Seguridad mejorada
+* Mejores opciones de implementación para aplicaciones de una sola página
+* AT.js contiene los componentes que se incluían en target.js, de modo que ya no se llama a target.js
+Puede seleccionar AT.js o mbox.js en el menú desplegable **Biblioteca de cliente**.
 
 ### Creación de una configuración de Target Cloud {#creating-a-target-cloud-configuration}
 
@@ -137,12 +142,11 @@ Utilice el siguiente procedimiento para crear una configuración de nube de Targ
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
    >[!NOTE]
-   >
-   >Al configurar A4T con AEM, es posible que vea una entrada que falta en una referencia de configuración. Para poder seleccionar el marco de análisis, haga lo siguiente:
-   >1. Vaya a **Tools** > **General** > **CRXDE Lite**.
-   >1. Vaya a **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
-   >1. Establezca la propiedad **disable** en **false**.
-   >1. Toque o haga clic en **Guardar todo**.
+   Al configurar A4T con AEM, es posible que vea una entrada que falta en una referencia de configuración. Para poder seleccionar el marco de análisis, haga lo siguiente:
+   1. Vaya a **Tools** > **General** > **CRXDE Lite**.
+   1. Vaya a **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+   1. Establezca la propiedad **disable** en **false**.
+   1. Toque o haga clic en **Guardar todo**.
 
 
 1. En el cuadro de diálogo , proporcione valores para estas propiedades.
@@ -161,11 +165,10 @@ Utilice el siguiente procedimiento para crear una configuración de nube de Targ
    * **AT.js** personalizado: Deje en blanco si ha marcado la casilla DTM o para utilizar el AT.js predeterminado. Como alternativa, cargue su AT.js personalizado. Solo aparece si ha seleccionado AT.js.
 
    >[!NOTE]
-   >
-   >De forma predeterminada, al entrar en el asistente de configuración de Adobe Target, la Orientación precisa está habilitada.
-   >La segmentación precisa significa que la configuración del servicio en la nube espera a que el contexto se cargue antes de cargar el contenido. Como resultado, en términos de rendimiento, una segmentación precisa puede provocar un retraso de unos milisegundos antes de cargar el contenido.
-   >La segmentación precisa siempre está habilitada en la instancia de autor. Sin embargo, en la instancia de publicación puede optar por desactivar la segmentación precisa globalmente desactivando la marca de verificación junto a Orientación precisa en la configuración del servicio en la nube (**http://localhost:4502/etc/cloudservices.html**). También puede activar y desactivar la segmentación precisa para componentes individuales independientemente de la configuración del servicio en la nube.
-   >Si ya ha ***creado*** componentes de destino y cambia esta configuración, los cambios no afectarán a esos componentes. Debe realizar cualquier cambio en esos componentes directamente.
+   De forma predeterminada, al entrar en el asistente de configuración de Adobe Target, la Orientación precisa está habilitada.
+   La segmentación precisa significa que la configuración del servicio en la nube espera a que el contexto se cargue antes de cargar el contenido. Como resultado, en términos de rendimiento, una segmentación precisa puede provocar un retraso de unos milisegundos antes de cargar el contenido.
+   La segmentación precisa siempre está habilitada en la instancia de autor. Sin embargo, en la instancia de publicación puede optar por desactivar la segmentación precisa globalmente desactivando la marca de verificación junto a Orientación precisa en la configuración del servicio en la nube (**http://localhost:4502/etc/cloudservices.html**). También puede activar y desactivar la segmentación precisa para componentes individuales independientemente de la configuración del servicio en la nube.
+   Si ya ha ***creado*** componentes de destino y cambia esta configuración, los cambios no afectarán a esos componentes. Debe realizar cualquier cambio en esos componentes directamente.
 
 1. Haga clic en **Connect to Target** para inicializar la conexión con Target. Si la conexión se realiza correctamente, aparece el mensaje **Connection success**. Haga clic **OK** en el mensaje y, a continuación, en **OK** en el cuadro de diálogo.
 
@@ -189,8 +192,7 @@ Puede crear varios marcos para una sola configuración de Target. Los marcos de 
 1. Arrastre el componente Client Context que representa los datos que desea utilizar para la asignación al destino de colocación. También puede arrastrar el componente **Almacenamiento de ContextHub** al marco.
 
    >[!NOTE]
-   >
-   >Al asignar, los parámetros se pasan a un mbox mediante cadenas simples. No se pueden asignar matrices desde ContextHub.
+   Al asignar, los parámetros se pasan a un mbox mediante cadenas simples. No se pueden asignar matrices desde ContextHub.
 
    Por ejemplo, para utilizar **Datos de perfil** acerca de los visitantes del sitio para controlar la campaña de Target, arrastre el componente **Datos de perfil** a la página. Aparecen las variables de datos de perfil disponibles para su asignación a parámetros de Target.
 
@@ -201,8 +203,7 @@ Puede crear varios marcos para una sola configuración de Target. Los marcos de 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
    >[!NOTE]
-   >
-   >La sincronización de parámetros es solo de una manera, de AEM a Adobe Target.
+   La sincronización de parámetros es solo de una manera, de AEM a Adobe Target.
 
 Se crea el marco. Para replicar el marco en la instancia de publicación, utilice la opción **Activar marco** de la barra de tareas.
 
@@ -211,11 +212,10 @@ Se crea el marco. Para replicar el marco en la instancia de publicación, utilic
 Asocie sus [AEM actividades](/help/sites-authoring/activitylib.md) con la configuración de la nube de Target para que pueda imitar las actividades de [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
->
->Los tipos de actividades estarán disponibles dependiendo de lo siguiente:
->* Si la opción **xt_only** está habilitada en el inquilino de Adobe Target (clientcode) que se usa en el lado AEM para conectar con Adobe Target, **solo** puede crear actividades de XT en AEM.
->* Si las opciones **xt_only** **no** están habilitadas en el inquilino de Adobe Target (clientcode), puede crear **ambas** actividades de XT y de pruebas A/B en AEM.
->**Nota adicional:** las opciones de **xt_only** son una configuración aplicada en un inquilino de Target (clientcode) y sólo se pueden modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
+Los tipos de actividades estarán disponibles dependiendo de lo siguiente:
+* Si la opción **xt_only** está habilitada en el inquilino de Adobe Target (clientcode) que se usa en el lado AEM para conectar con Adobe Target, **solo** puede crear actividades de XT en AEM.
+* Si las opciones **xt_only** **no** están habilitadas en el inquilino de Adobe Target (clientcode), puede crear **ambas** actividades de XT y de pruebas A/B en AEM.
+**Nota adicional:** las opciones de **xt_only** son una configuración aplicada en un inquilino de Target (clientcode) y sólo se pueden modificar directamente en Adobe Target. No puede activar ni desactivar esta opción en AEM.
 
 ### Asociación del marco de trabajo de Target con el sitio {#associating-the-target-framework-with-your-site}
 
@@ -234,15 +234,13 @@ Cuando asocia una página con la estructura, las páginas secundarias heredan la
 1. Seleccione el marco que desee en **Referencia de configuración**.
 
    >[!NOTE]
-   >
-   >Asegúrese de seleccionar el **framework** específico que ha creado y no la configuración de nube de Target en la que se creó.
+   Asegúrese de seleccionar el **framework** específico que ha creado y no la configuración de nube de Target en la que se creó.
 
 1. Toque o haga clic en **Listo**.
 1. Active la página raíz del sitio web para replicarla en el servidor de publicación. (Consulte [Cómo publicar páginas](/help/sites-authoring/publishing-pages.md)).
 
    >[!NOTE]
-   >
-   >Si el marco que adjuntó a la página aún no se ha activado, se abre un asistente que le permite publicarlo también.
+   Si el marco que adjuntó a la página aún no se ha activado, se abre un asistente que le permite publicarlo también.
 
 ## Solución de problemas de conexión de Target {#troubleshooting-target-connection-problems}
 
