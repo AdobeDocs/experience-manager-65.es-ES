@@ -1,8 +1,8 @@
 ---
 title: Optimización del rendimiento
-seo-title: Optimización del rendimiento
+seo-title: Performance Optimization
 description: Aprenda a configurar ciertos aspectos de AEM para optimizar el rendimiento.
-seo-description: Aprenda a configurar ciertos aspectos de AEM para optimizar el rendimiento.
+seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
+source-git-commit: 4fc42469e4b97f2f2c5d7489837012d31c63f86d
 workflow-type: tm+mt
-source-wordcount: '6659'
-ht-degree: 2%
+source-wordcount: '6645'
+ht-degree: 14%
 
 ---
-
 
 # Optimización del rendimiento {#performance-optimization}
 
@@ -87,7 +86,7 @@ No debe subestimarse la importancia de establecer adecuadamente los objetivos de
 
 El establecimiento de objetivos de rendimiento sólidos y buenos es en realidad una de las áreas más complicadas. A menudo es mejor recopilar &quot;logs&quot; de la vida real y puntos de referencia de un sitio web comparable (por ejemplo, el predecesor del nuevo sitio web).
 
-### Mantener relevante {#stay-relevant}
+### Mantener relevancia {#stay-relevant}
 
 ![Chlimage_1-6](assets/chlimage_1-6.jpeg)
 
@@ -101,7 +100,7 @@ El ajuste del rendimiento es un proceso iterativo que implica, mide, analiza, op
 
 Esto significa en gran medida que el desarrollador que implementa la optimización debería tener una forma rápida de saber si la optimización ya ha alcanzado el objetivo. Esta información es valiosa, ya que cuando se alcanza el objetivo, la optimización finaliza.
 
-## Directrices de rendimiento básicas {#basic-performance-guidelines}
+## Directrices básicas de rendimiento {#basic-performance-guidelines}
 
 En términos generales, mantenga sus solicitudes html sin almacenar en caché a menos de 100 ms. Más concretamente, puede servir de guía:
 
@@ -157,7 +156,7 @@ Para mejorar el rendimiento, puede considerar lo siguiente:
 
 * El 80 % de todas las ediciones se realizarán en el 20 % de las veces, por lo que en las horas de mayor actividad tendrá 4 veces la tasa de datos promedio. Este es su objetivo de rendimiento.
 
-## Monitorización del rendimiento {#performance-monitoring}
+## Supervisión del rendimiento {#performance-monitoring}
 
 El rendimiento (o la falta de él) es una de las primeras cosas que los usuarios notan, por lo que, al igual que con cualquier aplicación con una interfaz de usuario, el rendimiento es fundamental. Para optimizar el rendimiento de la instalación de AEM, debe monitorizar varios atributos de la instancia y su comportamiento.
 
@@ -201,7 +200,7 @@ Algunas reglas deben tenerse en cuenta al optimizar el rendimiento:
 >
 >Tenga en cuenta que el mecanismo que utilice para medir el rendimiento a menudo afectará exactamente a lo que está intentando medir. Siempre debe tratar de tener en cuenta estas discrepancias y eliminar el mayor efecto posible; en particular, los complementos del explorador deben desactivarse siempre que sea posible.
 
-## Configuración para el rendimiento {#configuring-for-performance}
+## Configuración del rendimiento {#configuring-for-performance}
 
 Ciertos aspectos de AEM (y/o el repositorio subyacente) se pueden configurar para optimizar el rendimiento. Las siguientes son posibilidades y sugerencias, debe asegurarse de si utiliza la funcionalidad en cuestión antes de realizar cambios o cómo hacerlo.
 
@@ -218,7 +217,7 @@ Puede encontrar la información de indexación actualizada aquí:
 * [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
 * [Consultas e indexación](/help/sites-deploying/queries-and-indexing.md)
 
-### Procesamiento de flujo de trabajo simultáneo {#concurrent-workflow-processing}
+### Procesamiento De Flujo De Trabajo Simultáneo {#concurrent-workflow-processing}
 
 Limite el número de procesos de flujo de trabajo que se ejecutan simultáneamente para mejorar el rendimiento. De forma predeterminada, el motor de flujo de trabajo procesa tantos flujos de trabajo en paralelo como procesadores disponibles para la VM de Java. Cuando los pasos del flujo de trabajo requieren grandes cantidades de recursos de procesamiento (RAM o CPU), la ejecución de varios de estos flujos de trabajo en paralelo puede suponer una gran demanda para los recursos de servidor disponibles.
 
@@ -247,7 +246,7 @@ Para configurar estos servicios [mediante la Consola Web](/help/sites-deploying/
 
 Debe configurar la propiedad denominada Maximum Parallel Jobs (Máximo de trabajos paralelos).
 
-### Configurar la cola para un flujo de trabajo específico {#configure-the-queue-for-a-specific-workflow}
+### Configuración de la cola para un flujo de trabajo específico {#configure-the-queue-for-a-specific-workflow}
 
 Cree una cola de trabajos para un modelo de flujo de trabajo específico para que pueda configurar la gestión de trabajos para ese modelo de flujo de trabajo. De este modo, las configuraciones afectan al procesamiento de un flujo de trabajo específico, mientras que la configuración de la cola de flujo de trabajo predeterminada de Granite controla el procesamiento de otros flujos de trabajo.
 
@@ -276,13 +275,13 @@ El siguiente procedimiento crea una cola de trabajos para un flujo de trabajo, u
 
    Las configuraciones de fábrica son similares a la cola de flujo de trabajo de Granite descrita en [Procesamiento de flujo de trabajo simultáneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing), excepto que la propiedad Temas coincide con el tema de los trabajos de flujo de trabajo.
 
-### Servicio de sincronización de recursos DAM de AEM {#cq-dam-asset-synchronization-service}
+### Servicio de sincronización de recursos DAM AEM {#cq-dam-asset-synchronization-service}
 
 El `AssetSynchronizationService` se utiliza para sincronizar activos de repositorios montados (incluidos LiveLink, Documentum, entre otros). De forma predeterminada, esto hace una comprobación regular cada 300 segundos (5 minutos), por lo que si no utiliza repositorios montados, puede desactivar este servicio.
 
 Esto se hace [configurando el servicio OSGi](/help/sites-deploying/configuring-osgi.md) **Servicio de sincronización de recursos CQ DAM** para establecer el **periodo de sincronización** ( `scheduler.period`) en (un mínimo de) 1 año (definido en segundos).
 
-### Varias instancias de DAM {#multiple-dam-instances}
+### Varias instancias DAM {#multiple-dam-instances}
 
 La implementación de varias instancias de DAM puede ayudar al rendimiento cuando, por ejemplo:
 
@@ -294,7 +293,7 @@ Otras consideraciones son:
 * Separación del &quot;trabajo en curso&quot; en el autor de &quot;final&quot; en la publicación
 * Separar los usuarios internos del autor de los visitantes/usuarios externos en la publicación (por ejemplo, agentes, representantes de prensa, clientes, estudiantes, etc.).
 
-## Prácticas recomendadas para el control de calidad {#best-practices-for-quality-assurance}
+## Prácticas recomendadas para garantizar la calidad {#best-practices-for-quality-assurance}
 
 El rendimiento es de gran importancia para su entorno de publicación. Por lo tanto, debe planificar y analizar cuidadosamente las pruebas de rendimiento que realizará para el entorno de publicación al implementar el proyecto.
 
@@ -329,7 +328,7 @@ Para obtener una descripción general clara, puede crear un mapa de toda la apli
 
 Una representación de diagrama de los elementos internos de la aplicación puede ofrecer una visión general de los requisitos de prueba; con la codificación por colores, también puede servir de base para la creación de informes.
 
-### Definición de ámbito {#scope-definition}
+### Definición del ámbito {#scope-definition}
 
 Una aplicación suele tener una selección de casos de uso. Algunos serán muy importantes, otros menos.
 
@@ -361,7 +360,7 @@ Este concepto tiene 4 escenarios utilizados para definir y probar los objetivos 
 
 Se basa en los principios siguientes:
 
-#### Puntos de interrupción de componentes {#component-breakpoints}
+#### Puntos de interrupción de los componentes {#component-breakpoints}
 
 * Cada componente tiene un punto de interrupción específico cuando está relacionado con el rendimiento. Esto significa que un componente puede mostrar un buen rendimiento hasta que se alcanza un punto específico, después del cual el rendimiento se degradará rápidamente.
 * Para obtener una descripción general completa de la aplicación, primero debe verificar los componentes para determinar cuándo se alcanza el punto de interrupción de cada uno.
@@ -401,12 +400,12 @@ La prueba de los componentes en combinación ofrece un reflejo más profundo del
 | Situación | Componente | No. de usuarios | Tx/s (esperado) | Tx/seg (probado) | Descripción |
 |---|---|---|---|---|---|
 | Media mixta | Página principal | 10 | 1 |  |  |
-|  | Búsqueda   | 10 | 3 |  |  |
+|  | Búsqueda | 10 | 1 |  |  |
 |  | Noticias | 10 | 2 |  |  |
 |  | Sucesos | 10 | 1 |  |  |
-|  | Activaciones | 10 | 3 |  | Simulación del comportamiento del autor. |
+|  | Activaciones | 10 | 1 |  | Simulación del comportamiento del autor. |
 | Pico mixto | Página principal | 100 | 5 |  |  |
-|  | Búsqueda   | 50 | 5 |  |  |
+|  | Búsqueda | 50 | 5 |  |  |
 |  | Noticias | 100 | 10 |  |  |
 |  | Sucesos | 100 | 10 |  |  |
 |  | Activaciones | 20 | 20 |  | Simulación del comportamiento del autor. |
@@ -418,12 +417,12 @@ Durante los primeros días después de que su sitio web esté disponible, puede 
 | Situación | Tipo de prueba | No. de usuarios | Tx/s (esperado) | Tx/seg (probado) | Descripción |
 |---|---|---|---|---|---|
 | Volver al pico activo | Página principal | 200 | 20 |  |  |
-|  | Búsqueda   | 100 | 10 |  |  |
+|  | Búsqueda | 100 | 10 |  |  |
 |  | Noticias | 200 | 20 |  |  |
 |  | Sucesos | 200 | 20 |  |  |
 |  | Activaciones | 20 | 20 |  | Simulación del comportamiento del autor. |
 
-#### Pruebas de escenario de error {#error-scenario-tests}
+#### Pruebas del escenario de error {#error-scenario-tests}
 
 Los escenarios de error también deben probarse para garantizar que el sistema reaccione correcta y adecuadamente. No solo en la forma en que se gestiona el error en sí, sino también en el impacto que puede tener en el rendimiento. Por ejemplo:
 
@@ -434,10 +433,10 @@ Al diseñar estas pruebas, debe recordarse que no todos los escenarios se produc
 
 | Escenario de error | Tipo de error | No. de usuarios | Tx/s (esperado) | Tx/seg (probado) | Descripción |
 |---|---|---|---|---|---|
-| Sobrecarga del componente de búsqueda | Buscar en comodín global (asterisco) | 10 | 3 |  | Solo &amp;ast;&amp;ast;&amp;ast;&amp;ast; se buscan. |
+| Sobrecarga del componente de búsqueda | Buscar en comodín global (asterisco) | 10 | 1 |  | Solo &amp;ast;&amp;ast;&amp;ast;&amp;ast; se buscan. |
 |  | Palabra Parada | 20 | 2 |  | Buscando una palabra clave. |
-|  | Cadena vacía | 10 | 3 |  | Buscando una cadena vacía. |
-|  | Caracteres especiales | 10 | 3 |  | Buscando caracteres especiales. |
+|  | Cadena vacía | 10 | 1 |  | Buscando una cadena vacía. |
+|  | Caracteres especiales | 10 | 1 |  | Buscando caracteres especiales. |
 
 #### Pruebas de resistencia {#endurance-tests}
 
@@ -445,11 +444,11 @@ Algunos problemas solo se encontrarán una vez que el sistema se haya ejecutado 
 
 | Situación | Tipo de prueba | No. de usuarios | Tx/s (esperado) | Tx/seg (probado) | Descripción |
 |---|---|---|---|---|---|
-| Ensayo de resistencia (72 horas) | Página principal | 10 | 3 |  |  |
-|  | Búsqueda   | 10 | 3 |  |  |
+| Ensayo de resistencia (72 horas) | Página principal | 10 | 1 |  |  |
+|  | Búsqueda | 10 | 1 |  |  |
 |  | Noticias | 20 | 2 |  |  |
-|  | Sucesos | 10 | 3 |  |  |
-|  | Activaciones | 1 | 3 |  | Simulación del comportamiento del autor. |
+|  | Sucesos | 10 | 1 |  |  |
+|  | Activaciones | 1 | 1 |  | Simulación del comportamiento del autor. |
 
 ### Optimización {#optimization}
 
@@ -488,7 +487,7 @@ El [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/disp
 
 >[!NOTE]
 >
->Las versiones de Dispatcher son independientes de AEM, pero la documentación de Dispatcher está incrustada en la documentación de AEM. Utilice siempre la documentación de Dispatcher incrustada en la documentación para la versión más reciente de AEM.
+>Las versiones de Dispatcher son independientes de AEM, pero la documentación de Dispatcher está incrustada en la de AEM. Utilice siempre la documentación de Dispatcher incrustada en la documentación para la versión más reciente de AEM.
 >
 >Es posible que se le haya redirigido a esta página si ha seguido un vínculo a la documentación de Dispatcher insertado en la documentación de una versión anterior de AEM.
 
@@ -502,11 +501,9 @@ Dispatcher ofrece una serie de mecanismos integrados que puede utilizar para opt
 >* No se pueden almacenar otras cosas, como cookies, datos de sesión y datos de formulario.
 
 >
->
-En general, muchas estrategias de almacenamiento en caché implican la selección de buenas direcciones URL y no depender de estos datos adicionales.
+>En general, muchas estrategias de almacenamiento en caché implican la selección de buenas direcciones URL y no depender de estos datos adicionales.
 >
 >Con la versión 4.1.11 de Dispatcher también puede almacenar en caché los encabezados de respuesta; consulte [Almacenamiento en caché de encabezados de respuesta HTTP](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
-
 
 ### Cálculo de la proporción de caché de Dispatcher {#calculating-the-dispatcher-cache-ratio}
 
@@ -528,11 +525,11 @@ Si no tiene un emparejamiento de uno a uno de los publicadores/dispatcher, deber
 >
 >Para obtener el mejor rendimiento, Adobe recomienda una proporción de caché del 90 % al 95 %.
 
-#### Uso de la codificación de página coherente {#using-consistent-page-encoding}
+#### Utilizar una codificación de página coherente {#using-consistent-page-encoding}
 
-Con la versión 4.1.11 de Dispatcher puede almacenar en caché los encabezados de respuesta. Si no está almacenando encabezados de respuesta en caché en Dispatcher, se pueden producir problemas si almacena información de codificación de página en el encabezado. En este caso, cuando Dispatcher sirve una página desde la caché, se utiliza la codificación predeterminada del servidor web para la página. Existen dos formas de evitar este problema:
+Con la versión 4.1.11 de Dispatcher puede almacenar en caché los encabezados de respuesta. Si no está almacenando encabezados de respuesta en caché en Dispatcher, se pueden producir problemas si almacena información de codificación de página en el encabezado. En este caso, cuando Dispatcher sirve una página desde la caché, se utiliza la codificación predeterminada del servidor web para esa página. Existen dos formas de evitar este problema:
 
-* Si solo utiliza una codificación, asegúrese de que la codificación utilizada en el servidor web sea la misma que la codificación predeterminada del sitio web AEM.
+* Si solo utiliza una codificación, asegúrese de que la utilizada en el servidor web sea la misma que la predeterminada del sitio web de AEM.
 * Utilice una etiqueta `<META>` en la sección HTML `head` para configurar la codificación, como en el siguiente ejemplo:
 
 ```xml
@@ -541,7 +538,7 @@ Con la versión 4.1.11 de Dispatcher puede almacenar en caché los encabezados d
 
 #### Evitar parámetros de URL {#avoid-url-parameters}
 
-Si es posible, evite los parámetros de URL para las páginas que desee almacenar en caché. Por ejemplo, si tiene una galería de imágenes, la siguiente URL nunca se almacena en caché (a menos que Dispatcher esté [configurado en consecuencia](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
+Si es posible, evite los parámetros de URL para las páginas que desee almacenar en caché. Por ejemplo, si tiene una galería de imágenes, la siguiente URL nunca se almacenará en caché (a menos que Dispatcher esté [configurado así](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -555,15 +552,15 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 >[!NOTE]
 >
->Esta dirección URL llama a la misma página y a la misma plantilla que `gallery.html`. En la definición de la plantilla, puede especificar qué secuencia de comandos procesa la página o puede utilizar la misma secuencia de comandos para todas las páginas.
+>Esta URL llama a la misma página y a la misma plantilla que `gallery.html`. En la definición de la plantilla, puede especificar qué secuencia de comandos procesa la página o puede utilizar la misma secuencia de comandos para todas las páginas.
 
 #### Personalizar por dirección URL {#customize-by-url}
 
-Si permite a los usuarios cambiar el tamaño de fuente (o cualquier otra personalización del diseño), asegúrese de que las diferentes personalizaciones se reflejen en la dirección URL.
+Si permite a los usuarios cambiar el tamaño de la fuente (o cualquier otra personalización del diseño), asegúrese de que las diferentes personalizaciones se reflejen en la dirección URL.
 
-Por ejemplo, las cookies no se almacenan en caché, por lo que si almacena el tamaño de fuente en una cookie (o mecanismo similar), el tamaño de fuente no se conservará para la página en caché. Como resultado, Dispatcher devuelve aleatoriamente documentos de cualquier tamaño de fuente.
+Por ejemplo, las cookies no se almacenan en caché, por lo que si almacena el tamaño de la fuente en una cookie (o mecanismo similar), no se conservará para la página en caché. Como resultado, Dispatcher devuelve aleatoriamente documentos con cualquier tamaño de la fuente.
 
-Incluir el tamaño de fuente en la URL como selector evita este problema:
+Incluir el tamaño de la fuente en la URL como selector evita este problema:
 
 ```xml
 www.myCompany.com/news/main.large.html
@@ -571,47 +568,47 @@ www.myCompany.com/news/main.large.html
 
 >[!NOTE]
 >
->Para la mayoría de los aspectos de diseño, también es posible utilizar hojas de estilo o secuencias de comandos del lado del cliente. Normalmente funcionan muy bien con el almacenamiento en caché.
+>Para la mayoría de los aspectos del diseño, también es posible utilizar hojas de estilo o secuencias de comandos del lado del cliente. Normalmente funcionan muy bien con el almacenamiento en caché.
 >
->Esto también es útil en una versión impresa, donde puede usar una URL como:
+>Esto también es útil en la versión impresa, donde puede usar una URL como:
 >
 >`www.myCompany.com/news/main.print.html`
 >
->Mediante la globalización de secuencias de comandos de la definición de la plantilla, puede especificar una secuencia de comandos independiente que procese las páginas de impresión.
+>Utilizando el script globbing de la definición de la plantilla, puede especificar un script separado que procese las páginas imprimidas.
 
-#### Invalidación de archivos de imagen utilizados como títulos {#invalidating-image-files-used-as-titles}
+#### Invalidar archivos de imagen utilizados como títulos {#invalidating-image-files-used-as-titles}
 
-Si procesa títulos de páginas u otro texto como imágenes, se recomienda almacenar los archivos para que se eliminen tras actualizar el contenido en la página:
+Si procesa títulos de páginas u otros textos como imágenes, se recomienda almacenar los archivos para que se eliminen tras actualizar el contenido de la página:
 
 1. Coloque el archivo de imagen en la misma carpeta que la página.
 1. Utilice el siguiente formato de nomenclatura para el archivo de imagen:
 
    `<page file name>.<image file name>`
 
-Por ejemplo, puede almacenar el título de la página `myPage.html` en `file myPage.title.gif`. Este archivo se elimina automáticamente si se actualiza la página, por lo que cualquier cambio en el título de la página se refleja automáticamente en la caché.
+Por ejemplo, puede almacenar el título de la página `myPage.html` en `file myPage.title.gif`. Este archivo se eliminará automáticamente si se actualiza la página, por lo que cualquier cambio en el título de la página se reflejará automáticamente en la caché.
 
 >[!NOTE]
 >
->El archivo de imagen no existe necesariamente físicamente en la instancia de AEM. Puede utilizar una secuencia de comandos que cree dinámicamente el archivo de imagen. A continuación, Dispatcher almacena el archivo en el servidor web.
+>El archivo de imagen no existe necesariamente físicamente en la instancia de AEM. Puede utilizar un script que cree dinámicamente el archivo de imagen. A continuación, Dispatcher almacenará el archivo en el servidor web.
 
-#### Invalidación de archivos de imagen utilizados para la navegación {#invalidating-image-files-used-for-navigation}
+#### Invalidar archivos de imagen utilizados para la navegación {#invalidating-image-files-used-for-navigation}
 
-Si utiliza imágenes para las entradas de navegación, el método es básicamente el mismo que con títulos, un poco más complejo. Almacene todas las imágenes de navegación con las páginas de destino. Si utiliza dos imágenes para normal y activo, puede utilizar las siguientes secuencias de comandos:
+Si utiliza imágenes para las entradas de navegación, el método es básicamente el mismo que con los títulos, un poco más complejo. Almacene todas las imágenes de navegación con las páginas de destino. Si utiliza dos imágenes para la normal y la activa, puede utilizar los siguientes scripts:
 
-* Secuencia de comandos que muestra la página como de costumbre.
-* Secuencia de comandos que procesa las solicitudes &quot;.normal&quot; y devuelve la imagen normal.
-* Secuencia de comandos que procesa las solicitudes &quot;.active&quot; y devuelve la imagen activada.
+* Scripts que muestra la página normal.
+* Scripts que procesa las solicitudes &quot;.normal&quot; y devuelve la imagen normal.
+* Scripts que procesa las solicitudes &quot;.active&quot; y devuelve la imagen activa.
 
 Es importante crear estas imágenes con el mismo nombre que la página, para garantizar que una actualización de contenido elimine estas imágenes, así como la página.
 
-En las páginas que no se modifican, las imágenes permanecen en la caché, aunque las páginas en sí suelen invalidarse automáticamente.
+En las páginas que no se modifiquen, las imágenes permanecerán en la caché, aunque las páginas en sí suelen invalidarse automáticamente.
 
 #### Personalización {#personalization}
 
-Se recomienda limitar la personalización a donde sea necesario. Para ilustrar por qué:
+Se recomienda limitar la personalización a donde sea necesario. Para explicar por qué:
 
-* Si utiliza una página de inicio personalizable libremente, esa página debe estar compuesta cada vez que un usuario la solicite.
-* Si, por el contrario, ofrece una opción de 10 páginas de inicio diferentes, puede almacenar en caché cada una de ellas, lo que mejora el rendimiento.
+* Si utiliza una página de inicio personalizable libremente, esa página deberá estar compuesta cada vez que un usuario la solicite.
+* Si, por el contrario, ofrece una opción de 10 páginas de inicio diferentes, puede almacenar en caché cada una de ellas, mejorando el rendimiento.
 
 >[!TIP]
 >Para obtener más información sobre la configuración de la caché de Dispatcher, consulte el [AEM Tutorial de caché de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) y su sección sobre [Contenido protegido en caché.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
@@ -627,32 +624,32 @@ Con respecto a la mezcla de contenido restringido y público en una página, es 
 >
 >Para gestionar contenido mixto público y restringido, consulte [Configuración de Sling Dynamic Include.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
-#### Conexiones adhesivas {#sticky-connections}
+#### Conexiones fijas {#sticky-connections}
 
-[Conexión ](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) adhesiva, asegúrese de que los documentos de un usuario están todos compuestos en el mismo servidor. Si un usuario abandona esta carpeta y más tarde vuelve a ella, la conexión se mantiene. Defina una carpeta para guardar todos los documentos que requieran conexiones duraderas para el sitio web. Intente no tener otros documentos en él. Esto afecta al equilibrio de carga si utiliza páginas personalizadas y datos de sesión.
+[Las conexiones fijas](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) garantizan que todos los documentos de un usuario se compongan en el mismo servidor. Si un usuario abandona esta carpeta y más tarde vuelve a ella, la conexión se mantiene. Defina una carpeta para guardar todos los documentos que requieran conexiones fijas para el sitio web. Intente no meter otros documentos en ella. Esto es importante si utiliza páginas personalizadas y datos de sesión.
 
 #### Tipos MIME {#mime-types}
 
-Existen dos maneras en que un explorador puede determinar el tipo de archivo:
+Existen dos maneras en las que un explorador puede determinar el tipo de archivo:
 
 1. Por su extensión (p. ej. `.html`, `.gif`, `.jpg`, etc.)
-1. Por el tipo MIME que el servidor envía con el archivo .
+1. Por el tipo MIME que el servidor envía con el archivo.
 
-Para la mayoría de los archivos, el tipo MIME está implícito en la extensión de archivo. i.e.:
+Para la mayoría de los archivos, el tipo MIME está implícito en la extensión del archivo. es decir:
 
 1. Por su extensión (p. ej. `.html`, `.gif`, `.jpg`, etc.)
-1. Por el tipo MIME que el servidor envía con el archivo .
+1. Por el tipo MIME que el servidor envía con el archivo.
 
-Si el nombre del archivo no tiene extensión, se muestra como texto sin formato.
+Si el nombre del archivo no tiene extensión, se mostrará como texto sin formato.
 
 Con la versión 4.1.11 de Dispatcher puede almacenar en caché los encabezados de respuesta. Si no almacena en caché los encabezados de respuesta en Dispatcher, tenga en cuenta que el tipo MIME forma parte del encabezado HTTP. Por lo tanto, si la aplicación AEM devuelve archivos que no tienen un final de archivo reconocido y dependen del tipo MIME en su lugar, estos archivos pueden mostrarse incorrectamente.
 
 Para asegurarse de que los archivos se almacenan en caché correctamente, siga estas directrices:
 
 * Asegúrese de que los archivos siempre tengan la extensión adecuada.
-* Evite las secuencias de comandos genéricas del servidor de archivos, que tienen direcciones URL como `download.jsp?file=2214`. Vuelva a escribir la secuencia de comandos para utilizar las direcciones URL que contengan la especificación del archivo. Para el ejemplo anterior, sería `download.2214.pdf`.
+* Evite los scripts genéricos del servidor de archivos, que tienen direcciones URL como `download.jsp?file=2214`. Vuelva a escribir la secuencia de comandos para utilizar las direcciones URL que contengan la especificación del archivo. Para el ejemplo anterior, sería `download.2214.pdf`.
 
-## Rendimiento de Backup {#backup-performance}
+## Rendimiento de copia de seguridad {#backup-performance}
 
 Esta sección presenta una serie de puntos de referencia utilizados para evaluar el performance de los backups AEM y los efectos de la actividad de backup en el performance de las aplicaciones. AEM copias de seguridad presentan una carga significativa en el sistema mientras se ejecuta, y lo medimos, así como los efectos de la configuración de demora de copia de seguridad que intenta modular estos efectos. El objetivo es ofrecer algunos datos de referencia sobre el rendimiento esperado de los backups en configuraciones realistas y cantidades de datos de producción, y proporcionar orientación sobre cómo estimar los tiempos de backup para sistemas planificados.
 
@@ -701,7 +698,7 @@ El impacto de la carga en el performance del backup puede estimarse por la difer
 * **Configuración de retraso** : para varias situaciones, también variamos la configuración de demora de la copia de seguridad, utilizando valores de 10 ms (predeterminado), 1 ms y 0 ms, para explorar cómo esta configuración afectó el rendimiento de las copias de seguridad.
 * **Tipo de copia de seguridad** : todas las copias de seguridad eran copias de seguridad externas del repositorio realizadas en un directorio de copia de seguridad sin crear un zip, excepto en un caso para comparación en el que el comando tar se utilizaba directamente. Dado que las copias de seguridad incrementales no se pueden crear en un archivo zip, o cuando la copia de seguridad completa previa es un archivo zip, el método de directorio de copia de seguridad es el más utilizado en situaciones de producción.
 
-### Resumen de resultados {#summary-of-results}
+### Resumen de los resultados {#summary-of-results}
 
 #### Tiempo y Rendimiento de Backup {#backup-time-and-throughput}
 
