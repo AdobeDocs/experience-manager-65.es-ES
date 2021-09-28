@@ -1,8 +1,8 @@
 ---
 title: Configuración de notificaciones por correo electrónico
-seo-title: Configuración de notificaciones por correo electrónico
+seo-title: Configuring Email Notification
 description: Obtenga información sobre cómo configurar la notificación de correo electrónico en AEM.
-seo-description: Obtenga información sobre cómo configurar la notificación de correo electrónico en AEM.
+seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 2a866e82a059184ea86f22646e4a20406ad109e8
+source-git-commit: 1ae4e3b898f1d0a27fa72a7d8db01f638d4c6f7a
 workflow-type: tm+mt
-source-wordcount: '2097'
-ht-degree: 1%
+source-wordcount: '2086'
+ht-degree: 2%
 
 ---
 
-# Configuración de notificación de correo electrónico{#configuring-email-notification}
+# Configuración de notificaciones por correo electrónico{#configuring-email-notification}
 
 AEM envía notificaciones por correo electrónico a los usuarios que:
 
@@ -90,11 +90,11 @@ La configuración predeterminada tiene el siguiente aspecto en la consola web:
 
 ![chlimage_1-277](assets/chlimage_1-277.png)
 
-### Plantillas de correo electrónico para notificación de página {#email-templates-for-page-notification}
+### Plantillas de correo electrónico para notificaciones de página {#email-templates-for-page-notification}
 
 A continuación se describen las plantillas de correo electrónico para las notificaciones de página:
 
-`/etc/notification/email/default/com.day.cq.wcm.core.page`
+`/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
 La plantilla predeterminada en inglés ( `en.txt`) se define de la siguiente manera:
 
@@ -115,13 +115,13 @@ footer=\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### Personalización de plantillas de correo electrónico para notificación de página {#customizing-email-templates-for-page-notification}
+#### Personalización de plantillas de correo electrónico para notificaciones de página {#customizing-email-templates-for-page-notification}
 
 Para personalizar la plantilla de correo electrónico en inglés para la notificación de página:
 
 1. En CRXDE, abra el archivo :
 
-   `/etc/notification/email/default/com.day.cq.wcm.core.page/en.txt`
+   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
 1. Modifique el archivo según sus necesidades.
 1. Guarde los cambios.
@@ -150,7 +150,7 @@ Donde &lt;text_x> puede ser una mezcla de texto estático y variables de cadena 
 
    PageModified => /content/geometrixx/en/products
 
-### Plantillas de correo electrónico para la notificación de foro {#email-templates-for-forum-notification}
+### Plantillas de correo electrónico para la notificación del foro {#email-templates-for-forum-notification}
 
 Las plantillas de correo electrónico para las notificaciones del foro se encuentran en:
 
@@ -205,7 +205,7 @@ En la plantilla de correo electrónico para las notificaciones del foro se puede
 
 La plantilla de correo electrónico para las notificaciones de flujo de trabajo (en inglés) se encuentra en:
 
-`/etc/workflow/notification/email/default/en.txt`
+`/libs/settings/workflow/notification/email/default/en.txt`
 
 Se define de la siguiente manera:
 
@@ -234,7 +234,7 @@ Para personalizar la plantilla de correo electrónico en inglés para la notific
 
 1. En CRXDE, abra el archivo :
 
-   `/etc/workflow/notification/email/default/en.txt`
+   `/libs/settings/workflow/notification/email/default/en.txt`
 
 1. Modifique el archivo según sus necesidades.
 1. Guarde los cambios.
@@ -292,9 +292,9 @@ Para añadir una plantilla para un nuevo idioma:
 
 1. En CRXDE, añada un archivo `<language-code>.txt` a continuación:
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` : para notificaciones de página
+   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : para notificaciones de página
    * `/etc/notification/email/default/com.day.cq.collab.forum` : para notificaciones de foro
-   * `/etc/workflow/notification/email/default` : para notificaciones de flujo de trabajo
+   * `/libs/settings/workflow/notification/email/default` : para notificaciones de flujo de trabajo
 
 1. Adapte el archivo al idioma.
 1. Guarde los cambios.
