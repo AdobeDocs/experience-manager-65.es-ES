@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: fb14c1901394198de59c2369563a9dcca2f95f4e
+source-git-commit: 6930d3f6449c8ebd18214c96ddec0bcb61b998c8
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2209'
 ht-degree: 4%
 
 ---
@@ -88,14 +88,14 @@ Para ello, debe especificar la configuración de nube de A4T con la que conectar
    >Al configurar A4T con AEM, es posible que vea una entrada que falta en una referencia de configuración. Para poder seleccionar el marco de análisis, haga lo siguiente:
    >
    >1. Vaya a **Tools** > **General** > **CRXDE Lite**.
-   1. Vaya a [1] (consulte a continuación)
+   1. Vaya al [Cuadro de diálogo de configuración de A4T Analytics](#a4t-analytics-config-dialog) (consulte a continuación)
    1. Establezca la propiedad **disable** en **false**.
    1. Toque o haga clic en **Guardar todo**.
 
 
-[1]
+#### Cuadro de diálogo Configuración de A4T Analytics {#a4t-analytics-config-dialog}
 
-```
+```xml
 /libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
 ```
 
