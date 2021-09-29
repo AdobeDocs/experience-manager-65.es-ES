@@ -1,8 +1,8 @@
 ---
 title: Consultas e indexación de Oak
-seo-title: Consultas e indexación de Oak
+seo-title: Oak Queries and Indexing
 description: Aprenda a configurar índices en AEM.
-seo-description: Aprenda a configurar índices en AEM.
+seo-description: Learn how to configure indexes in AEM.
 uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
+source-git-commit: 7cd4b6918a8b0de68f9f5c6a79ab3b49e8ef6fc1
 workflow-type: tm+mt
-source-wordcount: '2881'
+source-wordcount: '2868'
 ht-degree: 1%
 
 ---
-
 
 # Consultas e indexación de Oak{#oak-queries-and-indexing}
 
@@ -36,7 +35,7 @@ Si Oak encuentra una consulta sin un índice, se imprime un mensaje de registro 
 *WARN* Traversed 1000 nodes with filter Filter(query=select ...) consider creating an index or changing the query
 ```
 
-## Lenguajes de consulta admitidos {#supported-query-languages}
+## Idiomas de consulta admitidos {#supported-query-languages}
 
 El motor de consulta Oak admite los siguientes idiomas:
 
@@ -71,7 +70,7 @@ A continuación, se consulta cada índice para estimar el coste de la consulta. 
 >
 >Para un repositorio grande, la creación de un índice es una operación que lleva mucho tiempo. Esto se aplica tanto a la creación inicial de un índice como a la reindexación (reconstrucción de un índice después de cambiar la definición). Consulte también [Resolución de problemas de los índices Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) y [Prevención de la reindexación lenta](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
-Si es necesario reindexar en repositorios muy grandes, especialmente cuando se utiliza MongoDB y para índices de texto completo, considere la preextracción de texto y el uso de oak-run para crear el índice inicial y reindexar.
+Si es necesario volver a indexar en repositorios muy grandes, especialmente cuando se utiliza MongoDB y para índices de texto completo, considere la preextracción de texto, y el uso de oak-run para crear el índice inicial y reindexar.
 
 Los índices se configuran como nodos en el repositorio bajo el nodo **oak:index**.
 
@@ -102,7 +101,7 @@ El índice de propiedades tiene las siguientes opciones de configuración:
 * El indicador **único** que, si se establece en **true** agrega una restricción de exclusividad en el índice de propiedades.
 
 * La propiedad **declaringNodeTypes** permite especificar un determinado tipo de nodo al que solo se aplicará el índice.
-* El indicador **reindex**, que si se establece en **true**, déclencheur un reíndice de contenido completo.
+* El indicador **reindex**, que si se establece en **true**, déclencheur un reindexado de contenido completo.
 
 ### Índice solicitado {#the-ordered-index}
 
@@ -158,19 +157,19 @@ Una vez creado el nodo, añada las siguientes propiedades:
 
 * **tipo:**
 
-   ```
+   ```xml
    lucene (of type String)
    ```
 
 * **asíncrona:**
 
-   ```
+   ```xml
    async (of type String)
    ```
 
 * **fulltextEnabled:**
 
-   ```
+   ```xml
    false (of type Boolean)
    ```
 
@@ -291,11 +290,11 @@ La integración en AEM ocurre a nivel del repositorio, de modo que Solr es uno d
 
 Se puede configurar para que funcione como servidor incrustado con la instancia de AEM o como servidor remoto.
 
-### Configuración de AEM con un servidor Solr integrado {#configuring-aem-with-an-embedded-solr-server}
+### Configuración de AEM con un servidor Solr incrustado {#configuring-aem-with-an-embedded-solr-server}
 
 >[!CAUTION]
 >
->No utilice un servidor Solr incrustado en un entorno de producción. Solo debe utilizarse en un entorno de desarrollo.
+>No utilice un servidor Solr incrustado en un entorno de producción. Debe utilizarse únicamente en un entorno de desarrollo.
 
 AEM se puede utilizar con un servidor Solr incrustado que se puede configurar mediante la consola web. En este caso, el servidor Solr se ejecutará en la misma JVM que la instancia de AEM a la que está incrustado.
 
@@ -322,10 +321,10 @@ Puede configurar el servidor Solr incrustado de:
 
 ### Configuración de AEM con un único servidor Solr remoto {#configuring-aem-with-a-single-remote-solr-server}
 
-También se AEM configurar para que funcione con una instancia de servidor Solr remoto:
+AEM también se puede configurar para que funcione con una instancia de servidor Solr remoto:
 
 1. Descargue y extraiga la última versión de Solr. Para obtener más información sobre cómo hacerlo, consulte la [documentación de instalación de Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
-1. Ahora, cree dos fragmentos de Solr. Para ello, puede crear carpetas para cada elemento compartido en la carpeta en la que se ha realizado el seguimiento de Solr:
+1. Ahora, cree dos fragmentos de Solr. Puede hacerlo creando carpetas para cada elemento compartido en la carpeta en la que se ha desempaquetado Solr:
 
    * Para el primer uso compartido, cree la carpeta :
 
@@ -385,7 +384,7 @@ También se AEM configurar para que funcione con una instancia de servidor Solr 
 
 #### Configuración recomendada para Solr {#recommended-configuration-for-solr}
 
-A continuación se muestra un ejemplo de una configuración base que se puede utilizar con las tres implementaciones de Solr descritas en este artículo. Aloja los índices de propiedades dedicados que ya están presentes en AEM y no deben usarse con otras aplicaciones.
+A continuación se muestra un ejemplo de una configuración base que se puede utilizar con las tres implementaciones de Solr descritas en este artículo. Se adapta a los índices de propiedades específicos que ya están presentes en AEM y no deben usarse con otras aplicaciones.
 
 Para utilizarlo correctamente, debe colocar el contenido del archivo directamente en Solr Home Directory. En el caso de implementaciones de varios nodos, debe ir directamente debajo de la carpeta raíz de cada nodo.
 
@@ -424,7 +423,7 @@ La forma más sencilla de obtener la información necesaria para la consulta que
 
 Si esto no es posible por ningún motivo, puede recopilar los registros de indexación en un solo archivo y utilizarlos para solucionar su problema en particular.
 
-#### Habilitar el registro {#enable-logging}
+#### Habilitar registro {#enable-logging}
 
 Para habilitar el registro, debe habilitar los registros de nivel **DEBUG** para las categorías pertenecientes a la indexación y las consultas de Oak. Estas categorías son:
 
@@ -458,7 +457,7 @@ Como en la mayoría de los casos, la configuración de indexación se almacena e
 
 Si el índice está configurado en una ubicación diferente, cambie la ruta en consecuencia.
 
-#### MBean output {#mbean-output}
+#### Salida MBean {#mbean-output}
 
 En algunos casos, es útil proporcionar el resultado de MBeans relacionados con el índice para la depuración. Para ello:
 
@@ -489,4 +488,3 @@ Puede recopilar detalles adicionales para ayudar a solucionar el problema, como 
 
 1. La versión Oak en la que se está ejecutando la instancia. Para verlo, abra CRXDE y observe la versión en la esquina inferior derecha de la página de bienvenida o compruebe la versión del paquete `org.apache.jackrabbit.oak-core`.
 1. El resultado de QueryBuilder Debugger de la consulta problemática. Se puede acceder al depurador en: `https://serveraddress:port/libs/cq/search/content/querydebug.html`
-
