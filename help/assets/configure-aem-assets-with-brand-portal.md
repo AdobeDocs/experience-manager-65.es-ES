@@ -12,7 +12,7 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: d995173140237f34a03c8e84128ad9d657c9a026
+source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
 workflow-type: tm+mt
 source-wordcount: '2053'
 ht-degree: 10%
@@ -66,7 +66,7 @@ Para configurar AEM Assets con Brand Portal, es necesario lo siguiente:
 
 Se recomienda tener AEM 6.5 para configurar una instancia de autor AEM. Si no tiene AEM en funcionamiento, descárguelo desde las siguientes ubicaciones:
 
-* Si ya es cliente de AEM, descargue AEM 6.5 del [sitio web de licencias de Adobe](http://licensing.adobe.com).
+* Si ya es cliente de AEM, descargue AEM 6.5 del [sitio web de licencias de Adobe](https://licensing.adobe.com).
 
 * Si es socio de Adobe, utilice el [Programa de formación de socios de Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) para solicitar AEM 6.5.
 
@@ -118,9 +118,9 @@ La clave pública (certificado) autentica el perfil en Adobe Developer Console.
 
 1. Inicie sesión en la instancia de autor de AEM Assets. La dirección URL predeterminada es `http://localhost:4502/aem/start.html`.
 
-1. En el panel **Herramientas** ![Herramientas](assets/do-not-localize/tools.png), vaya a **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**.
+1. En el panel **Herramientas** ![Herramientas](assets/do-not-localize/tools.png), vaya a **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de Adobe IMS]**.
 
-1. En la página Configuraciones de IMS de Adobe, haga clic en **[!UICONTROL Crear]**. Se redirigirá a la página **[!UICONTROL Configuración de cuenta técnica de IMS de Adobe]**. De forma predeterminada, se abre la pestaña **Certificate**.
+1. En la página Configuraciones de IMS de Adobe, haga clic en **[!UICONTROL Crear]**. Se redirigirá a la página **[!UICONTROL Configuración de cuenta técnica de Adobe IMS]**. De forma predeterminada, se abre la pestaña **Certificate**.
 
 1. Seleccione **[!UICONTROL Adobe Brand Portal]** en la lista desplegable **[!UICONTROL Solución de nube]**.
 
@@ -138,7 +138,7 @@ La clave pública (certificado) autentica el perfil en Adobe Developer Console.
 
 1. Haga clic en **[!UICONTROL Siguiente]**. 
 
-   En la pestaña **Account**, se crea la cuenta IMS de Adobe, que requiere las credenciales de cuenta de servicio que se generan en Adobe Developer Console. Mantenga esta página abierta por ahora.
+   En la pestaña **Account**, se crea la cuenta de Adobe IMS, que requiere las credenciales de cuenta de servicio que se generan en Adobe Developer Console. Mantenga esta página abierta por ahora.
 
    Abra una nueva pestaña y [cree una conexión de cuenta de servicio (JWT) en Adobe Developer Console](#createnewintegration) para obtener las credenciales y la carga útil JWT para configurar la cuenta de IMS.
 
