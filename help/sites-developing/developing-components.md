@@ -1,8 +1,8 @@
 ---
 title: Desarrollo de componentes AEM
-seo-title: Desarrollo de componentes AEM
+seo-title: Developing AEM Components
 description: AEM componentes se utilizan para guardar, dar formato y procesar el contenido disponible en las páginas web.
-seo-description: AEM componentes se utilizan para guardar, dar formato y procesar el contenido disponible en las páginas web.
+seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 uuid: 1f39daa6-7277-45a2-adcc-74b58c93b8e4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,15 +12,14 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: f2a208acfa28f23cbf63d055c5d28698df476892
 workflow-type: tm+mt
-source-wordcount: '3533'
-ht-degree: 1%
+source-wordcount: '3485'
+ht-degree: 2%
 
 ---
 
-# Desarrollo de componentes de AEM{#developing-aem-components}
+# Desarrollo de componentes AEM{#developing-aem-components}
 
 AEM componentes se utilizan para guardar, dar formato y procesar el contenido disponible en las páginas web.
 
@@ -132,11 +131,9 @@ Los cuadros de diálogo se utilizan para permitir que el autor interactúe con e
 
 ### Interfaz de usuario de Coral y Granite {#coral-ui-and-granite-ui}
 
-[La ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) interfaz de usuario de Coral y la  [interfaz de usuario de ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) Granite definen el aspecto moderno de AEM.
+[La ](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) interfaz de usuario de Coral y la  [interfaz de usuario de ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) Granite definen el aspecto moderno de AEM.
 
 [La interfaz de usuario de Granite proporciona una amplia gama de componentes básicos (widgets)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)  necesarios para crear el cuadro de diálogo en el entorno de creación. Si es necesario, puede ampliar esta selección y [crear su propio widget](#creatinganewwidget).
-
-Para obtener más información sobre el desarrollo de componentes mediante los tipos de recursos de Coral y Granite, consulte: [Generación de componentes de Experience Manager utilizando tipos de recursos de Coral/Granite](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html).
 
 Para obtener más información, consulte:
 
@@ -207,7 +204,6 @@ Para ver ejemplos, consulte:
 >
 
 
-
 #### Creación de un nuevo campo {#creating-a-new-field}
 
 Las utilidades de la IU táctil se implementan como componentes de Granite UI.
@@ -230,7 +226,7 @@ Más específicamente, la interfaz de usuario de Granite proporciona una serie d
 
 Una vez creado el tipo de recurso, puede crear una instancia del campo añadiendo un nuevo nodo en el cuadro de diálogo. La propiedad `sling:resourceType` hace referencia al tipo de recurso que acaba de introducir.
 
-#### Creación de una biblioteca de cliente para estilo y comportamiento {#creating-a-client-library-for-style-and-behavior}
+#### Creación de una biblioteca de cliente para estilos y comportamientos {#creating-a-client-library-for-style-and-behavior}
 
 Si desea definir el estilo y el comportamiento de su componente, puede crear una [biblioteca de cliente](/help/sites-developing/clientlibs.md) dedicada que defina su CSS/LESS y JS personalizados.
 
@@ -251,7 +247,7 @@ Según sus necesidades, puede:
 * Ampliar un campo de interfaz de usuario de Granite determinado por herencia de componentes ( `sling:resourceSuperType`)
 * Ampliar un widget determinado desde la biblioteca de widgets subyacente (en el caso de la interfaz de usuario de Granite, esta es Coral UI), siguiendo la API de biblioteca de utilidades (herencia de JS/CSS)
 
-#### Acceso a los campos de cuadro de diálogo {#access-to-dialog-fields}
+#### Acceso a campos de cuadro de diálogo {#access-to-dialog-fields}
 
 También puede utilizar condiciones de renderización ( `rendercondition`) para controlar quién tiene acceso a pestañas/campos específicos en el cuadro de diálogo; por ejemplo:
 
@@ -288,7 +284,7 @@ En la IU clásica con ExtJS, era habitual tener oyentes para un widget determina
 
 La estructura de contenido describe la estructura semántica; no debe implicar la naturaleza del widget subyacente. Al no tener código JS en la estructura de contenido, puede cambiar los detalles de implementación sin tener que cambiar la estructura de contenido. En otras palabras, puede cambiar la biblioteca de utilidades sin necesidad de tocar la estructura de contenido.
 
-#### Detección de disponibilidad del cuadro de diálogo {#dialog-ready}
+#### Detección de la disponibilidad del cuadro de diálogo {#dialog-ready}
 
 Si tiene un JavaScript personalizado que debe ejecutarse únicamente cuando el cuadro de diálogo esté disponible y listo, debe escuchar el evento `dialog-ready` .
 
@@ -340,7 +336,7 @@ Un editor in situ no es necesario ni significativo para cada tipo de componente.
 
 Consulte [Ampliación de la creación de páginas: agregar nuevo editor in situ](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor) para obtener más información.
 
-## Personalización de la barra de herramientas de componentes {#customizing-the-component-toolbar}
+## Personalización de la barra de herramientas del componente {#customizing-the-component-toolbar}
 
 La [barra de herramientas de componentes](/help/sites-developing/touch-ui-structure.md#component-toolbar) proporciona al usuario acceso a una serie de acciones para el componente, como editar, configurar, copiar y eliminar.
 
@@ -476,7 +472,7 @@ Al migrar un componente diseñado para su uso con la IU clásica a un componente
    * Migración de tipos a [Granite UI validation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
    * Con los oyentes JS, para obtener más información, consulte [Gestión de eventos de campo](#handling-field-events) y la sesión de Gems de AEM en [Personalización de campos de diálogo](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
-### Migración del código cq:listener {#migrating-cq-listener-code}
+### Migración de código cq:listener {#migrating-cq-listener-code}
 
 Si está migrando un proyecto diseñado para la IU clásica, el código `cq:listener` (y clientlibs relacionados con componentes) pueden utilizar funciones específicas de la IU clásica (como `CQ.wcm.*`). Para la migración, debe actualizar dicho código utilizando los objetos o funciones equivalentes en la IU táctil.
 
@@ -494,7 +490,7 @@ if (Granite.author) {
 }
 ```
 
-## Documentación del componente {#documenting-your-component}
+## Documentar el componente {#documenting-your-component}
 
 Como desarrollador, desea acceder fácilmente a la documentación de componentes para que pueda comprender rápidamente:
 
