@@ -1,8 +1,8 @@
 ---
 title: Autenticación IMS de Adobe y [!DNL Admin Console] compatibilidad con AEM Managed Services
-seo-title: Autenticación IMS de Adobe y [!DNL Admin Console] compatibilidad con AEM Managed Services
+seo-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
 description: Aprenda a utilizar el  [!DNL Admin Console] en AEM.
-seo-description: Aprenda a utilizar el  [!DNL Admin Console] en AEM.
+seo-description: Learn how to use the [!DNL Admin Console] in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 3f55ebfe3b1603a573fcb77155227c449c6c0fbb
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1688'
 ht-degree: 11%
 
 ---
@@ -25,9 +24,13 @@ ht-degree: 11%
 >
 >Tenga en cuenta que esta función solo está disponible para los clientes de Adobe Managed Services.
 
+>[!NOTE]
+>
+>El inicio de sesión de IMS para AEM no admite grupos anidados en el Admin Console.
+
 ## Introducción {#introduction}
 
-AEM 6.4.3.0 presenta compatibilidad con [!DNL Admin Console] instancias de AEM y autenticación basada en el IMS de Adobe (Sistema Identity Management) para clientes de **AEM Managed Services**.
+AEM 6.4.3.0 introduce compatibilidad con [!DNL Admin Console] instancias de AEM y autenticación basada en Adobe IMS (Identity Management System) para clientes de **AEM Managed Services**.
 
 AEM incorporación a [!DNL Admin Console] permitirá a AEM clientes de Managed Services administrar todos los usuarios Experience Cloud en una consola. Los usuarios y grupos se pueden asignar a perfiles de producto asociados con instancias de AEM, lo que les permite iniciar sesión en una instancia específica.
 
@@ -53,7 +56,7 @@ El flujo de inicio de sesión del usuario se muestra a continuación; se redirig
 
 ### Incorporación de organizaciones a [!DNL Admin Console] {#onboarding-organizations-to-admin-console}
 
-La incorporación del cliente a [!DNL Admin Console] es un requisito previo para utilizar IMS de Adobe para AEM autenticación.
+La incorporación del cliente a [!DNL Admin Console] es un requisito previo para utilizar Adobe IMS para la autenticación AEM.
 
 Como primer paso, los clientes deben tener una organización aprovisionada en Adobe IMS. Los clientes de Adobe Enterprise están representados como organizaciones de IMS en el [Adobe [!DNL Admin Console]](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
 
@@ -85,7 +88,7 @@ Existen tres formas de integrar a los usuarios en función del tamaño del clien
 1. Cargar un archivo CSV con usuarios
 1. Sincronice usuarios y grupos desde Active Directory empresarial del cliente.
 
-#### Adición manual a través de la [!DNL Admin Console] IU {#manual-addition-through-admin-console-ui}
+#### Adición manual a través de la interfaz de usuario [!DNL Admin Console] {#manual-addition-through-admin-console-ui}
 
 Los usuarios y grupos se pueden crear manualmente en la interfaz de usuario de [!DNL Admin Console]. Este método se puede utilizar si no tienen un gran número de usuarios que administrar. Por ejemplo, un número menor de 50 usuarios AEM.
 
@@ -93,7 +96,7 @@ Los usuarios también se pueden crear manualmente si el cliente ya está utiliza
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
-#### Carga de archivos en la [!DNL Admin Console] interfaz de usuario {#file-upload-in-the-admin-console-ui}
+#### Carga de archivos en la interfaz de usuario de [!DNL Admin Console] {#file-upload-in-the-admin-console-ui}
 
 Para facilitar la gestión de la creación de usuarios, se puede cargar un archivo CSV para agregar usuarios de forma masiva:
 
@@ -163,7 +166,7 @@ Los usuarios y grupos agregados bajo este perfil de producto pueden iniciar sesi
 
 ![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png)
 
-### Iniciando sesión en AEM {#logging-into-aem}
+### Iniciar sesión en AEM {#logging-into-aem}
 
 #### Inicio de sesión de administrador local {#local-admin-login}
 
