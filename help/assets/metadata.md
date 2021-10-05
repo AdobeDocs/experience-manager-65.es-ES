@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
 source-wordcount: '2336'
 ht-degree: 11%
@@ -29,9 +29,9 @@ Los metadatos son información adicional sobre el recurso que se puede buscar. S
 
 Se pueden utilizar los siguientes métodos para añadir metadatos a recursos digitales:
 
-* Para empezar, las aplicaciones nativas que crean recursos le añaden algunos metadatos. Por ejemplo, [Acrobat agrega algunos metadatos](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) a archivos PDF o una cámara agrega algunos metadatos básicos a las fotografías. Al generar recursos, puede añadir los metadatos en las propias aplicaciones nativas. Por ejemplo, puede [añadir metadatos IPTC en Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
+* Para empezar, las aplicaciones nativas que crean recursos le añaden algunos metadatos. Por ejemplo, [Acrobat agrega algunos metadatos](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) a los archivos PDF o una cámara agrega algunos metadatos básicos a las fotografías. Al generar recursos, puede añadir los metadatos en las propias aplicaciones nativas. Por ejemplo, puede [añadir metadatos IPTC en Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Antes de cargar un recurso en [!DNL Experience Manager], puede editar y modificar los metadatos mediante la aplicación nativa utilizada para crear un recurso o utilizando otra aplicación de edición de metadatos. Al cargar un recurso en el Experience Manager, se procesan los metadatos. Por ejemplo, consulte cómo [trabajar con metadatos en [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) y vea el panel [etiquetas para [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) en [!DNL Adobe Exchange].
+* Antes de cargar un recurso en [!DNL Experience Manager], puede editar y modificar los metadatos mediante la aplicación nativa utilizada para crear un recurso o utilizando otra aplicación de edición de metadatos. Al cargar un recurso en el Experience Manager, se procesan los metadatos. Por ejemplo, consulte cómo [trabajar con metadatos en [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) y vea el panel [etiquetas para [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) en [!DNL Adobe Exchange].
 
 * En [!DNL Experience Manager Assets], puede añadir o editar manualmente los metadatos de los recursos en la página [!UICONTROL Propiedades].
 
@@ -234,7 +234,7 @@ Puede quitar un perfil de metadatos de una carpeta desde el menú **[!UICONTROL 
 >
 >* [Conceptos y comprensión de metadatos](metadata-concepts.md).
 >* [Editar propiedades de metadatos de varias colecciones](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importación y exportación de metadatos en Recursos de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Importación y exportación de metadatos en Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
