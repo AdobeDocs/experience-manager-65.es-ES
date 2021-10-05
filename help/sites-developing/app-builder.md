@@ -1,7 +1,7 @@
 ---
 title: Ampliación [!DNL Adobe Experience Manager] 6.5 mediante el Adobe Developer App Builder.
 description: Ampliación [!DNL Adobe Experience Manager] 6.5 mediante el Adobe Developer App Builder.
-source-git-commit: aab7d4aaf11b6aef3b729f906259a76c152fd6f0
+source-git-commit: e6153e1a816bb9169f96fa75827593485a6ddbd4
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -42,26 +42,26 @@ El diagrama siguiente ilustra cómo una aplicación estándar creada en App Buil
 
 ![Arquitectura](assets/firefly-architecture.jpg)
 
-Para obtener más información sobre la arquitectura de App Builder, consulte [Información general de arquitectura](https://www.adobe.io/project-firefly/docs/guides/).
+Para obtener más información sobre la arquitectura de App Builder, consulte [Información general de arquitectura](https://www.adobe.io/app-builder/docs/guides/).
 
 ## Introducción a App Builder {#additional-resources}
 
 Para ayudarle a empezar con App Builder, hemos creado una serie de documentación para ayudarle a empezar:
 
-* [Introducción a App Builder](https://www.adobe.io/project-firefly/docs/getting_started/)
+* [Introducción a App Builder](https://www.adobe.io/app-builder/docs/getting_started/)
 
 ## Continuar aprendiendo con la documentación {#appbuilder-documentation}
 
 App Builder proporciona vídeos y documentación para desarrolladores, incluidas guías, y documentación de referencia para ayudarle a empezar a desarrollar sus propias aplicaciones personalizadas:
 
-* [Documentación de App Builder](https://www.adobe.io/project-firefly/docs/overview/)
+* [Documentación de App Builder](https://www.adobe.io/app-builder/docs/overview/)
 * [Vídeos de App Builder](https://www.youtube.com/playlist?list=PLcVEYUqU7VRfDij-Jbjyw8S8EzW073F_o)
 
 ## Pruebe una de las aplicaciones de ejemplo {#appbuilder-codesamples}
 
 ¿Listo para empezar a desarrollarse? Tenemos muchas aplicaciones de ejemplo para ayudarle a ponerse en marcha rápidamente:
 
-* [Etiquetas de código de App Builder en el sitio web del desarrollador de Adobe](https://www.adobe.io/project-firefly/docs/resources/)
+* [Etiquetas de código de App Builder en el sitio web del desarrollador de Adobe](https://www.adobe.io/app-builder/docs/resources/)
 
 ## Asistencia {#support}
 
