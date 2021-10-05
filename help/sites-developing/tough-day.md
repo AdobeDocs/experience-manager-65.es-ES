@@ -1,8 +1,8 @@
 ---
 title: Día duro
-seo-title: Día duro
+seo-title: Tough Day
 description: La prueba de Día duro simula la carga diaria de unos 1000 autores en el peor de los casos, con todas las operaciones en curso al mismo tiempo.
-seo-description: La prueba de Día duro simula la carga diaria de unos 1000 autores en el peor de los casos, con todas las operaciones en curso al mismo tiempo.
+seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 uuid: 1b672182-40f5-4580-b038-2e3c8fbfb8b7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,19 +11,18 @@ content-type: reference
 discoiquuid: ea6b40fe-b6e1-495c-b34f-8815a4e2e42e
 docset: aem65
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-translation-type: tm+mt
-source-git-commit: 3727b561a2ee9778d75f18530caf16c6c3ef846a
+source-git-commit: e1f9cf160892c2fa5c7cc7f80f998166dbc877e6
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1883'
 ht-degree: 2%
 
 ---
 
 # Día duro{#tough-day}
 
-## Qué es el Día duro 2 {#what-is-tough-day}
+## Qué es el día duro 2 {#what-is-tough-day}
 
-&quot;Día duro 2&quot; es una aplicación que le permite probar los límites de su instancia de AEM. Se puede ejecutar de forma predeterminada con el grupo de prueba predeterminado o puede configurarse para adaptarlo a sus necesidades de prueba. Puede ver [esta grabación](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) para ver una presentación de la aplicación.
+&quot;Día duro 2&quot; es una aplicación que le permite probar los límites de su instancia de AEM. Se puede ejecutar de forma predeterminada con el grupo de prueba predeterminado o puede configurarse para adaptarlo a sus necesidades de prueba. Puede ver [esta grabación](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/) para ver una presentación de la aplicación.
 
 ## Cómo ejecutar el día duro 2 {#how-to-run-tough-day}
 
@@ -54,7 +53,6 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >[!NOTE]
 >
 >El Día 2 no tiene un paso de limpieza. Como resultado, se recomienda ejecutar el Día duro 2 en una instancia de ensayo clonada y no en la instancia de producción principal. La instancia de ensayo debe dejarse de lado después de las pruebas.
-
 
 ### Ayuda {#getting-help}
 
@@ -142,13 +140,13 @@ Puede encontrar los parámetros relevantes en la lista siguiente:
 | `--loglevel=<Val>` | Nivel de registro para el motor del Día difícil 2. | INFORMACIÓN | TODOS, DEPURAR, INFORMACIÓN, ADVERTENCIA, ERROR, FATAL, DESACTIVADO |
 | `--dryrun=<Val>` | Si es true, imprime la configuración resultante y no ejecuta ninguna prueba. | false | true o false |
 
-## Personalización de {#customizing}
+## Personalización {#customizing}
 
 La personalización se puede lograr de dos maneras: parámetros de línea de comandos o archivos de configuración de yaml. **Los archivos de configuración generalmente se utilizan para grupos personalizados grandes y anularán los parámetros predeterminados del Día duro 2. Los parámetros de la línea de comandos anulan tanto los archivos de configuración como los parámetros predeterminados.**
 
 La única forma de guardar una configuración de prueba es copiarla en formato yaml. Para obtener más información, consulte esta configuración [toughday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) y los ejemplos de configuración de yaml en las secciones siguientes.
 
-### Añadir una nueva prueba {#adding-a-new-test}
+### Adición de una nueva prueba {#adding-a-new-test}
 
 Si no desea utilizar el grupo `toughday` predeterminado, puede agregar una prueba de su elección utilizando el parámetro `add` . Los ejemplos siguientes muestran cómo agregar la prueba `CreateAssetTreeTest` utilizando parámetros de línea de comandos o un archivo de configuración de yaml.
 
@@ -167,7 +165,7 @@ tests:
   - add : CreateAssetTreeTest
 ```
 
-### Añadir varias instancias de la misma prueba {#adding-multiple-instances-of-the-same-test}
+### Adición de varias instancias de la misma prueba  {#adding-multiple-instances-of-the-same-test}
 
 También puede agregar y ejecutar varias instancias de la misma prueba, pero cada instancia debe tener un nombre único. Los ejemplos siguientes muestran cómo se agregan dos instancias de la misma prueba, ya sea utilizando parámetros de línea de comandos o un archivo de configuración de yaml.
 
@@ -406,7 +404,7 @@ El Día difícil 2 crea una carpeta de registros en el mismo directorio donde ej
 
 Los registros no se sobrescriben, las ejecuciones posteriores adjuntarán mensajes a los registros existentes. Los registros tienen varios niveles. Para obtener más información, consulte ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
-#### Ejemplo de uso {#example-usage}
+#### Uso de ejemplo {#example-usage}
 
 #### Problemas conocidos {#known-issues}
 
