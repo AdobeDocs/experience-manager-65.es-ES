@@ -1,8 +1,8 @@
 ---
 title: Grupos de usuarios cerrados en AEM
-seo-title: Grupos de usuarios cerrados en AEM
+seo-title: Closed User Groups in AEM
 description: Obtenga información sobre los grupos de usuarios cerrados en AEM.
-seo-description: Obtenga información sobre los grupos de usuarios cerrados en AEM.
+seo-description: Learn about Closed User Groups in AEM.
 uuid: 83396163-86ce-406b-b797-2457ed975ccd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,11 +11,10 @@ content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
-feature: Seguridad
-translation-type: tm+mt
-source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
+feature: Security
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '6886'
+source-wordcount: '6872'
 ht-degree: 0%
 
 ---
@@ -39,7 +38,7 @@ El objetivo de la nueva implementación es cubrir la funcionalidad existente cua
 * Extensión de tipo de nodo dedicada para marcar el requisito de autenticación;
 * Ruta de inicio de sesión opcional asociada con el requisito de autenticación.
 
-### La nueva implementación de grupo de usuarios personalizado {#the-new-custom-user-group-implementation}
+### La nueva implementación de grupos de usuarios personalizados {#the-new-custom-user-group-implementation}
 
 Un CUG como se conoce en el contexto de AEM consiste en los siguientes pasos:
 
@@ -77,7 +76,7 @@ En esta configuración compuesta, un nuevo CUG no reemplaza el contenido de cont
 
 A diferencia de la implementación anterior, las nuevas políticas de CUG siempre se reconocen y tratan como contenido de control de acceso. Esto implica que se crean y editan usando la API de administración de control de acceso JCR. Para obtener más información, consulte la sección [Administración de políticas de CUG](#managing-cug-policies).
 
-#### Evaluación de permisos de directivas de CUG {#permission-evaluation-of-cug-policies}
+#### Evaluación de permisos de las políticas del CUG {#permission-evaluation-of-cug-policies}
 
 Además de una gestión específica del control de acceso para los CUG, el nuevo modelo de autorización permite habilitar condicionalmente la evaluación de permisos para sus políticas. Esto permite configurar las políticas de CUG en un entorno de ensayo y solo permite evaluar los permisos efectivos una vez replicados en el entorno de producción.
 
@@ -174,7 +173,7 @@ El `LoginPathProvider` implementado por el nuevo soporte de requisitos de autent
 >
 >La evaluación solo se realiza para solicitudes asociadas con recursos que se encuentran en las rutas configuradas admitidas. Para cualquier otra solicitud se evaluarán las formas alternativas de determinar la ruta de inicio de sesión.
 
-#### Prácticas recomendadas    {#best-practices-1}
+#### Prácticas recomendadas   {#best-practices-1}
 
 Se deben tener en cuenta las siguientes prácticas recomendadas al definir los requisitos de autenticación:
 
@@ -206,9 +205,9 @@ La página asociada con la ruta de inicio de sesión puede estar ubicada dentro 
 
 ## Administración de directivas CUG y requisitos de autenticación {#managing-cug-policies-and-authentication-requirement}
 
-### Administración de directivas CUG {#managing-cug-policies}
+### Administración de directivas de CUG {#managing-cug-policies}
 
-El nuevo tipo de políticas de control de acceso para restringir el acceso de lectura para un CUG se administra usando la API de administración de control de acceso JCR y sigue los mecanismos descritos con la especificación [JCR 2.0](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html).
+El nuevo tipo de políticas de control de acceso para restringir el acceso de lectura para un CUG se administra usando la API de administración de control de acceso JCR y sigue los mecanismos descritos con la especificación [JCR 2.0](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 
 #### Establecer Una Nueva Política De CUG {#set-a-new-cug-policy}
 
@@ -246,7 +245,7 @@ acMgr.setPolicy(path, cugPolicy); // as of this step the policy can be edited/re
 session.save();
 ```
 
-#### Editar una directiva de CUG existente {#edit-an-existing-cug-policy}
+#### Editar Una Política De CUG Existente {#edit-an-existing-cug-policy}
 
 Se necesitan los siguientes pasos para editar una política CUG existente. Tenga en cuenta que la directiva modificada debe escribirse de nuevo y los cambios deben conservarse utilizando `javax.jcr.Session.save()`.
 
@@ -325,7 +324,7 @@ while (isSupportedPath(path)) {
 }
 ```
 
-#### Administración de directivas CUG por principal {#managing-cug-policies-by-pincipal}
+#### Administración de políticas de CUG por ubicación {#managing-cug-policies-by-pincipal}
 
 Las extensiones definidas por `JackrabbitAccessControlManager` que permiten editar las políticas de control de acceso por entidad de seguridad no se implementan con la administración de control de acceso CUG, ya que por definición una directiva CUG siempre afecta a todas las entidades de seguridad: a los que se enumeran con el `PrincipalSetPolicy` se les concede acceso de lectura, mientras que a todos los demás entidades principales se les impedirá leer contenido en el árbol definido por el nodo de destino.
 
@@ -423,7 +422,7 @@ targetNode.removeMixin("granite:AuthenticationRequired");
 session.save();
 ```
 
-#### Recuperar los requisitos de autenticación efectivos {#retrieve-effective-auth-requirements}
+#### Recuperar requisitos de autenticación efectivos {#retrieve-effective-auth-requirements}
 
 No hay una API pública dedicada para leer todos los requisitos de autenticación efectivos registrados en Apache Sling Authenticator. Sin embargo, la lista se expone en la consola del sistema en `https://<serveraddress>:<serverport>/system/console/slingauth` en la sección &quot;**Configuración de requisitos de autenticación**&quot;.
 
@@ -435,7 +434,7 @@ La siguiente imagen muestra los requisitos de autenticación de una instancia de
 
 ![imagen_1-24](assets/chlimage_1-24.jpeg)
 
-#### Recupere la ruta de inicio de sesión efectiva {#retrieve-the-effective-login-path}
+#### Recuperar la ruta de inicio de sesión efectiva {#retrieve-the-effective-login-path}
 
 Actualmente no hay ninguna API pública para recuperar la ruta de inicio de sesión que surtirá efecto al acceder de forma anónima a un recurso que requiere autenticación. Consulte la sección Evaluación de la ruta de inicio de sesión para obtener detalles de implementación sobre cómo se recupera la ruta de inicio de sesión.
 
@@ -467,7 +466,7 @@ while (isSupported(node)) {
 }
 ```
 
-### Combinación de directivas CUG y el requisito de autenticación {#combining-cug-policies-and-the-authentication-requirement}
+### Combinación de políticas CUG y el requisito de autenticación {#combining-cug-policies-and-the-authentication-requirement}
 
 En la tabla siguiente se enumeran las combinaciones válidas de las políticas CUG y el requisito de autenticación en una instancia AEM que tiene ambos módulos habilitados a través de la configuración.
 
@@ -489,11 +488,11 @@ Esta sección proporciona información general sobre los componentes de OSGi y l
 
 Consulte también la documentación de asignación de CUG para obtener una asignación completa de las opciones de configuración entre la implementación antigua y la nueva.
 
-### Autorización: Configuración {#authorization-setup-and-configuration}
+### Autorización: Configuración y configuración {#authorization-setup-and-configuration}
 
 Las nuevas partes relacionadas con la autorización están contenidas en el paquete **Oak CUG Authorization** ( `org.apache.jackrabbit.oak-authorization-cug`), que forma parte de la instalación predeterminada AEM. El paquete define un modelo de autorización separado que se va a implementar como una manera adicional de administrar el acceso de lectura.
 
-#### Configuración de la autorización de CUG {#setting-up-cug-authorization}
+#### Configuración de la autorización CUG {#setting-up-cug-authorization}
 
 La configuración de la autorización de CUG se describe detalladamente en la [documentación relevante de Apache](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability). De forma predeterminada, AEM ha implementado la autorización de CUG en todos los modos de ejecución. Las instrucciones paso a paso también pueden utilizarse para desactivar la autorización CUG en aquellas instalaciones que requieran una configuración de autorización diferente.
 
@@ -601,7 +600,7 @@ La exclusión del grupo &quot;administradores&quot; se puede modificar o expandi
 
 Alternativamente, es posible proporcionar e implementar una implementación personalizada de la interfaz CugExclude para ajustar el conjunto de entidades principales excluidas en caso de necesidades especiales. Consulte la documentación sobre [CUG pluggability](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) para obtener más información y ver un ejemplo de implementación.
 
-### Autenticación: Configuración {#authentication-setup-and-configuration}
+### Autenticación: Configuración y configuración {#authentication-setup-and-configuration}
 
 Las nuevas partes relacionadas con la autenticación están contenidas en el paquete **Gestor de autenticación de Granito de Adobe** ( `com.adobe.granite.auth.authhandler` versión 5.6.48). Este paquete forma parte de la instalación predeterminada AEM.
 
@@ -697,7 +696,7 @@ De forma predeterminada, las nuevas instalaciones de AEM utilizarán las nuevas 
 >
 >En las instancias de creación predeterminadas no hay configuración para **Apache Jackrabbit Oak CUG Exclude List** ni **Requisito de autenticación de Adobe Granite y el Controlador de ruta de inicio de sesión**.
 
-### Instancias de publicación {#publish-instances}
+### Publicar instancias {#publish-instances}
 
 | **&quot;Configuración de Apache Jackrabbit Oak CUG&quot;** | **Explicación** |
 |---|---|
@@ -713,7 +712,7 @@ De forma predeterminada, las nuevas instalaciones de AEM utilizarán las nuevas 
 |---|---|
 | Rutas admitidas `/content` | Los requisitos de autenticación definidos en el repositorio por medio del tipo de mezcla `granite:AuthenticationRequired` surten efecto a continuación de `/content` en `Session.save()`. Sling Authenticator se actualiza. Se ignora la adición del tipo de mezcla fuera de las rutas admitidas. |
 
-## Desactivación del requisito de autenticación y autorización de CUG {#disabling-cug-authorization-and-authentication-requirement}
+## Desactivación de los requisitos de autorización y autenticación de CUG {#disabling-cug-authorization-and-authentication-requirement}
 
 La nueva implementación puede deshabilitarse por completo en caso de que una instalación determinada no utilice CUG o utilice medios diferentes para la autenticación y autorización.
 
@@ -721,7 +720,7 @@ La nueva implementación puede deshabilitarse por completo en caso de que una in
 
 Consulte la documentación de [CUG pluggability](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability) para obtener más información sobre cómo quitar el modelo de autorización CUG de la configuración de autorización compuesta.
 
-### Desactive el requisito de autenticación {#disable-the-authentication-requirement}
+### Deshabilitar el requisito de autenticación {#disable-the-authentication-requirement}
 
 Para deshabilitar la compatibilidad con los requisitos de autenticación proporcionados por el módulo `granite.auth.authhandler` es suficiente eliminar la configuración asociada con **Requisito de autenticación de Adobe Granite y Controlador de ruta de inicio de sesión**.
 
@@ -775,7 +774,7 @@ Ambos elementos se crean en `cq:Page`. Con el diseño actual, MSM solo gestiona 
 
 Por lo tanto, los grupos CUG no se pueden desplegar en Live Copies desde modelos. Planee esto al configurar Live Copy.
 
-## Cambios con la nueva implementación de CUG {#changes-with-the-new-cug-implementation}
+## Cambios con la implementación del nuevo CUG {#changes-with-the-new-cug-implementation}
 
 El objetivo de esta sección es proporcionar una visión general de los cambios realizados en la función CUG, así como una comparación entre la implementación antigua y la nueva. Enumera los cambios que afectan a la forma en que se configura la compatibilidad con CUG y describe cómo y por quién se administran los CUG en el contenido del repositorio.
 
@@ -783,7 +782,7 @@ El objetivo de esta sección es proporcionar una visión general de los cambios 
 
 El componente OSGi obsoleto **Adobe Granite Closed User Group (CUG) Support** ( `com.day.cq.auth.impl.cug.CugSupportImpl`) se ha reemplazado por nuevos componentes para poder gestionar por separado las partes relacionadas con la autorización y la autenticación de la funcionalidad anterior del CUG.
 
-## Diferencias en la gestión de CUG en el contenido del repositorio {#differences-in-managing-cugs-in-the-repository-content}
+## Diferencias en la gestión de CUGs en el contenido del repositorio {#differences-in-managing-cugs-in-the-repository-content}
 
 En las secciones siguientes se describen las diferencias entre las implementaciones antiguas y las nuevas desde las perspectivas de implementación y seguridad. Aunque la nueva implementación pretende proporcionar la misma funcionalidad, hay cambios sutiles que es importante conocer al utilizar el nuevo CUG.
 
@@ -842,7 +841,7 @@ Añadir o quitar un tipo de mezcla requiere que se conceda el privilegio `jcr:no
 
 En cuanto al `granite:loginPath`, se requiere el mismo privilegio para agregar, modificar o eliminar la propiedad.
 
-#### Nodo de destino definido por el tipo de mezcla {#target-node-defined-by-mixin-type}
+#### Nodo de destino definido por tipo de mezcla {#target-node-defined-by-mixin-type}
 
 Se espera que los requisitos de autenticación se creen en el nodo JCR que define el subárbol a ser sujeto de inicio de sesión forzado. Es probable que sea una página de AEM en caso de que se espere que el CUG afecte a todo el árbol y la interfaz de usuario para la nueva implementación, en consecuencia, agregue el tipo de mezcla de requisito de autenticación en el nodo de página.
 
@@ -854,7 +853,7 @@ Este puede ser un escenario válido y es posible con un editor de repositorios q
 
 Tanto el tipo de mezcla `granite:AuthenticationRequired` como la propiedad granite:loginPath solo se respetarán dentro del ámbito definido por el conjunto de opciones de configuración **Supported Paths** presentes con el **Adobe Granite Authentication Requirement y el Login Path Handler**. Si no se especifica ninguna ruta, la función de requisito de autenticación se desactiva por completo. En este caso, el tipo de mezcla ni la propiedad tienen efecto cuando se agregan o se establecen en un nodo JCR determinado.
 
-### Asignación del contenido JCR, servicios OSGi y configuraciones {#mapping-of-jcr-content-osgi-services-and-configurations}
+### Asignación del contenido de JCR, servicios de OSGi y configuraciones {#mapping-of-jcr-content-osgi-services-and-configurations}
 
 El documento siguiente proporciona una asignación completa de servicios OSGi, configuraciones y contenido del repositorio entre la implementación antigua y la nueva.
 

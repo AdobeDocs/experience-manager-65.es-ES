@@ -1,8 +1,8 @@
 ---
 title: Administración de derechos de usuario, grupo y acceso
-seo-title: Administración de derechos de usuario, grupo y acceso
+seo-title: User, Group and Access Rights Administration
 description: Obtenga información sobre la administración de usuarios, grupos y derechos de acceso en AEM.
-seo-description: Obtenga información sobre la administración de usuarios, grupos y derechos de acceso en AEM.
+seo-description: Learn about user, group and access rights administration in AEM.
 uuid: 26d7bb25-5a38-43c6-bd6a-9ddba582c60f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -11,10 +11,9 @@ discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3120'
 ht-degree: 1%
 
 ---
@@ -63,7 +62,7 @@ CRX le permite configurar los derechos de acceso para las cuentas de usuario y d
 
 >[!NOTE]
 >
->CRX implementa [control de acceso como se define en JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX implementa [control de acceso como se define en JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Se configura una instalación estándar de un repositorio CRX para utilizar listas de control de acceso basadas en recursos. Esta es una posible implementación del control de acceso JSR-283 y una de las implementaciones presentes con Jackrabbit.
 
@@ -114,7 +113,6 @@ La lista de derechos de acceso aplicables al sujeto se elabora a partir de:
 >
 
 
-
 ### Resolución de solicitudes y derechos de acceso {#resolving-request-and-access-rights}
 
 Cuando CRX gestiona la solicitud, compara la solicitud de acceso del sujeto con la lista de control de acceso en el nodo del repositorio:
@@ -123,7 +121,7 @@ Por lo tanto, si Linda solicita actualizar el nodo `/features` en la siguiente e
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
-### Orden de prioridad {#order-of-precedence}
+### Orden de precedencia {#order-of-precedence}
 
 Los derechos de acceso en CRX se evalúan de la siguiente manera:
 
@@ -286,7 +284,6 @@ Si una cuenta se hace pasar por otra, es muy difícil de ver. Los archivos de re
 >
 
 
-
 ### Actualización de una cuenta de usuario {#updating-a-user-account}
 
 1. Con el cuadro de diálogo **Administración de usuarios**, abra la vista de lista de todas las cuentas.
@@ -443,7 +440,7 @@ Puede agregar miembros al grupo actual:
 
 O elimine un miembro existente con el símbolo de papelera.
 
-## Administración de derechos de acceso {#access-right-management}
+## Gestión de derechos de acceso {#access-right-management}
 
 Con la pestaña **Control de acceso** del CRXDE Lite puede definir las políticas de control de acceso y asignar los privilegios relacionados.
 
@@ -469,7 +466,7 @@ Las políticas se clasifican según:
 
    Estas son las políticas de control de acceso que están actualmente en vigor para cualquier solicitud de acceso. Muestran las políticas agregadas derivadas de las políticas locales y de cualquier heredada del elemento principal.
 
-### Selección de directivas {#policy-selection}
+### Selección de políticas {#policy-selection}
 
 Las políticas se pueden seleccionar para:
 

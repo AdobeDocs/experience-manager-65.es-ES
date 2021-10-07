@@ -2,7 +2,7 @@
 title: OWASP Top 10
 seo-title: OWASP Top 10
 description: Conozca cómo AEM trata los 10 principales riesgos de seguridad OWASP.
-seo-description: Conozca cómo AEM trata los 10 principales riesgos de seguridad OWASP.
+seo-description: Learn how AEM deals with the top 10 OWASP security risks.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -37,7 +36,7 @@ La práctica general de mitigación es codificar todos los resultados del conten
 
 XSS es una prioridad máxima durante las pruebas y el desarrollo, y cualquier problema que se encuentre (normalmente) se resuelve inmediatamente.
 
-## 3. Autenticación y administración de sesiones dañadas {#broken-authentication-and-session-management}
+## 3. Autenticación rota y administración de sesiones {#broken-authentication-and-session-management}
 
 AEM utiliza técnicas de autenticación sólidas y comprobadas, basadas en [Apache Jackrabbit](https://jackrabbit.apache.org/) y [Apache Sling](https://sling.apache.org/). Las sesiones HTTP/explorador no se utilizan en AEM.
 
@@ -51,7 +50,7 @@ La falsificación de solicitudes entre sitios (CSRF) se mitiga mediante la inyec
 
 Además, AEM se envía con un filtro basado en encabezados de referente, que puede configurarse para *solo* permitir solicitudes de POST de hosts específicos (definidos en una lista).
 
-## 6. Configuración incorrecta de seguridad {#security-misconfiguration}
+## 6. Configuración incorrecta de la seguridad {#security-misconfiguration}
 
 Es imposible garantizar que todo el software esté siempre configurado correctamente. Sin embargo, nos esforzamos por proporcionar la mayor orientación posible y hacer la configuración lo más sencilla posible. Además, AEM incluye [chequeos de seguridad integrados](/help/sites-administering/operations-dashboard.md) que le ayudan a supervisar la configuración de seguridad de un vistazo.
 
@@ -63,9 +62,9 @@ Las contraseñas se almacenan como hashes criptográficos en el nodo de usuario;
 
 Los datos confidenciales, como las credenciales de terceros, se almacenan en forma cifrada mediante una biblioteca criptográfica certificada FIPS 140-2.
 
-## 8. Error al restringir el acceso a la dirección URL {#failure-to-restrict-url-access}
+## 8. Error al restringir el acceso a la URL {#failure-to-restrict-url-access}
 
-El repositorio permite establecer [privilegios de granularidad (tal como lo especifica JCR)](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html) para cualquier usuario o grupo determinado en una ruta determinada, a través de entradas de control de acceso. El repositorio aplica las restricciones de acceso.
+El repositorio permite establecer [privilegios de granularidad (tal como lo especifica JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para cualquier usuario o grupo determinado en una ruta determinada, a través de entradas de control de acceso. El repositorio aplica las restricciones de acceso.
 
 ## 9. Protección insuficiente de la capa de transporte {#insufficient-transport-layer-protection}
 

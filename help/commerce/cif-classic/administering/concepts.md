@@ -6,10 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '4525'
+source-wordcount: '4524'
 ht-degree: 1%
 
 ---
@@ -35,11 +34,10 @@ Esto significa que:
 >El marco de comercio electrónico se puede utilizar con:
 >
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
->* [Commerce Cloud SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
+>* [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
 
 >
-
 
 
 >[!CAUTION]
@@ -130,10 +128,9 @@ AEM comercio electrónico se implementa con un motor de comercio electrónico:
 >
 >AEM comercio electrónico implementado dentro de AEM usando desarrollo genérico basado en JCR es:
 >
->* Un ejemplo de comercio electrónico independiente y AEM para ilustrar el uso de la API. Esto se puede usar para controlar los datos del producto, los carros de compras y el cierre de compra en conjunto con la visualización de datos y las campañas de marketing existentes. En este caso, la base de datos del producto se almacena en el repositorio nativo de AEM (implementación de [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html) por parte del Adobe).
+>* Un ejemplo de comercio electrónico independiente y AEM para ilustrar el uso de la API. Esto se puede usar para controlar los datos del producto, los carros de compras y el cierre de compra en conjunto con la visualización de datos y las campañas de marketing existentes. En este caso, la base de datos del producto se almacena en el repositorio nativo de AEM (implementación de [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html) por parte del Adobe).
 >
->  
-La instalación de AEM estándar contiene los conceptos básicos de la [implementación genérica de comercio electrónico](/help/commerce/cif-classic/administering/generic.md).
+>  La instalación de AEM estándar contiene los conceptos básicos de la [implementación genérica de comercio electrónico](/help/commerce/cif-classic/administering/generic.md).
 
 ### Proveedores de comercio {#commerce-providers}
 
@@ -146,8 +143,8 @@ Un proveedor de comercio es AEM código personalizado para:
 
 Actualmente hay dos proveedores de comercio de ejemplo disponibles para AEM:
 
-* una para geometrixx-hybris
-* otro para geometrixx-generic (JCR)
+* one for geometrixx-hybris
+* another for geometrixx-generic (JCR)
 
 Aunque normalmente un proyecto tendrá que desarrollar su propio proveedor de comercio personalizado específico para su PIM y esquema de datos del producto.
 
@@ -199,7 +196,7 @@ Aunque la ubicación real puede depender de la implementación; por ejemplo, gen
 
 ## Productos {#products}
 
-### Producto Datos en comparación con datos de marketing {#product-data-versus-marketing-data}
+### Datos de producto versus datos de marketing {#product-data-versus-marketing-data}
 
 #### Categorías estructurales y de marketing {#structural-versus-marketing-categories}
 
@@ -242,7 +239,7 @@ Para los productos adecuados, también se puede obtener información sobre las v
 
 ![ecommerceproductvariants](/help/sites-administering/assets/ecommerceproductvariants.png)
 
-### Atributos de producto {#product-attributes}
+### Atributos del producto {#product-attributes}
 
 Los atributos individuales que se mantienen sobre cada producto pueden depender del motor de comercio electrónico que se utilice y de la implementación de AEM. Están disponibles (según corresponda) al ver páginas de productos o al editar información del producto y pueden incluir:
 
@@ -260,7 +257,7 @@ Los atributos individuales que se mantienen sobre cada producto pueden depender 
 
 * **Etiquetas**
 
-   Etiquetas utilizadas para agrupar productos relacionados.
+   Tags used to group related products.
 
 * **Categoría de recursos predeterminada**
 
@@ -340,7 +337,7 @@ Esto puede depender del tipo de datos:
 
 * Los datos muy volátiles, como la información de precios, se recuperan del motor de comercio para cada solicitud de página para garantizar que siempre estén actualizados.
 
-### Catálogos: Rendimiento y escalado {#catalogs-performance-and-scaling}
+### Catálogos: rendimiento y escala {#catalogs-performance-and-scaling}
 
 La importación de un catálogo grande con un número elevado de productos (normalmente más de 100.000) desde un motor de comercio electrónico (PIM) puede afectar al sistema debido al gran número de nodos. También puede ralentizar la instancia de creación si los productos tienen recursos asociados (p. ej., imágenes de producto). Esto se debe al hecho de que el posprocesamiento de estos recursos requiere gran cantidad de CPU y memoria.
 
@@ -373,17 +370,17 @@ Este escenario implica la configuración de dos instancias de autor:
 
 ![Diagrama de arquitectura](/help/sites-administering/assets/chlimage_1-8.png)
 
-#### Solo importar datos de producto {#only-import-product-data}
+#### Importar solo datos de productos {#only-import-product-data}
 
-En los casos en que los productos no contienen recursos (imágenes) que se van a importar, puede importar los datos del producto sin que se vean afectados por el posprocesamiento de los recursos.
+For cases when products do not contain assets (images) to be imported, you can import the product data without being affected by asset post-processing.
 
 ![Diagrama de arquitectura](/help/sites-administering/assets/chlimage_1-9.png)
 
 #### Pruebas de rendimiento {#performance-testing}
 
-Las pruebas de rendimiento deben tenerse en cuenta en AEM implementaciones de comercio electrónico:
+Performance testing must be taken into consideration on AEM eCommerce implementations:
 
-* Entorno de creación:
+* Author environment:
 
    La actividad en segundo plano (por ejemplo, importar) puede producirse al mismo tiempo que la actividad normal del usuario (por ejemplo, la edición de páginas) e incluso si el rendimiento del front-end tiene (en general) una prioridad mayor, el mal rendimiento que ven los autores en línea puede provocar frustraciones que puedan bloquear una decisión de activación.
 
@@ -415,7 +412,7 @@ Tenga en cuenta que esta prueba de rendimiento requiere conocimientos y análisi
 
 * Requisitos de mantenimiento (copia de seguridad, optimización de Tar PM, colección de residuos del almacén de datos, etc.)
 
-#### Rendimiento: varios {#performance-miscellaneous}
+#### Rendimiento - Varios {#performance-miscellaneous}
 
 Para todas las implementaciones se pueden tener en cuenta los siguientes puntos:
 
@@ -484,15 +481,15 @@ Son páginas AEM que proporcionan información principalmente estática; por eje
 
 El componente **Product** se puede añadir a cualquier página con una página principal que envíe los metadatos necesarios (es decir, las rutas a `cartPage` y `cartObject`). En el sitio de demostración, Geometrixx Outdoors, esto lo suministra `UserInfo.jsp`.
 
-El componente **Product** también se puede personalizar según sus necesidades individuales.
+The **Product** component can also be customized according to your individual requirements.
 
-### Páginas proxy {#proxy-pages}
+### Proxy Pages {#proxy-pages}
 
 Las páginas proxy se utilizan para simplificar la estructura del repositorio y optimizar el almacenamiento para catálogos grandes.
 
-La creación de un catálogo utilizará diez nodos por producto, ya que proporciona componentes individuales para cada producto que puede actualizar y personalizar en AEM. Este gran número de nodos puede convertirse en un problema si el catálogo contiene cientos o incluso miles de productos. Para evitar cualquier problema, puede crear su catálogo utilizando páginas proxy.
+Creating a catalog will use ten nodes per product as it provides individual components for each product that you can update and customise within AEM. Este gran número de nodos puede convertirse en un problema si el catálogo contiene cientos o incluso miles de productos. Para evitar cualquier problema, puede crear su catálogo utilizando páginas proxy.
 
-Las páginas proxy utilizan una estructura de dos nodos ( `cq:Page` y `jcr:content`) que no contiene ningún contenido real del producto. El contenido se genera, en el momento de la solicitud, haciendo referencia a los datos del producto y a la página de plantilla.
+Proxy pages use a two-node structure ( `cq:Page` and `jcr:content`) that does not contain any of the actual product content. El contenido se genera, en el momento de la solicitud, haciendo referencia a los datos del producto y a la página de plantilla.
 
 Sin embargo, hay una compensación. No podrá personalizar la información del producto dentro de AEM, se utilizará una plantilla estándar (definida para el sitio).
 
@@ -502,7 +499,7 @@ Sin embargo, hay una compensación. No podrá personalizar la información del p
 >
 >Puede convertir de una metodología a otra en cualquier momento. También puede convertir una subsección del catálogo.
 
-## Promociones y comprobantes {#promotions-and-vouchers}
+## Promociones y cupones {#promotions-and-vouchers}
 
 ### Cupones {#vouchers}
 
@@ -588,7 +585,7 @@ Una promoción puede realizarse en una experiencia o directamente en la campaña
 
 ### Registro de clientes y cuentas {#customer-registration-and-accounts}
 
-Cuando se registra un comprador, los detalles de la cuenta deben sincronizarse entre AEM y el motor de comercio electrónico. Los datos confidenciales se conservan de forma independiente, pero los perfiles se comparten:
+Cuando se registra un comprador, los detalles de la cuenta deben sincronizarse entre AEM y el motor de comercio electrónico. Sensitive data is held independently, but profiles are shared:
 
 ![imagen_1-10](/help/sites-administering/assets/chlimage_1-10.png)
 
@@ -603,7 +600,7 @@ El mecanismo exacto puede depender del escenario:
    1. El usuario se creará en el motor de comercio electrónico con el mismo ID de cuenta y una contraseña aleatoria que se almacenarán en AEM.
    1. La contraseña aleatoria es necesaria, ya que AEM intenta iniciar sesión en el motor de comercio electrónico en la primera llamada (por ejemplo, cuando se solicita una página de producto y se hace referencia al motor de comercio electrónico para el precio). Como esto sucede después del inicio de sesión AEM, la contraseña no está disponible.
 
-1. La cuenta de usuario solo existe en el motor de comercio electrónico:
+1. The user account only exists in the eCommerce engine:
 
    1. La cuenta se creará en AEM con el mismo ID de cuenta y contraseña.
 
@@ -699,17 +696,17 @@ Un cliente anónimo puede:
 Un cliente registrado puede:
 
 * Inicie sesión en su cuenta
-* Ver productos
+* View products
 * Agregar productos al carro de compras
 * Realizar cierre de compra para realizar el pedido
-* Ver y rastrear pedidos anteriores
+* View and track previous orders
 
-### Información general sobre el contenido del carro de compras {#shopping-cart-content-overview}
+### Shopping Cart Content Overview {#shopping-cart-content-overview}
 
-El carro de compras proporciona:
+The shopping cart provides:
 
 * una descripción general de los elementos seleccionados
-* vínculos a las páginas de producto de los elementos seleccionados
+* links to the product pages for the selected items
 * la capacidad para:
 
    * actualizar el número/cantidad de los artículos individuales
@@ -745,7 +742,7 @@ En cualquier caso, los artículos permanecen en el carro (y se pueden restaurar)
 
 Antes del cierre de compra, se reflejan los cambios de precio (en ambos sistemas) a medida que se producen.
 
-### Información de pedido {#order-information}
+### Información del pedido {#order-information}
 
 En función de la información de implementación sobre un pedido se mantenga en el motor de comercio electrónico o en el AEM, esta información se procesa mediante AEM.
 

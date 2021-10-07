@@ -1,8 +1,8 @@
 ---
 title: AEM Conceptos principales
-seo-title: Conceptos básicos
+seo-title: The Basics
 description: Una visión general de los conceptos principales de cómo se estructura la AEM y cómo desarrollarse sobre ella, incluida la comprensión de JCR, Sling, OSGi, Dispatcher, flujos de trabajo y MSM
-seo-description: Una visión general de los conceptos principales de cómo se estructura la AEM y cómo desarrollarse sobre ella, incluida la comprensión de JCR, Sling, OSGi, Dispatcher, flujos de trabajo y MSM
+seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,15 +10,14 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-translation-type: tm+mt
-source-git-commit: 78e28636eec331314c2f29c93d516215b1572f20
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3367'
-ht-degree: 0%
+source-wordcount: '3334'
+ht-degree: 1%
 
 ---
 
-# Conceptos principales de AEM {#aem-core-concepts}
+# AEM Conceptos principales {#aem-core-concepts}
 
 >[!NOTE]
 >
@@ -42,7 +41,7 @@ También se recomienda leer y seguir las [Directrices y prácticas recomendadas]
 
 ## Repositorio de contenido Java {#java-content-repository}
 
-El estándar del repositorio de contenido Java (JCR), [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), especifica una forma independiente del proveedor y de la implementación de acceder al contenido bidireccionalmente en un nivel granular dentro de un repositorio de contenido.
+El estándar del repositorio de contenido Java (JCR), [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), especifica una forma independiente del proveedor y de la implementación de acceder al contenido bidireccionalmente en un nivel granular dentro de un repositorio de contenido.
 
 El responsable de la especificación es Adobe Research (Suiza) AG.
 
@@ -78,12 +77,12 @@ En el diagrama siguiente se explican todos los parámetros de solicitud ocultos 
 
 Sling es *centrado en el contenido*. Esto significa que el procesamiento se centra en el contenido, ya que cada solicitud (HTTP) se asigna al contenido en forma de recurso JCR (un nodo de repositorio):
 
-* el primer destino es el recurso (nodo JCR) que contiene el contenido
+* the first target is the resource (JCR node) holding the content
 * en segundo lugar, la representación o la secuencia de comandos se encuentran en las propiedades del recurso en combinación con ciertas partes de la solicitud (por ejemplo, selectores o la extensión)
 
 ### Sling RESTful {#restful-sling}
 
-Debido a la filosofía centrada en el contenido, Sling implementa un servidor orientado a REST y, por lo tanto, incluye un nuevo concepto en los marcos de aplicaciones web. Las ventajas son:
+Due to the content-centric philosophy, Sling implements a REST-oriented server and thus features a new concept in web application frameworks. The advantages are:
 
 * muy RESTful, no solo en la superficie; los recursos y las representaciones están modelados correctamente dentro del servidor
 * elimina uno o varios modelos de datos
@@ -91,9 +90,9 @@ Debido a la filosofía centrada en el contenido, Sling implementa un servidor or
    * anteriormente se necesitaban las siguientes opciones: estructura URL, objetos empresariales, esquema de base de datos;
    * ahora se reduce a: URL = recurso = estructura JCR
 
-### Descomposición de URL {#url-decomposition}
+### URL Decomposition {#url-decomposition}
 
-En Sling, el procesamiento se controla mediante la dirección URL de la solicitud del usuario. Define el contenido que se mostrará en las secuencias de comandos correspondientes. Para ello, la información se extrae de la dirección URL.
+In Sling, processing is driven by the URL of the user request. Define el contenido que se mostrará en las secuencias de comandos correspondientes. To do this, information is extracted from the URL.
 
 Si analizamos la siguiente URL:
 
@@ -115,13 +114,13 @@ Podemos dividirla en sus partes compuestas:
 
 **selector(s)** Se utiliza para métodos alternativos de renderización del contenido; en este ejemplo, una versión compatible con impresora en formato A4.
 
-**formato** extensionContent; también especifica la secuencia de comandos que se utilizará para la renderización.
+**** formato extensionContent; también especifica la secuencia de comandos que se utilizará para la renderización.
 
-**** suffixCan para especificar información adicional.
+**** suffixCan se utiliza para especificar información adicional.
 
 **param(s)** Cualquier parámetro requerido para el contenido dinámico.
 
-#### De URL a contenido y scripts {#from-url-to-content-and-scripts}
+#### De URL a contenido y secuencias de comandos {#from-url-to-content-and-scripts}
 
 Con estos principios:
 
@@ -144,11 +143,11 @@ La solicitud se desglosa y se extrae la información necesaria. Se busca en el r
 
 Sling también permite que otras cosas que no sean nodos JCR sean recursos, pero esta es una característica avanzada.
 
-### Localización del script {#locating-the-script}
+### Localización de la secuencia de comandos {#locating-the-script}
 
 Cuando se encuentra el recurso apropiado (nodo de contenido), se extrae el **tipo de recurso de sling**. Esta es una ruta, que localiza la secuencia de comandos que se utilizará para procesar el contenido.
 
-La ruta especificada por el `sling:resourceType` puede ser:
+The path specified by the `sling:resourceType` can be either:
 
 * absoluto
 * relativo, a un parámetro de configuración
@@ -160,15 +159,15 @@ Todos los scripts de Sling se almacenan en subcarpetas de `/apps` o `/libs`, que
 Otros puntos a tener en cuenta son:
 
 * cuando el método (GET, POST) sea obligatorio, se especificará en mayúsculas según la especificación HTTP, por ejemplo jobs.POST.esp (ver a continuación)
-* se admiten varios motores de secuencia de comandos:
+* various script engines are supported:
 
-   * HTL (lenguaje de plantilla HTML: sistema de plantillas del lado del servidor recomendado por Adobe Experience Manager para HTML): `.html`
-   * Páginas de ECMAScript (JavaScript) (ejecución del lado del servidor): `.esp, .ecma`
+   * HTL (HTML Template Language - Adobe Experience Manager’s preferred and recommended server-side template system for HTML): `.html`
+   * ECMAScript (JavaScript) Pages (server-side execution): `.esp, .ecma`
    * Páginas del servidor Java (ejecución del lado del servidor): `.jsp`
    * Compilador de Servlet Java (ejecución del lado del servidor): `.java`
    * Plantillas JavaScript (ejecución del lado del cliente): `.jst`
 
-La lista de motores de secuencia de comandos admitidos por la instancia dada de AEM se muestra en la Consola de administración Felix ( `http://<host>:<port>/system/console/slingscripting`).
+The list of script engines supported by the given instance of AEM are listed on the Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
 
 Además, Apache Sling admite la integración con otros motores de secuencias de comandos populares (por ejemplo, Groovy, JRuby, Freemarker) y proporciona una forma de integrar nuevos motores de secuencias de comandos.
 
@@ -176,7 +175,7 @@ Utilizando el ejemplo anterior, si el `sling:resourceType` es `hr/jobs` entonces
 
 * solicitudes de GET/HEAD y direcciones URL que terminan en .html (tipos de solicitud predeterminados, formato predeterminado)
 
-   El script será /apps/hr/jobs/jobs.esp; la última sección de sling:resourceType forma el nombre del archivo.
+   The script will be /apps/hr/jobs/jobs.esp; the last section of the sling:resourceType forms the file name.
 
 * solicitudes del POST (todos los tipos de solicitud, excepto el GET/HEAD, el nombre del método debe estar en mayúsculas)
 
@@ -208,7 +207,7 @@ Utilizando el ejemplo anterior, si el `sling:resourceType` es `hr/jobs` entonces
 
 * Si no se encuentra ningún script, se utilizará el script predeterminado.
 
-   Actualmente, la representación predeterminada es compatible con texto sin formato (.txt), HTML (.html) y JSON (.json), y en todos ellos se enumerarán las propiedades del nodo (con el formato adecuado). La representación predeterminada para la extensión .res, o solicitudes sin extensión de solicitud, es agrupar el recurso (siempre que sea posible).
+   Actualmente, la representación predeterminada se admite como texto sin formato (.txt), HTML (.html) y JSON (.json), todos los cuales enumerarán las propiedades del nodo (con el formato adecuado). La representación predeterminada para la extensión .res, o solicitudes sin extensión de solicitud, es agrupar el recurso (siempre que sea posible).
 * Para la gestión de errores http (códigos 403 o 404) Sling buscará un script en:
 
    * la ubicación /apps/sling/servlet/errorhandler para [scripts personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -280,14 +279,14 @@ Si llama a la representación (la secuencia de comandos) directamente, oculte el
 
 * administración automática de métodos http distintos de la GET, que incluyen:
 
-   * POST, PUT y DELETE que se administran con una implementación predeterminada de sling
+   * POST, PUT, DELETE which are handled with a sling default implementation
    * la secuencia de comandos `POST.jsp` en la ubicación sling:resourceType
 
 * su arquitectura de código ya no es tan limpia ni está tan claramente estructurada como debería ser; de gran importancia para el desarrollo a gran escala
 
 ### API de Sling {#sling-api}
 
-Utiliza el paquete de la API de Sling, org.apache.sling.Bibliotecas de etiquetas &amp;ast; y .
+Utiliza el paquete de la API de Sling, org.apache.sling.&amp;ast;, and tag libraries.
 
 ### Referencia a elementos existentes utilizando sling:include {#referencing-existing-elements-using-sling-include}
 
@@ -338,13 +337,13 @@ Las siguientes son de interés para el desarrollo:
 
 **** ElementoUn elemento es un nodo o una propiedad.
 
-Para obtener información detallada sobre la manipulación de objetos Item, consulte [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de la interfaz javax.jcr.Item
+For detailed information on manipulating Item objects, refer to the [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) of the Interface javax.jcr.Item
 
-**Nodo (y sus propiedades)**  Los nodos y sus propiedades se definen en la especificación JCR API 2.0 (JSR 283). Almacenan contenido, definiciones de objetos, secuencias de comandos de renderización y otros datos.
+**Node (and their properties)** Nodes and their properties are defined in the JCR API 2.0 specification (JSR 283). Almacenan contenido, definiciones de objetos, secuencias de comandos de renderización y otros datos.
 
 Los nodos definen la estructura de contenido y sus propiedades almacenan el contenido real y los metadatos.
 
-Los nodos de contenido dirigen el procesamiento. Sling obtiene el nodo de contenido de la solicitud entrante. La propiedad sling:resourceType de este nodo apunta al componente de renderización Sling que se va a utilizar.
+Los nodos de contenido dirigen el procesamiento. Sling gets the content node from the incoming request. La propiedad sling:resourceType de este nodo apunta al componente de renderización Sling que se va a utilizar.
 
 Un nodo, que es un nombre JCR, también se denomina recurso en el entorno Sling.
 
@@ -362,11 +361,11 @@ Los cuadros de diálogo se crean combinando utilidades.
 
 AEM ha sido desarrollado utilizando la biblioteca de widgets de ExtJS.
 
-**** El cuadro de diálogoA es un tipo especial de utilidad.
+**** El cuadro de diálogo es un tipo especial de utilidad.
 
 Para editar contenido, AEM utiliza los cuadros de diálogo definidos por el desarrollador de la aplicación. Combinan una serie de utilidades para presentar al usuario todos los campos y acciones necesarios para editar el contenido relacionado.
 
-Los cuadros de diálogo también se utilizan para editar metadatos y por diversas herramientas administrativas.
+Dialogs are also used for editing metadata, and by various administrative tools.
 
 **** ComponenteUn componente de software es un elemento del sistema que ofrece un servicio o evento predefinido y que puede comunicarse con otros componentes.
 
@@ -385,23 +384,23 @@ Define el componente de página que se utiliza para procesar la página y el con
 
 **Componente de página (componente de nivel superior)** El componente que se utilizará para procesar la página.
 
-**** PáginaA es una &quot;instancia&quot; de una plantilla.
+**** PáginaUna página es una &quot;instancia&quot; de una plantilla.
 
 Una página tiene un nodo de jerarquía de tipo cq:Page y un nodo de contenido de tipo cq:PageContent. La propiedad sling:resourceType del nodo de contenido apunta al componente de página utilizado para procesar la página.
 
-Por ejemplo, para obtener el nombre de la página actual, puede utilizar el siguiente código en la secuencia de comandos:
+For example, to get the name of the current page, you can use following code in your script:
 
 S`tring pageName = currentPage.getName();`
 
-Con currentPage como el objeto de página actual. Para obtener más información sobre la manipulación de objetos de página, consulte [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
+Con currentPage como el objeto de página actual. For more information on manipulating Page objects, refer to the [Javadocs](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Administrador** de páginasEl administrador de páginas es una interfaz que proporciona métodos para las operaciones a nivel de página.
 
 Por ejemplo, para obtener la página contenedora de un recurso, puede utilizar el siguiente código en el script:
 
-Page myPage = pageManager.getContainPage(myResource);
+Page myPage = pageManager.getContainingPage(myResource);
 
-Con pageManager como el objeto de administrador de páginas y myResource como un objeto de recurso. Para obtener más información sobre los métodos proporcionados por el administrador de páginas, consulte [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
+Con pageManager como el objeto de administrador de páginas y myResource como un objeto de recurso. Para obtener más información sobre los métodos proporcionados por el administrador de páginas, consulte [Javadocs](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Estructura dentro del repositorio {#structure-within-the-repository}
 
@@ -451,7 +450,7 @@ Con AEM, un entorno de producción a menudo consta de dos tipos diferentes de in
 
 Dispatcher es la herramienta de Adobe tanto para el almacenamiento en caché como para el equilibrio de carga. Encontrará más información en [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
-## FileVault (sistema de revisión de origen) {#filevault-source-revision-system}
+## FileVault (sistema de revisión de la fuente) {#filevault-source-revision-system}
 
 FileVault proporciona su repositorio JCR con asignación de sistemas de archivos y control de versiones. Se puede utilizar para administrar AEM proyectos de desarrollo con compatibilidad total para almacenar y versionar código de proyecto, contenido, configuraciones, etc., en sistemas de control de versiones estándar (por ejemplo, Subversion).
 
@@ -459,7 +458,7 @@ Consulte la documentación [FileVault tool](/help/sites-developing/ht-vlttool.md
 
 ## Flujos de trabajo {#workflows}
 
-El contenido suele estar sujeto a procesos organizativos, incluidos pasos como la aprobación y la desactivación por parte de varios participantes. Estos procesos pueden representarse como flujos de trabajo, [definidos y desarrollados dentro de AEM](/help/sites-developing/workflows-models.md) y luego aplicarse a las [páginas de contenido apropiadas](/help/sites-administering/workflows.md) o [activos digitales](/help/assets/assets-workflow.md) según sea necesario.
+Your content is often subject to organizational processes, including steps such as approval and sign-off by various participants. Estos procesos pueden representarse como flujos de trabajo, [definidos y desarrollados dentro de AEM](/help/sites-developing/workflows-models.md) y luego aplicarse a las [páginas de contenido apropiadas](/help/sites-administering/workflows.md) o [activos digitales](/help/assets/assets-workflow.md) según sea necesario.
 
 El motor de flujo de trabajo se utiliza para administrar la implementación de los flujos de trabajo y su aplicación posterior al contenido.
 

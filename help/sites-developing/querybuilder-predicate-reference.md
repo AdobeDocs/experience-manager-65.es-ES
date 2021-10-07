@@ -1,24 +1,23 @@
 ---
 title: Referencia de predicados del generador de consultas
-seo-title: Referencia de predicados del generador de consultas
+seo-title: Query Builder Predicate Reference
 description: Referencia de predicado completa para la API de Query Builder.
-seo-description: Referencia de predicado completa para la API de Query Builder.
+seo-description: Complete predicate reference for the Query Builder API.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
-translation-type: tm+mt
-source-git-commit: 054b49fb8aacb9e267ed23552d788f72123ed3b3
+exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2310'
 ht-degree: 3%
 
 ---
 
-
-# Referencia del predicado del generador de consultas{#query-builder-predicate-reference}
+# Referencia de predicados del generador de consultas{#query-builder-predicate-reference}
 
 ## General {#general}
 
@@ -84,7 +83,7 @@ contentfragmentSe puede utilizar con cualquier valor para comprobar si hay fragm
 
 ### dateComparison {#datecomparison}
 
-Compara dos propiedades JCR DATE entre sí. Puede comprobar si son iguales, desiguales, mayores o mayores que o iguales.
+Compara dos propiedades JCR DATE entre sí. Puede comprobar si son iguales, desiguales, buenos o buenos que o iguales.
 
 Se trata de un predicado de solo filtrado y no puede aprovechar un índice de búsqueda.
 
@@ -100,7 +99,7 @@ Se trata de un predicado de solo filtrado y no puede aprovechar un índice de b�
 
 * **operation**
 
-   &quot; `equals`&quot; para la coincidencia exacta, &quot; `!=`&quot; para la comparación de desigualdad, &quot; `greater`&quot; para la propiedad1 mayor que la propiedad2, &quot; `>=`&quot; para la propiedad1 mayor o igual que la propiedad2. El valor predeterminado es &quot; `equals`&quot;.
+   &quot; `equals`&quot; para la coincidencia exacta, &quot; `!=`&quot; para la comparación de desigualdad, &quot; `greater`&quot; para la propiedad1 buena que la propiedad2, &quot; `>=`&quot; para la propiedad1 buena o igual a la propiedad2. El valor predeterminado es &quot; `equals`&quot;.
 
 ### daterange {#daterange}
 
@@ -222,7 +221,7 @@ Conceptualmente es `fulltext AND ( (path AND type) OR (path AND type) )`. Tenga 
 
 ### hasPermission {#haspermission}
 
-Restringe el resultado a elementos en los que la sesión actual tiene los [privilegios JCR especificados.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Restringe el resultado a elementos en los que la sesión actual tiene los [privilegios JCR especificados.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Se trata de un predicado de solo filtrado y no puede aprovechar un índice de búsqueda. No admite la extracción de facetas.
 
@@ -272,7 +271,7 @@ Se trata de un predicado de solo filtrado y no puede aprovechar un índice de b�
 
    ruta de la recopilación de recursos de Sling
 
-### nombre de nodo {#nodename}
+### nodename {#nodename}
 
 Coincide con los nombres de nodo de JCR.
 
@@ -286,7 +285,7 @@ Admite la extracción de facetas. Proporcionará bloques para cada nombre de nod
 
 ### notexpired {#notexpired}
 
-Coincide con elementos comprobando si una propiedad JCR DATE es mayor o igual que la hora actual del servidor. Esto se puede usar para comprobar una propiedad de fecha de tipo &quot; `expiresAt`&quot; y limitar solo a las que aún no han caducado ( `notexpired=true`) o que ya han caducado ( `notexpired=false`).
+Coincide con elementos comprobando si una propiedad JCR DATE es buena o igual a la hora del servidor actual. Esto se puede usar para comprobar una propiedad de fecha de tipo &quot; `expiresAt`&quot; y limitar solo a las que aún no han caducado ( `notexpired=true`) o que ya han caducado ( `notexpired=false`).
 
 No admite el filtrado.
 
@@ -302,7 +301,7 @@ Admite la extracción de facetas del mismo modo que el predicado de intervalo de
 
    ruta relativa a la propiedad `DATE` para comprobar (obligatorio)
 
-### pedido por {#orderby}
+### orderby {#orderby}
 
 Permite ordenar el resultado. Si se requiere ordenar por varias propiedades, este predicado debe agregarse varias veces utilizando el prefijo numérico, como `1_orderby=first`, `2_oderby=second`.
 
@@ -320,7 +319,7 @@ Permite ordenar el resultado. Si se requiere ordenar por varias propiedades, est
 
    si se establece en &quot; `ignore`&quot;, la clasificación no distingue entre mayúsculas y minúsculas, lo que significa que &quot;a&quot; viene antes que &quot;B&quot;; si está vacío o no se tiene en cuenta, la ordenación distingue entre mayúsculas y minúsculas, lo que significa que &quot;B&quot; viene antes que &quot;a&quot;.
 
-### path {#path}
+### ruta {#path}
 
 Búsquedas dentro de una ruta determinada.
 
@@ -328,7 +327,7 @@ No admite la extracción de facetas.
 
 #### Propiedades {#properties-14}
 
-* **ruta**
+* **path**
 
    patrón de ruta; dependiendo de lo exacto, el subárbol completo coincidirá (como anexar `//*` en xpath, pero tenga en cuenta que esto no incluye la ruta base) (exacto=false, predeterminado) o solo coincidirá una ruta exacta, que puede incluir caracteres comodín ( `*`); si se establece self, se buscará en todo el subárbol, incluido el nodo base
 
@@ -438,7 +437,7 @@ Admite la extracción de facetas del mismo modo que el predicado de intervalo de
 
    fecha menor enlazada en milisegundos o `1s 2m 3h 4d 5w 6M 7y` (un segundo, dos minutos, tres horas, cuatro días, cinco semanas, seis meses, siete años) en relación con el tiempo actual del servidor, utilice &quot;-&quot; para el desplazamiento negativo
 
-### raíz {#root}
+### root {#root}
 
 Grupo de predicados raíz. Admite todas las funciones de un grupo y permite establecer parámetros de consulta globales.
 
@@ -503,7 +502,7 @@ No admite el filtrado. No admite la extracción de facetas.
 #### Propiedades {#properties-20}
 
 * ****
-ruta similar absoluta al nodo para el que se buscan nodos similares
+ruta similar absoluta al nodo para el que encontrar nodos similares
 
 * ****
 ruta relativa de locala a un nodo descendiente o 

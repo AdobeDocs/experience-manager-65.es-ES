@@ -1,8 +1,8 @@
 ---
 title: Tipos de nodos personalizados
-seo-title: Tipos de nodos personalizados
+seo-title: Custom Node Types
 description: AEM se basa en Sling y utiliza un repositorio JCR con tipos de nodos ofrecidos por ambos, pero AEM también proporciona una gama de tipos de nodos personalizados
-seo-description: AEM se basa en Sling y utiliza un repositorio JCR con tipos de nodos ofrecidos por ambos, pero AEM también proporciona una gama de tipos de nodos personalizados
+seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1877'
 ht-degree: 9%
 
 ---
@@ -21,10 +21,10 @@ ht-degree: 9%
 
 Debido a que AEM se basa en Sling y utiliza un repositorio JCR, los tipos de nodos ofrecidos por ambos están disponibles para su uso:
 
-* [Tipos de nodos JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [Tipos de nodos JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Tipos de nodos Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Además de estos. AEM proporciona una amplia gama de tipos de nodos personalizados.
+Además de estos. AEM provides a range of custom node types.
 
 ## Auditoría {#audit}
 
@@ -60,7 +60,7 @@ Define el tipo de nodo de un nodo de evento de auditoría.
 
 **Descripción**
 
-Define el tipo de nodo de un nodo de comentario.
+Defines the nodetype of a comment node.
 
 * `@prop userIdentifier`
 
@@ -170,8 +170,8 @@ Define el nodo predeterminado para el contenido de la página, con las propiedad
 * `@prop hideInNav` - Especifica si la página debe estar oculta en la navegación.
 * `@prop onTime` - Hora a la que esta página se convierte en válida.
 * `@prop offTime` - Hora a la que esta página se invalida.
-* `@prop cq:lastModified` - Fecha en la que se modificó la página (o sus párrafos) por última vez.
-* `@prop cq:lastModifiedBy` : Último usuario que cambia la página (o sus párrafos).
+* `@prop cq:lastModified` - Date the page (or its paragraphs) was last modified.
+* `@prop cq:lastModifiedBy` - Last user to change the page (or its paragraphs).
 * `@prop jcr:language` - El idioma del contenido de la página.
 
 >[!NOTE]
@@ -199,7 +199,7 @@ Define el nodo predeterminado para el contenido de la página, con las propiedad
 Define una plantilla de CQ.
 
 * `@node jcr:content` - Contenido predeterminado para páginas nuevas.
-* `@node icon.png` - Archivo que contiene un icono característico.
+* `@node icon.png` - A file that holds a characteristic icon.
 * `@node thumbnail.png` - Archivo que contiene una imagen en miniatura característica.
 * `@node workflows` - Asignación automática de la configuración del flujo de trabajo. La configuración seguirá la siguiente estructura:
    * `+ workflows`
@@ -241,9 +241,9 @@ Define un componente CQ.
 * `@node cq:editConfig` - La configuración que define los parámetros de la barra de edición.
 * `@node cq:childEditConfig` - La configuración de edición heredada por los componentes secundarios.
 * `@node cq:htmlTag` : Define atributos de etiqueta adicionales que se agregan a la  `div` etiqueta &quot;circundante&quot; cuando se incluye el componente.
-* `@node icon.png`- Archivo que contiene un icono característico.
-* `@node thumbnail.png` - Archivo que contiene una imagen en miniatura característica.
-* `@prop allowedParents` : patrones de expresión regulares para determinar las rutas de los componentes permitidos como componentes principales.
+* `@node icon.png`- A file that holds a characteristic icon.
+* `@node thumbnail.png` - A file that holds a characteristic thumbnail image.
+* `@prop allowedParents` - Regular expression patterns to determine the path(s) of components that are allowed as parent components.
 * `@prop allowedChildren` - Patrones de expresión regulares para determinar las rutas de los componentes permitidos como componentes secundarios.
 * `@node virtual` - Contiene subnodos que reflejan componentes virtuales utilizados para arrastrar y soltar el componente.
 * `@prop componentGroup` - Nombre del grupo de componentes, utilizado para arrastrar y soltar el componente.
@@ -318,7 +318,7 @@ Define la configuración de la &quot;barra de edición&quot;.
 
 **Descripción**
 
-Configura un destino de colocación de un componente. El nombre de este nodo se utilizará como ID para arrastrar y soltar.
+Configures one drop target of a component. The name of the this node will be used as an ID for drag and drop.
 
 * `@prop accept` - Lista de tipos de mime aceptados por este objetivo de colocación; p. ej.  `["image/*"]`
 * `@prop groups` - Lista de grupos de arrastrar y soltar que aceptan un origen.
@@ -343,7 +343,7 @@ Define un componente CQ virtual. Actualmente, solo se utilizan para el nuevo asi
 * `@node cq:editConfig` - Edite la configuración que define los parámetros de la barra de edición.
 * `@node cq:childEditConfig`- Edite la configuración heredada por los componentes secundarios.
 * `@node icon.png` - Archivo que contiene un icono característico.
-* `@node thumbnail.png` - Archivo que contiene una imagen en miniatura característica.
+* `@node thumbnail.png` - A file that holds a characteristic thumbnail image.
 * `@prop allowedParents` : patrones de expresión regulares para determinar las rutas de los componentes permitidos como componentes principales.
 * `@prop allowedChildren` - Patrones de expresión regulares para determinar las rutas de los componentes permitidos como componentes secundarios.
 * `@prop componentGroup` - Nombre del grupo de componentes para arrastrar y soltar el componente.
@@ -365,7 +365,7 @@ Define un componente CQ virtual. Actualmente, solo se utilizan para el nuevo asi
 
 **Descripción**
 
-Define los oyentes (del lado del cliente) que se ejecutarán en un evento de edición. Los valores deben hacer referencia a una función de escucha del lado del cliente válida o contener un acceso directo predefinido:
+Define los oyentes (del lado del cliente) que se ejecutarán en un evento de edición. The values must either reference a valid client side listener function or contain a predefined shortcut:
 
 * `REFRESH_PAGE`
 * `REFRESH_SELF`
@@ -417,7 +417,7 @@ Recurso DAM.
 `+ jcr:content (dam:AssetContent) = dam:AssetContent copy primary`
 `+ * (nt:base) = nt:base version`
 
-### dam:Miniatura {#dam-thumbnail}
+### dam:Thumbnail {#dam-thumbnail}
 
 **Descripción**
 
@@ -472,7 +472,7 @@ El tipo de nodo `cq:contentPage` contiene las definiciones de propiedad y nodo s
 Los elementos de un `cq:Cq4ContentPage` son:
 
 * `@prop cq:csd` - El CSD de ContentBus de la página.
-* `@node cq:content` - El contenido de la página. Este nodo secundario no existe si el nodo de página está en estado &quot;Existente sin contenido&quot; o &quot;Eliminado&quot;.
+* `@node cq:content` - El contenido de la página. This child node does not exist if the page node is in state &quot;Existing without content&quot; or &quot;Deleted&quot;.
 * `@node cq:attributes` - La lista de atributos de página, anteriormente conocidos como etiquetas de versión. Este nodo es obligatorio para el tipo cq:contentPage . Se crea una versión del nodo attributes cuando la página tiene un nodo al que se le asigna una versión.
 
 **Definición**
@@ -578,7 +578,7 @@ Define una mezcla de LiveSync. Si un nodo participa en una LiveRelationship con 
 `+ * (cq:LiveSyncAction) = cq:LiveSyncAction`
 `+ cq:LiveSyncConfig (nt:base) = cq:LiveSyncConfig`
 
-### cq:LiveSyncCanceled {#cq-livesynccancelled}
+### cq:LiveSyncCancelled {#cq-livesynccancelled}
 
 **Descripción**
 
@@ -617,7 +617,7 @@ Configuración de Live Sync.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Para AEM 5.4 añadir al final de la lista:
+For AEM 5.4 add to the end of list:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
@@ -770,7 +770,7 @@ Define un tipo de mezcla que marca los archivos que se pueden abrir con el extra
 
 **Descripción**
 
-Define una sola etiqueta, pero también puede contener etiquetas, creando así una taxonomía
+Defines a single tag, but can also contain tags, thus creating a taxonomy
 
 **Definición**
 
@@ -797,7 +797,7 @@ Mezcla de base abstracta para contenido etiquetable.
 
 **Descripción**
 
-Solo los autores o propietarios pueden etiquetar el contenido (etiquetado moderado/administrado).
+Only authors/owners are allowed to tag the content (moderated/administered tagging).
 
 **Definición**
 
@@ -807,7 +807,7 @@ Solo los autores o propietarios pueden etiquetar el contenido (etiquetado modera
 
 **Descripción**
 
-Cualquier usuario/sitio web público puede etiquetar el contenido (estilo Web2.0), usado dentro de cq:userContent.
+Any user/public website can tag the content (Web2.0 style), used inside cq:userContent.
 
 **Definición**
 
@@ -942,11 +942,11 @@ Campo
 
 ## Wiki {#wiki}
 
-### wiki:Tema {#wiki-topic}
+### wiki:tema {#wiki-topic}
 
 **Descripción**
 
-Tema Wiki
+Wiki topic
 
 **Definición**
 
