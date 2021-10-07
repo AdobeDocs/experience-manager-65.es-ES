@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
-feature: Publicación,Configuración
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+feature: Publishing,Configuration
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 * Utilice la CDN (red de entrega de contenido) incluida en la Adobe como parte de su licencia de Dynamic Media.
 * Utilice un dominio dedicado (que no sea company-h.assetsadobe#.com).
 
-   Si ya tiene un dominio dedicado, puede optar por utilizar la asistencia técnica.
+   Si ya tiene un dominio dedicado, puede optar por utilizar el servicio de asistencia al cliente de Adobe.
 
    Si no tiene un dominio específico, Adobe tiene previsto programar la transición a HTTP/2 en 2018.
 
@@ -62,7 +62,7 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
 Se inicia la solicitud para cambiar a HTTP/2; no se realiza automáticamente.
 
-1. Para cambiar a HTTP/2, inicie una solicitud del Servicio de atención al cliente de Adobe. Consulte [Acceso al portal de soporte de Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. Para cambiar a HTTP/2, inicie una solicitud de asistencia al cliente de Adobe. Consulte [Acceso al portal de soporte de Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Proporcione la siguiente información en su solicitud de asistencia:
 
@@ -71,7 +71,7 @@ Se inicia la solicitud para cambiar a HTTP/2; no se realiza automáticamente.
       1. Compruebe que utiliza HTTPS seguro para solicitudes de medios enriquecidos.
       1. Compruebe que utiliza la CDN mediante la Adobe y que no se administran con una relación directa.
       1. Compruebe que utiliza un dominio dedicado. Si usa Dynamic Media, usará un dominio dedicado.
-   1. El Servicio de atención al cliente lo añade a la lista de espera de clientes HTTP/2 en función del orden en que se enviaron las solicitudes.
+   1. La asistencia al cliente le agrega a la lista de espera de clientes HTTP/2 en función del orden en que se enviaron las solicitudes.
    1. Cuando el Adobe esté listo para gestionar su solicitud, el Servicio de atención al cliente se pondrá en contacto con usted para coordinar la transición y establecer una fecha objetivo.
    1. Se le notifica una vez finalizada y puede verificar la transición correcta a HTTP2.
 
@@ -82,7 +82,7 @@ Se inicia la solicitud para cambiar a HTTP/2; no se realiza automáticamente.
 
 ## ¿Cuándo puedo esperar que se pase a HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Las solicitudes se procesan en el orden en que se reciben en el Servicio de atención al cliente.
+Las solicitudes se procesan en el orden en que se reciben en la Asistencia al cliente.
 
 >[!NOTE]
 >

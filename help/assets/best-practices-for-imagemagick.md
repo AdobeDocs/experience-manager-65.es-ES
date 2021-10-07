@@ -3,18 +3,18 @@ title: Instalación y configuración de ImageMagick
 description: Obtenga información sobre el software ImageMagick, cómo instalarlo, configurar el paso del proceso de la línea de comandos y utilizarlo para editar, componer y generar miniaturas de imágenes.
 contentOwner: AG
 role: Admin
-feature: Representaciones,Herramientas para desarrolladores
+feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
 
 # Instale y configure ImageMagick para que funcione con [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
-ImageMagick es un complemento de software para crear, editar, componer o convertir imágenes de mapa de bits. Puede leer y escribir imágenes en varios formatos (más de 200), incluidos PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF y SVG. Utilice ImageMagick para cambiar el tamaño, girar, espejar, rotar, distorsionar, distorsionar y transformar imágenes. También puede ajustar los colores de la imagen, aplicar diversos efectos especiales o dibujar texto, líneas, polígonos, elipses y curvas mediante ImageMagick.
+ImageMagick es un complemento de software para crear, editar, componer o convertir imágenes de mapa de bits. Puede leer y escribir imágenes en varios formatos (más de 200), como PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF y SVG. Utilice ImageMagick para cambiar el tamaño, girar, espejar, rotar, distorsionar, distorsionar y transformar imágenes. También puede ajustar los colores de la imagen, aplicar diversos efectos especiales o dibujar texto, líneas, polígonos, elipses y curvas mediante ImageMagick.
 
 Utilice el controlador de medios [!DNL Adobe Experience Manager] de la línea de comandos para procesar imágenes a través de ImageMagick. Para trabajar con varios formatos de archivo utilizando ImageMagick, consulte [Prácticas recomendadas sobre formatos de archivo de recursos](/help/assets/assets-file-format-best-practices.md). Para obtener información sobre todos los formatos de archivo admitidos, consulte [Formatos compatibles con Assets](/help/assets/assets-formats.md).
 
@@ -22,7 +22,7 @@ Para procesar archivos de gran tamaño con ImageMagick, considere requisitos de 
 
 >[!NOTE]
 >
->Si utiliza [!DNL Experience Manager] en [!DNL Adobe Managed Services] (AMS), póngase en contacto con el Servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos PSD o PSB de alta resolución. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
+>Si utiliza [!DNL Experience Manager] en [!DNL Adobe Managed Services] (AMS), póngase en contacto con el servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos de PSD o PSB de alta resolución. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
 ## Instalar ImageMagick {#installing-imagemagick}
 
@@ -36,10 +36,10 @@ Hay varias versiones de los archivos de instalación de ImageMagic disponibles p
 
 ## Configuración del paso del proceso de la línea de comandos {#set-up-the-command-line-process-step}
 
-Puede configurar el paso del proceso de la línea de comandos para su caso de uso específico. Realice estos pasos para generar una imagen y miniaturas volteadas (140x100, 48x48, 319x319 y 1280x1280) cada vez que agregue un archivo de imagen JPEG a `/content/dam` en el servidor [!DNL Experience Manager]:
+Puede configurar el paso del proceso de la línea de comandos para su caso de uso específico. Realice estos pasos para generar una imagen y miniaturas volteadas (140 x 100, 48 x 48, 319 x 319 y 1280 x 1280) cada vez que agregue un archivo de imagen de JPEG a `/content/dam` en el servidor [!DNL Experience Manager]:
 
 1. En el servidor [!DNL Experience Manager], vaya a la consola Flujo de trabajo (`https://[aem_server]:[port]/workflow`) y abra el modelo de flujo de trabajo **[!UICONTROL Recurso de actualización de DAM]**.
-1. En el modelo de flujo de trabajo **[!UICONTROL DAM Update Asset]**, abra el paso **[!UICONTROL Miniaturas EPS (con tecnología ImageMagick)]**.
+1. En el modelo de flujo de trabajo **[!UICONTROL DAM Update Asset]**, abra el paso **[!UICONTROL EPS thumbnails (impulsado por ImageMagick)]**.
 1. En la **[!UICONTROL pestaña Argumentos]**, añada `image/jpeg` a la lista **[!UICONTROL Tipos de MIME]**.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
@@ -75,7 +75,7 @@ Puede configurar el paso del proceso de la línea de comandos para su caso de us
 
 1. Guarde el flujo de trabajo.
 
-1. Para comprobar el procesamiento correcto, cargue una imagen JPG en [!DNL Assets]. Una vez completado el procesamiento, compruebe si se genera o no una imagen volteada y las representaciones.
+1. Para comprobar el procesamiento correcto, cargue una imagen de JPG en [!DNL Assets]. Una vez completado el procesamiento, compruebe si se genera o no una imagen volteada y las representaciones.
 
 ## Mitigación de vulnerabilidades de seguridad {#mitigating-security-vulnerabilities}
 

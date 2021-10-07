@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -64,13 +64,13 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
       Para encontrar sus dominios, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) y luego inicie sesión en la cuenta o cuentas de su empresa. A continuación, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**. Busque el campo denominado **[!UICONTROL Published Server Name]**. Si está utilizando un dominio genérico de Dynamic Media, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
 
-1. La asistencia técnica le añade a la lista de espera de clientes HTTP/2 en función del orden en que se enviaron las solicitudes.
+1. La asistencia al cliente de Adobe le agrega a la lista de espera de clientes HTTP/2 en función del orden en que se enviaron las solicitudes.
 1. Cuando el Adobe esté listo para gestionar su solicitud, el equipo de asistencia técnica se pondrá en contacto con usted para coordinar la transición y establecer una fecha objetivo.
 1. Se le notificará una vez finalizada y podrá verificar que la transición a HTTP2 se ha realizado correctamente.
 
 ## ¿Cuándo puedo esperar que se pase a HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Las solicitudes se procesan en el orden en que son recibidas por el servicio de asistencia técnica.
+Las solicitudes se procesan en el orden en que son recibidas por el Servicio de atención al cliente de Adobe.
 
 >[!NOTE]
 >

@@ -4,11 +4,11 @@ description: Sugerencias y sugerencias sobre [!DNL Experience Manager] configura
 contentOwner: AG
 mini-toc-levels: 1
 role: Architect, Admin
-feature: Administración de activos
+feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2741'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Adobe recomienda habilitar HTTPS porque muchas empresas tienen cortafuegos que o
 Principalmente, su estrategia de optimización de red depende de la cantidad de ancho de banda disponible y de la carga en su instancia [!DNL Experience Manager]. Las opciones de configuración comunes, incluidos los cortafuegos o los proxies, pueden ayudar a mejorar el rendimiento de la red. Estos son algunos puntos clave a tener en cuenta:
 
 * Dependiendo del tipo de instancia (pequeño, moderado, grande), asegúrese de que tiene suficiente ancho de banda de red para la instancia de Experience Manager. La asignación adecuada del ancho de banda es especialmente importante si [!DNL Experience Manager] está alojado en AWS.
-* Si la instancia [!DNL Experience Manager] está alojada en AWS, puede beneficiarse si tiene una política de escalado versátil. Actualice la instancia si los usuarios esperan una carga alta. Desactívelo para una carga moderada/baja.
+* Si la instancia [!DNL Experience Manager] está alojada en AWS, puede beneficiarse de tener una política de escalado versátil. Actualice la instancia si los usuarios esperan una carga alta. Desactívelo para una carga moderada/baja.
 * HTTPS: La mayoría de los usuarios tienen cortafuegos que olfatean el tráfico HTTP, lo que puede afectar negativamente a la carga de archivos o incluso a los archivos dañados durante la operación de carga.
 * Cargas de archivos grandes: Asegúrese de que los usuarios tengan conexiones cableadas a la red (las conexiones WiFi se saturan rápidamente).
 
@@ -212,7 +212,7 @@ Además, establezca la ruta de acceso de la carpeta temporal de ImageMagick en e
 >
 >Los archivos ImageMagick `policy.xml` y `configure.xml` están disponibles en `/usr/lib64/ImageMagick-&#42;/config/` en lugar de en `/etc/ImageMagick/`. Consulte la [documentación de ImageMagick](https://www.imagemagick.org/script/resources.php) para obtener información sobre la ubicación de los archivos de configuración.
 
-Si utiliza [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con el Servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos PSD o PSB de gran tamaño. Trabaje con el representante del Servicio de atención al cliente de Adobe para implementar estas prácticas recomendadas para su implementación de AMS y elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
+Si utiliza [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con el servicio de asistencia al cliente de Adobe si tiene previsto procesar muchos archivos de PSD o PSB de gran tamaño. Trabaje con el representante de asistencia al cliente de Adobe para implementar estas prácticas recomendadas para su implementación de AMS y elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
 ### XMP reescritura {#xmp-writeback}
 
@@ -255,7 +255,7 @@ Se pueden realizar algunas optimizaciones en las configuraciones de índice Oak 
 1. Agregue una propiedad `String[]` `excludedPaths` con los valores `/var`, `/etc/workflow/instances` y `/etc/replication`.
 1. Vaya a `/oak:index/damAssetLucene`. Agregue una propiedad `String[]` `includedPaths` con el valor `/content/dam`. Guarde los cambios.
 
-Si los usuarios no necesitan realizar búsquedas de texto completo de los recursos, por ejemplo, buscando texto en documentos PDF, desactívelo. Se mejora el rendimiento del índice al deshabilitar la indexación de texto completo. Para desactivar la extracción de texto [!DNL Apache Lucene], siga estos pasos:
+Si los usuarios no necesitan realizar búsquedas de texto completo de recursos, por ejemplo, buscando texto en documentos del PDF, desactívelo. Se mejora el rendimiento del índice al deshabilitar la indexación de texto completo. Para desactivar la extracción de texto [!DNL Apache Lucene], siga estos pasos:
 
 1. En la interfaz [!DNL Experience Manager], acceda al [!UICONTROL Administrador de paquetes].
 1. Cargue e instale el paquete disponible en [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).

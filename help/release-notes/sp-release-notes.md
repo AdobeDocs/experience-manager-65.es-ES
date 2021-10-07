@@ -4,10 +4,10 @@ description: Notas de versión específicas del  [!DNL Adobe Experience Manager]
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '4392'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -38,7 +38,7 @@ Las funciones y mejoras clave introducidas en [!DNL Adobe Experience Manager] 6.
 
 * **Vincule las opciones de uso compartido para descargar recursos o representaciones**: Al compartir recursos y colecciones como vínculos, los usuarios pueden elegir si permitir la descarga de recursos originales, sus representaciones o ambas opciones utilizando el vínculo compartido. Además, los usuarios que descargan los recursos compartidos con ellos mediante un vínculo obtienen la opción de descargar solo los recursos originales, solo las representaciones o ambos.
 
-* **Limitar subrecursos generados**: Los administradores pueden limitar el número de subrecursos que  [!DNL Experience Manager] generan para recursos compuestos como archivos PDF, PowerPoint, InDesign y Keynote. Consulte [Administrar recursos compuestos](/help/assets/managing-linked-subassets.md#generate-subassets).
+* **Limitar subrecursos generados**: Los administradores pueden limitar el número de subrecursos que  [!DNL Experience Manager] generan para los recursos compuestos, como los archivos PDF, PowerPoint, InDesign y Keynote. Consulte [Administrar recursos compuestos](/help/assets/managing-linked-subassets.md#generate-subassets).
 
 * **compatibilidad** Camera Raw: Hay disponible un nuevo  [!DNL Camera Raw] paquete compatible con la versión  [!DNL Adobe Camera Raw] 10.4. Consulte  [Procesamiento de imágenes mediante [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
@@ -294,13 +294,13 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **Administración de correspondencia**
 
-* Retraso en la visualización de caracteres en la pestaña [!UICONTROL Data] así como en la vista previa de la carta HTML (NPR-37020).
+* Retraso en la visualización de caracteres en la pestaña [!UICONTROL Data], así como en la vista previa de la letra del HTML (NPR-37020).
 
 * Cuando edita un fragmento de documento de texto, las nuevas palabras se muestran como etiquetas HTML después de guardar el fragmento (NPR-36837).
 
 * No se pueden ver las letras guardadas como borradores (NPR-36816).
 
-* Cuando edita un fragmento de documento de texto y luego obtiene una vista previa de la carta, AEM Forms muestra el idioma de expresión en la vista previa de la carta HTML (CQ-4322331).
+* Cuando edita un fragmento de documento de texto y luego obtiene una vista previa de la carta, AEM Forms muestra el idioma de expresión en la vista previa de la carta del HTML (CQ-4322331).
 
 * Problemas al procesar datos con una plantilla de carta de autoservicio (NPR-37161).
 
@@ -358,7 +358,7 @@ Para obtener información sobre las actualizaciones de seguridad, consulte la [[
 **Requisitos de configuración y más información**
 
 * El Experience Manager 6.5.10.0 requiere el Experience Manager 6.5. Consulte [documentación de actualización](/help/sites-deploying/upgrade.md) para obtener instrucciones detalladas.
-* La descarga del Service Pack está disponible en el Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* La descarga del Service Pack está disponible en el Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html).
 * En una implementación con MongoDB y varias instancias, instale el Experience Manager 6.5.10.0 en una de las instancias de creación mediante el Administrador de paquetes.
 
 >[!NOTE]
@@ -411,7 +411,7 @@ Para saber cuáles son las plataformas certificadas para funcionar con esta vers
 
 >[!NOTE]
 >
->Omita este paso si no utiliza Experience Manager Forms. Las correcciones en Experience Manager Forms se entregan mediante un paquete de complementos independiente una semana después de la versión programada del Service Pack [!DNL Experience Manager].
+>Omita este paso si no utiliza Experience Manager Forms. Las correcciones en Experience Manager Forms se entregan a través de un paquete de complementos independiente una semana después del [!DNL Experience Manager] lanzamiento programado del Service Pack.
 
 1. Asegúrese de que ha instalado el Service Pack de Adobe Experience Manager.
 1. Descargue el paquete de complementos de Forms correspondiente que aparece en las [versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) para su sistema operativo.
@@ -427,7 +427,7 @@ Para saber cuáles son las plataformas certificadas para funcionar con esta vers
 >
 >Omita este paso si no utiliza AEM Forms en JEE. Las correcciones en Adobe Experience Manager Forms en JEE se entregan mediante un instalador independiente.
 
-Para obtener información sobre la instalación del instalador acumulativo para Forms Experience Manager en JEE y la configuración posterior a la implementación, consulte las [notas de la versión](jee-patch-installer-65.md).
+Para obtener información sobre la instalación del instalador acumulativo para Experience Manager Forms en JEE y la configuración posterior a la implementación, consulte las [notas de la versión](jee-patch-installer-65.md).
 
 >[!NOTE]
 >
@@ -461,8 +461,8 @@ Revise si utiliza una función o una capacidad en una implementación. Además, 
 
 | Área | Función | Reemplazo |
 |---|---|---|
-| Integraciones | La pantalla de inclusión **[!UICONTROL AEM Cloud Services]** está en desuso ya que la integración [!DNL Experience Manager] y [!DNL Adobe Target] se actualiza en Experience Manager 6.5. La integración es compatible con la API de Adobe Target Standard. La API utiliza la autenticación mediante el Adobe IMS y [!DNL Adobe I/O] y admite la función creciente de Adobe Launch para instrumentar páginas [!DNL Experience Manager] para el análisis y la personalización. El asistente de inclusión carece de relevancia funcional. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones [!DNL Adobe I/O] a través de los respectivos servicios en la nube [!DNL Experience Manager]. |
-| Conectores | El conector JCR de Adobe para Microsoft® SharePoint 2010 y Microsoft® SharePoint 2013 está obsoleto para Experience Manager 6.5. | N/D |
+| Integraciones | La pantalla de inclusión **[!UICONTROL AEM Cloud Services]** está en desuso ya que la integración [!DNL Experience Manager] y [!DNL Adobe Target] se actualiza en Experience Manager 6.5. La integración es compatible con la API de Adobe Target Standard. La API utiliza la autenticación mediante Adobe IMS y [!DNL Adobe I/O] y admite la función creciente de Launch de Adobe para instrumentar páginas [!DNL Experience Manager] para el análisis y la personalización. El asistente de inclusión carece de relevancia funcional. | Configure las conexiones del sistema, la autenticación IMS de Adobe y las integraciones [!DNL Adobe I/O] a través de los respectivos servicios en la nube [!DNL Experience Manager]. |
+| Conectores | El conector JCR de Adobe para Microsoft® SharePoint 2010 y Microsoft® SharePoint 2013 está obsoleto para el Experience Manager 6.5. | N/D |
 
 ## Problemas conocidos {#known-issues}
 
@@ -499,7 +499,7 @@ Los siguientes documentos de texto enumeran los paquetes OSGi y los paquetes de 
 Estos sitios web solo están disponibles para los clientes. Si es un cliente y necesita obtener acceso, póngase en contacto con su administrador de cuentas de Adobe.
 
 * [Descarga de productos en licensing.adobe.com](https://licensing.adobe.com/)
-* Consulte [cómo ponerse en contacto con el Servicio de atención al cliente de Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* Consulte [cómo ponerse en contacto con el servicio de asistencia al cliente de Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >

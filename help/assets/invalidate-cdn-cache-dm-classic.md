@@ -1,6 +1,6 @@
 ---
 title: Invalidar la caché de la red de entrega de contenido mediante Dynamic Media Classic
-description: La invalidación del contenido almacenado en caché de la CDN (red de distribución de contenido) le permite actualizar rápidamente los recursos que entrega Dynamic Media Classic, en lugar de esperar a que caduque la caché.
+description: Al invalidar el contenido almacenado en caché de la CDN (red de distribución de contenido), puede actualizar rápidamente los recursos que entrega Dynamic Media Classic, en lugar de esperar a que caduque la caché.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
@@ -8,9 +8,9 @@ content-type: reference
 feature: CDN Cache,Dynamic Media Classic
 role: User, Admin
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '733'
 ht-degree: 12%
 
 ---
@@ -31,9 +31,9 @@ Consulte también [Información general de caché en Dynamic Media Classic (Scen
 
 **Para invalidar la caché de CDN mediante Dynamic Media Classic:**
 
-1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) e inicie sesión en su cuenta.
+1. Abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) y luego inicie sesión en su cuenta.
 
-   Adobe proporcionó las credenciales y el inicio de sesión en el momento de la provisión. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
+   Adobe proporcionó las credenciales y el inicio de sesión en el momento de la provisión. Si no tiene esta información, póngase en contacto con el servicio de atención al cliente de Adobe.
 
 1. Cerca de la esquina superior derecha de la página, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración general]**.
 1. En la página Configuración general de la aplicación , en el encabezado del grupo Servidores , busque el cuadro de texto **[!UICONTROL Plantilla de invalidación de CDN]**.

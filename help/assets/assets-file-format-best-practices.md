@@ -3,11 +3,11 @@ title: Prácticas recomendadas para procesar los formatos de archivo admitidos
 description: Prácticas recomendadas para procesar los distintos tipos de archivos admitidos con [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Admin
-feature: Administración de recursos,Herramientas para desarrolladores
+feature: Asset Management,Developer Tools
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ Para ver los formatos de archivo compatibles, consulte [Formatos compatibles con
 
 >[!TIP]
 >
->Si utiliza [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con el Servicio de atención al cliente de Adobe si tiene previsto procesar muchos archivos PSD o PSB de gran tamaño. Trabaje con el representante del Servicio de atención al cliente de Adobe para implementar estas prácticas recomendadas para su implementación de AMS y elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
+>Si utiliza [!DNL Experience Manager] en Adobe Managed Services (AMS), póngase en contacto con el servicio de asistencia al cliente de Adobe si tiene previsto procesar muchos archivos de PSD o PSB de gran tamaño. Trabaje con el representante de asistencia al cliente de Adobe para implementar estas prácticas recomendadas para su implementación de AMS y elegir las mejores herramientas y modelos posibles para los formatos propietarios de Adobe. [!DNL Experience Manager] es posible que no procese archivos PSB de alta resolución que superen los 30000 x 23000 píxeles.
 
 ## [!DNL Adobe Camera Raw] biblioteca {#adobe-camera-raw-library}
 
 Para obtener un rendimiento óptimo, Adobe recomienda utilizar la biblioteca [!DNL Adobe Camera Raw] para archivos RAW y DNG.
 
-[!DNL Adobe Camera Raw] la biblioteca de admite el perfil de color CMYK como entrada. Sin embargo, genera la salida en espacio de color RGB y sólo admite la salida en formato JPEG. No conserva el espacio de color del archivo de origen (por ejemplo, CMYK) en las miniaturas.
+[!DNL Adobe Camera Raw] la biblioteca de admite el perfil de color CMYK como entrada. Sin embargo, genera la salida en el espacio de color del RGB y solo admite la salida en formato de JPEG. No conserva el espacio de color del archivo de origen (por ejemplo, CMYK) en las miniaturas.
 
 Para obtener más información, consulte [Soporte Camera Raw](/help/assets/camera-raw.md).
 
@@ -38,7 +38,7 @@ Para obtener mejores resultados, Adobe recomienda utilizar la biblioteca Adobe P
 * Los archivos AI con miniaturas no se generan de forma predeterminada
 * Para archivos AI con colores SPOT (PMS)
 
-Las miniaturas y vistas previas generadas con el rasterizador de PDF son de mejor calidad en comparación con los resultados de raster predeterminados. La biblioteca Adobe PDF Rasterizer no admite ninguna conversión de espacio de color. Independientemente del espacio de color del archivo PDF de origen, Adobe PDF Rasterizer genera solo salida RGB.
+Las miniaturas y vistas previas generadas con el PDF Rasterizador son de mejor calidad en comparación con la salida de trama predeterminada. La biblioteca Adobe PDF Rasterizer no admite ninguna conversión de espacio de color. Independientemente del espacio de color del archivo del PDF de origen, Adobe PDF Rasterizer genera solo la salida del RGB.
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
@@ -71,7 +71,7 @@ La biblioteca de transcodificación de imágenes admite los siguientes tipos de 
 * PNG (8 bits y 16 bits)
 * GIF
 * BMP
-* TIFF/TIFF comprimido (excepto Tiffs de 32 bits y PTiffs).
+* TIFF TIFF/comprimido (excepto Tiffs de 32 bits y PTiffs).
 * ICO
 * ICN
 

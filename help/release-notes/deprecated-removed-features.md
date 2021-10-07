@@ -2,7 +2,7 @@
 title: Funciones obsoletas y eliminadas en la versión 6.5 de Adobe Experience Manager.
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 43%
@@ -57,7 +57,7 @@ Esta sección enumera las funciones y capacidades que se han eliminado de AEM 6.
 
 | Área | Función | Reemplazo |
 |--- |--- |--- |
-| Integración con [!DNL Experience Cloud] | Puede sincronizar los recursos con [!DNL Experience Cloud] mediante una configuración mediante [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] antes se llamaba  [!DNL Adobe Marketing Cloud]. | Si tiene alguna consulta, [póngase en contacto con el Servicio de atención al cliente de Adobe](https://www.adobe.com/account/sign-in.supportportal.html). |
+| Integración con [!DNL Experience Cloud] | Puede sincronizar los recursos con [!DNL Experience Cloud] mediante una configuración mediante [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] antes se llamaba  [!DNL Adobe Marketing Cloud]. | Si tiene alguna consulta, [póngase en contacto con el servicio de atención al cliente de Adobe](https://www.adobe.com/account/sign-in.supportportal.html). |
 | Analytics Activity Map | La versión de Activity Map que está incluida en AEM. | Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM. Utilice el [complemento Activity Map proporcionado por Adobe Analytics](https://docs.adobe.com/content/help/es-ES/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.translate.html). |
 | Integraciones | La integración de ExactTarget se ha eliminado de la distribución predeterminada (Quickstart) y ya no está disponible. | Sin reemplazo. |
 | Integraciones | La integración de la API de Salesforce Force se ha eliminado de la distribución predeterminada (Quickstart) y ahora es un paquete adicional para instalar desde [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). | La función aún está disponible. |

@@ -3,11 +3,11 @@ title: 'Prácticas recomendadas para monitorizar la implementación [!DNL Assets
 description: Prácticas recomendadas para monitorizar el entorno y el rendimiento de su implementación  [!DNL Adobe Experience Manager] después de implementarla.
 contentOwner: AG
 role: Admin, Architect
-feature: Administración de activos
+feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1668'
 ht-degree: 1%
 
 ---
@@ -199,5 +199,5 @@ En el proceso de monitorización, si se producen problemas, estas son algunas ta
 * Utilice la consola de flujo de trabajo para comprobar que los flujos de trabajo funcionan según lo esperado. Si es posible, condense varios flujos de trabajo en un único flujo de trabajo.
 * Vuelva a realizar la monitorización en vivo y busque cuellos de botella adicionales o grandes consumidores de cualquier recurso específico.
 * Investigue los puntos de salida de la red del cliente y los puntos de entrada a la red de implementación [!DNL Experience Manager], incluido el despachante. A menudo, son áreas de cuello de botella. Para obtener más información, consulte [Consideraciones sobre la red de recursos](/help/assets/assets-network-considerations.md).
-* Aumente el tamaño del servidor [!DNL Experience Manager]. Es posible que tenga un tamaño inadecuado para su implementación [!DNL Experience Manager]. El Servicio de atención al cliente de Adobe puede ayudarle a identificar si su servidor no tiene el tamaño adecuado.
+* Aumente el tamaño del servidor [!DNL Experience Manager]. Es posible que tenga un tamaño inadecuado para su implementación [!DNL Experience Manager]. El servicio de asistencia al cliente de Adobe puede ayudarle a identificar si el servidor no tiene el tamaño adecuado.
 * Examine los archivos `access.log` y `error.log` para ver si hay entradas en el momento en que algo salió mal. Busque patrones que puedan indicar anomalías de código personalizado. Añádalos a la lista de eventos que supervise.
