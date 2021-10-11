@@ -1,7 +1,8 @@
 ---
 title: ¿Cómo configurar y solucionar problemas de un AEM Forms en un clúster de servidores JEE?
 description: Obtenga información sobre cómo configurar y solucionar problemas de una AEM Forms en un clúster de servidores JEE
-source-git-commit: 8502e0227819372db4120d3995fba51c7401d944
+exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
 source-wordcount: '4033'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 ## Conocimientos previos {#prerequisites}
 
-Familiaridad con AEM Forms en JEE, JBoss, WebSphere y servidores de aplicaciones web, Red Hat Linux, SUSE Linux, Microsoft Windows, IBM AIX o Sun Solaris, Oracle, servidores de bases de datos IBM DB2 o SQL Server y entornos web.
+Familiaridad con AEM Forms en JEE, JBoss, WebSphere y servidores de aplicaciones web, Red Hat Linux, SUSE Linux, Microsoft Windows, IBM AIX o Sun Solaris, servidores de bases de datos de Oracle, IBM DB2 o SQL Server y entornos web.
 
 ## Nivel de usuario {#user-level}
 
@@ -266,7 +267,7 @@ Para determinar cómo se ha configurado Quartz, debe ver los mensajes generados 
 INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
 Es importante localizar esta primera línea en los registros porque algunos servidores de aplicaciones también utilizan Quartz y sus instancias de Quartz no deben confundirse con la instancia que utiliza el servicio AEM Forms en el programador de JEE. Esto indica que el servicio Scheduler se está iniciando y las líneas que lo siguen le indicarán si se está iniciando o no correctamente en modo agrupado. Aparecen varios mensajes en esta secuencia, y es el último mensaje &quot;iniciado&quot; que revela cómo está configurado Quartz:
 
-Aquí se da el nombre de la instancia de Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.corp.adobe.com1312883903975`. El nombre de la instancia de Quartz del programador siempre comenzará con la cadena `IDPSchedulerService_$_`. La cadena que se anexa al final de esto le indica si Quartz se está ejecutando o no en modo agrupado. El identificador único largo generado a partir del nombre de host del nodo y una cadena larga de dígitos, aquí `ap-hp8.ottperflab.corp.adobe.com1312883903975`, indica que está funcionando en un clúster. Si funciona como un solo nodo, el identificador será un número de dos dígitos, &quot;20&quot;:
+Aquí se da el nombre de la instancia de Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. El nombre de la instancia de Quartz del programador siempre comenzará con la cadena `IDPSchedulerService_$_`. La cadena que se anexa al final de esto le indica si Quartz se está ejecutando o no en modo agrupado. El identificador único largo generado a partir del nombre de host del nodo y una cadena larga de dígitos, aquí `ap-hp8.ottperflab.adobe.com1312883903975`, indica que está funcionando en un clúster. Si funciona como un solo nodo, el identificador será un número de dos dígitos, &quot;20&quot;:
 
 INFO `[org.quartz.core.QuartzScheduler]` El planificador `IDPSchedulerService_$_20` se inició.
 Esta comprobación debe realizarse en todos los nodos del clúster por separado, ya que el planificador de cada nodo determina de forma independiente si debe funcionar en modo de clúster.
@@ -332,19 +333,3 @@ Aunque estos archivos y rutas pueden compartirse entre los nodos o ubicarse por 
 La ruta de acceso del Directorio temporal, en particular, no debe compartirse entre nodos. Se debe utilizar un procedimiento similar al descrito para verificar el GDS para verificar que el directorio temporal no se esté compartiendo: vaya a cada nodo, cree un archivo temporal en la ruta indicada por la configuración de la ruta y, a continuación, verifique que los demás nodos no compartan el archivo. La ruta de acceso temporal del directorio debe hacer referencia al almacenamiento de disco local en cada nodo, si es posible, y debe comprobarse.
 
 Para cada configuración de ruta, asegúrese de que la ruta existe realmente y es accesible desde cada nodo del clúster, utilizando la identidad de uso efectiva bajo la cual se ejecuta AEM Forms en JEE. El contenido del directorio de fuentes debe ser legible. El directorio temporal debe permitir la lectura, escritura y control.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
