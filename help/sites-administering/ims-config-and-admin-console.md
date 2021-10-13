@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 3f55ebfe3b1603a573fcb77155227c449c6c0fbb
+source-git-commit: 1651fadeda0f2b37c90af2e1b2f84d74c118ccd9
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1690'
 ht-degree: 11%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->El inicio de sesión de IMS para AEM no admite grupos anidados en el Admin Console.
+>AEM no admite la asignación de grupos a perfiles.  Los usuarios deben agregarse individualmente en su lugar.
 
 ## Introducción {#introduction}
 
