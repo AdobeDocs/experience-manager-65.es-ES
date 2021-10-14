@@ -4,12 +4,12 @@ description: Formatos de archivo y tipos MIME admitidos por [!DNL Assets] and [!
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
-feature: Administración de recursos,Representaciones
+feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: f0a0ea53675afa16463a3cf863257020ba5374d3
+source-git-commit: c8e83622070572d104f2cdc20c592ac2e9d0d31b
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 10%
+source-wordcount: '1535'
+ht-degree: 11%
 
 ---
 
@@ -40,7 +40,7 @@ Los formatos de imagen de trama admitidos en [!DNL Assets] son:
 | PGM | ✓ | ✓ | - | - | - | - | ✓ |
 | PBM | ✓ | ✓ | - | - | - | - | ✓ |
 | PPM | ✓ | ✓ | - | - | - | - | ✓ |
-| DCE | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| PSD } | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | - | ✓ | - |
 | PICT | - | - | - | - | - | - | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ | - | - | - |
@@ -56,7 +56,7 @@ Los formatos de imagen de trama admitidos en [!DNL Dynamic Media] son:
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ | - | - | - | - |
-| DCE | ✓ | - | - | - | - |
+| PSD } | ✓ | - | - | - | - |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ | - | - | - | - |
 
@@ -64,7 +64,7 @@ Los formatos de imagen de trama admitidos en [!DNL Dynamic Media] son:
 
 Además de la información anterior, considere lo siguiente:
 
-* La compatibilidad con archivos EPS se aplica solo a imágenes de trama. Por ejemplo, la generación de miniaturas para imágenes vectoriales EPS no es compatible de forma predeterminada. Para agregar compatibilidad, [configure ImageMagick](best-practices-for-imagemagick.md). Para integrar herramientas de terceros para habilitar capacidades adicionales, consulte [Controlador de medios basado en la línea de comandos](media-handlers.md#command-line-based-media-handler).
+* La compatibilidad con archivos EPS se aplica solo a imágenes de trama. Por ejemplo, la generación de miniaturas para imágenes vectoriales de EPS no es compatible de forma predeterminada. Para agregar compatibilidad, [configure ImageMagick](best-practices-for-imagemagick.md). Para integrar herramientas de terceros para habilitar capacidades adicionales, consulte [Controlador de medios basado en la línea de comandos](media-handlers.md#command-line-based-media-handler).
 
 * La reescritura de metadatos funciona para el formato de archivo PSB cuando se agrega al controlador `NComm`.
 
@@ -96,8 +96,8 @@ Consulte también [Detectar formatos de archivo no compatibles para Dynamic Medi
 * Los archivos PNG que tienen un tamaño de fragmento IDAT tienen un tamaño bueno de más de 100 MB.
 * Archivos PSB.
 * Los archivos PSD con un espacio de color distinto de CMYK, RGB, escala de grises o mapa de bits no son compatibles. Los espacios de color DuoTone, Lab e Indexed no son compatibles.
-* Los archivos PSD con una profundidad buena superior a 16.
-* Archivos TIFF con datos de coma flotante.
+* archivos PSD con una profundidad buena superior a 16.
+* archivos TIFF que tienen datos de coma flotante.
 * Archivos TIFF que tienen espacio de color Lab.
 
 <!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
@@ -118,13 +118,13 @@ The following table describes the sub-types of raster image formats that are *no
 |  | Files that have Lab color space. | Use ExifTool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
 -->
 
-## Biblioteca de rasterizadores de PDF compatible {#supported-pdf-rasterizer-library}
+## Biblioteca Rasterizadora de PDF admitida {#supported-pdf-rasterizer-library}
 
-La biblioteca Rasterizer de Adobe PDF genera miniaturas y previsualizaciones de alta calidad para archivos PDF y [!DNL Adobe Illustrator] grandes y con gran contenido. Adobe recomienda utilizar la biblioteca Rasterizer de PDF para lo siguiente:
+La biblioteca Rasterizer de Adobe PDF genera miniaturas y previsualizaciones de alta calidad para archivos de PDF y archivos [!DNL Adobe Illustrator] grandes y con gran contenido. Adobe recomienda utilizar la biblioteca PDF Rasterizer para lo siguiente:
 
-* Los archivos AI/PDF con gran cantidad de contenido que requieren muchos recursos pueden procesarse.
-* Archivos AI/PDF, para los que las miniaturas no se generan de forma predeterminada.
-* Archivos AI con colores del sistema Pantone Matching (PMS).
+* Archivos AI/PDF con gran cantidad de contenido que requieren muchos recursos para su procesamiento.
+* Archivos AI/PDF para los que no se generan miniaturas de forma predeterminada.
+* Archivos AI con colores del sistema de coincidencia de Pantone (PMS).
 
 Consulte [Uso del rasterizador de PDF](aem-pdf-rasterizer.md).
 
@@ -132,7 +132,7 @@ Consulte [Uso del rasterizador de PDF](aem-pdf-rasterizer.md).
 
 La biblioteca de transcodificación de imágenes de Adobe es una solución de procesamiento de imágenes que realiza funciones básicas de gestión de imágenes, como codificación, transcodificación, remuestreo y cambio de tamaño.
 
-La biblioteca de transcodificación de imágenes admite los tipos MIME JPG/JPEG, PNG (8 y 16 bits), GIF, BMP, TIFF/Compresión (excepto los archivos TIFF de 32 bits y PTIFF), ICO e ICN.
+La biblioteca de transcodificación de imágenes admite los tipos MIME JPG/JPEG, PNG (8 y 16 bits), GIF, BMP, TIFF/comprimido (excepto los archivos TIFF de 32 bits y los archivos PTIFF), ICO e ICN.
 
 Consulte [Biblioteca de transcodificación de imágenes](imaging-transcoding-library.md).
 
@@ -163,7 +163,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
 | PS | ✓ | ✓ | - | - | - | - | - | - |
 | QXP | ✓ | ✓ | - | - | - | - | - | - |
-| EPUB | ✓ | ✓ | - | ✓ | ✓ | - | - | - |
+| ePub | ✓ | ✓ | - | ✓ | ✓ | - | - | - |
 
 ## Formatos de documento compatibles con Dynamic Media {#supported-document-formats-dynamic-media}
 
@@ -175,7 +175,7 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 Además de la funcionalidad anterior, considere lo siguiente:
 
-* Para utilizar Dynamic Media para generar representaciones dinámicas para archivos PDF, consulte los formatos [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Para utilizar Dynamic Media para generar representaciones dinámicas para archivos PDF, consulte los formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Para utilizar Dynamic Media para obtener una vista previa y generar representaciones dinámicas para archivos AI, consulte los formatos de archivo [Adobe Illustrator (AI), Postscript (EPS) y PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
@@ -209,17 +209,15 @@ Además de la funcionalidad anterior, considere lo siguiente:
 | Extensión de archivo de vídeo | Contenedor | Códecs de vídeo recomendados | Códecs de vídeo no compatibles |
 |---|---|---|---|
 | MP4 | MPEG-4 | H264/AVC (todos los perfiles) | - |
-| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, XDCAM de Sony, DVCAM de Sony, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, animación de Apple |
+| MOV, QT | QuickTime de Apple | H264/AVC, Apple ProRes422 &amp; HQ, XDCAM de Sony, DVCAM de Sony, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermedio, animación de Apple |
 | FLV, F4V | Flash de Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectoriales) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Pantalla Microsoft® (MSS2), Microsoft® Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
 | M4V | Apple iTunes | H264/AVC | - |
 | AVI | Intercalación A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MKV | Matroska | H264/AVC | - |
-| RAM, RM | RealVideo | No admitido | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| MJ2 | Motion JPEG 2000 | Códec Motion JPEG 2000 | - |
 
 ## Formatos de archivo compatibles {#supported-archive-formats}
 
@@ -301,9 +299,9 @@ Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/globa
 | SVG | image/svg+xml |  |  |
 | SWF | aplicación/x-shock-flash |  |  |
 | TAR | application/x-tar |  |  |
-| TIF/TIFF | image/tiff |  |  |
+| TIF / TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| RTF | application/x-font-ttf |  |  |
+| TTF | application/x-font-ttf |  |  |
 | VOB | video/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |
