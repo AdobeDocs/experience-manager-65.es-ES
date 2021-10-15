@@ -3,9 +3,10 @@ title: Modelos de fragmento de contenido
 description: Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en AEM y cómo crear fragmentos de contenido con contenido estructurado.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
+source-git-commit: 924b30680b189ec5061eb0bd664165793a9dbd9c
 workflow-type: tm+mt
-source-wordcount: '2256'
+source-wordcount: '2334'
 ht-degree: 7%
 
 ---
@@ -73,6 +74,9 @@ El modelo de fragmento de contenido define efectivamente la estructura de los fr
       * Muchas propiedades se explican por sí mismas; para obtener más información, consulte [Propiedades](#properties).
       * Si se escribe una **Etiqueta de campo** se completará automáticamente el **Nombre de propiedad** (si está vacío) y se podrá actualizar manualmente posteriormente.
 
+         >[!CAUTION]
+         Cuando actualice manualmente un tipo de datos **Nombre de propiedad**, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como caracteres especiales.
+         Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimine o actualice dichos caracteres.
       Por ejemplo:
 
       ![propiedades del campo](assets/cfm-models-05.png)
@@ -132,6 +136,10 @@ En el editor de fragmentos, cada instancia aparecerá como una pestaña.
 ## Propiedades {#properties}
 
 Muchas propiedades se explican por sí mismas; para determinadas propiedades, a continuación se proporcionan detalles adicionales:
+
+>[!CAUTION]
+Cuando actualice manualmente el **Nombre de propiedad**, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos &quot;_&quot; como caracteres especiales.
+Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimine o actualice dichos caracteres.
 
 * **Representar**
 comoLas distintas opciones para realizar/procesar el campo en un fragmento. A menudo, esto le permite definir si el autor verá una sola instancia del campo o si se le permitirá crear varias instancias.
