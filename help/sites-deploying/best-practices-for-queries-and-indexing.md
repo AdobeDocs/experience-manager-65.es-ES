@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 52c8d4c425213718678543e9e9e8e5a4c2af4f95
+source-git-commit: 9f7bd996d2ec77d29fbee3ee51ac6469f94e9bd7
 workflow-type: tm+mt
-source-wordcount: '4684'
+source-wordcount: '4679'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ También puede extraer los índices en su sistema en formato JSON. Para ello, de
 
 **Durante el desarrollo**
 
-Establecer umbrales bajos para `oak.queryLimitInMemory` (p. ej. 10000) y roble. `queryLimitReads` (p. ej. 5000) y optimice la costosa consulta al visitar una excepción UnsupportedOperationException que dice &quot;La consulta lee más de x nodos...&quot;.
+Definir umbrales bajos para `oak.queryLimitInMemory` (p. ej. 10000) y roble. `queryLimitReads` (p. ej. 5000) y optimice la costosa consulta al visitar una excepción UnsupportedOperationException que dice &quot;La consulta lee más de x nodos...&quot;.
 
 Esto ayuda a evitar consultas intensivas en recursos (por ejemplo, no está respaldado por ningún índice o está respaldado por un índice menos abarcador). Por ejemplo, una consulta que lee un millón de nodos produciría un aumento de E/S y afectaría negativamente al rendimiento general de la aplicación. Cualquier consulta que falle debido a límites superiores debe analizarse y optimizarse.
 
@@ -215,19 +215,19 @@ Al eliminar un índice en una instancia de MongoDB, el coste de eliminación es 
 
 ### Hoja de referencia de consultas JCR {#jcrquerycheatsheet}
 
-Para apoyar la creación de consultas JCR eficientes y definiciones de índices, la variable [Hoja de referencia de consultas JCR|assets/JCR_query_cheatsheet-v1.0.pdf] está disponible para su descarga y uso como referencia durante el desarrollo. Contiene consultas de ejemplo para QueryBuilder, XPath y SQL-2, que abarcan varios escenarios que se comportan de forma diferente en términos del rendimiento de la consulta. También proporciona recomendaciones sobre cómo crear o personalizar índices Oak. El contenido de esta hoja de referencia se aplica a AEM 6.5 y AEM as a Cloud Service.
+Para apoyar la creación de consultas JCR eficientes y definiciones de índices, la variable [Hoja de referencia de consulta JCR](assets/JCR_query_cheatsheet-v1.0.pdf) está disponible para su descarga y uso como referencia durante el desarrollo. Contiene consultas de ejemplo para QueryBuilder, XPath y SQL-2, que abarcan varios escenarios que se comportan de forma diferente en términos del rendimiento de la consulta. También proporciona recomendaciones sobre cómo crear o personalizar índices Oak. El contenido de esta hoja de referencia se aplica a AEM 6.5 y AEM as a Cloud Service.
 
 ## Reindexación {#re-indexing}
 
 Esta sección describe **only** razones aceptables para volver a indexar los índices de Oak.
 
-Fuera de las razones descritas a continuación, el inicio de los reíndices de los índices Oak **not** cambie el comportamiento o resuelva los problemas, y aumente la carga innecesariamente en AEM.
+Fuera de las razones descritas a continuación, el inicio de los reíndices de los índices Oak **not** cambiar el comportamiento o resolver problemas, y aumentar innecesariamente la carga en AEM.
 
 La reindexación de los índices Oak debe evitarse a menos que se indique lo contrario en las tablas siguientes.
 
 >[!NOTE]
 >
->Antes de consultar las tablas siguientes para determinar si la reindexación es útil,** siempre **verificar:
+>Antes de consultar las tablas siguientes para determinar si la reindexación es útil, **always** compruebe:
 >
 >* la consulta es correcta
 >* la consulta responde al índice esperado (mediante [Explicar consulta](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
