@@ -1,8 +1,8 @@
 ---
 title: Creación de grupos anidados
-seo-title: Creación de grupos anidados
+seo-title: Authoring Nested Groups
 description: Crear grupos anidados
-seo-description: Crear grupos anidados
+seo-description: Create nested groups
 uuid: b377dc1b-bbb6-41c9-b0fc-8281e1410685
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
+exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
+source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '584'
 ht-degree: 5%
 
 ---
-
 
 # Creación de grupos anidados{#authoring-nested-groups}
 
@@ -25,44 +24,44 @@ ht-degree: 5%
 
 En la instancia de AEM Author, desde la navegación global:
 
-* Seleccione **[!UICONTROL Comunidades]** > **[!UICONTROL Sitios]**.
-* Seleccione **[!UICONTROL carpeta de participación]** para abrirla.
-* Seleccione la tarjeta para el **[!UICONTROL Tutorial de introducción]** sitio en inglés.
+* Select **[!UICONTROL Comunidades]** > **[!UICONTROL Sitios]**.
+* Select **[!UICONTROL carpeta de participación]** para abrirlo.
+* Seleccione la tarjeta para el **[!UICONTROL Tutorial de introducción]** Sitio en inglés.
 
    * Seleccione la imagen de la tarjeta.
-   * *no* seleccione un icono.
+   * Do *not* seleccione un icono.
 
-El resultado es llegar a la [consola de grupos](/help/communities/groups.md):
+El resultado es alcanzar la variable [Consola Grupos](/help/communities/groups.md):
 
 ![create-group](assets/create-group.png)
 
-La función de grupos se mostrará como una carpeta en la que se crearán las instancias de grupos. Seleccione la carpeta Grupos para abrirla. El grupo creado al publicar está visible.
+La función de grupos se muestra como una carpeta en la que se crean instancias de grupos. Seleccione la carpeta Grupos para abrirla. El grupo creado al publicar está visible.
 
 ![create-new-group](assets/create-new-group.png)
 
 ## Crear grupo de artes principales {#create-main-arts-group}
 
-Este grupo se puede crear porque la estructura del sitio para la participación incluye una función de grupo. La configuración de la función en el `Reference Template` del sitio permite de forma predeterminada la selección de cualquier plantilla de grupo habilitada. Por lo tanto, la plantilla elegida para este nuevo grupo es `Reference Group`.
+Este grupo se puede crear porque la estructura del sitio para la participación incluye una función de grupo. La configuración de la función en el `Reference Template` de forma predeterminada, permite seleccionar cualquier plantilla de grupo habilitada. Por lo tanto, la plantilla elegida para este nuevo grupo es la `Reference Group`.
 
-Estas consolas son similares a la consola Sitios de comunidades.
+Estas consolas son similares a la consola Sitios de Communities .
 
-* Seleccione **[!UICONTROL Crear grupo]**.
+* Select **[!UICONTROL Crear grupo]**
 
 * **Plantilla del grupo de la comunidad**:
 
-   * **[!UICONTROL Título]** del grupo de la comunidad: Artes.
-   * **[!UICONTROL Descripción]** del grupo de la comunidad: Un grupo de padres para varios grupos de artes.
-   * **[!UICONTROL Raíz]** del grupo de la comunidad:  *dejar como predeterminado*.
-   * **[!UICONTROL Idioma(s)]** adicional(s) disponible(s) del grupo de la comunidad: utilice el menú desplegable para seleccionar los idiomas de grupo de comunidad disponibles. El menú muestra todos los idiomas en los que se crea el sitio de comunidad principal. Los usuarios pueden seleccionar entre estos idiomas para crear grupos en varias configuraciones regionales en este solo paso. El mismo grupo se crea en varios idiomas especificados en la consola Grupos de los respectivos sitios de la comunidad.
-   * **[!UICONTROL Nombre]** del grupo de la comunidad: Artículos 10
-   * **[!UICONTROL Plantilla]**: desplegable para seleccionar  `Reference Group.`
-   * Seleccione **[!UICONTROL Siguiente]**.
+   * **[!UICONTROL Título de grupo de la comunidad]**: Artes
+   * **[!UICONTROL Descripción del grupo de la comunidad]**: Un grupo principal para varios grupos artísticos
+   * **[!UICONTROL Raíz del grupo de la comunidad]**: *dejar como predeterminado*
+   * **[!UICONTROL Idiomas de grupo de la comunidad disponibles adicionales]**: utilice el menú desplegable para seleccionar los idiomas de grupo de comunidad disponibles. El menú muestra todos los idiomas en los que se crea el sitio de la comunidad principal. Los usuarios pueden seleccionar entre estos idiomas para crear grupos en varias configuraciones regionales en este solo paso. El mismo grupo se crea en varios idiomas especificados en la consola Grupos de los respectivos sitios de la comunidad.
+   * **[!UICONTROL Nombre del grupo de la comunidad]**: arts
+   * **[!UICONTROL Plantilla]**: lista desplegable para seleccionar `Reference Group`
+   * Seleccione **[!UICONTROL Siguiente]**
 
 ![Grupos de comunidades anidadas](assets/parent-to-nestedgroup.png)
 
 Continúe por los demás paneles con esta configuración:
 
-* **[!UICONTROL Diseño]**
+* **[!UICONTROL Design]**
 
    * Cambie el diseño o permita el diseño predeterminado del sitio principal.
    * Seleccione **[!UICONTROL Siguiente]**.
@@ -71,10 +70,10 @@ Continúe por los demás paneles con esta configuración:
 
    * **[!UICONTROL Moderación]**
 
-      * Deje vacío (herede del sitio principal).
+      * Deje vacío (heredar del sitio principal).
    * **[!UICONTROL Suscripción]**
 
-      * Usar `Optional Membership.` predeterminado
+      * Utilizar predeterminado `Optional Membership.`
 
       * **[!UICONTROL Miniatura]**
          * `optional.*`
@@ -84,54 +83,54 @@ Continúe por los demás paneles con esta configuración:
 
 * Seleccione **[!UICONTROL Crear]**.
 
-### Anidado de grupos dentro del grupo de artes {#nesting-groups-within-arts-group}
+### Grupos de anidación dentro del Grupo de Artes {#nesting-groups-within-arts-group}
 
-La carpeta `groups` ahora contiene dos grupos (actualizar la página).
+La variable `groups` La carpeta ahora contiene dos grupos (actualice la página).
 
-![Anidación de grupos](assets/create-community-group.png)
+![Anidado de grupos](assets/create-community-group.png)
 
-#### Publicar grupo {#publish-group}
+#### Publicar grupo  {#publish-group}
 
-Antes de crear grupos anidados dentro del grupo `arts`, pase el ratón por encima de la tarjeta `arts` y seleccione el icono de publicación para publicarla.
+Antes de crear grupos anidados dentro de la variable `arts` , pase el ratón sobre el `arts` y seleccione el icono de publicación para publicarlo.
 
 ![publish-site](assets/publish-site.png)
 
 Espere a que se confirme que se publicó el grupo.
 
-![grupo publicado](assets/group-published.png)
+![publicado en grupo](assets/group-published.png)
 
-El grupo `arts` también debe contener una carpeta `groups`, pero una carpeta vacía y en la que se pueden crear nuevos grupos. Vaya a la carpeta del grupo de artes y cree 3 grupos anidados, cada uno con una configuración de pertenencia diferente:
+La variable `arts` El grupo también debe contener `groups` , pero una que esté vacía y en la que se puedan crear nuevos grupos. Vaya a la carpeta de grupos de artes y cree 3 grupos anidados, cada uno con una configuración de pertenencia diferente:
 
 1. **[!UICONTROL Visual]**
 
    * Título: `Visual Arts`
    * Nombre: `visual`
    * Plantilla: `Reference Group`
-   * Membresía: seleccione `Optional Membership`, un grupo público, abierto a todos los miembros.
+   * Membresía: select `Optional Membership`, un grupo público, abierto a todos los miembros.
 
 1. **[!UICONTROL Auditorio]**
 
    * Título: `Auditory Arts`
    * Nombre: `auditory`
    * Plantilla: `Reference Group`
-   * Membresía: seleccione `Required Membership`, un grupo abierto, disponible para que los miembros se unan.
+   * Membresía: select `Required Membership`, un grupo abierto, disponible para que los miembros se unan.
 
 1. **[!UICONTROL Historia]**
 
    * Título: `Art History`
    * Nombre: `history`
    * Plantilla: `Reference Group`
-   * Membresía: seleccione `Restricted Membership`, un grupo secreto, visible sólo para los miembros invitados. Como ejemplo, invite a [usuario de demostración](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
+   * Membresía: select `Restricted Membership`, un grupo secreto, visible únicamente para los miembros invitados. A modo de ejemplo, invite [usuario de demostración](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
 Actualice la página para ver los tres grupos anidados (subcomunidades).
 
-Para desplazarse a los grupos anidados desde la consola Sitios de comunidades:
+Para desplazarse a los grupos anidados desde la consola Sitios de Communities:
 
-* Seleccione **[!UICONTROL carpeta de participación]**
-* Seleccione **[!UICONTROL Tutorial de introducción]**
-* Seleccionar carpeta **[!UICONTROL Grupos]**
-* Seleccionar **[!UICONTROL tarjeta de artes]**
-* Seleccionar carpeta **[!UICONTROL Grupos]**
+* Select **[!UICONTROL carpeta de participación]**
+* Select **[!UICONTROL Tarjeta de tutorial de introducción]**
+* Select **[!UICONTROL Grupos]** carpeta
+* Select **[!UICONTROL tarjeta de arte]**
+* Select **[!UICONTROL Grupos]** carpeta
 
 ![create-new-group2](assets/create-new-group2.png)
 
@@ -139,32 +138,31 @@ Para desplazarse a los grupos anidados desde la consola Sitios de comunidades:
 
 ![publish-site](assets/publish-site.png)
 
-Después de publicar el sitio principal de la comunidad:
+Después de publicar el sitio de la comunidad principal:
 
 * Publicar cada grupo individualmente:
 
-   * Esperando confirmación de que se publicó el grupo.
+   * Esperando confirmación de que el grupo fue publicado.
 
 * Publicar grupo principal antes de publicar cualquier grupo anidado en:
 
-   * Todos los grupos deben publicarse de manera vertical.
+   * Todos los grupos deben publicarse de forma descendente.
 
-![grupo publicado](assets/group-published.png)
+![publicado en grupo](assets/group-published.png)
 
-## Experiencia en publicación {#experience-on-publish}
+## Experiencia en la publicación {#experience-on-publish}
 
-Es posible experimentar los diferentes grupos al iniciar sesión, por ejemplo con los [usuarios de demostración](/help/communities/tutorials.md#demo-users) utilizados para:
+Es posible experimentar los diferentes grupos cuando se inicia sesión, por ejemplo, con la variable [usuarios de demostración](/help/communities/tutorials.md#demo-users) utilizado para:
 
 * Miembro del grupo Arte/Historia: emily.andrews@mailinator.com/password
    * El grupo restringido (secreto), arte/historia, es visible:
-   * Puede ver grupos opcionales (públicos).
-   * Puede unirse a grupos restringidos (abiertos).
+   * Se pueden ver grupos opcionales (públicos).
+   * Pueden unirse a grupos restringidos (abiertos).
 
 * Administrador de grupos: aaron.mcdonald@mailinator.com/password
 
-   * Puede ver grupos opcionales (públicos).
-   * Puede unirse a grupos restringidos (abiertos).
-   * No se pueden ver los grupos restringidos (secretos).
+   * Se pueden ver grupos opcionales (públicos).
+   * Pueden unirse a grupos restringidos (abiertos).
+   * No se pueden ver grupos restringidos (secretos).
 
-Acceda a las consolas Comunidades [Miembros y Grupos](/help/communities/members.md) del autor para agregar otros usuarios a varios grupos de miembros que se correspondan con los grupos de la comunidad.
-
+Acceso a las comunidades [Consolas Miembros y Grupos](/help/communities/members.md) un autor para agregar otros usuarios a varios grupos de miembros que se correspondan con los grupos de la comunidad.
