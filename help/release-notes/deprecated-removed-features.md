@@ -2,7 +2,7 @@
 title: Funciones obsoletas y eliminadas en la versión 6.5 de Adobe Experience Manager.
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: bfe5bb744223be1ff9a00c382734abd9bf4db59a
+source-git-commit: 1e02ad94459ff2893d96055c026d0873b1d69991
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 43%
@@ -63,7 +63,7 @@ Esta sección enumera las funciones y capacidades que se han eliminado de AEM 6.
 | Integraciones | La integración de la API de Salesforce Force se ha eliminado de la distribución predeterminada (Quickstart) y ahora es un paquete adicional para instalar desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). | La función aún está disponible. |
 | Forms | Se ha eliminado la compatibilidad con el servicio Adobe Central Migration Bridge, ya que el producto Adobe Central ya no es compatible. | Sin reemplazo. |  |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Sin reemplazo. |  |
-| Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Sin reemplazo |
+| Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Sin reemplazo |  |
 | Forms | La actualización de un solo salto de LiveCycle ES4 SP1 a AEM 6.5 Forms en JEE no está disponible | Consulte [rutas de actualización disponibles](../forms/using/upgrade.md) en la documentación de actualización de AEM Forms. |  |
 | Forms | Se ha eliminado la compatibilidad con clústeres basados en UPD de AEM Forms en JEE | Solo puede usar clustering basado en TCP en AEM Forms en JEE. Si actualiza un servidor de multidifusión UDP de una versión anterior a AEM 5.5 Forms en JEE, realice configuraciones manuales para cambiar a clúster de gemfire basado en TCP. Para obtener instrucciones detalladas, consulte [Actualizar a formularios AEM 6.5 en JEE](../forms/using/upgrade-forms-jee.md) |  |
 | Desarrolladores | Se ha eliminado Firebug Lite de la distribución predeterminada (Quickstart) | Usar las consolas de desarrollador incorporadas en el navegador |
