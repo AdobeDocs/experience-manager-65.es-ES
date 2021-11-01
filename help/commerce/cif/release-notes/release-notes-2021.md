@@ -2,10 +2,10 @@
 title: Notas de la versión de contenido y comercio de AEM 2021
 description: Notas de la versión de contenido y comercio de AEM 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: a401955e4b163a8062a498ea897d4a3d95ae0208
+source-git-commit: 7261a71769dfb968c768e0cb4835d7d4cca97b1a
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 10%
+source-wordcount: '1327'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 Revise los requisitos mínimos del sistema en la siguiente tabla para la versión del CIF que está utilizando o que planea usar en el futuro.
 
-**Con la versión de abril, hemos reemplazado el conector del CIF de GitHub por el complemento CIF** que está disponible en la distribución del software de  [Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). El cambio al complemento incluye buenas ventajas para los proyectos:
+**Con la versión de abril, hemos reemplazado el conector del CIF de GitHub por el complemento CIF** que está disponible en la [Distribución del software de Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). El cambio al complemento incluye buenas ventajas para los proyectos:
 
 * La mayoría de las nuevas funciones estarán disponibles inmediatamente en AEM 6.5 (ya no se espera el puerto lateral de las funciones)
 * Fácil de actualizar a nuevas versiones de complementos
@@ -28,6 +28,26 @@ El antiguo conector del CIF de AEM está entrando en modo de mantenimiento y ya 
 | Complemento CIF | Mínimo: AEM 6.5.7, Magento 2.3.5 Esquemas de GraphQL |
 | Componentes principales de CIF | [Requisitos del sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Tipo de archivo del proyecto AEM | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Fecha de versión: Octubre de 2021
+
+| Componente | Versión | Detalles |
+|:-------|:-----:|---------------------:|
+| Complemento CIF | 2021.10.20.02 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
+| Componentes principales de CIF | 2.4.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
+| Sitio de referencia de Venia del CIF | 2021.11.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
+
+### Novedades {#what-is-new-october}
+
+* El complemento CIF es compatible con la última versión de Commerce v2.4.3 con las nuevas API y esquemas de GraphQL
+
+* Los autores pueden agregar vínculos a páginas de productos y catálogos en campos de texto utilizando el editor de texto enriquecido (RTE). Se ha agregado un icono del CIF a la barra de herramientas de RTE que abrirá los selectores para buscar y seleccionar rápidamente el producto o la categoría sin abandonar el contexto.
+
+* El carro de compras emergente y el cierre de compra existentes se han sustituido por páginas dedicadas AEM carro de compras y de cierre de compra. Los componentes de estas páginas se crean utilizando los componentes Peregrine ampliables de Magento
+
+* Los comerciantes pueden ocultar ciertas categorías de catálogo de productos en la navegación mediante el servidor de Commerce. El componente principal de navegación del CIF respeta la configuración del back-end de comercio &quot;incluir en menú&quot; para mostrar u ocultar categorías en la navegación
+
+* AEM Tienda Venia devuelve el error HTTP 404 si no se encuentra la categoría o la página de producto
 
 ## Fecha de versión: Septiembre de 2021
 
@@ -98,7 +118,7 @@ El antiguo conector del CIF de AEM está entrando en modo de mantenimiento y ya 
    * Indicador visual para datos de productos clasificados en modo de creación para una mejor visibilidad de los próximos cambios
    * Nuevo componente de mapa del sitio para páginas de contenido y comercio
 
-* Compatibilidad con la recomendación de producto [Adobe Commerce Sensei, con tecnología Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) en AEM tienda, con recomendaciones predefinidas o creadas sobre la marcha
+* Compatibilidad con [Recomendación de producto de Adobe Commerce Sensei, con tecnología de Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) en AEM tienda utilizando recomendaciones predefinidas o creadas sobre la marcha
 
 ## Fecha de versión: Junio de 2021
 
