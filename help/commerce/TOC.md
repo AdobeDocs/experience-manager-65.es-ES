@@ -1,12 +1,12 @@
 ---
 sub-product: AEM Content and Commerce
-user-guide-title: AEM Contenido y comercio
+user-guide-title: AEM Content and Commerce
 breadcrumb-title: Guía de Commerce
 user-guide-description: Aprenda a utilizar y administrar AEM Content and Commerce.
-source-git-commit: a5bf6a1a6e9013e44209ea865145af1557445318
+source-git-commit: 5678d20fa0a7e8a709b02a2f6cbbeffbd4a26cbd
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 51%
+source-wordcount: '109'
+ht-degree: 49%
 
 ---
 
@@ -32,15 +32,16 @@ ht-degree: 51%
       + [Diseño de componentes del CIF](cif/customizing/style-cif-component.md)
       + [Personalización de componentes CIF](cif/customizing/customize-cif-components.md)
       + [Uso de selectores de catálogo del CIF](cif/customizing/use-cif-pickers.md)
-+ [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
++ [PWA Studio de Adobe Commerce](cif/pwa-studio/getting-started.md)
 + [Migración](cif/migration.md)
 + Notas de la versión {#release-notes}
    + [2021](cif/release-notes/release-notes-2021.md)
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
 + [Preguntas más frecuentes](cif/faq.md)
-+ CIF clásico {#classic}
-   + Implementación de {#deploying}
++ AEM CIF clásico {#classic}
+   + [Información general](/help/commerce/cif-classic/home.md)
+   + Implementación {#deploying}
       + [Información general sobre comercio electrónico](/help/commerce/cif-classic/deploying/ecommerce.md)
       + [Commerce Cloud SAP](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
    + Administración {#administering}
