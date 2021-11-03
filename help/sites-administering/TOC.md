@@ -6,12 +6,12 @@ audience: admin-user
 user-guide-title: Guía del usuario de administración de AEM 6.5
 breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
-feature: Administración
+feature: Administering
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 48abd410e293a193abc34a1bd4f038a121e58490
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 18%
+source-wordcount: '623'
+ht-degree: 19%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 18%
 # Guía del usuario de administración de AEM 6.5 {#administering}
 
 + [Información general sobre la guía del usuario de administración](home.md)
-+ Funciones de sitios {#introduction}
++ Características de Sites {#introduction}
    + [Administración de sitios web ](msm-and-translation.md)
    + [Trabajos asincrónicos](asynchronous-jobs.md)
    + [Reutilización del contenido: administrador de varios sitios y Live Copy](msm.md)
@@ -33,7 +33,7 @@ ht-degree: 18%
    + [Identificación del contenido para traducir](tc-rules.md)
    + [Preparación del contenido para su traducción](tc-prep.md)
    + [Creación de una raíz de idioma mediante la IU clásica](tc-lroot-classic.md)
-   + [Conexión a Microsoft Translator](tc-msconf.md)
+   + [Conexión al traductor de Microsoft](tc-msconf.md)
    + [Configuración del marco de integración de traducción](tc-tic.md)
    + [Asistente para copia de idioma](tc-wizard.md)
    + [Mejoras en la traducción](tc-enhancements.md)
@@ -157,7 +157,7 @@ ht-degree: 18%
    + [Gestión de solicitudes de RGPD para la base de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [Comercio AEM - Preparación para el RGPD](gdpr-compliance-commerce.md)
 + Administración de contenido {#contentmanagement}
-   + [Cómo trabajar con paquetes](package-manager.md)
+   + [el administrador de paquetes](package-manager.md)
    + [Administración de etiquetas](tags.md)
    + [El Exportador de páginas](page-exporter.md)
    + [Consola de etiquetado de la IU clásica](classic-console.md)
