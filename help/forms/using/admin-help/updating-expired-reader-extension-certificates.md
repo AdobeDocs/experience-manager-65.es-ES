@@ -1,9 +1,9 @@
 ---
 title: Actualización de certificados de servicio de extensión de Reader caducados
 description: 'Reader documentos extendidos no funcionan, actualizar certificados '
-source-git-commit: 5f2fc6a32f67cfed3bc4b09b63bcf9689659a99d
+source-git-commit: a26e4fb53458beae9b259e5ee5dc74a95264f9e1
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1581'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Los clientes de Adobe Experience Manager Forms (AEM Forms) con licencias de Adob
 
 Adobe aprovecha una PKI (infraestructura de claves públicas) para emitir certificados digitales para su uso en licencias y habilitación de funciones. Adobe ha estado emitiendo certificados bajo la autoridad de certificación &quot;Adobe Root CA&quot;, está programado que caduque el 7 de enero de 2023. Esto llevará a la caducidad de todos los certificados emitidos bajo esta autoridad de certificación. Una vez caducado el certificado, todas las funciones que dependen de él ya no funcionan. Por ejemplo, un documento de PDF ampliado que permite agregar comentarios mediante Adobe Acrobat Reader deja de funcionar para los clientes a partir del 7 de enero de 2023. Para resolver el problema, el administrador del servicio Reader Extension, utilizando certificados antiguos, debe obtener y volver a aplicar los nuevos certificados emitidos por el nuevo Adobe Root CA G2 a sus documentos PDF (el lector debe extender los documentos PDF con nuevos certificados).
 
-La caducidad de los certificados afecta tanto a AEM Forms en JEE como a AEM Forms en las pilas OSGi. Ambas pilas tienen un conjunto diferente de instrucciones. En función de la pila, elija una de las siguientes rutas:
+La caducidad de los certificados afecta tanto a AEM Forms en JEE como a AEM Forms en las pilas OSGi. Ambas pilas tienen un conjunto diferente de instrucciones. Después de reunirse con el [requisitos previos](#Pre-requisites) y [obtención de nuevos certificados](#obtain-the-certificates), según la pila, elija una de las siguientes rutas:
 
-* Actualización de certificados para una AEM Forms en un entorno JEE
-* Actualización de certificados para una AEM Forms en un entorno OSGi
+* [Actualización de certificados para una AEM Forms en un entorno JEE](#Updating-and-Applying-certificates-for-an-AEM-Forms-on-JEE-environment)
+* [Actualización de certificados para una AEM Forms en un entorno OSGi](#Updating-and-applying-certificates-for-an-AEM-Forms-on-OSGi-environment)
 
 >[!NOTE]
 >
@@ -97,14 +97,14 @@ La actualización y aplicación de nuevos certificados en AEM Forms en la pila O
 En un AEM Forms en un entorno OSGi, una credencial de extensión de Reader está asociada al usuario del servicio fd. Antes de agregar credenciales para el almacén de claves fd-user, realice los siguientes pasos para crear un almacén de claves:
 
 1. Inicie sesión en la instancia de AEM Author como administrador.
-1. Vaya a Herramientas > Seguridad > Usuarios.
+1. Vaya a **[!UICONTROL Herramientas]**> **[!UICONTROL Seguridad]**>**[!UICONTROL Usuarios]**.
 1. Desplácese hacia abajo por la lista de usuarios hasta que encuentre la cuenta de usuario del servicio de disponibilidad.
-1. Haga clic en el usuario del fd-servicio.
+1. Haga clic en **[!UICONTROL fd-service]** usuario.
 1. Haga clic en la ficha almacén de claves.
-1. Haga clic en Crear KeyStore.
+1. Haga clic en **[!UICONTROL Crear KeyStore]**.
 1. Establezca la contraseña de acceso de KeyStore y guarde la configuración para crear la contraseña de KeyStore.
 
-Después de crear el almacén de claves, agregue credenciales al usuario del servicio de fd.
+Después de crear el almacén de claves, agregue credenciales al usuario del servicio de fd. En el siguiente vídeo se explican los pasos:
 
 >[!VIDEO](https://images-tv.adobe.com/mpcv3/5577/8db8e554-f04b-4fae-8108-b9b5e0eb03ad_1627925794.854x480at800_h264.mp4)
 
