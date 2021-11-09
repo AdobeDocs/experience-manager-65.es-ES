@@ -1,8 +1,8 @@
 ---
 title: Prácticas recomendadas para pruebas de rendimiento
-seo-title: Prácticas recomendadas para pruebas de rendimiento
+seo-title: Best Practices for Performance Testing
 description: Este artículo describe las estrategias y metodologías generales utilizadas para las pruebas de rendimiento, así como algunas de las herramientas disponibles para ayudar en el proceso.
-seo-description: Este artículo describe las estrategias y metodologías generales utilizadas para las pruebas de rendimiento, así como algunas de las herramientas disponibles para ayudar en el proceso.
+seo-description: This article outlines the overall strategies and methodologies used for performance testing as well as some of the tools that are available to assist in the process.
 uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: b6de561422bc3533eef153b13d2c65b4cb7e0387
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1897'
 ht-degree: 0%
 
 ---
@@ -55,40 +55,40 @@ Hay muchas herramientas de prueba de rendimiento disponibles en el mercado. Al e
 
 #### Herramientas de prueba {#testing-tools}
 
-* La herramienta **Tough Day** de Adobe se puede utilizar para generar carga en instancias AEM y recopilar datos de rendimiento. El equipo de ingeniería de AEM de Adobe realmente utiliza la herramienta para realizar pruebas de carga del propio producto de AEM. Las secuencias de comandos ejecutadas en el día difícil se configuran mediante archivos de propiedad y archivos XML JMX. Para obtener más información, consulte la [Documentación del día difícil](/help/sites-developing/tough-day.md).
+* Adobe **Día duro** se puede utilizar para generar carga en instancias AEM y recopilar datos de rendimiento. El equipo de ingeniería de AEM de Adobe realmente utiliza la herramienta para realizar pruebas de carga del propio producto de AEM. Las secuencias de comandos ejecutadas en el día difícil se configuran mediante archivos de propiedad y archivos XML JMX. Para obtener más información, consulte la [Documentación del Día duro](/help/sites-developing/tough-day.md).
 
-* AEM proporciona herramientas listas para usar para ver rápidamente consultas problemáticas, solicitudes y mensajes de error. Para obtener más información, consulte la sección [Herramientas de diagnóstico](/help/sites-administering/operations-dashboard.md#diagnosis-tools) de la documentación del Tablero de operaciones.
-* Apache proporciona un producto llamado **JMeter** que puede utilizarse para pruebas de rendimiento y carga, así como para comportamientos funcionales. Es software de código abierto y libre de usar, pero tiene un conjunto de funciones más pequeño que los productos empresariales y una curva de aprendizaje más pronunciada. Puede encontrar JMeter en el sitio web de Apache en [https://jmeter.apache.org/](https://jmeter.apache.org/)
+* AEM proporciona herramientas listas para usar para ver rápidamente consultas problemáticas, solicitudes y mensajes de error. Para obtener más información, consulte la [Herramientas de diagnóstico](/help/sites-administering/operations-dashboard.md#diagnosis-tools) de la documentación del Tablero de operaciones.
+* Apache proporciona un producto llamado **JMeter** que se puede utilizar para pruebas de rendimiento y carga, así como para comportamiento funcional. Es software de código abierto y libre de usar, pero tiene un conjunto de funciones más pequeño que los productos empresariales y una curva de aprendizaje más pronunciada. JMeter se puede encontrar en el sitio web de Apache en [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load** Runneres es un producto de prueba de carga de grado empresarial. Hay disponible una versión de evaluación gratuita. Encontrará más información en [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
+* **Cargar ejecución** es un producto de prueba de carga de nivel empresarial. Hay disponible una versión de evaluación gratuita. Encontrará más información en [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
 
-* También se pueden utilizar herramientas de prueba de carga basadas en la nube como [Neustar](https://www.neustar.biz/services/web-performance/load-testing).
+* Herramientas de prueba de carga basadas en la nube como [Neustar](https://www.neustar.biz/services/web-performance/load-testing) también se puede utilizar.
 * A la hora de probar sitios web móviles o adaptables, es necesario utilizar un conjunto de herramientas independientes. Funcionan limitando el ancho de banda de la red, simulando conexiones móviles más lentas como 3G o EDGE. Entre las herramientas más utilizadas están:
 
-   * **[Condicionador de vínculos de red](https://nshipster.com/network-link-conditioner/)** : proporciona una interfaz de usuario fácil de usar y funciona a un nivel bastante bajo en la pila de redes. Incluye versiones para OS X e iOS;
-   * [**Charles**](https://www.charlesproxy.com/) : una aplicación proxy de depuración web que, además de varios otros usos, proporciona regulación de red. Se proporcionan versiones para Windows, OS X y Linux.
+   * **[Condicionador de vínculo de red](https://nshipster.com/network-link-conditioner/)** : proporciona una interfaz de usuario fácil de usar y funciona a un nivel bastante bajo en la pila de redes. Incluye versiones para OS X y iOS;
+   * [**Charles**](https://www.charlesproxy.com/) : una aplicación proxy de depuración web que, además de otros usos, proporciona restricciones de red. Se proporcionan versiones para Windows, OS X y Linux.
 
 #### Herramientas de optimización {#optimization-tools}
 
 **Monitoreo**
 
-La documentación de [Monitorización del rendimiento](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) es un buen recurso para herramientas y métodos que se pueden usar para diagnosticar problemas y señalar áreas para el ajuste.
+La variable [Monitorización del rendimiento](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) La documentación es un buen recurso para herramientas y métodos que se pueden utilizar para diagnosticar problemas y señalar áreas para el ajuste.
 
 **Modo de desarrollador en la IU táctil**
 
-Una de las nuevas funciones de la IU táctil de AEM 6 es el Modo de desarrollador. Del mismo modo que los autores pueden cambiar entre los modos de edición y vista previa, los desarrolladores pueden cambiar al modo de desarrollador en la interfaz de usuario de autor para ver el tiempo de procesamiento de cada uno de los componentes de la página y ver los rastros de pila de cualquier error. Para obtener más información sobre el modo de desarrollador, consulte esta [presentación de Gems de CQ](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+Una de las nuevas funciones de la IU táctil de AEM 6 es el Modo de desarrollador. Del mismo modo que los autores pueden cambiar entre los modos de edición y vista previa, los desarrolladores pueden cambiar al modo de desarrollador en la interfaz de usuario de autor para ver el tiempo de procesamiento de cada uno de los componentes de la página y ver los rastros de pila de cualquier error. Para obtener más información sobre el modo de desarrollador, consulte esta [Presentación de CQ Gems](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
 
 **Uso de rlog.jar para leer los registros de solicitud**
 
-Para un análisis más completo de los registros de solicitud en un sistema AEM, se puede utilizar `rlog.jar` para buscar y ordenar los archivos `request.log` que AEM genera. Este archivo jar se incluye con una instalación AEM en la carpeta `/crx-quickstart/opt/helpers`. Para obtener más información sobre la herramienta de registro y el registro de solicitudes en general, consulte la documentación [Monitoring and Maintain](/help/sites-deploying/monitoring-and-maintaining.md) .
+Para un análisis más completo de los registros de solicitudes en un sistema AEM, `rlog.jar` se puede usar para buscar y ordenar `request.log` archivos que AEM genera. Este archivo jar se incluye con una instalación AEM en la variable `/crx-quickstart/opt/helpers` carpeta. Para obtener más información sobre la herramienta de registro y el registro de solicitudes en general, consulte la [Supervisión y mantenimiento](/help/sites-deploying/monitoring-and-maintaining.md) documentación.
 
 **La herramienta Explicar consulta**
 
-La [Explain Query tool](/help/sites-administering/operations-dashboard.md#explain-query) en ACS AEM Tools se puede utilizar para ver los índices que se utilizan al ejecutar una consulta. Esto puede resultar muy útil al optimizar las consultas de ejecución lenta.
+La variable [Explicar la herramienta Consulta](/help/sites-administering/operations-dashboard.md#explain-query) en ACS AEM Tools se puede utilizar para ver los índices que se utilizan al ejecutar una consulta. Esto puede resultar muy útil al optimizar las consultas de ejecución lenta.
 
 **Herramientas PageSpeed**
 
-Las herramientas PageSpeed de Google ofrecen análisis del sitio para el cumplimiento de las prácticas recomendadas en el rendimiento de la página, así como un complemento que se puede instalar junto con Dispatcher en una instancia de Apache para realizar optimizaciones adicionales. Para obtener más información, consulte el [Sitio Web de herramientas PageSpeed](https://developers.google.com/speed/pagespeed/).
+Las herramientas PageSpeed de Google ofrecen análisis de sitios para el cumplimiento de las prácticas recomendadas en el rendimiento de la página, así como un complemento que se puede instalar junto con Dispatcher en una instancia de Apache para realizar optimizaciones adicionales. Para obtener más información, consulte la [Sitio Web de las herramientas de PageSpeed](https://developers.google.com/speed/pagespeed/).
 
 ## Entorno de creación {#author-environment}
 
@@ -98,23 +98,31 @@ Para realizar pruebas de rendimiento en el entorno de creación, es necesario si
 
 Hay muchos marcos de automatización disponibles que están diseñados para pruebas de carga y rendimiento. Los scripts personalizados se pueden registrar en estas herramientas y reproducirse para simular un número máximo de autores que realizan simultáneamente actividades similares de creación y activación de contenido. Se recomienda utilizar la herramienta Día difícil para simular actividades como cargar miles de recursos o activar un gran número de páginas.
 
-Para los tipos de entornos que tienen requisitos de carga de recursos pesada o creación de páginas, es imperativo utilizar herramientas como el Día duro para garantizar que el entorno funcione de forma eficiente bajo carga máxima. [](/help/sites-administering/webdav-access.md) WebDAVes una herramienta que no requiere secuencias de comandos y que también puede utilizarse para cargar grandes cantidades de recursos.
+Para los tipos de entornos que tienen requisitos de carga de recursos pesada o creación de páginas, es imperativo utilizar herramientas como el Día duro para garantizar que el entorno funcione de forma eficiente bajo carga máxima. [WebDAV](/help/sites-administering/webdav-access.md) es una herramienta que no requiere secuencias de comandos y que también puede utilizarse para cargar grandes cantidades de recursos.
 
 #### Pasos específicos de MongoDB {#mongodb-specific-steps}
 
-En sistemas con backends MongoDB, AEM proporciona varios [JMX](/help/sites-administering/jmx-console.md) MBeans que deben monitorizarse al realizar pruebas de carga o rendimiento:
+En sistemas con backends MongoDB, AEM proporciona varios [JMX](/help/sites-administering/jmx-console.md) MBas que deben monitorizarse al realizar pruebas de carga o rendimiento:
 
-* Las **Estadísticas de caché consolidada** MBean. Se puede acceder directamente desde:
+* La variable **Estadísticas de caché consolidada** MBean. Se puede acceder directamente desde:
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-Para la caché denominada **Document-Diff**, la tasa de visitas debe ser superior a `.90`. Si la tasa de visitas cae por debajo del 90%, es probable que tenga que modificar la configuración de `DocumentNodeStoreService`. La compatibilidad con el producto de Adobe puede recomendar una configuración óptima para su entorno.
+Para la caché denominada **Document-Diff**, la tasa de visitas debería haber terminado `.90`. Si la tasa de visitas cae por debajo del 90 %, es probable que tenga que modificar su `DocumentNodeStoreService` configuración. La compatibilidad con el producto de Adobe puede recomendar una configuración óptima para su entorno.
 
-* El **Oak Repository Statistics** Mbean. Se puede acceder directamente desde:
+* La variable **Estadísticas del repositorio Oak** Mbean. Se puede acceder directamente desde:
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
-La sección **ObservationQueueMaxLength** mostrará la cantidad de eventos en la cola de observación de Oak durante las últimas horas, minutos, segundos y semanas. Busque el mayor número de eventos en la sección &quot;por hora&quot;. Este número debe compararse con la configuración `oak.observation.queue-length` que se encuentra en el componente **SlingRepositoryManager** de la consola [OSGi](/help/sites-deploying/web-console.md). Si el número más alto mostrado para la cola de observación supera la configuración `queue-length`, póngase en contacto con el servicio de asistencia al Adobe para obtener ayuda para aumentar la configuración. El valor predeterminado es 1000, pero la mayoría de las implementaciones suelen necesitar elevarlo a 20 000 o 50 000.
+La variable **ObservationQueueMaxLength** mostrará la cantidad de eventos en la cola de observación de Oak durante las últimas horas, minutos, segundos y semanas. Busque el mayor número de eventos en la sección &quot;por hora&quot;. Este número debe compararse con la variable `oak.observation.queue-length` configuración. Si el número más alto mostrado para la cola de observación supera el `queue-length` configuración:
+
+1. Cree un archivo llamado: `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` que contiene el parámetro `oak.observation.queue‐length=50000`
+1. Colóquela en la carpeta /crx-quickstart/install.
+
+>[!NOTE]
+>Consulte también el artículo de la BC sobre [AEM 6.x | Consejos de ajuste del rendimiento](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+
+El valor predeterminado es 10 000, pero la mayoría de las implementaciones suelen necesitar elevarlo a 20 000 o 50 000.
 
 ## Entorno de publicación {#publish-environment}
 
@@ -128,19 +136,19 @@ La mayoría de los sitios web de producción cuentan con optimizaciones, como el
 
 En un sistema que no requiere un alto nivel de personalización, Dispatcher debe almacenar en caché la mayoría de las solicitudes. Como resultado, la carga en la instancia de publicación debe permanecer relativamente plana. Si se requiere un alto nivel de personalización, se recomienda utilizar tecnologías como iFrames o solicitudes de AJAX para el contenido personalizado para permitir el almacenamiento en caché de Dispatcher lo más posible.
 
-Para pruebas básicas, Apache Bench se puede utilizar para medir tiempos de respuesta del servidor web y ayudar a crear carga para medir cosas como fugas de memoria. Para obtener más información, consulte el ejemplo en [Monitoring documentation](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
+Para pruebas básicas, Apache Bench se puede utilizar para medir tiempos de respuesta del servidor web y ayudar a crear carga para medir cosas como fugas de memoria. Para obtener más información, consulte el ejemplo en la sección [Documentación de monitorización](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
 ## Resolución de problemas de rendimiento {#troubleshooting-performance-issues}
 
 Después de ejecutar pruebas de rendimiento en la instancia de autor, cualquier problema deberá investigarse, diagnosticarse y solucionarse. Puede utilizar varias herramientas y técnicas al realizar análisis y solucionar problemas:
 
-* Puede inspeccionar el [registro de rendimiento de la solicitud](/help/sites-administering/operations-dashboard.md#request-performance) en el panel de operaciones. Esta herramienta se puede utilizar para identificar solicitudes de página lentas
-* Analizar consultas lentas en ejecución con la [herramienta Rendimiento de consulta](/help/sites-administering/operations-dashboard.md#query-performance)
+* Puede inspeccionar el [Registro de rendimiento de la solicitud](/help/sites-administering/operations-dashboard.md#request-performance) en el panel de operaciones. Esta herramienta se puede utilizar para identificar solicitudes de página lentas
+* Analice las consultas de ejecución lenta con el [Herramienta Rendimiento de consulta](/help/sites-administering/operations-dashboard.md#query-performance)
 
-* Observe el error lof para ver errores o advertencias. Para obtener más información, consulte [Inicio de sesión](/help/sites-deploying/configure-logging.md)
+* Observe el error lof para ver errores o advertencias. Para obtener más información, consulte [Registro](/help/sites-deploying/configure-logging.md)
 * Supervise los recursos de hardware del sistema, como la utilización de la memoria y la CPU, la E/S de disco o la E/S de red. Estos recursos suelen ser la causa de cuellos de botella en el rendimiento
 * Optimice la arquitectura de las páginas y cómo se dirigen para minimizar el uso de parámetros de URL y permitir el máximo almacenamiento en caché posible
-* Siga la documentación de [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) y [Consejos de ajuste del rendimiento](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+* Siga las [Optimización del rendimiento](/help/sites-deploying/configuring-performance.md) y [Consejos de ajuste del rendimiento](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) documentación
 
 * Si hay problemas para editar determinadas páginas o componentes en instancias de autor, utilice el modo de desarrollador de TouchUI para inspeccionar la página en cuestión. Esto proporciona un desglose de cada área de contenido en la página, así como su tiempo de carga
 * Minimice todos los JS y CSS del sitio. Para obtener más información sobre cómo hacerlo, consulte esta [publicación de blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
