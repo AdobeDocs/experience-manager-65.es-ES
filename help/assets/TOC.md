@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, procese y distribuya recursos digitales.
-source-git-commit: 85736791b7a8f518b57180b0139d6a76ebf1c6dc
+source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '637'
 ht-degree: 20%
 
 ---
@@ -21,12 +21,12 @@ ht-degree: 20%
 + [Acerca de DAM](assets.md)
 + [Prácticas recomendadas para los recursos](best-practices-for-assets.md)
 + [Accesibilidad en [!DNL Assets]](accessibility.md)
-+ Usar recursos de Experience Manager {#using}
++ Uso de Experience Manager Assets {#using}
    + [[!DNL Assets] experiencia de página de inicio](assets-home-page.md)
    + [Buscar recursos digitales](search-assets.md)
    + [Trabajar con metadatos de recursos](metadata.md)
    + [Recursos multilingües](multilingual-assets.md)
-   + [Usar  [!DNL Adobe Stock] recursos en Assets](aem-assets-adobe-stock.md)
+   + [Uso [!DNL Adobe Stock] recursos en Assets](aem-assets-adobe-stock.md)
    + [Vista previa de recursos 3D](previewing-3d-assets.md)
    + [Revisar recursos y colecciones de carpetas](bulk-approval.md)
    + [Etiquetas inteligentes mejoradas](enhanced-smart-tags.md)
@@ -36,11 +36,13 @@ ht-degree: 20%
    + [Reutilizar recursos mediante MSM](reuse-assets-using-msm.md)
    + [Recursos conectados con [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 + Dynamic Media{#dynamic}
-   + [Archivo de newsletter de Dynamic Media por Experience League](dynamic-media-newsletter.md)
+   + [Archivo de boletines por Experience League](dynamic-media-newsletter.md)
    + [Configuración de Dynamic Media](administering-dynamic-media.md)
    + [Trabajar con Dynamic Media](dynamic-media.md)
    + [Configuración de Dynamic Media: modo Scene7](config-dms7.md)
    + [Configuración de Dynamic Media: modo híbrido](config-dynamic.md)
+   + [Configuración general de Dynamic Media](dm-general-settings.md)
+   + [Configuración de Dynamic Media Publish](dm-publish-settings.md)
    + [Resolución de problemas de Dynamic Media: modo Scene7](troubleshoot-dms7.md)
    + [Accesibilidad en Dynamic Media](accessibility-dm.md)
    + [Migración de Dynamic Media: modo híbrido a Dynamic Media: modo S7](migrate-from-hybrid-to-dms7.md)
@@ -86,16 +88,16 @@ ht-degree: 20%
    + [Personalizar y ampliar [!DNL Assets]](extending-assets.md)
    + [Procesamiento de recursos mediante controladores de medios y flujos de trabajo](media-handlers.md)
    + [Ampliar funcionalidad de búsqueda](searchx.md)
-   + [Instale y configure [!DNL ImageMagick] para trabajar con [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Instalación y configuración [!DNL ImageMagick] para trabajar con [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Integración de recursos con el flujo de actividades](extending-activity-stream.md)
    + [Ampliar editor de recursos](asseteditorx.md)
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
-   + [Compatibilidad con fragmentos de contenido en la API  [!DNL Assets] HTTP](assets-api-content-fragments.md)
+   + [Compatibilidad con fragmentos de contenido en [!DNL Assets] API HTTP](assets-api-content-fragments.md)
    + [API de GraphQL para fragmentos de contenido](content-fragments/graphql-api-content-fragments.md)
    + [Autenticación para consultas de Remote GraphQL en fragmentos de contenido](content-fragments/graphql-authentication-content-fragments.md)
    + [API de GraphQL con fragmentos de contenido: contenido de muestra y consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets] desarrollo de proxy](proxy.md)
-+ Administrar recursos {#administer}
++ Administración de recursos {#administer}
    + [Formatos de archivo compatibles](assets-formats.md)
    + [Facetas de búsqueda](search-facets.md)
    + [Explicación de los conceptos de metadatos](metadata-concepts.md)
