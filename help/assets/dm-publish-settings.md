@@ -10,9 +10,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: e3067a17153864babaf0243c4c3f6cf9cd8d30bc
+source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
 workflow-type: tm+mt
-source-wordcount: '3098'
+source-wordcount: '3114'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,6 @@ ht-degree: 2%
 >* Está ejecutando Dynamic Media en modo Scene7.
 >* Tiene un *existente* **[!UICONTROL Configuración de Dynamic Media]** (en **[!UICONTROL Cloud Services]**) en Adobe Experience Manager 6.5 o en Experience Manager as a Cloud Service.
 >* Es administrador del sistema del Experience Manager con privilegios de administrador.
-
 
 
 La configuración de la página Configuración de publicación de Dynamic Media determina cómo se envían los recursos de forma predeterminada desde los servidores Dynamic Media de Adobe a los sitios web o las aplicaciones. Si no se especifica ninguna configuración, el servidor Dynamic Media de Adobe envía un recurso de acuerdo con la configuración predeterminada de una página de configuración de publicación. Por ejemplo, una solicitud para enviar una imagen que no incluya un atributo de resolución genera una imagen con la configuración Resolución de objeto predeterminada en la página Servidor de imágenes.
@@ -50,6 +49,9 @@ Los administradores pueden cambiar la configuración predeterminada de las pági
    * [Atributos de solicitud](#request-attributes-tab) ficha
    * [Atributos de miniatura comunes](#common-thumbnail-attributes-tab) ficha
    * [Atributos de gestión de color](#color-management-attributes-tab) ficha
+
+   ![Página Configuración de publicación de Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
+   *Configuración de publicación de Dynamic Media , con la variable **[!UICONTROL Atributos de solicitud]**seleccionada.*<br><br>
 
 1. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**.
 

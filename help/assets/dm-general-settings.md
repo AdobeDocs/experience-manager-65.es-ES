@@ -10,9 +10,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: bbced918e67c64c0bf2f5a3de8cbcb9063fff669
+source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2216'
 ht-degree: 5%
 
 ---
@@ -46,6 +46,9 @@ Consulte también [Probar el servicio Secure Testing](/help/assets/dm-publish-se
    * [Photoshop](#photoshop-tab) ficha
    * [PDF](#pdf-tab) ficha
    * [Illustrator](#illustrator-tab) ficha
+
+   ![Página Configuración general de Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
+   *Configuración general de Dynamic Media , con la variable **[!UICONTROL Edición de imágenes]**seleccionada.*<br><br>
 
 1. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**.
 
