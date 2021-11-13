@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
+source-git-commit: b6000516b88342d6abf8072623cfece43e2ba19d
 workflow-type: tm+mt
-source-wordcount: '11558'
+source-wordcount: '11571'
 ht-degree: 3%
 
 ---
@@ -144,18 +144,18 @@ Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, selecci
          * **[!UICONTROL Deshabilitado para subcarpetas]** - Excluya todo lo que se encuentra en este subárbol de la sincronización con Dynamic Media.
 
    >[!NOTE]
-   There is no support for versioning in DMS7. Además, la activación retrasada solo se aplica si **[!UICONTROL Publicar recursos]** en la página Editar configuración de Dynamic Media está configurada en **[!UICONTROL Al activarse]** y, a continuación, solo hasta la primera vez que se activa el recurso.
-   After an asset is activated, any updates are immediately published live to S7 Delivery.
+   No se admite el control de versiones en DMS7. Además, la activación retrasada solo se aplica si **[!UICONTROL Publicar recursos]** en la página Editar configuración de Dynamic Media está configurada en **[!UICONTROL Al activarse]** y, a continuación, solo hasta la primera vez que se activa el recurso.
+   Una vez activado un recurso, las actualizaciones se publican inmediatamente en S7 Delivery.
 
 1. Seleccione **[!UICONTROL Guardar]**.
-1. To securely preview Dynamic Media content before it gets published, you must &quot;allowlist&quot; the Experience Manager author instance to connect to Dynamic Media:
+1. Para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, debe &quot;lista de permitidos&quot; la instancia de autor del Experience Manager para conectarse a Dynamic Media:
 
    * **RIESGO: VÍNCULO AL NUEVO TEMA DE CONFIGURACIÓN DE PUBLICACIÓN** Abra el [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no tiene esta información, póngase en contacto con el servicio de atención al cliente de Adobe.
 
    * En la barra de navegación cerca de la parte superior derecha de la página, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
 
    * En la página Publicación del servidor de imágenes , en la lista desplegable Contexto de publicación , seleccione **[!UICONTROL Probar servicio de imágenes]**.
-   * For the Client Address Filter, select **[!UICONTROL Add]**.
+   * Para el filtro de direcciones de cliente, seleccione **[!UICONTROL Agregar]**.
    * Para activar la dirección, seleccione la casilla de verificación. Introduzca la dirección IP de la instancia de Autor del Experience Manager (no la IP de Dispatcher).
    * Seleccione **[!UICONTROL Guardar]**.
 
@@ -167,15 +167,15 @@ Si desea personalizar aún más la configuración, puede completar opcionalmente
 
 **RIESGO: CONSERVAR TAL CUAL**
 
-If you want to further customize the configuration and setup of Dynamic Media - Scene7 mode, or optimize its performance, you can complete one or more of the following *optional* tasks:
+Si desea personalizar aún más la configuración y la configuración del modo Dynamic Media - Scene7 o optimizar su rendimiento, puede realizar una o más de las siguientes acciones: *opcional* tareas:
 
 * [(Opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB](#optional-config-dms7-assets-larger-than-2gb)
-
-* [(Opcional) Configuración de Dynamic Media: configuración del modo Scene7](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
-
+* [(Opcional) Configuración de Dynamic Media Publish](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
+   * [(Opcional) Pruebe los recursos antes de hacerlos públicos](#test-assets-before-making-public)
+* [(Opcional) Configuración general de Dynamic Media](#configuring-application-general-settings)
+* [(Opcional) Tareas de configuración adicionales](#additional-configuration-tasks)
 * [(Opcional) Ajuste el rendimiento del modo Dynamic Media - Scene7](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
-
-* [(Optional) Filter assets for replication](#optional-filtering-assets-for-replication)
+* [(Opcional) Filtrar recursos para la replicación](#optional-filtering-assets-for-replication)
 
 ### (Opcional) Configuración de Dynamic Media: modo Scene7 para cargar recursos de más de 2 GB {#optional-config-dms7-assets-larger-than-2gb}
 
@@ -328,7 +328,7 @@ Estos ajustes pertenecen al aspecto predeterminado de las imágenes.
 | Configuración | Descripción |
 | --- | --- |
 | **[!UICONTROL Límite de tamaño de la imagen de respuesta]** | Requerido.<br>Especifica el ancho y el alto máximo de la imagen de respuesta que se devuelve al cliente. El servidor devuelve un error si una solicitud produce una imagen de respuesta cuya anchura, altura o ambas dimensiones sean superiores a esta configuración.<br>Consulte también [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Modo de ofuscación de solicitud]** | Enable if you want base64 encoding applied to valid requests.<br>Consulte también [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Modo de ofuscación de solicitud]** | Habilitar si desea aplicar codificación base64 a solicitudes válidas.<br>Consulte también [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) en la Guía de referencia de visores de Dynamic Media. |
 | **[!UICONTROL Modo de bloqueo de solicitud]** | Habilitar si desea un simple bloqueo hash incluido en las solicitudes.<br>Consulte también [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) en la Guía de referencia de visores de Dynamic Media. |
 | **[!UICONTROL Atributos de solicitud predeterminados]** |  |
 | **[!UICONTROL Sufijo de archivo de imagen predeterminado]** | Requerido.<br>Extensión de archivo de datos predeterminada que se anexa a los valores de campo Ruta del catálogo y RutaDeMáscara si la ruta no incluye un sufijo de archivo.<br>Consulte también [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) en la Guía de referencia de visores de Dynamic Media. |
@@ -619,7 +619,7 @@ Puede elegir rasterizar los archivos, extraer palabras de búsqueda y vínculos,
 | **[!UICONTROL Procesando]** | ・ **[!UICONTROL Ninguna]** - No se procesa el PDF.<br>・ **[!UICONTROL Miniatura]** - Extrae cada página del archivo PDF y la convierte en una imagen en miniatura.<br> ・ **[!UICONTROL Rasterizar]** : quita las páginas del archivo PDF y convierte los gráficos vectoriales en imágenes de mapa de bits. Para crear un catálogo electrónico, seleccione esta opción. |
 | **[!UICONTROL Extraer]** | ・ **[!UICONTROL Ninguna]** - No se extraen palabras de búsqueda ni vínculos del PDF.<br>・ **[!UICONTROL Palabras de búsqueda]** - Extrae palabras de búsqueda del archivo PDF para que el archivo se pueda buscar por palabra clave en un visor de catálogos electrónicos.<br>・ **[!UICONTROL Vínculos]** - Extrae enlaces de los archivos PDF y los convierte en mapas de imágenes que se usan en un visor de catálogos electrónicos.<br>・ **[!UICONTROL Buscar palabras y vínculos]** - Extrae palabras de búsqueda y vínculos para usarlos en un visor de catálogos electrónicos. |
 | **[!UICONTROL Resolución (píxel/pulgada)]** | Determina la configuración de resolución. Esta configuración determina cuántos píxeles se muestran por pulgada en el archivo PDF. El valor predeterminado es 150. |
-| **[!UICONTROL Espacio de color]** | • **[!UICONTROL Detect automatically]** - Maintains the color space of the PDF file.<br>• **[!UICONTROL Force as RGB]** - Converts to the RGB color space.<br>・ **[!UICONTROL Forzar como CMYK]** - Convierte al espacio de color CMYK.<br>• **[!UICONTROL Force as Grayscale]** - Converts to the Grayscale color space. |
+| **[!UICONTROL Espacio de color]** | ・ **[!UICONTROL Detectar automáticamente]** : mantiene el espacio de color del archivo PDF.<br>・ **[!UICONTROL Forzar como RGB]** - Convierte al espacio de color del RGB.<br>・ **[!UICONTROL Forzar como CMYK]** - Convierte al espacio de color CMYK.<br>・ **[!UICONTROL Forzar como escala de grises]** - Convierte al espacio de color Escala de grises . |
 
 ##### Ficha Illustrator {#illustrator-tab}
 
@@ -643,7 +643,7 @@ Al cargar archivos de imagen de Illustrator (AI), puede aplicarles formato de va
 >[!NOTE]
 De forma predeterminada, el sistema muestra 15 representaciones al seleccionar **[!UICONTROL Representaciones]** y 15 ajustes preestablecidos de visualizador al seleccionar **[!UICONTROL Visualizadores]** en la vista de detalles del recurso. Puede aumentar este límite. Consulte [Aumente el número de ajustes preestablecidos de imagen que se muestran](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) o [Aumente el número de ajustes preestablecidos de visor que se muestran](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-### (Opcional) Tareas de configuración adicionales
+### (Opcional) Tareas de configuración adicionales {#additional-configuration-tasks}
 
 Las tareas opcionales de configuración y configuración incluyen lo siguiente:
 
@@ -789,15 +789,15 @@ Hay dos elementos disponibles para la definición: Coincidencia y Nombre base. E
 1. Realice una de las acciones siguientes:
 
    * Select **[!UICONTROL Guardar como]** y escriba un nombre para el ajuste preestablecido.
-   * Select **[!UICONTROL Save]** if you are editing an existing preset.
+   * Select **[!UICONTROL Guardar]** si está editando un ajuste preestablecido existente.
 
 ##### Crear un ajuste preestablecido de conjunto de lotes
 
-Dynamic Media uses batch set presets to organize assets into sets of images (alternate images, color options, 360 spin) for display in viewers. Los ajustes preestablecidos de conjuntos de lotes se ejecutan automáticamente junto con los procesos de carga de recursos en Dynamic Media.
+Dynamic Media utiliza ajustes preestablecidos de conjuntos de lotes para organizar los recursos en conjuntos de imágenes (imágenes alternativas, opciones de color y giro de 360) para mostrarlos en los visualizadores. Los ajustes preestablecidos de conjuntos de lotes se ejecutan automáticamente junto con los procesos de carga de recursos en Dynamic Media.
 
 Puede crear, editar y administrar los ajustes preestablecidos de conjuntos de lotes. Existen dos formas de definiciones de ajustes preestablecidos de conjuntos de lotes: una para una convención de nombres predeterminada que puede configurar y otra para convenciones de nombres personalizadas que cree sobre la marcha.
 
-Se puede utilizar el método de campo de formulario para definir un ajuste preestablecido de conjunto de lotes o el método de código, que permite utilizar expresiones regulares. As in Default Naming, you can choose View Code at the same time you are defining in the Form View and use regular expressions to build your definitions. Como alternativa, puede desmarcar cualquiera de las vistas para utilizar una o las otras exclusivamente.
+Se puede utilizar el método de campo de formulario para definir un ajuste preestablecido de conjunto de lotes o el método de código, que permite utilizar expresiones regulares. Al igual que en Nombre predeterminado, puede elegir Ver código al mismo tiempo que define en la Vista de formulario y utilizar expresiones regulares para crear las definiciones. Como alternativa, puede desmarcar cualquiera de las vistas para utilizar una o las otras exclusivamente.
 
 **Para crear un ajuste preestablecido de conjunto de lotes:**
 
@@ -812,15 +812,15 @@ Se puede utilizar el método de campo de formulario para definir un ajuste prees
    **[!UICONTROL Ver formulario]**, tal y como se establece en la esquina superior derecha de la página Detalles, es la vista predeterminada.
 
 1. En el panel Lista de ajustes preestablecidos, seleccione **[!UICONTROL Agregar]** para activar los campos de definición en el panel Detalles del lado derecho de la pantalla.
-1. In the Details panel, in the Preset Name field, type a name for the preset.
-1. In the Batch Set Type drop-down menu, select a preset type.
+1. En el panel Detalles, en el campo Nombre de ajuste preestablecido , escriba un nombre para el ajuste preestablecido.
+1. En el menú desplegable Tipo de conjunto de lotes , seleccione un tipo de ajuste preestablecido.
 1. Realice una de las acciones siguientes:
 
    * Si está utilizando una convención de nombres predeterminada que configuró anteriormente en **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]** > **[!UICONTROL Nombre predeterminado]**, expandir **[!UICONTROL Convenciones de nomenclatura de recursos]** y, a continuación, en la lista desplegable Nombres de archivo , seleccione **[!UICONTROL Predeterminado]**.
 
-   * To define a new naming convention as you set up the preset, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, select **[!UICONTROL Custom]**.
+   * Para definir una nueva convención de nombres al configurar el ajuste preestablecido, expanda **[!UICONTROL Convenciones de nomenclatura de recursos]** y, a continuación, en la lista desplegable Nombres de archivo , seleccione **[!UICONTROL Personalizado]**.
 
-1. For Sequence order, define the order in which images are displayed after the set is grouped in Dynamic Media.
+1. En Orden de secuencia, defina el orden en que se muestran las imágenes después de agrupar el conjunto en Dynamic Media.
 
    De forma predeterminada, los recursos se ordenan alfanuméricamente. Sin embargo, puede utilizar una lista de expresiones regulares separadas por coma para definir el orden.
 
@@ -1014,7 +1014,7 @@ La configuración de conexión de carga de Scene7 sincroniza los recursos de Exp
 
    La variable **[!UICONTROL Tiempo de espera de trabajo activo]** determina el tiempo de espera para que los recursos de Dynamic Media cargados se publiquen en el servidor de entrega. Este valor es de 2100 segundos o 35 minutos de forma predeterminada.
 
-   For most use cases, the setting of 2100 is sufficient.
+   Para la mayoría de los casos de uso, el ajuste de 2100 es suficiente.
 
    ![Chlimage_1-2](assets/chlimage_1-2.jpeg)
 
@@ -1026,13 +1026,13 @@ La configuración de conexión de carga de Scene7 sincroniza los recursos de Exp
 
 En implementaciones que no son de Dynamic Media, se replican *all* recursos (imágenes y vídeo) desde el entorno de creación de Experience Manager al nodo de publicación de Experience Manager. Este flujo de trabajo es necesario porque los servidores de publicación de Experience Manager también entregan los recursos.
 
-Sin embargo, en las implementaciones de Dynamic Media, dado que los recursos se entregan mediante el Cloud Service, no es necesario replicar esos mismos recursos en los nodos de publicación de Experience Manager. Este flujo de trabajo de &quot;publicación híbrida&quot; evita costos de almacenamiento adicionales y tiempos de procesamiento más largos para replicar recursos. Other content, such as Site pages, continue to be served from the Experience Manager publish nodes.
+Sin embargo, en las implementaciones de Dynamic Media, dado que los recursos se entregan mediante el Cloud Service, no es necesario replicar esos mismos recursos en los nodos de publicación de Experience Manager. Este flujo de trabajo de &quot;publicación híbrida&quot; evita costos de almacenamiento adicionales y tiempos de procesamiento más largos para replicar recursos. Otros contenidos, como las páginas del sitio, se siguen sirviendo desde los nodos de publicación del Experience Manager.
 
 Los filtros proporcionan una forma de *excluir* los recursos se replican en el nodo de publicación de Experience Manager.
 
 #### Usar filtros de recursos predeterminados para la replicación {#using-default-asset-filters-for-replication}
 
-**RICK: KEEP AS IS**
+**RIESGO: CONSERVAR TAL CUAL**
 
 Si usa Dynamic Media para imágenes, vídeos o ambos, puede usar los filtros predeterminados que Adobe proporciona tal cual. Los siguientes filtros están activos de forma predeterminada:
 
