@@ -4,9 +4,9 @@ description: Notas de la versión específicas de [!DNL Adobe Experience Manager
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 14339f6a34952c00351c6dee8537b5df6f6fbcd3
+source-git-commit: 0a35b26c5f790d67db55421b8f3e98e5ddb30528
 workflow-type: tm+mt
-source-wordcount: '4436'
+source-wordcount: '4430'
 ht-degree: 3%
 
 ---
@@ -92,7 +92,7 @@ La siguiente es la lista de correcciones que se proporcionan en [!DNL Experience
 * Al promocionar un lanzamiento, los cambios en el lanzamiento promocionado se implementan dos veces en los demás lanzamientos. Si un usuario promociona el lanzamiento doble, el contenido duplicado se refleja en la página de origen (NPR-36893).
 * [!DNL Experience Manager] añade un borde gris a algunas imágenes PNG con transparencia si agrega las imágenes a una página utilizando el componente principal de imagen o si cambia el tamaño con el componente Imagen base (NPR-36879).
 * [!DNL Experience Manager Sites] La interfaz de usuario del administrador con un número elevado de plantillas resulta en una navegación lenta (NPR-36870).
-* La actualización al Service Pack 9 impide la creación de algunos componentes. Este problema no permite [!DNL Sites] para crear páginas nuevas (NPR-36857).
+* Las páginas web no se renderizan cuando sus vínculos se modifican con paquetes de filtros servlet personalizados (NPR-36857).
 * La variable `ContextHubImpl` crea un `ResourceResolver` que no está cerrado. Esto lleva a mensajes de advertencia sobre la ejecución prolongada `ResourceResolver` y el servicio devuelve a veces resultados inesperados (NPR-36853).
 * Al sincronizar una sola Live Copy desde las propiedades de la página de modelo, también se sincronizan todos los demás Live Copies (NPR-36829, NPR-36522).
 * Cuando solo se utiliza el tipo MIME XLS, la función de carga de archivos no funciona como se espera (NPR-36785).
