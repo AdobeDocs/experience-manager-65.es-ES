@@ -7,37 +7,43 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
+mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
+source-git-commit: 26f521868d0b983a05579d0d4c1ef50684b721ee
 workflow-type: tm+mt
-source-wordcount: '2216'
-ht-degree: 5%
+source-wordcount: '2454'
+ht-degree: 4%
 
 ---
 
 
 # Configuración general de Dynamic Media
 
->[!IMPORTANT]
->
->La configuración general de Dynamic Media solo está disponible si:
->
->* Está ejecutando Dynamic Media en modo Scene7.
->* Tiene un *existente* **[!UICONTROL Configuración de Dynamic Media]** (en **[!UICONTROL Cloud Services]**) en Adobe Experience Manager 6.5 o en Experience Manager as a Cloud Service.
->* Es administrador del sistema del Experience Manager con privilegios de administrador.
+Configuración **[!UICONTROL Configuración general de Dynamic Media]** solo está disponible si:
 
+* Está ejecutando Dynamic Media en modo Scene7. Consulte [Habilitar Dynamic Media en modo Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
+* Tiene un *existente* **[!UICONTROL Configuración de Dynamic Media]** (en **[!UICONTROL Cloud Services]**) en Adobe Experience Manager 6.5 o en Experience Manager as a Cloud Service.
+* Es administrador del sistema del Experience Manager con privilegios de administrador.
+
+La configuración general de Dynamic Media está pensada para que la utilicen desarrolladores y programadores experimentados de sitios web. Adobe Dynamic Media recomienda que los usuarios que cambien esta configuración de publicación estén familiarizados con Dynamic Media en Adobe Experience Manager y con la tecnología básica de imágenes.
 
 Al crear la cuenta, Adobe Dynamic Media proporciona automáticamente los servidores asignados a su empresa. Estos servidores se utilizan para construir cadenas de URL para el sitio web y las aplicaciones. Estas llamadas a URL son específicas de su cuenta.
 
-Consulte también [Probar el servicio Secure Testing](/help/assets/dm-publish-settings.md#test-assets-before-making-public).
+La página Configuración de publicación de Dynamic Media establece una configuración predeterminada que determina cómo se envían los recursos desde los servidores de Dynamic Media de Adobe a los sitios web o aplicaciones. Si no se especifica ninguna configuración, el servidor Dynamic Media de Adobe envía un recurso de acuerdo con una configuración predeterminada que se configuró en la página Configuración de publicación de Dynamic Media .
+
+Consulte también [Configuración de Dynamic Media: configuración del modo Scene7](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+
+>[!NOTE]
+>
+>¿Desea actualizar de Dynamic Media Classic a Dynamic Media en Adobe Experience Manager? Las páginas Configuración general y Configuración de publicación de Dynamic Media se rellenan previamente con los valores tomados de la cuenta de Dynamic Media Classic. Las excepciones son todos los valores enumerados en la **[!UICONTROL Opciones de carga predeterminadas]** de la página Configuración general. Estos valores ya están en Experience Manager. Como tal, cualquier cambio que realice en **[!UICONTROL Opciones de carga predeterminadas]**, a través de las cinco pestañas, la interfaz de usuario del Experience Manager se refleja en Dynamic Media, no en Dynamic Media Classic. El resto de las configuraciones y valores de la página Configuración general y Configuración de publicación se mantienen entre Dynamic Media Classic y Dynamic Media en Experience Manager.
 
 **Para configurar la configuración general de Dynamic Media:**
 
 1. En el modo Autor del Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global.
 1. En el carril izquierdo, seleccione el icono Herramientas y, a continuación, vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Configuración general de Dynamic Media]**.
-1. En la página Servidor , configure **[!UICONTROL Nombre del servidor publicado]** y **[!UICONTROL Nombre del servidor de origen]** y, a continuación, utilice las cinco pestañas para configurar las opciones de publicación predeterminadas.
+1. En la página Servidor , configure **[!UICONTROL Nombre del servidor publicado]** y **[!UICONTROL Nombre del servidor de origen]** y, a continuación, utilice las cinco fichas para configurar las opciones de carga predeterminadas para la edición de imágenes y para los archivos Postscript, Photoshop, PDF y Illustrator.
 
    * [Servidor](#server-general-setting)
    * [Cargar a la aplicación](#upload-to-application)
@@ -58,7 +64,7 @@ Al crear la cuenta, Adobe Dynamic Media proporciona automáticamente los servido
 
 | Opción | Descripción |
 | --- | --- |
-| **[!UICONTROL Servidor de publicación]** | Requerido.<br>Este servidor es el servidor CDN (red de entrega de contenido) activo que se utiliza en todas las llamadas URL generadas por el sistema que son específicas de su cuenta. No cambie este nombre de servidor a menos que se le indique que lo haga por Adobe Technical Support. El nombre debe utilizar `https://` en la ruta. |
+| **[!UICONTROL Servidor de publicación]** | Requerido.<br>El nombre debe utilizar `https://` en la ruta.<br>Este servidor es el servidor CDN (red de entrega de contenido) activo que se utiliza en todas las llamadas URL generadas por el sistema que son específicas de su cuenta. No cambie este nombre de servidor a menos que se le indique que lo haga por Adobe Technical Support. |
 | **[!UICONTROL Servidor de origen]** | Requerido.<br>Este servidor solo se utiliza para pruebas de control de calidad. No cambie este nombre de servidor a menos que se le indique que lo haga el servicio de asistencia técnica de Adobe. |
 
 ## Cargar a la aplicación {#upload-to-application}
@@ -69,7 +75,7 @@ Al crear la cuenta, Adobe Dynamic Media proporciona automáticamente los servido
 
    | Opción Sobrescribir imágenes | Descripción |
    | --- | --- |
-   | **[!UICONTROL Sobrescribir en la carpeta actual, mismo nombre/extensión de base]** | Predeterminado.<br>Esta opción es la regla más estricta para la sustitución. Requiere que cargue la imagen de reemplazo en la misma carpeta que la original y que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la original. Si no se cumplen estos requisitos, se crea un duplicado. |
+   | **[!UICONTROL Sobrescribir en la carpeta actual, mismo nombre/extensión de base]** | Predeterminado solo para nuevas cuentas de Dynamic Media.<br>Esta opción es la regla más estricta para la sustitución. Requiere que cargue la imagen de reemplazo en la misma carpeta que la original y que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la original. Si no se cumplen estos requisitos, se crea un duplicado. |
    | **[!UICONTROL Sobrescribir en la carpeta actual, mismo nombre de base independientemente de la extensión]** | Requiere que cargue la imagen de reemplazo en la misma carpeta que el original, aunque la extensión del nombre de archivo puede ser diferente de la original. Por ejemplo, chair.tif reemplaza a chair.jpg. |
    | **[!UICONTROL Sobrescribir en cualquier carpeta con mismo nombre y ext. de recurso base]** | Requiere que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la imagen original (por ejemplo, chair.jpg debe reemplazar a chair.jpg, no chair.tif). Sin embargo, puede cargar la imagen de reemplazo en una carpeta diferente a la original. La imagen actualizada reside en la nueva carpeta; el archivo ya no se puede encontrar en su ubicación original. |
    | **[!UICONTROL Sobrescribir en cualquier carpeta, mismo nombre de base independientemente de la extensión]** | Esta opción es la regla de reemplazo más inclusiva. Puede cargar una imagen de reemplazo en una carpeta distinta a la original, cargar un archivo con una extensión de nombre de archivo diferente y reemplazar el archivo original. Si el archivo original se encuentra en una carpeta diferente, la imagen de reemplazo reside en la nueva carpeta a la que se cargó. |
