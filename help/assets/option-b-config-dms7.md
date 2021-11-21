@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: b1f2a6b8fecd9ee98f345d1de8c26c6f42a44823
+source-git-commit: 3b5e65efc9aaedbc3385cc348ead80afecae2f06
 workflow-type: tm+mt
-source-wordcount: '6107'
+source-wordcount: '6063'
 ht-degree: 3%
 
 ---
@@ -101,7 +101,7 @@ Consulte [Instalación del paquete de características 18912 para la migración 
    Select **[!UICONTROL Conectarse a Dynamic Media]**.
 
    >[!NOTE]
-   **RIESGO: ¿MANTÉNGASE ASÍ?** Cuando reciba el correo electrónico de aprovisionamiento con credenciales de Dynamic Media, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta para cambiar su contraseña. La contraseña proporcionada en el correo electrónico de aprovisionamiento se genera en el sistema y se pretende que sea solo una contraseña temporal. Es importante que actualice la contraseña para que el Cloud Service de Dynamic Media esté configurado con las credenciales correctas.
+   Cuando reciba el correo electrónico de aprovisionamiento con credenciales de Dynamic Media, abra la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta para cambiar su contraseña. La contraseña proporcionada en el correo electrónico de aprovisionamiento se genera en el sistema y se pretende que sea solo una contraseña temporal. Es importante que actualice la contraseña para que el Cloud Service de Dynamic Media esté configurado con las credenciales correctas.
 
 1. Cuando la conexión se realice correctamente, establezca lo siguiente. Los encabezados con un asterisco (*) son obligatorios:
 
@@ -136,14 +136,13 @@ Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, selecci
 1. Seleccione **[!UICONTROL Guardar]**.
 1. Para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, debe &quot;lista de permitidos&quot; la instancia de autor del Experience Manager para conectarse a Dynamic Media:
 
-   * **RIESGO: VÍNCULO AL NUEVO TEMA DE CONFIGURACIÓN DE PUBLICACIÓN** Abra el [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no tiene esta información, póngase en contacto con el servicio de atención al cliente de Adobe.
-
-   * En la barra de navegación cerca de la parte superior derecha de la página, vaya a **[!UICONTROL Configuración]** > **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Configuración de publicación]** > **[!UICONTROL Servidor de imágenes]**.
-
-   * En la página Publicación del servidor de imágenes , en la lista desplegable Contexto de publicación , seleccione **[!UICONTROL Probar servicio de imágenes]**.
-   * Para el filtro de direcciones de cliente, seleccione **[!UICONTROL Agregar]**.
-   * Para activar la dirección, seleccione la casilla de verificación. Introduzca la dirección IP de la instancia de Autor del Experience Manager (no la IP de Dispatcher).
-   * Seleccione **[!UICONTROL Guardar]**.
+   * En el modo Autor del Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global.
+   * En el carril izquierdo, seleccione la opción **[!UICONTROL Herramientas]** y vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Configuración de Dynamic Media Publish]**.
+   * En la página Dynamic Media Image Server, en la **[!UICONTROL Publicar contexto]** lista desplegable, seleccione **[!UICONTROL Probar servicio de imágenes]**.
+   * Seleccione el **[!UICONTROL Seguridad]** pestaña .
+   * Para la variable **[!UICONTROL Dirección del cliente]**, seleccione **[!UICONTROL Agregar]**.
+   * Introduzca la dirección IP de la instancia de Autor del Experience Manager (no la IP de Dispatcher).
+   * En la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**.
 
 Ya ha finalizado con la configuración básica; está listo para usar el modo Dynamic Media - Scene7 .
 
