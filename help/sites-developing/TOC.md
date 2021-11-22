@@ -8,9 +8,9 @@ breadcrumb-title: Guía de desarrollo
 user-guide-description: Esta guía explica cómo crear una instancia de AEM.
 feature: Developing
 role: Developer
-source-git-commit: eda59d12d96ecc55bd58749985d2c15706344fe0
+source-git-commit: a95cf285be84f6aed194f3ae904556f5d017c7be
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 16%
 
 ---
@@ -91,12 +91,13 @@ ht-degree: 16%
       + [Internacionalización de cadenas de IU](i18n-dev.md)
       + [Uso del traductor para administrar diccionarios](i18n-translator.md)
       + [Extracción de cadenas para traducir](i18n-extract.md)
-   + Componentes de IU clásica{#classic-ui-components}
+   + Componentes de la IU clásica{#classic-ui-components}
       + [Desarrollo de componentes AEM (IU clásica)](developing-components-classic.md)
       + [Uso y ampliación de utilidades (IU clásica)](widgets.md)
       + [Uso de xtype (IU clásica)](xtypes.md)
       + [Desarrollo de Forms (IU clásica)](developing-forms.md)
 + Administración de experiencias sin objetivos{#headless}
+   + [Sin encabezado y AEM](headless/introduction.md)
    + [Sin cabezal e híbrido con AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Activación de la exportación de JSON para un componente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
    + Aplicaciones de una sola página{#spas}
@@ -150,7 +151,7 @@ ht-degree: 16%
    + ClientContext{#client-context}
       + [Client Context en detalle](client-context.md)
       + [API de JavaScript de Client Context](ccjsapi.md)
-+ Extensión de AEM{#extending-aem}
++ Ampliación de AEM{#extending-aem}
    + [Ampliación de AEM mediante el Generador de aplicaciones para desarrolladores de Adobe](app-builder.md)
    + [Personalización de la creación de páginas](customizing-page-authoring-touch.md)
    + [Personalización de las consolas](customizing-consoles-touch.md)
