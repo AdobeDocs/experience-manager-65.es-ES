@@ -1,9 +1,9 @@
 ---
 title: 'Desarrollo sin objetivos para sitios AEM 6.5 '
 description: Descubra cómo las potentes capacidades sin objetivos de AEM 6.5, como los modelos de contenido, los fragmentos de contenido y la API de GraphQL, funcionan juntos para permitirle administrar sus experiencias de forma centralizada y servirlas en todos los canales.
-source-git-commit: a95cf285be84f6aed194f3ae904556f5d017c7be
+source-git-commit: 8c7acd06f3909897e5756170c606e00aead098b8
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '405'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ Este documento se centra en el modelo completo de implementación sin objetivos 
 
 ## AEM 6.5 y sin encabezado {#aem-headless}
 
-AEM as a Cloud Service es una herramienta flexible para el modelo de implementación sin objetivos al ofrecer tres servicios potentes:
+AEM 6.5 es una herramienta flexible para el modelo de implementación sin objetivos que ofrece tres servicios potentes:
 
 1. Modelos de contenido
    * Los modelos de contenido son una representación estructurada del contenido.
