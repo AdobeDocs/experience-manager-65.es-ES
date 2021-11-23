@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 343b48a4ec5e7124aaa48b7550465982d61fa5ab
+source-git-commit: f5989e182ee0d9075251b582fa618af5efcb9f8a
 workflow-type: tm+mt
 source-wordcount: '3450'
 ht-degree: 3%
@@ -31,7 +31,7 @@ La configuración de publicación de Dynamic Media está diseñada para que la u
 
 La página Configuración de publicación de Dynamic Media establece una configuración predeterminada que determina cómo se envían los recursos desde los servidores de Dynamic Media de Adobe a los sitios web o aplicaciones. Si no se especifica ninguna configuración, el servidor Dynamic Media de Adobe envía un recurso de acuerdo con una configuración predeterminada que se configuró en la página Configuración de publicación de Dynamic Media .
 
-Consulte también [Opcional: Configuración de Dynamic Media: configuración del modo Scene7](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) para tareas de configuración más opcionales.
+Consulte también [Opcional: Configuración de Dynamic Media: configuración del modo Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) para tareas de configuración más opcionales.
 
 >[!NOTE]
 >
