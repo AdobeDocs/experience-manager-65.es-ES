@@ -4,9 +4,9 @@ description: Notas de la versión específicas de [!DNL Adobe Experience Manager
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: c0393e614cf96066dfd765cc00dc8ad370755a27
+source-git-commit: 35260325b583bd047f22ffa88afb9469b2023e60
 workflow-type: tm+mt
-source-wordcount: '3368'
+source-wordcount: '3367'
 ht-degree: 4%
 
 ---
@@ -36,7 +36,7 @@ Las principales funciones y mejoras introducidas en [!DNL Adobe Experience Manag
 
 * Las mejoras en la experiencia del usuario muestran el número de recursos presentes en una carpeta. Para más de 1000 recursos en una carpeta, [!DNL Assets] muestra más de 1000.
 
-* Ahora puede procesar la opción de ordenación en la vista de tarjeta y columna (NPR-37199).
+* Ahora puede procesar la opción de ordenación en las vistas Tarjeta y Columna.
 
 * Ahora puede usar [!DNL Dynamic Media] para configurar la configuración general en lugar de tener que pasar por la [!DNL Dynamic Media Classic] aplicación de escritorio. Consulte [Configuración general de Dynamic Media](/help/assets/dm-general-settings.md).
 
