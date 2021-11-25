@@ -2,9 +2,9 @@
 title: Funciones obsoletas y eliminadas en la versión 6.5 de Adobe Experience Manager.
 description: Notas de versión específicas de las funciones en desuso y eliminadas de Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 1e02ad94459ff2893d96055c026d0873b1d69991
+source-git-commit: c9db5a1764d98bb049c08a0e6962b7ed5e1bfe5c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1753'
 ht-degree: 43%
 
 ---
@@ -28,7 +28,7 @@ Se recomienda a los clientes que comprueben si utilizan la función o capacidad 
 
 | Área | Función | Reemplazo | Versión (SP) |
 |---|---|---|---|
-| [!DNL Sites] | Plantillas de fragmento de contenido, para crear fragmentos de contenido simples. | [Fragmentos de contenido estructurados basados en modelos](/help/assets/content-fragments/content-fragments-models.md) ahora. |  |
+| [!DNL Sites] | Plantillas de fragmento de contenido, para crear fragmentos de contenido simples. | [Fragmentos de contenido estructurados basados en modelos](/help/assets/content-fragments/content-fragments-models.md) ahora. | 6.5.11.0 |
 | Ingregación de Creative Cloud | AEM al uso compartido de carpetas de Creative Cloud se introdujo en AEM 6.2 como una forma de proporcionar a los usuarios creativos acceso a los recursos de AEM, de modo que puedan abrirlos en [!DNL Creative Cloud] y cargar archivos nuevos o guardar cambios en AEM. Adobe Asset Link, la nueva capacidad de la aplicación Creative Cloud, proporciona experiencia de usuario mejorada y un acceso más eficaz a los recursos de AEM directamente desde Photoshop, InDesign e Illustrator. Adobe no tiene previsto realizar más mejoras en la integración del uso compartido de carpetas de Creative Cloud en AEM. Aunque la función se incluye en AEM, se recomienda a los clientes utilizar soluciones alternativas. | Se aconseja a los clientes que cambien a las nuevas funciones de integración de Creative Cloud, como Adobe Asset Link o AEM aplicación de escritorio. |  |
 | Assets | `AssetDownloadServlet` está desactivado de forma predeterminada para las instancias publicadas. Para obtener más información, consulte la [AEM security checklist (lista de comprobación de seguridad de AEM)](/help/sites-administering/security-checklist.md). | Configuración descrita en la [AEM Security checklist (lista de comprobación de seguridad de AEM)](/help/sites-administering/security-checklist.md). |  |
 | Recursos | Si un usuario no tiene permisos suficientes (de lectura y escritura) en `/content/dam/collections`, el usuario no puede crear una colección. | Coincidir con la configuración de control de acceso del usuario y comprobar los permisos adecuados. |  |
