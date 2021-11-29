@@ -8,10 +8,10 @@ breadcrumb-title: Guía de desarrollo
 user-guide-description: Esta guía explica cómo crear una instancia de AEM.
 feature: Developing
 role: Developer
-source-git-commit: fccfcc71d61b483273cc3501fbcc411fce5c1424
+source-git-commit: ba6b910add6770753efeb576d9df1db42d5720b8
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 16%
+source-wordcount: '1080'
+ht-degree: 15%
 
 ---
 
@@ -98,6 +98,13 @@ ht-degree: 16%
       + [Desarrollo de Forms (IU clásica)](developing-forms.md)
 + Administración de experiencias sin objetivos{#headless}
    + [Sin encabezado y AEM](headless/introduction.md)
+   + Guías de introducción {#getting-started}
+      + [Introducción](headless/getting-started/introduction.md)
+      + [Creación de una configuración](headless/getting-started/create-configuration.md)
+      + [Creación de un modelo de fragmento de contenido](headless/getting-started/create-content-model.md)
+      + [Creación de una carpeta de recursos](headless/getting-started/create-assets-folder.md)
+      + [Creación de un fragmento de contenido](headless/getting-started/create-content-fragment.md)
+      + [Acceso a fragmentos de contenido y envío](headless/getting-started/create-api-request.md)
    + Fragmentos de contenido{#content-fragments}
       + [Entrega sin encabezado con fragmentos de contenido y GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-graphql.html)
       + [Trabajar con fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)

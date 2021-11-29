@@ -1,7 +1,7 @@
 ---
 title: 'Desarrollo sin objetivos para sitios AEM 6.5 '
 description: Descubra cómo las potentes capacidades sin objetivos de AEM 6.5, como los modelos de contenido, los fragmentos de contenido y la API de GraphQL, funcionan juntos para permitirle administrar sus experiencias de forma centralizada y servirlas en todos los canales.
-source-git-commit: 8c7acd06f3909897e5756170c606e00aead098b8
+source-git-commit: 03285545d8cc04d97513fb5fee3b3c616551ccdc
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 2%
@@ -25,7 +25,7 @@ La implementación sin encabezado renuncia a la administración de páginas y co
 
 Este documento se centra en el modelo completo de implementación sin objetivos de AEM. Sin embargo, la cabeza contra la cabeza no tiene por qué ser una elección binaria en AEM. Las funciones sin encabezado se pueden usar para administrar y entregar el contenido a una variedad de puntos finales, a la vez que permiten a los autores de contenido editar aplicaciones de una sola página. Todo en AEM.
 
-<!--
+<!-- HM-Links
 >[!TIP]
 >
 >See the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) for more information.
@@ -56,7 +56,7 @@ Hay varios recursos disponibles para que su usuario comience con AEM funciones s
 |---|---|---|---|---|
 | [Tutorial práctico Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **Si prefiere un enfoque práctico y está familiarizado con AEM**, este tutorial se sumerge directamente en la creación de un proyecto sencillo sin encabezado. | Tutorial | Desarrolladores | 2 horas |
 
-<!--
+<!-- HM-Links
 |Resource|Description|Type|Audience|Est. Time|
 |---|---|---|---|---|
 |[Headless Developer Journey](/help/journey-headless/developer/overview.md)|**For users new to AEM and headless** technologies, start here for a comprehensive introduction to AEM and its headless features from the theory of headless through going live with your first headless project.|Guide|Developers **new to AEM and headless**|1 hour|
