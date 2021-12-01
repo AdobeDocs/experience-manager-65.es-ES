@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 7c2fcb94475eccfff5373a1dd28707bbe50ee078
+source-git-commit: 12a8b26a402ce68ee8f61e1035b7f44531cd2825
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1543'
 ht-degree: 10%
 
 ---
@@ -211,11 +211,11 @@ Además de la funcionalidad anterior, considere lo siguiente:
 | AVI | Intercalación A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | FLV, F4V | Flash de Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (archivos de animación vectoriales) |
 | M4V | Apple iTunes | H264/AVC | - |
-| MFX | MPEG-2 | Apple ProRes422 | - |
 | MKV | Matroska | H264/AVC | - |
 | MOV, QT | QuickTime de Apple | H264/AVC, Apple ProRes422 &amp; HQ, XDCAM de Sony, DVCAM de Sony, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermedio, animación de Apple |
 | MP4 | MPEG-4 | H264/AVC (todos los perfiles) | - |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
+| MXF | MXF | XDCAM de Sony, MPEG-2, MPEG-4, DVCP de Panasonic | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Pantalla Microsoft® (MSS2), Microsoft® Photo Story (WVP2) |
