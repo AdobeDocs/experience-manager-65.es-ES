@@ -4,9 +4,9 @@ description: Notas de la versión para [!DNL Adobe Experience Manager] 6.5 servi
 contentOwner: AK
 mini-toc-levels: 2
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: 45673270ec839377f941860c098f965f7b35c59e
+source-git-commit: 80f4e8c857fe9e0dfe344042fc1db81dde721e18
 workflow-type: tm+mt
-source-wordcount: '26608'
+source-wordcount: '26665'
 ht-degree: 12%
 
 ---
@@ -22,6 +22,9 @@ Las principales funciones y mejoras introducidas en [!DNL Adobe Experience Manag
 * **Mejorado [!DNL Content Fragment] Modelos y Editor**: Ahora puede crear modelos complejos y personalizados para contenido estructurado con anidado [!DNL Content Fragment] modelos. Las estructuras de contenido se modularizan en elementos básicos que se modelan como subfragmentos. Los fragmentos de nivel superior hacen referencia a estos subfragmentos. Más mejoras en los tipos de datos, como las reglas de validación avanzadas, mejoran aún más la flexibilidad del modelado de contenido con [!DNL Content Fragments]. La variable [!DNL Experience Manager] [!DNL Content Fragment] editor admite estructuras de fragmentos anidadas en una sesión de editor común, con mejoras como la vista de árbol de estructura y la navegación con pestañas por las jerarquías de fragmentos.
 
 * **La API de GraphQL para[!DNL Content Fragments]**: La nueva API de GraphQL es el método estándar para ofrecer contenido estructurado en formato JSON. Las consultas de GraphQL permiten a los clientes solicitar únicamente los elementos de contenido relevantes para procesar una experiencia. Esta selección elimina la entrega excesiva de contenido (posibilidad con las API HTTP REST) que requiere análisis de contenido en el lado del cliente. Los esquemas de GraphQL se derivan de [!DNL Content Fragment] Los modelos de y las respuestas de API se realizan en formato JSON. En [!DNL Experience Manager] como [!DNL Cloud Service], [Las consultas de GraphQL persisten](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) y procesar solicitudes de GET fáciles de almacenar en caché. Todavía no es posible en [!DNL Experience Manager] 6.5.10.0.
+
+* **La API de GraphQL para[!DNL Content Fragments]**: Para admitir la API de GraphQL, ya no se permiten guiones en el campo de propiedad Modelo de fragmento de contenido . Las consultas de GraphQL pueden devolver resultados no deseados si hay un guión presente en cualquiera de los nombres de propiedad del Modelo de fragmentos de contenido.
+Solo se permiten los siguientes caracteres para el nombre de propiedad: A-Za-z0-9_. Un dígito no puede estar en la primera posición.
 
 * **Administración de jerarquías y previsualización futura**: Los usuarios ahora tienen una interfaz para acceder a las estructuras de contenido de sus [!DNL Experience Manager] lanzamientos, incluida la capacidad de agregar y eliminar páginas en un lanzamiento. Esta función mejora la flexibilidad de [!DNL Experience Manager] se inicia para crear versiones de contenido destinadas a futuras publicaciones. [Función Deformación de tiempo](/help/sites-authoring/working-with-page-versions.md#timewarp) permite a los usuarios previsualizar los lanzamientos como estados de contenido futuros.
 
