@@ -8,10 +8,10 @@ breadcrumb-title: Guía de desarrollo
 user-guide-description: Esta guía explica cómo crear una instancia de AEM.
 feature: Developing
 role: Developer
-source-git-commit: cf7e9061bac9004c7efd2f045b4900e4a92d67e9
+source-git-commit: b924dc186497b6dfa4c2d2bb675f5029f8fc3617
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 15%
+source-wordcount: '1299'
+ht-degree: 13%
 
 ---
 
@@ -99,6 +99,23 @@ ht-degree: 15%
 + [Encabezado y sin cabeza en AEM](headful-headless.md)
 + Administración de experiencias sin objetivos{#headless}
    + [Sin encabezado y AEM](headless/introduction.md)
+   + Recorridos sin encabezado {#journeys}
+      + Recorrido para desarrolladores sin objetivos {#developer}
+         + [Comprender el sin encabezado en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
+         + [Obtenga información sobre el desarrollo sin encabezado de CMS](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/learn-about.html)
+         + [Introducción a AEM sin encabezado as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/getting-started.html)
+         + [Ruta a la primera experiencia usando AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/path-to-first-experience.html)
+         + [Cómo modelar el contenido como modelos de contenido AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/model-your-content.html)
+         + [Cómo acceder al contenido a través de las API de envío de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/access-your-content.html)
+         + [Actualización del contenido mediante las API de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
+         + [Cómo ponerlo todo juntos](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/put-it-all-together.html)
+         + [Activación de la aplicación sin cabeza](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
+         + [Opcional: Cómo crear aplicaciones de una sola página con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html)
+      + Recorrido de arquitecto de contenido sin encabezado {#architect}
+         + [Información general sobre el Recorrido de AEM arquitectos de contenido sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
+         + [Modelado de contenido para usuarios sin encabezado con AEM: una introducción](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
+         + [Descubra los conceptos básicos del modelado de contenido para usuarios sin encabezado con AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
+         + [Obtenga información sobre la creación de modelos de fragmento de contenido en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
    + Guías de introducción {#getting-started}
       + [Introducción](headless/getting-started/introduction.md)
       + [Creación de una configuración](headless/getting-started/create-configuration.md)
