@@ -1,9 +1,9 @@
 ---
 title: 'Desarrollo sin objetivos para sitios AEM 6.5 '
 description: Descubra cómo las potentes capacidades sin objetivos de AEM 6.5, como los modelos de contenido, los fragmentos de contenido y la API de GraphQL, funcionan juntos para permitirle administrar sus experiencias de forma centralizada y servirlas en todos los canales.
-source-git-commit: 03285545d8cc04d97513fb5fee3b3c616551ccdc
+source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -25,11 +25,9 @@ La implementación sin encabezado renuncia a la administración de páginas y co
 
 Este documento se centra en el modelo completo de implementación sin objetivos de AEM. Sin embargo, la cabeza contra la cabeza no tiene por qué ser una elección binaria en AEM. Las funciones sin encabezado se pueden usar para administrar y entregar el contenido a una variedad de puntos finales, a la vez que permiten a los autores de contenido editar aplicaciones de una sola página. Todo en AEM.
 
-<!-- HM-Links
 >[!TIP]
 >
->See the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) for more information.
--->
+>Consulte el documento [Encabezado y sin cabeza en AEM](/help/sites-developing/headful-headless.md) para obtener más información.
 
 ## AEM 6.5 y sin encabezado {#aem-headless}
 
@@ -54,12 +52,6 @@ Hay varios recursos disponibles para que su usuario comience con AEM funciones s
 
 | Medio | Descripción | Tipo | Audience | Este. Hora |
 |---|---|---|---|---|
+| [Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) | **Para usuarios nuevos a AEM y sin periféricos** tecnologías, empiecen aquí por una introducción completa a la AEM y sus características sin cabeza de la teoría de no tener cabeza a través de vivir con su primer proyecto sin cabeza. | Guía | Desarrolladores **nuevo en AEM y sin cabeza** | 1 hora |
+| [Guía de introducción sin encabezado](/help/sites-developing/headless/getting-started/introduction.md) | **Para usuarios AEM con experiencia** para obtener un breve resumen de las funciones principales AEM sin encabezado, consulte esta descripción general de inicio rápido. | Inicio rápido | Desarrolladores, administradores **con AEM experiencia** | 20 minutos |
 | [Tutorial práctico Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **Si prefiere un enfoque práctico y está familiarizado con AEM**, este tutorial se sumerge directamente en la creación de un proyecto sencillo sin encabezado. | Tutorial | Desarrolladores | 2 horas |
-
-<!-- HM-Links
-|Resource|Description|Type|Audience|Est. Time|
-|---|---|---|---|---|
-|[Headless Developer Journey](/help/journey-headless/developer/overview.md)|**For users new to AEM and headless** technologies, start here for a comprehensive introduction to AEM and its headless features from the theory of headless through going live with your first headless project.|Guide|Developers **new to AEM and headless**|1 hour|
-|[Headless Getting Started Guide](/help/implementing/developing/headless/getting-started/introduction.md)|**For experienced AEM users** who need a short summary of the key AEM headless features, check out this quick start overview.|Quick Start|Developers, Administrators **with AEM experience**|20 minutes|
-|[Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)|**If you prefer a hands-on approach and are familiar with AEM**, this tutorial dives directly into creating a simple headless project.|Tutorial|Developers|2 hours|
--->
