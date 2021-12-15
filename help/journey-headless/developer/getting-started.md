@@ -1,7 +1,7 @@
 ---
 title: Introducción a AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, obtenga información sobre AEM requisitos previos sin encabezado.
-source-git-commit: 0458a811b5bd062abbe8a42ec141bc786491e19e
+source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
 workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 1%
@@ -273,11 +273,6 @@ Debe continuar con su recorrido sin AEM para la próxima revisión del documento
 ## Recursos adicionales {#additional-resources}
 
 Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo remoto revisando el documento [Ruta a la primera experiencia usando AEM sin encabezado,](path-to-first-experience.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
-
-<!-- HM-Links
-* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
-* [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Understand AEM as a Cloud Service's structure
--->
 
 * [recorrido de traducción AEM sin encabezado](/help/journey-headless/translation/overview.md) - Este recorrido de documentación le ofrece una amplia comprensión de la tecnología sin objetivos, AEM sirve contenido sin objetivos y cómo puede traducirlo.
 * [Tutorials AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin periféricos con AEM y elegir lo que es adecuado para usted.

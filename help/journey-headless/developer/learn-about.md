@@ -1,7 +1,7 @@
 ---
 title: Obtenga Información Sobre El Desarrollo Sin Cabeza De CMS
 description: En esta parte del Recorrido para desarrolladores AEM sin encabezado, conozca la tecnología sin encabezado y por qué la utilizaría.
-source-git-commit: 0458a811b5bd062abbe8a42ec141bc786491e19e
+source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
 workflow-type: tm+mt
 source-wordcount: '1595'
 ht-degree: 0%
@@ -124,9 +124,5 @@ Aproveche este conocimiento y continúe su recorrido sin AEM cabeza al revisar e
 ## Recursos adicionales {#additional-resources}
 
 Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo remoto revisando el documento [Introducción a AEM sin encabezado](getting-started.md), los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
-
-<!-- HM-Links
-* [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Understand AEM as a Cloud Service's structure
--->
 
 * [Tutorials AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin periféricos con AEM y elegir lo que es adecuado para usted.
