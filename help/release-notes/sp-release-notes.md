@@ -4,10 +4,10 @@ description: Notas de la versión específicas de [!DNL Adobe Experience Manager
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: c7fdfeae785ad044437d065a8da6bdcbaf00d4c4
+source-git-commit: f2ccc77393e7fc1f53f9976076ec3c66c3f74189
 workflow-type: tm+mt
-source-wordcount: '3674'
-ht-degree: 4%
+source-wordcount: '3728'
+ht-degree: 3%
 
 ---
 
@@ -512,6 +512,16 @@ Para recuperar la copia de tiempo de ejecución, Adobe recomienda sincronizar la
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: no se encontraron ventanas de mantenimiento en granite/operations/maintenance.
    * La zona interactiva de una imagen interactiva de Dynamic Media no está visible al previsualizar el recurso mediante el visor de banners de ventas.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Tiempo de espera de que el cambio de registro se complete sin registrar.
+
+* Al intentar mover, eliminar o publicar fragmentos de contenido o sitios o páginas, hay un problema cuando se recuperan referencias de fragmentos de contenido, ya que la consulta en segundo plano fallará; es decir, la funcionalidad no funcionará.
+Para garantizar la operación correcta, debe añadir las siguientes propiedades al nodo de definición de índice `/oak:index/damAssetLucene` (no se requiere reindexación) :
+
+   ```xml
+   "tags": [
+       "visualSimilaritySearch"
+     ]
+   "refresh": true
+   ```
 
 ## Paquetes de contenido y paquetes OSGi incluidos {#osgi-bundles-and-content-packages-included}
 
