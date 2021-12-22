@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: bee7144e-4276-4e81-a3a0-5b7273af34fe
 docset: aem65
 exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
-source-git-commit: 39ec7f09c804838b3983f686763961f98dd019fa
+source-git-commit: 6f509ad2ae488d8baec790b7719305a5af49887c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1550'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Para configurar AEM para integrar con Salesforce:
 
 >[!CAUTION]
 >
->Debe instalar el [API de Salesforce Force](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=1&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content) antes de continuar con el procedimiento. Para obtener más información sobre cómo trabajar con paquetes, consulte la [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md#package-share) página.
+>Debe instalar el [API de Salesforce Force](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/com.adobe.cq.mcm.salesforce.content) antes de continuar con el procedimiento. Para obtener más información sobre cómo trabajar con paquetes, consulte la [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md#package-share) página.
 
 1. En AEM, vaya a **Cloud Services**. En Servicios de terceros, haga clic en **Configurar ahora** en **Salesforce**.
 
