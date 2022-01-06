@@ -1,18 +1,16 @@
 ---
-source-git-commit: 107ad4d7f875d27d392212f5fb8ca9b39aae3857
+source-git-commit: 41011e538104405c954761d9adc270e774e8a9a1
 workflow-type: tm+mt
-translation-type: tm+mt
 source-wordcount: '84'
-ht-degree: 0%
+ht-degree: 69%
 
 ---
 # Documentación de Adobe Experience Manager 6.5
 
-Este es el repositorio de la documentación de Adobe Experience Manager 6.5. Esta documentación cubre la instalación, administración, uso de creación y cómo personalizar AEM.
+Este es el repositorio para la documentación de Adobe Experience Manager 6.5. Esta documentación cubre la instalación, administración, uso de creación y cómo personalizar AEM.
 
-Sus contribuciones a la documentación son bienvenidas. Consulte los siguientes recursos:
+Las contribuciones a la documentación son bienvenidas. Consulte los siguientes recursos:
 
-* [contribute.](contributing.md) mdPara obtener una descripción general de cómo contribuir a la documentación.
-* [Guidelines.](guidelines.md) mdPara obtener una descripción general de lo que se espera en las contribuciones y cómo componer las contribuciones de documentación.
-* [código de conducta.](code-of-conduct.md) mdPara obtener una visión general de los estándares de comportamiento que esperamos que se apliquen al contribuir a este proyecto de documentación.
-
+* [contributing.md](contributing.md) Para obtener una descripción general de cómo contribuir a la documentación.
+* [guidelines.md](guidelines.md) Para obtener una descripción general de lo que se espera en las contribuciones y cómo componer las contribuciones de documentación.
+* [code-of-conduct.md](code-of-conduct.md) Para obtener una descripción general de los estándares de comportamiento que esperamos que se apliquen al contribuir en este proyecto de documentación.
