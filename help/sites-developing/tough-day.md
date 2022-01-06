@@ -6,9 +6,9 @@ seo-description: The Tough Day test simulates the daily load of around 1000 auth
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 36c0728908e24a13d08c1eaed4e39542f5b61df5
+source-git-commit: 0b1f28963d9294c7aa9ae45c6b9fc9a9b8b4f6e6
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1879'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## Qué es el día duro 2 {#what-is-tough-day}
 
-&quot;Día duro 2&quot; es una aplicación que le permite probar los límites de su instancia de AEM. Se puede ejecutar de forma predeterminada con el grupo de prueba predeterminado o puede configurarse para adaptarlo a sus necesidades de prueba. Puede ver [esta grabación](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-toughday2-stress-testing-benchmarking-tool.html) para una presentación de la aplicación.
+&quot;Día duro 2&quot; es una aplicación que permite probar los límites de su instancia de AEM. Se puede ejecutar de forma predeterminada con el grupo de prueba predeterminado o puede configurarse para adaptarlo a sus necesidades de prueba. Puede ver [esta grabación](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-toughday2-stress-testing-benchmarking-tool.html) para una presentación de la aplicación.
 
 >[!CAUTION]
 >
@@ -403,8 +403,10 @@ El Día difícil 2 crea una carpeta de registros en el mismo directorio donde ej
 
 Los registros no se sobrescriben, las ejecuciones posteriores adjuntarán mensajes a los registros existentes. Los registros tienen varios niveles; para obtener más información, consulte la ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
-#### Uso de ejemplo {#example-usage}
+<!--
+#### Example Usage {#example-usage}
 
-#### Problemas conocidos {#known-issues}
+#### Known Issues {#known-issues}
 
-[Obtener archivo](assets/toughday-6_1.jar)
+[Get File](assets/toughday-6_1.jar)
+-->
