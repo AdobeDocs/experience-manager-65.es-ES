@@ -1,10 +1,7 @@
 ---
 title: Obtenga información sobre la creación de modelos de fragmento de contenido en AEM
 description: Obtenga información sobre los conceptos y la mecánica del contenido de modelado para su CMS sin encabezado mediante modelos de fragmentos de contenido.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 99e7bb800da659fb8494eef2d9b9b87a6f263c21
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 2%

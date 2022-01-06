@@ -1,10 +1,7 @@
 ---
-title: AEM Headless Translation Journey
-description: Start here for a guided journey through translating your headless content using AEM's powerful translation tools.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 7cf68868e0963930bde9fcda647822a03914b61d
+title: recorrido de traducción AEM sin encabezado
+description: Comience aquí para obtener un recorrido guiado a través de la traducción de su contenido sin encabezado utilizando AEM poderosas herramientas de traducción.
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 2%
@@ -17,7 +14,7 @@ Comience aquí para obtener un recorrido guiado a través de la traducción de s
 
 ## Introducción {#introduction}
 
-Headless implementation is increasingly becoming important for delivering experiences to your audience, wherever they are and regardless of channel, region, or locale.
+La implementación sin objetivos es cada vez más importante para ofrecer experiencias a su audiencia, independientemente del canal, la región o la configuración regional.
 
 La implementación sin encabezado renuncia a la administración de páginas y componentes, como es tradicional en las soluciones de pila completas, y se centra en la creación de fragmentos de contenido neutros para el canal y reutilizables y su envío por canales cruzados. Mediante AEM potentes herramientas de traducción, estos fragmentos reutilizables se pueden traducir fácilmente y enviar a su audiencia dondequiera que se encuentren.
 
@@ -48,16 +45,16 @@ Este recorrido supone que el lector tiene experiencia traduciendo contenido en u
 
 Las siguientes son las personalidades que interactúan en este recorrido.
 
-| Grupo de usuarios | Descripción | Role in Journey |
+| Grupo de usuarios | Descripción | Función en el Recorrido |
 |---|---|---|
-| Translation Specialist | Define qué contenido debe traducirse y gestiona esos flujos de trabajo | Audience of this journey |
+| Especialista en traducción | Define qué contenido debe traducirse y gestiona esos flujos de trabajo | Audiencia de este recorrido |
 | Autor de contenido | Crea y administra el contenido que se entrega sin problemas | Los autores de contenido crean contenido que el especialista en traducción debe traducir. |
 | Administrador | Gestiona la configuración y configuración base de AEM | El especialista en traducción trabaja con el administrador para realizar los cambios de configuración necesarios para la traducción, como instalar un conector de traducción. |
 | Arquitecto de contenido | Analiza los requisitos de los datos que deben entregarse sin interrupciones y define la estructura de estos datos | Los especialistas en traducción trabajan con el arquitecto de contenido para definir la organización del contenido y así poder traducirlo fácilmente. |
 
 Por supuesto, la información de este recorrido puede ser útil para todas las personas, pero parte de la información puede ser superflua para ciertas funciones. Manténgase atento a [recorridos futuros que cubran funciones adicionales.](/help/journey-documentation/home.md#journeys)
 
-## The Headless Translation Journey {#the-journey}
+## El Recorrido de traducción sin encabezado {#the-journey}
 
 Explorará muchos temas en este recorrido. Los siguientes artículos le proporcionan conocimientos básicos sobre la traducción de contenido sin encabezado en AEM y le permiten acceder a documentación técnica detallada.
 
@@ -70,8 +67,8 @@ Aunque puede ir directamente a una parte concreta del recorrido, muchos concepto
 | 2 | [Introducción a AEM traducción sin encabezado](getting-started.md) | Conozca cómo organizar su contenido sin encabezado y cómo funcionan AEM herramientas de traducción. |
 | 3 | [Configuración del conector de traducción](configure-connector.md) | Aprenda a conectar AEM a un servicio de traducción. |
 | 4 | [Configuración de reglas de traducción](translation-rules.md) | Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir. |
-| 5 | [Translate content](translate-content.md) | Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado. |
-| 6 | [Publish translated content](publish-content.md) | Obtenga información sobre cómo publicar el contenido traducido y actualizar la traducción cuando se actualiza el contenido subyacente. |
+| 5 | [Traducir contenido](translate-content.md) | Utilice el conector de traducción y las reglas para traducir el contenido sin encabezado. |
+| 6 | [Publicar contenido traducido](publish-content.md) | Obtenga información sobre cómo publicar el contenido traducido y actualizar la traducción cuando se actualiza el contenido subyacente. |
 
 ## Siguientes pasos {#what-is-next}
 
