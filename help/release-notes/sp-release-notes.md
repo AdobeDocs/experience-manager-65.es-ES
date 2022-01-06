@@ -4,9 +4,9 @@ description: Notas de la versión específicas de [!DNL Adobe Experience Manager
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
+source-git-commit: 282f634e84b7c6c5e281d2b425953853790f225c
 workflow-type: tm+mt
-source-wordcount: '3822'
+source-wordcount: '3829'
 ht-degree: 3%
 
 ---
@@ -24,19 +24,21 @@ ht-degree: 3%
 
 ## ¿Qué incluye [!DNL Adobe Experience Manager] 6.5.11.0 {#what-is-included-in-aem}
 
-[!DNL Adobe Experience Manager] 6.5.11.0 incluye nuevas funciones, mejoras clave solicitadas por los clientes y mejoras de rendimiento, estabilidad y seguridad, que se han publicado desde la publicación de la versión 6.5 en abril de 2019. El Service Pack está instalado en [!DNL Adobe Experience Manager] 6.5.
+[!DNL Adobe Experience Manager] 6.5.11.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
 
 Las principales funciones y mejoras introducidas en [!DNL Adobe Experience Manager] 6.5.11.0 son:
 
-* Se agregó compatibilidad con varios campos para el tipo de datos de texto multilínea.
+* Added multifield support for multiline text data type.
 
-* Mejora para que los usuarios conozcan el trabajo asincrónico que se está ejecutando en segundo plano para evitar que activen varias operaciones asincrónicas en la misma ruta.
+* Enhancement to make users aware of the asynchronous job currently running in the background to prevent them from triggering multiple asynchronous operations on same path.
 
 * La generación automática del mapa del sitio con fines de SEO es posible mediante el uso de [Paquete de índice SEO](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip). Admite mapas del sitio, direcciones URL alternativas, etiquetas meta de robot y mucho más en la [!DNL Core Components].
 
 * Las mejoras en la experiencia del usuario muestran el número de recursos presentes en una carpeta. Para más de 1000 recursos en una carpeta, [!DNL Assets] muestra más de 1000.
 
 * Ahora puede procesar la opción de ordenación en las vistas Tarjeta y Columna.
+
+* Compatibilidad con perfiles empresariales para Adobe Asset Link.
 
 * Ahora puede usar [!DNL Dynamic Media] para configurar la configuración general en lugar de tener que pasar por la [!DNL Dynamic Media Classic] aplicación de escritorio. Consulte [Configuración general de Dynamic Media](/help/assets/dm-general-settings.md).
 
@@ -131,23 +133,23 @@ Las siguientes mejoras de accesibilidad están disponibles en [!DNL Adobe Experi
 
 * Los lectores de pantalla ahora anuncian el papel de la variable [!UICONTROL Referencias al sitio] y [!UICONTROL Copias de idioma] (SITES-1791).
 
-* El orden del enfoque del modo de navegador ahora se mueve secuencialmente en varias opciones de la interfaz de usuario (SITES-1791).
+* The order of browser mode focus now moves sequentially on various options on User interface (SITES-1791).
 
 * Los lectores de pantalla ahora narran si el elemento de árbol seleccionado está en estado seleccionado y también anuncian al usuario que se muestra la región de acción (SITES-2109).
 
 * Los lectores de pantalla ahora anuncian si hay un indicador de carga para seleccionar filtros o buscar en una página (SITES-1790).
 
-* Los lectores de pantalla ahora narran cuando el [!UICONTROL Filtro] no devuelve ningún resultado de búsqueda en el carril izquierdo (SITES-1599).
+* Screen readers now narrate when the [!UICONTROL Filter] option does not return any search result in the left rail (SITES-1599).
 
 * Al navegar en el modo Examinar, los lectores de pantalla narran la función de la página de contenido y el estado seleccionado de una página cuando se pulsa la tecla Entrar (SITES-1579).
 
 * Los lectores de pantalla ahora narran cuando [!UICONTROL Nota Añadir] está seleccionada (SITES-1573).
 
-* Los campos de formulario ahora tienen etiquetas visuales aparte de los marcadores de posición, por lo que los usuarios de lectores de pantalla reciben la orientación adecuada al introducir los valores de campo (SITES-1258).
+* Form fields now have visual labels apart from the placeholders, so that screen reader users are guided appropriately when entering the field values (SITES-1258).
 
 ### [!DNL Assets] {#assets-65110}
 
-Las siguientes mejoras de accesibilidad están disponibles en [!DNL Assets]:
+The following accessibility enhancements are available in [!DNL Assets]:
 
 * En la vista de tarjeta de [!DNL Assets] repositorio, al usar `Tab` para mover el foco al primer elemento que abre Acciones rápidas al foco, el lector de pantalla anuncia el nombre del elemento seleccionado.
 * En [!DNL Dynamic Media] [!UICONTROL Editor de ajustes preestablecidos de visor], cuando el color de la sombra y el color del borde no están presentes, las entradas se desactivan con la propiedad disabled . Los usuarios del teclado no pueden enfocar la entrada y los lectores de pantalla no anuncian el estado del control como desactivado.
@@ -257,11 +259,11 @@ Las siguientes correcciones de errores están disponibles en [!DNL Dynamic Media
 
 ### Proyectos de traducción {#translation-65110}
 
-* La promoción automática del lanzamiento de la traducción falla con una excepción (NPR-37528).
+* Auto-promotion of the translation launch fails with an exception (NPR-37528).
 
 * La traducción del fragmento de experiencia no actualiza las referencias para la copia de idioma de la URL (NPR-37522).
 
-* Cuando se crea un fragmento de experiencia en una ruta que no coincide con la ruta de la estructura raíz del idioma, la adición de esa página a un proyecto de traducción refleja un mensaje de error en blanco (NPR-37425).
+* When an Experience Fragment is created in a path that does not match the path of the language root structure, adding that page to a translation project reflects a blank error message (NPR-37425).
 
 * Cuando se modifica y envía para traducción una página (en inglés) que contiene fragmentos de experiencias, los fragmentos de experiencias ya traducidos se sobrescriben con contenido en inglés (NPR-37283).
 
