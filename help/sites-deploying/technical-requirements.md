@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 7630a6c4d908144e384b705bfce72779803aea93
+source-git-commit: 0a28a2cf1184ebdbbc907a661f2d0a2c18775822
 workflow-type: tm+mt
-source-wordcount: '3340'
+source-wordcount: '3486'
 ht-degree: 1%
 
 ---
@@ -135,6 +135,17 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
   </tr>
  </tbody>
 </table>
+
+| **Plataforma** | **Nivel de asistencia** | **Vínculos** |
+|---|---|---|
+| Azul Zulu OpenJDK 11 - 64 bits | A: Admitido `[1]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24) |
+| Azul Zulu OpenJDK 8 - 64 bits | A: Admitido `[1]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18) |
+| Oracle Java SE 11 JDK - 64 bits | A: Admitido `[2]` |
+| Oracle Java SE 10 JDK | Z: No admitido `[2]` |
+| Oracle Java SE 9 JDK | Z: No admitido `[2]` |
+| Oracle Java SE 8 JDK - 64 bits | A: Admitido `[2]` |
+| IBM J9 VM: versión 2.9, JRE 1.8.0 | A: Admitido `[3]` |
+| IBM J9 VM: versión 2.8, JRE 1.8.0 | A: Admitido `[3]` |
 
 1. El soporte y la distribución de los edificios Azul Zulu de OpenJDK, incluyendo todas las actualizaciones de mantenimiento de las versiones LTS serán apoyados directamente por Adobe para todos los clientes AEM que usen los edificios Azul Zulu de OpenJDK, a partir de AEM 6.5 SP9 resp. Consulte la [Compatibilidad con Blue Java para preguntas y respuestas de Adobe Experience Manager](assets/adobe-azul-openjdk-license-agreement.pdf) para obtener más información.
 
