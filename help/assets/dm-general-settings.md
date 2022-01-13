@@ -8,13 +8,13 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
-source-git-commit: 1a410c7b71f0e329b327a7f7f05137fcd220fb6a
+exl-id: 55cc7c57-87a0-4bfb-b226-36d01d36849a
+source-git-commit: 9c548dbc0157607adda5ed76cab8ef970588e1e9
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2498'
 ht-degree: 4%
 
 ---
-
 
 # Configuración general de Dynamic Media
 
@@ -70,9 +70,13 @@ Al crear la cuenta, Adobe Dynamic Media proporciona automáticamente los servido
 
    Adobe Dynamic Media no permite que dos archivos tengan el mismo nombre. El ID de Dynamic Media de Adobe de cada elemento (el nombre de imagen menos la extensión de nombre de archivo) debe ser único. Debido a esta regla, **[!UICONTROL Cargar a la aplicación]** tiene sobrescritura. El efecto exacto de esta opción depende de la opción Sobrescribir imágenes que haya elegido. Estas opciones especifican cómo se cargan las imágenes de reemplazo: si reemplazan las imágenes originales o se convierten en imágenes duplicadas. Se cambia el nombre de las imágenes duplicadas por una `-1`. Por ejemplo, `chair.tif` se cambia el nombre `chair-1.tif`. Estas opciones afectan a las imágenes cargadas en una carpeta diferente a la original o a las imágenes con una extensión de nombre de archivo diferente a la original, como JPG, TIF o PNG.
 
+   >[!NOTE]
+   >
+   >Para mantener la coherencia con el Experience Manager, seleccione la opción Sobrescribir imágenes . **[!UICONTROL Sobrescribir en la carpeta actual, el mismo nombre base/extensión]**.
+
    | Opción Sobrescribir imágenes | Descripción |
    | --- | --- |
-   | **[!UICONTROL Sobrescribir en la carpeta actual, mismo nombre/extensión de base]** | Predeterminado solo para nuevas cuentas de Dynamic Media.<br>Esta opción es la regla más estricta para la sustitución. Requiere que cargue la imagen de reemplazo en la misma carpeta que la original y que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la original. Si no se cumplen estos requisitos, se crea un duplicado. |
+   | **[!UICONTROL Sobrescribir en la carpeta actual, mismo nombre/extensión de base]** | *Predeterminado* solo para nuevas cuentas de Dynamic Media.<br>Esta opción es la regla más estricta para la sustitución. Requiere que cargue la imagen de reemplazo en la misma carpeta que la original y que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la original. Si no se cumplen estos requisitos, se crea un duplicado.<br>*Para mantener la coherencia con el Experience Manager, seleccione esta opción*. |
    | **[!UICONTROL Sobrescribir en la carpeta actual, mismo nombre de base independientemente de la extensión]** | Requiere que cargue la imagen de reemplazo en la misma carpeta que el original, aunque la extensión del nombre de archivo puede ser diferente de la original. Por ejemplo, chair.tif reemplaza a chair.jpg. |
    | **[!UICONTROL Sobrescribir en cualquier carpeta con mismo nombre y ext. de recurso base]** | Requiere que la imagen de reemplazo tenga la misma extensión de nombre de archivo que la imagen original (por ejemplo, chair.jpg debe reemplazar a chair.jpg, no chair.tif). Sin embargo, puede cargar la imagen de reemplazo en una carpeta diferente a la original. La imagen actualizada reside en la nueva carpeta; el archivo ya no se puede encontrar en su ubicación original. |
    | **[!UICONTROL Sobrescribir en cualquier carpeta, mismo nombre de base independientemente de la extensión]** | Esta opción es la regla de reemplazo más inclusiva. Puede cargar una imagen de reemplazo en una carpeta distinta a la original, cargar un archivo con una extensión de nombre de archivo diferente y reemplazar el archivo original. Si el archivo original se encuentra en una carpeta diferente, la imagen de reemplazo reside en la nueva carpeta a la que se cargó. |
