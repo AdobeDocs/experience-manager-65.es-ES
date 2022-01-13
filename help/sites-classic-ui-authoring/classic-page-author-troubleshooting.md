@@ -1,22 +1,21 @@
 ---
 title: Resolución de problemas de AEM durante la creación
-seo-title: Resolución de problemas de AEM durante la creación
+seo-title: Troubleshooting AEM when Authoring
 description: La sección siguiente trata ciertos problemas que pueden producirse al utilizar AEM, así como sugerencias para solucionarlos.
-seo-description: La sección siguiente trata ciertos problemas que pueden producirse al utilizar AEM, así como sugerencias para solucionarlos.
+seo-description: The following section covers some issues that you might encounter when using AEM, together with suggestions on how to troubleshoot them.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '430'
 ht-degree: 95%
 
 ---
-
 
 # Resolución de problemas de AEM durante la creación{#troubleshooting-aem-when-authoring}
 
@@ -24,7 +23,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 >[!NOTE]
 >
->Si está experimentando problemas, puede consultar la lista de [Problemas conocidos](/help/release-notes/known-issues.md) de su instancia (versión y Service Packs).
+>Si está experimentando problemas, puede consultar la lista de [Problemas conocidos](/help/release-notes/release-notes.md) de su instancia (versión y Service Packs).
 
 >[!NOTE]
 >
@@ -71,7 +70,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 * **Problema:**
 
-   * Al utilizar la opción **Buscar y reemplazar** puede suceder que no todas las instancias del término `find` se reemplacen en una página.
+   * Al usar la variable **Buscar y reemplazar** puede suceder que no todas las instancias de la variable `find` en una página.
 
 * **Motivo**:
 
@@ -87,4 +86,3 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
    * Estas definiciones pueden cambiarse con la configuración del **Servlet Find Replace Day WCM CQ** mediante la **Consola web**; por ejemplo en
 
       `http://localhost:4502/system/console/configMgr`
-

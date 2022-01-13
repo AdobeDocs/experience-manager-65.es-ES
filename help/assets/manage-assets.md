@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: eb7051582a51d983851c876025770668b258bff5
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '9878'
 ht-degree: 4%
@@ -338,7 +338,7 @@ Algunas limitaciones de la función son:
 * Si existe una carpeta con el mismo nombre en el destino, los recursos del archivo ZIP se extraen en la carpeta existente.
 * Si cancela la extracción, los recursos ya extraídos no se eliminarán.
 * No puede seleccionar dos archivos ZIP al mismo tiempo y extraerlos. Solo puede extraer un archivo ZIP a la vez.
-* Al cargar un archivo ZIP, si el cuadro de diálogo de carga muestra un error de 500 servidor, vuelva a intentarlo después de instalar [el Service Pack más reciente](/help/release-notes/sp-release-notes.md).
+* Al cargar un archivo ZIP, si el cuadro de diálogo de carga muestra un error de 500 servidor, vuelva a intentarlo después de instalar [el Service Pack más reciente](/help/release-notes/release-notes.md).
 
 ## Vista previa de recursos {#previewing-assets}
 

@@ -5,7 +5,7 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: e54d8633aa3b8c1554df90d1b9650713246b95e8
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 29%
@@ -16,11 +16,11 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->[Póngase en contacto con ](https://www.adobe.com/account/sign-in.supportportal.html) soporte técnico para obtener más información o para obtener el parche.
+>[Contacto con el servicio de asistencia](https://www.adobe.com/account/sign-in.supportportal.html) para obtener más información o para obtener el parche.
 
 ## Acerca del instalador de parches {#about-the-patch-installer}
 
-El instalador de parches AEM 6.5 Forms JEE incluye todos los problemas corregidos para todos los componentes de AEM 6.5 Forms JEE disponibles hasta el lanzamiento de este parche. Consulte las últimas [Notas de la versión del Service Pack](sp-release-notes.md) para obtener una lista completa de los problemas corregidos.
+El instalador de parches AEM 6.5 Forms JEE incluye todos los problemas corregidos para todos los componentes de AEM 6.5 Forms JEE disponibles hasta el lanzamiento de este parche. Consulte las últimas  [Notas de la versión de Service Pack](release-notes.md) para obtener una lista completa de los problemas corregidos.
 
 ## Requisitos previos para instalar el parche {#prerequisites-to-installing-the-patch}
 
@@ -28,7 +28,7 @@ El instalador de parches AEM 6.5 Forms JEE incluye todos los problemas corregido
 
 ## Instalación y configuración del parche {#installing-and-configuring-the-patch}
 
-1. Haga una copia de seguridad de la carpeta &lt;*AEM_forms_root*>/deploy. Es necesaria si decide desinstalar la corrección rápida.
+1. Haga una copia de seguridad de &lt;*AEM_forms_root*>/implementar carpeta. Es necesaria si decide desinstalar la corrección rápida.
 1. Detenga el servidor de aplicaciones.
 1. Extraiga el archivo del programa de instalación del parche en el disco duro.
 1. En el directorio denominado según el sistema operativo que esté utilizando:
@@ -38,8 +38,8 @@ Vaya al directorio correspondiente del medio de instalación o la carpeta del di
 
       * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows de 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
-   * ****
-LinuxVaya al directorio apropiado y, desde el símbolo del sistema, escriba 
+   * **Linux**
+Vaya al directorio correspondiente y, desde el símbolo del sistema, escriba 
 `./aem65_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
@@ -47,12 +47,12 @@ LinuxVaya al directorio apropiado y, desde el símbolo del sistema, escriba
    Esto inicia un asistente de instalación que le guiará a través de la instalación.
 
 1. En el panel Introducción, haga clic en **[!UICONTROL Siguiente]**.
-1. En la pantalla Elegir carpeta de instalación, compruebe que la ubicación predeterminada mostrada sea correcta para la instalación existente o haga clic en **[!UICONTROL Examinar]** para seleccionar la carpeta alternativa en la que están instalados AEM formularios y haga clic en **[!UICONTROL Siguiente]**.
+1. En la pantalla Elegir carpeta de instalación, verifique que la ubicación predeterminada que se muestra sea correcta para la instalación existente o haga clic en **[!UICONTROL Examinar]** para seleccionar la carpeta alternativa donde están instalados AEM formularios y haga clic en **[!UICONTROL Siguiente]**.
 1. Lea la información de resumen de parches de corrección rápida y haga clic en **[!UICONTROL Siguiente]**.
 1. Lea la información del resumen previo a la instalación y haga clic en **[!UICONTROL Instalar]**.
 1. Una vez finalizada la instalación, haga clic en **[!UICONTROL Siguiente]** para aplicar las actualizaciones de correcciones rápidas a los archivos instalados.
 
-1. Anule la selección de la opción Iniciar administrador de configuración antes de hacer clic en Listo. Antes de ejecutar el administrador de configuración utilizando **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, vaya al directorio *&lt;AEMForms_Install_Dir>\configurationManager\bin* y actualice los archivos `ConfigurationManager.lax` y `ConfigurationManager_IPv6.lax` con las siguientes operaciones de cambio de nombre:
+1. Anule la selección de la opción Iniciar administrador de configuración antes de hacer clic en Listo. Antes de ejecutar el administrador de configuración mediante **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, vaya a *&lt;aemforms_install_dir>\configurationManager\bin* directorio y actualizar `ConfigurationManager.lax` y `ConfigurationManager_IPv6.lax` archivos con las siguientes operaciones de cambio de nombre:
 
    * `axis.jar` hasta `axis-1.4.1.1.jar`
    * `serializer-2.7.1.jar` hasta `serializer-2.7.2.jar`
@@ -62,9 +62,9 @@ LinuxVaya al directorio apropiado y, desde el símbolo del sistema, escriba
 
 1. La casilla de verificación Iniciar Administrador de configuración está seleccionada de forma predeterminada. Haga clic en **[!UICONTROL Listo]** para ejecutar el Administrador de configuración.
 
-1. Para ejecutar el Administrador de configuración más adelante, anule la selección de la opción Inicio del Administrador de configuración antes de hacer clic en Listo. Puede iniciar Configuration Manager más adelante utilizando la secuencia de comandos adecuada en el directorio `[AEM_forms_root]/configurationManager/bin`.
+1. Para ejecutar el Administrador de configuración más adelante, anule la selección de la opción Inicio del Administrador de configuración antes de hacer clic en Listo. Puede iniciar Configuration Manager más adelante utilizando la secuencia de comandos adecuada en la `[AEM_forms_root]/configurationManager/bin` directorio.
 
-1. En función del servidor de aplicaciones, elija uno de los siguientes documentos y siga las instrucciones de la sección *Configuración e implementación de formularios AEM*.
+1. Según el servidor de aplicaciones, elija uno de los siguientes documentos y siga las instrucciones de la sección *Configuración e implementación de AEM formularios* para obtener más información.
 
    * [Instalación e implementación de formularios AEM para JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
    * [Instalación e implementación de AEM formularios para WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
@@ -85,7 +85,7 @@ Si tenía configurada la autenticación SAML y tiene problemas con los metadatos
 ## Módulos afectados {#impacted-modules}
 
 * Servicios de documento
-* Seguridad de los documentos
+* Document Security
 * Base JEE
 
 [Contacto con el servicio de asistencia](https://www.adobe.com/account/sign-in.supportportal.html)
