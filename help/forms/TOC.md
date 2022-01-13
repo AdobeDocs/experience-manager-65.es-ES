@@ -8,9 +8,9 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: d010b2a20e40fabe40f67d60ef0b6fab245be60f
+source-git-commit: 7962d076135bcbac821ff85fd1831ee2c444ff00
 workflow-type: tm+mt
-source-wordcount: '3777'
+source-wordcount: '3772'
 ht-degree: 4%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 4%
 
 + [Guía de AEM 6.5 Forms](home.md)
 + Notas de la versión {#release-notes-new-features}
-   + [Notas de la versión](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html#experience-manager-forms)
+   + [Notas de la versión](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=es)
    + [Resumen de las nuevas funciones](using/whats-new.md)
-   + [Funciones en desuso](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/deprecated-removed-features.html)
+   + [Funciones en desuso](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Introducción {#getting-started}
    + [Introducción a AEM Forms](using/introduction-aem-forms.md)
    + [Introducción a la creación de formularios adaptables](using/introduction-forms-authoring.md)
@@ -619,7 +619,7 @@ ht-degree: 4%
          + [PDF Utilities Service APIQuick Start (SOAP)](developing/pdf-utilities-service-java-api.md)
          + [Inicio rápido de la API del servicio de repositorio](developing/repository-service-api-quick-starts.md)
          + [Inicio rápido de la API de Java del servicio de firma (SOAP)](developing/signature-service-java-api-quick.md)
-         + [Inicio rápido (SOAP) de la API de Java del servicio del administrador de tareas](developing/task-manager-service-java-api.md)
+         + [Inicio rápido (SOAP) de la API de Java del servicio del Administrador de tareas](developing/task-manager-service-java-api.md)
          + [Inicio rápido de la API de Java del Administrador de usuarios (SOAP)](developing/user-manager-java-api-quick.md)
          + [XMP Utilities Service Java APIQuick Start (SOAP)](developing/xmp-utilities-service-java-api.md)
       + Invocación de AEM Forms en JEE mediante API {#invoking-aem-forms-jee-apis}
