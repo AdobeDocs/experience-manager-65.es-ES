@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager]Las notas de 6.5 describen la información de la versión, las novedades, la instalación y las listas de cambios detalladas.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 13c76122a38e32783bca248597a16f0512dae44c
+source-git-commit: 1cfa01544ad8bf0adafd55e696a6844a8edf1007
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3894'
 ht-degree: 4%
 
 ---
@@ -35,8 +35,6 @@ Las principales funciones y mejoras introducidas en [!DNL Adobe Experience Manag
 * Las mejoras en la experiencia del usuario muestran el número de recursos presentes en una carpeta. Para más de 1000 recursos en una carpeta, [!DNL Assets] muestra más de 1000.
 
    ![Número de recursos de una carpeta](/help/assets/assets/browse-folder-number-of-assets.png)
-
-* Ahora puede procesar la opción de ordenación en las vistas Tarjeta y Columna.
 
 * Compatibilidad con perfiles empresariales para Adobe Asset Link.
 
