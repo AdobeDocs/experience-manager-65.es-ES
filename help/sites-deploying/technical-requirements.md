@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 610e37571df168bba91f2c2fe5b41e2f70ba748e
+source-git-commit: ab89683610a896e73c219c1fde4dde16dd8fbec6
 workflow-type: tm+mt
-source-wordcount: '3345'
+source-wordcount: '3358'
 ht-degree: 1%
 
 ---
@@ -165,16 +165,18 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 | Almacenar binarios en archivos TAR en el sistema de archivos `[1]` | Binarios | Z: No compatible con la producción |
 | Amazon S3 | Binarios | A: Admitido |
 | Almacenamiento de Microsoft Azure Blob | Binarios | A: Admitido |
-| MongoDB Enterprise 4.0 | Repositorio | A: Admitido `[2, 3]` |
+| MongoDB Enterprise 4.2 | Repositorio | A: Admitido `[2, 3, 4]` |
+| MongoDB Enterprise 4.0 | Repositorio | Z: No admitido |
 | MongoDB Enterprise 3.6 | Repositorio | Z: No admitido |
 | MongoDB Enterprise 3.4 | Repositorio | Z: No admitido |
-| IBM DB2 10.5 | Base de datos de repositorio y Forms | R: Compatibilidad restringida `[4]` |
+| IBM DB2 10.5 | Base de datos de repositorio y Forms | R: Compatibilidad restringida `[5]` |
 | Base de datos de oracle 12c (12.1.x) | Base de datos de repositorio y Forms | R: Compatibilidad restringida |
 | Microsoft SQL Server 2016 | Base de datos de Forms | A: Admitido |
 | **Apache Lucene (integrado de Quickstart)** | Servicio de búsqueda | A: Admitido |
 | Apache Solr | Servicio de búsqueda | A: Admitido |
 
 1. &#39;File System&#39; incluye almacenamiento en bloque compatible con POSIX. Esto incluye la tecnología de almacenamiento en red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. Se recomienda cargar AEM de prueba en combinación con el sistema de archivos de red/remoto.
+1. MongoDB Enterprise 4.2 requiere AEM 6.5 SP9 como mínimo.
 1. El uso compartido MongoDB no es compatible con AEM.
 1. Sólo se admite el motor de almacenamiento MongoDB WiredTiger.
 1. Compatible con los clientes de actualización de AEM Forms. No es compatible con las nuevas instalaciones.
