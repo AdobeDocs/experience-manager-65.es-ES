@@ -1,8 +1,6 @@
 ---
 title: Uso de recursos 3D en Dynamic Media
-seo-title: Working with 3D assets in Dynamic Media
 description: Aprenda a trabajar con recursos 3D en Dynamic Media
-seo-description: Learn how to work with 3D assets in Dynamic Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -10,9 +8,9 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 9f08d529af0ec37d2bd2a4f479a172c6c950c47d
+source-git-commit: a13d6d10dd10605d2cb83a8622fae3a7e2590c93
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2317'
 ht-degree: 4%
 
 ---
@@ -27,7 +25,7 @@ Dynamic Media permite cargar, administrar, ver y entregar recursos 3D como exper
 
 No se requiere ninguna configuración adicional para utilizar recursos 3D en Dynamic Media.
 
-![Zapato en 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
+![Zapato en 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png) *Página de detalles de un zapato tridimensional.*
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -43,6 +41,10 @@ Consulte también [Formatos 3D compatibles](/help/assets/assets-formats.md).
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |
 | STL | Esteroolitografía | application/vnd.ms-pki.stl |  |
 | USDZ | Archivo zip de descripción de escena universal | model/vnd.usdz+zip | *Compatibilidad únicamente con la ingesta; no hay visualización ni interacción disponibles.* USDZ es un formato 3D propietario que los dispositivos Safari y iOS pueden visualizar de forma nativa. |
+
+<!-- >[!NOTE]
+>
+>The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). -->
 
 ## Inicio rápido: Recursos 3D en Dynamic Media {#quick-start-three-d}
 
@@ -86,7 +88,7 @@ Consulte [Configuración de Cloud Services de Dynamic Media](/help/assets/config
 
 ## Acerca de la visualización y la interacción con recursos 3D {#viewing-three-d-assets}
 
-En esta sección se describe cómo ver e interactuar con recursos 3D de dos formas diferentes: desde la página de detalles del recurso y desde el componente de medios 3D en Sitios.
+En esta sección se describe cómo ver e interactuar con recursos 3D de dos formas diferentes: desde la página de detalles del recurso y desde el componente de medios 3D en Experience Manager Sites.
 
 El visor 3D interactivo incluye, entre otras cosas, una colección de controles de cámara interactivos que le permiten orbitar, ampliar o reducir y recorrer el recurso 3D.
 
