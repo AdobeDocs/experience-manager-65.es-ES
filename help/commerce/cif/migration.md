@@ -1,25 +1,25 @@
 ---
 title: Migración al complemento AEM Commerce Integration Framework (CIF)
 description: Cómo migrar al complemento AEM Commerce Integration Framework (CIF) desde una versión antigua
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 1%
+source-wordcount: '265'
+ht-degree: 4%
 
 ---
 
-# Guía de migración para el complemento del Experience Manager {#cif-migration}
+# Guía de migración para el complemento Experience Manager {#cif-migration}
 
 Esta guía ayuda a identificar las áreas que debe actualizar para la migración de complementos de Experience Manager.
 
 ## Complemento CIF
 
-El complemento CIF está disponible para AEM 6.5 a través del [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Es compatible y proporciona las mismas funciones que el complemento CIF para Experience Manager como Cloud Service.
+El complemento CIF está disponible para AEM 6.5 a través del [Portal de distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html). Es compatible y proporciona las mismas funciones que el complemento CIF para Experience Manager as a Cloud Service.
 
-Consulte [Introducción a Contenido y comercio de AEM](getting-started.md).
+Consulte [Introducción a Contenido y comercio AEM](getting-started.md).
 
-Para admitir proyectos que implementen CIF, Adobe proporciona [AEM componentes principales del CIF](https://github.com/adobe/aem-core-cif-components).
+Para apoyar proyectos que implementen CIF, Adobe proporciona [Componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components).
 
 ## Catálogo de productos
 
@@ -27,7 +27,7 @@ El complemento CIF no admite la importación de datos del catálogo de productos
 
 >[!TIP]
 >
->Si no hay API en tiempo real disponibles, se debe utilizar una caché de producto externa con API para la integración. Ejemplo de [Magento de código abierto](https://magento.com/products/magento-open-source).
+>Si no hay API en tiempo real disponibles, se debe utilizar una caché de producto externa con API para la integración. Ejemplo [Magento de código abierto](https://business.adobe.com/products/magento/open-source.html).
 
 ## Experiencias del catálogo de productos con procesamiento AEM
 

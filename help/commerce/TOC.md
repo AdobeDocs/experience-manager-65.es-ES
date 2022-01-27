@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce
 user-guide-title: AEM Content and Commerce
 breadcrumb-title: Guía de Commerce
 user-guide-description: Aprenda a utilizar y administrar AEM Content and Commerce.
-source-git-commit: 5678d20fa0a7e8a709b02a2f6cbbeffbd4a26cbd
+source-git-commit: f3e286c7b5404812655f3b257de17be7bfde7487
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 49%
+source-wordcount: '120'
+ht-degree: 70%
 
 ---
 
@@ -19,8 +19,12 @@ ht-degree: 49%
 + Integraciones {#integrations}
    + [Adobe Commerce](cif/integrating/magento.md)
    + [Solución de comercio de terceros](cif/integrating/third-party.md)
-+ Tienda AEM {#storefront}
++ AEM Storefront {#storefront}
    + [Introducción](cif/getting-started.md)
+   + Creación {#authoring}
+      + [Experiencias de Commerce](cif/authoring/authoring-commerce-experiences.md)
+      + [Product Cockpit](cif/authoring/product-cockpit.md)
+      + [Enriquecimiento de datos de producto con contenido asociado](cif/authoring/enrich-product-associated-content.md)
    + Administración {#administering}
       + [Configuración de varias tiendas](cif/configuring/multi-store-setup.md)
       + [Uso de varias plantillas](cif/configuring/multi-template-usage.md)

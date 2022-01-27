@@ -1,14 +1,13 @@
 ---
 title: Notas de la versión de contenido y comercio de AEM 2021
 description: Notas de la versión de contenido y comercio de AEM 2021
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 11%
+source-wordcount: '1328'
+ht-degree: 12%
 
 ---
-
 
 # Información general sobre la versión de Commerce Integration Framework GitHub
 
@@ -26,7 +25,7 @@ ht-degree: 11%
 
 * Tienda de referencia de Venia actualizada para usar el fragmento de experiencia para el pie de página. Los usuarios empresariales pueden editar el pie de página mediante AEM herramientas de creación.
 
-### Qué se ha mejorado {#what-is-improved-november}
+### Novedades mejoradas {#what-is-improved-november}
 
 * Se ha mejorado el componente de cierre de compra para que los compradores puedan entrar en el país de destino y permitir direcciones de facturación/envío fuera de los Estados Unidos.
 
@@ -46,9 +45,9 @@ ht-degree: 11%
 
 * Se ha agregado un nuevo componente de carrusel de categoría para permitir a los usuarios empresariales arrastrar y soltar este componente en páginas de contenido AEM para enriquecer páginas de contenido con datos de comercio.
 
-* Los componentes principales del CIF se ampliaron para hidratar la capa de datos del cliente de Adobe al enviar datos de comercio. La capa de datos del cliente de Adobe es un método estandarizado para recopilar datos y comunicarlos a los servidores de informes y análisis digitales. Para obtener más información, consulte [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Los componentes principales del CIF se ampliaron para hidratar la capa de datos del cliente de Adobe al enviar datos de comercio. La capa de datos del cliente de Adobe es un método estandarizado para recopilar datos y comunicarlos a los servidores de informes y análisis digitales. Para obtener más información, consulte [Capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
-* Las páginas Detalles del producto y Lista de productos se han ampliado para rellenar automáticamente los metadatos de SEO (como título, meta descripción, metapalabras clave) configurados desde la interfaz de usuario del administrador del Magento
+* Las páginas Detalles del producto y Lista de productos se han ampliado para rellenar automáticamente los metadatos de SEO (como título, meta descripción, metapalabras clave) configurados desde la interfaz de usuario del administrador de Adobe Commerce
 
 * Se ha corregido un error del componente teaser de comercio.
 
@@ -62,7 +61,7 @@ ht-degree: 11%
 
 ### Novedades {#what-is-new-september}
 
-* Admite consultas para el esquema Magento 2.4.0.
+* Admite consultas para el esquema Adobe Commerce 2.4.0.
 
 * Se han agregado características de información de cuenta para permitir que los compradores actualicen su información personal.
 
@@ -72,7 +71,7 @@ ht-degree: 11%
 
 * Compatibilidad con los tipos de productos agrupados disponibles.
 
-* Los desarrolladores pueden configurar las etiquetas HTML para los componentes Carrusel de productos, Productos relacionados y Lista de categorías destacadas para seguir las prácticas recomendadas de SEO.
+* Los desarrolladores pueden configurar las etiquetas de HTML para los componentes Carrusel de productos, Productos relacionados y Lista de categorías destacadas para seguir las prácticas recomendadas de SEO.
 
 * Se corrigieron errores de mi cuenta.
 
@@ -114,13 +113,13 @@ ht-degree: 11%
 
 * El sitio de referencia de Venia del CIF se extrajo del repositorio de tipo de archivo del CIF y ahora es un repositorio independiente de GitHub.
 
-* El tipo de archivo CIF se combina con AEM tipo de archivo del proyecto. Para nuevos proyectos, utilice [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) como punto de partida.
+* El tipo de archivo CIF se combina con AEM tipo de archivo del proyecto. Para nuevos proyectos, utilice [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) como punto de partida.
 
 * Se ha agregado la administración de libreta de direcciones para permitir que los usuarios que iniciaron sesión administren sus direcciones.
 
 * La interfaz de usuario de configuración de CIF Cloud admite acciones de publicación/cancelación de publicación.
 
-### Qué se ha mejorado {#what-is-improved-july}
+### Novedades mejoradas {#what-is-improved-july}
 
 * El componente de inicio de sesión se ha trasladado al menú desplegable del usuario para facilitar el acceso.
 
@@ -146,7 +145,7 @@ Esta es la primera versión de los componentes principales de CIF que se admiten
 
 * Se ha agregado la asignación de usuarios de servicio como parte de los requisitos de seguridad para garantizar el acceso a /conf a través de los usuarios de servicio y no manipulando directamente las ACL. Los componentes principales de CIF ahora deben utilizar un usuario de servicio para acceder a las configuraciones.
 
-### Qué se ha mejorado {#what-is-improved-june}
+### Novedades mejoradas {#what-is-improved-june}
 
 * La página Lista de productos y la página Resultado de la búsqueda muestran el número total de elementos. El número de elementos se actualiza cuando se aplican filtros de comprador.
 
@@ -166,11 +165,11 @@ Esta es la primera versión de los componentes principales de CIF que se admiten
 
 ### Novedades {#what-is-new-may}
 
-* Admite consultas para el esquema Magento 2.3.5.
+* Admite consultas para el esquema Adobe Commerce 2.3.5.
 
 * Se agregó compatibilidad con la búsqueda faceteada a Página de búsqueda y Página de lista de productos para permitir a los compradores filtrar los resultados de búsqueda según las facetas del producto.
 
-* Se ha agregado un nuevo servicio OSGi para personalizar las URL de PDP/PLP con el propósito de SEO. Para obtener más información, consulte esta [documentación](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
+* Se ha agregado un nuevo servicio OSGi para personalizar las URL de PDP/PLP con el propósito de SEO. Para obtener más información, consulte [documentación](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
 
 * Enlace de productos creado automáticamente cuando se crea una configuración de nube.
 
@@ -190,9 +189,9 @@ Esta es la primera versión de los componentes principales de CIF que se admiten
 
 ### Novedades {#what-is-new-april}
 
-* Ajustes de configuración para conector del CIF unificado y simplificado. Para obtener más información, consulte [Introducción](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) o [Nueva configuración del proyecto del CIF de AEM](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
+* Ajustes de configuración para conector del CIF unificado y simplificado. Para obtener más información, cierre de compra [Introducción](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) o [Nueva configuración del proyecto del CIF AEM](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
 
-### Qué se ha mejorado {#what-is-improved-april}
+### Novedades mejoradas {#what-is-improved-april}
 
 * El flujo de carro de compras y cierre de compra se ha ampliado para admitir compradores registrados.
 
@@ -214,13 +213,13 @@ Esta es la primera versión de los componentes principales de CIF que se admiten
 
 ### Novedades {#what-is-new-february}
 
-* Admite consultas para el esquema Magento 2.3.4.
+* Admite consultas para el esquema Adobe Commerce 2.3.4.
 
 * Se ha agregado compatibilidad de búsqueda en el Selector de categorías.
 
 * Paginación en el componente Lista de categorías para admitir grandes conjuntos de catálogos.
 
-### Qué se ha mejorado {#what-is-improved-february}
+### Novedades mejoradas {#what-is-improved-february}
 
 * Carro de compras mejorado para mostrar descuentos.
 
@@ -248,7 +247,7 @@ Esta es la primera versión de los componentes principales de CIF que se admiten
 
 * Componente de producto relacionado genérico disponible.
 
-### Qué se ha mejorado {#what-is-improved-january}
+### Novedades mejoradas {#what-is-improved-january}
 
 * Compatibilidad para mostrar el botón CTA en el teaser de productos.
 

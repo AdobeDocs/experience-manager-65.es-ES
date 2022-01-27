@@ -1,12 +1,11 @@
 ---
 title: 'AEM: Preguntas frecuentes sobre la integración comercial con Commerce Integration Framework'
 description: 'AEM: Preguntas frecuentes sobre la integración comercial con Commerce Integration Framework'
-exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45,aece1190-9530-4060-9b08-022da7068987
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 47%
+source-wordcount: '963'
+ht-degree: 38%
 
 ---
 
@@ -14,13 +13,13 @@ ht-degree: 47%
 
 ## 1. ¿CIF GraphQL solo se utiliza para el comercio o estará disponible para consultar el contenido creado en AEM JCR?
 
-Adobe ha adoptado las API de Magento GraphQL como su API comercial oficial para todos los datos relacionados con el comercio. Por lo tanto, AEM utiliza GraphQL para intercambiar datos de comercio con Magento y con cualquier motor de comercio a través de I/O Runtime. Esta API de GraphQL es independiente de AEM API de GraphQL para acceder a los fragmentos de contenido.
+Adobe ha adoptado las API de GraphQL de Adobe Commerce como su API comercial oficial para todos los datos relacionados con el comercio. Por lo tanto, AEM utiliza GraphQL para intercambiar datos de comercio con Adobe Commerce y con cualquier motor de comercio a través de I/O Runtime. Esta API de GraphQL es independiente de AEM API de GraphQL para acceder a los fragmentos de contenido.
 
-## 2. ¿Se pueden almacenar los recursos de producto (imágenes) y hacer referencia a ellos desde AEM a través del administrador de Adobe Commerce (Magento)? ¿Cómo se pueden consumir los activos de Dynamic Media?
+## 2. ¿Se pueden almacenar los recursos de producto (imágenes) y hacer referencia a ellos desde AEM a través del administrador de Adobe Commerce? ¿Cómo se pueden consumir los activos de Dynamic Media?
 
-No hay una integración oficial de AEM Assets con Magento disponible. Hay un conector de socio disponible en [marketplace](https://marketplace.magento.com/bounteous-dam.html).
+No hay ninguna integración oficial de AEM Assets con Adobe Commerce disponible. Hay un conector de socio disponible en el [marketplace](https://marketplace.magento.com/bounteous-dam.html).
 
-O como solución alternativa, puede almacenar recursos de producto (imágenes) en AEM Assets, pero tendrá que almacenar manualmente las URL de los recursos en Magento. Dynamic Media ahora forma parte de AEM Assets y funcionará de la misma manera.
+O como solución alternativa, puede almacenar recursos de producto (imágenes) en AEM Assets, pero tendrá que almacenar manualmente las URL de los recursos en Adobe Commerce. Dynamic Media ahora forma parte de AEM Assets y funcionará de la misma manera.
 
 ## 3. ¿Importa dónde se implemente la solución de comercio? (Local o en la nube)
 
@@ -40,7 +39,7 @@ Esto depende de algunos aspectos adicionales que tenga que tener en cuenta. ¿Cu
 
 ## 7. ¿Cómo actúa PIM en este marco?
 
-Los datos de PIM se exponen a AEM y clientes a través de solicitudes de GraphQL. Nuestra recomendación es integrar PIM con el motor de comercio (Magento u otros) para que los datos PIM puedan recuperarse del motor de comercio.
+Los datos de PIM se exponen a AEM y clientes a través de solicitudes de GraphQL. Nuestra recomendación es integrar PIM con el motor de comercio (Adobe Commerce u otros) para que los datos PIM puedan recuperarse del motor de comercio.
 
 ## 8. También se almacenan en caché los precios y otros datos a través de Dispatcher. ¿Genera esto un desafío frecuente de invalidación de caché?
 
@@ -60,7 +59,7 @@ CIF proporciona los componentes de la barra de búsqueda y de resultados. El com
 
 ## 12. ¿Cómo se pueden utilizar los datos del producto en MSM o en las traducciones?
 
-Los datos del producto generalmente ya se traducen en PIM o en Magento. La integración AEM y Magento admite la conexión a varias tiendas y vistas de tiendas de Magento. En una configuración de MSM, normalmente un sitio de AEM está vinculado a una vista de tienda de Magento.
+Los datos del producto normalmente ya se traducen en PIM o en Adobe Commerce. La integración AEM - Adobe Commerce admite la conexión a varias tiendas y vistas de tiendas de Adobe Commerce. En una configuración de MSM, normalmente un sitio AEM está vinculado a una vista de tienda de Adobe Commerce.
 
 ## 13. ¿Existe alguna manera de mejorar los datos del producto con texto comercial? ¿Dónde se hace esto? ¿En AEM o en la solución de comercio?
 
@@ -68,9 +67,9 @@ Se recomienda administrar los datos y el contenido relacionados con el marketing
 
 ## 14. ¿Cómo podemos garantizar el cumplimiento de PCI al utilizar AEM para toda la capa de presentación?
 
-Recomendamos utilizar métodos de pago abstractos. Esto pone al cliente del explorador en comunicación directa con el proveedor de la puerta de enlace de pago, de modo que ni el Adobe ni las soluciones de comercio contienen ni pasan datos del titular de la tarjeta. Este enfoque requiere solamente un cumplimiento de PCI de nivel 3. Sin embargo, hay cosas adicionales que considerar para que sea totalmente compatible con PCI, como por ejemplo cómo los empleados interactúan con el sistema y los datos. Para obtener más información sobre el cumplimiento de PCI Magento, consulte <https://magento.com/pci-compliance>
+Recomendamos utilizar métodos de pago abstractos. Esto pone al cliente del explorador en comunicación directa con el proveedor de la puerta de enlace de pago, de modo que ni el Adobe ni las soluciones de comercio contienen ni pasan datos del titular de la tarjeta. Este enfoque requiere solamente un cumplimiento de PCI de nivel 3. Sin embargo, hay cosas adicionales que considerar para que sea totalmente compatible con PCI, como por ejemplo cómo los empleados interactúan con el sistema y los datos. Para obtener más información sobre la conformidad con PCI Adobe Commerce, consulte [Cumplimiento de PCI](https://business.adobe.com/products/magento/pci-compliance.html)
 
-## 15. Si utilizo las versiones de nube AEM y Magento, ¿esta solución conjunta es compatible con PCI?
+## 15. Si utilizo las versiones en la nube de AEM y Adobe Commerce, ¿esta solución conjunta es compatible con PCI?
 
 Sí, el Cuestionario de Autoevaluación D y la Certificación de Cumplimiento están disponibles bajo petición.
 

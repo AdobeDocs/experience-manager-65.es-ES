@@ -2,17 +2,17 @@
 title: Integración comercial de AEM y terceros con Commerce Integration Framework
 description: Los negocios empresariales pueden requerir soluciones de comercio de terceros adicionales para impulsar su tienda. Commerce Integration Framework (CIF) se puede utilizar en estos escenarios de integración para conectar una solución de comercio de terceros a Adobe Experience Manager mediante I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: e99899a4-df86-4108-991a-8b30d303a279
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 4%
 
 ---
 
-# Integración de comercio de AEM y terceros con Commerce Integration Framework {#aem-third-party}
+# Integración del comercio de AEM y terceros con Commerce Integration Framework {#aem-third-party}
 
-La integración de soluciones de comercio que no son de Adobe es un escenario común para CIF. las soluciones de terceros con diferentes API y esquemas se conectan mediante una capa de integración.
+La integración de soluciones que no son de Adobe Commerce es un escenario común para CIF. las soluciones de terceros con diferentes API y esquemas se conectan mediante una capa de integración.
 
 ## Arquitectura {#architecture}
 
@@ -28,7 +28,7 @@ A medida que el Experience Manager recupera los datos bajo demanda, se requieren
 
 >[!TIP]
 >
->Si no hay API en tiempo real disponibles, se debe utilizar una caché de producto externa con API para la integración. Ejemplo de [Magento de código abierto](https://magento.com/products/magento-open-source).
+>Si no hay API en tiempo real disponibles, se debe utilizar una caché de producto externa con API para la integración. Ejemplo [Magento de código abierto](https://business.adobe.com/products/magento/open-source.html).
 
 No es necesario implementar el esquema completo de GraphQL, solo los objetos del esquema para habilitar los casos de uso deseados.
 
@@ -40,14 +40,14 @@ La integración de las API del catálogo de productos es necesaria para desbloqu
 
 ## Casos de uso del front-end
 
-[AEM componentes principales del CIF ](https://github.com/adobe/aem-core-cif-components) recuperan e intercambian datos a través de las API de comercio de Adobe compatibles con CIF. Para reutilizar componentes, es necesario implementar las API correspondientes.
+[Componentes principales del CIF de AEM](https://github.com/adobe/aem-core-cif-components) recupere e e intercambie datos mediante las API de Adobe Commerce compatibles con CIF. Para reutilizar componentes, es necesario implementar las API correspondientes.
 
 La recomendación para los componentes críticos del cliente de rendimiento es comunicarse directamente con la solución de terceros para evitar la latencia.
 
 ## Desarrollo de una integración {#develop-integration}
 
-Se recomienda utilizar [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) para la capa de integración. Se incluye en el complemento CIF para terceros. Como funciona con un enfoque de microservicio, es adecuado para integrar fácilmente varias soluciones.
+Se recomienda usar [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) para la capa de integración. Se incluye en el complemento CIF para terceros. Como funciona con un enfoque de microservicio, es adecuado para integrar fácilmente varias soluciones.
 
-La [implementación de referencia](https://github.com/adobe/commerce-cif-graphql-integration-reference) es un bueno punto de partida para crear la integración en su solución de comercio. Aunque es compatible con GraphQL, también se puede integrar con cualquier otro tipo de API, como REST.
+La variable [implementación de referencia](https://github.com/adobe/commerce-cif-graphql-integration-reference) es un bueno punto de partida para integrar su solución de comercio. Aunque es compatible con GraphQL, también se puede integrar con cualquier otro tipo de API, como REST.
 
 Esta capa de integración no es necesaria si hay disponible una capa de terceros (como Mulesoft) o si la integración se integra sobre la solución de terceros.

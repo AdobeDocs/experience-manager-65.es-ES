@@ -4,15 +4,15 @@ description: AEM comercio electrónico ayuda a los especialistas en marketing a 
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# eCommerce{#ecommerce}
+# comercio electrónico{#ecommerce}
 
 * [Conceptos ](/help/commerce/cif-classic/administering/concepts.md)
 * [Administración (genérica)](/help/commerce/cif-classic/administering/generic.md)
@@ -41,7 +41,7 @@ Adobe proporciona dos versiones de Commerce Integration Framework:
     </ul> </td>
    <td>
     <ul>
-     <li>Magento</li>
+     <li>Adobe Commerce</li>
      <li>Java y Javascript</li>
      <li>No hay datos de comercio almacenados en el repositorio JCR</li>
     </ul> </td>
@@ -81,15 +81,15 @@ Adobe proporciona dos versiones de Commerce Integration Framework:
   <tr>
    <td>Modelo de datos estandarizado</td>
    <td>No</td>
-   <td>Sí, esquema de Magento GraphQL</td>
+   <td>Sí, esquema de Adobe Commerce GraphQL</td>
   </tr>
   <tr>
    <td>Disponibilidad</td>
    <td><p>Sí. Commerce Cloud de SAP (la extensión se ha actualizado para admitir AEM 6.4 e Hybris 5 (predeterminado) y mantiene la compatibilidad con Hybris 4</p> <p>Commerce Cloud de Salesforce (conector de código abierto compatible con AEM 6.4)</p> </td>
-   <td>Sí, a través de código abierto a través de GitHub. Magento Commerce (admite Magento 2.3.2 (predeterminado) y compatible con Magento 2.3.1).</td>
+   <td>Sí, a través de código abierto a través de GitHub. Adobe Commerce (compatible con 2.3.2 (predeterminado) y 2.3.1).</td>
   </tr>
   <tr>
-   <td>Cuándo se utiliza</td>
+   <td>Cuándo se usa</td>
    <td>Casos de uso limitados: Por ejemplo, escenarios en los que sea necesario importar catálogos estáticos pequeños</td>
    <td>Solución preferida en la mayoría de los casos de uso</td>
   </tr>
@@ -128,7 +128,7 @@ La implementación permite el acceso en tiempo real a la información del produc
 
 AEM comercio electrónico proporciona:
 
-* Varios **componentes de AEM listos para usar** para ilustrar lo que se puede lograr para el proyecto:
+* Un número de **componentes de AEM listos para usar** para ilustrar lo que se puede lograr para el proyecto:
 
    * Visualización del producto
    * Carro de compras
@@ -143,7 +143,7 @@ AEM comercio electrónico proporciona:
    >
    >El marco de integración proporcionado por AEM también le permite crear componentes de AEM adicionales para las funciones de comercio independientes del motor de comercio electrónico específico.
 
-* **Buscar** : mediante:
+* **Buscar** - mediante:
 
    * la búsqueda AEM
    * la búsqueda del sistema de comercio electrónico
@@ -152,15 +152,15 @@ AEM comercio electrónico proporciona:
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Utiliza la capacidad AEM para **presentar el contenido en varios canales**, ya sea en la ventana completa del explorador o en el dispositivo móvil. Esto ofrece el contenido en el formato que necesitan los visitantes.
+* Utiliza la capacidad de AEM para **presentar el contenido en varios canales**, ya sea la ventana completa del navegador o el dispositivo móvil. Esto ofrece el contenido en el formato que necesitan los visitantes.
 
    ![](/help/sites-administering/assets/chlimage_1-132.png)
 
-* La capacidad de **desarrollar su propia implementación de integración basada en el [AEM marco de comercio electrónico](#the-framework)**.
+* La capacidad de **desarrolle su propia implementación de integración basada en [AEM marco de comercio electrónico](#the-framework)**.
 
    Las dos implementaciones disponibles actualmente se crean sobre la misma base, además de la API general (el marco de trabajo). La implementación de una nueva integración solo implica implementar las funciones que necesita la integración. Las nuevas implementaciones pueden utilizar los componentes front-end, ya que utilizan interfaces (por lo que son independientes de la implementación).
 
-* La posibilidad de desarrollar **comercio basado en la experiencia basado en los datos y la actividad del comprador**. Esto le permite dar cuenta de muchos escenarios:
+* La posibilidad de desarrollar **comercio basado en la experiencia y en la actividad del comprador**. Esto le permite dar cuenta de muchos escenarios:
 
    * Un ejemplo podría ser proporcionar reducciones en los costos de envío cuando el pedido total exceda una cantidad específica.
    * Otro puede permitirle proporcionar ofertas de temporada que utilicen datos de perfil (por ejemplo, ubicación). A continuación, se pueden resaltar, dependiendo de nuevo de otros factores cuando sea necesario.
@@ -181,7 +181,7 @@ AEM comercio electrónico proporciona:
 
 ## El marco {#the-framework}
 
-La sección [Conceptos](/help/commerce/cif-classic/administering/concepts.md) cubre el marco de trabajo con más detalle, pero lo siguiente proporciona una vista de alto nivel y alta velocidad del marco de trabajo:
+La variable [Conceptos](/help/commerce/cif-classic/administering/concepts.md) esta sección cubre el marco de trabajo con más detalle, pero la siguiente proporciona una vista de alto nivel y alta velocidad del marco de trabajo:
 
 ### ¿Qué? {#what}
 

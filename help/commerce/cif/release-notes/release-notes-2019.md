@@ -1,10 +1,10 @@
 ---
 title: Notas de la versión de contenido y comercio de AEM 2021
 description: Notas de la versión de contenido y comercio de AEM 2021
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '978'
 ht-degree: 9%
 
 ---
@@ -29,9 +29,9 @@ ht-degree: 9%
 
 * Se agregó soporte de pago para Braintree en AEM tienda Venia.
 
-### Qué se ha mejorado {#what-is-improved-november}
+### Novedades mejoradas {#what-is-improved-november}
 
-* Selector de categoría/producto mejorado para respetar la vista especificada del almacén de Magento en una configuración de varias tiendas.
+* Selector de categoría/producto mejorado para respetar la vista especificada de la tienda Adobe Commerce en una configuración de varias tiendas.
 
 * Componentes basados en React disponibles como paquete npm. Esto permite a los desarrolladores utilizar el paquete React Components como dependencia de un nuevo proyecto React para permitir la personalización de componentes existentes o desarrollar nuevos componentes basados en React.
 
@@ -49,13 +49,13 @@ ht-degree: 9%
 
 * Plantillas totalmente autorizables para la página de detalles del producto y la página de lista de productos. Los autores ahora pueden crear nuevas plantillas y arrastrar y soltar los componentes de lista de productos y detalles de productos en estas plantillas. Además de añadir otros componentes, los autores también pueden cambiar el diseño de estas plantillas, lo que les ofrece libertad ilimitada para crear experiencias increíbles que combinan contenido comercial y de marketing.
 
-* Todos los componentes principales del CIF compatibles con el autor se han mejorado para admitir [AEM Style System](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html). Se han proporcionado estilos de ejemplo para el componente de lista de productos.
+* Todos los componentes principales del CIF compatibles con el autor se han mejorado para admitir [Sistema de estilos AEM](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html). Se han proporcionado estilos de ejemplo para el componente de lista de productos.
 
 * Componentes basados en React del lado del cliente para la administración de cuentas. Esta versión es compatible con las siguientes funcionalidades: Inicio de sesión, contraseña olvidada y creación de cuenta.
 
-### Qué se ha mejorado {#what-is-improved-october}
+### Novedades mejoradas {#what-is-improved-october}
 
-* Los componentes detalle del producto y de la lista de productos se han mejorado para mostrar datos ficticios y proporcionar a los autores una vista previa del diseño cuando estos componentes se colocan en una plantilla o página.
+* Se han mejorado los detalles del producto y los componentes de la lista de productos para mostrar datos ficticios y proporcionar a los autores una vista previa del diseño cuando estos componentes se colocan en una plantilla o página.
 
 * Los componentes Minicart y Checkout ahora utilizan enlaces React para mejorar la extensibilidad.
 
@@ -77,7 +77,7 @@ ht-degree: 9%
 
 * El componente Cierre de compra incluye formularios de direcciones, selección de pagos y selección de métodos de envío.
 
-### Qué se ha mejorado {#what-is-improved-september}
+### Novedades mejoradas {#what-is-improved-september}
 
 * Los componentes teaser de productos y carrusel de productos admiten variantes de producto.
 
@@ -95,7 +95,7 @@ ht-degree: 9%
 
 * Componentes del CIF disociados del estilo CSS específico de &quot;Venia&quot; para permitir a los desarrolladores aplicar el estilo CSS de su elección.
 
-* Característica de varias tiendas/sitios para permitir el uso de los componentes principales del CIF en varias estructuras AEM sitio y permitir que la implementación de cliente de GraphQL subyacente se conecte a diferentes vistas de tiendas/almacenes de Magento.
+* Característica de varias tiendas/sitios para permitir el uso de los componentes principales del CIF en varias estructuras AEM sitio y permitir que la implementación de cliente de GraphQL subyacente se conecte a diferentes vistas de tiendas/almacenes de Adobe Commerce.
 
 * El almacenamiento en caché de GraphQL está habilitado para ciertas consultas de GraphQL a través de la GET HTTP para reducir el tiempo de respuesta.
 
@@ -105,9 +105,9 @@ ht-degree: 9%
 
 * Botón para permitir que los autores coloquen en una página AEM y vinculen a una página AEM, a una página de detalles del producto, a una página de lista de productos o a un vínculo externo.
 
-### Qué se ha mejorado {#what-is-improved-august}
+### Novedades mejoradas {#what-is-improved-august}
 
-* La configuración del almacén de Magento se ha trasladado de OSGi a AEM consola de producto para que la configuración de la integración sea más fácil de usar para el autor.
+* La configuración de la tienda de Adobe Commerce se ha trasladado de OSGi a AEM consola de producto para que la configuración de la integración sea más fácil de usar para el autor.
 
 ## Fecha de versión: Julio de 2019
 
@@ -131,9 +131,9 @@ ht-degree: 9%
 
 * Lista de categorías destacadas del lado del servidor para mostrar la lista de categorías en una página AEM.
 
-### Qué se ha mejorado {#what-is-improved-july}
+### Novedades mejoradas {#what-is-improved-july}
 
-* La compatibilidad con el Magento 2.3.2 y las correcciones de errores relacionadas con las propiedades del producto se muestran en la consola del producto.
+* La compatibilidad con Adobe Commerce 2.3.2 y las correcciones de errores relacionadas con las propiedades del producto se muestran en la consola del producto.
 
 ## Fecha de versión: Junio de 2019
 
@@ -148,11 +148,10 @@ ht-degree: 9%
 
 * El conector del CIF y las herramientas de creación (consola de producto, selector de productos y selector de categorías) permiten a los autores crear experiencias en AEM con contenido comercial.
 
-* Primera versión de los componentes principales de CIF compatibles con el Magento 2.3.1:
+* Primera versión de los componentes principales de CIF compatibles con Adobe Commerce 2.3.1:
    * Detalles del producto
    * Lista de productos
    * Teaser de productos
    * Navegación
    * Búsqueda de productos
    * Carro de compras (REST)
-

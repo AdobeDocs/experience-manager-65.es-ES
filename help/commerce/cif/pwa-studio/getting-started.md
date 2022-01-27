@@ -2,19 +2,19 @@
 title: Introducción a AEM Extension for PWA Studio
 description: Obtenga información sobre cómo implementar un proyecto de Contenido y comercio AEM sin encabezado con PWA Studio.
 topics: Commerce
-feature: Marco de integración de Commerce
+feature: Commerce Integration Framework
 thumbnail: 37843.jpg
-source-git-commit: 247c521e93990df2c8026da5edd84d163d5d424b
+exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 1%
+source-wordcount: '770'
+ht-degree: 0%
 
 ---
 
-
 # Introducción a AEM Extension for PWA Studio {#getting-started-pwa}
 
-De serie, el PWA Studio se integra perfectamente con el Adobe Commerce a través de GraphQL, proporcionando opciones ilimitadas para crear tiendas innovadoras y atractivas y otras experiencias digitales.
+De forma predeterminada, el PWA Studio se integra perfectamente con Adobe Commerce mediante GraphQL, que proporciona opciones ilimitadas para crear tiendas innovadoras y atractivas y otras experiencias digitales.
 
 Los fragmentos de contenido son fragmentos de contenido con una estructura predefinida que les permite consumirlos de forma independiente mediante GraphQL como API en diferentes formatos (por ejemplo, JSON, Markdown) y procesarlos de forma independiente. Los fragmentos de contenido incluyen todos los tipos de datos y campos requeridos para GraphQL para garantizar que la aplicación solo solicite lo que está disponible y reciba lo que se espera. La flexibilidad que proporcionan en términos de su estructura los hace perfectos para su uso en varias ubicaciones y en varios canales.
 
@@ -26,9 +26,9 @@ El diseño de la estructura que necesita es sencillo con el Editor del modelo de
 
 ## PWA Studio de configuración {#setup-pwa}
 
-Siga la [documentación del PWA Studio](https://magento.github.io/pwa-studio/tutorials/) de Adobe Commerce para configurar la aplicación de PWA Studio.
+Siga el Adobe Commerce [documentación del PWA Studio](https://developer.adobe.com/commerce/pwa-studio/tutorials/) para configurar la aplicación de PWA Studio.
 
-Para conectar el PWA Studio con el extremo de GraphQL de AEM, puede utilizar la [Extensión de AEM para el PWA Studio](https://github.com/adobe/aem-pwa-studio-extensions).
+Para conectar el PWA Studio con el extremo de GraphQL de AEM, puede usar la variable [Extensión de AEM para PWA Studio](https://github.com/adobe/aem-pwa-studio-extensions).
 
 1. Consulte el repositorio
 
@@ -48,7 +48,7 @@ Para conectar el PWA Studio con el extremo de GraphQL de AEM, puede utilizar la 
    <Adapter apiBase={apiBase} apollo={{ link: linkWrapper(apolloLink) }} store={store}>
    ```
 
-   Puede encontrar más detalles sobre la personalización del cliente Apollo en [linkWrapper.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/linkWrapper.js).
+   Puede encontrar más información sobre la personalización del cliente Apollo en [linkWrapper.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/linkWrapper.js).
 
 1. Para ampliar el componente de navegación con una entrada Blog , agregue las siguientes adaptaciones a pwa-root/local-intercept.js:
 
@@ -60,10 +60,9 @@ Para conectar el PWA Studio con el extremo de GraphQL de AEM, puede utilizar la 
    }    
    ```
 
-   Puede encontrar más información sobre la personalización del componente Navegación en [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) y en la documentación de [Extensibility Framework](https://magento.github.io/pwa-studio/pwa-buildpack/extensibility-framework/) del PWA Studio.
+   Puede encontrar más información sobre la personalización del componente Navegación en [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) y en el [Marco de extensibilidad](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentación de PWA Studio.
 
-1. El cliente Apollo espera el extremo de AEM GraphQL en <https://pwa-studio/endpoint.js>. Para asignar el punto final a esta ubicación, deberá personalizar la configuración de UPWARD de la aplicación PWA Studio:
-a. Agregue la variable AEM_CFM_GRAPHQL a pwa-root/.env y ábrala para que apunte al extremo GraphQL de los fragmentos de contenido de AEM.
+1. El cliente Apollo espera el extremo AEM GraphQL en <https://pwa-studio/endpoint.js>. Para asignar el punto final a esta ubicación, deberá personalizar la configuración de UPWARD de la aplicación PWA Studio: a. Agregue la variable AEM_CFM_GRAPHQL a pwa-root/.env y ábrala para que apunte al extremo GraphQL de los fragmentos de contenido de AEM.
 
    Ejemplo: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
 
@@ -116,7 +115,7 @@ Según el caso de uso, desea crear sus propios modelos de fragmento de contenido
 
 Las configuraciones de producción pueden variar en varios aspectos.
 
-* Puede tener un único extremo federado de GraphQL que combine datos de AEM y Magento GraphQL en lugar de personalizar el cliente de Apollo.
+* Puede tener un único extremo federado de GraphQL que combine datos de AEM y Adobe Commerce GraphQL en lugar de personalizar el cliente de Apollo.
 * La aplicación PWA Studio podría usar la URL de extremo de AEM GraphQL directamente, sin un proxy con UPWARD. El proxy también se puede mover a una capa diferente (por ejemplo, CDN).
 * El enfoque que mejor se adapte a sus necesidades también depende en gran medida de cómo envíe la aplicación PWA Studio al usuario final.
 

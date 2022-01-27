@@ -1,13 +1,13 @@
 ---
 title: Encabezados HTTP personalizados
 description: Configuración de encabezados HTTP personalizados
-source-git-commit: 7d174be35cb99d802e4aeff6f4d955b1b92cab74
+exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 1%
+source-wordcount: '270'
+ht-degree: 3%
 
 ---
-
 
 # Encabezados HTTP personalizados {#custom-http-headers}
 
@@ -19,10 +19,9 @@ Para obtener más control sobre su backend, los autores pueden configurar encabe
 >
 >Los desarrolladores siempre pueden configurar encabezados HTTP personalizados mediante la configuración de cliente de GraphQL.
 
-
 ## Configuración {#configuration}
 
-Para configurar los encabezados HTTP personalizados, primero debe definirlos. Los encabezados HTTP personalizados deben definirse primero agregándolos a la configuración del servicio `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` mediante una configuración OSGi.
+Para configurar los encabezados HTTP personalizados, primero debe definirlos. Los encabezados HTTP personalizados deben definirse primero agregándolos al `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` configuración del servicio mediante una configuración OSGi.
 
 Puede configurar los valores de los encabezados HTTP en la página Configuración del Cloud Service del proyecto:
 
@@ -34,7 +33,7 @@ Los componentes que utilizan la configuración de servicio en la nube anterior e
 
 ## Restricciones {#restrictions}
 
-Aunque el servicio permite definir cualquier nombre de encabezado, incluidos los estándar, no estarán disponibles para configurarlos. En otras palabras, no puede anular los encabezados HTTP estándar usando esta función. Se puede encontrar una lista de nombres de encabezado restringidos [aquí](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Además de estos, hay dos encabezados más que no se pueden usar:
+Aunque el servicio permite definir cualquier nombre de encabezado, incluidos los estándar, no estarán disponibles para configurarlos. En otras palabras, no puede anular los encabezados HTTP estándar usando esta función. Se puede encontrar una lista de nombres de encabezado restringidos [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Además de estos, hay dos encabezados más que no se pueden usar:
 
-* &quot;Tienda&quot;: utilizada por CIF para identificar el almacén de Magento
+* &quot;Tienda&quot;: lo utiliza CIF para identificar la tienda de Adobe Commerce.
 * &quot;Preview-Version&quot;: se utiliza en el CIF para recuperar productos clasificados

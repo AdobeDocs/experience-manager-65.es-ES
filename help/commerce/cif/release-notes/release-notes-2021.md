@@ -2,10 +2,10 @@
 title: Notas de la versión de contenido y comercio de AEM 2021
 description: Notas de la versión de contenido y comercio de AEM 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 98ba3edb3b9e93fa13a0f0418f1b17323d5a7233
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 9%
+source-wordcount: '1314'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
 | Componente | Requisitos del sistema |
 |:-------|:-----:|
-| Complemento CIF | Mínimo: AEM 6.5.7, Magento 2.3.5 Esquemas de GraphQL |
+| Complemento CIF | Mínimo: Esquemas de AEM 6.5.7, Adobe Commerce 2.3.5 GraphQL |
 | Componentes principales de CIF | [Requisitos del sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Tipo de archivo del proyecto AEM | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -35,9 +35,9 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
 ![Componentes de myAccount ampliados](/help/assets/CIF/extended-myAccount-components.png)
 
-* Los autores pueden crear Recommendations de producto de comercio ad-hoc utilizando tipos de recomendación adicionales
+* Los autores pueden crear recomendaciones de producto de Commerce ad hoc utilizando tipos de recomendación adicionales
 
-* Compatibilidad con tarjetas de regalo en AEM tienda
+* Compatibilidad con tarjetas de regalo en AEM Storefront
 
 ## Fecha de versión: Octubre de 2021
 
@@ -53,7 +53,7 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
 * Los autores pueden agregar vínculos a páginas de productos y catálogos en campos de texto utilizando el editor de texto enriquecido (RTE). Se ha agregado un icono del CIF a la barra de herramientas de RTE que abrirá los selectores para buscar y seleccionar rápidamente el producto o la categoría sin abandonar el contexto.
 
-* El carro de compras emergente y el cierre de compra existentes se han sustituido por páginas dedicadas AEM carro de compras y de cierre de compra. Los componentes de estas páginas se crean utilizando los componentes Peregrine ampliables de Magento
+* El carro de compras emergente y el cierre de compra existentes se han sustituido por páginas dedicadas AEM carro de compras y de cierre de compra. Los componentes de estas páginas se crean utilizando los componentes Peregrine ampliables de Adobe Commerce
 
 * Los comerciantes pueden ocultar ciertas categorías de catálogo de productos en la navegación mediante el servidor de Commerce. El componente principal de navegación del CIF respeta la configuración del back-end de comercio &quot;incluir en menú&quot; para mostrar u ocultar categorías en la navegación
 
@@ -195,7 +195,7 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
 ### Novedades
 
-* Compatibilidad con el Magento 2.4.2
+* Compatibilidad con Adobe Commerce 2.4.2
 
 ### Novedades mejoradas
 
