@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b7762a44d7b572d784dda2220530b21f9c46e7ab
+source-git-commit: 270219c8baedd4b72a256e6318d89154d6dadb0b
 workflow-type: tm+mt
-source-wordcount: '6080'
+source-wordcount: '6110'
 ht-degree: 3%
 
 ---
@@ -132,7 +132,7 @@ Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, selecci
    Una vez activado un recurso, las actualizaciones se publican inmediatamente en S7 Delivery.
 
 1. Seleccione **[!UICONTROL Guardar]**.
-1. Para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, debe &quot;lista de permitidos&quot; la instancia de autor del Experience Manager para conectarse a Dynamic Media:
+1. De forma predeterminada, el Autor del Experience Manager no puede obtener una vista previa del contenido de Dynamic Media. Por lo tanto, para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, debe *lista de permitidos* la instancia de Autor de Experience Manager para conectarse a Dynamic Media. Además, si desea proporcionar a los usuarios acceso para obtener una vista previa del contenido de forma segura, puede *lista de permitidos* direcciones IP adicionales:
 
    * En el modo Autor del Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global.
    * En el carril izquierdo, seleccione la opción **[!UICONTROL Herramientas]** y vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Configuración de Dynamic Media Publish]**.
