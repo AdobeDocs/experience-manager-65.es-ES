@@ -3,9 +3,9 @@ sub-product: AEM Content and Commerce
 user-guide-title: AEM Content and Commerce
 breadcrumb-title: Guía de Commerce
 user-guide-description: Aprenda a utilizar y administrar AEM Content and Commerce.
-source-git-commit: f3e286c7b5404812655f3b257de17be7bfde7487
+source-git-commit: 9c4edf1d1482923856e56cdadfe1a2a903e782bc
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '121'
 ht-degree: 70%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 70%
 + [PWA Studio de Adobe Commerce](cif/pwa-studio/getting-started.md)
 + [Migración](cif/migration.md)
 + Notas de la versión {#release-notes}
+   + [2022](cif/release-notes/release-notes-2022.md)
    + [2021](cif/release-notes/release-notes-2021.md)
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
