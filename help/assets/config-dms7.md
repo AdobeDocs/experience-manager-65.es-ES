@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: cfd08526fd1dccf461b13747b4a7496849243669
+source-git-commit: 2706a069bea731da1f84c15e2da02b53a9db4d28
 workflow-type: tm+mt
 source-wordcount: '6035'
 ht-degree: 3%
@@ -104,6 +104,8 @@ Consulte [Instalación del paquete de características 18912 para la migración 
 1. Cuando la conexión se realice correctamente, establezca lo siguiente. Los encabezados con un asterisco (*) son obligatorios:
 
    * **[!UICONTROL Empresa]** - el nombre de la cuenta de Dynamic Media. Tiene varias cuentas de Dynamic Media. Por ejemplo, puede tener diferentes submarcas, divisiones, entornos de ensayo o producción.
+
+   <!-- UNHIDE FEBRUARY 24, 2022 See also [Configure Dynamic Media company alias account](/help/assets/dm-alias-account.md). -->
 
    * **[!UICONTROL Ruta de carpeta raíz de la empresa]**
 
