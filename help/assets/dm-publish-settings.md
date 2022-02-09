@@ -8,13 +8,13 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
-source-git-commit: 1a410c7b71f0e329b327a7f7f05137fcd220fb6a
+exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
+source-git-commit: 8561eb8b4b5164188ebf387c8f0344b462b830ec
 workflow-type: tm+mt
-source-wordcount: '3459'
+source-wordcount: '3467'
 ht-degree: 3%
 
 ---
-
 
 # Configuración de Dynamic Media Publish Setup para Image Server
 
@@ -64,6 +64,8 @@ La página Servidor de imágenes establece la configuración predeterminada para
 ### Ficha Seguridad {#security-tab}
 
 **[!UICONTROL Dirección del cliente]** - Permite especificar una o más direcciones IP o intervalos de direcciones IP. Cuando se especifica, se rechazan las solicitudes a este catálogo de imágenes que se originan en un cliente con una dirección IP no incluida en la lista. Esta regla se aplica tanto a la entrega de imágenes como a las imágenes procesadas.
+
+![Ficha Seguridad ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Pestaña Seguridad que muestra el campo &quot;Permitir&quot; IP.*
 
 ### Ficha Administración del catálogo {#catalog-management-tab}
 
