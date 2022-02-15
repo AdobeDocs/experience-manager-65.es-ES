@@ -8,10 +8,10 @@ breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
 feature: Administering
 role: Admin
-source-git-commit: 7af09e73f40c2d947c9ccce000174155ef67137f
+source-git-commit: d4f5cebc76ed9348a17efc07443cd82317f24368
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 28%
+source-wordcount: '623'
+ht-degree: 29%
 
 ---
 
@@ -142,7 +142,6 @@ ht-degree: 28%
    + [Integración con Adobe Marketing Cloud](marketing-cloud.md)
    + [Configuración manual de la integración con Adobe Target](target-configuring.md)
    + [Requisitos previos para la integración con Adobe Target](target-requirements.md)
-   + [Integración con Adobe Target mediante Adobe I/O](integration-ims-adobe-io.md)
    + [Integración con Adobe Target mediante Adobe I/O](integration-target-ims-adobe-io.md)
    + [Clasificaciones de Adobe](adobeanalytics-classifications.md)
    + [Integración con el Search&amp;Promote de Adobe](search-and-promote.md)
