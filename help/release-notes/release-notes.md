@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager]Las notas de 6.5 describen la información de la versión, las novedades, la instalación y las listas de cambios detalladas.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 1ca3032063a148293f67c69a941b83b6aa5d48f1
+source-git-commit: b36b7b0dafbce3aa75afff60fae3cc714b6ac902
 workflow-type: tm+mt
-source-wordcount: '3884'
+source-wordcount: '3887'
 ht-degree: 4%
 
 ---
@@ -54,7 +54,7 @@ La siguiente es la lista de correcciones que se proporcionan en [!DNL Experience
 
 >[!WARNING]
 >
->Se está elaborando una nueva versión de este paquete. El vínculo se publicará en cuanto esté disponible.
+>Se está desarrollando una nueva versión del paquete de &quot;definición de índice&quot;. El siguiente vínculo se publicará en cuanto esté disponible.
 
 Para acceder a la entrega de contenido sin encabezado mediante Fragmentos de contenido con GraphQL y utilizar las capacidades mejoradas del editor y los modelos de fragmento de contenido, instale el paquete de definición de índice y vuelva a indexar las siguientes definiciones asincrónicas de índice de AEM:
 
