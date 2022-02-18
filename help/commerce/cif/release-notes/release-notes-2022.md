@@ -1,11 +1,10 @@
 ---
 title: Notas de la versión de contenido y comercio de AEM 2022
 description: Notas de la versión de contenido y comercio de AEM 2022
-exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 26df21270e8c586ba21b9bf3e9fc5003facbaade
+source-git-commit: 84ac40a5cd18b1a5c8bb7a93af4106be6bda7631
 workflow-type: tm+mt
 source-wordcount: '204'
-ht-degree: 13%
+ht-degree: 45%
 
 ---
 
@@ -33,11 +32,11 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
 * Componentes myAccount mejorados
 * El componente Recomendación de producto admite tipos de página adicionales (página de inicio, carro de compras, confirmación de pedido)
-* **Lista de artículos deseados**
-   * Los visitantes con sesión iniciada pueden agregar productos a una lista de deseos
+* **Lista de deseos**
+   * Los visitantes con sesión iniciada pueden añadir productos a una lista de deseos
    * La administración de la lista de deseos y sus productos es posible a través de myAccount
-   * El botón &quot;Agregar a la lista de deseos&quot; se puede activar o desactivar en un nivel de componente mediante una directiva (por ejemplo, teaser de productos, detalles de productos)
-   * Disponible como componente principal y en la Tienda Venia AEM
+   * El botón Añadir a la lista de deseos se puede activar o desactivar en un nivel de componente mediante una directiva (por ejemplo, teaser de productos, detalles de productos
+   * Disponible como componente principal y en la AEM Venia Storefront
 
-![Lista de artículos deseados](/help/assets/CIF/wishlist.png)
+![Lista de deseos](/help/assets/CIF/wishlist.png)
 
