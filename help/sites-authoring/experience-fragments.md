@@ -1,8 +1,8 @@
 ---
 title: Fragmentos de experiencias
-seo-title: Fragmentos de experiencias
+seo-title: Experience Fragments
 description: Fragmentos de experiencias
-seo-description: nulo
+seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
+source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 97%
+source-wordcount: '1440'
+ht-degree: 92%
 
 ---
-
 
 # Fragmentos de experiencias{#experience-fragments}
 
@@ -28,10 +27,12 @@ Un fragmento de experiencia:
 * Forma parte de una experiencia (página).
 * Se puede utilizar en varias páginas.
 * Se basa en una plantilla (solo editable) para definir la estructura y los componentes.
+* Esta plantilla se utiliza para crear la variable *página raíz* del fragmento de experiencias.
 * Se compone de uno o varios componentes, con diseño, en un sistema de párrafos.
 * Puede contener otros fragmentos de experiencias.
 * Se puede combinar con otros componentes (incluidos otros fragmentos de experiencias) para formar una página completa (experiencia).
-* Puede tener diferentes variaciones y compartir el contenido o los componentes.
+* Se pueden crear una o más variaciones basadas en la página raíz.
+* Estas variaciones pueden compartir contenido o componentes.
 * Se puede desglosar en bloques de construcción que se pueden utilizar en varias variaciones del fragmento.
 
 Puede utilizar los fragmentos de experiencias:
@@ -176,6 +177,10 @@ Para crear un fragmento de experiencia:
 
    ![xf-04](assets/xf-04.png)
 
+   >[!NOTE]
+   Las etiquetas de la plantilla Fragmento de experiencia no se combinarán con etiquetas en esta página raíz del fragmento de experiencia.
+   Son totalmente independientes.
+
 1. Haga clic en **Crear**.
 
    Se mostrará un mensaje. Seleccione:
@@ -240,7 +245,7 @@ Ahora puede utilizar el fragmento de experiencia para crear páginas:
 
 1. Para crear una instancia del componente Fragmento de experiencias, arrastre el componente del explorador de componentes al sistema de párrafos de la página:
 
-   ![xf-06](assets/xf-08.png)
+   ![xf-08](assets/xf-08.png)
 
 1. Agregue el fragmento de experiencia real a la instancia de componente; o bien:
 
@@ -280,7 +285,7 @@ Para crear un nuevo bloque de creación:
 
 El bloque de creación se puede ver en la pestaña **Bloques de creación**. Para cada bloque, están disponibles las siguientes acciones:
 
-* Ir a la variación principal: abrir la variación principal en una nueva pestaña
+* Vaya a Principal: abra la variación de la página raíz en una pestaña nueva
 * Cambiar nombre
 * Eliminar
 
@@ -345,7 +350,7 @@ Uso del selector de `.plain.` en la URL; puede acceder a la representación HTML
 >[!NOTE]
 Aunque esta opción está disponible directamente desde el explorador, [el objetivo principal es permitir a otras aplicaciones (por ejemplo, aplicaciones web de terceros o implementaciones móviles personalizadas) acceder al contenido del fragmento de experiencia directamente, únicamente mediante la URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
-## Exportación de fragmentos de experiencias    {#exporting-experience-fragments}
+## Exportación de fragmentos de experiencias   {#exporting-experience-fragments}
 
 De forma predeterminada, los fragmentos de experiencias se envían en formato HTML. Los canales de AEM y los canales similares de terceros pueden usar esta opción.
 

@@ -8,9 +8,9 @@ breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
 feature: Administering
 role: Admin
-source-git-commit: d4f5cebc76ed9348a17efc07443cd82317f24368
+source-git-commit: 206df4237e0e6959389dd0128c79c8f64bc4a0e4
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '631'
 ht-degree: 29%
 
 ---
@@ -117,6 +117,7 @@ ht-degree: 29%
    + [Configuración del seguimiento de vínculos para Adobe Analytics](adobeanalytics-link.md)
    + [Asignación de datos de componente con propiedades de Adobe Analytics](adobeanalytics-mapping.md)
    + [Configuración del seguimiento de vídeo para Adobe Analytics](adobeanalytics-video.md)
+   + [Integración con Adobe Analytics mediante Adobe I/O](integration-analytics-ims-adobe-io.md)
    + [Preguntas frecuentes sobre la entrega de contenido HTTP2](scene7-http2faq.md)
    + [Resolución de problemas de la integración de Adobe Campaign](troubleshooting-campaignintegration.md)
    + [Licencias de SharePoint Connector, avisos de copyright y exenciones de responsabilidad](sharepoint-connector-licenses.md)

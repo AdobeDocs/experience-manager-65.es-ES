@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: b4c3f4c393d9b34acaadc375d20738ead42e481d
+source-git-commit: 72b39fd0263347c5bfe98fe2fdaf8999d7d40a96
 workflow-type: tm+mt
-source-wordcount: '2979'
-ht-degree: 26%
+source-wordcount: '3215'
+ht-degree: 24%
 
 ---
 
@@ -197,6 +197,22 @@ Para ver y administrar referencias en la variable [!DNL Assets] implementación,
 1. Los usuarios pueden mover o eliminar el recurso. Al mover o eliminar un recurso, el número total de referencias de todos los recursos o carpetas seleccionados se muestra en un cuadro de diálogo de advertencia. Al eliminar un recurso para el que aún no se muestran las referencias, se muestra un cuadro de diálogo de advertencia.
 
    ![forzar advertencia de eliminación](assets/delete-referenced-asset.png)
+
+### Administrar actualizaciones de recursos en DAM remoto {#manage-updates-in-remote-dam}
+
+Después [configuración de una conexión](#configure-a-connection-between-sites-and-assets-deployments) entre DAM remoto y [!DNL Sites] implementaciones, los recursos en DAM remoto están disponibles en la variable [!DNL Sites] implementación. A continuación, puede realizar las operaciones de actualización, eliminación, cambio de nombre y movimiento en los recursos o carpetas DAM remotos. Las actualizaciones, con algún retraso, están disponibles automáticamente en la variable [!DNL Sites] implementación. Además, si se utiliza un recurso en DAM remoto en una [!DNL Experience Manager Sites] , las actualizaciones del recurso en DAM remoto se muestran en la página [!DNL Sites] página.
+
+Al mover un recurso de una ubicación a otra, asegúrese de que [ajustar referencias](/help/assets/manage-assets.md) para que el recurso se muestre en la [!DNL Sites] página. Si mueve un recurso a una ubicación a la que no se puede acceder desde la ubicación local [!DNL Sites] implementación, el recurso no se muestra en la implementación Sitios .
+
+También puede actualizar las propiedades de metadatos de un recurso en DAM remoto y los cambios estarán disponibles en el [!DNL Sites] implementación.
+
+[!DNL Sites] los autores pueden obtener una vista previa de las actualizaciones disponibles en el [!DNL Sites] implementación y, a continuación, vuelva a publicar los cambios para que estén disponibles en el [!DNL Experience Manager] publicar instancia.
+
+[!DNL Experience Manager] muestra un indicador visual de estado caducado en los recursos de `Remote Assets Content Finder` para impedir que los autores del sitio utilicen el recurso en un [!DNL Sites] página. Si utiliza un recurso con un estado caducado en una [!DNL Sites] , el recurso no se muestra en la página [!DNL Experience Manager] publicar instancia.
+
+>[!NOTE]
+>
+>Las actualizaciones de los recursos en DAM remoto están disponibles para la [!DNL Sites] implementación solo si es un DAM remoto y [!DNL Sites] implementaciones están activadas [!DNL Experience Manager].
 
 ## Limitaciones y prácticas recomendadas {#tip-and-limitations}
 
