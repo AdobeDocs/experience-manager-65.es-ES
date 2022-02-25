@@ -1,7 +1,7 @@
 ---
 title: Notas de la versión generales para [!DNL Adobe Experience Manager] 6,5
-description: '[!DNL Adobe Experience Manager]Las notas de 6.5 describen la información de la versión, las novedades, la instalación y las listas de cambios detalladas.'
-source-git-commit: 37f1df9f9421ff18fff45723b6eb081f0192520a
+description: '"[!DNL Adobe Experience Manager] 6.5 notas que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."'
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '4696'
 ht-degree: 53%

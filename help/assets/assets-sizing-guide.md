@@ -1,41 +1,41 @@
 ---
-title: '[!DNL Assets] guía de tamaño'
+title: '"[!DNL Assets] guía de tamaño"'
 description: Prácticas recomendadas para determinar métricas eficientes para estimar la infraestructura y los recursos necesarios para implementar [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Architect, Admin
-feature: Administración de activos
+feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
 
 # [!DNL Assets] guía de tamaño {#assets-sizing-guide}
 
-Al cambiar el tamaño del entorno para una implementación [!DNL Adobe Experience Manager Assets], es importante asegurarse de que haya suficientes recursos disponibles en términos de disco, CPU, memoria, E/S y rendimiento de red. Para cambiar el tamaño de muchos de estos recursos es necesario conocer la cantidad de recursos que se están cargando en el sistema. Si no hay una métrica mejor disponible, puede dividir el tamaño de la biblioteca existente por la edad de la biblioteca para encontrar la tasa a la que se crean los recursos.
+Al cambiar el tamaño del entorno para un [!DNL Adobe Experience Manager Assets] , es importante garantizar que haya suficientes recursos disponibles en términos de disco, CPU, memoria, E/S y rendimiento de red. Para cambiar el tamaño de muchos de estos recursos es necesario conocer cuántos recursos se están cargando en el sistema. Si no hay una métrica mejor disponible, puede dividir el tamaño de la biblioteca existente por la edad de la biblioteca para encontrar la tasa a la que se crean los recursos.
 
 ## Disco {#disk}
 
 ### Almacén de datos {#datastore}
 
-Un error común que se produce al cambiar el tamaño del espacio en disco necesario para una implementación [!DNL Assets] es basar los cálculos en el tamaño de las imágenes sin procesar que se van a introducir en el sistema. De forma predeterminada, [!DNL Experience Manager] crea tres representaciones además de la imagen original para usarlas en la renderización de los elementos de la interfaz de usuario [!DNL Experience Manager]. En implementaciones anteriores, se ha observado que estas representaciones suponen el doble del tamaño de los recursos ingeridos.
+Se ha producido un error común al cambiar el tamaño del espacio de disco necesario para un [!DNL Assets] la implementación es basar los cálculos en el tamaño de las imágenes sin procesar que se van a introducir en el sistema. De forma predeterminada, [!DNL Experience Manager] crea tres representaciones además de la imagen original para utilizarlas en la renderización de [!DNL Experience Manager] elementos de la interfaz de usuario. En implementaciones anteriores, se ha observado que estas representaciones suponen el doble del tamaño de los recursos ingeridos.
 
 La mayoría de los usuarios definen representaciones personalizadas, además de las representaciones predeterminadas. Además de las representaciones, [!DNL Assets] permite extraer subrecursos de tipos de archivo comunes, como [!DNL Adobe InDesign] y [!DNL Adobe Illustrator].
 
-Por último, las funciones de versiones de [!DNL Experience Manager] almacenan duplicados de los recursos en el historial de versiones. Puede configurar las versiones que desea depurar con frecuencia. Sin embargo, muchos usuarios eligen conservar versiones en el sistema durante mucho tiempo, lo que consume espacio de almacenamiento adicional.
+Finalmente, las capacidades de versiones de [!DNL Experience Manager] almacene duplicados de los recursos en el historial de versiones. Puede configurar las versiones que desea depurar con frecuencia. Sin embargo, muchos usuarios eligen conservar versiones en el sistema durante mucho tiempo, lo que consume espacio de almacenamiento adicional.
 
 Teniendo en cuenta estos factores, necesita una metodología para calcular un espacio de almacenamiento aceptablemente preciso para almacenar los activos de los usuarios.
 
 1. Determine el tamaño y la cantidad de recursos que se cargarán en el sistema.
-1. Obtenga una muestra representativa de los recursos que se van a cargar en [!DNL Experience Manager]. Por ejemplo, si planea cargar archivos PSD, JPG, AI y PDF en el sistema, necesitará varias imágenes de muestra de cada formato de archivo. Además, estas muestras deben ser representativas de los diferentes tamaños de archivo y complejidades de las imágenes.
+1. Obtenga una muestra representativa de los recursos que se van a cargar en [!DNL Experience Manager]. Por ejemplo, si planea cargar archivos de PSD, JPG, IA y PDF en el sistema, necesitará varias imágenes de muestra de cada formato de archivo. Además, estas muestras deben ser representativas de los diferentes tamaños de archivo y complejidades de las imágenes.
 1. Defina las representaciones que desea utilizar.
-1. Cree las variantes de representación en [!DNL Experience Manager] utilizando las aplicaciones [!DNL ImageMagick] o [!DNL Adobe Creative Cloud]. Además de las representaciones que especifican los usuarios, cree representaciones listas para usar. Para los usuarios que implementan Dynamic Media, puede utilizar el binario IC para generar las representaciones PTIFF que se almacenarán en el Experience Manager.
+1. Cree las representaciones en [!DNL Experience Manager] using [!DNL ImageMagick] o [!DNL Adobe Creative Cloud] aplicaciones. Además de las representaciones que especifican los usuarios, cree representaciones listas para usar. Para los usuarios que implementan Dynamic Media, puede utilizar el binario IC para generar las representaciones PTIFF que se almacenarán en el Experience Manager.
 1. Si planea utilizar subrecursos, genéelos para los tipos de archivo correspondientes.
 1. Compare el tamaño de las imágenes de salida, las representaciones y los subrecursos con las imágenes originales. Permite generar un factor de crecimiento esperado cuando se carga el sistema. Por ejemplo, si genera representaciones y subrecursos con un tamaño combinado de 3 GB después de procesar 1 GB de activos, el factor de crecimiento de la representación es 3.
 1. Determine el tiempo máximo durante el cual se deben mantener las versiones de los recursos en el sistema.
-1. Determine con qué frecuencia se modifican los recursos existentes en el sistema. Si [!DNL Experience Manager] se utiliza como centro de colaboración en flujos de trabajo creativos, la cantidad de cambios es alta. Si solo se cargan en el sistema los recursos finalizados, este número es mucho menor.
+1. Determine con qué frecuencia se modifican los recursos existentes en el sistema. If [!DNL Experience Manager] se utiliza como centro de colaboración en flujos de trabajo creativos, la cantidad de cambios es alta. Si solo se cargan en el sistema los recursos finalizados, este número es mucho menor.
 1. Determine cuántos recursos se cargan en el sistema cada mes. Si no está seguro, compruebe el número de recursos que están disponibles actualmente y divida el número por la edad del recurso más antiguo para calcular un número aproximado.
 
 Al realizar los pasos anteriores, puede determinar lo siguiente:
@@ -48,7 +48,7 @@ Al realizar los pasos anteriores, puede determinar lo siguiente:
 * Número de nuevos activos cargados cada mes.
 * Años de crecimiento para la asignación del espacio de almacenamiento.
 
-Puede especificar estos números en la hoja de cálculo Tamaño de red para determinar el espacio total necesario para el almacén de datos. También es una herramienta útil para determinar el impacto de mantener versiones de recursos o modificar recursos en [!DNL Experience Manager] en el crecimiento del disco.
+Puede especificar estos números en la hoja de cálculo Tamaño de red para determinar el espacio total necesario para el almacén de datos. También es una herramienta útil para determinar el impacto de mantener versiones de recursos o modificar recursos en [!DNL Experience Manager] crecimiento del disco.
 
 Los datos de ejemplo rellenados en la herramienta muestran la importancia de realizar los pasos mencionados. Si cambia el tamaño del almacén de datos basándose únicamente en las imágenes sin procesar que se están cargando (1 TB), es posible que haya subestimado el tamaño del repositorio en un factor de 15.
 
@@ -76,7 +76,7 @@ Se prefiere implementar el servicio AWS S3 para los almacenes de datos compartid
 
 Los almacenes de datos compartidos también aumentan la complejidad de las operaciones, como la colección de residuos. Normalmente, la recolección de basura para un almacén de datos independiente se puede iniciar con un solo clic. Sin embargo, los almacenes de datos compartidos requieren operaciones de barrido de marca en cada miembro que utiliza el almacén de datos, además de ejecutar la colección real en un solo nodo.
 
-Para las operaciones de AWS, la implementación de una única ubicación central (a través de Amazon S3), en lugar de crear una matriz RAID de volúmenes EBS, puede compensar de manera significativa la complejidad y los riesgos operativos del sistema.
+Para las operaciones de AWS, la implementación de una sola ubicación central (a través de Amazon S3), en lugar de crear una matriz RAID de volúmenes EBS, puede compensar de manera significativa la complejidad y los riesgos operativos del sistema.
 
 #### Problemas de rendimiento {#performance-concerns}
 
@@ -103,15 +103,15 @@ Para el repositorio, utilice SSD o discos con un nivel IOPS bueno a 3000. Para e
 
 ## Red {#network}
 
-[!DNL Assets] tiene una serie de casos de uso que hacen que el rendimiento de la red sea más importante que en muchos de nuestros  [!DNL Experience Manager] proyectos. Un cliente puede tener un servidor rápido, pero si la conexión de red no es lo suficientemente grande como para soportar la carga de los usuarios que cargan y descargan recursos del sistema, entonces seguirá pareciendo lenta. Existe una buena metodología para determinar el punto de interrupción en la conexión de red de un usuario a [!DNL Experience Manager] en [Consideraciones sobre los recursos para la experiencia del usuario, el tamaño de las instancias, la evaluación del flujo de trabajo y la topología de red](/help/assets/assets-network-considerations.md).
+[!DNL Assets] tiene una serie de casos de uso que hacen que el rendimiento de la red sea más importante que en muchos de nuestros [!DNL Experience Manager] proyectos. Un cliente puede tener un servidor rápido, pero si la conexión de red no es lo suficientemente grande como para soportar la carga de los usuarios que cargan y descargan recursos del sistema, entonces seguirá pareciendo lenta. Existe una buena metodología para determinar el punto de interrupción en la conexión de red de un usuario a [!DNL Experience Manager] at [Consideraciones sobre los recursos para la experiencia del usuario, el tamaño de las instancias, la evaluación del flujo de trabajo y la topología de la red](/help/assets/assets-network-considerations.md).
 
 ## Restricciones     {#limitations}
 
-Al dimensionar una implementación, es importante tener en cuenta las limitaciones del sistema. Si la implementación propuesta supera estas limitaciones, utilice estrategias creativas, como la partición de los recursos en varias [!DNL Assets] implementaciones.
+Al dimensionar una implementación, es importante tener en cuenta las limitaciones del sistema. Si la implementación propuesta supera estas limitaciones, utilice estrategias creativas, como la partición de los recursos entre varios [!DNL Assets] implementaciones de .
 
-El tamaño del archivo no es el único factor que contribuye a los problemas de falta de memoria (OOM). También depende de las dimensiones de la imagen. Puede evitar problemas con OOM proporcionando un tamaño de pila más alto al iniciar [!DNL Experience Manager].
+El tamaño del archivo no es el único factor que contribuye a los problemas de falta de memoria (OOM). También depende de las dimensiones de la imagen. Puede evitar problemas de OOM proporcionando un tamaño de pila más alto al empezar [!DNL Experience Manager].
 
-Además, puede editar la propiedad de tamaño de umbral del componente `com.day.cq.dam.commons.handler.StandardImageHandler` en Configuration Manager para utilizar un archivo temporal intermedio bueno a cero.
+Además, puede editar la propiedad de tamaño de umbral del `com.day.cq.dam.commons.handler.StandardImageHandler` en Configuration Manager para utilizar un archivo temporal intermedio bueno a cero.
 
 ## Número máximo de recursos {#maximum-number-of-assets}
 
@@ -119,8 +119,8 @@ El límite en el número de archivos que pueden existir en un almacén de datos 
 
 Si las representaciones se generan incorrectamente, utilice la biblioteca Camera Raw. Sin embargo, en este caso, el lado más largo de la imagen no debe ser bueno de 65000 píxeles. Además, la imagen no debe contener más de 512 MP (512 x 1024 x 1024 píxeles). El tamaño del recurso no importa.
 
-Es difícil estimar con precisión el tamaño del archivo TIFF compatible de serie con una pila específica para [!DNL Experience Manager] porque factores adicionales, como el procesamiento de la influencia del tamaño de los píxeles. Es posible que [!DNL Experience Manager] pueda procesar un archivo de tamaño predeterminado de 255 MB, pero no puede procesar un tamaño de archivo de 18 MB porque este último consta de un número inusualmente mayor de píxeles en comparación con el primero.
+Es difícil estimar con precisión el tamaño del archivo TIFF compatible de serie con una pila específica para [!DNL Experience Manager] debido a factores adicionales, como el tamaño de los píxeles, influyen en el procesamiento. Es posible que [!DNL Experience Manager] puede procesar un archivo de tamaño de 255 MB predeterminado, pero no puede procesar un tamaño de archivo de 18 MB porque este último consta de un número inusualmente mayor de píxeles que el primero.
 
 ## Tamaño de los recursos {#size-of-assets}
 
-De forma predeterminada, [!DNL Experience Manager] permite cargar recursos de tamaño de archivo de hasta 2 GB. Para cargar recursos muy grandes en [!DNL Experience Manager], consulte [Configuración para cargar recursos muy grandes](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
+De forma predeterminada, [!DNL Experience Manager] permite cargar recursos de un tamaño de archivo de hasta 2 GB. Para cargar recursos muy grandes en [!DNL Experience Manager], consulte [Configuración para cargar recursos muy grandes](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).

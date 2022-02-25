@@ -1,11 +1,11 @@
 ---
 title: Usar Media Library para la administración básica de recursos digitales
-description: '[!DNL Experience Manager Assets] y Media Library para la administración de recursos.'
+description: '"[!DNL Experience Manager Assets] y Media Library para la administración de recursos".'
 contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
-source-git-commit: 823f36bb7eab6c74a07f90883fa040428d8f8420
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
@@ -17,28 +17,28 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager] platform proporciona diferentes funciones para administrar recursos. Media Library permite a los usuarios cargar un pequeño número de recursos en el repositorio, buscarlos y utilizarlos en las páginas web y realizar tareas sencillas de administración de recursos en los recursos.
 
-Media Library es una solución ligera de administración de activos digitales (DAM) que viene con licencia [!DNL Adobe Experience Manager Sites] de cortesía. [!DNL Sites] es una oferta de administración de contenido web (WCM). Media Library funciona con todas las funcionalidades de Experience Manager.
+Media Library es una solución ligera de administración de activos digitales (DAM) que se suministra de forma gratuita con [!DNL Adobe Experience Manager Sites] licencia. [!DNL Sites] es una oferta de administración de contenido web (WCM). Media Library funciona con todas las funcionalidades de Experience Manager.
 
 [!DNL Adobe Experience Manager Assets] la licencia está disponible por separado para su compra. [!DNL Experience Manager Assets] permite una gestión sólida de los recursos mediante casos de uso empresariales, personalizaciones de metadatos, esquemas, búsquedas e interfaz de usuario, y muchas otras funciones además de las que proporciona Media Library.
 
 ## Requisitos de licencia {#avail-media-library-license}
 
-Los clientes que tienen [!DNL Sites] licencia tienen derecho a utilizar Media Library. Funciona con todos los componentes de [!DNL Experience Manager].
+Clientes que tienen [!DNL Sites] Las licencias de tienen derecho a utilizar Media Library. Funciona con todos los componentes de [!DNL Experience Manager].
 
 Media Library se instala como parte de Sites. No se requiere licencia o paquete adicional más allá de la licencia e instalación de Sites.
 
 ## [!DNL Assets] versus Media Library {#assets-and-media-library}
 
-Experience Manager Assets proporciona funcionalidad de DAM de nivel empresarial. La funcionalidad de los recursos se entrega con [!DNL Experience Manager] en un solo paquete. Sin embargo, los usuarios que no hayan adquirido una licencia de Assets no tienen derecho a utilizar las funciones avanzadas de DAM. Sin licencia de Assets, solo están disponibles [Media Library features](#use-media-library).
+Experience Manager Assets proporciona funcionalidad de DAM de nivel empresarial. La funcionalidad de los recursos se suministra con [!DNL Experience Manager] en un solo paquete. Sin embargo, los usuarios que no hayan adquirido una licencia de Assets no tienen derecho a utilizar las funciones avanzadas de DAM. Sin licencia de Assets, solo [Funciones de Media Library](#use-media-library) están disponibles.
 
-Si desea evitar el uso no intencionado de características [!DNL Assets] de las que no tiene licencia, elimine todos los flujos de trabajo, componentes, taxonomías, opciones específicos de [!DNL Assets] y el administrador [!DNL Assets] de [!DNL Experience Manager]. De hacerlo, evitará que los usuarios utilicen accidentalmente las características [!DNL Assets] que no obtuvo licencia.
+Si desea evitar el uso no intencionado de [!DNL Assets] características que no tiene licencia, luego elimine todas las [!DNL Assets]flujos de trabajo, componentes, taxonomías, opciones específicos y [!DNL Assets] administrador de [!DNL Experience Manager]. Al hacerlo, evitará que sus usuarios utilicen accidentalmente [!DNL Assets] características que no obtuvo licencia.
 
 ## Uso de Media Library {#use-media-library}
 
 Media Library proporciona funciones básicas de DAM para los siguientes casos de uso:
 
 * Páginas web creadas con [!DNL Adobe Experience Manager Sites].
-* Los formularios adaptables y las comunicaciones creadas con [!DNL Adobe Experience Manager Forms].
+* Formularios y comunicaciones adaptables creados mediante [!DNL Adobe Experience Manager Forms].
 * Experiencias de pantalla digital creadas con [!DNL Adobe Experience Manager Screens].
 * [!DNL Assets] API HTTP REST para operaciones sin encabezado.
 
@@ -48,22 +48,22 @@ Media Library proporciona funciones básicas de DAM para los siguientes casos de
 
 -->
 
-Para utilizar la funcionalidad de Media Library, puede utilizar la interfaz de usuario predeterminada [!DNL Experience Manager]. Media Library forma parte de la instalación de [!DNL Experience Manager Sites] y no se requiere ninguna interfaz ni complemento independiente. Con la interfaz existente, los usuarios de Media Library tienen derecho a realizar las siguientes tareas:
+Para utilizar la funcionalidad de Media Library, puede utilizar la variable predeterminada [!DNL Experience Manager] interfaz de usuario. Media Library forma parte del [!DNL Experience Manager Sites] no se requiere interfaz ni complemento separados. Con la interfaz existente, los usuarios de Media Library tienen derecho a realizar las siguientes tareas:
 
 * Cree carpetas para organizar los recursos.
 * Cargar recursos.
 * Publicar recursos.
 * Editar, mover y copiar recursos.
 * Examinar, filtrar y buscar recursos (incluye la búsqueda por similitudes).
-* Agregue valores a y edite los valores en los campos de metadatos, excepto el campo Etiquetas inteligentes , que están disponibles en la pestaña [!UICONTROL Básico] de la página [!UICONTROL Propiedades] de un recurso de forma predeterminada.
+* Agregue valores a y edite los valores en los campos de metadatos, excepto el campo Etiquetas inteligentes , que están disponibles en el campo [!UICONTROL Básico] pestaña de un recurso [!UICONTROL Propiedades] de forma predeterminada.
 * Añada y elimine representaciones estáticas.
 * Descargue carpetas, recursos y representaciones de recursos.
 * Crear versiones de recursos.
 * Cree y realice tareas de revisión en los recursos.
 * Anotar recursos.
-* Agregue recursos a páginas [!DNL Sites] a través del Buscador de contenido.
+* Agregar recursos a [!DNL Sites] a través del Buscador de contenido.
 * Uso [!DNL Content Fragments].
-* Utilice las API de HTTP REST y GraphQL para [!DNL Content Fragments] y los recursos de medios a los que se hace referencia, bajo licencia de Sites.
+* Utilice las API de HTTP REST y GraphQL para [!DNL Content Fragments] y recursos multimedia a los que se hace referencia, bajo licencia de Sites.
 * Integración de Marketing Cloud.
 * Personalice y amplíe la interfaz de usuario de administración de recursos.
 * Acceda al Generador de consultas (API) para ampliar la funcionalidad de búsqueda.
@@ -79,9 +79,9 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 
 >[!IMPORTANT]
 >
->[!DNL Experience Manager Assets] completa muchos casos de uso avanzados de DAM. La licencia de Media Library le da derecho a cumplir únicamente los casos de uso enumerados con Media Library. Si un caso de uso no aparece en la lista, no lo utilice con la licencia de Media Library. Si tiene alguna consulta, póngase en contacto con el servicio de atención al cliente de Adobe.
+>Muchos casos de uso de DAM avanzados los cumple [!DNL Experience Manager Assets]. La licencia de Media Library le da derecho a cumplir únicamente los casos de uso enumerados con Media Library. Si un caso de uso no aparece en la lista, no lo utilice con la licencia de Media Library. Si tiene alguna consulta, póngase en contacto con el servicio de atención al cliente de Adobe.
 
-Tenga en cuenta que no puede utilizar etiquetas inteligentes, [!DNL Asset] vínculo, [!DNL Asset] selector, etiquetado masivo, modificar flujos de trabajo de recursos o la interfaz de usuario estándar [!DNL Adobe Experience Manager] para acceder a Media Library sin [!DNL Assets] licencia.
+Tenga en cuenta que no puede utilizar etiquetas inteligentes, [!DNL Asset] vínculo, [!DNL Asset] selector, etiquetado masivo, modificación de flujos de trabajo de recursos o estándar [!DNL Adobe Experience Manager] interfaz de usuario para acceder a Media Library sin [!DNL Assets] licencia.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
