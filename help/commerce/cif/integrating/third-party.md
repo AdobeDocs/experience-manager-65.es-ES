@@ -3,10 +3,10 @@ title: Integración comercial de AEM y terceros con Commerce Integration Framewo
 description: Los negocios empresariales pueden requerir soluciones de comercio de terceros adicionales para impulsar su tienda. Commerce Integration Framework (CIF) se puede utilizar en estos escenarios de integración para conectar una solución de comercio de terceros a Adobe Experience Manager mediante I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 885d0763fca9ad4eab499081adca9b83875b27e1
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 4%
+source-wordcount: '521'
+ht-degree: 3%
 
 ---
 
@@ -51,3 +51,14 @@ Se recomienda usar [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatf
 La variable [implementación de referencia](https://github.com/adobe/commerce-cif-graphql-integration-reference) es un bueno punto de partida para integrar su solución de comercio. Aunque es compatible con GraphQL, también se puede integrar con cualquier otro tipo de API, como REST.
 
 Esta capa de integración no es necesaria si hay disponible una capa de terceros (como Mulesoft) o si la integración se integra sobre la solución de terceros.
+
+## Conectores pregenerados {#connectors}
+
+Los conectores proporcionan un buen comienzo para los proyectos. Incluyen una conexión específica de solución de comercio y una asignación de API predeterminada. Estos conectores son construidos por terceros y no mantenidos por Adobe. Póngase en contacto con el socio respectivo para obtener información.
+
+* [Comercio SAP](https://github.com/diconium/commerce-cif-graphql-integration-hybris), construido por Diconium
+* [Herramientas comerciales](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), construido por Diconium
+
+>[!TIP]
+>
+>Aunque los conectores ayudan a los proyectos a acelerar la integración comercial, no son complementos. Las soluciones de comercio empresarial generalmente están altamente personalizadas y requieren una integración personalizada. Se requiere un buen conocimiento de la plataforma comercial, los esquemas de Adobe Commerce GraphQL y Adobe I/O Runtime.
