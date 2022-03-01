@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 72b39fd0263347c5bfe98fe2fdaf8999d7d40a96
+source-git-commit: 6b9f0836ae61fdaa1aaf89434d76be5925970088
 workflow-type: tm+mt
-source-wordcount: '3215'
-ht-degree: 24%
+source-wordcount: '3811'
+ht-degree: 21%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 24%
 En las grandes empresas se puede distribuir la infraestructura necesaria para crear sitios web. A veces, las capacidades de creación de sitios web y los recursos digitales utilizados para crear estos sitios web se pueden encontrar en diferentes implementaciones. Una razón puede ser la distribución geográfica de implementaciones existentes que son necesarias para trabajar juntas. Otra razón puede ser que las adquisiciones conducen a una infraestructura heterogénea, incluyendo diferentes [!DNL Experience Manager] versiones, que la empresa principal desea utilizar juntos.
 
 La funcionalidad Recursos conectados admite el caso de uso anterior mediante la integración de [!DNL Experience Manager Sites] y [!DNL Experience Manager Assets]. Los usuarios pueden crear páginas web en [!DNL Sites] que utilizan recursos digitales de una [!DNL Assets] implementaciones.
+
+>[!NOTE]
+>
+>Configure los recursos conectados solo cuando necesite utilizar los recursos disponibles en una implementación remota de DAM en una implementación independiente de Sites para crear páginas web.
 
 ## Información general sobre los recursos conectados {#overview-of-connected-assets}
 
@@ -56,6 +60,18 @@ A continuación se describen las distintas funciones que se usan para configurar
 | [!DNL Assets] administrador | Remoto | [!DNL Experience Manager] `administrators` | `admin` en remoto [!DNL Experience Manager] | Configurar el intercambio de recursos de origen cruzado (CORS). |
 | Usuario DAM | Remoto | `Authors` | `ksaner` en remoto [!DNL Experience Manager] | Función de autor en el remoto [!DNL Experience Manager] implementación. Busque y examine los recursos en los recursos conectados mediante la [!UICONTROL Buscador de contenido]. |
 | Distribuidor DAM (usuario técnico) | Remoto | [!DNL Sites] `Authors` | `ksaner` en remoto [!DNL Experience Manager] | Este usuario presente en la implementación remota lo utiliza [!DNL Experience Manager] servidor local (no el [!DNL Sites] función de autor) para recuperar los recursos remotos, en nombre de [!DNL Sites] autor. Esta función no es la misma que las dos funciones `ksaner` anteriores y pertenece a un grupo de usuarios diferente. |
+
+### Arquitectura de recursos conectados {#connected-assets-architecture}
+
+El Experience Manager le permite conectar una implementación remota de DAM como fuente a varios Experience Manager [!DNL Sites] implementaciones. Puede conectar un máximo de cuatro [!DNL Sites] implementaciones en un DAM remoto de origen. Sin embargo, puede conectar un [!DNL Sites] implementación con solo una implementación remota de DAM.
+
+Los siguientes diagramas ilustran los escenarios admitidos:
+
+![Arquitectura de recursos conectados](assets/connected-assets-architecture.png)
+
+El diagrama siguiente ilustra un escenario no admitido:
+
+![Arquitectura de recursos conectados](assets/connected-assets-architecture-unsupported.png)
 
 ## Configurar una conexión entre [!DNL Sites] y [!DNL Assets] implementaciones {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -116,11 +132,24 @@ Puede comprobar la conectividad entre [!DNL Sites] implementaciones y [!DNL Asse
 ![Prueba de conexión de los recursos conectados configurados [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *Figura: Prueba de conexión de los recursos conectados configurados [!DNL Sites].*
 
-### Configuración de una conexión para recursos de Dynamic Media {#sites-dynamic-media-connected-assets}
+## Uso de recursos de Dynamic Media {#dynamic-media-assets}
 
-Puede configurar una conexión entre [!DNL Sites] implementación y [!DNL Dynamic Media] implementación que permite a los autores de páginas web usar [!DNL Dynamic Media] imágenes en sus páginas web. Durante la creación de páginas web, la experiencia de usar recursos remotos y remotos [!DNL Dynamic Media] las implementaciones siguen siendo las mismas.
 
-Para configurar la funcionalidad Recursos conectados para implementaciones de Dynamic Media, siga estos pasos:
+Con los recursos conectados, puede utilizar recursos de imagen procesados por [!DNL Dynamic Media] desde la implementación remota de DAM en páginas de Sites, y aproveche las funcionalidades de Dynamic Media, como los ajustes preestablecidos de imagen y recorte inteligente.
+
+Para usar [!DNL Dynamic Media] con recursos conectados:
+
+1. Configurar [!DNL Dynamic Media] en la implementación remota de DAM con el modo de sincronización habilitado.
+1. Configurar [Recursos conectados](#configure-a-connection-between-sites-and-assets-deployments).
+1. Configurar [!DNL Dynamic Media] en la instancia Sites con el mismo nombre de empresa que se configura en el DAM remoto. La implementación Sitios debe tener acceso de solo lectura a la cuenta de Dynamic Media para trabajar con recursos conectados. Por lo tanto, asegúrese de desactivar el modo de sincronización en la configuración de Dynamic Media en la instancia de Sites.
+
+>[!CAUTION]
+>
+>Con recursos conectados y [!DNL Dynamic Media] configuración, no puede utilizar [!DNL Dynamic Media] para procesar los recursos locales disponibles en la variable [!DNL Sites] implementación.
+
+## Configuración [!DNL Dynamic Media] {#configure-dynamic-media}
+
+Para configurar [!DNL Dynamic Media] en [!DNL Assets] y [!DNL Sites] implementaciones:
 
 1. Habilitar y configurar [!DNL Dynamic Media] como configuración global en remoto [!DNL Assets] implementación de autor. Para configurar Dynamic Media, consulte [Configuración de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).<br/>
 En remoto [!DNL Assets] implementación, en [!UICONTROL Modo de sincronización de Dynamic Media], seleccione **[!UICONTROL Habilitado de forma predeterminada]**.
@@ -213,6 +242,48 @@ También puede actualizar las propiedades de metadatos de un recurso en DAM remo
 >[!NOTE]
 >
 >Las actualizaciones de los recursos en DAM remoto están disponibles para la [!DNL Sites] implementación solo si es un DAM remoto y [!DNL Sites] implementaciones están activadas [!DNL Experience Manager].
+
+## Preguntas frecuentes  {#frequently-asked-questions}
+
+### Si necesita utilizar recursos disponibles en su [!DNL Sites] implementación?
+
+No es necesario configurar los recursos conectados en ese caso. Puede utilizar los recursos disponibles en la variable [!DNL Sites] implementación.
+
+### ¿Cuándo necesita configurar la función Recursos conectados?
+
+Configure la función Recursos conectados solo cuando necesite utilizar los recursos disponibles en una implementación DAM remota en una [!DNL Sites] implementación.
+
+### Cuántos [!DNL Sites] las implementaciones pueden conectarse a una implementación de DAM remota después de configurar los recursos conectados?
+
+Puede conectar un máximo de cuatro [!DNL Sites] implementaciones en una implementación de DAM remota después de configurar los recursos conectados. Para obtener más información, consulte [Arquitectura de recursos conectados](#connected-assets-architecture).
+
+### Cuántas implementaciones remotas de DAM pueden conectarse a un [!DNL Sites] implementación después de configurar los recursos conectados?
+
+Puede conectar una implementación remota de DAM a un [!DNL Sites] después de configurar los recursos conectados. Para obtener más información, consulte [Arquitectura de recursos conectados](#connected-assets-architecture).
+
+### ¿Puede utilizar los recursos de Dynamic Media desde su [!DNL Sites] implementación después de configurar los recursos conectados?
+
+Después de configurar los recursos conectados, [!DNL Dynamic Media] los recursos están disponibles en [!DNL Sites] implementación en modo de solo lectura. Como resultado, no puede usar [!DNL Dynamic Media] para procesar recursos en la variable [!DNL Sites] implementación. Para obtener más información, consulte [Configuración de una conexión entre las implementaciones de Sites y Dynamic Media](#dynamic-media-assets).
+
+### ¿Puede utilizar recursos de tipos de formato de imagen y documento desde la implementación remota de DAM en la [!DNL Sites] implementación después de configurar los recursos conectados?
+
+Sí, puede utilizar recursos de tipos de formato de imagen y documento desde la implementación remota de DAM en la [!DNL Sites] después de configurar los recursos conectados.
+
+### ¿Puede utilizar fragmentos de contenido y recursos de vídeo desde la implementación remota de DAM en la [!DNL Sites] implementación después de configurar los recursos conectados?
+
+No, no se pueden usar fragmentos de contenido y recursos de vídeo desde la implementación remota de DAM en [!DNL Sites] después de configurar los recursos conectados.
+
+### ¿Puede utilizar recursos de Dynamic Media desde la implementación remota de DAM en la [!DNL Sites] implementación después de configurar los recursos conectados?
+
+Sí, puede configurar y utilizar recursos de Dynamic Media desde la implementación remota de DAM en la [!DNL Sites] después de configurar los recursos conectados. Para obtener más información, consulte [Configuración de una conexión entre las implementaciones de Sites y Dynamic Media](#dynamic-media-assets).
+
+### Después de configurar los recursos conectados, ¿puede realizar las operaciones de actualización, eliminación, cambio de nombre y movimiento en los recursos o carpetas DAM remotos?
+
+Sí, después de configurar los recursos conectados, puede realizar las operaciones de actualización, eliminación, cambio de nombre y movimiento en los recursos o carpetas DAM remotos. Las actualizaciones, con algún retraso, están disponibles automáticamente en la implementación de Sites. Para obtener más información, consulte [Administrar actualizaciones de recursos en DAM remoto](#handling-updates-to-remote-assets).
+
+### Después de configurar los recursos conectados, puede agregar o modificar recursos en su [!DNL Sites] implementación y haga que estén disponibles en la implementación remota de DAM?
+
+Puede agregar recursos al [!DNL Sites] sin embargo, estos recursos no se pueden poner a disposición de la implementación remota de DAM.
 
 ## Limitaciones y prácticas recomendadas {#tip-and-limitations}
 
