@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 498e00ab7838de675771224204726a51e68d4a57
+source-git-commit: 6a89cb79ccfbcec7385832d5682bf61895253718
 workflow-type: tm+mt
-source-wordcount: '2642'
+source-wordcount: '2641'
 ht-degree: 6%
 
 ---
@@ -329,7 +329,7 @@ Revise si utiliza una función o una capacidad en una implementación. Además, 
    >
    >Se está desarrollando una nueva versión del paquete de &quot;definición de índice&quot;. El siguiente vínculo se publicará en cuanto esté disponible.
    >
-   >Hasta entonces, póngase en contacto con el Servicio de atención al cliente para solicitar la corrección.
+   >Hasta entonces, póngase en contacto con el Servicio de atención al cliente para obtener la corrección.
 
    <!--
   Download and install [AEM Sites SEO Index Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) on your AEM instance before downloading the ZIP file to resolve the issue.
