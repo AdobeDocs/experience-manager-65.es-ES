@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 37e7f2552ae712bc23eb3ce1af1b41808f4d1810
+source-git-commit: b02ec58b94e37e0d9902078bbd2387c7b75a208b
 workflow-type: tm+mt
-source-wordcount: '2644'
+source-wordcount: '3071'
 ht-degree: 6%
 
 ---
@@ -137,72 +137,41 @@ Los siguientes problemas se solucionan en [!DNL Dynamic Media]:
 >* [!DNL Experience Manager Forms] lanza los paquetes de complementos una semana después de la fecha de lanzamiento programada del paquete de servicio de [!DNL Experience Manager].
 
 
-<!--
+**Formularios adaptables**
 
-**Adaptive Forms**
+* Cuando un componente de texto de un formulario adaptable contiene una tabla, pegar contenido en el componente resulta en borrar la tabla en el editor (NPR-38078).
 
-* Accessibility – When you set the `Wizard` layout for a panel in an adaptive form, the navigation buttons do not have Aria labels and role (NPR-37613).
+* Un formulario muestra una barra de herramientas solo cuando se abre un formulario guardado (NPR-38060).
 
-* Validations on a date field in an adaptive form does not work, as expected (NPR-37556).
+* La operación de deshacer no funciona correctamente para el editor de reglas (NPR-37973).
 
-* When the label text for the Checkbox and Radio Button components is long, the text does not fit appropriately (NPR-37294).
+* `getAemFormContainer` devuelve un puntero nulo después de instalar AEM Forms 6.5.10.0 (NPR-37881).
 
-* When you apply styling changes to the Thank You message of the AEM Forms Container component, the changes do not replicate in the source adaptive form (NPR-37284).
+* Accesibilidad : El lector de pantalla anuncia la descripción larga de un cuadro de texto en cuanto el tab focus cambia al campo en lugar de anunciar solamente cuando hace clic en el campo (NPR-37855).
 
-* Differences in the value of the `Switch` component on the user interface and in the backend (NPR-37268).
+* Cuando habilita la propiedad Permitir texto enriquecido para un cuadro de texto, hay problemas con la longitud máxima de caracteres permitida (NPR-37825).
 
-* When you use the keyboard keys to navigate to the `Submit` option and press the `Enter` key, you can submit the adaptive form multiple times (CQ-4333993).
+* Problemas con CSS al copiar cualquier componente en un formulario adaptable (NPR-37812).
 
-* The Remove operation for the File Attachment component does not work, as expected (NPR-37376).
+**Comunicación interactiva**
 
-* When a label for a field exceeds 1000 characters in an adaptive form that translates to various languages, the dictionary fails to retrieve the translation of the label (CQ-4329290).
+* La ficha Referencia no enumera ninguna referencia en una comunicación interactiva (NPR-37995).
 
-**Document Services**
+**Servicios de documento**
 
-* An error displays while using the Assembler service (NPR-37606):
+* El ensamblador no incrusta fuentes, como se espera (NPR-38056).
 
-  ```TXT
-    500 Internal Server Error
-  ```
+* No se puede convertir el PDF a PDFA mediante Workbench (NPR-37879).
 
-* When the document attachments are passed to the Assembler service, the following exception displays (NPR-37582):
+**Document Security**
 
-  ```TXT
-    com.adobe.livecycle.assembler.client.ProcessingException: ⁪: Failed to execute the DDX
-  ```
+* El cifrado de PDF no funciona después de actualizar a la versión 1.8.0_281 de java (NPR-37716).
 
-* Missing closing parenthesis from data after converting a PDF document to a PDF-A/1B PDF document (NPR-37608).
+**Base JEE**
 
-**HTML5 Forms**
+* El servicio Generador de PDF multiproceso se bloquea después de una cantidad aleatoria de tiempo para AEM Forms 6.5.7.0 (NPR-38053).
 
-* When you install AEM 6.5.10.0, the HTML preview for an XDP form does not work (NPR-37503, CQ-4331926).
-
-* Text overlapping issues while migrating the PDF forms to HTML 5 forms in various languages (NPR-37173).
-
-**Letters**
-
-* When you submit a letter and reopen it in HTML view, the position of text document fragments does not remain the same (NPR-37307).
-
-**Forms Workflow**
-
-* In case of embedded container workflow, you get multiple workflow completion emails even after selecting the `Notify on Complete of Container Workflow` option (NPR-37280).
-
-**Foundation JEE**
-
-* After installing AEM 6.5 Forms Service Pack 9, the CRX repository URLs are no longer available (NPR-37592).
-
-**Issues fixed in AEM Forms 6.5.11.1**
-
->[!NOTE]
->
->If you have not upgraded to AEM 6.5.11.0 Forms, install the AEM Forms 6.5.11.1 add-on package directly. If you have installed AEM 6.5.11.0 Forms, Adobe recommends to upgrade to AEM 6.5.11.1 Forms.
-
-* Submit actions, Send Email and Invoke an AEM Workflow stop working after installing the Forms 6.5.11.0 add-on package.
-* CreatePDF operation stops converting Microsoft Word documents to PDF documents after installing the Forms 6.5.11.0 add-on package.
-* (JEE Only) Critical security vulnerabilities (CVE-2021-44228 and CVE-2021-45046) reported for Apache Log4j2.
-* (JEE only) Assembler DSC in 6.5.11.0 patch contains incorrect metainfo like specification version and impl version.
-
--->
+* En la versión de AEM Workbench 6.5.0.20210518.1.338459, cuando utiliza un punto de inicio de correo electrónico y edita el nombre de usuario y la contraseña, las configuraciones no se guardan (NPR-37967).
 
 
 Para obtener información sobre las actualizaciones de seguridad, consulte [[!DNL Experience Manager] página boletines de seguridad](https://helpx.adobe.com/security/products/experience-manager.html).
@@ -261,35 +230,31 @@ B. Utilice la variable [API HTTP del Administrador de paquetes](/help/sites-admi
 
 Para saber cuáles son las plataformas certificadas para funcionar con esta versión, consulte la [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-<!-- 
-
-### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+### Instalación del paquete de complementos de Adobe Experience Manager Forms {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
->Skip if you are not using Experience Manager Forms. Fixes in Experience Manager Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+>Omita este paso si no utiliza Experience Manager Forms. Las correcciones en Experience Manager Forms se entregan a través de un paquete de complementos independiente una semana después de la programación [!DNL Experience Manager] Versión de Service Pack.
 
-1. Ensure that you have installed the Adobe Experience Manager Service Pack.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) for your operating system.
-1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-
->[!NOTE]
->
->Experience Manager 6.5.10.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to Experience Manager 6.5.10.0, install the latest version of the package post installation of Forms Add-On Package.
-
-### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+1. Asegúrese de que ha instalado el Service Pack de Adobe Experience Manager.
+1. Descargue el paquete de complementos de Forms correspondiente que aparece en las [versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) para su sistema operativo.
+1. Instale el paquete de complementos de Forms como se describe en [Instalación de paquetes de complementos de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
 >[!NOTE]
 >
->Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
+>Experience Manager 6.5.12.0 incluye una nueva versión de [Paquete de compatibilidad de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). Si utiliza una versión anterior del paquete de compatibilidad de AEM Forms y la actualiza al Experience Manager 6.5.10.0, instale la versión más reciente del paquete tras la instalación del paquete de complementos de Forms.
 
-For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
+### Instalar Adobe Experience Manager Forms en JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+>Omita este paso si no utiliza AEM Forms en JEE. Las correcciones en Adobe Experience Manager Forms en JEE se entregan mediante un instalador independiente.
 
--->
+Para obtener información sobre la instalación del instalador acumulativo para Experience Manager Forms en JEE y la configuración posterior a la implementación, consulte la [notas de la versión](jee-patch-installer-65.md).
+
+>[!NOTE]
+>
+>Después de instalar el instalador acumulativo para Experience Manager Forms en JEE, instale el último paquete de complementos de Forms, elimine el paquete de complementos de Forms de la `crx-repository\install` y reinicie el servidor.
 
 ### UberJar {#uber-jar}
 
