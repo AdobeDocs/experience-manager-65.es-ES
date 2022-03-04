@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 41fb9099ef81b84bcf9fa7b6f153ab1a27953795
+source-git-commit: 45a26c34ba879e1948ace785e861d38cce71e3a6
 workflow-type: tm+mt
-source-wordcount: '3488'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -111,12 +111,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <td>Versiones y actualizaciones menores</td>
   </tr>
   <tr>
-   <td>Máquina virtual IBM® J9 (versión 2.8, JRE 1.8.0)</td>
-   <td>A: Admitido</td>
-   <td>Versiones y actualizaciones menores</td>
-  </tr>
-  <tr>
-   <td>Máquina virtual IBM® J9 (versión 2.9, JRE 1.8.0)<br /> </td>
+   <td>Máquina virtual IBM® J9 (versión 2.9, JRE 1.8.0) IBM® JDK SR6-FP26<br /> </td>
    <td>A: Admitido</td>
    <td>Versiones y actualizaciones menores</td>
   </tr>
@@ -144,25 +139,20 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <td><p>Compatible</p> </td>
   </tr>
   <tr>
-   <td><p>MongoDB Enterprise 4.0 </p> </td>
+   <td><p> MongoDB Enterprise 4.0 (obsoleto) </p> </td>
    <td><p>Repositorio Microkernel</p> </td>
    <td><p>Compatible</p> </td>
   </tr>
   <tr>
-   <td><p>Versión 1 de la base de datos de oracle 12c</p> </td>
-   <td><p>Repositorio Microkernel</p> </td>
-   <td><p>Compatible</p> </td>
-  </tr>
-   <tr>
-   <td><p>Base de datos de oracle 12c versión 2 (12.2.0.1.0)</p> </td>
+   <td><p>MongoDB Enterprise 4.2 </p> </td>
    <td><p>Repositorio Microkernel</p> </td>
    <td><p>Compatible</p> </td>
   </tr>
   <tr>
-   <td>Base de datos de oracle 18c </td>
-   <td>Repositorio Microkernel</td>
-   <td>Compatible</td>
-  </tr> 
+   <td><p>Base de datos de oracle 12c versión 2 (12.2.0.1.0) (obsoleta)</p> </td>
+   <td><p>Repositorio Microkernel</p> </td>
+   <td><p>Compatible</p> </td>
+  </tr>
    <tr>
    <td>Base de datos de oracle 19c (Standard, Real Application Clusters (RAC) y ediciones Enterprise) </td>
    <td>Repositorio de Microsoft </td>
@@ -179,15 +169,20 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <td><p>Compatible</p> </td>
   </tr>
   <tr>
-   <td>IBM DB2 11.1</td>
+   <td>IBM DB2 11.1 (obsoleto)</td>
    <td>Repositorio Microkernel</td>
    <td>R: Compatibilidad restringida</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.35 </td>
+   <td>MySQL 5.7.35 (obsoleto) </td>
    <td>-</td>
    <td>R: Compatibilidad restringida</td>
-  </tr>  
+  </tr>
+  <tr>
+   <td>MySQL 8.0.27</td>
+   <td>-</td>
+   <td>R: Compatibilidad restringida</td>
+  </tr>
  </tbody>
 </table>
 
@@ -218,7 +213,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
   </tr>
   <tr>
    <td>Microsoft SQL Server<br /> </td>
-   <td><p>Controlador JDBC Microsoft® SQL Server 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td>
+   <td><p>Controlador JDBC Microsoft® SQL Server 6.2.1.0 (obsoleto) <br /> </p> <p>sqljdbc6.jar</p> </td>
    <td><p>Se suministra con AEM Forms en la instalación de JEE.</p> </td>
   </tr>
   <tr>
@@ -254,7 +249,12 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <td>Service Pack y actualizaciones críticas</td>
   </tr>
   <tr>
-   <td><p>JBoss® Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup></p> </td>
+   <td><p>JBoss® Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup> (obsoleto) </p> </td>
+   <td><p>A: Admitido</p> </td>
+   <td><p>Parches y parches acumulativos para la versión EAP compatible</p> </td>
+  </tr>
+  <tr>
+   <td><p>JBoss® Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
    <td><p>A: Admitido</p> </td>
    <td><p>Parches y parches acumulativos para la versión EAP compatible</p> </td>
   </tr>
@@ -277,17 +277,17 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
   </tr>
    <tr>
-   <td>Microsoft Windows Server 2019 (64-bit)</td>
+   <td>Microsoft Windows Server 2019 (64 bits)</td>
    <td>A: Admitido</td>
    <td>Service Packs y actualizaciones críticas</td>
   </tr>
   <tr>
    <td>Ubuntu 20.04</td>
    <td>A: Admitido</td>
-   <td>Service packs and critical updates</td>
+   <td>Service Packs y actualizaciones críticas</td>
   </tr>
   <tr>
-   <td>Microsoft Windows Server 2016 (64 bits) (obsoleto)</td>
+   <td> Microsoft Windows Server 2016 (64 bits) (obsoleto)</td>
    <td>A: Admitido</td>
    <td>Service Packs y actualizaciones críticas</td>
   </tr>
@@ -372,12 +372,8 @@ Además, tenga en cuenta los siguientes puntos a la hora de elegir software para
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
   </tr>
   <tr>
-   <td>Directorio unificado de oracle (OUD) 11g Versión 2</td>
-   <td>Service Packs</td>
-  </tr>
-  <tr>
    <td>Microsoft Active Directory 2016</td>
-   <td>Maintenance release and fix packs</td>
+   <td>Versiones de mantenimiento y paquetes de correcciones</td>
   </tr>
   <tr>
    <td><p>IBM® Tivoli Directory Server 6.4</p> </td>
@@ -390,7 +386,6 @@ Además, tenga en cuenta los siguientes puntos a la hora de elegir software para
 
 | Producto |
 | ----------------------- |
-| IBM Lotus Domino 9.0 |
 | Microsoft Exchange 2013 |
 | Microsoft Office 365 |
 
@@ -408,18 +403,14 @@ Además, tenga en cuenta los siguientes puntos a la hora de elegir software para
   </tr>
   <tr>
    <td>Archivo IBM</td>
-   <td>5,2</td>
-  </tr>
-  <tr>
-   <td>Archivo IBM</td>
    <td>5.5.2</td>
   </tr>
   <tr>
-   <td>Servidor de IBM Content Manager</td>
+   <td>Servidor de IBM Content Manager (obsoleto) </td>
    <td>8.5 Paquete de correcciones 2</td>
   </tr>
   <tr>
-   <td>Cliente de IBM Content Manager</td>
+   <td> Cliente de IBM Content Manager (obsoleto)</td>
    <td>8,5 </td>
   </tr>
   <tr>
@@ -463,7 +454,7 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect X7</td>
+   <td>WordPerfect 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
@@ -503,9 +494,9 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
 
 >[!NOTE]
 >
-> PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
+> PDF Generator solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
 >
-> In addition:
+> Además:
 >
 > - El generador de PDF requiere una versión de 32 bits de [Acrobat 2020 Classic track versión 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versión 17.011.30078 para realizar la conversión.
 > - PDF Generator solo admite la versión comercial de 32 bits de Microsoft Office Professional Plus y otro software necesario para la conversión.
@@ -619,7 +610,7 @@ Para conocer los requisitos adicionales, consulte:
    <td>Versión 20.004.30006 o posterior<br /> </td>
   </tr>
   <tr>
-   <td>Acrobat 2017 (Classic track) (Deprecated)</td>
+   <td>Acrobat 2017 (Classic track) (obsoleto)</td>
    <td>Versión 17.011.30078 o posterior<br /> </td>
   </tr>
 
@@ -632,12 +623,12 @@ Para conocer los requisitos adicionales, consulte:
 
 ### Navegadores {#browsers}
 
-#### Desktops {#desktops}
+#### Computadoras de escritorio {#desktops}
 
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Browser (Base)</strong></p> </th>
+   <th><p><strong>Explorador (base)</strong></p> </th>
    <th><p><strong>Nivel de asistencia</strong></p> </th>
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
   </tr>
@@ -683,7 +674,6 @@ Para conocer los requisitos adicionales, consulte:
 >
 > Algunas excepciones relacionadas con el explorador para los escritorios son las siguientes:
 >
-> - La mayoría de los exploradores modernos ya no admiten complementos basados en NPAPI. Para obtener información sobre cómo afecta a las aplicaciones y flujos de trabajo de AEM Forms, consulte [Interrupción de los complementos del explorador NPAPI y su impacto](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 > - Safari solo es compatible con Macintosh OS X.
 > - Workspace es compatible con Safari 5.1 en Macintosh OS X 10.6 y 10.7 con Acrobat DC o versiones posteriores. Para obtener más información sobre la compatibilidad de Safari 5.1 con Adobe Reader, Acrobat, consulte [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
 > - Safari no admite la consola de administración.
@@ -720,7 +710,7 @@ Para conocer los requisitos adicionales, consulte:
 
 >[!NOTE]
 >
-> - Forms Portal is supported on Safari on iPad only.
+> - Forms Portal solo es compatible con Safari en iPad.
 
 
 ### aplicación AEM Forms {#aem-forms-workspace-app}
@@ -731,28 +721,9 @@ La aplicación AEM Forms está disponible en las plataformas siguientes:
 
 | **Plataforma** | **Dispositivos compatibles** |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Apple iOS | Apple iPhone, iPad, iPad Air, and iPad mini running iOS 15.1 and above. |
+| Apple iOS | Apple iPhone, iPad, iPad Air y iPad mini que ejecutan iOS 15.1 y versiones posteriores. |
 | Google Android | Android 5.1 y versiones posteriores. La aplicación AEM Forms está certificada en tabletas Samsung Galaxy de 7 y 10 pulgadas y en teléfonos inteligentes populares. |
 | Microsoft Windows | Dispositivos Microsoft Surface, tabletas, portátiles y equipos de escritorio que ejecutan el sistema operativo Microsoft Windows 10. |
-
-### Flash Player de Adobe {#adobe-flash-player}
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Flash Player (Base)</strong></p> </th>
-   <th><p><strong>Supported Patch Definitions</strong></p> </th>
-  </tr>
-  <tr>
-   <td><p>Flash Player versión más reciente</p> </td>
-   <td><p>Versiones y actualizaciones menores</p> </td>
-  </tr>
- </tbody>
-</table>
-
->[!NOTE]
->
-> Adobe [dejar de actualizar y distribuir el Flash Player a finales de 2020](https://theblog.adobe.com/adobe-flash-update/).
 
 ### Extensión de Adobe Document Security para Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
@@ -780,29 +751,45 @@ Para obtener información adicional sobre parches de terceros, consulte los art�
 
 ## Actualizaciones de plataforma {#platform-updates}
 
+Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.12.0 de AEM Forms del 3 de febrero de 2022:
+
+- MongoDB Enterprise 4.0
+- IBM DB2 11.1
+- Versión 2 de la base de datos de oracle 12c
+- MySQL 5.7.35
+- Controlador JDBC Microsoft® SQL Server 6.2.1.0
+- JBoss® Enterprise Application Platform (EAP) 7.1.4
+- Paquete de correcciones 2 de IBM Content Manager Server 8.5
+- Cliente de IBM Content Manager 8.5
+
 Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.10.0 de AEM Forms del 7 de septiembre de 2021:
 
 - Adobe Acrobat 2017 - [La compatibilidad principal con Adobe Acrobat 2017 finaliza el 6 de junio de 2022](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
-
 - Microsoft Windows Server 2016 (64 bits)
-
 - Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits)
-
 - Microsoft® Office 2016
-
 - OpenOffice 4.1.2
 
 >[!NOTE]
 >
-> Las plataformas marcadas como [en desuso permanecerá como compatible hasta la versión de AEM Forms 6.5 Service Pack 15 (6.5.15.0)](https://helpx.adobe.com/support/programs/eol-matrix.html).
+> Las plataformas marcadas como [en desuso con AEM Forms 6.5.12.0 y 6.5.10.0 siguen siendo compatibles hasta la versión de AEM Forms 6.5 Service Pack 18 (6.5.18.0)](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## Historial de revisiones {#revision-history}
 
+- 03 de febrero de 2022
+
+   - Se ha eliminado la compatibilidad con lo siguiente:
+      - Máquina virtual IBM® J9 (versión 2.8, JRE 1.8.0)
+      - Versión 2 de la base de datos de oracle 12c
+      - Base de datos de oracle 18c
+      - Directorio unificado de oracle (OUD) 11g Versión 2
+      - IBM Lotus Domino 9.0
+      - IBM Filenet 5.2
+      - Flash Player de Adobe
 
 - 10 de octubre de 2021
 
    - Se ha cambiado la versión compatible de iOS para la aplicación AEM Forms a iOS 15.1. La versión anterior era iOS 12.
-
 
 - 7 de septiembre de 2021
    - **Actualizaciones de plataforma**: [!DNL Adobe Experience Manager Forms] en JEE ha agregado compatibilidad con las siguientes plataformas:
@@ -815,5 +802,3 @@ Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.10
    - 9 de septiembre de 2020
 
       - Se ha cambiado la versión compatible de iOS para la aplicación AEM Forms a iOS 12. La versión anterior era iOS 11.
-
-

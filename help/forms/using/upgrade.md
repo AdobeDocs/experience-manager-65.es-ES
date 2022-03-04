@@ -1,8 +1,8 @@
 ---
 title: Actualizar a AEM 6.5 Forms
-seo-title: Actualizar a AEM 6.5 Forms
+seo-title: Upgrade to AEM 6.5 Forms
 description: Puede realizar una actualización directa de AEM 6.3 Forms y AEM 6.4 Forms a AEM 6.5 Forms.
-seo-description: Puede realizar una actualización directa de AEM 6.3 Forms y AEM 6.4 Forms a AEM 6.5 Forms.
+seo-description: You can perform a direct upgrade from AEM 6.3 Forms and AEM 6.4 Forms to AEM 6.5 Forms.
 uuid: 7a38cd72-2d01-4af7-b6a3-00dc34c4f02b
 content-type: reference
 topic-tags: installing
@@ -11,16 +11,16 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 2e6d688818e9cc337444bcda2a49485e9167a113
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Actualizar a AEM 6.5 Forms{#upgrade-to-aem-forms}
 
-AEM 6.5 Forms incluye varias funciones y mejoras nuevas que optimizan la creación, administración y experiencia del usuario con formularios y correspondencia. Para obtener más información sobre las nuevas funciones y mejoras de AEM 6.5 Forms, consulte [Nuevo documento resumen de funciones](../../forms/using/whats-new.md).
+AEM 6.5 Forms incluye varias funciones y mejoras nuevas que optimizan la creación, administración y experiencia del usuario con formularios y correspondencia. Para obtener más información sobre las nuevas funciones y mejoras de AEM 6.5 Forms, consulte [Documento de resumen de nuevas funciones](../../forms/using/whats-new.md).
 
 Puede actualizar su LiveCycle existente o la instalación de AEM Forms para obtener nuevas funciones y mejoras que se ofrecen en AEM 6.5 Forms, mientras mantiene intactos los datos, procesos y recursos existentes. En la actualización, también se conservan los metadatos y el estado de los procesos. Puede elegir una ruta de actualización para comenzar con la actualización.
 
@@ -47,6 +47,7 @@ Puede realizar una actualización directa desde:
 
 * AEM 6.3 Forms en JEE
 * AEM 6.4 Forms en JEE
+* AEM 6.5.x.x en JEE
 
 También puede realizar una actualización multisalto desde
 
@@ -56,6 +57,16 @@ También puede realizar una actualización multisalto desde
 * AEM 6.0 Forms en JEE
 * AEM 6.1 Forms en JEE
 * AEM 6.2 Forms en JEE
+
+AEM 6.5.12.0 Forms en JEE proporciona dos tipos de instaladores: Instalador completo y instalador de parches.
+
+**Instalador completo**: Puede utilizar el instalador completo para configurar nuevas instancias de AEM Forms o realizar actualizaciones de AEM 6.3 Forms en JEE, AEM 6.4 en JEE y la actualización fuera de lugar de AEM 6.5.x.x en JEE a AEM 6.5.12.0 Forms en JEE.
+
+**Instalador de parches**: El instalador de parches es para clientes que ya utilizan AEM versiones 6.5.x.x. Puede utilizar el instalador de parches para actualizar a la versión más reciente de AEM Forms.
+
+La siguiente imagen muestra los escenarios para utilizar el instalador completo y del parche.
+
+![](assets/full-and-patch-installer.png)
 
 <!--
 [Work in Progress]
