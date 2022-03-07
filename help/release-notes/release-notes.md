@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 7649b9a36fbf47ec92bd4c33cd7590d9934aa169
+source-git-commit: 23b5f83e598210f14ee20e8fa5fb01434b93faae
 workflow-type: tm+mt
-source-wordcount: '3204'
+source-wordcount: '3154'
 ht-degree: 6%
 
 ---
@@ -33,7 +33,7 @@ Las principales funciones y mejoras introducidas en [!DNL Adobe Experience Manag
 * Se proporciona compatibilidad con la autenticación basada en IMS para las API de Analytics 2.0 (CQ-4285474, NPR-37803, NPR-37701, NPR-37702, NPR-37703).
 * Compatibilidad de API para fragmento de experiencia de tipo de oferta JSON (NPR-37796).
 * La solicitud de oferta ahora se proporciona para la oferta de eliminación (API de fragmento de experiencia) en IMS (NPR-37668).
-* El repositorio integrado (Apache Jackrabbit Oak) sigue en 1.22.9.
+* The built-in repository (Apache Jackrabbit Oak) still remains at 1.22.9.
 
 La siguiente es la lista de correcciones que se proporcionan en [!DNL Experience Manager] Versión 6.5.12.0.
 
@@ -41,7 +41,7 @@ La siguiente es la lista de correcciones que se proporcionan en [!DNL Experience
 
 Los siguientes problemas se solucionan en [!DNL Sites]:
 
-* El diseño del fragmento de contenido Propiedades se rompe porque las pestañas Básico y Avanzado no tienen márgenes a la izquierda (SITES-4484).
+* Layout of the content fragment Properties is broken as Basic and Advance tabs have no margins to the left (SITES-4484).
 * La opción de cerrar el banner en los fragmentos de contenido, a los que se hace referencia en varias páginas del sitio, no funciona. Este banner informa a los usuarios de que se hace referencia al fragmento de contenido en una o más páginas (SITES-4173).
 * Las casillas de verificación no están alineadas en el cuadro de diálogo Revertir herencia (SITES-3514).
 * La página de plantilla de sitios web y wknd está dañada, ya que los componentes no se cargan y la opción de estructura no está disponible, ya que el servlet pageinfo.json está atascado en LaunchManagerImpl.getLaunchStream (SITES-3489).
@@ -96,7 +96,7 @@ The following accessibility enhancements are available in [!DNL Assets]:
 Los siguientes problemas se solucionan en [!DNL Assets]:
 
 * Al añadir un recurso o una carpeta (contiene `single quote` en el nombre) de Recursos conectados, la ruta de referencia falla y resulta como una excepción (NPR-37712).
-* Al agregar una marca de agua a un recurso, la marca de agua siempre se muestra en color negro independientemente del color definido por el usuario (NPR-37720).
+* When adding watermark to an asset, the watermark is always displayed in black color irrespective of the color defined by the user (NPR-37720).
 * Cuando se utilizan recursos conectados, un usuario no administrador puede buscar un recurso aunque los usuarios no administradores estén restringidos para acceder al repositorio DAM (NPR-37644).
 * Al actualizar los metadatos de recursos mediante la edición masiva, los cambios aplicados a los campos desplegables no se guardan y se restablecen a los valores predeterminados (NPR-37345).
 * Al eliminar una carpeta, se tarda demasiado tiempo, lo que afecta al rendimiento general (NPR-37107).
@@ -110,7 +110,6 @@ Los siguientes problemas se solucionan en [!DNL Assets]:
    * Un menú desplegable obligatorio refleja varios mensajes de error para cada selección del campo multivalor (NPR-37859).
    * Solo la última selección del campo principal se guarda para el campo dependiente no editable (NPR-37858).
    * La lista desplegable dependiente (campo multivalor) refleja el valor predeterminado de forma intermitente para la lista desplegable principal seleccionada (NPR-37791).
-
 
 ### [!DNL Dynamic Media] {#dynamic-media-65120}
 
@@ -128,9 +127,7 @@ Los siguientes problemas se solucionan en [!DNL Dynamic Media]:
 
 * El desplazamiento no funciona como se espera si aplica el filtro en los elementos de la bandeja de entrada (CQ-433594).
 
-
 ### [!DNL Forms] {#forms-65120}
-
 
 >[!NOTE]
 >
@@ -155,7 +152,7 @@ Los siguientes problemas se solucionan en [!DNL Dynamic Media]:
 
 **Modelo de datos de formulario**
 
-* Problema al guardar archivos adjuntos de formularios adaptables conectados a un Modelo de datos de formulario en la base de datos (CQ-4338561).
+* Issue while saving adaptive form attachments connected to a Form Data Model to the database (CQ-4338561).
 
 **Comunicación interactiva**
 
@@ -200,7 +197,6 @@ Los siguientes problemas se solucionan en [!DNL Dynamic Media]:
 
 * Problemas con el explorador de notación XPath/Dot con el paso Establecer variable en el flujo de trabajo en AEM 6.5.9.0 Forms y en AEM 6.5.10.0 Forms (CQ-4336582).
 
-
 Para obtener información sobre las actualizaciones de seguridad, consulte [[!DNL Experience Manager] página boletines de seguridad](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Instalar 6.5.12.0 {#install}
@@ -215,7 +211,7 @@ Para obtener información sobre las actualizaciones de seguridad, consulte [[!DN
 >
 >El Adobe no recomienda quitar o desinstalar el [!DNL Adobe Experience Manager] Paquete 6.5.12.0.
 
-### Instalación del Service Pack {#install-service-pack}
+### Install the service pack {#install-service-pack}
 
 Para instalar el Service Pack en un [!DNL Adobe Experience Manager] 6.5, siga estos pasos:
 
@@ -267,17 +263,13 @@ Para saber cuáles son las plataformas certificadas para funcionar con esta vers
 1. Descargue el paquete de complementos de Forms correspondiente que aparece en las [versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) para su sistema operativo.
 1. Instale el paquete de complementos de Forms como se describe en [Instalación de paquetes de complementos de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
->[!NOTE]
->
->Experience Manager 6.5.12.0 incluye una nueva versión de [Paquete de compatibilidad de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). Si utiliza una versión anterior del paquete de compatibilidad de AEM Forms y la actualiza al Experience Manager 6.5.10.0, instale la versión más reciente del paquete tras la instalación del paquete de complementos de Forms.
-
 ### Instalar Adobe Experience Manager Forms en JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
 >Omita este paso si no utiliza AEM Forms en JEE. Las correcciones en Adobe Experience Manager Forms en JEE se entregan mediante un instalador independiente.
 
-Para obtener información sobre la instalación del instalador acumulativo para Experience Manager Forms en JEE y la configuración posterior a la implementación, consulte la [notas de la versión](jee-patch-installer-65.md).
+For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
 
 >[!NOTE]
 >
