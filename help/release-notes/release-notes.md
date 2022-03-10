@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
 workflow-type: tm+mt
-source-wordcount: '3180'
+source-wordcount: '3318'
 ht-degree: 6%
 
 ---
@@ -150,6 +150,12 @@ Los siguientes problemas se solucionan en [!DNL Dynamic Media]:
 * Cuando habilita la propiedad Permitir texto enriquecido para un cuadro de texto, hay problemas con la longitud máxima de caracteres permitida (NPR-37825).
 
 * Problemas con CSS al copiar cualquier componente en un formulario adaptable (NPR-37812).
+
+* Al generar la traducción de formularios adaptables, el archivo XLIFF generado no contiene la misma secuencia de textos que en el formulario adaptable. En algunos casos es necesario ver el contexto de los textos. Esto no es posible si la secuencia en XLIFF es alfabética. (NPR-37435).
+
+* Cuando se traduce un formulario adaptable, las etiquetas HTML forman parte de la traducción. Si un usuario comete un error y las etiquetas no son válidas, el texto completo no se muestra en el documento de registro. (NPR-37499)
+
+* Cuando se crea y finaliza un formulario adaptable en un idioma base, la traducción la realiza un equipo externo y se importa. Si incluso hay un pequeño cambio de texto como un punto adicional o que falta (.) se realiza en para el idioma base, la traducción completa falta para todos los demás idiomas. (NPR-37189)
 
 **Modelo de datos de formulario**
 
