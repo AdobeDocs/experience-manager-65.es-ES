@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
-source-git-commit: 10e46fe60edcaa116978173b8c61542653f6a551
+source-git-commit: 084e5d561e25dcbaee4489b65f423fc9166832be
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 87%
+source-wordcount: '2000'
+ht-degree: 86%
 
 ---
 
@@ -97,7 +97,7 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 
 Para añadir una actividad:
 
-1. Pulse o haga clic en la marca para la que está creando la actividad y, a continuación, pulse o haga clic en **Crear**. Después, seleccione **Crear actividad**. Si está editando, seleccione la actividad y, a continuación, toque o haga clic en **Editar**.
+1. Toque o haga clic en la marca para la que está creando la actividad y haga clic o pulse **Crear** y luego **Crear actividad**. Si está editando, seleccione la actividad y, a continuación, toque o haga clic en **Editar**.
 1. Proporcione la información siguiente y, a continuación, haga clic o pulse **Siguiente**:
 
    * El nombre de la actividad.
