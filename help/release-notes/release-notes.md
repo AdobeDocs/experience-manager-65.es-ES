@@ -2,7 +2,7 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: b654785af72bbe124f7296ae0f8ecb94e7815234
+source-git-commit: 70280ec60e8bc4cc139a44c379adca7541856997
 workflow-type: tm+mt
 source-wordcount: '3329'
 ht-degree: 6%
@@ -316,7 +316,7 @@ Revise si utiliza una función o una capacidad en una implementación. Además, 
 
 * Si utiliza fragmentos de contenido y GraphQL, se recomienda instalar los siguientes paquetes sobre la versión 6.5.12.0:
 
-   * [AEM 6.5.12 HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (esto reemplaza al SP12 pero puede instalarse sobre el SP12)
+   * [AEM 6.5.12 HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (esto reemplaza al SP12, pero se puede instalar sobre el SP12)
 
    * [AEM fragmento de contenido con el paquete de índice 1.0.3 de GraphQL](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
 
