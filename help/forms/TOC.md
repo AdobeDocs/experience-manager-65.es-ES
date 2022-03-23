@@ -8,10 +8,10 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: 7962d076135bcbac821ff85fd1831ee2c444ff00
+source-git-commit: 290ae422e1136ea28ab21c3031ab66fb5405f1d3
 workflow-type: tm+mt
-source-wordcount: '3772'
-ht-degree: 4%
+source-wordcount: '3775'
+ht-degree: 5%
 
 ---
 
@@ -168,12 +168,11 @@ ht-degree: 4%
    + [Plantillas de formulario adaptables](using/template-editor.md)
    + [Expresiones de formulario adaptables](using/adaptive-form-expressions.md)
    + [Generar documento de registro para formularios adaptables](using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-   + [Mejorar el rendimiento de los formularios grandes con carga diferida](using/lazy-loading-adaptive-forms.md)
+   + [Mejora del rendimiento de los formularios grandes con carga lenta](using/lazy-loading-adaptive-forms.md)
    + [Rellenar previamente campos de formulario adaptables](using/prepopulate-adaptive-form-fields.md)
    + [Uso de expresiones SOM en formularios adaptables](using/using-som-expressions-adaptive-forms.md)
    + [Adición de información de datos de usuario a metadatos de envío de formulario](using/form-submission-metadata.md)
    + [Compatibilidad con XFA en formularios adaptables basados en XDP](using/xfa-api-supported-in-adaptive-form.md)
-   + [Cambio del contenido Página cero en Designer](using/changing-page-zero-content-designer.md)
    + [Conceder acceso al editor de reglas a determinados grupos de usuarios](using/rule-editor-access-user-groups.md)
    + [Uso de AEM flujo de trabajo de traducción para localizar formularios adaptables y documento de registro](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
    + [Automatizar las pruebas de formularios adaptables](using/calvin.md)
@@ -373,6 +372,7 @@ ht-degree: 4%
    + [Habilitar AEM para buscar documentos PDF protegido de seguridad de documentos y documentos de Microsoft Office](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protect un documento en nombre de otro usuario](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
+   + [Ayuda de Forms Designer](using/forms-designer-help.md)
    + [Uso de Designer](http://www.adobe.com/go/learn_aemforms_designer_65)
    + [Tutoriales de inicio rápido de Designer ](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
    + [Muestras de Designer ](http://www.adobe.com/go/learn_aemforms_designer_samples_65)
@@ -380,6 +380,7 @@ ht-degree: 4%
    + [Referencia de secuencias de comandos en Designer](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
    + [Referencia de FormCalc de Designer](http://www.adobe.com/go/learn_aemforms_formCalc_65)
    + [Uso de la firma manuscrita en formularios HTML5](using/scribble-signature.md)
+   + [Cambio del contenido Página cero en Designer](using/changing-page-zero-content-designer.md)
 + Personalizar AEM Forms {#customize-aem-forms}
    + [Marco de aspecto para formularios adaptables y HTML5](using/introduction-widgets.md)
    + [Creación de una plantilla de formulario adaptable personalizada](using/custom-adaptive-forms-templates.md)
@@ -686,4 +687,3 @@ ht-degree: 4%
          + [Configuración y solución de problemas de un AEM Forms en un clúster de servidores JEE](developing/configure-server-cluster.md)
          + [Generación y trabajo con hash en PDF forms dinámicos](developing/hashing-forms.md)
          + [Pasar credenciales mediante encabezados WS-Security](developing/passing-credentials.md)
-
