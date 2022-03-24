@@ -1,15 +1,15 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager 6.5, Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, procese y distribuya recursos digitales.
-source-git-commit: 2706a069bea731da1f84c15e2da02b53a9db4d28
+source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 48%
    + [Trabajar con metadatos de recursos](metadata.md)
    + [Recursos multilingües](multilingual-assets.md)
    + [Uso [!DNL Adobe Stock] recursos en Assets](aem-assets-adobe-stock.md)
-   + [Vista previa de recursos 3D](previewing-3d-assets.md)
+   + [Vista previa de activos 3D](previewing-3d-assets.md)
    + [Revisar recursos y colecciones de carpetas](bulk-approval.md)
    + [Etiquetas inteligentes mejoradas](enhanced-smart-tags.md)
    + [Flujo de actividad en la cronología](activity-stream.md)
@@ -47,7 +47,7 @@ ht-degree: 48%
    + [Configuración de Dynamic Media: modo híbrido](config-dynamic.md)
    + [Migración de Dynamic Media: modo híbrido a Dynamic Media: modo S7](migrate-from-hybrid-to-dms7.md)
    + [Accesibilidad en Dynamic Media](accessibility-dm.md)
-   + [Administrar recursos de Dynamic Media](managing-assets.md)
+   + [Administración de activos de Dynamic Media](managing-assets.md)
    + [Práctica recomendada para optimizar la calidad de las imágenes](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Administración de ajustes preestablecidos de visualizador de Dynamic Media](managing-viewer-presets.md)
    + [Aplicación de ajustes preestablecidos de visualizador de Dynamic Media](viewer-presets.md)
