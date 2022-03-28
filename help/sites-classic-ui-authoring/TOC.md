@@ -1,15 +1,15 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic
 user-guide-description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
-feature: 'Creación  '
+feature: Authoring
 role: User
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 84%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 84%
    + [Gestión básica](author-env-basic-handling.md)
    + [Configuración del entorno de cuenta](author-env-user-props.md)
    + [Seleccionar la IU](author-env-select-ui.md)
-   + [Búsqueda  ](author-env-search.md)
-   + [Su bandeja de entrada  ](author-env-inbox.md)
-   + [Métodos abreviados del teclado para las consolas  ](author-env-keyboard-shortcuts.md)
+   + [Búsqueda](author-env-search.md)
+   + [Su bandeja de entrada](author-env-inbox.md)
+   + [Métodos abreviados del teclado para consolas](author-env-keyboard-shortcuts.md)
 + Creación {#authoring}
    + [Creación de páginas](classic-page-author.md)
    + [Creación: Entorno y herramientas](classic-page-author-env-tools.md)
@@ -44,9 +44,9 @@ ht-degree: 84%
    + [Métodos abreviados de teclado al editar páginas](classic-page-author-keyboard-shortcuts.md)
 + Funciones de sitio y de página {#siteandpage}
    + [Creación de páginas con fragmentos de contenido](classic-page-author-content-fragments.md)
-   + [Diseño adaptable ](classic-page-author-responsive-layout.md)
+   + [Diseño adaptable](classic-page-author-responsive-layout.md)
    + [Uso de versiones de página  ](classic-page-author-work-with-versions.md)
-   + [Uso de etiquetas  ](classic-feature-tags.md)
+   + [Uso de etiquetas](classic-feature-tags.md)
    + [Scaffolding](classic-feature-scaffolding.md)
    + [Configurar componentes en modo Diseño](classic-page-author-design-mode.md)
    + [Adición de funciones de Search&amp;Promote a la página](classic-feature-search-promote.md)

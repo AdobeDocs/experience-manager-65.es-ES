@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guía de implementación de AEM 6.5
 breadcrumb-title: Guía de implementación
 user-guide-description: Obtenga más información sobre la instalación, la implementación y la arquitectura de Adobe Experience Manager 6.5, incluida nuestra implementación en la nube de Adobe Managed Services.
-feature: Implementación
+feature: Deploying
 role: Architect
-source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 16%
+source-wordcount: '327'
+ht-degree: 18%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 16%
 # Guía del usuario de implementación de AEM 6.5 {#deploying}
 
 + [Guía del usuario sobre implementación](home.md)
-+ Introducción a la plataforma de AEM {#introduction}
++ Introducción a la plataforma AEM {#introduction}
    + [Introducción a la plataforma AEM](platform.md)
    + [Requisitos técnicos](technical-requirements.md)
    + [Elementos de almacenamiento en AEM 6.5](storage-elements-in-aem-6.md)
@@ -80,7 +80,7 @@ ht-degree: 16%
    + [Actualización de código y personalizaciones](upgrading-code-and-customizations.md)
    + [Pasos de actualización para las instalaciones del servidor de aplicaciones](app-server-upgrade.md)
    + [Lista de paquetes obsoletos desinstalados después de la actualización](obsolete-bundles.md)
-+ Reestructuración del repositorio {#restructuring}
++ Reestructuración de repositorios {#restructuring}
    + [Reestructuración de repositorios en AEM 6.5](repository-restructuring.md)
    + [Reestructuración común de repositorios en AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Reestructuración del repositorio de sitios en AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
