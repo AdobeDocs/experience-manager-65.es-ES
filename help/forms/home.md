@@ -1,11 +1,10 @@
 ---
 title: Guía de Adobe Experience Manager 6.5 de Forms
-seo-title: Guía de AEM 6.5 Forms
-description: Esta guía abarca todas las tareas de AEM Forms, como la creación, administración, publicación y actualización de formularios digitales.
-seo-description: Abarca todas las tareas de AEM Forms, incluida la creación, administración, publicación y actualización de formularios digitales.
+seo-title: AEM 6.5 Forms Guide
+description: Utilice esta guía de AEM 6.5 para crear, administrar, publicar y actualizar formularios digitales. Busque ayuda para instalarlos, actualizarlos y configurarlos, y aprenda a crear formularios adaptables.
+seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 33%
@@ -14,7 +13,7 @@ ht-degree: 33%
 
 # Guía de Adobe Experience Manager 6.5 de Forms
 
-Esta guía abarca todas las tareas de AEM Forms, como la creación, administración, publicación y actualización de formularios digitales.
+Utilice esta guía de AEM 6.5 para crear, administrar, publicar y actualizar formularios digitales. Busque ayuda para instalarlos, actualizarlos y configurarlos, y aprenda a crear formularios adaptables.
 
 ## Artículos clave AEM
 

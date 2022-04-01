@@ -1,23 +1,21 @@
 ---
-title: AEM Contenido y comercio
-description: Recursos informativos y enlaces a la documentación sobre contenido y comercio de AEM
-translation-type: tm+mt
-source-git-commit: 809789d268deb4d77bbb5101265a1a0d7268b748
+title: AEM Content and Commerce
+description: Conozca cómo usar y administrar AEM Contenido y comercio, con nuestros útiles artículos sobre integraciones y cómo empezar a usar AEM Tienda.
+exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 30%
+source-wordcount: '367'
+ht-degree: 31%
 
 ---
 
-
 # AEM Contenido y comercio {#commerce-guide}
 
-En esta página se muestran los recursos informativos relacionados con AEM comercio.
+Conozca cómo usar y administrar AEM Contenido y comercio, con nuestros útiles artículos sobre integraciones y cómo empezar a usar AEM Tienda.
 
 >[!NOTE]
 >
->Para obtener AEM contenido y comercio con AEM como Cloud Service, consulte [AEM Contenido y comercio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html).
-
+>Para obtener AEM contenido y comercio con AEM as a Cloud Service, consulte [AEM Contenido y comercio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=es).
 
 ## Artículos clave de Comercio {#key-articles}
 

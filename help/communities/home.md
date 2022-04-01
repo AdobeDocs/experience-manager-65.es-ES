@@ -1,20 +1,19 @@
 ---
 title: Guía de Adobe Experience Manager 6.5 Communities
-seo-title: Guía de Adobe Experience Manager 6.5 Communities
-description: Esta guía abarca todas las tareas de AEM Communities, como la creación de experiencias en línea, como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales.
-seo-description: Abarca todas las tareas de AEM Communities, como la creación de experiencias en línea, como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales.
+seo-title: Adobe Experience Manager 6.5 Communities Guide
+description: Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. Examine nuestra guía que explica cómo implementar, administrar, desarrollar y crear comunidades.
+seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 29%
+source-wordcount: '381'
+ht-degree: 38%
 
 ---
 
 # Guía de Adobe Experience Manager 6.5 Communities
 
-Esta guía abarca todas las tareas de AEM Communities, como la creación de experiencias en línea, como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales.
+Cree experiencias en línea como foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales. Examine nuestra guía que explica cómo implementar, administrar, desarrollar y crear comunidades.
 
 ## Artículos clave AEM
 

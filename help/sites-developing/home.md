@@ -1,20 +1,19 @@
 ---
 title: Guía del usuario sobre desarrollo en AEM 6.5
-seo-title: Guía del usuario sobre desarrollo en AEM 6.5
-description: Esta guía explica cómo crear una instancia de AEM.
-seo-description: Abarca cómo crear la instancia de AEM.
-translation-type: tm+mt
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+seo-title: AEM 6.5 Developing User Guide
+description: Aprenda a crear la instancia de AEM. Obtenga más información sobre la plataforma y los componentes y busque información sobre las herramientas de desarrollo y la personalización.
+seo-description: Covers how to build out your AEM instance.
+exl-id: 4413f5e8-7e52-4ea7-8be3-5717b780a6e2
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 41%
+source-wordcount: '371'
+ht-degree: 33%
 
 ---
 
-
 # Guía del usuario sobre desarrollo en AEM 6.5
 
-Esta guía explica cómo crear una instancia de AEM.
+Aprenda a crear la instancia de AEM. Obtenga más información sobre la plataforma y los componentes y busque información sobre las herramientas de desarrollo y la personalización.
 
 ## Artículos clave AEM
 

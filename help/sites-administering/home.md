@@ -1,20 +1,17 @@
 ---
 title: Guía del usuario de administración de AEM 6.5
-seo-title: Guía del usuario de administración de AEM 6.5
-description: AEM
-seo-description: AEM
-translation-type: tm+mt
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+description: Obtenga información sobre la administración de AEM 6.5. Estas guías tratan sobre las características del sitio, las operaciones de implementación, las funciones de seguridad, la personalización, la integración y mucho más.
+exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 38%
+source-wordcount: '358'
+ht-degree: 34%
 
 ---
 
-
 # Guía del usuario de administración de AEM 6.5
 
-Esta guía abarca todas AEM tareas de administración.
+Obtenga información sobre la administración de AEM 6.5. Estas guías tratan sobre las características del sitio, las operaciones de implementación, las funciones de seguridad, la personalización, la integración y mucho más.
 
 ## Artículos clave
 

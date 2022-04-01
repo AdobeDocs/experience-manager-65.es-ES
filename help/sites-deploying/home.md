@@ -1,16 +1,14 @@
 ---
 title: Guía del usuario de implementación de AEM 6.5
-seo-title: Guía del usuario de implementación de AEM 6.5
-description: Esta guía abarca todas AEM tareas de implementación, como instalar e implementar AEM.
-seo-description: Abarca todas AEM tareas de implementación, como instalar e implementar AEM.
-translation-type: tm+mt
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+seo-title: AEM 6.5 Deploying User Guide
+description: Obtenga información sobre la instalación e implementación de Adobe Experience Manager 6.5 y sobre su arquitectura, incluida nuestra implementación en la nube de Adobe Managed Services.
+exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 30%
+source-wordcount: '391'
+ht-degree: 31%
 
 ---
-
 
 # Guía del usuario de implementación de AEM 6.5
 

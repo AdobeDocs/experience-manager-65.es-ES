@@ -1,20 +1,19 @@
 ---
 title: Guía del usuario de administración de AEM 6.5
-seo-title: Guía del usuario de administración de AEM 6.5
-description: 'Esta guía explica cómo administrar correctamente un proyecto de AEM '
-seo-description: Abarca cómo administrar correctamente un proyecto de AEM
+seo-title: AEM 6.5 Managing User Guide
+description: 'Descubra cómo administrar un proyecto de AEM correctamente, con la asistencia de recursos clave y una recopilación completa de las guías del usuario de AEM 6.5. '
+seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 36%
+source-wordcount: '367'
+ht-degree: 34%
 
 ---
 
 # Guía del usuario de administración de AEM 6.5
 
-Esta guía explica cómo administrar correctamente un proyecto de AEM
+Descubra cómo administrar un proyecto de AEM correctamente, con la asistencia de recursos clave y una recopilación completa de las guías del usuario de AEM 6.5.
 
 ## Artículos clave AEM
 

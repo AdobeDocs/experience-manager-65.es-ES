@@ -1,20 +1,19 @@
 ---
 title: Guía del usuario de creación de AEM 6.5
-seo-title: Guía del usuario de creación de AEM 6.5
-description: 'Esta guía explica los conceptos de creación en AEM. '
-seo-description: 'Explica los conceptos de creación en AEM. '
-translation-type: tm+mt
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+seo-title: AEM 6.5 Authoring User Guide
+description: Explore los conceptos clave para crear contenido y crear contenido en AEM 6.5. También encontrará información sobre el uso de etiquetas, plantillas y otras funciones de página.
+seo-description: Explains the concepts of authoring in AEM.
+exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 36%
+source-wordcount: '373'
+ht-degree: 33%
 
 ---
 
-
 # Guía del usuario de creación de AEM 6.5
 
-Esta guía explica los conceptos de creación en AEM.
+Explore los conceptos clave para crear contenido y crear contenido en AEM 6.5. También encontrará información sobre el uso de etiquetas, plantillas y otras funciones de página.
 
 ## Artículos clave AEM
 
