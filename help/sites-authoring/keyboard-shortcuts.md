@@ -1,22 +1,21 @@
 ---
 title: 'Métodos abreviados del teclado para las consolas  '
-seo-title: 'Métodos abreviados del teclado para las consolas  '
+seo-title: Keyboard Shortcuts for Consoles
 description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
-seo-description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
+seo-description: Save time when authoring by using these keyboard shortcuts
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
-translation-type: tm+mt
-source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
+source-git-commit: ad8f98d22c2f2095ee92741331170be996103d95
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '378'
 ht-degree: 100%
 
 ---
-
 
 # Métodos abreviados del teclado para las consolas  {#keyboard-shortcuts-for-consoles}
 
@@ -42,7 +41,7 @@ Los siguientes métodos abreviados están disponibles para las consolas Sitios, 
 | Consolas | `?` | Ayuda de métodos abreviados del teclado |
 |  | `/` | Invocar la [búsqueda](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Alterne qué opción de [selector de carril](/help/sites-authoring/basic-handling.md#rail-selector) se debe ver |
-|  | &grave; | Ocultar raíl |
+|  | ``` ` ``` | Ocultar raíl |
 |  | `e` | Editar |
 |  | `p` | Propiedades |
 |  | `m` | Mover |
@@ -96,4 +95,3 @@ Puede desactivar los métodos abreviados del teclado en dos ubicaciones:
 >[!NOTE]
 >
 >Las teclas de método abreviado de navegación para la vista de columnas y el árbol de contenido siempre están activas.
-
