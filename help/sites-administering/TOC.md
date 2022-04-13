@@ -8,9 +8,9 @@ breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
 feature: Administering
 role: Admin
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: a1821ab210b3735ca5b59b075659ff30d5872b8e
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '632'
 ht-degree: 29%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 29%
    + [Configuración de la sincronización de Live Copy](msm-sync.md)
    + [Creación y sincronización de Live Copies](msm-livecopy.md)
    + [Conflictos de implementación de MSM](msm-rollout-conflicts.md)
+   + [Solución de problemas y preguntas más frecuentes sobre MSM](troubleshoot-msm.md)
    + [Prácticas recomendadas de MSM](msm-best-practices.md)
    + [Traducción de contenido para sitios multilingües](translation.md)
    + [Administración de proyectos de traducción](tc-manage.md)
