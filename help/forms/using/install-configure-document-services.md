@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 8fcbdb4d00a5ddffadf5b4a099454dc795999769
+source-git-commit: 81008366b7d5edaf1d2f83ccd2ba6237c2e96fad
 workflow-type: tm+mt
-source-wordcount: '5100'
+source-wordcount: '5107'
 ht-degree: 2%
 
 ---
@@ -193,7 +193,7 @@ Si está utilizando el sistema operativo basado en UNIX, instale los siguientes 
 
 Las configuraciones enumeradas en la sección de configuraciones previas a la instalación solo se aplican al servicio Generador de PDF. Si no está configurando el servicio Generador de PDF, puede omitir la sección de configuración previa a la instalación.
 
-### Instalación de Adobe Acrobat y aplicaciones de terceros {#install-adobe-acrobat-and-third-party-applications}
+### Install Adobe Acrobat and third-party applications {#install-adobe-acrobat-and-third-party-applications}
 
 Si va a usar el servicio Generador de PDF para convertir formatos de archivo nativos como Microsoft® Word, Microsoft® Excel, Microsoft® PowerPoint, OpenOffice, WordPerfect X7 y Adobe Acrobat a documentos PDF, asegúrese de que estas aplicaciones estén instaladas en el servidor AEM Forms.
 
@@ -304,13 +304,13 @@ Cambie la configuración del centro de confianza de Microsoft® Office para perm
 
 1. Abra una aplicación de Microsoft® Office. Por ejemplo, Microsoft® Word. Vaya a **[!UICONTROL Archivo]**> **[!UICONTROL Opciones]**. Aparecerá el cuadro de diálogo de opciones.
 
-1. Haga clic en **[!UICONTROL Centro de confianza]** y haga clic en **[!UICONTROL Configuración del centro de confianza]**.
-1. En el **[!UICONTROL Configuración del Centro de confianza]**, haga clic en **[!UICONTROL Configuración de bloque de archivos]**.
+1. Click **[!UICONTROL Trust Center]**, and click **[!UICONTROL Trust Center Settings]**.
+1. In the **[!UICONTROL Trust Center settings]**, click **[!UICONTROL File Block Settings]**.
 1. En el **[!UICONTROL Tipo de archivo]** lista, anular selección **[!UICONTROL Apertura]** para el tipo de archivo que debe permitirse al servicio Generador de PDF convertir en documentos PDF.
 
 ### (Solo Windows) Conceder el privilegio Replace a process level token {#grant-the-replace-a-process-level-token-privilege}
 
-La cuenta de usuario utilizada para iniciar el servidor de aplicaciones requiere la variable **Reemplazar un token de nivel de proceso** . La cuenta del sistema local tiene la variable **Reemplazar un token de nivel de proceso** de forma predeterminada. Para los servidores que se ejecutan con un usuario del grupo Administradores locales, el privilegio debe otorgarse explícitamente. Siga estos pasos para conceder el privilegio:
+The user account used to start the application server requires the **Replace a process level token** privilege. The local system account has the **Replace a process level token** privilege by default. Para los servidores que se ejecutan con un usuario del grupo Administradores locales, el privilegio debe otorgarse explícitamente. Siga estos pasos para conceder el privilegio:
 
 1. Abra el Editor de directivas de grupo para Microsoft® Windows. Para abrir el Editor de directivas de grupo, haga clic en **[!UICONTROL Inicio]**, tipo **gpedit.msc** en el cuadro Iniciar búsqueda y haga clic en **[!UICONTROL Editor de directivas de grupo]**.
 1. Vaya a **[!UICONTROL Política de equipo local]** > **[!UICONTROL Configuración del equipo]** > **[!UICONTROL Configuración de Windows]** > **[!UICONTROL Configuración de seguridad]** > **[!UICONTROL Políticas locales]** > **[!UICONTROL Asignación de derechos de usuario]** y edite el **[!UICONTROL Reemplazar un token de nivel de proceso]** e incluya el grupo Administradores.
@@ -379,14 +379,14 @@ Copie la fuente Unicode en cualquiera de los siguientes directorios según corre
 >
 
 
-## Instalación del paquete de complementos de AEM Forms {#install-aem-forms-add-on-package}
+## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
 
-El paquete de complementos de AEM Forms es una aplicación implementada en AEM. El paquete contiene AEM Forms Document Services y otras funciones de AEM Forms. Realice los siguientes pasos para instalar el paquete:
+AEM Forms add-on package is an application deployed onto AEM. El paquete contiene AEM Forms Document Services y otras funciones de AEM Forms. Realice los siguientes pasos para instalar el paquete:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
 1. Pulse **[!UICONTROL Adobe Experience Manager]**, disponible en el menú del encabezado.
-1. En el **[!UICONTROL Filtros]** sección:
-   1. Select **[!UICONTROL Forms]** de la variable **[!UICONTROL Solución]** lista desplegable.
+1. In the **[!UICONTROL Filters]** section:
+   1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
    2. Seleccione la versión y el tipo del paquete. También puede usar la variable **[!UICONTROL Descargas de búsqueda]** para filtrar los resultados.
 1. Pulse el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos de EULA]** y toque **[!UICONTROL Descargar]**.
 1. Abra [Administrador de paquetes](https://docs.adobe.com/content/help/es-ES/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
@@ -438,7 +438,7 @@ Se necesita una cuenta de usuario local para ejecutar el servicio Generador de P
 
 ### Configuración de la configuración de tiempo de espera {#configure-the-time-out-settings}
 
-1. En [Administrador de configuración de AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
+1. En [Administrador de configuración AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
 
    Agregue lo siguiente a **[!UICONTROL Propiedades personalizadas.name]** y haga clic en **[!UICONTROL Guardar]**. Establece el tiempo de espera de respuesta pendiente (también conocido como tiempo de espera de cliente CORBA) en 600 segundos.
 
@@ -481,9 +481,9 @@ En Microsoft® Windows, el servicio Generador de PDF utiliza Adobe Acrobat para 
 1. Haga doble clic en un documento PDF del sistema. Cuando Acrobat se inicia por primera vez, aparecen los cuadros de diálogo Iniciar sesión, Pantalla de bienvenida y EULA. Descartar estos cuadros de diálogo para todos los usuarios configurados para usar el Generador de PDF.
 1. Ejecute el archivo por lotes de la utilidad Generador de PDF para configurar Acrobat para el servicio Generador de PDF:
 
-   1. Apertura [Administrador de paquetes AEM](http://localhost:4502/crx/packmgr/index.jsp) y descargue el `adobe-aemfd-pdfg-common-pkg-[version].zip` del Administrador de paquetes.
-   1. Descomprima el archivo .zip descargado. Abra el símbolo del sistema con privilegios administrativos.
-   1. Vaya a la `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\adobe-aemfd-pdfg-common-pkg-[version]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directorio. Ejecute el siguiente archivo por lotes:
+   1. Open [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) and download the `adobe-aemfd-pdfg-common-pkg-[version].zip` file from the Package Manager.
+   1. Unzip the downloaded .zip file. Abra el símbolo del sistema con privilegios administrativos.
+   1. Navigate to the `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\adobe-aemfd-pdfg-common-pkg-[version]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directory. Ejecute el siguiente archivo por lotes:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -491,9 +491,9 @@ En Microsoft® Windows, el servicio Generador de PDF utiliza Adobe Acrobat para 
 
 1. Ejecutar [Herramienta de preparación del sistema (SRT)](#SRT) para validar la instalación de Acrobat.
 
-### (Solo Windows) Configure la ruta principal para la conversión de HTML a PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
+### (Windows only) Configure primary route for HTML to PDF conversion {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-El servicio Generador de PDF ofrece varias rutas para convertir archivos HTML en documentos PDF: Webkit, Acrobat WebCapture (solo Windows) y PhantomJS. Adobe recomienda utilizar la ruta PhantomJS porque tiene la capacidad de gestionar contenido dinámico y no depende de bibliotecas de 32 bits, JDK de 32 bits o no requiere fuentes adicionales. Además, la ruta PhantomJS no requiere acceso raíz o sudo para ejecutar la conversión.
+The PDF Generator service provides multiple routes to convert HTML files to PDF documents: Webkit, Acrobat WebCapture (Windows only), and PhantomJS. Adobe recomienda utilizar la ruta PhantomJS porque tiene la capacidad de gestionar contenido dinámico y no depende de bibliotecas de 32 bits, JDK de 32 bits o no requiere fuentes adicionales. Also, PhantomJS route does not require sudo or root access to run the conversion.
 
 La ruta principal predeterminada para la conversión de HTML a PDF es Webkit. Para cambiar la ruta de conversión:
 
@@ -581,7 +581,7 @@ El servicio Assembler depende del servicio Reader Extensions, del servicio Signa
 
 1. Vaya a `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.
 
-1. Ejecute el siguiente comando para enumerar todas las bibliotecas que PhantomJS requiere para la conversión de HTML a PDF.
+1. Run the following command to list all libraries that PhantomJS requires for HTML to PDF conversion.
 
    `ldd phantomjs`
 
@@ -677,13 +677,23 @@ Si tiene problemas incluso después de corregir todos los problemas notificados 
 
 +++
 
-+++HTMLtoPDF
+++HTML a problemas de conversión de PDF
 
 * Asegúrese de que los directorios de fuentes se añaden en la interfaz de usuario de configuración de PDF Generator.
 
-+++
+**Linux y Solaris (ruta de conversión PhantomJS)**
 
-+++Linux® y Solaris™(conversión WebKit)
+* Asegúrese de que la biblioteca de 32 bits esté disponible (libicudata.so.42) para la conversión HTMLoPDF basada en Webkit y que las bibliotecas de 64 bits (libicudata.so.42) estén disponibles para la conversión HTMLoPDF basada en PhantomJS.
+
+* Ejecute el siguiente comando para enumerar las bibliotecas que faltan para phantomjs:
+
+   ```
+   ldd phantomjs | grep not
+   ```
+
+* Asegúrese de que la variable de entorno JAVA_HOME_32 señala a la ubicación correcta.
+
+**Linux® y Solaris™ (ruta de conversión WebKit)**
 
 * Asegúrese de que los directorios `/usr/lib/X11/fonts` y `/usr/share/fonts` existe. Si los directorios no existen, cree un vínculo simbólico desde `/usr/share/X11/fonts` a `/usr/lib/X11/fonts` y otro vínculo simbólico de `/usr/share/fonts` a `/usr/share/X11/fonts`.
 
@@ -724,27 +734,13 @@ Si tiene problemas incluso después de corregir todos los problemas notificados 
 
 +++
 
-+++Linux® y Solaris(PhantomJS)HTMLtoPDF
-
-* Asegúrese de que la biblioteca de 32 bits esté disponible (libicudata.so.42) para la conversión HTMLoPDF basada en Webkit y que las bibliotecas de 64 bits (libicudata.so.42) estén disponibles para la conversión HTMLoPDF basada en PhantomJS.
-
-* Ejecute el siguiente comando para enumerar las bibliotecas que faltan para phantomjs:
-
-```
-ldd phantomjs | grep not
-```
-
-* Asegúrese de que la variable de entorno JAVA_HOME_32 señala a la ubicación correcta.
-
-+++
-
 +++ No se puede agregar un usuario del Generador de PDF (PDFG)
 
 * Asegúrese de que Microsoft® Visual C++ 2008 x86, Microsoft® Visual C++ 2010 x86, Microsoft® Visual C++ 2012 x86 y Microsoft® Visual C++ 2013 x86 (32 bits) redistribuibles están instalados en Windows.
 
 +++
 
-+++Fallas en las pruebas de automatización
++++Fallas en la prueba de automatización
 
 * Para Microsoft® Office y OpenOffice, realice al menos una conversión manualmente (como cada usuario) para asegurarse de que no aparece ningún cuadro de diálogo durante la conversión. Si aparece algún diálogo, descártelo. No debería aparecer ningún cuadro de diálogo de este tipo durante la conversión automatizada.
 
@@ -752,7 +748,7 @@ ldd phantomjs | grep not
 
 +++
 
-+++Fallas en las conversiones de varios usuarios
++++Fallas en la conversión de varios usuarios
 
 * Compruebe los registros del servidor para comprobar si la conversión está fallando para un usuario en particular.(Process Explorer puede ayudarle a comprobar el proceso de ejecución de distintos usuarios)
 
