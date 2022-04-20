@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 81008366b7d5edaf1d2f83ccd2ba6237c2e96fad
+source-git-commit: 0f4207564645ef7ba7da9064e971248b59f5a9b3
 workflow-type: tm+mt
-source-wordcount: '5107'
-ht-degree: 2%
+source-wordcount: '5381'
+ht-degree: 1%
 
 ---
 
@@ -193,12 +193,13 @@ Si está utilizando el sistema operativo basado en UNIX, instale los siguientes 
 
 Las configuraciones enumeradas en la sección de configuraciones previas a la instalación solo se aplican al servicio Generador de PDF. Si no está configurando el servicio Generador de PDF, puede omitir la sección de configuración previa a la instalación.
 
-### Install Adobe Acrobat and third-party applications {#install-adobe-acrobat-and-third-party-applications}
+### Instalación de Adobe Acrobat y aplicaciones de terceros {#install-adobe-acrobat-and-third-party-applications}
 
 Si va a usar el servicio Generador de PDF para convertir formatos de archivo nativos como Microsoft® Word, Microsoft® Excel, Microsoft® PowerPoint, OpenOffice, WordPerfect X7 y Adobe Acrobat a documentos PDF, asegúrese de que estas aplicaciones estén instaladas en el servidor AEM Forms.
 
 >[!NOTE]
 >
+>* Si el servidor de AEM Forms se encuentra en un entorno sin conexión o seguro y Internet no está disponible para activar Adobe Acrobat, consulte [Activación sin conexión](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) para obtener instrucciones para activar estas instancias de Adobe Acrobat.
 >* Adobe Acrobat, Microsoft® Word, Excel y Powerpoint solo están disponibles para Microsoft® Windows. Si está utilizando el sistema operativo basado en UNIX, instale OpenOffice para convertir archivos de texto enriquecido y archivos compatibles de Microsoft® Office a documentos de PDF.
 >* Descarte todos los cuadros de diálogo que se muestran después de instalar Adobe Acrobat y software de terceros para todos los usuarios configurados para utilizar el servicio Generador de PDF.
 >* Inicie todo el software instalado al menos una vez. Descartar todos los cuadros de diálogo de todos los usuarios configurados para utilizar el servicio Generador de PDF.
@@ -304,13 +305,13 @@ Cambie la configuración del centro de confianza de Microsoft® Office para perm
 
 1. Abra una aplicación de Microsoft® Office. Por ejemplo, Microsoft® Word. Vaya a **[!UICONTROL Archivo]**> **[!UICONTROL Opciones]**. Aparecerá el cuadro de diálogo de opciones.
 
-1. Click **[!UICONTROL Trust Center]**, and click **[!UICONTROL Trust Center Settings]**.
-1. In the **[!UICONTROL Trust Center settings]**, click **[!UICONTROL File Block Settings]**.
+1. Haga clic en **[!UICONTROL Centro de confianza]** y haga clic en **[!UICONTROL Configuración del centro de confianza]**.
+1. En el **[!UICONTROL Configuración del Centro de confianza]**, haga clic en **[!UICONTROL Configuración de bloque de archivos]**.
 1. En el **[!UICONTROL Tipo de archivo]** lista, anular selección **[!UICONTROL Apertura]** para el tipo de archivo que debe permitirse al servicio Generador de PDF convertir en documentos PDF.
 
 ### (Solo Windows) Conceder el privilegio Replace a process level token {#grant-the-replace-a-process-level-token-privilege}
 
-The user account used to start the application server requires the **Replace a process level token** privilege. The local system account has the **Replace a process level token** privilege by default. Para los servidores que se ejecutan con un usuario del grupo Administradores locales, el privilegio debe otorgarse explícitamente. Siga estos pasos para conceder el privilegio:
+La cuenta de usuario utilizada para iniciar el servidor de aplicaciones requiere la variable **Reemplazar un token de nivel de proceso** . La cuenta del sistema local tiene la variable **Reemplazar un token de nivel de proceso** de forma predeterminada. Para los servidores que se ejecutan con un usuario del grupo Administradores locales, el privilegio debe otorgarse explícitamente. Siga estos pasos para conceder el privilegio:
 
 1. Abra el Editor de directivas de grupo para Microsoft® Windows. Para abrir el Editor de directivas de grupo, haga clic en **[!UICONTROL Inicio]**, tipo **gpedit.msc** en el cuadro Iniciar búsqueda y haga clic en **[!UICONTROL Editor de directivas de grupo]**.
 1. Vaya a **[!UICONTROL Política de equipo local]** > **[!UICONTROL Configuración del equipo]** > **[!UICONTROL Configuración de Windows]** > **[!UICONTROL Configuración de seguridad]** > **[!UICONTROL Políticas locales]** > **[!UICONTROL Asignación de derechos de usuario]** y edite el **[!UICONTROL Reemplazar un token de nivel de proceso]** e incluya el grupo Administradores.
@@ -379,20 +380,20 @@ Copie la fuente Unicode en cualquiera de los siguientes directorios según corre
 >
 
 
-## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
+## Instalación del paquete de complementos de AEM Forms {#install-aem-forms-add-on-package}
 
-AEM Forms add-on package is an application deployed onto AEM. El paquete contiene AEM Forms Document Services y otras funciones de AEM Forms. Realice los siguientes pasos para instalar el paquete:
+El paquete de complementos de AEM Forms es una aplicación implementada en AEM. El paquete contiene AEM Forms Document Services y otras funciones de AEM Forms. Realice los siguientes pasos para instalar el paquete:
 
 1. Abra [Distribución de software](https://experience.adobe.com/downloads). Necesitará un Adobe ID para iniciar sesión en la distribución de software.
 1. Pulse **[!UICONTROL Adobe Experience Manager]**, disponible en el menú del encabezado.
-1. In the **[!UICONTROL Filters]** section:
-   1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
+1. En el **[!UICONTROL Filtros]** sección:
+   1. Select **[!UICONTROL Forms]** de la variable **[!UICONTROL Solución]** lista desplegable.
    2. Seleccione la versión y el tipo del paquete. También puede usar la variable **[!UICONTROL Descargas de búsqueda]** para filtrar los resultados.
 1. Pulse el nombre del paquete aplicable a su sistema operativo, seleccione **[!UICONTROL Aceptar términos de EULA]** y toque **[!UICONTROL Descargar]**.
-1. Abra [Administrador de paquetes](https://docs.adobe.com/content/help/es-ES/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
+1. Abra [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
-   También puede descargar el paquete a través del vínculo directo enumerado en la [Versiones de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) artículo.
+   También puede descargar el paquete a través del vínculo directo enumerado en la [Versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) artículo.
 
 1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No detenga el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere hasta que los mensajes ServiceEvent REGISTER y ServiceEvent UNREGISTER dejen de aparecer en la variable `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log y el registro es estable.
 
@@ -481,9 +482,9 @@ En Microsoft® Windows, el servicio Generador de PDF utiliza Adobe Acrobat para 
 1. Haga doble clic en un documento PDF del sistema. Cuando Acrobat se inicia por primera vez, aparecen los cuadros de diálogo Iniciar sesión, Pantalla de bienvenida y EULA. Descartar estos cuadros de diálogo para todos los usuarios configurados para usar el Generador de PDF.
 1. Ejecute el archivo por lotes de la utilidad Generador de PDF para configurar Acrobat para el servicio Generador de PDF:
 
-   1. Open [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) and download the `adobe-aemfd-pdfg-common-pkg-[version].zip` file from the Package Manager.
-   1. Unzip the downloaded .zip file. Abra el símbolo del sistema con privilegios administrativos.
-   1. Navigate to the `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\adobe-aemfd-pdfg-common-pkg-[version]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directory. Ejecute el siguiente archivo por lotes:
+   1. Apertura [Administrador de paquetes AEM](http://localhost:4502/crx/packmgr/index.jsp) y descargue el `adobe-aemfd-pdfg-common-pkg-[version].zip` del Administrador de paquetes.
+   1. Descomprima el archivo .zip descargado. Abra el símbolo del sistema con privilegios administrativos.
+   1. Vaya a la `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\adobe-aemfd-pdfg-common-pkg-[version]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directorio. Ejecute el siguiente archivo por lotes:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -491,9 +492,9 @@ En Microsoft® Windows, el servicio Generador de PDF utiliza Adobe Acrobat para 
 
 1. Ejecutar [Herramienta de preparación del sistema (SRT)](#SRT) para validar la instalación de Acrobat.
 
-### (Windows only) Configure primary route for HTML to PDF conversion {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
+### (Solo Windows) Configure la ruta principal para la conversión de HTML a PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-The PDF Generator service provides multiple routes to convert HTML files to PDF documents: Webkit, Acrobat WebCapture (Windows only), and PhantomJS. Adobe recomienda utilizar la ruta PhantomJS porque tiene la capacidad de gestionar contenido dinámico y no depende de bibliotecas de 32 bits, JDK de 32 bits o no requiere fuentes adicionales. Also, PhantomJS route does not require sudo or root access to run the conversion.
+El servicio Generador de PDF ofrece varias rutas para convertir archivos HTML en documentos PDF: Webkit, Acrobat WebCapture (solo Windows) y PhantomJS. Adobe recomienda utilizar la ruta PhantomJS porque tiene la capacidad de gestionar contenido dinámico y no depende de bibliotecas de 32 bits, JDK de 32 bits o no requiere fuentes adicionales. Además, la ruta PhantomJS no requiere acceso raíz o sudo para ejecutar la conversión.
 
 La ruta principal predeterminada para la conversión de HTML a PDF es Webkit. Para cambiar la ruta de conversión:
 
@@ -581,7 +582,7 @@ El servicio Assembler depende del servicio Reader Extensions, del servicio Signa
 
 1. Vaya a `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.
 
-1. Run the following command to list all libraries that PhantomJS requires for HTML to PDF conversion.
+1. Ejecute el siguiente comando para enumerar todas las bibliotecas que PhantomJS requiere para la conversión de HTML a PDF.
 
    `ldd phantomjs`
 
@@ -759,6 +760,34 @@ Si tiene problemas incluso después de corregir todos los problemas notificados 
 * Para Microsoft® Office y OpenOffice, realice al menos una conversión manualmente (como cada usuario) para asegurarse de que no aparece ningún cuadro de diálogo durante la conversión. Si aparece algún diálogo, descártelo. No debería aparecer ningún cuadro de diálogo de este tipo durante la conversión automatizada.
 
 * Realice una conversión de muestra.
+
++++
+
++++La licencia de Adobe Acrobat instalada en el servidor de AEM Forms caduca
+
+* Si tiene una licencia existente de Adobe Acrobat y esta ha caducado, [Descargue la versión más reciente de Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html)y migrando su número de serie. Antes [migración del número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+
+   * Utilice los siguientes comandos para generar prov.xml y volver a serializar la instalación existente usando el archivo prov.xml en lugar de los comandos proporcionados en [migración del número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) artículo numérico.
+
+      * Generar prov.xml
+
+         ```
+         adobe_prtk --tool=VolumeSerialize --generate --serial=<serialnum> [--leid=<LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=<Absolute path to prov.xml>]
+         ```
+
+      * Serialice el paquete por volumen (vuelva a serializar la instalación existente usando el archivo prov.xml y la nueva serie): Ejecute el siguiente comando desde la carpeta de instalación de PRTK como administrador para serializar y activar los paquetes implementados en los equipos cliente:
+
+         ```
+         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
+         ```
+
+* Para instalaciones a gran escala, utilice el [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el instalador e impleméntelo en todos los equipos de su organización.
+
++++
+
++++ AEM Forms Server se encuentra en un entorno seguro o sin conexión y Internet no está disponible para activar Acrobat.
+
+* Puede conectarse en un plazo de 7 días a partir del primer lanzamiento del producto de Adobe para realizar una activación y registro en línea o utilizar un dispositivo con acceso a Internet y el número de serie de su producto para completar este proceso. Para obtener instrucciones detalladas, consulte [Activación sin conexión](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
 +++
 
