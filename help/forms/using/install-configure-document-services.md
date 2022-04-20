@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 0f4207564645ef7ba7da9064e971248b59f5a9b3
+source-git-commit: a23b3648b2687bcdbb46ea5e0bb42090822e1dd9
 workflow-type: tm+mt
-source-wordcount: '5381'
+source-wordcount: '5420'
 ht-degree: 1%
 
 ---
@@ -203,7 +203,7 @@ Si va a usar el servicio Generador de PDF para convertir formatos de archivo nat
 >* Adobe Acrobat, Microsoft® Word, Excel y Powerpoint solo están disponibles para Microsoft® Windows. Si está utilizando el sistema operativo basado en UNIX, instale OpenOffice para convertir archivos de texto enriquecido y archivos compatibles de Microsoft® Office a documentos de PDF.
 >* Descarte todos los cuadros de diálogo que se muestran después de instalar Adobe Acrobat y software de terceros para todos los usuarios configurados para utilizar el servicio Generador de PDF.
 >* Inicie todo el software instalado al menos una vez. Descartar todos los cuadros de diálogo de todos los usuarios configurados para utilizar el servicio Generador de PDF.
->
+>* [Comprobar la fecha de caducidad de sus números de serie de Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) y establecer una fecha para actualizar la licencia o [migrar su número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) en función de la fecha de caducidad.
 
 
 Después de instalar Acrobat, abra Microsoft® Word. En el **Acrobat** , haga clic en **Crear PDF** y convertir un archivo .doc o .docx disponible en su equipo a un documento PDF. Si la conversión se realiza correctamente, AEM Forms está listo para usar Acrobat con el servicio Generador de PDF.
@@ -439,7 +439,7 @@ Se necesita una cuenta de usuario local para ejecutar el servicio Generador de P
 
 ### Configuración de la configuración de tiempo de espera {#configure-the-time-out-settings}
 
-1. En [Administrador de configuración AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
+1. En [Administrador de configuración de AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
 
    Agregue lo siguiente a **[!UICONTROL Propiedades personalizadas.name]** y haga clic en **[!UICONTROL Guardar]**. Establece el tiempo de espera de respuesta pendiente (también conocido como tiempo de espera de cliente CORBA) en 600 segundos.
 
