@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a23b3648b2687bcdbb46ea5e0bb42090822e1dd9
+source-git-commit: 4b3327ed46024662813bb538f8338c59e508e10e
 workflow-type: tm+mt
-source-wordcount: '5420'
+source-wordcount: '5330'
 ht-degree: 1%
 
 ---
@@ -225,11 +225,6 @@ Establezca variables de entorno para el Kit de desarrollo de Java de 32 y 64 bit
    <td><p>C:\Program Files\Java\jdk1.8.0_74</p> </td>
   </tr>
   <tr>
-   <td><p><strong>JDK (32 bits)</strong></p> </td>
-   <td><p>JAVA_HOME_32</p> </td>
-   <td><p>C:\Program Files (x86)\Java\jdk1.8.0_74</p> </td>
-  </tr>
-  <tr>
    <td><p><strong>Adobe Acrobat</strong></p> </td>
    <td><p>Acrobat_PATH</p> </td>
    <td><p>C:\Program Files (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td>
@@ -439,7 +434,7 @@ Se necesita una cuenta de usuario local para ejecutar el servicio Generador de P
 
 ### Configuración de la configuración de tiempo de espera {#configure-the-time-out-settings}
 
-1. En [Administrador de configuración de AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
+1. En [Administrador de configuración AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
 
    Agregue lo siguiente a **[!UICONTROL Propiedades personalizadas.name]** y haga clic en **[!UICONTROL Guardar]**. Establece el tiempo de espera de respuesta pendiente (también conocido como tiempo de espera de cliente CORBA) en 600 segundos.
 
@@ -596,7 +591,20 @@ El servicio Assembler depende del servicio Reader Extensions, del servicio Signa
 
 La herramienta de preparación del sistema comprueba si el equipo está configurado correctamente para ejecutar las conversiones del Generador de PDF. La herramienta genera el informe en la ruta especificada. Para ejecutar la herramienta:
 
-1. Cree un archivo de configuración para la herramienta de preparación del sistema. Por ejemplo, srt_config.yaml. El formato del archivo es:
+1. Abra el símbolo del sistema. Vaya a la `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` carpeta.
+
+1. Ejecute el siguiente comando desde el símbolo del sistema:
+
+   `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
+
+   El comando genera el informe y también crea el archivo srt_config.yaml.
+
+   >[!NOTE]
+   >
+   > * Si la herramienta de preparación del sistema informa de que el archivo pdfgen.api no está disponible en la carpeta de complementos de Acrobat, copie el archivo pdfgen.api de la `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` para `[Acrobat_root]\Acrobat\plug_ins` directorio.
+   >
+   > * Puede utilizar el archivo srt_config.yaml para configurar varias configuraciones de . El formato del archivo es:
+
 
    ```
       # =================================================================
@@ -623,19 +631,13 @@ La herramienta de preparación del sistema comprueba si el equipo está configur
       outputDir:
    ```
 
-1. Abra el símbolo del sistema. Vaya a la `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` carpeta. Ejecute el siguiente comando desde el símbolo del sistema:
-
-   `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
-
-   >[!NOTE]
-   >
-   >Si la herramienta de preparación del sistema informa de que el archivo pdfgen.api no está disponible en la carpeta de complementos de Acrobat, copie el archivo pdfgen.api de la `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` para `[Acrobat_root]\Acrobat\plug_ins` directorio.
-
 1. Vaya a `[Path_of_reports_folder]`. Abra el archivo SystemReadinessTool.html . Compruebe el informe y corrija los problemas mencionados.
 
 ## Solución de problemas
 
 Si tiene problemas incluso después de corregir todos los problemas notificados por la herramienta SRT, realice las siguientes comprobaciones:
+
+Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta de preparación del sistema](#SRT) no informa de ningún error.
 
 +++ Adobe Acrobat
 
@@ -644,9 +646,7 @@ Si tiene problemas incluso después de corregir todos los problemas notificados 
 * Asegúrese de que la variable [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) el archivo por lotes se ejecutó con privilegios de administrador.
 * Asegúrese de que se agrega un usuario de Generador de PDF en la interfaz de usuario de configuración del PDF.
 * Asegúrese de que la variable [Reemplazar un token de nivel de proceso](#grant-the-replace-a-process-level-token-privilege) se agrega para el usuario de Generador de PDF.
-* (Para instalaciones basadas en servidor de aplicaciones) Asegúrese de que el servidor de aplicaciones se esté ejecutando como servicio.
-* Asegúrese de que los usuarios tengan permisos de lectura y escritura en el directorio temporal y temporal del sistema operativo del Generador de PDF. Por ejemplo, `<crx-quickstart-home>\temp` y `C:\Windows\Temp`
-* Asegúrese de que el complemento Acrobat PDFMaker Office COM esté habilitado para las aplicaciones de Microsoft Office. Si el complemento no está habilitado, ejecute la reparación de Adobe Acrobat y ejecute el [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) y reinicie el servidor de AEM Forms.
+* Asegúrese de que el complemento Acrobat PDFMaker Office COM esté habilitado para las aplicaciones de Microsoft Office.
 
 +++
 
@@ -654,12 +654,9 @@ Si tiene problemas incluso después de corregir todos los problemas notificados 
 
 **Microsoft® Windows**
 
-* Asegúrese de que [versión compatible](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Open Office está instalado y los cuadros de diálogo de apertura se cancelan para todas las aplicaciones.
+* Asegúrese de que [versión compatible](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office está instalado y los cuadros de diálogo de apertura se cancelan para todas las aplicaciones.
 * Asegúrese de que se agrega un usuario de Generador de PDF en la interfaz de usuario de configuración del PDF.
-* Asegúrese de que [Herramienta de preparación del sistema](#SRT) no informa de ningún error.
 * Asegúrese de que el usuario del Generador de PDF sea miembro del grupo de administradores y de que la variable [Reemplazar un token de nivel de proceso](#grant-the-replace-a-process-level-token-privilege) se establece para el usuario.
-* Asegúrese de que la variable `\Windows\SysWOW64\config\systemprofile\Deskop` la carpeta existe. Si la carpeta no existe, créela.
-* Otorgar control total en `\Windows\SysWOW64\config\systemprofile`, `<crx-quickstart-home>\temp`y `\Windows\Temp` carpetas al usuario de Generador de PDF.
 * Asegúrese de que el usuario está configurado en la interfaz de usuario del Generador de PDF y realice las siguientes acciones:
    1. Inicie sesión en Microsoft® Windows con el usuario del Generador de PDF.
    1. Abra las aplicaciones de Microsoft® Office u Open Office y cancele todos los cuadros de diálogo.
@@ -673,7 +670,6 @@ Si tiene problemas incluso después de corregir todos los problemas notificados 
 
 * Asegúrese de que [versión compatible](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Open Office está instalado, los cuadros de diálogo de apertura se cancelan para todas las aplicaciones y las aplicaciones de Office se inician correctamente.
 * Crear una variable de entorno `OpenOffice_PATH` y configúrelo para que apunte a que la instalación de OpenOffice está configurada en la [consola](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o el perfil dt (árbol de dispositivos).
-* Utilice Java™ de 32 bits para iniciar AEM Forms Server.
 * Si hay problemas al instalar OpenOffice, asegúrese de que [Bibliotecas de 32 bits](#extrarequirements) se requiere para la instalación de OpenOffice.
 
 +++
@@ -709,7 +705,7 @@ Si tiene problemas incluso después de corregir todos los problemas notificados 
 * Asegúrese de que las últimas versiones de las bibliotecas lib curl, libcrypto y libssl de 32 bits estén instaladas en el sistema. Crear también enlaces simbólicos `/usr/lib/libcurl.so` (o libcurl.a para AIX®), `/usr/lib/libcrypto.so` (o libcrypto.a para AIX®) y `/usr/lib/libssl.so` (o libssl.a para AIX®) que señala a las últimas versiones (32 bits) de las bibliotecas correspondientes.
 
 * Realice los siguientes pasos para el proveedor de IBM® SSL Socket:
-   1. Copie el archivo java.security de `<WAS_Installed_JAVA>\jre\lib\security` a cualquier ubicación de su servidor de AEM Forms. La ubicación predeterminada es Ubicación predeterminada es = `<WAS_Installed>\Appserver\java_1.7_64\jre\lib\security`.
+   1. Copie el archivo java.security de `<WAS_Installed_JAVA>\jre\lib\security` a cualquier ubicación de su servidor de AEM Forms. La ubicación predeterminada es Ubicación predeterminada es = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
    1. Edite el archivo java.security en la ubicación copiada y cambie las fábricas SSL Socket predeterminadas con fábricas JSSE2 (utilice fábricas JSSE2 en lugar de WebSphere®).
 
@@ -737,7 +733,7 @@ Si tiene problemas incluso después de corregir todos los problemas notificados 
 
 +++ No se puede agregar un usuario del Generador de PDF (PDFG)
 
-* Asegúrese de que Microsoft® Visual C++ 2008 x86, Microsoft® Visual C++ 2010 x86, Microsoft® Visual C++ 2012 x86 y Microsoft® Visual C++ 2013 x86 (32 bits) redistribuibles están instalados en Windows.
+* Asegúrese de que Microsoft® Visual C++ 2012 x86 y Microsoft® Visual C++ 2013 x86 (32 bits) redistribuibles estén instalados en Windows.
 
 +++
 
