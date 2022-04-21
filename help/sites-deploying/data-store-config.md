@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 9d8387934e2eab61191bd66c625a9fa52b686e37
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3471'
 ht-degree: 1%
 
 ---
@@ -206,7 +206,7 @@ Si necesita actualizar el conector 1.10.x S3 a una nueva versión (por ejemplo, 
    >
    >Los nombres de archivo presentados anteriormente se utilizan únicamente con fines ilustrativos.
 
-1. Descargue la versión más reciente del paquete de funciones 1.8.x desde el [Repositorio de Adobes](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Descargue la versión más reciente del paquete de funciones 1.8.x desde el [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/com.adobe.granite.oak.s3connector).
 1. Descomprima el contenido en una carpeta independiente y, a continuación, vaya a `jcr_root/libs/system/install/15`.
 1. Copiar los archivos jar en **&lt;aem-install>**/crx-quickstart/install/15 en la carpeta de instalación de AEM.
 1. Inicie AEM y compruebe la funcionalidad del conector.
@@ -286,7 +286,7 @@ Se comprobará la caché local para el registro del archivo o blob solicitado an
 
 **Carga asíncrona**
 
-La caché admite cargas asíncronas a DataStore. Los archivos se montan localmente, en la caché (en el sistema de archivos), y un trabajo asincrónico comienza a cargar el archivo. El número de cargas asincrónicas está limitado por el tamaño de la caché de ensayo. El tamaño de la caché de ensayo se configura usando la variable `stagingSplitPercentage` parámetro. Este parámetro define el porcentaje de tamaño de caché que se utilizará para la caché de ensayo. Además, el porcentaje de caché disponible para las descargas se calcula como **(100 - `stagingSplitPercentage`) *`cacheSize`**.
+La caché admite cargas asíncronas a DataStore. Los archivos se montan localmente, en la caché (en el sistema de archivos), y un trabajo asincrónico comienza a cargar el archivo. El número de cargas asincrónicas está limitado por el tamaño de la caché de ensayo. El tamaño de la caché de ensayo se configura usando la variable `stagingSplitPercentage` parámetro. Este parámetro define el porcentaje de tamaño de caché que se utilizará para la caché de ensayo. Además, el porcentaje de caché disponible para las descargas se calcula como **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
 Las cargas asincrónicas son multiproceso y el número de subprocesos se configura usando la variable `uploadThreads` parámetro.
 
