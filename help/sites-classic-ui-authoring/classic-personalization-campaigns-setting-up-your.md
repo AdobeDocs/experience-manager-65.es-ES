@@ -1,8 +1,8 @@
 ---
 title: Configuración de la campaña
-seo-title: Configuración de la campaña
+seo-title: Setting up your campaign
 description: La configuración de una campaña nueva requiere crear una marca para incluir las campañas, crear una campaña para incluir experiencias y, por último, definir las propiedades para la campaña nueva.
-seo-description: La configuración de una campaña nueva requiere crear una marca para incluir las campañas, crear una campaña para incluir experiencias y, por último, definir las propiedades para la campaña nueva.
+seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
 uuid: 244a150e-7b5e-4eff-bd15-e3b04be6a3e9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
-translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
+source-git-commit: a2623df38bcd683a6a43bdaf3483e11e40ac4a68
 workflow-type: tm+mt
-source-wordcount: '2289'
-ht-degree: 95%
+source-wordcount: '2257'
+ht-degree: 94%
 
 ---
-
 
 # Configuración de la campaña{#setting-up-your-campaign}
 
@@ -65,7 +64,7 @@ Para crear una nueva marca:
 
 1. Haga clic en **Crear**. La nueva marca se mostrará en MCM (con un icono predeterminado).
 
-### Definición de las propiedades de la nueva marca  {#defining-the-properties-for-your-new-brand}
+### Definición de las propiedades de la nueva marca {#defining-the-properties-for-your-new-brand}
 
 1. Desde **Campañas** en el panel izquierdo, seleccione el icono de la nueva marca en el panel derecho y haga clic en **Propiedades...**
 
@@ -75,7 +74,7 @@ Para crear una nueva marca:
 
 1. Haga clic en **Aceptar** para guardar.
 
-### Creación de una nueva campaña   {#creating-a-new-campaign}
+### Creación de una nueva campaña  {#creating-a-new-campaign}
 
 Para crear una nueva campaña:
 
@@ -89,7 +88,7 @@ Para crear una nueva campaña:
 
 1. Haga clic en **Crear**. La nueva campaña se mostrará en el MCM.
 
-### Definición de propiedades para la nueva campaña  {#defining-the-properties-for-your-new-campaign}
+### Definición de las propiedades de la nueva campaña {#defining-the-properties-for-your-new-campaign}
 
 Configure las propiedades de campaña que controlan el comportamiento:
 
@@ -108,12 +107,12 @@ Configure las propiedades de campaña que controlan el comportamiento:
 
 1. Haga clic en **Aceptar** para guardar.
 
-### Creación de una nueva experiencia  {#creating-a-new-experience}
+### Creación de una nueva experiencia {#creating-a-new-experience}
 
 El procedimiento de creación de una nueva experiencia dependerá del tipo de experiencia:
 
 * [Creación de un teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
-* [Creación de un boletín](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
+* [Creación de una newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
 * [Creación de una oferta de Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetoffer)
 
 >[!NOTE]
@@ -122,7 +121,7 @@ El procedimiento de creación de una nueva experiencia dependerá del tipo de ex
 >
 >Se recomienda utilizar MCM para crear experiencias.
 
-### Configuración de la nueva experiencia  {#configuring-your-new-experience}
+### Configuración de la nueva experiencia {#configuring-your-new-experience}
 
 Ahora que ha creado la estructura básica de la experiencia, deberá continuar con las acciones siguientes, según el tipo de experiencia:
 
@@ -150,7 +149,7 @@ Si ya dispone de experiencias, puede añadir un touchpoint directamente desde la
 
 1. Haga clic en **Añadir Touchpoint...** para abrir el cuadro de diálogo. Especifique la experiencia que desee añadir:
 
-   ![chlimage_1-29](assets/chlimage_1-21.png)
+   ![imagen_1-21](assets/chlimage_1-21.png)
 
 1. Haga clic en **Aceptar** para guardar.
 
@@ -173,7 +172,7 @@ En el panel, puede acceder a todos los leads haciendo clic en **Leads** en el pa
 >
 >Para agregar o modificar avatares de usuarios, abra la nube de secuencias de clic (clickstream cloud) (Ctrl+Alt+c), cargue el perfil y haga clic en **Editar**.
 
-### Creación de nuevos posibles clientes  {#creating-new-leads}
+### Creación de nuevos posibles clientes {#creating-new-leads}
 
 Una vez que haya creado los nuevos posibles clientes, asegúrese de [activarlos](#activating-or-deactivating-leads) para que pueda hacer el seguimiento de su actividad en caso de que se publique la instancia y personalicen su experiencia.
 
@@ -222,12 +221,8 @@ Para importar posibles clientes desde una lista separada por comas:
    >
    >Si lo prefiere, puede importar posibles clientes realizando lo siguiente:
    >
-   >
-   >
-   >    * En el panel, haga clic en **Importar leads** en el panel **Listas**.
-      >
-      >    
-   * Haga clic en **Listas** y en el menú **Herramientas**, seleccione **Importar leads**.
+   >* En el panel, haga clic en **Importar leads** en el panel **Listas**.
+   >* Haga clic en **Listas** y en el menú **Herramientas**, seleccione **Importar leads**.
 
 
 1. En el menú **Herramientas**, seleccione **Importar** **Leads**.
@@ -239,7 +234,7 @@ Para importar posibles clientes desde una lista separada por comas:
    >Las primera fila de la lista CSV consiste en etiquetas predefinidas que deben escribirse exactamente como en el ejemplo:
    >
    >
-   >`email,givenName,familyName` - si se escribe como  `givenname`por ejemplo, el sistema no lo reconocerá.
+   >`email,givenName,familyName` - si se escribe como `givenname`, por ejemplo, el sistema no lo reconocerá.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -253,7 +248,7 @@ Para importar posibles clientes desde una lista separada por comas:
 
    El nuevo posible cliente aparece en el panel Posibles clientes. Cuando hace clic en la entrada, toda la información introducida aparece en el panel derecho. Tras crear un posible cliente, puede añadirlo a una lista.
 
-### Añadir posibles clientes a listas  {#adding-leads-to-lists}
+### Añadir posibles clientes a listas {#adding-leads-to-lists}
 
 Para añadir leads a listas preexistentes:
 
@@ -269,7 +264,7 @@ Para añadir leads a listas preexistentes:
 
 1. Seleccione a qué lista desea añadir los posibles clientes y haga clic en **Aceptar**. Los leads se añadirán a las listas adecuadas.
 
-### Visualización de información de leads  {#viewing-lead-information}
+### Visualización de información de leads {#viewing-lead-information}
 
 Para ver la información del posible cliente en MCM, active la casilla situada junto al mismo y se abrirá un panel derecho con toda la información, incluyendo a la afiliación de la lista.
 
@@ -297,7 +292,7 @@ Para modificar la información del lead existente:
    >
    >Para cambiar el avatar del lead, vaya al perfil de usuario. Puede cargar el perfil en clickstream cloud, presionando CTRL+ALT+c, haciendo clic en **Cargar** y, a continuación, seleccionado el perfil.
 
-### Eliminación de leads existentes  {#deleting-existing-leads}
+### Eliminación de leads existentes {#deleting-existing-leads}
 
 Para eliminar posibles clientes existentes en MCM, active la casilla situada junto al posible cliente y haga clic en **Eliminar**. El posible cliente se eliminará de la lista de posibles clientes y de todas las listas asociadas.
 
@@ -305,7 +300,7 @@ Para eliminar posibles clientes existentes en MCM, active la casilla situada jun
 >
 >Antes de proceder a la eliminación, AEM confirma que desea eliminar el posible cliente existente. Una vez eliminadas, no se pueden recuperar.
 
-## Uso de listas  {#working-with-lists}
+## Uso de listas {#working-with-lists}
 
 >[!NOTE]
 >
@@ -320,7 +315,7 @@ Si hace clic en **Listas**, también puede ver si la lista es miembro de otra li
 
 ![screen_shot_2012-02-21at124828pm](assets/screen_shot_2012-02-21at124828pm.png)
 
-### Crear nuevas listas {#creating-new-lists}
+### Crear nuevas listas  {#creating-new-lists}
 
 Para crear una nueva lista (grupo):
 
@@ -348,7 +343,7 @@ Para modificar una lista existente:
 
 1. Realice ediciones, según sea necesario, y haga clic en **Save** (Guardar) para guardar los cambios.
 
-### Eliminación de listas existentes  {#deleting-existing-lists}
+### Eliminación de listas existentes {#deleting-existing-lists}
 
 Para eliminar listas existentes en MCM, active la casilla situada junto a la lista y haga clic en **Eliminar**. La lista se eliminará. Los posibles clientes que estaban afiliados a la lista no se eliminarán; sólo se eliminará la afiliación con la lista.
 
@@ -356,7 +351,7 @@ Para eliminar listas existentes en MCM, active la casilla situada junto a la lis
 >
 >Antes de proceder a la eliminación, AEM confirma que desea eliminar las listas existentes. Una vez eliminadas, no se pueden recuperar.
 
-### Combinación de listas  {#merging-lists}
+### Combinación de listas {#merging-lists}
 
 Es posible combinar una lista existente con otra lista. Cuando se hace esto, la lista que se combina pasa a ser miembro de la otra lista. Aún existe como entidad independiente y no se debe eliminar.
 
@@ -388,7 +383,7 @@ Para combinar listas existentes:
 >
 >La eliminación de una lista combinada de su pertenencia resulta idéntico a eliminar un posible cliente de una lista. Abra la ficha **Listas**, seleccione la lista que incluya la lista combinada y elimine la pertenencia haciendo clic en el círculo rojo situado junto a la lista.
 
-### Visualizar posibles clientes en listas  {#viewing-leads-in-lists}
+### Visualizar posibles clientes en listas {#viewing-leads-in-lists}
 
 En cualquier momento, puede ver qué leads pertenecen a una lista concreta buscando o desplazándose entre sus miembros.
 
