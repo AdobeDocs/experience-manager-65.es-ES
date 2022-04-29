@@ -1,14 +1,12 @@
 ---
 title: Día duro
-seo-title: Tough Day
 description: La prueba de Día duro simula la carga diaria de unos 1000 autores en el peor de los casos, con todas las operaciones en curso al mismo tiempo.
-seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 0b1f28963d9294c7aa9ae45c6b9fc9a9b8b4f6e6
+source-git-commit: ca6d41740dbb24dbba7cf7691c51435cc40d3ead
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1849'
 ht-degree: 2%
 
 ---
@@ -143,7 +141,7 @@ Puede encontrar los parámetros relevantes en la lista siguiente:
 
 La personalización se puede lograr de dos maneras: parámetros de línea de comandos o archivos de configuración de yaml. **Los archivos de configuración generalmente se utilizan para grupos personalizados grandes y anularán los parámetros predeterminados del Día duro 2. Los parámetros de la línea de comandos anulan tanto los archivos de configuración como los parámetros predeterminados.**
 
-La única forma de guardar una configuración de prueba es copiarla en formato yaml. Para obtener más información, consulte esta [toughday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) y los ejemplos de configuración de yaml en las secciones siguientes.
+La única forma de guardar una configuración de prueba es copiarla en formato yaml.
 
 ### Adición de una nueva prueba {#adding-a-new-test}
 
@@ -347,22 +345,22 @@ El Día difícil 2 genera métricas de prueba y registros. Para obtener más inf
 
 ### Métricas de prueba {#test-metrics}
 
-El Día difícil 2 actualmente informa de 9 métricas de prueba que puede evaluar. Métricas con la variable ***** solo se incluyen en los informes después de ejecutar correctamente:
+El Día difícil 2 actualmente informa de 9 métricas de prueba que puede evaluar. Métricas con la variable **&#42;** solo se incluyen en los informes después de ejecutar correctamente:
 
 | **Nombre** | **Descripción** |
 |---|---|
 | Marca de tiempo | Marca de tiempo de la última ejecución de prueba finalizada. |
 | Aprobado | Número de ejecuciones correctas. |
 | Error | Número de ejecuciones fallidas. |
-| Mínimo* | La duración más baja de la ejecución de la prueba. |
-| Máximo* | Mayor duración de la ejecución de prueba. |
-| Mediana* | Duración media calculada de todas las ejecuciones de prueba. |
-| Promedio* | Duración media calculada de todas las ejecuciones de prueba. |
-| StdDev* | La desviación estándar. |
-| 90p* | Percentil 90. |
-| 99p* | Percentil 99. |
-| 99,9p* | Percentil 99,9. |
-| Rendimiento real* | Número de ejecuciones dividido por el tiempo de ejecución transcurrido. |
+| Mínimo&#42; | La duración más baja de la ejecución de la prueba. |
+| Max&#42; | Mayor duración de la ejecución de prueba. |
+| Mediana&#42; | Duración media calculada de todas las ejecuciones de prueba. |
+| Promedio&#42; | Duración media calculada de todas las ejecuciones de prueba. |
+| StdDev&#42; | La desviación estándar. |
+| 90p&#42; | Percentil 90. |
+| 99p&#42; | Percentil 99. |
+| 99,9p&#42; | Percentil 99,9. |
+| Rendimiento real&#42; | Número de ejecuciones dividido por el tiempo de ejecución transcurrido. |
 
 Estas métricas se escriben con la ayuda de editores que pueden agregarse con la variable `add` (de forma similar a añadir pruebas). Actualmente, hay dos opciones:
 
