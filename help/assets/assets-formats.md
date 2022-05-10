@@ -6,24 +6,24 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: e3743b7ecbd8266abfaee36dcee94bcd2b260cac
+source-git-commit: fcbfd8b378282d908b68c61ab235e9b80fd6644c
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 9%
+source-wordcount: '1751'
+ht-degree: 10%
 
 ---
 
 # Formatos admitidos en [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-[!DNL Experience Manager Assets] admite una amplia gama de formatos de archivo y cada funcionalidad tiene compatibilidad variada con distintos tipos de MIME. Para integrar [!DNL Assets] con otras soluciones de administración de activos digitales (DAM) compatibles con los estándares y software de escritorio, utilice el [!DNL Extensible Metadata Platform] XMP.
+[!DNL Experience Manager Assets] supports a wide range of file formats and each functionality has varied support for different MIME types. Para integrar [!DNL Assets] con otras soluciones de administración de activos digitales (DAM) compatibles con los estándares y software de escritorio, utilice el [!DNL Extensible Metadata Platform] XMP.
 
-Utilice la leyenda para comprender el nivel de asistencia.
+Utilice la leyenda para comprender el nivel de compatibilidad.
 
-| Nivel de asistencia | Descripción |
+| Nivel de soporte | Descripción |
 | :-----------: | ------------------------------ |
-| ✓ | Compatible |
-| * | Compatible con funciones de complemento |
-| - | No aplicable |
+| ✓ | Compatibilidad |
+| &#42; | Compatible con funciones de complemento |
+| − | No aplicable |
 
 ## Formatos de imagen de trama compatibles con [!DNL Experience Manager] {#supported-raster-image-formats}
 
@@ -39,8 +39,8 @@ Los formatos de imagen de trama admitidos en [!DNL Assets] son:
 | PNM | ✓ | ✓ | - | - | - | - | ✓ |
 | PGM | ✓ | ✓ | - | - | - | - | ✓ |
 | PBM | ✓ | ✓ | - | - | - | - | ✓ |
-| PPM | ✓ | ✓ | - | - | - | - | ✓ |
-| PSD } | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| PPM | ✓ | ✓ | - | - | − | - | ✓ |
+| PSD ‡ | ✓ | ✓ | ✓ | ✓ | − | - | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | - | ✓ | - |
 | PICT | - | - | - | - | - | - | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ | - | - | - |
@@ -92,11 +92,11 @@ Consulte [Biblioteca de transcodificación de imágenes](imaging-transcoding-lib
 
 La variable [!DNL Adobe Camera Raw] biblioteca habilita [!DNL Assets] para ingerir imágenes sin procesar. Consulte [compatibilidad Camera Raw](camera-raw.md).
 
-## Admitido [!DNL Assets] formatos de documento {#supported-document-formats}
+## Supported [!DNL Assets] document formats {#supported-document-formats}
 
 Los formatos de documento admitidos para las funciones de administración de recursos son los siguientes:
 
-| Formato | Almacenamiento | [Gestión de metadatos](metadata.md) | Texto completo<br> extracción | [Extracción de metadatos](metadata.md) | Miniatura<br> generación | [Extracción de subconjunto](managing-linked-subassets.md) | [Reescritura de metadatos](xmp-writeback.md) | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
+| Formato | Almacenamiento | [Metadata management](metadata.md) | Texto completo<br> extracción | [Extracción de metadatos](metadata.md) | Miniatura<br> generación | [Extracción de subconjunto](managing-linked-subassets.md) | [Reescritura de metadatos](xmp-writeback.md) | [Recursos conectados](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
 | DOC | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
@@ -121,23 +121,23 @@ Los formatos de documento admitidos para las funciones de administración de rec
 
 |  | Almacenamiento | Gestión de metadatos | Extracción de metadatos | Generación de miniaturas | Transcodificación FFmpeg |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ | - | - | * |
-| MIDI | ✓ | ✓ | - | - | * |
-| 3GP | ✓ | ✓ | - | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ | - | - | * |
-| OGA | ✓ | ✓ | - | - | * |
-| OGG | ✓ | ✓ | - | - | * |
-| RA | ✓ | ✓ | - | - | * |
-| WAV | ✓ | ✓ | - | - | * |
-| WMA | ✓ | ✓ | - | - | * |
-| DVI | ✓ | ✓ | - | * | * |
-| FLV | ✓ | ✓ | - | * | * |
-| M4V | ✓ | ✓ | - | * | * |
-| MPEG | ✓ | ✓ | - | * | * |
-| OGV | ✓ | ✓ | - | * | * |
-| MOV | ✓ | ✓ | - | * | * |
-| WMV | ✓ | ✓ | - | * | * |
+| AAC | ✓ | ✓ | - | - | &#42; |
+| MIDI | ✓ | ✓ | - | - | &#42; |
+| 3GP | ✓ | ✓ | - | - | &#42; |
+| MP3 | ✓ | ✓ | ✓ | - | &#42; |
+| MPG | ✓ | ✓ | - | - | &#42; |
+| OGA | ✓ | ✓ | - | − | &#42; |
+| OGG | ✓ | ✓ | − | - | &#42; |
+| RA | ✓ | ✓ | - | - | &#42; |
+| WAV | ✓ | ✓ | - | - | &#42; |
+| WMA | ✓ | ✓ | - | - | &#42; |
+| DVI | ✓ | ✓ | - | &#42; | &#42; |
+| FLV | ✓ | ✓ | - | &#42; | &#42; |
+| M4V | ✓ | ✓ | - | &#42; | &#42; |
+| MPEG | ✓ | ✓ | − | &#42; | &#42; |
+| OGV | ✓ | ✓ | - | &#42; | &#42; |
+| MOV | ✓ | ✓ | - | &#42; | &#42; |
+| WMV | ✓ | ✓ | - | &#42; | &#42; |
 | SWF | ✓ | ✓ | - | - | - |
 
 ## Formatos de archivo compatibles {#supported-archive-formats}
@@ -156,7 +156,7 @@ Los formatos de archivo compatibles y la aplicabilidad de los flujos de trabajo 
 
 A continuación se describe la aplicabilidad de las funcionalidades habituales de DAM para algunos formatos de archivo específicos.
 
-| Formatos | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Entrega en Dynamic Media |
+| Formats | Almacenamiento | Versiones | Flujo de trabajo | Publicación | Control de acceso | Entrega en Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -170,7 +170,7 @@ A continuación se describe la aplicabilidad de las funcionalidades habituales d
 
 ## Tipos MIME admitidos {#supported-mime-types}
 
-De forma predeterminada, [!DNL Experience Manager] detecta el tipo de archivo con la extensión de archivo . [!DNL Experience Manager] puede detectarlo a partir del contenido de los archivos. Para este último, seleccione [!UICONTROL Detectar MIME del contenido] en [!UICONTROL Servicio Day CQ DAM Mime Type] en el [!DNL Experience Manager] Consola web.
+De forma predeterminada, [!DNL Experience Manager] detecta el tipo de archivo con la extensión de archivo . [!DNL Experience Manager] can detect it from the contents of the files. Para este último, seleccione [!UICONTROL Detectar MIME del contenido] en [!UICONTROL Servicio Day CQ DAM Mime Type] en el [!DNL Experience Manager] Consola web.
 
 Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
@@ -243,20 +243,24 @@ Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/globa
 | MOV, QT | QuickTime de Apple | H264/AVC, Apple ProRes422 &amp; HQ, XDCAM de Sony, DVCAM de Sony, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermedio, animación de Apple |
 | MP4 | MPEG-4 | H264/AVC (todos los perfiles) | - |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF } | MXF | XDCAM de Sony, MPEG-2, MPEG-4, DVCP de Panasonic | - |
+| MXF ‡ | MXF | XDCAM de Sony, MPEG-2, MPEG-4, DVCP de Panasonic | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | WebM | WebM | Google VP8 | - |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Pantalla Microsoft® (MSS2), Microsoft® Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 
-✓ Este formato de vídeo aún no es compatible para su uso con vídeos interactivos en Dynamic Media o con anotaciones en Experience Manager Assets.
+‡ This video format is not yet supported for use with Interactive Videos in Dynamic Media or for use with Annotation in Experience Manager Assets.
 
-## Dynamic Media: formatos de documento compatibles {#supported-document-formats-dynamic-media}
+## Dynamic Media - Supported document formats {#supported-document-formats-dynamic-media}
 
 | Formato | Cargar<br> (Formato de entrada) | Crear<br> image<br> ajuste preestablecido<br> (Formato de salida) | Vista previa<br> dinámico<br> representación | Entrega<br> dinámico<br> representación | Descargar<br> dinámico<br> representación |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | - | - | - | - |
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | - | - | - | - |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (Consulte la nota siguiente) | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+>[!NOTE]
+>
+>Para PDF seguros, solo se admite Cargar .
 
 Además de la funcionalidad anterior, considere lo siguiente:
 
@@ -298,7 +302,7 @@ Consulte también [Detectar formatos de archivo no compatibles para Dynamic Medi
 * Los archivos PSD con un espacio de color distinto de CMYK, RGB, escala de grises o mapa de bits no son compatibles. Los espacios de color DuoTone, Lab e Indexed no son compatibles.
 * archivos PSD con una profundidad buena superior a 16.
 * archivos TIFF que tienen datos de coma flotante.
-* Archivos TIFF que tienen espacio de color Lab.
+* TIFF files that have Lab color space.
 
 <!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
 ## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
@@ -318,13 +322,13 @@ The following table describes the sub-types of raster image formats that are *no
 |  | Files that have Lab color space. | Use ExifTool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
 -->
 
-## Dynamic Media: formatos 3D compatibles {#supported-three-d-file-formats-in-dm}
+## Dynamic Media - Supported 3D formats {#supported-three-d-file-formats-in-dm}
 
-Dynamic Media admite los siguientes formatos 3D.
+Dynamic Media supports the following 3D formats.
 
 Consulte también [Uso de recursos 3D en Dynamic Media](/help/assets/assets-3d.md).
 
-| Extensión de archivo 3D | Formato del archivo | Tipo MIME | Notas |
+| Extensión de archivo 3D | File format | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmisión binaria de GL | model/gltf-binary | Incluye los materiales y texturas como un único recurso. |
 | OBJ | Archivo de objeto 3D WaveFront | application/x-tgif |  |
