@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: f2cfe62c561e772a10ede4f76314a5904d6d64ff
+source-git-commit: 5c29ac6b87b818e168a746827624b65c6ba3b2f7
 workflow-type: tm+mt
-source-wordcount: '6048'
+source-wordcount: '6049'
 ht-degree: 3%
 
 ---
@@ -134,7 +134,7 @@ Para marcar una carpeta seleccionada para sincronizar con Dynamic Media, selecci
    Una vez activado un recurso, las actualizaciones se publican inmediatamente en S7 Delivery.
 
 1. Seleccione **[!UICONTROL Guardar]**.
-1. De forma predeterminada, el Autor del Experience Manager no puede obtener una vista previa del contenido de Dynamic Media. Por lo tanto, para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, debe *lista de permitidos* la instancia de Autor de Experience Manager para conectarse a Dynamic Media. Además, si desea proporcionar a los usuarios acceso para obtener una vista previa del contenido de forma segura, puede *lista de permitidos* direcciones IP adicionales.
+1. De forma predeterminada, el Autor del Experience Manager no puede obtener una vista previa del contenido de Dynamic Media. Por lo tanto, para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, debe lista de permitidos de la instancia de autor de Experience Manager para conectarse a Dynamic Media. Además, si desea proporcionar a los usuarios acceso para obtener una vista previa del contenido de forma segura, puede crear listas de permitidos de direcciones IP adicionales. <!-- CQDOC-19254 UNHIDE ON MAY 26, 2022 To securely preview Dynamic Media content before it gets published, Experience Manager Author uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can allowlist more IPs to provide users access to securely preview content. -->
 Para configurar esta acción en Experience Manager, consulte [Configuración de Dynamic Media Publish Setup para Image Server: ficha Seguridad](/help/assets/dm-publish-settings.md#security-tab).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
@@ -304,7 +304,7 @@ Consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
 
    * Haga doble clic en el botón **[!UICONTROL enabled]** campo . De forma predeterminada, todos los tipos de MIME de recursos están habilitados (se establece en **[!UICONTROL true]**), lo que significa que los recursos se sincronizan con Dynamic Media para su procesamiento. Si desea excluir el procesamiento de este tipo de MIME de recurso, cambie esta configuración a **[!UICONTROL false]**.
 
-   * Pulsar dos veces **[!UICONTROL jobParam]** para abrir el campo de texto asociado. Consulte [Tipos Mime Admitidos](/help/assets/assets-formats.md#supported-mime-types) para obtener una lista de los valores de parámetro de procesamiento permitidos, puede utilizar para un tipo mime determinado.
+   * Pulsar dos veces **[!UICONTROL jobParam]** para abrir el campo de texto asociado. Consulte [Tipos Mime Admitidos](/help/assets/assets-formats.md#supported-mime-types) para obtener una lista de los valores de parámetro de procesamiento permitidos que puede utilizar para un tipo de MIME determinado.
 
 1. Realice una de las acciones siguientes:
 
@@ -395,7 +395,7 @@ Hay dos elementos disponibles para la definición: Coincidencia y Nombre base. E
    Puede seleccionar el **[!UICONTROL Ver código]** para ver la generación del valor de expresión regular junto con las selecciones de formulario. Puede introducir o modificar estos valores para ayudar a definir los elementos de la convención de nomenclatura, si la vista del formulario lo limita por cualquier motivo. Si los valores no se pueden analizar en la vista de formulario, los campos del formulario se desactivan.
 
    >[!NOTE]
-   Los campos de formulario desactivados no realizan ninguna validación de que las expresiones regulares son correctas. Los resultados de la expresión regular que está creando para cada elemento se muestran después de la línea de resultados. La expresión regular completa se puede ver en la parte inferior de la página.
+   Los campos de formulario desactivados no realizan ninguna validación de que las expresiones regulares son correctas. Verá los resultados de la expresión regular que está generando para cada elemento después de la línea Resultado. La expresión regular completa se puede ver en la parte inferior de la página.
 
 1. Expanda cada elemento según sea necesario e introduzca las convenciones de nomenclatura que desee utilizar.
 1. Si es necesario, realice una de las acciones siguientes:
@@ -410,11 +410,9 @@ Hay dos elementos disponibles para la definición: Coincidencia y Nombre base. E
 
 ##### Crear un ajuste preestablecido de conjunto de lotes
 
-
-
 Dynamic Media utiliza ajustes preestablecidos de conjuntos de lotes para organizar los recursos en conjuntos de imágenes (imágenes alternativas, opciones de color y giro de 360) para mostrarlos en los visualizadores. Los ajustes preestablecidos de conjuntos de lotes se ejecutan automáticamente junto con los procesos de carga de recursos en Dynamic Media.
 
-Puede crear, editar y administrar los ajustes preestablecidos de conjuntos de lotes. Existen dos formas de definiciones de ajustes preestablecidos de conjuntos de lotes: una para una convención de nombres predeterminada que puede configurar y otra para convenciones de nombres personalizadas que cree sobre la marcha.
+Puede crear, editar y administrar los ajustes preestablecidos de conjuntos de lotes. Existen dos formas de definiciones de ajustes preestablecidos de conjuntos de lotes: una para una convención de nombres predeterminada que puede configurar y otra para convenciones de nombres personalizados que cree sobre la marcha.
 
 Se puede utilizar el método de campo de formulario para definir un ajuste preestablecido de conjunto de lotes o el método de código, que permite utilizar expresiones regulares. Al igual que en Nombre predeterminado, puede elegir Ver código al mismo tiempo que define en la Vista de formulario y utilizar expresiones regulares para crear las definiciones. Como alternativa, puede desmarcar cualquiera de las vistas para utilizar una o las otras exclusivamente.
 
