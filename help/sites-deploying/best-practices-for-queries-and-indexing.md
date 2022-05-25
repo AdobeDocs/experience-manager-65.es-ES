@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 9f7bd996d2ec77d29fbee3ee51ac6469f94e9bd7
+source-git-commit: c9df4b43083376f0110368afe642ec74290a52f8
 workflow-type: tm+mt
 source-wordcount: '4679'
 ht-degree: 0%
@@ -215,7 +215,7 @@ Al eliminar un índice en una instancia de MongoDB, el coste de eliminación es 
 
 ### Hoja de referencia de consultas JCR {#jcrquerycheatsheet}
 
-Para apoyar la creación de consultas JCR eficientes y definiciones de índices, la variable [Hoja de referencia de consulta JCR](assets/JCR_query_cheatsheet-v1.0.pdf) está disponible para su descarga y uso como referencia durante el desarrollo. Contiene consultas de ejemplo para QueryBuilder, XPath y SQL-2, que abarcan varios escenarios que se comportan de forma diferente en términos del rendimiento de la consulta. También proporciona recomendaciones sobre cómo crear o personalizar índices Oak. El contenido de esta hoja de referencia se aplica a AEM 6.5 y AEM as a Cloud Service.
+Para apoyar la creación de consultas JCR eficientes y definiciones de índices, la variable [Hoja de referencia de consulta JCR](assets/JCR_query_cheatsheet-v1.1.pdf) está disponible para su descarga y uso como referencia durante el desarrollo. Contiene consultas de ejemplo para QueryBuilder, XPath y SQL-2, que abarcan varios escenarios que se comportan de forma diferente en términos del rendimiento de la consulta. También proporciona recomendaciones sobre cómo crear o personalizar índices Oak. El contenido de esta hoja de referencia se aplica a AEM 6.5 y AEM as a Cloud Service.
 
 ## Reindexación {#re-indexing}
 
@@ -232,7 +232,6 @@ La reindexación de los índices Oak debe evitarse a menos que se indique lo con
 >* la consulta es correcta
 >* la consulta responde al índice esperado (mediante [Explicar consulta](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
 >* el proceso de indexación ha finalizado
-
 >
 
 
@@ -420,7 +419,7 @@ La preextracción de texto es el proceso de extraer y procesar texto de binarios
 
 Reindexación de una **existente** índice lucene con extracción binaria habilitada
 
-* Reindexación del procesamiento **all** contenido candidato en el repositorio; cuando los binarios de los que extraer texto completo son numerosos o complejos, una mayor carga de cálculo para realizar la extracción de texto completo se coloca en AEM. La preextracción de texto desplaza el &quot;trabajo costoso desde el punto de vista computacional&quot; de la extracción de texto a un proceso aislado que accede directamente a AEM Data Store, evitando así sobrecargas y contención de recursos en AEM.
+* Reindexación del procesamiento **all** contenido candidato en el repositorio; cuando los binarios de los que extraer texto completo son numerosos o complejos, una mayor carga de cálculo para realizar la extracción de texto completo se coloca en AEM. La preextracción de texto desplaza el &quot;trabajo costoso desde el punto de vista computacional&quot; de la extracción de texto a un proceso aislado que accede directamente a AEM Data Store, evitando sobrecargas y contención de recursos en AEM.
 
 Soporte para la implementación de un **new** índice lucene para AEM con extracción binaria habilitada
 
