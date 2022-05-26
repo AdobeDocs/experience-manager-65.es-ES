@@ -3,10 +3,11 @@ title: 'Fragmentos de contenido: navegador de configuración'
 description: Aprenda a habilitar ciertas funciones de fragmento de contenido en el navegador de configuración para aprovechar AEM potentes funciones de envío sin periféricos.
 feature: Content Fragments
 role: User
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
+source-git-commit: 8dc8eff86ff25534a578dd227033aa185853d930
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 18%
+source-wordcount: '292'
+ht-degree: 21%
 
 ---
 
@@ -14,19 +15,19 @@ ht-degree: 18%
 
 Aprenda a habilitar ciertas funciones de fragmento de contenido en el navegador de configuración para aprovechar AEM potentes funciones de envío sin periféricos.
 
-## Habilitar la funcionalidad de fragmento de contenido para la instancia {#enable-content-fragment-functionality-instance}
+## Habilitación de la funcionalidad de fragmento de contenido para la instancia {#enable-content-fragment-functionality-instance}
 
-Antes de utilizar los fragmentos de contenido, debe utilizar el **Navegador de configuración** para habilitar:
+Antes de usar fragmentos de contenido, debe usar la variable **Explorador de configuración** para habilitar:
 
-* **Modelos de fragmento de contenido** : obligatorio
-* **Consultas persistentes de GraphQL** : opcional
+* **Modelos de fragmento de contenido** - obligatorio
+* **Consultas persistentes de GraphQL** - opcional
 
 >[!CAUTION]
 >
 >Si no habilita **Modelos de fragmento de contenido**:
 >
->* la opción **Crear** no estará disponible para crear nuevos modelos.
->* no podrá [seleccionar la configuración Sitios para crear el punto final relacionado](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* el **Crear** no estará disponible para crear nuevos modelos.
+>* no podrá [seleccione la configuración Sitios para crear el punto final relacionado](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
 
 
 Para habilitar la funcionalidad de fragmento de contenido, debe:
@@ -36,7 +37,7 @@ Para habilitar la funcionalidad de fragmento de contenido, debe:
 
 ### Habilitar la funcionalidad de fragmento de contenido en el navegador de configuración {#enable-content-fragment-functionality-in-configuration-browser}
 
-Para [utilizar cierta funcionalidad de fragmento de contenido](#creating-a-content-fragment-model) debe **habilitarlos primero** mediante el **Explorador de configuración**:
+Hasta [usar ciertas funciones de fragmento de contenido](#creating-a-content-fragment-model) you **must** primero, actívelos a través de la variable **Explorador de configuración**:
 
 >[!NOTE]
 >
@@ -44,27 +45,27 @@ Para [utilizar cierta funcionalidad de fragmento de contenido](#creating-a-conte
 
 >[!CAUTION]
 >
->Las subconfiguraciones (una configuración anidada en una configuración) no se admiten para su uso con fragmentos de contenido.
+>Las subconfiguraciones (una configuración anidada dentro de una configuración) se admiten para su uso con fragmentos de contenido, pero no se pueden usar en consultas de GraphQL.
 
 1. Vaya a **Herramientas**, **General**, luego abra el **Explorador de configuración**.
 
-1. Utilice **Crear** para abrir el cuadro de diálogo, donde:
+1. Uso **Crear** para abrir el cuadro de diálogo, donde:
 
    1. Especifique un **Título**.
    1. Para habilitar su uso, seleccione
-      * **Modelos de fragmento de contenido**
+      * **Modelos de fragmentos de contenido**
       * **Consultas persistentes de GraphQL**
 
       ![Definir configuración](assets/cfm-conf-01.png)
 
 
-1. Seleccione **Create** para guardar la definición.
+1. Select **Crear** para guardar la definición.
 
 <!-- 1. Select the location appropriate to your website. -->
 
 ### Aplicar la configuración a la carpeta de recursos {#apply-the-configuration-to-your-assets-folder}
 
-Cuando la configuración **global** está habilitada para la funcionalidad de fragmentos de contenido, se aplica a cualquier carpeta de Assets.
+Cuando la configuración **global** está habilitado para la funcionalidad de fragmentos de contenido y se aplica a cualquier carpeta de recursos.
 
 Para utilizar otras configuraciones (es decir, excluyendo global) con una carpeta de Assets comparable, debe definir la conexión. Para ello, seleccione la **configuración** adecuada en la pestaña **Cloud Services** de las **Propiedades de carpeta** de la carpeta correspondiente.
 
