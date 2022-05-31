@@ -2,14 +2,13 @@
 title: Compatibilidad con cookies del mismo sitio para AEM 6.5
 description: Compatibilidad con cookies del mismo sitio para AEM 6.5
 topic-tags: security
-translation-type: tm+mt
-source-git-commit: ac2f3d69fd20d7779120a194c698d6f0dd6e6a84
+exl-id: e1616385-0855-4f70-b787-b01701929bbc
+source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 1%
+source-wordcount: '219'
+ht-degree: 55%
 
 ---
-
 
 # Compatibilidad con cookies del mismo sitio para AEM 6.5 {#same-site-cookie-support-for-aem-65}
 
@@ -17,13 +16,21 @@ Desde la versión 80, Chrome y posterior Safari, introdujeron un nuevo modelo pa
 
 El valor predeterminado de esta configuración (`SameSite=Lax`) puede causar que la autenticación entre instancias o servicios de AEM no funcione. Esto se debe a que es posible que los dominios o las estructuras URL de estos servicios no entren dentro de las restricciones de esta directiva de cookies.
 
-Para evitarlo, debe establecer el atributo de cookie SameSite en `None` para el token de inicio de sesión.
+Para evitarlo, debe configurar la variable `SameSite` atributo de cookie a `None` para el token de inicio de sesión.
 
-Para ello, siga los siguientes pasos:
+>[!CAUTION]
+>
+>La variable `SameSite=None` solo se aplica si el protocolo es seguro (HTTPS).
+>
+>Si el protocolo no es seguro (HTTP), la configuración se ignora y el servidor muestra este mensaje ADVERTENCIA:
+>
+>`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
+
+Puede añadir la configuración siguiendo los pasos siguientes:
 
 1. Vaya a la consola web en `http://serveraddress:serverport/system/console/configMgr`
-1. Busque y haga clic en **Adobe Granite Token Authentication Handler**
-1. Establezca el atributo **SameSite para la cookie de token de inicio de sesión** en `None`, como se muestra en la imagen siguiente
+1. Busque y haga clic en el **controlador de autenticación de token de Granite de Adobe**
+1. Configure el **atributo SameSite para la cookie de token de inicio de sesión** a `None`, como se muestra en la imagen siguiente
    ![samesite](assets/samesite1.png)
 1. Haga clic en Guardar
-1. Una vez que esta configuración se actualice y los usuarios cierren la sesión y vuelvan a iniciarla, las cookies `login-token` tendrán el atributo `None` establecido y se incluirán en las solicitudes entre sitios.
+1. Una vez que se actualiza esta configuración y se cierra la sesión de los usuarios y se inicia sesión de nuevo, las cookies `login-token` tendrán el conjunto de atributos `None` y se incluirán en solicitudes entre sitios.
