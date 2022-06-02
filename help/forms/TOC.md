@@ -8,9 +8,9 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 91b012f8024350effc19613bcecfc42dee4130d9
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3788'
 ht-degree: 5%
 
 ---
@@ -681,9 +681,12 @@ ht-degree: 5%
          + [Gestión programática de los nodos de preferencias](developing/programmatically-preferences-nodes.md)
          + [Protección de documentos con directivas](developing/protecting-documents-policies.md)
          + [Validación de un documento DDX mediante la API de servicio web](developing/validate-ddx-document-using-web.md)
-      + Documentación heredada {#legacy-documentation}
-         + [Uso del servicio de ejecución de secuencias de comandos en AEM Forms en JEE Workbench para generar datos XML](developing/building-xml.md)
-         + [Compresión y descompresión de archivos mediante una AEM Forms en una DSC personalizada JEE](developing/compressing-decompressing-custom-dsc.md)
-         + [Configuración y solución de problemas de un AEM Forms en un clúster de servidores JEE](developing/configure-server-cluster.md)
-         + [Generación y trabajo con hash en PDF forms dinámicos](developing/hashing-forms.md)
-         + [Pasar credenciales mediante encabezados WS-Security](developing/passing-credentials.md)
++ Solución de problemas {#troubleshooting}
+   + [No se pueden usar algunas funciones de formularios con ciertas versiones de Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
++ Documentación heredada {#legacy-documentation}
+   + [Uso del servicio de ejecución de secuencias de comandos en AEM Forms en JEE Workbench para generar datos XML](developing/building-xml.md)
+   + [Compresión y descompresión de archivos mediante una AEM Forms en una DSC personalizada JEE](developing/compressing-decompressing-custom-dsc.md)
+   + [Configuración y solución de problemas de un AEM Forms en un clúster de servidores JEE](developing/configure-server-cluster.md)
+   + [Generación y trabajo con hash en PDF forms dinámicos](developing/hashing-forms.md)
+   + [Pasar credenciales mediante encabezados WS-Security](developing/passing-credentials.md)
+

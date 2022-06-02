@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 73d5b894dfa1bbb3ae3f2973cc4f9db1ace90ef8
+source-git-commit: dab643ffd64217018bf2f5544ae3c417963cea82
 workflow-type: tm+mt
-source-wordcount: '3515'
+source-wordcount: '3533'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Adobe recomienda estas configuraciones y proporciona soporte completo o restring
 <table>
  <tbody>
   <tr>
-   <th>Nivel de asistencia</th>
+   <th>Nivel de soporte</th>
    <th>Descripción</th>
   </tr>
   <tr>
@@ -62,7 +62,7 @@ Adobe recomienda estas configuraciones y proporciona soporte completo o restring
 
 ### Configuraciones no admitidas {#unsupported-configurations}
 
-| Nivel de asistencia | Descripción |
+| Nivel de soporte | Descripción |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | E: Se espera que funcione | Se espera que la configuración funcione y no hay informes que indiquen lo contrario. |
 | Z: No admitido | La configuración no es compatible. Adobe no realiza ninguna declaración sobre si la configuración funciona o no y no la admite. |
@@ -87,7 +87,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
  <tbody>
   <tr>
    <th><p><strong>Plataforma</strong></p> </th>
-   <th><p><strong>Nivel de asistencia</strong></p> </th>
+   <th><p><strong>Nivel de soporte</strong></p> </th>
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
   </tr>
   <tr>
@@ -136,42 +136,42 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
   <tr>
    <td><p><strong>Plataforma</strong></p> </td>
    <td><p><strong> Descripción</strong></p> </td>
-   <td><p><strong>Nivel de asistencia</strong></p> </td>
+   <td><p><strong>Nivel de soporte</strong></p> </td>
   </tr>
   <tr>
    <td><p>Sistema de archivos</p> </td>
    <td><p>Microkernel del repositorio (archivos TAR MK)</p> </td>
-   <td><p>Compatible</p> </td>
+   <td><p>Compatibilidad</p> </td>
   </tr>
   <tr>
    <td><p> MongoDB Enterprise 4.0 (obsoleto) </p> </td>
    <td><p>Repositorio Microkernel</p> </td>
-   <td><p>Compatible</p> </td>
+   <td><p>Compatibilidad</p> </td>
   </tr>
   <tr>
    <td><p>MongoDB Enterprise 4.2 </p> </td>
    <td><p>Repositorio Microkernel</p> </td>
-   <td><p>Compatible</p> </td>
+   <td><p>Compatibilidad</p> </td>
   </tr>
   <tr>
    <td><p>Base de datos de oracle 12c versión 2 (12.2.0.1.0) (obsoleta)</p> </td>
    <td><p>Repositorio Microkernel</p> </td>
-   <td><p>Compatible</p> </td>
+   <td><p>Compatibilidad</p> </td>
   </tr>
    <tr>
    <td>Base de datos de oracle 19c (Standard, Real Application Clusters (RAC) y ediciones Enterprise) </td>
    <td>Repositorio de Microsoft </td>
-   <td>Compatible</td>
+   <td>Compatibilidad</td>
   </tr>
   <tr>
    <td><p>Microsoft SQL Server 2016 (obsoleto)</p> </td>
    <td><p>Repositorio Microkernel</p> </td>
-   <td><p>Compatible</p> </td>
+   <td><p>Compatibilidad</p> </td>
   </tr>
   <tr>
    <td><p>Microsoft SQL Server 2019</p> </td>
    <td><p>Repositorio Microkernel</p> </td>
-   <td><p>Compatible</p> </td>
+   <td><p>Compatibilidad</p> </td>
   </tr>
   <tr>
    <td>IBM DB2 11.1 (obsoleto)</td>
@@ -240,7 +240,7 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
  <tbody>
   <tr>
    <td><p><strong> Plataforma</strong></p> </td>
-   <td><p><strong>Nivel de asistencia</strong></p> </td>
+   <td><p><strong>Nivel de soporte</strong></p> </td>
    <td><p><strong>Definiciones de parches compatibles</strong></p> </td>
   </tr>
   <tr>
@@ -334,7 +334,7 @@ Puede ejecutar AEM Forms en JEE en una máquina física o un entorno virtual. Si
  <tbody>
   <tr>
    <th><p><strong>Plataforma (versión base)</strong></p> </th>
-   <th>Nivel de asistencia</th>
+   <th>Nivel de soporte</th>
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
   </tr>
   <tr>
@@ -419,8 +419,12 @@ Además, tenga en cuenta los siguientes puntos a la hora de elegir software para
    <td>8,5 </td>
   </tr>
   <tr>
-   <td>Microsoft Sharepoint</td>
-   <td>2016<br /> </td>
+   <td>Microsoft Sharepoint </td>
+   <td>2016 (obsoleto)<br /> </td>
+  </tr>
+  <tr>
+   <td>Microsoft Sharepoint </td>
+   <td>2019<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -755,6 +759,10 @@ Adobe se reserva el derecho de cambiar las plataformas de referencia de terceros
 Para obtener información adicional sobre parches de terceros, consulte los artículos de la base de conocimientos relacionados con su producto en el sitio de asistencia técnica de Adobe Enterprise.
 
 ## Actualizaciones de plataforma {#platform-updates}
+
+Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.13.0 de AEM Forms del 2 de junio de 2022:
+
+- Microsoft SharePoint 2016
 
 Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.12.0 de AEM Forms del 3 de marzo de 2022:
 
