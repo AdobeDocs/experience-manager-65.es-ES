@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: a45d66dc2226dbe2879aa61d95cc5379dce882bb
+source-git-commit: f78d12d6fa1daa1c1b3afdfe22ecb8c183e8e1d0
 workflow-type: tm+mt
-source-wordcount: '3774'
+source-wordcount: '3737'
 ht-degree: 7%
 
 ---
@@ -92,9 +92,9 @@ Se han introducido las siguientes correcciones de errores, funciones clave y mej
 
 ## [!DNL Forms] {#forms-65130}
 
-* Cuando se utiliza el servicio de cumplimentación previa para rellenar un formulario adaptable que contiene un fragmento y el fragmento contiene un cuadro Texto que admite texto enriquecido, el formulario no se envía y se produce el siguiente error:
+<!-- * When you use the prefill service to fill an adaptive form that contains a fragment and the fragment contains a Text box that supports rich text, the form fails to submit, and the following error occurs:
 
-   `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542)
+  `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542) -->
 
 * Los componentes Botón de opción, Casilla de verificación y Carga de archivo no se traducen correctamente del alemán al inglés. (NPR-38527)
 * La codificación de código de barras PDF417 producida por [!DNL Experience Manager] Forms no es válido para un grupo de botones de radio. (NPR-38525)
