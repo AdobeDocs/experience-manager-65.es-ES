@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Authoring User Guide
 description: Explore los conceptos clave para crear contenido y crear contenido en AEM 6.5. También encontrará información sobre el uso de etiquetas, plantillas y otras funciones de página.
 seo-description: Explains the concepts of authoring in AEM.
 exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '374'
 ht-degree: 33%
 
 ---
@@ -17,7 +17,7 @@ Explore los conceptos clave para crear contenido y crear contenido en AEM 6.5. T
 
 ## Artículos clave AEM
 
-* [Introducción a AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=es)
+* [Introducción a AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es)
 * [Notas de la versión 6.5 de AEM](/help/release-notes/home.md)
 * [Actualizaciones recientes de la documentación](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
@@ -49,5 +49,5 @@ Explore los conceptos clave para crear contenido y crear contenido en AEM 6.5. T
 * [Guía del usuario de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
+* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)

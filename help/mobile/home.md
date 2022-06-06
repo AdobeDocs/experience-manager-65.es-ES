@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Mobile User Guide
 description: Aproveche AEM asistencia para crear y administrar contenido para aplicaciones móviles. Obtenga una introducción y aprenda a crear, desarrollar y administrar en la aplicación de servicios bajo demanda y Adobe PhoneGap Enterprise.
 seo-description: Describes how to create and manage content for mobile applications.
 exl-id: 3531d8ea-614d-465a-8b4a-e3e3f3461e94
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 31%
+source-wordcount: '392'
+ht-degree: 32%
 
 ---
 
@@ -17,7 +17,7 @@ Aproveche AEM asistencia para crear y administrar contenido para aplicaciones m�
 
 ## Artículos clave AEM
 
-* [Introducción a AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=es)
+* [Introducción a AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es)
 * [Notas de la versión 6.5 de AEM](/help/release-notes/home.md)
 * [Actualizaciones recientes de la documentación](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
@@ -49,5 +49,5 @@ Aproveche AEM asistencia para crear y administrar contenido para aplicaciones m�
 * [Guía del usuario de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
+* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)

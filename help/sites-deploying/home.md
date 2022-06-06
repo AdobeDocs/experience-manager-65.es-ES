@@ -3,9 +3,9 @@ title: Guía del usuario de implementación de AEM 6.5
 seo-title: AEM 6.5 Deploying User Guide
 description: Obtenga información sobre la instalación e implementación de Adobe Experience Manager 6.5 y sobre su arquitectura, incluida nuestra implementación en la nube de Adobe Managed Services.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '392'
 ht-degree: 31%
 
 ---
@@ -16,7 +16,7 @@ Esta guía abarca todas AEM tareas de implementación, como instalar e implement
 
 ## Artículos clave AEM
 
-* [Introducción a AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=es)
+* [Introducción a AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es)
 * [Notas de la versión 6.5 de AEM](/help/release-notes/home.md)
 * [Actualizaciones recientes de la documentación](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
@@ -48,8 +48,8 @@ Esta guía abarca todas AEM tareas de implementación, como instalar e implement
 * [Guía del usuario de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
+* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)
 
 ## Derechos de autor, licencias y exenciones de responsabilidad {#copyright-licenses-and-disclaimers}
 

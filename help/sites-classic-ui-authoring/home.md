@@ -1,16 +1,15 @@
 ---
 title: Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic
-seo-title: Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic
-description: 'Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica. '
-seo-description: 'Abarca los conceptos de creación en AEM en la IU clásica. '
-translation-type: tm+mt
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+seo-title: AEM 6.5 Classic UI Authoring User Guide
+description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
+seo-description: Covers the concepts of authoring in AEM in the classic UI.
+exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 31%
+source-wordcount: '358'
+ht-degree: 32%
 
 ---
-
 
 # Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic
 
@@ -18,7 +17,7 @@ Esta guía explica los conceptos de creación en AEM en la interfaz de usuario c
 
 ## Artículos clave AEM
 
-* [Introducción a AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=es)
+* [Introducción a AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es)
 * [Notas de la versión 6.5 de AEM](/help/release-notes/home.md)
 * [Actualizaciones recientes de la documentación](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
@@ -50,5 +49,5 @@ Esta guía explica los conceptos de creación en AEM en la interfaz de usuario c
 * [Guía del usuario de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
+* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)
