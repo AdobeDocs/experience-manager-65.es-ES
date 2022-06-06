@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
 workflow-type: tm+mt
-source-wordcount: '3558'
+source-wordcount: '3557'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ El valor recomendado es `-1` ya que esto establece la cola en ilimitada; si se e
 **Servlet de GET Apache Sling** Configure algunos aspectos de la renderización:
 
 * **Índice automático** para habilitar/deshabilitar la renderización de directorios para la exploración.
-* **Habilitar** (o deshabilite) las representaciones predeterminadas, como **HMTL**, **Texto sin formato**, **JSON** o **XML**.
+* **Habilitar** (o deshabilite) las representaciones predeterminadas, como **HTML**, **Texto sin formato**, **JSON** o **XML**.
 No debe deshabilitar JSON.
 
 >[!NOTE]
@@ -109,7 +109,7 @@ No debe deshabilitar JSON.
 
 Ciertos ajustes pueden afectar al rendimiento, deben deshabilitarse siempre que sea posible, en particular para una instancia de producción.
 
-* S **VM de origen** y **VM de destino**, defina la versión de JDK como la que se usa como JVM de tiempo de ejecución
+* **VM de origen** y **VM de destino**, defina la versión de JDK como la que se usa como JVM de tiempo de ejecución
 
 * para instancias de producción:
 
@@ -117,7 +117,7 @@ Ciertos ajustes pueden afectar al rendimiento, deben deshabilitarse siempre que 
 
 **Instalador JCR de Apache Sling** Estos parámetros probablemente no necesitan configuración, pero pueden resultar útiles para saberlo al desarrollar o depurar. Por ejemplo, las carpetas de instalación pueden ser útiles para desproteger o crear un paquete.
 
-* **Carpeta de instalación regexp** y **Profundidad máxima de jerarquía de las carpetas de instalación** - especifique dónde y a qué profundidad se buscan las carpetas del repositorio para los recursos que se van a instalar. Cuando se utiliza un comodín (como en .*/install) se buscarán todas las coincidencias adecuadas, por ejemplo, `/libs/sling/install` y `/libs/cq/core/install`.
+* **Carpeta de instalación regexp** y **Profundidad máxima de jerarquía de las carpetas de instalación** - especifique dónde y a qué profundidad se buscan las carpetas del repositorio para los recursos que se van a instalar. Cuando se utiliza un comodín (como en .&#42;/install) se buscarán todas las coincidencias adecuadas, por ejemplo, `/libs/sling/install` y `/libs/cq/core/install`.
 
 * **Ruta de búsqueda**, lista de rutas que jcrinstall busca los recursos que se van a instalar, junto con un número que indica el factor de ponderación para esa ruta.
 
@@ -326,13 +326,13 @@ Con AEM asignación raíz puede configurar la IU que desea tener como predetermi
 
 * Para que la IU táctil sea la IU predeterminada, use la función **Ruta de destino** debe señalar a:
 
-   ```
+   ```shell
       /projects.html
    ```
 
 * Para que la IU clásica sea la IU predeterminada, utilice la función **Ruta de destino** debe señalar a:
 
-   ```
+   ```shell
       /welcome.html
    ```
 
@@ -366,7 +366,7 @@ Para los usuarios seleccionados, el nombre de usuario extraído de la solicitud 
 `admin` aparece a ambos lados del mapa, se ignorará la asignación. Tenga en cuenta que el carácter &quot;=&quot; debe omitirse con un &quot;\&quot; inicial.
 
 * **Formato**
-Indica el formato en el que se proporciona el ID de usuario. Uso:
+Indica el formato en el que se proporciona el ID de usuario. Uso de:
 
    * `Basic` si el ID de usuario está codificado en el formato de autenticación básica HTTP
    * `AsIs` si el ID de usuario se proporciona en formato de texto sin formato o cualquier valor aplicado de expresión regular debe usarse tal cual o cualquier expresión regular
