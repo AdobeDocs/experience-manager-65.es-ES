@@ -10,7 +10,7 @@ index: y
 source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
 workflow-type: tm+mt
 source-wordcount: '134'
-ht-degree: 74%
+ht-degree: 92%
 
 ---
 
@@ -22,16 +22,16 @@ El archivo metadata.md incluye metadatos de repositorios que pasan a los archivo
 | metadata | función |
 |--- |--- |
 | solution-title | Se utiliza en el encabezado del artículo como vínculo. |
-| solution-hub-url | Abre la página del centro de aprendizaje y asistencia. |
+| solution-hub-url | Abre la página del centro de Aprendizaje y asistencia. |
 | solution-icon | Muestra el icono de la solución junto al título de la solución. No implementado aún. |
 | getting-started-url | Vínculo a la página de introducción. |
 | tutorials-url | Vínculo a tutoriales en vídeo. |
 | mini-toc-levels | Determina el número de niveles de encabezado que aparecen en el carril derecho. El valor predeterminado es 2. |
-| git-repo | Especifica la ubicación de la cesión temporal principal para uso interno. |
+| git-repo | Especifica la ubicación del repositorio principal para uso interno. |
 
 En el archivo TOC.md
 
 | metadata | función |
 |--- |--- |
 | user-guide-title | Se utiliza en el encabezado del artículo como vínculo. |
-| user-guide-url | Abre la página del centro de aprendizaje y asistencia. |
+| user-guide-url | Abre la página del centro de Aprendizaje y asistencia. |
