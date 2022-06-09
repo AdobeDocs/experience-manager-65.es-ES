@@ -1,8 +1,8 @@
 ---
 title: Preguntas más frecuentes para formularios HTML5
-seo-title: Preguntas más frecuentes para formularios HTML5
-description: Preguntas más frecuentes sobre la presentación, la compatibilidad con secuencias de comandos y el alcance de los formularios HTML5.
-seo-description: Preguntas más frecuentes sobre la presentación, la compatibilidad con secuencias de comandos y el alcance de los formularios HTML5.
+seo-title: Frequently asked questions (FAQ) for HTML5 forms
+description: Preguntas más frecuentes sobre la presentación, la compatibilidad con secuencias de comandos y el ámbito de los formularios HTML5.
+seo-description: Frequently Asked Questions (FAQ) about layout, scripting support, and scope of HTML5 forms.
 uuid: 398e31de-3e46-4288-b3cd-39d51fa17abc
 contentOwner: robhagat
 content-type: reference
@@ -11,24 +11,23 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
+source-git-commit: 1e301f3991a18a594ac10a6548a0a645327dd4dd
 workflow-type: tm+mt
-source-wordcount: '1972'
+source-wordcount: '1995'
 ht-degree: 0%
 
 ---
 
-
 # Preguntas más frecuentes para formularios HTML5{#frequently-asked-questions-faq-for-html-forms}
 
-Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibilidad con secuencias de comandos y el alcance de los formularios HTML5.
+Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibilidad con secuencias de comandos y el ámbito de los formularios HTML5.
 
 ## Diseño {#layout}
 
 1. ¿Por qué los códigos de barras y los campos de firma no aparecen en mi formulario?
 
-   Respuesta: Los campos de códigos de barras y firmas no son relevantes en los escenarios HTML o móviles. Estos campos aparecen como un área no interactiva. Sin embargo, AEM Forms Designer proporciona un nuevo campo de anotaciones de firma que se puede utilizar en lugar de un campo de firma. También se puede agregar un [widget personalizado](../../forms/using/custom-widgets.md) para códigos de barras e integrarlo.
+   Respuesta: Los campos Códigos de barras y firmas no son relevantes en los casos de HTML o móviles. Estos campos aparecen como un área no interactiva. Sin embargo, AEM Forms Designer proporciona un nuevo campo de anotaciones de firma que se puede utilizar en lugar de un campo de firma. También se puede agregar una [utilidad personalizada](../../forms/using/custom-widgets.md) para códigos de barras e integrarlos.
 
 1. ¿Se admite texto enriquecido para el campo de texto XFA?
 
@@ -92,13 +91,13 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
 
 1. ¿Por qué parte del texto está truncado o se muestra incorrectamente en HTML5?
 
-   Respuesta: Cuando no se ha dado espacio suficiente a un elemento de texto Dibujar o Rótulo para mostrar contenido, el texto aparece truncado en la representación de formularios móviles. Este truncamiento también está visible en la vista Diseño de AEM Forms Designer. Aunque este truncamiento se puede controlar en los PDF, no se puede controlar en los formularios HTML5. Para evitar el problema, proporcione espacio suficiente para Dibujar o Texto de rótulo para que no se trunque en el modo de diseño del Diseñador de AEM Forms.
+   Respuesta: Cuando no se ha dado espacio suficiente a un elemento de texto Dibujar o Rótulo para mostrar contenido, el texto aparece truncado en la representación de formularios móviles. Este truncamiento también está visible en la vista Diseño de AEM Forms Designer. Aunque este truncamiento se puede controlar en los PDF, no se puede gestionar en los formularios HTML5. Para evitar el problema, proporcione espacio suficiente para Dibujar o Texto de rótulo para que no se trunque en el modo de diseño del Diseñador de AEM Forms.
 
 1. Estoy observando problemas de diseño relacionados con la falta de contenido o el contenido superpuesto. ¿Cuál es la razón?
 
-   Respuesta: Si hay un elemento Dibujar texto o Dibujar imagen junto con otro elemento superpuesto en la misma posición (por ejemplo, un rectángulo), el contenido Dibujar texto no estará visible si se presenta más adelante en el orden del documento (en la vista Jerarquía de AEM Forms Designer). PDF admite capas transparentes, pero HTML/navegadores no admiten capas transparentes.
+   Respuesta: Si hay un elemento Dibujar texto o Dibujar imagen junto con otro elemento superpuesto en la misma posición (por ejemplo, un rectángulo), el contenido Dibujar texto no estará visible si se presenta más adelante en el orden del documento (en la vista Jerarquía de AEM Forms Designer). El PDF admite capas transparentes, pero los HTML/navegadores no admiten capas transparentes.
 
-1. ¿Por qué algunas fuentes se muestran en el formulario HTML de forma diferente a las utilizadas al diseñar el formulario?
+1. ¿Por qué algunas fuentes se muestran en el formulario del HTML de forma diferente a las utilizadas al diseñar el formulario?
 
    Respuesta: Los formularios HTML5 no incrustan fuentes (a diferencia de los PDF forms en los que las fuentes están incrustadas dentro del formulario). Para que la versión HTML del formulario se represente como se espera, asegúrese de que las fuentes especificadas en el XDP estén disponibles en el servidor y en el equipo cliente. Si las fuentes requeridas no están disponibles en el servidor, se utilizan fuentes de reserva. Además, si utiliza fuentes en la plantilla de formulario que no están disponibles en el dispositivo cliente, se utilizarán las fuentes predeterminadas del explorador para procesar el texto.
 
@@ -108,19 +107,19 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
 
 1. ¿Los formularios HTML5 admiten caracteres hebreos?
 
-   Los formularios HTML5 admiten caracteres hebreos en todos los navegadores excepto en Microsoft Internet Explorer.
+   Los formularios de HTML5 admiten caracteres hebreos en todos los navegadores excepto en Microsoft Internet Explorer.
 
 1. ¿Los formularios HTML5 tienen limitaciones en los campos numéricos?
 
    Respuesta: Sí, los formularios HTML5 tienen algunas limitaciones. Si el número de dígitos es mayor que el recuento especificado en la cláusula de formato, los números no se localizan y se muestran en la configuración regional en inglés.
 
-1. ¿Por qué los formularios HTML tienen un tamaño mayor que los PDF forms?
+1. ¿Por qué los formularios HTML son más grandes que los PDF forms?
 
-   Para procesar un XDP en un formulario HTML, se necesitan muchas estructuras de datos intermedias y objetos como dom de formulario, dom de datos y dom de presentación.
+   Para procesar un XDP en un formulario de HTML, se requieren muchas estructuras de datos intermedias y objetos como dom de formulario, dom de datos y dom de presentación.
 
    Para los PDF forms, Adobe Acrobat tiene un motor XTG integrado para crear objetos y estructuras de datos intermedias. Acrobat también se encarga del diseño y las secuencias de comandos.
 
-   Para los formularios HTML5, los navegadores no tienen un motor XTG integrado para crear estructuras de datos intermedias y objetos a partir de bytes XDP sin procesar. Por lo tanto, para los formularios HTML5, las estructuras intermedias se generan en el servidor y se envían al cliente. En el cliente, el script basado en JavaScript y el motor de diseño utilizan estas estructuras intermedias.
+   Para los formularios HTML5, los navegadores no tienen un motor XTG incorporado para crear estructuras de datos intermedias y objetos a partir de bytes XDP sin procesar. Por lo tanto, para los formularios HTML5, las estructuras intermedias se generan en el servidor y se envían al cliente. En el cliente, el script basado en JavaScript y el motor de diseño utilizan estas estructuras intermedias.
 
    El tamaño de la estructura intermedia depende del tamaño del XDP original y de los datos combinados con el XDP.
 
@@ -137,7 +136,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
 
    * No se admiten tablas anidadas ni subformularios dentro de una tabla.
    * Los encabezados solo se admiten para las columnas superior o izquierda de la tabla. Los encabezados no son compatibles con los elementos de la tabla intermedia. Puede aplicar encabezados a varios encabezados de fila y columna siempre que se admitan todas estas filas y columnas junto con la fila superior o la columna situada más a la izquierda de la tabla.
-   * `Rowspan`y  `colspan`desde una ubicación aleatoria dentro de la tabla no es compatible.
+   * `Rowspan`y `colspan`no se admite desde una ubicación aleatoria dentro de la tabla.
 
    * No se puede añadir ni eliminar dinámicamente la instancia de filas que contienen elementos con un valor de extensión bueno a 1.
 
@@ -154,9 +153,9 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
 
    Respuesta: Los formularios HTML5 ignoran las propiedades de aspecto personalizadas del botón de radio y las casillas de verificación. Los botones de opción y las casillas de verificación aparecen según las especificaciones del navegador subyacente.
 
-1. Cuando se abre un formulario HTML5 en un explorador compatible, el borde de los campos colocados adyacentemente no se alinea correctamente o los subformularios aparecen superpuestos. Cuando se previsualiza el mismo formulario HTML5 en Forms Designer, los campos y la presentación no aparecen desalineados y los subformularios aparecen en la posición correcta. ¿Cómo solucionar el problema?
+1. Cuando se abre un formulario de HTML5 en un explorador compatible, el borde de los campos colocados de forma adyacente no se alinea correctamente o los subformularios aparecen superpuestos. Cuando se obtiene una vista previa del mismo formulario HTML5 en Forms Designer, los campos y la presentación no aparecen mal alineados y los subformularios aparecen en la posición correcta. ¿Cómo solucionar el problema?
 
-   Cuando un subformulario está configurado con una posición variable del contenido y el subformulario tiene un elemento de borde oculto, el borde de los campos colocados adyacentemente no se alinea correctamente o los subformularios parecen superpuestos. Para resolver el problema, puede quitar o comentar los elementos ocultos &lt;border> del XDP correspondiente. Por ejemplo, el siguiente elemento &lt;border> está marcado como comentario:
+   Cuando un subformulario está configurado con una posición variable del contenido y el subformulario tiene un elemento de borde oculto, el borde de los campos colocados adyacentemente no se alinea correctamente o los subformularios parecen superpuestos. Para resolver el problema, puede quitar o comentar el objeto oculto &lt;border> elementos del XDP correspondiente. Por ejemplo: &lt;border> El elemento está marcado como comentario:
 
    ```xml
                <!--<border>
@@ -172,6 +171,10 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
 1. ¿Los formularios HTML5 admiten patrones de visualización para campos flotantes?
 
    Respuesta: Los formularios HTML5 no admiten patrones de visualización para campos flotantes.
+
+1. ¿Cuál es el formato del campo Fecha en HTML5 Forms?
+
+Respuesta: El campo Date acepta el formato ISO, AAAA-MM-DD. Si especifica una fecha en otro formato, el campo Fecha no aceptará el formato hasta que el usuario extraiga el campo del tabulador.
 
 ### Creación de secuencias de comandos {#scripting}
 
@@ -189,8 +192,8 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
 
 1. ¿Existe alguna convención de nombres recomendada y hay alguna palabra clave reservada que se pueda evitar?
 
-   * En AEM Forms Designer, se recomienda no comenzar el nombre de un objeto (como un subformulario o un campo de texto) con un guión bajo (_). Para utilizar guiones bajos al principio del nombre, agregue un prefijo después del guión bajo, _&lt;prefix>&lt;objectname>.
-   * Todas las API de formularios HTML5 son palabras clave reservadas. Para las API y funciones personalizadas, utilice un nombre que no sea idéntico al de las API de [formularios HTML5](/help/forms/using/scripting-support.md).
+   * En AEM Forms Designer, se recomienda no comenzar el nombre de un objeto (como un subformulario o un campo de texto) con un guión bajo (_). Para utilizar guiones bajos al principio del nombre, agregue un prefijo después del guión bajo._&lt;prefix>&lt;objectname>.
+   * Todas las API de formularios de HTML5 son palabras clave reservadas. Para las API y funciones personalizadas, utilice un nombre que no sea idéntico al de [API de HTML5 forms](/help/forms/using/scripting-support.md).
 
 1. ¿Los formularios HTML5 admiten campos flotantes?
 
@@ -200,20 +203,20 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
    >
    >De forma predeterminada, los campos no están habilitados para flotar. Puede utilizar Forms Designer para establecer la propiedad flotante de los campos.
 
-   1. Abra la lista CRXde y vaya al nodo `/content/xfaforms/profiles/default`.
-   1. Agregue una propiedad `mfDataDependentFloatingField`de tipo String y establezca el valor de la propiedad en `true`.
-   1. Haga clic en **Guardar todo**. Ahora los campos flotantes están habilitados para el Forms HTML mediante el perfil de renderización actualizado.
+   1. Abra la lista CRXde y vaya a la `/content/xfaforms/profiles/default` nodo .
+   1. Agregar una propiedad `mfDataDependentFloatingField`de tipo String y establezca el valor de la propiedad en `true`.
+   1. Haga clic en **Guardar todo**. Ahora los campos flotantes están habilitados para el Forms de HTML mediante el perfil de renderización actualizado.
 
       >[!NOTE]
       >
       >Para habilitar campos flotantes para un formulario específico sin actualizar el perfil de renderización, pase la propiedad mfDataDependentFloatingField=true como parámetro de URL.
 
-1. ¿Los formularios HTML5 ejecutan la secuencia de comandos de inicialización y el suceso de formulario listo varias veces?
+1. ¿Los formularios de HTML5 ejecutan la secuencia de comandos de inicialización y el suceso de formulario listo varias veces?
 
    Sí, las secuencias de comandos de inicialización y los sucesos preparados para el formulario se ejecutan varias veces, al menos una vez en el servidor y otra en el lado del cliente. Se recomienda escribir secuencias de comandos como sucesos initialize o form:ready basados en alguna lógica empresarial (datos de formulario o campo) para que la acción se realice en función del estado de los datos y del potencial idempotente (si los datos son iguales).
 
 ### Diseño de XDP {#designing-xdp}
 
-1. ¿Hay palabras clave reservadas en los formularios HTML5?
+1. ¿Hay alguna palabra clave reservada en los formularios HTML5?
 
-   Respuesta: Todas las API de formularios HTML5 son palabras clave reservadas. Para las API y funciones personalizadas, utilice un nombre que no sea idéntico al de las API de [formularios HTML5](/help/forms/using/scripting-support.md). Aparte de las palabras clave reservadas, si utiliza nombres de objeto que comiencen con un guión bajo (_), se recomienda agregar un prefijo único después del guión bajo. Añadir un prefijo ayuda a evitar posibles conflictos con las API internas de formularios HTML5. Por ejemplo, `_fpField1`
+   Respuesta: Todas las API de formularios de HTML5 son palabras clave reservadas. Para las API y funciones personalizadas, utilice un nombre que no sea idéntico al de [API de HTML5 forms](/help/forms/using/scripting-support.md). Aparte de las palabras clave reservadas, si utiliza nombres de objeto que comiencen con un guión bajo (_), se recomienda agregar un prefijo único después del guión bajo. Añadir un prefijo ayuda a evitar cualquier posible conflicto con las API internas de formularios de HTML5. Por ejemplo, `_fpField1`
