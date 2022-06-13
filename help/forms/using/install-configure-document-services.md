@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 4b3327ed46024662813bb538f8338c59e508e10e
+source-git-commit: 57bccab9b95d328591e6cbb1070fd9e59712c016
 workflow-type: tm+mt
-source-wordcount: '5330'
+source-wordcount: '5364'
 ht-degree: 1%
 
 ---
@@ -434,7 +434,7 @@ Se necesita una cuenta de usuario local para ejecutar el servicio Generador de P
 
 ### Configuración de la configuración de tiempo de espera {#configure-the-time-out-settings}
 
-1. En [Administrador de configuración AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
+1. En [Administrador de configuración de AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
 
    Agregue lo siguiente a **[!UICONTROL Propiedades personalizadas.name]** y haga clic en **[!UICONTROL Guardar]**. Establece el tiempo de espera de respuesta pendiente (también conocido como tiempo de espera de cliente CORBA) en 600 segundos.
 
@@ -765,18 +765,19 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
    * Utilice los siguientes comandos para generar prov.xml y volver a serializar la instalación existente usando el archivo prov.xml en lugar de los comandos proporcionados en [migración del número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) artículo numérico.
 
-      * Generar prov.xml
+          &quot;
+          
+          adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;leid>] [—regsuppress=ss] [—eulasuppress] [—configuraciones regionales=lista limitada de configuraciones regionales en formato xx_XX o ALL>] [—provfile=&lt;absolute path=&quot;&quot; to=&quot;&quot; prov.xml=&quot;&quot;>]
+          
+          &quot;
+      
+   * Serialice el paquete por volumen (vuelva a serializar la instalación existente usando el archivo prov.xml y la nueva serie): Ejecute el siguiente comando desde la carpeta de instalación de PRTK como administrador para serializar y activar los paquetes implementados en los equipos cliente:
 
-         ```
-         adobe_prtk --tool=VolumeSerialize --generate --serial=<serialnum> [--leid=<LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=<Absolute path to prov.xml>]
-         ```
-
-      * Serialice el paquete por volumen (vuelva a serializar la instalación existente usando el archivo prov.xml y la nueva serie): Ejecute el siguiente comando desde la carpeta de instalación de PRTK como administrador para serializar y activar los paquetes implementados en los equipos cliente:
-
-         ```
-         adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
-         ```
-
+          &quot;
+          adobe_prtk —tool=VolumeSerialize —provfile=C:\prov.xml -stream
+          
+          &quot;
+      
 * Para instalaciones a gran escala, utilice el [Customization Wizard de Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) para eliminar las versiones anteriores de Reader y Acrobat. Personalice el instalador e impleméntelo en todos los equipos de su organización.
 
 +++
