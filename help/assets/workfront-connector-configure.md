@@ -1,25 +1,30 @@
 ---
-title: Configuración [!DNL Workfront for Experience Manager enhanced connector]
-description: Configuración [!DNL Workfront for Experience Manager enhanced connector]
+title: Configuración de [!DNL Workfront for Experience Manager enhanced connector]
+description: Configuración de [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: 8d39e1c86e5185a181400f10b7822a57c9d3aeae
+exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
+source-git-commit: 00713ea7fe06d4e180232e48a9e3f11b53f4326f
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1714'
 ht-degree: 0%
 
 ---
 
-
-# Configuración [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+# Configuración de [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] configura el conector mejorado después de instalarlo. Para obtener instrucciones sobre la instalación, consulte [Instalación del conector](/help/assets/workfront-integrations.md).
 
 >[!IMPORTANT]
 >
->El Adobe requiere la implementación y la configuración del [!DNL Adobe Workfront for Experience Manager enhanced connector] solo a través de socios certificados o [!DNL Adobe Professional Services]. Si se implementa y se configura sin un socio certificado o [!DNL Adobe Professional Services], no es compatible con Adobe.
+>* El Adobe requiere la implementación y la configuración del [!DNL Adobe Workfront for Experience Manager enhanced connector] solo a través de socios certificados o [!DNL Adobe Professional Services]. Si se implementa y se configura sin un socio certificado o [!DNL Adobe Professional Services], no es compatible con Adobe.
 >
->Adobe puede publicar actualizaciones en [!DNL Adobe Workfront] y [!DNL Adobe Experience Manager] que hacen que este conector sea redundante; si esto ocurre, es posible que se requiera a los clientes que pasen del uso de este conector.
+>* Adobe puede publicar actualizaciones en [!DNL Adobe Workfront] y [!DNL Adobe Experience Manager] que hacen que este conector sea redundante; si esto ocurre, es posible que se requiera a los clientes que pasen del uso de este conector.
+>
+>* Adobe admite las versiones 1.7.4 y posteriores del conector mejorado. No se admiten versiones anteriores y personalizadas. Para comprobar la versión del conector mejorado, vaya a la `digital.hoodoo` grupo disponible en el panel izquierdo de [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es).
+>
+>* Consulte [Examen de certificación de socios para conector mejorado de Workfront para Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obtener información acerca del examen, consulte [Guía de examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+
 
 ## Configurar suscripciones de eventos {#event-subscriptions}
 
