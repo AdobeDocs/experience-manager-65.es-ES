@@ -1,8 +1,8 @@
 ---
 title: 'Uso de versiones de página  '
-seo-title: 'Uso de versiones de página  '
+seo-title: Working with Page Versions
 description: Cree, compare y restaure versiones de una página
-seo-description: Cree, compare y restaure versiones de una página
+seo-description: Create, compare, and restore versions of a page
 uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 4d5f7057178ea0a1f00ea363b76dacdfb714b5e3
+source-git-commit: b11a97b9b00e6f80fb0243e234ed1dc2c004ed3a
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 69%
+source-wordcount: '1491'
+ht-degree: 68%
 
 ---
 
@@ -68,11 +68,11 @@ Puede crear una versión de su recurso desde:
 
 Una vez creada una versión de la página, existen varios métodos para restablecer una versión anterior:
 
-* la opción **Revertir a esta versión** del carril [Línea de tiempo](/help/sites-authoring/basic-handling.md#timeline)
+* el **Revertir a esta versión** de la [Cronología](/help/sites-authoring/basic-handling.md#timeline) carril
 
    Restablezca una versión anterior de una página seleccionada.
 
-* las opciones **Restaurar** de la barra de herramientas de acciones [superior](/help/sites-authoring/basic-handling.md#actions-toolbar)
+* el **Restaurar** opciones de la parte superior [barra de herramientas acciones](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
    * **Restaurar versión**
 
@@ -97,7 +97,7 @@ Una vez creada una versión de la página, existen varios métodos para restable
 
 ### Revertir a una versión {#revert-to-a-version}
 
-Para **Revertir** la página seleccionada a una versión anterior:
+Hasta **Revertir** la página seleccionada a una versión anterior:
 
 1. Desplácese para mostrar la página que quiere revertir a una versión anterior.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -112,9 +112,9 @@ Para **Revertir** la página seleccionada a una versión anterior:
 
 Este método se puede utilizar para restaurar versiones de páginas especificadas dentro de la carpeta actual; esto también puede incluir la restauración de páginas que se han eliminado anteriormente:
 
-1. Vaya a la carpeta requerida y [seleccione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Vaya a y [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), la carpeta requerida.
 
-1. Seleccione **Restaurar** y, a continuación, **Restaurar versión** en la barra de herramientas de acciones](/help/sites-authoring/basic-handling.md#actions-toolbar) superior.[
+1. Select **Restaurar**, luego **Restaurar versión** desde la parte superior [barra de herramientas acciones](/help/sites-authoring/basic-handling.md#actions-toolbar).
 
    >[!NOTE]
    >
@@ -138,7 +138,7 @@ Este método se puede utilizar para restaurar versiones de páginas especificada
 
    ![Restaurar versión: seleccionar página](/help/sites-authoring/assets/versions-restore-version-03.png)
 
-1. Seleccione **Restaurar** para la versión seleccionada, de la página seleccionada, que se restaurará como versión actual.
+1. Select **Restaurar** para la versión seleccionada, de la página seleccionada, que se restaurará como la versión actual.
 
 >[!NOTE]
 >
@@ -148,23 +148,23 @@ Este método se puede utilizar para restaurar versiones de páginas especificada
 
 Este método puede utilizarse para restaurar una versión de un árbol en una fecha y hora especificadas; esto puede incluir páginas que se han eliminado anteriormente:
 
-1. Vaya a la carpeta requerida y [seleccione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Vaya a y [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), la carpeta requerida.
 
-1. Seleccione **Restaurar** y, a continuación, **Restaurar árbol** en la barra de herramientas de acciones](/help/sites-authoring/basic-handling.md#actions-toolbar) superior. [ Se mostrará la última versión del árbol:
+1. Select **Restaurar**, luego **Restaurar árbol** desde la parte superior [barra de herramientas acciones](/help/sites-authoring/basic-handling.md#actions-toolbar). Se mostrará la última versión del árbol:
 
    ![Restaurar árbol](/help/sites-authoring/assets/versions-restore-tree-02.png)
 
-1. Utilice el selector de fecha y hora **Últimas versiones en fecha** para seleccionar otra versión del árbol: la que se va a restaurar.
+1. Utilice el selector de fecha y hora en **Últimas versiones en la fecha** para seleccionar otra versión del árbol: la que se va a restaurar.
 
-1. Establezca el indicador **Páginas sin versiones conservadas** según sea necesario:
+1. Establecer el indicador **Conservar páginas sin versiones** según sea necesario:
 
    * Si está activo (seleccionado), las páginas sin versiones se mantendrán y no se verán afectadas por la restauración.
 
    * Si está inactivo (sin seleccionar), todas las páginas sin versiones se eliminarán, ya que no existían en el árbol con versiones.
 
-1. Seleccione **Restaurar** para que la versión seleccionada del árbol se restaure como la versión *actual*.
+1. Select **Restaurar** para que la versión seleccionada del árbol se restaure como el *current* versión.
 
-## Vista previa de una versión    {#previewing-a-version}
+## Vista previa de una versión   {#previewing-a-version}
 
 Puede previsualizar una versión específica:
 
@@ -200,6 +200,10 @@ Para comparar una versión anterior con la página actual:
 ## Deformación de tiempo   {#timewarp}
 
 Deformación de tiempo es una función diseñada para simular el estado *publicado* de una página en periodos específicos en el pasado.
+
+>[!TIP]
+>
+>[Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro](/help/sites-authoring/launches.md) cuando se ejecuta AEM 6.5.10.0 o posterior.
 
 Debido a que la creación de contenido es un proceso continuo y colaborativo, el propósito de Deformación de tiempo es permitir que los creadores rastreen el sitio web publicado con el paso del tiempo para comprender cómo ha cambiado el contenido. Esta función emplea las versiones de página para determinar el estado del entorno de publicación.
 
