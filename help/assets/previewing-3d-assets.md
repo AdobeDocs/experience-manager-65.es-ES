@@ -1,19 +1,24 @@
 ---
-title: Vista previa de recursos 3D
+title: Vista previa de activos 3D
 description: Obtenga información sobre cómo previsualizar recursos 3D en Experience Manager.
 contentOwner: Rick Brough
 docset: aem65
 feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: 32e637463a2f68a48b39c5dea9cc3cc4d1596d9b
+source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 10%
+source-wordcount: '580'
+ht-degree: 12%
 
 ---
 
 # Vista previa de recursos 3D en Adobe Experience Manager {#previewing-3d-assets-aem}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
+| AEM 6.5 | Este artículo |
 
 Experience Manager admite la carga, entrega y previsualización interactiva de recursos 3D como parte del proceso de creación.
 

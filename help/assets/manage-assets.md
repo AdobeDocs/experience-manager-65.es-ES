@@ -1,19 +1,25 @@
 ---
-title: Administrar los recursos digitales
+title: Administración de recursos digitales
 description: Conozca las tareas de administración de recursos, como cargar, descargar, editar, buscar, eliminar, anotar y crear versiones de sus recursos digitales.
 contentOwner: AG
 mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: dd1e08bee03a6c7b07b32b0fb929d02dad467744
 workflow-type: tm+mt
-source-wordcount: '9878'
+source-wordcount: '9913'
 ht-degree: 4%
 
 ---
 
-# Administrar los recursos digitales {#manage-digital-assets}
+# Administración de recursos digitales {#manage-digital-assets}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM 6.5 | Este artículo |
+| AEM 6.4 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-assets-touch-ui.html?lang=en) |
 
 En [!DNL Adobe Experience Manager Assets], puede hacer más que almacenar y administrar los recursos. [!DNL Experience Manager] ofrece funciones de administración de recursos de nivel empresarial. Puede editar y compartir recursos, ejecutar búsquedas avanzadas y crear varias representaciones de decenas de formatos de archivo compatibles. También puede administrar versiones y derechos digitales, automatizar el procesamiento de recursos, administrar y administrar metadatos, colaborar mediante anotaciones y mucho más.
 
@@ -40,7 +46,7 @@ No se admiten los siguientes caracteres (lista de) separados por espacios:
 
 No incluya caracteres especiales en las extensiones de los nombres de archivo de los recursos.
 
-## Cargar recursos {#uploading-assets}
+## Carga de recursos {#uploading-assets}
 
 <!-- TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
@@ -159,7 +165,7 @@ Dynamic Media permite la carga por lotes de recursos a través del servidor FTP.
 
 >[!NOTE]
 >
->Para cargar recursos a través de FTP en el modo Dynamic Media - Scene7 , instale el Feature Pack 18912 en el [!DNL Experience Manager] instancias de autor. Contacto [Asistencia al cliente de Adobe](https://experienceleague.adobe.com/?support-solution=General#support) para obtener acceso a FP-18912 y completar la configuración de su cuenta de FTP. Para obtener más información, consulte [Instalación del paquete de características 18912 para la migración masiva de recursos](/help/assets/bulk-ingest-migrate.md).
+>Para cargar recursos a través de FTP en el modo Dynamic Media - Scene7 , instale el Feature Pack 18912 en el [!DNL Experience Manager] instancias de autor. Contacto [Asistencia al cliente de Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=es#support) para obtener acceso a FP-18912 y completar la configuración de su cuenta de FTP. Para obtener más información, consulte [Instalación del paquete de características 18912 para la migración masiva de recursos](/help/assets/bulk-ingest-migrate.md).
 >
 >Si utiliza FTP para cargar recursos, la configuración de carga especificada en [!DNL Experience Manager] se ignoran. En su lugar, se utilizan las reglas de procesamiento de archivos, tal como se definen en Dynamic Media Classic.
 
@@ -340,7 +346,7 @@ Algunas limitaciones de la función son:
 * No puede seleccionar dos archivos ZIP al mismo tiempo y extraerlos. Solo puede extraer un archivo ZIP a la vez.
 * Al cargar un archivo ZIP, si el cuadro de diálogo de carga muestra un error de 500 servidor, vuelva a intentarlo después de instalar [el Service Pack más reciente](/help/release-notes/release-notes.md).
 
-## Vista previa de recursos {#previewing-assets}
+## Previsualización de recursos {#previewing-assets}
 
 Para obtener una vista previa de un recurso, siga estos pasos.
 
@@ -577,7 +583,7 @@ Para eliminar un recurso o una carpeta que contenga un recurso:
 >
 >Sin embargo, los grupos de usuarios redundantes, no utilizados y autogenerados existentes se pueden limpiar del repositorio utilizando `clean` método en JMX en la instancia de autor (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
 
-## Descargar recursos {#downloading-assets}
+## Descarga de recursos {#downloading-assets}
 
 Consulte [Descargar recursos del Experience Manager](/help/assets/download-assets-from-aem.md).
 
@@ -656,7 +662,7 @@ Al examinar una carpeta o una colección en la [!DNL Assets] interfaz de usuario
 
 Para obtener más información, consulte [ver y seleccionar sus recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
-## Editar imágenes {#editing-images}
+## Edición de imágenes {#editing-images}
 
 Las herramientas de edición de [!DNL Assets] permite realizar pequeños trabajos de edición en recursos de imagen. Puede recortar, rotar, voltear y realizar otros trabajos de edición en imágenes. También puede añadir mapas de imagen a los recursos.
 
