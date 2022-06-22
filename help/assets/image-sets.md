@@ -11,9 +11,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2194'
 ht-degree: 7%
 
 ---
@@ -35,6 +35,15 @@ Por ejemplo, supongamos que desea presentar imágenes de mayúsculas con diferen
 >[!NOTE]
 >
 >Para obtener información sobre la interfaz de usuario de Assets, consulte [Administrar recursos](/help/assets/manage-assets.md).
+
+Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas recomendadas y aplica los límites siguientes:
+
+| Recurso: tipo de límite | Práctica recomendada | Límite implementado | Cambios en el límite 31 de diciembre de 2022 |
+| --- | --- | --- | --- |
+| **Conjunto de imágenes** - Número de activos duplicados por conjunto | Sin duplicados | 100 | 20 |
+| **Conjunto de imágenes** - Número máximo de imágenes por conjunto | 5 a 10 imágenes por conjunto | 1000 |
+
+Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
 ## Inicio rápido: Conjuntos de imágenes {#quick-start-image-sets}
 
@@ -130,6 +139,15 @@ Cuando se añaden recursos al conjunto, estos se añaden automáticamente en ord
 >[!NOTE]
 >
 >Los conjuntos de imágenes no son compatibles con los recursos con &quot;,&quot; (coma) en el nombre del archivo.
+
+Al crear un conjunto de imágenes, Adobe recomienda las siguientes prácticas recomendadas y aplica los límites siguientes:
+
+| Recurso: tipo de límite | Práctica recomendada | Límite implementado | Cambios en el límite 31 de diciembre de 2022 |
+| --- | --- | --- | --- |
+| **Conjunto de imágenes** - Número de activos duplicados por conjunto | Sin duplicados | 100 | 20 |
+| **Conjunto de imágenes** - Número máximo de imágenes por conjunto | 5 a 10 imágenes por conjunto | 1000 |
+
+Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
 **Para crear conjuntos de imágenes:**
 

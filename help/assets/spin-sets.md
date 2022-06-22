@@ -11,10 +11,10 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 9%
+source-wordcount: '1946'
+ht-degree: 8%
 
 ---
 
@@ -31,6 +31,14 @@ Los conjuntos de giros se designan mediante un banner con la palabra **[!UICONTR
 >[!NOTE]
 >
 >Para obtener información sobre la interfaz de usuario de Assets, consulte [Administrar recursos](/help/assets/manage-assets.md).
+
+Cuando crea un conjunto de giros, Adobe recomienda la siguiente práctica recomendada y aplica el siguiente límite:
+
+| Tipo de límite | Práctica recomendada | Límite implementado |
+| --- | --- | --- |
+| Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
+
+Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
 ## Inicio rápido: Conjuntos de giros {#quick-start-spin-sets}
 
@@ -113,6 +121,14 @@ En esta sección se describe cómo crear un conjunto de giros en el Experience M
 >[!NOTE]
 >
 >Orden en el que aparecen las imágenes en un conjunto de giros. Asegúrese de ordenarlas para que el giro sea una vista suave de 360°.
+
+Cuando crea un conjunto de giros, Adobe recomienda la siguiente práctica recomendada y aplica el siguiente límite:
+
+| Tipo de límite | Práctica recomendada | Límite implementado |
+| --- | --- | --- |
+| Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
+
+Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
 **Para crear un conjunto de giros:**
 

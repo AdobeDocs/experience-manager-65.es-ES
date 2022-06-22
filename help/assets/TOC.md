@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, procese y distribuya recursos digitales.
-source-git-commit: 66958dc5328177d27dbdddf0c8983096e38f76b6
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '675'
 ht-degree: 49%
 
 ---
@@ -62,6 +62,7 @@ ht-degree: 49%
    + [Entrega de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activación de la protección de enlaces interactivos en Dynamic Media](hotlink-protection.md)
    + [Compatibilidad con 3D](/help/assets/assets-3d.md)
+   + [Limitaciones de Dynamic Media](limitations.md)
    + [Conjuntos de imágenes](image-sets.md)
    + [Imágenes panorámicas](panoramic-images.md)
    + [Conjuntos de medios mixtos](mixed-media-sets.md)
