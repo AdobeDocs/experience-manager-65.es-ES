@@ -4,9 +4,9 @@ description: Conozca las tareas de administración de recursos, como cargar, des
 contentOwner: AG
 role: User
 feature: Asset Management,Search
-mini-toc-levels: 3
+mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: dabd27389c9fc5f30589d554ba4da8fce041dd4b
 workflow-type: tm+mt
 source-wordcount: '9974'
 ht-degree: 4%
