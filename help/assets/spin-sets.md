@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1952'
 ht-degree: 8%
 
 ---
@@ -34,7 +34,7 @@ Los conjuntos de giros se designan mediante un banner con la palabra **[!UICONTR
 
 Cuando crea un conjunto de giros, Adobe recomienda la siguiente práctica recomendada y aplica el siguiente límite:
 
-| Tipo de límite | Práctica recomendada | Límite implementado |
+| Tipo de límite | Práctica recomendada | Límite impuesto |
 | --- | --- | --- |
 | Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
 
@@ -50,7 +50,7 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
    Consulte [Dynamic Media: formatos de imagen de trama compatibles](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) para obtener una lista de los formatos admitidos por los conjuntos de giros.
 
-1. [Crear conjuntos de giros](#creating-spin-sets).
+1. [Crear un conjunto de giros](#creating-spin-sets).
 
    Para crear un conjunto de giros, seleccione **[!UICONTROL Crear > Conjunto de giros]** y asigne un nombre al conjunto, elija los recursos y elija el orden en que aparecen las imágenes.
 
@@ -68,15 +68,15 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
    Consulte [Añadir y editar ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md).
 
-1. [Ver conjuntos de giros](#viewing-spin-sets).
+1. [Ver un conjunto de giros](#viewing-spin-sets).
 
    Puede ver y acceder a los conjuntos creados mediante ajustes preestablecidos de conjuntos de lotes de tres formas diferentes. (Conjuntos creados mediante ajustes preestablecidos de conjuntos de lotes, *not* en la interfaz de usuario).
 
-1. [Vista previa de conjuntos de giros](/help/assets/previewing-assets.md).
+1. [Vista previa de un conjunto de giros](/help/assets/previewing-assets.md).
 
    Seleccione el conjunto de giros y podrá previsualizarlo. Rotar el conjunto de giros. Puede elegir diferentes visualizadores del **[!UICONTROL Visualizadores]** , disponible en el menú desplegable del carril izquierdo.
 
-1. [Publicar conjuntos de giros](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Publicar un conjunto de giros](/help/assets/publishing-dynamicmedia-assets.md).
 
    Al publicar un conjunto de giros, se activa la dirección URL y la cadena Incrustar. Además, debe [publicar el ajuste preestablecido de visor](/help/assets/managing-viewer-presets.md).
 
@@ -88,9 +88,9 @@ Para poner en marcha rápidamente los conjuntos de giros, siga estos pasos:
 
    Consulte [Vinculación de un conjunto de giros a una página web](/help/assets/linking-urls-to-yourwebapplication.md) y [Incrustar el visualizador de imágenes o vídeos](/help/assets/embed-code.md).
 
-Si es necesario, puede [editar conjuntos de giros](#editing-spin-sets). Además, puede ver y modificar [Propiedades del conjunto de giros](/help/assets/manage-assets.md#editing-properties).
+Si es necesario, puede [editar un conjunto de giros](#editing-spin-sets). Además, puede ver y modificar [Propiedades del conjunto de giros](/help/assets/manage-assets.md#editing-properties).
 
-## Cargar recursos para conjuntos de giros {#uploading-assets-for-spin-sets}
+## Carga de recursos para un conjunto de giros {#uploading-assets-for-spin-sets}
 
 Como mínimo, necesitará entre 8 y 12 tomas de un elemento para un conjunto de giros unidimensional y entre 16 y 24 para un conjunto de giros bidimensional. Las tomas deben realizarse a intervalos regulares para dar la impresión de que el objeto está girando y siendo volteado. Por ejemplo, si un conjunto de giros unidimensional incluye 12 tomas, gire el elemento 30° (360/12) para cada toma.
 
@@ -124,7 +124,7 @@ En esta sección se describe cómo crear un conjunto de giros en el Experience M
 
 Cuando crea un conjunto de giros, Adobe recomienda la siguiente práctica recomendada y aplica el siguiente límite:
 
-| Tipo de límite | Práctica recomendada | Límite implementado |
+| Tipo de límite | Práctica recomendada | Limitado |
 | --- | --- | --- |
 | Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 |
 

@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '2825'
+source-wordcount: '2831'
 ht-degree: 10%
 
 ---
@@ -33,9 +33,9 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplic
 
 Al implementar Recorte inteligente en imágenes, Adobe recomienda las siguientes prácticas recomendadas y aplica el siguiente límite:
 
-| Tipo de límite | Práctica recomendada | Límite implementado |
-| --- | --- | --- |
-| Número de recortes inteligentes por imagen | 5 | 100 |
+| Tipo de límite | Práctica recomendada | Límite impuesto | Cambio al límite el 31 de diciembre de 2022 |
+| --- | --- | --- | --- |
+| Número de recortes inteligentes por imagen | 5 | 100 | 20 |
 
 Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
