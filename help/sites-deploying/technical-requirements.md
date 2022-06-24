@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 80298613370c7187288b33e5a665a074ccb5cd3e
+source-git-commit: 3643534fa0f24a1c2ea00c35853a2671b156bf9a
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: '3329'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Adobe recomienda estas configuraciones y proporciona soporte completo como parte
 <table>
  <tbody>
   <tr>
-   <td>Nivel de asistencia</td>
+   <td>Nivel de soporte</td>
    <td>Descripción<br /> </td>
   </tr>
   <tr>
@@ -73,7 +73,7 @@ Adobe recomienda estas configuraciones y proporciona soporte completo como parte
 
 ### Configuraciones no admitidas {#unsupported-configurations}
 
-| Nivel de asistencia | Descripción |
+| Nivel de soporte | Descripción |
 |---|---|
 | **Z: No admitido** | La configuración no es compatible. Adobe no realiza ninguna declaración sobre si la configuración funciona o no y no la admite. |
 
@@ -89,7 +89,7 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
 >
 >Se recomienda realizar un seguimiento de los boletines de seguridad del proveedor de Java para garantizar la seguridad de los entornos de producción e instalar las últimas actualizaciones de Java.
 
-| **Plataforma** | **Nivel de asistencia** | **Vincular** |
+| **Plataforma** | **Nivel de soporte** | **Vincular** |
 |---|---|---|
 | Oracle Java SE 11 JDK - 64 bits | A: Admitido `[1]` | [Descargar](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | Oracle Java SE 10 JDK | Z: No admitido `[1]` |
@@ -112,7 +112,7 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
 
 Existen varias opciones para implementar el repositorio de Adobe Experience Manager. Consulte la siguiente lista para ver las tecnologías compatibles y las opciones de almacenamiento.
 
-| **Plataforma** | **Descripción** | **Nivel de asistencia** |
+| **Plataforma** | **Descripción** | **Nivel de soporte** |
 |---|---|---|
 | **Sistema de archivos con archivos TAR** `[1]` | Repositorio | A: Admitido |
 | **Sistema de archivos con almacén de datos** `[1]` | Binarios | A: Admitido |
@@ -167,7 +167,7 @@ Adobe Experience Manager puede ejecutarse como servidor independiente (el archiv
 
 La versión mínima de la API de servlet necesaria es Servlet 3.1
 
-| Plataforma | Nivel de asistencia |
+| Plataforma | Nivel de soporte |
 |---|---|
 | **Motor Servlet integrado de inicio rápido (Jetty 9.4)** | A: Admitido |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: No admitido |
@@ -185,7 +185,7 @@ La versión mínima de la API de servlet necesaria es Servlet 3.1
 
 Adobe Experience Manager funciona con las siguientes plataformas de servidor para entornos de producción:
 
-| **Plataforma** | **Nivel de asistencia** |
+| **Plataforma** | **Nivel de soporte** |
 |---|---|
 | **Linux, basado en la distribución de Red Hat** | A: Admitido `[1]` `[3]` |
 | Linux, basado en la distribución de Debian incl. Ubuntu | A: Admitido `[2]` |
@@ -207,7 +207,9 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 
 Adobe Experience Manager es compatible con la ejecución en una máquina virtual en entornos de computación en la nube, como Microsoft Azure y Amazon Web Service (AWS), de acuerdo con los requisitos técnicos enumerados en esta página y según los términos de asistencia estándar de Adobe.
 
-Adobe recomienda utilizar Adobe Managed Services para implementar AEM en Azure o AWS. Adobe Managed Services proporciona a los expertos experiencia y habilidades para implementar y operar AEM en estos entornos de computación en la nube. Consulte [documentación adicional sobre Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+Para un entorno nativo de la nube, revise la última oferta de la línea de productos AEM: Adobe Experience Manager as a Cloud Service. Consulte [Documentación de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) para obtener más información.
+
+Adobe también ofrece Adobe Managed Services para implementar AEM en Azure o AWS. Adobe Managed Services proporciona a los expertos experiencia y habilidades para implementar y operar AEM en estos entornos de computación en la nube. Consulte [documentación adicional sobre Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 
 En todos los demás casos de implementación de AEM en Azure o AWS, o en cualquier otro entorno de computación en nube, la compatibilidad con Adobe se contendrá en el entorno de computación virtual de acuerdo con las especificaciones técnicas enumeradas en esta página. Cualquier problema informado relativo a AEM que se ejecute en cualquiera de estos entornos de nube tendrá que ser reproducible de forma independiente de cualquier servicio de nube específico para el entorno de computación en nube, a menos que el servicio de nube sea compatible específicamente como parte de los requisitos técnicos enumerados en esta página, por ejemplo, almacenamiento Azure Blob o AWS S3.
 
@@ -219,7 +221,7 @@ Dispatcher es el componente de almacenamiento en caché y equilibrio de carga. [
 
 Los siguientes servidores web son compatibles para su uso con Dispatcher versión 4.3.2:
 
-| Plataforma | Nivel de asistencia |
+| Plataforma | Nivel de soporte |
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | A: Admitido |
 | Microsoft IIS 10 (Servidor de información de Internet) | A: Admitido |
