@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: e3bc820dd9bfce95cdc0c8c58c075893a1f0a625
+source-git-commit: de7b1d2d0f3863f9554b346204c18cc57d4bf814
 workflow-type: tm+mt
 source-wordcount: '7575'
 ht-degree: 0%
@@ -288,7 +288,7 @@ El paso Firmar documento le permite utilizar Adobe Sign para firmar documentos. 
 * **Seleccione Ruta de acceso de datos adjuntos de entrada mediante:** Ruta de los archivos adjuntos. Estos archivos adjuntos se incluyen en el documento de firma. Puede mantener los archivos adjuntos en una ubicación relativa a la carga útil, especificar una ruta absoluta de los archivos adjuntos o recuperar los archivos adjuntos almacenados en una variable de matriz del tipo Document data .
 
 
-Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos los archivos disponibles directamente en la carpeta se adjuntan al documento de firma. Si hay archivos disponibles en las carpetas disponibles directamente en la ruta de acceso de datos adjuntos especificada, los archivos se incluyen en Documento de firma como archivos adjuntos. Si hay carpetas en carpetas disponibles directamente, se omiten.
+   Si especifica la ruta de una carpeta, por ejemplo, los archivos adjuntos, todos los archivos disponibles directamente en la carpeta se adjuntan al documento de firma. Si hay archivos disponibles en las carpetas disponibles directamente en la ruta de acceso de datos adjuntos especificada, los archivos se incluyen en Documento de firma como archivos adjuntos. Si hay carpetas en carpetas disponibles directamente, se omiten.
 
 * **Días hasta la fecha límite:** Un documento se marca con vencimiento (fecha límite superada) después de que no haya actividad en la tarea por el número de días especificado en la variable **Días hasta la fecha límite** campo . El número de días se cuenta después de que el documento se asigne a un usuario para su firma.
 * **Frecuencia del correo electrónico recordatorio:** Puede enviar un correo electrónico recordatorio a intervalos diarios o semanales. La semana se cuenta desde el día en que se asigna el documento a un usuario para su firma.
