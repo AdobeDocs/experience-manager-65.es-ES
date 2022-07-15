@@ -5,7 +5,7 @@ exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 source-git-commit: a2b3cb81fb15a1f03004e42cafbf92c84c9d7b89
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 42%
+ht-degree: 43%
 
 ---
 
@@ -18,7 +18,7 @@ Las Notas de la versión de AEM incluyen información importante sobre la versi�
 ## Artículos clave AEM
 
 * [Introducción a AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es)
-* [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
 ## Guías del usuario de AEM 6.5

@@ -5,11 +5,11 @@ audience: end-user
 user-guide-title: Guía del usuario de AEM 6.5 Mobile
 breadcrumb-title: Guía móvil
 user-guide-description: Cree y gestione contenido para aplicaciones móviles.
-feature: Móvil
+feature: Mobile
 role: User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '331'
 ht-degree: 12%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 12%
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile: preparación para el RGPD](aem-mobile-gdpr-compliance.md)
    + [Desarrollo de aplicaciones móviles](develop-mobile-apps.md)
-+ Creación de la aplicación de servicios bajo demanda {#authoring}
++ Creación de una aplicación de servicios bajo demanda {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Administración de contenido](mobile-apps-ondemand-manage-content-ondemand.md)
    + [Publicar Cancelar publicación de contenido](mobile-on-demand-publishing-unpublishing.md)
@@ -49,7 +49,7 @@ ht-degree: 12%
    + [Renderización y entrega](rendering-and-delivery.md)
    + [Content Services](developing-content-services.md)
    + [Entrega de contenido](develop-content-as-a-service.md)
-+ Administración de la aplicación de servicios bajo demanda {#administering}
++ Administrar la aplicación de servicios bajo demanda {#administering}
    + [AEM Mobile On Demand](aem-mobile.md)
    + [Configuración de AEM Mobile](aem-mobile-setup.md)
    + [Configurar usuarios y grupos de usuarios](aem-mobile-configure-users.md)

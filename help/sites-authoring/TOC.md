@@ -28,7 +28,7 @@ ht-degree: 87%
    + [Búsqueda](search.md)
    + [Configuración del entorno de cuenta](user-properties.md)
    + [Su bandeja de entrada](inbox.md)
-   + [Métodos abreviados del teclado para consolas](keyboard-shortcuts.md)
+   + [Métodos abreviados de teclado para consolas](keyboard-shortcuts.md)
    + [Seleccionar la IU](select-ui.md)
 + Creación {#authoring}
    + [Herramientas y entorno de creación](author-environment-tools.md)

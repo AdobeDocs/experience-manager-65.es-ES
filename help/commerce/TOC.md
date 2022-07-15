@@ -25,7 +25,7 @@ ht-degree: 70%
       + [Experiencias de Commerce](cif/authoring/authoring-commerce-experiences.md)
       + [Product Cockpit](cif/authoring/product-cockpit.md)
       + [Enriquecimiento de datos de producto con contenido asociado](cif/authoring/enrich-product-associated-content.md)
-      + [Recomendaciones de productos](cif/authoring/product-recommendations.md)
+      + [Recomendaciones de producto](cif/authoring/product-recommendations.md)
    + Administración {#administering}
       + [Configuración de varias tiendas](cif/configuring/multi-store-setup.md)
       + [Uso de varias plantillas](cif/configuring/multi-template-usage.md)

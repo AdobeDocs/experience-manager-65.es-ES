@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: a1821ab210b3735ca5b59b075659ff30d5872b8e
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 29%
+ht-degree: 35%
 
 ---
 
@@ -26,12 +26,12 @@ ht-degree: 29%
    + [Información general de Live Copy](msm-livecopy-overview.md)
    + [Configuración de la sincronización de Live Copy](msm-sync.md)
    + [Creación y sincronización de Live Copies](msm-livecopy.md)
-   + [Conflictos de implementación de MSM](msm-rollout-conflicts.md)
+   + [Conflictos de despliegue de MSM](msm-rollout-conflicts.md)
    + [Solución de problemas y preguntas más frecuentes sobre MSM](troubleshoot-msm.md)
    + [Prácticas recomendadas de MSM](msm-best-practices.md)
    + [Traducción de contenido para sitios multilingües](translation.md)
    + [Administración de proyectos de traducción](tc-manage.md)
-   + [Identificación del contenido para traducir](tc-rules.md)
+   + [Identificación del contenido a traducir](tc-rules.md)
    + [Preparación del contenido para su traducción](tc-prep.md)
    + [Creación de una raíz de idioma mediante la IU clásica](tc-lroot-classic.md)
    + [Volver a conectar con Microsoft Translator](tc-msconf.md)
@@ -84,7 +84,7 @@ ht-degree: 29%
    + [Mitigación de problemas de serialización en AEM](mitigating-serialization-issues.md)
    + [Sincronización de usuarios](sync.md)
    + [Compatibilidad con tokens encapsulados](encapsulated-token.md)
-   + [Inicio de sesión único](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)
+   + [Inicio de sesión único](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html?lang=es)
    + [Cómo auditar las operaciones de administración de usuarios en AEM](audit-user-management-operations.md)
    + [SSL de forma predeterminada](ssl-by-default.md)
    + [Controlador de autenticación SAML 2.0](saml-2-0-authenticationhandler.md)
@@ -115,7 +115,7 @@ ht-degree: 29%
    + [Integración con Adobe Target](target.md)
    + [Integración con Adobe Analytics](adobeanalytics.md)
    + [Conexión a Adobe Analytics y creación de módulos](adobeanalytics-connect.md)
-   + [Configuración del seguimiento de vínculos para Adobe Analytics](adobeanalytics-link.md)
+   + [Configuración de Seguimiento de vínculos para Adobe Analytics](adobeanalytics-link.md)
    + [Asignación de datos de componente con propiedades de Adobe Analytics](adobeanalytics-mapping.md)
    + [Configuración del seguimiento de vídeo para Adobe Analytics](adobeanalytics-video.md)
    + [Integración con Adobe Analytics mediante IMS](integration-analytics-ims.md)

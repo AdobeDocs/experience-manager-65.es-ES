@@ -135,7 +135,7 @@ ht-degree: 49%
    + [Marcar los recursos con agua](watermarking.md)
    + [Plantillas de recursos](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [Configuración de [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configuración de  [!DNL Assets]  con  [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Publicación de recursos en  [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Publicar carpetas en [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Publicar colecciones en [!DNL Brand Portal]](brand-portal-publish-collection.md)
