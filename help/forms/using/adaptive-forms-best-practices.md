@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 64ba9b1082e39552cd27e5616de2a35f7870270b
+source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
 workflow-type: tm+mt
-source-wordcount: '4398'
+source-wordcount: '4322'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ El editor de reglas proporciona un editor visual y un editor de código para esc
    * Además, puede utilizar las siguientes propiedades de campo:
 
       * `field.value` para cambiar el valor de un campo.
-      * f `ield.enabled` para activar o desactivar un campo.
+      * `field.enabled` para activar o desactivar un campo.
       * `field.visible` para cambiar la visibilidad de un campo.
 
 * Es posible que los autores de formularios adaptables tengan que escribir código JavaScript para crear lógica empresarial en un formulario. Aunque JavaScript es potente y eficaz, es probable que pueda comprometer las expectativas de seguridad. Por lo tanto, debe asegurarse de que el autor del formulario es una persona de confianza y de que hay procesos para revisar y aprobar el código JavaScript antes de que se ponga en producción un formulario. El administrador puede restringir el acceso al editor de reglas a los grupos de usuarios en función de su función o función. Consulte [Conceder acceso al editor de reglas a grupos de usuarios seleccionados](/help/forms/using/rule-editor-access-user-groups.md).
@@ -228,17 +228,6 @@ Un documento de registro (DoR) es una versión PDF aplanada de un formulario ada
 * Explorar y obtener más información sobre las API de guideBridge
 
 Para obtener más información, consulte [Complemento de AEM Chrome: formulario adaptable](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
-
-El SDK de Calvin es una API de utilidad para que los desarrolladores de Forms adaptables prueben el Forms adaptable. El SDK de Calvin se basa en [Marco de pruebas de Hobbes.js](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). Puede utilizar el marco para probar lo siguiente:
-
-* Experiencia de representación de un formulario adaptable
-* Experiencia de cumplimentación previa de un formulario adaptable
-* Enviar experiencia de un formulario adaptable
-* Reglas de expresión
-* Validaciones
-* Carga diferida
-
-Para obtener más información, consulte [Automatizar las pruebas de formularios adaptables](/help/forms/using/calvin.md).
 
 ### Validación de formularios adaptables en AEM servidor {#validating-adaptive-forms-on-aem-server}
 
