@@ -2,10 +2,10 @@
 title: Notas de la versión de contenido y comercio de AEM 2022
 description: Notas de la versión de contenido y comercio de AEM 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: f6a16e5744222600b3a1760efe3c61619160b6cd
+source-git-commit: 600a836ff7ae0be9fde107ff2828bb41e8eed98f
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 38%
+source-wordcount: '660'
+ht-degree: 34%
 
 ---
 
@@ -20,6 +20,26 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 | Complemento CIF | Mínimo: AEM 6.5.7, Magento 2.3.5 Esquemas de GraphQL |
 | Componentes principales de CIF | [Requisitos del sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Tipo de archivo del proyecto AEM | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Fecha de versión: Junio de 2022
+
+| Componente | Versión | Detalles |
+|:-------|:-----:|---------------------:|
+| Complemento CIF | 2022.06.xx.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
+| Componentes principales de CIF | 2.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
+| Sitio de referencia de Venia del CIF | 2022.07.04 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04) |
+
+### Novedades {#what-is-new-june}
+
+* El nombre de plantilla ahora está visible en el Editor de sitios al crear la plantilla de catálogo de productos
+
+* Varias mejoras en los componentes principales del CIF
+
+### Corrección de errores {#bug-fixes-june}
+
+* Agregar token de inicio de sesión a la recuperación de precios del lado del cliente
+
+* Componente de página incorrecto en la capa de datos
 
 ## Fecha de versión: Mayo de 2022
 
@@ -63,7 +83,7 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
    ![Acceso directo del editor de sitios a la cabina de productos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
-## Fecha de versión: Marzo de 2022
+## Fecha de versión: Febrero de 2022
 
 | Componente | Versión | Detalles |
 |:-------|:-----:|---------------------:|
