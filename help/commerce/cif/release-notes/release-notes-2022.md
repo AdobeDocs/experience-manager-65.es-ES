@@ -2,9 +2,9 @@
 title: Notas de la versión de contenido y comercio de AEM 2022
 description: Notas de la versión de contenido y comercio de AEM 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 600a836ff7ae0be9fde107ff2828bb41e8eed98f
+source-git-commit: b493e7bd73d679aa46bf41fad105f13215226dd4
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '663'
 ht-degree: 34%
 
 ---
@@ -31,7 +31,7 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
 ### Novedades {#what-is-new-june}
 
-* El nombre de plantilla ahora está visible en el Editor de sitios al crear la plantilla de catálogo de productos
+* El enriquecimiento del catálogo de productos ahora admite páginas AEM. Esto permite a los autores administrar la asociación de páginas y productos.
 
 * Varias mejoras en los componentes principales del CIF
 
