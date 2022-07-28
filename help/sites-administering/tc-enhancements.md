@@ -1,36 +1,35 @@
 ---
 title: Mejoras en la traducción
-seo-title: Mejoras en la traducción
+seo-title: Translation Enhancements
 description: Mejoras de traducción en AEM.
-seo-description: Mejoras de traducción en AEM.
+seo-description: Translation enhancements in AEM.
 uuid: 0563603f-327b-48f1-ac14-6777c06734b9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
+source-git-commit: 3de9f3c97b99644297a2f07344f6aebae1c5ae83
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 0%
+source-wordcount: '609'
+ht-degree: 10%
 
 ---
 
-
-# Mejoras de traducción{#translation-enhancements}
+# Mejoras en la traducción{#translation-enhancements}
 
 Esta página presenta mejoras y mejoras incrementales en las capacidades de administración de AEM traducción.
 
-## Automatización del proyecto de traducción {#translation-project-automation}
+## Traducción Automatización del proyecto {#translation-project-automation}
 
 Se han añadido opciones para mejorar la productividad trabajando con proyectos de traducción, como promocionar y eliminar automáticamente lanzamientos de traducción y programar la ejecución recurrente de un proyecto de traducción.
 
-1. En el proyecto de traducción, toque o haga clic en los puntos suspensivos en la parte inferior del mosaico **Resumen de traducción**.
+1. En el proyecto de traducción, toque o haga clic en los puntos suspensivos en la parte inferior del **Resumen de traducción** mosaico.
 
    ![screen_shot_2018-04-19at22622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Cambie a la pestaña **Advanced**. En la parte inferior, puede seleccionar **Promocionar automáticamente lanzamientos de traducción**.
+1. Cambie a la **Avanzadas** pestaña . En la parte inferior, puede seleccionar **Promocionar automáticamente los lanzamientos de traducción**.
 
    ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
@@ -38,19 +37,19 @@ Se han añadido opciones para mejorar la productividad trabajando con proyectos 
 
    ![screen_shot_2018-04-19at224033](assets/screen_shot_2018-04-19at224033.jpg)
 
-1. Para seleccionar la ejecución recurrente de un proyecto de traducción, seleccione la frecuencia con el menú desplegable en **Repetir traducción**. La ejecución de proyectos recurrentes creará y ejecutará automáticamente trabajos de traducción en los intervalos especificados.
+1. Para seleccionar la ejecución recurrente de un proyecto de traducción, seleccione la frecuencia con la lista desplegable en **Repetir traducción**. La ejecución de proyectos recurrentes creará y ejecutará automáticamente trabajos de traducción en los intervalos especificados.
 
    ![screen_shot_2018-04-19at223820](assets/screen_shot_2018-04-19at223820.jpg)
 
-## Proyectos de traducción multilingüe {#multilingual-translation-projects}
+## Proyectos de traducción multilingües {#multilingual-translation-projects}
 
 Es posible configurar varios idiomas de destino en un proyecto de traducción para reducir el número total de proyectos de traducción creados.
 
-1. En el proyecto de traducción, toque o haga clic en los puntos en la parte inferior del mosaico **Resumen de traducción**.
+1. En el proyecto de traducción, toque o haga clic en los puntos de la parte inferior del **Resumen de traducción** mosaico.
 
    ![screen_shot_2018-04-19at22622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Cambie a la pestaña **Advanced**. Puede agregar varios idiomas en **Idioma de destino**.
+1. Cambie a la **Avanzadas** pestaña . Puede añadir varios idiomas en **Idioma de Target**.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
@@ -62,21 +61,24 @@ Es posible configurar varios idiomas de destino en un proyecto de traducción pa
 
    ![screen_shot_2018-04-22at213854](assets/screen_shot_2018-04-22at213854.jpg)
 
-## Actualizaciones de memoria de traducción {#translation-memory-updates}
+## Actualizaciones en la memoria de traducción {#translation-memory-updates}
 
-Las ediciones manuales del contenido traducido se pueden sincronizar de nuevo con el Sistema de Gestión de Traducciones (TMS) para entrenar su Memoria de Traducción.
+Las ediciones manuales del contenido traducido se pueden sincronizar de nuevo con el sistema de gestión de traducciones (TMS) para entrenar su memoria de traducción.
 
 1. Desde la consola Sitios, después de actualizar el contenido de texto en una página traducida, seleccione **Actualizar memoria de traducción**.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Una vista de lista muestra una comparación en paralelo de la fuente y la traducción de cada componente de texto que se editó. Seleccione qué actualizaciones de traducción deben sincronizarse con la memoria de traducción y seleccione **Actualizar memoria**.
+1. Una vista de lista muestra una comparación en paralelo de la fuente y la traducción de cada componente de texto editado. Seleccione qué actualizaciones de traducción deben sincronizarse con la memoria de traducción y seleccione **Actualización de memoria**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
-   >[!NOTE]
-   >
-   >AEM enviará las cadenas seleccionadas de nuevo al sistema de administración de traducción.
+AEM enviará las cadenas seleccionadas de nuevo al sistema de gestión de traducciones.
+
+* La acción actualiza la traducción de cadenas existentes en la memoria de traducción de los sistemas de administración de traducciones (TMS) configurados.
+* No crea nuevos trabajos de traducción.
+* Envía los pares de valores de las cadenas y sus traducciones al sistema de administración de etiquetas, a través de AEM API de traducción.
+* Esta función requiere que se configure un sistema de administración de traducción para su uso con AEM.
 
 ## Copias de idioma en varios niveles {#language-copies-on-multiple-levels}
 
@@ -90,10 +92,8 @@ Las raíces de los idiomas ahora se pueden agrupar en nodos, por ejemplo por reg
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
-
 >
->
-Esta `es` copia de idioma no se detectará porque está a 2 niveles (americas/centroamérica) fuera del nodo `en`.
+>Esta `es` la copia de idioma no se detectará porque está a 2 niveles (américa/centroamérica) lejos del `en` nodo .
 
 >[!NOTE]
 >
@@ -107,15 +107,14 @@ Ahora se puede seleccionar una propiedad en la vista de lista Sitios que muestre
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Toque o haga clic en **Ver configuración**.
+1. Toque o haga clic en **Configuración de vista**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Marque la casilla **Translated** en **Translation** y pulse o haga clic en **Update**.
+1. Marque **Traducido** casilla de verificación en **Traducción** y toque o haga clic **Actualizar**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 
-Ahora puede ver una columna **Translated** que muestra el estado de traducción de las páginas.
+Ahora puede ver un **Traducido** que muestra el estado de traducción de las páginas.
 
 ![screen_shot_2018-04-23at133821](assets/screen_shot_2018-04-23at133821.jpg)
-
