@@ -5,9 +5,9 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 3af8a2425596ff6c15fb49fed66e9fbd0e9d391e
+source-git-commit: 2c2277f43fe12c4d4fa655c0666519e3608ba3f9
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '493'
 ht-degree: 29%
 
 ---
@@ -71,8 +71,9 @@ Vaya al directorio correspondiente y, desde el símbolo del sistema, escriba
 
 1. (Solo JBoss) Después de instalar el parche y configurar el servidor, elimine los directorios tmp y de trabajo del servidor de aplicaciones JBoss.
 
->**Nota:** Antes de iniciar **Administrador de configuración**, descargar y reemplazar [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) archivo.
->
+>[!NOTE]
+>Antes de iniciar **Administrador de configuración**, descargar y reemplazar [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) archivo.
+
 ## Configuraciones posteriores a la implementación {#post-deployment-configurations}
 
 ### Configuraciones SAML {#saml-configurations}
