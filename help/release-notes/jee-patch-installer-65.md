@@ -5,9 +5,9 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 2c2277f43fe12c4d4fa655c0666519e3608ba3f9
+source-git-commit: c425caa9aadd8bae3c2863f24e73b5265ec0b358
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '475'
 ht-degree: 29%
 
 ---
@@ -52,17 +52,12 @@ Vaya al directorio correspondiente y, desde el símbolo del sistema, escriba
 1. Lea la información del resumen previo a la instalación y haga clic en **[!UICONTROL Instalar]**.
 1. Una vez finalizada la instalación, haga clic en **[!UICONTROL Siguiente]** para aplicar las actualizaciones de correcciones rápidas a los archivos instalados.
 
-1. Anule la selección de la opción Iniciar administrador de configuración antes de hacer clic en Listo. Antes de ejecutar el administrador de configuración mediante **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, vaya a *&lt;aemforms_install_dir>\configurationManager\bin* directorio y actualizar `ConfigurationManager.lax` y `ConfigurationManager_IPv6.lax` archivos con las siguientes operaciones de cambio de nombre:
+1. **[Solo Windows]** Realice el siguiente paso:
 
-   * `axis.jar` hasta `axis-1.4.1.1.jar`
-   * `serializer-2.7.1.jar` hasta `serializer-2.7.2.jar`
-   * `xalan-2.7.1.jar` hasta `xalan-2.7.2.jar`
-   * `xercesImpl-2.9.1.jar` hasta `xercesImpl-2.12.0.jar`
-   * `xml-apis-2.7.1.jar` hasta `xml-apis-2.7.2.jar`
-
+   Anule la selección de **Iniciar Administrador de configuración** antes de hacer clic en **[!UICONTROL Listo]**. Antes de ejecutar el administrador de configuración mediante **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, vaya a `<AEMForms_Install_Dir>\configurationManager\bin` directorio y reemplazar [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) archivo.
 1. La casilla de verificación Iniciar Administrador de configuración está seleccionada de forma predeterminada. Haga clic en **[!UICONTROL Listo]** para ejecutar el Administrador de configuración.
 
-1. Para ejecutar el Administrador de configuración más adelante, anule la selección de la opción Inicio del Administrador de configuración antes de hacer clic en Listo. Puede iniciar Configuration Manager más adelante utilizando la secuencia de comandos adecuada en la `[AEM_forms_root]/configurationManager/bin` directorio.
+1. Para ejecutar el Administrador de configuración más adelante, anule la selección de la opción Inicio del Administrador de configuración antes de hacer clic en **[!UICONTROL Listo]**. Puede iniciar Configuration Manager más adelante utilizando la secuencia de comandos adecuada en la `[AEM_forms_root]/configurationManager/bin` directorio.
 
 1. Según el servidor de aplicaciones, elija uno de los siguientes documentos y siga las instrucciones de la sección *Configuración e implementación de AEM formularios* para obtener más información.
 
@@ -70,9 +65,6 @@ Vaya al directorio correspondiente y, desde el símbolo del sistema, escriba
    * [Instalación e implementación de AEM formularios para WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Solo JBoss) Después de instalar el parche y configurar el servidor, elimine los directorios tmp y de trabajo del servidor de aplicaciones JBoss.
-
->[!NOTE]
->Antes de iniciar **Administrador de configuración**, descargar y reemplazar [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) archivo.
 
 ## Configuraciones posteriores a la implementación {#post-deployment-configurations}
 
