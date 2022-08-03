@@ -5,8 +5,8 @@ breadcrumb-title: Guía de Commerce
 user-guide-description: Aprenda a utilizar y administrar AEM Content and Commerce.
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 70%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
