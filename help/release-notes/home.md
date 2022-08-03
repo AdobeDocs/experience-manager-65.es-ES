@@ -31,7 +31,7 @@ Las Notas de la versión de AEM incluyen información importante sobre la versi�
 | [Guía de administración](/help/sites-administering/home.md) | Aprenda a administrar AEM |
 | [Guía de creación](/help/sites-authoring/home.md) | Esta guía explica los conceptos de creación en AEM. |
 | [Guía de creación de IU clásica](/help/sites-classic-ui-authoring/home.md) | En esta guía se explican los conceptos de creación en AEM en la interfaz de usuario clásica. |
-| [Guía del usuario de Screens](https://docs.adobe.com/content/help/es-ES/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de señalización digital para publicar experiencias digitales dinámicas e interactivas. |
+| [Guía del usuario de Screens](https://docs.adobe.com/content/help/es/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de señalización digital para publicar experiencias digitales dinámicas e interactivas. |
 | [Guía del usuario sobre implementación](/help/sites-deploying/home.md) | Esta guía le muestra los conceptos básicos de AEM. |
 | [Guía del usuario sobre desarrollo](/help/sites-developing/home.md) | Aprenda a crear la instancia de AEM. |
 | [Guía del usuario de administración](/help/managing/home.md) | En esta guía se describe cómo administrar correctamente un proyecto de AEM. |
