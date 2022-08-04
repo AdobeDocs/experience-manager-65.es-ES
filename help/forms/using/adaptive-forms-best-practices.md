@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
+source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
 workflow-type: tm+mt
-source-wordcount: '4322'
+source-wordcount: '4529'
 ht-degree: 0%
 
 ---
@@ -95,6 +95,19 @@ Para obtener más información, consulte [Creación de un formulario adaptable](
    * Introduzca interactividades personalizadas mediante la creación de widgets o apariciones personalizados. No se recomienda modificar los componentes predeterminados. Para obtener más información, consulte [Marco de aspecto](/help/forms/using/introduction-widgets.md).
 
 * Consulte [Gestión de información personal](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) para recomendaciones sobre la gestión de datos PII.
+
+### Creación de plantillas de formulario
+
+Puede crear un formulario adaptable utilizando las plantillas de formulario habilitadas en **Explorador de configuración**. Para habilitar las plantillas de formulario, consulte [Creación de una plantilla de formulario adaptable](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
+
+Las plantillas de formulario también se pueden cargar desde paquetes de formulario adaptable creados en otro equipo de creación. Las plantillas de formulario están disponibles mediante la instalación [paquetes aemforms-References-*](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Algunas de las prácticas recomendadas son:
+* La variable **nosamplecontent** el modo de ejecución solo se recomienda para el autor y no para los nodos de publicación.
+* La creación de recursos, como formularios adaptables, temas, plantillas o configuraciones de nube, se realiza solo sobre nodos de Author , que se pueden publicar en los nodos configurados de Publish.
+Para obtener más información, consulte [Publicación y cancelación de la publicación de formularios y documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+* Se requiere el paquete de complementos de Forms para la creación, así como para que Publicación admita las operaciones del servicio de documentos; por lo tanto, puede considerarse como una dependencia.
+Si solo desea plantillas de muestra, temas y paquetes de DOR relacionados con Forms, puede descargarlos desde [paquetes aemforms-References-*](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+
+Para obtener más información, consulte las prácticas recomendadas en [Introducción a la creación de formularios adaptables](/help/forms/using/introduction-forms-authoring.md).
 
 ## Creación de formularios adaptables {#author-adaptive-forms}
 
@@ -309,3 +322,5 @@ Uno de los desafíos clave para las organizaciones es cómo manejar los datos de
 
 * Utilice un almacenamiento externo seguro como la base de datos para almacenar datos de formularios en borrador y enviados. Consulte [Configuración del almacenamiento externo para borradores y datos de formularios enviados](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Utilice el componente de formulario Términos y condiciones para obtener el consentimiento explícito del usuario antes de activar el guardado automático. En este caso, habilite el guardado automático solo cuando el usuario acepte las condiciones del componente Términos y condiciones .
+
+
