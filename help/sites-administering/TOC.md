@@ -8,10 +8,10 @@ breadcrumb-title: Guía de administración
 user-guide-description: Obtenga más información sobre la administración de AEM.
 feature: Administering
 role: Admin
-source-git-commit: a1821ab210b3735ca5b59b075659ff30d5872b8e
+source-git-commit: 9a164f92b6d5a927d1cb4ead2f119cc094180713
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 35%
 
 ---
 
@@ -113,6 +113,7 @@ ht-degree: 0%
    + [Integración con servicios de terceros](third-party-services.md)
    + [Integración con Salesforce](salesforce.md)
    + [Integración con Adobe Target](target.md)
+   + [Integración con Adobe Learning Manager](adobe-learningmanager.md)
    + [Integración con Adobe Analytics](adobeanalytics.md)
    + [Conexión a Adobe Analytics y creación de módulos](adobeanalytics-connect.md)
    + [Configuración de Seguimiento de vínculos para Adobe Analytics](adobeanalytics-link.md)
