@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9f957175573eeb2b40d79a5087dc3034c56819cc
+source-git-commit: e51cf7a5b7d14bc4aed053496c7fe6685dd2b0b8
 workflow-type: tm+mt
-source-wordcount: '3742'
+source-wordcount: '3653'
 ht-degree: 7%
 
 ---
@@ -39,7 +39,12 @@ Las principales funciones y mejoras introducidas en [!DNL Adobe Experience Manag
 
    * Se ha agregado compatibilidad para que los lectores de pantalla reconozcan el encabezado y el cuerpo de una tabla a medida que continúa y las entidades conectadas. Ayuda a los lectores de pantalla a navegar correctamente por las tablas. (NPR-37139)
    * Se ha agregado compatibilidad para que los lectores de pantalla dejen de navegar por el espacio de trabajo del HTML hasta que se abra un cuadro de diálogo. (NPR-37134)
-   * Se ha agregado la capacidad de especificar texto de Reader de pantalla para hipervínculos en Forms Designer.(NPR-36221)
+
+   <!-- 
+
+    * Added ability to specify Screen Reader Text for Hyperlinks in Forms Designer.(NPR-36221)
+  
+  -->
 
 Se han introducido las siguientes correcciones de errores, funciones clave y mejoras en [!DNL Experience Manager] 6.5.13.0:
 
@@ -123,11 +128,19 @@ Se han introducido las siguientes correcciones de errores, funciones clave y mej
 * Cuando un usuario agrega etiquetas de HTML a la sección de comentarios mientras ejecuta un flujo de trabajo, se representan las etiquetas de HTML. (NPR-37591)
 * Al importar y publicar una carta que incluya un nuevo archivo XDP, las letras no se previsualizan en la instancia de publicación. Sin embargo, si las letras se importan y publican por segunda vez utilizando el mismo archivo CMP, las letras se previsualizan correctamente. (CQ-4343599)
 * Un formulario con la propiedad Preparar proceso de datos establecida no se puede procesar en HTML Workspace. (CQ-4343294)
-* Para los PDF forms estáticos creados con Forms 6.5 Designer, la accesibilidad del PDF falla con un error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
+<!--
+For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility fails with error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117) 
+ -->
 * No se puede convertir una imagen a PDF mediante el servicio PDFG con OCR, después de aplicar el parche AEMForms-6.5.0-0038 (log4jv2.16). (CQ-4342450)
-* Se muestra un valor incorrecto para el código de barras SSCC-18. Los servidores de Forms omiten el valor en la parte derecha del código de barras. (CQ-4342400)
+
+<!-- 
+* Incorrect value is displayed for barcode SSCC-18. Forms servers omit the value on the right part of the barcode. (CQ-4342400)
+-->
 * No se puede importar un archivo Microsoft® Word a Forms Designer. El usuario encuentra errores `Word (version XP or onwards) could not be found on the machine`. (CQ-4342146)
-* En Forms 6.5 Designer, cuando se abre un formulario creado con Forms 6.1 Designer y se edita un cuadro de texto, el espaciado entre párrafos supera el espacio especificado. Se eliminan todas las configuraciones anteriores al espacio y se requiere el cambio de formato manual del cuadro de texto. (CQ-4341899)
+
+<!-- 
+* In Forms 6.5 Designer, when you open a form created with Forms 6.1 Designer and edit a textbox, paragraph spacing exceeds the specified space. All previous settings to the space are removed and manual reformatting of the text box is required. (CQ-4341899) 
+-->
 * El usuario no puede establecer el tiempo personalizado en el planificador de purga de trabajos. (CQ-4339192)
 * El usuario no puede actualizar ninguna configuración en la interfaz de usuario de administración de puntos finales y encuentra un error ` Uncaught ReferenceError: updateEndpoint_required is not defined`. (CQ-4331523)
 * En el caso de las etiquetas no válidas, la gestión correcta del mensaje de error no funciona como se esperaba. (NPR-38106 y CQ-4337173)
