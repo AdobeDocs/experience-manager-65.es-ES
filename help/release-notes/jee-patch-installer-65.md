@@ -5,10 +5,10 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: c425caa9aadd8bae3c2863f24e73b5265ec0b358
+source-git-commit: 6c6ddaba0e42df4b4701670e8abfdabe5205879c
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 29%
+source-wordcount: '525'
+ht-degree: 22%
 
 ---
 
@@ -47,17 +47,23 @@ Vaya al directorio correspondiente y, desde el símbolo del sistema, escriba
    Esto inicia un asistente de instalación que le guiará a través de la instalación.
 
 1. En el panel Introducción, haga clic en **[!UICONTROL Siguiente]**.
-1. En la pantalla Elegir carpeta de instalación, verifique que la ubicación predeterminada que se muestra sea correcta para la instalación existente o haga clic en **[!UICONTROL Examinar]** para seleccionar la carpeta alternativa donde están instalados AEM formularios y haga clic en **[!UICONTROL Siguiente]**.
+1. En el **Elegir carpeta de instalación** , compruebe que la ubicación predeterminada mostrada es correcta para la instalación existente o haga clic en **[!UICONTROL Examinar]** para seleccionar la carpeta alternativa donde están instalados AEM formularios y haga clic en **[!UICONTROL Siguiente]**.
 1. Lea la información de resumen de parches de corrección rápida y haga clic en **[!UICONTROL Siguiente]**.
 1. Lea la información del resumen previo a la instalación y haga clic en **[!UICONTROL Instalar]**.
 1. Una vez finalizada la instalación, haga clic en **[!UICONTROL Siguiente]** para aplicar las actualizaciones de correcciones rápidas a los archivos instalados.
 
-1. **[Solo Windows]** Realice el siguiente paso:
+1. **[Solo para Windows]:** Realice uno de los pasos siguientes:
+   * Anule la selección de **Iniciar Administrador de configuración** antes de hacer clic en **[!UICONTROL Listo]**. Ejecutar **Administrador de configuración** usando la variable **ConfigurationManager.bat** archivo ubicado en `[aem-forms root]\configurationManager\bin`.
 
-   Anule la selección de **Iniciar Administrador de configuración** antes de hacer clic en **[!UICONTROL Listo]**. Antes de ejecutar el administrador de configuración mediante **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, vaya a `<AEMForms_Install_Dir>\configurationManager\bin` directorio y reemplazar [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) archivo.
-1. La casilla de verificación Iniciar Administrador de configuración está seleccionada de forma predeterminada. Haga clic en **[!UICONTROL Listo]** para ejecutar el Administrador de configuración.
+   * Anule la selección de **Iniciar Administrador de configuración** antes de hacer clic en **[!UICONTROL Listo]**. Antes de ejecutarse **Administrador de configuración** using **ConfigurationManager.exe** o **ConfigurationManager_IPv6.exe**, vaya a *`<AEMForms_Install_Dir>\configurationManager\bin`* directorio y reemplazar [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) y [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) archivos.
+   >[!NOTE]
+   >Uso **ConfigurationManager.bat** ayuda a evitar la actualización manual del nombre de los archivos .lax.
 
-1. Para ejecutar el Administrador de configuración más adelante, anule la selección de la opción Inicio del Administrador de configuración antes de hacer clic en **[!UICONTROL Listo]**. Puede iniciar Configuration Manager más adelante utilizando la secuencia de comandos adecuada en la `[AEM_forms_root]/configurationManager/bin` directorio.
+1. **[Solo para Unix]:** Realice uno de los pasos siguientes:
+
+   * La variable **Iniciar Administrador de configuración** está seleccionada de forma predeterminada. Haga clic en **[!UICONTROL Listo]** para ejecutar el Administrador de configuración instantáneamente.
+
+   * Para ejecutar **Administrador de configuración** más tarde, anule la selección de la opción **Iniciar Administrador de configuración** antes de hacer clic en **[!UICONTROL Listo]**. Puede empezar **Administrador de configuración** más adelante, utilizando la secuencia de comandos adecuada en la `[AEM_forms_root]/configurationManager/bin` directorio.
 
 1. Según el servidor de aplicaciones, elija uno de los siguientes documentos y siga las instrucciones de la sección *Configuración e implementación de AEM formularios* para obtener más información.
 
