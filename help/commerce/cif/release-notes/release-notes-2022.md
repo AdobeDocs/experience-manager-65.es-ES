@@ -5,7 +5,7 @@ exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
 source-git-commit: 6c5c37c1c365e1f03ea9b5c935adf63a33faba5d
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 33%
+ht-degree: 45%
 
 ---
 
@@ -86,11 +86,11 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 
 ### Novedades {#what-is-new-april}
 
-* Acceso rápido a la cabina de productos: Acceda fácilmente a la información detallada completa del producto con un solo clic en el Editor de sitios
+* Acceso rápido a la cabina de productos: acceda fácilmente a la información detallada completa del producto con un solo clic en el Editor de sitios
 
    ![Habilitar lista de deseos](/help/assets/CIF/enable-wishlist.png)
 
-* Compatibilidad con componentes de comercio de marketing adicionales: Los componentes se pueden configurar para mostrar una llamada a acción de complemento al carro y de complemento a la lista de deseos
+* Compatibilidad con componentes de comercio de marketing adicionales: los componentes se pueden configurar para mostrar una llamada a acción de complemento al carro y de complemento a la lista de deseos.
 
    ![Acceso directo del editor de sitios a la cabina de productos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 

@@ -1,16 +1,16 @@
 ---
 title: Uso del selector de productos y categorías del CIF
 description: Aprenda a utilizar el selector de productos y categorías del CIF en los componentes de comercio de clientes para ayudar a los autores y especialistas en marketing a trabajar de forma eficaz con los datos de catálogos y productos de comercio.
-sub-product: Comercio
+sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
-feature: Marco de integración de Commerce
+feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
-source-git-commit: 2fadfa65242b208a750b0d5392fdd2c41e9ff20e
+source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ AEM Creación de contenido y comercio proporciona un conjunto de herramientas de
 
 ## Selector de productos {#product-picker}
 
-Para utilizar el selector de productos en un componente de proyecto, un desarrollador debe agregar `commerce/gui/components/common/cifproductfield` a un cuadro de diálogo de componente. Por ejemplo, use lo siguiente para el cq:dialog:
+Para utilizar el selector de productos en un componente de proyecto, un desarrollador debe agregar `commerce/gui/components/common/cifproductfield` a un cuadro de diálogo de componentes. Por ejemplo, use lo siguiente para la cq:dialog:
 
 ```xml
 <product jcr:primaryType="nt:unstructured"
@@ -33,7 +33,7 @@ Para utilizar el selector de productos en un componente de proyecto, un desarrol
     selectionId="sku"/>
 ```
 
-El campo de producto permite navegar hasta el producto que un usuario desea seleccionar mediante las diferentes vistas. De forma predeterminada, el campo product devuelve el ID del producto, pero se puede configurar utilizando el atributo `selectionId` .
+El campo de producto permite navegar hasta el producto que un usuario desea seleccionar mediante las diferentes vistas. De forma predeterminada, el campo de producto devuelve el ID del producto, pero se puede configurar utilizando la variable `selectionId` atributo.
 
 El campo Selector de producto admite las siguientes propiedades opcionales:
 
@@ -42,16 +42,16 @@ El campo Selector de producto admite las siguientes propiedades opcionales:
 - multiple (true, false) : permite la selección de uno o varios productos (default = false)
 - emptyText : para configurar el valor de texto vacío del campo de selección
 
-Además, también se admiten propiedades de campo de diagnóstico estándar como `name`, `fieldLabel` o `fieldDescription`.
+Además, las propiedades estándar de los campos de diagnóstico como `name`, `fieldLabel`o `fieldDescription` también son compatibles.
 
 >[!CAUTION]
 >
->El componente `cifproductfield` requiere la clientlib `cif.shell.picker`. Para agregar una clientlib a un cuadro de diálogo, puede utilizar la propiedad extraClientlibs .
+>La variable `cifproductfield` requiere el `cif.shell.picker` clientlib. Para agregar una clientlib a un cuadro de diálogo, puede utilizar la propiedad extraClientlibs .
 >[!CAUTION]
 >
->A partir de la versión 2.0.0 de los componentes principales de CIF, la compatibilidad con `id` se eliminó y se reemplazó por `uid`. Se recomienda utilizar `sku` o `slug` como identificador de producto. Seguimos admitiendo `id` solo para proyectos que usan componentes principales del CIF versión 1.x.
+>A partir de la versión 2.0.0 de los componentes principales de CIF, la compatibilidad con `id` se ha eliminado y se ha reemplazado por `uid`. Se recomienda encarecidamente utilizar `sku` o `slug` como identificador de producto. Seguimos apoyando `id` solo para proyectos que utilizan componentes principales de CIF versión 1.x.
 
-Puede encontrar un ejemplo de funcionamiento completo del `cifproductfield` en el proyecto [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml). Consulte también [Personalización de cuadros de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) de la documentación de componentes principales de AEM.
+Un ejemplo completo de funcionamiento de la variable `cifproductfield` se encuentra en la variable [Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) proyecto. Consulte también [Personalización de cuadros de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) de la documentación de componentes principales de AEM.
 
 ## Selector de categoría {#category-picker}
 
@@ -69,16 +69,16 @@ Se puede utilizar el siguiente fragmento de código en una configuración cq:dia
 
 El campo Selector de categoría admite las siguientes propiedades opcionales:
 
-- selectionId(id, uid, anotaciones, urlPath, idAndUrlPath _(desaprobada)_, uidAndUrlPath _(desaprobada)_) - permite elegir el atributo de categoría que devolverá el selector (predeterminado = id).
+- selectionId(id, uid, anotaciones, urlPath, idAndUrlPath _(obsoleto)_, uidAndUrlPath _(obsoleto)_) - permite elegir el atributo de categoría que el selector devolverá (valor predeterminado = id).
 - multiple (true, false) : permite la selección de una o varias categorías (default = false)
 
-Además, también se admiten propiedades de campo de diagnóstico estándar como `name`, `fieldLabel` o `fieldDescription`.
+Además, las propiedades estándar de los campos de diagnóstico como `name`, `fieldLabel`o `fieldDescription` también son compatibles.
 
 >[!CAUTION]
 >
->Al igual que el componente `cifproductfield`, el componente `cifcategoryfield` también requiere la clientlib `cif.shell.picker`. Para agregar una clientlib a un cuadro de diálogo, puede utilizar la propiedad `extraClientlibs`. Consulte [Personalización de cuadros de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) de la documentación de componentes principales de AEM.
+>Igual que el `cifproductfield` el componente `cifcategoryfield` también requiere el `cif.shell.picker` clientlib. Para agregar una clientlib a un cuadro de diálogo, puede usar la variable `extraClientlibs` propiedad. Consulte [Personalización de cuadros de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) de la documentación de componentes principales de AEM.
 >[!CAUTION]
 >
->A partir de la versión 2.0.0 de los componentes principales de CIF, la compatibilidad con `id` se eliminó y se reemplazó por `uid`. Se recomienda utilizar `uid` o `urlPath` como identificador de categoría. Seguimos admitiendo `id` y `idAndUrlPath` solo para proyectos que usan componentes principales del CIF versión 1.x.
+>A partir de la versión 2.0.0 de los componentes principales de CIF, la compatibilidad con `id` se ha eliminado y se ha reemplazado por `uid`. Se recomienda encarecidamente utilizar `uid` o `urlPath` como identificador de categoría. Seguimos apoyando `id` &amp; `idAndUrlPath` solo para proyectos que utilizan componentes principales de CIF versión 1.x.
 
-Puede encontrar un ejemplo de funcionamiento completo del `cifcategoryfield` en el proyecto [Componentes principales del CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml).
+Un ejemplo completo de funcionamiento de la variable `cifcategoryfield` se encuentra en la variable [Componentes principales de CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) proyecto.
