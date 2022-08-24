@@ -1,8 +1,8 @@
 ---
 title: Conjunto de formularios en AEM Forms
-seo-title: Conjunto de formularios en AEM Forms
+seo-title: Form set in AEM Forms
 description: Este artículo presenta el conjunto de formularios y explica cómo crear conjuntos de formularios mediante la vinculación de formularios HTML5. Este artículo también explica cómo se pueden rellenar previamente los datos xml en un conjunto de formularios y cómo se pueden utilizar los conjuntos de formularios en la administración de procesos.
-seo-description: Este artículo presenta el conjunto de formularios y explica cómo crear conjuntos de formularios mediante la vinculación de formularios HTML5. Este artículo también explica cómo se pueden rellenar previamente los datos xml en un conjunto de formularios y cómo se pueden utilizar los conjuntos de formularios en la administración de procesos.
+seo-description: This article introduces form set and explains how to create form sets by stitching together HTML5 forms. This article also explains how you can prefill xml data to a form set and how you can use form sets in process management.
 uuid: a1a2f267-26a9-4f45-bcfc-dbdedad95973
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,13 @@ topic-tags: hTML5_forms
 discoiquuid: 80e3eec4-95e0-4731-a0e5-a617e9bcb069
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 039afdf3-013b-41b2-8821-664d28617f61
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2814'
 ht-degree: 0%
 
 ---
-
 
 # Conjunto de formularios en AEM Forms{#form-set-in-aem-forms}
 
@@ -37,7 +36,7 @@ Los conjuntos de formularios también se admiten en la aplicación de AEM Forms,
 
 Puede asociar varios XDP o plantillas de formulario, creados con Designer, a un conjunto de formularios. Los conjuntos de formularios se pueden utilizar para procesar de forma selectiva los XDP en función de los valores introducidos por los usuarios en los formularios iniciales y sus perfiles.
 
-Utilice la [interfaz de usuario de AEM Forms](../../forms/using/introduction-managing-forms.md) para administrar todos los formularios, conjuntos de formularios y recursos relacionados.
+Uso [Interfaz de usuario de AEM Forms](../../forms/using/introduction-managing-forms.md) para administrar todos los formularios, conjuntos de formularios y recursos relacionados.
 
 ### Crear un conjunto de formularios {#create-a-form-set}
 
@@ -54,7 +53,7 @@ Para crear un conjunto de formularios, haga lo siguiente:
    * Enviar URL: Especifica la URL donde se registran los datos enviados para el caso de representación independiente del conjunto de formularios (caso de uso de aplicación que no es de AEM Forms). Se envían datos a este extremo como multipart/formdata con el siguiente parámetro de solicitud:
    * dataXML: Este parámetro contiene una representación XML de los datos de conjuntos de formularios enviados. Si todos los formularios del conjunto de formularios utilizan un esquema común, el XML se genera según ese esquema. De lo contrario, la etiqueta raíz XML contiene una etiqueta secundaria para cada formulario rellenado en el conjunto de formularios que contiene datos para los archivos adjuntos del formulario.
    * formsetPath: Ruta del conjunto de formularios en CRXDE, que se ha enviado.
-   * Perfil de procesamiento HTML: Se pueden configurar determinadas opciones, como campos flotantes, archivos adjuntos y compatibilidad con borradores (para la representación de conjuntos de formularios independientes), a fin de personalizar el aspecto, el comportamiento y las interacciones del conjunto de formularios. Puede personalizar o ampliar el perfil existente para cambiar cualquier configuración del perfil del formulario HTML.
+   * Perfil de procesamiento del HTML: Se pueden configurar determinadas opciones, como campos flotantes, archivos adjuntos y compatibilidad con borradores (para la representación de conjuntos de formularios independientes), a fin de personalizar el aspecto, el comportamiento y las interacciones del conjunto de formularios. Puede personalizar o ampliar el perfil existente para cambiar cualquier configuración de perfil de Formulario de HTML.
 
    ![Conjunto de formularios: agregar propiedades](assets/createformset1.png)
 
@@ -68,14 +67,14 @@ Para crear un conjunto de formularios, haga lo siguiente:
 
    * Orden del formulario: Arrastre y suelte los formularios para reordenarlos. El orden del formulario define el orden en que se muestran los formularios al usuario final en la aplicación de AEM Forms y en la representación independiente.
    * Identificador de formulario: Especifica una identidad única para los formularios que se van a utilizar en las expresiones de idoneidad.
-   * Raíz de datos: Para cada formulario del conjunto de formularios, Author puede configurar el XPATH donde los datos de ese formulario en particular se colocan en el XML enviado. El valor predeterminado es /. Si todos los formularios del conjunto de formularios están enlazados a un esquema y comparten el mismo esquema XML, puede cambiar este valor. Se recomienda que cada campo del formulario tenga el enlace de datos adecuado especificado en el XDP. Si dos campos de dos formularios diferentes comparten el enlace de datos común, el campo del segundo formulario muestra los valores rellenados previamente del primer formulario. No enlace dos subformularios con el mismo contenido interno al mismo nodo XML. Para obtener más información sobre la estructura XML del conjunto de formularios, consulte [Relleno previo de XML para el conjunto de formularios](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
+   * Raíz de datos: Para cada formulario del conjunto de formularios, Author puede configurar el XPATH donde los datos de ese formulario en particular se colocan en el XML enviado. El valor predeterminado es /. Si todos los formularios del conjunto de formularios están enlazados a un esquema y comparten el mismo esquema XML, puede cambiar este valor. Se recomienda que cada campo del formulario tenga el enlace de datos adecuado especificado en el XDP. Si dos campos de dos formularios diferentes comparten el enlace de datos común, el campo del segundo formulario muestra los valores rellenados previamente del primer formulario. No enlace dos subformularios con el mismo contenido interno al mismo nodo XML. Para obtener más información sobre la estructura XML del conjunto de formularios, consulte [Rellenar previamente XML para el conjunto de formularios](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
    * Expresión de elegibilidad: Especifica una expresión de JavaScript que evalúa un valor booleano e indica si un formulario en conjunto de formularios es apto para rellenarse. Si es false, no se pregunta al usuario ni se le muestra el formulario que se va a rellenar. Normalmente, la expresión se basa en los valores de los campos capturados antes de este formulario. Las expresiones también contienen llamadas a la API fs.valueOf del conjunto de formularios para extraer los valores rellenados por el usuario en un campo de un formulario del conjunto de formularios:
 
-   *fs.valueOf(&lt;form Identifier=&quot;&quot;>,  &lt;fieldsom expression=&quot;&quot;>) >  &lt;value>*
+   *fs.valueOf(&lt;form identifier=&quot;&quot;>, &lt;fieldsom expression=&quot;&quot;>) > &lt;value>*
 
    Por ejemplo, si tiene dos formularios en el conjunto de formularios: gastos de negocios y viajes, puede agregar un fragmento de JavaScript en el campo Expresión de idoneidad para ambos formularios para comprobar los datos introducidos por el usuario para el tipo de gasto de un formulario. Si el usuario elige Gastos comerciales, el formulario Gastos comerciales se procesa para el usuario final. O si el usuario elige el gasto de viaje, se procesa un formulario diferente para el usuario final. Para obtener más información, consulte Expresión de idoneidad.
 
-   Además, el Autor también puede quitar un formulario del conjunto de formularios utilizando el icono Eliminar presente en la esquina derecha de cada fila o agregar otro conjunto de formularios utilizando el icono &#39;**+**&#39; de la barra de herramientas. Este icono &quot;**+**&quot; dirige al usuario de nuevo al paso anterior del asistente, que se utilizó para &quot;Seleccionar formularios&quot;. Las selecciones existentes se mantienen y cualquier selección adicional realizada se debe agregar al conjunto de formularios utilizando el icono Agregar a conjunto de formularios en esa página.
+   Además, el autor también puede optar por quitar un formulario del conjunto de formularios utilizando el icono Eliminar que se encuentra en la esquina derecha de cada fila o agregar otro conjunto de formularios utilizando la función **+**&quot; en la barra de herramientas. Este **+** El icono &#39; dirige al usuario de nuevo al paso anterior del asistente, que se utilizó para &quot;Seleccionar formularios&quot;. Las selecciones existentes se mantienen y cualquier selección adicional realizada se debe agregar al conjunto de formularios utilizando el icono Agregar a conjunto de formularios en esa página.
 
    ![Conjunto de formularios: Configurar formularios](assets/createformset2.png)
 
@@ -94,7 +93,7 @@ Una vez creado un conjunto de formularios, puede realizar las siguientes accione
 * Iniciar/Administrar revisión: Una vez creado el conjunto de formularios, puede configurar su revisión haciendo clic en Iniciar revisión. Una vez iniciada la revisión de un conjunto de formularios, la opción Administrar revisión se muestra al usuario. En la pantalla Administrar revisión, puede actualizar o finalizar la revisión. Para las revisiones que agregó, puede comprobar la revisión y agregar comentarios, si es necesario.
 * Eliminar: Elimina el conjunto de formularios completo. Los formularios del conjunto de formularios eliminado permanecen en el repositorio.
 * Publicar/Cancelar la publicación: Esto publica o cancela la publicación del conjunto de formularios junto con todos los formularios que contiene y los recursos relacionados de estos formularios.
-* Vista previa: La vista previa ofrece dos opciones: Vista previa como HTML (sin datos) y vista previa personalizada con datos de ejemplo.
+* Vista previa: La vista previa ofrece dos opciones: Obtenga una vista previa como HTML (sin datos) y una vista previa personalizada con datos de ejemplo.
 * Ver/editar propiedades: Puede ver o editar las propiedades de metadatos de un conjunto de formularios seleccionado.
 
 ![createformset3](assets/createformset3.png)
@@ -114,13 +113,13 @@ Para editar un conjunto de formularios, haga lo siguiente:
 
    También puede hacer clic en el icono Eliminar correspondiente para eliminar el formulario del conjunto de formularios.
 
-## Conjunto de formularios en Administración de procesos {#form-set-in-process-management}
+## Conjunto de formularios en Gestión de procesos {#form-set-in-process-management}
 
 Una vez que haya creado un conjunto de formularios utilizando la interfaz de usuario de Administración de AEM Forms, puede utilizar el conjunto de formularios en una actividad de Punto de inicio o Asignar tarea mediante Workbench.
 
 ### Uso del conjunto de formularios en Task o Start point {#using-form-set-in-task-or-start-point}
 
-1. Al diseñar un proceso, en la sección Presentación y datos de Asignar tarea/punto de inicio, seleccione **usar un recurso CRX**. Aparece el explorador de recursos CRX.
+1. Al diseñar un proceso, en la sección Presentación y datos de Asignar tarea/punto inicial, seleccione **usar un recurso CRX**. Aparece el explorador de recursos CRX.
 
    ![Diseño de un proceso: usar un recurso CRX](assets/formsetinprocessmgmt1.png)
 
@@ -159,7 +158,7 @@ Uso no válido de la API:
 
 ```javascript
 var formUid = "form1";
- var fieldSOM = “xfa.form.form1.subform1.field1"; fs.valueOf(formUid, fieldSOM);
+ var fieldSOM = "xfa.form.form1.subform1.field1"; fs.valueOf(formUid, fieldSOM);
 ```
 
 ## Rellenar previamente XML para el conjunto de formularios {#prefill-xml-for-form-set}
@@ -172,20 +171,17 @@ Por ejemplo, tiene tres formularios (formulario1, formulario2 y formulario3), en
 
 form1
 
-field
-form1field
+field form1field
 
 form2
 
-field
-form2field
+field form2field
 
 form3
 
-field
-form3field
+field form3field
 
-Cada formulario tiene un campo con nombre común, denominado &quot;campo&quot; y un campo con nombre único denominado &quot;campo de formulario&lt;i>&quot;.
+Cada formulario tiene un campo con nombre común, denominado &quot;campo&quot; y un campo con nombre único denominado &quot;campo de formulario&quot;.
 
 Puede rellenar previamente este conjunto de formularios utilizando un XML con la siguiente estructura:
 
@@ -304,7 +300,7 @@ El subárbol indica los datos de los formularios del conjunto de formularios. El
 
 `children: xfa:datasets`
 
-Esta etiqueta indica el inicio de HTML5 Form XML. Se añade en el XML de envío si está presente en el XML de relleno previo o si no hay ningún XML de relleno previo. Esta etiqueta se puede eliminar del XML de relleno previo.
+Esta etiqueta indica el inicio del formulario XML de HTML5. Se añade en el XML de envío si está presente en el XML de relleno previo o si no hay ningún XML de relleno previo. Esta etiqueta se puede eliminar del XML de relleno previo.
 
 ### XFA:CONJUNTOS DE DATOS {#xfa-datasets}
 
@@ -348,7 +344,7 @@ En el XML de relleno previo, esta etiqueta es opcional, pero si falta, se ignora
 
 NOMBRE DE LA ETIQUETA ELEMENTO RAÍZ
 
-Si hay un elemento raíz en el XML de relleno previo, el nombre de ese elemento también se toma en el XML de envío. En los casos en los que no hay un xml de prerelleno, el nombre del rootElement es el nombre del subformulario raíz del primer formulario del conjunto de formularios que tiene una propiedad dataRoot establecida en &quot;/&quot;. Si no hay tal formulario, el nombre de rootElement es **fs_voleameroot**, que es una palabra clave reservada.
+Si hay un elemento raíz en el XML de relleno previo, el nombre de ese elemento también se toma en el XML de envío. En los casos en los que no hay un xml de prerelleno, el nombre del rootElement es el nombre del subformulario raíz del primer formulario del conjunto de formularios que tiene una propiedad dataRoot establecida en &quot;/&quot;. Si no hay tal formulario, el nombre de rootElement es **fs_dummy_root**, que es una palabra clave reservada.
 
 ## Conjunto de formularios en la aplicación de AEM Forms {#formset-in-workspace-app}
 
@@ -384,4 +380,3 @@ Los siguientes patrones de datos no son totalmente compatibles con el conjunto d
   </tr>
  </tbody>
 </table>
-

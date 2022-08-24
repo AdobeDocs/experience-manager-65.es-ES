@@ -1,21 +1,20 @@
 ---
 title: Entrega de contenido
-seo-title: Entrega de contenido
+seo-title: Content Delivery
 description: Entrega de contenido
-seo-description: nulo
+seo-description: null
 uuid: 1e7bea34-ca50-41ed-8295-fa182c27fa69
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
-
 
 # Entrega de contenido{#content-delivery}
 
@@ -29,12 +28,12 @@ Esto incluye el uso de recursos, contenido del sitio, contenido de CaaS (sobre e
 
 >[!NOTE]
 >
->**El** contenido sobre el aire puede provenir de cualquiera de los controladores anteriores a través de los controladores de ContentSync. Se puede utilizar para agrupar paquetes y envíos a través de zips, así como para mantener actualizaciones para esos paquetes.
+>**Contenido sobre el aire** puede proceder de cualquiera de los anteriores a través de los controladores de ContentSync. Se puede utilizar para agrupar paquetes y envíos a través de zips, así como para mantener actualizaciones para esos paquetes.
 
 Los servicios de contenido ofrecen tres tipos principales de material:
 
 1. **Assets**
-1. **Contenido HTML empaquetado (HTML/CSS/JS)**
+1. **Contenido del HTML empaquetado (HTML/CSS/JS)**
 1. **Contenido independiente del canal**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
@@ -65,7 +64,7 @@ El flujo de trabajo de recursos es el siguiente:
    1. Seleccionar recurso o colección de recursos
    1. Personalización de la renderización JSON
 
-El diagrama siguiente muestra el **Flujo de trabajo de referencia de recursos**:
+El diagrama siguiente muestra la variable **Flujo de trabajo de referencia de recursos**:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -85,7 +84,7 @@ Actualmente, se distribuyen alrededor del repositorio de Assets. Los archivos a 
 * /content/dam/geometrixx-outdoors/brand/icons/app/cart.png
 * /content/dam/geometrixx-outdoors/brand/icons/app/home.png
 
-#### Acceso a las entidades de recursos de CS {#accessing-cs-asset-entities}
+#### Acceso a entidades de recursos CS {#accessing-cs-asset-entities}
 
 Dejemos de lado los pasos de cómo la página está disponible a través de la API por ahora (estará cubierta por la descripción de la interfaz de usuario de AEM) y asumamos que se ha hecho. Se han creado y agregado entidades de recursos al espacio &quot;appImages&quot;. Se han creado carpetas adicionales en el espacio para fines de organización. Por lo tanto, las entidades de recursos se almacenan en el JCR de AEM como:
 
@@ -109,15 +108,15 @@ El JSON proporciona una dirección URL para cada imagen, generada por los servic
 
 Para obtener el binario de la imagen &quot;carrito&quot;, se vuelve a utilizar la biblioteca cliente.
 
-## Contenido HTML empaquetado {#packaged-html-content}
+## Contenido del HTML empaquetado {#packaged-html-content}
 
-El contenido HTML es necesario para los clientes que necesitan mantener el diseño del contenido. Esto resulta útil para las aplicaciones nativas que utilizan un contenedor web, como una vista web de Cordova, para mostrar el contenido.
+El contenido del HTML es necesario para los clientes que necesitan mantener el diseño del contenido. Esto resulta útil para las aplicaciones nativas que utilizan un contenedor web, como una vista web de Cordova, para mostrar el contenido.
 
-AEM Content Services podrá proporcionar contenido HTML a la aplicación móvil mediante la API. Los clientes que deseen exponer AEM contenido como HTML crearán una entidad de página HTML que apunte al origen de contenido de AEM.
+AEM Content Services podrá proporcionar contenido de HTML a la aplicación móvil mediante la API. Los clientes que deseen exponer AEM contenido como HTML crearán una entidad de página de HTML que apunte a la fuente de contenido de AEM.
 
 Se tienen en cuenta las siguientes opciones:
 
-* **Archivo zip:** para tener la mejor oportunidad de mostrar correctamente en el dispositivo, todo el material al que se hace referencia en la página: css, JavaScript, recursos, etc. : se incluye en un solo archivo comprimido con la respuesta . Las referencias en la página HTML se ajustarán para utilizar una ruta relativa a estos archivos.
+* **Archivo zip:** Para tener la mejor oportunidad de mostrar correctamente en el dispositivo, todo el material al que se hace referencia en la página: css, JavaScript, activos, etc. : se incluye en un solo archivo comprimido con la respuesta . Las referencias en la página HTML se ajustarán para utilizar una ruta relativa a estos archivos.
 * **Transmisión:** Obtención de un manifiesto de los archivos necesarios de AEM. A continuación, utilice ese manifiesto para solicitar todos los archivos (HTML, CSS, JS, etc.) con solicitudes posteriores.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
@@ -145,4 +144,3 @@ El contenido puede acceder a la aplicación de varias formas.
    * Representadores Sling predeterminados predefinidos
    * Representadores de contenido de AEM Mobile/Content Services
    * Representaciones personalizadas
-

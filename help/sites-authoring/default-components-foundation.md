@@ -1,8 +1,8 @@
 ---
 title: Componentes de base
-seo-title: Componentes de base
+seo-title: Foundation Components
 description: Componentes de base
-seo-description: nulo
+seo-description: null
 uuid: 3caf9123-ae58-4590-af2f-57ef076daf7f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,28 +12,27 @@ discoiquuid: ea2a523e-8d26-4be4-822f-35f153e40308
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '7365'
+source-wordcount: '7362'
 ht-degree: 88%
 
 ---
-
 
 # Componentes de base {#foundation-components}
 
 >[!CAUTION]
 >
->La mayoría de los componentes de base ya están en desuso con AEM 6.5. Consulte las [notas de la versión](/help/release-notes/deprecated-removed-features.md) para obtener más información.
+>La mayoría de los componentes de base ya están en desuso con AEM 6.5. Consulte la [notas de la versión](/help/release-notes/deprecated-removed-features.md) para obtener más información.
 >
->Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) más modernos y ampliables en los proyectos de AEM. Estos forman parte del [contenido de muestra de We.Retail](/help/sites-developing/we-retail.md) y su administrador también puede [instalarlos por separado y utilizarlos para el desarrollo](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/get-started/using.html).
+>Adobe recomienda aprovechar los [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) más modernos y ampliables en los proyectos de AEM. Estos forman parte de la función [Contenido de muestra de We.Retail](/help/sites-developing/we-retail.md) y también [se instala por separado y se utiliza para el desarrollo](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/get-started/using.html) por su administrador.
 >
->Puede utilizar el [AEM Conjunto de herramientas de modernización](https://opensource.adobe.com/aem-modernize-tools/) para refactorizar el sitio basado en componentes base para utilizar componentes principales.
+>Puede usar la variable [AEM Modernizar grupo de herramientas](https://opensource.adobe.com/aem-modernize-tools/) para refactorizar el sitio basado en componentes de base y utilizar componentes principales.
 
 Los componentes de base están diseñados para utilizarse al crear contenido para una página web estándar. Forman un subconjunto de los componentes disponibles para su uso para efectuar una instalación estándar de AEM.
 
-Algunos están disponibles inmediatamente a través del navegador de componentes, mientras que otros también están disponibles mediante el [modo de diseño](/help/sites-authoring/default-components-designmode.md) (si la página está basada en una plantilla estática) o mediante [la edición de la plantilla](/help/sites-authoring/templates.md) (si la página está basada en una plantilla editable).
+Algunos están disponibles inmediatamente mediante el navegador de componentes, mientras que otros también están disponibles mediante [modo de diseño](/help/sites-authoring/default-components-designmode.md) (si la página está basada en una plantilla estática) o [edición de la plantilla](/help/sites-authoring/templates.md) (si la página está basada en una plantilla editable).
 
 Se pueden usar componentes de base, pero se han eliminado en gran medida y se han sustituido por los componentes principales, que ofrecen más capacidad de ampliación y flexibilidad.
 
@@ -87,14 +86,14 @@ Las características siguientes determinarán el tamaño de la ventana:
 
 Por ejemplo, el componente genera una imagen pequeña al abrir la página web en un teléfono móvil y una imagen de tamaño medio al abrirla en una tableta. En un equipo portátil, el componente crea y presenta una imagen grande cuando la página se abre en un navegador web. Cuando el navegador web se cambia de tamaño para ajustarse a una parte de la pantalla, el componente se adapta presentando una imagen más pequeña y actualiza la vista.
 
-#### Formatos de imagen compatibles  {#supported-image-formats}
+#### Formatos de imagen compatibles {#supported-image-formats}
 
 Puede utilizar archivos de imagen con las extensiones de nombre de archivo siguientes con el componente imagen adaptable:
 
 * .jpg
 * .jpeg
 * .png
-* .gif **
+* .gif &#42;&#42;
 
 >[!CAUTION]
 >
@@ -186,8 +185,8 @@ Están disponibles en dos fichas:
 Especificar una ruta manualmente o con el selector. Deje esta opción en blanco para utilizar la página actual como página principal.
       * **Opciones de Lista fija**
 
-         * ****
-PáginasSeleccione una lista de páginas. Uso 
+         * **Páginas**
+Seleccione una lista de páginas. Uso 
 `+` para añadir más entradas y los botones de flecha hacia arriba y hacia abajo para ajustar el orden.
       * **Opciones de Buscar**
 
@@ -197,9 +196,9 @@ PáginasSeleccione una lista de páginas. Uso
       * **Opciones de Búsqueda avanzada**
 
          * **Anotación predicada Querybuilder** Es posible introducir una consulta de búsqueda utilizando una anotación predicada QueryBuilder. Por ejemplo, puede introducir &quot;fulltext=Marketing&quot; para que se muestren todas las páginas en cuyo contenido aparezca &quot;Marketing&quot; en el Carrusel. Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
-   * **Ordenar**
-por selección 
-`jcr:title`,  `jcr:created`,  `cq:lastModified` o  `cq:template` en el menú desplegable.
+   * **Ordenar por**
+Select 
+`jcr:title`, `jcr:created`, `cq:lastModified`o `cq:template` en el menú desplegable.
 
    * **Límite** Máximo de elementos que se pueden utilizar en el Carrusel; es opcional.
 
@@ -211,7 +210,7 @@ por selección
 >
 >Es posible crear un componente de carrusel personalizado para Adobe Experience Manager que muestre recursos digitales localizados en AEM DAM. Para obtener más información, consulte [Crear componentes de carrusel personalizado para Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
 
-### Gráfico  {#chart}
+### Gráfico {#chart}
 
 >[!CAUTION]
 >
@@ -221,7 +220,8 @@ El componente Gráfico permite añadir una barra, línea o gráfico circular. AE
 
 * **Datos**
 
-   * **Datos del gráfico** Introduzca los datos en su gráfico utilizando el formato CSV; el formato Valores separados por comas utiliza comas (&quot;,&quot;) como separador del campo.
+   * **Datos de gráfico**
+Introduzca los datos del gráfico utilizando el formato CSV; el formato Valores separados por comas utiliza comas (&quot;,&quot;) como separador de campos.
 
 * **Avanzado**
 
@@ -286,8 +286,8 @@ El componente de integración de aplicaciones externo (**Externo**) permite incr
 
 * **Externo**
 
-   * **Aplicación**
-de destinoEspecifique la URL de la aplicación web que se va a integrar; por ejemplo:
+   * **Aplicación de destino**
+Especifique la URL de la aplicación web que desea integrar; por ejemplo:
 
       ```
       https://en.wikipedia.org/wiki/Main_Page
@@ -295,8 +295,7 @@ de destinoEspecifique la URL de la aplicación web que se va a integrar; por eje
 
    * **Pasar parámetros** Active la casilla de los parámetros para pasarlos a la aplicación cuando sea necesario.
 
-   * **Anchura y altura
-**Definir el tamaño del iframe
+   * **Anchura y altura **Define el tamaño del iframe
 
 La aplicación externa se integra en el sistema de párrafos de la página AEM; por ejemplo, cuando se utiliza una aplicación de destino de `https://en.wikipedia.org/wiki/Main_Page`:
 
@@ -306,7 +305,7 @@ La aplicación externa se integra en el sistema de párrafos de la página AEM; 
 >
 >Según el ejemplo de uso, existen otras opciones para integrar aplicaciones externas, como por ejemplo la [Integración de Portlets](/help/sites-administering/aem-as-portal.md).
 
-### Flash  {#flash}
+### Flash {#flash}
 
 >[!CAUTION]
 >
@@ -354,7 +353,7 @@ El componente Flash permite cargar una película Flash. Puede arrastrar un recur
 
       Cualquier otro atributo necesario.
 
-### Imagen  {#image}
+### Imagen {#image}
 
 >[!CAUTION]
 >
@@ -388,7 +387,7 @@ Dispone de varias opciones adicionales en el modo de edición de pantalla comple
 >
 >Los usuarios de Internet Explorer deben cargar la imagen, hacer clic en **Aceptar** y volver a abrir la imagen para ver el archivo cargado en la previsualización y para poder realizar modificaciones (p. ej. recortar).
 >
->Consulte la sección [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obtener más información sobre las funciones HTML5 utilizadas por AEM.
+>Consulte la [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obtener más información sobre las funciones de HTML5 que utiliza AEM.
 
 Al cargar una imagen, se pueden configurar los aspectos siguientes:
 
@@ -464,7 +463,7 @@ El componente Lista permite configurar criterios de búsqueda para mostrar una l
 
       * **Opciones de Páginas secundarias**
 
-         * **Elementos secundarios de**  (página principal)
+         * **Hijos de** (Página principal)
 
             Especifique una ruta manualmente o con el selector. Deje esta opción en blanco para utilizar la página actual como página principal.
       * **Opciones de Lista fija**
@@ -491,7 +490,7 @@ El componente Lista permite configurar criterios de búsqueda para mostrar una l
             Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
       * **Etiquetas**
 
-         Especifique la **Página principal**, **Etiquetas/palabras clave** y los criterios de coincidencia necesarios.
+         Especifique la variable **Página principal**, **Etiquetas/Palabras clave** y los criterios de coincidencia necesarios.
    * **Mostrar como**
 
       Cómo desea que se incluyan los elementos; incluye vínculos, teasers y noticias.
@@ -577,7 +576,7 @@ Puede configurar:
 
       Especifique el texto del título que desea que se muestre.
 
-   * **Vínculo**
+   * **Vincular**
 
       Especifique la página (producto) para la que se debe mostrar el estado de pedido.
 
@@ -631,7 +630,7 @@ El componente Búsqueda añade la capacidad de búsqueda a la página.
 
 Puede configurar:
 
-* Búsqueda  
+* Búsqueda
 
    * **Tipos de nodo**
 
@@ -694,7 +693,7 @@ En el siguiente ejemplo se muestra un término de búsqueda con errores ortográ
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar los [Componentes principales de navegación](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html), [Navegación de idioma](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/language-navigation.html) y [Ruta de navegación](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [Navegación](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html), [Navegación por idiomas](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/language-navigation.html)y [Componentes principales de la ruta de navegación](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html) en su lugar.
 
 Lista del mapa del sitio automática, que (con las configuraciones por defecto) enumera todas las páginas (como vínculos activos) en la página web actual. Por ejemplo, un extracto muestra:
 
@@ -708,11 +707,11 @@ Si es obligatorio, se puede configurar:
 
       Ruta desde donde va a comenzar la lista.
 
-### Presentación  {#slideshow}
+### Presentación {#slideshow}
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [componente principal de carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html) en su lugar.
+>Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [componente principal de carrusel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=es) en su lugar.
 
 >[!CAUTION]
 >
@@ -726,7 +725,7 @@ Puede configurar:
 
    * **Nueva diapositiva**
 
-      Puede especificar una selección de diapositivas utilizando los botones **Add** (y **Remove**).
+      Puede especificar una selección de diapositivas utilizando la variable **Agregar** (y **Eliminar**).
 
    * **Título**
 
@@ -805,7 +804,7 @@ El componente de Texto permite introducir un bloque de texto mediante un editor 
 
 ![imagen_1-98](assets/chlimage_1-98.png)
 
-Al abrir el cuadro de diálogo **Configurar**, también puede establecer:
+Al abrir el **Configurar** también puede establecer:
 
 * **Separador**
 * **Estilo del texto**
@@ -832,11 +831,11 @@ El componente Texto e imagen añade un bloque de texto y una imagen. También se
 
 Puede configurar:
 
-* **Estilos**  de componente (**Estilos**)
+* **Estilos de componente** (**Estilos**)
 
    Aquí puede alinear la imagen a la izquierda o la derecha. El modo predeterminado es el alineado a la **Izquierda,** con la imagen a la izquierda.
 
-* **Propiedades de imagen**  (**Propiedades de imagen avanzadas**)
+* **Propiedades de imagen** (**Propiedades de imagen avanzadas**)
 
    Permite especificar lo siguiente:
 
@@ -885,7 +884,7 @@ Puede configurar:
 
    Si desea utilizar un nombre en lugar del título de página, indíquelo aquí.
 
-* **Vínculo**
+* **Vincular**
 
    Identificador URI si el título va a funcionar como vínculo.
 
@@ -944,7 +943,7 @@ En el siguiente ejemplo se muestra el componente 2 columnas en uso. Puede utiliz
 
 Un componente Control de columna cuyo valor predeterminado es de 2 columnas iguales.
 
-### 3 columnas  {#columns-2}
+### 3 columnas {#columns-2}
 
 Componente Control de columna cuyo valor predeterminado es 3 columnas iguales.
 
@@ -958,7 +957,7 @@ El componente de Control de columna permite a los usuarios seleccionar cómo qui
 
       Seleccione el número de columnas que desee procesar. Una vez creada, cada columna tiene su propio vínculo para arrastrar componentes o recursos cuando se añada contenido.
 
-## Formulario  {#form}
+## Formulario {#form}
 
 >[!CAUTION]
 >
@@ -1078,7 +1077,7 @@ Se trata de un campo obligatorio y sólo debe incluir los siguientes caracteres:
 
    * **CSS**
 
-### Formulario (componente)  {#form-component}
+### Formulario (componente) {#form-component}
 
 >[!CAUTION]
 >
@@ -1137,7 +1136,7 @@ Se incluye una selección de tipos de acciones en la instalación AEM estándar:
       * **Almacenar contenido con cargas**
       * **Enviar pedido**
       * **Dar de baja a un suscriptor**
-      * **Actualizar orden**
+      * **Actualizar pedido**
    * **Identificador de formulario**
 
       El identificador del formulario identifica de forma exclusiva el formulario. Utilice el identificador del formulario si tiene varios formularios en una misma página; asegúrese de que tienen identificadores distintos.
@@ -1167,7 +1166,7 @@ Se incluye una selección de tipos de acciones en la instalación AEM estándar:
          `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
    * **Configuración de la acción**
 
-      Las opciones disponibles en **Configuración de la acción** dependen del **Tipo de acción** seleccionado:
+      Las opciones disponibles en **Configuración de la acción** dependen de la variable **Tipo de acción** seleccionados:
 
       * **Solicitud de cuenta**
 
@@ -1196,7 +1195,7 @@ Se incluye una selección de tipos de acciones en la instalación AEM estándar:
 
          * **Tipo de medio**
 
-            Si está configurado, se agrega a cada comentario como `sling:resourceType`
+            Si se configura, se agrega esto a cada comentario como `sling:resourceType`
 
          * **Selector de vista**
       * **Crear posible cliente**
@@ -1220,7 +1219,7 @@ Se incluye una selección de tipos de acciones en la instalación AEM estándar:
 
          * **Ver datos...**
 
-            Haga clic en este botón para acceder a la información sobre los resultados en el editor de información masiva. Desde aquí puede exportar la información en un archivo `.tsv` (separado por tabulaciones) para utilizarlo, por ejemplo, en una hoja de cálculo de Excel.
+            Haga clic en este botón para acceder a la información sobre los resultados en el editor de información masiva. Desde aquí puede exportar la información a un `.tsv` (separado por tabulaciones) (para su uso, por ejemplo, en una hoja de cálculo de Excel).
       * **Correo**
 
          * **De**
@@ -1328,7 +1327,7 @@ Permite añadir un campo de direcciones internacionales con el formato siguiente
 
 El componente está configurado para su uso inmediato, pero es posible cambiar la configuración, si es necesario. Por ejemplo, se pueden añadir restricciones para elementos o direcciones individuales. Al dejar estos campos vacíos, se usará la configuración predeterminada.
 
-### Captcha  {#captcha}
+### Captcha {#captcha}
 
 >[!CAUTION]
 >
@@ -1344,7 +1343,7 @@ El componente Captcha requiere que el usuario escriba una cadena alfanumérica t
 
 Se pueden configurar distintos parámetros para este componente, incluyendo un mensaje que se mostrará cuando la cadena captcha no sea válida.
 
-### Grupo de casillas  {#checkbox-group}
+### Grupo de casillas {#checkbox-group}
 
 >[!CAUTION]
 >
@@ -1404,7 +1403,7 @@ El componente de carga de archivo ofrece al usuario un mecanismo para selecciona
 >
 >Puede crear un componente de carga personalizado para cargar archivos en un Sling Servlet. Para obtener más información, consulte [Cargar archivos en Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
 
-### Campo oculto  {#hidden-field}
+### Campo oculto {#hidden-field}
 
 >[!CAUTION]
 >
@@ -1420,7 +1419,7 @@ Este componente permite crear un campo oculto. Se pueden utilizar con finalidade
 >
 >Consulte [Mostrar y ocultar componentes del formulario](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Botón de imagen  {#image-button}
+### Botón de imagen {#image-button}
 
 >[!CAUTION]
 >
@@ -1452,7 +1451,7 @@ El campo de vínculo permite que el usuario especifique una dirección URL:
 
 Se suele utilizar sobre todo para el formulario de eventos del calendario, que se emplea para el campo URL/vínculo de un evento.
 
-### Campo de contraseña  {#password-field}
+### Campo de contraseña {#password-field}
 
 >[!CAUTION]
 >
@@ -1555,4 +1554,3 @@ El campo de texto estándar se puede configurar con el tamaño necesario y con s
 Permite crear un botón Enviar para utilizarlo en un flujo de trabajo.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
-

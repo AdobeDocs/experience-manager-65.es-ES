@@ -1,8 +1,8 @@
 ---
 title: Inicio rápido de la API de Java del Administrador de usuarios (SOAP)
-seo-title: Inicio rápido de la API de Java del Administrador de usuarios (SOAP)
+seo-title: User Manager Java API Quick Start(SOAP)
 description: Utilice la API de administrador de usuarios para agregar usuarios, eliminar usuarios, crear grupos, administrar usuarios y grupos, administrar funciones y permisos, sincronizar usuarios mediante programación y administrar los nodos de preferencias mediante programación.
-seo-description: Utilice la API de administrador de usuarios para agregar usuarios, eliminar usuarios, crear grupos, administrar usuarios y grupos, administrar funciones y permisos, sincronizar usuarios mediante programación y administrar los nodos de preferencias mediante programación.
+seo-description: Use User Manager API to add users, delete users, create groups, manage users and groups, manage roles and permissions, synchronize users programmatically, and manage the Preferences Nodes programmatically.
 uuid: 0a2aa4ab-9329-485f-a30e-47bb471ce1b5
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7f622371-0f0f-4789-b2e7-e4b536a21c4d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
-
 
 # Inicio rápido de la API de Java (SOAP) del administrador de usuarios {#user-manager-java-api-quick-start-soap}
 
@@ -45,7 +44,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 ## Inicio rápido (modo SOAP): Adición de usuarios mediante la API de Java {#quick-start-soap-mode-adding-users-using-the-java-api}
 
-En el siguiente ejemplo de código se agrega un usuario denominado Wendy Blue a AEM Forms. (Consulte [Adición de usuarios](/help/forms/developing/users.md#adding-users)).
+En el siguiente ejemplo de código se agrega un usuario denominado Wendy Blue a AEM Forms. (Consulte [Adición de usuarios](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -163,7 +162,7 @@ En el siguiente ejemplo de código se agrega un usuario denominado Wendy Blue a 
 
 ## Inicio rápido (modo SOAP): Eliminación de usuarios mediante la API de Java {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
-En el siguiente ejemplo de código se elimina de AEM Forms un usuario llamado Wendy Blue. (Consulte [Eliminación de usuarios](/help/forms/developing/users.md#deleting-users)).
+En el siguiente ejemplo de código se elimina de AEM Forms un usuario llamado Wendy Blue. (Consulte [Eliminación de usuarios](/help/forms/developing/users.md#deleting-users).)
 
 ```java
  /*
@@ -259,7 +258,7 @@ En el siguiente ejemplo de código se elimina de AEM Forms un usuario llamado We
 
 ## Inicio rápido (modo SOAP): Administración de usuarios y grupos mediante la API de Java {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
 
-El siguiente ejemplo de código encuentra un usuario local y el grupo local al que pertenece el usuario. (Consulte [Administración de usuarios y grupos](/help/forms/developing/users.md#managing-users-and-groups)).
+El siguiente ejemplo de código encuentra un usuario local y el grupo local al que pertenece el usuario. (Consulte [Administración de usuarios y grupos](/help/forms/developing/users.md#managing-users-and-groups).)
 
 ```java
  /*
@@ -383,7 +382,7 @@ El siguiente ejemplo de código encuentra un usuario local y el grupo local al q
 
 ## Inicio rápido (modo SOAP): Administración de funciones y permisos mediante la API de Java {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-El siguiente ejemplo de código asigna la función de usuario de servicios a una entidad de seguridad, imprime las funciones que tiene la entidad de seguridad y, posteriormente, quita la función de la entidad de seguridad. Se invocan dos servicios para este inicio rápido: el servicio DirectoryManager y el servicio AuthorizationManager.(Consulte [Administración de funciones y permisos](/help/forms/developing/users.md#managing-roles-and-permissions)).
+El siguiente ejemplo de código asigna la función de usuario de servicios a una entidad de seguridad, imprime las funciones que tiene la entidad de seguridad y, posteriormente, quita la función de la entidad de seguridad. Se invocan dos servicios para este inicio rápido: el servicio DirectoryManager y el servicio AuthorizationManager.(Consulte [Administración de funciones y permisos](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 ```java
  /*
@@ -524,9 +523,9 @@ El siguiente ejemplo de código asigna la función de usuario de servicios a una
  
 ```
 
-## Inicio rápido (modo SOAP): Sincronización programática de usuarios con la API de Java {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
+## Inicio rápido (modo SOAP): Sincronización programática de usuarios mediante la API de Java {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
 
-El siguiente ejemplo de código Java sincroniza a los usuarios mediante las API de administración de usuarios. (Consulte [Sincronización programática de usuarios](/help/forms/developing/users.md#programmatically-synchronizing-users)).
+El siguiente ejemplo de código Java sincroniza a los usuarios mediante las API de administración de usuarios. (Consulte [Sincronización programática de usuarios](/help/forms/developing/users.md#programmatically-synchronizing-users).)
 
 ```java
  /*
@@ -635,7 +634,7 @@ El siguiente ejemplo de código Java sincroniza a los usuarios mediante las API 
 
 ## Inicio rápido (modo SOAP): Adición de usuarios mediante la API de Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
-En el siguiente ejemplo de código se agrega un usuario denominado Wendy Blue a AEM Forms. (Consulte [Adición de usuarios](/help/forms/developing/users.md#adding-users)).
+En el siguiente ejemplo de código se agrega un usuario denominado Wendy Blue a AEM Forms. (Consulte [Adición de usuarios](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -753,7 +752,7 @@ En el siguiente ejemplo de código se agrega un usuario denominado Wendy Blue a 
 
 ## Inicio rápido (modo SOAP): Creación de grupos mediante la API de Java {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
-En el siguiente ejemplo de código se crea un grupo denominado AdobeGroup en AEM Forms. (Consulte [Creación de grupos](/help/forms/developing/users.md#creating-groups)).
+En el siguiente ejemplo de código se crea un grupo denominado AdobeGroup en AEM Forms. (Consulte [Creación de grupos](/help/forms/developing/users.md#creating-groups).)
 
 ```java
  /*
@@ -982,7 +981,7 @@ public class ManagePreferences {
         map = pmutil.getPreferences(path);
         for(String str:map.keySet()) {
             //assert on the key as "ReverseOrder"
-            //assert on the value[map.get(str)] as "false”
+            //assert on the value[map.get(str)] as "false"
         }
     } catch (UMException e) {
         e.printStackTrace();
@@ -1092,4 +1091,3 @@ public class ManagePreferences {
 }
 }
 ```
-

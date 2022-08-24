@@ -1,13 +1,13 @@
 ---
 title: Actualización de certificados de servicio de extensión de Reader caducados
-description: 'Reader documentos extendidos no funcionan, actualizar certificados '
-source-git-commit: a26e4fb53458beae9b259e5ee5dc74a95264f9e1
+description: Reader documentos extendidos no funcionan, actualizar certificados
+exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 0%
 
 ---
-
 
 # Actualización de certificados de servicio de extensión de Reader caducados {#Updating-expired-Reader-Extension-service-certificates}
 
@@ -126,7 +126,7 @@ Para aplicar derechos de uso en un AEM Forms en un entorno OSGi, cree un servici
 
 **¿Con quién debo ponerme en contacto si tengo más preguntas?**
 
-Puede ponerse en contacto con [Compatibilidad con Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) o levante un ticket de soporte.
+Puede ponerse en contacto con [Compatibilidad con Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=es#support) o levante un ticket de soporte.
 
 **¿Qué sucede si no actualizo mi certificado antes del 7 de enero de 2023?**
 

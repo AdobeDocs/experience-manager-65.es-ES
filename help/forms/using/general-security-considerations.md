@@ -1,8 +1,8 @@
 ---
 title: Consideraciones generales de seguridad para AEM Forms en JEE
-seo-title: Consideraciones generales de seguridad para AEM Forms en JEE
+seo-title: General Security Considerations for AEM Forms on JEE
 description: Aprenda a prepararse para endurecer su AEM Forms en un entorno JEE.
-seo-description: Aprenda a prepararse para endurecer su AEM Forms en un entorno JEE.
+seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
 uuid: 4d098731-fc8f-41d7-98b5-5c2e31211614
 content-type: reference
 topic-tags: Security
@@ -11,9 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1062'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Para obtener información de seguridad sobre los sistemas operativos compatibles
  <tbody>
   <tr>
    <td><p>IBM® AIX® 7.2</p> </td>
-   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">Beneficios de seguridad de IBM AIX</a></p> </td>
+   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">Ventajas de seguridad de IBM AIX</a></p> </td>
   </tr>
   <tr>
    <td><p>Microsoft Windows Server® 2016 </p> </td>
@@ -144,12 +144,12 @@ Para obtener información de seguridad sobre las bases de datos compatibles con 
   </tr>
   <tr>
    <td><p>Oracle® 12c</p> </td>
-   <td><p>Consulte el capítulo Seguridad en la <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">documentación de Oracle 12g</a></p> </td>
+   <td><p>Consulte el capítulo Seguridad en la <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Documentación del oracle 12g</a></p> </td>
   </tr>
  </tbody>
 </table>
 
-Esta tabla describe los puertos predeterminados que se deben abrir durante el proceso de configuración de AEM Forms en JEE. Si se conecta a través de https, ajuste la información del puerto y las direcciones IP en consecuencia. Para obtener más información sobre la configuración de puertos, consulte el documento *Instalación e implementación de AEM Forms en JEE* para su servidor de aplicaciones.
+Esta tabla describe los puertos predeterminados que se deben abrir durante el proceso de configuración de AEM Forms en JEE. Si se conecta a través de https, ajuste la información del puerto y las direcciones IP en consecuencia. Para obtener más información sobre la configuración de puertos, consulte la *Instalación e implementación de AEM Forms en JEE* documento para el servidor de aplicaciones.
 
 <table>
  <thead>
@@ -212,13 +212,13 @@ El servidor de aplicaciones JBoss utiliza 8080 como puerto HTTP predeterminado. 
 
 1. Abra el siguiente archivo para editarlo:
 
-   Instalación de un solo servidor: [Raíz de JBoss]/standalone/configuration/standalone.xml
+   Instalación de un solo servidor: [Raíz JBoss]/standalone/configuration/standalone.xml
 
-   Instalaciones de clúster: [Raíz de JBoss]/domain/configuration/domain.xml
+   Instalaciones de clúster: [Raíz JBoss]/domain/configuration/domain.xml
 
-1. Cambie el valor del atributo **port** en la etiqueta **&lt;socket-binding>** por un número de puerto personalizado. Por ejemplo, los siguientes usan el puerto 8090:
+1. Cambiar el valor de **puerto** en la variable **&lt;socket-binding>** a un número de puerto personalizado. Por ejemplo, los siguientes usan el puerto 8090:
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. Guarde y cierre el archivo.
 1. Reinicie el servidor de aplicaciones JBoss.
@@ -239,13 +239,13 @@ AEM Forms en JEE utiliza la base de datos AEM Forms en JEE para almacenar inform
 
 El servidor de aplicaciones que se utiliza para ejecutar AEM Forms en JEE requiere su propia configuración para acceder a la base de datos a través de una fuente de datos configurada en el servidor de aplicaciones. Asegúrese de que el servidor de aplicaciones no exponga la contraseña de la base de datos en texto claro en su archivo de configuración de la fuente de datos.
 
-El archivo lc_[database].xml no debe contener contraseña en formato de texto claro. Consulte con el proveedor del servidor de aplicaciones cómo cifrar estas contraseñas para su servidor de aplicaciones.
+El lc_[base de datos]El archivo .xml no debe contener contraseña en formato de texto claro. Consulte con el proveedor del servidor de aplicaciones cómo cifrar estas contraseñas para su servidor de aplicaciones.
 
 >[!NOTE]
 >
 >El instalador llave en mano de AEM Forms en JEE JBoss cifra la contraseña de la base de datos.
 
-IBM WebSphere Application Server y Oracle WebLogic Server pueden cifrar contraseñas de fuentes de datos de forma predeterminada. Sin embargo, confirme con la documentación del servidor de aplicaciones para asegurarse de que esto sucede.
+El servidor de aplicaciones IBM WebSphere y el servidor Oracle WebLogic pueden cifrar contraseñas de fuentes de datos de forma predeterminada. Sin embargo, confirme con la documentación del servidor de aplicaciones para asegurarse de que esto sucede.
 
 ### Protección de la clave privada almacenada en el almacén de confianza {#protecting-the-private-key-stored-in-trust-store}
 

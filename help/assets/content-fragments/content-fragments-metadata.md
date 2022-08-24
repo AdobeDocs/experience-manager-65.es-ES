@@ -3,10 +3,11 @@ title: 'Metadatos: Propiedades del fragmento'
 description: Consulte cómo puede ver y editar las propiedades de los metadatos de los fragmentos de contenido en AEM para ajustar el contenido sin encabezado.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 5%
+ht-degree: 65%
 
 ---
 
@@ -18,22 +19,22 @@ Consulte cómo puede ver y editar las propiedades de los metadatos de los fragme
 
 Puede ver y editar los metadatos (propiedades) de los fragmentos de contenido:
 
-1. En la consola **Assets** vaya a la ubicación del fragmento de contenido.
-2. O bien:
+1. En la consola **Recursos** vaya a la ubicación del fragmento de contenido.
+2. O bien, haga lo siguiente:
 
    * Seleccione [**Ver propiedades** para abrir los cuadros de diálogo](/help/assets/manage-assets.md#editing-properties). Una vez abierto para su visualización, también puede editarlo.
-   * Abra el fragmento de contenido para editarlo y, a continuación, seleccione **Metadatos** en el panel lateral.
+   * Abra el fragmento de contenido para editarlo y, a continuación, seleccione **Metadatos** del panel lateral.
 
-   ![metadata](assets/cfm-metadata-01.png)
+   ![metadatos](assets/cfm-metadata-01.png)
 
 3. La pestaña **Básico** proporciona opciones que puede ver o editar:
 
-   * Miniatura, para la cual puede **Cargar imagen**
-   * **El** modo de fragmento de contenido indica el modelo utilizado para crear el fragmento actual
+   * Miniatura, para la que puede **Cargar imagen**
+   * **Modelo de fragmento de contenido** indica el modelo utilizado para crear el fragmento actual
    * **Título**
    * **Descripción**
    * **Etiquetas**
-      * [](/help/sites-authoring/tags.md) Las etiquetas son especialmente potentes a la hora de organizar los fragmentos, ya que se pueden utilizar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para encontrar contenido (mediante etiquetas) y aplicar operaciones por lotes.
+      * Las [Etiquetas](/help/sites-authoring/tags.md) son especialmente potentes a la hora de organizar los fragmentos, ya que se pueden utilizar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para encontrar contenido (mediante etiquetas) y aplicar operaciones por lotes.
 Por ejemplo, puede etiquetar fragmentos relevantes como &quot;lanzamiento de Navidad&quot; para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
    * Creado (solo visualización)
-   ![metadata](assets/cfm-metadata-02.png)
+   ![metadatos](assets/cfm-metadata-02.png)

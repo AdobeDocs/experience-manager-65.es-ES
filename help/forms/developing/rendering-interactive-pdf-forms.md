@@ -1,8 +1,8 @@
 ---
 title: Renderización de PDF forms interactivos
-seo-title: Renderización de PDF forms interactivos
+seo-title: Rendering Interactive PDF Forms
 description: Utilice el servicio Forms para procesar PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Puede utilizar el servicio Forms para procesar formularios interactivos mediante la API de Java y la API del servicio web.
-seo-description: Utilice el servicio Forms para procesar PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Puede utilizar el servicio Forms para procesar formularios interactivos mediante la API de Java y la API del servicio web.
+seo-description: Use the Forms service to render interactive PDF forms to client devices, typically web browsers, to collect information from users. You can use Forms service to render interactive forms using the Java API and Web Service API.
 uuid: df2a4dc8-f19e-49de-850f-85a204102631
 contentOwner: admin
 content-type: reference
@@ -11,24 +11,23 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2487'
 ht-degree: 0%
 
 ---
 
-
-# Representación de PDF forms interactivos {#rendering-interactive-pdf-forms}
+# Renderización de PDF forms interactivos {#rendering-interactive-pdf-forms}
 
 **Los ejemplos y ejemplos de este documento son solo para AEM Forms en un entorno JEE.**
 
-El servicio Forms procesa PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Una vez procesado un formulario interactivo, el usuario puede introducir datos en los campos del formulario y hacer clic en un botón de envío ubicado en el formulario para enviar información al servicio de Forms. Adobe Reader o Acrobat deben estar instalados en el equipo que aloje el explorador web del cliente para que pueda verse un formulario PDF interactivo.
+El servicio Forms procesa PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Una vez procesado un formulario interactivo, el usuario puede introducir datos en los campos del formulario y hacer clic en un botón de envío ubicado en el formulario para enviar información al servicio de Forms. Adobe Reader o Acrobat deben estar instalados en el equipo que aloje el explorador web del cliente para que pueda verse un formulario de PDF interactivo.
 
 >[!NOTE]
 >
->Para poder procesar un formulario con el servicio Forms, debe crear un diseño de formulario. Normalmente, un diseño de formulario se crea en Designer y se guarda como archivo XDP. Para obtener información sobre la creación de un diseño de formulario, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+>Para poder procesar un formulario con el servicio Forms, debe crear un diseño de formulario. Normalmente, un diseño de formulario se crea en Designer y se guarda como archivo XDP. Para obtener información sobre cómo crear un diseño de formulario, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 **Solicitud de préstamo de muestra**
 
@@ -48,40 +47,40 @@ En la tabla siguiente se describen los pasos de este diagrama.
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>El servlet Java <code>GetLoanForm</code> se invoca desde una página HTML. </p></td>
+   <td><p>La variable <code>GetLoanForm</code> El servlet Java se invoca desde una página de HTML. </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>El <code>GetLoanForm</code> servlet Java utiliza la API de cliente de servicio de Forms para procesar el formulario de préstamo en el explorador web del cliente. (Consulte <a href="#render-an-interactive-pdf-form-using-the-java-api">Representar un formulario PDF interactivo utilizando la API de Java</a>).</p></td>
+   <td><p>La variable <code>GetLoanForm</code> Java Servlet utiliza la API de cliente de servicio de Forms para procesar el formulario de préstamo en el explorador web del cliente. (Consulte <a href="#render-an-interactive-pdf-form-using-the-java-api">Representar un formulario de PDF interactivo mediante la API de Java</a>.)</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
-   <td><p>Una vez que el usuario rellena el formulario de préstamo y hace clic en el botón de envío, los datos se envían al servlet Java <code>HandleData</code>. (Consulte <i>"Loan form"</i>).</p></td>
+   <td><p>Una vez que el usuario rellena el formulario de préstamo y hace clic en el botón de envío, los datos se envían al <code>HandleData</code> Servlet Java. (Consulte <i>"Forma de préstamo"</i>.)</p></td>
   </tr>
   <tr>
    <td><p>4</p></td>
-   <td><p>El <code>HandleData</code> servlet Java utiliza la API de cliente de servicio de Forms para procesar el envío del formulario y recuperar los datos del formulario. A continuación, los datos se almacenan en una base de datos empresarial. (Consulte <a href="/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms">Gestión de Forms enviado</a>).</p></td>
+   <td><p>La variable <code>HandleData</code> Java Servlet utiliza la API de cliente del servicio Forms para procesar el envío del formulario y recuperar los datos del formulario. A continuación, los datos se almacenan en una base de datos empresarial. (Consulte <a href="/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms">Gestión de Forms enviado</a>.)</p></td>
   </tr>
   <tr>
    <td><p>5</p></td>
-   <td><p>Se devuelve un formulario de confirmación al explorador web. Los datos, como el nombre y los apellidos del usuario, se combinan con el formulario antes de procesarse. (Consulte <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Rellenado previo de Forms con diseños de posición variable</a>).</p></td>
+   <td><p>Se devuelve un formulario de confirmación al explorador web. Los datos, como el nombre y los apellidos del usuario, se combinan con el formulario antes de procesarse. (Consulte <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Rellenado previo de Forms con diseños flexibles</a>.)</p></td>
   </tr>
  </tbody>
 </table>
 
 **Formulario de préstamo**
 
-Este formulario de préstamo interactivo lo representa el `GetLoanForm` servlet Java de la aplicación de préstamos de ejemplo.
+Este formulario de préstamo interactivo se procesa mediante la solicitud de préstamo de ejemplo `GetLoanForm` Servlet Java.
 
 ![ri_ri_loanform](assets/ri_ri_loanform.png)
 
 **Formulario de confirmación**
 
-Este formulario se procesa mediante el servlet Java `HandleData` de la aplicación de préstamos de ejemplo.
+Este formulario se procesa mediante el ejemplo de aplicación de préstamos `HandleData` Servlet Java.
 
 ![ri_ri_confirm](assets/ri_ri_confirm.png)
 
-El `HandleData` servlet Java rellena previamente este formulario con el nombre y los apellidos del usuario, así como la cantidad. Una vez que el formulario se rellena previamente, se envía al explorador web del cliente. (Consulte [Rellenado previo de Forms con diseños de posición variable](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
+La variable `HandleData` El Servlet Java rellena previamente este formulario con el nombre y los apellidos del usuario, así como la cantidad. Una vez que el formulario se rellena previamente, se envía al explorador web del cliente. (Consulte [Rellenado previo de Forms con diseños flexibles](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
 
 **Servlets Java**
 
@@ -101,7 +100,7 @@ El siguiente código muestra la sintaxis de un servlet Java llamado GetLoanForm:
              }
 ```
 
-Normalmente, no colocaría el código de API de cliente de servicio de Forms dentro de los métodos `doGet` o `doPost` de un servlet Java. Es mejor programar el colocar este código dentro de una clase independiente, crear una instancia de la clase desde el método `doPost` (o el método `doGet`) y llamar a los métodos adecuados. Sin embargo, para la brevedad del código, los ejemplos de código de esta sección se reducen al mínimo y los ejemplos de código se colocan en el método `doPost` .
+Normalmente, no colocaría el código de API de cliente de servicio de Forms dentro de un servlet Java `doGet` o `doPost` método. Es una mejor práctica de programación colocar este código dentro de una clase separada, crear una instancia de la clase desde el `doPost` método (o `doGet` ) y llame a los métodos adecuados. Sin embargo, para la brevedad del código, los ejemplos de código de esta sección se reducen al mínimo y los ejemplos de código se colocan en la variable `doPost` método.
 
 >[!NOTE]
 >
@@ -109,13 +108,13 @@ Normalmente, no colocaría el código de API de cliente de servicio de Forms den
 
 **Resumen de los pasos**
 
-Para procesar un formulario PDF interactivo, realice las siguientes tareas:
+Para procesar un formulario de PDF interactivo, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
 1. Cree un objeto de API de cliente de Forms.
 1. Especifique valores de URI.
 1. Adjuntar archivos al formulario (opcional).
-1. Representar un formulario PDF interactivo.
+1. Representar un formulario de PDF interactivo.
 1. Escriba el flujo de datos del formulario en el explorador web del cliente.
 
 **Incluir archivos de proyecto**
@@ -124,15 +123,15 @@ Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando u
 
 **Creación de un objeto de API de cliente de Forms**
 
-Para poder realizar una operación de API de cliente de servicio de Forms mediante programación, debe crear un objeto de API de cliente de Forms. Si utiliza la API de Java, cree un objeto `FormsServiceClient`. Si utiliza la API de servicio web de Forms, cree un objeto `FormsService`.
+Para poder realizar una operación de API de cliente de servicio de Forms mediante programación, debe crear un objeto de API de cliente de Forms. Si utiliza la API de Java, cree un `FormsServiceClient` objeto. Si utiliza la API del servicio web de Forms, cree un `FormsService` objeto.
 
 **Especificar valores de URI**
 
-Puede especificar los valores de URI que requiere el servicio Forms para procesar un formulario. Se puede hacer referencia a un diseño de formulario guardado como parte de una aplicación de Forms mediante el valor de URI raíz de contenido `repository:///`. Por ejemplo, considere el siguiente diseño de formulario denominado *Loan.xdp* ubicado dentro de una aplicación de Forms denominada *FormsApplication*:
+Puede especificar los valores de URI que requiere el servicio Forms para procesar un formulario. Se puede hacer referencia a un diseño de formulario guardado como parte de una aplicación de Forms mediante el valor de URI raíz de contenido `repository:///`. Por ejemplo, considere el siguiente diseño de formulario denominado *Loan.xdp* ubicada dentro de una aplicación de Forms llamada *FormsApplication*:
 
 ![ri_ri_formrepository](assets/ri_ri_formrepository.png)
 
-Para acceder a este diseño de formulario, especifique `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp` como nombre del formulario (el primer parámetro pasado al método `renderPDFForm`) y `repository:///` como valor de URI raíz del contenido.
+Para acceder a este diseño de formulario, especifique `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp` como nombre del formulario (el primer parámetro pasado al `renderPDFForm` método) y `repository:///` como valor de URI raíz de contenido.
 
 >[!NOTE]
 >
@@ -153,17 +152,17 @@ Cuando procesa un formulario interactivo, puede definir valores de URI como la d
 * En el botón Enviar mientras se diseña el diseño de formulario en Designer
 * Mediante la API de cliente del servicio Forms
 
-Si la dirección URL de destino está definida en el diseño de formulario, no la anule con la API de cliente del servicio de Forms. Es decir, si se define la dirección URL de destino mediante la API de Forms, se restablece la dirección URL especificada en el diseño de formulario en la especificada mediante la API. Si desea enviar el formulario PDF a la dirección URL de destino especificada en el diseño de formulario, defina programáticamente la dirección URL de destino como una cadena vacía.
+Si la dirección URL de destino está definida en el diseño de formulario, no la anule con la API de cliente del servicio de Forms. Es decir, si se define la dirección URL de destino mediante la API de Forms, se restablece la dirección URL especificada en el diseño de formulario en la especificada mediante la API. Si desea enviar el formulario de PDF a la dirección URL de destino especificada en el diseño de formulario, establezca programáticamente la dirección URL de destino en una cadena vacía.
 
-Si tiene un formulario que contiene un botón de envío y un botón de cálculo (con una secuencia de comandos correspondiente que se ejecuta en el servidor), puede definir mediante programación la dirección URL a la que se envía el formulario para ejecutar la secuencia de comandos. Utilice el botón de envío del diseño de formulario para especificar la dirección URL donde se publican los datos del formulario. (Consulte [Cálculo de datos del formulario](/help/forms/developing/calculating-form-data.md)).
+Si tiene un formulario que contiene un botón de envío y un botón de cálculo (con una secuencia de comandos correspondiente que se ejecuta en el servidor), puede definir mediante programación la dirección URL a la que se envía el formulario para ejecutar la secuencia de comandos. Utilice el botón de envío del diseño de formulario para especificar la dirección URL donde se publican los datos del formulario. (Consulte [Cálculo de datos de formulario](/help/forms/developing/calculating-form-data.md).)
 
 >[!NOTE]
 >
->En lugar de especificar un valor de URL para hacer referencia a un archivo XDP, también puede pasar una instancia `com.adobe.idp.Document` al servicio Forms. La instancia `com.adobe.idp.Document` contiene un diseño de formulario. (Consulte [Pasar documentos al servicio de Forms](/help/forms/developing/passing-documents-forms-service.md)).
+>En lugar de especificar un valor de URL para hacer referencia a un archivo XDP, también puede pasar un `com.adobe.idp.Document` al servicio de Forms. La variable `com.adobe.idp.Document` contiene un diseño de formulario. (Consulte [Pasar documentos al servicio de Forms](/help/forms/developing/passing-documents-forms-service.md).)
 
 **Adjuntar archivos al formulario**
 
-Puede adjuntar archivos a un formulario. Cuando se procesa un formulario PDF con archivos adjuntos, los usuarios pueden recuperar los archivos adjuntos en Acrobat mediante el panel de archivos adjuntos. Puede adjuntar distintos tipos de archivo a un formulario, como un archivo de texto, o a un archivo binario, como un archivo JPG.
+Puede adjuntar archivos a un formulario. Cuando se procesa un formulario de PDF con archivos adjuntos, los usuarios pueden recuperar los archivos adjuntos en Acrobat mediante el panel de archivos adjuntos. Puede adjuntar distintos tipos de archivo a un formulario, como un archivo de texto, o a un archivo binario, como un archivo JPG.
 
 >[!NOTE]
 >
@@ -171,19 +170,19 @@ Puede adjuntar archivos a un formulario. Cuando se procesa un formulario PDF con
 
 **Representar un formulario PDF interactivo**
 
-Para procesar un formulario, utilice un diseño de formulario creado en Designer y guardado como archivo XDP o PDF. Asimismo, puede procesar un formulario creado con Acrobat y guardado como archivo PDF. Para procesar un formulario PDF interactivo, invoque el método `FormsServiceClient` o `renderPDFForm2` del objeto `renderPDFForm`.
+Para procesar un formulario, utilice un diseño de formulario creado en Designer y guardado como archivo XDP o PDF. Además, puede procesar un formulario creado con Acrobat y guardado como archivo de PDF. Para procesar un formulario de PDF interactivo, invoque la variable `FormsServiceClient` del objeto `renderPDFForm` método o `renderPDFForm2` método.
 
-El `renderPDFForm` utiliza un objeto `URLSpec`. La raíz de contenido al archivo XDP se pasa al servicio Forms mediante el método `URLSpec` del objeto `setContentRootURI`. El nombre del diseño de formulario ( `formQuery`) se pasa como un valor de parámetro independiente. Los dos valores se concatenan para obtener la referencia absoluta al diseño de formulario.
+La variable `renderPDFForm` utiliza un `URLSpec` objeto. La raíz de contenido al archivo XDP se pasa al servicio de Forms mediante la variable `URLSpec` del objeto `setContentRootURI` método. El nombre del diseño de formulario ( `formQuery`) se pasa como un valor de parámetro independiente. Los dos valores se concatenan para obtener la referencia absoluta al diseño de formulario.
 
-El método `renderPDFForm2` acepta una instancia `com.adobe.idp.Document` que contiene el documento XDP o PDF que se va a procesar.
+La variable `renderPDFForm2` acepta un `com.adobe.idp.Document` instancia que contiene el documento XDP o PDF que se va a procesar.
 
 >[!NOTE]
 >
->La opción etiquetada en tiempo de ejecución de PDF no se puede establecer si el documento de entrada es un documento PDF. Si el archivo de entrada es un archivo XDP, se puede configurar la opción PDF con etiquetas.
+>La opción de tiempo de ejecución del PDF etiquetado no se puede establecer si el documento de entrada es un documento del PDF. Si el archivo de entrada es un archivo XDP, se puede configurar la opción de PDF etiquetado.
 
-## Representar un formulario PDF interactivo mediante la API de Java {#render-an-interactive-pdf-form-using-the-java-api}
+## Representar un formulario de PDF interactivo mediante la API de Java {#render-an-interactive-pdf-form-using-the-java-api}
 
-Representar un formulario PDF interactivo utilizando la API de Forms (Java):
+Representar un formulario de PDF interactivo mediante la API de Forms (Java):
 
 1. Incluir archivos de proyecto
 
@@ -191,23 +190,23 @@ Representar un formulario PDF interactivo utilizando la API de Forms (Java):
 
 1. Creación de un objeto de API de cliente de Forms
 
-   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
-   * Cree un objeto `FormsServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
+   * Cree un `ServiceClientFactory` objeto que contiene propiedades de conexión.
+   * Cree un `FormsServiceClient` usando su constructor y pasando el `ServiceClientFactory` objeto.
 
 1. Especificar valores de URI
 
-   * Cree un objeto `URLSpec` que almacene valores de URI usando su constructor.
-   * Invoque el método `URLSpec` del objeto `setApplicationWebRoot` y pase un valor de cadena que represente la raíz web de la aplicación.
-   * Invoque el método `URLSpec` del objeto `setContentRootURI` y pase un valor de cadena que especifique el valor de URI raíz del contenido. Asegúrese de que el diseño de formulario se encuentra en el URI raíz del contenido. Si no es así, el servicio de Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository:///`.
-   * Invoque el método `URLSpec` del objeto `setTargetURL` y pase un valor de cadena que especifique el valor de la dirección URL de destino donde se registran los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
+   * Cree un `URLSpec` objeto que almacena valores de URI utilizando su constructor.
+   * Invocar el `URLSpec` del objeto `setApplicationWebRoot` y pase un valor de cadena que represente la raíz web de la aplicación.
+   * Invocar el `URLSpec` del objeto `setContentRootURI` y pase un valor de cadena que especifique el valor de URI raíz del contenido. Asegúrese de que el diseño de formulario se encuentra en el URI raíz del contenido. Si no es así, el servicio de Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository:///`.
+   * Invocar el `URLSpec` del objeto `setTargetURL` y pase un valor de cadena que especifique el valor de la dirección URL de destino donde se publican los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
 
 1. Adjuntar archivos al formulario
 
-   * Cree un objeto `java.util.HashMap` para almacenar archivos adjuntos usando su constructor.
-   * Invoque el método `java.util.HashMap` del objeto `put` para cada archivo que se adjuntará al formulario procesado. Pase los siguientes valores a este método:
+   * Cree un `java.util.HashMap` para almacenar archivos adjuntos usando su constructor.
+   * Invocar el `java.util.HashMap` del objeto `put` para cada archivo que se adjuntará al formulario procesado. Pase los siguientes valores a este método:
 
       * Un valor de cadena que especifica el nombre del archivo adjunto, incluida la extensión de nombre de archivo.
-   * Un objeto `com.adobe.idp.Document` que contiene el archivo adjunto.
+   * A `com.adobe.idp.Document` objeto que contiene el archivo adjunto.
 
    >[!NOTE]
    >
@@ -215,29 +214,29 @@ Representar un formulario PDF interactivo utilizando la API de Forms (Java):
 
 1. Representar un formulario PDF interactivo
 
-   Invoque el método `FormsServiceClient` del objeto `renderPDFForm` y pase los siguientes valores:
+   Invocar el `FormsServiceClient` del objeto `renderPDFForm` y pase los siguientes valores:
 
    * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Un objeto `com.adobe.idp.Document` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un objeto `com.adobe.idp.Document` vacío.
-   * Un objeto `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Se trata de un parámetro opcional y puede especificar `null` si no desea especificar opciones en tiempo de ejecución.
-   * Un objeto `URLSpec` que contiene valores de URI necesarios para el servicio Forms.
-   * Un objeto `java.util.HashMap` que almacena archivos adjuntos. Se trata de un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+   * A `com.adobe.idp.Document` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un vacío `com.adobe.idp.Document` objeto.
+   * A `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Este es un parámetro opcional y puede especificar `null` si no desea especificar opciones de tiempo de ejecución.
+   * A `URLSpec` que contiene valores de URI necesarios para el servicio Forms.
+   * A `java.util.HashMap` que almacena archivos adjuntos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
 
-   El método `renderPDFForm` devuelve un objeto `FormsResult` que contiene un flujo de datos de formulario que debe escribirse en el explorador web del cliente.
+   La variable `renderPDFForm` el método devuelve un `FormsResult` objeto que contiene un flujo de datos de formulario que debe escribirse en el explorador web del cliente.
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Cree un objeto `com.adobe.idp.Document` invocando el método `FormsResult` del objeto ‘s `getOutputContent`.
-   * Obtenga el tipo de contenido del objeto `com.adobe.idp.Document` invocando su método `getContentType`.
-   * Establezca el tipo de contenido del objeto `javax.servlet.http.HttpServletResponse` invocando su método `setContentType` y pasando el tipo de contenido del objeto `com.adobe.idp.Document`.
-   * Cree un objeto `javax.servlet.ServletOutputStream` que se utilice para escribir el flujo de datos del formulario en el explorador web del cliente invocando el método `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream`.
-   * Cree un objeto `java.io.InputStream` invocando el método `com.adobe.idp.Document` del objeto `getInputStream`.
-   * Cree una matriz de bytes y rellénela con la secuencia de datos del formulario invocando el método `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
-   * Invoque el método `javax.servlet.ServletOutputStream` del objeto `write` para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes al método `write`.
+   * Cree un `com.adobe.idp.Document` invocando el objeto `FormsResult` objeto ‘s `getOutputContent` método.
+   * Obtenga el tipo de contenido de la variable `com.adobe.idp.Document` invocando su `getContentType` método.
+   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasar el tipo de contenido de la variable `com.adobe.idp.Document` objeto.
+   * Cree un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos del formulario en el explorador web del cliente invocando la variable `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
+   * Cree un `java.io.InputStream` invocando el objeto `com.adobe.idp.Document` del objeto `getInputStream` método.
+   * Cree una matriz de bytes y rellénela con la secuencia de datos del formulario invocando la variable `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
+   * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-## Representar un formulario PDF interactivo mediante la API de servicio web {#render-an-interactive-pdf-form-using-the-web-service-api}
+## Representar un formulario de PDF interactivo mediante la API de servicio web {#render-an-interactive-pdf-form-using-the-web-service-api}
 
-Representar un formulario PDF interactivo mediante la API de Forms (servicio web):
+Representar un formulario de PDF interactivo mediante la API de Forms (servicio web):
 
 1. Incluir archivos de proyecto
 
@@ -246,22 +245,22 @@ Representar un formulario PDF interactivo mediante la API de Forms (servicio web
 
 1. Creación de un objeto de API de cliente de Forms
 
-   Cree un objeto `FormsService` y establezca valores de autenticación.
+   Cree un `FormsService` y establezca los valores de autenticación.
 
 1. Especificar valores de URI
 
-   * Cree un objeto `URLSpec` que almacene valores de URI usando su constructor.
-   * Invoque el método `URLSpec` del objeto `setApplicationWebRoot` y pase un valor de cadena que represente la raíz web de la aplicación.
-   * Invoque el método `URLSpec` del objeto `setContentRootURI` y pase un valor de cadena que especifique el valor de URI raíz del contenido. Asegúrese de que el diseño de formulario se encuentra en el URI raíz del contenido. Si no es así, el servicio de Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository:///`.
-   * Invoque el método `URLSpec` del objeto `setTargetURL` y pase un valor de cadena que especifique el valor de la dirección URL de destino donde se registran los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
+   * Cree un `URLSpec` objeto que almacena valores de URI utilizando su constructor.
+   * Invocar el `URLSpec` del objeto `setApplicationWebRoot` y pase un valor de cadena que represente la raíz web de la aplicación.
+   * Invocar el `URLSpec` del objeto `setContentRootURI` y pase un valor de cadena que especifique el valor de URI raíz del contenido. Asegúrese de que el diseño de formulario se encuentra en el URI raíz del contenido. Si no es así, el servicio de Forms genera una excepción. Para hacer referencia al repositorio, especifique `repository:///`.
+   * Invocar el `URLSpec` del objeto `setTargetURL` y pase un valor de cadena que especifique el valor de la dirección URL de destino donde se publican los datos del formulario. Si define la dirección URL de destino en el diseño de formulario, puede pasar una cadena vacía. También puede especificar la dirección URL a la que se envía un formulario para realizar cálculos.
 
 1. Adjuntar archivos al formulario
 
-   * Cree un objeto `java.util.HashMap` para almacenar archivos adjuntos usando su constructor.
-   * Invoque el método `java.util.HashMap` del objeto `put` para cada archivo que se adjuntará al formulario procesado. Pase los siguientes valores a este método:
+   * Cree un `java.util.HashMap` para almacenar archivos adjuntos usando su constructor.
+   * Invocar el `java.util.HashMap` del objeto `put` para cada archivo que se adjuntará al formulario procesado. Pase los siguientes valores a este método:
 
       * Un valor de cadena que especifica el nombre del archivo adjunto, incluida la extensión del nombre de archivo
-   * Un objeto `BLOB` que contiene el archivo adjunto
+   * A `BLOB` objeto que contiene el archivo adjunto
 
    >[!NOTE]
    >
@@ -269,29 +268,29 @@ Representar un formulario PDF interactivo mediante la API de Forms (servicio web
 
 1. Representar un formulario PDF interactivo
 
-   Invoque el método `FormsService` del objeto `renderPDFForm` y pase los siguientes valores:
+   Invocar el `FormsService` del objeto `renderPDFForm` y pase los siguientes valores:
 
    * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Un objeto `BLOB` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase `null`.
-   * Un objeto `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Se trata de un parámetro opcional y puede especificar `null` si no desea especificar opciones en tiempo de ejecución.
-   * Un objeto `URLSpec` que contiene valores de URI necesarios para el servicio Forms.
-   * Un objeto `java.util.HashMap` que almacena archivos adjuntos. Se trata de un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
-   * Un objeto `com.adobe.idp.services.holders.BLOBHolder` vacío que se rellena con el método . Se utiliza para almacenar el formulario PDF procesado.
-   * Un objeto `javax.xml.rpc.holders.LongHolder` vacío que se rellena con el método . (Este argumento almacenará el número de páginas del formulario).
-   * Un objeto `javax.xml.rpc.holders.StringHolder` vacío que se rellena con el método . (Este argumento almacenará el valor de configuración regional).
-   * Un objeto `com.adobe.idp.services.holders.FormsResultHolder` vacío que contendrá los resultados de esta operación.
+   * A `BLOB` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase `null`.
+   * A `PDFFormRenderSpec` que almacena opciones en tiempo de ejecución. Este es un parámetro opcional y puede especificar `null` si no desea especificar opciones de tiempo de ejecución.
+   * A `URLSpec` que contiene valores de URI necesarios para el servicio Forms.
+   * A `java.util.HashMap` que almacena archivos adjuntos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
+   * Un vacío `com.adobe.idp.services.holders.BLOBHolder` objeto que rellena el método . Se utiliza para almacenar el formulario de PDF procesado.
+   * Un vacío `javax.xml.rpc.holders.LongHolder` objeto que rellena el método . (Este argumento almacenará el número de páginas del formulario).
+   * Un vacío `javax.xml.rpc.holders.StringHolder` objeto que rellena el método . (Este argumento almacenará el valor de configuración regional).
+   * Un vacío `com.adobe.idp.services.holders.FormsResultHolder` que contendrá los resultados de esta operación.
 
-   El método `renderPDFForm` rellena el objeto `com.adobe.idp.services.holders.FormsResultHolder` que se pasa como el último valor de argumento con un flujo de datos de formulario que debe escribirse en el explorador web del cliente.
+   La variable `renderPDFForm` rellena el `com.adobe.idp.services.holders.FormsResultHolder` objeto que se pasa como el último valor de argumento con un flujo de datos de formulario que debe escribirse en el explorador web del cliente.
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Cree un objeto `FormResult` obteniendo el valor del miembro de datos `com.adobe.idp.services.holders.FormsResultHolder` del objeto `value`.
-   * Cree un objeto `BLOB` que contenga datos de formulario invocando el método `FormsResult` del objeto `getOutputContent`.
-   * Obtenga el tipo de contenido del objeto `BLOB` invocando su método `getContentType`.
-   * Establezca el tipo de contenido del objeto `javax.servlet.http.HttpServletResponse` invocando su método `setContentType` y pasando el tipo de contenido del objeto `BLOB`.
-   * Cree un objeto `javax.servlet.ServletOutputStream` que se utilice para escribir el flujo de datos del formulario en el explorador web del cliente invocando el método `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream`.
-   * Cree una matriz de bytes y rellénela invocando el método `BLOB` del objeto `getBinaryData`. Esta tarea asigna el contenido del objeto `FormsResult` a la matriz de bytes.
-   * Invoque el método `javax.servlet.http.HttpServletResponse` del objeto `write` para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes al método `write`.
+   * Cree un `FormResult` obteniendo el valor de `com.adobe.idp.services.holders.FormsResultHolder` del objeto `value` miembro de datos.
+   * Cree un `BLOB` objeto que contiene datos de formulario invocando la variable `FormsResult` del objeto `getOutputContent` método.
+   * Obtenga el tipo de contenido de la variable `BLOB` invocando su `getContentType` método.
+   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasar el tipo de contenido de la variable `BLOB` objeto.
+   * Cree un `javax.servlet.ServletOutputStream` objeto utilizado para escribir el flujo de datos del formulario en el explorador web del cliente invocando la variable `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
+   * Cree una matriz de bytes y rellénela invocando la variable `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido de la variable `FormsResult` a la matriz de bytes.
+   * Invocar el `javax.servlet.http.HttpServletResponse` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
 **Escribir el flujo de datos del formulario en el explorador web del cliente**
 

@@ -8,7 +8,7 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
-source-git-commit: 9cf4a68a2b3312fe53282e2fd4ec81988f2fd453
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Usar metadatos en una notificación por correo electrónico {#use-metadata-in-an-email-notification}
 
-Puede utilizar el paso Asignar tarea para crear y asignar tareas a un usuario o grupo. Cuando se asigna una tarea a un usuario o grupo, se envía una notificación por correo electrónico al usuario definido o a cada miembro del grupo definido. Una [notificación de correo electrónico](../../forms/using/use-custom-email-template-assign-task-step.md) típica contiene un enlace de la tarea asignada e información relacionada con la tarea.
+Puede utilizar el paso Asignar tarea para crear y asignar tareas a un usuario o grupo. Cuando se asigna una tarea a un usuario o grupo, se envía una notificación por correo electrónico al usuario definido o a cada miembro del grupo definido. Una [notificación por correo electrónico](../../forms/using/use-custom-email-template-assign-task-step.md) contiene el vínculo de la tarea asignada y la información relacionada con la tarea.
 
 Puede utilizar metadatos en una plantilla de correo electrónico para rellenar dinámicamente la información en una notificación por correo electrónico. Por ejemplo, el valor del título, la descripción, la fecha de vencimiento, la prioridad, el flujo de trabajo y la última fecha de la siguiente notificación de correo electrónico se seleccionan de forma dinámica en el tiempo de ejecución (cuando se genera una notificación por correo electrónico).
 
@@ -155,9 +155,9 @@ También puede utilizar metadatos personalizados en una notificación por correo
 
 ### Usar ECMAScript para agregar metadatos personalizados  {#use-ecmascript-to-add-custom-metadata}
 
-[](https://en.wikipedia.org/wiki/ECMAScript) ECMAScriptis es un lenguaje de secuencias de comandos. Se utiliza para secuencias de comandos del lado del cliente y aplicaciones de servidor. Realice los siguientes pasos para utilizar ECMAScript para agregar metadatos personalizados a una plantilla de correo electrónico:
+[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) es un lenguaje de secuencias de comandos. Se utiliza para secuencias de comandos del lado del cliente y aplicaciones de servidor. Realice los siguientes pasos para utilizar ECMAScript para agregar metadatos personalizados a una plantilla de correo electrónico:
 
-1. Inicie sesión en CRX DE con una cuenta administrativa. La dirección URL es https://&#39;[server]:[port]&#39;/crx/de/index.jsp
+1. Inicie sesión en CRX DE con una cuenta administrativa. La dirección URL es https://&#39;[server]:[puerto]&#39;/crx/de/index.jsp
 
 1. Vaya a /apps/fd/dashboard/scripts/metadataScripts. Cree un archivo con la extensión .ecma. Por ejemplo, usermetadata.ecma
 
@@ -185,20 +185,20 @@ También puede utilizar metadatos personalizados en una notificación por correo
 
    Si no especifica el título, el campo Metadatos personalizados muestra la ruta completa del archivo ECMAScript. Siga estos pasos para especificar un título significativo para la secuencia de comandos:
 
-   1. Expanda el nodo de script, haga clic con el botón derecho en el nodo **[!UICONTROL jcr:content]** y haga clic en **[!UICONTROL Mixins]**.
-   1. Escriba mix:title en el cuadro de diálogo Editar mezclas y haga clic en **+**.
+   1. Expanda el nodo de secuencia de comandos, haga clic con el botón derecho en el botón **[!UICONTROL jcr:content]** y haga clic en **[!UICONTROL Mezclas]**.
+   1. Mezcla de tipos:título en el cuadro de diálogo Editar mezclas y haga clic en **+**.
    1. Agregue una propiedad con los siguientes valores.
 
       | Nombre | jcr:title |
       |---|---|
-      | Tipo | String |
+      | Tipo | Cadena |
       | Value | Especifique el título de la secuencia de comandos. Por ejemplo, metadatos personalizados para el titular de la directiva. El valor especificado se muestra en el paso asignar tarea. |
 
 ### Usar un paquete OSGi y la interfaz Java para agregar metadatos personalizados {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
-Puede utilizar la interfaz Java WorkitemUserMetadataService para agregar metadatos personalizados para plantillas de correo electrónico. Puede crear un paquete OSGi que utilice la interfaz Java WorkitemUserMetadataService e implementarla en el servidor AEM Forms. Hace que los metadatos estén disponibles para su selección en el paso Asignar tarea .
+Puede utilizar la interfaz Java WorkitemUserMetadataService para agregar metadatos personalizados para plantillas de correo electrónico. Puede crear un paquete OSGi que utilice la interfaz Java WorkitemUserMetadataService e implementarla en el servidor de AEM Forms. Hace que los metadatos estén disponibles para su selección en el paso Asignar tarea .
 
-Para crear un paquete OSGi con la interfaz Java, añada [AEM Forms Client SDK](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) jar y [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) archivos como dependencias externas al proyecto del paquete OSGi. Puede utilizar cualquier IDE de Java para crear un paquete OSGi. El siguiente procedimiento proporciona los pasos para utilizar Eclipse para crear un paquete OSGi:
+Para crear un paquete OSGi con la interfaz Java, agregue [SDK de cliente de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) jar y [tarro de granito](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) archivos como dependencias externas al proyecto de paquete OSGi. Puede utilizar cualquier IDE de Java para crear un paquete OSGi. El siguiente procedimiento proporciona los pasos para utilizar Eclipse para crear un paquete OSGi:
 
 1. Abra Eclipse IDE. Vaya a Archivo > Nuevo proyecto.
 

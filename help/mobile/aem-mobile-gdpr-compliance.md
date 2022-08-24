@@ -1,19 +1,18 @@
 ---
 title: 'AEM Mobile: preparación para el RGPD'
-seo-title: 'AEM Mobile: preparación para el RGPD'
+seo-title: AEM Mobile - GDPR Readiness
 description: '"AEM Mobile: preparación para el RGPD"'
-seo-description: nulo
+seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
-
 
 # AEM Mobile: preparación para el RGPD {#aem-mobile-gdpr-readiness}
 
@@ -48,12 +47,12 @@ Obligatorio:
 Proporcione al menos una de las siguientes características:
 
 * El cliente del usuario final proporcionó un ID de OAuth (el ID que se utiliza en el sistema de asignación directa de derechos del cliente): *dpsc-directEntitlementId*
-* Para los usuarios de aplicaciones de Windows, el ID de App Store del usuario final: *dpsc-windowsAppStoreId*
-* La dirección de correo electrónico que el usuario final utilizó para interactuar con la aplicación DPS: *correo electrónico*
+* Para los usuarios de aplicaciones de Windows, el App Store ID del usuario final: *dpsc-windowsAppStoreId*
+* La dirección de correo electrónico que el usuario final utilizó para interactuar con la aplicación DPS: *email*
 
 ### Preguntas más frecuentes {#frequently-asked-questions-faq}
 
-**¿Eliminará la Adobe mis compras de App Store al iniciar una solicitud de DELETE?**
+**¿Eliminará Adobe mis compras de App Store al iniciar una solicitud de DELETE?**
 
 El Adobe eliminará la información que tiene de las compras de la tienda de aplicaciones (suscripciones, etc.) pero las compras seguirán estando registradas en las tiendas de aplicaciones. Si el usuario final (la aplicación) ha iniciado sesión en la tienda de aplicaciones, esos recibos se recuperarán de nuevo y se enviarán a Adobe y, posteriormente, se considerarán nuevas compras y la aplicación los restaurará para volver a tener acceso.
 
@@ -71,7 +70,7 @@ Adobe tiene muy poca información que asocia directamente con un usuario especí
 
 **¿Qué datos personales se rastrean con Analytics?**
 
-Ninguna. Se está realizando un seguimiento de los datos, pero estos se encuentran en el nivel de aplicación (no en el personal). Esto incluye eventos como inicios, bloqueos, cierres, actividades, compras o superposiciones de publicaciones. No se realiza un seguimiento de las ubicaciones geográficas, los nombres, los ID de dispositivo ni las direcciones IP.
+Ninguno. Se está realizando un seguimiento de los datos, pero estos se encuentran en el nivel de aplicación (no en el personal). Esto incluye eventos como inicios, bloqueos, cierres, actividades, compras o superposiciones de publicaciones. No se realiza un seguimiento de las ubicaciones geográficas, los nombres, los ID de dispositivo ni las direcciones IP.
 
 **El usuario final proporcionó su información, pero no se encontró nada. ¿Por qué no?**
 
@@ -86,10 +85,10 @@ A continuación, se muestra un ejemplo de las entradas y los resultados de una s
 #### Entradas: {#inputs}
 
 ```
-dpsc-contractId = “12345-1234-12416234” 
-directEntitlementId = “1234-1234-1234” 
-windowsAppStoreId = “testWinAppStoreId” 
-email = “test@what.com”
+dpsc-contractId = "12345-1234-12416234" 
+directEntitlementId = "1234-1234-1234" 
+windowsAppStoreId = "testWinAppStoreId" 
+email = "test@what.com"
 ```
 
 #### Salidas {#outputs}
@@ -303,4 +302,3 @@ email = “test@what.com”
 
 }
 ```
-

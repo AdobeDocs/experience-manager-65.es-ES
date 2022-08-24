@@ -1,8 +1,8 @@
 ---
 title: Glosario
-seo-title: Glosario
+seo-title: Glossary
 description: Este glosario enumera (alfabéticamente) los detalles de todos los documentos entregables de la lista de comprobación del proyecto.
-seo-description: Este glosario enumera (alfabéticamente) los detalles de todos los documentos entregables de la lista de comprobación del proyecto.
+seo-description: This glossary lists (alphabetically) details of all Deliverable documents from the Project Checklist.
 uuid: 5f919b05-3ec5-4b18-b966-5dcf706407f4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '7050'
+source-wordcount: '7036'
 ht-degree: 0%
 
 ---
 
 # Glosario{#glossary}
 
-Este glosario enumera (alfabéticamente) los detalles de todos los documentos entregables de la [lista de comprobación del proyecto](/help/managing/best-practices-checklist.md).
+Este glosario enumera (alfabéticamente) los detalles de todos los documentos entregables de la [Lista de comprobación de proyectos](/help/managing/best-practices-checklist.md).
 
 ## Aceptación de las partes interesadas {#acceptance-from-business-stakeholders}
 
@@ -47,7 +47,7 @@ Asegúrese de que los niveles requeridos de acceso al sistema se hayan concedido
 
 ### Lista de comprobación de seguridad de Adobe {#adobe-security-checklist}
 
-La [Lista de comprobación de seguridad de Adobe](/help/sites-administering/security-checklist.md) es la lista de comprobación oficial que se proporciona para garantizar que AEM es segura en la instalación. Contiene las medidas de seguridad y los pasos de verificación que debe realizar para garantizar la integridad de su instancia.
+La variable [Lista de comprobación de seguridad de Adobe](/help/sites-administering/security-checklist.md) es la lista de comprobación oficial que se proporciona para garantizar que AEM es seguro en la instalación. Contiene las medidas de seguridad y los pasos de verificación que debe realizar para garantizar la integridad de su instancia.
 
 ### Configuración del proyecto del portal de soporte de Adobe {#adobe-support-portal-project-set-up}
 
@@ -57,19 +57,19 @@ Pueden registrarse los detalles; por ejemplo, acerca de las tecnologías y versi
 
 ### Capacitación del administrador AEM {#aem-administrator-training}
 
-Capacitación para el personal administrativo de la solución. Consulte los [Servicios de capacitación de Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obtener más información.
+Capacitación para el personal administrativo de la solución. Consulte la [Servicios de formación de Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obtener más información.
 
 ### Formación de autores de AEM {#aem-author-training}
 
-Capacitación para el personal que producirá (creará) contenido para la solución. Consulte los [Servicios de capacitación de Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obtener más información.
+Capacitación para el personal que producirá (creará) contenido para la solución. Consulte la [Servicios de formación de Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obtener más información.
 
 ### Examen de certificación de AEM {#aem-certification-exam}
 
-Asegúrese de que se haya registrado al usuario apropiado para realizar los [exámenes de certificación](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) correspondientes.
+Asegúrese de que la persona adecuada esté registrada para tomar el [exámenes de certificación](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 ### AEM certificado {#aem-certified}
 
-Asegúrese de que la persona adecuada haya pasado los [exámenes de certificación](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) pertinentes.
+Asegúrese de que la persona adecuada haya pasado el [exámenes de certificación](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 ### AEM formación técnica {#aem-technical-training}
 
@@ -93,7 +93,7 @@ La hoja de ruta del cliente consta de hitos de alto nivel y objetivos comerciale
 
 ### Definición de la arquitectura de las aplicaciones {#application-architecture-definition}
 
-La [arquitectura de la aplicación](/help/managing/best-practices.md#development-preparation) debe definir claramente el comportamiento de las aplicaciones propuestas.
+La variable [arquitectura de aplicaciones](/help/managing/best-practices.md#development-preparation) debe definir claramente el comportamiento de las solicitudes propuestas.
 
 Se centra en:
 
@@ -110,8 +110,7 @@ Asegúrese de que su equipo esté formado por personal con la formación adecuad
 
 * al menos un desarrollador de posibles clientes certificado AEM
 * al menos un arquitecto AEM certificado
-* al menos el 75 % de los desarrolladores AEM certificados;
-esto permite a los desarrolladores certificados asesorar a los desarrolladores junior y garantiza el intercambio de conocimientos y la transparencia
+* al menos el 75 % de los desarrolladores AEM certificados; esto permite a los desarrolladores certificados asesorar a los desarrolladores junior y garantiza el intercambio de conocimientos y la transparencia
 
 ### Diagrama de arquitectura {#architecture-diagram}
 
@@ -208,8 +207,7 @@ Los KPI empresariales definen valores mensurables que demuestran la eficacia con
 
 Un documento de requisitos comerciales (BRD) detalla la solución comercial para un proyecto, proporcionando una especificación clara de las necesidades y expectativas del negocio del cliente. El BRD también distingue entre la solución comercial y la solución técnica.
 
-Al examinar la solución empresarial, el BRD debería responder a la pregunta:
-&quot;¿Qué quiere hacer el negocio?&quot;
+Al examinar la solución empresarial, el BRD debería responder a la pregunta: &quot;¿Qué quiere hacer el negocio?&quot;
 
 ### Inicio de sesión empresarial en cualquier ajuste necesario a la solución o arquitectura identificado y alineado con las expectativas de ROI y KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -505,7 +503,7 @@ Resultados de un estudio de viabilidad tanto para AEM como para el diseño de so
 
 ### Contrato finalizado {#finalized-contract}
 
-Se necesita un contrato finalizado y firmado antes de continuar con el proyecto. Esto se basa en el [Borrador del contrato](#contract-draft).
+Se necesita un contrato finalizado y firmado antes de continuar con el proyecto. Esto se basa en la variable [Borrador de contrato](#contract-draft).
 
 ### Funcionalidad de la solución aceptada por las partes interesadas {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -846,7 +844,7 @@ Informes creados para la empresa que explican los resultados de las pruebas de p
 
 ### Concepto de performance y escalabilidad {#performance-and-scalability-concept}
 
-Documento conceptual sobre cómo garantizar que la implementación cumple los KPI de rendimiento y cómo escalar la solución para que siga cumpliendo esos KPI.
+Documento conceptual sobre cómo garantizar que la implementación cumpla los KPI de rendimiento y cómo escalar la solución para que siga cumpliendo esos KPI.
 
 ### Prueba comparativa de rendimiento {#performance-benchmark}
 
@@ -904,7 +902,7 @@ Defina el plan de comunicación tanto para las partes interesadas del negocio co
 
 ### Esfuerzos del proyecto: estimaciones finales {#project-efforts-final-estimates}
 
-Las [estimaciones iniciales](#project-efforts-initial-estimates) fueron de alto nivel y se realizaron de acuerdo con los altos requisitos de implementación.
+La variable [estimaciones iniciales](#project-efforts-initial-estimates) fueron de alto nivel y se realizaron de acuerdo con los requisitos de alto nivel para la implementación.
 
 Ahora se examinan, perfeccionan y amplían para proporcionar las estimaciones finales. Las estimaciones deben ser proporcionadas por cada jefe de proyecto apropiado, incluida la gestión de proyectos, la consultoría, la arquitectura, las pruebas y el desarrollo.
 
@@ -969,7 +967,7 @@ Se utiliza con Runbook para ejecutar pasos y comprobaciones previos y posteriore
 
 >[!NOTE]
 >
->Para ver un ejemplo, consulte las [AEM Notas de la versión](/help/release-notes/release-notes.md).
+>Para ver un ejemplo, consulte la [Notas de la versión de AEM](/help/release-notes/release-notes.md).
 
 ### Versión ejecutándose en el entorno de producción {#release-running-on-production-environment}
 
@@ -1280,7 +1278,7 @@ Selección del conjunto de automatización y las herramientas. Se utilizarán pa
 
 ### Grupo de herramientas de prueba seleccionado {#test-tooling-suite-selected}
 
-Conjunto de automatización y herramientas seleccionadas para la automatización de casos de uso y otras tareas de ejecución de pruebas.
+Grupo de automatización y herramientas seleccionadas para automatización de casos de uso y otras tareas de ejecución de pruebas.
 
 ### Concepto de prueba {#testing-concept}
 
@@ -1288,7 +1286,7 @@ El concepto de pruebas es el esquema de pruebas de muy alto nivel para el proyec
 
 ### Planes de prueba {#testing-plans}
 
-Estos planes describen en bueno detalle la ejecución de pruebas para cada fase de desarrollo y se basan en la [Estrategia de pruebas](#testing-strategy).
+Estos planes describen en bueno detalle la realización de pruebas para cada fase de desarrollo y se basan en el [Estrategia de prueba](#testing-strategy).
 
 ### Ámbito de prueba {#testing-scope}
 

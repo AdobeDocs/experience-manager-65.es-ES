@@ -3,12 +3,12 @@ title: Explicación de los conceptos de metadatos
 description: Obtenga información sobre la necesidad de y los tipos de metadatos que permiten una categorización y organización más sencillas de los recursos.
 contentOwner: AG
 role: User, Admin
-feature: Metadatos
+feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 6%
+source-wordcount: '2720'
+ht-degree: 9%
 
 ---
 
@@ -36,13 +36,13 @@ Puede agregar más datos de alto nivel a los recursos digitales, por ejemplo:
 
 Más metadatos le ayudan a categorizar los recursos y resulta útil a medida que aumenta la cantidad de información digital. Es posible administrar algunos cientos de archivos basados en solo los nombres de archivo. Sin embargo, este enfoque no es escalable. Se queda corto cuando aumenta el número de personas involucradas y el número de activos gestionados.
 
-Con la adición de metadatos, el valor de un recurso digital aumenta, ya que el recurso se convierte en,
+Con la adición de metadatos, el valor de un recurso digital aumenta, ya que pasa a ser:
 
-* Más accesible: los sistemas y usuarios pueden encontrarlo fácilmente.
+* Más accesible: los sistemas y los usuarios pueden encontrarlo fácilmente.
 * Más fácil de administrar: puede encontrar recursos con el mismo conjunto de propiedades más fácilmente y aplicarles cambios.
-* Completado : el recurso conlleva más información y contexto con más metadatos.
+* Completado: el recurso lleva más información y contexto con más metadatos.
 
-Por estos motivos, [!DNL Assets] le proporciona los medios adecuados para crear, administrar e intercambiar metadatos para sus recursos digitales.
+Por estas razones, [!DNL Assets] le proporciona los medios adecuados para crear, administrar e intercambiar metadatos para sus recursos digitales.
 
 ## Tipos de metadatos {#types-of-metadata}
 
@@ -63,14 +63,14 @@ El coste de crear manualmente información de metadatos descriptivos es alto. Po
 
 Existen varias formas de incrustar metadatos en archivos. Se admite una selección de estándares de codificación:
 
-* XMP: utilizado por [!DNL Assets] para almacenar los metadatos extraídos dentro del repositorio.
+* XMP: usado por [!DNL Assets] para almacenar los metadatos extraídos dentro del repositorio.
 * ID3: para archivos de audio y vídeo.
 * Exif: para archivos de imagen.
-* Otros/Heredados: desde [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], etc.
+* Otros/Heredados: from [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], etc.
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) es un estándar abierto que utiliza  [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar ofrece una codificación de metadatos universal que se puede incrustar en todos los formatos de archivo. Adobe y otras empresas admiten XMP estándar, ya que proporciona un modelo de contenido enriquecido. Los usuarios de XMP estándar y de [!DNL Experience Manager Assets] tienen una potente plataforma en la que basarse. Para obtener más información, consulte [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) es un estándar abierto que utiliza [!DNL Experience Manager Assets] para toda la administración de metadatos. El estándar ofrece una codificación de metadatos universal que se puede incrustar en todos los formatos de archivo. Adobe y otras empresas admiten XMP estándar, ya que proporciona un modelo de contenido enriquecido. Usuarios de XMP estándar y de [!DNL Experience Manager Assets] tienen una poderosa plataforma sobre la que construir. Para obtener más información, consulte [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -86,15 +86,15 @@ Las etiquetas ID3 están diseñadas para el formato de archivo MP3. Información
 
 ### Exif {#exif}
 
-El formato de archivo de imagen intercambiable (Exif) es el formato de metadatos más utilizado en la fotografía digital. Proporciona una forma de integrar un vocabulario fijo de propiedades de metadatos en muchos formatos de archivo, como JPEG, TIFF, RIFF y WAV. Exif almacena metadatos como pares de un nombre de metadatos y un valor de metadatos. Estos pares de metadatos nombre-valor también se denominan etiquetas, no confundirlos con el etiquetado de [!DNL Experience Manager]. Las cámaras digitales modernas crean metadatos Exif y el software de gráficos moderno lo admite. El formato Exif es el denominador común más bajo para la administración de metadatos, especialmente para imágenes.
+El formato de archivo de imagen intercambiable (Exif) es el formato de metadatos más utilizado en la fotografía digital. Proporciona una forma de integrar un vocabulario fijo de propiedades de metadatos en muchos formatos de archivo, como JPEG, TIFF, RIFF y WAV. Exif almacena metadatos como pares de un nombre de metadatos y un valor de metadatos. Estos pares nombre-valor de metadatos también se denominan etiquetas, no se deben confundir con el etiquetado de [!DNL Experience Manager]. Las cámaras digitales modernas crean metadatos Exif y el software de gráficos moderno lo admite. El formato Exif es el denominador común más bajo para la administración de metadatos, especialmente para imágenes.
 
 Una limitación importante de Exif es que algunos formatos de archivo de imagen populares como BMP, GIF o PNG no los admiten.
 
-Los campos de metadatos definidos por Exif suelen ser de naturaleza técnica y su uso es limitado para la administración de metadatos descriptivos. Por este motivo, [!DNL Experience Manager Assets] ofrece la asignación de propiedades Exif en [esquemas de metadatos comunes](metadata-schemas.md) y en [XMP](xmp-writeback.md).
+Los campos de metadatos definidos por Exif suelen ser de naturaleza técnica y su uso es limitado para la administración de metadatos descriptivos. Por este motivo, [!DNL Experience Manager Assets] ofrece la asignación de propiedades Exif en [esquemas de metadatos comunes](metadata-schemas.md) y [XMP](xmp-writeback.md).
 
 ### Otros metadatos {#other-metadata}
 
-Otros metadatos que se pueden incrustar desde archivos son [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], etc.
+Otros metadatos que se pueden incrustar desde archivos incluyen [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], etc.
 
 ## Comprender los esquemas de metadatos {#metadata-schemata}
 
@@ -106,23 +106,23 @@ A continuación se enumeran los esquemas de metadatos admitidos.
 
 ### Metadatos estándar {#standard-metadata}
 
-* DC - [!DNL Dublin Core] es un conjunto importante y ampliamente utilizado de metadatos.
+* DC - [!DNL Dublin Core] es un conjunto de metadatos importante y ampliamente utilizado.
 * DICOM - Imágenes digitales y comunicaciones en medicina.
-* `Iptc4xmpCore` y  `iptc4xmpExt` - International Press Communications Standard contiene muchos metadatos específicos de cada tema.
+* `Iptc4xmpCore` y `iptc4xmpExt` - International Press Communications Standard contiene muchos metadatos específicos de cada tema.
 * RDF - Marco de descripción de recursos - para metadatos web semánticos genéricos.
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpBJ` - Entradas de trabajo básicas.
 
 ### Metadatos específicos de la aplicación {#application-specific-metadata}
 
-Los metadatos específicos de la aplicación incluyen metadatos técnicos y descriptivos. Si utiliza estos metadatos, es posible que otras aplicaciones no puedan utilizarlos. Por ejemplo, es posible que una aplicación de renderización de imágenes diferente no pueda acceder a los metadatos [!DNL Adobe Photoshop]. Puede crear un paso de flujo de trabajo que cambie una propiedad específica de la aplicación a una propiedad estándar.
+Los metadatos específicos de la aplicación incluyen metadatos técnicos y descriptivos. Si utiliza estos metadatos, es posible que otras aplicaciones no puedan utilizarlos. Por ejemplo, es posible que una aplicación de renderización de imágenes diferente no pueda acceder a [!DNL Adobe Photoshop] metadatos. Puede crear un paso de flujo de trabajo que cambie una propiedad específica de la aplicación a una propiedad estándar.
 
-* ACDSee: metadatos administrados por el programa [!DNL ACDSee]. Consulte [www.acdsee.com/](https://www.acdsee.com/).
+* ACDSee: metadatos administrados por el [!DNL ACDSee] programa. Consulte [www.acdsee.com/](https://www.acdsee.com/).
 * Álbum - [!DNL Adobe Photoshop Album].
-* CQ - Utilizado por [!DNL Experience Manager Assets].
+* CQ: Utilizado por [!DNL Experience Manager Assets].
 * DAM - Utilizado por [!DNL Experience Manager Assets].
-* DEX - [!DNL Optima SC Description explorer] es una colección de herramientas para la administración de metadatos y archivos para sistemas operativos Windows.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* DEX - [!DNL Optima SC Description explorer] es una colección de herramientas para la administración de archivos y metadatos para sistemas operativos Windows.
+* CRS - [Adobe Photoshop Camera sin procesar](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto y MP - Microsoft Photo.
@@ -133,8 +133,8 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
-* ADEMÁS: [Picture Licensing Universal System](https://www.useplus.com).
-* PRISM - [Requisitos de publicación para metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
+* MÁS - [Sistema universal de licencias de imágenes](https://www.useplus.com).
+* PRISM - [Requisitos de publicación para los metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
 * PRL - lenguaje de derechos PRISM.
 * PUR - Derechos de uso de PRISM.
 * `xmpPlus` - Integración de PLUS con XMP.
@@ -144,12 +144,12 @@ Los metadatos específicos de la aplicación incluyen metadatos técnicos y desc
 * Exif - Información técnica de la cámara, incluida la posición GPS.
 * CRS - [!DNL Camera Raw] esquema.
 * `iptc4xmpCore` y `iptc4xmpExt`.
-* TIFF: metadatos de imagen (no solo para imágenes TIFF).
+* TIFF : metadatos de imagen (no solo para imágenes TIFF).
 
 ### Metadatos específicos de impresión {#print-specific-metadata}
 
-* PDF y PDF/X - Adobe PDF y aplicaciones de terceros.
-* PRISM - [Requisitos de publicación para metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
+* PDF y PDF/X : aplicaciones de Adobe PDF y de terceros.
+* PRISM - [Requisitos de publicación para los metadatos estándar del sector](https://www.idealliance.org/prism-metadata).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metadatos para texto paginado.
 
@@ -168,7 +168,7 @@ Los metadatos principales de Dublín proporcionan un conjunto estandarizado de c
 
 El sencillo conjunto de elementos de metadatos principales de Dublín (DCMES) contiene 15 elementos de metadatos enumerados en la siguiente tabla. Cada elemento principal de Dublín es opcional y se puede repetir. Puede añadir o eliminar la información de metadatos de Dublin Core, como lo haría con los metadatos específicos de tipo de medio.
 
-Además del DCMES, existen otros elementos de metadatos creados por la Iniciativa Principal de Dublín. Consulte la [Iniciativa principal de Dublín](https://dublincore.org/) para obtener más información.
+Además del DCMES, existen otros elementos de metadatos creados por la Iniciativa Principal de Dublín. Consulte la [Iniciativa Dublin Core](https://dublincore.org/) para obtener más información.
 
 | Propiedad | Descripción |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -177,7 +177,7 @@ Además del DCMES, existen otros elementos de metadatos creados por la Iniciativ
 | creador | La persona o empresa responsable de la creación del contenido. |
 | date | Fecha o período de tiempo asociado al recurso. |
 | Descripción | Más información sobre el recurso. |
-| format | El formato de archivo, el medio físico o las dimensiones del recurso. [!DNL Experience Manager] utiliza  `dc:format` para denotar el tipo MIME del recurso. |
+| format | El formato de archivo, el medio físico o las dimensiones del recurso. [!DNL Experience Manager] uses `dc:format` para denotar el tipo MIME del recurso. |
 | identifier | Una referencia única al recurso. |
 | language | El idioma del recurso (por ejemplo, `en` para inglés). |
 | publisher | La persona o empresa responsable de poner el recurso a disposición. |
@@ -200,15 +200,15 @@ La creación de flujos de trabajo impulsados por metadatos ayuda a automatizar a
 
 * El flujo de trabajo puede comprobar si una imagen tiene un título o no. Si no es así, el sistema notifica que debe añadir un título.
 * El flujo de trabajo puede comprobar si un aviso de copyright de un recurso permite la distribución o no. Por lo tanto, el sistema envía el recurso a un servidor o a otro.
-* Un flujo de trabajo puede comprobar los recursos sin metadatos predefinidos obligatorios ni con metadatos *no válidos*.
+* Un flujo de trabajo puede comprobar los recursos sin metadatos predefinidos obligatorios o sin recursos con *no válido* metadatos.
 
 ## Metadatos XMP {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) es el estándar de metadatos que utiliza [!DNL Adobe Experience Manager Assets] para toda la administración de metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
+XMP (Extensible Metadata Platform) es el estándar de metadatos que utiliza el [!DNL Adobe Experience Manager Assets] para toda la administración de metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
 
-Además de ofrecer codificación de metadatos universal que se puede incrustar en todos los formatos de archivo, XMP ofrece un [modelo de contenido](#xmp-core-concepts) enriquecido y es [compatible con Adobe](#advantages-of-xmp) y otras empresas, por lo que los usuarios de XMP en combinación con [!DNL Assets] tienen una plataforma poderosa en la que basarse.
+Además de ofrecer una codificación de metadatos universal que se puede incrustar en todos los formatos de archivo, XMP proporciona un [modelo de contenido](#xmp-core-concepts) y es [compatible con Adobe](#advantages-of-xmp) y otras empresas, de modo que los usuarios de XMP en combinación con [!DNL Assets] tienen una poderosa plataforma sobre la que construir.
 
-La [especificación de XMP](https://www.adobe.com/devnet/xmp.html) está disponible en el Adobe.
+La variable [especificación XMP](https://www.adobe.com/devnet/xmp.html) está disponible en Adobe.
 
 ### ¿Qué es XMP? {#what-is-xmp}
 
@@ -220,8 +220,7 @@ XMP estandariza la forma en que se definen, crean y procesan los metadatos propo
 
 Todos los metadatos heredados de EXIF, ID3 o Microsoft Office se traducen automáticamente a XMP, lo que se puede ampliar para admitir esquemas de metadatos específicos del cliente, como catálogos de productos.
 
-Los metadatos de XMP constan de un conjunto de propiedades. Estas propiedades siempre están asociadas con un
-entidad concreta denominada recurso; es decir, las propiedades son &quot;about&quot; el recurso. En el caso de XMP, el recurso siempre es el recurso.
+Los metadatos de XMP constan de un conjunto de propiedades. Estas propiedades siempre están asociadas a una entidad concreta denominada recurso; es decir, las propiedades son &quot;about&quot; el recurso. En el caso de XMP, el recurso siempre es el recurso.
 
 ### XMP ecosistema {#xmp-ecosystem}
 
@@ -242,7 +241,7 @@ El XMP estándar está diseñado para ser extensible, lo que le permite añadir 
 
 >[!NOTE]
 >
->XMP generalmente no permite incrustar tipos de datos binarios. Para cargar datos binarios en XMP, por ejemplo, imágenes en miniatura, deben codificarse en un formato compatible con XML como `Base64`.
+>XMP generalmente no permite incrustar tipos de datos binarios. Para cargar datos binarios en XMP, por ejemplo, imágenes en miniatura, deben codificarse en un formato compatible con XML, como `Base64`.
 
 ### XMP conceptos {#xmp-core-concepts}
 
@@ -250,10 +249,9 @@ Las secciones siguientes describen los conceptos principales de XMP, incluidos l
 
 #### Espacios de nombres y esquemas {#namespaces-and-schemata}
 
-Un esquema XMP es un conjunto de nombres de propiedades en un espacio de nombres XML común que incluye
-el tipo de datos y la información descriptiva. Un esquema XMP se identifica mediante su URI de área de nombres XML. El uso de áreas de nombres evita conflictos entre propiedades en distintos esquemas que tienen el mismo nombre pero un significado diferente.
+Un esquema XMP es un conjunto de nombres de propiedades en un espacio de nombres XML común que incluye el tipo de datos y la información descriptiva. Un esquema XMP se identifica mediante su URI de área de nombres XML. El uso de áreas de nombres evita conflictos entre propiedades en distintos esquemas que tienen el mismo nombre pero un significado diferente.
 
-Por ejemplo, la propiedad `Creator` en dos esquemas diseñados de forma independiente puede significar la persona que creó el recurso o puede significar la aplicación que lo creó (por ejemplo, Adobe Photoshop).
+Por ejemplo, la variable `Creator` en dos esquemas diseñados de forma independiente, puede significar la persona que creó el recurso o puede significar la aplicación que lo creó (por ejemplo, Adobe Photoshop).
 
 #### Propiedades y valores {#properties-and-values}
 
@@ -266,11 +264,11 @@ XMP incluir propiedades de uno o varios esquemas. Por ejemplo, un subconjunto t�
 
 #### Alternativas lingüísticas {#language-alternatives}
 
-XMP permite agregar una propiedad `xml:lang` a las propiedades de texto para especificar el idioma del texto.
+XMP permite agregar una `xml:lang` propiedad a propiedades de texto para especificar el idioma del texto.
 
 ## Trabajo con metadatos IPTC {#support-for-iptc-metadata}
 
-Descubra cómo [!DNL Adobe Experience Manager Assets] admite los metadatos IPTC, las clasificaciones creativas y las palabras clave agregadas a los recursos a través de [!DNL Adobe Bridge] y otras aplicaciones [!DNL Adobe Creative Cloud].
+Descubra cómo [!DNL Adobe Experience Manager Assets] admite los metadatos IPTC, las clasificaciones creativas y las palabras clave agregadas a los recursos mediante [!DNL Adobe Bridge] y otros [!DNL Adobe Creative Cloud] aplicaciones.
 
 [!DNL Adobe Experience Manager Assets] admite el estándar de metadatos IPTC que se utiliza ampliamente para describir los recursos. De esta manera, [!DNL Assets] mejora la aceptación de sus imágenes entre varias partes, incluidos fotógrafos, agencias creativas, bibliotecas, museos, etc.
 
@@ -278,14 +276,14 @@ El esquema de metadatos predeterminado para los recursos ahora incorpora los esq
 
 La página Propiedades de los recursos ahora incluye fichas independientes para mostrar los metadatos principales de IPTC y de la extensión IPTC en campos editables.
 
-1. En la interfaz de usuario [!DNL Assets], seleccione una imagen.
-1. Haga clic en **[!UICONTROL Properties]** en la barra de herramientas.
-1. Haga clic en la pestaña **[!UICONTROL IPTC]** para ver los metadatos IPTC del recurso.
+1. En el [!DNL Assets] interfaz de usuario, seleccione una imagen.
+1. Haga clic en **[!UICONTROL Propiedades]** en la barra de herramientas.
+1. Haga clic en el **[!UICONTROL IPTC]** para ver los metadatos IPTC del recurso.
 1. Edite las propiedades de los metadatos IPTC según sea necesario.
 
    ![iptc_tab](assets/keywords-in-iptc-tab.png)
 
-1. Haga clic en la pestaña **[!UICONTROL IPTC Extension]** para ver los metadatos de la extensión IPTC para el recurso.
+1. Haga clic en el **[!UICONTROL Extensión IPTC]** para ver los metadatos de la extensión IPTC del recurso.
 1. Edite las propiedades de los metadatos de la extensión IPTC según sea necesario.
 1. Haga clic en **[!UICONTROL Guardar y cerrar]** para guardar los cambios.
 
@@ -301,6 +299,6 @@ Sin embargo, esta propiedad no está indexada actualmente para evitar conflictos
 
 ### Compatibilidad con palabras clave {#keyword-support}
 
-La pestaña **[!UICONTROL IPTC]** de la página [!UICONTROL Propiedades] también muestra las palabras clave agregadas a los recursos a través de Adobe Bridge y otras aplicaciones de Adobe Creative Cloud. También puede editar estas palabras clave y agregar más palabras clave desde la pestaña **[!UICONTROL IPTC]**.
+La variable **[!UICONTROL IPTC]** de la pestaña [!UICONTROL Propiedades] también muestra las palabras clave agregadas a los recursos a través de Adobe Bridge y otras aplicaciones de Adobe Creative Cloud. También puede editar estas palabras clave y agregar más palabras clave desde **[!UICONTROL IPTC]** pestaña .
 
 ![keywords](assets/keywords-in-iptc-tab.png)

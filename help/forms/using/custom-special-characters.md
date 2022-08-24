@@ -1,8 +1,8 @@
 ---
 title: Caracteres especiales personalizados en la gestión de correspondencia
-seo-title: Caracteres especiales personalizados en la gestión de correspondencia
+seo-title: Custom special characters in Correspondence Management
 description: Aprenda a añadir caracteres especiales personalizados en Gestión de Correspondencia.
-seo-description: Aprenda a añadir caracteres especiales personalizados en Gestión de Correspondencia.
+seo-description: Learn how to add custom special characters in Correspondence Management.
 uuid: a1890f6d-8e0c-471f-a9bd-861acf1f17e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,15 @@ topic-tags: correspondence-management
 discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '639'
 ht-degree: 1%
 
 ---
 
-
-# Caracteres especiales personalizados en Administración de correspondencia{#custom-special-characters-in-correspondence-management}
+# Caracteres especiales personalizados en la gestión de correspondencia{#custom-special-characters-in-correspondence-management}
 
 ## Información general {#overview}
 
@@ -29,25 +28,25 @@ Por ejemplo, puede insertar los siguientes caracteres especiales:
 
 * Símbolos monetarios como €, Euros y £
 * Símbolos matemáticos como la adminis... ...la adm., la j... ...la adm.
-* Símbolos de puntuación como ‟ y&quot;
+* Símbolos de puntuación como ‟ y &quot;
 
 Puede insertar caracteres especiales en letras:
 
 * En el [editor de texto](/help/forms/using/document-fragments.md#createtext)
-* En un módulo en línea [editable en una correspondencia](../../forms/using/create-correspondence.md#managecontent)
+* En un [módulo en línea editable en una correspondencia](../../forms/using/create-correspondence.md#managecontent)
 
 ![especialcaracterissinlinemodul](assets/specialcharactersinlinemodule.png)
 
 El administrador puede añadir compatibilidad para más caracteres especiales personalizados mediante la personalización. Este artículo proporciona instrucciones sobre cómo agregar compatibilidad con caracteres especiales adicionales personalizados.
 
-## Agregue o modifique la compatibilidad con caracteres especiales personalizados en Administración de correspondencia {#creatingfolderstructure}
+## Agregar o modificar la compatibilidad con caracteres especiales personalizados en Gestión de Correspondencia {#creatingfolderstructure}
 
 Siga estos pasos para añadir compatibilidad con caracteres especiales personalizados:
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta denominada **[!UICONTROL caracteres especiales]** con una ruta o estructura similar a la carpeta de caracteres especiales (ubicada en la carpeta textEditorConfig en libs):
+1. En la carpeta de aplicaciones, cree una carpeta denominada **[!UICONTROL caracteres especiales]** con una ruta/estructura similar a la carpeta de caracteres especiales (ubicada en la carpeta textEditorConfig en libs):
 
-   1. Haga clic con el botón derecho en la carpeta **specialcharacter** en la siguiente ruta y seleccione **Overlay Node**:
+   1. Haga clic con el botón derecho en el **caracteres especiales** en la siguiente ruta y seleccione **Nodo de superposición**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
@@ -57,7 +56,7 @@ Siga estos pasos para añadir compatibilidad con caracteres especiales personali
 
       **Ubicación de superposición:** /apps/
 
-      **Coincidir tipos de nodo:** activado
+      **Coincidir tipos de nodo:** Comprobado
 
       >[!NOTE]
       >
@@ -70,22 +69,20 @@ Siga estos pasos para añadir compatibilidad con caracteres especiales personali
       >    * Instalación de un paquete de características
 
 
-   1. Haga clic en **Aceptar** y, a continuación, haga clic en **Guardar todo**. La carpeta de caracteres especiales se crea en la ruta de acceso especificada.
+   1. Haga clic en **OK** y haga clic en **Guardar todo**. La carpeta de caracteres especiales se crea en la ruta de acceso especificada.
 
       Después de crear la superposición, compruebe las etiquetas de estructura de nodos. Cada nodo creado en /apps usando la superposición debe tener la misma clase y propiedades que se definen en /libs para ese nodo. Si falta alguna propiedad o etiqueta en la estructura de nodos de la ubicación /apps, sincronice sus etiquetas con el nodo correspondiente en /libs.
 
-
-
-1. Asegúrese de que el nodo **[!UICONTROL textEditorConfig]** tiene las siguientes propiedades y valores:
+1. Asegúrese de que la variable **[!UICONTROL textEditorConfig]** tiene las siguientes propiedades y valores:
 
    | Nombre | Tipo | Value |
    |---|---|---|
    | cmConfigurationType | Cadena | cmTextEditorConfiguration |
    | cssPath | Cadena | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Haga clic con el botón derecho en la carpeta **[!UICONTROL specialcharacter]** en la siguiente ruta, seleccione **Create > Child Node** y, a continuación, haga clic en **Save All**:
+1. Haga clic con el botón derecho en el **[!UICONTROL caracteres especiales]** en la siguiente ruta y seleccione **Crear > Nodo secundario** y haga clic en **Guardar todo**:
 
-   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter/&lt;YourChildNode>
+   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacter/&lt;yourchildnode>
 
 1. Actualice la página Editor de texto\Crear interfaz de usuario de correspondencia . El nodo que ha agregado es el último de la lista de caracteres especiales de la interfaz de usuario.
 1. Haga clic en **Guardar todo**.
@@ -149,4 +146,3 @@ Siga estos pasos para añadir compatibilidad con caracteres especiales personali
   </tr>
  </tbody>
 </table>
-

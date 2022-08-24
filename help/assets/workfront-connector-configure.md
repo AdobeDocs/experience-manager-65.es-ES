@@ -4,7 +4,7 @@ description: Configuración de [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 1%
@@ -130,14 +130,14 @@ Este paso del flujo de trabajo permite al usuario asignar una propiedad a un [!D
    * Una propiedad AEM. Esta referencia debe ser relativa a la carga útil del flujo de trabajo.
    * Un valor con nombre. Deben estar entre corchetes.
    * Una concatenación de los 3 elementos anteriores. Especifique el mediante `{+}`.
-   * Una alteración de los 3 elementos anteriores rodeando el valor con `{replace(<value>,”old-char”,”new-char”)}`.
+   * Una alteración de los 3 elementos anteriores rodeando el valor con `{replace(<value>,"old-char","new-char")}`.
 
 * Algunos ejemplos son:
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL=”https://my-aem-author/assets.html”{+}{path}`
+   * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Configuración para asignar la propiedad](/help/assets/assets/wf-map-property-config.png)
 

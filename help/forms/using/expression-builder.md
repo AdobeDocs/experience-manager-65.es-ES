@@ -1,8 +1,8 @@
 ---
 title: Funciones remotas en el Generador de expresiones
-seo-title: Generador de expresiones
+seo-title: Expression Builder
 description: El Generador de expresiones en la Gestión de correspondencia permite crear expresiones y funciones remotas.
-seo-description: El Generador de expresiones en la Gestión de correspondencia permite crear expresiones y funciones remotas.
+seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
 uuid: 6afb84c0-ad03-4bb1-a154-d46cc47650ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,13 @@ topic-tags: correspondence-management
 discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '786'
 ht-degree: 2%
 
 ---
-
 
 # Funciones remotas en el Generador de expresiones{#remote-functions-in-expression-builder}
 
@@ -25,7 +24,7 @@ Con el Generador de expresiones, puede crear expresiones o condiciones que reali
 
 ## Creación de expresiones y funciones remotas con el generador de expresiones {#creating-expressions-and-remote-functions-with-expression-builder}
 
-El Generador de expresiones utiliza internamente bibliotecas JSP EL, por lo que la expresión se adhiere a la sintaxis JSPEL. Para obtener más información, consulte [Ejemplos de expresiones](#exampleexpressions).
+El Generador de expresiones utiliza internamente bibliotecas JSP EL, por lo que la expresión se adhiere a la sintaxis JSPEL. Para obtener más información, consulte [Expresiones de ejemplo](#exampleexpressions).
 
 ![Generador de expresiones](assets/expressionbuilder.png)
 
@@ -33,7 +32,7 @@ El Generador de expresiones utiliza internamente bibliotecas JSP EL, por lo que 
 
 Los operadores que están disponibles para su uso en expresiones están disponibles en la barra superior del generador de expresiones.
 
-### Ejemplos de expresiones {#exampleexpressions}
+### Expresiones de ejemplo {#exampleexpressions}
 
 Estos son algunos ejemplos de JSP EL que puede utilizar con frecuencia en su solución de Gestión de Correspondencia:
 
@@ -41,9 +40,9 @@ Estos son algunos ejemplos de JSP EL que puede utilizar con frecuencia en su sol
 * Para concatenar dos cadenas: ${str1} ${str2}
 * Para comparar dos números: ${age &lt; 18}
 
-Puede encontrar más información en la [especificación JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). El administrador de expresiones del lado del cliente no admite determinadas variables y funciones en la especificación JSP EL, específicamente:
+Puede encontrar más información en la sección [Especificación JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). El administrador de expresiones del lado del cliente no admite determinadas variables y funciones en la especificación JSP EL, específicamente:
 
-* Los índices de recopilación y las claves de asignación (con notación []) no son compatibles con los nombres de variables para las expresiones evaluadas en el lado del cliente.
+* Índices de recopilación y claves de asignación (con el uso de [] ) no son compatibles con los nombres de variables para expresiones evaluadas en el lado del cliente.
 * Los siguientes son los tipos de parámetros o los tipos de funciones devueltos utilizados en las expresiones:
 
    * java.lang.String
@@ -130,7 +129,7 @@ Puede crear un paquete personalizado para exportar sus propias funciones remotas
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-La entrada exm.service=true indica al administrador de expresiones que el servicio contiene funciones remotas adecuadas para su uso en expresiones. El valor &lt;service_id> debe ser un identificador de Java válido (alfanumérico,$, _ sin ningún otro carácter especial). Este valor, con el prefijo REMOTE_ keyword, forma el prefijo que se utiliza dentro de las expresiones. Por ejemplo, se puede hacer referencia a una interfaz con un método anotado bar() y el ID de servicio en las propiedades del servicio dentro de expresiones mediante REMOTE_foo:bar().
+La entrada exm.service=true indica al administrador de expresiones que el servicio contiene funciones remotas adecuadas para su uso en expresiones. La variable &lt;service_id> debe ser un identificador de Java válido (alfanumérico,$, _ sin otros caracteres especiales). Este valor, con el prefijo REMOTE_ keyword, forma el prefijo que se utiliza dentro de las expresiones. Por ejemplo, se puede hacer referencia a una interfaz con un método anotado bar() y el ID de servicio en las propiedades del servicio dentro de expresiones mediante REMOTE_foo:bar().
 
 ```java
 package mergeandfuse.com;
@@ -158,8 +157,8 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 A continuación se muestran archivos de muestra para utilizar:
 
-* **GoodFunctions.jar.** zipis es el archivo jar con un paquete que contiene una definición de función remota de ejemplo. Descargue el archivo GoodFunctions.jar.zip y descomprima para obtener el archivo jar.
-* **GoodFunctions.** zipis es el paquete de código fuente para definir una función remota personalizada y crear un paquete para ella.
+* **GoodFunctions.jar.zip** es el archivo jar con paquete que contiene una definición de función remota de ejemplo. Descargue el archivo GoodFunctions.jar.zip y descomprima para obtener el archivo jar.
+* **GoodFunctions.zip** es el paquete de código fuente para definir una función remota personalizada y crear un paquete para ella.
 
 GoodFunctions.jar.zip
 

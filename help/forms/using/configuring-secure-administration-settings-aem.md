@@ -1,8 +1,8 @@
 ---
 title: Configuración de la administración segura para AEM Forms en JEE
-seo-title: Configuración de la administración segura para AEM Forms en JEE
+seo-title: Configuring Secure Administration Settings for AEM Forms on JEE
 description: Aprenda a administrar cuentas de usuario y servicios que, aunque sean necesarios en un entorno de desarrollo privado, no sean necesarios en un entorno de producción de AEM Forms en JEE.
-seo-description: Aprenda a administrar cuentas de usuario y servicios que, aunque sean necesarios en un entorno de desarrollo privado, no sean necesarios en un entorno de producción de AEM Forms en JEE.
+seo-description: Learn how to administer user accounts and services that, although required in a private development environment, are not required in a production environment of AEM Forms on JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -43,12 +43,12 @@ Complete este procedimiento mediante la página web Aplicaciones y servicios de 
 
 1. Haga clic en **Servicios > Aplicaciones y servicios > Preferencias**.
 1. Establezca Preferencias para ver hasta 200 servicios y extremos en la misma página.
-1. Haga clic en **Services** > **Applications and Services** > **Endpoint Management**.
-1. Seleccione **EJB** en la lista **Provider** y haga clic en **Filter**.
-1. Para desactivar todos los extremos de EJB, active la casilla situada junto a cada uno de la lista y haga clic en **Disable**.
-1. Haga clic en **Next** y repita el paso anterior para todos los extremos de EJB. Asegúrese de que EJB aparece en la columna Proveedor antes de deshabilitar los extremos.
-1. Seleccione **SOAP** en la lista **Proveedor** y haga clic en **Filtro**.
-1. Para quitar los extremos SOAP, active la casilla de verificación situada junto a cada uno de la lista y haga clic en **Quitar**. No elimine los siguientes extremos:
+1. Haga clic en **Servicios** > **Aplicaciones y servicios** > **Administración de extremos**.
+1. Select **EJB** de la variable **Proveedor** y haga clic en **Filtro**.
+1. Para desactivar todos los extremos de EJB, active la casilla situada junto a cada uno de la lista y haga clic en **Deshabilitar**.
+1. Haga clic en **Siguiente** y repita el paso anterior para todos los extremos de EJB. Asegúrese de que EJB aparece en la columna Proveedor antes de deshabilitar los extremos.
+1. Select **SOAP** de la variable **Proveedor** y haga clic en **Filtro**.
+1. Para eliminar los extremos SOAP, active la casilla de verificación situada junto a cada uno de la lista y haga clic en **Eliminar**. No elimine los siguientes extremos:
 
    * AuthenticationManagerService
    * DirectoryManagerService
@@ -76,9 +76,9 @@ Algunos servicios de servidor de formularios permiten invocaciones no autenticad
             https://[host name]:'port'/adminui
    ```
 
-1. Haga clic en **Servicios > Aplicaciones y servicios > Administración de servicios**.
+1. Haga clic en **Servicios > Aplicaciones y Servicios > Administración de servicios**.
 1. Haga clic en el nombre del servicio que desea deshabilitar (por ejemplo, AuthenticationManagerService).
-1. Haga clic en la **ficha Seguridad**, desmarque **Acceso anónimo permitido** y haga clic en **Guardar**.
+1. Haga clic en el **Ficha Seguridad**, deseleccionar **Acceso anónimo permitido** y haga clic en **Guardar**.
 1. Complete los pasos 3 y 4 para los siguientes servicios:
 
    * AuthenticationManagerService
@@ -119,13 +119,13 @@ Los usuarios finales pueden autenticarse en AEM Forms a través de Workbench, ap
             https://[host name]:'port'/adminui
    ```
 
-1. Haga clic en **Settings > User Management > Configuration > Import And Export Configuration Files**.
-1. Haga clic en **Export** para producir un archivo config.xml con la configuración de AEM Forms existente.
+1. Haga clic en **Configuración > Administración De Usuarios > Configuración > Importar Y Exportar Archivos De Configuración**.
+1. Haga clic en **Exportar** para producir un archivo config.xml con la configuración de AEM Forms existente.
 1. Abra el archivo XML en un editor y busque la siguiente entrada:
 
-   `<entry key=”assertionValidityInMinutes” value=”120”/>`
+   `<entry key="assertionValidityInMinutes" value="120"/>`
 
 1. Cambie el valor a cualquier número bueno de 5 (en minutos) y guarde el archivo.
 1. En la consola de administración, vaya a la página Importar y exportar archivos de configuración .
 1. Introduzca la ruta al archivo config.xml modificado o haga clic en Examinar para desplazarse hasta él.
-1. Haga clic en **Import** para cargar el archivo config.xml modificado y, a continuación, haga clic en **OK**.
+1. Haga clic en **Importar** para cargar el archivo config.xml modificado y, a continuación, haga clic en **OK**.

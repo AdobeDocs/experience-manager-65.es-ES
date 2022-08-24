@@ -1,10 +1,11 @@
 ---
 title: Notas de la versión generales para [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notas que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."'
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '4696'
-ht-degree: 53%
+ht-degree: 55%
 
 ---
 
@@ -136,7 +137,7 @@ Diseñe, distribuya y optimice experiencias en todas las pantallas digitales, de
 * Personalice el contenido que generan los datos en función de la ubicación o la configuración, mediante marcadores de posición dinámicos.
 * La integración de Adobe Analytics en AEM Screens Player se encarga de unificar los detalles obtenidos
 
-Para obtener más información sobre los cambios en AEM Screens, consulte las Notas de la versión en la [Guía del usuario de AEM Screens](https://docs.adobe.com/content/help/es-ES/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Para obtener más información sobre los cambios en AEM Screens, consulte las Notas de la versión en la [Guía del usuario de AEM Screens](https://docs.adobe.com/content/help/es/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 #### Desarrollo de componentes y plantillas {#component-amp-template-development}
 
@@ -436,7 +437,7 @@ Puede integrar Livefyre con su instancia de AEM 6.5. Consulte [integración de L
 
 Adobe utiliza un modelo de desarrollo centrado en el cliente que le permite contribuir en todas las etapas del proceso de desarrollo, la especificación, el desarrollo y las pruebas. Agradecemos a todos los clientes y socios que hayan contribuido en este proceso.
 
-Adobe cuenta con los procedimientos y procesos necesarios para permitir la recopilación, priorización y seguimiento de la resolución de errores centrada en el cliente y el desarrollo de solicitudes de mejora. La variable [Portal de asistencia al Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) está integrado con el sistema de seguimiento de defectos y mejora del Adobe. El equipo de asistencia al cliente identifica y resuelve las preguntas de los clientes siempre que es posible. Cuando estas preguntas se envían al departamento de I+D, se recopila toda la información de los clientes y se utiliza para establecer prioridades y elaborar informes. En el desarrollo se da prioridad a la asistencia de pago, los problemas de garantía y las mejoras pagadas por el cliente.
+Adobe cuenta con los procedimientos y procesos necesarios para permitir la recopilación, priorización y seguimiento de la resolución de errores centrada en el cliente y el desarrollo de solicitudes de mejora. La variable [Portal de asistencia al Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=es#support) está integrado con el sistema de seguimiento de defectos y mejora del Adobe. El equipo de asistencia al cliente identifica y resuelve las preguntas de los clientes siempre que es posible. Cuando estas preguntas se envían al departamento de I+D, se recopila toda la información de los clientes y se utiliza para establecer prioridades y elaborar informes. En el desarrollo se da prioridad a la asistencia de pago, los problemas de garantía y las mejoras pagadas por el cliente.
 
 Este proceso de establecimiento de prioridades creó más de 750 cambios orientados al cliente que se solucionaron en AEM 6.5.
 
