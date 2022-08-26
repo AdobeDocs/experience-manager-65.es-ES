@@ -11,9 +11,9 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Adobe Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 51801dfae47e82f31042f48b113332783464bafb
+source-git-commit: e46d77caf831324f077315df43b8f3a0267bef9a
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,23 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
 
 1. Copie la dirección URL de la ventana actual del explorador en un bloc de notas. Es necesario configurar [!DNL Adobe Sign] aplicación con AEM[!DNL Forms].
 
+1. En el **[!UICONTROL Configuración]** , la pestaña **[!UICONTROL URL de OAuth]** contiene la dirección URL predeterminada. El formato de la dirección URL es:
+
+   `https://<shard>/public/oAuth/v2`
+
+   Por ejemplo:
+   `https://secure.na1.echosign.com/public/oauth/v2`
+
+   dónde:
+
+   **na1** hace referencia al uso compartido predeterminado de la base de datos. Puede modificar el valor del compartido de la base de datos. Asegúrese de que la variable [!DNL  Adobe Sign] Las configuraciones de nube apuntan al [Compartimiento correcto](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+
+   Si crea otro [!DNL Adobe Sign] para una función o componente de Adobe Experience Manager, asegúrese de que todas las [!DNL Adobe Sign] Las configuraciones de nube apuntan al mismo uso compartido.
+
+   >[!NOTE]
+   Mantenga el **Crear configuración de Adobe Sign** página abierta. No lo cierre. Puede recuperar **ID de cliente** y **Secreto del cliente** después de configurar la configuración de OAuth para [!DNL Adobe Sign] como se describe en los pasos siguientes.
+
+
 1. Configure las opciones de OAuth para la variable [!DNL Adobe Sign] aplicación:
 
    1. Abra una ventana del explorador e inicie sesión en la [!DNL Adobe Sign] cuenta de desarrollador.
@@ -92,11 +109,13 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
    >[!NOTE]
    Asegúrese de que las configuraciones de instancia de autor y publicación apuntan al mismo uso compartido. Si crea varias configuraciones de Adobe Sign para una organización, asegúrese de que todas las configuraciones utilicen el mismo uso compartido.
 
-1. Especifique la variable **ID de cliente** (también denominado ID de aplicación) y **Secreto del cliente** copiado en el paso 8. Seleccione el **[!UICONTROL Activar Adobe Sign para archivos adjuntos también]** para anexar archivos adjuntos a un formulario adaptable al correspondiente [!DNL Adobe Sign] documento enviado para firma.
+1. Vuelva a la **[!UICONTROL Crear configuración de Adobe Sign]** página. En el **[!UICONTROL Configuración]** especifique la **ID de cliente** (también denominado ID de aplicación) y **Secreto del cliente**. Utilice la variable [ID de cliente y Secreto de cliente de la aplicación Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) creado para AEM Forms.
 
-   Toque **[!UICONTROL Conectarse a Adobe Sign]**. Cuando se le soliciten credenciales, proporcione el nombre de usuario y la contraseña de la cuenta utilizada al crear [!DNL Adobe Sign] aplicación.
+1. Seleccione el **[!UICONTROL Activar Adobe Sign para archivos adjuntos también]** para anexar archivos adjuntos a un formulario adaptable al correspondiente [!DNL Adobe Sign] documento enviado para firma.
 
-   Toque **[!UICONTROL Crear]** para crear la variable [!DNL Adobe Sign] configuración.
+1. Toque **[!UICONTROL Conectarse a Adobe Sign]**. Cuando se le soliciten credenciales, proporcione el nombre de usuario y la contraseña de la cuenta utilizada al crear [!DNL Adobe Sign] aplicación.
+
+1. Toque **[!UICONTROL Crear]** para crear la variable [!DNL Adobe Sign] configuración.
 
 1. Abra AEM consola web. La dirección URL es `https://'[server]:[port]'/system/console/configMgr`
 1. Apertura **[!UICONTROL Servicio de configuración común de Forms].**
