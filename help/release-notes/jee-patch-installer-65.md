@@ -5,10 +5,10 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 495b9a006f5288ad6579e13aaea82ace6d6f0e91
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 22%
+ht-degree: 20%
 
 ---
 
@@ -65,8 +65,8 @@ Vaya al directorio correspondiente y, desde el símbolo del sistema, escriba
 
 1. Según el servidor de aplicaciones, elija uno de los siguientes documentos y siga las instrucciones de la sección *Configuración e implementación de AEM formularios* para obtener más información.
 
-   * [Instalación e implementación de formularios AEM para JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [Instalación e implementación de AEM formularios para WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [Instalación e implementación de formularios AEM para JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [Instalación e implementación de AEM formularios para WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Solo JBoss) Después de instalar el parche y configurar el servidor, elimine los directorios tmp y de trabajo del servidor de aplicaciones JBoss.
 

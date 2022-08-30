@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1670'
 ht-degree: 1%
 
 ---
@@ -193,7 +193,7 @@ Estas son algunas comprobaciones de estado integradas que son útiles para monit
 En el proceso de monitorización, si se producen problemas, estas son algunas tareas de resolución de problemas que puede realizar para resolver problemas comunes con [!DNL Experience Manager] implementaciones:
 
 * Si utiliza TarMK, ejecute la compactación de Tar con frecuencia. Para obtener más información, consulte [Mantener el repositorio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Marque `OutOfMemoryError` registros. Para obtener más información, consulte [Analizar problemas de memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+* Marque `OutOfMemoryError` registros. Para obtener más información, consulte [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 * Compruebe los registros para cualquier referencia a consultas no indexadas, traveralles de árbol o traveralles de índice. Indican consultas no indexadas o consultas inadecuadamente indexadas. Para conocer las prácticas recomendadas sobre optimización del rendimiento de indexación y consultas, consulte [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilice la consola de flujo de trabajo para comprobar que los flujos de trabajo funcionan según lo esperado. Si es posible, condense varios flujos de trabajo en un único flujo de trabajo.
