@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2244'
 ht-degree: 0%
@@ -36,11 +36,11 @@ Los recursos de esta tabla pueden ayudarle a obtener más información y a empez
   </tr>
   <tr>
    <td><p>Información general sobre AEM Forms y cómo se integra con otros productos de Adobe</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">Información general de AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">Información general de AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Toda la documentación disponible para AEM Forms</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">Documentación de AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">Documentación de AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Actualizaciones de parches, notas técnicas e información adicional sobre esta versión del producto</p> </td>
@@ -98,7 +98,7 @@ Se recomiendan los siguientes requisitos como mínimo: Espacio en disco para la 
 
 ### Plataformas compatibles {#supported-platforms}
 
-Consulte la lista completa de plataformas admitidas para Workbench en [Plataformas compatibles con AEM Forms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
+Consulte la lista completa de plataformas admitidas para Workbench en [Plataformas compatibles con AEM Forms](https://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Consideraciones sobre la instalación de Designer {#designer-installation-considerations}
 
@@ -173,7 +173,7 @@ Antes de instalar Workbench, debe asegurarse de que su entorno incluya el softwa
 1. Los siguientes elementos ya están instalados en el equipo:
    * **Workbench**: Para ejecutar Workbench desde el menú Inicio, seleccione Todos los programas > AEM Forms > Workbench si elige almacenar la carpeta de acceso directo allí. Para obtener más información, consulte la <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Uso de Workbench</a> documentación.
    * **Designer**: Puede acceder a Designer desde Workbench. Para obtener más información, consulte el tema Introducción en <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Ayuda de Designer</a>.
-   * **SDK de AEM Forms**: Para obtener más información sobre el uso del SDK, consulte <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programación con AEM Forms</a>.
+   * **SDK de AEM Forms**: Para obtener más información sobre el uso del SDK, consulte <a href="https://www.adobe.com/go/learn_aemforms_programming_65">Programación con AEM Forms</a>.
 
 ## Actualización de procesos {#upgrading-processes}
 
@@ -232,7 +232,7 @@ Cuando el generador de formularios o la salida buscan, o actualizan, entradas en
 * **UUID de plantilla**: Designer inserta en cada plantilla un identificador único (UUID) para el formulario y su versión. Cada vez que se actualiza el formulario, se actualiza el UUID incrustado. Por ejemplo, una plantilla XDP puede mostrar el siguiente contenido:
 
    `<?xml version="1.0" encoding="UTF-8"?>`
-   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
+   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **Opciones de procesamiento**: Dentro de la caché de formularios procesados, el contenido de la caché se almacena por separado para cada conjunto de opciones de procesamiento únicas.
 

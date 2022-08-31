@@ -1,7 +1,8 @@
 ---
 title: ¿Cómo pasar credenciales utilizando encabezados WS-security?
 description: Obtenga información sobre cómo pasar credenciales mediante encabezados WS-security
-source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
+exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -127,7 +128,7 @@ El archivo component.xml se muestra aquí:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<component xmlns="http://adobe.com/idp/dsc/component/document">
+<component xmlns="https://adobe.com/idp/dsc/component/document">
 <!-- Unique id identifying this component -->
    <component-id>ZipService</component-id>
 
@@ -212,13 +213,10 @@ Puede utilizar este servicio ZIP para los siguientes casos de uso:
 
 * Busque todos los archivos en una carpeta determinada y devuelva los archivos como documento comprimido.
 
-* Suministre un archivo ZIP que contenga varios documentos PDF que se puedan ampliar después de descomprimirlos. Esto requiere AEM Forms en el módulo de extensiones de Reader JEE.
+* Proporcione un archivo ZIP que contenga varios documentos de PDF que se puedan ampliar después de descomprimirlos. Esto requiere AEM Forms en el módulo de extensiones de Reader JEE.
 
-* Proporcione un archivo ZIP que contenga un tipo heterogéneo de documento que se pueda descomprimir y convertir como documento PDF mediante el servicio Generate PDF.
+* Proporcione un archivo ZIP que contenga un tipo heterogéneo de documento que se pueda descomprimir y convertir como documento PDF mediante el servicio Generate PDF .
 
 * La directiva protege una lista de documentos y devuelve como archivo ZIP.
 
 * Permita a los usuarios descargar todos los archivos adjuntos de una instancia de proceso como un solo archivo ZIP.
-
-
-

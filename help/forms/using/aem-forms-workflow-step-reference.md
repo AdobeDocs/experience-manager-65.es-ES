@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: de7b1d2d0f3863f9554b346204c18cc57d4bf814
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '7575'
 ht-degree: 0%
@@ -442,9 +442,9 @@ El paso Generar salida impresa tiene las siguientes propiedades:
 * **[!UICONTROL Seleccione el archivo XCI usando]**: Los archivos XCI se utilizan para describir fuentes y otras propiedades que se utilizan para elementos de diseño de formulario. Puede mantener un archivo XCI relativo a la carga útil, en una ruta absoluta o utilizando una variable del tipo de datos Document .
 
 * **[!UICONTROL Configuración regional]**: Especifica el idioma utilizado para generar el documento de PDF. Si proporciona un valor literal, seleccione un idioma de la lista o seleccione uno de estos valores:
-   * **Para usar el servidor predeterminado**: (Predeterminado) Use la configuración regional configurada en el servidor de AEM Forms. La configuración regional se configura con la Consola de administración. (Consulte [Ayuda de Designer](http://www.adobe.com/go/learn_aemforms_designer_65).)
+   * **Para usar el servidor predeterminado**: (Predeterminado) Use la configuración regional configurada en el servidor de AEM Forms. La configuración regional se configura con la Consola de administración. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_65).)
 
-   * **Para utilizar un valor personalizado**: Escriba el código de configuración regional en el cuadro literal o seleccione una variable de cadena que contenga el código de configuración regional. Para obtener una lista completa de los códigos de configuración regional admitidos, consulte http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+   * **Para utilizar un valor personalizado**: Escriba el código de configuración regional en el cuadro literal o seleccione una variable de cadena que contenga el código de configuración regional. Para obtener una lista completa de los códigos de configuración regional admitidos, consulte https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copias]**: Un valor entero que especifica el número de copias que se generarán para la salida. El valor predeterminado es 1.
 

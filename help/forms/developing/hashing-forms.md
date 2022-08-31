@@ -2,7 +2,7 @@
 title: ¿Cómo se generan y funcionan con hashes en PDF forms dinámicos?
 description: Generación y trabajo con hash en PDF forms dinámicos
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1256'
 ht-degree: 0%
@@ -120,5 +120,5 @@ Le animo a seguir explorando los dos archivos PDF de muestra.  Puede generar nue
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [Conflicto de hash](https://en.wikipedia.org/wiki/Hash_collision)
 * [Tabla arco iris](https://en.wikipedia.org/wiki/Rainbow_table)
-* [Página de inicio del proyecto MD5 de JavaScript](http://pajhome.org.uk/crypt/md5/)
+* [Página de inicio del proyecto MD5 de JavaScript](https://pajhome.org.uk/crypt/md5/)
 * [página de inicio del proyecto jsSHA2](https://anmar.eu.org/projects/jssha2/)

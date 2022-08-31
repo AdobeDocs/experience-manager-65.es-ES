@@ -1,29 +1,28 @@
 ---
 title: Herramientas de modernización de AEM
-seo-title: Herramientas de modernización de AEM
-description: Herramientas de modernización de AEM le ayudará a convertir sus funciones de AEM heredadas a la tecnología más reciente
-seo-description: AEM herramientas de modernización le ayudan a convertir fácilmente sus funciones de AEM heredadas a la tecnología más reciente
+seo-title: AEM Modernization Tools
+description: Herramientas de modernización de AEM le ayuda a convertir sus funciones de AEM heredadas a la última tecnología
+seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 58%
+source-wordcount: '89'
+ht-degree: 87%
 
 ---
 
+# Herramientas de modernización de AEM {#modernization-tools}
 
-# Herramientas de modernización de AEM{#modernization-tools}
-
-[Las herramientas de modernización de AEM facilitan la conversión de lo siguiente:](http://opensource.adobe.com/aem-modernize-tools/)
+[Las herramientas de modernización de AEM facilitan la conversión de lo siguiente:](https://opensource.adobe.com/aem-modernize-tools/)
 
 * [](page-templates-static.md)Plantillas estáticas a plantillas editables.[](page-templates-editable.md)
-* [](page-templates-static.md)Diseño de las configuraciones para políticas.[](page-templates-editable.md)
-* [](/help/sites-authoring/default-components-foundation.md)Componentes básicos a principales.[](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
+* [](page-templates-static.md)Diseño de las configuraciones para directivas.[](page-templates-editable.md)
+* [](/help/sites-authoring/default-components-foundation.md)Componentes básicos a principales[](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
 * [](website.md)De IU clásica a IU táctil.[](touch-ui-concepts.md)
 
-Para obtener más información sobre el uso de estas herramientas, [consulte su documentación](http://opensource.adobe.com/aem-modernize-tools/).
+Para obtener más información sobre el uso de estas herramientas, [consulte su documentación](https://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >

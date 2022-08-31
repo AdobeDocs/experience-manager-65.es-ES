@@ -4,7 +4,7 @@ seo-title: Learn About AEM 6.5 Capabilities
 description: Descripción de las capacidades esenciales de AEM 6.5
 seo-description: An description of the essential capabilities of AEM 6.5
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 29%
@@ -15,7 +15,7 @@ ht-degree: 29%
 
 ## AEM Sites {#aem-sites}
 
-AEM Sites es un sistema de administración de contenido dentro de Adeobe Experience Manager que le proporciona un lugar para crear, administrar y ofrecer experiencias digitales en sitios web, sitios móviles y pantallas in situ para que sean globales al alcance, pero relevantes y atractivas a nivel personal. [Más información](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) o [descubra algunos de nuestros nuevos tutoriales sobre funciones de vídeo.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+AEM Sites es un sistema de administración de contenido dentro de Adeobe Experience Manager que le proporciona un lugar para crear, administrar y ofrecer experiencias digitales en sitios web, sitios móviles y pantallas in situ para que sean globales al alcance, pero relevantes y atractivas a nivel personal. [Más información](https://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) o [descubra algunos de nuestros nuevos tutoriales sobre funciones de vídeo.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 
 ## AEM Assets {#aem-assets}
 
@@ -38,15 +38,15 @@ AEM Forms combina la creación, gestión y publicación de formularios junto con
 
 ## AEM Screens {#aem-screens}
 
-Screens es una función de Adobe Experience Manager que le permite publicar experiencias e interacciones digitales dinámicas e interactivas que implican distintos tipos de pantallas junto con una plataforma de marketing digital completa.  [Más información.](https://docs.adobe.com/content/help/es-ES/experience-manager-screens/user-guide/aem-screens-introduction.html)
+Screens es una función de Adobe Experience Manager que le permite publicar experiencias e interacciones digitales dinámicas e interactivas que implican distintos tipos de pantallas junto con una plataforma de marketing digital completa.  [Más información.](https://docs.adobe.com/content/help/es/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
-Communities es una función de Adobe Experience Manager que le ayuda a crear experiencias de comunidad en línea, incluidos foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales que son valiosas para los clientes, los empleados y la marca. [Más información.](http://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
+Communities es una función de Adobe Experience Manager que le ayuda a crear experiencias de comunidad en línea, incluidos foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales que son valiosas para los clientes, los empleados y la marca. [Más información.](https://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
 
 ## AEM Livefyre {#aem-livefyre}
 
-AEM Livefyre es una nueva función de Adobe Experience Manager que le permite aprovechar todo lo que se comparte en la web para crear un flujo constante de contenido nuevo y de alta calidad en sus propios sitios. [Más información](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) o [salta directamente a nuestras guías.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre es una nueva función de Adobe Experience Manager que le permite aprovechar todo lo que se comparte en la web para crear un flujo constante de contenido nuevo y de alta calidad en sus propios sitios. [Más información](https://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) o [salta directamente a nuestras guías.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
 ## AEM Foundation {#aem-foundation}
 
