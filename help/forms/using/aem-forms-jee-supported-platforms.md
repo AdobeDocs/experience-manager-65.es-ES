@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '3550'
+source-wordcount: '3583'
 ht-degree: 1%
 
 ---
@@ -91,9 +91,9 @@ Adobe Experience Manager Forms requiere una máquina virtual Java para ejecutars
    <th><p><strong>Definiciones de parches compatibles</strong></p> </th>
   </tr>
   <tr>
-   <td><p>Oracle Java™ SE 11 (64 bits)</p> </td>
-   <td><p>Z: No admitido</p> </td>
-   <td><p> </p> </td>
+   <td><p>Oracle Java™ SE 11 (64 bits) <sup> [8] </sup> </p>  </td>
+   <td><p>A: Admitido</p> </td>
+   <td><p>Versiones y actualizaciones menores </p> </td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 - 64 bits</td>
@@ -361,6 +361,7 @@ Tenga en cuenta las siguientes excepciones al elegir una plataforma para configu
 1. El repositorio CRX admite la persistencia de tipo TarMK, MongoDB y bases de datos relacionales (RDBMK). No puede tener dos sistemas de base de datos diferentes entre el servidor de aplicaciones y el repositorio CRX. Sin embargo, en un AEM Forms en un entorno JEE, puede utilizar MongoMK con el repositorio CRX y una base de datos relacional compatible con el servidor de aplicaciones.
 1. AEM Forms en JEE no es compatible con el servidor de aplicaciones WebSphere en CentOS.
 1. AEM Forms en JEE no admite el control de acceso basado en roles JBoss (RBAC).
+1. AEM Forms en JEE es compatible con el SDK de Oracle Java™ SE 11 (64 bits) solo para el servidor de aplicaciones JBoss EAP 7.4.
 
 Además, tenga en cuenta los siguientes puntos a la hora de elegir software para Adobe AEM Forms en implementaciones JEE:
 
@@ -794,6 +795,10 @@ Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.10
 > Las plataformas marcadas como [en desuso con AEM Forms 6.5.12.0 y 6.5.10.0 siguen siendo compatibles hasta la versión de AEM Forms 6.5 Service Pack 18 (6.5.18.0)](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## Historial de revisiones {#revision-history}
+
+- 1 de septiembre de 2022
+
+   - Se ha agregado compatibilidad con el SDK de Oracle Java™ SE 11 (64 bits) para el servidor de aplicaciones JBoss EAP 7.4.
 
 - 3 de marzo de 2022
 
