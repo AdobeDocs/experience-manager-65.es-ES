@@ -1,10 +1,11 @@
 ---
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
-description: '"Encuentre información sobre la versión, novedades, instale procedimientos y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5."'
+description: Busque información sobre la versión, novedades, procedimientos de instalación y una lista detallada de cambios para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 783edcdf0f96426008b6f824a7aa0aa0deb5c613
+exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
+source-git-commit: 0bd7c444bf0424b60c11b7171b7ea7ae9d7f3926
 workflow-type: tm+mt
-source-wordcount: '2623'
+source-wordcount: '2624'
 ht-degree: 6%
 
 ---
@@ -52,7 +53,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->Los servicios de contenido inteligente no estarán disponibles para los nuevos clientes locales de Experience Manager Assets a partir del 1 de septiembre de 2022. No afecta a los clientes locales y de Adobe Managed Services existentes que ya han habilitado esta capacidad.
+>Los servicios de contenido inteligente no estarán disponibles para los nuevos clientes locales de Experience Manager Assets a partir del 1 de septiembre de 2022. No afecta a los clientes locales y de Adobe Managed Services existentes que ya tienen habilitada esta capacidad.
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 
