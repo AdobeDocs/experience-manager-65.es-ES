@@ -8,9 +8,9 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: 3f7191ecdddf7325f2c1153f1ec733893cc649dc
+source-git-commit: 966a3ea6b8cb9b42e21f8e3eb3fee1c7ca93cf51
 workflow-type: tm+mt
-source-wordcount: '3795'
+source-wordcount: '3791'
 ht-degree: 4%
 
 ---
@@ -332,7 +332,6 @@ ht-degree: 4%
    + [Configuración de análisis e informes](using/configure-analytics-forms-documents.md)
    + [Ver y comprender los informes de análisis de AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Crear y administrar pruebas A/B para formularios adaptables](using/ab-testing-adaptive-forms.md)
-   + [Integración con Adobe Analytics](using/integrate-aem-forms-with-adobe-analytics.md)
 + Publicar y procesar AEM Forms {#publish-process-aem-forms}
    + [Introducción a la publicación de formularios en un portal](using/introduction-publishing-forms.md)
    + [Ejemplo para integrar el componente Borradores y envíos con la base de datos](using/integrate-draft-submission-database.md)
