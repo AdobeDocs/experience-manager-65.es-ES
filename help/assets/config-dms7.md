@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 74e3d4204166280e8624298098042b8cb222c034
+source-git-commit: b33c42edb44617d26ead0df3a9de7bdb39c2e9f4
 workflow-type: tm+mt
-source-wordcount: '6253'
+source-wordcount: '6282'
 ht-degree: 3%
 
 ---
@@ -119,7 +119,11 @@ Consulte [Instalación del paquete de características 18912 para la migración 
 
 1. Cuando la conexión se realice correctamente, establezca lo siguiente. Los encabezados con un asterisco (*) son obligatorios:
 
-   * **[!UICONTROL Empresa]** - el nombre de la cuenta de Dynamic Media. Puede tener una cuenta de Dynamic Media en Experience Manager. <!-- CQDOC-19579 and CQDOC-19612 -->
+   * **[!UICONTROL Empresa]** - el nombre de la cuenta de Dynamic Media.
+      >[!IMPORTANT]
+      Solo se admite una configuración de Dynamic Media en Cloud Services en una instancia de Experience Manager; no agregue más de una configuración. Varias configuraciones de Dynamic Media en una instancia de Experience Manager son _not_ compatible o recomendado por Adobe.
+
+      <!-- CQDOC-19579 and CQDOC-19612 -->
 
       Consulte también [Configuración de la cuenta de alias de empresa de Dynamic Media](/help/assets/dm-alias-account.md).
 
