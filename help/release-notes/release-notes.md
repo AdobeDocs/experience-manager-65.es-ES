@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Busque información sobre la versión, novedades, procedimientos de instalación y una lista detallada de cambios para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 381ab110ccf5605b17382b9c77693c819e31e3b6
+source-git-commit: 935698e6c8caabccb7bbe0aa9f45012d07163660
 workflow-type: tm+mt
-source-wordcount: '3224'
+source-wordcount: '3257'
 ht-degree: 5%
 
 ---
@@ -123,6 +123,7 @@ ht-degree: 5%
 * Se muestra un valor incorrecto para el código de barras SSCC-18. Los servidores de Forms omiten el valor en la parte derecha del código de barras. (CQ-4342400)
 * Para los PDF forms estáticos creados con Forms 6.5 Designer, la accesibilidad del PDF falla con un error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
 * Se ha agregado la capacidad de especificar texto de Reader de pantalla para hipervínculos en Forms Designer.(NPR-36221)
+* Cuando se agrega un panel repetible a un formulario adaptable que no es XFA y el recuento de los paneles repetibles en un formulario que no es XFA es superior a 15 segundos, agregar una nueva instancia puede tardar hasta 7-8 segundos. (NPR-37346)
 
 ## Integraciones {#integrations-6514}
 
