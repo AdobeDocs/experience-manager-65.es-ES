@@ -1,17 +1,17 @@
 ---
 title: Desarrollo (genérico)
-seo-title: Desarrollo (genérico)
+seo-title: Developing (generic)
 description: El marco de integración incluye una capa de integración con una API, lo que le permite crear componentes de AEM para las funciones de comercio electrónico
-seo-description: El marco de integración incluye una capa de integración con una API, lo que le permite crear componentes de AEM para las funciones de comercio electrónico
+seo-description: The integration framework includes an integration layer with an API, allowing you to build AEM components for eCommerce capabilities
 uuid: 393bb28a-9744-44f4-9796-09228fcd466f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1862'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[La ](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) documentación de la API también está disponible.
+>[Documentación de API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) también está disponible.
 
 El marco de integración incluye una capa de integración con una API. Esto le permite crear componentes AEM para las capacidades de comercio electrónico (independientemente de su motor de comercio electrónico específico). También le permite utilizar la base de datos CRX interna o conectar un sistema de comercio electrónico y extraer datos de productos en AEM.
 
@@ -31,30 +31,30 @@ Se proporcionan varios componentes de AEM listos para usar para utilizar la capa
 * Promociones y vales
 * Planes de catálogo y de sección
 * Extracción
-* Búsqueda  
+* Búsqueda
 
-Para la búsqueda, se proporciona un vínculo de integración que le permite utilizar la búsqueda de AEM, una búsqueda de terceros (como Search&amp;Promote) o una combinación de ambas.
+Para la búsqueda, se proporciona un vínculo de integración que le permite utilizar la búsqueda de AEM, una búsqueda de terceros o una combinación de ellos.
 
 ## Selección del motor de comercio electrónico {#ecommerce-engine-selection}
 
 El marco de comercio electrónico se puede utilizar con cualquier solución de comercio electrónico; el motor utilizado debe identificarse mediante AEM, incluso cuando se utiliza el motor genérico AEM:
 
-* Los motores de comercio electrónico son servicios OSGi que admiten la interfaz `CommerceService`
+* Los motores de comercio electrónico son servicios de OSGi que admiten el `CommerceService` interfaz
 
-   * Los motores se pueden distinguir mediante una propiedad de servicio `commerceProvider`
+   * Los motores se pueden distinguir mediante una `commerceProvider` propiedad service
 
 * AEM admite `Resource.adaptTo()` para `CommerceService` y `Product`
 
-   * La implementación `adaptTo` busca una propiedad `cq:commerceProvider` en la jerarquía del recurso:
+   * La variable `adaptTo` la implementación busca un `cq:commerceProvider` en la jerarquía del recurso:
 
       * Si se encuentra, el valor se utiliza para filtrar la búsqueda del servicio de comercio.
       * Si no se encuentra, se utiliza el servicio de comercio de mayor clasificación.
-   * Se utiliza una `cq:Commerce` mezcla para que se pueda añadir la `cq:commerceProvider` a los recursos con establecimiento inflexible de tipos.
+   * A `cq:Commerce` mixin se usa de modo que la variable `cq:commerceProvider` se puede agregar a recursos con establecimiento inflexible de tipos.
 
 
-* La propiedad `cq:commerceProvider` también se utiliza para hacer referencia a la definición de fábrica de comercio apropiada.
+* La variable `cq:commerceProvider` también se utiliza para hacer referencia a la definición de fábrica de comercio apropiada.
 
-   * Por ejemplo, una propiedad `cq:commerceProvider` con el valor geometrixx se correlacionará con la configuración OSGi para **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`), donde el parámetro `commerceProvider` también tiene el valor `geometrixx`.
+   * Por ejemplo, una `cq:commerceProvider` con el valor geometrixx se correlacionará con la configuración OSGi para **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`), donde el parámetro `commerceProvider` también tiene el valor `geometrixx`.
    * Aquí se pueden configurar más propiedades (cuando sea apropiado y esté disponible).
 
 En una instalación de AEM estándar se requiere una implementación específica, por ejemplo:
@@ -86,11 +86,11 @@ En una instalación de AEM estándar se requiere una implementación específica
 >
 >`/apps/geometrixx-outdoors/components/product`
 
-### Administración de sesión {#session-handling}
+### Administración de sesiones {#session-handling}
 
 Una sesión para almacenar información relacionada con el carro de compras del cliente.
 
-El **CommerceSession**:
+La variable **CommerceSession**:
 
 * Es propietario del **carro de compras**
 
@@ -99,19 +99,19 @@ El **CommerceSession**:
 
       `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
-* Es propietario de la persistencia de los datos **order**:
+* Es propietario de la persistencia de la variable **pedido** datos:
 
    `CommerceSession.getUserContext()`
 
-* Puede recuperar/actualizar los detalles de envío utilizando `updateOrder(Map<String, Object> delta)`
-* También posee la conexión de procesamiento **payment**
-* También posee la conexión **fulfillment**
+* Puede recuperar o actualizar los detalles de la entrega mediante `updateOrder(Map<String, Object> delta)`
+* También posee el **pago** conexión de procesamiento
+* También posee el **cumplimiento** connection
 
 ### Arquitectura {#architecture}
 
-#### Arquitectura del producto y variantes {#architecture-of-product-and-variants}
+#### Arquitectura del producto y las variantes {#architecture-of-product-and-variants}
 
-Un solo producto puede tener varias variaciones; por ejemplo, puede variar según el color o el tamaño. Un producto debe definir qué propiedades impulsan la variación; denominamos estos *ejes de variante*.
+Un solo producto puede tener varias variaciones; por ejemplo, puede variar según el color o el tamaño. Un producto debe definir qué propiedades impulsan la variación; los llamamos *ejes de variante*.
 
 Sin embargo, no todas las propiedades son ejes de variante. Las variaciones también pueden afectar a otras propiedades; por ejemplo, el precio puede depender del tamaño. El comprador no puede seleccionar estas propiedades y, por lo tanto, no se consideran ejes de variante.
 
@@ -121,19 +121,17 @@ Cualquier recurso de producto puede representarse mediante un `Product API`. La 
 
 >[!NOTE]
 >
->De hecho, los ejes de una variante están determinados por lo que `Product.getVariantAxes()` devuelva:
+>De hecho, los ejes de una variante están determinados por lo que sea `Product.getVariantAxes()` devuelve:
 >
 >* para la implementación genérica AEM la lee desde una propiedad en los datos del producto ( `cq:productVariantAxes`)
 >
->
-Aunque los productos (en general) pueden tener muchos ejes de variante, el componente de producto listo para usar solo gestiona dos:
+>Aunque los productos (en general) pueden tener muchos ejes de variante, el componente de producto listo para usar solo gestiona dos:
 >
 >1. `size`
 >1. más uno más
 
 >
->   
-Esta variante adicional se selecciona mediante la propiedad `variationAxis` de la referencia del producto (normalmente `color` para los Geometrixx Outdoors).
+>   Esta variante adicional se selecciona mediante la variable `variationAxis` propiedad de la referencia del producto (normalmente `color` para Geometrixx Outdoors).
 
 #### Referencias del producto y datos PIM {#product-references-and-pim-data}
 
@@ -192,7 +190,7 @@ public interface Product extends Adaptable {
 }
 ```
 
-#### com.adobe.cq.commerce.api.VariantFilter {#com-adobe-cq-commerce-api-variantfilter}
+#### com.adobe.cq.commerce.api.VariantFilter  {#com-adobe-cq-commerce-api-variantfilter}
 
 ```java
 /**
@@ -248,12 +246,12 @@ public class AxisFilter implements VariantFilter {
 
       * Una referencia, con los datos del producto almacenados en otra parte:
 
-         * Las referencias de producto contienen una propiedad `productData` que apunta a los datos del producto (normalmente en `/etc/commerce/products`).
+         * Las referencias de producto contienen un `productData` , que señala a los datos del producto (normalmente, en `/etc/commerce/products`).
          * Los datos del producto son jerárquicos; los atributos de producto se heredan de los antecesores de un nodo de datos de producto.
          * Las referencias de producto también pueden contener propiedades locales, que anulan las especificadas en los datos de producto.
       * Un producto en sí:
 
-         * Sin una propiedad `productData`.
+         * Sin un `productData` propiedad.
          * Un nodo de producto que contiene todas las propiedades localmente (y no contiene una propiedad productData) hereda los atributos de producto directamente de sus propios antecesores.
 
 
@@ -310,13 +308,13 @@ public class AxisFilter implements VariantFilter {
 
 **Componentes**
 
-* El carro de compras es propiedad de `CommerceSession:`
+* El carro de compras es propiedad del `CommerceSession:`
 
-   * El `CommerceSession` realiza la adición, la eliminación, etc.
-   * El `CommerceSession` también realiza los distintos cálculos del carro de compras.
-   * El `CommerceSession` también aplica vales y promociones que se han disparado al carro de compras.
+   * La variable `CommerceSession` ejecuta add, remove, etc.
+   * La variable `CommerceSession` también realiza los distintos cálculos del carro de compras.
+   * La variable `CommerceSession` también aplica vales y promociones que se han disparado al carro de compras.
 
-* Aunque no está directamente relacionado con el carro de compras, el `CommerceSession` también debe proporcionar información sobre los precios del catálogo (ya que posee precios)
+* Aunque no está directamente relacionado con el carro de compras, la variable `CommerceSession` también debe proporcionar información de precios de catálogo (ya que posee precios)
 
    * Los precios pueden tener varios modificadores:
 
@@ -333,14 +331,14 @@ public class AxisFilter implements VariantFilter {
 
 * Almacenamiento
 
-   * En los casos AEM genéricos, los carros de compras de se almacenan en el [ClientContext](/help/sites-administering/client-context.md)
+   * En los casos AEM genéricos, los carros de compras de se almacenan en la variable [ClientContext](/help/sites-administering/client-context.md)
 
 **Personalización**
 
-* La personalización siempre debe impulsarse a través del [ClientContext](/help/sites-administering/client-context.md).
-* Se crea un ClientContext `/version/` del carro de compras en todos los casos:
+* La personalización siempre debe impulsarse a través de la variable [ClientContext](/help/sites-administering/client-context.md).
+* Un ClientContext `/version/` del carro de compras se crea en todos los casos:
 
-   * Los productos deben agregarse utilizando el método `CommerceSession.addCartEntry()` .
+   * Los productos deben agregarse utilizando la variable `CommerceSession.addCartEntry()` método.
 
 * A continuación se muestra un ejemplo de información del carro de compras en el carro de ClientContexts:
 
@@ -350,7 +348,7 @@ public class AxisFilter implements VariantFilter {
 
 **Datos de carro de compras y pedidos**
 
-El `CommerceSession` posee los tres elementos:
+La variable `CommerceSession` posee los tres elementos siguientes:
 
 1. **Contenido del carro de compras**
 
@@ -377,7 +375,7 @@ El `CommerceSession` posee los tres elementos:
 
 1. **Detalles del pedido**
 
-   Sin embargo, la API corrige los detalles del pedido *not*:
+   Sin embargo, los detalles del pedido son *not* solucionado por la API:
 
    ```java
        public void updateOrderDetails(Map<String, String> orderDetails);
@@ -389,10 +387,10 @@ El `CommerceSession` posee los tres elementos:
 
 * Los formularios de pedido a menudo necesitan presentar varias opciones de envío (y precios).
 * Los precios pueden basarse en artículos y detalles del pedido, como peso o dirección de entrega.
-* El `CommerceSession` tiene acceso a todas las dependencias, por lo que se puede tratar de forma similar a los precios del producto:
+* La variable `CommerceSession` tiene acceso a todas las dependencias, por lo que se puede tratar de forma similar a los precios de los productos:
 
-   * El `CommerceSession` es propietario de los precios de envío.
-   * Utilice `updateOrder(Map<String, Object> delta)` para recuperar/actualizar los detalles del envío.
+   * La variable `CommerceSession` es propietario de precios de envío.
+   * Uso `updateOrder(Map<String, Object> delta)` para recuperar/actualizar los detalles de la entrega.
 
 ### Definición de búsqueda {#search-definition}
 
@@ -412,7 +410,7 @@ El proyecto eCommerce contiene un componente de búsqueda predeterminado, ubicad
 
 ![chlimage_1-34](/help/sites-developing/assets/chlimage_1-34a.png)
 
-Esto hace uso de la API de búsqueda para consultar el motor de comercio seleccionado (consulte [eCommerce Engine Selection](#ecommerce-engine-selection)):
+Esto hace uso de la API de búsqueda para consultar el motor de comercio seleccionado (consulte [Selección del motor de comercio electrónico](#ecommerce-engine-selection)):
 
 #### API de búsqueda {#search-api}
 
@@ -420,15 +418,15 @@ El proyecto principal proporciona varias clases genéricas/de ayuda:
 
 1. `CommerceQuery`
 
-   Se utiliza para describir una consulta de búsqueda (contiene información sobre el texto de la consulta, la página actual, el tamaño de la página, el orden y las facetas seleccionadas). Todos los servicios de comercio electrónico que implementan la API de búsqueda recibirán instancias de esta clase para realizar su búsqueda. Se puede crear una instancia de `CommerceQuery` desde un objeto de solicitud ( `HttpServletRequest`).
+   Se utiliza para describir una consulta de búsqueda (contiene información sobre el texto de la consulta, la página actual, el tamaño de la página, el orden y las facetas seleccionadas). Todos los servicios de comercio electrónico que implementan la API de búsqueda recibirán instancias de esta clase para realizar su búsqueda. A `CommerceQuery` se puede crear una instancia desde un objeto de solicitud ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   Es una clase de utilidad que proporciona un método estático, `toParams`, que se utiliza para generar cadenas de parámetro `GET` a partir de una lista de facetas y un valor alternado. Esto resulta útil en la interfaz de usuario, donde debe mostrar un hipervínculo para cada valor de cada faceta, de modo que cuando el usuario haga clic en el hipervínculo, se alterne el valor respectivo (es decir, si se seleccionó, se eliminará de la consulta y se añadirá de lo contrario). Esto se ocupa de toda la lógica de gestionar facetas de varios valores o de un solo valor, valores anuladores, etc.
+   Es una clase de utilidad que proporciona un método estático: `toParams` - que se utiliza para generar `GET` cadenas de parámetros de una lista de facetas y un valor alternado. Esto resulta útil en la interfaz de usuario, donde debe mostrar un hipervínculo para cada valor de cada faceta, de modo que cuando el usuario haga clic en el hipervínculo, se alterne el valor respectivo (es decir, si se seleccionó, se eliminará de la consulta y se añadirá de lo contrario). Esto se ocupa de toda la lógica de gestionar facetas de varios valores o de un solo valor, valores anuladores, etc.
 
-El punto de entrada para la API de búsqueda es el método `CommerceService#search` que devuelve un objeto `CommerceResult`. Consulte la documentación de la API para obtener más información sobre este tema.
+El punto de entrada para la API de búsqueda es la `CommerceService#search` método que devuelve un `CommerceResult` objeto. Consulte la documentación de la API para obtener más información sobre este tema.
 
-### Desarrollo de promociones y vales {#developing-promotions-and-vouchers}
+### Desarrollo de promociones y comprobantes {#developing-promotions-and-vouchers}
 
 * Cupones:
 
@@ -445,8 +443,8 @@ El punto de entrada para la API de búsqueda es el método `CommerceService#sear
    * Los motores de comercio exterior también pueden suministrar vales; requieren un mínimo de:
 
       * Código de cupón
-      * Un método `isValid()`
-   * El componente **Cupón** ( `/libs/commerce/components/voucher`) proporciona:
+      * Un `isValid()` method
+   * La variable **Cupón** componente ( `/libs/commerce/components/voucher`) proporciona:
 
       * Un procesador para la administración de vales; esto muestra cualquier comprobante que se encuentre en el carro de compras.
       * Los cuadros de diálogo de edición (formulario) para administrar (añadir/quitar) los comprobantes.
@@ -483,7 +481,7 @@ El punto de entrada para la API de búsqueda es el método `CommerceService#sear
 
 
 
-La adición/eliminación de un vale de un carro de compras se realiza mediante la API `CommerceSession`:
+La adición/eliminación de un vale de un carro se realiza mediante la variable `CommerceSession` API:
 
 ```java
 /**
@@ -510,23 +508,23 @@ public void removeVoucher(String code) throws CommerceException;
 public List<Voucher> getVouchers() throws CommerceException;
 ```
 
-De este modo, el `CommerceSession` es responsable de comprobar si existe un vale y si se puede aplicar o no. Esto puede ser para cupones que solo se pueden aplicar si se cumple una determinada condición; por ejemplo, cuando el precio total del carro de compras es bueno a 100 $). Si no se puede aplicar un asiento por ningún motivo, el método `addVoucher` generará una excepción. Además, el `CommerceSession` es responsable de actualizar los precios del carro de compras después de añadir o eliminar un vale.
+De esta manera, el `CommerceSession` es responsable de comprobar si existe un cupón y si se puede aplicar o no. Esto puede ser para cupones que solo se pueden aplicar si se cumple una determinada condición; por ejemplo, cuando el precio total del carro de compras es bueno a 100 $). Si no se puede aplicar un cupón por ningún motivo, la variable `addVoucher` generará una excepción. Además, el `CommerceSession` es responsable de actualizar los precios del carro de compras después de añadir o eliminar un vale.
 
-El `Voucher` es una clase similar a un bean que contiene campos para:
+La variable `Voucher` es una clase similar a un bean que contiene campos para:
 
 * Código de cupón
 * Una breve descripción
 * Hacer referencia a la promoción relacionada que indica el tipo y valor de descuento
 
-El `AbstractJcrCommerceSession` proporcionado puede aplicar cupones. Los comprobantes devueltos por la clase `getVouchers()` son instancias de `cq:Page` que contienen un nodo jcr:content con las siguientes propiedades (entre otras):
+La variable `AbstractJcrCommerceSession` puede aplicar cupones. Los vales devueltos por la clase `getVouchers()` son instancias de `cq:Page` que contiene un nodo jcr:content con las siguientes propiedades (entre otras):
 
-* `sling:resourceType` (Cadena): esto debe ser  `commerce/components/voucher`
+* `sling:resourceType` (Cadena): esto debe ser `commerce/components/voucher`
 
 * `jcr:title` (Cadena): para la descripción del cupón
 * `code` (Cadena): el código que debe introducir el usuario para aplicar este cupón
-* `promotion` (Cadena): la promoción que se aplicará; p. ej.  `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (Cadena): la promoción que se aplicará; p. ej. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-Los controladores de promociones son servicios OSGi que modifican el carro de compras. El carro admitirá varios enlaces que se definirán en la interfaz `PromotionHandler`.
+Los controladores de promociones son servicios OSGi que modifican el carro de compras. El carro admitirá varios vínculos que se definirán en la variable `PromotionHandler` interfaz.
 
 ```java
 /**

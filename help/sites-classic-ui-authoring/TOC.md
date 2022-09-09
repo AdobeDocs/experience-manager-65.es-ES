@@ -7,10 +7,10 @@ user-guide-title: Guía del usuario de creación de la interfaz de usuario de AE
 user-guide-description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
 feature: Authoring
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 84%
    + [Seleccionar la IU](author-env-select-ui.md)
    + [Búsqueda](author-env-search.md)
    + [Su bandeja de entrada](author-env-inbox.md)
-   + [Métodos abreviados del teclado para consolas](author-env-keyboard-shortcuts.md)
+   + [Métodos abreviados de teclado para consolas](author-env-keyboard-shortcuts.md)
 + Creación {#authoring}
    + [Creación de páginas](classic-page-author.md)
    + [Creación: Entorno y herramientas](classic-page-author-env-tools.md)
@@ -49,7 +49,6 @@ ht-degree: 84%
    + [Uso de etiquetas](classic-feature-tags.md)
    + [Scaffolding](classic-feature-scaffolding.md)
    + [Configurar componentes en modo Diseño](classic-page-author-design-mode.md)
-   + [Adición de funciones de Search&amp;Promote a la página](classic-feature-search-promote.md)
    + [Componentes](classic-page-author-default-components.md)
 + Flujos de trabajo {#workflows}
    + [Participación en flujos de trabajo](classic-workflows-participating.md)

@@ -1,26 +1,25 @@
 ---
 title: Reestructuración del repositorio de sitios en AEM 6.5
-seo-title: Reestructuración del repositorio de sitios en AEM 6.5
+seo-title: Sites Repository Restructuring in AEM 6.5
 description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorios en AEM 6.5 para Sites.
-seo-description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorios en AEM 6.5 para Sites.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Sites.
 uuid: 6dc5f8bd-1680-40af-9b8f-26c1f4bc3304
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-
 # Reestructuración del repositorio de sitios en AEM 6.5 {#sites-repository-restructuring-in-aem}
 
-Como se describe en la página principal [Reestructuración del repositorio en AEM 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a AEM 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de AEM Sites. Algunos cambios requieren un esfuerzo de trabajo durante el proceso de actualización de AEM 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
+Tal como se describe en el elemento principal [Reestructuración de repositorios en AEM 6.5](/help/sites-deploying/repository-restructuring.md) , los clientes que actualicen a AEM 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios en el repositorio que afectan a la solución de AEM Sites. Algunos cambios requieren un esfuerzo de trabajo durante el proceso de actualización de AEM 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
 
 **Con actualización a la versión 6.5**
 
@@ -29,19 +28,20 @@ Como se describe en la página principal [Reestructuración del repositorio en A
 **Antes de una actualización futura**
 
 * [Bibliotecas de cliente de Adobe Analytics](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-analytics-client-libraries)
-* [Diseños clásicos de Microsoft Word para páginas web](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#classic-microsoft-word-to-web-page-designs)
+* [Diseño clásico de Word a página web de Microsoft](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#classic-microsoft-word-to-web-page-designs)
 * [Configuraciones del emulador de dispositivos móviles](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#mobile-device-emulator-configurations)
-* [Configuraciones del modelo de Multi-Site Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
+* [Configuraciones del modelo del administrador de varios sitios](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
 * [Configuraciones de lanzamiento del administrador de varios sitios](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-rollout-configurations)
 * [Plantilla de correo electrónico de notificación de eventos de página](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
 * [Andamiaje de páginas](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-scaffolding)
 * [Cuadrícula adaptable MENOS](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#responsive-grid-less)
 * [Diseños de plantilla estáticos](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#static-template-designs)
-* [Bibliotecas de clientes de Adobe Search and Promote Integration](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-search-and-promote-integration-client-libraries)
+
+<!-- Search&Promote is end-of-life September 1, 2022 * [Adobe Search and Promote Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-search-and-promote-integration-client-libraries) -->
 * [Bibliotecas de clientes de integración de Adobe Target](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-target-integration-client-libraries)
 * [Bibliotecas de cliente de WCM Foundation](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#wcm-foundation-client-libraries)
 
-## Con actualización de 6.5 {#with-upgrade}
+## Con actualización a la versión 6.5 {#with-upgrade}
 
 ### Segmentos de ContextHub {#contexthub-segments}
 
@@ -64,11 +64,11 @@ Como se describe en la página principal [Reestructuración del repositorio en A
     </ol> <p>La siguiente consulta de QueryBuilder localiza todas las referencias a los segmentos de ContextHub en las ubicaciones anteriores.<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Esto se puede ejecutar a través de  <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM interfaz de usuario de QueryBuilder Debugger</a>. Tenga en cuenta que esta es una consulta que atraviesa, por lo que no la ejecute con la producción y asegúrese de que los límites transversales estén ajustados según sea necesario.</p> </td>
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Esto se puede ejecutar mediante <a href="/help/sites-developing/querybuilder-api.md" target="_blank">Interfaz de usuario de AEM QueryBuilder Debugger</a>. Tenga en cuenta que esta es una consulta que atraviesa, por lo que no la ejecute con la producción y asegúrese de que los límites transversales estén ajustados según sea necesario.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td><p>Los segmentos de ContextHub persistían en la visualización de la ubicación anterior como solo lectura en <strong>AEM &gt; Personalización &gt; Audiencias</strong>.</p> <p>Si los segmentos de ContextHub se pueden editar en AEM, se deben migrar a la nueva ubicación (<code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>). Los segmentos de ContentHub creados en AEM se mantienen en la nueva ubicación (<code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</p> <p>Las propiedades de página de AEM Sites solo permiten seleccionar la ubicación anterior (<code>/etc</code>) o una sola ubicación nueva (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>), por lo que los segmentos de ContextHub deben migrarse según corresponda.</p> <p>Los segmentos de ContextHub no utilizados de AEM sitios de referencia se pueden eliminar y no migrar a la nueva ubicación:</p>
+   <td><p>Los segmentos de ContextHub persistían en la visualización de la ubicación anterior como solo lectura en <strong>AEM &gt; Personalización &gt; Audiencias</strong>.</p> <p>Si los segmentos de ContextHub se pueden editar en AEM, se deben migrar a la nueva ubicación (<code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>). Los segmentos de ContentHub creados en AEM se mantienen en la nueva ubicación (<code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>).</p> <p>Las propiedades de página de AEM Sites solo permiten la ubicación anterior (<code>/etc</code>) o una sola ubicación nueva (<code>/apps</code>, <code>/conf/global</code> o <code>/conf/&lt;tenant&gt;</code>) para seleccionarlo, por lo que los segmentos de ContextHub deben migrarse según corresponda.</p> <p>Los segmentos de ContextHub no utilizados de AEM sitios de referencia se pueden eliminar y no migrar a la nueva ubicación:</p>
     <ul>
      <li>/etc/segmentation/geometrixx/</li>
      <li>/etc/segmentation/geometrixx-outdoors</li>
@@ -77,7 +77,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
  </tbody>
 </table>
 
-## Antes de la actualización futura {#prior-to-upgrade}
+## Antes de una actualización futura {#prior-to-upgrade}
 
 ### Bibliotecas de cliente de Adobe Analytics {#adobe-analytics-client-libraries}
 
@@ -95,7 +95,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
    <td><strong>Directrices de reestructuración</strong></td>
    <td><p>Cualquier uso personalizado de estas bibliotecas de cliente debe hacer referencia a la biblioteca de cliente por categoría y no por ruta:</p>
     <ol>
-     <li>Cualquier referencia a la biblioteca de cliente por ruta de acceso en la ubicación anterior debe actualizarse para utilizar <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM Client Library reference framework</a>.</li>
+     <li>Cualquier referencia a la biblioteca de cliente por ruta de acceso a la ubicación anterior debe actualizarse para utilizar <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM marco de referencia de la biblioteca de cliente</a>.</li>
      <li>Si no se puede utilizar AEM marco de referencia de la biblioteca de cliente, se puede hacer referencia a la ruta absoluta de las bibliotecas de cliente mediante AEM servlet proxy de la biblioteca de cliente.
       <ul>
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/appmeasurement.js</code></li>
@@ -108,7 +108,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td><p>Nunca se admitió la edición de estas bibliotecas de cliente.</p> <p>Para obtener las categorías de la biblioteca de cliente, visite cada nodo <code>cq:ClientLIbraryFolder</code> a través de CRXDELite e inspeccione la propiedad categories .</p>
+   <td><p>Nunca se admitió la edición de estas bibliotecas de cliente.</p> <p>Para obtener las categorías de la biblioteca de cliente, visite cada <code>cq:ClientLIbraryFolder</code> a través de CRXDELite e inspeccione la propiedad categories .</p>
     <ul>
      <li><code>/libs/cq/analytics/clientlibs/sitecatalyst/appmeasurement</code></li>
      <li><code>/libs/cq/analytics/clientlibs/sitecatalyst/plugins</code></li>
@@ -120,7 +120,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
  </tbody>
 </table>
 
-### Diseños clásicos de Microsoft Word para páginas web {#classic-microsoft-word-to-web-page-designs}
+### Diseño clásico de Word a página web de Microsoft {#classic-microsoft-word-to-web-page-designs}
 
 <table>
  <tbody>
@@ -137,13 +137,13 @@ Como se describe en la página principal [Reestructuración del repositorio en A
    <td><p>Para cualquier diseño que se administre en SCM y no se escriba en tiempo de ejecución mediante los cuadros de diálogo de diseño.</p>
     <ol>
      <li>Copie los diseños de la ubicación anterior a la nueva ubicación (<code>/apps</code>).</li>
-     <li>Convierta cualquier recurso CSS, JavaScript y estático en el diseño a una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
+     <li>Convierta cualquier recurso CSS, JavaScript y estático del diseño en un <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Biblioteca de clientes</a> con <code>allowProxy = true</code>.</li>
      <li>Actualice las referencias a la ubicación anterior en la propiedad cq:designPath.</li>
      <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría Biblioteca de cliente (esto requiere actualizar el código de implementación de página).</li>
-     <li>Actualice AEM reglas de Dispatcher para permitir el servicio de bibliotecas de cliente a través del servlet proxy <code>/etc.clientlibs/</code>.</li>
+     <li>Actualice AEM reglas de Dispatcher para permitir el servicio de bibliotecas de cliente a través de la variable <code>/etc.clientlibs/</code> proxy servlet.</li>
     </ol> <p>Para cualquier diseño que NO se administre en SCM y que se modifique en tiempo de ejecución mediante los cuadros de diálogo de diseño:</p>
     <ul>
-     <li>No mueva los diseños de autor fuera de <code>/etc</code>.</li>
+     <li>No mueva los diseños que se pueden crear fuera de <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -169,8 +169,8 @@ Como se describe en la página principal [Reestructuración del repositorio en A
    <td><strong>Directrices de reestructuración</strong></td>
    <td>Las configuraciones del emulador de dispositivos móviles nuevas deben migrarse a la ubicación nueva.
     <ol>
-     <li>Copie cualquier configuración nueva del emulador de dispositivo móvil de la ubicación anterior a la nueva ubicación (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
-     <li>Para cualquier página de AEM Sites que dependa de estas configuraciones del emulador de dispositivos móviles, actualice la página <span class="code">
+     <li>Copie cualquier configuración nueva del emulador de dispositivos móviles de la ubicación anterior a la nueva ubicación (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
+     <li>Para las páginas de AEM Sites que dependen de estas configuraciones del emulador de dispositivos móviles, actualice el informe <span class="code">
        <code>
         jcr
        </code>
@@ -180,13 +180,13 @@ Como se describe en la página principal [Reestructuración del repositorio en A
        <code>
         deviceGroups
        </code> = String[ mobile/groups/responsive ]</span></li>
-     <li>Para cualquier plantilla editable que dependa de estas configuraciones del emulador de dispositivos móviles, actualice las plantillas editables señalando el <span class="code">
+     <li>Para cualquier plantilla editable que dependa de estas configuraciones del emulador de dispositivos móviles, actualice las plantillas editables y señale la variable <span class="code">
        <code>
         cq
        </code>:
        <code>
         deviceGroups
-       </code></span> a la ubicación nueva.</li>
+       </code></span> a Nueva ubicación.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -217,7 +217,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>Cualquier configuración de modelo de Multi-site Manager nueva o modificada debe migrarse a la nueva ubicación (<code>/apps</code>).</p>
+   <td><p>Las configuraciones de modelo de Multi-site Manager nuevas o modificadas deben migrarse a la nueva ubicación (<code>/apps</code>).</p>
     <ol>
      <li>Copie cualquier configuración de modelo de Multi-site Manager nueva o modificada de la ubicación anterior a la nueva ubicación (<code>/apps</code>).</li>
      <li>Elimine cualquier configuración de modelo de Multi-site Manager migrada de la ubicación anterior.</li>
@@ -318,7 +318,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
  </tbody>
 </table>
 
-### Cuadrícula interactiva MENOS {#responsive-grid-less}
+### Cuadrícula adaptable MENOS {#responsive-grid-less}
 
 <table>
  <tbody>
@@ -339,7 +339,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>Al hacer referencia a un archivo <code>grid_base.less</code> no existente, el modo Diseño del Editor de plantillas y páginas no funciona, y se interrumpe el diseño de la página.</td>
+   <td>Referencia a un <code>grid_base.less</code> El resultado del archivo es que el modo Diseño del Editor de plantillas y páginas no funciona, y una interrupción del diseño de la página.</td>
   </tr>
  </tbody>
 </table>
@@ -361,13 +361,13 @@ Como se describe en la página principal [Reestructuración del repositorio en A
    <td><p>Para cualquier diseño que se administre en SCM y no se escriba en tiempo de ejecución mediante los cuadros de diálogo de diseño.</p>
     <ol>
      <li>Copie los diseños de la ubicación anterior a la nueva ubicación (<code>/apps</code>).</li>
-     <li>Convierta cualquier recurso CSS, JavaScript y estático en el diseño a una <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">biblioteca de cliente</a> con <code>allowProxy = true</code>.</li>
-     <li>Actualice las referencias a la ubicación anterior en la propiedad <code>cq:designPath</code> mediante <strong>AEM &gt; Sitios &gt; Páginas de sitio personalizadas &gt; Propiedades de página &gt; Pestaña avanzada &gt; Campo de diseño</strong>.</li>
+     <li>Convierta cualquier recurso CSS, JavaScript y estático del diseño en un <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Biblioteca de clientes</a> con <code>allowProxy = true</code>.</li>
+     <li>Actualizar referencias a la ubicación anterior en la <code>cq:designPath</code> propiedad mediante <strong>AEM &gt; Sitios &gt; Páginas de sitio personalizadas &gt; Propiedades de página &gt; Pestaña Avanzadas &gt; Campo de diseño</strong>.</li>
      <li>Actualice las páginas que hagan referencia a la ubicación anterior para utilizar la nueva categoría Biblioteca de cliente (esto requiere actualizar el código de implementación de página).</li>
-     <li>Actualice AEM reglas de Dispatcher para permitir el servicio de bibliotecas de cliente a través del servlet proxy <code>/etc.clientlibs/</code>.</li>
+     <li>Actualice AEM las reglas de Dispatcher para permitir el servicio de bibliotecas de cliente a través del <code>/etc.clientlibs/</code> proxy servlet.</li>
     </ol> <p>Para cualquier diseño que NO se administre en SCM y que se modifique en tiempo de ejecución mediante los cuadros de diálogo de diseño:</p>
     <ul>
-     <li>No mueva los diseños de autor fuera de <code>/etc</code>.</li>
+     <li>No mueva los diseños que se pueden crear fuera de <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -377,40 +377,40 @@ Como se describe en la página principal [Reestructuración del repositorio en A
  </tbody>
 </table>
 
-### Bibliotecas de cliente de integración de Adobe Search and Promote {#adobe-search-and-promote-integration-client-libraries}
+<!-- Search&Promote is end of life as of September 1, 2022 ### Adobe Search and Promote Integration Client Libraries {#adobe-search-and-promote-integration-client-libraries}
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Ubicación anterior</strong></td>
+   <td><strong>Previous location</strong></td>
    <td><p><code>/etc/clientlibs/foundation/searchpromote</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Nuevas ubicaciones</strong></td>
+   <td><strong>New location(s)</strong></td>
    <td><code>/libs/cq/searchpromote/clientlibs/searchpromote</code></td>
   </tr>
   <tr>
-   <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>Cualquier uso personalizado de estas bibliotecas de cliente debe hacer referencia a la biblioteca de cliente por categoría y no por ruta.</p>
+   <td><strong>Restructuring guidance</strong></td>
+   <td><p>Any custom use of these Client Libraries should reference the Client Library by category, and not by path.</p>
     <ol>
-     <li>Cualquier referencia a la biblioteca de cliente por ruta de acceso en la ubicación anterior debe actualizarse para utilizar <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM Client Library reference framework</a>.</li>
-     <li>Si no se puede utilizar AEM marco de referencia de la biblioteca de cliente, se puede hacer referencia a la ruta absoluta de las bibliotecas de cliente mediante AEM servlet proxy de la biblioteca de cliente:</li>
+     <li>Any references to the Client Library by path at the Previous Location should be updated to use <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM's Client Library referencing framework</a>.</li>
+     <li>If AEM's Client Library referencing framework cannot be used, the absolute path of the Client Libraries can be referenced via AEM's Client Library Proxy servlet:</li>
     </ol>
     <ul>
      <li><code>/etc.clientlibs/cq/searchpromote/clientlibs/searchpromotei.js</code></li>
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Notas</strong></td>
-   <td><p>Nunca se admitió la edición de estas bibliotecas de cliente.</p> <p>Para obtener las categorías de la biblioteca de cliente, visite cada nodo cq:ClientLIbraryFolder a través de CRXDELite e inspeccione la propiedad categories :</p>
+   <td><strong>Notes</strong></td>
+   <td><p>Editing of these Client Libraries was never supported.</p> <p>To obtain the Client Library categories, visit each cq:ClientLIbraryFolder node via CRXDELite and inspect the categories property:</p>
     <ul>
      <li><code>/libs/cq/searchpromote/clientlibs/searchpromote</code></li>
     </ul> </td>
   </tr>
  </tbody>
-</table>
+</table> -->
 
-### Bibliotecas de cliente de integración de Adobe Target {#adobe-target-integration-client-libraries}
+### Bibliotecas de clientes de integración de Adobe Target {#adobe-target-integration-client-libraries}
 
 <table>
  <tbody>
@@ -426,7 +426,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
    <td><strong>Directrices de reestructuración</strong></td>
    <td><p>Cualquier uso personalizado de estas bibliotecas de cliente debe hacer referencia a la biblioteca de cliente por categoría y no por ruta.</p>
     <ol>
-     <li>Cualquier referencia a la biblioteca de cliente por ruta de acceso en la ubicación anterior debe actualizarse para utilizar <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM Client Library reference framework</a>.</li>
+     <li>Cualquier referencia a la biblioteca de cliente por ruta de acceso a la ubicación anterior debe actualizarse para utilizar <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM marco de referencia de la biblioteca de cliente</a>.</li>
      <li>Si no se puede utilizar AEM marco de referencia de la biblioteca de cliente, se puede hacer referencia a la ruta absoluta de las bibliotecas de cliente mediante AEM servlet proxy de la biblioteca de cliente:</li>
     </ol>
     <ul>
@@ -471,7 +471,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
    <td><strong>Directrices de reestructuración</strong></td>
    <td><p>Cualquier uso personalizado de estas bibliotecas de cliente debe hacer referencia a la biblioteca de cliente por categoría y no por ruta.</p>
     <ol>
-     <li>Cualquier referencia a la biblioteca de cliente por ruta de acceso en la ubicación anterior debe actualizarse para utilizar <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM Client Library reference framework</a>.</li>
+     <li>Cualquier referencia a la biblioteca de cliente por ruta de acceso a la ubicación anterior debe actualizarse para utilizar <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM marco de referencia de la biblioteca de cliente</a>.</li>
      <li>Si no se puede utilizar AEM marco de referencia de la biblioteca de cliente, se puede hacer referencia a la ruta absoluta de las bibliotecas de cliente mediante AEM servlet proxy de la biblioteca de cliente.</li>
     </ol>
     <ul>
@@ -482,7 +482,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td><p>Nunca se admitió la edición de estas bibliotecas de cliente.</p> <p>Para obtener las categorías de la biblioteca de cliente, visite cada nodo <code>cq:ClientLIbraryFolder</code> a través de CRXDELite e inspeccione la propiedad categories :</p>
+   <td><p>Nunca se admitió la edición de estas bibliotecas de cliente.</p> <p>Para obtener las categorías de la biblioteca de cliente, visite cada <code>cq:ClientLIbraryFolder</code> a través de CRXDELite e inspeccione la propiedad categories :</p>
     <ul>
      <li><code>/libs/wcm/foundation/clientlibs/accessibility</code></li>
      <li><code>/libs/wcm/foundation/clientlibs/main</code></li>
@@ -490,4 +490,3 @@ Como se describe en la página principal [Reestructuración del repositorio en A
   </tr>
  </tbody>
 </table>
-

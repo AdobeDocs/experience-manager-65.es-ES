@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 085e77b7b831d6be626a46d3de215aedb50f6178
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Utilice el siguiente procedimiento para asignar variables de componentes de CQ c
 
    ![aa-13](assets/aa-13.png)
 
-   Existen varios grupos de componentes predeterminados: **General**, **Comercio**, **Comunidades**, **Search&amp;Promote** y **Otro**. La instancia de AEM puede configurarse para mostrar diferentes grupos y componentes.
+   Existen varios grupos de componentes predeterminados: **General**, **Comercio**, **Comunidades** y **Otro**. La instancia de AEM puede configurarse para mostrar diferentes grupos y componentes.
 
 1. Para asignar variables de Adobe Analytics con variables definidas en el componente, arrastre y **Variable de Analytics** desde el buscador de contenido a un campo del componente de seguimiento. Por ejemplo, arrastre `Page Name (pageName)` a `pagedata.title`.
 
@@ -121,10 +121,6 @@ La lista se puede manipular de las siguientes maneras:
    >[!NOTE]
    >
    >Solo se puede activar un botón de filtro a la vez.
-
-   >[!NOTE]
-   >
-   >Las variables de Search&amp;Promote también pertenecen a la sección Conversión .
 
    1. La lista también tiene una función de búsqueda, que filtra los elementos según el texto introducido en el campo de búsqueda.
    1. Si se activa una opción de filtro al buscar elementos en la lista, los resultados mostrados también se filtrarán según el botón activo.

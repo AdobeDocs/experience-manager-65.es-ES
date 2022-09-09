@@ -5,10 +5,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -147,7 +147,7 @@ AEM comercio electrónico proporciona:
 
    * la búsqueda AEM
    * la búsqueda del sistema de comercio electrónico
-   * una búsqueda de terceros (como Search&amp;Promote)
+   * una búsqueda de terceros
    * o una combinación de ellos.
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
