@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: ffabf5a9e3b08f60394cecfe540692b161437362
+source-git-commit: c73d39a1c88c914cd63bc08fe8daf0ff37b4bf7c
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '831'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ La variable [Consola web](/help/sites-deploying/configuring-osgi.md) proporciona
 >
 >El gestor de autenticación SAML 2.0 está deshabilitado de forma predeterminada. Debe establecer al menos una de las siguientes propiedades para habilitar el controlador:
 >
->* La dirección URL del POST del proveedor de identidad.
+>* La dirección URL del POST del proveedor de identidad o la dirección URL de IDP.
 >* El ID de entidad de proveedor de servicios.
 >
 
@@ -57,7 +57,7 @@ La variable [Consola web](/help/sites-deploying/configuring-osgi.md) proporciona
 
 **Alias de certificado IDP** alias del certificado de IdP en el almacén de confianza global. Si esta propiedad está vacía, el controlador de autenticación está deshabilitado. Consulte el capítulo &quot;Añadir el certificado IdP al AEM TrustStore&quot; a continuación sobre cómo configurarlo.
 
-**URL del proveedor de identidad** URL del IDP donde se debe enviar la solicitud de autenticación SAML. Si esta propiedad está vacía, el controlador de autenticación está deshabilitado.
+**URL de IDP** URL del IDP donde se debe enviar la solicitud de autenticación SAML. Si esta propiedad está vacía, el controlador de autenticación está deshabilitado.
 
 >[!CAUTION]
 >
