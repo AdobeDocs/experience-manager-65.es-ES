@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 32b97aeff398a19556d46ff6c905dc3019988bc1
+source-git-commit: e5b78a6f84fa0f9de746ca4ae69a8df4f474e305
 workflow-type: tm+mt
-source-wordcount: '5389'
+source-wordcount: '5388'
 ht-degree: 2%
 
 ---
@@ -659,7 +659,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 * Asegúrese de que el usuario del Generador de PDF sea miembro del grupo de administradores y de que la variable [Reemplazar un token de nivel de proceso](#grant-the-replace-a-process-level-token-privilege) se establece para el usuario.
 * Asegúrese de que el usuario está configurado en la interfaz de usuario del Generador de PDF y realice las siguientes acciones:
    1. Inicie sesión en Microsoft® Windows con el usuario del Generador de PDF.
-   1. Abra las aplicaciones de Microsoft® Office u Open Office y cancele todos los cuadros de diálogo.
+   1. Abra las aplicaciones de Microsoft® Office u OpenOffice y cancele todos los cuadros de diálogo.
    1. Establezca AdobePDF como impresora predeterminada.
    1. Establezca Acrobat como programa predeterminado para archivos de PDF.
    1. Realice la conversión manual mediante las opciones Archivo > Imprimir y cinta Acrobat en las aplicaciones de Microsoft Office y cancele todos los cuadros de diálogo.
