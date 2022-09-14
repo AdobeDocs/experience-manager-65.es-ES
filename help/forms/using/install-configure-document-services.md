@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 477e3d6d7e64a86726a71a8c554593441c94d5bc
+source-git-commit: a0612d10c91cf096403dad1c50b0884feeb10ec2
 workflow-type: tm+mt
-source-wordcount: '5388'
+source-wordcount: '5461'
 ht-degree: 2%
 
 ---
@@ -434,7 +434,7 @@ Se necesita una cuenta de usuario local para ejecutar el servicio Generador de P
 
 ### Configuración de la configuración de tiempo de espera {#configure-the-time-out-settings}
 
-1. En [Administrador de configuración de AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
+1. En [Administrador de configuración AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
 
    Agregue lo siguiente a **[!UICONTROL Propiedades personalizadas.name]** y haga clic en **[!UICONTROL Guardar]**. Establece el tiempo de espera de respuesta pendiente (también conocido como tiempo de espera de cliente CORBA) en 600 segundos.
 
@@ -605,32 +605,29 @@ La herramienta de preparación del sistema comprueba si el equipo está configur
    >
    > * Puede utilizar el archivo srt_config.yaml para configurar varias configuraciones de . El formato del archivo es:
 
-
-   ```
-      # =================================================================
-      # SRT Configuration
-      # =================================================================
-      #Note - follow correct format to avoid parsing failures
-      #e.g. <param name>:<space><param value> 
-      #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
-      locale: en
-   
-      #aemTempDir: AEM Temp direcotry
-      aemTempDir:
-   
-      #users: provide PDFG converting users list
-      #users:
-      # - user1
-      # - user2
-      users:
-   
-      #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
-      profile:
-   
-      #outputDir: directory where output files will be saved
-      outputDir:
-   ```
-
+       #========================================================================
+       # Configuración SRT
+       #========================================================================
+       #Nota: siga el formato correcto para evitar errores de análisis
+       #p.ej. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       #configuración regional: (campo obligatorio)Configuración regional que se utilizará para la SRT. Configuraciones regionales compatibles [en/fr/de/ja].
+       configuración regional: en
+       
+       #aemTempDir: Directorio temporal AEM
+       aemTempDir:
+       
+       #usuarios: proporcionar lista de usuarios con conversión PDFG
+       #usuarios:
+       # - usuario1
+       # - usuario 2
+       usuarios:
+       
+       #profile: seleccione perfil para ejecutar comprobaciones específicas. Elija entre [LCM], se agregarán más próximamente
+       perfil:
+       
+       #outputDir: directorio donde se guardarán los archivos de salida
+       outputDir:
+   >
 1. Vaya a `[Path_of_reports_folder]`. Abra el archivo SystemReadinessTool.html . Compruebe el informe y corrija los problemas mencionados.
 
 ## Solución de problemas
