@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a0612d10c91cf096403dad1c50b0884feeb10ec2
+source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
 workflow-type: tm+mt
 source-wordcount: '5461'
 ht-degree: 2%
@@ -605,11 +605,12 @@ La herramienta de preparación del sistema comprueba si el equipo está configur
    >
    > * Puede utilizar el archivo srt_config.yaml para configurar varias configuraciones de . El formato del archivo es:
 
-       #========================================================================
        # Configuración SRT
-       #========================================================================
-       #Nota: siga el formato correcto para evitar errores de análisis
-       #p.ej. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
+       # Nota: Siga el formato correcto para evitar errores de análisis
+       
+       # p. ej. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
        #configuración regional: (campo obligatorio)Configuración regional que se utilizará para la SRT. Configuraciones regionales compatibles [en/fr/de/ja].
        configuración regional: en
        
