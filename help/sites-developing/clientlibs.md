@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 4789b2b5105e5a883ab816c82c9ff07ea76978ff
+source-git-commit: 684474d764ac2a2c187827382e0180e6c0d5259b
 workflow-type: tm+mt
-source-wordcount: '2848'
+source-wordcount: '2861'
 ht-degree: 2%
 
 ---
@@ -224,7 +224,7 @@ La incrustación de código es útil para proporcionar acceso a las bibliotecas 
 
 #### Carpetas de biblioteca de cliente específicas de la aplicación {#app-specific-client-library-folders}
 
-Se recomienda mantener todos los archivos relacionados con la aplicación en la carpeta de la aplicación siguiente `/app`. También es una práctica recomendada denegar el acceso de los visitantes del sitio web al `/app` carpeta. Para satisfacer ambas prácticas recomendadas, cree una carpeta de biblioteca de cliente debajo de la variable `/etc` carpeta que incrusta la biblioteca de cliente que se encuentra a continuación `/app`.
+Se recomienda mantener todos los archivos relacionados con la aplicación en la carpeta de la aplicación siguiente `/apps`. También es una práctica recomendada denegar el acceso de los visitantes del sitio web al `/app` carpeta. Para satisfacer ambas prácticas recomendadas, cree una carpeta de biblioteca de cliente a continuación. `/apps`y haga que sea accesible a través del servlet proxy como se describe en [Localización de una carpeta de biblioteca de cliente y uso del servlet de bibliotecas de cliente proxy](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
 
 Utilice la propiedad categories para identificar la carpeta de biblioteca de cliente que desea incrustar. Para incrustar la biblioteca, agregue una propiedad a la incrustación `cq:ClientLibraryFolder` utilizando los siguientes atributos de propiedad:
 
