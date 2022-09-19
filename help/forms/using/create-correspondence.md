@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
 workflow-type: tm+mt
-source-wordcount: '3695'
+source-wordcount: '3826'
 ht-degree: 0%
 
 ---
@@ -288,6 +288,22 @@ Estas instancias solo se pueden guardar cuando la carta se está viendo en la in
 1. En AEM, abra Configuración de la consola web de Adobe Experience Manager para su servidor mediante la siguiente URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. Localizar **[!UICONTROL Configuraciones de administración de correspondencia]** y haga clic en ella.
 1. Marque **[!UICONTROL Administrar instancias de carta en publicación]** configuración y haga clic en **[!UICONTROL Guardar]**.
+
+### Habilitar la función Guardar borrador {#enable-save-draft-feature}
+
+Antes de publicar cartas o guardar borradores en la instancia de publicación, realice los siguientes pasos para habilitar la función Guardar como borrador :
+
+1. Abra la configuración de la consola web para su servidor utilizando la siguiente URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr.
+
+1. Busque y haga clic en el botón **Editar** junto al icono *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name* configuración.
+
+1. En el *URL de autor de VersionRestoreManager* especifique la URL de la instancia de autor correspondiente.
+
+1. Haga clic en Guardar .
+
+La variable *cq:lastReplicationAction*, *cq:lastreplicado* y *cq:lastReplicatedBy* las propiedades no se transfieren a la instancia de publicación de forma predeterminada. Para permitir la recarga de borradores en la instancia de publicación, estas propiedades son necesarias en la instancia de publicación.
+
+Para poder seguir *cq:lastReplicationAction*, *cq:lastreplicado* y *cq:lastReplicatedBy* propiedades para publicar instancias, desactivar el componente como *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* en la instancia Autor que utiliza la dirección URL:`http://server:port/system/console/components`
 
 Cuando se activa el guardado de instancias de carta, tiene la opción de seleccionar dónde guardar las instancias de carta. Existen dos opciones para guardar las instancias de carta: Guarde local o Guarde remoto.
 
