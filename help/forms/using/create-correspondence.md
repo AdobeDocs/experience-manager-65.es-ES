@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
+source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
 workflow-type: tm+mt
-source-wordcount: '3826'
+source-wordcount: '3867'
 ht-degree: 0%
 
 ---
@@ -291,19 +291,29 @@ Estas instancias solo se pueden guardar cuando la carta se está viendo en la in
 
 ### Habilitar la función Guardar borrador {#enable-save-draft-feature}
 
-Antes de publicar cartas o guardar borradores en la instancia de publicación, realice los siguientes pasos para habilitar la función Guardar como borrador :
+Antes de publicar cartas o guardar borradores en la instancia de publicación, realice los siguientes pasos en la instancia de autor y publicación para habilitar la función Guardar como borrador :
 
-1. Abra la configuración de la consola web para su servidor utilizando la siguiente URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr.
+La variable *cq:lastReplicationAction*, *cq:lastreplicado* y *cq:lastReplicatedBy* las propiedades no se transfieren a la instancia de publicación de forma predeterminada. Para poder seguir *cq:lastReplicationAction*, *cq:lastreplicado* y *cq:lastReplicatedBy* propiedades para publicar instancias, deshabilite [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente. Para desactivar el componente:
 
-1. Busque y haga clic en el botón **Editar** junto al icono *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name* configuración.
+1. En la instancia de autor, abra la consola Componentes de la consola web de Adobe Experience Manager . La dirección URL predeterminada es `http://author-server:port/system/console/components`
 
-1. En el *URL de autor de VersionRestoreManager* especifique la URL de la instancia de autor correspondiente.
+1. Busque la variable **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** componente.
 
-1. Haga clic en Guardar .
+1. Haga clic en ![Botón Deshabilitar](/help/forms/using/assets/enablebutton.png) para desactivar el [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente.
 
-La variable *cq:lastReplicationAction*, *cq:lastreplicado* y *cq:lastReplicatedBy* las propiedades no se transfieren a la instancia de publicación de forma predeterminada. Para permitir la recarga de borradores en la instancia de publicación, estas propiedades son necesarias en la instancia de publicación.
+![Instancia de autor](/help/forms/using/assets/replicationproperties.png)
 
-Para poder seguir *cq:lastReplicationAction*, *cq:lastreplicado* y *cq:lastReplicatedBy* propiedades para publicar instancias, desactivar el componente como *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* en la instancia Autor que utiliza la dirección URL:`http://server:port/system/console/components`
+Para habilitar la función Guardar como borrador, reemplace la URL existente en [!UICONTROL URL de autor de VersionRestoreManager] con la URL de la instancia de autor. Para reemplazar la dirección URL:
+
+1. En la instancia de publicación, abra [!UICONTROL Configuración de la consola web de Aode Manager]. La dirección URL predeterminada es `https://publish-server:port/system/console/configMgr`
+
+1. Busque y abra el **[!UICONTROL Gestión de Correspondencia: Crear instancias Configuración de restauración de versiones]** componente.
+
+1. Busque la variable **[!UICONTROL URL de autor de VersionRestoreManager]** y especifique la URL para la instancia de autor.
+
+1. Haga clic en Guardar.
+
+![Instancia de publicación](/help/forms/using/assets/correspondencemanagement.png)
 
 Cuando se activa el guardado de instancias de carta, tiene la opción de seleccionar dónde guardar las instancias de carta. Existen dos opciones para guardar las instancias de carta: Guarde local o Guarde remoto.
 
@@ -323,7 +333,7 @@ Esta opción existe para las personas que tienen dudas sobre el guardado de dato
 
 #### Especificar la configuración del autor de procesamiento {#specify-processing-author-settings}
 
-1. En AEM, abra Configuración de la consola web de Adobe Experience Manager para su servidor mediante la siguiente URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. En AEM, abra Configuración de la consola web de Adobe Experience Manager para su servidor mediante la siguiente URL: `https://<server>:<port>/system/console/configMgr`
 
    ![Configuración de la consola web de Adobe Experience Manager](assets/2configmanager.png)
 
