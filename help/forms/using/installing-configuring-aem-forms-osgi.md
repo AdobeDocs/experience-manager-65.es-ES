@@ -10,9 +10,9 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 126d5309fe3c3b6474e180d21f5c7d1697d9e08a
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1884'
 ht-degree: 5%
 
 ---
@@ -105,6 +105,9 @@ Antes de empezar a instalar y configurar la capacidad de captura de datos de AEM
 
    * libicu
 
+* Instalar [Microsoft Visual Studio 2019 redistribuible de 32 bits](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+
+
 ## Instalación del paquete de complementos de AEM Forms {#install-aem-forms-add-on-package}
 
 El paquete de complementos de AEM Forms es una aplicación implementada en AEM. El paquete contiene captura de datos de AEM Forms y otras funciones. Siga estos pasos para instalar el paquete de complementos:
@@ -124,7 +127,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM. 
 
 ### (Solo Windows) Instalación automática de los redistribuibles de Visual Studio {#automatic-installation-visual-studio-redistributables}
 
-Si instala una instancia de AEM en modo elevado, los redistribuibles de Visual Studio que faltan se instalan automáticamente durante la instalación del paquete de complementos de AEM Forms.
+Si instala una instancia de AEM en modo elevado, los redistribuibles de Visual Studio de 32 bits se instalan automáticamente durante la instalación del paquete de complementos de AEM Forms.
 
 Para evaluar si los redistribuibles de Visual Studio están instalados automáticamente, abra el `error.log` archivo disponible en `/crx-repository/logs/` directorio. Los registros incluyen el siguiente mensaje:
 
