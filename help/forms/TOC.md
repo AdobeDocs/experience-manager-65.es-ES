@@ -8,9 +8,9 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
+source-git-commit: 633a9b6d972cf8b0bb102a7efd5eeb8e0b71a19e
 workflow-type: tm+mt
-source-wordcount: '3797'
+source-wordcount: '3814'
 ht-degree: 4%
 
 ---
@@ -330,7 +330,8 @@ ht-degree: 4%
 + Integración de AEM Forms con las soluciones de Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
    + [Crear experiencias segmentadas en AEM Forms](/help/forms/using/experience-targeting-forms.md)
    + [Medir y mejorar la eficacia y la conversión de formularios](using/measure-improve-performance-forms-documents.md)
-   + [Configuración de análisis e informes](using/configure-analytics-forms-documents.md)
+   + [Analytics con Cloud Service Framework](using/configure-analytics-forms-documents.md)
+   + [Analytics con Adobe Launch](using/integrate-aem-forms-with-adobe-analytics.md)
    + [Ver y comprender los informes de análisis de AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Crear y administrar pruebas A/B para formularios adaptables](using/ab-testing-adaptive-forms.md)
 + Publicar y procesar AEM Forms {#publish-process-aem-forms}
@@ -683,6 +684,7 @@ ht-degree: 4%
 + Solución de problemas {#troubleshooting}
    + [No se pueden usar algunas funciones de formularios con ciertas versiones de Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
    + [Pasos adicionales para obtener el correo electrónico con los archivos adjuntos para la versión de Forms adaptable en JEE](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
+   + [No se puede convertir el archivo de Word o Excel al PDF en Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
 + Documentación heredada {#legacy-documentation}
    + [Uso del servicio de ejecución de secuencias de comandos en AEM Forms en JEE Workbench para generar datos XML](developing/building-xml.md)
    + [Compresión y descompresión de archivos mediante una AEM Forms en una DSC personalizada JEE](developing/compressing-decompressing-custom-dsc.md)
