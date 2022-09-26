@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 4e68a8a8d84d0ffa1d28ab13c196731e58b4cf9a
+source-git-commit: 1a383f0e620adf6968d912a9a1759e5ee020c908
 workflow-type: tm+mt
 source-wordcount: '3447'
 ht-degree: 1%
@@ -183,7 +183,7 @@ Una vez descargado, puede instalar y configurar el S3 Connector de la siguiente 
 1. Edite el archivo y añada las opciones de configuración requeridas por su configuración.
 1. Inicie AEM.
 
-### Actualización a una nueva versión del conector S3 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
+## Actualización a una nueva versión del conector S3 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
 
 Si necesita actualizar el conector 1.10.x S3 a una nueva versión (por ejemplo, de 1.10.0 a 1.10.4), siga estos pasos:
 
@@ -260,7 +260,7 @@ Puede utilizar el archivo de configuración con las siguientes opciones:
  </tbody>
 </table>
 
-**Almacenamiento en caché del almacén de datos**
+### Almacenamiento en caché del almacén de datos {#data-store-caching}
 
 >[!NOTE]
 >
@@ -272,11 +272,11 @@ También puede actualizar la caché sin conexión utilizando el `datastorecacheu
 
 La caché tiene un límite de tamaño y se puede configurar utilizando el parámetro cacheSize .
 
-**Descargas**
+#### Descargas {#downloads}
 
 Se comprobará la caché local para el registro del archivo o blob solicitado antes de acceder a él desde el DataStore. Cuando la caché exceda el límite configurado (consulte la `cacheSize` ) al agregar un archivo a la caché, algunos de los archivos se desalojarán para recuperar espacio.
 
-**Carga asíncrona**
+#### Carga asíncrona {#async-upload}
 
 La caché admite cargas asíncronas a DataStore. Los archivos se montan localmente, en la caché (en el sistema de archivos), y un trabajo asincrónico comienza a cargar el archivo. El número de cargas asincrónicas está limitado por el tamaño de la caché de ensayo. El tamaño de la caché de ensayo se configura usando la variable `stagingSplitPercentage` parámetro. Este parámetro define el porcentaje de tamaño de caché que se utilizará para la caché de ensayo. Además, el porcentaje de caché disponible para las descargas se calcula como **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
