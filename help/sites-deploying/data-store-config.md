@@ -6,10 +6,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 1a383f0e620adf6968d912a9a1759e5ee020c908
+source-git-commit: 1a741ff01fcf17dfdcc8c1cebcd858052d07361c
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 1%
+source-wordcount: '3583'
+ht-degree: 2%
 
 ---
 
@@ -204,61 +204,93 @@ Si necesita actualizar el conector 1.10.x S3 a una nueva versión (por ejemplo, 
 1. Copiar los archivos jar en **&lt;aem-install>**/crx-quickstart/install/15 en la carpeta de instalación de AEM.
 1. Inicie AEM y compruebe la funcionalidad del conector.
 
-Puede utilizar el archivo de configuración con las siguientes opciones:
+Puede utilizar el archivo de configuración con las opciones detalladas a continuación.
 
-* accessKey: La clave de acceso de AWS.
-* secretKey: La clave de acceso secreta de AWS. **Nota:** Cuando la variable `accessKey` o `secretKey` no se ha especificado, la variable [Función IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) se utiliza para la autenticación.
-* s3Bucket: El nombre del contenedor.
-* s3Region: La región del cubo.
-* ruta: Ruta del almacén de datos. El valor predeterminado es **&lt;aem install=&quot;&quot; folder=&quot;&quot;>/repository/datastore**
-* minRecordLength: El tamaño mínimo de un objeto que debe almacenarse en el almacén de datos. El valor mínimo/predeterminado es **16 KB.**
-* maxCachedBinarySize: Los binarios con un tamaño menor o igual que este tamaño se almacenarán en la caché de memoria. El tamaño se expresa en bytes. El valor predeterminado es **17408 **(17 KB).
+<!--
+* accessKey: The AWS access key.
+* secretKey: The AWS secret access key. **Note:** When the `accessKey` or `secretKey` is not specified then the [IAM role](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) is used for authentication.
+* s3Bucket: The bucket name.
+* s3Region: The bucket region.
+* path: The path of the data store. The default is **&lt;AEM install folder&gt;/repository/datastore**
+* minRecordLength: The minimum size of an object that should be stored in the data store. The minimum/default is **16KB.**
+* maxCachedBinarySize: Binaries with size less than or equal to this size will be stored in memory cache. The size is in bytes. The default is **17408 **(17 KB).
+* cacheSize: The size of the cache. The value is specified in bytes. The default is **64GB**.
+* secret: Only to be used if using binaryless replication for shared datastore setup.
+* stagingSplitPercentage: The percentage of cache size configured to be used for staging asynchronous uploads. The default value is **10**.
+* uploadThreads: The number of uploads threads that are used for asynchronous uploads. The default value is **10**.
+* stagingPurgeInterval: The interval in seconds for purging finished uploads from the staging cache. The default value is **300** seconds (5 minutes).
+* stagingRetryInterval: The retry interval in seconds for failed uploads. The default value is **600** seconds (10 minutes).
+-->
 
-* cacheSize: El tamaño de la caché. El valor se especifica en bytes. El valor predeterminado es **64 GB**.
-* secreto: Solo para su uso si utiliza replicación sin binarios para la configuración del almacén de datos compartido.
-* stagingSplitPercentage: El porcentaje de tamaño de caché configurado para utilizarse en el ensayo de cargas asincrónicas. El valor predeterminado es **10**.
-* uploadThreads: Número de subprocesos de carga que se utilizan para cargas asincrónicas. El valor predeterminado es **10**.
-* stagingPurgeInterval: El intervalo en segundos para la depuración finalizó las cargas desde la caché de ensayo. El valor predeterminado es **300** segundos (5 minutos).
-* stagingRetryInterval: Intervalo de reintentos en segundos para cargas fallidas. El valor predeterminado es **600** segundos (10 minutos).
+### Opciones del archivo de configuración del conector S3 {#s3-connector-configuration-file-options}
 
-### Opciones de región de depósito {#bucket-region-options}
+>[!NOTE]
+>
+>El conector S3 admite la autenticación de usuarios de IAM y la autenticación de funciones de IAM. Para utilizar la autenticación de funciones de IAM, omita el `accessKey` y `secretKey` del archivo de configuración. El conector S3 pasará de forma predeterminada a la variable [Función IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) asignado a la instancia.
+
+| Clave | Descripción | Predeterminado | Requerido |
+| --- | --- | --- | --- |
+| accessKey | Acceso al ID de clave para el usuario de IAM con acceso al bucket. |  | Sí, cuando no se utilizan funciones de IAM. |
+| secretKey | Clave de acceso secreta para el usuario de IAM con acceso al bucket. |  | Sí, cuando no se utilizan funciones de IAM. |
+| cacheSize | El tamaño (en bytes) de la caché local. | 64 GB | No. |
+| connectionTimeout | Establezca la cantidad de tiempo de espera (en milisegundos) antes de que se agote el tiempo de espera al establecer inicialmente una conexión. | 10 000 | No. |
+| maxCachedBinarySize | Los binarios con un tamaño menor o igual que este valor (en bytes) se almacenarán en la caché de memoria. | 17408 (17 KB) | No. |
+| maxConnections | Establezca el número máximo de conexiones HTTP abiertas permitidas. | 50 | No. |
+| maxErrorRetry | Establezca el número máximo de intentos de reintento para solicitudes fallidas (recuperables). | 3 | No. |
+| minRecordLength | El tamaño mínimo de un objeto (en bytes) que debe almacenarse en el almacén de datos. | 16384 | No. |
+| path | Ruta local del almacén de datos de AEM. | `crx-quickstart/repository/datastore` | No. |
+| proxyHost | Establezca el host proxy opcional a través del que se conectará el cliente. |  | No. |
+| proxyPort | Establezca el puerto proxy opcional por el que se conectará el cliente. |  | No. |
+| s3Bucket | Nombre del depósito S3. |  | Sí |
+| s3EndPoint | Punto final de la API de REST S3. |  | No. |
+| s3Region | Región donde reside el bloque. Consulte esta [página](https://docs.aws.amazon.com/general/latest/gr/s3.html) para obtener más información. | Región en la que se está ejecutando la instancia de AWS. | No. |
+| socketTimeout | Establezca el tiempo de espera (en milisegundos) para que los datos se transfieran a través de una conexión abierta establecida antes de que se agote el tiempo de espera de la conexión y se cierre. | 50000 | No. |
+| stagingPurgeInterval | El intervalo (en segundos) para la depuración finalizó las cargas desde la caché de ensayo. | 300 | No. |
+| stagingRetryInterval | El intervalo (en segundos) para reintentar cargas fallidas. | 600 | No. |
+| stagingSplitPercentage | El porcentaje de `cacheSize` para su uso en el ensayo de cargas asíncronas. | 10 | No. |
+| uploadThreads | Número de subprocesos de carga utilizados para cargas asincrónicas. | 10 | No. |
+| writeThreads | Número de subprocesos simultáneos utilizados para escribir mediante S3 Transfer Manager. | 10 | No. |
+
+<!---
+### Bucket region options {#bucket-region-options}
 
 <table>
  <tbody>
   <tr>
-   <td>Estándar EE. UU.</td>
+   <td>US Standard</td>
    <td><code>us-standard</code></td>
   </tr>
   <tr>
-   <td>EE.UU. Oeste</td>
+   <td>US West</td>
    <td><code>us-west-2</code></td>
   </tr>
   <tr>
-   <td>US West (California del Norte)</td>
+   <td>US West (Northern California)</td>
    <td><code>us-west-1</code></td>
   </tr>
   <tr>
-   <td>UE (Irlanda)<br /> </td>
+   <td>EU (Ireland)<br /> </td>
    <td><code>EU</code></td>
   </tr>
   <tr>
-   <td>Asia-Pacífico (Singapur)<br /> </td>
+   <td>Asia Pacific (Singapore)<br /> </td>
    <td><code>ap-southeast-1</code></td>
   </tr>
   <tr>
-   <td>Asia-Pacífico (Sídney)<br /> </td>
+   <td>Asia Pacific (Sydney)<br /> </td>
    <td><code>ap-southeast-2</code></td>
   </tr>
   <tr>
-   <td>Asia-Pacífico (Tokio)</td>
+   <td>Asia Pacific (Tokyo)</td>
    <td><code>ap-northeast-1</code></td>
   </tr>
   <tr>
-   <td>Sudamérica (São Paulo)<br /> </td>
+   <td>South America (Sao Paolo)<br /> </td>
    <td><code>sa-east-1</code></td>
   </tr>
  </tbody>
 </table>
+-->
 
 ### Almacenamiento en caché del almacén de datos {#data-store-caching}
 
