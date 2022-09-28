@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
+source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
 workflow-type: tm+mt
-source-wordcount: '3557'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -59,8 +59,6 @@ Los siguientes ajustes de configuración de OSGi (enumerados según el paquete) 
 
 * La variable **Contraseña de administrador** debe cambiarse después de la instalación para garantizar que [seguridad](/help/sites-administering/security-checklist.md) de su instancia.
 * No deben ser necesarios otros cambios y se debe tener cuidado, ya que pueden afectar al acceso al repositorio.
-
-**Servicio de correo Wiki** Configure las opciones de correo electrónico para los correos electrónicos enviados por una wiki.
 
 **Consola de administración Apache Felix OSGi** Configurar:
 
@@ -447,10 +445,6 @@ Controla el analizador de HTML para el reescritor de CQ.
 **Agrupamiento de conexiones JDBC Day Commons** Configure el acceso a una base de datos externa que se esté utilizando como fuente de contenido.
 
 Se trata de una configuración de fábrica, por lo que se pueden configurar varias instancias.
-
-**Servicio de sesiones DPS de Adobe CQ Media** Administre sesiones de DPS para su uso con Publicaciones.
-
-En particular, puede definir la variable `dps.session.service.url.name`: el valor predeterminado es [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
 **Reescritura de CDN** Se debe garantizar la comunicación entre AEM y una CDN para que los recursos y binarios se entreguen al usuario final de forma segura. Esto implica dos tareas:
 
