@@ -12,7 +12,7 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 1e301f3991a18a594ac10a6548a0a645327dd4dd
+source-git-commit: f39102c938107b8ce01325499f29f00e287b5bcc
 workflow-type: tm+mt
 source-wordcount: '1995'
 ht-degree: 0%
@@ -99,7 +99,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
 
 1. ¿Por qué algunas fuentes se muestran en el formulario del HTML de forma diferente a las utilizadas al diseñar el formulario?
 
-   Respuesta: Los formularios HTML5 no incrustan fuentes (a diferencia de los PDF forms en los que las fuentes están incrustadas dentro del formulario). Para que la versión HTML del formulario se represente como se espera, asegúrese de que las fuentes especificadas en el XDP estén disponibles en el servidor y en el equipo cliente. Si las fuentes requeridas no están disponibles en el servidor, se utilizan fuentes de reserva. Además, si utiliza fuentes en la plantilla de formulario que no están disponibles en el dispositivo cliente, se utilizarán las fuentes predeterminadas del explorador para procesar el texto.
+   Respuesta: HTML5 Forms no permite incrustar fuentes (a diferencia de los PDF forms donde las fuentes están incrustadas dentro del formulario). Para que la versión HTML de un formulario se represente según lo esperado, asegúrese de que las fuentes estén disponibles en el repositorio CRX (repositorio de contenido AEM) de su servidor AEM Forms y en el equipo que tenga instalado AEM Designer. Cuando las fuentes no están disponibles en el repositorio CRX del servidor AEM Forms o en la ubicación donde está instalado AEM Designer, el formulario se procesa con fuentes de reserva.
 
 1. ¿Se admiten los atributos vAlign y hAlign en los formularios HTML?
 
