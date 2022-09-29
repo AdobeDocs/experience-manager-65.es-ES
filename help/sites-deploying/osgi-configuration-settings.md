@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
+source-git-commit: 71c318e59f39b091f52650853be2d472354c2f1c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3474'
 ht-degree: 0%
 
 ---
@@ -243,11 +243,6 @@ Si un valor de ruta configurado termina con una barra diagonal, se buscará en t
 * **Usuario de secuencia de comandos** : esta propiedad opcional puede especificar la cuenta de usuario del repositorio que se utiliza para leer los scripts. Si no se especifica ninguna cuenta, la variable `admin` se utiliza de forma predeterminada.
 
 * **Extensiones predeterminadas** La lista de extensiones para la que se utilizará el comportamiento predeterminado. Esto significa que el último segmento de ruta del tipo de recurso se puede usar como nombre de secuencia de comandos.
-
-**Ayudante de fuentes GFX de Day Commons** Al procesar gráficos, puede utilizar DrawText para incrustar texto. Para ello, también puede instalar sus propias fuentes:
-
-* Defina el **Ruta de fuente** para buscar fuentes específicas del proyecto.
-Por ejemplo, `/apps/myapp/fonts`.
 
 **Configuración proxy de componentes HTTP de Apache** Configuración proxy para todo el código que utiliza el cliente HTTP de Apache, utilizado cuando se realiza un HTTP; por ejemplo, en la replicación.
 
