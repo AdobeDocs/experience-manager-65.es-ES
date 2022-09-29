@@ -12,9 +12,9 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: f39102c938107b8ce01325499f29f00e287b5bcc
+source-git-commit: a90ea57142110ebd11a8a9580c29df1698b8dce1
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '2005'
 ht-degree: 0%
 
 ---
@@ -103,11 +103,11 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
 
 1. ¿Se admiten los atributos vAlign y hAlign en los formularios HTML?
 
-   Sí, se admiten los atributos vAlign y hAlign . El atributo vAlign no es compatible con Internet Explorer ni con los campos multilínea.
+   Respuesta: Sí, se admiten los atributos vAlign y hAlign . El atributo vAlign no es compatible con Internet Explorer ni con los campos multilínea.
 
 1. ¿Los formularios HTML5 admiten caracteres hebreos?
 
-   Los formularios de HTML5 admiten caracteres hebreos en todos los navegadores excepto en Microsoft Internet Explorer.
+   Respuesta: Los formularios de HTML5 admiten caracteres hebreos en todos los navegadores excepto en Microsoft Internet Explorer.
 
 1. ¿Los formularios HTML5 tienen limitaciones en los campos numéricos?
 
@@ -115,7 +115,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
 
 1. ¿Por qué los formularios HTML son más grandes que los PDF forms?
 
-   Para procesar un XDP en un formulario de HTML, se requieren muchas estructuras de datos intermedias y objetos como dom de formulario, dom de datos y dom de presentación.
+   Respuesta: Para procesar un XDP en un formulario de HTML, se requieren muchas estructuras de datos intermedias y objetos como dom de formulario, dom de datos y dom de presentación.
 
    Para los PDF forms, Adobe Acrobat tiene un motor XTG integrado para crear objetos y estructuras de datos intermedias. Acrobat también se encarga del diseño y las secuencias de comandos.
 
@@ -142,12 +142,13 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
 
 1. ¿Cuál es el orden de lectura de la información del objeto y el rótulo para los lectores de pantalla?
 
+   Respuesta:
    * Cuando están presentes tanto el rótulo como la información del objeto, se lee el único rótulo. Si el rótulo no está disponible, se lee la información del objeto. También puede especificar la prioridad para la lectura en un XDP mediante el diseñador de formularios
    * Cuando pasa el ratón por encima de un elemento, se muestra la información del objeto. Si la información del objeto no está disponible, se muestra texto de voz. Si el texto de voz no está disponible, se muestra el nombre del campo.
 
 1. Cuando pasa el ratón por encima de un campo, se muestra la información del objeto. ¿Cómo desactivarlo?
 
-   Para desactivar la información del objeto al pasar el cursor por encima, seleccione ninguna en el panel de accesibilidad de Designer.
+   Respuesta: Para desactivar la información del objeto al pasar el cursor por encima, seleccione ninguna en el panel de accesibilidad de Designer.
 
 1. En Designer, un usuario puede configurar las propiedades de aspecto personalizadas del botón de radio y las casillas de verificación. ¿Los formularios HTML5 tienen en cuenta estas propiedades de aspecto personalizadas al procesar los formularios?
 
@@ -155,7 +156,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
 
 1. Cuando se abre un formulario de HTML5 en un explorador compatible, el borde de los campos colocados de forma adyacente no se alinea correctamente o los subformularios aparecen superpuestos. Cuando se obtiene una vista previa del mismo formulario HTML5 en Forms Designer, los campos y la presentación no aparecen mal alineados y los subformularios aparecen en la posición correcta. ¿Cómo solucionar el problema?
 
-   Cuando un subformulario está configurado con una posición variable del contenido y el subformulario tiene un elemento de borde oculto, el borde de los campos colocados adyacentemente no se alinea correctamente o los subformularios parecen superpuestos. Para resolver el problema, puede quitar o comentar el objeto oculto &lt;border> elementos del XDP correspondiente. Por ejemplo: &lt;border> El elemento está marcado como comentario:
+   Respuesta: Cuando un subformulario está configurado con una posición variable del contenido y el subformulario tiene un elemento de borde oculto, el borde de los campos colocados adyacentemente no se alinea correctamente o los subformularios parecen superpuestos. Para resolver el problema, puede quitar o comentar el objeto oculto &lt;border> elementos del XDP correspondiente. Por ejemplo: &lt;border> El elemento está marcado como comentario:
 
    ```xml
                <!--<border>
@@ -166,7 +167,7 @@ Hay algunas preguntas más frecuentes (FAQ) sobre la presentación, la compatibi
 
 1. ¿Por qué los lectores de pantalla no funcionan correctamente con el objeto de campo de fecha y hora?
 
-   Los lectores de pantalla no admiten campos de fecha y hora. Sin embargo, puede introducir manualmente la fecha y la hora en el campo para que el lector de pantalla lo lea. Utilice información del objeto o texto del lector de pantalla para indicar al usuario que seleccione manualmente la fecha y la hora del campo.
+   Respuesta: Los lectores de pantalla no admiten campos de fecha y hora. Sin embargo, puede introducir manualmente la fecha y la hora en el campo para que el lector de pantalla lo lea. Utilice información del objeto o texto del lector de pantalla para indicar al usuario que seleccione manualmente la fecha y la hora del campo.
 
 1. ¿Los formularios HTML5 admiten patrones de visualización para campos flotantes?
 
@@ -192,12 +193,13 @@ Respuesta: El campo Date acepta el formato ISO, AAAA-MM-DD. Si especifica una fe
 
 1. ¿Existe alguna convención de nombres recomendada y hay alguna palabra clave reservada que se pueda evitar?
 
+   Respuesta:
    * En AEM Forms Designer, se recomienda no comenzar el nombre de un objeto (como un subformulario o un campo de texto) con un guión bajo (_). Para utilizar guiones bajos al principio del nombre, agregue un prefijo después del guión bajo._&lt;prefix>&lt;objectname>.
    * Todas las API de formularios de HTML5 son palabras clave reservadas. Para las API y funciones personalizadas, utilice un nombre que no sea idéntico al de [API de HTML5 forms](/help/forms/using/scripting-support.md).
 
 1. ¿Los formularios HTML5 admiten campos flotantes?
 
-   Sí, HTML5 Forms admite campos flotantes. Para habilitar los campos flotantes, agregue la siguiente propiedad al perfil de renderización:
+   Respuesta: Sí, HTML5 Forms admite campos flotantes. Para habilitar los campos flotantes, agregue la siguiente propiedad al perfil de renderización:
 
    >[!NOTE]
    >
@@ -213,7 +215,7 @@ Respuesta: El campo Date acepta el formato ISO, AAAA-MM-DD. Si especifica una fe
 
 1. ¿Los formularios de HTML5 ejecutan la secuencia de comandos de inicialización y el suceso de formulario listo varias veces?
 
-   Sí, las secuencias de comandos de inicialización y los sucesos preparados para el formulario se ejecutan varias veces, al menos una vez en el servidor y otra en el lado del cliente. Se recomienda escribir secuencias de comandos como sucesos initialize o form:ready basados en alguna lógica empresarial (datos de formulario o campo) para que la acción se realice en función del estado de los datos y del potencial idempotente (si los datos son iguales).
+   Respuesta: Sí, las secuencias de comandos de inicialización y los sucesos preparados para el formulario se ejecutan varias veces, al menos una vez en el servidor y otra en el lado del cliente. Se recomienda escribir secuencias de comandos como sucesos initialize o form:ready basados en alguna lógica empresarial (datos de formulario o campo) para que la acción se realice en función del estado de los datos y del potencial idempotente (si los datos son iguales).
 
 ### Diseño de XDP {#designing-xdp}
 
