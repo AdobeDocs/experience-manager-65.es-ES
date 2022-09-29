@@ -2,10 +2,10 @@
 title: Notas de la versión de contenido y comercio de AEM 2022
 description: Notas de la versión de contenido y comercio de AEM 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 6c5c37c1c365e1f03ea9b5c935adf63a33faba5d
+source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 45%
+source-wordcount: '812'
+ht-degree: 40%
 
 ---
 
@@ -20,6 +20,21 @@ Revise los requisitos mínimos del sistema en la siguiente tabla para la versió
 | Complemento CIF | Mínimo: AEM 6.5.7, Magento 2.3.5 Esquemas de GraphQL |
 | Componentes principales de CIF | [Requisitos del sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Tipo de archivo del proyecto AEM | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Fecha de versión: Septiembre de 2022
+
+| Componente | Versión | Detalles |
+|:-------|:-----:|---------------------:|
+| Complemento CIF | 2022.09.20.00 | [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.09.20.00.zip) |
+| Componentes principales de CIF | 2.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.11.0) |
+| Sitio de referencia de Venia del CIF | 2022.09.02 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.09.02) |
+
+### Novedades {#what-is-new-september}
+
+* Los autores pueden enriquecer dinámicamente listas de productos con fragmentos de experiencias (ejemplo: Colocar banner entre listas de productos)
+* El componente de lista admite páginas de productos o categorías asociadas para mostrar de forma dinámica páginas relacionadas
+* Compatibilidad con los componentes de Peregrine 12.5
+* Compatibilidad con la carga de precios del lado del cliente en teaser y carrusel de productos
 
 ## Fecha de versión: Julio de 2022
 
