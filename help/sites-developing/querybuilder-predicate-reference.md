@@ -10,19 +10,31 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: f97eb2e028263016131b0c86be5a0508ae4def9b
 workflow-type: tm+mt
-source-wordcount: '2310'
+source-wordcount: '2371'
 ht-degree: 3%
 
 ---
 
 # Referencia de predicados del generador de consultas{#query-builder-predicate-reference}
 
+>[!CAUTION]
+>
+>La información de esta página no es exhaustiva.
+>
+>Para obtener información completa, consulte la lista de **Predicados disponibles** en la consola de Query Builder Debugger; por ejemplo, en:
+>* [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+>
+>Por ejemplo, consulte:
+>
+>* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+
+
 ## General {#general}
 
 * [root](#root)
-* [grupo](#group)
+* [grupo ](#group)
 * [orderby](#orderby)
 
 ## Predicados {#predicates}
@@ -48,23 +60,23 @@ ht-degree: 3%
 * [etiqueta](/help/sites-developing/querybuilder-predicate-reference.md#tag)
 * [tagid](/help/sites-developing/querybuilder-predicate-reference.md#tagid)
 * [tagsearch](/help/sites-developing/querybuilder-predicate-reference.md#tagsearch)
-* [tipo](/help/sites-developing/querybuilder-predicate-reference.md#type)
+* [type](/help/sites-developing/querybuilder-predicate-reference.md#type)
 
 ### boolproperty {#boolproperty}
 
 Coincide con las propiedades BOOLEAN de JCR. Solo acepta los valores &quot; `true`&quot; y &quot; `false`&quot;. En el caso de &quot; `false`&quot;, coincidirá si la propiedad tiene el valor &quot; `false`&quot; o si no existe en absoluto. Esto puede resultar útil para comprobar los indicadores booleanos que solo se establecen cuando están activados.
 
-El parámetro heredado &quot; `operation`&quot; no tiene significado.
+El &quot; heredado `operation`&quot; no tiene significado.
 
-Admite la extracción de facetas. Proporcionará bloques para cada valor `true` o `false`, pero solo para las propiedades existentes.
+Admite la extracción de facetas. Proporcionará bloques para cada `true` o `false` , pero solo para propiedades existentes.
 
 #### Propiedades {#properties}
 
-* ****
-boolpropertyrelativamente path to property, por ejemplo 
+* **boolproperty**
+ruta relativa a la propiedad, por ejemplo 
 `myFeatureEnabled` o `jcr:content/myFeatureEnabled`
 
-* ****
+* **value**
 valor para comprobar la propiedad, &quot; 
 `true`&quot; o &quot; `false`&quot;
 
@@ -78,8 +90,8 @@ No admite la extracción de facetas.
 
 #### Propiedades {#properties-1}
 
-* ****
-contentfragmentSe puede utilizar con cualquier valor para comprobar si hay fragmentos de contenido.
+* **contentfragment**
+Se puede utilizar con cualquier valor para comprobar si hay fragmentos de contenido.
 
 ### dateComparison {#datecomparison}
 
@@ -99,12 +111,11 @@ Se trata de un predicado de solo filtrado y no puede aprovechar un índice de b�
 
 * **operation**
 
-   &quot; `equals`&quot; para la coincidencia exacta, &quot; `!=`&quot; para la comparación de desigualdad, &quot; `greater`&quot; para la propiedad1 buena que la propiedad2, &quot; `>=`&quot; para la propiedad1 buena o igual a la propiedad2. El valor predeterminado es &quot; `equals`&quot;.
+   &quot; `equals`&quot; para coincidencia exacta, &quot; `!=`&quot; para la comparación de desigualdad, &quot; `greater`&quot; para la propiedad1 buena que la propiedad2, &quot; `>=`&quot; para la propiedad1 buena o igual a la propiedad2. El valor predeterminado es &quot; `equals`&quot;.
 
 ### daterange {#daterange}
 
-Coincide con las propiedades de FECHA JCR con un intervalo de fecha y hora. Utiliza la norma ISO8601
-formato para fechas y horas ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) y también permite representaciones parciales, como `YYYY-MM-DD`. Alternativamente, la marca de tiempo se puede proporcionar como número de milisegundos desde 1970 en la zona horaria UTC, el formato de tiempo unix.
+Coincide con las propiedades de FECHA JCR con un intervalo de fecha y hora. Utiliza el formato ISO8601 para fechas y horas ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) y permite también representaciones parciales, como `YYYY-MM-DD`. Alternativamente, la marca de tiempo se puede proporcionar como número de milisegundos desde 1970 en la zona horaria UTC, el formato de tiempo unix.
 
 Puede buscar cualquier cosa entre dos marcas de tiempo, cualquier cosa más reciente o anterior que una fecha determinada, y también elegir entre intervalos abiertos e inclusivos.
 
@@ -116,7 +127,7 @@ No admite el filtrado.
 
 * **propiedad**
 
-   ruta relativa a una propiedad `DATE`, por ejemplo `jcr:lastModified`
+   ruta relativa a un `DATE` propiedad, por ejemplo `jcr:lastModified`
 
 * **lowerBound**
 
@@ -124,7 +135,7 @@ No admite el filtrado.
 
 * **lowerOperation**
 
-   &quot; `>`&quot; (más reciente) o &quot; `>=`&quot; (más reciente o más reciente), se aplica a `lowerBound`. El valor predeterminado es &quot; `>`&quot;.
+   &quot; `>`&quot; (más reciente) o &quot; `>=`&quot; (en o más reciente), se aplica al `lowerBound`. El valor predeterminado es &quot; `>`&quot;.
 
 * **upperBound**
 
@@ -132,7 +143,7 @@ No admite el filtrado.
 
 * **upperOperation**
 
-   &quot; `<`&quot; (anterior) o &quot; `<=`&quot; (anterior o anterior), se aplica a `upperBound`. El valor predeterminado es &quot; `<`&quot;.
+   &quot; `<`&quot; (más antiguo) o &quot; `<=`&quot; (en o más años), se aplica al `upperBound`. El valor predeterminado es &quot; `<`&quot;.
 
 * **timeZone**
 
@@ -170,9 +181,9 @@ No admite la extracción de facetas.
 
    la ruta relativa para buscar en la propiedad o subnodo. Esta propiedad es opcional.
 
-### grupo {#group}
+### grupo  {#group}
 
-Permite crear condiciones anidadas. Los grupos pueden contener grupos anidados. Todo en una consulta querybuilder está implícitamente en un grupo raíz, que también puede tener parámetros `p.or` y `p.not`.
+Permite crear condiciones anidadas. Los grupos pueden contener grupos anidados. Todo en una consulta querybuilder está implícito en un grupo raíz, que puede tener `p.or` y `p.not` también.
 
 Ejemplo para hacer coincidir una de las dos propiedades con un valor:
 
@@ -184,7 +195,7 @@ group.2_property=navTitle
 group.2_property.value=My Page
 ```
 
-Conceptualmente es `(1_property` O `2_property)`.
+Conceptualmente `(1_property` O `2_property)`.
 
 Ejemplo para grupos anidados:
 
@@ -197,19 +208,19 @@ group.2_group.path=/content/dam/geometrixx
 group.2_group.type=dam:Asset
 ```
 
-Esto busca el término &quot;**Administración**&quot; dentro de las páginas en `/content/geometrixx/en` o en los recursos en `/content/dam/geometrixx`.
+Esto busca el término &quot;**Administración**&quot; dentro de las páginas en `/content/geometrixx/en` o en activos en `/content/dam/geometrixx`.
 
-Conceptualmente es `fulltext AND ( (path AND type) OR (path AND type) )`. Tenga en cuenta que estas uniones O necesitan buenos índices para el rendimiento.
+Conceptualmente `fulltext AND ( (path AND type) OR (path AND type) )`. Tenga en cuenta que estas uniones O necesitan buenos índices para el rendimiento.
 
 #### Propiedades {#properties-6}
 
 * **p.o**
 
-   si se establece en &quot; `true`&quot;, solo debe coincidir un predicado del grupo. El valor predeterminado es &quot; `false`&quot;, lo que significa que todas deben coincidir
+   si está configurado como &quot; `true`&quot;, solo debe coincidir un predicado del grupo. El valor predeterminado es &quot; `false`&quot;, lo que significa que todos deben coincidir
 
 * **p.not**
 
-   si se establece en &quot; `true`&quot;, anula el grupo (el valor predeterminado es &quot; `false`&quot;)
+   si está configurado como &quot; `true`&quot;, anula al grupo (el valor predeterminado es &quot; `false`&quot;)
 
 * **&lt;predicate>**
 
@@ -221,7 +232,7 @@ Conceptualmente es `fulltext AND ( (path AND type) OR (path AND type) )`. Tenga 
 
 ### hasPermission {#haspermission}
 
-Restringe el resultado a elementos en los que la sesión actual tiene los [privilegios JCR especificados.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Restringe el resultado a elementos en los que la sesión actual tiene el valor especificado [Privilegios JCR.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Se trata de un predicado de solo filtrado y no puede aprovechar un índice de búsqueda. No admite la extracción de facetas.
 
@@ -247,7 +258,7 @@ Admite la extracción de facetas. Proporcionará bloques para cada código de id
 
 ### mainasset {#mainasset}
 
-Comprueba si un nodo es un recurso principal DAM y no un subrecurso. Básicamente se trata de todos los nodos que no están dentro de un nodo de &quot;subactivos&quot;. Tenga en cuenta que esto no comprueba el tipo de nodo `dam:Asset`. Para utilizar este predicado, simplemente configure &quot; `mainasset=true`&quot; o &quot; `mainasset=false`&quot;, no hay más propiedades.
+Comprueba si un nodo es un recurso principal DAM y no un subrecurso. Básicamente se trata de todos los nodos que no están dentro de un nodo de &quot;subactivos&quot;. Tenga en cuenta que esto no comprueba la existencia de `dam:Asset` tipo de nodo. Para usar este predicado, simplemente configure &quot; `mainasset=true`&quot; o &quot; `mainasset=false`&quot;, no hay más propiedades.
 
 Se trata de un predicado de solo filtrado y no puede aprovechar un índice de búsqueda.
 
@@ -257,11 +268,11 @@ Admite la extracción de facetas. Proporcionará 2 bloques para los recursos pri
 
 * **mainasset**
 
-   booleano, &quot; `true`&quot; para recursos principales, &quot; `false`&quot; para subrecursos
+   booleano, &quot; `true`&quot; para los activos principales, &quot; `false`&quot; para los subactivos
 
 ### memberOf {#memberof}
 
-Busca elementos que son miembros de una [colección de recursos de sling](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
+Busca elementos que son miembros de un [colección de recursos de sling](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
 Se trata de un predicado de solo filtrado y no puede aprovechar un índice de búsqueda. No admite la extracción de facetas.
 
@@ -281,11 +292,11 @@ Admite la extracción de facetas. Proporcionará bloques para cada nombre de nod
 
 * **nodename**
 
-   patrón de nombre de nodo que permite comodines: `*` = cualquier carácter o no, `?` = cualquier carácter, `[abc]` = solo caracteres entre corchetes
+   patrón de nombre de nodo que permite comodines: `*` = cualquier carácter o no, `?` = cualquier char, `[abc]` = solo caracteres entre corchetes
 
 ### notexpired {#notexpired}
 
-Coincide con elementos comprobando si una propiedad JCR DATE es buena o igual a la hora del servidor actual. Esto se puede usar para comprobar una propiedad de fecha de tipo &quot; `expiresAt`&quot; y limitar solo a las que aún no han caducado ( `notexpired=true`) o que ya han caducado ( `notexpired=false`).
+Coincide con elementos comprobando si una propiedad JCR DATE es buena o igual a la hora del servidor actual. Se puede utilizar para comprobar un &quot; `expiresAt`&quot; como la propiedad date y limite solo a los que aún no han caducado ( `notexpired=true`) o que ya han caducado ( `notexpired=false`).
 
 No admite el filtrado.
 
@@ -295,11 +306,11 @@ Admite la extracción de facetas del mismo modo que el predicado de intervalo de
 
 * **notexpired**
 
-   booleano, &quot; `true`&quot; para aún no caducado (fecha futura o igual), &quot; `false`&quot; para caducado (fecha anterior) (obligatorio)
+   booleano, &quot; `true`&quot; para no caducar todavía (fecha futura o igual), &quot; `false`&quot; para caducado (fecha en el pasado) (obligatorio)
 
 * **propiedad**
 
-   ruta relativa a la propiedad `DATE` para comprobar (obligatorio)
+   ruta relativa al `DATE` propiedad que se va a comprobar (obligatorio)
 
 ### orderby {#orderby}
 
@@ -309,15 +320,15 @@ Permite ordenar el resultado. Si se requiere ordenar por varias propiedades, est
 
 * **orderby**
 
-   o bien el nombre de la propiedad JCR indicado por un @ inicial, por ejemplo `@jcr:lastModified` o `@jcr:content/jcr:title`, u otro predicado en la consulta, por ejemplo `2_property`, en el que ordenar
+   o bien el nombre de la propiedad JCR indicado por un @ inicial, por ejemplo `@jcr:lastModified` o `@jcr:content/jcr:title`, u otro predicado de la consulta, por ejemplo `2_property`, sobre el que ordenar
 
 * **ordenar**
 
-   dirección de clasificación, ya sea &quot; `desc`&quot; para descendente o &quot; `asc`&quot; para ascendente (predeterminado)
+   dirección de clasificación, ya sea &quot; `desc`&quot; para descendiente o &quot; `asc`&quot; para ascendente (predeterminado)
 
 * **case**
 
-   si se establece en &quot; `ignore`&quot;, la clasificación no distingue entre mayúsculas y minúsculas, lo que significa que &quot;a&quot; viene antes que &quot;B&quot;; si está vacío o no se tiene en cuenta, la ordenación distingue entre mayúsculas y minúsculas, lo que significa que &quot;B&quot; viene antes que &quot;a&quot;.
+   si está configurado como &quot; `ignore`&quot; hará que la clasificación no distinga mayúsculas de minúsculas, lo que significa que &quot;a&quot; viene antes que &quot;B&quot;; si está vacío o no se tiene en cuenta, la ordenación distingue entre mayúsculas y minúsculas, lo que significa que &quot;B&quot; viene antes que &quot;a&quot;.
 
 ### ruta {#path}
 
@@ -329,15 +340,15 @@ No admite la extracción de facetas.
 
 * **path**
 
-   patrón de ruta; dependiendo de lo exacto, el subárbol completo coincidirá (como anexar `//*` en xpath, pero tenga en cuenta que esto no incluye la ruta base) (exacto=false, predeterminado) o solo coincidirá una ruta exacta, que puede incluir caracteres comodín ( `*`); si se establece self, se buscará en todo el subárbol, incluido el nodo base
+   patrón de ruta; según el valor exacto, el subárbol completo coincidirá (como anexar `//*` en xpath, pero tenga en cuenta que esto no incluye la ruta base) (exacto=false, predeterminado) o solo coincide una ruta exacta, que puede incluir caracteres comodín ( `*`); si se establece self, se buscará en todo el subárbol, incluido el nodo base
 
 * **exacto**
 
-   si `exact` es true/on, la ruta exacta debe coincidir, pero puede contener comodines simples ( `*`), que coincidan con nombres, pero no &quot; `/`&quot;; si es false (predeterminado), se incluyen todos los descendientes (opcional)
+   if `exact` tiene el valor true/on, la ruta exacta debe coincidir, pero puede contener caracteres comodín simples ( `*`), que coinciden con los nombres, pero no con &quot; `/`&quot;; si es false (predeterminado), se incluyen todos los descendientes (opcional)
 
 * **plano**
 
-   busca solo los elementos secundarios directos (como anexar &quot; `/*`&quot; en xpath) (solo se usa si &quot; `exact`&quot; no es verdadero, opcional)
+   busca solo los elementos secundarios directos (como anexar &quot; `/*`&quot; en xpath) (solo se usa si &#39; `exact`&#39; no es verdadero, opcional)
 
 * **self**
 
@@ -355,13 +366,13 @@ Admite la extracción de facetas. Proporcionará bloques para cada valor de prop
 
    ruta relativa a la propiedad, por ejemplo `jcr:title`
 
-* **seleccionado**
+* **value**
 
    valor para comprobar la propiedad; sigue al tipo de propiedad JCR a las conversiones de cadena
 
 * **N_value**
 
-   utilice `1_value`, `2_value`, ... para comprobar si hay varios valores (combinados con `OR` de forma predeterminada, con `AND` si y=true) (desde 5.3)
+   use `1_value`, `2_value`, ... para comprobar si hay varios valores (combinados con `OR` de forma predeterminada, con `AND` if and=true) (desde 5.3)
 
 * **y**
 
@@ -369,7 +380,7 @@ Admite la extracción de facetas. Proporcionará bloques para cada valor de prop
 
 * **operation**
 
-   &quot;`equals`&quot; para coincidencia exacta (predeterminada), &quot; `unequals`&quot; para comparación de desigualdad, &quot; `like`&quot; para usar la función xpath `jcr:like` (opcional), &quot; `not`&quot; para no coincidir (p. ej. &quot;`not(@prop)`&quot; en xpath, se ignorará el parámetro de valor) o &quot; `exists`&quot; para la comprobación de existencia (el valor puede ser true - la propiedad debe existir, el valor predeterminado - o false - igual que &quot; `not`&quot;)
+   &quot;`equals`&quot; para coincidencia exacta (predeterminado), &quot; `unequals`&quot; para la comparación de desigualdad, &quot; `like`&quot; para usar la variable `jcr:like` función xpath (opcional), &quot; `not`&quot; sin coincidencia (p. ej. &quot;`not(@prop)`&quot; en xpath, se ignorará el valor param) o &quot; `exists`&quot; para la comprobación de existencia (el valor puede ser true - la propiedad debe existir, el valor predeterminado - o false - igual que &quot; `not`&quot;)
 
 * **depth**
 
@@ -395,7 +406,7 @@ No admite la extracción de facetas.
 
 * **lowerOperation**
 
-   &quot; `>`&quot; (predeterminado) o &quot; `>=`&quot;, se aplica a `lowerValue`
+   &quot; `>`&quot; (predeterminado) o &quot; `>=`&quot;, se aplica al `lowerValue`
 
 * **upperBound**
 
@@ -403,7 +414,7 @@ No admite la extracción de facetas.
 
 * **upperOperation**
 
-   &quot; `<`&quot; (predeterminado) o &quot; `<=`&quot;, se aplica a `lowerValue`
+   &quot; `<`&quot; (predeterminado) o &quot; `<=`&quot;, se aplica al `lowerValue`
 
 * **decimal**
 
@@ -411,15 +422,15 @@ No admite la extracción de facetas.
 
 ### relativedaterange {#relativedaterange}
 
-Coincide con las propiedades `JCR DATE` con un intervalo de fecha y hora mediante desplazamientos de tiempo relativos a la hora actual del servidor. Puede especificar `lowerBound` y `upperBound` utilizando un valor de milisegundos o la sintaxis de barras `1s 2m 3h 4d 5w 6M 7y` (un segundo, dos minutos, tres horas, cuatro días, cinco semanas, seis meses, siete años). Prefijo con &quot; `-`&quot; para indicar un desplazamiento negativo antes de la hora actual. Si solo especifica `lowerBound` o `upperBound`, el otro tendrá el valor predeterminado 0, es decir, la hora actual.
+Coincide `JCR DATE` propiedades frente a un intervalo de fecha y hora utilizando desplazamientos de tiempo relativos a la hora actual del servidor. Puede especificar `lowerBound` y `upperBound` uso de un valor milisegundo o de la sintaxis bugzilla `1s 2m 3h 4d 5w 6M 7y` (un segundo, dos minutos, tres horas, cuatro días, cinco semanas, seis meses, siete años). Prefijo con &quot; `-`&quot; para indicar un desplazamiento negativo antes de la hora actual. Si solo especifica `lowerBound` o `upperBound`, el otro tendrá el valor predeterminado 0, es decir, la hora actual.
 
 Por ejemplo:
 
-* `upperBound=1h` (y no  `lowerBound`) seleccionaría cualquier cosa en la siguiente hora
-* `lowerBound=-1d` (y no  `upperBound`) seleccionaría nada en las últimas 24 horas
-* `lowerBound=-6M` y  `upperBound=-3M` seleccionaría cualquier cosa de 6 meses a 3 meses de edad
-* `lowerBound=-1500` y  `upperBound=5500` seleccionaría cualquier cosa entre 1500 milisegundos en el pasado y 5500 milisegundos en el futuro
-* `lowerBound=1d` y  `upperBound=2d` seleccionaría cualquier cosa en el día siguiente a mañana
+* `upperBound=1h` (y no `lowerBound`) seleccionaría cualquier cosa en la siguiente hora
+* `lowerBound=-1d` (y no `upperBound`) seleccionaría cualquier cosa en las últimas 24 horas
+* `lowerBound=-6M` y `upperBound=-3M` seleccionaría cualquier cosa de 6 meses a 3 meses de edad
+* `lowerBound=-1500` y `upperBound=5500` seleccionaría cualquier cosa entre 1500 milisegundos en el pasado y 5500 milisegundos en el futuro
+* `lowerBound=1d` y `upperBound=2d` seleccionaría cualquier cosa en el día siguiente a mañana
 
 Tenga en cuenta que no toma años bisiestos en consideración y que todos los meses son 30 días.
 
@@ -431,11 +442,11 @@ Admite la extracción de facetas del mismo modo que el predicado de intervalo de
 
 * **upperBound**
 
-   límite de fecha superior en milisegundos o `1s 2m 3h 4d 5w 6M 7y` (un segundo, dos minutos, tres horas, cuatro días, cinco semanas, seis meses, siete años) en relación con el tiempo del servidor actual, utilice &quot;-&quot; para el desplazamiento negativo
+   límite de fecha superior en milisegundos o `1s 2m 3h 4d 5w 6M 7y` (un segundo, dos minutos, tres horas, cuatro días, cinco semanas, seis meses, siete años) en relación con la hora del servidor actual, utilice &quot;-&quot; para obtener una compensación negativa
 
 * **lowerBound**
 
-   fecha menor enlazada en milisegundos o `1s 2m 3h 4d 5w 6M 7y` (un segundo, dos minutos, tres horas, cuatro días, cinco semanas, seis meses, siete años) en relación con el tiempo actual del servidor, utilice &quot;-&quot; para el desplazamiento negativo
+   límite de fecha inferior en milisegundos o `1s 2m 3h 4d 5w 6M 7y` (un segundo, dos minutos, tres horas, cuatro días, cinco semanas, seis meses, siete años) en relación con la hora del servidor actual, utilice &quot;-&quot; para obtener una compensación negativa
 
 ### root {#root}
 
@@ -455,11 +466,11 @@ El nombre &quot;root&quot; nunca se utiliza en una consulta, está implícito.
 
 * **p.supongoTotal**
 
-   recomendado: evite calcular el total del resultado completo, que puede resultar costoso; un número que indica el total máximo que se va a contar (por ejemplo, 1000, un número que proporciona a los usuarios suficientes comentarios sobre el tamaño aproximado y los números exactos para resultados más pequeños) o &quot; `true`&quot; para contar solo hasta el mínimo necesario `p.offset` + `p.limit`
+   recomendado: evite calcular el total del resultado completo, que puede resultar costoso; o bien un número que indica el total máximo que se va a contar (por ejemplo, 1000, un número que proporciona a los usuarios suficientes comentarios sobre el tamaño aproximado y los números exactos para obtener resultados más pequeños) o &quot; `true`&quot; para contar solamente hasta el mínimo necesario `p.offset` + `p.limit`
 
 * **p.excerpt**
 
-   si se configura como &quot; `true`&quot;, incluya el extracto de texto completo en el resultado
+   si está configurado como &quot; `true`&quot;, incluir extracto de texto completo en el resultado
 
 * **p.hits**
 
@@ -467,15 +478,15 @@ El nombre &quot;root&quot; nunca se utiliza en una consulta, está implícito.
 
    * **simple**:
 
-      elementos mínimos como `path`, `title`, `lastmodified`, `excerpt` (si están configurados)
+      elementos mínimos como `path`, `title`, `lastmodified`, `excerpt` (si está configurado)
 
    * **completa**:
 
-      renderización JSON de sling del nodo, con `jcr:path` indicando la ruta de la visita: de forma predeterminada, solo enumera las propiedades directas del nodo, incluya un árbol más profundo con `p.nodedepth=N`, con 0 que significa todo el subárbol infinito; agregue `p.acls=true` para incluir los permisos JCR de la sesión actual en el elemento de resultado dado (asignaciones: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
+      renderización JSON de sling del nodo, con `jcr:path` indicando la ruta de la visita: de forma predeterminada, solo enumera las propiedades directas del nodo, incluya un árbol más profundo con `p.nodedepth=N`, con 0 que significa todo el subárbol infinito; add `p.acls=true` para incluir los permisos JCR de la sesión actual en el elemento de resultado dado (asignaciones: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
 
    * **selectivo**:
 
-      solo las propiedades especificadas en `p.properties`, que es una lista de rutas relativas separados por espacios (utilice &quot;+&quot; en las direcciones URL); si la ruta relativa tiene una profundidad > 1, se representarán como objetos secundarios; la propiedad especial jcr:path incluye la ruta de la visita
+      solo las propiedades especificadas en `p.properties`, que es una lista de rutas relativas separadas por espacios (utilice &quot;+&quot; en las direcciones URL); si la ruta relativa tiene una profundidad > 1, se representarán como objetos secundarios; la propiedad especial jcr:path incluye la ruta de la visita
 
 ### savedquery {#savedquery}
 
@@ -483,7 +494,7 @@ Incluye todos los predicados de una consulta de querybuilder persistente en la c
 
 Tenga en cuenta que esto no ejecutará una consulta adicional sino que extenderá la consulta actual.
 
-Las consultas se pueden mantener mediante programación utilizando `QueryBuilder#storeQuery()`. El formato puede ser una propiedad String de varias líneas o un nodo `nt:file` que contenga la consulta como archivo de texto en formato de propiedades Java.
+Las consultas se pueden mantener mediante programación mediante `QueryBuilder#storeQuery()`. El formato puede ser una propiedad String de varias líneas o una `nt:file` que contiene la consulta como archivo de texto en formato de propiedades de Java.
 
 No admite la extracción de facetas para los predicados de la consulta guardada.
 
@@ -491,22 +502,22 @@ No admite la extracción de facetas para los predicados de la consulta guardada.
 
 * **savedquery**
 
-   ruta a la consulta guardada (propiedad String o nodo `nt:file`)
+   ruta a la consulta guardada (propiedad String o `nt:file` node)
 
 ### similar {#similar}
 
-Búsqueda por similitudes usando `rep:similar()` de JCR XPath.
+Búsqueda por similitudes usando JCR XPath&#39;s `rep:similar()`.
 
 No admite el filtrado. No admite la extracción de facetas.
 
 #### Propiedades {#properties-20}
 
-* ****
-ruta similar absoluta al nodo para el que encontrar nodos similares
+* **similar**
+ruta absoluta al nodo para el cual encontrar nodos similares
 
-* ****
-ruta relativa de locala a un nodo descendiente o 
-`.` para el nodo actual (opcional, el valor predeterminado es &quot;  `.`&quot;)
+* **local**
+una ruta relativa a un nodo descendiente o 
+`.` para el nodo actual (opcional, el valor predeterminado es &quot; `.`&quot;)
 
 ### etiqueta {#tag}
 
@@ -522,11 +533,11 @@ Admite la extracción de facetas. Proporcionará bloques para cada etiqueta úni
 
 * **N_value**
 
-   utilice `1_value`, `2_value`, ... para buscar varias etiquetas (combinadas con `OR` de forma predeterminada, con `AND` si y=true) (desde 5.6)
+   use `1_value`, `2_value`, ... para comprobar si hay varias etiquetas (combinadas con `OR` de forma predeterminada, con `AND` if and=true) (desde 5.6)
 
 * **propiedad**
 
-   propiedad (o ruta relativa a la propiedad) que se va a ver (predeterminado &quot; `cq:tags`&quot;)
+   propiedad (o ruta relativa a la propiedad) que se va a ver (valor predeterminado) `cq:tags`&quot;)
 
 ### tagid {#tagid}
 
@@ -542,11 +553,11 @@ Admite la extracción de facetas. Proporcionará bloques para cada etiqueta úni
 
 * **N_value**
 
-   utilice `1_value`, `2_value`, ... para comprobar si hay varios identificadores (combinados con `OR` de forma predeterminada, con `AND` si y=true) (desde 5.6)
+   use `1_value`, `2_value`, ... para comprobar si hay varios identificadores (combinados con `OR` de forma predeterminada, con `AND` if and=true) (desde 5.6)
 
 * **propiedad**
 
-   propiedad (o ruta relativa a la propiedad) que se va a ver (predeterminado &quot; `cq:tags`&quot;)
+   propiedad (o ruta relativa a la propiedad) que se va a ver (valor predeterminado) `cq:tags`&quot;)
 
 ### tagsearch {#tagsearch}
 
@@ -562,7 +573,7 @@ No admite la extracción de facetas.
 
 * **propiedad**
 
-   propiedad (o ruta relativa a la propiedad) que se va a ver (predeterminado &quot; `cq:tags`&quot;)
+   propiedad (o ruta relativa a la propiedad) que se va a ver (valor predeterminado) `cq:tags`&quot;)
 
 * **lang**
 
@@ -570,9 +581,9 @@ No admite la extracción de facetas.
 
 * **all**
 
-   (bool) buscar todo el texto completo de la etiqueta, es decir, todos los títulos, descripción, etc. (tiene prioridad sobre &quot;l `ang`&quot;)
+   (bool) buscar todo el texto completo de la etiqueta, es decir, todos los títulos, descripción, etc. (tiene prioridad sobre &quot;l&quot; `ang`&quot;)
 
-### tipo {#type}
+### type {#type}
 
 Restringe los resultados a un tipo de nodo JCR específico, tanto del tipo de nodo principal como del tipo de mezcla. Esto también encontrará subtipos de ese tipo de nodo. Tenga en cuenta que los índices de búsqueda del repositorio deben cubrir los tipos de nodos para una ejecución eficiente.
 
@@ -580,6 +591,6 @@ Admite la extracción de facetas. Proporcionará bloques para cada tipo único e
 
 #### Propiedades {#Properties-2}
 
-* **tipo**
+* **type**
 
    tipo de nodo o nombre de mezcla que se va a buscar, por ejemplo `cq:Page`
