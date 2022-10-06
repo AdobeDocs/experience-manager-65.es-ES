@@ -12,19 +12,19 @@ exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Temas de referencia{#reference-themes}
 
-[](../../forms/using/themes.md) Los temas permiten aplicar estilo a los formularios sin tener conocimientos profundos de CSS. Además del tema predeterminado, puede obtener los siguientes temas instalando el [paquete de complementos de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
+[Temas](../../forms/using/themes.md) permite aplicar estilo a los formularios sin tener conocimientos profundos de CSS. Además del tema predeterminado, puede obtener los temas siguientes instalando el [Paquete de complementos de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
 
 * Beryl
 * Exec
 * Exec-Light
 * Libertad
-* Ultramarino
+* Ultramarine
 * Urbane
 * Estándares de diseño web de EE. UU.
 * Tranquilo

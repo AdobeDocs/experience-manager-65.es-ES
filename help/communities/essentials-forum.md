@@ -1,28 +1,27 @@
 ---
-title: Elementos esenciales del foro
-seo-title: Elementos esenciales del foro
+title: Forum Essentials
+seo-title: Forum Essentials
 description: Información general del foro
-seo-description: Información general del foro
+seo-description: Forum overview
 uuid: 68849582-8742-40be-9e7e-0b574ae38815
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '253'
 ht-degree: 2%
 
 ---
-
 
 # Forum Essentials {#forum-essentials}
 
 Esta página proporciona la información esencial para trabajar con la función de foro.
 
-## Esenciales para el cliente {#essentials-for-client-side}
+## Elementos esenciales para el cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -55,31 +54,30 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 * [Personalizaciones del lado del cliente](client-customize.md)
 
-## Esenciales para servidor {#essentials-for-server-side}
+## Elementos esenciales para el servidor {#essentials-for-server-side}
 
 * [API de foro](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
-* [Extremos de foro](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
+* [Puntos finales de foro](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
 ### Función Foro {#forum-function}
 
-Una estructura de sitio de comunidad que incluye la [función de foro](functions.md#forum-function), incluye un componente `forum` configurado, así como configuraciones que afectan a la moderación, el etiquetado y la traducción.
+Una estructura de sitio de la comunidad que incluye el [Función de foro](functions.md#forum-function), incluye un `forum` , así como la configuración que afecta a la moderación, el etiquetado y la traducción.
 
 ### Acceso a anuncios de foro (UGC) {#accessing-forum-posts-ugc}
 
-La UGC debe moderarse utilizando uno de los métodos estándar de moderación.
+UGC debe moderarse utilizando uno de los métodos estándar de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir de AEM comunidades 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir del AEM 6.1 Comunidades, se utilizará un [tienda común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Almacenamiento Resource Provider Overview](srp.md) : Introducción y uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md)  - Métodos y ejemplos de utilidad SRP.
+* [Información general del proveedor de recursos de almacenamiento](srp.md) - Introducción y descripción general del uso del repositorio.
+* [Elementos esenciales de SRP y UGC](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
-* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.
-
+* [Refactorización de SocialUtils](socialutils.md) - Asignación de métodos de utilidad obsoletos a los métodos de utilidad SRP actuales.

@@ -187,7 +187,7 @@ La función Guardar como borrador no está activada de forma predeterminada. Sig
 
    Para ver la implementación de SPI de muestra, consulte [Ejemplo de implementación de ccrDocumentInstance SPI](#sample-ccrDocumentInstance-spi).
 1. Apertura `http://<hostname>:<port>/ system/console/bundles` y toque **[!UICONTROL Instalar/actualizar]** para cargar el paquete OSGi. Compruebe que el estado del paquete cargado se muestra como **Activo**. Reinicie el servidor si el estado del paquete no se muestra como **Activo**.
-1. Ir a `https://'[server]:[port]'/system/console/configMgr`.
+1. Vaya a `https://'[server]:[port]'/system/console/configMgr`.
 1. Toque **[!UICONTROL Crear configuración de correspondencia]**.
 1. Select **[!UICONTROL Habilitar Guardar usando CCRDocumentInstanceService]** y toque **[!UICONTROL Guardar]**.
 

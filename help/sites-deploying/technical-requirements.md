@@ -9,7 +9,7 @@ exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 source-git-commit: 9a74a92262a1ee8dd651965b3a770c4c843f7980
 workflow-type: tm+mt
 source-wordcount: '3452'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -118,7 +118,7 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 | **Sistema de archivos con almacén de datos** `[1]` | Binarios | A: Admitido |
 | Almacenar binarios en archivos TAR en el sistema de archivos `[1]` | Binarios | Z: No compatible con la producción |
 | Amazon S3 | Binarios | A: Admitido |
-| Almacenamiento de Microsoft Azure Blob | Binarios | A: Admitido |
+| Almacenamiento del Blob de Microsoft Azure | Binarios | A: Admitido |
 | MongoDB Enterprise 4.2 | Repositorio | A: Admitido `[2, 3, 4]` |
 | MongoDB Enterprise 4.0 | Repositorio | Z: No admitido |
 | MongoDB Enterprise 3.6 | Repositorio | Z: No admitido |
@@ -506,13 +506,13 @@ Para Windows x86:
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server o Microsoft® Windows® 10
 * Procesador de 1 GHz o más rápido con soporte para PAE, NX y SSE2.
-* 1 GB de RAM para 32 bits o 2 GB de RAM para SO de 64 bits
+* 1 GB de RAM para 32 bits o 2 GB de RAM para SO de 64 bits;
 * 16 GB de espacio en disco para 32 o 20 GB de espacio en disco para SO de 64 bits
-* Memoria gráfica: 128 MB de GPU (se recomiendan 256 MB)
-* 2,35 GB de espacio disponible en disco duro
-* 1024 X 768 píxeles o buena resolución del monitor
-* Aceleración de hardware de vídeo (opcional)
-* Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC.
+* Memoria gráfica: 128 MB de GPU (se recomiendan 256 MB);
+* 2,35 GB de espacio disponible en disco duro;
+* 1024 X 768 píxeles de resolución de monitor o superior;
+* Aceleración de hardware de vídeo (opcional);
+* Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC;
 * Privilegios administrativos para instalar Designer.
 
 ### Requisitos para la reescritura de metadatos de AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}

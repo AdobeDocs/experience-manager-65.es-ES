@@ -4,13 +4,13 @@ description: Pasos para desactivar UAC para la configuración de PDFG
 source-git-commit: f6dcb488c64dad2d65facc0e8e1d6685b7375a08
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
 
 # No se puede convertir el archivo de Word o Excel al PDF en Windows Server {#unable-to-convert-word-excel-files-PDF}
 
-## Problema   {#issue}
+## Problema {#issue}
 
 Cuando el usuario intenta convertir archivos de Word o Excel a PDF en Microsoft Windows Server, se encuentra el siguiente error:
 

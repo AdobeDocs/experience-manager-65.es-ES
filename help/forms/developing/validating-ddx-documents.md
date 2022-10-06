@@ -1,8 +1,8 @@
 ---
 title: Validación de documentos DDX
-seo-title: Validación de documentos DDX
+seo-title: Validating DDX Documents
 description: Valide un documento DDX mediante programación utilizando la API de Java y la API de servicio web.
-seo-description: Valide un documento DDX mediante programación utilizando la API de Java y la API de servicio web.
+seo-description: Validate a DDX document programmatically using the Java API and the Web Service API.
 uuid: da668170-d2e9-4fff-aef5-432a856bd0bd
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1526'
 ht-degree: 0%
 
 ---
-
 
 # Validación de documentos DDX {#validating-ddx-documents}
 
@@ -59,7 +58,7 @@ Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 si AEM Forms se implementa en un servidor de aplicaciones J2EE compatible que no sea JBoss, debe reemplazar los archivos adobe-Utilities.jar y jbossall-client.jar con archivos JAR específicos del servidor de aplicaciones J2EE en el que AEM Forms está implementado.
 
-**Crear un cliente de ensamblador PDF**
+**Creación de un cliente de ensamblador de PDF**
 
 Para poder realizar una operación Assembler mediante programación, debe crear un cliente de servicio Assembler.
 
@@ -73,15 +72,15 @@ Al validar un documento DDX, debe establecer opciones específicas de tiempo de 
 
 **Realizar la validación**
 
-Después de crear el cliente de servicio Assembler, hacer referencia al documento DDX y establecer las opciones de tiempo de ejecución, puede invocar la operación `invokeDDX` para validar el documento DDX. Al validar el documento DDX, puede pasar `null` como parámetro de asignación (este parámetro generalmente almacena documentos PDF que requiere el ensamblador para realizar las operaciones especificadas en el documento DDX).
+Después de crear el cliente de servicio Assembler, hacer referencia al documento DDX y establecer las opciones de tiempo de ejecución, puede invocar la función `invokeDDX` para validar el documento DDX. Al validar el documento DDX, puede pasar `null` como parámetro de mapa (este parámetro generalmente almacena documentos PDF que requiere el ensamblador para realizar las operaciones especificadas en el documento DDX).
 
-Si la validación falla, se genera una excepción y el archivo de registro contiene detalles que explican por qué el documento DDX no es válido y se puede obtener desde la instancia `OperationException`. Una vez pasado el análisis XML básico y la comprobación de esquemas, se realiza la validación con la especificación DDX. Todos los errores que se encuentran en el documento DDX se especifican en el registro.
+Si la validación falla, se genera una excepción y el archivo de registro contiene detalles que explican por qué el documento DDX no es válido y se puede obtener de la variable `OperationException` instancia. Una vez pasado el análisis XML básico y la comprobación de esquemas, se realiza la validación con la especificación DDX. Todos los errores que se encuentran en el documento DDX se especifican en el registro.
 
 **Guardar los resultados de validación en un archivo de registro**
 
 El servicio Assembler devuelve los resultados de validación que puede escribir en un archivo de registro XML. La cantidad de detalle que el servicio Assembler escribe en el archivo de registro depende de la opción de tiempo de ejecución que haya establecido.
 
-**Consulte también**
+**Consulte también lo siguiente**
 
 [Validación de un documento DDX mediante la API de Java](#validate-a-ddx-document-using-the-java-api)
 
@@ -91,9 +90,9 @@ El servicio Assembler devuelve los resultados de validación que puede escribir 
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Montaje programático de documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
+[Configuración programática de documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
-## Validar un documento DDX utilizando la API de Java {#validate-a-ddx-document-using-the-java-api}
+## Validación de un documento DDX mediante la API de Java {#validate-a-ddx-document-using-the-java-api}
 
 Valide un documento DDX utilizando la API del servicio Assembler (Java):
 
@@ -101,53 +100,53 @@ Valide un documento DDX utilizando la API del servicio Assembler (Java):
 
    Incluya archivos JAR del cliente, como adobe-assembler-client.jar, en la ruta de clase de su proyecto Java.
 
-1. Cree un cliente del ensamblador PDF.
+1. Cree un cliente de ensamblador de PDF.
 
-   * Cree un objeto `ServiceClientFactory` que contenga propiedades de conexión.
-   * Cree un objeto `AssemblerServiceClient` utilizando su constructor y pasando el objeto `ServiceClientFactory`.
+   * Cree un `ServiceClientFactory` objeto que contiene propiedades de conexión.
+   * Cree un `AssemblerServiceClient` usando su constructor y pasando el `ServiceClientFactory` objeto.
 
 1. Haga referencia a un documento DDX existente.
 
-   * Cree un objeto `java.io.FileInputStream` que represente el documento DDX utilizando su constructor y pasando un valor de cadena que especifique la ubicación del archivo DDX.
-   * Cree un objeto `com.adobe.idp.Document` utilizando su constructor y pasando el objeto `java.io.FileInputStream`.
+   * Cree un `java.io.FileInputStream` objeto que representa el documento DDX utilizando su constructor y pasando un valor de cadena que especifica la ubicación del archivo DDX.
+   * Cree un `com.adobe.idp.Document` usando su constructor y pasando el `java.io.FileInputStream` objeto.
 
 1. Defina las opciones en tiempo de ejecución para validar el documento DDX.
 
-   * Cree un objeto `AssemblerOptionSpec` que almacene opciones en tiempo de ejecución empleando su constructor.
-   * Establezca la opción en tiempo de ejecución que indica al servicio Assembler que valide el documento DDX invocando el método setValidateOnly del objeto `AssemblerOptionSpec` y pasando `true`.
-   * Establezca la cantidad de información que el servicio Assembler escribe en el archivo de registro invocando el método `AssemblerOptionSpec` del objeto `getLogLevel` y pasando un valor de cadena que cumpla con sus necesidades. Al validar un documento DDX, desea que se escriba más información en el archivo de registro que ayudará en el proceso de validación. Como resultado, puede pasar el valor `FINE` o `FINER`.
+   * Cree un `AssemblerOptionSpec` que almacena opciones en tiempo de ejecución mediante su constructor.
+   * Establezca la opción en tiempo de ejecución que indica al servicio Assembler que valide el documento DDX invocando el `AssemblerOptionSpec` método setValidateOnly del objeto y pasar `true`.
+   * Establezca la cantidad de información que el servicio Assembler escribe en el archivo de registro invocando la variable `AssemblerOptionSpec` del objeto `getLogLevel` y pasar un valor de cadena cumple con sus requisitos. Al validar un documento DDX, desea que se escriba más información en el archivo de registro que ayudará en el proceso de validación. Como resultado, puede pasar el valor `FINE` o `FINER`.
 
 1. Realice la validación.
 
-   Invoque el método `AssemblerServiceClient` del objeto `invokeDDX` y pase los siguientes valores:
+   Invocar el `AssemblerServiceClient` del objeto `invokeDDX` y pase los siguientes valores:
 
-   * Un objeto `com.adobe.idp.Document` que representa el documento DDX.
-   * El valor `null` del objeto java.io.Map que generalmente almacena documentos PDF.
-   * Un objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica las opciones en tiempo de ejecución.
+   * A `com.adobe.idp.Document` que representa el documento DDX.
+   * El valor `null` para el objeto java.io.Map que generalmente almacena documentos de PDF.
+   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica las opciones de tiempo de ejecución.
 
-   El método `invokeDDX` devuelve un objeto `AssemblerResult` que contiene información que especifica si el documento DDX es válido.
+   La variable `invokeDDX` devuelve un valor `AssemblerResult` objeto que contiene información que especifica si el documento DDX es válido.
 
 1. Guarde los resultados de validación en un archivo de registro.
 
-   * Cree un objeto `java.io.File` y asegúrese de que la extensión del nombre de archivo sea .xml.
-   * Invoque el método `AssemblerResult` del objeto `getJobLog`. Este método devuelve una instancia `com.adobe.idp.Document` que contiene información de validación.
-   * Invoque el método `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del objeto `com.adobe.idp.Document` en el archivo.
+   * Cree un `java.io.File` y asegúrese de que la extensión de nombre de archivo es .xml.
+   * Invocar el `AssemblerResult` del objeto `getJobLog` método. Este método devuelve un `com.adobe.idp.Document` que contiene información de validación.
+   * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `com.adobe.idp.Document` al archivo.
 
    >[!NOTE]
    >
-   >Si el documento DDX no es válido, se genera un `OperationException`. Dentro de la sentencia catch, puede invocar el método `OperationException` del objeto `getJobLog` .
+   >Si el documento DDX no es válido, `OperationException` se lanza. Dentro de la sentencia catch, puede invocar la variable `OperationException` del objeto `getJobLog` método.
 
-**Consulte también**
+**Consulte también lo siguiente**
 
 [Validación de documentos DDX](#validating-ddx-documents)
 
-[Inicio rápido (modo SOAP): Validación de documentos DDX mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)  (modo SOAP)
+[Inicio rápido (modo SOAP): Validación de documentos DDX mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) (modo SOAP)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Validar un documento DDX utilizando la API de servicio web {#validate-a-ddx-document-using-the-web-service-api}
+## Validación de un documento DDX mediante la API de servicio web {#validate-a-ddx-document-using-the-web-service-api}
 
 Valide un documento DDX utilizando la API del servicio Assembler (servicio web):
 
@@ -159,56 +158,56 @@ Valide un documento DDX utilizando la API del servicio Assembler (servicio web):
    >
    >Reemplace localhost por la dirección IP del servidor de formularios.
 
-1. Cree un cliente del ensamblador PDF.
+1. Cree un cliente de ensamblador de PDF.
 
-   * Cree un objeto `AssemblerServiceClient` utilizando su constructor predeterminado.
-   * Cree un objeto `AssemblerServiceClient.Endpoint.Address` utilizando el constructor `System.ServiceModel.EndpointAddress`. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario utilizar el atributo `lc_version`. Este atributo se utiliza al crear una referencia de servicio.
-   * Cree un objeto `System.ServiceModel.BasicHttpBinding` obteniendo el valor del campo `AssemblerServiceClient.Endpoint.Binding`. Establezca el valor devuelto en `BasicHttpBinding`.
-   * Establezca el campo `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` en `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
+   * Cree un `AssemblerServiceClient` usando su constructor predeterminado.
+   * Cree un `AssemblerServiceClient.Endpoint.Address` usando la variable `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario que use la variable `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio.
+   * Cree un `System.ServiceModel.BasicHttpBinding` obteniendo el valor de `AssemblerServiceClient.Endpoint.Binding` campo . Conversión del valor devuelto a `BasicHttpBinding`.
+   * Configure las variables `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asigne el nombre de usuario de los formularios AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Asigne el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Asigne el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Asigne el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Asignar el nombre de usuario de los formularios AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Asignar el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+      * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Haga referencia a un documento DDX existente.
 
-   * Cree un objeto `BLOB` utilizando su constructor. El objeto `BLOB` se utiliza para almacenar el documento DDX.
-   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo del documento DDX y el modo en que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del objeto `System.IO.FileStream`. Puede determinar el tamaño de la matriz de bytes obteniendo la propiedad `System.IO.FileStream` del objeto `Length`.
-   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición de inicio y la longitud de flujo para leer.
-   * Rellene el objeto `BLOB` asignando su propiedad `MTOM` con el contenido de la matriz de bytes.
+   * Cree un `BLOB` usando su constructor. La variable `BLOB` se utiliza para almacenar el documento DDX.
+   * Cree un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo del documento DDX y el modo en el que se abre el archivo.
+   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo la variable `System.IO.FileStream` del objeto `Length` propiedad.
+   * Rellene la matriz de bytes con los datos de flujo invocando la variable `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de flujo para leer.
+   * Rellene el `BLOB` asignando su `MTOM` con el contenido de la matriz de bytes.
 
 1. Defina las opciones en tiempo de ejecución para validar el documento DDX.
 
-   * Cree un objeto `AssemblerOptionSpec` que almacene opciones en tiempo de ejecución empleando su constructor.
-   * Establezca la opción en tiempo de ejecución que indica al servicio Assembler que valide el documento DDX asignando el valor true al miembro de datos `AssemblerOptionSpec` del objeto `validateOnly`.
-   * Establezca la cantidad de información que el servicio Assembler escribe en el archivo de registro asignando un valor de cadena al miembro de datos `AssemblerOptionSpec` del objeto `logLevel`. método Al validar un documento DDX, desea que se escriba más información en el archivo de registro que ayudará en el proceso de validación. Como resultado, puede especificar el valor `FINE` o `FINER`. Para obtener información sobre las opciones de tiempo de ejecución que puede establecer, consulte la referencia de clase `AssemblerOptionSpec` en [Referencia de API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Cree un `AssemblerOptionSpec` que almacena opciones en tiempo de ejecución mediante su constructor.
+   * Establezca la opción en tiempo de ejecución que indica al servicio Assembler que valide el documento DDX asignando el valor true al `AssemblerOptionSpec` del objeto `validateOnly` miembro de datos.
+   * Establezca la cantidad de información que el servicio Assembler escribe en el archivo de registro asignando un valor de cadena al `AssemblerOptionSpec` del objeto `logLevel` miembro de datos. método Al validar un documento DDX, desea que se escriba más información en el archivo de registro que ayudará en el proceso de validación. Como resultado, puede especificar el valor `FINE` o `FINER`. Para obtener información sobre las opciones de tiempo de ejecución que puede establecer, consulte la `AssemblerOptionSpec` referencia de clase en [Referencia de la API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Realice la validación.
 
-   Invoque el método `AssemblerServiceClient` del objeto `invokeDDX` y pase los siguientes valores:
+   Invocar el `AssemblerServiceClient` del objeto `invokeDDX` y pase los siguientes valores:
 
-   * Un objeto `BLOB` que representa el documento DDX.
-   * El valor `null` del objeto `Map` que generalmente almacena documentos PDF.
-   * Un objeto `AssemblerOptionSpec` que especifica opciones en tiempo de ejecución.
+   * A `BLOB` que representa el documento DDX.
+   * El valor `null` para el `Map` que generalmente almacena documentos PDF.
+   * Un `AssemblerOptionSpec` objeto que especifica opciones en tiempo de ejecución.
 
-   El método `invokeDDX` devuelve un objeto `AssemblerResult` que contiene información que especifica si el documento DDX es válido.
+   La variable `invokeDDX` devuelve un valor `AssemblerResult` objeto que contiene información que especifica si el documento DDX es válido.
 
 1. Guarde los resultados de validación en un archivo de registro.
 
-   * Cree un objeto `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que represente la ubicación del archivo de registro y el modo en que se abre el archivo. Asegúrese de que la extensión del nombre de archivo es .xml.
-   * Cree un objeto `BLOB` que almacene información de registro obteniendo el valor del miembro de datos `AssemblerResult` del objeto `jobLog`.
-   * Cree una matriz de bytes que almacene el contenido del objeto `BLOB`. Rellene la matriz de bytes obteniendo el valor del campo `BLOB` del objeto `MTOM`.
-   * Cree un objeto `System.IO.BinaryWriter` invocando su constructor y pasando el objeto `System.IO.FileStream`.
-   * Escriba el contenido de la matriz de bytes en un archivo PDF invocando el método `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
+   * Cree un `System.IO.FileStream` invocando su constructor y pasando un valor de cadena que representa la ubicación del archivo de registro y el modo en el que se abre el archivo. Asegúrese de que la extensión del nombre de archivo es .xml.
+   * Cree un `BLOB` objeto que almacena información de registro obteniendo el valor de la variable `AssemblerResult` del objeto `jobLog` miembro de datos.
+   * Cree una matriz de bytes que almacene el contenido del `BLOB` objeto. Rellene la matriz de bytes obteniendo el valor de la variable `BLOB` del objeto `MTOM` campo .
+   * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
+   * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
    >[!NOTE]
    >
-   >Si el documento DDX no es válido, se genera un `OperationException`. Dentro de la sentencia catch, puede obtener el valor del miembro `OperationException` del objeto `jobLog`.
+   >Si el documento DDX no es válido, `OperationException` se lanza. Dentro de la sentencia catch, puede obtener el valor de la variable `OperationException` del objeto `jobLog` miembro.
 
-**Consulte también**
+**Consulte también lo siguiente**
 
 [Validación de documentos DDX](#validating-ddx-documents)
 

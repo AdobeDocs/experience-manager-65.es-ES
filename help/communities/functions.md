@@ -1,8 +1,8 @@
 ---
 title: Funciones de comunidad
-seo-title: Funciones de comunidad
+seo-title: Community Functions
 description: Obtenga información sobre cómo acceder a la consola Funciones de la comunidad
-seo-description: Obtenga información sobre cómo acceder a la consola Funciones de la comunidad
+seo-description: Learn how to access the Community Functions console
 uuid: d3d70134-f318-4709-a673-b01a3467d980
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,43 +11,43 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '2458'
+source-wordcount: '2448'
 ht-degree: 6%
 
 ---
 
-
 # Funciones de comunidad{#community-functions}
 
-El tipo de funciones que se esperan de una experiencia de comunidad son bien conocidas. Las funciones de comunidad están disponibles como funciones de la comunidad. Fundamentalmente, son una o más páginas precableadas para implementar una función de comunidad que requiere algo más que simplemente añadir un componente a una página en modo de autor. Son los componentes básicos que se utilizan para definir la estructura de una [plantilla de sitio de la comunidad](/help/communities/sites.md) desde la que [se crean los sitios de la comunidad](/help/communities/sites-console.md).
+El tipo de funciones que se esperan de una experiencia de comunidad son bien conocidas. Las funciones de comunidad están disponibles como funciones de la comunidad. Fundamentalmente, son una o más páginas precableadas para implementar una función de comunidad que requiere algo más que simplemente añadir un componente a una página en modo de autor. Son los componentes básicos utilizados para definir la estructura de una [plantilla del sitio de la comunidad](/help/communities/sites.md) desde los cuales se encuentran los sitios de la comunidad [created](/help/communities/sites-console.md).
 
-Una vez creado un sitio de comunidad, se puede añadir contenido a las páginas resultantes mediante el [AEM modo de creación estándar](/help/sites-authoring/editing-content.md). Hay varias funciones de la comunidad disponibles como se ve en la consola de funciones de la comunidad.
+Una vez creado el sitio de la comunidad, se puede agregar contenido a las páginas resultantes mediante el estándar [AEM modo de creación](/help/sites-authoring/editing-content.md). Hay varias funciones de la comunidad disponibles como se ve en la consola de funciones de la comunidad.
 
 >[!NOTE]
 >
->Las consolas para la creación de [sitios de la comunidad](/help/communities/sites-console.md), [plantillas de sitios de la comunidad](/help/communities/sites.md), [plantillas de grupos de la comunidad](/help/communities/tools-groups.md) y [funciones de la comunidad](/help/communities/functions.md) solo se deben usar en el entorno de creación.
+>Las consolas para la creación de [sitios de la comunidad](/help/communities/sites-console.md), [plantillas de sitio de la comunidad](/help/communities/sites.md), [plantillas de grupo de la comunidad](/help/communities/tools-groups.md)y [funciones de la comunidad](/help/communities/functions.md) solo se utilizan en el entorno de creación.
 
 ## Consola Funciones de la comunidad {#community-functions-console}
 
 Para llegar a la consola de funciones de la comunidad en el entorno de creación:
 
-* Vaya a **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community Functions]**.
+* Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Funciones de la comunidad]**.
 
 ![funciones de comunidad](assets/community-functions.png)
 
 ## Funciones creadas previamente {#pre-built-functions}
 
-A continuación se ofrece una breve descripción de las funciones entregadas con AEM Communities. Cada función incluye una o más páginas AEM que contienen componentes de Communities conectados en una función que se incorpora fácilmente a una [plantilla de sitio de la comunidad](/help/communities/sites.md).
+A continuación se ofrece una breve descripción de las funciones entregadas con AEM Communities. Cada función incluye una o varias páginas AEM que contienen componentes de Communities conectados en una función que se incorpora fácilmente en una [plantilla del sitio de la comunidad](/help/communities/sites.md).
 
 Una plantilla de sitio de la comunidad proporciona la estructura para un sitio de la comunidad, que incluye: inicio de sesión, perfiles de usuario, notificaciones, mensajes, menú del sitio, búsqueda, tema y funciones de marca.
 
 ### Configuración de título y dirección URL {#title-and-url-settings}
 
-**** Título y  **** URLson propiedades comunes a todas las funciones de la comunidad.
+**Título** y **URL** son propiedades comunes a todas las funciones de la comunidad.
 
-Cuando se agrega una función de comunidad a una plantilla de sitio de comunidad o se agrega al [modificar](/help/communities/sites-console.md#modifying-site-properties) la estructura de un sitio de comunidad, se abre el cuadro de diálogo de la función para que se puedan configurar el Título y la URL.
+Cuando se agrega una función de comunidad a una plantilla de sitio de comunidad o se agrega al [modificar](/help/communities/sites-console.md#modifying-site-properties) En la estructura de un sitio de comunidad, se abre el cuadro de diálogo de la función para que se puedan configurar el Título y la URL.
 
 #### Detalles de la función de configuración {#configuration-function-details}
 
@@ -59,9 +59,9 @@ Cuando se agrega una función de comunidad a una plantilla de sitio de comunidad
 
 * **URL**
 
-   (*Requerido*) El nombre utilizado para generar el URI. El nombre debe cumplir las [convenciones de nomenclatura](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
+   (*Requerido*) Nombre utilizado para generar el URI. El nombre debe cumplir la función [convenciones de nomenclatura](/help/sites-developing/naming-conventions.md) impuesto por AEM y JCR.
 
-Por ejemplo, si utiliza el sitio creado a partir del tutorial [Introducción](/help/communities/getting-started.md)
+Por ejemplo, usar el sitio creado a partir de la variable [Introducción](/help/communities/getting-started.md) tutorial, si
 
 * Título = Página Web
 * URL = página
@@ -74,7 +74,7 @@ y el vínculo de menú de la página aparece como:
 
 ### Función Secuencia de actividades {#activity-stream-function}
 
-La función de flujo de actividad es una página con un [componente Flujos de actividad](/help/communities/activities.md) con todas las vistas seleccionadas (todas las actividades, actividades del usuario y las siguientes). Consulte también [Elementos esenciales del flujo de actividad](/help/communities/essentials-activities.md) para desarrolladores.
+La función de flujo de actividad es una página con un [Componente Flujos de actividad](/help/communities/activities.md) con todas las vistas seleccionadas (todas las actividades, actividades de usuario y siguientes). Consulte también [Aspectos básicos del flujo de actividad](/help/communities/essentials-activities.md) para desarrolladores.
 
 Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente:
 
@@ -98,15 +98,15 @@ Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente:
 
 ### Función Asignaciones {#assignments-function}
 
-La función de asignaciones es la función básica que define un [sitio de la comunidad para la habilitación](/help/communities/overview.md#enablement-community). Permite asignar recursos de habilitación a los miembros de la comunidad. Consulte también [Assigned Essentials](/help/communities/essentials-assignments.md) para desarrolladores.
+La función de asignaciones es la función básica que define una [sitio de la comunidad para la habilitación](/help/communities/overview.md#enablement-community). Permite asignar recursos de habilitación a los miembros de la comunidad. Consulte también [Ascripciones esenciales](/help/communities/essentials-assignments.md) para desarrolladores.
 
-Esta función está disponible como función del complemento [de habilitación](/help/communities/enablement.md). El complemento de habilitación requiere licencias adicionales para su uso en un entorno de producción.
+Esta función está disponible como función de la variable [complemento de habilitación](/help/communities/enablement.md). El complemento de habilitación requiere licencias adicionales para su uso en un entorno de producción.
 
-Cuando se agrega a una plantilla, la única configuración es para [Configuración del título y la dirección URL](#title-and-url-settings).
+Cuando se añade a una plantilla, la única configuración es para la variable [Configuración de título y dirección URL](#title-and-url-settings).
 
 ### Función Blog {#blog-function}
 
-La función de blog es una página con un [componente de blog](/help/communities/blog-feature.md) configurado para etiquetado, cargas de archivos, seguimiento, miembros para autoedición, votación y moderación. Consulte también [Blog Essentials](/help/communities/blog-developer-basics.md) para desarrolladores.
+La función de blog es una página con un [Componente de blog](/help/communities/blog-feature.md) configurado para etiquetado, cargas de archivos, seguimiento, miembros para autoedición, votación y moderación. Consulte también [Elementos esenciales del blog](/help/communities/blog-developer-basics.md) para desarrolladores.
 
 Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente:
 
@@ -132,7 +132,7 @@ Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente:
 
 ### Función Calendario {#calendar-function}
 
-La función de calendario es una página con un [componente de calendario](/help/communities/calendar.md) configurado para permitir el etiquetado. Consulte también [Calendar Essentials](/help/communities/calendar-basics-for-developers.md) para desarrolladores.
+La función de calendario es una página con un [Componente de calendario](/help/communities/calendar.md) configurado para permitir el etiquetado. Consulte también [Elementos básicos del calendario](/help/communities/calendar-basics-for-developers.md) para desarrolladores.
 
 Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente:
 
@@ -162,9 +162,9 @@ Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente:
 
 ### Función Catálogo {#catalog-function}
 
-La función de catálogo permite a los miembros de [comunidad de habilitación](/help/communities/overview.md#enablement-community) examinar los recursos de habilitación que no se les han asignado. Consulte [Tagging Enablement Resources](/help/communities/tag-resources.md) y [Catalog Essentials](/help/communities/catalog-developer-essentials.md) para desarrolladores.
+La función de catálogo proporciona la capacidad de [comunidad de habilitación](/help/communities/overview.md#enablement-community) miembros para examinar los recursos de habilitación que no están asignados a ellos. Consulte [Etiquetado de recursos de habilitación](/help/communities/tag-resources.md) y [Esenciales del catálogo](/help/communities/catalog-developer-essentials.md) para desarrolladores.
 
-Todos los recursos de habilitación y las rutas de aprendizaje del sitio de la comunidad se muestran en todos los catálogos si su propiedad, ` [Show in Catalog](/help/communities/resources.md)`, está establecida en true. Para incluir explícitamente recursos y rutas de aprendizaje, es necesario aplicar un [pre-filter](/help/communities/catalog-developer-essentials.md#pre-filters) al catálogo.
+Todos los recursos de habilitación y las rutas de aprendizaje del sitio de la comunidad se muestran en todos los catálogos si su propiedad, ` [Show in Catalog](/help/communities/resources.md)`, se establece en true. Para incluir explícitamente recursos y rutas de aprendizaje, es necesario aplicar un [prefiltro](/help/communities/catalog-developer-essentials.md#pre-filters) al catálogo.
 
 Cuando se agrega a una plantilla, la configuración permite especificar el área de nombres de la etiqueta utilizada para configurar el filtro de etiquetas presentado a los visitantes del sitio:
 
@@ -181,21 +181,21 @@ El valor predeterminado está seleccionado.
 
 ### Función de contenido destacado {#featured-content-function}
 
-La función de contenido destacado es una página con un [componente de contenido destacado](/help/communities/featured.md) configurado para permitir que se agreguen y eliminen comentarios.
+La función de contenido destacado es una página con un [Componente de contenido destacado](/help/communities/featured.md) configurado para permitir que se agreguen y eliminen comentarios.
 
-La capacidad de presentar contenido puede estar permitida o no permitida por componente (consulte [Función de blog](#blog-function), [Función de calendario](#calendar-function), [Función de foro](#forum-function), [Función de ideación](#ideation-function) y [Función de QnA](#qna-function)).
+La capacidad de presentar contenido puede estar permitida o no permitida por componente (consulte [Función del blog](#blog-function), [Función Calendario](#calendar-function), [Función del foro](#forum-function), [Función de ideación](#ideation-function)y [Función QnA](#qna-function)).
 
-Cuando se agrega a una plantilla, la única configuración es para [Configuración del título y la dirección URL](#title-and-url-settings).
+Cuando se añade a una plantilla, la única configuración es para la variable [Configuración de título y dirección URL](#title-and-url-settings).
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-La función de biblioteca de archivos es una página con un [componente Biblioteca de archivos](/help/communities/file-library.md) configurado para permitir que se agreguen y eliminen comentarios.
+La función de biblioteca de archivos es una página con un [Componente Biblioteca de archivos](/help/communities/file-library.md) configurado para permitir que se agreguen y eliminen comentarios.
 
-Cuando se agrega a una plantilla, la única configuración es para [Configuración del título y la dirección URL](#title-and-url-settings).
+Cuando se añade a una plantilla, la única configuración es para la variable [Configuración de título y dirección URL](#title-and-url-settings).
 
 ### Función Foro {#forum-function}
 
-La función de foro es una página con un [componente de foro](/help/communities/forum.md) configurado para el etiquetado, la carga de archivos, el seguimiento y los miembros que se pueden editar por sí mismos, votar y moderar.
+La función de foro es una página con un [Componente de foro](/help/communities/forum.md) configurado para etiquetado, cargas de archivos, seguimiento, miembros para autoedición, votación y moderación.
 
 Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente:
 
@@ -229,17 +229,17 @@ Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente:
 
 >[!CAUTION]
 >
->La función de grupos debe *no* ser la *primera ni la única* de la estructura de un sitio o de una plantilla de sitio de la comunidad.
+>La función de grupos debe *not* sea el *primero ni único* en la estructura de un sitio o en una plantilla de sitio de la comunidad.
 >
->Cualquier otra función, como la [función de página](#page-function), debe incluirse y enumerarse primero.
+>Cualquier otra función, como la [función de página](#page-function), debe incluirse y aparecer en primer lugar en la lista.
 
 La función de grupos permite a los miembros de la comunidad crear subcomunidades dentro del sitio de la comunidad en el entorno de publicación.
 
-Dependiendo de la [configuración](/help/communities/sites-console.md#groupmanagement) cuando la función Grupos está incluida en una [plantilla de sitio de la comunidad](/help/communities/sites.md), los grupos pueden ser públicos o privados y se puede configurar una o más plantillas de grupo de la comunidad para proporcionar una selección de plantillas cuando el grupo de la comunidad se crea realmente (como desde el entorno de publicación). Una [plantilla de grupo de comunidad](/help/communities/tools-groups.md) especifica qué características de Communities se crean para las páginas de grupo, como foros y calendarios.
+Dependiendo de [configuración](/help/communities/sites-console.md#groupmanagement) cuando la función Grupos está incluida en un [plantilla del sitio de la comunidad](/help/communities/sites.md), los grupos pueden ser públicos o privados y se puede configurar una o más plantillas de grupo de comunidad para proporcionar una selección de plantillas cuando se crea el grupo de comunidad (como desde el entorno de publicación). A [plantilla de grupo de la comunidad](/help/communities/tools-groups.md) especifica qué funciones de Communities se crean para las páginas de grupo, como foros y calendarios.
 
 Cuando se crea un grupo de comunidad, se crea dinámicamente un grupo de miembros para el nuevo grupo, al que se pueden asignar o unir miembros. Para obtener más información, consulte [Administración de usuarios y grupos de usuarios](/help/communities/users.md).
 
-A partir de Communities [feature pack 1](/help/communities/deploy-communities.md#latestfeaturepack), los grupos de comunidades se crean en el entorno de creación mediante la consola [Communities Sites&#39; Groups](/help/communities/groups.md) y se pueden crear en el entorno de publicación cuando está habilitada.
+Como comunidades [paquete de características 1](/help/communities/deploy-communities.md#latestfeaturepack), los grupos de comunidad se crean en el entorno de creación utilizando la variable [Consola de grupos de sitios de Communities](/help/communities/groups.md)y se pueden crear en el entorno de publicación cuando está habilitado.
 
 Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente:
 
@@ -253,7 +253,7 @@ Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente:
 
 * **Permitir miembros privilegiados**
 
-   Si se selecciona, el foro solo permite que los miembros privilegiados publiquen temas permitiendo la selección de un [grupo de seguridad de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. El valor predeterminado no está seleccionado.
+   Si se selecciona, el foro solo permite que los miembros privilegiados publiquen temas permitiendo la selección de un [grupo de seguridad miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. El valor predeterminado no está seleccionado.
 
 * **Permitir la creación de publicación**
 
@@ -262,7 +262,7 @@ El valor predeterminado está seleccionado.
 
 ### Función ideación {#ideation-function}
 
-La función de ideación es una página con un [componente de ideación](/help/communities/ideation-feature.md).
+La función ideation es una página con una [Componente de ideación](/help/communities/ideation-feature.md).
 
 Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente, que especifica los nombres predeterminados Título y URL, así como la configuración de visualización predeterminada para la plantilla:
 
@@ -272,7 +272,7 @@ Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente, que e
 
 * **Permitir miembros privilegiados**
 
-   Si se selecciona, el foro solo permite que los miembros privilegiados publiquen temas permitiendo la selección de un [grupo de seguridad de miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. El valor predeterminado no está seleccionado.
+   Si se selecciona, el foro solo permite que los miembros privilegiados publiquen temas permitiendo la selección de un [grupo de seguridad miembros privilegiados](/help/communities/users.md#privileged-members-group). Si no se selecciona, todos los miembros de la comunidad pueden publicar. El valor predeterminado no está seleccionado.
 
 * **Permitir cargas de archivos**
 
@@ -288,9 +288,9 @@ Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente, que e
 
 ### Función de la tabla de clasificación {#leaderboard-function}
 
-La función del panel de control es una página con un [componente del panel de control](/help/communities/enabling-leaderboard.md).
+La función de panel de encabezado es una página con una [Componente del panel de control](/help/communities/enabling-leaderboard.md).
 
-**NOTA**: El componente Mesa de liderazgo necesita más configuración  ** después de crear el sitio de comunidad a partir de una plantilla de comunidad que incluya la función Mesa de liderazgo. Especifique las [reglas](/help/communities/enabling-leaderboard.md#rules-tab) del componente del panel de vanguardia, que dependen de la configuración de [puntuación e insignias](/help/communities/implementing-scoring.md) para el sitio de la comunidad.
+**NOTA**: El componente del panel de control de Campaign necesita más configuración *after* se crea un sitio de comunidad a partir de una plantilla de comunidad que incluye la función de panel de clientes. Especificar el componente del panel de control de Campaign [reglas](/help/communities/enabling-leaderboard.md#rules-tab), que dependen de la configuración de [puntuación y distintivos](/help/communities/implementing-scoring.md) para el sitio de la comunidad.
 
 Cuando se agrega a una plantilla, se abre el cuadro de diálogo siguiente, que especifica los nombres predeterminados Título y URL, así como la configuración de visualización predeterminada para la plantilla:
 
@@ -315,13 +315,13 @@ El valor predeterminado no está seleccionado.
 
 ### Función Página {#page-function}
 
-La función de página agrega una página en blanco al sitio de la comunidad que está conectada a las características del sitio de la comunidad: inicio de sesión, menú, notificaciones, mensajería, tema y promoción de la marca. El contenido se agrega a la página mediante el [modo de creación de AEM estándar](/help/sites-authoring/editing-content.md).
+La función de página agrega una página en blanco al sitio de la comunidad que está conectada a las características del sitio de la comunidad: inicio de sesión, menú, notificaciones, mensajería, tema y promoción de la marca. El contenido se agrega a la página mediante el uso de [modo de creación de AEM estándar](/help/sites-authoring/editing-content.md).
 
-Cuando se agrega a una plantilla, la única configuración es para [Configuración del título y la dirección URL](#title-and-url-settings).
+Cuando se añade a una plantilla, la única configuración es para la variable [Configuración de título y dirección URL](#title-and-url-settings).
 
 ### Función Preguntas y respuestas {#qna-function}
 
-La función QnA es una página con un [componente QnA](/help/communities/working-with-qna.md) configurado para etiquetado, cargas de archivos, seguimiento, miembros para autoedición, votación y moderación.
+La función QnA es una página con un [Componente QnA](/help/communities/working-with-qna.md) configurado para etiquetado, cargas de archivos, seguimiento, miembros para autoedición, votación y moderación.
 
 Cuando se agrega a una plantilla, la configuración permite restricciones a miembros con privilegios:
 
@@ -351,7 +351,7 @@ Cuando se agrega a una plantilla, la configuración permite restricciones a miem
 
 ## Crear función de la comunidad {#create-community-function}
 
-Para crear una función de comunidad, seleccione el icono `Create Community Function` situado en la parte superior de la consola Funciones de comunidad . Se pueden crear varias funciones basadas en el mismo modelo de AEM y luego personalizarlas de forma exclusiva abriendo en modo de edición de autor.
+Se llega a la capacidad de crear una función de comunidad seleccionando la variable `Create Community Function` en la parte superior de la consola Funciones de la comunidad . Se pueden crear varias funciones basadas en el mismo modelo de AEM y luego personalizarlas de forma exclusiva abriendo en modo de edición de autor.
 
 ![create-community-function](assets/create-community-function.png)
 
@@ -377,38 +377,38 @@ En el panel Nombre de función de la comunidad, se configuran un nombre, una des
 
 ![aem-blueprint](assets/aem-blueprint.png)
 
-En el panel `AEM Blueprint`, es posible seleccionar el modelo que es la implementación subyacente de la función de la comunidad.
+En el `AEM Blueprint` , es posible seleccionar el modelo que es la implementación subyacente de la función de comunidad.
 
-La función de la comunidad es un minisitio que incluye una o más páginas, precableadas para su inclusión en un sitio de la comunidad, incluidos el inicio de sesión, los perfiles de usuario, las notificaciones, los mensajes, el menú del sitio, la búsqueda, el tema y las funciones de promoción de la marca. Una vez creada la función, es posible [abrir la función](#open-community-function) en modo de edición de autor y personalizar la configuración de la página o del componente.
+La función de la comunidad es un minisitio que incluye una o más páginas, precableadas para su inclusión en un sitio de la comunidad, incluidos el inicio de sesión, los perfiles de usuario, las notificaciones, los mensajes, el menú del sitio, la búsqueda, el tema y las funciones de promoción de la marca. Una vez creada la función, es posible [abrir la función](#open-community-function) en el modo de edición de autor y personalice la configuración de la página o del componente.
 
-Dado que la función de comunidad se implementa como una [Live Copy](/help/sites-administering/msm.md#live-copies) de un [modelo](/help/sites-administering/msm-livecopy.md#creatingablueprint), es posible implementar los cambios realizados en una función que afecta a todas las páginas de sitio de la comunidad creadas a partir de la [plantilla de sitio de la comunidad](/help/communities/sites.md) o la [plantilla de grupo de la comunidad](/help/communities/tools-groups.md) que incluye la función. También es posible desasociar una página de su modelo principal para realizar modificaciones en el nivel de página.
+Dado que la función de comunidad se implementa como un [live copy](/help/sites-administering/msm.md#live-copies) de [modelo](/help/sites-administering/msm-livecopy.md#creatingablueprint), es posible implementar los cambios realizados en una función que afecte a todas las páginas del sitio de la comunidad creadas a partir de la variable [plantilla del sitio de la comunidad](/help/communities/sites.md) o [plantilla de grupo de la comunidad](/help/communities/tools-groups.md) que incluye la función . También es posible desasociar una página de su modelo principal para realizar modificaciones en el nivel de página.
 
-Consulte también [Multi Site Manager](/help/sites-administering/msm.md).
+Consulte también [Administrador de varios sitios](/help/sites-administering/msm.md).
 
 ### Miniatura    {#thumbnail}
 
 ![función-miniatura](assets/funtion-thumbnail.png)
 
-En el panel Miniatura, se puede cargar una imagen para mostrarla en la [consola Funciones de la comunidad](#community-functions-console).
+En el panel Miniatura, se puede cargar una imagen para mostrarla en la [Consola de funciones de comunidad](#community-functions-console).
 
 ## Abrir función de la comunidad {#open-community-function}
 
 ![open-function](assets/open-function.png)
 
-Seleccione el icono `Open Community Function` para entrar al modo de edición de autor para crear el contenido de la página y modificar la configuración de los componentes de la función.
+Seleccione el `Open Community Function` para entrar al modo de edición de autor para crear el contenido de la página y modificar la configuración de los componentes de la función.
 
 ### Configurar componentes {#configuring-components}
 
-Una función de comunidad se implementa como Live Copy de un modelo de AEM, cuyos detalles se documentan en [Multi Site Manager](/help/sites-administering/msm.md).
+Una función de comunidad se implementa como una Live Copy de un modelo de AEM, cuyos detalles están documentados en [Administrador de varios sitios](/help/sites-administering/msm.md).
 
 Es posible no solo crear contenido de página, sino también configurar componentes.
 
 Si configura un componente en una página de un sitio de comunidad creado, puede ser necesario cancelar [herencia](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) para configurar el componente. La herencia debe restablecerse cuando se complete la configuración.
 
-Para obtener más información sobre la configuración, visite [Communities Components](/help/communities/author-communities.md) para autores.
+Para obtener más información sobre la configuración, visite [Componentes de Communities](/help/communities/author-communities.md) para autores.
 
 ## Editar función de la comunidad {#edit-community-function}
 
 ![edit-function](assets/edit-function.png)
 
-Seleccione el icono `Edit Community Function` para editar las propiedades de la función utilizando los mismos paneles que [crear una función de comunidad](#create-community-function), incluida la activación o desactivación de la función.
+Seleccione el `Edit Community Function` para editar las propiedades de la función utilizando los mismos paneles que [creación de una función de comunidad](#create-community-function), incluida la activación o desactivación de la función .

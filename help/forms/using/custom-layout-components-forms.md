@@ -1,49 +1,48 @@
 ---
 title: Creación de componentes de diseño personalizados para formularios adaptables
-seo-title: Creación de componentes de diseño personalizados para formularios adaptables
+seo-title: Creating custom layout components for adaptive forms
 description: Procedimiento para crear componentes de diseño personalizados para formularios adaptables.
-seo-description: Procedimiento para crear componentes de diseño personalizados para formularios adaptables.
+seo-description: Procedure to create custom layout components for adaptive forms.
 uuid: f0bb5fcd-3938-4804-ad0c-d96d3083fd01
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: d4ae432d-557d-4e89-92b8-dca5f37cb6f8
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 544b06f9-2456-4c05-88c2-b5349947742d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 0%
+source-wordcount: '270'
+ht-degree: 1%
 
 ---
-
 
 # Creación de componentes de diseño personalizados para formularios adaptables{#creating-custom-layout-components-for-adaptive-forms}
 
 ## Requisitos previos {#prerequisite}
 
-Conocimientos sobre diseños, que le permiten crear/utilizar un diseño personalizado. Consulte [Cambio del diseño del panel](../../forms/using/layout-capabilities-adaptive-forms.md).
+Conocimiento de los diseños, que le permite crear/utilizar un diseño personalizado. Consulte [Cambio del diseño del panel](../../forms/using/layout-capabilities-adaptive-forms.md).
 
-## Componente Diseño de panel de formulario adaptable {#adaptive-form-panel-layout-component}
+## Componente Diseño del panel de formulario adaptable {#adaptive-form-panel-layout-component}
 
-El componente Diseño del panel de formulario adaptable controla la forma en que los componentes del formulario adaptable se distribuyen en un panel en relación con la interfaz de usuario.
+El componente Diseño del panel de formulario adaptable controla el modo en que se presentan los componentes de formulario adaptables en un panel en relación con la interfaz de usuario.
 
 ## Creación de un diseño de panel personalizado {#creating-a-custom-panel-layout}
 
 1. Vaya a la ubicación `/crx/de`.
-1. Copie un diseño de panel de la ubicación `/libs/fd/af/layouts/panel` (por ejemplo, `tabbedPanelLayout`) a `/apps` (por ejemplo, `/apps/af-custom-layout`).
-1. Cambie el nombre del diseño copiado a `customPanelLayout`. Cambie las propiedades de los nodos `qtip` y `jcr:description`. Por ejemplo, cámbielas a `Custom layout - Toggle tabs`.
+1. Copiar un diseño de panel desde la ubicación `/libs/fd/af/layouts/panel` (por ejemplo, `tabbedPanelLayout`) a `/apps` (por ejemplo, `/apps/af-custom-layout`).
+1. Cambie el nombre del diseño que ha copiado en `customPanelLayout`. Cambiar las propiedades de los nodos `qtip` y `jcr:description`. Por ejemplo, cambie a `Custom layout - Toggle tabs`.
 
 qtip
 
-![Instantánea CRX DE diseño de panel personalizado](assets/custom_layout_new.png)
+![Diseño de panel personalizado: instantánea de CRX DE](assets/custom_layout_new.png)
 
 >[!NOTE]
 >
->La configuración de la propiedad `guideComponentType`en el valor `fd/af/layouts/panel` determina que el diseño es un diseño de panel.
+>Configuración de la propiedad `guideComponentType`al valor `fd/af/layouts/panel` determina que el diseño es un diseño de panel.
 
-1. Cambie el nombre del archivo `tabbedPanelLayout.jsp` en el nuevo diseño a customPanelLayout.jsp.
-1. Para introducir nuevos estilos y comportamientos, cree una biblioteca de clientes en el nodo `etc`. Por ejemplo, en la ubicación /etc/af-custom-layout-clientlib, cree el nodo client-library. Permita que el nodo tenga la propiedad categorías af.panel.custom. Tiene los siguientes archivos .css y .js:
+1. Cambiar el nombre del archivo `tabbedPanelLayout.jsp` en el nuevo diseño a customPanelLayout.jsp.
+1. Para introducir nuevos estilos y comportamientos, cree una biblioteca de cliente en la sección `etc` nodo . Por ejemplo, en la ubicación /etc/af-custom-layout-clientlib, cree el nodo client-library. Permita que el nodo tenga la propiedad categories af.panel.custom. Tiene los siguientes archivos .css y .js:
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -117,7 +116,7 @@ qtip
 
 1. Para mejorar el aspecto y el comportamiento, puede incluir un `client library`.
 
-   Además, actualice las rutas de las secuencias de comandos incluidas en los archivos .jsp. Por ejemplo, actualice el archivo `customPanelLayout.jsp` de la siguiente manera:
+   Además, actualice las rutas de las secuencias de comandos incluidas en los archivos .jsp. Por ejemplo, actualice la variable `customPanelLayout.jsp` como se indica a continuación:
 
    ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -146,7 +145,7 @@ qtip
    </div>
    ```
 
-   El archivo `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp`:
+   La variable `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` archivo:
 
    ```html
    <%-- jsp governing the navigation part --%>
@@ -175,7 +174,7 @@ qtip
    </ul>
    ```
 
-   El `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp` actualizado:
+   El `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
 
    ```html
    <%-- jsp governing the panel content --%>
@@ -202,10 +201,10 @@ qtip
    </div>
    ```
 
-1. Abra un formulario adaptable en el modo de creación. El diseño de panel que ha definido se agrega a la lista para la configuración de los diseños de panel.
+1. Abra un formulario adaptable en el modo de creación. El diseño de panel que ha definido se agrega a la lista para configurar los diseños de panel.
 
-   ![El diseño del panel personalizado se muestra en la ](assets/auth-layt.png) ![lista de diseño del panelCaptura de pantalla de un formulario adaptable que utiliza el ](assets/s1.png) ![diseño del panel personalizadoCaptura de pantalla que muestra la funcionalidad de alternancia del diseño personalizado](assets/s2.png)
+   ![El diseño del panel personalizado aparece en la lista de diseño del panel](assets/auth-layt.png) ![Captura de pantalla de un formulario adaptable, con diseño de panel personalizado](assets/s1.png) ![Captura de pantalla que muestra la funcionalidad de alternar del diseño personalizado](assets/s2.png)
 
-ZIP de muestra para un diseño de panel personalizado y un formulario adaptable que lo utiliza.
+Ejemplo de ZIP para un diseño de panel personalizado y un formulario adaptable que lo utilice.
 
 [Obtener archivo](assets/af-custom-layout.zip)

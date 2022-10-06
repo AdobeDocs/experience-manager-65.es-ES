@@ -1,5 +1,5 @@
 ---
-title: Trabajar con publicación selectiva en Dynamic Media
+title: Trabajo con Publicación selectiva en Dynamic Media
 description: Puede elegir entre publicar o cancelar la publicación de recursos en Adobe Experience Manager o Dynamic Media en el nivel de carpeta, o desde ellos. Puede utilizar Administrar publicación o Publicación rápida en lugar de depender únicamente de la configuración de Dynamic Media cuya configuración sea global para todas las carpetas de la instancia de Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -118,7 +118,7 @@ Consulte [Crear una configuración de Dynamic Media](#configuring-dynamic-media-
 
 1. En **[!UICONTROL Programación]**, establezca el tiempo de publicación.
 
-   | Programa | Descripción |
+   | Programación | Descripción |
    | --- | --- |
    | **[!UICONTROL Ahora]** | Seleccione para publicar los recursos inmediatamente. |
    | **[!UICONTROL Más tarde]** | Seleccione para publicar los recursos en una fecha y hora concretas. |
@@ -150,7 +150,7 @@ Consulte [Crear una configuración de Dynamic Media](#configuring-dynamic-media-
 
 1. En **[!UICONTROL Programación]**, establezca el tiempo de desactivación.
 
-   | Programa | Descripción |
+   | Programación | Descripción |
    | --- | --- |
    | **[!UICONTROL Ahora]** | Seleccione para cancelar la publicación de los recursos inmediatamente. |
    | **[!UICONTROL Más tarde]** | Seleccione para cancelar la publicación de los recursos en una fecha y hora concretas. |
@@ -241,11 +241,11 @@ Opcionalmente, puede utilizar estas casillas de verificación con la variable **
    | Publicar recursos en la configuración de Dynamic Media | Acción seleccionada | Destino de publicación |
    | --- | --- | --- |
    | Inmediatamente o <br>Tras la activación | Publicación | Experience Manager y Dynamic Media |
-   | Inmediatamente o <br>Tras la activación | Publicar en Dynamic Media | Ninguna |
+   | Inmediatamente o <br>Tras la activación | Publicar en Dynamic Media | Ninguno |
    | Publicación selectiva | Publicación | Experience Manager |
    | Publicación selectiva | Publicar en Dynamic Media | Dynamic Media |
    | Inmediatamente o <br>Tras la activación | Cancelar publicación | Experience Manager y Dynamic Media |
-   | Inmediatamente o <br>Tras la activación | Cancelar la publicación de Dynamic Media | Ninguna |
+   | Inmediatamente o <br>Tras la activación | Cancelar la publicación de Dynamic Media | Ninguno |
    | Publicación selectiva | Cancelar publicación | Experience Manager |
    | Publicación selectiva | Cancelar la publicación de Dynamic Media | Dynamic Media |
 

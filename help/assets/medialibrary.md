@@ -57,7 +57,7 @@ Media Library proporciona funciones básicas de DAM para los siguientes casos de
 Para utilizar la funcionalidad de Media Library, puede utilizar la variable predeterminada [!DNL Experience Manager] interfaz de usuario. Media Library forma parte del [!DNL Experience Manager Sites] no se requiere interfaz ni complemento separados. Con la interfaz existente, los usuarios de Media Library tienen derecho a realizar las siguientes tareas:
 
 * Cree carpetas para organizar los recursos.
-* Carga de recursos.
+* Carga de activos.
 * Publicar recursos.
 * Editar, mover y copiar recursos.
 * Examinar, filtrar y buscar recursos (incluye la búsqueda por similitudes).

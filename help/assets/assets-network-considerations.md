@@ -1,29 +1,29 @@
 ---
 title: Consideraciones y requisitos de red
-description: Analiza las consideraciones de red al diseñar una implementación [!DNL Adobe Experience Manager Assets] .
+description: Analiza las consideraciones de red al diseñar un [!DNL Adobe Experience Manager Assets] implementación.
 contentOwner: AG
 role: Architect, Admin
-feature: Herramientas para desarrolladores
+feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
 
 # [!DNL Assets] consideraciones de red {#assets-network-considerations}
 
-Comprender su red es tan importante como comprender [!DNL Adobe Experience Manager Assets]. La red puede afectar a la carga, descarga y experiencia del usuario. La elaboración de diagramas de topología de red ayuda a identificar los puntos de interrupción y las áreas suboptimizadas de la red que debe corregir para mejorar el rendimiento de la red y la experiencia del usuario.
+Comprender la red es tan importante como comprender [!DNL Adobe Experience Manager Assets]. La red puede afectar a la carga, descarga y experiencia del usuario. La elaboración de diagramas de topología de red ayuda a identificar los puntos de interrupción y las áreas suboptimizadas de la red que debe corregir para mejorar el rendimiento de la red y la experiencia del usuario.
 
 Asegúrese de incluir lo siguiente en el diagrama de red:
 
 * Conectividad desde el dispositivo cliente (por ejemplo, equipo, móvil y tableta) a la red.
 * Topología de la red corporativa.
-* Vínculo ascendente a Internet desde la red corporativa y el entorno [!DNL Experience Manager].
-* Topología del entorno [!DNL Experience Manager].
-* Defina consumidores simultáneos de la interfaz de red [!DNL Experience Manager].
-* Flujos de trabajo definidos de la implementación [!DNL Experience Manager].
+* Vínculo superior a Internet desde la red corporativa y la [!DNL Experience Manager] entorno.
+* Topología de [!DNL Experience Manager] entorno.
+* Defina los consumidores simultáneos del [!DNL Experience Manager] interfaz de red.
+* Flujos de trabajo definidos del [!DNL Experience Manager] implementación.
 
 ## Conectividad desde el dispositivo cliente a la red corporativa {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -31,7 +31,7 @@ Comience creando un diagrama de la conectividad entre los dispositivos cliente i
 
 ![chlimage_1-353](assets/chlimage_1-353.png)
 
-Los dispositivos cliente se conectan a la red corporativa de varias maneras, como WiFi compartido, Ethernet a un conmutador compartido y VPN. La identificación y comprensión de los puntos de interrupción en esta red es importante para la planificación [!DNL Assets] y para modificar la red.
+Los dispositivos cliente se conectan a la red corporativa de varias maneras, como WiFi compartido, Ethernet a un conmutador compartido y VPN. La identificación y comprensión de los puntos de interrupción en esta red es importante para [!DNL Assets] planificar y modificar la red.
 
 En la parte superior izquierda del diagrama, tres dispositivos comparten un punto de acceso WiFi de 48 Mbps. Si todos los dispositivos se cargan simultáneamente, el ancho de banda de red WiFi se comparte entre los dispositivos. En comparación con el sistema en su conjunto, un usuario puede encontrarse con un punto de estrangulamiento diferente para los tres clientes a través de este canal dividido.
 
@@ -47,15 +47,15 @@ El equipo mostrado a la derecha tiene un flujo ascendente limitado a la red corp
 
 El diagrama muestra velocidades de enlace ascendente más altas dentro de la red corporativa que las utilizadas generalmente. Estas tuberías son recursos compartidos. Si se espera que el conmutador compartido gestione 50 clientes, puede ser un punto de interrupción. En el diagrama inicial, solo dos equipos comparten la conexión concreta.
 
-## Vínculo ascendente a Internet desde la red corporativa y el entorno [!DNL Experience Manager] {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Vínculo superior a Internet desde la red corporativa y [!DNL Experience Manager] entorno {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 Es importante tener en cuenta factores desconocidos en Internet y en la conexión VPC porque el ancho de banda en Internet puede verse afectado debido a la carga máxima o a las interrupciones del proveedor a gran escala. En general, la conectividad a Internet es fiable. Sin embargo, a veces puede introducir puntos de estrangulamiento.
 
-En el enlace superior de una red corporativa a Internet, puede haber otros servicios usando el ancho de banda. Es importante comprender cuánto del ancho de banda se puede dedicar o priorizar para Assets. Por ejemplo, si un enlace de 1 Gbps ya se utiliza en un 80%, solo puede asignar un máximo del 20% del ancho de banda para [!DNL Experience Manager Assets].
+En el enlace superior de una red corporativa a Internet, puede haber otros servicios usando el ancho de banda. Es importante comprender cuánto del ancho de banda se puede dedicar o priorizar para Assets. Por ejemplo, si un enlace de 1 Gbps ya se está utilizando en un 80 %, solo puede asignar un máximo del 20 % del ancho de banda para [!DNL Experience Manager Assets].
 
-Los firewalls y los proxies empresariales también pueden dar forma al ancho de banda de muchas maneras diferentes. Este tipo de dispositivo puede priorizar el ancho de banda mediante la calidad del servicio, las limitaciones de ancho de banda por usuario o las limitaciones de velocidad de bits por host. Estos son puntos de interrupción importantes que deben examinarse, ya que pueden afectar significativamente a la experiencia del usuario [!DNL Assets].
+Los firewalls y los proxies empresariales también pueden dar forma al ancho de banda de muchas maneras diferentes. Este tipo de dispositivo puede priorizar el ancho de banda mediante la calidad del servicio, las limitaciones de ancho de banda por usuario o las limitaciones de velocidad de bits por host. Estos son puntos de interrupción importantes para su examen, ya que pueden tener un impacto significativo [!DNL Assets] experiencia del usuario.
 
 En este ejemplo, la empresa tiene un vínculo superior de 10 Gbps. Debería ser lo suficientemente grande para varios clientes. Además, el cortafuegos impone un límite de velocidad de host de 10 Mbps. Esta limitación puede limitar potencialmente el tráfico a un solo host a 10 Mbps, aunque el enlace ascendente a Internet sea de 10 Gbps.
 
@@ -63,21 +63,21 @@ Este es el punto de estrangulamiento más pequeño orientado al cliente. Sin emb
 
 A partir de los diagramas de ejemplo, puede concluir que seis dispositivos comparten un canal conceptual de 10 Mbps. Según el tamaño de los activos apalancados, esto puede ser inadecuado para satisfacer las expectativas del usuario.
 
-## Topología del entorno [!DNL Experience Manager] {#topology-of-the-aem-environment}
+## Topología de [!DNL Experience Manager] entorno {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-El diseño de la topología del entorno [!DNL Experience Manager] requiere un conocimiento detallado de la configuración del sistema y de cómo se conecta la red dentro del entorno del usuario.
+Diseño de la topología del [!DNL Experience Manager] requiere un conocimiento detallado de la configuración del sistema y de cómo está conectada la red dentro del entorno de usuario.
 
 El escenario de ejemplo incluye un conjunto de servidores de publicación con cinco servidores, un almacén binario S3 y Dynamic Media configurado.
 
-Dispatcher comparte su conexión de 100 Mbps con dos entidades, el mundo exterior y la implementación [!DNL Experience Manager]. Para operaciones de carga y descarga simultáneas, debe dividir este número entre dos. El almacenamiento externo adjunto utiliza una conexión independiente.
+Dispatcher comparte su conexión de 100 Mbps con dos entidades, el mundo exterior y el [!DNL Experience Manager] implementación. Para operaciones de carga y descarga simultáneas, debe dividir este número entre dos. El almacenamiento externo adjunto utiliza una conexión independiente.
 
-La implementación [!DNL Experience Manager] comparte su conexión de 1 Gbps con varios servicios. Desde la perspectiva de la topología de red, equivale a compartir un solo canal con diferentes servicios.
+La variable [!DNL Experience Manager] la implementación comparte su conexión de 1 Gbps con varios servicios. Desde la perspectiva de la topología de red, equivale a compartir un solo canal con diferentes servicios.
 
-Al revisar la red desde el dispositivo cliente hasta la implementación [!DNL Experience Manager], el punto de interrupción más pequeño parece ser el acelerador de firewall empresarial de 10 Mbit. Puede utilizar estos valores en la calculadora de tamaño de la [Guía de tamaño de los recursos](assets-sizing-guide.md) para determinar la experiencia del usuario.
+Revisión de la red desde el dispositivo cliente al [!DNL Experience Manager] la implementación, el punto de interrupción más pequeño parece ser el acelerador de firewall empresarial de 10 Mbit. Puede utilizar estos valores en la calculadora de tamaño de la [Guía de tamaño de recursos](assets-sizing-guide.md) para determinar la experiencia del usuario.
 
-## Flujos de trabajo definidos de la implementación [!DNL Experience Manager] {#defined-workflows-of-the-aem-deployment}
+## Flujos de trabajo definidos del [!DNL Experience Manager] implementación {#defined-workflows-of-the-aem-deployment}
 
 Al considerar el rendimiento de la red, puede ser importante tener en cuenta los flujos de trabajo y la publicación que se producirán en el sistema. Además, S3 u otro almacenamiento conectado en red que utilice y las solicitudes de E/S consumen ancho de banda de red. Por lo tanto, incluso en una red totalmente optimizada, el rendimiento puede verse limitado por la E/S de disco.
 

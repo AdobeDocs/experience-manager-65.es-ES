@@ -1,22 +1,21 @@
 ---
 title: API para trabajar con formularios enviados en el portal de formularios
-seo-title: API para trabajar con formularios enviados en el portal de formularios
+seo-title: APIs to work with submitted forms on forms portal
 description: AEM Forms proporciona API que puede utilizar para consultar y realizar acciones en los datos de formularios enviados en el portal de formularios.
-seo-description: AEM Forms proporciona API que puede utilizar para consultar y realizar acciones en los datos de formularios enviados en el portal de formularios.
+seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a685889e-5d24-471c-926d-dbb096792bc8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 7%
+source-wordcount: '541'
+ht-degree: 9%
 
 ---
-
 
 # API para trabajar con formularios enviados en el portal de formularios {#apis-to-work-with-submitted-forms-on-forms-portal}
 
@@ -230,4 +229,3 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSub
 ```json
 {"formName":"form2","owner":"admin","jcr:lastModified":1446727516593,"path":"/content/forms/fp/admin/submit/metadata/1403037413508500.html","submitID":"1403037413508500","status":"submitted"}
 ```
-

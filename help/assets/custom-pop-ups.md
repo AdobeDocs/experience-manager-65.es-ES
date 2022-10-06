@@ -1,25 +1,25 @@
 ---
-title: Crear ventanas emergentes personalizadas con la vista rápida
-seo-title: Utilice la vista rápida para crear ventanas emergentes personalizadas
+title: Creación de ventanas emergentes personalizadas con Quickview
+seo-title: Use Quickview to create custom pop-ups
 description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en las ventanas emergentes.
-seo-description: La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Puede almacenar en déclencheur el contenido personalizado para que se muestre en las ventanas emergentes.
+seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
-feature: Visores
+feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1051'
 ht-degree: 1%
 
 ---
 
-# Crear ventanas emergentes personalizadas con la vista rápida {#using-quickviews-to-create-custom-pop-ups}
+# Creación de ventanas emergentes personalizadas con Quickview {#using-quickviews-to-create-custom-pop-ups}
 
 La vista rápida predeterminada se utiliza en las experiencias de comercio electrónico, en las que se muestra una ventana emergente con información del producto para dirigir una compra. Sin embargo, puede almacenar en déclencheur contenido personalizado para que se muestre en las ventanas emergentes. Según el visor, esta funcionalidad permite a los usuarios seleccionar una zona interactiva, una imagen en miniatura o un mapa de imágenes para ver información o contenido relacionado.
 
@@ -49,7 +49,7 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
     </tr>
     <tr>
     <td>Vídeos interactivos</td>
-    <td><a href="/help/assets/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Añadir interactividad al vídeo</a>.</td>
+    <td><a href="/help/assets/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Adición de interactividad al vídeo</a>.</td>
     </tr>
     <tr>
     <td>Banner de carrusel</td>
@@ -76,7 +76,7 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
     </tr>
     <tr>
     <td>Banner de carrusel</td>
-    <td><a href="/help/assets/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Adición de un banner de carrusel a la página</a> de su sitio web.<br /> </td>
+    <td><a href="/help/assets/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Adición de un banner de carrusel a la página del sitio web</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
@@ -85,8 +85,8 @@ Aunque la funcionalidad de cada visor es diferente, el proceso de creación de u
 
    El visor utiliza un controlador denominado `QuickViewActive`.
 
-   ****
-EjemploSupongamos que utiliza el siguiente código incrustado de ejemplo en la página web para una imagen interactiva:
+   **Ejemplo**
+Supongamos que utiliza el siguiente código incrustado de ejemplo en la página web para una imagen interactiva:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -107,17 +107,17 @@ EjemploSupongamos que utiliza el siguiente código incrustado de ejemplo en la p
    })
    ```
 
-   Obtenga más información sobre el método `setHandlers()` en lo siguiente:
+   Más información sobre `setHandlers()` en el siguiente método:
 
    * Visor de imágenes interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * Visor de vídeo interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Ahora debe configurar el controlador `quickViewActivate`.
+1. Ahora debe configurar la variable `quickViewActivate` controlador.
 
-   El controlador `quickViewActivate` controla la vista rápida en el visor. El controlador contiene la lista de variables y las llamadas de función que se utilizan con la vista rápida. El código incrustado proporciona una asignación para la variable de SKU establecida en la vista rápida y una llamada de función `loadQuickView` de ejemplo.
+   La variable `quickViewActivate` controla la vista rápida en el visor. El controlador contiene la lista de variables y las llamadas de función que se utilizan con la vista rápida. El código incrustado proporciona una asignación para la variable de SKU establecida en la vista rápida y un ejemplo `loadQuickView` llamada de función.
 
-   **Variables**
-mappingMap para usar en su página web con el valor SKU y las variables genéricas contenidas en Quickview:
+   **Asignación de variables**
+Asigne variables para su uso en la página web al valor de SKU y a las variables genéricas incluidas en la vista rápida:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -132,14 +132,14 @@ mappingMap para usar en su página web con el valor SKU y las variables genéric
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
 
-   **Función**
-callEl controlador también requiere una llamada a la función para que funcione Quickview. Se supone que la página host puede acceder a la función. El código incrustado proporciona una llamada de función de ejemplo:
+   **Llamada de función**
+El controlador también requiere una llamada a la función para que funcione Quickview. Se supone que la página host puede acceder a la función. El código incrustado proporciona una llamada de función de ejemplo:
 
    `loadQuickView(sku)`
 
-   La llamada a la función de ejemplo supone que la función `loadQuickView()` existe y es accesible.
+   La llamada a la función de ejemplo asume la función `loadQuickView()` existe y es accesible.
 
-   Obtenga más información sobre el método `quickViewActivate` en lo siguiente:
+   Más información sobre `quickViewActivate` en el siguiente método:
 
    * Visor de imágenes interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
    * Visor de vídeo interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
@@ -150,8 +150,8 @@ callEl controlador también requiere una llamada a la función para que funcione
    * Descomente la sección setHandlers del código incrustado.
    * Asigne cualquier variable adicional contenida en la vista rápida.
 
-      * Actualice la llamada `loadQuickView(sku,*var1*,*var2*)` si está agregando variables adicionales.
-   * Cree una función `loadQuickView` () simple en la página, fuera del visor.
+      * Actualice el `loadQuickView(sku,*var1*,*var2*)` llamada de si va a añadir variables adicionales.
+   * Cree una sencilla `loadQuickView` () en la página, fuera del visor.
 
       Por ejemplo, a continuación se escribe el valor de SKU en la consola del explorador:
 
@@ -161,14 +161,14 @@ callEl controlador también requiere una llamada a la función para que funcione
    }
    ```
 
-   * Cargue una página HTML de prueba en un servidor web y ábrala.
+   * Cargue una página de HTML de prueba en un servidor web y ábrala.
 
       Con las variables de la vista rápida asignadas y la llamada a la función establecida, la consola del explorador escribe el valor de la variable en la consola del explorador mediante la función de ejemplo proporcionada.
 
 
 
-1. Ahora puede utilizar una función para invocar una ventana emergente simple en la vista rápida. El siguiente ejemplo utiliza un `DIV` para una ventana emergente.
-1. Establezca el estilo de la ventana emergente `DIV` de la siguiente manera. Añada su propio estilo adicional como desee.
+1. Ahora puede utilizar una función para invocar una ventana emergente simple en la vista rápida. El ejemplo siguiente utiliza un `DIV` para ver una ventana emergente.
+1. Estilo de la ventana emergente `DIV` de la siguiente manera. Añada su propio estilo adicional como desee.
 
    ```xml
    <style type="text/css">
@@ -180,7 +180,7 @@ callEl controlador también requiere una llamada a la función para que funcione
    </style>
    ```
 
-1. Coloque la ventana emergente `DIV` en el cuerpo de la página HTML.
+1. Colocar la ventana emergente `DIV` en el cuerpo de la página HTML.
 
    Uno de los elementos se configura con un ID que se actualiza con el valor SKU cuando el usuario invoca una vista rápida. El ejemplo también incluye un botón simple para volver a ocultar la ventana emergente una vez que esté visible.
 
@@ -204,20 +204,20 @@ callEl controlador también requiere una llamada a la función para que funcione
    </script>
    ```
 
-1. Cargue una página HTML de prueba en el servidor web y ábrala. El visor muestra la ventana emergente `DIV` cuando un usuario invoca una vista rápida.
+1. Cargue una página de HTML de prueba en el servidor web y ábrala. El visor muestra la ventana emergente `DIV` cuando un usuario invoca una vista rápida.
 1. **Cómo mostrar la ventana emergente personalizada en modo de pantalla completa**
 
    Algunos visores, como el de vídeo interactivo, admiten la visualización en modo de pantalla completa. Sin embargo, el uso de la ventana emergente como se describe en los pasos anteriores hace que se muestre detrás del visor mientras está en modo de pantalla completa.
 
-   Para que la pantalla emergente se muestre tanto en el modo estándar como en el de pantalla completa, se adjunta la ventana emergente al contenedor del visor. Utilice un segundo método de controlador, `initComplete`.
+   Para que la pantalla emergente se muestre tanto en el modo estándar como en el de pantalla completa, se adjunta la ventana emergente al contenedor del visor. Utilizar un segundo método de controlador, `initComplete`.
 
-   El controlador `initComplete` se invoca después de inicializar el visor.
+   La variable `initComplete` se invoca después de inicializar el visor.
 
    ```xml
    "initComplete":function() { code block }
    ```
 
-   Obtenga más información sobre el método `init()` en lo siguiente:
+   Más información sobre `init()` en el siguiente método:
 
    * Visor de imágenes interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
    * Visor de vídeo interactivo: [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
@@ -264,8 +264,8 @@ callEl controlador también requiere una llamada a la función para que funcione
 
    `*viewerInstance.*init()`
 
-   ****
-EjemploEste ejemplo utiliza el visualizador de imagen interactiva.
+   **Ejemplo**
+Este ejemplo utiliza el visualizador de imagen interactiva.
 
    `s7interactiveimageviewer.init()`
 

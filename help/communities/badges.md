@@ -1,8 +1,8 @@
 ---
 title: Consola Distintivos
-seo-title: Consola Distintivos
+seo-title: Badges Console
 description: La consola Distintivos de comunidades le permite añadir distintivos personalizados que se pueden mostrar para los miembros cuando se ganan (se conceden) o cuando asumen una función específica en la comunidad (se asignan)
-seo-description: La consola Distintivos de comunidades le permite añadir distintivos personalizados que se pueden mostrar para los miembros cuando se ganan (se conceden) o cuando asumen una función específica en la comunidad (se asignan)
+seo-description: The Communities Badges console lets you add custom badges that can be displayed for members when earned (awarded) or when they take on a specific role in the community (assigned)
 uuid: 7103b133-ef3f-47d6-a2dc-4e6ff92e8fed
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: 50ed9ec4-ff04-4f9d-aefb-0837542a9455
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '287'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ Esta consola muestra los distintivos actualmente disponibles y desde los que se 
 
 Se crea un distintivo cargando una imagen suficientemente pequeña (72 ppp con una altura que oscila entre 26 y 32 píxeles) y proporcionando un nombre. La imagen del distintivo se almacena en el repositorio en `/libs/settings/community/badging/images` y se duplica automáticamente en el entorno de publicación.
 
-Si el entorno de publicación es un conjunto de editores, es necesario configurar la [sincronización de usuarios](/help/communities/sync.md).
+Si el entorno de publicación es un conjunto de editores, es necesario configurar [sincronización de usuarios](/help/communities/sync.md).
 
 ![create-badge](assets/create-badge.png)
 
@@ -57,18 +57,18 @@ Si el entorno de publicación es un conjunto de editores, es necesario configura
 
 * **Nombre**
 
-   (*Obligatorio*) El nombre del distintivo. Es el `Display Name` predeterminado, así como el nombre del nodo del repositorio. Si el `Name` no es un nombre de nodo de repositorio válido, se modificará.
+   (*Requerido*) El nombre del distintivo. Es el valor predeterminado `Display Name` así como el nombre del nodo del repositorio. Si la variable `Name` no es un nombre de nodo de repositorio válido, se modificará.
 
 * **Nombre para mostrar**
 
-   (*Opcional*) El nombre que se mostrará para el distintivo en la interfaz de usuario. El valor predeterminado es el texto sin modificar introducido para `Name`.
+   (*Opcional*) Nombre que se mostrará para el distintivo en la interfaz de usuario. El valor predeterminado es el texto sin modificar introducido para la variable `Name`.
 
 * **Descripción**
 
-   (*Opcional*) Una descripción para el distintivo.
+   (*Opcional*) Descripción del distintivo.
 
 ## Información adicional {#additional-information}
 
-Para obtener más información sobre la configuración de las reglas de puntuación y distintivo, consulte [Puntuación y distintivos](/help/communities/implementing-scoring.md).
+Para obtener más información sobre la configuración de reglas de puntuación y de distintivo, consulte [Puntuación y distintivos](/help/communities/implementing-scoring.md).
 
-Para administrar distintivos para miembros, consulte [Consola de miembros](/help/communities/members.md).
+Para administrar distintivos para miembros, consulte [Consola Miembros](/help/communities/members.md).

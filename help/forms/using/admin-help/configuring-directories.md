@@ -43,7 +43,7 @@ Para cada dominio de empresa que configure, especifique los directorios que cons
 
 ### Añadir un SPI personalizado {#add-a-custom-spi}
 
-Para obtener información sobre la creación de un SPI personalizado, consulte &quot;Desarrollo de SPI para formularios AEM&quot; en [Programación con formularios AEM](https://www.adobe.com/go/learn_aemforms_programming_63). Para que un SPI personalizado recién implementado esté disponible para la asociación con el dominio, reinicie el servidor.
+Para obtener información sobre la creación de un SPI personalizado, consulte &quot;Desarrollo de SPI para AEM formularios&quot; en [Programación con formularios AEM](https://www.adobe.com/go/learn_aemforms_programming_63). Para que un SPI personalizado recién implementado esté disponible para la asociación con el dominio, reinicie el servidor.
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios.
 1. Haga clic en Nuevo dominio de empresa o seleccione un dominio de empresa existente.
@@ -78,27 +78,27 @@ Al sincronizar los dominios después de eliminar un directorio, todos los usuari
 
 Cuando agregue un directorio a un dominio, especifique la siguiente configuración de directorio.
 
-**Servidor:**  (obligatorio) nombre de dominio completo (FQDN) del servidor de directorios. Por ejemplo, para un equipo llamado x en la red adobe.com, el FQDN es x.adobe.com. Se puede usar una dirección IP en lugar del nombre del servidor FQDN.
+**Servidor:** (Obligatorio) Nombre de dominio completo (FQDN) del servidor de directorios. Por ejemplo, para un equipo llamado x en la red adobe.com, el FQDN es x.adobe.com. Se puede usar una dirección IP en lugar del nombre del servidor FQDN.
 
-**Puerto:**  (obligatorio) puerto que utiliza el servidor de directorios. Normalmente, 389 o 636 si el protocolo Secure Sockets Layer (SSL) se utiliza para enviar información de autenticación a través de la red.
+**Puerto:** (Obligatorio) El puerto que utiliza el servidor de directorios. Normalmente, 389 o 636 si el protocolo Secure Sockets Layer (SSL) se utiliza para enviar información de autenticación a través de la red.
 
-**SSL:**  (obligatorio) Especifica si el servidor de directorio utiliza SSL al enviar datos a través de la red. El valor predeterminado es No. Cuando se establece en Sí, el certificado de servidor LDAP correspondiente debe ser de confianza para el entorno de tiempo de ejecución (JRE) de Java™ del servidor de aplicaciones.
+**SSL:** (Obligatorio) Especifica si el servidor de directorio utiliza SSL al enviar datos a través de la red. El valor predeterminado es No. Cuando se establece en Sí, el certificado de servidor LDAP correspondiente debe ser de confianza para el entorno de tiempo de ejecución (JRE) de Java™ del servidor de aplicaciones.
 
-**Enlace**  (obligatorio) Especifica cómo acceder al directorio.
+**Enlace** (Obligatorio) Especifica cómo acceder al directorio.
 
-**Anónimo:**  no se requiere nombre de usuario ni contraseña. Es posible que un usuario anónimo solo pueda recuperar una cantidad limitada de datos. Esta opción puede resultar útil para la prueba inicial.
+**Anónimo:** No se requiere nombre de usuario ni contraseña. Es posible que un usuario anónimo solo pueda recuperar una cantidad limitada de datos. Esta opción puede resultar útil para la prueba inicial.
 
-**Usuario:** se requiere autenticación. En el cuadro Nombre, especifique el nombre del registro de usuario que puede acceder al directorio. Es mejor introducir el nombre de reconocimiento completo (DN) de la cuenta de usuario, como cn=Jane Doe, ou=user, dc=can, dc=com. En el cuadro Contraseña, especifique la contraseña asociada. Estos ajustes son necesarios cuando selecciona Usuario como opción de enlace.
+**Usuario:** Se requiere autenticación. En el cuadro Nombre, especifique el nombre del registro de usuario que puede acceder al directorio. Es mejor introducir el nombre de reconocimiento completo (DN) de la cuenta de usuario, como cn=Jane Doe, ou=user, dc=can, dc=com. En el cuadro Contraseña, especifique la contraseña asociada. Estos ajustes son necesarios cuando selecciona Usuario como opción de enlace.
 
-**Nombre:** Nombre que se puede utilizar para conectar con la base de datos LDAP cuando el acceso anónimo no está habilitado. Para Active Directory 2003, especifique `[domain name]\[userid]`. Para Sun™ One, eDirectory o IBM Tivoli Directory Server, especifique el nombre completo del usuario, como uid=lcuser,ou=it,o=company.com.
+**Nombre:** Nombre que se puede utilizar para conectarse a la base de datos LDAP cuando el acceso anónimo no está habilitado. Para Active Directory 2003, especifique `[domain name]\[userid]`. Para Sun™ One, eDirectory o IBM Tivoli Directory Server, especifique el nombre completo del usuario, como uid=lcuser,ou=it,o=company.com.
 
-**Contraseña:** la contraseña que corresponde al nombre que especificó para conectarse a la base de datos LDAP cuando el acceso anónimo no está habilitado.
+**Contraseña:** Contraseña que corresponde al nombre especificado para conectarse a la base de datos LDAP cuando el acceso anónimo no está habilitado.
 
-**Rellenar página con:** cuando se selecciona, rellena los atributos de las páginas de configuración de usuario y grupo con los valores LDAP predeterminados correspondientes.
+**Rellenar página con:** Cuando está seleccionado, rellena los atributos en las páginas de configuración de usuario y grupo con los valores LDAP predeterminados correspondientes.
 
-**Recuperar DN base:** recupera los DN base y los muestra en la lista desplegable. Esta configuración es útil cuando tiene varios DN base y necesita seleccionar un valor.
+**Recuperar DN base:** Recupera los DN base y los muestra en la lista desplegable. Esta configuración es útil cuando tiene varios DN base y necesita seleccionar un valor.
 
-**Habilitar referencia:** esta configuración es aplicable cuando su organización utiliza varios dominios de Active Directory organizados en una estructura jerárquica y ha especificado la configuración de directorio solo para el dominio principal. En este caso, al seleccionar esta opción, la Administración de usuarios puede acceder a los detalles de usuarios y grupos de los dominios secundarios.
+**Habilitar referente:** Esta configuración es aplicable cuando su organización utiliza varios dominios de Active Directory organizados en una estructura jerárquica y ha especificado la configuración de directorio solo para el dominio principal. En este caso, al seleccionar esta opción, la Administración de usuarios puede acceder a los detalles de usuarios y grupos de los dominios secundarios.
 
 >[!NOTE]
 >
@@ -106,87 +106,87 @@ Cuando agregue un directorio a un dominio, especifique la siguiente configuraci�
 
 ### Configuración de usuario {#user-settings}
 
-**Identificador único:**  (obligatorio) un atributo único y constante que se utiliza para identificar a los usuarios. Utilice un atributo que no sea DN como identificador único, ya que el DN de un usuario puede cambiar si se traslada a otra parte de la organización. Esta configuración depende del servidor de directorios. El valor es objectGUID para Active Directory 2003, nsuniqueID para Sun™ One y guid para eDirectory.
+**Identificador único:** (Obligatorio) Un atributo único y constante que se utiliza para identificar a los usuarios. Utilice un atributo que no sea DN como identificador único, ya que el DN de un usuario puede cambiar si se traslada a otra parte de la organización. Esta configuración depende del servidor de directorios. El valor es objectGUID para Active Directory 2003, nsuniqueID para Sun™ One y guid para eDirectory.
 
 >[!NOTE]
 >
 >Asegúrese de introducir un atributo que esté garantizado que sea único en su organización. La introducción de un valor incorrecto puede causar problemas graves en el sistema.
 
-**DN base:** se establece como punto de partida para sincronizar usuarios y grupos desde la jerarquía LDAP. Es mejor especificar un DN base en el nivel más bajo de la jerarquía que incluya a todos los usuarios y grupos que necesitan sincronizarse para los servicios.
+**DN base:** Establezca como punto de partida para sincronizar usuarios y grupos desde la jerarquía LDAP. Es mejor especificar un DN base en el nivel más bajo de la jerarquía que incluya a todos los usuarios y grupos que necesitan sincronizarse para los servicios.
 
-Si seleccionó la opción Enable reference en la configuración de Directorio, establezca la opción Base DN en la parte *dc* del DN. Para que funcione la referencia, el intervalo de búsqueda debe incluir los dominios principal y secundario.
+Si seleccionó la opción Enable reference en la configuración de Directorio, establezca la opción Base DN en la *dc* parte del DN. Para que funcione la referencia, el intervalo de búsqueda debe incluir los dominios principal y secundario.
 
 >[!NOTE]
 >
 >No incluya el DN del usuario en esta configuración. Para sincronizar un usuario concreto, utilice la configuración Filtro de búsqueda .
 
-Aunque la DN base es una configuración obligatoria en la consola de administración, algunos servidores de directorios, como IBM Domino Enterprise Server, pueden requerir una BaseDN vacía. Para especificar un DN base vacío, exporte el archivo config.xml, edite el ajuste en el archivo config.xml y, a continuación, vuelva a importarlo. (Consulte [Importación y exportación del archivo de configuración](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)).
+Aunque la DN base es una configuración obligatoria en la consola de administración, algunos servidores de directorios, como IBM Domino Enterprise Server, pueden requerir una BaseDN vacía. Para especificar un DN base vacío, exporte el archivo config.xml, edite el ajuste en el archivo config.xml y, a continuación, vuelva a importarlo. (Consulte [Importación y exportación del archivo de configuración](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-**Filtro de búsqueda:** (obligatorio) el filtro de búsqueda que se utilizará para encontrar el registro asociado al usuario. Puede realizar una búsqueda de un nivel o de un subnivel. (Consulte Sintaxis del filtro de búsqueda o RFC 2254.) Para obtener información adicional sobre el esquema de AD de Microsoft, consulte Esquema de Active Directory.
+**Filtro de búsqueda:** (Obligatorio) Filtro de búsqueda que se utilizará para encontrar el registro asociado al usuario. Puede realizar una búsqueda de un nivel o de un subnivel. (Consulte Sintaxis del filtro de búsqueda o RFC 2254.) Para obtener información adicional sobre el esquema de AD de Microsoft, consulte Esquema de Active Directory.
 
 **Descripción:** Atributo de esquema para la descripción del usuario
 
-**Nombre completo:**  (obligatorio) atributo de esquema para el nombre completo del usuario.
+**Nombre completo:** (Obligatorio) Atributo de esquema para el nombre completo del usuario
 
-**ID de inicio de sesión:**  (obligatorio) atributo de esquema para el ID de inicio de sesión del usuario
+**ID de inicio de sesión:** (Obligatorio) Atributo de esquema para el ID de inicio de sesión del usuario
 
-**Apellidos:**  (obligatorio) atributo de esquema para el apellido del usuario
+**Apellidos:** (Obligatorio) Atributo de esquema para el apellido del usuario
 
-**Nombre dado:**  (obligatorio) atributo de esquema para el nombre del usuario
+**Nombre dado:** (Obligatorio) Atributo de esquema para el nombre del usuario
 
 **Iniciales:** Atributo de esquema para las iniciales del usuario
 
-**Calendario empresarial:** permite asignar un calendario empresarial a un usuario según el valor de esta configuración (la clave del calendario empresarial). Los calendarios comerciales definen los días laborables y no laborables. AEM formularios pueden utilizar calendarios empresariales para calcular fechas y horas futuras en el caso de eventos como recordatorios, plazos y escalaciones. La forma en que asigne claves de calendario empresarial a los usuarios dependerá de si utiliza un dominio empresarial, local o híbrido. (Consulte Configuración de calendarios comerciales).
+**Calendario comercial:** Permite asignar un calendario empresarial a un usuario, según el valor de esta configuración (la clave del calendario empresarial). Los calendarios comerciales definen los días laborables y no laborables. AEM formularios pueden utilizar calendarios empresariales para calcular fechas y horas futuras en el caso de eventos como recordatorios, plazos y escalaciones. La forma en que asigne claves de calendario empresarial a los usuarios dependerá de si utiliza un dominio empresarial, local o híbrido. (Consulte Configuración de calendarios comerciales).
 
-Si utiliza un dominio de empresa, puede asignar la configuración del Calendario de negocios a un campo del directorio LDAP. Por ejemplo, si cada registro de usuario del directorio contiene un campo *country* y desea asignar calendarios de negocio en función del país donde se encuentra el usuario, especifique el nombre del campo *country* como valor para la configuración del Calendario de negocios. A continuación, puede asignar las claves del calendario empresarial (los valores definidos para el campo *country* en el directorio LDAP) a los calendarios comerciales en el flujo de trabajo de formularios.
+Si utiliza un dominio de empresa, puede asignar la configuración del Calendario de negocios a un campo del directorio LDAP. Por ejemplo, si cada registro de usuario del directorio contiene un *country* y desea asignar calendarios empresariales en función del país donde se encuentre el usuario, especifique el *country* nombre de campo como valor de la configuración del Calendario de negocio. A continuación, puede asignar las claves del calendario empresarial (los valores definidos para la variable *country* en el directorio LDAP) a calendarios empresariales en el flujo de trabajo de formularios.
 
 La cantidad de espacio que se utiliza para mostrar el nombre de la clave del calendario empresarial en las páginas de flujo de trabajo de los formularios es limitada. Limite el nombre de la clave de calendario empresarial a menos de 53 caracteres para evitar que se trunque en esas páginas.
 
-**Modificar marca de hora:** para habilitar la sincronización de directorios delta, establezca este valor para modificar TimeStamp. (Consulte Habilitar la sincronización de directorios delta).
+**Modificar marca de tiempo:** Para habilitar la sincronización de directorios delta, establezca este valor para modificar TimeStamp. (Consulte Habilitar la sincronización de directorios delta).
 
 **Organización:** Atributo de esquema para el nombre de la organización a la que pertenece el usuario.
 
 **Correo electrónico principal:** Atributo de esquema para la dirección de correo electrónico principal del usuario.
 
-**Correo electrónico secundario:** atributo de esquema para la dirección de correo electrónico secundaria del usuario.
+**Correo electrónico secundario:** Atributo de esquema para la dirección de correo electrónico secundaria del usuario.
 
 **Teléfono:** Atributo de esquema para el número de teléfono del usuario.
 
 **Dirección postal:** Atributo de esquema para la dirección de correo del usuario.
 
-**Configuración regional:** atributo de esquema que contiene la información de configuración regional ISO. El valor es un código de idioma de dos letras o un código de idioma y de país.
+**Configuración regional:** Atributo de esquema que contiene la información de configuración regional ISO. El valor es un código de idioma de dos letras o un código de idioma y de país.
 
-**Zona horaria:** atributo de esquema que contiene el huso horario en el que se encuentra el usuario. El valor es una cadena como Ciudad/País.
+**Zona horaria:** Atributo de esquema que contiene la zona horaria en la que se encuentra el usuario. El valor es una cadena como Ciudad/País.
 
-**Activar el control de vista de lista virtual (VLV):** control LDAP que permite a los formularios AEM recuperar datos en lotes desde el servidor de directorios. Si está utilizando Sun One como directorio LDAP y el directorio contiene muchos usuarios, al habilitar VLV se crea un índice que la Administración de usuarios puede usar al buscar usuarios. Esta función es útil cuando se utiliza una cuenta de usuario normal que solo puede sincronizar una cantidad limitada de datos. También puede habilitar VLV para grupos. Si selecciona Activar control de vista de lista virtual (VLV), especifique un nombre en el cuadro Campo de ordenación.
+**Activar el control de vista de lista virtual (VLV):** Control LDAP que permite a los formularios AEM recuperar datos en lotes desde el servidor de directorios. Si está utilizando Sun One como directorio LDAP y el directorio contiene muchos usuarios, al habilitar VLV se crea un índice que la Administración de usuarios puede utilizar al buscar usuarios. Esta función es útil cuando se utiliza una cuenta de usuario normal que solo puede sincronizar una cantidad limitada de datos. También puede habilitar VLV para grupos. Si selecciona Activar control de vista de lista virtual (VLV), especifique un nombre en el cuadro Campo de ordenación.
 
 >[!NOTE]
 >
 >Para habilitar VLV, configure Sun One. Consulte [Configuración de la administración de usuarios para utilizar la vista de lista virtual (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
-**Campo de ordenación:** si seleccionó Activar control de vista de lista virtual (VLV), especifique el nombre de atributo utilizado para ordenar el índice. Este nombre de atributo (como uid) es el que especificó cuando creó un índice para VLV en el servidor de directorios.
+**Campo de ordenación:** Si seleccionó Activar control de vista de lista virtual (VLV), especifique el nombre de atributo utilizado para ordenar el índice. Este nombre de atributo (como uid) es el que especificó cuando creó un índice para VLV en el servidor de directorios.
 
 ### Configuración de grupo {#group-settings}
 
-**Identificador único:**  (obligatorio) un atributo único y constante que se utiliza para identificar grupos. Utilice un atributo que no sea de DN como identificador único. Esta configuración depende del servidor de directorios. El valor es objectGUID para Active Directory 2003, nsuniqueID para Sun One y guid para eDirectory.
+**Identificador único:** (Obligatorio) Un atributo único y constante que se utiliza para identificar grupos. Utilice un atributo que no sea de DN como identificador único. Esta configuración depende del servidor de directorios. El valor es objectGUID para Active Directory 2003, nsuniqueID para Sun One y guid para eDirectory.
 
 >[!NOTE]
 >
 >Asegúrese de introducir un atributo que esté garantizado que sea único en su organización. La introducción de un valor incorrecto puede causar problemas graves en el sistema.
 
-**DN base:**  (obligatorio) Nombre distintivo base del directorio.
+**DN base:** (Obligatorio) Nombre de reconocimiento base del directorio.
 
-Aunque la DN base es una configuración obligatoria en la consola de administración, algunos servidores de directorios, como IBM Domino Enterprise Server, requieren una BaseDN vacía. Para especificar un DN base vacío, exporte el archivo config.xml, edite el ajuste en el archivo config.xml y, a continuación, vuelva a importarlo. (Consulte [Importación y exportación del archivo de configuración](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)).
+Aunque la DN base es una configuración obligatoria en la consola de administración, algunos servidores de directorios, como IBM Domino Enterprise Server, requieren una BaseDN vacía. Para especificar un DN base vacío, exporte el archivo config.xml, edite el ajuste en el archivo config.xml y, a continuación, vuelva a importarlo. (Consulte [Importación y exportación del archivo de configuración](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-**Filtro de búsqueda:** (obligatorio) el filtro de búsqueda que se utilizará para encontrar el registro asociado al grupo. Puede realizar una búsqueda de un nivel o de un subnivel.
+**Filtro de búsqueda:** (Obligatorio) El filtro de búsqueda que se utilizará para encontrar el registro asociado al grupo. Puede realizar una búsqueda de un nivel o de un subnivel.
 
 **Descripción:** Atributo de esquema para la descripción del grupo
 
-**Nombre completo:**  (obligatorio) atributo de esquema para el nombre completo del grupo.
+**Nombre completo:** (Obligatorio) Atributo de esquema para el nombre completo del grupo
 
-**DN de miembro:**  (obligatorio) atributo de esquema para el nombre distintivo de los miembros de un grupo
+**DN de miembro:** (Obligatorio) Atributo de esquema para el nombre distintivo de los miembros de un grupo
 
-**Identificador único de miembro:** identificador único para un usuario o grupo que sea miembro del grupo seleccionado. Este valor depende del servidor de directorios. El valor es objectSID para AD2003, nsuniqueID para Sun One y guid para eDirectory.
+**Identificador único de miembro:** Identificador único de un usuario o grupo que es miembro del grupo seleccionado. Este valor depende del servidor de directorios. El valor es objectSID para AD2003, nsuniqueID para Sun One y guid para eDirectory.
 
 Si el DN de miembro se especifica con un atributo que no es de DN, la Administración de usuarios utiliza el Identificador único de miembro para consultar LDAP para recopilar el DN del usuario, ya que corresponde a un valor de identificador único.
 
@@ -198,15 +198,15 @@ Si DN se especifica como identificador único, no es necesario configurar el ide
 
 **Correo electrónico secundario:** Atributo de esquema para la dirección de correo electrónico secundaria del grupo
 
-**Modificar marca de hora:** para habilitar la sincronización de directorios delta, establezca este valor para modificar TimeStamp. (Consulte Habilitar la sincronización de directorios delta).
+**Modificar marca de tiempo:** Para habilitar la sincronización de directorios delta, establezca este valor para modificar TimeStamp. (Consulte Habilitar la sincronización de directorios delta).
 
-**Activar el control de vista de lista virtual (VLV):** control LDAP que permite a los formularios AEM recuperar datos en lotes desde el servidor de directorios. Si está utilizando Sun One como directorio LDAP y el directorio contiene muchos grupos, al habilitar VLV se crea un índice que la Administración de usuarios puede usar al buscar grupos. Esta función es útil cuando se utiliza una cuenta de usuario normal que solo puede sincronizar una cantidad limitada de datos. También puede habilitar VLV para usuarios. Si selecciona Activar control de vista de lista virtual (VLV), especifique un nombre de campo de ordenación.
+**Activar el control de vista de lista virtual (VLV):** Control LDAP que permite a los formularios AEM recuperar datos en lotes desde el servidor de directorios. Si está utilizando Sun One como directorio LDAP y el directorio contiene muchos grupos, al habilitar VLV se crea un índice que la Administración de usuarios puede usar al buscar grupos. Esta función es útil cuando se utiliza una cuenta de usuario normal que solo puede sincronizar una cantidad limitada de datos. También puede habilitar VLV para usuarios. Si selecciona Activar control de vista de lista virtual (VLV), especifique un nombre de campo de ordenación.
 
 >[!NOTE]
 >
 >Para habilitar VLV, configure Sun One. Consulte [Configuración de la administración de usuarios para utilizar la vista de lista virtual (VLV)](configuring-directories.md#configure-user-management-to-use-virtual-list-view-vlv).
 
-**Ordenar nombre de campo:** si seleccionó Activar control de vista de lista virtual (VLV), especifique el nombre de atributo utilizado para ordenar el índice. Este nombre de atributo es el que especificó cuando creó un índice para VLV en el servidor de directorios.
+**Nombre del campo de ordenación:** Si seleccionó Activar control de vista de lista virtual (VLV), especifique el nombre de atributo utilizado para ordenar el índice. Este nombre de atributo es el que especificó cuando creó un índice para VLV en el servidor de directorios.
 
 >[!NOTE]
 >
@@ -228,13 +228,13 @@ El protocolo LDAP proporciona un mecanismo para consultar grandes conjuntos de d
 >
 >En esta sección se describe el uso del control VLV para Sun ONE Directory Server. Sin embargo, puede utilizar este control para cualquier servidor de directorios que admita el control VLV.
 
-1. Al configurar el directorio, seleccione Activar el control de vista de lista virtual (VLV) tanto en la página Configuración de usuario como en la página Configuración de grupo . Al seleccionar la casilla de verificación, también debe especificar un nombre de clasificación en el cuadro Campo de ordenación. El valor predeterminado es uid. (Consulte [Añadir directorios o SPI personalizados](configuring-directories.md#adding-directories-or-custom-spis) o [Editar un directorio](configuring-directories.md#edit-a-directory)).
-1. Utilice la consola de administración Sun ONE o un script de línea de comandos para crear las entradas LDAP VLV para usuarios y grupos. Si utiliza un script de línea de comandos, puede utilizar los usuarios y grupos de ejemplo de archivos LDIF. (Consulte [Configuración del servidor de directorio Sun ONE para VLV](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv)).
-1. Detenga el servidor y cree el índice requerido. (Consulte [Crear el índice del servidor de directorios para VLV](configuring-directories.md#create-the-directory-server-index-for-vlv)).
+1. Al configurar el directorio, seleccione Activar el control de vista de lista virtual (VLV) tanto en la página Configuración de usuario como en la página Configuración de grupo . Al seleccionar la casilla de verificación, también debe especificar un nombre de clasificación en el cuadro Campo de ordenación. El valor predeterminado es uid. (Consulte [Añadir directorios o SPI personalizados](configuring-directories.md#adding-directories-or-custom-spis) o [Editar un directorio](configuring-directories.md#edit-a-directory).)
+1. Utilice la consola de administración Sun ONE o un script de línea de comandos para crear las entradas LDAP VLV para usuarios y grupos. Si utiliza un script de línea de comandos, puede utilizar los usuarios y grupos de ejemplo de archivos LDIF. (Consulte [Configuración del Sun ONE Directory Server para VLV](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
+1. Detenga el servidor y cree el índice requerido. (Consulte [Creación del Índice de Servidor de Directorios para VLV](configuring-directories.md#create-the-directory-server-index-for-vlv).)
 
 ### Configuración del Sun ONE Directory Server para VLV {#configuring-the-sun-one-directory-server-for-vlv}
 
-La creación de un VLV requiere un par de entradas que incluyen las clases de objeto `vlvSearch` y `vlvIndex`. La entrada vlvSearch incluye una base de búsqueda y el atributo `vlvFilter`, que especifica la clase de objeto que contiene los atributos que desea ordenar. La clase de objeto `vlvIndex` incluye el atributo `vlvSort`, que especifica uno o más atributos para ordenar y el orden para ordenarlos. (El signo menos (-) denota el orden alfabético inverso). El uso de VLV con formularios AEM requiere entradas independientes para usuarios y grupos.
+La creación de un VLV requiere un par de entradas que incluyan la variable `vlvSearch` y `vlvIndex` clases de objetos. La entrada vlvSearch incluye una base de búsqueda y la variable `vlvFilter` , que especifica la clase de objeto que contiene los atributos que desea ordenar. La variable `vlvIndex` la clase object incluye el `vlvSort` , que especifica uno o más atributos para ordenar y el orden para ordenarlos. (El signo menos (-) denota el orden alfabético inverso). El uso de VLV con formularios AEM requiere entradas independientes para usuarios y grupos.
 
 >[!NOTE]
 >
@@ -263,21 +263,21 @@ Este es un ejemplo de entrada de script LDIF para VLV para usuarios:
 
 1. El script de ejemplo tiene una entrada LDAP denominada `lcuser`. Esta entrada es para la configuración relacionada con VLV para la sincronización de usuarios en AEM formularios. Modifique las siguientes propiedades según corresponda:
 
-   **Nombre de entrada:** el nombre de entrada en este ejemplo es  `lcuser`. Si se cambia `lcuser`, debe cambiarse en todas las áreas de la secuencia de comandos de ejemplo.
+   **Nombre de entrada:** El nombre de entrada de este ejemplo es `lcuser`. If `lcuser` se cambia, se debe cambiar en todas las áreas de la secuencia de comandos de ejemplo.
 
    **vlvBase:** DN base especificado en la página Configuración de usuario.
 
-   **vlvFilter:** filtro de búsqueda especificado en la página Configuración de usuario.
+   **vlvFilter:** Filtro de búsqueda especificado en la página Configuración de usuario.
 
    **vlvSort:** Campo de ordenación especificado en la sección de configuración de VLV de la página Configuración de usuario. Un control VLV requiere que especifique un control de clasificación. Este campo se utiliza como parámetro de ordenación para el índice vlv creado.
 
-   **aci:** el control de acceso especificado en la secuencia de comandos de ejemplo concede a cualquier usuario autenticado el derecho de acceder a los índices VLV para operaciones de lectura, búsqueda y comparación. El administrador puede restringir el acceso a un usuario de enlace, que está configurado en la página Configuración del servidor de directorios especificada en la interfaz de usuario de Administración de usuarios. Si no se proporcionan permisos, la búsqueda de usuarios no puede utilizar el VLV y el servidor LDAP genera una excepción de permisos.
+   **aci:** El control de acceso especificado en la secuencia de comandos de ejemplo concede a cualquier usuario autenticado el derecho de acceder a los índices VLV para operaciones de lectura, búsqueda y comparación. El administrador puede restringir el acceso a un usuario de enlace, que está configurado en la página Configuración del servidor de directorios especificada en la interfaz de usuario de Administración de usuarios. Si no se proporcionan permisos, la búsqueda de usuarios no puede utilizar el VLV y el servidor LDAP genera una excepción de permisos.
 
    >[!NOTE]
    >
-   >Como convención, el nombre de entrada vlvIndex también se establece en `lcuser`, pero puede darle un nombre diferente. Utilice el mismo nombre en la herramienta vlvindex. (Consulte [Crear el índice del servidor de directorios para VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Como convención, el nombre de entrada vlvIndex también se establece en `lcuser`, pero puede darle un nombre diferente. Utilice el mismo nombre en la herramienta vlvindex. (Consulte [Creación del Índice de Servidor de Directorios para VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
-1. Con la herramienta `ldapmodify` proporcionada con Sun ONE Server, cree una entrada similar para los grupos utilizando el DN base, el Filtro de búsqueda y el Campo de ordenación del grupo, respectivamente:
+1. Al usar la variable `ldapmodify` herramienta proporcionada con Sun ONE Server, cree una entrada similar para los grupos utilizando el DN base, el Filtro de búsqueda y el Campo de ordenación del grupo, respectivamente:
 
    `server directory\shared\bin>ldapmodify -v -a -h host -p port -D "admin user" -w "password" -f "LDIF file location"`
 
@@ -307,11 +307,11 @@ Después de configurar los directorios y crear las entradas LDAP VLV para usuari
     [21/Nov/2007:16:47:29 +051800] - userRoot: Finished indexing.
    ```
 
-   La herramienta vlvindex está presente en el directorio de instancias del servidor de directorios. Si Sun ONE Server tiene dos instancias que ejecutan server1 y server2, la herramienta vlvindex se encuentra en el directorio *Sun ONE server directory*\server1. El valor del parámetro `-T` es el valor del atributo `cn` de la entrada vlvindex creada anteriormente en el LDIF de muestra. En este caso, es `lcuser`.
+   La herramienta vlvindex está presente en el directorio de instancias del servidor de directorios. Si Sun ONE Server tiene dos instancias que ejecutan server1 y server2, la herramienta vlvindex se encuentra en *Directorio de servidor Sun ONE*\server1 directorio. El valor del parámetro `-T` es el valor de la variable `cn` de la entrada vlvindex creada anteriormente en la muestra LDIF. En este caso, es `lcuser`.
 
 1. Si VLV también está habilitado para grupos, cree el índice correspondiente para los grupos. Compruebe si los índices se crean ejecutando el siguiente comando:
 
-   *sun one server* `\shared\bin>ldapsearch -h`** `-p`*directoryhostnameport no* `-s base -b "" objectclass=*`
+   *sun one server directory* `\shared\bin>ldapsearch -h`*hostname* `-p`*puerto no* `-s base -b "" objectclass=*`
 
    Se generan resultados como los siguientes datos de ejemplo:
 

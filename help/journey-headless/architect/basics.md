@@ -1,14 +1,15 @@
 ---
 title: Descubra los conceptos básicos del modelado de contenido
 description: Conozca los aspectos básicos del modelado de contenido para su CMS sin encabezado mediante fragmentos de contenido.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
-# Descubra los conceptos básicos del modelado de contenido para usuarios sin encabezado con AEM {#content-modeling-headless-basics}
+# Descubra los conceptos básicos del modelado de contenido para Headless con AEM {#content-modeling-headless-basics}
 
 ## La historia hasta ahora {#story-so-far}
 
@@ -81,7 +82,7 @@ AEM proporciona los siguientes tipos de datos para modelar el contenido:
 * Número
 * Booleano
 * Fecha y hora
-* Enumeración
+* Lista desglosada
 * Etiquetas
 * Referencia de contenido
 * Referencia al fragmento
@@ -102,9 +103,9 @@ Por ejemplo, puede hacer referencia a una imagen en una ubicación específica.
 * **Referencia de fragmento**
 Esto proporciona referencias a otros fragmentos de contenido.
 Este tipo de referencia se utiliza para crear contenido anidado y presenta las relaciones necesarias para modelar el contenido.
-El tipo de datos se puede configurar para que los autores de fragmentos puedan:
-   * Edite directamente el fragmento al que se hace referencia.
-   * Cree un nuevo fragmento de contenido basado en el modelo apropiado
+El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
+   * Editar directamente el fragmento al que se hace referencia.
+   * Crear un nuevo fragmento de contenido basado en el modelo apropiado
 
 >[!NOTE]
 >
@@ -125,8 +126,8 @@ Las referencias de fragmento hacen precisamente eso: le permiten hacer referenci
 Por ejemplo, puede tener los siguientes modelos de fragmento de contenido definidos:
 
 * Ciudad
-* Empresa
-* Person
+* Compañía
+* Persona
 * Premios
 
 Parece bastante sencillo, pero por supuesto una compañía tiene un CEO y empleados....y todas son personas, cada una definida como una persona.

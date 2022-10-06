@@ -1,35 +1,34 @@
 ---
-title: Página Crear comentarios
-seo-title: Página Crear comentarios
-description: Página Comentarios de vista
-seo-description: Página Comentarios de vista
+title: Página Crear Comentarios
+seo-title: Create Comments Page
+description: Ver página Comentarios
+seo-description: View Comments page
 uuid: 1f043133-51c6-41e8-bbdb-d9fd7780136b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: b3cb8f12-197e-4f5e-bd7d-70b55e76b0ca
-translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+exl-id: 35b8efac-5716-4ab3-9b8a-ea957023b51f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '57'
 ht-degree: 1%
 
 ---
 
+# Página Crear Comentarios {#create-comments-page}
 
-# Crear página de comentarios {#create-comments-page}
+**[Componente de comentarios de superposición de ⇐](overlay-comments.md) [Crear nodos limítrofes](overlay-create-nodes.md)**
 
-**[⇐ comentarios de superposición ](overlay-comments.md) [Componente Crear nodos](overlay-create-nodes.md)**
+## Página Comentarios {#comments-page}
 
-## Página de comentarios {#comments-page}
+La variable [Guía de componentes de comunidad](components-guide.md) permite superponer fácilmente el componente de comentarios.
 
-La [guía de componentes de comunidad](components-guide.md) permite superponer fácilmente el componente de comentarios.
-
-Vista de la página en la instancia de creación:
+Vea la página en la instancia de autor:
 
 * [http://localhost:4502/editor.html/content/community-components/en/comments.html](http://localhost:4502/editor.html/content/community-components/en/comments.html)
 
 ![comentarios](assets/comments.png)
 
-**[⇐ comentarios de superposición ](overlay-comments.md) [Componente Crear nodos](overlay-create-nodes.md)**
+**[Componente de comentarios de superposición de ⇐](overlay-comments.md) [Crear nodos limítrofes](overlay-create-nodes.md)**

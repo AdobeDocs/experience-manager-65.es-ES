@@ -1,36 +1,35 @@
 ---
-title: Integración de componentes del espacio de trabajo de AEM Forms en aplicaciones web
-seo-title: Integración de componentes del espacio de trabajo de AEM Forms en aplicaciones web
-description: Cómo reutilizar los componentes del espacio de trabajo de AEM Forms en sus propias aplicaciones web para aprovechar la funcionalidad y proporcionar una estrecha integración.
-seo-description: Cómo reutilizar los componentes del espacio de trabajo de AEM Forms en sus propias aplicaciones web para aprovechar la funcionalidad y proporcionar una estrecha integración.
+title: Integración de componentes de espacio de trabajo de AEM Forms en aplicaciones web
+seo-title: Integrating AEM Forms workspace components in web applications
+description: Cómo reutilizar los componentes del espacio de trabajo de AEM Forms en sus propias aplicaciones web para aprovechar la funcionalidad y proporcionar una integración más estrecha.
+seo-description: How to reuse AEM Forms workspace components in your own webapps to leverage functionality and provide tight integration.
 uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: bb4a500d-c34f-4586-83f0-ad7ef69b4fb1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
 
+# Integración de componentes de espacio de trabajo de AEM Forms en aplicaciones web {#integrating-aem-forms-workspace-components-in-web-applications}
 
-# Integración de componentes del espacio de trabajo de AEM Forms en aplicaciones Web {#integrating-aem-forms-workspace-components-in-web-applications}
+Puede utilizar el espacio de trabajo de AEM Forms [componentes](/help/forms/using/description-reusable-components.md) en su propia aplicación web. La siguiente implementación de ejemplo utiliza componentes de un paquete de desarrollo de espacio de trabajo de AEM Forms instalado en una instancia CRX™ para crear una aplicación web. Personalice la siguiente solución para adaptarla a sus necesidades específicas. La implementación de muestra se reutiliza `UserInfo`, `FilterList`y `TaskList`componentes dentro de un portal web.
 
-Puede utilizar el espacio de trabajo [componentes](/help/forms/using/description-reusable-components.md) de AEM Forms en su propia aplicación Web. La siguiente implementación de ejemplo utiliza componentes de un paquete de desarrollo de espacio de trabajo de AEM Forms instalado en una instancia de CRX™ para crear una aplicación web. Personalice la siguiente solución para adaptarla a sus necesidades específicas. La implementación de muestra reutiliza `UserInfo`, `FilterList` y `TaskList`componentes dentro de un portal Web.
-
-1. Inicie sesión en el entorno del CRXDE Lite en `https://'[server]:[port]'/lc/crx/de/`. Asegúrese de tener instalado un paquete de desarrollo de espacio de trabajo de AEM Forms.
-1. Cree una ruta `/apps/sampleApplication/wscomponents`.
-1. Copiar css, imágenes, js/libs, js/Runtime y js/registry.js
+1. Inicie sesión en el entorno de CRXDE Lite en `https://'[server]:[port]'/lc/crx/de/`. Asegúrese de tener instalado un paquete de desarrollo del espacio de trabajo de AEM Forms.
+1. Crear una ruta `/apps/sampleApplication/wscomponents`.
+1. Copie css, imágenes, js/libs, js/runtime y js/registry.js
 
    * de `/libs/ws`
    * hasta `/apps/sampleApplication/wscomponents`.
 
-1. Cree un archivo demoain.js en la carpeta /apps/sampleApplication/wscomponents/js. Copie el código de /libs/ws/js/main.js en demomain.js.
-1. En demomain.js, elimine el código para inicializar el router y agregue el siguiente código:
+1. Cree un archivo admin.js dentro de la carpeta /apps/sampleApplication/wscomponents/js . Copie el código de /libs/ws/js/main.js en demomain.js.
+1. En demomain.js, elimine el código para inicializar Router y agregue el siguiente código:
 
    ```javascript
    require(['initializer','runtime/util/usersession'],
@@ -43,9 +42,9 @@ Puede utilizar el espacio de trabajo [componentes](/help/forms/using/description
        });
    ```
 
-1. Cree un nodo bajo /content por nombre `sampleApplication` y escriba `nt:unstructured`. En las propiedades de este nodo, agregue `sling:resourceType` de tipo String y valor `sampleApplication`. En la Lista de Control de acceso de este nodo, agregue una entrada para `PERM_WORKSPACE_USER` que permita privilegios jcr:read. Además, en la Lista de Control de acceso de `/apps/sampleApplication` agregue una entrada para `PERM_WORKSPACE_USER` que permita privilegios jcr:read.
-1. En `/apps/sampleApplication/wscomponents/js/registry.js`, actualice las rutas de `/lc/libs/ws/` a `/lc/apps/sampleApplication/wscomponents/` para los valores de plantilla.
-1. En el archivo JSP de la página de inicio del portal, en `/apps/sampleApplication/GET.jsp`, agregue el siguiente código para incluir los componentes necesarios dentro del portal.
+1. Cree un nodo bajo /content por nombre `sampleApplication` y tipo `nt:unstructured`. En las propiedades de este nodo, agregue `sling:resourceType` de tipo String y value `sampleApplication`. En la Lista de control de acceso de este nodo, agregue una entrada para `PERM_WORKSPACE_USER` permitiendo privilegios jcr:read. Además, en la Lista de control de acceso de `/apps/sampleApplication` agregar una entrada para `PERM_WORKSPACE_USER` permitiendo privilegios jcr:read.
+1. En `/apps/sampleApplication/wscomponents/js/registry.js` actualizar rutas desde `/lc/libs/ws/` a `/lc/apps/sampleApplication/wscomponents/` para valores de plantilla.
+1. En su página de inicio del portal, archivo JSP en `/apps/sampleApplication/GET.jsp`, añada el siguiente código para incluir los componentes necesarios dentro del portal.
 
    ```jsp
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
@@ -54,11 +53,11 @@ Puede utilizar el espacio de trabajo [componentes](/help/forms/using/description
    <div class="taskListView gcomponent" data-name="tasklist"></div>
    ```
 
-   También incluya los archivos CSS necesarios para los componentes del espacio de trabajo de AEM Forms.
+   Incluya también los archivos CSS necesarios para los componentes del espacio de trabajo de AEM Forms.
 
    >[!NOTE]
    >
-   >Cada componente se agrega a la etiqueta de componente (con componente de clase) durante el procesamiento. Asegúrese de que la página de inicio contenga estas etiquetas. Consulte el archivo `html.jsp` del espacio de trabajo de AEM Forms para obtener más información sobre estas etiquetas de control base.
+   >Cada componente se añade a la etiqueta del componente (con componente de clase) durante la renderización. Asegúrese de que la página de inicio contenga estas etiquetas. Consulte la `html.jsp` del espacio de trabajo de AEM Forms para obtener más información sobre estas etiquetas de control base.
 
 1. Para personalizar los componentes, puede ampliar las vistas existentes para el componente requerido de la siguiente manera:
 
@@ -82,7 +81,7 @@ Puede utilizar el espacio de trabajo [componentes](/help/forms/using/description
    });
    ```
 
-1. Modifique la CSS del portal para configurar el diseño, la posición y el estilo de los componentes necesarios en el portal. Por ejemplo, desea mantener el color de fondo como negro para que este portal pueda realizar una vista correcta del componente userInfo. Puede hacerlo cambiando el color de fondo en `/apps/sampleApplication/wscomponents/css/style.css` de la siguiente manera:
+1. Modifique el portal CSS para configurar el diseño, la posición y el estilo de los componentes necesarios en el portal. Por ejemplo, desea mantener el color de fondo como negro para que este portal vea bien el componente userInfo. Para ello, cambie el color de fondo en `/apps/sampleApplication/wscomponents/css/style.css` de la siguiente manera:
 
    ```css
    body {

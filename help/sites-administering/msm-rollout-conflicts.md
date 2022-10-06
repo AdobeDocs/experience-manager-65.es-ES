@@ -1,8 +1,8 @@
 ---
-title: Conflictos de implementación de MSM
-seo-title: Conflictos de implementación de MSM
+title: Conflictos de despliegue de MSM
+seo-title: MSM Rollout Conflicts
 description: Obtenga información sobre cómo lidiar con los conflictos de implementación del administrador de varios sitios.
-seo-description: Obtenga información sobre cómo lidiar con los conflictos de implementación del administrador de varios sitios.
+seo-description: Learn how to deal with Multi Site Manager rollout conflicts.
 uuid: 7a640905-aae2-498e-b95c-2c73008fa1cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,26 +10,25 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 feature: Multi Site Manager
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 0%
+source-wordcount: '910'
+ht-degree: 31%
 
 ---
-
 
 # Conflictos de despliegue de MSM{#msm-rollout-conflicts}
 
 Pueden producirse conflictos si se crean nuevas páginas con el mismo nombre de página en la rama del modelo y en una rama de Live Copy dependiente.
 
-Estos conflictos deben manejarse y resolverse en el momento de su implementación.
+Estos conflictos deben manejarse y resolverse en el momento del despliegue.
 
 ## Gestión de conflictos {#conflict-handling}
 
 Cuando existen páginas en conflicto (en las ramas de modelo y Live Copy), MSM le permite definir cómo deben manejarse (o incluso si).
 
-Para garantizar que el despliegue no esté bloqueado, las definiciones posibles pueden incluir:
+Para garantizar que el despliegue no esté bloqueado, las definiciones posibles pueden incluir las siguientes:
 
 * qué página (modelo o Live Copy) tendrá prioridad durante el lanzamiento,
 * qué páginas se cambiarán de nombre (y cómo),
@@ -39,9 +38,9 @@ Para garantizar que el despliegue no esté bloqueado, las definiciones posibles 
 
 Además de la funcionalidad estándar, se pueden agregar controladores de conflicto personalizados para implementar distintas reglas. También pueden permitir acciones de publicación como un proceso individual.
 
-### Ejemplo de escenario {#example-scenario}
+### Escenario de ejemplo {#example-scenario}
 
-En las secciones siguientes utilizamos el ejemplo de una nueva página `b`, creada tanto en el modelo como en la rama de Live Copy (creada manualmente), para ilustrar los distintos métodos de resolución de conflictos:
+En las secciones siguientes utilizamos el ejemplo de una página nueva `b`, creado tanto en el modelo como en la rama de Live Copy (creado manualmente), para ilustrar los distintos métodos de resolución de conflictos:
 
 * modelo: `/b`
 
@@ -51,9 +50,9 @@ En las secciones siguientes utilizamos el ejemplo de una nueva página `b`, crea
 
    Una página creada manualmente en la rama de Live Copy; con 1 página secundaria, `lc-level-1`.
 
-   * Se activa en la publicación como `/b`, junto con la página secundaria.
+   * Se activa durante la publicación como `/b`, junto con la página secundaria.
 
-**Antes de la implementación**
+**Antes del despliegue**
 
 <table>
  <tbody>
@@ -75,13 +74,13 @@ En las secciones siguientes utilizamos el ejemplo de una nueva página `b`, crea
  </tbody>
 </table>
 
-## Gestor de implementación y administración de conflictos {#rollout-manager-and-conflict-handling}
+## Administrador de despliegue y gestión de conflictos {#rollout-manager-and-conflict-handling}
 
-El administrador de implementación le permite activar o desactivar la administración de conflictos.
+El administrador de despliegue le permite activar o desactivar la administración de conflictos.
 
-Esto se realiza mediante la [configuración OSGi](/help/sites-deploying/configuring-osgi.md) del **administrador de implementación de CQ WCM de día**:
+Esto se realiza mediante la [configuración OSGi](/help/sites-deploying/configuring-osgi.md) del **administrador de despliegue de gestión de contenido web CQ por día**:
 
-* **Gestione los conflictos con las páginas creadas manualmente**:
+* **Gestionar conflictos con páginas creadas manualmente**:
 
    ( `rolloutmgr.conflicthandling.enabled`)
 
@@ -89,29 +88,29 @@ Esto se realiza mediante la [configuración OSGi](/help/sites-deploying/configur
 
 AEM tiene [comportamiento predefinido cuando la administración de conflictos se ha desactivado](#behavior-when-conflict-handling-deactivated).
 
-## Controlador de conflictos {#conflict-handlers}
+## Controladores de conflictos {#conflict-handlers}
 
 AEM utiliza controladores de conflictos para resolver cualquier conflicto de páginas que exista al implementar contenido desde un modelo a una Live Copy. Cambiar el nombre de las páginas es uno de los métodos (habituales) para resolver estos conflictos. Puede haber más de un controlador de conflictos en funcionamiento para permitir una selección de comportamientos diferentes.
 
-AEM proporciona:
+AEM proporciona lo siguiente:
 
-* El [controlador de conflicto predeterminado](#default-conflict-handler):
+* El [controlador de conflictos predeterminado](#default-conflict-handler):
 
    * `ResourceNameRolloutConflictHandler`
 
 * La posibilidad de implementar un [controlador personalizado](#customized-handlers).
-* Mecanismo de clasificación de servicios que permite establecer la prioridad de cada controlador individual. Se utiliza el servicio con la clasificación más alta.
+* El mecanismo de clasificación de servicios que le permite establecer la prioridad de cada controlador individual. Se utiliza el servicio con la clasificación más alta.
 
 ### Controlador de conflictos predeterminado {#default-conflict-handler}
 
-El controlador de conflicto predeterminado:
+El controlador de conflictos predeterminado:
 
 * Se llama `ResourceNameRolloutConflictHandler`
 
 * Con este controlador, la página de modelo tiene prioridad.
-* La clasificación de servicio para este controlador se establece en menor ( &quot;p. ej. debajo del valor predeterminado de la propiedad `service.ranking` ), ya que se supone que los controladores personalizados necesitarán una clasificación más alta. Sin embargo, la clasificación no es el mínimo absoluto para garantizar la flexibilidad cuando sea necesario.
+* La clasificación de servicio para este controlador se establece en menor ( &quot;p. ej. debajo del valor predeterminado para la variable `service.ranking` ) ya que se supone que los controladores personalizados necesitarán una clasificación más alta. Sin embargo, la clasificación no está al nivel mínimo absoluto para garantizar la flexibilidad cuando sea necesario.
 
-Este controlador de conflicto da prioridad al modelo. La página de Live Copy `/b` se mueve (dentro de la rama de Live Copy) a `/b_msm_moved`.
+Este controlador de conflictos da prioridad al modelo. La página de Live Copy `/b` se mueve (dentro de la rama de Live Copy) a `/b_msm_moved`.
 
 * Live Copy: `/b`
 
@@ -125,7 +124,7 @@ Este controlador de conflicto da prioridad al modelo. La página de Live Copy `/
 
    * `bp-level-1` se despliega en livecopy.
 
-**Después de la implementación**
+**Después del despliegue**
 
 <table>
  <tbody>
@@ -157,39 +156,39 @@ Este controlador de conflicto da prioridad al modelo. La página de Live Copy `/
 
 Los controladores de conflicto personalizados le permiten implementar sus propias reglas. Con el mecanismo de clasificación de servicios también puede definir cómo interactúan con otros controladores.
 
-Los controladores de conflictos personalizados pueden:
+Los controladores de conflictos personalizados pueden hacer lo siguiente:
 
-* Reciba un nombre según sus necesidades.
+* Nombrarse según sus necesidades.
 * Ser desarrollado/configurado según sus necesidades; por ejemplo, puede desarrollar un controlador para que la página de Live Copy tenga prioridad.
-* Se puede diseñar para que se configure usando la [configuración OSGi](/help/sites-deploying/configuring-osgi.md); en particular:
+* Se puede diseñar para que se configure usando la variable [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md); en particular:
 
    * **Clasificación de servicios**:
 
-      Define el orden relacionado con otros controladores de conflicto ( `service.ranking`).
+      Define el orden relacionado con otros controladores de conflictos ( `service.ranking`).
 
       El valor predeterminado es 0.
 
-### Comportamiento cuando el manejo de conflictos está desactivado {#behavior-when-conflict-handling-deactivated}
+### Comportamiento cuando la gestión de conflictos está desactivada {#behavior-when-conflict-handling-deactivated}
 
-Si desactiva manualmente [la gestión de conflictos](#rollout-manager-and-conflict-handling), no AEM ninguna acción en ninguna página en conflicto (las páginas que no entran en conflicto se despliegan según lo esperado).
+Si [desactivar la gestión de conflictos](#rollout-manager-and-conflict-handling) a continuación, AEM no realiza ninguna acción en ninguna página conflictiva (las páginas no conflictivas se despliegan según lo esperado).
 
 >[!CAUTION]
 >
 >AEM no da ninguna indicación de que se estén ignorando los conflictos, ya que este comportamiento debe configurarse explícitamente, por lo que se supone que es el comportamiento requerido.
 
-En este caso, la Live Copy tiene prioridad. La página de modelo `/b` no se copia y la página de copia activa `/b` no se modifica.
+En este caso, la Live Copy tiene prioridad. La página de modelo `/b` no se copia y la página Live Copy `/b` no se ha tocado.
 
 * modelo: `/b`
 
-   No se copia, pero se ignora.
+   No se copia en absoluto y se ignora.
 
 * Live Copy: `/b`
 
-   Sigue igual.
+   Permanece igual.
 
 <table>
  <caption>
-   Después de la implementación
+   Después del despliegue
  </caption>
  <tbody>
   <tr>

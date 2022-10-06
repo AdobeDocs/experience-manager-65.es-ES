@@ -1,26 +1,25 @@
 ---
 title: Targeting de Adobe Campaign
-seo-title: Targeting de Adobe Campaign
+seo-title: Targeting your Adobe Campaign
 description: En la configuración de la segmentación se incluye la creación de segmentos, una marca, una campaña y experiencias.
-seo-description: En la configuración de la segmentación se incluye la creación de segmentos, una marca, una campaña y experiencias.
+seo-description: Setting up segmentation includes creating segments, a brand, campaign, and experiences.
 uuid: 520cd006-0aa8-43f3-b754-efb7397bb92f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: e56986b2-397e-4802-992b-05a9ea7b2e36
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '816'
 ht-degree: 73%
 
 ---
 
-
 # Targeting de Adobe Campaign{#targeting-your-adobe-campaign}
 
-Para el targeting de la newsletter de Adobe Campaign, primero debe configurar la segmentación, que solo está disponible en la IU clásica. Después, puede crear experiencias con objetivos para Adobe Campaign.
+Para el targeting de la newsletter de Adobe Campaign, primero debe configurar la segmentación, que solo está disponible en la IU clásica. Después, puede crear experiencias segmentadas para Adobe Campaign.
 
 ## Configuración de la segmentación en AEM {#setting-up-segmentation-in-aem}
 
@@ -34,12 +33,12 @@ En la configuración de la segmentación se incluye la creación de segmentos, u
 
 Para crear segmentos:
 
-1. Abra la [consola de segmentación](http://localhost:4502/miscadmin#/etc/segmentation) en **&lt;host>:&lt;puerto>/miscadmin#/etc/segmentation**.
-1. Cree una nueva página e introduzca un título (por ejemplo, **Segmentos de CA**) y seleccione la plantilla **Segmento (Adobe Campaign)**.
+1. Abra el [consola de segmentación](http://localhost:4502/miscadmin#/etc/segmentation) at **&lt;host>:&lt;port>/miscadmin#/etc/segmentation**.
+1. Cree una nueva página e introduzca un título (por ejemplo, **Segmentos AC** - y seleccione **Segmento (Adobe Campaign)** plantilla.
 1. Seleccione la página creada en la vista de árbol de la parte izquierda.
 1. Cree un segmento, por ejemplo, dirigido a usuarios masculinos. Para ello, cree una nueva página en el segmento que ha creado llamado Masculino y seleccione la plantilla **Segmento (Adobe Campaign)**.
 1. Abra la página de segmento creada, arrastre el segmento **ID del segmento** desde la barra de tareas y suéltelo en la página.
-1. Haga clic con el botón doble en la característica, introduzca el ID que representa en este caso el segmento masculino definido en Adobe Campaign (por ejemplo, **MALE**) y haga clic en **Aceptar**. Debe aparecer el siguiente mensaje: `targetData.segmentCode == "MALE"`
+1. Haga doble clic en el rasgo, introduzca el ID que representa en este caso el segmento Masculino definido en Adobe Campaign; por ejemplo, **MASCULINO** - y haga clic en **OK**. Debería aparecer el siguiente mensaje: `targetData.segmentCode == "MALE"`
 1. Repita los pasos para otro segmento, por ejemplo, un segmento dirigido a usuarias femeninas.
 
 ### Creación de una marca {#creating-a-brand}
@@ -56,26 +55,26 @@ Para crear una campaña:
 1. Abra la página **Marca** que acaba de crear.
 1. Haga clic en **Crear página** e introduzca un título para la página, como por ejemplo We.Retail Campaign, seleccione la plantilla **Campaña** y haga clic en **Crear**.
 
-### Creación de experiencias  {#creating-experiences}
+### Creación de experiencias {#creating-experiences}
 
 Para crear experiencias para los segmentos:
 
 1. Abra la página **Campaña** que acaba de crear.
-1. Cree experiencias para sus segmentos haciendo clic en **Crear página** e introduciendo un título para su página, por ejemplo, Hombre mientras crea una experiencia para el segmento Hombre, y seleccione la plantilla **Experiencia**.
+1. Cree experiencias para sus segmentos haciendo clic en **Crear página** y al especificar un título para la página, por ejemplo, Masculino, ya que está creando una experiencia para el segmento Masculino, y seleccione la opción **Experiencia** plantilla.
 1. Abra la página de la experiencia creada.
 1. Haga clic en **Editar** y, debajo de Segmentos, haga clic en **Añadir elemento**.
-1. Escriba la ruta de acceso al segmento masculino, por ejemplo `/etc/segmentation/ac-segments/male` y haga clic en **Aceptar**. Debe aparecer el siguiente mensaje: *La experiencia está dirigida a: Hombre*
+1. Introduzca la ruta al segmento Masculino, por ejemplo `/etc/segmentation/ac-segments/male` y haga clic en **OK**. Debería aparecer el siguiente mensaje: *La experiencia está dirigida a: Hombre*
 1. Repita los pasos anteriores para crear una experiencia para todos los segmentos, como por ejemplo el segmento Femenino.
 
-## Creación de una newsletter con contenido de destino  {#creating-a-newsletter-with-targeted-content}
+## Creación de una newsletter con contenido de destino {#creating-a-newsletter-with-targeted-content}
 
 Una vez que haya creado los segmentos, una marca, una campaña y una experiencia, puede crear una newsletter con contenido de destino. Después de crear la experiencia, vinculará estas a los segmentos.
 
-Puede crear la newsletter con contenido de destino tanto en la interfaz de usuario clásica como en la táctil. Este documento describe el procedimiento para la IU táctil.
+Puede crear la newsletter con contenido de destino tanto en la interfaz de usuario táctil como en la clásica. En este documento se describe el procedimiento para la IU táctil.
 
 Para crear una newsletter con contenido de destino:
 
-1. Cree una newsletter con contenido de destino: Debajo de Campañas de correo electrónico en Geometrixx Outdoors, toque o haga clic en **Crear** > **Página** y seleccione una de las plantillas de Adobe Campaign Mail.
+1. Cree una newsletter con contenido de destino: Debajo de Campañas de correo electrónico en Geometrixx Outdoors, toque o haga clic en **Crear** > **Página** y seleccione una de las plantillas de correo de Adobe Campaign.
 
    >[!NOTE]
    >
@@ -83,7 +82,7 @@ Para crear una newsletter con contenido de destino:
 
 1. En la newsletter, añada un componente de texto y personalización.
 1. Añada texto en el componente de texto y personalización, como &quot;Este es el valor predeterminado&quot;.
-1. Haga clic en la flecha junto a **Editar** y seleccione **Objetivo**.
+1. Haga clic en la flecha situada junto a **Editar** y seleccione **Segmentación**.
 1. Seleccione la marca del menú desplegable Marca y seleccione la campaña. (Se trata de la marca y la campaña que creó anteriormente).
 1. Haga clic en **Iniciar Targeting**. Aparecerán los segmentos en el área Audiencias. La experiencia predeterminada se utiliza si ninguno de los segmentos definidos coincide.
 
@@ -97,7 +96,7 @@ Para crear una newsletter con contenido de destino:
 
 1. Vaya a otro segmento (Masculino), haga clic en **Agregar oferta** y luego haga clic en el icono del signo más (+). A continuación, edite la oferta.
 1. Vaya a otro segmento (Femenino), haga clic en **Agregar oferta** y luego haga clic en el icono del signo más (+). A continuación, edite esta oferta.
-1. Haga clic en **Siguiente** para ver Asignación, luego haga clic en **Siguiente** para ver Configuración, que no se aplica a Adobe Campaign, y haga clic en **Guardar**.
+1. Haga clic en **Siguiente** para ver Asignación, haga clic en **Siguiente** para ver Configuración, que no se aplica a Adobe Campaign, y haga clic en **Guardar**.
 
    AEM genera automáticamente el código de targeting correcto para Adobe Campaign cuando el contenido se utiliza en un envío en Adobe Campaign.
 
@@ -110,4 +109,3 @@ Para crear una newsletter con contenido de destino:
    >[!NOTE]
    >
    >Si también establece los segmentos en Adobe Campaign, al hacer clic en **Previsualizar**, aparecerá una lista con las experiencias para cada segmento.
-

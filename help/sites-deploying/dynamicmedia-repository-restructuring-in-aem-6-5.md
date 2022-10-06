@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
-feature: Actualización
+feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '413'
 ht-degree: 4%
 
 ---
 
 # Reestructuración de repositorios de Dynamic Media en Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Como se describe en la página principal [Reestructuración del repositorio en Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a Experience Manager 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a Dynamic Media. Algunos cambios requieren un esfuerzo durante el proceso de actualización de Experience Manager 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
+Tal como se describe en el elemento principal [Reestructuración de repositorios en Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , los clientes que actualicen a Experience Manager 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios en el repositorio que afectan a Dynamic Media. Algunos cambios requieren un esfuerzo durante el proceso de actualización de Experience Manager 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
 
 **Antes de una actualización futura**
 
@@ -66,7 +66,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>El cliente puede ejecutar un script de migración en esta ubicación:<br /> </p>
+   <td><p>El cliente puede ejecutar una secuencia de comandos de migración en esta ubicación:<br /> </p>
     <ul>
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
      <li>Reinicie el paquete OSGi de Dynamic Media.</li>
@@ -116,7 +116,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>1. Cancelar la publicación de todos los vídeos de YouTube<br /> 2. Cree la configuración de YouTube con la nueva interfaz de usuario táctil (de <code>/conf</code>), incluida la copia de todos los canales de la ubicación antigua<br /> 3. Vuelva a publicar todos los vídeos en YouTube.</p> <p>Este flujo de trabajo resulta en nuevas URL de YouTube. Si no cancela la publicación antes de crear una configuración de YouTube de TouchUI, tendrá varias URL de YouTube en Propiedades porque los canales recreados se publicarán de nuevo, si se le da la oportunidad. Esta funcionalidad significa que tiene direcciones URL inútiles enumeradas en Propiedades.</p> </td>
+   <td><p>1. Cancelar la publicación de todos los vídeos de YouTube<br /> 2. Cree la configuración de YouTube mediante la nueva interfaz de usuario táctil (desde <code>/conf</code>), incluida la copia de todos los canales de la ubicación antigua<br /> 3. Vuelva a publicar todos los vídeos en YouTube.</p> <p>Este flujo de trabajo resulta en nuevas URL de YouTube. Si no cancela la publicación antes de crear una configuración de YouTube de TouchUI, tendrá varias URL de YouTube en Propiedades porque los canales recreados se publicarán de nuevo, si se le da la oportunidad. Esta funcionalidad significa que tiene direcciones URL inútiles enumeradas en Propiedades.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>

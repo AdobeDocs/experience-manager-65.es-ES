@@ -1,24 +1,23 @@
 ---
 title: Operaciones de desarrollo empresarial
-seo-title: Operaciones de desarrollo empresarial
+seo-title: Enterprise DevOps
 description: Para obtener información sobre los procesos, métodos y comunicaciones necesarios para facilitar la implementación y simplificar la colaboración.
-seo-description: Para obtener información sobre los procesos, métodos y comunicaciones necesarios para facilitar la implementación y simplificar la colaboración.
+seo-description: Learn about the processes, methods and communication required to ease deployment and simplify collaboration.
 uuid: ca4806d2-c845-4c18-9498-4b66f0980a5e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '989'
 ht-degree: 93%
 
 ---
 
-
-# Operaciones de desarrollo empresarial{#enterprise-devops}
+# Operaciones de desarrollo empresarial {#enterprise-devops}
 
 Las operaciones de desarrollo empresarial abarcan los procesos, métodos y comunicaciones necesarios para lo siguiente:
 
@@ -33,7 +32,7 @@ Las operaciones de desarrollo empresarial tienen como objetivo evitar problemas 
 
 ## Entornos {#environments}
 
-Una implementación de Adobe Experience Manager (AEM) suele consistir en múltiples entornos, que se utilizan para diferentes propósitos en diferentes niveles:
+Una implementación de Adobe Experience Manager (AEM) suele consistir en varios entornos, que se utilizan para diferentes propósitos en diferentes niveles:
 
 * [Desarrollo](#development)
 * [Garantía de calidad](#quality-assurance)
@@ -63,7 +62,7 @@ Según la escala del sistema, el entorno de desarrollo puede tener instancias de
 
 ### Garantía de calidad {#quality-assurance}
 
-Este entorno lo utiliza el equipo de garantía de calidad para [probar](/help/sites-developing/test-plan.md) de forma completa el nuevo sistema; diseño y función. Debe tener entornos de creación y de publicación, con contenido adecuado, y proporcionar todos los servicios necesarios para permitir un conjunto de todas las aplicaciones de pruebas.
+El equipo de garantía de calidad utiliza este entorno de forma exhaustiva [prueba](/help/sites-developing/test-plan.md) su nuevo sistema; diseño y función. Debe tener entornos de creación y de publicación, con contenido adecuado, y proporcionar todos los servicios necesarios para permitir un conjunto de todas las aplicaciones de pruebas.
 
 ### Ensayo {#staging}
 
@@ -119,14 +118,14 @@ El código siempre debe propagarse de abajo a arriba:
 
 El código (por ejemplo, las plantillas de diseño y la funcionalidad personalizada de la aplicación web) se transfiere generalmente con la exportación e importación de paquetes entre los distintos repositorios de contenido. Cuando es significativa, esta replicación puede configurarse como un proceso automático.
 
-AEM proyectos a menudo déclencheur la implementación de código:
+AEM proyectos suelen almacenar en déclencheur la implementación de código:
 
 * Automáticamente: para su transferencia a los entornos de desarrollo y control de calidad.
 * Manualmente: las implementaciones en los entornos de ensayo y producción se realizan de manera más controlada, a menudo manual; aunque la automatización es posible si es necesario.
 
-![chlimage_1](assets/chlimage_1.png)
+![imagen_1](assets/chlimage_1.png)
 
-## Movimiento de contenido {#content-movement}
+## Movimiento de contenido  {#content-movement}
 
 El contenido que se esté creando para la producción **siempre** se debe crear en la instancia de creación de producción.
 
@@ -141,6 +140,6 @@ El contenido de producción debe trasladarse del entorno de producción al entor
 El contenido se puede transferir de la siguiente manera:
 
 * Entre los distintos entornos, mediante la exportación e importación de paquetes.
-* Entre diferentes instancias: replicando directamente ([replicación de AEM](/help/sites-deploying/replication.md)) el contenido (utilizando una conexión HTTP o HTTPS).
+* Entre diferentes instancias: replicando directamente ([AEM replicación](/help/sites-deploying/replication.md)) el contenido (mediante una conexión HTTP o HTTPS).
 
-![chlimage_1-1](assets/chlimage_1-1.png)
+![Chlimage_1-1](assets/chlimage_1-1.png)

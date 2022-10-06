@@ -1,5 +1,5 @@
 ---
-title: Aplicar ajustes preestablecidos de imagen de Dynamic Media
+title: Aplicación de ajustes preestablecidos de imagen de Dynamic Media
 description: Aprenda a aplicar ajustes preestablecidos de imagen en Dynamic Media
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
@@ -7,13 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
-feature: Ajustes preestablecidos de imagen
+feature: Image Presets
 role: User,Admin
 exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
 source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 4%
+source-wordcount: '327'
+ht-degree: 5%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 4%
 
 Los ajustes preestablecidos de imagen permiten que los recursos entreguen de forma dinámica imágenes con tamaños diferentes, en formatos diferentes o con otras propiedades de imagen generadas dinámicamente. Puede elegir un ajuste preestablecido al exportar imágenes. El ajuste preestablecido vuelve a dar formato a las imágenes según las especificaciones especificadas por el administrador.
 
-Además, puede elegir un ajuste preestablecido de imagen que sea interactivo (designado por el botón **[!UICONTROL RESS]** después de seleccionarlo).
+Además, puede elegir un ajuste preestablecido de imagen que sea interactivo (designado por el **[!UICONTROL RESS]** después de seleccionarlo).
 
-En esta sección se describe cómo utilizar los ajustes preestablecidos de imagen. [Los administradores pueden crear y configurar ajustes preestablecidos](managing-image-presets.md) de imagen.
+En esta sección se describe cómo utilizar los ajustes preestablecidos de imagen. [Los administradores pueden crear y configurar ajustes preestablecidos de imagen](managing-image-presets.md).
 
 >[!NOTE]
 >
@@ -41,10 +41,9 @@ Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la pr
 
    >[!NOTE]
    >
-   >* Las representaciones estáticas aparecen en la mitad superior del panel. Las representaciones dinámicas aparecen en la mitad inferior. Solo con las representaciones dinámicas, puede utilizar la dirección URL para mostrar la imagen. El botón **[!UICONTROL URL]** solo aparece si selecciona una representación dinámica. El botón **[!UICONTROL RESS]** solo aparece si selecciona un ajuste preestablecido de imagen interactivo.
-      >
-      >
-   * El sistema muestra varias representaciones al seleccionar **[!UICONTROL Representaciones]** en la vista de detalles de un recurso. Puede aumentar el número de ajustes preestablecidos vistos. Consulte [Aumentar el número de ajustes preestablecidos de imagen que se muestran](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
+   >* Las representaciones estáticas aparecen en la mitad superior del panel. Las representaciones dinámicas aparecen en la mitad inferior. Solo con las representaciones dinámicas, puede utilizar la dirección URL para mostrar la imagen. La variable **[!UICONTROL URL]** solo aparece si selecciona una representación dinámica. La variable **[!UICONTROL RESS]** solo aparece si selecciona un ajuste preestablecido de imagen interactivo.
+   >
+   >* El sistema muestra numerosas representaciones al seleccionar **[!UICONTROL Representaciones]** en la Vista de detalles de un recurso. Puede aumentar el número de ajustes preestablecidos vistos. Consulte [Aumente el número de ajustes preestablecidos de imagen que se muestran](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
@@ -56,6 +55,6 @@ Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la pr
 
    >[!NOTE]
    >
-   >Si el recurso *y* el ajuste preestablecido de imagen aún no se ha publicado, el botón **[!UICONTROL URL]** (o los botones **[!UICONTROL URL]** y **[!UICONTROL RESS]**, si corresponde) no está disponible.
+   >Si el recurso *y* el ajuste preestablecido de imagen aún no se ha publicado, la variable **[!UICONTROL URL]** botón (o **[!UICONTROL URL]** y **[!UICONTROL RESS]** si corresponde) no está disponible.
    >
    >Tenga en cuenta también que los ajustes preestablecidos de imagen se publican automáticamente en un servidor de Dynamic Media.

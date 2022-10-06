@@ -67,7 +67,7 @@ En esta sección de la documentación se describe cómo conectar un grupo de inf
 
 Para configurar las funciones de Analytics for Communities, es necesario que trabaje con el representante de cuentas para configurar una cuenta de Adobe Analytics y [grupo de informes](#adobe-analytics-report-suite-for-video-reporting). Una vez establecida, debe estar disponible la siguiente información:
 
-* **Nombre de la empresa**
+* **Nombre de la compañía**
 
    Empresa asociada a la cuenta de Adobe Analytics.
 
@@ -103,7 +103,7 @@ Al iniciar sesión en [Adobe Experience Cloud](https://experienceleague.adobe.co
 
    * **`event1`** hasta **`event7`** enabled
 
-   * tipo **`Counter`**
+   * type **`Counter`**
 
       * not **`Counter (no subrelations)`**
    * Puede cambiar el propósito de los eventos existentes (cambiar su nombre) o crear otros nuevos para utilizarlos en las funciones de Communities
@@ -113,7 +113,7 @@ Al iniciar sesión en [Adobe Experience Cloud](https://experienceleague.adobe.co
 
    * Consola de informes de vídeo
 
-      * Habilitar `Video Core`
+      * Enable `Video Core`
       * Seleccione Guardar
    * Consola de medición de Video Core
 
@@ -134,7 +134,6 @@ Póngase en contacto con el representante de cuentas para conocer las variables 
 >* **`evar1`** hasta **`evar11`**
 >
 >* **`event1`** hasta **`event7`**
-
 >
 >**Después, antes de que se publique el sitio de la comunidad,** es importante restaurar la asignación preexistente moviendo las variables AEM que se asignaron automáticamente a variables de Analytics cuando Analytics estaba habilitado para un sitio de comunidad.
 >
@@ -202,7 +201,7 @@ La creación inicial de una nueva configuración de Analytics hace que se muestr
 
 ![analytics-settings](assets/analytics-settings.png)
 
-* **Empresa**
+* **Compañía**
 
    Empresa asociada a la cuenta de Adobe Analytics.
 
@@ -578,7 +577,6 @@ Consulte las secciones:
 >* **`evar1`** hasta **`evar11`**
 >
 >* **`event1`** hasta **`event7`**
-
 >
 >**Después, antes de que se publique el sitio de la comunidad,** es importante restaurar la asignación preexistente y mover las variables de Communities AEM que se asignaron automáticamente (cuando Analytics estaba habilitado para el sitio de la comunidad) a otras variables de Analytics. Esta reasignación debe ser coherente en todos los componentes de Communities.
 >
@@ -642,7 +640,7 @@ El tema del foro es actualmente el único ejemplo de esta personalización:
 * Vaya a [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por ejemplo, [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
 * Bajo el nodo jcr:content de la raíz del idioma (por ejemplo `/content/sites/engage/en/jcr:content),`vaya al componente configurado para los informes de Analytics.
-Por ejemplo, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
+Por ejemplo, **`analytics/reportConfigs/social_forum_components_hbs_topic`**. 
 
 * Observe los periodos de tiempo creados:
 

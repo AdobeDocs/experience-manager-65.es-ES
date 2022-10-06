@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Assets] guía de tamaño"'
+title: "[!DNL Assets] guía de tamaño"
 description: Prácticas recomendadas para determinar métricas eficientes para estimar la infraestructura y los recursos necesarios para implementar [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Architect, Admin
@@ -105,7 +105,7 @@ Para el repositorio, utilice SSD o discos con un nivel IOPS bueno a 3000. Para e
 
 [!DNL Assets] tiene una serie de casos de uso que hacen que el rendimiento de la red sea más importante que en muchos de nuestros [!DNL Experience Manager] proyectos. Un cliente puede tener un servidor rápido, pero si la conexión de red no es lo suficientemente grande como para soportar la carga de los usuarios que cargan y descargan recursos del sistema, entonces seguirá pareciendo lenta. Existe una buena metodología para determinar el punto de interrupción en la conexión de red de un usuario a [!DNL Experience Manager] at [Consideraciones sobre los recursos para la experiencia del usuario, el tamaño de las instancias, la evaluación del flujo de trabajo y la topología de la red](/help/assets/assets-network-considerations.md).
 
-## Restricciones     {#limitations}
+## Restricciones {#limitations}
 
 Al dimensionar una implementación, es importante tener en cuenta las limitaciones del sistema. Si la implementación propuesta supera estas limitaciones, utilice estrategias creativas, como la partición de los recursos entre varios [!DNL Assets] implementaciones de .
 

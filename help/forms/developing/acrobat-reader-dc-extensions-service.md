@@ -1,30 +1,29 @@
 ---
 title: Servicio de extensiones de Acrobat Reader DCInicio rápido de API de Java (SOAP)
-seo-title: Servicio de extensiones de Acrobat Reader DCInicio rápido de API de Java (SOAP)
-description: Utilice el servicio Extensiones de Acrobat Reader DC para aplicar derechos de uso a un documento PDF, eliminar derechos de uso de documentos PDF y recuperar información sobre las credenciales utilizadas para aplicar derechos de uso a un documento PDF habilitado para derechos llamado LoanUsageRights.pdf.
-seo-description: Utilice el servicio Extensiones de Acrobat Reader DC para aplicar derechos de uso a un documento PDF, eliminar derechos de uso de documentos PDF y recuperar información sobre las credenciales utilizadas para aplicar derechos de uso a un documento PDF habilitado para derechos llamado LoanUsageRights.pdf.
+seo-title: Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP)
+description: Utilice el servicio Extensiones de Acrobat Reader DC para aplicar derechos de uso a un documento de PDF, eliminar derechos de uso de documentos de PDF y recuperar información sobre las credenciales utilizadas para aplicar derechos de uso a un documento de PDF habilitado para derechos llamado LoanUsageRights.pdf.
+seo-description: Use the  Acrobat Reader DC Extensions service to apply usage rights to a PDF document, remove usage rights from PDF documents, and retrieve  information about the credential that is used to apply usage-rights to a rights-enabled PDF document named LoanUsageRights.pdf.
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
 contentOwner: admin
 content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 82f0b6c1-ca0c-48c7-b7f6-b54704ac0830
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
 
-
-# Acrobat Reader DC Extensions ServiceJava API Quick Start (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+# Servicio de extensiones de Acrobat Reader DCInicio rápido de la API de Java (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
 Las siguientes opciones de inicio rápido están disponibles para el servicio Acrobat Reader DC Extensions.
 
 [Inicio rápido (modo SOAP):Aplicación de derechos de uso mediante la API de Java](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
-[Eliminación de derechos de uso de documentos PDF](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
+[Eliminación de derechos de uso de documentos de PDF](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
 [Inicio rápido (modo SOAP): Recuperación de información de credenciales mediante la API de Java](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
@@ -36,7 +35,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 ## Inicio rápido (modo SOAP):Aplicación de derechos de uso mediante la API de Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-El siguiente ejemplo de código Java aplica derechos de uso a un documento PDF llamado *Loan.pdf*. El documento PDF con derechos activados se guarda como un archivo PDF con el nombre *LoanUsageRights.pdf*. Los siguientes derechos de uso se aplican a este documento PDF: `enabledComments`, `enabledFormFillIn` y `enabledDigitalSignatures`. (Consulte [Aplicación de derechos de uso a documentos PDF](/help/forms/developing/assigning-usage-rights.md)).
+El siguiente ejemplo de código Java aplica derechos de uso a un documento de PDF denominado *Loan.pdf*. El documento PDF con derechos activados se guarda como un archivo PDF denominado *LoanUsageRights.pdf*. Los siguientes derechos de uso se aplican a este documento de PDF: `enabledComments`, `enabledFormFillIn`y `enabledDigitalSignatures`. (Consulte [Aplicación de derechos de uso a documentos de PDF](/help/forms/developing/assigning-usage-rights.md).)
 
 
 ```java
@@ -146,9 +145,9 @@ El siguiente ejemplo de código Java aplica derechos de uso a un documento PDF l
   
 ```
 
-## Inicio rápido (modo SOAP): Eliminación de derechos de uso de un documento PDF mediante la API de Java {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
+## Inicio rápido (modo SOAP): Eliminación de derechos de uso de un documento de PDF mediante la API de Java {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
-El siguiente ejemplo de código Java elimina los derechos de uso de un documento PDF habilitado para derechos llamado *LoanUsageRights.pdf*. (Consulte [Eliminación de derechos de uso de documentos PDF](/help/forms/developing/assigning-usage-rights.md)).
+El siguiente ejemplo de código Java elimina los derechos de uso de un documento PDF habilitado para derechos denominado *LoanUsageRights.pdf*. (Consulte [Eliminación de derechos de uso de documentos de PDF](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 
@@ -248,7 +247,7 @@ El siguiente ejemplo de código Java elimina los derechos de uso de un documento
 
 ## Inicio rápido (modo SOAP): Recuperación de información de credenciales mediante la API de Java {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
-El siguiente ejemplo de código Java recupera información sobre las credenciales que se utilizan para aplicar derechos de uso a un documento PDF habilitado para derechos llamado *LoanUsageRights.pdf*. (Consulte [Recuperación de información de credenciales](/help/forms/developing/assigning-usage-rights.md)).
+El siguiente ejemplo de código Java recupera información sobre las credenciales que se utilizan para aplicar derechos de uso a un documento PDF habilitado para derechos llamado *LoanUsageRights.pdf*. (Consulte [Recuperación de información Credencial](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 
@@ -356,4 +355,3 @@ El siguiente ejemplo de código Java recupera información sobre las credenciale
  } 
  
 ```
-

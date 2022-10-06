@@ -271,7 +271,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
       Donde `<identifier>` se reemplaza por texto libre que debe introducir para identificar la instancia (no puede omitir esta información).
 
-      Por ejemplo, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+      Por ejemplo, `org.apache.sling.commons.log.LogManager.factory.config-MINE`. 
 
    * Tipo: `sling:OsgiConfig`
    >[!NOTE]
@@ -365,7 +365,7 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
 
    * Nombre: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (ya que esto es un escritor)
 
-      Al igual que con el registrador, `<identifier>` se reemplaza por texto libre que debe introducir para identificar la instancia (no puede omitir esta información). Por ejemplo, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      Al igual que con el registrador, `<identifier>` se reemplaza por texto libre que debe introducir para identificar la instancia (no puede omitir esta información). Por ejemplo, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`. 
 
    * Tipo: `sling:OsgiConfig`
    >[!NOTE]

@@ -14,7 +14,7 @@ exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
 source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -26,19 +26,19 @@ El paquete de funciones 18912 le permite ingerir recursos de forma masiva direct
 
 >[!IMPORTANT]
 >
->Es posible que use el paquete de funciones para migrar de forma masiva los recursos por su cuenta de Dynamic Media Classic a Dynamic Media: modo Scene7 en Experience Manager. También puede migrar de forma masiva recursos mediante la función FTP en Dynamic Media Classic. Sin embargo, Adobe recomienda *no* que utilice cualquiera de estos métodos debido a la complejidad involucrada.
+>Es posible que use el paquete de funciones para migrar de forma masiva los recursos por su cuenta de Dynamic Media Classic a Dynamic Media: modo Scene7 en Experience Manager. También puede migrar de forma masiva recursos mediante la función FTP en Dynamic Media Classic. Sin embargo, el Adobe sí *not* recomiende utilizar cualquiera de estos métodos debido a la complejidad implicada.
 >
->Como tal, este paquete de características de migración *solo* se admite como parte de un proyecto de migración cuando se realiza mediante [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+>Como tal, este paquete de características de migración es *only* se admite como parte de un proyecto de migración cuando se realiza mediante [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Antes de instalar el paquete de funciones, cree un usuario de servicio y proporcione esa información al servicio de asistencia técnica de Adobe.
 
-Consulte también [Configuración de Dynamic Media - modo Scene7](/help/assets/config-dms7.md).
+Consulte también [Configuración de Dynamic Media: Modo Scene7](/help/assets/config-dms7.md).
 
 **Para instalar el paquete de características 18912 para la migración masiva de recursos:**
 
-1. En la instancia de Experience Manager, vaya a **[!UICONTROL Herramienta]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Usuarios]** y seleccione **[!UICONTROL Crear usuario]**. Este usuario de servicio debe tener *permisos de lectura/escritura* para `/content/dam.`
-1. En los campos **[!UICONTROL ID]** y **[!UICONTROL Password]**, introduzca un nombre de usuario y una contraseña; por ejemplo, **FTP User**. Este nombre aparece en la cronología como el usuario que creó el recurso. Cuando se carga un recurso desde FTP, se considera creado cuando se carga en el servidor FTP y se envía al Experience Manager.
-1. Póngase en contacto con [Adobe Customer Support para el Experience Manager](https://experienceleague.adobe.com/?support-solution=General#support) para solicitar acceso al paquete de funciones 18912 para descargarlo. Es posible que necesite la siguiente información cuando contacte con el servicio de asistencia técnica:
+1. En la instancia de Experience Manager, vaya a **[!UICONTROL Herramienta]** > **[!UICONTROL Seguridad]** > **[!UICONTROL Usuarios]** y seleccione **[!UICONTROL Crear usuario]**. Este usuario de servicio debe tener *leer/escribir* permisos para `/content/dam.`
+1. En el **[!UICONTROL ID]** y **[!UICONTROL Contraseña]** , introduzca un nombre de usuario y una contraseña; por ejemplo, **Usuario FTP**. Este nombre aparece en la cronología como el usuario que creó el recurso. Cuando se carga un recurso desde FTP, se considera creado cuando se carga en el servidor FTP y se envía al Experience Manager.
+1. Contacto [Asistencia al cliente de Adobe para el Experience Manager](https://experienceleague.adobe.com/?support-solution=General&amp;lang=es#support) para solicitar acceso al paquete de funciones 18912 para descargarlo. Es posible que necesite la siguiente información cuando contacte con el servicio de asistencia técnica:
 
    * Dirección IP del servidor para la instancia de Autor, incluido el número de puerto (de forma predeterminada, el número de puerto es 4502).
    * nombre de usuario y contraseña del servicio de Experience Manager del paso anterior.
@@ -46,4 +46,4 @@ Consulte también [Configuración de Dynamic Media - modo Scene7](/help/assets/c
 1. El servicio de asistencia al cliente de Adobe para Experience Manager le proporciona las credenciales de FTP y acceso al paquete de funciones 18912.
 1. Cuando reciba el paquete de características 18912, instálelo.
 
-   Consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md) para obtener más información sobre el uso de la distribución de software y los paquetes en el Experience Manager.
+   Consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md) para obtener más información sobre el uso de Distribución de software y paquetes en Experience Manager.

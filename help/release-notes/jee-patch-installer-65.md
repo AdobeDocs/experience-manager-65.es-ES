@@ -78,12 +78,12 @@ Si tenía configurada la autenticación SAML y tiene problemas con los metadatos
 
 1. Establezca la siguiente propiedad del sistema en el servidor de aplicaciones:\
    `um.saml.enable.large.xml=true`
-1. Reinicie el servidor.
+1. Reiniciar el servidor.
 1. Elimine los proveedores de autenticación SAML existentes y agréguelos de nuevo para los dominios existentes, tal como se describe en la configuración de SAML.
 
 ## Módulos afectados {#impacted-modules}
 
-* Servicios de documento
+* Servicios de documentos
 * Document Security
 * Base JEE
 

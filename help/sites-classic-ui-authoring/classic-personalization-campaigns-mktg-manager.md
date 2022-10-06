@@ -1,8 +1,8 @@
 ---
 title: Trabajo con Marketing Campaign Manager
-seo-title: Trabajo con Marketing Campaign Manager
+seo-title: Working with the Marketing Campaign Manager
 description: Marketing Campaign Manager (MCM) es una consola que le permite administrar campañas con varios canales. Con este software de automatización de marketing podrá administrar todas sus marcas, campañas y experiencias, junto con los informes, posibles clientes, listas y segmentos relacionados.
-seo-description: Marketing Campaign Manager (MCM) es una consola que le permite administrar campañas con varios canales. Con este software de automatización de marketing podrá administrar todas sus marcas, campañas y experiencias, junto con los informes, posibles clientes, listas y segmentos relacionados.
+seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
 uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
-translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1175'
 ht-degree: 94%
 
 ---
-
 
 # Trabajo con Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
@@ -60,14 +59,14 @@ La recomendación es [ aprovechar Adobe Campaign y la integración a AEM](/help/
 
 El tablero muestra cuatro paneles que le ofrecen información general de sus listas (de posibles clientes), segmentos, informes y campañas. Aquí también hay disponible funcionalidad básica para estas opciones.
 
-![mcm_panel](assets/mcm_dashboard.png)
+![mcm_dashboard](assets/mcm_dashboard.png)
 
 ### Posibles clientes {#leads}
 
 >[!NOTE]
 >
 >Adobe no tiene previsto mejorar aún más esta capacidad (Gestión de posibles clientes).
->La recomendación es aprovechar [Adobe Campaign y la integración en AEM](/help/sites-administering/campaign.md).
+>La recomendación es aprovechar [Adobe Campaign y la integración a AEM](/help/sites-administering/campaign.md).
 
 En AEM MCM, es posible organizar y añadir posibles clientes introduciéndolos manualmente o importando una lista separada por comas; por ejemplo, una lista de correo. Las formas adicionales de generar posibles clientes consisten en los registros a boletines y comunidades (si se configuran, pueden generar un flujo de trabajo que rellene los posibles clientes). Los posibles clientes se suelen categorizar y situar en una lista para que más adelante se puedan realizar operaciones en toda la lista como, por ejemplo, enviar un correo electrónico personalizado a una lista concreta.
 
@@ -84,7 +83,7 @@ En el panel izquierdo de **Posibles clientes** podrá crear, importar, editar y 
 >[!NOTE]
 >
 >Adobe no tiene previsto mejorar aún más esta capacidad (Gestión de listas).
->La recomendación es aprovechar [Adobe Campaign y la integración en AEM](/help/sites-administering/campaign.md).
+>La recomendación es aprovechar [Adobe Campaign y la integración a AEM](/help/sites-administering/campaign.md).
 
 Las listas permiten organizar los posibles clientes en grupos. Con las listas, puede dirigir sus campañas de marketing a un grupo determinado de usuarios; por ejemplo, puede enviar un boletín dirigido a una lista.
 
@@ -104,7 +103,7 @@ En **Listas**, podrá administrar sus listas mediante la creación, importación
 
 Para acceder a las campañas existentes, en MCM, haga clic en **Campaigns** (Campañas).
 
-![screen_shot_2012-02-21at11106pm](assets/screen_shot_2012-02-21at11106pm.png)
+![screen_shot_2012-02-21at1106pm](assets/screen_shot_2012-02-21at11106pm.png)
 
 * **En el panel izquierdo**: hay una lista de todas las marcas y campañas.
 Si hace clic en una marca:
@@ -133,7 +132,7 @@ Desde aquí puede:
 
 * Abrir la información general de la campaña (haga doble clic en una campaña o haga clic en el panel izquierdo).
 
-#### Información general de la campaña  {#campaign-overview}
+#### Información general de la campaña {#campaign-overview}
 
 Hay dos vistas disponibles para las campañas individuales:
 
@@ -167,7 +166,7 @@ Hay dos vistas disponibles para las campañas individuales:
 
    Desde aquí puede:
 
-   * Crear un **Nuevo...** experiencia; por ejemplo, ofertas de Adobe Target, teasers y newsletters.
+   * Cree un **Nuevo...** experiencia; por ejemplo, ofertas, teasers y newsletters de Adobe Target.
    * **Editar** los detalles de una página de teaser o newsletter específica (también se puede hacer doble clic).
    * Definir las **Propiedades...** de una página de teaser o newsletter específica.
    * **Simular** el aspecto de una experiencia (página de teaser o newsletter).
@@ -179,7 +178,7 @@ Cuando la página simulada esté abierta podrá abrir la barra de tareas para ca
    * **Buscar** texto (se buscará en el campo Título de la experiencia).
    * Utilice la búsqueda **Avanzada** para aplicar filtros a la búsqueda.
 
-### Simulación de las experiencias de su campaña.  {#simulating-your-campaign-experiences}
+### Simulación de las experiencias de su campaña. {#simulating-your-campaign-experiences}
 
 En MCM, haga clic en **Campañas**. Compruebe que la vista de lista esté activa, seleccione la experiencia de campaña correspondiente y haga clic en **Simular**. Se abrirá el touchpoint (página de teaser o newsletter) para mostrar la experiencia seleccionada, tal como la verá el visitante.
 
@@ -187,8 +186,8 @@ En MCM, haga clic en **Campañas**. Compruebe que la vista de lista esté activa
 
 Desde aquí también podrá abrir la barra de tareas (haga clic en la flecha pequeña hacia abajo) para cambiar al modo de edición para actualizar la página.
 
-### Análisis de las experiencia de su campaña  {#analyzing-your-campaign-experiences}
+### Análisis de las experiencia de su campaña {#analyzing-your-campaign-experiences}
 
 En MCM, haga clic en **Campañas**. Compruebe que la vista de lista esté activa, seleccione la experiencia de campaña correspondiente y seleccione **Analizar...**. Se mostrará un gráfico de las impresiones de la página en el tiempo.
 
-![mcm_campaign_analysis](assets/mcm_campaignanalyze.png)
+![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)

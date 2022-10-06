@@ -1,31 +1,30 @@
 ---
-title: Elementos esenciales del contenido destacado
-seo-title: Elementos esenciales del contenido destacado
-description: Uso del contenido de las funciones
-seo-description: Uso del contenido de las funciones
+title: Elementos esenciales de contenido destacado
+seo-title: Featured Content Essentials
+description: Trabajo con contenido de funciones
+seo-description: Working with feature content
 uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: 70b0ad6a-c891-4588-8515-449aed206805
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '106'
 ht-degree: 6%
 
 ---
 
-
-# Elementos esenciales del contenido destacado {#featured-content-essentials}
+# Elementos esenciales de contenido destacado  {#featured-content-essentials}
 
 Esta página proporciona la información esencial para trabajar con contenido destacado.
 
-A diferencia de fijar una publicación en la parte superior de un foro, esta función permite resaltar contenido en cualquier parte del sitio de la comunidad.
+A diferencia de fijar una publicación en la parte superior de un foro, esta función permite que el contenido se resalte en cualquier parte dentro del sitio de la comunidad.
 
 
-## Esenciales para el cliente {#essentials-for-client-side}
+## Elementos esenciales para el cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -60,4 +59,4 @@ A diferencia de fijar una publicación en la parte superior de un foro, esta fun
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de comunidad que incluye la [función Contenido destacado](functions.md#featured-content-function), incluye un componente configurado `featured content`.
+Una estructura de sitio de la comunidad que incluye el [Función Contenido destacado](functions.md#featured-content-function), incluye un `featured content` componente.

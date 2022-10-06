@@ -85,7 +85,7 @@ Las siguientes acciones en [!DNL Assets] trabaje con los métodos abreviados del
 | Vista de columna en [!DNL Assets] interfaz de usuario | Teclas de flecha arriba y abajo | Vaya a archivos y carpetas dentro de la misma jerarquía. |
 | Vista de columna en [!DNL Assets] interfaz de usuario | Teclas de flecha izquierda y derecha | Vaya a los archivos y carpetas situados encima o debajo de la carpeta actual. |
 | Exploración de carpetas en [!DNL Assets] | `/` | Invocar la búsqueda abriendo el cuadro Omnisearch . |
-| [!DNL Assets] Consola | &amp;grave; | Conmutar raíles laterales |
+| [!DNL Assets] Consola | &grave; | Conmutar raíles laterales |
 | [!DNL Assets] Consola | `Alt + 1` | Abra el árbol de contenido. |
 | [!DNL Assets] Consola | `Alt + 2` | Apertura [!UICONTROL Navegación] carril izquierdo. |
 | [!DNL Assets] Consola | `Alt + 3` | Mostrar [!UICONTROL Cronología] de un recurso seleccionado. |

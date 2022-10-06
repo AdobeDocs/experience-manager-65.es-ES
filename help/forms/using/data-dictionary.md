@@ -71,7 +71,7 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
    >
    >Puede omitir la carga del archivo de esquema y crear el diccionario de datos desde cero mediante la interfaz de usuario. Para ello, omita este paso y continúe con los pasos siguientes.
 
-1. Toque **Siguiente**.
+1. Pulse **Siguiente**.
 1. En la pantalla Agregar propiedades , agregue los elementos al diccionario de datos. También puede añadir o eliminar elementos y editar sus detalles si ha cargado un esquema para obtener una estructura básica del diccionario de datos.
 
    Puede pulsar los tres puntos del lado derecho de un elemento y agregar un elemento a la estructura del diccionario de datos.
@@ -111,7 +111,7 @@ Puede usar el Editor de diccionario de datos para crear un diccionario de datos 
    >Al eliminar un elemento compuesto/de colección con nodos secundarios, también se eliminan sus nodos secundarios.
 
 1. (Opcional) Seleccione un elemento en el panel Estructura del diccionario de datos y en el panel Lista de campos y variables . Cambie o agregue cualquier atributo necesario asociado al elemento.
-1. Toque **Guardar**.
+1. Pulse **Guardar**.
 
 ### Creación de copias de uno o varios diccionario de datos {#create-copies-of-one-or-more-data-dictionary}
 

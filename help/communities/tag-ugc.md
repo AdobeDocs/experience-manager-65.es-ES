@@ -1,8 +1,8 @@
 ---
 title: Etiquetado del contenido generado por el usuario
-seo-title: Etiquetado del contenido generado por el usuario
+seo-title: Tagging User Generated Content
 description: El etiquetado del contenido generado por el usuario (UGC) es la forma en que los miembros de la comunidad pueden ayudar a otros miembros a buscar contenido
-seo-description: El etiquetado del contenido generado por el usuario (UGC) es la forma en que los miembros de la comunidad pueden ayudar a otros miembros a buscar contenido
+seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '227'
 ht-degree: 3%
 
 ---
@@ -40,11 +40,11 @@ Las funciones de AEM Communities que se pueden configurar para permitir el etiqu
 
 ## Administración de etiquetas {#administering-tags}
 
-Consulte [Administración de etiquetas](../../help/sites-administering/tags.md#tagging-console) para crear y administrar espacios de nombres y taxonomías de etiquetas.
+Consulte [Administración de etiquetas](../../help/sites-administering/tags.md#tagging-console) para crear y administrar áreas de nombres y taxonomías de etiquetas.
 
-Consulte [Tag Essentials](tag.md) para obtener información sobre el desarrollador.
+Consulte [Aspectos básicos de las etiquetas](tag.md) para obtener información del desarrollador.
 
-Consulte [Uso de Social Tag Cloud](tagcloud.md) para agregar un componente de Social Tag Cloud a una página para facilitar la búsqueda de UGC publicado con las etiquetas aplicadas.
+Consulte [Uso de la nube de etiquetas social](tagcloud.md) para agregar un componente de Social Tag Cloud a una página para facilitar la búsqueda de UGC publicado con las etiquetas aplicadas.
 
 ### Permisos de etiquetas {#tag-permissions}
 

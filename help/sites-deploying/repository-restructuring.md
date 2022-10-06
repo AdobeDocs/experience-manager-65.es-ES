@@ -1,8 +1,8 @@
 ---
 title: Reestructuración de repositorios en AEM 6.5
-seo-title: Reestructuración de repositorios en AEM 6.5
+seo-title: Repository Restructuring in AEM 6.5
 description: Obtenga información sobre los conceptos básicos y el razonamiento detrás de la reestructuración de repositorios en AEM 6.5
-seo-description: Obtenga información sobre los conceptos básicos y el razonamiento detrás de la reestructuración de repositorios en AEM 6.5
+seo-description: Learn about the basics and reasoning behind the repository restructuring in AEM 6.5
 uuid: e9cd3e88-e352-44a8-9b97-69488d3267cb
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,19 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 2572aa8d-2a3a-4e5b-ae5f-07e1017ea0f4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
 
-
-# Reestructuración del repositorio en AEM 6.5{#repository-restructuring-in-aem}
+# Reestructuración de repositorios en AEM 6.5{#repository-restructuring-in-aem}
 
 ## Introducción {#introduction}
 
-Antes de AEM 6.4, el código de cliente se implementaba en áreas impredecibles del JCR que estaban sujetas a cambios en las actualizaciones. Debido a esto, era común que las versiones formales de AEM sobrescribieran el código, la configuración o el contenido personalizados. Además, a veces los cambios de cliente se sobrescriben AEM código de producto o contenido, lo que rompe la funcionalidad del producto.
+Antes de AEM 6.4, el código de cliente se implementaba en áreas impredecibles del JCR que estaban sujetas a cambios en las actualizaciones. Debido a esto, era común que las versiones formales de AEM sobrescribieran el código, la configuración o el contenido personalizados. Además, a veces los cambios de los clientes se sobrescriben AEM código de producto o contenido, lo que rompe la funcionalidad del producto.
 
 Si se delinean claramente las jerarquías para AEM código de producto y código de cliente, estos conflictos se pueden evitar.
 

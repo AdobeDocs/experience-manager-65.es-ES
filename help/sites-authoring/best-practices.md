@@ -1,24 +1,23 @@
 ---
-title: 'Prácticas recomendadas  '
-seo-title: 'Prácticas recomendadas  '
+title: Prácticas recomendadas
+seo-title: Best Practices
 description: Cómo utilizar AEM del modo más eficiente y efectivo posible
-seo-description: Cómo utilizar AEM del modo más eficiente y efectivo posible
+seo-description: How to use AEM in the most efficient and most effective way possible
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 72%
+source-wordcount: '287'
+ht-degree: 70%
 
 ---
 
-
-# Prácticas recomendadas  {#best-practices}
+# Prácticas recomendadas{#best-practices}
 
 Las prácticas recomendadas sobre creación describen cómo utilizar AEM del modo más eficaz y eficiente posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
 
@@ -36,9 +35,9 @@ Para conocer las prácticas recomendadas sobre administración, implementación 
 
 Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
 
-## Assets {#assets}
+## Recursos {#assets}
 
-Las prácticas recomendadas en torno a los recursos, incluida la capacidad de Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
+Las prácticas recomendadas sobre Assets, incluidas la capacidad de Dynamic Media y la integración con Dynamic Media Classic, se describen en los siguientes temas:
 
 <table>
  <tbody>
@@ -55,7 +54,7 @@ Las prácticas recomendadas en torno a los recursos, incluida la capacidad de Dy
   <tr>
    <td>Imágenes dinámicas</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Prácticas recomendadas de las imágenes dinámicas</a></td>
-   <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor manera de optimizar la calidad de las imágenes si utiliza la funcionalidad de Dynamic Media o si se integra con Dynamic Media Classic. </p> </td>
+   <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor manera de optimizar la calidad de las imágenes si utiliza la funcionalidad de Dynamic Media o la integración con Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Recursos multilingües</td>
@@ -65,14 +64,14 @@ Las prácticas recomendadas en torno a los recursos, incluida la capacidad de Dy
  </tbody>
 </table>
 
-## Sites {#sites}
+## Sitios {#sites}
 
 Para administrar y crear contenido en un sitio web, hay que seguir estas prácticas recomendadas:
 
 |  |  |  |
 |---|---|---|
 | Herramientas de creación | [Entorno y herramientas de creación](/help/sites-authoring/author-environment-tools.md) | Proporciona información general sobre las herramientas utilizadas para crear páginas. |
-| Organización de páginas | [Crear y organizar páginas](/help/sites-authoring/managing-pages.md) | Proporciona información general sobre cómo organizar mejor las páginas, incluidas las convenciones de nombres. |
+| Organización de páginas | [Crear y organizar páginas](/help/sites-authoring/managing-pages.md) | Proporciona información general sobre cómo organizar las páginas, incluidas convenciones de nomenclatura. |
 
 ## Forms {#forms}
 

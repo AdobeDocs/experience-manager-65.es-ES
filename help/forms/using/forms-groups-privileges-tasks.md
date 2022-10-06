@@ -1,8 +1,8 @@
 ---
 title: AEM Forms en grupos y privilegios OSGi
-seo-title: AEM Forms en grupos y privilegios OSGi
+seo-title: AEM Forms on OSGi Groups and Privileges
 description: Asignar usuarios a los grupos para administrar AEM Forms en OSGi
-seo-description: Asignar usuarios a los grupos para administrar AEM Forms en OSGi
+seo-description: Assign users to the groups to manage AEM Forms on OSGi
 uuid: f269a206-356d-4cee-b449-05c5da87121a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -14,21 +14,21 @@ role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 1%
+source-wordcount: '261'
+ht-degree: 14%
 
 ---
 
 # AEM Forms en grupos y privilegios OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
-Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar directivas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de AEM. Estas políticas controlan los privilegios de los usuarios que forman parte del grupo.
+Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar políticas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de AEM. Estas políticas controlan los privilegios de los usuarios que forman parte del grupo.
 
-Una vez que instale [AEM Forms add-on package](../../forms/using/installing-configuring-aem-forms-osgi.md), los grupos mencionados en este artículo, como los usuarios de formularios y los usuarios con capacidad para formularios, estarán disponibles automáticamente para su asignación. La siguiente tabla enumera las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
+Una vez realizada la instalación [Paquete de complementos de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), los grupos mencionados en este artículo, como usuarios de formularios y usuarios avanzados de formularios, están disponibles automáticamente para su asignación. La siguiente tabla enumera las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
 
 <table>
  <tbody>
   <tr>
-   <td>Agrupar</td> 
+   <td>Grupo</td> 
    <td>Tareas</td> 
   </tr>
   <tr>
@@ -37,8 +37,8 @@ Una vez que instale [AEM Forms add-on package](../../forms/using/installing-conf
     <ul> 
      <li>Crear, previsualizar, publicar y enviar formularios adaptables</li> 
      <li>Crear, previsualizar y publicar comunicaciones interactivas y fragmentos de documento</li> 
-     <li>Cargar recursos a una instancia de AEM</li> 
-     <li>Crear temas</li> 
+     <li>Cargar recursos en una instancia de AEM</li> 
+     <li>Crear temáticas</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -48,8 +48,8 @@ Una vez que instale [AEM Forms add-on package](../../forms/using/installing-conf
      <li>Crear, previsualizar, publicar y enviar formularios adaptables</li> 
      <li>Crear, previsualizar y publicar comunicaciones interactivas y fragmentos de documento</li> 
      <li>Creación de secuencias de comandos para formularios adaptables mediante el editor de código</li> 
-     <li>Carga de recursos, incluidas secuencias de comandos</li> 
-     <li>Crear temas</li> 
+     <li>Cargar recursos, incluidos scripts</li> 
+     <li>Crear temáticas</li> 
      <li>Importar paquetes que contengan XDP</li> 
     </ul> </td> 
   </tr>
@@ -62,7 +62,7 @@ Una vez que instale [AEM Forms add-on package](../../forms/using/installing-conf
     </ul> </td> 
   </tr>
   <tr>
-   <td>autores de plantillas <sup>[2]</sup></td> 
+   <td>template-authors <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>Creación y previsualización de formularios adaptables o plantillas de comunicaciones interactivas</li> 
@@ -72,7 +72,7 @@ Una vez que instale [AEM Forms add-on package](../../forms/using/installing-conf
    <td><p>fdm-authors</p> </td> 
    <td>
     <ul> 
-     <li>Creación y modificación de un modelo de datos de formulario</li> 
+     <li>Crear y modificar un modelo de datos de formulario</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -87,14 +87,14 @@ Una vez que instale [AEM Forms add-on package](../../forms/using/installing-conf
    <td>
     <ul> 
      <li>Creación de una aplicación de bandeja de entrada</li> 
-     <li>Creación de un modelo de flujo de trabajo</li> 
+     <li>Cree un modelo del flujo de trabajo</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>flujo de trabajo-usuarios</td> 
    <td>
     <ul> 
-     <li>Utilice AEM aplicaciones de bandeja de entrada<br /> <strong>Nota: </strong>Debe tener asignaciones de grupo cm-agent-users y workflow-users para acceder a la interfaz de usuario de Interactive Communications Agent en AEM bandeja de entrada.</li> 
+     <li>Uso de aplicaciones AEM bandeja de entrada<br /> <strong>Nota: </strong>Debe tener asignaciones de cm-agent-users y de grupo de flujo de trabajo-usuarios para acceder a la interfaz de usuario de Interactive Communications Agent en AEM bandeja de entrada.</li> 
      <li>Administrar instancias de flujo de trabajo</li> 
     </ul> </td> 
   </tr>

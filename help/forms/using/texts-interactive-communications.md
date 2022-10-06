@@ -13,7 +13,7 @@ exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '2477'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ El fragmento del documento de texto en Comunicación interactiva admite el sigui
 
    * **[!UICONTROL Etiquetas]**: De forma opcional, para crear una etiqueta personalizada, introduzca valor en el campo de texto y pulse Intro. Al guardar este texto, se crean las etiquetas recientemente agregadas.
 
-1. Toque **[!UICONTROL Siguiente]**.
+1. Pulse **[!UICONTROL Siguiente]**.
 
    Aparece la página Crear texto . Si ha elegido crear un texto basado en el modelo de datos de formulario, las propiedades del modelo de datos de formulario aparecerán en el panel izquierdo.
 
@@ -67,7 +67,7 @@ El fragmento del documento de texto en Comunicación interactiva admite el sigui
    >
    >Puede agregar elementos del Modelo de datos de formulario, elementos del diccionario de datos y variables utilizando el símbolo @ en el editor de texto. Cuando se introduce una cadena precedida por @ en el editor de texto, se buscan todos los elementos del Modelo de datos, los elementos del Diccionario de datos y las variables y se muestran los elementos o variables que contienen la cadena buscada. Puede navegar por los resultados de búsqueda y seleccionar un elemento o variable. Si no hay ningún resultado coincidente, la variable *No se encontraron resultados coincidentes* se muestra.
 
-1. Toque **[!UICONTROL Guardar]**.
+1. Pulse **[!UICONTROL Guardar]**.
 
    Se crea el texto. Ahora puede usar el texto como un bloque de creación al crear una comunicación interactiva.
 
@@ -117,7 +117,7 @@ Al crear o editar un fragmento de documento de texto, puede crear e insertar var
 
    ![variablespanel](assets/variablespane.png)
 
-1. Toque **[!UICONTROL Crear]**.
+1. Pulse **[!UICONTROL Crear]**.
 
    Aparece el panel Crear variables .
 
@@ -128,7 +128,7 @@ Al crear o editar un fragmento de documento de texto, puede crear e insertar var
    * **[!UICONTROL Tipo]** : Seleccione un tipo de variable: Cadena, Número, Booleano o Fecha.
    * **[!UICONTROL Permitir solo valores específicos]** : Para las variables String y Number , puede asegurarse de que el agente elija entre un conjunto específico de valores para un marcador de posición en la interfaz de usuario del agente. Para especificar el conjunto de valores, seleccione esta opción y, a continuación, especifique los valores separados por coma que están permitidos en la variable **[!UICONTROL Valores]** campo .
 
-1. Toque **[!UICONTROL Crear]**.
+1. Pulse **[!UICONTROL Crear]**.
 
    La variable se crea y se enumera en el panel Variables .
 
@@ -140,7 +140,7 @@ Al crear o editar un fragmento de documento de texto, puede crear e insertar var
 
    Como alternativa, puede buscar y agregar variables utilizando el símbolo @ en el editor de texto. Coloque el cursor donde desee insertar la variable . Escriba @ seguido de la cadena de búsqueda. La operación de búsqueda se realiza en todas las propiedades y variables del modelo de datos de formulario disponibles en el fragmento de documento. Las propiedades y variables que contienen la cadena de búsqueda se recuperan y se muestran como una lista desplegable. Navegue por los resultados de la búsqueda y haga clic en la variable que desee insertar en la ubicación del cursor. Pulse Esc para ocultar los resultados de la búsqueda.
 
-1. Toque **[!UICONTROL Guardar]**.
+1. Pulse **[!UICONTROL Guardar]**.
 
 ## Crear reglas en el texto {#rules}
 
@@ -159,7 +159,7 @@ Con el editor de reglas de un texto, puede crear reglas para mostrar u ocultar c
 
    ![selectcontentapplyrule](assets/selectcontentapplyrule.png)
 
-1. Toque **[!UICONTROL Crear regla]**.
+1. Pulse **[!UICONTROL Crear regla]**.
 
    Aparecerá el cuadro de diálogo Crear regla . Además de cadena, número, expresión matemática y fecha, también están disponibles en el Editor de reglas para crear instrucciones de las reglas:
 
@@ -188,7 +188,7 @@ Con el editor de reglas de un texto, puede crear reglas para mostrar u ocultar c
    * También puede crear varias condiciones en una regla.
    * También puede crear reglas superpuestas, en las que se aplica una regla a una parte de un contenido que ya tiene una regla aplicada.
 
-1. Puntee **[!UICONTROL Listo]**.
+1. Pulse **[!UICONTROL Listo]**.
 
    La regla se aplica. El texto o el contenido al que se aplica la regla se resalta en verde. Cuando pasa el ratón sobre el controlador izquierdo del resaltado, aparece la regla aplicada.
 

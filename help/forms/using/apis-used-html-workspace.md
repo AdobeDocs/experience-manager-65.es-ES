@@ -1,21 +1,20 @@
 ---
 title: API utilizadas en el espacio de trabajo de AEM Forms
-seo-title: API utilizadas en el espacio de trabajo de AEM Forms
-description: API públicas de Java y JavaScript y métodos del espacio de trabajo de LiveCycle AEM Forms, expuestos para personalización y automatización.
-seo-description: API públicas de Java y JavaScript y métodos del espacio de trabajo de LiveCycle AEM Forms, expuestos para personalización y automatización.
+seo-title: APIs used in AEM Forms workspace
+description: API de Java y JavaScript públicas y métodos del espacio de trabajo de AEM Forms de LiveCycle, expuestos para la personalización y la automatización.
+seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
 uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 1%
+source-wordcount: '997'
+ht-degree: 2%
 
 ---
-
 
 # API utilizadas en el espacio de trabajo de AEM Forms {#apis-used-in-aem-forms-workspace}
 
@@ -25,51 +24,51 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
  <tbody>
   <tr>
    <td><strong>Método Javascript</strong></td>
-   <td><strong>Nombre de servicio</strong></td>
-   <td><strong>Nombre de API</strong></td>
+   <td><strong>Nombre del servicio</strong></td>
+   <td><strong>Nombre de la API</strong></td>
    <td><strong>Comentarios</strong></td>
   </tr>
   <tr>
    <td>getGroups</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getGroups</td>
-   <td>Busca grupos. devuelve una lista de todos los grupos si no se ha especificado nada; de lo contrario, devuelve grupos con el nombre especificado.</td>
+   <td>Busca grupos. devuelve una lista de todos los grupos si no se ha especificado nada; si no, devuelve grupos con el nombre especificado.</td>
   </tr>
   <tr>
    <td>getUsersAndGroups</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getUsersAndGroups</td>
-   <td>Busca usuarios y grupos. Devuelve una lista de todos los usuarios y grupos, si no se especifica nada, devuelve usuarios y grupos con el nombre especificado.</td>
+   <td>Busca usuarios y grupos. Devuelve una lista de todos los usuarios y grupos si no se ha especificado nada; de lo contrario, devuelve usuarios y grupos con un nombre especificado.</td>
   </tr>
   <tr>
    <td>prepareForSubmit</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>prepareForSubmit</td>
-   <td>Se llama antes de enviar el formulario mediante DocumentSubmitServlet. Establece la ID de tarea en una variable de sesión (junto con la hora de caducidad) que se recupera durante el envío real.</td>
+   <td>Se llama antes de enviar el formulario a través de DocumentSubmitServlet. Establece el ID de tarea en una variable de sesión (junto con la hora de caducidad) que se recupera durante el envío real.</td>
   </tr>
   <tr>
    <td>submitTask</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>submit</td>
-   <td>Envía el objeto de documento asociado a una tarea (y a su vez envía el proceso).</td>
+   <td>Envía el objeto de documento asociado a una tarea (y el proceso de envío a su vez).</td>
   </tr>
   <tr>
    <td>getRootEndpointCategories</td>
    <td>ProcessManagementStartpointService</td>
    <td>getRootEndpointCategories</td>
-   <td>Recupera todas las categorías raíz presentes en el servidor.</td>
+   <td>Obtiene todas las categorías raíz presentes en el servidor.</td>
   </tr>
   <tr>
    <td>getDirectChildCategories</td>
    <td>ProcessManagementStartpointService</td>
    <td>getDirectChildCategories2</td>
-   <td>Busca todos los niños directos para una categoría.</td>
+   <td>Obtiene todos los elementos secundarios directos de una categoría.</td>
   </tr>
   <tr>
    <td>getAllStartpoints</td>
    <td>ProcessManagementStartpointService</td>
    <td>getAllStartpoints</td>
-   <td>Recupera todos los puntos de partida presentes en el servidor bajo todas las categorías.</td>
+   <td>Obtiene todos los puntos de inicio presentes en el servidor en todas las categorías.</td>
   </tr>
   <tr>
    <td>invokeStartpoint</td>
@@ -81,19 +80,19 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>getAllTasks</td>
    <td>ProcessManagementTaskService</td>
    <td>getAllActionableTasks</td>
-   <td>Recupera todas las tareas que se crean y reenvían o consultan, guardan, asignan, asignan y guardan para el usuario que ha iniciado sesión.</td>
+   <td>Obtiene todas las tareas que se crean, reenvían o consultan, guardan, asignan, asignan y guardan para el usuario que ha iniciado sesión.</td>
   </tr>
   <tr>
    <td>getTask</td>
    <td>ProcessManagementTaskService</td>
    <td>getTask</td>
-   <td>Busca una tarea específica.</td>
+   <td>Obtiene una tarea específica.</td>
   </tr>
   <tr>
-   <td>outputTask</td>
+   <td>renderTask</td>
    <td>ProcessManagementTaskService</td>
    <td>procesar</td>
-   <td>Procesa una tarea y devuelve la información necesaria para procesar el formulario, como la dirección URL del formulario, el tipo de formulario, la dirección URL de los datos, si es necesario, etc.</td>
+   <td>Procesa una tarea y devuelve la información necesaria para procesar el formulario, como la dirección URL del formulario, el tipo de formulario, la dirección URL de datos si es necesario, etc.</td>
   </tr>
   <tr>
    <td>submitWithPreviousData</td>
@@ -105,10 +104,10 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>submitWithData</td>
    <td>ProcessManagementTaskService</td>
    <td>submitWithData</td>
-   <td>Envía los datos del formulario (pasados como cadena) asociados con la tarea mediante la API de envío de TaskManager. Se utiliza para formularios flexibles que no llaman a la API de envío de TaskManager.</td>
+   <td>Envía los datos del formulario (pasados como cadena) asociados a la tarea mediante la API de envío de TaskManager. Se utiliza para formularios flexibles que no llaman a la API de envío de TaskManager.</td>
   </tr>
   <tr>
-   <td>save</td>
+   <td>guardar</td>
    <td>ProcessManagementTaskService</td>
    <td>guardar</td>
    <td>Guarda una tarea en el servidor.</td>
@@ -117,19 +116,19 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>complete</td>
    <td>ProcessManagementTaskService</td>
    <td>complete</td>
-   <td>Finaliza una tarea y la tarea se pasa al siguiente paso según el diseño del proceso.</td>
+   <td>Completa una tarea y esta se pasa al siguiente paso según el diseño del proceso.</td>
   </tr>
   <tr>
    <td>getAttachment</td>
    <td>ProcessManagementTaskService</td>
    <td>getAttachment</td>
-   <td>Devuelve la dirección URL de un archivo adjunto en el que está disponible.</td>
+   <td>Devuelve la url de un archivo adjunto donde el archivo adjunto está disponible.</td>
   </tr>
   <tr>
    <td>getAllAttachments</td>
    <td>ProcessManagementTaskService</td>
    <td>getAllActionableAttachments</td>
-   <td>Recupera todos los archivos adjuntos y notas de una tarea.</td>
+   <td>Obtiene todos los archivos adjuntos y notas de una tarea.</td>
   </tr>
   <tr>
    <td>compartir</td>
@@ -141,19 +140,19 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>adelante</td>
    <td>ProcessManagementTaskService</td>
    <td>adelante</td>
-   <td>Reenvía una tarea a otro usuario.</td>
+   <td>Envía una tarea a otro usuario.</td>
   </tr>
   <tr>
-   <td>consulta</td>
+   <td>consulte</td>
    <td>ProcessManagementTaskService</td>
-   <td>consulta</td>
+   <td>consulte</td>
    <td>Consulta una tarea con otro usuario.</td>
   </tr>
   <tr>
-   <td>reclamar</td>
+   <td>claim</td>
    <td>ProcessManagementTaskService</td>
-   <td>reclamar</td>
-   <td>Afirma que hay una tarea disponible en la cola compartida.</td>
+   <td>presentar</td>
+   <td>Afirma que una tarea está disponible en la cola compartida.</td>
   </tr>
   <tr>
    <td>desbloquear</td>
@@ -165,31 +164,31 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>bloquear</td>
    <td>ProcessManagementTaskService</td>
    <td>bloquear</td>
-   <td>Bloquea una tarea y otro usuario no puede reclamar la tarea si se comparte.</td>
+   <td>Bloquea una tarea y esta no puede ser reclamada por otro usuario si se comparte.</td>
   </tr>
   <tr>
-   <td>rechazar</td>
+   <td>Rechazar</td>
    <td>ProcessManagementTaskService</td>
-   <td>rechazar</td>
+   <td>Rechazar</td>
    <td>Devuelve la tarea al propietario anterior de la tarea.</td>
   </tr>
   <tr>
-   <td>abandono</td>
+   <td>abandon</td>
    <td>ProcessManagementTaskService</td>
-   <td>abandono</td>
+   <td>abandon</td>
    <td>Elimina una tarea.</td>
   </tr>
   <tr>
    <td>setVisibility</td>
    <td>ProcessManagementTaskService</td>
    <td>setVisibility</td>
-   <td>Establece la visibilidad de una tarea. Si la visibilidad se establece en false, la tarea no será visible para el usuario posteriormente.</td>
+   <td>Establece la visibilidad de una tarea. Si la visibilidad se establece en false , el usuario no podrá ver la tarea posteriormente.</td>
   </tr>
   <tr>
    <td>getUsers</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getUsers</td>
-   <td>Se utiliza para buscar usuarios. Devuelve todos los usuarios si no se especifica ningún nombre, de lo contrario, devuelve los usuarios con un nombre especificado.</td>
+   <td>Se utiliza para buscar usuarios. Devuelve todos los usuarios si no se especifica ningún nombre, sino los usuarios con un nombre especificado.</td>
   </tr>
   <tr>
    <td>getUsersInGroup</td>
@@ -198,10 +197,10 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>Devuelve todos los usuarios de un grupo.</td>
   </tr>
   <tr>
-   <td>GrantQueueAccess</td>
+   <td>grantQueueAccess</td>
    <td>ProcessManagementQueueService</td>
-   <td>GrantQueueAccess</td>
-   <td>Otorga al usuario especificado acceso a la cola del usuario que ha iniciado sesión. Básicamente está compartiendo su propia cola con otro usuario.</td>
+   <td>grantQueueAccess</td>
+   <td>Otorga acceso a la cola del usuario que ha iniciado sesión al usuario especificado. Básicamente está compartiendo su propia cola con otro usuario.</td>
   </tr>
   <tr>
    <td>requestQueueAccess</td>
@@ -219,25 +218,25 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>getUsersForAccessibleQueues</td>
    <td>ProcessManagementQueueService</td>
    <td>getUsersForAccessibleQueues</td>
-   <td>Devuelve todos los usuarios a los que un usuario tiene acceso a la cola.</td>
+   <td>Devuelve todos los usuarios cuya cola es accesible para un usuario.</td>
   </tr>
   <tr>
    <td>revokeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>revokeQueueAccess</td>
-   <td>Elimina a un usuario de la lista de usuarios que tienen acceso a la cola del usuario que ha iniciado sesión.</td>
+   <td>Elimina a un usuario de la lista de usuarios que tienen acceso a la cola de usuarios que han iniciado sesión.</td>
   </tr>
   <tr>
    <td>removeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>removeQueueAccess</td>
-   <td>Elimina un usuario de la lista de usuarios a los que el usuario que ha iniciado sesión puede acceder a la cola.</td>
+   <td>Elimina un usuario de la lista de usuarios a los que se puede acceder desde la cola para iniciar sesión.</td>
   </tr>
   <tr>
    <td>getAllQueues<br /> </td>
    <td>ProcessManagementQueueService<br /> </td>
    <td>getAllQueues<br /> </td>
-   <td>Obtiene todas las colas (propias, compartidas y de grupo) accesibles para el usuario que ha iniciado sesión.<br /> </td>
+   <td>Obtiene todas las colas (propias, compartidas y de grupo) accesibles para el usuario registrado.<br /> </td>
   </tr>
   <tr>
    <td>getOutOfOfficeSettings</td>
@@ -249,7 +248,7 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>saveOutOfOfficeSettingsJson</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>saveOutOfOfficeSettingsJson</td>
-   <td>Guarda la configuración de un usuario fuera de la oficina.</td>
+   <td>Guarda la configuración fuera de la oficina de un usuario.</td>
   </tr>
   <tr>
    <td>getAllProcesses</td>
@@ -261,7 +260,7 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>getParticipatedProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getParticipatedProcesses</td>
-   <td>Devuelve la lista de todos los nombres de proceso que participaron los usuarios que iniciaron sesión.</td>
+   <td>Devuelve la lista de todos los nombres de proceso participantes por el usuario que ha iniciado sesión.</td>
   </tr>
   <tr>
    <td>getProcessInstance<br /> </td>
@@ -273,12 +272,12 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>getProcessInstances</td>
    <td>ProcessManagementQueryService</td>
    <td>getProcessInstances</td>
-   <td>Recupera todas las instancias de proceso de un proceso.</td>
+   <td>Obtiene todas las instancias de proceso de un proceso.</td>
   </tr>
   <tr>
-   <td>getpendingTasksForProcessInstance</td>
+   <td>getPendingTasksForProcessInstance</td>
    <td>ProcessManagementQueryService</td>
-   <td>getpendingTasksForProcessInstance</td>
+   <td>getPendingTasksForProcessInstance</td>
    <td>Obtiene tareas pendientes para una instancia de proceso.</td>
   </tr>
   <tr>
@@ -306,10 +305,10 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>Busca y devuelve todas las tareas que cumplen todas las condiciones de una plantilla de búsqueda.</td>
   </tr>
   <tr>
-   <td>getAssignmentsForTask</td>
+   <td>getAssignedForTask</td>
    <td>ProcessManagementTaskService</td>
-   <td>getAssignmentsForTask</td>
-   <td>Obtiene todas las asignaciones para una tarea. Por ejemplo:- Si el usuario reenvía o consulta una tarea con otro usuario, entonces es una asignación para una tarea.</td>
+   <td>getAssignedForTask</td>
+   <td>Obtiene todas las asignaciones para una tarea. Por ejemplo: si el usuario reenvía o consulta una tarea con otro usuario, entonces es una asignación para una tarea.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>
@@ -321,19 +320,19 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>initialize</td>
    <td>ProcessManagementClientSessionService</td>
    <td>initialize</td>
-   <td>De ser necesario, renueva la afirmación. Autentica al usuario. Establece los parámetros de sesión para la información de servidor y cliente. Devuelve la información del usuario y el intervalo de sondeo.</td>
+   <td>Se renueva la afirmación si es necesario. Autentica al usuario. Establece los parámetros de sesión para la información de servidor/cliente. Devuelve la información del usuario y el intervalo de sondeo.</td>
   </tr>
   <tr>
    <td>getTasksForDirectReports</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getTasksForDirectReports</td>
-   <td>Devuelve todas las tareas de los informes directos del administrador de inicio de sesión.</td>
+   <td>Devuelve todas las tareas de los informes directos del administrador de sesión.</td>
   </tr>
   <tr>
    <td>getTaskOfDirectReport<br /> </td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getDirectReportTask</td>
-   <td>Devuelve la tarea del informe directo especificado del administrador de inicio de sesión.</td>
+   <td>Devuelve la tarea del informe directo especificado del administrador de sesión.</td>
   </tr>
   <tr>
    <td>forwardTaskOfDirectReport</td>
@@ -342,22 +341,22 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>Reenvía una tarea de un informe directo a otro usuario.</td>
   </tr>
   <tr>
-   <td>rechacarTareaDeDirectReport</td>
+   <td>rejectTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
-   <td>rechacarTareaDeDirectReport</td>
+   <td>rejectTaskOfDirectReport</td>
    <td>Devuelve una tarea de un informe directo al usuario anterior.</td>
   </tr>
   <tr>
    <td>getProperty</td>
    <td>WorkspacePropertyService</td>
    <td>getProperty</td>
-   <td>Obtiene una propiedad Workspace para un usuario.</td>
+   <td>Obtiene una propiedad de Workspace para un usuario.</td>
   </tr>
   <tr>
    <td>removeProperty</td>
    <td>WorkspacePropertyService</td>
    <td>delete</td>
-   <td>Elimina una propiedad Workspace para un usuario.</td>
+   <td>Elimina una propiedad de Workspace para un usuario.</td>
   </tr>
   <tr>
    <td>getProperties</td>
@@ -369,19 +368,19 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>setProperty</td>
    <td>WorkspacePropertyService</td>
    <td>setProperty</td>
-   <td>Establece una propiedad Workspace para un usuario.</td>
+   <td>Establece una propiedad de Workspace para un usuario.</td>
   </tr>
   <tr>
    <td>getCurrentUserImageUrl</td>
    <td>ProcessManagementClientSessionService</td>
    <td>getCurrentUserImageUrl</td>
-   <td>Obtiene la dirección URL de imagen del usuario para el usuario que ha iniciado sesión.</td>
+   <td>Obtiene la url de imagen del usuario para el usuario que ha iniciado sesión.</td>
   </tr>
   <tr>
    <td>getUserImageUrl</td>
    <td>ProcessManagementClientSessionService</td>
    <td>getUserImageUrl</td>
-   <td>Obtiene la dirección URL de imagen del usuario para un usuario especificado.</td>
+   <td>Obtiene la dirección URL de imagen del usuario para el usuario especificado.</td>
   </tr>
   <tr>
    <td>uploadNote</td>
@@ -390,13 +389,13 @@ Las siguientes API se utilizan en el espacio de trabajo de AEM Forms.
    <td>Carga una nota en el servidor para una tarea.</td>
   </tr>
   <tr>
-   <td>uploadRMAToServer (también se llama directamente desde la plantilla html)<br /> </td>
+   <td>uploadRMAToServer (también se denomina directamente desde la plantilla html)<br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadAttachment</td>
    <td>Carga un archivo adjunto en el servidor para una tarea.</td>
   </tr>
   <tr>
-   <td>getImageURL (también se llama directamente desde una plantilla html)</td>
+   <td>getImageURL (también se denomina directamente desde la plantilla html)</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>getImage</td>
    <td>Obtiene la imagen para un proceso.</td>

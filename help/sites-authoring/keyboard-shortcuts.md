@@ -1,5 +1,5 @@
 ---
-title: 'Métodos abreviados del teclado para las consolas  '
+title: Métodos abreviados del teclado para las consolas
 seo-title: Keyboard Shortcuts for Consoles
 description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
 seo-description: Save time when authoring by using these keyboard shortcuts
@@ -25,11 +25,11 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
 >
 >Las [teclas modificadoras](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) necesarias para los métodos abreviados del teclado de AEM varían en función del sistema operativo.
 
-## Métodos abreviados del teclado {#keyboard-shortcuts}
+## Métodos abreviados de teclado {#keyboard-shortcuts}
 
 Los siguientes métodos abreviados están disponibles para las consolas Sitios, Comercio, Pantallas, Recursos, Usuarios, Grupos, Proyectos y Fragmentos de experiencias.
 
-| Ubicación | Método abreviado | Descripción |
+| Lugar de residencia | Método abreviado | Descripción |
 |---|---|---|
 | General | `Ctrl+Click` | Selección múltiple en un dispositivo de escritorio |
 | Consola: vista de columna y vista de contenido | `Right Arrow` | Desplácese hacia abajo en la estructura del sitio web / amplíe el nodo de árbol |

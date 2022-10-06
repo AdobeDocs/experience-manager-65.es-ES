@@ -4,7 +4,7 @@ description: El verificador de vínculos ayuda a validar vínculos internos y ex
 exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
 source-git-commit: 0b9de3261d8747f3e7107962b6aea1dbdf9d6773
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '987'
 ht-degree: 0%
 
 ---

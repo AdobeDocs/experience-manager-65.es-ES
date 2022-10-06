@@ -1,11 +1,11 @@
 ---
 title: Notas de la versión generales para [!DNL Adobe Experience Manager] 6,5
-description: '"[!DNL Adobe Experience Manager] 6.5 notas que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."'
+description: "[!DNL Adobe Experience Manager] 6.5 notas que describen la información de la versión, las novedades, cómo instalar y listas de cambios detalladas."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
 source-wordcount: '4697'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -480,7 +480,7 @@ Este proceso de establecimiento de prioridades creó más de 750 cambios orienta
 
 **Forms**
 
-* [Paquetes para las funciones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [Paquetes para las funciones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es)
 * [SDK de cliente AEM Forms OSGi](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Idiomas {#languages}
@@ -591,7 +591,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * Cuando se inicia AEM Forms, la variable `SAX Security Manager could not be setup` aparece la advertencia.
 * Al abrir un PDF protegido con AEM Forms Document Security en un Apple iOS o iPadOS que ejecute la versión 20.10.00 de Adobe Acrobat Reader
-* Cuando se envía un formulario que contiene un campo de carga de HTML estándar desde un dispositivo iOS de Apple, a veces el contenido del archivo no se envía y se recibe un archivo de 0 bytes en el otro extremo. Apple iOS 15.1 proporciona una solución para el problema.
+* Cuando envía un formulario que contiene un campo de carga de HTML estándar desde un dispositivo iOS de Apple, a veces, el contenido del archivo no se envía y se recibe un archivo de 0 bytes en el otro extremo. Apple iOS 15.1 proporciona una solución para el problema.
 
 ## Descarga de productos y asistencia (sitios restringidos) {#product-download-and-support-restricted-sites}
 

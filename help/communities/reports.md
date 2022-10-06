@@ -1,8 +1,8 @@
 ---
 title: Consola Informes
-seo-title: Consola Informes
+seo-title: Reports Console
 description: Obtenga información sobre cómo acceder a los informes
-seo-description: Obtenga información sobre cómo acceder a los informes
+seo-description: Learn how to access reports
 uuid: 7bb15a15-077b-4bfb-aaf4-50fddc67f237
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '618'
 ht-degree: 7%
 
 ---
@@ -29,7 +29,7 @@ En general, los diversos informes son:
 
 * [Informe de asignaciones](#assignments-report)
 
-   Para una [comunidad de habilitación](/help/communities/overview.md#enablement-community), proporciona una visión general del progreso de los estudiantes en sus asignaciones, incluida una puntuación asociada si se implementa el estándar SCORM.
+   Para un [comunidad de habilitación](/help/communities/overview.md#enablement-community), proporciona una descripción general del progreso de los estudiantes en sus asignaciones, incluida una puntuación asociada si se implementa el estándar SCORM.
 
 * [Informe de vistas](#views-report)
 
@@ -39,7 +39,7 @@ En general, los diversos informes son:
 
    Proporciona un gráfico de varios tipos de anuncios de los miembros de la comunidad en cualquier sitio de la comunidad.
 
-Cuando [Adobe Analytics está habilitado](/help/communities/sites-console.md#analytics), los informes incluirán la cantidad de vistas, reproducciones, comentarios y clasificaciones para cada recurso de habilitación a lo largo del tiempo.
+When [Adobe Analytics está habilitado](/help/communities/sites-console.md#analytics), los informes incluirán la cantidad de vistas, reproducciones, comentarios y clasificaciones para cada recurso de habilitación a lo largo del tiempo.
 
 Los informes tabulares se pueden exportar en formato .csv para su procesamiento posterior.
 
@@ -47,7 +47,7 @@ Los informes tabulares se pueden exportar en formato .csv para su procesamiento 
 
 ### Informes para sitios de la comunidad {#reports-for-community-sites}
 
-* Desde la navegación global: **[!UICONTROL Navegación]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Informes]**
+* Desde la navegación global: **[!UICONTROL Navegación]** > **[!UICONTROL Comunidades]** >  **[!UICONTROL Informes]**
 
 * Elija entre:
 
@@ -67,13 +67,13 @@ Los informes tabulares se pueden exportar en formato .csv para su procesamiento 
 
 ### Informes para recursos de habilitación y rutas de aprendizaje {#reports-for-enablement-resources-and-learning-paths}
 
-* Desde la navegación global: **[!UICONTROL Navegación]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Recursos]**
+* Desde la navegación global: **[!UICONTROL Navegación]** > **[!UICONTROL Comunidades]** >  **[!UICONTROL Recursos]**
 
 * Seleccione un sitio de comunidad de habilitación existente:
 
-   * Seleccione el icono **Report** para generar informes que cubran todos los recursos de habilitación.
+   * Select **Informe** para generar informes que cubran todos los recursos de habilitación.
    * Seleccione una ruta de aprendizaje de habilitación.
-   * Seleccione el icono **Informe** para generar informes para:
+   * Select **Informe** para generar informes para:
 
       * Los recursos de habilitación incluidos.
       * Los alumnos asignados a la ruta de aprendizaje.
@@ -88,7 +88,7 @@ Los informes tabulares se pueden exportar en formato .csv para su procesamiento 
       * Número de observaciones formuladas
       * Clasificación por estrellas
 
-Para obtener más información, consulte la [sección Informes](/help/communities/resources.md#report) de la consola Recursos.
+Para obtener más información, consulte [Sección Informes](/help/communities/resources.md#report) de la consola Recursos.
 
 ## Informe de asignaciones {#assignments-report}
 
@@ -114,7 +114,7 @@ Seleccione los criterios del informe :
 
    Elija entre los recursos de habilitación asignados a los alumnos seleccionados.
 
-Seleccione **Generate** para crear el informe:
+Select **Generar** para crear el informe:
 
 ![generate-report](assets/generate-assignment-report.png)
 
@@ -143,7 +143,7 @@ Seleccione los criterios del informe:
    * Últimos 90 días
    * Año pasado
 
-Seleccione **[!UICONTROL Generate]** para crear el informe.
+Select **[!UICONTROL Generar]** para crear el informe.
 
 ![generate-views](assets/generate-views.png)
 
@@ -172,7 +172,7 @@ Seleccione los criterios del informe:
    * Últimos 90 días
    * Año pasado
 
-Seleccione **[!UICONTROL Generate]** para crear el informe.
+Select **[!UICONTROL Generar]** para crear el informe.
 
 ![generate-report](assets/generate-posts-report.png)
 
@@ -184,6 +184,6 @@ Si no aparece ningún sitio de la comunidad, asegúrese de que Adobe Analytics e
 
 ### Los informes no se muestran en la instancia de autor de AEM {#reports-do-not-show-in-aem-author-instance}
 
-Si los informes no aparecen en la instancia de AEM Author, compruebe las personalizaciones, como la asignación de URL en la instancia de publicación. Si la asignación de URL solo se realiza en la instancia de publicación de AEM del sitio de comunidades, asegúrese de que lo mismo se haya configurado en la instancia de autor de AEM en la configuración **Site Trend Report Social Component Factory** .
+Si los informes no aparecen en la instancia de AEM Author, compruebe las personalizaciones, como la asignación de URL en la instancia de publicación. Si la asignación de URL solo se realiza en la instancia de publicación de AEM del sitio de comunidades, asegúrese de que lo mismo se haya configurado en la instancia de autor de AEM en **Informe de tendencias del sitio Factoría de componentes sociales** configuración.
 
 ![Asignación de URL en AEM Author](assets/sitetrend.png)

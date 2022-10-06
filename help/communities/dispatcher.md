@@ -13,7 +13,7 @@ exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
 source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
 source-wordcount: '668'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 9%
 
 ## AEM Communities {#aem-communities}
 
-Para AEM Communities, es necesario configurar Dispatcher para garantizar el correcto funcionamiento de los [sitios de la comunidad](overview.md#community-sites). Se necesitan configuraciones adicionales al incluir funciones como la habilitación de comunidades y el inicio de sesión social.
+Para AEM Communities, es necesario configurar Dispatcher para garantizar el correcto funcionamiento de [sitios de la comunidad](overview.md#community-sites). Se necesitan configuraciones adicionales al incluir funciones como la habilitación de comunidades y el inicio de sesión social.
 
 Para conocer lo que necesita para la implementación y el diseño del sitio en particular
 
-* Contactar con [Servicio de atención al cliente](https://helpx.adobe.com/es/marketing-cloud/contact-support.html)
+* Contacto con el [Servicio de atención al cliente](https://helpx.adobe.com/es/marketing-cloud/contact-support.html)
 
-Consulte también la [documentación principal de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+Consulte también la [Documentación de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 ## Almacenamiento en caché de Dispatcher {#dispatcher-caching}
 
@@ -41,9 +41,9 @@ Para los miembros con sesión iniciada, el despachante evita la caché y reenví
 
 Cuando se configura para admitir el almacenamiento en caché de Dispatcher, se agrega una caducidad de &quot;edad máxima&quot; basada en TTL al encabezado para garantizar que las páginas en caché de Dispatcher estén actualizadas.
 
-### Requisitos {#requirements}
+### Requisitos  {#requirements}
 
-* Dispatcher versión 4.1.2 o posterior (consulte [Instalación de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) para obtener la última versión)
+* Dispatcher versión 4.1.2 o posterior (consulte [Instalación de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) para la versión más reciente)
 * [Paquete ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versión 3.3.2 o posterior
@@ -53,7 +53,7 @@ Cuando se configura para admitir el almacenamiento en caché de Dispatcher, se a
 
 La configuración OSGi **ACS AEM Commons - Encabezado de control de caché de Dispatcher - Edad máxima** establece la caducidad de las páginas en caché que aparecen bajo una ruta especificada.
 
-* Desde la [Consola Web](../../help/sites-deploying/configuring-osgi.md)
+* En el [Consola web](../../help/sites-deploying/configuring-osgi.md)
 
    * Por ejemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
@@ -68,15 +68,15 @@ La configuración OSGi **ACS AEM Commons - Encabezado de control de caché de Di
 
 * **Edad máxima de Cache-Control**
 
-   *(obligatorio)* La edad máxima (en segundos) para agregar al encabezado del Control de caché. El valor debe ser bueno a cero (0).
+   *(obligatorio)* La edad máxima (en segundos) que se agregará al encabezado del Control de caché. El valor debe ser bueno a cero (0).
 
 ## Encabezados de cliente de Dispatcher {#dispatcher-client-headers}
 
-En la sección /clientheaders de `dispatcher.any`, si se enumera un conjunto específico de encabezados, es necesario incluir `"CSRF-Token"` para que la [función de habilitación](enablement.md) funcione correctamente.
+En la sección /clientheaders de `dispatcher.any`, si se enumera un conjunto específico de encabezados, es necesario incluir `"CSRF-Token"` para que [Función de habilitación](enablement.md) para funcionar correctamente.
 
 ## Filtros de Dispatcher {#dispatcher-filters}
 
-La sección /filter del archivo `dispatcher.any` está documentada en [Configuración del acceso al contenido - /filter](https://helpx.adobe.com/es/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+La sección /filter de la variable `dispatcher.any` está documentado en [Configuración del acceso al contenido: /filter](https://helpx.adobe.com/es/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
 En esta sección se describen las entradas que probablemente sean necesarias para el correcto funcionamiento de las funciones de Communities.
 
@@ -84,18 +84,18 @@ Los nombres de las propiedades de filtro siguen la convención de usar un númer
 
 Los siguientes ejemplos utilizan nombres de propiedad que es probable que deban modificarse para ajustarse a cualquier archivo dispatcher.any en particular.
 
-Consulte también:
+Consulte también lo siguiente:
 
 * [Lista de comprobación de seguridad de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
 >
 >**Ejemplos de nombres de propiedades**
->Todos los nombres de propiedad mostrados, como **/0050** y **/0170**, deben ajustarse para ajustarse a un archivo de configuración dispatcher.any existente.
+>Se muestran todos los nombres de propiedad, como **/0050** y **/0170**, debe ajustarse para que se ajuste a un archivo de configuración dispatcher.any existente.
 
 >[!CAUTION]
 >
->Consulte la [Lista de comprobación de seguridad de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) para obtener más información al restringir el acceso con Dispatcher. Además, lea la [AEM lista de comprobación de seguridad](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) para obtener más información sobre la seguridad de su instalación de AEM.
+>Consulte la [Lista de comprobación de seguridad de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) para obtener más información al restringir el acceso con Dispatcher. Lea también el [Lista de comprobación de seguridad AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) para obtener más información de seguridad sobre la instalación de AEM.
 
 Las siguientes entradas deben agregarse al final de la sección /filter, especialmente después de todas las entradas denegadas.
 
@@ -303,7 +303,7 @@ El primer patrón de filtro se utiliza a menudo para denegar todo, de modo que l
 
 ## Ejemplo de dispatcher.any {#sample-dispatcher-any}
 
-A continuación se muestra un archivo `dispatcher.any` de muestra que incluye las reglas /filters y /rules de Communities.
+A continuación se muestra un ejemplo `dispatcher.any` que incluye Communities /filters y /rules.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->

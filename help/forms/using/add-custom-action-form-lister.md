@@ -1,32 +1,31 @@
 ---
-title: Añadir acción personalizada en elementos de lista de formularios
-seo-title: Añadir acción personalizada en elementos de lista de formularios
-description: Los desarrolladores de formularios pueden agregar más acciones a la lista de formularios en la página del portal de formularios. De forma predeterminada, la lista de formularios permite acceder al formulario, rellenarlo y enviarlo.
-seo-description: Los desarrolladores de formularios pueden agregar más acciones a la lista de formularios en la página del portal de formularios. De forma predeterminada, la lista de formularios permite acceder al formulario, rellenarlo y enviarlo.
+title: Adición de acciones personalizadas a elementos de lista de formularios
+seo-title: Adding custom action on form lister items
+description: Los desarrolladores de formularios pueden agregar más acciones a la lista de formularios de la página del portal de formularios. De forma predeterminada, la lista de formularios le permite acceder al formulario, rellenarlo y enviarlo.
+seo-description: Form developers can add more actions to the listing of forms on the forms portal page. By default, the form listing allows you to access the form, fill it, and submit it.
 uuid: 5703ba27-7fb8-482e-b933-a060574165dc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: c34dd4c2-5fff-4355-b86d-cc8a956dd8af
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 7c2a91c8-9b68-4491-88e2-f7ea68f5a79f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
+# Adición de acciones personalizadas a elementos de lista de formularios{#adding-custom-action-on-form-lister-items}
 
-# Añadir acción personalizada en elementos de lista de formularios{#adding-custom-action-on-form-lister-items}
-
-En AEM Forms, puede crear una página de portal con los formularios disponibles. De forma predeterminada, puede buscar y lista de formularios en una página de portal. Puede abrir formularios para rellenar y enviar la información. Solo se proporcionan acciones de representación de forma predeterminada para los formularios enumerados en una página de portal. Para obtener más información sobre las acciones disponibles en una página de portal, consulte [Creación de una página de portal de formularios](../../forms/using/creating-form-portal-page.md).
+En AEM Forms, puede crear una página de portal que enumere los formularios disponibles. De forma predeterminada, se pueden buscar y mostrar formularios en una página de portal. Puede abrir formularios para rellenar y enviar la información. Solo se proporcionan las acciones de renderización predeterminadas para los formularios enumerados en una página de portal. Para obtener más información sobre las acciones disponibles en una página de portal, consulte [Creación de una página de portal de formularios](../../forms/using/creating-form-portal-page.md).
 
 Puede agregar otras opciones a la página del portal. Estas opciones o acciones se pueden personalizar personalizando la plantilla del portal de formularios.
 
-Este artículo muestra cómo crear un botón para enviar el vínculo de un formulario, directamente desde una página del portal de formularios. Esta personalización requiere actualizar la plantilla para el componente Búsqueda y listado.
+Este artículo muestra cómo crear un botón para enviar el vínculo de un formulario, directamente desde una página del portal de formularios. Esta personalización requiere la actualización de la plantilla para el componente Search &amp; Lister.
 
-El código requerido para agregar la acción a la plantilla está disponible a continuación. El atributo `onclick` del fragmento de código tiene una secuencia de comandos para enviar un vínculo de un formulario por correo electrónico.
+El código requerido para agregar la acción a la plantilla está disponible a continuación. La variable `onclick` en el fragmento de código tiene una secuencia de comandos para enviar un vínculo de un formulario por correo electrónico.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -47,9 +46,8 @@ El código requerido para agregar la acción a la plantilla está disponible a c
 </div>
 ```
 
-Puede agregar acciones similares en la plantilla personalizada. Para definir una función de JavaScript, agregue la función en una secuencia de comandos de nivel de página y vincúlela con el elemento HTML necesario. En el ejemplo anterior, la expresión `onclick` es la función vinculada.
+Puede agregar acciones similares en la plantilla personalizada. Para definir una función de JavaScript, añada la función en un script de nivel de página y vincúlelo con el elemento HTML requerido. En el ejemplo anterior, la variable `onclick` expresión es la función vinculada.
 
-Después de realizar las modificaciones en la plantilla, la página del portal de muestra contiene un botón para enviar el vínculo del formulario por correo electrónico, como se muestra a continuación.
+Después de realizar las ediciones en la plantilla, la página del portal de muestra contiene un botón para enviar el vínculo del formulario por correo electrónico, como se muestra a continuación.
 
 ![email](assets/email.png)
-

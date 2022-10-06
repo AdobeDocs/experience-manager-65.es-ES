@@ -1,10 +1,11 @@
 ---
 title: Obtenga Información Sobre El Desarrollo Sin Cabeza De CMS
 description: En esta parte del Recorrido para desarrolladores AEM sin encabezado, conozca la tecnología sin encabezado y por qué la utilizaría.
-source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
+exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1595'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -14,7 +15,7 @@ En esta parte del [AEM Recorrido para desarrolladores sin encabezado,](overview.
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender la entrega de contenido sin encabezado y por qué debería usarse. Después de leer, debe:
+Este documento le ayuda a comprender la entrega de contenido sin encabezado y por qué debería usarse. Después de leer, debería haber logrado lo siguiente:
 
 * Comprender los conceptos básicos y la terminología de la entrega de contenido sin encabezado
 * Comprender por qué y cuándo se requiere un proceso sin encabezado
@@ -125,4 +126,4 @@ Aproveche este conocimiento y continúe su recorrido sin AEM cabeza al revisar e
 
 Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo remoto revisando el documento [Introducción a AEM sin encabezado](getting-started.md), los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
 
-* [Tutorials AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin periféricos con AEM y elegir lo que es adecuado para usted.
+* [Tutorials AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es) - Utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin periféricos con AEM y elegir lo que es adecuado para usted.

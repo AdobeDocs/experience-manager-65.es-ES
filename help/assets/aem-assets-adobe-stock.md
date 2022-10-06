@@ -8,7 +8,7 @@ exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
 source-wordcount: '2493'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -50,7 +50,7 @@ The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stocken
 
 **Requisitos previos**
 
-La integración requiere:
+La integración requiere lo siguiente:
 
 * Un [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/)
 * Un usuario con permisos en Admin Console al perfil de producto predeterminado de Stock
@@ -95,7 +95,7 @@ Para integrar [!DNL Experience Manager] y [!DNL Adobe Stock], realice los pasos 
 
    En [!DNL Experience Manager], configure la cuenta IMS con las credenciales de cuenta de servicio y la carga útil JWT.
 
-1. [Configurar el servicio en la nube](#configure-the-cloud-service)
+1. [Configurar el servicio en la nube de ](#configure-the-cloud-service)
 
    En [!DNL Experience Manager], configure un [!DNL Adobe Stock] servicio en la nube con la cuenta de IMS.
 
@@ -113,7 +113,7 @@ La configuración de IMS incluye dos pasos:
 
 La clave pública (certificado) autentica el perfil del producto en la consola de Adobe Developer.
 
-1. Inicie sesión en su [!DNL Experience Manager Assets] instancia de autor. La dirección URL predeterminada es `http://localhost:4502/aem/start.html`.
+1. Inicie sesión en su [!DNL Experience Manager Assets] instancia de autor. El URL predeterminado es `http://localhost:4502/aem/start.html`.
 
 1. En el **[!UICONTROL Herramientas]** , vaya a **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**.
 
@@ -129,7 +129,7 @@ La clave pública (certificado) autentica el perfil del producto en la consola d
 
 1. Haga clic en el **[!UICONTROL Descargar clave pública]** y guarde el archivo de clave pública (.crt) en el equipo. La clave pública se utiliza más adelante para configurar la API para el inquilino de Brand Portal y generar credenciales de cuenta de servicio en la consola de Adobe Developer.
 
-   Haga clic en **[!UICONTROL Siguiente]**. 
+   Haga clic en **[!UICONTROL Siguiente]**.
 
    ![generate-certificate](assets/stock-integration-ims-account.png)
 
@@ -154,13 +154,13 @@ Para generar las credenciales de cuenta de servicio y la carga útil JWT:
 
 1. En el **[!UICONTROL Información general del proyecto]** , haga clic en **[!UICONTROL Añadir API]**.
 
-1. En el **[!UICONTROL Añadir una ventana de API]**, seleccione **[!UICONTROL Adobe Stock]**. Haga clic en **[!UICONTROL Siguiente]**. 
+1. En el **[!UICONTROL Añadir una ventana de API]**, seleccione **[!UICONTROL Adobe Stock]**. Haga clic en **[!UICONTROL Siguiente]**.
 
-1. En el **[!UICONTROL Configuración de API]** ventana, seleccione **[!UICONTROL Cuenta de servicio (JWT)]** autenticación. Haga clic en **[!UICONTROL Siguiente]**. 
+1. En el **[!UICONTROL Configuración de API]** ventana, seleccione **[!UICONTROL Cuenta de servicio (JWT)]** autenticación. Haga clic en **[!UICONTROL Siguiente]**.
 
    ![create-jwt-credentials](assets/aem-stock-jwt.png)
 
-1. Haga clic en **[!UICONTROL Cargar la clave pública]**. Haga clic en **[!UICONTROL Seleccionar un archivo]** y cargue la clave pública (archivo .crt) que descargó en la variable [obtener certificado público](#public-certificate) para obtener más información. Haga clic en **[!UICONTROL Siguiente]**. 
+1. Haga clic en **[!UICONTROL Cargar la clave pública]**. Haga clic en **[!UICONTROL Seleccionar un archivo]** y cargue la clave pública (archivo .crt) que descargó en la variable [obtener certificado público](#public-certificate) para obtener más información. Haga clic en **[!UICONTROL Siguiente]**.
 
 1. Compruebe la clave pública y haga clic en **[!UICONTROL Siguiente]**.
 
@@ -203,7 +203,7 @@ Para configurar la cuenta de IMS:
    ![comprobación de estado](assets/aem-stock-healthcheck.png)
 
 
-### Configurar el servicio en la nube {#configure-the-cloud-service}
+### Configurar el servicio en la nube de  {#configure-the-cloud-service}
 
 Para configurar la variable [!DNL Adobe Stock] servicio en la nube:
 
@@ -272,7 +272,7 @@ Puede crear un grupo de usuarios o asignar permisos a un grupo de usuarios exist
 
 **Para proporcionar acceso a un usuario desde [!DNL User Admin Console]:**
 
-1. Abra el [!DNL Experience Manager] Admin Console de usuario. La dirección URL predeterminada es `http://localhost:4502/userdamin`.
+1. Abra el [!DNL Experience Manager] Admin Console de usuario. El URL predeterminado es `http://localhost:4502/userdamin`.
 
 1. En el panel izquierdo, busque el usuario introduciendo el `user_id` o `name`. Haga doble clic para abrir las propiedades de usuario.
 
@@ -311,7 +311,7 @@ Para activar el [!DNL Adobe Stock] configuración de nube:
 
 La siguiente tabla explica cómo funcionan los permisos de usuario al acceder al [!DNL Adobe Stock] activos:
 
-| Usuario | Agrupar | Permisos | Aceptar configuración de existencias en las preferencias de usuario | Acceso a recursos | Acceso a Adobe Stock |
+| Usuario | Grupo | Permisos | Aceptar configuración de existencias en las preferencias de usuario | Acceso a recursos | Acceso a Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
 | administrador | N/D | Todos | N/D | Sí | Sí |
 | test-doc1 | Usuario DAM | /conf/global /settings/stock/cloud-config | Sí | Sí | Sí |

@@ -80,7 +80,7 @@ Si tiene problemas con las imágenes y los conjuntos, consulte las siguientes di
 <table>
  <tbody>
   <tr>
-   <td><strong>Problema  </strong></td>
+   <td><strong>Problema</strong></td>
    <td><strong>Cómo depurar</strong></td>
    <td><strong>Solución</strong></td>
   </tr>
@@ -145,7 +145,7 @@ Si tiene problemas con el vídeo, consulte las siguientes directrices para la re
 <table>
  <tbody>
   <tr>
-   <td><strong>Problema  </strong></td>
+   <td><strong>Problema</strong></td>
    <td><strong>Cómo depurar</strong></td>
    <td><strong>Solución</strong></td>
   </tr>

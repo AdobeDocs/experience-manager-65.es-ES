@@ -287,7 +287,7 @@ Para comprobar si el servicio de contenido inteligente ha recibido formación so
 
 1. Para descargar el informe, selecciónelo en la lista y haga clic en **[!UICONTROL Descargar]** en la barra de herramientas. El informe se descarga como hoja de cálculo de Excel de Microsoft.
 
-## Restricciones     {#limitations}
+## Restricciones {#limitations}
 
 * Las etiquetas inteligentes mejoradas se basan en modelos de aprendizaje de imágenes y sus etiquetas. Estos modelos no siempre son perfectos para identificar etiquetas. La versión actual del servicio de contenido inteligente tiene las siguientes limitaciones:
 

@@ -14,7 +14,7 @@ exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '19016'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -119,7 +119,7 @@ Para poder realizar una operación de servicio de salida mediante programación,
 
 Para combinar datos con el diseño de formulario, debe hacer referencia a un origen de datos XML que contenga datos. Debe existir un elemento XML para cada campo de formulario que desee rellenar con datos. El nombre del elemento XML debe coincidir con el nombre del campo. Se ignora un elemento XML si no se corresponde con un campo de formulario o si el nombre del elemento XML no coincide con el nombre del campo. No es necesario coincidir con el orden en que se muestran los elementos XML si se especifican todos los elementos XML.
 
-Consideremos el siguiente ejemplo de formulario de solicitud de préstamo.
+Consulte el siguiente ejemplo de formulario de solicitud de préstamo.
 
 ![cp_cp_loanformdata](assets/cp_cp_loanformdata.png)
 
@@ -1202,7 +1202,7 @@ Para imprimir en un archivo, debe definir la opción de tiempo de ejecución del
 
 >[!NOTE]
 >
->Existen opciones opcionales en tiempo de ejecución que puede definir. Para obtener información sobre todas las opciones que puede configurar, consulte la `PrintedOutputOptionsSpec` referencia de clase en [Referencia de la API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Existen opciones opcionales en tiempo de ejecución que puede definir. Para obtener información sobre todas las opciones que puede establecer, consulte la `PrintedOutputOptionsSpec` referencia de clase en [Referencia de la API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Imprimir el flujo de impresión en un archivo**
 

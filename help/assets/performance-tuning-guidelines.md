@@ -67,7 +67,7 @@ Establezca los siguientes parámetros de JVM:
 * `-Doak.queryLimitInMemory`=500000
 * `-Doak.queryLimitReads`=100000
 * `-Dupdate.limit`=250000
-* `-Doak.fastQuerySize`=verdadero
+* `-Doak.fastQuerySize`=true
 
 ## Configuración del almacén de datos y la memoria {#data-store-and-memory-configuration}
 

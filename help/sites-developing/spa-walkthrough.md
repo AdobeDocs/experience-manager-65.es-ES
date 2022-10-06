@@ -104,7 +104,6 @@ Cuando se crea un SPA para aprovechar el AEM SPA Editor, el autor del contenido 
 >
 >* [AEM versión 6.4 con Service Pack 2](/help/release-notes/release-notes.md)
 >* [Instale la aplicación de muestra de We.Retail Journal disponible en GitHub aquí.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
-
 >
 
 

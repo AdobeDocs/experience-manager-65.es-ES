@@ -21,23 +21,23 @@ Los recursos permiten la administración centralizada de recursos de vídeo, don
 
 La integración de vídeo de Dynamic Media Classic amplía el alcance del vídeo optimizado a todas las pantallas (detección automática de dispositivos y ancho de banda).
 
-* El componente de vídeo Dynamic Media Classic realiza automáticamente la detección de dispositivos y ancho de banda para reproducir el formato y la calidad de vídeo correctos en equipos de escritorio, tabletas y dispositivos móviles.
-* Assets: puede incluir conjuntos de vídeos adaptables en lugar de solo recursos de vídeo únicos. Un conjunto de vídeos adaptables es un contenedor para todas las representaciones de vídeo necesarias para reproducir vídeo sin problemas en varias pantallas. Un conjunto de vídeos adaptables agrupa versiones del mismo vídeo codificadas a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. Utiliza un conjunto de vídeos adaptables, junto con el componente de vídeo S7, para el flujo de vídeo adaptable en varias pantallas, incluidos los dispositivos móviles de escritorio, iOS, Android™, BlackBerry® y Windows. Consulte la [documentación de Dynamic Media Classic sobre los conjuntos de vídeos adaptables para obtener más información](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video).
+* El componente de vídeo de Dynamic Media Classic realiza automáticamente la detección de dispositivos y ancho de banda para reproducir el formato y la calidad de vídeo correctos en equipos de escritorio, tabletas y dispositivos móviles.
+* Assets: puede incluir conjuntos de vídeos adaptables en lugar de solo recursos de vídeo únicos. Un conjunto de vídeos adaptables es un contenedor para todas las representaciones de vídeo necesarias para reproducir vídeo sin problemas en varias pantallas. Un conjunto de vídeos adaptables agrupa versiones del mismo vídeo codificadas a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. Utiliza un conjunto de vídeos adaptables, junto con el componente de vídeo S7, para el flujo de vídeo adaptable en varias pantallas, incluidos los dispositivos móviles de escritorio, iOS, Android™, BlackBerry® y Windows. Consulte [Documentación de Dynamic Media Classic sobre conjuntos de vídeos adaptables para obtener más información](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video).
 
 ## Acerca de FFMPEG y Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-El proceso de codificación de vídeo predeterminado se basa en el uso de la integración basada en FFMPEG con los perfiles de vídeo. Por lo tanto, el flujo de trabajo [!UICONTROL Activo de actualización de DAM] listo para usar contiene los dos pasos de flujo de trabajo basados en FFMP siguientes:
+El proceso de codificación de vídeo predeterminado se basa en el uso de la integración basada en FFMPEG con los perfiles de vídeo. Por lo tanto, la variable predeterminada [!UICONTROL Recurso de actualización DAM] flujo de trabajo contiene los dos pasos siguientes del flujo de trabajo basado en ffmpeg:
 
 * Miniaturas de FFMPEG
 * Codificación de FFMPEG
 
-Al habilitar y configurar la integración de Dynamic Media Classic, no se eliminan ni se desactivan automáticamente estos dos pasos de flujo de trabajo del flujo de trabajo de ingesta de [!UICONTROL Activo de actualización de DAM] listo para usar. Si ya utiliza codificación de vídeo basada en FFMPEG en Adobe Experience Manager, es probable que tenga FFMPEG instalado en sus entornos de creación. En este caso, un nuevo vídeo grabado con Recursos de Experience Manager se codifica dos veces: una desde el codificador FFMPEG y otra desde la integración con Dynamic Media Classic.
+Al habilitar y configurar la integración de Dynamic Media Classic, no se eliminan ni se desactivan automáticamente estos dos pasos de flujo de trabajo de la versión predeterminada [!UICONTROL Recurso de actualización DAM] flujo de trabajo de ingesta. Si ya utiliza codificación de vídeo basada en FFMPEG en Adobe Experience Manager, es probable que tenga FFMPEG instalado en sus entornos de creación. En este caso, un nuevo vídeo ingestado con Experience Manager Assets se codifica dos veces: una desde el codificador FFMPEG y otra desde la integración con Dynamic Media Classic.
 
-Si tiene configurada la codificación de vídeo basada en FFMPEG en el Experience Manager y FFMPEG instalado, Adobe recomienda eliminar los dos flujos de trabajo FFMPEG de los flujos de trabajo [!UICONTROL DAM Update Asset].
+Si tiene configurada la codificación de vídeo basada en FFMPEG en el Experience Manager y FFMPEG instalado, Adobe recomienda eliminar los dos flujos de trabajo FFMPEG de su [!UICONTROL Recurso de actualización DAM] flujos de trabajo.
 
 ### Formatos admitidos {#supported-formats}
 
-El componente de vídeo Dynamic Media Classic admite los siguientes formatos:
+El componente Vídeo de Dynamic Media Classic admite los siguientes formatos:
 
 * F4V H.264
 * MP4 H.264
@@ -56,20 +56,20 @@ Si la respuesta es “sí” a una o ambas preguntas, cargue el vídeo directame
 Si necesita un flujo de trabajo o crear versiones de sus recursos, primero debe cargar en Adobe Assets. El flujo de trabajo siguiente es el recomendado:
 
 1. Cargue el recurso de vídeo en Recursos de Adobe y codifique y publique automáticamente en Dynamic Media Classic.
-1. En el Experience Manager, acceda a los recursos de vídeo de WCM en la pestaña **[!UICONTROL Películas]** del Buscador de contenido.
+1. En Experience Manager, acceda a los recursos de vídeo de WCM en la **[!UICONTROL Películas]** del Buscador de contenido.
 1. Autor con vídeo de Dynamic Media Classic o componente de vídeo base.
 
 #### Si está cargando el vídeo en Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
 
 Si no necesita un flujo de trabajo o crear versiones de los recursos, debe cargarlos en Dynamic Media Classic. El flujo de trabajo siguiente es el recomendado:
 
-1. En la aplicación de escritorio de Dynamic Media Classic, [configure una carga y codificación de FTP programadas en Dynamic Media Classic (sistema automatizado)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
-1. En el Experience Manager, acceda a los recursos de vídeo de WCM en la pestaña **[!UICONTROL Dynamic Media Classic]** del Buscador de contenido.
+1. En la aplicación de escritorio de Dynamic Media Classic, [configurar una carga y codificación de FTP programadas en Dynamic Media Classic (sistema automatizado)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+1. En Experience Manager, acceda a los recursos de vídeo de WCM en la **[!UICONTROL Dynamic Media Classic]** del Buscador de contenido.
 1. Autor con el componente de vídeo de Dynamic Media Classic.
 
 ### Configurar la integración con Dynamic Media Classic Video {#configuring-integration-with-scene-video}
 
-1. En **[!UICONTROL Cloud Services]**, vaya a la configuración de **[!UICONTROL Dynamic Media Classic]** y seleccione **[!UICONTROL Editar]**.
+1. En **[!UICONTROL Cloud Services]**, vaya a su **[!UICONTROL Dynamic Media Classic]** configuración y seleccione **[!UICONTROL Editar]**.
 1. Seleccione la pestaña **[!UICONTROL Vídeo]**.
 
    >[!NOTE]
@@ -80,7 +80,7 @@ Si no necesita un flujo de trabajo o crear versiones de los recursos, debe carga
 
    >[!NOTE]
    >
-   >Para obtener más información sobre el significado de los ajustes preestablecidos de vídeo, consulte [Ajustes preestablecidos de vídeo para codificar archivos de vídeo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
+   >Para obtener más información sobre el significado de los ajustes preestablecidos de vídeo, consulte [Ajustes preestablecidos de vídeo para la codificación de archivos de vídeo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >Adobe recomienda que seleccione ambos conjuntos de vídeos adaptables al configurar los ajustes preestablecidos universales o que seleccione la opción **[!UICONTROL Codificación de vídeo adaptable]**.
 
@@ -97,19 +97,19 @@ Actualice el visor y los ajustes preestablecidos de codificación para vídeo en
 Para cargar el vídeo de origen principal en Dynamic Media Classic desde Adobe DAM:
 
 1. Vaya a la carpeta de destino de CQ DAM donde ha configurado la configuración de nube con perfiles de codificación de Dynamic Media Classic.
-1. Seleccione **[!UICONTROL Upload]** para cargar el vídeo de origen principal. La carga y codificación de vídeo se completan después de que el flujo de trabajo [!UICONTROL DAM Update Asset] se haya completado y **[!UICONTROL Publish to Dynamic Media Classic]** tenga una marca de verificación.
+1. Select **[!UICONTROL Cargar]** para cargar el vídeo de origen principal. La carga y codificación de vídeo se completan después de la [!UICONTROL Recurso de actualización DAM] el flujo de trabajo ha finalizado y **[!UICONTROL Publicar en Dynamic Media Classic]** tiene una marca de verificación.
 
    >[!NOTE]
    >
    >Puede que pase un tiempo hasta que las miniaturas de vídeo se generen.
 
-   Cuando arrastra el vídeo de origen principal de DAM al componente de vídeo, accede a *todas* las representaciones proxy codificadas de Dynamic Media Classic para su envío.
+   Cuando arrastra el vídeo de origen principal de DAM al componente de vídeo, obtiene acceso a *all* Representaciones de proxy codificadas de Dynamic Media Classic para su entrega.
 
 ### Componente de vídeo base frente al componente de vídeo de Dynamic Media Classic {#foundation-video-component-versus-scene-video-component}
 
 Al utilizar Experience Manager, tiene acceso al componente Vídeo disponible en Sitios y al componente de vídeo de Dynamic Media Classic. Dichos componentes no son intercambiables.
 
-El componente de vídeo de Dynamic Media Classic solo funciona para vídeos de Dynamic Media Classic. El componente base funciona con vídeos almacenados desde el Experience Manager (con ffmpeg) y con vídeos de Dynamic Media Classic.
+El componente de vídeo de Dynamic Media Classic solo funciona para vídeos de Dynamic Media Classic. El componente base funciona con vídeos almacenados desde el Experience Manager (mediante ffmpeg) y vídeos de Dynamic Media Classic.
 
 En la matriz siguiente se explica cuándo debe utilizar el componente:
 
@@ -117,13 +117,13 @@ En la matriz siguiente se explica cuándo debe utilizar el componente:
 
 >[!NOTE]
 >
->De serie, el componente de vídeo de Dynamic Media Classic utiliza el perfil de vídeo universal. Sin embargo, puede obtener el reproductor de vídeo basado en HTML5 para utilizarlo el Experience Manager. En Dynamic Media Classic, copie el código incrustado del reproductor de vídeo HTML5 incorporado y colóquelo en la página Experience Manager.
+>De serie, el componente de vídeo de Dynamic Media Classic utiliza el perfil de vídeo universal. Sin embargo, puede obtener el reproductor de vídeo basado en HTML5 para que lo utilice el Experience Manager. En Dynamic Media Classic, copie el código incrustado del reproductor de vídeo HTML5 listo para usar y colóquelo en la página Experience Manager.
 
 ## Experience Manager Componente de vídeo {#aem-video-component}
 
-Aunque se recomiende utilizar el componente de vídeo de Dynamic Media Classic para ver vídeos de Dynamic Media Classic, en esta sección se describe el uso de vídeos de Dynamic Media Classic con el [!UICONTROL componente de vídeo base] en Experience Manager para que sea más completo.
+Aunque se recomiende utilizar el componente Vídeo de Dynamic Media Classic para ver vídeos de Dynamic Media Classic, en esta sección se describe el uso de vídeos de Dynamic Media Classic con la variable [!UICONTROL Componente de vídeo base] en Experience Manager para la integridad.
 
-### Comparación de vídeo Experience Manager y Dynamic Media Classic {#aem-video-and-scene-video-comparison}
+### Comparación de vídeo de Experience Manager y vídeo de Dynamic Media Classic {#aem-video-and-scene-video-comparison}
 
 La siguiente tabla ofrece una comparación de alto nivel de las funciones admitidas entre el componente de vídeo base de Experience Manager y el componente de vídeo de Dynamic Media Classic:
 
@@ -139,18 +139,18 @@ La siguiente tabla ofrece una comparación de alto nivel de las funciones admiti
 
 #### Creación de perfiles de vídeo {#creating-video-profiles}
 
-Las distintas codificaciones de vídeo se crean según los ajustes preestablecidos de codificación de Dynamic Media Classic seleccionados en la Configuración de nube de Dynamic Media Classic. Para que el componente de vídeo base los utilice, debe crear un perfil de vídeo para cada ajuste preestablecido de codificación de Dynamic Media Classic seleccionado. Permite que el componente de vídeo seleccione las representaciones de DAM según corresponda.
+Las distintas codificaciones de vídeo se crean según los ajustes preestablecidos de codificación de Dynamic Media Classic seleccionados en la Configuración de Dynamic Media Classic Cloud. Para que el componente de vídeo base los utilice, debe crear un perfil de vídeo para cada ajuste preestablecido de codificación de Dynamic Media Classic seleccionado. Permite que el componente de vídeo seleccione las representaciones de DAM según corresponda.
 
 >[!NOTE]
 >
 >Los perfiles de vídeo nuevos, así como los cambios que se realicen en ellos, deben activarse para publicarse.
 
-1. En el Experience Manager, vaya a **[!UICONTROL Tools]** y, a continuación, seleccione **[!UICONTROL Configuration Console]**.
-1. En la consola de configuración, vaya a **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** en el árbol de navegación.
-1. Cree un perfil de vídeo de Dynamic Media Classic. En el menú **[!UICONTROL Nuevo]**, seleccione **[!UICONTROL Crear página]**.
-1. Seleccione la plantilla de perfil de vídeo de Dynamic Media Classic . Asigne un nombre a la nueva página de perfil de vídeo y seleccione **[!UICONTROL Crear]**.
+1. En el Experience Manager, vaya a **[!UICONTROL Herramientas]** y, a continuación, seleccione **[!UICONTROL Consola de configuración]**.
+1. En la consola de configuración, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Perfiles de vídeo]** en el árbol de navegación.
+1. Cree un perfil de vídeo de Dynamic Media Classic. En el **[!UICONTROL Nuevo]** seleccione **[!UICONTROL Crear página]**.
+1. Seleccione la plantilla de perfil Vídeo de Dynamic Media Classic . Asigne un nombre a la nueva página de perfil de vídeo y seleccione **[!UICONTROL Crear]**.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Edite el nuevo perfil de vídeo. Seleccione primero la configuración de nube. A continuación, seleccione el mismo ajuste preestablecido de codificación que el que se ha seleccionado en la configuración de nube.
 
@@ -158,9 +158,9 @@ Las distintas codificaciones de vídeo se crean según los ajustes preestablecid
 
    | Propiedad | Descripción |
    |---|---|
-   | Configuración de nube de Dynamic Media Classic | La configuración de nube que se utilizará para los ajustes preestablecidos de codificación. |
+   | Configuración de Dynamic Media Classic Cloud | La configuración de nube que se utilizará para los ajustes preestablecidos de codificación. |
    | Ajuste preestablecido de codificación de Dynamic Media Classic | El ajuste preestablecido de codificación con el que asignar este perfil de vídeo. |
-   | Tipo de vídeo HTML5 | Esta propiedad permite establecer el valor de la propiedad type del elemento de origen de vídeo HTML5. Esta información no la proporcionan los ajustes preestablecidos de codificación de Dynamic Media Classic, pero es necesaria para procesar correctamente los vídeos mediante el elemento de vídeo HTML5. Se proporciona una lista de los formatos comunes, pero se pueden sobrescribir por otros formatos. |
+   | Tipo de vídeo HTML5 | Esta propiedad permite establecer el valor de la propiedad type del elemento de origen de vídeo HTML5. Esta información no la proporcionan los ajustes preestablecidos de codificación de Dynamic Media Classic, sino que es necesaria para procesar correctamente los vídeos mediante el elemento de vídeo HTML5. Se proporciona una lista de los formatos comunes, pero se pueden sobrescribir por otros formatos. |
 
    Repita este paso para todos los ajustes preestablecidos de codificación seleccionados en la configuración de nube que desea utilizar en el componente de vídeo.
 

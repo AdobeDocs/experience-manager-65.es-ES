@@ -193,7 +193,7 @@ Seleccione el nuevo punto de conexión y **Publicación** para que esté totalme
 
 ## Interfaz de GraphiQL {#graphiql-interface}
 
-Implementación de la norma [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) está disponible para usar con AEM GraphQL. Esto puede [instalarse con AEM](#installing-graphiql-interface).
+Implementación de la [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) está disponible para usar con AEM GraphQL. Esto puede [instalarse con AEM](#installing-graphiql-interface).
 
 >[!NOTE]
 >

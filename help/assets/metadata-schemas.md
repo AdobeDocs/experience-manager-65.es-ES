@@ -1,5 +1,5 @@
 ---
-title: 'Los esquemas de metadatos definen el diseño de la página de propiedades de metadatos '
+title: Los esquemas de metadatos definen el diseño de la página de propiedades de metadatos
 description: El esquema de metadatos define el diseño de la página de propiedades y las propiedades de metadatos que se muestran para los recursos. Obtenga información sobre cómo crear un esquema de metadatos personalizado, editar un esquema de metadatos y aplicar un esquema de metadatos a los recursos.
 contentOwner: AG
 mini-toc-levels: 1
@@ -50,7 +50,7 @@ Para ver una lista de formularios o plantillas, consulte [!DNL Experience Manage
 | [!UICONTROL predeterminada] |  | Formulario de esquema de metadatos base para los recursos. |
 |  | Los siguientes formularios secundarios heredan las propiedades de la variable [!UICONTROL default] formulario: |  |
 |  | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulario de esquema para vídeos de Dynamic Media. |
-|  | <ul><li>[!UICONTROL image]</li></ul> | Formulario de esquema para imágenes con tipo MIME como `image/jpeg` y `image/png`. <br> La variable [!UICONTROL image] tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulario de esquema para los recursos con el TIFF de subtipo .</li></ul> |
+|  | <ul><li>[!UICONTROL imagen]</li></ul> | Formulario de esquema para imágenes con tipo MIME como `image/jpeg` y `image/png`. <br> La variable [!UICONTROL image] tiene las siguientes plantillas de formulario secundarias: <ul><li> [!UICONTROL jpeg]: Formulario de esquema para recursos con subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Formulario de esquema para los recursos con el TIFF de subtipo .</li></ul> |
 |  | <ul><li>[!UICONTROL aplicación]</li></ul> | Formulario de esquema para recursos con tipo MIME como `application/pdf` y `application/zip`. <br>[!UICONTROL pdf]: Formulario de esquema para recursos con PDF de subtipo. |
 |  | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulario de esquema para recursos de vídeo con tipo MIME como `video/avi` y `video/mp4`. |
 | [!UICONTROL colección] |  | Formulario de esquema para colecciones. |
@@ -295,7 +295,7 @@ Puede utilizar una plantilla existente para un tipo MIME diferente. Por ejemplo,
 
 En este caso, cree un nodo en `/etc/dam/metadataeditor/mimetypemappings` en el repositorio CRX. Especifique un nombre para el nodo y defina las siguientes propiedades:
 
-| Nombre | Descripción | Tipo | Value |
+| Nombre | Descripción | Tipo | Valor |
 |------|-------------|------|-------|
 | `exposedmimetype` | Nombre del formulario existente a asignar | `String` | `image/jpeg` |
 | `mimetypes` | Lista de tipos MIME que utilizan el formulario definido en la variable `exposedmimetype` attribute | `String` | `image/png` |

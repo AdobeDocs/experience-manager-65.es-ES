@@ -167,7 +167,7 @@ Para definir parámetros de procesamiento avanzados para otros tipos de recursos
 1. En el **[!UICONTROL Básico]** , defina las opciones de vídeo y audio.
 Seleccione el icono de información situado junto a cada opción para obtener descripciones adicionales o ajustes recomendados basados en el códec de formato de vídeo seleccionado.
 1. En el encabezado Tamaño del vídeo, asegúrese de que **[!UICONTROL Mantener relación de aspecto]** está activada.
-1. Establezca la resolución del tamaño del fotograma de vídeo en píxeles. Utilice la variable **[!UICONTROL Automático]** para escalar automáticamente para que coincida con la relación de aspecto del origen (relación de anchura y altura). Por ejemplo, Automático x 480 o 640 x Automático.
+1. Establezca la resolución del tamaño del fotograma de vídeo en píxeles. Utilice la variable **[!UICONTROL Automático]** para escalar automáticamente para que coincida con la proporción de aspecto del origen (relación ancho-alto). Por ejemplo, Automático x 480 o 640 x Automático.
 
 1. Realice una de las acciones siguientes:
 
@@ -272,7 +272,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
    <td><strong>Nombre</strong></td>
    <td><strong>Descripción</strong><br /> </td>
    <td><strong>Tipo</strong><br /> </td>
-   <td><strong>Value</strong></td>
+   <td><strong>Valor</strong></td>
   </tr>
   <tr>
    <td><code>h264Level</code></td>

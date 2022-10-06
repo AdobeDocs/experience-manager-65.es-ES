@@ -188,7 +188,7 @@ Esta sección contiene detalles sobre la configuración de SSL en la instancia d
    1. valor de contraseña de &quot;password&quot;
 1. La clave privada es la *localhostprivate.der*.
 1. El certificado es el *localhost.crt*.
-1. Haga clic en Siguiente. 
+1. Haga clic en Siguiente.
 1. El nombre de host HTTPS debe establecerse en *localhost*.
 1. El puerto debe establecerse en un puerto que el sistema haya expuesto.
 
@@ -242,7 +242,7 @@ Esta sección contiene detalles e instrucciones sobre la configuración de MS Dy
    ![Propiedades del Cloud Service OData de Microsoft](assets/properties_odata_cloud_service.jpg)
 
 1. Vaya a la pestaña &quot;Configuración de autenticación&quot;.
-1. Introduzca los siguientes detalles:
+1. Introduzca la siguiente información:
 
    1. **Raíz del servicio:** p. ej. `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **Tipo de autenticación:** OAuth 2.0
@@ -565,7 +565,7 @@ Una vez completada la configuración de IMS, podemos proceder a revisar la confi
 
 1. Dirección URL del tema: */content/dam/formsanddocuments-themes/adobe-gov-forms-themes/we-gov-theme*
 
-1. Haga clic en Siguiente. 
+1. Haga clic en Siguiente.
 
 1. Para esta configuración, dejamos vacíos los dos valores de casilla de verificación.
 
@@ -595,7 +595,7 @@ Una vez completada la configuración de IMS, podemos proceder a crear la configu
 
 1. Dirección URL del tema: */content/dam/formsanddocuments-themes/adobe-finance-forms-themes/we-finance-theme*
 
-1. Haga clic en Siguiente. 
+1. Haga clic en Siguiente.
 
 1. Para esta configuración, dejamos vacíos los dos valores de casilla de verificación.
 
@@ -720,7 +720,7 @@ Estos formularios se pueden personalizar para adaptarse a determinados casos de 
 Los formularios adaptables también se pueden diseñar con el editor de estilos o el editor de temas:
 
 * [Estilo en línea de los componentes de formulario adaptables](inline-style-adaptive-forms.md)
-* [Creación y uso de temas](themes.md)
+* [Creación y uso de temáticas](themes.md)
 
 ### Personalización del flujo de trabajo {#workflow-customization}
 

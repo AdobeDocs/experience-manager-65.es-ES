@@ -1,8 +1,8 @@
 ---
 title: 'Creación: Entorno y herramientas'
-seo-title: 'Creación: Entorno y herramientas'
+seo-title: Authoring - the Environment and Tools
 description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
-seo-description: El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido
+seo-description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
 uuid: 23a8aa93-b3d2-423b-b402-9e5f3f273d9a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,16 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2220'
 ht-degree: 97%
 
 ---
 
 # Creación: Entorno y herramientas{#authoring-the-environment-and-tools}
 
-El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
+El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y consolas.
 
 ## Administración del sitio {#managing-your-site}
 
@@ -31,7 +30,7 @@ Por ejemplo, la vista de columna:
 
 ![ateat-01](assets/ateat-01.png)
 
-## Editar el contenido de una página {#editing-page-content}
+## Edición del contenido de una página {#editing-page-content}
 
 Puede editar una página con el editor. Por ejemplo:
 
@@ -45,7 +44,7 @@ Puede editar una página con el editor. Por ejemplo:
 >
 >Si lo desea, puede omitir la visita y repetirla cuando le convenga seleccionando una opción del menú **Información de página**.
 
-## Acceso a la Ayuda {#accessing-help}
+## Acceso a la Ayuda   {#accessing-help}
 
 Al editar una página, se puede acceder a la **Ayuda** desde los siguientes puntos:
 
@@ -245,7 +244,7 @@ Seleccione el tipo de referencia apropiado para obtener más información. En de
 
 * [Referencias a páginas de producto](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponibles desde la consola Comercio - Productos)
 * [Lanzamientos](/help/sites-authoring/launches.md), que proporciona acceso a lanzamientos relacionados.
-* [](/help/sites-administering/msm.md)Live Copies muestra las rutas de todas las Live Copies que se basan en el recurso seleccionado.
+* [Live Copies](/help/sites-administering/msm.md) muestra las rutas de todas las Live Copies que se basan en el recurso seleccionado.
 * [Modelo](/help/sites-administering/msm-best-practices.md), proporciona detalles y diversas acciones
 * [Copias de idiomas](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), proporciona detalles y diversas acciones
 
@@ -276,7 +275,7 @@ La Información de página (icono de ecualizador) abre un menú que también mue
 * [Iniciar flujo de trabajo](/help/sites-authoring/workflows-applying.md#starting-a-workflow-from-the-page-editor)
 * [Bloquear página](/help/sites-authoring/editing-content.md#locking-a-page)
 * [Publicar página](/help/sites-authoring/publishing-pages.md#main-pars-title-10)
-* [Cancelar la publicación de página](/help/sites-authoring/publishing-pages.md#main-pars-title-5)
+* [Cancelar la publicación de la página](/help/sites-authoring/publishing-pages.md#main-pars-title-5)
 * [Editar plantilla](/help/sites-authoring/templates.md); si la página se basa en una [plantilla editable](/help/sites-authoring/templates.md#editable-and-static-templates)
 
 * [Ver como aparece publicado](/help/sites-authoring/editing-content.md#view-as-published)
@@ -286,11 +285,11 @@ La Información de página (icono de ecualizador) abre un menú que también mue
 Por ejemplo, cuando corresponda, **Información de página** también dispone de las opciones siguientes:
 
 * [Promocionar lanzamiento](/help/sites-authoring/launches-promoting.md) si la página es nueva.
-* [Abrir en la ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interfaz de usuario clásicasi esta opción ha sido  [habilitada por un administrador](/help/sites-administering/enable-classic-ui-editor.md)
+* [Abrir en la IU clásica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si estas opciones se han [activado por un administrador](/help/sites-administering/enable-classic-ui-editor.md)
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones cuando es necesario.
 
-## Modos de página    {#page-modes}
+## Modos de página   {#page-modes}
 
 Al editar una página, existen modos que permiten acciones diferentes:
 
@@ -321,16 +320,14 @@ Puede acceder a estas opciones a través de los iconos de la esquina superior de
 >* El acceso a algunos modos requiere los permisos/privilegios correspondientes.
 >* El modo de desarrollador no está disponible en dispositivos móviles debido a limitaciones de espacio.
 >* Existe un [atajo de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) para alternar entre **Vista previa** y el modo seleccionado actualmente (p. ej. **Editar**, **Diseño**, etc.).
-
 >
-
 
 
 ## Selección de la ruta {#path-selection}
 
 A menudo, durante la creación, es necesario seleccionar otro recurso, como cuando se define un vínculo a otra página o recurso o bien cuando se selecciona una imagen. Para poder seleccionar una ruta con facilidad, los [campos de rutas](/help/sites-authoring/author-environment-tools.md#path-fields) ofrecen la opción de completado automático y el [navegador de rutas](/help/sites-authoring/author-environment-tools.md#path-browser) permite una selección más sólida.
 
-### Campos de rutas    {#path-fields}
+### Campos de rutas   {#path-fields}
 
 El ejemplo que se utiliza aquí a modo de ilustración se corresponde con el componente de imagen. Para obtener más información sobre el uso y edición de componentes, consulte [Componentes para la creación de páginas](/help/sites-authoring/default-components.md).
 
@@ -358,6 +355,6 @@ El navegador de rutas está organizado como la [vista de columna](/help/sites-au
 
    ![ateat-21](assets/ateat-21.png)
 
-## Métodos abreviados del teclado {#keyboard-shortcuts}
+## Métodos abreviados de teclado {#keyboard-shortcuts}
 
 Hay varios [métodos abreviados del teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) disponibles.

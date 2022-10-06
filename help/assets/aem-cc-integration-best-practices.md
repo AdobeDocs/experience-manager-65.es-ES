@@ -33,7 +33,7 @@ Siga leyendo para saber qué integraciones escoger entre el escritorio y el DAM 
 
 ## Necesidades de colaboración de creativos, especialistas en marketing y usuarios de DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
-| Requisitos | Caso de uso | Superficies implicadas |
+| Requisitos  | Caso de uso | Superficies implicadas |
 |---|---|---|
 | Simplificar la experiencia para creativos en equipos de escritorio | Optimice el acceso a los recursos desde un DAM ([!DNL Experience Manager Assets]) para profesionales creativos o, en términos más generales, para usuarios de escritorio que trabajen en aplicaciones nativas de creación de recursos. Necesitan una forma sencilla y sencilla de descubrir, utilizar (abrir), editar y guardar cambios en [!DNL Experience Manager], así como cargar archivos nuevos. | escritorio Win o Mac; [!DNL Creative Cloud] apps |
 | Proporcionar recursos listos para usar de alta calidad desde [!DNL Adobe Stock] | Los especialistas en marketing ayudan a acelerar el proceso de creación de contenido mediante la asistencia en el abastecimiento y descubrimiento de recursos. Los profesionales creativos utilizan los recursos aprobados directamente desde sus herramientas creativas. | [!DNL Experience Manager Assets]; [!DNL Adobe Stock] marketplace; campos de metadatos |
@@ -56,7 +56,7 @@ Este artículo se centra principalmente en los dos primeros aspectos de las nece
 <!-- TBD: Add some info about XD integration and possibly info about DA v2.0.
 -->
 
-| Caso práctico    | [!DNL Adobe Asset Link] | Aplicación de escritorio de [!DNL Experience Manager] | Observaciones / Otras soluciones |
+| Caso práctico | [!DNL Adobe Asset Link] | Aplicación de escritorio de [!DNL Experience Manager] | Observaciones / Otras soluciones |
 |---|---|---|---|
 | Discover : examinar carpetas DAM | Sí | [!DNL Experience Manager] Acciones de interfaz web y escritorio |  |
 | Discover: acceso a colecciones DAM | Sí | [!DNL Experience Manager] Acciones de interfaz web y escritorio |  |

@@ -128,7 +128,6 @@ El componente Dynamic Media es inteligente. Ya sea que añada una imagen o un v�
 >
 >* Varias instancias del componente Dynamic Media que se utilizan en la misma página.
 >* Cada instancia utiliza el mismo tipo de recurso.
-
 >
 >No se admite la asignación de un ajuste preestablecido de visualizador diferente a cada componente de Dynamic Media de esa página.
 >
@@ -284,7 +283,6 @@ El componente de Medios interactivos es inteligente. Ya sea que añada una image
 >
 >* Varias instancias del componente de Medios interactivos que se utilizan en la misma página.
 >* Cada instancia utiliza el mismo tipo de recurso.
-
 >
 >No se admite la asignación de un ajuste preestablecido de visualizador diferente a cada componente de Medios interactivos de esa página.
 >
@@ -325,7 +323,6 @@ Tanto la proporción de aspecto como los criterios de palabra clave se aplican a
 >
 >* Varias instancias de la variable **[!UICONTROL Medios panorámicos]** componente que se está utilizando en la misma página.
 >* Cada instancia utiliza el mismo tipo de recurso.
-
 >
 >Asignación de un ajuste preestablecido de visualizador diferente a cada **[!UICONTROL Medios panorámicos]** en esa página no es compatible.
 >

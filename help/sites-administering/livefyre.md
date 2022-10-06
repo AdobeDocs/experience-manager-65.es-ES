@@ -51,7 +51,7 @@ AEM 6.5 viene con el paquete de funciones 1.2.6 de Livefyre preinstalado. Este p
 ### Configure AEM para utilizar Livefyre: Crear una carpeta de configuración {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
 1. En la página de inicio de AEM, haga clic en el **Herramientas** en el carril izquierdo y, a continuación, vaya a **General > Explorador de configuración**.
-   * Consulte la [Explorador de configuración](/help/sites-administering/configurations.md) documentación para obtener más información.
+   * Consulte la documentación del [Explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
 1. Haga clic en **Crear** para abrir el cuadro de diálogo Crear configuración .
 1. Asigne un nombre a la configuración y compruebe la variable **Configuraciones de nube** casilla de verificación.
 
@@ -92,7 +92,7 @@ El paquete Livefyre for AEM incluye una integración predeterminada entre perfil
 
 Cuando los usuarios inician sesión en el sitio AEM, también inician sesión en los componentes sociales de Livefyre. Cuando un usuario que ha cerrado la sesión intenta utilizar una función de componente Livefyre que requiera autenticación (como cargar una foto), el componente Livefyre inicia la autenticación de usuarios.
 
-Es posible que la integración de autenticación predeterminada no sea perfecta para cada sitio. Para que coincida mejor con el flujo de autenticación de las plantillas de sitio, puede anular el delegado de autenticación predeterminado de Livefyre para que se ajuste a sus necesidades. Siga estos pasos:
+Es posible que la integración de autenticación predeterminada no sea perfecta para cada sitio. Para que coincida mejor con el flujo de autenticación de las plantillas de sitio, puede anular el Delegado de autenticación de Livefyre predeterminado para satisfacer sus necesidades. Siga estos pasos:
 
 1. Uso del CRXDE Lite, copiar */libs/social/integrations/livefyre/components/authorizablecomponent/authclientlib* a */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib*.
 1. Editar y guardar */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib/auth.js* para implementar un delegado de autenticación de Livefyre que satisfaga sus necesidades.
@@ -157,7 +157,7 @@ Para importar UGC en AEM Assets:
 
 1. Seleccione los recursos que desea importar. Los recursos que seleccione se cuentan automáticamente y se guardan en la sección **Seleccionado** pestaña .
 1. **Opcional**: Haga clic en el **Seleccionado** y revise el contenido UGC seleccionado para importar.
-1. Haga clic en **Siguiente**. 
+1. Haga clic en **Siguiente**.
 
    ![livefyre-aem-import-ugc2](assets/livefyre-aem-import-ugc2.png)
 

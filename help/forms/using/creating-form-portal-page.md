@@ -1,8 +1,8 @@
 ---
 title: Creación de una página de portal de formularios
-seo-title: Creación de una página de portal de formularios
+seo-title: Creating a forms portal page
 description: Forms Portal equipa a los desarrolladores web con componentes para crear y personalizar un portal de formularios en sitios web creados con Adobe Experience Manager (AEM).
-seo-description: Forms Portal equipa a los desarrolladores web con componentes para crear y personalizar un portal de formularios en sitios web creados con Adobe Experience Manager (AEM).
+seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
 uuid: a5017de5-616c-4ce4-81aa-f28c741f8e8f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,13 @@ topic-tags: publish
 discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 1%
+source-wordcount: '1641'
+ht-degree: 3%
 
 ---
-
 
 # Creación de una página de portal de formularios{#creating-a-forms-portal-page}
 
@@ -25,11 +24,11 @@ Los componentes del portal de Forms equipan a los desarrolladores web con compon
 
 ## Requisitos previos {#prerequisites}
 
-Los componentes del portal de Forms no están disponibles para su uso de forma predeterminada. Asegúrese de que las siguientes categorías de componentes del portal de formularios estén habilitadas tal como se describe en [Habilitación de componentes del portal de formularios](/help/forms/using/enabling-forms-portal-components.md).
+Los componentes del portal de Forms no están disponibles para su uso de forma predeterminada. Asegúrese de que las siguientes categorías de componentes del portal de formularios estén habilitadas según se describe en [Habilitación de componentes del portal de formularios](/help/forms/using/enabling-forms-portal-components.md).
 
-**Servicios de** documentosIncluye los componentes Búsqueda y listado, Vínculo y Borradores y envíos.
+**Servicios de documentos** Incluye los componentes Búsqueda y listado, Vínculo y Borradores y envíos .
 
-**Predicados de servicios de** documentosIncluye componentes de Predicado de fecha, Predicado de texto completo, Predicado de propiedades y Predicado de etiquetas. Estos componentes se utilizan para configurar la búsqueda en el componente Búsqueda y lista .
+**Predicados de servicios de documentos** Incluye componentes Predicado de fecha, Predicado de texto completo, Predicado de propiedades y Predicado de etiquetas. Estos componentes se utilizan para configurar la búsqueda en el componente Búsqueda y lista .
 
 Una vez que se activan en una página de sitios AEM, estas categorías de componentes están disponibles para su uso en el navegador de componentes.
 
@@ -54,30 +53,30 @@ Componente de búsqueda y lista en una página con diseño de cuadrícula
 
 El panel Lista es un área en la que se muestran los formularios. El componente Búsqueda y lista proporciona varias opciones de configuración que puede utilizar para controlar la visualización de formularios en el panel Lista.
 
-Para configurar el panel Lista, pulse el componente Búsqueda y lista y, a continuación, pulse ![settings_icon](assets/settings_icon.png). Se abre el cuadro de diálogo **[!UICONTROL Editar componente]**.
+Para configurar el panel Lista, pulse el componente Buscar y listar y, a continuación, pulse ![settings_icon](assets/settings_icon.png). La variable **[!UICONTROL Editar componente]** se abre.
 
 ![Panel de lista en modo de edición](assets/edit-list.png)
 
 Panel de lista en modo de edición
 
-El cuadro de diálogo **Editar** incluye varias pestañas que proporcionan opciones de configuración descritas en la siguiente tabla. Toque **Aceptar** para guardar la configuración, cuando haya terminado.
+La variable **Editar** incluye varias pestañas que proporcionan opciones de configuración descritas en la siguiente tabla. Toque **OK** para guardar la configuración, cuando haya terminado.
 
 <table>
  <tbody>
   <tr>
-   <th>Ficha</th>
+   <th>Tab</th>
    <th>Configuración</th>
    <th>Descripción</th>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Carpetas de recursos</strong></code></td>
    <td>Añadir elemento</td>
-   <td>Configura las carpetas en las que los recursos se cargan mediante la interfaz de usuario de AEM Forms. De forma predeterminada, muestra todos los recursos cargados. Para obtener más información sobre la interfaz de usuario de AEM Forms, consulte <a href="../../forms/using/introduction-managing-forms.md" target="_blank">Introducción a la administración de formularios</a>.</td>
+   <td>Configura las carpetas en las que los recursos se cargan mediante la interfaz de usuario de AEM Forms. De forma predeterminada, muestra todos los recursos cargados. Para obtener más información sobre la IU de AEM Forms, consulte <a href="../../forms/using/introduction-managing-forms.md" target="_blank">Introducción a la administración de formularios</a>.</td>
   </tr>
   <tr>
    <td><p><span class="uicontrol"><strong>Mostrar</strong></code></p> </td>
    <td>Texto del título</td>
-   <td>Título del componente Búsqueda y lista . El título predeterminado es <strong>Forms Portal.</strong></td>
+   <td>Título del componente Búsqueda y lista . El título predeterminado es <strong>Portal de Forms.</strong></td>
   </tr>
   <tr>
    <td> </td>
@@ -86,7 +85,7 @@ El cuadro de diálogo **Editar** incluye varias pestañas que proporcionan opcio
   </tr>
   <tr>
    <td> </td>
-   <td>Deshabilitar búsqueda avanzada</td>
+   <td>Desactivar búsqueda avanzada</td>
    <td>Cuando está activado, oculta el icono de búsqueda avanzada.</td>
   </tr>
   <tr>
@@ -102,17 +101,17 @@ El cuadro de diálogo **Editar** incluye varias pestañas que proporcionan opcio
   <tr>
    <td> </td>
    <td>Texto de resultados</td>
-   <td><p>Configura el texto de los resultados (por ejemplo, 1-12 de 601 <strong>Results</strong>). El valor predeterminado es <strong>Results</strong>.</p> <p>Por ejemplo, si especifica <strong>Forms </strong>en este campo y hay un total de 601 formularios, el texto resultante cambia a 1-12 de 601 <strong>Forms.</strong></p> </td>
+   <td><p>Configura el texto de los resultados (por ejemplo, 1-12 de 601) <strong>Resultados</strong>). El valor predeterminado es <strong>Resultados</strong>.</p> <p>Por ejemplo, si especifica <strong>Forms </strong>en este campo y hay un total de 601 formularios, el texto resultante cambia a 1-12 de 601 <strong>Forms.</strong></p> </td>
   </tr>
   <tr>
    <td> </td>
    <td>Texto de página</td>
-   <td><p>Configura el texto de la página (por ejemplo, <strong>Página </strong>1 de 51). El valor predeterminado es <strong>Página</strong>.</p> <p>Por ejemplo, si especifica <strong>Application Form </strong>en este campo y hay 51 páginas, el texto de la página cambia a <strong>Application Form </strong>1 de 51.</p> </td>
+   <td><p>Configura el texto de la página (por ejemplo, <strong>Página </strong>1 de 51). El valor predeterminado es <strong>Página</strong>.</p> <p>Por ejemplo, si especifica <strong>Formulario de solicitud </strong>en este campo y hay 51 páginas, el texto de la página cambia a <strong>Formulario de solicitud </strong>1 de 51.</p> </td>
   </tr>
   <tr>
    <td> </td>
    <td>De texto</td>
-   <td><p>Reemplaza la palabra <strong>de</strong> por el texto especificado (Página 1 <strong>de </strong>51). El valor predeterminado es <strong>de</strong>.</p> <p>Por ejemplo, si especifica <strong>de </strong>en este campo, el texto cambia a Página 1 <strong>de </strong>51.</p> </td>
+   <td><p>Reemplaza la palabra <strong>de</strong> con el texto especificado (Página 1 <strong>de </strong>51). El valor predeterminado es <strong>de</strong>.</p> <p>Por ejemplo, si especifica <strong>de </strong>en este campo, el texto cambia a Página 1 <strong>de </strong>51.</p> </td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Vínculo de formulario</strong></code></td>
@@ -121,12 +120,12 @@ El cuadro de diálogo **Editar** incluye varias pestañas que proporcionan opcio
   </tr>
   <tr>
    <td> </td>
-   <td>Perfil HTML</td>
-   <td>Configura el perfil HTML que se utiliza para la renderización. Todos los perfiles disponibles se enumeran en la lista desplegable.</td>
+   <td>Perfil de HTML</td>
+   <td>Configura el perfil del HTML que se utiliza para la renderización. Todos los perfiles disponibles se enumeran en la lista desplegable.</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Dirección URL de envío</td>
+   <td>URL de envío</td>
    <td><p>Configura un servlet en el que se envían los datos del formulario.</p> <p><strong>Nota:</strong> <em>La dirección URL de envío de un formulario se puede especificar en varios lugares y su orden de prioridad es el siguiente:</em></p>
     <ol>
      <li><em>La dirección URL de envío incrustada en el formulario (en el botón Enviar) tiene la prioridad más alta.</em></li>
@@ -136,18 +135,18 @@ El cuadro de diálogo **Editar** incluye varias pestañas que proporcionan opcio
   </tr>
   <tr>
    <td> </td>
-   <td>Información del objeto Acción de procesamiento HTML</td>
-   <td>Configura el texto de la información del objeto, que se muestra al pasar el puntero por encima de <img height="16" src="assets/aem6forms_panel-html.png" width="13" /> (el icono HTML5).</td>
+   <td>Información del objeto Acción de procesamiento del HTML</td>
+   <td>Configura el texto de la información del objeto, que se muestra al pasar el puntero por encima <img height="16" src="assets/aem6forms_panel-html.png" width="13" /> (el icono HTML5).</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Información del objeto Acción de procesamiento de PDF</td>
-   <td>Configura el texto de la información del objeto, que se muestra al pasar el puntero por encima de <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (el icono PDF).</td>
+   <td>Información del objeto Acción de procesamiento del PDF</td>
+   <td>Configura el texto de la información del objeto, que se muestra al pasar el puntero por encima <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (el icono PDF ).</td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Estilo</strong></code></td>
    <td>Tipo de estilo</td>
-   <td>Permite especificar <strong>Sin estilo, Estilo predeterminado</strong> o <strong>Estilo personalizado </strong>para enumerar los formularios.</td>
+   <td>Permite especificar <strong>Sin estilo, estilo predeterminado</strong>o <strong>Estilo personalizado </strong>para listar los formularios.</td>
   </tr>
   <tr>
    <td> </td>
@@ -176,15 +175,15 @@ Para configurar el componente Predicado de fecha:
 1. Pulse el componente y, a continuación, pulse ![settings_icon](assets/settings_icon.png). Se abre el cuadro de diálogo Editar.
 1. Especifique lo siguiente:
 
-   * **Tipo:** la única opción disponible es Fecha de  **última modificación**
+   * **Tipo:** La única opción disponible es **Fecha de la última modificación**
 
-   * **Texto:** etiqueta o rótulo para el componente predicado de fecha. El valor predeterminado es **Última fecha de modificación.**
+   * **Texto:** Etiqueta o rótulo para el componente predicado de fecha. El valor predeterminado es **Fecha de la última modificación.**
 
-   * **Etiqueta de fecha de inicio:** etiqueta o rótulo del campo de fecha de inicio
-   * **Etiqueta de fecha de finalización:** etiqueta o rótulo para el campo de fecha de finalización
-   * **Ocultar:** para aplicar el filtro de fechas predeterminado a los formularios de lista
+   * **Etiqueta de fecha de inicio:** Etiqueta o rótulo del campo de fecha de inicio
+   * **Etiqueta de fecha final:** Etiqueta o rótulo para el campo de fecha de finalización
+   * **Ocultar:** Aplicar el filtro de fecha predeterminado a los formularios de lista
 
-1. Toque **Aceptar**
+1. Toque **OK**
 
 #### Predicado de texto completo {#full-text-predicate}
 
@@ -193,7 +192,7 @@ El componente Predicado de texto completo implementa la búsqueda de texto compl
 Para configurar el componente predicado de texto completo:
 
 1. Pulse el componente y, a continuación, pulse ![settings_icon](assets/settings_icon.png). Se abre el cuadro de diálogo Editar.
-1. Especifique el título en el campo **Título principal**.
+1. Especifique el título en la variable **Título principal** campo .
 1. Toque **Ok**
 
 #### Predicado de propiedades {#properties-predicate}
@@ -203,14 +202,14 @@ El componente Predicado de propiedades implementa la búsqueda de formularios en
 Para configurar el componente Predicado de propiedades :
 
 1. Pulse el componente y, a continuación, pulse ![settings_icon](assets/settings_icon.png). Se abre el cuadro de diálogo Editar.
-1. En la pestaña General , especifique la etiqueta de búsqueda. El valor predeterminado es **Properties**
+1. En la pestaña General , especifique la etiqueta de búsqueda. El valor predeterminado es **Propiedades**
 
-1. En la ficha Opciones, pulse **Agregar elemento.**
+1. En la ficha Opciones , pulse **Agregar elemento.**
 1. Seleccione una propiedad de la lista desplegable y especifique una etiqueta de búsqueda para ella en el campo situado debajo de la lista desplegable.
 1. Repita el paso 4 para añadir más propiedades. También puede especificar un valor de filtro predeterminado para enumerar formularios en función de los criterios especificados y ocultar la propiedad para que la busquen los usuarios finales. Seleccione la casilla Ocultar de una propiedad y especifique el valor de filtro predeterminado.
 Por ejemplo, si desea mostrar formularios que contengan &quot;Viaje&quot; en sus títulos, seleccione Ocultar junto a la propiedad Título . Además, especifique Viaje en el cuadro de texto valor de filtro predeterminado.
 
-1. Toque **Aceptar**
+1. Toque **OK**
 
 #### Predicado de etiquetas {#tags-predicate}
 
@@ -221,17 +220,17 @@ Para configurar el componente Predicado de etiquetas:
 1. Pulse el componente y, a continuación, pulse ![settings_icon](assets/settings_icon.png). Se abre el cuadro de diálogo Editar.
 1. Pulse el botón de flecha hacia abajo situado junto al campo Etiquetas .
 1. Seleccionar las etiquetas adecuadas
-1. Toque **Aceptar**
+1. Toque **OK**
 
 Las etiquetas seleccionadas aparecen en el panel Buscar junto con las casillas de verificación para su selección. Ahora los usuarios pueden limitar la búsqueda en función de las etiquetas .
 
-## Lista de formularios en una página {#list-forms-on-a-page-br}
+## Enumerar formularios en una página {#list-forms-on-a-page-br}
 
-Para enumerar formularios en una página, agregue el componente **[!UICONTROL Search &amp; Lister]** a la página y configure el **[!UICONTROL Panel de lista]**. Para permitir que los usuarios finales busquen formularios con fecha, texto y etiquetas, agregue un componente **[!UICONTROL Panel de búsqueda]**.
+Para enumerar formularios en una página, agregue la variable **[!UICONTROL Búsqueda y listado]** Componente a la página y configure el **[!UICONTROL Panel de lista]**. Para permitir que los usuarios finales busquen formularios con fecha, texto y etiquetas, agregue una **[!UICONTROL Panel de búsqueda]** componente.
 
-Para vincular un formulario desde cualquier lugar de la página, utilice el componente Vínculo . Para obtener más información sobre el componente de vínculo, consulte [Incrustación del componente de vínculo en una página](../../forms/using/embedding-link-component-page.md).
+Para vincular un formulario desde cualquier lugar de la página, utilice el componente Vínculo . Para obtener más información sobre el componente de vínculo, consulte [Incrustación de un componente de vínculo en una página](../../forms/using/embedding-link-component-page.md).
 
-Para enumerar los formularios que están en estado de borrador y los formularios que ya se han enviado, utilice el componente **[!UICONTROL Borradores y envíos]**. Para obtener más información, consulte [Personalización del componente Borradores y envíos](../../forms/using/draft-submission-component.md).
+Para enumerar los formularios que están en estado de borrador y los formularios que ya se han enviado, utilice la variable **[!UICONTROL Borradores y presentaciones]** componente. Para obtener más información, consulte [Personalización del componente Borradores y envíos](../../forms/using/draft-submission-component.md).
 
 ## Facilidad de uso del dispositivo móvil {#mobile-device-friendliness}
 
@@ -245,11 +244,11 @@ Componente Búsqueda y listado
 
 ## Personalización de una página de portal de formularios {#customizing-a-forms-portal-page-br}
 
-Puede personalizar una página del portal de formularios para que la página tenga un aspecto distinto. También puede agregar metadatos para mejorar la experiencia de búsqueda, cambiar el diseño de la página y agregar estilos CSS personalizados. Para obtener más información, consulte [Personalización de plantillas para componentes del portal de Forms](../../forms/using/customizing-templates-forms-portal-components.md).
+Puede personalizar una página del portal de formularios para que la página tenga un aspecto distinto. También puede agregar metadatos para mejorar la experiencia de búsqueda, cambiar el diseño de la página y agregar estilos CSS personalizados. Para obtener más información, consulte [Personalización de plantillas para componentes de Forms Portal](../../forms/using/customizing-templates-forms-portal-components.md).
 
-La interfaz de usuario de AEM Forms permite agregar metadatos personalizados a los formularios. Los metadatos personalizados son útiles para ofrecer a los usuarios finales una experiencia de listado y búsqueda de formularios. Para obtener más información sobre los metadatos personalizados, consulte [Personalización de plantillas para componentes del portal de Forms](../../forms/using/customizing-templates-forms-portal-components.md).
+La interfaz de usuario de AEM Forms permite agregar metadatos personalizados a los formularios. Los metadatos personalizados son útiles para ofrecer a los usuarios finales una experiencia de listado y búsqueda de formularios. Para obtener más información sobre los metadatos personalizados, consulte [Personalización de plantillas para componentes de Forms Portal](../../forms/using/customizing-templates-forms-portal-components.md).
 
-De forma predeterminada, el portal de formularios proporciona acciones de renderización. Puede personalizar el portal de formularios para agregar más acciones. Para obtener información detallada, consulte [Adición de una acción personalizada en elementos de la lista de formularios.](../../forms/using/add-custom-action-form-lister.md)
+De forma predeterminada, el portal de formularios proporciona acciones de renderización. Puede personalizar el portal de formularios para agregar más acciones. Para obtener información detallada, consulte [Adición de acciones personalizadas en elementos de lista de formularios.](../../forms/using/add-custom-action-form-lister.md)
 
 ## Artículos relacionados
 

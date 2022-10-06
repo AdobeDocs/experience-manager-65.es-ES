@@ -1,22 +1,21 @@
 ---
 title: Crear y organizar páginas
-seo-title: Crear y organizar páginas
+seo-title: Creating and Organizing Pages
 description: En esta sección se describe cómo crear y administrar páginas con AEM de manera que luego pueda crear contenido en esas páginas.
-seo-description: En esta sección se describe cómo crear y administrar páginas con AEM de manera que luego pueda crear contenido en esas páginas.
+seo-description: This section describes how to create and manage pages with AEM so that you can then create content on those pages.
 uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1910'
 ht-degree: 90%
 
 ---
-
 
 # Crear y organizar páginas{#creating-and-organizing-pages}
 
@@ -41,7 +40,7 @@ La estructura de un sitio web se puede considerar como una *estructura de árbol
 
 A continuación encontrará un fragmento del sitio Geometrixx, desde el que se accederá, por ejemplo, a la página `Triangle`:
 
-* Entorno de autor
+* Entorno de creación
 
    `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
@@ -49,7 +48,7 @@ A continuación encontrará un fragmento del sitio Geometrixx, desde el que se a
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Según la configuración de la instancia, el uso de `/content` puede ser opcional en el entorno de publicación.
+   Según la configuración de su instancia, use `/content` puede ser opcional en el entorno de publicación.
 
 ```xml
   /content
@@ -71,7 +70,7 @@ A continuación encontrará un fragmento del sitio Geometrixx, desde el que se a
     /...
 ```
 
-Esta estructura se puede ver desde la consola Sitios web, que puede utilizar para [navegar por la estructura de árbol](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Esta estructura se puede ver desde la consola Sitios web , que puede usar para [navegar por la estructura de árbol](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -89,7 +88,7 @@ Cuando se crea una nueva página aparecen dos campos clave:
    * Se usa para generar la URI.
    * Es opcional que el usuario especifique algo en este campo. Si no se especifica, el nombre se deriva del título.
 
-Al crear una página nueva, AEM [validará el nombre de la página según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
+Al crear una página nueva, AEM [valide el nombre de página según las convenciones](/help/sites-developing/naming-conventions.md) impuesto por AEM y JCR.
 
 La implementación y la lista de caracteres permitidos difieren ligeramente según la IU (es más extensa para la IU táctil), pero el mínimo permitido es:
 
@@ -103,7 +102,7 @@ Utilice solo estos caracteres si quiere estar seguro de que serán aceptados/uti
 
 #### Título {#title}
 
-Si proporciona solo un **título** de página al crear una nueva página, AEM derivará el **nombre**[ de página de esta cadena y lo validará según las convenciones impuestas por AEM y JCR. ](/help/sites-developing/naming-conventions.md) Si bien en ambas IU se aceptará un campo **Título** con caracteres no válidos, los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
+Si proporciona solo un **título** de página al crear una nueva página, AEM derivará el **nombre** de página de esta cadena y lo [validará según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR. Si bien en ambas IU se aceptará un campo **Título** con caracteres no válidos, los caracteres no válidos se sustituirán en el nombre derivado. Por ejemplo:
 
 | Título | Nombre derivado |
 |---|---|
@@ -112,12 +111,12 @@ Si proporciona solo un **título** de página al crear una nueva página, AEM de
 
 #### Nombre {#name}
 
-Al indicar un valor **Nombre**[ cuando se cree una página, AEM validará el nombre según las convenciones impuestas por AEM y JCR.](/help/sites-developing/naming-conventions.md)
+Al indicar un valor **Nombre** cuando se cree una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
 
-En la IU clásica, **no puede introducir caracteres no válidos** en el campo **Nombre**.
+En la IU clásica, **no se pueden introducir caracteres no válidos** en el **Nombre** campo .
 
 >[!NOTE]
->En la IU táctil, **no puede enviar caracteres no válidos** en el campo **Nombre**. Cuando AEM detecte caracteres no válidos, el campo se resaltará y aparecerá un mensaje explicativo para indicar qué caracteres se deben eliminar o reemplazar.
+>En la IU táctil puede **no se pueden enviar caracteres no válidos** en el **Nombre** campo . Cuando AEM detecte caracteres no válidos, el campo se resaltará y aparecerá un mensaje explicativo para indicar qué caracteres se deben eliminar o reemplazar.
 
 >[!NOTE]
 >
@@ -149,7 +148,7 @@ Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de 
 * Vídeo
 * Muchas más
 
-Una vez que haya creado y abierto una página, puede [agregar contenido utilizando los componentes](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponibles en la [barra de tareas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Una vez que haya creado y abierto una página, puede [añadir contenido mediante los componentes](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponible en el [barra de tareas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## Administrar páginas {#managing-pages}
 
@@ -195,7 +194,7 @@ A menos que alguien haya creado todas las páginas con antelación, antes de pod
 
    >[!NOTE]
    >
-   >También puede crear una página mientras edita una página existente. Si utiliza **Crear página secundaria **desde la ficha **Página** de la barra de tareas, se creará una nueva página directamente debajo de la página que se está editando.
+   >También puede crear una página mientras edita una página existente. Uso de **Crear página secundaria **desde la **Página** de la barra de tareas, creará una nueva página directamente debajo de la página que se esté editando.
 
 ### Abrir una página para su edición {#opening-a-page-for-editing}
 
@@ -287,7 +286,7 @@ Para mover o cambiar el nombre de una página:
 
       Con esto se puede seleccionar o anular la selección de cada página de referencia individual.
 
-   * **Volver a publicar**
+   * **Volver a publicar el formulario**
 
       Vuelva a publicar la página de referencia; nuevamente esto puede seleccionarse para cada página individual.
    >[!NOTE]
@@ -318,7 +317,7 @@ Para mover o cambiar el nombre de una página:
 >
 >Si una página ya está activada, se desactiva automáticamente antes de eliminarse.
 
-### Bloquear una página {#locking-a-page}
+### Bloquear una página   {#locking-a-page}
 
 Puede [bloquear o desbloquear una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) desde una consola o bien editando una página en concreto. En ambas ubicaciones también se mostrará información sobre si una página está bloqueada o no.
 
@@ -329,10 +328,9 @@ Puede [bloquear o desbloquear una página](/help/sites-classic-ui-authoring/clas
 >A la hora de especificar un nombre nuevo, las opciones para cambiar el nombre de las carpetas están también sujetas a las [convenciones de nomenclatura de páginas](#page-naming-conventions).
 
 1. Abra la consola **Sitios web** y vaya hasta la ubicación deseada.
-1. En **Nuevo...** (haga clic en la flecha junto a **Nuevo...**), seleccione **Nueva carpeta...**.
+1. En el **Nuevo...** (haga clic en la flecha situada junto a **Nuevo...**), seleccione **Nueva carpeta...**.
 1. Se abrirá el cuadro de diálogo **Crear carpeta**. Aquí puede indicar el **Nombre** y el **Título**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
 1. Seleccione **Crear** para crear la carpeta.
-

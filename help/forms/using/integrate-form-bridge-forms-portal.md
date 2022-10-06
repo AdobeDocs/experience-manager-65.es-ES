@@ -1,8 +1,8 @@
 ---
-title: Integración de Form Bridge con un portal personalizado para formularios HTML5
-seo-title: Integración de Form Bridge con un portal personalizado para formularios HTML5
+title: Integración de Form Bridge con el portal personalizado para formularios HTML5
+seo-title: Integrating Form Bridge with custom portal for HTML5 forms
 description: Puede utilizar la API de FormBridge para obtener o establecer los valores de los campos de formulario de la página HTML y enviar el formulario.
-seo-description: Puede utilizar la API de FormBridge para obtener o establecer los valores de los campos de formulario de la página HTML y enviar el formulario.
+seo-description: You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form.
 uuid: c8911f82-1a25-47a5-9a06-19b5dce74a2c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,18 +10,17 @@ topic-tags: hTML5_forms
 discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
 
+# Integración de Form Bridge con el portal personalizado para formularios HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-# Integración de Form Bridge con un portal personalizado para formularios HTML5{#integrating-form-bridge-with-custom-portal-for-html-forms}
-
-FormBridge es una API de puente de formularios HTML5 que le permite interactuar con un formulario. Para la referencia de la API de FormBridge, consulte [Referencia de la API de FormBridge](/help/forms/using/form-bridge-apis.md).
+FormBridge es una API de puente de formularios de HTML5 que le permite interactuar con un formulario. Para obtener la referencia de la API de FormBridge, consulte [Referencia de la API de FormBridge](/help/forms/using/form-bridge-apis.md).
 
 Puede utilizar la API de FormBridge para obtener o establecer los valores de los campos de formulario de la página HTML y enviar el formulario. Por ejemplo, puede utilizar API para crear una experiencia similar a un asistente.
 
@@ -37,9 +36,9 @@ Una aplicación HTML existente puede aprovechar la API de FormBridge para intera
 
       Para obtener más información sobre cómo crear un perfil, consulte [Creación de un nuevo perfil](/help/forms/using/custom-profile.md).
 
-1. **Modificación del perfil HTML**
+1. **Modificación del perfil del HTML**
 
-   Incluya tiempo de ejecución de XFA, biblioteca de configuración regional XFA y fragmento de código HTML de formulario XFA en el procesador de perfiles, diseñe la página web y coloque el formulario dentro de la página web.
+   Incluya el tiempo de ejecución de XFA, la biblioteca de configuración regional XFA y el fragmento de HTML de formulario XFA en el procesador de perfiles, diseñe la página web y coloque el formulario dentro de la página web.
 
    Por ejemplo, utilice el siguiente fragmento de código para crear una aplicación con dos campos de entrada y un formulario para demostrar la interacción entre el formulario y una aplicación externa.
 
@@ -77,24 +76,24 @@ Una aplicación HTML existente puede aprovechar la API de FormBridge para intera
 
    >[!NOTE]
    >
-   >La **línea 9** contiene una referencia JSP adicional para estilos CSS y archivos JavaScript para diseñar la página.
+   >La variable **línea 9**, contiene una referencia JSP adicional para estilos CSS y archivos JavaScript para diseñar la página.
    >
    >
-   >La etiqueta &lt;div id=&quot;rightdiv&quot;> de la **línea 18** contiene el fragmento HTML del formulario XFA.
-   La página tiene un estilo de dos contenedores: **izquierda** y **derecha**. El contenedor derecho tiene el formulario. El contenedor izquierdo tiene dos campos de entrada y parte de la página HTML externa.
+   >La variable &lt;div id=&quot;rightdiv&quot;> etiqueta en **línea 18** contiene el fragmento de HTML del formulario XFA.
+   La página tiene un estilo de dos contenedores: **left** y **right**. El contenedor derecho tiene el formulario. El contenedor izquierdo tiene dos campos de entrada y parte de la página de HTML externa.
    La siguiente captura de pantalla muestra cómo se muestra el formulario en un explorador.
 
    ![portal](assets/portal.jpg)
 
-   La parte izquierda forma parte de la **página HTML**. El lado derecho que contiene los campos es el **formulario xfa**.
+   El lado izquierdo es parte de la variable **página HTML**. El lado derecho que contiene los campos es el **formulario xfa**.
 
 1. **Acceso a los campos del formulario desde la página**
 
    El siguiente es un ejemplo de secuencia de comandos que puede agregar para definir valores en un campo de formulario.
 
-   Por ejemplo, si desea configurar **EmployeeName** utilizando los valores de Fields **First Name** y **Last Name**, llame a la función **window.formBridge.setFieldValue**.
+   Por ejemplo, si desea configurar la variable **NombreEmpleado** uso de los valores de los campos **Nombre** y **Apellidos**, llame a la función **window.formBridge.setFieldValue** función.
 
-   Del mismo modo, puede leer el valor llamando a la API **window.formBridge.getFieldValue**.
+   Del mismo modo, puede leer el valor llamando a **window.formBridge.getFieldValue** API.
 
    ```javascript
    $(function() {

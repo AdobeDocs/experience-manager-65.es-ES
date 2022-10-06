@@ -1,8 +1,8 @@
 ---
 title: Solución de problemas de replicación
-seo-title: Solución de problemas de replicación
+seo-title: Troubleshooting Replication
 description: Este artículo proporciona información sobre cómo solucionar problemas de replicación.
-seo-description: Este artículo proporciona información sobre cómo solucionar problemas de replicación.
+seo-description: This article provides information on how to troubleshoot replication issues.
 uuid: 1662bf60-b000-4eb2-8834-c6da607128fe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ topic-tags: configuring
 discoiquuid: 0d055be7-7189-4587-8c7c-2ce34e22a6ad
 docset: aem65
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: cfa822c8-f9a9-4122-9eac-0293d525f6b5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
-
 
 # Solución de problemas de replicación{#troubleshooting-replication}
 
@@ -32,7 +31,7 @@ La replicación (replicación no inversa) está fallando por alguna razón.
 
 Hay varias razones para que la replicación falle. Este artículo explica el enfoque que se podría tomar al analizar estos problemas.
 
-**¿Se activan las réplicas al hacer clic en el botón Activar? Si NO es así, haga lo siguiente:**
+**¿Se activan las réplicas al hacer clic en el botón Activar? Si NO, haga lo siguiente:**
 
 1. Vaya a /crx/explorer e inicie sesión como administrador.
 1. Abrir &quot;Explorador de contenido&quot;
@@ -44,8 +43,8 @@ Para comprobar esto, vaya a /etc/replication/agents.author.html y haga clic en l
 
 **Si hay una cola de agente o unas pocas colas de agente atascadas:**
 
-1. ¿La cola muestra el estado **bloqueado**? Si es así, ¿la instancia de publicación no se está ejecutando o no responde completamente? Compruebe la instancia de publicación para ver qué le sucede (es decir, compruebe los registros y vea si hay un error OutOfMemory o algún otro problema). Entonces, si suele ser lento, tome volcados de subprocesos y analícelos.
-1. ¿El estado de la cola muestra que **La cola está activa - # pending**? Básicamente, el trabajo de replicación podría atascarse en una lectura de socket esperando a que responda la instancia pública o Dispatcher. Esto podría significar que la instancia de publicación o Dispatcher está bajo carga alta o atascada en un bloqueo. Tome volcados de subprocesos del autor y publíquelos en este caso.
+1. ¿Se muestra la cola? **bloqueado** estado? Si es así, ¿la instancia de publicación no se está ejecutando o no responde completamente? Compruebe la instancia de publicación para ver qué le sucede (es decir, compruebe los registros y vea si hay un error OutOfMemory o algún otro problema). Entonces, si suele ser lento, tome volcados de subprocesos y analícelos.
+1. ¿Se muestra el estado de la cola? **La cola está activa - # pendiente**? Básicamente, el trabajo de replicación podría atascarse en una lectura de socket esperando a que responda la instancia pública o Dispatcher. Esto podría significar que la instancia de publicación o Dispatcher está bajo carga alta o atascada en un bloqueo. Tome volcados de subprocesos del autor y publíquelos en este caso.
 
    * Abra los volcados de subprocesos del autor en un analizador de volcado de subprocesos, compruebe si muestra que el trabajo de eventos de sling del agente de replicación está atascado en un socketRead.
    * Abra los volcados de subprocesos de publicación en un analizador de volcados de subprocesos, analice qué podría estar causando que la instancia de publicación no responda. Debería ver un subproceso con el POST /bin/receive en su nombre, que es el subproceso que recibe la replicación del autor.
@@ -58,7 +57,7 @@ Para comprobar esto, vaya a /etc/replication/agents.author.html y haga clic en l
    1. Haga clic en &quot;Herramientas&quot; en el menú superior.
    1. Haga clic en el botón de lupa.
    1. Seleccione &quot;XPath&quot; como Tipo.
-   1. En el cuadro &quot;Consulta&quot;, introduzca este orden de consulta /jcr:root/var/eventing/jobs//element(*,slingevent:Job) por @slingevent:created
+   1. En el cuadro &quot;Consulta&quot;, introduzca esta consulta /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) orden de @slingevent:created
    1. Haga clic en Buscar
    1. En los resultados, los elementos principales son los últimos trabajos de eventos de sling. Haga clic en cada una de ellas y busque las réplicas atascadas que coinciden con lo que aparece en la parte superior de la cola.
 
@@ -77,7 +76,7 @@ Para comprobar esto, vaya a /etc/replication/agents.author.html y haga clic en l
 A veces puede resultar muy útil configurar todos los registros de replicación para que se añadan en un archivo de registro independiente a nivel de depuración. Para ello:
 
 1. Vaya a https://host:port/system/console/configMgr e inicie sesión como administrador.
-1. Busque la fábrica Apache Sling Logger y cree una instancia haciendo clic en el botón **+** a la derecha de la configuración de fábrica. Esto creará un nuevo registrador de registros.
+1. Busque la fábrica Apache Sling Logging Logger y cree una instancia haciendo clic en el botón **+** a la derecha de la configuración de fábrica. Esto creará un nuevo registrador de registros.
 1. Establezca la configuración de esta manera:
 
    * Nivel de registro: DEBUG
@@ -86,7 +85,7 @@ A veces puede resultar muy útil configurar todos los registros de replicación 
 
 1. Si sospecha que el problema está relacionado con eventos/trabajos de sling de alguna manera, también puede agregar este paquete java en categorías:org.apache.sling.event
 
-## Poner en pausa la cola del agente de replicación {#pausing-replication-agent-queue}
+## Poner en pausa la cola del agente de replicación  {#pausing-replication-agent-queue}
 
 En algún momento puede ser adecuado pausar la cola de replicación para reducir la carga en el sistema de creación, sin desactivarla. Actualmente, esto solo es posible si se configura temporalmente un puerto no válido. A partir de la versión 5.4, puede ver el botón de pausa en la cola del agente de replicación que tiene alguna limitación
 
@@ -99,19 +98,18 @@ Los permisos de página no se replican porque se almacenan bajo los nodos a los 
 
 En general, los permisos de página no se deben replicar del autor para su publicación y no se deben realizar de forma predeterminada. Esto se debe a que los derechos de acceso deben ser diferentes en esos dos entornos. Por lo tanto, se recomienda configurar las ACL en la publicación por separado del autor.
 
-## Cola de replicación bloqueada al replicar información de espacio de nombres de Author en Publish {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+## Cola de replicación bloqueada al replicar información de espacio de nombres de Autor a Publicación {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-En algunos casos, la cola de replicación está bloqueada al intentar replicar la información del área de nombres de la instancia de autor en la instancia de publicación. Esto sucede porque el usuario de replicación no tiene privilegios `jcr:namespaceManagement`. Para evitar este problema, asegúrese de que:
+En algunos casos, la cola de replicación está bloqueada al intentar replicar la información del área de nombres de la instancia de autor en la instancia de publicación. Esto sucede porque el usuario de replicación no tiene `jcr:namespaceManagement` . Para evitar este problema, asegúrese de que:
 
-* El usuario de replicación (tal como se configura en [Transport](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>User) también existe en la instancia de publicación.
+* El usuario de replicación (según la configuración de la sección [Transporte](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>Usuario) también existe en la instancia Publicar.
 * El usuario tiene privilegios de lectura y escritura en la ruta de acceso donde está instalado el contenido.
-* El usuario tiene el privilegio `jcr:namespaceManagement` en el nivel de repositorio. Puede conceder el privilegio de la siguiente manera:
+* El usuario tiene `jcr:namespaceManagement` en el nivel del repositorio. Puede conceder el privilegio de la siguiente manera:
 
 1. Inicie sesión en CRX/DE ( `https://localhost:4502/crx/de/index.jsp`) como administrador.
-1. Haga clic en la pestaña **Control de acceso**.
-1. Seleccione **Repositorio**.
-1. Haga clic en **Agregar entrada** (el icono del signo más).
+1. Haga clic en el **Control de acceso** pestaña .
+1. Select **Repositorio**.
+1. Haga clic en **Agregar entrada** (el icono de signo más).
 1. Introduzca el nombre del usuario.
-1. Seleccione `jcr:namespaceManagement` en la lista de privilegios.
+1. Select `jcr:namespaceManagement` de la lista de privilegios.
 1. Haga clic en Aceptar.
-

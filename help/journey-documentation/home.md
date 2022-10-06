@@ -1,14 +1,15 @@
 ---
-title: recorridos de documentación de AEM
+title: Recorridos de documentación de AEM
 description: Los Recorridos de documentación proporcionan una estructura narrativa dentro de AEM documentación al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Diseñados pensando en AEM principiantes, los recorridos presentan los conceptos y características para lograr un objetivo de A a Z.
-source-git-commit: 2523d9dcdbbfd9107e43ca53e2bb586452be1cb8
+exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1234'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# recorridos de documentación de AEM {#aem-documentation-journeys}
+# Recorridos de documentación de AEM {#aem-documentation-journeys}
 
 Los Recorridos de documentación proporcionan una estructura narrativa dentro de AEM documentación al unir funciones complejas y dispares para resolver un objetivo comercial de una manera óptima. Diseñados pensando en AEM principiantes, los recorridos presentan los conceptos y características para lograr un objetivo de A a Z.
 
@@ -71,7 +72,7 @@ Cada recorrido comienza con una declaración clara de la audiencia a la que va d
 
 Los Recorridos de documentación están pensados como un complemento de la documentación técnica AEM y los tutoriales existentes. Por ejemplo, un recorrido puede presentarle un concepto y, a continuación, los documentos técnicos explican las opciones de configuración detalladas que puede necesitar y un tutorial le guía a través de configuraciones específicas.
 
-| Tipo de documentación | Función | Audience | Supuestos | Omisiones | Tipo de contenido | Length |
+| Tipo de documentación | Función | Audiencia | Supuestos | Omisiones | Tipo de contenido | Length |
 |---|---|---|---|---|---|---|
 | Recorrido de documentación | Un recorrido define cómo AEM resolver un problema comercial general a través de una narrativa que guía a los lectores a través de procesos y características complejos e interrelacionados. Ilustra cómo varias funciones trabajan juntas para resolver una necesidad empresarial de una manera óptima. | Reader nuevos en AEM | Familiaridad general de CMS | Opciones y configuración detalladas | Texto | Ca. 1 hora |
 | Documentos técnicos | Los documentos técnicos se centran en características individuales, detallando el funcionamiento técnico de la función y cada opción disponible para el usuario. | Usuarios con experiencia AEM | AEM experiencia | Contexto y fondo | Texto | Varía |
@@ -84,9 +85,9 @@ Ya tiene a su disposición varios Recorridos de documentación. Dado que cada re
 
 | Recorrido | Descripción |
 |---|---|
-| [Recorrido para desarrolladores sin objetivos](/help/journey-headless/developer/overview.md) | Comience aquí para ver cómo AEM admite modelos de desarrollo sin objetivos y cómo comenzar su proyecto desde la planificación, la implementación y la puesta en marcha. |
+| [Recorrido para desarrolladores de Headless](/help/journey-headless/developer/overview.md) | Comience aquí para ver cómo AEM admite modelos de desarrollo sin objetivos y cómo comenzar su proyecto desde la planificación, la implementación y la puesta en marcha. |
 | [Recorrido de creación sin encabezado](/help/journey-headless/author/overview.md) | Comience aquí para obtener un recorrido guiado a través de las potentes y flexibles funciones de AEM, sus capacidades y cómo modelar su contenido en su primer proyecto sin objetivos. |
-| [Recorrido de arquitectos sin encabezado](/help/journey-headless/architect/overview.md) | Comience aquí para obtener una introducción a las potentes y flexibles funciones de Adobe Experience Manager y a cómo modelar contenido para su proyecto. |
+| [Recorrido para arquitectos de Headless](/help/journey-headless/architect/overview.md) | Comience aquí para obtener una introducción a las potentes y flexibles funciones de Adobe Experience Manager y a cómo modelar contenido para su proyecto. |
 | [Recorrido de traducción sin encabezado](/help/journey-headless/translation/overview.md) | Comience aquí para ver cómo configurar y administrar sus proyectos de traducción sin encabezado en AEM. |
 
 <!--

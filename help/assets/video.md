@@ -516,7 +516,7 @@ Para configurar la configuración de Google Cloud:
 
    `https://<servername.domain>:<port_number>`
 
-   Por ejemplo, `https://1a2b3c.mycompany.com:4321`
+   Por ejemplo, `https://1a2b3c.mycompany.com:4321`. 
 
    **Nota**: El ejemplo de ruta anterior está diseñado únicamente para fines de demostración.
 
@@ -526,7 +526,7 @@ Para configurar la configuración de Google Cloud:
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   Por ejemplo, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   Por ejemplo, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`. 
 
    **Nota**: El ejemplo de ruta anterior está diseñado únicamente para fines de demostración.
 
@@ -653,7 +653,7 @@ Deje abierta la página Crear configuración de YouTube . en un momento, volver�
 1. En la esquina superior izquierda, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Services]**.
 1. En el encabezado Servicios de terceros, en YouTube, pulse **[!UICONTROL Configurar ahora]**.
 1. En el cuadro de diálogo Crear configuración, introduzca un título (obligatorio) y un nombre (opcional) en los campos correspondientes.
-1. Toque **[!UICONTROL Crear]**.
+1. Pulse **[!UICONTROL Crear]**.
 1. En el cuadro de diálogo Configuración de cuenta de YouTube, en el campo **[!UICONTROL Nombre de la aplicación]**, introduzca el ID del proyecto de Google.
 
    Ha especificado el ID del proyecto al principio [configuración de la configuración de Google Cloud](/help/assets/video.md#configuring-google-cloud-settings) más temprano.

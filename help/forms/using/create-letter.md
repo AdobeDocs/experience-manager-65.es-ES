@@ -1,7 +1,7 @@
 ---
 title: Crear carta
 seo-title: Create Letter
-description: 'En este tema se explican los pasos para crear una carta, agregar módulos de datos y archivos adjuntos y previsualizarla en Gestión de Correspondencia. '
+description: En este tema se explican los pasos para crear una carta, agregar módulos de datos y archivos adjuntos y previsualizarla en Gestión de Correspondencia.
 seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -308,7 +308,7 @@ Cuando después de crear una correspondencia, pulse Abrir, la Gestión de corres
    1. **Vista previa de recursos**: Pulse el icono mostrar vista previa ( ![showpreview](assets/showpreview.png)) junto a un recurso.
 
 
-1. Toque **Siguiente**.
+1. Pulse **Siguiente**.
 1. La página Datos detalla cómo se utilizan los campos de datos y las variables en la plantilla. Los datos se pueden vincular a fuentes de datos como un diccionario de datos o entradas del usuario. Cada campo define propiedades desde las que el diccionario de datos asigna datos o qué rótulo se muestra para los campos de entrada del usuario.
 
    Vinculación:
@@ -349,7 +349,7 @@ Cuando después de crear una correspondencia, pulse Abrir, la Gestión de corres
 1. Select **Acceso a la biblioteca** para conceder acceso a la biblioteca. Si el acceso a la biblioteca está habilitado, el ajuste de reclamaciones puede acceder a la biblioteca de contenido al crear una carta e insertar archivos adjuntos.
 1. Select **Configuración de archivos adjuntos** y especifique el número máximo de archivos adjuntos.
 
-1. Toque **Guardar**. La correspondencia se crea y aparece en la página Letras .
+1. Pulse **Guardar**. La correspondencia se crea y aparece en la página Letras .
 
 Después de crear una plantilla de carta en Gestión de Correspondencia, el usuario/agente/ajustador de reclamaciones final puede abrir la carta en la interfaz de usuario de CCR y crear una correspondencia introduciendo datos, configurando contenido y administrando archivos adjuntos. Para obtener más información, consulte [Crear correspondencia](/help/forms/using/create-correspondence.md).
 

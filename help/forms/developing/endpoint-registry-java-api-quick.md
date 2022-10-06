@@ -1,6 +1,6 @@
 ---
 title: Inicio rápido (SOAP) de la API Java del Registro de extremos
-seo-title: Inicio rápido (SOAP) de la API Java del Registro de extremos
+seo-title: Endpoint Registry Java API QuickStart(SOAP)
 description: Inicio rápido (SOAP) de la API Java del Registro de extremos
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
 
-
-# Inicio rápido de la API de Java del Registro de Endpoint (SOAP) {#endpoint-registry-java-api-quickstart-soap}
+# Inicio rápido de la API de Java del Registro de extremos (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
 El inicio rápido de la API de Java (SOAP) está disponible para el Registro de extremos.
 
@@ -52,7 +51,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 ## Inicio rápido: Añadir un extremo EJB mediante la API de Java {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
-El siguiente ejemplo de código Java agrega un extremo EJB a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Adición de puntos de conexión EJB](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints)).
+El siguiente ejemplo de código Java agrega un extremo EJB a un servicio denominado *MyApplication/EncryptDocument*. (Consulte [Adición de puntos de conexión EJB](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
 ```java
  /*
@@ -151,7 +150,7 @@ El siguiente ejemplo de código Java agrega un extremo EJB a un servicio llamado
 
 ## Inicio rápido: Añadir un extremo SOAP mediante la API de Java {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-El siguiente ejemplo de código Java agrega un extremo SOAP a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Añadir puntos de conexión SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints)).
+El siguiente ejemplo de código Java agrega un extremo SOAP a un servicio denominado *MyApplication/EncryptDocument*. (Consulte [Adición de puntos de conexión SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```java
  /*
@@ -251,11 +250,11 @@ El siguiente ejemplo de código Java agrega un extremo SOAP a un servicio llamad
 
 ## Inicio rápido: Añadir un extremo de carpeta vigilada mediante la API de Java {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
-En el siguiente ejemplo de código Java se agrega un extremo de carpeta vigilada a un servicio denominado *MyApplication/EncryptDocument*. (Consulte [Adición de puntos de conexión de carpeta observados](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints)).
+El siguiente ejemplo de código Java agrega un extremo de carpeta vigilada a un servicio denominado *MyApplication/EncryptDocument*. (Consulte [Añadir puntos finales de carpeta vigilada](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
 >[!NOTE]
 >
->Debe incluir el archivo WatchedFolderEndpointConfigConstants.java en el proyecto para compilar y ejecutar el siguiente inicio rápido. (Consulte [Archivos constantes de valores de configuración de carpeta vigilada](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)).
+>Debe incluir el archivo WatchedFolderEndpointConfigConstants.java en el proyecto para compilar y ejecutar el siguiente inicio rápido. (Consulte [Archivos constantes de valores de configuración de carpetas vigiladas](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -386,11 +385,11 @@ En el siguiente ejemplo de código Java se agrega un extremo de carpeta vigilada
 
 ## Inicio rápido: Añadir un extremo de correo electrónico mediante la API de Java {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-El siguiente ejemplo de código Java agrega un extremo Email a un servicio llamado *MyApplication/EncryptDocument* t. (Consulte [Añadir puntos de conexión de correo electrónico](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints)).
+El siguiente ejemplo de código Java agrega un extremo Email a un servicio denominado *MyApplication/EncryptDocument* t. (Consulte [Añadir puntos de conexión de correo electrónico](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
 
 >[!NOTE]
 >
->Debe incluir el archivo EmailEndpointConfigConstants.java en el proyecto para compilar y ejecutar el siguiente inicio rápido. (Consulte [Archivo constante de valores de configuración de correo electrónico](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file)).
+>Debe incluir el archivo EmailEndpointConfigConstants.java en el proyecto para compilar y ejecutar el siguiente inicio rápido. (Consulte [Archivo constante de valores de configuración de correo electrónico](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```java
  /*
@@ -529,7 +528,7 @@ El siguiente ejemplo de código Java agrega un extremo Email a un servicio llama
 
 ## Inicio rápido: Adición de un extremo de Remoting mediante la API de Java {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
 
-El siguiente ejemplo de código Java agrega un extremo Remoting a un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Adición de puntos de conexión remotos](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints)).
+El siguiente ejemplo de código Java agrega un extremo Remoting a un servicio denominado *MyApplication/EncryptDocument*. (Consulte [Adición de puntos de conexión remotos](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
 
 ```java
  /*
@@ -634,7 +633,7 @@ El siguiente ejemplo de código Java agrega un extremo Remoting a un servicio ll
 
 ## Inicio rápido: Añadir un extremo de TaskManager mediante la API de Java {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-El siguiente ejemplo de código Java agrega un extremo de TaskManager a un servicio llamado *MyApplication/EncryptDocument*. Observe que el nombre de la categoría es *EncryptProcess*. (Consulte [Adición de puntos de conexión de TaskManager](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints)).
+El siguiente ejemplo de código Java agrega un extremo TaskManager a un servicio denominado *MyApplication/EncryptDocument*. Observe que el nombre de la categoría es *EncryptProcess*. (Consulte [Adición de puntos de conexión de TaskManager](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
 
 ```java
  /*
@@ -743,7 +742,7 @@ El siguiente ejemplo de código Java agrega un extremo de TaskManager a un servi
 
 ## Inicio rápido: Modificación de un extremo mediante la API de Java {#quickstart-modifying-an-endpoint-using-the-java-api}
 
-El siguiente ejemplo de código Java modifica un extremo de carpeta vigilada. El extremo es para el proceso *MyApplication/EncryptDocument*. La carpeta vigilada cambia a `C:\NewWatchedFolder`. (Consulte [Modificación de puntos de conexión](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints)).
+El siguiente ejemplo de código Java modifica un extremo de carpeta vigilada. El extremo es para *MyApplication/EncryptDocument* proceso. La carpeta vigilada se cambia a `C:\NewWatchedFolder`. (Consulte [Modificación de puntos finales](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
 ```java
  /*
@@ -893,7 +892,7 @@ El siguiente ejemplo de código Java modifica un extremo de carpeta vigilada. El
 
 ## Inicio rápido: Eliminación de un extremo mediante la API de Java {#quickstart-removing-an-endpoint-using-the-java-api}
 
-El siguiente código Java elimina un extremo EJB de un servicio llamado *MyApplication/EncryptDocument*. (Consulte [Eliminación de puntos de conexión](/help/forms/developing/programmatically-endpoints.md#removing-endpoints)).
+El siguiente código Java elimina un extremo de EJB de un servicio denominado *MyApplication/EncryptDocument*. (Consulte [Eliminación de extremos](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
 ```java
  /*
@@ -1012,7 +1011,7 @@ El siguiente código Java elimina un extremo EJB de un servicio llamado *MyAppli
 
 ## Inicio rápido: Recuperación de información del conector de extremo mediante la API de Java {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-El siguiente código Java recupera información sobre un extremo de carpeta vigilada. Se recupera y se muestra información sobre cada valor de configuración. Esta lista de código especifica si cada valor de configuración es obligatorio u opcional. Además, se muestra el nombre y el valor de cada valor de configuración. (Consulte [Recuperación de información del conector de extremo](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)).
+El siguiente código Java recupera información sobre un extremo de carpeta vigilada. Se recupera y se muestra información sobre cada valor de configuración. Esta lista de código especifica si cada valor de configuración es obligatorio u opcional. Además, se muestra el nombre y el valor de cada valor de configuración. (Consulte [Recuperación de información del conector de extremo](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
 ```java
  /*
@@ -1116,4 +1115,3 @@ El siguiente código Java recupera información sobre un extremo de carpeta vigi
  }
  
 ```
-

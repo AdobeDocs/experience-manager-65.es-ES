@@ -1,8 +1,8 @@
 ---
 title: Búsqueda de formularios y recursos
-seo-title: Búsqueda de formularios y recursos
+seo-title: Searching for forms and assets
 description: Puede buscar formularios y recursos en la instancia de AEM mediante AEM búsqueda. La búsqueda básica y avanzada permite localizar rápidamente los recursos.
-seo-description: Puede buscar formularios y recursos en la instancia de AEM mediante AEM búsqueda. La búsqueda básica y avanzada permite localizar rápidamente los recursos.
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
 uuid: 0928a453-3dc4-448b-9320-dcbf20606dd9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '692'
 ht-degree: 4%
 
 ---
@@ -24,13 +24,13 @@ Puede buscar formularios o recursos de formulario, utilizando una cadena de text
 
 Cuando selecciona uno o más criterios y también especifica una cadena de texto, la intersección del texto y los criterios se devuelven como resultados de búsqueda. Los resultados de la búsqueda son tan buenos como el formulario y los metadatos de recursos proporcionados.
 
-Haga clic en ![aem6forms_search](assets/aem6forms_search.png) para mostrar u ocultar el panel de búsqueda.
+Haga clic en ![aem6forms_search](assets/aem6forms_search.png), para mostrar u ocultar el panel de búsqueda.
 
 ## Búsqueda básica {#basic-search}
 
 Una búsqueda básica es la búsqueda predeterminada, que se ejecuta sin especificar ningún filtro. AEM Forms lleva a cabo una búsqueda de texto completo en las propiedades de los metadatos.
 
-Para ejecutar una búsqueda básica, introduzca la consulta de búsqueda en el campo de texto y pulse return. También puede introducir el carácter comodín (*) para que coincida con cualquier número de caracteres.
+Para ejecutar una búsqueda básica, introduzca la consulta de búsqueda en el campo de texto y pulse return. También puede introducir el carácter comodín (&#42;) para que coincida con cualquier número de caracteres.
 
 Adobe Experience Manager busca el texto introducido en las propiedades de los metadatos y devuelve los resultados correspondientes. Si escribe más de una palabra, la operación de búsqueda coincidirá con el texto completo para la búsqueda.
 
@@ -38,9 +38,9 @@ Tenga en cuenta los siguientes puntos sobre la búsqueda básica:
 
 * La búsqueda se realiza utilizando las propiedades de metadatos de formulario y recursos.
 * Si escribe más de una palabra, la operación de búsqueda coincidirá con el texto completo para la búsqueda.
-* La búsqueda no distingue entre mayúsculas y minúsculas. Por ejemplo, al escribir `geometrixx`, los recursos con títulos `Geometrixx`, `GEOMETRIXX` y `GeoMetRixx` se muestran en los resultados de la búsqueda.
+* La búsqueda no distingue entre mayúsculas y minúsculas. Por ejemplo, al escribir `geometrixx`, recursos con títulos `Geometrixx`, `GEOMETRIXX`y `GeoMetRixx` se muestran en los resultados de la búsqueda.
 
-* No se admiten coincidencias parciales de una palabra. Para buscar utilizando cadenas parciales, utilice el comodín * . Sin embargo, si la consulta de búsqueda coincide con una palabra completa, se muestra el formulario o recurso correspondiente.
+* No se admiten coincidencias parciales de una palabra. Para buscar utilizando cadenas parciales, utilice &#42; comodín. Sin embargo, si la consulta de búsqueda coincide con una palabra completa, se muestra el formulario o recurso correspondiente.
 * Los espacios adicionales se respetan y no se recortan durante la búsqueda. Por ejemplo, `My form` no es la misma consulta de búsqueda que `My form`.
 
 * Si los datos y los valores de visualización de los campos en las propiedades de metadatos son diferentes, no puede utilizar valores de visualización como parámetros de búsqueda. Por ejemplo, no se puede buscar en función de un estado, como Modificado o Publicado, ya que estas propiedades se almacenan en un formato diferente.
@@ -94,7 +94,7 @@ Puede seleccionar cualquier tipo de recurso. La búsqueda devuelve la unión de 
   </tr>
   <tr>
    <td>Formulario PDF</td> 
-   <td>Busque en todos los documentos PDF.</td> 
+   <td>Busque en todos los documentos del PDF.</td> 
   </tr>
   <tr>
    <td>Documento</td> 
@@ -105,7 +105,7 @@ Puede seleccionar cualquier tipo de recurso. La búsqueda devuelve la unión de 
    <td>Busque en todos los formularios adaptables.</td> 
   </tr>
   <tr>
-   <td>Medio</td> 
+   <td>Recurso</td> 
    <td>Busque en todos los recursos.<br /> </td> 
   </tr>
  </tbody>

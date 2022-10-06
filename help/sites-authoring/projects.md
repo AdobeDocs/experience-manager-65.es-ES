@@ -1,7 +1,7 @@
 ---
 title: Proyectos
 seo-title: Projects
-description: 'Los proyectos permiten agrupar los recursos en una entidad cuyo entorno común compartido facilita la administración de los proyectos. '
+description: Los proyectos permiten agrupar los recursos en una entidad cuyo entorno común compartido facilita la administración de los proyectos.
 seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
 uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 source-git-commit: 85e993000c016240c0fbf398ec8192990e60eee6
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 34%
+ht-degree: 37%
 
 ---
 
 
 # Proyectos {#projects}
 
-Los proyectos le permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de los proyectos. Los tipos de recursos que puede asociar con un proyecto se mencionan en AEM como Mosaicos. Los mosaicos pueden incluir información sobre el proyecto y el equipo, recursos, flujos de trabajo y otros tipos de información, tal como se describe detalladamente en [Mosaicos del proyecto.](#project-tiles)
+Los proyectos le permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de los proyectos. Los tipos de recursos que puede asociar con un proyecto se mencionan en AEM como Mosaicos. Los mosaicos pueden incluir información sobre el proyecto y el equipo, los recursos, los flujos de trabajo y otro tipo de información, tal como se describe detalladamente en [Mosaicos del proyecto.](#project-tiles)
 
 Como usuario, puede:
 
@@ -54,7 +54,7 @@ Puede utilizar el selector de raíl para cambiar entre los modos de la consola.
 
 Solo contenido es el modo predeterminado al abrir la consola. Mostrará todos sus proyectos.
 
-#### Escala de tiempo {#timeline}
+#### Escala de cronología {#timeline}
 
 La vista de línea de tiempo permite seleccionar un proyecto individual y ver la actividad en él. Utilice el selector de raíl o la tecla de acceso directo `alt+1` para cambiar a esta vista.
 
@@ -108,7 +108,7 @@ Haga clic en el botón de elipses en la parte inferior derecha de cualquier mosa
 
 En el mosaico **Recursos**, puede reunir todos los recursos que utilice para un proyecto determinado.
 
-![Icono de recursos](assets/project-tile-assets.png)
+![Mosaico de recursos](assets/project-tile-assets.png)
 
 Los recursos se cargan directamente en el mosaico.
 
@@ -149,7 +149,7 @@ La variable **Información del proyecto** el mosaico proporciona información ge
 
 La variable **Trabajo de traducción** mosaico es donde se inicia una traducción y también donde se ve el estado de las traducciones.
 
-![mosaico de trabajo de traducción](assets/project-tile-translation.png)
+![Mosaico de trabajo de traducción](assets/project-tile-translation.png)
 
 Para configurar la traducción, consulte el documento [Creación de proyectos de traducción.](/help/assets/translation-projects.md)
 
@@ -157,9 +157,9 @@ Para configurar la traducción, consulte el documento [Creación de proyectos de
 
 En este mosaico puede especificar los miembros del equipo del proyecto. Durante la edición puede introducir el nombre del miembro del equipo y asignar la función de usuario.
 
-![Título de equipo](assets/project-tile-team.png)
+![Mosaico de equipo](assets/project-tile-team.png)
 
-Puede añadir y eliminar miembros en el equipo. Además, puede editar la [función de usuario](#userroles) asignada al miembro.
+Puede añadir y eliminar miembros en el equipo. Además, puede editar la [función de usuario](#userroles) asignada al miembro del equipo.
 
 ### Páginas de aterrizaje {#landing-pages}
 
@@ -195,7 +195,7 @@ La variable **Lanzamientos** el mosaico muestra los lanzamientos que se han soli
 
 ### Tareas {#tasks}
 
-En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Las tareas se tratan detalladamente en [Uso de tareas](/help/sites-authoring/task-content.md).
+En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Las tareas se describen detalladamente en [Uso de tareas](/help/sites-authoring/task-content.md).
 
 ![mosaico Tareas](assets/project-tile-tasks.png)
 
@@ -219,10 +219,10 @@ Las diferentes funciones de usuario se definen en la plantilla del proyecto y se
 
 Todos los proyectos admiten las siguientes funciones predeterminadas para que pueda administrar los permisos de seguridad y control.
 
-| Función | Descripción | Permisos | Pertenencia a grupos |
+| Función | Descripción | Permisos | Miembros del grupo |
 |---|---|---|---|
-| Observador | Un usuario con esta función puede ver los detalles de un proyecto, incluido el estado del proyecto. | Permisos de lectura de un proyecto | `workflow-users` grupo |
-| Editor | Un usuario con esta función puede cargar y editar el contenido de un proyecto. | Acceso de lectura y escritura en un proyecto, metadatos asociados y recursos relacionados<br>Privilegios para cargar una lista de tomas, sesión fotográfica y revisar y aprobar recursos<br>Permiso de escritura en `/etc/commerce`<br>Modificar el permiso de un proyecto específico | `workflow-users` grupo |
+| Observador | Un usuario con esta función puede ver los detalles de un proyecto, incluido el estado del proyecto. | Permisos de lectura de un proyecto | grupo `workflow-users` |
+| Editor | Un usuario con esta función puede cargar y editar el contenido de un proyecto. | Acceso de lectura y escritura en un proyecto, metadatos asociados y recursos relacionados<br>Privilegios para cargar una lista de tomas, sesión fotográfica y revisar y aprobar recursos<br>Permiso de escritura en `/etc/commerce`<br>Modificar el permiso de un proyecto específico | grupo `workflow-users` |
 | Propietario | Un usuario con esta función puede crear un proyecto, iniciar el trabajo en un proyecto y mover los recursos aprobados a la carpeta de producción. El propietario también puede ver y realizar todas las demás tareas del proyecto. | Permiso de escritura en `/etc/commerce` | `dam-users` para poder crear un proyecto<br>`project-administrators` para poder crear un proyecto y mover recursos |
 
 Para proyectos creativos, también se proporcionan funciones adicionales como fotógrafos. Puede utilizar estas funciones para derivar funciones personalizadas para un proyecto específico.

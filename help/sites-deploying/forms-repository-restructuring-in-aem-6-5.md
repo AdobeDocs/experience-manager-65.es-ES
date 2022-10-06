@@ -1,26 +1,25 @@
 ---
 title: Reestructuración del repositorio de Forms en AEM 6.5
-seo-title: Reestructuración del repositorio de Forms en AEM 6.5
+seo-title: Forms Repository Restructuring in AEM 6.5
 description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorios en AEM 6.5 para Forms.
-seo-description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorios en AEM 6.5 para Forms.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Forms.
 uuid: e60830d4-23ca-4be9-941a-ee4abe4786a6
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d555422e-dc97-4d45-9525-4299d22315e2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '532'
 ht-degree: 7%
 
 ---
 
-
 # Reestructuración del repositorio de Forms en AEM 6.5{#forms-repository-restructuring-in-aem}
 
-Como se describe en la página principal [Reestructuración del repositorio en AEM 6.5](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a AEM 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de AEM Forms. Algunos cambios requieren un esfuerzo de trabajo durante el proceso de actualización de AEM 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
+Tal como se describe en el elemento principal [Reestructuración de repositorios en AEM 6.5](/help/sites-deploying/repository-restructuring.md) , los clientes que actualicen a AEM 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios en el repositorio que afectan a la solución de AEM Forms. Algunos cambios requieren un esfuerzo de trabajo durante el proceso de actualización de AEM 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
 
 **Con actualización a la versión 6.5**
 
@@ -33,7 +32,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
 * [Configuraciones del Cloud Service de Typekit](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#typekit-cloud-service-configurations)
 * [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
-## Con actualización de 6.5 {#with-upgrade}
+## Con actualización a la versión 6.5 {#with-upgrade}
 
 ### Misc {#misc}
 
@@ -91,14 +90,14 @@ Como se describe en la página principal [Reestructuración del repositorio en A
 | **Directrices de reestructuración** | Nunca se recomendó ni se admitió cambiar estos clientlibs. Si se han realizado modificaciones en estos clientlibs, se deben revertir para utilizar el código proporcionado por el AEM. |
 | **Notas** | N/D |
 
-## Antes de la actualización futura {#prior-to-upgrade}
+## Antes de una actualización futura {#prior-to-upgrade}
 
 ### Configuración del Cloud Service Echosign {#echosign-cloud-service-configuration}
 
 | **Ubicación anterior** | `/etc/cloudservices/echosign` |
 |---|---|
 | **Nuevas ubicaciones** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **Directrices de reestructuración** | La utilidad [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) se activará desde la interfaz de usuario de migración de Forms. |
+| **Directrices de reestructuración** | La variable [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) que se activará desde la interfaz de usuario de migración de Forms. |
 | **Notas** | N/D |
 
 ### Configuraciones del Cloud Service de Recaptcha {#recaptcha-cloud-service-configurations}
@@ -106,7 +105,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
 | **Ubicación anterior** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **Nuevas ubicaciones** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **Directrices de reestructuración** | La utilidad [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) se activará desde la interfaz de usuario de migración de Forms. |
+| **Directrices de reestructuración** | La variable [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) que se activará desde la interfaz de usuario de migración de Forms. |
 | **Notas** | N/D |
 
 ### Configuraciones del Cloud Service de Typekit {#typekit-cloud-service-configurations}
@@ -114,7 +113,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
 | **Ubicación anterior** | `/etc/cloudservices/typekit` |
 |---|---|
 | **Nuevas ubicaciones** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **Directrices de reestructuración** | La utilidad [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) se activará desde la interfaz de usuario de migración de Forms. |
+| **Directrices de reestructuración** | La variable [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) que se activará desde la interfaz de usuario de migración de Forms. |
 | **Notas** | N/D |
 
 ### Misc {#misc-1}
@@ -122,12 +121,11 @@ Como se describe en la página principal [Reestructuración del repositorio en A
 | **Ubicación anterior** | `/etc/cloudservices/fdm` |
 |---|---|
 | **Nuevas ubicaciones** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **Directrices de reestructuración** | La utilidad [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) se activará desde la interfaz de usuario de migración de Forms. |
+| **Directrices de reestructuración** | La variable [Migración de contenido diferido](/help/sites-deploying/lazy-content-migration.md) que se activará desde la interfaz de usuario de migración de Forms. |
 | **Notas** | N/D |
 
 | **Ubicación anterior** | `/etc/designs/fd/fp` |
 |---|---|
 | **Nuevas ubicaciones** | `/libs/fd/fp` |
-| **Directrices de reestructuración** | Cualquier referencia a las plantillas /etc debería actualizarse eventualmente para que apunten a sus contrapartes `/libs`. |
+| **Directrices de reestructuración** | Cualquier referencia a las plantillas /etc debería actualizarse finalmente para que apunten a sus `/libs` homólogos. |
 | **Notas** | N/D |
-

@@ -1,22 +1,21 @@
 ---
 title: Visualización de datos de análisis de la página
-seo-title: Visualización de datos de análisis de la página
+seo-title: Seeing Page Analytics Data
 description: Utilice los datos de análisis de la página para medir la eficacia del contenido de la página.
-seo-description: Utilice los datos de análisis de la página para medir la eficacia del contenido de la página.
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
-translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '628'
 ht-degree: 93%
 
 ---
-
 
 # Visualización de datos de análisis de la página{#seeing-page-analytics-data}
 
@@ -64,7 +63,7 @@ Los miembros del grupo de usuarios de administradores analíticos pueden configu
 >
 >Cuando un árbol de páginas contiene elementos secundarios asociados a distintas configuraciones de la nube de Adobe Analytics, no puede configurar las columnas de datos disponibles para las páginas.
 
-1. En la Vista de Lista, utilice los selectores de vista (derecha de la barra de herramientas), seleccione **Configuración de Vista** y, a continuación, **Añada Datos de análisis personalizados**.
+1. En la vista de lista, utilice los selectores de vista (derecha de la barra de herramientas) y seleccione **Configuración de vista** y luego **Añadir datos de análisis personalizados**.
 
    ![aa-15](assets/aa-15.png)
 
@@ -76,14 +75,14 @@ Los miembros del grupo de usuarios de administradores analíticos pueden configu
 
 ### Abrir la información del contenido desde Sitios {#opening-content-insights-from-sites}
 
-Abra [Content Insight](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
+Apertura [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
 
 1. En la consola de Sitios, seleccione la página en la cual quiera ver la información del contenido.
 1. En la barra de herramientas, haga clic en el icono de análisis y recomendaciones.
 
    ![](do-not-localize/chlimage_1-16a.png)
 
-## Análisis visible desde el editor de páginas (mapa de actividad)  {#analytics-visible-from-the-page-editor-activity-map}
+## Análisis visible desde el editor de páginas (mapa de actividad) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
@@ -159,4 +158,3 @@ El cuadro de diálogo **Configuración del mapa de actividad** proporciona una g
    * Mostrar principales (ganadores o perdedores
    * Excluir inferior %
    * Actualización automática (datos y punto)
-

@@ -1,38 +1,37 @@
 ---
-title: Elementos esenciales de la tabla de clientes
-seo-title: Elementos esenciales de la tabla de clientes
-description: Descripción general de las funciones de la tabla de clasificación
-seo-description: Descripción general de las funciones de la tabla de clasificación
+title: Elementos esenciales del panel de control
+seo-title: Leaderboard Essentials
+description: Información general sobre las características del panel de vanguardia
+seo-description: Leaderboard feature overview
 uuid: 815a6928-b147-496d-9751-13159ad1304d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
-translation-type: tm+mt
-source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+exl-id: fd1b1749-13f9-4079-ae39-348676105852
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '94'
 ht-degree: 6%
 
 ---
 
+# Elementos esenciales del panel de control {#leaderboard-essentials}
 
-# Elementos esenciales de la tabla de clientes {#leaderboard-essentials}
+Esta página proporciona la información esencial para trabajar con la función de panel de control.
 
-Esta página proporciona la información esencial para trabajar con la función de tabla de clasificación.
+Antes de incluir el componente de panel de encabezado en una página, es necesario configurar [Puntuación y distintivos de comunidades](implementing-scoring.md).
 
-Antes de incluir el componente de la tabla de clasificación en una página, es necesario configurar [Puntuación de comunidades y distintivos](implementing-scoring.md).
+Consulte [Aspectos básicos de la puntuación y los distintivos](configure-scoring.md).
 
-Consulte [Esenciales de puntuación y distintivos](configure-scoring.md).
-
-## Esenciales para el cliente {#essentials-for-client-side}
+## Elementos esenciales para el cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/gamificación/componentes/hbs/tabla de clasificación</td>
+   <td>social/gamificación/componentes/hbs/panel de control</td>
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
@@ -52,7 +51,7 @@ Consulte [Esenciales de puntuación y distintivos](configure-scoring.md).
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="enabling-leaderboard.md">Función de tabla de clasificación</a></td>
+   <td>Consulte <a href="enabling-leaderboard.md">Función de portapapeles</a></td>
   </tr>
  </tbody>
 </table>
@@ -61,4 +60,4 @@ Consulte [Esenciales de puntuación y distintivos](configure-scoring.md).
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de comunidad que incluye la [función de tabla de clasificación](functions.md#leaderboard-function), incluye un componente configurado `leaderboard`.
+Una estructura de sitio de la comunidad que incluye el [Función del panel de instrumentos](functions.md#leaderboard-function), incluye un `leaderboard` componente.

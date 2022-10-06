@@ -1,8 +1,8 @@
 ---
 title: Compatibilidad con secuencias de comandos para formularios HTML5
-seo-title: Compatibilidad con secuencias de comandos para formularios HTML5
+seo-title: Scripting support for HTML5 forms
 description: JavaScript, propiedades de FormCalc y otros métodos compatibles con HTML5 Forms.
-seo-description: JavaScript, propiedades de FormCalc y otros métodos compatibles con HTML5 Forms.
+seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
 uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3911'
-ht-degree: 36%
+source-wordcount: '3892'
+ht-degree: 37%
 
 ---
-
 
 # Compatibilidad con secuencias de comandos para formularios HTML5 {#scripting-support-for-html-forms}
 
@@ -37,8 +36,8 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
    <td>Especifica el contenido del campo antes de los cambios determinados por las acciones de un usuario. Este valor se puede recuperar, de forma similar a una función de deshacer.</td>
    <td><p>No funciona para cuadros de lista y desplegables. <code>PrevText </code>no funciona correctamente en los siguientes casos:</p>
     <ul>
-     <li>Al escribir claves de caracteres especiales (por ejemplo $, (,), &amp;, @, etc.) en los campos Numéricos del iPad, y </li>
-     <li>Para el campo Fecha (cuando la fecha se introduce a través del calendario).<br /> </li>
+     <li>Al escribir claves de caracteres especiales (por ejemplo $, (,), &amp;, @, etc.) en los campos Numéricos de iPad, y </li>
+     <li>Para el campo Fecha (cuando la fecha se introduce mediante el calendario).<br /> </li>
     </ul> <p>No se admite la configuración del valor mediante script.</p> </td>
   </tr>
   <tr>
@@ -49,11 +48,11 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td><code>newtext</code></td>
    <td>Especifica el contenido del campo después de los cambios determinados por las acciones de un usuario.</td>
-   <td><p>La propiedad <code>newText</code> no funciona correctamente en los siguientes casos:</p>
+   <td><p>La variable <code>newText</code> no funciona correctamente en los siguientes casos:</p>
     <ul>
      <li>Al seleccionar textos reemplazados</li>
      <li>Al eliminar, copiar y pegar textos.</li>
-     <li>Al escribir claves de caracteres especiales (por ejemplo $, (, ), &amp;, @, etc.) en los campos numéricos<br /> </li>
+     <li>Al escribir claves de caracteres especiales (por ejemplo $, (, ), &amp;, @, etc.) en los campos Numéricos<br /> </li>
      <li>Al utilizar la combinación Mayús+alfanumérica. </li>
      <li>Al utilizar los campos de fecha y hora.</li>
     </ul>
@@ -68,7 +67,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
     <ul>
      <li>Al seleccionar textos reemplazados</li>
      <li>Al eliminar, copiar y pegar textos.</li>
-     <li>Al escribir claves de caracteres especiales (por ejemplo $, (,), &amp;, @, etc.) en los campos numéricos<br /> </li>
+     <li>Al escribir claves de caracteres especiales (por ejemplo $, (,), &amp;, @, etc.) en los campos Numéricos<br /> </li>
      <li>Al utilizar la combinación Mayús+alfanumérica. </li>
      <li>Al utilizar los campos de fecha y hora.</li>
     </ul> <p>No se admite la configuración del valor mediante script.</p> </td>
@@ -76,12 +75,12 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td>keydown</td>
    <td>Determina si un usuario utiliza las teclas de flecha para realizar una selección. Esta propiedad sólo está disponible para cuadros de lista y listas desplegables.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>modifier</td>
    <td>Determina si se mantiene pulsada la tecla modificadora (por ejemplo, Ctrl en Microsoft® Windows®) cuando se ejecuta un suceso concreto.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
  </tbody>
 </table>
@@ -108,17 +107,17 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td><code>numPages</code></td>
    <td>Devuelve el número de páginas del documento.</td>
-   <td>La directiva de paginación de los formularios HTML5 no es idéntica a la directiva de paginación de los PDF forms. Por lo tanto, la API numPages puede devolver valores diferentes en ambos casos.</td>
+   <td>La directiva de paginación de los formularios HTML5 no es idéntica a la directiva de paginación de PDF forms. Por lo tanto, la API numPages puede devolver valores diferentes en ambos casos.</td>
   </tr>
   <tr>
    <td><code>platform</code></td>
    <td>Devuelve una cadena que representa la plataforma del equipo que ejecuta la secuencia de comandos.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>title</code></td>
    <td>Especifica el título del documento. Sólo está disponible para aplicaciones de cliente.</td>
-   <td>Devuelve el título del documento HTML en el formulario, en lugar del título de los metadatos del formulario, como en el caso de los PDF forms.</td>
+   <td>Devuelve el título del documento del HTML en formato , en lugar del título de los metadatos del formulario, como en el caso de los PDF forms.</td>
   </tr>
   <tr>
    <td><code>version</code></td>
@@ -128,17 +127,17 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td><code>calculationsEnabled</code></td>
    <td>Especifica si se ejecutarán las secuencias de comandos de cálculo.<br /> </td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>validationsEnabled</code></td>
    <td>Especifica si se ejecutarán las secuencias de comandos de validación.<br /> </td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>pageUp</code></td>
    <td>Accede a la página anterior.</td>
-   <td>Los formularios HTML5 no siguen la misma política de paginación que el formulario PDF, por lo que la página anterior de un formulario HTML5 es diferente de la página anterior de un formulario PDF.</td>
+   <td>Los formularios de HTML5 no siguen la misma política de paginación que el formulario de PDF, por lo que la página anterior de un formulario de HTML5 es diferente de la página anterior de un formulario de PDF.</td>
   </tr>
   <tr>
    <td><code>pageDown</code></td>
@@ -163,7 +162,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td>currentPage</td>
    <td><p>Establece la página activa de un documento en tiempo de ejecución.</p> <p>Los valores de página empiezan por 0, así la primera página de un documento devuelve un valor de 0.</p> <p>La propiedad currentPage está disponible cuando layout:ready se ejecuta en un cliente. Sin embargo, no está disponible cuando layout:ready se ejecuta en el servidor porque la propiedad no se ejecutará hasta que se ejecute la presentación del formulario.</p> </td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
  </tbody>
 </table>
@@ -180,7 +179,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td><code>presence</code></td>
    <td>Controla la participación del objeto asociado en diferentes fases de procesamiento. Si el objeto es un contenedor, el contenido del contenedor hereda las restricciones que aplique este control.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>access</code></td>
@@ -195,27 +194,27 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td><code>value</code></td>
    <td>Elemento de contenido que incluye una unidad de contenido de datos.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>rawValue</code></td>
    <td>Especifica el valor sin formato de este campo.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>formattedValue</code></td>
    <td>Especifica el valor con formato para este campo.</td>
-   <td>No se admite la configuración <code>formattedValue</code> mediante script.</td>
+   <td>Configuración <code>formattedValue</code> mediante script no es compatible.</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>Especifica el valor de edición de este campo.</td>
-   <td>No se admite la configuración de <code>editValue </code>mediante script.</td>
+   <td>Configuración <code>editValue </code>mediante script no es compatible.</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>Especifica la cadena del mensaje de validación de formato para este campo.</td>
-   <td>No se admite la configuración de <code>formatMessage </code>mediante script.</td>
+   <td>Configuración <code>formatMessage </code>mediante script no es compatible.</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -245,97 +244,97 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td><code>length</code></td>
    <td>El número de elementos de la lista.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>addItem</code></td>
    <td>Agrega nuevos elementos al campo actual.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>clearItem</code></td>
    <td>Quita todos los elementos del campo.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>boundItem</code></td>
    <td>Obtiene el valor de enlace de un elemento concreto de visualización específico de una lista desplegable o cuadro de lista.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>execCalculate</code></td>
    <td>Ejecuta la secuencia de comandos calculate del campo.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>execValidate</code></td>
    <td>Ejecuta la secuencia de comandos validate del campo.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>execEvent</code></td>
    <td>Ejecuta la secuencia de comandos de suceso del objeto.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>getItemState</code></td>
    <td>Devuelve el estado de selección del elemento especificado</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>setItemState</code></td>
    <td>Define el estado de selección del elemento especificado.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>getDisplayItem</code></td>
    <td>Recupera el texto de visualización del elemento para el índice del elemento especificado.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>getSaveItem</code></td>
    <td>Recupera el valor de los datos para el índice del elemento especificado.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>deleteItem</code></td>
    <td>Elimina el elemento del índice especificado.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td><code>setItems</code></td>
    <td>Define los elementos especificados en el campo actual. Sustituye a los elementos preexistentes.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>h</td>
    <td>Una medición del alto para la presentación.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>w</td>
    <td>Medición que especifica el ancho para la presentación.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>x</td>
    <td>Especifica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con posición variable.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>y</td>
    <td>Especifica la coordenada y del punto de ancla de un contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con posición variable.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>caption</td>
    <td>El objeto caption describe una etiqueta descriptiva que se asocia a un objeto del diseño del formulario.<br /> </td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>validate</td>
    <td>El objeto validate controla la validación de los datos proporcionados por el usuario en un formulario. El objeto validate se puede activar varias veces durante el ciclo de vida de un formulario.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>parentSubform</td>
@@ -345,7 +344,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td>selectedIndex</td>
    <td>El índice del primer elemento seleccionado.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
  </tbody>
 </table>
@@ -381,19 +380,19 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
 | `remove` | Quita un nodo de la lista de nodos. |
 | `insert` | Inserta un nodo antes de uno especificado en la lista de nodos. |
 
-## nodo {#node}
+## node {#node}
 
 | Propiedad | Descripción | Excepción |
 |---|---|---|
-| createNode | Crea un nuevo nodo basado en un nombre de clase válido. | Ninguna |
-| `isContainer` | Especifica si este objeto es un objeto contenedor. | Ninguna |
-| `isNull` | Indica si el valor de los datos actuales es un valor nulo. | Ninguna |
-| `resolveNode` | Evalúa la expresión SOM especificada, comenzando por el objeto actual del modelo de objetos de formulario XML, y devuelve el valor del objeto especificado en la expresión SOM. | Ninguna |
-| `resolveNodes` | Evalúa la expresión SOM especificada, comenzando por el objeto actual del modelo de objetos de formulario XML, y devuelve el valor del objeto especificado en la expresión SOM. | Ninguna |
-| oneOfChild | Crea un nuevo nodo basado en un nombre de clase válido. | Ninguna |
-| getElement | Devuelve un objeto secundario especificado. | Ninguna |
-| getAttribute | Obtiene un valor de propiedad especificado. | Ninguna |
-| setAttribute | Define el valor de una propiedad especificada. | Ninguna |
+| createNode | Crea un nuevo nodo basado en un nombre de clase válido. | Ninguno |
+| `isContainer` | Especifica si este objeto es un objeto contenedor. | Ninguno |
+| `isNull` | Indica si el valor de los datos actuales es un valor nulo. | Ninguno |
+| `resolveNode` | Evalúa la expresión SOM especificada, comenzando por el objeto actual del modelo de objetos de formulario XML, y devuelve el valor del objeto especificado en la expresión SOM. | Ninguno |
+| `resolveNodes` | Evalúa la expresión SOM especificada, comenzando por el objeto actual del modelo de objetos de formulario XML, y devuelve el valor del objeto especificado en la expresión SOM. | Ninguno |
+| oneOfChild | Crea un nuevo nodo basado en un nombre de clase válido. | Ninguno |
+| getElement | Devuelve un objeto secundario especificado. | Ninguno |
+| getAttribute | Obtiene un valor de propiedad especificado. | Ninguno |
+| setAttribute | Define el valor de una propiedad especificada. | Ninguno |
 
 ## model {#model}
 
@@ -413,72 +412,72 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td>instanceIndex</td>
    <td>Especifica el índice del objeto, en relación con las demás instancias instanciadas.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>execEvent</td>
    <td>Ejecuta la secuencia de comandos de suceso del objeto.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>getInvalidObjects</td>
    <td>Devuelve una lista de nodos contenidos en el subformulario (incluido) que no han superado la prueba de validación.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>border</td>
    <td>El objeto border describe el borde que rodea a un objeto.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>borderColor</td>
    <td>Especifica el valor de color de borde de este campo. Debe establecer la propiedad border.edge.presence en visible por separado.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>h</td>
    <td>Una medición del alto para la presentación.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>w</td>
    <td>Medición que especifica el ancho para la presentación.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>x</td>
    <td>Especifica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con posición variable.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>y</td>
    <td>Especifica la coordenada y del punto de ancla de un contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con posición variable.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>validate</td>
    <td>El objeto validate controla la validación de los datos proporcionados por el usuario en un formulario. El objeto validate se puede activar varias veces durante el ciclo de vida de un formulario.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>name</td>
    <td>Identificador que se utiliza para identificar este elemento en expresiones de script.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>presence</td>
    <td>Indica la visibilidad de un objeto.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>access</td>
-   <td>Controla el acceso del usuario al contenido de un contenedor. como un subformulario.</td>
-   <td>Ninguna</td>
+   <td>Controla el acceso del usuario al contenido de un contenedor, como un subformulario.</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>execValidate</td>
    <td>Calcula el índice de un subformulario o conjunto de subformularios a partir de su ubicación, en relación con otras instancias del mismo objeto de formulario.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>instanceManager</td>
@@ -494,7 +493,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
 |---|---|
 | target | Dirección URL a la que se envían los datos. La omisión de este atributo implica que la aplicación de procesamiento XFA obtiene el URI mediante una técnica específica del producto, como el acceso a información específica del producto en el objeto de configuración. |
 
-## árbol {#tree}
+## tree {#tree}
 
 <table>
  <tbody>
@@ -509,7 +508,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
    <td>
     <ul>
      <li>No compatible con xfa.nodes, desc</li>
-     <li>El número de nodos registrados para PDF y HTML es diferente. </li>
+     <li>El número de nodos informados para el PDF y el HTML es diferente. </li>
     </ul> </td>
   </tr>
   <tr>
@@ -520,36 +519,36 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td>parent</td>
    <td>Obtiene el elemento principal de este nodo.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>index</td>
    <td>Devuelve la posición de este nodo en su colección de nodos de relación con nombres similares, dentro del ámbito y similares a secundarios.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>somExpression</td>
    <td>Obtiene la expresión SOM para este nodo.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>resolveNode</td>
    <td>Evalúa la expresión SOM especificada, comenzando por el objeto actual del modelo de objetos de formulario XML, y devuelve el valor del objeto especificado en la expresión SOM.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>resolveNodes</td>
    <td>Evalúa la expresión SOM especificada, comenzando por el objeto actual del modelo de objetos de formulario XML, y devuelve el valor del objeto especificado en la expresión SOM.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
  </tbody>
 </table>
 
-## conjunto de subformularios {#subformset}
+## subformulario set {#subformset}
 
 | Propiedad | Descripción | Excepción |
 |---|---|---|
-| instanceManager | El objeto instanceManager administra la creación de instancias, la eliminación y el movimiento de objetos del modelo de formulario. | Ninguna |
+| instanceManager | El objeto instanceManager administra la creación de instancias, la eliminación y el movimiento de objetos del modelo de formulario. | Ninguno |
 
 ## content {#content}
 
@@ -578,7 +577,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
    <td>
     <ul>
      <li>No se puede recuperar el valor predeterminado. </li>
-     <li>Los cambios se reflejan en Modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
+     <li>Los cambios se reflejan en el modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos del HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -599,7 +598,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
    <td>
     <ul>
      <li>No se puede recuperar el valor predeterminado. </li>
-     <li>Los cambios se reflejan en Modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
+     <li>Los cambios se reflejan en el modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos del HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -620,7 +619,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
    <td>
     <ul>
      <li>No se puede recuperar el valor predeterminado. </li>
-     <li>Los cambios se reflejan en Modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
+     <li>Los cambios se reflejan en el modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos del HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -658,7 +657,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
    <td>
     <ul>
      <li>No se puede recuperar el valor predeterminado. </li>
-     <li>Los cambios se reflejan en Modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
+     <li>Los cambios se reflejan en el modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos del HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -679,7 +678,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
    <td>
     <ul>
      <li>No se puede recuperar el valor predeterminado. </li>
-     <li>Los cambios se reflejan en Modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
+     <li>Los cambios se reflejan en el modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos del HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -700,7 +699,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
    <td>
     <ul>
      <li>No se puede recuperar el valor predeterminado. </li>
-     <li>Los cambios se reflejan en el modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
+     <li>Los cambios se reflejan en el modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos del HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -736,7 +735,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
    <td>No se admite la configuración del valor en tiempo de ejecución</td>
   </tr>
   <tr>
-   <td>seleccionado</td>
+   <td>value</td>
    <td>El objeto value incluye una unidad de contenido de datos.<br /> </td>
    <td> </td>
   </tr>
@@ -758,7 +757,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
    <td>
     <ul>
      <li>No se puede recuperar el valor predeterminado. </li>
-     <li>Los cambios se reflejan en el modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
+     <li>Los cambios se reflejan en el modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos del HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -776,7 +775,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td>borde</td>
    <td>El objeto border describe el borde que rodea al objeto checkButton. </td>
-   <td>Los cambios se reflejan en el modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.<br /> </td>
+   <td>Los cambios se reflejan en el modelo y están disponibles para secuencias de comandos, pero no se sincronizan con elementos del HTML. Por lo tanto, los cambios no se reflejan en la interfaz de usuario.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -816,7 +815,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td>contentType</td>
    <td>Especifica el tipo del contenido en el documento al que se hace referencia, expresado como un tipo MIME.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>name<br /> </td>
@@ -826,7 +825,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
  </tbody>
 </table>
 
-## imageEdit  {#imageedit}
+## imageEdit {#imageedit}
 
 | **Propiedad** | **Descripción** | **Excepción** |
 |---|---|---|
@@ -884,7 +883,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td>borde</td>
    <td>El objeto border describe el borde que rodea a un objeto.<br /> </td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
  </tbody>
 </table>
@@ -901,67 +900,67 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td>layout</td>
    <td>Especifica la estrategia de presentación que utilizará el objeto.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>borde</td>
    <td>Especifica el borde que rodea este campo.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
-   <td>obligatorio</td>
+   <td>mandatory</td>
    <td>Especifica el valor nullTest del campo.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>borderColor</td>
    <td>Especifica el valor del color del borde para este campo. Se debe definir un borde antes de poder cambiar el color mediante secuencias de comandos.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>borderWidth</td>
    <td>Especifica el ancho de borde de este campo.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>h</td>
    <td>Una medición del alto para la presentación.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>transient</td>
    <td>Indica si la aplicación de procesamiento debe guardar el valor del grupo de exclusión como parte de un envío de formulario o de una operación de guardado.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>w</td>
    <td>Medición que especifica el ancho para la presentación.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>x</td>
    <td>Especifica la coordenada x del punto de ancla del contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con posición variable.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>y</td>
    <td>Especifica la coordenada y del punto de ancla de un contenedor en relación con la esquina superior izquierda del contenedor principal cuando se coloca con posición variable.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>caption</td>
    <td>El objeto caption describe una etiqueta descriptiva que se asocia a un objeto del diseño del formulario.<br /> </td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>validate</td>
    <td>El objeto validate controla la validación de los datos proporcionados por el usuario en un formulario. El objeto validate se puede activar varias veces durante el ciclo de vida de un formulario.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>dataNode</td>
    <td>Consigue el nodo de datos al que está vinculado un nodo de formularios tras la fusión.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>presence</td>
@@ -970,38 +969,38 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   </tr>
   <tr>
    <td>access</td>
-   <td>Controla el acceso del usuario al contenido de un contenedor. como un subformulario.</td>
+   <td>Controla el acceso del usuario al contenido de un contenedor, como un subformulario.</td>
    <td>Para elementos individuales de la exclusión, siempre devuelve open. </td>
   </tr>
   <tr>
    <td>name</td>
    <td>Especifica un identificador que puede usarse para indicar este objeto o suceso en expresiones de secuencias de comandos.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>miembros</td>
    <td>Especifique los miembros del grupo de exclusión. </td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>selectedMember</td>
    <td>Devuelve el miembro seleccionado de un grupo de exclusión.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>execCalculate</td>
    <td>Ejecuta cualquier secuencia de comandos en el suceso calculate del objeto especificado así como cualquier objeto secundario.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>calculate</td>
    <td>El objeto calculate controla el cálculo del valor de un campo.<br /> </td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
  </tbody>
 </table>
 
-## arco {#arc}
+## arc {#arc}
 
 <table>
  <tbody>
@@ -1018,7 +1017,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
  </tbody>
 </table>
 
-## border {#border}
+## borde {#border}
 
 <table>
  <tbody>
@@ -1092,7 +1091,7 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
   <tr>
    <td>pagecontent</td>
    <td>Recupera tipos de objetos de diseño de formulario en una página especificada del formulario.</td>
-   <td>Ninguna</td>
+   <td>Ninguno</td>
   </tr>
   <tr>
    <td>absPageCount</td>
@@ -1110,15 +1109,15 @@ Las propiedades de JavaScript, FormCalc y los métodos admitidos en los formular
 
 | **Propiedad** | **Descripción** | **Excepción** |
 |---|---|---|
-| presence | Indica la visibilidad de un objeto. | Ninguna |
+| presence | Indica la visibilidad de un objeto. | Ninguno |
 
 ## FormCalc {#formcalc}
 
 FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y lógica centradas en los formularios electrónicos. FormCalculation proporciona un conjunto potente de funciones de compilación.
 
-### Funciones admitidas de FormCalc {#formcalc-supported-functions}
+### Funciones compatibles con FormCalc {#formcalc-supported-functions}
 
-### Compatibilidad con expresiones de FormCalc {#formcalc-expression-support}
+### Compatibilidad con expresiones FormCalc {#formcalc-expression-support}
 
 <table>
  <tbody>
@@ -1183,7 +1182,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
    1. Ceil()
    1. Recuento()
    1. Floor()
-   1. Máximo()
+   1. Max()
    1. Mínimo()
    1. Mod()
    1. Round()
@@ -1197,7 +1196,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
    1. Atan2()
    1. Cos()
    1. Sin()
-   1. Tan()
+   1. Tostado()
    1. Exp()
    1. Registro()
    1. Pow()
@@ -1294,12 +1293,12 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
   <tr>
    <td>app.clearInterval()</td>
    <td>Cancela un intervalo registrado anteriormente establecido inicialmente por el método setInterval .</td>
-   <td>En los formularios HTML5, la API no funciona correctamente.</td>
+   <td>En los formularios de HTML5, la API no funciona correctamente.</td>
   </tr>
   <tr>
    <td>app.clearTimeOut()</td>
    <td>Cancela un intervalo de tiempo de espera registrado previamente. Este intervalo se establece inicialmente mediante setTimeOut.</td>
-   <td>En los formularios HTML5, la API no funciona correctamente.<br /> </td>
+   <td>En los formularios de HTML5, la API no funciona correctamente.<br /> </td>
   </tr>
   <tr>
    <td>app.eval()</td>
@@ -1344,7 +1343,7 @@ FormCalc es un lenguaje específico de XFA para crear raíces de cálculos y ló
 Se admiten los siguientes eventos XFA del lado del cliente:
 
 * Inicializar
-* Validar
+* Validate
 * Calcular
 * Haga clic
 * Entrar
@@ -1354,4 +1353,4 @@ Se admiten los siguientes eventos XFA del lado del cliente:
 
 >[!NOTE]
 >
->Los formularios HTML5 se representan en el lado del cliente (explorador). Se recomienda utilizar secuencias de comandos **validate** y **calculate** del lado del cliente en lugar de secuencias de comandos del lado del servidor.
+>Los formularios HTML5 se representan en el lado del cliente (explorador). Se recomienda utilizar el lado del cliente **validate** y **calculate** secuencias de comandos en lugar de secuencias de comandos del lado del servidor.

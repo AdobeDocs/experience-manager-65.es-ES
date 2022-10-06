@@ -1,8 +1,8 @@
 ---
 title: Configuración de funciones de habilitación
-seo-title: Configuración de funciones de habilitación
+seo-title: Configuring Enablement Features
 description: Configurar las funciones de habilitación en Communities
-seo-description: Configurar las funciones de habilitación en Communities
+seo-description: Configure enablement features in Communities
 uuid: 27be3128-1a7d-412e-99a9-6e3b3b0aec1c
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: b635e2ed-4637-4b2f-a746-ec8dc7541bab
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -40,13 +40,13 @@ Instalación de:
 
 * **FFmpeg**
 
-   FFmpeg es una solución para convertir y transmitir audio y vídeo y, cuando se instala, se utiliza para la transcodificación adecuada de [Video Assets](../../help/sites-authoring/default-components-foundation.md#video). Para las comunidades de habilitación, se utiliza en el entorno de creación para obtener metadatos de los recursos cargados, así como para generar una miniatura que se mostrará al enumerar el recurso.
+   FFmpeg es una solución para convertir y transmitir audio y vídeo y, cuando se instala, se utiliza para una transcodificación adecuada de [Recursos de vídeo](../../help/sites-authoring/default-components-foundation.md#video). Para las comunidades de habilitación, se utiliza en el entorno de creación para obtener metadatos de los recursos cargados, así como para generar una miniatura que se mostrará al enumerar el recurso.
 
 Configuración de:
 
 * **Administradores de la comunidad**
 
-   Para las comunidades de habilitación, solo se puede asignar a los miembros del grupo de usuarios `Community Enablement Managers` la función de `Community Site Enablement Manager`, cuyos permisos pueden incluir la creación de contenido, asignaciones y administración de miembros en el entorno de publicación.
+   Para las comunidades de habilitación, solo los miembros del `Community Enablement Managers` se puede asignar la función de `Community Site Enablement Manager`, cuyos permisos pueden incluir creación de contenido, asignaciones y administración de miembros en el entorno de publicación.
 
 Configuración opcional de:
 
@@ -68,7 +68,7 @@ Cada paso vincula a la documentación que proporciona los detalles necesarios.
 
    Utilizar la consola web (paquetes): *http://localhost:4502/system/console/bundles*
 
-   Instale *antes* de instalar el paquete SCORM
+   Instalar *before* instalación del paquete SCORM
 
 1. **[Instalación del paquete SCORM](deploy-communities.md#scorm-package)**
 
@@ -130,4 +130,4 @@ Cada paso vincula a la documentación que proporciona los detalles necesarios.
 
 ## Dispatcher {#dispatcher}
 
-Cuando la implementación incluye [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), para que las funciones de habilitación funcionen correctamente, es necesario modificar las secciones `clientheader` y `filter`. Consulte [Configuración de Dispatcher para Communities](dispatcher.md#enablement).
+Cuando la implementación incluye [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), para que las funciones de habilitación funcionen correctamente, la variable `clientheader` y `filter` es necesario modificar las secciones. Consulte [Configuración de Dispatcher para Communities](dispatcher.md#enablement).

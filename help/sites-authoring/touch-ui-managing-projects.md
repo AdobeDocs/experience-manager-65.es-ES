@@ -13,7 +13,7 @@ exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 20%
+ht-degree: 23%
 
 ---
 
@@ -39,11 +39,11 @@ La forma más sencilla de hacerlo es dar a la variable **usuarios de proyectos**
 Siga estos pasos para crear un nuevo proyecto.
 
 1. En el **Proyectos** consola, toque o haga clic **Crear** para abrir el **Crear proyecto** asistente.
-1. Seleccione una plantilla y haga clic en **Siguiente**. Puede obtener más información sobre las plantillas de proyecto estándar [aquí.](/help/sites-authoring/projects.md#project-templates)
+1. Seleccione una plantilla y haga clic en **Siguiente**. Puede obtener más información sobre las plantillas de proyecto estándar [aquí.](/help/sites-authoring/projects.md#project-templates)
 
    ![Asistente para crear proyectos](assets/create-project-wizard.png)
 
-1. Defina el **Título** y **Descripción** y agregue un **Miniatura** imagen si es necesario. También puede añadir o eliminar a usuarios y al grupo al que pertenecen.
+1. Defina el **Título** y la **Descripción** y añada una imagen en **miniatura** si es necesario. También puede añadir o eliminar a usuarios y al grupo al que pertenecen.
 
    ![Paso Propiedades del asistente](assets/create-project-wizard-properties.png)
 

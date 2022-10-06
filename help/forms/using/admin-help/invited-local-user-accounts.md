@@ -1,8 +1,8 @@
 ---
 title: Administración de cuentas de usuario invitadas y locales
-seo-title: Administración de cuentas de usuario invitadas y locales
+seo-title: Managing invited and local user accounts
 description: Con la seguridad de los documentos, puede buscar, ver, editar, bloquear, desbloquear y eliminar cuentas de usuario locales e invitadas.
-seo-description: Con la seguridad de los documentos, puede buscar, ver, editar, bloquear, desbloquear y eliminar cuentas de usuario locales e invitadas.
+seo-description: Using document security, you can search for, view, edit, lock, unlock, and delete invited and local user accounts.
 uuid: 0d0c717a-6e6e-4e42-96eb-3a7166e215ab
 contentOwner: admin
 content-type: reference
@@ -10,21 +10,20 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1196'
 ht-degree: 0%
 
 ---
-
 
 # Administración de cuentas de usuario invitadas y locales {#managing-invited-and-local-user-accounts}
 
 Utilice la página Usuarios invitados y locales para administrar los usuarios invitados y locales. Esta página solo se muestra si se cumplen los siguientes requisitos:
 
-* Es un administrador al que se le asigna la función de seguridad del documento Administrar usuarios invitados y locales y la función de usuario de la consola de administración. (Consulte [Creación y configuración de funciones](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)).
-* El registro de usuario invitado está habilitado. (Consulte [Configuración del registro de usuario invitado](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)).
+* Es un administrador al que se le asigna la función de seguridad del documento Administrar usuarios invitados y locales y la función de usuario de la consola de administración. (Consulte [Creación y configuración de funciones](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+* El registro de usuario invitado está habilitado. (Consulte [Configuración del registro de usuario invitado](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 La página Usuarios invitados y locales contiene dos pestañas que puede utilizar para buscar, ver, editar, bloquear, desbloquear y eliminar cuentas de usuario locales e invitadas.
 
@@ -41,7 +40,7 @@ Puede agregar una o más cuentas de usuario invitadas para documentar la segurid
 1. En la consola de administración, haga clic en Servicios > Seguridad de documentos > Usuarios invitados y locales y, a continuación, haga clic en Invitar nuevo usuario.
 1. Escriba las direcciones de correo electrónico de los usuarios que desea invitar. Introduzca varias direcciones en una línea, separadas por una coma.
 
-   El mensaje que creó al habilitar el registro de usuario invitado se envía a los usuarios. (Consulte [Configuración del registro de usuario invitado](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)).
+   El mensaje que creó al habilitar el registro de usuario invitado se envía a los usuarios. (Consulte [Configuración del registro de usuario invitado](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 1. Haga clic en Aceptar.
 
@@ -66,7 +65,7 @@ Cuando se añade un usuario invitado, la seguridad de los documentos envía auto
 
 Puede restablecer las contraseñas de los usuarios invitados activados que se registraron con seguridad de documento pero olvidaron su contraseña. Cuando restablece una contraseña, se genera un correo electrónico que contiene una nueva contraseña temporal para el usuario.
 
-Cuando habilitó el proceso de registro de usuarios invitados, creó un mensaje de correo electrónico que se enviará a los usuarios pidiéndoles que restablezcan sus contraseñas. (Consulte [Configuración del registro de usuario invitado](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)).
+Cuando habilitó el proceso de registro de usuarios invitados, creó un mensaje de correo electrónico que se enviará a los usuarios pidiéndoles que restablezcan sus contraseñas. (Consulte [Configuración del registro de usuario invitado](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 1. En la consola de administración, haga clic en Servicios > Seguridad de documentos > Usuarios invitados y locales y, a continuación, haga clic en la ficha Usuarios locales .
 1. En la lista de usuarios, seleccione el usuario correspondiente.
@@ -103,7 +102,7 @@ Si elimina una cuenta de usuario, solo usted u otro administrador puede restable
 1. En la consola de administración, haga clic en Servicios > Seguridad de documentos > Usuarios invitados y locales y, a continuación, haga clic en la ficha Usuarios invitados .
 1. Seleccione la casilla de verificación situada junto a uno o varios usuarios, haga clic en Eliminar y, a continuación, haga clic en Aceptar.
 
-## Buscar una cuenta de usuario {#search-for-an-invited-user-account} invitada
+## Buscar una cuenta de usuario invitada {#search-for-an-invited-user-account}
 
 Puede buscar cuentas de usuario invitadas mediante una dirección de correo electrónico.
 
@@ -134,4 +133,3 @@ Puede encontrar usuarios más fácilmente ordenando la lista de usuarios por enc
    1. En la consola de administración, haga clic en Servicios > Seguridad de documentos > Usuarios invitados y locales.
    1. Para ordenar los usuarios invitados, haga clic en la ficha Usuarios invitados y haga clic en el encabezado de columna correspondiente.
    1. Para ordenar los usuarios locales, haga clic en la ficha Usuarios locales y luego en el encabezado de columna correspondiente.
-

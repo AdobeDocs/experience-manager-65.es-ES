@@ -1,8 +1,8 @@
 ---
 title: Configuración del entorno de cuenta
-seo-title: Configuración del entorno de cuenta
+seo-title: Configuring your account environment
 description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación.
-seo-description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación.
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment.
 uuid: a4a408f4-e33e-4304-90ab-f564ae772b7d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d6f55d2c-e7a9-4421-918c-6000c6961776
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 77%
+source-wordcount: '224'
+ht-degree: 75%
 
 ---
-
 
 # Configuración del entorno de cuenta{#configuring-your-account-environment}
 
@@ -26,7 +25,7 @@ AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación.
 Al utilizar la [configuración de la cuenta](#account-settings) y las [preferencias de usuario](#user-preferences), se pueden definir las siguientes opciones y preferencias:
 
 * **Barra de herramientas de edición** Seleccione si desea que se muestre la barra de herramientas de edición global. Esta barra de herramientas, que se muestra en la parte superior de la ventana del explorador, le proporciona 
-**Botones Copiar**,  **Cortar**,  **Pegar** y  **** Eliminar para utilizar con los componentes de párrafo de esa página:
+**Copiar**, **Cortar**, **Pegar**, **Eliminar** botones para utilizar con los componentes de párrafo de esa página:
 
    * Mostrar si es necesario (predeterminado)
    * Mostrar siempre
@@ -34,8 +33,8 @@ Al utilizar la [configuración de la cuenta](#account-settings) y las [preferenc
 
 * **Suplantar como** Con la función [Suplantar como](/help/sites-administering/security.md#impersonating-another-user), un usuario puede trabajar en nombre de otro usuario.
 
-* ****
-IdiomaEl idioma que se va a utilizar en la interfaz de usuario del entorno de creación. Seleccione el idioma requerido en la lista disponible.
+* **Idioma**
+El idioma que se utiliza para la IU del entorno de creación. Seleccione el idioma requerido en la lista de idiomas disponibles.
 
 * **Gestión de ventanas** Seleccione una de estas opciones:
 

@@ -1,8 +1,8 @@
 ---
 title: Esenciales del catálogo
-seo-title: Esenciales del catálogo
+seo-title: Catalog Essentials
 description: Información general del catálogo
-seo-description: Información general del catálogo
+seo-description: Catalog overview
 uuid: 788512bb-fa38-48fb-a769-1eaae6bb95a1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 exl-id: 4ca76b50-d56d-4f4d-be92-bf8929c5d754
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '358'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 La función de catálogo, cuando se incluye en un sitio de la comunidad, permite a los miembros de la comunidad examinar y seleccionar los recursos de habilitación enumerados en un catálogo.
 
-El [ `enablement catalog` componente](catalog.md) permite que los miembros de la comunidad accedan a un catálogo de [recursos de habilitación](resources.md). El uso de etiquetas AEM es una parte importante de la gestión del aspecto de los recursos de habilitación en un catálogo.
+La variable [ `enablement catalog` componente](catalog.md) permite a los miembros de la comunidad acceder a un catálogo de [recursos de habilitación](resources.md). El uso de etiquetas AEM es una parte importante de la gestión del aspecto de los recursos de habilitación en un catálogo.
 
 Consulte [Etiquetado de recursos de habilitación](tag-resources.md).
 
@@ -53,7 +53,7 @@ Consulte [Etiquetado de recursos de habilitación](tag-resources.md).
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="catalog.md">Función del catálogo</a></td>
+   <td>Consulte <a href="catalog.md">Función de catálogo</a></td>
   </tr>
  </tbody>
 </table>
@@ -62,44 +62,44 @@ Consulte [Etiquetado de recursos de habilitación](tag-resources.md).
 
 ### Función Catálogo {#catalog-function}
 
-Una estructura de sitio de la comunidad que incluye la [función de catálogo](functions.md#catalog-function), incluye un componente `enablement catalog` configurado.
+Una estructura de sitio de la comunidad que incluye el [Función Catálogo](functions.md#catalog-function), incluye un `enablement catalog` componente.
 
 ### Prefiltros {#pre-filters}
 
 Cuando se añade una función Catálogo a un sitio de comunidad, es posible restringir los recursos de habilitación y las rutas de aprendizaje que aparecen en el catálogo especificando un prefiltro. Esto se hace estableciendo propiedades en la instancia del recurso de catálogo para el sitio.
 
-Con el ejemplo del [Tutorial de habilitación](getting-started-enablement.md):
+Con el ejemplo de [Tutorial de habilitación](getting-started-enablement.md):
 
 * Sobre el autor
-* Uso de [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
+* Uso [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
 
    * Como [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
 
 * Vaya al recurso de catálogo en la página de catálogo
 
-   * Por ejemplo, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`
+   * Por ejemplo, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`. 
 
 * Añadir un nodo de filtros secundarios
 
-   * Seleccione el nodo `catalog`
-   * Seleccione **[!UICONTROL Crear nodo]**
+   * Seleccione el `catalog`node
+   * Select **[!UICONTROL Crear nodo]**
 
       * Nombre: `filters`
       * Tipo: `nt:unstructured`
-      * Seleccione **[!UICONTROL Guardar todo]**
+      * Select **[!UICONTROL Guardar todo]**
 
-* Añadir la propiedad `se_resource-tags` al nodo `filters`
+* Agregar `se_resource-tags` a la `filters` node
 
-   * Seleccione el nodo `filters`
+   * Seleccione el `filters` node
    * Añadir una propiedad Multi
 
       * Nombre: `se_resource-tags`
       * Tipo: Cadena
-      * Valor: *&lt;introduzca un [TagID](#pre-filter-tagids)*
-         * Seleccione **[!UICONTROL Multi]**
-         * Seleccione **[!UICONTROL Add]**
+      * Valor: *&lt;enter a=&quot;&quot; span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />TagID](#pre-filter-tagids)>*[
+         * Select **[!UICONTROL Multi]**
+         * Select **[!UICONTROL Agregar]**
 
-            * En el cuadro de diálogo emergente, seleccione `+` para agregar identificadores de etiqueta prefiltrados adicionales
+            * En el cuadro de diálogo emergente, seleccione `+` para agregar identificadores de etiquetas prefiltrados adicionales
 
 * Volver a publicar el sitio de la comunidad
 
@@ -107,7 +107,7 @@ Con el ejemplo del [Tutorial de habilitación](getting-started-enablement.md):
 
 #### TagID prefiltrados {#pre-filter-tagids}
 
-El filtro previo [TagIDs](../../help/sites-developing/framework.md#tagid) debe coincidir exactamente con las etiquetas aplicadas a los recursos de habilitación. Se pueden ver en la carpeta `resources` del sitio como valores de la propiedad `se_resource-tags`.
+El filtro previo [TagIDs](../../help/sites-developing/framework.md#tagid) debe coincidir exactamente con las etiquetas aplicadas a los recursos de habilitación. Se pueden ver en la sección `resources` carpeta del sitio como valores de la propiedad `se_resource-tags`.
 
 ![configure-filters](assets/configure-catalog1.png)
 

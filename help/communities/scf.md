@@ -1,8 +1,8 @@
 ---
 title: Marco de componentes sociales
-seo-title: Marco de componentes sociales
+seo-title: Social Component Framework
 description: El marco de componentes sociales (SCF) simplifica el proceso de configuración, personalización y ampliación de componentes de Communities
-seo-description: El marco de componentes sociales (SCF) simplifica el proceso de configuración, personalización y ampliación de componentes de Communities
+seo-description: The social component framework (SCF) simplifies the process of configuring, customizing, and extending Communities components
 uuid: 23b4418d-b91c-46fc-bf42-1154ef79fe5a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
 source-git-commit: 1d5cfff10735ea31dc0289b6909851b8717936eb
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1483'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,13 @@ El marco de componentes sociales (SCF) simplifica el proceso de configuración, 
 Ventajas del marco:
 
 * **Funcional**: Facilidad de integración predeterminada con poca o ninguna personalización para el 80 % de los casos de uso.
-* **Skinnable**: Uso coherente de los atributos HTML para el estilo CSS.
+* **Skinnable**: Uso coherente de los atributos de HTML para el estilo CSS.
 * **Extensible**: La implementación de componentes está orientada a objetos y tiene en cuenta la lógica empresarial: es fácil agregar inicio de sesión empresarial incremental en el servidor.
 * **Flexibilidad**: Plantillas javascript simples sin lógica que se superponen y personalizan fácilmente.
 * **Accesible**: La API HTTP admite la publicación desde cualquier cliente, incluidas las aplicaciones móviles.
 * **Portátil**: Integrar/integrar en cualquier página web creada con cualquier tecnología.
 
-Explore en una instancia de autor o publicación mediante la [Guía interactiva de componentes de comunidad](components-guide.md).
+Explorar en un autor o publicar una instancia con la [Guía de componentes de comunidad](components-guide.md).
 
 ## Información general {#overview}
 
@@ -51,18 +51,18 @@ La API SocialComponent se puede ampliar para proporcionar los datos que un clien
 Para personalizar o ampliar los componentes, solo debe escribir las superposiciones y extensiones en el directorio /apps , lo que simplifica el proceso de actualización a futuras versiones.
 
 * Para la despellejamiento:
-   * Solo el [CSS necesita editar](client-customize.md#skinning-css).
+   * Solo el [CSS necesita edición](client-customize.md#skinning-css).
 * Para apariencia:
    * Cambie la plantilla JS y la CSS.
 * Para Look, Feel y UX:
-   * Cambie la plantilla JS, CSS y [amplíe/invalide Javascript](client-customize.md#extending-javascript).
+   * Cambiar la plantilla JS, CSS y [ampliar/anular Javascript](client-customize.md#extending-javascript).
 * Para modificar la información disponible para la plantilla JS o el extremo de la GET:
-   * Amplíe el [SocialComponent](server-customize.md#socialcomponent-interface).
+   * Amplíe el [Componente social](server-customize.md#socialcomponent-interface).
 * Para agregar un procesamiento personalizado durante las operaciones:
-   * Escriba [OperationExtension](server-customize.md#operationextension-class).
+   * Escriba un [Extensión de operación](server-customize.md#operationextension-class).
 * Para agregar una nueva operación personalizada:
    * Cree una nueva [Operación posterior de Sling](server-customize.md#postoperation-class).
-   * Utilice los [OperationServices](server-customize.md#operationservice-class) existentes según sea necesario.
+   * Usar existente [OperationServices](server-customize.md#operationservice-class) según sea necesario.
    * Agregue código Javascript para invocar la operación desde el lado del cliente según sea necesario.
 
 ## Marco del lado del servidor {#server-side-framework}
@@ -73,9 +73,9 @@ El marco de trabajo proporciona API para acceder a la funcionalidad en el servid
 
 Las API de Java proporcionan clases e interfaces abstractas que se heredan o subclasifican fácilmente.
 
-Las clases principales se describen en la página [Personalización del lado del servidor](server-customize.md).
+Las clases principales se describen en la sección [Personalización del lado del servidor](server-customize.md) página.
 
-Visite [Información general del proveedor de recursos de almacenamiento](srp.md) para obtener más información sobre cómo trabajar con UGC.
+Visita [Información general del proveedor de recursos de almacenamiento](srp.md) para aprender a trabajar con UGC.
 
 ### API HTTP {#http-api}
 
@@ -83,13 +83,13 @@ La API HTTP admite la facilidad de personalización y elección de plataformas d
 
 ### API HTTP: solicitudes de GET {#http-api-get-requests}
 
-Para cada SocialComponent, el marco proporciona un extremo de API basado en HTTP. Se accede al extremo enviando una solicitud de GET al recurso con un selector &#39;.social.json&#39; y una extensión. Con Sling, la solicitud se entrega a `DefaultSocialGetServlet`.
+Para cada SocialComponent, el marco proporciona un extremo de API basado en HTTP. Se accede al extremo enviando una solicitud de GET al recurso con un selector &#39;.social.json&#39; y una extensión. Con Sling, la solicitud se envía al `DefaultSocialGetServlet`.
 
 **`DefaultSocialGetServlet`**
 
-1. Pasa el recurso (resourceType) a `SocialComponentFactoryManager` y recibe un SocialComponentFactory capaz de seleccionar un `SocialComponent` que represente el recurso.
+1. Pasa el recurso (resourceType) al `SocialComponentFactoryManager` y recibe un SocialComponentFactory capaz de seleccionar un `SocialComponent` que representa el recurso.
 
-1. Invoca la fábrica y recibe un `SocialComponent` capaz de administrar el recurso y la solicitud.
+1. Invoca la fábrica y recibe un `SocialComponent` capaz de gestionar el recurso y la solicitud.
 1. Invoca el `SocialComponent`, que procesa la solicitud y devuelve una representación JSON de los resultados.
 1. Devuelve la respuesta JSON al cliente.
 
@@ -113,25 +113,25 @@ Hay una operación Sling POST:para cada operación SocialComponent. La lógica e
 
 ### Proveedor de recursos de almacenamiento (SRP) {#storage-resource-provider-srp}
 
-Para obtener más información sobre la administración de UGC almacenado en el [almacén de contenido de la comunidad](working-with-srp.md), consulte:
+Para obtener información sobre la administración de UGC almacenado en la variable [tienda de contenido de la comunidad](working-with-srp.md), consulte:
 
-* [Información general del proveedor de recursos de almacenamiento](srp.md) : información general sobre la introducción y el uso del repositorio.
-* [SRP y UGC Essentials](srp-and-ugc.md) : métodos y ejemplos de utilidad de API SRP.
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación.
+* [Información general del proveedor de recursos de almacenamiento](srp.md) - Introducción y descripción general del uso del repositorio.
+* [Elementos esenciales de SRP y UGC](srp-and-ugc.md) : Métodos y ejemplos de utilidad de API de SRP.
+* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
 
 ### Personalizaciones del lado del servidor {#server-side-customizations}
 
-Visite [Personalizaciones del lado del servidor](server-customize.md) para obtener información sobre cómo personalizar la lógica empresarial y el comportamiento de un componente de Communities en el lado del servidor.
+Visita [Personalizaciones del lado del servidor](server-customize.md) para obtener información sobre la personalización de la lógica empresarial y el comportamiento de un componente de Communities en el servidor.
 
 ## Idioma de plantilla JS de Handlebars {#handlebars-js-templating-language}
 
-Uno de los cambios más notables en el nuevo marco de trabajo es el uso del lenguaje de plantilla `Handlebars JS` (HBS), una tecnología de código abierto popular para el procesamiento servidor-cliente.
+Uno de los cambios más notables en el nuevo marco es el uso del `Handlebars JS` (HBS), una popular tecnología de código abierto para la representación servidor-cliente.
 
 Los scripts HBS son sencillos, sin lógica, se compilan tanto en el servidor como en el cliente, son fáciles de superponer y personalizar y se enlazan naturalmente con el usuario cliente, ya que HBS admite el procesamiento en el lado del cliente.
 
-La estructura proporciona varios [Handlebars helpers](handlebars-helpers.md) que son útiles para el desarrollo de SocialComponents.
+El marco ofrece varias [Manillares de ayuda](handlebars-helpers.md) que son útiles para el desarrollo de componentes sociales.
 
-En el servidor, cuando Sling resuelve una solicitud de GET, identifica la secuencia de comandos que se utilizará para responder a la solicitud. Si la secuencia de comandos es una plantilla HBS (.hbs), Sling delegará la solicitud al motor de controladores. El motor de controladores obtendrá el componente SocialComponent de SocialComponentFactory apropiado, creará un contexto y renderizará el HTML.
+En el servidor, cuando Sling resuelve una solicitud de GET, identifica la secuencia de comandos que se utilizará para responder a la solicitud. Si la secuencia de comandos es una plantilla HBS (.hbs), Sling delegará la solicitud al motor de controladores. El motor de controladores obtendrá el componente SocialComponent de la Fábrica de componentes de Social correspondiente, creará un contexto y renderizará el HTML.
 
 ### Sin restricción de acceso {#no-access-restriction}
 
@@ -143,9 +143,9 @@ El acceso HTTP a archivos .hbs puede no estar prohibido.
 
 ### Agregar o incluir un componente de comunidades {#add-or-include-a-communities-component}
 
-La mayoría de los componentes de Communities deben *añadirse* como recurso direccionable de Sling. Algunos de los componentes de Communities pueden estar *incluidos* en una plantilla como un recurso no existente para permitir la inclusión dinámica y la personalización de la ubicación en la que escribir el contenido generado por el usuario (UGC).
+La mayoría de los componentes de Communities deben *added* como recurso direccionable de Sling. Algunos de los componentes Comunidades pueden ser *included* en una plantilla como recurso no existente para permitir la inclusión dinámica y la personalización de la ubicación en la que escribir contenido generado por el usuario (UGC).
 
-En cualquier caso, las [bibliotecas de cliente necesarias](clientlibs.md) del componente también deben estar presentes.
+En cualquier caso, el [bibliotecas de cliente necesarias](clientlibs.md) también debe estar presente.
 
 **Agregar un componente**
 
@@ -155,7 +155,7 @@ El resultado es un nodo secundario JCR bajo un nodo par, que es direccionable Sl
 
 **Incluir un componente**
 
-Incluir un componente hace referencia al proceso de añadir una referencia a un recurso [&quot;no existente&quot;](srp.md#for-non-existing-resources-ners) (sin nodo JCR) dentro de la plantilla, como el uso de un lenguaje de secuencias de comandos.
+La inclusión de un componente hace referencia al proceso de adición de una referencia a una [recurso &quot;no existente&quot;](srp.md#for-non-existing-resources-ners) (sin nodo JCR) dentro de la plantilla, como el uso de un lenguaje de secuencias de comandos.
 
 A partir de AEM 6.1, cuando un componente se incluye dinámicamente en lugar de añadirse, es posible editar las propiedades del componente en el modo *diseño *.
 
@@ -166,13 +166,13 @@ Solo se pueden incluir dinámicamente algunos de los componentes de AEM Communit
 * [Críticas](reviews-basics.md)
 * [Votación](essentials-voting.md)
 
-La [Community Components Guide](components-guide.md) permite que los componentes incluibles no se agreguen a la inclusión.
+La variable [Guía de componentes de comunidad](components-guide.md) permite que los componentes inclusibles no se agreguen a se incluyan.
 
-**Al utilizar el lenguaje** Handlebarstemplating, el recurso no existente se incluye utilizando el  [asistente ](handlebars-helpers.md#include) include especificando su resourceType:
+**Al utilizar controladores** idioma de plantilla, el recurso no existente se incluye utilizando la variable [incluir ayuda](handlebars-helpers.md#include) especificando su resourceType:
 
 `{{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}`
 
-**Al utilizar JSP**, se incluye un recurso utilizando la etiqueta  [cq:include](../../help/sites-developing/taglib.md#lt-cq-include):
+**Al utilizar JSP**, se incluye un recurso mediante la etiqueta [cq:include](../../help/sites-developing/taglib.md#lt-cq-include):
 
 ```
 <cq:include path="votes"
@@ -191,9 +191,9 @@ Consulte [SCF Handlebars Helpers](handlebars-helpers.md) para obtener una lista 
 
 ### Modelo-Ver Javascript Framework {#model-view-javascript-framework}
 
-El marco de trabajo incluye una extensión de [Backbone.js](https://www.backbonejs.org/), un marco JavaScript de vista de modelo, para facilitar el desarrollo de componentes interactivos y enriquecidos. La naturaleza orientada a objetos admite un marco extensible/reutilizable. La comunicación entre cliente y servidor se simplifica mediante la API HTTP.
+El marco incluye una extensión de [Backbone.js](https://www.backbonejs.org/), un marco JavaScript de vista de modelo, para facilitar el desarrollo de componentes interactivos y enriquecidos. La naturaleza orientada a objetos admite un marco extensible/reutilizable. La comunicación entre cliente y servidor se simplifica mediante la API HTTP.
 
-El marco aprovecha las plantillas de controladores del lado del servidor para representar los componentes del cliente. Los modelos se basan en las respuestas JSON generadas por la API HTTP. Las vistas se vinculan a HTML generado por las plantillas Handlebars y proporcionan interactividad.
+El marco aprovecha las plantillas de controladores del lado del servidor para representar los componentes del cliente. Los modelos se basan en las respuestas JSON generadas por la API HTTP. Las vistas se vinculan al HTML generado por las plantillas Handlebars y proporcionan interactividad.
 
 ### Convenciones CSS {#css-conventions}
 
@@ -208,18 +208,18 @@ Las siguientes son convenciones recomendadas para definir y utilizar clases CSS:
 Para personalizar el aspecto y el comportamiento de un componente de Communities en el lado del cliente, consulte [Personalizaciones del lado del cliente](client-customize.md), que incluye información sobre:
 
 * [Superposiciones](client-customize.md#overlays)
-* [Extensiones](client-customize.md#extensions)
-* [Marcado HTML](client-customize.md#htmlmarkup)
+* [Extensiones ](client-customize.md#extensions)
+* [HTML Markup](client-customize.md#htmlmarkup)
 * [Skin CSS](client-customize.md#skinning-css)
 * [Ampliación de Javascript](client-customize.md#extending-javascript)
 * [Clientlibs para SCF](client-customize.md#clientlibs-for-scf)
 
 ## Elementos esenciales de funciones y componentes {#feature-and-component-essentials}
 
-La información esencial para los desarrolladores se describe en la sección [Feature and Component Essentials](essentials.md) .
+La información esencial para los desarrolladores se describe en la sección [Elementos esenciales de funciones y componentes](essentials.md) para obtener más información.
 
-Encontrará información adicional para desarrolladores en la sección [Directrices de codificación](code-guide.md).
+Puede encontrar información adicional para desarrolladores en el [Directrices de codificación](code-guide.md) para obtener más información.
 
 ## Solución de problemas {#troubleshooting}
 
-Las preocupaciones comunes y los problemas conocidos se describen en la sección [Resolución de problemas](troubleshooting.md).
+Las preocupaciones comunes y los problemas conocidos se describen en la sección [Resolución de problemas](troubleshooting.md) para obtener más información.

@@ -11,10 +11,10 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 2e6d688818e9cc337444bcda2a49485e9167a113
+source-git-commit: 879855af80ffdaa9c5f40e43f8b1543ed9305c13
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '329'
+ht-degree: 2%
 
 ---
 
@@ -47,7 +47,7 @@ Puede realizar una actualización directa desde:
 
 * AEM 6.3 Forms en JEE
 * AEM 6.4 Forms en JEE
-* AEM 6.5.x.x en JEE
+* AEM 6.5.x.x Forms en JEE
 
 También puede realizar una actualización multisalto desde
 
@@ -58,9 +58,9 @@ También puede realizar una actualización multisalto desde
 * AEM 6.1 Forms en JEE
 * AEM 6.2 Forms en JEE
 
-AEM 6.5.12.0 Forms en JEE proporciona dos tipos de instaladores: Instalador completo y instalador de parches.
+AEM 6.5.12.0 Forms en JEE proporciona dos tipos de instaladores: [Instalador completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) y [Instalador de parches](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en).
 
-**Instalador completo**: Puede utilizar el instalador completo para configurar nuevas instancias de AEM Forms o realizar actualizaciones de AEM 6.3 Forms en JEE, AEM 6.4 en JEE y la actualización fuera de lugar de AEM 6.5.x.x en JEE a AEM 6.5.12.0 Forms en JEE.
+**Instalador completo**: Puede utilizar el instalador completo para configurar nuevas instancias de AEM Forms o realizar actualizaciones de AEM 6.3 Forms en JEE, AEM 6.4 en JEE y la actualización fuera de lugar de AEM 6.5.x.x Forms en JEE a AEM 6.5.12.0 Forms en JEE.
 
 **Instalador de parches**: El instalador de parches es para clientes que ya utilizan AEM versiones 6.5.x.x. Puede utilizar el instalador de parches para actualizar a la versión más reciente de AEM Forms.
 

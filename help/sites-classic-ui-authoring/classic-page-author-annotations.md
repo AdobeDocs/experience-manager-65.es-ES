@@ -1,8 +1,8 @@
 ---
 title: Anotaciones al editar una página
-seo-title: Anotaciones al editar una página
+seo-title: Annotations when Editing a Page
 description: La adición de contenido a las páginas de un sitio web suele someterse a análisis antes de publicarse. Para facilitar las cosas, muchos componentes directamente relacionados con el contenido permiten agregar anotaciones.
-seo-description: La adición de contenido a las páginas de un sitio web suele someterse a análisis antes de publicarse. Para facilitar las cosas, muchos componentes directamente relacionados con el contenido permiten agregar anotaciones.
+seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
-translation-type: tm+mt
-source-git-commit: c8a02ad9fc33e963d2c760840e70c40ede988054
+exl-id: d60e9601-d15b-4378-a33e-e90961f63195
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '782'
 ht-degree: 95%
 
 ---
-
 
 # Anotaciones al editar una página{#annotations-when-editing-a-page}
 
@@ -39,7 +38,7 @@ Una anotación coloca un marcador o una nota adhesiva de colores en la página. 
 
 >[!NOTE]
 >
->Según sus necesidades, también puede desarrollar un flujo de trabajo para enviar notificaciones cuando se agregan, actualicen o eliminen anotaciones.
+>Según sus necesidades, también puede desarrollar un flujo de trabajo para enviar notificaciones cuando estas se añadan, actualicen o eliminen.
 
 ## Anotaciones {#annotations}
 
@@ -79,9 +78,7 @@ Los tres iconos situados en la parte izquierda permiten minimizar la anotación 
 >
 >* El icono no se mostrará.
 >* Los bocetos existentes, creados en otro navegador, no aparecerán.
-
 >
-
 
 
 Los bocetos son una función de las anotaciones que permiten crear sencillos gráficos de línea en cualquier lugar de la ventana de navegación (parte visible):
@@ -106,4 +103,3 @@ Los bocetos son una función de las anotaciones que permiten crear sencillos gr�
 
 * Si mueve o copia un párrafo, todas las anotaciones relacionadas y sus bocetos también se moverán o copiarán; su posición en relación con el párrafo seguirá siendo la misma.
 * Si se elimine una anotación, todos los bocetos adjuntos a la anotación también se borrarán.
-

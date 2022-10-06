@@ -1,8 +1,8 @@
 ---
 title: Uso de gráficos en Interactive Communications
-seo-title: Componente gráfico en Interactive Communications
-description: Con los gráficos de una comunicación interactiva, puede condensar grandes cantidades de información en un formato visual fácil de analizar
-seo-description: AEM Forms proporciona un componente de gráfico que puede utilizar para crear gráficos en la comunicación interactiva. Este documento explica las configuraciones básicas y de agente del componente de gráfico.
+seo-title: Chart component in Interactive Communications
+description: Mediante gráficos de una comunicación interactiva, puede condensar grandes cantidades de información en un formato visual fácil de analizar
+seo-description: AEM Forms provides a chart component that you can use to create charts in your Interactive Communication. This document explains basic and agent configurations of the chart component.
 uuid: 978aa431-9a5b-4964-b37c-7bfa8c3f49b9
 content-type: reference
 topic-tags: interactive-communications
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2648'
+source-wordcount: '2613'
 ht-degree: 2%
 
 ---
-
 
 # Uso de gráficos en Interactive Communications{#using-charts-in-interactive-communications}
 
@@ -29,13 +28,13 @@ Mientras crea una comunicación interactiva, puede agregar gráficos para repres
 
 Realice los siguientes pasos para agregar y configurar un gráfico en una comunicación interactiva:
 
-1. Pulse **Componentes** en la barra de tareas de la comunicación interactiva.
-1. Arrastre y suelte el componente **Chart** en uno de los siguientes componentes:
+1. Toque **Componentes** desde la barra de tareas de la comunicación interactiva.
+1. Arrastre y suelte la **Gráfico** a uno de los siguientes componentes:
 
    * Canal de impresión: Área de destino o campo de imagen
    * Canal web: Panel o área de destino
 
-1. Pulse el componente de gráfico en el editor de comunicación interactiva y seleccione **[!UICONTROL Configurar (]** ![configurar_icono](assets/configure_icon.png)) en la barra de herramientas Componente.
+1. Pulse el componente de gráfico en el editor de comunicación interactiva y seleccione **[!UICONTROL Configure (]** ![configure_icon](assets/configure_icon.png)) de la barra de herramientas Componente.
 
    Las Propiedades del gráfico se muestran en el panel izquierdo.
 
@@ -47,16 +46,16 @@ Realice los siguientes pasos para agregar y configurar un gráfico en una comuni
 
    Propiedades básicas de un gráfico de tipo de línea en el canal web
 
-1. Configure las [propiedades del gráfico](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) en función del tipo de canal.
-1. (Solo canal de impresión) En **[!UICONTROL Configuración del agente]**, especifique si es obligatorio que el agente use este gráfico. Si la opción **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** no está seleccionada, el agente puede tocar el icono de ojo del gráfico en la pestaña **[!UICONTROL Content]** de la interfaz de usuario del agente para mostrar u ocultar el gráfico.
+1. Configure las variables [propiedades del gráfico](../../forms/using/chart-component-interactive-communications.md#configure-chart-properties) en función del tipo de canal.
+1. (Solo canal de impresión) En el **[!UICONTROL Configuración del agente]**, especifique si es obligatorio que el agente use este gráfico. Si **[!UICONTROL Es obligatorio que el agente utilice este gráfico]** no está seleccionada, el agente puede tocar el icono de ojo del gráfico en la **[!UICONTROL Contenido]** de la interfaz de usuario del agente para mostrar u ocultar el gráfico.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
 1. Toque ![done_icon](assets/done_icon.png) para guardar las propiedades del gráfico.
 
-   Toque **[!UICONTROL Preview]** para ver el aspecto y los datos asociados con el gráfico. Toque **[!UICONTROL Editar]** para reconfigurar las propiedades del gráfico.
+   Toque **[!UICONTROL Vista previa]** para ver el aspecto y los datos asociados al gráfico. Toque **[!UICONTROL Editar]** para volver a configurar las propiedades del gráfico.
 
-## Configurar las propiedades del gráfico {#configure-chart-properties}
+## Configuración de las propiedades del gráfico {#configure-chart-properties}
 
 Configure las siguientes propiedades al crear gráficos para canales web e impresos:
 
@@ -154,29 +153,29 @@ Configure las siguientes propiedades al crear gráficos para canales web e impre
   </tr>
   <tr>
    <td>Información de objeto</td>
-   <td><p>Formato en el que aparece la información del objeto al pasar el ratón sobre un punto de datos del gráfico en el canal web. El valor predeterminado es ${x}(${y}). Según el tipo de gráfico, cuando señala el ratón sobre un punto, barra o fracción del gráfico, las variables ${x} y ${y} se reemplazan dinámicamente con los valores correspondientes del eje X y del eje Y y se muestran en la información del objeto.</p> <p>Para desactivar la información del objeto, deje el campo <span class="uicontrol">Tooltip</code> en blanco. Esta opción no se aplica a los gráficos de líneas y áreas. Por ejemplo, consulte <a href="#chartoutputprintweb">Ejemplo 1: Salida de gráfico en impresión y Web</a>.</code></p> </td>
+   <td><p>Formato en el que aparece la información del objeto al pasar el ratón sobre un punto de datos del gráfico en el canal web. El valor predeterminado es ${x}(${y}). Según el tipo de gráfico, cuando señala el ratón sobre un punto, barra o fracción del gráfico, las variables ${x} y ${y} se reemplazan dinámicamente con los valores correspondientes del eje X y del eje Y y se muestran en la información del objeto.</p> <p>Para desactivar la información del objeto, deje la variable <span class="uicontrol">Información de objeto</code> campo en blanco. Esta opción no se aplica a los gráficos de líneas y áreas. Por ejemplo, consulte <a href="#chartoutputprintweb">Ejemplo 1: Salida de gráfico en impresión y web</a>.</code></p> </td>
    <td>Web</td>
   </tr>
   <tr>
    <td>Configuraciones específicas de gráficos</td>
    <td><p>Además de las configuraciones comunes, están disponibles las siguientes configuraciones específicas del gráfico:</p>
     <ul>
-     <li><strong>Mostrar leyenda:  </strong>Muestra una leyenda para el gráfico circular o circular cuando está habilitada.</li>
-     <li><strong>Posición de la leyenda:  </strong>Especifica la posición del pie de ilustración con respecto al gráfico. Las opciones disponibles son Derecha, Izquierda, Superior e Inferior. Se recomienda utilizar la leyenda del lado derecho en el canal de impresión.</li>
+     <li><strong>Mostrar leyenda: </strong>Muestra una leyenda para el gráfico circular o circular cuando está habilitada.</li>
+     <li><strong>Posición de la leyenda: </strong>Especifica la posición del pie de ilustración con respecto al gráfico. Las opciones disponibles son Derecha, Izquierda, Superior e Inferior. Se recomienda utilizar la leyenda del lado derecho en el canal de impresión.</li>
      <li><strong>Radio interior</strong>: Disponible para gráficos circulares para especificar el radio (en píxeles) del círculo interior del gráfico.</li>
-     <li><strong>Color</strong> de línea: Disponible para gráficos de líneas, líneas y puntos y áreas para especificar el color de la línea del gráfico.</li>
-     <li><strong>Color</strong> de punto: Disponible para gráficos de puntos y líneas y puntos para especificar el color de los puntos del gráfico.<br /> </li>
-     <li><strong>Color</strong> de área: Disponible para gráficos de área para especificar el color del área bajo la línea del gráfico.</li>
-     <li><strong>Punto de referencia &gt; Tipo de enlace:  </strong>Disponible para gráficos de cuadrantes <strong> </strong>para especificar el tipo de enlace para el punto de referencia. Utilice la propiedad de objeto de texto estático o modelo de datos para definir el valor del punto de referencia.</li>
-     <li><strong>Punto de referencia &gt; Eje X:  </strong>Disponible para gráficos de cuadrante si selecciona  <span class="uicontrol"></code> Estático en la lista desplegable Tipo de enlace para especificar el valor del eje X para el punto de referencia.</code></li>
-     <li><strong>Punto de referencia &gt; Eje Y:  </strong>Disponible para gráficos de cuadrante si selecciona  <span class="uicontrol"></code> Estático en la lista desplegable Tipo de enlace para especificar el valor del eje Y para el punto de referencia.</code></li>
-     <li><strong>Punto de referencia &gt; Objeto de modelo de datos para series:  </strong>Disponible para varios gráficos de cuadrantes de series si selecciona Objeto  <span class="uicontrol">de modelo de </code> datos en la lista desplegable Tipo de enlace . Defina la propiedad del objeto del modelo de datos de formulario para identificar la serie del punto de referencia. </code></li>
-     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para series:  </strong>Disponible para varios gráficos de cuadrantes de series si selecciona Objeto  <span class="uicontrol">de modelo de </code> datos en la lista desplegable Tipo de enlace . Utilice la propiedad del objeto del modelo de datos de formulario para series y el valor definido en este campo para identificar la serie para el punto de referencia.</code></li>
-     <li><strong>Punto de referencia &gt; Objeto de modelo de datos para punto de referencia:  </strong>Disponible para gráficos de cuadrantes si selecciona Objeto  <span class="uicontrol">de modelo de </code> datos en la lista desplegable Tipo de enlace . Defina una propiedad de objeto del modelo de datos de formulario que sea similar a las propiedades trazadas en los ejes X e Y. Además, para varias series, defina una propiedad de objeto del modelo de datos que sea una entidad secundaria de la propiedad de objeto del modelo de datos definida para la serie.</code></li>
-     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para el punto de referencia:  </strong>Disponible para gráficos de cuadrantes si selecciona Objeto  <span class="uicontrol">de modelo de </code> datos en la lista desplegable Tipo de enlace . Utilice la propiedad del objeto del modelo de datos de formulario para el punto de referencia y el valor definido en este campo para identificar el punto de referencia del gráfico.<br /> <strong>Etiquetas de cuadrantes &gt; Superior izquierda: </strong> disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior izquierdo.</code></li>
-     <li><strong>Etiquetas de cuadrantes &gt; Arriba a la derecha: </strong> disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior derecho.</li>
-     <li><strong>Etiquetas de cuadrantes &gt; Abajo a la derecha:  </strong>Disponible para gráficos de cuadrantes para especificar el nombre del cuadrante inferior derecho.</li>
-     <li><strong>Etiquetas de cuadrantes &gt; Abajo a la izquierda:  </strong>Disponible para gráficos de cuadrantes para especificar el nombre del cuadrante inferior izquierdo.</li>
+     <li><strong>Color de línea</strong>: Disponible para gráficos de líneas, líneas y puntos y áreas para especificar el color de la línea del gráfico.</li>
+     <li><strong>Color de punto</strong>: Disponible para gráficos de puntos y líneas y puntos para especificar el color de los puntos del gráfico.<br /> </li>
+     <li><strong>Color de área</strong>: Disponible para gráficos de área para especificar el color del área bajo la línea del gráfico.</li>
+     <li><strong>Punto de referencia &gt; Tipo de enlace: </strong>Disponible para gráficos de cuadrante para<strong> </strong>especifique el tipo de enlace para el punto de referencia. Utilice la propiedad de objeto de texto estático o modelo de datos para definir el valor del punto de referencia.</li>
+     <li><strong>Punto de referencia &gt; Eje X: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Estático</code> en la lista desplegable Tipo de enlace para especificar el valor del eje X para el punto de referencia.</code></li>
+     <li><strong>Punto de referencia &gt; Eje Y: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Estático</code> en la lista desplegable Tipo de enlace para especificar el valor del eje Y para el punto de referencia.</code></li>
+     <li><strong>Punto de referencia &gt; Objeto de modelo de datos para series: </strong>Disponible para varias series Gráficos de cuadrante si selecciona <span class="uicontrol">Objeto de modelo de datos</code> en la lista desplegable Tipo de enlace . Defina la propiedad del objeto del modelo de datos de formulario para identificar la serie del punto de referencia. </code></li>
+     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para series: </strong>Disponible para varias series Gráficos de cuadrante si selecciona <span class="uicontrol">Objeto de modelo de datos</code> en la lista desplegable Tipo de enlace . Utilice la propiedad del objeto del modelo de datos de formulario para series y el valor definido en este campo para identificar la serie para el punto de referencia.</code></li>
+     <li><strong>Punto de referencia &gt; Objeto de modelo de datos para punto de referencia: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Objeto de modelo de datos</code> en la lista desplegable Tipo de enlace . Defina una propiedad de objeto del modelo de datos de formulario que sea similar a las propiedades trazadas en los ejes X e Y. Además, para varias series, defina una propiedad de objeto del modelo de datos que sea una entidad secundaria de la propiedad de objeto del modelo de datos definida para la serie.</code></li>
+     <li><strong>Punto de referencia &gt; Valor del objeto del modelo de datos para el punto de referencia: </strong>Disponible para gráficos de cuadrante si selecciona <span class="uicontrol">Objeto de modelo de datos</code> en la lista desplegable Tipo de enlace . Utilice la propiedad del objeto del modelo de datos de formulario para el punto de referencia y el valor definido en este campo para identificar el punto de referencia del gráfico.<br /> <strong>Etiquetas de cuadrantes &gt; Superior izquierda:</strong> Disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior izquierdo.</code></li>
+     <li><strong>Etiquetas de cuadrantes &gt; Arriba a la derecha:</strong> Disponible para gráficos de cuadrantes para especificar el nombre del cuadrante superior derecho.</li>
+     <li><strong>Etiquetas de cuadrantes &gt; Abajo a la derecha: </strong>Disponible para gráficos de cuadrantes para especificar el nombre del cuadrante inferior derecho.</li>
+     <li><strong>Etiquetas de cuadrantes &gt; Abajo a la izquierda: </strong>Disponible para gráficos de cuadrantes para especificar el nombre del cuadrante inferior izquierdo.</li>
     </ul> </td>
    <td>Imprimir y Web</td>
   </tr>
@@ -189,25 +188,25 @@ Puede configurar un gráfico para que utilice funciones estadísticas a fin de c
 
 ![Funciones en gráficos](assets/functions_charts_new.png)
 
-Aunque el componente Gráfico incluye algunas funciones integradas, puede escribir [funciones personalizadas](#customfunctionsweb) y ponerlas a disposición para su uso en la configuración de gráficos del canal web.
+Aunque el componente Gráfico incluye algunas funciones integradas, puede escribir [funciones personalizadas](#customfunctionsweb) y haga que estén disponibles para su uso en la configuración de gráficos del canal web.
 
 Las siguientes funciones están disponibles de forma predeterminada con el componente Gráfico :
 
-**Media (Average)** Devuelve el promedio de los valores en el eje X o Y para un valor determinado en el otro eje.
+**Media (media)** Devuelve el promedio de los valores del eje X o Y para un valor determinado del otro eje.
 
-**** SumDevuelve la suma de todos los valores del eje X o Y para un valor determinado del otro eje.
+**Sum** Devuelve la suma de todos los valores del eje X o Y para un valor determinado del otro eje.
 
-**** MaximumDevuelve el máximo de los valores en el eje X o Y para un valor determinado en el otro eje.
+**Máximo** Devuelve el máximo de los valores del eje X o Y para un valor determinado del otro eje.
 
-**** FrequencyDevuelve el número de valores en el eje X o Y para un valor determinado en el otro eje.
+**Frecuencia** Devuelve el número de valores en el eje X o Y para un valor determinado del otro eje.
 
-**** RangeDevuelve la diferencia entre el máximo y el mínimo de los valores en el eje X o Y para un valor determinado en el otro eje.
+**Rango** Devuelve la diferencia entre el máximo y el mínimo de los valores del eje X o Y para un valor determinado del otro eje.
 
-**** MedianaDevuelve el valor que separa los valores más altos e inferiores a la mitad en los ejes X o Y para un valor determinado en el otro eje.
+**Mediana** Devuelve el valor que separa los valores más altos e inferiores a la mitad en los ejes X o Y para un valor determinado en el otro eje.
 
-**** MinimumDevuelve el mínimo de los valores del eje X o Y para un valor determinado del otro eje.
+**Mínimo** Devuelve el mínimo de los valores del eje X o Y para un valor determinado del otro eje.
 
-**** ModeDevuelve el valor con la mayoría de las incidencias en el eje X o Y para un valor determinado del otro eje.
+**Modo** Devuelve el valor con la mayoría de las incidencias en el eje X o Y para un valor determinado en el otro eje.
 
 Para obtener más información, consulte [Ejemplo 2: Aplicación de las funciones Suma y Frecuencia en un gráfico de líneas](#applicationsumfrequency).
 
@@ -229,49 +228,49 @@ Multiply(valueArray, category) {
 
 Una vez que haya escrito una función personalizada, haga lo siguiente para que esté disponible para usarla en la configuración del gráfico:
 
-1. Añada la función personalizada en la biblioteca de cliente asociada a la comunicación interactiva correspondiente. Para obtener más información, consulte [Configuración de la acción de envío](/help/forms/using/configuring-submit-actions.md) y [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md).
+1. Añada la función personalizada en la biblioteca de cliente asociada a la comunicación interactiva correspondiente. Para obtener más información, consulte [Configuración de la acción Enviar](/help/forms/using/configuring-submit-actions.md) y [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md).
 
-1. Para mostrar la función personalizada en la lista desplegable Función, en CRXDe Lite, cree un nodo `nt:unstructured` en la carpeta de aplicaciones con las siguientes propiedades:
+1. Para mostrar la función personalizada en la lista desplegable Función, en CRXDe Lite, cree un `nt:unstructured` en la carpeta apps con las siguientes propiedades:
 
-   * Agregue la propiedad `guideComponentType` con el valor `fd/af/reducer`. (obligatorio)
+   * Agregar propiedad `guideComponentType` con valor como `fd/af/reducer`. (mandatory)
 
-   * Agregue la propiedad `value` a un nombre completo de la función personalizada de JavaScript™. (obligatorio) y establezca su valor en el nombre de la función personalizada, como Multiply.
-   * Agregue la propiedad `jcr:description` con el valor que desea mostrar como nombre de la función personalizada que aparece en la lista desplegable Función. Por ejemplo, **Multiply**.
+   * Agregar propiedad `value` a un nombre completo de la función personalizada JavaScript™. (obligatorio) y establezca su valor en el nombre de la función personalizada, como Multiply.
+   * Agregar propiedad `jcr:description` con el valor que desea mostrar como nombre de la función personalizada que aparece en la lista desplegable Función. Por ejemplo, **Multiplicar**.
 
-   * Agregue la propiedad `qtip` con un valor que sea una breve descripción de la función personalizada. Aparece como información de objeto al pasar el puntero sobre el nombre de función en la lista desplegable **Function**.
+   * Agregar propiedad `qtip` con valor que será una breve descripción de la función personalizada. Aparece como información de objeto al pasar el puntero sobre el nombre de función en la variable **Función** lista desplegable.
 
 1. Haga clic en **Guardar todo** para guardar la configuración.
 
 La función ahora está disponible para su uso en el gráfico.
 
-## Ejemplo 1: Salida de gráfico en impresión y Web {#chartoutputprintweb}
+## Ejemplo 1: Salida de gráfico en impresión y web {#chartoutputprintweb}
 
 En la ficha Básico , se define el tipo de gráfico, las propiedades del modelo de datos del formulario de origen que contienen datos, las etiquetas que se van a trazar en el eje X y el eje Y del gráfico y, opcionalmente, la función estadística para calcular los valores para trazar en el gráfico.
 
 Comprendamos en detalle la información mínima requerida en las propiedades básicas, con la ayuda de una declaración de tarjeta generada mediante una comunicación interactiva. Tenga en cuenta que desea generar un gráfico para mostrar la cantidad de gastos diferentes en el estado. Desea utilizar diferentes tipos de gráficos para la impresión y la salida web de la comunicación interactiva.
 
-### Gráfico de columnas para Imprimir {#columnchartprint}
+### Gráfico de columnas para imprimir {#columnchartprint}
 
 Para ello, especifique las siguientes propiedades:
 
-* **[!UICONTROL Nombre]** : especifique el nombre del gráfico.
-* **[!UICONTROL Tipo de gráfico]** : seleccione  **** Columna en la lista desplegable.
-* **[!UICONTROL Título]** : especifique el tipo de gasto para el eje X y la cantidad de transacción para el eje Y.
-* **[!UICONTROL Objetos del modelo de datos]** : seleccione las propiedades del objeto del modelo de datos para crear enlaces de datos para los ejes X (Tipo de gasto) y Y (Cantidad de transacción).
+* **[!UICONTROL Nombre]** - Especifique el nombre del gráfico.
+* **[!UICONTROL Tipo de gráfico]** - Seleccionar **Columna** en la lista desplegable.
+* **[!UICONTROL Título]** - Especifique el tipo de gasto para el eje X y el importe de la transacción para el eje Y.
+* **[!UICONTROL Objetos del modelo de datos]** - Seleccione las propiedades del objeto del modelo de datos para crear enlaces de datos para los ejes X (Tipo de Gasto) y Y (Importe de Transacción).
 
 ![Gráfico de columnas en el canal de impresión de una comunicación interactiva](assets/sample_chart_print_column_new.png)
 
 Gráfico de columnas en el canal de impresión de una comunicación interactiva
 
-### Gráfico de anillo para la web {#donutchartweb}
+### Gráfico circular para la web {#donutchartweb}
 
 Para ello, especifique las siguientes propiedades:
 
-* **[!UICONTROL Nombre]** : especifique el nombre del gráfico.
-* **[!UICONTROL Tipo de gráfico]** : seleccione  **** Donuts en la lista desplegable.
-* **[!UICONTROL Objetos del modelo de datos]** : seleccione las propiedades del objeto del modelo de datos para crear enlaces de datos para los ejes X (Tipo de gasto) y Y (Cantidad de transacción).
-* **[!UICONTROL Radio interior]** : especifique el valor de Radio interior como 150 para especificar el radio (en píxeles) del círculo interior del gráfico.
-* **[!UICONTROL Información del objeto]** : use el formato predeterminado ${x}(${y}) para mostrar la información del objeto. La información del objeto se muestra de la siguiente manera: Tipo de Gasto(Importe de Transacción). Ejemplo: Débito de bitcoin(10000).
+* **[!UICONTROL Nombre]** - Especifique el nombre del gráfico.
+* **[!UICONTROL Tipo de gráfico]** - Seleccionar **[!UICONTROL Anillo]** en la lista desplegable.
+* **[!UICONTROL Objetos del modelo de datos]** - Seleccione las propiedades del objeto del modelo de datos para crear enlaces de datos para los ejes X (Tipo de Gasto) y Y (Importe de Transacción).
+* **[!UICONTROL Radio interior]** - Especifique el valor Radio interior como 150 para especificar el radio (en píxeles) del círculo interior en el gráfico.
+* **[!UICONTROL Información de objeto]** - Utilice el formato predeterminado ${x}(${y}) para mostrar la información del objeto. La información del objeto se muestra de la siguiente manera: Tipo de Gasto(Importe de Transacción). Ejemplo: Débito de bitcoin(10000).
 
 ![Gráfico circular en el canal web de una comunicación interactiva](assets/sample_chart_web_new.png)
 
@@ -299,23 +298,22 @@ La función Frequency devuelve el número de valores del eje Y para un valor det
 
 ![Frecuencia del gráfico de líneas](assets/line_chart_web_functions_frequency_new.png)
 
-## Ejemplo 3: Gráfico de cuadrantes de varias series en Web {#example-multi-series-quadrant-chart-in-web}
+## Ejemplo 3: Gráfico de cuadrantes de varias series en la web {#example-multi-series-quadrant-chart-in-web}
 
 El gráfico representa la cantidad de transacciones realizadas en un intervalo de fechas determinado. El gráfico de cuadrantes permite dividir el área del gráfico en cuatro secciones etiquetadas. El gráfico utiliza un punto de referencia estático para el eje X y el eje Y. Utilice la función de varias series para separar los datos en función del nombre del banco.
 
 Para ello, especifique las siguientes propiedades:
 
-* **Nombre:** especifique el nombre del gráfico.
-* **Tipo de gráfico:** seleccione  **** Cuadrante en la lista desplegable.
+* **Nombre:** Especifique el nombre del gráfico.
+* **Tipo de gráfico:** Select **Cuadrante** en la lista desplegable.
 
-* Seleccione la casilla **Multiple Series**.
-* **Objeto** Modelo de datos: Especifique la propiedad del objeto del modelo de datos para la serie. La propiedad del objeto del modelo de datos para el nombre del banco es una propiedad principal de las propiedades del objeto del modelo de datos trazadas en los ejes X e Y.
-* **Objetos del modelo de datos:** seleccione las propiedades de objeto del modelo de datos para crear enlaces de datos para los ejes X (Fecha de transacción) y Y (Importe de transacción).
-* En la sección **Reference Point**, seleccione **Static** como Tipo de enlace.
+* Seleccione el **Serie múltiple** casilla de verificación.
+* **Objeto de modelo de datos**: Especifique la propiedad del objeto del modelo de datos para la serie. La propiedad del objeto del modelo de datos para el nombre del banco es una propiedad principal de las propiedades del objeto del modelo de datos trazadas en los ejes X e Y.
+* **Objetos del modelo de datos:** Seleccione las propiedades del objeto del modelo de datos para crear enlaces de datos para los ejes X (Fecha de transacción) y Y (Importe de transacción).
+* En el **Punto de referencia** , seleccione **Estático** como tipo de enlace.
 
 * Especifique los valores para los puntos de referencia del eje X y del eje Y.
 * Especifique las etiquetas de cuadrante para los cuadrantes Superior izquierda, Superior derecha, Inferior derecha e Inferior izquierda.
-* Seleccione la casilla **Show legends** para mostrar los códigos de color de los nombres de banco.
+* Seleccione el **Mostrar leyendas** para mostrar los códigos de color de los nombres de banco.
 
 ![Gráficos de cuadrante](assets/charts_quadrant_example_new.png)
-

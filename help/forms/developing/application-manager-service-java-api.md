@@ -1,6 +1,6 @@
 ---
 title: Inicio rápido (SOAP) de Application Manager Service JavaAPI
-seo-title: Inicio rápido (SOAP) de Application Manager Service JavaAPI
+seo-title: Application Manager Service JavaAPI Quick Start(SOAP)
 description: Inicio rápido (SOAP) de Application Manager Service JavaAPI
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1d2d6d64-f16e-4381-8691-f3c2744481ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
 
-
-# Inicio rápido (SOAP) de Application Manager Service JavaAPI {#application-manager-service-javaapi-quick-start-soap}
+# Inicio rápido de la API de Java del servicio de Application Manager (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
 El inicio rápido de la API de Java (SOAP) está disponible para el servicio Administrador de aplicaciones.
 
@@ -38,7 +37,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 ## Inicio rápido (modo SOAP): Implementación de aplicaciones mediante la API de Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
-El siguiente ejemplo de código Java importa una aplicación basada en un archivo LCA existente llamado *EncryptDocument.lca*.
+El siguiente ejemplo de código Java importa una aplicación basada en un archivo LCA existente denominado *EncryptDocument.lca*.
 
 ```java
  /*
@@ -140,7 +139,7 @@ El siguiente ejemplo de código Java importa una aplicación basada en un archiv
 
 ## Inicio rápido (modo SOAP): Eliminación de una aplicación mediante la API de Java {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-El siguiente ejemplo de código Java elimina una aplicación denominada *EncryptDocument*.
+El siguiente ejemplo de código Java elimina una aplicación llamada *EncryptDocument*.
 
 ```java
  /*
@@ -249,4 +248,3 @@ El siguiente ejemplo de código Java elimina una aplicación denominada *Encrypt
  }
  
 ```
-

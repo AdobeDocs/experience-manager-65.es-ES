@@ -1,8 +1,8 @@
 ---
 title: Compatibilidad con cláusula de imagen para formularios HTML5
-seo-title: Compatibilidad con cláusula de imagen para formularios HTML5
-description: Los formularios HTML5 son compatibles con la cláusula de imagen XFA para mostrar valor y valor formateado para símbolos numéricos, de texto y de fecha.
-seo-description: Los formularios HTML5 son compatibles con la cláusula de imagen XFA para mostrar valor y valor formateado para símbolos numéricos, de texto y de fecha.
+seo-title: Picture clause support for HTML5 forms
+description: Los formularios HTML5 admiten la cláusula de imagen XFA para el valor de visualización y el valor formateado para los símbolos numéricos, de texto y de fecha.
+seo-description: HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols.
 uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
 content-type: reference
@@ -10,18 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '612'
 ht-degree: 5%
 
 ---
 
-
 # Compatibilidad con cláusula de imagen para formularios HTML5 {#picture-clause-support-for-html-forms}
 
-Los formularios HTML5 son compatibles con la cláusula de imagen XFA para mostrar valor y valor formateado para símbolos numéricos, de texto y de fecha. Se admiten las expresiones de cláusula de imagen siguientes:
+Los formularios HTML5 admiten la cláusula de imagen XFA para el valor de visualización y el valor formateado para los símbolos numéricos, de texto y de fecha. Se admiten las expresiones de cláusula de imagen siguientes:
 
 * category(locale){picture-subscription} | category(locale){picture-subscription} | category(locale){picture-subscription}
 * category.subcategory{}
@@ -85,7 +84,7 @@ Expresión admitida para la cláusula Date Picture:
   </tr>
   <tr>
    <td>YY</td>
-   <td>año de 2 dígitos, donde 00 = 2000, 29 = 2029, 30 = 1930 y 99 = 1999<br /> </td>
+   <td>Año de 2 dígitos, donde 00 = 2000, 29 = 2029, 30 = 1930 y 99 = 1999<br /> </td>
   </tr>
   <tr>
    <td>YYYY</td>
@@ -96,19 +95,19 @@ Expresión admitida para la cláusula Date Picture:
 
 ## Cláusula de imagen numérica {#numeric-picture-clause}
 
-Los formularios HTML5 admiten símbolos de imagen numérica. Sin embargo, existe una diferencia en la compatibilidad entre los PDF forms y HTML Forms.
+Los formularios HTML5 admiten símbolos de imagen numérica. Sin embargo, existe una diferencia en la compatibilidad entre los PDF forms y el HTML de Forms.
 
-En **PDF forms**, se da formato a un número independientemente del número de símbolos que tenga la cláusula Picture
+En **PDF forms**, se da formato a un número independientemente del número de símbolos de la cláusula Picture que tenga
 
-En **HTML Forms**, un número tiene formato únicamente si el número tiene dígitos inferiores al número de símbolos de la cláusula Picture.
+En **HTML Forms**, un número solo tiene formato si el número tiene dígitos inferiores al número de símbolos de la cláusula Picture.
 
 **Ejemplo**: Considere una cláusula Picture: num{zzz,zzz,zz9}.
 
-El número **10000** tiene el formato **10.000** tanto en HTML como en PDF forms.
+El número **10000** tiene el formato **10 000** tanto en HTML como en PDF forms.
 
-El número 1000000 tiene un formato de 1 000 000 PDF forms. Sin embargo, en HTML Forms el número permanece sin formato como 100000.
+El número 1000000 tiene un formato de 1 000 000 PDF forms. Sin embargo, en Forms de HTML, el número sigue sin tener formato: 100000.
 
-Las expresiones admitidas para la cláusula de Imagen numérica en **HTML Forms** son:
+Expresiones compatibles con la cláusula Imagen numérica de **HTML Forms** son:
 
 * num.integer{}
 * num.decimal{}
@@ -125,22 +124,22 @@ Las expresiones admitidas para la cláusula de Imagen numérica en **HTML Forms*
   </tr>
   <tr>
    <td>9</td>
-   <td><strong>Formato</strong> de salida: un solo dígito. O para el dígito cero si los datos de entrada están vacíos o si hay un espacio en la posición correspondiente.<br /> </td>
+   <td><strong>Formato de salida</strong>: un solo dígito. O para el dígito cero si los datos de entrada están vacíos o si hay un espacio en la posición correspondiente.<br /> </td>
    <td>Dígito sencillo</td>
   </tr>
   <tr>
    <td>Z</td>
-   <td><strong>Formato</strong> de salida: un solo dígito. O para un espacio si los datos de entrada están vacíos, un espacio o el dígito cero en la posición correspondiente.<br /> </td>
+   <td><strong>Formato de salida</strong>: un solo dígito. O para un espacio si los datos de entrada están vacíos, un espacio o el dígito cero en la posición correspondiente.<br /> </td>
    <td>Un solo dígito o espacio</td>
   </tr>
   <tr>
    <td>z</td>
-   <td><strong>Formato</strong> de salida: un solo dígito. O para nada si los datos de entrada están vacíos, un espacio o el dígito cero en la posición correspondiente.<br /> </td>
+   <td><strong>Formato de salida</strong>: un solo dígito. O para nada si los datos de entrada están vacíos, si hay un espacio o si el dígito cero en la posición correspondiente.<br /> </td>
    <td>Un solo dígito o nada</td>
   </tr>
   <tr>
    <td>E</td>
-   <td><strong>Formato</strong> de salida: la parte exponencial de un número de coma flotante que consta del símbolo exponencial (E). Seguido de un signo más o menos opcional. Seguido por el valor exponencial.<br /> </td>
+   <td><strong>Formato de salida</strong>: la parte exponencial de un número de coma flotante que consta del símbolo exponencial (E). Seguido de un signo más o menos opcional. Seguido por el valor exponencial.<br /> </td>
    <td>Igual que para el formato de salida</td>
   </tr>
   <tr>
@@ -150,7 +149,7 @@ Las expresiones admitidas para la cláusula de Imagen numérica en **HTML Forms*
   </tr>
   <tr>
    <td>S o s<br /> </td>
-   <td>Formato de salida: un signo menos si el número es negativo. Espacio restante.<br /> </td>
+   <td>Formato de salida: un signo menos si el número es negativo. Más espacio.<br /> </td>
    <td>Signo menos si el número es negativo. Signo más si el número es positivo</td>
   </tr>
   <tr>
@@ -159,7 +158,7 @@ Las expresiones admitidas para la cláusula de Imagen numérica en **HTML Forms*
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>v</td>
+   <td>Versión </td>
    <td>Base decimal de la configuración regional predominante. Permiso para que la base decimal sea implícita al analizar la entrada y al dar formato de salida.</td>
    <td><br type="_moz" /> </td>
   </tr>

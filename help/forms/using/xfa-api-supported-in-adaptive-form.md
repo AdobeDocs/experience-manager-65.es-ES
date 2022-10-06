@@ -1,22 +1,21 @@
 ---
 title: Compatibilidad con XFA en formularios adaptables basados en XDP
-seo-title: Compatibilidad con XFA en formularios adaptables basados en XDP
+seo-title: XFA support in XDP-based adaptive forms
 description: Las listas admiten eventos XFA, propiedades, secuencias de comandos y validación en formularios adaptables.
-seo-description: Las listas admiten eventos XFA, propiedades, secuencias de comandos y validación en formularios adaptables.
+seo-description: Lists supported XFA events, properties, scripts, and validation in adaptive forms.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 7%
+source-wordcount: '683'
+ht-degree: 34%
 
 ---
-
 
 # Compatibilidad con XFA en formularios adaptables basados en XDP{#xfa-support-in-xdp-based-adaptive-forms}
 
@@ -24,17 +23,17 @@ ht-degree: 7%
 
 Los formularios adaptables son compatibles con varios eventos, propiedades, secuencias de comandos y validaciones XFA definidos en un archivo XDP, incluidos:
 
-* Ejecución de secuencias de comandos definidas en los eventos del archivo XDP.
-* Captura de los valores predeterminados y las propiedades de comportamiento para los campos del archivo XDP.
-* Ejecución de secuencias de comandos de validación definidas en el archivo XDP.
+* ejecución de los scripts definidos en los eventos del archivo XDP;
+* captura de los valores y las propiedades de comportamiento predeterminados para los campos del archivo XDP;
+* ejecución de los scripts de validación definidos en el archivo XDP.
 
-Cuando se crea un formulario adaptable basado en un archivo XDP, las propiedades, los eventos y las validaciones se rellenan automáticamente en la IU de creación de formularios. Sin embargo, los autores de formularios pueden anular algunos de estos elementos para crear una experiencia alternativa.
+Cuando se crea un formulario adaptable basado en un archivo XDP, las propiedades, los eventos y las validaciones se rellenan automáticamente en la IU de creación de formularios. Sin embargo, los autores de formularios pueden invalidar algunos de estos elementos para crear una experiencia alternativa.
 
 Este artículo enumera los eventos XFA admitidos, las propiedades y las validaciones aceptadas en los formularios adaptables y explica cómo sustituirlos en los formularios adaptables.
 
 ## Elementos XFA compatibles y su asignación en formularios adaptables {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
-### Fields {#fields}
+### Campos {#fields}
 
 Cuando se crea un formulario adaptable utilizando un archivo XDP, se puede arrastrar y soltar un campo XFA en el formulario adaptable. La tabla siguiente muestra cómo se asignan los campos XFA a los campos de formulario adaptables.
 
@@ -61,8 +60,8 @@ Cuando se crea un formulario adaptable utilizando un archivo XDP, se puede arras
    <td><p>Selector de fecha</p> </td>
   </tr>
   <tr>
-   <td><p>Scribble de firma</p> </td>
-   <td><p>Firma a mano alzada</p> </td>
+   <td><p>Firma manuscrita</p> </td>
+   <td><p>Firma manuscrita</p> </td>
   </tr>
   <tr>
    <td><p>Campo numérico </p> </td>
@@ -110,7 +109,7 @@ La siguiente tabla captura cómo se comportan los distintos scripts XFA definido
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Propiedades de componentes XFA</strong></p> </td>
+   <td><p><strong>Propiedades de los componentes XFA</strong></p> </td>
    <td><p><strong>Comportamiento correspondiente en formularios adaptables</strong></p> </td>
   </tr>
   <tr>
@@ -119,11 +118,11 @@ La siguiente tabla captura cómo se comportan los distintos scripts XFA definido
   </tr>
   <tr>
    <td><p>presence </p> </td>
-   <td><p>Asignado a la propiedad visible en forma adaptable. Puede anularlo utilizando la expresión Visibilidad .</p> </td>
+   <td><p>Asignado a la propiedad visible en forma adaptable. Puede anularlo utilizando la expresión Visibility.</p> </td>
   </tr>
   <tr>
    <td><p>access </p> </td>
-   <td><p>Asignado a la propiedad enabled en forma adaptable. Puede anularlo utilizando la expresión Access .</p> </td>
+   <td><p>Asignado a la propiedad enabled en forma adaptable. Puede invadirlo utilizando la expresión Access.</p> </td>
   </tr>
   <tr>
    <td><p>Accesibilidad: función </p> </td>
@@ -142,27 +141,27 @@ La siguiente tabla captura cómo se comportan los distintos scripts XFA definido
    <td><p>Asignado a la propiedad short description en forma adaptable.</p> </td>
   </tr>
   <tr>
-   <td><p>caption<em> (todos los tipos de campo)</em></p> </td>
+   <td><p>caption<em> (Todos los tipos de campo)</em></p> </td>
    <td><p>Asignado a la propiedad Título en forma adaptable.</p> </td>
   </tr>
   <tr>
-   <td><p>displayFormat<em> (todos los tipos de campo)</em></p> </td>
+   <td><p>displayFormat<em> (Todos los tipos de campo)</em></p> </td>
    <td><p>Asignado al patrón de visualización en forma adaptable.</p> </td>
   </tr>
   <tr>
-   <td><p>rawValue<em> (todos los tipos de campo)</em></p> </td>
+   <td><p>rawValue<em> (Todos los tipos de campo)</em></p> </td>
    <td><p>Asignado a la propiedad value en el formulario adaptable.</p> </td>
   </tr>
   <tr>
-   <td><p>items<em> (cuadro de lista, casilla de verificación)</em></p> </td>
-   <td><p>Asignado a la propiedad options en forma adaptable. Puede anularlo utilizando la expresión Options .</p> </td>
+   <td><p>items<em> (Cuadro de lista, casilla de verificación)</em></p> </td>
+   <td><p>Asignado a la propiedad options en forma adaptable. Puede anularlo utilizando la expresión Options.</p> </td>
   </tr>
   <tr>
    <td><p>maxChar<em> (Campo de texto)</em></p> </td>
    <td><p>Asignado a la propiedad Maximum character allowed en un formulario adaptable.</p> </td>
   </tr>
   <tr>
-   <td><p>multilínea<em> (campo de texto)</em></p> </td>
+   <td><p>multiline<em> (Campo de texto)</em></p> </td>
    <td><p>Asignado a la propiedad Permitir líneas múltiples en forma adaptable.</p> </td>
   </tr>
   <tr>
@@ -174,13 +173,13 @@ La siguiente tabla captura cómo se comportan los distintos scripts XFA definido
    <td><p>Asignado a la propiedad Dígitos de posible cliente en forma adaptativa.</p> </td>
   </tr>
   <tr>
-   <td><p>multiSelect<em> (cuadro de lista)</em></p> </td>
+   <td><p>multiSelect<em> (Cuadro de lista)</em></p> </td>
    <td><p>Asignado a la propiedad Permite selección múltiple en forma adaptable.</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Secuencias de comandos {#scripts}
+### Scripts {#scripts}
 
 La siguiente tabla captura cómo se comportan los distintos scripts XFA definidos en el archivo XDP en formularios adaptables.
 
@@ -204,14 +203,14 @@ La siguiente tabla captura cómo se comportan los distintos scripts XFA definido
   </tr>
   <tr>
    <td><p>validationState </p> </td>
-   <td><p>Esta secuencia de comandos se ejecuta en tiempo de ejecución y no se puede anular en forma adaptable.<br /> </p> </td>
+   <td><p>Esta secuencia de comandos se ejecuta durante la ejecución y no se puede anular en forma adaptativa.<br /> </p> </td>
   </tr>
   <tr>
    <td><p>exit </p> </td>
    <td><p>Esta secuencia de comandos se ejecuta durante la ejecución y no se puede anular en forma adaptativa.</p> </td>
   </tr>
   <tr>
-   <td><p>click (campos de botón)</p> </td>
+   <td><p>click (Campos de botón)</p> </td>
    <td><p>Asignado a la expresión Click del botón.</p> </td>
   </tr>
   <tr>
@@ -223,7 +222,7 @@ La siguiente tabla captura cómo se comportan los distintos scripts XFA definido
    <td><p>Esta secuencia de comandos se ejecuta durante la ejecución y no se puede anular en forma adaptativa.</p> </td>
   </tr>
   <tr>
-   <td><p>Cambio (campo de anotaciones, botón de opción, casilla de verificación)</p> </td>
+   <td><p>change (Campo de anotaciones, botón de opción, casilla de verificación)</p> </td>
    <td><p>Esta secuencia de comandos se ejecuta durante la ejecución y no se puede anular en forma adaptativa.</p> </td>
   </tr>
  </tbody>
@@ -248,19 +247,19 @@ La siguiente tabla captura cómo se asignan las validaciones XFA a las validacio
    <td><p>validatePictureMessage</p> </td>
   </tr>
   <tr>
-   <td><p>Requerido (nullTest )</p> </td>
-   <td><p>obligatorio </p> </td>
+   <td><p>Obligatorio (nullTest)</p> </td>
+   <td><p>mandatory </p> </td>
   </tr>
   <tr>
    <td><p>Mensaje vacío (nullTestMessage) </p> </td>
    <td><p>mandatoryMessage</p> </td>
   </tr>
   <tr>
-   <td><p>Validar secuencia de comandos (scriptTest)</p> </td>
+   <td><p>Validar script (scriptTest)</p> </td>
    <td><p>validateExp</p> </td>
   </tr>
   <tr>
-   <td><p>Mensaje de la secuencia de comandos de validación (scriptTestMessage)</p> </td>
+   <td><p>Mensaje del script de validación (scriptTestMessage)</p> </td>
    <td><p>validateMessage</p> </td>
   </tr>
  </tbody>
@@ -269,4 +268,3 @@ La siguiente tabla captura cómo se asignan las validaciones XFA a las validacio
 >[!NOTE]
 >
 >No se puede anular la propiedad obligatoria del botón de opción de formulario adaptable y del grupo de casillas de verificación enlazados a los botones de verificación XFA.
-

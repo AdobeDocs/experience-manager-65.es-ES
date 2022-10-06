@@ -2,12 +2,12 @@
 title: Lista de funciones de experiencias fluidas de AEM
 description: Lista de funciones de experiencias fluidas
 index: n
-feature: 'Creación  '
+feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 9%
+source-wordcount: '350'
+ht-degree: 12%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Las experiencias fluidas de Adobe Experience Manager se basan en los poderosos conjuntos de funciones de AEM Sites, AEM Dynamic Media y AEM Assets para proporcionar una solución sólida para la entrega de contenido sin objetivos.
 
-AEM Experiencias fluidas se diferencia de la AEM clásica en que solo se aborda el caso de uso de envío sin encabezado. La creación y el envío de contenido con encabezado y AEM sólida compatibilidad con casos de uso híbrido están disponibles con las soluciones [AEM Sites, Assets y Dynamic Media completas.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Experiencias fluidas se diferencia de la AEM clásica en que solo se aborda el caso de uso de envío sin encabezado. La creación y entrega de contenido con encabezado y AEM gran compatibilidad con los casos de uso híbrido están disponibles con el [soluciones completas de AEM Sites, Assets y Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=es)
 
 En las tablas siguientes se definen las características de AEM Experiencias fluidas y se vincula a la documentación de soporte pertinente.
 
@@ -37,7 +37,7 @@ En las tablas siguientes se definen las características de AEM Experiencias flu
 | [Representaciones de imágenes](/help/assets/image-presets.md) |
 | [Administración de etiquetas y metadatos](/help/assets/metadata.md) |
 | [Buscar](/help/assets/manage-assets.md) |
-| [](/help/assets/manage-assets.md) Colecciones y  [lightbox](/help/assets/light-box.md) |
+| [Colecciones](/help/assets/manage-assets.md) y [lightbox](/help/assets/light-box.md) |
 | [Perfiles](/help/assets/processing-profiles.md) |
 | [Control de versiones](/help/assets/manage-assets.md) |
 | [Detección de duplicados](/help/assets/duplicate-detection.md) |

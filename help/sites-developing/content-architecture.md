@@ -1,32 +1,31 @@
 ---
-title: Arquitectura del contenido
-seo-title: Arquitectura del contenido
+title: Arquitectura de contenido
+seo-title: Content Architecture
 description: 'Sugerencias para diseñar el contenido (sugerencia: todo es contenido)'
-seo-description: 'Sugerencias para diseñar el contenido en Adobe Experience Manager (AEM). (sugerencia: todo es contenido)'
+seo-description: Tips for architecting your content in Adobe Experience Manager (AEM). (hint - everything is content)
 uuid: fef2bf0f-70ec-4621-8479-a62b7e1fbc07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
-
 # Arquitectura de contenido{#content-architecture}
 
-## Siga el modelo de David {#follow-david-s-model}
+## Sigue el modelo de David {#follow-david-s-model}
 
-El Modelo de David fue escrito por David Nuescheler hace años, pero las ideas se hacen realidad hoy en día. Los principios principales del Modelo de David son los siguientes:
+El Modelo de David fue escrito por David Nuescheler hace años, pero las ideas hoy son ciertas. Los principios principales del Modelo de David son los siguientes:
 
-* Los datos son los primeros, estructurarlos más tarde. Tal vez.
-* Impulse la jerarquía de contenido, no permita que esto suceda.
-* Los espacios de trabajo son para `clone()`, `merge()` y `update()`.
+* Los datos van primero, la estructura después. Tal vez.
+* Impulse la jerarquía de contenido, no permita que suceda.
+* Los espacios de trabajo son para `clone()`, `merge()`y `update()`.
 * Cuidado con los hermanos del mismo nombre.
 * Las referencias se consideran perjudiciales.
 * Los archivos son archivos.
@@ -36,35 +35,34 @@ El Modelo de David se puede encontrar en la wiki de Jackrabbit en [https://wiki.
 
 ### Todo es contenido {#everything-is-content}
 
-Todo debe almacenarse en el repositorio en lugar de depender de fuentes de datos de terceros independientes, como las bases de datos. Esto se aplica a contenido creado, datos binarios como imágenes, código, configuraciones, etc. Esto nos permite utilizar un conjunto de API para administrar todo el contenido y administrar la promoción de este contenido mediante la replicación. También obtenemos una única fuente de backup, registro, etc.
+Todo debe almacenarse en el repositorio en lugar de depender de fuentes de datos de terceros independientes, como las bases de datos. Esto se aplica al contenido creado, a los datos binarios como imágenes, código, configuraciones, etc. Esto nos permite utilizar un conjunto de API para administrar todo el contenido y administrar la promoción de este contenido mediante la replicación. También obtenemos una única fuente de backup, registro, etc.
 
 ### Utilice el principio de diseño &quot;modelo de contenido primero&quot; {#use-the-content-model-first-design-principle}
 
-Al crear una nueva función, diseñe primero la estructura de contenido JCR y, a continuación, consulte la lectura y escritura del contenido con los servlets de Sling predeterminados. Esto le permitirá asegurarse de que la implementación funciona bien con los mecanismos de control de acceso predeterminados y evitar la generación de servlets innecesarios al estilo de CRUD.
+Al crear una nueva función, empiece siempre por diseñar primero la estructura de contenido JCR y, a continuación, consulte la lectura y escritura de su contenido utilizando los servlets Sling predeterminados. Esto le permitirá asegurarse de que la implementación funciona bien con los mecanismos de control de acceso predeterminados y le permitirá evitar la generación de servlets de estilo CRUD innecesarios.
 
 ### Be RESTful {#be-restful}
 
-Los servlets deben definirse en función de resourceTypes en lugar de rutas. Esto permite utilizar controles de acceso JCR, cumplir con los principios REST y utilizar la resolución de recursos y recursos que se nos proporcionan en la solicitud. Esto también nos permite cambiar las secuencias de comandos que procesan las direcciones URL en el servidor sin necesidad de cambiar ninguna dirección URL del lado del cliente, al tiempo que se ocultan los detalles de implementación del lado del servidor del cliente para mayor seguridad.
+Los servlets deben definirse en función de resourceTypes en lugar de rutas. Esto permite utilizar los controles de acceso JCR, adherirse a los principios de REST y utilizar la resolución de recursos y recursos que se nos proporcionan en la solicitud. Esto también nos permite cambiar las secuencias de comandos que procesan direcciones URL en el servidor sin necesidad de cambiar ninguna dirección URL del lado del cliente, mientras que oculta los detalles de implementación del lado del servidor del cliente para mayor seguridad.
 
-### Evite definir nuevos tipos de nodos {#avoid-defining-new-node-types}
+### Evitar definir nuevos tipos de nodos {#avoid-defining-new-node-types}
 
-Los tipos de nodo funcionan a un nivel bajo en la capa de infraestructura y la mayoría de los requisitos se pueden cumplir mediante un tipo de nodo sling:resourceType asignado a nt:unstructure, oak:Unstructure, sling:Folder o cq:Page. Los tipos de nodos equivalen al esquema en el repositorio y cambiar los tipos de nodos puede resultar muy caro en el futuro.
+Los tipos de nodos funcionan a un nivel bajo en la capa de infraestructura y la mayoría de los requisitos se pueden cumplir utilizando un tipo de nodo sling:resourceType asignado a un tipo de nodo nt:unstructured, oak:Unstructured, sling:Folder o cq:Page. Los tipos de nodos equivalen a esquema en el repositorio y cambiar los tipos de nodos puede ser muy caro en el futuro.
 
-### Adherirse a las convenciones de nombres en el JCR {#adhere-to-naming-conventions-in-the-jcr}
+### Adherirse a las convenciones de nomenclatura en el JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-El cumplimiento de las convenciones de nombres aumentará la coherencia en la base de código, reduciendo la tasa de incidencia de defectos y aumentando la velocidad de los desarrolladores que trabajan en el sistema. El Adobe utiliza los siguientes convenios para elaborar AEM:
+El cumplimiento de las convenciones de nomenclatura aumentará la coherencia de la base de código, reduciendo la tasa de incidencia de defectos y aumentando la velocidad de los desarrolladores que trabajan en el sistema. El Adobe utiliza las siguientes convenciones para desarrollar AEM:
 
-* Nombres de nodos
+* Nombres de nodo
 
    * Todas las minúsculas
-   * Separación de palabras con guiones
+   * Separación de palabras mediante guiones
 
 * Nombres de propiedades
 
-   * Carcasa de camello, comenzando con una letra minúscula
+   * Maleta de camello, comenzando por una letra en minúscula
 
 * Componentes (JSP/HTML)
 
    * Todas las minúsculas
-   * Separación de palabras con guiones
-
+   * Separación de palabras mediante guiones

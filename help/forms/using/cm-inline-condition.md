@@ -1,8 +1,8 @@
 ---
 title: Condición y repetición en línea en Interactive Communications y letras
-seo-title: Condición y repetición en línea en Interactive Communications y letras
+seo-title: Inline condition and repeat in Interactive Communications and letters
 description: Con las condiciones en línea y repetir en las comunicaciones interactivas y las letras, puede crear comunicaciones que sean muy contextuales y estén bien estructuradas.
-seo-description: Con las condiciones en línea y repetir en las comunicaciones interactivas y las letras, puede crear comunicaciones que sean muy contextuales y estén bien estructuradas.
+seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
 uuid: 32b48a8b-431d-4f9c-9f51-8e7e9ac624a0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,16 +10,15 @@ topic-tags: interactive-communications, correspondence-management
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1664'
 ht-degree: 0%
 
 ---
 
-
-# Condición y repetición en línea en Interactive Communications and letters{#inline-condition-and-repeat-in-interactive-communications-and-letters}
+# Condición y repetición en línea en Interactive Communications y letras{#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
 ## Condiciones en línea {#inline-conditions}
 
@@ -37,11 +36,11 @@ Para obtener más información, consulte:
 
 Para condicionalizar una frase, párrafo o cadena de texto en una comunicación interactiva, puede crear una regla en el fragmento de documento de texto correspondiente. El siguiente ejemplo utiliza una regla para mostrar un número gratuito solo a los destinatarios de EE. UU. de la comunicación interactiva.
 
-Para obtener más información, consulte Crear regla en texto en [Textos en comunicaciones interactivas](../../forms/using/texts-interactive-communications.md).
+Para obtener más información, consulte Crear regla en el texto de [Textos en comunicaciones interactivas](../../forms/using/texts-interactive-communications.md).
 
 Una vez que se incluye el fragmento de texto en una comunicación interactiva y el agente utiliza la interfaz de usuario del agente para preparar una comunicación interactiva, los datos (modelo de datos de formulario) de los destinatarios se evalúan y el texto solo se muestra a los destinatarios en Estados Unidos.
 
-### Ejemplo: Uso de una condición en línea en una carta para representar la dirección adecuada {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
+### Ejemplo: Uso de una condición en línea en una carta para representar la dirección adecuada  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
 Puede insertar una condición en línea en una letra insertando la condición en línea en el módulo de texto correspondiente. El siguiente ejemplo utiliza dos condiciones para evaluar y mostrar la dirección adecuada, Sir o Ma&#39;am, en una carta basada en el elemento DD Gender. Con pasos similares, puede crear otras condiciones.
 
@@ -75,7 +74,7 @@ Puede insertar una condición en línea en una letra insertando la condición en
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
-1. Inserte una condición similar seleccionando el texto `Ma'am`.
+1. Insertar condición similar seleccionando el texto `Ma'am`.
 
    ```javascript
    ${DD_creditcard_Gender == "Female"}
@@ -140,7 +139,7 @@ El siguiente ejemplo le muestra los pasos para utilizar repetir para estructurar
 
    ![screen_shot_2018-03-09at155516copy](assets/screen_shot_2018-03-09at155516copy.png)
 
-### Ejemplo: Utilizar repetir en una carta para dar formato, estructurar y mostrar una lista de transacciones de tarjeta de crédito {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### Ejemplo: Uso de repetir en una carta para dar formato, estructurar y mostrar una lista de transacciones con tarjeta de crédito {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
 En el siguiente ejemplo se proporcionan los pasos para utilizar repetir para estructurar y procesar las transacciones de tarjetas de crédito en una carta. Con pasos similares, puede utilizar repetir en un escenario diferente.
 
@@ -187,7 +186,7 @@ En el siguiente ejemplo se proporcionan los pasos para utilizar repetir para est
 
 1. Seleccione un separador para dar formato al texto dinámico y pulse la marca de verificación para guardar:
 
-   * **Salto** de línea: Inserta un salto de línea después de cada entrada de transacción en la carta de salida.
+   * **Salto de línea**: Inserta un salto de línea después de cada entrada de transacción en la carta de salida.
    * **Texto**: Inserta el carácter de texto especificado después de cada entrada de transacción en la carta de salida.
 
    Una vez insertada la condición, el texto con repetición se resalta en rojo y aparece un controlador a la izquierda. Puede situarse sobre el controlador de la izquierda de la repetición para ver la construcción de repetición.
@@ -213,9 +212,9 @@ En el siguiente ejemplo se proporcionan los pasos para utilizar repetir para est
    >
    >Puede insertar una condición y repetirla solo mientras crea o edita el módulo de texto correspondiente. Al previsualizar la carta, aunque puede realizar modificaciones en el módulo de texto, no puede insertar condición ni repetir.
 
-## Uso de condiciones en línea y repetición - algunos casos de uso {#using-inline-condition-and-repeat-some-use-cases}
+## Uso de condiciones en línea y repetición: algunos casos de uso  {#using-inline-condition-and-repeat-some-use-cases}
 
-### Repetir dentro de la condición {#repeat-within-condition}
+### Repetir dentro de una condición {#repeat-within-condition}
 
 Es posible que deba utilizar repetir dentro de una condición. La gestión de correspondencia le permite utilizar la repetición dentro de una construcción de condiciones en línea.
 

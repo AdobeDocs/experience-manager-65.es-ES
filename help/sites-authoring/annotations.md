@@ -1,22 +1,21 @@
 ---
 title: Anotaciones al editar una página
-seo-title: Anotaciones al editar una página
+seo-title: Annotations when Editing a Page
 description: Muchos componentes directamente relacionados con contenido le permiten añadir una anotación
-seo-description: Muchos componentes directamente relacionados con contenido le permiten añadir una anotación
+seo-description: Many components directly related to content allow you to add an annotation
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '634'
 ht-degree: 98%
 
 ---
-
 
 # Anotaciones al editar una página{#annotations-when-editing-a-page}
 
@@ -54,9 +53,7 @@ Se utiliza un modo [especial](/help/sites-authoring/author-environment-tools.md#
 >
 >* [Anotación de recursos](/help/assets/manage-assets.md#annotating)
 >* [Anotación de recursos de vídeo](/help/assets/managing-video-assets.md#annotate-video-assets)
-
 >
-
 
 
 ### Anotación de un componente {#annotating-a-component}
@@ -103,7 +100,7 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
    ![screen_shot_2018-03-22at110850](assets/screen_shot_2018-03-22at110850.png)
 
-1. Cuando haya terminado de editar una anotación concreta, puede:
+1. Cuando haya terminado de editar una anotación concreta, puede hacer lo siguiente:
 
    * Hacer clic en el marcador de texto, o tocarlo, para abrir la anotación. Una vez abierto, puede ver el texto completo, realizar cambios o eliminar la anotación.
 
@@ -126,4 +123,3 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 Las anotaciones no aparecen en el modo de edición, pero el distintivo de la esquina superior derecha de la barra de herramientas mostrará el número de anotaciones de la página actual. Este distintivo sustituye al icono Anotaciones predeterminado, y además funciona como vínculo rápido que le permite acceder al modo de anotación y salir de él:
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
-

@@ -1,8 +1,8 @@
 ---
 title: Creación de lanzamientos
-seo-title: Creación de lanzamientos
+seo-title: Creating Launches
 description: Cree un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro. Al crear un lanzamiento, especificará un título y la página de origen.
-seo-description: Cree un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro. Al crear un lanzamiento, especificará un título y la página de origen.
+seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: e67608a9-e6c9-42f3-bd1d-63a5fa87ae18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,19 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 8ab21067-c19a-4faa-8bf0-cd9f21f6df70
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 93%
+source-wordcount: '370'
+ht-degree: 92%
 
 ---
-
 
 # Creación de lanzamientos{#creating-launches}
 
 Cree un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro. Al crear un lanzamiento, especificará un título y la página de origen:
 
-* El título aparece en la **barra de tareas**, desde donde los autores pueden acceder a ellos para trabajar en ellos.
+* El título aparece en la sección **Barra de tareas**, desde donde los autores pueden acceder para trabajar en ellos.
 * Las páginas secundarias de la página de origen se incluyen en el lanzamiento de forma predeterminada. Si lo desea, puede utilizar solo una página de origen.
 * De forma predeterminada, [Live Copy](/help/sites-administering/msm.md) actualiza automáticamente las páginas de lanzamiento a medida que cambian las páginas de origen. Puede especificar que se cree una copia estática para evitar cambios automáticos.
 
@@ -33,7 +32,7 @@ De forma opcional, puede especificar la **fecha de lanzamiento** (y hora) para e
 
 En el siguiente procedimiento se crea un lanzamiento.
 
-1. Abra la página Administración del sitio web ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
+1. Abra la página de administración del sitio web ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
 1. Haga clic en **Nuevo…** y luego en **Nuevo Lanzamiento…**.
 1. En el cuadro de diálogo **Crear lanzamiento**, especifique valores para las propiedades siguientes:
 
@@ -43,7 +42,7 @@ En el siguiente procedimiento se crea un lanzamiento.
    * **Mantener sincronizado**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Para ello, el lanzamiento se convierte en una [Live Copy](/help/sites-administering/msm.md).
    * **Fecha del lanzamiento**: la fecha y hora en que la copia de lanzamiento se debe activar (depende del indicador **Producción lista**; consulte [Lanzamientos: orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
-   ![chlimage_1-99](assets/chlimage_1-99a.png)
+   ![imagen_1-99](assets/chlimage_1-99a.png)
 
 1. Haga clic en **Crear**.
 
@@ -59,4 +58,3 @@ También puede eliminar un lanzamiento.
    >[!CAUTION]
    >
    >Al eliminar lanzamientos anidados, debe eliminar primero los niveles inferiores.
-

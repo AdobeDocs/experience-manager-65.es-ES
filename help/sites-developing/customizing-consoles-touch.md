@@ -1,8 +1,8 @@
 ---
 title: Personalización de las consolas
-seo-title: Personalización de las consolas
-description: AEM proporciona varios mecanismos que le permiten personalizar las consolas de la instancia de creación
-seo-description: AEM proporciona varios mecanismos que le permiten personalizar las consolas de la instancia de creación
+seo-title: Customizing the Consoles
+description: AEM proporciona varios mecanismos para permitirle personalizar las consolas de la instancia de creación
+seo-description: AEM provides various mechanisms to enable you to customize the consoles of your authoring instance
 uuid: 8ecce9ff-5907-41e1-af3b-a8646352d633
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,61 +10,54 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '699'
 ht-degree: 1%
 
 ---
-
 
 # Personalización de las consolas {#customizing-the-consoles}
 
 >[!CAUTION]
 >
->En este documento se describe cómo personalizar consolas en la IU táctil moderna y no se aplica a la IU clásica.
+>En este documento se describe cómo personalizar las consolas en la IU moderna y con capacidad táctil, y no se aplica a la IU clásica.
 
-AEM proporciona varios mecanismos para permitirle personalizar las consolas (y la [funcionalidad de creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)) de la instancia de creación.
+AEM proporciona varios mecanismos para permitirle personalizar las consolas (y la variable [funcionalidad de creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)) de la instancia de creación.
 
-* Clientlibs
-Las bibliotecas de clientes permiten ampliar la implementación predeterminada para obtener una nueva funcionalidad, al mismo tiempo que se reutilizan las funciones, los objetos y los métodos estándar. Al personalizar, puede crear su propia clientlib en `/apps.`. Por ejemplo, puede contener el código necesario para el componente personalizado.
+* Clientlibs Clientlibs le permite ampliar la implementación predeterminada para realizar nuevas funciones, mientras reutiliza las funciones, objetos y métodos estándar. Al personalizar, puede crear su propia clientlib en `/apps.` Por ejemplo, puede contener el código necesario para el componente personalizado.
 
-* Superposiciones
-Las superposiciones se basan en definiciones de nodos y permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no se requiere una copia 1:1 del original, ya que la fusión de recursos de sling permite la herencia.
+* Las superposiciones se basan en definiciones de nodos y permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no se requiere una copia 1:1 del original, ya que la fusión de recursos de sling permite la herencia.
 
-Estos pueden utilizarse de muchas maneras para ampliar las consolas de AEM. A continuación se incluye una pequeña selección (de alto nivel).
+Se pueden utilizar de muchas maneras para ampliar las consolas de AEM. A continuación se cubre una pequeña selección (de alto nivel).
 
 >[!NOTE]
 >
->Para obtener más información, consulte:
+>Para obtener más información, consulte lo siguiente:
 >
->* Usar y crear [clientlibs](/help/sites-developing/clientlibs.md).
->* Uso y creación de [superposiciones](/help/sites-developing/overlays.md).
+>* Uso y creación [clientlibs](/help/sites-developing/clientlibs.md).
+>* Uso y creación [superposiciones](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
-
 >
->
-Este tema también se trata en la sesión [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html): [Personalización de la interfaz de usuario para AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+>Este tema también se trata en la sección [AEM](https://docs.adobe.com/content/ddc/en/gems.html) session - [Personalización de la interfaz de usuario para AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >
->Usted ***no debe*** cambiar nada en la ruta `/libs`.
+>You ***must*** no cambie nada en la variable `/libs` ruta.
 >
->Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y bien puede sobrescribirse al aplicar una revisión o un paquete de funciones).
+>Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una corrección o un paquete de funciones).
 >
 >El método recomendado para la configuración y otros cambios es:
 >
 >1. Volver a crear el elemento requerido (es decir, tal como existe en `/libs`) en `/apps`
-   >
-   >
-1. Realice cualquier cambio dentro de `/apps`
+>
+>1. Realice cambios dentro de `/apps`
 
 >
 
 
-
-Por ejemplo, se puede superponer la siguiente ubicación dentro de la estructura `/libs`:
+Por ejemplo, la siguiente ubicación dentro del `/libs` se puede superponer:
 
 * consolas (cualquier consola basada en páginas de la interfaz de usuario de Granite); por ejemplo:
 
@@ -72,13 +65,13 @@ Por ejemplo, se puede superponer la siguiente ubicación dentro de la estructura
 
 >[!NOTE]
 >
->Consulte el artículo de la Base de conocimiento, [Solución de problemas de AEM TouchUI](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obtener más sugerencias y herramientas.
+>Consulte el artículo de la Base de conocimiento , [Solución de problemas AEM la interfaz de usuario táctil](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obtener más sugerencias y herramientas.
 
-## Personalización de la Vista predeterminada para una consola {#customizing-the-default-view-for-a-console}
+## Personalización de la vista predeterminada de una consola {#customizing-the-default-view-for-a-console}
 
 Puede personalizar la vista predeterminada (columna, tarjeta, lista) para una consola:
 
-1. Puede reordenar las vistas superponiendo la entrada requerida desde:
+1. Puede cambiar el orden de las vistas superponiendo la entrada requerida desde:
 
    `/libs/wcm/core/content/sites/jcr:content/views`
 
@@ -90,7 +83,7 @@ Puede personalizar la vista predeterminada (columna, tarjeta, lista) para una co
    * `card`
    * `list`
 
-1. Por ejemplo, en una superposición para lista:
+1. Por ejemplo, en una superposición de lista:
 
    `/apps/wcm/core/content/sites/jcr:content/views/list`
 
@@ -98,11 +91,11 @@ Puede personalizar la vista predeterminada (columna, tarjeta, lista) para una co
 
    * **Nombre**: `sling:orderBefore`
    * **Tipo**: `String`
-   * **Valor**:  `column`
+   * **Valor**: `column`
 
-### Añadir nueva acción en la barra de herramientas {#add-new-action-to-the-toolbar}
+### Añadir nueva acción a la barra de herramientas {#add-new-action-to-the-toolbar}
 
-1. Puede crear sus propios componentes e incluir las bibliotecas de cliente correspondientes para acciones personalizadas. Por ejemplo, una acción **Promocionar a Twitter** en:
+1. Puede crear sus propios componentes e incluir las bibliotecas de cliente correspondientes para las acciones personalizadas. Por ejemplo, una **Promocionar a Twitter** en:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -116,13 +109,13 @@ Puede personalizar la vista predeterminada (columna, tarjeta, lista) para una co
 
 ### Restringir una acción de barra de herramientas a un grupo específico {#restrict-a-toolbar-action-to-a-specific-group}
 
-1. Puede utilizar una condición de procesamiento personalizada para superponer la acción estándar e imponer condiciones específicas que deben cumplirse antes de procesarse.
+1. Puede utilizar una condición de renderización personalizada para superponer la acción estándar e imponer condiciones específicas que deben cumplirse antes de procesarse.
 
    Por ejemplo, cree un componente para controlar las condiciones de procesamiento según el grupo:
 
    `/apps/myapp/components/renderconditions/group`
 
-1. Para aplicarlas a la acción Crear sitio en la consola Sitios:
+1. Para aplicarlos a la acción Crear sitio en la consola Sitios :
 
    `/libs/wcm/core/content/sites`
 
@@ -130,42 +123,42 @@ Puede personalizar la vista predeterminada (columna, tarjeta, lista) para una co
 
    `/apps/wcm/core/content/sites`
 
-1. A continuación, agregue la condición de procesamiento para la acción:
+1. A continuación, añada la condición de renderización para la acción :
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Mediante las propiedades de este nodo puede definir el `groups` permitido para realizar la acción específica; por ejemplo, `administrators`
+   Con las propiedades de este nodo, puede definir la variable `groups` se permite realizar la acción específica; por ejemplo, `administrators`
 
-### Personalización de columnas en la Vista de Lista {#customizing-columns-in-the-list-view}
+### Personalización de columnas en la vista de lista {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
->Esta función está optimizada para columnas de campos de texto; para otros tipos de datos, es posible superponer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` en `/apps`.
+>Esta función está optimizada para columnas de campos de texto; para otros tipos de datos es posible superponer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` en `/apps`.
 
-Para personalizar las columnas de la vista de lista:
+Para personalizar las columnas en la vista de lista:
 
-1. Superponga la lista de las columnas disponibles.
+1. Superponga la lista de columnas disponibles.
 
-   * En el nodo:
+   * En el nodo :
 
       ```
              /apps/wcm/core/content/common/availablecolumns
       ```
 
-   * Añada las nuevas columnas o elimine las existentes.
-   Consulte [Uso de Overlays (y la fusión de recursos de Sling)](/help/sites-developing/overlays.md) para obtener más información.
+   * Añada las columnas nuevas o elimine las existentes.
+   Consulte [Uso de superposiciones (y la fusión de recursos de Sling)](/help/sites-developing/overlays.md) para obtener más información.
 
 1. De forma opcional:
 
-   * Si desea conectar datos adicionales, debe escribir un [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
+   * Si desea conectar datos adicionales, debe escribir una [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
       `pageInfoProviderType` propiedad.
 
-   Por ejemplo, consulte la clase o paquete adjunto (de GitHub) a continuación.
+   Por ejemplo, consulte la clase/paquete adjunto (de GitHub) a continuación.
 
 1. Ahora puede seleccionar la columna en el configurador de columnas de la vista de lista.
 
 ### Filtrado de recursos {#filtering-resources}
 
-Cuando se utiliza una consola, un caso de uso común es cuando el usuario debe seleccionar entre los recursos (p. ej. páginas, componentes, recursos, etc.). Esto puede adoptar la forma de una lista, por ejemplo, desde la cual el autor debe elegir un elemento.
+Cuando se utiliza una consola, un caso de uso común es cuando el usuario debe seleccionar entre recursos (p. ej. páginas, componentes, recursos, etc.). Esto puede tomar la forma de una lista, por ejemplo, desde la cual el autor debe elegir un elemento.
 
-Para mantener la lista a un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Consulte [este artículo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) para obtener más información.
+Para mantener la lista en un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Consulte [este artículo](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) para obtener más información.

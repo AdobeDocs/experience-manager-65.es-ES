@@ -1,14 +1,13 @@
 ---
 title: Trabajos asincrónicos
 description: Adobe Experience Manager optimiza el rendimiento completando de manera asincrónica algunas tareas que requieren muchos recursos.
-translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 98%
 
 ---
-
 
 # Operaciones asincrónicas {#asynchronous-operations}
 
@@ -145,8 +144,8 @@ Si el número de referencias a las páginas que se van a mover supera el número
 >
 >* [Crear y organizar páginas](/help/sites-authoring/managing-pages.md)
 >* [Creación y sincronización de Live Copies](/help/sites-administering/msm-livecopy.md)
->* [Configure el correo electrónico en el Experience Manager](/help/sites-administering/notification.md).
->* [Importar metadatos](/help/assets/metadata.md#import-metadata) de recursos.
->* [Exportar metadatos](/help/assets/metadata.md#export-metadata) de recursos.
+>* [Configuración del correo electrónico en el Experience Manager](/help/sites-administering/notification.md).
+>* [Importación de metadatos de recursos](/help/assets/metadata.md#import-metadata).
+>* [Exportar metadatos de recursos](/help/assets/metadata.md#export-metadata).
 >* [Utilice Recursos conectados para compartir recursos DAM desde implementaciones remotas](/help/assets/use-assets-across-connected-assets-instances.md).
 

@@ -16,7 +16,7 @@ exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1743'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -89,8 +89,8 @@ Cuando ejecuta la Utilidad de migración por primera vez, se crea un registro co
    El explorador muestra cuatro opciones:
 
    * Migración de recursos de AEM Forms
-   * Migración de componentes personalizados de Forms adaptable
-   * Migración de plantillas adaptables de Forms
+   * Migración de componentes personalizados de formularios adaptables
+   * Migración de plantillas de formularios adaptables
    * Migración de configuraciones en la nube de AEM Forms
 
 1. Para realizar la migración, haga lo siguiente:
@@ -99,7 +99,7 @@ Cuando ejecuta la Utilidad de migración por primera vez, se crea un registro co
 
       * Formularios adaptables
       * Fragmentos de documento
-      * Temas
+      * Temáticas
       * Cartas
       * Diccionarios de datos
 
@@ -179,7 +179,7 @@ Después de ejecutar la utilidad de migración, debe encargarse de las siguiente
 1. Compruebe que la versión XFA de diseños y diseños de fragmento sea 3.3 o posterior. Si utiliza diseños y diseños de fragmento de una versión anterior, podría haber problemas al procesar la carta. Para actualizar la versión de un XFA anterior a la versión más reciente, complete los siguientes pasos:
 
    1. [Descargar el XFA como archivo zip](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) desde la interfaz de usuario de Forms.
-   1. Extraiga el archivo .
+   1. Extraiga el archivo.
    1. Abra el archivo XFA en el último Designer y guárdelo. La versión del XFA se actualiza a la más reciente.
    1. Cargue el XFA en la interfaz de usuario de Forms.
 

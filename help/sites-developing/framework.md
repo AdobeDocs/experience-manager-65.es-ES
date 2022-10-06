@@ -1,5 +1,5 @@
 ---
-title: Marco de etiquetado de AEM
+title: Marco de trabajo de etiquetado de AEM
 seo-title: AEM Tagging Framework
 description: Etiquetar contenido y aprovechar la infraestructura de etiquetado de AEM
 seo-description: Tag content and leverage the AEM Tagging infrastructure
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ---
 
-# Marco de etiquetado de AEM {#aem-tagging-framework}
+# Marco de trabajo de etiquetado de AEM {#aem-tagging-framework}
 
 Para etiquetar contenido y aprovechar la infraestructura AEM Tagging :
 
@@ -183,7 +183,6 @@ La variable `cq:OwnerTaggable` mixin, que hereda de `cq:Taggable`, está pensado
 >* páginas ( `cq:Page`) donde la variable `jcr:content`el nodo es de tipo `cq:PageContent` que incluye el `cq:Taggable` mixin.
 >
 >* assets ( `cq:Asset`) donde la variable `jcr:content/metadata` el nodo siempre tiene la variable `cq:Taggable` mixin.
-
 >
 
 

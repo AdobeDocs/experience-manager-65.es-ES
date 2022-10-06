@@ -1,23 +1,22 @@
 ---
 title: Información general sobre modelos
-seo-title: Información general sobre modelos
+seo-title: Models Overview
 description: Información general sobre modelos
-seo-description: nulo
+seo-description: null
 uuid: e09dac52-9515-43f7-9d3b-6637e2283d59
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 50785534-5784-4354-b123-5e640b7c0242
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
 
-
-# Información general de modelos{#models-overview}
+# Información general sobre modelos{#models-overview}
 
 >[!NOTE]
 >
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 La administración de modelos implica la creación y administración de modelos con el fin de asociarlos con posibles objetos de datos. Cada modelo incluirá todas las propiedades y definiciones de campo necesarias para facilitar la creación y renderización de objetos.
 
-La administración de modelos implica la creación de **modelos**, **entidades** y **espacios**. En el diagrama siguiente se ilustra la relación entre el contenido de AEM y los modelos.
+La administración de modelos implica la creación de **modelos**, **entities** y **espacios**. En el diagrama siguiente se ilustra la relación entre el contenido de AEM y los modelos.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -35,7 +34,7 @@ Un modelo describe el tipo de contenido y denota qué información estará dispo
 
 Los modelos también sirven para transformar el contenido de AEM existente en objetos que las aplicaciones móviles nativas puedan utilizar fácilmente.
 
-Los servicios de contenido ofrecerán algunos modelos predeterminados para objetos comunes, como recursos, colecciones de recursos, páginas HTML, configuraciones de aplicaciones y páginas independientes de canales. Se pueden configurar para que satisfagan necesidades específicas del cliente sin necesidad de un esfuerzo de desarrollo AEM.
+Los servicios de contenido ofrecerán algunos modelos predeterminados para objetos comunes, como recursos, colecciones de recursos, páginas de HTML, configuraciones de aplicaciones y páginas independientes de canales. Se pueden configurar para que satisfagan necesidades específicas del cliente sin necesidad de un esfuerzo de desarrollo AEM.
 
 El usuario puede crear sus propios modelos. Esto permite la creación de nuevos tipos de contenido que no están administrados por AEM. La creación del modelo se realiza mediante una interfaz de usuario que utiliza tipos primitivos existentes.
 
@@ -51,23 +50,21 @@ Los modelos se utilizan para determinar cómo se crean las entidades. Definen qu
 >
 >Existe un modelo fuera de una aplicación, ya que más de una aplicación puede utilizarlo.
 
-
 Consulte **[Modelos](/help/mobile/administer-mobile-apps.md)** para crear y administrar modelos en el panel y el repositorio.
 
-### Entidades del modelo de contenido {#entities-in-content-model}
+### Entidades en el modelo de contenido {#entities-in-content-model}
 
 Una entidad es una instancia de un modelo de contenido. Una entidad se expone a través de la API de servicios de contenido a la biblioteca del lado del cliente y proporciona una forma para que una aplicación nativa acceda al contenido de forma independiente del canal.
 
 En el caso de contenido de AEM existente, una entidad se genera mediante un modelo y la fuente de contenido de AEM. Por ejemplo, una entidad de página es un objeto independiente de canal y presentación que se genera a partir de una página AEM y el modelo de página.
 
-Los cambios en el contenido al que se hace referencia en una entidad provocarán un cambio en la entidad. Por ejemplo, si se actualiza un *cq:page*, también se actualizarán las entidades basadas en esa página.
+Los cambios en el contenido al que se hace referencia en una entidad provocarán un cambio en la entidad. Por ejemplo, si una *cq:page* se actualiza, todas las entidades que se basan en esa página también se actualizarán.
 
 Consulte **[Uso de entidades](/help/mobile/spaces-and-entities.md)** para crear entidades personalizadas a partir de modelos.
 
 >[!NOTE]
 >
 >Si el modelo no corresponde a un contenido de AEM existente, como que el cliente haya creado un modelo nuevo, entonces habrá una interfaz de usuario para que un cliente pueda crear una entidad nueva.
-
 
 ### Espacios en el modelo de contenido {#spaces-in-content-model}
 
@@ -77,7 +74,7 @@ En el lado AEM, un espacio es una forma cómoda de administrar entidades relacio
 
 *Por ejemplo*,
 
-Un usuario tiene tres clasificaciones generales de entidades. Una es solo para uso interno, otra está aprobada para uso público y la tercera es para entidades comunes que son utilizadas por muchas aplicaciones. Para facilitar la administración, el usuario crea tres espacios, *internal*, *public* (con contenido en inglés y en francés) y *common* para administrar las entidades adecuadas, como se menciona a continuación:
+Un usuario tiene tres clasificaciones generales de entidades. Una es solo para uso interno, otra está aprobada para uso público y la tercera es para entidades comunes que son utilizadas por muchas aplicaciones. Para facilitar la administración, el usuario crea tres espacios, concretamente *internal*, *public* (con contenido en inglés y en francés), y *frecuentes* para administrar las entidades adecuadas, como se indica a continuación:
 
 * /content/entities/internal
 * /content/entities/public/en
@@ -96,4 +93,4 @@ Consulte **[Espacios y entidades](/help/mobile/spaces-and-entities.md)** para cr
 
 Las carpetas permiten a los usuarios organizar las entidades según sea necesario y facilitan un control ACL más preciso. Los espacios pueden incluir carpetas para ayudar a organizar mejor el contenido y los recursos del espacio. Un usuario puede crear su propia jerarquía en un espacio.
 
-Consulte **[Trabajo con carpetas en un espacio](/help/mobile/spaces-and-entities.md)** para crear y administrar carpetas dentro de un espacio.
+Consulte **[Uso de carpetas en un espacio](/help/mobile/spaces-and-entities.md)** para crear y administrar carpetas dentro de un espacio.

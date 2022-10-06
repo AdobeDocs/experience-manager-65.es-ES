@@ -14,7 +14,7 @@ exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 source-git-commit: eb7051582a51d983851c876025770668b258bff5
 workflow-type: tm+mt
 source-wordcount: '6036'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -104,7 +104,6 @@ Si utiliza un WCM de terceros (Web Content Manager), debe integrar el nuevo víd
 >
 >* Desea agregar interactividad al vídeo activando en Quickview.
 >* La implementación de Experience Manager hace lo siguiente *not* utilice un marco de integración de eCommerce para extraer datos de productos a Experience Manager desde cualquier solución de comercio electrónico, como IBM® WebSphere® Commerce, Elastic Path, Hybris o Intershop. Consulte [Conceptos de comercio electrónico en Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
-
 >
 >Si su implementación de Experience Manager utiliza eCommerce, puede omitir esta tarea y continuar con la siguiente tarea.
 
@@ -773,6 +772,6 @@ El sitio web de la demostración final con el vídeo interactivo totalmente inte
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Crear ventanas emergentes personalizadas con la vista rápida {#using-quickviews-to-create-custom-pop-ups}
+## Creación de ventanas emergentes personalizadas con Quickview {#using-quickviews-to-create-custom-pop-ups}
 
 Consulte [Crear ventanas emergentes personalizadas con la vista rápida](/help/assets/custom-pop-ups.md).

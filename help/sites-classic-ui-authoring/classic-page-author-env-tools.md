@@ -1,8 +1,8 @@
 ---
-title: 'Creación: Entorno y herramientas'
-seo-title: 'Creación: entorno y herramientas'
+title: 'Creación: entorno y herramientas'
+seo-title: Authoring - the Environment and Tools
 description: La consola Sitios web permite desplazarse por el sitio web y administrarlo. La estructura del sitio web, dividida en dos paneles, se puede ampliar para realizar acciones en los elementos necesarios.
-seo-description: La consola Sitios web permite desplazarse por el sitio web y administrarlo. La estructura del sitio web, dividida en dos paneles, se puede ampliar para realizar acciones en los elementos necesarios.
+seo-description: The Websites console allows you to manage and navigate your website. Using two panes, the structure of your website can be expanded and actions taken on the required elements.
 uuid: 0a9ce725-042a-4697-81fe-ac86cbab0398
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '899'
 ht-degree: 87%
 
 ---
 
 # Creación: Entorno y herramientas {#authoring-the-environment-and-tools}
 
-El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y distintas consolas.
+El entorno de creación AEM ofrece varios mecanismos para organizar y editar el contenido. Se puede acceder a las herramientas desde varios editores de páginas y consolas.
 
 ## Administración de sitios {#site-administration}
 
@@ -84,7 +84,7 @@ En esta ficha, se muestra una lista con los documentos del repositorio.
 
 Después de crear un párrafo Download en la página, puede arrastrar un elemento y colocarlo adentro del párrafo.
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Búsqueda de películas {#finding-movies}
 
@@ -151,7 +151,7 @@ en una consulta, puede utilizar tantos caracteres comodín como desee.
 
 >[!NOTE]
 >
->También puede utilizar la búsqueda [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
+>También puede utilizar [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) buscar.
 
 ## Mostrar referencias {#showing-references}
 
@@ -163,7 +163,7 @@ Para mostrar referencias de páginas directas:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Seleccionar **Mostrar referencias...** AEM abre la ventana Referencias y muestra qué páginas hacen referencia a la página seleccionada, incluidas sus rutas de acceso.
+1. Select **Mostrar referencias...** AEM abre la ventana Referencias y muestra qué páginas hacen referencia a la página seleccionada, incluidas sus rutas de acceso.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -184,7 +184,7 @@ Se puede acceder al **registro de auditoría** desde la ficha **Información** d
 
 ## Información de la página {#page-information}
 
-La consola Sitio web también [proporciona información sobre el estado actual de la página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) como publicación, modificación, bloqueo, Live Copy, etc.
+La consola Sitios web también [proporciona información sobre el estado actual de la página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) como publicación, modificación, bloqueo, Live Copy, etc.
 
 ## Modos de página   {#page-modes}
 
@@ -205,12 +205,12 @@ En este modo, puede configurar los componentes accesibles para editar el diseño
 >
 >Hay otras opciones disponibles:
 >
->* [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
-* [ClientContext](/help/sites-administering/client-context.md)
-* Sitios web - abrirá la consola Sitios web .
-* Volver a cargar: actualizará la página.
+>* [Andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
+>* [ClientContext](/help/sites-administering/client-context.md)
+>* Sitios web: abrirá la consola Sitios web
+>* Volver a cargar: actualizará la página.
 
 
-## Métodos abreviados del teclado {#keyboard-shortcuts}
+## Métodos abreviados de teclado {#keyboard-shortcuts}
 
 Hay varios [métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) disponibles.

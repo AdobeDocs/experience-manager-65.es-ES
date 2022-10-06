@@ -1,10 +1,11 @@
 ---
 title: Obtenga información sobre el uso de referencias en fragmentos de contenido
 description: Obtenga información sobre el uso de referencias en fragmentos de contenido para contenido, otros fragmentos y otros recursos (medios). Introduzca la necesidad y la mecánica de los fragmentos anidados para la creación de CMS sin encabezado.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 2%
+ht-degree: 8%
 
 ---
 
@@ -25,7 +26,7 @@ Este artículo se basa en estos elementos para que pueda comprender cómo utiliz
 
    * Referencias de contenido
    * Referencias de recursos/medios
-   * Referencias de fragmento
+   * Referencias a fragmento
    * Referencias ad hoc desde dentro de un bloque de texto
 
 ## ¿Qué son las referencias? {#what-are-references}
@@ -46,15 +47,15 @@ Se puede hacer referencia a los recursos (por ejemplo, imágenes o medios) dentr
 
 ![Fragmentos de contenido: Insertar recurso](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
-## Referencias de fragmento {#fragment-references}
+## Referencias a fragmento {#fragment-references}
 
 Una vez más, las referencias de fragmento hacen precisamente eso: le permiten hacer referencia a otro fragmento. Por qué esto es significativo necesita un poco más de explicación.
 
 Por ejemplo, puede tener los siguientes modelos de fragmento de contenido definidos:
 
 * Ciudad
-* Empresa
-* Person
+* Compañía
+* Persona
 * Premios
 
 Parece bastante sencillo, pero por supuesto una compañía tiene un CEO y empleados....y todas son personas, cada una definida como una persona.
@@ -124,6 +125,6 @@ Ahora que ha aprendido sobre referencias y estructura en fragmentos de contenido
 * Guías de introducción
    * [Creación de una carpeta de recursos Guía de inicio rápido sin encabezado](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* [recorrido de arquitecto de contenido sin encabezado de AEM](/help/journey-headless/architect/overview.md)
+* [Recorrido de arquitecto de contenido de AEM Headless](/help/journey-headless/architect/overview.md)
 
 * [recorrido de traducción AEM sin encabezado](/help/journey-headless/translation/overview.md)

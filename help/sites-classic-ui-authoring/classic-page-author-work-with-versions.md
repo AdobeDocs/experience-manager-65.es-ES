@@ -1,8 +1,8 @@
 ---
-title: 'Uso de versiones de página  '
-seo-title: 'Uso de versiones de página  '
+title: Uso de versiones de página
+seo-title: Working with Page Versions
 description: Al generar una versión, se crea una “instantánea” de una página en un punto específico del tiempo.
-seo-description: Al generar una versión, se crea una “instantánea” de una página en un punto específico del tiempo.
+seo-description: Versioning creates a "snapshot" of a page at a specific point in time.
 uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1362'
 ht-degree: 92%
 
 ---
-
 
 # Uso de versiones de página  {#working-with-page-versions}
 
@@ -37,7 +36,7 @@ Para crear una nueva versión de una página:
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Introduzca un **comentario** (opcional).
-1. Para establecer una etiqueta en la versión (opcional), haga clic en el botón **Más >>** y defina la **Etiqueta** para asignar un nombre a la versión. Si la etiqueta no está configurada, la versión se incrementa automáticamente.
+1. Para establecer una etiqueta en la versión (opcional), haga clic en el botón **Más >>** y configure la variable **Etiqueta** para asignar un nombre a la versión. Si no se establece la etiqueta, la versión se incrementa automáticamente.
 1. Haga clic en **Crear versión**. Se mostrará un mensaje atenuado en la página; por ejemplo:
 Versión 1.2 creada para: Shirts.
 
@@ -45,7 +44,7 @@ Versión 1.2 creada para: Shirts.
 >
 >Se creará una versión automáticamente cuando se active la página.
 
-## Restaurar una versión de página desde la barra de tareas  {#restoring-a-page-version-from-sidekick}
+## Restaurar una versión de página desde la barra de tareas {#restoring-a-page-version-from-sidekick}
 
 Para restaurar la página a una versión anterior:
 
@@ -71,7 +70,7 @@ Este método puede utilizarse para restaurar una versión de página. También p
 
 1. Seleccione la versión que desee restaurar y haga clic en **Restaurar**. AEM restaura la versión o las versiones (o árboles) que seleccione.
 
-### Restaurar un árbol desde la consola  {#restoring-a-tree-from-the-console}
+### Restaurar un árbol desde la consola {#restoring-a-tree-from-the-console}
 
 Este método puede utilizarse para restaurar una versión de página. También puede utilizarse para restaurar páginas que se hayan eliminado anteriormente:
 
@@ -88,12 +87,12 @@ Este método puede utilizarse para restaurar una versión de página. También p
 Para compara la versión actual de la página con una versión anterior:
 
 1. En el navegador, abra la página que desee comparar con una versión anterior.
-1. En la barra de tareas, seleccione la ficha **Versiones** y, a continuación, la subficha **Restaurar versión** n.
+1. En la barra de tareas, seleccione la **Versiones** y, a continuación, la pestaña **Restaurar versión** en la subpestaña .
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
 1. Seleccione la versión que desee comparar y haga clic en el botón **Dif**.
-1. Las diferencias entre la versión actual y la versión seleccionada se muestran de la siguiente manera:
+1. Las diferencias entre la versión actual y la seleccionada se muestran de la siguiente manera:
 
    * El texto que se ha eliminado aparece en rojo y tachado.
    * El texto que se ha agregado aparece en verde y resaltado.
@@ -103,7 +102,7 @@ Para compara la versión actual de la página con una versión anterior:
 
 1. En la barra de tareas, seleccione la subficha **Restaurar versión** y haga clic en el botón **&lt;&lt;Atrás** para ver la versión actual.
 
-## Deformación de tiempo    {#timewarp}
+## Deformación de tiempo   {#timewarp}
 
 Deformación de tiempo es una función diseñada para simular el estado ***publicado*** de una página en periodos específicos en el pasado.
 
@@ -120,7 +119,7 @@ Para ello:
 >
 >Si las versiones se eliminan del repositorio, Timewarp no podrá mostrar la vista correcta. Asimismo, si se han cambiado elementos (como código, css, imágenes, etc.) para procesar el sitio web, la vista será diferente de la original, ya que no habrá versiones de dichos elementos en el repositorio.
 
-### Uso del calendario de Timewarp  {#using-the-timewarp-calendar}
+### Uso del calendario de Timewarp {#using-the-timewarp-calendar}
 
 Timewarp está disponible en la barra de tareas.
 
@@ -153,7 +152,7 @@ La versión de calendario se utiliza si quiere visualizar un día específico:
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
-### Usar la línea de tiempo de Deformación de tiempo {#using-the-timewarp-timeline}
+### Uso de la línea de tiempo de Timewarp {#using-the-timewarp-timeline}
 
 La versión de la línea de tiempo se utiliza para ver información general sobre las actividades de publicación de la página.
 
@@ -196,4 +195,4 @@ Deformación de tiempo realiza el mejor esfuerzo para reproducir una página en 
 
 >[!CAUTION]
 >
->Deformación de tiempo se ha diseñado como una herramienta para ayudar a los autores a comprender y crear su contenido. No se trata de un registro de auditoría ni de un registro jurídico.
+>Deformación de tiempo está diseñada como una herramienta para ayudar a los autores a comprender y crear su contenido. No se trata de un registro de auditoría ni de un registro jurídico.

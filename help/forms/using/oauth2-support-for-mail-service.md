@@ -1,6 +1,6 @@
 ---
 title: Compatibilidad con OAuth2 para el servicio de correo
-description: 'Soporte de Oauth2 para el servicio de correo  '
+description: Soporte de Oauth2 para el servicio de correo
 source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
 workflow-type: tm+mt
 source-wordcount: '690'

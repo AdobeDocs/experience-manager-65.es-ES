@@ -94,7 +94,7 @@ Realice los siguientes pasos para utilizar el subformulario en una plantilla XDP
    1. Vaya a la ubicación para guardar el archivo y especificar un nombre para la plantilla XDP.
    1. Select **.xdp** de la variable **Guardar como tipo** lista desplegable.
 
-   1. Toque **Guardar**.
+   1. Pulse **Guardar**.
 
 ### Uso del componente Campo de imagen en una plantilla XDP {#use-image-field-component-in-an-xdp-template}
 
@@ -145,14 +145,14 @@ Siga los siguientes pasos para utilizar el componente Tabla en la plantilla XDP 
    1. Vaya a la ubicación para guardar el archivo y especifique el nombre de la plantilla XDP.
    1. Select **.xdp** de la variable **Guardar como tipo** lista desplegable.
 
-   1. Toque **Guardar**.
+   1. Pulse **Guardar**.
 
 ### Cargar plantilla XDP al servidor de AEM Forms {#uploadxdptemplate}
 
 Una vez creada una plantilla XDP con el Diseñador de Forms, debe cargarla en el servidor de AEM Forms para que la plantilla esté disponible para usar durante la creación de la comunicación interactiva.
 
 1. Select **Forms** > **Forms y documentos**.
-1. Toque **Crear** > **Carga de archivo**.
+1. Pulse **Crear** > **Cargar archivo**.
 1. Vaya a la ubicación de la plantilla XDP en el sistema de archivos local y pulse **Apertura** para importar la plantilla XDP al servidor de AEM Forms.
 
 ## Uso del esquema {#using-schema}

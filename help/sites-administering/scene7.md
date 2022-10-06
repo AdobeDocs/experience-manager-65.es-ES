@@ -165,7 +165,7 @@ Para usar Dynamic Media y Dynamic Media Classic simultáneamente:
    1. (Opcional) Configure el vídeo en la configuración de Dynamic Media Classic. Puede habilitar la codificación de vídeo para Dynamic Media o Dynamic Media Classic simultáneamente. Las representaciones dinámicas se utilizan para la vista previa y la reproducción localmente en la instancia de Experience Manager, mientras que las representaciones de vídeo de Dynamic Media Classic se generan y almacenan en servidores de Dynamic Media Classic. Al configurar los servicios de codificación de vídeo tanto para Dynamic Media como para Dynamic Media Classic, aplique una [perfil de procesamiento de vídeo](/help/assets/video-profiles.md) a la carpeta de recursos de Dynamic Media Classic.
    1. (Opcional) [Configurar la vista previa segura en Dynamic Media Classic](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene).
 
-#### Restricciones     {#limitations}
+#### Restricciones {#limitations}
 
 Cuando tiene habilitados Dynamic Media Classic y Dynamic Media, existen las siguientes limitaciones:
 

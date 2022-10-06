@@ -602,7 +602,7 @@ Para administrar mediante programación usuarios, grupos y dominios mediante la 
 
 ## Administración de funciones y permisos {#managing-roles-and-permissions}
 
-En este tema se describe cómo puede utilizar la API de servicio de Administrador de autorización (Java) para asignar, eliminar y determinar funciones y permisos mediante programación.
+En este tema se describe cómo puede utilizar la API de servicio de Administrador de autorización (Java) para asignar, quitar y determinar funciones y permisos mediante programación.
 
 En AEM Forms, una *función* es un grupo de permisos para acceder a uno o más recursos de nivel de sistema. Estos permisos se crean mediante Administración de usuarios y los componentes del servicio los aplican. Por ejemplo, un administrador podría asignar la función &quot;Autor de conjuntos de políticas&quot; a un grupo de usuarios. El Rights Management permitiría entonces a los usuarios de ese grupo con esa función crear conjuntos de políticas a través de la consola de administración.
 

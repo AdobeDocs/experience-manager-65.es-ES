@@ -13,7 +13,7 @@ exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1206'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 
@@ -46,7 +46,7 @@ Antes de empezar a configurar Microsoft Dynamics, asegúrese de que:
    * Microsoft Dynamics 365 local
    * Microsoft Dynamics 2016 local
 
-* [Se registró la aplicación para el servicio en línea de Microsoft Dynamics con Microsoft Azure Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Tome nota de los valores del ID de cliente (también denominado ID de aplicación) y del secreto de cliente para el servicio registrado. Estos valores se utilizan al [configuración del servicio en la nube para el servicio Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [Se registró la aplicación para el servicio en línea de Microsoft Dynamics con Microsoft Azure Active Directory](https://docs.microsoft.com/es-es/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Tome nota de los valores del ID de cliente (también denominado ID de aplicación) y del secreto de cliente del servicio registrado. Estos valores se utilizan al [configuración del servicio en la nube para el servicio Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## Establecer URL de respuesta para la aplicación registrada de Microsoft Dynamics {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -60,7 +60,7 @@ Haga lo siguiente para establecer la URL de respuesta para la aplicación Micros
 
    `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
-   ![Directorio Azure](assets/azure_directory_new.png)
+   ![Azure Directory](assets/azure_directory_new.png)
 
 1. Guarde la configuración.
 
@@ -86,7 +86,7 @@ Microsoft Dynamics utiliza la autenticación basada en reclamaciones para propor
 
 ## Configurar el cliente OAuth en el equipo AD FS {#configure-oauth-client-on-ad-fs-machine}
 
-Haga lo siguiente para registrar un cliente de OAuth en el equipo de Servicios de federación de Active Directory (AD FS) y conceder acceso en el equipo de AD FS:
+Haga lo siguiente para registrar un cliente de OAuth en el equipo de los Servicios de federación de Active Directory (AD FS) y conceder acceso desde él:
 
 >[!NOTE]
 >
@@ -96,17 +96,17 @@ Haga lo siguiente para registrar un cliente de OAuth en el equipo de Servicios d
 
    `Add-AdfsClient -ClientId "<Client-ID>" -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 
-   Donde:
+   donde:
 
    * `Client-ID` es un ID de cliente que puede generar con cualquier generador GUID.
    * `redirect-uri` es la dirección URL del servicio en la nube de Microsoft Dynamics OData en AEM Forms. El servicio de nube predeterminado instalado con el paquete AEM Forms se implementa en la siguiente URL:
       `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
-1. Ejecute el siguiente comando para conceder acceso en el equipo AD FS:
+1. Ejecute el siguiente comando para conceder acceso desde el equipo AD FS:
 
    `Grant-AdfsApplicationPermission -ClientRoleIdentifier "<Client-ID>" -ServerRoleIdentifier <resource> -ScopeNames openid`
 
-   Donde:
+   donde:
 
    * `resource` es la dirección URL de la organización de Microsoft Dynamics.
 
@@ -119,11 +119,11 @@ La variable **Cloud Service de MS Dynamics OData (servicio OData)** viene con la
 1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]** y pulse el botón `global` carpeta de configuración.
 1. Select **Cloud Service de MS Dynamics OData (servicio OData)** configuración y toque **[!UICONTROL Propiedades]**. Se abre el cuadro de diálogo de la propiedad de configuración del servicio de nube.
 
-   En el **Configuración de autenticación** pestaña:
+   En la pestaña **Configuración de autenticación**:
 
-   1. Introduzca el valor de la variable **Raíz del servicio** campo . Vaya a la instancia de Dynamics y vaya a **Recursos para desarrolladores** para ver el valor del campo Raíz del servicio . Por ejemplo, https://&lt;tenant-name>/api/data/v9.1/
+   1. Introduzca el valor del campo **Raíz del servicio**. Vaya a la instancia de Dynamics y luego a **Recursos para desarrolladores** para ver el valor del campo Raíz del servicio. por ejemplo, https://&lt;tenant-name>/api/data/v9.1/
 
-   1. Reemplace los valores predeterminados en la variable **ID de cliente**(también denominado **ID de aplicación**), **Secreto del cliente**, **URL de OAuth**, **Actualizar URL del token**, **Dirección URL del token de acceso** y **Recurso** campos con valores de la configuración del servicio de Microsoft Dynamics. Es obligatorio especificar la dirección URL de la instancia de dinámica en la variable **Recurso** para configurar Microsoft Dynamics con un modelo de datos de formulario. Utilice la URL raíz del servicio para derivar la URL de la instancia de dinámica. Por ejemplo, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. Reemplace los valores predeterminados en la variable **ID de cliente**(también denominado **ID de aplicación**), **Secreto del cliente**, **URL de OAuth**, **Actualizar URL del token**, **Dirección URL del token de acceso** y **Recurso** campos con valores de la configuración del servicio de Microsoft Dynamics. Es obligatorio especificar la dirección URL de la instancia de dinámica en la variable **Recurso** para configurar Microsoft Dynamics con un modelo de datos de formulario. Utilice la URL raíz del servicio para derivar la URL de la instancia de Dynamics. Por ejemplo, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Especifique **openid** en el **Ámbito de autorización** para el proceso de autorización en Microsoft Dynamics.
 
@@ -134,7 +134,7 @@ La variable **Cloud Service de MS Dynamics OData (servicio OData)** viene con la
 
    A continuación, se le redirige a la página de configuración del servicio en la nube, que muestra un mensaje que indica que la configuración de OData se ha guardado correctamente.
 
-El servicio en la nube MS Dynamics OData Cloud Service (servicio OData) está configurado y conectado con el servicio Dynamics.
+El servicio en la nube MS Dynamics OData Cloud Service (servicio OData) está configurado y conectado con el servicio de Dynamics.
 
 ## Crear modelo de datos de formulario {#create-form-data-model}
 

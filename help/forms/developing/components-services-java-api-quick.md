@@ -1,6 +1,6 @@
 ---
 title: Componentes y servicios Java APIQuick Start (SOAP)
-seo-title: Componentes y servicios Java APIQuick Start (SOAP)
+seo-title: Components and Services Java APIQuick Start(SOAP)
 description: Componentes y servicios Java APIQuick Start (SOAP)
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
+source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
-
-# Inicio rápido de la API de Java de Componentes y Servicios (SOAP) {#components-and-services-java-apiquick-start-soap}
+# Inicio rápido de la API de Java de componentes y servicios (SOAP) {#components-and-services-java-apiquick-start-soap}
 
 El inicio rápido de la API de Java (SOAP) está disponible para componentes y servicios.
 
@@ -48,11 +47,11 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 >[!NOTE]
 >
->Si tiene un componente personalizado y utiliza protocolos SOAP o EJB para invocar DSC en el mismo servidor local, y esas invocaciones dejan de funcionar después de una actualización, utilice la estrategia de invocación in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)). Utilice el método de invocación DSC en VM con ServiceClientFactory predeterminado y no construya ServiceClientFactory utilizando protocolos SOAP o EJB.
+>Si tiene un componente personalizado y utiliza protocolos SOAP o EJB para invocar DSC en el mismo servidor local, y esas invocaciones dejan de funcionar después de una actualización, utilice la estrategia de invocación en VM. Utilice el método de invocación DSC en VM con ServiceClientFactory predeterminado y no construya ServiceClientFactory utilizando protocolos SOAP o EJB.
 
 ## Inicio rápido (modo SOAP): Implementación de un componente mediante la API de Java {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-El siguiente ejemplo de Java implementa un componente basado en un archivo JAR llamado *adobe-emailSample-dsc.jar*.
+El siguiente ejemplo de Java implementa un componente basado en un archivo JAR denominado *adobe-emailSample-dsc.jar*.
 
 ```java
  /* 
@@ -359,7 +358,7 @@ El siguiente ejemplo de código Java deshabilita la seguridad del servicio Encry
 
 ## Inicio rápido (modo SOAP): Inicio de un servicio mediante la API de Java {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-El siguiente ejemplo de código Java inicia un servicio llamado *SendEmailService*.
+El siguiente ejemplo de código Java inicia un servicio denominado *SendEmailService*.
 
 ```java
  package com.adobe.sample.servicemanager; 
@@ -623,4 +622,3 @@ El siguiente ejemplo de código Java elimina un componente mediante la API de Ja
   
  
 ```
-

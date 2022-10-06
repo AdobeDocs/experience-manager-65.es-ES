@@ -1,8 +1,8 @@
 ---
 title: Conexión de AEM Forms con el LiveCycle de Adobe
-seo-title: Conexión de AEM Forms con el LiveCycle de Adobe
+seo-title: Connecting AEM Forms with Adobe LiveCycle
 description: AEM conector de LiveCycle le permite iniciar LiveCycle ES4 Document Services desde AEM aplicaciones y flujos de trabajo.
-seo-description: AEM conector de LiveCycle le permite iniciar LiveCycle ES4 Document Services desde AEM aplicaciones y flujos de trabajo.
+seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,7 +12,7 @@ role: Admin
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ El conector de LiveCycle de Adobe Experience Manager (AEM) permite la invocació
 
 ## Conexión de AEM servidor al LiveCycle de Adobe {#connecting-aem-server-to-adobe-livecycle}
 
-AEM conector de LiveCycle forma parte del [paquete de complementos de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Después de instalar el paquete de complementos de AEM Forms, realice los siguientes pasos para agregar detalles del servidor de LiveCycle a AEM consola web.
+AEM conector de LiveCycle forma parte de [Paquete de complementos de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Después de instalar el paquete de complementos de AEM Forms, realice los siguientes pasos para agregar detalles del servidor de LiveCycle a AEM consola web.
 
 1. En AEM administrador de configuración de la consola web, busque el componente de configuración del SDK del cliente de Adobe LiveCycle.
 1. Haga clic en el componente para editar la URL, el nombre de usuario y la contraseña del servidor de configuración.
@@ -31,7 +31,7 @@ AEM conector de LiveCycle forma parte del [paquete de complementos de AEM Forms]
 
 Aunque las propiedades se explican por sí solas, las importantes son las siguientes:
 
-* **URL del servidor** : especifica la URL del servidor de LiveCycle. Si desea que el LiveCycle y el AEM se comuniquen a través de https, comience AEM con la siguiente JVM
+* **URL del servidor** : especifica la dirección URL del servidor de LiveCycle. Si desea que el LiveCycle y el AEM se comuniquen a través de https, comience AEM con la siguiente JVM
 
    ```java
    argument
@@ -40,13 +40,13 @@ Aunque las propiedades se explican por sí solas, las importantes son las siguie
 
    .
 
-* **Nombre de usuario**: especifica el nombre de usuario de la cuenta que se utiliza para establecer la comunicación entre AEM y LiveCycle. La cuenta es una cuenta de usuario de LiveCycle que tiene los permisos para iniciar Document Services.
-* **Contraseña**: especifica la contraseña.
-* **Nombre de servicio** : especifica los servicios que se inician utilizando las credenciales de usuario proporcionadas en los campos Nombre de usuario y Contraseña. De forma predeterminada, no se transfieren credenciales al iniciar los servicios de LiveCycle.
+* **Nombre de usuario**- Especifica el nombre de usuario de la cuenta que se utiliza para establecer la comunicación entre AEM y LiveCycle. La cuenta es una cuenta de usuario de LiveCycle que tiene los permisos para iniciar Document Services.
+* **Contraseña**- Especifica la contraseña.
+* **Nombre del servicio** - Especifica los servicios que se inician utilizando las credenciales de usuario proporcionadas en los campos Nombre de usuario y Contraseña. De forma predeterminada, no se transfieren credenciales al iniciar los servicios de LiveCycle.
 
 ## Inicio de document services {#starting-document-services}
 
-Las aplicaciones cliente pueden iniciar servicios de LiveCycle mediante programación utilizando una API de Java, Servicios Web, Remoting y REST. Para clientes Java, la aplicación puede utilizar el SDK de LiveCycle. El SDK de LiveCycle proporciona una API de Java para iniciar estos servicios de forma remota. Por ejemplo, para convertir un documento de Microsoft Word a PDF, el cliente inicia GeneratePDFService. El flujo de invocación consta de los siguientes pasos:
+Las aplicaciones cliente pueden iniciar servicios de LiveCycle mediante programación utilizando una API de Java, Servicios Web, Remoting y REST. Para clientes Java, la aplicación puede utilizar el SDK de LiveCycle. El SDK de LiveCycle proporciona una API de Java para iniciar estos servicios de forma remota. Por ejemplo, para convertir un documento de Microsoft Word en PDF, el cliente inicia GeneratePDFService. El flujo de invocación consta de los siguientes pasos:
 
 1. Cree una instancia de ServiceClientFactory .
 1. Cada servicio proporciona una clase cliente. Para iniciar un servicio, cree una instancia de cliente del servicio.
@@ -54,7 +54,7 @@ Las aplicaciones cliente pueden iniciar servicios de LiveCycle mediante programa
 
 AEM conector de LiveCycle simplifica el flujo al exponer estas instancias de cliente como servicios OSGi a los que se puede acceder mediante OSGi estándar. El conector del LiveCycle ofrece las siguientes funciones:
 
-* Instancias de cliente como OSGi Service: Los clientes empaquetados como paquetes OSGI se enumeran en la sección [Lista de servicios de documentos](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Cada jar cliente registra la instancia del cliente como servicio OSGi con el Registro de servicios OSGi.
+* Instancias de cliente como OSGi Service: Los clientes empaquetados como paquetes OSGI se enumeran en la [Lista de servicios de documentos](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) para obtener más información. Cada jar cliente registra la instancia del cliente como servicio OSGi con el Registro de servicios OSGi.
 * Propagación de la Credencial de Usuario: Los detalles de conexión necesarios para conectarse al servidor de LiveCycle se administran en un lugar central.
 * Servicio ServiceClientFactory: Para iniciar los procesos, la aplicación cliente puede acceder a la instancia de ServiceClientFactory .
 
@@ -82,7 +82,7 @@ Para iniciar un servicio expuesto desde AEM, realice los siguientes pasos:
    </dependency>
    ```
 
-   Para iniciar un servicio, agregue la dependencia Maven correspondiente al servicio. Para ver la lista de dependencias, consulte [Document Service List](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Por ejemplo, para el servicio Generate PDF agregue la siguiente dependencia:
+   Para iniciar un servicio, agregue la dependencia Maven correspondiente al servicio. Para ver la lista de dependencias, consulte [Lista de servicio de documentos](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Por ejemplo, para el servicio Generar PDF agregue la siguiente dependencia:
 
    ```xml
    <dependency>

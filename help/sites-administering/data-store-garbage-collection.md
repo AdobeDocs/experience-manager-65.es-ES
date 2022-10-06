@@ -1,8 +1,8 @@
 ---
 title: Recolección de papelera del almacén de datos
-seo-title: Recolección de papelera del almacén de datos
+seo-title: Data Store Garbage Collection
 description: Obtenga información sobre cómo configurar la colección de residuos del almacén de datos para liberar espacio en disco.
-seo-description: Obtenga información sobre cómo configurar la colección de residuos del almacén de datos para liberar espacio en disco.
+seo-description: Learn how to configure Data Store Garbage Collection to free up disk space.
 uuid: 49488a81-986a-4d1a-96c8-aeb6595fc094
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1887'
 ht-degree: 0%
 
 ---
-
 
 # Recolección de papelera del almacén de datos {#data-store-garbage-collection}
 
@@ -32,13 +31,13 @@ AEM utiliza el repositorio como almacenamiento para una serie de actividades int
 * Cargas del flujo de trabajo
 * Recursos creados temporalmente durante la renderización DAM
 
-Cuando alguno de estos objetos temporales es lo suficientemente grande como para requerir almacenamiento en el almacén de datos, y cuando el objeto termina de usarse, el propio registro del almacén de datos permanece como &quot;basura&quot;. En una aplicación de autor/publicación WCM típica, la fuente más grande de basura de este tipo suele ser el proceso de activación de la publicación. Cuando los datos se replican en Publicar, se recopilan primero en colecciones con un formato de datos eficiente denominado &quot;Durbo&quot; y se almacenan en el repositorio en `/var/replication/data`. Los paquetes de datos suelen superar el umbral de tamaño crítico para el almacén de datos y, por lo tanto, terminan almacenados como registros del almacén de datos. Cuando se completa la replicación, se elimina el nodo de `/var/replication/data`, pero el registro del almacén de datos permanece como &quot;basura&quot;.
+Cuando alguno de estos objetos temporales es lo suficientemente grande como para requerir almacenamiento en el almacén de datos, y cuando el objeto termina de usarse, el propio registro del almacén de datos permanece como &quot;basura&quot;. En una aplicación de autor/publicación WCM típica, la fuente más grande de basura de este tipo suele ser el proceso de activación de la publicación. Cuando los datos se replican en Publicar, se recopilan primero en colecciones con un formato de datos eficiente denominado &quot;Durbo&quot; y se almacenan en el repositorio en `/var/replication/data`. Los paquetes de datos suelen superar el umbral de tamaño crítico para el almacén de datos y, por lo tanto, terminan almacenados como registros del almacén de datos. Cuando se completa la replicación, el nodo de `/var/replication/data` se elimina, pero el registro del almacén de datos permanece como &quot;basura&quot;.
 
 Otra fuente de basura recuperable son los paquetes. Los datos del paquete, como todo lo demás, se almacenan en el repositorio y, por lo tanto, para paquetes de más de 4 KB, en el almacén de datos. En el curso de un proyecto de desarrollo o con el paso del tiempo mientras se mantiene un sistema, los paquetes se pueden crear y reconstruir muchas veces, cada compilación resulta en un nuevo registro de almacén de datos, lo que orfiere el registro de la compilación anterior.
 
 ## ¿Cómo funciona la colección de residuos del almacén de datos? {#how-does-data-store-garbage-collection-work}
 
-Si el repositorio se ha configurado con un almacén de datos externo, la [colección de residuos del almacén de datos se ejecutará automáticamente](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) como parte de la ventana de mantenimiento semanal. El administrador del sistema también puede [ejecutar manualmente la colección de residuos del almacén de datos](#running-data-store-garbage-collection) según sea necesario. En general, se recomienda que la colección de basura del almacén de datos se realice periódicamente, pero que se tengan en cuenta los siguientes factores al planificar la recogida de residuos en el almacén de datos:
+Si el repositorio se ha configurado con un almacén de datos externo, [la colección de residuos del almacén de datos se ejecutará automáticamente](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) como parte de la ventana de mantenimiento semanal. El administrador del sistema también puede [ejecutar manualmente la colección de residuos del almacén de datos](#running-data-store-garbage-collection) según sea necesario. En general, se recomienda que la colección de basura del almacén de datos se realice periódicamente, pero que se tengan en cuenta los siguientes factores al planificar la recogida de residuos en el almacén de datos:
 
 * Las colecciones de residuos del almacén de datos tardan un tiempo y pueden afectar al rendimiento, por lo que deben planificarse en consecuencia.
 * La eliminación de los registros de residuos del almacén de datos no afecta al rendimiento normal, por lo que no se trata de una optimización del rendimiento.
@@ -63,10 +62,10 @@ Este método funciona bien para un nodo único con un almacén de datos privado.
 
 Existen tres maneras de ejecutar la colección de residuos del almacén de datos, según la configuración del almacén de datos en la que AEM se esté ejecutando:
 
-1. A través de [Revision Cleanup](/help/sites-deploying/revision-cleanup.md) - un mecanismo de colección de residuos que normalmente se utiliza para la limpieza del almacén de nodos.
+1. Via [Limpieza de revisión](/help/sites-deploying/revision-cleanup.md) - un mecanismo de colección de residuos que normalmente se utiliza para la limpieza del almacén de nodos.
 
-1. A través de [Data Store Garbage Collection](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) : un mecanismo de recopilación de residuos específico para almacenes de datos externos, disponible en el Tablero de operaciones.
-1. A través de la [Consola JMX](/help/sites-administering/jmx-console.md).
+1. Via [Colección de residuos del almacén de datos](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) : un mecanismo de colección de residuos específico para almacenes de datos externos, disponible en el Tablero de operaciones.
+1. A través de la función [Consola JMX](/help/sites-administering/jmx-console.md).
 
 Si TarMK se está utilizando como almacén de nodos y como almacén de datos, la limpieza de revisión se puede utilizar para la colección de residuos tanto del almacén de nodos como del almacén de datos. Sin embargo, si se configura un almacén de datos externo, como el almacén de datos del sistema de archivos, la colección de residuos del almacén de datos debe activarse de forma explícita y separada de la limpieza de revisión. La colección de residuos del almacén de datos se puede activar mediante el panel Operaciones o la consola JMX.
 
@@ -104,18 +103,18 @@ La tabla siguiente muestra el tipo de colección de residuos del almacén de dat
 
 ### Ejecución de la colección de residuos del almacén de datos mediante el panel de operaciones {#running-data-store-garbage-collection-via-the-operations-dashboard}
 
-La ventana de mantenimiento semanal integrada, disponible a través del [Tablero de operaciones](/help/sites-administering/operations-dashboard.md), contiene una tarea integrada para almacenar en déclencheur la colección de residuos del almacén de datos a la 1 a. m. los domingos.
+La ventana de mantenimiento semanal incorporada, disponible a través de la [Tablero de operaciones](/help/sites-administering/operations-dashboard.md), contiene una tarea integrada para almacenar en déclencheur la colección de residuos del almacén de datos a la 1 a. m. los domingos.
 
 Si necesita ejecutar la colección de residuos del almacén de datos fuera de este tiempo, se puede activar manualmente mediante el panel de operaciones.
 
 Antes de ejecutar la colección de residuos del almacén de datos, debe comprobar que no se estén ejecutando copias de seguridad en ese momento.
 
-1. Abra el Tablero de operaciones **Navegación** -> **Herramientas** -> **Operaciones** -> **Mantenimiento**.
-1. Toque o haga clic en la **Ventana de mantenimiento semanal**.
+1. Abra el Tablero de operaciones de **Navegación** -> **Herramientas** -> **Operaciones** -> **Mantenimiento**.
+1. Toque o haga clic en **Período de mantenimiento semanal**.
 
    ![imagen_1-64](assets/chlimage_1-64.png)
 
-1. Seleccione la tarea **Colección de residuos del almacén de datos** y, a continuación, toque o haga clic en el icono **Ejecutar**.
+1. Seleccione el **Colección de residuos del almacén de datos** y, a continuación, toque o haga clic en **Ejecutar** icono.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -129,7 +128,7 @@ Antes de ejecutar la colección de residuos del almacén de datos, debe comproba
 
 ### Ejecución de la colección de residuos del almacén de datos a través de la consola JMX {#running-data-store-garbage-collection-via-the-jmx-console}
 
-Esta sección trata sobre la ejecución manual de la colección de residuos del almacén de datos a través de la consola JMX. Si la instalación está configurada sin un almacén de datos externo, esto no se aplica a la instalación. En su lugar, consulte las instrucciones sobre cómo ejecutar Revision cleanup en [Mantenimiento del repositorio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+Esta sección trata sobre la ejecución manual de la colección de residuos del almacén de datos a través de la consola JMX. Si la instalación está configurada sin un almacén de datos externo, esto no se aplica a la instalación. Consulte las instrucciones sobre cómo ejecutar la limpieza de revisión en [Mantenimiento del repositorio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 
 >[!NOTE]
 >
@@ -137,10 +136,10 @@ Esta sección trata sobre la ejecución manual de la colección de residuos del 
 
 Para ejecutar la colección de residuos:
 
-1. En la Consola de administración Apache Felix OSGi, resalte la pestaña **Main** y seleccione **JMX** en el siguiente menú.
-1. A continuación, busque y haga clic en **Repository Manager** MBean (o vaya a `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
+1. En la Consola de administración Apache Felix OSGi, resalte la variable **Principal** y seleccione **JMX** del siguiente menú.
+1. A continuación, busque y haga clic en el botón **Administrador de repositorios** MBean (o vaya a `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Haga clic en **startDataStoreGC(boolean markOnly)**.
-1. introduzca &quot;`true`&quot; para el parámetro `markOnly` si es necesario:
+1. introduzca &quot;`true`&quot; para el `markOnly` si es necesario:
 
    | **Opción** | **Descripción** |
    |---|---|
@@ -154,13 +153,13 @@ Para ejecutar la colección de residuos:
 
 >[!NOTE]
 >
->La tarea de colección de residuos del almacén de datos solo se iniciará si ha configurado un almacén de datos de archivos externos. Si no se ha configurado un almacén de datos de archivo externo, la tarea devolverá el mensaje `Cannot perform operation: no service of type BlobGCMBean found` después de invocar. Consulte [Configuración de almacenes de nodos y almacenes de datos en AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) para obtener información sobre cómo configurar un almacén de datos de archivos.
+>La tarea de colección de residuos del almacén de datos solo se iniciará si ha configurado un almacén de datos de archivos externos. Si no se ha configurado un almacén de datos de archivo externo, la tarea devolverá el mensaje `Cannot perform operation: no service of type BlobGCMBean found` después de invocar a . Consulte [Configuración de almacenes de nodos y almacenes de datos en AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) para obtener información sobre cómo configurar un almacén de datos de archivos.
 
 ## Automatización de la colección de residuos del almacén de datos {#automating-data-store-garbage-collection}
 
 Si es posible, la colección de residuos del almacén de datos debe ejecutarse cuando haya poca carga en el sistema, por ejemplo por la mañana.
 
-La ventana de mantenimiento semanal integrada, disponible a través del [Tablero de operaciones](/help/sites-administering/operations-dashboard.md), contiene una tarea integrada para almacenar en déclencheur la colección de residuos del almacén de datos a la 1 a. m. los domingos. También debe comprobar que no hay copias de seguridad en ejecución en este momento. El inicio de la ventana de mantenimiento se puede personalizar mediante el panel de control según sea necesario.
+La ventana de mantenimiento semanal incorporada, disponible a través de la [Tablero de operaciones](/help/sites-administering/operations-dashboard.md), contiene una tarea integrada para almacenar en déclencheur la colección de residuos del almacén de datos a la 1 a. m. los domingos. También debe comprobar que no hay copias de seguridad en ejecución en este momento. El inicio de la ventana de mantenimiento se puede personalizar mediante el panel de control según sea necesario.
 
 >[!NOTE]
 >
@@ -170,7 +169,7 @@ Si no desea ejecutar la colección de residuos del almacén de datos con la vent
 
 >[!CAUTION]
 >
->En el siguiente ejemplo comandos `curl` puede que sea necesario configurar varios parámetros para la instancia; por ejemplo, el nombre de host ( `localhost`), el puerto ( `4502`), la contraseña de administrador ( `xyz`) y varios parámetros para la colección de residuos del almacén de datos real.
+>En el siguiente ejemplo `curl` comandos puede que sea necesario configurar varios parámetros para la instancia; por ejemplo, el nombre de host ( `localhost`), puerto ( `4502`), contraseña de administrador ( `xyz`) y varios parámetros para la colección de residuos del almacén de datos real.
 
 Este es un ejemplo de comando curl para invocar la colección de residuos del almacén de datos a través de la línea de comandos:
 
@@ -185,10 +184,10 @@ El comando curl devuelve inmediatamente.
 La comprobación de coherencia del almacén de datos informará de cualquier binario del almacén de datos que falte pero al que se siga haciendo referencia. Para iniciar una comprobación de coherencia, siga estos pasos:
 
 1. Vaya a la consola JMX. Para obtener información sobre cómo utilizar la consola JMX, consulte [este artículo](/help/sites-administering/jmx-console.md#using-the-jmx-console).
-1. Busque el **BlobGarbageCollection** Mbean y haga clic en él.
-1. Haga clic en el enlace `checkConsistency()`.
+1. Busque la variable **BlobGarbageCollection** Mbean y haga clic en él.
+1. Haga clic en el `checkConsistency()` vínculo.
 
-Una vez completada la comprobación de coherencia, un mensaje mostrará el número de binarios que se han notificado como faltantes. Si el número es bueno a 0, compruebe `error.log` para obtener más información sobre los binarios que faltan.
+Una vez completada la comprobación de coherencia, un mensaje mostrará el número de binarios que se han notificado como faltantes. Si el número es bueno a 0, marque la casilla `error.log` para obtener más información sobre los binarios que faltan.
 
 A continuación encontrará un ejemplo de cómo se informan los binarios que faltan en los registros:
 
@@ -199,4 +198,3 @@ A continuación encontrará un ejemplo de cómo se informan los binarios que fal
 ```xml
 11:32:39.673 WARN [main] MarkSweepGarbageCollector.java:602 Consistency check failure intheblob store : DataStore backed BlobStore [org.apache.jackrabbit.oak.plugins.blob.datastore.OakFileDataStore], check missing candidates in file /tmp/gcworkdir-1467352959243/gccand-1467352959243
 ```
-

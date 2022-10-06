@@ -1,8 +1,8 @@
 ---
 title: Habilitar el registro para formularios HTML5
-seo-title: Habilitar el registro para formularios HTML5
+seo-title: Enable logging for HTML5 forms
 description: La utilidad logger habilita el registro de un formulario y le ayuda a depurar problemas relacionados con el formulario.
-seo-description: La utilidad logger habilita el registro de un formulario y le ayuda a depurar problemas relacionados con el formulario.
+seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
 uuid: 322306ba-8ad7-463d-8a9d-4cea5a0c4b55
 contentOwner: robhagat
 content-type: reference
@@ -14,38 +14,38 @@ feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '626'
 ht-degree: 6%
 
 ---
 
 # Habilitar el registro para formularios HTML5{#enable-logging-for-html-forms}
 
-Puede configurar la utilidad del registrador para empezar a crear registros para formularios HTML5. La utilidad del registrador tiene varios niveles, puede establecer un nivel según sus necesidades. Los formularios HTML5 tienen componentes de servidor y cliente. Puede configurar los registros de ambos componentes.
+Puede configurar la utilidad del registrador para empezar a crear registros para los formularios HTML5. La utilidad del registrador tiene varios niveles, puede establecer un nivel según sus necesidades. Los formularios de HTML5 tienen componentes de servidor y cliente. Puede configurar los registros de ambos componentes.
 
-## Configuración del registro del lado del servidor {#configuring-server-side-logging}
+## Configuración del registro en el lado del servidor {#configuring-server-side-logging}
 
 Siga estos pasos para configurar los registros del lado del servidor:
 
-1. Ir a `https://'[server]:[port]'/system/console/configMgr`. Busque y abra la opción *Apace Sling logging logger configuration*. Aparecerá un cuadro de diálogo:
+1. Vaya a `https://'[server]:[port]'/system/console/configMgr`. Busque y abra el *Configuración del registrador de Sling de Apache* . Aparecerá un cuadro de diálogo:
 
    ![ Cuadro de diálogo de la opción de configuración del registrador de registros de Sling](assets/logconfig.png)
 
    Opción de configuración del registrador de registros de Sling
 
-1. Cambie **Nivel de registro** a **Depurar**.
+1. Cambie el **Nivel de registro** a **Depuración**.
 
-1. Especifique el nombre y la ruta del **Archivo de registro**.
+1. Especifique el nombre y la ruta de acceso de la variable **Archivo de registro**.
 
    >[!NOTE]
    >
-   >Para generar registros en el directorio de registro de formularios HTML5, agregue ../logs/ antes del nombre de archivo.
+   >Para generar registros en el directorio de registro de formularios de HTML5, agregue ../logs/ antes del nombre de archivo.
 
-1. Cambie **Logger** por **HTMLFormsPerfLogger**. Haga clic en **Guardar**.
+1. Cambiar **Registrador** a **HTMLFormsPerfLogger**. Haga clic en **Guardar**.
 
 ## Configuración del registro de cliente {#configuring-client-logging}
 
-Puede utilizar los siguientes métodos para habilitar el registro en el lado del cliente en formularios HTML5:
+Puede utilizar los siguientes métodos para habilitar el inicio de sesión en el lado del cliente en los formularios HTML5:
 
 * Uso del parámetro de solicitud denominado `log`
 * Uso de CQ Configuration Manager
@@ -58,7 +58,7 @@ Con este método, puede generar registros para una solicitud en particular. El n
 
 La configuración de registro está formada por el nivel de registro y la categoría del registrador.
 
-#### Destino de registro {#log-destination}
+#### Destino del registro {#log-destination}
 
 <table>
  <tbody>
@@ -68,11 +68,11 @@ La configuración de registro está formada por el nivel de registro y la catego
   </tr>
   <tr>
    <td>1</td>
-   <td>Los registros se dirigen al explorador <strong>Console</strong></td>
+   <td>Los registros se dirigen al explorador <strong>Consola</strong></td>
   </tr>
   <tr>
    <td>2</td>
-   <td>Los registros se recopilan en un objeto JavaScript del lado del cliente y se pueden publicar en <strong>Server</strong> </td>
+   <td>Los registros se recopilan en un objeto JavaScript del lado del cliente y se pueden publicar en <strong>Servidor</strong> </td>
   </tr>
   <tr>
    <td>3</td>
@@ -119,7 +119,7 @@ La configuración de registro está formada por el nivel de registro y la catego
   </tr>
   <tr>
    <td>7</td>
-   <td>TODO<br type="_moz" /> </td>
+   <td>ALL<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -163,7 +163,7 @@ Por ejemplo:
   </tr>
   <tr>
    <td>2-a4-b5-c6<br type="_moz" /> </td>
-   <td>Destino: Nivel xfa del servidor<br />: INFO<br /> xfaView level: Nivel DEBUG<br /> xfaPerf: TRACE</td>
+   <td>Destino: Servidor<br /> nivel xfa: INFORMACIÓN<br /> nivel xfaView: DEBUG<br /> nivel xfaPerf: TRACE</td>
   </tr>
  </tbody>
 </table>
@@ -180,8 +180,8 @@ Por ejemplo:
 Si utiliza Configuration Manager para habilitar el registro, se generan registros para cada solicitud de procesamiento hasta que se desactive de nuevo el registro.
 
 1. Inicie sesión en CQ Configuration Manager en `https://'[server]:[port]'/system/console/configMgr` e inicie sesión con credenciales de administrador.
-1. Busque y haga clic en **Configuraciones móviles de Forms**.
-1. En el cuadro de texto Opciones de depuración , introduzca las configuraciones de registro como se describe en la sección anterior, por ejemplo, **2-a4-b5-c6**
+1. Busque y haga clic en **Configuraciones de Forms móvil**.
+1. En el cuadro de texto Opciones de depuración , introduzca las configuraciones de registro como se describe en la sección anterior, por ejemplo: **2-a4-b5-c6**
 
    ![Configuración de formularios](assets/forms_configuration.png)
 
@@ -189,18 +189,18 @@ Si utiliza Configuration Manager para habilitar el registro, se generan registro
 
 ## Carga de registros {#uploading-logs}
 
-Si el destino se establece como 1, todos los mensajes de registro de scripts de cliente se dirigen a la consola. Si un administrador requiere estos registros junto con los registros del servidor, establezca el nivel de destino en 2. En este nivel, todos los registros se recopilan en un objeto JS del lado del cliente y si el formulario se procesa con el perfil predeterminado, aparece un botón **Send Logs** a la izquierda del botón **Highlight Existing Fields** en la barra de herramientas. Cuando el usuario hace clic en el vínculo, todos los registros recopilados se publican en el servidor y se registran en el archivo de registro de errores configurado en el servidor.
+Si el destino se establece como 1, todos los mensajes de registro de scripts de cliente se dirigen a la consola. Si un administrador requiere estos registros junto con los registros del servidor, establezca el nivel de destino en 2. En este nivel, todos los registros se recopilan en un objeto JS del lado del cliente y si el formulario se procesa con el perfil predeterminado, se crea un **Enviar registros** aparece a la izquierda de **Resaltar campos existentes** en la barra de herramientas. Cuando el usuario hace clic en el vínculo, todos los registros recopilados se publican en el servidor y se registran en el archivo de registro de errores configurado en el servidor.
 
 De forma predeterminada, toda la información se agrega al archivo error.log en el directorio /crx-repository/logs/ .
 
 Para cambiar la ubicación y el nombre del archivo de registro:
 
-1. Inicie sesión en Configuration Manager como administrador. La dirección URL predeterminada de Configuration Manager es `https://'[server]:[port]'/system/console/configMgr`.
+1. Inicie sesión en Configuration Manager como administrador. La dirección URL predeterminada del Administrador de configuración es `https://'[server]:[port]'/system/console/configMgr`.
 1. Haga clic en **Configuración del registrador de Apache Sling**. Aparecerá un cuadro de diálogo.
 
    ![logconfig-1](assets/logconfig-1.png)
 
-1. Cambie **Log Level** a Debug.
+1. Cambie el **Nivel de registro** a Debug.
 
 1. Especifique la ruta y el nombre del **Archivo de registro**.
 
@@ -208,4 +208,4 @@ Para cambiar la ubicación y el nombre del archivo de registro:
    >
    >Para crear registros en el mismo directorio donde se guardan otros archivos de registro, especifique ../logs/&lt;filename> en la propiedad Archivos de registro.
 
-1. Cambie **Logger** a **HTMLFormsPerfLogger** y haga clic en **Guardar**.
+1. Cambie el **Registrador** a **HTMLFormsPerfLogger** y haga clic en **Guardar**.

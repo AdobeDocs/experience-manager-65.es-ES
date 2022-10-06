@@ -1,10 +1,11 @@
 ---
 title: Cómo modelar el contenido
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a modelar el contenido para AEM entrega sin encabezado mediante Modelado de contenido con modelos de fragmentos de contenido y fragmentos de contenido.
-source-git-commit: 0458a811b5bd062abbe8a42ec141bc786491e19e
+exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -182,7 +183,7 @@ AEM proporciona los siguientes tipos de datos para modelar el contenido:
 * Número
 * Booleano
 * Fecha y hora
-* Enumeración
+* Lista desglosada
 * Etiquetas
 * Referencia de contenido
 * Referencia al fragmento
@@ -199,9 +200,9 @@ Por ejemplo, puede hacer referencia a una imagen en una ubicación específica.
 * **Referencia de fragmento**
 Esto proporciona referencias a otros fragmentos de contenido.
 Este tipo de referencia se utiliza para crear contenido anidado y presenta las relaciones necesarias para modelar el contenido.
-El tipo de datos se puede configurar para que los autores de fragmentos puedan:
-   * Edite directamente el fragmento al que se hace referencia.
-   * Cree un nuevo fragmento de contenido basado en el modelo apropiado
+El tipo de datos se puede configurar para que los autores de fragmentos puedan hacer lo siguiente:
+   * Editar directamente el fragmento al que se hace referencia.
+   * Crear un nuevo fragmento de contenido basado en el modelo apropiado
 
 ### Creación de modelos de fragmento de contenido {#creating-content-fragment-models}
 
@@ -241,13 +242,13 @@ Una vez creado el fragmento, puede abrirlo en el Editor de fragmentos de conteni
 * Asociar contenido.
 * Edite los metadatos.
 * Mostrar la estructura de árbol.
-* Obtenga una vista previa de la representación JSON.
+* Previsualización de la representación JSON.
 
 ### Creación de fragmentos de contenido {#creating-content-fragments}
 
 Después de seleccionar el modelo adecuado, se abre un fragmento de contenido para editarlo en el Editor de fragmentos de contenido:
 
-![Editor de fragmento de contenido](assets/cfm-editor.png)
+![Editor de fragmentos de contenido](assets/cfm-editor.png)
 
 >[!NOTE]
 >
@@ -275,5 +276,5 @@ Ahora que ha aprendido a modelar su estructura y a crear contenido en función d
    * [Administración de fragmentos de contenido](/help/assets/content-fragments/content-fragments-managing.md) - crear y crear fragmentos de contenido; esta página le llevará a otras secciones detalladas
 * [Esquemas de AEM GraphQL](access-your-content.md) - cómo GraphQL realiza los modelos
 * [La estructura de fragmento de contenido de ejemplo](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) : una breve serie de tutoriales de vídeo que ofrecen información general sobre el uso de AEM funciones sin encabezado, incluidos el modelado de contenido y GraphQL
+* [Introducción a AEM sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=es) : una breve serie de tutoriales de vídeo que ofrecen información general sobre el uso de AEM funciones sin encabezado, incluidos el modelado de contenido y GraphQL
    * [Conceptos básicos de modelos de GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - Aprenda a definir y utilizar fragmentos de contenido en Adobe Experience Manager (AEM) para utilizarlos con GraphQL.

@@ -21,40 +21,40 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-Los formularios adaptables aprovechan la [estructura de aspecto](/help/forms/using/introduction-widgets.md) para ayudarle a crear aspectos personalizados para los campos de formulario adaptables y proporcionar una experiencia de usuario diferente. Por ejemplo, reemplace los botones de opción y las casillas de verificación con botones de alternancia o utilice complementos jQuery personalizados para restringir las entradas de los usuarios en campos como números de teléfono o ID de correo electrónico.
+Los formularios adaptables aprovechan el [marco de trabajo de apariencia](/help/forms/using/introduction-widgets.md) para ayudarle a crear aspectos personalizados para campos de formulario adaptables y proporcionar una experiencia de usuario diferente. Por ejemplo, reemplace los botones de opción y las casillas de verificación con botones de alternancia o utilice complementos jQuery personalizados para restringir las entradas de los usuarios en campos como números de teléfono o ID de correo electrónico.
 
 En este documento se explica cómo utilizar un complemento jQuery para crear estas experiencias alternativas para campos de formulario adaptables. Además, muestra un ejemplo para crear un aspecto personalizado para que el componente de campo numérico aparezca como un paso numérico o un control deslizante.
 
 Veamos primero los términos y conceptos clave utilizados en este artículo.
 
-**** AspectoSe refiere al estilo, el aspecto y la organización de varios elementos de un campo de formulario adaptable. Normalmente incluye una etiqueta, un área interactiva para proporcionar entradas, un icono de ayuda y descripciones cortas y largas del campo. La personalización del aspecto que se describe en este artículo es aplicable al aspecto del área de entrada del campo.
+**Aspecto** Se refiere al estilo, la apariencia y la organización de varios elementos de un campo de formulario adaptable. Normalmente incluye una etiqueta, un área interactiva para proporcionar entradas, un icono de ayuda y descripciones cortas y largas del campo. La personalización del aspecto que se describe en este artículo es aplicable al aspecto del área de entrada del campo.
 
-**Complemento** jQueryProporciona un mecanismo estándar, basado en el marco del widget jQuery, para implementar un aspecto alternativo.
+**Complemento jQuery** Proporciona un mecanismo estándar, basado en el marco del widget jQuery, para implementar un aspecto alternativo.
 
-**** Sistema de bibliotecas clienteLibA del lado del cliente en AEM procesamiento del lado del cliente impulsado por complejos códigos JavaScript y CSS. Para obtener más información, consulte Uso de bibliotecas del lado del cliente.
+**ClientLib** Un sistema de bibliotecas del lado del cliente en AEM procesamiento del lado del cliente impulsado por código CSS y JavaScript complejo. Para obtener más información, consulte Uso de bibliotecas del lado del cliente.
 
-**** Tipo de archivoKit de herramientas de creación de plantillas de proyecto de Maven definido como un patrón o modelo original para los proyectos de Maven. Para obtener más información, consulte Introducción a los tipos de archivo.
+**Tipo de archivo** Conjunto de herramientas de creación de plantillas de proyecto de Maven definido como patrón o modelo original para los proyectos de Maven. Para obtener más información, consulte Introducción a los tipos de archivo.
 
-**Control de** usuarioSe refiere al elemento principal de una utilidad que contiene el valor del campo y el marco de trabajo de aspecto lo utiliza para enlazar la interfaz de usuario de la utilidad personalizada con el modelo de formulario adaptable.
+**Control de usuario** Se refiere al elemento principal de una utilidad que contiene el valor del campo y se utiliza en la estructura de aspecto para enlazar la interfaz de usuario del widget personalizado con el modelo de formulario adaptable.
 
 ## Pasos para crear un aspecto personalizado {#steps-to-create-a-custom-appearance}
 
 Los pasos, en un nivel superior, para crear un aspecto personalizado son los siguientes:
 
 1. **Crear un proyecto**: Cree un proyecto de Maven que genere un paquete de contenido para implementarlo en AEM.
-1. **Ampliar una clase** de utilidad existente: Amplíe una clase de widget existente y anule las clases requeridas.
-1. **Crear una biblioteca** de cliente: Cree una  `clientLib: af.customwidget` biblioteca y añada los archivos JavaScript y CSS necesarios.
+1. **Ampliar una clase de utilidad existente**: Amplíe una clase de widget existente y anule las clases requeridas.
+1. **Crear una biblioteca de cliente**: Cree un `clientLib: af.customwidget` y añada los archivos JavaScript y CSS necesarios.
 
-1. **Cree e instale el proyecto**: Cree el proyecto Maven e instale el paquete de contenido generado en AEM.
-1. **Actualice el formulario** adaptable: Actualice las propiedades del campo del formulario adaptable para utilizar el aspecto personalizado.
+1. **Creación e instalación del proyecto**: Cree el proyecto Maven e instale el paquete de contenido generado en AEM.
+1. **Actualizar el formulario adaptable**: Actualice las propiedades del campo del formulario adaptable para utilizar el aspecto personalizado.
 
 ### Crear un proyecto {#create-a-project}
 
 Un tipo de archivo maven es un punto de partida para crear un aspecto personalizado. Los detalles del tipo de archivo a utilizar son los siguientes:
 
 * **Repositorio**: https://repo1.maven.org/maven2/com/adobe/
-* **Id** de artefacto: custom-appearance-archetype
-* **Id** De Grupo: com.adobe.aemforms
+* **Id. de artefacto**: custom-appearance-archetype
+* **ID de grupo**: com.adobe.aemforms
 * **Versión**: 1.0.4
 
 Ejecute el siguiente comando para crear un proyecto local basado en el tipo de archivo:
@@ -65,11 +65,11 @@ El comando descarga los complementos de Maven y la información del tipo de arch
 
 * **groupId**: ID de grupo utilizado por el proyecto Maven generado
 * **artifactId**: ID de artefacto utilizado por el proyecto Maven generado.
-* **versión**: Versión del proyecto Maven generado.
+* **version**: Versión del proyecto Maven generado.
 * **paquete**: Paquete utilizado para la estructura de archivos.
 * **artifactName**: Nombre del artefacto del paquete de AEM generado.
 * **packageGroup**: Grupo de paquetes del paquete de AEM generado.
-* **Nombre** de la utilidad: Nombre de aspecto que se utiliza como referencia.
+* **NombreWidget**: Nombre de aspecto que se utiliza como referencia.
 
 El proyecto generado tiene la siguiente estructura:
 
@@ -113,9 +113,9 @@ Una vez creada la plantilla del proyecto, realice los cambios siguientes según 
 
 1. Incluya la dependencia del complemento de terceros al proyecto.
 
-   1. Coloque los complementos de jQuery personalizados o de terceros en la carpeta `jqueryplugin/javascript` y los archivos CSS relacionados en la carpeta `jqueryplugin/css` . Para obtener más información, consulte los archivos JS y CSS en la carpeta `jqueryplugin/javascript and jqueryplugin/css` .
+   1. Coloque los complementos de jQuery personalizados o de terceros en la variable `jqueryplugin/javascript` carpeta y archivos CSS relacionados en la `jqueryplugin/css` carpeta. Para obtener más información, consulte los archivos JS y CSS en la sección `jqueryplugin/javascript and jqueryplugin/css` carpeta.
 
-   1. Modifique los archivos `js.txt` y `css.txt` para incluir cualquier archivo JavaScript y CSS adicional del complemento jQuery.
+   1. Modifique el `js.txt` y `css.txt` para incluir cualquier archivo JavaScript y CSS adicional del complemento jQuery.
 
 1. Integre el complemento de terceros con el marco para permitir la interacción entre el marco de aspecto personalizado y el complemento jQuery. El nuevo widget solo funcionará después de ampliar o anular las siguientes funciones.
 
@@ -127,13 +127,13 @@ Una vez creada la plantilla del proyecto, realice los cambios siguientes según 
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>La función render devuelve el objeto jQuery para el elemento HTML predeterminado del widget. El elemento HTML predeterminado debe ser de tipo enfocable. Por ejemplo, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> y <code>&lt;li&gt;</code>. El elemento devuelto se usa como <code>$userControl</code>. Si <code>$userControl</code> especifica la restricción anterior, las funciones de la clase <code>AbstractWidget</code> funcionan como se espera, de lo contrario, algunas de las API comunes (enfoque, clic) requieren cambios. </td>
+   <td>La función render devuelve el objeto jQuery para el elemento HTML predeterminado del widget. El elemento HTML predeterminado debe ser de tipo enfocable. Por ejemplo, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>y <code>&lt;li&gt;</code>. El elemento devuelto se usa como <code>$userControl</code>. Si la variable <code>$userControl</code> especifica la restricción anterior, las funciones del <code>AbstractWidget</code> funciona como se espera, de lo contrario, algunas de las API comunes (enfoque, clic) requieren cambios. </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
    <td>Devuelve un mapa para convertir eventos de HTML en eventos XFA. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Este ejemplo muestra que  <code>blur</code> es un evento de HTML y  <code>XFA_EXIT_EVENT</code> es el evento XFA correspondiente. </td>
+      }</code><br /> Este ejemplo muestra que <code>blur</code> es un evento de HTML y <code>XFA_EXIT_EVENT</code> es el evento XFA correspondiente. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -145,32 +145,32 @@ Una vez creada la plantilla del proyecto, realice los cambios siguientes según 
   </tr>
   <tr>
    <td><code>showValue</code></td>
-   <td>De forma predeterminada, en XFA en el suceso enter , se muestra el <code>rawValue</code> del campo. Se llama a esta función para mostrar el <code>rawValue</code> al usuario. </td>
+   <td>De forma predeterminada, en XFA en el evento enter , la variable <code>rawValue</code> del campo . Esta función se llama para mostrar la variable <code>rawValue</code> al usuario. </td>
   </tr>
   <tr>
    <td><code>showDisplayValue</code></td>
-   <td>De forma predeterminada, en XFA en el evento exit , se muestra el <code>formattedValue</code> del campo . Se llama a esta función para mostrar el <code>formattedValue</code> al usuario. </td>
+   <td>De forma predeterminada, en XFA en el evento de salida, la variable <code>formattedValue</code> del campo . Esta función se llama para mostrar la variable <code>formattedValue</code> al usuario. </td>
   </tr>
  </tbody>
 </table>
 
-1. Actualice el archivo JavaScript en la carpeta `integration/javascript` según sea necesario.
+1. Actualice el archivo JavaScript en la sección `integration/javascript` , según sea necesario.
 
-   * Reemplace el texto `__widgetName__` por el nombre real del widget.
-   * Amplíe el widget desde una clase de utilidad predeterminada adecuada. En la mayoría de los casos, es la clase de utilidad correspondiente al widget existente que se está reemplazando. El nombre de clase principal se utiliza en varias ubicaciones, por lo que se recomienda buscar todas las instancias de la cadena `xfaWidget.textField` en el archivo y sustituirlas por la clase principal real utilizada.
-   * Amplíe el método `render` para proporcionar una interfaz de usuario alternativa. Es la ubicación desde la que se invocará el complemento jQuery para actualizar la interfaz de usuario o el comportamiento de la interacción. El método `render` debe devolver un elemento de control de usuario.
+   * Reemplazar el texto `__widgetName__` con el nombre real del widget.
+   * Amplíe el widget desde una clase de utilidad predeterminada adecuada. En la mayoría de los casos, es la clase de utilidad correspondiente al widget existente que se está reemplazando. El nombre de clase principal se utiliza en varias ubicaciones, por lo que se recomienda buscar todas las instancias de la cadena `xfaWidget.textField` en el archivo y sustitúyalo por la clase principal real utilizada.
+   * Amplíe el `render` para proporcionar una interfaz de usuario alternativa. Es la ubicación desde la que se invocará el complemento jQuery para actualizar la interfaz de usuario o el comportamiento de la interacción. La variable `render` debe devolver un elemento de control de usuario.
 
-   * Amplíe el método `getOptionsMap` para anular cualquier configuración de opción afectada debido a un cambio en el widget. La función devuelve una asignación que proporciona detalles para que la acción se realice al cambiar una opción. Las claves son las opciones proporcionadas al widget y los valores son las funciones a las que se llama cada vez que se detecta un cambio en la opción.
-   * El método `getEventMap` asigna los eventos activados por el widget, con los eventos requeridos por el modelo de formulario adaptable. El valor predeterminado asigna eventos de HTML estándar para el widget predeterminado y debe actualizarse si se activa un evento alternativo.
-   * Los `showDisplayValue` y `showValue` aplican la cláusula de visualización y edición de imagen y se pueden sobrescribir para tener un comportamiento alternativo.
+   * Amplíe el `getOptionsMap` para anular cualquier configuración de opción afectada por un cambio en el widget. La función devuelve una asignación que proporciona detalles para que la acción se realice al cambiar una opción. Las claves son las opciones proporcionadas al widget y los valores son las funciones a las que se llama cada vez que se detecta un cambio en la opción.
+   * La variable `getEventMap` asigna los eventos activados por el widget, con los eventos requeridos por el modelo de formulario adaptable. El valor predeterminado asigna eventos de HTML estándar para el widget predeterminado y debe actualizarse si se activa un evento alternativo.
+   * La variable `showDisplayValue` y `showValue` aplique la cláusula de visualización y edición de imagen y se puede sobrescribir para que tenga un comportamiento alternativo.
 
-   * El marco de formularios adaptables llama al método `getCommitValue` cuando se produce el evento `commit`. Generalmente, es el evento de salida, excepto para los elementos de lista desplegable, botón de radio y casilla de verificación donde se produce al cambiar). Para obtener más información, consulte [expresiones adaptables de Forms](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
+   * La variable `getCommitValue` es invocado por el marco de formularios adaptables cuando `commit`se produce. Generalmente, es el evento de salida, excepto para los elementos de lista desplegable, botón de radio y casilla de verificación donde se produce al cambiar). Para obtener más información, consulte [Expresiones adaptables de Forms](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
 
    * El archivo de plantilla proporciona implementación de muestra para varios métodos. Elimine los métodos que no se van a ampliar.
 
 ### Crear una biblioteca de cliente {#create-a-client-library}
 
-El proyecto de ejemplo generado por el tipo de archivo Maven crea automáticamente las bibliotecas de cliente necesarias y las envuelve en una biblioteca de cliente con una categoría `af.customwidgets`. Los archivos JavaScript y CSS disponibles en `af.customwidgets` se incluyen automáticamente en el tiempo de ejecución.
+El proyecto de ejemplo generado por el tipo de archivo Maven crea automáticamente las bibliotecas de cliente necesarias y las envuelve en una biblioteca de cliente con una categoría `af.customwidgets`. Los archivos JavaScript y CSS disponibles en la variable `af.customwidgets` se incluyen automáticamente durante la ejecución.
 
 ### Generar e instalar {#build-and-install}
 
@@ -180,15 +180,15 @@ Para crear el proyecto, ejecute el siguiente comando en el shell para generar un
 
 >[!NOTE]
 >
->El proyecto maven hace referencia a un repositorio remoto dentro del archivo POM. Esto es solo para fines de referencia y según los estándares de Maven, la información del repositorio se captura en el archivo `settings.xml`.
+>El proyecto maven hace referencia a un repositorio remoto dentro del archivo POM. Esto es solo para fines de referencia y según los estándares Maven, la información del repositorio se captura en la variable `settings.xml` archivo.
 
 ### Actualizar el formulario adaptable {#update-the-adaptive-form}
 
 Para aplicar el aspecto personalizado a un campo de formulario adaptable:
 
 1. Abra el formulario adaptable en modo de edición.
-1. Abra el cuadro de diálogo **Propiedad** para el campo en el que desea aplicar el aspecto personalizado.
-1. En la pestaña **Styling**, actualice la propiedad `CSS class` para añadir el nombre del aspecto en el formato `widget_<widgetName>`. Por ejemplo: **widget_numericstep**
+1. Abra el **Propiedad** para el campo en el que desea aplicar el aspecto personalizado.
+1. En el **Estilo** , actualice el `CSS class` para agregar el nombre del aspecto en la variable `widget_<widgetName>` formato. Por ejemplo: **widget_numericstep**
 
 ## Ejemplo: Crear un aspecto personalizado   {#sample-create-a-custom-appearance-nbsp}
 
@@ -215,17 +215,17 @@ Veamos un ejemplo para crear un aspecto personalizado para que un campo numéric
 
    `Define value for property 'widgetName': numericStepper`
 
-1. Vaya al directorio `customWidgets` (valor especificado para la propiedad `artifactID` ) y ejecute el siguiente comando para generar un proyecto de Eclipse:
+1. Vaya a la `customWidgets` (valor especificado para la variable `artifactID` ) y ejecute el siguiente comando para generar un proyecto Eclipse:
 
    `mvn eclipse:eclipse`
 
 1. Abra la herramienta Eclipse y haga lo siguiente para importar el proyecto Eclipse:
 
-   1. Seleccione **[!UICONTROL Archivo > Importar > Proyectos existentes en Workspace]**.
+   1. Select **[!UICONTROL Archivo > Importar > Proyectos existentes en Workspace]**.
 
-   1. Busque y seleccione la carpeta en la que ejecutó el comando `archetype:generate`.
+   1. Busque y seleccione la carpeta en la que ejecutó la `archetype:generate` comando.
 
-   1. Haga clic en **[!UICONTROL Finish]**.
+   1. Haga clic en **[!UICONTROL Finalizar]**.
 
       ![captura de pantalla de eclipse](assets/eclipse-screenshot.png)
 
@@ -233,20 +233,20 @@ Veamos un ejemplo para crear un aspecto personalizado para que un campo numéric
 
    [https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html](https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html)
 
-   En el proyecto Eclipse, revise el código del complemento en el archivo `plugin.js` para asegurarse de que coincida con los requisitos del aspecto. En este ejemplo, el aspecto visual cumple los siguientes requisitos:
+   En el proyecto Eclipse, revise el código del complemento en la `plugin.js` para asegurarse de que coincide con los requisitos del aspecto. En este ejemplo, el aspecto visual cumple los siguientes requisitos:
 
    * El paso numérico debe extenderse desde `- $.xfaWidget.numericInput`.
-   * El método `set value` del widget define el valor después de que el foco esté en el campo. Es un requisito obligatorio para un widget de formulario adaptable.
-   * Se debe sobrescribir el método `render` para invocar el método `bootstrapNumber`.
+   * La variable `set value` del widget define el valor después de que el foco esté en el campo. Es un requisito obligatorio para un widget de formulario adaptable.
+   * La variable `render` debe anularse para invocar el método `bootstrapNumber` método.
 
    * No hay dependencia adicional para el complemento que no sea el código fuente principal del complemento.
    * El ejemplo no realiza ningún estilo en el paso, por lo que no se requiere CSS adicional.
-   * El objeto `$userControl` debe estar disponible para el método `render`. Es un campo del tipo `text` que se clona con el código del complemento.
+   * La variable `$userControl` debe estar disponible para el `render` método. Es un campo del `text` tipo que se clona con el código del complemento.
 
-   * Los botones **+** y **-** deben desactivarse cuando el campo esté desactivado.
+   * La variable **+** y **-** Los botones deben desactivarse cuando el campo esté desactivado.
 
-1. Reemplace el contenido del `bootstrap-number-input.js` (complemento jQuery) con el contenido del archivo `numericStepper-plugin.js`.
-1. En el archivo `numericStepper-widget.js`, añada el siguiente código para anular el método de renderización y invocar el complemento y devolver el objeto `$userControl`:
+1. Reemplace el contenido del `bootstrap-number-input.js` (Complemento jQuery) con el contenido del `numericStepper-plugin.js` archivo.
+1. En el `numericStepper-widget.js` , añada el siguiente código para anular el método render para invocar el complemento y devolver el `$userControl` objeto:
 
    ```javascript
    render : function() {
@@ -266,7 +266,7 @@ Veamos un ejemplo para crear un aspecto personalizado para que un campo numéric
    }
    ```
 
-1. En el archivo `numericStepper-widget.js`, anule la propiedad `getOptionsMap` para anular la opción de acceso y oculte los botones + y - en modo desactivado.
+1. En el `numericStepper-widget.js` , omita el `getOptionsMap` para anular la opción de acceso y ocultar los botones + y - en modo desactivado.
 
    ```javascript
    getOptionsMap: function(){
@@ -308,7 +308,7 @@ Veamos un ejemplo para crear un aspecto personalizado para que un campo numéric
     }
    ```
 
-1. Guarde los cambios, vaya a la carpeta que contiene el archivo `pom.xml` y ejecute el siguiente comando Maven para crear el proyecto:
+1. Guarde los cambios, vaya a la carpeta que contiene el `pom.xml` y ejecute el siguiente comando Maven para crear el proyecto:
 
    `mvn clean install`
 
@@ -316,8 +316,8 @@ Veamos un ejemplo para crear un aspecto personalizado para que un campo numéric
 
 1. Abra el formulario adaptable en modo de edición en el que desee aplicar el aspecto personalizado y haga lo siguiente:
 
-   1. Haga clic con el botón derecho en el campo en el que desee aplicar el aspecto y haga clic en **[!UICONTROL Editar]** para abrir el cuadro de diálogo Editar componente.
+   1. Haga clic con el botón derecho en el campo en el que desee aplicar la apariencia y haga clic en **[!UICONTROL Editar]** para abrir el cuadro de diálogo Editar componente.
 
-   1. En la pestaña Estilo , actualice la propiedad **[!UICONTROL CSS class]** para añadir `widget_numericStepper`.
+   1. En la pestaña Estilo , actualice la variable **[!UICONTROL Clase CSS]** propiedad para agregar `widget_numericStepper`.
 
 La nueva apariencia que acaba de crear ya está disponible para su uso.

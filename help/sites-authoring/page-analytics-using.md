@@ -1,8 +1,8 @@
 ---
 title: Visualización de datos de análisis de la página
-seo-title: Visualización de datos de análisis de la página
+seo-title: Seeing Page Analytics Data
 description: Utilice los datos de análisis de la página para medir la eficacia del contenido de la página.
-seo-description: Utilice los datos de análisis de la página para medir la eficacia del contenido de la página.
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 5398a5d5-0239-4194-a403-77f5e6fcd741
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ topic-tags: site-features
 discoiquuid: 5d192a48-c86f-4803-bb0d-0411ac7470f5
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
-translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '440'
 ht-degree: 86%
 
 ---
-
 
 # Visualización de datos de análisis de la página{#seeing-page-analytics-data}
 
@@ -40,7 +39,7 @@ Cada columna muestra un valor para el período de notificación actual, y tambi�
 >
 >Para cambiar el período de actualización, [configure el intervalo de importación](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Abra la consola **Sites**; por ejemplo [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
+1. Abra el **Sitios** consola; por ejemplo [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
 1. En el extremo derecho de la barra de herramientas (esquina superior derecha), pulse o haga clic en el icono para seleccionar **Vista de lista** (el icono mostrado dependerá de la [vista actual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)). 
 
 1. Una vez más, en el extremo derecho de la barra de herramientas (esquina superior derecha), haga clic o pulse el icono y seleccione **Ver configuración**. Se abrirá el diálogo **Configurar columnas**. Realice los cambios necesarios y confírmelos con **Actualizar**.
@@ -67,7 +66,7 @@ Los miembros del grupo de usuarios de administradores analíticos pueden configu
 >
 >Cuando un árbol de páginas contiene elementos secundarios asociados a distintas configuraciones de la nube de Adobe Analytics, no puede configurar las columnas de datos disponibles para las páginas.
 
-1. En la Vista de Lista, utilice los selectores de vista (derecha de la barra de herramientas), seleccione **Configuración de Vista** y, a continuación, **Añada Datos de análisis personalizados**.
+1. En la vista de lista, utilice los selectores de vista (derecha de la barra de herramientas) y seleccione **Configuración de vista** y luego **Añadir datos de análisis personalizados**.
 
    ![spad-03](assets/spad-03.png)
 
@@ -79,17 +78,17 @@ Los miembros del grupo de usuarios de administradores analíticos pueden configu
 
 ### Abrir la información del contenido desde Sitios {#opening-content-insights-from-sites}
 
-Abra [Content Insight](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
+Apertura [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
 
 1. En la consola de Sitios, seleccione la página en la cual quiera ver la información del contenido.
 1. En la barra de herramientas, haga clic en el icono de análisis y recomendaciones.
 
    ![](do-not-localize/chlimage_1-14.png)
 
-## Análisis visible desde el editor de páginas (mapa de actividad)  {#analytics-visible-from-the-page-editor-activity-map}
+## Análisis visible desde el editor de páginas (mapa de actividad) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
 >
->Ahora debe utilizarse el [complemento de ActivityMap proporcionado por Adobe Analytics](https://docs.adobe.com/content/help/es-ES/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.translate.html).
+>La variable [Complemento Activity Map proporcionado por Adobe Analytics](https://docs.adobe.com/content/help/es-ES/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.translate.html) debe usarse ahora.

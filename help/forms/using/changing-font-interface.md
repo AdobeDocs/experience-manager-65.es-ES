@@ -1,8 +1,8 @@
 ---
 title: Cambio de la fuente en la interfaz
-seo-title: Cambio de la fuente en la interfaz
+seo-title: Changing the font on the interface
 description: Cómo cambiar las fuentes en la interfaz de usuario de forma selectiva.
-seo-description: Cómo cambiar las fuentes en la interfaz de usuario de forma selectiva.
+seo-description: How to change the fonts on the user interface selectively.
 uuid: 421fdd24-441a-4092-8c52-f3ed3d5d5671
 contentOwner: robhagat
 content-type: reference
@@ -10,26 +10,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 226f70f0-8eb4-4724-b496-5801dc6b436f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '276'
 ht-degree: 1%
 
 ---
-
 
 # Cambio de la fuente en la interfaz{#changing-the-font-on-the-interface}
 
 Puede cambiar la fuente que se muestra en el espacio de trabajo de AEM Forms. Las fuentes utilizadas en una sección específica de la interfaz de usuario se definen en la sección correspondiente de la hoja de estilo. Puede cambiar las fuentes de la interfaz de usuario de forma selectiva.
 
-Siga los [pasos genéricos para la personalización del espacio de trabajo de AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) y, según sus necesidades, siga los pasos para personalizar CSS, HTML o ambos.
+Siga las [Pasos genéricos para la personalización del espacio de trabajo de AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) y según sus necesidades, siga los pasos para personalizar CSS, HTML o ambos.
 
 1. Cambie o agregue la familia de fuentes en un estilo existente.
 1. Cambie o agregue la familia de fuentes en línea para el elemento HTML.
-1. Añada un estilo y úselo para el elemento HTML.
+1. Añada un estilo y utilícelo para el elemento HTML.
 
-Por ejemplo, para cambiar la fuente del texto del anclaje de la barra de navegación superior a Courier New, siga estos pasos:
+Por ejemplo, para cambiar la fuente del texto de anclaje de la barra de navegación superior a Courier New, siga estos pasos:
 
 1. Inicie sesión en el CRXDE Lite accediendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Realice una de las acciones siguientes:
@@ -42,7 +41,7 @@ Por ejemplo, para cambiar la fuente del texto del anclaje de la barra de navegac
       }
       ```
 
-   1. Para agregar la familia de fuentes en línea para el elemento HTML, copie el archivo `/libs/ws/js/runtime/templates/appnavigation.html` en `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Para añadir la familia de fuentes en línea para el elemento HTML, copie el `/libs/ws/js/runtime/templates/appnavigation.html` a `/apps/ws/js/runtime/templates/appnavigation.html`.
 
       Actualice el archivo /apps/ws/js/runtime/templates/appnavigation.html de la siguiente manera:
 
@@ -53,9 +52,9 @@ Por ejemplo, para cambiar la fuente del texto del anclaje de la barra de navegac
       <li class="preference"><a href="#/preferences" title="<%= $.t('index.header.topnav.preferences.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.preferences.name')%></a></li>
       ```
 
-      Abra el archivo /apps/ws/js/registry.js para editarlo y reemplace `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` por `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
+      Abra el archivo /apps/ws/js/registry.js para editarlo y reemplazarlo `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` con `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
-   1. Para agregar un estilo que defina la familia de fuentes, agregue lo siguiente en el archivo newStyle.css en /apps/ws/css.
+   1. Para añadir un estilo que defina la familia de fuentes, añada lo siguiente en el archivo newStyle.css en /apps/ws/css.
 
       ```css
       .myNewFontStyle a {
@@ -63,7 +62,7 @@ Por ejemplo, para cambiar la fuente del texto del anclaje de la barra de navegac
       }
       ```
 
-      Para agregar la familia de fuentes en línea para el elemento HTML, agregue lo siguiente en el archivo appnavigation.html en /apps/ws/js/Runtime/templates.
+      Para añadir la familia de fuentes en línea para el elemento HTML, añada lo siguiente en el archivo appnavigation.html en /apps/ws/js/runtime/templates.
 
       ```jsp
       <div id="topnav" class="myNewFontStyle">
@@ -76,11 +75,11 @@ Por ejemplo, para cambiar la fuente del texto del anclaje de la barra de navegac
       </div>
       ```
 
-1. Vuelva a iniciar el espacio de trabajo y borre la caché del explorador para que los cambios estén visibles.
+1. Vuelva a iniciar el espacio de trabajo y borre la caché del explorador para que los cambios sean visibles.
 
 ![change_font_before](assets/change_font_before.png)
 
-Barra de navegación superior antes de personalizar la fuente
+Barra de navegación superior antes de la personalización de la fuente
 
 ![change_font_after](assets/change_font_after.png)
 

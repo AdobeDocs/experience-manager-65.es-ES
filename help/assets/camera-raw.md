@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Adobe Camera Raw] compatibilidad para procesar recursos digitales"'
+title: "[!DNL Adobe Camera Raw] compatibilidad para procesar recursos digitales"
 description: Obtenga información sobre cómo habilitar [!DNL Adobe Camera Raw] compatibilidad con [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 role: Admin

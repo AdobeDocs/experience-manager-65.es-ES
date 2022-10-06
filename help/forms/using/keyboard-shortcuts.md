@@ -1,22 +1,21 @@
 ---
 title: Atajos de teclado de AEM Forms
-seo-title: Atajos de teclado de AEM Forms
+seo-title: AEM Forms Keyboard Shortcuts
 description: En este artículo se enumeran los métodos abreviados del teclado que se pueden usar con el Editor de formularios adaptables, el Editor de temas, el Explorador de contenido y la Gestión de correspondencia para los sistemas operativos Windows y Macintosh.
-seo-description: En este artículo se enumeran los métodos abreviados del teclado que se pueden usar con el Editor de formularios adaptables, el Editor de temas, el Explorador de contenido y la Gestión de correspondencia.
+seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1147'
 ht-degree: 12%
 
 ---
-
 
 # Atajos de teclado de AEM Forms {#aem-forms-keyboard-shortcuts}
 
@@ -24,7 +23,7 @@ En este artículo se enumeran los métodos abreviados del teclado que se pueden 
 
 ## Editor de formularios adaptables {#adaptiveformeditor}
 
-| **Acción** | **Acceso directo en Windows** | **Método abreviado en Mac OS** |
+| **Acción** | **Acceso directo en Windows** | **Método abreviado en el sistema operativo Mac** |
 |---|---|---|
 | Abra el navegador Propiedades para el componente de formulario adaptable seleccionado | Alt + Intro | Alt + Retorno |
 | Cerrar navegador Propiedades para el componente de formulario adaptable seleccionado | Ctrl + Alt + W | Comando + Alt + W |
@@ -45,22 +44,20 @@ En este artículo se enumeran los métodos abreviados del teclado que se pueden 
 
 >[!NOTE]
 >
->Los accesos directos marcados con &quot;&amp;ast;&quot; funcionan tanto con las teclas Ctrl como Comando en Mac OS.
+>Los métodos abreviados marcados con &#39;&amp;ast;&#39; funcionan tanto con las teclas Ctrl como Comando en el sistema operativo Mac.
 
 >[!NOTE]
 >
 >Selección múltiple en un dispositivo de escritorio:
 >
 >* Windows: Ctrl + clic en los componentes necesarios.
->* MAC OS: Comando + clic en los componentes necesarios.
-
+>* Sistema operativo Mac: Comando + clic en los componentes necesarios.
 >
-
 
 
 ## Editor de temas  {#themeeditor}
 
-| **Acción** | **Acceso directo en Windows** | **Método abreviado en Mac OS** |
+| **Acción** | **Acceso directo en Windows** | **Método abreviado en el sistema operativo Mac** |
 |---|---|---|
 | Abra el navegador de propiedades del componente seleccionado en un tema | Alt + Intro | Alt + Retorno |
 | Cerrar el navegador de propiedades del componente seleccionado en un tema | Ctrl + Alt + W | Comando + Alt + W |
@@ -70,11 +67,11 @@ En este artículo se enumeran los métodos abreviados del teclado que se pueden 
 
 >[!NOTE]
 >
->Los accesos directos marcados con &quot;&amp;ast;&quot; funcionan tanto con las teclas Ctrl como Comando en Mac OS.
+>Los métodos abreviados marcados con &#39;&amp;ast;&#39; funcionan tanto con las teclas Ctrl como Comando en el sistema operativo Mac.
 
-## Navegador de contenido {#contentbrowser}
+## Navegador de contenido  {#contentbrowser}
 
-| **Acción** | **Acceso directo en Windows** | **Método abreviado en Mac OS** |
+| **Acción** | **Acceso directo en Windows** | **Método abreviado en el sistema operativo Mac** |
 |---|---|---|
 | Expanda todos los acordeones del árbol Objetos de formulario del explorador de contenido cuando esté en el enfoque | Ctrl + A para seleccionar todos los acordeones seguidos de la flecha derecha para expandirlos | Comando+A para seleccionar todos los acordeones seguidos de la flecha derecha para expandir |
 | Contraer todos los acordeones del árbol de objetos de formulario del explorador de contenido cuando esté en el enfoque | Ctrl + A para seleccionar todos los acordeones seguidos de la flecha izquierda para contraer | Comando+A para seleccionar todos los acordeones seguidos de la flecha izquierda para contraer |
@@ -83,24 +80,24 @@ En este artículo se enumeran los métodos abreviados del teclado que se pueden 
 | Seleccione el siguiente elemento en el árbol de objetos de Forms | Flecha hacia abajo | Flecha hacia abajo |
 | Seleccione el elemento anterior en el árbol de objetos de Forms | Flecha hacia arriba | Flecha hacia arriba |
 
-[1] Reemplaza Ctrl + Flecha derecha para Windows y Comando + Flecha derecha para Mac OS.\
-[2] Reemplaza Ctrl + Flecha izquierda para Windows y Comando + Flecha izquierda para Mac OS.
+[1] Reemplaza Ctrl + Flecha derecha para Windows y Comando + Flecha derecha para el sistema operativo Mac.\
+[2] Reemplaza Ctrl + Flecha izquierda para Windows y Comando + Flecha izquierda para el sistema operativo Mac.
 
 ## Administración de correspondencia {#correspondence-management}
 
 Esta sección enumera varios teclados y accesos directos de accesibilidad que puede utilizar en el editor de texto de Gestión de correspondencia. Puede utilizar estos métodos abreviados mientras:
 
-* Creación o edición de un recurso [Texto](texts-interactive-communications.md)
-* Edición de un módulo de texto después de pulsar el icono Editar correspondiente ( ![edittextmodule](assets/edittextmodule.png)) al [crear una correspondencia](/help/forms/using/create-correspondence.md).
+* Creación o edición de un [Texto](texts-interactive-communications.md) recurso
+* Edición de un módulo de texto después de pulsar el icono Editar correspondiente ( ![edittextmodule](assets/edittextmodule.png)) cuando [creación de correspondencia](/help/forms/using/create-correspondence.md).
 
-### Selección de texto y desplazamiento del cursor por {#text-selection-and-moving-the-cursor-around}
+### Selección de texto y desplazamiento del cursor {#text-selection-and-moving-the-cursor-around}
 
 <table> 
  <tbody>
   <tr>
    <th><strong>Operación</strong></th> 
    <th><strong>Acceso directo en Windows</strong></th> 
-   <th><strong>Método abreviado en Mac OS</strong><br /> </th> 
+   <th><strong>Método abreviado en el sistema operativo Mac</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>Seleccionar palabra actual</p> </td> 
@@ -218,7 +215,7 @@ Esta sección enumera varios teclados y accesos directos de accesibilidad que pu
   <tr>
    <th><p><strong>Operación</strong></p> </th> 
    <th><p><strong>Acceso directo en Windows<br /> </strong></p> </th> 
-   <th><strong>Método abreviado en Mac OS</strong></th> 
+   <th><strong>Método abreviado en el sistema operativo Mac</strong></th> 
   </tr>
   <tr>
    <td><p>Hacer que el párrafo esté centrado</p> </td> 
@@ -250,7 +247,7 @@ Esta sección enumera varios teclados y accesos directos de accesibilidad que pu
   <tr>
    <th><strong>Operación</strong></th> 
    <th><strong>Acceso directo en Windows </strong></th> 
-   <th><strong>Método abreviado en Mac OS</strong><br /> </th> 
+   <th><strong>Método abreviado en el sistema operativo Mac</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>Deshacer </p> </td> 
@@ -272,7 +269,7 @@ Esta sección enumera varios teclados y accesos directos de accesibilidad que pu
   <tr>
    <th><p><strong>Operación</strong></p> </th> 
    <th><p><strong>Acceso directo en Windows</strong></p> </th> 
-   <th><strong>Método abreviado en Mac OS</strong></th> 
+   <th><strong>Método abreviado en el sistema operativo Mac</strong></th> 
   </tr>
   <tr>
    <td><p>Aumentar el tamaño de fuente </p> </td> 
@@ -294,7 +291,7 @@ Esta sección enumera varios teclados y accesos directos de accesibilidad que pu
   <tr>
    <th><strong>Operación</strong></th> 
    <th><strong>Acceso directo en Windows</strong></th> 
-   <th><strong>Método abreviado en Mac OS</strong></th> 
+   <th><strong>Método abreviado en el sistema operativo Mac</strong></th> 
   </tr>
   <tr>
    <td><p>Eliminar palabra a la izquierda del cursor</p> </td> 
@@ -316,7 +313,7 @@ Esta sección enumera varios teclados y accesos directos de accesibilidad que pu
   <tr>
    <th><strong>Operación</strong></th> 
    <th><strong>Acceso directo en Windows<br /> </strong></th> 
-   <th><strong>Método abreviado en Mac OS</strong></th> 
+   <th><strong>Método abreviado en el sistema operativo Mac</strong></th> 
   </tr>
   <tr>
    <td><p>Pegar texto </p> </td> 
@@ -331,7 +328,7 @@ Esta sección enumera varios teclados y accesos directos de accesibilidad que pu
   <tr>
    <td><p>Copiar el texto seleccionado</p> </td> 
    <td><p>Ctrl + C</p> </td> 
-   <td>Comando+C<br /> </td> 
+   <td>Comando + C<br /> </td> 
   </tr>
  </tbody>
 </table>
@@ -343,7 +340,7 @@ Esta sección enumera varios teclados y accesos directos de accesibilidad que pu
   <tr>
    <th><strong>Operación</strong></th> 
    <th><strong>Acceso directo en Windows</strong></th> 
-   <th><strong>Método abreviado en Mac OS</strong></th> 
+   <th><strong>Método abreviado en el sistema operativo Mac</strong></th> 
   </tr>
   <tr>
    <td><p>Convertir letras en negrita</p> </td> 
@@ -362,4 +359,3 @@ Esta sección enumera varios teclados y accesos directos de accesibilidad que pu
   </tr>
  </tbody>
 </table>
-

@@ -51,7 +51,7 @@ Creative Project ofrece varias plantillas de proyecto para cumplir los distintos
 
    ![Detalles del proyecto](assets/chlimage_1-134a.png)
 
-1. Haga clic o pulse **Crear**. Un mensaje de confirmación notifica que el proyecto se ha creado.
+1. Haga clic o pulse en **Crear**. Un mensaje de confirmación notifica que el proyecto se ha creado.
 1. Toque o haga clic **Listo** para volver a la **Proyectos** consola. O bien, toque o haga clic en **Apertura** para ver los recursos del proyecto.
 
 ## Comenzar a trabajar en un proyecto de sesión fotográfica del producto {#starting-work-in-a-product-photo-shoot-project}
@@ -156,7 +156,7 @@ En esta sección se describe cómo integrar la administración de la informació
 1. Toque o haga clic **Siguiente** para iniciar el flujo de trabajo en el proyecto.
 1. Introduzca la información del flujo de trabajo en la página siguiente.
 
-   ![Detalles de flujo de trabajo](assets/chlimage_1-141a.png)
+   ![Detalles del flujo de trabajo](assets/chlimage_1-141a.png)
 
 1. Toque o haga clic **Submit** para iniciar el flujo de trabajo de la sesión fotográfica. Se muestra la página de información del proyecto para el proyecto de sesión fotográfica.
 

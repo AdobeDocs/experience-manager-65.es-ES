@@ -14,15 +14,15 @@ exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 source-git-commit: e46d77caf831324f077315df43b8f3a0267bef9a
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 0%
+ht-degree: 34%
 
 ---
 
 # Integrar [!DNL Adobe Sign] con AEM [!DNL Forms]{#integrate-adobe-sign-with-aem-forms}
 
-[!DNL Adobe Sign] activa los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para áreas legales, de ventas, de nómina, de gestión de recursos humanos y muchas otras áreas.
+[!DNL Adobe Sign] activa los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para el área legal, ventas, nóminas, administración de recursos humanos y muchas más.
 
-En un [!DNL Adobe Sign] y el escenario de formularios adaptables, un usuario rellena un formulario adaptable a **solicitud de un servicio**. Por ejemplo, una solicitud de tarjeta de crédito y un formulario de beneficios para los ciudadanos. Cuando un usuario rellena, envía y firma el formulario de solicitud, este se envía al proveedor de servicios para que realice más acciones. El proveedor de servicios revisa la aplicación y utiliza [!DNL Adobe Sign] para marcar la solicitud aprobada. Para habilitar flujos de trabajo de firma electrónica similares, puede integrar [!DNL Adobe Sign] con AEM [!DNL Forms].
+En un [!DNL Adobe Sign] y el escenario de formularios adaptables, un usuario rellena un formulario adaptable a **solicitud de un servicio**. Por ejemplo, una solicitud de tarjeta de crédito y un formulario de solicitud para una prestación. Cuando un usuario rellena, envía y firma el formulario de solicitud, este se envía al proveedor de servicios para que realice más acciones. El proveedor de servicios revisa la solicitud y utiliza [!DNL Adobe Sign] para marcarla como aprobada. Para habilitar flujos de trabajo de firma electrónica similares, puede integrar [!DNL Adobe Sign] con AEM [!DNL Forms].
 
 Para usar [!DNL Adobe Sign] con AEM [!DNL Forms], configure [!DNL Adobe Sign] en AEM Cloud Services:
 
@@ -32,19 +32,19 @@ Debe integrar lo siguiente [!DNL Adobe Sign] con AEM [!DNL Forms]:
 
 * Un activo [Cuenta de desarrollador de Adobe Sign.](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)
 * Un [Habilitado para SSL](/help/sites-administering/ssl-by-default.md) AEM [!DNL Forms] servidor.
-* Un [aplicación de API de Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
-* Credenciales (ID de cliente y Secreto de cliente) de [!DNL Adobe Sign] aplicación API.
+* un [aplicación API de Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md);
+* las credenciales (ID de cliente y Secreto de cliente) de la aplicación API de [!DNL Adobe Sign];
 * Al volver a configurar, elimine la [!DNL Adobe Sign] configuración de las instancias de autor y publicación.
-* Uso [clave criptográfica idéntica](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) para instancias de autor y publicación.
+* usar una [clave criptográfica idéntica](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) para las instancias de autor y publicación;
 
 ## Configurar [!DNL Adobe Sign] con AEM [!DNL Forms] {#configure-adobe-sign-with-aem-forms}
 
 Una vez cumplidos los requisitos previos, realice los siguientes pasos para configurar [!DNL Adobe Sign] con AEM [!DNL Forms] en la instancia de autor:
 
 1. En AEM [!DNL Forms] instancia de autor, vaya a **Herramientas** ![martillo](assets/hammer.png) > **[!UICONTROL General]** > **[!UICONTROL Explorador de configuración]**.
-1. En el **[!UICONTROL Explorador de configuración]** página, toque **[!UICONTROL Crear]**.
-   * Consulte la [Explorador de configuración](/help/sites-administering/configurations.md) documentación para obtener más información.
-1. En el **[!UICONTROL Crear configuración]** , especifique un **[!UICONTROL Título]** para la configuración, habilite **[!UICONTROL Configuraciones de nube]** y toque **[!UICONTROL Crear]**. Crea un contenedor de configuración para servicios en la nube.
+1. En la página **[!UICONTROL Explorador de configuración]**, pulse **[!UICONTROL Crear]**.
+   * Consulte la documentación del [Explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
+1. En el cuadro de diálogo **[!UICONTROL Crear configuración]**, especifique un **[!UICONTROL Título]** para la configuración, habilite **[!UICONTROL Configuraciones de nube]** y pulse **[!UICONTROL Crear]**. Crea un contenedor de configuración para servicios en la nube.
 1. Vaya a **Herramientas** ![martillo](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]** y seleccione el contenedor de configuración que creó en el paso anterior.
 
    >[!NOTE]
@@ -54,70 +54,70 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
    >[!NOTE]
    Asegúrese de que la dirección URL de la página de configuración de los servicios de nube comience por **HTTPS**. Si no, [habilitar SSL](/help/sites-administering/ssl-by-default.md) para AEM [!DNL Forms] servidor.
 
-1. En la página de configuración, pulse **[!UICONTROL Crear]** para crear [!DNL Adobe Sign] configuración en AEM [!DNL Forms].
+1. En la página de configuración, pulse **[!UICONTROL Crear]** para crear una configuración de [!DNL Adobe Sign] en AEM [!DNL Forms].
 1. En el **[!UICONTROL General]** de la pestaña **[!UICONTROL Crear configuración de Adobe Sign]** página, especifique un **[!UICONTROL Nombre]** para la configuración y pulse **[!UICONTROL Siguiente]**. Si lo desea, puede especificar un título y examinar para seleccionar una miniatura para la configuración.
 
-1. Copie la dirección URL de la ventana actual del explorador en un bloc de notas. Es necesario configurar [!DNL Adobe Sign] aplicación con AEM[!DNL Forms].
+1. Copie la URL de la ventana actual del explorador en un bloc de notas. Es necesario configurar [!DNL Adobe Sign] aplicación con AEM[!DNL Forms].
 
-1. En el **[!UICONTROL Configuración]** , la pestaña **[!UICONTROL URL de OAuth]** contiene la dirección URL predeterminada. El formato de la dirección URL es:
+1. En el **[!UICONTROL Configuración]** , la pestaña **[!UICONTROL URL de OAuth]** contiene la dirección URL predeterminada. El formato del URL es el siguiente:
 
    `https://<shard>/public/oAuth/v2`
 
    Por ejemplo:
    `https://secure.na1.echosign.com/public/oauth/v2`
 
-   dónde:
+   donde:
 
-   **na1** hace referencia al uso compartido predeterminado de la base de datos. Puede modificar el valor del compartido de la base de datos. Asegúrese de que la variable [!DNL  Adobe Sign] Las configuraciones de nube apuntan al [Compartimiento correcto](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** hace referencia a la partición predeterminada de la base de datos. Puede modificar el valor de la partición de la base de datos. Asegúrese de que las configuraciones en la nube de [!DNL  Adobe Sign] apuntan a la [partición correcta](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
-   Si crea otro [!DNL Adobe Sign] para una función o componente de Adobe Experience Manager, asegúrese de que todas las [!DNL Adobe Sign] Las configuraciones de nube apuntan al mismo uso compartido.
+   Si crea otra configuración de [!DNL Adobe Sign] para una función o componente de Adobe Experience Manager, asegúrese de que todas las configuraciones en la nube de [!DNL Adobe Sign] apuntan a la misma partición.
 
    >[!NOTE]
    Mantenga el **Crear configuración de Adobe Sign** página abierta. No lo cierre. Puede recuperar **ID de cliente** y **Secreto del cliente** después de configurar la configuración de OAuth para [!DNL Adobe Sign] como se describe en los pasos siguientes.
 
 
-1. Configure las opciones de OAuth para la variable [!DNL Adobe Sign] aplicación:
+1. Configure OAuth para la aplicación [!DNL Adobe Sign]:
 
    1. Abra una ventana del explorador e inicie sesión en la [!DNL Adobe Sign] cuenta de desarrollador.
    1. Seleccione la aplicación configurada para AEM [!DNL Forms]y toque **[!UICONTROL Configuración de OAuth para aplicación]**.
    1. Copie el **[!UICONTROL ID de cliente]** y **[!UICONTROL Secreto del cliente]** a un bloc de notas.
    1. En el **[!UICONTROL Dirección URL de redireccionamiento]** , añada la URL HTTPS copiada en el paso anterior.
-   1. Habilite la siguiente configuración de OAuth para [!DNL Adobe Sign] aplicación y haga clic en **[!UICONTROL Guardar]**.
+   1. Habilite la siguiente configuración de OAuth para la aplicación de [!DNL Adobe Sign] y haga clic en **[!UICONTROL Guardar]**.
    * aggrement_read
    * aggrement_write
    * aggrement_send
    * widget_write
    * workflow_read
 
-   Para obtener información paso a paso sobre cómo configurar las opciones de OAuth para un [!DNL Adobe Sign] y obtenga las claves, consulte [Configuración de oAuth para la aplicación](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) documentación para desarrolladores.
+   Para obtener información paso a paso sobre cómo configurar OAuth para una aplicación [!DNL Adobe Sign] y obtener las claves, consulte la documentación para desarrolladores [Configurar OAuth para la aplicación](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md).
 
    ![Configuración de OAuth](assets/oauthconfig_new.png)
 
-1. Vuelva a la **[!UICONTROL Crear configuración de Adobe Sign]** página. En el **[!UICONTROL Configuración]** , la pestaña **[!UICONTROL URL de OAuth]** menciona la dirección URL predeterminada. El formato de la dirección URL es:
+1. Vuelva a la página **[!UICONTROL Crear configuración de Adobe Sign]**. En la pestaña **[!UICONTROL Configuración]**, el campo **[!UICONTROL URL de OAuth]** muestra la URL predeterminada. El formato del URL es el siguiente:
 
    `https://<shard>/public/oAuth/v2`
 
    Por ejemplo:
    `https://secure.na1.echosign.com/public/oauth/v2`
 
-   dónde:
+   donde:
 
-   **na1** hace referencia al uso compartido predeterminado de la base de datos.
+   **na1** hace referencia a la partición predeterminada de la base de datos.
 
-   Puede modificar el valor del compartido de la base de datos. Reinicie el servidor para poder utilizar el nuevo valor para el uso compartido de la base de datos.
+   Puede modificar el valor de la partición de la base de datos. Reinicie el servidor para poder utilizar el nuevo valor para el uso compartido de la base de datos.
 
    >[!NOTE]
    Asegúrese de que las configuraciones de instancia de autor y publicación apuntan al mismo uso compartido. Si crea varias configuraciones de Adobe Sign para una organización, asegúrese de que todas las configuraciones utilicen el mismo uso compartido.
 
-1. Vuelva a la **[!UICONTROL Crear configuración de Adobe Sign]** página. En el **[!UICONTROL Configuración]** especifique la **ID de cliente** (también denominado ID de aplicación) y **Secreto del cliente**. Utilice la variable [ID de cliente y Secreto de cliente de la aplicación Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) creado para AEM Forms.
+1. Vuelva a la página **[!UICONTROL Crear configuración de Adobe Sign]**. En el **[!UICONTROL Configuración]** especifique la **ID de cliente** (también denominado ID de aplicación) y **Secreto del cliente**. Utilice la variable [ID de cliente y Secreto de cliente de la aplicación Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) creado para AEM Forms.
 
 1. Seleccione el **[!UICONTROL Activar Adobe Sign para archivos adjuntos también]** para anexar archivos adjuntos a un formulario adaptable al correspondiente [!DNL Adobe Sign] documento enviado para firma.
 
-1. Toque **[!UICONTROL Conectarse a Adobe Sign]**. Cuando se le soliciten credenciales, proporcione el nombre de usuario y la contraseña de la cuenta utilizada al crear [!DNL Adobe Sign] aplicación.
+1. Pulse **[!UICONTROL Conectar con Adobe Sign]**. Cuando se le soliciten credenciales, indique el nombre de usuario y la contraseña de la cuenta utilizada al crear la aplicación [!DNL Adobe Sign]. 
 
-1. Toque **[!UICONTROL Crear]** para crear la variable [!DNL Adobe Sign] configuración.
+1. Pulse **[!UICONTROL Crear]** para crear la configuración de [!DNL Adobe Sign].
 
-1. Abra AEM consola web. La dirección URL es `https://'[server]:[port]'/system/console/configMgr`
+1. Abra AEM consola web. La URL es `https://'[server]:[port]'/system/console/configMgr`. 
 1. Apertura **[!UICONTROL Servicio de configuración común de Forms].**
 1. En el **[!UICONTROL Permitir]** field, **select** Todos los usuarios: Todos los usuarios, anónimos o conectados, pueden obtener una vista previa de los archivos adjuntos, comprobar y firmar formularios y hacer clic en **[!UICONTROL Guardar].** La instancia de autor está configurada para usar [!DNL Adobe Sign].
 1. Publique la configuración.

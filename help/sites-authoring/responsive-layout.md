@@ -1,22 +1,21 @@
 ---
 title: Diseño adaptable
-seo-title: Diseño adaptable
+seo-title: Responsive Layout
 description: El AEM le permite llevar a cabo un diseño interactivo para sus páginas
-seo-description: El AEM le permite llevar a cabo un diseño interactivo para sus páginas
+seo-description: AEM allows you to realize a responsive layout for your pages
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
-translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 92%
+source-wordcount: '1782'
+ht-degree: 93%
 
 ---
-
 
 # Diseño adaptable {#responsive-layout}
 
@@ -224,7 +223,7 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
    * **Principal**
 
-      Permite seleccionar todo el componente de contenedor de diseño para realizar acciones en todo el contenido.
+      Permite seleccionar todo el componente contenedor de diseño para realizar acciones en conjunto.
 
    * **Flotar a una línea nueva**
 
@@ -232,7 +231,7 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
    * **Ocultar componente**
 
-      El componente se volverá invisible (se puede restaurar desde la barra de herramientas del contenedor de diseño).
+      El componente se volverá invisible (puede restaurarse desde la barra de herramientas del contenedor de diseño).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * En el modo **Diseño** puede pulsar o hacer clic en **Arrastrar componentes aquí** para seleccionar el componente completo. Esto hará que se muestre la barra de herramientas de este modo.
@@ -243,7 +242,7 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Mostrar componentes**  ocultos: muestra todos o algunos componentes. El número indica cuántos componentes ocultos hay actualmente. El contador muestra cuántos componentes están ocultos.
+   * **Mostrar componentes ocultos** - Muestra todos los componentes o cada uno de ellos. El número indica cuántos componentes ocultos existen actualmente. El contador muestra cuántos componentes están ocultos.
 
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
@@ -263,9 +262,9 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
    >
    >En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
 
-   * **Mostrar**
-componentesSeleccione los componentes principales para mostrar la barra de herramientas de acciones con la variable 
-**Mostrar** componentes ocultos, opción. En este ejemplo, hay dos componentes ocultos.
+   * **Mostrar los componentes** 
+Seleccione los componentes principales para mostrar la barra de herramientas de acciones con la 
+Opción **Mostrar componentes ocultos**. En este ejemplo, hay dos componentes ocultos.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.
@@ -273,4 +272,3 @@ componentesSeleccione los componentes principales para mostrar la barra de herra
    ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
 
    La selección de la opción **Restaurar todo** permitirá que se muestren todos los componentes ocultos.
-

@@ -35,7 +35,7 @@ Un clúster de AEM Forms en JEE se basa en las capacidades de agrupación en cl�
 
 ### Caché de GemFire {#gemfire-cache}
 
-La caché de GemFire es un mecanismo de caché distribuido implementado en cada nodo de clúster. Los nodos se encuentran entre sí y crean una única caché lógica que se mantiene coherente entre los nodos. Los nodos que se encuentran entre sí se unen para mantener una sola caché nocional que se muestra como una nube en la Figura 1. A diferencia de GDS y la base de datos, la caché es una entidad puramente nocional. El contenido en caché real se almacena en la memoria y en el directorio `LC_TEMP` de cada uno de los nodos del clúster.
+La caché de GemFire es un mecanismo de caché distribuido implementado en cada nodo de clúster. Los nodos se encuentran entre sí y crean una única caché lógica que se mantiene coherente entre los nodos. Los nodos que se encuentran entre sí se unen para mantener una sola caché nocional que se muestra como una nube en la Figura 1. A diferencia de GDS y la base de datos, la caché es una entidad puramente nocional. El contenido en caché real se almacena en la memoria y en el `LC_TEMP` en cada uno de los nodos del clúster.
 
 ### Base de datos {#database}
 
@@ -117,7 +117,7 @@ GemFire produce información de registro que puede utilizarse para diagnosticar 
 
 `.../LC_TEMP/adobeZZ__123456/Caching/Gemfire.log`
 
-La cadena numérica después de `adobeZZ_` es única para el nodo de servidor y, por lo tanto, debe buscar el contenido real del directorio temporal. Los dos caracteres después de `adobe` dependen del tipo de servidor de la aplicación: `wl`, `jb` o `ws`.
+La cadena numérica después de `adobeZZ_` es único para el nodo server , por lo que debe buscar el contenido real del directorio temporal. Los dos caracteres siguientes a `adobe` dependen del tipo de servidor de la aplicación: o `wl`, `jb`o `ws`.
 
 Los siguientes registros de muestra muestran lo que sucede cuando se encuentra un clúster de dos nodos.
 
@@ -264,12 +264,11 @@ Tenga en cuenta que una configuración utiliza un punto entre &quot;cluster&quot
 
 Para determinar cómo se ha configurado Quartz, debe ver los mensajes generados por el servicio AEM Forms en el programador de JEE durante el inicio. Estos mensajes se generan con la gravedad INFO y puede ser necesario ajustar el nivel de registro y reiniciar para obtener los mensajes. En la secuencia de inicio de AEM Forms on JEE, la inicialización de Quartz comienza con la siguiente línea:
 
-INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
-Es importante localizar esta primera línea en los registros porque algunos servidores de aplicaciones también utilizan Quartz y sus instancias de Quartz no deben confundirse con la instancia que utiliza el servicio AEM Forms en el programador de JEE. Esto indica que el servicio Scheduler se está iniciando y las líneas que lo siguen le indicarán si se está iniciando o no correctamente en modo agrupado. Aparecen varios mensajes en esta secuencia, y es el último mensaje &quot;iniciado&quot; que revela cómo está configurado Quartz:
+INFORMACIÓN  `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad Es importante localizar esta primera línea en los registros porque algunos servidores de aplicaciones también utilizan Quartz, y sus instancias de Quartz no deben confundirse con la instancia que utiliza el servicio AEM Forms en el Programador JEE. Esto indica que el servicio Scheduler se está iniciando y las líneas que lo siguen le indicarán si se está iniciando o no correctamente en modo agrupado. Aparecen varios mensajes en esta secuencia, y es el último mensaje &quot;iniciado&quot; que revela cómo está configurado Quartz:
 
-Aquí se da el nombre de la instancia de Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. El nombre de la instancia de Quartz del programador siempre comenzará con la cadena `IDPSchedulerService_$_`. La cadena que se anexa al final de esto le indica si Quartz se está ejecutando o no en modo agrupado. El identificador único largo generado a partir del nombre de host del nodo y una cadena larga de dígitos, aquí `ap-hp8.ottperflab.adobe.com1312883903975`, indica que está funcionando en un clúster. Si funciona como un solo nodo, el identificador será un número de dos dígitos, &quot;20&quot;:
+Aquí se da el nombre de la instancia de Quartz: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. El nombre de la instancia de Quartz del programador siempre comenzará con la cadena `IDPSchedulerService_$_`. La cadena que se anexa al final de esto le indica si Quartz se está ejecutando o no en modo agrupado. El identificador único largo generado a partir del nombre de host del nodo y una cadena larga de dígitos, aquí `ap-hp8.ottperflab.adobe.com1312883903975`, indica que funciona en un clúster. Si funciona como un solo nodo, el identificador será un número de dos dígitos, &quot;20&quot;:
 
-INFO `[org.quartz.core.QuartzScheduler]` El planificador `IDPSchedulerService_$_20` se inició.
+INFORMACIÓN  `[org.quartz.core.QuartzScheduler]` Planificador `IDPSchedulerService_$_20` iniciado.
 Esta comprobación debe realizarse en todos los nodos del clúster por separado, ya que el planificador de cada nodo determina de forma independiente si debe funcionar en modo de clúster.
 
 ### ¿Qué clase de problemas se producen si Quartz se está ejecutando en el modo incorrecto? {#quartz-running-in-wrong-mode}
@@ -326,7 +325,7 @@ Se debe comprobar la siguiente configuración:
 1. Ubicación del directorio de fuentes del sistema
 1. Ubicación del archivo de configuración de servicios de datos
 
-El clúster solo tiene una configuración de ruta única para cada una de estas opciones de configuración. Por ejemplo, la ubicación del directorio temporal puede ser `/home/project/QA2/LC_TEMP`. En un clúster, es necesario que cada nodo tenga realmente esta ruta concreta accesible. Si un nodo tiene la ruta de archivo temporal esperada y otro nodo no, el nodo que no funcionará correctamente.
+El clúster solo tiene una configuración de ruta única para cada una de estas opciones de configuración. Por ejemplo, la ubicación del directorio Temp puede ser `/home/project/QA2/LC_TEMP`. En un clúster, es necesario que cada nodo tenga realmente esta ruta concreta accesible. Si un nodo tiene la ruta de archivo temporal esperada y otro nodo no, el nodo que no funcionará correctamente.
 
 Aunque estos archivos y rutas pueden compartirse entre los nodos o ubicarse por separado, o en sistemas de archivos remotos, generalmente se recomienda que sean copias locales en el almacenamiento en disco del nodo local.
 

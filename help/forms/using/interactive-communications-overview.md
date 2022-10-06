@@ -115,7 +115,7 @@ La comunicación interactiva es el enfoque predeterminado y recomendado para cre
    <td>No se admite</td>
   </tr>
   <tr>
-   <td>Temas</td>
+   <td>Temáticas</td>
    <td>Utiliza temas para aplicar estilo al canal web</td>
    <td>No admite temas</td>
   </tr>
@@ -133,12 +133,12 @@ La comunicación interactiva es el enfoque predeterminado y recomendado para cre
   <tr>
    <td>Auditoría</td>
    <td>No compatible</td>
-   <td>Compatible</td>
+   <td>Compatibilidad</td>
   </tr>
    <tr>
    <td>Versiones</td>
    <td>No compatible</td>
-   <td>Compatible</td>
+   <td>Compatibilidad</td>
   </tr>
    <td>Procesamiento por lotes</td>
    <td>Compatible </td>
@@ -147,12 +147,12 @@ La comunicación interactiva es el enfoque predeterminado y recomendado para cre
   <tr>
    <td>Firma del agente</td>
    <td>No se admite</td>
-   <td>Compatible</td>
+   <td>Compatibilidad</td>
   </tr>
   <tr>
    <td>Funciones remotas</td>
    <td>No se admite</td>
-   <td>Compatible</td>
+   <td>Compatibilidad</td>
   </tr>
  </tbody>
 </table>

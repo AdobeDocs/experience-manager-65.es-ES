@@ -43,7 +43,7 @@ A continuación se muestran las opciones globales definidas. Estas opciones est�
    <td>Identificador utilizado para especificar este objeto o suceso en expresiones de secuencia de comandos. Por ejemplo, esta propiedad especifica el nombre de la aplicación host.</td>
   </tr>
   <tr>
-   <td>seleccionado</td>
+   <td>value</td>
    <td>Valor real del campo. </td>
   </tr>
   <tr>
@@ -63,11 +63,11 @@ A continuación se muestran las opciones globales definidas. Estas opciones est�
    <td>Función del elemento, por ejemplo, Encabezado o Tabla.</td>
   </tr>
   <tr>
-   <td>altura</td>
+   <td>height</td>
    <td>Altura del widget. Se especifica en píxeles. </td>
   </tr>
   <tr>
-   <td>Anchura</td>
+   <td>width</td>
    <td>Ancho del widget. Se especifica en píxeles.</td>
   </tr>
   <tr>
@@ -183,7 +183,7 @@ Todos los widgets personalizados deben cumplir las especificaciones anteriores. 
    <th>Descripción</th>
   </tr>
   <tr>
-   <td>seleccionado<br /> </td>
+   <td>value<br /> </td>
    <td>Matriz de valores seleccionados.<br /> </td>
   </tr>
   <tr>

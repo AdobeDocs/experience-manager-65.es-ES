@@ -1305,7 +1305,7 @@ En la tabla siguiente se enumeran los pares de clave y valor que son necesarios 
   <tr>
    <th><p>Nombre de clave</p></th>
    <th><p>Descripción</p></th>
-   <th><p>Value</p></th>
+   <th><p>Valor</p></th>
   </tr>
  </thead>
  <tbody>

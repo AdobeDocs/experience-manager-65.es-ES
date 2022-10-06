@@ -1,14 +1,15 @@
 ---
-title: Configurar reglas de traducción
+title: Configuración de las reglas de traducción
 description: Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 0%
+ht-degree: 44%
 
 ---
 
-# Configurar reglas de traducción {#configure-translation-rules}
+# Configuración de las reglas de traducción {#configure-translation-rules}
 
 Aprenda a definir reglas de traducción para identificar el contenido que se va a traducir.
 
@@ -16,23 +17,23 @@ Aprenda a definir reglas de traducción para identificar el contenido que se va 
 
 En el documento anterior del recorrido de traducción sin AEM, [Configuración del conector de traducción](configure-connector.md) ha aprendido a instalar y configurar el conector de traducción y ahora debe:
 
-* Comprender los parámetros importantes del marco de integración de traducción en AEM.
+* Comprender los parámetros importantes del marco de trabajo de integración de traducción en AEM.
 * Puede configurar su propia conexión con el servicio de traducción.
 
 Ahora que el conector está configurado, este artículo le explica el siguiente paso para identificar qué contenido debe traducir.
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender cómo utilizar AEM reglas de traducción para identificar el contenido de la traducción. Después de leer este documento, debe:
+Este documento le ayuda a comprender cómo utilizar las reglas de traducción de AEM para identificar el contenido de la traducción. Después de leer este documento, debería poder hacer lo siguiente:
 
 * Comprender lo que hacen las reglas de traducción.
-* Puede definir sus propias reglas de traducción.
+* Poder definir sus propias reglas de traducción.
 
 ## Reglas de traducción {#translation-rules}
 
 Los fragmentos de contenido, que representan el contenido sin encabezado, pueden contener mucha información organizada por campos estructurados. Según las necesidades del proyecto, es probable que no se deban traducir todos los campos de un fragmento de contenido.
 
-Las reglas de traducción identifican el contenido que se incluye en los proyectos de traducción o que se excluye de ellos. Cuando se traduce el contenido, AEM extrae o cosecha el contenido en función de estas reglas. De este modo, solo el contenido que debe traducirse se envía al servicio de traducción.
+Las reglas de traducción identifican el contenido que se incluye en los proyectos de traducción o que se excluye de ellos. Cuando se traduce contenido, AEM lo extrae o saca en función de estas reglas. De este modo, solo el contenido que debe traducirse se envía al servicio de traducción.
 
 Las reglas de traducción incluyen la siguiente información:
 
@@ -53,10 +54,10 @@ Se pueden crear varias reglas para admitir requisitos de traducción complejos. 
 
 Las reglas de traducción están diseñadas para manejar estos escenarios. Sin embargo, en este ejemplo ilustramos cómo crear reglas centrándose en una configuración simple y única.
 
-Hay un **Configuración de traducción** consola disponible para configurar reglas de traducción. Para acceder a él:
+Hay una consola de **Configuración de traducción** disponible para configurar las reglas de traducción. Para acceder a ella:
 
 1. Vaya a **Herramientas** -> **General**.
-1. Toque o haga clic **Configuración de traducción**.
+1. Toque o haga clic en **Configuración de traducción**.
 
 En el **Configuración de traducción** En la interfaz de usuario de hay varias opciones disponibles para las reglas de traducción. Aquí resaltamos los pasos más necesarios y típicos necesarios para una configuración de localización básica sin encabezado.
 
@@ -69,11 +70,11 @@ En el **Configuración de traducción** En la interfaz de usuario de hay varias 
    ![Editor de reglas de traducción](assets/translation-rules-editor.png)
 1. De forma predeterminada, todas las configuraciones se heredan de la ruta principal, en este caso `/content/dam`. Desmarque la opción **Heredar de`/content/dam`** para añadir campos adicionales a la configuración.
 1. Una vez desmarcado, en la sección **General** de la lista, añada los nombres de propiedad de los modelos de fragmento de contenido que haya [anteriormente identificados como campos para traducción.](getting-started.md#content-models)
-   1. Introduzca el nombre de la propiedad en la variable **Nueva propiedad** campo .
+   1. Introduzca el nombre de la propiedad en el campo **Nueva propiedad**.
    1. Las opciones **Traducir** y **Heredar** se marcan automáticamente.
-   1. Toque o haga clic **Agregar**.
+   1. Haga clic o pulse **Agregar**.
    1. Repita estos pasos para todos los campos que debe traducir.
-   1. Toque o haga clic **Guardar**.
+   1. Haga clic o pulse **Guardar**.
       ![Agregar propiedad](assets/add-property.png)
 
 Ya ha configurado las reglas de traducción.
@@ -89,7 +90,7 @@ Estas funciones generalmente no son necesarias para empezar a localizar el conte
 Ahora que ha completado esta parte del recorrido de traducción sin encabezado, debe:
 
 * Comprender lo que hacen las reglas de traducción.
-* Puede definir sus propias reglas de traducción.
+* Poder definir sus propias reglas de traducción.
 
 Aproveche este conocimiento y continúe su recorrido de traducción sin AEM cabeza revisando el documento [Traducir contenido](translate-content.md) donde aprenderá cómo funcionan juntos sus conectores y reglas para traducir contenido sin encabezado.
 
@@ -97,4 +98,4 @@ Aproveche este conocimiento y continúe su recorrido de traducción sin AEM cabe
 
 Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Traducir contenido](translate-content.md), los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
 
-* [Identificación del contenido para traducir](/help/sites-administering/tc-rules.md) : Aprenda cómo las reglas de traducción identifican el contenido que necesita traducción.
+* [Identificación del contenido para traducir](/help/sites-administering/tc-rules.md): aprenda cómo las reglas de traducción identifican el contenido que necesita traducirse.

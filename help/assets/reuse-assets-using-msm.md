@@ -81,7 +81,7 @@ Para crear Live Copies con el primer método, siga estos pasos:
 
    *Figura: Crear Live Copy desde [!DNL Experience Manager] interfaz.*
 
-1. Seleccione una carpeta de destino. Haga clic en **[!UICONTROL Siguiente]**. 
+1. Seleccione una carpeta de destino. Haga clic en **[!UICONTROL Siguiente]**.
 1. Proporcione título y nombre. Los activos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede elegir incluir o excluir elementos secundarios.
 1. Seleccione una configuración de lanzamiento. Haga clic en **[!UICONTROL Crear]**.
 
@@ -93,8 +93,8 @@ Para crear Live Copies con el segundo método, siga estos pasos:
 
    *Figura: Crear Live Copy desde [!DNL Experience Manager] interfaz.*
 
-1. Seleccione la carpeta o el recurso de origen. Haga clic en **[!UICONTROL Siguiente]**. 
-1. Seleccione la carpeta de destino. Haga clic en **[!UICONTROL Siguiente]**. 
+1. Seleccione la carpeta o el recurso de origen. Haga clic en **[!UICONTROL Siguiente]**.
+1. Seleccione la carpeta de destino. Haga clic en **[!UICONTROL Siguiente]**.
 1. Proporcione título y nombre. Los activos no tienen elementos secundarios. Al crear una Live Copy de carpetas, puede elegir incluir o excluir elementos secundarios.
 1. Seleccione una configuración de lanzamiento. Haga clic en **[!UICONTROL Crear]**.
 

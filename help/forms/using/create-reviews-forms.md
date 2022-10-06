@@ -1,8 +1,8 @@
 ---
-title: Creación y administración de revisiones para recursos en formularios
-seo-title: Creación y administración de revisiones para recursos en formularios
-description: 'Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre un recurso que está disponible en un formulario. '
-seo-description: 'Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre un recurso que está disponible en un formulario. '
+title: Creación y administración de revisiones para recursos de formularios
+seo-title: Creating and managing reviews for assets in forms
+description: Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre un recurso disponible en un formulario.
+seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,37 +10,36 @@ topic-tags: forms-manager
 discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 1%
+source-wordcount: '655'
+ht-degree: 100%
 
 ---
 
+# Creación y administración de revisiones para recursos de formularios{#creating-and-managing-reviews-for-assets-in-forms}
 
-# Creación y administración de revisiones para recursos en formularios{#creating-and-managing-reviews-for-assets-in-forms}
+## Revisión {#review}
 
-## Crítica {#review}
+Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre un recurso disponible en un formulario.
 
-Una revisión es un mecanismo que permite a uno o más revisores realizar comentarios sobre un recurso que está disponible en un formulario.
+## Configurar una revisión {#setting-up-a-review}
 
-## Configuración de una revisión {#setting-up-a-review}
+1. Vaya a la pestaña Formularios y seleccione un formulario.
+1. Si el recurso no tiene ninguna revisión en curso, aparecerá el icono Iniciar revisión ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) en la barra de acciones. Haga clic en el icono Iniciar revisión ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
+1. Especifique la siguiente información:
 
-1. Vaya a la ficha Forms y seleccione un formulario.
-1. Si el recurso no tiene una revisión en curso, aparece un icono Iniciar revisión ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) en la barra de acciones. Haga clic en el icono Iniciar revisión ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
-1. Indique la siguiente información:
+   * Nombre de la revisión: obligatorio. Puede contener caracteres alfanuméricos, guiones o guiones bajos.
+   * Descripción de la revisión: opcional, la descripción del objetivo/contenido de la revisión.
+   * Fecha límite de la revisión: opcional: la fecha en la que finaliza la revisión. Si se sobrepasa la fecha límite, la tarea aparece como “Vencida”.
+   * Revisores: es obligatorio especificar al menos uno. Utilice el cuadro combinado para añadir revisores. Al escribir un nombre, se muestran todos los nombres coincidentes; seleccione uno y haga clic en Agregar.
 
-   * Revisar nombre: obligatorio, puede contener caracteres alfanuméricos, guiones o guiones bajos.
-   * Revisar descripción: Opcional, descripción del propósito/contenido para su revisión.
-   * Revisar fecha límite: Opcional: la fecha en la que finaliza la revisión. Cuando ha pasado la fecha límite, la tarea aparece como &quot;Vencido&quot;.
-   * Revisores: Un mínimo de uno es obligatorio. Utilice el cuadro combinado para añadir revisores. Si se escribe un nombre, se mostrarán todos los nombres coincidentes; seleccione un nombre y haga clic en Agregar.
+1. Rellene todos los detalles restantes y haga clic en Iniciar.
 
-1. Complete todos los detalles restantes y haga clic en Inicio.
+### Acciones asociadas a la configuración de una revisión {#actions-that-occur-when-a-review-is-set-up}
 
-### Acciones que se producen cuando se configura una revisión {#actions-that-occur-when-a-review-is-set-up}
-
-En esta sección se describe lo que sucede cuando se crea o configura una revisión.
+Esta sección describe lo que sucede cuando se crea o configura una revisión.
 
 1. Se crea una nueva tarea de revisión y se asigna al iniciador de la revisión.
 1. A todos los revisores se les asigna una tarea de revisión. La tarea aparece en la sección Notificaciones. Un revisor puede hacer clic en una notificación o ir a la Bandeja de entrada para ver la tarea. Un revisor puede hacer clic en para abrir la tarea de revisión, ver el formulario y empezar a añadir comentarios.
@@ -49,54 +48,54 @@ En esta sección se describe lo que sucede cuando se crea o configura una revisi
 
    Alerta de notificación del revisor
 
-1. El cuadro de comentarios está disponible para el iniciador y los revisores del recurso. Otros pueden ver los comentarios, pero no pueden escribir comentarios.
+1. El cuadro de comentarios está disponible para el iniciador y para los revisores del recurso. Otros usuarios pueden ver los comentarios, pero no pueden agregar nuevos.
 
-## Administración de una revisión {#managing-a-review}
+## Administrar una revisión {#managing-a-review}
 
 >[!NOTE]
 >
->Solo se pueden modificar las revisiones en curso. Las revisiones completadas no se pueden modificar.
+>Solo se pueden modificar las revisiones en progreso. Las revisiones completadas no se pueden modificar.
 
-1. Vaya a la ficha Forms y seleccione un formulario.
+1. Vaya a la pestaña Formularios y seleccione un formulario.
 
-1. Si un recurso tiene una revisión en curso y usted es el iniciador de la revisión, aparecen los iconos Administrar revisión ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) en la barra de acciones. Solo el iniciador de revisión puede administrar (actualizar/finalizar) la revisión.
+1. Si un recurso tiene una revisión en curso y usted es el iniciador de la revisión, aparece el icono Administrar revisión ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) en la barra de acciones. Solo el iniciador de revisión puede administrar (actualizar/finalizar) la revisión.
 
    Haga clic en el icono Administrar revisión ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
-   Para usuarios que no sean el iniciador, el icono Administrar revisión está deshabilitado.
+   El icono Administrar revisión está deshabilitado para los usuarios distintos del iniciador.
 
-1. Se obtiene una pantalla que muestra información:
+1. Aparece una pantalla que muestra información:
 
-   * **Revisar nombre**: No se puede editar.
+   * **Nombre de la revisión**: no se puede editar.
 
-   * **Revisar descripción**: Disponible para edición.
+   * **Descripción de la revisión**: disponible para edición.
 
-   * **Revisar fecha límite**: Disponible para edición. Se puede modificar la fecha límite a cualquier fecha y hora después de la fecha y hora actuales.
+   * **Fecha límite de la revisión**: disponible para edición. Se puede modificar la fecha límite para establecer cualquier fecha y hora posterior a la fecha y la hora actuales.
 
-   * **Revisores**: Disponible para edición. Puede agregar o eliminar revisores. Si una tarea ha vencido, puede agregar revisores solo después de ampliar la fecha límite más allá de la fecha actual.
+   * **Revisores**: disponible para edición. Puede agregar o quitar revisores. Si una tarea ha vencido, solo podrá agregar revisores una vez que amplíe la fecha límite hasta pasada la fecha actual.
 
 1. Edite los campos necesarios y, a continuación, haga clic en Actualizar.
 
-   ![Revisar estado actualizado en el Administrador de tareas](assets/tskmgr.png)
+   ![Revisar el estado actualizado en el Administrador de tareas](assets/tskmgr.png)
 
-   Revisar estado actualizado en el Administrador de tareas
+   Revisar el estado actualizado en el Administrador de tareas
 
 1. Para finalizar la revisión, haga clic en Finalizar.
 
-### Acciones que se producen cuando se modifica una revisión {#actions-that-occur-when-a-review-is-modified}
+### Acciones asociadas a la modificación de una revisión {#actions-that-occur-when-a-review-is-modified}
 
-En esta sección se describe lo que sucede en la revisión final/modificación:
+Esta sección describe lo que sucede cuando se modifica o finaliza una revisión:
 
 1. Si se modifica la descripción de la revisión, se actualiza la tarea correspondiente de los revisores y el iniciador.
-1. Si se modifica la fecha límite de revisión, la tarea correspondiente para los revisores se actualiza con la nueva fecha.
+1. Si se modifica la fecha límite de la revisión, se actualiza la tarea correspondiente de los revisores a la nueva fecha.
 
-1. Si se elimina un revisor:
+1. Si se quita un revisor:
 
    ![Eliminación de un revisor](assets/removeduser.png)
 
    Eliminación de un revisor
 
-   1. Si está incompleta, la tarea asignada termina.
+   1. Si la tarea asignada está incompleta, finaliza.
    1. El revisor ya no puede realizar comentarios en el recurso.
 
 1. Si se agrega un revisor:
@@ -105,12 +104,11 @@ En esta sección se describe lo que sucede en la revisión final/modificación:
 
    Adición de un revisor
 
-   1. Se crea una tarea de revisión y se asigna al revisor recién agregado.
-   1. El revisor recién añadido puede añadir comentarios para el recurso.
+   1. Se crea una tarea de revisión y se asigna al revisor que se acaba de agregar.
+   1. El revisor que se acaba de agregar puede añadir comentarios en el recurso.
 
 1. Cuando finaliza una revisión:
 
-   1. **Revisores**: Para cada revisor, se termina la tarea incompleta relacionada con la revisión. La tarea ya no aparece como &quot;Pendiente&quot; en la sección Notificaciones del revisor.
-   1. **Iniciador**: La tarea asignada al iniciador de revisión está marcada como completada. La tarea se elimina de la sección Notificación del iniciador de la revisión.
-   1. **Todo**: La revisión aparece en la sección Revisiones anteriores . No se pueden añadir más comentarios.
-
+   1. **Revisores**: se finaliza la tarea incompleta relacionada con la revisión de cada uno de los revisores. La tarea ya no aparece como “Pendiente” en la sección Notificaciones del revisor.
+   1. **Iniciador**: la tarea asignada al iniciador de la revisión se marca como completada y se quita de la sección Notificación del iniciador de la revisión.
+   1. **Todos**: la revisión se muestra en la sección Revisiones anteriores. No se pueden añadir más comentarios.

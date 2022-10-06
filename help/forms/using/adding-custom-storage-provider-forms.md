@@ -1,41 +1,40 @@
 ---
 title: Almacenamiento personalizado para borradores y componentes de envíos
-seo-title: Almacenamiento personalizado para borradores y componentes de envíos
+seo-title: Custom storage for drafts and submissions component
 description: Consulte cómo personalizar el almacenamiento de datos de usuario para borradores y envíos.
-seo-description: Consulte cómo personalizar el almacenamiento de datos de usuario para borradores y envíos.
+seo-description: See how to customize the storage of user data for drafts and submissions.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
-
-# Almacenamiento personalizado para borradores y componentes de envío {#custom-storage-for-drafts-and-submissions-component}
+# Almacenamiento personalizado para borradores y componentes de envíos {#custom-storage-for-drafts-and-submissions-component}
 
 ## Información general {#overview}
 
 AEM Forms permite guardar un formulario como borrador. La funcionalidad de borrador le permite mantener un formulario de trabajo en curso, que puede completar y enviar más tarde desde cualquier dispositivo.
 
-De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo `/content/forms/fp` de la instancia de publicación. Además, los componentes del portal de AEM Forms proporcionan servicios de datos, que puede utilizar para personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar datos de usuario en un almacén de datos.
+De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en la variable `/content/forms/fp` en la instancia de publicación. Además, los componentes del portal de AEM Forms proporcionan servicios de datos, que puede utilizar para personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar datos de usuario en un almacén de datos.
 
 ## Requisitos previos  {#prerequisites}
 
 * Habilitar [componentes del portal de formularios](/help/forms/using/enabling-forms-portal-components.md)
-* Crear una [página del portal de formularios](/help/forms/using/creating-form-portal-page.md)
+* Cree un [página del portal de formularios](/help/forms/using/creating-form-portal-page.md)
 * Habilitar [formularios adaptables para el portal de formularios](/help/forms/using/draft-submission-component.md)
-* Conozca los [detalles de implementación del almacenamiento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Más información [detalles de implementación del almacenamiento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Borrador del servicio de datos {#draft-data-service}
 
-Para personalizar el almacenamiento de los datos de usuario para los borradores, debe implementar todos los métodos de la interfaz `DraftDataService`. El siguiente código de ejemplo describe los métodos y argumentos.
+Para personalizar el almacenamiento de los datos de usuario para los borradores, debe implementar todos los métodos del `DraftDataService` interfaz. El siguiente código de ejemplo describe los métodos y argumentos.
 
 ```java
 /**
@@ -104,7 +103,7 @@ public interface DraftDataService {
 
 ## Servicio de envío de datos {#submission-data-service}
 
-Para personalizar el almacenamiento de los datos de usuario para los envíos, debe implementar todos los métodos de la interfaz `SubmitDataService`. El siguiente código de ejemplo describe los métodos y argumentos.
+Para personalizar el almacenamiento de los datos de usuario para los envíos, debe implementar todos los métodos del `SubmitDataService` interfaz. El siguiente código de ejemplo describe los métodos y argumentos.
 
 ```java
 /**
@@ -214,4 +213,3 @@ Para utilizar la anotación anterior, importa lo siguiente a su proyecto:
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Property;
 ```
-

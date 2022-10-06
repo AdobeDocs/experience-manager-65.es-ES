@@ -1,8 +1,8 @@
 ---
 title: Cómo auditar las operaciones de administración de usuarios en AEM
-seo-title: Cómo auditar las operaciones de administración de usuarios en AEM
+seo-title: How to Audit User Management Operations in AEM
 description: Obtenga información sobre cómo auditar las operaciones de administración de usuarios en AEM.
-seo-description: Obtenga información sobre cómo auditar las operaciones de administración de usuarios en AEM.
+seo-description: Learn how to audit User Management Operations in AEM.
 uuid: 9d177afb-172c-4858-a678-254c97cfa472
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,10 +12,9 @@ discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-translation-type: tm+mt
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '308'
 ht-degree: 1%
 
 ---
@@ -32,22 +31,22 @@ La mejora permite auditar acciones CRUD (Crear, Leer, Actualizar, Eliminar) en p
 * Un usuario que se está agregando a un grupo
 * Cambios de permisos de un usuario o grupo existente
 
-De forma predeterminada, las entradas se escriben en el archivo `error.log`. Para facilitar la monitorización, se recomienda que se redirijan a un archivo de registro independiente. Más información sobre cómo hacerlo en el párrafo siguiente.
+De forma predeterminada, las entradas se escriben en la variable `error.log` archivo. Para facilitar la monitorización, se recomienda que se redirijan a un archivo de registro independiente. Más información sobre cómo hacerlo en el párrafo siguiente.
 
-## Redireccionar el resultado a un archivo de registro independiente {#redirecting-the-output-to-a-separate-log-file}
+## Redireccionar la salida a un archivo de registro independiente {#redirecting-the-output-to-a-separate-log-file}
 
-Para redirigir la salida de registro a un archivo de registro independiente, deberá crear una nueva configuración **Apache Sling Logger**. En el siguiente ejemplo, utilizaremos `useraudit.log` como nombre del archivo independiente.
+Para redirigir la salida de registro a un archivo de registro independiente, debe crear un nuevo **Registrador de Apache Sling** configuración. Usaremos `useraudit.log` como el nombre del archivo independiente en el ejemplo siguiente.
 
-1. Vaya a la consola web navegando a *https://serveraddress:serverport/system/console/configMgr*
-1. Busque la **Configuración del registrador de Sling de Apache**. A continuación, pulse el &quot;+&quot; en el lado derecho de la entrada para crear una nueva configuración de fábrica.
+1. Vaya a la consola web navegando hasta *https://serveraddress:serverport/system/console/configMgr*
+1. Buscar **Configuración del registrador de Apache Sling**. A continuación, pulse el &quot;+&quot; en el lado derecho de la entrada para crear una nueva configuración de fábrica.
 1. Cree la siguiente configuración:
 
-   * **Nivel de registro:** información
+   * **Nivel de registro:** Información
    * **Archivo de registro:** logs/useraudit.log
-   * **Patrón de mensaje: predeterminado de** nivel
+   * **Patrón de mensaje:** nivel predeterminado
    * **Registrador:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Para introducir ambos registros en el campo **Logger**, debe introducir el nombre del primero y, a continuación, crear otro campo pulsando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
+   Para introducir ambos registros en la variable **Registrador** , debe introducir el nombre del primero y, a continuación, crear otro campo pulsando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
 
 ## Ejemplo de salida {#example-output}
 

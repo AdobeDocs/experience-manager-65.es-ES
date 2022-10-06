@@ -1,30 +1,29 @@
 ---
 title: Inicio rápido móvil
-seo-title: Inicio rápido móvil
+seo-title: Mobile Quickstart
 description: Siga esta página para obtener más información sobre AEM aplicación Verify. La aplicación AEM Verify es una forma rápida y sencilla de ejecutar sus aplicaciones móviles AEM en cualquier dispositivo móvil iOS o Android.
-seo-description: Siga esta página para obtener más información sobre AEM aplicación Verify. La aplicación AEM Verify es una forma rápida y sencilla de ejecutar sus aplicaciones móviles AEM en cualquier dispositivo móvil iOS o Android.
+seo-description: Follow this page to learn about AEM Verify app. The AEM Verify app is a quick and an easy way to run your AEM mobile applications on any iOS or Android mobile device.
 uuid: afae4b9d-f835-4d83-b758-39a0d7741510
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 2de6bafb-47cf-4aca-84a3-0cace2858d5c
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: a7cfe77b-c073-4bed-b81a-503fb4445c96
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 1%
+source-wordcount: '79'
+ht-degree: 2%
 
 ---
-
 
 # Inicio rápido móvil {#mobile-quickstart}
 
 >[!NOTE]
 >
->Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-## AEM Verificar aplicación {#aem-verify-app}
+## AEM aplicación Verificar {#aem-verify-app}
 
 >[!CAUTION]
 >

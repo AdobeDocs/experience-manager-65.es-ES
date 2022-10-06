@@ -1,7 +1,7 @@
 ---
 title: Instalar y configurar Designer
 seo-title: Installing and configuring Designer
-description: 'Designer está disponible como instalador independiente y también se incluye en Workbench. Aprenda a instalar Designer independiente.  '
+description: Designer está disponible como instalador independiente y también se incluye en Workbench. Aprenda a instalar Designer independiente.
 seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.
 uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
@@ -40,7 +40,7 @@ Designer está disponible como instalador independiente y también se incluye en
 1. Inicie el instalador de Designer haciendo doble clic en Setup.exe.
 1. Continúe y proporcione sus detalles y número de serie en la pantalla Personalizar.
 1. Si acepta el acuerdo de licencia, haga clic en Siguiente para continuar.
-1. (Opcional) Si desea instalar Designer en una ubicación de su elección, modifique la ruta de instalación. Haga clic en Siguiente. 
+1. (Opcional) Si desea instalar Designer en una ubicación de su elección, modifique la ruta de instalación. Haga clic en Siguiente.
 1. Haga clic en Atrás para cambiar las preferencias. Para instalar Designer, haga clic en Instalar.
 1. Haga clic en Finalizar cuando finalice la instalación.
 

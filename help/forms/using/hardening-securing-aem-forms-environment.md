@@ -1,8 +1,8 @@
 ---
 title: Endurecimiento y seguridad de los formularios AEM en el entorno OSGi
-seo-title: Endurecimiento y seguridad de los formularios AEM en el entorno OSGi
+seo-title: Hardening and Securing AEM forms on OSGi environment
 description: Conozca las recomendaciones y prácticas recomendadas para proteger AEM Forms en el servidor OSGi.
-seo-description: Conozca las recomendaciones y prácticas recomendadas para proteger AEM Forms en el servidor OSGi.
+seo-description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
@@ -10,7 +10,7 @@ role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -152,9 +152,9 @@ Utilice las credenciales del servidor de procesamiento para AEM servicio de conf
 Utilice cuentas de usuario con privilegios mínimos requeridos para configurar orígenes de datos para el modelo de datos de formulario (FDM). El uso de cuentas administrativas puede proporcionar acceso abierto a entidades de esquema y metadatos a usuarios no autorizados.\
 La integración de datos también proporciona métodos para autorizar solicitudes de servicio de FDM. Puede insertar mecanismos de autorización antes y después de la ejecución para validar una solicitud. Las solicitudes de servicio se generan marcando el prefijo de un formulario, enviando un formulario e invocando servicios a través de una regla.
 
-**Autorización previa al proceso:** puede utilizar la autorización previa al proceso para validar la autenticidad de una solicitud antes de ejecutarla. Puede utilizar entradas, servicios y detalles de solicitud para permitir o detener la ejecución de la solicitud. Puede devolver una excepción de integración de datos OPERATION_ACCESS_DENIED si se detiene la ejecución. También puede modificar la solicitud del cliente antes de enviarla para su ejecución. Por ejemplo, cambiar la entrada y añadir información adicional.
+**Autorización previa al proceso:** Puede utilizar la autorización de procesamiento previo para validar la autenticidad de una solicitud antes de ejecutarla. Puede utilizar entradas, servicios y detalles de solicitud para permitir o detener la ejecución de la solicitud. Puede devolver una excepción de integración de datos OPERATION_ACCESS_DENIED si se detiene la ejecución. También puede modificar la solicitud del cliente antes de enviarla para su ejecución. Por ejemplo, cambiar la entrada y añadir información adicional.
 
-**Autorización posterior al proceso:**  puede utilizar la autorización posterior al proceso para validar y controlar los resultados antes de devolver los resultados al solicitante. También puede filtrar, recortar e insertar datos adicionales en los resultados.
+**Autorización posterior al proceso:** Puede utilizar la autorización posterior al proceso para validar y controlar los resultados antes de devolver los resultados al solicitante. También puede filtrar, recortar e insertar datos adicionales en los resultados.
 
 ### Limitar el acceso de los usuarios {#limit-user-access}
 
@@ -198,4 +198,4 @@ Un clúster de procesamiento se ejecuta en modo de autor, pero no lo utiliza par
 
 ### Usar AEM prácticas recomendadas para proteger un entorno de AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Este documento proporciona instrucciones específicas para el entorno de AEM Forms. Debe asegurarse de que la instalación de AEM subyacente sea segura cuando se implemente. Para obtener instrucciones detalladas, consulte la documentación [AEM Security Checklist](/help/sites-administering/security-checklist.md).
+Este documento proporciona instrucciones específicas para el entorno de AEM Forms. Debe asegurarse de que la instalación de AEM subyacente sea segura cuando se implemente. Para obtener instrucciones detalladas, consulte [Lista de comprobación de seguridad AEM](/help/sites-administering/security-checklist.md) documentación.

@@ -3,7 +3,8 @@ title: No se puede usar Experience Manager Forms con ciertas versiones de Oracle
 seo-title: Unable to use Experience Manager Forms with certain versions of Oracle JDK
 description: No se puede usar Experience Manager Forms con ciertas versiones de Oracle JDK
 seo-description: Unable to use Experience Manager Forms with certain versions of Oracle JDK
-source-git-commit: 91b012f8024350effc19613bcecfc42dee4130d9
+exl-id: 6a8a7cb7-77d6-4bfc-82f3-82d0fddfc10a
+source-git-commit: 0142b46d087d34707b09a1f172910c8b287b839d
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 4%
@@ -18,7 +19,7 @@ El problema se aplica a las siguientes versiones:
 * Experience Manager 6.4 Forms
 * Experience Manager 6.5 Forms
 
-## Problema   {#issue}
+## Problema {#issue}
 
 El usuario encuentra la siguiente excepción:
 `Caused by: javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: JAXP0801002: the compiler encountered an XPath expression containing '101' operators that exceeds the '100' limit set by 'FEATURE_SECURE_PROCESSING'.`

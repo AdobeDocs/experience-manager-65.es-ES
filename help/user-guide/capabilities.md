@@ -1,18 +1,17 @@
 ---
 title: Guía del usuario de funciones de AEM 6.5
-seo-title: Guía del usuario de funciones de AEM 6.5
+seo-title: AEM 6.5 Capabilities User Guide
 description: Una visión general de las capacidades esenciales de AEM 6.5
-seo-description: Una visión general de las capacidades esenciales de AEM 6.5
+seo-description: An overview of the essential capabilities of AEM 6.5
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 44%
+source-wordcount: '145'
+ht-degree: 52%
 
 ---
 
-# Guías del usuario de capacidades de AEM 6.5 {#aem-65-capabilities-user-guides}
+# Guías del usuario sobre las capacidades de AEM 6.5 {#aem-65-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
@@ -36,7 +35,7 @@ ht-degree: 44%
 
 ## AEM Screens {#aem-screens}
 
-[Obtenga información sobre la solución de señalización digital para publicar experiencias dinámicas e interactivas.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[Obtenga información sobre la solución de señalización digital para publicar experiencias dinámicas e interactivas.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=es)
 
 ## AEM Commerce {#aem-commerce}
 

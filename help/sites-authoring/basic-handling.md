@@ -1,8 +1,8 @@
 ---
 title: Gestión básica
-seo-title: Gestión básica
+seo-title: Basic Handling
 description: Familiarícese con el desplazamiento por AEM y su uso básico
-seo-description: Familiarícese con el desplazamiento por AEM y su uso básico
+seo-description: Get comfortable with navigating AEM and its basic usage
 uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2969'
 ht-degree: 95%
 
 ---
@@ -23,13 +23,10 @@ ht-degree: 95%
 >[!NOTE]
 >
 >* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación AEM. Utiliza la consola **Sitios** como base. 
-   >
-   >
-* Algunas funciones no están disponibles en todas las consolas y determinadas consolas pueden disponer de funciones adicionales. La información específica sobre consolas concretas y sus funciones se tratará en más detalle en otras páginas.
->* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-authoring/keyboard-shortcuts.md) y [al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
-
 >
-
+>* Algunas funciones no están disponibles en todas las consolas y determinadas consolas pueden disponer de funciones adicionales. La información específica sobre consolas concretas y sus funciones se tratará en más detalle en otras páginas.
+>* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-authoring/keyboard-shortcuts.md) y [al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>
 
 
 ## Introducción {#getting-started}
@@ -81,7 +78,7 @@ La navegación global dispone de dos paneles, representados por iconos en el lad
 
 Las opciones disponibles en estos paneles se describen a continuación.
 
-### Panel de navegación     {#navigation-panel}
+### Panel de navegación    {#navigation-panel}
 
 El panel Navegación proporciona acceso a las consolas de AEM:
 
@@ -126,7 +123,7 @@ En Navegación, las consolas disponibles son:
    <td>La <a href="/help/sites-authoring/touch-ui-managing-projects.md">consola Proyectos le permite acceder directamente a sus proyectos</a>. Los proyectos son tableros virtuales. Se pueden utilizar para crear un equipo y permitirle acceder a medios, flujos de trabajo y tareas, para que todos los miembros puedan trabajar en un objetivo común. <br /> </td>
   </tr>
   <tr>
-   <td>Pantallas</td>
+   <td>Screens</td>
    <td>Las <a href="https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">pantallas</a> le permiten administrar todas sus pantallas de cliente, de cualquier tamaño y en cualquier lugar.</td>
   </tr>
   <tr>
@@ -154,13 +151,13 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
    ![screen_shot_2018-03-23at103615](assets/screen_shot_2018-03-23at103615.png)
 
-* [Búsqueda  ](/help/sites-authoring/search.md)
+* [Búsqueda](/help/sites-authoring/search.md)
 
    ![](do-not-localize/screen_shot_2018-03-23at103542.png)
 
    También puede utilizar la [tecla de método abreviado](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra inclinada) para iniciar una búsqueda desde cualquier consola.
 
-* [Soluciones](https://www.adobe.com/experience-cloud.html)
+* [Soluciones](https://www.adobe.com/es/experience-cloud.html)
 
    ![](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -224,13 +221,13 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
 * Navegación por teclado
 
-   Puede navegar por un sitio web utilizando solo el teclado. Utiliza la funcionalidad estándar del explorador de la tecla **TAB** (u **OPT+TAB**) para desplazarlo entre los elementos de la página que son *enfocables*.
+   Puede navegar por un sitio web utilizando solo el teclado. Utiliza la funcionalidad estándar del explorador de la variable **TAB** clave (o **OPT+TAB**) para desplazarlo entre los elementos de la página que se *enfocable*.
 
-   En la consola **Sites** hay una opción agregada para **Omitir al contenido principal**. Esto se hace visible a medida que *tab* pasa por las opciones de encabezado y acelera la navegación al permitirle omitir los elementos estándar en la barra de herramientas (del producto) y llevarle directamente al contenido principal.
+   En la consola **Sites** hay una opción agregada para **Omitir al contenido principal**. Esto se hace visible a medida que *ficha* a través de las opciones de encabezado y acelera la navegación al permitirle omitir los elementos estándar de la barra de herramientas (producto) y llevarle directamente al contenido principal.
 
    ![bh-30](assets/bh-30.png)
 
-## Acceso a la Ayuda {#accessing-help}
+## Acceso a la Ayuda   {#accessing-help}
 
 Hay varios medios de ayuda disponibles:
 
@@ -270,7 +267,7 @@ Recursos y descargas para desarrolladores
    >Para obtener información general sobre todos los métodos abreviados del teclado, consulte la documentación siguiente:
    >
    >    * [Métodos abreviados del teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   * [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
+   >    * [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Barra de herramientas Acciones {#actions-toolbar}
@@ -290,9 +287,10 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 ![Barra de herramientas Acciones](assets/bh-12.png)
 
 >[!NOTE]
-Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
+>
+>Los iconos individuales disponibles se documentan de acuerdo con la consola, la función o el escenario en cuestión.
 
-## Acciones rápidas     {#quick-actions}
+## Acciones rápidas    {#quick-actions}
 
 En la [vista de tarjeta](#cardviewquickactions), determinadas acciones están disponibles como iconos de acción rápida, además de en la barra de herramientas. Los iconos de acción rápida aparecen disponibles para un único elemento cada vez, con lo que no es necesario preseleccionar. 
 
@@ -312,9 +310,10 @@ Puede visualizar, navegar y seleccionar sus recursos (para efectuar una acción 
 * [Vista de lista   ](#list-view)
 
 >[!NOTE]
-De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
+>
+>De forma predeterminada, en ninguna de las vistas los recursos de AEM Assets muestran como miniaturas las representaciones originales de los recursos. Un administrador puede utilizar superposiciones para configurar los recursos de AEM Assets de forma que muestren las representaciones originales como miniaturas.
 
-### Selección de recursos     {#selecting-resources}
+### Selección de recursos    {#selecting-resources}
 
 La selección de un recurso específico depende de la vista y el dispositivo combinados:
 
@@ -342,13 +341,13 @@ La selección de un recurso específico depende de la vista y el dispositivo com
    <td>Vista de tarjeta<br /> </td>
    <td>
     <ul>
-     <li>Escritorio:<br /> pase el ratón por encima y utilice la acción rápida de marca de verificación</li>
+     <li>Escritorio:<br /> Pase el ratón y, a continuación, utilice la acción rápida de marca de verificación</li>
      <li>Dispositivo móvil: <br /> toque y mantenga pulsada la tarjeta.</li>
     </ul> </td>
    <td>
     <ul>
      <li>Escritorio:<br /> Haga clic en la tarjeta</li>
-     <li>Dispositivo móvil:<br /> Toque la tarjeta</li>
+     <li>Dispositivo móvil:<br /> Pulsar la tarjeta</li>
     </ul> </td>
   </tr>
   <tr>
@@ -457,7 +456,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
 * Se puede navegar hacia abajo en el árbol tocando o haciendo clic en las tarjetas (con cuidado de evitar las acciones rápidas), o hacia arriba de nuevo mediante las [rutas de exploración del encabezado](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista de lista     {#list-view}
+### Vista de lista    {#list-view}
 
 ![bh-19](assets/bh-19.png)
 
@@ -496,7 +495,8 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 * Cambie el orden de los elementos mediante la barra vertical de puntos en la parte más a la derecha de cada elemento en la lista.
 
    >[!NOTE]
-   Solo es posible cambiar el orden en una carpeta ordenada que tiene el valor `jcr:primaryType` establecido como `sling:OrderedFolder`.
+   >
+   >Solo es posible cambiar el orden en una carpeta ordenada que tiene el valor `jcr:primaryType` establecido como `sling:OrderedFolder`.
 
    ![bh-22](assets/bh-22.png)
 
@@ -510,7 +510,7 @@ Si selecciona un recurso en la columna más a la izquierda, en una columna a la 
 
    ![bh-24](assets/bh-24.png)
 
-## Selector de raíl {#rail-selector}
+## Selector de carril {#rail-selector}
 
 El **Selector de carril** está disponible en la parte superior izquierda de la ventana y las opciones que muestra dependen de tus consolas actuales.
 
@@ -521,7 +521,8 @@ Por ejemplo, en Sitios puede seleccionar contenido solamente (el valor predeterm
 Si se selecciona contenido solamente, después solo aparece el icono de raíl. Cuando se selecciona cualquier otra opción, el nombre de la opción aparece al lado del icono de raíl.
 
 >[!NOTE]
-[Los métodos abreviados del teclado](/help/sites-authoring/keyboard-shortcuts.md) están disponibles para cambiar rápidamente entre las opciones de visualización de raíl.
+>
+>[Los métodos abreviados del teclado](/help/sites-authoring/keyboard-shortcuts.md) están disponibles para cambiar rápidamente entre las opciones de visualización de raíl.
 
 ### Árbol de contenido {#content-tree}
 
@@ -532,10 +533,12 @@ Al utilizar el panel lateral del árbol de contenido junto con una vista de list
 ![bh-26](assets/bh-26.png)
 
 >[!NOTE]
-Una vez seleccionada una entrada en la vista de jerarquía, las teclas de flecha se pueden utilizar para desplazarse con rapidez por la jerarquía.
-Consulte los [métodos abreviados del teclado](/help/sites-authoring/keyboard-shortcuts.md) para obtener más información.
+>
+>Una vez seleccionada una entrada en la vista de jerarquía, las teclas de flecha se pueden utilizar para desplazarse con rapidez por la jerarquía.
+>
+>Consulte los [métodos abreviados del teclado](/help/sites-authoring/keyboard-shortcuts.md) para obtener más información.
 
-### Escala de tiempo {#timeline}
+### Escala de cronología {#timeline}
 
 La línea de tiempo puede utilizarse para ver o iniciar eventos que se hayan producido en el recurso seleccionado. Para abrir la columna de cronología, utilice el selector del raíl:
 

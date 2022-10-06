@@ -1,10 +1,11 @@
 ---
 title: recorrido de autor de contenido sin encabezado de AEM
 description: Introducción a las funciones potentes, flexibles y sin encabezado de Adobe Experience Manager y a cómo crear contenido para su proyecto.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -77,6 +78,6 @@ Ahora que ha aprendido los conceptos y la terminología, el siguiente paso es [D
 * recorrido para desarrolladores AEM sin encabezado
    * [Obtenga Información Sobre El Desarrollo Sin Cabeza De CMS](/help/journey-headless/developer/learn-about.md)
 
-* [recorrido de arquitecto de contenido sin encabezado de AEM](/help/journey-headless/architect/overview.md)
+* [Recorrido de arquitecto de contenido de AEM Headless](/help/journey-headless/architect/overview.md)
 
 * [AEM Recorrido de traducción de contenido sin encabezado](/help/journey-headless/translation/overview.md)

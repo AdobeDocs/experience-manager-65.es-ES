@@ -1,8 +1,8 @@
 ---
 title: Crear una página de aterrizaje del boletín eficaz
-seo-title: Crear una página de aterrizaje del boletín eficaz
+seo-title: Creating an Effective Newsletter Landing Page
 description: Una página de base de boletín eficaz ayuda a llegar a los máximos visitantes posibles para que éstos se registren en el boletín (u otra campaña de marketing por correo electrónico). La información recopilada de los registros al boletín se puede utilizar para obtener posibles clientes.
-seo-description: Una página de base de boletín eficaz ayuda a llegar a los máximos visitantes posibles para que éstos se registren en el boletín (u otra campaña de marketing por correo electrónico). La información recopilada de los registros al boletín se puede utilizar para obtener posibles clientes.
+seo-description: An effective newsletter landing page helps you get as many people as possible to sign up for your newsletter (or other email marketing campaign). You can use the information you gather from your newsletter sign ups to get leads.
 uuid: 0799b954-076b-4e95-8724-3661ae8fddb6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b41de64a-7d27-4633-a8d5-ac91d47eb1bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 93%
+source-wordcount: '613'
+ht-degree: 92%
 
 ---
-
 
 # Crear una página de aterrizaje del boletín eficaz{#creating-an-effective-newsletter-landing-page}
 
@@ -33,7 +32,7 @@ Para crear una página de base de boletín eficaz, debe hacer lo siguiente:
 >[!NOTE]
 >
 >Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes y listas).
->La recomendación es aprovechar [Adobe Campaign y la integración en AEM](/help/sites-administering/campaign.md).
+>La recomendación es aprovechar [Adobe Campaign y la integración a AEM](/help/sites-administering/campaign.md).
 
 ## Crear una lista para el boletín {#creating-a-list-for-the-newsletter}
 

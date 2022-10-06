@@ -1,6 +1,6 @@
 ---
 title: Invocación de AEM Forms mediante API
-seo-title: Invocación de AEM Forms mediante API
+seo-title: Invoking AEM Forms using APIs
 description: Invocación de AEM Forms mediante API
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0e92d1ad-12bd-4bfd-81cc-9be8e376c5ca
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
-
 
 # Invocación de AEM Forms mediante API {#invoking-aem-forms-using-apis}
 
@@ -33,4 +32,3 @@ Los servicios requieren un contenedor de servicios para ejecutarse, de forma sim
 >[!NOTE]
 >
 >La programación con formularios AEM no incluye información sobre cómo invocar AEM Forms mediante carpetas vigiladas o correo electrónico.
-

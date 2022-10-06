@@ -23,58 +23,57 @@ ht-degree: 2%
 >
 >En este documento se describe cómo personalizar la creación de páginas en la IU moderna y con capacidad táctil, y no se aplica a la IU clásica.
 
-AEM proporciona varios mecanismos para permitirle personalizar la funcionalidad de creación de páginas (y las [consolas](/help/sites-developing/customizing-consoles-touch.md)) de la instancia de creación.
+AEM proporciona varios mecanismos para permitirle personalizar la funcionalidad de creación de páginas (y el [consolas](/help/sites-developing/customizing-consoles-touch.md)) de la instancia de creación.
 
 * Clientlibs
 
    Clientlibs le permite ampliar la implementación predeterminada para realizar nuevas funciones, mientras reutiliza las funciones, objetos y métodos estándar. Al personalizar, puede crear su propia clientlib en `/apps.` La nueva clientlib debe:
 
-   * dependen de la clientlib `cq.authoring.editor.sites.page` de creación
-   * formar parte de la categoría `cq.authoring.editor.sites.page.hook` adecuada
+   * dependen de la clientlib de creación `cq.authoring.editor.sites.page`
+   * formar parte de las `cq.authoring.editor.sites.page.hook` categoría
 
 * Superposiciones
 
-   Las superposiciones se basan en definiciones de nodos y permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no se requiere una copia 1:1 del original, ya que la [fusión de recursos de sling](/help/sites-developing/sling-resource-merger.md) permite la herencia.
+   Las superposiciones se basan en definiciones de nodos y permiten superponer la funcionalidad estándar (en `/libs`) con su propia funcionalidad personalizada (en `/apps`). Al crear una superposición, no se requiere una copia 1:1 del original, ya que la función [fusión de recursos de sling](/help/sites-developing/sling-resource-merger.md) permite la herencia.
 
 >[!NOTE]
 >
->Para obtener más información, consulte el [conjunto de documentación de JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
+>Para obtener más información, consulte [Conjunto de documentación de JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
 
 Se pueden utilizar de muchas maneras para ampliar la funcionalidad de creación de páginas en la instancia de AEM. A continuación se explica una selección (de alto nivel).
 
 >[!NOTE]
 >
->Para obtener más información, consulte:
+>Para obtener más información, consulte lo siguiente:
 >
->* Uso y creación de [clientlibs](/help/sites-developing/clientlibs.md).
->* Uso y creación de [superposiciones](/help/sites-developing/overlays.md).
+>* Uso y creación [clientlibs](/help/sites-developing/clientlibs.md).
+>* Uso y creación [superposiciones](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
->* [Estructura de la interfaz de usuario táctil AEM ](/help/sites-developing/touch-ui-structure.md) para obtener detalles de las áreas estructurales utilizadas para la creación de páginas.
-
+>* [Estructura de la interfaz de usuario táctil AEM](/help/sites-developing/touch-ui-structure.md) para obtener más información sobre las áreas estructurales utilizadas para la creación de páginas.
 >
->Este tema también se trata en la sesión [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html): [Personalización de la interfaz de usuario para AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
+>Este tema también se trata en la sección [AEM](https://docs.adobe.com/content/ddc/en/gems.html) session - [Personalización de la interfaz de usuario para AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
 
 >[!CAUTION]
 >
->***no debe*** cambiar nada en la ruta `/libs`.
+>You ***must*** no cambie nada en la variable `/libs` ruta.
 >
 >Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una corrección o un paquete de funciones).
 >
 >El método recomendado para la configuración y otros cambios es:
 >
 >1. Volver a crear el elemento requerido (es decir, tal como existe en `/libs`) en `/apps`
->1. Realizar cambios en `/apps`
+>1. Realice cambios dentro de `/apps`
 
 
 ## Añadir nueva capa (modo) {#add-new-layer-mode}
 
-Cuando edita una página, hay varios [modos](/help/sites-authoring/author-environment-tools.md#page-modes) disponibles. Estos modos se implementan utilizando [capas](/help/sites-developing/touch-ui-structure.md#layer). Permiten acceder a diferentes tipos de funcionalidad para el mismo contenido de página. Las capas estándar son: editar, previsualizar, anotar, desarrollar y segmentar.
+Al editar una página, existen varios [modos](/help/sites-authoring/author-environment-tools.md#page-modes) disponible. Estos modos se implementan utilizando [capas](/help/sites-developing/touch-ui-structure.md#layer). Permiten acceder a diferentes tipos de funcionalidad para el mismo contenido de página. Las capas estándar son: editar, previsualizar, anotar, desarrollar y segmentar.
 
 ### Ejemplo de capa: Estado de Live Copy {#layer-example-live-copy-status}
 
-Una instancia de AEM estándar proporciona la capa MSM. Esto accede a los datos relacionados con [administración de varios sitios](/help/sites-administering/msm.md) y los resalta en la capa .
+Una instancia de AEM estándar proporciona la capa MSM. Esto accede a los datos relacionados con [administración de varios sitios](/help/sites-administering/msm.md) y lo resalta en la capa.
 
-Para verla en acción, puede editar cualquier [We.Retail language copy](/help/sites-developing/we-retail-globalized-site-structure.md) página (o cualquier otra página de Live Copy) y seleccionar el modo **Live Copy Status** .
+Para verla en acción, puede editar cualquier [Copia de idioma de We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) (o cualquier otra página de Live Copy) y seleccione la **Estado de Live Copy** en el menú contextual.
 
 Puede encontrar la definición de capa MSM (como referencia) en:
 
@@ -97,7 +96,7 @@ El navegador de recursos muestra recursos de distintos tipos o categorías (p. e
 
 ### Ejemplo de código {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` es un paquete de muestra que muestra cómo agregar un nuevo grupo al buscador de recursos. Este ejemplo se conecta al flujo público de [Flickr](https://www.flickr.com) y los muestra en el panel lateral.
+`aem-authoring-extension-assetfinder-flickr` es un paquete de muestra que muestra cómo agregar un nuevo grupo al buscador de recursos. Este ejemplo se conecta a [Flickr](https://www.flickr.com)del flujo público de y los muestra en el panel lateral.
 
 CÓDIGO DE GITHUB
 
@@ -110,16 +109,16 @@ Puede encontrar el código de esta página en GitHub
 
 Al crear páginas, el usuario debe seleccionar a menudo entre los recursos (p. ej. páginas, componentes, recursos, etc.). Esto puede tomar la forma de una lista, por ejemplo, desde la cual el autor debe elegir un elemento.
 
-Para mantener la lista en un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Por ejemplo, si el componente [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) se utiliza para permitir al usuario seleccionar la ruta a un recurso en particular, las rutas presentadas se pueden filtrar de la siguiente manera:
+Para mantener la lista en un tamaño razonable y también relevante para el caso de uso, se puede implementar un filtro en forma de predicado personalizado. Por ejemplo, si la variable [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) se utiliza para permitir al usuario seleccionar la ruta a un recurso en particular, las rutas presentadas se pueden filtrar de la siguiente manera:
 
-* Implemente el predicado personalizado implementando la interfaz [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html).
-* Especifique un nombre para el predicado y haga referencia a ese nombre al utilizar `pathbrowser`.
+* Implementar el predicado personalizado implementando [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html) interfaz.
+* Especifique un nombre para el predicado y haga referencia a ese nombre al usar la variable `pathbrowser`.
 
 Para obtener más información sobre la creación de un predicado personalizado, consulte [este artículo](/help/sites-developing/implementing-custom-predicate-evaluator.md).
 
 >[!NOTE]
 >
->La implementación de un predicado personalizado mediante la implementación de la interfaz `com.day.cq.commons.predicate.AbstractNodePredicate` también funciona en la IU clásica.
+>Implementación de un predicado personalizado mediante la implementación `com.day.cq.commons.predicate.AbstractNodePredicate` también funciona en la IU clásica.
 >
 >Consulte [este artículo de la base de conocimientos](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) para ver un ejemplo de implementación de un predicado personalizado en la IU clásica.
 
@@ -161,7 +160,7 @@ En una instalación estándar de AEM:
 
             Define el tipo de editor en línea que se utilizará cuando se active la edición in situ para ese componente; p. ej. `text`, `textimage`, `image`, `title`.
 
-1. Se pueden configurar detalles de configuración adicionales del editor utilizando un nodo `config` que contenga configuraciones, así como un nodo `plugin` adicional para contener los detalles de configuración del complemento necesarios.
+1. Los detalles de configuración adicionales del editor se pueden configurar mediante un `config` nodo que contiene configuraciones, así como un `plugin` para contener los detalles necesarios de configuración del complemento.
 
    A continuación se muestra un ejemplo de definición de relaciones de aspecto para el complemento de recorte de imágenes del componente de imagen. Tenga en cuenta que debido al potencial de un tamaño de pantalla muy limitado, las proporciones de aspecto de recorte se han movido al editor de pantalla completa y solo se pueden ver allí.
 
@@ -187,7 +186,7 @@ En una instalación estándar de AEM:
 
    >[!CAUTION]
    >
-   >Tenga en cuenta que en AEM proporciones de recorte, tal como se establece en la propiedad `ratio` , se definen como **height/width**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas heredados. Los usuarios autores no notarán ninguna diferencia siempre que defina claramente la propiedad `name`, ya que esto es lo que se muestra en la interfaz de usuario.
+   >Tenga en cuenta que en AEM proporciones de recorte, tal como establece el `ratio` , se definen como **altura/anchura**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas heredados. Los usuarios de creación no notarán ninguna diferencia siempre que defina la variable `name` claramente, ya que esto es lo que se muestra en la interfaz de usuario.
 
 #### Creación de un nuevo editor local {#creating-a-new-in-place-editor}
 
@@ -222,11 +221,11 @@ Puede encontrar el código de esta página en GitHub
 
 #### Configuración de varios editores in situ {#configuring-multiple-in-place-editors}
 
-Es posible configurar un componente para que tenga varios editores in situ. Cuando se configuran varios editores in situ, puede seleccionar el contenido adecuado y abrir el editor adecuado. Consulte la documentación [Configuración de varios editores in-situ](/help/sites-developing/multiple-inplace-editors.md) para obtener más información.
+Es posible configurar un componente para que tenga varios editores in situ. Cuando se configuran varios editores in situ, puede seleccionar el contenido adecuado y abrir el editor adecuado. Consulte la [Configuración de varios editores in situ](/help/sites-developing/multiple-inplace-editors.md) documentación para obtener más información.
 
 ## Agregar una acción de nueva página {#add-a-new-page-action}
 
-Para agregar una nueva acción de página a la barra de herramientas de la página, por ejemplo una acción **Back to Sites** (consola).
+Para agregar una nueva acción de página a la barra de herramientas de la página, por ejemplo, una **Volver a Sitios** (consola).
 
 ### Ejemplo de código {#code-sample-3}
 
@@ -241,15 +240,15 @@ Puede encontrar el código de esta página en GitHub
 
 ## Personalización del flujo de trabajo de solicitud de activación {#customizing-the-request-for-activation-workflow}
 
-Flujo de trabajo predeterminado, **Solicitud de activación**:
+Flujo de trabajo integrado, **Solicitud de activación**:
 
-* Se mostrará automáticamente en el menú correspondiente cuando un autor de contenido **no tenga** los derechos de replicación adecuados, pero **no sea miembro de** usuarios y autores de DAM.
+* Se mostrará automáticamente en el menú correspondiente cuando un autor de contenido **no tiene** los derechos de replicación adecuados, pero **does have** pertenencia a DAM-Users y Authors.
 
 * De lo contrario, no aparecerá nada, ya que se han eliminado los derechos de replicación.
 
-Para tener un comportamiento personalizado tras dicha activación, puede superponer el flujo de trabajo **Solicitud de activación**:
+Para tener un comportamiento personalizado tras dicha activación, puede superponer la variable **Solicitud de activación** flujo de trabajo:
 
-1. En `/apps` superponga el asistente **Sitios**:
+1. En `/apps` superponga el **Sitios** asistente:
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 
@@ -259,5 +258,5 @@ Para tener un comportamiento personalizado tras dicha activación, puede superpo
    >
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
-1. Actualice el [modelo de flujo de trabajo](/help/sites-developing/workflows-models.md) y las configuraciones/secuencias de comandos relacionadas según sea necesario.
-1. Elimine el derecho a la acción [ `replicate`](/help/sites-administering/security.md#actions) de todos los usuarios apropiados para todas las páginas relevantes; para que este flujo de trabajo se active como acción predeterminada cuando cualquiera de los usuarios intente publicar (o replicar) una página.
+1. Actualice el [modelo de flujo de trabajo](/help/sites-developing/workflows-models.md) y configuraciones/scripts relacionados según sea necesario.
+1. Quite la derecha a la [ `replicate` acción](/help/sites-administering/security.md#actions) de todos los usuarios adecuados para todas las páginas relevantes; para que este flujo de trabajo se active como acción predeterminada cuando cualquiera de los usuarios intente publicar (o replicar) una página.

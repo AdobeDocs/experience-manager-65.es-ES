@@ -1,5 +1,5 @@
 ---
-title: 'Prácticas recomendadas para usar formularios adaptables '
+title: Prácticas recomendadas para usar formularios adaptables
 seo-title: Best practices for working with adaptive forms
 description: Explica las prácticas recomendadas para configurar un proyecto de AEM Forms, desarrollar formularios adaptables y optimizar el rendimiento del sistema AEM Forms.
 seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
@@ -12,7 +12,7 @@ exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
 workflow-type: tm+mt
 source-wordcount: '4529'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -182,9 +182,9 @@ Tenga en cuenta las siguientes prácticas recomendadas para superar los problema
 * Configure los fragmentos para que se carguen de forma diferida. Durante el tiempo de ejecución, los fragmentos marcados para cargarse de forma diferida solo se representan cuando son necesarios. Reduce significativamente el tiempo de carga de los formularios grandes. También se admite en fragmentos con paneles repetibles. Para obtener más información, consulte [Configuración de la carga diferida](/help/forms/using/lazy-loading-adaptive-forms.md).
 
    * No configure la carga diferida en fragmentos en un diseño de cuadrícula adaptable o en el primer panel.
-   * Los componentes de archivo adjunto y Términos y condiciones no son compatibles con los fragmentos cargados de forma diferida.
+   * Los componentes Archivo adjunto y Términos y condiciones no son compatibles con los fragmentos cargados de forma diferida.
    * Marque un valor en un panel cargado de forma diferida como Usar valor globalmente si ese valor se utiliza en alguna otra parte del formulario, de modo que el valor esté disponible para su uso cuando se descargue el panel que lo contiene.
-   * Considere la posibilidad de escribir reglas de visibilidad para fragmentos que deban mostrarse u ocultarse según una condición.
+   * Considere la posibilidad de escribir reglas de visibilidad para aquellos fragmentos que deban mostrarse u ocultarse según una condición.
 * Establezca el valor de la variable **Número de llamadas por solicitud** en el **Servlet principal de Apache Sling** a un número bastante grande. Permite al servidor de Forms permitir llamadas adicionales. La configuración muestra un valor predeterminado de 1500. El valor, 1500 llamadas, es para otros componentes de Experience Manager, como Sitios y Recursos. El conjunto de valores predeterminado de los formularios adaptables es 2000. Si encuentra la variable `too many calls` error en los registros o el formulario no se puede procesar, intente aumentar el valor a un gran número para resolver el problema. Si el número de llamadas supera los 20000, el formulario es complejo y puede tardar algún tiempo en procesarse en el explorador. Esto solo ocurre por primera vez que se carga el formulario, después de que se almacene en caché y una vez que el formulario se almacene en caché, el rendimiento no se ve afectado de forma significativa.
 
 ### Rellenado previo de formularios adaptables {#prefilling-adaptive-forms}

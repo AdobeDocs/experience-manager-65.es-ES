@@ -1,8 +1,8 @@
 ---
-title: 'Configuración del entorno de la cuenta  '
-seo-title: 'Configuración del entorno de la cuenta  '
+title: Configuración del entorno de la cuenta
+seo-title: Configuring Your Account Environment
 description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación
-seo-description: AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
 uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '517'
 ht-degree: 99%
 
 ---
-
 
 # Configuración del entorno de la cuenta  {#configuring-your-account-environment}
 

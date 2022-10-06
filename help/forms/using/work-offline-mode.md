@@ -1,43 +1,42 @@
 ---
-title: Trabajar en modo sin conexión
-seo-title: Trabajar en modo sin conexión
-description: Desconecte el dispositivo móvil fuera del rango de red de AEM Forms o en modo completamente sin conexión y trabaje en la aplicación de AEM Forms
-seo-description: Desconecte el dispositivo móvil fuera del rango de red de AEM Forms o en modo completamente sin conexión y trabaje en la aplicación de AEM Forms
+title: Trabajo en modo sin conexión
+seo-title: Working in the offline mode
+description: Desconecte el dispositivo móvil fuera del intervalo de red de AEM Forms o en modo sin conexión y trabaje en la aplicación de AEM Forms
+seo-description: Take your mobile device offline outside your AEM Forms network range or in a completely offline mode and work on the AEM Forms app
 uuid: b900a0f8-90ce-486a-bde6-6cdf11bd2801
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
 
+# Trabajo en modo sin conexión {#working-in-the-offline-mode}
 
-# Trabajar en modo sin conexión {#working-in-the-offline-mode}
+El modo sin conexión de la aplicación AEM Forms le permite trabajar sin problemas aunque la aplicación esté sin conexión. Puede abrir, actualizar y enviar un formulario sin necesidad de conectividad de red.
 
-El modo sin conexión de la aplicación de AEM Forms le permite trabajar sin problemas incluso si la aplicación se desconecta. Puede abrir, actualizar y enviar un formulario sin necesidad de conectividad de red.
-
-Tiene el inicio de trabajar en la aplicación de AEM Forms sincronizando la aplicación con el servidor de AEM Forms. Todos los formularios asignados se descargan en la aplicación. Para AEM Forms en JEE, las tareas se recuperan en la ficha tareas y los nombres de inicio se asocian a formularios y otros formularios en la ficha Forms. Para AEM Forms en OSGi, solo Forms se carga en la ficha Forms.
+Empiece a trabajar en la aplicación de AEM Forms sincronizando la aplicación con el servidor de AEM Forms. Todos los formularios asignados a usted se descargan en la aplicación. Para AEM Forms en JEE, las tareas se recuperan en la ficha tareas y los puntos de inicio se recuperan en los formularios asociados y otros formularios en la pestaña Forms . Para AEM Forms en OSGi, solo se carga Forms en la pestaña Forms .
 
 Para obtener más información sobre cómo sincronizar la aplicación, consulte [Sincronización de la aplicación](/help/forms/using/sync-app.md).
 
-## Cómo hacer que Forms esté disponible sin conexión {#making-forms-available-offline}
+## Disponibilidad de Forms sin conexión {#making-forms-available-offline}
 
-Al sincronizar la aplicación con el servidor de AEM Forms, los formularios se descargan en el dispositivo móvil. Sin embargo, de forma predeterminada, los archivos adjuntos asociados al formulario no se descargan. Esto implica que si está en línea, puede realizar la vista de los archivos adjuntos. Sin embargo, para asegurarse de que puede realizar la vista de los datos adjuntos en el modo sin conexión, cambie la configuración predeterminada de la aplicación.
+Al sincronizar la aplicación con el servidor de AEM Forms, los formularios se descargan en el dispositivo móvil. Sin embargo, de forma predeterminada, los archivos adjuntos asociados al formulario no se descargan. Esto implica que si está en línea, puede ver los archivos adjuntos. Sin embargo, para asegurarse de que puede ver los datos adjuntos en el modo sin conexión, cambie la configuración predeterminada de la aplicación.
 
-Para asegurarse de que los archivos adjuntos asociados se descargan con cada formulario, establezca Buscar archivos adjuntos en Activado. Para obtener más información, consulte [Actualización de la configuración general](/help/forms/using/update-general-settings.md).
+Para asegurarse de que los archivos adjuntos asociados se descargan con cada formulario, establezca Buscar archivos adjuntos en activado. Para obtener más información, consulte [Actualización de la configuración general](/help/forms/using/update-general-settings.md).
 
-Dado que la descarga de datos en el dispositivo móvil puede afectar al rendimiento del dispositivo, de forma predeterminada, el ajuste Buscar archivos adjuntos se establece en OFF. Los archivos adjuntos se recuperan en el dispositivo para cualquier tarea que se descargue del servidor después de actualizar la configuración a ON. En el modo sin conexión, un usuario puede trabajar en todas las tareas que se descarguen en el dispositivo después de configurar las opciones **Buscar archivos adjuntos** en Activado.
+Dado que la descarga de datos en el dispositivo móvil puede afectar al rendimiento del dispositivo, de forma predeterminada, la configuración Buscar archivos adjuntos está desactivada. Los archivos adjuntos se recuperan en el dispositivo para cualquier tarea que se descargue del servidor después de actualizar la configuración a ON. En el modo sin conexión, un usuario puede trabajar en todas las tareas que se descarguen en el dispositivo después de configurar la variable **Buscar archivos adjuntos** para activar.
 
-## Configuración del servicio sin conexión para la aplicación de AEM Forms {#configuring-offline-service-for-aem-forms-app-br}
+## Configuración del servicio sin conexión para la aplicación AEM Forms {#configuring-offline-service-for-aem-forms-app-br}
 
-El servicio sin conexión de la aplicación de AEM Forms identifica los recursos utilizados en un formulario. La aplicación de AEM Forms depende de este servicio para obtener información sobre las dependencias de formularios. Se requiere información sobre las dependencias del formulario para habilitar las funcionalidades sin conexión. El servicio sin conexión de la aplicación de AEM Forms almacena en caché las rutas o direcciones URL de los recursos utilizados en un formulario. La caché se actualiza en función de los cambios en el formulario y del período de validez configurado para el servicio sin conexión. El almacenamiento en caché de rutas o direcciones URL de los recursos utilizados en un formulario mejora el rendimiento en el servidor.
+El servicio sin conexión de aplicaciones de AEM Forms identifica los recursos utilizados en un formulario. La aplicación de AEM Forms se basa en este servicio para obtener información sobre las dependencias del formulario. Se necesita información sobre las dependencias de formulario para habilitar las funcionalidades sin conexión. El servicio sin conexión de aplicaciones de AEM Forms almacena en caché las rutas o direcciones URL de los recursos utilizados en un formulario. La caché se actualiza en función de los cambios del formulario y del periodo de validez configurado para el servicio sin conexión. El almacenamiento en caché de rutas o direcciones URL de los recursos utilizados en un formulario mejora el rendimiento del lado del servidor.
 
-Para configurar el componente sin conexión del lado del servidor de la aplicación de AEM Forms:
+Para configurar el componente sin conexión del lado del servidor de la aplicación AEM Forms:
 
 1. En la instancia de autor, vaya a **Adobe Experience Manager** >**Herramientas** > **Forms** > **Configurar el servicio sin conexión de la aplicación Forms**.
 
@@ -46,8 +45,8 @@ Para configurar el componente sin conexión del lado del servidor de la aplicaci
 1. En Configuración general, puede realizar lo siguiente:
 
    * **Borrar caché**: Borra la caché del lado del servidor de las dependencias del formulario.
-   * **Restablecer configuración**: Restaura la configuración sin conexión de la aplicación de AEM Forms.
-   * **Validez** de caché: Especifica el período de validez de la caché sin conexión del lado del servidor.
-   * **Rutas** de observación de recursos: Especifica las rutas en las que el servicio sin conexión supervisa los cambios de recursos. Si se produce algún cambio en las rutas especificadas, se actualiza la caché sin conexión de todos los formularios dependientes. Por ejemplo, `/etc/clientlibs/fd,/content/dam/images`.
+   * **Restablecer configuración**: Restaura la configuración sin conexión de la aplicación AEM Forms.
+   * **Validez de caché**: Especifica el periodo de validez de la caché sin conexión del lado del servidor.
+   * **Rutas de observación de recursos**: Especifica las rutas en las que el servicio sin conexión supervisa los cambios de recursos. Si se producen cambios en las rutas especificadas, se actualiza la caché sin conexión de todos los formularios dependientes. Por ejemplo, `/etc/clientlibs/fd,/content/dam/images`.
 
-1. En la ficha **Caché de recursos manual**, especifique las dependencias de formularios que el servicio sin conexión no puede identificar. Puede especificar recursos como imágenes cargadas desde JavaScript. La aplicación de AEM Forms también descargará estos recursos para el modo sin conexión.
+1. En el **Caché de recursos manual** especifique las dependencias del formulario que el servicio sin conexión no puede identificar. Puede especificar recursos, como imágenes cargadas desde JavaScript. La aplicación de AEM Forms también descargará estos recursos para el modo sin conexión.

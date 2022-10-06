@@ -1,8 +1,8 @@
 ---
 title: Asignación de grupos de usuarios personalizados en AEM 6.5
-seo-title: Asignación de grupos de usuarios personalizados en AEM 6.5
+seo-title: Custom User Group Mapping in AEM 6.5
 description: Descubra cómo funciona la asignación de grupos de usuarios personalizados en AEM.
-seo-description: Descubra cómo funciona la asignación de grupos de usuarios personalizados en AEM.
+seo-description: Lear how Custom User Group Mapping works in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,10 +12,9 @@ discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
-translation-type: tm+mt
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---
@@ -54,7 +53,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-## Comparación de OSGi Services {#comparison-of-osgi-services}
+## Comparación de los servicios OSGi {#comparison-of-osgi-services}
 
 **Versiones anteriores AEM**
 
@@ -90,7 +89,7 @@ Servicio para configurar la lista de exclusión de entidades principales que no 
 
    >[!NOTE]
    > 
-   >Si el `CugExcludeImpl` no está configurado, el `CugConfiguration` vuelve al valor predeterminado.
+   >Si la variable `CugExcludeImpl` no está configurado, la variable `CugConfiguration` volverá al valor predeterminado.
 
    Es posible conectar una implementación personalizada de CugExclude en caso de necesidades especiales.
 

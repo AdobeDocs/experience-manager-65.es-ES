@@ -1,8 +1,8 @@
 ---
-title: 'Búsqueda  '
-seo-title: 'Búsqueda  '
+title: Búsqueda
+seo-title: Search
 description: El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
-seo-description: El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
+seo-description: The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.
 uuid: 6dd3df4d-6040-4230-8373-fc028687b675
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '470'
 ht-degree: 85%
 
 ---
-
 
 # Búsqueda{#searching}
 
@@ -46,15 +45,11 @@ El panel de búsqueda permite realizar búsquedas en todas las páginas del siti
 >
 >* [Comodines](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches) 
 >* [Operadores booleanos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
-
-   >
-   >
-* [Expresiones regulares](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
+>
+>* [Expresiones regulares](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Grupo de campos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping) 
 >* [Ampliación de búsqueda](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term) 
-
 >
-
 
 
 Para ejecutar la búsqueda, haga clic en **Buscar** en la parte inferior del panel. Haga clic en **Restablecer** para borrar los criterios de búsqueda.
@@ -82,7 +77,7 @@ En la consola **Sitios web** está la opción de menú **Buscar y reemplazar**, 
    * indica si la búsqueda debería distinguir mayúsculas y minúsculas
    * indica si únicamente deberían buscarse palabras completas (de lo contrario, también se buscan subcadenas)
 
-   Al hacer clic en **Previsualización** listas donde se encontró el término. Puede seleccionar o borrar instancias específicas para reemplazarlas:
+   Hacer clic **Vista previa** enumera dónde se ha encontrado el término. Puede seleccionar o borrar instancias específicas para reemplazarlas:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -95,7 +90,7 @@ El alcance predeterminado para el servlet de buscar y reemplazar cubre las sigui
 * `jcr:text`
 * `text`
 
-El ámbito se puede cambiar con la consola de administración web Apache Felix (por ejemplo, en `https://localhost:4502/system/console/configMgr`). Seleccione `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` y configure el ámbito según sea necesario.
+El ámbito se puede cambiar mediante la consola de gestión web Apache Felix (por ejemplo, en `https://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` y configure el ámbito según sea necesario.
 
 >[!NOTE]
 >

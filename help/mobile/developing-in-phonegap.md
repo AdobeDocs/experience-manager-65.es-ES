@@ -1,54 +1,52 @@
 ---
 title: PhoneGap
-seo-title: Creación de contenido para Adobe PhoneGap Enterprise
-description: Esta página sirve como punto de partida para el desarrollo de aplicaciones mediante PhoneGap Enterprise con AEM. AEM se integra con PhoneGap para que pueda crear aplicaciones fácilmente con AEM páginas. PhoneGap permite al usuario crear aplicaciones de utilidad que permiten al usuario trabajar con el contenido.
-seo-description: Esta página sirve como punto de partida para el desarrollo de aplicaciones mediante PhoneGap Enterprise con AEM. AEM se integra con PhoneGap para que pueda crear aplicaciones fácilmente con AEM páginas. PhoneGap permite al usuario crear aplicaciones de utilidad que permiten al usuario trabajar con el contenido.
+seo-title: Authoring Content for Adobe PhoneGap Enterprise
+description: Esta página sirve como punto de partida para el desarrollo de aplicaciones que utilizan PhoneGap Enterprise con AEM. AEM se integra con PhoneGap para que pueda crear aplicaciones fácilmente con AEM páginas. PhoneGap permite al usuario crear aplicaciones de utilidad que permiten al usuario trabajar con el contenido.
+seo-description: This page serves as starting point for developing apps using PhoneGap Enterprise with AEM. AEM integrates with PhoneGap so that you can easily create apps using AEM pages. PhoneGap allows the user to create utility apps that lets user to work with the content.
 uuid: c6ac02fa-d41c-4b57-95d8-171a96540dd6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
-translation-type: tm+mt
-source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
+exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 1%
+source-wordcount: '251'
+ht-degree: 2%
 
 ---
-
 
 # PhoneGap{#phonegap}
 
 >[!NOTE]
 >
->Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-AEM se integra con PhoneGap para que pueda crear aplicaciones fácilmente con AEM páginas. PhoneGap permite al usuario crear aplicaciones de utilidad que permiten al usuario trabajar con el contenido. La sincronización de contenido le permite crear archivos con versiones de páginas para compilar con aplicaciones.
+AEM se integra con PhoneGap para que pueda crear aplicaciones fácilmente con AEM páginas. PhoneGap permite al usuario crear aplicaciones de utilidad que permiten al usuario trabajar con el contenido. La sincronización de contenido le permite crear archivos de páginas con versiones para empaquetarlos con aplicaciones.
 
 >[!NOTE]
 >
->Antes de empezar a usar AEM Mobile con Adobe PhoneGap, asegúrese de configurar su entorno y empezar a usar el [Panel de aplicaciones de AEM Mobile](/help/mobile/phonegap-authoring-apps.md).
+>Antes de empezar a usar AEM Mobile con Adobe PhoneGap, asegúrese de configurar su entorno y comenzar con el [Panel de aplicaciones de AEM Mobile](/help/mobile/phonegap-authoring-apps.md).
 
-Los siguientes recursos le ayudarán a empezar a utilizar AEM Mobile con Adobe PhoneGap:
+Los siguientes recursos le ayudarán a empezar a usar AEM Mobile con Adobe PhoneGap:
 
 * [Desarrollo de aplicaciones móviles en AEM](/help/mobile/developing-mobile-applications.md)
 * [Móvil con sincronización de contenido](/help/mobile/phonegap-contentsync.md)
 * [Plantillas de página](/help/mobile/phonegap-apps-arch-page-templates.md)
 
-* [AEM Mobile Content Services: Información general](/help/mobile/develop-content-as-a-service.md)
+* [Servicios de contenido de AEM Mobile: Información general](/help/mobile/develop-content-as-a-service.md)
 
-   * Para habilitar los Servicios de contenido y los Modelos de datos, consulte [Administración de servicios de contenido](/help/mobile/developing-content-services.md)
+   * Para habilitar los servicios de contenido y los modelos de datos, consulte [Administración de servicios de contenido](/help/mobile/developing-content-services.md)
    * Para obtener más información sobre la creación de modelos, consulte [Desarrollo de modelos](/help/mobile/administer-mobile-apps.md)
-   * Para obtener más información sobre Representación y Envío, consulte [Representación y Envío de Content Services](/help/mobile/rendering-and-delivery.md)
+   * Para obtener más información sobre Renderización y envío, consulte [Renderización y entrega de los servicios de contenido](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >
->Para ejecutar las aplicaciones móviles AEM en cualquier dispositivo móvil iOS o Android, consulte [Inicio rápido móvil con AEM aplicación de verificación](/help/mobile/phonegap-mobile-quickstart.md).
+>Para ejecutar sus aplicaciones móviles AEM en cualquier dispositivo móvil iOS o Android, consulte [Inicio rápido móvil con AEM aplicación de verificación](/help/mobile/phonegap-mobile-quickstart.md).
 
 ## Cómo avanzar {#getting-ahead}
 
-Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los siguientes recursos:
+Para obtener más información sobre las funciones y responsabilidades de un administrador y desarrollador, consulte los siguientes recursos:
 
 * [Creación para Adobe PhoneGap Enterprise con AEM](/help/mobile/phonegap.md)
 * [Administración de contenido para Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
-

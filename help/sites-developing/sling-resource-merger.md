@@ -166,7 +166,7 @@ Estos, junto con la funcionalidad estándar, permiten:
 
 * **Redefinir una propiedad creada automáticamente**
 
-   De forma predeterminada, las propiedades creadas automáticamente (por ejemplo, `jcr:primaryType`) no están sujetos a una superposición o anulación para garantizar que el tipo de nodo que se encuentra en `/libs` se respeta. Para imponer una superposición/anulación, debe volver a crear el nodo en `/apps`, oculte explícitamente la propiedad y vuelva a definirla:
+   De forma predeterminada, las propiedades creadas automáticamente (por ejemplo, `jcr:primaryType`) no están sujetos a una superposición o anulación para garantizar que el tipo de nodo que se encuentra actualmente en `/libs` se respeta. Para imponer una superposición/anulación, debe volver a crear el nodo en `/apps`, oculte explícitamente la propiedad y vuelva a definirla:
 
    1. Cree el nodo correspondiente en `/apps` con el `jcr:primaryType`
    1. Crear la propiedad `sling:hideProperties` en ese nodo, con el valor establecido en el de la propiedad creada automáticamente; por ejemplo, `jcr:primaryType`
@@ -201,8 +201,8 @@ Estos, junto con la funcionalidad estándar, permiten:
    1. Cree el nodo correspondiente en /apps
    1. Crear una propiedad `sling:hideResource`
 
-      * tipo: `Boolean`
-      * seleccionado: `true`
+      * type: `Boolean`
+      * value: `true`
 
 * **Ocultar elementos secundarios de un nodo (manteniendo las propiedades del nodo)**
 
@@ -229,7 +229,7 @@ Estos, junto con la funcionalidad estándar, permiten:
          Esto especifica el nodo (como en `/libs`) que el nodo actual debe colocarse antes de:
 
          * tipo: `String`
-         * seleccionado: `<before-SiblingName>`
+         * valor: `<before-SiblingName>`
 
 ### Invocación de la fusión de recursos de Sling desde el código {#invoking-the-sling-resource-merger-from-your-code}
 

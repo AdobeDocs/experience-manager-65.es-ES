@@ -1,5 +1,5 @@
 ---
-title: 'Conceptos '
+title: Conceptos
 description: Conceptos generales de comercio electrónico con AEM.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
@@ -36,7 +36,6 @@ Esto significa que:
 >* [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
 >* [Commerce Cloud SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Commerce Cloud de Salesforce](https://github.com/adobe/commerce-salesforce)
-
 >
 
 
@@ -554,7 +553,7 @@ Normalmente, los administradores de información de productos no se encargan de 
    * renderizadores y diálogos para la administración de promociones
    * subcomponentes para procesar y editar parámetros de configuración específicos de los controladores de promoción
 
-En AEM, las promociones también se integran en la variable [Administración de campañas](/help/sites-authoring/personalization.md):
+En AEM, las promociones también se integran en la variable [Campaign Management](/help/sites-authoring/personalization.md):
 
 * a [campaign](/help/sites-authoring/personalization.md) especifica los tiempos de activación/desactivación
 * [experiencias](/help/sites-authoring/personalization.md) *en* la campaña se utiliza para agrupar recursos (teaserpages, promociones, etc.) según el segmento de audiencia al que se correspondan

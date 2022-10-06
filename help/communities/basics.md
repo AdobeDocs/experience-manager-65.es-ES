@@ -1,62 +1,61 @@
 ---
-title: Conceptos básicos de los componentes de comunidades
-seo-title: Conceptos básicos de los componentes de comunidades
-description: Añadir funciones de comunidades a sitios AEM en modo de edición y configurar componentes
-seo-description: Añadir funciones de comunidades a sitios AEM en modo de edición y configurar componentes
+title: Conceptos básicos de los componentes de Communities
+seo-title: Communities Components Basics
+description: Agregar funciones de Communities a sitios AEM en modo de edición y configurar componentes
+seo-description: Add Communities features to AEM sites in edit mode and configure components
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 1%
+source-wordcount: '365'
+ht-degree: 2%
 
 ---
 
-
-# Conceptos básicos de componentes de comunidades {#communities-components-basics}
+# Conceptos básicos de los componentes de Communities {#communities-components-basics}
 
 ## Información general {#overview}
 
-La sección de creación de la documentación describe cómo agregar funciones de Comunidades a AEM sitios en modo de edición de autor, así como la descripción de las configuraciones de componentes.
+La sección de creación de la documentación describe la adición de funciones de Communities a sitios AEM en modo de edición de autor, así como la descripción de configuraciones de componentes.
 
-Los componentes pueden explorarse con una instancia de AEM y la [guía interactiva de componentes de la comunidad](components-guide.md).
+Los componentes se pueden explorar mediante una instancia de AEM y la [Guía de componentes de comunidad](components-guide.md).
 
-## Acceso a componentes de comunidades {#accessing-communities-components}
+## Acceso a componentes de Communities {#accessing-communities-components}
 
-Al crear contenido de página, si la plantilla subyacente permite cambios en el diseño de la página, es posible activar componentes que no están disponibles en el navegador de componentes como parte del diseño del sitio.
+Al crear contenido de página, si la plantilla subyacente permite realizar cambios en el diseño de la página, es posible habilitar componentes que no están disponibles en el explorador de componentes como parte del diseño del sitio.
 
-Los componentes de Communities disponibles se enumeran [aquí](author-communities.md#available-communities-components).
+Se muestran los componentes de Communities disponibles [here](author-communities.md#available-communities-components).
 
 >[!NOTE]
 >
->Para obtener información general sobre la creación, consulte la [guía rápida de creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Para obtener información general sobre la creación, consulte [guía rápida para la creación de páginas](../../help/sites-authoring/qg-page-authoring.md).
 >
->Si no está familiarizado con AEM, vista la documentación sobre [administración básica](../../help/sites-authoring/basic-handling.md).
+>Si no está familiarizado con AEM, consulte la documentación de [tratamiento básico](../../help/sites-authoring/basic-handling.md).
 
-### Entrada al modo de diseño {#entering-design-mode}
+### Introducción al modo de diseño {#entering-design-mode}
 
-Si no se encuentra un componente **Communities** en el navegador de componentes (barra de tareas), será necesario introducir `Design Mode` para agregar otros componentes de Communities. [Es posible que también sea necesario agregar bibliotecas](#required-clientlibs)  obligatorias del lado del cliente (clientlibs).
+Si **Comunidades** no se encuentra en el navegador de componentes (barra de tareas), será necesario introducir `Design Mode` para agregar otros componentes de Communities. [Bibliotecas de cliente necesarias](#required-clientlibs) (clientlibs) también puede ser necesario añadirlo.
 
 Para obtener más información, consulte [Configuración de componentes en modo de diseño](../../help/sites-authoring/default-components-designmode.md).
 
 A continuación se muestran imágenes de la selección de algunos componentes de Communities y su visualización en el navegador de componentes:
 
-![componente-diseño](assets/component-design.png)
+![diseño de componentes](assets/component-design.png)
 
 Los componentes seleccionados ya están disponibles en el navegador de componentes:
 
-![component-design1](assets/component-design1.png)
+![componente-diseño1](assets/component-design1.png)
 
 ## Clientlibs requeridos {#required-clientlibs}
 
-[Las bibliotecas](../../help/sites-developing/clientlibs.md)  del lado del cliente (clientlibs) son necesarias para el correcto funcionamiento (JavaScript) y el estilo (CSS) de un componente.
+[Bibliotecas del lado cliente](../../help/sites-developing/clientlibs.md) (clientlibs) son necesarios para el correcto funcionamiento (JavaScript) y estilo (CSS) de un componente.
 
-Cuando se agrega un componente Comunidades a una página, si el resultado es un error o una apariencia inesperada, lo primero que se debe intentar es agregar los clientes necesarios para el componente Comunidades. Para obtener más información, consulte [Clientlibs for Communities Components](clientlibs.md).
+Al añadir un componente Comunidades a una página, si el resultado es un error o un aspecto inesperado, lo primero que hay que intentar es añadir los clientlibs necesarios para el componente Comunidades. Para obtener más información, consulte [Clientlibs para componentes de Communities](clientlibs.md).
 
 ### Ejemplo: Revisiones colocadas inicialmente sin bibliotecas de cliente... {#example-initially-placed-reviews-without-client-libraries}
 
@@ -68,11 +67,11 @@ Cuando se agrega un componente Comunidades a una página, si el resultado es un 
 
 ## Etiquetado {#tagging}
 
-Muchas funciones de Comunidades se pueden configurar para permitir que los miembros etiqueten el contenido introducido (publicado) en el entorno de publicación.
+Se pueden configurar muchas funciones de Communities para permitir que los miembros etiqueten el contenido introducido (publicado) en el entorno de publicación.
 
-Si se permite el etiquetado, la configuración del sitio de la comunidad puede establecerse para limitar las Áreas de nombres presentadas a los miembros en el entorno de publicación. Consulte la consola [Community Sites](sites-console.md#tagging).
+Si se permite el etiquetado, la configuración del sitio de la comunidad se puede establecer para limitar las áreas de nombres presentadas a los miembros en el entorno de publicación. Consulte la [Consola Sitios de comunidad](sites-console.md#tagging).
 
-Características que permiten el etiquetado: [blog](blog-feature.md), [calendario](calendar.md), [biblioteca de archivos](file-library.md), [foro](forum.md)
+Funciones que permiten el etiquetado: [blog](blog-feature.md), [calendario](calendar.md), [biblioteca de archivos](file-library.md), [foro](forum.md)
 
 Funciones que utilizan etiquetas: [catálogo](catalog.md), [búsqueda](search.md), [nube de etiquetas sociales](tagcloud.md)
 
@@ -82,13 +81,12 @@ Para obtener información sobre la creación:
 
 Para información administrativa:
 
-* Creación de Áreas de nombres de etiquetas (taxonomía): [Administración de etiquetas](../../help/sites-administering/tags.md)
-* Configuración del sitio de la comunidad: consulte [ETIQUETADO](sites-console.md#tagging)
-* [Etiquetado de contenido generado por el usuario](../../help/sites-authoring/tags.md)
+* Creación de espacios de nombres de etiquetas (taxonomía): [Administración de etiquetas](../../help/sites-administering/tags.md)
+* Configuración del sitio de la comunidad: see [ETIQUETADO](sites-console.md#tagging)
+* [Etiquetado del contenido generado por el usuario](../../help/sites-authoring/tags.md)
 * [Etiquetado de recursos de habilitación](tag-resources.md)
 
-Para obtener información sobre desarrolladores:
+Para obtener información del desarrollador:
 
-* [AEM marco de etiquetado](../../help/sites-developing/framework.md)
-* [Etiquetado de elementos esenciales](tag.md)
-
+* [Marco de trabajo de etiquetado de AEM](../../help/sites-developing/framework.md)
+* [Aspectos básicos del etiquetado](tag.md)

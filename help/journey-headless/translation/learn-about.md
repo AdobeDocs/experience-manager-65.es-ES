@@ -1,10 +1,11 @@
 ---
 title: Obtenga información sobre el contenido sin encabezado y cómo traducirlo en AEM
 description: Aprenda conceptos sin objetivos, cómo se asignan a AEM, y la teoría de AEM traducción.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
@@ -14,7 +15,7 @@ Aprenda conceptos sin objetivos, cómo se asignan a AEM, y la teoría de AEM tra
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender la entrega de contenido sin encabezado, cómo AEM admite sin encabezado y cómo se puede traducir dicho contenido. Después de leer, debe:
+Este documento le ayuda a comprender la entrega de contenido sin encabezado, cómo AEM admite sin encabezado y cómo se puede traducir dicho contenido. Después de leer, debería haber logrado lo siguiente:
 
 * Comprender los conceptos básicos de la entrega de contenido sin encabezado.
 * Familiarícese con cómo AEM admite la traducción y la eliminación de periféricos.
@@ -58,7 +59,7 @@ La potencia de AEM le permite entregar contenido sin periféricos, en pilas comp
 
 Más adelante en el recorrido conocerás los detalles sobre cómo AEM traduce el contenido, pero a un alto nivel, el concepto es sencillo:
 
-1. Defina una conexión a un servicio de traducción configurando el marco de integración de traducción.
+1. Defina una conexión a un servicio de traducción configurando el marco de trabajo de integración de traducción.
 1. Defina qué contenido debe traducirse mediante reglas de traducción.
 1. Cree un proyecto de traducción para recopilar el contenido, enviarlo al servicio de traducción y recibir los resultados.
 1. Revise y publique el contenido traducido.
@@ -76,4 +77,4 @@ Aproveche este conocimiento y continúe su recorrido de traducción sin AEM cabe
 
 Aunque se recomienda pasar a la siguiente parte del recorrido de traducción sin encabezado revisando el documento [Introducción a AEM traducción sin encabezado,](getting-started.md) los siguientes son algunos recursos opcionales adicionales que profundizan en algunos conceptos mencionados en este documento, pero no son necesarios para continuar en el recorrido sin encabezado.
 
-* [MSM y traducción](/help/sites-administering/msm-and-translation.md) - Los detalles de AEM Multi-Site Manager y cómo funciona con sus herramientas de traducción
+* [MSM y traducción](/help/sites-administering/msm-and-translation.md): Los detalles de Multi-Site Manager de AEM y cómo funciona con sus herramientas de traducción

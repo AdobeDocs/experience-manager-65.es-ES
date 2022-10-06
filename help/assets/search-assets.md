@@ -176,7 +176,7 @@ Puede buscar recursos en función de los valores exactos de los campos de metada
 | Tiempo de activación | ontime:AAAA-MM-DDTHH |
 | Tiempo de inactividad | offtime:AAAA-MM-DDTHH |
 | Intervalo de tiempo (caduca dateontime, offtime) | campo de faceta : límite inferior..Upperbound |
-| Ruta | /content/dam/&lt;folder name=&quot;&quot;> |
+| Ruta  | /content/dam/&lt;folder name=&quot;&quot;> |
 | Título del PDF | pdftitle:&quot;Documento de Adobe&quot; |
 | Asunto | asunto: &quot;Formación&quot; |
 | Etiquetas | etiquetas: &quot;Ubicación Y Viaje&quot; |
@@ -262,7 +262,7 @@ Para acceder a la interfaz del selector de recursos, vaya a `https://[aem_server
 
 *Figura: Busque y seleccione un recurso en el selector de recursos.*
 
-## Restricciones     {#limitations}
+## Restricciones {#limitations}
 
 La capacidad de búsqueda en [!DNL Experience Manager Assets] tiene las siguientes limitaciones:
 

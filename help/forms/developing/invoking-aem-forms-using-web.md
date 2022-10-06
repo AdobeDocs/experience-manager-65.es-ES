@@ -47,7 +47,7 @@ Puede recuperar un WDSL de servicio especificando la siguiente definición de UR
  https://<your_serverhost>:<your_port>/soap/services/<service_name>?wsdl[&version=<version>][&async=true|false][lc_version=<lc_version>]
 ```
 
-dónde:
+donde:
 
 * *your_serverhost* representa la dirección IP del servidor de aplicaciones J2EE que aloja AEM Forms.
 * *your_port* representa el puerto HTTP que utiliza el servidor de aplicaciones J2EE.

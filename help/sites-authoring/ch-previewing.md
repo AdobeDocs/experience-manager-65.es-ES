@@ -1,24 +1,23 @@
 ---
 title: Obtención de vista previa de páginas mediante los datos de ContextHub
-seo-title: Obtención de vista previa de páginas mediante los datos de ContextHub
+seo-title: Previewing Pages Using ContextHub Data
 description: La barra de herramientas de ContextHub muestra datos de los almacenes de ContextHub, le permite cambiar datos de los almacenes y resulta útil para obtener una vista previa del contenido
-seo-description: La barra de herramientas de ContextHub muestra datos de los almacenes de ContextHub, le permite cambiar datos de los almacenes y resulta útil para obtener una vista previa del contenido
+seo-description: The ContextHub toolbar displays data from ContextHub stores and enables you to change store data and  is useful for previewing content
 uuid: 0150555a-0a92-4692-a706-bbe59fd34d6a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 93%
+source-wordcount: '365'
+ht-degree: 96%
 
 ---
 
-
-# Vista previa de páginas mediante datos de ContextHub{#previewing-pages-using-contexthub-data} 
+# Obtención de vista previa de páginas mediante los datos de ContextHub{#previewing-pages-using-contexthub-data}
 
 La barra de herramientas de [ContextHub](/help/sites-developing/contexthub.md) muestra datos de los almacenes de ContextHub y le permite cambiar datos de los almacenes. La barra de herramientas de ContextHub es útil para obtener una vista previa del contenido determinado por los datos de un almacén de ContextHub.
 
@@ -49,9 +48,9 @@ La barra de herramientas de ContextHub está disponible en modo de Vista previa.
 
 Cada módulo de IU proporciona un conjunto diferente de funciones, pero los siguientes tipos de funciones son comunes. Dado que los módulos de IU son ampliables, el desarrollador puede implementar otras funciones según sea necesario.
 
-### Contenido de la barra de herramientas  {#toolbar-content}
+### Contenido de la barra de herramientas {#toolbar-content}
 
-Los módulos de IU pueden mostrar datos de uno o más almacenes de ContextHub en la barra de herramientas. Los módulos de interfaz de usuario utilizan un icono y un título para identificarse.
+Los módulos de IU pueden mostrar datos de uno o más almacenes de ContextHub en la barra de herramientas. Los módulos de IU utilizan un icono y un título para identificarse.
 
 ![screen_shot_2018-03-23at093936](assets/screen_shot_2018-03-23at093936.png)
 
@@ -65,9 +64,8 @@ Al tocarlos o hacer clic en ellos, algunos módulos de IU muestran una superposi
 
 La superposición emergente de un módulo puede incluir elementos de formulario que le permiten cambiar los datos del almacén de ContextHub. Si el contenido de la página viene determinado por los datos del almacén, puede utilizar el formulario y observar los cambios en el contenido de la página.
 
-### Modo de pantalla completa  {#fullscreen-mode}
+### Modo de pantalla completa {#fullscreen-mode}
 
 Las superposiciones emergentes pueden incluir un icono que toca o en el que hace clic para expandir el contenido emergente para cubrir toda la ventana o la pantalla del navegador.
 
 ![](do-not-localize/chlimage_1-18.png)
-

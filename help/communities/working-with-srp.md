@@ -1,8 +1,8 @@
 ---
 title: 'SRP: Almacenamiento de contenido de la comunidad'
-seo-title: 'SRP: Almacenamiento de contenido de la comunidad'
+seo-title: SRP - Community Content Storage
 description: A partir de AEM Communities 6.1, el contenido generado por el usuario (UGC) se almacena en un único almacén común proporcionado por un proveedor de recursos de almacenamiento (SRP)
-seo-description: A partir de AEM Communities 6.1, el contenido generado por el usuario (UGC) se almacena en un único almacén común proporcionado por un proveedor de recursos de almacenamiento (SRP)
+seo-description: As of AEM Communities 6.1, user generated content (UGC) is stored in a single, common store provided by a storage resource provider (SRP)
 uuid: d45e03c4-378b-4510-a6a0-d48c8cb879d9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: e29aae44-67be-43d2-8004-c986412d9e63
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ A partir de AEM Communities 6.1, el contenido generado por el usuario (UGC) se a
 
 A diferencia de las versiones anteriores, no hay una replicación inversa/avanzada de UGC en AEM instancias. En su lugar, el SRP hace que UGC sea directamente accesible para crear, leer, actualizar y eliminar operaciones (CRUD) desde todas las instancias de autor y publicación, con una excepción para JSRP.
 
-A continuación se muestran las [características de cada opción de SRP](#characteristics-of-srp-options), que es información crucial para el proceso de decisión al elegir el SRP apropiado y la [implementación subyacente](/help/communities/topologies.md).
+A continuación se muestra el [características de cada opción SRP](#characteristics-of-srp-options), que es información crucial para el proceso de decisión a la hora de elegir el PRS apropiado y [implementación subyacente](/help/communities/topologies.md).
 
 Para obtener más información sobre el uso de SRP para UGC, consulte [Información general del proveedor de recursos de almacenamiento](/help/communities/srp.md).
 
@@ -37,9 +37,9 @@ Para obtener más información sobre el uso de SRP para UGC, consulte [Informaci
 
 >[!CAUTION]
 >
->A partir de AEM 6.1, [UGC nunca se replica](#ugc-never-replicated).
+>A partir del AEM 6.1, [UGC nunca se replica](#ugc-never-replicated).
 >
->Cuando la implementación no incluye un almacén común, como la topología predeterminada [JSRP](/help/communities/topologies.md#jsrp), UGC solo será visible en la instancia de autor o publicación de AEM en la que se introdujo. Solo si la topología incluye un clúster de publicación, el UGC estará visible en cualquier instancia de publicación.
+>Cuando la implementación no incluye un almacén común, como el valor predeterminado [JSRP](/help/communities/topologies.md#jsrp) , UGC solo será visible en la instancia de publicación o autor de AEM en la que se introdujo. Solo si la topología incluye un clúster de publicación, el UGC estará visible en cualquier instancia de publicación.
 
 ## Características de las opciones de SRP {#characteristics-of-srp-options}
 
@@ -107,7 +107,7 @@ JSRP:
 
 ## Configuración de SRP {#configuring-srp}
 
-La especificación de la opción de almacenamiento predeterminada, basada en la implementación subyacente, se realiza a través de la [Consola de configuración de almacenamiento](/help/communities/srp-config.md).
+La especificación de la opción de almacenamiento predeterminada, basada en la implementación subyacente, se realiza mediante la variable [Consola de configuración de almacenamiento](/help/communities/srp-config.md).
 
 Para obtener detalles de configuración de cada opción, consulte:
 
@@ -132,7 +132,7 @@ Mientras el contenido del sitio se replica, UGC nunca se replica.
 
 ### Administración de datos de usuario {#managing-user-data}
 
-También son de interés para CommunitiesIes [*usuarios*, *grupos de usuarios* y *perfiles de usuario*](/help/communities/users.md). Estos datos relacionados con el usuario, cuando se crean y actualizan en el entorno de publicación, deben estar disponibles para otras instancias de publicación cuando la topología es un [conjunto de servidores de publicación](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
+También de interés para CommunitiesIes [*usuarios*, *grupos de usuarios* y *perfiles de usuario*](/help/communities/users.md). Estos datos relacionados con el usuario, cuando se crean y actualizan en el entorno de publicación, deben estar disponibles para otras instancias de publicación cuando la topología es [publicar granja](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
 A partir de AEM Communities 6.1, los datos relacionados con el usuario se sincronizan mediante la distribución Sling en lugar de la replicación. Para obtener más información, visite [Sincronización de usuarios](/help/communities/sync.md).
 

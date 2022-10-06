@@ -1,8 +1,8 @@
 ---
 title: Procedimiento de actualización
-seo-title: Procedimiento de actualización
+seo-title: Upgrade Procedure
 description: Obtenga información sobre el procedimiento que debe seguir para actualizar AEM.
-seo-description: Obtenga información sobre el procedimiento que debe seguir para actualizar AEM.
+seo-description: Learn about the procedure you need to follow in order to upgrade AEM.
 uuid: 81126a70-c082-4f01-a1ad-7152182da88b
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -12,14 +12,13 @@ discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
-
 
 # Procedimiento de actualización {#upgrade-procedure}
 
@@ -53,20 +52,20 @@ La topología asumida para esta sección consiste en un servidor Autor que se ej
 
 1. Deshabilitar agentes de replicación en el autor
 
-1. Ejecute las [tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
+1. Ejecute el [tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
 
 ### Ejecución de la actualización {#upgrade-execution}
 
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
-1. Ejecute la [actualización in situ](/help/sites-deploying/in-place-upgrade.md)
-1. Actualizar el módulo de Dispatcher *si es necesario*
+1. Ejecute el [actualización in situ](/help/sites-deploying/in-place-upgrade.md)
+1. Actualización del módulo de Dispatcher *si es necesario*
 
 1. El control de calidad valida la actualización
 
 1. Cierre la instancia de autor.
 
-### Si es correcto {#if-successful}
+### Si se realiza correctamente {#if-successful}
 
 ![if_success](assets/if_successful.jpg)
 
@@ -76,7 +75,7 @@ La topología asumida para esta sección consiste en un servidor Autor que se ej
 
 1. Inicie la instancia de espera.
 
-### Si no se ha realizado correctamente (reversión) {#if-unsuccessful-rollback}
+### Si No Se Ha Realizado Correctamente (Reversión) {#if-unsuccessful-rollback}
 
 ![rollback](assets/rollback.jpg)
 
@@ -100,21 +99,21 @@ La topología asumida para esta sección consiste en un clúster de Autor MongoM
 1. Clonar el almacén de datos para la copia de seguridad
 1. Detenga todas las instancias excepto una de AEM Author, su Autor principal
 1. Elimine todos los nodos MongoDB excepto uno del conjunto de réplicas, su instancia principal de Mongo
-1. Actualice el archivo `DocumentNodeStoreService.cfg` en el Autor principal para que refleje su conjunto de réplicas de miembro único
+1. Actualice el `DocumentNodeStoreService.cfg` en el Autor principal para reflejar su conjunto de réplicas de miembro único
 1. Reinicie el Autor principal para asegurarse de que se reinicia correctamente
 1. Deshabilitar agentes de replicación en el Autor principal
-1. Ejecute [tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) en la instancia principal de Autor
+1. Ejecutar [tareas de mantenimiento previas a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) en la instancia principal de Autor
 1. Si es necesario, actualice MongoDB en la instancia principal de Mongo a la versión 3.2 con WiredTiger
 
 ### Ejecución de la actualización {#Upgrade-execution-1}
 
 ![mongo-execution](assets/mongo-execution.jpg)
 
-1. Ejecute una [actualización in situ](/help/sites-deploying/in-place-upgrade.md) en el Autor principal
+1. Ejecute un [actualización in situ](/help/sites-deploying/in-place-upgrade.md) en el Autor principal
 1. Actualizar el Dispatcher o el módulo web *si es necesario*
 1. El control de calidad valida la actualización
 
-### Si es correcto {#if-successful-1}
+### Si se realiza correctamente {#if-successful-1}
 
 ![mongo-secundario](assets/mongo-secondaries.jpg)
 
@@ -122,13 +121,13 @@ La topología asumida para esta sección consiste en un clúster de Autor MongoM
 
 1. Reconstruya los nodos MongoDB que se eliminaron del clúster
 
-1. Actualice los archivos `DocumentNodeStoreService.cfg` para que reflejen el conjunto completo de réplicas
+1. Actualice el `DocumentNodeStoreService.cfg` archivos para reflejar el conjunto completo de réplicas
 
 1. Reinicie las instancias de autor de una en una
 
 1. Elimine el almacén de datos clonado.
 
-### Si no se ha realizado correctamente (reversión) {#if-unsuccessful-rollback-2}
+### Si No Se Ha Realizado Correctamente (Reversión)  {#if-unsuccessful-rollback-2}
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
@@ -140,7 +139,7 @@ La topología asumida para esta sección consiste en un clúster de Autor MongoM
 
 1. Inicie las instancias secundarias de Mongo con una de ellas como la nueva instancia principal
 
-1. Configure los archivos `DocumentNodeStoreService.cfg` en las instancias secundarias de Autor para que apunten al conjunto de réplicas de instancias de Mongo aún no actualizadas
+1. Configure las variables `DocumentNodeStoreService.cfg` archivos en las instancias de autor secundarias para señalar al conjunto de réplicas de instancias de Mongo aún no actualizadas
 
 1. Inicie las instancias secundarias de Autor
 
@@ -159,8 +158,8 @@ La topología asumida para esta sección consiste en dos instancias de publicaci
 ![upgrade-publish2](assets/upgrade-publish2.png)
 
 1. Detenga el tráfico a la instancia Publicar 2 en el equilibrador de carga
-1. Ejecute [mantenimiento previo a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) en Publish 2
-1. Ejecute una [actualización in situ](/help/sites-deploying/in-place-upgrade.md) en Publish 2
+1. Ejecutar [mantenimiento previo a la actualización](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) en Publish 2
+1. Ejecute un [actualización in situ](/help/sites-deploying/in-place-upgrade.md) en Publish 2
 1. Actualizar el Dispatcher o el módulo web *si es necesario*
 1. Vaciar la caché de Dispatcher
 1. El control de calidad valida la publicación 2 a través de Dispatcher, detrás del cortafuegos
@@ -168,7 +167,7 @@ La topología asumida para esta sección consiste en dos instancias de publicaci
 1. Copiar la instancia de Publish 2
 1. Iniciar publicación 2
 
-### Si es correcto {#if-successful-2}
+### Si se realiza correctamente {#if-successful-2}
 
 ![upgrade-publish1](assets/upgrade-publish1.png)
 
@@ -181,7 +180,7 @@ La topología asumida para esta sección consiste en dos instancias de publicaci
 1. Iniciar publicación 1
 1. El control de calidad valida la publicación 1 a través de Dispatcher, detrás del cortafuegos
 
-### Si no se ha realizado correctamente (reversión) {#if-unsuccessful-rollback-1}
+### Si No Se Ha Realizado Correctamente (Reversión) {#if-unsuccessful-rollback-1}
 
 ![pub_rollback](assets/pub_rollback.jpg)
 
@@ -198,7 +197,6 @@ La topología asumida para esta sección consiste en dos instancias de publicaci
 1. El control de calidad realiza la validación final desde una dirección URL pública
 1. Habilitar agentes de replicación desde el entorno de Author
 1. Reanudar la creación de contenido
-1. Realice [comprobaciones posteriores a la actualización](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
+1. Realizar [comprobaciones posteriores a la actualización](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
 
 ![final](assets/final.jpg)
-

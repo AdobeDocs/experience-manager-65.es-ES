@@ -45,7 +45,7 @@ Las Notas de la versión de AEM incluyen información importante sobre la versi�
 * [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
 * [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other)
 * [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)

@@ -1,5 +1,5 @@
 ---
-title: 'Uso de versiones de página  '
+title: Uso de versiones de página
 seo-title: Working with Page Versions
 description: Cree, compare y restaure versiones de una página
 seo-description: Create, compare, and restore versions of a page
@@ -14,7 +14,7 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 source-git-commit: b11a97b9b00e6f80fb0243e234ed1dc2c004ed3a
 workflow-type: tm+mt
 source-wordcount: '1491'
-ht-degree: 68%
+ht-degree: 96%
 
 ---
 
@@ -68,11 +68,11 @@ Puede crear una versión de su recurso desde:
 
 Una vez creada una versión de la página, existen varios métodos para restablecer una versión anterior:
 
-* el **Revertir a esta versión** de la [Cronología](/help/sites-authoring/basic-handling.md#timeline) carril
+* la opción **Revertir a esta versión** del carril [Cronología](/help/sites-authoring/basic-handling.md#timeline)
 
    Restablezca una versión anterior de una página seleccionada.
 
-* el **Restaurar** opciones de la parte superior [barra de herramientas acciones](/help/sites-authoring/basic-handling.md#actions-toolbar)
+* las opciones **Restaurar** de la parte superior de la [barra de herramientas acciones](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
    * **Restaurar versión**
 
@@ -90,18 +90,18 @@ Una vez creada una versión de la página, existen varios métodos para restable
 >
 >1. Cree una versión de una página cualquiera.
 >1. Las etiquetas y los nombres de nodo iniciales serán 1.0., 1.1, 1.2, etc.
->1. Restablecer la primera versión; es decir, 1.0.
+>1. Restablezca la primera versión; p. ej. 1.0.
 >1. Vuelva a crear versiones nuevas.
 >1. Las etiquetas generadas y los nombres de nodo ahora serán 1.0.0, 1.0.1, 1.0.2, etc.
 
 
-### Revertir a una versión {#revert-to-a-version}
+### Volver a esta versión {#revert-to-a-version}
 
 Hasta **Revertir** la página seleccionada a una versión anterior:
 
 1. Desplácese para mostrar la página que quiere revertir a una versión anterior.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**. Se enumerarán las versiones de página de la página seleccionada.
+1. Abra la columna **Cronología** y seleccione **Mostrar todo** o **Versiones**. Se enumerarán las versiones de página de la página seleccionada.
 1. Seleccione la versión a la que desee revertir. Se mostrarán las opciones posibles:
 
    ![Volver a esta versión](assets/screen-shot_2019-03-05at112505.png)
@@ -112,9 +112,9 @@ Hasta **Revertir** la página seleccionada a una versión anterior:
 
 Este método se puede utilizar para restaurar versiones de páginas especificadas dentro de la carpeta actual; esto también puede incluir la restauración de páginas que se han eliminado anteriormente:
 
-1. Vaya a y [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), la carpeta requerida.
+1. Vaya a, y [seleccione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), la carpeta requerida.
 
-1. Select **Restaurar**, luego **Restaurar versión** desde la parte superior [barra de herramientas acciones](/help/sites-authoring/basic-handling.md#actions-toolbar).
+1. Seleccione **Restaurar**, luego **Restaurar versión** desde la parte superior de la [barra de herramientas acciones](/help/sites-authoring/basic-handling.md#actions-toolbar).
 
    >[!NOTE]
    >
@@ -124,7 +124,7 @@ Este método se puede utilizar para restaurar versiones de páginas especificada
    >* o ninguna de las páginas de la carpeta tiene versiones,
 
    >
-   >A continuación, la pantalla estará vacía ya que no hay versiones aplicables.
+   >A continuación, la pantalla estará vacía, ya que no hay versiones aplicables.
 
 1. Se enumerarán las versiones disponibles:
 
@@ -138,7 +138,7 @@ Este método se puede utilizar para restaurar versiones de páginas especificada
 
    ![Restaurar versión: seleccionar página](/help/sites-authoring/assets/versions-restore-version-03.png)
 
-1. Select **Restaurar** para la versión seleccionada, de la página seleccionada, que se restaurará como la versión actual.
+1. Seleccione **Restaurar** para la versión seleccionada, de la página seleccionada, que se restaurará como la versión actual.
 
 >[!NOTE]
 >
@@ -148,9 +148,9 @@ Este método se puede utilizar para restaurar versiones de páginas especificada
 
 Este método puede utilizarse para restaurar una versión de un árbol en una fecha y hora especificadas; esto puede incluir páginas que se han eliminado anteriormente:
 
-1. Vaya a y [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), la carpeta requerida.
+1. Vaya a, y [seleccione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), la carpeta requerida.
 
-1. Select **Restaurar**, luego **Restaurar árbol** desde la parte superior [barra de herramientas acciones](/help/sites-authoring/basic-handling.md#actions-toolbar). Se mostrará la última versión del árbol:
+1. Seleccione **Restaurar**, luego **Restaurar árbol** desde la parte superior de la [barra de herramientas acciones](/help/sites-authoring/basic-handling.md#actions-toolbar). Se mostrará la última versión del árbol:
 
    ![Restaurar árbol](/help/sites-authoring/assets/versions-restore-tree-02.png)
 
@@ -162,7 +162,7 @@ Este método puede utilizarse para restaurar una versión de un árbol en una fe
 
    * Si está inactivo (sin seleccionar), todas las páginas sin versiones se eliminarán, ya que no existían en el árbol con versiones.
 
-1. Select **Restaurar** para que la versión seleccionada del árbol se restaure como el *current* versión.
+1. Seleccione **Restaurar** para que la versión seleccionada del árbol se restaure como la versión *actual*.
 
 ## Vista previa de una versión   {#previewing-a-version}
 

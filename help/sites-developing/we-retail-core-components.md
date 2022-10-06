@@ -1,30 +1,29 @@
 ---
 title: Prueba de componentes principales en We.Retail
-seo-title: Prueba de componentes principales en We.Retail
+seo-title: Trying out Core Components in We.Retail
 description: Prueba de componentes principales en We.Retail
-seo-description: nulo
+seo-description: null
 uuid: 8d1cea0b-99d9-49b2-b275-41f14864b1ff
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '537'
 ht-degree: 2%
 
 ---
 
-
-# Probar componentes principales en We.Retail{#trying-out-core-components-in-we-retail}
+# Prueba de componentes principales en We.Retail{#trying-out-core-components-in-we-retail}
 
 Los componentes principales son componentes modernos y flexibles, con fácil extensibilidad y que permiten una integración sencilla en sus proyectos. Los componentes principales se han creado en torno a varios principios de diseño principales, como HTL, usabilidad predeterminada, configurabilidad, versiones y extensibilidad. We.Retail se ha creado sobre componentes principales.
 
 ## Probándolo {#trying-it-out}
 
-1. Comience AEM con el contenido de muestra de We.Retail y abra la [consola Componentes](/help/sites-authoring/default-components-console.md).
+1. Comience AEM con el contenido de muestra de We.Retail y abra el [Consola Componentes](/help/sites-authoring/default-components-console.md).
 
    **Navegación global -> Herramientas -> Componentes**
 
@@ -37,33 +36,33 @@ Los componentes principales son componentes modernos y flexibles, con fácil ext
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Tenga en cuenta que todos los componentes principales se denominan **v1**, lo que refleja que esta es la primera versión de este componente principal. En adelante se lanzarán versiones regulares, compatibles con la versión de AEM y que facilitan la actualización para que pueda aprovechar las últimas funciones.
+1. Tenga en cuenta que todos los componentes principales tienen un nombre **v1**, reflejando que esta es la primera versión de este componente principal. En adelante se lanzarán versiones regulares, compatibles con la versión de AEM y que facilitan la actualización para que pueda aprovechar las últimas funciones.
 1. Haga clic en **Texto (v1)**.
 
-   Observe que el **Tipo de recurso** del componente es `/apps/core/wcm/components/text/v1/text`. Los componentes principales se encuentran en `/apps/core/wcm/components` y tienen versiones por componente.
+   Consulte que la variable **Tipo de recurso** del componente es `/apps/core/wcm/components/text/v1/text`. Los componentes principales se encuentran en `/apps/core/wcm/components` y tienen versiones por componente.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Haga clic en la pestaña **Documentation** para ver la documentación para desarrolladores del componente.
+1. Haga clic en el **Documentación** para ver la documentación del desarrollador del componente.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. Vuelva a la consola Componentes. Filtre para el grupo **We.Retail** y seleccione el componente **Text**.
-1. Observe que **Resource Type** señala a un componente como se espera en `/apps/weretail` pero **Resource Super Type** apunta al componente principal `/apps/core/wcm/components/text/v1/text`.
+1. Vuelva a la consola Componentes. Filtro para el grupo **We.Retail** y seleccione **Texto** componente.
+1. Consulte que la variable **Tipo de recurso** señala un componente como se espera en `/apps/weretail` pero la variable **Supertipo de recurso** señala al componente principal `/apps/core/wcm/components/text/v1/text`.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Haga clic en la pestaña **Uso en directo** para ver en qué páginas se está utilizando este componente actualmente. Haga clic en la primera página **Gracias** para editar la página.
+1. Haga clic en el **Uso de Live** para ver en qué páginas se está utilizando este componente. Haga clic en la primera **Gracias** para editar la página.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
 1. En la página de agradecimiento, seleccione el componente de texto y, en el menú de edición del componente, haga clic en el icono Cancelar herencia .
 
-   [We.Retail tiene una ](/help/sites-developing/we-retail-globalized-site-structure.md) estructura de sitio globalizada en la que el contenido se transfiere de los maestros de idiomas a las  [Live Copies a través de un mecanismo llamado herencia](/help/sites-administering/msm.md). Por este motivo, la herencia debe cancelarse para permitir que un usuario edite manualmente el texto.
+   [We.Retail tiene una estructura de sitio globalizada](/help/sites-developing/we-retail-globalized-site-structure.md) donde el contenido se inserta de los maestros de idioma a [Live Copies a través de un mecanismo llamado herencia](/help/sites-administering/msm.md). Por este motivo, la herencia debe cancelarse para permitir que un usuario edite manualmente el texto.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Confirme la cancelación haciendo clic en **Yes**.
+1. Confirme la cancelación haciendo clic en **Sí**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -75,8 +74,8 @@ Los componentes principales son componentes modernos y flexibles, con fácil ext
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. En el menú **Información de página**, seleccione **Editar plantilla**.
-1. En el Editor de plantillas de la página, haga clic en el icono **Policy** del componente Texto en el **Contenedor de diseño** de la página.
+1. En el **Información de la página** menú seleccionar **Editar plantilla**.
+1. En el Editor de plantillas de la página, haga clic en el **Política** del componente Texto en la **Contenedor de diseño** de la página.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
@@ -88,6 +87,6 @@ Los componentes principales son componentes modernos y flexibles, con fácil ext
 
 ## Información adicional {#further-information}
 
-Para obtener más información sobre los componentes principales, consulte el documento de creación [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) para obtener una descripción general de las capacidades de los componentes principales y el documento para desarrolladores [Desarrollo de componentes principales](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obtener una descripción general técnica.
+Para obtener más información sobre los componentes principales, consulte el documento de creación [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) para obtener una descripción general de las capacidades de los componentes principales y del documento para desarrolladores [Desarrollo de componentes principales](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obtener una descripción general técnica.
 
-También puede que desee investigar más a fondo [plantillas editables](/help/sites-developing/we-retail-editable-templates.md). Consulte el documento de creación [Creación de plantillas de página](/help/sites-authoring/templates.md) o el documento para desarrolladores Página [Plantillas: editables](/help/sites-developing/page-templates-editable.md) para obtener detalles completos sobre las plantillas editables.
+También puede que desee investigar más a fondo [plantillas editables](/help/sites-developing/we-retail-editable-templates.md). Consulte el documento de creación [Creación de plantillas de página](/help/sites-authoring/templates.md) o la página del documento para desarrolladores [Plantillas: editables](/help/sites-developing/page-templates-editable.md) para obtener información detallada sobre plantillas editables.

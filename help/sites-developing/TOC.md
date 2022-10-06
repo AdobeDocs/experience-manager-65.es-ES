@@ -10,8 +10,8 @@ feature: Developing
 role: Developer
 source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1299'
+ht-degree: 38%
 
 ---
 
@@ -241,7 +241,7 @@ ht-degree: 0%
    + [Listas de comprobación](checklists.md)
    + [Día duro](tough-day.md)
    + [Prueba de la interfaz de usuario](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/hobbes.html)
-+ Prácticas recomendadas  {#bestpractices}
++ Prácticas recomendadas{#bestpractices}
    + [Información general sobre prácticas recomendadas](best-practices.md)
    + [Directrices de desarrollo de AEM y prácticas recomendadas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html?lang=es)
    + [Prácticas recomendadas de desarrollo](development-practices.md)

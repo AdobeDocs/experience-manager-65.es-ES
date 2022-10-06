@@ -1,8 +1,8 @@
 ---
 title: Analizar el rendimiento de la página
-seo-title: Analizar el rendimiento de la página
+seo-title: Analyzing Page Performance
 description: Utilice la página Perspectiva de contenido para analizar el rendimiento de la página que esté creando
-seo-description: Utilice la página Perspectiva de contenido para analizar el rendimiento de la página que esté creando
+seo-description: Use the Content Insight page to analyze the performance of the page that you are authoring
 uuid: 563d3e98-20d9-4cca-a174-bafd6e65c1bb
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '662'
 ht-degree: 97%
 
 ---
-
 
 # Analizar el rendimiento de la página{#analyzing-page-performance}
 
@@ -63,7 +62,7 @@ Para cambiar el período de informe de una página Perspectiva de contenido:
 
 1. Para cambiar la fecha de finalización del período de informe, arrastre el círculo que aparece en la parte derecha del área sombreada a la fecha de finalización deseada.
 
-#### Cambio de la granularidad del período de informe  {#changing-the-granularity-of-the-reporting-period}
+#### Cambio de la granularidad del período de informe {#changing-the-granularity-of-the-reporting-period}
 
 Cambie la cantidad de tiempo que cada punto de datos abarca en un informe. Por ejemplo, al seleccionar la granularidad Semana, cada punto de datos del informe Vistas representa la cantidad de vistas realizadas durante una semana.
 
@@ -77,7 +76,7 @@ La granularidad afecta a los informes que asignan datos a valores temporales, co
 
 1. Toque o haga clic en la granularidad que desee. Una vez seleccionado, el informe se actualiza automáticamente para reflejar la granularidad.
 
-### Asignación de tareas para Recomendaciones de SEO  {#assigning-tasks-for-seo-recommendations}
+### Asignación de tareas para Recomendaciones de SEO {#assigning-tasks-for-seo-recommendations}
 
 Utilice el informe Recomendaciones de SEO para crear tareas para mejorar la visibilidad de la página para los motores de búsqueda. Para cada recomendación del informe que no tenga una marca, puede crear una tarea que asigna a un usuario para realizar el trabajo necesario.
 
@@ -87,7 +86,7 @@ El estado de la recomendación de SEO indica cuándo se ha creado la tarea, pero
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-Una vez creada, la tarea aparece en la lista Tareas del usuario. Para obtener información sobre tareas, consulte [Uso de Tareas](/help/sites-authoring/task-content.md).
+Una vez creada, la tarea aparece en la lista Tareas del usuario. Para obtener información sobre las tareas, consulte [Uso de tareas](/help/sites-authoring/task-content.md).
 
 Siga el procedimiento que aparece a continuación para crear una tarea para una recomendación de SEO.
 
@@ -111,4 +110,3 @@ Siga el procedimiento que aparece a continuación para crear una tarea para una 
    **Nota**: la tarea creada también incluye la ruta de acceso a la página a la que se aplica la recomendación de SEO.
 
 1. Toque o haga clic en Hecho para cerrar el mensaje Tarea creada.
-

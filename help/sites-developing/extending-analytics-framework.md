@@ -207,7 +207,7 @@ Por lo tanto, su javascript debe establecer `s.usePlugins` a `true` para que cua
    * Etiqueta: `sitecatalyst`
    * Título: `sitecatalyst`
    * Super Type: `/libs/cq/analytics/components/sitecatalyst`
-   * Agrupar: `hidden`
+   * Grupo: `hidden`
 
 1. Haga clic en Siguiente varias veces hasta que el botón Aceptar esté habilitado y, a continuación, haga clic en Aceptar.
 

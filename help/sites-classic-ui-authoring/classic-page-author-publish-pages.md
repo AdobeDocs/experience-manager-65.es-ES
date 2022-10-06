@@ -1,8 +1,8 @@
 ---
 title: Publicar páginas
-seo-title: Publicar páginas
+seo-title: Publishing Pages
 description: Cuando haya creado y revisado el contenido en el entorno de creación, el objetivo consiste en que esté disponible en su sitio web público.
-seo-description: Cuando haya creado y revisado el contenido en el entorno de creación, el objetivo consiste en que esté disponible en su sitio web público.
+seo-description: Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website.
 uuid: ab5ffc59-1c41-46fe-904e-9fc67d7ead04
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1044'
 ht-degree: 79%
 
 ---
-
 
 # Publicar páginas{#publishing-pages}
 
@@ -33,16 +32,13 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >
 >* **Publicar o cancelar la publicación**
    >  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
-   >
-   >
-* **Activar o desactivar**
-   >  Estos términos son sinónimos de publicar y cancelar la publicación.
-   >
-   >
-* **Replicar o replicación**
-   >  Son los términos técnicos que describen el movimiento de datos (p. ej. contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar a la inversa los comentarios del usuario.
 >
-
+>* **Activar o desactivar**
+   >  Estos términos son sinónimos de publicar y cancelar la publicación.
+>
+>* **Replicar o replicación**
+   >  Son los términos técnicos que describen el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar a la inversa los comentarios del usuario.
+>
 
 
 >[!NOTE]
@@ -51,9 +47,7 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 >
 >* Se activará un flujo de trabajo para notificar a la persona adecuada la solicitud de publicación.
 >* Se mostrará un mensaje para notificárselo (durante un breve periodo de tiempo).
-
 >
-
 
 
 ## Publicar una página {#publishing-a-page}
@@ -61,7 +55,7 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
 Existen dos métodos para activar una página:
 
 * [desde la consola Sitios web](#activating-a-page-from-the-websites-console)
-* [desde la barra de tareas de la propia página](#activating-a-page-from-sidekick)
+* [desde la barra de tareas de la propia página.](#activating-a-page-from-sidekick)
 
 >[!NOTE]
 >
@@ -121,7 +115,7 @@ Para desactivar una página:
 Si desea programar la activación para un momento posterior:
 
 1. En la consola Sitios web, vaya al menú **Activar** y seleccione **Activar más tarde**.
-1. En el cuadro de diálogo que se abre, especifique la fecha y la hora de la activación y haga clic en **Aceptar**. Esto crea una versión de la página que se activa a la hora especificada.
+1. En el cuadro de diálogo que se abre, proporcione la fecha y la hora de activación y haga clic en **OK**. Esto crea una versión de la página que se activa a la hora especificada.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
@@ -129,13 +123,13 @@ Si se activa más tarde, se inicia un flujo de trabajo para activar esta versió
 
 Si desea cancelar esta activación/desactivación, vaya a la [consola Flujo de trabajo](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) para finalizar el flujo de trabajo correspondiente.
 
-### Desactivar más tarde  {#deactivate-later}
+### Desactivar más tarde {#deactivate-later}
 
 Si desea programar la desactivación para un momento posterior:
 
-1. En la consola Sitio web, vaya al menú **Desactivar** y seleccione **Desactivar más tarde**.
+1. En la consola Sitio web, vaya a la **Desactivar** y seleccione **Desactivar más tarde**.
 
-1. En el cuadro de diálogo que se abre, especifique la fecha y hora de la desactivación y haga clic en **Aceptar**.
+1. En el cuadro de diálogo que se abre, proporcione la fecha y hora de la desactivación y haga clic en **OK**.
 
    ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
 
@@ -143,7 +137,7 @@ Si desea programar la desactivación para un momento posterior:
 
 Si desea cancelar esta desactivación, vaya a la [consola Flujo de trabajo](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) para finalizar el flujo de trabajo correspondiente.
 
-## Activación/Desactivación programada (periodo de activación/desactivación)  {#scheduled-activation-deactivation-on-off-time}
+## Activación/Desactivación programada (periodo de activación/desactivación) {#scheduled-activation-deactivation-on-off-time}
 
 Puede programar las horas en las que la página se publicará o dejará de publicar mediante las opciones **Tiempo de activación** y **Tiempo de desactivación**, que se pueden definir en las [Propiedades de página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
@@ -151,21 +145,21 @@ Puede programar las horas en las que la página se publicará o dejará de publi
 
 El estado se puede ver desde la [consola Sitios web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). Los colores indican el estado de publicación.
 
-## Activación de una sección completa (árbol) del sitio web  {#activating-a-complete-section-tree-of-your-website}
+## Activación de una sección completa (árbol) del sitio web {#activating-a-complete-section-tree-of-your-website}
 
 Desde la ficha **Sitios web**, puede activar cada página por separado. Cuando haya especificado o actualizado una cantidad considerable de páginas de contenido (todas residentes en la misma página raíz), será más fácil activar el árbol entero con una sola acción. También puede hacer un ensayo para emular una activación y resaltar qué páginas se activarían.
 
-1. Abra la consola **Herramientas** seleccionándola en la página **Bienvenida** y luego haga clic con el doble **Replicación** para abrir la consola ( `https://localhost:4502/etc/replication.html`).
+1. Abra el **Herramientas** seleccionando esta opción en la **Bienvenido** y, a continuación, haga doble clic en **Replicación** para abrir la consola ( `https://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
 1. En la consola **Replicación**, haga clic en **Activar árbol**.
 
-   Se mostrará la siguiente ventana ( `https://localhost:4502/etc/replication/treeactivation.html`).
+   La siguiente ventana ( `https://localhost:4502/etc/replication/treeactivation.html`).
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Introduzca la **ruta de Inicio**. Esto especifica la ruta a la raíz de la sección que desea activar (publicar). Esta página y todas las páginas debajo se consideran para la activación (o se utilizan en la emulación si se selecciona un ensayo).
+1. Introduzca la variable **Ruta de inicio**. Esto especifica la ruta a la raíz de la sección que desea activar (publicar). Esta página y todas las páginas debajo se consideran para la activación (o se usan en la emulación si se selecciona un ensayo).
 1. Active los criterios de selección según necesite:
 
    * **Solo modificado**: active únicamente las páginas modificadas.
@@ -174,6 +168,6 @@ Desde la ficha **Sitios web**, puede activar cada página por separado. Cuando h
 
 1. Seleccione la acción que desee realizar:
 
-   1. Seleccione **Ejecución seca** si desea comprobar qué páginas *se activarían*. Esto es solo una emulación, no se activará ninguna página.
+   1. Select **Ensayo** si desea comprobar qué páginas *will* se activará. Esto es solo una emulación, no se activará ninguna página.
 
-   1. Seleccione **Activar** si desea activar las páginas.
+   1. Select **Activar** si desea activar las páginas.

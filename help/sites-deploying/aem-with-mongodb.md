@@ -174,7 +174,7 @@ cache=2048
 blobCacheSize=1024
 ```
 
-Donde:
+donde:
 
 * `mongodburi`
 Este es el servidor MongoDB al que AEM conectar. Las conexiones se realizan a todos los miembros conocidos del conjunto de réplicas predeterminado. Si se utiliza MongoDB Cloud Manager, la seguridad del servidor está habilitada. Por lo tanto, la cadena de conexión debe contener un nombre de usuario y una contraseña adecuados. Las versiones no empresariales de MongoDB solo admiten autenticación de nombre de usuario y contraseña. Para obtener más información sobre la sintaxis de la cadena de conexión, consulte la [documentación](https://docs.mongodb.org/manual/reference/connection-string/).
@@ -209,7 +209,7 @@ maxCachedBinarySize=4096
 cacheSizeInMB=128
 ```
 
-Donde:
+donde:
 
 * `minRecordLength`
 Tamaño en bytes. Los binarios cuyo tamaño sea menor o igual que este tamaño se almacenan con el almacén de nodos de documentos. En lugar de almacenar el ID del blob, se almacena el contenido del binario. Para binarios buenos de este tamaño, el ID del binario se almacena como una propiedad del Document en la colección de nodos y el cuerpo del binario se almacena en la variable 

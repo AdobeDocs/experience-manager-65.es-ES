@@ -10,7 +10,7 @@ ht-degree: 2%
 
 ---
 
-# Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets {#content-fragments-support-in-aem-assets-http-api}
+# Compatibilidad con fragmentos de contenido en la API HTTP de Recursos AEM {#content-fragments-support-in-aem-assets-http-api}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
@@ -149,7 +149,7 @@ Si la API de REST de Assets se utiliza en un entorno sin requisitos de autentica
 
 >[!NOTE]
 >
->Para obtener más información, consulte:
+>Para obtener más información, consulte lo siguiente:
 >
 >* [Se explica el CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
 >* [Vídeo: Desarrollo para CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
@@ -303,7 +303,7 @@ El uso se realiza mediante:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Restricciones     {#limitations}
+## Restricciones {#limitations}
 
 Existen algunas limitaciones:
 
@@ -385,7 +385,7 @@ Consulte aquí las referencias de API detalladas:
 
 ## Recursos adicionales {#additional-resources}
 
-Para obtener más información, consulte:
+Para obtener más información, consulte lo siguiente:
 
 * [Documentación de la API HTTP de Assets](/help/assets/mac-api-assets.md)
 * [AEM sesión de Gem: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

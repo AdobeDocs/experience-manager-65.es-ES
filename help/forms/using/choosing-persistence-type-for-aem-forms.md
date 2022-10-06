@@ -1,8 +1,8 @@
 ---
 title: Selección de un tipo de persistencia para una instalación de AEM Forms
-seo-title: Selección de un tipo de persistencia para una instalación de AEM Forms
+seo-title: Choosing a persistence type for an AEM Forms installation
 description: Elija un tipo de persistencia con sabiduría. Le ayuda a crear un entorno de AEM Forms eficiente y escalable.
-seo-description: Elija un tipo de persistencia con sabiduría. Le ayuda a crear un entorno AEM Forms eficiente y escalable.
+seo-description: Choose a persistence type wisely. It helps you build an efficient and scale able AEM Forms environment.
 uuid: 1c692502-5039-4757-9358-1772772b3904
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '372'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ La tabla siguiente muestra todos los tipos de persistencia admitidos, así como 
   </tr>
   <tr>
    <th><strong>Configuración independiente</strong></th>
-   <td>Compatible<br /> </td>
+   <td>Compatibilidad<br /> </td>
    <td>Compatible</td>
    <td>Compatible</td>
   </tr>
@@ -59,12 +59,12 @@ La tabla siguiente muestra todos los tipos de persistencia admitidos, así como 
  </tbody>
 </table>
 
-TarMK está diseñado para el rendimiento, mientras que MongoMK y RDBMK están diseñados para la escalabilidad. Adobe recomienda encarecidamente TarMK como tecnología de persistencia predeterminada para todos los escenarios de implementación de AEM Forms, tanto para instancias de Autor como de Publicación, excepto en los casos de uso descritos en la sección [Elección de Mongo o de un micronúcleo de base de datos relacional sobre TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
+TarMK está diseñado para el rendimiento, mientras que MongoMK y RDBMK están diseñados para la escalabilidad. Adobe recomienda encarecidamente TarMK como tecnología de persistencia predeterminada para todos los escenarios de implementación de AEM Forms, tanto para instancias de autor como de publicación, excepto en los casos de uso descritos en la sección [Elección de Mongo o un Microkernel de Base de Datos Relacional sobre TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
 
-Para obtener la lista de microkernels compatibles, consulte los artículos [AEM Forms on OSGi Technical Requirements](/help/sites-deploying/technical-requirements.md) o [AEM Forms on JEE supported platform grouping](/help/forms/using/aem-forms-jee-supported-platforms.md).
+Para obtener la lista de microkernels admitidos, consulte [AEM Forms sobre los requisitos técnicos de OSGi](/help/sites-deploying/technical-requirements.md) o [AEM Forms en combinaciones de plataformas compatibles con JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) artículos.
 
 ## Elección de Mongo o un Microkernel de Base de Datos Relacional sobre TarMK {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
 
 Un entorno de AEM Forms escalable (agrupado) es un conjunto de dos o más instancias de autor activas configuradas horizontalmente. Puede optar por ejecutar más de una instancia de autor si un solo servidor, que admita todas las actividades de creación concurrentes, ya no es sostenible.
 
-Solo se admite el tipo de persistencia MongoMK y RDBMK para un AEM Forms escalable (agrupado) en un entorno JEE. La cantidad de servidores o el tamaño del entorno escalable varía según la instalación. Para obtener una lista de consideraciones y ejemplos, consulte el artículo [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md) o [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md). También puede ponerse en contacto con el servicio de asistencia de AEM Forms para obtener información detallada sobre la planificación de la capacidad de AEM Forms con RDBMK y TarMK.
+Solo se admite el tipo de persistencia MongoMK y RDBMK para un AEM Forms escalable (agrupado) en un entorno JEE. La cantidad de servidores o el tamaño del entorno escalable varía según la instalación. Para obtener una lista de consideraciones y ejemplos, consulte la [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md) y [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md) artículo. También puede ponerse en contacto con el servicio de asistencia de AEM Forms para obtener información detallada sobre la planificación de la capacidad de AEM Forms con RDBMK y TarMK.

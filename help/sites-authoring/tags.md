@@ -1,8 +1,8 @@
 ---
-title: 'Uso de etiquetas  '
-seo-title: 'Uso de etiquetas  '
+title: Uso de etiquetas
+seo-title: Using Tags
 description: Las etiquetas son un método rápido y fácil de clasificar contenido dentro del sitio web
-seo-description: Las etiquetas son un método rápido y fácil de clasificar contenido dentro del sitio web
+seo-description: Tags are a quick and easy method of classifying content within a website
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,21 +10,20 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 52cb99353ae33c8097b6b5bd29f6c040df30b42d
+exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 84%
+source-wordcount: '569'
+ht-degree: 87%
 
 ---
-
 
 # Uso de etiquetas  {#using-tags}
 
 Las etiquetas son un método rápido y fácil de clasificar contenido dentro de un sitio web. Las etiquetas pueden considerarse como palabras clave o marcas que se pueden adjuntar a una página, un recurso o cualquier otro contenido para que con las búsquedas se encuentre ese contenido y el contenido relacionado.
 
-* Consulte [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre la creación y administración de etiquetas, así como también sobre las etiquetas de contenido que se han aplicado.
-* Consulte [Etiquetado para desarrolladores](/help/sites-developing/tags.md) para obtener información sobre el marco de etiquetado, así como sobre la inclusión y ampliación de etiquetas en aplicaciones personalizadas.
+* Consulte [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre la creación y administración de etiquetas, así como sobre las etiquetas de contenido que se han aplicado.
+* Consulte [Etiquetado para desarrolladores](/help/sites-developing/tags.md) para obtener información sobre el marco de etiquetado, así como la forma de incluir y ampliar las etiquetas en aplicaciones personalizadas.
 
 ## Diez motivos para utilizar etiquetas {#ten-reasons-to-use-tagging}
 
@@ -45,9 +44,9 @@ A la hora de diseñar la estructura de contenido para un sitio y el esquema de m
 
 En el entorno de creación, los creadores pueden aplicar etiquetas si acceden a las propiedades de página e introducen una o varias etiquetas en el campo **Etiquetas y palabras clave**.
 
-Para aplicar [etiquetas predefinidas](/help/sites-administering/tags.md), en la ventana **Propiedades de la página** utilice el campo **Etiquetas** y la ventana **Seleccionar etiquetas**. La pestaña **Etiquetas estándar** es el espacio de nombres predeterminado, lo que indica que no hay un valor `namespace-string:` prefijado a la taxonomía.
+Para aplicar [etiquetas predefinidas](/help/sites-administering/tags.md), en el **Propiedades de página** utilice el **Etiquetas** y **Seleccionar etiquetas** ventana. La pestaña **Etiquetas estándar** es el espacio de nombres predeterminado, lo que indica que no hay un valor `namespace-string:` prefijado a la taxonomía.
 
-![Ventana Seleccionar etiquetas; utilizar el botón X para anular la selección de las etiquetas seleccionadas](assets/chlimage_1-41.png)
+![Seleccionar la ventana Etiquetas ; utilice el botón X para anular la selección de las etiquetas seleccionadas actualmente](assets/chlimage_1-41.png)
 
 ### Publicación de etiquetas {#publishing-tags}
 
@@ -61,7 +60,7 @@ Al igual que con las páginas, puede realizar las siguientes acciones con etique
 
 >[!NOTE]
 >
->Cuando se activa una página, se abre automáticamente un cuadro de diálogo que le permite activar las etiquetas desactivadas que pertenecen a la página.
+>Al activar una página, se abre automáticamente un cuadro de diálogo que le permite activar las etiquetas desactivadas que pertenecen a la página.
 
 **Desactivar**
 

@@ -13,7 +13,7 @@ exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 source-git-commit: 813441a61baa560c9d317a5519b9e0c0d1da7a6e
 workflow-type: tm+mt
 source-wordcount: '2209'
-ht-degree: 4%
+ht-degree: 43%
 
 ---
 
@@ -49,7 +49,7 @@ Los siguientes valores de propiedad se utilizan en la configuración de nube de 
 >
 >En AEM 6.3, puede seleccionar el archivo de biblioteca de Target. [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html), que es una nueva biblioteca de implementación para Adobe Target que está diseñada tanto para implementaciones web típicas como para aplicaciones de una sola página.
 >
->AT.js ofrece varias mejoras con respecto a la biblioteca mbox.js :
+>AT.js ofrece varias mejoras con respecto a la biblioteca mbox.js:
 >
 >* Se han mejorado los tiempos de carga de las páginas en implementaciones web
 >* Seguridad mejorada
@@ -76,7 +76,7 @@ Puede configurar Adobe Target para que use Adobe Analytics como fuente de inform
 Para ello, debe especificar la configuración de nube de A4T con la que conectar la configuración de nube de Adobe Target:
 
 1. Vaya a **Cloud Services** a través de la variable **Logotipo de AEM** > **Herramientas** > **Implementación** > **Cloud Services**.
-1. En el **Adobe Target** , haga clic en **Configurar ahora**.
+1. En la sección **Adobe Target**, haga clic en **Configurar ahora**.
 1. Vuelva a conectar con la configuración de Adobe Target.
 1. En el **Configuración de A4T Analytics Cloud** menú desplegable, seleccione el marco.
 
@@ -108,13 +108,13 @@ Integre manualmente con Adobe Target en lugar de utilizar el asistente de inclus
 
 >[!NOTE]
 El archivo de la biblioteca de Target, [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html), es una nueva biblioteca de implementación para Adobe Target que está diseñada tanto para implementaciones web típicas como para aplicaciones de una sola página. Adobe recomienda usar AT.js en lugar de mbox.js como biblioteca de cliente.
-AT.js ofrece varias mejoras con respecto a la biblioteca mbox.js :
+AT.js ofrece varias mejoras con respecto a la biblioteca mbox.js:
 * Se han mejorado los tiempos de carga de las páginas en implementaciones web
 * Seguridad mejorada
 * Mejores opciones de implementación para aplicaciones de una sola página
 * AT.js contiene los componentes que se incluían en target.js, de modo que ya no se llama a target.js
 >
-Puede seleccionar AT.js o mbox.js en el **Biblioteca de cliente** menú desplegable.
+Puede seleccionar AT.js o mbox.js en el menú desplegable **Biblioteca de cliente**.
 
 ### Creación de una configuración de Target Cloud {#creating-a-target-cloud-configuration}
 
@@ -130,11 +130,11 @@ Utilice el siguiente procedimiento para crear una configuración de nube de Targ
 
    La variable **Adobe Marketing Cloud** se abre la página de información general.
 
-1. En el **Adobe Target** , haga clic en **Configurar ahora**.
-1. En el **Crear configuración** diálogo:
+1. En la sección **Adobe Target**, haga clic en **Configurar ahora**.
+1. En el cuadro de diálogo **Crear configuración**:
 
    1. Asigne una configuración a **Título**.
-   1. Seleccione el **Configuración de Adobe Target** plantilla.
+   1. Seleccione la plantilla **Configuración de Adobe Target**.
    1. Haga clic en **Crear**.
 
    Se abre el cuadro de diálogo de edición.
@@ -155,57 +155,57 @@ Utilice el siguiente procedimiento para crear una configuración de nube de Targ
    * **Correo electrónico**: el correo electrónico de la cuenta de Target.
    * **Contraseña**: la contraseña de la cuenta de Target.
    * **Tipo de API**: REST o XML
-   * **Configuración de A4T Analytics Cloud**: Seleccione la configuración de nube de Analytics que se utiliza para las métricas y los objetivos de las actividades de Target. Lo necesita si utiliza Adobe Analytics como fuente de informes al segmentar contenido. Si no ve la configuración de nube, consulte la nota en [Configuración de A4T Analytics Cloud](#configuring-a-t-analytics-cloud-configuration).
+   * **Configuración de A4T Analytics Cloud**: Seleccione la configuración de Analytics Cloud que se utiliza para las métricas y los objetivos de las actividades de Target. Lo necesita si utiliza Adobe Analytics como fuente de informes al segmentar contenido. Si no ve la configuración de nube, consulte la nota en [Configuración de A4T Analytics Cloud](#configuring-a-t-analytics-cloud-configuration).
 
-   * **Use objetivos precisos:** De forma predeterminada, esta casilla de verificación está seleccionada. Si se selecciona, la configuración del servicio de nube esperará a que el contexto se cargue antes de cargar el contenido. Véase la nota siguiente.
-   * **Sincronizar segmentos desde Adobe Target:** Seleccione esta opción para descargar los segmentos definidos en Target y utilizarlos en AEM. Debe seleccionar esta opción cuando la propiedad Tipo de API sea REST, ya que los segmentos en línea no son compatibles y siempre necesita utilizar segmentos de Target. (Tenga en cuenta que el AEM término &quot;segmento&quot; equivale a la &quot;audiencia&quot; de Target).
+   * **Use objetivos precisos:** De forma predeterminada, esta casilla de verificación está seleccionada. Si se selecciona, la configuración del servicio en la nube esperará a que el contexto se cargue antes de cargar el contenido. Véase la nota siguiente.
+   * **Sincronizar segmentos desde Adobe Target:** Seleccione esta opción para descargar los segmentos definidos en Target y utilizarlos en AEM. Debe seleccionar esta opción cuando la propiedad Tipo de API sea REST, ya que los segmentos en línea no son compatibles y siempre necesita utilizar segmentos de Target. (Tenga en cuenta que el término de AEM de &quot;segmento&quot; equivale a la &quot;audiencia&quot; de Target).
    * **Biblioteca de cliente:** Seleccione si desea la biblioteca de cliente mbox.js o AT.js.
    * **Usar DTM para entregar la biblioteca de cliente** - Seleccione esta opción para usar AT.js o mbox.js desde DTM u otro sistema de administración de etiquetas. Debe [configuración de la integración de DTM](/help/sites-administering/dtm.md) para utilizar esta opción. Adobe recomienda utilizar DTM en lugar de AEM para entregar la biblioteca.
    * **Mbox.js personalizado**: Déjelo en blanco si ha marcado la casilla DTM o para usar el mbox.js predeterminado. También puede cargar el mbox.js personalizado. Solo aparece si ha seleccionado mbox.js.
    * **AT.js personalizado**: Deje en blanco si ha marcado la casilla DTM o para utilizar el AT.js predeterminado. Como alternativa, cargue su AT.js personalizado. Solo aparece si ha seleccionado AT.js.
 
    >[!NOTE]
-   De forma predeterminada, al entrar en el asistente de configuración de Adobe Target, la Orientación precisa está habilitada.
-   La segmentación precisa significa que la configuración del servicio en la nube espera a que el contexto se cargue antes de cargar el contenido. Como resultado, en términos de rendimiento, una segmentación precisa puede provocar un retraso de unos milisegundos antes de cargar el contenido.
-   La segmentación precisa siempre está habilitada en la instancia de autor. Sin embargo, en la instancia de publicación puede optar por desactivar la segmentación precisa globalmente desactivando la marca de verificación junto a Orientación precisa en la configuración del servicio en la nube (**http://localhost:4502/etc/cloudservices.html**). También puede activar y desactivar la segmentación precisa para componentes individuales independientemente de la configuración del servicio en la nube.
-   Si tiene ***already*** crea componentes de destino y cambia esta configuración, los cambios no afectan a esos componentes. Debe realizar cualquier cambio en esos componentes directamente.
+   De forma predeterminada, al entrar en el asistente de configuración de Adobe Target, el direccionamiento preciso está habilitado.
+   El direccionamiento preciso significa que la configuración del servicio en la nube espera a que el contexto se cargue antes de cargar el contenido. Como resultado, en términos de rendimiento, un direccionamiento preciso puede provocar un retraso de unos milisegundos antes de cargar el contenido.
+   El direccionamiento preciso siempre está habilitado en la instancia de autor. Sin embargo, en la instancia de publicación puede optar por desactivar el direccionamiento preciso globalmente, desactivando la marca de verificación junto al direccionamiento preciso en la configuración del servicio en la nube (**http://localhost:4502/etc/cloudservices.html**). También puede activar y desactivar el direccionamiento preciso para componentes individuales independientemente de la configuración del servicio en la nube.
+   Si ***ya*** ha creado componentes de destino y cambia esta configuración, los cambios no afectan a esos componentes. Debe realizar cualquier cambio en esos componentes directamente.
 
-1. Haga clic en **Conectarse a Target** para inicializar la conexión con Target. Si la conexión se realiza correctamente, aparecerá el mensaje **Conexión correcta** se muestra. Haga clic en **OK** en el mensaje y, a continuación, **OK** en el cuadro de diálogo.
+1. Haga clic en **Conectarse a Target** para inicializar la conexión con Target. Si la conexión se realiza correctamente, aparecerá el mensaje **Conexión correcta**. Haga clic en **OK** en el mensaje y, a continuación, **OK** en el cuadro de diálogo.
 
-   Si no puede conectarse a Target, consulte la [solución de problemas](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) para obtener más información.
+   Si no puede conectarse a Target, consulte la sección [solución de problemas](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems).
 
-### Adición de un marco de destino {#adding-a-target-framework}
+### Adición de un marco de trabajo de destino {#adding-a-target-framework}
 
-Después de configurar la nube de Target, agregue un marco de Target. La estructura identifica los parámetros predeterminados que se envían a Adobe Target desde los [ClientContext](/help/sites-administering/client-context.md) o [ContextHub](/help/sites-developing/ch-configuring.md) componentes. Target usa los parámetros para determinar los segmentos que se aplican al contexto actual.
+Después de configurar la nube de Target, agregue un marco de trabajo de Target. La estructura identifica los parámetros predeterminados que se envían a Adobe Target desde los [ClientContext](/help/sites-administering/client-context.md) o [ContextHub](/help/sites-developing/ch-configuring.md) componentes. Target usa los parámetros para determinar los segmentos que se aplican al contexto actual.
 
-Puede crear varios marcos para una sola configuración de Target. Los marcos de trabajo múltiples son útiles cuando necesita enviar un conjunto diferente de parámetros a Target para diferentes secciones del sitio web. Cree un marco para cada conjunto de parámetros que necesite enviar. Asocie cada sección del sitio web con el marco adecuado. Tenga en cuenta que una página web solo puede utilizar un marco a la vez.
+Puede crear varios marcos de trabajo para una sola configuración de Target. Los marcos de trabajo múltiples son útiles cuando necesita enviar un conjunto diferente de parámetros a Target para diferentes secciones del sitio web. Cree un marco de trabajo para cada conjunto de parámetros que necesite enviar. Asocie cada sección del sitio web con el marco de trabajo adecuado. Tenga en cuenta que una página web solo puede utilizar un marco a la vez.
 
 1. En la página de configuración de Target, haga clic en el botón **+** (signo más) junto a Marcos disponibles.
-1. En el cuadro de diálogo Crear marco, especifique un **Título**, seleccione **Adobe Target Framework** y haga clic en **Crear**.
+1. En el cuadro de diálogo Crear marco de trabajo, especifique un **Título**, seleccione **Adobe Target Framework** y haga clic en **Crear**.
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-   Se abre la página del marco de trabajo. La barra de tareas proporciona componentes que representan información de [ClientContext](/help/sites-administering/client-context.md) o [ContextHub](/help/sites-developing/ch-configuring.md) que puede asignar.
+   Se abre la página marco de trabajo. La barra de tareas proporciona componentes que representan información de [ClientContext](/help/sites-administering/client-context.md) o [ContextHub](/help/sites-developing/ch-configuring.md) que puede asignar.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Arrastre el componente Client Context que representa los datos que desea utilizar para la asignación al destino de colocación. También puede arrastrar el **Almacenamiento de ContextHub** al marco.
+1. Arrastre el componente Client Context que representa los datos que desea utilizar para la asignación al destino de colocación. También puede arrastrar el componente **Almacenamiento de ContextHub** al marco de trabajo.
 
    >[!NOTE]
    Al asignar, los parámetros se pasan a un mbox mediante cadenas simples. No se pueden asignar matrices desde ContextHub.
 
-   Por ejemplo, para usar **Datos de perfil** acerca de los visitantes del sitio para controlar la campaña de Target, arrastre el **Datos de perfil** a la página. Aparecen las variables de datos de perfil disponibles para su asignación a parámetros de Target.
+   Por ejemplo, para usar **Datos de perfil** acerca de los visitantes del sitio para controlar la campaña de Target, arrastre el componente **Datos de perfil** a la página. Aparecen las variables de datos de perfil disponibles para su asignación a parámetros de Target.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Seleccione las variables que desea que sean visibles para el sistema de Adobe Target seleccionando la opción **Compartir** en las columnas correspondientes.
+1. Seleccione las variables que desea que sean visibles para el sistema de Adobe Target seleccionando la casilla de verificación **Compartir** en las columnas correspondientes.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
    >[!NOTE]
    La sincronización de parámetros es solo de una manera, de AEM a Adobe Target.
 
-Se crea el marco. Para replicar el marco en la instancia de publicación, utilice la variable **Activar marco** de la barra de tareas.
+Se crea el marco de trabajo. Para replicar el marco de trabajo en la instancia de publicación, utilice la opción **Activar marco de trabajo** de la barra de tareas.
 
 ### Asociación de actividades a la configuración de Target Cloud  {#associating-activities-with-the-target-cloud-configuration}
 
@@ -226,8 +226,8 @@ Cuando asocia una página con la estructura, las páginas secundarias heredan la
 
 1. En el **Sitios** , vaya al sitio que desea configurar.
 1. Con: [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions) o [modo de selección](/help/sites-authoring/basic-handling.md), seleccione **Ver propiedades.**
-1. Seleccione el **Cloud Services** pestaña .
-1. Toque o haga clic **Editar**.
+1. Seleccione la pestaña **Cloud Services**.
+1. Pulse o haga clic en **Editar**.
 1. Toque o haga clic **Agregar configuración** under **Configuraciones del Cloud Service** y seleccione **Adobe Target**.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)

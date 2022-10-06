@@ -4,8 +4,8 @@ description: Utilice modelos de fragmentos de contenido de AEM para definir la e
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 40922b222e15aa3ef12b54d65addff32b679d36e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '379'
+ht-degree: 87%
 
 ---
 

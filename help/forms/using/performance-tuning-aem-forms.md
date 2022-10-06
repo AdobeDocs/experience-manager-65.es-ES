@@ -1,8 +1,8 @@
 ---
 title: Ajuste del rendimiento del servidor AEM Forms
-seo-title: Ajuste del rendimiento del servidor AEM Forms
+seo-title: Performance tuning of AEM Forms server
 description: Para que AEM Forms funcione de forma óptima, puede ajustar la configuración de caché y los parámetros de JVM. Además, el uso de un servidor web puede mejorar el rendimiento de la implementación de AEM Forms.
-seo-description: Para que AEM Forms funcione de forma óptima, puede ajustar la configuración de caché y los parámetros de JVM. Además, el uso de un servidor web puede mejorar el rendimiento de la implementación de AEM Forms.
+seo-description: For AEM Forms to perform optimally, you can fine-tune the cache settings and JVM parameters. Also, using a web server can enhance the performance of AEM Forms deployment.
 uuid: bf23b62c-7559-4726-8f4e-cc8b1457e501
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '893'
 ht-degree: 1%
 
 ---
@@ -24,32 +24,32 @@ Este artículo analiza las estrategias y prácticas recomendadas que puede imple
 
 ## Configuración de caché {#cache-settings}
 
-Puede configurar y controlar la estrategia de almacenamiento en caché para AEM Forms mediante el componente **Configuraciones móviles de Forms** en AEM consola de configuración web en:
+Puede configurar y controlar la estrategia de almacenamiento en caché para AEM Forms mediante la **Configuraciones de Forms móvil** en AEM consola de configuración web en:
 
 * (AEM Forms en OSGi) `https://'[server]:[port]'/system/console/configMgr`
 * (AEM Forms en JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 Las opciones disponibles para el almacenamiento en caché son las siguientes:
 
-* **Ninguno**: Fuerza que no almacene en caché ningún artefacto. Esto, en la práctica, ralentiza el rendimiento y requiere una alta disponibilidad de memoria debido a la ausencia de caché.
+* **Ninguna**: Fuerza que no almacene en caché ningún artefacto. Esto, en la práctica, ralentiza el rendimiento y requiere una alta disponibilidad de memoria debido a la ausencia de caché.
 * **Conservador**: Dicta para almacenar en caché solo los artefactos intermedios que se generan antes de procesar el formulario, como una plantilla que contenga fragmentos e imágenes en línea.
-* **Agresivo**: Impone almacenar en caché casi todo lo que se pueda almacenar en caché, incluido el contenido HTML procesado además de todos los artefactos del nivel de almacenamiento en caché conservador. Produce el mejor rendimiento, pero también consume más memoria para almacenar artefactos en caché. Una estrategia agresiva de almacenamiento en caché significa que obtendrá un rendimiento de tiempo constante al procesar un formulario a medida que el contenido procesado se almacene en caché.
+* **Agresivo**: Impone almacenar en caché casi todo lo que se pueda almacenar en caché, incluido el contenido de HTML procesado además de todos los artefactos del nivel de almacenamiento en caché conservador. Produce el mejor rendimiento, pero también consume más memoria para almacenar artefactos en caché. Una estrategia agresiva de almacenamiento en caché significa que obtendrá un rendimiento de tiempo constante al procesar un formulario a medida que el contenido procesado se almacene en caché.
 
 Es posible que la configuración de caché predeterminada para AEM Forms no sea lo suficientemente buena como para lograr un rendimiento óptimo. Por lo tanto, se recomienda utilizar la siguiente configuración:
 
-* **Estrategia** de caché: Agresivo
-* **Tamaño de caché**  (en términos del número de formularios): Como requerido
-* **Tamaño** máximo del objeto: Como requerido
+* **Estrategia de caché**: Agresivo
+* **Tamaño de caché** (en términos del número de formularios): Como requerido
+* **Tamaño máximo del objeto**: Como requerido
 
 ![Configuraciones de Forms móvil](assets/snap.png)
 
 >[!NOTE]
 >
->Si utiliza AEM Dispatcher para almacenar en caché los formularios adaptables, también almacena en caché el formulario adaptable que contiene formularios con datos precargados. Si estos formularios se proporcionan desde AEM caché de Dispatcher, puede dar lugar a que se proporcionen datos precargados o antiguos a los usuarios. Por lo tanto, utilice AEM Dispatcher para almacenar en caché formularios adaptables que no utilicen datos precargados. Además, una caché de Dispatcher no invalida automáticamente los fragmentos en caché. Por lo tanto, no lo utilice para almacenar en caché los fragmentos de formulario. Para estos formularios y fragmentos, utilice [la caché de formularios adaptables](../../forms/using/configure-adaptive-forms-cache.md).
+>Si utiliza AEM Dispatcher para almacenar en caché los formularios adaptables, también almacena en caché el formulario adaptable que contiene formularios con datos precargados. Si estos formularios se proporcionan desde AEM caché de Dispatcher, puede dar lugar a que se proporcionen datos precargados o antiguos a los usuarios. Por lo tanto, utilice AEM Dispatcher para almacenar en caché formularios adaptables que no utilicen datos precargados. Además, una caché de Dispatcher no invalida automáticamente los fragmentos en caché. Por lo tanto, no lo utilice para almacenar en caché los fragmentos de formulario. Para estos formularios y fragmentos, utilice [Caché de formularios adaptables](../../forms/using/configure-adaptive-forms-cache.md).
 
 ## Parámetros de JVM {#jvm-parameters}
 
-Para obtener un rendimiento óptimo, se recomienda utilizar los siguientes argumentos de JVM `init` para configurar los `Java heap` y `PermGen`.
+Para obtener un rendimiento óptimo, se recomienda utilizar la siguiente JVM `init` para configurar los `Java heap` y `PermGen`.
 
 ```shell
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -64,7 +64,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 ## Uso de un servidor web {#using-a-web-server}
 
-Los formularios adaptables y los formularios HTML5 se representan en formato HTML5. El resultado resultante podría ser grande en función de factores como el tamaño del formulario y las imágenes del formulario. Para optimizar la transferencia de datos, el método recomendado es comprimir la respuesta HTML mediante el servidor web desde el que se suministra la solicitud. Este método reduce el tamaño de respuesta, el tráfico de red y el tiempo necesario para transmitir datos entre equipos cliente y servidor.
+Los formularios adaptables y los formularios HTML5 se representan en formato HTML5. El resultado resultante podría ser grande en función de factores como el tamaño del formulario y las imágenes del formulario. Para optimizar la transferencia de datos, el método recomendado es comprimir la respuesta del HTML mediante el servidor web desde el que se suministra la solicitud. Este método reduce el tamaño de respuesta, el tráfico de red y el tiempo necesario para transmitir datos entre equipos cliente y servidor.
 
 Por ejemplo, realice los siguientes pasos para habilitar la compresión en Apache Web Server 2.0 de 32 bits con JBoss:
 
@@ -82,7 +82,7 @@ Los siguientes pasos muestran los cambios necesarios para habilitar la compresi�
 
 Apache puede comunicarse con CRX usando el protocolo HTTP. Las configuraciones están destinadas a la optimización mediante HTTP.
 
-1. Descomente las siguientes configuraciones de módulo en el archivo `APACHE_HOME/conf/httpd.conf`.
+1. Descomente las siguientes configuraciones de módulo en `APACHE_HOME/conf/httpd.conf` archivo.
 
    ```shell
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -92,17 +92,17 @@ Apache puede comunicarse con CRX usando el protocolo HTTP. Las configuraciones e
 
    >[!NOTE]
    >
-   >Para Linux, el `APACHE_HOME` predeterminado es `/etc/httpd/`.
+   >Para Linux, la variable predeterminada `APACHE_HOME` es `/etc/httpd/`.
 
 1. Configure el proxy en el puerto 4502 de crx.
-Añada la siguiente configuración en el archivo de configuración `APACHE_HOME/conf/httpd.conf`.
+Añada la siguiente configuración en `APACHE_HOME/conf/httpd.conf` archivo de configuración.
 
    ```shell
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Active Compresión. Añada la siguiente configuración en el archivo de configuración `APACHE_HOME/conf/httpd.conf`.
+1. Active Compresión. Añada la siguiente configuración en `APACHE_HOME/conf/httpd.conf` archivo de configuración.
 
    **Para formularios HTML5**
 
@@ -148,31 +148,30 @@ Para mejorar el rendimiento, puede dirigir el software antivirus para que excluy
 
 * AEM de instalación. Si no es posible excluir el directorio completo, excluya lo siguiente:
 
-   * [AEM directorio de instalación]\crx-repository\temp
-   * [AEM directorio de instalación]\crx-repository\repository
-   * [AEM directorio de instalación]\crx-repository\launchpad
+   * [directorio de instalación de AEM]\crx-repository\temp
+   * [directorio de instalación de AEM]\crx-repository\repository
+   * [directorio de instalación de AEM]\crx-repository\launchpad
 
 * Directorio temporal del servidor de aplicaciones. La ubicación predeterminada es:
 
-   * (Jboss) [AEM directorio de instalación]\jboss\standalone\tmp
+   * (Jboss) [directorio de instalación de AEM]\jboss\standalone\tmp
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (Websphere) \Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **(Solo AEM Forms en JEE)** Directorio Global Document Storage (GDS). La ubicación predeterminada es:
+* **(solo AEM Forms en JEE)** Directorio Global Document Storage (GDS). La ubicación predeterminada es:
 
-   * (JBoss) [appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (JBoss) [raíz de appserver]/server/&#39;server&#39;/svcnative/DocumentStorage
    * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere) [appserver root]/installApps/adobe/&#39;server&#39;/DocumentStorage
+   * (WebSphere) [raíz de appserver]/installApps/adobe/&#39;server&#39;/DocumentStorage
 
-* **(Solo AEM Forms en JEE)** Registros del servidor de AEM Forms y directorio temporal. La ubicación predeterminada es:
+* **(solo AEM Forms en JEE)** Registros del servidor de AEM Forms y directorio temporal. La ubicación predeterminada es:
 
-   * Registros del servidor: [Directorio de instalación de AEM Forms]\Adobe\AEM forms\[app-server]\server\all\logs
-   * Directorio temporal: [Directorio de instalación de AEM Forms]\temp
+   * Registros del servidor - [Directorio de instalación de AEM Forms]\Adobe\AEM formularios\[servidor de aplicaciones]\server\all\logs
+   * Directorio temporal - [Directorio de instalación de AEM Forms]\temp
 
 >[!NOTE]
 >
 >* Si utiliza una ubicación diferente para GDS y un directorio temporal, abra AdminUI en `https://'[server]:[port]'/adminui`, vaya a **Inicio > Configuración > Configuración del sistema principal > Configuraciones principales** para confirmar la ubicación en uso.
-
 * Si el servidor AEM Forms funciona lentamente incluso después de excluir los directorios sugeridos, excluya también el archivo ejecutable Java (java.exe).
-
+>
 

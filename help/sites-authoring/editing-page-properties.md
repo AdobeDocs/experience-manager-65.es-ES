@@ -1,5 +1,5 @@
 ---
-title: 'Edición de las propiedades de página  '
+title: Edición de las propiedades de página
 seo-title: Editing Page Properties
 description: Permite definir las propiedades de una página
 seo-description: Define the required properties for a page
@@ -14,7 +14,7 @@ exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
 workflow-type: tm+mt
 source-wordcount: '1898'
-ht-degree: 82%
+ht-degree: 90%
 
 ---
 
@@ -54,12 +54,12 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Marca**
 
-   Aplique una identidad de marca uniforme en todas las páginas adjuntando una marca de registro al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de los [componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+   Aplique una identidad de marca uniforme en todas las páginas adjuntando un slug de marca al título de cada página. Esta funcionalidad requiere el uso del componente de página de la versión 2.14.0 o posterior de los [Componentes principales.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 
-   * **Anular** : marque para definir el registro de marca en esta página.
-      * Cualquier página secundaria heredará el valor a menos que también tenga configurados sus valores **Override**.
-   * **Valor de anulación** : el texto de la marca que se va a anexar al título de la página.
-      * El valor se anexa al título de la página después de un carácter de barra vertical como &quot;Ciclo de Toscana&quot; | Siempre listo para la WKND&quot;
+   * **Sobrescribir**: marque para definir el slug de marca en esta página.
+      * El valor lo heredará cualquier página secundaria a menos que también tenga valores establecidos de **Sobrescribir**.
+   * **Sobrescribir valor**: el texto del slug de marca que se añadirá al título de la página.
+      * El valor se anexa al título de la página después de un carácter de barra vertical como “Ciclismo en Toscana | Siempre listo para WKND”
 * **Título de página**
 
    Un título que se usará en la página. Normalmente, lo utilizan los componentes del título. Si la opción se deja vacía, se utilizará el **Título**.
@@ -92,7 +92,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    Permite introducir una URL de vanidad para esta página, que le permitirá disponer de una URL más corta y/o descriptiva.
 
-   Por ejemplo, si la URL de vanidad se configura en `welcome`en la página identificada por la ruta `/v1.0/startpage`para el sitio web `http://example.com,`, `http://example.com/welcome`sería la URL de vanidad de `http://example.com/content/v1.0/startpage`
+   Por ejemplo, si la URL de vanidad está configurada en `welcome`a la página identificada por la ruta `/v1.0/startpage`para el sitio web `http://example.com,` then `http://example.com/welcome`sería la URL de vanidad de `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -103,7 +103,7 @@ Las propiedades se distribuyen entre varias pestañas.
    >* No debe configurarse en una página existente.
 
 
-   También debe configurar Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitación del acceso a URL mnemónicas](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
+   También debe configurar Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL mnemónicas](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
 
 * **Redirigir URL de vanidad**
 
@@ -131,10 +131,10 @@ Las propiedades se distribuyen entre varias pestañas.
 
    Especifique un alias para usar con esta página.
 
-   * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, también se puede acceder a esta página a través de `/content/wknd/us/en/magazine/private`
+   * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, se puede acceder a esta página también mediante `/content/wknd/us/en/magazine/private`
    * La creación de un alias establece la propiedad `sling:alias` en el nodo de página, lo que solo afecta al recurso, no a la ruta del repositorio.
-   * Las páginas a las que se accede mediante alias en el editor no se pueden publicar. [Las ](/help/sites-authoring/publishing-pages.md) opciones de publicación del editor solo están disponibles para las páginas a las que se accede mediante sus rutas reales.
-   * Para obtener más información, consulte [Nombres de páginas localizados en Prácticas recomendadas de SEO y administración de URL](/help/managing/seo-and-url-management.md#localized-page-names).
+   * Las páginas a las que se accede mediante alias en el editor no se pueden publicar. Las [Opciones de publicación](/help/sites-authoring/publishing-pages.md) del editor solo están disponibles para las páginas a las que se accede a través de sus rutas reales.
+   * Para obtener más información, consulte [Nombres de páginas localizados en Recomendaciones para la administración de direcciones URL y SEO](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Heredado de &lt;*path*>**
 
@@ -158,7 +158,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    >[!CAUTION]
    >
-   >La pestaña **[Permissions](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite editar las configuraciones de CUG según la presencia de la mezcla `granite:AuthenticationRequired`. Si los permisos de la página se configuran mediante configuraciones de CUG obsoletas, dependiendo de la presencia de la propiedad `cq:cugEnabled` , se mostrará un mensaje de advertencia en **Requisito de autenticación** y la opción no se podrá editar, al igual que los [Permisos](/help/sites-authoring/editing-page-properties.md#permissions) no se podrán editar.
+   >La variable **[Permisos](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite editar las configuraciones de CUG en función de la presencia de `granite:AuthenticationRequired` mixin. Si los permisos de la página se configuran mediante configuraciones de CUG obsoletas, según la presencia de `cq:cugEnabled` , se mostrará un mensaje de advertencia en **Requisito de autenticación** y la opción no será editable, ni la variable [Permisos](/help/sites-authoring/editing-page-properties.md#permissions) se puede editar.
    >
    >
    >En ese caso, los permisos de CUG se deben editar en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -233,7 +233,7 @@ Define la variación de fragmentos de la experiencia que se utiliza para generar
    * Ver los [permisos efectivos](/help/sites-administering/user-group-ac-admin.md)
    >[!CAUTION]
    >
-   >La pestaña **Permissions** permite editar las configuraciones de CUG según la presencia de la mezcla `granite:AuthenticationRequired`. Si los permisos de la página se configuran mediante ajustes de CUG obsoletas, dependiendo de la presencia de la propiedad `cq:cugEnabled`, se mostrará un mensaje de advertencia y los permisos de CUG no se podrán editar, al igual que el Requisito de autenticación de la ficha [Avanzado](/help/sites-authoring/editing-page-properties.md#advanced).
+   >La variable **Permisos** permite editar las configuraciones de CUG en función de la presencia de `granite:AuthenticationRequired` mixin. Si los permisos de la página se configuran mediante ajustes de CUG obsoletas, dependiendo de la presencia de la propiedad `cq:cugEnabled`, se mostrará un mensaje de advertencia y los permisos de CUG no se podrán editar, al igual que el Requisito de autenticación de la ficha [Avanzado](/help/sites-authoring/editing-page-properties.md#advanced).
    >
    >
    >En ese caso, los permisos de CUG se deben editar en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -302,7 +302,7 @@ Al editar una página puede, utilizar **Información de página** para definir l
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Seleccione **Abrir propiedades** y se abrirá un cuadro de diálogo que le permitirá editar las propiedades, ordenadas por la ficha adecuada. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
+1. Select **Abrir propiedades** y se abrirá un cuadro de diálogo que le permitirá editar las propiedades, ordenadas por la ficha adecuada. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
 
    * **Cancelar**
    * **Guardar y cerrar**

@@ -1,6 +1,6 @@
 ---
-title: 'Pasos adicionales para obtener el correo electrónico con los archivos adjuntos '
-description: 'Pasos adicionales para obtener el correo electrónico con los archivos adjuntos   '
+title: Pasos adicionales para obtener el correo electrónico con los archivos adjuntos
+description: Pasos adicionales para obtener el correo electrónico con los archivos adjuntos
 source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
 source-wordcount: '226'
@@ -13,7 +13,7 @@ ht-degree: 0%
 El problema se aplica a la siguiente versión:
 * Experience Manager 6.5 Forms
 
-## Problema   {#issue}
+## Problema {#issue}
 
 El usuario no puede realizar operaciones como Enviar PDF por correo electrónico o Incluir archivos adjuntos con la configuración de envío.
 

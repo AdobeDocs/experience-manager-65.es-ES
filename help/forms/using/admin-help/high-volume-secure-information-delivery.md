@@ -1,8 +1,8 @@
 ---
 title: Entrega de información segura de gran volumen
-seo-title: Entrega de información segura de gran volumen
+seo-title: High-volume secure information delivery
 description: La seguridad de los documentos admite la asociación de licencias a usuarios, en lugar de a documentos en entornos de producción masiva.
-seo-description: La seguridad de los documentos admite la asociación de licencias a usuarios, en lugar de a documentos en entornos de producción masiva.
+seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
 uuid: 9747d283-506c-434e-9850-e50b95290cc8
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 616e8821-ca96-4471-9120-0e1076a06178
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
-
 
 # Entrega de información segura de gran volumen {#high-volume-secure-information-delivery}
 

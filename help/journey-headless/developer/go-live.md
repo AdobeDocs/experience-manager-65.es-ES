@@ -1,10 +1,11 @@
 ---
 title: Cómo vivir con tu aplicación sin encabezado
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a implementar una aplicación sin encabezado en vivo.
-source-git-commit: 20d46a7c37663dac36e6af9582d569a7f782eab7
+exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1903'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -63,11 +64,11 @@ A continuación, echemos un vistazo a las partes constitutivas de un entorno AEM
 
 Un entorno de AEM completo está formado por un Autor, una Publicación y un Dispatcher. Estos mismos componentes estarán disponibles en el tiempo de ejecución del desarrollo local para que le resulte más fácil previsualizar el código y el contenido antes de lanzarse.
 
-* **El servicio Autor** es donde los usuarios internos crean, administran y previsualizan contenido.
+* **El servicio de creación** es donde los usuarios internos crean, administran y previsualizan contenido.
 
-* **El servicio Publicar** se considera el entorno &quot;Activo&quot; y es lo que los usuarios finales interactúan con él. El contenido, después de editarse y aprobarse en el servicio Autor, se distribuye (replica) en el servicio Publicar . El patrón de implementación más común con AEM aplicaciones sin periféricos es tener la versión de producción de la aplicación conectada a un servicio de AEM Publish.
+* **El servicio de publicación** se considera el entorno “activo” y suele ser con el que interactúan los usuarios finales. El contenido, después de editarse y aprobarse en el servicio Autor, se distribuye (replica) en el servicio Publicar . El patrón de implementación más común con las aplicaciones sin encabezado de AEM es tener la versión de producción de la aplicación conectada a un servicio de publicación de AEM.
 
-* **Dispatcher** es un servidor web estático ampliado con el módulo AEM dispatcher. Almacena en caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
+* **Dispatcher** es un servidor web estático ampliado con el módulo Dispatcher de AEM. Almacena en caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
 
 ## Flujo de trabajo de desarrollo local {#the-local-development-workflow}
 
@@ -146,7 +147,7 @@ Para un *tradicional* implementación (que no sea AMS) mediante Maven, puede ver
 
 Si es cliente de AMS que utiliza Cloud Manager, una vez que se haya probado todo y funcione correctamente, estará listo para insertar las actualizaciones de código en una [repositorio Git centralizado en Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
 
-Una vez cargadas las actualizaciones en Cloud Manager, se pueden implementar en AEM mediante [Canalización de CD/CI de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+Una vez cargadas las actualizaciones en Cloud Manager, se pueden implementar en AEM mediante [Canalización de CD/CI de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=es).
 
 <!-- Can't find a parallel link -->
 <!--

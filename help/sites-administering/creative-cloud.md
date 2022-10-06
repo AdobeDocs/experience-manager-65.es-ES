@@ -1,8 +1,8 @@
 ---
 title: Uso compartido de carpetas con Adobe Creative Cloud
-seo-title: Uso compartido de carpetas con Adobe Creative Cloud
+seo-title: Folder sharing with Adobe Creative Cloud
 description: Obtenga información sobre cómo compartir carpetas con Adobe Creative Cloud
-seo-description: Obtenga información sobre cómo compartir carpetas con Adobe Creative Cloud
+seo-description: Learn about sharing folder with Adobe Creative Cloud
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
 source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 12%
+source-wordcount: '66'
+ht-degree: 15%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 12%
 
 >[!CAUTION]
 >
->La función de uso compartido de carpetas de AEM a Creative Cloud está en desuso. Se recomienda encarecidamente a los clientes que utilicen funciones más nuevas, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o [AEM aplicación de escritorio](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es). Obtenga más información en [AEM y prácticas recomendadas de integración del Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La función de uso compartido de carpetas de AEM a Creative Cloud está en desuso. Se recomienda encarecidamente a los clientes que utilicen las nuevas funcionalidades, como [Vínculo de recurso de Adobe](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o [aplicación de escritorio AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es). Obtenga más información en [Prácticas recomendadas para la integración de AEM y Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

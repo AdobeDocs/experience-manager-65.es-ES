@@ -1353,7 +1353,7 @@ Si no realiza la comprobación de revocación, el servicio de firma no comprueba
 
 >[!NOTE]
 >
->Puede anular la dirección URL especificada en el certificado utilizando una `CRLOptionSpec` y `OCSPOptionSpec` objeto. Por ejemplo, para anular el servidor CRL, puede invocar la variable `CRLOptionSpec` del objeto `setLocalURI` método.
+>Puede anular la dirección URL especificada en el certificado mediante una `CRLOptionSpec` y `OCSPOptionSpec` objeto. Por ejemplo, para anular el servidor CRL, puede invocar la variable `CRLOptionSpec` del objeto `setLocalURI` método.
 
 La marca de hora es el proceso de seguimiento del momento en que se modificó un documento firmado o certificado. Después de firmar un documento, nadie puede modificarlo. La marca de hora ayuda a hacer cumplir la validez de un documento firmado o certificado. Puede establecer las opciones de marca de hora mediante un `TSPOptionSpec` objeto. Por ejemplo, puede especificar la URL de un servidor de proveedor de marca de hora (TSP).
 
@@ -1577,7 +1577,7 @@ Si no realiza la comprobación de revocación, el servicio de firma no comprueba
 
 >[!NOTE]
 >
->Puede anular la dirección URL especificada en el certificado utilizando una `CRLOptionSpec` y `OCSPOptionSpec` objeto. Por ejemplo, para anular el servidor CRL, puede invocar la variable `CRLOptionSpec` del objeto `setLocalURI` método.
+>Puede anular la dirección URL especificada en el certificado mediante una `CRLOptionSpec` y `OCSPOptionSpec` objeto. Por ejemplo, para anular el servidor CRL, puede invocar la variable `CRLOptionSpec` del objeto `setLocalURI` método.
 
 La marca de hora es el proceso de seguimiento del momento en que se modificó un documento firmado o certificado. Después de firmar un documento, nadie puede modificarlo. La marca de hora ayuda a hacer cumplir la validez de un documento firmado o certificado. Puede establecer las opciones de marca de hora utilizando un `TSPOptionSpec` objeto. Por ejemplo, puede especificar la URL de un servidor de proveedor de marca de hora (TSP).
 

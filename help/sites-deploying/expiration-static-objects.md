@@ -1,8 +1,8 @@
 ---
 title: Caducidad de objetos estáticos
-seo-title: Caducidad de objetos estáticos
+seo-title: Expiration of Static Objects
 description: Aprenda a configurar AEM para que los objetos estáticos no caduquen (durante un período de tiempo razonable).
-seo-description: Aprenda a configurar AEM para que los objetos estáticos no caduquen (durante un período de tiempo razonable).
+seo-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
 uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
-
 
 # Caducidad de objetos estáticos{#expiration-of-static-objects}
 
@@ -40,7 +39,7 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
 
 >[!CAUTION]
 >
->Debe tener cuidado al definir el periodo de tiempo durante el cual un objeto se considera actualizado. Como no hay *comprobación hasta que el período de tiempo especificado ha caducado*, el cliente puede terminar presentando contenido antiguo desde la caché.
+>Debe tener cuidado al definir el periodo de tiempo durante el cual un objeto se considera actualizado. Como *no hay comprobación hasta que el período de tiempo especificado haya caducado*, el cliente puede terminar presentando contenido antiguo desde la caché.
 
 1. **Para una instancia de Autor:**
 
@@ -76,9 +75,9 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la caché del navegador) almacene archivos CSS, Javascript, PNG y GIF durante un día como máximo en las cachés del cliente. Aunque este ejemplo ilustra la configuración global de todo lo que está debajo de `/content` y `/etc/designs`, debe hacerlo más granular.
+   Esto permite que la caché intermedia (por ejemplo, la caché del navegador) almacene archivos CSS, Javascript, PNG y GIF durante un día en las cachés del cliente. Aunque este ejemplo ilustra la configuración global de todo lo siguiente `/content` y `/etc/designs`, debe hacerlo más granular.
 
-   Según la frecuencia con la que se actualice el sitio, también puede considerar la posibilidad de almacenar en caché las páginas HTML. Un período de tiempo razonable sería de 1 hora:
+   Según la frecuencia con la que se actualice el sitio, también puede considerar la posibilidad de almacenar en caché las páginas de HTML. Un período de tiempo razonable sería de 1 hora:
 
    ```xml
    <Location /content>
@@ -86,4 +85,4 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
    </Location>
    ```
 
-Después de configurar los objetos estáticos, analice `request.log`, mientras selecciona páginas que contienen dichos objetos, para confirmar que no se realizan solicitudes (innecesarias) para objetos estáticos.
+Una vez configurados los objetos estáticos, analice `request.log`, al seleccionar páginas que contienen dichos objetos, para confirmar que no se están realizando solicitudes (innecesarias) para objetos estáticos.

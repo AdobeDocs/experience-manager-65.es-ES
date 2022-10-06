@@ -38,7 +38,7 @@ Está en el lugar adecuado para la documentación más reciente de AEM 6.5.
 
 También tenemos documentación para versiones anteriores de Adobe Experience Manager. Puede utilizar el componente de versión en cualquier página para desplazarse entre versiones o elegir una de esta lista.
 
-* [AEM 6.4  ](https://experienceleague.adobe.com/docs/experience-manager-64.html?lang=es)
+* [AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64.html?lang=es)
 * [AEM 6.3](https://helpx.adobe.com/es/support/experience-manager/6-3.html)
 * [AEM 6.2](https://helpx.adobe.com/es/support/experience-manager/6-2.html)**
 * [AEM 6.1](https://docs.adobe.com/docs/es/aem/6-1.html)**

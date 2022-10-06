@@ -1,8 +1,8 @@
 ---
 title: Uso de las páginas web de seguridad del documento
-seo-title: Uso de las páginas web de seguridad del documento
+seo-title: Using the document security webpages
 description: Descubra cómo puede iniciar sesión, navegar y utilizar las páginas web de seguridad del documento.
-seo-description: Descubra cómo puede iniciar sesión, navegar y utilizar las páginas web de seguridad del documento.
+seo-description: Learn how you can login, navigate and use the document security web pages.
 uuid: b4863343-cda5-474a-a101-a20e39b1f8c7
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
-
 
 # Uso de las páginas web de seguridad del documento {#using-the-document-security-webpages}
 
@@ -25,7 +24,7 @@ Los usuarios y administradores utilizan las páginas web de seguridad de documen
 
 >[!NOTE]
 >
->También puede iniciar sesión para documentar la seguridad a través de Acrobat y otras aplicaciones cliente utilizando su cuenta de inicio de sesión de usuario. (Consulte [Configuración del acceso a la seguridad de documentos desde aplicaciones cliente](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications)).
+>También puede iniciar sesión para documentar la seguridad a través de Acrobat y otras aplicaciones cliente utilizando su cuenta de inicio de sesión de usuario. (Consulte [Configuración del acceso a la seguridad de documentos desde aplicaciones cliente](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
 
 Para abrir las páginas web, necesita un explorador, la dirección URL y la información de inicio de sesión para garantizar la seguridad del documento. La dirección URL de los usuarios es diferente de la dirección URL de los administradores.
 
@@ -33,11 +32,11 @@ Debido a que la seguridad de los documentos hace referencia a los directorios ex
 
 Para iniciar sesión como administrador, debe tener la función de administrador asignada. Puede utilizar la cuenta de superadministrador predeterminada que se crea durante el proceso de instalación.
 
-## Inicie sesión en las páginas web {#log-in-to-the-web-pages}
+## Iniciar sesión en las páginas web {#log-in-to-the-web-pages}
 
 Para iniciar sesión en las páginas web mediante un explorador, necesita la dirección URL de seguridad del documento y una cuenta. La dirección URL de los usuarios es diferente de la dirección URL de los administradores. Los administradores también pueden iniciar sesión en las páginas de usuario para crear políticas.
 
-Si tiene acceso a más de una instalación de seguridad de documentos, necesita la URL para la instancia de seguridad de documentos a la que desea acceder. Consulte con el administrador si no dispone de esta información. La dirección URL predeterminada para las páginas de usuario es `https://[host]:[port]/edc`. Es posible que el número de puerto no sea necesario en algunos casos. Solicite detalles al administrador.
+Si tiene acceso a más de una instalación de seguridad de documentos, necesita la URL para la instancia de seguridad de documentos a la que desea acceder. Consulte con el administrador si no dispone de esta información. La dirección URL predeterminada para las páginas del usuario es `https://[host]:[port]/edc`. Es posible que el número de puerto no sea necesario en algunos casos. Solicite detalles al administrador.
 
 La dirección URL predeterminada para los administradores es `https://[host]:[port]/adminui`.
 
@@ -86,7 +85,7 @@ Utilice estos vínculos para acceder a las distintas páginas, donde crea y admi
 
 ## Configuración del acceso a la seguridad de documentos desde aplicaciones cliente {#setting-up-access-to-document-security-from-client-applications}
 
-Las aplicaciones cliente deben configurarse para conectarse a la seguridad de los documentos a fin de proteger los documentos, abrir documentos protegidos por políticas y conectarse a las páginas web de seguridad de los documentos. Consulte *Ayuda de Acrobat* o la *Ayuda de RightsManagementExtension* apropiada para obtener información sobre cómo configurar la conexión dentro de la aplicación cliente.
+Las aplicaciones cliente deben configurarse para conectarse a la seguridad de los documentos a fin de proteger los documentos, abrir documentos protegidos por políticas y conectarse a las páginas web de seguridad de los documentos. Consulte *Ayuda de Acrobat* o bien *Ayuda de RightsManagementExtension* para obtener información sobre cómo configurar la conexión dentro de la aplicación cliente.
 
 Se accede a la seguridad de los documentos a través de Secure Sockets Layer (SSL). Debe instalar el certificado del sitio web en el almacén de certificados para poder acceder a la seguridad de los documentos a través de las aplicaciones cliente.
 
@@ -107,4 +106,3 @@ Cierre la sesión cuando termine de utilizar las páginas web para que pueda uti
 
 1. En la esquina superior derecha de la página, haga clic en Cerrar sesión.
 1. Si aparece un mensaje en la página Cerrar sesión , cierre la ventana del explorador para cerrar la sesión por completo. De lo contrario, puede utilizar el explorador para otros fines.
-

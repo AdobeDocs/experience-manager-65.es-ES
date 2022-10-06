@@ -1,8 +1,8 @@
 ---
-title: Selección de la IU
-seo-title: Seleccionar la IU
+title: Seleccionar la IU
+seo-title: Selecting your UI
 description: Configure qué interfaz utilizará para trabajar en AEM
-seo-description: Configure qué interfaz utilizará para trabajar en AEM
+seo-description: Configure which interface you will use to work in AEM
 uuid: ab127f2f-2f8a-4398-90dd-c5d48eed9e53
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: e418d330-f234-411d-8cad-3fd9906dcbee
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '743'
 ht-degree: 83%
 
 ---
-
 
 # Seleccionar la IU{#selecting-your-ui}
 
@@ -41,13 +40,13 @@ Hay varias ubicaciones en las que puede definir la IU que se utilizará:
 >
 >Varias opciones para cambiar a la interfaz de usuario clásica no están disponibles de forma inmediata, ya que deben configurarse específicamente para la instancia.
 >
->Consulte [Habilitación del acceso a la IU clásica](/help/sites-administering/enable-classic-ui.md) para obtener más información.
+>Consulte [Habilitar el acceso a la IU clásica](/help/sites-administering/enable-classic-ui.md) para obtener más información.
 
 >[!NOTE]
 >
 >Las instancias actualizadas de una versión anterior conservarán la IU clásica para la creación de páginas.
 >
->Después de la actualización, la creación de páginas no cambiará automáticamente a la IU táctil, pero puede configurarla con la [configuración OSGi](/help/sites-deploying/configuring-osgi.md) del **servicio de modo de IU de creación de WCM** ( `AuthoringUIMode` servicio). Consulte [Omisiones de IU del editor](#ui-overrides-for-the-editor).
+>Después de la actualización, la creación de páginas no cambiará automáticamente a la IU táctil, pero puede configurarla con el [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) del **Servicio de modo de IU de creación WCM** ( `AuthoringUIMode` ). Consulte [Omisiones de IU del editor](#ui-overrides-for-the-editor).
 
 ## Configurar la IU predeterminada para su instancia {#configuring-the-default-ui-for-your-instance}
 
@@ -61,7 +60,7 @@ Cada usuario puede tener acceso a sus [preferencias de usuario](/help/sites-auth
 
 La configuración de la sesión puede anular estos ajustes.
 
-## Cambio a la IU clásica para la sesión actual  {#switching-to-classic-ui-for-the-current-session}
+## Cambio a la IU clásica para la sesión actual {#switching-to-classic-ui-for-the-current-session}
 
 Al utilizar la IU táctil, puede ser que los usuarios de escritorio deseen cambiar a la IU clásica (solo para escritorio). Hay varios métodos para cambiar a la IU clásica para la sesión actual:
 
@@ -72,7 +71,7 @@ Al utilizar la IU táctil, puede ser que los usuarios de escritorio deseen cambi
    >Esta opción para cambiar a la interfaz de usuario clásica no está disponible de forma inmediata, ya que debe configurarse específicamente para la instancia.
    >
    >
-   >Consulte [Habilitación del acceso a la IU clásica](/help/sites-administering/enable-classic-ui.md) para obtener más información.
+   >Consulte [Habilitar el acceso a la IU clásica](/help/sites-administering/enable-classic-ui.md) para obtener más información.
 
    Si esta opción está activada, cuando pasa el cursor sobre una consola aplicable aparece un icono (el símbolo de un monitor) que, al tocar o hacer clic en él, abre la ubicación apropiada en la IU clásica.
 
@@ -99,7 +98,7 @@ Al utilizar la IU táctil, puede ser que los usuarios de escritorio deseen cambi
 >
 >Esta opción para cambiar a la interfaz de usuario clásica no está disponible de forma inmediata, ya que debe configurarse específicamente para la instancia.
 >
->Consulte [Habilitación del acceso a la IU clásica](/help/sites-administering/enable-classic-ui.md) para obtener más información.
+>Consulte [Habilitar el acceso a la IU clásica](/help/sites-administering/enable-classic-ui.md) para obtener más información.
 
 Si ese acceso está activado, la opción **Abrir la interfaz de usuario clásica** está disponible en el cuadro de diálogo **Información de la página**:
 
@@ -114,12 +113,12 @@ El sistema puede anular la configuración definida por un usuario o administrado
    * Se fuerza el uso del editor clásico al acceder a la página mediante `cf#` en la dirección URL. Por ejemplo:
       `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * Se fuerza el uso del editor táctil al usar `/editor.html` en la dirección URL o al usar un dispositivo táctil. Por ejemplo:
+   * Se fuerza el uso del editor táctil al utilizar `/editor.html` en la URL o cuando se utiliza un dispositivo táctil. Por ejemplo:
       `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Los forzados son temporales y solo son válidos para esa sesión del navegador
 
-   * Se configurará una cookie en función de si se utiliza la funcionalidad táctil ( `editor.html`) o la clásica ( `cf#`).
+   * Se definirá una cookie en función de si se puede pulsar ( `editor.html`) o clásica ( `cf#`).
 
 * Al abrir páginas mediante `siteadmin`, se buscará:
 

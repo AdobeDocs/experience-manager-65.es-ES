@@ -232,7 +232,7 @@ Para crear una carpeta nueva, puede hacer lo siguiente:
 >
 >En el Explorador de configuración, puede editar la carpeta global y activar el **Plantillas editables** si desea crear plantillas dentro de esta carpeta, esta no es la práctica recomendada.
 >
->Consulte la [Explorador de configuración](/help/sites-administering/configurations.md) documentación para obtener más información.
+>Consulte la documentación del [Explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
 
 ### ACL y grupos {#acls-and-groups}
 
@@ -255,7 +255,7 @@ La siguiente tabla detalla los permisos necesarios para la edición de plantilla
 <table>
  <tbody>
   <tr>
-   <th>Ruta</th>
+   <th>Ruta </th>
    <th>Función/Grupo</th>
    <th>Permisos<br /> </th>
    <th>Descripción</th>
@@ -315,7 +315,7 @@ Las plantillas ya no deben almacenarse en `/conf/global`, sin embargo, para algu
 <table>
  <tbody>
   <tr>
-   <th>Ruta</th>
+   <th>Ruta </th>
    <th>Función/Grupo</th>
    <th>Permisos<br /> </th>
    <th>Descripción</th>
@@ -585,7 +585,7 @@ Las políticas de página permiten definir la variable [política de contenido](
 
          * Nombre: status
          * Tipo: Cadena
-         * Value: `enabled`
+         * Valor: `enabled`
 
 1. **Plantillas permitidas**
 

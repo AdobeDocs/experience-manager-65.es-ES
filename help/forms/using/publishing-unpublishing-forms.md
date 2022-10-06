@@ -1,8 +1,8 @@
 ---
-title: Publicación y cancelación de la publicación de formularios y documentos
-seo-title: Publicación y cancelación de la publicación de formularios y documentos
+title: Publicar y cancelar la publicación de formularios y documentos
+seo-title: Publishing and unpublishing forms and documents
 description: Puede programar la publicación y cancelación de la publicación de formularios. Los formularios publicados se replican en la instancia de publicación.
-seo-description: Puede programar la publicación y cancelación de la publicación de formularios. Los formularios publicados se replican en la instancia de publicación.
+seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
 uuid: 0bad5608-b7a8-4599-81cc-2cd0a3dc7dd5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,197 +10,196 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+exl-id: f26c4268-7885-4e61-a258-219d98288548
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 0%
+source-wordcount: '1413'
+ht-degree: 86%
 
 ---
 
-
-# Publicación y cancelación de la publicación de formularios y documentos{#publishing-and-unpublishing-forms-and-documents}
+# Publicar y cancelar la publicación de formularios y documentos {#publishing-and-unpublishing-forms-and-documents}
 
 AEM Forms permite crear, publicar y cancelar la publicación de formularios fácilmente. Para obtener más información sobre AEM Forms, consulte [Introducción a la administración de formularios](../../forms/using/introduction-managing-forms.md).
 
-El servidor de AEM Forms proporciona dos instancias: Autor y publicación. La instancia de autor sirve para crear y administrar recursos y recursos de formulario. La instancia de publicación sirve para mantener los recursos y recursos relacionados disponibles para los usuarios finales. Puede importar XDP y PDF forms en el modo Autor. Para obtener más información, consulte [Obtención de documentos XDP y PDF en AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
+El servidor de AEM Forms proporciona dos instancias: Autor y publicación. La instancia de autor se utiliza para crear y administrar recursos y recursos de formulario. La instancia Publicar sirve para mantener los recursos y recursos relacionados disponibles para los usuarios finales. Puede importar XDP y PDF forms en el modo Autor . Para obtener más información, consulte [Obtención de documentos XDP y PDF en AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
 
-## Recursos admitidos   {#supported-assets-nbsp}
+## Recursos compatibles {#supported-assets-nbsp}
 
 AEM Forms admite los siguientes tipos de recursos:
 
 * Formularios adaptables
 * Documentos adaptables
 * Fragmentos de formulario adaptables
-* Temas
+* Temáticas
 * Plantillas de formulario (formularios XFA)
 * PDF forms
 * Documento (documentos PDF planos)
 * Conjuntos de formularios
-* Recurso (imágenes, Esquemas y hojas de estilo)
+* Recurso (imágenes, esquemas y hojas de estilo)
 
-Inicialmente, todos los recursos solo están disponibles en la instancia Autor. Un administrador o un autor de formulario puede publicar todos los recursos excepto los recursos.
+Inicialmente, todos los recursos están disponibles solo en la instancia de autor. Un administrador o un autor de formularios pueden publicar todos los activos excepto los recursos.
 
-Al seleccionar un formulario y publicarlo, también se publican sus recursos y recursos relacionados. Sin embargo, los recursos dependientes no se publican. En este contexto, los recursos y recursos relacionados son recursos que un recurso publicado utiliza o a los que hace referencia. Los recursos dependientes son recursos que hacen referencia a un recurso publicado.
+Al seleccionar un formulario y publicarlo, también se publican sus activos y recursos relacionados. Con todo, los recursos dependientes no se publican. En este contexto, los recursos y activos relacionados son recursos que un recursos publicado utiliza o a los que hace referencia. Los recursos dependientes son recursos que hacen referencia a un recurso publicado.
 
-Su Forms adaptable puede utilizar algunas configuraciones, configuraciones y personalizaciones que no se publican automáticamente. Se recomienda publicar o activar estos recursos antes de publicar un formulario adaptable.
+Sus formularios adaptables pueden utilizar algunas configuraciones, ajustes y personalizaciones que no se publican automáticamente. Se recomienda publicar o activar estos recursos antes de publicar un formulario adaptable.
 
 * Plantillas de formulario adaptable editables
-* Configuraciones de Cloud Service para Adobe Sign, Typekit, reCAPTCHA y modelos de datos de formulario
-* Otras configuraciones de servicios de Cloud solo se activan si el usuario tiene permisos de administrador.
-* Personalizaciones. Entre ellos se incluyen, entre otros:
+* Configuraciones del Cloud Service para los modelos de datos de Adobe Sign, Typekit, reCAPTCHA y Form
+* Otras configuraciones de Cloud Services solo se activan si el usuario tiene permisos de administrador.
+* Personalizaciones. Entre ellas se incluyen, entre otras:
 
    * Diseños personalizados
    * Aspectos personalizados
-   * Archivo CSS: tomado como entrada en el cuadro de diálogo de propiedades del contenedor de formulario adaptable
-   * Categoría de la biblioteca de clientes: se toma como entrada en el cuadro de diálogo de propiedades del contenedor de formularios adaptables
-   * Cualquier otra biblioteca de cliente que se pueda incluir como parte de una plantilla de formulario adaptable.
+   * Archivo CSS: Tomado como entrada en el cuadro de diálogo Propiedades del contenedor del formulario adaptable
+   * Categoría de biblioteca de cliente: Tomado como entrada en el cuadro de diálogo Propiedades del contenedor del formulario adaptable
+   * Cualquier otra biblioteca de cliente que se pueda incluir como parte de la plantilla del formulario adaptable.
    * Rutas de diseño
 
-## Estados de recursos {#asset-states}
+## Estados de los recursos {#asset-states}
 
 Un recurso puede tener los siguientes estados:
 
-* **Sin publicar:** recurso que nunca se ha publicado (el estado sin publicar solo se aplica a los recursos de Forms). Los recursos de Correspondence Management no tienen un estado No publicado).
-* **Publicado**: Recurso que se ha publicado y está disponible en la instancia de publicación
-* **Modificado**: Recurso que se modifica después de publicarse
+* **Publicación cancelada:** Un recurso que nunca se ha publicado (el estado Publicación cancelada solo es aplicable a los recursos de Forms. Los recursos de Administración de correspondencia no tienen un estado Publicación cancelada).
+* **Publicado**: Un recurso que se ha publicado y está disponible en la instancia Publicar
+* **Modificado**: Un recurso que se modifica después de publicarse
 
 ## Publicar un recurso {#publish-an-asset}
 
 1. Inicie sesión en el servidor de AEM Forms.
 1. Utilice una de las siguientes opciones para seleccionar y publicar un recurso.
 
-   1. Mueva el puntero sobre un recurso y toque **[!UICONTROL Publicar]** ![aem6forms_world](assets/aem6forms_globe.pngasset.png).
-   1. Siga uno de estos procedimientos y toque Publicar:
+   1. Mueva el puntero sobre un recurso y pulse **[!UICONTROL Publicar]** ![aem6forms_global](assets/aem6forms_globe.pngasset.png).
+   1. Realice una de las siguientes acciones y, a continuación, pulse Publicar:
 
-      * Si está en la vista de tarjeta, toque **[!UICONTROL Ingrese la selección]** ![aem6forms_check-círculo](assets/aem6forms_check-circle.png) y toque el recurso. El recurso está seleccionado.
-      * Si se encuentra en la vista de lista, seleccione la casilla de verificación de un recurso. El recurso está seleccionado.
-      * Toque un recurso para mostrar sus detalles.
-      * Muestre las propiedades de un recurso tocando Propiedades de Vista ![viewproperties](assets/viewproperties.png).
+      * Si está en la vista de tarjeta, pulse **[!UICONTROL Introducir selección]** ![aem6forms_check-círculo](assets/aem6forms_check-circle.png) y pulse en el recurso. Se selecciona el recurso.
+      * Si está en la vista de lista, seleccione la casilla de verificación de un recurso. Se selecciona el recurso.
+      * Pulse en un recurso para mostrar sus detalles.
+      * Muestre las propiedades de un recurso al pulsar Ver propiedades ![viewproperties](assets/viewproperties.png).
 
       >[!NOTE]
       >
-      >No seleccione varios recursos. No se puede publicar varios recursos a la vez.
+      >No seleccione varios recursos. No se pueden publicar varios recursos a la vez.
 
 
-1. Cuando el proceso de publicación se inicio, aparece un cuadro de diálogo de confirmación con todos los recursos y recursos relacionados. En el cuadro de diálogo que contiene recursos relacionados, toque **[!UICONTROL Publicar]**. El recurso se publica y aparece el cuadro de diálogo de éxito Publicar recursos.
-
-   >[!NOTE]
-   >
-   >Para los formularios adaptables, junto con los recursos relacionados, también se muestra el nombre de la página Formulario adaptable.
-
-   ![Cuadro de diálogo de confirmación con todos los recursos y recursos relacionados](assets/p4.png)
-
-   Cuadro de diálogo de confirmación con todos los recursos y recursos relacionados.
+1. Cuando se inicia el proceso Publicar, aparece un cuadro de diálogo de confirmación con todos los recursos y activos relacionados. En el cuadro de diálogo que contiene los activos relacionados, pulse **[!UICONTROL Publicar]**. El recurso se publica y aparece el cuadro de diálogo Éxito al publicar recursos.
 
    >[!NOTE]
    >
-   >En Forms Manager, si el usuario no tiene permiso para publicar los recursos enumerados, la acción Publicar está desactivada. Un recurso que requiere permisos adicionales se muestra en rojo.
+   >Para los formularios adaptables, junto con los recursos relacionados, también se muestra el nombre de la página Formulario adaptable .
 
-   Después de publicar un recurso, las propiedades de metadatos del recurso se copian en la instancia de publicación y el estado del recurso se cambia a Publicado. El estado de los recursos dependientes que se publican también se cambia a Publicado.
+   ![Un cuadro de diálogo de confirmación con todos los recursos y activos relacionados](assets/p4.png)
 
-   Después de publicar un recurso, puede utilizar Forms Portal para mostrar todos los recursos de una página web. Para obtener más información, consulte [Introducción a la publicación de formularios en un portal](../../forms/using/introduction-publishing-forms.md).
+   Un cuadro de diálogo de confirmación con todos los recursos y activos relacionados.
+
+   >[!NOTE]
+   >
+   >En Forms Manager, si el usuario no tiene permiso para publicar los recursos de la lista, la acción Publicar está desactivada. Un recurso que requiere permisos adicionales se muestra en rojo.
+
+   Una vez publicado un recurso, las propiedades de metadatos del recurso se copian en la instancia Publicar y el estado del recurso se cambia a Publicado. El estado de los recursos dependientes publicados también se cambia a Publicado.
+
+   Después de publicar un recurso, puede utilizar el portal de Forms para mostrar todos los recursos de una página web. Para obtener más información, consulte [Introducción a la publicación de formularios en un portal](../../forms/using/introduction-publishing-forms.md).
 
 ## Publicar todos los recursos de administración de correspondencia {#publish-all-the-correspondence-management-assets}
 
-AEM Forms permite publicar todos los recursos de la Administración de correspondencia en un servidor de una sola vez. Los recursos publicados incluyen todos los recursos de Correspondence Management y las dependencias relacionadas.
+AEM Forms permite publicar todos los recursos de la gestión de correspondencia en un servidor de una sola vez. Los recursos publicados incluyen todos los recursos de administración de correspondencia y las dependencias relacionadas.
 
-Complete los siguientes pasos para publicar todos los recursos de la administración de correspondencia en un servidor:
+Complete los siguientes pasos para publicar todos los recursos de administración de correspondencia en un servidor:
 
 1. Inicie sesión en el servidor de AEM Forms.
-1. Toque **Adobe Experience Manager** en la barra de navegación global.
-1. Toque ![herramientas](assets/tools.png) y luego toque **Forms**.
-1. Toque **Publicar recursos de administración de correspondencia**.
+1. Pulse **Adobe Experience Manager** en la barra de navegación global.
+1. Pulse ![herramientas](assets/tools.png) y, a continuación, **Formularios**.
+1. Pulse **Publicar los recursos de administración de correspondencia**.
 
    ![publish-cmp-assets](assets/publish-cmp-assets.png)
 
-   Aparece la página Publicar todos los recursos de gestión de correspondencia y muestra la información sobre la última vez que se intentó el proceso de Publicar recursos de gestión de correspondencia.
+   Aparecerá la página Publicar todos los recursos de administración de correspondencia y se mostrará la información sobre la última vez que se intentó el proceso de Publicar recursos de administración de correspondencia.
 
    ![publish-last-run-details](assets/publish-last-run-details.png)
 
-1. Toque **Publicar** y, en el mensaje de confirmación, toque **Aceptar**.
+1. Pulse **Publicar** y, en el mensaje de confirmación, pulse **OK**.
 
-   Una vez completado el proceso por lotes, puede realizar la vista de los detalles de la última ejecución. Esto incluye información como el inicio de sesión del administrador y si el lote se ejecutó correctamente o falló.
+   Una vez completado un proceso por lotes, puede ver los detalles de la última ejecución. Incluye información como el inicio de sesión del administrador y si el lote se ejecuta correctamente o no.
 
    >[!NOTE]
    >
-   >El proceso de publicación no se puede cancelar una vez iniciado. Además, mientras la operación de publicación está en curso, no cree, elimine, modifique ni publique ningún recurso ni inicie la operación Exportar todos los recursos de gestión de correspondencia.
+   >El proceso de publicación no se puede cancelar una vez iniciado. Además, mientras la operación Publicar está en curso, no cree, elimine, modifique ni publique ningún recurso ni inicie la operación Exportar todos los recursos de administración de correspondencia.
 
-## Automatizar la publicación y cancelación de publicaciones para Forms y Documentos {#automate-publishing-and-unpublishing-for-forms-amp-documents}
+## Automatizar la publicación y cancelación de publicación para formularios y documentos {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-AEM Forms permite programar la publicación y cancelación de publicaciones de recursos para Forms y Documentos. Puede especificar la programación en el Editor de metadatos. Para obtener más información sobre la administración de metadatos de formulario, consulte [Administración de metadatos de formulario.](../../forms/using/manage-form-metadata.md)
+AEM Forms permite programar la publicación y cancelación de publicaciones de recursos para Forms y documentos. Puede especificar la programación en el Editor de metadatos. Para obtener más información sobre la administración de metadatos de formularios, consulte [Administrar metadatos de formulario.](../../forms/using/manage-form-metadata.md)
 
-Siga estos pasos para programar la fecha y hora de publicación y cancelación de la publicación de recursos de Forms y Documentos:
+Siga estos pasos para programar la fecha y la hora de publicación y cancelación de la publicación de recursos de formularios y documentos:
 
-1. Seleccione un recurso y toque **[!UICONTROL Propiedades de Vista]**. Se abre la página Propiedades de metadatos.
-1. En la página Propiedades de metadatos, toque **[!UICONTROL Avanzado]** y, a continuación, toque **[!UICONTROL Editar]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
-1. En los campos **[!UICONTROL Publicar a tiempo]** y **[!UICONTROL Tiempo de inactividad de publicación]**, seleccione la fecha y la hora.\
-   Toque **[!UICONTROL Listo]** ![aem6forms_check](assets/aem6forms_check.png).
+1. Seleccione un recurso y pulse **[!UICONTROL Ver propiedades]**. Se abre la página Propiedades de metadatos.
+1. En la página Propiedades de metadatos, pulse **[!UICONTROL Avanzado]** y, a continuación, pulse **[!UICONTROL Editar]** ![illustratorcc_penciltool_cur_edit_2_17](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+1. En los campos **[!UICONTROL Tiempo de actividad de publicación]** y **[!UICONTROL Tiempo de inactividad de la publicación]** seleccione la fecha y la hora.\
+   Pulse **[!UICONTROL Listo]** ![aem6forms_check](assets/aem6forms_check.png).
 
 ## Cancelar la publicación de un recurso {#unpublish-an-asset}
 
-1. Seleccione un recurso que se publique y toque **[!UICONTROL Cancelar publicación]** ![Cancelar publicación](assets/unpublish.png).
+1. Seleccione un recurso publicado y pulse **[!UICONTROL Cancelar la publicación]** ![cancelar la publicación](assets/unpublish.png).
 1. Utilice una de las siguientes opciones para seleccionar y cancelar la publicación de un recurso.
 
-   1. Mueva el puntero sobre un recurso y toque **[!UICONTROL Cancelar publicación]** ![cancelar publicación](assets/unpublish.png).
-   1. Siga uno de estos procedimientos y toque Cancelar publicación:
+   1. Mueva el puntero sobre un recurso y pulse **[!UICONTROL Cancelar la publicación]** ![cancelar la publicación](assets/unpublish.png).
+   1. Realice una de las siguientes acciones y, a continuación, pulse Cancelar la publicación:
 
-      * Si está en la vista de tarjeta, toque **[!UICONTROL Ingrese la selección]** ![aem6forms_check-círculo](assets/aem6forms_check-circle.png) y toque el recurso. El recurso está seleccionado.
+      * Si está en la vista de tarjeta, pulse **[!UICONTROL Introducir selección]** ![aem6forms_check-círculo](assets/aem6forms_check-circle.png) y pulse en el recurso. Se selecciona el recurso.
 
-      * Si está en la vista de lista, pase el ratón sobre un recurso y toque ![selectassetmark](assets/selectassetcheckmark.png). El recurso está seleccionado.
+      * Si está en la vista de lista, pase el puntero sobre un recurso y pulse ![selectassetcheckmark](assets/selectassetcheckmark.png). Se selecciona el recurso.
 
-      * Toque un recurso para mostrar sus detalles.
-      * Muestre las propiedades de un recurso tocando Propiedades de Vista ![viewproperties](assets/viewproperties.png).
+      * Pulse en un recurso para mostrar sus detalles.
+      * Muestre las propiedades de un recurso al pulsar Ver propiedades ![viewproperties](assets/viewproperties.png).
 
-1. Cuando se produce la inicio del proceso de cancelación de la publicación, aparece un cuadro de diálogo de confirmación. Toque **[!UICONTROL Cancelar la publicación]**.
+1. Cuando se inicia el proceso Cancelar la publicación, aparece un cuadro de diálogo de confirmación. Pulse **[!UICONTROL Cancelar la publicación]**.
 
    >[!NOTE]
    >
-   >Solo se cancelará la publicación del recurso seleccionado y no se cancelarán la publicación de sus recursos secundarios y referenciados, si los hubiera.
+   >Solo se cancela la publicación del recurso seleccionado, y respecto a sus recursos secundarios y referenciados, de haber, no se cancela su publicación.
 
 ## Revertir un recurso o una carta a la versión publicada anteriormente {#revert-an-asset-or-letter-to-the-previously-published-version}
 
-Cada vez que publica un recurso o una carta después de editarlo, se crea una versión del recurso o la carta. Puede revertir un recurso o una carta a una versión publicada anteriormente. Es posible que deba hacerlo si algo sale mal con la versión actual del recurso o documento.
+Cada vez que publica un recurso o una carta después de su edición, se crea una versión del recurso o la carta. Puede revertir un recurso o una carta a la versión publicada anteriormente. Puede que tenga que hacerlo si algo sale mal con la versión actual del recurso o documento.
 
 >[!NOTE]
 >
->No devuelva una carta a un estado publicado por última vez si se elimina del sistema cualquier recurso dependiente utilizado en esa carta publicada.
+>No revierta una carta a un estado de última publicación si se elimina del sistema cualquier recurso dependiente utilizado en esa carta publicada.
 
-1. Seleccione un recurso y toque **[!UICONTROL Revertir a la versión previamente publicada]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
-1. Antes de revertir el recurso, aparece un cuadro de diálogo de confirmación. Puntee **[!UICONTROL Revertir]**.
+1. Seleccione un recurso y pulse **[!UICONTROL Revertir a la versión publicada anteriormente]** ![reverttopreviouslypublishedversion](assets/reverttopreviouslypublishedversion.png).
+1. Antes de revertir el recurso, aparece un cuadro de diálogo de confirmación. Pulse **[!UICONTROL Revertir]**.
 
-   El recurso o la carta se revertirán a su versión publicada anteriormente.
+   El recurso o la carta vuelven a su versión publicada anteriormente.
 
 ## Eliminar un recurso {#delete-an-asset}
 
 >[!NOTE]
 >
->Al eliminar un recurso, éste se elimina de la instancia de publicación. Al eliminar un recurso también se elimina su historial de versiones, excepto la versión base.
+>Al eliminar un recurso, se elimina de la instancia de publicación. Al eliminar un recurso, también se elimina su historial de versiones, excepto la versión base.
 
-1. Seleccione un recurso y toque **[!UICONTROL Eliminar]** ![eliminar](assets/delete.png).
-
-   >[!NOTE]
-   >
-   >La opción Eliminar también está disponible cuando se muestran los detalles del recurso tocando un recurso o las propiedades de un recurso tocando Propiedades de Vista ![viewproperties](assets/viewproperties.png).
-
-1. Antes de eliminar el recurso, aparece un cuadro de diálogo de confirmación. Toque **[!UICONTROL Eliminar]**.
+1. Seleccione un recurso y pulse **[!UICONTROL Eliminar]** ![eliminar](assets/delete.png).
 
    >[!NOTE]
    >
-   >Solo se elimina el recurso seleccionado y los recursos dependientes y no se eliminan. Para comprobar las referencias de un recurso, toque ![referencias](assets/references.png) y, a continuación, seleccione un recurso.
+   >La opción Eliminar también está disponible cuando muestra los detalles del recurso al pulsar en un recurso o mostrando las propiedades de un recurso al pulsar Ver propiedades ![viewproperties](assets/viewproperties.png).
+
+1. Antes de eliminar el recurso, aparece un cuadro de diálogo de confirmación. Pulse **[!UICONTROL Eliminar]**.
+
+   >[!NOTE]
+   >
+   >Solo se elimina el recurso seleccionado, y los recursos dependientes no se eliminan. Para comprobar las referencias de un recurso, pulse ![referencias](assets/references.png) y, a continuación, seleccione un recurso.
    >
    >
-   >Si el recurso que intenta eliminar es un recurso secundario de otro recurso, no se elimina. Para eliminar un recurso de este tipo, elimine las referencias de este recurso de otros recursos y vuelva a intentarlo.
+   >Si el recurso que trata de eliminar es un recurso secundario de otro recurso, no se elimina. Para eliminar un recurso de este tipo, quite las referencias de este recurso de otros recursos y reinténtelo.
 
 ## Formularios adaptables protegidos {#protected-adaptive-forms}
 
-Puede habilitar la autenticación para los formularios a los que desee que accedan los usuarios seleccionados. Cuando se habilita la autenticación para los formularios, los usuarios ven una pantalla de inicio de sesión antes de acceder a ellos. Solo los usuarios con credenciales autorizadas pueden acceder a los formularios.
+Puede habilitar la autenticación para los formularios a los que desea que accedan determinados usuarios. Cuando habilita la autenticación en sus formularios, los usuarios ven una pantalla de inicio de sesión antes de acceder a ellos. Solo los usuarios con credenciales autorizadas pueden acceder a los formularios.
 
-Para habilitar la autenticación en los formularios:
+Para habilitar la autenticación para sus formularios:
 
-1. En el navegador, abra configMgr en la instancia de publicación.\
+1. En su explorador, abra configMgr en la instancia de publicación.\
    URL: `https://<hostname>:<PublishPort>/system/console/configMgr`
 
-1. En la Configuración de la consola web de Adobe Experience Manager, haga clic en **Servicio de autenticación Sling de Apache** para configurarlo.
-1. En el cuadro de diálogo Servicio de autenticación Apache Sling que aparece, utilice el botón **+** para agregar rutas.\
-   Cuando se agrega una ruta, el servicio de autenticación se activa para los formularios de esa ruta.
+1. En la configuración de la consola web de Adobe Experience Manager, haga clic en **Servicio de autenticación de Apache Sling** para configurarlo.
+1. En el cuadro de diálogo Servicio de autenticación de Apache Sling que aparece, utilice el botón **+** para agregar rutas.\
+   Cuando se añade una ruta, el servicio de autenticación se habilita para los formularios de esa ruta.

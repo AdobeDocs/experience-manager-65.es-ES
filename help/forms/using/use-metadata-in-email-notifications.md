@@ -1,5 +1,5 @@
 ---
-title: 'Usar metadatos en una notificación por correo electrónico '
+title: Usar metadatos en una notificación por correo electrónico
 seo-title: Use metadata in an email notification
 description: Usar metadatos para rellenar información en una notificación de correo electrónico del flujo de trabajo de formularios
 seo-description: Use metadata to populate information in a forms workflow email notification
@@ -11,7 +11,7 @@ exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 1%
+ht-degree: 19%
 
 ---
 
@@ -155,7 +155,7 @@ También puede utilizar metadatos personalizados en una notificación por correo
 
 ### Usar ECMAScript para agregar metadatos personalizados  {#use-ecmascript-to-add-custom-metadata}
 
-[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) es un lenguaje de secuencias de comandos. Se utiliza para secuencias de comandos del lado del cliente y aplicaciones de servidor. Realice los siguientes pasos para utilizar ECMAScript para agregar metadatos personalizados a una plantilla de correo electrónico:
+[ECMAScript es un lenguaje de script. ](https://en.wikipedia.org/wiki/ECMAScript) Se utiliza para scripts del lado del cliente y aplicaciones de servidor. Realice los siguientes pasos para utilizar ECMAScript para agregar metadatos personalizados a una plantilla de correo electrónico:
 
 1. Inicie sesión en CRX DE con una cuenta administrativa. La dirección URL es https://&#39;[server]:[puerto]&#39;/crx/de/index.jsp
 
@@ -185,14 +185,14 @@ También puede utilizar metadatos personalizados en una notificación por correo
 
    Si no especifica el título, el campo Metadatos personalizados muestra la ruta completa del archivo ECMAScript. Siga estos pasos para especificar un título significativo para la secuencia de comandos:
 
-   1. Expanda el nodo de secuencia de comandos, haga clic con el botón derecho en el botón **[!UICONTROL jcr:content]** y haga clic en **[!UICONTROL Mezclas]**.
+   1. Expanda el nodo del script, haga clic con el botón derecho en el nodo **[!UICONTROL jcr:content]** y haga clic en **[!UICONTROL Mixins]**.
    1. Mezcla de tipos:título en el cuadro de diálogo Editar mezclas y haga clic en **+**.
    1. Agregue una propiedad con los siguientes valores.
 
       | Nombre | jcr:title |
       |---|---|
       | Tipo | Cadena |
-      | Value | Especifique el título de la secuencia de comandos. Por ejemplo, metadatos personalizados para el titular de la directiva. El valor especificado se muestra en el paso asignar tarea. |
+      | Valor | Especifique el título de la secuencia de comandos. Por ejemplo, metadatos personalizados para el titular de la directiva. El valor especificado se muestra en el paso asignar tarea. |
 
 ### Usar un paquete OSGi y la interfaz Java para agregar metadatos personalizados {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
@@ -202,9 +202,9 @@ Para crear un paquete OSGi con la interfaz Java, agregue [SDK de cliente de AEM 
 
 1. Abra Eclipse IDE. Vaya a Archivo > Nuevo proyecto.
 
-1. En la pantalla Seleccionar un asistente, seleccione Maven Project y haga clic en Siguiente.
+1. En la pantalla Seleccionar un asistente, seleccione Proyecto Maven y haga clic en Siguiente.
 
-1. En el proyecto Nuevo maven, mantenga los valores predeterminados y haga clic en Siguiente. Seleccione un tipo de archivo y haga clic en Siguiente. Por ejemplo, maven-archetype-quickstart. Especifique ID de grupo, ID de artefacto, versión y paquete para el proyecto y haga clic en Finalizar. Se crea el proyecto.
+1. En este nuevo proyecto llamado Maven, mantenga los valores predeterminados y haga clic en Siguiente. Seleccione un arquetipo y haga clic en Siguiente; por ejemplo, maven-archetype-quickstart. Especifique el ID de grupo, el ID de artefacto, la versión y el paquete del proyecto y haga clic en Finalizar. El proyecto se ha creado.
 
 1. Abra el archivo pom.xml para editarlo y reemplace todo el contenido del archivo por lo siguiente:
 
@@ -244,7 +244,7 @@ Para crear un paquete OSGi con la interfaz Java, agregue [SDK de cliente de AEM 
    }
    ```
 
-1. Abra un símbolo del sistema y vaya al directorio que contiene el proyecto de paquete OSGi. Utilice el siguiente comando para crear el paquete OSGi:
+1. Abra un símbolo del sistema y vaya al directorio que contiene el proyecto del paquete OSGi. Utilice el siguiente comando para crear el paquete OSGi:
 
    `mvn clean install`
 

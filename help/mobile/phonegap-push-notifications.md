@@ -331,7 +331,7 @@ Cree la notificación y añada un texto de botón y una ruta de vínculo para el
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
-1. Seleccione el **Conexión Pushwoosh**. Haga clic en **Siguiente**. 
+1. Seleccione el **Conexión Pushwoosh**. Haga clic en **Siguiente**.
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 

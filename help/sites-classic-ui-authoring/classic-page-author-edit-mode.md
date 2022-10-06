@@ -1277,7 +1277,7 @@ Es posible especificar el nombre del elemento junto con un título y una descrip
 >
 >Consulte [Cargar previamente los campos del formulario con valores múltiples](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Botón de envío {#submit-button}
+### Botón Enviar {#submit-button}
 
 Este componente permite crear un botón de envío, con el texto predeterminado:
 

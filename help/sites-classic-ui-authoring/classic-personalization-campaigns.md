@@ -1,22 +1,21 @@
 ---
 title: Administración de campañas
-seo-title: Administración de campañas
+seo-title: Campaign Management
 description: La administración de campañas permite que los especialistas en marketing digital ofrezcan contenido personalizado y creen experiencias dedicadas para los visitantes. Le permite organizar sus campañas de marketing en Internet, correo electrónico y servicios móviles para interactuar con los clientes.
-seo-description: La administración de campañas permite que los especialistas en marketing digital ofrezcan contenido personalizado y creen experiencias dedicadas para los visitantes. Le permite organizar sus campañas de marketing en Internet, correo electrónico y servicios móviles para interactuar con los clientes.
+seo-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
 uuid: 202d614b-a607-45de-8c24-1ee66b230315
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: d1741525-a475-4a76-bd16-55318023495e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '628'
 ht-degree: 94%
 
 ---
-
 
 # Administración de campañas{#campaign-management}
 
@@ -29,8 +28,8 @@ Este documento describe los elementos diversos que componen las campañas. Tiene
 * [Teasers y estrategias](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
 * [Marketing por correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
 * [Páginas de aterrizaje](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
-* [Ofertas de destino](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
-* [Uso del administrador de campañas de marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
+* [Ofertas de Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
+* [Trabajo con Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
 * [Información acerca de la segmentación](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
 * [Configuración de la campaña](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
@@ -40,12 +39,12 @@ La administración de campañas consta de varios elementos:
 En AEM, las marcas son la unidad de nivel superior y forman una colección de 
 **Campañas**.
 
-* ****
-Campañas Una campaña es una colección de elementos individuales 
+* **Campañas**
+Una campaña es una colección de individuos 
 **Experiencias**.
 
-* ****
-ExperienciasEl contenido centrado forma las distintas experiencias, presentadas al visitante en 
+* **Experiencias**
+El contenido centrado forma las distintas experiencias, presentadas al visitante en 
 **Touchpoints**. Existen varios tipos de experiencia:
 
    * **Teasers**
@@ -96,4 +95,3 @@ ExperienciasEl contenido centrado forma las distintas experiencias, presentadas 
    Se puede acceder a MCM desde varias ubicaciones (denominadas **Campañas** o, por ejemplo, con la URL:
 
    `http://localhost:4502/libs/mcm/content/admin.html`
-

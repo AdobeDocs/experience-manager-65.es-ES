@@ -14,7 +14,7 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 source-git-commit: 923ee0e20a6e41c9493a77b179f93dd81ff91020
 workflow-type: tm+mt
 source-wordcount: '3683'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 <div class="preview">
 
-El Adobe ha lanzado un [instalador completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) con AEM 6.5 Forms Service Pack 12 (6.5.12.0) en JEE junto con los instaladores de parches. El instalador completo proporciona soporte para nuevas plataformas, mientras que el instalador de parches solo incluye correcciones de errores.
+El Adobe ha lanzado un [instalador completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) con AEM 6.5 Forms Service Pack 12 (6.5.12.0) en JEE junto con los instaladores de parches. El instalador completo proporciona soporte para nuevas plataformas, mientras que el instalador de parches solo incluye correcciones de errores.
 
 Si está realizando una instalación nueva o planea utilizar el software más reciente para su Forms AEM 6.5 en el entorno JEE, Adobe recomienda utilizar [AEM 6.5.12.0 Forms en el instalador completo de JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) lanzado el 3 de marzo de 2022 en lugar del instalador de Forms 6.5 AEM lanzado el 8 de abril de 2019.
 
@@ -611,13 +611,13 @@ Para conocer los requisitos adicionales, consulte:
 
 - Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server o Microsoft® Windows® 10
 - Procesador de 1 GHz o más rápido con soporte para PAE, NX y SSE2.
-- 1 GB de RAM para 32 bits o 2 GB de RAM para SO de 64 bits
+- 1 GB de RAM para 32 bits o 2 GB de RAM para SO de 64 bits;
 - 16 GB de espacio en disco para 32 o 20 GB de espacio en disco para SO de 64 bits
-- Memoria gráfica: 128 MB de GPU (se recomiendan 256 MB)
-- 2,35 GB de espacio disponible en disco duro
-- 1024 X 768 píxeles o buena resolución del monitor
-- Aceleración de hardware de vídeo (opcional)
-- Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC.
+- Memoria gráfica: 128 MB de GPU (se recomiendan 256 MB);
+- 2,35 GB de espacio disponible en disco duro;
+- 1024 X 768 píxeles de resolución de monitor o superior;
+- Aceleración de hardware de vídeo (opcional);
+- Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC;
 - Privilegios administrativos para instalar Designer.
 
 ### Adobe Acrobat y Adobe Reader {#adobe-acrobat-and-adobe-reader}

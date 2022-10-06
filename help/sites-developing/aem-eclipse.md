@@ -1,30 +1,29 @@
 ---
-title: AEM herramientas para desarrolladores de Eclipse
-seo-title: AEM herramientas para desarrolladores de Eclipse
-description: AEM herramientas para desarrolladores de Eclipse
-seo-description: nulo
+title: Herramientas para desarrolladores de AEM para Eclipse
+seo-title: AEM Developer Tools for Eclipse
+description: Herramientas para desarrolladores de AEM para Eclipse
+seo-description: null
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 00473769-c447-4966-a71e-117c669e0151
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 1%
+source-wordcount: '808'
+ht-degree: 3%
 
 ---
 
-
-# AEM herramientas para desarrolladores de Eclipse{#aem-developer-tools-for-eclipse}
+# Herramientas para desarrolladores de AEM para Eclipse{#aem-developer-tools-for-eclipse}
 
 ![](do-not-localize/chlimage_1-9.png)
 
 ## Información general {#overview}
 
-AEM Developer Tools para Eclipse es un complemento de Eclipse basado en el [complemento de Eclipse para Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) publicado con la licencia de Apache 2.
+AEM Developer Tools para Eclipse es un complemento de Eclipse basado en el [Complemento Eclipse para Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) publicado con la licencia de Apache 2.
 
 Ofrece varias funciones que facilitan el desarrollo de AEM:
 
@@ -34,40 +33,40 @@ Ofrece varias funciones que facilitan el desarrollo de AEM:
 * Inicio sencillo de AEM proyectos a través de un Asistente para la creación de proyectos específico.
 * Fácil edición de las propiedades JCR.
 
-## Requisitos {#requirements}
+## Requisitos  {#requirements}
 
 Antes de utilizar las herramientas para desarrolladores de AEM, debe:
 
-* Descargue e instale [Eclipse IDE para desarrolladores de Java EE](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM herramientas para desarrolladores admiten actualmente Eclipse Kepler o versiones más recientes
+* Descargar e instalar [Eclipse IDE para desarrolladores de Java EE](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM herramientas para desarrolladores admiten actualmente Eclipse Kepler o versiones más recientes
 
 * Se puede utilizar con AEM versión 5.6.1 o posterior
-* Configure la instalación de eclipse para asegurarse de que tiene al menos 1 gigabyte de memoria en pilas editando su archivo de configuración `eclipse.ini` tal como se describe en las [Preguntas frecuentes sobre Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
+* Configure la instalación de eclipse para asegurarse de que tiene al menos 1 gigabyte de memoria acumulada editando su `eclipse.ini` archivo de configuración tal como se describe en la sección [Preguntas frecuentes sobre Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
 
 >[!NOTE]
 >
->En macOS, debe hacer clic con el botón derecho en **Eclipse.app** y seleccionar **Mostrar contenido del paquete** para encontrar el `eclipse.ini`**.**
+>En macOS, debe hacer clic con el botón derecho en **Eclipse.app** y, a continuación, seleccione **Mostrar contenido del paquete** para encontrar su `eclipse.ini`**.**
 
 ## Instalación de las herramientas para desarrolladores de AEM para Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Una vez que haya cumplido los [requisitos](#requirements) anteriores, puede instalar el complemento de la siguiente manera:
+Una vez que haya cumplido la [requisitos](#requirements) anteriormente, puede instalar el complemento de la siguiente manera:
 
-1. Examine el [**AEM** Sitio Web de herramientas para desarrolladores](https://eclipse.adobe.com/aem/dev-tools/).
+1. Examine la [**AEM** Sitio web de herramientas para desarrolladores](https://eclipse.adobe.com/aem/dev-tools/).
 
-1. Copie el **Installation Link**.
+1. Copie el **Vínculo de instalación**.
 
    Tenga en cuenta que, de lo contrario, puede descargar un archivo en lugar de utilizar el vínculo de instalación. Esto permite la instalación sin conexión, pero de este modo se perderán las notificaciones de actualización automáticas.
 
-1. En Eclipse, abra el menú **Help**.
+1. En Eclipse, abra el **Ayuda** para abrir el Navegador.
 1. Haga clic en **Instalar nuevo software**.
 1. Haga clic en **Agregar...**.
-1. En **Name** escriba AEM Herramientas para desarrolladores.
+1. En **Nombre** escriba AEM herramientas para desarrolladores.
 1. En **Ubicación** copie la dirección URL de instalación.
 1. Haga clic en **Ok**.
-1. Compruebe los complementos **AEM** y **Sling**.
-1. Haga clic en **Siguiente**. 
-1. Haga clic en **Siguiente**. 
-1. Acepte los acuerdos de licencia y haga clic en **Finish**.
-1. Haga clic en **Yes** para reiniciar Eclipse.
+1. Marque ambas **AEM** y **Sling** complementos.
+1. Haga clic en **Siguiente**.
+1. Haga clic en **Siguiente**.
+1. Acepte los acuerdos de líncesis y haga clic en **Finalizar**.
+1. Haga clic en **Sí** para reiniciar Eclipse.
 
 ## Cómo importar proyectos existentes {#how-to-import-existing-projects}
 
@@ -75,7 +74,7 @@ Una vez que haya cumplido los [requisitos](#requirements) anteriores, puede inst
 >
 >Consulte [Cómo trabajar con un paquete en Eclipse cuando se descargó de AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
 
-## La perspectiva de AEM {#the-aem-perspective}
+## La perspectiva AEM {#the-aem-perspective}
 
 Las AEM herramientas de desarrollo para Eclipse se envían con una perspectiva que le ofrece control total sobre sus proyectos e instancias de AEM.
 
@@ -87,11 +86,11 @@ Las herramientas para desarrolladores de AEM para Eclipse incluyen un proyecto m
 
 Siga estos pasos para crear el proyecto de ejemplo:
 
-1. En el menú **File** > **New** > **Project**, vaya a la sección **AEM** y seleccione **AEM ejemplo de proyecto de varios módulos**.
+1. En el **Archivo** > **Nuevo** > **Proyecto** , vaya a la **AEM** y seleccione **AEM proyecto de módulo múltiple de muestra**.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
-1. Haga clic en **Siguiente**. 
+1. Haga clic en **Siguiente**.
 
    >[!NOTE]
    >
@@ -99,11 +98,11 @@ Siga estos pasos para crear el proyecto de ejemplo:
 
    ![chlimage_1-70](assets/chlimage_1-70a.png)
 
-1. Elija **com.adobe.granite.archetypes : sample-project-archetype : (número más alto)** en el menú y haga clic en **Siguiente**.
+1. Choose **com.adobe.granite.archetypes : sample-project-archetype : (número más alto)** en el menú y, a continuación, haga clic en **Siguiente**.
 
    ![chlimage_1-71](assets/chlimage_1-71a.png)
 
-1. Rellene un **Name**, **Group id** y un **Artifact id** para el proyecto de ejemplo. También puede optar por establecer algunas propiedades avanzadas.
+1. Rellene un **Nombre**, **ID del grupo** y **ID de artefacto** para el proyecto de ejemplo. También puede optar por establecer algunas propiedades avanzadas.
 
    ![chlimage_1-72](assets/chlimage_1-72a.png)
 
@@ -117,7 +116,7 @@ Siga estos pasos para crear el proyecto de ejemplo:
 
    ![chlimage_1-73](assets/chlimage_1-73a.png)
 
-1. Haga clic en **Finish**. Se crea la estructura del proyecto.
+1. Haga clic en **Finalizar**. Se crea la estructura del proyecto.
 
    >[!NOTE]
    >
@@ -130,8 +129,8 @@ Siga estos pasos para crear el proyecto de ejemplo:
 Para resolver dependencias no válidas y la definición del proyecto, siga estos pasos:
 
 1. Seleccione todos los proyectos creados.
-1. Haga clic con el botón derecho. En el menú **Maven** seleccione **Actualizar proyectos**.
-1. Compruebe **Forzar actualizaciones de instantáneas/versiones**.
+1. Haga clic con el botón derecho. En el menú **Maven** select **Actualizar proyectos**.
+1. Marque **Forzar actualizaciones de instantáneas/versiones**.
 1. Haga clic en **Aceptar**. Eclipse intenta descargar las dependencias requeridas.
 
 ### Habilitación del llenado automático de la biblioteca de etiquetas en archivos JSP {#enabling-tag-library-autocompletion-in-jsp-files}
@@ -154,13 +153,12 @@ Asegúrese de agregar la versión adecuada para la implementación de AEM.
 
 La herramienta oficial Apache Sling IDE para el sitio web Eclipse le proporciona información útil:
 
-* La [**Guía del usuario de Apache Sling IDE para Eclipse**](https://sling.apache.org/documentation/development/ide-tooling.html), esta documentación le guiará a través de los conceptos generales, la integración del servidor y las funcionalidades de implementación compatibles con las herramientas de desarrollo de AEM.
-* La [sección Resolución de problemas](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
-* La [Lista de problemas conocidos](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
+* La variable [**Herramientas Apache Sling IDE para Eclipse** Guía del usuario](https://sling.apache.org/documentation/development/ide-tooling.html), esta documentación le guiará a través de los conceptos generales, la integración del servidor y las funcionalidades de implementación compatibles con las herramientas de desarrollo de AEM.
+* La variable [Sección Resolución de problemas](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
+* La variable [Lista de problemas conocidos](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
-La siguiente documentación oficial de [Eclipse](https://eclipse.org/) puede ayudarle a configurar su entorno:
+El siguiente funcionario [Eclipse](https://eclipse.org/) la documentación puede ayudarle a configurar su entorno:
 
 * [Introducción a Eclipse](https://eclipse.org/users/)
 * [Sistema de ayuda del Eclipse Luna](https://help.eclipse.org/luna/index.jsp)
 * [Integración de Maven (m2eclipse)](https://www.eclipse.org/m2e/)
-

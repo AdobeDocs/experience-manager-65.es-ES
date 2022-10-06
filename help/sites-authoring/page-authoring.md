@@ -1,8 +1,8 @@
 ---
 title: Creación de páginas
-seo-title: Creación de páginas
+seo-title: Authoring Pages
 description: Tareas necesarias para crear una página de contenido
-seo-description: Tareas necesarias para crear una página de contenido
+seo-description: The tasks involved when authoring a content page
 uuid: 454d94aa-da27-45cb-bbb2-7bfcef103806
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '312'
 ht-degree: 100%
 
 ---
-
 
 # Creación de páginas{#authoring-pages}
 
@@ -50,4 +49,3 @@ Para ayudarle a crear páginas, el entorno de creación dispone de funciones com
 * **[Diseño interactivo](/help/sites-authoring/responsive-layout.md)** Este componente proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva.
 
 * **Buscar al escribir** En ciertos casos (por ejemplo, al seleccionar rutas de acceso en los cuadros de diálogo de edición), al buscar contenido mediante la interfaz de AEM, se muestran coincidencias dinámicas cuando se escribe la consulta.
-

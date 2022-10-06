@@ -1,39 +1,38 @@
 ---
-title: Personalización de la página de detalles de tarea
-seo-title: Personalización de la página de detalles de tarea
-description: Personalización de la página de detalles de la tarea en el espacio de trabajo de AEM Forms para modificar la información predeterminada que se muestra sobre una tarea.
-seo-description: Personalización de la página de detalles de la tarea en el espacio de trabajo de AEM Forms para modificar la información predeterminada que se muestra sobre una tarea.
+title: Personalización de la página de detalles de la tarea
+seo-title: Customizing the task details page
+description: Personalización de la página de detalles de tareas en el espacio de trabajo de AEM Forms para modificar la información predeterminada mostrada sobre una tarea.
+seo-description: How-to customize the task details page in AEM Forms workspace to modify the default information displayed about a task.
 uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 48c24442-22d2-4d1a-9462-0aba78340281
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
 
+# Personalización de la página de detalles de la tarea {#customizing-the-task-details-page}
 
-# Personalización de la página de detalles de tarea {#customizing-the-task-details-page}
+La página de detalles de la tarea contiene información sobre una tarea y sus procesos. Sin embargo, puede personalizar la página de detalles de la tarea para agregar o eliminar información.
 
-La página de detalles de tarea contiene información sobre una tarea y sus procesos. Sin embargo, puede personalizar la página de detalles de la tarea para agregar o eliminar información.
+Puede añadir la siguiente información a la página de detalles de la tarea:
 
-Puede agregar la siguiente información a la página de detalles de la tarea:
-
-* Información disponible en el objeto JSON de una tarea (sección Tarea en [área de trabajo de AEM Forms Descripción del objeto JSON](/help/forms/using/html-workspace-json-object-description.md))
-* Información disponible en el objeto JSON de una instancia de proceso (sección Procesar instancia en [Área de trabajo de AEM Forms Descripción del objeto JSON](/help/forms/using/html-workspace-json-object-description.md))
+* Información disponible en el objeto JSON de una tarea (sección Tarea de [Descripción del objeto JSON del espacio de trabajo de AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
+* Información disponible en el objeto JSON de una instancia de proceso (sección Instancia de proceso en [Descripción del objeto JSON del espacio de trabajo de AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
 
 Para personalizar la página de detalles de la tarea:
 
-1. Siga [Pasos genéricos para la personalización del espacio de trabajo de AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. Para mostrar cualquier información adicional, agregue los pares clave-valor correspondientes al archivo `translation.json` en `todo`block > `details`block > `app`block > [ `required`block].
+1. Seguir [Pasos genéricos para la personalización del espacio de trabajo de AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
+1. Para mostrar cualquier información adicional, agregue los pares de clave-valor correspondientes a la variable `translation.json` file at `todo`bloquear > `details`bloquear > `app`bloquear > [ `required`block].
 
-   El [ `required`bloque] hace referencia a los bloques disponibles, como el bloque de tarea para información de tarea, el bloque de proceso para información de proceso y el bloque de tareas actual para información de tareas pendientes.
+   La variable [ `required`block] hace referencia a bloques disponibles, como el bloque de tareas para información de tareas, el bloque de procesos para información de procesos y el bloque de tareas pendientes para información de tareas pendientes.
 
-   Por ejemplo, para agregar información sobre la selección de ruta requerida en la página de detalles de la tarea, puede agregar el siguiente par clave-valor en el bloque de tarea:
+   Por ejemplo, para añadir información sobre la selección de ruta requerida en la página de detalles de la tarea, puede añadir el siguiente par clave-valor en el bloque de tareas:
 
    ```json
    "todo" : {
@@ -54,11 +53,11 @@ Para personalizar la página de detalles de la tarea:
 
    >[!NOTE]
    >
-   >Añada los pares de clave-valor correspondientes para todos los idiomas admitidos.
+   >Agregue los pares de clave-valor correspondientes para todos los idiomas compatibles.
 
-1. Copie `/libs/ws/js/runtime/templates/taskdetails.html` en `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. Copiar `/libs/ws/js/runtime/templates/taskdetails.html` a `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-   Añada la nueva información a `/apps/ws/js/runtime/templates/taskdetails.html`. Por ejemplo:
+   Agregue la nueva información a `/apps/ws/js/runtime/templates/taskdetails.html`. Por ejemplo:
 
    ```css
    <div class="detailsContainer">
@@ -79,12 +78,12 @@ Para personalizar la página de detalles de la tarea:
    </div>
    ```
 
-1. Abra /apps/ws/js/registry.js para editar.
+1. Abra /apps/ws/js/registry.js para editarlo.
 
-   Busque y reemplace `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` por `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
+   Buscar y reemplazar `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` con `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
 
 >[!NOTE]
 >
->Para personalizar la página de detalles de la tarea con tareas creadas en la ficha **Proceso de Inicio** del espacio de trabajo de AEM Forms, agregue la nueva información a `/apps/ws/js/runtime/templates/startprocess.html`.
+>Para personalizar la página de detalles de la tarea con las tareas creadas en la variable **Iniciar proceso** en el espacio de trabajo de AEM Forms, añada la nueva información a `/apps/ws/js/runtime/templates/startprocess.html`.
 >
->Para agregar nuevos estilos a la información agregada en la página de detalles, modifique el archivo CSS mediante la sección *Cambios en la interfaz de usuario* en [Personalización del espacio de trabajo](changing-locale-user-interface.md).
+>Para añadir nuevos estilos a la información añadida en la página de detalles, modifique el archivo CSS utilizando la variable *Cambios en la interfaz de usuario* en [Personalización de Workspace](changing-locale-user-interface.md).

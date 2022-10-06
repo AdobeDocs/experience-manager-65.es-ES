@@ -11,7 +11,7 @@ exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1365'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ Los flujos de trabajo JEE de AEM Forms proporcionan herramientas para diseñar, 
 * Inicio de un proceso desde AEM Forms Workspace
 * Uso del servicio SOAP o RESTful
 * Envío de un formulario adaptable
-* Uso de la carpeta vigilada
+* El uso de la carpeta vigilada
 * Uso del correo electrónico
 
 Para obtener más información sobre la creación del proceso de flujo de trabajo JEE de AEM Forms, consulte [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).

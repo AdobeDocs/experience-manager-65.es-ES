@@ -1,81 +1,80 @@
 ---
 title: Etiqueta decorativa
-description: Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Para los desarrolladores, AEM ofertas claras y sencillas controlando las etiquetas de decoración que envuelven los componentes incluidos.
-translation-type: tm+mt
-source-git-commit: be1c0e21216b1014a36f88d13557f6e1d7a87c0a
+description: Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Para los desarrolladores, AEM tiene una lógica clara y sencilla para controlar las etiquetas de decoración que envuelven los componentes incluidos.
+exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
-
 # Etiqueta decorativa{#decoration-tag}
 
-Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Esto sirve principalmente para dos fines:
+Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Esto tiene dos propósitos principales:
 
-* Un componente solo se puede editar cuando se envuelve con un elemento HTML.
-* El elemento de ajuste se utiliza para aplicar clases HTML que proporcionan:
+* Un componente solo se puede editar cuando se ajusta con un elemento HTML.
+* El elemento envolvente se utiliza para aplicar clases de HTML que proporcionan:
 
-   * información del diseño
+   * información de diseño
    * información de estilo
 
-Para los desarrolladores, AEM ofertas claras y sencillas controlando las etiquetas de decoración que envuelven los componentes incluidos. La combinación de dos factores define si se procesa la etiqueta decorativa y cómo se procesa, en lo que esta página se sumergirá:
+Para los desarrolladores, AEM tiene una lógica clara y sencilla para controlar las etiquetas de decoración que envuelven los componentes incluidos. La combinación de dos factores define si se representa la etiqueta de decoración y cómo se hace, y en qué se sumergirá esta página:
 
 * El propio componente puede configurar su etiqueta de decoración con un conjunto de propiedades.
-* Las secuencias de comandos que incluyen componentes (HTL, JSP, dispatcher, etc.) pueden definir los aspectos de la etiqueta decorativa con parámetros de inclusión.
+* Las secuencias de comandos que incluyen componentes (HTL, JSP, Dispatcher, etc.) pueden definir los aspectos de la etiqueta de decoración con parámetros de inclusión.
 
 ## Recomendaciones {#recommendations}
 
-A continuación se ofrecen algunas recomendaciones generales sobre cuándo incluir el elemento envolvente que debería ayudar a evitar problemas inesperados:
+Estas son algunas recomendaciones generales sobre cuándo incluir el elemento envolvente que debería ayudar a evitar tener problemas inesperados:
 
-* La presencia del elemento envolvente no debe diferir entre los códigos WCMM (modo de edición o previsualización), las instancias (autor o publicación) o el entorno (ensayo o producción), de modo que el CSS y los JavaScript de la página funcionen de forma idéntica en todos los casos.
+* La presencia del elemento envolvente no debe diferir entre los WCMModes (modo de edición o previsualización), instancias (autor o publicación) o entorno (ensayo o producción), de modo que la CSS y los JavaScript de la página funcionen de forma idéntica en todos los casos.
 * El elemento wrapper debe agregarse a todos los componentes que sean editables, de modo que el editor de páginas pueda inicializarlos y actualizarlos correctamente.
-* En el caso de componentes no editables, el elemento envolvente puede evitarse si no cumple ninguna función determinada, de modo que el marcado resultante no esté inflado innecesariamente.
+* Para los componentes no editables, se puede evitar el elemento envolvente si no cumple ninguna función en particular, de modo que el marcado resultante no se infle innecesariamente.
 
 ## Controles de componentes {#component-controls}
 
 Se pueden aplicar las siguientes propiedades y nodos a los componentes para controlar el comportamiento de su etiqueta decorativa:
 
-* **`cq:noDecoration {boolean}`:** Esta propiedad se puede agregar a un componente y un valor verdadero fuerza AEM no generar ningún elemento envolvente sobre el componente.
+* **`cq:noDecoration {boolean}`:** Esta propiedad se puede añadir a un componente y un valor verdadero fuerza AEM no generar ningún elemento envolvente sobre el componente.
 
-* **`cq:htmlTag`node:** Este nodo se puede agregar bajo un componente y puede tener las siguientes propiedades:
+* **`cq:htmlTag`node :** Este nodo se puede añadir en un componente y puede tener las siguientes propiedades:
 
-   * **`cq:tagName {String}`:** Esto se puede usar para especificar una etiqueta HTML personalizada que se utilizará para ajustar los componentes en lugar del elemento DIV predeterminado.
-   * **`class {String}`:** Se puede utilizar para especificar los nombres de clase css que se añadirán al contenedor.
-   * Otros nombres de propiedad se agregarán como atributos HTML con el mismo valor de cadena que se proporciona.
+   * **`cq:tagName {String}`:** Se puede utilizar para especificar una etiqueta de HTML personalizada para usarla para ajustar los componentes en lugar del elemento DIV predeterminado.
+   * **`class {String}`:** Se puede utilizar para especificar nombres de clase css que se añadirán al envoltorio.
+   * Otros nombres de propiedad se agregarán como atributos de HTML con el mismo valor de cadena que se proporciona.
 
 ## Controles de secuencias de comandos {#script-controls}
 
-Sin embargo, el comportamiento del contenedor difiere según si se utiliza [HTL](/help/sites-developing/decoration-tag.md#htl) o [JSP](/help/sites-developing/decoration-tag.md#jsp) para incluir el elemento.
+Sin embargo, el comportamiento del envoltorio difiere dependiendo de si [HTL](/help/sites-developing/decoration-tag.md#htl) o [JSP](/help/sites-developing/decoration-tag.md#jsp) se utiliza para incluir el elemento .
 
 ### HTL {#htl}
 
-En general, el comportamiento del envolvente en HTL puede resumirse de la siguiente manera:
+En general, el comportamiento del envoltorio en HTL se puede resumir de la siguiente manera:
 
-* No se procesa ningún DIV de envoltorio de forma predeterminada (solo al hacer `data-sly-resource="foo"`).
-* Todos los modos wcm (deshabilitado, previsualización, edición tanto en la creación como en la publicación) se representan de forma idéntica.
+* No se procesa ningún DIV envolvente de forma predeterminada (al hacer `data-sly-resource="foo"`).
+* Todos los modos wcm (deshabilitado, vista previa, edición tanto en autor como en publicación) se representan de forma idéntica.
 
 El comportamiento del envoltorio también se puede controlar completamente.
 
 * El script HTL tiene control total sobre el comportamiento resultante de la etiqueta wrapper.
-* Las propiedades de componente (como `cq:noDecoration` y `cq:tagName`) también pueden definir la etiqueta de envoltorio.
+* Propiedades del componente (como `cq:noDecoration` y `cq:tagName`) también puede definir la etiqueta envolvente.
 
-Es posible controlar por completo el comportamiento de las etiquetas wrapper desde scripts HTL y su lógica asociada.
+Es posible controlar completamente el comportamiento de las etiquetas wrapper de los scripts HTL y su lógica asociada.
 
-Para obtener más información sobre el desarrollo en HTL, consulte la [documentación de HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html).
+Para obtener más información sobre el desarrollo en HTL, consulte la [Documentación de HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html).
 
 #### Árbol de decisiones {#decision-tree}
 
-Este árbol de decisión resume la lógica que determina el comportamiento de las etiquetas de envoltorio.
+Este árbol de decisión resume la lógica que determina el comportamiento de las etiquetas envolventes.
 
 ![chlimage_1-75](assets/chlimage_1-75a.png)
 
 #### Casos de uso {#use-cases}
 
-Los tres casos de uso siguientes proporcionan ejemplos de cómo se manejan las etiquetas de envoltorio y también ilustran lo sencillo que es controlar el comportamiento deseado de las etiquetas de envoltorio.
+En los tres casos de uso siguientes se proporcionan ejemplos de cómo se gestionan las etiquetas envolventes y también se ilustra cuán sencillo es controlar el comportamiento deseado de las etiquetas envolventes.
 
-En todos los ejemplos que se muestran a continuación se asume la siguiente estructura de contenido y componentes:
+En todos los ejemplos siguientes se asume la siguiente estructura de contenido y componentes:
 
 ```
 /content/test/
@@ -95,9 +94,9 @@ En todos los ejemplos que se muestran a continuación se asume la siguiente estr
       @class = "component-two"
 ```
 
-#### Caso de uso 1: Incluir un componente para la reutilización del código {#use-case-include-a-component-for-code-reuse}
+#### Caso de uso 1: Incluir un componente para su reutilización {#use-case-include-a-component-for-code-reuse}
 
-El caso de uso más típico es cuando un componente incluye otro componente por motivos de reutilización del código. En ese caso, no se desea que el componente incluido sea editable con su propia barra de herramientas y cuadro de diálogo, por lo que no se necesita ningún contenedor y se omitirá el `cq:htmlTag` del componente. Se puede considerar el comportamiento predeterminado.
+El caso de uso más típico es cuando un componente incluye otro componente por motivos de reutilización del código. En ese caso, el componente incluido no desea ser editable con su propia barra de herramientas y cuadro de diálogo, por lo que no se necesita un envoltorio y el `cq:htmlTag` se ignorarán. Esto puede considerarse el comportamiento predeterminado.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
@@ -107,13 +106,13 @@ Resultado en `/content/test.html`:
 
 **`Hello World!`**
 
-Un ejemplo sería un componente que incluye un componente de imagen principal para mostrar una imagen, normalmente en ese caso mediante el uso de un recurso sintético, que consiste en incluir un componente secundario virtual pasando a un recurso de datos de modo inteligente un objeto Map que represente todas las propiedades que el componente tendría.
+Un ejemplo sería un componente que incluye un componente de imagen principal para mostrar una imagen, normalmente en ese caso utilizando un recurso sintético, que consiste en incluir un componente secundario virtual pasando a un recurso de datos sly-resource un objeto Map que represente todas las propiedades que tendría el componente.
 
 #### Caso de uso 2: Incluir un componente editable {#use-case-include-an-editable-component}
 
-Otro caso de uso común es cuando los componentes de contenedor incluyen componentes secundarios editables, como un Contenedor de diseño. En este caso, cada niño incluido necesita imperativamente un envoltorio para que funcione el editor (a menos que esté explícitamente deshabilitado con la propiedad `cq:noDecoration`).
+Otro caso de uso común es cuando los componentes de contenedor incluyen componentes secundarios editables, como un contenedor de diseño. En este caso, cada elemento secundario incluido necesita imperativamente un envoltorio para que funcione el editor (a menos que esté deshabilitado explícitamente con la variable `cq:noDecoration` ).
 
-Dado que el componente incluido es en este caso un componente independiente, necesita un elemento envolvente para que funcione el editor y para definir su diseño y estilo que aplicar. Para déclencheur de este comportamiento, está la opción `decoration=true`.
+Dado que el componente incluido es en este caso un componente independiente, necesita un elemento envolvente para que funcione el editor y para definir su diseño y estilo para aplicar. Para déclencheur de este comportamiento, está el `decoration=true` .
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
@@ -125,10 +124,10 @@ Resultado en `/content/test.html`:
 
 #### Caso de uso 3: Comportamiento personalizado {#use-case-custom-behavior}
 
-Puede haber muchos casos complejos, que pueden lograrse fácilmente con la posibilidad de que HTL proporcione explícitamente:
+Puede haber muchos casos complejos, que se pueden lograr fácilmente con la posibilidad de que HTL proporcione explícitamente:
 
-* **`decorationTagName='ELEMENT_NAME'`** Para definir el nombre del elemento del contenedor.
-* **`cssClassName='CLASS_NAME'`** Definición de los nombres de clase CSS que se van a definir en él.
+* **`decorationTagName='ELEMENT_NAME'`** Para definir el nombre del elemento del envoltorio.
+* **`cssClassName='CLASS_NAME'`** Para definir los nombres de clase CSS que desea establecer en él.
 
 `one.html: <sly data-sly-resource="${'child' @ decorationTagName='aside', cssClassName='child'}"></sly>`
 
@@ -140,14 +139,13 @@ Resultado `/content/test.html`:
 
 ## JSP {#jsp}
 
-Al incluir un componente mediante `cq:includ`e o `sling:include`, el comportamiento predeterminado en AEM es utilizar una DIV para envolver el elemento. Sin embargo, este ajuste se puede personalizar de dos formas:
+Al incluir un componente mediante `cq:includ`e o `sling:include`, el comportamiento predeterminado en AEM es usar un DIV para envolver el elemento. Sin embargo, este ajuste se puede personalizar de dos formas:
 
-* Indique explícitamente AEM no ajustar el componente mediante `cq:noDecoration`.
-* Utilice una etiqueta HTML personalizada para ajustar el componente mediante `cq:htmlTag`/ `cq:tagName` o `decorationTagName`.
+* Indicar explícitamente AEM no envolver el componente mediante `cq:noDecoration`.
+* Utilice una etiqueta de HTML personalizada para ajustar el componente mediante `cq:htmlTag`/ `cq:tagName` o `decorationTagName`.
 
 ### Árbol de decisiones {#decision-tree-1}
 
-El siguiente árbol de decisiones ilustra cómo `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` y `decorationTagName` afectan el comportamiento del contenedor.
+El siguiente árbol de decisión ilustra cómo `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`y `decorationTagName` afecta al comportamiento del envoltorio.
 
-![climage_1-3](assets/chlimage_1-3a.jpeg)
-
+![Chlimage_1-3](assets/chlimage_1-3a.jpeg)

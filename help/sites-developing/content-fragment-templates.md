@@ -114,7 +114,7 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <th>Nombre</th>
      <th>Tipo</th>
-     <th>Value</th>
+     <th>Valor</th>
     </tr>
     <tr>
      <td><code>&lt;<em>template-name</em>&gt;</code></td>

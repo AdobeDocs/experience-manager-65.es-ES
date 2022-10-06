@@ -1,28 +1,27 @@
 ---
 title: Uso del editor de texto enriquecido para crear contenido
-seo-title: Uso del editor de texto enriquecido para crear contenido
+seo-title: Using the Rich Text Editor to Author Content
 description: Uso del editor de texto enriquecido para crear contenido
-seo-description: Uso del editor de texto enriquecido para crear contenido
+seo-description: Using the Rich Text Editor to Author Content
 uuid: 70f4d4b2-cbc6-4fef-9262-1696804008d8
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
-translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 70%
+source-wordcount: '260'
+ht-degree: 68%
 
 ---
 
-
 # Uso del editor de texto enriquecido para crear contenido {#use-rich-text-editor-to-author-content}
 
-El editor de texto enriquecido (RTE) es un bloque de creación básico para insertar contenido de texto en AEM. Constituye la base de diversos componentes., incluyendo:
+El editor de texto enriquecido (RTE) es un bloque de creación básico para insertar contenido de texto en AEM. Constituye la base de diversos componentes., incluido:
 
 * Texto
-* Imagen de texto
+* Texto Imagen
 * Tabla
 
 ## Edición local {#in-place-editing}
@@ -47,7 +46,7 @@ Esta barra de herramientas ofrece las opciones siguientes:
 
 ## Edición en pantalla completa {#full-screen-editing}
 
-Para los componentes basados en texto, al tocar el modo de pantalla completa desde la barra de herramientas ![](do-not-localize/screen_shot_2018-03-21at163236.png) se abre el editor de texto enriquecido y se oculta el resto del contenido de la página.
+Para los componentes basados en texto, pulsar el modo de pantalla completa desde la barra de herramientas ![](do-not-localize/screen_shot_2018-03-21at163236.png) abre el editor de texto enriquecido y oculta el resto del contenido de la página.
 
 El modo de pantalla completa muestra todas las opciones configuradas que puede utilizar para la creación. La disponibilidad es opciones [depende de la configuración](/help/sites-administering/rich-text-editor.md).
 
@@ -66,4 +65,4 @@ El modo de pantalla completa se cierra haciendo clic en el icono de minimizar.
 
 >[!NOTE]
 >
->Copiar listas anidadas de Microsoft Word en el editor de texto enriquecido puede dar resultados incoherentes y requerir ajuste manual después de pegar el texto en el editor de texto enriquecido.
+>Copiar listas anidadas de Microsoft Word en RTE puede arrojar resultados incoherentes y requerir ajuste manual después de pegar el texto en RTE.

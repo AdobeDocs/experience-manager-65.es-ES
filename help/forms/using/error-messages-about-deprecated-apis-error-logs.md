@@ -15,7 +15,7 @@ El problema se aplica a las siguientes versiones:
 
 * Experience Manager 6.5 Forms
 
-## Problema   {#issue}
+## Problema {#issue}
 
 * Los siguientes mensajes de error aparecen en el archivo error.log:
    ` *WARN* [default task-36] org.apache.jackrabbit.oak.spi.security.principal.AclGroupDeprecation use of deprecated java.acl.Group-related API - this method is going to be removed in future Oak releases - see OAK-7358 for details` (NPR-38282)

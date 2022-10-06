@@ -1,18 +1,17 @@
 ---
 title: Adobe Experience Manager (AEM) y las directrices de accesibilidad web
-description: Introducción a Adobe Experience Manager (AEM) y las directrices de accesibilidad web
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+description: Introducción a Adobe Experience Manager (AEM) y directrices de accesibilidad web
+exl-id: db8785b9-09eb-444a-addc-74c520e710a9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 70%
 
 ---
 
+# AEM y las directrices de accesibilidad web {#aem-and-the-web-accessibility-guidelines}
 
-# AEM y las directrices de accesibilidad web{#aem-and-the-web-accessibility-guidelines} 
-
-Existen muchas motivaciones sociales, económicas y legales para garantizar que el contenido web esté diseñado para ser lo más accesible posible a la audiencia de destino, sin importar la discapacidad o las limitaciones que pueda tener. La accesibilidad web con Adobe Experience Manager (AEM) es, por lo tanto, un aspecto cada vez más importante del buen diseño web.
+Existen muchas motivaciones sociales, económicas y legales para garantizar que el contenido web esté diseñado para ser lo más accesible posible a la audiencia de destino, sin importar la discapacidad o las limitaciones que pueda tener. Por lo tanto, la accesibilidad web con Adobe Experience Manager (AEM) es un aspecto cada vez más importante del buen diseño web.
 
 Crear sitios web y contenido accesibles con AEM impacto:
 
@@ -24,7 +23,7 @@ Crear sitios web y contenido accesibles con AEM impacto:
 
 * Los desarrolladores de plantillas también deben tener en cuenta estos problemas al implementar el diseño del sitio web.
 
-Adobe Experience Manager trabaja con las [directrices](#wcag-accessibility-guidelines) proporcionadas por el [consorcio World Wide Web](#world-wide-web-consortium).
+Adobe Experience Manager funciona con la variable [guías](#wcag-accessibility-guidelines) proporcionado por el [World Wide Web Consortium](#world-wide-web-consortium).
 
 >[!NOTE]
 >
@@ -48,11 +47,11 @@ Con Adobe Experience Manager, los autores de contenido o los propietarios de sit
 
 * [Crear contenido accesible](/help/sites-authoring/creating-accessible-content.md) detalla cómo se relacionan con AEM.
 
-* [Configuración del Editor de texto enriquecido para la producción de ](/help/sites-administering/rte-accessible-content.md)
-sitios accesibles Directrices sobre cómo los administradores pueden configurar AEM para producir contenido accesible.
+* [Configuración del Editor de texto enriquecido para producir sitios accesibles](/help/sites-administering/rte-accessible-content.md)
+Directrices sobre cómo los administradores pueden configurar AEM para producir contenido accesible.
 
-* [Creación de ](/help/forms/using/creating-accessible-adaptive-forms.md)
-formularios adaptables accesiblesAdobe Experience Manager (AEM) incluye una serie de funciones que mejoran el uso de formularios adaptables para usuarios con diferentes capacidades. La solución también ayuda a los autores de formularios a crear formularios adaptables accesibles.
+* [Creación de Forms adaptable accesible](/help/forms/using/creating-accessible-adaptive-forms.md)
+Adobe Experience Manager (AEM) incluye una serie de funciones y capacidades que mejoran la facilidad de uso de los formularios adaptables para los usuarios con diferentes capacidades. La solución también ayuda a los autores de formularios a crear formularios adaptables accesibles.
 
 >[!NOTE]
 >
@@ -61,4 +60,3 @@ formularios adaptables accesiblesAdobe Experience Manager (AEM) incluye una seri
 ## Accesibilidad en Adobe {#accessibility-at-adobe}
 
 Para obtener más información, visite el [Centro de recursos de accesibilidad de Adobe](https://www.adobe.com/accessibility/).
-

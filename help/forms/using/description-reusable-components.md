@@ -1,28 +1,27 @@
 ---
 title: Descripción de los componentes reutilizables
-seo-title: Descripción de los componentes reutilizables
+seo-title: Description of reusable components
 description: Una lista completa de componentes reutilizables con nombres de archivo y dependencias para ayudarle a integrar el componente de espacio de trabajo de AEM Forms en sus aplicaciones web.
-seo-description: Una lista completa de componentes reutilizables con nombres de archivo y dependencias para ayudarle a integrar el componente de espacio de trabajo de AEM Forms en sus aplicaciones web.
+seo-description: A complete list of reusable components with filenames and dependencies, to help you integrate AEM Forms workspace component in your web applications.
 uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: b8cb7233-3d9e-41d4-85c5-8e8c2481f89c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1231'
 ht-degree: 9%
 
 ---
 
-
 # Descripción de los componentes reutilizables {#description-of-reusable-components}
 
-El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizables](/help/forms/using/integrating-html-ws-components-web.md) que están organizados en una [estructura de carpetas](/help/forms/using/folder-structure.md) específica en CRX™. Cada componente tiene un modelo, una vista y un archivo de plantilla en la ubicación especificada en la estructura de carpetas, dependencias de JavaScript™ en otros archivos de componentes, eventos escuchados por el componente y objetos de JavaScript que déclencheur estos eventos en el espacio de trabajo de AEM Forms. Aquí se proporciona la lista completa de los componentes reutilizables con nombres de archivo constituyentes y dependencias.
+El espacio de trabajo de AEM Forms está compuesto por [reutilizable](/help/forms/using/integrating-html-ws-components-web.md) componentes organizados en una [estructura de carpetas](/help/forms/using/folder-structure.md) en CRX™. Cada componente tiene un modelo, una vista y un archivo de plantilla en la ubicación especificada en la estructura de carpetas, dependencias JavaScript™ de otros archivos de componentes, eventos escuchados por el componente y objetos JavaScript que déclencheur estos eventos en el espacio de trabajo de AEM Forms. La lista completa de componentes reutilizables con nombres de archivo y dependencias constituyentes se proporciona aquí.
 
-## TaskList {#tasklist}
+## Lista de tareas {#tasklist}
 
 <table>
  <tbody>
@@ -44,19 +43,19 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
     <ul>
      <li><p>UserSearch</p></li>
      <li><p>Tarea</p></li>
-     <li><p>Tarea en equipo</p></li>
+     <li><p>Teamtask</p></li>
     </ul></td>
   </tr>
   <tr>
    <td><p>Dependencias de JS</p></td>
    <td>
     <ul>
-     <li><p>modelo de tarea</p></li>
-     <li><p>modelo de tarea de equipo</p></li>
+     <li><p>modelo de tareas</p></li>
+     <li><p>modelo teamtask</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>filterSelected - modelo de lista de tareas</p></li>
@@ -69,7 +68,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 
 >[!NOTE]
 >
->Este componente se puede utilizar independientemente del espacio de trabajo de AEM Forms, siempre que se utilice el déclencheur filterevento seleccionado para este componente desde la aplicación personalizada.
+>Este componente se puede utilizar de forma independiente del espacio de trabajo de AEM Forms, siempre que filtre el déclencheurEvento seleccionado para este componente desde la aplicación personalizada.
 
 ## Tarea {#task}
 
@@ -100,11 +99,11 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
    <td>
     <ul>
-     <li><p>submitComplete: modelo de tarea</p></li>
-     <li><p>Rechazar - modelo de tarea</p></li>
+     <li><p>submitComplete - modelo de tareas</p></li>
+     <li><p>Rechazar - modelo de tareas</p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -112,7 +111,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 
 >[!NOTE]
 >
->Workspace llama a la función fetchTasks del modelo TaskList para crear modelos de Tarea para este componente.
+>Workspace llama a la función fetchTasks del modelo TaskList para crear modelos de Task para este componente.
 
 ## FilterList {#filterlist}
 
@@ -139,10 +138,10 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
    <td>
     <ul>
-     <li><p>buscado - modelo de lista de tareas </p></li>
+     <li><p>fetch - modelo de lista de tareas </p></li>
      <li><p>quitar - modelo de lista de tareas </p></li>
      <li><p>updateQueue - modelo de lista de tareas </p></li>
      <li><p>refreshQueue: modelo de lista de tareas </p></li>
@@ -186,7 +185,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
  </tbody>
 </table>
 
-## TeamQueues {#teamqueues}
+## Colas de equipo {#teamqueues}
 
 <table>
  <tbody>
@@ -211,10 +210,10 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
    <td>
     <ul>
-     <li><p>buscado - modelo de lista de tareas </p></li>
+     <li><p>fetch - modelo de lista de tareas </p></li>
      <li><p>quitar - modelo de lista de tareas </p></li>
      <li><p>updateQueue - modelo de lista de tareas </p></li>
      <li><p>teamQueuesFetched - modelo de lista de tareas </p></li>
@@ -247,12 +246,12 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>Dependencias de JS</p> </td>
    <td>
     <ul>
-     <li><p>Extiende : vista de filtro</p> </li>
-     <li><p>Campo: queue :{ name, qid, isDefault, type }</p> </li>
-     <li><p>Campo: consulta: string</p> </li>
-     <li><p>Campo: parentView: vista de lista de filtros</p> </li>
-     <li><p>Campo: parentModel : modelo de lista de tareas</p> </li>
-     <li><p>Campo: utilidad</p> </li>
+     <li><p>Amplía : vista de filtro</p> </li>
+     <li><p>Campo : queue :{ name, qid, isDefault, type }</p> </li>
+     <li><p>Campo : consulta : string</p> </li>
+     <li><p>Campo : parentView : vista de lista de filtros</p> </li>
+     <li><p>Campo : parentModel : modelo de lista de tareas</p> </li>
+     <li><p>Campo : utilidad</p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -266,7 +265,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 >
 >TeamFilter obtiene el evento que indica qué tarea se ha seleccionado del componente TaskList. Aunque estos componentes comparten la clase de modelo, no hay otra dependencia.
 
-## Detalles de tarea {#taskdetails}
+## Detalles de la tarea {#taskdetails}
 
 <table>
  <tbody>
@@ -284,41 +283,41 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
   </tr>
   <tr>
    <td><p>Requiere componentes</p> </td>
-   <td><p>La mayoría de las clases de Utilidad</p> </td>
+   <td><p>La mayoría de las clases de utilidades</p> </td>
   </tr>
   <tr>
    <td><p>Dependencias de JS</p> </td>
    <td>
     <ul>
      <li><p>processinstancehistory.html</p> </li>
-     <li><p>utilidad de procesamiento de formularios</p> </li>
-     <li><p>utilidad de notas</p> </li>
+     <li><p>utilidad de renderización</p> </li>
+     <li><p>utilidad notas</p> </li>
      <li><p>utilidad de archivos adjuntos</p> </li>
      <li><p>utilidad taskactions</p> </li>
      <li><p>utilidad de historial</p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p> </td>
    <td>
     <ul>
-     <li><p>reenviado - modelo de tarea</p> </li>
-     <li><p>compartido: modelo de tarea</p> </li>
-     <li><p>consultado - modelo de tarea</p> </li>
-     <li><p>rechazado - modelo de tarea</p> </li>
+     <li><p>reenviado: modelo de tareas</p> </li>
+     <li><p>shared - task model</p> </li>
+     <li><p>consultado - modelo de tareas</p> </li>
+     <li><p>rechazado - modelo de tareas</p> </li>
      <li><p>abandonado - modelo de tarea</p> </li>
-     <li><p>desbloqueado - modelo de tarea</p> </li>
-     <li><p>bloqueado - modelo de tarea</p> </li>
-     <li><p>reclamado - modelo de tarea</p> </li>
+     <li><p>desbloqueado - modelo de tareas</p> </li>
+     <li><p>bloqueado - modelo de tareas</p> </li>
+     <li><p>clamado - modelo de tarea</p> </li>
      <li><p>cambio:selección de tareas - modelo de lista de tareas</p> </li>
-     <li><p>change:formUrl - modelo de tarea</p> </li>
-     <li>attachmentURLFetched - modelo de tarea</li>
+     <li><p>change:formUrl - modelo de tareas</p> </li>
+     <li>attachmentURLFetched - modelo de tareas</li>
     </ul>
     <ul>
-     <li>newAttachment - modelo de tarea</li>
-     <li><p>taskHistoryFetched - modelo de tarea</p> </li>
-     <li>prepareForSubmitComplete: modelo de tarea</li>
-     <li><p>submitComplete: modelo de tarea</p> </li>
+     <li>newAttachment - modelo de tareas</li>
+     <li><p>taskHistoryFetched - modelo de tareas</p> </li>
+     <li>prepareForSubmitComplete - modelo de tareas</li>
+     <li><p>submitComplete - modelo de tareas</p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -338,7 +337,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
   </tr>
   <tr>
    <td><p>Plantilla</p></td>
-   <td><p>startprocess.html (en la carpeta route)</p></td>
+   <td><p>startProcess.html (en la carpeta de ruta)</p></td>
   </tr>
   <tr>
    <td><p>Requiere componentes</p></td>
@@ -348,16 +347,16 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>Dependencias de JS</p></td>
    <td>
     <ul>
-     <li><p>modelo favoritecategoryFactory</p></li>
-     <li><p>modelo allcategoryFactory</p></li>
+     <li><p>modelo favoritecategoryfactory</p></li>
+     <li><p>modelo allcategoryfactory</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>allStartpointsFetched - modelo de lista de categorías </p></li>
-     <li><p>agregar - modelo de lista de categorías </p></li>
+     <li><p>add - categorylist model </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -365,7 +364,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 
 >[!NOTE]
 >
->Este componente utiliza clases de modelo de otros componentes como StartPointList, StartPoint y Tarea. Además de esta dependencia, CategoryList puede utilizarse de forma independiente.
+>Este componente utiliza clases de modelo de otros componentes, como StartPointList, StartPoint y Task. Además de esta dependencia, CategoryList puede utilizarse de forma independiente.
 
 ## Categoría {#category}
 
@@ -396,12 +395,12 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
    <td>
     <ul>
-     <li><p>cambiado - modelo de categoría </p></li>
+     <li><p>modificado: modelo de categoría </p></li>
      <li><p>childrenFetched - modelo de categoría </p></li>
-     <li><p>categoría:seleccionada - modelo de lista de categorías </p></li>
+     <li><p>categoría:seleccionado - modelo de lista de categorías </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -421,7 +420,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
   </tr>
   <tr>
    <td><p>Plantilla</p></td>
-   <td><p>startprocess.html (en la carpeta route)</p></td>
+   <td><p>startProcess.html (en la carpeta de ruta)</p></td>
   </tr>
   <tr>
    <td><p>Requiere componentes</p></td>
@@ -431,23 +430,23 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>Dependencias de JS</p></td>
    <td>
     <ul>
-     <li><p>modelo de categoría</p></li>
-     <li><p>modelo favoritecategoryFactory</p></li>
-     <li><p>modelo allcategoryFactory</p></li>
-     <li><p>vista de startpoint</p></li>
+     <li><p>modelo category</p></li>
+     <li><p>modelo favoritecategoryfactory</p></li>
+     <li><p>modelo allcategoryfactory</p></li>
+     <li><p>vista de punto de inicio</p></li>
      <li><p>modelo startpointlist</p></li>
      <li><p>modelo startpoint</p></li>
-     <li><p>modelo de tarea</p></li>
-     <li><p>modelo de tarea</p></li>
+     <li><p>modelo de tareas</p></li>
+     <li><p>modelo de tareas</p></li>
      <li><p>modelo de lista de tareas</p></li>
-     <li><p>modelo de tarea de equipo</p></li>
+     <li><p>modelo teamtask</p></li>
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
    <td>
     <ul>
-     <li><p>categoría:seleccionada - modelo de lista de categorías </p></li>
+     <li><p>categoría:seleccionado - modelo de lista de categorías </p></li>
      <li><p>allStartpointsFetched - modelo de lista de categorías </p></li>
     </ul></td>
   </tr>
@@ -456,7 +455,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 
 >[!NOTE]
 >
->Los componentes StartPointList y CategoryList comparten la clase de modelo, por lo que la primera depende de la segunda. CategoryList accede a la información sobre los puntos de inicio de la categoría que se muestran. Para utilizar StartPointList de forma independiente, simule el déclencheur de evento de CategoryList.
+>Los componentes StartPointList y CategoryList comparten la clase modelo, por lo que la primera depende de la segunda. CategoryList accede a la información sobre los puntos de inicio de la categoría que se muestran. Para utilizar StartPointList de forma independiente, simule el déclencheur de evento de CategoryList.
 
 ## StartPoint {#startpoint}
 
@@ -480,11 +479,11 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
   </tr>
   <tr>
    <td><p>Dependencias de JS</p></td>
-   <td><p>modelo de tarea</p></td>
+   <td><p>modelo de tareas</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
-   <td><p>change - modelo de punto de partida </p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
+   <td><p>change - modelo de punto de inicio </p></td>
   </tr>
  </tbody>
 </table>
@@ -509,7 +508,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>Requiere componentes</p> </td>
    <td>
     <ul>
-     <li><p>La mayoría de las clases de Utilidad</p> </li>
+     <li><p>La mayoría de las clases de utilidades</p> </li>
      <li><p>UserSearch</p> </li>
     </ul> </td>
   </tr>
@@ -517,31 +516,31 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>Dependencias de JS</p> </td>
    <td>
     <ul>
-     <li><p>modelo de categoría</p> </li>
-     <li><p>modelo favoritecategoryFactory</p> </li>
-     <li><p>modelo allcategoryFactory</p> </li>
-     <li><p>utilidad de procesamiento de formularios</p> </li>
-     <li><p>utilidad de notas</p> </li>
+     <li><p>modelo category</p> </li>
+     <li><p>modelo favoritecategoryfactory</p> </li>
+     <li><p>modelo allcategoryfactory</p> </li>
+     <li><p>utilidad de renderización</p> </li>
+     <li><p>utilidad notas</p> </li>
      <li><p>utilidad de archivos adjuntos</p> </li>
      <li><p>utilidad taskactions</p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p> </td>
    <td>
     <ul>
-     <li><p>categoría:seleccionada - modelo de lista de categorías</p> </li>
-     <li><p>change:alledTask - modelo startpointlist</p> </li>
-     <li><p>change:formUrl - modelo de tarea</p> </li>
-     <li><p>punto de inicio:seleccionado - modelo de lista de puntos de inicio</p> </li>
-     <li><p>reenviado - modelo de tarea</p> </li>
+     <li><p>categoría:seleccionado - modelo de lista de categorías</p> </li>
+     <li><p>change:invocaTask - modelo startpointlist</p> </li>
+     <li><p>change:formUrl - modelo de tareas</p> </li>
+     <li><p>punto de inicio:seleccionado: modelo de lista de inicio</p> </li>
+     <li><p>reenviado: modelo de tareas</p> </li>
      <li><p>abandonado - modelo de tarea</p> </li>
-     <li><p>desbloqueado - modelo de tarea</p> </li>
-     <li><p>bloqueado - modelo de tarea</p> </li>
-     <li>attachmentURLFetched - modelo de tarea</li>
-     <li>newAttachment - modelo de tarea</li>
-     <li>prepareForSubmitComplete: modelo de tarea </li>
-     <li><p>submitComplete: modelo de tarea</p> </li>
+     <li><p>desbloqueado - modelo de tareas</p> </li>
+     <li><p>bloqueado - modelo de tareas</p> </li>
+     <li>attachmentURLFetched - modelo de tareas</li>
+     <li>newAttachment - modelo de tareas</li>
+     <li>prepareForSubmitComplete - modelo de tareas </li>
+     <li><p>submitComplete - modelo de tareas</p> </li>
      <li><p>allStartpointsFetched - modelo de lista de categorías</p> </li>
     </ul> </td>
   </tr>
@@ -550,7 +549,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 
 >[!NOTE]
 >
->Los componentes StartProcess y StartPointList comparten la clase de modelo. Este componente resulta relevante cuando selecciona un punto de partida en StartPointList.
+>Los componentes StartProcess y StartPointList comparten la clase de modelo. Este componente se vuelve relevante si selecciona un punto de inicio de StartPointList.
 
 ## ProcessNameList {#processnamelist}
 
@@ -566,7 +565,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
   </tr>
   <tr>
    <td><p>Plantilla</p></td>
-   <td><p>tracking.html (en la carpeta route)</p></td>
+   <td><p>tracking.html (en la carpeta de ruta)</p></td>
   </tr>
   <tr>
    <td><p>Requiere componentes</p></td>
@@ -577,12 +576,12 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>modelo processname</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
    <td>
     <ul>
-     <li><p>add - modelo processnamelist </p></li>
-     <li><p>buscado:nombreproceso - modelo nombredeproceso </p></li>
-     <li><p>change - modelo de lista de nombres de procesos </p></li>
+     <li><p>add - processnamelist modelo </p></li>
+     <li><p>fetched:nombreproceso - modelo nombreproceso </p></li>
+     <li><p>change - modelo processnamelist </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -590,7 +589,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 
 >[!NOTE]
 >
->ProcessNameList no depende de otros componentes. Sin embargo, de forma interna depende de la clase de modelo ProcessInstanceList que, a su vez, depende de otros componentes. Por lo tanto, ProcessNameList utiliza muchas clases de modelo como ProcessInstanceList, ProcessInstance, TaskList, Teamtask y Tarea. Además de estas dependencias, ProcessNameList puede utilizarse de forma independiente.
+>ProcessNameList no depende de otros componentes. Sin embargo, depende internamente de la clase del modelo ProcessInstanceList que a su vez depende de otros componentes. Por lo tanto, ProcessNameList utiliza muchas clases de modelo como ProcessInstanceList, ProcessInstance, TaskList, Teamtask y Task. Además de estas dependencias, ProcessNameList puede utilizarse de forma independiente.
 
 ## ProcessName {#processname}
 
@@ -602,7 +601,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
   </tr>
   <tr>
    <td><p>Ver</p></td>
-   <td><p>nombreproceso (en nombredeproceso.js)</p></td>
+   <td><p>nombreproceso (en processnamelist.js)</p></td>
   </tr>
   <tr>
    <td><p>Plantilla</p></td>
@@ -617,8 +616,8 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>modelo processinstancelist</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
-   <td><p>change - modelo processname </p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
+   <td><p>change - modelo de nombre de proceso </p></td>
   </tr>
  </tbody>
 </table>
@@ -637,7 +636,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
   </tr>
   <tr>
    <td><p>Plantilla</p></td>
-   <td><p>tracking.html (en la carpeta route)</p></td>
+   <td><p>tracking.html (en la carpeta de ruta)</p></td>
   </tr>
   <tr>
    <td><p>Requiere componentes</p></td>
@@ -648,11 +647,11 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>modelo processname</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>nombreproceso:seleccionado - modelo de lista de nombres de procesos </p></li>
-     <li><p>nombreproceso:instancesfetched - modelo processnamelist </p></li>
+     <li><p>nombreproceso:instancesfetched - modelo de lista de nombres de procesos </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -660,7 +659,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 
 >[!NOTE]
 >
->ProcessInstanceList espera un evento de ProcessNameList que indica el nombre del proceso para recuperar y mostrar instancias. Para utilizar ProcessInstanceList de forma independiente, simule el déclencheur de evento por separado.
+>ProcessInstanceList espera un evento de ProcessNameList que indica el nombre del proceso para recuperar y mostrar instancias. Para utilizar ProcessInstanceList de forma independiente, simule el déclencheur de eventos por separado.
 
 ## ProcessInstance {#processinstance}
 
@@ -672,7 +671,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
   </tr>
   <tr>
    <td><p>Ver</p></td>
-   <td><p>nombreproceso dentro de processnamelist.js</p></td>
+   <td><p>nombre de proceso dentro de nombelist.js</p></td>
   </tr>
   <tr>
    <td><p>Plantilla</p></td>
@@ -687,8 +686,8 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>modelo de lista de tareas</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
-   <td><p>change - modelo de instancia de proceso </p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
+   <td><p>change - process, modelo de instancia </p></td>
   </tr>
  </tbody>
 </table>
@@ -722,12 +721,12 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
     </ul></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
    <td>
     <ul>
      <li><p>nombreproceso:seleccionado - modelo de lista de nombres de procesos </p></li>
-     <li><p>processinstance:selected - modelo processinstancelist </p></li>
-     <li><p>TasksFetched - modelo de instancia de proceso </p></li>
+     <li><p>processinstance:selected - processinstancelist modelo </p></li>
+     <li><p>tasksFetched - modelo de instancia de proceso </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -735,9 +734,9 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 
 >[!NOTE]
 >
->ProcessInstanceHistory espera un evento de ProcessInstanceList que indica qué historial de instancias de proceso se va a mostrar. Además de esta dependencia, el componente se puede utilizar de forma independiente.
+>ProcessInstanceHistory espera un evento de ProcessInstanceList que indique qué historial de instancias de proceso se va a mostrar. Además de esta dependencia, el componente se puede utilizar de forma independiente.
 
-## OutofOffice {#outofoffice}
+## Fuera de oficina {#outofoffice}
 
 <table>
  <tbody>
@@ -759,15 +758,15 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
   </tr>
   <tr>
    <td><p>Dependencias de JS</p> </td>
-   <td><p>vista usersearch</p> </td>
+   <td><p>vista de búsqueda de usuarios</p> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p> </td>
    <td>
     <ul>
-     <li><p>outOfOfficeSettingsFetched - modelo de outtofoffice</p> </li>
-     <li><p>outOfOfficeSettingsSaved - modelo de outtofoffice</p> </li>
-     <li><p>processFetched - modelo de OUTOFoffice</p> </li>
+     <li><p>outOfOfficeSettingsFetched - modelo de fuera de la oficina</p> </li>
+     <li><p>outOfOfficeSettingsSaved - modelo de oficina externa</p> </li>
+     <li><p>processesFetched - modelo de outfoffice</p> </li>
      <li><p>principalSelected - vista de búsqueda principal</p> </li>
     </ul> </td>
   </tr>
@@ -800,17 +799,17 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
   </tr>
   <tr>
    <td><p>Dependencias de JS</p> </td>
-   <td><p>vista usersearch</p> </td>
+   <td><p>vista de búsqueda de usuarios</p> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p> </td>
    <td>
     <ul>
      <li><p>queueAccessGranted - modelo sharequeue</p> </li>
      <li><p>queueAccessRequested - modelo sharequeue</p> </li>
-     <li><p>approvedUsersFetched - modelo sharequeue</p> </li>
+     <li><p>allowedUsersFetched - modelo sharequeue</p> </li>
      <li>accessibleUsersFetched - modelo sharequeue</li>
-     <li><p>queueAccessRevected - modelo sharequeue</p> </li>
+     <li><p>queueAccessRevewed - modelo sharequeue</p> </li>
      <li><p>queueAccessRemoved - modelo sharequeue</p> </li>
      <li><p>principalSelected - vista de búsqueda principal</p> </li>
     </ul> </td>
@@ -847,11 +846,11 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
    <td>
     <ul>
-     <li><p>PreferencesFetched - modelo de configuración </p></li>
-     <li><p>SettingUpdated: modelo uisettings </p></li>
+     <li><p>preferencias recuperadas: modelo de configuración de usuario </p></li>
+     <li><p>settingUpdated: modelo de configuración de usuario </p></li>
     </ul></td>
   </tr>
  </tbody>
@@ -859,9 +858,9 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
 
 >[!NOTE]
 >
->UISettings se puede utilizar de forma independiente.
+>UISettings se puede usar de forma independiente.
 
-## AppNavigation {#appnavigation}
+## Navegación de aplicaciones {#appnavigation}
 
 <table>
  <tbody>
@@ -921,11 +920,11 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p> </td>
    <td>
     <ul>
      <li>userImageUrlFetched - modelo userinfo</li>
-     <li>sessionRenewed - modelo userinfo <br /> </li>
+     <li>sessionRenewed: modelo userinfo <br /> </li>
      <li>sessionExpired - modelo userinfo </li>
     </ul> </td>
   </tr>
@@ -961,8 +960,8 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p></td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p></td>
-   <td><p>newWsError - modelo de wserror </p></td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p></td>
+   <td><p>newWsError - modelo wserror </p></td>
   </tr>
  </tbody>
 </table>
@@ -992,7 +991,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p> </td>
    <td>
     <ul>
      <li>principalSearched - modelo de búsqueda principal</li>
@@ -1027,8 +1026,8 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td><p>ND</p> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
-   <td><p>templateFetched - modelo de plantilla de búsqueda</p> </td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p> </td>
+   <td><p>templateFetched- searchtemplate modelo</p> </td>
   </tr>
  </tbody>
 </table>
@@ -1047,7 +1046,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
   </tr>
   <tr>
    <td><p>Plantilla</p> </td>
-   <td><p>tracking.html (en la carpeta route)</p> </td>
+   <td><p>tracking.html (en la carpeta de ruta)</p> </td>
   </tr>
   <tr>
    <td><p>Requiere componentes</p> </td>
@@ -1055,10 +1054,10 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
   </tr>
   <tr>
    <td><p>Dependencias de JS</p> </td>
-   <td><p>modelo de plantilla de búsqueda</p> </td>
+   <td><p>modelo searchtemplate</p> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p> </td>
    <td><p>change - searchtemplatelist modelo</p> </td>
   </tr>
  </tbody>
@@ -1089,7 +1088,7 @@ El espacio de trabajo de AEM Forms está compuesto por [componentes reutilizable
    <td>ND<br /> </td>
   </tr>
   <tr>
-   <td><p>Eventos escuchados (nombre del Evento - Déclencheur)</p> </td>
+   <td><p>Eventos escuchados (Nombre del evento - Déclencheur)</p> </td>
    <td><p>searchTemplate:selected - modelo de plantilla de búsqueda</p> </td>
   </tr>
  </tbody>

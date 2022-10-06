@@ -1,8 +1,8 @@
 ---
 title: Publicar carpetas en Brand Portal
-seo-title: Publicar carpetas en Brand Portal
+seo-title: Publish folders to Brand Portal
 description: Obtenga información sobre cómo publicar y cancelar la publicación de carpetas en Brand Portal.
-seo-description: Obtenga información sobre cómo publicar y cancelar la publicación de carpetas en Brand Portal.
+seo-description: Learn how to publish and unpublish folders to Brand Portal.
 uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -15,7 +15,7 @@ role: User
 exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '566'
 ht-degree: 38%
 
 ---
@@ -30,7 +30,7 @@ Si realiza las modificaciones posteriores al recurso o la carpeta originales en 
 
 ## Publicar carpetas en Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. En la interfaz de AEM Assets, pase el ratón sobre la carpeta que quiera y seleccione la opción **Publicar** en las acciones rápidas.
+1. En la interfaz de AEM Assets, pase el ratón sobre la carpeta que quiera y seleccione **Publicación** de las acciones rápidas.
 
    Como alternativa, seleccione la carpeta deseada y siga los pasos adicionales.
 
@@ -40,10 +40,10 @@ Si realiza las modificaciones posteriores al recurso o la carpeta originales en 
 
    Para publicar las carpetas seleccionadas en Brand Portal, haga una de las acciones siguientes:
 
-   * En la barra de herramientas, seleccione **Publicación rápida**. A continuación, en el menú, seleccione **Publicar en Brand Portal**.
+   * En la barra de herramientas, seleccione **Publicación rápida**. A continuación, en el menú , seleccione **Publicar en Brand Portal**.
 
    * En la barra de herramientas, seleccione **Administrar publicación**.
-   1. En **Action** seleccione **Publicar en Brand Portal**, en **Programación** seleccione **Ahora** y haga clic en **Siguiente.**
+   1. De **Acción** select **Publicar en Brand Portal**, desde **Programación** select **Ahora** y haga clic en **Siguiente.**
    1. Confirme su selección en **Ámbito** y haga clic en **Publicar en Brand Portal**.
 
    Aparece un mensaje que indica que la carpeta se ha puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver la carpeta publicada.
@@ -52,8 +52,8 @@ Si realiza las modificaciones posteriores al recurso o la carpeta originales en 
 
    Para programar el flujo de trabajo de publicación en Brand Portal de las carpetas de recursos para una fecha u hora posterior:
 
-   1. Una vez que haya seleccionado los recursos o las carpetas que desea publicar, seleccione **Administrar publicación** en la barra de herramientas de la parte superior.
-   1. En **Action** seleccione **Publicar en Brand Portal**, en **Programación** seleccione **Más adelante**.
+   1. Una vez que haya seleccionado los recursos o carpetas que desea publicar, seleccione **Administrar publicación** en la barra de herramientas de la parte superior.
+   1. De **Acción** select **Publicar en Brand Portal**, desde **Programación** select **Más tarde**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
@@ -82,7 +82,7 @@ Tiene la opción de cancelar la publicación de carpetas de Brand Portal rápida
    Para cancelar la publicación de la carpeta deseada rápidamente desde Brand Portal:
 
    1. En la barra de herramientas, seleccione **Administrar publicación**.
-   1. En **Action** seleccione **Cancelar publicación de Brand Portal**, en **Scheduling** seleccione **Now** y haga clic en **Siguiente.**
+   1. De **Acción** select **Cancelar publicación desde Brand Portal**, desde **Programación** select **Ahora** y haga clic en **Siguiente.**
    1. Confirme su selección en **Ámbito** y haga clic en **Cancelar publicación desde Brand Portal**.
 
    ![confirmar-cancelar publicación](assets/confirm-unpublish.png)
@@ -92,7 +92,7 @@ Tiene la opción de cancelar la publicación de carpetas de Brand Portal rápida
    Para programar la publicación de una carpeta desde Brand Portal para una fecha y hora posteriores:
 
    1. En la barra de herramientas, seleccione **Administrar publicación**.
-   1. En **Action** seleccione **Cancelar publicación de Brand Portal** y, en **Scheduling**, seleccione **Más tarde**.
+   1. De **Acción** select **Cancelar publicación desde Brand Portal** y de **Programación** select **Más tarde**.
    1. Seleccione una **Fecha de activación** y especifique la hora. Haga clic en **Siguiente**. 
    1. Confirme la selección en **Ámbito** y haga clic en **Siguiente**.
    1. Especifique un **título de flujo de trabajo** en **Flujos de trabajo**. Haga clic en **Cancelar publicación más tarde.**

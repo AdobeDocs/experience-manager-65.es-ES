@@ -46,7 +46,7 @@ No se admiten los siguientes caracteres (lista de) separados por espacios:
 
 No incluya caracteres especiales en las extensiones de los nombres de archivo de los recursos.
 
-## Carga de recursos {#uploading-assets}
+## Carga de activos {#uploading-assets}
 
 <!-- TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
@@ -604,7 +604,7 @@ Para información específica de [!DNL Dynamic Media], consulte [publicación [!
    ![Cancelar publicación](assets/unpublish_action.png)
    *Figura: Publicar y cancelar la publicación y la opción de programación.*
 
-1. Select **[!UICONTROL Ahora]** para actuar sobre el recurso de inmediato o seleccione **[!UICONTROL Más tarde]** para programar la acción. Seleccione una fecha y una hora si elige la variable **[!UICONTROL Más tarde]** . Haga clic en **[!UICONTROL Siguiente]**. 
+1. Select **[!UICONTROL Ahora]** para actuar sobre el recurso de inmediato o seleccione **[!UICONTROL Más tarde]** para programar la acción. Seleccione una fecha y una hora si elige la variable **[!UICONTROL Más tarde]** . Haga clic en **[!UICONTROL Siguiente]**.
 
 1. Al publicar, si un recurso hace referencia a otros recursos, sus referencias se enumeran en el asistente. Solo se muestran las referencias que se han cancelado la publicación o se han modificado desde la última publicación. Elija las referencias que desea publicar.
 

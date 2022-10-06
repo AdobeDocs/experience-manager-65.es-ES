@@ -1,24 +1,23 @@
 ---
-title: 'Prácticas recomendadas  '
-seo-title: 'Prácticas recomendadas  '
+title: Prácticas recomendadas
+seo-title: Best Practices
 description: Las prácticas recomendadas sobre creación describen cómo utilizar AEM del modo más eficaz y eficiente posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
-seo-description: Las prácticas recomendadas sobre creación describen cómo utilizar AEM del modo más eficaz y eficiente posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
+seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-translation-type: tm+mt
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 65%
+source-wordcount: '282'
+ht-degree: 62%
 
 ---
 
 
-# Prácticas recomendadas  {#best-practices}
+# Prácticas recomendadas{#best-practices}
 
 Las prácticas recomendadas sobre creación describen cómo utilizar AEM del modo más eficaz y eficiente posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
 
@@ -36,9 +35,9 @@ Para conocer las prácticas recomendadas sobre administración, implementación 
 
 Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
 
-## Assets {#assets}
+## Recursos {#assets}
 
-Las prácticas recomendadas en torno a los recursos, incluidas la capacidad de Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
+Las prácticas recomendadas sobre Assets, incluidas la capacidad de Dynamic Media y la integración con Dynamic Media Classic, se describen en los siguientes temas:
 
 <table>
  <tbody>
@@ -55,7 +54,7 @@ Las prácticas recomendadas en torno a los recursos, incluidas la capacidad de D
   <tr>
    <td>Imágenes dinámicas</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Prácticas recomendadas de las imágenes dinámicas</a></td>
-   <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor manera de optimizar la calidad de las imágenes si utiliza la funcionalidad de Dynamic Media o si se integra con Dynamic Media Classic. </p> </td>
+   <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor manera de optimizar la calidad de las imágenes si utiliza la funcionalidad de Dynamic Media o la integración con Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Recursos multilingües</td>
@@ -65,14 +64,14 @@ Las prácticas recomendadas en torno a los recursos, incluidas la capacidad de D
  </tbody>
 </table>
 
-## Sites {#sites}
+## Sitios {#sites}
 
 Para administrar y crear contenido en un sitio web, hay que seguir estas prácticas recomendadas:
 
-Creación: [entorno y herramientas de creación](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md): proporciona información general sobre cómo crear páginas.
+Creación: [Entorno y herramientas de creación](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) : Proporciona información general sobre cómo crear páginas.
 
 ## Forms {#forms}
 
-Formularios adaptables: [Prácticas recomendadas para trabajar con formularios adaptables](/help/forms/using/adaptive-forms-best-practices.md): describe prácticas recomendadas para configurar, crear y personalizar formularios adaptables.
+Formularios adaptables: [Prácticas recomendadas para trabajar con formularios adaptables](/help/forms/using/adaptive-forms-best-practices.md) - Describe las prácticas recomendadas para configurar, crear y personalizar formularios adaptables.
 
-Formularios HTML5: [Prácticas recomendadas para diseñar formularios HTML5](/help/forms/using/best-practices-for-html5-forms.md): describe prácticas recomendadas para trabajar en el diseño y la presentación de formularios HTML5.
+formularios HTML5: [Prácticas recomendadas para diseñar formularios de HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Describe las prácticas recomendadas para trabajar en la presentación y el diseño de los formularios HTML5.

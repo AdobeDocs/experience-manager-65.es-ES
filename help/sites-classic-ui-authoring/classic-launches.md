@@ -1,22 +1,21 @@
 ---
 title: Lanzamientos
-seo-title: Lanzamientos
+seo-title: Launches
 description: Cree un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro. Al crear un lanzamiento, especificará un título y la página de origen.
-seo-description: Cree un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro. Al crear un lanzamiento, especificará un título y la página de origen.
+seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: b1952b6c-fc44-4e39-80ba-9380a6c66b8c
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e64a66cb-d56a-4504-8883-609143d0daf8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 74%
+source-wordcount: '183'
+ht-degree: 70%
 
 ---
-
 
 # Lanzamientos{#launches}
 
@@ -28,10 +27,10 @@ Un lanzamiento se crea para permitir que se realicen cambios preparados para una
 >
 >La teoría detrás de los lanzamientos se describe en detalle en [Lanzamientos](/help/sites-authoring/launches.md) en la documentación de creación estándar.
 >
->La información específica sobre el uso de lanzamientos en la IU clásica se encuentra en la siguiente documentación junto con [Creación de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Edición de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-editing.md) y [Promoción de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>En la siguiente documentación, junto con [Creación de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Edición de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-editing.md)y [Promoción de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >En la IU clásica no es posible tener varias ramas de origen para un lanzamiento.
 
-Se puede acceder directamente a la consola Lanzamientos desde [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+Se puede acceder directamente a la consola Lanzamientos mediante [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)

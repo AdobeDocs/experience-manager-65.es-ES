@@ -13,7 +13,7 @@ exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 source-git-commit: de58ba638c22b7148e1349417d1f514c26c5887e
 workflow-type: tm+mt
 source-wordcount: '3525'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ Un paquete también contiene información meta de vault, incluidas las definicio
 
 ## el administrador de paquetes {#package-manager}
 
-El Administrador de paquetes administra los paquetes de la instalación de AEM. Después de [se han asignado los permisos necesarios](#permissions-needed-for-using-the-package-manager) puede utilizar el Administrador de paquetes para diversas acciones, como configurar, crear, descargar e instalar los paquetes.
+El Administrador de paquetes administra los paquetes de la instalación de AEM. Después de [se han asignado los permisos necesarios](#permissions-needed-for-using-the-package-manager) puede utilizar el Administrador de paquetes para diversas acciones, como configurar, crear, descargar e instalar sus paquetes.
 
 ### Permisos necesarios {#required-permissions}
 
@@ -95,7 +95,7 @@ Hay más acciones disponibles debajo de la sección **Más** botón.
 * [Otras versiones](#other-versions)
 * [Desinstalar](#uninstalling-packages)
 * [Probar instalación](#viewing-package-contents-and-testing-installation)
-* [Validar](#validating-packages)
+* [Validate](#validating-packages)
 * [Replicar](#replicating-packages)
 
 ### Estado del paquete {#package-status}
@@ -127,7 +127,7 @@ La variable **Configuración de paquetes** El cuadro de diálogo está disponibl
 | Campo | Descripción |
 |---|---|
 | Nombre | El nombre del paquete |
-| Agrupar | Para organizar paquetes, puede escribir el nombre de un grupo nuevo o seleccionar un grupo existente |
+| Grupo | Para organizar paquetes, puede escribir el nombre de un grupo nuevo o seleccionar un grupo existente |
 | Versión | Texto que se utilizará para la versión |
 | Descripción | Una breve descripción del paquete que permite el marcado del HTML para el formato |
 | Miniatura    | El icono que aparece con la lista de paquetes |

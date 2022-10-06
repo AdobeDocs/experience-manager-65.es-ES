@@ -6,7 +6,7 @@ exl-id: e1616385-0855-4f70-b787-b01701929bbc
 source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 55%
+ht-degree: 74%
 
 ---
 
@@ -20,13 +20,13 @@ Para evitarlo, debe configurar la variable `SameSite` atributo de cookie a `None
 
 >[!CAUTION]
 >
->La variable `SameSite=None` solo se aplica si el protocolo es seguro (HTTPS).
+>La configuración `SameSite=None` solo se aplica si el protocolo es seguro (HTTPS).
 >
 >Si el protocolo no es seguro (HTTP), la configuración se ignora y el servidor muestra este mensaje ADVERTENCIA:
 >
 >`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 
-Puede añadir la configuración siguiendo los pasos siguientes:
+Puede agregar la configuración siguiendo los pasos siguientes:
 
 1. Vaya a la consola web en `http://serveraddress:serverport/system/console/configMgr`
 1. Busque y haga clic en el **controlador de autenticación de token de Granite de Adobe**

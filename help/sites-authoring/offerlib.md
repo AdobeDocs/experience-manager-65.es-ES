@@ -1,8 +1,8 @@
 ---
 title: Creación y administración de ofertas
-seo-title: Creación y administración de ofertas
+seo-title: Creating and Managing Offers
 description: Utilice la consola Ofertas para crear ofertas que se pueden usar en las experiencias de actividad
-seo-description: Utilice la consola Ofertas para crear ofertas que se pueden usar en las experiencias de actividad
+seo-description: Use the Offers console to create offers that you can use in activity experiences
 uuid: be0a53da-a979-4a30-a4bb-7c9ce26ae1a1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '866'
 ht-degree: 98%
 
 ---
-
 
 # Creación y administración de ofertas{#creating-and-managing-offers}
 
@@ -38,12 +37,12 @@ Cuando cree una marca mediante la consola de ofertas, esta también aparecerá e
 
    ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Haga clic o toque **Crear** y luego **Crear** **Marca**.
+1. Haga clic o pulse en **Crear** y luego en **Crear** **marca**.
 1. Seleccione la plantilla de marca y haga clic o pulse **Siguiente**.
 1. Escriba un título para la marca tal y como desea que aparezca en las consolas de actividades y de ofertas. De forma opcional, escriba o seleccione una o más etiquetas para asociarlas a la marca.
 1. Haga clic o pulse **Crear**.
 
-## Añadir una carpeta a una biblioteca de ofertas  {#add-a-folder-to-an-offer-library}
+## Añadir una carpeta a una biblioteca de ofertas {#add-a-folder-to-an-offer-library}
 
 Añada una carpeta a la biblioteca de ofertas de una marca para organizar y para almacenar las ofertas. Puede crear una carpeta en la marca o en otras carpetas.
 
@@ -59,7 +58,7 @@ Añada una carpeta a la biblioteca de ofertas de una marca para organizar y para
 
 1. Haga clic o pulse **Crear**.
 
-## Añadir una oferta a una biblioteca de ofertas  {#add-an-offer-to-an-offer-library}
+## Añadir una oferta a una biblioteca de ofertas {#add-an-offer-to-an-offer-library}
 
 Añada una oferta a la biblioteca de ofertas de la marca para poder añadirla a las experiencias de la marca. Cuando se añade una oferta, es necesario escribir un título. También puede asociar la oferta a una o más etiquetas para incrementar la capacidad de búsqueda.
 
@@ -83,7 +82,7 @@ Puede abrir una oferta desde una carpeta de una biblioteca de ofertas o desde lo
 1. En la consola de ofertas, haga clic o pulse el icono junto a la oferta y haga clic o pulse **Editar**.
 1. Añada componentes a la oferta y edite el contenido del componente de la forma habitual.
 
-## Eliminar una oferta  {#deleting-an-offer}
+## Eliminar una oferta {#deleting-an-offer}
 
 Eliminar una oferta cuando ya no sea necesaria. Cuando intente eliminar una oferta que se usó en una experiencia, se le pedirá que confirme la eliminación. Confirmar esta opción eliminará la oferta y la quitará de las experiencias.
 
@@ -99,7 +98,7 @@ Puede eliminar una oferta a la vez que consulta el contenido de una carpeta en u
    * Para eliminar la oferta y quitarla de las experiencias, haga clic o pulse **Forzar eliminación**.
    * Para mantener la oferta, haga clic o pulse **Cancelar**.
 
-## Buscar ofertas  {#searching-for-offers}
+## Buscar ofertas {#searching-for-offers}
 
 Busque las ofertas de cualquier marca mediante las palabras clave que coincidan con el título.
 

@@ -10,7 +10,7 @@ exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
 source-git-commit: 9ad531738ac5e3c9d888f685b47c8b322712a89e
 workflow-type: tm+mt
 source-wordcount: '2778'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -129,7 +129,7 @@ Para obtener más información, consulte [Fragmento de contenido: Eliminar consi
 
 >[!CAUTION]
 >
->La variable [Componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) ahora se recomienda. Consulte [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obtener más información.
+>La variable [Componente principal del fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=es) ahora se recomienda. Consulte [Desarrollo de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=es) para obtener más información.
 
 Se puede hacer referencia a los fragmentos de contenido desde AEM páginas, igual que a cualquier otro tipo de recurso. AEM proporciona la variable [**Fragmento de contenido** componente principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) - [componente que permite incluir fragmentos de contenido en las páginas](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). También puede ampliar, esto **Fragmento de contenido** componente principal.
 
@@ -414,7 +414,7 @@ Consulte lo siguiente:
 
 Una sesión de edición se inicia cuando el usuario abre un fragmento de contenido en una de las páginas del editor. La sesión de edición finaliza cuando el usuario abandona el editor seleccionando una de las opciones siguientes: **Guardar** o **Cancelar**.
 
-### Requisitos {#requirements}
+### Requisitos  {#requirements}
 
 Los requisitos para controlar una sesión de edición son:
 
@@ -536,7 +536,7 @@ Consulte [Plantillas de fragmento de contenido](/help/sites-developing/content-f
 
 ## Componentes para la creación de páginas {#components-for-page-authoring}
 
-Para obtener más información, consulte
+Para obtener más información, consulte lo siguiente
 
 * [Componentes principales: componente de fragmento de contenido](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (recomendado)
 * [Componentes de fragmento de contenido: componentes para la creación de páginas](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)

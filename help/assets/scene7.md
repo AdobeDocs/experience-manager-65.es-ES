@@ -285,7 +285,6 @@ Examinar los recursos de Dynamic Media Classic seleccionando **[!UICONTROL Dynam
 >
 >* El navegador de contenido de Dynamic Media Classic carga unos 100 activos y los ordena por nombre.
 >* Si tiene configurado un servidor de vista previa seguro, el navegador utiliza ese servidor de vista previa para procesar miniaturas y recursos.
-
 >
 
 
@@ -336,7 +335,6 @@ De forma predeterminada, el Experience Manager busca la carpeta seleccionada y t
 >
 >* Al buscar vídeos, se busca una sola representación. Los resultados devuelven la representación original (solo &amp;ast;.mp4) y la representación codificada.
 >* Al buscar un conjunto de vídeos adaptables, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha añadido ninguna palabra clave, el Experience Manager no busca en las subcarpetas.
-
 >
 
 

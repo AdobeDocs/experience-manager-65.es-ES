@@ -1,8 +1,8 @@
 ---
 title: Herramientas de comunidades
-seo-title: Herramientas de comunidades
+seo-title: Communities Tools
 description: Cómo acceder a la consola Herramientas de Communities
-seo-description: Cómo acceder a la consola Herramientas de Communities
+seo-description: How to access Communities Tools console
 uuid: 3172fe00-7132-4cee-9fd1-b6f96eb43200
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: ba6c4ad3-c393-42d8-9f1f-d59947c3e7ab
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
@@ -27,14 +27,14 @@ Para acceder a la consola de herramientas de Communities, inicie sesión en la i
 
    ![comunidades](assets/communities-home.png)
 
-* [Plantillas de sitio](sites.md) : consola para la creación y administración de plantillas de sitio.
+* [Plantillas de sitio](sites.md) : Consola para la creación y administración de plantillas de sitio.
 
-* [Plantillas de grupo](tools-groups.md) : consola para la creación y administración de plantillas de grupo.
+* [Plantillas de grupo](tools-groups.md) - Consola para la creación y administración de plantillas de grupo.
 
-* [Funciones de la comunidad](functions.md) : consola para la creación y administración de funciones de la comunidad.
+* [Funciones de la comunidad](functions.md) - Consola para la creación y administración de funciones de la comunidad.
 
-* [Configuración de almacenamiento](srp-config.md) : consola para la configuración y selección del  [SRP](working-with-srp.md) predeterminado.
+* [Configuración de almacenamiento](srp-config.md) - Consola para la configuración y selección del [SRP predeterminado](working-with-srp.md).
 
 * [Guía de componentes](components-guide.md) : abre un sitio interactivo que permite experimentar con cómo funcionan los componentes de SCF y cómo se pueden configurar o personalizar.
 
-* [Distintivos](badges.md) : consola desde la que se pueden agregar distintivos personalizados para utilizarlos en las reglas de  [puntuación y distintivo](implementing-scoring.md)
+* [Distintivos](badges.md) - Consola desde la que se pueden agregar distintivos personalizados para su uso en [puntuación y reglas de distintivo](implementing-scoring.md)

@@ -150,7 +150,7 @@ ht-degree: 35%
    + [Prácticas recomendadas para plantillas de correo electrónico](best-practices-for-email-templates.md)
    + [Integración con Livefyre](livefyre.md)
 + Prácticas recomendadas   {#bestpractices}
-   + [Prácticas recomendadas  ](administer-best-practices.md)
+   + [Prácticas recomendadas](administer-best-practices.md)
    + [Prácticas recomendadas de traducción](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html)
    + [Prácticas recomendadas de MSM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
    + [AEM Sites: preparación para el RGPD](gdpr-compliance-sites.md)

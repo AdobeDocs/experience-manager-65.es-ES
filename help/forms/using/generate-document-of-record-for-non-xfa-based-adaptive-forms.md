@@ -14,7 +14,7 @@ exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
 source-wordcount: '3483'
-ht-degree: 2%
+ht-degree: 14%
 
 ---
 
@@ -32,7 +32,7 @@ En este artículo se explica cómo generar un documento de registro para formula
 
 ## Tipos de formularios adaptables y sus documentos de registro {#adaptive-form-types-and-their-documents-of-record}
 
-Al crear un formulario adaptable, puede seleccionar un modelo de formulario. Las opciones son:
+Al crear un formulario adaptable, puede seleccionar un modelo de formulario. Las opciones son las siguientes:
 
 * [Plantillas de formulario](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
 Permite seleccionar una plantilla XFA para el formulario adaptable. Al seleccionar una plantilla XFA, puede utilizar el archivo XDP asociado para el documento de registro como se describe anteriormente.
@@ -102,31 +102,31 @@ Las siguientes secciones describen cómo aparecen los elementos de formulario ad
   <tr>
    <td>Casilla de verificación</td>
    <td>Casilla de verificación</td>
-   <td>verdadero</td>
+   <td>true</td>
    <td> </td>
   </tr>
   <tr>
    <td>Selector de fecha</td>
    <td>Campo de fecha y hora</td>
-   <td>verdadero</td>
+   <td>true</td>
    <td> </td>
   </tr>
   <tr>
    <td>Lista desplegable</td>
    <td>Lista desplegable</td>
-   <td>verdadero</td>
+   <td>true</td>
    <td> </td>
   </tr>
   <tr>
-   <td>Firma a mano alzada</td>
-   <td>Scribble de firma</td>
-   <td>verdadero</td>
+   <td>Firma manuscrita</td>
+   <td>Firma manuscrita</td>
+   <td>true</td>
    <td> </td>
   </tr>
   <tr>
    <td>Cuadro numérico</td>
    <td>Campo numérico</td>
-   <td>verdadero</td>
+   <td>true</td>
    <td> </td>
   </tr>
   <tr>
@@ -138,13 +138,13 @@ Las siguientes secciones describen cómo aparecen los elementos de formulario ad
   <tr>
    <td>Botón de opción</td>
    <td>Botón de opción</td>
-   <td>verdadero</td>
+   <td>true</td>
    <td> </td>
   </tr>
   <tr>
    <td>Cuadro de texto</td>
    <td>Campo de texto</td>
-   <td>verdadero</td>
+   <td>true</td>
    <td> </td>
   </tr>
   <tr>
@@ -162,7 +162,7 @@ Las siguientes secciones describen cómo aparecen los elementos de formulario ad
   <tr>
    <td>Términos y condiciones</td>
    <td> </td>
-   <td>verdadero</td>
+   <td>true</td>
    <td> </td>
   </tr>
   <tr>
@@ -214,47 +214,47 @@ Siga [Convenciones de plantilla base](#base-template-conventions) al diseñar la
 
 ## Convenciones de plantilla base {#base-template-conventions}
 
-Se utiliza una plantilla base para definir el encabezado, pie de página, estilo y apariencia de un documento de registro. El encabezado y pie de página pueden incluir información como el logotipo de la empresa y el texto de copyright. La primera página de formato de la plantilla base se copia y se utiliza como página de formato para el documento de registro, que contiene el encabezado, pie de página, número de página o cualquier otra información que deba aparecer en todas las páginas del documento de registro. Si utiliza una plantilla base que no se ajuste a las convenciones de plantilla base, la primera página de formato de la plantilla base se utilizará en la plantilla de documento de registro. Se recomienda encarecidamente que diseñe la plantilla base según sus convenciones y que la utilice para generar automáticamente el documento de registro.
+Se utiliza una plantilla base para definir el encabezado, pie de página, estilo y apariencia de un documento de registro. El encabezado y pie de página pueden incluir información como el logotipo de la empresa y la información de copyright. La primera página de formato de la plantilla base se copia y se utiliza como página de formato para el documento de registro, que contiene el encabezado, pie de página, número de página o cualquier otra información que deba aparecer en todas las páginas del documento de registro. Si utiliza una plantilla base que no se ajuste a las convenciones de plantilla base, la primera página de formato de la plantilla base se utilizará en la plantilla de documento de registro. Se recomienda encarecidamente que diseñe la plantilla base según sus convenciones y que la utilice para generar automáticamente el documento de registro.
 
-**Convenciones de la página de formato**
+**Convenciones de la página maestra**
 
 * En la plantilla base, debe asignar un nombre al subformulario raíz como `AF_METATEMPLATE` y la página de formato como `AF_MASTERPAGE`.
 
 * La página de formato con el nombre `AF_MASTERPAGE` ubicado bajo el `AF_METATEMPLATE` el subformulario raíz tiene preferencia para extraer información de encabezado, pie de página y estilo.
 
-* If `AF_MASTERPAGE` no existe, se utiliza la primera página de formato presente en la plantilla base.
+* Si `AF_MASTERPAGE` no existe, se utiliza la primera página maestra presente en la plantilla base.
 
 **Convenciones de estilo para campos**
 
 * Para aplicar estilo en los campos del documento de registro, la plantilla base proporciona campos ubicados en la variable `AF_FIELDSSUBFORM` subdesde en el `AF_METATEMPLATE` subformulario raíz.
 
-* Las propiedades de estos campos se aplican a los campos del documento de registro. Estos campos deben seguir el `AF_<name of field in all caps>_XFO` convención de nomenclatura. Por ejemplo, el nombre de campo de la casilla de verificación debe ser `AF_CHECKBOX_XFO`.
+* Las propiedades de estos campos se aplican a los campos del documento de registro. Estos campos deben seguir la convención de nomenclatura de `AF_<name of field in all caps>_XFO`. Por ejemplo, el nombre de campo de la casilla de verificación debe ser `AF_CHECKBOX_XFO`.
 
 Para crear una plantilla base, haga lo siguiente en AEM Designer.
 
 1. Haga clic en **Archivo > Nuevo**.
-1. Seleccione el **Basado en una plantilla** .
+1. Seleccione la opción **Basado en una plantilla**.
 
-1. Seleccione el **Forms - Documento de registro** categoría.
-1. Select **Plantilla base DoR**.
+1. Seleccione la categoría **Formulario - Documento de registro**.
+1. Seleccione **Plantilla base de documento de registro**.
 1. Haga clic en **Siguiente** y proporcione la información requerida.
 
 1. (Opcional) Modifique el estilo y el aspecto de los campos que desea aplicar en los campos del documento de registro.
 1. Guarde el formulario.
 
 Ahora puede utilizar el formulario guardado como plantilla base para el documento de registro.
-No modifique ni elimine ninguna secuencia de comandos presente en la plantilla base.
+No modifique ni elimine ningún script presente en la plantilla base.
 
 **Modificación de la plantilla base**
 
 * Si no aplica ningún estilo a los campos de la plantilla base, es aconsejable eliminar esos campos de la plantilla base para que todas las actualizaciones a la plantilla base se recojan automáticamente.
-* Al modificar la plantilla base, no elimine, agregue ni modifique secuencias de comandos.
+* Al modificar la plantilla base, no elimine, agregue ni modifique scripts.
 
 >[!NOTE]
 >
 >Diseñe una plantilla base utilizando convenciones y siguiendo estrictamente los pasos anteriores.
 
-## Configuración del documento de plantilla de registro {#document-of-record-template-configuration}
+## Configuración de la plantilla de un documento de registro {#document-of-record-template-configuration}
 
 Configure la plantilla de documento de registro del formulario para que sus clientes puedan descargar una copia del formulario enviado que sea fácil de imprimir. Un archivo XDP sirve como documento de la plantilla de registro. El documento de la descarga de los clientes de registro tiene un formato de acuerdo con el diseño especificado en el archivo XDP.
 
@@ -273,11 +273,11 @@ También puede seleccionar un modelo de formulario al crear un formulario.
 
    **Ninguna** Seleccione esta opción si no desea configurar el documento de registro para el formulario.
 
-   **Asociar plantilla de formulario como plantilla de documento de registro** Seleccione esta opción si tiene un archivo XDP que desea utilizar como plantilla para el documento de registro. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo correspondiente.
+   **Asociar plantilla de formulario como plantilla de documento de registro** Seleccione esta opción si tiene un archivo XDP que desea utilizar como plantilla para el documento de registro. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo apropiado.
 
    El archivo XDP seleccionado se asocia con el formulario adaptable.
 
-   **Generar documento de registro** Seleccione esta opción para utilizar un archivo XDP como plantilla base para definir el estilo y el aspecto del documento de registro. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo correspondiente.
+   **Generar documento de registro** Seleccione esta opción para utilizar un archivo XDP como plantilla base para definir el estilo y el aspecto del documento de registro. Al seleccionar esta opción, se muestran todos los archivos XDP disponibles en el repositorio de AEM Forms. Seleccione el archivo apropiado.
 
    >[!NOTE]
    >
@@ -293,19 +293,19 @@ También puede seleccionar un modelo de formulario al crear un formulario.
 
 ## Personalización de la información de marca en el documento de registro {#customize-the-branding-information-in-document-of-record}
 
-Durante la generación de un documento de registro, puede cambiar la información de marca del documento de registro en la ficha Documento de registro. La ficha Documento de registro incluye opciones como logotipo, apariencia, diseño, encabezado y pie de página, renuncia de responsabilidad y si desea incluir o no las opciones de casillas de verificación y botones de opción no seleccionadas.
+Durante la generación de un documento de registro, puede cambiar la información de marca del documento de registro en la ficha Documento de registro. La pestaña Documento de registro incluye opciones como logotipo, apariencia, diseño, encabezado y pie de página, exención de responsabilidad y si desea incluir o no las opciones de casillas de verificación y botones de opción no seleccionadas.
 
 Para localizar la información de marca que introduce en la ficha Documento de registro, debe asegurarse de que la configuración regional del explorador esté correctamente configurada. Para personalizar la información de marca del documento de registro, complete los siguientes pasos:
 
 1. Seleccione un panel (panel raíz) en el documento de registro y, a continuación, pulse ![configure](assets/configure.png).
-1. Toque ![dortab](assets/dortab.png). Aparecerá la ficha Documento de registro.
+1. Pulse ![dortab](assets/dortab.png). Aparecerá la pestaña Documento de registro.
 1. Seleccione la plantilla predeterminada o una plantilla personalizada para procesar el documento de registro. Si selecciona la plantilla predeterminada, aparece una vista previa en miniatura del documento de registro debajo de la lista desplegable Plantilla.
 
-   ![plantilla de promoción de la marca](assets/brandingtemplate.png)
+   ![brandingtemplate](assets/brandingtemplate.png)
 
    Si elige seleccionar una plantilla personalizada, busque y seleccione un XDP en el servidor de AEM Forms. Si desea utilizar una plantilla que no esté ya en el servidor de AEM Forms, primero debe cargar el XDP en el servidor de AEM Forms.
 
-1. En función de si selecciona una plantilla predeterminada o personalizada, algunas o todas las propiedades siguientes aparecen en la ficha Documento de registro. Especifíquelos correctamente:
+1. En función de si selecciona una plantilla predeterminada o personalizada, algunas o todas las propiedades siguientes aparecen en la ficha Documento de registro. Especifíquelas correctamente:
 
    * **Imagen del logotipo**: Puede elegir usar la imagen del logotipo desde el formulario adaptable, elegir una de DAM o cargar una desde el equipo.
    * **Título del formulario**
@@ -313,11 +313,11 @@ Para localizar la información de marca que introduce en la ficha Documento de r
    * **Etiqueta de la exención de responsabilidad**
    * **Exención de responsabilidad**
    * **Texto de la exención de responsabilidad**
-   * **Color de énfasis**: El color en el que se representan las líneas del texto del encabezado y del separador en el PDF del documento o registro
+   * **Color de énfasis**: el color en el que se representa el texto del encabezado y las líneas de separación en el documento o registro PDF.
    * **Familia de fuentes**: Familia de fuentes del texto en el PDF del documento de registro
-   * **Para los componentes Casilla de verificación y Botón de radio , muestre solo los valores seleccionados**
+   * **Para componentes de casilla de verificación y botones de radio, mostrar solo los valores seleccionados**
    * **Separador para varios valores seleccionados**
-   * **Incluir objetos de formulario que no estén enlazados al modelo de datos**
+   * **Incluir objetos de formulario que no están enlazados al modelo de datos**
    * **Excluir campos ocultos del documento de registro**
    * **Ocultar descripción de paneles**
 
@@ -343,9 +343,9 @@ Para localizar la información de marca que introduce en la ficha Documento de r
    </proto>
    ```
 
-1. Para guardar los cambios de marca, pulse Listo.
+1. Para guardar los cambios de personalización de marca, pulse Listo.
 
-## Presentaciones de tablas y columnas para paneles del Documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
+## Diseños de tablas y columnas para paneles del documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
 El formulario adaptable puede ser largo y tener varios campos de formulario. Es posible que no desee guardar un documento de registro como una copia exacta del formulario adaptable. Ahora puede elegir una tabla o una presentación de columna para guardar uno o más paneles de formulario adaptables en el PDF de documentos.
 
@@ -367,11 +367,11 @@ El documento de configuración de registro de un componente está disponible en 
 
 **Configuración del nivel de campo**
 
-* **Excluir Del Documento De Registro**: Si se establece la propiedad true, se excluye el campo del documento de registro. Se trata de una propiedad con nombre de secuencias de comandos `excludeFromDoR`. Su comportamiento depende de **Excluir campos de DoR si están ocultos** propiedad de nivel de formulario.
+* **Excluir Del Documento De Registro**: Si se establece la propiedad true, se excluye el campo del documento de registro. Se trata de una propiedad que puede ser script y que se llama `excludeFromDoR`. Su comportamiento depende de la propiedad de nivel de formulario **Excluir campos del documento de registro si están ocultos**.
 
-* **Mostrar panel como tabla:** Al establecer la propiedad, se muestra el panel como tabla en el documento de registro si el panel tiene menos de 6 campos. Aplicable solo para panel.
-* **Excluir título del documento de registro:** La configuración de la propiedad excluye el título del panel o tabla del documento de registro. Aplicable solo para panel y tabla.
-* **Excluir descripción del documento de registro:** La configuración de la propiedad excluye la descripción del panel/tabla del documento de registro. Aplicable solo para panel y tabla.
+* **Mostrar panel como tabla:** Al establecer la propiedad, se muestra el panel como tabla en el documento de registro si el panel tiene menos de 6 campos. Solo aplicable para paneles.
+* **Excluir título del documento de registro:** La configuración de la propiedad excluye el título del panel o tabla del documento de registro. Aplicable solo para paneles y tablas.
+* **Excluir descripción del documento de registro:** La configuración de la propiedad excluye la descripción del panel/tabla del documento de registro. Aplicable solo para paneles y tablas.
 * **[!UICONTROL Paginación]** > **[!UICONTROL Lugar]**: Determina dónde se selecciona para colocar el panel.
    * **[!UICONTROL Lugar]** > **[!UICONTROL Siguiente anterior]**: Coloca el panel después del objeto anterior en el panel principal.
    * **[!UICONTROL Lugar]** > **[!UICONTROL En el área de contenido]** > Nombre del área de contenido: Coloca el panel en el área de contenido especificada.
@@ -395,8 +395,8 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
 
 **Configuración del nivel de formulario**
 
-* **Incluir campos no enlazados en DoR:** La configuración de la propiedad incluye campos no enlazados del formulario adaptable basado en esquema del documento de registro. De forma predeterminada, es true.
-* **Excluir campos de DoR si están ocultos:** Al establecer la propiedad se anula el comportamiento de la propiedad de nivel de campo &quot;Excluir del documento de registro&quot; cuando no es verdadera. Si los campos están ocultos en el momento del envío del formulario, se excluirán del documento de registro si la propiedad está establecida en true, siempre que la propiedad &quot;Excluir del documento de registro&quot; no esté establecida.
+* **Incluir campos no enlazados en DoR:** La configuración de la propiedad incluye campos no enlazados del formulario adaptable basado en esquema del documento de registro. De forma predeterminada, es True.
+* **Excluir campos del documento de registro si están ocultos:** al establecer la propiedad, se anula el comportamiento de la propiedad de nivel de campo “Excluir del documento de registro” cuando no es True. Si los campos están ocultos en el momento del envío del formulario, se excluirán del documento de registro si la propiedad está establecida en true, siempre que la propiedad &quot;Excluir del documento de registro&quot; no esté establecida.
 
 ## Aplicar un salto de página en un documento de registro {#apply-page-breaks-in-dor}
 
@@ -410,7 +410,7 @@ Para aplicar un salto de página a un documento de registro:
 
 1. En el **[!UICONTROL Paginación]** sección, toque ![Carpeta](assets/folder-icon.svg) en el **[!UICONTROL Lugar]** campo .
 1. Toque **[!UICONTROL Principio de la página siguiente]** y toque **[!UICONTROL Select]**. También puede tocar **[!UICONTROL Principio de la página]**, seleccione la página de formato y pulse **[!UICONTROL Select]** para aplicar el salto de página.
-1. Toque ![Guardar](assets/save_icon.svg) para guardar las propiedades.
+1. Pulse ![Guardar](assets/save_icon.svg) para guardar las propiedades.
 
 El panel seleccionado se mueve a la página siguiente.
 
@@ -430,7 +430,7 @@ Para aplicar las propiedades de la segunda página de formato a un panel y las p
 AEM Forms aplica la segunda página de formato al panel y a todos los paneles posteriores del formulario adaptable.
 1. En el **[!UICONTROL Paginación]** sección, toque ![Carpeta](assets/folder-icon.svg) en el **[!UICONTROL Después]** campo .
 1. Toque **[!UICONTROL Ir a la página]**, seleccione la tercera página de formato y pulse **[!UICONTROL Select]**.
-1. Toque ![Guardar](assets/save_icon.svg) para guardar las propiedades.
+1. Pulse ![Guardar](assets/save_icon.svg) para guardar las propiedades.
 AEM Forms aplica la tercera página de formato al panel y a todos los paneles posteriores del formulario adaptable.
 
 

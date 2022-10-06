@@ -1,8 +1,8 @@
 ---
-title: 'Su bandeja de entrada  '
-seo-title: 'Su bandeja de entrada  '
+title: Su bandeja de entrada
+seo-title: Your Inbox
 description: Puede recibir notificaciones desde varias áreas de AEM, como notificaciones sobre elementos de trabajo o tareas que representan acciones que debe realizar en el contenido de la página.
-seo-description: Puede recibir notificaciones desde varias áreas de AEM, como notificaciones sobre elementos de trabajo o tareas que representan acciones que debe realizar en el contenido de la página.
+seo-description: You can receive notifications from various areas of AEM such as notification about work items or tasks that represent actions that you need to perform on page content.
 uuid: e7ba9150-957d-4f84-a570-2f3d83792472
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,23 +10,22 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '581'
 ht-degree: 93%
 
 ---
 
-
-# Su bandeja de entrada   {#your-inbox}
+# Su bandeja de entrada{#your-inbox}
 
 Puede recibir notificaciones desde varias áreas de AEM, como notificaciones sobre elementos de trabajo o tareas que representan acciones que debe realizar en el contenido de la página.
 
 Estas notificaciones se reciben en dos bandejas de entrada, que están separadas por tipo de notificación:
 
 * Una bandeja de entrada donde se ven las notificaciones recibidas en relación con las suscripciones (se describe en la sección siguiente).
-* En el documento [Participación en Flujos de trabajo](/help/sites-classic-ui-authoring/classic-workflows-participating.md) se describe una bandeja de entrada especializada para elementos de flujo de trabajo.
+* Una bandeja de entrada especializada para elementos de flujo de trabajo se describe en la sección [Participación en flujos de trabajo](/help/sites-classic-ui-authoring/classic-workflows-participating.md) documento.
 
 ## Visualizar notificaciones {#viewing-your-notifications}
 
@@ -48,7 +47,7 @@ Para ver las notificaciones:
    * [Suscripción a las notificaciones](#subscribing-to-notifications)
    * [Procesamiento de notificaciones](#processing-your-notifications)
 
-   ![climage_1-4](assets/chlimage_1-4.jpeg)
+   ![Chlimage_1-4](assets/chlimage_1-4.jpeg)
 
 ## Suscripción a las notificaciones {#subscribing-to-notifications}
 
@@ -93,7 +92,7 @@ Cuando se elimina o mueve una página, se replica automáticamente una acción d
 1. Defina las rutas de las páginas para las cuales recibirá notificaciones:
 
    * Haga clic en **Añadir** para añadir una nueva fila a la tabla.
-   * Haga clic en la celda de la tabla **Ruta** e introduzca la ruta, por ejemplo: `/content/docs`.
+   * Haga clic en el **Ruta** celda de tabla e introduzca la ruta, por ejemplo `/content/docs`.
 
    * Para recibir notificaciones para todas las páginas pertenecientes al subárbol, establezca **¿Exacto?** en **No**.
 Para recibir notificaciones únicamente para acciones en la página definida por la ruta, establezca **¿Exacto?** en **Sí**.
@@ -112,4 +111,4 @@ Si eligió recibir notificaciones en su bandeja de entrada AEM, la bandeja de en
 
 * Eliminarla al hacer clic en **Eliminar**.
 
-![climage_1-5](assets/chlimage_1-5.jpeg)
+![Chlimage_1-5](assets/chlimage_1-5.jpeg)

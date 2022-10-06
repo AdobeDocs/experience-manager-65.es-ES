@@ -185,8 +185,8 @@ Además del DCMES, existen otros elementos de metadatos creados por la Iniciativ
 | derechos | Información sobre quién tiene los derechos de este recurso. |
 | source | Recurso relacionado del que se deriva el recurso. |
 | subject | El tema del recurso. |
-| el título | Un nombre para el recurso. |
-| tipo | La naturaleza o el género del recurso. |
+| title | Un nombre para el recurso. |
+| type | La naturaleza o el género del recurso. |
 
 ### IPTC {#iptc}
 

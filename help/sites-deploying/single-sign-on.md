@@ -1,8 +1,8 @@
 ---
 title: Inicio de sesión único
-seo-title: Inicio de sesión único
+seo-title: Single Sign On
 description: Obtenga información sobre cómo configurar el inicio de sesión único (SSO) para una instancia de AEM.
-seo-description: Obtenga información sobre cómo configurar el inicio de sesión único (SSO) para una instancia de AEM.
+seo-description: Learn how to configure Single Sign On (SSO) for an AEM instance.
 uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: configuring, Security
 content-type: reference
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
-
 
 # Inicio de sesión único {#single-sign-on}
 
@@ -36,32 +35,32 @@ Configure los dos servicios siguientes para reconocer el nombre del atributo que
 * El módulo de inicio de sesión.
 * El servicio de autenticación SSO.
 
-Debe especificar el mismo nombre de atributo para ambos servicios. El atributo se incluye en el `SimpleCredentials` que se proporciona a `Repository.login`. El valor del atributo es irrelevante e ignorado, la mera presencia de él es importante y verificada.
+Debe especificar el mismo nombre de atributo para ambos servicios. El atributo se incluye en la variable `SimpleCredentials` que se proporciona a `Repository.login`. El valor del atributo es irrelevante e ignorado, la mera presencia de él es importante y verificada.
 
 ## Configuración de SSO {#configuring-sso}
 
-Para configurar SSO para una instancia de AEM, debe configurar el [Gestor de autenticación SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Para configurar SSO para una instancia de AEM, debe configurar la variable [Gestor de autenticación SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. Al trabajar con AEM hay varios métodos para administrar los ajustes de configuración de dichos servicios; consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+1. Al trabajar con AEM hay varios métodos para administrar los ajustes de configuración de dichos servicios; see [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
    Por ejemplo, para el conjunto NTLM:
 
-   * **Ruta:** según sea necesario; por ejemplo,  `/`
-   * **Nombres** de encabezado:  `LOGON_USER`
-   * **Formato** de ID:  `^<DOMAIN>\\(.+)$`
+   * **Ruta:** según sea necesario; por ejemplo, `/`
+   * **Nombres de encabezado**: `LOGON_USER`
+   * **Formato de ID**: `^<DOMAIN>\\(.+)$`
 
       Donde `<*DOMAIN*>` se reemplaza por su propio nombre de dominio.
    Para CoSign:
 
-   * **Ruta:** según sea necesario; por ejemplo,  `/`
-   * **Nombres** de encabezado: remote_user
+   * **Ruta:** según sea necesario; por ejemplo, `/`
+   * **Nombres de encabezado**: remote_user
    * **Formato de ID:** AsIs
 
    Para SiteMinder:
 
-   * **Ruta:** según sea necesario; por ejemplo,  `/`
+   * **Ruta:** según sea necesario; por ejemplo, `/`
    * **Nombres de encabezado:** SM_USER
-   * **Formato** de ID: AsIs
+   * **Formato de ID**: AsIs
 
 
 
@@ -77,44 +76,36 @@ Para configurar SSO para una instancia de AEM, debe configurar el [Gestor de aut
 >
 >Asegúrese también de que de los encabezados, cookies y nombres de parámetros de solicitud, solo configure el que es necesario para la configuración de SSO.
 
+>[!NOTE]
+>
+>Inicio de sesión único se utiliza a menudo junto con [LDAP](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
->El Inicio de sesión único se utiliza a menudo junto con [LDAP](/help/sites-administering/ldap-config.md).
-
->[!NOTE]
->
->Si también utiliza el [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) con Microsoft Internet Information Server (IIS), se necesitará una configuración adicional en:
+>Si también utiliza la variable [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) con el servidor de información de Internet (IIS) de Microsoft, se necesitará una configuración adicional en:
 >
 >* `disp_iis.ini`
 >* IIS
-
 >
->
-En `disp_iis.ini` configurado:
->(consulte [instalación de Dispatcher con Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) para obtener más información)
+>En `disp_iis.ini` configurado:
+>(consulte [instalación de Dispatcher con el servidor de información de Internet de Microsoft](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) para obtener más información)
 >
 >* `servervariables=1` (reenvía variables de servidor IIS como encabezados de solicitud a la instancia remota)
 >* `replaceauthorization=1` (reemplaza cualquier encabezado denominado &quot;Autorización&quot; que no sea &quot;Básico&quot; por su equivalente &quot;Básico&quot;)
-
 >
+>En IIS:
 >
-En IIS:
+>* disable **Acceso anónimo**
 >
->* deshabilitar **Acceso anónimo**
-   >
-   >
-* habilitar **Autenticación integrada de Windows**
-
+>* enable **Autenticación integrada de Windows**
 >
 
 
-
-Puede ver qué controlador de autenticación se está aplicando a cualquier sección del árbol de contenido mediante la opción **Authenticator** de la consola Felix; por ejemplo:
+Puede ver qué controlador de autenticación se está aplicando a cualquier sección del árbol de contenido mediante la variable **Autenticador** de la Consola Felix; por ejemplo:
 
 `http://localhost:4502/system/console/slingauth`
 
-El controlador que mejor se adapte a la ruta se consulta primero. Por ejemplo, si configura handler-A para la ruta `/` y handler-B para la ruta `/content`, entonces una solicitud a `/content/mypage.html` consultará primero al controlador B.
+El controlador que mejor se adapte a la ruta se consulta primero. Por ejemplo, si configura handler-A para la ruta `/` y handler-B para la ruta `/content`y luego una solicitud para `/content/mypage.html` primero consultará handler-B.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
@@ -132,13 +123,13 @@ Con la siguiente configuración:
 
 * **Ruta**: `/`
 
-* **Nombres** de encabezado:  `TestHeader`
+* **Nombres de encabezado**: `TestHeader`
 
-* **Nombres** de cookies:  `TestCookie`
+* **Nombres de cookies**: `TestCookie`
 
-* **Nombres** de parámetros:  `TestParameter`
+* **Nombres de parámetros**: `TestParameter`
 
-* **Formato** de ID:  `AsIs`
+* **Formato de ID**: `AsIs`
 
 La respuesta sería:
 
@@ -161,14 +152,14 @@ Transfer-Encoding: chunked
 Esto también funciona si se solicita:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-O puede utilizar el siguiente comando curl para enviar el encabezado `TestHeader` a `admin:`
+O puede utilizar el siguiente comando curl para enviar la variable `TestHeader` Encabezado a `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
 >
->Al utilizar el parámetro de solicitud en un navegador, solo verá algunas de las páginas HTML sin CSS. Esto se debe a que todas las solicitudes del HTML se realizan sin el parámetro de solicitud .
+>Al utilizar el parámetro de solicitud en un navegador, solo verá algunos de los HTML - sin CSS. Esto se debe a que todas las solicitudes del HTML se realizan sin el parámetro de solicitud .
 
-## Eliminación de vínculos de cierre de sesión AEM {#removing-aem-sign-out-links}
+## Eliminación de vínculos AEM cierre de sesión {#removing-aem-sign-out-links}
 
 Al utilizar SSO, el inicio y la cierre de sesión se gestionan de forma externa, por lo que AEM propios vínculos de cierre de sesión ya no son aplicables y deben eliminarse.
 
@@ -193,4 +184,3 @@ Para eliminar el vínculo de cierre de sesión disponible en el menú personal d
    });
    menu.addSeparator();
    ```
-

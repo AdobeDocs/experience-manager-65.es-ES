@@ -6,21 +6,20 @@ contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7bf6657a8fd7677ab15e0f91324a065b684e2f92
+exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 77%
 
 ---
 
-
 # Editor de texto enriquecido {#rich-text-editor}
 
 El editor de texto enriquecido es un bloque de creación básico para introducir contenido textual en AEM. Constituye la base de diversos componentes, que incluyen:
 
 * Texto
-* Imagen de texto
+* Texto Imagen
 * Tabla
 
 ## Editor de texto enriquecido {#rich-text-editor-1}
@@ -57,7 +56,7 @@ Actualmente, el modo de edición directamente está habilitado para elementos de
 
 ## Funciones del Editor de texto enriquecido {#features-of-the-rich-text-editor}
 
-El Editor de texto enriquecido proporciona una serie de funciones, que [dependen de la configuración](/help/sites-administering/rich-text-editor.md) del componente individual. Las funciones están disponibles tanto para la IU táctil como para la clásica.
+El Editor de texto enriquecido ofrece una amplia gama de funciones, estas [dependen de la configuración](/help/sites-administering/rich-text-editor.md) del componente individual. Las funciones están disponibles tanto para la IU táctil como para la clásica.
 
 ### Formatos de carácter básicos {#basic-character-formats}
 
@@ -75,9 +74,9 @@ Aquí puede aplicar formato a caracteres que ha seleccionado (resaltado); alguna
 
 Todos funcionan como conmutadores; por lo tanto, si vuelve a seleccionar, se quita el formato.
 
-### Formatos y estilos predefinidos  {#predefined-styles-and-formats}
+### Formatos y estilos predefinidos {#predefined-styles-and-formats}
 
-![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylesParagraph](assets/cq55_rte_stylesparagraph.png)
 
 Su instalación puede incluir estilos y formatos predefinidos. Están disponibles con las listas desplegables **[!UICONTROL Estilo]** y **[!UICONTROL Formato]**, y pueden aplicarse a texto seleccionado.
 
@@ -87,7 +86,7 @@ Se puede aplicar un estilo a una cadena específica (un estilo se correlaciona c
 
 Mientras que se aplica un formato a todo el texto del párrafo (un formato está basado en HTML):
 
-![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
+![cq55_rte_Paragraph_use](assets/cq55_rte_paragraph_use.png)
 
 Un formato específico puede cambiarse solamente (el valor predeterminado es **[!UICONTROL Párrafo]**).
 
@@ -97,7 +96,7 @@ Se puede quitar un estilo; coloque el cursor dentro del texto al que se aplicó 
 >
 >No vuelva a seleccionar realmente ninguna parte del texto al que se aplicó el estilo o el icono se desactivará.
 
-### Cortar, copiar, pegar  {#cut-copy-paste}
+### Cortar, copiar, pegar {#cut-copy-paste}
 
 ![](do-not-localize/cq55_rte_cutcopypaste.png)
 
@@ -105,10 +104,9 @@ Están disponibles las funciones estándar de **[!UICONTROL Cortar]** y **[!UICO
 
 * Cortar (Ctrl-X)
 * Copiar (Ctrl-C)
-* Pegar
-Este es el mecanismo de pegado predeterminado (Ctrl-V) para el componente; cuando se instala de forma predeterminada, se configura como [!UICONTROL Pegar desde Word].
+* Pegar Este es el mecanismo de pegado predeterminado (Ctrl-V) para el componente; cuando se instala de forma predeterminada, se configura para que [!UICONTROL Pegar desde Word].
 
-* Pegar como texto: Elimina todos los estilos y el formato para pegar solo el texto sin formato.
+* Pegar como texto: Quita todos los estilos y formatos para pegar solo texto sin formato.
 
 * Pegar desde Word: Esto pega el contenido como HTML (con algunas modificaciones de formato necesarias).
 
@@ -132,7 +130,7 @@ AEM lleva un registro de las últimas 50 acciones realizadas en el componente ac
 
 El texto puede alinearse a la izquierda, al medio o a la derecha.
 
-![cq55_rte_align_use](assets/cq55_rte_alignment_use.png)
+![cq55_rte_alignment_use](assets/cq55_rte_alignment_use.png)
 
 ### Sangría {#indentation}
 
@@ -140,7 +138,7 @@ El texto puede alinearse a la izquierda, al medio o a la derecha.
 
 Es posible aumentar o reducir la sangría de un párrafo. Se aplicará sangría al párrafo seleccionado, todo nuevo texto especificado retendrá el nivel de sangría actual.
 
-![cq55_rte_indent_use](assets/cq55_rte_indent_use.png)
+![cq55_rte_guión_use](assets/cq55_rte_indent_use.png)
 
 ### Listas {#lists}
 
@@ -152,13 +150,13 @@ Pueden crearse listas anidadas aplicando sangría a uno o varios elementos de li
 
 El estilo de una lista puede cambiar con solo colocar el cursor dentro de ella y luego seleccionar el otro estilo. Una sublista también puede tener un estilo diferente a la lista que la contiene. Este puede aplicarse una vez que se ha creado la sublista (mediante sangría).
 
-![cq55_rte_listas_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
 
 ### Vínculos {#links}
 
 ![](do-not-localize/cq55_rte_links.png)
 
-Se genera un vínculo a una URL (ya sea dentro del sitio web o una ubicación externa) resaltando el texto requerido y haciendo clic en el icono del hipervínculo:
+Se genera un vínculo a una dirección URL (ya sea dentro del sitio web o una ubicación externa) al resaltar el texto requerido y luego hacer clic en el icono de hipervínculo:
 
 ![](do-not-localize/chlimage_1-9.png)
 
@@ -170,19 +168,19 @@ Puede hacer lo siguiente:
 
 * Escriba un URI directamente
 * Utilice el mapa del sitio para seleccionar una página dentro del sitio web
-* Introduzca el URI y, a continuación, añada el anclaje de destinatario; p. ej. `www.TargetUri.org#AnchorName`
-* Introduzca un anclaje solamente (para hacer referencia a &quot;la página actual&quot;); Por ejemplo, `#anchor`
+* Introduzca el URI y, a continuación, añada el anclaje de destino; p. ej. `www.TargetUri.org#AnchorName`
+* Introduzca un anclaje únicamente (para hacer referencia a &quot;la página actual&quot;); Por ejemplo, `#anchor`
 * Busque una página en el buscador de contenido y, a continuación, arrastre y suelte el icono de página en el cuadro de diálogo Hipervínculo
 
 >[!NOTE]
 >
->El URI puede añadirse delante con cualquiera de los protocolos configurados para la instalación. En una instalación estándar, estos son `https://`, `ftp://` y `mailto:`. Los protocolos que no estén configurados para la instalación serán rechazados y marcados como no válidos.
+>El URI puede añadirse delante con cualquiera de los protocolos configurados para la instalación. En una instalación estándar, estos son `https://`, `ftp://`y `mailto:`. Los protocolos que no estén configurados para la instalación serán rechazados y marcados como no válidos.
 
 Para anular el vínculo, posicione el cursor en cualquier parte dentro del texto del vínculo y haga clic en el icono [!UICONTROL Desvincular:]
 
 ![](do-not-localize/chlimage_1-10.png)
 
-### Anclajes  {#anchors}
+### Anclajes {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -250,7 +248,7 @@ Las tablas están disponibles tanto:
 
    >[!NOTE]
    >
-   >Aunque las tablas están disponibles en RTE, se recomienda utilizar el componente **Tabla** al crear tablas.
+   >Aunque las tablas están disponibles en el RTE, se recomienda usar la variable **Tabla** al crear tablas.
 
 En los componentes **Texto** y **Tabla**, la funcionalidad de tabla está disponible mediante el menú contextual (generalmente el botón derecho del ratón) donde se hace clic dentro de la tabla. Por ejemplo:
 
@@ -280,19 +278,19 @@ Las propiedades básicas de la tabla pueden configurarse antes de hacer clic en 
 
 ![cq55_rte_tableproperties_dialog](assets/cq55_rte_tableproperties_dialog.png)
 
-* **Ancho**: Ancho total de la tabla.
+* **Anchura**: Ancho total de la tabla.
 
 * **Altura**: Altura total de la tabla.
 
-* **Borde**: Tamaño del borde de la tabla.
+* **Borde**: El tamaño del borde de la tabla.
 
-* **Relleno** de celdas: Define el espacio en blanco entre el contenido de la celda y sus bordes.
+* **Margen de celdas**: Define el espacio en blanco entre el contenido de la celda y sus bordes.
 
-* **Espaciado** de celdas: Define la distancia entre las celdas.
+* **Espaciado de celdas**: Define la distancia entre las celdas.
 
 >[!NOTE]
 >
->Algunas propiedades de celda, como la anchura y la altura, se pueden definir como píxeles o como porcentajes.
+>Algunas propiedades de celda, como Anchura y Altura, se pueden definir como píxeles o como porcentajes.
 
 >[!CAUTION]
 >
@@ -309,9 +307,9 @@ Es posible configurar las propiedades de una celda específica o serie de celdas
 * **Ancho**
 * **Altura**
 * **Alineación horizontal** - Izquierda, Centro o Derecha
-* **Alineación**  vertical: arriba, medio, abajo o línea de base
-* **Tipo** de celda: datos o encabezado
-* **Aplicar a:** celda única, fila completa, columna completa
+* **Alineación vertical** - Superior, Centro, Abajo o Línea de base
+* **Tipo de celda**- Datos o Encabezado
+* **Aplicar a:** Celda única, fila entera, columna completa
 
 #### Agregar o eliminar filas {#add-or-delete-rows}
 
@@ -321,7 +319,7 @@ Las filas pueden agregarse encima o debajo de la fila actual.
 
 También puede eliminarse la fila actual.
 
-#### Agregar o eliminar columnas  {#add-or-delete-columns}
+#### Agregar o eliminar columnas {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
@@ -329,20 +327,20 @@ Las columnas pueden agregarse a la izquierda o a la derecha de la columna actual
 
 También puede eliminarse la columna actual.
 
-#### Selección de filas o columnas enteras  {#selecting-entire-rows-or-columns}
+#### Selección de filas o columnas enteras {#selecting-entire-rows-or-columns}
 
-![chlimage_1-105](assets/chlimage_1-106.png)
+![chlimage_1-106](assets/chlimage_1-106.png)
 
 Selecciona toda la fila o columna actual. Hay acciones específicas (por ejemplo, combinar) disponibles.
 
 #### Combinar celdas {#merge-cells}
 
-![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergecq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * Si seleccionó un grupo de celdas, puede combinarlas en una sola.
 * Si tiene una sola celda seleccionada, puede combinarla con la celda ubicada a la derecha o debajo.
 
-#### Dividir celdas  {#split-cells}
+#### Dividir celdas {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
@@ -351,7 +349,7 @@ Seleccione una celda única para dividirla:
 * Dividir una celda horizontalmente generará una nueva celda a la derecha de la celda actual, dentro de la columna actual.
 * Dividir una celda verticalmente generará una nueva celda debajo de la celda actual, pero dentro de la fila actual.
 
-#### Crear tablas anidadas  {#creating-nested-tables}
+#### Crear tablas anidadas {#creating-nested-tables}
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -369,7 +367,7 @@ Crear una tabla anidada creará una nueva tabla autocontenida dentro de la celda
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
 
-Utilice la opción para quitar la tabla del componente **[!UICONTROL Texto]**.
+Utilice la opción para quitar la tabla desde el **[!UICONTROL Texto]** componente.
 
 ### Caracteres especiales {#special-characters}
 
@@ -381,7 +379,7 @@ Se pueden hacer disponibles caracteres especiales para su editor de texto enriqu
 
 Coloque el puntero encima para ver una versión ampliada del carácter, y luego haga clic para incluirlo en la ubicación actual en el texto.
 
-### Modo de edición de origen  {#source-editing-mode}
+### Modo de edición de origen {#source-editing-mode}
 
 ![](do-not-localize/cq55_rte_sourceedit.png)
 

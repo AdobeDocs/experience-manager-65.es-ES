@@ -88,7 +88,7 @@ Si está ejecutando OpenOffice, Microsoft Word o Microsoft PowerPoint en Windows
 
    Para obtener más información, consulte la documentación del comando xhost.
 
-1. Reinicie el servidor.
+1. Reiniciar el servidor.
 
 >[!NOTE]
 >

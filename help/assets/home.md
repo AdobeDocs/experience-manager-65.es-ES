@@ -8,7 +8,7 @@ exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
 source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 21%
+ht-degree: 23%
 
 ---
 
@@ -32,7 +32,7 @@ Cree, administre, procese y distribuya recursos digitales en Experience Manager.
 | [Guía de administración](/help/sites-administering/home.md) | Obtenga información sobre cómo administrar Adobe Experience Manager. |
 | [Guía de creación](/help/sites-authoring/home.md) | En esta guía se explican los conceptos de creación en Experience Manager. |
 | [Guía de creación de IU clásica](/help/sites-classic-ui-authoring/home.md) | En esta guía se explican los conceptos de creación en Experience Manager en la interfaz de usuario clásica. |
-| [Guía del usuario de Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de señalización digital para publicar experiencias digitales dinámicas e interactivas. |
+| [Guía del usuario de Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=es) | Obtenga información sobre la solución de señalización digital para publicar experiencias digitales dinámicas e interactivas. |
 | [Guía del usuario sobre implementación](/help/sites-deploying/home.md) | Esta guía le muestra los conceptos básicos de Experience Manager. |
 | [Guía del usuario sobre desarrollo](/help/sites-developing/home.md) | Obtenga información sobre cómo crear la implementación del Experience Manager. |
 | [Guía del usuario de administración](/help/managing/home.md) | En esta guía se describe cómo administrar correctamente un proyecto de Experience Manager. |
@@ -49,4 +49,4 @@ Cree, administre, procese y distribuya recursos digitales en Experience Manager.
 * [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
 * [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=es)
 * [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=es)

@@ -1,8 +1,8 @@
 ---
-title: '¿Qué es la seguridad de los documentos? '
-seo-title: 'Acerca de la seguridad de los documentos '
+title: ¿Qué es la seguridad de los documentos?
+seo-title: About document security
 description: Aprenda cómo puede crear, almacenar y aplicar configuraciones de confidencialidad predefinidas, y distribuir su información de forma segura mediante la seguridad de los documentos.
-seo-description: Aprenda cómo puede crear, almacenar y aplicar configuraciones de confidencialidad predefinidas, y distribuir su información de forma segura mediante la seguridad de los documentos.
+seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
 uuid: e4fba2a4-f3c1-4b20-8e05-8e241b40ebd0
 contentOwner: admin
 content-type: reference
@@ -14,7 +14,7 @@ feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
 source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
-source-wordcount: '3310'
+source-wordcount: '3286'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ La seguridad de los documentos garantiza que solo los usuarios autorizados pueda
 * Archivos Adobe PDF
 * Archivos de Microsoft® Word, Excel y PowerPoint
 
-Para obtener más información acerca de cómo las políticas protegen los tipos de archivo compatibles, consulte [más información de seguridad del documento](https://www.adobe.com/go/learn_aemforms_doc_security_65).
+Para obtener más información sobre cómo las políticas protegen los tipos de archivo admitidos, consulte [más información de seguridad de documentos](https://www.adobe.com/go/learn_aemforms_doc_security_65).
 
 Con la seguridad de los documentos, puede crear, almacenar y aplicar fácilmente configuraciones de confidencialidad predefinidas a sus documentos. Para evitar que la información se extienda más allá de su alcance, también puede supervisar y controlar cómo los destinatarios utilizan sus documentos después de distribuirlos.
 
@@ -34,7 +34,7 @@ Puede proteger los documentos mediante políticas. Una *directiva* es una recopi
 
 Los usuarios de seguridad de documentos crean directivas a través de las páginas web del usuario final. Los administradores utilizan las páginas web de seguridad del documento para crear conjuntos de directivas que contengan directivas compartidas disponibles para todos los usuarios autorizados.
 
-Aunque las directivas se almacenan en seguridad de documentos, las aplica a los documentos a través de la aplicación cliente. En la *Ayuda de Acrobat* se describe en detalle cómo aplicar las políticas a los documentos PDF. La aplicación de directivas mediante otras aplicaciones, como Microsoft® Office, se documenta en la *Ayuda de extensiones de Acrobat Reader DC* de la aplicación.
+Aunque las directivas se almacenan en seguridad de documentos, las aplica a los documentos a través de la aplicación cliente. La forma de aplicar las políticas a los documentos del PDF se describe detalladamente en *Ayuda de Acrobat*. La aplicación de políticas mediante otras aplicaciones, como Microsoft® Office, se documenta en la sección *Ayuda de extensiones de Acrobat Reader DC* para la aplicación.
 
 Cuando aplica una directiva a un documento, la configuración de confidencialidad especificada en la directiva protege la información que contiene el documento. La configuración de confidencialidad también protege cualquier archivo (texto, audio o vídeo) de un documento PDF. Puede distribuir el documento protegido por políticas a los destinatarios autorizados por la directiva.
 
@@ -48,9 +48,9 @@ A través de la seguridad de los documentos, puede supervisar los documentos pro
 
 La seguridad de los documentos consta de un servidor y una interfaz de usuario:
 
-**Servidor:** componente central mediante el cual la seguridad de los documentos realiza transacciones como la autenticación de usuarios, la administración en tiempo real de políticas y la aplicación de la confidencialidad. El servidor también proporciona un repositorio central para políticas, registros de auditoría y otra información relacionada.
+**Servidor:** Componente central a través del cual la seguridad de los documentos realiza transacciones como la autenticación de usuarios, la administración en tiempo real de políticas y la aplicación de la confidencialidad. El servidor también proporciona un repositorio central para políticas, registros de auditoría y otra información relacionada.
 
-**Páginas web:** la interfaz en la que se crean las políticas, se administran los documentos protegidos por políticas y se supervisan los eventos asociados a documentos protegidos por políticas. Los administradores también pueden configurar opciones globales como autenticación de usuarios, auditoría y mensajería para usuarios invitados y administrar cuentas de usuario invitadas.
+**Páginas web:** Interfaz donde se crean políticas, se administran los documentos protegidos por políticas y se supervisan los eventos asociados a documentos protegidos por políticas. Los administradores también pueden configurar opciones globales como autenticación de usuarios, auditoría y mensajería para usuarios invitados y administrar cuentas de usuario invitadas.
 
 ![rm_psworkflow](assets/rm_psworkflow.png)
 
@@ -149,9 +149,9 @@ Los administradores de seguridad de documentos pueden crear funciones personaliz
 
 ## Políticas y documentos protegidos por políticas {#policies-and-policy-protected-documents}
 
-Una *directiva* define un conjunto de configuraciones de confidencialidad y usuarios que pueden acceder a un documento al que se aplica la directiva. Una directiva también permite que los permisos de un documento se cambien de forma dinámica. Permite a la persona que asegura el documento cambiar la configuración de confidencialidad para revocar el acceso al documento o cambiar la directiva.
+A *directiva* define un conjunto de configuraciones de confidencialidad y usuarios que pueden acceder a un documento al que se aplica la política. Una directiva también permite que los permisos de un documento se cambien de forma dinámica. Permite a la persona que asegura el documento cambiar la configuración de confidencialidad para revocar el acceso al documento o cambiar la directiva.
 
-La protección de políticas se puede aplicar a un documento PDF utilizando Adobe Acrobat® Pro y Acrobat Standard. La protección de directivas se puede aplicar a otros tipos de archivos, como archivos de Microsoft® Word, Excel y PowerPoint, mediante la aplicación cliente con las extensiones de Acrobat Reader DC instaladas adecuadas.
+La protección de políticas se puede aplicar a un documento de PDF mediante Adobe Acrobat® Pro y Acrobat Standard. La protección de políticas se puede aplicar a otros tipos de archivos, como archivos Microsoft® Word, Excel y PowerPoint, mediante la aplicación cliente con las extensiones de Acrobat Reader DC instaladas adecuadas.
 
 ### Funcionamiento de las directivas {#how-policies-work}
 
@@ -161,7 +161,7 @@ La configuración de confidencialidad de una directiva determina cómo pueden ut
 
 >[!NOTE]
 >
->La configuración de confidencialidad que se aplica mediante una directiva anula cualquier configuración que se pueda haber aplicado a un documento PDF en Acrobat mediante las opciones de seguridad de contraseña o certificado. (Consulte la Ayuda de Acrobat para obtener más información).
+>La configuración de confidencialidad que se aplica mediante una directiva anula cualquier configuración que se pueda haber aplicado a un documento de PDF en Acrobat mediante las opciones de seguridad de contraseña o certificado. (Consulte la Ayuda de Acrobat para obtener más información).
 
 Los usuarios y administradores crean directivas a través de las páginas web de seguridad de documentos. Sólo se puede aplicar una política a la vez a un documento. Puede aplicar una directiva mediante uno de estos métodos:
 
@@ -178,7 +178,7 @@ Los pasos del diagrama son los siguientes:
 1. Document security crea una licencia de documento y claves de documento, y cifra la directiva. La licencia del documento, la directiva cifrada y la clave del documento se devuelven a la aplicación cliente.
 1. El documento se cifra con la clave del documento y la clave del documento se descarta. El documento ahora incrusta la licencia y la directiva. Estas tareas se realizan en la aplicación cliente admitida.
 
-Cuando se aplica una política a un documento, la información que contiene el documento, incluidos los archivos contenidos (texto, audio o vídeo) en documentos PDF, está protegida por la configuración de confidencialidad especificada en la directiva. La seguridad del documento genera una licencia y una información de cifrado que luego se incrusta en el documento. Al distribuir el documento, la seguridad del documento puede autenticar a los destinatarios que intenten abrir el documento y autorizar el acceso según los privilegios especificados en la directiva.
+Cuando se aplica una política a un documento, la información que contiene el documento, incluidos los archivos contenidos (texto, audio o vídeo) en documentos del PDF, está protegida por la configuración de confidencialidad especificada en la directiva. La seguridad del documento genera una licencia y una información de cifrado que luego se incrusta en el documento. Al distribuir el documento, la seguridad del documento puede autenticar a los destinatarios que intenten abrir el documento y autorizar el acceso según los privilegios especificados en la directiva.
 
 Si el uso sin conexión está habilitado, los destinatarios también pueden utilizar documentos protegidos por políticas sin conexión (sin una conexión activa a Internet o a la red) durante el período de tiempo especificado en la directiva.
 
@@ -203,15 +203,15 @@ Puede seguir utilizando un documento con estas condiciones:
 
 También puede utilizar documentos protegidos por políticas sin conexión (sin conexión a Internet o a la red) si la directiva permite el acceso sin conexión. Primero debe iniciar sesión en document security para sincronizar el documento. A continuación, puede utilizar el documento durante el periodo de arrendamiento sin conexión especificado en la directiva.
 
-Cuando finaliza el periodo de lesión sin conexión, debe sincronizar de nuevo el documento con la seguridad del documento, ya sea conectándose y abriendo un documento protegido por políticas o utilizando un comando en la aplicación cliente. (Consulte *Ayuda de Acrobat* o la *Ayuda de extensiones de Acrobat Reader DC* correspondiente para obtener más información).
+Cuando finaliza el periodo de lesión sin conexión, debe sincronizar de nuevo el documento con la seguridad del documento, ya sea conectándose y abriendo un documento protegido por políticas o utilizando un comando en la aplicación cliente. (Consulte *Ayuda de Acrobat* o bien *Ayuda de extensiones de Acrobat Reader DC* para obtener más información).
 
 Si guarda una copia de un documento protegido por una política utilizando el comando de menú Guardar o Guardar como, la política se aplica automáticamente y se aplica al nuevo documento. Eventos como los intentos de abrir el nuevo documento también se auditan y registran para el documento original.
 
 ## Conjuntos de directivas {#policy-sets}
 
-*Los* conjuntos de políticas se utilizan para agrupar un conjunto de políticas que tienen un propósito comercial común. Estos conjuntos de políticas se ponen a disposición de un subconjunto de usuarios del sistema.
+*Conjuntos de directivas* se utilizan para agrupar un conjunto de directivas que tienen un propósito comercial común. Estos conjuntos de políticas se ponen a disposición de un subconjunto de usuarios del sistema.
 
-Cada conjunto de directivas puede tener uno o más coordinadores de conjuntos de directivas asociados. El coordinador del conjunto de directivas es un administrador o un usuario que tiene más permisos. El *coordinador del conjunto de políticas* es normalmente un especialista de la organización que puede crear mejor las políticas en un conjunto de políticas determinado.
+Cada conjunto de directivas puede tener uno o más coordinadores de conjuntos de directivas asociados. El coordinador del conjunto de directivas es un administrador o un usuario que tiene más permisos. La variable *coordinador de conjuntos de políticas* normalmente es un especialista de la organización que puede crear mejor las políticas en un conjunto de políticas determinado.
 
 Los coordinadores de conjuntos de políticas pueden realizar las siguientes tareas:
 
@@ -225,13 +225,13 @@ Los coordinadores de conjuntos de políticas pueden realizar las siguientes tare
 
 >[!NOTE]
 >
->Puede recuperar un máximo de 1000 nombres de conjuntos de directivas de la base de datos mediante la API `getAllPolicysetnames()`.
+>Puede recuperar un máximo de 1000 nombres de conjuntos de directivas de la base de datos mediante `getAllPolicysetnames()` API.
 
 Los administradores y los coordinadores de conjuntos de políticas que tienen permiso para hacerlo crean y eliminan conjuntos de políticas en las páginas web de la administración de seguridad de documentos.
 
 Los conjuntos de políticas generalmente están disponibles para un número limitado de usuarios, especificando qué usuarios o grupos dentro de un dominio pueden utilizar las políticas del conjunto de políticas para proteger documentos.
 
-Cuando se instala la seguridad del documento, se crea un conjunto de directivas predeterminado denominado *Conjunto de directivas globales*. El administrador que instaló el software administra este conjunto de directivas.
+Cuando se instala la seguridad del documento, se crea un conjunto de directivas predeterminado llamado *Conjunto de directivas globales*. El administrador que instaló el software administra este conjunto de directivas.
 
 ## Prácticas recomendadas {#best-practices}
 
@@ -249,11 +249,11 @@ Las directivas son conjuntos reutilizables de permisos y grupos de usuarios que 
 
 Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. Esto facilita la administración y aplicación de políticas a un gran número de usuarios.
 
-* **Crear conjuntos de directivas personalizados:** un conjunto de directivas combina varias directivas en una entidad manejable. Cree conjuntos de directivas personalizados para su organización o departamento, utilícelos para agrupar directivas relacionadas y haga que estén disponibles para un subconjunto de usuarios del sistema.
+* **Crear conjuntos de directivas personalizadas:** Un conjunto de políticas combina varias políticas en una entidad manejable. Cree conjuntos de directivas personalizados para su organización o departamento, utilícelos para agrupar directivas relacionadas y haga que estén disponibles para un subconjunto de usuarios del sistema.
 
    El uso de conjuntos de políticas facilita la asignación y administración de políticas relacionadas a usuarios específicos de una organización o departamento. Por ejemplo, los conjuntos de políticas separados para el departamento de finanzas y recursos humanos pueden ayudar a administrar y aplicar fácilmente las políticas conexas a los documentos designados para los departamentos correspondientes.
 
-* **Utilice un autorizador externo para aplicar permisos de forma dinámica:** puede utilizar un autorizador  [externo ](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para evaluar y aplicar permisos de forma dinámica en función de una condición externa. Cuando los permisos se evalúan dinámicamente, en función de una condición externa, puede:
+* **Utilice un autorizador externo para aplicar permisos de forma dinámica:** Puede usar [autorizador externo](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para evaluar y aplicar permisos de forma dinámica en función de una condición externa. Cuando los permisos se evalúan dinámicamente, en función de una condición externa, puede:
 
    * Proporcione control de acceso centralizado para los documentos de su organización.
 
@@ -262,7 +262,7 @@ Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. E
    * Utilice un mecanismo de control de acceso que utilice su sistema de administración de contenido, además del proceso de evaluación de directivas estándar. Por ejemplo, cuando el servicio determina si un usuario puede imprimir un documento protegido por políticas, puede utilizar el proceso de evaluación de directivas estándar y el mecanismo de control de acceso que utiliza su sistema de administración de contenido.
    Aunque es posible reemplazar completamente el proceso de evaluación de la directiva de seguridad de documentos con un controlador de autorización externo, se recomienda utilizar un controlador de autorización externo junto con el proceso de evaluación de directivas. Como resultado, el acceso a los documentos se puede controlar mediante el mismo mecanismo de control que utiliza el sistema de administración de contenido. Por ejemplo, cuando el servicio de seguridad de documentos determina si un usuario puede imprimir un documento protegido por políticas, utiliza el proceso de evaluación de directivas estándar y el mecanismo de control de acceso que utiliza su sistema de administración de contenido. Para obtener más información, consulte [Creación de controladores de autorización externos](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
-* **Mantenga los conjuntos de políticas en un número limitado:**  Varios factores conducen al crecimiento constante de las políticas y los conjuntos de políticas. Algunos factores comunes son:
+* **Mantenga los conjuntos de directivas en un número limitado:** Varios factores conducen al crecimiento constante de las políticas y los conjuntos de políticas. Algunos factores comunes son:
 
    * Aumento de las funciones de usuario, los departamentos y los documentos dentro de una organización durante un período.
    * Los departamentos de una organización trabajan aisladamente y mantienen un control estricto de las políticas específicas de cada departamento. Genera políticas idénticas dentro de una organización.
@@ -270,10 +270,10 @@ Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. E
    Adobe recomienda mantener al mínimo el número de políticas y conjuntos de políticas. Ayuda a administrar fácilmente las políticas y los conjuntos de políticas y a proporcionar un mejor rendimiento. Para reducir el número al mínimo:
 
    * Crear políticas reutilizables. Se pueden compartir en varios departamentos.
-   * Considere la posibilidad de crear conjuntos de políticas para toda la organización si algunas políticas se aplican a varios departamentos en lugar de a un conjunto de políticas individual para cada departamento.
+   * Considere la posibilidad de crear conjuntos de políticas a nivel de toda la organización si algunas políticas se aplican a varios departamentos en lugar de a un conjunto de políticas individual para cada departamento.
    * Agrupar directivas relacionadas en un conjunto de directivas. No cree un conjunto de directivas separado para cada directiva.
    * Utilice un autorizador externo para controlar dinámicamente los permisos de usuario.
 
    >[!NOTE]
    >
-   > Puede utilizar la API [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) para recuperar un máximo de 1000 nombres de conjuntos de directivas. Internamente, la API recupera un máximo de 1000 directivas para las que el invocador de API tiene permiso de editor de documentos y, a continuación, crea y devuelve una lista de nombres de conjuntos de directivas exclusivos asociados a las políticas recuperadas. Por ejemplo, cuando la API recupera 1000 directivas y las políticas recuperadas están asociadas con 200 conjuntos de directivas en total, la API solo devuelve 200 nombres de conjuntos de directivas.
+   > Puede usar la variable [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) para recuperar un máximo de 1000 nombres de conjuntos de directivas. Internamente, la API recupera un máximo de 1000 directivas para las que el invocador de API tiene permiso de editor de documentos y, a continuación, crea y devuelve una lista de nombres de conjuntos de directivas exclusivos asociados a las políticas recuperadas. Por ejemplo, cuando la API recupera 1000 directivas y las políticas recuperadas están asociadas con 200 conjuntos de directivas en total, la API solo devuelve 200 nombres de conjuntos de directivas.

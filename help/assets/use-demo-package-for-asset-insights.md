@@ -3,11 +3,11 @@ title: Uso del paquete de demostración para Assets Insights
 description: Utilice el paquete de demostración para permitir que Adobe Assets Insights capture datos de una página web y genere perspectivas para ella.
 contentOwner: AG
 role: User, Admin
-feature: Información sobre Assets, Informes de Asset
+feature: Asset Insights,Asset Reports
 exl-id: 13947513-da76-43e1-ae01-abd24a59752a
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '160'
 ht-degree: 2%
 
 ---
@@ -31,8 +31,8 @@ Con el paquete de demostración, puede habilitar Adobe Assets Insights para capt
 
    >[!CAUTION]
    >
-   >La página web está configurada para cargar el recurso desde el servidor localhost . En caso de que el servidor se esté ejecutando en otro lugar, cambie la dirección del servidor de localhost a dirección del servidor en el contenido HTML de la página web.
+   >La página web está configurada para cargar el recurso desde el servidor localhost . En caso de que el servidor se esté ejecutando en otro lugar, cambie la dirección del servidor de localhost a dirección del servidor en el contenido del HTML de la página web.
 
    >[!NOTE]
    >
-   >La página web externa puede estar en [!DNL Experience Manager].
+   >La página web externa puede estar en [!DNL Experience Manager] en sí.

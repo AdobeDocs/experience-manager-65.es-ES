@@ -1,35 +1,31 @@
 ---
 title: Gestión básica
-seo-title: Gestión básica
-description: 'Información general sobre la gestión básica al usar el entorno de creación de AEM. Utiliza la consola Sitios como base. '
-seo-description: 'Información general sobre la gestión básica al usar el entorno de creación de AEM. Utiliza la consola Sitios como base. '
+seo-title: Basic Handling
+description: Información general sobre la gestión básica al usar el entorno de creación de AEM. Utiliza la consola Sitios como base.
+seo-description: An overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1194'
 ht-degree: 93%
 
 ---
-
 
 # Gestión básica{#basic-handling}
 
 >[!NOTE]
 >
 >* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación AEM. Utiliza la consola **Sitios** como base. 
-   >
-   >
-* Algunas funciones no están disponibles en todas las consolas u otras funciones están disponibles en determinadas consolas. La información específica sobre consolas concretas y sus funciones se tratará en más detalle en otras páginas.
->* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) y [al editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
-
 >
-
+>* Algunas funciones no están disponibles en todas las consolas u otras funciones están disponibles en determinadas consolas. La información específica sobre consolas concretas y sus funciones se tratará en más detalle en otras páginas.
+>* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) y [al editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>
 
 
 ## La pantalla de bienvenida {#the-welcome-screen}
@@ -60,7 +56,7 @@ Las siguientes son las consolas principales:
   </tr>
   <tr>
    <td><strong>Lanzamientos</strong></td>
-   <td>Esto le ayuda a administrar sus <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanzamientos</a>, que le permiten desarrollar contenido para una versión futura de una o varias páginas web activadas.<br /> <i>Nota: En la IU táctil, muchas de las mismas funciones están disponibles en la consola Sitios, junto con el carril Referencias.</i> <i>Si se necesita, esta consola está disponible desde la consola Herramientas; seleccione Operaciones y, después, Lanzamientos.</i></td>
+   <td>Esto le ayuda a administrar sus <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanzamientos</a>, que le permiten desarrollar contenido para una versión futura de una o varias páginas web activadas.<br /> <i>Nota: En la IU táctil, muchas de las mismas funcionalidades están disponibles en la consola Sitios, junto con el carril Referencias .</i> <i>Si se necesita, esta consola está disponible desde la consola Herramientas; seleccione Operaciones y, después, Lanzamientos.</i></td>
   </tr>
   <tr>
    <td><strong>Bandeja de entrada </strong></td>
@@ -99,7 +95,7 @@ La consola **Sitios web** ofrece dos paneles para desplazarse y administrar sus 
 
 * Panel derecho
 
-   Muestra las páginas (en la ubicación seleccionada en el panel izquierdo) y puede utilizarse para realizar acciones.
+   Muestra las páginas (en la ubicación seleccionada en el panel izquierdo) y se puede utilizar para realizar acciones.
 
 Desde aquí puede [administrar sus páginas](/help/sites-authoring/managing-pages.md) mediante la barra de herramientas, un menú contextual o abriendo una página para efectuar más acciones.
 
@@ -107,13 +103,13 @@ Desde aquí puede [administrar sus páginas](/help/sites-authoring/managing-page
 >
 >El control básico es idéntico en todas las consolas. Esta sección se centra en la consola **Sitios web**, ya que es la consola principal durante la creación.
 
-![chlimage_1-9](assets/chlimage_1-9a.png)
+![Chlimage_1-9](assets/chlimage_1-9a.png)
 
-## Acceso a la Ayuda {#accessing-help}
+## Acceso a la Ayuda   {#accessing-help}
 
 En varias consolas (p. ej., Sitios web) también existe el botón **Ayuda**, que abre Uso compartido de paquetes o el sitio de documentación.
 
-![chlimage_1-10](assets/chlimage_1-10a.png)
+![imagen_1-10](assets/chlimage_1-10a.png)
 
 Al editar una página, la [barra de tareas también tiene un botón para acceder a la ayuda](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
@@ -233,5 +229,4 @@ Los colores junto a las páginas en las columnas **Publicado** y **Modificado** 
 
 La IU clásica utiliza mecanismos familiares para desplazarse e iniciar acciones, incluidos clics y doble clics. Según la situación actual, también hay disponible una selección de menús contextuales (que normalmente se abren con el botón derecho del ratón):
 
-![chlimage_1-11](assets/chlimage_1-11a.png)
-
+![imagen_1-11](assets/chlimage_1-11a.png)

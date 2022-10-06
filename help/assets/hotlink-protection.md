@@ -13,15 +13,15 @@ feature: Configuration
 source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
 source-wordcount: '201'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # Activar la protección de los vínculos interactivos en Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
-La vinculación activa se produce cuando un sitio web de terceros utiliza código de HTML para mostrar una imagen del sitio web. Utilizan su ancho de banda cada vez que se solicita la imagen porque el navegador del visitante está accediendo directamente desde su servidor. Hotlink *protection* es un método para evitar que otros sitios web se vinculen directamente a imágenes, CSS o JavaScript en sus páginas web. Este tipo de escudo ayuda a reducir el uso innecesario del ancho de banda en su cuenta de Dynamic Media.
+La vinculación activa se produce cuando un sitio web de terceros utiliza código de HTML para mostrar una imagen del sitio web. Utilizan su ancho de banda cada vez que se solicita la imagen porque el navegador del visitante está accediendo directamente desde su servidor. Vínculo interactivo *protección* es un método para evitar que otros sitios web se vinculen directamente a imágenes, CSS o JavaScript de sus páginas web. Este tipo de escudo ayuda a reducir el uso innecesario del ancho de banda en su cuenta de Dynamic Media.
 
-[El servicio de ](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) asistencia al cliente de Experience Manager puede configurar un filtro de referente en el nivel CDN (red de entrega de contenido) para que el contenido de Dynamic Media solo se proporcione a los sitios web de la lista de sitios web permitidos para el dominio.
+[Asistencia al cliente Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=es#support) puede configurar un filtro de remitente del reenvío a nivel de CDN (Red de entrega de contenido) para que el contenido de Dynamic Media solo se sirva a los sitios web de la lista de sitios web permitidos para el dominio.
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: Inicio rápido de la API de Java del servicio de credenciales (SOAP)
-seo-title: Inicio rápido de la API de Java del servicio de credenciales (SOAP)
+seo-title: Credential Service Java API QuickStart(SOAP)
 description: Inicio rápido de la API de Java del servicio de credenciales (SOAP)
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
-
-# Inicio rápido de API de Java (SOAP) de Credential Service {#credential-service-java-api-quickstart-soap}
+# Inicio rápido de la API de Java del servicio Credential (SOAP) {#credential-service-java-api-quickstart-soap}
 
 El inicio rápido de la API de Java (SOAP) está disponible para el servicio Credential.
 
@@ -38,7 +37,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 ## Inicio rápido (modo SOAP): Importación de credenciales mediante la API de Java {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-El siguiente ejemplo de código importa una credencial basada en un archivo llamado *cred.p12*. El valor de alias utilizado para importar las credenciales es `Secure`. (Consulte [Importación de credenciales mediante la API del administrador de confianza](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)).
+El siguiente ejemplo de código importa una credencial basada en un archivo denominado *cred.p12*. El valor de alias utilizado para importar las credenciales es `Secure`. (Consulte [Importación de credenciales mediante la API del administrador de confianza](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -139,7 +138,7 @@ El siguiente ejemplo de código importa una credencial basada en un archivo llam
 
 ## Inicio rápido (modo SOAP): Eliminación de credenciales mediante la API de Java {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-En el siguiente ejemplo de código se elimina una credencial basada en un valor de alias *secure*. (Consulte [Eliminación de credenciales utilizando la API del administrador de confianza](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)).
+En el siguiente ejemplo de código se elimina una credencial basada en un valor de alias *secure*. (Consulte [Eliminación de credenciales mediante la API del administrador de confianza](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -229,4 +228,3 @@ En el siguiente ejemplo de código se elimina una credencial basada en un valor 
  }
  
 ```
-

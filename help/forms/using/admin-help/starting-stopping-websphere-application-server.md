@@ -1,48 +1,46 @@
 ---
-title: Inicio y parada de WebSphere Application Server
-seo-title: Inicio y parada de WebSphere Application Server
-description: Varios procedimientos requieren que detenga o inicio la instancia de WebSphere en la que desea implementar productos de formularios AEM. Este documento describe cómo realizar el inicio y detener el servidor de aplicaciones WebSphere.
-seo-description: Varios procedimientos requieren que detenga o inicio la instancia de WebSphere en la que desea implementar productos de formularios AEM. Este documento describe cómo realizar el inicio y detener el servidor de aplicaciones WebSphere.
+title: Inicio y parada del servidor de aplicaciones WebSphere
+seo-title: Starting and stopping WebSphere Application Server
+description: Varios procedimientos requieren que detenga o inicie la instancia de WebSphere donde desee implementar productos de formularios AEM. En este documento se describe cómo iniciar y detener el servidor de aplicaciones WebSphere.
+seo-description: Several procedures require you to stop or start the instance of WebSphere where you want to deploy AEM forms products. This document describes how to start and stop the WebSphere Application Server.
 uuid: e0373197-aa57-4087-933d-92a86840a11a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
-translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+exl-id: 1a4e8f20-0644-4c96-9f52-f7a59521eac9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
+# Inicio y parada del servidor de aplicaciones WebSphere {#starting-and-stopping-websphere-application-server}
 
-# Inicio y parada de WebSphere Application Server {#starting-and-stopping-websphere-application-server}
+Varios procedimientos requieren que detenga o inicie la instancia de WebSphere donde desee implementar productos de formularios AEM. Si no está seguro de si el servidor de aplicaciones se ha iniciado, primero puede ver el estado de WebSphere Application Server.
 
-Varios procedimientos requieren que detenga o inicio la instancia de WebSphere en la que desea implementar productos de formularios AEM. Si no está seguro de si el servidor de aplicaciones se ha iniciado, primero puede vista el estado de WebSphere Application Server.
+## Ver el estado del servidor de aplicaciones WebSphere {#view-the-status-of-websphere-application-server}
 
-## Vista del estado de WebSphere Application Server {#view-the-status-of-websphere-application-server}
+1. Desde un símbolo del sistema, vaya a la `[appserver root]/bin` directorio.
+1. Introduzca el siguiente comando, sustituyendo *server_name* con el nombre de su servidor de aplicaciones WebSphere:
 
-1. Desde un símbolo del sistema, vaya al directorio `[appserver root]/bin`.
-1. Introduzca el siguiente comando, reemplazando *server_name* por el nombre de su servidor de aplicaciones WebSphere:
+   * (Windows) `serverStatus.bat`*server_name*
+   * (Linux, UNIX) ./ `serverStatus.sh`*server_name*
 
-   * (Windows) `serverStatus.bat`*nombre_servidor*
-   * (Linux, UNIX) ./ `serverStatus.sh`*nombre_servidor*
+## Iniciar servidor de aplicaciones WebSphere {#start-websphere-application-server}
 
-## Servidor de aplicaciones WebSphere de inicio {#start-websphere-application-server}
+1. Desde un símbolo del sistema, vaya a la `[appserver root]/bin` directorio.
+1. Introduzca el siguiente comando, sustituyendo *server_name* con el nombre de su servidor de aplicaciones WebSphere:
 
-1. Desde un símbolo del sistema, vaya al directorio `[appserver root]/bin`.
-1. Introduzca el siguiente comando, reemplazando *server_name* por el nombre de su servidor de aplicaciones WebSphere:
-
-   * (Windows) `startServer.bat`*nombre_servidor*
-   * (Linux, UNIX) ./ `startServer.sh`*nombre_servidor*
+   * (Windows) `startServer.bat`*server_name*
+   * (Linux, UNIX) ./ `startServer.sh`*server_name*
 
 ## Detener el servidor de aplicaciones WebSphere {#stop-websphere-application-server}
 
-1. Desde un símbolo del sistema, vaya al directorio `[appserver root]/bin`.
-1. Introduzca el siguiente comando, reemplazando *server_name* por el nombre de su servidor de aplicaciones WebSphere:
+1. Desde un símbolo del sistema, vaya a la `[appserver root]/bin` directorio.
+1. Introduzca el siguiente comando, sustituyendo *server_name* con el nombre de su servidor de aplicaciones WebSphere:
 
-   * (Windows) `stopServer.bat`*nombre_servidor*
-   * (Linux, UNIX) ./ `stopServer.sh`*nombre_servidor*
-
+   * (Windows) `stopServer.bat`*server_name*
+   * (Linux, UNIX) ./ `stopServer.sh`*server_name*

@@ -1,8 +1,8 @@
 ---
 title: Marketing por correo electrónico
-seo-title: Marketing por correo electrónico
+seo-title: E-mail Marketing
 description: El marketing por correo electrónico (por ejemplo, boletines), constituye una parte importante de cualquier campaña de marketing, ya que se emplea para destacar contenidos con el fin de que estos lleguen a sus posibles clientes. En AEM, es posible crear boletines a partir de contenido existente de AEM, así como añadir contenido nuevo, específico para los boletines.
-seo-description: El marketing por correo electrónico (por ejemplo, boletines), constituye una parte importante de cualquier campaña de marketing, ya que se emplea para destacar contenidos con el fin de que estos lleguen a sus posibles clientes. En AEM, es posible crear boletines a partir de contenido existente de AEM, así como añadir contenido nuevo, específico para los boletines.
+seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
 uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1758'
 ht-degree: 96%
 
 ---
-
 
 # Marketing por correo electrónico{#e-mail-marketing}
 
@@ -39,7 +38,7 @@ Asimismo, AEM permite administrar la funcionalidad de la newsletter, incluyendo 
 En este documento se describen los conceptos básicos para crear boletines en AEM. Para obtener más información sobre cómo trabajar con estrategias de marketing por correo electrónico, consulte los siguientes documentos:
 
 * [Crear una página de aterrizaje del boletín eficaz](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
-* [Administración de suscripciones](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md) 
+* [Administración de suscripciones](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
 * [Publicar un mensaje de correo electrónico para los proveedores de servicios de correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
 * [Seguimiento de correos electrónicos devueltos](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
@@ -133,7 +132,7 @@ Para personalizar una newsletter y simular su aspecto:
 
 >[!NOTE]
 >
->Antes de enviar newsletters, compruebe la configuración de OSGi para Day CQ Link Externalizer en `https://localhost:4502/system/console/configMgr`.
+>Antes de enviar newsletters, compruebe la configuración OSGi para Day CQ Link Externalizer en `https://localhost:4502/system/console/configMgr`.
 >
 >De forma predeterminada, el valor del parámetro es `localhost:4502` y la operación no podrá completarse si se cambia el puerto de ejecución de la instancia.
 
@@ -221,7 +220,7 @@ El boletín se puede enviar desde el propio boletín o desde la lista. Se descri
 
 >[!NOTE]
 >
->Antes de enviar newsletters, compruebe la configuración de OSGi para Day CQ Link Externalizer en `https://localhost:4502/system/console/configMgr`.
+>Antes de enviar newsletters, compruebe la configuración OSGi para Day CQ Link Externalizer en `https://localhost:4502/system/console/configMgr`.
 >
 >De forma predeterminada, el valor del parámetro es `localhost:4502` y la operación no podrá completarse si se cambia el puerto de ejecución de la instancia.
 
@@ -229,7 +228,7 @@ El boletín se puede enviar desde el propio boletín o desde la lista. Se descri
 >
 >Si actualiza los proveedores de correo electrónico, haga una prueba piloto o envíe un boletín; estas operaciones fallarán si el boletín no está publicado en la instancia Publicar o si esta instancia no está disponible. Asegúrese de publicar el boletín y de que la instancia Publicar funciona correctamente.
 
-### Enviar boletines desde una campaña  {#sending-newsletters-from-a-campaign}
+### Enviar boletines desde una campaña {#sending-newsletters-from-a-campaign}
 
 Para enviar un boletín desde la campaña:
 
@@ -256,7 +255,7 @@ Para enviar un boletín desde la campaña:
    >
    >Asegúrese de ser uno de los destinatarios para que pueda comprobar la recepción de la newsletter.
 
-### Envío de newsletters desde una lista  {#sending-newsletters-from-a-list}
+### Envío de newsletters desde una lista {#sending-newsletters-from-a-list}
 
 Para enviar un boletín desde una lista:
 
@@ -278,7 +277,7 @@ Para enviar un boletín desde una lista:
 
 1. El final de la configuración se ha confirmado. Haga clic en **Enviar** para enviar el boletín seleccionado a la lista especificada de posibles clientes.
 
-   ![mcm_newslettersenddialog_confirm](assets/mcm_newslettersenddialog_confirmation.png)
+   ![mcm_newsletters senddialog_confirmation](assets/mcm_newslettersenddialog_confirmation.png)
 
    La newsletter se enviará a los destinatarios seleccionados.
 
@@ -286,7 +285,7 @@ Para enviar un boletín desde una lista:
 
 En esta sección se describe cómo suscribirse a un boletín.
 
-### Suscripción al boletín  {#subscribing-to-a-newsletter-1}
+### Suscripción al boletín {#subscribing-to-a-newsletter-1}
 
 Para suscribirse a una newsletter (usando el sitio web de Geometrixx como ejemplo):
 

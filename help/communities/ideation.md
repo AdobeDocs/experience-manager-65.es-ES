@@ -1,28 +1,27 @@
 ---
-title: Ideas esenciales
-seo-title: Ideas esenciales
-description: Descripción general de la función Ideación
-seo-description: Descripción general de la función Ideación
+title: Aspectos básicos de la idea
+seo-title: Ideation Essentials
+description: Información general sobre la función de ideación
+seo-description: Ideation feature overview
 uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 7ad3592b-f8b5-45c0-97bc-15f781d7b811
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '106'
 ht-degree: 4%
 
 ---
 
+# Aspectos básicos de la idea {#ideation-essentials}
 
-# Ideals Essentials {#ideation-essentials}
+Esta página proporciona la información esencial para trabajar con la función de ideación, que es similar a un foro, pero con la capacidad de guardar como borrador y con una sensación más colaborativa.
 
-Esta página provee la información esencial para trabajar con la función de ideación, que es similar a un foro, pero con la capacidad de guardar como borrador y una sensación más colaborativa.
-
-## Esenciales para el cliente {#essentials-for-client-side}
+## Elementos esenciales para el cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -48,7 +47,7 @@ Esta página provee la información esencial para trabajar con la función de id
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="ideation-feature.md">Función de idea</a></td>
+   <td>Consulte <a href="ideation-feature.md">Función de ideación</a></td>
   </tr>
  </tbody>
 </table>
@@ -57,4 +56,4 @@ Esta página provee la información esencial para trabajar con la función de id
 
 ### Función ideación {#ideation-function}
 
-Una estructura de sitio de comunidad que incluye la [función de Ideación](functions.md#ideation-function), incluye un componente `ideation` configurado.
+Una estructura de sitio de la comunidad que incluye el [Función de ideación](functions.md#ideation-function), incluye un `ideation` componente.

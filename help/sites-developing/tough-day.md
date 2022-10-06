@@ -123,7 +123,7 @@ Puede encontrar los parámetros relevantes en la lista siguiente:
 
 | **Parámetro** | **Descripción** | **Valor predeterminado** | **Valores posibles** |
 |---|---|---|---|
-| `--installsamplecontent=<Val>` | Instale o omita el paquete de contenido predeterminado del Día duro 2. | verdadero | true o false |
+| `--installsamplecontent=<Val>` | Instale o omita el paquete de contenido predeterminado del Día duro 2. | true | true o false |
 | `--protocol=<Val>` | El protocolo utilizado para el host. | http | http o https |
 | `--host=<Val>` | El nombre de host o la IP a la que se dirigirá. |  |  |
 | `--port=<Val>` | Puerto del host. | 4502 |  |

@@ -1,8 +1,8 @@
 ---
 title: Arquitectura y topologías de implementación para AEM Forms
-seo-title: Arquitectura y topologías de implementación para AEM Forms
+seo-title: Architecture and deployment topologies for AEM Forms
 description: Detalles de arquitectura para AEM Forms y topologías recomendadas para clientes AEM nuevos y existentes que actualizan de LiveCycle ES4 a AEM Forms.
-seo-description: Detalles de arquitectura para AEM Forms y topologías recomendadas para clientes AEM nuevos y existentes que actualizan de LiveCycle ES4 a AEM Forms.
+seo-description: Architecture details for AEM Forms and recommended topologies for new and existing AEM customers and customers upgrading from LiveCycle ES4 to AEM Forms.
 uuid: 90baa57a-4785-4b49-844c-a44717d3c12d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,8 +13,8 @@ role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2490'
-ht-degree: 0%
+source-wordcount: '2460'
+ht-degree: 1%
 
 ---
 
@@ -22,35 +22,35 @@ ht-degree: 0%
 
 ## Arquitectura {#architecture}
 
-AEM Forms es una aplicación implementada en AEM como paquete de AEM. El paquete se conoce como paquete de complementos de AEM Forms. El paquete de complementos de AEM Forms contiene ambos servicios (proveedores de API), que se implementan en el contenedor OSGi de AEM, y servlets o JSP (que proporcionan funcionalidad de API de front-end y REST) administrados por el marco de trabajo AEM Sling. En el diagrama siguiente se muestra esta configuración:
+AEM Forms es una aplicación implementada en AEM como paquete de AEM. El paquete se conoce como paquete de complementos de AEM Forms. El paquete de complementos de AEM Forms contiene ambos servicios (proveedores de API), que se implementan en el contenedor OSGi de AEM, y servlets o JSP (que proporcionan funcionalidad de API de front-end y REST) administrados por el marco de trabajo AEM Sling. El diagrama siguiente muestra esta configuración:
 
 ![arquitectura](assets/architecture.png)
 
 La arquitectura para AEM Forms incluye los siguientes componentes:
 
 * **Servicios AEM principales:** Servicios básicos que AEM a una aplicación implementada. Estos servicios incluyen un repositorio de contenido compatible con JCR, un contenedor de servicio OSGI, un motor de flujo de trabajo, un almacén de confianza, un almacén de claves, etc. Estos servicios están disponibles para la aplicación de AEM Forms, pero los paquetes de AEM Forms no los proporcionan. Estos servicios forman parte integral de la pila de AEM general y varios componentes de AEM Forms utilizan estos servicios.
-* **Servicios de Forms:** proporcione funciones relacionadas con los formularios, como crear, ensamblar, distribuir y archivar documentos PDF, agregar firmas digitales para limitar el acceso a documentos y descodificar formularios codificados de barras. Estos servicios están disponibles públicamente para el consumo mediante el código personalizado que se ha implementado en AEM.
-* **Capa web:** JSP o servlets creados sobre servicios comunes y de formularios que proporcionan las siguientes funcionalidades:
+* **Servicios de Forms:** Proporcionar funciones relacionadas con los formularios, como crear, ensamblar, distribuir y archivar documentos PDF, agregar firmas digitales para limitar el acceso a documentos y descodificar formularios codificados de barras. Estos servicios están disponibles públicamente para el consumo mediante el código personalizado que se ha implementado en AEM.
+* **Capa web:** JSP o servlets, creados sobre servicios comunes y de formularios, que proporcionan las siguientes funcionalidades:
 
-   * **Crear front-end**: Una interfaz de usuario de creación y administración de formularios para la creación y administración de formularios.
+   * **Creación de front-end**: Una interfaz de usuario de creación y administración de formularios para la creación y administración de formularios.
    * **Procesamiento de formularios y envío de front-end**: Interfaz de usuario final para que la utilicen los usuarios finales de AEM Forms (por ejemplo, los ciudadanos que acceden a un sitio web del Gobierno). Proporciona funciones de representación de formularios (formulario de visualización en un explorador web) y envío.
    * **API de REST**: Los JSP y los servlets exportan un subconjunto de servicios de formularios para consumo remoto por clientes basados en HTTP, como el SDK móvil de formularios.
 
-**AEM Forms en OSGi:** Un AEM Forms en un entorno OSGi es un AEM Author estándar o AEM Publish con el paquete de AEM Forms implementado en él. Puede ejecutar AEM Forms en OSGi en un [entorno de servidor único, una granja y configuraciones agrupadas](/help/sites-deploying/recommended-deploys.md). La configuración del clúster solo está disponible para instancias de AEM Author.
+**AEM Forms en OSGi:** Un AEM Forms en un entorno OSGi es un AEM Author estándar o AEM Publish con el paquete de AEM Forms implementado en él. Puede ejecutar AEM Forms en OSGi en un [entorno de servidor único, configuración de granja y clúster](/help/sites-deploying/recommended-deploys.md). La configuración del clúster solo está disponible para instancias de AEM Author.
 
 **AEM Forms en JEE:** AEM Forms en JEE es un servidor de AEM Forms que se ejecuta en la pila JEE. Tiene AEM Author con paquetes de complementos de AEM Forms y capacidades adicionales de AEM Forms JEE co-implementadas en una única pila JEE que se ejecuta en un servidor de aplicaciones. Puede ejecutar AEM Forms en JEE en configuraciones de un solo servidor y agrupadas. AEM Forms en JEE solo es necesario para ejecutar la seguridad de documentos, la administración de procesos y para clientes de LiveCycle que actualizan a AEM Forms. Estos son algunos escenarios adicionales para usar AEM Forms en JEE:
 
-* **Compatibilidad con el espacio de trabajo HTML (para clientes que utilizan espacio de trabajo HTML):** AEM Forms en JEE habilita el inicio de sesión único con instancias de procesamiento, sirve a ciertos recursos procesados en instancias de procesamiento y gestiona el envío de formularios procesados en el espacio de trabajo HTML.
-* **Procesamiento** de datos de formulario/comunicación interactiva adicional avanzado: AEM Forms en JEE se puede utilizar para procesar formularios o datos de comunicación interactivos adicionales (y guardar los resultados en un almacén de datos adecuado) en casos de uso complejos en los que se requieren capacidades avanzadas de administración de procesos.
+* **Compatibilidad con el espacio de trabajo del HTML (para clientes que utilizan el espacio de trabajo del HTML):** AEM Forms en JEE habilita el inicio de sesión único con instancias de procesamiento, sirve para ciertos recursos procesados en instancias de procesamiento y gestiona el envío de formularios procesados en el espacio de trabajo del HTML.
+* **Procesamiento de datos de formulario/comunicación interactiva adicional avanzado**: AEM Forms en JEE se puede utilizar para procesar formularios o datos de comunicación interactivos adicionales (y guardar los resultados en un almacén de datos adecuado) en casos de uso complejos en los que se requieren capacidades avanzadas de administración de procesos.
 
 AEM Forms en JEE también incluye los siguientes servicios de apoyo a los componentes de AEM:
 
-* **Administración integrada de usuarios:** permite que los usuarios de AEM Forms en JEE se reconozcan como formularios AEM en los usuarios de OSGi y ayuda a habilitar SSO para los usuarios de OSGi y JEE. Esto es necesario en los casos en los que se requiera el inicio de sesión único entre AEM formularios en OSGi y AEM Forms en JEE (por ejemplo, espacio de trabajo HTML).
+* **Administración de usuarios integrada:** Permite que los usuarios de AEM Forms en JEE se reconozcan como formularios AEM en los usuarios de OSGi y ayuda a habilitar SSO para los usuarios de OSGi y JEE. Esto es necesario en los casos en los que se requiera el inicio de sesión único entre AEM formularios en OSGi y AEM Forms en JEE (por ejemplo, en el espacio de trabajo de HTML).
 * **Alojamiento de recursos:** AEM Forms en JEE puede servir recursos (por ejemplo, formularios HTML5) procesados en AEM Forms en OSGi.
 
-La interfaz de usuario de creación de AEM Forms no admite la creación de documentos de registro (DOR), PDF forms y HTML5 Forms. Estos recursos están diseñados con la aplicación independiente de Forms Designer y se cargan individualmente en AEM Forms Manager. Alternativamente, para AEM Forms en JEE, los formularios se pueden diseñar como recursos de aplicación (en AEM Forms Workbench) e implementarse en AEM Forms en el servidor JEE.
+La interfaz de usuario de creación de AEM Forms no admite la creación de documentos de registro (DOR), PDF forms y Forms de HTML5. Estos recursos están diseñados con la aplicación independiente de Forms Designer y se cargan individualmente en AEM Forms Manager. Alternativamente, para AEM Forms en JEE, los formularios se pueden diseñar como recursos de aplicación (en AEM Forms Workbench) e implementarse en AEM Forms en el servidor JEE.
 
-Tanto AEM Forms en OSGi como AEM Forms en JEE tienen funcionalidades de flujo de trabajo. Puede crear e implementar rápidamente flujos de trabajo básicos para diversas tareas en los formularios AEM en OSGi, sin tener que instalar la capacidad completa de Gestión de procesos de AEM Forms en JEE. Hay alguna diferencia en las [características del flujo de trabajo centrado en formularios en AEM Forms en OSGi y en la capacidad de administración de procesos de AEM Forms en JEE](capabilities-osgi-jee-workflows.md). El desarrollo y la administración de flujos de trabajo centrados en formularios en AEM Forms en OSGi utilizan las funciones conocidas AEM Workflow y AEM Inbox .
+Tanto AEM Forms en OSGi como AEM Forms en JEE tienen funcionalidades de flujo de trabajo. Puede crear e implementar rápidamente flujos de trabajo básicos para diversas tareas en los formularios AEM en OSGi, sin tener que instalar la capacidad completa de Gestión de procesos de AEM Forms en JEE. Hay alguna diferencia en la variable [funciones del flujo de trabajo centrado en formularios en AEM Forms sobre OSGi y la capacidad de administración de procesos de AEM Forms en JEE](capabilities-osgi-jee-workflows.md). El desarrollo y la administración de flujos de trabajo centrados en formularios en AEM Forms en OSGi utilizan las funciones conocidas AEM Workflow y AEM Inbox .
 
 ## Terminologías {#terminologies}
 
@@ -58,29 +58,29 @@ La siguiente imagen muestra varias configuraciones AEM servidor de Form y sus co
 
 ![aem_forms_-_recommendations_dtopología](assets/aem_forms_-_recommendedtopology.png)
 
-**Autor:** una instancia de autor es un servidor de AEM Forms que se ejecuta en el modo de ejecución estándar de Autor. Puede ser AEM Forms en JEE o AEM Forms en un entorno OSGi. Está diseñado para usuarios internos, formularios y diseñadores de comunicación interactivos, así como para desarrolladores. Habilita las siguientes funcionalidades:
+**Autor:** Una instancia de autor es un servidor de AEM Forms que se ejecuta en el modo de ejecución estándar de Autor. Puede ser AEM Forms en JEE o AEM Forms en un entorno OSGi. Está diseñado para usuarios internos, formularios y diseñadores de comunicación interactivos, así como para desarrolladores. Habilita las siguientes funcionalidades:
 
-* **Creación y administración de formularios y comunicaciones interactivas:** los diseñadores y desarrolladores pueden crear y editar formularios adaptables y comunicaciones interactivas, cargar otros tipos de formularios creados externamente, por ejemplo, formularios creados en Adobe Forms Designer, y administrar estos recursos mediante la consola de Forms Manager.
-* **Publicación de formularios y comunicaciones interactivas:**  Los recursos alojados en una instancia de autor se pueden publicar en una instancia de publicación para realizar operaciones de tiempo de ejecución. La publicación de recursos utiliza las funciones de replicación de AEM. Adobe recomienda que se configure un agente de replicación en todas las instancias de autor para insertar manualmente los formularios publicados en las instancias de procesamiento, y que se configure otro agente de replicación en las instancias de procesamiento con el déclencheur *On Receive* habilitado para replicar automáticamente los formularios recibidos en las instancias de publicación.
+* **Creación y administración de formularios y comunicaciones interactivas:** Los diseñadores y desarrolladores pueden crear y editar formularios adaptables y comunicaciones interactivas, cargar otros tipos de formularios creados externamente, por ejemplo, formularios creados en Adobe Forms Designer, y administrar estos recursos mediante la consola de Forms Manager.
+* **Publicación de formularios y comunicaciones interactivas:** Los recursos alojados en una instancia de autor se pueden publicar en una instancia de publicación para realizar operaciones de tiempo de ejecución. La publicación de recursos utiliza las funciones de replicación de AEM. Adobe recomienda que se configure un agente de replicación en todas las instancias de autor para insertar manualmente los formularios publicados en las instancias de procesamiento, y que se configure otro agente de replicación en las instancias de procesamiento con la variable *Recepción activada* déclencheur habilitado para replicar automáticamente los formularios recibidos en las instancias de publicación.
 
-**Publicar:** una instancia de publicación es un servidor de AEM Forms que se ejecuta en el modo de ejecución estándar de Publicar. Las instancias de publicación están destinadas a los usuarios finales de aplicaciones basadas en formularios, por ejemplo, los usuarios que acceden a un sitio web público y envían formularios. Habilita las siguientes funcionalidades:
+**Publicar:** Una instancia de publicación es un servidor de AEM Forms que se ejecuta en el modo de ejecución de publicación estándar. Las instancias de publicación están destinadas a los usuarios finales de aplicaciones basadas en formularios como, por ejemplo, los usuarios que acceden a un sitio web público y envían formularios. Habilita las siguientes funcionalidades:
 
 * Procesamiento y envío de Forms para usuarios finales.
-* Transportación de datos de formulario enviados sin procesar a instancias de procesamiento para su posterior procesamiento y almacenamiento en el sistema final de registro. La implementación predeterminada que se proporciona en AEM Forms logra esto utilizando las capacidades de replicación inversa de AEM. También hay una implementación alternativa disponible para insertar directamente los datos del formulario en servidores de procesamiento en lugar de guardarlos localmente primero (siendo este último un requisito previo para que se active la replicación inversa). Los clientes que tienen problemas con el almacenamiento de datos potencialmente confidenciales en instancias de publicación pueden participar en esta [implementación alternativa](/help/forms/using/configuring-draft-submission-storage.md), ya que las instancias de procesamiento normalmente se encuentran en una zona más segura.
+* Transportación de datos de formulario enviados sin procesar a instancias de procesamiento para su posterior procesamiento y almacenamiento en el sistema final de registro. La implementación predeterminada que se proporciona en AEM Forms logra esto utilizando las capacidades de replicación inversa de AEM. También hay una implementación alternativa disponible para insertar directamente los datos del formulario en servidores de procesamiento en lugar de guardarlos localmente primero (siendo este último un requisito previo para que se active la replicación inversa). Los clientes que tengan dudas sobre el almacenamiento de datos potencialmente confidenciales en instancias de publicación pueden participar en esto [implementación alternativa](/help/forms/using/configuring-draft-submission-storage.md), ya que las instancias de procesamiento normalmente se encuentran en una zona más segura.
 * Presentación y envío de comunicaciones y cartas interactivas: Se procesa una comunicación interactiva y una carta en las instancias de publicación y los datos correspondientes se envían a instancias de procesamiento para su almacenamiento y posprocesamiento. Los datos se pueden guardar localmente en una instancia de publicación y replicarse de forma inversa en una instancia de procesamiento (opción predeterminada) posteriormente, o insertarse directamente en la instancia de procesamiento sin guardar en la instancia de publicación. Esta última implementación es útil para los clientes conscientes de la seguridad.
 
-**Procesamiento:** instancia de AEM Forms que se ejecuta en modo de ejecución de Autor sin usuarios asignados al grupo de administrador de formularios. Puede implementar AEM Forms en JEE o AEM Forms en OSGi como instancia de procesamiento. Los usuarios no están asignados para garantizar que las actividades de creación y administración de formularios no se realicen en la instancia de procesamiento y solo se produzcan en la instancia de autor. Una instancia de procesamiento habilita las siguientes funcionalidades:
+**Procesando:** Instancia de AEM Forms que se ejecuta en modo de ejecución de Autor sin usuarios asignados al grupo de administrador de formularios. Puede implementar AEM Forms en JEE o AEM Forms en OSGi como instancia de procesamiento. Los usuarios no están asignados para garantizar que las actividades de creación y administración de formularios no se realicen en la instancia de procesamiento y solo se produzcan en la instancia de autor. Una instancia de procesamiento habilita las siguientes funcionalidades:
 
-* **Procesamiento de datos de formulario sin procesar procedentes de una instancia de publicación:**  Esto se logra principalmente en una instancia de procesamiento a través de flujos de trabajo de AEM que generan déclencheur cuando llegan los datos. Los flujos de trabajo pueden utilizar el paso Modelo de datos de formulario que se proporciona de forma predeterminada para archivar los datos o el documento en un almacén de datos adecuado.
-* **Almacenamiento seguro de los datos** del formulario: El procesamiento proporciona un repositorio detrás del cortafuegos para los datos de formulario sin procesar que están aislados de los usuarios. Ni los diseñadores de formularios de la instancia de autor ni los usuarios finales de la instancia de publicación pueden acceder a este repositorio.
+* **Procesamiento de los datos de formulario sin procesar procedentes de una instancia de publicación:** Esto se logra principalmente en una instancia de procesamiento a través de flujos de trabajo AEM que generan déclencheur cuando llegan los datos. Los flujos de trabajo pueden utilizar el paso Modelo de datos de formulario que se proporciona de forma predeterminada para archivar los datos o el documento en un almacén de datos adecuado.
+* **Almacenamiento seguro de datos de formulario**: El procesamiento proporciona un repositorio detrás del cortafuegos para los datos de formulario sin procesar que están aislados de los usuarios. Ni los diseñadores de formularios de la instancia de autor ni los usuarios finales de la instancia de publicación pueden acceder a este repositorio.
 
    >[!NOTE]
    >
    > Adobe recomienda utilizar un almacén de datos de terceros para guardar los datos procesados finales en lugar de utilizar AEM repositorio.
 
-* **Almacenamiento y posprocesamiento de los datos de correspondencia que llegan desde una instancia de publicación:** AEM los flujos de trabajo realizan el posprocesamiento opcional de las definiciones de letras correspondientes. Estos flujos de trabajo pueden guardar los datos procesados finales en un almacén de datos externo adecuado.
+* **Almacenamiento y posprocesamiento de los datos de correspondencia que llegan desde una instancia de publicación:** AEM flujos de trabajo realizan el posprocesamiento opcional de las definiciones de letras correspondientes. Estos flujos de trabajo pueden guardar los datos procesados finales en un almacén de datos externo adecuado.
 
-* **Alojamiento** de HTML Workspace: Una instancia de procesamiento aloja el front-end para HTML Workspace. El espacio de trabajo HTML proporciona la interfaz de usuario para la asignación de tareas/grupos asociada para los procesos de revisión y aprobación.
+* **Alojamiento en HTML Workspace**: Una instancia de procesamiento aloja el front-end para HTML Workspace. El espacio de trabajo del HTML proporciona la interfaz de usuario para la asignación de tareas/grupos asociados para los procesos de revisión y aprobación.
 
 Una instancia de procesamiento está configurada para ejecutarse en el modo de ejecución del autor porque:
 
@@ -93,9 +93,9 @@ Las topologías de AEM Forms en JEE recomendadas a continuación están destinad
 
 ### Topología para utilizar document services o funciones de seguridad de documentos {#topology-for-using-document-services-or-document-security-capabilities}
 
-Los clientes de AEM Forms que planeen utilizar únicamente servicios de documentos o capacidades de seguridad de documentos pueden tener una topología similar a la que se muestra a continuación. Esta topología recomienda utilizar una sola instancia de AEM Forms. También puede crear un clúster o una granja de servidores de AEM Forms, si es necesario. Esta topología se recomienda cuando la mayoría de los usuarios acceden mediante programación a las capacidades del servidor AEM Forms y la intervención a través de la interfaz de usuario es mínima. La topología es útil en las operaciones de procesamiento por lotes de document services. Por ejemplo, el uso del servicio de salida para crear cientos de documentos PDF no editables diariamente.
+Los clientes de AEM Forms que planeen utilizar únicamente servicios de documentos o capacidades de seguridad de documentos pueden tener una topología similar a la que se muestra a continuación. Esta topología recomienda utilizar una sola instancia de AEM Forms. También puede crear un clúster o una granja de servidores de AEM Forms, si es necesario. Esta topología se recomienda cuando la mayoría de los usuarios acceden mediante programación a las capacidades del servidor AEM Forms y la intervención a través de la interfaz de usuario es mínima. La topología es útil en las operaciones de procesamiento por lotes de document services. Por ejemplo, utilizar el servicio de salida para crear cientos de documentos PDF no editables diariamente.
 
-Aunque AEM Forms le permite configurar y ejecutar todas las funcionalidades desde un solo servidor, debe planificar la capacidad, equilibrar la carga y configurar servidores dedicados para funcionalidades específicas en un entorno de producción. Por ejemplo, para un entorno que utilice el servicio PDF Generator para convertir miles de páginas al día y agregar firmas digitales para limitar el acceso a los documentos, configure servidores AEM Forms independientes para el servicio PDF Generator y las funciones de firma digital. Ayuda a proporcionar un rendimiento óptimo y a escalar los servidores de forma independiente entre sí.
+Aunque AEM Forms le permite configurar y ejecutar todas las funcionalidades desde un solo servidor, debe planificar la capacidad, equilibrar la carga y configurar servidores dedicados para funcionalidades específicas en un entorno de producción. Por ejemplo, para un entorno que utiliza el servicio Generador de PDF para convertir miles de páginas al día y agregar firmas digitales para limitar el acceso a los documentos, configure servidores AEM Forms independientes para el servicio Generador de PDF y las funciones de firma digital. Ayuda a proporcionar un rendimiento óptimo y a escalar los servidores de forma independiente entre sí.
 
 ![basic-features](assets/basic-features.png)
 
@@ -109,17 +109,17 @@ El almacén de datos de formulario es un almacén de datos de terceros que se ut
 
 ![topología_for_usinghtmlworkspaceandformsapp](assets/topology_for_usinghtmlworkspaceandformsapp.png)
 
-Se recomienda la topología a los clientes que planean utilizar AEM Forms en el servidor JEE para funcionalidades de administración de procesos (espacio de trabajo HTML) sin utilizar ninguna funcionalidad de posprocesamiento, formularios adaptables, formularios HTML5 y comunicaciones interactivas.
+Se recomienda la topología a los clientes que planean utilizar AEM Forms en el servidor JEE para las funcionalidades de administración de procesos (espacio de trabajo del HTML) sin utilizar ninguna funcionalidad de posprocesamiento, formularios adaptables, formularios HTML5 y comunicaciones interactivas.
 
 ### Topología para el uso de formularios adaptables, formularios HTML5, funciones de comunicación interactiva {#topology-for-using-adaptive-forms-html-forms-interactive-communication-capabilities}
 
-Los clientes de AEM Forms que planean utilizar las funciones de captura de datos de AEM Forms, por ejemplo, formularios adaptables, HTML5 Forms, PDF forms, pueden tener una topología similar a la que se muestra a continuación. Esta topología también se recomienda para usar capacidades de comunicación interactiva de AEM Forms.
+Los clientes de AEM Forms que planean utilizar las funciones de captura de datos de AEM Forms, por ejemplo, los formularios adaptables, HTML5 Forms, PDF forms, pueden tener una topología similar a la que se muestra a continuación. Esta topología también se recomienda para usar capacidades de comunicación interactiva de AEM Forms.
 
 ![topología-para-uso-forms-osgi-module](assets/topology-for-using-forms-osgi-modules.png)
 
 Puede realizar los siguientes cambios o personalizaciones en la topología sugerida anteriormente:
 
-* El uso de HTML Workspace y la aplicación AEM Forms requiere un autor AEM o una instancia de procesamiento. Puede utilizar la instancia de autor de AEM integrada en AEM Forms en el servidor JEE en lugar de configurar un servidor de autor de AEM externo adicional.
+* El uso de HTML Workspace y la aplicación de AEM Forms requiere un autor AEM o una instancia de procesamiento. Puede utilizar la instancia de autor de AEM integrada en AEM Forms en el servidor JEE en lugar de configurar un servidor de autor de AEM externo adicional.
 * Una instancia de AEM Author o Processing solo es necesaria para flujos de trabajo centrados en Forms en OSGi, formularios adaptables, portal de formularios y comunicación interactiva.
 * la interfaz de usuario del agente de comunicación interactiva se suele ejecutar dentro de la organización. Por lo tanto, puede mantener un servidor de publicación para la interfaz de usuario del agente dentro de la red privada.
 * AEM formularios en la instancia OSGi integrada en AEM Forms en el servidor JEE también pueden ejecutar flujos de trabajo centrados en Forms en OSGi y carpetas vigiladas.
@@ -128,7 +128,7 @@ Puede realizar los siguientes cambios o personalizaciones en la topología suger
 
 ### Topología para la captura de datos, comunicación interactiva, flujo de trabajo centrado en formularios sobre las capacidades de OSGi {#topology-for-data-capture-interactive-communication-form-centric-workflow-on-osgi-capabilities}
 
-Los clientes de AEM Forms que planean utilizar las funciones de captura de datos de AEM Forms, por ejemplo, formularios adaptables, HTML5 Forms, PDF forms, pueden tener una topología similar a la que se muestra a continuación. Esta topología también se recomienda para utilizar comunicaciones interactivas y flujos de trabajo centrados en Forms en la capacidad OSGi, por ejemplo, para utilizar AEM Bandeja de entrada y AEM Forms App para flujos de trabajo de procesos empresariales.
+Los clientes de AEM Forms que planean utilizar las funciones de captura de datos de AEM Forms, por ejemplo, los formularios adaptables, HTML5 Forms, PDF forms, pueden tener una topología similar a la que se muestra a continuación. Esta topología también se recomienda para utilizar comunicaciones interactivas y flujos de trabajo centrados en Forms en la capacidad OSGi, por ejemplo, para utilizar AEM Bandeja de entrada y AEM Forms App para flujos de trabajo de procesos empresariales.
 
 ![Interactive-use-cases-af-cm-osgi-workflow](assets/interactive-use-cases-af-cm-osgi-workflow.png)
 
@@ -140,8 +140,8 @@ Los clientes de AEM Forms que planean utilizar Carpetas vigiladas para el proces
 
 ### Topología para utilizar las funcionalidades de document services para el procesamiento sin conexión basado en API {#topology-for-using-document-services-capabilities-for-offline-api-based-processing}
 
-Los clientes de AEM Forms que planean utilizar únicamente la funcionalidad de document services pueden tener una topología similar a la que se muestra a continuación. Esta topología recomienda utilizar un clúster de AEM Forms en servidores OSGi. Esta topología se recomienda cuando la mayoría de los usuarios acceden mediante programación (mediante API) al servidor de AEM Forms y la intervención a través de la interfaz de usuario es mínima. La topología es muy útil en varios casos de cliente de software. Por ejemplo, varios clientes que utilizan el servicio PDF Generator para crear documentos PDF bajo demanda.
+Los clientes de AEM Forms que planean utilizar únicamente la funcionalidad de document services pueden tener una topología similar a la que se muestra a continuación. Esta topología recomienda utilizar un clúster de AEM Forms en servidores OSGi. Esta topología se recomienda cuando la mayoría de los usuarios acceden mediante programación (mediante API) al servidor de AEM Forms y la intervención a través de la interfaz de usuario es mínima. La topología es muy útil en varios casos de cliente de software. Por ejemplo, varios clientes que utilizan el servicio Generador de PDF para crear documentos PDF bajo demanda.
 
-Aunque AEM Forms le permite configurar y ejecutar todas las funcionalidades desde un solo servidor, debe planificar la capacidad, equilibrar la carga y configurar servidores dedicados para funcionalidades específicas en un entorno de producción. Por ejemplo, para un entorno que utiliza el servicio Generador de PDF para convertir miles de páginas al día y varios formularios adaptables para capturar datos, configure servidores AEM Forms independientes para el servicio Generador de PDF y las funciones de formularios adaptables. Ayuda a proporcionar un rendimiento óptimo y a escalar los servidores de forma independiente entre sí.
+Aunque AEM Forms le permite configurar y ejecutar todas las funcionalidades desde un solo servidor, debe planificar la capacidad, equilibrar la carga y configurar servidores dedicados para funcionalidades específicas en un entorno de producción. Por ejemplo, para un entorno que utiliza el servicio Generador de PDF para convertir miles de páginas al día y varios formularios adaptables para capturar datos, configure servidores AEM Forms independientes para el servicio Generador de PDF y las funcionalidades de formularios adaptables. Ayuda a proporcionar un rendimiento óptimo y a escalar los servidores de forma independiente entre sí.
 
 ![offline-api-based-processing](assets/offline-api-based-processing.png)

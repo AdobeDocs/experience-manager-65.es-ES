@@ -1,8 +1,8 @@
 ---
 title: Promoción de lanzamientos
-seo-title: Promoción de lanzamientos
-description: 'Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. '
-seo-description: 'Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. '
+seo-title: Promoting Launches
+description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo.
+seo-description: You need to promote launch pages to move the content back into the source (production) before publishing.
 uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ topic-tags: site-features
 discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 92%
+source-wordcount: '756'
+ht-degree: 98%
 
 ---
-
 
 # Promoción de lanzamientos{#promoting-launches}
 
@@ -35,7 +34,7 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 
 >[!CAUTION]
 >
->Un solo lanzamiento no se puede promocionar de forma simultánea. Esto significa que dos acciones de promoción en el mismo lanzamiento al mismo tiempo pueden resultar en un error - `Launch could not be promoted` (junto con errores de conflicto en el registro).
+>Un solo lanzamiento no se puede promocionar de forma simultánea. Esto significa que dos acciones promocionales en el mismo lanzamiento al mismo tiempo pueden dar lugar a un error: `Launch could not be promoted` (así como errores de conflictos en el registro).
 
 >[!CAUTION]
 >
@@ -49,9 +48,7 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 >
 >* [Promover un lanzamiento anidado](#promoting-a-nested-launch) cuando haya más de un lanzamiento en la estructura.
 >* [Lanzamientos: el orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obtener más información sobre la promoción y la publicación automáticas.
-
 >
-
 
 
 Puede promocionar los lanzamientos desde la consola **Sitios** o la consola **Lanzamientos**:
@@ -60,7 +57,7 @@ Puede promocionar los lanzamientos desde la consola **Sitios** o la consola **La
 
    * la consola **Sitios**:
 
-      1. Abra el [carril de referencias](/help/sites-authoring/author-environment-tools.md#showingpagereferences) y seleccione la página de origen requerida utilizando [modo de selección](/help/sites-authoring/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no es importante). Todas las referencias se mostrarán.
+      1. Abra el [carril de referencias](/help/sites-authoring/author-environment-tools.md#showingpagereferences) y seleccione la página de origen necesaria con el [modo de selección](/help/sites-authoring/basic-handling.md) (o seleccione y abra el carril de referencias, el orden no importa). Todas las referencias se mostrarán.
 
       1. Seleccione **Lanzamientos** (por ejemplo, Lanzamientos [1]) para mostrar una lista de los lanzamientos específicos.
       1. Seleccione el lanzamiento específico para mostrar las acciones disponibles.
@@ -108,7 +105,7 @@ Cuando está editando una página de lanzamiento, la acción **Promocionar lanza
 >
 >Esto se encuentra disponible para los [lanzamientos anidados](#promoting-a-nested-launch) y únicos.
 
-## Promocionar un lanzamiento anidado  {#promoting-a-nested-launch}
+## Promocionar un lanzamiento anidado {#promoting-a-nested-launch}
 
 Después de crear un lanzamiento anidado, puede promocionarlo a cualquiera de los orígenes, incluido el origen raíz (producción).
 
@@ -131,12 +128,12 @@ Después de crear un lanzamiento anidado, puede promocionarlo a cualquiera de lo
       * **Promocionar página actual**
       * **Promocionar la página actual y sus páginas secundarias**
 
-   ![chlimage_1-106](assets/chlimage_1-105.png)
+   ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. Seleccione **Siguiente**.
 1. Revise los detalles de la promoción antes de seleccionar **Promocionar**:
 
-   ![chlimage_1-105](assets/chlimage_1-106.png)
+   ![chlimage_1-106](assets/chlimage_1-106.png)
 
    >[!NOTE]
    >

@@ -104,7 +104,7 @@ Donde `<<YOUR_PROFILE>>` y `<<ADDITIONAL_FLAGS>>` se sustituyen por el perfil y 
  </tbody>
 </table>
 
-**Donde:**
+**donde:**
 
 * `mongo-host` es la IP del servidor MongoDB (por ejemplo, 127.0.0.1)
 

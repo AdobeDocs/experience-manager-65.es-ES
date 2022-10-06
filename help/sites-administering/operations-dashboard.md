@@ -259,7 +259,7 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
    <td><p>Esta comprobación se repite sobre los agentes de replicación y observa sus colas. Para el elemento de la parte superior de la cola, la comprobación busca cuántas veces el agente reintentó la replicación. Si el agente reintentó la replicación más que el valor de la variable <code>numberOfRetriesAllowed</code> devuelve una advertencia. La variable <code>numberOfRetriesAllowed</code> es configurable. </p> <p>El MBean para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=replicationQueue,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
-   <td>Trabajos sling</td>
+   <td>Trabajos de Sling</td>
    <td>
     <div>
       Sling Jobs comprueba el número de trabajos en cola en JobManager y los compara con el
@@ -637,13 +637,13 @@ Las tareas de mantenimiento personalizadas se pueden implementar como servicios 
   <tr>
    <td>granite.maintenance.isStoppable</td>
    <td>Atributo booleano que define si el usuario puede detener la tarea. Si una tarea declara que se puede detener, debe comprobar durante su ejecución si se ha detenido y, a continuación, actuar en consecuencia. El valor predeterminado es false.</td>
-   <td>verdadero</td>
+   <td>true</td>
    <td>Opcional</td>
   </tr>
   <tr>
    <td>granite.maintenance.mandatory</td>
    <td>Atributo booleano que define si una tarea es obligatoria y debe ejecutarse periódicamente. Si una tarea es obligatoria pero actualmente no está en ninguna ventana de programación activa, una comprobación de estado informará de esto como un error. El valor predeterminado es false.</td>
-   <td>verdadero</td>
+   <td>true</td>
    <td>Opcional</td>
   </tr>
   <tr>
@@ -840,7 +840,7 @@ También puede descargar un `JSON` resumen de la información del tablero hacien
     <ul>
      <li>Trabajos de flujo de trabajo:
       <ul>
-       <li>número de trabajos de flujo de trabajo fallidos (si hay)</li>
+       <li>número de trabajos de flujo de trabajo fallidos (si los hay)</li>
        <li>número de trabajos de flujo de trabajo cancelados (si hay)</li>
       </ul> </li>
     </ul>
@@ -860,7 +860,7 @@ También puede descargar un `JSON` resumen de la información del tablero hacien
    <td>Página Errores de flujo de trabajo</td>
   </tr>
   <tr>
-   <td>Trabajos sling</td>
+   <td>Trabajos de Sling</td>
    <td><p>Recuentos de trabajos de Sling - número de trabajos en un estado determinado (si los hay):</p>
     <ul>
      <li>error</li>

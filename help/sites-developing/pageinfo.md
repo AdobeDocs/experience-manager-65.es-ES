@@ -1,28 +1,27 @@
 ---
-title: Obtención de información de la página en formato JSON
-seo-title: Obtención de información de la página en formato JSON
+title: Obtención de información de página en formato JSON
+seo-title: Obtaining Page Information in JSON Format
 description: Para obtener la información de la página, envíe una solicitud al servlet PageInfo para obtener los metadatos de la página en formato JSON
-seo-description: Para obtener la información de la página, envíe una solicitud al servlet PageInfo para obtener los metadatos de la página en formato JSON
+seo-description: To obtain the page information, send a request to the PageInfo servlet to obtain the page metadata in JSON format
 uuid: fb4f56b9-55e2-4622-a0d1-a86d6f2cce86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
-translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 0%
+source-wordcount: '943'
+ht-degree: 2%
 
 ---
 
-
-# Obtención de información de la página en formato JSON{#obtaining-page-information-in-json-format}
+# Obtención de información de página en formato JSON{#obtaining-page-information-in-json-format}
 
 Para obtener la información de la página, envíe una solicitud al servlet PageInfo para obtener los metadatos de la página en formato JSON.
 
-El servlet PageInfo devuelve información sobre los recursos del repositorio. El servlet está enlazado a la dirección URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` y utiliza el parámetro `path` para identificar el recurso. La siguiente URL de ejemplo devuelve información sobre el nodo `/content/we-retail/us/en`:
+El servlet PageInfo devuelve información sobre los recursos del repositorio. El servlet está enlazado a la dirección URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` y utiliza la variable `path` para identificar el recurso. La siguiente URL de ejemplo devuelve información sobre la variable `/content/we-retail/us/en` nodo:
 
 ```shell
 http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retail/us/en
@@ -30,44 +29,42 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >[!NOTE]
 >
->Si necesita información de página en formato JSON para proporcionar el envío de contenido a canales que no son páginas web AEM tradicionales como:
+>Si necesita información de página en formato JSON para proporcionar la entrega de contenido a canales que no sean páginas web AEM tradicionales como:
 >
 >* Aplicaciones de una sola página
 >* Aplicaciones móviles nativas
 >* Otros canales y puntos de contacto externos a AEM
-
 >
->
-Consulte el documento [Exportador JSON para servicios de contenido](/help/sites-developing/json-exporter.md).
+>Consulte el documento [Exportador JSON para servicios de contenido](/help/sites-developing/json-exporter.md).
 
 ## Proveedores de información de página {#page-information-providers}
 
-Los componentes de página se pueden asociar con uno o varios servicios `com.day.cq.wcm.api.PageInfoProvider` que generan metadatos de página. El servlet PageInfo llama a cada servicio PageInfoProvider y agrega los metadatos:
+Los componentes de página se pueden asociar a uno o más `com.day.cq.wcm.api.PageInfoProvider` servicios que generan metadatos de página. El servlet PageInfo llama a cada servicio PageInfoProvider y agrega los metadatos:
 
 1. El cliente HTTP envía una solicitud al servlet PageInfo, que incluye la dirección URL de la página.
-1. El servlet PageInfo detecta qué componente representa la página.
+1. El servlet PageInfo detecta qué componente procesa la página.
 1. El servlet PageInfo llama a cada PageInfoProvider asociado al componente.
-1. El servlet agrega los metadatos que devuelve cada PageInfoProvider y los agrega a la respuesta HTTP de un objeto JSON.
+1. El servlet agrega los metadatos que cada PageInfoProvider devuelve y agrega los metadatos a la respuesta HTTP en un objeto JSON.
 
-![chlimage_1-2](assets/chlimage_1-2a.png)
+![Chlimage_1-2](assets/chlimage_1-2a.png)
 
 >[!NOTE]
 >
->De forma similar a PageInfoProviders, utilice ListInfoProviders para actualizar listas de información en formato JSON. (Consulte [Personalización de la Consola de administración de sitios Web](/help/sites-developing/customizing-siteadmin.md)).
+>De forma similar a PageInfoProviders, utilice ListInfoProviders para actualizar listas de información en formato JSON. (Consulte [Personalización de la consola de administración de sitios web](/help/sites-developing/customizing-siteadmin.md).)
 
 ## Proveedores de información de página predeterminados {#default-page-information-providers}
 
-El componente `/libs/foundation/components/page` está asociado con los siguientes servicios de PageInfoProvider:
+La variable `/libs/foundation/components/page` está asociado con los siguientes servicios de PageInfoProvider:
 
-* **Proveedor de estado de página predeterminado:** información sobre el estado de la página, como si está bloqueada, si la página es la carga útil de un flujo de trabajo activo y qué flujos de trabajo están disponibles para la página.
-* **Proveedor de información de relación directa:** información sobre la administración de varios sitios (MSM), como si la página forma parte de una impresión azul y si es una Live Copy.
-* **Content Language Servlet:** el idioma de la página actual e información sobre cada idioma en el que la página está disponible.
-* **Proveedor de estado de flujo de trabajo: información** de estado sobre el flujo de trabajo en ejecución que tiene la página como carga útil.
-* **Proveedor de información del paquete de workflow:** información sobre cada paquete de workflow almacenado en el repositorio y si cada paquete contiene el recurso actual.
-* **Proveedor de información del emulador:** información sobre los emuladores de dispositivos móviles disponibles para este recurso. Si el componente de página no representa páginas móviles, no hay emuladores disponibles.
-* **Proveedor de información de anotaciones:** información sobre anotaciones que se encuentran en la página.
+* **Proveedor de estado de página predeterminado:** Información sobre el estado de la página, como si está bloqueada o no, si la página es la carga útil de un flujo de trabajo activo y qué flujos de trabajo están disponibles para la página.
+* **Proveedor de información de relación activa:** Información sobre Multi Site Management (MSM), como si la página forma parte de una impresión azul y si es una Live Copy.
+* **Servlet de idioma de contenido:** El idioma de la página actual y la información sobre cada idioma en el que está disponible la página.
+* **Proveedor de estado del flujo de trabajo:** Información de estado sobre el flujo de trabajo en ejecución que tiene la página como carga útil.
+* **Proveedor de información del paquete de flujo de trabajo:** Información sobre cada paquete de flujo de trabajo almacenado en el repositorio y si cada paquete contiene el recurso actual.
+* **Proveedor de información del emulador:** Información sobre los emuladores de dispositivos móviles disponibles para este recurso. Si el componente de página no procesa páginas móviles, no hay emuladores disponibles.
+* **Proveedor de información de anotaciones:** Información sobre las anotaciones que se encuentran en la página.
 
-Por ejemplo, el servlet PageInfo devuelve la siguiente respuesta JSON para el nodo `/content/we-retail/us/en`:
+Por ejemplo, el servlet PageInfo devuelve la siguiente respuesta JSON para la variable `/content/we-retail/us/en` nodo:
 
 ```
 {
@@ -472,24 +469,23 @@ Por ejemplo, el servlet PageInfo devuelve la siguiente respuesta JSON para el no
 }
 ```
 
-## Filtrado de la información del paquete de workflow {#filtering-workflow-package-information}
+## Filtrado de la información del paquete del flujo de trabajo {#filtering-workflow-package-information}
 
-Configure el servicio Day CQ WCM Workflow Package Info Provider de modo que solo devuelva información sobre los paquetes de flujo de trabajo que le interesen. De forma predeterminada, el servicio Proveedor de información del paquete de workflow devuelve información sobre cada paquete de workflow del repositorio. La iteración en un subconjunto de paquetes de flujo de trabajo utiliza menos recursos del servidor.
+Configure el servicio Day CQ WCM Workflow Package Info Provider para que devuelva información solo sobre los paquetes de flujo de trabajo en los que esté interesado. De forma predeterminada, el servicio Workflow Package Info Provider devuelve información sobre cada paquete de flujo de trabajo del repositorio. La iteración en un subconjunto de paquetes de flujo de trabajo utiliza menos recursos del servidor.
 
 >[!NOTE]
 >
->La ficha Flujo de trabajo de la barra de tareas utiliza el servlet PageInfo para obtener una lista de los paquetes de flujo de trabajo. Desde la lista, puede seleccionar el paquete al que desea agregar la página actual. Los filtros que cree afectarán a esta lista.
+>La ficha Flujo de trabajo de la barra de tareas utiliza el servlet PageInfo para obtener una lista de paquetes de flujo de trabajo. En la lista, puede seleccionar el paquete al que desea añadir la página actual. Los filtros que cree afectarán a esta lista.
 
-
-El ID del servicio es `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Para crear un filtro, especifique un valor para una propiedad `workflowpackageinfoprovider.filter`.
+El ID del servicio es `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Para crear un filtro, especifique un valor para un `workflowpackageinfoprovider.filter` propiedad.
 
 Los valores de propiedad llevan el prefijo + o - seguido de la ruta del paquete:
 
-* La ruta es la ruta del nodo raíz del paquete de workflow. La ruta utiliza la sintaxis de FileVault.
-* Para incluir un paquete, utilice el prefijo +.
-* Para excluir un paquete, utilice el prefijo -.
+* La ruta es la ruta del nodo raíz del paquete de flujo de trabajo. La ruta utiliza la sintaxis FileVault.
+* Para incluir un paquete, utilice el prefijo + .
+* Para excluir un paquete, utilice el prefijo - .
 
-El servicio aplica el resultado acumulado de todos los filtros. Por ejemplo, los siguientes valores de filtro excluyen todos los paquetes de flujo de trabajo excepto los de la carpeta Editions:
+El servicio aplica el resultado acumulativo de todos los filtros. Por ejemplo, los siguientes valores de filtro excluyen todos los paquetes de flujo de trabajo, excepto los de la carpeta Ediciones :
 
 ```
 -/etc/workflow/packages(/.*)?
@@ -498,31 +494,31 @@ El servicio aplica el resultado acumulado de todos los filtros. Por ejemplo, los
 
 >[!NOTE]
 >
->Al trabajar con AEM existen varios métodos para administrar la configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información.
+>Al trabajar con AEM hay varios métodos para administrar los ajustes de configuración de dichos servicios. Consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información.
 
-Por ejemplo, para configurar el servicio mediante CRXDE Lite:
+Por ejemplo, para configurar el servicio mediante el CRXDE Lite :
 
-1. Abra el CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
-1. En la carpeta config de la aplicación, cree un nodo:
+1. Abrir CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. En la carpeta de configuración de la aplicación, cree un nodo:
 
    * Nombre: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
    * Tipo: `sling:OsgiConfig`
 
-1. Seleccione el nodo y agregue una propiedad:
+1. Seleccione el nodo y añada una propiedad:
 
    * Nombre: `workflowpackageinfoprovider.filter`
    * Tipo: `String[]`
-   * Valor: Ruta al paquete de workflow con el formato correcto.
+   * Valor: Ruta al paquete de flujo de trabajo utilizando el formato correcto.
 
 1. Haga clic en Guardar todo.
 
 Para configurar el servicio en el origen del proyecto:
 
-1. Busque o cree la carpeta de configuración para la aplicación de AEM en el origen del proyecto.
+1. Localice o cree la carpeta de configuración para la aplicación de AEM en el origen del proyecto.
 
-   Por ejemplo, si ha utilizado el arquetipo multimódulo del complemento Maven del paquete de contenido para crear el proyecto, la ruta de la carpeta es `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
-1. En la carpeta config, cree un archivo de texto denominado com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml
-1. Copie el siguiente texto en el archivo:
+   Por ejemplo, si utilizó el arquetipo de multimódulo del complemento Maven del paquete de contenido para crear su proyecto, la ruta de la carpeta es `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+1. En la carpeta de configuración, cree un archivo de texto denominado com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml
+1. Copie el siguiente texto en el archivo :
 
    ```
    <?xml version="1.0" encoding="UTF-8"?>
@@ -532,7 +528,7 @@ Para configurar el servicio en el origen del proyecto:
     workflowpackageinfoprovider.filter="[]"/>
    ```
 
-1. Dentro de los corchetes (`[]`) que rodean la propiedad `workflowpackageinfoprovider.filter`, escriba una lista separada por comas de valores de filtro similares al siguiente ejemplo:
+1. Dentro de los corchetes (`[]`) que rodean el `workflowpackageinfoprovider.filter` , escriba una lista de valores de filtro separados por comas similar al siguiente ejemplo:
 
    `workflowpackageinfoprovider.filter="[-/etc/workflow/packages(/.*)?,+/etc/workflow/packages/Editions(/.*)?]"/>`
 
@@ -542,23 +538,23 @@ Para configurar el servicio en el origen del proyecto:
 
 Cree un servicio de proveedor de información de página personalizado para agregar metadatos de página que la aplicación pueda obtener fácilmente.
 
-1. Implementar la interfaz `com.day.cq.wcm.api.PageInfoProvider`.
+1. Implemente la interfaz `com.day.cq.wcm.api.PageInfoProvider`. 
 1. Agrupe e implemente la clase como un servicio OSGi.
-1. Cree un componente de página en la aplicación. Utilice `foundation/components/page` como valor de la propiedad `sling:resourceSuperType`.
+1. Cree un componente de página en la aplicación. Uso `foundation/components/page` como el valor de la variable `sling:resourceSuperType` propiedad.
 
-1. Añada un nodo debajo del nodo de componente denominado `cq:infoProviders`.
-1. Debajo del nodo `cq:infoProviders`, agregue un nodo para el servicio PageInfoProvider. Puede especificar cualquier nombre para el nodo.
-1. Añada la siguiente propiedad al nodo PageInfoProvider:
+1. Añadir un nodo debajo del nodo de componente denominado `cq:infoProviders`.
+1. Debajo de `cq:infoProviders` , agregue un nodo para el servicio PageInfoProvider. Puede especificar cualquier nombre para el nodo.
+1. Agregue la siguiente propiedad al nodo PageInfoProvider :
 
    * Nombre: className
    * Tipo: Cadena
-   * Valor: PID del servicio PageInfoProvider.
+   * Valor: El PID de su servicio PageInfoProvider.
 
-Para los recursos que utilizan el componente de página de la aplicación como `sling:resourceType`, el servlet PageInfo devuelve los metadatos personalizados de PageInfoProvider además de los metadatos predeterminados de PageInfoProvider.
+Para los recursos que utilizan el componente de página de la aplicación como la variable `sling:resourceType`, el servlet PageInfo devuelve los metadatos personalizados de PageInfoProvider, además de los metadatos predeterminados de PageInfoProvider.
 
 ### Ejemplo de implementación de PageInfoProvider {#example-pageinfoprovider-implementation}
 
-La siguiente clase Java implementa [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) y devuelve la dirección URL publicada del recurso de página actual.
+Las siguientes implementaciones de la clase Java [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) y devuelve la URL publicada del recurso de página actual.
 
 ```java
 package com.adobe.example;
@@ -605,15 +601,14 @@ public class PageUrlInfoProvider implements PageInfoProvider {
 }
 ```
 
-El ejemplo siguiente, en CRXDE Lite, muestra el componente de página configurado para utilizar el servicio PageUrlInfoProvider:
+El ejemplo siguiente, en CRXDE Lite, muestra el componente de página configurado para utilizar el servicio PageUrlInfoProvider :
 
-![climage_1-3](assets/chlimage_1-3a.png)
+![Chlimage_1-3](assets/chlimage_1-3a.png)
 
-El servicio PageUrlInfoProvider devuelve los siguientes datos para el nodo `/content/we-retail/us/en`:
+El servicio PageUrlInfoProvider devuelve los siguientes datos para la variable `/content/we-retail/us/en` nodo:
 
 ```xml
 "URLs": {
     "publishURL": "http://localhost:4503/content/we-retail/us/en"
 }
 ```
-

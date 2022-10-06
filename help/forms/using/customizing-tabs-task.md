@@ -1,32 +1,31 @@
 ---
-title: Personalización de fichas para una tarea
-seo-title: Personalización de fichas para una tarea
-description: Cómo personalizar los nombres de las fichas de sus tareas, en el espacio de trabajo de LiveCycle AEM Forms.
-seo-description: Cómo personalizar los nombres de las fichas de sus tareas, en el espacio de trabajo de LiveCycle AEM Forms.
+title: Personalización de pestañas para una tarea
+seo-title: Customizing tabs for a task
+description: Personalización de los nombres de las pestañas de las tareas, en el espacio de trabajo de AEM Forms de LiveCycle.
+seo-description: How-to customize the names of the tabs for your tasks, in LiveCycle AEM Forms workspace.
 uuid: 77eabb63-f8ea-4ec0-8a41-b51c65cdecc0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ac0a281f-f589-4a70-9bc7-1a23e054b02f
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 8412cfec-bcab-40b7-9e5b-fcc211d43c0b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
 
+# Personalización de pestañas para una tarea {#customizing-tabs-for-a-task}
 
-# Personalización de fichas para una tarea {#customizing-tabs-for-a-task}
+Puede personalizar los nombres de las fichas para el `Start Process` en el `Start Process` La vista Uber y la `Task Details` en el `ToDo` Vista Uber.
 
-Puede personalizar los nombres de fichas para el componente `Start Process` en la vista `Start Process` Uber y el componente `Task Details` en la vista `ToDo` Uber.
+1. Siga las [Pasos genéricos para la personalización del espacio de trabajo de AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Cambiar el valor de `tabname`en el `translation.json` archivo.
 
-1. Siga los [pasos genéricos para la personalización del espacio de trabajo de AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
-1. Cambie el valor de `tabname`en el archivo `translation.json`.
+   Por ejemplo, cambie `/apps/ws/locales/en-US/translation.json` para inglés a lo siguiente.
 
-   Por ejemplo, cambie `/apps/ws/locales/en-US/translation.json` para inglés por el siguiente.
-
-   * Para tareas iniciadas en el proceso de inicio, utilice el siguiente fragmento del bloque `"startprocess" : {}`.
+   * Para las tareas iniciadas en el proceso de inicio, utilice el siguiente fragmento de la sección `"startprocess" : {}` bloque.
 
    ```json
    "tabname" : {
@@ -37,7 +36,7 @@ Puede personalizar los nombres de fichas para el componente `Start Process` en l
            }
    ```
 
-   * Para tareas en Tareas pendientes, utilice el siguiente fragmento del bloque `"todo" : {}`.
+   * Para tareas en Tareas pendientes, use el siguiente fragmento de código de `"todo" : {}` bloque.
 
    ```json
    "tabname" : {
@@ -52,4 +51,4 @@ Puede personalizar los nombres de fichas para el componente `Start Process` en l
 
    >[!NOTE]
    >
-   >Añada el par clave-valor correspondiente para todos los idiomas admitidos.
+   >Agregue el par clave-valor correspondiente a todos los idiomas compatibles.

@@ -1,8 +1,8 @@
 ---
 title: Migración a la interfaz de usuario táctil
-seo-title: Migración a la interfaz de usuario táctil
+seo-title: Migration to the Touch UI
 description: Migración a la interfaz de usuario táctil
-seo-description: Migración a la interfaz de usuario táctil
+seo-description: Migration to the Touch UI
 uuid: 47c43b56-532b-4ada-8503-04d66bab3564
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,24 +10,23 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '673'
 ht-degree: 6%
 
 ---
 
+# Migración a la interfaz de usuario táctil{#migration-to-the-touch-ui}
 
-# Migración a la IU táctil{#migration-to-the-touch-ui}
-
-A partir de la versión 6.0, Adobe Experience Manager (AEM) introdujo una nueva interfaz de usuario denominada *IU táctil* (también conocida como *IU táctil*). Se alinea con Adobe Marketing Cloud y con las directrices generales de la interfaz de usuario del Adobe. Esta se ha convertido en la interfaz de usuario estándar en AEM con la interfaz heredada y orientada al escritorio denominada *IU clásica*.
+A partir de la versión 6.0, Adobe Experience Manager (AEM) introdujo una nueva interfaz de usuario denominada *IU táctil* (también conocido como *IU táctil*). Se alinea con Adobe Marketing Cloud y con las directrices generales de la interfaz de usuario del Adobe. Esta se ha convertido en la interfaz de usuario estándar en AEM con la interfaz heredada orientada al escritorio denominada *IU clásica*.
 
 Si ha estado utilizando AEM con la IU clásica, deberá realizar una acción para migrar la instancia. Esta página pretende servir de trampolín al proporcionar vínculos a recursos individuales.
 
 >[!NOTE]
 >
->Este proyecto de migración puede tener un impacto significativo en su instancia. Consulte [Administración de proyectos: prácticas recomendadas](/help/managing/best-practices.md) para obtener instrucciones recomendadas.
+>Este proyecto de migración puede tener un impacto significativo en su instancia. Consulte [Administración de proyectos: prácticas recomendadas](/help/managing/best-practices.md) para las directrices recomendadas.
 
 ## Conceptos básicos {#the-basics}
 
@@ -40,7 +39,7 @@ Al migrar, debe tener en cuenta las siguientes diferencias (principales) entre l
    <td>IU táctil</td>
   </tr>
   <tr>
-   <td>Se describe en el repositorio JCR como una estructura de nodos. Cada nodo que representa un elemento de la interfaz de usuario se denomina <em>utilidad ExtJS</em> y se representa en el lado del cliente mediante <code>ExtJS</code>.</td>
+   <td>Se describe en el repositorio JCR como una estructura de nodos. Todos los nodos que representan un elemento de la interfaz de usuario se denominan <em>Widget ExtJS</em> y procesado en el lado del cliente por <code>ExtJS</code>.</td>
    <td>También se describe en el repositorio JCR como una estructura de nodos. Sin embargo, en este caso cada nodo hace referencia a un tipo de recurso de Sling (componente Sling), que se encarga de su renderización. Por lo tanto, la interfaz de usuario se representa (básicamente) en el lado del servidor.</td>
   </tr>
   <tr>
@@ -95,13 +94,13 @@ Al migrar, debe tener en cuenta las siguientes diferencias (principales) entre l
    <td>Renderización realizada por el servidor:
     <ul>
      <li>El cliente solicita páginas junto con la IU relacionada.</li>
-     <li>El servidor envía (push) la interfaz de usuario como documentos HTML; uso de los componentes de Coral UI.<br /> </li>
+     <li>El servidor envía (push) la interfaz de usuario como documentos de HTML; uso de los componentes de Coral UI .<br /> </li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-En otras palabras, migrar una sección de la interfaz de usuario de la IU clásica a la táctil significa transferir un *widget ExtJS* a un *componente Sling*. Para facilitar esto, la IU táctil se basa en el marco de la interfaz de usuario de Granite, que ya proporciona algunos componentes de Sling para la interfaz de usuario (denominados componentes de Granite UI).
+En otras palabras, migrar una sección de la interfaz de usuario de la IU clásica a la táctil significa transferir una *Widget ExtJS* a *Componente Sling*. Para facilitar esto, la IU táctil se basa en el marco de la interfaz de usuario de Granite, que ya proporciona algunos componentes de Sling para la interfaz de usuario (denominados componentes de Granite UI).
 
 Antes de comenzar, compruebe el estado y las recomendaciones relacionadas:
 
@@ -117,27 +116,27 @@ Los conceptos básicos del desarrollo de la IU táctil proporcionan una base só
 
 Los cuadros de diálogo son un factor importante a la hora de migrar los componentes:
 
-* [Desarrollo de componentes AEM](/help/sites-developing/developing-components.md)  (con la IU táctil)
+* [Desarrollo de componentes AEM](/help/sites-developing/developing-components.md) (con la IU táctil)
 * [Migración desde un componente clásico](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [AEM herramientas de modernización](/help/sites-developing/modernization-tools.md) : para ayudarle a convertir los cuadros de diálogo de los componentes de la IU clásica a la IU táctil
+* [Herramientas de modernización AEM](/help/sites-developing/modernization-tools.md) : para ayudarle a convertir los cuadros de diálogo de los componentes de la IU clásica a la IU táctil
 
    * Existe una capa de compatibilidad en la IU táctil para abrir un cuadro de diálogo de IU clásica dentro de un &quot;envoltorio de IU táctil&quot;, pero esta función tiene una funcionalidad limitada y no se recomienda a largo plazo.
 
 * [Personalización de campos de cuadro de diálogo en la IU táctil](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Creación de un nuevo componente de campo de interfaz de usuario de Granite](/help/sites-developing/granite-ui-component.md)
-* [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)  (con la IU táctil)
+* [Personalización de la creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md) (con la IU táctil)
 
 ## Migración de consolas {#migrating-consoles}
 
 También puede personalizar las consolas:
 
-* [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md)  (para la IU táctil)
+* [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md) (para la IU táctil)
 
 ## Consideraciones relacionadas {#related-considerations}
 
 Aunque no está directamente relacionado con la migración a la interfaz de usuario táctil, hay problemas relacionados que vale la pena tener en cuenta al mismo tiempo, ya que también son una práctica recomendada:
 
-* [Plantillas](/help/sites-developing/templates.md) : plantillas  [editables](/help/sites-developing/page-templates-editable.md)
+* [Plantillas](/help/sites-developing/templates.md) - [Plantillas editables](/help/sites-developing/page-templates-editable.md)
 * [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
 * [HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
 
@@ -145,7 +144,7 @@ Aunque no está directamente relacionado con la migración a la interfaz de usua
 >
 >Consulte también [Desarrollo: prácticas recomendadas](/help/sites-developing/best-practices.md).
 
-## Recursos adicionales {#further-resources}
+## Otros recursos {#further-resources}
 
 Para obtener información completa sobre el desarrollo de AEM, consulte la recopilación de recursos en:
 
@@ -159,4 +158,3 @@ Para obtener información completa sobre el desarrollo de AEM, consulte la recop
 >[!CAUTION]
 >
 >AEM herramientas de modernización son un esfuerzo de la comunidad y no son compatibles ni están garantizadas por el Adobe.
-

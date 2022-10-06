@@ -111,7 +111,7 @@ La tabla siguiente muestra los complementos actuales:
 | editar | cortar copiar pegar-predeterminado pegar-plaintext pegar-wordhtml | [Cortar, copiar y, los tres modos de pegado](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
 | [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | buscar reemplazar | Buscar y reemplazar. |
 | [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | subrayado en negrita cursiva | [Formato de texto básico](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | image | Compatibilidad con imágenes básicas (arrastre desde el contenido o el Buscador de contenido). En función del explorador, la compatibilidad con tiene comportamientos diferentes para los autores |
+| [imagen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | imagen | Compatibilidad con imágenes básicas (arrastre desde el contenido o el Buscador de contenido). En función del explorador, la compatibilidad con tiene comportamientos diferentes para los autores |
 | [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Para definir este valor, consulte [tamaño de la ficha](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
 | [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justifycenter justificado | Alineación del párrafo. |
 | [vínculos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink desvincular anclaje | [Hipervínculos y anclajes](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
@@ -145,7 +145,6 @@ La variable [modo de edición RTE (y la IU)](#editingmodes) que proporcione a lo
 >* **Nombre**: `configPath`
 >* **Tipo**: `String`
 >* **Valor**: ruta del nodo que contiene la configuración real
-
 >
 >No asigne al nodo de configuración RTE el nombre `config`. De lo contrario, las configuraciones de RTE surten efecto solo para los administradores y no para los usuarios del grupo `content-author`.
 
@@ -192,7 +191,6 @@ Para obtener configuraciones detalladas de los complementos RTE, consulte [cómo
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >Para crear su propio componente de texto, copie el componente anterior en lugar de editar estos componentes.
 

@@ -1,30 +1,29 @@
 ---
-title: Inicio de sesión en flujos de trabajo AEM Forms
-seo-title: Inicio de sesión en flujos de trabajo AEM Forms
-description: Utilice los registros para depurar problemas de flujo de trabajo de AEM Forms.
-seo-description: Utilice los registros para depurar problemas de flujo de trabajo de AEM Forms.
+title: Inicio de sesión en flujos de trabajo de AEM Forms
+seo-title: Logging in AEM Forms workflows
+description: Utilice los registros para depurar los problemas del flujo de trabajo de AEM Forms.
+seo-description: Use logs to debug AEM Forms workflow issues.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 5%
+source-wordcount: '279'
+ht-degree: 8%
 
 ---
 
-
 # Inicio de sesión en flujos de trabajo de AEM Forms{#logging-in-aem-forms-workflows}
 
-Los pasos del flujo de trabajo de Forms proporcionan registros detallados para depurar convenientemente los problemas relacionados con el flujo de trabajo. Habilite el registro de depuración para flujos de trabajo de AEM Forms para la vista de los registros.
+Los pasos del flujo de trabajo de Forms proporcionan registros detallados para depurar convenientemente los problemas relacionados con el flujo de trabajo. Habilite el registro de depuración para flujos de trabajo de AEM Forms para ver los registros.
 
-De forma predeterminada, toda la información de registro está disponible en el archivo **error.log** del directorio */crx-Repository/logs/*.
+De forma predeterminada, toda la información de registro está disponible en la **error.log** en el */crx-repository/logs/* directorio.
 
-Los registros de depuración de los flujos de trabajo de formularios incluyen:
+Los registros de depuración para los flujos de trabajo de formularios incluyen:
 
 * Entrada de cada paso del flujo de trabajo. Por ejemplo:\
    `[DEBUG] "Executing Invoke DDX Process step"`
@@ -32,7 +31,7 @@ Los registros de depuración de los flujos de trabajo de formularios incluyen:
 * Salida de cada paso del flujo de trabajo. Por ejemplo:\
    `[DEBUG] "Successfully finished Invoke DDX Process step"`
 
-* Mensajes de invocación del servicio. Por ejemplo:\
+* Mensajes de invocación de servicio. Por ejemplo:\
    `[DEBUG] Invoking Adobe Sign Service for creating agreement`
 
 * Mensajes de salida del servicio. Por ejemplo:\
@@ -47,17 +46,17 @@ Los registros de depuración de los flujos de trabajo de formularios incluyen:
       [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
    ```
 
-* Mensajes de excepción con seguimiento de pila completo. Por ejemplo:\
+* Mensajes de excepción con seguimiento completo de pila. Por ejemplo:\
    `[DEBUG] Exception in Adobe Sign Service <complete stack trace>`
 
-* Parámetros de metadatos de pasos dinámicos. Por ejemplo:
+* Parámetros de metadatos de paso dinámico. Por ejemplo:
 
    ```verilog
    [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
     [DEBUG] Locale to be used for Document of Record is <locale>
    ```
 
-El siguiente ejemplo ilustra los registros del paso Firmar Documento:
+El siguiente ejemplo ilustra los registros del paso Firmar documento :
 
 ```verilog
 [DEBUG] Executing sign document step.
@@ -71,28 +70,27 @@ El siguiente ejemplo ilustra los registros del paso Firmar Documento:
 
 Utilice los registros para evaluar que:
 
-* Está utilizando una configuración de firma de adobe correcta.
-* El servicio Adobe Sign se cierra después de crear un acuerdo correctamente.
-* El paso Firmar Documento sale con un mensaje de éxito.
+* Está utilizando una configuración correcta de adobe sign.
+* El servicio de Adobe Sign se cierra después de crear un acuerdo correctamente.
+* El paso Firmar documento se cierra con un mensaje de éxito.
 
-Si hay una excepción, puede realizar la vista del seguimiento completo de la pila para evaluar la causa del error.
+Si hay una excepción, puede ver el seguimiento completo de la pila para evaluar la causa del error.
 
 ## Habilitar el registro de depuración para flujos de trabajo de AEM Forms {#enable-debug-logging-for-aem-forms-workflows}
 
-Realice los siguientes pasos para habilitar el registro de depuración para flujos de trabajo de AEM Forms:
+Realice los siguientes pasos para habilitar el registro de depuración para los flujos de trabajo de AEM Forms:
 
-1. Vaya a AEM administrador de configuración de consola web en:
+1. Vaya al Administrador de configuración de la consola web de AEM en:
 
-   https://&#39;[server]:[port]&#39;/system/console/configMgr
+   https://&#39;[server]:[puerto]&#39;/system/console/configMgr
 
-1. Seleccione **[!UICONTROL Sling]** > **[!UICONTROL Log Support]**.
-1. Toque **[!UICONTROL Añadir nuevo registrador.]**
-1. Seleccione **[!UICONTROL Depurar]** como **[!UICONTROL Nivel de registro]**.
+1. Select **[!UICONTROL Sling]** > **[!UICONTROL Compatibilidad de registros]**.
+1. Toque **[!UICONTROL Añada un nuevo registrador.]**
+1. Select **[!UICONTROL Depuración]** como el **[!UICONTROL Nivel de registro]**.
 1. Especifique la ubicación del archivo de registro. La ubicación predeterminada para el archivo de registro es: *logs\error.log*
-1. Especifique el nombre del paquete como **com.adobe.granite.workflow.core** en la columna **[!UICONTROL Logger]**.
+1. Especifique el nombre del paquete como **com.adobe.granite.workflow.core** en el **[!UICONTROL Registrador]** para abrir el Navegador.
 
-   La ejecución de estos pasos permite almacenar los registros de depuración para el paquete **com.adobe.granite.workflow.core**. Toque **[!UICONTROL +]** y agregue los siguientes nombres de paquete a la lista:
+   La ejecución de estos pasos permite almacenar los registros de depuración para la variable **com.adobe.granite.workflow.core** paquete. Toque **[!UICONTROL +]** y añada los siguientes nombres de paquete a la lista:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace
-

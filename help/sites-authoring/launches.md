@@ -1,8 +1,8 @@
 ---
 title: Lanzamientos
-seo-title: Lanzamientos
+seo-title: Launches
 description: Los lanzamientos le permiten desarrollar con eficacia contenido para una versión futura. También permiten preparar los cambios para una publicación en el futuro, a la vez que mantienen las páginas actuales.
-seo-description: Los lanzamientos le permiten desarrollar con eficacia contenido para una versión futura. También permiten preparar los cambios para una publicación en el futuro, a la vez que mantienen las páginas actuales.
+seo-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
 uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,11 +11,10 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-translation-type: tm+mt
 source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 92%
+source-wordcount: '827'
+ht-degree: 94%
 
 ---
 
@@ -41,7 +40,7 @@ En esta sección se describe cómo crear, editar y promocionar (y, si fuera nece
 
 * [Creación de lanzamientos](/help/sites-authoring/launches-creating.md)
 * [Edición de lanzamientos](/help/sites-authoring/launches-editing.md)
-* [Promoción de lanzamientos](/help/sites-authoring/launches-promoting.md) 
+* [Promoción de lanzamientos](/help/sites-authoring/launches-promoting.md)
 
 ## Lanzamientos: orden de eventos {#launches-the-order-of-events}
 
@@ -99,7 +98,7 @@ Los lanzamientos permiten realizar lo siguiente:
 
 >[!NOTE]
 >
->La creación y edición de lanzamientos requiere derechos de acceso a `/content/launches`, como con el grupo predeterminado `content-authors`.
+>La creación y edición de lanzamientos requieren derechos de acceso a `/content/launches`, como con el grupo predeterminado `content-authors`.
 >
 >Si experimenta algún problema, póngase en contacto con el administrador del sistema. 
 

@@ -1,22 +1,21 @@
 ---
 title: Configurar componentes en modo Diseño
-seo-title: Configurar componentes en modo Diseño
+seo-title: Configuring Components in Design Mode
 description: Configurar componentes en modo Diseño
-seo-description: nulo
+seo-description: null
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '905'
 ht-degree: 87%
 
 ---
-
 
 # Configurar componentes en modo Diseño{#configuring-components-in-design-mode}
 
@@ -36,7 +35,7 @@ Además de estos, también hay otros componentes disponibles. Se puede utilizar 
 >
 >El modo de diseño solo está disponible para las configuraciones de diseño almacenadas como contenido en ( `/etc`).
 >
->A partir de AEM 6.4, se recomienda almacenar los diseños como datos de configuración en `/apps` para admitir escenarios de implementación continuos. Los diseños almacenados en `/apps` no se pueden editar durante la ejecución y el modo Diseño no estará disponible para los usuarios que no sean administradores para estas plantillas.
+>A partir de AEM 6.4, se recomienda almacenar los diseños como datos de configuración en `/apps` para admitir escenarios de implementación continuos. Diseños almacenados en `/apps` no se pueden editar durante la ejecución y el modo Diseño no estará disponible para los usuarios que no sean administradores para estas plantillas.
 
 Esto implica añadir o quitar los componentes permitidos en el sistema de párrafos de la página. El sistema de párrafos (`parsys`) es un componente compuesto que contiene todos los demás componentes de párrafos. El sistema de párrafos permite a los autores añadir componentes de distintos tipos a una página, ya que contiene todos los demás componentes de párrafos. Cada tipo de párrafo se representa como un componente.
 
@@ -69,7 +68,7 @@ Para activar o desactivar un componente:
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Toque o haga clic en el icono **Principal**.
+1. Toque o haga clic en **Principal** icono.
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -92,7 +91,7 @@ Para activar o desactivar un componente:
 
    **Componentes permitidos**
 
-   En la pestaña **Componentes permitidos**, defina qué componentes están disponibles para parsys.
+   En el **Componentes permitidos** , puede definir qué componentes están disponibles para parsys.
 
    * Los componentes se agrupan por grupos de componentes, que se pueden expandir y contraer.
    * Es posible seleccionar un grupo completo marcando la casilla del nombre del grupo, y se puede anular la selección de todo desactivando la casilla de verificación.
@@ -110,7 +109,7 @@ Para activar o desactivar un componente:
 
    En la ficha **Configuración**, puede definir opciones adicionales como, por ejemplo, para dibujar un anclaje para cada componente y definir el margen de celdas de cada contenedor.
 
-1. Seleccione **Listo** para guardar la configuración.
+1. Select **Listo** para guardar la configuración.
 
 ## Configuración del diseño de un componente {#configuring-the-design-of-a-component}
 
@@ -163,4 +162,3 @@ Para activar o desactivar un componente:
    ![](do-not-localize/screen_shot_2018-03-22at103816.png)
 
 1. Toque o haga clic en el icono **Listo** para guardar y cerrar el cuadro de diálogo.
-

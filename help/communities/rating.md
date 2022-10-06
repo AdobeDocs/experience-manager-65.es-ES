@@ -1,55 +1,54 @@
 ---
 title: Uso de clasificaciones
-seo-title: Uso de clasificaciones
-description: Añadir un componente Clasificación en una página
-seo-description: Añadir un componente Clasificación en una página
+seo-title: Using Ratings
+description: Adición de un componente Clasificación a una página
+seo-description: Adding a Rating component to a page
 uuid: a986970b-1221-4648-9a69-410f4480e0ae
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
-translation-type: tm+mt
-source-git-commit: 0051791da06d15a48b82cf93164a89b4ea42ce98
+exl-id: 7534ad5d-b408-4b09-bd3d-da7ab009d55b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '206'
 ht-degree: 2%
 
 ---
 
-
 # Uso de clasificaciones {#using-ratings}
 
-El componente `Rating` se utiliza de forma independiente o junto con otras características de Communities. Este componente permite a los miembros de la comunidad con sesión iniciada expresar sus opiniones mediante la clasificación del contenido.
+La variable `Rating` se utiliza de forma independiente o junto con otras funciones de Communities. Este componente permite a los miembros de la comunidad que han iniciado sesión expresar sus opiniones clasificando el contenido.
 
-## Añadir una clasificación en una página {#adding-a-rating-to-a-page}
+## Adición de una clasificación a una página {#adding-a-rating-to-a-page}
 
-Para agregar un componente `Rating` a una página en modo de autor, localice el componente `Communities / Rating` y arrástrelo a su lugar en una página, como una posición relativa a la función que los miembros deben clasificar.
+Para agregar un `Rating` a una página en modo de autor, busque el componente `Communities / Rating` y arrástrela a su lugar en una página, como una posición relativa a la función que deben clasificar los miembros.
 
-Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](basics.md).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de Communities](basics.md).
 
-Cuando se incluyen las [bibliotecas requeridas del lado del cliente](rating-basics.md#essentials-for-client-side), así es como aparecerá el componente `Rating`.
+Cuando la variable [bibliotecas requeridas del lado del cliente](rating-basics.md#essentials-for-client-side) se incluyen, así es como se muestra la variable `Rating` aparecerá el componente.
 
 ![clasificación](assets/rating.png)
 
-## Configuración de clasificación {#configuring-rating}
+## Configuración de la clasificación {#configuring-rating}
 
-Seleccione el componente `Rating` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
+Seleccione la colocación `Rating` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
 ![configure-new](assets/configure-new.png)
 
-En la ficha **[!UICONTROL Textos y etiquetas]** debe especificar el identificador interno de la clasificación.
+En el **[!UICONTROL Textos y etiquetas]** especifique el identificador interno de la clasificación.
 
-![nombre_de_talyname](assets/tallyname.png)
+![nombre_talyname](assets/tallyname.png)
 
-**[!UICONTROL Tally Name]**
-(*Requerido*) Un nombre sencillo para la instancia  `Rating` que identifica exclusivamente a esta instancia. Debe ser un nombre de nodo válido para el repositorio.
+**[!UICONTROL Nombre Tally]**
+(*Requerido*) Un nombre sencillo para el `Rating` que identifica de forma exclusiva esta instancia. Debe ser un nombre de nodo válido para el repositorio.
 
-## Experiencia de Visitante del sitio {#site-visitor-experience}
+## Experiencia del visitante del sitio {#site-visitor-experience}
 
 ### Miembros {#members}
 
-Solo se permite una clasificación por miembro. El miembro puede cambiar su calificación en cualquier momento.
+Solo se permite una clasificación por miembro. El miembro podrá cambiar su calificación en cualquier momento.
 
 ### Anónimo {#anonymous}
 
@@ -57,4 +56,4 @@ No se admite la publicación anónima de una clasificación. Los visitantes del 
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la página [Rating Essentials](rating-basics.md) para desarrolladores.
+Puede encontrar más información en la [Aspectos básicos de la clasificación](rating-basics.md) para desarrolladores.

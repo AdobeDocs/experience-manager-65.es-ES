@@ -212,7 +212,7 @@ Asegúrese de conectarse a HTTPS utilizando el nombre especificado en el certifi
 
 1. Abra una ventana del símbolo del sistema, vaya a [Workbench_HOME]/workbench/jre/bin, y luego escriba el siguiente comando:
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
-Donde:
+donde:
    * cambiar es la contraseña predeterminada para el almacén de claves cacerts.
    * certname es el certificado seleccionado en el paso 1.
    * Por ejemplo, el alias que elija para el certificado. Este valor puede cambiarse

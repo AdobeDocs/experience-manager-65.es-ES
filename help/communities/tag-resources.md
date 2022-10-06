@@ -1,8 +1,8 @@
 ---
 title: Etiquetado de recursos de habilitación
-seo-title: Etiquetado de recursos de habilitación
+seo-title: Tagging Enablement Resources
 description: El etiquetado de los recursos de habilitación permite filtrar los recursos y las rutas de aprendizaje a medida que los miembros navegan por los catálogos
-seo-description: El etiquetado de los recursos de habilitación permite filtrar los recursos y las rutas de aprendizaje a medida que los miembros navegan por los catálogos
+seo-description: Tagging of enablement resources allows for filtering of resources and learning paths as members browse catalogs
 uuid: daf8a4f4-486b-498c-99e9-d1533a830e64
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: ce58c8e9-8b4a-43fb-a108-ed2ac40268c7
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -22,19 +22,19 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-El etiquetado de los recursos de habilitación permite filtrar los recursos y las rutas de aprendizaje a medida que los miembros exploran [catálogos](functions.md#catalog-function).
+El etiquetado de los recursos de habilitación permite filtrar los recursos y las rutas de aprendizaje a medida que los miembros navegan [catálogos](functions.md#catalog-function).
 
 Esencialmente:
 
-* [Crear un espacio de ](../../help/sites-administering/tags.md#creating-a-namespace) nombres de etiqueta para cada catálogo
+* [Crear un espacio de nombres de etiqueta](../../help/sites-administering/tags.md#creating-a-namespace) para cada catálogo
 
    * [Definir permisos de etiquetas](../../help/sites-administering/tags.md#setting-tag-permissions)
    * Solo para miembros de la comunidad (comunidad cerrada)
 
-      * Permitir acceso de lectura para el grupo de miembros del [sitio de la comunidad](users.md#publish-group-roles)
+      * Permitir acceso de lectura para la variable [grupo de miembros del sitio de la comunidad](users.md#publish-group-roles)
    * Para cualquier visitante del sitio, ya sea que haya iniciado sesión o que sea anónimo (comunidad abierta)
 
-      * Permitir acceso de lectura para el grupo `Everyone`
+      * Permitir acceso de lectura para la variable `Everyone` grupo
    * [Publicación de las etiquetas](../../help/sites-administering/tags.md#publishing-tags)
 
 
@@ -44,15 +44,15 @@ Esencialmente:
    * [Configurar los catálogos que existen en la estructura del sitio](functions.md#catalog-function)
 
       * Puede añadir etiquetas a la instancia de catálogo para controlar la lista de etiquetas presentadas en los filtros de interfaz de usuario.
-      * Puede agregar [prefiltros](catalog-developer-essentials.md#pre-filters) para restringir los recursos incluidos de un catálogo.
+      * Puede agregar [filtros previos](catalog-developer-essentials.md#pre-filters), para restringir los recursos incluidos de un catálogo.
 
 * [Publicar el sitio de la comunidad](sites-console.md#publishing-the-site)
-* [Aplicar etiquetas a los ](resources.md#create-a-resource) recursos de habilitación para que se puedan filtrar categóricamente
+* [Aplicación de etiquetas a los recursos de habilitación](resources.md#create-a-resource) por lo que se pueden filtrar categóricamente
 * [Publicación de los recursos de habilitación](resources.md#publish)
 
 ## Etiquetas de sitios de la comunidad {#community-site-tags}
 
-Al crear o editar un sitio de la comunidad, la [configuración Etiquetado](sites-console.md#tagging) establece el ámbito de las etiquetas disponibles para las características del sitio seleccionando un subconjunto de áreas de nombres de etiquetas existentes.
+Al crear o editar un sitio de comunidad, la variable [Configuración de etiquetado](sites-console.md#tagging) define el ámbito de las etiquetas disponibles para las características del sitio seleccionando un subconjunto de áreas de nombres de etiquetas existentes.
 
 Aunque las etiquetas se pueden crear y agregar al sitio de la comunidad en cualquier momento, se recomienda diseñar una taxonomía de antemano, similar a diseñar una base de datos. Consulte [Uso de etiquetas](../../help/sites-authoring/tags.md).
 
@@ -74,15 +74,15 @@ La función Catálogo incluye una configuración de etiqueta que define las etiq
 
 ## Aplicación de etiquetas a recursos de habilitación {#applying-tags-to-enablement-resources}
 
-Los recursos de habilitación y las rutas de aprendizaje aparecerán en todo el catálogo cuando se marque `Show in Catalog`. Añadir etiquetas a los recursos y a las rutas de aprendizaje permitirá el prefiltrado en catálogos específicos, así como el filtrado en la interfaz de usuario del catálogo.
+Los recursos de habilitación y las rutas de aprendizaje aparecerán en todo el catálogo cuando `Show in Catalog` está activada. Añadir etiquetas a los recursos y a las rutas de aprendizaje permitirá el prefiltrado en catálogos específicos, así como el filtrado en la interfaz de usuario del catálogo.
 
-Para restringir los recursos de habilitación y las rutas de aprendizaje a catálogos específicos, se crean [prefiltros](catalog-developer-essentials.md#pre-filters).
+La restricción de los recursos de habilitación y las rutas de aprendizaje a catálogos específicos se logra mediante la creación de [filtros previos](catalog-developer-essentials.md#pre-filters).
 
 La interfaz de usuario del catálogo permite a los visitantes aplicar un filtro de etiquetas a la lista de recursos y rutas de aprendizaje que aparecen en dicho catálogo.
 
 El administrador que aplique las etiquetas a los recursos de habilitación debe tener en cuenta las áreas de nombres de etiquetas asociadas con los catálogos, así como la taxonomía para seleccionar una subetiqueta para una categorización más refinada.
 
-Por ejemplo, si se creó un espacio de nombres `ski-catalog` y se estableció en un catálogo denominado `Ski Catalog`, puede tener dos etiquetas secundarias: `lesson-1` y `lesson-2`.
+Por ejemplo, si una `ski-catalog` se crearon y se establecieron en un catálogo denominado `Ski Catalog`, puede tener dos etiquetas secundarias: `lesson-1` y `lesson-2`.
 
 Por lo tanto, cualquier recurso de habilitación etiquetado con uno de los siguientes elementos:
 

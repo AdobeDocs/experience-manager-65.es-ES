@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Assets] API HTTP."'
+title: "[!DNL Assets] API HTTP."
 description: Crear, leer, actualizar, eliminar y administrar recursos digitales mediante la API HTTP en [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
@@ -124,7 +124,7 @@ Recupera una representación sirena de una carpeta existente y de sus entidades 
 
 **Respuesta**: La clase de la entidad devuelta es un recurso o una carpeta. Las propiedades de las entidades contenidas son un subconjunto del conjunto completo de propiedades de cada entidad. Para obtener una representación completa de la entidad, los clientes deben recuperar el contenido de la URL señalada por el vínculo con una `rel` de `self`.
 
-## Cree una carpeta  . {#create-a-folder}
+## Cree una carpeta. {#create-a-folder}
 
 Crea un nuevo `sling`: `OrderedFolder` en la ruta dada. Si `*` se proporciona en lugar de un nombre de nodo, el servlet utiliza el nombre del parámetro como nombre de nodo. Se acepta como datos de solicitud: una representación sirena de la nueva carpeta o un conjunto de pares de nombre-valor, codificados como `application/www-form-urlencoded` o `multipart`/ `form`- `data`, útil para crear una carpeta directamente desde un formulario de HTML. Además, las propiedades de la carpeta se pueden especificar como parámetros de consulta de URL.
 

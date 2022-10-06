@@ -1,8 +1,8 @@
 ---
 title: Creación de páginas con fragmentos de contenido
-seo-title: Creación de páginas con fragmentos de contenido
+seo-title: Page Authoring with Content Fragments
 description: Los fragmentos de contenido de AEM permiten diseñar, crear, mantener y utilizar contenido independiente de cualquier página
-seo-description: Los fragmentos de contenido de AEM permiten diseñar, crear, mantener y utilizar contenido independiente de cualquier página
+seo-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
 uuid: 987de428-8354-4b23-a552-3ea415122184
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1140'
 ht-degree: 99%
 
 ---
-
 
 # Creación de páginas con fragmentos de contenido{#page-authoring-with-content-fragments}
 
@@ -32,11 +31,9 @@ Junto con el exportador JSON actualizado, los fragmentos de contenido estructura
 >Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-authoring/experience-fragments.md)** son funciones distintas de AEM:
 >
 >* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
->* Los **fragmentos de experiencia** son contenido plenamente diseñado; un fragmento de una página web. 
-
+>* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
 >
->
-Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos de contenido, pero no lo contrario.
+>Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 
 >[!CAUTION]
 >
@@ -136,7 +133,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
 * **Gestionar encabezados como sus propios párrafos**
 
-### Conexión rápida con el editor de fragmentos   {#quick-connection-to-fragment-editor}
+### Conexión rápida con el editor de fragmentos  {#quick-connection-to-fragment-editor}
 
 Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono **Editar** de la barra de herramientas de componentes. Esto le permitirá [editar y gestionar el fragmento de contenido](/help/assets/content-fragments/content-fragments.md). 
 
@@ -144,7 +141,7 @@ Puede abrir el origen del fragmento para editarlo (el recurso) mediante el icono
 >
 >Como siempre, editar el origen del fragmento afectará a todas las páginas que hacen referencia a dicho fragmento de contenido.
 
-### Añadir contenido intermedio        {#adding-in-between-content}
+### Añadir contenido intermedio       {#adding-in-between-content}
 
 Cuando se añade a la página un fragmento de contenido específico, se dispone de un marcador de posición **Arrastre los componentes aquí** entre cada párrafo HTML (y en la parte superior/inferior) del fragmento.
 
@@ -176,15 +173,12 @@ Para el contenido intermedio puede:
 >
 >* Los componentes intermedios tienen una posición absoluta dentro de la secuencia de componentes en el flujo del fragmento. Esta posición no cambia, aunque varíe el contenido de los párrafos del fragmento.
 >
->  
-Por este motivo, es posible que parezca que la posición relativa ha cambiado, ya que los párrafos intermedios no tienen relación contextual con los párrafos (del fragmento) junto a los que se sitúan.
+>  Por este motivo, es posible que parezca que la posición relativa ha cambiado, ya que los párrafos intermedios no tienen relación contextual con los párrafos (del fragmento) junto a los que se sitúan.
 >* Sin embargo, en caso de que exista conflicto entre las dos estructuras de párrafo, el contenido intermedio no se muestra (aunque siga presente internamente).
-
 >
 
 
-
-### Uso de contenido asociado        {#using-associated-content}
+### Uso de contenido asociado       {#using-associated-content}
 
 Si tiene [contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md) con el [fragmento de contenido](/help/assets/content-fragments/content-fragments.md), estos recursos estarán disponibles en el panel lateral (después de colocar el fragmento en la página de contenido). El contenido asociado es en realidad una fuente especial de contenido para [contenido intermedio](#adding-in-between-content).
 
@@ -204,7 +198,7 @@ Desde aquí podrá arrastrar los recursos a la ubicación requerida (en un compo
 
 ### Recursos insertados en el fragmento {#assets-inserted-into-the-fragment}
 
-Si se insertan recursos (p. ej. imágenes) en el propio fragmento, las opciones para editarlos en el editor de páginas son limitadas.  <!-- Removed link as it was a 404 on helpx -->
+Si se insertan recursos (p. ej. imágenes) en el propio fragmento, las opciones para editarlos en el editor de páginas son limitadas. <!-- Removed link as it was a 404 on helpx -->
 
 Por ejemplo, para una imagen puede
 
@@ -221,4 +215,3 @@ Los fragmentos deben publicarse para poder usarse en las páginas web publicadas
 
 * Los fragmentos se pueden publicar después de [crear el fragmento en la consola Recursos](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
 * Si se usa un *fragmento sin publicar* en una página que se está publicando, también se puede publicar en ese momento el fragmento.
-

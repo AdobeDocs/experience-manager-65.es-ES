@@ -1,19 +1,18 @@
 ---
 title: Gestión de solicitudes de RGPD para la base de AEM
-seo-title: Gestión de solicitudes de RGPD para la base de AEM
+seo-title: Handling GDPR Requests for the AEM Foundation
 description: Gestión de solicitudes de RGPD para la base de AEM
-seo-description: nulo
+seo-description: null
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 6%
+source-wordcount: '435'
+ht-degree: 55%
 
 ---
-
 
 # Gestión de solicitudes de RGPD para la base de AEM{#handling-gdpr-requests-for-the-aem-foundation}
 
@@ -21,7 +20,7 @@ ht-degree: 6%
 >
 >El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las normas de protección de datos y privacidad; como el RGPD, la CCPA, etc.
 
-## Compatibilidad con RGPD de AEM Foundation {#aem-foundation-gdpr-support}
+## Compatibilidad con el RGPD de AEM Foundation {#aem-foundation-gdpr-support}
 
 En el nivel de base de AEM, los datos personales almacenados son el Perfil de usuario. Por lo tanto, la información de este artículo trata principalmente sobre cómo acceder y eliminar perfiles de usuario, para tratar las solicitudes de Acceso y Eliminación del RGPD respectivamente.
 
@@ -29,15 +28,15 @@ En el nivel de base de AEM, los datos personales almacenados son el Perfil de us
 
 ### Pasos manuales {#manual-steps}
 
-1. Abra la consola Administración de usuarios navegando hasta **[!UICONTROL Configuración - Seguridad - Usuarios]** o navegando directamente a `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Abra la consola Administración de usuarios, navegando hasta **[!UICONTROL Configuración - Seguridad - Usuarios]** o navegando directamente a `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
-1. A continuación, busque el usuario en cuestión escribiendo el nombre en la barra de búsqueda situada en la parte superior de la página:
+1. A continuación, busque el usuario en cuestión escribiendo su nombre en la barra de búsqueda situada en la parte superior de la página:
 
    ![usersearch](assets/usersearch.png)
 
-1. Finalmente, abra el perfil de usuario haciendo clic en él y, a continuación, marque en la pestaña **[!UICONTROL Details]** .
+1. Por último, abra el perfil de usuario haciendo clic en él y, a continuación, mire en la pestaña **[!UICONTROL Detalles]**.
 
    ![userprofile_small](assets/userprofile_small.png)
 
@@ -51,7 +50,7 @@ Como ya se ha mencionado, Adobe proporciona API para acceder a los datos de usua
 curl -u user:password http://localhost:4502/libs/granite/security/search/profile.userproperties.json\?authId\=cavery
 ```
 
-**API de Sling**
+**API Sling**
 
 *Descubrimiento del inicio del usuario:*
 
@@ -62,7 +61,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 *Recuperación de datos de usuario*
 
-Uso de la ruta del nodo desde la propiedad home de la carga útil JSON devuelta desde el comando anterior:
+Uso de la ruta del nodo desde la propiedad del inicio de la carga útil JSON devuelta desde el comando anterior:
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -74,12 +73,12 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ## Desactivación de un usuario y eliminación de los perfiles asociados {#disabling-a-user-and-deleting-the-associated-profiles}
 
-### Deshabilitar usuario {#disable-user}
+### Desactivación de un usuario {#disable-user}
 
 1. Abra la consola Administración de usuarios y busque el usuario en cuestión, tal como se ha descrito anteriormente.
-1. Pase el ratón sobre el usuario y haga clic en el icono de selección . El perfil cambiará a gris indicando que está seleccionado.
+1. Pase el ratón sobre el usuario y haga clic en el icono de selección. El perfil cambiará a gris para indicar que está seleccionado.
 
-1. Pulse el botón Deshabilitar en el menú superior para deshabilitar al usuario:
+1. Pulse el botón Desactivar en el menú superior para desactivar el usuario:
 
    ![userdisable](assets/userdisable.png)
 
@@ -91,9 +90,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![disableduser](assets/disableduser.png)
 
-### Eliminar información del perfil de usuario {#delete-user-profile-information}
+### Eliminación de información del perfil de usuario {#delete-user-profile-information}
 
-1. Inicie sesión en el CRXDE Lite y luego busque `[!UICONTROL userId]`:
+1. Inicie sesión en el CRXDE Lite y, a continuación, busque la variable `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
@@ -110,9 +109,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### API HTTP {#http-api-1}
 
-Los siguientes procedimientos utilizan la herramienta de línea de comandos `curl` para ilustrar cómo deshabilitar al usuario con la  **[!UICONTROL captura]** `userId` y eliminación de sus perfiles disponibles en la ubicación predeterminada.
+Los siguientes procedimientos utilizan la herramienta de línea de comandos `curl` para ilustrar cómo deshabilitar al usuario con la **[!UICONTROL captura]** `userId` y eliminación de sus perfiles disponibles en la ubicación predeterminada.
 
-* *Descubrimiento de la página principal del usuario*
+* *Descubrimiento del inicio del usuario*
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
@@ -121,7 +120,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 * *Desactivación del usuario*
 
-Uso de la ruta del nodo desde la propiedad home de la carga útil JSON devuelta desde el comando anterior:
+Uso de la ruta del nodo desde la propiedad del inicio de la carga útil JSON devuelta desde el comando anterior:
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (GDPR in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
@@ -138,4 +137,3 @@ curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':ope
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
 ```
-

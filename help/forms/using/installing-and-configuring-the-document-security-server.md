@@ -1,8 +1,8 @@
 ---
 title: Instalación y configuración del servidor de seguridad de documentos
-seo-title: Instalación y configuración del servidor de seguridad de documentos
-description: 'Utilice la seguridad del documento para distribuir de forma segura cualquier información guardada en un formato compatible. Solo los usuarios autorizados pueden acceder a los documentos protegidos. '
-seo-description: 'Utilice la seguridad del documento para distribuir de forma segura cualquier información guardada en un formato compatible. Solo los usuarios autorizados pueden acceder a los documentos protegidos. '
+seo-title: Installing and configuring the document security server
+description: Utilice la seguridad del documento para distribuir de forma segura cualquier información guardada en un formato compatible. Solo los usuarios autorizados pueden acceder a los documentos protegidos.
+seo-description: Use document security to safely distribute any information that you have saved in a supported format. Only authorized users can access protected documents.
 uuid: 04c67a84-01ad-45b7-a590-822b1c067d52
 contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
@@ -10,7 +10,7 @@ role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -43,9 +43,9 @@ En el diagrama siguiente se muestra la arquitectura típica de AEM Forms Documen
 
 Siga estos pasos para instalar y configurar AEM Forms en JEE:
 
-1. Descargue el instalador de AEM 6.5 Forms en JEE desde el [sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el instalador.
-1. Lea el [documento de AEM Forms en plataformas compatibles con JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) y asegúrese de que el software, el hardware, los sistemas operativos, el servidor de aplicaciones, las bases de datos, los JDK y otras infraestructuras estén listos para instalar AEM Forms en JEE.
-1. (Solo para instalaciones que no sean llave en mano) Lea [Preparándose para instalar el servidor único de AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) o [Preparándose para instalar el clúster de servidores de AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) y prepare su entorno para instalar y configurar AEM Forms en JEE.
+1. Descargue el instalador AEM 6.5 de Forms en JEE desde el [Sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el instalador.
+1. Lea el [Documento de AEM Forms en plataformas compatibles con JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) y asegúrese de tener el software, hardware, sistemas operativos, servidor de aplicaciones, bases de datos, JDKs y otra infraestructura preparados para instalar AEM Forms en JEE.
+1. (Solo instalaciones sin llave en mano) Lea el [Preparación para la instalación del servidor único de AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) o [Preparación para instalar el clúster de servidores de AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) y prepare su entorno para instalar y configurar AEM Forms en JEE.
 1. Según el entorno y el servidor de aplicaciones, elija uno de los siguientes documentos y siga las instrucciones para completar la instalación
 
    * [Instalación e implementación de AEM Forms en JEE con JBoss llave en mano](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)
@@ -60,7 +60,7 @@ Siga estos pasos para instalar y configurar AEM Forms en JEE:
    >
    >En la pantalla de selección de módulos de AEM Forms en el administrador de configuración de JEE, seleccione la opción Seguridad de documentos . La opción Seguridad de documento no requiere que se seleccione ningún otro módulo.
 
-## Pasos siguientes {#next-steps}
+## Siguientes pasos {#next-steps}
 
 * [Configuración de las opciones de cliente y servidor](/help/forms/using/admin-help/configuring-client-server-options.md)
 * [Crear y administrar políticas](/help/forms/using/admin-help/creating-policies.md)

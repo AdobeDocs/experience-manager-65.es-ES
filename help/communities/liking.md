@@ -1,54 +1,53 @@
 ---
 title: Uso de "Me gusta"
-seo-title: Uso de "Me gusta"
-description: Añadir y configurar el componente "Me gusta"
-seo-description: Añadir y configurar el componente "Me gusta"
+seo-title: Using Liking
+description: Adición y configuración del componente "Me gusta"
+seo-description: Adding and configuring the Liking component
 uuid: 12103ab7-1a1c-49cd-8dad-6c7508b4550e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
-translation-type: tm+mt
-source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
+exl-id: 226fa91c-4a12-4586-b694-1a52fa2ba358
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '226'
 ht-degree: 5%
 
 ---
 
-
 # Uso de &quot;Me gusta&quot; {#using-liking}
 
-El componente `Liking` es una herramienta útil que permite a los usuarios expresar una opinión sobre un contenido determinado, como un comentario dentro de un foro. Con el componente `Liking`, los miembros seleccionan el icono del corazón para indicar una opinión positiva.
+La variable `Liking` es una herramienta útil que permite a los usuarios expresar una opinión sobre un contenido determinado, como un comentario dentro de un foro. Con la variable `Liking` , los miembros seleccionan el icono del corazón para indicar una opinión positiva.
 
-## Añadir &quot;Me gusta&quot; a una página {#adding-liking-to-a-page}
+## Adición de &quot;Me gusta&quot; a una página {#adding-liking-to-a-page}
 
-Para agregar un componente `Liking` a una página en modo de autor, utilice el navegador de componentes para localizar
+Para agregar un `Liking` a una página en modo de autor, utilice el navegador de componentes para localizar
 
 * `Communities / Liking`
 
-y arrástrelo a su lugar en una página, como una posición relativa a la función que los usuarios deseen.
+y arrástrela a su lugar en una página, por ejemplo, una posición relativa a la función que desee para los usuarios.
 
-Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](basics.md).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de Communities](basics.md).
 
-Cuando se incluyen las [bibliotecas requeridas del lado del cliente](essentials-liking.md#essentials-for-client-side), así es como aparecerá el componente `Liking`.
+Cuando la variable [bibliotecas requeridas del lado del cliente](essentials-liking.md#essentials-for-client-side) se incluyen, así es como se muestra la variable `Liking` aparecerá el componente.
 
 ![componente de &quot;Me gusta&quot;](assets/liking-component.png)
 
 ## Configuración de &quot;Me gusta&quot; {#configuring-liking}
 
-Seleccione el componente `Liking` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
+Seleccione la colocación `Liking` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
 ![configure-new](assets/configure-new.png)
 
-En la ficha **[!UICONTROL Textos y etiquetas]**, especifique las propiedades utilizadas para registrar &quot;Me gusta&quot;.
+En el **[!UICONTROL Textos y etiquetas]** especifique las propiedades utilizadas para registrar &quot;Me gusta&quot;.
 
-![configurar como &quot;Me gusta&quot;](assets/configure-liking.png)
+![configure-link](assets/configure-liking.png)
 
 * **[!UICONTROL Etiqueta de respuesta positiva]**
 
-   (*Requerido*) El nombre de la propiedad para una respuesta positiva.
+   (*Requerido*) El nombre de propiedad para una respuesta positiva.
 
 * **[!UICONTROL Etiqueta de respuesta negativa]**
 
@@ -58,16 +57,16 @@ En la ficha **[!UICONTROL Textos y etiquetas]**, especifique las propiedades uti
 
    (*Requerido*) El nombre de propiedad interno identificable para esta instancia de un componente de votación.
 
-## Experiencia de Visitante del sitio {#site-visitor-experience}
+## Experiencia del visitante del sitio {#site-visitor-experience}
 
 ### Miembros {#members}
 
-Los Miembros pueden cambiar su estilo en cualquier momento.
+Los miembros podrán cambiar de forma similar en cualquier momento.
 
 ### Anónimo {#anonymous}
 
-No se admite el &quot;Me gusta&quot; anónimo. Los visitantes del sitio deben registrarse (convertirse en miembros) e iniciar sesión para participar en el &quot;Me gusta&quot;.
+No se admite &quot;Me gusta&quot; anónimo. Los visitantes del sitio deben registrarse (convertirse en miembros) e iniciar sesión para participar en el &quot;Me gusta&quot;.
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la página [&quot;Me gusta Essentials](essentials-liking.md)&quot; para desarrolladores.
+Puede encontrar más información en la [&quot;Me gusta&quot; de Essentials](essentials-liking.md) para desarrolladores.

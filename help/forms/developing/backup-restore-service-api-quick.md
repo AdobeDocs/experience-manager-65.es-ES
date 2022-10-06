@@ -1,6 +1,6 @@
 ---
 title: Inicio de APIQuick de servicio de copia de seguridad y restauración
-seo-title: Inicio de APIQuick de servicio de copia de seguridad y restauración
+seo-title: Backup and Restore Service APIQuick Starts
 description: Inicio de APIQuick de servicio de copia de seguridad y restauración
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
-
 
 # Inicio rápido de API de servicio de copia de seguridad y restauración {#backup-and-restore-service-apiquick-starts}
 
@@ -36,7 +35,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 ## Inicio rápido (modo SOAP): Introducción del modo de copia de seguridad mediante la API de Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-El siguiente ejemplo de código Java entra en el modo de copia de seguridad con una etiqueta única durante dos horas. Una vez transcurrido el tiempo de copia de seguridad o si el modo de copia de seguridad se cierra explícitamente, el servidor de formularios vuelve a depurar archivos del Almacenamiento de documentos global. (Consulte [Introducción del modo de copia de seguridad en el servidor de formularios](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)).
+El siguiente ejemplo de código Java entra en el modo de copia de seguridad con una etiqueta única durante dos horas. Una vez transcurrido el tiempo de copia de seguridad o si el modo de copia de seguridad se cierra explícitamente, el servidor de formularios vuelve a depurar archivos del Almacenamiento de documentos global. (Consulte [Introducción del modo de copia de seguridad en el servidor de formularios](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -151,7 +150,7 @@ El siguiente ejemplo de código Java entra en el modo de copia de seguridad con 
 
 ## Inicio rápido (modo SOAP): Dejar el modo de copia de seguridad mediante la API de Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-El siguiente ejemplo de código Java hace que un servidor de Forms salga explícitamente del modo de copia de seguridad y vuelva a purgar archivos del almacenamiento de documentos global. (Consulte [Dejar el modo de copia de seguridad en el servidor de formularios](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)).
+El siguiente ejemplo de código Java hace que un servidor de Forms salga explícitamente del modo de copia de seguridad y vuelva a purgar archivos del almacenamiento de documentos global. (Consulte [Dejar el modo de copia de seguridad en el servidor de formularios](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -253,4 +252,3 @@ El siguiente ejemplo de código Java hace que un servidor de Forms salga explíc
  }
  
 ```
-

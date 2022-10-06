@@ -1,24 +1,23 @@
 ---
 title: Registro como usuario
-seo-title: Registro como usuario
+seo-title: Registering as a User
 description: Aprenda a utilizar los documentos protegidos por políticas que reciba de un usuario de seguridad de documentos, incluso si es externo a la organización del usuario.
-seo-description: Aprenda a utilizar los documentos protegidos por políticas que reciba de un usuario de seguridad de documentos, incluso si es externo a la organización del usuario.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '700'
 ht-degree: 6%
 
 ---
 
-
-# Registrarse como usuario {#registering-as-a-user}
+# Registro como usuario {#registering-as-a-user}
 
 Puede utilizar documentos protegidos por políticas que reciba de un usuario de seguridad de documentos, incluso si es externo a la organización del usuario. Para utilizar un documento protegido por políticas, debe registrarse con document security. Si anteriormente no se le invitó a registrarse, la seguridad del documento inicia el proceso de registro cuando se producen estos eventos:
 
@@ -37,7 +36,7 @@ Puede utilizar documentos protegidos por políticas que reciba de un usuario de 
 >
 >Si recibe un documento protegido por políticas pero no recibe una invitación por correo electrónico de registro, póngase en contacto con la persona que le envió el documento para obtener más información.
 
-## Regístrese como usuario invitado {#register-as-an-invited-user}
+## Registrarse como usuario invitado {#register-as-an-invited-user}
 
 Si es un usuario invitado y recibe un mensaje de registro por correo electrónico de document security, puede registrarse utilizando la URL del mensaje para abrir la página de registro en línea. Después de registrarse, recibirá un segundo aviso sobre la activación de su cuenta.
 
@@ -46,7 +45,7 @@ Si es un usuario invitado y recibe un mensaje de registro por correo electrónic
 1. Escriba su nombre, número de teléfono, dirección, organización y contraseña en los cuadros correspondientes y, a continuación, vuelva a escribir la contraseña en el cuadro Confirmar contraseña. La contraseña puede ser cualquier combinación de ocho caracteres.
 1. Haga clic en Guardar. Aparece un mensaje de agradecimiento que le informa de que debe comprobar el correo electrónico para ver si hay un mensaje de correo electrónico de activación. Ahora debe activar su cuenta para finalizar el proceso de registro.
 
-## Active su cuenta de usuario {#activate-your-invited-user-account} invitada
+## Activar la cuenta de usuario invitada {#activate-your-invited-user-account}
 
 Después de registrarse, document security le envía un correo electrónico de activación. Debe activar la cuenta utilizando la dirección URL del mensaje. A continuación, puede iniciar sesión en document security para utilizar documentos protegidos por políticas a los que tenga acceso. Según las funciones que el administrador active para los usuarios externos, puede tener permiso para crear directivas, aplicar directivas a documentos y agregar otros usuarios externos a sus directivas.
 
@@ -58,7 +57,7 @@ Su cuenta permanece activa hasta que el administrador la desactive o elimine.
 1. En el cuadro Nombre de usuario, escriba la dirección de correo electrónico en la que se registró con la seguridad del documento. Esta dirección de correo electrónico es el nombre de usuario predeterminado de seguridad del documento.
 1. En el cuadro Contraseña, escriba la contraseña que creó cuando se registró y, a continuación, haga clic en Iniciar sesión.
 
-## Restablecer la contraseña {#reset-your-password}
+## Restaurar la contraseña {#reset-your-password}
 
 Si olvida su contraseña, el administrador de directivas puede restablecerla por usted. El restablecimiento de una contraseña genera un correo electrónico que le invita a iniciar sesión utilizando una contraseña temporal. A continuación, puede crear una nueva contraseña.
 
@@ -70,4 +69,3 @@ Para obtener información sobre cómo ponerse en contacto con un administrador d
 1. Haga clic en Opciones en la esquina superior derecha de la página. Se muestra la página Usuarios externos .
 1. Seleccione Cambiar contraseña y escriba la contraseña temporal en el cuadro Contraseña antigua.
 1. En el cuadro Nueva contraseña, escriba una nueva contraseña y vuelva a escribirla en el cuadro Confirmar contraseña.
-

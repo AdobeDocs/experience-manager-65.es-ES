@@ -1,10 +1,11 @@
 ---
 title: Cómo actualizar su contenido a través de las API de AEM Assets
 description: En esta parte del Recorrido para desarrolladores sin encabezado de AEM, aprenda a utilizar la API de REST para acceder y actualizar el contenido de sus fragmentos de contenido.
-source-git-commit: 7f43d9d6b631b26f7b9293aa109498d0c8040436
+exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 

@@ -156,7 +156,7 @@ La propiedad name de `cq:Widget` items especifica el nodo JCR que almacena el va
 
 Por ejemplo, un campo de texto de un cuadro de diálogo es un `cq:Widget` que tiene las siguientes propiedades:
 
-| Nombre | Tipo | Value |
+| Nombre | Tipo | Valor |
 |---|---|---|
 | `xtype` | `String` | `textarea` |
 | `name` | `String` | `./metaData/subject` |
@@ -244,7 +244,7 @@ Debajo de `cq:Component` nodo, agregue un `cq:EditConfig` nodo . A continuación
 * Nombre: `PROCESS_AUTO_ADVANCE`
 
    * Tipo: `Boolean`
-   * Value:
+   * Valor:
 
       * cuando se configura como `true` el flujo de trabajo ejecutará ese paso y continuará: este es el valor predeterminado y también se recomienda
       * when `false`, el flujo de trabajo se ejecutará y se detendrá; esto requiere un manejo adicional, por lo que `true` se recomienda

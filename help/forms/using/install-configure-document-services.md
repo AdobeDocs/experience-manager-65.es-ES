@@ -388,7 +388,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM. 
 1. Abra [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
-   También puede descargar el paquete a través del vínculo directo enumerado en la [Versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) artículo.
+   También puede descargar el paquete a través del vínculo directo enumerado en la [Versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) artículo.
 
 1. Una vez instalado el paquete, se le pedirá que reinicie la instancia de AEM. **No detenga el servidor inmediatamente.** Antes de detener el servidor de AEM Forms, espere hasta que los mensajes ServiceEvent REGISTER y ServiceEvent UNREGISTER dejen de aparecer en la variable `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log y el registro es estable.
 
@@ -434,13 +434,13 @@ Se necesita una cuenta de usuario local para ejecutar el servicio Generador de P
 
 ### Configuración de la configuración de tiempo de espera {#configure-the-time-out-settings}
 
-1. En [Administrador de configuración AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
+1. En [Administrador de configuración de AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
 
    Agregue lo siguiente a **[!UICONTROL Propiedades personalizadas.name]** y haga clic en **[!UICONTROL Guardar]**. Establece el tiempo de espera de respuesta pendiente (también conocido como tiempo de espera de cliente CORBA) en 600 segundos.
 
    `jacorb.connection.client.pending_reply_timeout=600000`
 
-1. Inicie sesión en la instancia de autor de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configuración del Generador de PDF]**. La dirección URL predeterminada es <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. Inicie sesión en la instancia de autor de AEM y vaya a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configuración del Generador de PDF]**. El URL predeterminado es <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
 
    Abra el **[!UICONTROL Configuración general]** y modifique el valor de los campos siguientes para su entorno:
 
@@ -547,7 +547,7 @@ El servicio Assembler depende del servicio Reader Extensions, del servicio Signa
 <table>
  <tbody>
   <tr>
-   <th>Nombre de servicio</th>
+   <th>Nombre del servicio</th>
    <th>Nombre de paquete</th>
   </tr>
   <tr>

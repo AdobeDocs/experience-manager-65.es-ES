@@ -14,7 +14,7 @@ exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
 source-git-commit: 084e5d561e25dcbaee4489b65f423fc9166832be
 workflow-type: tm+mt
 source-wordcount: '2000'
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ La consola Actividades permite crear, organizar y administrar las [actividades](
 
 En la consola de actividades, las actividades se organizan según la marca. Puede utilizar marcas y carpetas para estructurar la organización de las actividades. Vaya a la consola de actividades; para ello, pulse o haga clic en **Personalización** y pulse o haga clic en **Actividades**.
 
-Las actividades están disponibles en el modo de Orientación para [creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md), donde también puede crear actividades. Las actividades que cree en el modo Segmentación aparecerán en la consola de actividades.
+Las actividades están disponibles en el modo Segmentación del [contenido de destino de creación](/help/sites-authoring/content-targeting-touch.md), donde también puede crear actividades. Las actividades que cree en el modo Segmentación aparecerán en la consola de actividades.
 
 Las actividades se muestran con una etiqueta que describe qué tipo de actividad se define:
 
@@ -54,15 +54,15 @@ Las actividades se muestran con una etiqueta que describe qué tipo de actividad
 
 >[!CAUTION]
 >
->Debe proteger el nodo de configuración de actividad **cq:ActivitySettings** en la instancia de publicación para que los usuarios normales no puedan acceder a ella. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
+>Debe asegurar el nodo de configuración de actividades **cq:ActivitySettings** de la instancia de publicación, para que los usuarios normales no puedan obtener acceso a él. El nodo de configuración de la actividad solo debe ser accesible para el servicio que administra la sincronización de actividades en Adobe Target.
 >
->Consulte [Requisitos previos para la integración con Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) para obtener información detallada.
+>Consulte [Requisitos previos para la integración con Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) para obtener información detallada.
 
 ## Crear una marca mediante la consola de actividades {#creating-a-brand-using-the-activities-console}
 
 Cree una marca para la que quiera administrar actividades de marketing.
 
-Cuando crea una marca mediante la consola de actividades, también aparece en la [Consola de ofertas](/help/sites-authoring/offerlib.md) donde puede crear ofertas para las experiencias de sus actividades.
+Cuando cree una marca mediante la consola Actividades, esta también aparecerá en la [consola Ofertas](/help/sites-authoring/offerlib.md), donde podrá crear ofertas para las experiencias de las actividades.
 
 1. En la consola de navegación, haga clic o pulse **Personalización**. Haga clic o pulse **Actividades**.
 
@@ -134,7 +134,7 @@ Para añadir una actividad:
    * **Fecha y hora especificadas**: una hora específica. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
 
 1. Para especificar una prioridad de la actividad, utilice el regulador para seleccionar cualquier valor: **Baja**, **Normal** o **Alta**.
-1. Si utiliza Adobe Target como motor de segmentación, seleccione qué desea medir con esta actividad. Consulte [Configuración de la actividad y configuración de objetivos](/help/sites-authoring/content-targeting-touch.md) para obtener más información sobre las métricas de éxito disponibles. Debe seleccionar por lo menos un objetivo.
+1. Si utiliza Adobe Target como motor de segmentación, seleccione qué desea medir con esta actividad. Consulte [Configuración de la actividad y definición de objetivos](/help/sites-authoring/content-targeting-touch.md) para obtener más información acerca de las métricas de éxito disponibles. Debe seleccionar por lo menos un objetivo.
 1. Haga clic o pulse **Guardar**.
 
    >[!NOTE]
@@ -171,18 +171,18 @@ Puede ver el rendimiento de cualquier actividad de Adobe Target (XT o A/B). Si u
 
 Para ver el rendimiento de las actividades y convertirlas en experiencias ganadoras:
 
-1. En **Personalización**, toque o haga clic en **Actividades** para navegar hasta el **Actividades** consola.
+1. En **Personalización**, haga clic o pulse en **Actividades** para ir a la consola **Actividades**.
 1. Haga clic o pulse la marca de la cual quiera ver actividades.
 1. Seleccione la actividad y pulse o haga clic en **Ver propiedades**, seleccione la pestaña **Informes** y haga clic en la actividad para la que desee ver el rendimiento o convertir las experiencias ganadoras. Se muestran los datos de rendimiento.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Toque o haga clic en **Impulsar al ganador** vínculo para insertar esa experiencia como experiencia predeterminada.
+1. Haga clic o pulse en el vínculo **Ganador de push** para que esa experiencia sea la experiencia predeterminada.
 
    Convertir al ganador hace lo siguiente:
 
    * Desactiva la actividad actual
-   * Modifica todas las páginas y reemplaza el contenido de destino con el contenido real de la experiencia ganadora. El contenido de la experiencia ganadora pasa a formar parte de la página normal **without** segmentación.
+   * Modifica todas las páginas y reemplaza el contenido de destino con el contenido real de la experiencia ganadora. El contenido de la experiencia ganadora pasa a formar parte de la página normal **sin** segmentación.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -203,7 +203,7 @@ Estas condiciones se aplican a las actividades de las instancias de publicación
 Cuando se sincroniza una actividad, se crea la campaña correspondiente en Adobe Target:
 
 * Las actividades de la instancia de publicación tienen el mismo nombre que la campaña de Adobe Target correspondiente.
-* Las actividades de la instancia de autor se corresponden con las campañas de Target del mismo nombre con la variable `_author` sufijo.
+* Las actividades de la instancia de creación se corresponden con las campañas de Target que tienen el mismo nombre con el sufijo `_author`.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -229,7 +229,7 @@ Para evitar problemas de sincronización, use siempre nombres exclusivos para la
 
 >[!NOTE]
 >
->Cuando crea una campaña en Adobe Target, asigna una propiedad llamada `thirdPartyId t`en cada campaña. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; por lo tanto, los nombres de campaña no se pueden reutilizar en diferentes tipos de campaña.
+>Cuando crea una campaña en Adobe Target, asigna una propiedad llamada `thirdPartyId t`en cada campaña. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; por tanto, los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
 >
 >Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribirá la campaña existente.
 >

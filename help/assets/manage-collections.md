@@ -134,7 +134,7 @@ Las colecciones inteligentes se crean guardando una búsqueda para que pueda mod
    ![select_smart_collection](assets/select_smart_collection.png)
 
 1. En el **[!UICONTROL Archivos y carpetas]** lista, seleccionar **[!UICONTROL Archivos]**.
-1. Modifique uno o más filtros según sea necesario. Haga clic en **[!UICONTROL Editar colecciones inteligentes]**.
+1. Modifique uno o más filtros según sea necesario. Haga clic en **[!UICONTROL Editar colección inteligente]**.
 
    También puede editar el nombre de la colección inteligente.
 

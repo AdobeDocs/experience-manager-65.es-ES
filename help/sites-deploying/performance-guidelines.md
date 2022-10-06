@@ -438,7 +438,7 @@ Para obtener un buen rendimiento, debe seguir las directrices de configuración 
   <tr>
    <td><strong>Configuración</strong></td>
    <td><strong>Parámetro</strong></td>
-   <td><strong>Value</strong></td>
+   <td><strong>Valor</strong></td>
    <td><strong>Descripción</strong></td>
   </tr>
   <tr>

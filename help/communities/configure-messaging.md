@@ -1,8 +1,8 @@
 ---
 title: Función de mensajería
-seo-title: Función de mensajería
+seo-title: Messaging Feature
 description: Configuración de componentes de mensajería
-seo-description: Configuración de componentes de mensajería
+seo-description: Configuring Messaging components
 uuid: 8b99ded1-aec2-40c9-82d5-e2e404f614ca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,36 +10,35 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '927'
 ht-degree: 4%
 
 ---
-
 
 # Función de mensajería {#messaging-feature}
 
 Además de las interacciones públicamente visibles que se producen en los foros y comentarios, la función de mensajería de AEM Communities permite a los miembros de la comunidad interactuar entre sí de forma más privada.
 
-Esta función se puede incluir cuando se crea un [sitio de comunidad](/help/communities/overview.md#communitiessites).
+Esta función se puede incluir cuando [sitio de la comunidad](/help/communities/overview.md#communitiessites) se crea.
 
 La función de mensajería permite:
 
-**A** : enviar un mensaje a uno o varios miembros de la comunidad
+**A** - enviar un mensaje a uno o varios miembros de la comunidad
 
-**B** : enviar mensajes directos en  [masa a los grupos de miembros de la comunidad](/help/communities/messaging.md#group-messaging)
+**B** - enviar mensajes directos en [de forma masiva a los grupos de miembros de la comunidad](/help/communities/messaging.md#group-messaging)
 
-**C** : enviar un mensaje con datos adjuntos
+**C** - enviar un mensaje con archivos adjuntos
 
-**D** : reenviar un mensaje
+**D** - reenviar un mensaje
 
-**E** : responder a un mensaje
+**E** - responder a un mensaje
 
-**F** : eliminar un mensaje
+**F** - eliminar un mensaje
 
-**G** : restaurar un mensaje eliminado
+**G** - restaurar un mensaje eliminado
 
 ![messaging-section](assets/messaging-section.png)
 
@@ -47,106 +46,106 @@ La función de mensajería permite:
 
 Para habilitar y modificar la función de mensajería, consulte:
 
-* [Configurar ](/help/communities/messaging.md) mensajería para administradores
-* [Messaging ](/help/communities/essentials-messaging.md) Essentials para desarrolladores
+* [Configurar mensajería](/help/communities/messaging.md) para administradores
+* [Elementos básicos de mensajería](/help/communities/essentials-messaging.md) para desarrolladores
 
 >[!NOTE]
 >
->No se admite la adición de `Compose Message, Message, or Message List` componentes (que se encuentra en `Communities`grupo de componentes) a una página en modo de edición de autor.
+>No se puede añadir `Compose Message, Message, or Message List` componentes (encontrados en `Communities`grupo de componentes) a una página en modo de edición de autor.
 
-## Configurar componentes de mensajería {#configure-messaging-components}
+## Configuración de componentes de mensajería {#configure-messaging-components}
 
-Cuando se habilita la mensajería para un sitio de comunidad, se configura sin necesidad de ninguna configuración adicional. La información se proporciona si es necesario cambiar la configuración predeterminada.
+Cuando la mensajería está habilitada para un sitio de comunidad, se configura sin necesidad de ninguna configuración adicional. La información se proporciona si es necesario cambiar la configuración predeterminada.
 
-### Configurar la Lista de mensajes (cuadro de mensaje) {#configure-message-list-message-box}
+### Configurar lista de mensajes (cuadro de mensaje) {#configure-message-list-message-box}
 
-Para modificar la configuración de la lista de mensajes para las páginas **Bandeja de entrada**, **Elementos enviados** y **Papelera** de la función de mensajería, abra el sitio en [modo de edición del autor](/help/communities/sites-console.md#authoring-site-content).
+Para modificar la configuración de la lista de mensajes para **Bandeja de entrada**, **Elementos enviados** y **Papelera** páginas de la función de mensajería, abra el sitio en [modo de edición de autor](/help/communities/sites-console.md#authoring-site-content).
 
-1. En el modo `Preview`, seleccione el vínculo **Mensajes** para abrir la página de mensajería principal. A continuación, seleccione **Bandeja de entrada**, **Elementos enviados** o **Papelera** para configurar el componente para esa lista de mensajes.
+1. En `Preview` seleccione **Mensajes** para abrir la página de mensajería principal. A continuación, seleccione **Bandeja de entrada**, **Elementos enviados** o **Papelera** para configurar el componente de esa lista de mensajes.
 
-1. En el modo `Edit`, seleccione el componente en la página.
-1. Para acceder al cuadro de diálogo de configuración, seleccione el icono `link` para cancelar la herencia.
+1. En `Edit` seleccione el componente en la página.
+1. Para acceder al cuadro de diálogo de configuración, cancele la herencia seleccionando la opción `link` icono.
 Una vez cancelada la herencia, es posible seleccionar el icono de configuración para abrir el cuadro de diálogo de configuración.
 
-1. Una vez completada la configuración, es necesario restaurar la herencia seleccionando el icono `broken link`.
+1. Una vez completada la configuración, es necesario restaurar la herencia seleccionando la opción `broken link` icono.
 
-![configure-message-lista](assets/configure-message-list.png)
+![configure-message-list](assets/configure-message-list.png)
 
-#### Ficha básica {#basic-tab}
+#### Ficha Básico {#basic-tab}
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
 * **Selector de servicio**
 
-   (*Requerido*) Establezca esto en el valor de la propiedad **`serviceSelector.name`** del [Servicio de operaciones de mensajería de AEM Communities](/help/communities/messaging.md#messaging-operations-service).
+   (*Requerido*) Establezca este valor en el valor de la propiedad . **`serviceSelector.name`** de la variable [Servicio de operaciones de mensajería de AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
 * **Componer página**
 
-   (*Requerido*) La página que se abrirá cuando un miembro haga clic en el botón **`Reply`**. La página de destinatario debe contener el formulario **Redactar mensaje**.
+   (*Requerido*) La página que se abrirá cuando un miembro haga clic en la variable **`Reply`** botón. La página de destino debe contener la variable **Componer mensaje** formulario.
 
 * **Responder/Ver como medio**
 
-   Si se selecciona, la URL de respuesta y la URL de Vista harán referencia a un recurso; de lo contrario, los datos se pasarán como parámetros de consulta en la URL.
+   Si se selecciona, la URL de respuesta y la URL de vista hacen referencia a un recurso; de lo contrario, los datos se pasan como parámetros de consulta en la URL.
 
-* **Formulario para mostrar perfil**
+* **Formulario de visualización de perfil**
 
-   Formulario de perfil que se va a utilizar para mostrar el perfil de remitentes.
+   El formulario de perfil que se utiliza para mostrar el perfil de los remitentes.
 
-* **Carpeta Papelera**
+* **Carpeta de papelera**
 
-   Si se selecciona, este componente de Lista de mensajes solo muestra los mensajes marcados como eliminados (papelera).
+   Si se selecciona, este componente Lista de mensajes solo muestra los mensajes marcados como eliminados (papelera).
 
 * **Rutas de carpeta**
 
-   (*Requerido*) Al hacer referencia a los valores establecidos para **inbox.path.name** y **sentiitems.path.name** en el [Servicio de operaciones de mensajería de AEM Communities](/help/communities/messaging.md#messaging-operations-service). Al configurar para un `Inbox`, agregue una entrada usando el valor de **inbox.path.name**. Al configurar para un `Outbox`, agregue una entrada usando el valor de **sentiitems.path.name**. Al configurar para `Trash`, agregue dos entradas con ambos valores.
+   (*Requerido*) Referencia a los valores configurados para **inbox.path.name** y **sentiitems.path.name** en el [Servicio de operaciones de mensajería de AEM Communities](/help/communities/messaging.md#messaging-operations-service). Al configurar un `Inbox`, agregue una entrada con el valor de **inbox.path.name**. Al configurar un `Outbox`, agregue una entrada con el valor de **sentiitems.path.name**. Al configurar para `Trash`, agregue dos entradas con ambos valores.
 
-#### Mostrar ficha {#display-tab}
+#### Ficha Mostrar {#display-tab}
 
-![display-tab-message-lista](assets/display-tab-message-list.png)
+![display-tab-message-list](assets/display-tab-message-list.png)
 
-* **Marcar botón de lectura**
+* **Marcar como botón de lectura**
 
-   Si se selecciona, muestra un botón `Read`que permite marcar un mensaje como leído.
+   Si se selecciona, muestra una `Read`que permite marcar un mensaje como leído.
 
-* **Botón Marcar no leído**
+* **Marcar botón no leído**
 
-   Si se selecciona, muestra un botón `Mark Unread` que permite marcar un mensaje como leído.
+   Si se selecciona, muestra una `Mark Unread` que permite marcar un mensaje como leído.
 
 * **Botón Eliminar**
 
-   Si se selecciona, muestra un botón `Delete` que permite marcar un mensaje como leído. Duplicado la funcionalidad de eliminación si también se selecciona **`Message Options`**.
+   Si se selecciona, muestra una `Delete` que permite marcar un mensaje como leído. Duplicará la funcionalidad de eliminación si **`Message Options`** también está marcado.
 
 * **Opciones de mensaje**
 
-   Si se selecciona, muestra los botones **`Reply`**, **`Reply All`**, **`Forward`** y **`Delete`**, lo que permite enviar o eliminar un mensaje. Duplicado la funcionalidad de eliminación si también se selecciona **`Delete Button`**.
+   Si está marcado, muestra **`Reply`**, **`Reply All`**, **`Forward`** y **`Delete`** botones que permiten enviar o eliminar un mensaje. Duplicará la funcionalidad de eliminación si **`Delete Button`** también está marcado.
 
 * **Mensajes por página**
 
-   El número especificado es el número máximo de mensajes que se muestran por página en un esquema de paginación. Si no se especifica ningún número (se deja en blanco), se muestran todos los mensajes y no hay paginación.
+   El número especificado es el número máximo de mensajes mostrados por página en un esquema de paginación. Si no se especifica ningún número (se deja en blanco), todos los mensajes se muestran y no hay paginación.
 
 * **Patrones de marca de hora**
 
-   Proporcione patrones de marca de hora para uno o más idiomas. El valor predeterminado es en, de, fr, it, es, ja, zh_CN, ko_KR.
+   Proporcione patrones de marca de hora para uno o más idiomas. El valor predeterminado es para en, de, fr, it, es, ja, zh_CN, ko_KR.
 
 * **Mostrar usuario**
 
-   Elija **`Sender`** o **`Recipients`** para determinar si desea mostrar el remitente o los Destinatarios.
+   Elija una de las opciones siguientes: **`Sender`** o **`Recipients`** para determinar si desea mostrar el remitente o los destinatarios.
 
 ### Configurar mensaje de composición {#configure-compose-message}
 
-Para modificar la configuración de la página de mensaje de composición, abra el sitio en [modo de edición del autor](/help/communities/sites-console.md#authoring-site-content).
+Para modificar la configuración de la página de mensaje de composición, abra el sitio en [modo de edición de autor](/help/communities/sites-console.md#authoring-site-content).
 
-* En el modo `Preview`, seleccione el vínculo **Mensajes** para abrir la página de mensajería principal. A continuación, seleccione el botón Nuevo mensaje para abrir la página `Compose Message`.
+* En `Preview` seleccione **Mensajes** para abrir la página de mensajería principal. A continuación, seleccione el botón Nuevo mensaje para abrir el `Compose Message` página.
 
-* En el modo `Edit`, seleccione el componente principal en la página que contiene el cuerpo del mensaje.
-* Para acceder al cuadro de diálogo de configuración, seleccione el icono `link` para cancelar la herencia.
+* En `Edit` seleccione el componente principal de la página que contiene el cuerpo del mensaje.
+* Para acceder al cuadro de diálogo de configuración, cancele la herencia seleccionando la opción `link` icono.
 Una vez cancelada la herencia, es posible seleccionar el icono de configuración para abrir el cuadro de diálogo de configuración.
 
-* Una vez completada la configuración, es necesario restaurar la herencia seleccionando el icono `broken link`.
+* Una vez completada la configuración, es necesario restaurar la herencia seleccionando la opción `broken link` icono.
 
 ![config-compose-message](assets/config-compose-message.png)
 
-#### Ficha básica {#basic-tab-1}
+#### Ficha Básico {#basic-tab-1}
 
 ![basic-tab-compose](assets/basic-tab-compose.png)
 
@@ -164,45 +163,44 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 * **Longitud máxima del cuerpo del mensaje**
 
-   El número máximo de caracteres permitidos en el campo Contenido. Por ejemplo, 10000. El valor predeterminado no es límite.
+   El número máximo de caracteres permitidos en el campo Contenido . Por ejemplo, 10 000. El valor predeterminado no es límite.
 
 * **Selector de servicio**
 
-   (*Requerido*) Establezca esto en el valor de la propiedad **`serviceSelector.name`** del [Servicio de operaciones de mensajería de AEM Communities](/help/communities/messaging.md#messaging-operations-service).
+   (*Requerido*) Establezca este valor en el valor de la propiedad . **`serviceSelector.name`** de la variable [Servicio de operaciones de mensajería de AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
-#### Mostrar ficha {#display-tab-1}
+#### Ficha Mostrar {#display-tab-1}
 
 ![display-tab-compose](assets/display-tab-compose.png)
 
 * **Mostrar campo de asunto**
 
-   Si se selecciona, muestre el campo `Subject` y habilite la adición de un asunto al mensaje. El valor predeterminado no está marcado.
+   Si está marcado, muestre la variable `Subject` y permiten añadir un asunto al mensaje. El valor predeterminado no está seleccionado.
 
-* **Etiqueta de asunto**
+* **Etiqueta del asunto**
 
-   Escriba el texto que desea mostrar junto al campo `Subject`. El valor predeterminado es `Subject`.
+   Escriba el texto que se mostrará junto al `Subject` campo . El valor predeterminado es `Subject`.
 
 * **Mostrar el campo Adjuntar archivo**
 
-   Si se selecciona, muestre el campo `Attachment` y habilite la adición de archivos adjuntos al mensaje. El valor predeterminado no está marcado.
+   Si está marcado, muestre la variable `Attachment` y permiten agregar archivos adjuntos al mensaje. El valor predeterminado no está seleccionado.
 
 * **Etiqueta de archivo adjunto**
 
-   Escriba el texto que desea mostrar junto al campo `Attachment`. El valor predeterminado es **`Attach File`**.
+   Escriba el texto que se mostrará junto al `Attachment` campo . El valor predeterminado es **`Attach File`**.
 
 * **Mostrar campo de contenido**
 
-   Si se selecciona, muestre el campo `Content` y habilite la adición de un cuerpo de mensaje. El valor predeterminado no está marcado.
+   Si está marcado, muestre la variable `Content` y habilite la adición de un cuerpo de mensaje. El valor predeterminado no está seleccionado.
 
 * **Etiqueta de contenido**
 
-   Escriba el texto que desea mostrar junto al campo `Content`. El valor predeterminado es **`Body`**.
+   Escriba el texto que se mostrará junto al `Content` campo . El valor predeterminado es **`Body`**.
 
 * **Con editor de texto enriquecido**
 
-   Si se selecciona, indica el uso de un cuadro de texto de contenido personalizado con su propio editor de texto enriquecido. El valor predeterminado no está marcado.
+   Si se selecciona, indica el uso de un cuadro de texto de contenido personalizado con su propio editor de texto enriquecido. El valor predeterminado no está seleccionado.
 
 * **Patrones de marca de hora**
 
-   Proporcione patrones de marca de hora para uno o más idiomas. El valor predeterminado es en, de, fr, it, es, ja, zh_CN, ko_KR.
-
+   Proporcione patrones de marca de hora para uno o más idiomas. El valor predeterminado es para en, de, fr, it, es, ja, zh_CN, ko_KR.

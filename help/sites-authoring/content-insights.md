@@ -1,28 +1,27 @@
 ---
 title: Perspectiva de contenido
-seo-title: Perspectiva de contenido
+seo-title: Content Insight
 description: Perspectiva de contenido proporciona información sobre el rendimiento de la página mediante la analítica web y la recomendación de SEO
-seo-description: Perspectiva de contenido proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones SEO
+seo-description: Content Insight provides information about page performance using web analytics and SEO recommendation
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 91%
+source-wordcount: '521'
+ht-degree: 93%
 
 ---
-
 
 # Perspectiva de contenido{#content-insight}
 
 La perspectiva de contenido proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO. Utilice la perspectiva de contenido para tomar decisiones sobre cómo modificar las páginas o saber de qué manera los últimos cambios han influido en el rendimiento. En cada página que se cree, puede abrir la perspectiva de contenido para analizar la página.
 
-![chlimage_1-310](assets/chlimage_1-311.png)
+![chlimage_1-311](assets/chlimage_1-311.png)
 
 El diseño de la página Perspectiva de contenido cambia para adaptarse a las dimensiones de la pantalla y a la orientación del dispositivo que esté utilizando.
 
@@ -51,7 +50,7 @@ Consulte [Cambio del período de informe](/help/sites-authoring/ci-analyze.md#ch
 
 >[!NOTE]
 >
->Los informes de Perspectiva de contenido requieren que el administrador haya integrado AEM con SiteCatalyst, Target y BrightEdge. Consulte [Integración con SiteCatalyst](/help/sites-administering/adobeanalytics.md), [Integración con Adobe Target](/help/sites-administering/target.md) y [Integración con BrightEdge](/help/sites-administering/brightedge.md).
+>Los informes de Perspectiva de contenido requieren que el administrador haya integrado AEM con SiteCatalyst, Target y BrightEdge. Consulte [Integración con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integración con Adobe Target](/help/sites-administering/target.md)y [Integración con BrightEdge](/help/sites-administering/brightedge.md).
 
 ## El informe Vistas {#the-views-report}
 
@@ -88,7 +87,7 @@ En el informe Devoluciones se incluye un gráfico en que se muestra el número d
 
 ## El informe Actividad de la campaña {#the-campaign-activity-report}
 
-Para cada campaña para la que la página esté activa, aparece un informe denominado Actividad de *nombre de la campaña*. El informe muestra las impresiones de página y las conversiones de cada segmento para el que se proporciona una oferta.
+Para cada campaña para la que la página esté activa, aparece un informe denominado Actividad de *nombre de la campaña*. El informe muestra las impresiones y conversiones de la página para cada segmento para el que se proporciona una oferta.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
@@ -99,4 +98,3 @@ El informe Recomendaciones de SEO contiene los resultados del análisis de Brigh
 El informe le permite crear tareas para realizar mejoras que sirvan para aumentar el potencial de que la página se encuentre. En Recomendaciones se indica que las tareas se han creado para implementar la recomendación. Consulte [Asignación de tareas para Recomendaciones de SEO](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
-

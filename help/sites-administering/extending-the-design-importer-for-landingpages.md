@@ -111,7 +111,7 @@ En la sección siguiente se describe cómo editar su archivo HTML para poder con
 >
 >El código HTML que se utiliza para convertir partes de la página de aterrizaje en componentes de AEM tiene una forma larga y una declaración abreviada de tag. Ambas se describen para cada componente.
 
-### Restricciones     {#limitations}
+### Restricciones {#limitations}
 
 Antes de importar, tenga en cuenta las restricciones siguientes:
 
@@ -453,7 +453,7 @@ Supongamos que tiene un componente al que desea hacer referencia en el HTML medi
 
 La ruta en data-cq-component debería ser el resourceType del componente.
 
-### Prácticas recomendadas   {#best-practices}
+### Prácticas recomendadas {#best-practices}
 
 No se recomienda utilizar selectores de CSS similares a los siguientes con elementos marcados para la conversión de componentes durante la importación.
 

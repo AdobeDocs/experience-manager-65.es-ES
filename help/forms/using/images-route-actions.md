@@ -1,33 +1,32 @@
 ---
 title: Personalización de imágenes utilizadas en acciones de ruta
-seo-title: Personalización de imágenes utilizadas en acciones de ruta
-description: Cómo personalizar las imágenes utilizadas en las acciones de ruta en el espacio de trabajo de LiveCycle AEM Forms.
-seo-description: Cómo personalizar las imágenes utilizadas en las acciones de ruta en el espacio de trabajo de LiveCycle AEM Forms.
+seo-title: Customize images used in route actions
+description: Personalización de las imágenes utilizadas en las acciones de ruta en el espacio de trabajo de AEM Forms de LiveCycle.
+seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
 
-
 # Personalización de imágenes utilizadas en acciones de ruta {#customize-images-used-in-route-actions}
 
-Para personalizar las imágenes utilizadas en las acciones de ruta, realice los pasos descritos en [Pasos genéricos de personalización](/help/forms/using/generic-steps-html-workspace-customization.md) seguidos de los pasos descritos en este artículo.
+Para personalizar las imágenes utilizadas en las acciones de ruta, realice los pasos descritos en [Pasos genéricos de personalización](/help/forms/using/generic-steps-html-workspace-customization.md) seguido de los pasos descritos en este artículo.
 
 ## Imágenes para acciones de ruta {#images-for-route-actions}
 
-1. Añada los estilos que definen las imágenes en la CSS en la siguiente ubicación para las nuevas acciones de ruta:
+1. Agregue los estilos que definan imágenes en CSS en la siguiente ubicación para las nuevas acciones de ruta:
 
    `/apps/ws/css/newStyle.css`
 
-   Por ejemplo: Añada un nuevo estilo denominado `myStyle1`como se muestra a continuación y cargue el archivo de imagen `myStyleIcon1.png` en la carpeta `/apps/ws/image`s mediante un cliente WebDAV.
+   Por ejemplo: Añada un nuevo estilo llamado `myStyle1`como se muestra a continuación y cargue el archivo de imagen `myStyleIcon1.png` a `/apps/ws/image`s utilizando un cliente WebDAV.
 
    >[!NOTE]
    >
@@ -35,7 +34,7 @@ Para personalizar las imágenes utilizadas en las acciones de ruta, realice los 
 
    >[!NOTE]
    >
-   >Prefiere que el nombre del estilo sea el mismo que el nombre de la acción de ruta.
+   >Prefiera que el nombre del estilo sea el mismo que el nombre de la acción de ruta.
 
    ```css
    .myStyle1{
@@ -45,13 +44,13 @@ Para personalizar las imágenes utilizadas en las acciones de ruta, realice los 
        }
    ```
 
-## Ventana emergente de acción de tarea de Lista de tarea {#task-list-task-action-popup}
+## Elemento emergente de acción de tarea Lista de tareas {#task-list-task-action-popup}
 
-1. Crear una ventana emergente de acción de lista de tarea, consulte [Generación de código de área de trabajo de AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Requiere usar el paquete dev.
+1. Crear una ventana emergente de acción de lista de tareas; consulte [Creación del código de espacio de trabajo de AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Requiere utilizar el paquete dev.
 
-1. Copie `/libs/ws/js/runtime/templates/task.html` en `/apps/ws/js/runtime/templates/task.html`.
+1. Copiar `/libs/ws/js/runtime/templates/task.html` a `/apps/ws/js/runtime/templates/task.html`.
 
-1. Si el nombre del estilo CSS es el mismo que el nombre de la acción de ruta procedente del servidor, modifique el siguiente código en `/apps/ws/js/runtime/templates/task.html`:
+1. Si el nombre del estilo CSS es el mismo que el nombre de la acción de ruta proveniente del servidor, modifique el siguiente código en `/apps/ws/js/runtime/templates/task.html`:
 
    ```jsp
    <%if(routeList == null){%>
@@ -81,7 +80,7 @@ Para personalizar las imágenes utilizadas en las acciones de ruta, realice los 
                <%}%>
    ```
 
-1. Si el nombre del estilo CSS es diferente del nombre de la acción de ruta procedente del servidor, modifique el siguiente código en `/apps/ws/js/runtime/templates/task.html`. Agrega una pila de las condiciones del servlet `if-else` para asignar el estilo con el nombre de la acción de ruta.
+1. Si el nombre del estilo CSS es diferente del nombre de la acción de ruta proveniente del servidor, modifique el siguiente código en `/apps/ws/js/runtime/templates/task.html`. Agrega una pila de la variable `if-else` condiciones del servlet para asignar el estilo con el nombre de la acción de ruta.
 
 ```jsp
 <%if(routeList == null){%>
@@ -117,11 +116,11 @@ To
             <%}%>
 ```
 
-## Ventana emergente de acción de tarea Detalles de tarea {#task-details-task-action-popup}
+## Elemento emergente de acción de tarea Detalles de tarea {#task-details-task-action-popup}
 
-1. Copie `/libs/ws/js/runtime/templates/taskdetails.html` en `/apps/ws/js/runtime/templates/taskdetails.html`.
+1. Copiar `/libs/ws/js/runtime/templates/taskdetails.html` a `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. Si el nombre del estilo CSS es el mismo que el nombre de la acción de ruta procedente del servidor, modifique el siguiente código en `/apps/ws/js/runtime/templates/taskdetails.html`:
+1. Si el nombre del estilo CSS es el mismo que el nombre de la acción de ruta proveniente del servidor, modifique el siguiente código en `/apps/ws/js/runtime/templates/taskdetails.html`:
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -141,7 +140,7 @@ To
                        <%}%>
    ```
 
-1. Si el nombre del estilo CSS es diferente del nombre de la acción de ruta procedente del servidor, modifique el siguiente código en `/apps/ws/js/runtime/templates/taskdetails.html`. Agrega una pila de `if-else` condiciones del servlet para asignar el estilo con el nombre de la acción de ruta.
+1. Si el nombre del estilo CSS es diferente del nombre de la acción de ruta proveniente del servidor, modifique el siguiente código en `/apps/ws/js/runtime/templates/taskdetails.html`. Agrega una pila de `if-else` condiciones del servlet para asignar el estilo con el nombre de la acción de ruta.
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -169,7 +168,7 @@ To
                <%}%>
    ```
 
-1. Abra `/apps/ws/js/registry.js` para editarlo y busque el siguiente texto:
+1. Apertura `/apps/ws/js/registry.js` para editar y busque el siguiente texto :
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. Sustitúyase el texto por el siguiente:

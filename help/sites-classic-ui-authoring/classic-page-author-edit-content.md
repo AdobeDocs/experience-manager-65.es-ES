@@ -1,8 +1,8 @@
 ---
 title: Edición del contenido de una página
-seo-title: Edición del contenido de una página
+seo-title: Editing Page Content
 description: El contenido se agrega usando los componentes, que se pueden arrastrar a la página. Después estos se pueden editar local, mover o eliminar.
-seo-description: El contenido se agrega usando los componentes, que se pueden arrastrar a la página. Después estos se pueden editar local, mover o eliminar.
+seo-description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,15 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1780'
-ht-degree: 98%
+source-wordcount: '1755'
+ht-degree: 97%
 
 ---
 
-
-# Editar el contenido de una página{#editing-page-content}
+# Edición del contenido de una página{#editing-page-content}
 
 Después de crear una página (nueva o como parte de un lanzamiento o Live Copy), puede editar el contenido para realizar las actualizaciones que requiera.
 
@@ -61,7 +60,7 @@ Ofrecen acceso a una amplia selección de funciones, que incluyen:
 
 * [editar las propiedades de la página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
-* [realizar un andamiaje](/help/sites-authoring/scaffolding.md)
+* [andamiaje](/help/sites-authoring/scaffolding.md)
 
 * [contexto de cliente](/help/sites-administering/client-context.md)
 
@@ -88,7 +87,7 @@ Para insertar un nuevo componente:
 
 1. Inserte el componente que desee en la página. A continuación, haga doble clic en el párrafo, y se abrirá una ventana que permite configurar el párrafo y agregar contenido.
 
-### Insertar un componente utilizando el buscador de contenido  {#inserting-a-component-using-the-content-finder}
+### Insertar un componente utilizando el buscador de contenido {#inserting-a-component-using-the-content-finder}
 
 También puede agregar un componente nuevo a la página arrastrando un activo desde el [buscador de contenido](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). De este modo, se crea automáticamente un componente nuevo del tipo correspondiente que contiene el activo.
 
@@ -115,7 +114,7 @@ Para crear un componente arrastrando uno de los tipos de activo anteriores:
 
 1. Si es necesario, [edite](#editmovecopypastedelete) el componente.
 
-## Editar un componente (contenido y propiedades)  {#editing-a-component-content-and-properties}
+## Editar un componente (contenido y propiedades) {#editing-a-component-content-and-properties}
 
 Para editar un párrafo existente, haga una de las siguientes acciones:
 
@@ -206,7 +205,7 @@ Puede cancelar (y volver a habilitar) la herencia. En función del componente, e
 
 [Las anotaciones](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permiten que el resto de los autores hagan comentarios sobre el contenido. Esta opción acostumbra a utilizarse para revisiones y validaciones.
 
-## Previsualizar páginas    {#previewing-pages}
+## Previsualizar páginas   {#previewing-pages}
 
 Hay dos iconos en el borde inferior de la barra de tareas que son importantes para previsualizar las páginas:
 
@@ -228,7 +227,7 @@ Hay dos iconos en el borde inferior de la barra de tareas que son importantes pa
 
 Para ediciones a mayor escala de la misma frase, la opción de menú **[Buscar y reemplazar](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** permite buscar y reemplazar varias instancias de una cadena en una sección del sitio web.
 
-## Bloquear una página {#locking-a-page}
+## Bloquear una página   {#locking-a-page}
 
 AEM le permite bloquear páginas para que nadie más pueda modificar su contenido. Esta función es útil cuando realice muchas ediciones en una página concreta o cuando tenga que congelar una página un rato.
 
@@ -288,9 +287,7 @@ El comportamiento de los comandos Deshacer y Rehacer es similar al de otros prog
 >* Rehacer acciones siempre y cuando no haya realizado ninguna edición en la página desde que usó el comando Deshacer por última vez.
 >* Deshacer un máximo de 20 acciones de edición (configuración predeterminada).
 >* Utilizar [los métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para deshacer y rehacer.
-
 >
-
 
 
 Puede usar los comandos Deshacer y Rehacer para los siguientes tipos de cambios de página:
@@ -298,7 +295,7 @@ Puede usar los comandos Deshacer y Rehacer para los siguientes tipos de cambios 
 * Agregar, editar, quitar y mover párrafos
 * Editar contenido de párrafos en el lugar
 * Copiar, cortar y pegar elementos en una página
-* Copia, corte y pegado de elementos en las páginas
+* Copiar, cortar y pegar elementos entre páginas
 * Agregar, quitar y cambiar archivos e imágenes
 * Agregar, quitar, y cambiar anotaciones y bocetos
 * Cambios a Scaffold

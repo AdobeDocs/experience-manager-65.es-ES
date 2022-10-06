@@ -106,7 +106,7 @@ Los productos y los datos de productos mostrados en AEM se almacenan en Adobe Co
 1. En la vista del producto, haga clic en **Añadir atributo** > **Crear nuevo atributo**.
 1. Complete el **Nuevo atributo** formulario con los siguientes valores (deje la configuración predeterminada para otros valores)
 
-   | Conjunto de campos | Etiqueta de campo | Value |
+   | Conjunto de campos | Etiqueta de campo | Valor |
    | ----------------------------- | ------------------ | ---------------- |
    | Propiedades de atributo | Etiqueta de atributo | **Compatible con el ecosistema** |
    | Propiedades de atributo | Tipo de entrada de catálogo | **Sí/No** |

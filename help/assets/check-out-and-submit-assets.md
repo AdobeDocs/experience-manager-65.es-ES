@@ -8,7 +8,7 @@ exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
 source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
 source-wordcount: '460'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -56,7 +56,7 @@ Para verificar si otros usuarios pueden editar el recurso que ha desprotegido, i
 
 Los administradores pueden proteger los recursos que han extraído otros usuarios.
 
-1. Iniciar sesión en [!DNL Assets] como administrador.
+1. Inicie sesión en [!DNL Assets] como administrador.
 1. En el [!DNL Assets] interfaz de usuario de seleccione uno o varios recursos que otros usuarios hayan extraído.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)

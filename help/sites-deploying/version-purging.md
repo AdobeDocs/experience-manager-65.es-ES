@@ -1,8 +1,8 @@
 ---
 title: Depuración de versiones
-seo-title: Depuración de versiones
+seo-title: Version Purging
 description: Este artículo describe las opciones disponibles para la depuración de versiones.
-seo-description: Este artículo describe las opciones disponibles para la depuración de versiones.
+seo-description: This article describes the available options for version purging.
 uuid: a9fa25c7-e60e-4665-a726-99af9aac8f70
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 2%
+source-wordcount: '728'
+ht-degree: 1%
 
 ---
-
 
 # Depuración de versiones{#version-purging}
 
@@ -28,7 +27,7 @@ En una instalación estándar, AEM crea una nueva versión de una página o nodo
 >
 >Si no se realizan cambios en el contenido, verá el mensaje que indica que la página se ha activado, pero no se creará ninguna versión nueva
 
-Puede crear versiones adicionales si lo solicita utilizando la pestaña **Versioning** de la barra de tareas. Estas versiones se almacenan en el repositorio y se pueden restaurar si es necesario.
+Puede crear versiones adicionales si lo solicita utilizando la variable **Versiones** de la barra de tareas. Estas versiones se almacenan en el repositorio y se pueden restaurar si es necesario.
 
 Estas versiones nunca se depuran, por lo que el tamaño del repositorio crecerá con el tiempo y, por lo tanto, debe administrarse.
 
@@ -37,8 +36,7 @@ AEM incluye varios mecanismos para ayudarle a administrar su repositorio:
 * el [Administrador de versiones](#version-manager)
 Esto se puede configurar para depurar versiones antiguas cuando se crean versiones nuevas.
 
-* la herramienta [Purge Versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
-Se utiliza como parte de la supervisión y el mantenimiento del repositorio.
+* el [Purgar versiones](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) herramienta Se utiliza como parte de la supervisión y el mantenimiento del repositorio.
 Le permite intervenir para eliminar versiones antiguas de un nodo o una jerarquía de nodos, según estos parámetros:
 
    * Número máximo de versiones que se guardarán en el repositorio.
@@ -47,7 +45,7 @@ Cuando se supera este número, se elimina la versión más antigua.
    * La edad máxima de cualquier versión guardada en el repositorio.
 Cuando la antigüedad de una versión supera este valor, se depura del repositorio.
 
-* la [tarea de mantenimiento de purga de versión](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Puede programar la tarea de mantenimiento Purga de versión para eliminar automáticamente las versiones antiguas. Como resultado, esto minimiza la necesidad de utilizar manualmente las herramientas de purga de versión.
+* el [Tarea de mantenimiento de purga de versión](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Puede programar la tarea de mantenimiento Purga de versión para eliminar automáticamente las versiones antiguas. Como resultado, esto minimiza la necesidad de utilizar manualmente las herramientas de purga de versión.
 
 >[!CAUTION]
 >
@@ -57,7 +55,7 @@ Cuando la antigüedad de una versión supera este valor, se depura del repositor
 
 Además de la depuración explícita mediante la herramienta de depuración, el Administrador de versiones se puede configurar para depurar versiones antiguas cuando se crean versiones nuevas.
 
-Para configurar el Administrador de versiones, [cree una configuración](/help/sites-deploying/configuring-osgi.md) para:
+Para configurar el Administrador de versiones, [crear una configuración](/help/sites-deploying/configuring-osgi.md) para:
 
 `PID com.day.cq.wcm.core.impl.VersionManagerImpl`
 
@@ -65,13 +63,13 @@ Las opciones disponibles son las siguientes:
 
 * `versionmanager.createVersionOnActivation` (Booleano, predeterminado: true) Especifica si se creará una versión cuando se activen las páginas.
 Se crea una versión a menos que el agente de replicación esté configurado para suprimir la creación de versiones, que es respetado por el Administrador de versiones.
-Una versión solo se crea si la activación se produce en una ruta contenida en `versionmanager.ivPaths` (consulte a continuación).
+Una versión solo se crea si la activación se produce en una ruta contenida en `versionmanager.ivPaths` (véase más abajo).
 
-* `versionmanager.ivPaths`(Cadena[], predeterminada:  `{"/"}`) Especifica las rutas en las que se crean las versiones implícitamente al activarlas si  `versionmanager.createVersionOnActivation` se establece en true.
+* `versionmanager.ivPaths`(Cadena[], predeterminado: `{"/"}`) Especifica las rutas en las que se crean las versiones implícitamente al activarlas si `versionmanager.createVersionOnActivation` se establece en true.
 
 * `versionmanager.purgingEnabled` (Booleano, predeterminado: false) Define si se habilita o no la depuración cuando se crean nuevas versiones.
 
-* `versionmanager.purgePaths` (Cadena[], predeterminada: {&quot;/content&quot;}) Especifica en qué rutas se purgan las versiones cuando se crean nuevas versiones.
+* `versionmanager.purgePaths` (Cadena[], predeterminado: {&quot;/content&quot;}) Especifica en qué rutas se purgan las versiones cuando se crean nuevas versiones.
 
 * `versionmanager.maxAgeDays` (int, predeterminado: 30) Al purgar la versión, se eliminará cualquier versión anterior al valor configurado. Si el valor es menor que 1, la depuración no se realizará en función de la edad de la versión.
 
@@ -83,9 +81,9 @@ Una versión solo se crea si la activación se produce en una ruta contenida en 
 >
 >No se recomienda mantener un gran número de versiones en el repositorio. Por lo tanto, al configurar la operación de depuración de versiones tenga en cuenta que no excluya demasiadas versiones de la depuración de otra manera, el tamaño del repositorio no se optimizará correctamente. Si mantiene un gran número de versiones debido a los requisitos del negocio, póngase en contacto con el servicio de asistencia al Adobe para encontrar formas alternativas de optimizar el tamaño del repositorio.
 
-### Combinación de opciones de retención {#combining-retention-options}
+### Combinar opciones de retención {#combining-retention-options}
 
-Las opciones que definen cómo se deben conservar las versiones ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) se pueden combinar según sus necesidades.
+Las opciones que definen cómo se deben conservar las versiones ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), se puede combinar según sus necesidades.
 
 Por ejemplo, al definir el número máximo de versiones que desea conservar Y la versión más antigua que desea conservar:
 
@@ -122,4 +120,4 @@ Por ejemplo, al definir el número máximo Y mínimo de versiones que se deben c
 
 ## Herramienta Purgar versiones {#purge-versions-tool}
 
-La herramienta [Purge Versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) está diseñada para depurar las versiones de un nodo o una jerarquía de nodos en el repositorio. Su principal propósito es ayudarle a reducir el tamaño de su repositorio eliminando versiones antiguas de sus nodos.
+La variable [Purgar versiones](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) está diseñada para depurar las versiones de un nodo o una jerarquía de nodos en el repositorio. Su principal propósito es ayudarle a reducir el tamaño de su repositorio eliminando versiones antiguas de sus nodos.

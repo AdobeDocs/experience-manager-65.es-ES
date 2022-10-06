@@ -1,8 +1,8 @@
 ---
 title: Inicio rápido (SOAP) de la API de Java del servicio del Administrador de tareas
-seo-title: Inicio rápido (SOAP) de la API de Java del servicio del Administrador de tareas
+seo-title: Task Manager Service Java API QuickStart(SOAP)
 description: Utilice el servicio Administrador de tareas para asignar tareas, bloquear tareas, recuperar tareas asignadas a usuarios, recuperar datos de formulario de tareas, modificar datos de formulario, recuperar archivos adjuntos y recuperar información de tareas.
-seo-description: Utilice el servicio Administrador de tareas para asignar tareas, bloquear tareas, recuperar tareas asignadas a usuarios, recuperar datos de formulario de tareas, modificar datos de formulario, recuperar archivos adjuntos y recuperar información de tareas.
+seo-description: Use the Task Manager service to assign tasks, lock tasks, retrieve tasks assigned to users, retrieve form data from tasks, modify form data, retrieve file attachments, and retrieve task information.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
 
-
-# Inicio rápido (SOAP) de la API de Java del servicio del administrador de tareas {#task-manager-service-java-api-quickstart-soap}
+# Inicio rápido de la API de Java (SOAP) del servicio del administrador de tareas {#task-manager-service-java-api-quickstart-soap}
 
 Las siguientes opciones de inicio rápido están disponibles para el servicio Administrador de tareas.
 
@@ -41,7 +40,7 @@ Las operaciones de AEM Forms se pueden realizar mediante la API con establecimie
 
 >[!NOTE]
 >
->No puede buscar tareas asignadas a usuarios mediante la API de servicio web. El motivo es que no puede invocar el método `taskList` , que es una llamada de método necesaria para realizar esta tarea.
+>No puede buscar tareas asignadas a usuarios mediante la API de servicio web. El motivo es que no se puede invocar la variable `taskList` , que es una llamada de método necesaria para realizar esta tarea.
 
 >[!NOTE]
 >
@@ -397,7 +396,7 @@ El siguiente ejemplo de código Java recupera todas las tareas asignadas a un us
 
 ## Inicio rápido (modo SOAP): Recuperación de datos de formulario de tareas mediante la API de Java {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
-El siguiente ejemplo de código Java recupera los datos de formulario de una tarea con el valor de identificador 304. Los datos del formulario se escriben en un archivo XML denominado *FormData.xml* ubicado en C:\Adobe.
+El siguiente ejemplo de código Java recupera los datos de formulario de una tarea con el valor de identificador 304. Los datos del formulario se escriben en un archivo XML denominado *FormData.xml* se encuentra en C:\Adobe.
 
 ```java
  /*
@@ -503,7 +502,7 @@ El siguiente ejemplo de código Java recupera los datos de formulario de una tar
 
 ## Inicio rápido (modo SOAP): Modificación de los datos de formulario mediante la API de Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-El siguiente ejemplo de código Java actualiza un formulario con datos que se encuentran en el archivo *FormData.xml*.
+El siguiente ejemplo de código Java actualiza un formulario con datos que se encuentran en la variable *FormData.xml* archivo.
 
 ```java
  /*
@@ -717,7 +716,7 @@ El siguiente ejemplo de código Java recupera los archivos adjuntos. Cada archiv
 
 ## Inicio rápido (modo SOAP): Recuperación de información de tareas mediante la API de Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-El siguiente ejemplo de código Java recupera todas las tareas basadas en un proceso denominado *MortgageLoan - Prebuilt*. El estado de cada tarea devuelta se comprueba para asegurarse de que es una tarea completada. Se recupera y muestra información como el nombre del usuario que completó la tarea y la fecha en que se completó la tarea.
+El siguiente ejemplo de código Java recupera todas las tareas basadas en un proceso denominado *Préstamo hipotecario - Pregenerado*. El estado de cada tarea devuelta se comprueba para asegurarse de que es una tarea completada. Se recupera y muestra información como el nombre del usuario que completó la tarea y la fecha en que se completó la tarea.
 
 ```java
  /*
@@ -869,4 +868,3 @@ El siguiente ejemplo de código Java recupera todas las tareas basadas en un pro
      }
  
 ```
-

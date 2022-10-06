@@ -1,28 +1,27 @@
 ---
 title: Seguimiento de correos electrónicos devueltos
-seo-title: Seguimiento de correos electrónicos devueltos
+seo-title: Tracking Bounced Emails
 description: Cuando envíe una newsletter a varios usuarios, normalmente habrá direcciones de correo electrónico no válidas en la lista. Si se envían newsletters a estas direcciones, se devolverán. AEM puede administrar el correo devuelto y dejar de enviar newsletters a dichas direcciones cuando se supera el contador de devoluciones.
-seo-description: Cuando envíe una newsletter a varios usuarios, normalmente habrá direcciones de correo electrónico no válidas en la lista. Si se envían newsletters a estas direcciones, se devolverán. AEM puede administrar el correo devuelto y dejar de enviar newsletters a dichas direcciones cuando se supera el contador de devoluciones.
+seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
 uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 80%
+source-wordcount: '711'
+ht-degree: 79%
 
 ---
-
 
 # Seguimiento de correos electrónicos devueltos{#tracking-bounced-emails}
 
 >[!NOTE]
 >
->Adobe no planea mejorar aún más el seguimiento de los correos electrónicos abiertos o devueltos por AEM servicio SMTP.
+>Adobe no tiene previsto mejorar aún más el seguimiento de los correos electrónicos abiertos o devueltos enviados por AEM servicio SMTP.
 >
 >La recomendación es [aprovechar Adobe Campaign y su integración AEM](/help/sites-administering/campaign.md).
 
@@ -40,7 +39,7 @@ Para configurar Feed Importer para que realice el seguimiento de los correos ele
 
 1. Haga clic en **Añadir** para crear una configuración nueva.
 
-   ![chlimage_1](assets/chlimage_1a.png)
+   ![imagen_1](assets/chlimage_1a.png)
 
 1. Para añadir una configuración nueva, seleccione el tipo y añada información a la URL de sondeo para configurar el host y el puerto. Asimismo, debe añadir parámetros de correo y protocolo a la consulta URL. Establezca la configuración de forma que se sondee al menos una vez al día.
 
@@ -68,7 +67,7 @@ Para configurar Feed Importer para que realice el seguimiento de los correos ele
 
    `imap.flag.SEEN`:Configurar false para los mensajes nuevos o no vistos y true para los mensajes ya leídos
 
-   Consulte [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) para obtener la lista completa de los indicadores.
+   Consulte [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) para la lista completa de indicadores.
 
    **Ejemplos de IMAP:**
 
@@ -79,7 +78,7 @@ Para configurar Feed Importer para que realice el seguimiento de los correos ele
 
 1. Guarde la configuración.
 
-## Configuración del componente de servicio de la newsletter  {#configuring-the-newsletter-service-component}
+## Configuración del componente de servicio de la newsletter {#configuring-the-newsletter-service-component}
 
 Tras configurar Feed Importer, debe configurar la dirección De y el contador de devoluciones.
 
@@ -89,7 +88,7 @@ Para configurar el servicio de newsletter:
 
 1. Configure el servicio y guarde los cambios cuando haya terminado.
 
-   ![chlimage_1-1](assets/chlimage_1-1a.png)
+   ![Chlimage_1-1](assets/chlimage_1-1a.png)
 
    Se pueden ajustar las configuraciones siguientes para cambiar el comportamiento:
 

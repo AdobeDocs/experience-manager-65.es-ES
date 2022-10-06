@@ -15,7 +15,7 @@ exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
 source-wordcount: '2088'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -106,7 +106,7 @@ Realice los siguientes pasos en la secuencia indicada si configura AEM Assets co
 1. [Obtener un certificado público](#public-certificate)
 1. [Crear conexión de cuenta de servicio (JWT)](#createnewintegration)
 1. [Configurar la cuenta de IMS](#create-ims-account-configuration)
-1. [Configurar el servicio en la nube](#configure-the-cloud-service)
+1. [Configurar el servicio en la nube de ](#configure-the-cloud-service)
 1. [Probar la configuración](#test-integration)
 
 ### Crear la configuración de IMS {#create-ims-configuration}
@@ -122,7 +122,7 @@ La configuración de IMS incluye dos pasos:
 
 La clave pública (certificado) autentica el perfil en la consola de Adobe Developer.
 
-1. Inicie sesión en la instancia de autor de AEM Assets. La dirección URL predeterminada es `http://localhost:4502/aem/start.html`.
+1. Inicie sesión en la instancia de autor de AEM Assets. El URL predeterminado es `http://localhost:4502/aem/start.html`.
 
 1. En el **Herramientas** ![Herramientas](assets/do-not-localize/tools.png) , vaya a **[!UICONTROL Seguridad]** > **[!UICONTROL Configuraciones de IMS de Adobe]**.
 
@@ -173,7 +173,7 @@ Realice los siguientes pasos para generar las credenciales de cuenta de servicio
 
 1. En el **[!UICONTROL Configuración de API]** ventana, haga clic en **[!UICONTROL Cargar la clave pública]**. A continuación, haga clic en **[!UICONTROL Seleccionar un archivo]** y cargue la clave pública (archivo .crt) que descargó en la variable [obtener certificado público](#public-certificate) para obtener más información.
 
-   Haga clic en **[!UICONTROL Siguiente]**. 
+   Haga clic en **[!UICONTROL Siguiente]**.
 
    ![Cargar clave pública](assets/service-account3.png)
 
@@ -282,7 +282,7 @@ Realice los siguientes pasos para configurar la cuenta de IMS.
 >
 >Asegúrese de que la configuración de IMS pase la comprobación de estado. Si la configuración no pasa la comprobación de estado, no es válida. Debe eliminarla y crear una configuración nueva y válida.
 
-### Configurar el servicio en la nube {#configure-the-cloud-service}
+### Configurar el servicio en la nube de  {#configure-the-cloud-service}
 
 Siga estos pasos para configurar el servicio en la nube de Brand Portal:
 
@@ -391,7 +391,7 @@ Debe ejecutar la siguiente lista de comprobación al eliminar las configuracione
 * Eliminar el servicio en la nube de Brand Portal
 * Eliminar usuario de MAC
 
-1. Inicie sesión en la instancia de autor de AEM Assets y abra CRX Lite como administrador. La dirección URL predeterminada es `http://localhost:4502/crx/de/index.jsp`.
+1. Inicie sesión en la instancia de autor de AEM Assets y abra CRX Lite como administrador. El URL predeterminado es `http://localhost:4502/crx/de/index.jsp`.
 
 1. Vaya a `/etc/replications/agents.author` y elimine los cuatro agentes de replicación del inquilino de Brand Portal.
 

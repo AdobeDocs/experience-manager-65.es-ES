@@ -1,8 +1,8 @@
 ---
 title: Edición de lanzamientos
-seo-title: Edición de lanzamientos
+seo-title: Editing Launches
 description: Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede editar el contenido de la copia de lanzamiento de la página.
-seo-description: Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede editar el contenido de la copia de lanzamiento de la página.
+seo-description: When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the page(s).
 uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '291'
 ht-degree: 99%
 
 ---
-
 
 # Edición de lanzamientos{#editing-launches}
 
@@ -28,7 +27,7 @@ Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede 
 1. Abra la página para su edición.
 1. En la barra de tareas, seleccione la ficha **Versiones** y amplíe el grupo **Lanzamientos**. El título del lanzamiento que se esté editando estará en negrita.
 
-   ![chlimage_1-13](assets/chlimage_1-13.jpeg)
+   ![imagen_1-13](assets/chlimage_1-13.jpeg)
 
 1. Seleccione el lanzamiento en el que quiere trabajar y haga clic en **Cambiar**.
 1. Comience a editar.
@@ -68,4 +67,3 @@ Cuando se edita un lanzamiento de una página, la información del lanzamiento a
 * Estado del indicador **Listo para producción** (naranja = sin establecer; verde = establecido).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
-

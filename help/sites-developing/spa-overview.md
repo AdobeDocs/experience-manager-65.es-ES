@@ -41,7 +41,7 @@ Para obtener más información sobre SPA en AEM, consulte los siguientes documen
 * [Modelo SPA](/help/sites-developing/spa-blueprint.md) para los requisitos técnicos de una SPA
 * [Introducción a SPA en AEM](/help/sites-developing/spa-getting-started-react.md) para un rápido recorrido por un SPA simple
 
-## Design {#design}
+## Diseño {#design}
 
 El componente de página de una SPA no proporciona los elementos HTML de sus componentes secundarios a través del archivo JSP o HTL. Esta operación se delega en el marco SPA. La representación de componentes o modelos secundarios se obtiene como una estructura de datos JSON del JCR. A continuación, los componentes SPA se añaden a la página según esa estructura. Este comportamiento diferencia la composición inicial del cuerpo del componente de página de las contrapartes que no son SPA.
 
@@ -189,7 +189,7 @@ Para ver un ejemplo de cómo se hace esto, consulte la [Contenido de muestra de 
 
 Para obtener información adicional sobre la variable `editElementQuery` y la configuración del editor de texto enriquecido, consulte [Configure el Editor de texto enriquecido.](/help/sites-administering/rich-text-editor.md)
 
-### Restricciones     {#limitations}
+### Restricciones {#limitations}
 
 El SDK de AEM SPA Editor se ha introducido con AEM 6.4 service pack 2. Cuenta con el pleno apoyo del Adobe, que sigue ampliándose y ampliándose. El Editor de SPA aún no admite las siguientes funciones de AEM:
 

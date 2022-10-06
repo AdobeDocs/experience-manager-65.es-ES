@@ -13,7 +13,7 @@ exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 source-git-commit: 126d5309fe3c3b6474e180d21f5c7d1697d9e08a
 workflow-type: tm+mt
 source-wordcount: '1884'
-ht-degree: 5%
+ht-degree: 11%
 
 ---
 
@@ -171,7 +171,7 @@ Realice los siguientes pasos en todas las instancias de Autor y Publicación par
 
 Siga estos pasos en todas las instancias de Autor y Publicación para añadir el paquete a la lista de permitidos:
 
-1. Abra AEM Administrador de configuración en una ventana del explorador. La dirección URL predeterminada es `https://'[server]:[port]'/system/console/configMgr`.
+1. Abra AEM Administrador de configuración en una ventana del explorador. El URL predeterminado es `https://'[server]:[port]'/system/console/configMgr`.
 1. Buscar **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** y abra la configuración.
 1. Agregue la variable **sun.util.calendar** al **lista de permitidos** campo . Haga clic en **Guardar**.
 1. Repita los pasos del 1 al 3 en todas las instancias de Autor y Publicación .
@@ -208,7 +208,7 @@ Realice los siguientes pasos para configurar la caché de formularios adaptables
 
    >[!NOTE]
    >
-   >Para desactivar la caché, establezca el valor en el campo Número de Forms adaptable en **0**. La caché se restablece y todos los formularios y documentos se eliminan de la caché cuando se desactiva o cambia la configuración de la caché.
+   >Para desactivar la caché, establezca el valor del campo Número de formularios adaptables en **0**. La caché se restablece y todos los formularios y documentos se eliminan de ella cuando se desactiva o cambia su configuración.
 
 #### Configuración de la comunicación SSL para el modelo de datos de formulario {#configure-ssl-communcation-for-form-data-model}
 
@@ -218,9 +218,9 @@ Puede activar la comunicación SSL para el modelo de datos de formulario. Para h
 
 #### Configuración de Adobe Sign {#configure-adobe-sign}
 
-Adobe Sign permite los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para áreas legales, de ventas, de nómina, de gestión de recursos humanos y muchas otras áreas.
+Adobe Sign permite los flujos de trabajo de firma electrónica para formularios adaptables. Las firmas electrónicas mejoran los flujos de trabajo para procesar documentos para el área legal, ventas, nóminas, administración de recursos humanos y muchas más.
 
-En un escenario típico de Adobe Sign y formularios adaptables, un usuario rellena un formulario adaptable a **solicitud de un servicio**. Por ejemplo, una solicitud de tarjeta de crédito y un formulario de beneficios para los ciudadanos. Cuando un usuario rellena, envía y firma el formulario de solicitud, este se envía al proveedor de servicios para que realice más acciones. El proveedor de servicios revisa la aplicación y utiliza Adobe Sign para marcar la aplicación aprobada. Para habilitar flujos de trabajo de firma electrónica similares, puede integrar Adobe Sign con AEM Forms.
+En un escenario típico de Adobe Sign y formularios adaptables, un usuario rellena un formulario adaptable a **solicitud de un servicio**. Por ejemplo, una solicitud de tarjeta de crédito y un formulario de solicitud para una prestación. Cuando un usuario rellena, envía y firma el formulario de solicitud, este se envía al proveedor de servicios para que realice más acciones. El proveedor de servicios revisa la aplicación y utiliza Adobe Sign para marcar la aplicación aprobada. Para habilitar flujos de trabajo de firma electrónica similares, puede integrar Adobe Sign con AEM Forms.
 
 Para usar Adobe Sign con AEM Forms, [Integración de Adobe Sign con AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 

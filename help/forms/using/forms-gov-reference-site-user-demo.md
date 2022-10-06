@@ -341,7 +341,7 @@ George aprueba la aplicación de Aya, y gracias a un flujo de trabajo automatiza
 
 1. Vaya a la esquina superior izquierda y haga clic en &quot;**Aprobar**&quot; para aprobar la aplicación.
 1. En el modal, puede dejar un mensaje para el posible cliente CX.
-1. Haga clic en Finalizado.
+1. Haga clic en Listo.
 1. (Función ciudadana) Abra su cliente de correo electrónico para ver el correo electrónico enviado a Aya.
 
    ![Ver el correo electrónico enviado a Aya](/help/forms/using/assets/email_client.png)
@@ -390,7 +390,7 @@ George aprueba la aplicación de Aya, y gracias a un flujo de trabajo automatiza
 
 1. De vuelta en AEM, vaya a la esquina superior izquierda y haga clic en &quot;**Submit**&quot; para enviar la solicitud.
 1. En el modal, puede dejar un mensaje.
-1. Haga clic en Finalizado.
+1. Haga clic en Listo.
 
    ![Pestaña Actividades](/help/forms/using/assets/activities_tab.png) ![Confirmar nuevo contacto](/help/forms/using/assets/confirm_new_contact.png)
 

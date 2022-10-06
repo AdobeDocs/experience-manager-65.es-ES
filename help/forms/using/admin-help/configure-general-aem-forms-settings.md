@@ -93,7 +93,7 @@ Esta configuración es obligatoria. El valor predeterminado es 600 segundos.
 
 **Intervalo de barrido del documento (segundos)** Cantidad de tiempo, en segundos, entre los intentos de eliminar archivos que ya no son necesarios y que se utilizaron para pasar datos de documento entre servicios.
 
-Esta configuración es obligatoria. El valor predeterminado es de 30 segundos.
+Esta configuración es obligatoria. El valor predeterminado es 30 segundos.
 
 **Habilitar FIPS** Seleccione esta opción para activar el modo FIPS. Federal Information Processing Standard (FIPS) 140-2 es un estándar de criptología definido por el gobierno de Estados Unidos. Cuando se ejecuta en modo FIPS, AEM formularios restringe la protección de datos a algoritmos aprobados por FIPS 140-2 mediante el módulo de cifrado RSA BSAFE Crypto-C 2.1.
 

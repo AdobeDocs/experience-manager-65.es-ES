@@ -184,7 +184,7 @@ De forma opcional, puede configurar el retardo de sincronización entre diferent
 
 Sharepoint incluye los métodos de autenticación Classic y Basada en Reclamaciones, ambos compatibles con los siguientes tipos de autenticación:
 
-* Básico
+* Basic
 * Basado en Forms
 
 En particular, están disponibles los siguientes tipos de autenticación:

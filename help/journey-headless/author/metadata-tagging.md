@@ -5,7 +5,7 @@ exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 3%
+ht-degree: 15%
 
 ---
 
@@ -46,6 +46,6 @@ Ahora puede poner todo este conocimiento en uso y empezar a crear fragmentos de 
 
 * [Metadatos: Propiedades del fragmento](/help/assets/content-fragments/content-fragments-metadata.md)
 
-* [Uso de etiquetas  ](/help/sites-authoring/tags.md)
+* [Uso de etiquetas](/help/sites-authoring/tags.md)
 
 * [Modelos de fragmento de contenido: permitir modelos de fragmento de contenido en la carpeta de recursos](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

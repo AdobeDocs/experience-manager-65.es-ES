@@ -52,7 +52,7 @@ En la tabla siguiente se describen procesos comunes que reducen las vulnerabilid
 <table> 
  <thead> 
   <tr> 
-   <th><p>Problema  </p> </th> 
+   <th><p>Problema</p> </th> 
    <th><p>Descripción</p> </th> 
   </tr> 
  </thead> 
@@ -88,7 +88,7 @@ En la tabla siguiente se describen algunos enfoques posibles para minimizar las 
 <table> 
  <thead> 
   <tr> 
-   <th><p>Problema  </p></th> 
+   <th><p>Problema</p></th> 
    <th><p>Descripción</p></th> 
   </tr> 
  </thead> 
@@ -117,7 +117,7 @@ En esta sección se describen las técnicas que puede utilizar durante el proces
 <table> 
  <thead> 
   <tr> 
-   <th><p>Problema  </p> </th> 
+   <th><p>Problema</p> </th> 
    <th><p>Descripción</p> </th> 
   </tr> 
  </thead> 
@@ -327,7 +327,7 @@ En la tabla siguiente se describen algunas técnicas para proteger el servidor d
 <table> 
  <thead> 
   <tr> 
-   <th><p>Problema  </p> </th> 
+   <th><p>Problema</p> </th> 
    <th><p>Descripción</p> </th> 
   </tr> 
  </thead> 
@@ -442,7 +442,7 @@ En esta tabla se describen las técnicas de auditoría y registro que puede util
 <table> 
  <thead> 
   <tr> 
-   <th><p>Problema  </p> </th> 
+   <th><p>Problema</p> </th> 
    <th><p>Descripción</p> </th> 
   </tr> 
  </thead> 

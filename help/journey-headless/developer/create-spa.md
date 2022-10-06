@@ -5,7 +5,7 @@ exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 source-git-commit: 7b97bc0ffb0df6641ae71fa36c459f1368052e12
 workflow-type: tm+mt
 source-wordcount: '1273'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -32,7 +32,7 @@ Este artículo se basa en su conocimiento de AEM sin encabezado al explorar en p
 
 ## Objetivo {#objective}
 
-Este documento le ayuda a comprender cómo se desarrollan las aplicaciones de una sola página mediante el marco AEM SPA Editor. Después de leer este documento, debe:
+Este documento le ayuda a comprender cómo se desarrollan las aplicaciones de una sola página mediante el marco AEM SPA Editor. Después de leer este documento, debería poder hacer lo siguiente:
 
 * Comprender la función básica del SPA Editor.
 * Conozca los requisitos para crear una SPA totalmente editable para AEM.
@@ -121,10 +121,10 @@ Consulte a continuación la [recursos adicionales](#additional-resources) que pu
 A continuación se muestran algunos recursos adicionales que profundizan en algunos conceptos mencionados en este documento.
 
 * [Encabezado y sin cabeza en AEM](/help/sites-developing/headful-headless.md) - Una descripción de los diferentes modelos de envío disponibles en AEM
-* [SPA Introducción y Tutorial.](/help/sites-developing/spa-walkthrough.md) - Una buena introducción a la SPA en AEM
+* [Introducción y tutorial de SPA.](/help/sites-developing/spa-walkthrough.md) - Una buena introducción a la SPA en AEM
 * [Desarrollo de SPA para AEM](/help/sites-developing/spa-architecture.md) - Directrices sobre cómo desarrollar SPA para AEM
 * [Información general del Editor de SPA](/help/sites-developing/spa-overview.md) - Detalles del funcionamiento del SPA Editor
 * [Renderización del servidor](/help/sites-developing/spa-ssr.md) - Cómo configurar SSR para AEM SPA
 * [Documentos de referencia SPA](/help/sites-developing/spa-reference-materials.md) : Referencias de la API de JavaScript y vínculos a los proyectos de código abierto AEM SPA proyectos de GitHub
 * [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) - Cómo crear fragmentos de contenido
-* [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Plantilla Maven que crea un proyecto mínimo de Adobe Experience Manager (AEM) basado en las prácticas recomendadas como punto de partida para su sitio web
+* [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es) - Plantilla Maven que crea un proyecto mínimo de Adobe Experience Manager (AEM) basado en las prácticas recomendadas como punto de partida para su sitio web

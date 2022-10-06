@@ -1,22 +1,21 @@
 ---
-title: Métodos abreviados de teclado al editar páginas
-seo-title: Métodos abreviados de teclado al editar páginas
+title: Métodos abreviados del teclado al editar páginas
+seo-title: Keyboard Shortcuts when Editing Pages
 description: Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la edición de páginas y otros son para el uso de las consolas.
-seo-description: Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la edición de páginas y otros son para el uso de las consolas.
+seo-description: Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the use of consoles.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '313'
+ht-degree: 90%
 
 ---
-
 
 # Métodos abreviados del teclado al editar páginas{#keyboard-shortcuts-when-editing-pages}
 
@@ -24,7 +23,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 >[!NOTE]
 >
->En las siguientes tablas, para las combinaciones de teclas de la columna **Método abreviado**, las teclas Ctrl y Comando funcionan en macOS.
+>En las tablas siguientes, para las combinaciones de teclas de la variable **Acceso directo** , las teclas Ctrl y Comando funcionan en macOS.
 
 >[!NOTE]
 >
@@ -32,9 +31,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 >
 >* Windows: Ctrl + clic en los componentes necesarios.
 >* Mac: Cmd + clic en los componentes necesarios.
-
 >
-
 
 
 ## Editar métodos abreviados de teclado {#editing-keyboard-shortcuts}
@@ -42,7 +39,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 <table>
  <tbody>
   <tr>
-   <th>Ubicación</th>
+   <th>Lugar de residencia</th>
    <th>Método abreviado</th>
    <th>Descripción</th>
   </tr>
@@ -164,15 +161,14 @@ Existen otros métodos abreviados del teclado para los desarrolladores de escrit
 <table>
  <tbody>
   <tr>
-   <th>Ubicación</th>
+   <th>Lugar de residencia</th>
    <th>Método abreviado</th>
    <th>Descripción</th>
   </tr>
   <tr>
    <td>Modo de edición</td>
-   <td>Establezca el siguiente sufijo en la dirección URL:<br /> <code>?debugClientLibs=true</code><br /> A continuación, utilice:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Establezca el siguiente sufijo en la URL:<br /> <code>?debugClientLibs=true</code><br /> A continuación, utilice:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Para ver estadísticas de tiempo para la carga de páginas.</td>
   </tr>
  </tbody>
 </table>
-

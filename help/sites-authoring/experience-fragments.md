@@ -14,7 +14,7 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -27,12 +27,12 @@ Un fragmento de experiencia:
 * Forma parte de una experiencia (página).
 * Se puede utilizar en varias páginas.
 * Se basa en una plantilla (solo editable) para definir la estructura y los componentes.
-* Esta plantilla se utiliza para crear la variable *página raíz* del fragmento de experiencias.
+* Esta plantilla se utiliza para crear la *página raíz* del Fragmento de experiencia.
 * Se compone de uno o varios componentes, con diseño, en un sistema de párrafos.
 * Puede contener otros fragmentos de experiencias.
 * Se puede combinar con otros componentes (incluidos otros fragmentos de experiencias) para formar una página completa (experiencia).
 * Se pueden crear una o más variaciones basadas en la página raíz.
-* Estas variaciones pueden compartir contenido o componentes.
+* Estas pueden compartir contenido o componentes.
 * Se puede desglosar en bloques de construcción que se pueden utilizar en varias variaciones del fragmento.
 
 Puede utilizar los fragmentos de experiencias:
@@ -178,7 +178,7 @@ Para crear un fragmento de experiencia:
    ![xf-04](assets/xf-04.png)
 
    >[!NOTE]
-   Las etiquetas de la plantilla Fragmento de experiencia no se combinarán con etiquetas en esta página raíz del fragmento de experiencia.
+   Las etiquetas de la plantilla de Fragmento de experiencia no se combinarán con etiquetas en esta página raíz del Fragmento de experiencia.
    Son totalmente independientes.
 
 1. Haga clic en **Crear**.
@@ -285,7 +285,7 @@ Para crear un nuevo bloque de creación:
 
 El bloque de creación se puede ver en la pestaña **Bloques de creación**. Para cada bloque, están disponibles las siguientes acciones:
 
-* Vaya a Principal: abra la variación de la página raíz en una pestaña nueva
+* Ir a la variación principal: abrir la variación de la página raíz en una nueva pestaña
 * Cambiar nombre
 * Eliminar
 

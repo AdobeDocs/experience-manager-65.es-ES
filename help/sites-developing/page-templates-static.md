@@ -1,8 +1,8 @@
 ---
 title: 'Plantillas de página: estáticas'
-seo-title: 'Plantillas de página: estáticas'
+seo-title: Page Templates - Static
 description: Se utiliza una plantilla para crear una página y define qué componentes se pueden utilizar dentro del ámbito seleccionado
-seo-description: Se utiliza una plantilla para crear una página y define qué componentes se pueden utilizar dentro del ámbito seleccionado
+seo-description: A Template is used to create a Page and defines which components can be used within the selected scope
 uuid: 7a473c19-9565-476e-9e54-ab179da04d71
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,27 +10,26 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cfd90e8f-9b9b-4d0b-be31-828469b961de
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1626'
 ht-degree: 6%
 
 ---
 
-
 # Plantillas de página: estáticas{#page-templates-static}
 
-Se utiliza una plantilla para crear una página y define qué componentes se pueden utilizar dentro del ámbito seleccionado. Una plantilla es una jerarquía de nodos que tiene la misma estructura que la página que se va a crear, pero sin ningún contenido real.
+Una plantilla se utiliza para crear una página y define qué componentes se pueden utilizar dentro del ámbito seleccionado. Una plantilla es una jerarquía de nodos que tiene la misma estructura que la página que se va a crear, pero sin contenido real.
 
 Cada plantilla le presentará una selección de componentes disponibles para su uso.
 
-* Las plantillas están compuestas de [Componentes](/help/sites-developing/components.md);
-* Los componentes utilizan y permiten el acceso a los widgets y se utilizan para representar el contenido.
+* Las plantillas están creadas con [Componentes](/help/sites-developing/components.md);
+* Los componentes utilizan utilidades y permiten el acceso a ellas, que se utilizan para representar el contenido.
 
 >[!NOTE]
 >
->[También hay disponibles ](/help/sites-developing/page-templates-editable.md) plantillas editables, que son el tipo recomendado de plantillas para la mayor flexibilidad y las funciones más recientes.
+>[Plantillas editables](/help/sites-developing/page-templates-editable.md) también están disponibles y son el tipo recomendado de plantillas para obtener la mayor flexibilidad y las funciones más recientes.
 
 ## Propiedades y nodos secundarios de una plantilla {#properties-and-child-nodes-of-a-template}
 
@@ -46,20 +45,20 @@ Una plantilla es un nodo de tipo cq:Template y tiene las siguientes propiedades 
   <tr>
    <td>. <br /> </td>
    <td> cq:Template</td>
-   <td>Plantilla actual. Una plantilla es del tipo de nodo cq:Template.<br /> </td>
+   <td>Plantilla actual. Una plantilla es de tipo nodo cq:Template.<br /> </td>
   </tr>
   <tr>
-   <td> allowChildren </td>
+   <td> allowedChildren </td>
    <td> Cadena[]</td>
-   <td>Ruta de una plantilla que puede ser secundaria de esta plantilla.<br /> </td>
+   <td>Ruta de una plantilla que puede ser secundaria a esta plantilla.<br /> </td>
   </tr>
   <tr>
-   <td> allowParents</td>
+   <td> allowedParents</td>
    <td> Cadena[]</td>
    <td>Ruta de una plantilla que puede ser una plantilla principal de esta plantilla.<br /> </td>
   </tr>
   <tr>
-   <td> allowPaths</td>
+   <td> allowedPaths</td>
    <td> Cadena[]</td>
    <td>Ruta de una página que puede basarse en esta plantilla.<br /> </td>
   </tr>
@@ -81,7 +80,7 @@ Una plantilla es un nodo de tipo cq:Template y tiene las siguientes propiedades 
   <tr>
    <td> clasificación</td>
    <td> Largo</td>
-   <td>Clasificación de la plantilla. Se utiliza para mostrar la plantilla en la interfaz de usuario.<br /> </td>
+   <td>Clasificación de la plantilla. Se utiliza para mostrar la plantilla en la interfaz de usuario de .<br /> </td>
   </tr>
   <tr>
    <td> jcr:content</td>
@@ -103,29 +102,29 @@ Una plantilla es un nodo de tipo cq:Template y tiene las siguientes propiedades 
 
 Una plantilla es la base de una página.
 
-Para crear una página, la plantilla debe copiarse (node-tree `/apps/<myapp>/template/<mytemplate>`) en la posición correspondiente en el árbol del sitio: esto es lo que sucede si se crea una página con la ficha **Sitios web**.
+Para crear una página, la plantilla debe copiarse (árbol de nodos) `/apps/<myapp>/template/<mytemplate>`) a la posición correspondiente en el árbol de sitios: esto es lo que sucede si se crea una página con la variable **Sitios web** pestaña .
 
-Esta acción de copia también proporciona a la página su contenido inicial (generalmente solo contenido de nivel superior) y la propiedad sling:resourceType, la ruta al componente de página que se utiliza para representar la página (todo en el nodo secundario jcr:content).
+Esta acción de copia también proporciona a la página su contenido inicial (normalmente solo contenido de nivel superior) y la propiedad sling:resourceType, la ruta al componente de página que se utiliza para procesar la página (todo en el nodo secundario jcr:content).
 
 ## Cómo se estructuran las plantillas {#how-templates-are-structured}
 
-Hay dos aspectos que deben considerarse:
+Hay dos aspectos que se deben tener en cuenta:
 
-* la estructura de la plantilla misma
+* la estructura de la plantilla
 * la estructura del contenido producido al utilizar una plantilla
 
 ### La estructura de una plantilla {#the-structure-of-a-template}
 
-Se crea una plantilla bajo un nodo de tipo **cq:Template**.
+Una plantilla se crea bajo un nodo de tipo **cq:Template**.
 
 ![screen_shot_2012-02-13at63646pm](assets/screen_shot_2012-02-13at63646pm.png)
 
-Se pueden definir varias propiedades, en particular:
+Se pueden configurar varias propiedades, en particular:
 
 * **jcr:title** - título de la plantilla; aparece en el cuadro de diálogo al crear una página.
 * **jcr:description** - descripción de la plantilla; aparece en el cuadro de diálogo al crear una página.
 
-Este nodo contiene un nodo jcr:content (cq:PageContent) que se utilizará como base para el nodo de contenido de las páginas resultantes; esto hace referencia, mediante sling:resourceType, al componente que se utilizará para procesar el contenido real de una página nueva.
+Este nodo contiene un nodo jcr:content (cq:PageContent) que se utiliza como base para el nodo de contenido de las páginas resultantes; esto hace referencia, utilizando sling:resourceType, al componente que se utilizará para procesar el contenido real de una página nueva.
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -143,11 +142,11 @@ Las plantillas se utilizan para crear páginas de tipo `cq:Page` (como se mencio
 
 ### Plantillas predeterminadas {#default-templates}
 
-AEM incluye una serie de plantillas predeterminadas disponibles de forma predeterminada. En algunos casos, es posible que desee utilizar las plantillas tal cual. En ese caso, debe asegurarse de que la plantilla está disponible para su sitio Web.
+AEM incluye una serie de plantillas predeterminadas disponibles de forma predeterminada. En algunos casos, es posible que desee utilizar las plantillas tal cual. En ese caso, debe asegurarse de que la plantilla esté disponible para el sitio web.
 
-Por ejemplo, AEM incluye varias plantillas, incluidas una página de contenido y una página de inicio.
+Por ejemplo, AEM viene con varias plantillas, incluidas una página de contenido y una página de inicio.
 
-| **Título** | **Componente** | **Ubicación** | **Función** |
+| **Título** | **Component** | **Lugar de residencia** | **Función** |
 |---|---|---|---|
 | Página principal | homepage | geometrixx | La plantilla de la página principal de Geometrixx. |
 | Página de contenido | contentpage | geometrixx | La plantilla de la página de contenido de Geometrixx. |
@@ -162,41 +161,41 @@ Para ver una lista de todas las plantillas en el repositorio, siga este procedim
 1. Como **Tipo**, seleccione **XPath**.
 
 1. En el campo de entrada **Consulta**, escriba la cadena siguiente:
-//element(*, cq:Template)
+//element(&#42;, cq:Template)
 
 1. Haga clic en **Ejecutar**. Se muestra la lista en el cuadro de resultados.
 
 En la mayoría de los casos, tomará una plantilla existente y desarrollará una nueva para su propio uso. Consulte [Desarrollo de plantillas de página](#developing-page-templates) para obtener más información.
 
-Para habilitar una plantilla existente para el sitio Web y desea que se muestre en el cuadro de diálogo **Crear página** al crear una página directamente en **Sitios Web** desde la consola **Sitios Web**, establezca la propiedad permissionPaths del nodo de plantilla en: **/content(/.*)?**
+Para habilitar una plantilla existente para su sitio web y desea que se muestre en la **Crear página** al crear una página directamente debajo de **Sitios web** de la variable **Sitios web** consola, establezca la propiedad allowedPaths del nodo template en: **/content(/.&#42;)?**
 
-## Cómo se aplican los diseños de plantilla {#how-template-designs-are-applied}
+## Aplicación de los diseños de plantilla {#how-template-designs-are-applied}
 
-Cuando los estilos se definen en la interfaz de usuario mediante [modo de diseño](/help/sites-authoring/default-components-designmode.md), el diseño se mantiene en la ruta exacta del nodo de contenido para el que se está definiendo el estilo.
+Cuando los estilos se definen en la interfaz de usuario mediante [Modo de diseño](/help/sites-authoring/default-components-designmode.md), el diseño se mantiene en la ruta exacta del nodo de contenido para el que se está definiendo el estilo.
 
 >[!CAUTION]
 >
->Adobe solo recomienda aplicar diseños mediante [modo de diseño](/help/sites-authoring/default-components-designmode.md).
+>Adobe recomienda aplicar solo diseños [Modo de diseño](/help/sites-authoring/default-components-designmode.md).
 >
 >La modificación de diseños en CRX DE, por ejemplo, no es recomendable y la aplicación de dichos diseños puede diferir del comportamiento esperado.
 
-Si los diseños solo se aplican mediante el modo Diseño, no se aplican las siguientes secciones: [Resolución de ruta de diseño](/help/sites-developing/page-templates-static.md#design-path-resolution), [Árbol de decisiones](/help/sites-developing/page-templates-static.md#decision-tree) y [Ejemplo](/help/sites-developing/page-templates-static.md#example).
+Si los diseños solo se aplican mediante el modo Diseño, las siguientes secciones, [Resolución de la ruta de diseño](/help/sites-developing/page-templates-static.md#design-path-resolution), [Árbol de decisiones](/help/sites-developing/page-templates-static.md#decision-tree)y [Ejemplo](/help/sites-developing/page-templates-static.md#example) no son aplicables.
 
-### Resolución de ruta de diseño {#design-path-resolution}
+### Resolución de la ruta de diseño {#design-path-resolution}
 
-Al procesar contenido basado en una plantilla estática, AEM intentará aplicar el diseño y los estilos más relevantes al contenido en función de una transversal de la jerarquía de contenido.
+Al procesar contenido basado en una plantilla estática, AEM intentará aplicar el diseño y los estilos más relevantes al contenido en función de una travesía de la jerarquía de contenido.
 
 AEM determina el estilo más relevante para un nodo de contenido en el siguiente orden:
 
-* Si hay un diseño para la ruta completa y exacta del nodo de contenido (como cuando el diseño se define en el modo de diseño), utilice ese diseño.
-* Si hay un diseño para el nodo de contenido del elemento principal, utilice dicho diseño.
+* Si hay un diseño para la ruta completa y exacta del nodo de contenido (como cuando el diseño se define en el modo Diseño), utilice ese diseño.
+* Si hay un diseño para el nodo de contenido del elemento principal, utilice ese diseño.
 * Si hay un diseño para cualquier nodo en la ruta del nodo de contenido, utilice ese diseño.
 
 En los dos últimos casos, si hay más de un diseño aplicable, utilice el más cercano al nodo de contenido.
 
 ### Árbol de decisiones {#decision-tree}
 
-Es una representación gráfica de la lógica [Resolución de ruta de diseño](/help/sites-developing/page-templates-static.md#design-path-resolution).
+Esta es una representación gráfica de la variable [Resolución de la ruta de diseño](/help/sites-developing/page-templates-static.md#design-path-resolution) lógica.
 
 ![design_path_resolution](assets/design_path_resolution.png)
 
@@ -206,15 +205,15 @@ Considere una estructura de contenido simple como se indica a continuación, don
 
 `/root/branch/leaf`
 
-En la tabla siguiente se describe cómo AEM un diseño.
+En la tabla siguiente se describe cómo AEM elegir un diseño.
 
 <table>
  <tbody>
   <tr>
    <td><strong>Búsqueda De Diseño Para<br /> </strong></td>
    <td><strong>Existen diseños para<br /> </strong></td>
-   <td><strong>Diseño seleccionado<br /> </strong></td>
-   <td><strong>Comentario</strong></td>
+   <td><strong>Diseño elegido<br /> </strong></td>
+   <td><strong>Comentar</strong></td>
   </tr>
   <tr>
    <td><code class="code">leaf
@@ -227,7 +226,7 @@ En la tabla siguiente se describe cómo AEM un diseño.
    <td><code>leaf</code></td>
    <td><p><code>root</code></p> <p><code>branch</code></p> </td>
    <td><code>branch</code></td>
-   <td>Volvamos a la coincidencia más cercana en la parte inferior del árbol.</td>
+   <td>Volverá a la coincidencia más cercana inferior del árbol.</td>
   </tr>
   <tr>
    <td><code>leaf</code></td>
@@ -260,63 +259,63 @@ En la tabla siguiente se describe cómo AEM un diseño.
    <td><p><code>root</code></p> <p><code class="code">leaf
        </code></p> </td>
    <td><code>root</code></td>
-   <td><p>Si no hay una coincidencia exacta, tome la una parte inferior del árbol.</p> <p>Se supone que esto siempre será aplicable, pero más arriba el árbol puede ser demasiado específico.<br /> </p> </td>
+   <td><p>Si no hay una coincidencia exacta, tome la una inferior del árbol.</p> <p>Se supone que esto siempre será aplicable, pero más arriba el árbol puede ser demasiado específico.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
 
 ## Desarrollo de plantillas de página {#developing-page-templates}
 
-AEM plantillas de página son simplemente modelos utilizados para crear nuevas páginas. Pueden contener tan poco o tanto contenido inicial como sea necesario y su función consiste en crear las estructuras de nodos iniciales correctas, con las propiedades necesarias (principalmente sling:resourceType) definidas para permitir la edición y el procesamiento.
+AEM plantillas de página son simplemente modelos utilizados para crear páginas nuevas. Pueden contener tan poco contenido inicial como sea necesario, o tanto, su función es crear las estructuras de nodos iniciales correctas, con las propiedades requeridas (principalmente sling:resourceType) configuradas para permitir la edición y el procesamiento.
 
-### Creación de una nueva plantilla (basada en una plantilla existente) {#creating-a-new-template-based-on-an-existing-template}
+### Creación de una plantilla nueva (basada en una plantilla existente) {#creating-a-new-template-based-on-an-existing-template}
 
-Huelga decir que una nueva plantilla se puede crear completamente desde cero, pero a menudo se copiará y actualizará una plantilla existente para ahorrarle tiempo y esfuerzo. Por ejemplo, las plantillas de Geometrixx se pueden utilizar para empezar.
+Huelga decir que una plantilla nueva se puede crear completamente desde cero, pero a menudo una plantilla existente se copiará y actualizará para ahorrarle tiempo y esfuerzo. Por ejemplo, las plantillas de Geometrixx se pueden utilizar para empezar.
 
-Para crear una nueva plantilla basada en una plantilla existente:
+Para crear una plantilla nueva basada en una plantilla existente:
 
 1. Copie una plantilla existente (preferiblemente con una definición lo más cercana posible a lo que desea lograr) en un nuevo nodo.
 
-   Las plantillas generalmente se almacenan en **/apps/&lt;nombre-sitio_web>/templates/&lt;nombre-plantilla>**.
+   Las plantillas normalmente se almacenan en **/apps/&lt;website-name>/templates/&lt;template-name>**.
 
    >[!NOTE]
    >
-   >La lista de las plantillas disponibles depende de la ubicación de la nueva página y de las restricciones de colocación especificadas en cada plantilla. Consulte [Disponibilidad de la plantilla](#templateavailibility).
+   >La lista de plantillas disponibles depende de la ubicación de la nueva página y de las restricciones de colocación especificadas en cada plantilla. Consulte [Disponibilidad de plantillas](#templateavailibility).
 
-1. Cambie el **jcr:title** del nuevo nodo de plantilla para reflejar su nueva función. También puede actualizar **jcr:description** si corresponde. Asegúrese de cambiar la disponibilidad de la plantilla de la página según corresponda.
+1. Cambie el **jcr:title** del nuevo nodo de plantilla para reflejar su nueva función. También puede actualizar el **jcr:description** si procede. Asegúrese de cambiar la disponibilidad de la plantilla de la página según corresponda.
 
    >[!NOTE]
    >
-   >Si desea que la plantilla se muestre en el cuadro de diálogo **Crear página** al crear una página directamente en **Sitios web** desde la consola **Sitios web**, establezca la propiedad `allowedPaths` del nodo de plantilla en: `/content(/.*)?`
+   >Si desea que la plantilla se muestre en la variable **Crear página** al crear una página directamente debajo de **Sitios web** de la variable **Sitios web** consola, establezca la variable `allowedPaths` propiedad del nodo de plantilla a: `/content(/.*)?`
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Copie el componente en el que se basa la plantilla (esto se indica con la propiedad **sling:resourceType** del nodo **jcr:content** de la plantilla) para crear una nueva instancia.
+1. Copie el componente en el que se basa la plantilla (esto se indica con la variable **sling:resourceType** propiedad de la variable **jcr:content** dentro de la plantilla ) para crear una nueva instancia.
 
-   Los componentes se almacenan generalmente en **/apps/&lt;nombre-sitio_web>/components/&lt;nombre-componente>**.
+   Los componentes normalmente se almacenan en **/apps/&lt;website-name>/components/&lt;component-name>**.
 
-1. Actualice los **jcr:title** y **jcr:description** del nuevo componente.
-1. Reemplace thumbnail.png si desea que se muestre una nueva imagen en miniatura en la lista de selección de plantillas (tamaño 128 x 98 px).
-1. Actualice el **sling:resourceType** del nodo **jcr:content** de la plantilla para hacer referencia al nuevo componente.
-1. Realice cualquier otro cambio en la funcionalidad o el diseño de la plantilla o su componente subyacente.
+1. Actualice el **jcr:title** y **jcr:description** del nuevo componente.
+1. Reemplace thumbnail.png si desea que una nueva imagen en miniatura se muestre en la lista de selección de plantillas (tamaño 128 x 98 px).
+1. Actualice el **sling:resourceType** de la plantilla **jcr:content** para hacer referencia al nuevo componente.
+1. Realice cualquier cambio adicional en la funcionalidad o el diseño de la plantilla o su componente subyacente.
 
    >[!NOTE]
    >
-   >Los cambios realizados en el nodo **/apps/&lt;website>/templates/&lt;template-name>** afectarán a la instancia de plantilla (como en la lista de selección).
-   Los cambios realizados en el nodo **/apps/&lt;sitio Web>/components/&lt;nombre-componente>** afectarán a la página de contenido creada al utilizar la plantilla.
+   >Los cambios realizados en la variable **/apps/&lt;website>/templates/&lt;template-name>** afectará a la instancia de la plantilla (como en la lista de selección).
+   Los cambios realizados en la variable **/apps/&lt;website>/components/&lt;component-name>** afecta a la página de contenido creada al utilizar la plantilla.
 
-   Ahora puede crear una página dentro del sitio web con la nueva plantilla.
+   Ahora puede crear una página dentro del sitio web utilizando la nueva plantilla.
 
 >[!NOTE]
-La biblioteca de cliente del editor asume la presencia de la Área de nombres `cq.shared` en las páginas de contenido y, si no se encuentra, se producirá el error de JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined`.
-Todas las páginas de contenido de muestra contienen `cq.shared`, por lo que cualquier contenido basado en ellas incluye automáticamente `cq.shared`. Sin embargo, si decide crear sus propias páginas de contenido desde cero sin basarlas en contenido de muestra, debe asegurarse de incluir la Área de nombres `cq.shared`.
+La biblioteca de cliente del editor asume la presencia de la variable `cq.shared` espacio de nombres en páginas de contenido y si no hay el error de JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` será el resultado.
+Todas las páginas de contenido de ejemplo contienen `cq.shared`, por lo que cualquier contenido basado en ellos se incluye automáticamente `cq.shared`. Sin embargo, si decide crear sus propias páginas de contenido desde cero sin basarlas en contenido de muestra, debe asegurarse de incluir la variable `cq.shared` espacio de nombres.
 Consulte [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md) para obtener más información.
 
 ## Disponibilidad de una plantilla existente {#making-an-existing-template-available}
 
-Este ejemplo ilustra cómo permitir que se utilice una plantilla para determinadas rutas de contenido. Las plantillas que están disponibles para el autor de la página al crear nuevas páginas están determinadas por la lógica definida en [Disponibilidad de plantilla](/help/sites-developing/templates.md#template-availability).
+Este ejemplo ilustra cómo permitir que se utilice una plantilla para determinadas rutas de contenido. Las plantillas que están disponibles para el autor de la página al crear páginas nuevas están determinadas por la lógica definida en [Disponibilidad de plantillas](/help/sites-developing/templates.md#template-availability).
 
-1. En CRXDE Lite, vaya a la plantilla que desee utilizar para la página, por ejemplo, la plantilla Newsletter.
-1. Cambie la propiedad `allowedPaths` y otras propiedades utilizadas para [disponibilidad de la plantilla](/help/sites-developing/templates.md#template-availability). Por ejemplo, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` significa que esta plantilla está permitida en cualquier ruta bajo `/content/geometrixx-outdoors`.
+1. En CRXDE Lite, vaya a la plantilla que desee utilizar para su página, por ejemplo, la plantilla Newsletter .
+1. Cambie el `allowedPaths` propiedad y otras propiedades utilizadas para [disponibilidad de plantillas](/help/sites-developing/templates.md#template-availability). Por ejemplo, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` significa que esta plantilla está permitida en cualquier ruta bajo `/content/geometrixx-outdoors`.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)

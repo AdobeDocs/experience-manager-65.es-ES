@@ -1,36 +1,35 @@
 ---
 title: Aplicaciones móviles
-seo-title: Aplicaciones móviles
+seo-title: Mobile Apps
 description: Esta página sirve como página de aterrizaje para empezar a crear, desarrollar y administrar aplicaciones móviles.
-seo-description: Esta página sirve como página de aterrizaje para empezar a crear, desarrollar y administrar aplicaciones móviles.
+seo-description: This page serves as a landing page to get started with authoring, developing, and administering mobile apps.
 uuid: 0cc9e6d6-c6ea-48f9-9b7f-9ead0f2d199e
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 discoiquuid: f73bfa98-df2d-4b0f-93a2-1337f783e4bc
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: ffd2d029-b81a-4768-8e58-66aa5cf3772d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 5%
+source-wordcount: '136'
+ht-degree: 4%
 
 ---
-
 
 # Aplicaciones móviles{#mobile-apps}
 
 >[!NOTE]
 >
->Adobe recomienda el uso del Editor de SPA para proyectos que requieren una representación de cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) Mobile forma parte de la plataforma digital de varios canales Adobe Experience Manager que también aprovecha AEM Assets, Sitios, Pantallas, Flujo de trabajo, Administrador de usuarios, Comercio y Forms. AEM Mobile oferta una notable flexibilidad de implementación, lo que permite a las empresas utilizar una variedad de fuentes de contenido.
+Adobe Experience Manager (AEM) Mobile forma parte de la plataforma digital de varios canales de Adobe Experience Manager que también utiliza AEM Assets, Sites, Screens, Workflow, User Manager, Commerce y Forms. AEM Mobile ofrece una notable flexibilidad de implementación, lo que permite a las empresas utilizar una variedad de fuentes de contenido.
 
-AEM Mobile oferta varios métodos para crear aplicaciones. Las diferentes formas de crear aplicaciones son:
+AEM Mobile ofrece varios métodos para crear aplicaciones. Las diferentes formas de crear aplicaciones son:
 
 * [Introducción a AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Introducción a Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
 
 >[!NOTE]
 >
->Si es nuevo en Adobe Experience Manager, puede que desee seguir el [Introducción a AEM](/help/sites-deploying/deploy.md).
+>Si es nuevo en Adobe Experience Manager, es posible que desee pasar por [Introducción a AEM](/help/sites-deploying/deploy.md).

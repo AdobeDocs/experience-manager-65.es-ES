@@ -1,8 +1,8 @@
 ---
 title: Personalizar editor de texto
-seo-title: Personalizar editor de texto
+seo-title: Customize text editor
 description: Aprenda a personalizar el editor de texto.
-seo-description: Aprenda a personalizar el editor de texto.
+seo-description: Learn how to customize text editor.
 uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,13 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 0%
+source-wordcount: '605'
+ht-degree: 1%
 
 ---
-
 
 # Personalizar editor de texto{#customize-text-editor}
 
@@ -56,7 +55,7 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
 
       **Ubicación:** /apps/
 
-      **Coincidir tipos de nodo:** seleccionados
+      **Coincidir tipos de nodo:** Seleccionado
 
       ![Nodo de superposición](assets/2.png)
 
@@ -66,7 +65,7 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
 
 1. Cree una copia del archivo tbxeditor-config.xml en la carpeta de configuración recién creada, siguiendo los pasos siguientes:
 
-   1. Haga clic con el botón derecho en el archivo tbxeditor-config.xml en libs/fd/cm/config y seleccione **Copy**.
+   1. Haga clic con el botón derecho en el archivo tbxeditor-config.xml en libs/fd/cm/config y seleccione **Copiar**.
    1. Haga clic con el botón derecho en la siguiente carpeta y seleccione **Pegar:**
 
       `apps/fd/cm/config`
@@ -189,11 +188,10 @@ Para obtener más información sobre la instalación de fuentes, consulte lo sig
 
 Después de realizar cambios en las fuentes en el archivo tbxeditor-config.xml en CRX e instalar las fuentes requeridas en el equipo cliente utilizado para acceder a AEM Forms, los cambios aparecen en el editor de texto.
 
-Por ejemplo, la fuente Sazanami Mincho Medium añadida en [Personalizar fuentes editando el archivo tbxeditor-config.xml en el procedimiento CRX](#customizefonts) aparece en la interfaz de usuario del editor de texto de la siguiente manera:
+Por ejemplo, la fuente Sazanami Mincho Medium añadida en la variable [Personalizar fuentes editando el archivo tbxeditor-config.xml en CRX](#customizefonts) El procedimiento aparece en la interfaz de usuario del editor de texto de la siguiente manera:
 
 ![sazanamiminchointext](assets/sazanamiminchointext.png)
 
 >[!NOTE]
 >
 >Para ver texto en japonés, primero debe introducir el texto con caracteres japoneses. La aplicación de una fuente japonesa personalizada solo da formato al texto de una manera determinada. La aplicación de una fuente japonesa personalizada no cambia los caracteres ingleses u otros caracteres a los japoneses.
-

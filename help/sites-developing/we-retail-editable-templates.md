@@ -1,22 +1,21 @@
 ---
 title: Probar plantillas editables en We.Retail
-seo-title: Probar plantillas editables en We.Retail
+seo-title: Trying out Editable Templates in We.Retail
 description: Probar plantillas editables en We.Retail
-seo-description: nulo
+seo-description: null
 uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '483'
 ht-degree: 12%
 
 ---
-
 
 # Probar plantillas editables en We.Retail{#trying-out-editable-templates-in-we-retail}
 
@@ -31,7 +30,7 @@ Todas las páginas de We.Retail se basan en plantillas editables, lo que permite
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. Tenga en cuenta que el selector de modo ya no ofrece un modo de diseño. Todas las páginas de We.Retail se basan en plantillas editables y para modificar el diseño de plantillas editables, deben editarse en el editor de plantillas.
-1. En el menú **Información de página**, seleccione **Editar plantilla**.
+1. En el **Información de la página** menú seleccionar **Editar plantilla**.
 1. Ahora está editando la plantilla Página principal .
 
    El modo de estructura de la página permite modificar la estructura de la plantilla. Esto incluye, por ejemplo, los componentes permitidos en el contenedor de diseño.
@@ -68,13 +67,12 @@ Todas las páginas de We.Retail se basan en plantillas editables, lo que permite
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. En el editor de plantillas, puede utilizar el selector de modo para cambiar al modo **Contenido inicial** para definir qué contenido se requiere en la página.
+1. De nuevo en el editor de plantillas, puede utilizar el selector de modo para cambiar a **Contenido inicial** para definir qué contenido se requiere en la página.
 
-   **** El modo de diseño se puede utilizar como en una página normal para definir el diseño de la plantilla.
+   **Diseño** se puede utilizar como en una página normal para definir el diseño de la plantilla.
 
 ## Más información {#more-information}
 
-Para obtener más información, consulte el documento de creación [Creación de plantillas de página](/help/sites-authoring/templates.md) o el documento para desarrolladores Página [Plantillas: editables](/help/sites-developing/page-templates-editable.md) para obtener información técnica completa sobre las plantillas editables.
+Para obtener más información, consulte el documento de creación [Creación de plantillas de página](/help/sites-authoring/templates.md) o la página del documento para desarrolladores [Plantillas: editables](/help/sites-developing/page-templates-editable.md) para obtener información técnica completa sobre plantillas editables.
 
-También es posible que desee investigar los [componentes principales](/help/sites-developing/we-retail-core-components.md). Consulte el documento de creación [Core Components](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) para obtener una descripción general de las capacidades de los componentes principales y el documento para desarrolladores [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obtener una descripción general técnica.
-
+También puede que desee investigar [componentes principales](/help/sites-developing/we-retail-core-components.md). Consulte el documento de creación [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) para obtener una descripción general de las capacidades de los componentes principales y del documento para desarrolladores [Desarrollo de componentes principales](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obtener una descripción general técnica.

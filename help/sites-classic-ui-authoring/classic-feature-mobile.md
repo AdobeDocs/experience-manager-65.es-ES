@@ -1,24 +1,23 @@
 ---
 title: Crear una página para dispositivos móviles
-seo-title: Crear una página para dispositivos móviles
+seo-title: Authoring a Page for Mobile Devices
 description: Cuando se crea una página móvil, esta se muestra de un modo que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que verá el usuario final al acceder a la página.
-seo-description: Cuando se crea una página móvil, esta se muestra de un modo que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que verá el usuario final al acceder a la página.
+seo-description: When authoring a mobile page, the page is displayed in a way that emulates the mobile device. When authoring the page, you can switch between several emulators to see what the end-user sees when accessing the page.
 uuid: ca16979d-6e5f-444d-b959-ae92542039b2
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: d5372474-d8aa-4e64-919d-0bd29ba99d99
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 84%
+source-wordcount: '297'
+ht-degree: 82%
 
 ---
 
-
-# Crear una página para dispositivos móviles {#authoring-a-page-for-mobile-devices}
+# Crear una página para dispositivos móviles{#authoring-a-page-for-mobile-devices}
 
 Cuando se crea una página móvil, esta se muestra de un modo que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que verá el usuario final al acceder a la página.
 
@@ -26,21 +25,21 @@ Los dispositivos se agrupan en las categorías característica, inteligente y t�
 
 >[!NOTE]
 >
->Para crear un sitio para móvil según un sitio estándar existente, cree una Live Copy del sitio estándar. (Consulte [Creación de una Live Copy para Canales diferentes](/help/sites-administering/msm-livecopy.md)).
+>Para crear un sitio para móvil según un sitio estándar existente, cree una Live Copy del sitio estándar. (Consulte [Creación de una Live Copy para diferentes canales](/help/sites-administering/msm-livecopy.md).)
 >
->Los desarrolladores de AEM pueden crear nuevos grupos de dispositivos. (Consulte [Creación de Filtros de grupo de dispositivos.](/help/sites-developing/groupfilters.md))
+>Los desarrolladores de AEM pueden crear nuevos grupos de dispositivos. (Consulte [Creación de filtros de grupo de dispositivos.](/help/sites-developing/groupfilters.md))
 
 Utilice el siguiente procedimiento para crear una página para móvil:
 
 1. En el navegador, vaya a la consola **Siteadmin**.
-1. Abra la página **Productos** debajo de **Sitios web** >> **Sitio de demostración móvil de Geometrixx** >> **Inglés**.
+1. Abra el **Productos** página siguiente **Sitios web** >> **Sitio de demostración de Geometrixx Mobile** >> **Inglés**.
 
 1. Cambie a un emulador diferente. Para ello, puede:
 
    * Hacer clic en el icono del dispositivo en la parte superior de la página.
    * Hacer clic en el botón **Editar** en la **barra de tareas** y seleccionar el dispositivo en el menú desplegable.
 
-1. Arrastre y suelte el componente **Texto e imagen** de la ficha Móvil de la barra de tareas en la página.
+1. Arrastre y suelte la **Texto e imagen** de la ficha Móvil de la barra de tareas a la página.
 1. Edite el componente y añada texto. Haga clic en **Aceptar** para guardar los cambios.
 
 La página presenta un aspecto similar al siguiente:
@@ -49,5 +48,4 @@ La página presenta un aspecto similar al siguiente:
 
 >[!NOTE]
 >
->Los emuladores se desactivan cuando se solicita una página de la instancia del autor desde un dispositivo móvil. La creación se puede realizar mediante la IU táctil.
-
+>Los emuladores se desactivan cuando se solicita una página de la instancia del autor desde un dispositivo móvil. La creación se puede realizar utilizando la IU táctil.

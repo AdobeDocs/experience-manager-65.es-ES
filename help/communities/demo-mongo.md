@@ -1,8 +1,8 @@
 ---
 title: Configuración de MongoDB para demostración
-seo-title: Configuración de MongoDB para demostración
+seo-title: How to Setup MongoDB for Demo
 description: Configuración del MSRP para una instancia de autor y una instancia de publicación
-seo-description: Configuración del MSRP para una instancia de autor y una instancia de publicación
+seo-description: How to setup MSRP for one author instance and one publish instance
 uuid: d2035a9e-f05c-4f90-949d-7cdae9646750
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 1%
 
 ## Introducción {#introduction}
 
-Este tutorial describe cómo configurar [MSRP](msrp.md) para *una instancia de autor* y *una instancia de publicación*.
+Este tutorial describe cómo configurar [MSRP](msrp.md) para *un autor* instancia y *una publicación* instancia.
 
 Con esta configuración, se puede acceder al contenido de la comunidad desde los entornos de autor y publicación sin necesidad de reenviar o revertir la réplica del contenido generado por el usuario (UGC).
 
-Esta configuración es adecuada para entornos *sin producción* como para desarrollo o demostración.
+Esta configuración es adecuada para *sin producción* entornos como para desarrollo o demostración.
 
-**Un entorno de  ** producción debería:**
+**A *producción* entorno:**
 
 * Ejecute MongoDB con un conjunto de réplicas
 * Utilizar SolrCloud
@@ -57,14 +57,14 @@ Esta configuración es adecuada para entornos *sin producción* como para desarr
 
       * No es necesario configurar los mongos ni el uso compartido.
    * La carpeta MongoDB instalada se denominará &lt;mongo-install>.
-   * La ruta de acceso del directorio de datos definida se referirá como &lt;mongo-dbpath>.
+   * La ruta de acceso del directorio de datos definido se denominará &lt;mongo-dbpath>.
 
 
 * MongoDB puede ejecutarse en el mismo host que AEM o de forma remota.
 
 ### Iniciar MongoDB {#start-mongodb}
 
-* &lt;mongo-install>/bin/mongod —dbpath  &lt;mongo-dbpath>
+* &lt;mongo-install>/bin/mongod —dbpath &lt;mongo-dbpath>
 
 Esto iniciará un servidor MongoDB utilizando el puerto predeterminado 27017.
 
@@ -72,7 +72,7 @@ Esto iniciará un servidor MongoDB utilizando el puerto predeterminado 27017.
 
 >[!NOTE]
 >
->Si MongoDB se inicia *después* AEM, **reinicie** todas las instancias **AEM** para que se conecten correctamente a MongoDB.
+>Si MongoDB se inicia *after* AEM, **restart** all **AEM** para que se conecten correctamente a MongoDB.
 
 ### Opción de producción de muestra: Configurar conjunto de réplicas de MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
@@ -96,7 +96,7 @@ Los siguientes comandos son un ejemplo de configuración de un conjunto de répl
 
 ### Instalar Solr {#install-solr}
 
-* Descargar Solr de [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
+* Descargar Solr desde [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
    * Adecuado para cualquier sistema operativo.
    * Versión de Solr 7.0.
@@ -112,12 +112,12 @@ Los siguientes comandos son un ejemplo de configuración de un conjunto de répl
 
 Para configurar una colección Solr para MSRP para demostración, hay dos decisiones que se deben tomar (seleccione los enlaces a la documentación principal para obtener más información):
 
-1. Ejecute Solr en modo independiente o [SolrCloud](msrp.md#solrcloudmode).
-1. Instale [standard](msrp.md#installingstandardmls) o [advanced](msrp.md#installingadvancedmls) búsqueda multilingüe (MLS).
+1. Ejecutar Solr de forma independiente o [Modo SolrCloud](msrp.md#solrcloudmode).
+1. Instalar [standard](msrp.md#installingstandardmls) o [avanzado](msrp.md#installingadvancedmls) búsqueda multilingüe (MLS).
 
 ### Solar independiente {#standalone-solr}
 
-El método para ejecutar Solr puede variar según la versión y la forma de instalación. La [Guía de referencia de Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) es la documentación autorizada.
+El método para ejecutar Solr puede variar según la versión y la forma de instalación. La variable [Guía de referencia de Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) es la documentación autorizada.
 
 Para simplificar, usando la versión 4.10 como ejemplo, inicie Solr en modo independiente:
 
@@ -130,7 +130,7 @@ Esto iniciará un servidor HTTP Solr utilizando el puerto predeterminado 8983. P
 
 >[!NOTE]
 >
->Si la consola Solr no está disponible, compruebe los registros en &lt;solrinstall>/example/logs. Compruebe si SOLR está intentando enlazarse a un nombre de host específico que no se puede resolver (p. ej. &quot;user-macbook-pro&quot;).
+>Si la consola Solr no está disponible, marque los registros en &lt;solrinstall>/example/logs. Compruebe si SOLR está intentando enlazarse a un nombre de host específico que no se puede resolver (p. ej. &quot;user-macbook-pro&quot;).
 Si es así, actualice el archivo etc/hosts con una nueva entrada para este nombre de host (por ejemplo, 127.0.0.1 user-macbook-pro) y Solr se iniciará correctamente.
 
 ### SolrCloud {#solrcloud}
@@ -151,19 +151,19 @@ Siga las instrucciones de la página de documentación principal: [MSRP - Tienda
 
 Para probar y verificar el almacén común de MongoDB, publique un comentario en la instancia de publicación y visualícelo en la instancia de autor, así como vea el UGC en MongoDB y Solr:
 
-1. En la instancia de publicación, vaya a la página [Community Components Guide](http://localhost:4503/content/community-components/en/comments.html) y seleccione el componente Comentarios.
+1. En la instancia de publicación, vaya a la [Guía de componentes de comunidad](http://localhost:4503/content/community-components/en/comments.html) y seleccione el componente Comentarios.
 1. Inicie sesión para publicar un comentario:
-1. Introduzca el texto en el cuadro de entrada de texto del comentario y haga clic en **[!UICONTROL Post]**
+1. Introduzca el texto en el cuadro de entrada de texto del comentario y haga clic en **[!UICONTROL Publicación]**
 
    ![post-comment](assets/post-comment.png)
 
-1. Simplemente, vea el comentario en la [instancia de autor](http://localhost:4502/content/community-components/en/comments.html) (probablemente todavía haya iniciado sesión como administrador / administrador).
+1. Simplemente vea el comentario en la [instancia de autor](http://localhost:4502/content/community-components/en/comments.html) (probablemente aún haya iniciado sesión como administrador/administrador).
 
    ![view-comment](assets/view-comment.png)
 
-   Nota: Aunque hay nodos JCR bajo *asipath* en el autor, estos son para el marco SCF. El UGC real no está en JCR, está en MongoDB.
+   Nota: Aunque hay nodos JCR bajo *asipath* por lo que respecta al autor, se trata del marco SCF. El UGC real no está en JCR, está en MongoDB.
 
-1. Ver el UGC en mongodb **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Content]**
+1. Ver el UGC en mongodb **[!UICONTROL Comunidades]** > **[!UICONTROL Colecciones]** > **[!UICONTROL Contenido]**
 
    ![ugc-content](assets/ugc-content.png)
 
@@ -182,11 +182,11 @@ Para probar y verificar el almacén común de MongoDB, publique un comentario en
 
 1. Asegúrese de que MongoDB esté instalado y funcionando correctamente.
 
-1. Asegúrese de que MSRP esté configurado para ser el proveedor predeterminado:
+1. Asegúrese de que MSRP se haya configurado para ser el proveedor predeterminado:
 
-   * En todas las instancias de autor y publicación de AEM, vuelva a la [consola de configuración de almacenamiento](srp-config.md) o compruebe el repositorio de AEM:
+   * En todas las instancias de creación y publicación de AEM, vuelva a la sección [Consola de configuración de almacenamiento](srp-config.md) o compruebe el repositorio AEM:
 
-   * En JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) no contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa que el proveedor de almacenamiento es JSRP.
+   * En JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) no contiene un [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , significa que el proveedor de almacenamiento es JSRP.
    * Si el nodo srpc existe y contiene el nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), las propiedades de la configuración predeterminada deben definir MSRP para que sea el proveedor predeterminado.
 
 1. Asegúrese de que AEM se reinició después de seleccionar el MSRP.

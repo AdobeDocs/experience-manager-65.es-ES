@@ -1,7 +1,8 @@
 ---
 title: ¿Cómo pasar credenciales utilizando encabezados WS-security?
 description: Obtenga información sobre cómo pasar credenciales mediante encabezados WS-security
-source-git-commit: 9b118ef4f852e3df1e717bb27b9be272caeb0456
+exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -31,12 +32,11 @@ Este documento cubre los siguientes temas:
 * Invocación del servicio de cifrado mediante un encabezado WS-Security
 
 
-## Requisitos {#requirements}
+## Requisitos  {#requirements}
 
 Para aprovechar al máximo este documento, necesita tener una comprensión sólida del software AEM Forms en JEE.
 
 >[!MORELIKETHIS]
 >
 >* [Pasar credenciales mediante encabezados WS-Security](assets/passing-credentials-using-ws-security-headers.pdf)
-
 

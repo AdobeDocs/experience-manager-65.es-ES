@@ -1,5 +1,5 @@
 ---
-title: 'Recomendaciones para la administración de direcciones URL y SEO '
+title: Recomendaciones para la administración de direcciones URL y SEO
 seo-title: SEO and URL Management Best Practices
 description: Obtenga información sobre las prácticas recomendadas de SEO y las recomendaciones para lograrlas en una implementación AEM.
 seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.

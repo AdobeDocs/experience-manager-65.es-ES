@@ -1,8 +1,8 @@
 ---
 title: Diseño de formularios HTML5 accesibles
-seo-title: Diseño de formularios HTML5 accesibles
+seo-title: Designing accessible HTML5 forms
 description: Los formularios HTML5 utilizan el estándar de accesibilidad ARIA HTML5. Estos formularios admiten la navegación con pestañas y están certificados para ser compatibles con lectores de pantalla comunes.
-seo-description: Los formularios HTML5 utilizan el estándar de accesibilidad ARIA HTML5. Estos formularios admiten la navegación con pestañas y están certificados para ser compatibles con lectores de pantalla comunes.
+seo-description: HTML5 forms use the ARIA HTML5 accessibility standard. These forms support tabbed navigation and are certified to be compatible with common screen readers.
 uuid: 1ce5ba39-69ea-4d0e-96ea-e2a38b21d6b7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,18 +10,17 @@ topic-tags: hTML5_forms
 discoiquuid: 8711ad33-396b-4572-b2ee-71e9f45f4ebe
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: fca2f9b2-11a2-4db0-a370-c4046f32be63
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-
 # Diseño de formularios HTML5 accesibles {#designing-accessible-html-forms}
 
-Los formularios HTML5 utilizan el estándar de accesibilidad ARIA HTML5 para generar formularios HTML accesibles. Estos formularios admiten la navegación con pestañas (excepto Mozilla FireFox) y están certificados para ser compatibles con lectores de pantalla comunes. Para generar un formulario HTML5 con buenas funciones de accesibilidad, diseñe la plantilla de formulario XFA basándose en algunas directrices de diseño básicas. Las directrices de diseño incluyen configurar el orden de tabulación correcto y proporcionar el contenido Texto hablado para cada control de formulario. AEM Forms Designer admite la configuración de estos atributos de control de formulario para generar un formulario PDF y HTML5 accesible.
+Los formularios HTML5 utilizan el estándar de accesibilidad ARIA HTML5 para generar formularios HTML accesibles. Estos formularios admiten la navegación con pestañas (excepto Mozilla FireFox) y están certificados para ser compatibles con lectores de pantalla comunes. Para generar un formulario HTML5 con buenas funciones de accesibilidad, diseñe la plantilla de formulario XFA basándose en algunas directrices de diseño básicas. Las directrices de diseño incluyen configurar el orden de tabulación correcto y proporcionar el contenido Texto hablado para cada control de formulario. AEM Forms Designer admite la configuración de estos atributos de control de formulario para generar un formulario de PDF y HTML5 accesible.
 
 *Nota:La navegación con fichas no cubre campos protegidos, como los campos de cálculo que muestran la suma de los valores. Para que el lector de pantalla lea el valor de un campo protegido, coloque un campo vacío de solo lectura encima o junto al campo protegido. Asigne el valor del campo protegido al nuevo campo de solo lectura. El lector de pantalla o la navegación con pestañas pueden elegir este campo de solo lectura y expresarlo como el valor del campo protegido.*
 
@@ -34,4 +33,4 @@ AEM Forms Designer incluye varias opciones de Texto hablado que se pueden pasar 
 
 ![accesibilidad](assets/accessibility.png)
 
-Cuando hay varias opciones disponibles en un control de formulario, como información del objeto, Texto del Reader de pantalla y Rótulo, el Reader de pantalla solo utiliza una de estas propiedades. El orden predeterminado es Texto personalizado del Reader de pantalla, información del objeto, Rótulo y Nombre. Puede anular el orden predeterminado utilizando la opción Reader de pantalla **Prioridad** de la paleta Accesibilidad.
+Cuando hay varias opciones disponibles en un control de formulario, como información del objeto, Texto del Reader de pantalla y Rótulo, el Reader de pantalla solo utiliza una de estas propiedades. El orden predeterminado es Texto personalizado del Reader de pantalla, información del objeto, Rótulo y Nombre. Puede anular el orden predeterminado mediante el Reader de pantalla **Prioridad** en la paleta Accesibilidad.

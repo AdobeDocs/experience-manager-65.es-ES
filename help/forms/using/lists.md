@@ -53,7 +53,7 @@ La solución de administración de correspondencia admite dos tipos de elementos
    * **Diccionario de datos**: De forma opcional, seleccione el diccionario de datos en el que desea asignar. Este atributo permite agregar referencias a elementos de diccionario de datos en el recurso de texto.
    * **Etiquetas**: De forma opcional, para crear una etiqueta personalizada, introduzca valor en el campo de texto y pulse Intro. Puede ver la etiqueta debajo del campo de texto de las etiquetas. Al guardar este texto, también se crean las etiquetas recientemente agregadas.
 
-1. Toque **Siguiente**. Gestión de correspondencia muestra la página Editor, donde puede agregar párrafos de texto y elementos de datos al texto.
+1. Pulse **Siguiente**. Gestión de correspondencia muestra la página Editor, donde puede agregar párrafos de texto y elementos de datos al texto.
 
    El corrector ortográfico predeterminado del navegador comprueba la ortografía en el editor de texto. Para administrar la revisión ortográfica y gramatical, puede editar la configuración del corrector ortográfico del navegador o instalar complementos del navegador para revisar la ortografía y la gramática.
 
@@ -136,7 +136,7 @@ La solución de administración de correspondencia admite dos tipos de elementos
    También puede utilizar el símbolo @ para buscar y agregar elementos de diccionario de datos y marcador de posición al editor de texto. Coloque el cursor donde desee insertar el elemento . Escriba @ seguido de la cadena de búsqueda. El editor de texto realiza la operación de búsqueda en todos los elementos de diccionario de datos y marcador de posición disponibles en el fragmento de documento de texto. La operación de búsqueda recupera y muestra los elementos que contienen la cadena de búsqueda como una lista desplegable. Navegue por los resultados de búsqueda y haga clic en el elemento que desee insertar en la ubicación del cursor. Pulse Esc para ocultar los resultados de la búsqueda.
 
 1. Puede utilizar condiciones en línea y repetir para que la carta sea altamente contextual y esté bien estructurada. Para obtener más información sobre la condición en línea y la repetición, consulte [Condiciones en línea y repetir en letras](/help/forms/using/cm-inline-condition.md).
-1. Toque **Guardar**.
+1. Pulse **Guardar**.
 
 #### Insertar hipervínculo en un texto {#insert-hyperlink}
 
@@ -245,7 +245,7 @@ Una lista es un grupo de contenido relacionado que se puede utilizar en una plan
    * **Diccionario de datos (opcional)**: De forma opcional, seleccione el diccionario de datos al que desea conectarse. Solo se pueden agregar a la lista recursos que utilicen el mismo diccionario de datos que la lista, o recursos que no tengan asignado ningún diccionario de datos. Asignar un diccionario de datos a una lista facilita que la persona que crea una plantilla de carta encuentre la lista adecuada.
    * **Etiquetas (opcional)**: Seleccione las etiquetas que desee aplicar. También puede escribir el nombre de una etiqueta nueva y crearla. (La etiqueta nueva se crea al pulsar **Guardar**.)
 
-1. Toque **Siguiente**.
+1. Pulse **Siguiente**.
 1. Toque **Agregar recurso**.
 1. Para añadir recursos a la lista, selecciónelos en la página Seleccionar recursos y pulse **Listo**.
 
@@ -277,7 +277,7 @@ Para cambiar el orden de los recursos de la lista, pulse y mantenga presionado e
    * **Ignorar estilo de lista:** Si la opción Numeración compuesta no está seleccionada, la opción Ignorar estilo de lista estará activada. Esta selección ignora el estilo de la Lista anidada y la numeración continúa desde la Lista externa. Por lo tanto, los módulos de la lista anidada se tratan como parte de la propia lista externa, sin tener en cuenta los estilos especificados en la lista anidada. Si la opción Ignorar estilo de lista no está seleccionada para una lista anidada, los módulos que forman parte de esa lista anidada tienen su propio estilo de numeración.
    * **Mantener con siguiente:** Establece el salto de página para los recursos contenidos en una lista. Si establece la propiedad Mantener con siguiente de un recurso de una lista en **Activado**, ese recurso y el siguiente permanecen en la misma página. Esto implica que el contenido del recurso seleccionado y el siguiente no se dividirán en páginas.
 
-1. Toque **Guardar**.
+1. Pulse **Guardar**.
 
 ### Prácticas recomendadas, sugerencias y trucos {#best-practices-tips-and-tricks}
 
@@ -314,7 +314,7 @@ El editor de condiciones permite especificar una condición predeterminada. Si e
    * **Diccionario de datos (opcional)**: De forma opcional, seleccione el diccionario de datos al que desea conectarse. Solo se pueden agregar a la lista recursos que utilicen el mismo diccionario de datos que la condición, o recursos que no tengan asignado un diccionario de datos. Asignar un diccionario de datos a una lista facilita a la persona que crea una plantilla de carta encontrar la condición adecuada.
    * **Etiquetas (opcional)**: De forma opcional, seleccione las etiquetas que desee aplicar. También puede escribir el nombre de una etiqueta nueva y crearla. (La etiqueta nueva se crea al pulsar **Guardar**.)
 
-1. Toque **Siguiente**.
+1. Pulse **Siguiente**.
 1. Toque **Agregar recurso**.
 1. Para añadir un recurso a la condición, selecciónelo en la página Seleccionar recursos y pulse **Listo**. Los recursos se agregan al panel Expresión.
 1. Puede seleccionar las siguientes opciones para especificar el comportamiento de la condición durante la ejecución:
@@ -418,7 +418,7 @@ Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragm
 
    Para ver un ejemplo detallado del uso de tablas estáticas y dinámicas en fragmentos de diseño, consulte [Ejemplo con archivos de ejemplo: uso de tablas estáticas y dinámicas en una letra](#examplewithsamplefiles).
 
-1. Toque **Guardar**.
+1. Pulse **Guardar**.
 
 ### Cargar un XDP a la gestión de correspondencia {#upload-an-xdp-to-correspondence-management}
 

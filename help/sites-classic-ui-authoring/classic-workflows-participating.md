@@ -1,22 +1,21 @@
 ---
 title: Participación en flujos de trabajo
-seo-title: Participación en flujos de trabajo
+seo-title: Participating in Workflows
 description: Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para llevar a cabo la actividad y asigna el elemento de trabajo a esa persona o grupo.
-seo-description: Los flujos de trabajo incluyen normalmente los pasos que una persona debe llevar a cabo para realizar una actividad en una página o un recurso. El flujo de trabajo selecciona un usuario o grupo para llevar a cabo la actividad y asigna el elemento de trabajo a esa persona o grupo.
+seo-description: Workflows typically include steps that require a person to perform an activity on a page or asset. The workflow selects a user or group to perform the activity and assigns a work item to that person or group.
 uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '543'
 ht-degree: 98%
 
 ---
-
 
 # Participación en flujos de trabajo{#participating-in-workflows}
 
@@ -71,7 +70,7 @@ Una vez haya realizado la acción indicada, puede finalizar el elemento de traba
 
 1. Haga clic en **Aceptar** para confirmar la acción.
 
-### Delegación de una etapa de participante  {#delegating-a-participant-step}
+### Delegación de una etapa de participante {#delegating-a-participant-step}
 
 Utilice el siguiente procedimiento para delegar el elemento de trabajo.
 
@@ -82,7 +81,7 @@ Utilice el siguiente procedimiento para delegar el elemento de trabajo.
 
 1. Haga clic en **Aceptar** para confirmar la acción.
 
-### Realización de un paso hacia atrás en un paso de participante  {#performing-step-back-on-a-participant-step}
+### Realización de un paso hacia atrás en un paso de participante {#performing-step-back-on-a-participant-step}
 
 Utilice el siguiente procedimiento para volver al paso anterior.
 
@@ -92,4 +91,3 @@ Utilice el siguiente procedimiento para volver al paso anterior.
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 
 1. Haga clic en Aceptar para confirmar la acción.
-

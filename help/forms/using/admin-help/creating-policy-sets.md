@@ -1,8 +1,8 @@
 ---
 title: Creación y administración de conjuntos de políticas
-seo-title: Creación y administración de conjuntos de políticas
+seo-title: Creating and managing policy sets
 description: Los conjuntos de políticas se utilizan para agrupar las políticas que tienen un propósito comercial común. Puede crear, editar y eliminar directivas en un conjunto de directivas.
-seo-description: Los conjuntos de políticas se utilizan para agrupar las políticas que tienen un propósito comercial común. Puede crear, editar y eliminar directivas en un conjunto de directivas.
+seo-description: Policy sets are used to group policies that have a common business purpose. You can create, edit and delete policies in a policy set.
 uuid: 11faf67c-b9b7-4394-8672-d43cace131ad
 contentOwner: admin
 content-type: reference
@@ -10,20 +10,19 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 736926af-ae41-4da3-b181-444de72407bd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1295'
 ht-degree: 0%
 
 ---
 
-
-# Creación y administración de conjuntos de directivas {#creating-and-managing-policy-sets}
+# Creación y administración de conjuntos de políticas {#creating-and-managing-policy-sets}
 
 Los conjuntos de políticas se utilizan para agrupar las políticas que tienen un propósito comercial común. Los conjuntos de políticas se pueden poner a disposición de un subconjunto de usuarios del sistema.
 
-Cada conjunto de políticas tiene al menos un coordinador de conjuntos de políticas asociado. El *coordinador del conjunto de directivas* es un administrador o un usuario que tiene permisos adicionales. El coordinador del conjunto de políticas suele ser un especialista de la organización que puede crear mejor las políticas en un conjunto de políticas determinado.
+Cada conjunto de políticas tiene al menos un coordinador de conjuntos de políticas asociado. La variable *coordinador de conjuntos de políticas* es un administrador o un usuario que tiene permisos adicionales. El coordinador del conjunto de políticas suele ser un especialista de la organización que puede crear mejor las políticas en un conjunto de políticas determinado.
 
 Los coordinadores de conjuntos de políticas pueden realizar las siguientes tareas:
 
@@ -41,7 +40,7 @@ Al eliminar un conjunto de directivas, las directivas que formaban parte del con
 
 El superusuario o el coordinador de conjuntos de directivas agrega los dominios creados en Administración de usuarios al usuario y grupo visibles para cada conjunto de directivas. Esta lista es visible para el coordinador de conjuntos de políticas y se utiliza para poner límites en los dominios que el coordinador de conjuntos de políticas puede examinar al elegir usuarios para agregar a políticas.
 
-Al crear conjuntos de directivas, se asigna a los usuarios la función de publicador de documentos. El *editor de documentos* es el usuario que protege el documento con una directiva. De forma predeterminada, este usuario siempre se incluye en una directiva con derechos de acceso completos, incluidas las capacidades de revocación y conmutación de políticas. Sin embargo, los administradores pueden cambiar los derechos de acceso del editor del documento para las directivas compartidas. Por ejemplo, el administrador puede desactivar el derecho del editor del documento a revocar el acceso al documento o cambiar la directiva. Si un administrador cambia la directiva adjunta al documento, el nombre del Publicador se actualizará al nombre del propietario de la directiva que se aplicó por última vez al documento.
+Al crear conjuntos de directivas, se asigna a los usuarios la función de publicador de documentos. La variable *publicador de documentos* es el usuario que protege el documento con una directiva. De forma predeterminada, este usuario siempre se incluye en una directiva con derechos de acceso completos, incluidas las capacidades de revocación y conmutación de políticas. Sin embargo, los administradores pueden cambiar los derechos de acceso del editor del documento para las directivas compartidas. Por ejemplo, el administrador puede desactivar el derecho del editor del documento a revocar el acceso al documento o cambiar la directiva. Si un administrador cambia la directiva adjunta al documento, el nombre del Publicador se actualizará al nombre del propietario de la directiva que se aplicó por última vez al documento.
 
 Tras la instalación de la seguridad del documento, se crea un conjunto de directivas predeterminado denominado *Conjunto de directivas globales*. El administrador que instaló el software o el coordinador del conjunto de directivas designado para este conjunto de directivas es el encargado de administrar este conjunto de directivas.
 
@@ -88,25 +87,25 @@ Durante la creación del conjunto de directivas, puede utilizar el botón Atrás
 
 1. Haga clic en Guardar.
 
-Ahora puede agregar directivas al conjunto de directivas. (Consulte [Creación y edición de directivas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies)).
+Ahora puede agregar directivas al conjunto de directivas. (Consulte [Creación y edición de directivas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
 ## Editar un conjunto de directivas {#edit-a-policy-set}
 
 1. En la página de seguridad del documento, haga clic en Directivas, en la ficha Conjuntos de directivas y, a continuación, en el conjunto de directivas que desea editar.
 1. Haga clic en la ficha adecuada y edítela según sea necesario:
 
-   * **Detalle:** edite el nombre y la descripción del conjunto de directivas.
-   * **Directivas:** cree, habilite, edite y elimine directivas dentro del conjunto de directivas.
-   * **Usuarios y grupos visibles:** agregue y elimine usuarios y grupos visibles que se puedan incluir en una directiva.
-   * **Coordinadores de conjuntos de políticas:** agregue, elimine y cambie permisos para los coordinadores.
-   * **Publicadores de documentos:** agregue y elimine usuarios que puedan publicar documentos mediante las políticas del conjunto.
+   * **Detalle:** Edite el nombre y la descripción del conjunto de directivas.
+   * **Políticas:** Cree, habilite, edite y elimine directivas dentro del conjunto de directivas.
+   * **Usuarios y grupos visibles:** Agregue y elimine usuarios y grupos visibles que se puedan incluir en una directiva.
+   * **Coordinadores del conjunto de políticas:** Agregar, quitar y cambiar permisos para los coordinadores.
+   * **Publicadores de documentos:** Agregue y elimine usuarios que puedan publicar documentos mediante las directivas del conjunto.
 
 1. Para eliminar un usuario o grupo visible, un coordinador de conjuntos de directivas o un publicador de documentos, haga clic en la ficha correspondiente, seleccione la casilla de verificación de la entrada, haga clic en Eliminar y, a continuación, haga clic en Aceptar.
 1. Para agregar usuarios o grupos visibles, un coordinador de conjuntos de políticas o editores de documentos, haga clic en la ficha adecuada, haga clic en Agregar usuarios o grupos, busque el usuario o grupo que desee agregar, seleccione la entrada, haga clic en Agregar y, después, haga clic en Aceptar.
 1. En la pestaña Directivas , busque las directivas que desea agregar al conjunto de directivas y cree nuevas directivas:
 
    * Para buscar una directiva, seleccione ID de directiva o Nombre de directiva, escriba el valor correspondiente, seleccione el número de elementos que desea mostrar y haga clic en Buscar.
-   * Para obtener más información sobre la creación de una nueva directiva, consulte [Creación y edición de directivas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
+   * Para obtener más información sobre la creación de una directiva nueva, consulte [Creación y edición de directivas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
 ## Eliminar un conjunto de directivas {#delete-a-policy-set}
 
@@ -115,4 +114,3 @@ Al eliminar un conjunto de directivas, las directivas que formaban parte del con
 1. Haga clic en Directivas y en la ficha Conjuntos de directivas .
 1. Seleccione la casilla de verificación del conjunto de directivas que desea eliminar.
 1. Haga clic en Eliminar y, a continuación, en Aceptar.
-

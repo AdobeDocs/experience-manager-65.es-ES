@@ -1,24 +1,23 @@
 ---
-title: 'Edición de las propiedades de página  '
-seo-title: 'Edición de las propiedades de página  '
+title: Edición de las propiedades de página
+seo-title: Editing Page Properties
 description: Las propiedades de una página pueden variar en función de su naturaleza. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy. Otras no lo están y la información de la Live Copy está disponible según corresponda.
-seo-description: Las propiedades de una página pueden variar en función de su naturaleza. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy. Otras no lo están y la información de la Live Copy está disponible según corresponda.
+seo-description: Properties of a page can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '763'
 ht-degree: 96%
 
 ---
 
-
-# Edición de las propiedades de página{#editing-page-properties}
+# Edición de las propiedades de página  {#editing-page-properties}
 
 Puede definir las propiedades para una página. Estas pueden variar en función de la naturaleza de la página. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy. Otras no lo están y la información de la Live Copy está disponible según corresponda.
 
@@ -26,7 +25,7 @@ Puede definir las propiedades para una página. Estas pueden variar en función 
 
 Las propiedades se distribuyen entre varias pestañas:
 
-### Básico {#basic}
+### Basic {#basic}
 
 * **Título**
 
@@ -82,7 +81,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Permite especificar una URL de vanidad para esta página. Esta opción le permitirá crear URL más cortas y expresivas.
 
-   Por ejemplo: si la URL de vanidad está configurada en w `elcome`a la página identificada por la ruta / `v1.0/startpage`para el sitio Web h `ttp://example.com,` entonces h `ttp://example.com/welcome`sería la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
+   Por ejemplo, si la URL de vanidad está configurada en w `elcome`a la página identificada por la ruta / `v1.0/startpage`para el sitio web h `ttp://example.com,` then h `ttp://example.com/welcome`sería la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -106,7 +105,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Indique la página a la cual esta página debería redirigirse automáticamente.
 
-* **Diseño**
+* **Design**
 
    Indique el [diseño](/help/sites-developing/designer.md) que se usará para esta página.
 
@@ -134,7 +133,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Especificar una configuración de exportación.
 
-### Miniatura     {#thumbnail}
+### Miniatura    {#thumbnail}
 
 * **Miniatura de la página**
 
@@ -148,7 +147,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
       Cargue una imagen para utilizarla como miniatura.
 
-### Cloud Services{#cloud-services}
+### Cloud Services {#cloud-services}
 
 * **Cloud Services**
 
@@ -160,7 +159,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Seleccione una [marca para especificar un ámbito de objetivo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
-### Permisos    {#permissions}
+### Permisos   {#permissions}
 
 * **Permisos** (IU táctil)
 
@@ -172,21 +171,21 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Defina propiedades para una página de modelo en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
-### Live Copy     {#live-copy}
+### Live Copy    {#live-copy}
 
 * **Live Copy**
 
    Defina propiedades para una página Live Copy en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
-### Estructura del sitio     {#site-structure}
+### Estructura del sitio    {#site-structure}
 
 * Proporcione vínculos a páginas que proporcionan funcionalidad para todo el sitio, como **Página de suscripción**, **Página sin conexión**, entre otros. 
 
-## Edición de las propiedades de página {#editing-page-properties-2}
+## Edición de las propiedades de página   {#editing-page-properties-2}
 
 ### Edición de las propiedades de una página específica {#editing-page-properties-for-a-specific-page}
 
-Las Propiedades de página definen las diversas propiedades de la página, como los títulos, cuando aparecen el sitio web y otros.
+Las Propiedades de página definen las diversas propiedades de la página, como los títulos, cuando aparecen en el sitio web y otros.
 
 1. Abra la página que desee editar.
 
@@ -195,4 +194,3 @@ Las Propiedades de página definen las diversas propiedades de la página, como 
    Se abre un cuadro de diálogo con varias fichas.
 
 1. Haga los cambios que necesite y haga clic en **Aceptar** para guardarlos.
-

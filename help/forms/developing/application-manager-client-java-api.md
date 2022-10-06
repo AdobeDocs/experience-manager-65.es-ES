@@ -1,6 +1,6 @@
 ---
 title: Inicio rápido (SOAP) de Application Manager Client JavaAPI
-seo-title: Inicio rápido (SOAP) de Application Manager Client JavaAPI
+seo-title: Application Manager Client JavaAPI Quick Start(SOAP)
 description: Inicio rápido (SOAP) de Application Manager Client JavaAPI
 uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
 contentOwner: admin
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 659eb9b0-93a0-4bae-8836-d4bc9c3a8c77
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
 
-
-# Inicio rápido (SOAP) del cliente JavaAPI de Application Manager {#application-manager-client-javaapi-quick-start-soap}
+# Inicio rápido de la API de Java del cliente de Application Manager (SOAP) {#application-manager-client-javaapi-quick-start-soap}
 
 El siguiente inicio rápido de la API de Java (SOAP) está disponible para el cliente de Application Manager.
 
@@ -644,7 +643,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Inicio rápido (modo SOAP):Vista previa del archivo de aplicaciones LiveCycle ES2 y posteriores mediante la API Java {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Inicio rápido (modo SOAP):Vista previa del archivo de aplicaciones LiveCycle ES2 y posteriores mediante la API de Java {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
 El siguiente ejemplo de código Java es para previsualizar AEM Forms y el archivo de aplicaciones posterior mediante la API de Java.
 
@@ -818,4 +817,3 @@ public class DeleteApplication_SOAP {
     }
 }
 ```
-

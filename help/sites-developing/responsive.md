@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 4472da2e9aa0b45e0d5f03bfdc53a2748d82cdb3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '5351'
+source-wordcount: '5317'
 ht-degree: 1%
 
 ---
@@ -23,10 +23,6 @@ ht-degree: 1%
 >[!NOTE]
 >
 >Adobe recomienda utilizar el Editor de SPA para proyectos que requieren procesamiento del lado del cliente basado en el marco de aplicaciones de una sola página (por ejemplo, _React_). [Más información](/help/sites-developing/spa-overview.md).
-
->[!NOTE]
->
->Varios ejemplos se basan en el contenido de muestra de Geometrixx, que ya no se envía con AEM, y que ha sido reemplazado por We.Retail. Consulte el documento [Implementación de referencia de We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) para obtener información sobre cómo descargar e instalar Geometrixx.
 
 Diseñe las páginas web para que se adapten a la ventanilla del cliente en la que se muestran. Con un diseño interactivo, las mismas páginas se pueden mostrar de forma eficaz en varios dispositivos en ambas orientaciones. La siguiente imagen muestra algunas maneras en que una página puede responder a los cambios en el tamaño de la ventanilla móvil:
 

@@ -1,8 +1,8 @@
 ---
-title: 'Creación de plantillas de página  '
-seo-title: 'Creación de plantillas de página  '
+title: Creación de plantillas de página
+seo-title: Creating Page Templates
 description: La plantilla define la estructura de la página resultante y con el editor de plantillas, crear y mantener plantillas ya no es una tarea solo de desarrollador
-seo-description: La plantilla define la estructura de la página resultante y con el editor de plantillas, crear y mantener plantillas ya no es una tarea solo de desarrollador
+seo-description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
 uuid: e14cd298-289f-43f0-aacb-314ed5d56c12
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '4901'
-ht-degree: 95%
+source-wordcount: '4874'
+ht-degree: 96%
 
 ---
 
@@ -45,7 +45,7 @@ Para obtener información detallada acerca de cómo funcionan las plantillas edi
 
 >[!CAUTION]
 >
->Las páginas y plantillas creadas con la **Consola de plantillas** no están pensadas para utilizarse con la IU clásica y este uso no es compatible.
+>Páginas y plantillas creadas con la variable **Consola Plantillas** no están pensados para utilizarse con la IU clásica y este uso no es compatible.
 
 ## Antes de comenzar {#before-you-start}
 
@@ -147,7 +147,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
 >[!CAUTION]
 >
->No introduzca nunca en una plantilla información que deba [internacionalizarse. ](/help/sites-developing/i18n.md) Para fines de internalización, se recomiendan las [características de localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>No introduzca nunca en una plantilla información que deba [internacionalizarse. ](/help/sites-developing/i18n.md) Para fines de internalización, la variable [características de localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es) se recomienda.
 
 ### Creación de una carpeta de plantillas: administrador {#creating-a-template-folder-admin}
 
@@ -210,7 +210,7 @@ Para ver o editar las propiedades:
 
 >[!NOTE]
 >
->Las plantillas son herramientas útiles para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden sobrecargar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
+>Las plantillas son herramientas útiles para optimizar el flujo de trabajo de creación de páginas. Sin embargo, demasiadas plantillas pueden saturar a los autores y hacer que la creación de páginas sea confusa. Una buena regla general es mantener el número de plantillas por debajo de 100.
 >
 >Adobe no recomienda tener más de 1000 plantillas debido a posibles impactos en el rendimiento.
 
@@ -278,7 +278,7 @@ Una plantilla puede estar disponible o no disponible para determinadas ramas de 
    >Si la lista **Plantillas permitidas** se deja vacía, el árbol ascenderá hasta que se encuentre un valor o una lista.
    >
    >
-   >Consulte [Disponibilidad de plantillas](/help/sites-developing/templates.md#template-availability): los principios para las plantillas permitidas siguen siendo los mismos.
+   >Consulte [Disponibilidad de plantillas](/help/sites-developing/templates.md#template-availability): los principios para las plantillas permitidas siguen siendo los mismos.
 
 1. Haga clic en **Guardar** para guardar los cambios realizados en las propiedades de la página.
 
@@ -340,7 +340,7 @@ El selector **Modo** de la barra de herramientas le permite seleccionar y editar
 * [Contenido inicial](#editingatemplateinitialcontent)
 * [Diseño](#editingatemplatelayout)
 
-![chlimage_1-135](assets/chlimage_1-133.png)
+![chlimage_1-133](assets/chlimage_1-133.png)
 
 Mientras que la opción **Política de la página** del menú **Información de página** le permite [seleccionar las políticas de la página requeridas](#editingatemplatepagepolicies):
 
@@ -491,7 +491,7 @@ En el modo de **Estructura** del editor de plantillas:
 
    >[!NOTE]
    >
-   >[](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)Las políticas de contenido para componentes que implementan el editor de texto enriquecido solo se pueden definir para las opciones que RTE tiene disponibles en su configuración de interfaz de usuario. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+   >[Las políticas de contenido para componentes que implementan el editor de texto](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) enriquecido solo se pueden definir para las opciones que RTE tiene disponibles en su configuración de interfaz de usuario. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Política y propiedades (contenedor de diseño)**
 
@@ -515,7 +515,7 @@ En el modo de **Estructura** del editor de plantillas:
 
    * Componentes permitidos
    * Componentes predeterminados
-   * Configuración interactiva
+   * Configuración adaptable
 
    *Componentes permitidos*
 
@@ -539,9 +539,9 @@ En el modo de **Estructura** del editor de plantillas:
 
    ![chlimage_1-145](assets/chlimage_1-145.png)
 
-   *Configuración interactiva*
+   *Configuración adaptable*
 
-   En la pestaña **Configuración interactiva**, puede configurar el número de columnas de la cuadrícula resultante del contenedor de diseño.
+   En la pestaña **Configuración adaptable**, puede configurar el número de columnas de la cuadrícula resultante del contenedor de diseño.
 
 * **Desbloquear/bloquear componentes**
 
@@ -622,7 +622,7 @@ El diseño de la página, incluidas las bibliotecas del lado del cliente y las p
 
 Para acceder al cuadro de diálogo **Diseño de página**:
 
-1. En el **Editor de plantillas**, seleccione **Información de página** en la barra de herramientas y, a continuación, **Diseño de página** para abrir el cuadro de diálogo.
+1. En el **Editor de plantillas**, seleccione **Información de la página** en la barra de herramientas y, a continuación, **Diseño de página** para abrir el cuadro de diálogo.
 1. El cuadro de diálogo **Diseño de página** se abre y se divide en dos secciones:
 
    * En la mitad izquierda, se definen las [políticas de la página](/help/sites-authoring/templates.md#page-policies)

@@ -1,8 +1,8 @@
 ---
 title: Componentes
-seo-title: Componentes
+seo-title: Components
 description: AEM incorpora una serie de componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web.
-seo-description: AEM incorpora una serie de componentes integrados que proporcionan una amplia funcionalidad para creadores de sitios web.
+seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors.
 page-status-flag: de-activated
 uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
@@ -11,10 +11,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
-translation-type: tm+mt
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '217'
 ht-degree: 92%
 
 ---
@@ -35,7 +34,7 @@ En las siguientes páginas se proporcionan enlaces rápidos a algunas de las pri
 
 * [Componentes para la creación de páginas](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Los componentes utilizados para crear contenido de página estándar se encuentran principalmente en los grupos **General**, **Columns** y **Forms**.
+   Los componentes utilizados para crear contenido de página estándar se encuentran principalmente en los grupos **General**, **Columnas** y **Forms**.
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 

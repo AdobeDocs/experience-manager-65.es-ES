@@ -1,22 +1,21 @@
 ---
 title: Funciones de diseño de formularios adaptables
-seo-title: Funciones de diseño de formularios adaptables
-description: El diseño y el aspecto de los formularios adaptables en varios dispositivos se rigen por la configuración de presentación. Comprenda los distintos diseños y cómo aplicarlos.
-seo-description: El diseño y el aspecto de los formularios adaptables en varios dispositivos se rigen por la configuración de presentación. Comprenda los distintos diseños y cómo aplicarlos.
+seo-title: Layout capabilities of adaptive forms
+description: El diseño y el aspecto de los formularios adaptables en varios dispositivos se rigen por la configuración de presentación. Obtenga información sobre los distintos diseños y cómo aplicarlos.
+seo-description: Layout and appearances of adaptive forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
 uuid: 79022ac2-1aa3-47c5-b094-cbe83334ea62
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 0%
+source-wordcount: '1129'
+ht-degree: 44%
 
 ---
-
 
 # Funciones de diseño de formularios adaptables{#layout-capabilities-of-adaptive-forms}
 
@@ -34,11 +33,11 @@ Antes de conocer las diferentes funciones de presentación de los formularios ad
 
 Un formulario adaptable proporciona los siguientes tipos de diseños:
 
-**Diseño de** panelControla cómo se muestran los elementos o componentes de un panel en un dispositivo.
+**Diseño de panel**: controla cómo se muestran los elementos o componentes de un panel en un dispositivo.
 
-**Diseño** móvilControla la navegación de un formulario en un dispositivo móvil. Si el ancho del dispositivo es de 768 píxeles o más, el diseño se considera un diseño móvil y se optimiza para un dispositivo móvil.
+**Diseño móvil**: controla la navegación de un formulario en un dispositivo móvil. Si el ancho del dispositivo es de 768 píxeles o más, el diseño se considera un diseño móvil y se optimiza para un dispositivo móvil.
 
-**Diseño de** barra de herramientasControla la colocación de los botones Acción en la barra de herramientas o la barra de herramientas del panel en un formulario.
+**Diseño de barra de herramientas**: controla la ubicación de los botones de acción en la barra de herramientas o la barra de herramientas del panel de un formulario.
 
 Todos estos diseños de panel se definen en la siguiente ubicación:
 
@@ -54,31 +53,31 @@ Todos estos diseños de panel se definen en la siguiente ubicación:
 
 Un autor de formularios puede asociar una presentación con cada panel de un formulario adaptable, incluido el panel raíz.
 
-Los diseños de panel están disponibles en la ubicación `/libs/fd/af/layouts/panel`.
+Los diseños de panel están disponibles en la ubicación `/libs/fd/af/layouts/panel`. 
 
 ![Lista de diseños de panel para el panel raíz de un formulario adaptable](assets/layouts.png)
 
 Lista de diseños de panel en formularios adaptables
 
-### Interactivo: todo en una página sin navegación {#responsive-everything-on-one-page-without-navigation-br}
+### Adaptable: todo en una página sin navegación {#responsive-everything-on-one-page-without-navigation-br}
 
-Utilice este diseño de panel para crear un diseño interactivo que se ajuste al tamaño de pantalla del dispositivo sin necesidad de navegación especializada.
+Utilice este diseño de panel para crear un diseño adaptable que se ajuste al tamaño de pantalla del dispositivo sin necesidad de utilizar ningún tipo de navegación especializada.
 
-Con esta presentación, puede colocar varios componentes del **[!UICONTROL Panel adaptable form]** uno tras otro dentro del panel.
+Con este diseño, puede colocar varias **[!UICONTROL Formulario adaptable del panel]** componentes uno tras otro dentro del panel.
 
-![Un formulario con presentación interactiva, tal como se ve en una pantalla pequeña](assets/responsive_layout_seen_on_small_screen.png)
+![Un formulario con diseño adaptable, tal como se ve en una pantalla pequeña](assets/responsive_layout_seen_on_small_screen.png)
 
-Un formulario con presentación interactiva, tal como se ve en una pantalla pequeña
+Un formulario con diseño adaptable, tal como se ve en una pantalla pequeña
 
 ![Un formulario con presentación interactiva, tal como se ve en una pantalla grande](assets/responsive_layout_seen_on_large_screen.png)
 
 Un formulario con presentación interactiva, tal como se ve en una pantalla grande
 
-### Asistente: un formulario de varios pasos que muestra un paso a la vez {#wizard-a-multi-step-form-showing-one-step-at-a-time}
+### Asistente: formulario de varios pasos que muestra cada paso {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
-Utilice este diseño de panel para proporcionar navegación guiada dentro de un formulario. Por ejemplo, utilice esta presentación cuando desee capturar información obligatoria en un formulario y guiar a los usuarios paso a paso.
+Utilice este diseño de panel para proporcionar navegación guiada dentro de un formulario. Por ejemplo, utilice este diseño cuando desee capturar información obligatoria en un formulario y guiar a los usuarios paso a paso.
 
-Utilice el componente `Panel adaptive form` para proporcionar navegación paso a paso dentro de un panel. Cuando se utiliza este diseño, el usuario solo pasa al siguiente paso una vez completado el paso actual
+Utilice la variable `Panel adaptive form` para proporcionar navegación paso a paso dentro de un panel. Cuando se utiliza este diseño, el usuario solo puede pasar al siguiente paso una vez que ha completado el paso actual.
 
 ```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
@@ -88,13 +87,13 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 Expresión de finalización de pasos en la presentación del Asistente para un formulario de varios pasos
 
-![Un formulario con presentación de asistente](assets/wizard-layout.png)
+![Un formulario con el diseño Asistente](assets/wizard-layout.png)
 
 Un formulario con el Asistente
 
-### Diseño para diseño de acordeón {#layout-for-accordion-design}
+### Diseño de acordeón {#layout-for-accordion-design}
 
-Con este diseño, puede colocar el componente `Panel adaptive form` en un panel con navegación por estilo de acordeón. Con este diseño, también puede crear paneles repetibles. Los paneles repetibles permiten agregar o quitar paneles de forma dinámica según sea necesario. Puede definir el número mínimo y máximo de veces que se repite un panel. Además, el título del panel se puede determinar dinámicamente, en función de la información proporcionada en los elementos del panel.
+Con este diseño, puede colocar la variable `Panel adaptive form` en un panel con navegación de estilo de acordeón. Este diseño también permite crear paneles repetibles. Los paneles repetibles permiten agregar o quitar paneles de forma dinámica según sea necesario. Puede definir el número mínimo y máximo de veces que se repite un panel. Además, el título del panel se puede determinar dinámicamente en función de la información proporcionada en los elementos del panel.
 
 La expresión de resumen se puede utilizar para mostrar los valores proporcionados por el usuario final en el título del panel minimizado.
 
@@ -104,15 +103,15 @@ Paneles repetibles creados con el diseño Acordeón
 
 ### Diseño con pestañas: las pestañas aparecen a la izquierda {#tabbed-layout-tabs-appear-on-the-left}
 
-Con este diseño, puede colocar el componente `Panel adaptive form` en un panel con navegación por pestañas. Las pestañas se colocan a la izquierda del contenido del panel.
+Con este diseño, puede colocar la variable `Panel adaptive form` en un panel con navegación por pestañas. Las pestañas se colocan a la izquierda del contenido del panel.
 
-![En la presentación Tabulación, las pestañas aparecen a la izquierda](assets/tabbed_layout_left.png)
+![En el Diseño con pestañas, las pestañas aparecen a la izquierda](assets/tabbed_layout_left.png)
 
-Pestañas que aparecen a la izquierda de un panel
+Las pestañas aparecen a la izquierda del panel
 
-### Diseño en fichas: las pestañas aparecen en la parte superior {#tabbed-layout-tabs-appear-on-the-top}
+### Diseño con pestañas: las pestañas aparecen en la parte superior {#tabbed-layout-tabs-appear-on-the-top}
 
-Con este diseño, puede colocar el componente `Panel adaptive form` en un panel con navegación por fichas. Las pestañas se colocan sobre el contenido del panel.
+Con este diseño, puede colocar la variable `Panel adaptive form` Componente de un panel con navegación por fichas. Las pestañas se colocan sobre el contenido del panel.
 
 ![Presentación en fichas en formularios adaptables con fichas en la parte superior](assets/tabbed_layout_top.png)
 
@@ -120,33 +119,33 @@ Pestañas que aparecen en la parte superior de un panel
 
 ## Diseños móviles {#mobile-layouts}
 
-Los diseños móviles permiten una navegación fácil de usar en los dispositivos móviles con pantallas relativamente más pequeñas. Los diseños móviles utilizan estilos con pestañas o de asistente para la navegación por formularios. La aplicación de un diseño para móvil proporciona una única presentación para todo el formulario.
+Los diseños móviles proporcionan una navegación fácil de usar en los dispositivos móviles con pantallas relativamente más pequeñas. Los diseños móviles utilizan estilos con pestañas o de asistente para la navegación del formulario. La aplicación de un diseño para móvil proporciona un diseño único para todo el formulario.
 
-Este diseño controla la navegación mediante una barra de navegación y un menú de navegación. La barra de navegación muestra los iconos **&lt;** y **** para indicar los pasos de navegación **next** y **previous** del formulario.
+Este diseño controla la navegación mediante una barra y un menú de navegación. La barra de navegación muestra los iconos **&lt;** y **>** para indicar los pasos de navegación **Siguiente** y **Anterior** en el formulario.
 
-Los diseños móviles están disponibles en la ubicación `/libs/fd/af/layouts/mobile/` . De forma predeterminada, los siguientes diseños móviles están disponibles en los formularios adaptables.
+Los diseños móviles están disponibles en la ubicación `/libs/fd/af/layouts/mobile/`. De forma predeterminada, los siguientes diseños móviles están disponibles en los formularios adaptables.
 
 ![Lista de diseños móviles en formularios adaptables](assets/mobile-navigation.png)
 
 Lista de diseños móviles en formularios adaptables
 
-Cuando se utiliza una presentación móvil, el menú de formulario, para acceder a varios paneles de formulario, está disponible pulsando el icono ![aem6forms_form_menu](assets/aem6forms_form_menu.png).
+Cuando se utiliza una presentación móvil, el menú de formulario, para acceder a varios paneles de formulario, está disponible pulsando ![aem6forms_form_menu](assets/aem6forms_form_menu.png) icono.
 
-### Presentación con títulos de panel en el encabezado del formulario {#layout-with-panel-titles-in-the-form-header}
+### Diseño con títulos de panel en el encabezado del formulario {#layout-with-panel-titles-in-the-form-header}
 
-Este diseño, como su nombre indica, muestra los títulos de los paneles junto con el menú de navegación y la barra de navegación. Este diseño también incluye los iconos Siguiente y Anterior para la navegación.
+Este diseño, como su nombre indica, muestra los títulos de los paneles junto con el menú y la barra de navegación. También incluye los iconos Siguiente y Anterior para la navegación.
 
-![Presentaciones móviles con títulos de panel en los encabezados de formulario](assets/mobile_layout_with.png)
+![Diseños móviles con títulos de panel en los encabezados del formulario](assets/mobile_layout_with.png)
 
-Presentaciones móviles con títulos de panel en los encabezados de formulario
+Diseños móviles con títulos de panel en los encabezados del formulario
 
-### Presentación sin títulos de panel en el encabezado del formulario {#layout-without-panel-titles-in-the-form-header}
+### Diseño sin títulos de panel en el encabezado del formulario {#layout-without-panel-titles-in-the-form-header}
 
-Este diseño, como su nombre indica, muestra únicamente el menú de navegación y la barra de navegación sin títulos de panel. Este diseño también incluye los iconos Siguiente y Anterior para la navegación.
+Este diseño, como su nombre indica, muestra únicamente el menú y la barra de navegación, sin títulos de panel. También incluye los iconos Siguiente y Anterior para la navegación.
 
-![Presentaciones móviles sin títulos de panel en los encabezados de formulario](assets/mobile_layout_without.png)
+![Diseños móviles sin títulos de panel en los encabezados del formulario](assets/mobile_layout_without.png)
 
-Presentaciones móviles sin títulos de panel en los encabezados de formulario
+Diseños móviles sin títulos de panel en los encabezados del formulario
 
 ## Diseños de la barra de herramientas {#toolbar-layouts}
 
@@ -156,7 +155,7 @@ Un diseño de barra de herramientas controla la colocación y visualización de 
 
 Una lista de diseños de barra de herramientas en formularios adaptables
 
-Los diseños de la barra de herramientas están disponibles en la ubicación `/libs/fd/af/layouts/toolbar`. los formularios adaptables proporcionan los siguientes diseños de barra de herramientas de forma predeterminada.
+Los diseños de la barra de herramientas están disponibles en `/libs/fd/af/layouts/toolbar` ubicación. los formularios adaptables proporcionan los siguientes diseños de barra de herramientas de forma predeterminada.
 
 ### Diseño predeterminado de la barra de herramientas {#default-layout-for-toolbar}
 
@@ -179,4 +178,3 @@ Para el diseño móvil, puede añadir botones de acción mediante iconos.
 ![Diseño fijo móvil para la barra de herramientas](assets/toolbar_layout_mobile_fixed.png)
 
 Diseño fijo móvil para la barra de herramientas
-

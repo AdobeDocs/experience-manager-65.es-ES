@@ -107,7 +107,7 @@ Para editar un conjunto de formularios, haga lo siguiente:
 1. En la página Configurar formularios , puede editar lo siguiente:
 
    * Orden del formulario
-   * Formulario  Identificador
+   * Identificador de formulario
    * Raíz de datos
    * Expresión de elegibilidad
 

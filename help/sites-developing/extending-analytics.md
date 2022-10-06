@@ -1,52 +1,51 @@
 ---
-title: Ampliación del seguimiento de Eventos
-seo-title: Ampliación del seguimiento de Eventos
-description: AEM Analytics le permite realizar un seguimiento de la interacción del usuario en su sitio web
-seo-description: AEM Analytics le permite realizar un seguimiento de la interacción del usuario en su sitio web
+title: Ampliación del seguimiento de eventos
+seo-title: Extending Event Tracking
+description: AEM Analytics permite realizar un seguimiento de la interacción del usuario en el sitio web
+seo-description: AEM Analytics allows you to track user interaction on your website
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
-translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
 
-
-# Ampliación del seguimiento de Eventos{#extending-event-tracking}
+# Ampliación del seguimiento de eventos{#extending-event-tracking}
 
 AEM Analytics permite realizar un seguimiento de la interacción del usuario en el sitio web. Como desarrollador, es posible que necesite:
 
-* Rastree cómo interactúan los visitantes con sus componentes. Esto se puede hacer con [eventos personalizados.](#custom-events)
-* [Valores de acceso en ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
-* [Añadir rellamadas](#adding-record-callbacks) de registro.
+* Rastree la interacción de los visitantes con sus componentes. Esto se puede hacer con [Eventos personalizados.](#custom-events)
+* [Acceso a valores en ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
+* [Añadir llamadas de retorno de registros](#adding-record-callbacks).
 
 >[!NOTE]
 >
->Esta información es básicamente genérica, pero utiliza [Adobe Analytics](/help/sites-administering/adobeanalytics.md) para ejemplos específicos.
+>Esta información es básicamente genérica, pero usa [Adobe Analytics](/help/sites-administering/adobeanalytics.md) para ver ejemplos específicos.
 >
 >Para obtener información general sobre el desarrollo de componentes y cuadros de diálogo, consulte [Desarrollo de componentes](/help/sites-developing/components.md).
 
 ## Eventos personalizados {#custom-events}
 
-Los eventos personalizados realizan un seguimiento de todo lo que dependa de la disponibilidad de un componente específico en la página. Esto también incluye eventos específicos de la plantilla, ya que el componente de página se trata como otro componente.
+Los eventos personalizados rastrean cualquier elemento que dependa de la disponibilidad de un componente específico en la página. Esto también incluye eventos específicos de la plantilla, ya que el componente de página se trata como otro componente.
 
-### Seguimiento de Eventos personalizados al cargar la página {#tracking-custom-events-on-page-load}
+### Seguimiento de eventos personalizados al cargar la página {#tracking-custom-events-on-page-load}
 
-Esto se puede hacer usando el pseudoatributo `data-tracking` (el atributo de registro anterior aún se admite para compatibilidad con versiones anteriores). Puede agregarlo a cualquier etiqueta HTML.
+Esto se puede hacer con el seudoatributo `data-tracking` (el atributo de registro anterior sigue siendo compatible con la compatibilidad con versiones anteriores). Puede agregarlo a cualquier etiqueta de HTML.
 
-La sintaxis para `data-tracking` es
+La sintaxis de `data-tracking` es
 
 * `data-tracking="{'event': ['eventName'], 'values': {'key': 'value', 'nextKey': 'nextValue'}, componentPath: 'myapp/component/mycomponent'}"`
 
-Puede pasar cualquier número de pares clave-valor como el segundo parámetro, que se denomina carga útil.
+Puede pasar cualquier número de pares de clave-valor como el segundo parámetro, que se denomina carga útil.
 
-Un ejemplo podría tener el siguiente aspecto:
+Un ejemplo puede tener el siguiente aspecto:
 
 ```xml
 <span data-tracking="{event:'blogEntryView',
@@ -61,25 +60,25 @@ Un ejemplo podría tener el siguiente aspecto:
 </span>
 ```
 
-Al cargar la página, todos los atributos `data-tracking` se recopilarán y agregarán al almacén de eventos de ContextHub, donde se pueden asignar a eventos de Adobe Analytics. Adobe Analytics no rastreará los eventos que no estén asignados. Consulte [Conexión a Adobe Analytics](/help/sites-administering/adobeanalytics.md) para obtener más información sobre la asignación de eventos.
+Al cargar la página, todo `data-tracking` los atributos se recopilarán y agregarán al almacén de eventos de ContextHub, donde se pueden asignar a eventos de Adobe Analytics. Adobe Analytics no rastreará los eventos que no estén asignados. Consulte [Conexión a Adobe Analytics](/help/sites-administering/adobeanalytics.md) para obtener más información sobre los eventos de asignación.
 
-### Seguimiento de Eventos personalizados después de la carga de la página {#tracking-custom-events-after-page-load}
+### Seguimiento de eventos personalizados después de la carga de la página {#tracking-custom-events-after-page-load}
 
-Para rastrear los eventos que se producen después de cargar una página (como las interacciones del usuario), utilice la función `CQ_Analytics.record` JavaScript:
+Para rastrear los eventos que se producen después de cargar una página (como las interacciones del usuario), use la variable `CQ_Analytics.record` Función JavaScript:
 
 * `CQ_Analytics.record({event: 'eventName', values: { valueName: 'VALUE' }, collect: false, options: { obj: this, defaultLinkType: 'X' }, componentPath: '<%=resource.getResourceType()%>'})`
 
-Dónde
+donde
 
 * `events` es una cadena o una matriz de cadenas (para varios eventos).
 
-* `values` contiene todos los valores para rastrear
+* `values` contiene todos los valores que se van a rastrear
 * `collect` es opcional y devuelve una matriz que contiene el evento y el objeto de datos.
-* `options` es opcional y contiene opciones de seguimiento de vínculos como elemento HTML  `obj` y  ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
+* `options` es opcional y contiene opciones de seguimiento de vínculos como el elemento HTML `obj` y ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
 
-* `componentPath` es un atributo necesario y se recomienda establecerlo en  `<%=resource.getResourceType()%>`
+* `componentPath` es un atributo necesario y se recomienda establecerlo en `<%=resource.getResourceType()%>`
 
-Por ejemplo, con la siguiente definición, un usuario que haga clic en el vínculo **Saltar a arriba** provocará que se activen los dos eventos, `jumptop` y `headlineclick`:
+Por ejemplo, con la siguiente definición, un usuario que hace clic en el botón **Saltar a la parte superior** provocará los dos eventos, `jumptop` y `headlineclick`, que se activará:
 
 ```xml
 <h1 data-tracking="{event: 'headline', values: {level:'1'}, componentPath: '<%=resource.getResourceType()%>'}">
@@ -89,30 +88,30 @@ Por ejemplo, con la siguiente definición, un usuario que haga clic en el víncu
 
 ## Acceso a los valores en ContextHub {#accessing-values-in-the-contexthub}
 
-La API JavaScript de ContextHub tiene una función `getStore(name)` que devuelve el almacén especificado, si está disponible. El almacén tiene una función `getItem(key)` que devuelve el valor de la clave especificada, si está disponible. Con la función `getKeys()` es posible recuperar una matriz de claves definidas para el almacén específico.
+La API JavaScript de ContextHub tiene un `getStore(name)` que devuelve el almacén especificado, si está disponible. La tienda tiene un `getItem(key)` que devuelve el valor de la clave especificada, si está disponible. Al usar la variable `getKeys()` es posible recuperar una matriz de claves definidas para el almacén específico.
 
-Puede recibir notificaciones de cambios de valor en un almacén enlazando una función mediante la función `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)`.
+Puede recibir notificaciones de los cambios de valor en un almacén si vincula una función con la función `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` función.
 
-La mejor manera de recibir notificaciones sobre la disponibilidad inicial de ContextHub es utilizar la función `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);`.
+La mejor manera de recibir notificaciones de la disponibilidad inicial de ContextHub es usar la variable `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` función.
 
 **Eventos adicionales para ContextHub:**
 
-Todas las tiendas están listas para:
+Todas las tiendas están listas:
 
 `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);`
 
-Específico de la tienda:
+Específico del almacén:
 
 `ContextHub.getStore(store).eventing.on(ContextHub.Constants.EVENT_STORE_READY, handler, selector, triggerForPastEvents)`
 
 >[!NOTE]
 >
->Consulte también la [Referencia completa de la API de ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Consulte también la [Referencia de la API de ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
 
-## Añadiendo llamadas de retorno de registros {#adding-record-callbacks}
+## Adición de llamadas de registro {#adding-record-callbacks}
 
-Antes y después de que las rellamadas se registren usando las funciones `CQ_Analytics.registerBeforeCallback(callback,rank)` y `CQ_Analytics.registerAfterCallback(callback,rank)`.
+Las retrollamadas antes y después se registran mediante las funciones `CQ_Analytics.registerBeforeCallback(callback,rank)` y `CQ_Analytics.registerAfterCallback(callback,rank)`.
 
-Ambas funciones toman una función como el primer argumento y una clasificación como el segundo argumento, que dicta el orden en que se ejecutan las rellamadas.
+Ambas funciones toman una función como el primer argumento y una clasificación como el segundo argumento, lo que dicta el orden en que se ejecutan las llamadas de retorno.
 
-Si la llamada de retorno devuelve false, no se ejecutarán las llamadas de retorno siguientes en la cadena de ejecución.
+Si la rellamada devuelve el valor false, las rellamadas que siguen a la cadena de ejecución no se ejecutarán.

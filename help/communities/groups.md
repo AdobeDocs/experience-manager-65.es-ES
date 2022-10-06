@@ -176,7 +176,7 @@ La configuración de membresía permite seleccionar una de las tres formas de as
 
    Si se selecciona, el grupo de comunidad es un grupo secreto. Los miembros de la comunidad deben ser invitados explícitamente. Los miembros invitados se introducen en el cuadro de búsqueda. Los miembros se pueden agregar más adelante mediante el [Consolas Miembros y Grupos](/help/communities/members.md) el entorno de creación. El valor predeterminado no está seleccionado.
 
-**MINIATURA**
+**THUMBNAIL**
 
 ![community-group-thumbnail](assets/community-group-thumbnail.png)
 

@@ -851,7 +851,7 @@ Las extensiones de Acrobat Reader DC para Microsoft Office son un complemento qu
     </node>
    ```
 
-   dónde:
+   donde:
 
    `SDKPlatforms` especifica la plataforma que aloja la aplicación cliente. Los valores posibles son:
 

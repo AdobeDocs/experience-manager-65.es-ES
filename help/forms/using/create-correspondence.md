@@ -295,7 +295,7 @@ Antes de publicar cartas o guardar borradores en la instancia de publicación, r
 
 La variable *cq:lastReplicationAction*, *cq:lastreplicado* y *cq:lastReplicatedBy* las propiedades no se transfieren a la instancia de publicación de forma predeterminada. Para poder seguir *cq:lastReplicationAction*, *cq:lastreplicado* y *cq:lastReplicatedBy* propiedades para publicar instancias, deshabilite [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] componente. Para desactivar el componente:
 
-1. En la instancia de autor, abra la consola Componentes de la consola web de Adobe Experience Manager . La dirección URL predeterminada es `http://author-server:port/system/console/components`
+1. En la instancia de autor, abra la consola Componentes de la consola web de Adobe Experience Manager . El URL predeterminado es `http://author-server:port/system/console/components`
 
 1. Busque la variable **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** componente.
 
@@ -305,7 +305,7 @@ La variable *cq:lastReplicationAction*, *cq:lastreplicado* y *cq:lastReplicatedB
 
 Para habilitar la función Guardar como borrador, reemplace la URL existente en [!UICONTROL URL de autor de VersionRestoreManager] con la URL de la instancia de autor. Para reemplazar la dirección URL:
 
-1. En la instancia de publicación, abra [!UICONTROL Configuración de la consola web de Aode Manager]. La dirección URL predeterminada es `https://publish-server:port/system/console/configMgr`
+1. En la instancia de publicación, abra [!UICONTROL Configuración de la consola web de Aode Manager]. El URL predeterminado es `https://publish-server:port/system/console/configMgr`
 
 1. Busque y abra el **[!UICONTROL Gestión de Correspondencia: Crear instancias Configuración de restauración de versiones]** componente.
 

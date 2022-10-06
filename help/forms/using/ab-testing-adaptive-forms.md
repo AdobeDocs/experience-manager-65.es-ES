@@ -12,7 +12,7 @@ docset: aem65
 source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
 source-wordcount: '1544'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -120,7 +120,7 @@ Realice los siguientes pasos para crear una prueba A/B para un formulario adapta
 
    * CSS o estilo
    * Orden de los campos en diferentes paneles o en el mismo panel
-   * Diseño del panel
+   * Diseño de panel
    * Títulos del panel
    * Descripción, etiqueta y texto de ayuda de un campo
    * Secuencias de comandos que no afectan o rompen el flujo de envío
@@ -140,7 +140,7 @@ Puede actualizar las distribuciones de audiencia y experiencia de una prueba A/B
 1. Haga clic en **Más** y, a continuación, seleccione **Editar prueba A/B**. Se abre la página Actualizar prueba A/B .
 
 1. Actualice las distribuciones de audiencia y experiencia según sea necesario.
-1. Haga clic en **Actualizar**.
+1. Haga clic en **Actualizar**.
 
 ## Ver y analizar el informe de prueba A/B {#view-and-analyze-a-b-test-report}
 

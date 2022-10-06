@@ -1,26 +1,25 @@
 ---
 title: Probar un diseño interactivo en We.Retail
-seo-title: Probar un diseño interactivo en We.Retail
+seo-title: Trying out Responsive Layout in We.Retail
 description: Probar un diseño interactivo en We.Retail
-seo-description: nulo
+seo-description: null
 uuid: d9613655-f54e-458f-9175-d07bb868f58b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '247'
 ht-degree: 6%
 
 ---
 
-
 # Probar un diseño interactivo en We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Todas las páginas de We.Retail utilizan el componente Contenedor de diseño para implementar un diseño interactivo. El contenedor de diseño proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. El componente se utiliza junto con el modo **Diseño** en el editor de páginas, que le permite crear y editar el diseño interactivo en función del dispositivo.
+Todas las páginas de We.Retail utilizan el componente Contenedor de diseño para implementar un diseño interactivo. El contenedor de diseño proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. El componente se utiliza junto con la variable **Diseño** en el editor de páginas, que le permite crear y editar su diseño interactivo en función del dispositivo.
 
 ## Probándolo {#trying-it-out}
 
@@ -28,7 +27,7 @@ Todas las páginas de We.Retail utilizan el componente Contenedor de diseño par
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. Cambie a **Preview** para ver la página tal como se representaría para un visitante del sitio web. Desplácese hacia abajo hasta el contenido del artículo *Aloha espirits en Noruega septentrional*.
+1. Cambie a **Vista previa** para ver la página tal como se representaría a un visitante del sitio web. Desplácese hacia abajo hasta el contenido del artículo *Espíritus Aloha en el norte de Noruega*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -48,4 +47,4 @@ Todas las páginas de We.Retail utilizan el componente Contenedor de diseño par
 
 ## Información adicional {#further-information}
 
-Para obtener más información, consulte el documento de creación [Diseño interactivo](/help/sites-authoring/responsive-layout.md) o el documento del administrador [Configuración del contenedor de diseño y el modo de diseño](/help/sites-administering/configuring-responsive-layout.md) para obtener información técnica completa.
+Para obtener más información, consulte el documento de creación [Diseño interactivo](/help/sites-authoring/responsive-layout.md) o el documento de administrador [Configuración del contenedor de diseño y el modo de diseño](/help/sites-administering/configuring-responsive-layout.md) para obtener todos los detalles técnicos.

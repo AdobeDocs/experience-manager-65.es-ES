@@ -1,8 +1,8 @@
 ---
 title: Scaffolding
-seo-title: Andamiaje
+seo-title: Scaffolding
 description: A veces, es posible que necesite crear un conjunto grande de páginas que comparten la misma estructura pero tienen contenido diferente. Con scaffolding, puede crear un formulario (un scaffold) con campos que reflejen la estructura que desee para sus páginas y luego usar este formulario para crear fácilmente páginas según esta estructura.
-seo-description: A veces, es posible que necesite crear un conjunto grande de páginas que comparten la misma estructura pero tienen contenido diferente. Con scaffolding, puede crear un formulario (un scaffold) con campos que reflejen la estructura que desee para sus páginas y luego usar este formulario para crear fácilmente páginas según esta estructura.
+seo-description: Sometimes you may need to create a large set of pages that share the same structure but have differing content. With scaffolding you can create a form (a scaffold) with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure.
 uuid: 5904abc0-b256-4da4-a7d7-3c17ea299648
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1448'
 ht-degree: 81%
 
 ---
 
-
-# Scaffolding{#scaffolding}
+# Andamiaje{#scaffolding}
 
 A veces, es posible que necesite crear un conjunto grande de páginas que comparten la misma estructura pero tienen contenido diferente. A través de la interfaz de AEM estándar, necesitaría crear cada página, arrastrar los componentes correspondientes a la página y rellenar cada uno individualmente.
 
@@ -31,7 +30,7 @@ Con scaffolding, puede crear un formulario (un scaffold) con campos que reflejen
 
 ## Funcionamiento del scaffolding {#how-scaffolding-works}
 
-Los scaffolds se almacenan en la consola **Tools** del administrador del sitio.
+Los scaffolds se almacenan en la variable **Herramientas** consola del administrador del sitio.
 
 * Abra la consola **Herramientas** y haga clic en **Scaffolding de página predeterminada**.
 * Aquí, haga clic en **geometrixx**.
@@ -39,7 +38,7 @@ Los scaffolds se almacenan en la consola **Tools** del administrador del sitio.
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
-El scaffold consiste en un formulario con un campo para cada parte de contenido que conformará la página que se creará y cuatro parámetros importantes a los que se accede a través de las **Propiedades de página** de la página de scaffold.
+El scaffold consiste en un formulario con un campo para cada contenido que formará la página que se creará y cuatro parámetros importantes a los que se accede mediante la variable **Propiedades de página** de la página de scaffold.
 
 ![pageprops](assets/pageprops.png)
 
@@ -57,17 +56,17 @@ El cuerpo del scaffold es el formulario. Cuando un usuario desea crear una pági
 * **Imagen**: Este campo corresponde a un componente de imagen en la página resultante.
 * **Imagen/Avanzado**: **Título**: El título de la imagen.
 * **Imagen/Avanzado**: **Texto alternativo**: El texto alternativo de la imagen.
-* **Imagen/Avanzado**:  **Descripción**: Descripción de la imagen.
+* **Imagen/Avanzado**: **Descripción**: Descripción de la imagen.
 * **Imagen/Avanzado**: **Tamaño**: El tamaño de la imagen.
 * **Etiquetas/Palabras clave**: Los metadatos que se asignarán a esta página. Este campo siempre está presente en cada scaffold.
 
 ### Creación de un scaffold {#creating-a-scaffold}
 
-Para crear un nuevo scaffold, vaya a la consola **Herramientas**, luego **Andamiaje de páginas predeterminado** y cree una nueva página. Estará disponible un solo tipo de plantilla de página, la *Plantilla de andamiaje.*
+Para crear un nuevo scaffold, vaya a la **Herramientas** consola, **Andamiaje de páginas predeterminado** y cree una página nueva. Habrá disponible un tipo de plantilla de página única, la variable *Plantilla de Scaffolding.*
 
-Vaya a **Propiedades de la página** de la nueva página y establezca la *Texto del título*, *Descripción*, *Plantilla de Destinatario* y *Ruta del Destinatario*, como se describe anteriormente.
+Vaya a la **Propiedades de página** de la nueva página y establezca la variable *Texto del título*, *Descripción*, *Plantilla de Target* y *Ruta de destino*, tal como se ha descrito anteriormente.
 
-A continuación, tiene que definir la estructura de la página que este scaffold creará. Para ello, vaya al **[modo de diseño](/help/sites-authoring/page-authoring.md#sidekick)** en la página de scaffold. Aparecerá un vínculo que le permitirá editar el scaffold en el **editor de cuadro de diálogo**.
+A continuación, tiene que definir la estructura de la página que este scaffold creará. Para ello, vaya a **[modo de diseño](/help/sites-authoring/page-authoring.md#sidekick)** en la página scaffold. Aparecerá un vínculo que le permitirá editar el scaffold en el **editor de cuadro de diálogo**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -81,13 +80,13 @@ La definición de cuadro de diálogo para un scaffold funciona igual que la de u
 
 Un repaso al cuadro de diálogo de scaffold **Noticias** de ejemplo en el editor de cuadro de diálogo ayuda a explicar cómo funciona. Entre al modo de diseño en la página de scaffold y haga clic en el vínculo de editor de cuadro de diálogo.
 
-Ahora, haga clic en el campo de diálogo **Cuadro de diálogo > Panel de fichas > Texto > Texto**, de este modo:
+Ahora, haga clic en el campo de diálogo **Cuadro de diálogo > Panel de fichas > Texto > Texto**, así:
 
 ![textedit](assets/textedit.png)
 
 La lista de propiedades de este campo aparecerá en el lado derecho del editor de cuadro de diálogo, de esta manera:
 
-![lista_de_propiedades](assets/list_of_properties.png)
+![list_of_properties](assets/list_of_properties.png)
 
 Observe la propiedad name de este campo. Tiene el valor
 
@@ -102,25 +101,25 @@ Esto define la ubicación del almacenamiento de contenido para el texto que se c
 
 Tenga en cuenta que, en un cuadro de diálogo de componente normal, no tendría que especificar esta información, porque está implícita en el hecho de que el cuadro de diálogo ya está ligado a un componente específico.
 
-Para especificar estos dos elementos de información, se usan campos ocultos. Haga clic en el primer campo oculto **Cuadro de diálogo > Panel de fichas > Texto > Oculto**, de este modo:
+Para especificar estos dos elementos de información, se usan campos ocultos. Haga clic en el primer campo oculto **Cuadro de diálogo > Panel de fichas > Texto > Oculto**, así:
 
 ![oculto](assets/hidden.png)
 
 Las propiedades de este campo oculto son las siguientes:
 
-![hidden_lista_props](assets/hidden_list_props.png)
+![hidden_list_props](assets/hidden_list_props.png)
 
 La propiedad name de este campo oculto es
 
 `./jcr:content/par/text/textIsRich`
 
-Se trata de una propiedad booleana utilizada para interpretar la cadena de texto almacenada en `./jcr:content/par/text/text`.
+Esta es una propiedad booleana que se utiliza para interpretar la cadena de texto almacenada en `./jcr:content/par/text/text`.
 
 Como sabemos que el texto debería interpretarse como texto enriquecido, especificamos la propiedad `value` de este campo como `true`.
 
 >[!CAUTION]
 >
->El editor de cuadro de diálogo permite al usuario cambiar los valores de las propiedades *existentes* en la definición del cuadro de diálogo. Para añadir una propiedad nueva, el usuario debe utilizar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por ejemplo, cuando se añade un nuevo campo oculto a una definición de cuadro de diálogo con el editor de cuadro de diálogo, no tiene una propiedad *value* (es decir, una propiedad con el nombre &quot;value&quot;). Si el campo oculto en cuestión requiere que se establezca una propiedad *value* predeterminada, entonces esta propiedad debe agregarse manualmente con una de las herramientas de CRX. El valor no puede agregarse con el editor de cuadro de diálogo mismo. Sin embargo, una vez que la propiedad está presente, su valor puede editarse con el editor de cuadro de diálogo.
+>El editor de cuadro de diálogo permite al usuario cambiar los valores de *existente* propiedades en la definición del cuadro de diálogo. Para añadir una propiedad nueva, el usuario debe utilizar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Por ejemplo, cuando se añade un nuevo campo oculto a una definición de cuadro de diálogo con el editor de cuadro de diálogo, no tiene una propiedad *value* (es decir, una propiedad con el nombre &quot;value&quot;). Si el campo oculto en cuestión requiere que se establezca una propiedad *value* predeterminada, entonces esta propiedad debe agregarse manualmente con una de las herramientas de CRX. El valor no puede agregarse con el editor de cuadro de diálogo mismo. Sin embargo, una vez que la propiedad está presente, su valor puede editarse con el editor de cuadro de diálogo.
 
 El segundo campo oculto puede verse al hacer clic en él de esta manera:
 
@@ -128,7 +127,7 @@ El segundo campo oculto puede verse al hacer clic en él de esta manera:
 
 Las propiedades de este campo oculto son las siguientes:
 
-![hidden_lista_props2](assets/hidden_list_props2.png)
+![hidden_list_props2](assets/hidden_list_props2.png)
 
 La propiedad name de este campo oculto es
 
@@ -138,7 +137,7 @@ y el valor fijo especificado para esta propiedad es
 
 `foundation/components/textimage`
 
-Esto especifica que el componente que se usará para procesar el contenido de texto de este párrafo es el componente *Imagen de texto*. Utilizando el booleano `isRichText` especificado en el otro campo oculto, el componente puede procesar la cadena de texto real almacenada en `./jcr:content/par/text/text` de la manera deseada.
+Esto especifica que el componente que se usará para procesar el contenido de texto de este párrafo es el componente *Imagen de texto*. Al usar con `isRichText` booleano especificado en el otro campo oculto, el componente puede procesar la cadena de texto real almacenada en `./jcr:content/par/text/text` de la forma deseada.
 
 ### Scaffolding con herencia de MSM {#scaffolding-with-msm-inheritance}
 
@@ -151,7 +150,7 @@ Cuando se abre una página en modo **Scaffolding** (mediante el icono de la part
 
 Esto muestra que el componente no se puede editar, hasta que se cancele la herencia.
 
-![chlimage_1](assets/chlimage_1.jpeg)
+![imagen_1](assets/chlimage_1.jpeg)
 
 >[!NOTE]
 >
@@ -162,10 +161,10 @@ Hacer clic en el símbolo de bloqueo o en el icono de imagen le permite anular l
 * El símbolo cambiará a un candado abierto.
 * Una vez desbloqueado, puede editar el contenido.
 
-![chlimage_1-1](assets/chlimage_1-1.jpeg)
+![Chlimage_1-1](assets/chlimage_1-1.jpeg)
 
 Para restaurar la herencia tras el desbloqueo, haga clic en el símbolo del candado desbloqueado: se perderán las modificaciones que haya realizado.
 
 >[!NOTE]
 >
->Si la herencia se cancela a nivel de página (desde la ficha Live Copy de Propiedades de página), todos los componentes se podrán editar en el modo **Andamiaje** (se mostrarán en estado desbloqueado).
+>Si la herencia se cancela en el nivel de página (en la pestaña Copia publicada de Propiedades de página), todos los componentes se podrán editar en **Andamiaje** (se mostrarán en estado desbloqueado).

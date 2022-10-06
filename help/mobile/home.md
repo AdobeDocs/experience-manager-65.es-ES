@@ -33,7 +33,7 @@ Aproveche AEM asistencia para crear y administrar contenido para aplicaciones m�
 | [Guía de administración](/help/sites-administering/home.md) | Aprenda a administrar AEM |
 | [Guía de creación](/help/sites-authoring/home.md) | Esta guía explica los conceptos de creación en AEM. |
 | [Guía de creación de IU clásica](/help/sites-classic-ui-authoring/home.md) | En esta guía se explican los conceptos de creación en AEM en la interfaz de usuario clásica. |
-| [Guía del usuario de Screens](https://docs.adobe.com/content/help/es-ES/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de señalización digital para publicar experiencias digitales dinámicas e interactivas. |
+| [Guía del usuario de Screens](https://docs.adobe.com/content/help/es/experience-manager-screens/user-guide/aem-screens-introduction.html) | Obtenga información sobre la solución de señalización digital para publicar experiencias digitales dinámicas e interactivas. |
 | [Guía del usuario sobre implementación](/help/sites-deploying/home.md) | Esta guía le muestra los conceptos básicos de AEM. |
 | [Guía del usuario sobre desarrollo](/help/sites-developing/home.md) | Aprenda a crear la instancia de AEM. |
 | [Guía del usuario de administración](/help/managing/home.md) | En esta guía se describe cómo administrar correctamente un proyecto de AEM. |
@@ -47,7 +47,7 @@ Aproveche AEM asistencia para crear y administrar contenido para aplicaciones m�
 * [Guía del usuario de Dispatcher](https://docs.adobe.com/content/help/es-ES/experience-manager-dispatcher/using/dispatcher.html)
 * [Guía del usuario de HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
 * [Guía del usuario de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
-* [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)
+* [Foro de la comunidad de AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

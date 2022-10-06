@@ -1,8 +1,8 @@
 ---
 title: Configuración de MySQL para DSRP
-seo-title: Configuración de MySQL para DSRP
+seo-title: MySQL Configuration for DSRP
 description: Cómo conectar con el servidor MySQL y establecer la base de datos UGC
-seo-description: Cómo conectar con el servidor MySQL y establecer la base de datos UGC
+seo-description: How to connect to the MySQL server and establish the UGC database
 uuid: c058cc88-7ca2-4aed-9a36-b080e603f886
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 1%
+source-wordcount: '730'
+ht-degree: 2%
 
 ---
 
@@ -24,13 +24,13 @@ MySQL es una base de datos relacional que puede utilizarse para almacenar conten
 
 Estas instrucciones describen cómo conectar con el servidor MySQL y establecer la base de datos UGC.
 
-## Requisitos {#requirements}
+## Requisitos  {#requirements}
 
 * [Paquete de funciones de Últimas comunidades](deploy-communities.md#latestfeaturepack)
 * [Controlador JDBC para MySQL](deploy-communities.md#jdbc-driver-for-mysql)
 * Una base de datos relacional:
 
-   * [MySQL ](https://dev.mysql.com/downloads/mysql/) serverCommunity Server versión 5.6 o posterior
+   * [Servidor MySQL](https://dev.mysql.com/downloads/mysql/) Servidor de comunidad versión 5.6 o posterior
 
       * Puede ejecutarse en el mismo host que AEM o ejecutar de forma remota
    * [Área de trabajo MySQL](https://dev.mysql.com/downloads/tools/workbench/)
@@ -38,7 +38,7 @@ Estas instrucciones describen cómo conectar con el servidor MySQL y establecer 
 
 ## Instalación de MySQL {#installing-mysql}
 
-[](https://dev.mysql.com/downloads/mysql/) MySQL debe descargarse e instalarse siguiendo las instrucciones para el sistema operativo de destino.
+[MySQL](https://dev.mysql.com/downloads/mysql/) debe descargarse e instalarse siguiendo las instrucciones del sistema operativo de destino.
 
 ### Nombres de tabla en minúsculas {#lower-case-table-names}
 
@@ -47,7 +47,7 @@ Como SQL no distingue entre mayúsculas y minúsculas, en los sistemas operativo
 Por ejemplo, para especificar todos los nombres de tabla en minúsculas en un sistema operativo Linux:
 
 * Editar archivo `/etc/my.cnf`
-* En la sección `[mysqld]`, agregue la línea siguiente:
+* En el `[mysqld]` , agregue la línea siguiente:
 
    `lower_case_table_names = 1`
 
@@ -62,11 +62,11 @@ Cambie MySQL para que tenga UTF8 como conjunto de caracteres:
 Cambie la base de datos MySQL a UTF8 de forma predeterminada:
 
 * Editar archivo `/etc/my.cnf`
-* En la sección `[client]`, agregue la línea siguiente:
+* En el `[client]` , agregue la línea siguiente:
 
    `default-character-set=utf8`
 
-* En la sección `[mysqld]`, agregue la línea siguiente:
+* En el `[mysqld]` , agregue la línea siguiente:
 
    `character-set-server=utf8`
 
@@ -84,7 +84,7 @@ Cuando MySQL Workbench se inicia por primera vez, a menos que ya se esté utiliz
 
 ### Nueva configuración de conexión {#new-connection-settings}
 
-1. Seleccione el icono `+` a la derecha de `MySQL Connections`.
+1. Seleccione el `+` a la derecha de `MySQL Connections`.
 1. En el cuadro de diálogo `Setup New Connection`, introduzca los valores adecuados para su plataforma
 
    Para fines de demostración, con el autor AEM instancia y MySQL en el mismo servidor:
@@ -96,12 +96,12 @@ Cuando MySQL Workbench se inicia por primera vez, a menos que ya se esté utiliz
    * Contraseña: `no password by default`
    * Esquema predeterminado: `leave blank`
 
-1. Seleccione `Test Connection` para verificar la conexión con el servicio MySQL en ejecución
+1. Select `Test Connection` para verificar la conexión con el servicio MySQL en ejecución
 
 **Notas**:
 
 * El puerto predeterminado es `3306`
-* El nombre de conexión elegido se introduce como nombre de fuente de datos en la configuración [JDBC OSGi](#configurejdbcconnections)
+* El nombre de conexión elegido se introduce como nombre de origen de datos en [Configuración de JDBC OSGi](#configurejdbcconnections)
 
 #### Nueva conexión de comunidades {#new-communities-connection}
 
@@ -128,8 +128,8 @@ La secuencia de comandos SQL se obtiene del repositorio de AEM:
 
 Un método para descargar el esquema es:
 
-* Seleccione el nodo `jcr:content` para el archivo sql
-* Observe que el valor de la propiedad `jcr:data` es un vínculo de vista
+* Seleccione el `jcr:content` nodo para el archivo sql
+* Observe el valor de la variable `jcr:data` es un vínculo de vista
 
 * Seleccione el vínculo de vista para guardar los datos en un archivo local
 
@@ -137,34 +137,34 @@ Un método para descargar el esquema es:
 
 Siga los pasos a continuación para instalar la base de datos. El nombre predeterminado de la base de datos es `communities`.
 
-Si el nombre de la base de datos se cambia en el script, asegúrese de cambiarlo también en la [configuración JDBC](#configurejdbcconnections).
+Si el nombre de la base de datos se cambia en la secuencia de comandos, asegúrese de cambiarlo también en la [Configuración JDBC](#configurejdbcconnections).
 
 #### Paso 1: abrir archivo SQL {#step-open-sql-file}
 
 En MySQL Workbench
 
-* En el menú desplegable Archivo, seleccione la opción **[!UICONTROL Abrir script SQL]**
-* Seleccione el script `init_schema.sql` descargado
+* En el menú desplegable Archivo , seleccione la opción **[!UICONTROL Abrir script SQL]** option
+* Seleccione el `init_schema.sql` script
 
 ![select-sql-script](assets/select-sql-script.png)
 
 #### Paso 2: ejecutar script SQL {#step-execute-sql-script}
 
-En la ventana Workbench del archivo abierto en el paso 1, seleccione `lightening (flash) icon` para ejecutar la secuencia de comandos.
+En la ventana Workbench del archivo abierto en el paso 1, seleccione la opción `lightening (flash) icon` para ejecutar la secuencia de comandos.
 
-En la siguiente imagen, el archivo `init_schema.sql` está listo para ejecutarse:
+En la siguiente imagen, la variable `init_schema.sql` está listo para ejecutarse:
 
 ![execute-sql-script](assets/execute-sql-script.png)
 
 #### Actualizar {#refresh}
 
-Una vez ejecutado el script, es necesario actualizar la sección `SCHEMAS` del `Navigator` para ver la nueva base de datos. Utilice el icono de actualización a la derecha de &quot;SCHEMAS&quot;:
+Una vez ejecutado el script, es necesario actualizar el `SCHEMAS` de la sección `Navigator` para ver la nueva base de datos. Utilice el icono de actualización a la derecha de &quot;SCHEMAS&quot;:
 
 ![refresh-schema](assets/refresh-schema.png)
 
 ## Configurar la conexión JDBC {#configure-jdbc-connection}
 
-La configuración OSGi para **Day Commons JDBC Connections Pool** configura el controlador JDBC de MySQL.
+La configuración OSGi para **Agrupamiento de conexiones JDBC Day Commons** configura el controlador JDBC de MySQL.
 
 Todas las instancias de AEM de publicación y creación deben apuntar al mismo servidor MySQL.
 
@@ -176,19 +176,19 @@ Cuando MySQL se ejecuta en un servidor diferente de AEM, el nombre de host del s
 
    * Por ejemplo, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
-* Busque el `Day Commons JDBC Connections Pool`
-* Seleccione el icono `+` para crear una nueva configuración de conexión.
+* Busque la variable `Day Commons JDBC Connections Pool`
+* Seleccione el `+` para crear una nueva configuración de conexión.
 
    ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 
 * Introduzca los siguientes valores:
 
-   * **[!UICONTROL Clase]** de controlador JDBC:  `com.mysql.jdbc.Driver`
-   * **[!UICONTROL URI]** de conexión JDBC:  `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
+   * **[!UICONTROL Clase de controlador JDBC]**: `com.mysql.jdbc.Driver`
+   * **[!UICONTROL URI de conexión JDBC]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Especifique el servidor en lugar de localhost si el servidor MySQL no es lo mismo que &quot;this&quot; AEM server *communities* es el nombre predeterminado de la base de datos (esquema).
+      Especifique el servidor en lugar de localhost si el servidor MySQL no es lo mismo que &quot;este&quot; AEM servidor *comunidades* es el nombre predeterminado de base de datos (esquema).
 
-   * **[!UICONTROL Nombre de usuario]**:  `root`
+   * **[!UICONTROL Nombre de usuario]**: `root`
 
       O introduzca el nombre de usuario configurado para el servidor MySQL, si no es &quot;root&quot;.
 
@@ -198,6 +198,6 @@ Cuando MySQL se ejecuta en un servidor diferente de AEM, el nombre de host del s
 
       de lo contrario, introduzca la contraseña configurada para el nombre de usuario de MySQL.
 
-   * **[!UICONTROL Nombre]** de la fuente de datos: nombre introducido para la conexión  [MySQL](#new-connection-settings), por ejemplo, &quot;comunidades&quot;.
+   * **[!UICONTROL Nombre de la fuente de datos]**: nombre introducido para la variable [Conexión MySQL](#new-connection-settings), por ejemplo, &quot;comunidades&quot;.
 
 * Seleccione **[!UICONTROL Guardar]**

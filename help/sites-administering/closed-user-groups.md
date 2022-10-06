@@ -95,7 +95,7 @@ El efecto de una política CUG única en la evaluación de los permisos puede re
 * Sin embargo, no afecta a los hermanos ni a los antepasados del nodo controlado de acceso;
 * La herencia de un CUG determinado se detiene en un CUG anidado.
 
-#### Prácticas recomendadas   {#best-practices}
+#### Prácticas recomendadas {#best-practices}
 
 Se deben tener en cuenta las siguientes prácticas recomendadas para definir el acceso restringido de lectura a través de CUG:
 
@@ -173,7 +173,7 @@ La variable `LoginPathProvider` tal como lo implementa el nuevo soporte de requi
 >
 >La evaluación solo se realiza para solicitudes asociadas con recursos que se encuentran en las rutas configuradas admitidas. Para cualquier otra solicitud se evaluarán las formas alternativas de determinar la ruta de inicio de sesión.
 
-#### Prácticas recomendadas   {#best-practices-1}
+#### Prácticas recomendadas {#best-practices-1}
 
 Se deben tener en cuenta las siguientes prácticas recomendadas al definir los requisitos de autenticación:
 

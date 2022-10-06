@@ -1,7 +1,7 @@
 ---
-title: Aplicar firmas electrónicas a un formulario utilizando firmas de anotaciones
+title: Aplicar firmas electrónicas a un formulario utilizando firmas manuscritas
 seo-title: Apply electronic signatures to a form using scribble signatures
-description: Firma de formularios mediante anotaciones
+description: Firma de formularios mediante firmas manuscritas
 seo-description: Signing forms using scribble
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,63 +13,63 @@ exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
 source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 0%
+ht-degree: 60%
 
 ---
 
-# Aplicar firmas electrónicas a un formulario utilizando firmas de anotaciones{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# Aplicar firmas electrónicas a un formulario utilizando firmas manuscritas{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 Puede usar la variable **Firma manuscrita** y **Paso de firma** componente para dibujar la firma (Scribble) en un formulario adaptable. El componente Paso de firma muestra una versión PDF del formulario adaptable. Se necesita una opción Documento de registro activada o formularios adaptables basados en plantillas de formulario para utilizar el componente de paso Firma.
 
-![Cuadro de diálogo de signo de almohadilla](/help/forms/using/assets/scribble-signature.png)
+![Cuadro de diálogo Firma manuscrita](/help/forms/using/assets/scribble-signature.png)
 
-## Varias opciones disponibles en la ventana de firma
+## Las diferentes opciones disponibles en la ventana Firma
 
-* **A:** Haga clic en el **Pincel de pintura** para dibujar su firma en lienzo.
-* **B:** Haga clic en el **Borrar** para borrar la firma en el lienzo.
-* **C:** Haga clic en el **Geolocalización** para añadir geolocalización junto con la firma.
-* **D:** Haga clic en el **Teclado** para escribir su nombre en lienzo.
+* **A:** haga clic en el icono **Pincel** para dibujar su firma en lienzo.
+* **B:** haga clic en el icono **Borrar** para borrar la firma en el lienzo.
+* **C:** haga clic en el icono **Geolocalización** para añadir geolocalización junto con la firma.
+* **D:** haga clic en el icono **Teclado** para escribir su nombre en lienzo.
 
-Una vez que pulse Listo![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) en la ventana Scribble signature , no puede editar la firma. Si desea editar la firma, debe ignorar la firma actual y volver a firmarla con la opción Pincel/Teclado anterior.
+Una vez que pulse Listo![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) en la ventana Scribble signature , no puede editar la firma. Si desea editar la firma, ignore la firma actual y vuelva a firmar el formulario con las opciones Pincel/Teclado mencionadas anteriormente.
 
 Puede pulsar el botón **Configurar** ![configure](assets/configure.png) para establecer la proporción de aspecto del lienzo de firma manuscrita.
-* Cuando la proporción de aspecto del lienzo de firma de Scribble es menor que 1, la información de geolocalización se agrega en la parte inferior del lienzo de firma Scribble.
+* Cuando la relación de aspecto del lienzo de firma manuscrita es menor que 1, la información de geolocalización se agrega en la parte inferior del lienzo de firma manuscrita.
 
-* Cuando la proporción de aspecto del lienzo de firma de Scribble es mayor que 1, la información de geolocalización se agrega al lado derecho del lienzo de firma Scribble.
+* Cuando la proporción de aspecto del lienzo de firma manuscrita es mayor que 1, la información de geolocalización se agrega en el lado derecho del lienzo de firma manuscrita.
 
-![firma de anotaciones - inferior](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
+![firma a-mano-alzada-inferior](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
 
 
 >[!NOTE]
 >
->Las firmas siempre se guardan en formato PNG.
+>Las firmas se guardan siempre en formato PNG.
 
 ## Configuración de un formulario adaptable para utilizar Scribble Signature {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Crear un documento de registro activado o un formulario adaptable basado en una plantilla de formulario. Para obtener información paso a paso, consulte [Creación de un formulario adaptable](../../forms/using/creating-adaptive-form.md).
 1. Arrastre y suelte la **Firma manuscrita** del navegador de componentes al formulario adaptable.
-1. Toque . **Configurar** ![configure](assets/configure.png) icono. Abre el navegador de propiedades y muestra las propiedades del componente Firma de anotaciones. Configure las propiedades del componente Scribble Signature.
+1. Pulse el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del componente Firma manuscrita. Configure las propiedades del componente Firma manuscrita.
 1. Arrastre y suelte el componente Paso de firma desde el navegador de componentes al formulario adaptable.
 
    >[!NOTE]
    >
-   >El componente Paso de firma ocupa el ancho completo disponible para el formulario. Se recomienda no tener ningún otro componente en la sección que contenga el componente Paso de firma.
+   >El componente Paso de firma ocupa el ancho completo disponible en el formulario. Se recomienda no colocar ningún otro componente en la sección que contiene el componente Paso de firma.
 
-1. En el navegador de contenido, pulse **Contenedor de formulario** y pulse el botón **Configurar** ![](/help/forms/using/assets/configure.png) icono. Abre el explorador de propiedades y muestra las propiedades del contenedor de formularios adaptables. Vaya a **Contenedor de formulario adaptable** > **Firma electrónica** y desmarque **Habilitar Adobe Sign** . Puntee en Listo ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios.
+1. En el Explorador de contenido, pulse **Contenedor de formulario** y pulse el icono **Configurar** ![](/help/forms/using/assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del contenedor de formularios adaptables. Vaya a **Contenedor de formulario adaptable** > **Firma electrónica** y deseleccione la opción **Habilitar Adobe Sign**. Puntee en Listo ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios.
 
    >[!NOTE]
    >
    >Cuando se añade un componente Paso de firma a un formulario adaptable, la opción Habilitar Adobe Sign se selecciona automáticamente.
 
-1. Toque . **Configurar** ![configure](assets/configure.png) icono. Abre el navegador de propiedades y muestra las propiedades del paso Firma. Configure las siguientes propiedades:
+1. Pulse el icono **Configurar** ![configurar](assets/configure.png). Se abrirá el explorador de propiedades, donde verá las propiedades del Paso de firma. Configure las siguientes propiedades:
 
-   * **Nombre del elemento**: Especifique el nombre del componente.
+   * **Nombre del elemento**: especifique el nombre del componente.
 
-   * **Título:** Especifique un título único del componente.
-   * **Mensaje de plantilla:** Especifique el mensaje que se mostrará mientras se carga el PDF de firma. Los servicios de Adobe Sign tardan algún tiempo en preparar y cargar el PDF de firma.
-   * **Servicio de firma:** Seleccione el **Firma manuscrita** .
+   * **Título:** especifique un título único para el componente.
+   * **Mensaje de plantilla:** especifique el mensaje que se mostrará mientras se carga el PDF de firma. Los servicios de Adobe Sign tardan algún tiempo en preparar y cargar el PDF de firma.
+   * **Servicio de firma:** seleccione la opción **Firma manuscrita**.
 
-   * **Clase CSS**: Especifique la clase CSS de la biblioteca de cliente, si la hay. Se recomienda utilizar [temáticas](../../forms/using/themes.md) y [estilos en línea](../../forms/using/inline-style-adaptive-forms.md) en lugar de la clase CSS.
+   * **Clase CSS**: especifique la clase CSS de la biblioteca de cliente, si la hay. Se recomienda utilizar [temáticas](../../forms/using/themes.md) y [estilos en línea](../../forms/using/inline-style-adaptive-forms.md) en lugar de la clase CSS.
 
    Puntee en Listo ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar los cambios. La firma se ha configurado correctamente.
 
@@ -79,14 +79,14 @@ Puede pulsar el botón **Configurar** ![configure](assets/configure.png) para es
 
 1. Después de rellenar un formulario adaptable y llegar a la página Paso de firma, se muestra la pantalla de firma.
 
-   ![Cuadro de diálogo de signo de almohadilla](/help/forms/using/assets/esignscribblesign.jpg)
+   ![Cuadro de diálogo Firma manuscrita](/help/forms/using/assets/esignscribblesign.jpg)
 
-1. Haga clic en **[!UICONTROL Sign]**. Aparecerá el cuadro de diálogo del signo de garabateo. Firme el formulario y haga clic en Finalizado ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar la firma.
+1. Haga clic en **[!UICONTROL Firmar]**. Aparecerá el cuadro de diálogo Firma manuscrita. Firme el formulario y haga clic en Finalizado ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para guardar la firma.
 
-   ![Cuadro de diálogo de signo de almohadilla](/help/forms/using/assets/scribblewidget.png)
+   ![Cuadro de diálogo Firma manuscrita](/help/forms/using/assets/scribblewidget.png)
 
 1. Haga clic en Completar para finalizar el proceso de firma.
 
    ![Completar el proceso de firma](/help/forms/using/assets/scribblecomplete.jpg)
 
-Las firmas se agregan al formulario y el control de formulario se mueve al panel siguiente.
+Las firmas se agregan al formulario y el control de formulario pasa al siguiente panel.

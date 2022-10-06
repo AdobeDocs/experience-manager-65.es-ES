@@ -13,7 +13,7 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
 workflow-type: tm+mt
 source-wordcount: '2116'
-ht-degree: 2%
+ht-degree: 12%
 
 ---
 
@@ -73,7 +73,7 @@ Para configurar la dirección de correo electrónico, agregue una `sling:OsgiCon
 
 Utilice el siguiente procedimiento para definir el nodo en las carpetas de origen del paquete de contenido:
 
-1. En su `jcr_root/apps/*app_name*/config folder`, cree un archivo con el nombre `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
+1. En `jcr_root/apps/*app_name*/config folder`, cree un archivo con el nombre `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
 
 1. Añada el siguiente XML para representar el nodo :
 
@@ -391,7 +391,7 @@ Finalmente, confirme la configuración de:
 ### Microsoft Outlook {#microsoft-outlook}
 
 1. Vaya a [https://portal.azure.com/](https://portal.azure.com/) e inicie sesión.
-1. Buscar **Azure Active Directory** en la barra de búsqueda y haga clic en el resultado. También puede navegar directamente a [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+1. Busque **Azure Active Directory** en la barra de búsqueda y haga clic en el resultado. También puede navegar directamente a [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Haga clic en **Registro de aplicaciones** - **Nuevo registro**
 
    ![](assets/oauth-outlook1.png)
@@ -410,13 +410,13 @@ Finalmente, confirme la configuración de:
 1. Repita lo anterior para cada instancia de publicación
 1. Configure las opciones según sus necesidades
 1. A continuación, vaya a **Certificados y secretos**, haga clic en **Nuevo secreto de cliente** y siga los pasos que aparecen en la pantalla para crear un secreto. Asegúrese de tomar nota de este secreto para utilizarlo posteriormente
-1. Press **Información general** en el panel izquierdo y copie los valores de **ID de aplicación (cliente)** y **ID de directorio (inquilino)** para uso posterior
+1. Pulse **Información general** en el panel izquierdo y copie los valores de **ID de aplicación (cliente)** y **ID de directorio (inquilino)** para su posterior uso
 
 Para recapitular, necesitará la siguiente información para configurar OAuth2 para el servicio Mailer en el lado AEM:
 
-* La URL de autenticación, que se construirá con el ID del inquilino. Tendrá este formulario: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* La URL del token, que se construirá con el ID del inquilino. Tendrá este formulario: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* La URL de actualización, que se construirá con el ID del inquilino. Tendrá este formulario: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* La URL de autenticación, que se construirá con el ID del inquilino. Tendrá esta forma: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* La URL del token, que se construirá con el ID del inquilino. Tendrá esta forma: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* La URL de actualización, que se construirá con el ID del inquilino. Tendrá esta forma: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * El ID de cliente
 * El secreto del cliente
 
@@ -437,7 +437,7 @@ A continuación, integre la configuración de OAuth2 con AEM:
 1. Complete la información requerida de la siguiente manera:
    * Complete la Url de autorización, la Url del token y la URL del token de actualización mediante la construcción de los mismos tal y como se describe en [final del presente procedimiento](#microsoft-outlook)
    * ID de cliente y Secreto de cliente: configure estos campos con los valores que recuperó como se describe anteriormente.
-   * Agregue los siguientes ámbitos a la configuración:
+   * Añada los siguientes ámbitos a la configuración:
       * openid
       * offline_access
       * `https://outlook.office365.com/Mail.Send`

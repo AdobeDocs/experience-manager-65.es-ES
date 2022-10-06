@@ -1,10 +1,11 @@
 ---
 title: Información sobre conceptos básicos de creación
 description: Obtenga información sobre los conceptos y la mecánica de creación de contenido para su CMS sin encabezado mediante fragmentos de contenido.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1693'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
@@ -187,7 +188,7 @@ Confirme las actualizaciones con: **Guardar** o **Guardar y cerrar**.
 
 OK, esta sección puede parecer un poco extraña, pero una vez que abra el Editor de fragmentos de contenido y empiece a explorar, verá varias opciones que (probablemente) no se aplican a su recorrido sin encabezado como Autor de contenido. Así que esto es solo un rápido análisis de lo que deberían ser capaces de ignorar en un contexto sin objetivos:
 
-* **Modelos de fragmento de contenido**
+* **Modelos de fragmentos de contenido**
 
    Verá el nombre del modelo de fragmento de contenido en la parte superior del editor, directamente debajo del nombre del fragmento. También se trata de un vínculo que le lleva al editor de modelos.
 Los modelos de fragmento de contenido son vitales para los fragmentos de contenido, ya que definen la estructura que utiliza. Sin embargo, crearlos y editarlos es (normalmente) responsabilidad de otra persona, el arquitecto de contenido.
@@ -240,7 +241,7 @@ Ahora que ha aprendido lo básico, el siguiente paso es [Obtenga información so
 
    * [Visualización y selección de los recursos](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [Selector de raíl](/help/sites-authoring/basic-handling.md#rail-selector)
+   * [Selector de carril](/help/sites-authoring/basic-handling.md#rail-selector)
 
 * [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
 
@@ -263,6 +264,6 @@ Ahora que ha aprendido lo básico, el siguiente paso es [Obtenga información so
 * Guías de introducción
    * [Creación de una carpeta de recursos Guía de inicio rápido sin encabezado](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* [recorrido de arquitecto de contenido sin encabezado de AEM](/help/journey-headless/architect/overview.md)
+* [Recorrido de arquitecto de contenido de AEM Headless](/help/journey-headless/architect/overview.md)
 
 * [recorrido de traducción AEM sin encabezado](/help/journey-headless/translation/overview.md)

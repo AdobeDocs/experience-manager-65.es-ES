@@ -1,8 +1,8 @@
 ---
 title: Guía rápida para la creación de páginas
-seo-title: Guía rápida para la creación de páginas
+seo-title: Quick Guide to Authoring Pages
 description: Guía rápida y de alto nivel sobre las acciones clave para la creación de contenido de páginas
-seo-description: Guía rápida y de alto nivel sobre las acciones clave para la creación de contenido de páginas
+seo-description: A quick, high-level guide to the key actions of authoring page content
 uuid: ef7ab691-f80d-4eeb-9f4a-afbf1bc83669
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
-translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1573'
 ht-degree: 97%
 
 ---
-
 
 # Guía rápida para la creación de páginas{#quick-guide-to-authoring-pages}
 
@@ -64,9 +63,7 @@ Antes de proporcionar la descripción general de los detalles, a continuación s
 >
 >* [Métodos abreviados de teclado al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
-
 >
-
 
 
 ### Encontrar su página {#finding-your-page}
@@ -200,7 +197,7 @@ Para editar la página:
    >
    >Para navegar mediante los vínculos en el contenido debe utilizar el [modo de vista previa](/help/sites-authoring/editing-content.md#preview-mode).
 
-### Editar las Propiedades de la página    {#editing-the-page-properties}
+### Editar las Propiedades de la página   {#editing-the-page-properties}
 
 Existen dos métodos (principales) para [editar las propiedades de la página](/help/sites-authoring/editing-page-properties.md):
 
@@ -253,7 +250,7 @@ Existen dos métodos principales para [publicar su página](/help/sites-authorin
 
    Consulte [Publicación de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-pages) para obtener más información.
 
-### Mover, copiar y pegar o eliminar su página    {#move-copy-and-paste-or-delete-your-page}
+### Mover, copiar y pegar o eliminar su página   {#move-copy-and-paste-or-delete-your-page}
 
 Todas estas acciones pueden activarse del siguiente modo:
 
@@ -278,7 +275,7 @@ Todas estas acciones pueden activarse del siguiente modo:
    >
    >La opción Eliminar no se encuentra disponible como Acción rápida.
 
-### Bloquear y desbloquear su página {#locking-your-page-then-unlocking}
+### Bloquear y desbloquear su página  {#locking-your-page-then-unlocking}
 
 [Bloquear una página](/help/sites-authoring/editing-content.md#locking-a-page) impide que otros autores trabajen en ella al mismo tiempo que usted. El icono/botón Bloquear (y Desbloquear) se encuentra en:
 
@@ -294,7 +291,7 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
 [El acceso rápido a las referencias](/help/sites-authoring/author-environment-tools.md#references) hasta/desde una página está disponible en la Barra de referencias.
 
-1. Seleccione **Referencias** mediante el icono de la barra de herramientas (antes o después de [ seleccionar su página](#selecting-your-page-for-further-action)): 
+1. Seleccione **Referencias** mediante el icono de la barra de herramientas (antes o después de [seleccionar su página](#selecting-your-page-for-further-action)): 
 
    ![screen_shot_2018-03-21at161210](assets/screen_shot_2018-03-21at161210.png)
 
@@ -304,7 +301,7 @@ Por ejemplo, el icono de bloqueo presenta el siguiente aspecto:
 
 1. Haga clic en el tipo de referencia requerido para mostrar más detalles y (cuando sea adecuado) poder llevar a cabo otras acciones.
 
-### Crear una versión de su página    {#creating-a-version-of-your-page}
+### Crear una versión de su página   {#creating-a-version-of-your-page}
 
 Para crear una [versión](/help/sites-authoring/working-with-page-versions.md) de la página:
 
@@ -326,7 +323,7 @@ Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan vers
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
-   Si ya se ha guardado una versión de su página, se indicará en la línea de tiempo.   
+   Si ya se ha guardado una versión de su página, se indicará en la línea de tiempo. 
 
 1. Haga clic en la versión que quiere restablecer y así se revelarán botones de acción adicionales:
 

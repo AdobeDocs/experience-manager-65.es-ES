@@ -1,43 +1,42 @@
 ---
-title: Visualización de datos adicionales en la lista ToDo
-seo-title: Visualización de datos adicionales en la lista ToDo
-description: Cómo personalizar la visualización del espacio de trabajo de la lista de tareas pendientes de LiveCycle AEM Forms para mostrar más información además del valor predeterminado.
-seo-description: Cómo personalizar la visualización del espacio de trabajo de la lista de tareas pendientes de LiveCycle AEM Forms para mostrar más información además del valor predeterminado.
+title: Visualización de datos adicionales en la lista de tareas pendientes
+seo-title: Displaying additional data in ToDo list
+description: Personalización de la visualización de la lista de tareas pendientes del espacio de trabajo de AEM Forms de LiveCycle para mostrar más información además del predeterminado.
+seo-description: How-to customize the display of the To-do list of LiveCycle AEM Forms workspace to show more information besides the default.
 uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: f8b84f13-02d3-4787-95e1-25fd684e6d3b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 0%
+source-wordcount: '282'
+ht-degree: 1%
 
 ---
 
+# Visualización de datos adicionales en la lista de tareas pendientes{#displaying-additional-data-in-todo-list}
 
-# Visualización de datos adicionales en la lista ToDo{#displaying-additional-data-in-todo-list}
+De forma predeterminada, la lista Tareas pendientes de AEM Forms workspace muestra el nombre y la descripción de la tarea. Sin embargo, puede agregar otra información, como fecha de creación o fecha límite. También puede añadir iconos y cambiar el estilo de la pantalla.
 
-De forma predeterminada, la lista Tareas pendientes del área de trabajo de AEM Forms muestra el nombre y la descripción para mostrar de la tarea. Sin embargo, puede agregar otra información, como fecha de creación o fecha límite. También puede agregar iconos y cambiar el estilo de la pantalla.
+![Una mirada a la pestaña HTML Workspace To-do que muestra la configuración predeterminada](assets/html-todo-list.png)
 
-![Una mirada a la ficha Tareas pendientes de HTML Workspace que muestra la configuración predeterminada](assets/html-todo-list.png)
+Este artículo detalla los pasos para agregar información para mostrar para cada tarea en la lista Tareas pendientes.
 
-En este artículo se detallan los pasos para agregar información y mostrarla para cada tarea en la lista ToDo.
+## Qué se puede añadir {#what-can-be-added}
 
-## Qué se puede agregar {#what-can-be-added}
+Puede añadir la información disponible en `task.json` enviado por el servidor. La información se puede añadir como texto sin formato o puede utilizar estilos para dar formato a la información.
 
-Puede agregar la información disponible en `task.json` enviado por el servidor. La información puede agregarse como texto sin formato o puede utilizar estilos para dar formato a la información.
+Para obtener más información sobre la descripción del objeto JSON, consulte [this](/help/forms/using/html-workspace-json-object-description.md) artículo.
 
-Para obtener más información sobre la descripción del objeto JSON, consulte [este](/help/forms/using/html-workspace-json-object-description.md) artículo.
+## Visualización de información sobre una tarea {#displaying-information-on-a-task}
 
-## Visualización de información en una tarea {#displaying-information-on-a-task}
+1. Siga las [Pasos genéricos para la personalización del espacio de trabajo de AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
+1. Para mostrar información adicional para una tarea, se deben agregar los pares de clave-valor correspondientes dentro del bloque de tareas de `translation.json`.
 
-1. Siga los [pasos genéricos para la personalización del espacio de trabajo de AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
-1. Para mostrar información adicional para una tarea, se deben agregar los pares de clave-valor correspondientes dentro del bloque de tarea de `translation.json`.
-
-   Por ejemplo, cambie `/apps/ws/locales/en-US/translation.json` para inglés:
+   Por ejemplo, cambiar `/apps/ws/locales/en-US/translation.json` para inglés:
 
    ```json
    "task" : {
@@ -111,9 +110,9 @@ Para obtener más información sobre la descripción del objeto JSON, consulte [
 
    >[!NOTE]
    >
-   >Añada los pares de clave-valor correspondientes para todos los idiomas admitidos.
+   >Agregue los pares de clave-valor correspondientes para todos los idiomas compatibles.
 
-1. Por ejemplo, agregue información dentro del bloque de tarea:
+1. Por ejemplo, agregue información dentro del bloque de tareas:
 
    ```json
    "stepname" : {
@@ -124,7 +123,7 @@ Para obtener más información sobre la descripción del objeto JSON, consulte [
 
 ## Definición de CSS para la nueva propiedad {#defining-css-for-the-new-property}
 
-1. Puede aplicar estilo a la información (propiedad) agregada a una tarea. Para ello, debe agregar información de estilo para la nueva propiedad agregada a `/apps/ws/css/newStyle.css`.
+1. Puede aplicar estilo a la información (propiedad) añadida a una tarea. Para ello, debe agregar información de estilo para la nueva propiedad agregada a `/apps/ws/css/newStyle.css`.
 
    Por ejemplo, agregue:
 
@@ -136,18 +135,18 @@ Para obtener más información sobre la descripción del objeto JSON, consulte [
    }
    ```
 
-## Añadiendo entrada en la plantilla HTML {#adding-entry-in-the-html-template}
+## Adición de una entrada en la plantilla de HTML {#adding-entry-in-the-html-template}
 
-Finalmente, debe incluir una entrada en el paquete dev para cada propiedad que desee agregar a la tarea. Para crear uno, consulte Creación de código de espacio de trabajo de AEM Forms.
+Finalmente, debe incluir una entrada en el paquete dev para cada propiedad que desee agregar a la tarea. Para crear una, consulte Creación del código de espacio de trabajo de AEM Forms .
 
 1. Copiar `task.html`:
 
    * de: `/libs/ws/js/runtime/templates/`
    * hasta: `/apps/ws/js/runtime/templates/`
 
-1. Añada la nueva información a `/apps/ws/js/runtime/templates/task.html`.
+1. Agregue la nueva información a `/apps/ws/js/runtime/templates/task.html`.
 
-   Por ejemplo, agregue en `div class="taskProperties"`:
+   Por ejemplo, agregue debajo de `div class="taskProperties"`:
 
    ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>

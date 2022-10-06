@@ -54,7 +54,7 @@ Para publicar los recursos seleccionados en Brand Portal, haga una de las accion
 
 * En la barra de herramientas, seleccione **[!UICONTROL Administrar publicación]**.
 
-   1. A continuación, desde el **[!UICONTROL Acción]** select **[!UICONTROL Publicar en Brand Portal]** y de **[!UICONTROL Programación]** select **[!UICONTROL Ahora]**. Haga clic en **[!UICONTROL Siguiente]**. 
+   1. A continuación, desde el **[!UICONTROL Acción]** select **[!UICONTROL Publicar en Brand Portal]** y de **[!UICONTROL Programación]** select **[!UICONTROL Ahora]**. Haga clic en **[!UICONTROL Siguiente]**.
 
    2. Within **[!UICONTROL Ámbito]**, confirme la selección y haga clic en **[!UICONTROL Publicar en Brand Portal]**.
 

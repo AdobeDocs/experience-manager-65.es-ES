@@ -1,8 +1,8 @@
 ---
 title: Ascripciones esenciales
-seo-title: Ascripciones esenciales
+seo-title: Assignments Essentials
 description: Información general sobre la función Asignaciones para comunidades de habilitación
-seo-description: Información general sobre la función Asignaciones para comunidades de habilitación
+seo-description: Assignments feature overview for enablement communities
 uuid: e49fce26-1091-4f37-93e8-c4ec85371811
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '214'
 ht-degree: 13%
 
 ---
 
 # Ascripciones esenciales {#assignments-essentials}
 
-Siga leyendo para conocer la información esencial para trabajar con la función de asignaciones de los sitios de [comunidad de habilitación](/help/communities/overview.md#enablement-community).
+Siga leyendo para conocer la información esencial para trabajar con la función de asignaciones de [comunidad de habilitación](/help/communities/overview.md#enablement-community) sitios web.
 
 La función de asignaciones es la capacidad de asignar recursos de habilitación y rutas de aprendizaje a miembros de comunidades de habilitación.
 
@@ -85,7 +85,7 @@ Las únicas combinaciones posibles de Estado de finalización y éxito son:
 
 ### Función Asignaciones {#assignments-function}
 
-Una estructura de sitio de la comunidad que incluye la [Función de asignaciones](/help/communities/functions.md#assignments-function), incluye un componente ` [assignments](/help/communities/assignments.md)` configurado.
+Una estructura de sitio de la comunidad que incluye el [Función Asignaciones](/help/communities/functions.md#assignments-function), incluye un ` [assignments](/help/communities/assignments.md)` componente.
 
 ### API de referencia {#reference-apis}
 

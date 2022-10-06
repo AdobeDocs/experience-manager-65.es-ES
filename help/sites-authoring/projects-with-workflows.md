@@ -13,7 +13,7 @@ exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 53%
+ht-degree: 60%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 53%
 
 Entre los flujos de trabajo de proyecto disponibles de fábrica se incluye lo siguiente:
 
-* **Flujo de trabajo de aprobación del proyecto** : este flujo de trabajo le permite asignar contenido a un usuario, revisarlo y aprobarlo.
-* **Solicitar lanzamiento** : un flujo de trabajo solicita un lanzamiento.
-* **Solicitar página de aterrizaje** : este flujo de trabajo solicita una página de aterrizaje.
+* **Flujo de trabajo de aprobación del proyecto**: este flujo de trabajo permite asignar contenido a un usuario, revisarlo y aprobarlo.
+* **Solicitar lanzamiento**: un flujo de trabajo solicita un lanzamiento.
+* **Solicitar página de aterrizaje**: este flujo de trabajo solicita una página de aterrizaje.
 * **Solicitar correo electrónico**: flujo de trabajo para solicitar un correo electrónico.
 * **Sesión fotográfica del producto y sesión fotográfica del producto (comercio)**: se asignan recursos a productos.
 * **Crear y traducir copia DAM y Crear copia de idioma DAM**: crea elementos binarios, metadatos y etiquetas traducidos para los recursos y las carpetas.
@@ -40,12 +40,12 @@ Según la plantilla Proyecto que seleccione, tendrá a su disposición determina
 | Solicitar lanzamiento | x |  |  |  |
 | Solicitar página de aterrizaje | x |  |  |  |
 | Solicitar correo electrónico | x |  |  |  |
-| Creación de copia y último idioma de DAM; |  |  |  | x |
-| Crear y traducir DAM copia y último idioma; |  |  |  | x |
+| Creación de copia de idioma de DAM&amp;ast; |  |  |  | x |
+| Creación y traducción de copia de idioma de DAM&amp;ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast; Estos flujos de trabajo no se inician desde la **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para recursos](/help/sites-administering/tc-manage.md). 
+>&amp;ast; Estos flujos de trabajo no se inician desde el mosaico **Flujo de trabajo** en Proyectos. Consulte [Creación de copias de idioma para recursos](/help/sites-administering/tc-manage.md). 
 
 Las etapas para iniciar y completar flujos de trabajo no son las mismas, independientemente del flujo de trabajo que se elija. Solo las etapas cambian.
 

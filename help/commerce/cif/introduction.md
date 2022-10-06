@@ -6,11 +6,11 @@ exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '870'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# Content and Commerce {#content-commerce}
+# Content y Commerce {#content-commerce}
 
 Con el contenido y el comercio de Adobe Experience Manager, las marcas pueden escalar e innovar más rápido para diferenciar las experiencias comerciales y capturar un gasto en línea acelerado. AEM Contenido y comercio combina las experiencias inmersivas, omnicanal y personalizadas en Experience Manager con cualquier cantidad de soluciones de comercio para ofrecer experiencias diferenciadas en todas las partes del recorrido de compras, reducir el tiempo de respuesta al valor y aumentar la conversión.
 
@@ -58,7 +58,7 @@ Las potentes herramientas del CIF en AEM permiten a los creadores de contenido c
 
 ### Tiempo para el valor (TTV)
 
-Acelera el desarrollo de proyectos con [Componentes principales AEM](https://www.aemcomponents.dev/), [Tienda de referencia de Venia AEM](https://github.com/adobe/aem-cif-guides-venia), [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)y patrones de integración para PWA (contenido sin encabezado y comercio).
+Acelera el desarrollo de proyectos con [Componentes principales AEM](https://www.aemcomponents.dev/), [Tienda de referencia de Venia AEM](https://github.com/adobe/aem-cif-guides-venia), [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es)y patrones de integración para PWA (contenido sin encabezado y comercio).
 
 El CIF está diseñado para la innovación continua con un complemento siempre actualizado, que permite al cliente acceder a funciones nuevas y mejoradas.
 

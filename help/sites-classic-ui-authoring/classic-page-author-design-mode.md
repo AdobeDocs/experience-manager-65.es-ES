@@ -1,8 +1,8 @@
 ---
 title: Configurar componentes en modo Diseño
-seo-title: Configurar componentes en modo Diseño
+seo-title: Configuring Components in Design Mode
 description: Cuando la instancia de AEM se instala lista para usar, una selección de componentes aparece de inmediato en la barra de tareas. Además de estos, también están disponibles otros componentes. Se puede utilizar el modo Diseño para activarlos o desactivarlos.
-seo-description: Cuando la instancia de AEM se instala lista para usar, una selección de componentes aparece de inmediato en la barra de tareas. Además de estos, también están disponibles otros componentes. Se puede utilizar el modo Diseño para activarlos o desactivarlos.
+seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
 uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '500'
 ht-degree: 92%
 
 ---
-
 
 # Configurar componentes en modo Diseño{#configuring-components-in-design-mode}
 
@@ -42,7 +41,7 @@ Por ejemplo, el contenido de la página de un producto puede contener un sistema
 >
 >Consulte [Desarrollar componentes](/help/sites-developing/components.md#paragraphsystem) y [Guías para utilizar plantillas y componentes](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) para obtener más información sobre `parsys`.
 
-## Activar/desactivar componentes {#enable-disable-components}
+## Habilitar/deshabilitar componentes {#enable-disable-components}
 
 En el modo Diseño, se minimiza la barra de tareas y se pueden configurar los componentes accesibles para el autor:
 
@@ -74,9 +73,9 @@ En el modo Diseño, también se pueden configurar los atributos de los component
 
 1. Se puede configurar el diseño de los componentes.
 
-   Por ejemplo, si hace clic en **Editar** en el componente Imagen (**Diseño de imagen**) puede configurar los parámetros específicos del componente:
+   Por ejemplo, si hace clic en **Editar** en el componente Imagen (**Diseño de la imagen**) puede configurar los parámetros específicos del componente:
 
-   ![climage_1-5](assets/chlimage_1-5.png)
+   ![Chlimage_1-5](assets/chlimage_1-5.png)
 
 1. Haga clic en **Aceptar** para guardar los cambios.
 
