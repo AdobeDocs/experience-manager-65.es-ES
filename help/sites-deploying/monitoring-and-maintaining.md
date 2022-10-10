@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: ad0f5f536657a90a8b2476b43576060f3dc85868
 workflow-type: tm+mt
-source-wordcount: '5866'
+source-wordcount: '5868'
 ht-degree: 0%
 
 ---
@@ -100,48 +100,68 @@ Esta sección trata de las operaciones de mantenimiento relacionadas con la func
 
 ### Información general {#overview}
 
-La variable **Purgar versiones** está disponible en la **[Herramientas](/help/sites-administering/tools-consoles.md) consola** under **Versiones** o directamente en:
-
-`https://<server>:<port>/etc/versioning/purge.html`
-
-![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
-
-**Ruta de inicio** Una ruta absoluta en la que se debe realizar la depuración. Para seleccionar la Ruta de inicio, haga clic en el navegador de árbol del repositorio.
-
-**Recursivo** Al depurar datos, puede elegir entre realizar la operación en un nodo o en una jerarquía completa seleccionando Recursivo. En el último caso, la ruta dada define el nodo raíz de la jerarquía.
-
-**Máximas versiones que mantener** Número máximo de versiones que se deben mantener para un nodo. Cuando este número supera este valor, se depuran las versiones más antiguas.
-
-**Edad máxima de la versión** La edad máxima de la versión de un nodo. Cuando la antigüedad de una versión supera este valor, se depura.
-
-**Ensayo** Como la eliminación de versiones del contenido es definitiva y no se puede revertir sin restaurar una copia de seguridad, la herramienta Purge Versions proporciona un modo de ejecución en seco que le permite obtener una vista previa de las versiones depuradas. Para iniciar una ejecución en seco del proceso de depuración, haga clic en Ensayo.
-
-**Purga** Inicie la depuración de las versiones en el nodo definido por la ruta de inicio.
+La variable **Purgar versiones** está disponible como tarea de mantenimiento semanal. Antes de usarlo por primera vez, debe agregarlo y configurarlo. Después de esto, se puede ejecutar bajo petición o semanalmente.
 
 ### Depuración de versiones de un sitio web {#purging-versions-of-a-web-site}
 
 Para purgar versiones de un sitio web, siga este procedimiento:
 
-1. Vaya a la **[Herramientas](/help/sites-administering/tools-consoles.md)** **consola**, seleccione **Versiones** y doble clic **Purgar versiones.**
-1. Establezca la ruta de inicio del contenido que desea depurar (p. ej. `/content/geometrixx-outdoors`).
+1. Vaya a la **[Herramientas](/help/sites-administering/tools-consoles.md)** **consola**, seleccione **Operación**, **Mantenimiento**, luego **Período de mantenimiento semanal**.
 
-   * Si solo desea depurar el nodo definido por la ruta, anule la selección **Recursivo**.
-   * Si desea purgar el nodo definido por la ruta y sus descendientes, seleccione **Recursivo**.
+1. Select **+ Agregar** en la barra de herramientas superior.
 
-1. Establezca el número máximo de versiones (para cada nodo) que desea mantener. Deje vacío para no utilizar esta configuración.
+   ![Agregar purga de versión](assets/version-purge-add.png)
 
-1. Establezca la página de versión máxima en días (para cada nodo) que desee mantener. Deje vacío para no utilizar esta configuración.
+1. Select **Purga de versión** en la lista desplegable del **Agregar nueva tarea** diálogo. Entonces **Guardar**.
 
-1. Haga clic en **Ensayo** para obtener una vista previa de lo que haría el proceso de depuración.
-1. Haga clic en **Purga** para iniciar el proceso.
+   ![Agregar purga de versión](assets/version-purge-add-new-task.png)
+
+1. La variable **Purga de versión** se agregará la tarea. Utilice las acciones de tarjeta para:
+   * Seleccionar : muestra acciones adicionales en la barra de herramientas superior
+   * Ejecutar: para ejecutar la depuración configurada inmediatamente
+   * Configurar: para configurar la tarea de depuración semanal
+
+   ![Acciones de purga de versión](assets/version-purge-actions.png)
+
+1. Seleccione el **Configurar** acción para abrir la consola web de **Tarea de purga de versión de Day CQ WCM**, donde puede configurar:
+
+   ![Configuración de purga de versión](assets/version-purge-configuration.png)
+
+   * **Purgar rutas**
+Establezca la ruta de inicio del contenido que desea depurar (p. ej. 
+`/content/geometrixx-outdoors`).
+
+   * **Purgar versiones recursivamente**
+
+      * Anule la selección si solo desea depurar el nodo definido por la ruta.
+      * Seleccione si desea depurar el nodo definido por la ruta y sus descendientes.
+   * **Número máximo de versiones**
+Establezca el número máximo de versiones (para cada nodo) que desea mantener. Deje vacío para no utilizar esta configuración.
+
+   * **Número mínimo de versiones**
+Establezca el número mínimo de versiones (para cada nodo) que desee mantener. Deje vacío para no utilizar esta configuración.
+
+   * **Edad máxima de la versión**
+Establezca la edad máxima de la versión en días (para cada nodo) que desee mantener. Deje vacío para no utilizar esta configuración.
+   Entonces **Guardar**.
+
+1. Vaya a la página **Período de mantenimiento semanal** ventana y seleccione **Ejecutar** para iniciar el proceso inmediatamente.
 
 >[!CAUTION]
 >
+>Puede utilizar el cuadro de diálogo IU clásica para realizar una [Ensayo](#analyzing-the-console) de su configuración:
+>
+>* http://localhost:4502/etc/versioning/purge.html
+>
 >Los nodos purgados no se pueden revertir sin restaurar el repositorio. Debe encargarse de la configuración, por lo que le recomendamos que siempre realice una simulación antes de la depuración.
 
-### Análisis de la consola {#analyzing-the-console}
+#### Ensayo: análisis de la consola {#analyzing-the-console}
 
-La variable **Ensayo** y **Purga** los procesos enumeran todos los nodos que se han procesado. Durante el proceso, un nodo puede tener uno de los siguientes estados:
+La IU clásica proporciona un **Ensayo** de:
+
+* http://localhost:4502/etc/versioning/purge.html
+
+El proceso enumera todos los nodos que se han procesado. Durante el proceso, un nodo puede tener uno de los siguientes estados:
 
 * `ignore (not versionnable)`: el nodo no admite versiones y se ignora durante el proceso.
 
@@ -650,7 +670,7 @@ Algunos de ellos dependerán del sistema operativo.
 
 ### Interpretación del archivo request.log {#interpreting-the-request-log}
 
-Este archivo registra información básica sobre cada solicitud realizada a AEM. De estas valiosas conclusiones se pueden extraer.
+Este archivo registra información básica sobre cada solicitud realizada a AEM. De esto se pueden extraer conclusiones valiosas.
 
 La variable `request.log` ofrece una forma integrada de obtener una visión de cuánto tardan las solicitudes. Para fines de desarrollo, resulta útil `tail -f` el `request.log` y observe los tiempos de respuesta lentos. Para analizar un tamaño mayor `request.log` le recomendamos que [uso de `rlog.jar` que le permite ordenar y filtrar los tiempos de respuesta](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
@@ -665,7 +685,7 @@ El registro de solicitudes registra cada solicitud realizada, junto con la respu
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Al totalizar todas las entradas de GET dentro de un periodo específico (por ejemplo, en varios períodos de 24 horas), puede realizar declaraciones sobre el tráfico promedio en su sitio web.
+Al totalizar todas las entradas de GET dentro de periodos específicos (por ejemplo, en varios períodos de 24 horas), puede realizar declaraciones sobre el tráfico promedio en su sitio web.
 
 #### Monitorización de los tiempos de respuesta con request.log {#monitoring-response-times-with-the-request-log}
 
