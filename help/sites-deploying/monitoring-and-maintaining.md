@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: fd9661ee94edf8f88a93ae35ba2563b3021add4d
+source-git-commit: 85987222e8b216f22ae1fec4e080488d01f23063
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5905'
 ht-degree: 0%
 
 ---
@@ -128,14 +128,14 @@ Para purgar versiones de un sitio web, siga este procedimiento:
    ![Configuración de purga de versión](assets/version-purge-configuration.png)
 
    * **Purgar rutas**
-Establezca la ruta de inicio del contenido que desea depurar (p. ej. 
-`/content/wknd`).
+Establecer la ruta de inicio del contenido que se va a purgar; por ejemplo, 
+`/content/wknd`.
 
       >[!CAUTION]
       >
-      >Es muy recomendable que defina varias rutas para cada uno de los sitios web.
+      >Se recomienda definir varias rutas para cada uno de los sitios web.
       >
-      >Definir una ruta con demasiados elementos secundarios prolonga el tiempo necesario para realizar la depuración.
+      >Definir una ruta con demasiados elementos secundarios puede alargar significativamente el tiempo necesario para realizar la depuración.
 
    * **Purgar versiones recursivamente**
 
