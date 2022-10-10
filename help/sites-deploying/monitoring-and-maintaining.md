@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: ad0f5f536657a90a8b2476b43576060f3dc85868
+source-git-commit: a6067ebb1b5be67515cd3567f56c72463c5f7123
 workflow-type: tm+mt
-source-wordcount: '5868'
+source-wordcount: '5901'
 ht-degree: 0%
 
 ---
@@ -131,6 +131,12 @@ Para purgar versiones de un sitio web, siga este procedimiento:
 Establezca la ruta de inicio del contenido que desea depurar (p. ej. 
 `/content/geometrixx-outdoors`).
 
+      >[!CAUTION]
+      >
+      >Es muy recomendable que defina varias rutas para cada uno de los sitios web.
+      >
+      >Definir una ruta con demasiados elementos secundarios prolonga el tiempo necesario para realizar la depuración.
+
    * **Purgar versiones recursivamente**
 
       * Anule la selección si solo desea depurar el nodo definido por la ruta.
@@ -173,7 +179,7 @@ El proceso enumera todos los nodos que se han procesado. Durante el proceso, un 
 Además, la consola proporciona información útil sobre las versiones:
 
 * `V 1.0`: el número de versión.
-* `V 1.0.1`&#42;: la estrella indica que la versión es la actual.
+* `V 1.0.1`&#42;: la estrella indica que la versión es la versión actual (base) y que no se puede eliminar.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: la fecha de la versión.
 
