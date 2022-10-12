@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d546462b4b78a743e047dcfea5fc2dc92d131bb5
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 81%
+source-wordcount: '1787'
+ht-degree: 79%
 
 ---
 
@@ -35,9 +35,13 @@ AEM permite personalizar fácilmente la experiencia de los usuarios. También le
 
 La variable [Audiencias](/help/sites-authoring/managing-audiences.md) se utiliza para administrar segmentos para ContextHub o Client Context, así como audiencias para su cuenta de Adobe Target. Esta documentación cubre la administración de segmentos para ContextHub. Para [Segmentos de ClientContext](/help/sites-administering/campaign-segmentation.md) y segmentos de Adobe Target, consulte la documentación pertinente.
 
-Para acceder a sus segmentos, en la navegación global, seleccione **Navegación > Personalización > Audiencias**.
+Para acceder a sus segmentos, debe seleccionar su configuración. En la navegación global, seleccione **Navegación > Personalización > Audiencias**. Verá las configuraciones disponibles:
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![Audiencias: configuraciones](assets/segmentation-access-confs.png)
+
+Seleccione la configuración para ver los segmentos como, por ejemplo, WKND Site:
+
+![Audiencias: segmentos](assets/segmentation-access-segments.png)
 
 ## Editor de segmentos {#segment-editor}
 
@@ -130,7 +134,7 @@ Las siguientes referencias están disponibles listas para usarse y para vincular
 
 Para definir el nuevo segmento:
 
-1. Después de [acceder a los segmentos](/help/sites-administering/segmentation.md#accessing-segments), [vaya a la carpeta](#organizing-segments) donde desee crear el segmento o dejarlo en la raíz.
+1. Después [acceso a los segmentos](/help/sites-administering/segmentation.md#accessing-segments), [Vaya a la carpeta .](#organizing-segments) donde desea crear el segmento.
 
 1. toque o haga clic en el botón Crear y seleccione **Crear segmento de ContextHub**.
 
