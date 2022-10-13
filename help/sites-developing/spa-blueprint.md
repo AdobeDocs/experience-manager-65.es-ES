@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2079'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ módulo npm: [@adobe/aem-react-editable-components](https://www.npmjs.com/packag
 
 #### Angular {#angular}
 
-módulo npm: próximamente
+módulo npm: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Servicios principales y componentes {#main-services-and-components}
 
@@ -166,8 +166,6 @@ El componente Cuadrícula interactiva debe asignarse previamente a su homólogo 
 
 * `gridClassNames:` Nombres de clase proporcionados para la cuadrícula adaptable
 * `columnClassNames:` Nombres de clase proporcionados para la columna adaptable
-
-Consulte también el recurso npm [@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Marcador de posición de la cuadrícula adaptable {#placeholder-of-the-reponsive-grid}
 
