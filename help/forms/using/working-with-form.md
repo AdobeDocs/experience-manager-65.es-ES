@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3c691a9e8673f3229368abbd550982d207eb8ac6
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,15 @@ Para sincronizar el formulario en la aplicación de AEM Forms:
 
 Para sincronizar varios formularios, en la instancia de autor, seleccione varios formularios en el administrador de formularios y pulse **Sincronización con la aplicación AEM Forms**. Cuando se publica el formulario, la aplicación de AEM Forms puede conectarse al servidor de publicación y recuperar los formularios.
 
+Si la aplicación de AEM de formulario AFA no se puede sincronizar, realice los siguientes pasos para solucionar el problema de sincronización:
+
+1. Vaya a la **https://&#39;[server]:[puerto]&#39;system/console/configMgr**.
+1. Busque la variable **[!UICONTROL Controlador de autenticación de token de Granite de Adobe]** y haga clic en **[!UICONTROL Editar]**.
+1. Seleccione el **[!UICONTROL Ninguna]** en el menú desplegable de la **[!UICONTROL Atributo SameSite para la cookie de token de inicio de sesión]** atributo.
+1. Haga clic en **[!UICONTROL Guardar]**.
+
+![Sincronizar imagen con la aplicación de Android de AFA](/help/forms/using/assets/afaandroid.png)
+
 >[!NOTE]
 >
 >Formularios admitidos:
@@ -39,7 +48,8 @@ Para sincronizar varios formularios, en la instancia de autor, seleccione varios
 >
 >Los archivos adjuntos de nivel de formulario no son compatibles con los formularios adaptables recuperados en la aplicación de AEM Forms sincronizados con el servidor OSGi de AEM Forms. Los usuarios pueden adjuntar archivos en un campo si el autor ha habilitado los archivos adjuntos de nivel de campo en el momento de crear el formulario.
 
+
 **Para abrir y actualizar un formulario**
 
-1. Para abrir un formulario, pulse el formulario en la pantalla principal.
+1. Para abrir un formulario, pulse el botón **[!UICONTROL Formulario]** en la pantalla de inicio.
 1. Puede actualizar los campos del formulario, agregar archivos adjuntos, guardar como borrador y enviarlo.
