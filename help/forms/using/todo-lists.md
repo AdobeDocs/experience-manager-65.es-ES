@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 51e36e874fe84eab8558271b5c84b1c2e2f58ef0
+source-git-commit: e961ce67e5b1a71e3af6dded304d99cd9e6896bc
 workflow-type: tm+mt
-source-wordcount: '4034'
+source-wordcount: '4033'
 ht-degree: 1%
 
 ---
@@ -40,16 +40,16 @@ Puede realizar algunas acciones sin abrir la tarea haciendo clic en los iconos q
 
 Al abrir y trabajar en una tarea, las herramientas disponibles dependen de la tarea. Las diferentes tareas requieren que realice diferentes acciones y, por este motivo, algunas herramientas pueden estar o no disponibles para usted. A continuación se describen las tareas típicas que puede recibir.
 
-**Proporcionar información**: Recibe una tarea que requiere que complete y envíe un formulario.
+* **Proporcionar información**: Recibe una tarea que requiere que complete y envíe un formulario.
 
-**Información de revisión**: Recibe una tarea que requiere que revise la información y que firme el contenido.
+* **Información de revisión**: Recibe una tarea que requiere que revise la información y que firme el contenido.
 
-**Revisión multiusuario**: Recibe una tarea al mismo tiempo que otros usuarios reciben la tarea. Usted y los demás usuarios deben proporcionar información o revisar el contenido, o ambos. Con este tipo de tarea pueden estar disponibles las siguientes herramientas:
+* **Revisión multiusuario**: Recibe una tarea al mismo tiempo que otros usuarios reciben la tarea. Usted y los demás usuarios deben proporcionar información o revisar el contenido, o ambos. Con este tipo de tarea pueden estar disponibles las siguientes herramientas:
 
-* Visualización de las instrucciones de la tarea
-* Visualización del estado de finalización de todos los usuarios asignados a la tarea
-* Visualización de los comentarios de todos los usuarios asignados a la tarea
-* Añadir comentarios a la tarea
+   * Visualización de las instrucciones de la tarea
+   * Visualización del estado de finalización de todos los usuarios asignados a la tarea
+   * Visualización de los comentarios de todos los usuarios asignados a la tarea
+   * Añadir comentarios a la tarea
 
 Las herramientas adicionales que pueden estar disponibles con cualquiera de las tareas anteriores incluyen las siguientes:
 
@@ -106,17 +106,17 @@ Cuando abre y reclama una tarea de un grupo o lista compartida, la tarea se muev
 
 Después de abrir una tarea, las pestañas que se muestran en el panel principal y las herramientas disponibles dependen de la tarea. Las pestañas que puede ver se describen a continuación:
 
-**Resumen de tareas**: Cuando se abre una tarea, el panel Resumen de tareas le permite mostrar información sobre la tarea, si existe, utilizando una URL especificada en el proceso del paso Asignar tarea. Si utiliza el Panel de resumen de tareas, se puede mostrar información adicional y relevante para una tarea a fin de agregar más valor para el usuario final del espacio de trabajo de AEM Forms. Esta pestaña no está disponible si la dirección URL del resumen de tareas no existe.
+* **Resumen de tareas**: Cuando se abre una tarea, el panel Resumen de tareas le permite mostrar información sobre la tarea, si existe, utilizando una URL especificada en el proceso del paso Asignar tarea. Si utiliza el Panel de resumen de tareas, se puede mostrar información adicional y relevante para una tarea a fin de agregar más valor para el usuario final del espacio de trabajo de AEM Forms. Esta pestaña no está disponible si la dirección URL del resumen de tareas no existe.
 
-**Detalles**: Proporciona información sobre la tarea y el proceso actuales a los que pertenece.
+* **Detalles**: Proporciona información sobre la tarea y el proceso actuales a los que pertenece.
 
-**Formulario**: Muestra el formulario asociado a la tarea. El formulario puede ser de varios tipos de archivo, como PDF, HTML, Guía y archivo SWF. El formulario puede parecer un formulario normal, imprimible o basado en la Web, o puede guiarlo a través de una serie de paneles de estilo asistente para recopilar información.
+* **Formulario**: Muestra el formulario asociado a la tarea. El formulario puede ser de varios tipos de archivo, como PDF, HTML, Guía y archivo SWF. El formulario puede parecer un formulario normal, imprimible o basado en la Web, o puede guiarlo a través de una serie de paneles de estilo asistente para recopilar información.
 
-**Historial**: Muestra las tareas que forman parte de la instancia de proceso y el formulario asociado, las asignaciones de tareas y los archivos adjuntos de cada tarea.
+* **Historial**: Muestra las tareas que forman parte de la instancia de proceso y el formulario asociado, las asignaciones de tareas y los archivos adjuntos de cada tarea.
 
-**Archivos adjuntos**: Muestra los archivos adjuntos existentes asociados a la tarea y los archivos adjuntos, si es necesario.
+* **Archivos adjuntos**: Muestra los archivos adjuntos existentes asociados a la tarea y los archivos adjuntos, si es necesario.
 
-**Notas**: Muestra las notas existentes asociadas con la tarea y agrega notas, si es necesario.
+* **Notas**: Muestra las notas existentes asociadas con la tarea y agrega notas, si es necesario.
 
 Al trabajar en una tarea, a continuación se describen las herramientas que puede ver y las acciones que puede realizar.
 
