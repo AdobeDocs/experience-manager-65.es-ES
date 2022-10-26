@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: d303a374fd4ab8e398fd909dec4ce6155a2163f5
+source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
 workflow-type: tm+mt
 source-wordcount: '3573'
 ht-degree: 2%
@@ -489,6 +489,16 @@ Al cargar un paquete solo se añade el contenido del paquete al repositorio, per
 
 Antes de la instalación del paquete, el Administrador de paquetes crea automáticamente un paquete de instantánea que contiene el contenido que se sobrescribirá. Esta instantánea se reinstalará si desinstala el paquete.
 
+>[!CAUTION]
+>
+>* Si va a instalar recursos digitales, debe:
+   >  En primer lugar, desactive WorkflowLauncher.
+   >  Utilice la opción de menú Componentes de la consola OSGi para desactivar
+   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>* A continuación, cuando se complete la instalación, reactive WorkflowLauncher.
+>
+>Al desactivar WorkflowLauncher, se garantiza que el marco del importador de recursos no manipule (de forma involuntaria) los recursos durante la instalación.
+
 1. [Acceda al Administrador de paquetes.](#accessing)
 
 1. Abra los detalles del paquete que desea instalar de la lista de paquetes haciendo clic en el nombre del paquete.
@@ -506,16 +516,6 @@ Antes de la instalación del paquete, el Administrador de paquetes crea automát
 1. Haga clic en **Instalar**.
 
 1. El registro de actividades detalla el progreso de la instalación.
-
->[!CAUTION]
->
->* Si va a instalar recursos digitales, debe:
-   >  En primer lugar, desactive WorkflowLauncher.
-   >  Utilice la opción de menú Componentes de la consola OSGi para desactivar
-   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
->* A continuación, cuando se complete la instalación, reactive WorkflowLauncher.
->
->Al desactivar WorkflowLauncher, se garantiza que el marco del importador de recursos no manipule (de forma involuntaria) los recursos durante la instalación.
 
 Una vez finalizada y correcta la instalación, se actualiza la lista de paquetes y se añade la palabra **Installed** aparece en el estado del paquete.
 
