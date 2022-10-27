@@ -8,12 +8,13 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 652f2f9b55857b8962f5bfd4edb85f3700866485
+source-git-commit: b80886f1e45e0ed65ce2309ef6ea43bfa373a52b
 workflow-type: tm+mt
-source-wordcount: '5535'
+source-wordcount: '5529'
 ht-degree: 2%
 
 ---
+
 
 # Instalación y configuración de document services {#installing-and-configuring-document-services}
 
@@ -286,14 +287,6 @@ Realice los siguientes pasos para configurar el proveedor de sockets IBM® SSL:
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### (Solo Windows) Configurar el servicio Instalar tinta y escritura a mano {#configure-install-ink-and-handwriting-service}
-
-Si está ejecutando Microsoft® Windows Server, configure el servicio de tinta y escritura a mano. El servicio es necesario para abrir archivos de Microsoft® PowerPoint que utilizan funciones de vinculación de Microsoft® Office:
-
-1. Abra el Administrador de servidores. Haga clic en el **[!UICONTROL Administrador del servidor]** en la bandeja de inicio rápido.
-1. Haga clic en **[!UICONTROL Agregar características]** en el **[!UICONTROL Funciones]** para abrir el Navegador. Seleccione el **[!UICONTROL Servicios de escritura a mano y tinta]** en el Navegador.
-1. **[!UICONTROL Seleccionar características]** cuadro de diálogo con **[!UICONTROL Servicios de escritura a mano y tinta]** seleccionados. Haga clic en **[!UICONTROL Instalar]** y el servicio está instalado.
-
 ### (Solo Windows) Configure las opciones del bloque de archivos para Microsoft® Office {#configure-the-file-block-settings-for-microsoft-office}
 
 Cambie la configuración del centro de confianza de Microsoft® Office para permitir que el servicio Generador de PDF convierta archivos creados con versiones anteriores de Microsoft® Office.
@@ -479,7 +472,9 @@ En Microsoft® Windows, el servicio Generador de PDF utiliza Adobe Acrobat para 
 
    1. Apertura [Administrador de paquetes AEM](http://localhost:4502/crx/packmgr/index.jsp) y descargue el `adobe-aemfd-pdfg-common-pkg-[version].zip` del Administrador de paquetes.
    1. Descomprima el archivo .zip descargado. Abra el símbolo del sistema con privilegios administrativos.
-   1. Vaya a la [extracted-zip-file]`\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\adobe-aemfd-pdfg-common-pkg-[version]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directorio. Ejecute el siguiente archivo por lotes:
+   1. Vaya a la `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
+   1. Descomprima el `adobe-aemfd-pdfg-common-pkg-[version]`.
+   1. Vaya a la `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directorio. Ejecute el siguiente archivo por lotes:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -589,7 +584,7 @@ El servicio Assembler depende del servicio Reader Extensions, del servicio Signa
 
 ## Herramienta de preparación del sistema (SRT) {#SRT}
 
-La herramienta de preparación del sistema comprueba si el equipo está configurado correctamente para ejecutar las conversiones del Generador de PDF. La herramienta genera el informe en la ruta especificada. Para ejecutar la herramienta:
+La variable [Herramienta de preparación del sistema](#srt-configuration) comprueba si el equipo está configurado correctamente para ejecutar conversiones de PDF Generator. La herramienta genera el informe en la ruta especificada. Para ejecutar la herramienta:
 
 1. Abra el símbolo del sistema. Vaya a la `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` carpeta.
 
@@ -597,39 +592,47 @@ La herramienta de preparación del sistema comprueba si el equipo está configur
 
    `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
 
-   El comando genera el informe y también crea el archivo srt_config.yaml.
+   El comando genera el informe y también crea el archivo srt_config.yaml. Puede utilizarlo para configurar las opciones de la herramienta SRT. Es opcional configurar las opciones de la herramienta SRT.
 
    >[!NOTE]
    >
    > * Si la herramienta de preparación del sistema informa de que el archivo pdfgen.api no está disponible en la carpeta de complementos de Acrobat, copie el archivo pdfgen.api de la `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` para `[Acrobat_root]\Acrobat\plug_ins` directorio.
-   >
-   > * Puede utilizar el archivo srt_config.yaml para configurar varias configuraciones de . El formato del archivo es:
 
-       # Configuración SRT
-       
-       # Nota: Siga el formato correcto para evitar errores de análisis
-       
-       # p. ej. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
-       
-       #configuración regional: (campo obligatorio)Configuración regional que se utilizará para la SRT. Configuraciones regionales compatibles [en/fr/de/ja].
-       configuración regional: en
-       
-       #aemTempDir: Directorio temporal AEM
-       aemTempDir:
-       
-       #usuarios: proporcionar lista de usuarios con conversión PDFG
-       #usuarios:
-       # - usuario1
-       # - usuario 2
-       usuarios:
-       
-       #profile: seleccione perfil para ejecutar comprobaciones específicas. Elija entre [LCM], se agregarán más próximamente
-       perfil:
-       
-       #outputDir: directorio donde se guardarán los archivos de salida
-       outputDir:
-   >
 1. Vaya a `[Path_of_reports_folder]`. Abra el archivo SystemReadinessTool.html . Compruebe el informe y corrija los problemas mencionados.
+
+### Configuración de opciones para la herramienta SRT {#srt-configuration}
+
+Puede utilizar el archivo srt_config.yaml para configurar varias opciones de configuración para la herramienta SRT. El formato del archivo es:
+
+```shell
+   # =================================================================
+   # SRT Configuration
+   # =================================================================
+   #Note - follow correct format to avoid parsing failures
+   #e.g. <param name>:<space><param value> 
+   #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
+   locale: en
+   
+   #aemTempDir: AEM Temp direcotry
+   aemTempDir:
+   
+   #users: provide PDFG converting users list
+   #users:
+   # - user1
+   # - user2
+   users:
+   
+   #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
+   profile:
+   
+   #outputDir: directory where output files will be saved
+   outputDir:
+```
+
+* **Configuración regional:** Es un parámetro obligatorio. Admite inglés(en), alemán (de), francés (fr) y japonés(ja). El valor predeterminado es en. No afecta a los servicios de Generador de PDF que se ejecutan en AEM Forms en OSGi.
+* **aemTempDir:** Es un parámetro opcional. Especifica la ubicación de almacenamiento temporal de Adobe Experience Manager.
+* **usuarios:** Es un parámetro opcional. Puede especificar un usuario para que compruebe si el usuario tiene los permisos necesarios y acceso de lectura y escritura en los directorios necesarios para ejecutar el Generador de PDF. Si no se especifica ningún usuario, las comprobaciones específicas del usuario se omiten y se muestran como fallidas en el informe.
+* **outputDir:** Especifique la ubicación para guardar el informe de SRT. La ubicación predeterminada es el directorio de trabajo actual de la herramienta SRT.
 
 ## Solución de problemas
 
@@ -655,7 +658,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 * Asegúrese de que los bits de 32 bits [versión compatible ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office está instalado y los cuadros de diálogo de apertura se cancelan para todas las aplicaciones.
 * Asegúrese de que se agrega un usuario de Generador de PDF en la interfaz de usuario de configuración del PDF.
 * Asegúrese de que el usuario del Generador de PDF sea miembro del grupo de administradores y de que la variable [Reemplazar un token de nivel de proceso](#grant-the-replace-a-process-level-token-privilege) se establece para el usuario.
-* Asegúrese de que el usuario está configurado en la interfaz de usuario del Generador de PDF y realice las siguientes acciones:
+* Asegúrese de que el usuario está configurado en la interfaz de usuario del Generador de PDF y realiza las siguientes acciones:
    1. Inicie sesión en Microsoft® Windows con el usuario del Generador de PDF.
    1. Abra las aplicaciones de Microsoft® Office u OpenOffice y cancele todos los cuadros de diálogo.
    1. Establezca AdobePDF como impresora predeterminada.
@@ -762,7 +765,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 * Si tiene una licencia existente de Adobe Acrobat y esta ha caducado, [Descargue la versión más reciente de Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html)y migrando su número de serie. Antes [migración del número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Utilice los siguientes comandos para generar prov.xml y volver a serializar la instalación existente usando el archivo prov.xml en lugar de los comandos proporcionados en [migración del número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) artículo numérico.
+   * Utilice los siguientes comandos para generar prov.xml y volver a erializar la instalación existente utilizando el archivo prov.xml en lugar de los comandos proporcionados en [migración del número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) artículo numérico.
 
           &quot;
           
