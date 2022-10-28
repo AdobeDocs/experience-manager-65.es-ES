@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1808'
 ht-degree: 8%
 
 ---
@@ -177,16 +177,10 @@ En la siguiente sección describimos el **instalación independiente**. Para obt
 
 1. Para iniciar la instancia en un entorno GUI, haga doble clic en el botón **`cq-quickstart-6.5.0.jar`** archivo.
 
-   Como alternativa, puede iniciar AEM desde la línea de comandos. Para una VM Java de 32 bits, introduzca lo siguiente:
+   Como alternativa, puede iniciar AEM desde la línea de comandos:
 
    ```shell
        java -Xmx1024M -jar cq-quickstart-6.5.0.jar
-   ```
-
-   Para una VM de 64 bits, introduzca:
-
-   ```shell
-       java -XX:MaxPermSize=256m -Xmx1024M -jar cq-quickstart-6.5.0.jar
    ```
 
 AEM tardará unos minutos en desempaquetar el archivo jar, instalarse y comenzar. El procedimiento anterior da como resultado:

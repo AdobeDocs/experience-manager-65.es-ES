@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 1a741ff01fcf17dfdcc8c1cebcd858052d07361c
+source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 2%
@@ -353,7 +353,7 @@ Para configurar la replicación binaria con S3, se requieren los siguientes paso
 1. Asegúrese de que MongoDB esté instalado y que haya una instancia de `mongod` se está ejecutando.
 1. Inicie AEM con el siguiente comando:
 
-   `java -Xmx1024m -XX:MaxPermSize=256M -jar cq-quickstart.jar -r crx3,crx3mongo`
+   `java -Xmx1024m -jar cq-quickstart.jar -r crx3,crx3mongo`
 
 1. Repita los pasos del 1 al 4 para la segunda instancia de AEM.
 1. Inicie la segunda instancia de AEM.

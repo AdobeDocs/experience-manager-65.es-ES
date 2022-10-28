@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo realizar una actualización in sit
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 6d2b7e341dcdedf3c000b9fb0ecd21722bdf2a27
+source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: '1244'
 ht-degree: 0%
 
 ---
@@ -116,8 +116,6 @@ Donde `<<YOUR_PROFILE>>` y `<<ADDITIONAL_FLAGS>>` se sustituyen por el perfil y 
 
 * Si está realizando la actualización en un sistema Windows en el que la asignación de memoria Java no se administra correctamente, agregue la variable `--disable-mmap` al comando.
 
-* Si utiliza Java 7, agregue la variable `-XX:MaxPermSize=2048m` justo después de `-Xmx` parámetro.
-
 Para obtener instrucciones adicionales sobre el uso de la herramienta crx2oak, consulte Uso de la variable [Herramienta de migración CRX2Oak](/help/sites-deploying/using-crx2oak.md). El JAR de ayuda de crx2oak se puede actualizar manualmente si es necesario, reemplazándolo manualmente con versiones más recientes después de desempaquetar el inicio rápido. Su ubicación en la carpeta de instalación de AEM es: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. La versión más reciente de la herramienta de migración CRX2Oak está disponible para su descarga desde el Repositorio de Adobes en: [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 Si la migración se ha completado correctamente, la herramienta se cerrará con un código de salida de cero. Además, compruebe los mensajes WARN y ERROR en la `upgrade.log` archivo, ubicado en `crx-quickstart/logs` en el directorio de instalación de AEM, ya que podrían indicar errores no fatales que se produjeron durante la migración.
@@ -181,7 +179,7 @@ Tenga en cuenta que iniciar AEM desde el script de inicio no iniciará la actual
 1. Busque el proceso de AEM. Se parecerá a:
 
    ```shell
-   /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
 1. Modifique el comando reemplazando la ruta al jar existente ( `crx-quickstart/app/aem-quickstart*.jar` en este caso) con el nuevo jar que es un hermano del `crx-quickstart` carpeta. Con nuestro comando anterior como ejemplo, nuestro comando sería:

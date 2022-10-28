@@ -6,9 +6,9 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 3e18eed63d676e22e12483a1ee68e7e0148d8083
+source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1622'
 ht-degree: 1%
 
 ---
@@ -108,9 +108,9 @@ Para instalar e iniciar AEM como un servicio de Windows:
 
    Este comando invoca el script apropiado que inicia el daemon de servicio de Windows en Java de 64 bits en lugar de Java de 32 bits.
 
-1. Para evitar que el proceso se ramifique en más de un proceso, aumente el tamaño máximo de pila y los parámetros JVM de PermGen. Busque la variable `set jvm_options` y establezca el valor como se indica a continuación:
+1. Para evitar que el proceso se ramifique en más de un proceso, aumente el parámetro JVM PermGen. Busque la variable `set jvm_options` y establezca el valor como se indica a continuación:
 
-   `set jvm_options=-XX:MaxPermSize=256M;-Xmx1792m`
+   `set jvm_options=-Xmx1792m`
 
 1. Abra el símbolo del sistema, cambie el directorio actual a la carpeta crx-quickstart/opt/helpers de la instalación de AEM e introduzca el siguiente comando para crear el servicio:
 
@@ -159,90 +159,116 @@ para:
 
 En el archivo de ayuda de inicio rápido, que está disponible a través de la opción -help , se describen más opciones y convenciones de cambio de nombre. Para acceder a la ayuda, escriba:
 
-* `java -jar cq5-<*version*>.jar -help`
+* `java -jar cq-quickstart-6.5.0.jar -help`
+
+>[!CAUTION]
+>
+>Estas opciones son válidas a partir de la versión original de AEM 6.5 (6.5.0.0). Es posible realizar cambios en versiones posteriores del SP.
 
 ```shell
 Loading quickstart properties: default
 Loading quickstart properties: instance
-Setting properties from filename '/Users/Desktop/AEM/cq-quickstart-5.6.0.jar'
+Setting properties from filename '/Users/Desktop/AEM/cq-quickstart-6.5.0.jar'
 --------------------------------------------------------------------------------
-Adobe Experience Manager Quickstart (build 20130129)
+Adobe Experience Manager Quickstart (build 20190328)                            
 --------------------------------------------------------------------------------
-Usage:
- Use these options on the Quickstart command line.
+Usage:                                                                          
+ Use these options on the Quickstart command line.                              
 --------------------------------------------------------------------------------
 
 -help (--help,-h)
-         Show this help message
+         Show this help message                                                 
 -quickstart.server.port (-p,-port) <port>
-         Set server port number
+         Set server port number                                                 
 -contextpath (-c,-org.apache.felix.http.context_path) <contextpath>
-         Set context path
+         Set context path                                                       
 -debug <port>
-         Enable Java Debugging on port number; forces forking
--gui
-         Show GUI if running on a terminal
+         Enable Java Debugging on port number; forces forking                   
+-gui 
+         Show GUI if running on a terminal                                      
 -nobrowser (-quickstart.nobrowser)
-         Do not open browser at startup
+         Do not open browser at startup                                         
 -unpack
-         Unpack installation files only, do not start the server (implies
-         -verbose)
+         Unpack installation files only, do not start the server (implies       
+         -verbose)                                                              
 -v (-verbose)
-         Do not redirect stdout/stderr to files and do not close stdin
+         Do not redirect stdout/stderr to files and do not close stdin          
 -nofork
-         Do not fork the JVM, even if not running on a console
+         Do not fork the JVM, even if not running on a console                  
 -fork
-         Force forking the JVM if running on a console, using recommended
-         default memory settings for the forked JVM.
+         Force forking the JVM if running on a console, using recommended       
+         default memory settings for the forked JVM.                            
 -forkargs <args> [<args> ...]
-         Additional arguments for the forked JVM, defaults to '-Xmx1024m
-         -XX:MaxPermSize=256m '.  Use -- to specify values starting with -,
-         example: '-forkargs -- -server'
+         Additional arguments for the forked JVM, defaults to '-Xmx1024m        
+         -XX:MaxPermSize=256m '.  Use -- to specify values starting with -,     
+         example: '-forkargs -- -server'                                        
 -a (--interface) <interface>
-         Optional IP address (interface) to bind to
+         Optional IP address (interface) to bind to                             
 -pt <string>
-         Process type (main/fork) - do not use directly, used when forking a
-         process
+         Process type (main/fork) - do not use directly, used when forking a    
+         process                                                                
 -r <string> [<string> [<string> [<string> [<string> [<string> [<string> [<string> [<string> [<string>]]]]]]]]]
-         Runmode(s) - Use this to define the run mode(s)
+         Runmode(s) - Use this to define the run mode(s)                        
 -b <string>
-         Base folder - defines the path under which the quickstart work folder
-         is created
+         Base folder - defines the path under which the quickstart work folder  
+         is created                                                             
 -low-mem-action <string>
-         Low memory action - what to do if memory is insufficient at startup
+         Low memory action - what to do if memory is insufficient at startup    
 -use-control-port
-         Start a control port
+         Start a control port                                                   
+-nointeractive
+         Start with no interactivity                                            
 -ll <level>
-         Define launchpad log level (1 = error...4 = debug)
+         Define launchpad log level (1 = error...4 = debug)                     
+-n   
+         Do not install shutdown hook                                           
+-D<property>=<value>
+         Additional framework properties.                                       
+-listener-port <listener-port>
+         Set listener port number                                               
+-x <string>
+         Run a Quickstart extension.                                            
+  Options for executing Quickstart extensions:
+                                                                                
+    -xargs <arg> [<arg> ...]
+         Construct an arguments list for a Quickstart extension (e.g. -xargs -- 
+         -arg1 val1 -arg2 val2).                                                
 --------------------------------------------------------------------------------
-Quickstart filename options
+Quickstart filename options                                                     
 --------------------------------------------------------------------------------
-Usage:
- Rename the jar file, including one of the patterns shown below, to set the
-corresponding option. Command-line options have priority on these filename
-patterns.
+Usage:                                                                          
+ Rename the jar file, including one of the patterns shown below, to set the     
+corresponding option. Command-line options have priority on these filename      
+patterns.                                                                       
 --------------------------------------------------------------------------------
 
 -NNNN
-         Include -NNNN.jar or -pNNNN in the renamed jar filename to run on port
-         NNNN, for example: quickstart-8085.jar
+         Include -NNNN.jar or -pNNNN in the renamed jar filename to run on port 
+         NNNN, for example: quickstart-8085.jar                                 
 -nobrowser
-         Include -nobrowser in the renamed jar filename to avoid opening the
-         browser at startup, example: quickstart-nobrowser-8085.jar
+         Include -nobrowser in the renamed jar filename to avoid opening the    
+         browser at startup, example: quickstart-nobrowser-8085.jar             
 -publish
-         Include -publish in the renamed jar filename to run cq5 in "publish"
-         mode, example: cq5-publish-7502.jar
+         Include -publish in the renamed jar filename to run in "publish" mode, 
+         example: cq-publish-7502.jar                                           
+-dynamicmedia
+         Include -dynamicmedia in the renamed jar filename to run in            
+         "dynamicmedia" mode, example: quickstart-dynamicmedia-4502.jar         
+-dynamicmedia_scene7
+         Include -dynamicmedia_scene7 in the renamed jar filename to run in     
+         "dynamicmedia_scene7" mode, example:                                   
+         quickstart-dynamicmedia_scene7-p4502.jar                               
 --------------------------------------------------------------------------------
 The license.properties file
 --------------------------------------------------------------------------------
-  The license.properties file stores licensing information, created from the
-  licensing form displayed on first startup and stored in the folder from where
-  Quickstart is run.
+  The license.properties file stores licensing information, created from the    
+  licensing form displayed on first startup and stored in the folder from where 
+  Quickstart is run.                                                            
 --------------------------------------------------------------------------------
 Log files
 --------------------------------------------------------------------------------
-  Once Quickstart has been unpacked and started, log files can be found under
-  ./crx-quickstart/logs.
+  Once Quickstart has been unpacked and started, log files can be found under   
+  /Users/aheimoz/CQInstallationKits/AEM-65150-L8/crx-quickstart/logs.           
 --------------------------------------------------------------------------------
 ```
 

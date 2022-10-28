@@ -3,7 +3,7 @@ title: Pasos de actualización para las instalaciones del servidor de aplicacion
 description: Obtenga información sobre cómo actualizar instancias de AEM que se implementan mediante servidores de aplicaciones.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: 5e875e0420540ca209e7d677046e8d010ae4e145
+source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Todos los ejemplos de este procedimiento utilizan Tomcat como servidor de aplica
 1. Ahora, migre el repositorio utilizando la herramienta de migración crx2oak. Para ello, descargue la última versión de crx2oak desde [esta ubicación](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
-   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
+   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
    ```
 
 1. Elimine las propiedades necesarias del archivo sling.properties haciendo lo siguiente:
