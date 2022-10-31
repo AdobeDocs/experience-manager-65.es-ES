@@ -12,7 +12,7 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3286'
 ht-degree: 0%
@@ -276,4 +276,4 @@ Agregue grupos de usuarios a las directivas en lugar de usuarios individuales. E
 
    >[!NOTE]
    >
-   > Puede usar la variable [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) para recuperar un máximo de 1000 nombres de conjuntos de directivas. Internamente, la API recupera un máximo de 1000 directivas para las que el invocador de API tiene permiso de editor de documentos y, a continuación, crea y devuelve una lista de nombres de conjuntos de directivas exclusivos asociados a las políticas recuperadas. Por ejemplo, cuando la API recupera 1000 directivas y las políticas recuperadas están asociadas con 200 conjuntos de directivas en total, la API solo devuelve 200 nombres de conjuntos de directivas.
+   >Puede usar la variable [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) para recuperar un máximo de 1000 nombres de conjuntos de directivas. Internamente, la API recupera un máximo de 1000 directivas para las que el invocador de API tiene permiso de editor de documentos y, a continuación, crea y devuelve una lista de nombres de conjuntos de directivas exclusivos asociados a las políticas recuperadas. Por ejemplo, cuando la API recupera 1000 directivas y las políticas recuperadas están asociadas con 200 conjuntos de directivas en total, la API solo devuelve 200 nombres de conjuntos de directivas.

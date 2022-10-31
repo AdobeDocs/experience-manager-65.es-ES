@@ -7,7 +7,7 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3802'
 ht-degree: 97%
@@ -366,9 +366,9 @@ AEM usa el [módulo de mapa del sitio Apache Sling](https://github.com/apache/sl
 
 >[!NOTE]
 >
-> Esta función está disponible como función de producto desde la versión 6.5.11.0 de Adobe Experience Manager.
+>Esta función está disponible como función de producto desde la versión 6.5.11.0 de Adobe Experience Manager.
 > 
-> Para versiones anteriores, puede registrar un Sling Servlet usted mismo, para escuchar un `sitemap.xml` llame a y utilice el recurso proporcionado a través de la API de servlet para buscar en la página actual y sus descendientes para generar un archivo sitemap.xml.
+>Para versiones anteriores, puede registrar un Sling Servlet usted mismo, para escuchar un `sitemap.xml` llame a y utilice el recurso proporcionado a través de la API de servlet para buscar en la página actual y sus descendientes para generar un archivo sitemap.xml.
 
 El módulo de mapa del sitio Apache Sling distingue entre un mapa del sitio de nivel superior y un mapa del sitio anidado, ambos generados para cualquier recurso que tenga la propiedad `sling:sitemapRoot` establecida en `true`. En general, los mapas del sitio se representan con selectores en la ruta del mapa del sitio de nivel superior del árbol, que es el recurso que no tiene otro antecesor raíz del mapa del sitio. Esta raíz de mapa del sitio de nivel superior también expone el índice de mapa del sitio, que normalmente es lo que el propietario del sitio configuraría en el portal de configuración del motor de búsqueda o añadiría al sitio `robots.txt`.
 
@@ -380,7 +380,7 @@ Por ejemplo, piense en un sitio que defina una raíz de mapa del sitio de nivel 
 
 >[!NOTE]
 >
-> Los selectores `sitemap` y `sitemap-index` pueden interferir con las implementaciones personalizadas. Si no desea utilizar la función de producto, configure su propio servlet que sirva a estos selectores con un `service.ranking` superior a 0.
+>Los selectores `sitemap` y `sitemap-index` pueden interferir con las implementaciones personalizadas. Si no desea utilizar la función de producto, configure su propio servlet que sirva a estos selectores con un `service.ranking` superior a 0.
 
 En la configuración predeterminada, el cuadro de diálogo Propiedades de página proporciona una opción para marcar una página como raíz de mapa del sitio y, por lo tanto, como se describe más arriba, generar un mapa del sitio propio y de sus descendientes. Este comportamiento se implementa mediante las implementaciones de la variable `SitemapGenerator` y se puede ampliar añadiendo implementaciones alternativas. Sin embargo, como la frecuencia con la que se regeneran los mapas del sitio XML depende en gran medida de los flujos de trabajo y las cargas de trabajo de creación de contenido, el producto no envía ninguna configuración `SitemapScheduler`. Esto hace que la función sea de inclusión efectiva.
 

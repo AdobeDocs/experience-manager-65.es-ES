@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 2%
@@ -493,11 +493,12 @@ Para ejecutar la colección de residuos del almacén de datos, haga lo siguiente
 >Al realizar la colección de residuos en una configuración de almacén de datos agrupada o compartida (con Mongo o Segment Tar), el registro puede mostrar advertencias sobre la incapacidad de eliminar ciertos ID de blob. Esto sucede porque otros clústeres o nodos compartidos a los que no hay información sobre las eliminaciones de ID hacen referencia incorrectamente a los ID de blob eliminados en una colección de residuos anterior. Como resultado, cuando se realiza la colección de residuos, registra una advertencia cuando intenta eliminar un ID que ya se ha eliminado en la última ejecución. Este comportamiento no afecta al rendimiento ni a la funcionalidad.
 
 >[!NOTE]
-> Si está utilizando una configuración compartida del almacén de datos y la colección de residuos del almacén de datos está deshabilitada, la ejecución de la tarea de limpieza binaria de Lucene puede aumentar repentinamente el espacio en disco utilizado. Para evitarlo, debe deshabilitar BlobTracker en todas las instancias de autor y publicación de la siguiente manera:
 >
-> 1. Detenga la instancia de AEM.
-> 2. Agregue la variable `blobTrackSnapshotIntervalInSecs=L"0"` en el `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` archivo. Este parámetro requiere Oak 1.12.0, 1.10.2 o posterior.
-> 3. Vuelva a iniciar la instancia de AEM.
+>Si está utilizando una configuración compartida del almacén de datos y la colección de residuos del almacén de datos está deshabilitada, la ejecución de la tarea de limpieza binaria de Lucene puede aumentar repentinamente el espacio en disco utilizado. Para evitarlo, debe deshabilitar BlobTracker en todas las instancias de autor y publicación de la siguiente manera:
+>
+>1. Detenga la instancia de AEM.
+>2. Agregue la variable `blobTrackSnapshotIntervalInSecs=L"0"` en el `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` archivo. Este parámetro requiere Oak 1.12.0, 1.10.2 o posterior.
+>3. Vuelva a iniciar la instancia de AEM.
 
 
 Con versiones más recientes de AEM, la colección de residuos del almacén de datos también se puede ejecutar en almacenes de datos compartidos por más de un repositorio. Para poder ejecutar la colección de residuos del almacén de datos en un almacén de datos compartido, siga los siguientes pasos:

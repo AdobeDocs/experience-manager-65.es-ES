@@ -7,10 +7,10 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1343'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -127,7 +127,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 >[!NOTE]
 >
-> El proceso de creación de la definición del índice anterior solo se puede usar desde el `oak-run-1.12.0` versiones posteriores. La segmentación se realiza utilizando el paquete de repositorios Granite `com.adobe.granite.repository-x.x.xx.jar`.
+>El proceso de creación de la definición del índice anterior solo se puede usar desde el `oak-run-1.12.0` versiones posteriores. La segmentación se realiza utilizando el paquete de repositorios Granite `com.adobe.granite.repository-x.x.xx.jar`.
 
 Los pasos anteriores crean un archivo JSON llamado `merge-index-definitions_target.json` que es la definición de índice.
 
@@ -141,7 +141,7 @@ Una vez hecho esto, copie el ID del punto de comprobación recién creado y vali
 
 >[!NOTE]
 >
-> Este punto de comprobación se eliminará cuando el índice se importe más adelante.
+>Este punto de comprobación se eliminará cuando el índice se importe más adelante.
 
 Para obtener más información, consulte [creación de puntos de comprobación](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) de la documentación de Oak.
 

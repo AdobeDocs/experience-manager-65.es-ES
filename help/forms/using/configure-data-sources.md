@@ -10,7 +10,7 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 98854fa3b852f511cf95adc13b945c06b1afff96
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2011'
 ht-degree: 44%
@@ -84,7 +84,7 @@ Puede configurar AEM perfil de usuario mediante la configuración del conector d
 
    >[!NOTE]
    >
-   >La variable **&#42;** en el ejemplo anterior indica todos los nodos bajo la variable `profile/empLocation/` en AEM perfil de usuario en la estructura CRXDE. Significa que el modelo de datos de formulario puede acceder al `city` propiedad de tipo `string` presentes en cualquier nodo bajo el `profile/empLocation/` nodo . Sin embargo, los nodos que contienen la propiedad especificada deben seguir una estructura coherente.
+   >La variable **&#42;** en el ejemplo anterior indica todos los nodos bajo la variable `profile/empLocation/` en AEM perfil de usuario en la estructura CRXDE. Significa que el modelo de datos de formulario puede acceder al `city` propiedad de tipo `string` presentes en cualquier nodo bajo la variable `profile/empLocation/` nodo . Sin embargo, los nodos que contienen la propiedad especificada deben seguir una estructura coherente.
 
 1. Toque **[!UICONTROL Guardar]** para guardar la configuración.
 
@@ -190,7 +190,7 @@ Un servicio OData se identifica mediante su URL raíz de servicio. Para configur
 
 >[!NOTE]
 >
-> El modelo de datos de formulario es compatible con la [versión 4 de OData](https://www.odata.org/documentation/).
+>El modelo de datos de formulario es compatible con la [versión 4 de OData](https://www.odata.org/documentation/).
 >Para obtener una guía paso a paso sobre la configuración de Microsoft Dynamics 365, en línea o local, consulte [Configuración de OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Vaya a **[!UICONTROL Herramientas > Cloud Services > Fuentes de datos]**. Pulse para seleccionar la carpeta en la que desea crear una configuración de nube.

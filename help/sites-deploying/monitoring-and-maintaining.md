@@ -12,7 +12,7 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: b9a3db4144a571291bdf1c9a9f0e841f284df0c8
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '5972'
 ht-degree: 0%
@@ -448,11 +448,12 @@ En determinadas circunstancias, es posible que desee crear un archivo de registr
    >| `'.'yyyy-MM-dd-HH-mm` | Rotación al principio de cada minuto. |
    >
    >Nota: Al especificar una hora/fecha:
-   > 1. Debería &quot;escapar&quot; el texto literal dentro de un par de comillas simples (&#39; &#39;);
-      >
-      >     esto sirve para evitar que ciertos caracteres se interpreten como letras de patrón.
    >
-   >  1. Utilice únicamente caracteres permitidos para un nombre de archivo válido en cualquier parte de la opción.
+   >1. Debería &quot;escapar&quot; el texto literal dentro de un par de comillas simples (&#39; &#39;);
+      >
+      >    esto sirve para evitar que ciertos caracteres se interpreten como letras de patrón.
+   >
+   >1. Utilice únicamente caracteres permitidos para un nombre de archivo válido en cualquier parte de la opción.
 
 
 1. Lea el nuevo archivo de registro con la herramienta seleccionada.

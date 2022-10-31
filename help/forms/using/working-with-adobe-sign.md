@@ -11,7 +11,7 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 28d092a7713438c27213766f0bb702b699305b88
+source-git-commit: 4714554609a10e58b1c7141696d694fac46887a6
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 25%
@@ -295,15 +295,17 @@ Realice los siguientes pasos para configurar el componente Paso de firma:
 
    >[!NOTE]
    >
-   > * Cuando arrastra y suelta la variable **[!UICONTROL Paso de firma]** al formulario, la variable **[!UICONTROL ¿Son iguales el firmante y la persona que rellena el formulario?]** se configura automáticamente como **Sí**. Es necesario mantener el formulario en funcionamiento.
+   >* Cuando arrastra y suelta la variable **[!UICONTROL Paso de firma]** al formulario, la variable **[!UICONTROL ¿Son iguales el firmante y la persona que rellena el formulario?]** se configura automáticamente como **Sí**. Es necesario mantener el formulario en funcionamiento.
+   >* Utilice el componente Paso de resumen después del componente Paso de firma para obtener la mejor experiencia. El paso Resumen envía el formulario de forma automática e inmediata después de completar la firma de un formulario en el componente Paso de firma. Si no utiliza el paso de resumen, se activa un envío automático solo después del intervalo establecido mediante la función [Servicio de configuración de Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
+
    >
-   > * Utilice el componente Paso de resumen después del componente Paso de firma para obtener la mejor experiencia. El paso Resumen envía el formulario de forma automática e inmediata después de completar la firma de un formulario en el componente Paso de firma. Si no utiliza el paso de resumen, se activa un envío automático solo después del intervalo establecido mediante la función [Servicio de configuración de Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
-      > Algunas prácticas recomendadas son:
-   > * El panel de formulario adaptable que contiene el paso Firma siempre se encuentra en el último o el segundo último panel de un formulario adaptable. Puede ser el segundo último panel solo cuando el último panel contiene el paso Resumen.
-   > * El panel que contiene el componente de paso Firma o Resumen no puede contener ningún otro componente.
-   > * Los formularios adaptables que contienen Paso de firma no pueden tener botón de envío.
-   > * El envío de los formularios adaptables que contienen el paso Firma se gestiona mediante un servicio en segundo plano o el paso Resumen. Si hay un firmante configurado que también esté rellenando el formulario, la ventaja de gestionar el envío del formulario adaptable mediante el paso Resumen es que evalúa inmediatamente que el firmante ha firmado el formulario e invoca la acción de envío. Un servicio en segundo plano tarda más en evaluar si todos los firmantes configurados han firmado el formulario y retrasa la presentación del formulario adaptable.
-   > * Diseñe el formulario para que el usuario no pueda volver atrás desde un panel que contenga el paso Firma o Resumen.
+   >Algunas prácticas recomendadas son:
+   >
+   >* El panel de formulario adaptable que contiene el paso Firma siempre se encuentra en el último o el segundo último panel de un formulario adaptable. Puede ser el segundo último panel solo cuando el último panel contiene el paso Resumen.
+   >* El panel que contiene el componente de paso Firma o Resumen no puede contener ningún otro componente.
+   >* Los formularios adaptables que contienen Paso de firma no pueden tener botón de envío.
+   >* El envío de los formularios adaptables que contienen el paso Firma se gestiona mediante un servicio en segundo plano o el paso Resumen. Si hay un firmante configurado que también esté rellenando el formulario, la ventaja de gestionar el envío del formulario adaptable mediante el paso Resumen es que evalúa inmediatamente que el firmante ha firmado el formulario e invoca la acción de envío. Un servicio en segundo plano tarda más en evaluar si todos los firmantes configurados han firmado el formulario y retrasa la presentación del formulario adaptable.
+   >* Diseñe el formulario para que el usuario no pueda volver atrás desde un panel que contenga el paso Firma o Resumen.
 
 
 

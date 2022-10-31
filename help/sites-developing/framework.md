@@ -12,7 +12,7 @@ discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 4db9279f2d15f2e08939ba453ae8ddbbc3c3d69f
+source-git-commit: efb4f9f8a97baf8d3d02160226e4f4d3f8f64c89
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 0%
@@ -230,8 +230,9 @@ Un valor especial para la variable `cq:movedTo` la propiedad es `nirvana`: se ap
    >[!NOTE]
    >
    >La variable `cq:movedTo` solo se agrega a la etiqueta movida o combinada si se cumple cualquiera de estas condiciones:
-   > 1. La etiqueta se utiliza en el contenido (es decir, tiene una referencia) O
-   > 1. La etiqueta tiene elementos secundarios que ya se han movido.
+   >
+   >1. La etiqueta se utiliza en el contenido (es decir, tiene una referencia) O
+   >1. La etiqueta tiene elementos secundarios que ya se han movido.
 
 
 * `cq:backlinks` mantiene las referencias en la otra dirección, es decir, mantiene una lista de todas las etiquetas que se han movido a la etiqueta B o que se han combinado con ella. Esto es necesario principalmente para mantener `cq:movedTo`propiedades actualizadas cuando la etiqueta B también se mueve, combina o elimina, o cuando la etiqueta B está activada, en cuyo caso todas sus etiquetas backlinks también deben activarse.
@@ -240,8 +241,8 @@ Un valor especial para la variable `cq:movedTo` la propiedad es `nirvana`: se ap
    >
    >La variable `cq:backlinks` solo se agrega a la etiqueta movida o combinada si se cumple cualquiera de estas condiciones:
    >
-   > 1. La etiqueta se utiliza en el contenido (es decir, tiene una referencia) O >
-   > 1. La etiqueta tiene elementos secundarios que ya se han movido.
+   >1. La etiqueta se utiliza en el contenido (es decir, tiene una referencia) O
+   >1. La etiqueta tiene elementos secundarios que ya se han movido.
 
 
 * Leer un `cq:tags` la propiedad de un nodo de contenido implica la siguiente resolución:

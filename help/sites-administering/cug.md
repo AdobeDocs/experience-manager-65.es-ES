@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 4%
+source-wordcount: '794'
+ht-degree: 3%
 
 ---
 
@@ -82,11 +82,11 @@ Para aplicar el CUG a una página:
 
    ![captura de pantalla_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
-   >[NOTA!]
+   >[!NOTE]
    >
-   > Tenga en cuenta que los CUG de la pestaña Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esto al configurar Live Copy.
+   >Tenga en cuenta que los CUG de la pestaña Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esto al configurar Live Copy.
    >
-   > Para obtener más información, consulte [esta página](closed-user-groups.md#aem-livecopy).
+   >Para obtener más información, consulte [esta página](closed-user-groups.md#aem-livecopy).
 
 1. Busque y añada su CUG en la siguiente ventana - en este caso, añada el grupo llamado **cug_access**. Finalmente, presione **Guardar**.
 1. Haga clic en **Habilitado** para definir que esta página (y las páginas secundarias) pertenecen a un CUG.

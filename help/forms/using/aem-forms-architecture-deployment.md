@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2460'
 ht-degree: 1%
@@ -76,7 +76,7 @@ La siguiente imagen muestra varias configuraciones AEM servidor de Form y sus co
 
    >[!NOTE]
    >
-   > Adobe recomienda utilizar un almacén de datos de terceros para guardar los datos procesados finales en lugar de utilizar AEM repositorio.
+   >Adobe recomienda utilizar un almacén de datos de terceros para guardar los datos procesados finales en lugar de utilizar AEM repositorio.
 
 * **Almacenamiento y posprocesamiento de los datos de correspondencia que llegan desde una instancia de publicación:** AEM flujos de trabajo realizan el posprocesamiento opcional de las definiciones de letras correspondientes. Estos flujos de trabajo pueden guardar los datos procesados finales en un almacén de datos externo adecuado.
 

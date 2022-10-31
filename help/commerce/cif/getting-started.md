@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo implementar un proyecto de Conteni
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 6%
@@ -70,17 +70,22 @@ Se pueden configurar las siguientes propiedades:
 - Cliente de GraphQL: seleccione el cliente de GraphQL configurado para la comunicación de back-end de comercio. Esto suele permanecer de forma predeterminada.
 - Vista de almacén: el identificador de vista de tienda. Si está vacía, se utilizará la vista de tienda predeterminada.
 - Ruta de proxy de GraphQL: la ruta de URL del proxy GraphQL AEM usar para solicitudes de proxy al extremo de comercio back-end GraphQL.
+
    >[!NOTE]
    >
-   > En la mayoría de las configuraciones, el valor predeterminado `/api/graphql` no debe cambiarse. Solo la configuración avanzada que no utilice el proxy de GraphQL proporcionado debe cambiar esta configuración.
+   >En la mayoría de las configuraciones, el valor predeterminado `/api/graphql` no debe cambiarse. Solo la configuración avanzada que no utilice el proxy de GraphQL proporcionado debe cambiar esta configuración.
+
 - Habilitar compatibilidad con UID de catálogo : habilite la compatibilidad con UID en lugar de con ID en las llamadas de GraphQL de comercio back-end.
+
    >[!NOTE]
    >
-   > La compatibilidad con UID se ha introducido en Adobe Commerce 2.4.2. Solo debe habilitarse si el back-end de comercio admite un esquema de GraphQL de la versión 2.4.2 o posterior.
+   >La compatibilidad con UID se ha introducido en Adobe Commerce 2.4.2. Solo debe habilitarse si el back-end de comercio admite un esquema de GraphQL de la versión 2.4.2 o posterior.
+
 - Identificador de categoría raíz del catálogo: el identificador (UID o ID) de la raíz del catálogo del almacén
+
    >[!CAUTION]
    >
-   > A partir de la versión 2.0.0 de los componentes principales de CIF, la compatibilidad con `id` se ha eliminado y se ha reemplazado por `uid`. Si su proyecto utiliza los componentes principales del CIF versión 2.0.0, debe activar la compatibilidad con el UID del catálogo y utilizar un UID de categoría válido como &quot;Identificador de categoría raíz del catálogo&quot;.
+   >A partir de la versión 2.0.0 de los componentes principales de CIF, la compatibilidad con `id` se ha eliminado y se ha reemplazado por `uid`. Si su proyecto utiliza los componentes principales del CIF versión 2.0.0, debe activar la compatibilidad con el UID del catálogo y utilizar un UID de categoría válido como &quot;Identificador de categoría raíz del catálogo&quot;.
 
 La configuración que se muestra arriba es para referencia. Los proyectos deben proporcionar sus propias configuraciones.
 

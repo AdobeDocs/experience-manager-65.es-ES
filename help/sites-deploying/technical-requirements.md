@@ -6,7 +6,7 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 9a74a92262a1ee8dd651965b3a770c4c843f7980
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3452'
 ht-degree: 3%
@@ -487,18 +487,18 @@ Para Windows x86:
 
 >[!NOTE]
 >
-> PDF Generator solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
+>PDF Generator solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
 >
-> Además:
+>Además:
 >
-> * El generador de PDF requiere una versión de 32 bits de [Acrobat 2020 Classic track versión 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versión 17.011.30078 para realizar la conversión.
-> * Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux.
-> * PDF Generator solo admite la versión comercial de 32 bits de Microsoft Office Professional Plus y otro software necesario para la conversión en el sistema operativo Windows.
-> * PDF Generator es compatible con las versiones de 32 y 64 bits de OpenOffice en el sistema operativo Linux.
-> * El Generador de PDF no es compatible con Microsoft Office 365.
-> * Las características de PDF, Optimize PDF y Export PDF de OCR solo son compatibles con Windows.
-> * Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad de Generador de PDF. Solo se debe acceder a la versión agrupada mediante programación con AEM Forms, durante el período de licencia de AEM Forms, para su uso con el Generador de PDF de AEM Forms. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
-> * El servicio Generador de PDF no es compatible con Microsoft Windows 10.
+>* El generador de PDF requiere una versión de 32 bits de [Acrobat 2020 Classic track versión 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versión 17.011.30078 para realizar la conversión.
+>* Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux.
+>* PDF Generator solo admite la versión comercial de 32 bits de Microsoft Office Professional Plus y otro software necesario para la conversión en el sistema operativo Windows.
+>* PDF Generator es compatible con las versiones de 32 y 64 bits de OpenOffice en el sistema operativo Linux.
+>* El Generador de PDF no es compatible con Microsoft Office 365.
+>* Las características de PDF, Optimize PDF y Export PDF de OCR solo son compatibles con Windows.
+>* Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad de Generador de PDF. Solo se debe acceder a la versión agrupada mediante programación con AEM Forms, durante el período de licencia de AEM Forms, para su uso con el Generador de PDF de AEM Forms. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* El servicio Generador de PDF no es compatible con Microsoft Windows 10.
 >
 
 

@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 feature: Adaptive Forms
 exl-id: cf037174-3153-486f-85b1-c974cd5a1ace
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 74%
@@ -129,7 +129,7 @@ La operación `GETOrder` toma el valor del campo de formulario `Order ID` como e
 
 >[!NOTE]
 >
-> Si usa la función de devolución de llamada `success`, los valores de salida no se rellenan en los campos del formulario especificados.
+>Si usa la función de devolución de llamada `success`, los valores de salida no se rellenan en los campos del formulario especificados.
 
 ```javascript
 var operationInfo = {

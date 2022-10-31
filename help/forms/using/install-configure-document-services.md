@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: b80886f1e45e0ed65ce2309ef6ea43bfa373a52b
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '5529'
 ht-degree: 2%
@@ -252,7 +252,7 @@ Establezca variables de entorno para el Kit de desarrollo de Java de 32 y 64 bit
 >* En plataformas basadas en UNIX, instale OpenOffice como /root. Si OpenOffice no está instalado como raíz, el servicio Generador de PDF no convierte los documentos de OpenOffice en documentos PDF. Si necesita instalar y ejecutar OpenOffice como un usuario no raíz, proporcione derechos de sudo al usuario no raíz.
 >* Si está utilizando OpenOffice en una plataforma basada en UNIX, ejecute el siguiente comando para configurar la variable path:
 >
-> `export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 ### (Solo para IBM® WebSphere®) Configure el proveedor de sockets IBM® SSL {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -415,7 +415,7 @@ El paquete de complementos de AEM Forms es una aplicación implementada en AEM. 
    >[!NOTE]
    >
    >Su derecho a utilizar las fuentes proporcionadas por terceros que no sean Adobes se rige por los acuerdos de licencia que estas entidades le proporcionen, y no está cubierto por su licencia para utilizar software de Adobe. Adobe recomienda revisar y asegurarse de que cumple todos los acuerdos de licencia aplicables que no sean de Adobe antes de utilizar fuentes que no sean de Adobe con software de Adobe, especialmente en lo que respecta al uso de fuentes en un entorno de servidor.
-   > Cuando instale nuevas fuentes en la carpeta de fuentes, reinicie la instancia de AEM Forms.
+   >Cuando instale nuevas fuentes en la carpeta de fuentes, reinicie la instancia de AEM Forms.
 
 ### Configuración de una cuenta de usuario local para ejecutar el servicio Generador de PDF  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
@@ -427,7 +427,7 @@ Se necesita una cuenta de usuario local para ejecutar el servicio Generador de P
 
 ### Configuración de la configuración de tiempo de espera {#configure-the-time-out-settings}
 
-1. En [Administrador de configuración de AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
+1. En [Administrador de configuración AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
 
    Agregue lo siguiente a **[!UICONTROL Propiedades personalizadas.name]** y haga clic en **[!UICONTROL Guardar]**. Establece el tiempo de espera de respuesta pendiente (también conocido como tiempo de espera de cliente CORBA) en 600 segundos.
 
@@ -596,7 +596,8 @@ La variable [Herramienta de preparación del sistema](#srt-configuration) compru
 
    >[!NOTE]
    >
-   > * Si la herramienta de preparación del sistema informa de que el archivo pdfgen.api no está disponible en la carpeta de complementos de Acrobat, copie el archivo pdfgen.api de la `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` para `[Acrobat_root]\Acrobat\plug_ins` directorio.
+   >* Si la herramienta de preparación del sistema informa de que el archivo pdfgen.api no está disponible en la carpeta de complementos de Acrobat, copie el archivo pdfgen.api de la `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` para `[Acrobat_root]\Acrobat\plug_ins` directorio.
+
 
 1. Vaya a `[Path_of_reports_folder]`. Abra el archivo SystemReadinessTool.html . Compruebe el informe y corrija los problemas mencionados.
 

@@ -4,9 +4,9 @@ description: Encuentre las prácticas recomendadas recopiladas por los equipos d
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: c6ccd204dbd514d6195424aff495bc38f1f31bce
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1616'
 ht-degree: 43%
 
 ---
@@ -56,9 +56,9 @@ En caso de que no se haga referencia a una configuración de modelo, los lanzami
 
 Al crear un nuevo sitio con Live Copy, es conveniente crear configuraciones de modelo para garantizar la disponibilidad del conjunto de funciones MSM completo.
 
->[NOTA!]
+>[!NOTE]
 >
-> Tenga en cuenta que los CUG de la pestaña Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esto al configurar Live Copy.
+>Tenga en cuenta que los CUG de la pestaña Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esto al configurar Live Copy.
 
 ## Sincronización de componentes y contenedores {#components-and-container-synchronization}
 

@@ -10,7 +10,7 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '4128'
 ht-degree: 81%
@@ -199,10 +199,10 @@ Utilice el atributo de solicitud para recuperar las propiedades asociadas de la 
 
    >[!NOTE]
    >
-   > * Si utiliza una plantilla estática, superponga head.jsp en:
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
-   > * Si utiliza una plantilla editable, superponga aftemplatedpage.jsp en:
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+   >* Si utiliza una plantilla estática, superponga head.jsp en:
+      >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >* Si utiliza una plantilla editable, superponga aftemplatedpage.jsp en:
+      >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Establezca [!DNL paramMap] para el atributo de solicitud. Por ejemplo, incluya el siguiente código en el archivo .jsp de la carpeta de aplicaciones:
