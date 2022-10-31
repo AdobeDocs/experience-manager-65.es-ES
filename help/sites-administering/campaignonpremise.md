@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 7fed5ce55f6ee7638d2578ee7ef2d84deb24277f
+source-git-commit: 4712f57808ae769646b00d1098648686815121b6
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1556'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Al integrar AEM con Adobe Campaign, puede administrar la entrega de correo electrónico, el contenido y los formularios directamente en AEM. Se necesitan pasos de configuración tanto en Adobe Campaign Classic como en AEM para habilitar la comunicación bidireccional entre soluciones.
 
-Esta integración permite utilizar AEM y Adobe Campaign Classic de forma independiente. Los especialistas en marketing pueden crear campañas y utilizar la segmentación en Adobe Campaign, mientras que los creadores de contenido en paralelo pueden trabajar en el diseño de contenido en AEM. La integración permite que el contenido y el diseño de la campaña en AEM sean dirigidos y entregados por Adobe Campaign.
+Esta integración permite utilizar AEM y Adobe Campaign Classic de forma independiente. Los especialistas en marketing pueden crear campañas y utilizar la segmentación en Adobe Campaign, mientras que los creadores de contenido en paralelo pueden trabajar en el diseño de contenido en AEM. Con la integración, el contenido y el diseño de la campaña creada en AEM pueden ser dirigidos y entregados por Adobe Campaign.
 
 ## Pasos de la integración {#integration-steps}
 
@@ -152,7 +152,7 @@ AEM ahora puede comunicarse con Adobe Campaign.
 >
 >Asegúrese de que el servidor de Adobe Campaign esté disponible a través de Internet. AEM puede acceder a redes privadas.
 
-## Configuración de la replicación en la instancia de publicación de AEM {#replication}
+## Configurar la replicación en la instancia de publicación de AEM {#replication}
 
 El contenido de la campaña lo crean los autores de contenido en la instancia de creación de AEM. Esta instancia solo suele estar disponible internamente en su organización. Para que los destinatarios de la campaña puedan acceder a contenido como imágenes y recursos, debe publicar ese contenido.
 
@@ -194,7 +194,7 @@ Ha configurado la replicación en la instancia de publicación de AEM para que l
 
 1. Haga clic o pulse **Guardar**.
 
-Ha configurado el externalizador y Adobe Campaign no puede acceder al contenido.
+Ha configurado el externalizador y Adobe Campaign ahora puede acceder al contenido.
 
 >[!NOTE]
 Se debe poder acceder a la instancia de publicación desde el servidor de Adobe Campaign. Si señala a `localhost:4503` Para otro servidor al que Adobe Campaign no pueda acceder, las imágenes de AEM no aparecerán en la consola de Adobe Campaign.
