@@ -12,9 +12,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: bc3dd7d229a75323b98a96d60dcbb3ae2b8c09ab
 workflow-type: tm+mt
-source-wordcount: '5475'
+source-wordcount: '5469'
 ht-degree: 2%
 
 ---
@@ -87,7 +87,7 @@ Las tablas siguientes enumeran cada elemento junto con:
    <td>administradores</td>
    <td>Grupo</td>
    <td><p>Grupo que otorga derechos de administrador a todos sus miembros. Solo el administrador puede editar este grupo.</p> <p>Tiene derechos de acceso completos.</p> </td>
-   <td>Si establece un nodo 'deny-all' en un nodo, los administradores solo tendrán acceso si está habilitado de nuevo para ese grupo.</td>
+   <td>Incluso si establece un nodo 'deny-all' en un nodo, los administradores aún pueden acceder al nodo</td>
   </tr>
   <tr>
    <td>content-authors</td>
