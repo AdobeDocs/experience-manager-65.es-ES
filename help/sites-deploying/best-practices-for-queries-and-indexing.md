@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b60278940f48731ee9085635c0d4a3d7da24ebc8
 workflow-type: tm+mt
-source-wordcount: '4679'
+source-wordcount: '4664'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Los índices Solr se pueden configurar para ejecutar integrados en el servidor d
 
 >[!NOTE]
 >
->Mientras toma el enfoque de búsqueda de Solr integrado, permitiría descargar la indexación a un servidor Solr. Si se utilizan las características más avanzadas del servidor Solr mediante un método basado en rastreadores, será necesario realizar un trabajo de configuración adicional. El alambre de techo ha creado un [conector de código abierto](https://www.aemsolrsearch.com/#/) para acelerar estos tipos de implementaciones.
+>Mientras toma el enfoque de búsqueda de Solr integrado, permitiría descargar la indexación a un servidor Solr. Si se utilizan las características más avanzadas del servidor Solr mediante un método basado en rastreadores, será necesario realizar un trabajo de configuración adicional.
 
 La desventaja de este enfoque es que, aunque de forma predeterminada, las consultas de AEM respetarán las ACL y, por lo tanto, ocultarán los resultados a los que un usuario no tiene acceso, la externalización de la búsqueda a un servidor Solr no admitirá esta función. Si la búsqueda se va a externalizar de esta manera, se debe tener cuidado adicional para garantizar que los usuarios no reciban resultados que no deban ver.
 
@@ -458,9 +458,9 @@ En el funcionamiento normal de AEM, por ejemplo, cargando recursos a través de 
 
 *Ejecute el paso 1(a-b) durante una ventana de mantenimiento/período de bajo uso, ya que el almacén de nodos se atraviesa durante esta operación, lo que puede conllevar una carga significativa en el sistema.*
 
-1 bis. Ejecutar `oak-run.jar --generate` para crear una lista de nodos de los que se extraerá previamente su texto.
+1a. Ejecutar `oak-run.jar --generate` para crear una lista de nodos de los que se extraerá previamente su texto.
 
-1 ter. La lista de nodos (1a) se almacena en el sistema de archivos como un archivo CSV
+1b. La lista de nodos (1a) se almacena en el sistema de archivos como un archivo CSV
 
 Tenga en cuenta que todo el almacén de nodos se atraviesa (según lo especificado por las rutas en el comando oak-run) cada vez `--generate` se ejecuta y se ejecuta una **new** Se crea el archivo CSV. El archivo CSV es **not** se reutiliza entre ejecuciones discretas del proceso de preextracción de texto (pasos 1 a 2).
 
@@ -468,9 +468,9 @@ Tenga en cuenta que todo el almacén de nodos se atraviesa (según lo especifica
 
 *El paso 2(a-c) se puede ejecutar durante el funcionamiento normal de AEM si solo interactúa con el almacén de datos.*
 
-2 bis. Ejecutar `oak-run.jar --tika` para extraer previamente texto para los nodos binarios enumerados en el archivo CSV generado en (1b)
+2a. Ejecutar `oak-run.jar --tika` para extraer previamente texto para los nodos binarios enumerados en el archivo CSV generado en (1b)
 
-2 ter. El proceso iniciado en (2a) accede a los nodos binarios definidos en el CSV en el Almacén de datos directamente y extrae texto.
+2b. El proceso iniciado en (2a) accede a los nodos binarios definidos en el CSV en el Almacén de datos directamente y extrae texto.
 
 2 quáter.  El texto extraído se almacena en el sistema de archivos en un formato que no se puede utilizar en el proceso de reindexación de Oak (3a)
 
@@ -482,6 +482,6 @@ El texto extraído previamente se puede añadir gradualmente a con el tiempo. La
 
 *Ejecute la reindexación (pasos 3a-b) durante un período de mantenimiento/bajo uso, ya que el almacén de nodos se atraviesa durante esta operación, lo que puede conllevar una carga significativa en el sistema.*
 
-3 bis. [Volver a indexar](#how-to-re-index) de índices de Lucene se invoca en AEM
+3a. [Volver a indexar](#how-to-re-index) de índices de Lucene se invoca en AEM
 
-3 ter. La configuración OSGi de Apache Jackrabbit Oak DataStore PreExtractingTextProvider (configurada para apuntar el texto extraído a través de una ruta del sistema de archivos) ordena a Oak que obtenga texto completo de los archivos extraídos y evita directamente pulsar y procesar los datos almacenados en el repositorio.
+3b. La configuración OSGi de Apache Jackrabbit Oak DataStore PreExtractingTextProvider (configurada para apuntar el texto extraído a través de una ruta del sistema de archivos) ordena a Oak que obtenga texto completo de los archivos extraídos y evita directamente pulsar y procesar los datos almacenados en el repositorio.
