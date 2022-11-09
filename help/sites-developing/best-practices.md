@@ -1,7 +1,7 @@
 ---
 title: Prácticas recomendadas
 seo-title: Best Practices
-description: Los equipos de Ingeniería y Consultoría de Adobe han desarrollado un completo conjunto de prácticas recomendadas para desarrolladores de AEM
+description: Los equipos de ingeniería y consultoría de Adobe han desarrollado un conjunto completo de prácticas recomendadas para los desarrolladores de AEM
 seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 14%
+source-wordcount: '463'
+ht-degree: 19%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 14%
 
 ## Prácticas recomendadas para desarrolladores: introducción {#best-practices-for-developers-getting-started}
 
-Los equipos de Ingeniería y Consultoría de Adobe han desarrollado un completo conjunto de prácticas recomendadas para desarrolladores de AEM. Los desarrolladores de Adobe siguen estas prácticas recomendadas a medida que desarrollan actualizaciones de productos AEM principales y código de cliente para implementaciones de clientes.
+Los equipos de ingeniería y consultoría de Adobe han desarrollado un conjunto completo de prácticas recomendadas para los desarrolladores de AEM. Los desarrolladores de Adobe siguen estas prácticas recomendadas a medida que desarrollan actualizaciones de productos AEM principales y código de cliente para implementaciones de clientes.
 
 Antes de comenzar el proyecto de desarrollo de AEM, revise primero estas prácticas recomendadas:
 
@@ -32,7 +32,7 @@ Antes de comenzar el proyecto de desarrollo de AEM, revise primero estas prácti
 * [Problemas de código](/help/sites-developing/code-pitfalls.md)
 * [Interacción de JCR](/help/sites-developing/jcr-integration.md)
 * [Paquetes OSGi](/help/sites-developing/osgi-bundles.md)
-* [Prácticas recomendadas de API de Java](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Prácticas recomendadas de API de Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Información adicional sobre prácticas recomendadas {#additional-best-practices-information}
 
@@ -96,7 +96,7 @@ El lenguaje de plantilla de HTML (HTL) es un nuevo sistema de plantilla de HTML,
 
 |  |  |  |
 |---|---|---|
-| Información general sobre HTL | [Información general y sintaxis de HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html) | Este documento describe qué es HTL, cómo se mueve a HTL, un proyecto de ejemplo, sintaxis, expresiones y afirmaciones |
+| Información general sobre HTL | [Información general y sintaxis de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | Este documento describe qué es HTL, cómo se mueve a HTL, un proyecto de ejemplo, sintaxis, expresiones y afirmaciones |
 | Uso de API en java | [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | La HTL Java Use-API permite que un archivo HTL acceda a los métodos de ayuda en una clase Java personalizada. |
 
 >[!NOTE]

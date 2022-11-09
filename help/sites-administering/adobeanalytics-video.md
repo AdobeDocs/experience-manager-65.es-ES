@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1743'
 ht-degree: 2%
 
 ---
@@ -140,7 +140,7 @@ La siguiente tabla describe las variables de CQ predeterminadas que se proporcio
 
 1. Para asignar las variables de CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder al lado de la variable de CQ en el componente.
 
-   Para obtener información sobre la optimización de las asignaciones, consulte la [Medición de vídeo en Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guía.
+   Para obtener información sobre la optimización de las asignaciones, consulte la [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guía.
 
 1. [Agregar el marco](/help/sites-administering/adobeanalytics.md) a la página.
 1. Para probar la configuración en **Modo de vista previa**, reproduzca el vídeo para obtener llamadas de Adobe Analytics al déclencheur.
@@ -275,7 +275,7 @@ eventdata.events.milestoneXX
 
 1. Para asignar las variables de CQ a las propiedades de Adobe Analytics, arrastre las propiedades de Adobe Analytics desde ContentFinder al lado de la variable de CQ en el componente.
 
-   Para obtener información sobre la optimización de las asignaciones, consulte la [Medición de vídeo en Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guía.
+   Para obtener información sobre la optimización de las asignaciones, consulte la [Medición de vídeo en Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guía.
 
 1. [Agregar el marco](/help/sites-administering/adobeanalytics.md) a la página.
 1. Para probar la configuración en **Modo de vista previa**, reproduzca el vídeo para obtener llamadas de Adobe Analytics al déclencheur.
@@ -383,4 +383,4 @@ Al utilizar el método** de segundos heredados**, las llamadas de Adobe Analytic
 
 **Referencias utilizadas en este tutorial:**
 
-[0] [https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)

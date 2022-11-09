@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
 exl-id: 7ccd67a7-9945-48c1-9986-f4eaf0f2b961
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1503'
 ht-degree: 4%
 
 ---
@@ -40,15 +40,15 @@ Existen tres maneras de implementar Livefyre en un componente de AEM personaliza
 **Método 1: Implementación de aplicación de Designer**
 
 * **Qué:** La forma más sencilla y rápida de integrar una aplicación Livefyre. Puede diseñar, configurar y generar un código incrustado de JavaScript personalizado para integrar una aplicación de muro de medios en una página en cuestión de minutos.
-* **Cómo:**  [Crear, previsualizar, publicar e incrustar una aplicación de muro de medios](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
+* **Cómo:**  [Crear, previsualizar, publicar e incrustar una aplicación de muro de medios](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
 * **Ejemplo:** [https://codepen.io/dharafyre/pen/bvGrLo](https://codepen.io/dharafyre/pen/bvGrLo)
 
 **Método 2: Implementación del SDK**
 
-* **Qué:** [Livefyre.js](https://docs.adobe.com/content/help/en/livefyre/implementation/c-livefyre_js.html) es la biblioteca principal que alimenta las aplicaciones y la autenticación en un sitio. Define el *window.Livefyre* y un único método público, *Livefyre.required*, que se puede utilizar para cargar otras bibliotecas JavaScript de Livefyre que ayuden a incrustar aplicaciones de Livefyre e integrarse con plataformas de autenticación de usuarios de terceros.
+* **Qué:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) es la biblioteca principal que alimenta las aplicaciones y la autenticación en un sitio. Define el *window.Livefyre* y un único método público, *Livefyre.required*, que se puede utilizar para cargar otras bibliotecas JavaScript de Livefyre que ayuden a incrustar aplicaciones de Livefyre e integrarse con plataformas de autenticación de usuarios de terceros.
 
-* **Cómo**: [Utilice el paquete streamhub-wallpackage del SDK de JavaScript de Livefyre](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/c-media-wall-integration.html)
+* **Cómo**: [Utilice el paquete streamhub-wallpackage del SDK de JavaScript de Livefyre](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-media-wall-integration.html)
 
 * **Ejemplo**: [https://codepen.io/dharafyre/pen/KZKBNv?editors=1010](https://codepen.io/dharafyre/pen/KZKBNv?editors=1010)
 
@@ -56,7 +56,7 @@ Para personalizaciones avanzadas con el SDK, consulte [SDK de StreamHub](https:/
 
 **Método 3: Implementación de API**
 
-* Para crear experiencias personalizadas y visualizaciones de datos, las aplicaciones de Livefyre se pueden crear desde cero consumiendo datos sociales y de Livefyre utilizando la variable [API de Bootstrap y flujo](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+* Para crear experiencias personalizadas y visualizaciones de datos, las aplicaciones de Livefyre se pueden crear desde cero consumiendo datos sociales y de Livefyre utilizando la variable [API de Bootstrap y flujo](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
 Asegúrese de seguir [Twitter](https://developer.twitter.com/en/developer-terms/display-requirements.html), [Facebook](https://en.facebookbrand.com/guidelines/brand)y [Instagram](https://en.instagram-brand.com/) mostrar directrices al crear la interfaz de usuario para UGC.
 
@@ -65,7 +65,7 @@ Asegúrese de seguir [Twitter](https://developer.twitter.com/en/developer-terms/
 Para integraciones de muro de medios que requieran autenticación, consulte:
 
 * [Personalizar la integración del inicio de sesión único](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) para AEM Identity Management
-* [Integración de identidad](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) para plataformas de autenticación de terceros
+* [Integración de identidad](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) para plataformas de autenticación de terceros
 
 ### Información general de caso de uso {#use-case-overview}
 
@@ -76,7 +76,7 @@ Pasos para implementar:
 1. [Introducción](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
 1. [Configuración de AEM para utilizar Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
 1. [Arrastre y suelte AEM componente Muro de medios en su página](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
-1. [Configurar flujos y agregar reglas para depurar UGC y mostrar en el componente de muro de medios](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html)
+1. [Configurar flujos y agregar reglas para depurar UGC y mostrar en el componente de muro de medios](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html)
 
 Para ver vídeos de formación sobre la transmisión de UGC, consulte [Crear flujos de contenido automáticos y buscar contenido social en Adobe Experience Manager Livefyre](https://helpx.adobe.com/experience-manager/tutorials.html).
 
@@ -85,9 +85,9 @@ Para ver vídeos de formación sobre la transmisión de UGC, consulte [Crear flu
 * [Muro de medios CNN](https://edition.cnn.com/specials/nepal-earthquake-media-wall)
 * [Pared de medios Tour PGA](https://www.pgatour.com/social-hub.html)
 
-Para crear experiencias personalizadas y visualizaciones de datos, las aplicaciones de Livefyre se pueden crear desde cero consumiendo datos sociales y de Livefyre utilizando la variable [API de Bootstrap y flujo](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+Para crear experiencias personalizadas y visualizaciones de datos, las aplicaciones de Livefyre se pueden crear desde cero consumiendo datos sociales y de Livefyre utilizando la variable [API de Bootstrap y flujo](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
-Para las aplicaciones de Livefyre que requieren autenticación, consulte [Integración de identidad](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) para plataformas de autenticación de terceros.
+Para las aplicaciones de Livefyre que requieren autenticación, consulte [Integración de identidad](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) para plataformas de autenticación de terceros.
 
 * [Pared de medios Tour PGA](https://www.pgatour.com/social-hub.html)
 * [Tiempo de expiración](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
@@ -105,18 +105,18 @@ Existen tres maneras de implementar la aplicación de comentarios de Livefyre en
 **Método 1: Implementación de aplicación de Designer**
 
 * **Qué:** La forma más sencilla y rápida de integrar una aplicación Livefyre. Puede diseñar, configurar y generar un código incrustado de JavaScript personalizado para integrar una aplicación de muro de medios en una página en cuestión de minutos.
-* **Cómo:** [Crear, previsualizar, publicar e incrustar una aplicación de comentarios](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
+* **Cómo:** [Crear, previsualizar, publicar e incrustar una aplicación de comentarios](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
 * **Ejemplo:** [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
 **Método 2: Implementación del SDK**
 
-* **Qué:** [Livefyre.js](https://docs.adobe.com/content/help/en/livefyre/implementation/c-livefyre_js.html) es la biblioteca principal que alimenta las aplicaciones y la autenticación en un sitio. Define el *window.Livefyre* y un único método público, *Livefyre.required*, que se puede utilizar para cargar otras bibliotecas JavaScript de Livefyre que ayuden a incrustar aplicaciones de Livefyre e integrarse con plataformas de autenticación de usuarios de terceros.
+* **Qué:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) es la biblioteca principal que alimenta las aplicaciones y la autenticación en un sitio. Define el *window.Livefyre* y un único método público, *Livefyre.required*, que se puede utilizar para cargar otras bibliotecas JavaScript de Livefyre que ayuden a incrustar aplicaciones de Livefyre e integrarse con plataformas de autenticación de usuarios de terceros.
 
 * **Cómo:**
 
-   * Creación de una colección o aplicación mediante [CollectionMeta token](https://docs.adobe.com/content/help/en/livefyre/implementation/getting-started/implementation-process/c-collectionmeta-tokent.html).
-   * Integrar [Aplicación de comentarios](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/comments/c-comments-integration.html) en sitios mediante la estructura de código incrustado de Livefyre.js.
+   * Creación de una colección o aplicación mediante [CollectionMeta token](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/implementation-process/c-collectionmeta-tokent.html).
+   * Integrar [Aplicación de comentarios](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/comments/c-comments-integration.html) en sitios mediante la estructura de código incrustado de Livefyre.js.
 
 * **Ejemplo:**  [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
@@ -124,12 +124,12 @@ Para personalizaciones avanzadas con el SDK, consulte [SDK de StreamHub](https:/
 
 **Método 3: Implementación de API**
 
-* Para crear experiencias personalizadas y visualizaciones de datos, las aplicaciones de Livefyre se pueden crear desde cero consumiendo datos sociales y de Livefyre utilizando la variable [API de Bootstrap y flujo](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+* Para crear experiencias personalizadas y visualizaciones de datos, las aplicaciones de Livefyre se pueden crear desde cero consumiendo datos sociales y de Livefyre utilizando la variable [API de Bootstrap y flujo](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
 ### Integración de la autenticación de la aplicación de comentarios {#comments-app-authentication-integration}
 
 * [Personalizar la integración del inicio de sesión único](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) para AEM Identity Management
-* [Integración de identidad](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) para plataformas de autenticación de terceros
+* [Integración de identidad](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) para plataformas de autenticación de terceros
 
 ### Ejemplos de clientes {#customer-examples-1}
 
@@ -139,15 +139,15 @@ Para personalizaciones avanzadas con el SDK, consulte [SDK de StreamHub](https:/
 
 **Configuración de Livefyre (para Rights Management y depuración de UGC):**
 
-1. [Configurar flujos y agregar reglas para depurar UGC en carpetas de la biblioteca de activos de Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html).
+1. [Configurar flujos y agregar reglas para depurar UGC en carpetas de la biblioteca de activos de Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html).
 
    1. Para ver vídeos de formación sobre la transmisión de UGC, consulte [Crear flujos de contenido automáticos y buscar contenido social en Adobe Experience Manager Livefyre](https://helpx.adobe.com/experience-manager/tutorials.html).
 
-1. [Recopile, organice y administre UGC depurado en carpetas de la biblioteca de activos de Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/library/assets/c-assets.html).
+1. [Recopile, organice y administre UGC depurado en carpetas de la biblioteca de activos de Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/library/assets/c-assets.html).
 
    1. Para ver vídeos de formación sobre la creación y administración de carpetas en la biblioteca de activos de Livefyre Studio, consulte [Trabajar con Assets en Adobe Experience Manager Livefyre](https://helpx.adobe.com/experience-manager/tutorials.html).
 
-1. [Solicitar derechos para UGC depurado usando Livefyre Studio](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html).
+1. [Solicitar derechos para UGC depurado usando Livefyre Studio](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html).
 
 **Configuración de AEM (para importar UGC a AEM Assets):**
 
@@ -171,12 +171,12 @@ Existen dos maneras de implementar la aplicación de reseñas de Livefyre en un 
 
 **Método 1: Implementación del SDK**
 
-* **Qué:** [Livefyre.js](https://docs.adobe.com/content/help/en/livefyre/implementation/c-livefyre_js.html) es la biblioteca principal que alimenta las aplicaciones y la autenticación en un sitio. Define el *window.Livefyre* y un único método público, *Livefyre.required*, que se puede utilizar para cargar otras bibliotecas JavaScript de Livefyre que ayuden a incrustar aplicaciones de Livefyre e integrarse con plataformas de autenticación de usuarios de terceros.
+* **Qué:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) es la biblioteca principal que alimenta las aplicaciones y la autenticación en un sitio. Define el *window.Livefyre* y un único método público, *Livefyre.required*, que se puede utilizar para cargar otras bibliotecas JavaScript de Livefyre que ayuden a incrustar aplicaciones de Livefyre e integrarse con plataformas de autenticación de usuarios de terceros.
 
 * **Cómo:**
 
-   * Crear las revisiones [CollectionMeta token](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/c-reviews-integration.html) para especificar los metadatos que se guardarán en la colección de revisiones.
-   * Integrar [Aplicación de revisiones](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/c-reviews-integration.html) en Sitios que usan la variable *Livefyre.js* estructura de código incrustado
+   * Crear las revisiones [CollectionMeta token](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) para especificar los metadatos que se guardarán en la colección de revisiones.
+   * Integrar [Aplicación de revisiones](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) en Sitios que usan la variable *Livefyre.js* estructura de código incrustado
 
 * **Ejemplo:**  [https://codepen.io/dharafyre/pen/GXgvvd](https://codepen.io/dharafyre/pen/GXgvvd)
 
@@ -191,7 +191,7 @@ Encontrará API de valoraciones y revisiones adicionales [here](https://api.live
 ### Integración de la autenticación de la aplicación de comentarios {#comments-app-authentication-integration-1}
 
 * [Personalizar la integración del inicio de sesión único](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) para AEM Identity Management
-* [Integración de identidad](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) para plataformas de autenticación de terceros
+* [Integración de identidad](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) para plataformas de autenticación de terceros
 
 ### Ejemplos de clientes {#customer-examples-2}
 

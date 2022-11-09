@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Por ejemplo, consulte la configuración de los campos agrupados en el **Más tí
 
 >[!TIP]
 >
->Consulte la [Tutorial sobre la ampliación de las propiedades de la página](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obtener una guía sobre cómo personalizar las propiedades de página.
+>Consulte la [Tutorial sobre la ampliación de las propiedades de la página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obtener una guía sobre cómo personalizar las propiedades de página.
 
 ## Configuración de las propiedades de página {#configuring-your-page-properties}
 

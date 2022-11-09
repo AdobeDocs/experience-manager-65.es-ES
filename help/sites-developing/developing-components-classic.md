@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '2394'
+source-wordcount: '2392'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ La IU clásica utiliza ExtJS para crear utilidades que proporcionen la aparienci
 >
 >Aunque tanto el lenguaje de plantilla de HTML (HTL) como JSP pueden utilizarse para desarrollar componentes para la IU clásica, esta página ilustra el desarrollo con JSP. Esto se debe únicamente al historial de uso de JSP en la IU clásica.
 >
->HTL es ahora el lenguaje de secuencias de comandos recomendado para AEM. Consulte [HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html) y [Desarrollo de componentes AEM](/help/sites-developing/developing-components.md) para comparar métodos.
+>HTL es ahora el lenguaje de secuencias de comandos recomendado para AEM. Consulte [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) y [Desarrollo de componentes AEM](/help/sites-developing/developing-components.md) para comparar métodos.
 
 ## Estructura {#structure}
 

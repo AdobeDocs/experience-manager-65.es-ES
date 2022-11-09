@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2615'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ También puede proporcionar un archivo de imagen para utilizarlo como miniatura 
 Existen pestañas adicionales (y opcionales) para crear el servicio de nube e integrar el complemento SDK de Adobe Mobile Services en la aplicación.
 
 * Generar: Haga clic en administrar configuraciones y configure el servicio de compilación build.phonegap.com aquí. A continuación, desde la lista desplegable podrá seleccionar el servicio en la nube PhoneGap recién creado.
-* Analytics: Haga clic en administrar configuraciones y configure su [SDK de Adobe Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) servicio en la nube. A continuación, desde la lista desplegable podrá seleccionar los servicios móviles recién creados para integrarlos en su aplicación móvil.
+* Analytics: Haga clic en administrar configuraciones y configure su [SDK de Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) servicio en la nube. A continuación, desde la lista desplegable podrá seleccionar los servicios móviles recién creados para integrarlos en su aplicación móvil.
 
 >[!NOTE]
 >

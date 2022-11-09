@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '414'
 ht-degree: 7%
 
 ---
@@ -65,7 +65,7 @@ Los campos se activan en el componente de página (*not* en la plantilla):
 
    >[!NOTE]
    >
-   >En este ejemplo se supone que los componentes principales se han instalado en la instancia, como sucede si la instancia se está ejecutando con contenido de muestra de We.Retail. Consulte la [Documentación de componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) para obtener más información.
+   >En este ejemplo se supone que los componentes principales se han instalado en la instancia, como sucede si la instancia se está ejecutando con contenido de muestra de We.Retail. Consulte la [Documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) para obtener más información.
 
 1. Vaya al campo requerido dentro del `cq:dialog` definición.
 1. Defina la siguiente propiedad en el nodo de campo:

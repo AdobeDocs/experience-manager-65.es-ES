@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2244'
+source-wordcount: '2242'
 ht-degree: 0%
 
 ---
@@ -189,7 +189,7 @@ Para utilizar Workbench, debe tener una instancia de AEM Forms en ejecución, no
 
 ### Configuración del tiempo de espera {#configuring-timeout-settings}
 
-De forma predeterminada, el tiempo de espera de Workbench es de dos horas, independientemente de la actividad o la inactividad. Para editar la configuración de tiempo de espera, consulte &quot;Configuración de la administración de usuarios > Configurar atributos avanzados del sistema&quot; en la <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Ayuda de la consola de administración</a>.
+De forma predeterminada, el tiempo de espera de Workbench es de dos horas, independientemente de la actividad o la inactividad. Para editar la configuración de tiempo de espera, consulte &quot;Configuración de la administración de usuarios > Configurar atributos avanzados del sistema&quot; en la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Ayuda de la consola de administración</a>.
 
 ### Configuración de Workbench para que se conecte a través de HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 

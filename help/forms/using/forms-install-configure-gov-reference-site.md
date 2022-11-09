@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '4703'
+source-wordcount: '4689'
 ht-degree: 3%
 
 ---
@@ -88,7 +88,7 @@ Esta sección contiene información sobre la instalación del paquete de demostr
    1. Select **[!UICONTROL Forms]** de la variable **[!UICONTROL Solución]** lista desplegable.
    2. Seleccione la versión y el tipo del paquete. También puede usar la variable **[!UICONTROL Descargas de búsqueda]** para filtrar los resultados.
 1. Toque . **we-gov-forms.pkg.all-&lt;version>.zip** nombre del paquete, seleccione **[!UICONTROL Aceptar términos de EULA]** y toque **[!UICONTROL Descargar]**.
-1. Abra [Administrador de paquetes](https://docs.adobe.com/content/help/es/experience-manager-65/administering/contentmanagement/package-manager.html) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
+1. Abra [Administrador de paquetes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=es) y haga clic en **[!UICONTROL Cargar paquete]** para cargar el paquete.
 1. Seleccione el paquete y haga clic en **[!UICONTROL Instalar]**.
 
    ![paquete de formularios de gov](assets/wegov_forms_package.jpg)
@@ -225,7 +225,7 @@ Esta sección contiene detalles e instrucciones sobre la configuración de MS Dy
 
 **Referencias:**
 
-1. [Configuración de OData de Microsoft Dynamics](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
+1. [Configuración de OData de Microsoft Dynamics](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
 1. [Configuración de Microsoft Dynamics para AEM Forms](https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
 
 #### Servicio en la nube de MS Dynamics OData {#ms-dynamics-odata-cloud-service}
@@ -472,7 +472,7 @@ Para instalar y configurar AEM Forms con el Adobe Forms, los usuarios de la herr
 
 Revise lo siguiente antes de leer más instrucciones:
 
-* [Configurar el servicio de conversión automatizada de formularios](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html)
+* [Configurar el servicio de conversión automatizada de formularios](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
 #### Creación de una configuración de IMS, parte 1 {#creating-ims-config}
 
@@ -569,7 +569,7 @@ Una vez completada la configuración de IMS, podemos proceder a revisar la confi
 
 1. Para esta configuración, dejamos vacíos los dos valores de casilla de verificación.
 
-   * Para obtener más información sobre estas opciones, consulte [Configuración del servicio en la nube](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
+   * Para obtener más información sobre estas opciones, consulte [Configuración del servicio en la nube](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### Configuración de nube (producción AFC de We.Finance) {#configure-cloud-configuration-wefinance}
 
@@ -599,7 +599,7 @@ Una vez completada la configuración de IMS, podemos proceder a crear la configu
 
 1. Para esta configuración, dejamos vacíos los dos valores de casilla de verificación.
 
-   * Para obtener más información sobre estas opciones, consulte [Configuración del servicio en la nube](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
+   * Para obtener más información sobre estas opciones, consulte [Configuración del servicio en la nube](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### Prueba de la conversión de formularios (aplicación de inscripción We.Gov) {#test-forms-conversion}
 
@@ -639,7 +639,7 @@ Una vez configurada la configuración, los usuarios pueden probarla cargando un 
 
 #### Problemas y notas conocidos {#known-issues-notes}
 
-El servicio de Automated forms conversion incluye determinadas [prácticas recomendadas, patrones complejos conocidos](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html)y [problemas conocidos](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html). Revise estos elementos antes de empezar a utilizar el servicio de Automated forms conversion de AEM Forms.
+El servicio de Automated forms conversion incluye determinadas [prácticas recomendadas, patrones complejos conocidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html)y [problemas conocidos](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html). Revise estos elementos antes de empezar a utilizar el servicio de Automated forms conversion de AEM Forms.
 
 1. Genere el formulario con Generar formularios adaptables sin enlaces de datos habilitados si desea enlazar el formulario a un FDM después de la conversión.
 
@@ -796,6 +796,6 @@ Para configurarlos para que se activen dentro del flujo de trabajo, los usuarios
 
 1. Una vez finalizado, haga clic en el botón Save para guardar la configuración.
 
-## Siguientes pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
 Ahora, todos están listos para explorar el sitio de referencia de We.Gov. Para obtener más información sobre los pasos y el flujo de trabajo del sitio de referencia We.Gov, consulte [Recorrido por el sitio web de referencia de We.Gov](../../forms/using/forms-gov-reference-site-user-demo.md).

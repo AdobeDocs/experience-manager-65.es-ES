@@ -10,9 +10,9 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '3757'
+source-wordcount: '3755'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Al implementar AEM (especialmente por primera vez), deberá revisar la [capacida
 Tenga en cuenta las características de AEM que utilizará y el impacto en su diseño; por ejemplo:
 
 * [Comercio](/help/commerce/cif-classic/administering/ecommerce.md)
-* [Screens](https://docs.adobe.com/content/help/es/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=es)
 * [Assets](/help/assets/assets.md)
 * [Etiquetas](/help/sites-administering/tags.md)
 * [Traducción y administración de varios sitios](/help/sites-administering/msm-and-translation.md)

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1528'
 ht-degree: 8%
 
 ---
@@ -87,7 +87,7 @@ Utilice la variable [Consola web para configurar el paquete OSGi](/help/sites-de
 >
 >Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
 >
->La variable [Complemento Activity Map proporcionado por Adobe Analytics](https://docs.adobe.com/content/help/es-ES/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.translate.html) debe usarse ahora.
+>La variable [Complemento Activity Map proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es) debe usarse ahora.
 
 ## Configuración del Activity Map {#configuring-for-the-activity-map}
 
@@ -95,7 +95,7 @@ Utilice la variable [Consola web para configurar el paquete OSGi](/help/sites-de
 >
 >Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
 >
->La variable [Complemento Activity Map proporcionado por Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) debe usarse ahora.
+>La variable [Complemento Activity Map proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) debe usarse ahora.
 
 ## Creación de un marco de Adobe Analytics {#creating-a-adobe-analytics-framework}
 
@@ -184,7 +184,7 @@ Los descendientes de la página heredan la asociación con la estructura. Por ej
 1. Select **Guardar y cerrar**.
 1. **[Publicación](/help/sites-authoring/publishing-pages.md)** la página para activar la página y cualquier configuración o archivo conectado.
 1. El paso final es visitar la página en la instancia de publicación y buscar una palabra clave (por ejemplo, eggfactory) utilizando la variable **Buscar** componente.
-1. A continuación, puede comprobar las llamadas realizadas a Adobe Analytics con una herramienta adecuada; por ejemplo, [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+1. A continuación, puede comprobar las llamadas realizadas a Adobe Analytics con una herramienta adecuada; por ejemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 1. Utilizando el ejemplo proporcionado, la llamada debe contener el valor introducido (es decir, eggcentral) en eVar7 y la lista de eventos debe contener event3.
 
 ### Vistas de la página {#page-views}

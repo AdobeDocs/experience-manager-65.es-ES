@@ -7,9 +7,9 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1341'
 ht-degree: 1%
 
 ---
@@ -178,7 +178,7 @@ Se recomienda clonar el sistema de producción y crear el índice sin conexión 
 
 ### Preparación de un Runbook y una ejecución de prueba {#prepare-a-runbook-and-trial-run}
 
-Se recomienda preparar un [runbook](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) y realizar algunas pruebas antes de ejecutar la actualización en producción.
+Se recomienda preparar un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) y realizar algunas pruebas antes de ejecutar la actualización en producción.
 
 ### Modo Transversal Doc Con Indexación Sin Conexión {#doc-traversal-mode-with-offline-indexing}
 

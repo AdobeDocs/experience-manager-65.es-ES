@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2234'
+source-wordcount: '2228'
 ht-degree: 4%
 
 ---
@@ -79,7 +79,7 @@ Los registros se combinan con una plantilla de comunicación interactiva para pr
 
 Para crear una comunicación interactiva a partir de registros guardados en un archivo JSON:
 
-1. Cree un [Carpeta vigilada](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) y configúrela para utilizar la API por lotes:
+1. Cree un [Carpeta vigilada](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) y configúrela para utilizar la API por lotes:
    1. Inicie sesión en la instancia de autor de AEM Forms.
    1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta vigilada]**. Toque **[!UICONTROL Nuevo]**.
    1. Especifique la variable **[!UICONTROL Nombre]** y física **[!UICONTROL Ruta]** de la carpeta. Por ejemplo, `c:\batchprocessing`.
@@ -109,7 +109,7 @@ Para crear una comunicación interactiva a partir de registros guardados en un a
 
 #### Utilice los datos de entrada guardados en un origen de datos externo y a los que se accede mediante el modelo de datos de formulario para generar una comunicación interactiva {#use-fdm-as-data-source}
 
-Los datos (registros) guardados en una fuente de datos externa se combinan con una plantilla de comunicación interactiva para producir una comunicación interactiva. Cuando se crea una comunicación interactiva, se conecta a un origen de datos externo a través de un Modelo de datos de formulario (FDM) para acceder a los datos. Puede configurar el servicio de procesamiento por lotes Carpetas vigiladas para que recupere datos utilizando el mismo Modelo de datos de formulario de un origen de datos externo. Hasta [crear una comunicación interactiva a partir de registros guardados en un origen de datos externo](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
+Los datos (registros) guardados en una fuente de datos externa se combinan con una plantilla de comunicación interactiva para producir una comunicación interactiva. Cuando se crea una comunicación interactiva, se conecta a un origen de datos externo a través de un Modelo de datos de formulario (FDM) para acceder a los datos. Puede configurar el servicio de procesamiento por lotes Carpetas vigiladas para que recupere datos utilizando el mismo Modelo de datos de formulario de un origen de datos externo. Hasta [crear una comunicación interactiva a partir de registros guardados en un origen de datos externo](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
 
 1. Configure el Modelo de datos de formulario de la plantilla:
    1. Abra el Modelo de datos de formulario asociado a la plantilla de comunicación interactiva.
@@ -141,7 +141,7 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
 
    1. Guarde y cierre el archivo.
 
-1. Cree un [Carpeta vigilada](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) y configúrela para utilizar el servicio de API por lotes:
+1. Cree un [Carpeta vigilada](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) y configúrela para utilizar el servicio de API por lotes:
    1. Inicie sesión en la instancia de autor de AEM Forms.
    1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta vigilada]**. Toque **[!UICONTROL Nuevo]**.
    1. Especifique la variable **[!UICONTROL Nombre]** y física **[!UICONTROL Ruta]** de la carpeta. Por ejemplo, `c:\batchprocessing`.

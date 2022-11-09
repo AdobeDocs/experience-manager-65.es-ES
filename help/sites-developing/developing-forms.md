@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: 4df14f837569997c3e4da8161ac2b099c39d89a6
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1940'
 ht-degree: 18%
 
 ---
@@ -40,7 +40,7 @@ Además de [desarrollo de nuevos componentes](/help/sites-developing/developing-
 
 >[!NOTE]
 >
->Este documento se centra en el desarrollo de formularios utilizando la variable [Componentes básicos](/help/sites-authoring/default-components-foundation.md) en la IU clásica. Adobe recomienda aprovechar el nuevo [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) y [Ocultar condiciones](/help/sites-developing/hide-conditions.md) para el desarrollo de formularios en la IU táctil.
+>Este documento se centra en el desarrollo de formularios utilizando la variable [Componentes básicos](/help/sites-authoring/default-components-foundation.md) en la IU clásica. Adobe recomienda aprovechar el nuevo [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y [Ocultar condiciones](/help/sites-developing/hide-conditions.md) para el desarrollo de formularios en la IU táctil.
 
 ## Precarga de valores de formulario {#preloading-form-values}
 

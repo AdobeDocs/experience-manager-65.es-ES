@@ -10,10 +10,10 @@ topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 10%
+source-wordcount: '590'
+ht-degree: 8%
 
 ---
 
@@ -32,7 +32,7 @@ Esta página proporciona información general sobre los componentes de Adobe Exp
 * Disponen de una interfaz de usuario estandarizada.
 * Tenga un comportamiento de edición que se pueda configurar.
 * Utilizar cuadros de diálogo creados con subelementos basados en componentes de la interfaz de usuario de Granite
-* Se desarrollan utilizando [HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html) (recomendado) o JSP.
+* Se desarrollan utilizando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) (recomendado) o JSP.
 * Se puede desarrollar para crear componentes personalizados que amplíen la funcionalidad predeterminada.
 
 Como los componentes son modulares, puede:
@@ -64,7 +64,7 @@ Los componentes proporcionados y su uso dentro de la variable [sitios web de We.
 
 Hay dos conjuntos de componentes de AEM proporcionados por el Adobe disponibles:
 
-* [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
+* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Componentes de base](/help/sites-authoring/default-components-foundation.md)
 
 **Componentes principales** se han introducido con AEM 6.3 y ofrecen funciones flexibles y personalizables de creación de contenido. La variable [Sitio de referencia de We.Retail](/help/sites-developing/we-retail.md) ilustra cómo se pueden utilizar los componentes principales y representa las prácticas recomendadas actuales del desarrollo de componentes.
@@ -73,7 +73,7 @@ Hay dos conjuntos de componentes de AEM proporcionados por el Adobe disponibles:
 
 >[!NOTE]
 >
->[Componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) representan las prácticas recomendadas actuales para el diseño y desarrollo de componentes y sirven como implementaciones de referencia.
+>[Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) representan las prácticas recomendadas actuales para el diseño y desarrollo de componentes y sirven como implementaciones de referencia.
 >
 >[Herramientas de modernización AEM](modernization-tools.md) puede ayudar a migrar a componentes principales.
 
@@ -106,7 +106,7 @@ Las páginas siguientes proporcionan información más detallada sobre el desarr
 * [Componentes para fragmentos de contenido](/help/sites-developing/components-content-fragments.md)
 * [Obtención de información de página en formato JSON](/help/sites-developing/pageinfo.md)
 * [Internacionalización de componentes](/help/sites-developing/i18n.md)
-* [Componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Uso de Ocultar condiciones](/help/sites-developing/hide-conditions.md)
 * IU clásica
 

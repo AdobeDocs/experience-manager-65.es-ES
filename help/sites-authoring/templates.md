@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '4874'
+source-wordcount: '4872'
 ht-degree: 96%
 
 ---
@@ -428,7 +428,7 @@ En el modo de **Estructura** del editor de plantillas:
 
    Las propiedades disponibles dependen del componente seleccionado. Por ejemplo, en el caso de un componente de texto, las propiedades definen las opciones de copiar y pegar, las opciones de formato y el estilo de párrafo entre otras opciones.
 
-   ***Política***
+   ***Directiva***
 
    Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Esto se aplica a la plantilla (y a las páginas creadas con la plantilla).
 
@@ -503,7 +503,7 @@ En el modo de **Estructura** del editor de plantillas:
 
    La ventana de configuración se divide en dos, al igual que sucede con el uso general de la ventana.
 
-   ***Política***
+   ***Directiva***
 
    Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Esto se aplica a la plantilla (y a las páginas creadas con la plantilla).
 
@@ -604,7 +604,7 @@ Aunque todo el contenido creado en el modo de **Estructura** sea visible en el *
 >
 >El contenido inicial está diseñado para preparar componentes y el diseño de página que sirve como punto de partida para crear el contenido. No se prevé que el contenido real permanezca tal cual. Por este motivo, no se puede traducir el contenido inicial.
 >
->Si necesita incluir texto traducible en la plantilla, como en encabezados o pies de página, puede utilizar las funciones de [localización de los componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/get-started/localization.html).
+>Si necesita incluir texto traducible en la plantilla, como en encabezados o pies de página, puede utilizar las funciones de [localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Edición de una plantilla: diseño, autor de plantillas {#editing-a-template-layout-template-author}
 

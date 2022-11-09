@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Best Practices
 description: Recursos para prácticas recomendadas, resolución de problemas y formación para AEM 6.5
 seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 53%
+source-wordcount: '425'
+ht-degree: 52%
 
 ---
 
@@ -46,7 +46,7 @@ AEM se utiliza de muchas formas distintas en las organizaciones y su gama de fun
 * [Introducción a Comunidades de AEM](/help/communities/getting-started.md)
 * [Introducción a Livefyre de AEM](https://answers.livefyre.com/developers/getting-started/)
 
-También tenemos un nuevo [Tutorial de WKND, que es una guía paso a paso para la creación de su primer sitio web mediante AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) así como una [fórmula paso a paso para implementar nuestra solución Digital Foundation](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html), para el cual AEM es un componente clave.
+También tenemos un nuevo [Tutorial de WKND, que es una guía paso a paso para la creación de su primer sitio web mediante AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es) así como una [fórmula paso a paso para implementar nuestra solución Digital Foundation](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html), para el cual AEM es un componente clave.
 
 ## Implementaciones recomendadas para AEM {#deployments}
 

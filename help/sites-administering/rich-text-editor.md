@@ -3,9 +3,9 @@ title: Configure el Editor de texto enriquecido para que cree contenido en Adobe
 description: Aprenda a configurar el Editor de texto enriquecido de Adobe Experience Manager para crear contenido en Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3020'
 ht-degree: 1%
 
 ---
@@ -181,9 +181,9 @@ Para obtener configuraciones detalladas de los complementos RTE, consulte [cómo
 
 >[!NOTE]
 >
->La variable [Componente de texto de los componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE en una GUI como políticas de contenido, eliminando la necesidad de configuración técnica. Las políticas de contenido pueden funcionar con las configuraciones de la interfaz de usuario de RTE como se describe en este documento.
+>La variable [Componente de texto de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) permite a los editores de plantillas configurar muchos complementos RTE en una GUI como políticas de contenido, eliminando la necesidad de configuración técnica. Las políticas de contenido pueden funcionar con las configuraciones de la interfaz de usuario de RTE como se describe en este documento.
 >
->Para obtener más información, consulte la [Configuración de la interfaz de usuario de RTE y políticas de contenido](/help/sites-administering/rich-text-editor.md) de este documento, así como [Creación de plantillas de página](/help/sites-authoring/templates.md) y [Documentación para desarrolladores de componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html).
+>Para obtener más información, consulte la [Configuración de la interfaz de usuario de RTE y políticas de contenido](/help/sites-administering/rich-text-editor.md) de este documento, así como [Creación de plantillas de página](/help/sites-authoring/templates.md) y [Documentación para desarrolladores de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >

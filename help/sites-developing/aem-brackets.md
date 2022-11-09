@@ -10,10 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 2%
+source-wordcount: '925'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Información general {#overview}
 
-La extensión AEM Brackets proporciona un flujo de trabajo fluido para editar los componentes AEM y las bibliotecas de cliente, y aprovecha el poder del [Brackets](https://brackets.io/) editor de código, que proporciona acceso desde el editor de código a los archivos y capas de Photoshop. La sencilla sincronización que proporciona la extensión (no se requiere Maven ni File Vault) aumenta la eficacia del desarrollador y también ayuda a los desarrolladores de front-end con conocimientos AEM limitados a participar en proyectos. Esta extensión también proporciona cierta compatibilidad con el [Idioma de plantilla del HTML (HTL)](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html), lo que elimina la complejidad de JSP para que el desarrollo de componentes sea más fácil y seguro.
+La extensión AEM Brackets proporciona un flujo de trabajo fluido para editar los componentes AEM y las bibliotecas de cliente, y aprovecha el poder del [Brackets](https://brackets.io/) editor de código, que proporciona acceso desde el editor de código a los archivos y capas de Photoshop. La sencilla sincronización que proporciona la extensión (no se requiere Maven ni File Vault) aumenta la eficacia del desarrollador y también ayuda a los desarrolladores de front-end con conocimientos AEM limitados a participar en proyectos. Esta extensión también proporciona cierta compatibilidad con el [Idioma de plantilla del HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), lo que elimina la complejidad de JSP para que el desarrollo de componentes sea más fácil y seguro.
 
 ![imagen_1-53](assets/chlimage_1-53a.png)
 

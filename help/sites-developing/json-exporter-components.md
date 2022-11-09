@@ -10,10 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 9%
+source-wordcount: '536'
+ht-degree: 8%
 
 ---
 
@@ -78,7 +78,7 @@ La interfaz del modelo debe estar debidamente anotada para definir qué métodos
 
 ## Ejemplo {#example}
 
-Los componentes principales son compatibles con la exportación de JSON desde la versión [1.1.0 de los componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) y pueden utilizarse como referencia.
+Los componentes principales son compatibles con la exportación de JSON desde la versión [1.1.0 de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y pueden utilizarse como referencia.
 
 Para ver un ejemplo, consulte la implementación del modelo Sling del componente principal de imagen y su interfaz anotada.
 
@@ -98,4 +98,4 @@ Para obtener más información, consulte:
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 * [Creación con fragmentos de contenido](/help/sites-authoring/content-fragments.md)
 * [Exportador JSON para servicios de contenido](/help/sites-developing/json-exporter.md)
-* [Componentes principales](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) y [Componente Fragmento de contenido](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) y [Componente Fragmento de contenido](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

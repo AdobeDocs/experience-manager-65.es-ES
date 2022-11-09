@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: f2a208acfa28f23cbf63d055c5d28698df476892
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '3485'
-ht-degree: 3%
+source-wordcount: '3477'
+ht-degree: 2%
 
 ---
 
@@ -81,7 +81,7 @@ El componente se procesará con [HTML](https://www.w3schools.com/htmL/html_intro
 
 ### Uso del lenguaje de plantilla del HTML {#using-the-html-template-language}
 
-La variable [Lenguaje de plantilla del HTML (HTL)](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html), introducido con AEM 6.0, sustituye a JSP (páginas de JavaServer) como sistema de plantillas preferido y recomendado del lado del servidor para HTML. Para los desarrolladores web que necesitan crear sitios web empresariales sólidos, HTL ayuda a lograr una mayor seguridad y eficacia en el desarrollo.
+La variable [Lenguaje de plantilla del HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), introducido con AEM 6.0, sustituye a JSP (páginas de JavaServer) como sistema de plantillas preferido y recomendado del lado del servidor para HTML. Para los desarrolladores web que necesitan crear sitios web empresariales sólidos, HTL ayuda a lograr una mayor seguridad y eficacia en el desarrollo.
 
 >[!NOTE]
 >
@@ -433,7 +433,7 @@ Puede encontrar el código de esta página en GitHub
 
 >[!NOTE]
 >
->La creación automática de instancias de componentes ahora se puede configurar fácilmente dentro de la interfaz de usuario al utilizar [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) y plantillas editables. Consulte [Creación de plantillas de página](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) para obtener más información sobre la definición de los componentes que se asocian automáticamente a determinados tipos de medios.
+>La creación automática de instancias de componentes ahora se puede configurar fácilmente dentro de la interfaz de usuario al utilizar [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) y plantillas editables. Consulte [Creación de plantillas de página](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) para obtener más información sobre la definición de los componentes que se asocian automáticamente a determinados tipos de medios.
 
 ## Uso de la extensión AEM Brackets {#using-the-aem-brackets-extension}
 
@@ -442,7 +442,7 @@ La variable [Extensión de AEM Brackets](/help/sites-developing/aem-brackets.md)
 La extensión:
 
 * Facilita la sincronización (no se requiere Maven ni File Vault) para ayudar a aumentar la eficacia del desarrollador y también ayuda a los desarrolladores de front-end con conocimientos AEM limitados a participar en proyectos.
-* Proporciona algunas [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) compatibilidad, el lenguaje de plantilla diseñado para simplificar el desarrollo de componentes y aumentar la seguridad.
+* Proporciona algunas [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) compatibilidad, el lenguaje de plantilla diseñado para simplificar el desarrollo de componentes y aumentar la seguridad.
 
 >[!NOTE]
 >
@@ -454,7 +454,7 @@ Al migrar un componente diseñado para su uso con la IU clásica a un componente
 
 * HTL
 
-   * Uso de [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) no es obligatorio, pero si su componente necesita actualizarse, es el momento ideal para tener en cuenta [migración de JSP a HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+   * Uso de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) no es obligatorio, pero si su componente necesita actualizarse, es el momento ideal para tener en cuenta [migración de JSP a HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Componentes
 

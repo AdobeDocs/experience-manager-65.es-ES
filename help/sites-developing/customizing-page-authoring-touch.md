@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 273836ad0afd6466eac437bf7711e7dbabc1d5e9
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1354'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,8 @@ Se pueden utilizar de muchas maneras para ampliar la funcionalidad de creación 
 >* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Estructura de la interfaz de usuario táctil AEM](/help/sites-developing/touch-ui-structure.md) para obtener más información sobre las áreas estructurales utilizadas para la creación de páginas.
 >
->Este tema también se trata en la sección [AEM](https://docs.adobe.com/content/ddc/en/gems.html) session - [Personalización de la interfaz de usuario para AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
+
+
 
 >[!CAUTION]
 >

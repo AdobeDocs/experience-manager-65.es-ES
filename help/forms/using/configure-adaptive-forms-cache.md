@@ -11,10 +11,10 @@ discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 role: Admin
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 36%
+source-wordcount: '883'
+ht-degree: 37%
 
 ---
 
@@ -62,10 +62,10 @@ También puede configurar el almacenamiento en caché de formularios adaptables 
 
 Siga los pasos que se indican a continuación para habilitar y configurar el almacenamiento en caché de los formularios adaptables en Dispatcher:
 
-1. Abra la siguiente URL para cada instancia de publicación de su entorno y [habilitar el agente de vaciado para publicar instancias de su entorno](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Abra la siguiente URL para cada instancia de publicación de su entorno y [habilitar el agente de vaciado para publicar instancias de su entorno](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [Agregue lo siguiente al archivo dispatcher.any](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
+1. [Agregue lo siguiente al archivo dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
 
    ```JSON
       /invalidate
@@ -94,7 +94,7 @@ Siga los pasos que se indican a continuación para habilitar y configurar el alm
    * Un formulario adaptable permanece en la caché hasta que no se publique una versión actualizada del formulario.
 
    * Cuando se publica una versión más reciente del recurso al que se hace referencia en un formulario adaptable, los formularios adaptables afectados se invalidan automáticamente. Existen algunas excepciones a la hora de invalidar automáticamente los recursos a los que se hace referencia. Para obtener más información sobre las excepciones, consulte la sección [Solución de problemas](#troubleshooting).
-1. [Añada las siguientes reglas: dispatcher.any o un archivo de reglas personalizadas](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Esto excluirá las URL que no admitan el almacenamiento en caché; por ejemplo, comunicaciones interactivas.
+1. [Añada las siguientes reglas: dispatcher.any o un archivo de reglas personalizadas](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Esto excluirá las URL que no admitan el almacenamiento en caché; por ejemplo, comunicaciones interactivas.
 
    ```JSON
       /0000 {
@@ -118,7 +118,7 @@ Siga los pasos que se indican a continuación para habilitar y configurar el alm
       }
    ```
 
-1. [Añada los siguientes parámetros a la lista de los parámetros de URL ignorados](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
+1. [Añada los siguientes parámetros a la lista de los parámetros de URL ignorados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
 
    ```JSON
       /ignoreUrlParams {
@@ -128,7 +128,7 @@ Siga los pasos que se indican a continuación para habilitar y configurar el alm
       }
    ```
 
-El entorno de AEM está configurado para almacenar en caché los formularios adaptables. Almacena en caché todos los tipos de formularios adaptables. Si tiene que comprobar los permisos de acceso de los usuarios de una página antes de enviar la página almacenada en caché, consulte [Almacenar contenido protegido en caché](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+El entorno de AEM está configurado para almacenar en caché los formularios adaptables. Almacena en caché todos los tipos de formularios adaptables. Si tiene que comprobar los permisos de acceso de los usuarios de una página antes de enviar la página almacenada en caché, consulte [Almacenar contenido protegido en caché](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
 ## Solución de problemas {#troubleshooting}
 

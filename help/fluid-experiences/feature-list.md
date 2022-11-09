@@ -4,10 +4,10 @@ description: Lista de funciones de experiencias fluidas
 index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 12%
+source-wordcount: '342'
+ht-degree: 9%
 
 ---
 
@@ -53,7 +53,7 @@ En las tablas siguientes se definen las características de AEM Experiencias flu
 | [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md) |
 | API HTTP para contenido estructurado (lectura) |
 | API HTTP para contenido estructurado (CRUD) |
-| [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) |
+| [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## Funciones de administración e integración {#admin-and-integration-features}
@@ -66,7 +66,7 @@ En las tablas siguientes se definen las características de AEM Experiencias flu
 | [Traducción de contenido](/help/sites-administering/translation.md) |
 | [Monitoreo](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Copia de seguridad](/help/sites-administering/backup-and-restore.md) |
-| [Cloud manager](https://docs.adobe.com/content/help/es-ES/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
+| [Cloud manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) |
 | [Integración de PIM](/help/sites-authoring/managing-product-information.md) |
 | [Proyectos y tareas](/help/sites-authoring/projects.md) |
 | [Flujos de trabajo](/help/sites-administering/workflows-starting.md) |
@@ -85,7 +85,7 @@ En las tablas siguientes se definen las características de AEM Experiencias flu
 * [Experiencias fluidas para casos de uso remoto](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
 * [Servicio de contenido AEM: ¿Qué, por qué y cómo?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
 * [Uso de los servicios de contenido](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
-* [Desarrollo de aplicaciones móviles](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/developing/developing-content-services.html)
+* [Desarrollo de aplicaciones móviles](https://experienceleague.adobe.com/docs/experience-manager-64/mobile/developing/developing-content-services.html)
 * [Preguntas frecuentes sobre acceso de terceros](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
 * [Experiencias fluidas en todas partes](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)
 * [Uso de las API de Sling](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)

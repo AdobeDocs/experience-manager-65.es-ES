@@ -10,9 +10,9 @@ topic-tags: components
 content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
-source-git-commit: baf2c6339a554743b6cc69486fb77b121048ba4b
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '626'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,7 @@ Al definir la expresión de ocultación, tenga en cuenta:
 
 ## Ejemplo {#example}
 
-Se pueden encontrar ejemplos de condiciones de ocultamiento en AEM y en la [componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html) en particular. Por ejemplo, considere la [componente principal de lista](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
+Se pueden encontrar ejemplos de condiciones de ocultamiento en AEM y en la [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) en particular. Por ejemplo, considere la [componente principal de lista](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
 
 [Uso del editor de plantillas](/help/sites-authoring/templates.md), el autor de la plantilla puede definir en el cuadro de diálogo de diseño qué opciones del componente de lista están disponibles para el autor de la página. Tales opciones como si se permite que la lista sea una lista estática, una lista de páginas secundarias, una lista de páginas etiquetadas, etc. se puede activar o desactivar.
 

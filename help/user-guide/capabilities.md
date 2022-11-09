@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Capabilities User Guide
 description: Una visión general de las capacidades esenciales de AEM 6.5
 seo-description: An overview of the essential capabilities of AEM 6.5
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 52%
+source-wordcount: '143'
+ht-degree: 53%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 52%
 
 ## AEM Livefyre {#aem-livefyre}
 
-[Comparta contenido generado por el usuario con AEM Livefyre.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
+[Comparta contenido generado por el usuario con AEM Livefyre.](https://experienceleague.adobe.com/docs/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 

@@ -11,9 +11,9 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1089'
 ht-degree: 34%
 
 ---
@@ -121,7 +121,7 @@ Una vez cumplidos los requisitos previos, realice los siguientes pasos para conf
 1. Apertura **[!UICONTROL Servicio de configuración común de Forms].**
 1. En el **[!UICONTROL Permitir]** field, **select** Todos los usuarios: Todos los usuarios, anónimos o conectados, pueden obtener una vista previa de los archivos adjuntos, comprobar y firmar formularios y hacer clic en **[!UICONTROL Guardar].** La instancia de autor está configurada para usar [!DNL Adobe Sign].
 1. Publique la configuración.
-1. Uso [replicación](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) para crear una configuración idéntica en las instancias de publicación correspondientes.
+1. Uso [replicación](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html?lang=es) para crear una configuración idéntica en las instancias de publicación correspondientes.
 
 Ahora, [!DNL Adobe Sign] está integrado con AEM [!DNL Forms] y listo para su uso en formularios adaptables. Hasta [usar el servicio Adobe Sign en un formulario adaptable](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), especifique el contenedor de configuración creado anteriormente en las propiedades del formulario adaptable.
 

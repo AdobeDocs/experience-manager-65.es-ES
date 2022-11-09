@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 4%
+source-wordcount: '1166'
+ht-degree: 3%
 
 ---
 
@@ -122,7 +122,7 @@ Una vez creado, el paquete se puede cargar en una instancia de AEM.
 
 ### Tipo de archivo del proyecto AEM {#aem-project-archetype}
 
-Cualquier proyecto AEM debería aprovechar el [Tipo de archivo del proyecto AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html), que admite SPA proyectos que utilizan React o Angular y aprovecha el SDK de SPA.
+Cualquier proyecto AEM debería aprovechar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite SPA proyectos que utilizan React o Angular y aprovecha el SDK de SPA.
 
 ## Estructura de la aplicación {#application-structure}
 
@@ -277,7 +277,7 @@ Normalmente, es necesario que los componentes de una aplicación de una sola pá
 * **Opción 2:** Compartir estados de componentes utilizando una biblioteca de estados como Redux.
 * **Opción 3:** Aproveche la jerarquía de objetos personalizando y ampliando el componente contenedor.
 
-## Siguientes pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
 Para obtener una guía paso a paso sobre cómo crear su propia SPA, consulte la [Introducción al Editor de SPA de AEM: tutorial de eventos de WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=es).
 

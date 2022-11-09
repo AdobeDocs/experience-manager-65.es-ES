@@ -11,10 +11,10 @@ topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 6%
+source-wordcount: '667'
+ht-degree: 4%
 
 ---
 
@@ -137,8 +137,8 @@ También puede personalizar las consolas:
 Aunque no está directamente relacionado con la migración a la interfaz de usuario táctil, hay problemas relacionados que vale la pena tener en cuenta al mismo tiempo, ya que también son una práctica recomendada:
 
 * [Plantillas](/help/sites-developing/templates.md) - [Plantillas editables](/help/sites-developing/page-templates-editable.md)
-* [Componentes principales](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html)
+* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Para obtener información completa sobre el desarrollo de AEM, consulte la recop
 
 * [Guía del usuario sobre desarrollo](/help/sites-developing/home.md)
 * [Documentación de Granite UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [Tutorials y vídeos de AEM 6.5 Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
+* [Tutorials y vídeos de AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Introducción al desarrollo de AEM Sites: Tutorial de WKND](/help/sites-developing/getting-started.md)
 * [AEM](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
 * [Herramientas de modernización de AEM](https://opensource.adobe.com/aem-modernize-tools/)

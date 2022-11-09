@@ -2,10 +2,10 @@
 title: Etiqueta decorativa
 description: Cuando se procesa un componente de una página web, se puede generar un elemento HTML que ajuste el componente procesado en sí mismo. Para los desarrolladores, AEM tiene una lógica clara y sencilla para controlar las etiquetas de decoración que envuelven los componentes incluidos.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 10%
+source-wordcount: '876'
+ht-degree: 9%
 
 ---
 
@@ -62,7 +62,7 @@ El comportamiento del envoltorio también se puede controlar completamente.
 
 Es posible controlar completamente el comportamiento de las etiquetas wrapper de los scripts HTL y su lógica asociada.
 
-Para obtener más información sobre el desarrollo en HTL, consulte la [Documentación de HTL](https://docs.adobe.com/content/help/es-ES/experience-manager-htl/using/overview.html).
+Para obtener más información sobre el desarrollo en HTL, consulte la [Documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
 
 #### Árbol de decisiones {#decision-tree}
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9584392a-d8a3-45a4-9cdf-fd211c8e6091
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2072'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ Cualquier enrutamiento estático funciona con [principio de portabilidad](/help/
 
 ## Tipo de archivo del proyecto AEM {#aem-project-archetype}
 
-Cualquier proyecto AEM debería aprovechar el [Tipo de archivo del proyecto AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype/overview.html), que admite SPA proyectos que utilizan React o Angular y aprovecha el SDK de SPA.
+Cualquier proyecto AEM debería aprovechar el [Tipo de archivo del proyecto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=es), que admite SPA proyectos que utilizan React o Angular y aprovecha el SDK de SPA.
 
 ## SPA modelos de diseño {#spa-design-models}
 
@@ -223,7 +223,7 @@ La arquitectura general de AEM, incluidos los entornos de desarrollo, creación 
 >
 >Dentro de AEM no hay necesidad de ejecutar mecanismos de compilación de Javascript ni de ejecutar el propio Javascript. AEM solo aloja los artefactos compilados desde la aplicación SPA.
 
-## Siguientes pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
 Para obtener una descripción general de cómo se estructura un SPA simple en AEM y cómo funciona, consulte la guía de introducción para ambos [React](/help/sites-developing/spa-getting-started-react.md) y [Angular](/help/sites-developing/spa-getting-started-angular.md).
 
