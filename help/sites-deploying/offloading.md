@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 08a6777bf1ff3abf62f45fe1e164ef2027996848
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2364'
 ht-degree: 1%
 
 ---
@@ -237,7 +237,7 @@ El marco de descarga utiliza la replicación para transportar recursos entre el 
 
 >[!CAUTION]
 >
->Un problema conocido con los agentes de replicación generados automáticamente requiere que cree manualmente nuevos agentes de replicación. Siga el procedimiento descrito en [Problemas al usar los agentes de replicación generados automáticamente](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) antes de crear los agentes para la descarga.
+>Un problema conocido con los agentes de replicación generados automáticamente requiere que cree manualmente nuevos agentes de replicación.
 
 Cree los agentes de replicación que transportan cargas de trabajo entre instancias para su descarga. La siguiente ilustración muestra los agentes necesarios para descargar del autor en una instancia de trabajo. El autor tiene un Sling ID de 1 y la instancia de trabajo tiene un Sling ID de 2:
 
