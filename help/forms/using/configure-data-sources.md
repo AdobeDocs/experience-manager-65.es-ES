@@ -10,16 +10,16 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
-source-wordcount: '2011'
+source-wordcount: '2042'
 ht-degree: 44%
 
 ---
 
 # Configurar fuentes de datos{#configure-data-sources}
 
-![](do-not-localize/data-integeration.png)
+![Integración de datos](do-not-localize/data-integeration.png)
 
 La integración de datos de AEM Forms le permite configurar y conectarse a fuentes de datos diferentes. Los siguientes tipos son compatibles de forma predeterminada. Sin embargo, con poca personalización, también puede integrar otras fuentes de datos.
 
@@ -35,7 +35,7 @@ La integración de datos es compatible con los tipos de autenticación de forma 
 
 Puede configurar bases de datos relacionales mediante AEM Configuración de la consola web. Haga lo siguiente:
 
-1. Vaya a AEM consola web en https://server:host/system/console/configMgr.
+1. Vaya a AEM consola web en `https://server:host/system/console/configMgr`.
 1. Buscar **[!UICONTROL Fuente de datos obtenida de una conexión Apache Sling]** configuración. Pulse para abrir la configuración en modo de edición.
 1. En el cuadro de diálogo de configuración, especifique los detalles de la base de datos que desea configurar, como:
 
@@ -49,14 +49,10 @@ Puede configurar bases de datos relacionales mediante AEM Configuración de la c
    >
    >Asegúrese de cifrar información confidencial como contraseñas antes de configurar el origen de datos. Para cifrar:
    >
-   >    
-   >    
-   >    1. Vaya a https://&#39;[server]:[puerto]&#39;/system/console/crypto.
-   >    1. En el **[!UICONTROL Texto sin formato]** , especifique la contraseña o cualquier cadena que desee cifrar y pulsar **[!UICONTROL Protect]**.
+   > 1. Vaya a https://&#39;[server]:[puerto]&#39;/system/console/crypto.
+   > 1. En el **[!UICONTROL Texto sin formato]** , especifique la contraseña o cualquier cadena que desee cifrar y pulsar **[!UICONTROL Protect]**.
 
-   >    
-   >    
-   >    
+   >
    >El texto cifrado aparece en el campo Texto protegido que puede especificar en la configuración.
 
 1. Habilitar **[!UICONTROL Prueba a la vista previa]** o **[!UICONTROL Prueba a la vuelta]** para especificar que los objetos se validan antes de ser tomados en préstamo o devueltos al grupo, respectivamente.
@@ -67,13 +63,17 @@ Puede configurar bases de datos relacionales mediante AEM Configuración de la c
 
 1. Toque **[!UICONTROL Guardar]** para guardar la configuración.
 
+   >[!NOTE]
+   >
+   > Si el Modelo de datos de Forms contiene un objeto que es una palabra clave reservada para la base de datos relacional, puede provocar problemas de adición, actualización o recuperación de datos. Por lo tanto, evite utilizar estos objetos en el Modelo de datos de formulario.
+
 ## Configuración AEM perfil de usuario {#configure-aem-user-profile}
 
 Puede configurar AEM perfil de usuario mediante la configuración del conector de perfil de usuario en AEM consola web. Haga lo siguiente:
 
 1. Vaya a AEM consola web en https://&#39;[server]:[puerto]&#39;system/console/configMgr.
 1. Buscar **[!UICONTROL Integraciones de datos de AEM Forms: configuración del conector de perfil de usuario]** y pulse para abrir la configuración en modo de edición.
-1. En el cuadro de diálogo Configuración del conector de perfil de usuario, puede agregar, quitar o actualizar las propiedades del perfil de usuario. Las propiedades especificadas estarán disponibles para su uso en el modelo de datos de formulario. Utilice el siguiente formato para especificar las propiedades del perfil del usuario:
+1. En el cuadro de diálogo Configuración del conector de perfil de usuario, puede agregar, quitar o actualizar las propiedades del perfil de usuario. Las propiedades especificadas están disponibles para su uso en el modelo de datos de formulario. Utilice el siguiente formato para especificar las propiedades del perfil del usuario:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -84,7 +84,7 @@ Puede configurar AEM perfil de usuario mediante la configuración del conector d
 
    >[!NOTE]
    >
-   >La variable **&#42;** en el ejemplo anterior indica todos los nodos bajo la variable `profile/empLocation/` en AEM perfil de usuario en la estructura CRXDE. Significa que el modelo de datos de formulario puede acceder al `city` propiedad de tipo `string` presentes en cualquier nodo bajo la variable `profile/empLocation/` nodo . Sin embargo, los nodos que contienen la propiedad especificada deben seguir una estructura coherente.
+   >La variable **&#42;** en el ejemplo anterior indica todos los nodos bajo la variable `profile/empLocation/` en AEM perfil de usuario en la estructura CRXDE. Significa que el modelo de datos de formulario puede acceder al `city` propiedad de tipo `string` presentes en cualquier nodo bajo el `profile/empLocation/` nodo . Sin embargo, los nodos que contienen la propiedad especificada deben seguir una estructura coherente.
 
 1. Toque **[!UICONTROL Guardar]** para guardar la configuración.
 
@@ -161,7 +161,6 @@ Realice los siguientes pasos para configurar el cliente HTTP del modelo de datos
 
    * Especifique el período de tiempo máximo de inactividad entre dos paquetes de datos en el campo **[!UICONTROL Suspensión de la toma]**. El valor predeterminado es 30 segundos.
 
-
 ## Configurar servicios web SOAP {#configure-soap-web-services}
 
 Los servicios web basados en SOAP se describen utilizando [Especificaciones del lenguaje de descripción de servicios web (WSDL)](https://www.w3.org/TR/wsdl). Para configurar el servicio web basado en SOAP en los servicios en la nube de AEM, asegúrese de que dispone de la URL WSDL para el servicio web y haga lo siguiente:
@@ -224,4 +223,4 @@ Cuando se habilita la autenticación mutua para el modelo de datos de formulario
 
 ## Pasos siguientes {#next-steps}
 
-Ha configurado las fuentes de datos. A continuación, puede crear un modelo de datos de formulario o, si ya ha creado un modelo de datos de formulario sin un origen de datos, puede asociarlo a los orígenes de datos que acaba de configurar. Consulte [Crear modelo de datos de formulario](/help/forms/using/create-form-data-models.md) para obtener más información.
+Ha configurado las fuentes de datos. A continuación, puede crear un modelo de datos de formulario o, si ya ha creado un modelo de datos de formulario sin un origen de datos, puede asociarlo a los orígenes de datos configurados. Consulte [Crear modelo de datos de formulario](/help/forms/using/create-form-data-models.md) para obtener más información.

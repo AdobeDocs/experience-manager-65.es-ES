@@ -10,10 +10,10 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
-source-wordcount: '4128'
-ht-degree: 81%
+source-wordcount: '4165'
+ht-degree: 80%
 
 ---
 
@@ -50,6 +50,10 @@ Para agregar objetos y servicios del modelo de datos:
    ![selected-objects](assets/selected-objects.png)
 
    Objetos y servicios del modelo de datos seleccionado
+
+   >[!NOTE]
+   >
+   > Si el Modelo de datos de Forms contiene un objeto que es una palabra clave reservada para la base de datos relacional, puede provocar problemas de adición, actualización o recuperación de datos. Por lo tanto, evite utilizar estos objetos en el Modelo de datos de formulario.
 
    La pestaña Modelo muestra una representación gráfica de todos los objetos del modelo de datos y sus propiedades agregadas al modelo de datos de formulario. Cada objeto del modelo de datos se representa mediante un cuadro en el modelo de datos de formulario.
 
