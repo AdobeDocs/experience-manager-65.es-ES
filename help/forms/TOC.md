@@ -8,9 +8,9 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 55e9344c088a38bc4c9f916a13c310a029b3b2f4
 workflow-type: tm+mt
-source-wordcount: '3801'
+source-wordcount: '3819'
 ht-degree: 8%
 
 ---
@@ -685,6 +685,7 @@ ht-degree: 8%
    + [No se pueden usar algunas funciones de formularios con ciertas versiones de Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
    + [Pasos adicionales para obtener el correo electrónico con los archivos adjuntos para la versión de Forms adaptable en JEE](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
    + [No se puede convertir el archivo de Word o Excel al PDF en Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
+   + [No se pueden abrir PDF forms basados en XFA en Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer o Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
 + Documentación heredada {#legacy-documentation}
    + [Uso del servicio de ejecución de secuencias de comandos en AEM Forms en JEE Workbench para generar datos XML](developing/building-xml.md)
    + [Compresión y descompresión de archivos mediante una AEM Forms en una DSC personalizada JEE](developing/compressing-decompressing-custom-dsc.md)
