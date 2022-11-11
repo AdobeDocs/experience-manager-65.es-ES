@@ -10,7 +10,7 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
+source-git-commit: 3b869153e0fdee08df2a4aaf73fe3ce9fbebaad7
 workflow-type: tm+mt
 source-wordcount: '2831'
 ht-degree: 10%
@@ -21,13 +21,10 @@ ht-degree: 10%
 
 Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplicando un perfil de imagen a la carpeta.
 
->[!NOTE]
->
->El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
-
 >[!IMPORTANT]
 >
->Los perfiles de imagen no son aplicables a archivos PDF, GIF animado o INDD (Adobe InDesign).
+>・ El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
+・ Los perfiles de imagen no son aplicables a archivos PDF, GIF animado o INDD (Adobe InDesign).
 
 ## Opciones de recorte {#crop-options}
 
@@ -58,8 +55,7 @@ Tiene dos opciones de recorte de imagen entre las que elegir. También tiene la 
 La **[!UICONTROL máscara de enfoque]** se utiliza para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se ignora. Este efecto utiliza las mismas opciones que el de Adobe Photoshop *Máscara de enfoque* filtro.
 
 >[!NOTE]
->
->La máscara de enfoque solo se aplica a las representaciones a escala reducida dentro del PTIFF (tiff piramidal) que se reducen a más del 50%. Esto significa que las representaciones de mayor tamaño dentro de la matriz no se ven afectadas por la máscara de enfoque, mientras que las representaciones de menor tamaño, como las miniaturas, se modifican (y muestran la máscara de enfoque).
+La máscara de enfoque solo se aplica a las representaciones a escala reducida dentro del PTIFF (tiff piramidal) que se reducen a más del 50%. Esto significa que las representaciones de mayor tamaño dentro de la matriz no se ven afectadas por la máscara de enfoque, mientras que las representaciones de menor tamaño, como las miniaturas, se modifican (y muestran la máscara de enfoque).
 
 En **[!UICONTROL Máscara de enfoque]**, tiene las siguientes opciones de filtrado:
 
@@ -163,9 +159,8 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 ## Editar el recorte inteligente o la muestra inteligente de una sola imagen {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
->[!NOTE]
->
->El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
+>[!IMPORTANT]
+El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
 
 Puede realinear manualmente o cambiar el tamaño de la ventana de recorte inteligente de una imagen para refinar aún más su punto focal.
 
