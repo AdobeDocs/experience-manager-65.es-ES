@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 3a745e8255580778e30abaa72d7d0453e574f341
 workflow-type: tm+mt
-source-wordcount: '5529'
+source-wordcount: '5531'
 ht-degree: 2%
 
 ---
@@ -89,7 +89,7 @@ Antes de empezar a instalar y configurar AEM Forms document services, asegúrese
 
 ### Requisitos adicionales para sistemas operativos basados en UNIX {#extrarequirements}
 
-Si está utilizando el sistema operativo basado en UNIX, instale los siguientes paquetes del medio de instalación del sistema operativo correspondiente:
+Si está utilizando un sistema operativo basado en UNIX, instale los siguientes paquetes de versión de 32 bits desde el medio de instalación del sistema operativo correspondiente:
 
 <table>
  <tbody>
@@ -427,7 +427,7 @@ Se necesita una cuenta de usuario local para ejecutar el servicio Generador de P
 
 ### Configuración de la configuración de tiempo de espera {#configure-the-time-out-settings}
 
-1. En [Administrador de configuración AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
+1. En [Administrador de configuración de AEM](http://localhost:4502/system/console/configMgr), busque y abra el **[!UICONTROL Proveedor de Jacorb ORB]** servicio.
 
    Agregue lo siguiente a **[!UICONTROL Propiedades personalizadas.name]** y haga clic en **[!UICONTROL Guardar]**. Establece el tiempo de espera de respuesta pendiente (también conocido como tiempo de espera de cliente CORBA) en 600 segundos.
 
