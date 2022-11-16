@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 3b869153e0fdee08df2a4aaf73fe3ce9fbebaad7
+source-git-commit: 008a27c6a1c818a96a24dfcc7f5650409d31e7c2
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2835'
 ht-degree: 10%
 
 ---
@@ -30,9 +30,9 @@ Al cargar imágenes, puede recortar automáticamente la imagen al cargarla aplic
 
 Al implementar Recorte inteligente en imágenes, Adobe recomienda las siguientes prácticas recomendadas y aplica el siguiente límite:
 
-| Tipo de límite | Práctica recomendada | Límite impuesto | Cambio al límite el 31 de diciembre de 2022 |
-| --- | --- | --- | --- |
-| Número de recortes inteligentes por imagen | 5 | 100 | 20 |
+| Tipo de límite | Práctica recomendada | Límite impuesto |
+| --- | --- | --- |
+| Número de recortes inteligentes por imagen | 5 | 100 |
 
 Consulte también [Limitaciones de Dynamic Media](/help/assets/limitations.md).
 
@@ -160,7 +160,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 ## Editar el recorte inteligente o la muestra inteligente de una sola imagen {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
+・ El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
 
 Puede realinear manualmente o cambiar el tamaño de la ventana de recorte inteligente de una imagen para refinar aún más su punto focal.
 
@@ -188,6 +188,9 @@ Consulte también [Editar el recorte inteligente o la muestra inteligente de var
 1. Cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]** y, a continuación, seleccione **[!UICONTROL Cerrar]** para volver a la carpeta de recursos.
 
 ## Editar el recorte inteligente o la muestra inteligente de varias imágenes {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+・ El recorte inteligente solo está disponible en el modo Dynamic Media - Scene7.
 
 Después de aplicar un perfil de imagen (que contiene Recorte inteligente) a una carpeta, todas las imágenes de esa carpeta tienen un recorte aplicado a ellas. Si lo desea, puede *manualmente* vuelva a alinear o cambie el tamaño de la ventana de recorte inteligente en varias imágenes para restringir aún más su punto focal.
 
