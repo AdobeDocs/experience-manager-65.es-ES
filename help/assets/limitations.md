@@ -8,9 +8,9 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: 7c0d5f7d1286bdcc0189f3c6ffecbd2149d6a78a
+source-git-commit: cd4342740a09cb5315c640768bf24af6c7788a48
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 5%
 
 ---
@@ -30,7 +30,7 @@ Cuando se crea un conjunto de giros o un conjunto de imágenes, o se cargan PDF 
 
 | Recurso: tipo de límite | Práctica recomendada | Límite impuesto | Cambio al límite el 31 de diciembre de 2022 |
 | --- | --- | --- | --- |
-| **Imagen** - Número de recortes inteligentes por imagen | 5 | 100 | 20 |
+| **Imagen** - Número de recortes inteligentes por imagen | 5 | 100 | No aplicable |
 | **Todos los conjuntos** - Número de activos duplicados por conjunto | Sin duplicados | 20 | No aplicable |
 | **Todos los conjuntos** - Número máximo de activos por conjunto | 5 a 10 imágenes por conjunto | 1000 | No aplicable |
 | **Conjunto de giros** - Número máximo de filas/columnas por conjunto 2D | 12 a 18 imágenes por conjunto | 1000 | No aplicable |
