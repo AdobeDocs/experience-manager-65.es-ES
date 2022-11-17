@@ -12,7 +12,7 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: ee45113daee495d9b56a0f6e2c463d9cca006540
+source-git-commit: dd8f24ce412a8ca6c44224a7602533dae0898e92
 workflow-type: tm+mt
 source-wordcount: '6230'
 ht-degree: 2%
@@ -521,7 +521,7 @@ Se puede acceder a ella desde la pantalla de bienvenida, en **Herramientas - Ope
 
 También se puede acceder directamente a ella en esta dirección URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
-![screen-shot_2019-06-18at154754](assets/screen-shot_2019-06-18at154754.png)
+![index_manager](assets/index_manager.png)
 
 La IU se puede utilizar para filtrar índices de la tabla escribiendo los criterios de filtro en el cuadro de búsqueda situado en la esquina superior izquierda de la pantalla.
 
