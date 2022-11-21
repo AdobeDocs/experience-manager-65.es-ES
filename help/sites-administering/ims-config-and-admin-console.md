@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 1651fadeda0f2b37c90af2e1b2f84d74c118ccd9
+source-git-commit: 778987e69a23f81584f7a86db2fe24df64035919
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1683'
 ht-degree: 12%
 
 ---
@@ -124,7 +124,7 @@ Las principales características de esta versión son la capacidad de asignar di
 
 Puede encontrar más información sobre las nuevas funciones de grupo aquí:
 
-[https://github.com/adobe-apiplatform/user-sync.py/blob/v2/docs/en/user-manual/advanced_configuration](https://github.com/adobe-apiplatform/user-sync.py/blob/v2/docs/en/user-manual/advanced_configuration.md#additional-group-options)
+[https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options](https://adobe-apiplatform.github.io/user-sync.py/en/user-manual/advanced_configuration.html#additional-group-options)
 
 >[!NOTE]
 >
