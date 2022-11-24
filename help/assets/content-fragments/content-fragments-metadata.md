@@ -4,10 +4,10 @@ description: Consulte cómo puede ver y editar las propiedades de los metadatos 
 feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 65%
+source-wordcount: '222'
+ht-degree: 59%
 
 ---
 
@@ -24,7 +24,6 @@ Puede ver y editar los metadatos (propiedades) de los fragmentos de contenido:
 
    * Seleccione [**Ver propiedades** para abrir los cuadros de diálogo](/help/assets/manage-assets.md#editing-properties). Una vez abierto para su visualización, también puede editarlo.
    * Abra el fragmento de contenido para editarlo y, a continuación, seleccione **Metadatos** del panel lateral.
-
    ![metadatos](assets/cfm-metadata-01.png)
 
 3. La pestaña **Básico** proporciona opciones que puede ver o editar:
@@ -36,5 +35,10 @@ Puede ver y editar los metadatos (propiedades) de los fragmentos de contenido:
    * **Etiquetas**
       * Las [Etiquetas](/help/sites-authoring/tags.md) son especialmente potentes a la hora de organizar los fragmentos, ya que se pueden utilizar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para encontrar contenido (mediante etiquetas) y aplicar operaciones por lotes.
 Por ejemplo, puede etiquetar fragmentos relevantes como &quot;lanzamiento de Navidad&quot; para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
-   * Creado (solo visualización)
+      >[!NOTE]
+      >
+      >**Etiquetas** también se puede agregar cuando [creación del contenido de la variación](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) y cuándo [creación de variaciones](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+
+   * **Creado** (solo visualización)
+   Por ejemplo:
    ![metadatos](assets/cfm-metadata-02.png)

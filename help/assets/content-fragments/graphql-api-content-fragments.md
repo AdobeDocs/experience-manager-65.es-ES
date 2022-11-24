@@ -3,10 +3,10 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) con la API de AEM GraphQL para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 6f3f88ea0f07c97fa8d7ff3bdd1c89114d12a8a1
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '3986'
-ht-degree: 89%
+source-wordcount: '4089'
+ht-degree: 87%
 
 ---
 
@@ -543,6 +543,11 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
    * añada `List` al nombre del modelo; por ejemplo, `cityList`
    * Consulte [Consulta de muestra: toda la información acerca de todas las ciudades](#sample-all-information-all-cities)
 
+* El filtro `includeVariations` se incluye en la variable `List` tipo de consulta.  Para recuperar las Variaciones de fragmento de contenido en los resultados de la consulta, la variable `includeVariations` El filtro debe estar definido como `true`.
+
+   >[!CAUTION]
+   >El filtro `includeVariations` no se puede utilizar junto con el campo generado por el sistema `_variation`.
+
 * Si desea utilizar un OR lógico:
    * use ` _logOp: OR`
    * Consulte [Consulta de muestra: todas las personas que tienen el apellido “Jobs” o “Smith”](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
@@ -572,7 +577,18 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
          >
          >Si la variación dada no existe para un fragmento de contenido, la variación maestra se devolverá como predeterminada (reserva).
 
+         >[!CAUTION]
+         >Campo generado por el sistema `_variation` no se puede usar junto con el filtro `includeVariations`.
+
          * Consulte [Consulta de muestra: todas las ciudades con una variación con nombre](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+      * `_tags` : para mostrar los ID de fragmentos de contenido o variaciones que contienen etiquetas; es una matriz de `cq:tags` identificadores.
+
+         * Consulte [Consulta de ejemplo: nombres de todas las ciudades etiquetadas como pausas](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+         * Consulte [Consulta de ejemplo para variaciones de fragmento de contenido de un modelo determinado que tiene una etiqueta específica adjunta](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+
+         >[!NOTE]
+         >
+         >Las etiquetas también se pueden consultar enumerando los metadatos de un fragmento de contenido.
    * Y operaciones:
 
       * `_operator`: aplicar operadores específicos; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -582,6 +598,8 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
          * Consulte [Consulta de muestra: filtre en una matriz con un elemento que deba producirse al menos una vez](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`: para ignorar el caso al consultar
          * Consulte [Consulta de muestra: todas las ciudades con SAN en el nombre, sin importar las mayúsculas](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
+
+
 
 
 

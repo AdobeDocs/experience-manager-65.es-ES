@@ -4,10 +4,10 @@ description: Comprender cómo las variaciones pueden hacer que el contenido sin 
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 95%
+source-wordcount: '2426'
+ht-degree: 87%
 
 ---
 
@@ -45,19 +45,32 @@ Cuando abra el fragmento de contenido para editarlo, la pestaña **Variaciones**
 Por ejemplo:
 
 ![editor de pantalla completa](assets/cfm-variations-02.png)
+
 Puede hacer lo siguiente:
 
-* realice ediciones directamente en la pestaña **Variaciones** 
+* Edite el contenido directamente en el **Variaciones** ficha; cada tipo de datos ofrece diferentes opciones de edición, por ejemplo:
 
-   * cada tipo de datos ofrece diferentes opciones de edición
+   * para los campos **Texto de varias líneas** también puede abrir los campos [editor de pantalla completa](#full-screen-editor) a:
 
-* para los campos **Texto de varias líneas** también puede abrir los campos [editor de pantalla completa](#full-screen-editor) a:
+      * seleccione el [Formato](#formats)
+      * consulte más opciones de edición (para formato de [Texto enriquecido](#rich-text))
+      * acceder a una amplia gama de [acciones](#actions)
+   * Para los campos **Referencia a fragmento** la opción [Editar fragmento de contenido](#fragment-references-edit-content-fragment) puede estar disponible, dependiendo de la definición del modelo.
 
-   * seleccione el [Formato](#formats)
-   * consulte más opciones de edición (para formato de [Texto enriquecido](#rich-text))
-   * acceder a una amplia gama de [acciones](#actions)
 
-* Para los campos **Referencia a fragmento** la opción **[Editar fragmento de contenido](#fragment-references-edit-content-fragment)** puede estar disponible, dependiendo de la definición del modelo.
+* Asignar **Etiquetas** a la variación actual; las etiquetas se pueden añadir, actualizar y eliminar
+
+   * Las [Etiquetas](/help/sites-authoring/tags.md) son especialmente potentes a la hora de organizar los fragmentos, ya que se pueden utilizar para la clasificación de contenido y la taxonomía. Las etiquetas se pueden utilizar para encontrar contenido (mediante etiquetas) y aplicar operaciones por lotes.
+
+      * Si busca una etiqueta, devolverá el fragmento, con la variación etiquetada resaltada.
+      * Las etiquetas de variación también se pueden usar para agrupar variaciones para un perfil específico de la red de entrega de contenido (CDN) (para el almacenamiento en caché de CDN), en lugar de utilizar el nombre de la variación.
+
+      Por ejemplo, puede etiquetar fragmentos relevantes como &quot;lanzamiento de Navidad&quot; para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
+   >[!NOTE]
+   >
+   >**Etiquetas** también se puede agregar (a la variable **Maestro** como parte de la variable [Metadatos](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [Crear y administrar variaciones](#managing-variations) del contenido **Principal.**
 
 ### Editor de pantalla completa {#full-screen-editor}
 
@@ -367,7 +380,7 @@ Hay varios métodos para agregar [imágenes](/help/assets/content-fragments/cont
 1. Use **Seleccionar** para agregar una referencia al fragmento de contenido seleccionado al fragmento de contenido actual (en la ubicación actual).
 
    >[!CAUTION]
-   Si, después de agregar una referencia a otro fragmento, cambia el formato a
+   Si, después de agregar una referencia a otro fragmento, cambia el formato a:
    * **Texto sin formato**: la referencia se perderá completamente del fragmento.
    * **Markdown**: la referencia se mantendrá.
 
@@ -388,6 +401,9 @@ Para crear una nueva variación, haga lo siguiente:
 
    >[!NOTE]
    Al crear una variación nueva, siempre es **Principal** que se copia, no la variación que está abierta actualmente.
+
+   >[!NOTE]
+   Al crear una variación nueva, todas las variables **Etiquetas** actualmente asignado a la variable **Maestro** se copian en la nueva variación.
 
 ### Edición de una variación {#editing-a-variation}
 
@@ -435,7 +451,7 @@ Al editar una variación, tiene acceso a la acción para sincronizar el elemento
 >[!CAUTION]
 La sincronización solo está disponible para copiar cambios *de **Principal**a la variación*.
 Solo se sincronizará el elemento actual de la variación.
-La sincronización solo funciona en el tipo de datos de **texto de varias líneas**.
+La sincronización solo funciona en la **Texto de varias líneas** tipo de datos.
 No está disponible como opción la transferencia de cambios *de una variación **a Principal***.
 
 <!-- needs new screenshot for synchronize effect -->
@@ -460,4 +476,4 @@ No está disponible como opción la transferencia de cambios *de una variación 
 
    ![sincronización con principal](assets/cfm-variations-11c.png)
 
-1. Seleccione **Sincronizar**, la variación se actualiza y se muestra.
+1. Select **Sincronizar**, la variación se actualizará y se mostrará.
