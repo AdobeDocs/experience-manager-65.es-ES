@@ -2,9 +2,9 @@
 title: Caducidad de los certificados de Extensiones de Reader y su impacto
 description: Caducidad de los certificados de Extensiones de Reader y su impacto
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: bbc8fdf2eb7dd35600e2e2a87550e9de557f0eb0
+source-git-commit: f35a35577f06686558bb1277b0d9bb17f6f0b7bf
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1114'
 ht-degree: 2%
 
 ---
@@ -26,9 +26,8 @@ Todos los documentos de PDF, Reader ampliado con los certificados más antiguos 
 
 A. Adobe Root CA es la entidad emisora de certificados desde la que se emite un certificado de Acrobat Reader Extensions. El 7 de enero de 2023, &quot;Adobe Root CA&quot; y todos los certificados emitidos a partir de él caducan.
 
-**P. ¿Hubo una comunicación anterior del Adobe sobre la caducidad de los certificados y el impacto en el uso/apertura de PDF? ¿Debería ignorarse esa comunicación?**
-A. Basándose en la reevaluación de la situación, todos los documentos de PDF extendidos utilizando certificados de producción emitidos desde el antiguo &quot;Adobe Root CA&quot; antes del 7 de enero de 2023 siguen funcionando sin ningún cambio después del 7 de enero de 2023. Si ya ha actualizado sus PDF, no habrá cambios en la experiencia
-
+**P. Hubo una comunicación anterior del Adobe sobre la caducidad de los certificados y las repercusiones en la utilización o apertura de documentos de PDF. ¿Debería ignorarse esa comunicación?**
+A. Sobre la base de la reevaluación de la situación, todos los documentos PDF extendidos utilizando certificados de producción emitidos desde el antiguo &quot;Adobe Root CA&quot; antes del 7 de enero de 2023 siguen funcionando sin ningún cambio después del 7 de enero de 2023. Si ya ha actualizado sus PDF, no habrá cambios en la experiencia
 
 **P. ¿Con quién debo ponerme en contacto si tengo más preguntas?**
 
@@ -44,11 +43,11 @@ A. La descripción de los nuevos certificados de Extensiones de Acrobat Reader m
 
 **P. ¿Cómo obtengo los últimos certificados?**
 
-A. Todos los clientes de Forms con licencia activa pueden descargar los nuevos certificados (certificados basados en &quot;Adobe Root CA G2&quot;) desde el [Sitio web de licencias de Adobe](https://licensing.adobe.com/). Si no encuentra el certificado en el sitio web de licencias de Adobe, póngase en contacto con [Compatibilidad con Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) o levante un ticket de soporte.
+A. Todos los clientes de Forms autorizados (con licencia activa) pueden descargar los nuevos certificados (certificados basados en &quot;Adobe Root CA G2&quot;) desde el [Sitio web de licencias de Adobe](https://licensing.adobe.com/). Si no encuentra el certificado en el sitio web de licencias de Adobe, póngase en contacto con [Compatibilidad con Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) o levante un ticket de soporte.
 
-**P. ¿Siguen funcionando los documentos de mi PDF ampliados con certificados emitidos por &quot;Adobe Root CA&quot; (antigua autoridad de certificación) después del 7 de enero de 2023?**
+**P. ¿Siguen funcionando los documentos de mi PDF ampliados con certificados emitidos por &quot;Adobe Root CA&quot; (la antigua autoridad de certificación) después del 7 de enero de 2023?**
 
-R. Sí, todos los documentos de PDF extendidos utilizando certificados de producción emitidos por la &#39;Adobe Root CA&#39; (antigua autoridad de certificación) antes del 7 de enero de 2023 siguen funcionando sin ningún cambio después del 7 de enero de 2023. Los documentos del PDF extendidos con certificados de evaluación dejan de funcionar después de la fecha de caducidad.
+A. Sí, todos los documentos de PDF extendidos utilizando certificados de producción emitidos por el &quot;Adobe Root CA&quot; (la antigua autoridad de certificación) antes del 7 de enero de 2023 siguen funcionando sin ningún cambio después del 7 de enero de 2023. Los documentos del PDF extendidos con certificados de evaluación dejan de funcionar después de la fecha de caducidad.
 
 **P. ¿Qué versión de Adobe Acrobat Reader es necesaria para seguir utilizando documentos de PDF extendidos con certificados emitidos por &quot;Adobe Root CA&quot; (la antigua autoridad de certificación)?**
 
@@ -70,7 +69,7 @@ R. Sí, puede mantener ambos certificados, pero con diferentes alias en un servi
 
 R. Sí, el mismo certificado de Extensiones de Acrobat Reader se puede usar en varios entornos.
 
-**P. ¿Cómo puedo comprobar los derechos de uso aplicados en un documento de PDF?**
+**P. ¿Cómo puedo comprobar los derechos de uso aplicados a un documento de PDF?**
 
 A. Puede usar la variable [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) API para recuperar la información sobre los derechos de uso aplicados a un documento de PDF.
 
