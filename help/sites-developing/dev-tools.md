@@ -10,10 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 exl-id: 97310ed5-f8fb-416c-8a66-68f652abeaa0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4967a6d9ad92272a1ff442456fe65de51cc46a73
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 3%
+source-wordcount: '373'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,6 @@ Adobe ha lanzado las siguientes extensiones:
 
 * [Extensión de AEM Eclipse](/help/sites-developing/aem-eclipse.md)
 * [Extensión de AEM Brackets](/help/sites-developing/aem-brackets.md)
-* [Extensión AEM IntelliJ](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf) (desde el cable del encabezado)
 
 ### Otras herramientas {#other-tools}
 
