@@ -2,9 +2,9 @@
 title: No se puede restaurar el repositorio CRX dañado aplicable al servidor de clúster JEE
 description: Pasos para restaurar el repositorio CRX dañado
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
-source-git-commit: cf034e8765317ee022aad4693ced37c3fa793ff2
+source-git-commit: c4f776b08cb8cc8c6eea78a3757735e063bec20c
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '179'
 ht-degree: 7%
 
 ---
@@ -35,4 +35,4 @@ Siga estos pasos para resolver el problema:
 
 Esta solución se aplica a:
 
-* AEM Forms en el entorno de clúster JEE
+* AEM Forms en clúster JEE
