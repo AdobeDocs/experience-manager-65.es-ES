@@ -2,9 +2,9 @@
 title: Caducidad de los certificados de Extensiones de Reader y su impacto
 description: Caducidad de los certificados de Extensiones de Reader y su impacto
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: bcbfdcd305b7319506a11677909895c38f92a6cf
+source-git-commit: 5f8061ebd2143f11567ac5b78162bdd02106d2e3
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1115'
 ht-degree: 2%
 
 ---
@@ -28,8 +28,7 @@ A. Adobe Root CA es la entidad emisora de certificados desde la que se emite un 
 
 **P. Hubo una comunicación anterior del Adobe sobre la caducidad de los certificados y las repercusiones en la utilización o apertura de documentos de PDF. ¿Debería ignorarse esa comunicación?**
 
-A. Sobre la base de la reevaluación de la situación, todos los documentos PDF extendidos utilizando certificados de producción emitidos desde el antiguo &quot;Adobe Root CA&quot; antes del 7 de enero de 2023 siguen funcionando sin ningún cambio después del 7 de enero de 2023. Si ya ha actualizado a sus PDF, no hay ningún cambio en la experiencia.
-
+A. Sobre la base de la reevaluación de la situación, todos los documentos PDF extendidos utilizando certificados de producción emitidos desde el antiguo &quot;Adobe Root CA&quot; antes del 7 de enero de 2023 siguen funcionando sin ningún cambio después del 7 de enero de 2023. Si ya ha actualizado los documentos del PDF, no se producirá ningún cambio en la experiencia.
 
 **P. ¿Con quién debo ponerme en contacto si tengo más preguntas?**
 
