@@ -12,9 +12,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: bc3dd7d229a75323b98a96d60dcbb3ae2b8c09ab
+source-git-commit: 97b0cec1c8091bbc5736bd68bdee257ca423f93e
 workflow-type: tm+mt
-source-wordcount: '5469'
+source-wordcount: '5454'
 ht-degree: 2%
 
 ---
@@ -215,16 +215,17 @@ Las listas de control de acceso están formadas por permisos individuales y se u
 
 >[!NOTE]
 >
->Hay ACL que se incluyen en los ejemplos. Se recomienda que revise y determine qué es lo apropiado para sus aplicaciones. Para revisar las ACL incluidas, vaya a **CRXDE **y seleccione la **Control de acceso** para los siguientes nodos:
+>Hay ACL que se incluyen en los ejemplos. Se recomienda que revise y determine qué es lo apropiado para sus aplicaciones. Para revisar las ACL incluidas, vaya a **CRXDE** y seleccione **Control de acceso** para los siguientes nodos:
 >
->`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`: Permite a todos leer el acceso.
->`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`: Permite a todos leer el acceso.
->`/home/users/geometrixx-outdoors`: Permite a todos leer el acceso para `*/profile*` y
->`*/social/relationships/following/*`.
+>* `/etc/cloudservices`
+>* `/home/users/we-retail`
 >
->Su aplicación personalizada puede establecer el acceso para otras relaciones, como `*/social/relationships/friend/*` o `*/social/relationships/pending-following/*`.
+>La aplicación personalizada puede establecer el acceso para otras relaciones, como:
 >
->Al crear ACL específicas para comunidades, los miembros que se unan a esas comunidades pueden recibir permisos adicionales. Por ejemplo, este podría ser el caso cuando los usuarios se unen a las comunidades en `/content/geometrixx-outdoors/en/community/hiking` o `/content/geometrixx-outdoors/en/community/winter-sports`.
+>* `*/social/relationships/friend/*`
+>* o `*/social/relationships/pending-following/*`.
+>
+>Al crear ACL específicas para comunidades, los miembros que se unan a esas comunidades pueden recibir permisos adicionales. Por ejemplo, este podría ser el caso cuando los usuarios se unen a las comunidades en: `/content/we-retail/us/en/community`
 
 ### Estados de permisos {#permission-states}
 
