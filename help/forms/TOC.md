@@ -8,9 +8,9 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: 43a1cff0d7c2fe1d25e41cff3d02d1a55e6792c5
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3824'
+source-wordcount: '3830'
 ht-degree: 8%
 
 ---
@@ -371,6 +371,7 @@ ht-degree: 8%
    + [Reader que amplía documentos de PDF protegidos por políticas utilizando la Biblioteca de Protección Portátil](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [Habilitar AEM para buscar documentos PDF protegido de seguridad de documentos y documentos de Microsoft Office](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protect un documento en nombre de otro usuario](using/protect-document-on-behalf-of-another-user.md)
+   + [Compatibilidad con oAuth2.0 para el servicio de correo de Microsoft](/help/forms/using/oauth2-support-for-mail-service.md)
 + Forms Designer {#use-forms-designer}
    + [Ayuda de Forms Designer](using/forms-designer-help.md)
    + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65)

@@ -11,9 +11,9 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3466'
 ht-degree: 14%
 
 ---
@@ -298,10 +298,10 @@ Durante la generación de un documento de registro, puede cambiar la informació
 Para localizar la información de marca que introduce en la ficha Documento de registro, debe asegurarse de que la configuración regional del explorador esté correctamente configurada. Para personalizar la información de marca del documento de registro, complete los siguientes pasos:
 
 1. Seleccione un panel (panel raíz) en el documento de registro y, a continuación, pulse ![configure](assets/configure.png).
-1. Pulse ![dortab](assets/dortab.png). Aparecerá la pestaña Documento de registro.
+1. Pulse ![dortab](/help/forms/using/assets/dortab.png). Aparecerá la pestaña Documento de registro.
 1. Seleccione la plantilla predeterminada o una plantilla personalizada para procesar el documento de registro. Si selecciona la plantilla predeterminada, aparece una vista previa en miniatura del documento de registro debajo de la lista desplegable Plantilla.
 
-   ![brandingtemplate](assets/brandingtemplate.png)
+   ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
 
    Si elige seleccionar una plantilla personalizada, busque y seleccione un XDP en el servidor de AEM Forms. Si desea utilizar una plantilla que no esté ya en el servidor de AEM Forms, primero debe cargar el XDP en el servidor de AEM Forms.
 
@@ -396,7 +396,7 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
 **Configuración del nivel de formulario**
 
 * **Incluir campos no enlazados en DoR:** La configuración de la propiedad incluye campos no enlazados del formulario adaptable basado en esquema del documento de registro. De forma predeterminada, es True.
-* **Excluir campos del documento de registro si están ocultos:** al establecer la propiedad, se anula el comportamiento de la propiedad de nivel de campo “Excluir del documento de registro” cuando no es True. Si los campos están ocultos en el momento del envío del formulario, se excluirán del documento de registro si la propiedad está establecida en true, siempre que la propiedad &quot;Excluir del documento de registro&quot; no esté establecida.
+* **Excluir campos de DoR si están ocultos:** Establezca la propiedad para excluir los campos ocultos de [!UICONTROL Documento de registro] en el envío del formulario. Al activar [Revalidate en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir dichos campos del [!UICONTROL Documento de registro].
 
 ## Aplicar un salto de página en un documento de registro {#apply-page-breaks-in-dor}
 
@@ -404,13 +404,12 @@ Puede aplicar saltos de página en un documento de registro utilizando varios m�
 
 Para aplicar un salto de página a un documento de registro:
 
-1. Pulse el panel y seleccione ![Configurar](assets/configure-icon.svg).
-
+1. Pulse el panel y seleccione ![Configurar](/help/forms/using/assets/configure.png)
 1. Expandir **[!UICONTROL Documento de registro]** para ver las propiedades.
 
-1. En el **[!UICONTROL Paginación]** sección, toque ![Carpeta](assets/folder-icon.svg) en el **[!UICONTROL Lugar]** campo .
+1. En el **[!UICONTROL Paginación]** sección, toque ![Carpeta](/help/forms/using/assets/folder-icon.png) en el **[!UICONTROL Lugar]** campo .
 1. Toque **[!UICONTROL Principio de la página siguiente]** y toque **[!UICONTROL Select]**. También puede tocar **[!UICONTROL Principio de la página]**, seleccione la página de formato y pulse **[!UICONTROL Select]** para aplicar el salto de página.
-1. Pulse ![Guardar](assets/save_icon.svg) para guardar las propiedades.
+1. Pulse ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
 
 El panel seleccionado se mueve a la página siguiente.
 
@@ -424,13 +423,13 @@ A continuación se muestra un ejemplo de cómo aplicar varias páginas de format
 
 Para aplicar las propiedades de la segunda página de formato a un panel y las propiedades de la tercera página de formato a los paneles siguientes, ejecute los pasos siguientes:
 
-1. Pulse el panel para aplicar la segunda página de formato y seleccione ![Configurar](assets/configure-icon.svg).
-1. En el **[!UICONTROL Paginación]** sección, toque ![Carpeta](assets/folder-icon.svg) en el **[!UICONTROL Lugar]** campo .
+1. Pulse el panel para aplicar la segunda página de formato y seleccione ![Configurar](assets/cmppr.png).
+1. En el **[!UICONTROL Paginación]** sección, toque ![Carpeta](/help/forms/using/assets/folder-icon.png) en el **[!UICONTROL Lugar]** campo .
 1. Toque **[!UICONTROL En la página]**, seleccione la segunda página de formato y pulse **[!UICONTROL Select]**.
 AEM Forms aplica la segunda página de formato al panel y a todos los paneles posteriores del formulario adaptable.
-1. En el **[!UICONTROL Paginación]** sección, toque ![Carpeta](assets/folder-icon.svg) en el **[!UICONTROL Después]** campo .
+1. En el **[!UICONTROL Paginación]** sección, toque ![Carpeta](/help/forms/using/assets/folder-icon.png) en el **[!UICONTROL Después]** campo .
 1. Toque **[!UICONTROL Ir a la página]**, seleccione la tercera página de formato y pulse **[!UICONTROL Select]**.
-1. Pulse ![Guardar](assets/save_icon.svg) para guardar las propiedades.
+1. Pulse ![Guardar](/help/forms/using/assets/save_icon.png) para guardar las propiedades.
 AEM Forms aplica la tercera página de formato al panel y a todos los paneles posteriores del formulario adaptable.
 
 

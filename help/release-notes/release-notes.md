@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Busque información sobre la versión, novedades, procedimientos de instalación y una lista detallada de cambios para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 937af2df46b93aab6c9010814175d72a9bd583db
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3853'
 ht-degree: 4%
 
 ---
@@ -105,9 +105,44 @@ ht-degree: 4%
 
 ## [!DNL Forms] {#forms-6515}
 
->[!NOTE]
->
->Correcciones en [!DNL Experience Manager] Forms se entrega a través de un paquete de complementos independiente una semana después de la programación [!DNL Experience Manager] Fecha de versión del Service Pack. En este caso, los paquetes de complementos se lanzarán el jueves 1 de diciembre de 2022. Además, a esta sección también se agregará una lista de correcciones y mejoras de Forms.
+### Características principales {#keyfeatures}
+
+* AEM Forms Designer ya está disponible en la configuración regional española. (LC-3920051)
+* Ahora puede utilizar OAuth2 para autenticarse con los protocolos de servidor de correo de Microsoft Office 365 (SMTP e IMAP). (NPR-35177)
+* Puede establecer [Revalidate en el servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) a true para identificar los campos ocultos y excluirlos de un documento de registro en el servidor. (NPR-38149)
+* AEM Forms Designer requiere una versión de 32 bits de Visual C++ 2019 Redistribuible (x86).  (NPR-36690)
+
+### Correcciones {#fixes}
+
+* Cuando la propiedad de un formulario adaptable desactivada para los datos está activada, el aspecto del botón de radio y de los grupos de casillas de verificación no cambia. (NPR-39368)
+* Cuando se traduce un formulario adaptable, se omiten algunas de las traducciones y no se muestran correctamente. (NPR-39367)
+* Cuando la propiedad de una página está definida como oculta, la página no se elimina del conjunto de formularios. (NPR-39325)
+* En un documento de registro, la sección de nota al pie dinámica al final de la página no está presente. (NPR-39322)
+* Cuando se genera un documento de registro para un formulario adaptable, solo se permite la alineación vertical para los botones de opción y las casillas de verificación. El usuario no puede establecer la alineación horizontal para los botones de opción y las casillas de verificación. (NPR-39321)
+* Después de implementar la Gestión de Correspondencia, si varios usuarios intentan acceder a un formulario, org.apache.sling.i18n.impl.JcrResourceBundle.loadPotentialLanguageRoots se convertirá en un cuello de botella y la mayoría de los subprocesos se verán afectados. A menudo, varias solicitudes de página de formularios tardaron más de 1 minuto en cargarse cada una incluso cuando el servidor tiene una carga muy baja. (NPR-39176, CQ-4347710)
+* En un formulario adaptable, cuando se utiliza un campo de texto enriquecido en un fragmento de formulario adaptable cargado a medida, se experimentan algunos de los siguientes errores:
+   * No se puede editar el contenido ni añadir nada al campo Texto enriquecido .
+   * No se respeta el patrón de visualización aplicado al texto enriquecido. 
+   * El mensaje de error de longitud mínima del campo no se muestra al enviar el formulario.
+   * El contenido de este campo de texto enriquecido se incluye varias veces en el submit-XML producido. (NPR-39168)
+* Cuando se utiliza la opción Selector de fecha en un formulario adaptable, no se puede convertir el valor al formato correcto. (NPR-39156)
+* Al previsualizar un formulario adaptable como formulario HTML, no se procesa correctamente, ya que algunos subformularios se superponen con el formulario principal. (NPR-39046)
+* Si el panel tiene una tabla oculta y el formulario adaptable se procesa mediante la vista tabular, los campos de la primera ficha no se muestran correctamente. (NPR-39025)
+* La variable `Body` falta la etiqueta de para la plantilla OOTB (predeterminada). (NPR-39022)
+* El documento de registro no se genera en el idioma del formulario adaptable. Siempre se genera en inglés. (NPR-39020)
+* Cuando un formulario adaptable tiene varios paneles y algunos de los paneles utilizan el **Archivo adjunto** el componente `Error occurred while draft saving` se produce un error . (NPR-38978)
+* When `=` se utiliza en los campos de casilla de verificación, lista desplegable o botón de radio de un formulario adaptable y se genera el documento de registro y, a continuación, `=` no está visible en el documento de registro generado.(NPR-38859)
+* Hay un aumento múltiple en el número de errores de procesamiento de lotes de notificaciones después de la actualización del Service Pack 6.5.11.0. (NPR-39636)
+* Cuando no se proporcionan datos de prueba, las letras de Gestión de Correspondencia no se cargan en la interfaz de usuario del agente. (CQ-4348702)
+* Cuando el usuario aplica el AEM Forms Service Pack 14 (SP14) de AEM Forms implementado mediante IBM® WebSphere®, el arranque falla al inicializar una base de datos y la `java.lang.NoClassDefFoundError:org/apache/log4j/Logger` se produce un error.(NPR-39414)
+* En un formulario AEM en el servidor OSGi, cuando se utiliza la API del servicio de documentos para certificar el PDF, se produce un error: com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311-003. (NPR-38855)
+* Cuando el usuario intenta utilizar el servicio wrapper para procesar cartas con AEM 6.3 Forms, la variable `java.lang.reflect.UndeclaredThrowableException` se produce un error. (CQ-4347259)
+* Cuando un XDP se procesa como formulario HTML5, el contenido de la página de formato se procesa primero independientemente de la colocación de los objetos en un formulario adaptable. (CQ-4345218)
+* La configuración de la aplicación en el servidor de destino cambia a la configuración definida en el servidor de origen aunque la variable **Sobrescribir la configuración cuando se complete la importación** no está activada en el momento de importar la aplicación. (NPR-39044)
+* Cuando un usuario intenta actualizar la configuración del conector mediante el Administrador de configuración, falla.(CQ-4347077)
+* Cuando el usuario intenta ejecutar un parche de AEM Forms en JEE después de cambiar la contraseña predeterminada del usuario administrador, se produce una excepción `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` ocurre. (CQ-4348277)
+* En AEM Designer, los campos de formulario sin rótulos se colocan en celdas de tabla, incluidas las casillas de verificación.(LC-3920410)
+* Cuando el usuario intenta abrir la Ayuda en el Diseñador de AEM Forms, esta no se muestra correctamente. (CQ-4341996)
 
 ## [!DNL Sites] {#sites-6515}
 
