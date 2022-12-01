@@ -8,9 +8,9 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '3830'
+source-wordcount: '3827'
 ht-degree: 8%
 
 ---
@@ -371,7 +371,6 @@ ht-degree: 8%
    + [Reader que amplía documentos de PDF protegidos por políticas utilizando la Biblioteca de Protección Portátil](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [Habilitar AEM para buscar documentos PDF protegido de seguridad de documentos y documentos de Microsoft Office](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protect un documento en nombre de otro usuario](using/protect-document-on-behalf-of-another-user.md)
-   + [Compatibilidad con oAuth2.0 para el servicio de correo de Microsoft](/help/forms/using/oauth2-support-for-mail-service.md)
 + Forms Designer {#use-forms-designer}
    + [Ayuda de Forms Designer](using/forms-designer-help.md)
    + [Usar Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
@@ -453,6 +452,7 @@ ht-degree: 8%
    + Administración de puntos de conexión {#manage-endpoints}
       + [Adición, activación, modificación o eliminación de puntos finales](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [Configuración de extremos de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md)
+      + [Configurar la autenticación oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
       + [Configuración de puntos finales de Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Configuración de extremos de carpeta vigilados](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Configuración de los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)

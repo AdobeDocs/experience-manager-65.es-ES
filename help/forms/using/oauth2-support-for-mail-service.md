@@ -1,18 +1,16 @@
 ---
-title: Compatibilidad con OAuth2 para los protocolos de servidor de correo de Microsoft® Office 365
-description: Compatibilidad con Oauth2 para los protocolos de servidor de correo de Microsoft® Office 365
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+title: Configuración de la autenticación basada en OAuth2 para los protocolos de servidor de correo de Microsoft® Office 365
+description: Configuración de la autenticación basada en OAuth2 para los protocolos de servidor de correo de Microsoft® Office 365
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '938'
 ht-degree: 3%
 
 ---
 
-# Compatibilidad con OAuth 2.0 para los protocolos de servidor de correo de Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# Integración con los protocolos de servidor de correo de Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
-AEM Forms ofrece compatibilidad con OAuth 2.0 para la integración con los protocolos de servidor de correo de Microsoft® Office 365, con el fin de permitir que las organizaciones se adhieran a los requisitos de correo electrónico seguros. Azure Active Directory (Azure AD) ofrece el servicio de autenticación OAuth 2.0, que permite que la aplicación se conecte con varios protocolos, como IMAP, POP o SMTP, y acceda a los datos de correo electrónico de los usuarios de Office 365.
-
-A continuación se proporcionan instrucciones paso a paso para configurar los protocolos del servidor de correo de Microsoft® Office 365 para la autenticación mediante el servicio OAuth 2.0:
+Para permitir que las organizaciones cumplan los requisitos de seguridad de los correos electrónicos, AEM Forms ofrece compatibilidad con OAuth 2.0 para la integración con los protocolos de servidor de correo de Microsoft® Office 365. Puede utilizar el servicio de autenticación de Azure Active Directory (Azure AD) OAuth 2.0 para conectarse con varios protocolos, como IMAP, POP o SMTP, y acceder a los datos de correo electrónico de los usuarios de Office 365. A continuación se proporcionan instrucciones paso a paso para configurar los protocolos del servidor de correo de Microsoft® Office 365 para la autenticación mediante el servicio OAuth 2.0:
 
 1. Inicio de sesión [https://portal.azure.com/](https://portal.azure.com/) y busque **Azure Active Directory** en la barra de búsqueda y haga clic en el resultado.
 También puede navegar directamente a [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
@@ -22,9 +20,8 @@ También puede navegar directamente a [https://portal.azure.com/#blade/Microsoft
 
 1. Rellene la información según sus necesidades y haga clic en **Registro**.
    ![Cuenta admitida](/help/forms/using/assets/azure_suuportedaccountype.png)
-
-
-   En el caso anterior, **Cuentas en cualquier directorio organizativo (Cualquier directorio de Azure AD - Multitenant) y cuentas personales de Microsoft® (por ejemplo, Skype, Xbox)** está seleccionada.
+En el caso anterior, 
+**Cuentas en cualquier directorio organizativo (Cualquier directorio de Azure AD - Multitenant) y cuentas personales de Microsoft® (por ejemplo, Skype, Xbox)** está seleccionada.
 
    >[!NOTE]
    >
@@ -88,7 +85,9 @@ A continuación, debe generar el código de autorización, tal como se explica e
 ## Generación del token de actualización {#generating-the-refresh-token}
 
 A continuación, debe generar el token de actualización, tal como se explica en los pasos siguientes:
+
 1. Abra el símbolo del sistema y utilice el siguiente comando cURL para obtener el token de actualización.
+
 1. Sustituya el `clientID`, `client_secret` y `redirect_uri` con los valores de la aplicación junto con el valor de `<code>`:
 
    `curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/common/oauth2/v2.0/token`
@@ -163,9 +162,4 @@ Ahora, debe configurar el servicio de correo electrónico al último servidor JE
 * Si el servicio de correo electrónico no funciona correctamente. Intente volver a generar el `Refresh Token` como se ha descrito anteriormente. El nuevo valor tarda unos minutos en implementarse.
 
 * Error al configurar los detalles del servidor de correo electrónico en el extremo de correo electrónico mediante Workbench. Intente configurar el extremo mediante la IU de administración en lugar de Workbench.
-
-
-
-
-
 

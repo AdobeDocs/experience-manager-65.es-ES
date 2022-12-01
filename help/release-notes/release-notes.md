@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Busque información sobre la versión, novedades, procedimientos de instalación y una lista detallada de cambios para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3858'
 ht-degree: 4%
 
 ---
@@ -107,9 +107,9 @@ ht-degree: 4%
 
 ### Características principales {#keyfeatures}
 
-* AEM Forms Designer ya está disponible en la configuración regional española. (LC-3920051)
-* Ahora puede utilizar OAuth2 para autenticarse con los protocolos de servidor de correo de Microsoft Office 365 (SMTP e IMAP). (NPR-35177)
-* Puede establecer [Revalidate en el servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) a true para identificar los campos ocultos y excluirlos de un documento de registro en el servidor. (NPR-38149)
+* AEM Forms Designer ya está disponible en [Configuración regional en español](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es). (LC-3920051)
+* Ahora puede usar [OAuth2 para autenticarse con los protocolos de servidor de correo de Microsoft Office 365 (SMTP e IMAP)](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
+* Puede establecer [Revalidate en el servidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) a true para identificar los campos ocultos y excluirlos de un documento de registro en el servidor. (NPR-38149)
 * AEM Forms Designer requiere una versión de 32 bits de Visual C++ 2019 Redistribuible (x86).  (NPR-36690)
 
 ### Correcciones {#fixes}
@@ -165,7 +165,7 @@ ht-degree: 4%
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-* GraphQL genera una excepción. Por ejemplo, no puede obtener etiquetas de variación de un fragmento de contenido. No hay variación con el nombre &quot;eléctrico&quot;. Este problema se debe a una llamada `getVariationTags` para una variación no existente que produzca una excepción. (SITES-8898)
+* GraphQL plantea una excepción. Por ejemplo, no puede obtener etiquetas de variación de un fragmento de contenido. No hay variación con el nombre &quot;eléctrico&quot;. Este problema se debe a una llamada `getVariationTags` para una variación no existente que produzca una excepción. (SITES-8898)
 * Ordenar los pedidos de título en la vista de lista, tanto ascendente como descendente, cómo los títulos con el orden A, C, B. (SITES-7585)
 * Se ha agregado compatibilidad con etiquetas para variaciones de fragmentos de contenido. (SITES-8168)
 * Se ha identificado y eliminado el código específico de Odin del Experience Manager 6.5 que era innecesario. (SITES-3574)
@@ -319,7 +319,7 @@ Revise si utiliza una función o una capacidad en una implementación. Además, 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
  -->
 
-* [AEM fragmento de contenido con el paquete de índice 1.0.5 de GraphQL](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+* [AEM fragmento de contenido con el paquete de índice de GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
 Este paquete es necesario para los clientes que utilizan GraphQL; esto les permite añadir la definición de índice necesaria en función de las funciones que realmente utilizan.
 
 * Como [!DNL Microsoft® Windows Server 2019] no es compatible [!DNL MySQL 5.7] y [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] no admite instalaciones llave en mano para [!DNL AEM Forms 6.5.10.0].
