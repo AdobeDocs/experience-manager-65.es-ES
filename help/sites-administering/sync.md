@@ -12,9 +12,9 @@ discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 002b9035f37a1379556378686b64d26bbbc30288
 workflow-type: tm+mt
-source-wordcount: '2427'
+source-wordcount: '2445'
 ht-degree: 5%
 
 ---
@@ -47,13 +47,13 @@ Los beneficios de la sincronización de usuarios mediante la distribución de Sl
 
 >[!NOTE]
 >
->Si se requieren sesiones, se recomienda utilizar una solución SSO o utilizar una sesión adhesiva y hacer que los clientes inicien sesión si se cambian a otro publicador.
+>Si se requieren sesiones, se recomienda utilizar una solución SSO o utilizar una sesión adhesiva y hacer que los clientes inicien sesión si se cambian a otra instancia de publicación.
 
 >[!CAUTION]
 >
->Sincronización de la variable ***administradores*** no es compatible, incluso cuando la sincronización de usuarios está habilitada. En su lugar, se registrará un error al &quot;importar la comparación de diferencias&quot; en el registro de errores.
+>Sincronización de la variable **administradores** no es compatible, incluso cuando la sincronización de usuarios está habilitada. En su lugar, se registrará un error al &quot;importar la comparación de diferencias&quot; en el registro de errores.
 >
->Por lo tanto, cuando la implementación es un conjunto de servidores de publicación, si se agrega o elimina un usuario del ***administradores** , la modificación debe realizarse manualmente en cada instancia de publicación.
+>Por lo tanto, cuando la implementación es un conjunto de servidores de publicación, si se agrega o elimina un usuario del grupo **administradores** , la modificación debe realizarse manualmente en cada instancia de publicación.
 
 ## Habilitar sincronización de usuarios {#enable-user-sync}
 
@@ -71,7 +71,7 @@ A continuación se indican los pasos necesarios para habilitar la sincronizació
 
 ### Requisitos previos {#prerequisites}
 
-1. Si los usuarios y grupos de usuarios ya se han creado en un publicador, se recomienda [sincronizar manualmente](#manually-syncing-users-and-user-groups) los datos de usuario se envían a todos los editores antes de configurar y habilitar la sincronización de usuarios.
+1. Si los usuarios y grupos de usuarios ya se han creado en una instancia de publicación, se recomienda [sincronizar manualmente](#manually-syncing-users-and-user-groups) los datos de usuario se dirigen a todas las instancias de publicación antes de configurar y habilitar la sincronización de usuarios.
 
 Una vez habilitada la sincronización de usuarios, solo se sincronizan los usuarios y grupos recién creados.
 
@@ -159,7 +159,7 @@ Consulte también
 
 **Configuración de permisos**
 
-Una vez que sea un usuario autorizado, un miembro de **`administrators`**grupo de usuarios, se ha creado en todas las instancias de publicación, que el usuario autorizado debe identificarse como autor con permiso para sincronizar datos de usuario de autor a publicación.
+Una vez autorizado el usuario, un miembro de **`administrators`** grupo de usuarios, se ha creado en todas las instancias de publicación, que el usuario autorizado debe identificarse como autor con permiso para sincronizar los datos de usuario de autor a publicación.
 
 * **en author**
 
@@ -181,7 +181,7 @@ Una vez que sea un usuario autorizado, un miembro de **`administrators`**grupo d
 
 **Habilitar sincronización de usuarios**
 
-* **al publicar**:
+* **en cada instancia de publicación**:
 
    * iniciar sesión con privilegios de administrador
    * acceda al [Consola web](/help/sites-deploying/configuring-osgi.md)
@@ -193,7 +193,7 @@ Una vez que sea un usuario autorizado, un miembro de **`administrators`**grupo d
 
       * seleccione `Enabled` casilla de verificación
       * select `Save`
-   * **repetir **para cada instancia de publicación
+   * **repetir** para cada instancia de publicación
 
 
 
@@ -267,13 +267,13 @@ La configuración predeterminada es para una única instancia de publicación. C
 ![](assets/chlimage_1-25.png)
 
 * **Puntos finales del exportador**
-Debe haber un punto final de exportador para cada publicador. Por ejemplo, si hay 2 editores, localhost:4503 y 4504, debe haber 2 entradas:
+Debe haber un extremo exportador para cada instancia de publicación. Por ejemplo, si hay 2 instancias de publicación, localhost:4503 y 4504, debe haber 2 entradas:
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **Puntos finales del importador**
-Debe haber un extremo del importador para cada publicador. Por ejemplo, si hay 2 editores, localhost:4503 y 4504, debe haber 2 entradas:
+Debe haber un extremo del importador para cada instancia de publicación. Por ejemplo, si hay 2 instancias de publicación, localhost:4503 y 4504, debe haber 2 entradas:
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -400,7 +400,7 @@ Para que las actualizaciones se sincronicen correctamente, es necesario modifica
 
 Por diseño, los usuarios y perfiles creados en el entorno de publicación (registro propio) no aparecen en el entorno de creación.
 
-Cuando la topología es un [publicar granja](/help/sites-deploying/recommended-deploys.md#tarmk-farm) y la sincronización de usuarios se ha configurado correctamente, el *usuario *y *perfil de usuario* se sincroniza en la granja de publicación mediante la distribución Sling.
+Cuando la topología es un [publicar granja](/help/sites-deploying/recommended-deploys.md#tarmk-farm) y la sincronización de usuarios se ha configurado correctamente, la variable *usuario* y *perfil de usuario* se sincroniza en la granja de publicación mediante la distribución Sling.
 
 ### Los usuarios o grupos de usuarios se crean mediante la Consola de seguridad {#users-or-user-groups-are-created-using-security-console}
 
@@ -412,7 +412,7 @@ Cuando la variable [Administración de usuarios y seguridad](/help/sites-adminis
 
 ### Cómo desconectar la sincronización de usuarios {#how-to-take-user-sync-offline}
 
-Para desactivar la sincronización de usuarios, para [quitar un publicador](#how-to-remove-a-publisher) o [sincronizar manualmente datos](#manually-syncing-users-and-user-groups), la cola de distribución debe estar vacía y en silencio.
+Para quitar la sincronización de usuarios sin conexión, para [quitar una instancia de publicación](#how-to-remove-a-publish-instance) o [sincronizar manualmente datos](#manually-syncing-users-and-user-groups), la cola de distribución debe estar vacía y en silencio.
 
 Para comprobar el estado de la cola de distribución:
 
@@ -455,7 +455,7 @@ Esto es lo que se muestra cuando la sincronización de usuarios no está habilit
 
 ![](assets/chlimage_1-28.png)
 
-#### Cómo ejecutar diagnósticos para editores {#how-to-run-diagnostics-for-publishers}
+#### Ejecución de diagnósticos para instancias de publicación {#how-to-run-diagnostics-for-publish-instances}
 
 Cuando el diagnóstico se ejecuta desde el entorno de creación, los resultados de aprobación/error incluirán un [INFORMACIÓN] muestra la lista de instancias de publicación configuradas para su confirmación.
 
@@ -531,7 +531,7 @@ Consulte la sección [9. ID único de Sling](#unique-sling-id)
 
 ### Sincronización manual de usuarios y grupos de usuarios {#manually-syncing-users-and-user-groups}
 
-* en el editor en el que existen usuarios y grupos de usuarios:
+* en las instancias de publicación en las que existen usuarios y grupos de usuarios:
 
    * [si está activado, desactive la sincronización de usuarios](#how-to-take-user-sync-offline)
    * [crear un paquete](/help/sites-administering/package-manager.md#creating-a-new-package) de `/home`
@@ -549,13 +549,13 @@ Consulte la sección [9. ID único de Sling](#unique-sling-id)
 
 Para configurar o habilitar la sincronización de usuarios, vaya al paso 1: [Agente de distribución Apache Sling: fábrica de agentes de sincronización](#apache-sling-distribution-agent-sync-agents-factory)
 
-### Cuando un publicador deja de estar disponible {#when-a-publisher-becomes-unavailable}
+### Cuando una instancia de publicación deja de estar disponible {#when-a-publish-instance-becomes-unavailable}
 
-Cuando una instancia de publicación deja de estar disponible, no se debe eliminar si vuelve a estar en línea en el futuro. Los cambios se pondrán en cola para el editor y una vez que vuelva a estar en línea, se procesarán.
+Cuando una instancia de publicación deja de estar disponible, no se debe eliminar si vuelve a estar en línea en el futuro. Los cambios se pondrán en cola para la instancia de publicación y una vez que vuelva a estar en línea, se procesarán.
 
 Si la instancia de publicación nunca volverá a estar en línea, si está sin conexión de forma permanente, debe eliminarse, ya que la acumulación de colas dará como resultado un uso notable del espacio en disco en el entorno de creación.
 
-Cuando un editor está inactivo, el registro de autor tendrá excepciones similares a:
+Cuando una instancia de publicación está desactivada, el registro de autor tendrá excepciones similares a:
 
 ```
 28.01.2016 15:57:48.475 ERROR
@@ -565,14 +565,14 @@ Cuando un editor está inactivo, el registro de autor tendrá excepciones simila
  org.apache.sling.distribution.packaging.DistributionPackageImportException: failed in importing package ...
 ```
 
-### Cómo quitar un publicador {#how-to-remove-a-publisher}
+### Cómo eliminar una instancia de publicación {#how-to-remove-a-publish-instance}
 
-Para quitar un publicador de la [Agente de distribución Apache Sling: fábrica de agentes de sincronización](#apache-sling-distribution-agent-sync-agents-factory), la cola de distribución debe estar vacía y en silencio.
+Para eliminar una instancia de publicación de la variable [Agente de distribución Apache Sling: fábrica de agentes de sincronización](#apache-sling-distribution-agent-sync-agents-factory), la cola de distribución debe estar vacía y en silencio.
 
 * sobre autor:
 
    * [Desconectar sincronización de usuarios](#how-to-take-user-sync-offline)
-   * seguir [paso 7](#apache-sling-distribution-agent-sync-agents-factory) para eliminar el publicador de ambas listas de servidores:
+   * seguir [paso 7](#apache-sling-distribution-agent-sync-agents-factory) para eliminar la instancia de publicación de ambas listas de servidores:
 
       * `Exporter Endpoints`
       * `Importer Endpoints`
