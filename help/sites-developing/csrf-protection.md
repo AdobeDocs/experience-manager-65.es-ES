@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f841e3886771fb00eee6e476d7111d4a335a9d51
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Cualquier componente que dependa del `granite.jquery` dependencia se beneficiar�
 
 ### Duplicación de la clave criptográfica {#replicating-crypto-keys}
 
-Para utilizar los tokens, debe replicar la variable `/etc/keys/hmac` binario a todas las instancias de la implementación. Una forma cómoda de copiar la clave HMAC en todas las instancias es crear un paquete que contenga la clave e instalarla a través del Administrador de paquetes en todas las instancias.
+Para utilizar los tokens, debe replicar el binario HMAC en todas las instancias de la implementación. Consulte [Duplicación de la clave HMAC](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) para obtener más información.
 
 >[!NOTE]
 >
