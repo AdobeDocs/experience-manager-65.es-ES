@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 6e54073a0c1d67218283b096db3f2e5597f10376
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1784'
 ht-degree: 3%
 
 ---
@@ -57,6 +57,19 @@ Por ejemplo:
 El selector de representaciones simples utiliza un transformador en lugar de secuencias de comandos adicionales; el [Reescritura de Sling](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) se utiliza como transformador. Esto se configura en
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### Configuración de la generación de representación del HTML {#configuring-html-rendition-generation}
+
+La representación del HTML se genera mediante las canalizaciones de Sling Rewriter. La canalización se define en `/libs/experience-fragments/config/rewriter/experiencefragments`. El transformador del HTML admite las siguientes opciones:
+
+* `allowedCssClasses`
+   * Expresión RegEx que coincide con las clases CSS que deben dejarse en la representación final.
+   * Esto resulta útil si el cliente desea eliminar algunas clases CSS específicas
+* `allowedTags`
+   * Una lista de etiquetas HTML a permitir en la representación final.
+   * De forma predeterminada, se permiten las siguientes etiquetas (no se necesita ninguna configuración): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link y script
+
+Se recomienda configurar la reescritura mediante una superposición. Consulte [Superposiciones en AEM as a Cloud Service](/help/sites-developing/overlays.md)
 
 ## Variaciones sociales {#social-variations}
 
