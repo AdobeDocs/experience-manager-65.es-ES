@@ -10,10 +10,10 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 84ae92f889661a639e931b2a7ba9a999d5258841
+source-git-commit: 26403941129f3a80fdb3e9b964cb943a04b3bfa1
 workflow-type: tm+mt
-source-wordcount: '6794'
-ht-degree: 71%
+source-wordcount: '6888'
+ht-degree: 72%
 
 ---
 
@@ -581,6 +581,9 @@ Muestra los parámetros utilizados por la función. Una función puede tener var
    1. cadena
    1. número
    1. booleano
+   1. ámbito
+
+   El ámbito se utiliza para los campos de referencia de un formulario adaptable. Cuando un formulario utiliza la carga diferida, puede utilizar `scope` para acceder a sus campos. Puede acceder a los campos cuando se cargan o si están marcados como globales.
 
    Todos los demás tipos de parámetros se categorizan bajo uno de los anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
@@ -596,6 +599,29 @@ Agrega información sobre la función, como su objetivo.
    1. booleano
 
    Todos los demás tipos de valor devuelto se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos de devolución no distinguen entre mayúsculas y minúsculas.
+
+* Sintaxis
+**This** 
+`@this currentComponent`
+
+   Utilice @this para hacer referencia al componente de formulario adaptable en el que se escribe la regla.
+
+   El siguiente ejemplo se basa en el valor de campo. En el ejemplo siguiente, la regla oculta un campo del formulario. La porción `this` de `this.value` hace referencia al componente de formulario adaptable subyacente, en el que se escribe la regla.
+
+   ```
+      /**
+      * @function myTestFunction
+      * @this currentComponent
+      * @param {scope} scope in which code inside function will be executed.
+      */
+      myTestFunction = function (scope) {
+         if(this.value == "O"){
+               scope.age.visible = true;
+         } else {
+            scope.age.visible = false;
+         }
+      }
+   ```
 
 >[!NOTE]
 >
