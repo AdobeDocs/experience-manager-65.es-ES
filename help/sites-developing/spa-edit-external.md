@@ -2,9 +2,9 @@
 title: Edición de un SPA externo dentro de AEM
 description: En este documento se describen los pasos recomendados para cargar un SPA independiente en una instancia de AEM, agregar secciones de contenido editables y habilitar la creación.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 237de641ba02705f8171b1526946a4dc1b60b6a3
+source-git-commit: 90f3fb05581820167ea0dcf50fb23048609af31d
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2446'
 ht-degree: 1%
 
 ---
@@ -358,6 +358,10 @@ Para habilitar la edición en AEM para esta SPA de ejemplo, se requieren los sig
 1. Compruebe que está editando la página en AEM.
 
    * Implemente el proyecto para AEM y navegue hasta el recién creado `test` página. El contenido de la página ahora se representa y AEM componentes son editables.
+
+## Limitaciones del marco {#framework-limitations}
+
+El componente RemotePage espera que la implementación proporcione un manifiesto de recurso como el [encontrado aquí.](https://github.com/shellscape/webpack-manifest-plugin) Sin embargo, el componente RemotePage solo se ha probado para funcionar con el marco React (y Next.js mediante el componente Remote-page-next) y, por lo tanto, no admite la carga remota de aplicaciones desde otros marcos, como el Angular.
 
 ## Recursos adicionales {#additional-resources}
 
