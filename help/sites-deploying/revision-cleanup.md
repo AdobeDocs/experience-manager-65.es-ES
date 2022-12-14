@@ -1,8 +1,8 @@
 ---
 title: Limpieza de revisión
 seo-title: Revision Cleanup
-description: Aprenda a utilizar la funcionalidad Limpieza de revisión de AEM 6.3.
-seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.3.
+description: Aprenda a utilizar la funcionalidad Limpieza de revisión de AEM 6.5.
+seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.5.
 uuid: 321f5038-44b0-4f1e-a1aa-2d29074eed70
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 550e7993f88367ec4b5c1d024dc742c087c1a9eb
+source-git-commit: b7f9b5256e07d4bfbc0c3454e8d2fe112ea650e8
 workflow-type: tm+mt
-source-wordcount: '5912'
+source-wordcount: '5918'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Cada actualización del repositorio crea una nueva revisión de contenido. Como resultado, con cada actualización, el tamaño del repositorio crece. Para evitar el crecimiento incontrolado del repositorio, es necesario limpiar las viejas revisiones para liberar recursos de disco. Esta funcionalidad de mantenimiento se denomina Limpieza de revisión. Ha estado disponible como rutina sin conexión desde AEM 6.0.
 
-Con AEM 6.3 se ha introducido una versión en línea de esta funcionalidad denominada Limpieza de revisión en línea. En comparación con la Limpieza de revisión sin conexión, donde la instancia de AEM debe cerrarse, la Limpieza de revisión en línea se puede ejecutar mientras la instancia de AEM está en línea. La limpieza de revisión en línea está activada de forma predeterminada y es la forma recomendada de realizar una limpieza de revisión.
+Con AEM 6.3 y versiones posteriores, se introdujo una versión en línea de esta funcionalidad denominada Limpieza de revisiones en línea. En comparación con la Limpieza de revisión sin conexión, donde la instancia de AEM debe cerrarse, la Limpieza de revisión en línea se puede ejecutar mientras la instancia de AEM está en línea. La limpieza de revisión en línea está activada de forma predeterminada y es la forma recomendada de realizar una limpieza de revisión.
 
 **Nota**: [Consulte el vídeo](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/revision-cleanup-technical-video-use.html) para obtener una introducción y cómo utilizar la limpieza de revisión en línea.
 
@@ -162,7 +162,7 @@ En algunos casos, la alternancia entre los modos de cola y compactación complet
   </tr>
   <tr>
    <td><strong>¿Sigue siendo compatible el formato Tar anterior?</strong></td>
-   <td>Solo se admite el nuevo Oak Segment Tar con AEM 6.3.</td>
+   <td>Solo se admite el nuevo Oak Segment Tar con AEM 6.3 o superior.</td>
    <td> </td>
   </tr>
   <tr>
@@ -171,7 +171,7 @@ En algunos casos, la alternancia entre los modos de cola y compactación complet
    <td> </td>
   </tr>
   <tr>
-   <td><strong>¿Puedo actualizar a la versión 6.3 y realizar la migración más tarde (por ejemplo, utilizando otra ventana de mantenimiento)?</strong></td>
+   <td><strong>¿Puedo actualizar a la versión 6.3 o superior y realizar la migración más tarde (por ejemplo, utilizando otra ventana de mantenimiento)?</strong></td>
    <td>No, como se ha explicado anteriormente, la migración de contenido es obligatoria.</td>
    <td> </td>
   </tr>
@@ -249,7 +249,7 @@ En algunos casos, la alternancia entre los modos de cola y compactación complet
   </tr>
   <tr>
    <td><strong>¿Existen requisitos previos para ejecutar la limpieza de revisión en línea?</strong></td>
-   <td><p>Limpieza de revisión en línea solo está disponible con AEM versión 6.3 y posteriores. Además, si utiliza una versión anterior de AEM, debe migrar al nuevo <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Tar de segmentos de Oak</a>.</p> </td>
+   <td><p>Limpieza de revisión en línea solo está disponible con AEM versiones 6.3 y posteriores. Además, si utiliza una versión anterior de AEM, debe migrar al nuevo <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Tar de segmentos de Oak</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -523,7 +523,7 @@ El archivo error.log será detallado si hay incidentes durante el proceso de lim
     <th>Fase</th>
     <th>Mensajes de registro</th>
     <th>Explicación</th>
-    <th>Siguientes pasos</th>
+    <th>Pasos siguientes</th>
   </tr>  
   <tr>
     <td>Estimación</td>
