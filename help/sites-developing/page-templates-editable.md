@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 2801ef5ec5ed7b01f4eb046baa439f6d5de56b75
+source-git-commit: d30bfb9e67d0a2a0e870ee0841ed14060def7756
 workflow-type: tm+mt
-source-wordcount: '3249'
+source-wordcount: '3252'
 ht-degree: 10%
 
 ---
@@ -435,7 +435,7 @@ Si ha creado una plantilla que puede servir de base para otras plantillas, puede
 1. Cree una plantilla como lo haría con cualquier plantilla editable [tal como se documenta aquí](/help/sites-authoring/templates.md#creating-a-new-template-template-author), que servirá de base para su tipo de plantilla.
 1. Con el CRXDE Lite , copie la plantilla recién creada del `templates` al nodo `template-types` en el nodo [carpeta de plantillas](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Elimine la plantilla de la sección `templates` en el nodo [carpeta de plantillas](/help/sites-developing/page-templates-editable.md#template-folders).
-1. En la copia de la plantilla que se encuentra en el `template-types` nodo, eliminar todo `cq:template` y `cq:templateType` `jcr:content` propiedades.
+1. En la copia de la plantilla que se encuentra en el `template-types` nodo, eliminar todo `cq:template` y `cq:templateType` propiedades de todas `jcr:content` nodos.
 
 También puede desarrollar su propio tipo de plantilla utilizando una plantilla editable de ejemplo como base, disponible en GitHub.
 
