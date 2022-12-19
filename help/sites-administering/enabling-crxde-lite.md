@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
 exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a4183bb9d72763ebea3b464c77fce978c723e053
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,16 @@ Cuando esto sucede, vaya a `https://serveraddress:4502/crx/de/index.jsp` mostrar
 
 Aunque esta recomendación está pensada para reducir al máximo las superficies de ataque, es posible que los administradores de sistemas necesiten a veces acceder al CRXDE Lite para examinar el contenido o depurar problemas en las instancias de producción.
 
+Puede habilitar el CRXDE Lite con [Configuración de OSGi](#enabling-crxde-lite-osgi) o con un [cURL, comando](#enabling-crxde-lite-curl).
+
+>[!WARNING]
+>
+>Debido a las ligeras diferencias en el funcionamiento de estos métodos, debe utilizar ***o*** OSGI ***o*** cURL.
+>
+>Los dos métodos son ***not*** intercambiable.
+
+## Habilitación del CRXDE Lite con OSGI {#enabling-crxde-lite-osgi}
+
 Si está desactivado, puede activar el CRXDE Lite siguiendo el siguiente procedimiento:
 
 1. Vaya a la consola Componentes de OSGi en `http://localhost:4502/system/console/components`
@@ -48,6 +58,8 @@ Si está desactivado, puede activar el CRXDE Lite siguiendo el siguiente procedi
    * Marque la casilla debajo de **Usar URI absolutos**.
 
 1. Cuando termine de usar CRXDE Lite, asegúrese de desactivar WebDAV de nuevo.
+
+## Habilitación del CRXDE Lite con cURL {#enabling-crxde-lite-curl}
 
 También puede habilitar el CRXDE Lite a través de cURL, ejecutando este comando:
 
