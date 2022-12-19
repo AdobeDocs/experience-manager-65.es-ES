@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: 3c691a9e8673f3229368abbd550982d207eb8ac6
+source-git-commit: eb71119474f03a969a721c792b6f1ac330f9dbf3
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Para sincronizar varios formularios, en la instancia de autor, seleccione varios
 
 Si la aplicación de AEM de formulario AFA no se puede sincronizar, realice los siguientes pasos para solucionar el problema de sincronización:
 
-1. Vaya a la **https://&#39;[server]:[puerto]&#39;system/console/configMgr**.
+1. Vaya a la **https://[server]:[puerto]/system/console/configMgr**.
 1. Busque la variable **[!UICONTROL Controlador de autenticación de token de Granite de Adobe]** y haga clic en **[!UICONTROL Editar]**.
 1. Seleccione el **[!UICONTROL Ninguna]** en el menú desplegable de la **[!UICONTROL Atributo SameSite para la cookie de token de inicio de sesión]** atributo.
 1. Haga clic en **[!UICONTROL Guardar]**.
