@@ -8,9 +8,9 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
+source-git-commit: 29b283970f2c37782700b69302715e8404ce83ae
 workflow-type: tm+mt
-source-wordcount: '3827'
+source-wordcount: '3835'
 ht-degree: 8%
 
 ---
@@ -585,7 +585,7 @@ ht-degree: 8%
    + [Referencia de la API de AEM Forms Java](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
    + [Referencia de la API de AEM Forms en JEE Java](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
    + [API de Form Bridge para formularios HTML5](using/form-bridge-apis.md)
-   + [Referencia de la API de la biblioteca JavaScript para Forms adaptable](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
+   + [Referencia de la API de la biblioteca JavaScript para Forms adaptable](https://helpx.adobe.com/es/experience-manager/6-5/forms/javascript-api/index.html)
    + [Servicio de ensamblador y referencia DDX](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
    + [Ayuda de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65)
    + Programación con AEM Forms en JEE {#programming-aem-forms-jee}
@@ -688,6 +688,7 @@ ht-degree: 8%
    + [No se puede convertir el archivo de Word o Excel al PDF en Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
    + [No se pueden abrir PDF forms basados en XFA en Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer o Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
    + [No se puede restaurar el repositorio CRX](/help/forms/using/restore-crx-repository.md)
+   + [Errores de servicio no disponibles después de instalar AEM Service Pack 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
 + Documentación heredada {#legacy-documentation}
    + [Uso del servicio de ejecución de secuencias de comandos en AEM Forms en JEE Workbench para generar datos XML](developing/building-xml.md)
    + [Compresión y descompresión de archivos mediante una AEM Forms en una DSC personalizada JEE](developing/compressing-decompressing-custom-dsc.md)
