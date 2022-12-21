@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Busque información sobre la versión, novedades, procedimientos de instalación y una lista detallada de cambios para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: 5d04a479001c5ea6423599969b39a4697a2da590
+source-git-commit: 3e0380e85c300305cbb97e4d0a0918a60542610b
 workflow-type: tm+mt
-source-wordcount: '3974'
+source-wordcount: '3970'
 ht-degree: 4%
 
 ---
@@ -166,7 +166,7 @@ ht-degree: 4%
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-* GraphQL plantea una excepción. Por ejemplo, no puede obtener etiquetas de variación de un fragmento de contenido. No hay variación con el nombre &quot;eléctrico&quot;. Este problema se debe a una llamada `getVariationTags` para una variación no existente que produzca una excepción. (SITES-8898)
+* GraphQL genera una excepción. Por ejemplo, no puede obtener etiquetas de variación de un fragmento de contenido. No hay variación con el nombre &quot;eléctrico&quot;. Este problema se debe a una llamada `getVariationTags` para una variación no existente que produzca una excepción. (SITES-8898)
 * Ordenar los pedidos de título en la vista de lista, tanto ascendente como descendente, cómo los títulos con el orden A, C, B. (SITES-7585)
 * Se ha agregado compatibilidad con etiquetas para variaciones de fragmentos de contenido. (SITES-8168)
 * Se ha identificado y eliminado el código específico de Odin del Experience Manager 6.5 que era innecesario. (SITES-3574)
@@ -258,10 +258,6 @@ Para saber cuáles son las plataformas certificadas para funcionar con esta vers
 
 1. El paquete OSGi `org.apache.jackrabbit.oak-core` es la versión 1.22.13 o posterior (utilice la consola web: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
->[!NOTE]
->
->Si instala la última [Paquete de servicio de AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), antes del servlet de fragmento `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` para AEM Forms en el entorno JEE, los errores CRX/bundle y el servicio show page de inicio no están disponibles, [haga clic aquí](/help/forms/using/aem-service-pack-installation-solution.md) para conocer los pasos de solución de problemas.
-
 ### Instalar [!DNL Experience Manager] Paquete de complementos de Forms {#install-aem-forms-add-on-package}
 
 >[!NOTE]
@@ -289,6 +285,11 @@ Realice los siguientes pasos para todas las AEM Forms en entornos JEE utilizando
 
 1. Instale el [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) fragmento de servlet y espere a que el servidor de aplicaciones se estabilice.
 1. Instalar [Paquete de servicio de AEM 6.5.15.0](#install-service-pack).
+
+   >[!NOTE]
+   >
+   >Si instala la última [Paquete de servicio de AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), antes del servlet de fragmento `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` en el entorno JEE, los errores CRX/bundle y el servicio show page de inicio no están disponibles, [haga clic aquí](/help/forms/using/aem-service-pack-installation-solution.md) para conocer los pasos de solución de problemas.
+
 1. Instale el [último paquete de complementos de Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es), elimine el paquete de complementos de Forms del `crx-repository\install` y reinicie el servidor.
 
 ### UberJar {#uber-jar}
