@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 1ee82589ca9284a8ad5ecf3ca156fe10f314846a
 workflow-type: tm+mt
 source-wordcount: '1754'
 ht-degree: 1%
@@ -170,7 +170,7 @@ El SSR para SPA en AEM requiere Adobe I/O Runtime, que se llama para la renderiz
 Del mismo modo que AEM admite los marcos de SPA Angular y React de forma predeterminada, el procesamiento en el servidor también se admite para aplicaciones de Angular y React. Para más detalles, consulte la documentación de NPM para ambos marcos.
 
 * Reacción: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
-* Angular: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
+* Angular: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
 Para ver un ejemplo simplista, consulte la [Aplicación de diario We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Procesa el servidor de aplicaciones completo. Aunque este no es un ejemplo real, sí ilustra lo que se necesita para implementar la SSR.
 
