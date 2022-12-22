@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
 workflow-type: tm+mt
-source-wordcount: '3683'
+source-wordcount: '3720'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 El Adobe ha lanzado un [instalador completo](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) con AEM 6.5 Forms Service Pack 12 (6.5.12.0) en JEE junto con los instaladores de parches. El instalador completo proporciona soporte para nuevas plataformas, mientras que el instalador de parches solo incluye correcciones de errores.
 
-Si está realizando una instalación nueva o planea utilizar el software más reciente para su Forms AEM 6.5 en el entorno JEE, Adobe recomienda utilizar [AEM 6.5.12.0 Forms en el instalador completo de JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) lanzado el 3 de marzo de 2022 en lugar del instalador de Forms 6.5 AEM lanzado el 8 de abril de 2019.
+Si está realizando una instalación nueva o planea utilizar el software más reciente para su Forms AEM 6.5 en el entorno JEE, Adobe recomienda utilizar [AEM 6.5.12.0 Forms en el instalador completo de JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) lanzado el 3 de marzo de 2022 en lugar del instalador de Forms 6.5 AEM lanzado el 8 de abril de 2019.
 
 </div>
 
@@ -419,7 +419,7 @@ Además, tenga en cuenta los siguientes puntos a la hora de elegir software para
   </tr>
   <tr>
    <td>Documentum de EMC</td>
-   <td>7,3</td>
+   <td>7.3</td>
   </tr>
   <tr>
    <td>Archivo IBM</td>
@@ -431,7 +431,7 @@ Además, tenga en cuenta los siguientes puntos a la hora de elegir software para
   </tr>
   <tr>
    <td> Cliente de IBM Content Manager (obsoleto)</td>
-   <td>8,5 </td>
+   <td>8.5 </td>
   </tr>
   <tr>
    <td>Microsoft Sharepoint </td>
@@ -482,10 +482,6 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office Visio 2016 (obsoleto)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
@@ -530,6 +526,9 @@ La aplicación AEM Forms ahora es compatible con Apache Cordova. A continuación
 >- Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad de Generador de PDF. Solo se debe acceder a la versión agrupada mediante programación con AEM Forms, durante el período de licencia de AEM Forms, para su uso con el Generador de PDF de AEM Forms. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
 >- El servicio Generador de PDF no es compatible con Microsoft Windows 10.
+>- El Generador de PDF no puede convertir archivos con Microsoft Visio 2019. Puede seguir utilizando Microsoft Visio 2016 para convertir archivos .VSD y .VSDX.
+>- El Generador de PDF no puede convertir archivos mediante Microsoft Project 2019. Puede seguir utilizando Microsoft Project 2016 para convertir archivos .MPP.
+>
 
 
 ### Excepciones a la compatibilidad con la accesibilidad {#exceptions-to-accessibility-support}
@@ -801,7 +800,7 @@ Las siguientes plataformas están marcadas como obsoletas con la versión 6.5.10
 
 >[!NOTE]
 >
->Las plataformas marcadas como [en desuso con AEM Forms 6.5.12.0 y 6.5.10.0 siguen siendo compatibles hasta la versión de AEM Forms 6.5 Service Pack 18 (6.5.18.0)](https://helpx.adobe.com/support/programs/eol-matrix.html).
+>Las plataformas marcadas como [en desuso con AEM Forms 6.5.12.0 y 6.5.10.0 siguen siendo compatibles hasta la versión de AEM Forms 6.5 Service Pack 18 (6.5.18.0)](https://helpx.adobe.com/es/support/programs/eol-matrix.html).
 
 ## Historial de revisiones {#revision-history}
 

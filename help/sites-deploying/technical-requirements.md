@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 33b8cf60e2a6ae13c103040d96b0e2db487ddd99
+source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
 workflow-type: tm+mt
-source-wordcount: '3452'
+source-wordcount: '3488'
 ht-degree: 3%
 
 ---
@@ -451,10 +451,6 @@ Para Windows x86:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office Visio 2016 (obsoleto)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
@@ -465,10 +461,6 @@ Para Windows x86:
   <tr>
    <td>Microsoft® Publisher 2016 (obsoleto)<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Proyecto Microsoft® 2019<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>Proyecto Microsoft® 2016 (obsoleto)<br /> </td>
@@ -499,6 +491,8 @@ Para Windows x86:
 >* Las características de PDF, Optimize PDF y Export PDF de OCR solo son compatibles con Windows.
 >* Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad de Generador de PDF. Solo se debe acceder a la versión agrupada mediante programación con AEM Forms, durante el período de licencia de AEM Forms, para su uso con el Generador de PDF de AEM Forms. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* El servicio Generador de PDF no es compatible con Microsoft Windows 10.
+>* El Generador de PDF no puede convertir archivos con Microsoft Visio 2019. Puede seguir utilizando Microsoft Visio 2016 para convertir archivos .VSD y .VSDX.
+>* El Generador de PDF no puede convertir archivos mediante Microsoft Project 2019. Puede seguir utilizando Microsoft Project 2016 para convertir archivos .VSD y .VSDX.
 >
 
 
