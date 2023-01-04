@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Busque información sobre la versión, novedades, procedimientos de instalación y una lista detallada de cambios para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: a27e460a19d3f986ee87b33263b8db1e45897497
+source-git-commit: d3b830730ef06fb9968a46d6f26a275417cf36f0
 workflow-type: tm+mt
-source-wordcount: '4036'
+source-wordcount: '4046'
 ht-degree: 4%
 
 ---
@@ -144,6 +144,7 @@ ht-degree: 4%
 * Cuando el usuario intenta ejecutar un formulario AEM en el parche JEE después de cambiar la contraseña predeterminada del usuario administrador, se produce una excepción `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` ocurre. (CQ-4348277)
 * En AEM Designer, los campos de formulario sin rótulos se colocan en celdas de tabla, incluidas las casillas de verificación.(LC-3920410)
 * Cuando el usuario intenta abrir la Ayuda en el Diseñador de AEM Forms, esta no se muestra correctamente. (CQ-4341996)
+* El Forms adaptable con varias configuraciones regionales es lento de cargar. (NPR-39176)
 
 ## [!DNL Sites] {#sites-6515}
 
@@ -326,7 +327,7 @@ Revise si utiliza una función o una capacidad en una implementación. Además, 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
  -->
 
-* [AEM fragmento de contenido con el paquete de índice 1.0.5 de GraphQL](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+* [AEM fragmento de contenido con el paquete de índice de GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
 Este paquete es necesario para los clientes que utilizan GraphQL; esto les permite añadir la definición de índice necesaria en función de las funciones que realmente utilizan.
 
 * Como [!DNL Microsoft® Windows Server 2019] no es compatible [!DNL MySQL 5.7] y [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] no admite instalaciones llave en mano para [!DNL AEM Forms 6.5.10.0].
