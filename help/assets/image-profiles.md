@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 008a27c6a1c818a96a24dfcc7f5650409d31e7c2
+source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
 workflow-type: tm+mt
-source-wordcount: '2835'
-ht-degree: 10%
+source-wordcount: '3005'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,20 @@ Las coordenadas de recorte inteligentes dependen de la relación de aspecto. Par
 
 Cada generación de recorte inteligente que cree requiere un procesamiento adicional. Por ejemplo, si se agregan más de cinco relaciones de aspecto de recorte inteligente, la tasa de consumo de los recursos puede ser lenta. También causa un aumento de la carga en los sistemas. Como puede aplicar Recorte inteligente en el nivel de carpeta, Adobe recomienda utilizarlo en las carpetas *only* donde sea necesario.
 
-Tiene dos opciones de recorte de imagen entre las que elegir. También tiene la opción de automatizar la creación de muestras de color e imagen.
+**Pautas para definir el Recorte inteligente en un perfil de imagen**
+Para mantener bajo control el uso de Smart Crop y optimizar el tiempo de procesamiento y almacenamiento de los cultivos, Adobe recomienda las siguientes directrices y sugerencias:
+
+* Evite crear perfiles de recorte inteligente duplicados que tengan los mismos valores de anchura y altura.
+* Asigne un nombre a los cultivos inteligentes en función de las dimensiones de recorte, no del uso final. Esto ayuda a optimizar para duplicados donde se utiliza una sola dimensión en varias páginas.
+* Cree perfiles de imagen en el tipo página/recurso para carpetas y subcarpetas específicas en lugar de un perfil de recorte inteligente común que se aplique a todas las carpetas o a todos los recursos.
+* Un perfil de imagen que aplique a las subcarpetas anula un perfil de imagen que se aplica a la carpeta.
+* Lo ideal es tener entre 10 y 15 cultivos inteligentes por imagen para optimizar los índices de pantalla y el tiempo de procesamiento.
+
+Tiene dos opciones de recorte de imagen para elegir. También puede automatizar la creación de muestras de color e imagen o conservar el contenido de recorte en las resoluciones de destino.
+
+>[!IMPORTANT]
+・ Adobe recomienda revisar los cultivos y muestras generados para asegurarse de que sean adecuados y relevantes para su marca y sus valores.
+・ El formato de imagen CMYK no es compatible con el recorte inteligente.
 
 | Opción | Cuándo se usa | Descripción |
 | --- | --- | --- |
@@ -52,7 +65,7 @@ Tiene dos opciones de recorte de imagen entre las que elegir. También tiene la 
 
 ## Máscara de enfoque {#unsharp-mask}
 
-La **[!UICONTROL máscara de enfoque]** se utiliza para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se ignora. Este efecto utiliza las mismas opciones que el de Adobe Photoshop *Máscara de enfoque* filtro.
+La **[!UICONTROL máscara de enfoque]** se utiliza para ajustar un efecto de filtro de enfoque en la imagen final con disminución de resolución. Puede controlar la intensidad del efecto, el radio del efecto (medido en píxeles) y un umbral de contraste que se ignora. Este efecto utiliza las mismas opciones que Adobe Photoshop *Máscara de enfoque* filtro.
 
 >[!NOTE]
 La máscara de enfoque solo se aplica a las representaciones a escala reducida dentro del PTIFF (tiff piramidal) que se reducen a más del 50%. Esto significa que las representaciones de mayor tamaño dentro de la matriz no se ven afectadas por la máscara de enfoque, mientras que las representaciones de menor tamaño, como las miniaturas, se modifican (y muestran la máscara de enfoque).
