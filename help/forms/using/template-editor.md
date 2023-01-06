@@ -1,7 +1,7 @@
 ---
-title: Plantillas de formulario adaptables
+title: Plantillas de formulario adaptable
 seo-title: Adaptive Form Templates
-description: Cree plantillas de formulario adaptables definiendo la estructura básica y el contenido del formulario inicial con el Editor de plantillas.
+description: Cree plantillas de formularios adaptables al definir la estructura básica y el contenido inicial del formulario con el Editor de plantillas.
 seo-description: Create adaptive form templates by defining the basic structure and initial form content using the Template Editor.
 uuid: 317ca3ab-f809-49a7-a063-9d0c17a35fe4
 contentOwner: sashanka
@@ -12,25 +12,25 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1964'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
-# Plantillas de formulario adaptables{#adaptive-form-templates}
+# Plantillas de formulario adaptable{#adaptive-form-templates}
 
 Al crear un formulario, se agregan campos y componentes para definir la estructura del formulario, el contenido y las acciones en el editor. Los campos y componentes se agregan en el `guideRootPanel` del contenedor de formulario. Con el Editor de plantillas, puede crear una plantilla que contenga una estructura básica y contenido inicial que los autores puedan utilizar para crear formularios.
 
-Por ejemplo, desea que todos los autores de formularios tengan ciertos cuadros de texto, botones de navegación y un botón de envío en un formulario de inscripción. Puede crear una plantilla con los componentes que los autores pueden utilizar para crear un formulario coherente con otros formularios de inscripción. Cuando los autores utilizan la plantilla para crear un formulario adaptable, el nuevo formulario hereda la estructura y los componentes especificados en la plantilla. El Editor de plantillas le permite lo siguiente:
+Por ejemplo, desea que todos los autores de formularios tengan ciertos cuadros de texto, botones de navegación y un botón de envío en un formulario de inscripción. Puede crear una plantilla con los componentes que los autores pueden utilizar para crear un formulario coherente con otros formularios de inscripción. Cuando los autores utilizan la plantilla para crear un formulario adaptable, el nuevo formulario heredará la estructura y los componentes especificados en la plantilla. El Editor de plantillas le permite lo siguiente:
 
 * Agregar componentes de encabezado y pie de página de un formulario en la capa de estructura.
 * Proporcionar el contenido inicial para el formulario.
-* Especifique un tema y envíe acciones.
+* Especificar un tema, enviar acciones.
 
 ## Trabajar con plantillas {#working-with-templates}
 
-Puede acceder al editor de plantillas desde el menú Herramientas navegando hasta **Adobe Experience Manager > Herramientas > Plantillas**. En este caso, las plantillas están organizadas en carpetas habilitadas para plantillas editables. AEM proporciona una carpeta global para organizar las plantillas. Sin embargo, no está habilitada de forma predeterminada. Puede solicitar al administrador que habilite la carpeta global o que cree una nueva carpeta para plantillas. Para obtener más información sobre cómo crear carpetas, consulte [Carpetas para plantillas](/help/sites-developing/page-templates-editable.md).
+Puede acceder al editor de plantillas desde el menú Herramientas si navega hasta **Adobe Experience Manager > Herramientas > Plantillas**. En este caso, las plantillas están organizadas en carpetas habilitadas para plantillas editables. AEM proporciona una carpeta global para organizar las plantillas. Sin embargo, no está habilitada de forma predeterminada. Puede solicitar al administrador que habilite la carpeta global o que cree una carpeta para las plantillas. Para obtener más información sobre cómo crear carpetas, consulte [Carpetas para plantillas](/help/sites-developing/page-templates-editable.md).
 
 Una vez que pulse para abrir una carpeta, encontrará un botón Crear que permite crear una nueva plantilla para formularios adaptables.
 
@@ -38,11 +38,11 @@ Una vez que pulse para abrir una carpeta, encontrará un botón Crear que permit
 
 Después de crear una carpeta, ábrala y haga lo siguiente para crear una plantilla:
 
-1. En la consola Plantilla , pulse **Crear** dentro de la carpeta que ha creado.
-1. En la sección Elegir un tipo de plantilla , seleccione **Plantilla de formulario adaptable** y toque **Siguiente**.
+1. En la consola Plantilla, pulse **Crear** dentro de la carpeta que ha creado.
+1. En la sección Elegir tipo de plantilla, seleccione **Plantilla de formulario adaptable** y pulse **Siguiente**.
 
 1. En la sección Detalles de la plantilla, escriba un Título de plantilla y pulse **Crear**. 
-Puede proporcionar una descripción y una miniatura que pueda ver cuando puede seleccionar la plantilla creada en el momento de la creación del formulario.
+Puede proporcionar una descripción y una miniatura que pueda ver cuando seleccione la plantilla creada en el momento de la creación del formulario.
 
 1. Pulse **Listo** para volver a la consola o pulse **Abrir** para abrir la plantilla en el editor.
 
@@ -53,15 +53,15 @@ Cuando abra una plantilla para editarla, verá los siguientes componentes del ed
 * **Barra de herramientas de la página**
 Contiene las siguientes opciones:
 
-   * **Alternar panel lateral**: Permite mostrar u ocultar la barra lateral.
-   * **Información de la página**: Permite especificar información, como la hora de publicación/cancelación de la publicación, las miniaturas, las bibliotecas del lado del cliente, la directiva de página y la biblioteca de diseños de páginas del lado del cliente.
-   * **Emulador**: Permite simular y personalizar el aspecto de distintos dispositivos.
-   * **Selector de capa:** Permite cambiar la capa.
-Puede elegir **Estructura** capa o **Contenido inicial** capa. La capa de estructura permite añadir y personalizar el encabezado y el pie de página. La capa Contenido inicial permite personalizar el contenido del formulario.
+   * **Alternar: panel lateral**: permite mostrar u ocultar la barra lateral.
+   * **Información de la página**: permite especificar información, como la hora de publicación/cancelación de la publicación, las miniaturas, las bibliotecas del lado del cliente, la directiva de página y la biblioteca de diseños de páginas del lado del cliente.
+   * **Emulador**: permite simular y personalizar la apariencia de distintos dispositivos.
+   * **Selector de capa:** permite cambiar la capa.
+Puede elegir la capa **Estructura** o **Contenido inicial**. La capa Estructura permite agregar y personalizar el encabezado y el pie de página. La capa Contenido inicial permite personalizar el contenido del formulario.
 
    * **Vista previa:** Permite obtener una vista previa del aspecto de la plantilla al publicarla. Puede utilizar el Selector de capa y la Vista previa para alternar los modos de edición y vista previa.
 
-* **Barra lateral:** Proporciona los exploradores de Contenido, Propiedades, Activos y Componentes.
+* **Barra lateral:** Proporciona los exploradores de Contenido, Propiedades, Recursos y Componentes.
 * **Barra de herramientas de componentes:** Al seleccionar un componente, aparecerá una barra de herramientas que le permite personalizarlo.
 * **Página**: Área donde se agrega contenido para crear la plantilla.
 
@@ -96,9 +96,9 @@ Encabezado y pie de página agregados en la capa Estructura
 
 #### Bloquear/desbloquear componentes en la capa de estructura {#locking-unlocking-components-in-the-structure-layer}
 
-Cuando edita la plantilla con la capa de estructura seleccionada, puede desbloquear el encabezado y el pie de página de la plantilla. Si un componente está desbloqueado en la plantilla, los autores de formularios pueden editar el componente en el formulario adaptable que utiliza la plantilla. Bloquear un componente impide que los autores de formularios lo editen en el formulario adaptable. La opción Bloquear está disponible en la barra de herramientas de componentes.
+Cuando edita la plantilla con la capa de estructura seleccionada, puede desbloquear el encabezado y el pie de página de la plantilla. Si un componente está desbloqueado en la plantilla, los autores de formularios pueden editarlo en el formulario adaptable que utiliza la plantilla. Bloquear un componente impide que los autores de formularios lo editen en el formulario adaptable. La opción Bloquear está disponible en la barra de herramientas de componentes.
 
-Por ejemplo, puede agregar el componente Encabezado en la plantilla. Al seleccionar el componente, podrá ver la opción de bloqueo en la barra de herramientas de componentes. Normalmente, el encabezado incluye el nombre de la empresa y el logotipo, y no se desea que los autores de formularios cambien el logotipo y el encabezado de una plantilla. En un formulario adaptable creado con la plantilla con el componente de encabezado bloqueado, los autores de formularios no pueden cambiar el logotipo y el nombre de la empresa.
+Por ejemplo, puede agregar el componente Encabezado en la plantilla. Al seleccionar el componente, podrá ver la opción de bloqueo en la barra de herramientas de componentes. Normalmente, el encabezado incluye el nombre de la empresa y el logotipo, y no se desea que los autores de formularios cambien el logotipo y el encabezado de una plantilla. En un formulario adaptable creado con la plantilla con el componente de encabezado bloqueado, los autores de formularios no pueden cambiar el logotipo ni el nombre de la empresa.
 
 >[!NOTE]
 >
@@ -106,16 +106,16 @@ Por ejemplo, puede agregar el componente Encabezado en la plantilla. Al seleccio
 
 ### Contenido inicial {#initial-content}
 
-Cuando se selecciona la opción Contenido inicial , el contenedor de formulario adaptable de la plantilla se abre como un formulario adaptable para su edición. Al igual que la creación de un formulario adaptable, puede especificar la configuración inicial, como seleccionar un tema y enviar acciones.
+Cuando se selecciona la opción Contenido inicial, el contenedor de formulario adaptable de la plantilla se abrirá como un formulario adaptable para su edición. Al igual que la creación de un formulario adaptable, puede especificar la configuración inicial, como seleccionar una temática y enviar acciones.
 
 Los autores de formularios lo utilizan como base para crear un formulario. La estructura del flujo de contenido se especifica en la capa Contenido inicial de la plantilla. Para cambiar a la edición del contenido inicial de la plantilla de formulario, antes de Vista previa en la barra de herramientas de la página, pulse ![canvas-drop-down](assets/canvas-drop-down.png) **> Contenido inicial**.
 ![Capa de contenido inicial en el Editor de plantillas](assets/initial-content-layer.png)
 
-La capa de contenido inicial en el Editor de plantillas muestra el contenedor de formulario adaptable seleccionado para especificar propiedades.
+La capa de contenido inicial en el Editor de plantillas muestra el contenedor del formulario adaptable seleccionado para especificar propiedades.
 
-![contenido inicial](assets/initial-content-layer-1.png)
+![Contenido inicial](assets/initial-content-layer-1.png)
 
-En la capa Contenido inicial , se crea la plantilla de formulario adaptable que los autores utilizan como base. La creación de una plantilla es similar a la de un formulario, se utilizan las opciones disponibles en la barra lateral. La barra lateral proporciona exploradores de contenido, propiedades, activos y componentes.
+En la capa Contenido inicial, se creará la plantilla Formulario adaptable que los autores utilizan como base. La creación de una plantilla es similar a la de un formulario, se utilizan las opciones disponibles en la barra lateral. La barra lateral proporciona exploradores de contenido, propiedades, recursos y componentes.
 
 Consulte [Barra lateral](../../forms/using/introduction-forms-authoring.md#sidebar).
 
@@ -123,7 +123,7 @@ Consulte [Barra lateral](../../forms/using/introduction-forms-authoring.md#sideb
 >
 >Cuando selecciona Almacenar contenido o Almacenar PDF como Acción de envío, obtiene una opción para especificar la ruta de almacenamiento. Si especifica la ruta en la plantilla, todos los formularios creados a partir de ella tendrán la misma ruta. Puede especificar la ruta de almacenamiento correcta o asegurarse de que los autores de los formularios lo actualicen para evitar que los datos de todos los formularios se almacenen en la misma ubicación.
 
-#### Creación de una plantilla de formulario adaptable con fichas y paneles  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
+#### Crear una plantilla de formulario adaptable con pestañas y paneles  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
 Por ejemplo, desea crear una plantilla con las siguientes pestañas:
 
@@ -139,11 +139,11 @@ Cambie la capa de Estructura a Contenido inicial y empiece a agregar contenido a
 * Puede arrastrar y soltar el componente del panel desde el explorador de componentes de la barra lateral.
 * Puede agregar el panel secundario del `guideRootPanel` en la barra de herramientas de componentes.
 
-Para crear las pestañas Información general e Información profesional, agregue dos paneles en el panel secundario del `guideRootPanel`. Seleccione los paneles y pulse ![cmppr](assets/cmppr.png) para abrir las propiedades en la barra lateral. Cambie los nombres de los elementos como `general-info` y `professional-info`y títulos como Información general e Información profesional respectivamente. En la barra lateral, pulse Contenido para abrir el explorador de contenido. En la pestaña Objetos del formulario, seleccione `guideRootPanel`. En el editor, se selecciona guideRootPanel. Pulse ![cmppr](assets/cmppr.png) en la barra de herramientas de componentes para abrir sus propiedades. En el campo Diseño del panel, seleccione **Pestañas arriba** y pulse **Listo**. Se aplica la estructura de la plantilla con pestañas.
+Para crear las pestañas Información general e Información profesional, agregue dos paneles en el panel secundario del `guideRootPanel`. Seleccione los paneles y pulse ![cmppr](assets/cmppr.png) para abrir las propiedades en la barra lateral. Cambie los nombres de los elementos como `general-info` y `professional-info` y títulos como Información general e Información profesional respectivamente. En la barra lateral, pulse Contenido para abrir el explorador de contenido. En la pestaña Objetos del formulario, seleccione `guideRootPanel`. En el editor, se selecciona guideRootPanel. Pulse ![cmppr](assets/cmppr.png) en la barra de herramientas de componentes para abrir sus propiedades. En el campo Diseño del panel, seleccione **Pestañas arriba** y pulse **Listo**. Se aplica la estructura de la plantilla con pestañas.
 
 #### Agregar contenido en pestañas {#adding-content-in-tabs}
 
-![Adición de campos en la plantilla de formulario adaptable](assets/template-edit-initial-content.png)
+![Agregar campos en la plantilla del formulario adaptable](assets/template-edit-initial-content.png)
 
 Después de agregar paneles y estructurarlos como pestañas, puede agregar campos dentro de las pestañas. Al seleccionar una pestaña en el editor, podrá ver la opción **Arrastrar componentes aquí**. Puede arrastrar y soltar componentes, como cuadros de texto, elementos de lista y botones. Puede arrastrar y soltar componentes desde el explorador de componentes en la barra lateral.
 
@@ -155,43 +155,43 @@ Después de agregar campos, puede agregar botones como Enviar y Restablecer.
 
 ### Habilitar la plantilla {#enabling-the-template}
 
-Al crear una plantilla, esta se agrega como borrador. Active la plantilla para utilizarla en la creación de formularios adaptables. Para habilitar una plantilla, haga lo siguiente:
+Al crear una plantilla, esta se agrega como borrador. Habilite la plantilla para utilizarla para crear formularios adaptables. Para habilitar una plantilla, haga lo siguiente:
 
 1. Vaya a **Adobe Experience Manager > Herramientas > Plantillas** y abra la carpeta en la que ha creado la plantilla.
 
 1. La plantilla que ha creado se marcará como borrador.
 1. Seleccione la plantilla y pulse **Habilitar** en la barra de herramientas. 
-Al crear un formulario adaptable, puede ver la plantilla en la lista cuando se le pide que elija una plantilla.
+Cuando cree un formulario adaptable, podrá ver la plantilla en la lista cuando se le pida que elija una plantilla.
 
 ## Importar o exportar una plantilla {#importing-or-exporting-a-template}
 
-Un formulario funciona con su plantilla. Al descargar un formulario adaptable creado con una plantilla personalizada, la plantilla no se descarga. Al importar el formulario en una instancia de AEM Forms diferente, se importa sin su plantilla. Si se importa un formulario pero su plantilla no está disponible, el formulario no se procesará. Puede empaquetar la plantilla personalizada desde `/conf` nodo en `https://<server>:<port>/crx/packmgr`y portarlo en la instancia de AEM Forms donde desee cargar el formulario.
+Un formulario funciona con su plantilla. Cuando se descarga un formulario adaptable creado con una plantilla personalizada, la plantilla no se descarga. Al importar el formulario en una instancia de AEM Forms diferente, se importará sin su plantilla. Si se importa un formulario pero su plantilla no está disponible, el formulario no se procesará. Puede empaquetar la plantilla personalizada desde el nodo `/conf` en `https://<server>:<port>/crx/packmgr` y portarlo en la instancia de AEM Forms en la que desea cargar el formulario.
 
-## Creación de un formulario adaptable mediante la plantilla {#creating-an-adaptive-form-using-the-template}
+## Crear un formulario adaptable con la plantilla {#creating-an-adaptive-form-using-the-template}
 
-Después de crear y habilitar una plantilla, esta estará disponible en el administrador de formularios al crear un formulario adaptable. Para utilizar una plantilla y crear un formulario adaptable, consulte [Creación de un formulario adaptable](../../forms/using/creating-adaptive-form.md).
+Después de crear y habilitar una plantilla, esta estará disponible en el administrador de formularios al crear un formulario adaptable. Para utilizar una plantilla y crear un formulario adaptable, consulte [Crear un formulario adaptable](../../forms/using/creating-adaptive-form.md).
 
-## Cambiar la opción de visualización de las plantillas listas para usar  {#change-display-option-of-out-of-the-box-templates}
+## Cambiar la opción de visualización de las plantillas predeterminadas  {#change-display-option-of-out-of-the-box-templates}
 
 Puede crear plantillas personalizadas para formularios adaptables para definir la estructura básica y el contenido inicial. AEM Forms también proporciona un conjunto de plantillas predeterminadas para formularios adaptables. Puede elegir mostrar u ocultar las plantillas.
 
 Siga estos pasos para mostrar y ocultar plantillas:
 
-1. Inicie sesión en la instancia de autor de AEM Forms y vaya a **Herramientas** > **Operaciones** > **Consola web**.
+1. Inicie sesión en la instancia de autor de AEM Forms y navegue hasta **Herramientas** > **Operaciones** > **Consola web**.
 
    >[!NOTE]
    >
-   >La URL de AEM consola web es https://&#39;[server]:[puerto]&#39;/system/console/configMgr
+   >La URL de la consola web de AEM es https://&#39;[server]:[port]&#39;/system/console/configMgr
 
-1. Busque y abra el **Configuración de FormsManager** configuración:
+1. Busque y abra la **Configuración de FormsManager**:
 
-   * Para mostrar u ocultar la plantilla de formularios adaptables preestablecida, marque o desmarque la casilla **Incluir plantillas AF y AD fuera de la caja** .
-   * Para mostrar u ocultar las plantillas de formulario adaptables predefinidas que se agregaron en las versiones de AEM 6.0 Forms o AEM 6.1 Forms pero que ahora están en desuso, marque o desmarque la casilla **Incluir plantillas AF de AEM 6.0** . Si esta opción está activada, para que tenga efecto, se requiere la variable **Incluir plantillas AF y AD fuera de la caja** que se habilitará.
+   * Para mostrar u ocultar la plantilla de formularios adaptables preestablecida, marque o desmarque la casilla **Incluir plantillas predeterminadas AF y AD**.
+   * Para mostrar u ocultar las plantillas de formulario adaptables predeterminadas que se agregaron en las versiones de AEM 6.0 Forms o AEM 6.1 Forms pero que ahora están en desuso, marque o desmarque la opción **Incluir plantillas AF de AEM 6.0**. Si esta opción está activada, para que tenga efecto, se requiere que la configuración **Incluir plantillas predeterminadas AF y AD** esté habilitada.
 
 1. Haga clic en **Guardar**. Se cambian las opciones de visualización de las plantillas predeterminadas.
 
 ## Recomendaciones {#recommendations}
 
 * Cuando modifique las propiedades del formulario en el editor de plantillas, no utilice la propiedad BindReference.
-* Si desea agregar un punto de interrupción, créelo cuando cree una plantilla de formulario adaptable.
+* Si desea agregar un punto de ruptura, créelo cuando cree una plantilla de formulario adaptable.
 Para obtener más información sobre los puntos de ruptura, consulte [Diseño adaptable](/help/sites-authoring/responsive-layout.md).
