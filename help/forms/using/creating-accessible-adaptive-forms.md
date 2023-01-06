@@ -1,7 +1,7 @@
 ---
-title: Creación de formularios adaptables accesibles
+title: Crear formularios adaptables accesibles
 seo-title: Creating accessible adaptive forms
-description: AEM Forms proporciona herramientas y para crear formularios adaptables accesibles, y ayuda a cumplir con los estándares de accesibilidad.
+description: AEM Forms proporciona herramientas y permite crear formularios adaptables accesibles y ayuda a cumplir con los estándares de accesibilidad.
 seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,17 +11,17 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2055'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-# Creación de formularios adaptables accesibles{#creating-accessible-adaptive-forms}
+# Crear formularios adaptables accesibles{#creating-accessible-adaptive-forms}
 
 ## Introducción {#introduction}
 
-Un formulario accesible es un formulario que todos pueden utilizar, incluidos los usuarios con necesidades especiales. Los formularios adaptables incluyen una serie de características y funcionalidades que mejoran la funcionalidad de uso de los usuarios con diferentes capacidades. Crear la accesibilidad en formularios adaptables no solo permite la mayor audiencia posible para el contenido, sino que también es un requisito al proporcionar documentos en áreas geográficas en las que se exige el cumplimiento de los estándares de accesibilidad. AEM Forms ayuda a los desarrolladores de formularios a cumplir con los estándares de accesibilidad.
+Un formulario accesible es un formulario que todos pueden utilizar, incluidos los usuarios con necesidades especiales. Los formularios adaptables incluyen una serie de características y funcionalidades que mejoran la funcionalidad de uso de los usuarios con diferentes capacidades. La creación de accesibilidad en los formularios adaptables no solo permite la mayor audiencia posible de contenido, sino que también es un requisito al proporcionar documentos en zonas geográficas en las que se exige el cumplimiento de los estándares de accesibilidad. AEM Forms ayuda a los desarrolladores de formularios a cumplir con los estándares de accesibilidad.
 
 Durante la creación de un formulario adaptable, el autor debe tener en cuenta los siguientes puntos para crear un formulario adaptable accesible:
 
@@ -33,7 +33,7 @@ Durante la creación de un formulario adaptable, el autor debe tener en cuenta l
 
 ## Requisitos previos
 
-Necesita una herramienta de accesibilidad como **Inspector de nombres y descripciones accesibles (ANDI)** y **Tema del formulario adaptable desarrollado para solucionar problemas relacionados con la accesibilidad** para crear un formulario adaptable accesible.
+Necesita una herramienta de accesibilidad como **Inspector de nombres y descripciones accesibles (ANDI)** y una **temática del formulario adaptable desarrollada para solucionar problemas relacionados con la accesibilidad** para crear un formulario adaptable accesible.
 
 ### Descargar e instalar la herramienta de prueba de accesibilidad
 
@@ -46,44 +46,44 @@ La herramienta Inspector de nombres y descripciones accesibles (ANDI) ayuda a id
 
 ANDI trabaja con los principales exploradores de Internet. Consulte la documentación de [ANDI](https://www.ssa.gov/accessibility/andi/help/install.html) para obtener instrucciones detalladas sobre cómo configurar y utilizar la herramienta.
 
-### Descargue e instale el tema Ultramarine-Accessible
+### Descargue e instale la temática Ultramarine-Accessible
 
-El tema Ultramarine-Accessible es un tema de referencia. Ayuda a demostrar cómo corregir el contraste de color y otros problemas relacionados con la accesibilidad de forma adaptativa. Adobe recomienda crear un tema personalizado para el entorno de producción en función de los estilos aprobados por su organización. Para cargar el tema en la instancia de AEM, haga lo siguiente:
+La temática Ultramarine-Accessible es de referencia. Muestra cómo corregir el contraste de color y otros problemas relacionados con la accesibilidad en un formulario adaptable. Adobe recomienda crear una temática personalizada para el entorno de producción en función de los estilos aprobados por su organización. Para cargar la temática en la instancia de AEM, haga lo siguiente:
 
 1. Descargue el paquete de temáticas.
 1. Vaya a **[!UICONTROL Experience Manager]** > **[!UICONTROL Navegación]** ![Navegación](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** en la instancia de AEM.
-1. Pulse **[!UICONTROL Crear]** > **[!UICONTROL Cargar archivo]**. Seleccione y cargue el archivo x Ultramarine-Accessible-Theme.zip. Cargue el tema en la instancia de AEM.
+1. Pulse **[!UICONTROL Crear]** > **[!UICONTROL Cargar archivo]**. Seleccione y cargue el archivo x Ultramarine-Accessible-Theme.zip. Cargue la temática en la instancia de AEM.
 
-## Conversión de un formulario adaptable en accesible
+## Hacer accesible un formulario adaptable
 
-Debe centrarse en cuatro aspectos clave: navegación mediante el teclado, contraste de color, texto alternativo significativo para imágenes y etiquetas adecuadas para controles de formulario para que un formulario adaptable sea accesible. Siga estos pasos para que los formularios adaptables existentes sean accesibles:
+Debe centrarse en cuatro aspectos clave: navegación mediante el teclado, contraste de color, texto alternativo significativo para imágenes y etiquetas adecuadas para los controles del formulario para que un formulario adaptable sea accesible. Realice los siguientes pasos para hacer accesible el formulario adaptable existente:
 
-### 1. Aplique un tema accesible y realice correcciones adicionales
+### 1. Aplique una temática accesible y realice correcciones adicionales
 
-Aplique el tema Ultramarine-Accessible a su forma adaptativa existente. Para aplicar el tema, haga lo siguiente:
+Aplique la temática Ultramarine-Accessible al formulario adaptable existente. Para aplicar la temática, haga lo siguiente:
 
 1. Abra el formulario adaptable para editarlo.
 1. Seleccione un componente y pulse el icono principal. En el menú contextual, pulse **[!UICONTROL Contenedor de formulario adaptable]** y, a continuación, pulse el icono configurar.
-1. Seleccione el tema Ultramarine-Accessible en el explorador de propiedades y pulse el icono **[!UICONTROL Guardar]**.
-1. Actualice la ventana del explorador. El tema se aplica al formulario adaptable.
+1. Seleccione la temática Ultramarine-Accessible en el explorador de propiedades y pulse el icono **[!UICONTROL Guardar]**.
+1. Actualice la ventana del explorador. La temática se aplicará al formulario adaptable.
 
-Después de aplicar un tema accesible, realice las siguientes correcciones adicionales. Las correcciones se agregan a las correcciones de accesibilidad que se tratan en el tema accesible:
+Después de aplicar una temática accesible, realice las siguientes correcciones adicionales. Las correcciones se agregan a las correcciones de accesibilidad que se tratan en la temática accesible:
 
-1. Agregue un texto alternativo significativo para la imagen del logotipo en el formulario adaptable.
+1. Agregar un texto alternativo significativo para la imagen del logotipo en el formulario adaptable.
 
-   Proporcione un texto alternativo significativo para las imágenes de los componentes de encabezado y pie de página de la plantilla de formulario adaptable. Al corregir la plantilla y utilizarla para crear un formulario adaptable, los formularios adaptables heredan todas las correcciones relacionadas con la accesibilidad aplicadas al encabezado y al pie de página de la plantilla.  Para un formulario adaptable existente, realice cambios a nivel de formulario adaptable. Los cambios realizados en una plantilla de formulario adaptable no fluyen automáticamente a un formulario adaptable existente.
+   Proporcionar un texto alternativo significativo para las imágenes de los componentes del encabezado y del pie de página de la plantilla de formulario adaptable. Cuando arregla la plantilla y la utiliza para crear un formulario adaptable, el formulario adaptable hereda todas las correcciones relacionadas con la accesibilidad aplicadas al encabezado y al pie de página de la plantilla.  Para un formulario adaptable existente, realice cambios en el nivel del formulario adaptable. Los cambios realizados en una plantilla de formulario adaptable no fluyen automáticamente a un formulario adaptable existente.
 
 1. Agregue un componente de encabezado que contenga el nombre del formulario al formulario adaptable. Si el diseño de formulario especifica un nombre de empresa, agregue también un componente de encabezado independiente para el nombre de empresa.
 
-   La mayoría de las herramientas de accesibilidad informan a los usuarios sobre la jerarquía del contenido para ayudarles a comprender la estructura de la página web. Defina distintos niveles de encabezado para el nombre de organización y el texto del nombre del formulario en el formulario adaptable para proporcionar una estructura jerárquica a este texto. Además, utilice un componente Texto antes de cada panel y sección con un nivel de encabezado adecuado para crear una jerarquía.
+   La mayoría de las herramientas de accesibilidad informan a los usuarios sobre la jerarquía del contenido para ayudarles a comprender la estructura de la página web. Defina niveles de encabezado distintos para el nombre de organización y el texto del nombre del formulario en el formulario adaptable para proporcionar una estructura jerárquica a este texto. Además, utilice un componente Texto antes de cada panel y sección con un nivel de encabezado adecuado para crear una jerarquía.
 
    ![Aplicar un estilo de encabezado](assets/apply-style.gif)
 
 1. Cambie el color de fondo del pie de página para utilizar un contraste adecuado de acuerdo con los estándares de accesibilidad para mejorar la visibilidad y legibilidad del texto. Puede utilizar ANDI para encontrar problemas de contraste de color en el formulario. Además, no utilice fuentes muy pequeñas. Las fuentes pequeñas son difíciles de leer.
 
-1. Reemplace los componentes switch y de elección de imagen del formulario adaptable existente por el componente de opción (radio).
+1. Reemplace los componentes de la selección de imagen y del conmutador del formulario adaptable existente por el componente de selección (radio).
 
-1. Reemplace el componente de paso numérico del formulario adaptable existente por el componente de cuadro numérico.
+1. Reemplace el componente paso numérico del formulario adaptable existente por el componente cuadro numérico.
 
 1. Reemplace el campo de entrada de fecha por el campo selector de fecha.
 
@@ -95,11 +95,11 @@ Después de aplicar un tema accesible, realice las siguientes correcciones adici
 
 1. Agregue texto de accesibilidad personalizado a todas las celdas de solo lectura de las tablas. Además, deshabilite todas las celdas de solo lectura de las tablas.
 
-1. Elimine los campos de firma de anotaciones, si los hubiera, en el formulario adaptable. Configure el formulario adaptable para que utilice Adobe Sign para una experiencia de firma digital perfecta.
+1. Quite los campos de firma de las anotaciones, si los hubiera, en el formulario adaptable. Configure el formulario adaptable para usar Adobe Sign para conseguir una experiencia de firma digital perfecta.
 
 ### 2. Proporcione etiquetas adecuadas para los controles del formulario {#provide-proper-labels-for-form-controls}
 
-La etiqueta o el título de un componente identifica lo que representa el componente del formulario. Por ejemplo, el texto &quot;Nombre&quot; indica a los usuarios que deben introducir su nombre en un campo de texto. Para que los lectores de pantalla puedan acceder, la etiqueta está asociada programáticamente a un componente del formulario. Como alternativa, el control del formulario se configura con información de accesibilidad adicional.
+La etiqueta o el título de un componente identifica lo que representa el componente del formulario. Por ejemplo, el texto “Nombre” indica a los usuarios que deben introducir su nombre en un campo de texto. Para que los lectores de pantalla puedan acceder, la etiqueta está asociada programáticamente a un componente del formulario. Como alternativa, el control del formulario se configura con información de accesibilidad adicional.
 
 La etiqueta que perciben los lectores de pantalla no necesariamente debe ser la misma que el pie de ilustración visual. En algunos casos, es posible que desee ser más específico sobre el propósito del control. Para cada objeto de campo de un formulario, se pueden utilizar opciones de accesibilidad para especificar lo que anuncia el lector de pantalla para identificar el campo de formulario específico.
 
@@ -146,7 +146,7 @@ Los usuarios con deficiencias visuales dependen del alto contraste entre el text
 
 Se recomienda utilizar la fuente y los colores de fondo predeterminados, contenido en color negro sobre fondo blanco. Si cambia los colores predeterminados, elija un color de primer plano oscuro en un color de fondo claro o viceversa.
 
-Consulte [Creación de temas personalizados para formularios adaptables](/help/forms/using/creating-custom-adaptive-form-themes.md), para obtener más información sobre cómo cambiar el contraste de color y el tema para los formularios adaptables.
+Consulte [Crear temáticas personalizados para formularios adaptables](/help/forms/using/creating-custom-adaptive-form-themes.md), para obtener más información sobre cómo cambiar el contraste de color y la temática para los formularios adaptables.
 
 ### 5. Asegúrese de que los controles de formulario sean accesibles mediante el teclado {#ensure-that-form-controls-are-keyboard-accessible}
 
@@ -171,7 +171,7 @@ Las siguientes teclas de método abreviado de teclado están disponibles para el
 |---|---|
 | <ul><li>Mostrar las opciones del componente Selector de fecha cuando el enfoque de la pestaña resalta el icono del calendario</li><li>Realice el evento de clic cuando el enfoque de la pestaña resalta una opción</li> | Espacio o Entrar |
 | Ocultar las opciones del componente Selector de fecha | Esc |
-| <ul><li>Mover el cursor hacia adelante por las opciones disponibles en el componente Selector de fecha.</li><li>Definir el enfoque de la pestaña en el icono del calendario cuando el campo de entrada de fecha está activo</li> | Tabulación |
+| <ul><li>Mover el cursor hacia adelante por las opciones disponibles en el componente Selector de fecha.</li><li>Definir el enfoque de la pestaña en el icono del calendario cuando el campo de entrada de fecha está activo</li> | Tab |
 | Mover el cursor hacia atrás a través de las opciones disponibles en el componente Selector de fecha | Mayús + Tab |
 | <ul><li>Mostrar las opciones del componente Selector de fecha cuando el enfoque de la pestaña resalta el campo de entrada de la fecha</li><li>Mover el cursor hacia abajo en el calendario disponible en el componente Selector de fecha</li> | Flecha hacia abajo |
 | Mover el cursor hacia arriba en el calendario disponible en el componente Selector de fecha | Flecha hacia arriba |
@@ -183,8 +183,8 @@ Las siguientes teclas de método abreviado de teclado están disponibles para el
 
 ## Utilizar la herramienta de accesibilidad para encontrar los problemas de accesibilidad restantes
 
-El Inspector de nombres y descripciones accesibles (ANDI) le ayuda a identificar y corregir los problemas relacionados con el cumplimiento de la accesibilidad de forma adaptativa. Utilizar la herramienta ANDI para encontrar los problemas de accesibilidad de forma adaptativa:
+El Inspector de nombres y descripciones accesibles (ANDI) ayuda a identificar y corregir los problemas relacionados con el cumplimiento de la accesibilidad en un formulario adaptable. Para utilizar la herramienta ANDI para encontrar los problemas de accesibilidad en un formulario adaptable, haga lo siguiente:
 
-1. Abra el formulario adaptable en modo de vista previa.
-1. Haga clic en el icono de herramienta ANDI agregado como marcador. La herramienta ANDI analiza el formulario adaptable y muestra los problemas de accesibilidad. Para obtener más información sobre cómo utilizar la herramienta, consulte [Documentación de ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
+1. Abra el formulario adaptable en el modo de vista previa.
+1. Haga clic en el icono de herramienta ANDI agregado como marcador. La herramienta ANDI analizará el formulario adaptable y mostrará los problemas de accesibilidad. Para obtener más información sobre cómo utilizar la herramienta, consulte [Documentación de ANDI](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
 1. Revise y corrija los problemas que notifique la herramienta ANDI.
