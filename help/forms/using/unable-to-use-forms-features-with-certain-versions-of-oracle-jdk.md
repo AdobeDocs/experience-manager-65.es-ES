@@ -5,9 +5,9 @@ description: No se puede usar Experience Manager Forms con ciertas versiones de 
 seo-description: Unable to use Experience Manager Forms with certain versions of Oracle JDK
 exl-id: 6a8a7cb7-77d6-4bfc-82f3-82d0fddfc10a
 source-git-commit: 0142b46d087d34707b09a1f172910c8b287b839d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
@@ -21,18 +21,18 @@ El problema se aplica a las siguientes versiones:
 
 ## Problema {#issue}
 
-El usuario encuentra la siguiente excepción:
+El usuario se encuentra con la siguiente excepción:
 `Caused by: javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: JAXP0801002: the compiler encountered an XPath expression containing '101' operators that exceeds the '100' limit set by 'FEATURE_SECURE_PROCESSING'.`
 
 ## Motivo {#reason}
 
-La excepción se produce cuando ejecuta Experience Manager Forms con Oracle JDK (Java Development Kit) versión buena o igual a las siguientes versiones:
+La excepción se produce cuando ejecuta Experience Manager Forms con Oracle JDK (kit de desarrollo de Java) con una versión superior o igual a las siguientes versiones:
 
 * [JDK7u341](https://www.oracle.com/java/technologies/javase/7u341-relnotes.html)
 * [JDK8u331](https://www.oracle.com/java/technologies/javase/8u331-relnotes.html)
 * [JDK11u15](https://www.oracle.com/java/technologies/javase/11-0-15-relnotes.html)
 
-Las versiones anteriores y posteriores de Java, incluyen nuevos límites de procesamiento XML en la JVM (máquina virtual Java) que hacen que ciertas operaciones específicas de Forms fallen.
+Las versiones anteriores y posteriores de Java incluyen nuevos límites de procesamiento XML en la JVM (máquina virtual de Java) que hacen que ciertas operaciones específicas de Forms fallen.
 
 ## Solución alternativa {#workaround}
 
@@ -43,4 +43,4 @@ Las versiones anteriores y posteriores de Java, incluyen nuevos límites de proc
 
    Establece la propiedad del sistema en JVM en un valor razonablemente alto para que no se alcance el límite predeterminado.
 
-1. Inicie el servidor de Experience Manager Forms.
+1. Inicie su servidor de Experience Manager Forms.
