@@ -1,7 +1,7 @@
 ---
-title: Envío asíncrono de formularios adaptables
+title: Envío asincrónico de formularios adaptables
 seo-title: Asynchronous submission of adaptive forms
-description: Aprenda a configurar el envío asincrónico para formularios adaptables.
+description: Aprenda a configurar el envío asincrónico en formularios adaptables.
 seo-description: Learn to configure asynchronous submission for adaptive forms.
 uuid: 6555ac63-4d99-4b39-a2d0-a7e61909106b
 contentOwner: vishgupt
@@ -12,25 +12,25 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '712'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Envío asíncrono de formularios adaptables{#asynchronous-submission-of-adaptive-forms}
+# Envío asincrónico de formularios adaptables{#asynchronous-submission-of-adaptive-forms}
 
-Tradicionalmente, los formularios web se configuran para enviarse sincrónicamente. En el envío sincrónico, cuando los usuarios envían un formulario, se les redirige a una página de acuse de recibo, a una página de agradecimiento o, en caso de error en el envío, a una página de error. Sin embargo, las experiencias web modernas, como las aplicaciones de una sola página, están ganando popularidad en los casos en los que la página web permanece estática mientras la interacción cliente-servidor se produce en segundo plano. Ahora puede proporcionar esta experiencia con formularios adaptables configurando el envío asincrónico.
+Tradicionalmente, los formularios web se configuran para enviarse sincrónicamente. En el envío sincrónico, cuando los usuarios envían un formulario, se les redirige a una página de reconocimiento, de agradecimiento o, en el caso de se produzca un error en el envío, a una página de error. Sin embargo, las experiencias web modernas, como las aplicaciones de una sola página, están ganando popularidad en los casos en los que la página web permanece estática mientras la interacción cliente-servidor se produce en segundo plano. Ahora puede proporcionar esta experiencia con formularios adaptables mediante la configuración del envío asincrónico.
 
-En el caso del envío asincrónico, cuando un usuario envía un formulario, el desarrollador del formulario agrega una experiencia independiente, como redirigir a otro formulario o a una sección independiente del sitio web. El autor también puede añadir servicios separados como el envío de datos a un almacén de datos diferente o añadir un motor de análisis personalizado. En caso de envío asincrónico, un formulario adaptable se comporta como una aplicación de una sola página, ya que el formulario no se vuelve a cargar o su URL no cambia cuando los datos del formulario enviados se validan en el servidor.
+En el caso del envío asincrónico, cuando un usuario envía un formulario, el desarrollador del formulario agrega una experiencia independiente, como redirigir a otro formulario o a una sección independiente del sitio web. El autor también puede agregar servicios separados como el envío de datos a un repositorio de datos diferente o agregar un motor de análisis personalizado. En caso de envío asincrónico, un formulario adaptable se comporta como una aplicación de una sola página, ya que el formulario no se volverá a cargar o su URL no cambiará cuando los datos del formulario enviados se validen en el servidor.
 
 Siga leyendo para obtener más información sobre el envío asincrónico en formularios adaptables.
 
 ## Configuración del envío asincrónico {#configure}
 
-Para configurar el envío asincrónico de un formulario adaptable:
+Para configurar el envío asincrónico en un formulario adaptable haga lo siguiente:
 
-1. En el modo de creación de formularios adaptables, seleccione el objeto Contenedor de formulario y pulse ![cmppr1](assets/cmppr1.png) para abrir sus propiedades.
+1. En el modo Autor del formulario adaptable, seleccione el objeto Contenedor de formularios y pulse ![cmppr1](assets/cmppr1.png) para abrir sus propiedades.
 1. En la sección de propiedades de **[!UICONTROL Envío]**, habilite **[!UICONTROL Usar envío asincrónico]**.
 1. En la sección **[!UICONTROL Al enviar]**, seleccione una de las siguientes opciones para realizarla cuando se envíe correctamente del formulario.
 
@@ -41,7 +41,7 @@ Para configurar el envío asincrónico de un formulario adaptable:
 
 ## Funcionamiento del envío asincrónico {#how-asynchronous-submission-works}
 
-AEM Forms proporciona controladores de éxito y de errores listos para usar para los envíos de formularios. Los controladores son funciones del lado del cliente que se ejecutan en función de la respuesta del servidor. Cuando se envía un formulario, los datos se transmiten al servidor para su validación, lo que devuelve una respuesta al cliente con información sobre el evento de éxito o error del envío. La información se pasa en forma de parámetros al controlador correspondiente para ejecutar la función.
+AEM Forms proporciona controladores de éxito y de error predeterminados para los envíos de formularios. Los controladores son funciones del lado del cliente que se ejecutan en función de la respuesta del servidor. Cuando se envía un formulario, los datos se transmiten al servidor para su validación, lo que devuelve una respuesta al cliente con información sobre el evento de éxito o error del envío. La información se pasa en forma de parámetros al controlador correspondiente para ejecutar la función.
 
 Además, los autores y desarrolladores de formularios pueden escribir reglas a nivel de formulario para invalidar los controladores predeterminados. Para obtener más información, consulte [Invalidar los controladores predeterminados mediante reglas](#custom).
 
@@ -95,13 +95,13 @@ El controlador de error lee la respuesta del servidor y, en consecuencia, muestr
 
 ## Invalidar los controladores predeterminados mediante reglas {#custom}
 
-Los desarrolladores y autores de formularios pueden escribir reglas, a nivel de formulario, en el editor de código para anular los controladores predeterminados. La respuesta del servidor para eventos de éxito y error se expone a nivel de formulario, al cual los desarrolladores pueden acceder usando `$event.data` en las reglas.
+Los desarrolladores y autores de formularios pueden escribir reglas a nivel de formulario en el editor de código para invalidar los controladores predeterminados. La respuesta del servidor para eventos de éxito y error se expone a nivel de formulario, al cual los desarrolladores pueden acceder usando `$event.data` en las reglas.
 
 Realice los siguientes pasos para escribir reglas en el editor de código para controlar los eventos de éxito y error.
 
-1. Abra el formulario adaptable en modo de creación, seleccione cualquier objeto de formulario y pulse ![edit-rules1](assets/edit-rules1.png) para abrir el editor de reglas.
+1. Abra el formulario adaptable en el modo Autor, seleccione cualquier objeto de formulario y pulse ![edit-rules1](assets/edit-rules1.png) para abrir el editor de reglas.
 1. Seleccione **[!UICONTROL Formulario]** en el árbol Objetos de formulario y pulse **[!UICONTROL Crear]**.
-1. Select **[!UICONTROL Editor de código]** en la lista desplegable de selección de modo.
-1. En el editor de código, pulse **[!UICONTROL Editar código]**. Toque **[!UICONTROL Editar]** en el cuadro de diálogo de confirmación.
-1. Choose **[!UICONTROL Envío correcto]** o **[!UICONTROL Error en el envío]** de la variable **[!UICONTROL Evento]** lista desplegable.
+1. Seleccione **[!UICONTROL Editor de código]** de la lista desplegable de modo de selección.
+1. En el editor de código, pulse **[!UICONTROL Editar código]**. Pulse **[!UICONTROL Editar]** en el cuadro de diálogo de confirmación.
+1. Elija **[!UICONTROL Envío correcto]** o **[!UICONTROL Error en el envío]** de la lista desplegable **[!UICONTROL Evento]**.
 1. Escriba una regla para el evento seleccionado y pulse **[!UICONTROL Listo]** para guardar la regla.
