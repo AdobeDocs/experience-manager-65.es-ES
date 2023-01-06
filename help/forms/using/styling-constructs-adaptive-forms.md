@@ -1,7 +1,7 @@
 ---
 title: Construcciones de estilo para formularios adaptables
 seo-title: Styling constructs for adaptive forms
-description: Utilice el marco LESS para personalizar el aspecto de los formularios adaptables.
+description: Utilice el marco de trabajo LESS para personalizar el aspecto de los formularios adaptables.
 seo-description: Use LESS framework to customize appearance of adaptive forms.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2308'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,24 +25,24 @@ Conocimiento de CSS y del marco de trabajo LESS.
 
 ## Qué se puede personalizar {#what-can-be-customized}
 
-El artículo enumera las clases css disponibles públicamente de formularios adaptables. Puede aprovechar estas clases para aplicar estilo a varios componentes de un formulario adaptable. El estilo de los componentes de creación, como los cuadros de diálogo y las barras de estado que muestran advertencias, excede el ámbito de este artículo. Utilice estas construcciones de estilo para crear estilos (con CSS o Less) solo cuando no pueda aplicar estilo a los componentes con el [editor de temas](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/themes.html).
+El artículo enumera las clases de css disponibles públicamente de los formularios adaptables. Puede aprovechar estas clases para aplicar estilo a varios componentes de un formulario adaptable. El estilo de los componentes de creación, como los cuadros de diálogo y las barras de estado que muestran advertencias, excede el ámbito de este artículo. Utilice estas construcciones de estilo para crear estilos (con CSS o Less) solo cuando no pueda aplicar estilo a los componentes con el [editor de temáticas](https://helpx.adobe.com/es/experience-manager/6-3/forms/using/themes.html).
 
-## Personalización de estilos en formularios adaptables {#customizing-styles-in-adaptive-forms}
+## Personalizar estilos en formularios adaptables {#customizing-styles-in-adaptive-forms}
 
-El marco LESS simplifica el caso de uso para personalizar estilos en formularios adaptables. El marco de trabajo permite definir estilos mediante un conjunto de variables y funciones (mezclas). El marco de trabajo LESS ayuda a reducir el tamaño del código agrupado y aumenta su reutilización.
+El marco de trabajo LESS simplifica el caso de uso para personalizar estilos en formularios adaptables. El marco de trabajo permite definir estilos mediante un conjunto de variables y funciones (mezclas). El marco de trabajo LESS ayuda a reducir el tamaño del código agrupado y aumenta su reutilización.
 
-Puede personalizar los estilos de formulario adaptables de las siguientes maneras:
+Puede personalizar los estilos del formulario adaptable de las siguientes maneras:
 
-* Cambiar el tema
+* Cambiar la temática
 * Cambiar el estilo del componente
 
-## Cambiar el tema {#changing-theme}
+## Cambiar la temática {#changing-theme}
 
-Puede cambiar el tema de un formulario adaptable para asegurarse de que su aspecto sea coherente con las páginas web en las que está incrustado el formulario adaptable.
+Puede cambiar la temática de un formulario adaptable para asegurarse de que su aspecto sea coherente con las páginas web en las que está incrustada.
 
-Los cambios en el aspecto general del formulario adaptable que utiliza propiedades CSS suelen formar parte de los cambios de tema. Los principales cambios en la apariencia &quot;adecuada&quot; del formulario adaptable, como los cambios en el diseño y la ubicación de los componentes, no se consideran cambios de tema.
+Los cambios en el aspecto general del formulario adaptable que utiliza propiedades CSS suelen formar parte de los cambios de temática. Los cambios importantes en el aspecto del formulario adaptable, como los cambios en el diseño y la ubicación de los componentes, no se consideran cambios de temática.
 
-El siguiente conjunto de propiedades CSS define el tema de una página web en función del bootstrap:
+El siguiente conjunto de propiedades CSS define la temática de una página web en función del bootstrap:
 
 * Color de fondo
 * Borde (tipo, color, grosor)
@@ -52,13 +52,13 @@ El siguiente conjunto de propiedades CSS define el tema de una página web en fu
 * Tamaño de fuente
 * Altura de la línea
 
-Actualmente, las variables LESS se definen solo para estas propiedades de los distintos elementos de una forma adaptativa.
+Actualmente, las variables LESS se definen solo para estas propiedades de los distintos elementos de un formulario adaptable.
 
 ## Cambiar el estilo de los componentes {#changing-component-style}
 
 Puede realizar cambios en el aspecto, el diseño, el posicionamiento y la visibilidad de los elementos. Para realizar esta tarea, cree o actualice los archivos .css personalizados para incluir las construcciones de estilo que se enumeran en este artículo.
 
-Para aplicar un estilo a un formulario adaptable, abra el formulario adaptable en para editarlo, abra las propiedades del contenedor de formularios adaptables y especifique la ruta del archivo CSS personalizado en la pestaña basic . Las construcciones de estilo predeterminadas del formulario adaptable se anulan con las construcciones enumeradas en el archivo .css personalizado.
+Para aplicar un estilo a un formulario adaptable, ábralo para editarlo, abra las propiedades del contenedor del formulario adaptable y especifique la ruta del archivo CSS personalizado en la pestaña básica. Las construcciones de estilo predeterminadas del formulario adaptable se anulan con las construcciones enumeradas en el archivo .css personalizado.
 
 ## Componentes {#components}
 
@@ -352,7 +352,7 @@ El widget de Términos y condiciones (TnC `` ``) permite especificar términos y
 
 ## Botón {#button}
 
-Los botones también son widgets. Sin embargo, su estilo es ligeramente diferente del de los widgets. En los formularios adaptables, cualquiera de las siguientes opciones constituye un botón:
+Los botones también son widgets. Sin embargo, su estilo es ligeramente diferente del de los widgets. En formularios adaptables, cualquiera de las siguientes opciones constituye un botón:
 
 * input[type = text]
 * botón
@@ -510,7 +510,7 @@ Para los widgets, se muestra un signo de interrogación cuando un autor agrega u
 
 ## Tabla {#table}
 
-Puede cambiar el tema de color para el encabezado y las filas del cuerpo de una tabla mediante las siguientes variables.
+Puede cambiar la temática de color para el encabezado y las filas del cuerpo de una tabla mediante las siguientes variables.
 
 <table>
  <tbody>
@@ -1074,9 +1074,9 @@ Las variables de la siguiente tabla influyen en el diseño de la barra de herram
  </tbody>
 </table>
 
-## Variable específica del tema {#theme-specific-variable}
+## Variable específica de la temática {#theme-specific-variable}
 
-El tema **Inscripción simple** en /etc/clientlibs/fd/af/guidetheme/simpleEnrollment y la categoría `guide.theme.simpleEnrollment` también introduce algunas variables. Si desea crear un tema para mejorar la inscripción simple, puede utilizar las siguientes variables extra:
+La temática **Inscripción simple** en /etc/clientlibs/fd/af/guidetheme/simpleEnrollment y la categoría `guide.theme.simpleEnrollment` también introduce algunas variables. Si desea crear una temática para mejorar la inscripción simple, puede utilizar las siguientes variables extra:
 
 <table>
  <tbody>
