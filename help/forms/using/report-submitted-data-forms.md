@@ -1,7 +1,7 @@
 ---
 title: API para trabajar con formularios enviados en el portal de formularios
 seo-title: APIs to work with submitted forms on forms portal
-description: AEM Forms proporciona API que puede utilizar para consultar y realizar acciones en los datos de formularios enviados en el portal de formularios.
+description: AEM Forms proporciona una API que puede utilizar para consultar y realizar acciones en los datos de formularios enviados en el portal de formularios.
 seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
@@ -11,19 +11,19 @@ discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 feature: Forms Portal
 exl-id: a685889e-5d24-471c-926d-dbb096792bc8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '541'
-ht-degree: 9%
+ht-degree: 100%
 
 ---
 
 # API para trabajar con formularios enviados en el portal de formularios {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms proporciona API que puede utilizar para consultar los datos de formularios enviados a través del portal de formularios. Además, puede publicar comentarios o actualizar las propiedades de los formularios enviados mediante las API explicadas en este documento.
+AEM Forms proporciona una API que puede utilizar para consultar los datos de formularios enviados a través del portal de formularios. Además, puede publicar comentarios o actualizar las propiedades de los formularios enviados mediante las API explicadas en este documento.
 
 >[!NOTE]
 >
->Los usuarios que invoquen las API deben agregarse al grupo de revisores tal como se describe en [Asociación de revisores de envío a un formulario](/help/forms/using/adding-reviewers-form.md).
+>Los usuarios que invoquen las API deben agregarse al grupo de revisores tal como se describe en [Asociar revisores de envío a un formulario](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -59,7 +59,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubmission {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 Devuelve los detalles de todos los formularios enviados. Sin embargo, puede usar parámetros de URL para limitar los resultados.
 
@@ -75,7 +75,7 @@ Especifique los siguientes parámetros en la dirección URL de la solicitud:
   </tr>
   <tr>
    <td><code>formPath</code></td>
-   <td>Especifica la ruta del repositorio CRX donde reside el formulario. Si no especifica la ruta del formulario, devuelve una respuesta vacía.<br /> </td>
+   <td>Especifica la ruta del repositorio CRX donde reside el formulario. Si no especifica la ruta del formulario, devolverá una respuesta vacía.<br /> </td>
   </tr>
   <tr>
    <td><code>offset</code> (opcional)</td>
@@ -139,7 +139,7 @@ Especifique los siguientes parámetros en la dirección URL de la solicitud:
 
 | Parámetro | Descripción |
 |---|---|
-| `submitID` | Especifica el ID de metadatos asociado a una instancia de envío. |
+| `submitID` | Especifica el ID de los metadatos asociado a una instancia de envío. |
 | `Comment` | Especifica el texto para que el comentario se agregue a la instancia de envío especificada. |
 
 ### Respuesta {#response-2}
@@ -170,11 +170,11 @@ Especifique el siguiente parámetro en la dirección URL de la solicitud:
 
 | Parámetro | Descripción |
 |---|---|
-| `submitID` | Especifica el ID de metadatos de una instancia de envío. |
+| `submitID` | Especifica el ID de los metadatos de una instancia de envío. |
 
 ### Respuesta {#response-3}
 
-El objeto Response contiene una matriz JSON que incluye todos los comentarios asociados con el ID de envío especificado. La estructura de la respuesta es la siguiente:
+El objeto de respuesta contiene una matriz JSON que incluye todos los comentarios asociados con el ID de envío especificado. La estructura de la respuesta es la siguiente:
 
 ```json
 [{
@@ -208,9 +208,9 @@ Especifique los siguientes parámetros en la dirección URL de la solicitud:
 
 | Parámetro | Descripción |
 |---|---|
-| `submitID` | Especifica el ID de metadatos asociado a una instancia de envío. |
+| `submitID` | Especifica el ID de los metadatos asociado a una instancia de envío. |
 | `property` | Especifica la propiedad del formulario que se va a actualizar. |
-| `value` | Especifica el valor de la propiedad de formulario que se va a actualizar. |
+| `value` | Especifica el valor de la propiedad del formulario que se va a actualizar. |
 
 ### Respuesta {#response-4}
 
