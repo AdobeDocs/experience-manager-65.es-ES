@@ -1,5 +1,5 @@
 ---
-title: Rellenado dinámico de listas desplegables
+title: Rellenar de manera dinámica listas desplegables
 seo-title: Dynamically populating drop-down lists
 description: Procedimiento para rellenar dinámicamente listas desplegables basadas en alguna lógica
 seo-description: Procedure to dynamically populate drop-down lists based on some logic
@@ -11,20 +11,20 @@ discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
 exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Rellenado dinámico de listas desplegables {#dynamically-populating-drop-down-lists}
+# Rellenar de manera dinámica listas desplegables {#dynamically-populating-drop-down-lists}
 
 ## Requisitos previos {#prerequisites}
 
-* [Creación de paquetes OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
-* [Desarrollo de componentes de AEM](/help/sites-developing/components.md)
-* [Creación de formularios adaptables](../../forms/using/creating-adaptive-form.md)
-* [Creación de formularios adaptables](../../forms/using/introduction-forms-authoring.md)
+* [Crear paquetes OSGI](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es&amp;CID=RedirectAEMCommunityKautuk)
+* [Desarrollar componentes de AEM](/help/sites-developing/components.md)
+* [Crear formularios adaptables](../../forms/using/creating-adaptive-form.md)
+* [Crear formularios adaptables en el modo Autor](../../forms/using/introduction-forms-authoring.md)
 
 ## Procedimiento para rellenar dinámicamente listas desplegables {#procedure-to-dynamically-populate-drop-down-lists}
 
@@ -151,7 +151,7 @@ Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en
    ![Creación de un nodo desplegable](assets/dropdown-node.png)
 
 1. Empaquete el nodo de contenido e incruste el archivo .jar en una ubicación concreta (por ejemplo, /apps/myfolder/demo/install/). Implemente el mismo archivo en el servidor.
-1. Cree un formulario adaptable y añada dos listas desplegables: País y Estado. La lista País puede incluir nombres de países. La lista Estado puede rellenar dinámicamente los nombres de los estados del país seleccionado en la primera lista.
+1. Cree un formulario adaptable y agregue dos listas desplegables, País y Estado. La lista País puede incluir nombres de países. La lista Estado puede rellenar dinámicamente los nombres de los estados del país seleccionado en la primera lista.
 
    Añada los nombres de los países para mostrarlos en la lista País. En la lista Estado, agregue un script para rellenarla en función del nombre del país de la lista País.
 
@@ -173,6 +173,6 @@ Imagine un escenario en el que desee rellenar la lista desplegable **Estado** en
    .responseText);
    ```
 
-El paquete de contenido que contiene un formulario adaptable de ejemplo (demostración/demostración) con el código anterior implementado.
+Paquete de contenido que contiene un formulario adaptable de ejemplo (demo/AFdemo) con el código anterior implementado.
 
 [Obtener archivo](assets/dropdown-demo-content-1.0.1-snapshot.zip)
