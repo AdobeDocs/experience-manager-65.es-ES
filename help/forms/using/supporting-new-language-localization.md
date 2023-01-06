@@ -1,7 +1,7 @@
 ---
-title: Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables
+title: Compatibilidad con configuraciones regionales nuevas para la localización de formularios adaptables
 seo-title: Supporting new locales for adaptive forms localization
-description: AEM Forms le permite agregar nuevas configuraciones regionales para localizar formularios adaptables. Las configuraciones regionales compatibles de forma predeterminada son Inglés, Francés, Alemán y Japonés.
+description: AEM Forms le permite agregar configuraciones regionales nuevas para localizar formularios adaptables. Las configuraciones regionales compatibles de forma predeterminada son Inglés, Francés, Alemán y Japonés.
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
 uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
 content-type: reference
@@ -13,27 +13,27 @@ feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '794'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Compatibilidad con nuevas configuraciones regionales para la localización de formularios adaptables{#supporting-new-locales-for-adaptive-forms-localization}
+# Compatibilidad con configuraciones regionales nuevas para la localización de formularios adaptables{#supporting-new-locales-for-adaptive-forms-localization}
 
 ## Acerca de los diccionarios de configuración regional {#about-locale-dictionaries}
 
 La localización de formularios adaptables se basa en dos tipos de diccionarios de configuración regional:
 
-**Diccionario específico del formulario** Contiene cadenas utilizadas en formularios adaptables. Por ejemplo, etiquetas, nombres de campo, mensajes de error, descripciones de ayuda, etc. Se administra como un conjunto de archivos XLIFF para cada configuración regional y puede acceder a él en `https://<host>:<port>/libs/cq/i18n/translator.html`.
+**El diccionario específico del formulario**: contiene cadenas utilizadas en formularios adaptables. Por ejemplo, etiquetas, nombres de campo, mensajes de error, descripciones de ayuda, etc. Se administra como un conjunto de archivos XLIFF para cada configuración regional y puede acceder a él en `https://<host>:<port>/libs/cq/i18n/translator.html`.
 
-**Los diccionarios globales**: hay dos diccionarios globales, administrados como objetos JSON en la biblioteca de cliente de AEM. Estos diccionarios contienen mensajes de error predeterminados, nombres de mes, símbolos de moneda, patrones de fecha y hora, etc. Puede encontrar estos diccionarios en CRXDe Lite en /libs/fd/xfaforms/clientlibs/I18N. Estas ubicaciones contienen carpetas independientes para cada configuración regional. Debido a que los diccionarios globales generalmente no se actualizan con frecuencia, mantener archivos JavaScript separados para cada configuración regional permite a los navegadores almacenarlos en caché y reducir el uso del ancho de banda de red al acceder a diferentes formularios adaptables en el mismo servidor.
+**Los diccionarios globales**: hay dos diccionarios globales, administrados como objetos JSON en la biblioteca de cliente de AEM. Estos diccionarios contienen mensajes de error predeterminados, nombres de mes, símbolos de moneda, patrones de fecha y hora, etc. Puede encontrar estos diccionarios en CRXDe Lite en /libs/fd/xfaforms/clientlibs/I18N. Estas ubicaciones contienen carpetas independientes para cada configuración regional. Dado que los diccionarios globales no suelen actualizarse con frecuencia, utilizar archivos JavaScript independientes para cada configuración regional permite a los exploradores almacenarlos en caché y reducir el uso del ancho de banda de red al acceder a diferentes formularios adaptables en el mismo servidor.
 
 ### Funcionamiento de la localización del formulario adaptable {#how-localization-of-adaptive-form-works}
 
-Existen dos métodos para identificar la configuración regional del formulario adaptable. Cuando se procesa un formulario adaptable, identifica la configuración regional solicitada mediante :
+Existen dos métodos para identificar la configuración regional del formulario adaptable. Cuando se procesa un formulario adaptable, este identifica la configuración regional solicitada de las siguientes formas:
 
-* consulte `[local]` en la URL del formulario adaptable. El formato de la URL es el siguiente `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Uso `[local]` permite almacenar en caché un formulario adaptable.
+* Al consultar el selector `[local]` de la URL del formulario adaptable. El formato de la URL es el siguiente `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Usar el selector `[local]` permite almacenar en caché un formulario adaptable.
 
 * observando los siguientes parámetros en el orden especificado:
 
@@ -50,23 +50,23 @@ Existen dos métodos para identificar la configuración regional del formulario 
       * Busque y abra la configuración del **[!UICONTROL Canal web de formularios adaptables y comunicaciones interactivas]**.
       * Cambie el estado de la opción **[!UICONTROL Usar configuración regional del explorador]** y pulse **[!UICONTROL Guardar]** para guardar la configuración.
 
-Una vez identificada la configuración regional, los formularios adaptables seleccionan el diccionario específico del formulario. Si no se encuentra el diccionario específico del formulario para la configuración regional solicitada, utiliza el diccionario para el idioma en el que se creó el formulario adaptable.
+Una vez identificada la configuración regional, el formulario adaptable selecciona el diccionario específico del formulario. Si no se encuentra el diccionario específico del formulario para la configuración regional solicitada, utiliza el diccionario del idioma en el que se creó el formulario adaptable.
 
 Si no hay información de configuración regional, el formulario adaptable se entrega en el idioma original del formulario. El idioma original es el idioma utilizado al desarrollar el formulario adaptable.
 
-Si no existe una biblioteca de cliente para la configuración regional solicitada, se busca una biblioteca de cliente para el código de idioma presente en la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (inglés sudafricano) y la biblioteca de clientes de `en_ZA` no existe, el formulario adaptable utilizará la biblioteca cliente para `en` (Inglés), si existe. Sin embargo, si no existe ninguno, el formulario adaptable utiliza el diccionario para `en` configuración regional.
+Si no existe una biblioteca de cliente para la configuración regional solicitada, se busca una biblioteca de cliente para el código de idioma presente en la configuración regional. Por ejemplo, si la configuración regional solicitada es `en_ZA` (Inglés sudafricano) y la biblioteca de cliente de `en_ZA` no existe, el formulario adaptable utilizará la biblioteca de cliente de `en` (Inglés), si existe. Sin embargo, si no existe ninguna biblioteca, el formulario adaptable utilizará el diccionario de la configuración regional `en`.
 
 ## Agregar compatibilidad con la localización para configuraciones regionales no admitidas {#add-localization-support-for-non-supported-locales}
 
-AEM Forms admite actualmente la localización de contenido de formularios adaptables en las configuraciones regionales de inglés (en), español (es), francés (fr), italiano (it), alemán (de), japonés (ja), portugués-brasileño (pt-BR), chino (zh-CN), chino-taiwanés (zh-TW) y coreano (ko-KR).
+AEM Forms admite actualmente la localización del contenido de los formularios adaptables en las configuraciones regionales de Inglés (en), Español (es), Francés (fr), Italiano (it), Alemán (de), Japonés (ja), Portugués brasileño (pt-BR), Chino (zh-CN), Chino taiwanés (zh-TW) y Coreano (ko-KR).
 
-Para añadir compatibilidad con una nueva configuración regional en el tiempo de ejecución de los formularios adaptables:
+Para agregar compatibilidad con una nueva configuración regional en el tiempo de ejecución de un formulario adaptable, haga lo siguiente:
 
 1. [Añada una configuración regional al servicio GuideLocalizationService.](../../forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
 
 1. [Agregar una biblioteca de cliente XFA para una configuración regional.](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
 
-1. [Agregar una biblioteca de cliente de formulario adaptable para una configuración regional](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
+1. [Agregue la biblioteca de cliente del formulario adaptable para una configuración regional.](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
 1. [Agregar la compatibilidad con la configuración regional del diccionario.](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [Reiniciar el servidor](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
@@ -92,7 +92,7 @@ I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
 ```
 
-### Agregar una biblioteca de cliente de formulario adaptable para una configuración regional {#add-adaptive-form-client-library-for-a-locale-br}
+### Agregue la biblioteca de cliente del formulario adaptable para una configuración regional. {#add-adaptive-form-client-library-for-a-locale-br}
 
 Cree un nodo de tipo `cq:ClientLibraryFolder` en `etc/<folderHierarchy>` con la categoría `guides.I18N.<locale>` y las dependencias `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` y `guide.common`.
 
