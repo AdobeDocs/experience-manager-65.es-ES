@@ -11,9 +11,9 @@ discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
@@ -23,18 +23,18 @@ ht-degree: 0%
 
 AEM Forms permite guardar un formulario como borrador. La funcionalidad de borrador le permite mantener un formulario de trabajo en curso, que puede completar y enviar más tarde desde cualquier dispositivo.
 
-De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en la variable `/content/forms/fp` en la instancia de publicación. Además, los componentes del portal de AEM Forms proporcionan servicios de datos, que puede utilizar para personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar datos de usuario en un almacén de datos.
+De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío de un formulario en el nodo `/content/forms/fp` en la instancia de publicación. Además, los componentes del portal de AEM Forms proporcionan servicios de datos, que puede utilizar para personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar datos de usuario en un repositorio de datos.
 
 ## Requisitos previos  {#prerequisites}
 
 * Habilitar [componentes del portal de formularios](/help/forms/using/enabling-forms-portal-components.md)
-* Cree un [página del portal de formularios](/help/forms/using/creating-form-portal-page.md)
+* Crear una [página del portal de formularios](/help/forms/using/creating-form-portal-page.md)
 * Habilitar [formularios adaptables para el portal de formularios](/help/forms/using/draft-submission-component.md)
-* Más información [detalles de implementación del almacenamiento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Más información sobre los [detalles de implementación del almacenamiento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
-## Borrador del servicio de datos {#draft-data-service}
+## Servicio Datos de borrador {#draft-data-service}
 
-Para personalizar el almacenamiento de los datos de usuario para los borradores, debe implementar todos los métodos del `DraftDataService` interfaz. El siguiente código de ejemplo describe los métodos y argumentos.
+Para personalizar el almacenamiento de los datos de usuario para los borradores, debe implementar todos los métodos de la interfaz `DraftDataService`. El siguiente código de ejemplo describe los métodos y argumentos.
 
 ```java
 /**
@@ -99,11 +99,11 @@ public interface DraftDataService {
 
 >[!NOTE]
 >
->El valor mínimo de la longitud del campo de ID de borrador es de 26 caracteres. Adobe recomienda establecer la longitud del ID de borrador en 26 caracteres o más.
+>El valor mínimo de la longitud del campo de ID de borrador es de 26 caracteres. Adobe recomienda establecer la longitud de ID de borrador en 26 caracteres o más.
 
-## Servicio de envío de datos {#submission-data-service}
+## Servicio Envío de datos {#submission-data-service}
 
-Para personalizar el almacenamiento de los datos de usuario para los envíos, debe implementar todos los métodos del `SubmitDataService` interfaz. El siguiente código de ejemplo describe los métodos y argumentos.
+Para personalizar el almacenamiento de los datos de usuario para los envíos, debe implementar todos los métodos de la interfaz `SubmitDataService`. El siguiente código de ejemplo describe los métodos y argumentos.
 
 ```java
 /**
@@ -188,7 +188,7 @@ public interface SubmitDataService {
 }
 ```
 
-El portal de Forms utiliza el concepto de identificador único universal (UUID) para generar un ID único para cada borrador y formulario enviado. También puede generar un ID único propio. Puede implementar la interfaz FPKeyGeneratorService, anular sus métodos y desarrollar una lógica personalizada para generar un ID único personalizado para cada formulario enviado y borrador. Además, establezca la clasificación de servicio de la implementación de generación de ID personalizada más alta que 0. Garantiza que se utilice la implementación personalizada en lugar de la implementación predeterminada.
+El portal de formularios utiliza el concepto de identificador único universal (UUID) para generar un ID único para cada borrador y formulario enviado. También puede generar un ID único propio. Puede implementar la interfaz FPKeyGeneratorService, anular sus métodos y desarrollar una lógica personalizada para generar un ID único personalizado para cada formulario enviado y borrador. Establezca la clasificación del servicio de implementación de generación de ID personalizada más alta que 0. Garantizará que se utilice la implementación personalizada en lugar de la predeterminada.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -203,11 +203,11 @@ public interface FPKeyGeneratorService {
 }
 ```
 
-Puede utilizar la anotación siguiente para aumentar la clasificación del servicio para el ID personalizado generado con el código anterior:
+Puede utilizar la siguiente anotación para aumentar la clasificación del servicio para el ID personalizado generado con el código anterior:
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Para utilizar la anotación anterior, importa lo siguiente a su proyecto:
+Para utilizar la anotación anterior, importe lo siguiente a su proyecto:
 
 ```java
 import org.apache.felix.scr.annotations.Properties;
