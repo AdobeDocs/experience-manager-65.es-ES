@@ -1,5 +1,5 @@
 ---
-title: Configuración de servicios de almacenamiento para borradores y envíos
+title: Configurar servicios de almacenamiento para borradores y envíos
 seo-title: Configuring storage services for drafts and submissions
 description: Aprenda a configurar el almacenamiento para borradores y envíos
 seo-description: Learn how to configure storage for drafts and submissions
@@ -10,37 +10,37 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 exl-id: 51ca2844-91f0-453a-9b39-b876399ebecb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '531'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Configuración de servicios de almacenamiento para borradores y envíos {#configuring-storage-services-for-drafts-and-submissions}
+# Configurar servicios de almacenamiento para borradores y envíos {#configuring-storage-services-for-drafts-and-submissions}
 
 ## Información general {#overview}
 
 Con AEM Forms, puede almacenar:
 
-* **Borradores**: Formulario en curso que los usuarios finales rellenan y guardan para después y envían después.
+* **Borradores**: formulario en curso que los usuarios finales rellenan y guardan y envían después.
 
-* **Envíos**: Formularios enviados que contienen datos proporcionados por el usuario.
+* **Envíos**: formularios enviados que contienen datos proporcionados por el usuario.
 
 Los servicios de metadatos y datos del portal de AEM Forms son compatibles con borradores y envíos. De forma predeterminada, los datos se almacenan en la instancia de publicación, que luego se replica de forma inversa en la instancia de autor configurada para que estén disponibles para la percolación en otras instancias de publicación.
 
-La preocupación con el enfoque preestablecido existente es que almacena todos los datos en las instancias de publicación, incluidos los datos que pueden ser Información de identificación personal (PII).
+La preocupación con el enfoque preestablecido existente es que almacena todos los datos en las instancias de publicación, incluidos los que pueden ser Información de identificación personal (PII).
 
 Además del método predeterminado mencionado anteriormente, también hay una implementación alternativa disponible para insertar directamente los datos del formulario en el procesamiento en lugar de guardarlos localmente. Los clientes que tengan dudas sobre el almacenamiento de datos potencialmente confidenciales en la instancia de publicación pueden elegir la implementación alternativa en la que los datos se envían a un servidor de procesamiento. Dado que el procesamiento se produce en la instancia de autor, normalmente permanece en una zona segura.
 
 >[!NOTE]
 >
->Cuando se utiliza la acción de envío de Forms Portal o se activa la opción Store data in forms portal en forma adaptativa, los datos del formulario se almacenan en AEM repositorio. En un entorno de producción, se recomienda no almacenar datos de formulario en borrador o enviados en AEM repositorio. En su lugar, debe integrar los borradores y el componente de envío con un almacenamiento seguro, como la base de datos empresarial, para almacenar borradores y enviar datos de formularios.
+>Cuando se utiliza la acción de envío del portal de formularios o se activa la opción Almacenar datos en el portal de formularios en formularios adaptables, los datos del formulario se almacenan en el repositorio de AEM. En un entorno de producción, se recomienda no almacenar datos de formularios en borradores o enviados en el repositorio de AEM. En lugar de ello, debe integrar los borradores y el componente de envío con un almacenamiento seguro, como la base de datos empresarial, para almacenar borradores y datos de formularios enviados.
 >
 >Para obtener más información, consulte [Ejemplo para integrar el componente Borradores y envíos con la base de datos](/help/forms/using/integrate-draft-submission-database.md).
 
-## Configuración de los borradores y servicios de envíos del Portal de Forms {#configuring-forms-portal-drafts-and-submissions-services}
+## Configurar los borradores y servicios de envíos del portal de formularios {#configuring-forms-portal-drafts-and-submissions-services}
 
-En la Configuración de la consola web de AEM ( `https://[host]:'port'/system/console/configMgr`), haga clic para abrir **Borrador y configuración de envío del portal de Forms** en modo de edición.
+En la configuración de la consola web de AEM ( `https://[host]:'port'/system/console/configMgr`), haga clic para abrir **Configuración de borradores y envíos del portal de formularios** en modo de edición.
 
 Especifique los valores de las propiedades según sus necesidades, tal como se describe a continuación:
 
@@ -55,25 +55,25 @@ Los datos se replican de forma inversa en la instancia de autor configurada.
    <th>Valor</th>
   </tr>
   <tr>
-   <td>Servicio de datos de borrador del portal de Forms (Identificador del servicio de datos de borrador) (<strong>Draft.data.service</strong>))</td>
+   <td>Servicio de datos de borrador del portal de formularios (Identificador del servicio de datos de borrador (<strong>draft.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servicio de metadatos de borrador del portal de Forms (Identificador del servicio de metadatos de borrador) (<strong>borrador.metadata.service</strong>))</td>
+   <td>Servicio de metadatos de borrador del portal de formularios (Identificador del servicio de metadatos de borrador (<strong>borrador.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servicio de envío de datos del portal de Forms (identificador para el envío de datos) (<strong>submit.data.service</strong>))</td>
+   <td>Servicio de envío de datos del portal de formularios (identificador para el envío de datos (<strong>submit.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servicio de envío de metadatos del portal de Forms (identificador para el envío de metadatos) (<strong>submit.metadata.service</strong>))</td>
+   <td>Servicio de envío de metadatos del portal de formularios (identificador para el envío de metadatos (<strong>submit.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceImpl<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### Servicios listos para usar para almacenar datos en instancias de procesamiento remoto {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
+### Servicios listos para usar para almacenar datos en instancias de procesamiento remotas {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
 
 Los datos se insertan directamente en la instancia remota configurada
 
@@ -84,19 +84,19 @@ Los datos se insertan directamente en la instancia remota configurada
    <th>Valor</th>
   </tr>
   <tr>
-   <td>Servicio de datos de borrador del portal de Forms (Identificador del servicio de datos de borrador) (<strong>Draft.data.service</strong>))</td>
+   <td>Servicio de datos de borrador del portal de formularios (Identificador del servicio de datos de borrador (<strong>draft.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servicio de metadatos de borrador del portal de Forms (Identificador del servicio de metadatos de borrador) (<strong>borrador.metadata.service</strong>))</td>
+   <td>Servicio de metadatos de borrador del portal de formularios (Identificador del servicio de metadatos de borrador (<strong>borrador.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servicio de envío de datos del portal de Forms (identificador para el envío de datos) (<strong>submit.data.service</strong>))</td>
+   <td>Servicio de envío de datos del portal de formularios (identificador para el envío de datos (<strong>submit.data.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceRemoteImpl<br /> </td>
   </tr>
   <tr>
-   <td>Servicio de envío de metadatos del portal de Forms (identificador para el envío de metadatos) (<strong>submit.metadata.service</strong>))</td>
+   <td>Servicio de envío de metadatos del portal de formularios (identificador para el envío de metadatos (<strong>submit.metadata.service</strong>))</td>
    <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceRemoteImpl<br /> </td>
   </tr>
  </tbody>
@@ -104,7 +104,7 @@ Los datos se insertan directamente en la instancia remota configurada
 
 Aparte de la configuración especificada arriba, proporcione información sobre la instancia de procesamiento remoto configurada.
 
-En la Configuración de la consola web de AEM ( `https://[host]:'port'/system/console/configMgr`), haga clic para abrir **Servicio de configuración de AEM DS** en modo de edición. En el cuadro de diálogo Servicio de configuración de AEM DS, proporcione información sobre el procesamiento de la URL del servidor, el nombre de usuario del servidor de procesamiento y la contraseña.
+En la configuración de la consola web de AEM ( `https://[host]:'port'/system/console/configMgr`), haga clic para abrir el **Servicio de configuración de AEM DS** en modo de edición. En el cuadro de diálogo Servicio de configuración de AEM DS, proporcione información sobre el procesamiento de la URL del servidor, el nombre de usuario del servidor de procesamiento y la contraseña.
 
 >[!NOTE]
 >
