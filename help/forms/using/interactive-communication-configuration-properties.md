@@ -1,7 +1,7 @@
 ---
-title: Propiedades de configuración de Interactive Communications
+title: Propiedades de configuración de comunicaciones interactivas
 seo-title: Interactive Communication configuration properties
-description: Editar propiedades de configuración predeterminadas para Interactive Communications
+description: Editar propiedades de configuración predeterminadas para comunicaciones interactivas
 seo-description: Edit default configuration properties for Interactive Communications
 uuid: 4030078f-64a3-40bb-9892-49e22a8da561
 contentOwner: anujkapo
@@ -13,30 +13,30 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
-# Propiedades de configuración de Interactive Communications{#interactive-communications-configuration-properties}
+# Propiedades de configuración de comunicaciones interactivas{#interactive-communications-configuration-properties}
 
-Interactive Communications incluye propiedades que se configuran automáticamente después de instalar el [Complemento de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) paquete. Los autores de Interactive Communication pueden editar estas propiedades de configuración predeterminadas mediante el **Configuración de la consola web de Adobe Experience Manager** página.
+Comunicaciones interactivas incluye propiedades que se configuran automáticamente después de instalar el paquete de [complementos de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md). Los autores de comunicaciones interactivas pueden editar estas propiedades de configuración predeterminadas mediante la página **Configuración de la consola web de Adobe Experience Manager**.
 
-Abra el **Configuración de la consola web de Adobe Experience Manager** con la siguiente dirección URL:
+Abra la página **Configuración de la consola web de Adobe Experience Manager** con la siguiente URL:
 
 `https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
-Las propiedades de configuración incluyen:
+Entre las propiedades de configuración se incluyen:
 
 * [Configuración de fragmentos de documento](#document-fragments-configuration)
-* [Crear configuración de correspondencia](#create-correspondence-configuration)
+* [Configuración de Crear correspondencia](#create-correspondence-configuration)
 * [Configuración del canal web de comunicaciones interactivas y formularios adaptables](#adaptive-form-and-interactive-communication-web-channel-configuration)
 * [Configuración del tema del canal web de comunicaciones interactivas y formularios adaptables](#adaptive-form-and-interactive-communication-web-channel-theme-configuration)
 
 ## Configuración de fragmentos de documento {#document-fragments-configuration}
 
-Toque **Configuración de fragmentos de documento** en el **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de los fragmentos de documento.
+Pulse **Configuración de fragmentos de documento** en la página **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de los fragmentos de documento.
 
 <table>
  <tbody> 
@@ -48,7 +48,7 @@ Toque **Configuración de fragmentos de documento** en el **Configuración de la
   </tr> 
   <tr> 
    <td>Formatos de visualización de datos</td> 
-   <td>Formato de visualización específico de la configuración regional para campos, variables y elementos del modelo de datos de formulario disponibles al crear una comunicación interactiva para canales impresos y web.</td> 
+   <td>El formato de visualización específico de la configuración regional para los campos, las variables y los elementos del modelo de datos de formulario disponibles al crear una comunicación interactiva para los canales impreso y web.</td> 
    <td> 
     <ul> 
      <li>configuración regional = en_US, de_DE, fr_FR y ja_JP</li> 
@@ -57,32 +57,32 @@ Toque **Configuración de fragmentos de documento** en el **Configuración de la
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>—</p> </td> 
+   <td><p>--</p> </td> 
   </tr> 
   <tr> 
    <td>Sangría</td> 
-   <td>La anchura de una unidad de sangría aplicada al texto de la lista de fragmentos de documento.</td> 
-   <td>12,7 mm</td> 
+   <td>La anchura de una unidad de sangría aplicada al texto de los fragmentos de documento de lista.</td> 
+   <td>12,7 mm</td> 
    <td>Número</td> 
   </tr> 
   <tr> 
    <td>Anchura mínima de los números romanos</td> 
-   <td>Ancho mínimo que se aplicará al campo de viñeta o número, al utilizar números romanos en fragmentos de documento de lista. </td> 
-   <td>12,7 mm</td> 
+   <td>La anchura mínima que se aplicará al campo de viñeta o número al utilizar números romanos en fragmentos de documento de lista. </td> 
+   <td>12,7 mm</td> 
    <td>Número</td> 
   </tr> 
   <tr> 
-   <td>Ancho mínimo de número</td> 
-   <td>Ancho mínimo que se aplicará a la viñeta o al campo numérico, al utilizar listas numeradas separadas de números romanos en fragmentos de documentos de lista.</td> 
-   <td>8,0 mm</td> 
+   <td>Anchura mínima de número</td> 
+   <td>La anchura mínima que se aplicará a la viñeta o al campo numérico al utilizar listas numeradas separadas por números que no sean números romanos en fragmentos de documento de lista.</td> 
+   <td>8,0 mm</td> 
    <td>Número</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Crear configuración de correspondencia {#create-correspondence-configuration}
+## Configuración de Crear correspondencia {#create-correspondence-configuration}
 
-Toque **Crear configuración de correspondencia** en el **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de la interfaz de usuario del agente.
+Pulse **Configuración de Crear correspondencia** en la **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de la interfaz de usuario del agente.
 
 <table>
  <tbody> 
@@ -94,19 +94,19 @@ Toque **Crear configuración de correspondencia** en el **Configuración de la c
   </tr> 
   <tr> 
    <td>Mostrar contenido resuelto para editarlo</td> 
-   <td>Seleccione la casilla de verificación para mostrar el contenido resuelto (valores reales en lugar de marcadores de posición) mientras edita el módulo de texto en la interfaz de usuario del agente.</td> 
+   <td>Seleccione la casilla de verificación para mostrar el contenido resuelto (valores reales en lugar de marcadores de posición) mientras edita el módulo de texto de la interfaz de usuario del agente.</td> 
    <td>No seleccionado</td> 
    <td>No aplicable</td> 
   </tr> 
   <tr> 
    <td>Aplicar marca de agua durante la vista previa</td> 
-   <td>Seleccione la casilla de verificación para aplicar una marca de agua al canal de impresión de comunicación interactiva en el modo de vista previa.</td> 
+   <td>Seleccione la casilla de verificación para aplicar una marca de agua al canal de impresión de una comunicación interactiva en el modo de vista previa.</td> 
    <td>No seleccionado</td> 
    <td>No aplicable</td> 
   </tr> 
   <tr> 
-   <td>Habilitar incrustación de fuentes en el PDF</td> 
-   <td><p>Seleccione la casilla de verificación para activar la incrustación de fuentes en los documentos del PDF. Después de seleccionar esta opción, puede incrustar nuevas fuentes después de generar o previsualizar los documentos del PDF mediante la interfaz de usuario del agente. Utilice el canal de impresión de la comunicación interactiva para generar y previsualizar documentos de PDF.</p> <p>La incrustación de fuentes en un documento de PDF resulta útil si una fuente está disponible en un equipo que se utiliza para generar el PDF y no está disponible en el equipo cliente que accede al PDF.</p> <p>Para obtener más información sobre cómo incrustar fuentes, consulte <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizar editor de texto</a>.</p> </td> 
+   <td>Habilitar incrustación de fuentes en PDF</td> 
+   <td><p>Seleccione la casilla de verificación para activar la incrustación de fuentes en los documentos PDF. Después de seleccionar esta opción, puede incrustar nuevas fuentes después de generar o previsualizar los documentos PDF mediante la interfaz de usuario del agente. Utilice el canal de impresión de la comunicación interactiva para generar y previsualizar documentos PDF.</p> <p>La incrustación de fuentes en un documento PDF resulta útil si una fuente está disponible en el equipo que se utiliza para generar el PDF y no está disponible en el equipo cliente que accede a él.</p> <p>Para obtener más información sobre cómo incrustar fuentes, consulte <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizar editor de texto</a>.</p> </td> 
    <td>No seleccionado</td> 
    <td>No aplicable</td> 
   </tr> 
@@ -115,17 +115,17 @@ Toque **Crear configuración de correspondencia** en el **Configuración de la c
 
 ## Configuración del canal web de comunicaciones interactivas y formularios adaptables {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Toque **Configuración del canal web de comunicaciones interactivas y formularios adaptables** en el **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración del canal web de comunicaciones interactivas y Forms adaptable. En la tabla siguiente se describen las propiedades relacionadas con las comunicaciones interactivas:
+Pulse **Configuración del canal web de comunicaciones interactivas y formularios adaptables** en la página **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración del canal web de las comunicaciones interactivas y los formularios adaptables. En la siguiente tabla se describen las propiedades relacionadas con Interactive Communications:
 
 | Propiedad | Descripción | Predeterminado | Valores aceptables |
 |---|---|---|---|
-| Mostrar marcador de posición | Seleccione la casilla de verificación para activar la visualización de marcadores de posición para los campos incluidos en formularios adaptables y comunicaciones interactivas. | Seleccionado | No aplicable |
-| Máximo de entradas de caché | Establezca el número máximo de formularios adaptables y comunicaciones interactivas que se pueden recuperar mediante la memoria caché. | 100 | Número |
-| Convertir el nombre de archivo en único | Seleccione la casilla de verificación para incluir nombres únicos para los archivos como archivos adjuntos en Adaptive Forms y Comunicaciones interactivas. | No seleccionado | No aplicable |
+| Mostrar marcador de posición | Seleccione la casilla de verificación para activar la visualización de los marcadores de posición de los campos incluidos en los formularios adaptables y las comunicaciones interactivas. | Seleccionado | No aplicable |
+| Número máximo de entradas de caché | Establezca el número máximo de formularios adaptables y comunicaciones interactivas que se pueden recuperar mediante la memoria caché. | 100 | Número |
+| Convertir el nombre de archivo en único | Seleccione la casilla de verificación para asignar un nombre único a los archivos agregados como archivos adjuntos en los formularios adaptables y las comunicaciones interactivas. | No seleccionado | No aplicable |
 
 ## Configuración del tema del canal web de comunicaciones interactivas y formularios adaptables {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Toque **Configuración del tema del canal web de comunicaciones interactivas y formularios adaptables** en el **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de los temas del canal web Adaptive Forms e Interactive Communications.
+Pulse **Configuración del tema del canal web de comunicaciones interactivas y formularios adaptables** en la página **Configuración de la consola web de Adobe Experience Manager** para ver las propiedades de configuración de los temas del canal web de las comunicaciones interactivas y los formularios adaptables.
 
 <table>
  <tbody> 
@@ -137,8 +137,8 @@ Toque **Configuración del tema del canal web de comunicaciones interactivas y f
   </tr> 
   <tr> 
    <td>Nombre de la lista de fuentes</td> 
-   <td>Lista de fuentes disponibles para usar durante la creación de Forms adaptable y comunicaciones interactivas.</td> 
-   <td><p>Georgia</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>Impacto</p> <p>Palatino Linotype</p> </td> 
+   <td>La lista de fuentes disponibles para usar durante la creación de los formularios adaptables y las comunicaciones interactivas.</td> 
+   <td><p>Georgia</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>Impacto</p> <p>Palatino Linotype</p> </td> 
    <td>Todas las fuentes válidas del servidor de Adobe</td> 
   </tr> 
  </tbody> 
