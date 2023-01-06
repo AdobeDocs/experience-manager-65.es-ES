@@ -1,7 +1,7 @@
 ---
-title: Creación de temas de formularios adaptables personalizados
+title: Crear temáticas de formularios adaptables personalizadas
 seo-title: Creating custom adaptive form themes
-description: Un tema de formulario adaptable es una AEM biblioteca de cliente que se utiliza para definir los estilos (aspecto y presentación) de un formulario adaptable. Aprenda a crear temas de formularios adaptables personalizados.
+description: Una temática de formulario adaptable es una biblioteca de cliente de AEM que se utiliza para definir los estilos (aspecto y presentación) de un formulario adaptable. Aprenda a crear temáticas de formularios adaptables personalizadas.
 seo-description: An adaptive form theme is an AEM client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
 uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
 content-type: reference
@@ -10,64 +10,64 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '788'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Creación de temas de formularios adaptables personalizados {#creating-custom-adaptive-form-themes}
+# Crear temáticas de formularios adaptables personalizadas {#creating-custom-adaptive-form-themes}
 
 >[!CAUTION]
 >
->AEM Forms proporciona la variable [Editor de temas](/help/forms/using/themes.md) capacidad para crear y modificar formularios adaptables [temáticas](/help/forms/using/themes.md). Realice los pasos enumerados en este artículo, solo si ha actualizado desde una versión que no tiene [Editor de temas](/help/forms/using/themes.md) y ya tiene una inversión en temas creados usando menos archivos CSS (método editor pre-tema).
+>AEM Forms proporciona la capacidad [Editor de temáticas](/help/forms/using/themes.md) para crear y modificar [temáticas](/help/forms/using/themes.md) de formularios adaptables. Realice los pasos enumerados en este artículo, solo si ha actualizado desde una versión que no tiene [Editor de temáticas](/help/forms/using/themes.md) y ya tiene creada una inversión en temáticas con menos archivos CSS (método editor pre-tema).
 
 ## Requisitos previos {#prerequisites}
 
-* Conocimiento del marco LESS (CSS más inteligente)
-* Creación de una biblioteca de cliente en Adobe Experience Manager
-* [Creación de una plantilla de formulario adaptable](/help/forms/using/custom-adaptive-forms-templates.md) para utilizar el tema que crea
+* Conocimiento del marco de trabajo LESS (CSS más inteligente)
+* Crear una biblioteca de cliente en Adobe Experience Manager
+* [Crear una plantilla de formulario adaptable](/help/forms/using/custom-adaptive-forms-templates.md) para utilizar la temática que cree
 
-## Tema de formulario adaptable {#adaptive-form-theme}
+## Temática del formulario adaptable {#adaptive-form-theme}
 
-Un **tema de formulario adaptable** es una AEM biblioteca de cliente que se utiliza para definir los estilos (aspecto) de un formulario adaptable.
+Una **temática de formulario adaptable** es una biblioteca de cliente de AEM que se utiliza para definir los estilos (aspecto y presentación) de un formulario adaptable.
 
-Puede crear un **plantilla adaptable** y aplique el tema a la plantilla. A continuación, utilice esta plantilla personalizada para crear un **formulario adaptable**.
+Puede crear una **plantilla adaptable** y aplicar la temática a la plantilla. A continuación, utilice esta plantilla personalizada para crear un **formulario adaptable**.
 
 ![Formulario adaptable y biblioteca de cliente](assets/hierarchy.png)
 
-## Creación de un tema de formulario adaptable {#to-create-an-adaptive-form-theme}
+## Crear una temática de formulario adaptable {#to-create-an-adaptive-form-theme}
 
 >[!NOTE]
 >
->El siguiente procedimiento se describe con nombres de ejemplo para objetos AEM como nodos, propiedades y carpetas.
+>El siguiente procedimiento se describe con nombres de ejemplo para objetos de AEM como nodos, propiedades y carpetas.
 >
->Si sigue estos pasos utilizando los nombres, la plantilla resultante debería aparecer de forma similar a la siguiente instantánea:
+>Si sigue estos pasos y usa los nombres, la plantilla resultante debería aparecer de forma similar a la siguiente captura de pantalla:
 
-![Instantánea del formulario adaptable con tema de bosque](assets/thumbnail.png)
-**Figura:** *Ejemplo de tema de bosque*
+![Captura de pantalla del formulario adaptable con la temática Forest](assets/thumbnail.png)
+**Figura:** *Ejemplo de la temática Forest*
 
-1. Crear un nodo de tipo `cq:ClientLibraryFolder` en el `/apps`nodo .
+1. Crear un nodo de tipo `cq:ClientLibraryFolder` en el nodo `/apps`.
 
    Por ejemplo, cree el siguiente nodo:
 
    `/apps/myAfThemes/forestTheme`
 
-1. Agregar una propiedad de cadena de varios valores `categories` al nodo y establezca su valor apropiadamente.
+1. Agregue una propiedad `categories` de cadena de varios valores al nodo y establezca su valor apropiadamente.
 
    Por ejemplo, establezca la propiedad en: `af.theme.forest`.
 
-   ![Instantánea del repositorio CRX](assets/3-2.png)
+   ![Captura de pantalla del repositorio CRX](assets/3-2.png)
 
-1. Añadir dos carpetas, `less` y `css`y un archivo `css.txt` al nodo creado en el paso 1:
+1. Agregue dos carpetas, `less` y `css` y un archivo `css.txt` al nodo creado en el paso 1:
 
-   * `less` carpeta: Contiene el `less` archivos de variable en los que define `less` variables y `less mixins` que se utilizan para administrar los estilos .css.
+   * `less` carpeta: Contiene los archivos de la variable `less` en los que define las variables `less` y `less mixins` que se utilizan para administrar los estilos .css.
 
-      Esta carpeta consta de `less` archivos de variables, `less` archivos de mezcla, `less` archivos que definen estilos utilizando mezclas y variables. Y todos estos menos archivos se importan en estilos.less.
+      Esta carpeta consta de archivos de variables `less`, `less` archivos de mezcla, `less` archivos que definen estilos mediante mezclas y variables. Y todos estos archivos se importan en styles.less.
 
-   * `css`carpeta: Contiene los archivos .css en los que se definen los estilos estáticos que se utilizarán en el tema.
+   * `css` carpeta: Contiene los archivos .css en los que se definen los estilos estáticos que se utilizarán en la temática.
 
-   **Menos archivos de variables**: Estos son los archivos, donde se definen o anulan las variables que se utilizan para definir estilos CSS.
+   **Archivos de variables Less**: estos son los archivos donde se definen o anulan las variables que se utilizan para definir estilos CSS.
 
    Los formularios adaptables proporcionan variables OOTB definidas en los siguientes archivos .less:
 
@@ -78,13 +78,13 @@ Puede crear un **plantilla adaptable** y aplique el tema a la plantilla. A conti
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   Puede utilizar las menos variables que se proporcionan con los formularios adaptables, puede anular estas variables o crear menos variables nuevas.
+   Puede utilizar las variables Less que se proporcionan con los formularios adaptables, puede anular estas variables o crear nuevas.
 
    >[!NOTE]
    >
-   >Al importar los archivos del preprocesador menor, en la instrucción import especifique la ruta relativa de los archivos.
+   >Al importar los archivos del preprocesador Less, en la instrucción import, especifique la ruta relativa de los archivos.
 
-   Variables de anulación de muestra:
+   Variables de anulación de ejemplo:
 
    ```css
    @button-background-color: rgb(19, 102, 44);
@@ -94,13 +94,13 @@ Puede crear un **plantilla adaptable** y aplique el tema a la plantilla. A conti
    @button-font-color: #ffffff;
    ```
 
-   Para anular la variable `less`variables:
+   Para anular la variable `less`:
 
-   1. Importar variables de formulario adaptable predeterminadas:
+   1. Importe variables de formulario adaptable predeterminadas:
 
       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
-   1. A continuación, importe el archivo menor que incluya variables anuladas.
+   1. A continuación, importe el archivo Less que incluya variables anuladas.
 
    Ejemplo de nuevas definiciones de variables:
 
@@ -109,7 +109,7 @@ Puede crear un **plantilla adaptable** y aplique el tema a la plantilla. A conti
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **Menos archivos mixtos:** Puede definir las funciones que aceptan variables como argumentos. El resultado de estas funciones son los estilos resultantes. Utilice estas mezclas en diferentes estilos para evitar la repetición de estilos CSS.
+   **Archivos de mezcla Less:** puede definir las funciones que aceptan variables como argumentos. El resultado de estas funciones son los estilos resultantes. Utilice estas mezclas en diferentes estilos para evitar la repetición de estilos CSS.
 
    Los formularios adaptables proporcionan mezclas de OOTB definidas en:
 
@@ -135,9 +135,9 @@ Puede crear un **plantilla adaptable** y aplique el tema a la plantilla. A conti
    }
    ```
 
-   **Archivo Styles.less:** Utilice este archivo para incluir todos los menos archivos (variables, mezclas, estilos) que necesite utilizar en la biblioteca cliente.
+   **Archivo Styles.less:** utilice este archivo para incluir todos los archivos Less (variables, mezclas, estilos) que necesite utilizar en la biblioteca cliente.
 
-   En el siguiente ejemplo `styles.less` , la instrucción import se puede colocar en cualquier orden.
+   En el siguiente archivo de ejemplo `styles.less`, la instrucción import se puede colocar en cualquier orden.
 
    Las instrucciones para importar los siguientes archivos .less son obligatorias:
 
@@ -174,7 +174,7 @@ Puede crear un **plantilla adaptable** y aplique el tema a la plantilla. A conti
    }
    ```
 
-   La variable `css.txt` contiene las rutas de los archivos .css que se van a descargar para la biblioteca.
+   El `css.txt` contiene las rutas de los archivos .css que se van a descargar para la biblioteca.
 
    Por ejemplo:
 
@@ -196,41 +196,41 @@ Puede crear un **plantilla adaptable** y aplique el tema a la plantilla. A conti
    >
    >El archivo style.less no es obligatorio. Esto significa que no es necesario crear este archivo si no se ha definido ningún estilo, variable o mezcla personalizado.
    >
-   >Sin embargo, si no crea un archivo style.less, en el archivo css.txt debe descomentar la siguiente línea:
+   >Sin embargo, si no crea un archivo style.less, en el archivo css.txt debe quitar la siguiente línea:
    >
    >**`#base=less`**
    >
-   >Y comente la siguiente línea:
+   >E incluir la siguiente línea:
    >
    >**`styles.less`**
 
-## Uso de un tema en un formulario adaptable {#to-use-a-theme-in-an-adaptive-form}
+## Usar una temática en un formulario adaptable {#to-use-a-theme-in-an-adaptive-form}
 
-Después de crear un tema de formulario adaptable, realice los siguientes pasos para utilizar este tema de forma adaptativa:
+Después de crear una temática de formulario adaptable, realice los siguientes pasos para utilizarlo de forma adaptativa:
 
-1. Para incluir el tema creado en [para crear un tema de formulario adaptable](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) , cree una página personalizada de tipo `cq:Component`.
+1. Para incluir la temática creada en [para crear una temática de formulario adaptable](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p), cree una página personalizada de tipo `cq:Component`.
 
    Por ejemplo, `/apps/myAfCustomizations/myAfPages/forestPage`. 
 
-   1. Agregue un `sling:resourceSuperType` y establezca su valor como `fd/af/components/page/base`.
+   1. Agregue una propiedad `sling:resourceSuperType` y establezca su valor como `fd/af/components/page/base`.
 
-      ![Instantánea del repositorio CRX](assets/1-2.png)
+      ![Captura de pantalla del repositorio CRX](assets/1-2.png)
 
-   1. Para utilizar un tema en la página, debe agregar un archivo de anulación library.jsp al nodo .
+   1. Para utilizar una temática en la página, debe agregar un archivo de anulación library.jsp al nodo.
 
-      A continuación, importe el tema creado en la sección Para crear un tema de formulario adaptable de este artículo.
+      A continuación, importe la temática creada en la sección Crear una temática de formulario adaptable de este artículo.
 
-      El siguiente fragmento de código de ejemplo importa el `af.theme.forest` tema.
+      El siguiente fragmento de código de ejemplo importa la temática `af.theme.forest`.
 
       ```jsp
       <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
       <cq:includeClientLib categories="af.theme.forest"/>
       ```
 
-   1. **Opcional**: En la página personalizada, reemplace header.jsp, footer.jsp y body.jsp, según sea necesario.
+   1. **Opcional**: en la página personalizada, reemplace header.jsp, footer.jsp y body.jsp, según sea necesario.
 
 1. Cree una plantilla personalizada (por ejemplo: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) cuyo jcr:content apunta a la página personalizada creada en el paso anterior (por ejemplo: `myAfCustomizations/myAfPages/forestPage)`.
 
-   ![Instantánea del repositorio CRX](assets/2-1.png)
+   ![Captura de pantalla del repositorio CRX](assets/2-1.png)
 
-1. Cree un formulario adaptable utilizando la plantilla creada en el paso anterior. El aspecto del formulario adaptable se define mediante el tema creado en la sección Creación de un tema del formulario adaptable de este artículo.
+1. Crear un formulario adaptable mediante la plantilla creada en el paso anterior. El aspecto del formulario adaptable se define mediante la temática creada en la sección Crear una temática del formulario adaptable de este artículo.
