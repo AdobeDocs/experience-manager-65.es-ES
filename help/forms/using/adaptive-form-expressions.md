@@ -1,7 +1,7 @@
 ---
 title: Expresiones de formularios adaptables
 seo-title: Adaptive Form Expressions
-description: Utilice expresiones de formularios adaptables para agregar validación automática, cálculo y activar o desactivar la visibilidad de una sección.
+description: Utilice expresiones de formularios adaptables para agregar validación automática, cálculo y habilitaro deshabilitar la visibilidad de una sección.
 seo-description: Use adaptive forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
 uuid: c274dce5-8b87-472f-bff5-53b246fa6584
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,17 +11,17 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2746'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Expresiones de formularios adaptables{#adaptive-form-expressions}
 
-Los formularios adaptables proporcionan una experiencia de cumplimentación de formularios optimizada y simplificada para los usuarios finales con funciones de secuencias de comandos dinámicas. Permiten escribir expresiones para agregar varios comportamientos, como mostrar u ocultar campos y paneles dinámicos. También permiten agregar campos calculados, crear campos de solo lectura, agregar lógica de validación y mucho más. El comportamiento dinámico se basa en los datos introducidos por el usuario o rellenados previamente.
+Los formularios adaptables ofrecen una experiencia de cumplimentación de formularios optimizada y simplificada para los usuarios finales con funciones de scripts dinámicos. Permiten escribir expresiones para agregar varios comportamientos, como mostrar u ocultar campos y paneles dinámicos. También permiten agregar campos calculados, crear campos de solo lectura, agregar lógica de validación y mucho más. El comportamiento dinámico se basa en los datos introducidos por el usuario o rellenados previamente.
 
-JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones de JavaScript válidas y utilizan API de modelos de secuencias de comandos de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener la lista completa de clases, eventos, objetos y API públicas de formularios adaptables, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/es/experience-manager/6-5/forms/javascript-api/index.html).
+JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de scripts de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener la lista completa de clases, eventos, objetos y API públicas de los formularios adaptables, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/es/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Prácticas recomendadas para escribir expresiones {#best-practices-for-writing-expressions}
 
@@ -31,12 +31,12 @@ JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las
 
 ## Prácticas recomendadas para expresiones que implican un panel de repetición {#best-practices-for-expressions-involving-repeating-panel}
 
-Los paneles de repetición son instancias de un panel que se agregan o eliminan de manera dinámica mediante scripts de API o datos rellenados previamente. Para obtener información detallada sobre el uso de un panel repetitivo, consulte [creación de formularios con secciones repetibles](/help/forms/using/creating-forms-repeatable-sections.md).
+Los paneles de repetición son instancias de un panel que se agregan o quitan de manera dinámica mediante scripts de API o datos rellenados previamente. Para obtener información detallada sobre el uso de un panel repetitivo, consulte [crear formularios con secciones repetibles](/help/forms/using/creating-forms-repeatable-sections.md).
 
 * Para crear un panel de repetición, en el cuadro de diálogo del panel, abra la configuración y establezca el valor del campo de recuento máximo en más de uno.
 * El valor de recuento mínimo de la configuración de repetición del panel puede ser uno o más, pero no puede ser superior al valor del recuento máximo.
 * Cuando una expresión haga referencia a un campo de panel de repetición, los nombres de campo de la expresión se resolverán en el elemento de repetición más cercano.
-* Los formularios adaptables proporcionan algunas funciones especiales para simplificar el cálculo de paneles repetibles, como suma, recuento, mínimo, máximo, filtro y muchas más. Para obtener la lista completa de funciones, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/es/aem-forms/6/javascript-api/af.html)
+* Los formularios adaptables proporcionan algunas funciones especiales para simplificar el cálculo de paneles repetibles, como suma, recuento, mínimo, máximo, filtrar y mucho más. Para obtener la lista completa de funciones, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/es/aem-forms/6/javascript-api/af.html)
 * Las API para manipular instancias de panel de repetición son las siguientes:
 
    * Para agregar una instancia de panel: `panel1.instanceManager.addInstance()`
@@ -46,7 +46,7 @@ Los paneles de repetición son instancias de un panel que se agregan o eliminan 
 
 ## Tipos de expresión {#expression-types}
 
-En los formularios adaptables, puede escribir expresiones para añadir comportamientos como mostrar u ocultar campos y paneles dinámicos. También puede escribir expresiones para agregar campos calculados, convertir campos en de solo lectura, lógica de validación y mucho más. Los formularios adaptables admiten las expresiones siguientes:
+En los formularios adaptables, puede escribir expresiones para agregar comportamientos como mostrar/ocultar campos y paneles dinámicos. También puede escribir expresiones para agregar campos calculados, convertir campos en de solo lectura, lógica de validación y mucho más. Los formularios adaptables admiten las siguientes expresiones:
 
 * **[Expresiones de acceso](#access-expression-enablement-expression)**: para habilitar o deshabilitar un campo.
 * **[Calcular expresiones](#calculate-expression)**: para calcular automáticamente el valor de un campo.
@@ -71,7 +71,7 @@ Puede utilizar la expresión “access” para habilitar o deshabilitar un campo
 
 ### Expresión “calculate” {#calculate-expression}
 
-La expresión “calculate” se utiliza para calcular automáticamente el valor de un campo mediante una expresión. Normalmente, esta expresión utiliza la propiedad “value” de otros campos. Por ejemplo, `field2.value + field3.value`. Cada vez que el valor de `field2`o `field3`cambia, la expresión se vuelve a activar y el valor se vuelve a calcular.
+La expresión “calculate” se utiliza para calcular automáticamente el valor de un campo mediante una expresión. Normalmente, esta expresión utiliza la propiedad “value” de otros campos. Por ejemplo, `field2.value + field3.value`. Cada vez que el valor de `field2` o `field3`cambia, la expresión se vuelve a habilitar y el valor se vuelve a calcular.
 
 **Se aplica a**: campos
 
@@ -92,11 +92,11 @@ La expresión “click” administra las acciones realizadas al hacer clic con u
 
 ### Script de inicialización {#initialization-script}
 
-La secuencia de comandos de inicialización se activa cuando se inicializa un formulario adaptable. Según los escenarios, el script de inicialización se comporta de la siguiente manera:
+El script de inicialización se activa cuando se inicializa un formulario adaptable. Según los escenarios, el script de inicialización se comporta de la siguiente manera:
 
-* Cuando se procesa un formulario adaptable sin un relleno previo de datos, la secuencia de comandos de inicialización se ejecuta después de que se inicialice el formulario.
-* Cuando se procesa un formulario adaptable con un relleno previo de datos, la secuencia de comandos se ejecuta una vez finalizada la operación de rellenado previo.
-* Cuando se activa la revalidación del lado del servidor de un formulario adaptable, se ejecuta la secuencia de comandos de inicialización.
+* Cuando se procesa un formulario adaptable sin un relleno previo de datos, el script de inicialización se ejecuta después de que se inicialice el formulario.
+* Cuando se procesa un formulario adaptable con un relleno previo de datos, el script se ejecuta una vez finalizada la operación de rellenado previo.
+* Cuando se activa la revalidación del lado del servidor de un formulario adaptable, se ejecuta el script de inicialización.
 
 **Se aplica a:** campos y panel
 
@@ -129,11 +129,11 @@ La expresión “summary” se utiliza generalmente para repetir elementos secun
 
 **Tipo de devolución:** La expresión devuelve un valor String que se convierte en el título del acordeón.
 
-**Ejemplo:** &quot;Número de cuenta : &quot; + textbox1.value
+**Ejemplo:** “Número de cuenta: ” + textbox1.value
 
 ### Expresión “validate” {#validate-expression}
 
-La expresión “validate” se utiliza para validar los campos mediante la expresión dada. Normalmente, estas expresiones utilizan expresiones regulares junto con el valor del campo para validar un campo. La expresión se vuelve a activar y el estado de validación del campo se vuelve a calcular ante cualquier cambio en el valor de un campo.
+La expresión “validate” se utiliza para validar los campos mediante la expresión dada. Normalmente, estas expresiones utilizan expresiones regulares junto con el valor del campo para validar un campo. La expresión se vuelve a habilitar y el estado de validación del campo se vuelve a calcular ante cualquier cambio en el valor de un campo.
 
 **Se aplica a**: campos
 
@@ -195,11 +195,11 @@ Los métodos para agregar validaciones en un campo son los siguientes:
 
 ### Requerido {#required}
 
-Para hacer que un componente sea obligatorio, en el diálogo **Editar** del componente, puede seleccionar la opción **Título y texto > Requerido**. También puede agregar el **mensaje obligatorio** (opcional). .
+Para hacer que un componente sea obligatorio, en el diálogo **Editar** del componente, puede seleccionar la opción **Título y texto > Requerido**. También puede agregar el **mensaje necesario** requerido (opcional)
 
 ### motivos de validación {#validation-patterns}
 
-Hay varios motivos de validación disponibles para un campo. Para seleccionar un motivo de validación, en el diálogo **Editar** del componente, busque la sección **motivos** y seleccione **motivos**. Puede crear su propio motivo de validación personalizado en un cuadro de texto del **motivo**. Se devuelve el estado de validación **True** solo si los datos rellenados cumplen el motivo de validación, de lo contrario, se devuelve **False**. Para escribir su propio patrón de validación personalizado, consulte [Compatibilidad con cláusula de imagen para formularios HTML5](/help/forms/using/picture-clause-support.md).
+Hay varios motivos de validación disponibles para un campo. Para seleccionar un motivo de validación, en el diálogo **Editar** del componente, busque la sección **motivos** y seleccione **motivos**. Puede crear su propio motivo de validación personalizado en un cuadro de texto del **motivo**. Se devuelve el estado de validación **True** solo si los datos rellenados cumplen el motivo de validación, de lo contrario, se devuelve **False**. Para escribir su propio motivo de validación personalizado, consulte [Compatibilidad con la cláusula de imagen para formularios HTML5](/help/forms/using/picture-clause-support.md).
 
 ### Expresiones de validación {#validation-expressions}
 
@@ -213,7 +213,7 @@ El formato de visualización puede utilizarse para mostrar los datos en distinto
 
 ### GuideBridge: API y eventos {#guidebridge-apis-and-events}
 
-GuideBridge es una colección de API que se pueden utilizar para interactuar con formularios adaptables en el modelo de memoria en un explorador. Para obtener una introducción detallada a la API de Guide Bridge, los métodos de clase y los eventos expuestos, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/es/aem-forms/6/javascript-api/).
+GuideBridge es una colección de API que se pueden usar para interactuar con formularios adaptables en el modelo de memoria en un explorador. Para obtener una introducción detallada a la API de Guide Bridge, los métodos de clase y los eventos expuestos, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/es/aem-forms/6/javascript-api/).
 
 >[!NOTE]
 >
@@ -221,17 +221,17 @@ GuideBridge es una colección de API que se pueden utilizar para interactuar con
 
 #### Uso de GuideBridge en varias expresiones {#guidebridge-usage-in-various-expressions}
 
-* Para restablecer los campos del formulario, puede activar la `guideBridge.reset()` API en la expresión “click” de un botón. Del mismo modo, existe una API de envío que puede llamarse expresión “click” `guideBridge.submit()`**.**
+* Para restablecer los campos del formulario, puede habilitar la `guideBridge.reset()` API en la expresión “click” de un botón. Del mismo modo, existe una API de envío que puede llamarse expresión “click” `guideBridge.submit()`**.**
 
-* Puede usar la `setFocus()` API establecer el enfoque en varios campos o paneles (para el panel, el enfoque se establecerá en el primer campo automáticamente). `setFocus()`proporciona una amplia gama de opciones para navegar, como la navegación entre paneles, la travesía anterior o siguiente, la configuración del enfoque en un campo concreto y mucho más. Por ejemplo, para desplazarse al siguiente panel, puede utilizar lo siguiente: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
+* Puede usar la `setFocus()` API establecer el enfoque en varios campos o paneles (para el panel, el enfoque se establecerá en el primer campo automáticamente). `setFocus()` proporciona una amplia gama de opciones para navegar, como la navegación entre paneles, la travesía anterior o siguiente, la configuración del enfoque en un campo concreto y mucho más. Por ejemplo, para desplazarse al siguiente panel, puede utilizar lo siguiente: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
 * Para validar un formulario adaptable o sus paneles específicos, utilice `guideBridge.validate(errorList, somExpression).`
 
 #### Utilizar GuideBridge fuera de las expresiones  {#using-guidebridge-outside-expressions-nbsp}
 
-También puede utilizar las API de GuideBridge fuera de las expresiones. Por ejemplo, puede utilizar la API de GuideBridge para establecer la comunicación entre el HTML de página que aloja el formulario adaptable y el Modelo de formulario. Además, puede establecer el valor que proviene del elemento principal de Iframe que aloja el formulario.
+También puede utilizar las API de GuideBridge fuera de las expresiones. Por ejemplo, puede utilizar la API de GuideBridge para establecer la comunicación entre el HTML que aloja el formulario adaptable y el modelo de formulario. Además, puede establecer el valor que proviene del elemento principal de Iframe que aloja el formulario.
 
-Para utilizar la API de GuideBridge para el ejemplo mencionado anteriormente, capture una instancia de GuideBridge. Para capturar la instancia, escuche `bridgeInitializeStart`evento de un objeto`window`:
+Para utilizar la API de GuideBridge para el ejemplo mencionado anteriormente, capture una instancia de GuideBridge. Para capturar la instancia, escuche `bridgeInitializeStart` evento de un objeto`window`:
 
 ```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
@@ -255,11 +255,11 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 >
 >En AEM, es recomendable escribir código en clientLib e incluirlo en su página (header.jsp o footer.jsp de la página)
 
-Para utilizar GuideBridge después de inicializar el formulario (el evento `bridgeInitializeComplete`es Dispatcher), obtenga la instancia de GuideBridge mediante `window.guideBridge`. Puede comprobar el estado de inicialización de GuideBridge mediante la API `guideBride.isConnected`.
+Para utilizar GuideBridge después de inicializar el formulario (el evento `bridgeInitializeComplete` es Dispatcher), obtenga la instancia de GuideBridge mediante `window.guideBridge`. Puede comprobar el estado de inicialización de GuideBridge mediante la API `guideBride.isConnected`.
 
 #### Eventos de GuideBridge {#guidebridge-events}
 
-GuideBridge también proporciona ciertos eventos para scripts externos en la página de alojamiento. Los scripts externos pueden escuchar estos eventos y realizar diversas operaciones. Por ejemplo, cada vez que cambia el nombre de usuario en un formulario, también cambia el nombre que se muestra en el encabezado de la página. Para obtener más información sobre estos eventos, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge también proporciona ciertos eventos para scripts externos en la página de alojamiento. Los scripts externos pueden escuchar estos eventos y realizar diversas operaciones. Por ejemplo, cada vez que cambia el nombre de usuario en un formulario, también cambia el nombre que se muestra en el encabezado de la página. Para obtener más información sobre estos eventos, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/es/aem-forms/6/javascript-api/GuideBridge.html).
 
 Utilice el siguiente código para registrar los controladores:
 
@@ -273,15 +273,15 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 ### Crear motivos personalizados para un campo {#creating-custom-patterns-for-a-field}
 
-Como se ha mencionado anteriormente, los formularios adaptables permiten al autor proporcionar patrones para los formatos de validación o visualización. Además de utilizar patrones predeterminados, puede definir patrones personalizados reutilizables para un componente de formulario adaptable. Por ejemplo, puede definir un campo de texto o un campo numérico. Una vez definidos, se pueden utilizar estos motivos en todos los formularios para un tipo de componente específico. Por ejemplo, puede crear un patrón personalizado para un campo de texto y utilizarlo en los campos de texto de sus formularios adaptables. Puede seleccionar el motivo personalizado si accede a la sección motivo del cuadro de diálogo Editar de un componente. Para obtener más información sobre la definición o el formato del patrón, consulte [Compatibilidad con cláusula de imagen para formularios HTML5](/help/forms/using/picture-clause-support.md).
+Como se ha mencionado anteriormente, los formularios adaptables permiten al autor proporcionar patrones para los formatos de validación o visualización. Además de utilizar motivos innovadores, puede definir motivos personalizados reutilizables para un componente de un formulario adaptable. Por ejemplo, puede definir un campo de texto o un campo numérico. Una vez definidos, se pueden utilizar estos motivos en todos los formularios para un tipo de componente específico. Por ejemplo, puede crear un motivo personalizado para un campo de texto y utilizarlo en los campos de texto de su formulario adaptable. Puede seleccionar el motivo personalizado si accede a la sección motivo del cuadro de diálogo Editar de un componente. Para obtener más información sobre la definición o el formato del motivo, consulte [Compatibilidad con la cláusula de imagen para formularios HTML5](/help/forms/using/picture-clause-support.md).
 
 Realice los siguientes pasos para crear un motivo personalizado para un tipo de campo específico y reutilizarlo para otros campos del mismo tipo:
 
-1. Navegue hasta CRXDE Lite de la instancia de creación.
+1. Navegue hasta CRXDE Lite de la instancia de autor.
 1. Cree una carpeta para mantener los motivos personalizados. En el directorio /apps, cree un nodo de tipo sling:folder. Por ejemplo, cree un nodo con el nombre `customPatterns`. Bajo este nodo, cree otro nodo de tipo `nt:unstructed` y asígnele un nombre `textboxpatterns`. Este nodo contiene los distintos motivos personalizados que desea agregar.
-1. Abra la pestaña Propiedades del nodo que ha creado. Por ejemplo, abra la pestaña Propiedades de `textboxpatterns`. Agregue la propiedad `guideComponentType`a este nodo y establezca su valor en *fd/af/components/formatter/guideTextBox*.
+1. Abra la pestaña Propiedades del nodo que ha creado. Por ejemplo, abra la pestaña Propiedades de `textboxpatterns`. Agregue la propiedad `guideComponentType` a este nodo y establezca su valor en *fd/af/components/formatter/guideTextBox*.
 
-1. El valor de esta propiedad varía según el campo para el que desee definir los motivos. Para el campo numérico, el valor de la propiedad `guideComponentType`es *fd/af/components/formatter/guideNumericBox*. El valor del campo Marcador de datos es *fd/af/components/formatter/guideDatepicker*.
+1. El valor de esta propiedad varía según el campo para el que desee definir los motivos. Para el campo numérico, el valor de la propiedad `guideComponentType` es *fd/af/components/formatter/guideNumericBox*. El valor del campo Marcador de datos es *fd/af/components/formatter/guideDatepicker*.
 ``
 1. Puede agregar un motivo personalizado al asignar una propiedad al `textboxpatterns` nodo. Agregue una propiedad con un nombre (por ejemplo `pattern1`) y establezca su valor en el motivo que desee agregar. Por ejemplo, agregue una propiedad `pattern1` con el valor Fax=text{99-999-9999999}. El motivo estará disponible para todos los cuadros de texto que utilice en formularios adaptables.
 
