@@ -1,7 +1,7 @@
 ---
 title: Flujo de trabajo centrado en Forms en OSGi
 seo-title: Rapidly build adaptive forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
-description: Utilice AEM Forms Workflow para automatizar y construir rápidamente revisiones y aprobaciones, para iniciar document services
+description: Utilice el flujo de trabajo de AEM Forms para automatizar y generar rápidamente revisiones y aprobaciones, para iniciar servicios de documento
 seo-description: Use AEM Forms Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
@@ -10,9 +10,9 @@ discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3681'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -26,15 +26,15 @@ Junto con los flujos de trabajo de revisión y aprobación para audiencias inter
 
 ## Introducción al flujo de trabajo centrado en Forms en OSGi {#introduction-to-forms-centric-workflow-on-osgi}
 
-Puede utilizar AEM Flujos de trabajo para crear rápidamente flujos de trabajo basados en formularios adaptables. Estos flujos de trabajo se pueden utilizar para revisiones y aprobaciones, flujos de procesos empresariales, para iniciar servicios de documento, integrarse con el flujo de trabajo de firmas de Adobe Sign y operaciones similares. Por ejemplo, en el procesamiento de la solicitud de tarjeta de crédito, el empleado deja los flujos de trabajo de aprobación y guarda un formulario como documento de PDF. Además, estos flujos de trabajo se pueden utilizar dentro de una organización o entre firewall de redes.
+Puede utilizar flujos de trabajo de AEM para generar rápidamente flujos de trabajo adaptables basados en Forms. Estos flujos de trabajo se pueden utilizar para revisiones y aprobaciones, flujos de procesos empresariales, para iniciar servicios de documento, integrarse con el flujo de trabajo de firmas de Adobe Sign y operaciones similares. Por ejemplo, en el procesamiento de la solicitud de tarjeta de crédito, el empleado deja los flujos de trabajo de aprobación y guarda un formulario como documento de PDF. Además, estos flujos de trabajo se pueden utilizar dentro de una organización o entre firewall de redes.
 
 Con el flujo de trabajo centrado en formularios en OSGi, puede generar e implementar rápidamente flujos de trabajo para diversas tareas en la pila OSGi, sin tener que instalar la funcionalidad de administración de procesos completa en la pila JEE. El desarrollo y la administración de flujos de trabajo utilizan las funciones conocidas de los flujo de trabajo de AEM y la bandeja de entrada AEM. Los flujos de trabajo forman la base de la automatización de los procesos empresariales en el mundo real que abarcan varios sistemas de software, redes, departamentos e incluso organizaciones.
 
-Una vez configurados, estos flujos de trabajo se pueden activar manualmente para completar un proceso definido o ejecutarse mediante programación cuando los usuarios envían un formulario o [gestión de correspondencia](/help/forms/using/cm-overview.md) carta. Con estas funciones mejoradas AEM Workflow, AEM Forms ofrece dos funciones distintas, aunque similares. Como parte de su estrategia de implementación, debe decidir cuál funciona para usted. Consulte una [comparación](capabilities-osgi-jee-workflows.md) de los flujos de trabajo de AEM centrados en Forms en OSGi y Process Management en JEE. Además, para la topología de implementación, consulte, [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Una vez configurados, estos flujos de trabajo se pueden habilitar manualmente para completar un proceso definido o ejecutarse programáticamente cuando los usuarios envíen un formulario o cartas de[ Administración de correspondencia](/help/forms/using/cm-overview.md). Con estas funciones mejoradas del flujo de trabajo de AEM, AEM Forms ofrece dos funciones distintas, aunque similares. Como parte de su estrategia de implementación, debe decidir cuál funciona para usted. Consulte una [comparación](capabilities-osgi-jee-workflows.md) de los flujos de trabajo de AEM centrados en Forms en OSGi y Process Management en JEE. Además, para la topología de implementación, consulte, [Arquitectura y topologías de implementación para AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-Flujo de trabajo centrado en Forms en OSGi se amplía [Bandeja de entrada AEM](/help/sites-authoring/inbox.md) y proporciona componentes adicionales (pasos) para AEM editor de flujo de trabajo para añadir compatibilidad con flujos de trabajo centrados en AEM Forms. La Bandeja de entrada de AEM extendida tiene funcionalidades similares a las de [AEM Forms Workspace](introduction-html-workspace.md). Junto con la administración de flujos de trabajo centrados en las personas (aprobación, revisión, etc.), puede utilizar flujos de trabajo de AEM para automatizar [document services](/help/sites-developing/workflows-step-ref.md)Operaciones relacionadas con (por ejemplo, Generar PDF) y documentos de firma electrónica (Adobe Sign).
+El flujo de trabajo centrado en Forms en OSGi amplía [la bandeja de entrada de AEM](/help/sites-authoring/inbox.md) y proporciona componentes adicionales (pasos) para el editor de flujos de trabajo de AEM para agregar compatibilidad con flujos de trabajo centrados en AEM Forms. La bandeja de entrada extendida de AEM tiene funcionalidades similares a las de [AEM Forms Workspace](introduction-html-workspace.md). Junto con la administración de flujos de trabajo centrados en las personas (aprobación, revisión, etc.), puede utilizar flujos de trabajo de AEM para automatizar operaciones de trabajo relacionadas con [servicios de documentos](/help/sites-developing/workflows-step-ref.md) (por ejemplo, generar PDF) y documentos de firma electrónica (Adobe Sign).
 
-Todos los pasos del flujo de trabajo de AEM Forms admiten el uso de variables. Las variables permiten realizar pasos en el flujo de trabajo para mantener y pasar metadatos por varios pasos durante la ejecución. Puede crear diferentes tipos de variables para almacenar diferentes tipos de datos. También puede crear colecciones de variables (matriz) para almacenar varias instancias de datos relacionados y del mismo tipo. Normalmente, se utiliza una variable o una colección de variables cuando se necesita tomar una decisión en base al valor que mantiene o para almacenar información que se necesite más adelante en un proceso. Para obtener más información sobre el uso de variables en estos componentes (pasos) del flujo de trabajo centrados en Forms, consulte [Flujo de trabajo centrado en Forms en OSGi: pasos de referencia](../../forms/using/aem-forms-workflow-step-reference.md). Para obtener información sobre la creación y la administración de variables, consulte [Variables en flujos de trabajo de AEM](../../forms/using/variable-in-aem-workflows.md).
+Todos los pasos del flujo de trabajo admiten el uso de variables. Las variables permiten realizar pasos en el flujo de trabajo para mantener y pasar metadatos por varios pasos durante la ejecución. Puede crear diferentes tipos de variables para almacenar diferentes tipos de datos. También puede crear colecciones de variables (matriz) para almacenar varias instancias de datos relacionados y del mismo tipo. Normalmente, se utiliza una variable o una colección de variables cuando se necesita tomar una decisión en base al valor que mantiene o para almacenar información que se necesite más adelante en un proceso. Para obtener más información sobre el uso de variables en estos componentes (pasos) del flujo de trabajo centrados en Forms, consulte [Flujo de trabajo centrado en Forms en OSGi: pasos de referencia](../../forms/using/aem-forms-workflow-step-reference.md). Para obtener información sobre la creación y la administración de variables, consulte [Variables en flujos de trabajo de AEM](../../forms/using/variable-in-aem-workflows.md).
 
 En el siguiente diagrama se describe el procedimiento de extremo a extremo para crear, ejecutar y monitorizar un flujo de trabajo centrado en Forms en OSGi.
 
@@ -42,14 +42,14 @@ En el siguiente diagrama se describe el procedimiento de extremo a extremo para 
 
 ## Antes de comenzar {#before-you-start}
 
-* Un flujo de trabajo es una representación de un proceso empresarial real. Tenga preparados su proceso empresarial real y la lista de los participantes del proceso. Además, mantenga el material colateral (formularios adaptables, documentos del PDF, etc.) listo antes de empezar a crear un flujo de trabajo.
+* Un flujo de trabajo es una representación de un proceso empresarial real. Tenga preparados su proceso empresarial real y la lista de los participantes del proceso. Además, prepare el material colateral (formularios adaptables, documentos PDF, etc.) antes de empezar a crear un flujo de trabajo.
 * Un flujo de trabajo puede tener varias fases. Estas fases se muestran en la bandeja de entrada AEM y ayudan a informar sobre el progreso del flujo de trabajo. Divida el proceso empresarial en fases lógicas.
 * Puede configurar el paso Asignar tarea del flujo de trabajo de AEM para enviar notificaciones por correo electrónico a los usuarios o a los usuarios asignados. [habilita las notificaciones por correo electrónico](#configure-email-service).
-* Un flujo de trabajo también puede utilizar Adobe Sign para las firmas digitales. Si planea utilizar Adobe Sign en un flujo de trabajo, la variable [configuración de Adobe Sign para AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) antes de utilizarla en un flujo de trabajo.
+* Un flujo de trabajo también puede utilizar Adobe Sign para las firmas digitales. Si planea utilizar Adobe Sign en un flujo de trabajo, configure [Adobe Sign para AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) antes de utilizarlo en un flujo de trabajo.
 
 ## Cree un modelo del flujo de trabajo {#create-a-workflow-model}
 
-Un modelo del flujo de trabajo consiste en la lógica y el flujo de un proceso empresarial. Se compone de una serie de pasos. Estos pasos son componentes de AEM. Puede ampliar los pasos del flujo de trabajo con parámetros y scripts para proporcionar más funcionalidad y control, según sea necesario. AEM Forms proporciona algunos pasos además de AEM pasos disponibles de forma predeterminada. Para obtener una lista detallada de los pasos de AEM y AEM Forms, consulte [Referencia de pasos del flujo de trabajo AEM](/help/sites-developing/workflows-step-ref.md) y [Flujo de trabajo centrado en Forms en OSGi: referencia de los pasos](../../forms/using/aem-forms-workflow.md).
+Un modelo del flujo de trabajo consiste en la lógica y el flujo de un proceso empresarial. Se compone de una serie de pasos. Estos pasos son componentes de AEM. Puede ampliar los pasos del flujo de trabajo con parámetros y scripts para proporcionar más funcionalidad y control, según sea necesario. AEM Forms proporciona algunos pasos además de pasos de AEM disponibles de forma predeterminada. Para obtener una lista detallada de AEM Forms y de sus pasos, consulte [Pasos de referencia del flujo de trabajo de AEM](/help/sites-developing/workflows-step-ref.md) y [Flujo de trabajo centrado en Forms en OSGi: pasos de referencia](../../forms/using/aem-forms-workflow.md).
 
 AEM proporciona una interfaz de usuario intuitiva para crear un modelo del flujo de trabajo siguiendo los pasos proporcionados. Para obtener instrucciones paso a paso para crear un modelo del flujo de trabajo, consulte [Creación de modelos de flujo de trabajo](/help/sites-developing/workflows-models.md). El siguiente ejemplo proporciona instrucciones paso a paso para crear un modelo del flujo de trabajo para un flujo de trabajo de aprobación y revisión:
 
@@ -67,7 +67,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
 [Obtener archivo](assets/example-mortgage-loan-application.zip)
 
-1. Abra la consola Modelos de flujo de trabajo. El URL predeterminado es `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
+1. Abra la consola Modelos de flujo de trabajo. La URL predeterminada es `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Seleccione **Crear** y, a continuación, **Crear modelo**. Aparecerá el cuadro de diálogo Agregar modelo del flujo de trabajo.
 1. Escriba el **Título** y el **Nombre** (opcional). Por ejemplo, una solicitud hipotecaria. Pulse **Listo**.
 1. Seleccione el modelo del flujo de trabajo recién creado y pulse **Editar**. Ahora puede agregar pasos al flujo de trabajo para crear lógica empresarial. La primera vez que cree un modelo del flujo de trabajo, contendrá:
@@ -87,13 +87,13 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
 1. Arrastre y suelte el explorador de fases **Asignar tarea** al modelo del flujo de trabajo. Conviértalo en el primer paso del modelo.
 
-   El componente Asignar tarea asigna la tarea que ha creado el flujo de trabajo, a un usuario o grupo. Junto con la asignación de la tarea, puede utilizar el componente para especificar un formulario adaptable o un PDF no interactivo para la tarea. El formulario adaptable es necesario para aceptar los datos introducidos por los usuarios y el PDF no interactivo o un formulario adaptable de solo lectura se utiliza para revisar solo los flujos de trabajo.
+   El componente Asignar tarea asigna la tarea que ha creado el flujo de trabajo, a un usuario o grupo. Además de asignar la tarea, puede utilizar el componente para especificar un formulario adaptable o un PDF no interactivo para la tarea. El formulario adaptable es necesario para aceptar los datos que han introducido los usuarios y un PDF no interactivo o un formulario adaptable de solo lectura solo se utiliza para revisar los flujos de trabajo.
 
-   También puede utilizar el paso para controlar el comportamiento de la tarea. Por ejemplo, al crear un documento de registro automático, asigne la tarea a un usuario o grupo específico, la ruta de los datos enviados, la ruta de los datos que se van a rellenar previamente y las acciones predeterminadas. Para obtener información detallada sobre las opciones del paso Asignar tarea, consulte el documento [Flujo de trabajo centrado en Forms en OSGi: pasos de referencia](../../forms/using/aem-forms-workflow.md).
+   También puede utilizar el paso para controlar el comportamiento de la tarea. Por ejemplo, al crear un documento de registro automático, asignar la tarea a un usuario o grupo específico, la ruta de los datos enviados, la ruta de los datos que se van a rellenar previamente y las acciones predeterminadas. Para obtener información detallada sobre las opciones del paso Asignar tarea, consulte el documento [Flujo de trabajo centrado en Forms en OSGi: pasos de referencia](../../forms/using/aem-forms-workflow.md).
 
    ![workflow-editor](assets/workflow-editor.png)
 
-   Para el ejemplo de la aplicación hipoteca, configure el paso asignar tarea para utilizar un formulario adaptable de solo lectura y mostrar el documento del PDF una vez que se haya completado la tarea. Además, seleccione el grupo de usuarios autorizado para aprobar la solicitud del préstamo. En la pestaña **Acciones**, deshabilite la opción **Enviar**. Cree una variable **actionTaken** del tipo de datos String y especifíquela como **Variable de ruta**. Por ejemplo, actionTaken. Además, agregue las rutas Aprobar y Rechazar. Las rutas se muestran como acciones independientes (botones) en la bandeja de entrada AEM. El flujo de trabajo selecciona una rama en función de la acción (botón) que pulse un usuario.
+   Para el ejemplo de la solicitud de la hipoteca, configure el paso Asignar tarea para utilizar un formulario adaptable de solo lectura y mostrar el documento PDF una vez que se haya completado la tarea. Además, seleccione el grupo de usuarios autorizado para aprobar la solicitud del préstamo. En la pestaña **Acciones**, deshabilite la opción **Enviar**. Cree una variable **actionTaken** del tipo de datos String y especifíquela como **Variable de ruta**. Por ejemplo, actionTaken. Además, agregue las rutas Aprobar y Rechazar. Las rutas se muestran como acciones independientes (botones) en la bandeja de entrada AEM. El flujo de trabajo selecciona una rama en función de la acción (botón) que pulse un usuario.
 
    Puede importar el paquete de ejemplo, que está disponible para descargar al principio de la sección, para el conjunto completo de valores de todos los campos del paso Asignar tarea configurado, para el ejemplo de solicitud de hipoteca.
 
@@ -119,9 +119,9 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
 1. Agregue otros pasos del flujo de trabajo para crear la lógica empresarial.
 
-   Para el ejemplo de hipoteca, agregue un documento de registro generado, dos pasos de asignación de tareas y un paso de documento de signo a la rama 1 del modelo, como se muestra en la imagen siguiente. Un paso de la asignación de tareas es mostrar y enviar **documentos de préstamo a firmar al solicitante** y otro componente de asignación de tareas es **mostrar documentos firmados**. Además, agregue un componente de la asignación de tareas a la rama 2. Se activará cuando un usuario pulse Rechazar en la bandeja de entrada AEM.
+   Para el ejemplo de la hipoteca, agregue un documento de registro generado, dos pasos de la asignación de tareas y un paso del documento de firma a la rama 1 del modelo, como se muestra en la siguiente imagen. Un paso de la asignación de tareas es mostrar y enviar **documentos de préstamo a firmar al solicitante** y otro componente de asignación de tareas es **mostrar documentos firmados**. Además, agregue un componente de la asignación de tareas a la rama 2. Se activará cuando un usuario pulse Rechazar en la bandeja de entrada AEM.
 
-   Para el conjunto completo de valores de todos los campos de los pasos de tarea de asignación, el paso de documento de registro y el paso de documento de firma configurados, por ejemplo, la aplicación hipoteca, importe el paquete de ejemplo, disponible para su descarga en el inicio de esta sección.
+   Para obtener el conjunto completo de valores de todos los campos de los pasos de la asignación de tareas, el paso Documento de registro y el de documento de firma configurado para, por ejemplo, la solicitud de hipoteca, importe el paquete de ejemplo, disponible para descargar al principio de esta sección.
 
    El modelo del flujo de trabajo está listo. Puede iniciar el flujo de trabajo mediante varios métodos. Para obtener más información, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](#launch).
 
@@ -129,7 +129,7 @@ En el ejemplo se crea un modelo del flujo de trabajo con una solicitud hipotecar
 
 ## Crear una solicitud de flujo de trabajo centrada en formularios  {#create-a-forms-centric-workflow-application}
 
-La aplicación es el formulario adaptable asociado al flujo de trabajo. Cuando una solicitud se envía a través de la bandeja de entrada, inicia el flujo de trabajo asociado. Para que un flujo de trabajo de Forms esté disponible como aplicación en AEM Bandeja de entrada y la aplicación de AEM Forms, haga lo siguiente para crear una aplicación de flujo de trabajo:
+La solicitud es el formulario adaptable asociado al flujo de trabajo. Cuando una solicitud se envía a través de la bandeja de entrada, inicia el flujo de trabajo asociado. Para que un flujo de trabajo de Forms esté disponible como solicitud en la bandeja de entrada de AEM y la aplicación de AEM Forms, haga lo siguiente para crear una solicitud del flujo de trabajo:
 
 >[!NOTE]
 >
@@ -158,15 +158,15 @@ La aplicación es el formulario adaptable asociado al flujo de trabajo. Cuando u
   </tr>
   <tr>
    <td>Formulario adaptable</td>
-   <td><p>Especifique la ruta de un formulario adaptable. Cuando un usuario inicia una aplicación, se muestra el formulario adaptable especificado.</p> <p><strong>Nota</strong>: Las solicitudes de flujo de trabajo no admiten formularios ni documentos PDF que tengan más de una página o que requieran desplazamiento en Apple iPad. Cuando se abre una aplicación en Apple iPad y el formulario adaptable o el documento del PDF es más largo que una página, se pierden los campos y el contenido del formulario de la segunda página.</p> </td>
+   <td><p>Especifique la ruta de un formulario adaptable. Cuando un usuario inicia una solicitud, se muestra el formulario adaptable especificado.</p> <p><strong>Nota</strong>: Las solicitudes de flujo de trabajo no admiten formularios ni documentos PDF que tengan más de una página o que requieran desplazamiento en Apple iPad. Cuando se abre una solicitud en Apple iPad y el formulario adaptable o el documento PDF es más largo que una página, se pierden los campos y el contenido del formulario de la segunda página.</p> </td>
   </tr>
   <tr>
    <td>Grupo de acceso</td>
-   <td><p>Seleccionar un grupo. La solicitud solo es visible en la bandeja de entrada AEM para los miembros del grupo seleccionado. La opción access group pone a disposición de la selección todos los grupos del grupo workflow-users. </p> <br /> </td>
+   <td><p>Seleccionar un grupo. La solicitud solo es visible en la bandeja de entrada AEM para los miembros del grupo seleccionado. La opción de grupo de acceso hace que todos los grupos del grupo del flujo de trabajo de usuarios estén disponibles para seleccionarlos. </p> <br /> </td>
   </tr>
   <tr>
    <td>Servicio de rellenado previo</td>
-   <td>Seleccione un <a href="../../forms/using/prepopulate-adaptive-form-fields.md#aem-forms-custom-prefill-service" target="_blank">servicio prefill</a> para el formulario adaptable.<br /> </td>
+   <td>Seleccione un <a href="../../forms/using/prepopulate-adaptive-form-fields.md#aem-forms-custom-prefill-service" target="_blank">servicio de rellenado previo</a> para el formulario adaptable.<br /> </td>
   </tr>
   <tr>
    <td>Modelo de flujo de trabajo</td>
@@ -189,36 +189,36 @@ La aplicación es el formulario adaptable asociado al flujo de trabajo. Cuando u
 
 ## Iniciar un flujo de trabajo centrado en Forms en OSGi {#launch}
 
-Puede iniciar o activar un flujo de trabajo centrado en Forms mediante:
+Puede iniciar o habilitar un flujo de trabajo centrado en Forms mediante:
 
 * [El envío de una solicitud desde la bandeja de entrada AEM](#inbox)
-* [Envío de una aplicación desde una aplicación de AEM Forms](#afa)
+* [El envío de una aplicación desde la aplicación de AEM Forms](#afa)
 
-* [Envío de un formulario adaptable](#af)
+* [Enviar un formulario adaptable](#af)
 * [El uso de la carpeta vigilada](#watched)
 
 * [El envío de una comunicación interactiva o una carta](#letter)
 
 ### El envío de una solicitud desde la bandeja de entrada AEM {#inbox}
 
-La solicitud de flujo de trabajo que ha creado está disponible como solicitud en la bandeja de entrada. Los usuarios que son miembros del grupo de usuarios del flujo de trabajo pueden rellenar y enviar la aplicación que déclencheur el flujo de trabajo asociado. Para obtener información sobre el uso de la bandeja de entrada AEM para enviar solicitudes y administrar tareas, consulte [Administrar solicitudes y tareas de Forms en la bandeja de entrada AEM](../../forms/using/manage-applications-inbox.md).
+La solicitud de flujo de trabajo que ha creado está disponible como solicitud en la bandeja de entrada. Los usuarios que sean miembros del grupo del flujo de trabajo de usuarios pueden rellenar y enviar la solicitud que activa el flujo de trabajo asociado. Para obtener información sobre el uso de la bandeja de entrada de AEM para enviar solicitudes y administrar tareas, consulte [Administrar solicitudes y tareas de Forms en la bandeja de entrada de AEM](../../forms/using/manage-applications-inbox.md).
 
-### Envío de una aplicación desde una aplicación de AEM Forms {#afa}
+### Enviar una aplicación desde la aplicación de AEM Forms {#afa}
 
-La aplicación de AEM Forms se sincroniza con un servidor de AEM Forms y le permite realizar cambios en los datos del formulario, las tareas, las aplicaciones de flujo de trabajo y la información guardada (borradores/plantillas) en su cuenta. Para obtener más información, consulte [aplicación AEM Forms](/help/forms/using/aem-forms-app.md) y artículos relacionados.
+La aplicación de AEM Forms se sincroniza con un servidor de AEM Forms y le permite realizar cambios en los datos del formulario, las tareas, las aplicaciones de flujo de trabajo y la información guardada (borradores/plantillas) en su cuenta. Para obtener más información, consulte [aplicación de AEM Forms](/help/forms/using/aem-forms-app.md) y artículos relacionados.
 
-### Envío de un formulario adaptable {#af}
+### Enviar un formulario adaptable {#af}
 
-Puede configurar las acciones de envío de un formulario adaptable para iniciar un flujo de trabajo al enviar el formulario adaptable. Los formularios adaptables proporcionan la variable **Invocar un flujo de trabajo AEM** enviar acción para iniciar un flujo de trabajo tras enviar un formulario adaptable. Para obtener información detallada sobre la acción de envío, consulte [Configuración de la acción Enviar](../../forms/using/configuring-submit-actions.md). Para enviar un formulario adaptable a través de la aplicación de AEM Forms, habilite Sincronizar con la aplicación de AEM Forms en las propiedades del formulario adaptable.
+Puede configurar las acciones de envío de un formulario adaptable para iniciar un flujo de trabajo al enviar el formulario adaptable. Los formularios adaptables proporcionan la acción de envío **Invocar un flujo de trabajo de AEM** para iniciar un flujo de trabajo al enviar un formulario adaptable. Para obtener información detallada sobre la acción de envío, consulte [Configurar la acción de envío](../../forms/using/configuring-submit-actions.md). Para enviar un formulario adaptable a través de la aplicación de AEM Forms, habilite Sincronizar con la aplicación de AEM Forms en las propiedades del formulario adaptable.
 
-Puede configurar un formulario adaptable para sincronizar, enviar y almacenar en déclencheur un flujo de trabajo desde la aplicación de AEM Forms. Para obtener más información, consulte [trabajo con un formulario](/help/forms/using/working-with-form.md).
+Puede configurar un formulario adaptable para sincronizar, enviar y habilitar un flujo de trabajo desde la aplicación de AEM Forms. Para obtener más información, consulte [trabajar con un formulario](/help/forms/using/working-with-form.md).
 
-### El uso de una carpeta inspeccionada; {#watched}
+### Usar una carpeta vigilada {#watched}
 
-Un administrador (un miembro del grupo de administradores de fd) puede configurar una carpeta de red para ejecutar un flujo de trabajo preconfigurado cuando un usuario coloca un archivo (como un archivo PDF) en la carpeta. Una vez finalizado el flujo de trabajo, puede guardar el archivo de resultado en una carpeta de salida especificada. Esta carpeta se conoce como [Carpeta vigilada](../../forms/using/watched-folder-in-aem-forms.md). Realice el siguiente procedimiento para configurar una carpeta vigilada para iniciar un flujo de trabajo:
+Un administrador (un miembro del grupo de administradores de fd) puede configurar una carpeta de red para ejecutar un flujo de trabajo preconfigurado cuando un usuario coloca un archivo (como un archivo PDF) en la carpeta. Una vez finalizado el flujo de trabajo, puede guardar el archivo resultante en una carpeta de salida especificada. Esta carpeta se conoce como [Carpeta vigilada](../../forms/using/watched-folder-in-aem-forms.md). Realice el siguiente procedimiento para configurar una carpeta vigilada para iniciar un flujo de trabajo:
 
-1. En la instancia de autor de AEM, vaya a ![herramientas-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta vigilada]**. Se muestra una lista de las carpetas ya configuradas.
-1. Toque **[!UICONTROL Nuevo]**. Se muestra una lista de campos. Especifique un valor para los campos siguientes para configurar una carpeta vigilada para un flujo de trabajo:
+1. En la instancia de autor de AEM, vaya a ![herramientas-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta vigilada]**. Se mostrará una lista de las carpetas vigiladas ya configuradas.
+1. Pulse **[!UICONTROL Nuevo]**. Se mostrará una lista de campos. Especifique un valor para los siguientes campos para configurar una carpeta vigilada para un flujo de trabajo:
 
 <table>
  <tbody>
@@ -228,15 +228,15 @@ Un administrador (un miembro del grupo de administradores de fd) puede configura
   </tr>
   <tr>
    <td><span class="uicontrol">Nombre</code></td>
-   <td>Especifique el nombre de la carpeta vigilada. Este campo solo admite alfanuméricos.</td>
+   <td>Especifique el nombre de la carpeta vigilada. Este campo solo admite caracteres alfanuméricos.</td>
   </tr>
   <tr>
    <td><span class="uicontrol">Ruta </code></td>
-   <td>Especifique la ubicación física de la carpeta vigilada. En un entorno agrupado, utilice una carpeta de red compartida a la que se pueda acceder desde AEM nodo de clúster.</td>
+   <td>Especifique la ubicación física de la carpeta vigilada. En un entorno agrupado, utilice una carpeta de red compartida a la que se pueda acceder desde el nodo de clúster de AEM.</td>
   </tr>
   <tr>
    <td><span class="uicontrol">Procesar archivos mediante</code></td>
-   <td>Seleccione el <span class="uicontrol">Flujo de trabajo </code>. </code></td>
+   <td>Seleccione la opción <span class="uicontrol">Flujo de trabajo </code>. </code></td>
   </tr>
   <tr>
    <td><span class="uicontrol">Modelo de flujo de trabajo</code></td>
@@ -244,28 +244,28 @@ Un administrador (un miembro del grupo de administradores de fd) puede configura
   </tr>
   <tr>
    <td><span class="uicontrol">Patrón de archivo de salida</code></td>
-   <td>Especifique la estructura de directorio para los archivos de salida y los directorios. También puede especificar un <a href="/help/forms/using/admin-help/configuring-watched-folder-endpoints.md" target="_blank">patrón para archivos de salida y directorios</a>.</td>
+   <td>Especifique la estructura de directorios para los archivos y directorios de salida. También puede especificar un patrón <a href="/help/forms/using/admin-help/configuring-watched-folder-endpoints.md" target="_blank">para archivos y directorios de salida</a>.</td>
   </tr>
  </tbody>
 </table>
 
-1. Toque **Avanzadas**. Especifique un valor para el campo siguiente y pulse **Crear**. La carpeta vigilada está configurada para iniciar un flujo de trabajo. Ahora, cada vez que se coloca un archivo en el directorio de entrada de la carpeta vigilada, se activa el flujo de trabajo especificado.
+1. Pulse **Avanzadas**. Especifique un valor para el siguiente campo y pulse **Crear**. La carpeta vigilada está configurada para iniciar un flujo de trabajo. Ahora, cada vez que se coloque un archivo en el directorio de entrada de la carpeta vigilada, se activará el flujo de trabajo especificado.
 
    | Campo | Descripción |
    |---|---|
-   | Filtro de asignador de cargas útiles | Cuando se crea una carpeta vigilada, se crea una estructura de carpetas en el repositorio crx. La estructura de carpetas puede servir como carga útil para el flujo de trabajo. Puede escribir una secuencia de comandos para asignar un flujo de trabajo AEM y aceptar entradas de la estructura de carpetas observadas. Una implementación predeterminada está disponible y se enumera en el filtro Asignador de carga útil . Si no tiene una implementación personalizada, seleccione la implementación predeterminada. |
+   | Filtro de asignador de cargas útiles | Cuando se cree una carpeta vigilada, se creará una estructura de carpetas en el repositorio crx. La estructura de carpetas puede servir como carga útil para el flujo de trabajo. Puede escribir un script para asignar un flujo de trabajo de AEM y aceptar entradas de la estructura de carpetas vigilada. Una implementación predeterminada está disponible y se enumera en el filtro asignador de cargas útiles. Si no tiene una implementación personalizada, seleccione la implementación predeterminada. |
 
-   La pestaña Advanced contiene más campos. La mayoría de estos campos contienen un valor predeterminado. Para obtener más información sobre todos los campos, consulte la [Crear o configurar una carpeta vigilada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) artículo.
+   La pestaña Avanzado contiene más campos. La mayoría de estos campos contienen un valor predeterminado. Para obtener más información sobre todos los campos, consulte el artículo [Crear o configurar una carpeta vigilada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
 
-### El envío de una comunicación interactiva o una carta {#letter}
+### Enviar una comunicación interactiva o una carta {#letter}
 
-Puede asociar y ejecutar un flujo de trabajo centrado en Forms en OSGi al enviar una comunicación interactiva o una carta. En la gestión de correspondencia, los flujos de trabajo se utilizan para las comunicaciones y cartas interactivas posteriores al procesamiento. Por ejemplo, enviar por correo electrónico, imprimir, enviar por fax o archivar letras finales. Para ver los pasos detallados, consulte [Procesamiento posterior de comunicaciones y cartas interactivas](../../forms/using/submit-letter-topostprocess.md).
+Puede asociar y ejecutar un flujo de trabajo centrado en Forms en OSGi al enviar una comunicación interactiva o una carta. En Administración de correspondencia, los flujos de trabajo se utilizan para las cartas y las comunicaciones interactivas posteriores al procesamiento. Por ejemplo, enviar por correo electrónico, imprimir, enviar por fax o archivar cartas finales. Para ver los pasos detallados, consulte [Procesamiento posterior de comunicaciones interactivas y cartas](../../forms/using/submit-letter-topostprocess.md).
 
 ## Configuraciones adicionales {#additional-configurations}
 
 ### Configurar el servicio de correo electrónico {#configure-email-service}
 
-Puede utilizar los pasos Assign Task y Send Email de AEM Workflows para enviar un correo electrónico. Realice los siguientes pasos para especificar los servidores de correo electrónico y otras configuraciones necesarias para enviar correo electrónico:
+Puede utilizar los pasos Asignar tarea y Enviar correo electrónico de flujos de trabajo de AEM para enviar un correo electrónico. Realice los siguientes pasos para especificar los servidores de correo electrónico y otras configuraciones necesarias para enviar correo electrónico:
 
 1. Vaya al administrador de configuración de AEM en `https://[server]:[port]/system/console/configMgr`.
 1. Abra la configuración de **[!UICONTROL Day CQ Mail Service]**. Especifique un valor para el **[!UICONTROL nombre del host del servidor SMTP]**, **[!UICONTROL el puerto del servidor SMTP]** y **[!UICONTROL los campos de la dirección “Desde”]**. Haga clic en **[!UICONTROL Guardar]**.
@@ -275,29 +275,29 @@ Puede utilizar los pasos Assign Task y Send Email de AEM Workflows para enviar u
 
 Al minimizar el número de instancias del flujo de trabajo, aumenta el rendimiento del motor de flujos de trabajo, por lo que puede depurar con regularidad las instancias del flujo de trabajo completadas o en ejecución desde el repositorio. Para obtener información detallada, consulte [Depuración regular de instancias del flujo de trabajo](/help/sites-administering/workflows-administering.md#regular) para depurar instancias del flujo de trabajo.
 
-## Parametrizar datos confidenciales a variables de flujo de trabajo y almacenarlos en almacenes de datos externos {#externalize-wf-variables}
+## Parametrizar datos confidenciales a variables de flujo de trabajo y almacenarlos en repositorios de datos externos {#externalize-wf-variables}
 
-Cualquier dato enviado desde formularios adaptables a [!DNL Experience Manager] Los flujos de trabajo pueden tener PII (información de identificación personal) o SPD (datos personales confidenciales) de los usuarios finales de su empresa. Sin embargo, no es obligatorio almacenar los datos en [!DNL Adobe Experience Manager] [Repositorio JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). Puede externalizar el almacenamiento de datos del usuario final en el almacenamiento de datos administrado (por ejemplo, el almacenamiento del blob de Azure) parametrizando la información en [variables de flujo de trabajo](/help/forms/using/variable-in-aem-workflows.md).
+Cualquier dato enviado desde formularios adaptables a flujos de trabajo [!DNL Experience Manager]pueden tener PII (información de identificación personal) o SPD (datos personales confidenciales) de los usuarios finales de su empresa. Sin embargo, no es obligatorio almacenar los datos almacenados en el [!DNL Adobe Experience Manager] [Repositorio JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=es). Puede externalizar el almacenamiento de datos del usuario final en el almacenamiento de datos administrado (por ejemplo, el almacenamiento del blob de Azure) al parametrizar la información en [variables de flujo de trabajo](/help/forms/using/variable-in-aem-workflows.md).
 
-En un [!DNL Adobe Experience Manager] Flujo de trabajo de Forms, los datos se procesan y pasan a través de una serie de pasos de flujo de trabajo mediante variables de flujo de trabajo. Estas variables se denominan propiedades o pares de clave-valor que se almacenan en el nodo de metadatos de instancias de flujo de trabajo; por ejemplo `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Estas variables de flujo de trabajo se pueden externalizar en un repositorio independiente que no sea JCR y luego procesar mediante [!DNL Adobe Experience Manager] flujos de trabajo. [!DNL Adobe Experience Manager] proporciona API `[!UICONTROL UserMetaDataPersistenceProvider]` para almacenar las variables de flujo de trabajo en el almacenamiento externo administrado. Para obtener más información sobre el uso de variables de flujo de trabajo para almacenes de datos de propiedad del cliente en [!DNL Adobe Experience Manager], consulte [Administración de variables de flujo de trabajo para almacenes de datos externos](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe] proporciona lo siguiente [ejemplo](https://github.com/adobe/workflow-variable-externalizer) para almacenar variables desde el mapa de metadatos del flujo de trabajo al almacenamiento del blob de Azure, utilizando la API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). En líneas similares, puede utilizar el ejemplo como guía para utilizar [UserMetaDataPersistenceProvider] API para externalizar las variables de flujo de trabajo en cualquier otro almacenamiento de datos externo a [!DNL Adobe Experience Manager] y administre lo mismo.
+En un [!DNL Adobe Experience Manager] flujo de trabajo de Forms, los datos se procesan y pasan a través de una serie de pasos de flujo de trabajo mediante variables de flujo de trabajo. Estas variables se denominan propiedades o pares de clave-valor que se almacenan en el nodo de metadatos de instancias de flujo de trabajo; por ejemplo `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Estas variables de flujo de trabajo se pueden externalizar en un repositorio independiente que no sea JCR y luego procesar mediante [!DNL Adobe Experience Manager] flujos de trabajo. [!DNL Adobe Experience Manager] proporciona API `[!UICONTROL UserMetaDataPersistenceProvider]` para almacenar las variables de flujo de trabajo en el almacenamiento externo administrado. Para obtener más información sobre el uso de variables de flujo de trabajo para repositorios de datos de propiedad del cliente en [!DNL Adobe Experience Manager], consulte [Administrar variables de flujo de trabajo para repositorios de datos externos](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe] proporciona el siguiente [ejemplo](https://github.com/adobe/workflow-variable-externalizer) para almacenar variables desde el mapa de metadatos del flujo de trabajo al almacenamiento del blob de Azure, con la API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). En líneas similares, puede utilizar el ejemplo como guía para utilizar la API [UserMetaDataPersistenceProvider] para externalizar las variables de flujo de trabajo en cualquier otro almacenamiento de datos externo a [!DNL Adobe Experience Manager] y administrar lo mismo.
 
 >[!NOTE]
 >
->Cuando almacene las variables de flujo de trabajo en un almacenamiento de datos externo, consulte los punteros en la [directrices para flujos de trabajo almacenamiento de datos externos](#guidelines-workflows-external-data-storage).
+>Cuando almacene las variables de flujo de trabajo en un almacenamiento de datos externo, consulte los indicadores en las [directrices para flujos de trabajo de almacenamiento de datos externos](#guidelines-workflows-external-data-storage).
 
-### Instalación de la implementación de muestra de API de flujo de trabajo
+### Instalar la implementación de muestra de la API del flujo de trabajo
 
-Para almacenar variables de flujo de trabajo en el almacenamiento del blob de Azure administrado:
+Para almacenar variables de flujo de trabajo en el almacenamiento del blob de Azure administrado, haga lo siguiente:
 1. Instale el [ejemplo](https://github.com/adobe/workflow-variable-externalizer) API de flujo de trabajo [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md) de la siguiente manera:
 
-   1. Ejecute en el directorio raíz del proyecto el `mvn clean install` con Maven 3.
+   1. Ejecute en el directorio raíz del proyecto el comando `mvn clean install` con Maven 3.
 
    1. Para implementar el paquete y el paquete de contenido para su creación, ejecute `mvn clean install -PautoInstallPackage`.
 
-   1. Para implementar solo el paquete en el autor, ejecute `mvn clean install -PautoInstallBundle`.
+   1. Para implementar solo el paquete en autor, ejecute `mvn clean install -PautoInstallBundle`.
 
-1. Inicialice las siguientes propiedades en el archivo de configuración OSGi del externalizador en la `ui.config` paquete de contenido:
+1. Inicialice las siguientes propiedades en el archivo de configuración OSGi del externalizador en el paquete de contenido `ui.config`:
 
    ```JQL
       accountKey=""
@@ -311,7 +311,7 @@ Los siguientes son los propósitos (y ejemplos) de estas propiedades:
 
 * **accountKey** es la clave secreta para autorizar el acceso.
 
-* **accountName** es la cuenta de azure en la que se deben almacenar los datos.
+* **accountName** es la cuenta de Azure en la que se deben almacenar los datos.
 
 * **endpointSuffix**, por ejemplo `core.windows.net`.
 
@@ -319,30 +319,30 @@ Los siguientes son los propósitos (y ejemplos) de estas propiedades:
 
 * **protocol**, por ejemplo `https` o `http`.
 
-1. Configure el modelo de flujo de trabajo en [!DNL Adobe Experience Manager]. Para saber cómo configurar el modelo de flujo de trabajo para un almacenamiento externo, consulte [Configuración del modelo de flujo de trabajo](#configure-aem-wf-model).
+1. Configure el modelo de flujo de trabajo en [!DNL Adobe Experience Manager]. Para saber cómo configurar el modelo de flujo de trabajo para un almacenamiento externo, consulte [Configurar el modelo de flujo de trabajo](#configure-aem-wf-model).
 
 ### Configurar el modelo de flujo de trabajo en [!DNL Adobe Experience Manager] para el almacenamiento de datos externos {#configure-aem-wf-model}
 
-Para configurar un modelo de flujo de trabajo AEM para un almacenamiento de datos externo:
+Para configurar un modelo de flujo de trabajo de AEM para un almacenamiento de datos externo haga lo siguiente:
 
-1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
+1. Navegue hasta **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
 
-1. Seleccione un nombre de modelo y seleccione **[!UICONTROL Editar]**.
+1. Seleccione el nombre de un modelo y pulse **[!UICONTROL Editar]**.
 
-1. Seleccione el icono Información de página y seleccione **[!UICONTROL Abrir propiedades]**.
+1. Seleccione el icono Información de página y luego pulse **[!UICONTROL Abrir propiedades]**.
 
 1. Seleccione **[!UICONTROL Externalizar el almacenamiento de los datos del flujo de trabajo]**.
 
-1. Select **[!UICONTROL Guardar y cerrar]** para guardar las propiedades.
+1. Seleccione **[!UICONTROL Guardar y cerrar]** para guardar las propiedades.
 
 ### Directrices para los flujos de trabajo de AEM de un almacenamiento de datos externo {#guidelines-workflows-external-data-storage}
 
-A continuación se indican las directrices que debe seguir cuando utilice [!DNL Adobe Experience Manager] flujos de trabajo y almacenamiento de datos en almacenes de datos externos (por ejemplo, servidor de almacenamiento de Microsoft Azure):
+Estas son las directrices a seguir a la hora de utilizar [!DNL Adobe Experience Manager]flujos de trabajo y almacenar datos en almacenamientos de datos externos (por ejemplo, el servidor de almacenamiento de Microsoft Azure):
 
-* Utilice variables para almacenar los datos al definir los archivos de datos de entrada y salida y los archivos adjuntos en los pasos del modelo de flujo de trabajo. No seleccione las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]**. La variable **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]** las opciones no se muestran automáticamente una vez que [configurar un [!DNL Adobe Experience Manager] modelo de flujo de trabajo para almacenamiento de datos externo](#configure-aem-wf-model).
+* Utilice variables para almacenar los datos al definir los archivos de datos de entrada y salida y los archivos adjuntos en los pasos del modelo de flujo de trabajo. No seleccione las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]**. Las opciones **[!UICONTROL Relativo a carga útil]** y **[!UICONTROL Disponible en una ruta absoluta]** no se mostrarán automáticamente una vez que [ [!DNL Adobe Experience Manager] haya configurado un modelo de flujo de trabajo de para un almacenamiento de datos externo](#configure-aem-wf-model).
 
-* Utilice variables para almacenar los archivos de datos y los archivos adjuntos cuando envíe un formulario adaptable a un flujo de trabajo de AEM. No seleccione **[!UICONTROL Relativo a carga útil]** al enviar un formulario adaptable a una [!DNL Adobe Experience Manager] flujo de trabajo. La variable **[!UICONTROL Relativo a carga útil]** no se muestra automáticamente una vez que [configurar un [!DNL Adobe Experience Manager] modelo de flujo de trabajo para almacenamiento de datos externo](#configure-aem-wf-model).
+* Utilice variables para almacenar los archivos de datos y los archivos adjuntos cuando envíe un formulario adaptable a un flujo de trabajo de AEM. No seleccione la opción **[!UICONTROL Relativo a carga útil]** cuando envíe un formulario adaptable a un [!DNL Adobe Experience Manager]flujo de trabajo La opción **[!UICONTROL Relativo a carga útil]** no se mostrará automáticamente una vez que [ [!DNL Adobe Experience Manager] haya configurado un modelo de flujo de trabajo de para un almacenamiento de datos externo](#configure-aem-wf-model).
 
-* No utilice un [!DNL Adobe Experience Manager] paso de flujo de trabajo en un modelo de flujo de trabajo para almacenar datos en [!UICONTROL CRX DE] repositorio.
+* No utilice un paso de un flujo de trabajo de personalizado [!DNL Adobe Experience Manager]de un modelo de flujos de trabajo para almacenar datos en el [!UICONTROL repositorio CRX DE].
 
-* Cuando [configurar un [!DNL Adobe Experience Manager] modelo de flujo de trabajo para almacenamiento de datos externo](#configure-aem-wf-model), no cree columnas personalizadas para [!DNL Adobe Experience Manager] [!UICONTROL Bandeja de entrada] ya que los valores de las columnas personalizadas no se recuperan si el elemento de trabajo de la variable [!DNL Adobe Experience Manager] [!UICONTROL Bandeja de entrada] pertenece a un flujo de trabajo marcado para almacenamiento externo.
+* Cuando [configure un  [!DNL Adobe Experience Manager]  modelo de flujo de trabajo de para un almacenamiento de datos externo](#configure-aem-wf-model), no cree columnas personalizadas para la [!DNL Adobe Experience Manager]bandeja de entrada[!UICONTROL , ]ya que los valores de las columnas personalizadas no se recuperan si el elemento de trabajo [!DNL Adobe Experience Manager] de la [!UICONTROL bandeja de entrada ]pertenece a un flujo de trabajo marcado para un almacenamiento externo.
