@@ -1,7 +1,7 @@
 ---
 title: Crear apariciones personalizadas en formularios HTML5
 seo-title: Create custom appearances in HTML5 forms
-description: Puede conectar widgets personalizados a un Forms móvil. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados.
+description: Puede conectar widgets personalizados a formularios Mobile. Puede ampliar los widgets de jQuery existentes o desarrollar los suyos propios personalizados.
 seo-description: You can plug in custom widgets to a Mobile Forms. You can extend existing jQuery Widgets or develop your own custom widgets.
 uuid: a9013c3d-20c7-45c9-be24-8e9d4525eff8
 contentOwner: robhagat
@@ -13,29 +13,29 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Crear apariciones personalizadas en formularios HTML5{#create-custom-appearances-in-html-forms}
 
-Puede conectar widgets personalizados a un Forms móvil. Puede ampliar los widgets de jQuery existentes o desarrollar sus propias utilidades personalizadas utilizando el marco de aspectos visuales. El motor XFA utiliza varias utilidades, consulte [Marco de aspecto para formularios adaptables y HTML5](/help/forms/using/introduction-widgets.md) para obtener información detallada.
+Puede conectar widgets personalizados a formularios Mobile. Puede ampliar los widgets de jQuery existentes o desarrollar sus propios widgets personalizados mediante el marco de aspectos visuales. El motor XFA utiliza varios widgets, consulte [Marco de apariencia para formularios adaptables y HTML5](/help/forms/using/introduction-widgets.md) para obtener información detallada.
 
-![Ejemplo de utilidad predeterminada y personalizada](assets/custom-widgets.jpg)
+![Ejemplo de widget predeterminado y personalizado ](assets/custom-widgets.jpg)
 
-Ejemplo de utilidad predeterminada y personalizada
+Ejemplo de widget predeterminado y personalizado
 
-## Integración de widgets personalizados con formularios HTML5 {#integrating-custom-widgets-with-html-forms}
+## Integrar widgets personalizados con formularios HTML5 {#integrating-custom-widgets-with-html-forms}
 
 ### Crear un perfil  {#create-a-profile-nbsp}
 
-Puede crear un perfil o elegir un perfil existente para agregar un widget personalizado. Para obtener más información sobre la creación de perfiles, consulte [Creación de perfil personalizado](/help/forms/using/custom-profile.md).
+Puede crear un perfil nuevo o elegir uno existente para agregar un widget personalizado. Para obtener más información sobre la creación de perfiles, consulte [Crear perfil personalizado](/help/forms/using/custom-profile.md).
 
-### Creación de una utilidad {#create-a-widget}
+### Crear un widget {#create-a-widget}
 
-Los formularios de HTML5 proporcionan una implementación de la estructura de widgets que se puede ampliar para crear nuevas utilidades. La implementación es un widget jQuery *abstractWidget* que se puede ampliar para escribir un nuevo widget. El nuevo widget solo puede hacerse funcional ampliando o anulando las funciones mencionadas a continuación.
+Los formularios HTML5 proporcionan una implementación de la estructura de widgets que se puede ampliar para crear widgets nuevos. La implementación es un widget jQuery *abstractWidget* que se puede ampliar para escribir un widget nuevo. El nuevo widget solo puede hacerse funcional al ampliar o anular las funciones mencionadas a continuación.
 
 <table>
  <tbody>
@@ -45,11 +45,11 @@ Los formularios de HTML5 proporcionan una implementación de la estructura de wi
   </tr>
   <tr>
    <td>procesar</td>
-   <td>La función render devuelve el objeto jQuery para el elemento HTML predeterminado del widget. El elemento HTML predeterminado debe ser de tipo enfocable. Por ejemplo, &lt;a&gt;, &lt;input&gt;y &lt;li&gt;. El elemento devuelto se usa como $userControl. Si $userControl especifica la restricción anterior, las funciones de la clase AbstractWidget funcionan como se espera; de lo contrario, algunas de las API comunes (enfoque, clic) requieren cambios. </td>
+   <td>La función de procesamiento devuelve el objeto jQuery para el elemento HTML predeterminado del widget. El elemento HTML predeterminado debe ser de tipo enfocable. Por ejemplo, &lt;a&gt;, &lt;input&gt; y &lt;li&gt;. El elemento devuelto se usa como $userControl. Si $userControl especifica la restricción anterior, las funciones de la clase AbstractWidget funcionarán como se espera; de lo contrario, algunas de las API comunes (enfoque, clic) necesitarán cambios. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Devuelve un mapa para convertir eventos de HTML en eventos XFA. <br /> {<br /> desenfoque: XFA_EXIT_EVENT,<br /> }<br /> Este ejemplo muestra que el desenfoque es un evento de HTML y XFA_EXIT_EVENT es el evento XFA correspondiente. </td>
+   <td>Devuelve un mapa para convertir eventos HTML en eventos XFA. <br /> {<br /> desenfoque: XFA_EXIT_EVENT,<br /> }<br /> Este ejemplo muestra que el desenfoque es un evento HTML y XFA_EXIT_EVENT es el evento XFA correspondiente. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -57,28 +57,28 @@ Los formularios de HTML5 proporcionan una implementación de la estructura de wi
   </tr>
   <tr>
    <td>getCommitValue</td>
-   <td>La estructura Widget carga la función cada vez que el valor de la utilidad se guarda en el modelo XFAM (por ejemplo, en el suceso exit de un campo de texto). La implementación debe devolver el valor que se ha guardado en el widget. El controlador se proporciona con el nuevo valor para la opción .</td>
+   <td>El marco de trabajo Widget carga la función cada vez que el valor del widget se guarda en el modelo XFAM (por ejemplo, en el evento de salida de un campo de texto). La implementación debe devolver el valor que se ha guardado en el widget. El controlador se proporciona con el nuevo valor para la opción.</td>
   </tr>
   <tr>
    <td>showValue</td>
-   <td>De forma predeterminada, en XFA en el suceso enter , se muestra el rawValue del campo . Se llama a esta función para mostrar rawValue al usuario. </td>
+   <td>De forma predeterminada, en XFA en el evento de entrada, se muestra el rawValue del campo. Se llama a esta función para mostrar rawValue al usuario. </td>
   </tr>
   <tr>
    <td>showDisplayValue</td>
-   <td>De forma predeterminada, en XFA en el evento exit se muestra el formattedValue del campo . Se llama a esta función para mostrar el formattedValue al usuario. </td>
+   <td>De forma predeterminada, en XFA en el evento de salida se muestra el formattedValue del campo. Se llama a esta función para mostrar el formattedValue al usuario. </td>
   </tr>
  </tbody>
 </table>
 
-Para crear su propio widget, en el perfil creado anteriormente, incluya referencias del archivo JavaScript que contiene funciones anuladas y funciones agregadas recientemente. Por ejemplo, la variable *sliderNumericFieldWidget* es un widget para campos numéricos. Para utilizar la utilidad en el perfil en la sección del encabezado, incluya la siguiente línea:
+Para crear su propio widget, en el perfil creado anteriormente, incluya referencias del archivo JavaScript que contiene funciones anuladas y agregadas recientemente. Por ejemplo, *sliderNumericFieldWidget* es un widget para campos numéricos. Para utilizar el widget en el perfil en la sección del encabezado, incluya la siguiente línea:
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
-### Registro de un widget personalizado con el motor de secuencias de comandos XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
+### Registrar un widget personalizado con el motor de scripts XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Cuando el código del widget personalizado esté listo, registre el widget con el motor de secuencias de comandos utilizando `registerConfig`API para [Puente de formulario](/help/forms/using/form-bridge-apis.md). Toma widgetConfigObject como entrada.
+Cuando el código del widget personalizado esté listo, registre el widget con el motor de scripts mediante la `registerConfig` API para el [formulario Bridge](/help/forms/using/form-bridge-apis.md). Toma widgetConfigObject como entrada.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
@@ -101,10 +101,10 @@ La configuración del widget se proporciona como un objeto JSON (una colección 
 }*
 ```
 
-donde &quot;identificador&quot; es un selector de CSS jQuery que representa un campo en particular, un conjunto de campos de un tipo en particular o todos los campos. A continuación, se enumera el valor del identificador en casos diferentes:
+Donde “identifier” es un selector de CSS jQuery que representa un campo en particular, un conjunto de campos de un tipo en particular o todos los campos. A continuación, se enumera el valor del identificador en casos diferentes:
 
 | Tipo de identificador | Identificador | Descripción |
 |---|---|---|
-| Campo particular con nombre de campo | Identificador: &quot;div.fieldname&quot; | Todos los campos con el nombre &quot;nombre de campo&quot; se representan con el widget. |
-| Todos los campos de tipo &quot;type&quot; (donde type es NumericField, DateField, etc.): | Identificador: &quot;div.type&quot; | Para Campo de tiempo y Campo de tiempo, el tipo es campo de texto, ya que estos campos no son compatibles. |
-| Todos los campos | Identificador: &quot;div.field&quot; |  |
+| Campo particular con nombre fieldname | Identificador: “div.fieldname” | Todos los campos con el nombre “fieldname” se representan con el widget. |
+| Todos los campos de tipo “type” (donde type es NumericField, DateField, etc.): | Identificador: “div.type” | Para Timefield y DateTimeField, el tipo es textfield, ya que estos campos no son compatibles. |
+| Todos los campos | Identificador: “div.field” |  |
