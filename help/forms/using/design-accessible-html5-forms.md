@@ -1,5 +1,5 @@
 ---
-title: Diseño de formularios HTML5 accesibles
+title: Diseñar formularios HTML5 accesibles
 seo-title: Designing accessible HTML5 forms
 description: Los formularios HTML5 utilizan el estándar de accesibilidad ARIA HTML5. Estos formularios admiten la navegación con pestañas y están certificados para ser compatibles con lectores de pantalla comunes.
 seo-description: HTML5 forms use the ARIA HTML5 accessibility standard. These forms support tabbed navigation and are certified to be compatible with common screen readers.
@@ -12,25 +12,25 @@ docset: aem65
 feature: Mobile Forms
 exl-id: fca2f9b2-11a2-4db0-a370-c4046f32be63
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '347'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Diseño de formularios HTML5 accesibles {#designing-accessible-html-forms}
+# Diseñar formularios HTML5 accesibles {#designing-accessible-html-forms}
 
-Los formularios HTML5 utilizan el estándar de accesibilidad ARIA HTML5 para generar formularios HTML accesibles. Estos formularios admiten la navegación con pestañas (excepto Mozilla FireFox) y están certificados para ser compatibles con lectores de pantalla comunes. Para generar un formulario HTML5 con buenas funciones de accesibilidad, diseñe la plantilla de formulario XFA basándose en algunas directrices de diseño básicas. Las directrices de diseño incluyen configurar el orden de tabulación correcto y proporcionar el contenido Texto hablado para cada control de formulario. AEM Forms Designer admite la configuración de estos atributos de control de formulario para generar un formulario de PDF y HTML5 accesible.
+Los formularios HTML5 utilizan el estándar de accesibilidad ARIA HTML5 para generar formularios HTML accesibles. Estos formularios admiten la navegación con pestañas (excepto Mozilla FireFox) y están certificados para ser compatibles con lectores de pantalla comunes. Para generar un formulario HTML5 con buenas características de accesibilidad, diseñe la plantilla de formulario XFA en base a algunas directrices de diseño básicas. Las directrices de diseño incluyen configurar el orden de pestañas correcto y proporcionar el contenido Texto hablado para cada control de formulario. AEM Forms Designer admite la configuración de estos atributos de control de formulario para generar un formulario PDF y HTML5 accesible.
 
-*Nota:La navegación con fichas no cubre campos protegidos, como los campos de cálculo que muestran la suma de los valores. Para que el lector de pantalla lea el valor de un campo protegido, coloque un campo vacío de solo lectura encima o junto al campo protegido. Asigne el valor del campo protegido al nuevo campo de solo lectura. El lector de pantalla o la navegación con pestañas pueden elegir este campo de solo lectura y expresarlo como el valor del campo protegido.*
+*Nota: La navegación con pestañas no cubre campos protegidos, como los campos de cálculo que muestran la suma de los valores. Para que el lector de pantalla lea el valor de un campo protegido, coloque un campo vacío de solo lectura encima o junto al campo protegido. Asigne el valor del campo protegido al nuevo campo de solo lectura. El lector de pantalla o la navegación con pestañas pueden elegir este campo de solo lectura y expresarlo como el valor del campo protegido.*
 
 AEM Forms Designer incluye varias opciones de Texto hablado que se pueden pasar a los lectores de pantalla. Para cada objeto de un formulario, el usuario puede especificar una de varias opciones de configuración para el texto del lector de pantalla:
 
 * Texto personalizado del lector de pantalla, que se puede configurar con la paleta Accesibilidad. Los autores pueden anotar los nombres de los botones y campos, así como su propósito.
 * Información del objeto, que se puede establecer en la paleta Accesibilidad.
-* Subtítulos para los campos del formulario.
-* Nombres de objetos, tal como se especifica en la opción Nombre de la ficha Enlace.
+* Pies de ilustración para los campos del formulario.
+* Nombres de objetos, como se especifican en la opción Nombre de la pestaña Enlace.
 
 ![accesibilidad](assets/accessibility.png)
 
-Cuando hay varias opciones disponibles en un control de formulario, como información del objeto, Texto del Reader de pantalla y Rótulo, el Reader de pantalla solo utiliza una de estas propiedades. El orden predeterminado es Texto personalizado del Reader de pantalla, información del objeto, Rótulo y Nombre. Puede anular el orden predeterminado mediante el Reader de pantalla **Prioridad** en la paleta Accesibilidad.
+Cuando hay varias opciones disponibles en un control de formulario, como información del objeto, Lector de texto en pantalla y Pie de ilustración, el Lector de pantalla solo utilizará una de estas propiedades. El orden predeterminado es Lector de texto en pantalla, información del objeto, Pie de ilustración y Nombre. Puede ignorar este orden predeterminado si utiliza la opción **Prioridad** de Lector de pantalla en la paleta Accesibilidad.
