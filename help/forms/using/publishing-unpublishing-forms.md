@@ -12,40 +12,40 @@ discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65
 exl-id: f26c4268-7885-4e61-a258-219d98288548
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1413'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 # Publicar y cancelar la publicación de formularios y documentos {#publishing-and-unpublishing-forms-and-documents}
 
-AEM Forms permite crear, publicar y cancelar la publicación de formularios fácilmente. Para obtener más información sobre AEM Forms, consulte [Introducción a la administración de formularios](../../forms/using/introduction-managing-forms.md).
+AEM Forms le permite crear, publicar y cancelar la publicación de formularios fácilmente. Para obtener más información sobre AEM Forms, consulte [Introducción a la administración de formularios](../../forms/using/introduction-managing-forms.md).
 
-El servidor de AEM Forms proporciona dos instancias: Autor y publicación. La instancia de autor se utiliza para crear y administrar recursos y recursos de formulario. La instancia Publicar sirve para mantener los recursos y recursos relacionados disponibles para los usuarios finales. Puede importar XDP y PDF forms en el modo Autor . Para obtener más información, consulte [Obtención de documentos XDP y PDF en AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
+El servidor de AEM Forms proporciona dos instancias: autor y publicación. La instancia de autor se utiliza para crear y administrar recursos y recursos de formulario. La instancia de publicación permite mantener los recursos y los recursos relacionados disponibles para los usuarios finales. Puede importar formularios XDP y PDF en el modo Autor. Para obtener más información, consulte [Obtención de documentos XDP y PDF en AEM Forms](../../forms/using/get-xdp-pdf-documents-aem.md).
 
-## Recursos compatibles {#supported-assets-nbsp}
+## Recursos compatibles   {#supported-assets-nbsp}
 
-AEM Forms admite los siguientes tipos de recursos:
+AEM Forms admite los siguientes tipos de recursos:
 
 * Formularios adaptables
 * Documentos adaptables
-* Fragmentos de formulario adaptables
-* Temáticas
+* Fragmentos de formularios adaptables
+* Temas
 * Plantillas de formulario (formularios XFA)
-* PDF forms
+* Formularios PDF
 * Documento (documentos PDF planos)
 * Conjuntos de formularios
 * Recurso (imágenes, esquemas y hojas de estilo)
 
-Inicialmente, todos los recursos están disponibles solo en la instancia de autor. Un administrador o un autor de formularios pueden publicar todos los activos excepto los recursos.
+Inicialmente, todos los recursos están disponibles solo en la instancia de autor. Un administrador o un autor de formularios pueden publicar todos los recursos excepto los recursos.
 
-Al seleccionar un formulario y publicarlo, también se publican sus activos y recursos relacionados. Con todo, los recursos dependientes no se publican. En este contexto, los recursos y activos relacionados son recursos que un recursos publicado utiliza o a los que hace referencia. Los recursos dependientes son recursos que hacen referencia a un recurso publicado.
+Al seleccionar un formulario y publicarlo, también se publican sus recursos y recursos relacionados. Con todo, los recursos dependientes no se publican. En este contexto, los recursos y recursos relacionados son recursos que un recursos publicado utiliza o a los que hace referencia. Los recursos dependientes son recursos que hacen referencia a un recurso publicado.
 
 Sus formularios adaptables pueden utilizar algunas configuraciones, ajustes y personalizaciones que no se publican automáticamente. Se recomienda publicar o activar estos recursos antes de publicar un formulario adaptable.
 
 * Plantillas de formulario adaptable editables
-* Configuraciones del Cloud Service para los modelos de datos de Adobe Sign, Typekit, reCAPTCHA y Form
+* Configuraciones de Cloud Service para Adobe Sign, Typekit, reCAPTCHA y modelos de datos de formulario
 * Otras configuraciones de Cloud Services solo se activan si el usuario tiene permisos de administrador.
 * Personalizaciones. Entre ellas se incluyen, entre otras:
 
@@ -66,7 +66,7 @@ Un recurso puede tener los siguientes estados:
 
 ## Publicar un recurso {#publish-an-asset}
 
-1. Inicie sesión en el servidor de AEM Forms.
+1. Inicie sesión en el servidor de AEM Forms.
 1. Utilice una de las siguientes opciones para seleccionar y publicar un recurso.
 
    1. Mueva el puntero sobre un recurso y pulse **[!UICONTROL Publicar]** ![aem6forms_global](assets/aem6forms_globe.pngasset.png).
@@ -82,15 +82,15 @@ Un recurso puede tener los siguientes estados:
       >No seleccione varios recursos. No se pueden publicar varios recursos a la vez.
 
 
-1. Cuando se inicia el proceso Publicar, aparece un cuadro de diálogo de confirmación con todos los recursos y activos relacionados. En el cuadro de diálogo que contiene los activos relacionados, pulse **[!UICONTROL Publicar]**. El recurso se publica y aparece el cuadro de diálogo Éxito al publicar recursos.
+1. Cuando se inicia el proceso Publicar, aparece un cuadro de diálogo de confirmación con todos los recursos y recursos relacionados. En el cuadro de diálogo que contiene los recursos relacionados, pulse **[!UICONTROL Publicar]**. El recurso se publica y aparece el cuadro de diálogo Éxito al publicar recursos.
 
    >[!NOTE]
    >
-   >Para los formularios adaptables, junto con los recursos relacionados, también se muestra el nombre de la página Formulario adaptable .
+   >En el caso de los formularios adaptables, junto con los recursos relacionados, también se muestra el nombre de la página del formulario adaptable.
 
-   ![Un cuadro de diálogo de confirmación con todos los recursos y activos relacionados](assets/p4.png)
+   ![Un cuadro de diálogo de confirmación con todos los recursos y recursos relacionados](assets/p4.png)
 
-   Un cuadro de diálogo de confirmación con todos los recursos y activos relacionados.
+   Un cuadro de diálogo de confirmación con todos los recursos y recursos relacionados.
 
    >[!NOTE]
    >
@@ -98,15 +98,15 @@ Un recurso puede tener los siguientes estados:
 
    Una vez publicado un recurso, las propiedades de metadatos del recurso se copian en la instancia Publicar y el estado del recurso se cambia a Publicado. El estado de los recursos dependientes publicados también se cambia a Publicado.
 
-   Después de publicar un recurso, puede utilizar el portal de Forms para mostrar todos los recursos de una página web. Para obtener más información, consulte [Introducción a la publicación de formularios en un portal](../../forms/using/introduction-publishing-forms.md).
+   Después de publicar un recurso, puede utilizar el portal de formularios para mostrar todos los recursos de una página web. Para obtener más información, consulte [Introducción a la publicación de formularios en un portal](../../forms/using/introduction-publishing-forms.md).
 
-## Publicar todos los recursos de administración de correspondencia {#publish-all-the-correspondence-management-assets}
+## Publicar todos los recursos de Administración de correspondencia {#publish-all-the-correspondence-management-assets}
 
-AEM Forms permite publicar todos los recursos de la gestión de correspondencia en un servidor de una sola vez. Los recursos publicados incluyen todos los recursos de administración de correspondencia y las dependencias relacionadas.
+AEM Forms le permite publicar todos los recursos de Administración de correspondencia en un servidor de una sola vez. Los recursos publicados incluyen todos los recursos de Administración de correspondencia y las dependencias relacionadas.
 
 Complete los siguientes pasos para publicar todos los recursos de administración de correspondencia en un servidor:
 
-1. Inicie sesión en el servidor de AEM Forms.
+1. Inicie sesión en el servidor de AEM Forms.
 1. Pulse **Adobe Experience Manager** en la barra de navegación global.
 1. Pulse ![herramientas](assets/tools.png) y, a continuación, **Formularios**.
 1. Pulse **Publicar los recursos de administración de correspondencia**.
@@ -127,7 +127,7 @@ Complete los siguientes pasos para publicar todos los recursos de administració
 
 ## Automatizar la publicación y cancelación de publicación para formularios y documentos {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-AEM Forms permite programar la publicación y cancelación de publicaciones de recursos para Forms y documentos. Puede especificar la programación en el Editor de metadatos. Para obtener más información sobre la administración de metadatos de formularios, consulte [Administrar metadatos de formulario.](../../forms/using/manage-form-metadata.md)
+AEM Forms le permite programar la publicación y la cancelación de la publicación de recursos para formularios y documentos. Puede especificar la programación en el Editor de metadatos. Para obtener más información sobre la administración de metadatos de formularios, consulte [Administrar metadatos de formulario.](../../forms/using/manage-form-metadata.md)
 
 Siga estos pasos para programar la fecha y la hora de publicación y cancelación de la publicación de recursos de formularios y documentos:
 
