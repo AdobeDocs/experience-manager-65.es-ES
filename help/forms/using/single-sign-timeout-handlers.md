@@ -1,7 +1,7 @@
 ---
 title: Inicio de sesión único y controladores de tiempo de espera
 seo-title: Single Sign On and timeout handlers
-description: Cómo establecer el valor de tiempo de espera de sesión para el espacio de trabajo de AEM Forms.
+description: Establecer el valor del tiempo de espera de la sesión para AEM Forms Workspace.
 seo-description: How-to set the session timeout value for AEM Forms workspace.
 uuid: 17583fd5-6453-41d3-bb63-a639983fbea9
 contentOwner: robhagat
@@ -11,25 +11,25 @@ topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 exl-id: 4f824d80-f3f8-4010-9583-5a9ab1151a7b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Inicio de sesión único y controladores de tiempo de espera {#single-sign-on-and-timeout-handlers}
 
-El espacio de trabajo de AEM Forms está habilitado para SSO. Si un usuario ha iniciado sesión en una aplicación de AEM Forms como Forms Manager o la interfaz de usuario de PDF Generator y accede al espacio de trabajo de AEM Forms en la misma sesión del explorador, el usuario ha iniciado sesión en el espacio de trabajo de AEM Forms y viceversa.
+El espacio de trabajo de AEM Forms está habilitado para SSO. Si un usuario ha iniciado sesión en una aplicación de AEM Forms como Forms Manager o la interfaz de usuario del generador de PDF y accede al espacio de trabajo de AEM Forms en la misma sesión del explorador, el usuario ha iniciado sesión en AEM Forms Workspace y viceversa.
 
-## Gestión del tiempo de espera del servidor en el espacio de trabajo de AEM Forms {#handling-server-timeout-in-nbsp-aem-forms-workspace}
+## Administrar el tiempo de espera del servidor en AEM Forms Workspace {#handling-server-timeout-in-nbsp-aem-forms-workspace}
 
-El tiempo de espera de sesión de un usuario se puede configurar en la Consola de administración.
+El tiempo de espera de sesión de un usuario se puede configurar en la consola de administración.
 
-Para establecer el tiempo de espera, inicie sesión en `https://'[server]:[port]'/adminui`, vaya a **Configuración > Administración de usuarios > Configuración > Configurar atributos avanzados del sistema** y realice la configuración que desee.
+Para establecer el tiempo de espera, inicie sesión en `https://'[server]:[port]'/adminui`, navegue hasta **Configuración > Administrar usuarios > Configuración > Configurar atributos avanzados del sistema** y realice la configuración que desee.
 
-En AEM Forms, el tiempo de espera de espacio de trabajo se gestiona de la siguiente manera:
+En AEM Forms, el tiempo de espera de espacio de trabajo se administra de la siguiente manera:
 
-* La duración de la sesión de un usuario está disponible en respuesta a `initialize` llamada que inicializa la sesión del usuario.
+* La duración de la sesión de un usuario está disponible en respuesta a la llamada `initialize` que inicializa la sesión del usuario.
 * Un cuadro de diálogo emergente notifica al usuario que la sesión está a punto de caducar, 15 segundos antes de que caduque la sesión.
 
 En este cuadro de diálogo emergente:
@@ -39,4 +39,4 @@ En este cuadro de diálogo emergente:
 
 >[!NOTE]
 >
->Si no se realiza ninguna acción, se cerrará la sesión del usuario automáticamente del espacio de trabajo de AEM Forms tres segundos antes de la caducidad de la sesión.
+>Si no se realiza ninguna acción, se cerrará la sesión del usuario de AEM Forms Workspace automáticamente tres segundos antes de la caducidad de la sesión.
