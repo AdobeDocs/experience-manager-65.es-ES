@@ -1,7 +1,7 @@
 ---
 title: Registrar una transacción para implementaciones personalizadas
 seo-title: Record a transaction for custom implementations
-description: Utilice la API TransactionRecorder para registrar acciones que no se contabilizan como transacciones automáticamente
+description: Utilice la API TransactionRecorder para registrar acciones que no se contabilizan como transacciones automáticamente.
 seo-description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 uuid: a22b1a0b-7553-4a17-8fb4-a3bee97b4a98
 contentOwner: khsingh
@@ -10,19 +10,19 @@ topic-tags: forms-manager
 discoiquuid: 0d961630-573b-4c8e-902f-996f1d1265b6
 exl-id: a1d97b15-14a6-4c3d-bdd3-6366f7acdfc8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '216'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Registrar una transacción para implementaciones personalizadas {#record-a-transaction-for-custom-implementations}
 
-Utilice la API TransactionRecorder para registrar acciones que no se contabilizan como transacciones automáticamente
+Utilice la API TransactionRecorder para registrar acciones que no se contabilizan como transacciones automáticamente.
 
-Puede utilizar un código personalizado para enviar un formulario de PDF, enviar la URL de vista previa de la interfaz de usuario del agente a los usuarios finales para obtener una vista previa de una comunicación interactiva o enviar un formulario mediante métodos personalizados en lugar de utilizar los métodos de envío proporcionados con AEM Forms. Todas las acciones e implementaciones personalizadas de las API de AEM Forms mencionadas anteriormente no se contabilizan como transacciones. AEM Forms proporciona una API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), para registrar acciones como transacciones.
+Puede utilizar un código personalizado para enviar un formulario PDF, enviar la URL de la vista previa de la interfaz de usuario del agente a los usuarios finales para obtener una vista previa de una comunicación interactiva, o enviar un formulario mediante métodos personalizados en lugar de utilizar los métodos de envío proporcionados con AEM Forms. Ninguna de las acciones e implementaciones personalizadas de las API de AEM Forms mencionadas anteriormente se contabiliza como una transacción. AEM Forms proporciona una API, [TransactionRecorder](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), para registrar este tipo de acciones como transacciones.
 
-Para registrar una transacción, escriba el [servlet estándar de sling](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) y llame al servlet desde un cliente para registrar una transacción. Puede llamar al servlet mediante AJAX o cualquier otro método estándar.
+Para registrar una transacción, escriba el [servlet estándar de sling](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) y llame a dicho servlet desde un cliente para registrar una transacción. Puede llamar al servlet mediante AJAX o mediante cualquier otro método estándar.
 
 ## Código de ejemplo del lado del servidor {#sample-server-sided-code}
 
@@ -74,7 +74,7 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 
 ## Ejemplo de código del lado del cliente {#sample-client-side-code}
 
-Puede utilizar el siguiente código de ejemplo para llamar al servlet que tiene la variable `TransactionRecorder`API.
+Puede utilizar el siguiente código de ejemplo para llamar al servlet que tiene la API `TransactionRecorder`.
 
 ```javascript
 $.ajax({
@@ -93,5 +93,5 @@ $.ajax({
 ## Artículos relacionados {#related-articles}
 
 * [Información general sobre los informes de transacciones](/help/forms/using/transaction-reports-overview.md)
-* [Visualización y comprensión de informes de transacciones](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+* [Ver y comprender los informes de transacciones](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [API facturables de informes de transacciones](/help/forms/using/transaction-reports-billable-apis.md)
