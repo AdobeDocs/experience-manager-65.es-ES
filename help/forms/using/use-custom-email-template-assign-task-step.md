@@ -1,5 +1,5 @@
 ---
-title: Uso de plantillas de correo electrónico personalizadas en un paso Asignar tarea
+title: Usar plantillas de correo electrónico personalizadas en un paso Asignar tarea
 seo-title: Use custom email templates in an Assign Task step
 description: Plantillas de correo electrónico personalizadas para notificaciones de correo electrónico de flujo de trabajo de formularios
 seo-description: Custom email templates for forms workflow email notifications
@@ -9,45 +9,45 @@ discoiquuid: 2ad4b7b5-2162-4599-af3f-9476f1256de6
 docset: aem65
 exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '523'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
-# Uso de plantillas de correo electrónico personalizadas en un paso Asignar tarea{#use-custom-email-templates-in-an-assign-task-step}
+# Usar plantillas de correo electrónico personalizadas en un paso Asignar tarea{#use-custom-email-templates-in-an-assign-task-step}
 
-Puede utilizar el paso Asignar tarea para crear y asignar tareas a un usuario o grupo. Cuando se asigna una tarea a un usuario o grupo, se envía una notificación por correo electrónico al usuario definido o a cada miembro del grupo definido. Una notificación típica por correo electrónico contiene un vínculo de la tarea asignada y una información relacionada con la tarea. La siguiente imagen muestra un ejemplo de notificación por correo electrónico:
+Puede utilizar el paso Asignar tarea para crear y asignar tareas a un usuario o grupo. Cuando se asigna una tarea a un usuario o grupo, se envía una notificación por correo electrónico al usuario definido o a cada miembro del grupo definido. Una notificación típica por correo electrónico contiene un vínculo de la tarea asignada e información relacionada con la tarea. La siguiente imagen muestra un ejemplo de notificación por correo electrónico:
 
 ![Notificación por correo electrónico con plantilla predeterminada](do-not-localize/default_email_template_new.png)
 
 Puede personalizar el aspecto y utilizar metadatos personalizados en una notificación por correo electrónico. AEM Forms proporciona una plantilla predeterminada para las notificaciones por correo electrónico. Puede personalizar la plantilla predeterminada o crear una nueva desde cero.
 
-Las plantillas de notificación de correo electrónico se basan en [correo electrónico del HTML](https://es.wikipedia.org/wiki/Correo_HTML). Estos correos electrónicos se adaptan a diferentes clientes de correo electrónico y tamaños de pantalla. Además, el estilo del correo electrónico se define dentro de la plantilla.
+Las plantillas de notificación de correo electrónico se basan en el [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Estos correos electrónicos se adaptan a diferentes clientes de correo electrónico y tamaños de pantalla. Además, el estilo del correo electrónico se define dentro de la plantilla.
 
 La siguiente imagen muestra una notificación por correo electrónico personalizada:
 
 ![Notificación por correo electrónico con plantilla personalizada](do-not-localize/customized-email.png)
 
-## Personalización de la plantilla existente {#customize-the-existing-template}
+## Personalizar la plantilla existente {#customize-the-existing-template}
 
-De forma predeterminada, AEM Forms proporciona una plantilla para las notificaciones por correo electrónico. La plantilla proporciona la descripción del título, la fecha de vencimiento, la prioridad, el nombre del flujo de trabajo y el vínculo de la tarea asignada. Puede personalizar la plantilla para cambiar el aspecto. Siga estos pasos para personalizar la plantilla:
+De forma predeterminada, AEM Forms ofrece una plantilla para las notificaciones por correo electrónico. La plantilla proporciona la descripción del título, la fecha de vencimiento, la prioridad, el nombre del flujo de trabajo y el vínculo de la tarea asignada. Puede personalizar la plantilla para cambiar el aspecto. Siga estos pasos para personalizar la plantilla:
 
 1. Inicie sesión en CRXDE con cuenta de administrador.
 
 1. Vaya a /libs/fd/dashboard/templates/email.
 
-1. Abra el archivo htmlEmailTemplate.txt . Contiene la plantilla predeterminada.
+1. Abra el archivo htmlEmailTemplate.txt. Contiene la plantilla predeterminada.
 
 1. Reemplace el contenido del archivo htmlEmailTemplate.txt por contenido personalizado.
 
-   Una plantilla de notificación de correo electrónico es una [correo electrónico del HTML](https://en.wikipedia.org/wiki/HTML_email). Puede reemplazar el código HTML existente con el código personalizado para cambiar el aspecto de la plantilla.
+   Una plantilla de notificación de correo electrónico es un [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Puede reemplazar el código HTML existente con el código personalizado para cambiar el aspecto de la plantilla.
 
 1. Guarde el archivo. Ahora, la plantilla personalizada está lista para su uso.
 
-## Creación de una plantilla de correo electrónico {#create-an-email-template}
+## Crear una plantilla de correo electrónico {#create-an-email-template}
 
-De forma predeterminada, AEM Forms proporciona una plantilla para las notificaciones por correo electrónico. La plantilla proporciona la descripción del título, la fecha de vencimiento, la prioridad, el nombre del flujo de trabajo y el vínculo de la tarea asignada. También puede añadir una plantilla de correo electrónico personalizada (su propia plantilla) para los pasos de asignación de tareas. Siga estos pasos para agregar una plantilla de correo electrónico personalizada:
+De forma predeterminada, AEM Forms ofrece una plantilla para las notificaciones por correo electrónico. La plantilla proporciona la descripción del título, la fecha de vencimiento, la prioridad, el nombre del flujo de trabajo y el vínculo de la tarea asignada. También puede agregar una plantilla de correo electrónico personalizada (su propia plantilla) para los pasos Asignar tarea. Siga estos pasos para agregar una plantilla de correo electrónico personalizada:
 
 1. Inicie sesión en CRXDE con cuenta de administrador.
 
@@ -55,22 +55,22 @@ De forma predeterminada, AEM Forms proporciona una plantilla para las notificaci
 
 1. Cree un archivo .txt. Por ejemplo, EmailOnTaskAssign.txt.
 
-1. Agregue código de HTML personalizado al archivo .
+1. Agregue código HTML personalizado al archivo.
 
-   Una plantilla de notificación de correo electrónico es una [correo electrónico del HTML](https://en.wikipedia.org/wiki/HTML_email). Puede agregar código de HTML personalizado al archivo para crear una plantilla nueva.
+   Una plantilla de notificación de correo electrónico es un [correo electrónico HTML](https://es.wikipedia.org/wiki/Correo_HTML). Puede agregar código HTML personalizado al archivo para crear una plantilla nueva.
 
-1. Guarde el archivo. La plantilla está lista para utilizarse en el paso Asignar tarea .
+1. Guarde el archivo. La plantilla está lista para utilizarse en el paso Asignar tarea.
 
-## Uso de una plantilla de correo electrónico en un paso Asignar tarea {#use-an-email-template-in-an-assign-task-step}
+## Usar una plantilla de correo electrónico en un paso Asignar tarea {#use-an-email-template-in-an-assign-task-step}
 
 De forma predeterminada, el paso Asignar tarea está configurado para utilizar la plantilla predeterminada, htmlEmailTemplate.txt. Puede elegir utilizar una plantilla personalizada. Para cambiar la plantilla:
 
-1. Abra el paso Asignar tarea .
+1. Abra el paso Asignar tarea.
 
-1. Vaya a Asignación > Plantilla de correo electrónico del HTML .
+1. Vaya a Usuario asignado > Plantilla de correo electrónico HTML.
 
-1. Seleccione la plantilla de correo electrónico del HTML recién creada.
+1. Seleccione la plantilla de correo electrónico HTML recién creada.
 
-1. Haga clic en Aceptar. La plantilla se cambia.
+1. Haga clic en Aceptar. Se cambia la plantilla.
 
-Una notificación por correo electrónico también utiliza [metadata](../../forms/using/use-metadata-in-email-notifications.md). Por ejemplo, fecha de vencimiento, prioridad, nombre del flujo de trabajo, etc. También puede configurar la plantilla para usar [metadatos personalizados](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).
+Una notificación por correo electrónico también utiliza [metadatos](../../forms/using/use-metadata-in-email-notifications.md). Por ejemplo, fecha de vencimiento, prioridad, nombre del flujo de trabajo, etc. También puede configurar la plantilla para usar [metadatos personalizados](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).
