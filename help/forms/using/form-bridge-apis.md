@@ -10,17 +10,17 @@ topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '940'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # API de Form Bridge para formularios HTML5 {#form-bridge-apis-for-html-forms}
 
-Puede utilizar las API de Form Bridge para abrir un canal de comunicación entre los formularios HTML5 basados en XFA y las aplicaciones. Las API de Form Bridge proporcionan un **connect** para crear la conexión.
+Puede utilizar las API de Form Bridge para abrir un canal de comunicación entre los formularios HTML5 basados en XFA y las aplicaciones. Las API de Form Bridge proporcionan una API de **Connect** para crear la conexión.
 
-La variable **connect** La API acepta un controlador como argumento. Después de crear una conexión correcta entre el formulario HTML5 basado en XFA y Form Bridge, se invoca el controlador.
+La API de **Connect** acepta un controlador como argumento. Después de crear correctamente una conexión entre el formulario HTML5 basado en XFA y Form Bridge, se invoca el controlador.
 
 Puede utilizar el siguiente código de ejemplo para crear la conexión.
 
@@ -39,63 +39,63 @@ window.addEventListener("FormBridgeInitialized",
 >
 >Asegúrese de crear una conexión antes de incluir el archivo formRuntime.jsp.
 
-## API de Form Bridge disponible  {#available-form-bridge-api-nbsp}
+## API de Form Bridge disponible  {#available-form-bridge-api-nbsp}
 
-**getBridgeVersion()**
+**getBridgeVersion()**:
 
-Devuelve el número de versión de la biblioteca Scripting
+devuelve el número de versión de la biblioteca de scripts.
 
-* **Entrada**: Ninguna
-* **Salida**: Número de versión de la biblioteca de secuencias de comandos
-* **Errores**: Ninguna
+* **Entrada**: ninguna.
+* **Salida**: el número de versión de la biblioteca de scripts.
+* **Errores**: ninguno.
 
-**isConnected()** Comprueba si el estado del formulario se ha inicializado
+**isConnected()**: comprueba si el estado del formulario se ha inicializado.
 
-* **Entrada**: Ninguna
-* **Salida**: **True** si el estado del formulario XFA se ha inicializado
+* **Entrada**: ninguna.
+* **Salida**: **True** si el estado del formulario XFA se ha inicializado.
 
-* **Errores**: Ninguna
+* **Errores**: ninguno.
 
-**connect(handler, context)** Realiza una conexión con FormBridge y ejecuta la función después de establecer la conexión y de inicializar Form State
+**connect(handler, context)**: realiza una conexión con FormBridge y ejecuta la función después de establecer la conexión y de inicializar el estado del formulario.
 
 * **Entrada**:
 
-   * **handler**: Función que se ejecuta después de conectar Form Bridge
-   * **context**: El objeto en el que el contexto (esto) de la variable *handler* están definidas.
+   * **handler**: la función que se ejecuta después de conectar Form Bridge.
+   * **context**: el objeto en el que se establece el contexto (este) de la función *handler*.
 
-* **Salida**: Ninguna
-* **Error**: Ninguna
+* **Salida**: ninguna.
+* **Error**: ninguno.
 
-**getDataXML(options)** Devuelve los datos del formulario actual en formato XML
-
-* **Entrada:**
-
-   * **opciones:** Objeto JavaScript que contiene las siguientes propiedades:
-
-      * **Error**: Función del controlador de errores
-      * **success**: Función del controlador de éxito. Esta función pasa a un objeto que contiene XML en *data* propiedad.
-      * **context**: El objeto en el que el contexto (esto) de la variable *success* está establecida
-      * **validationChecker**: Función a la que llamar para comprobar los errores de validación recibidos del servidor. La función de validación se pasa a una matriz de cadenas de error.
-      * **formState**: Estado JSON del formulario XFA para el que se debe devolver XML de datos. Si no se especifica, devuelve el XML de datos del formulario procesado actualmente.
-
-* **Salida:** Ninguna
-* **Error:** Ninguna
-
-**registerConfig(configName, config)** Registra configuraciones específicas del usuario/portal con FormBridge. Estas configuraciones anulan las configuraciones predeterminadas. Las configuraciones admitidas se especifican en la sección de configuración .
+**getDataXML(options)**: devuelve los datos del formulario actual en formato XML.
 
 * **Entrada:**
 
-   * **configName:** Nombre de la configuración que desea anular
+   * **options:** un objeto JavaScript que contiene las siguientes propiedades:
 
-      * **widgetConfig:** Permite que el usuario anule los widgets predeterminados del formulario con widgets personalizados. La configuración se anula de la siguiente manera:
+      * **Error**: la función del controlador de errores.
+      * **success**: la función del controlador de éxito. Esta función pasa a un objeto que contiene XML en la propiedad *data*.
+      * **context**: el objeto en el que se establece el contexto (este) de la función *success*.
+      * **validationChecker**: la función a la que se llama para comprobar los errores de validación recibidos del servidor. La función de validación se pasa a una matriz de cadenas de error.
+      * **formState**: el estado JSON del formulario XFA para el que se debe devolver un XML de datos. Si no se especifica, devuelve el XML de datos del formulario procesado actualmente.
+
+* **Salida:** ninguna.
+* **Error:** ninguno.
+
+**registerConfig(configName, config)**: registra las configuraciones específicas del usuario/portal con FormBridge. Estas configuraciones anulan las configuraciones predeterminadas. Las configuraciones admitidas se especifican en la sección de configuración.
+
+* **Entrada:**
+
+   * **configName:** el nombre de la configuración que desea anular.
+
+      * **widgetConfig:** permite que el usuario anule los widgets predeterminados del formulario con widgets personalizados. La configuración se anula de la siguiente forma:
 
          *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
-      * **pagingConfig:** Permite al usuario anular el comportamiento predeterminado de procesar solo la primera página. La configuración se anula de la siguiente manera:
+      * **pagingConfig:** permite al usuario anular el comportamiento predeterminado al procesar solo la primera página. La configuración se anula de la siguiente forma:
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true false=&quot;&quot;>, scarinkPageDisabled: &lt;true false=&quot;&quot;> }).*
+         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
-      * **LoggingConfig:** Permite al usuario anular el nivel de registro, desactivar el registro de una categoría, o mostrar la consola de registros o enviar al servidor. La configuración se puede sobrescribir de la siguiente manera:
+      * **LoggingConfig:** permite al usuario anular el nivel de registro, desactivar el registro de una categoría, mostrar la consola de registros o realizar el envío al servidor. La configuración se puede anular de la siguiente forma:
 
       ```javascript
       formBridge.registerConfig{
@@ -109,7 +109,7 @@ Devuelve el número de versión de la biblioteca Scripting
         }
       ```
 
-      * **SubmitServiceProxyConfig:** Permita que los usuarios registren los servicios proxy de envío y registrador.
+      * **SubmitServiceProxyConfig:** permita que los usuarios registren los servicios proxy de envío y registrador.
 
          ```javascript
          window.formBridge.registerConfig("submitServiceProxyConfig",
@@ -119,81 +119,81 @@ Devuelve el número de versión de la biblioteca Scripting
          "submitUrl" : "`<submitUrl>`"
          });
          ```
-   * **config:** Valor de la configuración
+   * **config:** el valor de la configuración.
 
 
 
-* **Salida:** Objeto que contiene el valor original de la configuración en *data* propiedad.
+* **Salida:** el objeto que contiene el valor original de la configuración en la propiedad *data*.
 
-* **Error:** Ninguna
+* **Error:** ninguno.
 
-**hideFields(fieldArray)** Oculta los campos cuyas expresiones Som se proporcionan en fieldArray. Establece la propiedad presence de los campos especificados como invisible
-
-* **Entrada:**
-
-   * **fieldArray:** Matriz de expresiones Som para los campos que desea ocultar
-
-* **Salida:** Ninguna
-* **Error:** Ninguna
-
-**showFields(fieldArray)** Muestra los campos cuyas expresiones Som se proporcionan en fieldArray. Define la propiedad presence de los campos proporcionados como visible
+**hideFields(fieldArray)**: oculta los campos cuyas expresiones Som se proporcionan en fieldArray. Establece la propiedad presence de los campos especificados como invisible
 
 * **Entrada:**
 
-   * **fieldArray:** Matriz de expresiones Som para los campos que se van a mostrar
+   * **fieldArray:** la matriz de expresiones Som para los campos que desea ocultar.
 
-* **Salida:** Ninguna
-* **Error:** Ninguna
+* **Salida:** ninguna.
+* **Error:** ninguno.
 
-**hideSubmitButton()** Oculta todos los botones de envío del formulario
-
-* **Entrada**: Ninguna
-* **Salida**: Ninguna
-* **Error**: Muestra la excepción si el estado del formulario no está inicializado
-
-**getFormState()** Devuelve el JSON que representa el estado del formulario
-
-* **Entrada:** Ninguna
-* **Salida:** Objeto que contiene JSON que representa el estado de formulario actual en *data* propiedad.
-
-* **Error:** Ninguna
-
-**restoreFormState(options)** Restaura el estado del formulario a partir del estado JSON proporcionado en el objeto options . Se aplica el estado y se llaman a los controladores de éxito o de error una vez finalizada la operación
+**showFields(fieldArray)**: muestra los campos cuyas expresiones Som se proporcionan en fieldArray. Establece la propiedad presence de los campos proporcionados como visible
 
 * **Entrada:**
 
-   * **Opciones:** Objeto JavaScript que contiene las siguientes propiedades:
+   * **fieldArray:** la matriz de expresiones Som para los campos que se van a mostrar.
 
-      * **Error**: Función del controlador de errores
-      * **success**: Función del controlador de éxito
-      * **context**: El objeto en el que el contexto (esto) de la variable *success* están definidas
-      * **formState**: Estado JSON del formulario. El formulario se restaura al estado JSON.
+* **Salida:** ninguna.
+* **Error:** ninguno.
 
-* **Salida:** Ninguna
-* **Error:** Ninguna
+**hideSubmitButtons()**: oculta todos los botones de envío del formulario.
 
-**setFocus (som)** Define el enfoque en el campo especificado en la expresión Som
+* **Entrada**: ninguna.
+* **Salida**: ninguna.
+* **Error**: inicia una excepción si el estado del formulario no está inicializado.
 
-* **Entrada:** Expresión del campo en el que se va a definir el enfoque
-* **Salida:** Ninguna
-* **Error:** Genera una excepción en caso de expresión Som incorrecta
+**getFormState()**: devuelve el JSON que representa el estado del formulario.
 
-**setFieldValue (som, value)** Define el valor de los campos para las expresiones Som dadas
+* **Entrada:** ninguna.
+* **Salida:** el objeto que contiene el JSON que representa el estado del formulario actual en la propiedad *data*.
+
+* **Error:** ninguno.
+
+**restoreFormState(options)**: restaura el estado del formulario a partir del estado JSON proporcionado en el objeto options. Se aplica el estado y se llama a los controladores de éxito o de error una vez finalizada la operación
 
 * **Entrada:**
 
-   * **som:** Matriz que contiene expresiones Som del campo. La expresión som para establecer el valor de los campos.
-   * **valor:** Matriz que contiene los valores correspondientes a las expresiones Som proporcionadas en una **som** matriz. Si el tipo de datos del valor no es el mismo que fieldType, el valor no se modifica.
+   * **Options:** un objeto JavaScript que contiene las siguientes propiedades:
 
-* **Salida:** Ninguna
-* **Error:** Genera una excepción en el caso de una expresión Som incorrecta
+      * **Error**: la función del controlador de errores.
+      * **success**: la función del controlador de éxito.
+      * **context**: El objeto en el que se establece el contexto (este) de la función *success*.
+      * **formState**: el estado JSON del formulario. El formulario se restaura al estado JSON.
 
-**getFieldValue (som)** Devuelve el valor de los campos de las expresiones Som dadas
+* **Salida:** ninguna.
+* **Error:** ninguno.
 
-* **Entrada:** Matriz que contiene expresiones Som de los campos cuyo valor debe recuperarse
-* **Salida:** Objeto que contiene el resultado como matriz en **data** propiedad.
+**setFocus (som)**: establece el enfoque en el campo especificado en la expresión Som.
 
-* **Error:** Ninguna
+* **Entrada:** la expresión Som del campo en el que se va a establecer el enfoque.
+* **Salida:** ninguna.
+* **Error:** inicia una excepción en el caso de que la expresión Som sea incorrecta.
+
+**setFieldValue (som, value)**: establece el valor de los campos para las expresiones Som dadas.
+
+* **Entrada:**
+
+   * **som:** la matriz que contiene las expresiones Som del campo. La expresión Som para establecer el valor de los campos.
+   * **value:** la matriz que contiene los valores correspondientes a las expresiones Som proporcionadas en una matriz **som**. Si el tipo de datos del valor no es el mismo que fieldType, el valor no se modifica.
+
+* **Salida:** ninguna.
+* **Error:** inicia una excepción en el caso de una expresión Som sea incorrecta.
+
+**getFieldValue (som)**: devuelve el valor de los campos de las expresiones Som dadas.
+
+* **Entrada:** la matriz que contiene las expresiones Som de los campos cuyo valor debe recuperarse.
+* **Salida:** el objeto que contiene el resultado como matriz en la propiedad **data**.
+
+* **Error:** ninguno.
 
 ### Ejemplo de la API getFieldValue() {#example-of-nbsp-getfieldvalue-api}
 
@@ -208,29 +208,29 @@ if(a.errors) {
 }
 ```
 
-**getFieldProperties(som, propiedad)** Recupere la lista de valores para la propiedad dada de los campos especificados en expresiones Som
+**getFieldProperties(som, property)**: recupera la lista de valores de la propiedad dada de los campos especificados en las expresiones Som.
 
 * **Entrada:**
 
-   * **som:** Matriz que contiene expresiones Som para los campos
-   * **property**: Nombre de la propiedad cuyo valor es obligatorio
+   * **som:** la matriz que contiene las expresiones Som de los campos.
+   * **property**: el nombre de la propiedad cuyo valor es obligatorio.
 
-* **Salida:** Objeto que contiene el resultado como matriz en *data* property
+* **Salida:** el objeto que contiene el resultado como matriz en la propiedad *data*.
 
-* **Error:** Ninguna
+* **Error:** ninguno.
 
-**setFieldProperties(som, property, values)** Define el valor de la propiedad dada para todos los campos especificados en las expresiones Som
+**setFieldProperties(som, property, values)**: establece el valor de la propiedad dada para todos los campos especificados en las expresiones Som.
 
 * **Entrada:**
 
-   * **som:** Matriz que contiene expresiones Som de los campos cuyo valor debe establecerse
-   * **property**: Propiedad cuyo valor debe establecerse
-   * **valor:** Matriz que contiene valores de la propiedad dada para los campos especificados en Expresiones Som
+   * **som:** la matriz que contiene las expresiones Som de los campos cuyo valor debe establecerse.
+   * **property**: la propiedad cuyo valor debe establecerse.
+   * **value:** la matriz que contiene los valores de la propiedad dada para los campos especificados en las expresiones Som.
 
-* **Salida:** Ninguna
-* **Error:** Ninguna
+* **Salida:** ninguna.
+* **Error:** ninguno.
 
-## Ejemplo de uso de la API de Form Bridge {#sample-usage-of-form-bridge-api}
+## Ejemplo de uso de la API de Form Bridge {#sample-usage-of-form-bridge-api}
 
 ```JavaScript
 // Example 1: FormBridge.restoreFormState
