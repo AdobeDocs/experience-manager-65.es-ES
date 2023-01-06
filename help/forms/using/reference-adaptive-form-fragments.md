@@ -1,7 +1,7 @@
 ---
-title: Referencia a fragmentos de formulario adaptables
+title: Fragmentos de formularios adaptables de referencia
 seo-title: Reference adaptive form fragments
-description: AEM Forms proporciona fragmentos de formulario adaptables que puede utilizar como recursos para crear un formulario rápidamente.
+description: AEM Forms proporciona fragmentos de formulario adaptable que puede utilizar como recursos para crear un formulario rápidamente.
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,17 +10,17 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '389'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
-# Referencia a fragmentos de formulario adaptables{#reference-adaptive-form-fragments}
+# Fragmentos de formularios adaptables de referencia{#reference-adaptive-form-fragments}
 
-[Fragmento de formulario adaptable](../../forms/using/adaptive-form-fragments.md) es un grupo de campos o un panel que contiene un grupo de campos que puede utilizar al crear un formulario. Permite crear un formulario de forma fácil y rápida. Puede arrastrar y soltar un fragmento de formulario adaptable en un formulario mediante el navegador de recursos de la barra lateral y editarlo en el editor de formularios.
+[Un fragmento de formulario adaptable](../../forms/using/adaptive-form-fragments.md) es un grupo de campos o un panel que contiene un grupo de campos que puede utilizar durante la creación de un formulario. Permite crear un formulario de forma fácil y rápida. Puede arrastrar y colocar un fragmento de formulario adaptable en un formulario mediante el Explorador de recursos de la barra lateral y editarlo en el Editor de formularios.
 
-Para los autores de formularios adaptables, los fragmentos de referencia se proporcionan en la variable [Paquete de complementos de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Este paquete incluye los siguientes fragmentos:
+Los fragmentos de referencia se proporcionan en el [paquete de complementos de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) para los autores de formularios adaptables. Este paquete incluye los siguientes fragmentos:
 
 * Dirección
 * Información de contacto
