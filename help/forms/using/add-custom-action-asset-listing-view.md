@@ -1,7 +1,7 @@
 ---
-title: Agregar una acción personalizada a la vista Listado de activos
+title: Agregar una acción personalizada a la vista Listado de recursos
 seo-title: Add custom action to the Asset Listing view
-description: Este artículo explica cómo agregar acciones personalizadas a la vista Lista de activos
+description: Este artículo explica cómo agregar acciones personalizadas a la vista Lista de recursos
 seo-description: This article teaches how to add custom action to the Asset Listing view
 uuid: 45f25cfb-f08f-42c6-99c5-01900dd8cdee
 content-type: reference
@@ -12,24 +12,24 @@ docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1360'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Agregar una acción personalizada a la vista Listado de activos{#add-custom-action-to-the-asset-listing-view}
+# Agregar una acción personalizada a la vista Listado de recursos{#add-custom-action-to-the-asset-listing-view}
 
 ## Información general {#overview}
 
-La solución de Gestión de Correspondencia le permite agregar acciones personalizadas a la interfaz de usuario Administrar recursos .
+La solución de Administración de correspondencia le permite agregar acciones personalizadas a la interfaz de usuario Administrar recursos.
 
-Puede agregar una acción personalizada a la vista Listado de activos para:
+Puede agregar una acción personalizada a la vista Listado de recursos para lo siguiente:
 
-* Uno o más tipos de recursos o letras
-* Ejecución (la acción/el comando se activa) al seleccionar recursos/letras simples, múltiples o sin selección
+* Uno o más tipos de recursos o cartas
+* Ejecución (la acción/el comando se activa) al seleccionar recursos/cartas individuales, múltiples o sin selección
 
-Esta personalización se muestra con el escenario que agrega el comando &quot;Descargar PDF plano&quot; a la vista Listado de activos para las letras. Este escenario de personalización permite a los usuarios descargar un PDF plano de una sola carta seleccionada.
+Esta personalización se muestra con el escenario que agrega el comando “Descargar PDF aplanado” a la vista Listado de recursos para las cartas. Este escenario de personalización permite a los usuarios descargar un PDF aplanado de una sola carta seleccionada.
 
 ### Requisitos previos {#prerequisites}
 
@@ -39,36 +39,36 @@ Para completar el siguiente escenario o uno similar, necesita conocer:
 * JavaScript
 * Java
 
-## Escenario: Añada un comando a la interfaz de usuario de la lista Letras para descargar la versión de PDF plano de una carta {#addcommandtoletters}
+## Escenario: agregue un comando a la interfaz de usuario de la lista Cartas para descargar la versión de PDF aplanado de una carta {#addcommandtoletters}
 
-Los pasos siguientes agregan un comando &quot;Descargar PDF plano&quot; a la vista Lista de activos para las cartas y permiten a sus usuarios descargar un PDF plano de la carta seleccionada. Mediante estos pasos con el código y los parámetros adecuados, puede añadir otras funciones para un recurso diferente, como diccionarios de datos o textos.
+Los pasos siguientes agregan un comando “Descargar PDF aplanado” a la vista Lista de recursos para las cartas y permiten a sus usuarios descargar un PDF aplanado de la carta seleccionada. Mediante estos pasos con el código y los parámetros adecuados, puede agregar otras funcionalidades para un recurso diferente, como diccionarios de datos o textos.
 
-Para personalizar la Gestión de Correspondencia para permitir que los usuarios descarguen un PDF de letras plano, complete los siguientes pasos:
+Para personalizar Administración de correspondencia para permitir que los usuarios descarguen un PDF aplanado de cartas, complete los siguientes pasos:
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/crx/de` e inicie sesión como administrador.
 
-1. En la carpeta de aplicaciones, cree una carpeta denominada items with path/structure similar a la carpeta de elementos ubicada en la carpeta de selección siguiendo los pasos siguientes:
+1. En la carpeta de aplicaciones, cree una carpeta denominada Elementos con una ruta/estructura similar a la de la carpeta Elementos ubicada en la carpeta de selección, para hacerlo, siga los siguientes pasos:
 
-   1. Haga clic con el botón derecho en el **items** en la siguiente ruta y seleccione **Nodo de superposición**:
+   1. Haga clic con el botón derecho en la carpeta **Elementos** en la siguiente ruta y seleccione **Nodo de superposición**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
       >[!NOTE]
       >
-      >Esta ruta es específica para la creación de una acción que funcione con la selección de uno o varios recursos o letras. Si desea crear una acción que funcione sin selección, debe crear un nodo de superposición para la siguiente ruta y completar los pasos restantes en consecuencia:
+      >Esta ruta es específica para crear una acción que funcione con la selección de uno o varios recursos o cartas. Si desea crear una acción que funcione sin selección, debe crear un nodo de superposición para la siguiente ruta y completar los pasos restantes en consecuencia:
       >
       >
       >`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/default/items`
 
       ![Crear nodo](assets/1_itemscreatenode.png)
 
-   1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
+   1. Asegúrese de que el cuadro de diálogo Nodo de superposición tenga los siguientes valores:
 
-      **Ruta:** /libs/fd/cm/ma/gui/content/massets/jcr:content/body/content/header/items/selection/items
+      **Ruta:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
       **Ubicación:** /apps/
 
-      **Coincidir tipos de nodo:** Seleccionado
+      **Tipos de nodos coincidentes:** Seleccionado
 
       ![Nodo de superposición](assets/2_createnodedownloadflatpdf.png)
 
@@ -76,11 +76,11 @@ Para personalizar la Gestión de Correspondencia para permitir que los usuarios 
 
       Haga clic en **Guardar todo**.
 
-1. En la carpeta de elementos recién creada, añada un nodo para el botón o la acción personalizados en un recurso concreto (Ejemplo: downloadFlatPDF) siguiendo estos pasos:
+1. En la carpeta Elementos recién creada, agregue un nodo para el botón o la acción personalizados en un recurso concreto (Ejemplo: downloadFlatPDF), para hacerlo, siga estos pasos:
 
-   1. Haga clic con el botón derecho en el **items** carpeta y seleccione **Crear** > **Crear nodo**.
+   1. Haga clic con el botón derecho en la carpeta **Elementos** y seleccione **Crear** > **Crear nodo**.
 
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **OK**:
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
 
       **Nombre:** downloadFlatPDF (o el nombre que desee dar a esta propiedad)
 
@@ -95,7 +95,7 @@ Para personalizar la Gestión de Correspondencia para permitir que los usuarios 
         <tr>
         <td><strong>Nombre</strong></td>
         <td><strong>Tipo</strong></td>
-        <td><strong>Valor y descripción</strong></td>
+        <td><strong>Valor  y Descripción</strong></td>
         </tr>
         <tr>
         <td>clase</td>
@@ -105,12 +105,12 @@ Para personalizar la Gestión de Correspondencia para permitir que los usuarios 
         <tr>
         <td>foundation-collection-action</td>
         <td>Cadena</td>
-        <td><p>{"target": ".cq-managementAsset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> puede ser único o múltiple para permitir selecciones de recursos únicos o múltiples en los que se realiza la acción personalizada.</p> <p><strong>type</strong> puede ser una o más (entradas múltiples separadas por comas) de lo siguiente: LETRA,TEXTO,LISTA,CONDICIÓN,DICCIONARIO DE DATOS</p> </td>
+        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> puede ser individual o múltiple para permitir selecciones de recursos individuales o múltiples en los que se realiza la acción personalizada.</p> <p><strong>type</strong> puede ser una o más (entradas múltiples separadas por comas) de lo siguiente: CARTA, TEXTO, LISTA, CONDICIÓN, DICCIONARIO DE DATOS</p> </td>
         </tr>
         <tr>
         <td>icono</td>
         <td>Cadena</td>
-        <td>icon-download<br /> <br /> Icono que la Gestión de Correspondencia muestra a la izquierda del comando/menú. Para ver los diferentes iconos y configuraciones disponibles, consulte <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">Documentación de los iconos de CoralUI</a>.<br /> </td>
+        <td>icon-download<br /> <br /> Icono que muestra Administración de correspondencia a la izquierda del comando/menú. Para ver los diferentes iconos y configuraciones disponibles, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es" target="_blank">Documentación de los iconos de CoralUI</a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -130,35 +130,35 @@ Para personalizar la Gestión de Correspondencia para permitir que los usuarios 
         <tr>
         <td>text</td>
         <td>Cadena</td>
-        <td>Descargar PDF plano (o cualquier otra etiqueta)<br /> <br /> El comando que aparece en la interfaz de listado de recursos</td>
+        <td>Descargar PDF aplanado (o cualquier otra etiqueta)<br /> <br /> El comando que aparece en la interfaz Listado de recursos</td>
         </tr>
         <tr>
-        <td>title</td>
+        <td>título</td>
         <td>Cadena</td>
-        <td>Descargue un PDF plano de la letra seleccionada (o cualquier otra etiqueta/texto alternativo)<br /> <br /> El título es el texto alternativo que se muestra cuando el usuario pasa el ratón sobre el comando personalizado.</td>
+        <td>Descargue un PDF aplanado de la carta seleccionada (o cualquier otra etiqueta/texto alternativo)<br /> <br /> El título es el texto alternativo que se muestra cuando el usuario pasa el ratón sobre el comando personalizado.</td>
         </tr>
         </tbody>
        </table>
 
-1. En la carpeta de aplicaciones, cree una carpeta denominada js con una ruta o estructura similares a la carpeta de elementos ubicada en la carpeta de administración siguiendo los pasos siguientes:
+1. En la carpeta de aplicaciones, cree una carpeta denominada js con una ruta o estructura similares a la carpeta Elementos ubicada en la carpeta de administración, para hacerlo, siga estos pasos:
 
-   1. Haga clic con el botón derecho en el **js** en la siguiente ruta y seleccione **Nodo de superposición**:
+   1. Haga clic con el botón derecho en la carpeta **js** en la siguiente ruta y seleccione **Nodo de superposición**:
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
-   1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
+   1. Asegúrese de que el cuadro de diálogo Nodo de superposición tenga los siguientes valores:
 
       **Ruta:** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
       **Ubicación:** /apps/
 
-      **Coincidir tipos de nodo:** Seleccionado
+      **Tipos de nodos coincidentes:** Seleccionado
 
    1. Haga clic en **Aceptar**. La estructura de carpetas se crea en la carpeta de aplicaciones. Haga clic en **Guardar todo**.
 
-1. En la carpeta js, cree un archivo llamado formaction.js con el código para la gestión de acciones del botón siguiendo los pasos siguientes:
+1. En la carpeta js, cree un archivo llamado formaction.js con el código para administrar la acción del botón, para hacerlo, siga los siguientes pasos:
 
-   1. Haga clic con el botón derecho en el **js** en la siguiente ruta y seleccione **Crear > Crear archivo**:
+   1. Haga clic con el botón derecho en la carpeta **js** en la siguiente ruta y seleccione **Crear > Crear archivo**:
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -226,35 +226,35 @@ Para personalizar la Gestión de Correspondencia para permitir que los usuarios 
       '</div>';
       ```
 
-      El código que agregue en este paso anula el código de la carpeta libs, por lo que copie el código anterior en el archivo formaction.js de la rama /apps. Copiar el código de la rama /libs a la rama /apps garantiza que la funcionalidad anterior también funcione.
+      El código que agregue en este paso anulará el código de la carpeta libs, por lo que copie el código anterior en el archivo formaction.js de la rama /apps. Copiar el código de la rama /libs a la rama /apps garantizará que la funcionalidad anterior también funcione.
 
-      El código anterior es para la gestión de acciones específicas de letras del comando creado en este procedimiento. Para la gestión de acciones de otros recursos, modifique el código JavaScript.
+      El código anterior es para la administración de acciones específicas de cartas del comando creado en este procedimiento. Para administrar acciones de otros recursos, modifique el código JavaScript.
 
-1. En la carpeta de aplicaciones, cree una carpeta denominada items with path/structure similar a la carpeta de elementos ubicada en la carpeta de controladores de acciones siguiendo los pasos siguientes:
+1. En la carpeta de aplicaciones, cree una carpeta denominada Elementos con una ruta/estructura similar a la de la carpeta Elementos ubicada en la carpeta actionhandlers, para hacerlo, siga los siguientes pasos:
 
-   1. Haga clic con el botón derecho en el **items** en la siguiente ruta y seleccione **Nodo de superposición**:
+   1. Haga clic con el botón derecho en la carpeta **Elementos** en la siguiente ruta y seleccione **Nodo de superposición**:
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
-   1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
+   1. Asegúrese de que el cuadro de diálogo Nodo de superposición tenga los siguientes valores:
 
       **Ruta:** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
       **Ubicación:** /apps/
 
-      **Coincidir tipos de nodo:** Seleccionado
+      **Tipos de nodos coincidentes:** Seleccionado
 
    1. Haga clic en **Aceptar**. La estructura de carpetas se crea en la carpeta de aplicaciones.
 
    1. Haga clic en **Guardar todo**.
 
-1. En el nodo de elementos recién creado, añada un nodo para el botón o la acción personalizados en un recurso concreto (Ejemplo: letterpdfdownloader) siguiendo estos pasos:
+1. En el nodo de elementos recién creado, agregue un nodo para el botón o la acción personalizados en un recurso concreto (Ejemplo: letterpdfdownloader), para hacerlo, siga estos pasos:
 
-   1. Haga clic con el botón derecho en la carpeta de elementos y seleccione **Crear > Crear nodo**.
+   1. Haga clic con el botón derecho en la carpeta Elementos y seleccione **Crear > Crear nodo**.
 
-   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **OK**:
+   1. Asegúrese de que el cuadro de diálogo Crear nodo tiene los siguientes valores y haga clic en **Aceptar**:
 
-      **Nombre:** letterpdfdownloader (o el nombre que desee dar a esta propiedad) debe ser único. Si usa un nombre diferente aquí, especifique el mismo en la variable ACTION_URL del archivo formaction.js).
+      **Nombre:** letterpdfdownloader (o el nombre que desee dar a esta propiedad, debe ser único. Si usa un nombre diferente, especifique el mismo en la variable ACTION_URL del archivo formaction.js).
 
       **Tipo:** nt:unstructured
 
@@ -266,11 +266,11 @@ Para personalizar la Gestión de Correspondencia para permitir que los usuarios 
       |---|---|---|
       | sling:resourceType | Cadena | fd/cm/ma/gui/components/admin/clientlibs/admin |
 
-1. Cree un archivo llamado POST.jsp con el código para la gestión de acciones del comando en la siguiente ubicación:
+1. Cree un archivo llamado POST.jsp con el código para administrar acciones del comando en la siguiente ubicación:
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Haga clic con el botón derecho en el **admin** en la siguiente ruta y seleccione **Crear > Crear archivo**:
+   1. Haga clic con el botón derecho en la carpeta **Administrador** en la siguiente ruta y seleccione **Crear > Crear archivo**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
@@ -279,9 +279,9 @@ Para personalizar la Gestión de Correspondencia para permitir que los usuarios 
    1. Haga doble clic en el botón **POST.jsp** para abrirlo en CRX.
    1. Agregue el siguiente código al archivo POST.jsp y haga clic en **Guardar todo**:
 
-      Este código es específico del servicio de procesamiento de letras. Para cualquier otro recurso, agregue las bibliotecas java de ese recurso a este código. Para obtener más información sobre las API de AEM Forms, consulte [API de AEM Forms](https://adobe.com/go/learn_aemforms_javadocs_63_en).
+      Este código es específico del servicio de procesamiento de cartas. Para cualquier otro recurso, agregue las bibliotecas java de ese recurso a este código. Para obtener más información sobre las API de AEM Forms, consulte [API de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
 
-      Para obtener más información sobre AEM bibliotecas, consulte AEM [Componentes](/help/sites-developing/components.md).
+      Para obtener más información sobre las bibliotecas de AEM, consulte [Componentes](/help/sites-developing/components.md) de AEM.
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */
@@ -348,26 +348,26 @@ Para personalizar la Gestión de Correspondencia para permitir que los usuarios 
       %>
       ```
 
-## Descargar PDF plano de una carta utilizando la funcionalidad personalizada {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
+## Descargar PDF aplanado de una carta mediante la funcionalidad personalizada {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
-Después de haber añadido la funcionalidad personalizada para descargar el PDF plano de sus cartas, puede seguir los siguientes pasos para descargar la versión plana del PDF que seleccione:
+Después de haber agregado la funcionalidad personalizada para descargar el PDF aplanado de sus cartas, puede seguir los siguientes pasos para descargar la versión aplanada del PDF que seleccione:
 
 1. Vaya a `https://'[server]:[port]'/[ContextPath]/projects.html` e inicie sesión.
 
-1. Select **Forms > Letras**. Correspondence Management enumera las cartas disponibles en el sistema.
-1. Haga clic en **Select** y, a continuación, haga clic en una carta para seleccionarla.
-1. Select **Más** > **&lt;download flat=&quot;&quot; pdf=&quot;&quot;>** (La funcionalidad personalizada creada con las instrucciones de este artículo). Aparece el cuadro de diálogo Descargar carta como PDF .
+1. Seleccione **Formularios > Cartas**. Administración de correspondencia enumera las cartas disponibles en el sistema.
+1. Haga clic en **Seleccionar** y, a continuación, haga clic en una carta para seleccionarla.
+1. Seleccione **Más** > **&lt;Descargar PDF aplanado>** (La funcionalidad personalizada creada con las instrucciones de este artículo). Aparecerá el cuadro de diálogo Descargar carta como PDF.
 
-   El nombre del elemento de menú, la funcionalidad y el texto alternativo dependen de la personalización creada en [Escenario: Agregue un comando a la interfaz de usuario de la lista Letras para descargar la versión de PDF plano de una carta.](#addcommandtoletters)
+   El nombre del elemento de menú, la funcionalidad y el texto alternativo dependen de la personalización creada en [Escenario: Agregue un comando a la interfaz de usuario de la lista Cartas para descargar la versión de PDF aplanado de una carta.](#addcommandtoletters)
 
-   ![Funcionalidad personalizada: Descargar PDF plano](assets/5_downloadflatpdf.png)
+   ![Funcionalidad personalizada: Descargar PDF aplanado ](assets/5_downloadflatpdf.png)
 
 1. En el cuadro de diálogo Descargar carta como PDF, seleccione el XML relevante desde el que desea rellenar los datos en el PDF.
 
    >[!NOTE]
    >
-   >Antes de descargar la carta como PDF plano, puede crear el archivo XML con los datos de la carta utilizando la variable **Crear informe** .
+   >Antes de descargar la carta como PDF aplanado, puede crear el archivo XML con los datos de la carta mediante la opción **Crear informe**.
 
    ![Descargar carta como PDF](assets/6_downloadflatpdf.png)
 
-   La carta se descarga en su ordenador como PDF plano.
+   La carta se descargará en su ordenador como PDF aplanado.
