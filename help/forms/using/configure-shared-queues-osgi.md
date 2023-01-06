@@ -1,22 +1,22 @@
 ---
-title: Configuración de colas compartidas
+title: Configurar colas compartidas
 seo-title: Configure shared queues
-description: Aprenda a utilizar colas compartidas para flujos de trabajo centrados en Forms en AEM Forms en OSGi.
+description: Aprenda a utilizar colas compartidas en flujos de trabajo centrados en formularios en AEM Forms en OSGi.
 seo-description: Learn how to use shared queues for Forms-centric workflows on AEM Forms on OSGi.
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '841'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Compartir y solicitar acceso a los elementos de la bandeja de entrada de un usuario {#share-and-request-access}
 
-Una cola es una lista de elementos de la Bandeja de entrada AEM de un usuario. Pueden ser elementos asignados a un usuario o elementos compartidos con el grupo al que pertenece un usuario. Puede acceder a la Bandeja de entrada para ver y realizar acciones con un elemento de la Bandeja de entrada. Por ejemplo, compartir un elemento con otro usuario.
+Una cola es una lista de elementos de la Bandeja de entrada de AEM de un usuario. Pueden ser elementos asignados a un usuario o elementos compartidos con el grupo al que pertenece un usuario. Puede acceder a la Bandeja de entrada para ver y realizar acciones con un elemento de la Bandeja de entrada. Por ejemplo, compartir un elemento con otro usuario.
 
 También puede compartir los elementos de la Bandeja de entrada con otro usuario. Una vez que otro usuario tiene acceso a los elementos de la Bandeja de entrada, ese usuario puede reclamar y realizar las acciones adecuadas con los elementos compartidos. Del mismo modo, puede solicitar acceso a los elementos de la Bandeja de entrada de otros usuarios.
 
@@ -26,7 +26,7 @@ El usuario que ha iniciado sesión debe ser miembro del grupo `workflow-users`. 
 
 ## Compartir uno o todos los elementos de la Bandeja de entrada con otro usuario
 
-La Bandeja de entrada AEM permite compartir un solo elemento o todos los elementos de la Bandeja de entrada con otro usuario.
+La Bandeja de entrada de AEM permite compartir un solo elemento o todos los elementos de la Bandeja de entrada con otro usuario.
 
 ### Compartir todos los elementos de la Bandeja de entrada
 
