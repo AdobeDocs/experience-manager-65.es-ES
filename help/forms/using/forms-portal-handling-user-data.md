@@ -10,113 +10,113 @@ discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 role: Admin
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '857'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 # Portal de Forms | Gestión de datos de usuario {#forms-portal-handling-user-data}
 
-[!DNL AEM Forms] portal proporciona componentes que puede utilizar para listar formularios adaptables, formularios HTML5 y otros recursos de Forms en [!DNL AEM Sites] página. Además, se puede configurar para que muestre los borradores y envíe formularios adaptables y formularios HTML5 para un usuario que ha iniciado sesión. Para obtener más información sobre el portal de formularios, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
+El portal de [!DNL AEM Forms] proporciona componentes que puede utilizar para ver una lista de los formularios adaptables, los formularios HTML5 y otros recursos de Forms en la página de [!DNL AEM Sites]. Asimismo, puede configurarla para que muestre los borradores, los formularios adaptables enviados y los formularios HTML5 de un usuario que ha iniciado sesión. Para obtener más información sobre el portal de formularios, consulte [Introducción a la publicación de formularios en un portal](/help/forms/using/introduction-publishing-forms.md).
 
-Cuando un usuario que ha iniciado sesión guarda un formulario adaptable como borrador o lo envía, se muestran en las fichas Borradores y envíos del portal de formularios. Los datos de borradores o formularios enviados se almacenan en el almacén de datos configurado para AEM implementación. Los borradores y envíos de usuarios anónimos no se muestran en la página del portal de formularios; sin embargo, los datos se almacenan en el almacén de datos configurado. Para obtener más información, consulte [Configuración de servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
+Cuando un usuario que ha iniciado sesión guarda un formulario adaptable como borrador o lo envía, se muestra en las pestañas Borradores y Envíos del portal de formularios. Los datos de los borradores o los formularios enviados se almacenan en el almacén de datos configurado para la implementación de AEM. Los borradores y los envíos de los usuarios anónimos no se muestran en la página del portal de formularios; sin embargo, los datos se almacenan en el almacén de datos configurado. Para obtener más información, consulte [Configuración de servicios de almacenamiento para borradores y envíos](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Almacenamiento de datos y datos de usuarios {#user-data-and-data-stores}
 
-El portal de Forms almacena datos para formularios en borrador y enviados en los siguientes casos:
+El portal de formularios almacena los datos de los borradores y los formularios enviados en los siguientes casos:
 
-* La acción de envío configurada en el formulario adaptable es **Acción de envío del portal de Forms**.
-* Para enviar acciones que no sean **Acción de envío del portal de Forms**, el **[!UICONTROL Almacenar datos en el portal de formularios]** está activada en el **[!UICONTROL Envío]** propiedades del contenedor de formulario adaptable.
+* La acción de envío configurada en el formulario adaptable es **Acción de envío del portal de formularios**.
+* En el caso de las acciones de envío distintas de **Acción de envío del portal de formularios**, se habilita la opción **[!UICONTROL Almacenar datos en el portal de formularios]** en las propiedades de **[!UICONTROL Envío]** del contenedor de formulario adaptable.
 
-Para cada borrador y formulario enviado para usuarios anónimos e iniciados sesión, el portal de formularios almacena los siguientes datos:
+El portal de formularios almacena los siguientes datos sobre todos los borradores y los formularios enviados de los usuarios anónimos y los usuarios que han iniciado sesión:
 
-* Metadatos de formulario, como el nombre del formulario, la ruta del formulario, el ID de borrador o envío, la ruta de acceso de los archivos adjuntos y el ID de datos de usuario
-* Datos adjuntos de formulario como bytes de datos
-* Datos de formulario como bytes de datos
+* Los metadatos del formulario, como el nombre del formulario, la ruta, el ID de borrador o envío, la ruta de acceso de los archivos adjuntos y el ID de datos de usuario.
+* Los archivos adjuntos del formulario como bytes de datos.
+* Los datos del formulario como bytes de datos.
 
-Según la persistencia del almacén de datos configurado, los borradores y los datos de formulario enviados se almacenan en las siguientes ubicaciones.
+Según la persistencia del almacén de datos configurado, los datos de los borradores y los formulario enviados se almacenan en las siguientes ubicaciones.
 
 <table>
  <tbody>
   <tr>
    <td><p><strong>Tipo de persistencia</strong></p> </td>
    <td><p><strong>Almacén de datos</strong></p> </td>
-   <td><p><strong>Lugar de residencia</strong></p> </td>
+   <td><p><strong>Ubicación</strong></p> </td>
   </tr>
   <tr>
    <td><p>Predeterminado</p> </td>
-   <td><p>AEM repositorio de instancias de autor y publicación</p> </td>
+   <td><p>Repositorio de instancias de autor y publicación de AEM</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Remoto</p> </td>
-   <td><p>AEM repositorio de instancias de AEM remotas y de autor</p> </td>
+   <td><p>Repositorio de instancias de AEM remotas y de autor de AEM</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Base de datos</p> </td>
-   <td><p>AEM repositorio de instancias de autor y tablas de base de datos</p> </td>
-   <td>Tablas de base de datos <code>data</code>, <code>metadata</code>y <code>additionalmetadata</code></td>
+   <td><p>Repositorio de instancias de autor y tablas de bases de datos de AEM</p> </td>
+   <td><code>data</code>, <code>metadata</code> y tablas de bases de datos <code>additionalmetadata</code></td>
   </tr>
  </tbody>
 </table>
 
-## Acceso y eliminación de datos de usuario {#access-and-delete-user-data}
+## Acceder y eliminar datos de usuario {#access-and-delete-user-data}
 
-Puede acceder a los datos de los formularios borrador y enviados para los usuarios que iniciaron sesión y los anónimos en los almacenes de datos configurados y, si es necesario, eliminarlos.
+Puede acceder a los datos de los borradores y los formularios enviados de los usuarios que han iniciado sesión y los usuarios anónimos desde los almacenes de datos configurados y, si es necesario, eliminarlos.
 
-### AEM instancias {#aem-instances}
+### Instancias de AEM {#aem-instances}
 
-Todos los borradores y los datos de formulario enviados en AEM instancias (autor, publicación o remota) para usuarios conectados y anónimos se almacenan en la `/content/forms/fp/` del repositorio de AEM aplicable. Cada vez que un usuario anónimo o con sesión iniciada guarda un borrador o envía un formulario, se guarda un `draft ID` o `submission ID`, `user data ID`y aleatorio `ID` para cada archivo adjunto (si procede) se genera, que se asocia al proyecto o presentación respectivo.
+Todos los datos de los borradores y los formularios enviados de las instancias de AEM (de autor, publicación o remotas) de los usuarios que han iniciado sesión y los usuarios anónimos se almacenan en el nodo `/content/forms/fp/` del repositorio de AEM aplicable. Cada vez que un usuario anónimo o con la sesión iniciada guarda un borrador o envía un formulario, se genera un `draft ID` o `submission ID`, un `user data ID` y un `ID` aleatorio para cada archivo adjunto (si procede) que se asocian a su respectivo borrador o envío.
 
-#### Acceso a los datos de usuario {#access-user-data}
+#### Acceder a los datos de usuario {#access-user-data}
 
-Cuando un usuario que ha iniciado sesión guarda un borrador o envía un formulario, se crea un nodo secundario con su ID de usuario. Por ejemplo, borradores y datos de envío para Sarah Rose cuyo ID de usuario es `srose` se almacenan en `/content/forms/fp/srose/` en AEM repositorio. Dentro del nodo de ID de usuario, los datos se organizan en una estructura jerárquica.
+Cuando un usuario que ha iniciado sesión guarda un borrador o envía un formulario, se crea un nodo secundario con su ID de usuario. Por ejemplo, los datos de los borradores y los envíos de Sarah Rose, cuyo ID de usuario es `srose`, se almacenan en el nodo `/content/forms/fp/srose/` del repositorio de AEM. En del nodo del ID de usuario, los datos se organizan en una estructura jerárquica.
 
-En la tabla siguiente se explica cómo funcionan los datos de todos los borradores de `srose` se almacena en AEM repositorio.
+La siguiente tabla explica cómo se almacenan los datos de todos los borradores de `srose` en el repositorio de AEM.
 
 >[!NOTE]
 >
->Una estructura exacta como `drafts` se replica para formularios enviados para `srose` en el `/content/forms/fp/srose/submit/` nodo .
+>Una estructura idéntica a `drafts` se replica para los formularios enviados de `srose` en el nodo `/content/forms/fp/srose/submit/`.
 >
->Todos los proyectos y presentaciones de `anonymous` los usuarios se almacenan en la sección `/content/forms/fp/anonymous/` , que organiza borradores y envíos para todos los usuarios anónimos en el `draft` y `submit` nodos.
+>Todos los borradores y los envíos de los usuarios `anonymous` se almacenan en el nodo `/content/forms/fp/anonymous/`, el cual organiza los borradores y los envíos de todos los usuarios anónimos en los nodos `draft` y `submit`.
 
 | Nodo | Descripción |
 |---|---|
-| `/content/forms/fp/srose/drafts` | Datos de nodo de contenedor para todos los borradores del usuario |
-| `/content/forms/fp/srose/drafts/attachments/` | Organiza todos los archivos adjuntos para el usuario en función del ID de borrador |
-| `/content/forms/fp/srose/drafts/attachments/<ID>` | Contiene datos adjuntos del ID seleccionado en formato binario |
-| `/content/forms/fp/srose/drafts/metadata/` | Organiza los metadatos del formulario para el usuario en función del ID de borrador |
-| `/content/forms/fp/srose/drafts/metadata/<draft ID>` | Contiene metadatos de formulario para el ID de borrador seleccionado |
-| `/content/forms/fp/srose/drafts/data/` | Organiza los datos de los formularios para el usuario en función de su ID |
-| `/content/forms/fp/srose/drafts/data/<user data ID>` | Contiene datos de formulario para el ID de datos de usuario seleccionado en formato binario |
+| `/content/forms/fp/srose/drafts` | Los datos de los nodos de contenedor de todos los borradores del usuario |
+| `/content/forms/fp/srose/drafts/attachments/` | Organiza todos los archivos adjuntos del usuario en función del ID de borrador |
+| `/content/forms/fp/srose/drafts/attachments/<ID>` | Contiene los archivos adjuntos del ID seleccionado en formato binario |
+| `/content/forms/fp/srose/drafts/metadata/` | Organiza los metadatos de los formularios del usuario en función del ID de borrador |
+| `/content/forms/fp/srose/drafts/metadata/<draft ID>` | Contiene los metadatos de los formularios del ID de borrador seleccionado |
+| `/content/forms/fp/srose/drafts/data/` | Organiza los datos de los formularios del usuario en función del ID de datos de usuario |
+| `/content/forms/fp/srose/drafts/data/<user data ID>` | Contiene los datos de formulario del ID de datos de usuario seleccionado en formato binario |
 
-#### Eliminación de los datos de usuario {#delete-user-data}
+#### Eliminar los datos de usuario {#delete-user-data}
 
-Para eliminar por completo los datos de usuario de borradores y envíos para un usuario que ha iniciado sesión desde AEM sistemas, debe eliminar la variable `user ID` para un usuario específico del nodo de autor. Debe eliminar manualmente los datos de todas las instancias de AEM aplicables.
+Para eliminar por completo los datos de usuario de los borradores y los envíos de un usuario que ha iniciado sesión de los sistemas de AEM, debe eliminar el nodo `user ID` de un usuario específico del nodo Autor. Debe eliminar manualmente los datos de todas las instancias de AEM aplicables.
 
-Los borradores y los datos de envío de todos los usuarios anónimos se almacenan dentro de los `drafts` y `submit` nodos bajo `/content/forms/fp/anonymous`. No hay ningún método para encontrar datos para un usuario anónimo en particular a menos que se conozca alguna información identificable. En este caso, puede buscar la información que identifica al usuario anónimo en AEM repositorio y eliminar manualmente el nodo que lo contiene de todas las instancias de AEM aplicables para eliminar datos del sistema AEM. Sin embargo, para eliminar los datos de todos los usuarios anónimos, puede eliminar la variable `anonymous` para eliminar borradores y enviar datos para todos los usuarios anónimos.
+Los datos de los borradores y los envíos de todos los usuarios anónimos se almacenan en los nodos comunes `drafts` y `submit` en `/content/forms/fp/anonymous`. No existe ningún método para buscar los datos de un usuario anónimo en particular a menos que se conozca algún tipo de información identificable. En ese caso, puede buscar la información que identifica al usuario anónimo en el repositorio de AEM y eliminar manualmente el nodo que lo contiene de todas las instancias de AEM aplicables para eliminar los datos del sistema de AEM. Sin embargo, si desea eliminar los datos de todos los usuarios anónimos, puede eliminar el nodo `anonymous` para eliminar los datos de los borradores y los envíos de todos los usuarios anónimos.
 
 ### Base de datos {#database}
 
-Cuando AEM está configurado para almacenar datos en una base de datos, los datos de borrador y envío del portal de formularios se almacenan en las siguientes tablas de base de datos para los usuarios que iniciaron sesión y los anónimos:
+Cuando AEM está configurado para almacenar datos en una base de datos, los datos de los borradores y los envíos del portal de formularios se almacenan en las siguientes tablas de bases de datos para los usuarios que han iniciado sesión y los usuarios anónimos:
 
 * data
 * metadatos
 * metadatos adicionales
 
-#### Acceso a los datos de usuario {#access-user-data-1}
+#### Acceder a los datos de usuario {#access-user-data-1}
 
-Para acceder a los datos de borradores y envíos de usuarios anónimos y conectados a la base de datos, ejecute el siguiente comando de base de datos. En la consulta, reemplace `logged-in user` con el ID de usuario cuyos datos desea acceder a o con `anonymous` para usuarios anónimos.
+Para acceder a los datos de los borradores y los envíos de los usuarios que han iniciado sesión y los usuarios anónimos en las tablas de bases de datos, ejecute el siguiente comando de base de datos. En la consulta, reemplace `logged-in user` por el ID de usuario a cuyos datos desea acceder, o por `anonymous` si se trata de un usuario anónimo.
 
 ```sql
 select * from metadata, data, additionalmetadatatable where metadata.owner = 'logged-in user' and metadata.id = additionalmetadatatable.id and metadata.userdataID = data.id
 ```
 
-#### Eliminación de los datos de usuario {#delete-user-data-1}
+#### Eliminar los datos de usuario {#delete-user-data-1}
 
-Para eliminar borradores y enviar datos para un usuario que ha iniciado sesión desde las tablas de la base de datos, ejecute el siguiente comando de base de datos. En la consulta, reemplace `logged-in user` con el ID de usuario cuyos datos desea eliminar o con `anonymous` para usuarios anónimos. Tenga en cuenta que para eliminar de la base de datos los datos de un usuario anónimo en particular, debe encontrarlos utilizando información identificable y eliminarlos de las tablas de la base de datos que contengan la información.
+Para eliminar los datos de los borradores y los envíos de un usuario que ha iniciado sesión desde las tablas de bases de datos, ejecute el siguiente comando de base de datos. En la consulta, reemplace `logged-in user` por el ID de usuario cuyos datos desea eliminar, o por `anonymous` si se trata de un usuario anónimo. Tenga en cuenta que para eliminar los datos de un usuarios anónimo en particular de la base de datos, debe localizarlos utilizando algún tipo de información identificable y eliminarlos de las tablas de bases de datos que contengan la información.
 
 ```sql
 DELETE FROM metadata, data, additionalmetadatatable USING metadata INNER JOIN data ON metadata.userdataID = data.id INNER JOIN additionalmetadatatable ON metadata.id = additionalmetadatatable.id WHERE metadata.owner = 'logged-in user'
