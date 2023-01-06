@@ -1,7 +1,7 @@
 ---
-title: Recorrido por FOIA del sitio de referencia We.Gov
+title: Tutorial del sitio de referencia de We.Gov para el cumplimiento de la ley FOIA
 seo-title: We.Gov reference site FOIA walkthrough
-description: Consulte la guía del sitio de referencia de We.Gov para comprender cómo AEM Forms ayuda a los gobiernos a recibir e impartir la información solicitada por individuos bajo la Ley de Libertad de Información.
+description: Consulte la guía del sitio de referencia de We.Gov para comprender cómo AEM Forms ayuda a los gobiernos a recibir y proporcionar la información solicitada por individuos en virtud de la Ley de Libertad de Información (FOIA).
 seo-description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments receive and impart information requested by individuals under the Freedom of Information Act.
 uuid: 65d4233c-8dad-4e5e-8e39-22eb4f145adc
 topic-tags: introduction
@@ -9,105 +9,105 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cef8f597-7935-4d98-aacf-9981470ab620
 exl-id: 57b5ce89-6b01-4087-a485-6d9696f06378
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '834'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Recorrido por FOIA del sitio de referencia We.Gov {#we-gov-reference-site-foia-walkthrough}
+# Tutorial del sitio de referencia de We.Gov para el cumplimiento de la ley FOIA {#we-gov-reference-site-foia-walkthrough}
 
-## Situación de la Ley de libertad de información del sitio de referencia {#reference-site-freedom-of-information-act-scenario}
+## Escenario del sitio de referencia para el cumplimiento de la Ley de Libertad de Información {#reference-site-freedom-of-information-act-scenario}
 
-We.Gov es una organización estatal que permite a los padres adoptivos inscribirse para recibir apoyo infantil si adoptan a un niño. We.Gov también permite a los padres solicitar información de los siguientes departamentos gubernamentales bajo la ley de libertad de información:
+We.Gov es un organismo público que permite a los padres adoptivos inscribirse para recibir una pensión alimenticia si adoptan a un niño. We.Gov también permite a los padres solicitar información de los siguientes departamentos gubernamentales en virtud de la Ley de Libertad de Información:
 
-* Organismo de Logística de Defensa
-* Departamento de Defensa Oficina del Inspector General
-* Departamento de Justicia - Oficina de Política de la Información
+* Agencia de Logística de Defensa
+* Oficina del Inspector General del Departamento de Defensa
+* Oficina de Políticas de Información del Departamento de Justicia
 * Departamento de la Marina
-* Organismo de Protección del Medio Ambiente
+* Agencia de Protección Medioambiental
 
-Para obtener más información sobre la Ley de Libertad de Información, consulte [www.foia.gov](https://www.foia.gov).
+Para obtener más información sobre la Ley de Libertad de Información, consulte [www.foia.gov/index-es.html](https://www.foia.gov/index-es.html).
 
 El escenario incluye las siguientes personas:
 
-* Sarah Rose, la persona que solicita información bajo
-* John Jacobs, la persona que gestiona la solicitud, la reenvía al departamento correspondiente
-* Gloria Rios, la empleada del gobierno que facilita la información según la solicitud
+* Sarah Rose, la persona que solicita información en virtud de la ley;
+* John Jacobs, la persona que gestiona la solicitud y la reenvía al departamento correspondiente;
+* Gloria Ríos, la funcionaria del gobierno que facilita la información según la solicitud.
 
-## Sarah inicia la solicitud de información bajo FOIA {#sarah-initiates-request-for-information-under-foia}
+## Sarah inicia la solicitud de información en virtud de la ley FOIA. {#sarah-initiates-request-for-information-under-foia}
 
-Según la Ley de Libertad de Información, Sarah solicita copia de los registros de casos de la Administración para Niños y Familias durante años (año fiscal) 2013-2016. Sarah presenta esta solicitud al Departamento de Justicia - Oficina de Política de Información y también significa que está dispuesta a pagar hasta 100 dólares por los costos de impresión y franqueo.
+En virtud de la Ley de Libertad de Información, Sarah solicita una copia de los registros de los casos atendidos por la Administración para Niños y Familias durante los ejercicios de 2013 a 2016. Sarah presenta esta solicitud en la Oficina de Políticas de Información del Departamento de Justicia, y también indica que está dispuesta a pagar un máximo de 100 dólares en concepto de gastos de impresión y envío.
 
 ### Funcionamiento {#how-it-works}
 
-### Véalo usted mismo {#see-it-yourself}
+### Puede verlo usted mismo {#see-it-yourself}
 
-En el explorador, abra `https://<hostname>:<PublishPort>/wegov`. En el sitio de We.Gov, pulse Aplicaciones > Todas las aplicaciones. En la página Todas las aplicaciones, pulse Aplicar en Solicitud para solicitud FOIA.
+En el explorador, abra `https://<hostname>:<PublishPort>/wegov`. En el sitio de We.Gov, pulse Solicitudes> Todas las solicitudes. En la página Todas las solicitudes, pulse Solicitar en Solicitud FOIA.
 
-## Sarah comienza su solicitud de información bajo FOIA {#sarah-starts-her-application-for-information-under-foia}
+## Sarah comienza su solicitud de información en virtud de la ley FOIA {#sarah-starts-her-application-for-information-under-foia}
 
-Sarah hace clic **Aplicar** y en la página del formulario de solicitud de la Ley de Libertad de Información, Sarah introduce información que incluye lo siguiente:
+Sarah hace clic en **Solicitar**. En la página del formulario de solicitud de la Ley de Libertad de Información, introduce, entre otra, la siguiente información:
 
-* **Agencia:** Sarah especifica la agencia a la que se dirigió la solicitud como Departamento de Justicia - Oficina de Política de Información.
+* **Organismo:** Sarah especifica que el organismo al que ha dirigido la solicitud es la Oficina de Políticas de Información del Departamento de Justicia.
 
-* **Pagará Hasta**: Sarah especifica que está dispuesta a pagar hasta USD 100 por gastos de impresión y franqueo.
-* **Describir la solicitud en detalle**: Sarah especifica &quot;Solicitando copia de los registros de casos de la Administración para Niños y Familias para los años fiscales 2013 a 2016&quot;.
+* **Pagará un máximo de**: Sarah especifica que está dispuesta a pagar un máximo de 100 dólares en concepto de gastos de impresión y envío.
+* **Describir la solicitud en detalle**: Sarah especifica &quot;Solicitud de una copia de los registros de los casos atendidos por la Administración para Niños y Familias durante los ejercicios fiscales de 2013 a 2016&quot;.
 
-![Solicitud de una copia de los registros de casos de la Administración para la Infancia y la Familia correspondientes a los ejercicios económicos 2013 a 2016](assets/sarahfiosform.png)
+![Solicitud de una copia de los registros de los casos atendidos por la Administración para Niños y Familias durante los ejercicios fiscales de 2013 a 2016](assets/sarahfiosform.png)
 
-Solicitud de una copia de los registros de casos de la Administración para la Infancia y la Familia correspondientes a los ejercicios económicos 2013 a 2016
+Solicitud de una copia de los registros de los casos atendidos por la Administración para Niños y Familias durante los ejercicios fiscales de 2013 a 2016
 
-En cualquier momento, Sarah puede pulsar Guardar para Guardar el borrador del formulario y volver más tarde para rellenar el formulario y enviarlo. Sarah presenta el formulario.
+En cualquier momento, Sarah puede pulsar Guardar para guardar el borrador del formulario y volver más tarde para rellenarlo y enviarlo. Sarah envía el formulario.
 
 >[!NOTE]
 >
->El flujo de trabajo de reanudación por correo electrónico solo funciona con usuarios que iniciaron sesión. En el escenario del sitio de referencia, asegúrese de que se añade la usuaria Sarah Rose. Las credenciales de inicio de sesión de Sarah son `srose/password`.
+>El flujo de trabajo de reanudación por correo electrónico funciona únicamente con usuarios que han iniciado sesión. Asegúrese de añadir el usuario Sarah Rose en el escenario del sitio de referencia. Las credenciales de inicio de sesión de Sarah son `srose/password`.
 
-## John Jacobs recibe y aprueba la solicitud {#john-jacobs-receives-and-approves-the-application}
+## John Jacobs recibe y aprueba la solicitud. {#john-jacobs-receives-and-approves-the-application}
 
-John Jacobs recibe las peticiones y las redirige a la persona correcta. AEM Bandeja de entrada le permite ver todas las solicitudes enviadas en un solo lugar.
+John Jacobs recibe las peticiones y las redirige a la persona indicada. La Bandeja de entrada AEM le permite ver todas las solicitudes enviadas desde un mismo sitio.
 
 ### Funcionamiento {#how-it-works-1}
 
-Cuando Sarah rellena y envía la solicitud FOIA, se envía un registro de la solicitud a la bandeja de entrada de John Jacobs. John Jacobs puede consultar la solicitud presentada y aceptarla o rechazarla.
+Cuando Sarah rellena y envía la solicitud FOIA, se envía un registro de la solicitud a la bandeja de entrada de John Jacobs. John Jacobs puede consultar la solicitud presentada y aceptarla o rechazarla.
 
-### Véalo usted mismo {#see-it-yourself-1}
+### Puede verlo usted mismo {#see-it-yourself-1}
 
-Puede acceder a la bandeja de entrada de AEM en https://&lt;***hostname***>:&lt;***Puerto de publicación***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Inicie sesión en la bandeja de entrada AEM, utilizando jjacobs/contraseña como nombre de usuario/contraseña para John Jacobs, y vea la aplicación FOIA. Para obtener información sobre el uso de AEM Bandeja de entrada para tareas de flujo de trabajo centradas en formularios, consulte [Administrar aplicaciones y tareas de Forms en AEM bandeja de entrada](/help/forms/using/manage-applications-inbox.md).
+Puede acceder a la bandeja de entrada AEM en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Inicie sesión en la Bandeja de entrada AEM utilizando jjacobs/password como el nombre de usuario/contraseña de John Jacobs y vea la solicitud FOIA. Para obtener información sobre el uso de la Bandeja de entrada AEM para tareas de flujo de trabajo centradas en Forms, consulte [Administrar aplicaciones y tareas de Forms en Bandeja de entrada AEM](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
-John Jacobs puede ver, aprobar o rechazar la solicitud desde el panel de aplicaciones. John Jacobs selecciona y abre los detalles de la solicitud y, después de revisarla, la aprueba.
+John Jacobs puede ver, aprobar o rechazar la solicitud desde el panel de solicitudes. John Jacobs selecciona y abre los detalles de la solicitud y, después de revisarla, la aprueba.
 
 ![johnjacobstaskdetail-1](assets/johnjacobstaskdetail-1.png)
 
-### <strong>Sarah recibe un correo electrónico de reconocimiento</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
+### <strong>Sarah recibe un correo electrónico de confirmación</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
-Después de que John Jacobs apruebe la solicitud, Sarah recibe un correo electrónico de reconocimiento del sitio de We.Gov. Sarah es informada sobre las tarifas y el tiempo necesario para procesar su solicitud. El correo electrónico también incluye detalles de correo electrónico y teléfono que sarah puede contactar para recibir actualizaciones en su aplicación.
+Una vez que John Jacobs aprueba la solicitud, Sarah recibe un correo electrónico de confirmación del sitio de We.Gov. Sarah recibe información sobre las tarifas y el tiempo necesario para procesar su solicitud. El correo electrónico también incluye detalles sobre el correo electrónico y el teléfono que Sarah puede utilizar para recibir actualizaciones sobre la solicitud.
 
-![sarahroseemail](assets/sarahroseemail.png)
+![correo_electrónico_Sarah_Rose](assets/sarahroseemail.png)
 
-## Gloria recibe la solicitud de FOIA para la aprobación de segundo nivel {#gloria-receives-the-foia-request-for-second-level-approval}
+## Gloria recibe la solicitud FOIA para la aprobación de segundo nivel {#gloria-receives-the-foia-request-for-second-level-approval}
 
-Después de que John Jacobs rellene la información requerida y apruebe la solicitud de Sarah, las solicitudes van a Gloria Rios para la aprobación final. Gloria revisa el documento de registro adjunto y aprueba la solicitud.
+Una vez que John Jacobs rellena la información requerida y aprueba la solicitud de Sarah, esta pasa a Gloria Ríos para su aprobación final. Gloria revisa el documento de registro adjunto y aprueba la solicitud.
 
-![gloriosinbox](assets/gloriariosinbox.png)
+![bandeja_entrada_Gloria_Ríos](assets/gloriariosinbox.png)
 
 ### Funcionamiento {#how-it-works-2}
 
-Cuando John Jacobs aprueba la solicitud FOIA, se crea un PDF o documento de registro de la aplicación y se envía a la bandeja de entrada de Gloria Rios. Gloria puede ver la solicitud enviada y aprobarla o rechazarla.
+Cuando John Jacobs aprueba la solicitud FOIA, se crea un PDF o un documento de registro de la solicitud y se envía a la bandeja de entrada de Gloria Ríos. Gloria puede ver la solicitud enviada y aprobarla o rechazarla.
 
 ### Véalo usted mismo {#see-for-yourself}
 
-Puede acceder a la bandeja de entrada de AEM en https://&lt;***hostname***>:&lt;***Puerto de publicación***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Inicie sesión en la bandeja de entrada AEM utilizando grios/password como nombre de usuario/contraseña para Gloria Rios, y vea la solicitud FOIS.
+Puede acceder a la bandeja de entrada AEM en https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Inicie sesión en la Bandeja de entrada AEM utilizando grios/password como el nombre de usuario/contraseña de Gloria Ríos y vea la solicitud FOIA.
 
-Gloria abre la solicitud y examina los detalles de la solicitud FOIA. Después de revisar los detalles de la solicitud y comprobar la viabilidad de proporcionar los documentos requeridos, Gloria aprueba la solicitud.
+Gloria abre la solicitud y examina los detalles de la solicitud FOIA. Después de revisar los detalles de la solicitud y estudiar la viabilidad de proporcionar los documentos requeridos, Gloria aprueba la solicitud.
 
-![gloriariosaprobaciones](assets/gloriariosapproves.png)
+![aprobación_Gloria_Ríos](assets/gloriariosapproves.png)
 
-## Sarah recibe la notificación de que su solicitud está aprobada {#sarah-receives-notification-that-her-request-is-approved}
+## Sarah recibe la notificación de que su solicitud ha sido aprobada {#sarah-receives-notification-that-her-request-is-approved}
 
-Después de que Gloria apruebe la solicitud de FOIA, Sarah recibe un correo electrónico que le notifica que su solicitud está aprobada. El correo electrónico también incluye información sobre el calendario provisional para proporcionar el documento y los detalles de contacto para el seguimiento de la solicitud.
+Una vez que Gloria aprueba la solicitud FOIA, Sarah recibe un correo electrónico notificándole que su solicitud ha sido aprobada. El correo electrónico también contiene información sobre los plazos provisionales en los que se entregará el documento y los datos de contacto para el seguimiento de la solicitud.
 
-![sarahroseemailapproval](assets/sarahroseemailapproval.png)
+![correo_aprobación_Sarah_Rose](assets/sarahroseemailapproval.png)
