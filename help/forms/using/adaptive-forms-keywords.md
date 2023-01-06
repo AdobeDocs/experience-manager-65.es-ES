@@ -1,5 +1,5 @@
 ---
-title: Palabras clave de formularios adaptables
+title: Palabras clave en formularios adaptables
 seo-title: Adaptive forms keywords
 description: Estas palabras reservadas no se pueden usar como identificadores en los formularios adaptables.
 seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
@@ -10,15 +10,15 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms
 exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '208'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
-# Palabras clave de formularios adaptables {#adaptive-forms-keywords}
+# Palabras clave en formularios adaptables {#adaptive-forms-keywords}
 
-Las palabras clave de los formularios adaptables son identificadores predefinidos y reservados que tienen un significado especial para los formularios adaptables. Estas palabras clave no se pueden usar como identificadores en los formularios adaptables. En la tabla siguiente se enumeran todas las palabras clave que son identificadores reservados para formularios adaptables.
+Las palabras clave de los formularios adaptables son identificadores reservados y predefinidos que tienen un significado especial en los formularios adaptables. Estas palabras clave no se pueden usar como identificadores en formularios adaptables. En la siguiente tabla se enumeran todas las palabras clave que son identificadores reservados en formularios adaptables.
 
 <table>
  <tbody>
@@ -240,4 +240,4 @@ Las palabras clave de los formularios adaptables son identificadores predefinido
  </tbody>
 </table>
 
-Aparte de las palabras clave enumeradas anteriormente, evite utilizar nombres que sean similares a [API de JavaScript de formularios adaptables](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Además de las palabras clave enumeradas anteriormente, evite utilizar nombres que sean similares a las [API de JavaScript utilizadas en los formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
