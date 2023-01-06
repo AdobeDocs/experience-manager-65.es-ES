@@ -1,7 +1,7 @@
 ---
-title: AEM Forms en grupos y privilegios OSGi
+title: AEM Forms en grupos y privilegios de OSGi
 seo-title: AEM Forms on OSGi Groups and Privileges
-description: Asignar usuarios a los grupos para administrar AEM Forms en OSGi
+description: Asignar usuarios a los grupos para administrar AEM Forms en OSGi
 seo-description: Assign users to the groups to manage AEM Forms on OSGi
 uuid: f269a206-356d-4cee-b449-05c5da87121a
 contentOwner: anujkapo
@@ -13,17 +13,17 @@ docset: aem65
 role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 14%
+ht-degree: 100%
 
 ---
 
-# AEM Forms en grupos y privilegios OSGi{#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms en grupos y privilegios de OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
-Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar políticas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de AEM. Estas políticas controlan los privilegios de los usuarios que forman parte del grupo.
+Puede [crear grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) y asignar políticas y [usuarios](/help/sites-administering/user-group-ac-admin.md#user-administration) a los grupos de AEM. Estas políticas controlan los permisos de los usuarios que forman parte del grupo.
 
-Una vez realizada la instalación [Paquete de complementos de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), los grupos mencionados en este artículo, como usuarios de formularios y usuarios avanzados de formularios, están disponibles automáticamente para su asignación. La siguiente tabla enumera las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
+Una vez realizada la instalación del [paquete de complementos de AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), los grupos mencionados en este artículo, como forms-users y forms-power-user, estarán disponibles automáticamente para su asignación. La siguiente tabla muestra una lista de las tareas que un usuario puede realizar para AEM Forms en OSGi en función de las asignaciones de grupo:
 
 <table>
  <tbody>
@@ -32,11 +32,11 @@ Una vez realizada la instalación [Paquete de complementos de AEM Forms](../../f
    <td>Tareas</td> 
   </tr>
   <tr>
-   <td>usuarios de formularios <sup>[1]</sup></td> 
+   <td>forms-users <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Crear, previsualizar, publicar y enviar formularios adaptables</li> 
-     <li>Crear, previsualizar y publicar comunicaciones interactivas y fragmentos de documento</li> 
+     <li>Crear, previsualizar y publicar comunicaciones interactivas y fragmentos de documentos</li> 
      <li>Cargar recursos en una instancia de AEM</li> 
      <li>Crear temáticas</li> 
     </ul> </td> 
@@ -46,26 +46,26 @@ Una vez realizada la instalación [Paquete de complementos de AEM Forms](../../f
    <td>
     <ul> 
      <li>Crear, previsualizar, publicar y enviar formularios adaptables</li> 
-     <li>Crear, previsualizar y publicar comunicaciones interactivas y fragmentos de documento</li> 
-     <li>Creación de secuencias de comandos para formularios adaptables mediante el editor de código</li> 
+     <li>Crear, previsualizar y publicar comunicaciones interactivas y fragmentos de documentos</li> 
+     <li>Crear scripts para formularios adaptables mediante el editor de código</li> 
      <li>Cargar recursos, incluidos scripts</li> 
      <li>Crear temáticas</li> 
      <li>Importar paquetes que contengan XDP</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>forms-submit-reviewers</td> 
+   <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
-     <li>Revisar presentaciones</li> 
-     <li>Aprobar o rechazar presentaciones</li> 
+     <li>Revisar envíos</li> 
+     <li>Aprobar o rechazar envíos</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>template-authors <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>Creación y previsualización de formularios adaptables o plantillas de comunicaciones interactivas</li> 
+     <li>Crear y previsualizar formularios adaptables o plantillas de comunicaciones interactivas</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -79,36 +79,36 @@ Una vez realizada la instalación [Paquete de complementos de AEM Forms](../../f
    <td>cm-agent-users</td> 
    <td>
     <ul> 
-     <li>Acceda a cartas de gestión de correspondencia o comunicaciones interactivas mediante la interfaz de usuario del agente</li> 
+     <li>Acceder a cartas de Administración de correspondencia o Interactive Communications mediante la interfaz de usuario del agente</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
     <ul> 
-     <li>Creación de una aplicación de bandeja de entrada</li> 
-     <li>Cree un modelo del flujo de trabajo</li> 
+     <li>Crear una aplicación de la bandeja de entrada</li> 
+     <li>Crear un modelo del flujo de trabajo</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>flujo de trabajo-usuarios</td> 
+   <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Uso de aplicaciones AEM bandeja de entrada<br /> <strong>Nota: </strong>Debe tener asignaciones de cm-agent-users y de grupo de flujo de trabajo-usuarios para acceder a la interfaz de usuario de Interactive Communications Agent en AEM bandeja de entrada.</li> 
+     <li>Usar aplicaciones de la Bandeja de entrada de AEM<br /> <strong>Nota:</strong> Debe tener asignaciones de los grupos cm-agent-users y workflow-users para acceder a la interfaz de usuario del agente de Interactive Communications en la Bandeja de entrada de AEM.</li> 
      <li>Administrar instancias de flujo de trabajo</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>fd-administradores</td> 
+   <td>fd-administrators</td> 
    <td>
     <ul> 
-     <li>Configurar generador de PDF</li> 
-     <li>Configurar carpeta vigilada</li> 
+     <li>Configurar PDF Generator</li> 
+     <li>Configurar carpetas inspeccionadas</li> 
      <li>Administrar aplicaciones de flujo de trabajo</li> 
     </ul> </td> 
   </tr>
  </tbody>
 </table>
 
-1. El usuario con privilegios de grupo de usuarios de formularios no puede escribir secuencias de comandos para formularios adaptables.
-1. El usuario con privilegios de grupo de autores de plantillas no puede escribir secuencias de comandos para plantillas.
+1. El usuario con privilegios del grupo forms-users no puede escribir scripts para formularios adaptables.
+1. El usuario con privilegios del grupo de autores de plantillas no puede escribir scripts para plantillas.
