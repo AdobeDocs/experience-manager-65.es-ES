@@ -11,9 +11,9 @@ discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -21,28 +21,28 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-Mediante la IU Crear Correspondencia de Gestión de Correspondencia, puede guardar borradores de instancias de carta en curso y hay instancias de carta enviadas.
+Mediante la IU Crear correspondencia de Administración de correspondencia, puede guardar borradores de instancias de carta en curso y hay instancias de carta enviadas.
 
-Correspondence Management proporciona API que permiten crear la interfaz de listado para trabajar con instancias de cartas enviadas o borradores. Las API enumeran y abren las instancias de carta en borrador y enviadas de un agente, de modo que el agente pueda seguir trabajando en las instancias de carta en borrador o enviadas.
+Administración de correspondencia proporciona varias API que permiten crear la interfaz del listado para trabajar con instancias de cartas enviadas o borradores. Las API enumeran y abren las instancias de carta en Borradores y enviados de un agente, de modo que el agente pueda trabajar en las instancias de carta en Borradores o enviados.
 
-## Obtención de instancias de letras {#fetching-letter-instances}
+## Obtener instancias de cartas {#fetching-letter-instances}
 
-Correspondence Management expone las API para recuperar instancias de carta a través del servicio LetterInstanceService.
+Administración de correspondencia expone las API para recuperar instancias de carta a través del servicio LetterInstanceService.
 
 | Método | Descripción |
 |--- |--- |
-| getAllLetterInstances | Obtiene instancias de letras basadas en el parámetro de consulta de entrada. Para recuperar todas las instancias de letras, pase el parámetro de consulta como nulo. |
-| getLetterInstance | Obtiene la instancia de letra especificada en función del ID de instancia de letra. |
-| letterInstanceExists | Comprueba si existe una LetterInstance por el nombre dado. |
+| getAllLetterInstances | Obtiene instancias de cartas basadas en el parámetro de consulta de entrada. Para recuperar todas las instancias de cartas, apruebe el parámetro de consulta como nulo. |
+| getLetterInstance | Obtiene la instancia de carta especificada en función del ID de instancia de carta. |
+| letterInstanceExists | Comprueba si existe una instancia de carta por el nombre dado. |
 
 >[!NOTE]
 >
 >LetterInstanceService es un servicio OSGI y su instancia se puede recuperar mediante @Reference en Java
->Class o sling.getService(LetterInstanceService. Clase ) en JSP.
+>Class o sling.getService(LetterInstanceService. Class ) en JSP.
 
-### Uso de getAllLetterInstances {#using-nbsp-getallletterinstances}
+### Usar getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-La siguiente API encuentra las instancias de la carta en función del objeto de consulta (tanto Enviado como Borrador). Si el objeto de consulta es nulo entonces, devuelve todas las instancias de letras. Esta API devuelve la lista de [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objetos, que pueden utilizarse para extraer información adicional de la instancia de letra
+La siguiente API encuentra las instancias de la carta en función del objeto de consulta (tanto enviados como borradores). Si el objeto de consulta es nulo, devolverá todas las instancias de cartas. Esta API devuelve la lista de objetos [LetterInstanceVO](https://helpx.adobe.com/es/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), que pueden utilizarse para extraer información adicional de la instancia de carta
 
 **Sintaxis**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -54,12 +54,12 @@ La siguiente API encuentra las instancias de la carta en función del objeto de 
   </tr>
   <tr>
    <td>query</td>
-   <td>El parámetro de consulta se utiliza para buscar/filtrar la instancia Carta. En este caso, la consulta solo admite atributos o propiedades de nivel superior del objeto. La consulta consiste en instrucciones y el "attributeName" utilizado en el objeto de instrucción debe ser el nombre de la propiedad en el objeto de instancia Letter .<br /> </td>
+   <td>El parámetro query se utiliza para buscar/filtrar la instancia Carta. En este caso, query solo admite atributos o propiedades de nivel superior del objeto. Query consiste en instrucciones y el “attributeName” utilizado en el objeto de instrucción debe ser el nombre de la propiedad en el objeto de la instancia Carta.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-#### Ejemplo 1: Recupere todas las instancias de letras del tipo ENVIADO {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### Ejemplo 1: Recupere todas las instancias de cartas del tipo ENVIADO {#example-fetch-all-the-letter-instances-of-type-submitted}
 
 El siguiente código devuelve la lista de instancias de carta enviadas. Para obtener solo borradores, cambie el `LetterInstanceType.COMPLETE.name()` a `LetterInstanceType.DRAFT.name().`
 
@@ -78,9 +78,9 @@ query.addStatement(statementForInstanceType);
 submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 ```
 
-#### Ejemplo 2: Recuperación de todas las instancias de carta enviadas por un usuario y el tipo de instancia de carta es BORRADOR {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}
+#### Ejemplo 2: Recupere todas las instancias de carta enviadas por un usuario y el tipo de instancia de carta es BORRADOR {#example-nbsp-fetch-all-the-letter-instances-submitted-by-a-user-and-letter-instance-type-is-draft}
 
-El siguiente código tiene varias instrucciones en la misma consulta para obtener los resultados filtrados según diferentes criterios, como la instancia de carta enviada (atributo enviado por) por un usuario y el tipo de letterInstanceType es DRAFT.
+El siguiente código tiene varias instrucciones en la misma consulta para obtener los resultados filtrados según diferentes criterios, como la instancia de carta enviada (atributo submittedby) por un usuario y el tipo de letterInstanceType es BORRADOR.
 
 ```java
 @Reference
@@ -105,9 +105,9 @@ query.addStatement(statementForSubmittedBy );
 submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 ```
 
-### Uso de getLetterInstance {#using-nbsp-getletterinstance}
+### Usar getLetterInstance {#using-nbsp-getletterinstance}
 
-Recupere la instancia de carta identificada por el id. de instancia de letra dado. Devuelve &quot;null&quot; si no coincide el id de instancia.
+Recupere la instancia de carta identificada por el ID de instancia de carta dado. Devuelve “null” si no coincide el ID de instancia.
 
 **Sintaxis:** `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
 
@@ -118,7 +118,7 @@ String letterInstanceId = "/content/apps/cm/letterInstances/1001/sampleLetterIns
 LetterInstanceVO letterInstance = letterInstanceService.getLetterInstance(letterInstanceId );
 ```
 
-### Comprobación de si existe LetterInstance {#verifying-if-letterinstance-exist}
+### Comprobar si existe LetterInstance {#verifying-if-letterinstance-exist}
 
 Comprobar si existe una instancia de carta con el nombre dado
 
@@ -126,7 +126,7 @@ Comprobar si existe una instancia de carta con el nombre dado
 
 | **Parámetro** | **Descripción** |
 |---|---|
-| letterInstanceName | Nombre de la instancia de letra que desea comprobar si existe. |
+| letterInstanceName | Nombre de la instancia de carta que desea comprobar si existe. |
 
 ```java
 @Reference
@@ -135,25 +135,25 @@ String letterInstanceName = "sampleLetterInstance";
 Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName );
 ```
 
-## Apertura de instancias de carta {#opening-letter-instances}
+## Abrir instancias de carta {#opening-letter-instances}
 
-La instancia de carta puede ser de tipo Enviado o Borrador. Al abrir ambos tipos de instancias de letras, se muestran diferentes comportamientos:
+La instancia de carta puede ser de tipo Enviado o Borrador. Al abrir ambos tipos de instancias de cartas, se muestran comportamientos diferentes:
 
-* En el caso de la instancia de carta enviada, se abre un PDF que representa la instancia de carta. La instancia de carta enviada que persiste en el servidor también contiene el dataXML y el XDP procesado, que se pueden utilizar para llevar a cabo y utilizar un caso personalizado como la creación de un PDF/A.
-* En el caso de la instancia de letra borrador, la interfaz de usuario de creación de correspondencia se vuelve a cargar hasta el estado anterior, tal como estaba durante el momento en que se creó el borrador
+* En el caso de la instancia de carta Enviada, se abre un PDF que representa la instancia de carta. La instancia de carta enviada que persiste en el servidor también contiene el dataXML y el XDP procesados, que se pueden utilizar para llevar a cabo y utilizar un caso personalizado como la creación de un PDF/A.
+* En el caso de la instancia de carta Borrador, la interfaz de usuario de creación de correspondencia se vuelve a cargar hasta el estado anterior, tal como estaba durante el momento en que se creó el borrador
 
-### Abrir instancia de letra borrador  {#opening-draft-letter-instance-nbsp}
+### Abrir instancia de carta Borrador  {#opening-draft-letter-instance-nbsp}
 
-La interfaz de usuario de CCR admite el parámetro cmLetterInstanceId , que se puede utilizar para volver a cargar la carta.
+La interfaz de usuario de CCR admite el parámetro cmLetterInstanceId, que se puede utilizar para volver a cargar la carta.
 
 `https://[hostName]:[portNo]/[contextPath]//aem/forms/createcorrespondence.html?random=[randomNo]&cmLetterInstanceId=[letterInstanceId]`
 
 >[!NOTE]
 >
->No es necesario especificar cmLetterId o cmLetterName/State/Version al volver a cargar una correspondencia, ya que los datos enviados ya contienen todos los detalles sobre la correspondencia que se recarga. RandomNo se usa para evitar problemas con la caché del navegador, puede usar la marca de tiempo como un número aleatorio.
+>No es necesario especificar cmLetterId o cmLetterName/State/Version al volver a cargar una correspondencia, ya que los datos enviados ya contienen todos los detalles sobre la correspondencia que se recarga. RandomNo se usa para evitar problemas con la memoria caché del explorador, puede usar la marca de tiempo como un número aleatorio.
 
-### Apertura de la instancia de la carta enviada {#opening-submitted-letter-instance}
+### Abrir la instancia de la carta enviada {#opening-submitted-letter-instance}
 
-El PDF enviado se puede abrir directamente mediante el ID de instancia de letra:
+El PDF enviado se puede abrir directamente mediante el ID de instancia de carta:
 
 `https://[hostName]:[portNo]/[contextPath]/[letterInstanceId]`
