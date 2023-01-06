@@ -1,7 +1,7 @@
 ---
 title: Servicio de Forms con códigos de barras
 seo-title: Using AEM Forms Barcoded Forms Service
-description: Utilice el servicio Forms con códigos de barras de AEM Forms para extraer datos de imágenes electrónicas de códigos de barras.
+description: Utilice el servicio de Forms con códigos de barras de AEM Forms para extraer datos de imágenes electrónicas de códigos de barras.
 seo-description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes.
 uuid: b044a788-0e4a-4718-b71a-bd846933d51b
 content-type: reference
@@ -11,9 +11,9 @@ discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 exl-id: edaf12be-473f-4175-b4e0-549b41159a55
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1022'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-El servicio Forms con códigos de barras extrae datos de imágenes electrónicas de códigos de barras. El servicio acepta archivos de TIFF y PDF que incluyen uno o más códigos de barras como entrada y extrae los datos del código de barras. Los datos de código de barras se pueden formatear de varias formas, incluso XML, cadenas delimitadas o cualquier formato personalizado creado con JavaScript.
+El servicio de Forms con códigos de barras extrae datos de imágenes electrónicas de códigos de barras. El servicio acepta archivos TIFF y PDF que incluyen uno o más códigos de barras como entrada y extrae los datos del código de barras. Los datos de código de barras se pueden formatear de varias formas, incluso XML, cadenas delimitadas o cualquier formato personalizado creado con JavaScript.
 
-El servicio Forms con códigos de barras es compatible con lo siguiente **bidimensional (2D)** simbologías suministradas como documentos de TIFF o PDF escaneados:
+El servicio de Forms con códigos de barras es compatible con las siguientes simbologías **bidimensionales (2D)** suministradas como documentos TIFF o PDF escaneados:
 
 * PDF417
 * Matriz de datos
 * Código QR
 
-El servicio también admite lo siguiente **unidimensional** simbologías suministradas como documentos de TIFF o PDF escaneados:
+El servicio también es compatible con las siguientes simbologías **unidimensionales** suministradas como documentos TIFF o PDF escaneados:
 
 * Codabar
 * Código 128
@@ -37,16 +37,16 @@ El servicio también admite lo siguiente **unidimensional** simbologías suminis
 * EAN13
 * EAN8
 
-Puede utilizar el servicio Forms de códigos de barras para realizar las siguientes tareas:
+Puede utilizar el servicio de Forms con códigos de barras para realizar las siguientes tareas:
 
-* Extraiga datos de códigos de barras de imágenes (TIFF o PDF). Los datos se almacenan como texto delimitado.
+* Extraer datos de códigos de barras de imágenes (TIFF o PDF). Los datos se almacenan como texto delimitado.
 * Convierta datos de texto delimitados a XML (XDP o XFDF). Los datos XML son más fáciles de analizar que el texto delimitado. Además, los datos en formato XDP o XFDF pueden utilizarse como entrada para otros servicios en AEM Forms.
 
-Para cada código de barras de una imagen, el servicio Forms con códigos de barras localiza el código de barras, lo descodifica y extrae los datos. El servicio devuelve los datos del código de barras (mediante la codificación de entidad donde sea necesario) en un elemento de contenido de un documento XML. Por ejemplo, la siguiente imagen de TIFF digitalizado de un formulario contiene dos códigos de barras:
+Para cada código de barras de una imagen, el servicio de Forms con códigos de barras localiza el código de barras, lo descodifica y extrae los datos. El servicio devuelve los datos del código de barras (mediante la codificación de entidad donde sea necesario) en un elemento de contenido de un documento XML. Por ejemplo, la siguiente imagen de TIFF escaneado de un formulario contiene dos códigos de barras:
 
 ![ejemplo](assets/example.png)
 
-El servicio Forms Barcoded devuelve el siguiente documento XML después de descodificar los códigos de barras:
+El servicio de Forms con códigos de barras devuelve el siguiente documento XML después de descodificar los códigos de barras:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>  
@@ -95,54 +95,54 @@ El servicio Forms Barcoded devuelve el siguiente documento XML después de desco
 
 ### Flujos de trabajo que utilizan formularios con códigos de barras {#workflows-that-use-barcoded-forms}
 
-Los autores de formularios crean formularios interactivos con códigos de barras mediante Designer. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_63).) Cuando un usuario rellena un formulario codificado mediante Adobe Reader o Acrobat, el código de barras se actualiza automáticamente para codificar los datos del formulario.
+Los autores de formularios crean formularios interactivos con códigos de barras mediante Designer. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_63)). Cuando un usuario rellena el formulario con códigos de barras con Adobe Reader o Acrobat, el código de barras se actualiza automáticamente para codificar los datos del formulario.
 
-El servicio Forms con códigos de barras es útil para convertir los datos que existen en papel a formato electrónico. Por ejemplo, cuando se rellena e imprime un formulario con códigos de barras, la copia impresa se puede digitalizar y utilizar como entrada en el servicio Forms con códigos de barras.
+El servicio de Forms con códigos de barras es útil para convertir los datos que existen en papel a formato electrónico. Por ejemplo, cuando se rellena e imprime un formulario con códigos de barras, la copia impresa se puede escanear y utilizar como entrada en el servicio de Forms con códigos de barras.
 
-Los extremos de carpeta observados generalmente se utilizan para iniciar aplicaciones que utilizan el servicio Forms de códigos de barras. Por ejemplo, los escáneres de documentos pueden guardar imágenes de TIFF o PDF de formularios con códigos de barras en una carpeta vigilada. El punto final de la carpeta observada pasa las imágenes al servicio para su descodificación.
+Los extremos de carpeta observados generalmente se utilizan para iniciar aplicaciones que utilizan el servicio de Forms con códigos de barras. Por ejemplo, los escáneres de documentos pueden guardar imágenes de TIFF o PDF de formularios con códigos de barras en una carpeta inspeccionada. El punto final de la carpeta inspeccionada pasa las imágenes al servicio para su descodificación.
 
 ### Formatos de codificación y descodificación recomendados {#recommended-encoding-and-decoding-formats}
 
-Se recomienda a los autores de formularios con códigos de barras utilizar un formato simple y delimitado (como delimitado por tabulaciones) al codificar datos en códigos de barras. Además, evite utilizar Retorno de carro como delimitador de campo. Designer proporciona una selección de codificaciones delimitadas que generan automáticamente secuencias de comandos de JavaScript para codificar códigos de barras. Los datos decodificados tienen los nombres de campo en la primera línea y sus valores en la segunda línea, con pestañas entre cada campo.
+Se recomienda a los autores de formularios con códigos de barras utilizar un formato simple y delimitado (como delimitado por tabulaciones) al codificar datos en códigos de barras. Además, evite utilizar un salto de línea como delimitador de campo. Designer proporciona una selección de codificaciones delimitadas que generan automáticamente scripts de JavaScript para codificar códigos de barras. Los datos descodificados tienen los nombres de campo en la primera línea y sus valores en la segunda línea, con pestañas entre cada campo.
 
-Al descodificar códigos de barras, especifique el carácter que se utiliza para delimitar los campos. El carácter especificado para la descodificación debe ser el mismo que se utilizó para codificar el código de barras. Por ejemplo, al utilizar el formato delimitado por tabulaciones recomendado, la operación Extraer a XML debe utilizar el valor predeterminado de Tabulador para el delimitador de campo.
+Al descodificar códigos de barras, especifique el carácter que se utiliza para delimitar los campos. El carácter especificado para la descodificación debe ser el mismo que se utilizó para codificar el código de barras. Por ejemplo, al utilizar el formato delimitado por tabulaciones recomendado, la operación Extraer a XML debe utilizar el valor predeterminado de Tabulador como delimitador de campo.
 
 ### Conjuntos de caracteres especificados por el usuario {#user-specified-character-sets}
 
 Cuando los autores de formularios agregan objetos de código de barras a sus formularios utilizando Designer, pueden especificar una codificación de caracteres. Las codificaciones reconocidas son UTF-8, ISO-8859-1, ISO-8859-2, ISO-8859-7, Shift-JIS, KSC-5601, Big-Five, GB-2312, UTF-16. De forma predeterminada, todos los datos se codifican en códigos de barras como UTF-8.
 
-Al descodificar códigos de barras, se puede especificar la codificación del conjunto de caracteres que se va a utilizar. Para garantizar que todos los datos se descodifican correctamente, especifique el mismo conjunto de caracteres que el autor del formulario especificó cuando se diseñó el formulario.
+Al descodificar códigos de barras, puede especificar la codificación del conjunto de caracteres que va a utilizar. Para garantizar que todos los datos se descodifican correctamente, especifique el mismo conjunto de caracteres que el autor del formulario especificó cuando se diseñó el formulario.
 
 ### Limitaciones de la API {#api-limitations}
 
 Cuando utilice las API de BCF, tenga en cuenta las siguientes limitaciones:
 
-* Los formularios dinámicos no son compatibles.
-* Los formularios interactivos no se decodifican correctamente, a menos que se acoplan.
+* Los formularios dinámicos no se admiten.
+* Los formularios interactivos no se descodifican correctamente, a menos que se acoplen.
 * Los códigos de barras 1D solo deben contener valores alfanuméricos (si se admiten). Los códigos de barras 1D que contienen símbolos especiales no se descodifican.
 
 ### Otras limitaciones {#other-limitations}
 
 Además, tenga en cuenta las siguientes limitaciones al utilizar el servicio de Forms con códigos de barras:
 
-* El servicio es totalmente compatible con AcroForms y formularios estáticos que contienen códigos de barras 2D guardados con Adobe Reader o Acrobat. Sin embargo, para los códigos de barras 1D, aplane el formulario o suministre el formulario como PDF digitalizado o documento TIFF.
-* Los formularios XFA dinámicos no son totalmente compatibles. Para descodificar correctamente los códigos de barras 1D y 2D en un formulario dinámico, aplane el formulario o suministre el formulario como PDF o documento TIFF digitalizado.
+* El servicio es totalmente compatible con AcroForms y formularios estáticos que contienen códigos de barras 2D guardados con Adobe Reader o Acrobat. Sin embargo, para los códigos de barras 1D, acople el formulario o suministre el formulario como documento PDF o TIFF escaneado.
+* Los formularios XFA dinámicos no son totalmente compatibles. Para descodificar correctamente los códigos de barras 1D y 2D en un formulario dinámico, acople el formulario o suministre el formulario como documento PDF o TIFF escaneado.
 
 Además, el servicio puede descodificar cualquier código de barras que utilice simbología admitida si se observan las limitaciones anteriores. Para obtener más información sobre cómo crear formularios interactivos con códigos de barras, consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
-## Configuración de propiedades del servicio   {#configureproperties}
+## Configurar propiedades del servicio   {#configureproperties}
 
-Puede usar la variable **Servicio de Forms con códigos de barras de AEMFD** en AEM Console para configurar las propiedades de este servicio. La dirección URL predeterminada de AEM consola es `https://[host]:'port'/system/console/configMgr`.
+Puede usar el **Servicio de Forms con códigos de barras de AEMFD** en la consola de AEM para configurar las propiedades de este servicio. La dirección URL predeterminada de la consola AEM es `https://[host]:'port'/system/console/configMgr`.
 
-## Uso del servicio {#using}
+## Usar el servicio {#using}
 
 El servicio de Forms con códigos de barras proporciona las dos API siguientes:
 
-* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Descodifica todos los códigos de barras disponibles en un documento de PDF de entrada o en una imagen tiff. Devuelve otro documento XML que contiene datos recuperados de todos los códigos de barras disponibles en el documento de entrada o la imagen.
+* **[decode](https://helpx.adobe.com/es/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Descodifica todos los códigos de barras disponibles en un documento de PDF de entrada o en una imagen tiff. Devuelve otro documento XML que contiene datos recuperados de todos los códigos de barras disponibles en el documento de entrada o la imagen.
 
-* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Convierta datos decodificados mediante la API de descodificación a datos XML. Estos datos XML se pueden combinar con un formulario XFA. Devuelve una lista de documentos XML, uno para cada código de barras.
+* **[extractToXML](https://helpx.adobe.com/es/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Convierte datos descodificados mediante la API de descodificación a datos XML. Estos datos XML se pueden combinar con un formulario XFA. Devuelve una lista de documentos XML, uno para cada código de barras.
 
-### Uso de un servicio BCF con un JSP o Servlets {#using-bcf-service-with-a-jsp-or-servlets}
+### Usar un servicio BCF con un JSP o Servlets {#using-bcf-service-with-a-jsp-or-servlets}
 
 El siguiente código de ejemplo descodifica un código de barras en un documento y guarda el XML de salida en el disco.
 
@@ -231,11 +231,11 @@ El siguiente código de ejemplo descodifica un código de barras en un documento
 %>
 ```
 
-### Uso del servicio BCF con flujos de trabajo AEM {#using-the-bcf-service-with-aem-workflows}
+### Usar el servicio BCF con flujos de trabajo de AEM {#using-the-bcf-service-with-aem-workflows}
 
 La ejecución del servicio Forms con códigos de barras desde un flujo de trabajo es similar a la ejecución del servicio desde JSP/Servlet. La única diferencia es que al ejecutar el servicio desde JSP/Servlet el objeto de documento recupera automáticamente una instancia del objeto ResourceResolver del objeto ResourceResolverHelper. Este mecanismo automático no funciona cuando se llama al código desde un flujo de trabajo.
 
-Para un flujo de trabajo, pase explícitamente una instancia del objeto ResourceResolver al constructor de la clase Document. A continuación, el objeto Document utiliza el objeto ResourceResolver proporcionado para leer el contenido del repositorio.
+Para un flujo de trabajo, pase explícitamente una instancia del objeto ResourceResolver al constructor de la clase Documento. A continuación, el objeto Documento utiliza el objeto ResourceResolver proporcionado para leer el contenido del repositorio.
 
 El siguiente proceso de flujo de trabajo de ejemplo descodifica un código de barras en un documento y guarda el resultado en el disco. El código se escribe en ECMAScript y el documento se pasa como carga útil de flujo de trabajo:
 
