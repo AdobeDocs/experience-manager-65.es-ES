@@ -1,7 +1,7 @@
 ---
-title: Preparación y envío de comunicación interactiva mediante la interfaz de usuario del agente
+title: Preparar y enviar comunicaciones interactivas mediante la interfaz de usuario del agente
 seo-title: Prepare and send Interactive Communication using the Agent UI
-description: La interfaz de usuario del agente permite a los agentes preparar y enviar la comunicación interactiva al proceso posterior. El agente realiza las modificaciones necesarias según lo permitido y envía la comunicación interactiva a un proceso posterior, como correo electrónico o impresión.
+description: La interfaz de usuario del agente permite a los agentes preparar y enviar una comunicación interactiva al proceso de publicación. El agente realiza las modificaciones necesarias según lo permitido y envía la comunicación interactiva a un proceso de publicación, como el correo electrónico o la impresión.
 seo-description: Prepare and send Interactive Communication using the Agent UI
 uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
@@ -10,108 +10,108 @@ discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2021'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Preparación y envío de comunicación interactiva mediante la interfaz de usuario del agente {#prepare-and-send-interactive-communication-using-the-agent-ui}
+# Preparar y enviar comunicaciones interactivas mediante la interfaz de usuario del agente {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
-La interfaz de usuario del agente permite a los agentes preparar y enviar la comunicación interactiva al proceso posterior. El agente realiza las modificaciones necesarias según lo permitido y envía la comunicación interactiva a un proceso posterior, como correo electrónico o impresión.
+La interfaz de usuario del agente permite a los agentes preparar y enviar una comunicación interactiva al proceso de publicación. El agente realiza las modificaciones necesarias según lo permitido y envía la comunicación interactiva a un proceso de publicación, como el correo electrónico o la impresión.
 
 ## Información general {#overview}
 
-Una vez creada una comunicación interactiva, el agente puede abrir la comunicación interactiva en la interfaz de usuario del agente y preparar una copia específica del destinatario introduciendo datos y administrando contenido y archivos adjuntos. Por último, el agente puede enviar la comunicación interactiva a un proceso posterior.
+Una vez creada una comunicación interactiva, el agente puede abrirla en la interfaz de usuario del agente y preparar una copia específica para el destinatario introduciendo datos y administrando el contenido y los archivos adjuntos. Por último, puede enviar la comunicación interactiva a un proceso de publicación.
 
-Al preparar la comunicación interactiva mediante la interfaz de usuario del agente, el agente administra los siguientes aspectos de la comunicación interactiva en la interfaz de usuario del agente antes de enviarla a un proceso posterior:
+Cuando prepara la comunicación interactiva mediante la interfaz de usuario del agente, este administra los siguientes aspectos de la comunicación interactiva en la interfaz de usuario antes de enviarla a un proceso de publicación:
 
-* **Datos**: La ficha Datos de la interfaz de usuario del agente muestra todas las variables editables por el agente y las propiedades del modelo de datos de formulario desbloqueadas en la comunicación interactiva. Estas variables/propiedades se crean al editar o crear fragmentos de documento incluidos en la comunicación interactiva. La pestaña Data también incluye todos los campos creados en la plantilla XDP/print channel . La ficha Datos solo aparece cuando el agente puede editar alguna variable, propiedad del modelo de datos de formulario o campo en la comunicación interactiva.
-* **Contenido**: En la pestaña Contenido , el agente administra el contenido, como los fragmentos de documento y las variables de contenido, de la comunicación interactiva. El agente puede realizar los cambios en el fragmento de documento como se permiten al crear la comunicación interactiva en las propiedades de esos fragmentos de documento. El agente también puede reordenar, agregar o quitar un fragmento de documento y agregar saltos de página, si se permite.
-* **Archivos adjuntos**: La ficha Archivos adjuntos aparece en la interfaz de usuario del agente solo si la comunicación interactiva tiene datos adjuntos o si el agente tiene acceso a la biblioteca. Puede permitirse o no que el agente cambie o edite los archivos adjuntos.
+* **Datos**: la pestaña Datos de la interfaz de usuario del agente muestra todas las variables editables por el agente y las propiedades del modelo de datos de formulario desbloqueadas en la comunicación interactiva. Estas variables o propiedades se crean al editar o crear los fragmentos de documento incluidos en la comunicación interactiva. La pestaña Datos incluye también todos los campos creados en la plantilla del canal de impresión o XDP. La pestaña Datos aparece únicamente cuando el agente puede editar alguna variable, propiedad del modelo de datos de formulario o campo de la comunicación interactiva.
+* **Contenido**: en la pestaña Contenido, el agente administra el contenido de la comunicación interactiva, como los fragmentos de documento y las variables de contenido. El agente puede realizar los cambios en el fragmento de documento según lo permitido en las propiedades de esos fragmentos de documento al crear la comunicación interactiva. El agente también puede reordenar, agregar o quitar un fragmento de documento y añadir saltos de página, si se le permite.
+* **Archivos adjuntos**: la pestaña Archivos adjuntos aparece en la interfaz de usuario del agente únicamente si la comunicación interactiva tiene archivos adjuntos o si el agente tiene acceso a la biblioteca. El agente puede poseer los permisos necesarios para cambiar o editar los archivos adjuntos, o carecer de ellos.
 
 ## Preparación de la comunicación interactiva mediante la interfaz de usuario del agente {#prepare-interactive-communication-using-the-agent-ui}
 
-1. Select **[!UICONTROL Forms]** > **[!UICONTROL Forms y documentos]**.
+1. Seleccione **[!UICONTROL Forms]** > **[!UICONTROL Formularios y documentos]**.
 1. Seleccione la comunicación interactiva adecuada y pulse **[!UICONTROL Abrir la interfaz de usuario del agente]**.
 
    >[!NOTE]
    >
-   >La interfaz de usuario del agente solo funciona si la comunicación interactiva seleccionada tiene un canal de impresión.
+   >La interfaz de usuario del agente solo está disponible si la comunicación interactiva seleccionada contiene un canal de impresión.
 
-   ![openagentiui](assets/openagentiui.png)
+   ![abrir_iu_del_agente](assets/openagentiui.png)
 
-   En función del contenido y las propiedades de la comunicación interactiva, la interfaz de usuario del agente aparece con las tres pestañas siguientes: Datos, contenido y datos adjuntos.
+   En función del contenido y de las propiedades de la comunicación interactiva, la interfaz de usuario del agente aparece con las tres pestañas siguientes: Datos, Contenido y Archivos adjuntos.
 
-   ![agentuitabs](assets/agentuitabs.png)
+   ![pestañas_iu_del_agente](assets/agentuitabs.png)
 
-   Proceda a introducir datos, administrar el contenido y administrar los archivos adjuntos.
+   Comience a introducir los datos y a administrar el contenido y los archivos adjuntos.
 
 ### Introducir datos {#enter-data}
 
-1. En la pestaña Data , introduzca los datos de las variables, las propiedades del modelo de datos de formulario y los campos de plantilla de impresión (XDP), según sea necesario. Complete todos los campos obligatorios marcados con un asterisco (&amp;ast;) para habilitar la variable **Submit** botón.
+1. En la pestaña Datos, introduzca los datos de las variables, las propiedades del modelo de datos de formulario y los campos de la plantilla de impresión (XDP), según los requisitos. Complete todos los campos obligatorios marcados con un asterisco (*) para habilitar el botón **Enviar**.
 
-   Pulse un valor de campo de datos en la vista previa de comunicación interactiva para resaltar el campo de datos correspondiente en la ficha Datos o viceversa.
+   Pulse el valor de un campo de datos en la vista previa de la comunicación interactiva para resaltar el campo de datos correspondiente en la pestaña Datos o viceversa.
 
-### Gestionar contenido {#manage-content}
+### Administrar contenido {#manage-content}
 
-En la pestaña Contenido , administre el contenido, como los fragmentos del documento y las variables de contenido, en la Comunicación interactiva.
+En la pestaña Contenido, administre el contenido de la comunicación interactiva, como los fragmentos de documento y las variables de contenido.
 
-1. Select **[!UICONTROL Contenido]**. Aparece la pestaña contenido de la comunicación interactiva.
+1. Seleccione **[!UICONTROL Contenido]**. Aparece la pestaña Contenido de la comunicación interactiva.
 
-   ![agentuicontenttab](assets/agentuicontenttab.png)
+   ![pestaña_contenido_iu_agente](assets/agentuicontenttab.png)
 
-1. Edite los fragmentos del documento, según sea necesario, en la pestaña Content . Para enfocar el fragmento relevante en la jerarquía de contenido, puede tocar la línea o el párrafo correspondiente en la vista previa de comunicación interactiva o pulsar el fragmento directamente en la jerarquía de contenido.
+1. Edite los fragmentos de documento según los requisitos en la pestaña Contenido. Para enfocar el fragmento relevante en la jerarquía de contenido, puede tocar la línea o el párrafo correspondiente en la vista previa de la comunicación interactiva o pulsar directamente en el fragmento desde la jerarquía de contenido.
 
-   Por ejemplo, el fragmento de documento con la línea &quot;Realizar un pago en línea ahora ...&quot; está seleccionado en la vista previa del gráfico siguiente y el mismo fragmento de documento se ha seleccionado en la pestaña Contenido .
+   Por ejemplo, el fragmento de documento con la línea &quot;Realizar un pago en línea ahora ...&quot; está seleccionado en la vista previa del gráfico que aparece a continuación, y se ha seleccionado el mismo fragmento de documento en la pestaña Contenido
 
-   ![contentmodulefocus](assets/contentmodulefocus.png)
+   ![enfoque_módulo_contenido](assets/contentmodulefocus.png)
 
-   En la ficha Contenido o Datos , pulse Resaltar los módulos seleccionados en el contenido ( ![resaltselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) en la parte superior izquierda de la vista previa, puede deshabilitar o habilitar la funcionalidad para ir al fragmento de documento cuando el texto, el párrafo o el campo de datos relevantes se tocan o seleccionan en la vista previa.
+   Si pulsa Resaltar los módulos seleccionados en el contenido ( ![ccr_resaltar_módulos_seleccionados_en_contenido](assets/highlightselectedmodulesincontentccr.png)) en la parte superior izquierda de la vista previa de las pestañas Contenido o Datos, puede deshabilitar o habilitar la funcionalidad para ir al fragmento de documento pulsando o seleccionando el texto, el párrafo o el campo de datos relevantes en la vista previa.
 
-   Los fragmentos que el agente puede editar al crear la comunicación interactiva tienen la opción Editar contenido seleccionado ( ![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Pulse el icono Editar contenido seleccionado para iniciar el fragmento en modo de edición y realizar cambios en él. Utilice las siguientes opciones para dar formato y administrar texto:
+   Los fragmentos que el agente puede editar al crear la comunicación interactiva incluyen el icono Editar contenido seleccionado ( ![icono_editar_contenido_seleccionado](assets/iconeditselectedcontent.png)). Pulse el icono Editar contenido seleccionado para iniciar el fragmento en el modo Edición y realizar cambios en él. Utilice las siguientes opciones para dar formato y administrar el texto:
 
    * [Opciones de formato](#formattingtext)
 
       * [Copiar y pegar texto con formato de otras aplicaciones](#pasteformattedtext)
-      * [Resaltar partes del texto](#highlightemphasize)
+      * [Resaltar fragmentos del texto](#highlightemphasize)
    * [Caracteres especiales](#specialcharacters)
    * [Métodos abreviados de teclado](/help/forms/using/keyboard-shortcuts.md)
 
-   Para obtener más información sobre las acciones disponibles para varios fragmentos de documento en la interfaz de usuario del agente, consulte [Acciones e información disponible en la interfaz de usuario del agente](#actionsagentui).
+   Para obtener más información sobre las acciones disponibles en los diferentes fragmentos de documento de la interfaz de usuario del agente, consulte [Acciones e información disponible en la interfaz de usuario del agente](#actionsagentui).
 
-1. Para añadir un salto de página a la salida de impresión de la comunicación interactiva, coloque el cursor donde desee insertar un salto de página y seleccione Salto de página antes o Salto de página después ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
+1. Para añadir un salto de página a la salida de impresión de la comunicación interactiva, coloque el cursor en el punto en el que desea insertar un salto de página y seleccione Salto de página antes o Salto de página después ( ![salto_de_página_antes_después](assets/pagebreakbeforeafter.png)).
 
-   En la comunicación interactiva se inserta un marcador de posición de salto de página explícito. Para ver cómo un salto de página explícito afecta a la comunicación interactiva, consulte la vista previa de impresión.
+   En la comunicación interactiva se inserta un marcador de posición de salto de página explícito. Para ver cómo afectan los saltos de página explícitos a la comunicación interactiva, consulte la vista previa de impresión.
 
-   ![explícitamente tpagebreak](assets/explicitpagebreak.png)
+   ![salto_de_página_explícito](assets/explicitpagebreak.png)
 
-   Continúe administrando los archivos adjuntos de la Comunicación interactiva.
+   Continúe administrando los archivos adjuntos de la comunicación interactiva.
 
 ### Administrar archivos adjuntos {#manage-attachments}
 
-1. Select **[!UICONTROL Archivo adjunto]**. La interfaz de usuario del agente muestra los archivos adjuntos disponibles tal como están configurados al crear la comunicación interactiva.
+1. Seleccione **[!UICONTROL Archivo adjunto]**. La interfaz de usuario del agente muestra los archivos adjuntos disponibles tal como están configurados al crear la comunicación interactiva.
 
-   Puede optar por no enviar un archivo adjunto junto con la comunicación interactiva tocando el icono de vista y puede pulsar la cruz del archivo adjunto para eliminarlo (si el agente puede eliminar u ocultar el archivo adjunto) de la comunicación interactiva. Para los archivos adjuntos especificados como obligatorios al crear la comunicación interactiva, los iconos Ver y Eliminar están desactivados.
+   Puede optar por no enviar un archivo adjunto junto con la comunicación interactiva tocando el icono Ver, y puede pulsar la cruz que aparece en el archivo para eliminarlo (si el agente puede eliminar u ocultar los archivos adjuntos) de la comunicación interactiva. Los iconos Ver y Eliminar están desactivados en los archivos adjuntos especificados como obligatorios al crear la comunicación interactiva.
 
-   ![Attachmentsagentui](assets/attachmentsagentui.png)
+   ![attachmentsagentui](assets/attachmentsagentui.png)
 
-1. Puntee en Acceso a biblioteca ( ![libraryaccess](assets/libraryaccess.png)) para acceder a la biblioteca de contenido e insertar recursos DAM como archivos adjuntos.
+1. Pulse el icono Acceder a la biblioteca (![libraryaccess](assets/libraryaccess.png)) para acceder a la biblioteca de contenido e insertar recursos DAM como archivos adjuntos.
 
    >[!NOTE]
    >
-   >El icono Acceso a biblioteca solo está disponible si el acceso a la biblioteca estaba habilitado al crear la comunicación interactiva (en las propiedades del contenedor de documentos del canal Imprimir).
+   >El icono Acceder a la biblioteca solo está disponible si el acceso a la biblioteca estaba habilitado al crear la comunicación interactiva (en las propiedades del contenedor de documentos del canal de impresión).
 
-1. Si el orden de los archivos adjuntos no estaba bloqueado al crear la comunicación interactiva, puede reordenar los archivos adjuntos seleccionando un archivo adjunto y pulsando las flechas abajo y arriba.
-1. Utilice Vista previa en la Web y Vista previa de impresión para ver si las dos salidas son las que necesite.
+1. Si el orden de los archivos adjuntos no estaba bloqueado al crear la comunicación interactiva, puede reordenarlos seleccionando un archivo y pulsando las flechas abajo y arriba.
+1. Utilice las opciones Vista previa en la web y Vista previa de impresión para ver si las dos salidas se ajustan a sus necesidades.
 
-   Si considera que las vistas previas son satisfactorias, pulse **[!UICONTROL Submit]** para enviar o enviar la comunicación interactiva a un proceso posterior. O para realizar cambios, salga de la vista previa para volver a los cambios realizados.
+   Si está satisfecho con las vistas previas, pulse **[!UICONTROL Enviar]** para enviar la comunicación interactiva a un proceso de publicación. Si desea realizar cambios, salga de la vista previa para llevarlos a cabo.
 
-## Texto de formato {#formattingtext}
+## Aplicar formato al texto {#formattingtext}
 
-Al editar un fragmento de texto en la interfaz de usuario del agente, la barra de herramientas cambia según el tipo de ediciones que elija realizar: Fuente, párrafo o lista:
+Al editar un fragmento de texto en la interfaz de usuario del agente, la barra de herramientas cambia según el tipo de ediciones que decida realizar: Fuente, Párrafo o Lista.
 
-![typeofformattingtoolbar](assets/typeofformattingtoolbar.png) ![Barra de herramientas Fuente](do-not-localize/fonttoolbar.png)
+![tipo_de_formato_barra_herramientas](assets/typeofformattingtoolbar.png) ![Barra de herramientas Fuente](do-not-localize/fonttoolbar.png)
 
 Barra de herramientas Fuente
 
@@ -119,29 +119,29 @@ Barra de herramientas Fuente
 
 Barra de herramientas Párrafo
 
-![Barra de herramientas de lista](do-not-localize/listtoolbar.png)
+![Barra de herramientas Lista](do-not-localize/listtoolbar.png)
 
-Barra de herramientas de lista
+Barra de herramientas Lista
 
-### Resaltar/resaltar partes del texto {#highlightemphasize}
+### Resaltar partes del texto {#highlightemphasize}
 
-Para resaltar o resaltar partes de texto en un fragmento editable, seleccione el texto y pulse Resaltar color.
+Para resaltar fragmentos de texto en un fragmento editable, seleccione el texto y pulse Color de resaltado.
 
-![highlightExtagentui](assets/highlighttextagentui.png)
+![highlighttextagentui](assets/highlighttextagentui.png)
 
 ### Pegar texto con formato {#pasteformattedtext}
 
-![pegar texto](assets/pastedtext.png)
+![pastedtext](assets/pastedtext.png)
 
 ### Insertar caracteres especiales en el texto {#specialcharacters}
 
-La interfaz de usuario del agente ha incorporado la compatibilidad con 210 caracteres especiales. El administrador puede [añadir compatibilidad con más caracteres especiales personalizados mediante personalización](/help/forms/using/custom-special-characters.md).
+La interfaz de usuario del agente ha incorporado la compatibilidad con 210 caracteres especiales. El administrador puede [agregar compatibilidad con caracteres especiales adicionales o personalizados usando la personalización](/help/forms/using/custom-special-characters.md).
 
-#### Entrega de datos adjuntos {#attachmentdelivery}
+#### Envío de archivos adjuntos {#attachmentdelivery}
 
-* Cuando la comunicación interactiva se procesa mediante API del lado del servidor como PDF interactivo o no interactivo, el PDF procesado contiene archivos adjuntos como archivos adjuntos del PDF.
-* Cuando se carga un proceso de publicación asociado a una comunicación interactiva como parte de la interfaz de usuario Enviar mediante el agente, los archivos adjuntos se pasan como la lista&lt;com.adobe.idp.document> parámetro inAttachmentDocs .
-* Los flujos de trabajo del mecanismo de entrega, como el correo electrónico y la impresión, también proporcionan archivos adjuntos junto con la versión PDF de la Comunicación interactiva.
+* Cuando la comunicación interactiva se procesa mediante API del lado del servidor como un PDF interactivo o no interactivo, el PDF procesado contiene archivos adjuntos como archivos adjuntos del PDF.
+* Cuando se carga un proceso de publicación asociado a una comunicación interactiva como parte de la opción Enviar mediante la interfaz de usuario del agente, los archivos adjuntos se pasan como el parámetro List&lt;com.adobe.idp.Document> inAttachmentDocs.
+* Los flujos de trabajo del mecanismo de envío, como el correo electrónico y la impresión, también proporcionan archivos adjuntos con la versión PDF de la comunicación interactiva.
 
 ## Acciones e información disponible en la interfaz de usuario del agente {#actionsagentui}
 
@@ -149,71 +149,71 @@ La interfaz de usuario del agente ha incorporado la compatibilidad con 210 carac
 
 ![](do-not-localize/contentoptionsdocfragments.png)
 
-* **Flechas arriba/abajo**: Flechas para mover fragmentos de documento hacia arriba o hacia abajo en la Comunicación interactiva.
-* **Eliminar**: Si está permitido, elimine el fragmento del documento de la comunicación interactiva.
-* **Salto de página antes** (aplicable a los fragmentos secundarios de la zona de destino): Inserta un salto de página antes del fragmento de documento.
-* **Sangría**: Aumente o disminuya la sangría de un fragmento de documento.
-* **Salto de página después** (aplicable a los fragmentos secundarios de la zona de destino): Inserta un salto de página después del fragmento de documento.
+* **Flechas arriba/abajo**: permiten mover fragmentos de documento hacia arriba o hacia abajo en la comunicación interactiva.
+* **Eliminar**: si dispone de los permisos necesarios, elimina el fragmento del documento de la comunicación interactiva.
+* **Salto de página antes** (aplicable a los fragmentos secundarios del área de destino): inserta un salto de página antes del fragmento de documento.
+* **Sangría**: aumenta o disminuye la sangría de un fragmento de documento.
+* **Salto de página después** (aplicable a los fragmentos secundarios del área de destino): inserta un salto de página después del fragmento de documento.
 
-![docfragoptions](assets/docfragoptions.png)
+![opciones_fragmento_documento](assets/docfragoptions.png)
 
-* Editar (solo fragmentos de texto): Abra el editor de texto enriquecido para editar el fragmento del documento de texto. Para obtener más información, consulte [Formato del texto](#formattingtext).
+* Editar (solo fragmentos de texto): abre el editor de texto enriquecido para editar el fragmento de documento de texto. Para obtener más información, consulte [Formato del texto](#formattingtext).
 
-* Selección (icono de ojo): Incluye\excluye el fragmento de documento de la comunicación interactiva.
-* Valores no rellenados (información): Indica el número de variables no rellenadas en el fragmento de documento.
+* Selección (icono en forma de ojo): incluye o excluye el fragmento de documento de la comunicación interactiva.
+* Valores no rellenados (información): indica el número de variables no rellenadas del fragmento de documento.
 
-### Enumerar fragmentos de documento {#list-document-fragments}
+### Fragmentos de documento de lista {#list-document-fragments}
 
-![listoptions](assets/listoptions.png)
+![opciones_lista](assets/listoptions.png)
 
-* Insertar línea en blanco: Inserta una nueva línea en blanco.
-* Selección (icono de ojo): Incluye\excluye el fragmento de documento de la comunicación interactiva.
-* Omitir viñetas/numeraciones: Active esta opción para omitir viñetas/numeración en el fragmento del documento de la lista.
-* Valores no rellenados (información): Indica el número de variables no rellenadas en el fragmento de documento.
+* Insertar línea en blanco: inserta una nueva línea en blanco.
+* Selección (icono en forma de ojo): incluye o excluye el fragmento de documento de la comunicación interactiva.
+* Omitir viñetas/numeraciones: active esta opción para omitir las viñetas o la numeración en el fragmento de documento de lista.
+* Valores no rellenados (información): indica el número de variables no rellenadas del fragmento de documento.
 
 ## Guardar comunicaciones interactivas como borrador {#save-as-draft}
 
-Puede utilizar la interfaz de usuario del agente para guardar uno o más borradores para cada comunicación interactiva y recuperar el borrador más adelante para seguir trabajando en él. Puede especificar un nombre diferente para cada borrador para identificarlo.
+Puede utilizar la interfaz de usuario del agente para guardar uno o más borradores de cada comunicación interactiva y recuperar los borradores más tarde para seguir trabajando en ellos. Puede especificar un nombre diferente para cada borrador para identificarlo.
 
 Adobe recomienda ejecutar estas instrucciones de forma secuencial para guardar correctamente una comunicación interactiva como borrador.
 
 ### Habilitar la función Guardar como borrador {#before-save-as-draft}
 
-La función Guardar como borrador no está activada de forma predeterminada. Siga estos pasos para habilitar la función:
+La función Guardar como borrador no está activada de forma predeterminada. Siga los siguientes pasos para habilitar la función:
 
-1. Implementación de [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Interfaz de proveedor de servicios (SPI).
+1. Implemente la interfaz de proveedor de servicios (SPI) de [ccrDocumentInstance](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
 
-   El SPI permite guardar la versión borrador de la comunicación interactiva en la base de datos con un ID de borrador como identificador único. Estas instrucciones suponen que tiene conocimientos previos sobre cómo construir un paquete OSGi usando un proyecto Maven.
+   La SPI permite guardar la versión de borrador de la comunicación interactiva en la base de datos con un ID de borrador como identificador único. Estas instrucciones dar por sentado que tiene conocimientos previos sobre cómo construir un paquete OSGi usando un proyecto Maven.
 
-   Para ver la implementación de SPI de muestra, consulte [Ejemplo de implementación de ccrDocumentInstance SPI](#sample-ccrDocumentInstance-spi).
-1. Apertura `http://<hostname>:<port>/ system/console/bundles` y toque **[!UICONTROL Instalar/actualizar]** para cargar el paquete OSGi. Compruebe que el estado del paquete cargado se muestra como **Activo**. Reinicie el servidor si el estado del paquete no se muestra como **Activo**.
+   Para ver la implementación de la SPI de ejemplo, consulte [Ejemplo de implementación de la SPI de ccrDocumentInstance](#sample-ccrDocumentInstance-spi).
+1. Abra `http://<hostname>:<port>/ system/console/bundles` y toque **[!UICONTROL Instalar/actualizar]** para cargar el paquete OSGi. Compruebe que el estado del paquete cargado se muestra como **Activo**. Reinicie el servidor si el estado del paquete no se muestra como **Activo**.
 1. Vaya a `https://'[server]:[port]'/system/console/configMgr`.
-1. Toque **[!UICONTROL Crear configuración de correspondencia]**.
-1. Select **[!UICONTROL Habilitar Guardar usando CCRDocumentInstanceService]** y toque **[!UICONTROL Guardar]**.
+1. Pulse **[!UICONTROL Configuración de Crear correspondencia]**.
+1. Seleccione **[!UICONTROL Habilitar Guardar usando CCRDocumentInstanceService]** y pulse **[!UICONTROL Guardar]**.
 
 ### Guardar una comunicación interactiva como borrador {#save-as-draft-agent-ui}
 
 Realice los siguientes pasos para guardar una comunicación interactiva como borrador:
 
-1. Seleccione una comunicación interactiva en Forms Manager y pulse **[!UICONTROL Abrir la interfaz de usuario del agente]**.
+1. Seleccione una comunicación interactiva en Forms Manager y pulse **[!UICONTROL Abrir la interfaz de usuario del agente]**.
 
 1. Realice los cambios correspondientes en la interfaz de usuario del agente y pulse **[!UICONTROL Guardar como borrador]**.
 
-1. Especifique el nombre del borrador en la **[!UICONTROL Nombre]** toque y campo **[!UICONTROL Listo]**.
+1. Especifique el nombre del borrador en el campo **[!UICONTROL Nombre]** y pulse **[!UICONTROL Listo]**.
 
-Una vez guardada la comunicación interactiva como borrador, pulse **[!UICONTROL Guardar cambios]** para guardar cualquier cambio adicional en el borrador.
+Una vez guardada la comunicación interactiva como borrador, pulse **[!UICONTROL Guardar cambios]** para guardar cualquier cambio adicional que haya realizado en el borrador.
 
 ### Recuperar el borrador de una comunicación interactiva {#retrieve-draft}
 
-Después de guardar una comunicación interactiva como borrador, puede recuperarla para continuar trabajando en ella. Recupere la comunicación interactiva mediante:
+Después de guardar una comunicación interactiva como borrador, puede recuperarla para continuar trabajando en ella. Recupere la comunicación interactiva de la siguiente forma:
 
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
-[reclutid] hace referencia al identificador único de la versión borrador que se genera después de guardar una comunicación interactiva como borrador.
+[reclutid] hace referencia al identificador único de la versión de borrador que se genera después de guardar una comunicación interactiva como borrador.
 
-### Ejemplo de implementación de ccrDocumentInstance SPI {#sample-ccrDocumentInstance-spi}
+### Ejemplo de implementación de la SPI de ccrDocumentInstance SPI {#sample-ccrDocumentInstance-spi}
 
-Implementación de `ccrDocumentInstance` SPI para guardar una comunicación interactiva como borrador. A continuación se muestra una implementación de muestra de la variable `ccrDocumentInstance` SPI.
+Implemente la SPI de `ccrDocumentInstance` para guardar una comunicación interactiva como borrador. A continuación, se muestra una implementación de ejemplo de la SPI de `ccrDocumentInstance`.
 
 ```javascript
 package Implementation;
@@ -313,36 +313,36 @@ public class CCRDraftService implements CCRDocumentInstanceService {
 }
 ```
 
-La variable `save`, `update`, `get`y `getAll` las operaciones llaman al servicio de base de datos para guardar una comunicación interactiva como borrador, actualizar una comunicación interactiva, recuperar datos de la base de datos y recuperar datos para todas las comunicaciones interactivas disponibles en la base de datos. Este ejemplo utiliza `mySQLDataBaseServiceCRUD` como nombre del servicio de base de datos.
+Las operaciones `save`, `update`, `get` y `getAll` llaman al servicio de base de datos para guardar una comunicación interactiva como borrador, actualizarla, recuperar datos de la base de datos y recuperar datos de todas las comunicaciones interactivas disponibles en ella. Este ejemplo utiliza `mySQLDataBaseServiceCRUD` como nombre del servicio de base de datos.
 
-La siguiente tabla explica el ejemplo `ccrDocumentInstance` Implementación de SPI. Muestra cómo la variable `save`, `update`, `get`y `getAll` las operaciones llaman al servicio de base de datos en la implementación de muestra.
+La siguiente tabla explica la implementación de ejemplo de la SPI de `ccrDocumentInstance`. Muestra cómo las operaciones `save`, `update`, `get` y `getAll` llaman al servicio de base de datos en la implementación de ejemplo.
 
 <table> 
  <tbody>
  <tr>
   <td><p><strong>Operación</strong></p></td>
-  <td><p><strong>Ejemplos de servicio de base de datos</strong></p></td> 
+  <td><p><strong>Ejemplos del servicio de base de datos</strong></p></td> 
    </tr>
   <tr>
-   <td><p>Puede crear un borrador para una comunicación interactiva o enviarlo directamente. La API para la operación de guardado comprueba si la comunicación interactiva se envía como borrador e incluye un nombre de borrador. A continuación, la API llama al servicio mySQLDataBaseServiceCRUD con Guardar como método de entrada.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
-   <td><p>El servicio mySQLDataBaseServiceCRUD verifica Save como método de entrada y genera un ID de borrador generado automáticamente y lo devuelve a AEM. La lógica para generar un ID de borrador puede variar según la base de datos.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   <td><p>Puede crear el borrador de una comunicación interactiva o enviarla directamente. La API para la operación de guardado comprueba si la comunicación interactiva se envía como borrador y si incluye un nombre de borrador. A continuación, llama al servicio mySQLDataBaseServiceCRUD con Guardar como método de entrada.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
+   <td><p>El servicio mySQLDataBaseServiceCRUD verifica Guardar como método de entrada, genera de forma automática un ID de borrador y lo devuelve a AEM. La lógica para generar un ID de borrador puede variar según la base de datos.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
    </tr>
   <tr>
-   <td><p>La API para la operación de actualización recupera el estado del borrador de la comunicación interactiva y comprueba si la comunicación interactiva incluye un nombre de borrador. La API llama al servicio mySQLDataBaseServiceCRUD para actualizar ese estado en la base de datos.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
-   <td><p>El servicio mySQLDataBaseServiceCRUD verifica Update como método de entrada y guarda el estado del borrador de la comunicación interactiva en la base de datos.</br></p><img src="assets/update-operation-service.png"/></td>
+   <td><p>La API para la operación de actualización recupera el estado del borrador de la comunicación interactiva y comprueba si esta contiene un nombre de borrador. La API llama al servicio mySQLDataBaseServiceCRUD para actualizar ese estado en la base de datos.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>El servicio mySQLDataBaseServiceCRUD verifica Actualizar como método de entrada y guarda el estado del borrador de la comunicación en la base de datos.</br></p><img src="assets/update-operation-service.png"/></td>
    </tr>
    <tr>
-   <td><p>La API para la operación get comprueba si la comunicación interactiva incluye un ID de borrador. A continuación, la API llama al servicio mySQLDataBaseServiceCRUD con Get como método de entrada para recuperar los datos de la comunicación interactiva.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
+   <td><p>La API para la operación GET comprueba si la comunicación interactiva contiene un ID de borrador. A continuación, llama al servicio mySQLDataBaseServiceCRUD con Get como método de entrada para recuperar los datos de la comunicación.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
    <td><p>El servicio mySQLDataBaseServiceCRUD verifica Get como método de entrada y recupera los datos de la comunicación interactiva en función del ID de borrador.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
    </tr>
    <tr>
-   <td><p>La API para la operación getAll llama al servicio mySQLGetALLData para recuperar datos para todas las comunicaciones interactivas guardadas en la base de datos.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
-   <td><p>El servicio mySQLGetALLData recupera datos de todas las comunicaciones interactivas guardadas en la base de datos.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
+   <td><p>La API para la operación getAll llama al servicio mySQLGetALLData para recuperar los datos de todas las comunicaciones interactivas guardadas en la base de datos.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
+   <td><p>El servicio mySQLGetALLData recupera los datos de todas las comunicaciones interactivas guardadas en la base de datos.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
    </tr>
   </tbody>
 </table>
 
-El siguiente es un ejemplo de la variable `pom.xml` que forma parte de la implementación:
+El siguiente es un ejemplo del archivo `pom.xml` que forma parte de la implementación:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -439,4 +439,4 @@ El siguiente es un ejemplo de la variable `pom.xml` que forma parte de la implem
 
 >[!NOTE]
 >
->Asegúrese de actualizar el `aemfd-client-sdk` dependencia a 6.0.160 en la variable `pom.xml` archivo.
+>Asegúrese de actualizar la dependencia `aemfd-client-sdk` a la versión 6.0.160 en el archivo `pom.xml`.
