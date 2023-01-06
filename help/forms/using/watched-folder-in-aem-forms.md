@@ -1,7 +1,7 @@
 ---
-title: Carpeta vigilada en AEM Forms
+title: Carpeta inspeccionada en AEM Forms
 seo-title: Watched folder in AEM Forms
-description: Un administrador puede colocar una carpeta en el reloj e iniciar una operación de flujo de trabajo, servicio o secuencia de comandos cuando se coloca un archivo en la carpeta que se está viendo.
+description: Un administrador puede colocar una carpeta en inspección e iniciar una operación de flujo de trabajo, servicio o script cuando se coloca un archivo en la carpeta que está viendo.
 seo-description: An administrator can put a folder on watch and start a workflow, service, or script operation when a file is placed in the folder being watched.
 uuid: 39eac0fd-8212-46ff-b75d-8b4320d448a9
 content-type: reference
@@ -11,125 +11,125 @@ discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7149'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Carpeta vigilada en AEM Forms{#watched-folder-in-aem-forms}
+# Carpeta inspeccionada en AEM Forms{#watched-folder-in-aem-forms}
 
-Un administrador puede configurar una carpeta de red, conocida como carpeta vigilada, de modo que cuando un usuario coloque un archivo (como un archivo PDF) en la carpeta vigilada, se inicie un flujo de trabajo preconfigurado, un servicio o una operación de secuencia de comandos para procesar el archivo añadido. Una vez que el servicio realiza la operación especificada, guarda el archivo de resultados en una carpeta de salida especificada. Para obtener más información sobre el flujo de trabajo, el servicio y la secuencia de comandos, consulte [Varios métodos para procesar archivos](#variousmethodsforprocessingfiles).
+Un administrador puede configurar una carpeta de red, conocida como carpeta inspeccionada, de modo que cuando un usuario coloque un archivo (como un archivo PDF) en la carpeta inspeccionada, se inicie un flujo de trabajo preconfigurado, un servicio o una operación de script para procesar el archivo agregado. Una vez que el servicio realiza la operación especificada, guarda el archivo de resultados en una carpeta de salida especificada. Para obtener más información sobre el flujo de trabajo, el servicio y el script, consulte [Varios métodos para procesar archivos](#variousmethodsforprocessingfiles).
 
-## Crear una carpeta vigilada {#create-a-watched-folder}
+## Crear una carpeta inspeccionada {#create-a-watched-folder}
 
-Puede utilizar uno de los siguientes métodos para crear una carpeta vigilada en el sistema de archivos:
+Puede utilizar uno de los siguientes métodos para crear una carpeta inspeccionada en el sistema de archivos:
 
-* Al configurar las propiedades de un nodo de configuración de carpeta vigilada, escriba la ruta completa del directorio principal en la propiedad folderPath y añada el nombre de la carpeta vigilada que se creará, como se muestra en el siguiente ejemplo: `C:/MyPDFs/MyWatchedFolder`
-La variable 
-`MyWatchedFolder`no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
+* Al configurar las propiedades de un nodo de configuración de carpeta inspeccionada, escriba la ruta completa del directorio principal en la propiedad folderPath y agregue el nombre de la carpeta inspeccionada que se creará, como se muestra en el siguiente ejemplo: `C:/MyPDFs/MyWatchedFolder`
+La carpeta 
+`MyWatchedFolder` no existe, AEM Forms intenta crear la carpeta en la ruta especificada.
 
-* Cree una carpeta en el sistema de archivos antes de configurar un extremo de carpeta vigilada y, a continuación, proporcione la ruta completa en la propiedad folderPath. Para obtener información detallada sobre la propiedad folderPath, consulte [Propiedades de la carpeta vigilada](#watchedfolderproperties).
+* Cree una carpeta en el sistema de archivos antes de configurar un punto final de carpeta inspeccionada y, a continuación, proporcione la ruta completa en la propiedad folderPath. Para obtener información detallada sobre la propiedad folderPath, consulte [Propiedades de la carpeta inspeccionada](#watchedfolderproperties).
 
 >[!NOTE]
 >
->En un entorno agrupado, la carpeta utilizada como carpeta vigilada debe ser accesible, grabable y compartida en el sistema de archivos o en la red. Cada instancia de servidor de aplicaciones del clúster debe tener acceso a la misma carpeta compartida. En Windows, cree una unidad de red asignada en todos los servidores y especifique la ruta de acceso de la unidad de red asignada en la propiedad folderPath.
+>En un entorno agrupado, la carpeta utilizada como carpeta inspeccionada debe ser accesible, modificable y compartida en el sistema de archivos o red. Cada instancia de servidor de aplicaciones del grupo debe tener acceso a la misma carpeta compartida. En Windows, cree una unidad de red asignada en todos los servidores y especifique la ruta de la unidad de red asignada en la propiedad folderPath.
 
-## Crear nodo de configuración de carpeta vigilada {#create-watched-folder-configuration-node}
+## Crear nodo de configuración de carpeta inspeccionada {#create-watched-folder-configuration-node}
 
-Para configurar una carpeta vigilada, cree un nodo de configuración de carpeta vigilada. Realice los siguientes pasos para crear el nodo de configuración:
+Para configurar una carpeta inspeccionada, cree un nodo de configuración de carpeta inspeccionada. Realice los siguientes pasos para crear el nodo de configuración:
 
-1. Inicie sesión en CRX-DE lite como administrador y vaya a la carpeta /etc/fd/watchfolder/config .
+1. Inicie sesión en CRX-DE lite como administrador y vaya a la carpeta /etc/fd/watchfolder/config.
 
-1. Crear un nodo de tipo `nt:unstructured`. Por ejemplo, watchedfolder
+1. Cree un nodo de tipo `nt:unstructured`. Por ejemplo, watchedfolder
 
    >[!NOTE]
    >
-   >El nombre del nodo Carpeta vigilada no puede incluir espacios ni caracteres especiales.
+   >El nombre del nodo Carpeta inspeccionada no puede incluir espacios ni caracteres especiales.
 
-1. Agregue las siguientes propiedades al nodo :
+1. Agregue las siguientes propiedades al nodo:
 
    * `folderPath`
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
 
-   Para obtener una lista completa de las propiedades compatibles, consulte [Propiedades de la carpeta vigilada](#watchedfolderproperties).
+   Para obtener una lista completa de las propiedades compatibles, consulte [Propiedades de la carpeta inspeccionada](#watchedfolderproperties).
 
-1. Haga clic en **Guardar todo**. Una vez creado el nodo y guardadas las propiedades. La variable `input`, `result`, `failure`, `preserve`y `stage`las carpetas se crean en la ruta especificada en la `folderPath` propiedad.
+1. Haga clic en **Guardar todo**. Una vez creado el nodo y guardadas las propiedades. Las carpetas `input`, `result`, `failure`, `preserve` y `stage` se crean en la ruta especificada en la propiedad `folderPath`.
 
-   El trabajo de análisis comienza a analizar la carpeta vigilada a un intervalo de tiempo definido.
+   El trabajo de análisis comienza a analizar la carpeta inspeccionada a un intervalo de tiempo definido.
 
-## Propiedades de la carpeta vigilada {#watchedfolderproperties}
+## Propiedades de la carpeta inspeccionada {#watchedfolderproperties}
 
-Puede configurar las siguientes propiedades para una carpeta vigilada.
+Puede configurar las siguientes propiedades para una carpeta inspeccionada.
 
 * **folderPath (String)**: Ruta de la carpeta que se va a analizar en intervalos de tiempo definidos. Para un entorno agrupado, la carpeta debe estar en una ubicación compartida con todos los servidores que tengan acceso completo al servidor. Es una propiedad obligatoria.
-* **inputProcessorType (String)**: Tipo de proceso que se va a iniciar. Puede especificar el flujo de trabajo, la secuencia de comandos o el servicio. Es una propiedad obligatoria.
+* **inputProcessorType (String)**: Tipo de proceso que se va a iniciar. Puede especificar el flujo de trabajo, el script o el servicio. Es una propiedad obligatoria.
 * **inputProcessorId (String)**: El comportamiento de la propiedad inputProcessorId se basa en el valor especificado para la propiedad inputProcessorType. Es una propiedad obligatoria. La siguiente lista detalla todos los valores posibles de la propiedad inputProcessorType y los requisitos correspondientes para la propiedad inputProcessorType:
 
    * Para el flujo de trabajo, especifique el modelo de flujo de trabajo que se va a ejecutar. Por ejemplo, /etc/workflow/models/&lt;workflow_name>/jcr:content/model
-   * Para la secuencia de comandos, especifique la ruta JCR del script que se va a ejecutar. Por ejemplo, /etc/fd/watchfolder/test/testScript.ecma
-   * Para el servicio, especifique el filtro utilizado para localizar un servicio OSGi. El servicio está registrado como una implementación de la interfaz com.adobe.aemfd.watchfolder.service.api.ContentProcessor .
+   * Para el script, especifique la ruta JCR del script que se va a ejecutar. Por ejemplo, /etc/fd/watchfolder/test/testScript.ecma
+   * Para el servicio, especifique el filtro utilizado para localizar un servicio OSGi. El servicio está registrado como una implementación de la interfaz com.adobe.aemfd.watchfolder.service.api.ContentProcessor.
 
-* **runModes (cadena)**: Lista separada por comas de los modos de ejecución permitidos para la ejecución del flujo de trabajo. Algunos ejemplos son:
+* **runModes (String)**: Lista separada por comas de los modos de ejecución permitidos para la ejecución del flujo de trabajo. Algunos ejemplos son:
 
-   * author
+   * autor
 
-   * instancias de publicación
+   * publicación
 
-   * creación, publicación
+   * autor, publicación
 
-   * publicar, autor
-
->[!NOTE]
->
->Si el servidor que aloja la carpeta vigilada no tiene ninguno de los modos de ejecución especificados, entonces la carpeta vigilada siempre se activa independientemente de los modos de ejecución del servidor.
-
-* **outputFilePattern (String)**: Patrón del archivo de salida. Puede especificar una carpeta o un patrón de archivo. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo. [Patrón de archivos y carpetas](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) también puede especificar una estructura de directorio para los archivos de salida. Es una propiedad obligatoria.
-
-* **stageFileExpirationDuration (Long, predeterminado -1)**: El número de segundos de espera antes de un archivo o carpeta de entrada que ya se ha seleccionado para el procesamiento debe tratarse como si se hubiera agotado el tiempo de espera y marcado como un error. Este mecanismo de caducidad solo se activa cuando el valor de esta propiedad es un número positivo.
+   * publicación, autor
 
 >[!NOTE]
 >
->Incluso cuando una entrada está marcada como de tiempo de espera agotado con este mecanismo, puede que se esté procesando en segundo plano, pero tardando más tiempo del esperado. Si el contenido de entrada se consumió antes de que se iniciara el mecanismo de tiempo de espera, el procesamiento puede incluso continuar hasta la finalización más tarde y el resultado se volcará a la carpeta de resultados. Si el contenido no se consumió antes del tiempo de espera, es muy probable que el procesamiento se procese por error más adelante al intentar consumir el contenido, y este error también se registrará en la carpeta de errores para la misma entrada. Por otro lado, si el procesamiento de la entrada nunca se activa debido a un error intermitente del trabajo/flujo de trabajo (que es el escenario que el mecanismo de caducidad pretende abordar), entonces por supuesto no se producirá ninguna de estas dos situaciones. Por lo tanto, para cualquier entrada de la carpeta de errores que se haya marcado como errónea debido a un tiempo de espera (busque los mensajes del formulario &quot;Archivo no procesado después de una cantidad de tiempo significativa, marcando como error!&quot; en el registro de errores), se recomienda analizar la carpeta de resultados (y también la carpeta de errores en sí para obtener otra entrada para la misma entrada) para comprobar si se ha producido alguna de las eventualidades descritas anteriormente.
+>Si el servidor que aloja la carpeta inspeccionada no tiene ninguno de los modos de ejecución especificados, entonces la carpeta inspeccionada siempre se activa independientemente de los modos de ejecución del servidor.
 
-* **deleteExpiredStageFileOnlyWhenThrottled (booleano, valor predeterminado verdadero):** Indica si el mecanismo de caducidad debe activarse solo cuando se restringe la carpeta del reloj. El mecanismo es más relevante para las carpetas de inspección restringidas, ya que un pequeño número de archivos que permanecen en estado no procesado (debido a errores intermitentes en el trabajo o el flujo de trabajo) pueden bloquear el procesamiento de todo el lote cuando se habilita la restricción. Si esta propiedad se mantiene como verdadera (la predeterminada), el mecanismo de caducidad no se activa para las carpetas de inspección que no estén restringidas. Si la propiedad se mantiene como falsa, el mecanismo siempre se activará siempre que la propiedad stageFileExpirationDuration sea un número positivo.
+* **outputFilePattern (String)**: Patrón del archivo de salida. Puede especificar una carpeta o un patrón de archivo. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo. [El patrón de archivos y carpetas](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) también puede especificar una estructura de directorio para los archivos de salida. Es una propiedad obligatoria.
 
-* **pollInterval (Long)**: Intervalo en segundos para analizar la carpeta vigilada para obtener información. A menos que el ajuste Aceleración esté habilitado, el intervalo de sondeo debe ser mayor que el tiempo para procesar un trabajo promedio; de lo contrario, el sistema podría sobrecargarse. El valor predeterminado es 5. Consulte la descripción del tamaño del lote para obtener más información. El valor del intervalo de encuesta debe ser bueno o igual a uno.
-* **excludeFilePattern (String)**: Lista delimitada por punto y coma (;) de patrones que utiliza una carpeta vigilada para determinar qué archivos y carpetas analizar y recoger. Ningún archivo o carpeta con este patrón se analiza para su procesamiento. Esta configuración es útil cuando la entrada es una carpeta con varios archivos. El contenido de la carpeta se puede copiar en una carpeta con un nombre que recoge la carpeta vigilada. Esto evita que la carpeta vigilada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada. El valor predeterminado es null.
+* **stageFileExpirationDuration (Long, default -1)**: El número de segundos de espera antes de un archivo/carpeta de entrada que ya se ha seleccionado para el procesamiento debe tratarse como si se hubiera agotado el tiempo de espera y marcado como un error. Este mecanismo de caducidad solo se activa cuando el valor de esta propiedad es un número positivo.
+
+>[!NOTE]
+>
+>Incluso cuando una entrada está marcada como con el tiempo de espera agotado con este mecanismo, puede que se esté procesando en segundo plano, pero tardando más tiempo del esperado. Si el contenido de entrada se consumió antes de que se iniciara el mecanismo de tiempo de espera, el procesamiento puede incluso continuar hasta la finalización más tarde y el resultado se volcará a la carpeta de resultados. Si el contenido no se consumió antes del tiempo de espera, es muy probable que el procesamiento genere un error más adelante al intentar consumir el contenido, y este error también se registrará en la carpeta de errores para la misma entrada. Por otro lado, si el procesamiento de la entrada nunca se activa debido a un error intermitente del trabajo/flujo de trabajo (que es el escenario que el mecanismo de caducidad pretende abordar), entonces por supuesto no se producirá ninguna de estas dos situaciones. Por lo tanto, para cualquier entrada de la carpeta de errores que se haya marcado como errónea debido al tiempo de espera (busque los mensajes del formulario “Archivo no procesado después de una cantidad de tiempo significativa, ¡marcando como error!;” en el registro de errores), se recomienda analizar la carpeta de resultados (y también la carpeta de errores en sí para obtener otra entrada para la misma entrada) para comprobar si se ha producido alguna de las eventualidades descritas anteriormente.
+
+* **deleteExpiredStageFileOnlyWhenThrottled (Boolean, default true):** Indica si el mecanismo de caducidad debe activarse solo cuando se restringe la carpeta del reloj. El mecanismo es más relevante para las carpetas de inspección restringidas, ya que un pequeño número de archivos que permanecen en estado sin procesar (debido a errores intermitentes en el trabajo/flujo de trabajo) pueden bloquear el procesamiento de todo el lote cuando se habilita la restricción. Si esta propiedad se mantiene como True (predeterminada), el mecanismo de caducidad no se activa para las carpetas de inspección que no estén restringidas. Si la propiedad se mantiene como False, el mecanismo siempre se activará siempre que la propiedad stageFileExpirationDuration sea un número positivo.
+
+* **pollInterval (Long)**: Intervalo en segundos para analizar la carpeta inspeccionada para obtener información. A menos que la configuración Restringir esté habilitada, el intervalo de encuesta debe ser mayor que el tiempo para procesar un trabajo promedio; de lo contrario, el sistema podría sobrecargarse. El valor predeterminado es 5. Consulte la descripción del tamaño del lote para obtener más información. El valor del intervalo de encuesta debe ser mayor o igual a uno.
+* **excludeFilePattern (String)**: Lista delimitada por punto y coma (;) de patrones que utiliza una carpeta inspeccionada para determinar qué archivos y carpetas analizar y recoger. Ningún archivo o carpeta con este patrón se analiza para su procesamiento. Esta configuración es útil cuando la entrada es una carpeta con varios archivos. El contenido de la carpeta se puede copiar en una carpeta con un nombre que recoge la carpeta inspeccionada. Esto evita que la carpeta inspeccionada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada. El valor predeterminado es nulo.
 Puede usar [patrones de archivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) para excluir:
 
    * Archivos con extensiones de nombre de archivo específicas; por ejemplo, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
    * Archivos con nombres específicos; por ejemplo, data&#42; excluiría archivos y carpetas llamados data1, data2, etc.
    * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-      * Datos[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+      * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
       * &#42;.[dD][Aa]&#39;port&#39;
       * &#42;.[Xx][Mm][Ll]
 
-Para obtener más información sobre los patrones de archivo, consulte [Acerca de los patrones de archivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
-* **includeFilePattern (String)**: Lista delimitada por punto y coma (;) de patrones que usa la carpeta vigilada para determinar qué carpetas y archivos se van a analizar y recoger. Por ejemplo, si se introduce IncludeFilePattern&#42;, todos los archivos y carpetas que coinciden con la entrada&#42; son recogidos. Esto incluye archivos y carpetas llamados input1, input2, etc. El valor predeterminado es &#42; e indica todos los archivos y carpetas. Puede utilizar patrones de archivo para incluir:
+* **includeFilePattern (String)**: Lista delimitada por punto y coma (;) de patrones que utiliza una carpeta inspeccionada para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si se introduce IncludeFilePattern&#42;, se recogen todos los archivos y carpetas que coinciden con la entrada&#42;. Esto incluye archivos y carpetas llamados input1, input2, etc. El valor predeterminado es &#42; e indica todos los archivos y carpetas. Puede utilizar patrones de archivo para incluir:
 
    * Archivos con extensiones de nombre de archivo específicas; por ejemplo, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-   * Archivos con nombres específicos; por ejemplo, datos.&#42; incluiría archivos y carpetas llamados data1, data2, etc.
+   * Archivos con nombres específicos; por ejemplo, data.&#42; incluiría archivos y carpetas llamados data1, data2, etc.
 
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-   * Datos[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
 
       * &#42;.[dD][Aa]&#39;port&#39;
       * &#42;.[Xx][Mm][Ll]
 
 Para obtener más información sobre los patrones de archivo, consulte [Acerca de los patrones de archivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
-* **waitTime (Long)**: Tiempo, en milisegundos, que debe esperarse antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 3 600 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. El valor predeterminado es 0. Esta configuración es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y el archivo tarda diez minutos en descargarse, establezca el tiempo de espera en 10&#42;60 &#42;1000 milisegundos. Esto evita que la carpeta vigilada analice el archivo si no tiene diez minutos de antigüedad.
-* **purgeDuration (Long)**: Los archivos y carpetas de la carpeta de resultados se depuran cuando son anteriores a este valor. Este valor se mide en días. Esta configuración es útil para garantizar que la carpeta de resultados no esté llena. El valor de -1 días indica que nunca se eliminará la carpeta de resultados. El valor predeterminado es -1.
+* **waitTime (Long)**: Tiempo, en milisegundos, que debe esperarse antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 3 600 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. El valor predeterminado es 0. Esta configuración es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y el archivo tarda diez minutos en descargarse, establezca el tiempo de espera en 10&#42;60 &#42;1000 milisegundos. Esto evita que la carpeta inspeccionada analice el archivo si no tiene diez minutos de antigüedad.
+* **purgeDuration (Long)**: Los archivos y carpetas de la carpeta de resultados se depuran cuando son anteriores a este valor. Este valor se mide en días. Esta configuración es útil para garantizar que la carpeta de resultados no se llene. El valor de -1 días indica que nunca se eliminará la carpeta de resultados. El valor predeterminado es -1.
 * **resultFolderName (String)**: La carpeta en la que se almacenan los resultados guardados. Si los resultados no aparecen en esta carpeta, compruebe la carpeta de errores. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. Este valor puede ser una ruta absoluta o relativa con los siguientes patrones de archivo:
 
-   * %F = prefijo de nombre de archivo
-   * %E = extensión de nombre de archivo
+   * %F = prefijo del nombre de archivo
+   * %E = extensión del nombre de archivo
    * %Y = año (completo)
    * %y = año (dos últimos dígitos)
    * %M = mes
@@ -141,68 +141,68 @@ Para obtener más información sobre los patrones de archivo, consulte [Acerca d
    * %s = segundo
    * %l = milisegundo
    * %R = número aleatorio (entre 0 y 9)
-   * %P = id. de proceso o trabajo
+   * %P = ID del proceso o trabajo
 
-   Por ejemplo, si son las 8 PM del 17 de julio de 2009 y especifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la carpeta de resultados es C:/Test/WF0/failure/2009/07/17/20
+   Por ejemplo, si son las 20:00 del 17 de julio de 2009 y especifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la carpeta de resultados es C:/Test/WF0/failure/2009/07/17/20
 
-   Si la ruta no es absoluta sino relativa, la carpeta se crea dentro de la carpeta vigilada. El valor predeterminado es result/%Y/%M/%D/, que es la carpeta Result dentro de la carpeta Watched. Para obtener más información sobre los patrones de archivo, consulte [Acerca de los patrones de archivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+   Si la ruta de acceso no es absoluta sino relativa, la carpeta se crea dentro de la carpeta inspeccionada. El valor predeterminado es result/%Y/%M/%D/, que es la carpeta Resultado dentro de la carpeta inspeccionada. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 >[!NOTE]
 >
->Cuanto menor sea el tamaño de las carpetas de resultados, mejor será el rendimiento de la carpeta vigilada. Por ejemplo, si la carga estimada para la carpeta vigilada es de 1000 archivos cada hora, pruebe un patrón como result/%Y%M%D%H para que se cree una nueva subcarpeta cada hora. Si la carga es menor (por ejemplo, 1000 archivos por día), puede utilizar un patrón como result/%Y%M%D.
+>Cuanto menor sea el tamaño de las carpetas de resultados, mejor será el rendimiento de la carpeta inspeccionada. Por ejemplo, si la carga estimada para la carpeta inspeccionada es de 1000 archivos cada hora, pruebe un patrón como result/%Y%M%D%H para que se cree una nueva subcarpeta cada hora. Si la carga es menor (por ejemplo, 1000 archivos por día), puede utilizar un patrón como result/%Y%M%D.
 
-* **failureFolderName (String)**: Carpeta donde se guardan los archivos de error. Esta ubicación siempre es relativa a la carpeta vigilada. Puede utilizar patrones de archivo, tal como se describe para la carpeta de resultados. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. El valor predeterminado es error/%Y/%M/%D/.
-* **preserveFolderName (cadena):** Ubicación en la que se almacenan los archivos después de procesarlos correctamente. La ruta puede ser absoluta, relativa o nula. Puede utilizar patrones de archivo, tal como se describe para la carpeta de resultados. El valor predeterminado es preserve/%Y/%M/%D/.
+* **failureFolderName (String)**: Carpeta donde se guardan los archivos de error. Esta ubicación siempre es relativa a la carpeta inspeccionada. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. El valor predeterminado es failure/%Y/%M/%D/.
+* **preserveFolderName (String):** Ubicación en la que se almacenan los archivos después de procesarlos correctamente. La ruta puede ser absoluta, relativa o nula. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados. El valor predeterminado es preserve/%Y/%M/%D/.
 * **batchSize (Long)**: Número de archivos o carpetas que se van a recoger por análisis. Utilizar para evitar sobrecargas en el sistema; el análisis de demasiados archivos al mismo tiempo puede provocar un bloqueo. El valor predeterminado es 2.
 
-   La configuración Intervalo de encuesta y Tamaño de lote determina cuántos archivos ha visto la carpeta en cada análisis. Watched Folder utiliza un grupo de subprocesos de Quartz para analizar la carpeta de entrada. El grupo de subprocesos se comparte con otros servicios. Si el intervalo de análisis es pequeño, los subprocesos analizan la carpeta de entrada con frecuencia. Si los archivos se sueltan con frecuencia en la carpeta vigilada, debe reducir el intervalo de exploración. Si los archivos se pierden con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
+   La configuración Intervalo de encuesta y Tamaño de lote determina cuántos archivos recoge la carpeta inspeccionada en cada análisis. La carpeta inspeccionada utiliza un grupo de hilos de Quartz para analizar la carpeta de entrada. El grupo de subprocesos se comparte con otros servicios. Si el intervalo de análisis es pequeño, los subprocesos analizan la carpeta de entrada con frecuencia. Si los archivos se pierden con frecuencia en la carpeta vigilada, deberá reducir el intervalo de análisis. Si los archivos se pierden con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
 
-   Si hay un gran volumen de archivos que se están perdiendo, aumente el tamaño del lote. Por ejemplo, si el servicio iniciado por el extremo de la carpeta vigilada puede procesar 700 archivos por minuto y los usuarios pueden soltar archivos en la carpeta de entrada a la misma velocidad, al establecer el tamaño del lote en 350 y el intervalo de encuesta en 30 segundos, ayude al rendimiento de la carpeta vigilada sin incurrir en el coste de digitalizar la carpeta vigilada con demasiada frecuencia.
+   Si se pierde un gran volumen de archivos, aumente el tamaño del lote. Por ejemplo, si el servicio iniciado por el punto final de la carpeta inspeccionada puede procesar 700 archivos por minuto y los usuarios pueden soltar archivos en la carpeta de entrada a la misma velocidad, al establecer el tamaño del lote en 350 y el intervalo de encuesta en 30 segundos, ayuda al rendimiento de la carpeta inspeccionada sin incurrir en el coste de analizar la carpeta inspeccionada con demasiada frecuencia.
 
-   Cuando se colocan los archivos en la carpeta vigilada, se enumeran los archivos en la entrada, lo que puede reducir el rendimiento si la exploración se realiza cada segundo. El aumento del intervalo de análisis puede mejorar el rendimiento. Si el volumen de archivos que se van a perder es pequeño, ajuste el tamaño del lote y el intervalo de encuesta en consecuencia. Por ejemplo, si se pierden 10 archivos cada segundo, intente establecer el intervalo de encuesta en 1 segundo y el tamaño del lote en 10
+   Cuando se sueltan los archivos en la carpeta inspeccionada, se enumeran los archivos en la entrada, lo que puede reducir el rendimiento si la exploración se realiza cada segundo. El aumento del intervalo de análisis puede mejorar el rendimiento. Si el volumen de archivos que se van a soltar es pequeño, ajuste el tamaño del lote y el intervalo de encuesta en consecuencia. Por ejemplo, si se sueltan 10 archivos cada segundo, intente establecer el intervalo de encuesta en 1 segundo y el tamaño del lote en 10
 
-* **throttleOn (booleano)**: Cuando se selecciona esta opción, limita el número de trabajos de carpeta vigilada que procesa AEM Forms en un momento determinado. El número máximo de trabajos viene determinado por el valor Tamaño de lote . El valor predeterminado es true. (Consulte [Acerca de la restricción](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
+* **throttleOn (Boolean)**: Cuando se selecciona esta opción, limita el número de trabajos de carpeta inspeccionada que procesa AEM Forms en un momento determinado. El número máximo de trabajos viene determinado por el valor Tamaño del lote. El valor predeterminado es True. (Consulte [Acerca de la restricción](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
-* **overwriteDuplicateFilename (booleano)**: Cuando se establece en True, los archivos de la carpeta de resultados y de la carpeta de preservación se sobrescriben. Cuando se establece en False, se utilizan archivos y carpetas con un sufijo de índice numérico para el nombre. El valor predeterminado es False.
-* **preserveOnFailure (booleano)**: Preservar archivos de entrada en caso de que no se ejecute la operación en un servicio. El valor predeterminado es true.
-* **inputFilePattern (String)**: Especifica el patrón de los archivos de entrada para una carpeta vigilada. Crea una lista de permitidos de los archivos.
-* **asynch (booleano)**: Identifica el tipo de invocación como asíncrono o sincrónico. El valor predeterminado es true (asincrónico). El procesamiento de archivos es una tarea que consume recursos. Mantenga el valor del indicador asíncrono en true para evitar que se bloquee el subproceso principal del trabajo de análisis. En un entorno agrupado, es fundamental mantener el indicador en verdadero para permitir el equilibrio de carga para los archivos que se procesan en los servidores disponibles. Si el indicador es false, el trabajo de análisis intenta realizar secuencialmente el procesamiento de cada archivo o carpeta de nivel superior dentro de su propio subproceso. No establezca el indicador en false sin un motivo específico, como el procesamiento basado en flujos de trabajo en una configuración de un solo servidor.
+* **overwriteDuplicateFilename (Boolean)**: Cuando se establece en True, los archivos de la carpeta de resultados y de la carpeta de conservación se sobrescriben. Cuando se establece en False, se utilizan archivos y carpetas con un sufijo de índice numérico para el nombre. El valor predeterminado es False.
+* **preserveOnFailure (Boolean)**: Conservar archivos de entrada en caso de que no se ejecute la operación en un servicio. El valor predeterminado es True.
+* **inputFilePattern (String)**: Especifica el patrón de los archivos de entrada para una carpeta inspeccionada. Crea una lista de permitidos de los archivos.
+* **asynch (Boolean)**: Identifica el tipo de invocación como asincrónico o sincrónico. El valor predeterminado es True (asincrónico). El procesamiento de archivos es una tarea que consume recursos. Mantenga el valor del indicador asíncrono en True para evitar que se bloquee el hilo principal del trabajo de análisis. En un entorno agrupado, es fundamental mantener el indicador en True para permitir el equilibrio de carga para los archivos que se procesan en los servidores disponibles. Si el indicador es False, el trabajo de análisis intenta realizar secuencialmente el procesamiento de cada archivo/carpeta de nivel superior dentro de su propio hilo. No establezca el indicador en False sin un motivo específico, como el procesamiento basado en flujos de trabajo en una configuración de un solo servidor.
 
 >[!NOTE]
 >
->Por diseño, los flujos de trabajo son asincrónicos. Incluso si establece el valor en false, los flujos de trabajo se inician en el modo asincrónico.
+>Por diseño, los flujos de trabajo son asincrónicos. Incluso si establece el valor en False, los flujos de trabajo se inician en modo asincrónico.
 
-* **enabled (Boolean)**: Desactiva y activa el análisis de una carpeta vigilada. Configúrelo en true para comenzar a analizar la carpeta vigilada. El valor predeterminado es true.
-* **payloadMapperFilter:** Cuando una carpeta se configura como carpeta vigilada, se crea una estructura de carpetas dentro de la carpeta vigilada. La estructura tiene carpetas para proporcionar entradas, recibir salidas (resultados), guardar datos para errores, conservar datos para procesos de larga duración y guardar datos para varias etapas. La estructura de carpetas de una carpeta vigilada puede servir como carga útil de flujos de trabajo centrados en Forms. Un asignador de carga útil permite definir la estructura de una carga útil que utiliza una carpeta vigilada para la entrada, la salida y el procesamiento. Por ejemplo, si utiliza el asignador predeterminado, asigna el contenido de la carpeta vigilada con [carga útil]\input y [carga útil]\carpeta de salida. Hay dos implementaciones de mapeo de carga útil listas para usar disponibles. Si no tiene [una implementación personalizada](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilice una implementación predeterminada:
+* **enabled (Boolean)**: Desactiva y activa el análisis de una carpeta inspeccionada. Configúrelo en True para comenzar a analizar la carpeta inspeccionada. El valor predeterminado es True.
+* **payloadMapperFilter:** Cuando una carpeta se configura como carpeta inspeccionada, se crea una estructura de carpetas dentro de la carpeta inspeccionada. La estructura tiene carpetas para proporcionar entradas, recibir salidas (resultados), guardar datos para errores, conservar datos para procesos de larga duración y guardar datos para varias fases. La estructura de carpetas de una carpeta inspeccionada puede servir como carga útil de flujos de trabajo centrados en Forms. Un asignador de carga útil permite definir la estructura de una carga útil que utiliza una carpeta inspeccionada para la entrada, la salida y el procesamiento. Por ejemplo, si utiliza el asignador predeterminado, asigna el contenido de la carpeta inspeccionada con la carpeta [payload]\input y [payload]\output. Hay dos implementaciones de asignador de carga útil listas para usar. Si no tiene [una implementación personalizada](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilice una predeterminada:
 
-   * **Asignador predeterminado:** Utilice el asignador de carga útil predeterminado para mantener el contenido de entrada y salida de las carpetas vigiladas en carpetas de entrada y salida independientes en la carga útil. Además, en la ruta de carga útil de un flujo de trabajo, utilice [carga útil]/input/ y [carga útil]rutas /output para recuperar y guardar contenido.
+   * **Asignador predeterminado:** utilice el asignador de cargas útiles predeterminado para mantener el contenido de entrada y salida de las carpetas vigiladas en carpetas de entrada y salida independientes en la carga útil. Además, en la ruta de carga útil de un flujo de trabajo, utilice las rutas [payload]/input/ y [payload]/output para recuperar y guardar contenido.
 
-   * **Asignador de carga útil basado en archivos simple:** Utilice el asignador de carga útil basado en archivos simples para mantener el contenido de entrada y salida directamente en la carpeta de carga útil. No crea ninguna jerarquía adicional, como el asignador predeterminado.
+   * **Asignador de carga útil basado en archivos simples:** utilice el asignador de cargas útiles basado en archivos simples para mantener el contenido de entrada y salida directamente en la carpeta de carga útil. No crea ninguna jerarquía adicional, como el asignador predeterminado.
 
 ### Parámetros de configuración personalizados {#custom-configuration-parameters}
 
-Junto con las propiedades de configuración de la carpeta vigilada que se enumeran anteriormente, también puede especificar parámetros de configuración personalizados. Los parámetros personalizados se pasan al código de procesamiento de archivos. Permite que el código cambie su comportamiento en función del valor del parámetro . Para especificar un parámetro:
+Junto con las propiedades de configuración de la carpeta inspeccionada que se enumeran anteriormente, también puede especificar parámetros de configuración personalizados. Los parámetros personalizados se pasan al código de procesamiento de archivos. Permite que el código cambie su comportamiento en función del valor del parámetro. Para especificar un parámetro:
 
-1. Inicie sesión en CRXDE-Lite y vaya al nodo de configuración Carpeta vigilada .
-1. Agregue un parámetro de propiedad.&lt;property_name> al nodo de configuración Carpeta vigilada . El tipo de propiedad solo puede ser Boolean, Date, Decimal, Double, Long y String. Puede especificar propiedades de uno o varios valores.
+1. Inicie sesión en CRXDE-Lite y vaya al nodo de configuración de la carpeta inspeccionada.
+1. Agregue un parámetro de propiedad&lt;property_name> al nodo de configuración de la carpeta inspeccionada. El tipo de propiedad solo puede ser Boolean, Date, Decimal, Double, Long y String. Puede especificar propiedades de uno o varios valores.
 
 >[!NOTE]
 >
 >Si el tipo de datos de la propiedad es Double, especifique un punto decimal en el valor de dichas propiedades. Para todas las propiedades, donde el tipo de datos es Double y no se especifica ningún punto decimal en el valor, el tipo se convierte a Long.
 
-Estas propiedades se pasan como un mapa inmutable de tipo Mapa&lt;string object=&quot;&quot;> al código de procesamiento. El código de procesamiento puede ser un ECMAScript, un flujo de trabajo o un servicio. Los valores proporcionados para las propiedades están disponibles como pares clave-valor en el mapa. Clave es el nombre de la propiedad y el valor es el valor de la propiedad. Para obtener más información sobre los parámetros de configuración personalizados, consulte la siguiente imagen:
+Estas propiedades se pasan como un mapa inmutable de tipo Map&lt;String, Object> al código de procesamiento. El código de procesamiento puede ser un ECMAScript, un flujo de trabajo o un servicio. Los valores proporcionados para las propiedades están disponibles como pares clave-valor en el mapa. Clave es el nombre de la propiedad y el valor es el valor de la propiedad. Para obtener más información acerca de los parámetros de configuración personalizados, consulte la siguiente imagen:
 
-![Un nodo de configuración de carpeta de inspección de muestra con propiedades obligatorias, algunas propiedades opcionales, algunos parámetros de configuración](assets/custom-configuration-parameters.png)
+![Un nodo de configuración de carpeta de inspección de muestra con propiedades obligatorias, algunas propiedades opcionales y algunos parámetros de configuración](assets/custom-configuration-parameters.png)
 
-Un nodo de configuración de carpeta de inspección de muestra con propiedades obligatorias, algunas propiedades opcionales, algunos parámetros de configuración.
+Un nodo de configuración de carpeta de inspección de muestra con propiedades obligatorias, algunas propiedades opcionales y algunos parámetros de configuración.
 
 #### Variables mutables para flujos de trabajo {#mutable-variables-for-workflows}
 
 Puede crear variables mutables para los métodos de procesamiento de archivos basados en flujos de trabajo. Estas variables sirven como contenedores para los datos que fluyen entre los pasos de un flujo de trabajo. Para crear estas variables:
 
-1. Inicie sesión en CRXDE-Lite y vaya al nodo de configuración Carpeta vigilada .
+1. Inicie sesión en CRXDE-Lite y vaya al nodo de configuración de la carpeta inspeccionada.
 
-1. Añada una propiedad workflow.var.&lt;variable_name> al nodo de configuración Carpeta vigilada .
+1. Agregue una propiedad workflow.var.&lt;variable_name> al nodo de configuración de la carpeta inspeccionada.
 
    El tipo de propiedad solo puede ser Boolean, Date, Decimal, Double, Long y String. También se admiten propiedades de varios valores. Para propiedades de varios valores, el valor disponible para el paso de flujo de trabajo es una matriz de tipo especificado.
 
@@ -218,21 +218,24 @@ Puede crear variables mutables para los métodos de procesamiento de archivos ba
 
 ## Varios métodos para procesar archivos {#variousmethodsforprocessingfiles}
 
-Puede iniciar un flujo de trabajo, servicio o secuencia de comandos para procesar los documentos colocados en una carpeta de inspección.
+Puede iniciar un flujo de trabajo, servicio o script para procesar los documentos colocados en una carpeta de inspección.
 
-### Uso de un servicio para procesar archivos de una carpeta vigilada   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Usar un servicio para procesar archivos de una carpeta inspeccionada   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
-Un servicio es una implementación personalizada de la variable `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` interfaz. Está registrado con OSGi junto con algunas propiedades personalizadas. Las propiedades personalizadas de la implementación lo hacen único y ayudan a identificar la implementación.
+Un servicio es una implementación personalizada de la interfaz `com.adobe.aemfd.watchfolder.service.api.ContentProcessor`. Está registrado con OSGi junto con algunas propiedades personalizadas. Las propiedades personalizadas de la implementación lo hacen único y ayudan a identificar la implementación.
 
 #### Implementación personalizada de la interfaz ContentProcessor {#custom-implementation-of-the-contentprocessor-interface}
 
-La implementación personalizada acepta un contexto de procesamiento (un objeto de tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lee documentos de entrada y parámetros de configuración del contexto, procesa las entradas y agrega el resultado de nuevo al contexto. ProcessorContext tiene las siguientes API:
+La implementación personalizada acepta un contexto de procesamiento (un objeto de tipo com.adobe.aemfd.watchfolder.service.api.ProcessorContext), lee documentos de entrada y parámetros de configuración del contexto, procesa las entradas y agrega el resultado de nuevo al
+contexto. ProcessorContext tiene las siguientes API:
 
-* **getWatchFolderId**: Devuelve el ID de la carpeta vigilada.
-* **getInputMap**: Devuelve un mapa del tipo Mapa. Las claves del mapa son el nombre del archivo de entrada y un objeto de documento que contiene el contenido del archivo. Utilice la API getinputMap para leer los archivos de entrada.
-* **getConfigParameters**: Devuelve un mapa inmutable de tipo Mapa. El mapa contiene los parámetros de configuración de una carpeta vigilada.
+* **getWatchFolderId**: Devuelve el ID de la carpeta inspeccionada.
+* **getInputMap**: Devuelve un mapa del tipo Map. Las claves del mapa son el nombre del archivo de entrada y un objeto de documento que contiene el contenido del archivo. Utilice la API getinputMap para leer los archivos de entrada.
+* **getConfigParameters**: Devuelve un mapa inmutable de tipo Map. El mapa contiene
+los parámetros de configuración de una carpeta inspeccionada.
 
-* **setResult**: La implementación ContentProcessor utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida a la API setResult. La API puede elegir utilizar o ignorar el archivo proporcionado según el patrón de carpeta/archivo de salida especificado. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo.
+* **setResult**: La implementación ContentProcessor
+utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida al API setResult. El API puede elegir utilizar o ignorar el archivo proporcionado según el patrón de carpeta/archivo de salida especificado. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo.
 
 Por ejemplo, el siguiente código es una implementación personalizada de la interfaz ContentProcessor con una propiedad personalizada foo=bar.
 
@@ -243,9 +246,9 @@ Por ejemplo, el siguiente código es una implementación personalizada de la int
 public class OutputWriter implements ContentProcessor {
 ```
 
-While [configuración de una carpeta vigilada](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p), si especifica la propiedad inputProcessorId como (foo=bar) y la propiedad inputProcessorType como Service, se utilizará el servicio mencionado anteriormente (implementación personalizada) para procesar los archivos de entrada de la carpeta vigilada.
+Al [configurar una carpeta inspeccionada](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p), si especifica la propiedad inputProcessorId como (foo=bar) y la propiedad inputProcessorType como Servicio, se utilizará el servicio mencionado anteriormente (implementación personalizada) para procesar los archivos de entrada de la carpeta inspeccionada.
 
-El siguiente ejemplo también es una implementación personalizada de la interfaz ContentProcessor . En el ejemplo, el servicio acepta archivos de entrada, los copia en una ubicación temporal y devuelve un objeto de documento con el contenido del archivo. El contenido del objeto de documento se guarda en la carpeta de resultados. La ruta de acceso física de la carpeta de resultados se configura en la variable [Nodo de configuración de la carpeta vigilada](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
+El siguiente ejemplo también es una implementación personalizada de la interfaz ContentProcessor. En el ejemplo, el servicio acepta archivos de entrada, los copia en una ubicación temporal y devuelve un objeto de documento con el contenido del archivo. El contenido del objeto de documento se guarda en la carpeta de resultados. La ruta física de la carpeta de resultados se configura en el [nodo de configuración de la carpeta inspeccionada](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
 ```java
 @Component(immediate = true)
@@ -263,20 +266,20 @@ public class TestContentProcessor1 implements ContentProcessor {
 }
 ```
 
-### Uso de scripts para procesar archivos de una carpeta vigilada {#using-scripts-to-process-files-of-a-watched-folder}
+### Usar scripts para procesar archivos de una carpeta inspeccionada {#using-scripts-to-process-files-of-a-watched-folder}
 
-Las secuencias de comandos son el código personalizado de queja de ECMAScript que se escribe para procesar los documentos colocados en la carpeta vigilada. Un script se representa como un nodo JCR. Aparte de las variables estándar ECMAScript (log, sling y más), el Script tiene una variable processorContext. La variable es del tipo ProcessorContext. ProcessorContext tiene las siguientes API:
+Los scripts son el código personalizado de queja de ECMAScript que se escribe para procesar los documentos colocados en la carpeta inspeccionada. Un script se representa como un nodo JCR. Aparte de las variables estándar ECMAScript (log, sling y más), el script tiene una variable processorContext. La variable es del tipo ProcessorContext. ProcessorContext tiene las siguientes API:
 
-* **getWatchFolderId**: Devuelve el ID de la carpeta vigilada.
-* **getInputMap**: Devuelve un mapa del tipo Mapa. Las claves del mapa son el nombre del archivo de entrada y un objeto de documento que contiene el contenido del archivo. Utilice la API getinputMap para leer los archivos de entrada.
-* **getConfigParameters**: Devuelve un mapa inmutable de tipo Mapa. El mapa contiene los parámetros de configuración de una carpeta vigilada.
-* **setResult**: La implementación ContentProcessor utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida a la API setResult. La API puede elegir utilizar o ignorar el archivo proporcionado según el patrón de carpeta/archivo de salida especificado. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo.
+* **getWatchFolderId**: Devuelve el ID de la carpeta inspeccionada.
+* **getInputMap**: Devuelve un mapa del tipo Map. Las claves del mapa son el nombre del archivo de entrada y un objeto de documento que contiene el contenido del archivo. Utilice la API getinputMap para leer los archivos de entrada.
+* **getConfigParameters**: Devuelve un mapa inmutable de tipo Map. El mapa contiene los parámetros de configuración de una carpeta inspeccionada.
+* **setResult**: La implementación ContentProcessor utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida al API setResult. El API puede elegir utilizar o ignorar el archivo proporcionado según el patrón de carpeta/archivo de salida especificado. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo.
 
-El siguiente código es un ejemplo de ECMAScript. Acepta archivos de entrada, copia los archivos en una ubicación temporal y devuelve un objeto de documento con el contenido del archivo. El contenido del objeto de documento se guarda en la carpeta de resultados. La ruta de acceso física de la carpeta de resultados se configura en la variable [Nodo de configuración de la carpeta vigilada](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
+El siguiente código es un ejemplo de ECMAScript. Acepta archivos de entrada, los copia en una ubicación temporal y devuelve un objeto de documento con el contenido del archivo. El contenido del objeto de documento se guarda en la carpeta de resultados. La ruta física de la carpeta de resultados se configura en el [nodo de configuración de la carpeta inspeccionada](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
 >[!NOTE]
 >
->La carpeta de salida y el prefijo del nombre de archivo se deciden según los parámetros de configuración de la carpeta vigilada.
+>La carpeta de salida y el prefijo del nombre de archivo se deciden según los parámetros de configuración de la carpeta inspeccionada.
 
 ```java
 var inputMap = processorContext.getInputMap();
@@ -287,77 +290,77 @@ entry.getValue().copyToFile(tempFile);
 processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docmanager.Document(tempFile, true));
 ```
 
-#### Ubicación de las secuencias de comandos y consideraciones de seguridad {#location-of-scripts-and-security-considerations}
+#### Ubicación de los scripts y consideraciones de seguridad {#location-of-scripts-and-security-considerations}
 
 De forma predeterminada, se proporciona una carpeta contenedora (/etc/fd/watchfolder/scripts) donde los clientes pueden colocar sus scripts y el usuario de servicio predeterminado que usa el marco de carpetas de inspección tiene los permisos necesarios para leer scripts desde esta ubicación.
 
-Si planea colocar las secuencias de comandos en una ubicación personalizada, es probable que el usuario de servicio predeterminado no tenga permisos de lectura sobre la ubicación personalizada. Para este escenario, realice los siguientes pasos para proporcionar los permisos necesarios a la ubicación personalizada:
+Si planea colocar los scripts en una ubicación personalizada, es probable que el usuario de servicio predeterminado no tenga permisos de lectura sobre la ubicación personalizada. Para este escenario, realice los siguientes pasos para proporcionar los permisos necesarios a la ubicación personalizada:
 
-1. Cree un usuario del sistema mediante programación o a través de la consola https://&#39;[server]:[puerto]&#39;/crx/explorer. También puede utilizar un usuario del sistema existente. Es importante trabajar con los usuarios del sistema aquí en lugar de con los usuarios normales.
+1. Cree un usuario del sistema mediante programación o a través de la consola https://&#39;[server]:[port]&#39;/crx/explorer. También puede utilizar un usuario del sistema existente. Es importante trabajar con los usuarios del sistema aquí en lugar de con los usuarios normales.
 1. Proporcione permisos de lectura al usuario del sistema recién creado o existente en la ubicación personalizada donde se almacenan los scripts. Puede tener varias ubicaciones personalizadas. Proporcione al menos permisos de lectura a todas las ubicaciones personalizadas.
-1. En la consola de configuración de Felix (/system/console/configMgr), busque la asignación de usuario de servicio para las carpetas de inspección. Esta asignación se parece a &#39;Asignación: adobe-aemds-core-watch-folder=...&#39;.
-1. Haga clic en la asignación. Para la entrada &quot;adobe-aemds-core-watch-folder:scripts=fd-service&quot;, cambie fd-service por el ID del usuario del sistema personalizado. Haga clic en Guardar.
+1. En la consola de configuración de Felix (/system/console/configMgr), busque la asignación de usuario de servicio para las carpetas de inspección. Esta asignación es similar a “Mapping: adobe-aemds-core-watch-folder=...”.
+1. Haga clic en la asignación. Para la entrada “adobe-aemds-core-watch-folder:scripts=fd-service”, cambie fd-service por el ID del usuario del sistema personalizado. Haga clic en Guardar.
 
-Ahora, puede utilizar la ubicación personalizada configurada para guardar las secuencias de comandos.
+Ahora, puede utilizar la ubicación personalizada configurada para guardar los scripts.
 
-### Uso de un flujo de trabajo para procesar archivos de una carpeta vigilada {#using-a-workflow-to-process-files-of-a-watched-folder}
+### Usar un flujo de trabajo para procesar archivos de una carpeta inspeccionada {#using-a-workflow-to-process-files-of-a-watched-folder}
 
 Los flujos de trabajo permiten automatizar las actividades de Experience Manager. Los flujos de trabajo constan de una serie de pasos que se ejecutan en un orden específico. Cada paso realiza una actividad distinta, como activar una página o enviar un mensaje de correo electrónico. Los flujos de trabajo pueden interactuar con los recursos del repositorio, las cuentas de usuario y los servicios de Experience Manager. Por lo tanto, los flujos de trabajo pueden coordinarse de forma complicada.
 
 * Antes de crear un flujo de trabajo, tenga en cuenta los siguientes puntos:
 * El resultado de un paso debe estar disponible para todos los pasos siguientes.
-Los pasos deben poder actualizar (o incluso eliminar) los productos existentes generados por los pasos anteriores.
+Los pasos deben poder actualizar (o incluso eliminar) los resultados existentes generados por los pasos anteriores.
 * Las variables mutables se utilizan para el flujo de datos dinámicos personalizados entre los pasos.
 
 Realice los siguientes pasos para procesar archivos mediante flujos de trabajo:
 
-1. Cree una implementación de la variable `com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextProcessor` interfaz. Es similar a la implementación creada para un Servicio.
+1. Cree una implementación de la interfaz `com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextProcessor`. Es similar a la implementación creada para un Servicio.
 
    >[!NOTE]
    >
-   >Puede crear la implementación completa completamente en ECMAScript.
+   >Puede crear la implementación completa en su totalidad en ECMAScript.
 
 1. En un paso del flujo de trabajo, busque el servicio OSGi de tipo com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService y llame al método execute() del servicio con los siguientes argumentos.
 
    * Su implementación personalizada de la interfaz WorkflowContextProcessor
    * workItem
    * workflowSession
-   * metadatos
+   * metadata
 
-Si utiliza el lenguaje de programación Java para implementar el flujo de trabajo, el motor de flujo de trabajo de AEM proporciona valor para las variables workItem, workflowSession y metadata . Estas variables se pasan como argumentos al método execute() de la implementación personalizada de WorkflowProcess.
+Si utiliza el lenguaje de programación Java para implementar el flujo de trabajo, el motor de flujos de trabajo de AEM proporciona valor para las variables workItem, workflowSession y metadata. Estas variables se pasan como argumentos al método execute() de su implementación personalizada de WorkflowProcess.
 
-Si utiliza ECMAScript para implementar el flujo de trabajo, el motor de flujo de trabajo de AEM proporciona un valor para las variables graniteWorkItem, graniteWorkflowSession y metadata . Estas variables se pasan como argumentos al método WorkflowContextService.execute() .
+Si utiliza ECMAScript para implementar el flujo de trabajo, el motor de flujos de trabajo de AEM proporciona un valor para las variables graniteWorkItem, graniteWorkflowSession y metadata. Estas variables pasan como argumentos al método WorkflowContextService.execute().
 
 El argumento processWorkflowContext() es un objeto de tipo com.adobe.aemfd.watchfolder.workflow.api.WorkflowContext. La interfaz WorkflowContext tiene las siguientes API para facilitar las consideraciones específicas del flujo de trabajo mencionadas anteriormente:
 
-* getWorkItem: Devuelve el valor de la variable WorkItem . Las variables se pasan al método WorkflowContextService.execute() .
-* getWorkflowSession: Devuelve el valor de la variable WorkflowSession. Las variables se pasan al método WorkflowContextService.execute() .
-* getMetadata: Devuelve el valor de la variable de metadatos. Las variables se pasan al método WorkflowContextService.execute() .
-* getCommittedVariables: Devuelve un mapa de objetos de solo lectura que representa las variables establecidas por pasos anteriores. Si una variable no se modifica en ninguno de los pasos anteriores, se devuelve el valor predeterminado especificado durante la configuración de la carpeta vigilada.
-* getCommittedResults: Devuelve un mapa de documento de sólo lectura. El mapa representa los archivos de salida generados por los pasos anteriores.
-* setVariable: La implementación WorkflowContextProcessor utiliza la variable para manipular las variables que representan los datos dinámicos personalizados que fluyen entre los pasos. El nombre y el tipo de las variables son idénticos al nombre de las variables especificadas durante [configuración de la carpeta vigilada](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p). Para cambiar el valor de una variable, llame a la API setVariable con un valor que no sea nulo. Para eliminar una variable, llame a setVariable() con un valor nulo.
+* getWorkItem: Devuelve el valor de la variable WorkItem. Las variables pasan al método WorkflowContextService.execute().
+* getWorkflowSession: Devuelve el valor de la variable WorkflowSession. Las variables pasan al método WorkflowContextService.execute().
+* getMetadata: Devuelve el valor de la variable Metadata. Las variables pasan al método WorkflowContextService.execute().
+* getCommittedVariables: Devuelve un mapa de objetos de solo lectura que representa las variables establecidas por pasos anteriores. Si una variable no se modifica en ninguno de los pasos anteriores, se devuelve el valor predeterminado especificado durante la configuración de la carpeta inspeccionada.
+* getCommittedResults: Devuelve un mapa de documento de solo lectura. El mapa representa los archivos de salida generados por los pasos anteriores.
+* setVariable: La implementación WorkflowContextProcessor utiliza la variable para manipular las variables que representan los datos dinámicos personalizados que fluyen entre los pasos. El nombre y el tipo de las variables son idénticos al nombre de las variables especificadas durante la [configuración de la carpeta inspeccionada](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p). Para cambiar el valor de una variable, llame al API setVariable con un valor que no sea nulo. Para quitar una variable, llame a setVariable() con un valor nulo.
 
 Las siguientes API de ProcessorContext también están disponibles:
 
-* getWatchFolderId: Devuelve el ID de la carpeta vigilada.
-* getInputMap: Devuelve un mapa del tipo Mapa&lt;string document=&quot;&quot;>. Las claves del mapa son el nombre del archivo de entrada y un objeto de documento que contiene el contenido del archivo. Utilice la API getinputMap para leer los archivos de entrada.
-* getConfigParameters: Devuelve un mapa inmutable de tipo Mapa&lt;string object=&quot;&quot;>. El mapa contiene los parámetros de configuración de una carpeta vigilada.
-* setResult: La implementación ContentProcessor utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida a la API setResult. La API puede elegir utilizar o ignorar el archivo proporcionado según el patrón de carpeta/archivo de salida especificado. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo
+* getWatchFolderId: Devuelve el ID de la carpeta inspeccionada.
+* getInputMap: Devuelve un mapa del tipo Map&lt;String, Document>. Las claves del mapa son el nombre del archivo de entrada y un objeto de documento que contiene el contenido del archivo. Utilice la API getinputMap para leer los archivos de entrada.
+* getConfigParameters: Devuelve un mapa inmutable de tipo Map&lt;String, Object>. El mapa contiene los parámetros de configuración de una carpeta inspeccionada.
+* setResult: La implementación ContentProcessor utiliza la API para escribir el documento de salida en la carpeta de resultados. Puede proporcionar un nombre para el archivo de salida al API setResult. El API puede elegir utilizar o ignorar el archivo proporcionado según el patrón de carpeta/archivo de salida especificado. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo
 
 Consideración de la API setResult cuando se utiliza en flujos de trabajo:
 
-* Para añadir un nuevo documento de salida que contribuya a la salida general del flujo de trabajo, llame a la API setResult con un nombre de archivo que no se haya utilizado como nombre de archivo de salida en ningún paso anterior.
-* Para actualizar un resultado generado por un paso anterior, llame a la API setResult con un nombre de archivo ya utilizado por un paso anterior.
+* Para agregar un nuevo documento de salida que contribuya a la salida general del flujo de trabajo, llame al API setResult con un nombre de archivo que no se haya utilizado como nombre de archivo de salida en ningún paso anterior.
+* Para actualizar un resultado generado por un paso anterior, llame al API setResult con un nombre de archivo ya utilizado por un paso anterior.
 * Para eliminar un resultado generado por un paso anterior, llame a setResult con un nombre de archivo ya utilizado por un paso anterior y nulo como contenido.
 
 >[!NOTE]
 >
->Llamar a la API setResult con contenido nulo en cualquier otro escenario resultaría en un error.
+>Llamar al API setResult con contenido nulo en cualquier otro escenario provocaría un error.
 
-El siguiente ejemplo se implementa como paso de flujo de trabajo. En el ejemplo, ECMAscript utiliza una variable stepCount para rastrear el número de veces que se realiza una llamada a un paso en la instancia de flujo de trabajo actual.
-El nombre de la carpeta de salida es una combinación del número de paso actual, el nombre del archivo original y el prefijo especificado en el parámetro outPrefix .
+El siguiente ejemplo se implementa como paso de flujo de trabajo. En el ejemplo, ECMAscript utiliza una variable stepCount para realizar un seguimiento del número de veces que se realiza una llamada a un paso en la instancia de flujo de trabajo actual.
+El nombre de la carpeta de salida es una combinación del número de paso actual, el nombre del archivo original y el prefijo especificado en el parámetro outPrefix.
 
-ECMAScript obtiene una referencia del servicio de contexto del flujo de trabajo y crea una implementación de la interfaz WorkflowContextProcessor . La implementación WorkflowContextProcessor acepta archivos de entrada, copia el archivo en una ubicación temporal y devuelve un documento que representa el archivo copiado. En función del valor de la variable booleana purgePrevious, el paso actual elimina el resultado generado la última vez por el mismo paso cuando el paso se inició en la instancia de flujo de trabajo actual. Al final, se invoca el método wfSvc.execute para ejecutar la implementación de WorkflowContextProcessor . El contenido del documento de salida se guarda en la carpeta de resultados en la ruta física mencionada en el nodo de configuración Carpeta vigilada.
+ECMAScript obtiene una referencia del servicio de contexto del flujo de trabajo y crea una implementación de la interfaz WorkflowContextProcessor. La implementación WorkflowContextProcessor acepta archivos de entrada, copia el archivo en una ubicación temporal y devuelve un documento que representa el archivo copiado. En función del valor de la variable booleana purgePrevious, el paso actual elimina el resultado generado la última vez por el mismo paso cuando el paso se inició en la instancia de flujo de trabajo actual. Al final, se invoca el método wfSvc.execute para ejecutar la implementación WorkflowContextProcessor. El contenido del documento de salida se guarda en la carpeta de resultados en la ruta física mencionada en el nodo de configuración de la carpeta inspeccionada.
 
 ```javascript
 log.error("Watch-folder workflow script called for step: " + graniteWorkItem.getNode().getTitle());
@@ -393,21 +396,21 @@ wfSvc.execute(impl, graniteWorkItem, graniteWorkflowSession, metaData);
 log.info("Exiting workflow script!")
 ```
 
-### Crear un filtro de asignador de carga útil para asignar la estructura de una carpeta vigilada a la carga útil de un flujo de trabajo {#create-payload-mapper-filter-to-map-structure-of-a-watched-folder-to-the-payload-of-a-workflow}
+### Crear un filtro de asignador de carga útil para asignar la estructura de una carpeta inspeccionada a la carga útil de un flujo de trabajo {#create-payload-mapper-filter-to-map-structure-of-a-watched-folder-to-the-payload-of-a-workflow}
 
-Cuando se crea una carpeta vigilada, se crea una estructura de carpetas dentro de la carpeta que se está viendo. La estructura de carpetas tiene carpetas de etapa, resultado, conservación, entrada y error. La estructura de carpetas puede servir como carga útil de entrada al flujo de trabajo y aceptar la salida de un flujo de trabajo. También puede enumerar los puntos de error, si los hay.
+Cuando crea una carpeta inspeccionada, se crea una estructura de carpetas dentro de la carpeta que se está inspeccionando. La estructura de carpetas tiene carpetas de fase, resultado, conservación, entrada y error. La estructura de carpetas puede servir como carga útil de entrada al flujo de trabajo y aceptar la salida de un flujo de trabajo. También puede enumerar los puntos de error, si los hay.
 
-Si la estructura de una carga útil es diferente de la estructura de la carpeta observada, puede escribir secuencias de comandos personalizadas para asignar la estructura de la carpeta vigilada a la carga útil. Este script se denomina filtro de mapeo de carga útil. De forma predeterminada, AEM Forms proporciona un filtro de asignador de carga útil para asignar la estructura de la carpeta observada a una carga útil.
+Si la estructura de una carga útil es diferente de la estructura de la carpeta inspeccionada, puede escribir scripts personalizados para asignar la estructura de la carpeta inspeccionada a la carga útil. Este script se denomina filtro de asignador de cargas útiles. De forma predeterminada, AEM Forms proporciona un filtro de asignador de carga útil para asignar la estructura de la carpeta observada a una carga útil.
 
-#### Creación de un filtro personalizado del asignador de carga útil {#creating-a-custom-payload-mapper-filter}
+#### Crear un filtro personalizado del asignador de carga útil {#creating-a-custom-payload-mapper-filter}
 
-1. Descargar [Adobe Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/).
-1. Configure el SDK de cliente en la ruta de compilación del proyecto basado en maven. Para empezar, puede descargar y abrir el siguiente proyecto basado en maven en el IDE de su elección.
-1. Edite el código de filtro del asignador de carga útil disponible en el paquete de muestra para adaptarlo a sus necesidades.
-1. Utilice maven para crear un paquete del filtro personalizado del asignador de carga útil.
-1. Uso [consola AEM paquetes](https://localhost:4502/system/console/bundles) para instalar el paquete.
+1. Descargar el [SDK de cliente de Adobe](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/).
+1. Configure el SDK de cliente en la ruta de la versión del proyecto basado en Maven. Para empezar, puede descargar y abrir el siguiente proyecto basado en Maven en el IDE de su elección.
+1. Edite el código de filtro del asignador de carga útil disponible en el paquete de ejemplo para adaptarlo a sus requisitos.
+1. Utilice Maven para crear un paquete del filtro personalizado del asignador de carga útil.
+1. Usar la [consola de paquetes de AEM](https://localhost:4502/system/console/bundles) para instalar el paquete.
 
-   Ahora, el filtro personalizado del asignador de carga útil aparece en AEM interfaz de usuario de carpetas vigiladas. Puede utilizarlo con el flujo de trabajo.
+   Ahora, el filtro personalizado del asignador de carga útil aparece en la interfaz de usuario de carpetas inspeccionadas de AEM. Puede utilizarlo con su flujo de trabajo.
 
    El siguiente código de ejemplo implementa un asignador simple basado en archivos para los archivos guardados en relación a una carga útil. Puede usarlo para empezar.
 
@@ -485,101 +488,101 @@ Si la estructura de una carga útil es diferente de la estructura de la carpeta 
    }
    ```
 
-## Interacción de los usuarios con una carpeta vigilada {#how-users-interact-with-a-watched-folder}
+## Interacción de los usuarios con una carpeta inspeccionada {#how-users-interact-with-a-watched-folder}
 
-Para un extremo de carpeta vigilada, los usuarios pueden iniciar operaciones de procesamiento de archivos copiando o arrastrando archivos de entrada o carpetas desde sus escritorios a una carpeta vigilada. Los archivos se procesan en el orden de llegada.
+Para un punto final de carpeta inspeccionada, los usuarios pueden iniciar operaciones de procesamiento de archivos al copiar o arrastrar archivos de entrada o carpetas desde sus escritorios a una carpeta inspeccionada. Los archivos se procesan en el orden de llegada.
 
-En los extremos de carpeta vigilada, si un trabajo requiere un solo archivo de entrada, el usuario puede copiar ese archivo en la raíz de la carpeta vigilada.
+En los puntos finales de carpeta inspeccionada, si un trabajo requiere un solo archivo de entrada, el usuario puede copiar ese archivo en la raíz de la carpeta inspeccionada.
 
-Si el trabajo contiene más de un archivo de entrada, el usuario debe crear una carpeta fuera de la jerarquía de carpetas vigiladas que contenga todos los archivos necesarios. Esta nueva carpeta debe incluir los archivos de entrada (y opcionalmente un archivo DDX si el proceso lo requiere). Una vez construida la carpeta de trabajo, el usuario la copia en la carpeta de entrada de la carpeta vigilada.
+Si el trabajo contiene más de un archivo de entrada, el usuario debe crear una carpeta fuera de la jerarquía de carpetas inspeccionadas que contenga todos los archivos necesarios. Esta nueva carpeta debe incluir los archivos de entrada (y opcionalmente un archivo DDX si el proceso lo requiere). Una vez construida la carpeta de trabajo, el usuario la copia en la carpeta de entrada de la carpeta inspeccionada.
 
 >[!NOTE]
 >
->Asegúrese de que el servidor de aplicaciones haya eliminado el acceso a los archivos de la carpeta vigilada. Si AEM Forms no puede eliminar los archivos de la carpeta de entrada después de analizarlos, el proceso asociado se iniciará indefinidamente.
+>Asegúrese de que el servidor de aplicaciones haya eliminado el acceso a los archivos de la carpeta inspeccionada. Si AEM Forms no puede eliminar los archivos de la carpeta de entrada después de analizarlos, el proceso asociado se iniciará indefinidamente.
 
-## Información adicional sobre las carpetas vigiladas {#additional-information-about-the-watched-folders}
+## Información adicional acerca de las carpetas inspeccionadas {#additional-information-about-the-watched-folders}
 
 ### Acerca de la restricción {#about-throttling}
 
-Cuando la restricción está habilitada para un extremo de carpeta de inspección, limita el número de trabajos de carpeta vigilada que se procesan en un momento dado. El número máximo de trabajos está determinado por el valor Tamaño de lote , también configurable en el extremo Carpeta vigilada . Cuando se alcanza el límite de regulación, los documentos entrantes en el directorio de entrada de la carpeta vigilada no se sondea. El documento también permanece en el directorio de entrada hasta que se completen otros trabajos de carpeta vigilada y se realice otro intento de sondeo. Para el procesamiento sincrónico, todos los trabajos procesados en una sola encuesta se cuentan hacia el límite de regulación, aunque los trabajos se procesen consecutivamente en un solo subproceso.
+Cuando la restricción está habilitada para un punto final de carpeta de inspección, limita el número de trabajos de carpeta inspeccionada que se procesan en un momento dado. El número máximo de trabajos está determinado por el valor Tamaño del lote, también configurable en el punto final de la carpeta inspeccionada. Cuando se alcanza el límite de restricción, los documentos entrantes en el directorio de entrada de la carpeta inspeccionada no se encuesta. El documento también permanece en el directorio de entrada hasta que se completen otros trabajos de la carpeta inspeccionada y se realice otro intento de encuesta. Para el procesamiento sincrónico, todos los trabajos procesados en una sola encuesta se cuentan hacia el límite de restricción, aunque los trabajos se procesen consecutivamente en un solo hilo.
 
 >[!NOTE]
 >
->La restricción no se escala con un clúster. Cuando la restricción está habilitada, el clúster en su conjunto no procesará más del número de trabajos especificado en Tamaño de lote en un momento dado. Este límite es para todo el clúster y no es específico de cada nodo del clúster. Por ejemplo, con un tamaño de lote de 2, se podía alcanzar el límite de regulación con un solo nodo procesando dos trabajos, y ningún otro nodo sondearía el directorio de entrada hasta que se complete uno de los trabajos.
+>La restricción no se escala con un grupo. Cuando la restricción está habilitada, el grupo en su conjunto no procesará más del número de trabajos especificado en Tamaño de lote en un momento dado. Este límite es para todo el grupo y no es específico de cada nodo del grupo. Por ejemplo, con un tamaño de lote de 2, se podía alcanzar el límite de restricción con un solo nodo procesando dos trabajos, y ningún otro nodo encuestaría el directorio de entrada hasta que se complete uno de los trabajos.
 
-#### Cómo funciona la restricción {#how-throttling-works}
+#### Funcionamiento de la restricción {#how-throttling-works}
 
-Watched Folder analiza la carpeta de entrada en cada intervalo de encuestas, toma el número de archivos especificados en el tamaño del lote e invoca el servicio de destino para cada uno de estos archivos. Por ejemplo, si el tamaño del lote es de cuatro, en cada análisis, la carpeta vigilada recoge cuatro archivos, crea cuatro solicitudes de invocación e invoca al servicio de destino. Antes de que se completen estas solicitudes, si se invoca la carpeta vigilada, de nuevo se inician cuatro trabajos, independientemente de si se han completado o no los cuatro trabajos anteriores.
+La carpeta inspeccionada analiza la carpeta de entrada en cada intervalo de encuesta, toma el número de archivos especificados en el tamaño del lote e invoca el servicio de destino para cada uno de estos archivos. Por ejemplo, si el tamaño del lote es de cuatro, en cada análisis, la carpeta inspeccionada recoge cuatro archivos, crea cuatro solicitudes de invocación e invoca al servicio de destino. Antes de que se completen estas solicitudes, si se invoca la carpeta inspeccionada, de nuevo se inician cuatro trabajos, independientemente de si se han completado o no los cuatro trabajos anteriores.
 
-La restricción impide que la carpeta vigilada invoque nuevos trabajos cuando los trabajos anteriores no se completan. La carpeta vigilada detecta los trabajos en curso y procesa los nuevos trabajos en función del tamaño del lote menos los trabajos en curso. Por ejemplo, en la segunda invocación, si el número de trabajos completados es solo tres y un trabajo sigue en curso, la Carpeta vigilada invoca solo tres trabajos más.
+La restricción impide que la carpeta inspeccionada invoque nuevos trabajos cuando los trabajos anteriores no se completan. La carpeta inspeccionada detecta los trabajos en curso y procesa los nuevos trabajos en función del tamaño del lote menos los trabajos en curso. Por ejemplo, en la segunda invocación, si el número de trabajos completados es solo tres y un trabajo sigue en curso, la carpeta inspeccionada invoca solo tres trabajos más.
 
-* La carpeta vigilada depende del número de archivos presentes en la carpeta de escenario para averiguar cuántos trabajos hay en curso. Si los archivos permanecen sin procesar en la carpeta de ensayo, la carpeta vigilada no invoca más trabajos. Por ejemplo, si el tamaño del lote es de cuatro y hay tres trabajos estancados, la carpeta vigilada solo invoca un trabajo en invocaciones posteriores. Existen varios escenarios que pueden hacer que los archivos permanezcan sin procesar en la carpeta de escenario. Cuando los trabajos están paralizados, el administrador puede finalizar el proceso en la página de administración de Gestión de procesos para que la carpeta vigilada mueva los archivos fuera de la carpeta de escenario.
-* Si el servidor de AEM Forms se desactiva antes de que la carpeta vigilada invoque los trabajos, el administrador puede sacar los archivos de la carpeta del escenario. Para obtener más información, consulte [Puntos de error y recuperación](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* Si el servidor de AEM Forms se está ejecutando pero la carpeta vigilada no se está ejecutando cuando el servicio Administrador de trabajos vuelve a llamar, lo que ocurre cuando los servicios no se inician en la secuencia ordenada, el administrador puede sacar los archivos de la carpeta del escenario. Para obtener más información, consulte [Puntos de error y recuperación](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* La carpeta inspeccionada depende del número de archivos presentes en la carpeta de fase para averiguar cuántos trabajos hay en curso. Si los archivos permanecen sin procesar en la carpeta de fase, la carpeta inspeccionada no invoca más trabajos. Por ejemplo, si el tamaño del lote es de cuatro y hay tres trabajos paralizados, la carpeta inspeccionada solo invoca un trabajo en invocaciones posteriores. Existen varios escenarios que pueden hacer que los archivos permanezcan sin procesar en la carpeta de fase. Cuando los trabajos están paralizados, el administrador puede finalizar el proceso en la página de administración Administración de procesos para que la carpeta inspeccionada mueva los archivos fuera de la carpeta de fase.
+* Si el servidor de AEM Forms se desactiva antes de que la carpeta inspeccionada invoque los trabajos, el administrador puede sacar los archivos de la carpeta de fase. Para obtener más información, consulte [Puntos de error y recuperación](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Si el servidor de AEM Forms se está ejecutando pero la carpeta inspeccionada no se está ejecutando cuando el servicio Administrador de trabajos devuelve la llamada, lo que ocurre cuando los servicios no se inician en la secuencia ordenada, el administrador puede sacar los archivos de la carpeta de fase. Para obtener más información, consulte [Puntos de error y recuperación](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
 
-### Puntos de error y recuperaciónPuntos de error y recuperación {#failure-points-and-recoveryfailure-points-and-recovery}
+### Puntos de error, puntos recoveryFailure y recuperación {#failure-points-and-recoveryfailure-points-and-recovery}
 
-En cada evento de encuesta, la carpeta vigilada bloquea la carpeta de entrada, mueve los archivos que coinciden con el patrón de archivo de inclusión a la carpeta de escenario y, a continuación, desbloquea la carpeta de entrada. El bloqueo es necesario para que dos subprocesos no recojan el mismo conjunto de archivos y los procesen dos veces. Las posibilidades de que esto ocurra aumentan con un pequeño intervalo de encuesta y un gran tamaño de lote. Después de mover los archivos a la carpeta de escenario, la carpeta de entrada se desbloquea para que otros subprocesos puedan analizar la carpeta. Este paso ayuda a proporcionar un alto rendimiento, ya que otros subprocesos pueden analizar mientras un subproceso está procesando los archivos.
+En cada evento de encuesta, la carpeta inspeccionada bloquea la carpeta de entrada, mueve los archivos que coinciden con el patrón de archivo de inclusión a la carpeta de fase y, a continuación, desbloquea la carpeta de entrada. El bloqueo es necesario para que dos subprocesos no recojan el mismo conjunto de archivos y los procesen dos veces. Las posibilidades de que esto ocurra aumentan con un pequeño intervalo de encuesta y un gran tamaño de lote. Tras mover los archivos a la carpeta de fase, la carpeta de entrada se desbloquea para que otros hilos puedan analizar la carpeta. Este paso ayuda a proporcionar un alto rendimiento, ya que otros hilos pueden analizar mientras uno procesa los archivos.
 
-Una vez que los archivos se mueven a la carpeta de escenario, las solicitudes de invocación se crean para cada archivo y se invoca el servicio de destino. Puede haber casos en los que Carpeta vigilada no pueda recuperar los archivos de la carpeta de escenario:
+Una vez que los archivos se mueven a la carpeta de fase, las solicitudes de invocación se crean para cada archivo y se invoca el servicio de destino. Puede haber casos en los que la carpeta inspeccionada no pueda recuperar los archivos de la carpeta de fase:
 
-* Si el servidor se apaga antes de que la Carpeta vigilada pueda crear la solicitud de invocación, los archivos de la carpeta de escenario permanecen en la carpeta de escenario y no se recuperan.
+* Si el servidor se apaga antes de que la carpeta inspeccionada pueda crear la solicitud de invocación, los archivos de la carpeta de fase permanecen en la carpeta de fase y no se recuperan.
 
-* Si la carpeta vigilada ha creado correctamente la solicitud de invocación para cada uno de los archivos de la carpeta de ensayo y el servidor se bloquea, hay dos comportamientos basados en el tipo de invocación:
+* Si la carpeta inspeccionada ha creado correctamente la solicitud de invocación para cada uno de los archivos de la carpeta de fase y el servidor se bloquea, hay dos comportamientos basados en el tipo de invocación:
 
-   * **Sincrónica**: Si la carpeta Watched está configurada para invocar el servicio sincrónicamente, todos los archivos de la carpeta stage permanecen sin procesar en la carpeta stage.
-   * **Asíncrona**: En este caso, la carpeta vigilada depende del servicio Administrador de trabajos. Si el servicio del administrador de trabajos vuelve a llamar a la carpeta vigilada, los archivos de la carpeta de etapa se mueven a la carpeta de preservación o de error en función de los resultados de la invocación. Si el servicio Administrador de trabajos no vuelve a llamar a la carpeta vigilada, los archivos permanecerán sin procesar en la carpeta de escenario. Esta situación ocurre cuando la carpeta vigilada no se está ejecutando cuando el administrador de trabajos vuelve a llamar.
+   * **Sincrónica**: Si la carpeta inspeccionada está configurada para invocar el servicio sincrónicamente, todos los archivos de la carpeta de fase permanecen sin procesar en la carpeta de fase.
+   * **Asincrónica**: En este caso, la carpeta inspeccionada depende del servicio Administrador de trabajos. Si el servicio Administrador de trabajos vuelve a llamar a la carpeta inspeccionada, los archivos de la carpeta de fase se mueven a la carpeta de conservación o de errores en función de los resultados de la invocación. Si el servicio Administrador de trabajos no vuelve a llamar a la carpeta inspeccionada, los archivos permanecerán sin procesar en la carpeta de fase. Esta situación ocurre cuando la carpeta inspeccionada no se está ejecutando cuando el administrador de trabajos vuelve a llamar.
 
-#### Recuperar archivos de origen no procesados en la carpeta de etapa {#recover-unprocessed-source-files-in-the-stage-folder}
+#### Recuperar archivos de origen sin procesar en la carpeta de fase {#recover-unprocessed-source-files-in-the-stage-folder}
 
-Cuando la carpeta vigilada no puede procesar los archivos de origen en la carpeta de escenario, puede recuperar los archivos sin procesar.
+Cuando la carpeta inspeccionada no puede procesar los archivos de origen en la carpeta de fase, puede recuperar los archivos sin procesar.
 
-1. Reinicie el servidor de aplicaciones o el nodo .
+1. Reinicie el servidor de la aplicación o el nodo.
 
-1. Impida que la carpeta vigilada procese nuevos archivos de entrada. Si omite este paso, será mucho más difícil determinar qué archivos no se procesan en la carpeta de escenario. Para evitar que la carpeta vigilada procese nuevos archivos de entrada, realice una de las siguientes tareas:
+1. Detenga el procesamiento por parte de la carpeta inspeccionada de nuevos archivos de entrada. Si omite este paso, será mucho más difícil determinar qué archivos no se procesan en la carpeta de fase. Para evitar que la carpeta inspeccionada procese nuevos archivos de entrada, realice una de las siguientes tareas:
 
-   * Cambie la propiedad includeFilePattern de la carpeta vigilada a algo que no coincida con ninguno de los nuevos archivos de entrada (por ejemplo, introduzca NOMATCH).
+   * Cambie la propiedad includeFilePattern de la carpeta inspeccionada a algo que no coincida con ninguno de los nuevos archivos de entrada (por ejemplo, introduzca NOMATCH).
    * Suspenda el proceso que está creando nuevos archivos de entrada.
 
-   Espere hasta que AEM Forms recupere y procese todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera para que la carpeta vigilada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
+   Espere hasta que AEM Forms recupere y procese todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera para que la carpeta inspeccionada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
 
-1. Determine qué archivos no se pueden procesar. Si ha esperado una cantidad de tiempo adecuada y ha completado el paso anterior, y aún quedan archivos sin procesar en la carpeta de escenario, vaya al paso siguiente.
+1. Determine qué archivos no se pueden procesar. Si ha esperado una cantidad de tiempo adecuada y ha completado el paso anterior, y todavía quedan archivos sin procesar en la carpeta de fase, vaya al paso siguiente.
 
    >[!NOTE]
    >
-   >Puede consultar la marca de fecha y hora de los archivos en el directorio de escenarios. Según el número de archivos y el tiempo de procesamiento normal, puede determinar qué archivos son lo suficientemente antiguos como para que se consideren atascados.
+   >Puede consultar la marca de fecha y hora de los archivos en el directorio de fase. Según el número de archivos y el tiempo de procesamiento normal, puede determinar qué archivos son lo suficientemente antiguos como para que se consideren atascados.
 
-1. Copie los archivos sin procesar del directorio de etapa al directorio de entrada.
+1. Copie los archivos sin procesar del directorio de fase al directorio de entrada.
 
-1. Si ha impedido que la carpeta vigilada procese nuevos archivos de entrada en el paso 2, cambie el Patrón de archivo de inclusión a su valor anterior o vuelva a habilitar el proceso que ha deshabilitado.
+1. Si ha impedido que la carpeta inspeccionada procese nuevos archivos de entrada en el paso 2, cambie el patrón de archivo de inclusión a su valor anterior o vuelva a habilitar el proceso que ha deshabilitado.
 
-### Carpetas vigiladas de cadena juntas {#chain-watched-folders-together}
+### Encadenar carpetas inspeccionadas {#chain-watched-folders-together}
 
-Las carpetas vigiladas se pueden encadenar juntas para que un documento resultante de una carpeta vigilada sea el documento de entrada de la siguiente carpeta vigilada. Cada carpeta vigilada puede invocar un servicio diferente. Al configurar las carpetas vigiladas de esta manera, se pueden invocar varios servicios. Por ejemplo, una carpeta vigilada podría convertir archivos PDF a Adobe PostScript® y una segunda carpeta vigilada podría convertir los archivos PostScript a formato PDF/A. Para ello, simplemente configure la carpeta de resultados de la carpeta vigilada definida por el primer punto final para que apunte a la carpeta de entrada de la carpeta vigilada definida por el segundo punto final.
+Las carpetas inspeccionadas se pueden encadenar para que un documento resultante de una carpeta inspeccionada sea el documento de entrada de la siguiente carpeta inspeccionada. Cada carpeta inspeccionada puede invocar un servicio diferente. Al configurar las carpetas inspeccionadas de esta forma, se pueden invocar varios servicios. Por ejemplo, una carpeta inspeccionada podría convertir archivos PDF a Adobe PostScript® y una segunda carpeta inspeccionada podría convertir los archivos PostScript a formato PDF/A. Para ello, simplemente configure la carpeta de resultados de la carpeta inspeccionada definida por el primer punto final para que apunte a la carpeta de entrada de la carpeta inspeccionada definida por el segundo punto final.
 
-El resultado de la primera conversión iría a \path\result. La entrada para la segunda conversión sería \path\result y el resultado de la segunda conversión iría a \path\result\result  (o el directorio que defina en el cuadro Carpeta de resultados para la segunda conversión).
+El resultado de la primera conversión iría a \path\result. La entrada para la segunda conversión sería \path\result y el resultado de la segunda conversión iría a \path\result\result (o el directorio que defina en el cuadro Carpeta de resultados para la segunda conversión).
 
 ### Patrones de archivos y carpetas {#file-and-folder-patterns}
 
-Los administradores pueden especificar el tipo de archivo que puede invocar un servicio. Se pueden establecer varios patrones de archivo para cada carpeta vigilada. Un patrón de archivo puede ser una de las siguientes propiedades de archivo:
+Los administradores pueden especificar el tipo de archivo que puede invocar un servicio. Se pueden establecer varios patrones de archivo para cada carpeta inspeccionada. Un patrón de archivo puede ser una de las siguientes propiedades de archivo:
 
 * Archivos con extensiones de nombre de archivo específicas; por ejemplo, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-* Archivos con nombres específicos; por ejemplo, datos.&#42;
+* Archivos con nombres específicos; por ejemplo, data.&#42;
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-   * Datos[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * &#42;.[dD][Aa]&#39;port&#39;
    * &#42;.[Xx][Mm][Ll]
 
 * El administrador puede definir el patrón de archivo de la carpeta de salida en la que desea almacenar los resultados. Para las carpetas de salida (resultado, conservar y error), el administrador puede especificar cualquiera de estos patrones de archivo:
 * %Y = año (completo)
 * %y = año (dos últimos dígitos)
-* %M = mes,
-* %D = día del mes,
-* %d = día del año,
-* %h = hora,
-* %m = minuto,
-* %s = segundo,
+* %M = mes
+* %D = día del mes
+* %d = día del año
+* %h = hora
+* %m = minuto
+* %s = segundo
 * %R = número aleatorio entre 0 y 9
 * %J = Nombre del trabajo
 
@@ -590,27 +593,27 @@ Las asignaciones de parámetros de salida también pueden especificar patrones a
 * %F = Nombre de archivo de origen
 * %E = Extensión de nombre de archivo de origen
 
-Si el patrón de asignación de parámetros de salida termina con &quot;File.separator&quot; (que es el separador de rutas), se crea una carpeta y el contenido se copia en esa carpeta. Si el patrón no termina con &quot;File.separator&quot;, el contenido (archivo de resultados o carpeta) se crea con ese nombre.
+Si el patrón de asignación de parámetros de salida termina con “File.separator” (que es el separador de rutas), se crea una carpeta y el contenido se copia en esa carpeta. Si el patrón no termina con “File.separator”, el contenido (archivo o carpeta de resultados) se crea con ese nombre.
 
-## Uso del Generador de PDF con una carpeta vigilada {#using-pdf-generator-with-a-watched-folder}
+## Usar el Generador de PDF con una carpeta inspeccionada {#using-pdf-generator-with-a-watched-folder}
 
-Puede configurar una carpeta vigilada para iniciar un flujo de trabajo, servicio o secuencia de comandos para procesar los archivos de entrada. En la siguiente sección, configuraremos una carpeta vigilada para iniciar un ECMAScript. El ECMAScript utilizaría el Generador de PDF para convertir documentos de Microsoft Word (.docx) en documentos de PDF.
+Puede configurar una carpeta inspeccionada para iniciar un flujo de trabajo, servicio o script para procesar los archivos de entrada. En la siguiente sección, configuraremos una carpeta inspeccionada para iniciar un ECMAScript. El ECMAScript utilizaría el Generador de PDF para convertir documentos de Microsoft Word (.docx) en documentos PDF.
 
-Realice los siguientes pasos para configurar una carpeta vigilada con el generador de PDF:
+Realice los siguientes pasos para configurar una carpeta inspeccionada con el generador de PDF:
 
-1. [Creación de un ECMAScript](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
+1. [Crear un ECMAScript](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
 1. [Crear un flujo de trabajo](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
-1. [Configuración de la carpeta vigilada](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
+1. [Configurar la carpeta inspeccionada](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
 
-### Creación de un ECMAScript {#create-an-ecmascript}
+### Crear un ECMAScript {#create-an-ecmascript}
 
-ECMAScript utilizaría la API createPDF de PDF Generator para convertir documentos de Microsoft Word (.docx) en documentos de PDF. Siga estos pasos para crear la secuencia de comandos:
+ECMAScript utilizaría la API createPDF del Generador de PDF para convertir documentos de Microsoft Word (.docx) en documentos PDF. Siga estos pasos para crear el script:
 
-1. Abra CRXDE lite en una ventana del explorador. La dirección URL es https://&#39;[server]:[puerto]&#39;/crx/de.
+1. Abra CRXDE lite en una ventana del explorador. La dirección URL es https://&#39;[server]:[port]&#39;/crx/de.
 
 1. Vaya a /etc/workflow/scripts y cree una carpeta denominada PDFG.
 
-1. En la carpeta PDFG, cree un archivo llamado pdfg-openOffice-sample.ecma y añada el siguiente código al archivo:
+1. En la carpeta PDFG, cree un archivo llamado pdfg-openOffice-sample.ecma y agregue el siguiente código al archivo:
 
    ```javascript
    var wfSvc = sling.getService(Packages.com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextService);
@@ -639,10 +642,10 @@ ECMAScript utilizaría la API createPDF de PDF Generator para convertir document
 
 ### Crear un flujo de trabajo {#create-a-workflow}
 
-1. Abra AEM interfaz de usuario del flujo de trabajo en una ventana del explorador.
-   <https://[servername>]: &#39;puerto&#39;/flujo de trabajo
+1. Abra la interfaz de usuario del flujo de trabajo de AEM en una ventana del explorador.
+   <https://[servername>]:&#39;port&#39;/workflow
 
-1. En la vista Modelos, haga clic en **Nuevo**. En el cuadro de diálogo Nuevo flujo de trabajo , especifique **Título** y haga clic en **OK**.
+1. En la vista Modelos, haga clic en **Nuevo**. En el cuadro de diálogo Nuevo flujo de trabajo, especifique **Título** y haga clic en **Aceptar**.
 
    ![create-a-workflow-pdf](assets/create-a-workflow-pdf.png)
 
@@ -654,28 +657,28 @@ ECMAScript utilizaría la API createPDF de PDF Generator para convertir document
 
 1. Haga clic con el botón derecho en el paso Proceso y seleccione **Editar**. Aparecerá la ventana Propiedades del paso.
 
-1. En la pestaña Process , seleccione ECMAScript. Por ejemplo, la secuencia de comandos pdfg-openOffice-sample.ecma creada en [Creación de un ECMAScript](#p-create-an-ecmascript-p). Active la variable **Avance del controlador** y haga clic en **OK**.
+1. En la pestaña Proceso, seleccione ECMAScript. Por ejemplo, el script pdfg-openOffice-sample.ecma creado en [Crear un ECMAScript](#p-create-an-ecmascript-p). Habilite la opción **Avance del controlador** y haga clic en **Aceptar**.
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
-### Configuración de la carpeta vigilada {#configure-the-watched-folder}
+### Configurar la carpeta inspeccionada {#configure-the-watched-folder}
 
-1. Abra CRXDE lite en una ventana del explorador. https://&#39;[server]:[puerto]&#39;/crx/de/
+1. Abra CRXDE lite en una ventana del explorador. https://&#39;[server]:[port]&#39;/crx/de/
 
 1. Vaya a la carpeta /etc/fd/watchfolder/config/ y cree un nodo de tipo nt:unstructured.
 
-   ![configure-the-watch-folder-pdf](assets/configure-the-watched-folder-pdf.png)
+   ![configure-the-watched-folder-pdf](assets/configure-the-watched-folder-pdf.png)
 
-1. Agregue las siguientes propiedades al nodo :
+1. Agregue las siguientes propiedades al nodo:
 
    * folderPath (String): Ruta de la carpeta que se va a analizar en intervalos de tiempo definidos. La carpeta debe estar en una ubicación compartida con todos los servidores que tengan acceso completo al servidor.
 inputProcessorType (String): Tipo de proceso que se va a iniciar. En este tutorial, especifique el flujo de trabajo.
 
-   * inputProcessorId (cadena): El comportamiento de la propiedad inputProcessorId se basa en el valor especificado para la propiedad inputProcessorType. En este ejemplo, el valor de la propiedad inputProcessorType es workflow. Por lo tanto, para la propiedad inputProcessorId especifique la siguiente ruta del flujo de trabajo PDFG: /etc/workflow/models/pdfg/jcr:content/model
+   * inputProcessorId (String): El comportamiento de la propiedad inputProcessorId se basa en el valor especificado para la propiedad inputProcessorType. En este ejemplo, el valor de la propiedad inputProcessorType es flujo de trabajo. Por lo tanto, para la propiedad inputProcessorId especifique la siguiente ruta del flujo de trabajo PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (String): Patrón del archivo de salida. Puede especificar una carpeta o un patrón de archivo. Si se especifica un patrón de carpeta, los archivos de salida tienen nombres como se describe en los flujos de trabajo. Si se especifica un patrón de archivo, los archivos de salida tienen nombres como se describe en el patrón de archivo.
-   Además de las propiedades obligatorias mencionadas anteriormente, las carpetas vigiladas también admiten algunas propiedades opcionales. Para obtener una lista y una descripción completas de las propiedades opcionales, consulte [Propiedades de la carpeta vigilada](#watchedfolderproperties).
+   Además de las propiedades obligatorias mencionadas anteriormente, las carpetas inspeccionadas también admiten algunas propiedades opcionales. Para obtener una lista y una descripción completas de las propiedades opcionales, consulte [Propiedades de la carpeta inspeccionada](#watchedfolderproperties).
 
 ## Problemas conocidos {#watched-folder-known-issues}
 
-Al iniciar AEM 6.5 Forms en JEE, los archivos empiezan a procesarse antes de que JBoss se inicie completamente y los archivos no se procesen. Para evitarlo, antes de iniciar JBoss, borre todas las carpetas vigiladas.
+Al iniciar AEM 6.5 Forms en JEE, los archivos empiezan a procesarse antes de que JBoss se inicie completamente y los archivos no se procesen. Para evitarlo, antes de iniciar JBoss, borre todas las carpetas inspeccionadas.
