@@ -1,7 +1,7 @@
 ---
-title: Instalación y configuración del servidor de seguridad de documentos
+title: Instalación y configuración del servidor de Document Security
 seo-title: Installing and configuring the document security server
-description: Utilice la seguridad del documento para distribuir de forma segura cualquier información guardada en un formato compatible. Solo los usuarios autorizados pueden acceder a los documentos protegidos.
+description: Utilice Document Security para distribuir de forma segura cualquier tipo de información guardada en un formato compatible. Solo los usuarios autorizados pueden acceder a los documentos protegidos.
 seo-description: Use document security to safely distribute any information that you have saved in a supported format. Only authorized users can access protected documents.
 uuid: 04c67a84-01ad-45b7-a590-822b1c067d52
 contentOwner: khsingh
@@ -9,59 +9,59 @@ discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
 role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '606'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Instalación y configuración del servidor de seguridad de documentos {#installing-and-configuring-the-document-security-server}
+# Instalación y configuración del servidor de Document Security {#installing-and-configuring-the-document-security-server}
 
-Utilice la seguridad del documento para distribuir de forma segura cualquier información guardada en un formato compatible. Solo los usuarios autorizados pueden acceder a los documentos protegidos.
+Utilice Document Security para distribuir de forma segura cualquier tipo de información guardada en un formato compatible. Solo los usuarios autorizados pueden acceder a los documentos protegidos.
 
-Adobe Experience Manager Forms document security garantiza que solo los usuarios autorizados puedan utilizar sus documentos. Con la seguridad de los documentos, puede distribuir de forma segura cualquier información guardada en un formato compatible. Los formatos de archivo admitidos son Adobe Portable Document Format (PDF) y Microsoft Word, Excel y PowerPoint.
+Adobe Experience Manager Forms Document Security garantiza que solo los usuarios autorizados puedan utilizar sus documentos. Con Document Security, puede distribuir de forma segura cualquier tipo de información guardada en un formato compatible. Los formatos de archivo admitidos son Adobe Portable Document Format (PDF) y Microsoft Word, Excel y PowerPoint.
 
-Puede proteger los documentos mediante políticas. La configuración de confidencialidad que especifique en una directiva determina cómo un destinatario puede utilizar un documento al que aplica la directiva. Por ejemplo, puede especificar si los destinatarios pueden imprimir o copiar texto, editar texto o agregar firmas y comentarios a documentos protegidos.
+Puede proteger los documentos mediante políticas. La configuración especificada en una política determina cómo puede el destinatario utilizar un documento al que se aplica la política. Por ejemplo, puede especificar si los destinatarios pueden imprimir o copiar texto, editarlo o agregar firmas y comentarios a documentos protegidos.
 
-Las directivas se almacenan en el servidor de seguridad de documentos; las políticas se aplican a los documentos a través de la aplicación cliente. Cuando aplica una directiva a un documento, la configuración de confidencialidad especificada en la directiva protege la información que contiene el documento. Puede distribuir el documento protegido por políticas a los destinatarios autorizados por la directiva.
+Las políticas se almacenan en el servidor de Document Security y se aplican a los documentos a través de la aplicación cliente. Cuando aplica una política a un documento, la configuración de confidencialidad especificada en la política protege la información que contiene el documento. Puede distribuir los documentos protegidos por una política a los destinatarios autorizados por esta.
 
-La seguridad de los documentos también proporciona a los clientes, espectadores e indexadores protección de documentos, visualización de documentos protegidos y documentos protegidos por índices. Para obtener información detallada sobre la seguridad del documento, consulte [acerca de la seguridad del documento](/help/forms/using/admin-help/document-security.md).
+Document Security también permite a los clientes, los visualizadores y los indexadores proteger los documentos y visualizar e indexar los documentos protegidos. Para obtener información detallada sobre Document Security, consulte [Acerca de la seguridad de los documentos](/help/forms/using/admin-help/document-security.md).
 
 ## Topología de implementación  {#deployment-topology}
 
-La funcionalidad de seguridad de documentos solo está disponible en AEM Forms en JEE. Necesita una sola instancia de AEM Forms en JEE. También puede crear un clúster o una granja de servidores de AEM Forms, si es necesario. La siguiente topología es una topología indicativa para ejecutar la capacidad de seguridad del documento. Para obtener información detallada sobre la topología, consulte [Arquitectura y topologías de implementación para AEM Forms](aem-forms-architecture-deployment.md).
+La funcionalidad Document Security solo está disponible en AEM Forms en JEE. Necesita una sola instancia de AEM Forms en JEE. También puede crear un clúster o una granja de servidores de AEM Forms, si es necesario. A continuación, encontrará una topología de carácter orientativo para ejecutar la capacidad Document Security. Para obtener información detallada sobre la topología, consulte [Arquitectura y topologías de implementación para AEM Forms](aem-forms-architecture-deployment.md).
 
 <!--fix above link-->
 
 ![](do-not-localize/document-security-server_topology.png)
 
-En el diagrama siguiente se muestra la arquitectura típica de AEM Forms Document Security:
+El siguiente diagrama muestra la arquitectura típica de AEM Forms Document Security:
 
 ![](do-not-localize/document-security-typical-environment.png)
 
-## Instalación de AEM Forms en JEE {#installing-aem-forms-on-jee}
+## Instalación de AEM Forms en JEE {#installing-aem-forms-on-jee}
 
-Siga estos pasos para instalar y configurar AEM Forms en JEE:
+Siga estos pasos para instalar y configurar AEM Forms en JEE:
 
-1. Descargue el instalador AEM 6.5 de Forms en JEE desde el [Sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el instalador.
-1. Lea el [Documento de AEM Forms en plataformas compatibles con JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) y asegúrese de tener el software, hardware, sistemas operativos, servidor de aplicaciones, bases de datos, JDKs y otra infraestructura preparados para instalar AEM Forms en JEE.
-1. (Solo instalaciones sin llave en mano) Lea el [Preparación para la instalación del servidor único de AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) o [Preparación para instalar el clúster de servidores de AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) y prepare su entorno para instalar y configurar AEM Forms en JEE.
+1. Descargue el programa de instalación de AEM 6.5 de Forms en JEE desde el [Sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el programa de instalación.
+1. Lea el [documento Plataformas compatibles con AEM Forms en JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) y asegúrese de que dispone del software, el hardware, los sistemas operativos, el servidor de aplicaciones, las bases de datos, los JDK y el resto de la infraestructura preparados para instalar AEM Forms en JEE.
+1. (Solo instalaciones que no son llave en mano) Lea los documentos [Preparing to install AEM Forms single server](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_es) o [Preparing to install AEM Forms server cluster](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64_es) y prepare su entorno para instalar y configurar AEM Forms en JEE.
 1. Según el entorno y el servidor de aplicaciones, elija uno de los siguientes documentos y siga las instrucciones para completar la instalación
 
-   * [Instalación e implementación de AEM Forms en JEE con JBoss llave en mano](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)
-   * [Instalación e implementación de AEM Forms en JEE para JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_64)
-   * [Instalación e implementación de AEM Forms en JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_64)
-   * [Instalación e implementación de AEM Forms en JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_64)
-   * [Configuración de AEM Forms en JEE en el clúster JBoss](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
-   * [Configuración de AEM Forms en JEE en el clúster WebLogic](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
-   * [Configuración de AEM Forms en JEE en el clúster WebSphere](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
+   * [Installing and deploying AEM Forms on JEE using JBoss turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_64_es)
+   * [Installing and deploying AEM Forms on JEE for JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_64_es)
+   * [Installing and deploying AEM Forms on JEE for WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_64_es)
+   * [Installing and deploying AEM Forms on JEE for WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_64_es)
+   * [Configuring AEM Forms on JEE on JBoss cluster](https://www.adobe.com/go/learn_aemforms_clusterJBoss_64_es)
+   * [Configuring AEM Forms on JEE on WebLogic cluster](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_64_es)
+   * [Configuring AEM Forms on JEE on WebSphere cluster](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_64_es)
 
    >[!NOTE]
    >
-   >En la pantalla de selección de módulos de AEM Forms en el administrador de configuración de JEE, seleccione la opción Seguridad de documentos . La opción Seguridad de documento no requiere que se seleccione ningún otro módulo.
+   >En la pantalla de selección de módulos del Administrador de configuración de AEM Forms en JEE, seleccione la opción Document Security. La opción Document Security no requiere que seleccione ningún otro módulo.
 
-## Siguientes pasos {#next-steps}
+## Pasos siguientes {#next-steps}
 
 * [Configuración de las opciones de cliente y servidor](/help/forms/using/admin-help/configuring-client-server-options.md)
-* [Crear y administrar políticas](/help/forms/using/admin-help/creating-policies.md)
-* [Crear y administrar conjuntos de políticas](/help/forms/using/admin-help/creating-policy-sets.md)
+* [Creación y administración de políticas](/help/forms/using/admin-help/creating-policies.md)
+* [Creación y administración de conjuntos de políticas](/help/forms/using/admin-help/creating-policy-sets.md)
