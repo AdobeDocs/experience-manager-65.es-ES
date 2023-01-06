@@ -1,7 +1,7 @@
 ---
-title: Estilo en línea de los componentes de formulario adaptables
+title: Aplicar estilos dentro de la línea a los componentes de un formulario adaptable
 seo-title: Inline CSS properties for adaptive form components
-description: Aunque puede aplicar estilos personalizados en un formulario adaptable, también puede aplicar propiedades CSS en línea en componentes individuales de un formulario adaptable.
+description: Aunque puede aplicar estilos personalizados a un formulario adaptable, también puede aplicar propiedades CSS en línea a los componentes individuales de un formulario adaptable.
 seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: e863780e-2250-4bea-9569-22be5638d54e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,15 +11,15 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '525'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
-# Estilo en línea de los componentes de formulario adaptables {#inline-styling-of-adaptive-form-components}
+# Aplicar estilos dentro de la línea a los componentes de un formulario adaptable {#inline-styling-of-adaptive-form-components}
 
-Puede definir el aspecto y el estilo generales de un formulario adaptable especificando los estilos utilizando [editor de temas](../../forms/using/themes.md). Además, puede aplicar estilos CSS en línea a componentes de formulario adaptables individuales y previsualizar los cambios sobre la marcha. Los estilos en línea reemplazan el estilo proporcionado en el tema.
+Puede definir el aspecto y el estilo generales de un formulario adaptable especificando los estilos mediante el [Editor de temas](../../forms/using/themes.md). Además, puede aplicar estilos CSS en línea a componentes de formulario adaptable individuales y previsualizar los cambios sobre la marcha. Los estilos en línea reemplazan el estilo proporcionado en el tema.
 
 ## Aplicar propiedades CSS en línea {#apply-inline-css-properties}
 
@@ -30,9 +30,9 @@ Para añadir estilos en línea a un componente:
 
    También puede seleccionar componentes en el árbol de jerarquía del formulario de la barra lateral. El árbol de jerarquía del formulario está disponible como Objetos del formulario en la barra lateral.
 
-   También puede seleccionar un componente de la barra lateral. En el modo Estilo, puede ver los componentes que aparecen en Objetos de formulario. Sin embargo, la lista Objetos de formulario de la barra lateral muestra componentes como los campos y los paneles. Los campos y los paneles son componentes genéricos que pueden contener otros componentes como, por ejemplo, cuadros de texto y botones de opción.
+   También puede seleccionar un componente en la barra lateral. En el modo Estilo, puede ver los componentes que aparecen en Objetos de formulario. Sin embargo, la lista Objetos de formulario de la barra lateral muestra componentes como los campos y los paneles. Los campos y los paneles son componentes genéricos que pueden contener otros componentes como, por ejemplo, cuadros de texto y botones de opción.
 
-   Al seleccionar un componente de la barra lateral, se ven todos los subcomponentes enumerados y las propiedades del componente seleccionado. Puede seleccionar un subcomponente específico y aplicarle un estilo.
+   Cuando seleccione un componente en la barra lateral, verá una lista de todos los subcomponentes y las propiedades del componente seleccionado. Puede seleccionar un subcomponente específico y aplicarle un estilo.
 
 1. Haga clic en una de las pestañas de la barra lateral para especificar las propiedades CSS. Puede especificar propiedades como las siguientes:
 
@@ -68,13 +68,13 @@ Observe el cambio en el estilo del cuadro de texto después de aplicar las sigui
    <td><p>Campo</p> </td>
    <td><p>border</p> </td>
    <td><p>Border width =2px</p> <p>Border style=Solid</p> <p>Border color=#1111</p> </td>
-   <td><p>Crea un borde ancho negro de 2 píxeles alrededor del campo</p> </td>
+   <td><p>Crea un borde ancho negro de 2 píxeles alrededor del campo</p> </td>
   </tr>
   <tr>
    <td><p>Cuadro de texto</p> </td>
    <td><p>background-color</p> </td>
    <td><p>#6495ED</p> </td>
-   <td><p>Cambia el color de fondo a CornflowerBlue (#6495ED)</p> <p>Nota: Puede especificar un nombre de color o su código hexadecimal en el campo de valor.</p> </td>
+   <td><p>Cambia el color de fondo a CornflowerBlue (#6495ED)</p> <p>Nota: Puede especificar un nombre de color o su código hexadecimal en el campo del valor.</p> </td>
   </tr>
   <tr>
    <td><p>Etiqueta</p> </td>
