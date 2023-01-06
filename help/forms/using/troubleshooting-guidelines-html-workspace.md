@@ -1,7 +1,7 @@
 ---
-title: Directrices para la resolución de problemas del espacio de trabajo de AEM Forms
+title: Directrices para la resolución de problemas de AEM Forms Workspace
 seo-title: Troubleshooting guidelines for AEM Forms workspace
-description: Habilite los registros y utilice Debugger en el explorador para solucionar problemas del espacio de trabajo de AEM Forms.
+description: Habilitar los registros y utilizar el depurador en el explorador para solucionar problemas de AEM Forms Workspace.
 seo-description: Enable logs and use debugger in browser to troubleshoot AEM Forms workspace.
 uuid: 07b8c8ed-f1ff-4be5-8005-251ff7b2ac85
 contentOwner: robhagat
@@ -11,40 +11,40 @@ topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Directrices para la resolución de problemas del espacio de trabajo de AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Directrices para la resolución de problemas de AEM Forms Workspace {#troubleshooting-guidelines-for-aem-forms-workspace}
 
-Este artículo explica cómo depurar el espacio de trabajo de AEM Forms habilitando el registro y utilizando Debugger en un explorador. También se explican algunos problemas comunes que se pueden encontrar al utilizar el espacio de trabajo de AEM Forms y sus soluciones.
+Este artículo explica cómo depurar AEM Forms Workspace habilitando el registro y utilizando el depurador en un explorador. También se explican algunos problemas comunes que se pueden encontrar al utilizar AEM Forms Workspace y sus soluciones.
 
-## No se puede instalar el paquete de espacio de trabajo de AEM Forms {#unable-to-install-aem-forms-workspace-package}
+## No se puede instalar el paquete de AEM Forms Workspace {#unable-to-install-aem-forms-workspace-package}
 
-Después de instalar el parche, abra el espacio de trabajo de AEM Forms. Si encuentra el error No se encontró ningún recurso, abra el Administrador de paquetes CRX y vuelva a instalar el `adobe-lc-workspace-pkg-<version>.zip` paquete.
+Tras instalar el parche, abra AEM Forms Workspace. Si experimenta el error No se encontró ningún recurso, abra el Administrador de paquetes CRX y vuelva a instalar el paquete `adobe-lc-workspace-pkg-<version>.zip`.
 
 Al instalar el paquete, si se produce un error `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, realice los pasos siguientes:
 
-1. Inicie sesión en CRX DE lite. La dirección URL predeterminada es `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. Inicie sesión en CRX DE lite. La URL predeterminada es `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Elimine el siguiente nodo:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Vaya al Administrador de paquetes. El URL predeterminado es `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
-1. Busque e instale la variable `adobe-lc-workspace-pkg-[version].zip` paquete.
-1. Reinicie el servidor de aplicaciones.
+1. Vaya al Administrador de paquetes. La URL predeterminada es `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
+1. Busque e instale el paquete `adobe-lc-workspace-pkg-[version].zip`.
+1. Reinicie el servidor de la aplicación.
 
-## Registro del espacio de trabajo de AEM Forms {#aem-forms-workspace-nbsp-logging}
+## Registro de AEM Forms Workspace {#aem-forms-workspace-nbsp-logging}
 
 Puede generar registros en varios niveles para permitir una solución óptima de los errores. Por ejemplo, en una aplicación compleja, el registro en el nivel de componente ayuda a depurar y solucionar problemas de componentes específicos.
 
-En el espacio de trabajo de AEM Forms:
+En AEM Forms Workspace:
 
-* Para obtener la información de registro sobre un archivo de componente específico, añada `/log/<ComponentFile>/<LogLevel>` en la dirección URL y pulse `Enter`. Toda la información de registro del archivo de componente en el nivel de registro especificado se imprime en la consola.
+* Para obtener la información de registro sobre un archivo de componente específico, agregue `/log/<ComponentFile>/<LogLevel>` en la dirección URL y pulse `Enter`. Toda la información de registro del archivo de componente en el nivel de registro especificado se imprime en la consola.
 
-* Para obtener la información de registro de todos los archivos de componente, anexe `/log/all/trace` en la dirección URL y pulse `Enter`.
+* Para obtener la información de registro de todos los archivos de componente, agregue `/log/all/trace` en la dirección URL y pulse `Enter`.
 
 * Formato de registro: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -54,7 +54,7 @@ En el espacio de trabajo de AEM Forms:
 
 * El nivel de registro configurado por el usuario se mantiene solamente para esa sesión del explorador. Cuando el usuario actualiza la página, el nivel de registro se establece en su valor inicial para todos los componentes.
 
-### Lista de archivos de componentes en el espacio de trabajo de AEM Forms {#list-of-component-files-in-nbsp-aem-forms-workspace}
+### Lista de archivos de componentes en AEM Forms Workspace {#list-of-component-files-in-nbsp-aem-forms-workspace}
 
 <table>
  <tbody>
@@ -66,7 +66,7 @@ En el espacio de trabajo de AEM Forms:
   <tr>
    <td><p>appnavigationModel</p> </td>
    <td><p>processInstanceView</p> </td>
-   <td><p>vista de lista de tareas</p> </td>
+   <td><p>tasklistView</p> </td>
   </tr>
   <tr>
    <td><p>appnavigationView</p> </td>
@@ -81,7 +81,7 @@ En el espacio de trabajo de AEM Forms:
   <tr>
    <td><p>categorylistView</p> </td>
    <td><p>processnameModel</p> </td>
-   <td><p>teamqueueView</p> </td>
+   <td><p>teamqueuesView</p> </td>
   </tr>
   <tr>
    <td><p>categoryModel</p> </td>
@@ -119,8 +119,8 @@ En el espacio de trabajo de AEM Forms:
    <td><p>usersearchModel</p> </td>
   </tr>
   <tr>
-   <td><p>PreferencesView</p> </td>
-   <td><p>startView</p> </td>
+   <td><p>preferencesView</p> </td>
+   <td><p>startpointView</p> </td>
    <td><p>usersearchView</p> </td>
   </tr>
   <tr>
@@ -130,7 +130,7 @@ En el espacio de trabajo de AEM Forms:
   </tr>
   <tr>
    <td><p>processinstancelistModel</p> </td>
-   <td><p>startProcessView</p> </td>
+   <td><p>startprocessView</p> </td>
    <td><p>wserrorView</p> </td>
   </tr>
   <tr>
@@ -141,56 +141,56 @@ En el espacio de trabajo de AEM Forms:
  </tbody>
 </table>
 
-### Niveles de registro disponibles en el espacio de trabajo de AEM Forms {#log-levels-available-in-nbsp-aem-forms-workspace}
+### Niveles de registro disponibles en AEM Forms Workspace {#log-levels-available-in-nbsp-aem-forms-workspace}
 
 * FATAL
 * ERROR
 * AVISAR
 * INFORMACIÓN
-* DEPURACIONES
-* TRACE
+* DEPURAR
+* ENCONTRAR
 * DESACTIVADO
 
 ## Depuración de información para exploradores {#debugging-information-for-browsers}
 
-Las secuencias de comandos y los estilos se pueden depurar en distintos navegadores.
+Los scripts y los estilos se pueden depurar en distintos exploradores.
 
-* **Depuración en IE**: Para depurar el espacio de trabajo de AEM Forms en IE, consulte: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **Depuración en IE**: Para depurar AEM Forms Workspace en IE, consulte: [https://msdn.microsoft.com/es-es/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/es-es/library/hh772704(v=vs.85).aspx).
 
-* **Depuración en Chrome**: Para abrir Debugger en Chrome, utilice el método abreviado: Ctrl + Mayús + I. Para obtener más información, consulte: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Depuración en Chrome**: Para abrir el depurador en Chrome, utilice el método abreviado: Ctrl + Mayús + I. Para obtener más información, consulte: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
 * **Depuración en Firefox**: Hay varios complementos disponibles para depurar scripts y estilos en Firefox. Por ejemplo, Firebug es una de estas utilidades de depuración ([https://getfirebug.com](https://getfirebug.com)).
 
 ## Preguntas frecuentes {#faqs}
 
-1. El formulario de PDF no se está procesando ni enviando en Google Chrome.
+1. El formulario PDF no se está representando ni enviando en Google Chrome.
 
    1. Instale el complemento Adobe® Reader®.
    1. En Chrome, abra chrome://plugins para ver los complementos disponibles.
    1. Deshabilite el complemento Visor de PDF de Chrome y habilite el complemento Adobe Reader.
 
-1. El formulario o la guía del SWF no se está procesando en Google Chrome.
+1. El formulario o la guía SWF no se está representando en Google Chrome.
 
    1. En Chrome, abra chrome://plugins para ver los complementos disponibles.
    1. Consulte los detalles para el complemento Adobe Flash® Player.
-   1. Deshabilite PepperFlash en el complemento de Flash Player de Adobe.
+   1. Deshabilite PepperFlash en el complemento Adobe Flash Player.
 
-1. He personalizado el espacio de trabajo de AEM Forms, pero no puedo ver los cambios.
+1. He personalizado AEM Forms Workspace, pero no puedo ver los cambios.
 
    Borre la caché del explorador y, a continuación, acceda al espacio de trabajo de AEM Forms.
 
-1. ¿Qué debe hacer el usuario para permitir que el formulario se procese en el HTML al abrirlo en el escritorio?
+1. ¿Qué debe hacer el usuario para permitir que el formulario se represente en HTML al abrirlo en el escritorio?
 
    Seleccione el botón de opción HTML del perfil predeterminado en el paso asignar tarea mientras utiliza Workbench.
 
-1. Los datos adjuntos no se muestran cuando se hace clic en ellos.
+1. Los archivos adjuntos no se muestran cuando se hace clic en ellos.
 
-   Para ver los archivos adjuntos, active las ventanas emergentes en el explorador.
+   Para ver los archivos adjuntos, habilite las ventanas emergentes en el explorador.
 
 1. Un usuario ha iniciado sesión en una aplicación de formularios. Si el usuario intenta iniciar sesión en el espacio de trabajo, es posible que no se cargue si no tiene permisos de espacio de trabajo.
 
-   Cierre la sesión en la otra aplicación de formularios y, a continuación, inicie sesión en el espacio de trabajo.
+   Cierre sesión en la otra aplicación de formularios y, a continuación, inicie sesión en el espacio de trabajo.
 
-1. Cuando se procesan en el espacio de trabajo de AEM Forms, los formularios HTML que utilizan Propiedades del proceso en su diseño muestran el botón Enviar dentro del formulario.
+1. Cuando se representan en AEM Forms Workspace los formularios HTML que utilizan propiedades del proceso en su diseño, dentro del formulario se muestra el botón Enviar.
 
-   Cuando se diseñan formularios, al utilizar Propiedades del proceso, se agrega un botón Enviar dentro del formulario. Cuando se representa como PDF en el espacio de trabajo de AEM Forms, el botón Enviar no es visible para el usuario final. Sin embargo, cuando se procesa como un formulario de HTML en el espacio de trabajo de AEM Forms, el botón Enviar es visible para el usuario final. Al hacer clic en este botón Enviar dentro del formulario, no se inicia ninguna acción. Al hacer clic en el botón Enviar en la parte inferior del espacio de trabajo de AEM Forms, fuera del formulario, se completa la tarea.
+   Cuando se diseñan formularios, al utilizar Propiedades del proceso, dentro del formulario se agrega un botón Enviar. Cuando se representa como PDF en AEM Forms Workspace, el botón Enviar no es visible para el usuario final. Sin embargo, cuando se representa como un formulario HTML en AEM Forms Workspace, el botón Enviar es visible para el usuario final. Al hacer clic en este botón Enviar, dentro del formulario, no se inicia ninguna acción. Al hacer clic en el botón Enviar en la parte inferior de AEM Forms Workspace, fuera del formulario, se completa la tarea.
