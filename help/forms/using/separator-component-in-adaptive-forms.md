@@ -1,5 +1,5 @@
 ---
-title: Componente separador en formularios adaptables
+title: Componente Separador en formularios adaptables
 seo-title: Separator component in adaptive forms
 description: Puede utilizar el componente Separador para separar visualmente las secciones de un formulario.
 seo-description: You can use the separator component to visually segregate sections of a form.
@@ -11,13 +11,13 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 11cbf865-c8e2-4833-b0b8-a3cb5e42f5cd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Componente separador en formularios adaptables{#separator-component-in-adaptive-forms}
+# Componente Separador en formularios adaptables{#separator-component-in-adaptive-forms}
 
 Puede utilizar el componente separador para separar visualmente los paneles de un formulario. Puede definir el aspecto general y el estilo de un componente Separador especificando las siguientes propiedades del componente Separador:
 
@@ -26,7 +26,7 @@ Puede utilizar el componente separador para separar visualmente los paneles de u
 
 * **Clase CSS:** especifica la clase CSS personalizada para el componente Separador.
 
-* **Estilos en línea:** Con AEM Forms, ahora puede aplicar estilos CSS en línea a componentes de formulario adaptables individuales y previsualizar los cambios en tiempo real.
+* **Estilos en línea:** con AEM Forms, ahora puede aplicar estilos CSS en línea a componentes de formulario adaptable individuales y previsualizar los cambios en tiempo real.
 
 Puede utilizar el modo Diseño para definir el número de columnas a las que se expande el componente Separador. Para obtener más información, consulte [Uso del modo Diseño para cambiar el tamaño de los componentes](../../forms/using/resize-using-layout-mode.md).
 
