@@ -10,9 +10,9 @@ discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 feature: Adaptive Forms
 exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1119'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
 
       Seleccione **Editor visual** en la fila Objetos y funciones de formularios.
 
-      1. En el área de regla, en CUÁNDO, **se hace clic** en seleccionar estado.
+      1. En el área de regla, en CUANDO, **se hace clic** en seleccionar estado.
       1. En ENTONCES:
 
          * Para crear un botón de añadir panel, seleccione **Añadir instancia** y arrastre el panel utilizando el ![panel lateral de alternancia](assets/toggle-side-panel.png) o selecciónelo utilizando **Colocar objeto o seleccionar aquí.**
@@ -58,13 +58,13 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
 
       >[!NOTE]
       >
-      >Si un campo pertenece a un panel repetible, no puede acceder a él directamente utilizando su nombre en los scripts. Para acceder al campo, especifique la instancia repetible a la que pertenece el campo utilizando el API de `instances` en `InstanceManager`. La sintaxis para usar el API de `instances` en `InstanceManager` es la siguiente:
+      >Si un campo pertenece a un panel repetible, no puede acceder a él directamente utilizando su nombre en los scripts. Para acceder al campo, especifique la instancia repetible a la que pertenece el campo utilizando la API de `instances` en `InstanceManager`. La sintaxis para usar la API de `instances` en `InstanceManager` es la siguiente:
       >
       >
       >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
       >
       >
-      >Por ejemplo, se crea un formulario adaptable con un panel repetible que tiene un cuadro de texto. Cuando rellene automáticamente el formulario con tres cuadros de texto repetibles, necesitará el siguiente xml:
+      >Por ejemplo, crea un formulario adaptable con un panel repetible que tiene un cuadro de texto. Cuando rellene automáticamente el formulario con tres cuadros de texto repetibles, necesitará el siguiente xml:
       >
       >
       >`<panel1><textbox1>AA1</panel1></textbox1>`
@@ -88,11 +88,11 @@ Puede utilizar uno de los siguientes métodos para crear paneles repetibles:
       >`Panel1.instanceManager.instances[1].textbox.value`
       >
       >
-      >Para obtener más información, consulte: Clase: InstanceManager#instances en [Referencia del API de Java de AEM Forms](https://adobe.com/go/learn_aemforms_documentation_63).
+      >Para obtener más información, consulte: Clase: InstanceManager#instances en [Referencia de la API de Java de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
 
       >[!NOTE]
       >
-      >Cuando todas las instancias de un panel se eliminen de un formulario adaptable, para agregar una instancia del panel eliminado, utilice la sintaxis _panelName para capturar el administrador de instancias del panel y use la API addInstance de instance manager para agregar la instancia eliminada. Por ejemplo, _panelName.addInstance(). Añade una instancia del panel eliminado.
+      >Cuando todas las instancias de un panel se quiten de un formulario adaptable, para agregar una instancia del panel quitado, utilice la sintaxis _panelName para capturar el Instance Manager del panel y use la API addInstance de Instance Manager para agregar la instancia eliminada. Por ejemplo, _panelName.addInstance(). Añade una instancia del panel eliminado.
 
 
 
@@ -107,7 +107,7 @@ Un panel tiene varias opciones de diseño. La opción Diseño para el diseño de
 
 ## Usar subformularios repetibles de la plantilla de formulario (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
-El subformulario repetible es similar a los paneles repetibles de los formularios adaptables. En AEM Forms Designer, realice los siguientes pasos para crear un subformulario de repetición:
+El subformulario repetible es similar a los paneles repetibles de los formularios adaptables. En AEM Forms Designer, realice los siguientes pasos para crear un subformulario repetible:
 
 1. En la paleta Jerarquía, seleccione el subformulario principal del subformulario que desea que se repita.
 1. En la paleta Objeto, haga clic en la pestaña Subformulario y seleccione De posición variable en la lista Contenido.
@@ -118,7 +118,7 @@ El subformulario repetible es similar a los paneles repetibles de los formulario
 1. Para especificar el número máximo de repeticiones de subformulario, seleccione Máx. y escriba un número en el cuadro correspondiente. Si no se especifica un valor en el cuadro Máx., el número de repeticiones de subformulario es ilimitado.
 1. Para especificar un número definido de repeticiones de subformulario, independientemente de la cantidad de datos, seleccione la opción Recuento inicial y escriba un número en el cuadro correspondiente. Si se selecciona esta opción y no hay ningún dato disponible o existen menos entradas de datos que el valor especificado en Recuento inicial, las instancias vacías del subformulario todavía se colocan en el formulario.
 1. Agregue dos botones en el subformulario principal: uno para añadir instancias y otro para eliminar instancias de subformularios repetibles. Para ver los pasos detallados, consulte [Generar una acción](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. Ahora, vincule la plantilla de formulario al formulario adaptable. Para ver los pasos detallados, consulte [Creación de un formulario adaptable basado en una plantilla](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
+1. Ahora, vincule la plantilla del formulario al formulario adaptable. Para ver los pasos detallados, consulte [Crear un formulario adaptable basado en una plantilla](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Utilice los botones creados en el paso 9 para añadir y quitar subformularios.
 
 El archivo .zip adjunto contiene un subformulario repetible de ejemplo.
@@ -127,7 +127,7 @@ El archivo .zip adjunto contiene un subformulario repetible de ejemplo.
 
 ## Utilizar la configuración repetida de un esquema XML (XSD) {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-Puede crear paneles repetibles a partir de un esquema XML y de la propiedad minOccours y maxOccurs de cualquier elemento de tipo complejo. Para obtener información detallada sobre el esquema XML, consulte [Creación de formularios adaptables utilizando el esquema XML como modelo de formulario](/help/forms/using/adaptive-form-xml-schema-form-model.md).
+Puede crear paneles repetibles a partir de un esquema XML y de la propiedad minOccours y maxOccurs de cualquier elemento de tipo complejo. Para obtener información detallada sobre el esquema XML, consulte [Crear formularios adaptables mediante el esquema XML como modelo de formulario](/help/forms/using/adaptive-form-xml-schema-form-model.md).
 
 En el siguiente código, el panel `SampleType` utiliza la propiedad minOccours y maxOccurs.
 
@@ -173,4 +173,4 @@ En el siguiente código, el panel `SampleType` utiliza la propiedad minOccours y
 
 >[!NOTE]
 >
->Para una presentación distinta de la de acordeón, utilice componentes de botón de formulario adaptable para añadir y quitar instancias.
+>Para los diseños que no son de acordeón, utilice los componentes de botón del formulario adaptable para agregar y quitar instancias.
