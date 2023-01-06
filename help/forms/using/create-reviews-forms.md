@@ -12,7 +12,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '655'
 ht-degree: 100%
 
@@ -91,18 +91,18 @@ Esta sección describe lo que sucede cuando se modifica o finaliza una revisión
 
 1. Si se quita un revisor:
 
-   ![Eliminación de un revisor](assets/removeduser.png)
+   ![Quitar un revisor](assets/removeduser.png)
 
-   Eliminación de un revisor
+   Quitar un revisor
 
    1. Si la tarea asignada está incompleta, finaliza.
    1. El revisor ya no puede realizar comentarios en el recurso.
 
 1. Si se agrega un revisor:
 
-   ![Adición de un revisor](assets/addedreviewer.png)
+   ![Agregar un revisor](assets/addedreviewer.png)
 
-   Adición de un revisor
+   Agregar un revisor
 
    1. Se crea una tarea de revisión y se asigna al revisor que se acaba de agregar.
    1. El revisor que se acaba de agregar puede añadir comentarios en el recurso.
