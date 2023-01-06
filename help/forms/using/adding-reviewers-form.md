@@ -1,7 +1,7 @@
 ---
 title: Asociar revisores de envío con un formulario
 seo-title: Associating submission reviewers with a form
-description: Aprenda a asociar revisores de envío con un formulario en AEM Forms. Los revisores asociados revisan un formulario enviado a través del portal de Forms.
+description: Aprenda a asociar revisores de envío con un formulario en AEM Forms. Los revisores asociados revisan un formulario enviado a través del portal de formularios.
 seo-description: Learn how to associate submission reviewers with a form in AEM Forms. Associated reviewers review a form submitted via forms portal.
 uuid: 58c8c8fb-9262-4c37-b9b2-e46fe21b77d9
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,23 +11,23 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 46e7b858-44d1-41c8-9f44-4e959e593dc1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 # Asociar revisores de envío con un formulario {#associating-submission-reviewers-with-a-form}
 
-Cuando crea un formulario, puede especificar usuarios que revisen los envíos del formulario a través del portal de Forms y proporcionen comentarios. Su organización puede recopilar comentarios y volver a diseñar los formularios enviados.
+Cuando crea un formulario, puede especificar usuarios que revisen los envíos del formulario a través del portal de formularios y proporcionen comentarios. Su organización puede recopilar comentarios y volver a diseñar los formularios enviados.
 
-AEM Forms permite asociar un grupo de revisores a un formulario. Los usuarios agregados al grupo de revisión de un formulario ven los envíos de este formulario y proporcionan comentarios.
+AEM Forms le permite asociar un grupo de revisores con un formulario. Los usuarios agregados al grupo de revisión de un formulario ven los envíos de este formulario y proporcionan comentarios.
 
 Los grupos de revisores asignados a un formulario solo pueden revisar los envíos del formulario especificado.
 
 ## Requisitos previos {#prerequisite}
 
-### Habilitar la propiedad de grupos del revisor de envío para formularios adaptables mediante el editor de esquemas de metadatos {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}
+### Habilitar la propiedad de los grupos de revisores de envío para los formularios adaptables mediante el editor de esquemas de metadatos {#enabling-submission-reviewer-groups-property-for-adaptive-forms-using-metadata-schema-editor}
 
 Para asociar un grupo de revisores a un formulario, edite el esquema de metadatos de los formularios adaptables. De forma predeterminada, no se puede agregar un grupo de revisores a un formulario enviado.
 
@@ -50,7 +50,7 @@ Para editar el esquema de metadatos:
 
    En Configuración, introduzca `./jcr:content/metadata/form-submission-reviewer-group` en el campo Asignar a propiedad.
 
-   El campo de grupo del revisor de envío de las Propiedades avanzadas del formulario adaptable se activa con el nombre especificado en Etiqueta de campo.
+   El campo del grupo de revisores de envío de las propiedades avanzadas del formulario adaptable se habilita con el nombre especificado en Etiqueta de campo.
 
 ## Asociar revisores de envío con un formulario {#associating-submission-reviewers-with-a-form-1}
 
@@ -61,19 +61,19 @@ Antes de realizar los siguientes pasos, consulte [Requisito previo](../../forms/
 
 Para crear un grupo y agregarle miembros, vaya a **Herramientas** > **Operaciones** > **Seguridad** > **Grupos**.
 Para obtener más información, consulte [Administración de usuarios y servicios](/help/sites-administering/security.md). 
-Asegúrese de agregar el grupo que crea como miembro del grupo de usuarios predeterminado: **forms-submit-reviewers**. Este grupo de usuarios se envía con AEM Forms y garantiza que los usuarios se añadan como revisores de envío.
+Asegúrese de agregar el grupo que crea como miembro del grupo de usuarios predeterminado: **forms-submit-reviewers**. Este grupo de usuarios está incluido en AEM Forms y garantiza que los usuarios se agregan como revisores de envío.
 
-Para asociar grupos de usuarios con un formulario adaptable:
+Para asociar grupos de usuarios con un formulario adaptable, haga lo siguiente:
 
 1. En el modo Autor, vaya a **Formularios** > **Formularios y documentos**.
-1. Utilice la opción **Seleccionar **para seleccionar un formulario adaptable y haga clic en **Ver propiedades**.
+1. Utilice la opción **Seleccionar** para seleccionar un formulario adaptable y haga clic en **Ver propiedades**.
 1. En la ventana Propiedades del formulario, haga clic en **Editar** y, a continuación, haga clic en **AVANZADAS**.
 1. Introduzca el grupo en el campo del grupo de revisores de envío y haga clic en **Listo**.
 
-   El campo de grupo del revisor de envío aparece con el nombre especificado en el esquema de metadatos editado de los formularios adaptables.
+   El campo del grupo de revisores de envío aparece con el nombre especificado en el esquema de metadatos editado de los formularios adaptables.
 
 >[!NOTE]
 >
->Repita usuarios y formularios para garantizar la disponibilidad de los usuarios y formularios en la implementación remota de AEM Forms.
+>Replique los usuarios y los formularios para garantizar su disponibilidad en la implementación remota de AEM Forms.
 >
 >Asegúrese de que todos los usuarios están replicados como miembros revisores de los grupos de usuarios en la implementación remota.
