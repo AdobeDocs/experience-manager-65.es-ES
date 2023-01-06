@@ -1,7 +1,7 @@
 ---
-title: Personalización de temas
+title: Personalizar temáticas
 seo-title: Theme Customization
-description: Cómo personalizar el tema de la aplicación de AEM Forms.
+description: Personalizar la temática de su aplicación de AEM Forms.
 seo-description: How to customize the theme of your AEM Forms app.
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
 contentOwner: robhagat
@@ -11,23 +11,23 @@ topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
 source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '223'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Personalización de temas {#theme-customization}
+# Personalizar temáticas {#theme-customization}
 
-Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplicación AEM Forms un aspecto y una presentación distintos específicos de la organización. Por ejemplo, puede cambiar el color de fondo y la altura de las tareas o puntos de inicio. El ejemplo siguiente proporciona instrucciones para cambiar:
+Puede personalizar el código HTML y el archivo CSS para ofrecer a la aplicación AEM Forms una apariencia específica de la organización. Por ejemplo, puede cambiar el color de fondo y la altura de las tareas o puntos de inicio. El ejemplo siguiente indica las instrucciones para cambiar:
 
-* instrucciones de visualización en lugar de la descripción
-* número de rutas de visualización
-* color de degradado de fondo
+* Las instrucciones de visualización en lugar de la descripción.
+* Número de rutas de visualización.
+* Color de degradado de fondo.
 
 ## Etapas {#steps}
 
-1. Abra el proyecto.
+1. Abra su proyecto.
 
    * Para iOS, abra `Capture.xcodeproj` en Xcode
    * Para Android, abra el proyecto de Android en Eclipse.
@@ -35,12 +35,12 @@ Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplic
 
 1. Vaya a la carpeta de plantillas.
 
-   * En Xcode, vaya a la **Captura > www > wsmobile > js > tiempo de ejecución > plantillas** carpeta.
-   * En Eclipse, vaya a la **assets > www > wsmobile > js > tiempo de ejecución > plantillas** carpeta.
-   * En Visual Studio, vaya a la **Windows MWSW > www > wsmobile > js > tiempo de ejecución > plantillas** carpeta.
+   * En Xcode, vaya a la carpeta **Captura > www > wsmobile > js > runtime > plantillas**.
+   * En Eclipse, vaya a la carpeta **Recursos > www > wsmobile > js > runtime > plantillas**.
+   * En Visual Studio, vaya a la carpeta **MWSWindows > www > wsmobile > js > runtime > plantillas**.
 
-1. Abra el `template.html` para editar.
-1. Busque la siguiente cadena:
+1. Abra el archivo `template.html` para editarlo.
+1. Localice la siguiente cadena:
 
    ```jsp
    <%if ( (task.description !== "") && (task.description !== null) && (typeof task.description !== null) && (typeof task.description !== 'undefined') ) {%>
@@ -50,9 +50,9 @@ Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplic
                  <%} else
    ```
 
-   Sustitúyalo por `<%`.
+   Sustitúyala por `<%`.
 
-1. Busque el código siguiente en la sección `template.html` archivo:
+1. Localice el código siguiente en el archivo `template.html`:
 
    ```jsp
    <ul id="task_menu_list">
@@ -75,12 +75,12 @@ Puede personalizar el código HTML y el archivo CSS para proporcionar a la aplic
 1. Vaya a la carpeta css.
 
    * En Xcode, vaya a **Captura > www > wsmobile > css**.
-   * En Eclipse, vaya a **assets > www > wsmobile > css**.
-   * En Visual Studio, vaya a **Windows MWSW > www > wsmobile > css**.
+   * En Eclipse, vaya a **recursos > www > wsmobile > css**.
+   * En Visual Studio, vaya a **MWSWindows > www > wsmobile > css**.
 
-1. Abra el `_style.css` para editar.
+1. Abra el archivo `_style.css` para editarlo.
 1. Para la imagen de fondo, cambie `#323232` a `#fff`.
-1. Guarde los cambios y cierre `_style.css` archivo.
+1. Guarde los cambios y cierre el archivo `_style.css`.
 1. Abra la aplicación de AEM Forms.
 
-   La aplicación AEM Forms ahora muestra instrucciones en lugar de descripción.
+   La aplicación de AEM Forms ahora muestra instrucciones en lugar de la descripción.
