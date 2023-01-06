@@ -1,7 +1,7 @@
 ---
-title: Personalización de las tablas de seguimiento
+title: Personalizar las tablas de seguimiento
 seo-title: Customize tracking tables
-description: Personalización de la visualización de los detalles de los procesos de usuario en la tabla de tareas que se muestra en la pestaña de seguimiento del espacio de trabajo de AEM Forms.
+description: Personalizar la visualización de los detalles de los procesos de usuario en la tabla de tareas que se muestra en la pestaña de seguimiento de AEM Forms Workspace.
 seo-description: How-to customize the display of the details of user processes in the task table displayed in the tracking tab of AEM Forms workspace.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
@@ -10,15 +10,15 @@ topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 exl-id: 9ab657cc-fa8e-4168-8a68-e38ac5c51b29
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
-# Personalización de las tablas de seguimiento{#customize-tracking-tables}
+# Personalizar las tablas de seguimiento{#customize-tracking-tables}
 
-La pestaña de seguimiento del espacio de trabajo de AEM Forms se utiliza para mostrar los detalles de las instancias de proceso en las que participa el usuario que ha iniciado sesión. Para ver las tablas de seguimiento, seleccione primero un nombre de proceso en el panel izquierdo para ver su lista de instancias en el panel central. Seleccione una instancia de proceso para ver una tabla de tareas generada por esta instancia en el panel derecho. De forma predeterminada, las columnas de la tabla muestran los siguientes atributos de tarea (el atributo correspondiente del modelo de tarea se proporciona entre paréntesis):
+La pestaña de seguimiento de AEM Forms Workspace se utiliza para mostrar los detalles de las instancias de proceso en las que participa el usuario que ha iniciado sesión. Para ver las tablas de seguimiento, seleccione primero un nombre del proceso en el panel izquierdo para ver su lista de instancias en el panel central. Seleccione una instancia de proceso para ver una tabla de tareas generada por esta instancia en el panel derecho. De forma predeterminada, las columnas de la tabla muestran los siguientes atributos de tarea (el atributo correspondiente del modelo de tarea se proporciona entre paréntesis):
 
 * ID ( `taskId`)
 * Nombre ( `stepName`)
@@ -28,7 +28,7 @@ La pestaña de seguimiento del espacio de trabajo de AEM Forms se utiliza para m
 * Hora de finalización ( `completeTime`)
 * Propietario ( `currentAssignment.queueOwner`)
 
-Los atributos restantes del modelo de tareas disponibles para mostrar en la tabla de tareas son:
+Los atributos restantes del modelo de tareas disponibles para mostrar en la tabla de tareas son los siguientes:
 
 <table>
  <tbody>
@@ -43,7 +43,7 @@ Los atributos restantes del modelo de tareas disponibles para mostrar en la tabl
    <td><p>routeList</p> </td>
   </tr>
   <tr>
-   <td><p>queryGroupId</p> </td>
+   <td><p>consultGroupId</p> </td>
    <td><p>isRouteSelectionRequired</p> </td>
    <td><p>savedFormCount</p> </td>
   </tr>
@@ -68,12 +68,12 @@ Los atributos restantes del modelo de tareas disponibles para mostrar en la tabl
    <td><p>showACLActions</p> </td>
   </tr>
   <tr>
-   <td><p>límite</p> </td>
+   <td><p>deadline</p> </td>
    <td><p>numForms</p> </td>
    <td><p>showDirectActions</p> </td>
   </tr>
   <tr>
-   <td><p>Descripción</p> </td>
+   <td><p>description</p> </td>
    <td><p>numFormsToBeSaved</p> </td>
    <td><p>status</p> </td>
   </tr>
@@ -85,7 +85,7 @@ Los atributos restantes del modelo de tareas disponibles para mostrar en la tabl
   <tr>
    <td><p>forwardGroupId</p> </td>
    <td><p>outOfOfficeUserName</p> </td>
-   <td><p>supportSave</p> </td>
+   <td><p>supportsSave</p> </td>
   </tr>
   <tr>
    <td><p>isApprovalUI</p> </td>
@@ -115,9 +115,9 @@ Los atributos restantes del modelo de tareas disponibles para mostrar en la tabl
  </tbody>
 </table>
 
-Para las siguientes personalizaciones en la tabla de tareas, debe realizar cambios semánticos en el código fuente. Consulte [Introducción a la personalización del espacio de trabajo de AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) para obtener información sobre cómo realizar cambios semánticos mediante el SDK de workspace y crear un paquete minificado a partir del origen modificado.
+Para las siguientes personalizaciones de la tabla de tareas, debe realizar cambios semánticos en el código fuente. Consulte [Introducción a la personalización de AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md) para obtener información sobre cómo realizar cambios semánticos mediante el espacio de trabajo del SDK y crear un paquete minificado a partir del origen modificado.
 
-## Cambio de las columnas de la tabla y su orden {#changing-table-columns-and-their-order}
+## Cambiar las columnas de la tabla y su orden {#changing-table-columns-and-their-order}
 
 1. Para modificar los atributos de tarea mostrados en la tabla y su orden, configure el archivo /ws/js/runtime/templates/processinstancehistory.html :
 
@@ -153,11 +153,11 @@ Para las siguientes personalizaciones en la tabla de tareas, debe realizar cambi
    </table>
    ```
 
-## Clasificación de una tabla de seguimiento {#sorting-a-tracking-table}
+## Clasificar una tabla de seguimiento {#sorting-a-tracking-table}
 
-Para ordenar la tabla de la lista de tareas al hacer clic en el encabezado de columna:
+Para ordenar la tabla de la lista de tareas al hacer clic en el encabezado de columna, haga lo siguiente:
 
-1. Registrar un controlador de clics para `.fixedTaskTableHeader th` en el archivo `js/runtime/views/processinstancehistory.js`.
+1. Registre un controlador de clics para `.fixedTaskTableHeader th` en el archivo `js/runtime/views/processinstancehistory.js`.
 
    ```javascript
    events: {
@@ -167,7 +167,7 @@ Para ordenar la tabla de la lista de tareas al hacer clic en el encabezado de co
    }
    ```
 
-   En el controlador, invoque la función `onTaskTableHeaderClick` función de `js/runtime/util/history.js`.
+   En el controlador, invoque la función `onTaskTableHeaderClick` de `js/runtime/util/history.js`.
 
    ```javascript
    onTaskTableHeaderClick: function (event) {
@@ -175,11 +175,11 @@ Para ordenar la tabla de la lista de tareas al hacer clic en el encabezado de co
    }
    ```
 
-1. Exponer el `TaskTableHeaderClick` método en `js/runtime/util/history.js`.
+1. Exponga el método `TaskTableHeaderClick` en `js/runtime/util/history.js`.
 
    El método encuentra el atributo de tarea del evento de clic, ordena la lista de tareas de ese atributo y procesa la tabla de tareas con la lista de tareas ordenada.
 
-   La ordenación se realiza mediante la función de ordenación de la columna vertebral de la colección de listas de tareas, proporcionando una función de comparación.
+   La ordenación se realiza mediante la función de ordenación Backbone de la colección de listas de tareas y proporciona una función de comparación.
 
    ```javascript
        return {
