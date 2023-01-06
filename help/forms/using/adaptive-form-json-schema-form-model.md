@@ -1,29 +1,29 @@
 ---
-title: ¿Cómo se crea Forms adaptable mediante el esquema JSON?
-description: Aprenda a crear formularios adaptables utilizando el esquema JSON como modelo de formulario. Puede utilizar esquemas JSON existentes para crear formularios adaptables. Profundizar con una muestra de un esquema JSON, preconfigurar campos en la definición del esquema JSON, limitar los valores aceptables para un componente de formulario adaptable y aprender construcciones no compatibles.
+title: ¿Cómo crear formularios adaptables mediante el esquema JSON?
+description: Aprenda a crear formularios adaptables mediante el esquema JSON como modelo de formulario. Puede utilizar esquemas JSON existentes para crear formularios adaptables. Profundice con una muestra de un esquema JSON, preconfigure los campos en la definición del esquema JSON, limite los valores aceptables para un componente de un formulario adaptable y aprenda construcciones no compatibles.
 feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1448'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Creación de formularios adaptables mediante el esquema JSON {#creating-adaptive-forms-using-json-schema}
+# Crear formularios adaptables mediante el esquema JSON {#creating-adaptive-forms-using-json-schema}
 
 ## Requisitos previos {#prerequisites}
 
-La creación de un formulario adaptable utilizando un esquema JSON como modelo de formulario requiere una comprensión básica del esquema JSON. Se recomienda leer el siguiente contenido antes de este artículo.
+Crear un formulario adaptable mediante un esquema JSON como modelo de formulario requiere una comprensión básica del esquema JSON. Se recomienda leer el siguiente contenido antes de este artículo.
 
-* [Creación de un formulario adaptable](creating-adaptive-form.md)
+* [Crear un formulario adaptable](creating-adaptive-form.md)
 * [Esquema JSON](https://json-schema.org/)
 
 ## Usar un esquema JSON como modelo de formulario  {#using-a-json-schema-as-form-model}
 
-[!DNL Adobe Experience Manager Forms] admite la creación de un formulario adaptable utilizando un esquema JSON existente como modelo de formulario. Este esquema JSON representa la estructura en la que el sistema back-end de su organización produce o consume datos. El esquema JSON que utilice debe cumplir con las [especificaciones v4](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms] admite la creación de un formulario adaptable mediante un esquema JSON existente como modelo de formulario. Este esquema JSON representa la estructura en la que el sistema back-end de su organización produce o consume datos. El esquema JSON que utilice debe cumplir con las [especificaciones v4](https://json-schema.org/draft-04/schema).
 
 Las funciones principales del uso de un esquema JSON son:
 
@@ -31,9 +31,9 @@ Las funciones principales del uso de un esquema JSON son:
 * Puede rellenar previamente el formulario utilizando un JSON que cumpla con el esquema asociado.
 * En el envío, los datos especificados por el usuario se envían como JSON, que se adhiere al esquema asociado.
 
-Un esquema JSON consta de tipos de elementos simples y complejos. Los elementos tienen atributos que agregan reglas al elemento. Cuando estos elementos y atributos se arrastran a un formulario adaptable, se asignan automáticamente al componente de formulario adaptable correspondiente.
+Un esquema JSON consta de tipos de elementos simples y complejos. Los elementos tienen atributos que agregan reglas al elemento. Cuando estos elementos y atributos se arrastran a un formulario adaptable, se asignan automáticamente al componente del formulario adaptable correspondiente.
 
-Esta asignación de elementos JSON con componentes de formulario adaptables es la siguiente:
+Esta asignación de elementos JSON con componentes del formulario adaptable se produce de la siguiente forma:
 
 ```json
 "birthDate": {
@@ -107,16 +107,16 @@ Esta asignación de elementos JSON con componentes de formulario adaptables es l
 
 El formulario adaptable utiliza la información disponible en el esquema JSON para asignar cada campo generado. En particular:
 
-* La variable `title` sirve como etiqueta para los componentes de formulario adaptable.
-* La variable `description` se define como descripción larga para un componente de formulario adaptable.
-* La variable `default` sirve como valor inicial de un campo de formulario adaptable.
+* La propiedad `title` sirve como etiqueta para los componentes del formulario adaptable.
+* La propiedad `description` se define como una descripción larga para un componente del formulario adaptable.
+* La propiedad `default` sirve como valor inicial de un campo del formulario adaptable.
 * La propiedad `maxLength` se establece como atributo `maxlength` del componente del campo de texto.
 * Las propiedades `minimum`, `maximum`, `exclusiveMinimum` y `exclusiveMaximum` se utilizan para el componente Cuadro numérico.
 * Para ser compatible con el intervalo de `DatePicker component`, se facilitan las propiedades de esquema JSON adicionales `minDate` y `maxDate`.
 * Las propiedades `minItems` y `maxItems` se utilizan para restringir el número de elementos/campos que se pueden agregar o quitar de un componente de panel.
-* La variable `readOnly` la propiedad define el `readonly` de un componente de formulario adaptable.
-* La variable `required` la propiedad marca el campo de formulario adaptable como obligatorio, mientras que en el panel (donde el tipo es objeto), los datos JSON enviados finales tienen campos con el valor vacío correspondiente a ese objeto.
-* La variable `pattern` se establece como patrón de validación (expresión regular) en forma adaptable.
+* La propiedad `readOnly` define el atributo `readonly` de un componente del formulario adaptable.
+* La propiedad `required` marca el campo del formulario adaptable como obligatorio, mientras que en el panel (donde el tipo es un objeto), los datos JSON finales enviados poseen campos con el valor vacío correspondiente a ese objeto.
+* La propiedad `pattern` se ajusta como el patrón de validación (expresión regular) en el formulario adaptable.
 * La extensión del archivo de esquema JSON debe mantenerse como .schema.json. Por ejemplo, &lt;filename>.schema.json.
 
 ## Ejemplo de esquema JSON {#sample-json-schema}
@@ -334,7 +334,7 @@ El ejemplo anterior define un registro de cliente en el que cada cliente tiene u
 
 ## Preconfigurar campos en la definición del esquema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Puede usar la variable **aem:afProperties** para preconfigurar el campo Esquema JSON para asignarlo a un componente de formulario adaptable personalizado. A continuación se muestra un ejemplo:
+Puede usar la propiedad **aem:afProperties** para preconfigurar el campo del esquema JSON y asignarlo a un componente de formulario adaptable personalizado. A continuación se muestra un ejemplo:
 
 ```json
 {
@@ -354,11 +354,11 @@ Puede usar la variable **aem:afProperties** para preconfigurar el campo Esquema 
 }
 ```
 
-## Configuración de secuencias de comandos o expresiones para objetos de formulario  {#configure-scripts-or-expressions-for-form-objects}
+## Configurar scripts o expresiones para objetos de formulario  {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones de JavaScript válidas y utilizan API de modelos de secuencias de comandos de formularios adaptables. Puede preconfigurar los objetos de formulario para [evaluar una expresión](adaptive-form-expressions.md) en un suceso de formulario.
+JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de scripts de formularios adaptables. Puede preconfigurar los objetos de formulario para [evaluar una expresión](adaptive-form-expressions.md) en un evento de formulario.
 
-Utilice la propiedad aem:afproperties para preconfigurar expresiones de formulario adaptables o secuencias de comandos para los componentes de formulario adaptables. Por ejemplo, cuando se activa el evento initialize , el siguiente código establece el valor del campo phone e imprime un valor en el registro :
+Utilice la propiedad aem:afproperties para preconfigurar expresiones de formularios adaptables o scripts para los componentes de formularios adaptables. Por ejemplo, cuando se activa el evento initialize, el siguiente código establece el valor del campo phone e imprime un valor en el registro:
 
 ```json
 "telephone": {
@@ -376,7 +376,7 @@ Utilice la propiedad aem:afproperties para preconfigurar expresiones de formular
 }
 ```
 
-Debe ser miembro de [grupo de usuarios avanzados de formularios](forms-groups-privileges-tasks.md) para configurar secuencias de comandos o expresiones para el objeto de formulario. En la tabla siguiente se enumeran todos los sucesos de secuencia de comandos admitidos para un componente de formulario adaptable.
+Debe ser miembro del grupo [forms-power-user](forms-groups-privileges-tasks.md) para configurar scripts o expresiones para el objeto de formulario. En la siguiente tabla se enumeran todos los eventos de script admitidos para un componente de formulario adaptable.
 
 <table>
  <tbody>
@@ -386,7 +386,7 @@ Debe ser miembro de [grupo de usuarios avanzados de formularios](forms-groups-pr
    <td>Calcular</td>
    <td>Visibilidad</td>
    <td>Validate</td>
-   <td>Activado</td>
+   <td>Habilitado</td>
    <td>Implementación de valor</td>
    <td>Haga clic </td>
    <td>Opciones</td>
@@ -557,7 +557,7 @@ Debe ser miembro de [grupo de usuarios avanzados de formularios](forms-groups-pr
    <td> </td>
   </tr>
   <tr>
-   <td>Draw</td>
+   <td>Dibujo</td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td><img alt="" src="assets/yes_tick.png" /></td>
@@ -581,11 +581,11 @@ Debe ser miembro de [grupo de usuarios avanzados de formularios](forms-groups-pr
  </tbody>
 </table>
 
-Algunos ejemplos de uso de eventos en un JSON ocultan un campo en el evento initialize y configuran el valor de otro campo en el evento value commit. Para obtener información detallada sobre la creación de expresiones para los sucesos de secuencia de comandos, consulte [Expresiones de formulario adaptables](adaptive-form-expressions.md).
+Algunos ejemplos de uso de eventos en un JSON ocultan un campo en el evento initialize y configuran el valor de otro campo en el evento value commit. Para obtener información detallada sobre crear expresiones para los eventos de script, consulte [Expresiones de formularios adaptables](adaptive-form-expressions.md).
 
 Este es un ejemplo de código JSON para los ejemplos mencionados anteriormente.
 
-### Ocultar un campo en el suceso initialize {#hiding-a-field-on-initialize-event}
+### Ocultar un campo en el evento initialize {#hiding-a-field-on-initialize-event}
 
 ```json
 "name": {
@@ -622,9 +622,9 @@ Este es un ejemplo de código JSON para los ejemplos mencionados anteriormente.
 }
 ```
 
-## Límite de valores aceptables para un componente de formulario adaptable {#limit-acceptable-values-for-an-adaptive-form-component}
+## Limitar los valores aceptables para un componente de formulario adaptable {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Puede añadir las siguientes restricciones a los elementos del esquema JSON para limitar los valores aceptables para un componente de formulario adaptable:
+Puede agregar las siguientes restricciones a los elementos del esquema JSON para limitar los valores aceptables para un componente de formulario adaptable:
 
 <table>
  <tbody>
@@ -702,7 +702,7 @@ Puede añadir las siguientes restricciones a los elementos del esquema JSON para
    <td><p>Especifica la secuencia de caracteres. Un componente acepta los caracteres si se ajustan al patrón especificado.</p> <p>La propiedad pattern se asigna al patrón de validación del componente de formulario adaptable correspondiente.</p> </td>
    <td>
     <ul>
-     <li>Todos los componentes de formularios adaptables asignados a un esquema XSD </li>
+     <li>Todos los componentes de formulario adaptable asignados a un esquema XSD </li>
     </ul> </td>
   </tr>
   <tr>
@@ -722,7 +722,7 @@ Puede añadir las siguientes restricciones a los elementos del esquema JSON para
 
 ## Construcciones no compatibles  {#non-supported-constructs}
 
-Los formularios adaptables no admiten las siguientes construcciones de esquema JSON:
+Los formularios adaptables no son compatibles con las siguientes construcciones de esquema JSON:
 
 * Tipo nulo
 * Tipos de unión, como any y
