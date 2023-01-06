@@ -1,5 +1,5 @@
 ---
-title: Optimización de formularios HTML5
+title: Optimizar formularios HTML5
 seo-title: Optimizing HTML5 forms
 description: Puede optimizar el tamaño de salida de los formularios HTML5.
 seo-description: You can optimize the output size of the HTML5 forms.
@@ -11,31 +11,31 @@ discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '283'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Optimización de formularios HTML5 {#optimizing-html-forms}
+# Optimizar formularios HTML5 {#optimizing-html-forms}
 
-Los formularios de HTML5 procesan los formularios en formato HTML5. El resultado resultante podría ser grande en función de factores como el tamaño del formulario y las imágenes del formulario. Para optimizar la transferencia de datos, el método recomendado es comprimir la respuesta del HTML mediante el servidor web desde el que se suministra la solicitud. Este método reduce el tamaño de respuesta, el tráfico de red y el tiempo necesario para transmitir datos entre los equipos cliente y servidor.
+Los formularios HTML5 procesan los formularios en formato HTML5. Dependiendo de factores como el tamaño del formulario y las imágenes que este contiene, la salida resultante puede tener un gran tamaño. El método recomendado para optimizar la transferencia de datos es comprimir la respuesta del HTML mediante el servidor web desde el que se suministra la solicitud. Este método reduce el tamaño de la respuesta, el tráfico de red y el tiempo necesario para transmitir los datos entre los equipos cliente y servidor.
 
-Este artículo describe los pasos necesarios para habilitar la compresión para Apache Web Server 2.0 de 32 bits, con JBoss.
+Este artículo describe los pasos necesarios para habilitar la compresión en Apache Web Server 2.0 de 32 bits con JBoss.
 
 >[!NOTE]
 >
->Las siguientes instrucciones no se aplican a servidores que no sean Apache Web Server 2.0 de 32 bits.
+>Las siguientes instrucciones no se aplican a servidores distintos de Apache Web Server 2.0 de 32 bits.
 
-Obtenga el software de servidor web Apache aplicable a su sistema operativo:
+Obtenga el software del servidor web Apache aplicable a su sistema operativo:
 
-* Para Windows, descargue el servidor web Apache del sitio del proyecto Apache HTTP Server.
-* Para Solaris de 64 bits, descargue el servidor web Apache desde el sitio web de Sunfreeware para Solaris.
-* Para Linux, el servidor web Apache está preinstalado en un sistema Linux.
+* En Windows, descargue el servidor web de Apache del sitio del proyecto Apache HTTP Server.
+* En Solaris de 64 bits, descargue el servidor web Apache desde el sitio web de Sunfreeware para Solaris.
+* En Linux, el servidor web Apache está preinstalado en el sistema.
 
 Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
 
-1. Descomente las siguientes configuraciones de módulo en la sección *APACHE_HOME/conf/httpd.conf* archivo.
+1. Elimine los comentarios de las siguientes configuraciones de módulo en el archivo *APACHE_HOME/conf/httpd.conf*.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -45,11 +45,11 @@ Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
 
    >[!NOTE]
    >
-   >Para Linux, el directorio predeterminado APACHE_HOME es /etc/httpd/.
+   >En Linux, el directorio APACHE_HOME predeterminado es /etc/httpd/.
 
-1. Configure el proxy en el puerto 8080 de JBoss.
+1. Configure el proxy en el puerto 8080 de JBoss.
 
-   Agregue la siguiente configuración a la *APACHE_HOME/conf/httpd.conf* archivo de configuración.
+   Agregue la siguiente configuración al archivo de configuración *APACHE_HOME/conf/httpd.conf*.
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -60,14 +60,14 @@ Apache puede comunicarse con JBoss mediante HTTP o el protocolo AJP.
    >
    >Cuando utiliza un proxy, se requieren los siguientes cambios de configuración:
    >
-   >* Acceso: *https://&lt;server>:&lt;port>/system/console/configMgr*
-   * Editar la configuración del filtro de referente de Apache Sling
-   * En Permitir hosts, añada la entrada para el servidor proxy
+   >* Acceso: *https://&lt;server>:&lt;port>/system/console/configMgr*.
+   * Edite la configuración del Filtro de referente de Apache Sling.
+   * En Permitir hosts, añada la entrada para el servidor proxy.
 
 
-1. Active Compresión.
+1. Habilite la Compresión.
 
-   Agregue la siguiente configuración a la *APACHE_HOME/conf/httpd.conf* archivo de configuración.
+   Agregue la siguiente configuración al archivo de configuración *APACHE_HOME/conf/httpd.conf*.
 
    ```xml
    <Location /content/xfaforms>
