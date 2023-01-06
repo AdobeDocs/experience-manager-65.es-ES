@@ -11,22 +11,22 @@ discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 feature: Mobile Forms
 exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Crear tablas complejas accesibles en formularios HTML5 {#create-accessible-complex-tables-in-html-forms}
 
-La implementación predeterminada de tablas en HTML5 Forms utiliza elementos DIV de HTML para procesar una tabla. La renderización implica el uso de funciones ARIA para satisfacer los requisitos de accesibilidad.
+La implementación predeterminada de tablas en formularios HTML5 utiliza elementos DIV HTML para procesar una tabla. El procesamiento implica el uso de funciones ARIA para satisfacer los requisitos de accesibilidad.
 
-Para evitar problemas de accesibilidad con lectores de pantalla que no admiten completamente las funciones ARIA utilizadas con tablas de datos, HTML5 Forms proporciona una representación alternativa para las tablas. Estas tablas se basan en el nuevo formato de tabla introducido en Designer, que también admite:
+Para evitar problemas de accesibilidad con lectores de pantalla que no admiten completamente las funciones ARIA utilizadas con tablas de datos, los formularios HTML5 proporcionan una representación alternativa para las tablas. Estas tablas se basan en el nuevo formato de tabla introducido en Designer, que también admite:
 
 * Encabezados de fila
-* Intervalo de fila
+* Intervalos de fila
 
-Para utilizar el nuevo formato en HTML5 Forms, marque la tabla como compleja. Para marcar la tabla como compleja, agregue `extras` en el origen XML del subformulario de tabla de la siguiente manera:
+Para utilizar el nuevo formato en formularios HTML5, marque la tabla como compleja. Para marcar la tabla como compleja, agregue la etiqueta `extras` en la fuente XML del subformulario de tabla de la siguiente manera:
 
 ```xml
 </extras>
@@ -34,7 +34,7 @@ Para utilizar el nuevo formato en HTML5 Forms, marque la tabla como compleja. Pa
  </extras>
 ```
 
-Las tablas marcadas como *complexTable* siga la representación nativa del HTML y proporcione un mejor soporte de accesibilidad para determinados lectores de pantalla.  Para crear un intervalo de filas, seleccione celdas consecutivas de una tabla en la misma columna, haga clic con el botón derecho en la selección y, a continuación, haga clic en **[!UICONTROL Combinar celdas]**.
+Las tablas marcadas como *complexTable* siguen la representación nativa del HTML y proporcionan un soporte de accesibilidad mejor para determinados lectores de pantalla.  Para crear un intervalo de filas, seleccione celdas consecutivas de una tabla en la misma columna, haga clic con el botón derecho en la selección y, a continuación, haga clic en **[!UICONTROL Combinar celdas]**.
 
 >[!NOTE]
 >
@@ -44,10 +44,10 @@ Para marcar una fila como encabezado de fila, seleccione todas las celdas de la 
 
 Para marcar una celda como encabezado de columna, seleccione cualquier celda de la columna, haga clic con el botón derecho en la selección y, a continuación, haga clic en **[!UICONTROL Marcar encabezado]**.
 
-Limitaciones en las nuevas *Tabla accesible* formato:
+Limitaciones en el formato nuevo *Tabla accesible*:
 
 * Falta de compatibilidad con campos ampliables si se utiliza rowspan en la tabla
 * No se admiten tablas anidadas (tablas dentro de celdas de tabla)
-* La compatibilidad con el intervalo de filas está limitada a las filas de encabezado y celdas de encabezado
+* La compatibilidad con el intervalo de filas está limitada a las filas y celdas de encabezado
 * El soporte se limita a tablas regulares
 * No se admiten prefijos de datos en tablas con intervalo de tiempo > 1
