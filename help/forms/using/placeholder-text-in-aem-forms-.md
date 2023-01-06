@@ -11,9 +11,9 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 6b6e27b5-8b4e-489c-9e72-4d256692c1ca
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '215'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ El texto de marcador de posición representa una palabra o una frase corta. Est�
 
 **A.** Componente de fecha con texto de marcador de posición **B.** Componente de fecha sin texto de marcador de posición
 
-AEM Forms admite el texto de marcador de posición para los campos Cuadro de contraseña, Selector de fecha, Cuadro numérico y Cuadro de texto.\
+AEM Forms admite texto de marcador de posición en los campos Cuadro de contraseña, Selector de fecha, Cuadro numérico y Cuadro de texto.\
 Los textos de los marcadores de posición no son compatibles con el widget de fecha HTML5 nativo. Para especificar un texto de marcador de posición:
 
 1. Haga clic con el botón derecho en un componente que admita texto de marcador de posición y haga clic en **Editar**. Aparecerá el cuadro de diálogo Editar componente.
@@ -39,4 +39,4 @@ Los textos de los marcadores de posición no son compatibles con el widget de fe
 
 >[!NOTE]
 >
->El texto del marcador de posición no es compatible con Microsoft Internet Explorer 9.
+>El texto del marcador de posición no es compatible con Microsoft Internet Explorer 9.
