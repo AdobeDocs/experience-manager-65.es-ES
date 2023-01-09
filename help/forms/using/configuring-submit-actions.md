@@ -1,5 +1,5 @@
 ---
-title: Configuración de la acción Enviar
+title: Configurar la acción de envío
 seo-title: Configuring the Submit action
 description: Forms permite configurar una acción de envío para definir cómo se procesa un formulario adaptable después del envío. Puede utilizar acciones de envío integradas o escribir las suyas propias desde cero.
 uuid: 4368d648-88ea-4f84-a051-46296a1a084e
@@ -12,56 +12,56 @@ exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1870'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
-# Configuración de la acción Enviar{#configuring-the-submit-action}
+# Configurar la acción de envío{#configuring-the-submit-action}
 
 ## Introducción al envío de acciones {#introduction-to-submit-actions}
 
-Una acción de envío se activa cuando un usuario hace clic en el botón Enviar de un formulario adaptable. Puede configurar la acción de envío en el formulario adaptable. Los formularios adaptables proporcionan algunas acciones de envío listas para usar. Puede copiar y ampliar las acciones de envío predeterminadas para crear su propia acción de envío. Sin embargo, según sus necesidades, puede escribir y registrar su propia acción de envío para procesar los datos en el formulario enviado. La acción de envío puede utilizar [envío sincrónico o asincrónico](../../forms/using/asynchronous-submissions-adaptive-forms.md).
+Se activa una acción de envío cuando un usuario hace clic en el botón Enviar en un formulario adaptable. Puede configurar la acción de envío en el formulario adaptable. Los formularios adaptables proporcionan algunas acciones de envío listas para usar. También puede copiar y ampliar las acciones de envío predeterminadas para crear la suya propia. Sin embargo, según sus necesidades, puede escribir y registrar su propia acción de envío para procesar los datos en el formulario enviado. Una acción de envío puede utilizar [el envío sincrónico o asincrónico](../../forms/using/asynchronous-submissions-adaptive-forms.md).
 
-Puede configurar una acción de envío en la variable **Envío** de las propiedades del contenedor del formulario adaptable, en la barra lateral.
+Puede configurar una acción de envío en la sección **Envío** de las propiedades del contenedor del formulario adaptable, en la barra lateral.
 
 ![Configurar la acción de envío](assets/thank-you-setting.png)
 
 Configurar la acción de envío
 
-Las acciones de envío predeterminadas disponibles con los formularios adaptables son:
+Las acciones de envío predeterminadas disponibles con los formularios adaptables son las siguientes:
 
 * Enviar al punto final REST
 * Enviar correo electrónico
 * Enviar PDF por correo electrónico
-* Invocar un Forms Workflow
+* Invocar un flujo de trabajo de formularios
 * Enviar mediante modelo de datos de formulario
 * Acción de envío de portal de formularios
-* Invocar un flujo de trabajo AEM
+* Invocar un flujo de trabajo de AEM
 
 >[!NOTE]
 >
->La acción Enviar PDF por correo electrónico solo se aplica a los formularios adaptables que utilizan plantilla XFA como modelo de formulario.
+>La acción Enviar PDF por correo electrónico solo se aplica a los formularios adaptables que utilizan una plantilla XFA como modelo de formulario.
 
 >[!NOTE]
 >
->Asegúrese de que la variable [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder
->existe. El directorio es necesario para almacenar los archivos adjuntos temporalmente. Si el directorio no existe, créelo.
+>Asegúrese de que el archivo [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM
+>existe. Necesitará el directorio para almacenar los archivos adjuntos temporalmente. Si el directorio no existe, créelo.
 
 >[!CAUTION]
 >
->Si [prefill](../../forms/using/prepopulate-adaptive-form-fields.md) una plantilla de formulario, un modelo de datos de formulario o un formulario adaptable basado en esquemas con datos XML o JSON reclamados a un esquema (esquema XML, esquema JSON, plantilla de formulario o modelo de datos de formulario) que sea datos que no contenga &lt;afdata>, &lt;afbounddata>y &lt;/afunbounddata> etiquetas, los datos de los campos no enlazados (los campos no enlazados son campos de formulario adaptables sin [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) ) del formulario adaptable se pierde.
+>Si [rellena previamente](../../forms/using/prepopulate-adaptive-form-fields.md) una plantilla de formulario, un modelo de datos de formulario o un formulario adaptable basado en esquemas con datos XML o JSON reclamados a un esquema (esquema XML, esquema JSON, plantilla de formulario o modelo de datos de formulario) cuyos datos no contengan las etiquetas &lt;afData>, &lt;afBoundData> y &lt;/afUnboundData>, los datos de los campos no enlazados (los campos no enlazados son campos de formularios adaptables sin la propiedad [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) ) del formulario adaptable se perderán.
 
-Puede escribir una acción de envío personalizada para formularios adaptables para que cumplan con su caso de uso. Para obtener más información, consulte [Escritura de una acción de envío personalizada para formularios adaptables](../../forms/using/custom-submit-action-form.md).
+Puede escribir una acción de envío personalizada para formularios adaptables para que cumplan con su caso de uso. Para obtener más información, consulte [Escribir una acción de envío personalizada para formularios adaptables](../../forms/using/custom-submit-action-form.md).
 
 ## Enviar al punto final REST {#submit-to-rest-endpoint}
 
-La variable **Enviar al extremo REST** la opción enviar pasa los datos rellenados en el formulario a una página de confirmación configurada como parte de la solicitud de GET HTTP. Puede agregar el nombre de los campos que desea solicitar. El formato de la solicitud es el siguiente:
+La opción de envío **Enviar al punto final REST** envía los datos rellenados en el formulario a una página de confirmación configurada como parte de la petición HTTP GET. Puede agregar el nombre de los campos que desea solicitar. El formato de la solicitud es el siguiente:
 
 `{fieldName}={request parameter name}`
 
-Como se muestra en la imagen siguiente, `param1` y `param2` se pasan como parámetros con valores copiados de la variable **textbox** y **cuadro numérico** para la siguiente acción.
+Como se muestra en la siguiente imagen, `param1` y `param2` se pasan como parámetros con valores copiados de los campos **cuadro de texto** y **del cuadro numérico** para la siguiente acción.
 
-También puede **Habilitar la petición POST** y proporcionar una URL para publicar la solicitud. Para enviar datos al servidor Experience Manager que aloja el formulario, utilice una ruta relativa correspondiente a la ruta raíz del servidor Experience Manager. Por ejemplo, /content/forms/af/SampleForm.html. Para enviar datos a cualquier otro servidor, utilice la ruta absoluta.
+También puede **Habilitar la petición POST** y proporcionar una URL para publicar la solicitud. Para enviar datos al servidor de Experience Manager que aloja el formulario, utilice una ruta relativa correspondiente a la ruta raíz del servidor de Experience Manager. Por ejemplo, /content/forms/af/SampleForm.html. Para enviar datos a cualquier otro servidor, utilice la ruta absoluta.
 
 ![Configurar la acción de envío del punto final de REST.](assets/action-config.png)
 
@@ -70,7 +70,7 @@ Configurar la acción de envío del punto final de REST.
 >[!NOTE]
 Para pasar los campos como parámetros en una URL REST, todos los campos deben tener nombres de elementos diferentes, incluso si se colocan en paneles diferentes.
 
-### Publicar datos enviados en un recurso o punto final de reposo externo  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
+### Publicar datos enviados en un recurso o punto final REST externo  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
 Utilice la acción **Enviar al punto final REST** para publicar los datos enviados en una URL de REST. La URL puede ser de un servidor interno (el servidor en el que se procesa el formulario) o externo.
 
@@ -95,50 +95,50 @@ En este ejemplo, `data` almacena los datos XML y `att` almacena datos adjuntos.
 
 ## Enviar correo electrónico {#send-email}
 
-La variable **Enviar correo electrónico** la acción submit envía un correo electrónico a uno o varios destinatarios cuando el formulario se envía correctamente. El correo electrónico generado puede contener datos de formulario en un formato predefinido.
+Puede usar la acción de envío **Enviar correo electrónico** para enviar un correo electrónico a uno o varios destinatarios cuando el formulario se haya enviado correctamente. El correo electrónico generado puede contener datos de formulario en un formato predefinido.
 
 >[!NOTE]
 Todos los campos del formulario deben tener nombres de elemento diferentes, incluso si se colocan en paneles diferentes), para incluir los datos del formulario en un mensaje de correo electrónico.
 
 ## Enviar PDF por correo electrónico {#send-pdf-via-email}
 
-La variable **Enviar PDF por correo electrónico** la acción submit envía un mensaje de correo electrónico con un PDF que contiene datos del formulario a uno o varios destinatarios cuando el formulario se envía correctamente.
+La acción de envío **Enviar PDF por correo electrónico** envía un mensaje de correo electrónico con un PDF que contiene datos del formulario a uno o varios destinatarios cuando el formulario se envía correctamente.
 
 >[!NOTE]
-Esta acción de envío está disponible para formularios adaptables basados en XFA y formularios de adaptación basados en XSD que tienen la plantilla Documento de registro.
+Esta acción de envío está disponible para formularios adaptables basados en XFA y en XSD que tienen la plantilla Documento de registro.
 
-## Invocar un Forms Workflow {#invoke-a-forms-workflow}
+## Invocar un flujo de trabajo de formularios {#invoke-a-forms-workflow}
 
-La variable **Enviar al Forms Workflow** la opción submit envía un xml de datos y archivos adjuntos (si los hay) a un LiveCycle de Adobe existente o a AEM Forms en un proceso JEE.
+La acción de envío **Enviar al flujo de trabajo de Forms** envía un xml de datos y archivos adjuntos (si los hay) a un Adobe LiveCycle existente o a AEM Forms en un proceso JEE.
 
-Para obtener información sobre cómo configurar la acción Enviar al envío del Forms Workflow, consulte [Envío y procesamiento de los datos del formulario mediante flujos de trabajo de formulario](../../forms/using/submit-form-data-livecycle-process.md).
+Para obtener información sobre cómo configurar la acción Enviar a la acción de envío del flujo de trabajo de Forms, consulte [Enviar y procesar los datos del formulario mediante flujos de trabajo de formulario](../../forms/using/submit-form-data-livecycle-process.md).
 
 ## Enviar mediante modelo de datos de formulario {#submit-using-form-data-model}
 
-La variable **Enviar mediante el modelo de datos de formulario** enviar escrituras de acción enviar datos de formulario adaptables enviados para el objeto de modelo de datos especificado en un modelo de datos de formulario a su origen de datos. Al configurar la acción de envío, puede elegir un objeto de modelo de datos cuyos datos enviados desee volver a escribir en su origen de datos.
+La acción de envío **Enviar mediante el modelo de datos de formulario** escribe los datos del formulario adaptable enviados para el objeto del modelo de datos especificado en un modelo de datos de formulario en su fuente de datos. Al configurar la acción de envío, puede elegir un objeto de modelo de datos cuyos datos enviados desee volver a escribir en su fuente de datos.
 
-Además, se puede enviar un archivo adjunto de formulario mediante un modelo de datos de formulario y un documento de registro (DoR) al origen de datos.
+Además, puede enviar a la fuente de datos un archivo adjunto de formulario mediante un modelo de datos de formulario y un documento de registro (DoR).
 
 Para obtener información sobre el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](../../forms/using/data-integration.md).
 
 ## Acción de envío de portal de formularios {#forms-portal-submit-action}
 
-La variable **Acción de envío del portal de Forms** hace que los datos de formulario estén disponibles a través de AEM Forms Portal.
+La opción **Acción de envío del portal de formularios** hace que los datos de formulario estén disponibles a través del portal de AEM Forms.
 
-Para obtener más información sobre el portal de Forms y la acción de envío, consulte [Componente Borradores y presentaciones](../../forms/using/draft-submission-component.md).
+Para obtener más información sobre el portal de formularios y la acción de envío, consulte [Componente Borradores y presentaciones](../../forms/using/draft-submission-component.md).
 
 ## Invocar un flujo de trabajo de AEM {#invoke-an-aem-workflow}
 
-La acción de envío **[!UICONTROL Invocar un flujo de trabajo de AEM]** asocia un formulario adaptable con un [Flujo de trabajo de AEM](/help/sites-developing/workflows-models.md). Cuando se envía un formulario, el flujo de trabajo asociado se inicia automáticamente en la instancia Autor. Puede guardar el archivo de datos, los archivos adjuntos y el documento de registro en la carpeta relativa o en la carga útil del flujo de trabajo o en una variable. Si el flujo de trabajo está marcado para almacenamiento de datos externos, la opción de variable está disponible y no la opción de carga útil. Puede seleccionar de la lista de variables disponibles para el modelo de flujo de trabajo. Si el flujo de trabajo está marcado para el almacenamiento de datos externos en una fase posterior y no en el momento de la creación del flujo de trabajo, asegúrese de que las configuraciones de variables requeridas estén establecidas.
+La acción de envío **[!UICONTROL Invocar un flujo de trabajo de AEM]** asocia un formulario adaptable con un [Flujo de trabajo de AEM](/help/sites-developing/workflows-models.md). Cuando se envía un formulario, el flujo de trabajo asociado se inicia automáticamente en la instancia de autor. Puede guardar el archivo de datos, los archivos adjuntos y el documento de registro en la ubicación de carga útil del flujo de trabajo o en una variable. Si el flujo de trabajo está marcado para almacenar datos externos, estará disponible la opción de variable y no la de carga útil. Puede seleccionar de la lista de variables disponibles para el modelo de flujo de trabajo. Si el flujo de trabajo está marcado para el almacenamiento de datos externos en una fase posterior y no en el momento de la creación del flujo de trabajo, asegúrese de que las configuraciones de variables requeridas estén establecidas.
 
-Antes de usar la variable **Invocar un flujo de trabajo AEM** enviar acción, [configuración de la configuración de DS del Experience Manager](../../forms/using/configuring-the-processing-server-url-.md). Para obtener información sobre la creación de un flujo de trabajo AEM, consulte [Flujos de trabajo centrados en formularios en OSGi](../../forms/using/aem-forms-workflow.md).
+Antes de usar la acción de envío **Invocar un flujo de trabajo de AEM**, [configure el DS de Experience Manager](../../forms/using/configuring-the-processing-server-url-.md). Para obtener información sobre crear un flujo de trabajo de AEM, consulte [Flujos de trabajo centrados en formularios en OSGi](../../forms/using/aem-forms-workflow.md).
 
-La acción Enviar coloca lo siguiente en la ubicación de carga útil del flujo de trabajo. Sin embargo, tenga en cuenta que solo se muestra la opción Variable si el modelo de flujo de trabajo está marcado para almacenamiento de datos externos y no para la opción de carga útil.
+La acción de envío coloca lo siguiente en la ubicación de carga útil del flujo de trabajo. Sin embargo, tenga en cuenta que solo se mostrará la opción Variable si el modelo de flujo de trabajo está marcado para almacenar datos externos y no para la opción de carga útil.
 
-* **Archivo de datos**: Contiene datos enviados al formulario adaptable. Puede usar la opción **[!UICONTROL Ruta del archivo de datos]** para especificar el nombre y la ruta del archivo en relación con la carga útil. Por ejemplo, la ruta `/addresschange/data.xml` crea una carpeta llamada `addresschange` y la coloca en relación a la carga útil. También puede especificar únicamente `data.xml` para enviar solo los datos enviados sin crear una jerarquía de carpetas. Utilice la opción de variable y seleccione la variable en la lista de variables disponibles para el modelo de flujo de trabajo.
+* **Archivo de datos**: Contiene datos enviados al formulario adaptable. Puede usar la opción **[!UICONTROL Ruta del archivo de datos]** para especificar el nombre y la ruta del archivo en relación con la carga útil. Por ejemplo, la ruta `/addresschange/data.xml` crea una carpeta llamada `addresschange` y la coloca en relación a la carga útil. También puede especificar únicamente `data.xml` para enviar solo los datos enviados sin crear una jerarquía de carpetas. Utilice la opción Variable y seleccione la variable de la lista de variables disponibles para el modelo de flujo de trabajo.
 
 >[!NOTE]
-Se pueden utilizar variables tanto si el modelo de flujo de trabajo está marcado para almacenamiento de datos externo como si no.
+Se pueden utilizar variables tanto si el modelo de flujo de trabajo está marcado para almacenar datos externo como si no.
 
 * **Archivos adjuntos**: Puede usar la opción **[!UICONTROL Ruta de archivos adjuntos]** para especificar el nombre de la carpeta en la que se almacenarán los archivos adjuntos cargados en el formulario adaptable. La carpeta se creará en relación con la carga útil. Si el flujo de trabajo está marcado para el almacenamiento de datos externos, utilice la opción de variable y seleccione la variable de la lista de variables disponibles para el modelo de flujo de trabajo.
 
@@ -146,13 +146,13 @@ Se pueden utilizar variables tanto si el modelo de flujo de trabajo está marcad
 
 ## Revalidación del lado del servidor en formularios adaptables {#server-side-revalidation-in-adaptive-form}
 
-Normalmente, en cualquier sistema de captura de datos en línea, los desarrolladores colocan algunas validaciones de JavaScript en el lado del cliente para aplicar algunas reglas empresariales. Sin embargo, en los exploradores modernos, los usuarios finales tienen la forma de evitar esas validaciones y realizar envíos manualmente mediante diversas técnicas, como la consola de desarrolladores del explorador web. Estas técnicas también son válidas para los formularios adaptables. Un desarrollador de formularios puede crear varias lógicas de validación, pero técnicamente, los usuarios finales pueden omitir esas lógicas de validación y enviar datos no válidos al servidor. Los datos no válidos romperían las reglas empresariales que ha impuesto un autor de formularios.
+Normalmente, en cualquier sistema de captura de datos en línea, los desarrolladores colocan algunas validaciones de JavaScript en el lado del cliente para aplicar algunas reglas empresariales. Sin embargo, en los exploradores modernos, los usuarios finales tienen la forma de evitar esas validaciones y realizar envíos manualmente mediante diversas técnicas, como la consola de desarrolladores del explorador web. Estas técnicas también son válidas para formularios adaptables. Un desarrollador de formularios puede crear varias lógicas de validación, pero técnicamente, los usuarios finales pueden omitir esas lógicas de validación y enviar datos no válidos al servidor. Los datos no válidos romperían las reglas empresariales que ha impuesto un autor de formularios.
 
-La función de revalidación del lado del servidor permite ejecutar también las validaciones que ha proporcionado un autor de formularios adaptables al diseñar un formulario adaptable en el servidor. Evita cualquier posible compromiso en el envíos de datos y violaciones de reglas empresariales representadas en términos de validaciones de formularios.
+La característica de revalidación del lado del servidor permite ejecutar también las validaciones que ha proporcionado un autor de formularios adaptables al diseñar un formulario adaptable en el servidor. Evita cualquier posible compromiso en el envíos de datos y violaciones de reglas empresariales representadas en términos de validaciones de formularios.
 
 ### ¿Qué se debe validar en el servidor? {#what-to-validate-on-server-br}
 
-Todas las validaciones de campo predeterminadas (OOTB) de un formulario adaptable que se vuelven a ejecutar en el servidor son:
+Todas las validaciones de campo listas para usar (OOTB) de un formulario adaptable que se vuelven a ejecutar en el servidor son las siguientes:
 
 * Requerido
 * Cláusula de imagen de validación
@@ -179,10 +179,10 @@ A veces, si hay reglas de validación complejas, el script de validación exacta
 
 Compatibilidad con funciones personalizadas en expresiones de validación
 
-El autor puede configurar la biblioteca customJavaScript por formulario adaptable. En la biblioteca, mantenga solo las funciones reutilizables, que dependen de las bibliotecas de terceros jquery y underscore.js.
+El autor puede configurar la biblioteca customJavaScript para formularios adaptables. En la biblioteca, mantenga solo las funciones reutilizables, que dependen de las bibliotecas de terceros jquery y underscore.js.
 
-## Gestión de errores en la acción de envío {#error-handling-on-submit-action}
+## Tratar errores en la acción de envío {#error-handling-on-submit-action}
 
-Como parte de las directrices de seguridad y endurecimiento del Experience Manager, configure páginas de error personalizadas como 404.jsp y 500.jsp. Se llama a estos controladores cuando aparecen errores al enviar un formulario 404 o 500. También se llama a los controladores cuando estos códigos de error se activan en el nodo Publish.
+Como parte de las directrices de seguridad y endurecimiento de Experience Manager, configure páginas de error personalizadas como, 404.jsp y 500.jsp. Se llama a estos controladores cuando aparecen errores 404 o 500 al enviar un formulario. También se llama a los controladores cuando estos códigos de error se activan en el nodo Publish.
 
-Para obtener más información, consulte [Personalización de páginas que muestra el Controlador de errores](/help/sites-developing/customizing-errorhandler-pages.md).
+Para obtener más información, consulte [Personalizar páginas que muestra el Controlador de errores](/help/sites-developing/customizing-errorhandler-pages.md).

@@ -1,7 +1,7 @@
 ---
 title: Editor de reglas de formularios adaptables
 seo-title: Adaptive forms rule editor
-description: El editor de reglas de formularios adaptables permite agregar un comportamiento dinámico y generar una lógica compleja en los formularios sin necesidad de codificación ni secuencias de comandos.
+description: El editor de reglas de formularios adaptables permite agregar un comportamiento dinámico y generar una lógica compleja en los formularios sin codificación ni scripts.
 seo-description: Adaptive forms rule editor allows you to add dynamic behavior and build complex logic into forms without coding or scripting.
 uuid: c1b3d6e4-6f36-4352-ab57-9850d718e47c
 topic-tags: develop
@@ -13,7 +13,7 @@ exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 source-git-commit: 26403941129f3a80fdb3e9b964cb943a04b3bfa1
 workflow-type: tm+mt
 source-wordcount: '6888'
-ht-degree: 72%
+ht-degree: 99%
 
 ---
 
@@ -21,21 +21,21 @@ ht-degree: 72%
 
 ## Información general {#overview}
 
-La función de editor de reglas de Adobe Experience Manager Forms permite a los usuarios y desarrolladores de formularios de negocios escribir reglas sobre objetos de formulario adaptables. Estas reglas definen las acciones que se deben activar en los objetos del formulario en función de los ajustes preestablecidos, las entradas del usuario y las acciones del usuario en el formulario. Esto ayuda a optimizar aún más la experiencia de cumplimentación de formularios, lo que garantiza precisión y velocidad.
+La característica del editor de reglas en Adobe Experience Manager Forms permite a los usuarios y desarrolladores de formularios empresariales escribir reglas sobre los objetos del formulario adaptable. Estas reglas definen las acciones que se deben activar en los objetos del formulario en función de los ajustes preestablecidos, las entradas del usuario y las acciones del usuario en el formulario. Esto ayuda a optimizar aún más la experiencia de cumplimentación de formularios, lo que garantiza precisión y velocidad.
 
-El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada para escribir reglas. El editor de reglas ofrece un editor visual para todos los usuarios. Además, solo para los usuarios avanzados de formularios, el editor de reglas proporciona un editor de código para escribir reglas y secuencias de comandos. Algunas de las acciones clave que se pueden realizar en objetos de formulario adaptables mediante reglas son:
+El editor de reglas proporciona una interfaz de usuario intuitiva y simplificada para escribir reglas. El editor de reglas ofrece un editor visual para todos los usuarios. Además, solo para los usuarios avanzados de formularios, el editor de reglas proporciona un editor de código para escribir reglas y scripts. Algunas de las acciones clave que se pueden realizar en objetos de formulario adaptable mediante reglas son las siguientes:
 
 * Mostrar u ocultar un objeto
 * Habilitar o deshabilitar un objeto
 * Establecer un valor para un objeto
 * Validar el valor de un objeto
 * Ejecutar funciones para calcular el valor de un objeto
-* Invocar un servicio de modelo de datos de formulario y realizar una operación
+* Invocar un servicio del modelo de datos de formulario y realizar una operación
 * Establecer la propiedad de un objeto
 
-El editor de reglas reemplaza las funciones de secuencias de comandos de AEM 6.1 Forms y versiones anteriores. Sin embargo, las secuencias de comandos existentes se conservan en el nuevo editor de reglas. Para obtener más información sobre cómo trabajar con secuencias de comandos existentes en el editor de reglas, consulte [Impacto del editor de reglas en scripts existentes](#impact-of-rule-editor-on-existing-scripts).
+El editor de reglas reemplaza las funciones de los scripts de AEM 6.1 Forms y versiones anteriores. Sin embargo, los scripts existentes se conservan en el nuevo editor de reglas. Para obtener más información sobre cómo trabajar con scripts existentes en el editor de reglas, consulte [Impacto del editor de reglas en scripts existentes](#impact-of-rule-editor-on-existing-scripts).
 
-Los usuarios que se agregan al grupo de usuarios avanzados de formularios pueden crear nuevas secuencias de comandos y editar las existentes. Los usuarios del grupo de usuarios de formularios pueden utilizar las secuencias de comandos, pero no crearlas o editarlas.
+Los usuarios que se agregan al grupo de usuarios avanzados de formularios pueden crear scripts nuevos y editar los existentes. Los usuarios del grupo forms-users pueden utilizar los scripts, pero no crearlos o editarlos.
 
 ## Explicación de una regla {#understanding-a-rule}
 
@@ -51,7 +51,7 @@ En el editor de reglas, el tipo de regla **When** aplica la construcción de con
 
 **Acción-condición**. En esta construcción, una regla primero define una acción que activar seguida de condiciones para la evaluación. Otra variación de esta construcción es acción-condición-acción alternativa, que también define una acción alternativa que activar si la condición devuelve un valor False.
 
-Los tipos de reglas Show, Hide, Enable, Disable, Set Value Of y Validate del editor de reglas aplican la construcción de reglas acción-condición. De forma predeterminada, la acción alternativa para Mostrar es Ocultar y Activar es Desactivar y viceversa. No se puede cambiar la acción alternativa predeterminada.
+Los tipos de reglas Show, Hide, Enable, Disable, Set Value Of y Validate del editor de reglas aplican la construcción de reglas acción-condición. De forma predeterminada, la acción alternativa para Mostrar es Ocultar y para Habilitar es Deshabilitar y viceversa. No se puede cambiar la acción alternativa predeterminada.
 
 >[!NOTE]
 >
@@ -67,14 +67,14 @@ Aunque puede lograr la mayoría de los casos de uso utilizando cualquier constru
 
    Por lo tanto, si está escribiendo una regla en el campo B (el objeto sobre el que se evalúa una condición), utilice la construcción condición-acción o el tipo de regla When. Del mismo modo, utilice la construcción acción-condición o el tipo de regla Show o Hide en el campo A.
 
-* A veces, es necesario realizar varias acciones en función de una condición. En estos casos, se recomienda utilizar la construcción condición-acción. En esta construcción, puede evaluar una condición una vez y especificar varias instrucciones de acción.
+* A veces, debe realizar varias acciones en función de una condición. En estos casos, se recomienda utilizar la construcción condición-acción. En esta construcción, puede evaluar una condición una vez y especificar varias instrucciones de acción.
 
    Por ejemplo, para ocultar los campos B, C y D en función de la condición que comprueba el valor que un usuario especifica en el campo A, escriba una regla con la estructura condición-acción o el tipo de regla When en el campo A y especifique acciones para controlar la visibilidad de los campos B, C y D. De lo contrario, necesitará tres reglas independientes en los campos B, C y D, donde cada regla comprueba la condición y muestra u oculta el campo respectivo. En este ejemplo, es más eficaz escribir el tipo de regla When en un objeto, en lugar de Show o Hide en tres objetos.
 
 * Para activar una acción basada en varias condiciones, se recomienda utilizar la construcción acción-condición. Por ejemplo, para mostrar y ocultar el campo A mediante la evaluación de condiciones en los campos B, C y D, utilice los tipos de reglas Show o Hide en el campo A.
 * Utilice la construcción condición-acción o acción-condición si la regla contiene una acción para una condición.
 * Si una regla comprueba la existencia de una condición y realiza una acción inmediatamente al proporcionar un valor en un campo o al salir de un campo, se recomienda escribir una regla con la construcción condición-acción o el tipo de regla When en el campo en el que se evalúa la condición.
-* La condición de la regla When se evalúa cuando un usuario cambia el valor del objeto en el que se aplica dicha regla. Sin embargo, si desea que la acción se déclencheur cuando el valor cambie en el servidor, como en el caso de rellenar previamente el valor, se recomienda escribir una regla When que déclencheur la acción cuando el campo se inicialice.
+* La condición de la regla When se evalúa cuando un usuario cambia el valor del objeto en el que se aplica dicha regla. Pero si desea que la acción se active cuando el valor cambia en el servidor, como para rellenar previamente el valor, se recomienda escribir una regla When que active la acción cuando el campo se inicialice.
 * Al escribir reglas para objetos de menús desplegables, botones de opción o casillas de verificación, las opciones o los valores de estos objetos de formulario en el mismo se rellenan previamente en el editor de reglas.
 
 ## Tipos de operadores y eventos disponibles en el editor de reglas {#available-operator-types-and-events-in-rule-editor}
@@ -96,7 +96,7 @@ El editor de reglas proporciona los siguientes operadores lógicos y eventos med
 
 El editor de reglas proporciona un conjunto de tipos de reglas predefinidas que puede utilizar para escribir reglas. Veamos en detalle cada tipo de regla. Para obtener más información sobre cómo escribir reglas en el editor de reglas, consulte [Escribir reglas](#write-rules).
 
-### Cuando   {#whenruletype}
+### Cuando  {#whenruletype}
 
 El tipo de regla **When** sigue a la construcción de regla **condición-acción-acción alternativa** o, a veces, solo a la construcción **condición-acción**. En este tipo de regla, primero debe especificar una condición para la evaluación seguida de una acción que se activará si se cumple la condición (`True`). Al usar el tipo de regla When, puede usar varios operadores AND y OR para crear [expresiones anidadas](#nestedexpressions).
 
@@ -134,29 +134,29 @@ Al escribir una regla When, puede activar la acción Clear Value Of. La acción 
 
 **Disable**. Deshabilita el objeto especificado.
 
-**Invoke service**. Invoca un servicio configurado en un modelo de datos de formulario. Al elegir la operación Invoke Service, aparece un campo. Al pulsar el campo , se muestran todos los servicios configurados en todos los modelos de datos de formulario de la instancia de AEM. Al elegir un servicio del modelo de datos de formulario, aparecen campos adicionales en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado. Consulte regla de ejemplo para invocar servicios del modelo de datos de formulario.
+**Invoke service**. Invoca un servicio configurado en un modelo de datos de formulario. Al elegir la operación Invoke Service, aparece un campo. Al pulsar el campo, se muestran todos los servicios configurados en todos los modelos de datos de formulario de la instancia de AEM. Al elegir un servicio del modelo de datos de formulario, aparecen campos adicionales en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado. Consulte la regla de ejemplo para invocar los servicios del modelo de datos de formulario.
 
-Además del servicio del modelo de datos de formulario, puede especificar una URL WSDL directa para invocar un servicio web. Sin embargo, un servicio del modelo de datos de formulario tiene muchas ventajas y el método recomendado para invocar un servicio.
-
-Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
-
-**Set value of**. Calcula y establece el valor del objeto especificado. Puede establecer el valor del objeto en una cadena, el valor de otro objeto, el valor calculado mediante expresión o función matemática, el valor de una propiedad de un objeto o el valor de salida de un servicio configurado del modelo de datos de formulario. Al elegir la opción de servicio web, se muestran todos los servicios configurados en todos los modelos de datos de formulario de la instancia de AEM. Al elegir un servicio del modelo de datos de formulario, aparecen campos adicionales en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado.
+Además del servicio de modelo de datos de formulario, puede especificar una URL de WSDL directa para invocar un servicio web. Pero un servicio del modelo de datos de formulario tiene muchas ventajas y es el método recomendado para invocar un servicio.
 
 Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
 
-El tipo de regla **Set Property** permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición.
+**Establecer valor de** Calcula y establece el valor del objeto especificado. Puede establecer el valor del objeto en una cadena, el valor de otro objeto, el valor calculado mediante expresión o función matemática, el valor de una propiedad de un objeto o el valor de salida de un servicio configurado del modelo de datos de formulario. Al elegir la opción de servicio web, se muestran todos los servicios configurados en todos los modelos de datos de formulario de la instancia de AEM. Al elegir un servicio del modelo de datos de formulario, aparecen campos adicionales en los que se pueden asignar objetos de formulario con parámetros de entrada y salida para el servicio especificado.
+
+Para obtener más información sobre la configuración de servicios en el modelo de datos de formulario, consulte [Integración de datos de AEM Forms](/help/forms/using/data-integration.md).
+
+El tipo de regla **Establecer propiedad** permite establecer el valor de una propiedad del objeto especificado en función de una acción de condición.
 
 Permite definir reglas para agregar casillas de verificación de forma dinámica al formulario adaptable. Puede utilizar una función personalizada, un objeto de formulario o una propiedad de objeto para definir una regla.
 
 ![Set Property](assets/set_property_rule_new.png)
 
-Para definir una regla basada en una función personalizada, seleccione **Salida de función** en la lista desplegable y arrastre y suelte una función personalizada desde la pestaña **Funciones**. Si se cumple la acción de condición, el número de casillas de verificación definidas en la función personalizada se agrega al formulario adaptable.
+Para definir una regla basada en una función personalizada, seleccione **Salida de función** en la lista desplegable y arrastre y suelte una función personalizada desde la pestaña **Funciones**. Si se cumple la acción de la condición, el número de casillas de verificación definidas en la función personalizada se agregará al formulario adaptable.
 
-Para definir una regla basada en un objeto de formulario, seleccione **Objeto de formulario** en la lista desplegable y arrastre y suelte un objeto de formulario desde la pestaña **Objetos de formulario**. Si se cumple la acción de condición, el número de casillas de verificación definidas en el objeto de formulario se agrega al formulario adaptable.
+Para definir una regla basada en un objeto de formulario, seleccione **Objeto de formulario** en la lista desplegable y arrastre y suelte un objeto de formulario desde la pestaña **Objetos de formulario**. Si se cumple la acción de la condición, el número de casillas de verificación definidas en el objeto de formulario se agregará al formulario adaptable.
 
-La regla Definir propiedad basada en una propiedad de objeto permite agregar el número de casillas de verificación en un formulario adaptable basado en otra propiedad de objeto incluida en el formulario adaptable.
+La regla Establecer propiedad basada en una propiedad de objeto permite agregar el número de casillas de verificación en un formulario adaptable basándose en otra propiedad de objeto incluida en el formulario adaptable.
 
-En la siguiente ilustración se muestra un ejemplo de cómo agregar casillas de verificación de forma dinámica en función del número de listas desplegables del formulario adaptable:
+En la siguiente figura se muestra un ejemplo de cómo agregar casillas de verificación de forma dinámica en función del número de listas desplegables del formulario adaptable:
 
 ![Object Property](assets/object_property_set_property_new.png)
 
@@ -176,13 +176,13 @@ En la siguiente ilustración se muestra un ejemplo de cómo agregar casillas de 
 
 **Remove Instance**. Quita una instancia del panel repetible o fila de tabla especificados.
 
-**Vaya a** Navega a otras comunicaciones interactivas, formularios adaptables, otros recursos como imágenes o fragmentos de documento, o a una URL externa. Para obtener más información, consulte [Botón Añadir a la comunicación interactiva](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**Navegar hasta** navega a otros formularios adaptables, otros recursos, como imágenes o fragmentos de documento, o una URL externa. Para obtener más información, consulte [Botón Agregar a la comunicación interactiva](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
 
-### Set Value Of {#set-value-of}
+### Establecer valor de {#set-value-of}
 
-El tipo de regla **[!UICONTROL Set Value Of]** le permite definir el valor de un objeto de formulario en función de si la condición especificada se cumple o no. El valor puede establecerse en un valor de otro objeto, una cadena literal, un valor derivado de una expresión matemática o una función, un valor de una propiedad de otro objeto o el resultado de un servicio del modelo de datos de formulario. Del mismo modo, se puede comprobar la existencia de una condición en un componente, una cadena, una propiedad o valores derivados de una función o expresión matemática.
+El tipo de regla **[!UICONTROL Establecer valor de]** le permite definir el valor de un objeto de formulario en función de si la condición especificada se cumple o no. El valor puede establecerse en un valor de otro objeto, una cadena literal, un valor derivado de una expresión matemática o una función, un valor de una propiedad de otro objeto o el resultado de un servicio de modelo de datos de formulario. Del mismo modo, se puede comprobar la existencia de una condición en un componente, una cadena, una propiedad o valores derivados de una función o expresión matemática.
 
-Tenga en cuenta que el tipo Definir valor de regla no está disponible para todos los objetos de formulario, como paneles y botones de la barra de herramientas. Una regla de valor definido estándar tiene la siguiente estructura:
+Nota: El tipo de regla Establecer valor de no está disponible para todos los objetos de formulario, como paneles y botones de la barra de herramientas. Una regla de valor definido estándar tiene la siguiente estructura:
 
 
 
@@ -200,15 +200,15 @@ When (opcional):
 
 
 
-El ejemplo siguiente toma el valor en `dependentid` como entrada y establece el valor de la variable `Relation` al resultado del `Relation` del `getDependent` servicio del modelo de datos de formulario.
+El siguiente ejemplo toma el valor del campo `dependentid` como entrada y establece el valor del campo `Relation` como salida del argumento `Relation` del servicio `getDependent` del modelo de datos de formulario.
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
-Ejemplo de regla Set Value utilizando el servicio del modelo de datos de formulario
+Ejemplo de la regla Establecer valor mediante un servicio del modelo de datos de formulario
 
 >[!NOTE]
 >
->Además, se puede utilizar Definir valor de regla para rellenar todos los valores de un componente de lista desplegable desde la salida de un servicio de modelo de datos de formulario o un servicio Web. No obstante, asegúrese de que el argumento de salida que elija sea de un tipo de matriz. Todos los valores devueltos en una matriz estarán disponibles en la lista desplegable especificada.
+>Además, puede utilizar la regla Establecer valor de para rellenar todos los valores de un componente de lista desplegable desde la salida de un servicio de modelo de datos de formulario o un servicio web. No obstante, asegúrese de que el argumento de salida que elija sea de un tipo de matriz. Todos los valores devueltos en una matriz estarán disponibles en la lista desplegable especificada.
 
 ### Show {#show}
 
@@ -306,11 +306,11 @@ Una regla Validate típica se estructura de la siguiente manera:
 
 ![script-validation](assets/script-validation.png)
 
-### Set Options Of {#setoptionsof}
+### Establecer opciones de {#setoptionsof}
 
-La variable **Definir opciones de** tipo de regla permite definir reglas para agregar casillas de verificación de forma dinámica al formulario adaptable. Puede utilizar un modelo de datos de formulario o una función personalizada para definir la regla.
+El tipo de regla **Establecer opciones de** permite definir reglas para agregar casillas de verificación de forma dinámica al formulario adaptable. Puede utilizar un modelo de datos de formulario o una función personalizada para definir la regla.
 
-Para definir una regla basada en una función personalizada, seleccione **Salida de función** en la lista desplegable y arrastre y suelte una función personalizada desde la pestaña **Funciones**. El número de casillas de verificación definidas en la función personalizada se agrega al formulario adaptable.
+Para definir una regla basada en una función personalizada, seleccione **Salida de función** en la lista desplegable y arrastre y suelte una función personalizada desde la pestaña **Funciones**. El número de casillas de verificación definidas en la función personalizada se agregará al formulario adaptable.
 
 ![Funciones personalizadas](assets/custom_functions_set_options_new.png)
 
@@ -329,7 +329,7 @@ Para definir una regla basada en un modelo de datos de formulario:
 
 El editor de reglas proporciona una interfaz de usuario completa pero sencilla para escribir y administrar reglas. Puede iniciar la interfaz de usuario del editor de reglas desde un formulario adaptable en modo de creación.
 
-Para iniciar la interfaz de usuario del editor de reglas:
+Para iniciar la interfaz de usuario del editor de reglas, haga lo siguiente:
 
 1. Abra un formulario adaptable en modo de creación.
 1. Pulse el objeto de formulario para el que desea escribir una regla y, en la barra de herramientas de componentes, pulse ![edit-rules](assets/edit-rules.png). Aparecerá la interfaz de usuario del editor de reglas.
@@ -346,15 +346,15 @@ Veamos en detalle cada componente de la interfaz de usuario del editor de reglas
 
 ### A. Visualización de la regla de componente {#a-component-rule-display}
 
-Muestra el título del objeto de formulario adaptable a través del cual se ha iniciado el editor de reglas y el tipo de regla seleccionado actualmente. En el ejemplo anterior, el editor de reglas se inicia desde un objeto de formulario adaptable llamado Salario y el tipo de regla seleccionado es Cuando.
+Muestra el título del objeto del formulario adaptable a través del cual se ha iniciado el editor de reglas y el tipo de regla seleccionado actualmente. En el ejemplo anterior, el editor de reglas se inicia desde un objeto de formulario adaptable llamado Salary y el tipo de regla seleccionado es When.
 
 ### B. Desde objetos y funciones {#b-form-objects-and-functions-br}
 
 El panel de la izquierda de la interfaz de usuario del editor de reglas incluye dos pestañas: **[!UICONTROL Objetos de formulario]** y **[!UICONTROL Funciones]**.
 
-La ficha Objetos de formulario muestra una vista jerárquica de todos los objetos contenidos en el formulario adaptable. Muestra el título y el tipo de los objetos. Al escribir una regla, puede arrastrar y soltar objetos de formulario en el editor de reglas. Al crear o editar una regla cuando arrastra y suelta un objeto o función en un marcador de posición, el marcador de posición toma automáticamente el tipo de valor apropiado.
+La pestaña Objetos de formulario muestra una vista jerárquica de todos los objetos contenidos en el formulario adaptable. Muestra el título y el tipo de los objetos. Al escribir una regla, puede arrastrar y soltar objetos de formulario en el editor de reglas. Al crear o editar una regla cuando arrastra y suelta un objeto o función en un marcador de posición, el marcador de posición toma automáticamente el tipo de valor apropiado.
 
-Los objetos de formulario que tienen una o más reglas válidas aplicadas se marcan con un punto verde. Si alguna de las reglas aplicadas a un objeto de formulario no es válida, el objeto de formulario se marca con un punto amarillo.
+Los objetos de formulario que tienen una o más reglas válidas aplicadas se marcan con un punto verde. Si alguna de las reglas aplicadas a un objeto de formulario no es válida, este se marcará con un punto amarillo.
 
 La pestaña Funciones incluye un conjunto de funciones integradas, como Sum Of (suma de), Min Of (mín. de), Max Of (máx. de), Average Of (promedio de), Number Of (número de) y Validate Form (validar formulario). Puede utilizar estas funciones para calcular valores en paneles repetibles y filas de tabla y utilizarlos en instrucciones de acción y condición al escribir reglas. Sin embargo, también puede crear [funciones personalizadas](#custom-functions).
 
@@ -376,15 +376,15 @@ El editor de reglas visual es el área del modo de editor visual de la interfaz 
 
 Para obtener más información sobre el uso del editor de reglas visuales, consulte [Escribir reglas](#write-rules).
 
-### E. Conmutador de editores de código visual {#e-visual-code-editors-switcher}
+### E. Interruptor de editores de código visual {#e-visual-code-editors-switcher}
 
-Los usuarios del grupo de usuarios avanzados de formularios pueden acceder al editor de código. Para otros usuarios, el editor de código no está disponible. Si tiene los derechos, puede cambiar del modo de editor visual al modo de editor de código del editor de reglas y viceversa, utilizando el conmutador situado justo encima del editor de reglas. Cuando se inicia el editor de reglas por primera vez, se abre en el modo de editor visual. Puede escribir reglas en el modo de editor visual o cambiar al modo de editor de código para escribir una secuencia de comandos de regla. Sin embargo, tenga en cuenta que si modifica una regla o escribe una regla en el editor de código, no puede volver al editor visual para esa regla a menos que borre el editor de código.
+Los usuarios del grupo forms-power-users pueden acceder al editor de código. Para otros usuarios, el editor de código no está disponible. Si tiene los derechos, puede cambiar del modo de editor visual al modo de editor de código del editor de reglas y viceversa, mediante el interruptor situado justo encima del editor de reglas. Cuando se inicia el editor de reglas por primera vez, se abrirá en el modo de editor visual. Puede escribir reglas en el modo de editor visual o cambiar al modo de editor de código para escribir un script de regla. Sin embargo, si escribe o modifica una regla en el editor de código, no puede cambiar al editor visual para esa regla a menos que borre el editor de código.
 
-AEM Forms rastrea el modo de editor de reglas que utilizó por última vez para escribir una regla. Cuando inicie el editor de reglas la próxima vez, se abrirá en ese modo. Sin embargo, también puede configurar un modo predeterminado para abrir el editor de reglas en el modo especificado. Para ello:
+AEM Forms rastrea el modo de editor de reglas que utilizó por última vez para escribir una regla. Cuando inicie el editor de reglas la próxima vez, se abrirá en ese modo. Pero también puede configurar un modo predeterminado para abrir el editor de reglas en el modo especificado. Para ello:
 
-1. Vaya a AEM consola web en `https://[host]:[port]/system/console/configMgr`.
+1. Vaya a la consola web de AEM en `https://[host]:[port]/system/console/configMgr`.
 1. Haga clic para editar **[!UICONTROL Configuración del canal web de comunicaciones interactivas y formularios adaptables]**.
-1. elija **[!UICONTROL Editor visual]** o **[!UICONTROL Editor de código]** de la variable **[!UICONTROL Modo predeterminado del editor de reglas]** lista desplegable
+1. Elija **[!UICONTROL Editor visual]** o **[!UICONTROL Editor de código]** de la lista desplegable **[!UICONTROL Modo predeterminado del editor de reglas]**
 
 1. Haga clic en **[!UICONTROL Guardar]**.
 
@@ -396,7 +396,7 @@ El botón **[!UICONTROL Cancelar]** descarta los cambios realizados en una regla
 
 ## Escribir reglas {#write-rules}
 
-Puede escribir reglas utilizando el editor visual de reglas o el editor de código. Cuando se inicia el editor de reglas por primera vez, se abre en el modo de editor visual. Puede cambiar al modo de editor de código y escribir reglas. Sin embargo, tenga en cuenta que si escribe o modifica una regla en el editor de código, no puede cambiar al editor visual para esa regla a menos que borre el editor de código. Cuando inicie el editor de reglas la próxima vez, se abrirá en el modo que utilizó por última vez para crear reglas.
+Puede escribir reglas mediante el editor visual de reglas o el editor de código. Cuando se inicia el editor de reglas por primera vez, se abre en el modo de editor visual. Puede cambiar al modo de editor de código y escribir reglas. Pero si escribe o modifica una regla en el editor de código, no puede cambiar al editor visual para esa regla a menos que borre el editor de código. Cuando inicie el editor de reglas la próxima vez, se abrirá en el modo que utilizó por última vez para crear reglas.
 
 Veamos primero cómo escribir reglas utilizando el editor visual.
 
@@ -423,7 +423,7 @@ Siga estos pasos para escribir reglas:
 
    Aunque no puede cambiar ni modificar el objeto seleccionado, puede utilizar la lista desplegable de reglas, como se muestra a continuación, para seleccionar otro tipo de regla. Si desea crear una regla en otro objeto, pulse Cancelar para salir del editor de reglas y volver a iniciarla desde el objeto de formulario deseado.
 
-1. Pulse el menú desplegable **[!UICONTROL Seleccionar estado]** y haga clic en **[!UICONTROL is equal to]**. Aparece el campo **[!UICONTROL Escribir una cadena]**.
+1. Pulse el menú desplegable **[!UICONTROL Seleccionar estado]** y haga clic en **[!UICONTROL es igual a]**. Aparece el campo **[!UICONTROL Escribir una cadena]**.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
@@ -461,7 +461,7 @@ Siga estos pasos para escribir reglas:
 
    ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9.png)
 
-1. A continuación, escriba una regla para calcular el importe de idoneidad para el préstamo, que es el 50 % del salario total, y muéstrela en el campo Loan Eligibility. Para conseguirlo, cree **Definir valor de** reglas sobre el campo Elegibilidad de préstamos .
+1. A continuación, escriba una regla para calcular el importe de idoneidad para el préstamo, que es el 50 % del salario total, y muéstrela en el campo Loan Eligibility. Para lograr este resultado, cree reglas **Establecer valor de** sobre el campo Loan Eligibility.
 
    En el modo de creación, pulse el campo **[!UICONTROL Loan Eligibility]** y haga clic en ![edit-rules](assets/edit-rules.png). A continuación, pulse **[!UICONTROL Crear]** para iniciar el editor de reglas.
 
@@ -505,7 +505,7 @@ Siga estos pasos para escribir reglas:
 
    * Seleccione o arrastre y suelte desde la pestaña Objetos de formulario el campo **Marital Status** en el primer campo **Colocar objeto o seleccionar aquí**.
 
-   * Select i **s igual a** de la variable **Seleccionar operador** campo .
+   * Seleccione **es igual a** en el campo **Seleccionar operador**.
 
    * Seleccione Cadena en el otro campo **Colocar objeto o seleccionar aquí** y especifique **Married** en el campo **Escribir una cadena**.
 
@@ -525,19 +525,19 @@ Siga estos pasos para escribir reglas:
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18.png)
 
-### Uso del editor de código {#using-code-editor}
+### Usar el editor de código {#using-code-editor}
 
-Los usuarios que se agregan al grupo de usuarios con capacidad para formularios pueden utilizar el editor de código. El editor de reglas genera automáticamente el código JavaScript para cualquier regla que cree con el editor visual. Puede cambiar del editor visual al editor de código para ver el código generado. Sin embargo, si modifica el código de regla en el editor de código, no puede volver al editor visual. Si prefiere escribir reglas en el editor de código en lugar de en el editor visual, puede escribir reglas de nuevo en el editor de código. El conmutador de editores de código visual le ayuda a cambiar entre los dos modos.
+Los usuarios que se agregan al grupo de usuarios con capacidad para formularios pueden utilizar el editor de código. El editor de reglas genera automáticamente el código JavaScript para cualquier regla que cree con el editor visual. Puede cambiar del editor visual al editor de código para ver el código generado. Pero si modifica el código de regla en el editor de código, no podrá volver al editor visual. Si prefiere escribir reglas en el editor de código en lugar de en el editor visual, puede escribir reglas de nuevo en el editor de código. El interruptor de editores de código visual le ayudará a cambiar entre ambos modos.
 
-El editor de código JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones de JavaScript válidas y utilizan API de modelos de secuencias de comandos de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener la lista completa de clases, eventos, objetos y API públicas de formularios adaptables, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/es/experience-manager/6-5/forms/javascript-api/index.html).
+El editor de código JavaScript es el lenguaje de expresión de los formularios adaptables. Todas las expresiones son expresiones JavaScript válidas y utilizan API de modelos de scripts de formularios adaptables. Estas expresiones devuelven valores de ciertos tipos. Para obtener la lista completa de clases, eventos, objetos y API públicas de los formularios adaptables, consulte [Referencia de la API de la biblioteca JavaScript para formularios adaptables](https://helpx.adobe.com/es/experience-manager/6-5/forms/javascript-api/index.html).
 
-Para obtener más información sobre las directrices para escribir reglas en el editor de código, consulte [Expresiones de formulario adaptables](/help/forms/using/adaptive-form-expressions.md).
+Para obtener más información sobre las directrices para escribir reglas en el editor de código, consulte [Expresiones de formularios adaptables](/help/forms/using/adaptive-form-expressions.md).
 
-Mientras escribe código JavaScript en el editor de reglas, las siguientes indicaciones visuales le ayudan con la estructura y la sintaxis:
+Mientras escribe código JavaScript en el editor de reglas, las siguientes indicaciones visuales le ayudarán con la estructura y la sintaxis:
 
 * Elementos destacados de sintaxis
 * Sangría automática
-* Sugerencias y sugerencias para objetos de formulario, funciones y sus propiedades
+* Sugerencias para objetos de formulario, funciones y sus propiedades
 * Finalización automática de nombres de componentes de formulario y funciones comunes de JavaScript
 
 ![javascriptruleeditor](assets/javascriptruleeditor.png)
@@ -585,7 +585,7 @@ Muestra los parámetros utilizados por la función. Una función puede tener var
 
    El ámbito se utiliza para los campos de referencia de un formulario adaptable. Cuando un formulario utiliza la carga diferida, puede utilizar `scope` para acceder a sus campos. Puede acceder a los campos cuando se cargan o si están marcados como globales.
 
-   Todos los demás tipos de parámetros se categorizan bajo uno de los anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+   Todos los demás tipos de parámetro se clasifican en una de las categorías anteriores. Ninguno no es compatible. Asegúrese de seleccionar uno de los tipos anteriores. Los tipos no distinguen entre mayúsculas y minúsculas. No se permiten espacios en el parámetro `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
 * Sintaxis
 **de tipo de valor devuelto**: 
@@ -633,14 +633,14 @@ Por ejemplo, desea agregar una función personalizada que calcule el área de un
 
 Realice los siguientes pasos para crear una biblioteca de cliente y agregarla en el repositorio CRX.
 
-1. Cree una biblioteca de cliente. Para obtener más información, consulte [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md).
+1. Crear una biblioteca de cliente. Para obtener más información, consulte [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md).
 1. En CRXDE, agregue una propiedad `categories`con valor de tipo de cadena como `customfunction` a la carpeta `clientlib`.
 
    >[!NOTE]
    >
-   >`customfunction`es una categoría de ejemplo. Puede elegir cualquier nombre para la categoría que cree en la carpeta `clientlib`.
+   >`customfunction` es una categoría de ejemplo. Puede elegir cualquier nombre para la categoría que cree en la carpeta `clientlib`.
 
-Después de agregar la biblioteca de cliente en el repositorio CRX, utilícela en su formulario adaptable. Permite utilizar la función personalizada como regla en el formulario. Realice los siguientes pasos para agregar la biblioteca de cliente en el formulario adaptable.
+Después de agregar la biblioteca de cliente en el repositorio CRX, utilícela en el formulario adaptable. Permite utilizar la función personalizada como regla en el formulario. Realice los siguientes pasos para agregar la biblioteca de cliente en el formulario adaptable.
 
 1. Abra el formulario en modo de edición. 
 Para abrir un formulario en modo de edición, seleccione un formulario y pulse **Abrir**.
@@ -651,7 +651,7 @@ Para abrir un formulario en modo de edición, seleccione un formulario y pulse *
 
 1. Seleccione el cuadro numérico de entrada y pulse ![edit-rules](assets/edit-rules.png) para abrir el editor de reglas.
 1. Pulse **Crear regla**. Con las opciones que se muestran a continuación, cree una regla para guardar el valor al cuadrado de la entrada en el campo Salida del formulario.
-   [ ![Uso de funciones personalizadas para crear una regla](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Toque **Listo**. Se agrega la función personalizada.
+   [ ![Usar funciones personalizadas para crear una regla](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Pulsar **Listo**. Se agrega la función personalizada.
 
 #### Tipos admitidos para la declaración de funciones {#function-declaration-supported-types}
 
@@ -714,7 +714,7 @@ var c = {
 
 >[!NOTE]
 >
->Asegúrese de utilizar `jsdoc` para cada función personalizada. Aunque `jsdoc`se recomienda comentar, incluya uno vacío `jsdoc`para marcar la función como función personalizada. Permite la gestión predeterminada de la función personalizada.
+>Asegúrese de utilizar `jsdoc` para cada función personalizada. Aunque `jsdoc` se recomienda comentar, incluya uno vacío `jsdoc` para marcar la función como función personalizada. Permite la gestión predeterminada de la función personalizada.
 
 ## Administrar reglas {#manage-rules}
 
@@ -726,14 +726,14 @@ Puede realizar las siguientes acciones en reglas:
 
 * **Ampliar/contraer**: la columna Contenido de la lista de reglas muestra el contenido de las reglas. Si todo el contenido de la regla no está visible en la vista predeterminada, pulse ![expand-rule-content](assets/expand-rule-content.png) para ampliarla.
 
-* **Reordenar**: cualquier regla nueva que cree se apilará en la parte inferior de la lista de reglas. Las reglas se ejecutan de arriba a abajo. La regla de la parte superior se ejecuta primero, seguida de otras reglas del mismo tipo. Por ejemplo, si tiene las reglas When, Show, Enable y When en las posiciones primera, segunda, tercera y cuarta desde la parte superior, respectivamente, la regla When en la parte superior se ejecuta primero, seguida de la regla When en la cuarta posición. A continuación, se ejecutarán las reglas Mostrar y Activar .
+* **Reordenar**: cualquier regla nueva que cree se apilará en la parte inferior de la lista de reglas. Las reglas se ejecutan de arriba a abajo. La regla de la parte superior se ejecuta primero, seguida de otras reglas del mismo tipo. Por ejemplo, si tiene las reglas When, Show, Enable y When en las posiciones primera, segunda, tercera y cuarta desde la parte superior, respectivamente, la regla When en la parte superior se ejecuta primero, seguida de la regla When en la cuarta posición. A continuación, se ejecutan las reglas Mostrar y Habilitar.
 Puede cambiar el orden de una regla al pulsar ![sort-rules](assets/sort-rules.png) o arrástrela hasta el orden deseado en la lista.
 
-* **Editar**: para editar una regla, active la casilla de verificación situada junto al título de la misma. Aparecerán opciones adicionales para editar y eliminar la regla. Toque **Editar** para abrir la regla seleccionada en el editor de reglas en modo visual o editor de código, según el modo utilizado para crear la regla.
+* **Editar**: para editar una regla, active la casilla de verificación situada junto al título de la misma. Aparecerán las opciones para editar y eliminar la regla. Pulse **Editar** para abrir la regla seleccionada en el editor de reglas en modo visual o editor de código, según el modo utilizado para crearla.
 
 * **Eliminar**: para eliminar una regla, selecciónela y pulse **Eliminar**.
 
-* **Habilitar/Deshabilitar**: Es posible que tenga que suspender temporalmente el uso de una regla. Puede seleccionar una o varias reglas y pulsar Deshabilitar en la barra de herramientas Acciones para desactivarlas. Si una regla está deshabilitada, no se ejecuta en tiempo de ejecución. Para habilitar una regla que esté deshabilitada, puede seleccionarla y pulsar Habilitar en la barra de herramientas de acciones. La columna de estado de la regla muestra si la regla está habilitada o deshabilitada.
+* **Habilitar/Deshabilitar**: es posible que tenga que suspender temporalmente el uso de una regla. Puede seleccionar una o varias reglas y pulsar Deshabilitar en la barra de herramientas Acciones para deshabilitarlas. Si una regla está deshabilitada, no se ejecuta en tiempo de ejecución. Para habilitar una regla que esté deshabilitada, puede seleccionarla y pulsar Habilitar en la barra de herramientas de acciones. La columna de estado de la regla muestra si la regla está habilitada o deshabilitada.
 
 ![disablerule](assets/disablerule.png)
 
@@ -749,7 +749,7 @@ Para copiar y pegar reglas, haga lo siguiente:
 
    Para obtener información sobre la administración de reglas existentes, consulte [Administrar reglas](#manage-rules).
 
-1. Seleccione la casilla de verificación situada junto al título de la regla. Aparecen opciones adicionales para administrar la regla. Pulse **Copiar**.
+1. Seleccione la casilla de verificación situada junto al título de la regla. Aparecerán opciones adicionales para administrar la regla. Pulse **Copiar**.
 
    ![copyrule2](assets/copyrule2.png)
 
@@ -767,11 +767,11 @@ El editor de reglas permite utilizar varios operadores AND y OR para crear regla
 
 A continuación verá un ejemplo de una regla anidada que muestra un mensaje al usuario sobre la elegibilidad para la custodia de un niño cuando se cumplen las condiciones requeridas.
 
-![expresión de complejos](assets/complexexpression.png)
+![complexexpression](assets/complexexpression.png)
 
 También puede arrastrar y soltar condiciones dentro de una regla para editarla. Pulse y pase el ratón por encima del identificador ( ![controlador](assets/handle.png)) antes de una condición. Una vez que el puntero se convierta en el símbolo de mano como se muestra a continuación, arrastre y suelte la condición en cualquier lugar dentro de la regla. La estructura de la regla cambia.
 
-![arrastrar y soltar](assets/drag-and-drop.png)
+![drag-and-drop](assets/drag-and-drop.png)
 
 ## Condiciones de expresión de fecha {#dateexpression}
 
@@ -779,7 +779,7 @@ El editor de reglas permite usar comparaciones de fechas para crear condiciones.
 
 A continuación verá una condición de ejemplo que muestra un objeto de texto estático si la hipoteca de la casa ya está cogida, lo que el usuario indica rellenando el campo de la fecha.
 
-Cuando la fecha de hipoteca de la propiedad tal como la ha rellenado el usuario es anterior, el formulario adaptable muestra una nota sobre el cálculo de ingresos. La siguiente regla compara la fecha rellenada por el usuario con la fecha actual y si la fecha rellenada por el usuario es anterior a la fecha actual, el formulario muestra el mensaje de texto, denominada Income (ingresos).
+Cuando la fecha de la hipoteca de la propiedad tal como la ha rellenado el usuario es anterior, el formulario adaptable muestra una nota sobre el cálculo de ingresos. La siguiente regla compara la fecha rellenada por el usuario con la fecha actual y si la fecha rellenada por el usuario es anterior a la fecha actual, el formulario muestra el mensaje de texto, denominada Income (ingresos).
 
 ![dateexpressioncondition](assets/dateexpressioncondition.png)
 
@@ -791,31 +791,31 @@ Cuando la fecha de rellenado es anterior a la fecha actual, el formulario muestr
 
 El editor de reglas permite crear condiciones que comparen dos números.
 
-A continuación se muestra un ejemplo de condición que muestra un objeto de texto estático si el número de meses que un solicitante permanece en su dirección actual es menor de 36.
+A continuación verá una condición de ejemplo que muestra un objeto de texto estático si el número de meses que un solicitante permanece en la dirección actual es inferior a 36.
 
-![number ercomparisoncondition](assets/numbercomparisoncondition.png)
+![numbercomparisoncondition](assets/numbercomparisoncondition.png)
 
-Cuando el usuario indica que ha estado viviendo en su dirección residencial actual durante menos de 36 meses, el formulario muestra una notificación de que se puede solicitar una prueba de residencia adicional.
+Cuando el usuario indica que lleva menos de 36 meses en su domicilio actual, el formulario muestra una notificación de que puede solicitarse una prueba de residencia adicional.
 
-![additional-proofrequested](assets/additionalproofrequested.png)
+![additionalproofrequested](assets/additionalproofrequested.png)
 
 ## Impacto del editor de reglas en scripts existentes {#impact-of-rule-editor-on-existing-scripts}
 
-En las versiones de AEM Forms anteriores a AEM 6.1 Forms feature pack 1, los autores y desarrolladores de formularios solían escribir expresiones en la pestaña Scripts del cuadro de diálogo Editar componente para añadir el comportamiento dinámico a los formularios adaptables. La pestaña Scripts ahora se reemplaza con el editor de reglas.
+En las versiones de AEM Forms anteriores a AEM 6.1 Forms feature pack 1, los autores y desarrolladores de formularios solían escribir expresiones en la pestaña Scripts del cuadro de diálogo Editar componente para agregar el comportamiento dinámico a los formularios adaptables. La pestaña Scripts ahora se reemplaza con el editor de reglas.
 
-Cualquier secuencia de comandos o expresión que deba haber escrito en la ficha Scripts está disponible en el editor de reglas. Aunque no se pueden ver ni editar en el editor visual, si forma parte del grupo de usuarios avanzados de formularios, puede editar secuencias de comandos en el editor de código.
+Cualquier script o expresión que deba haber escrito en la pestaña Scripts estará disponible en el editor de reglas. Aunque no se pueden ver ni editar en el editor visual, si forma parte del grupo de usuarios avanzados de formularios, puede editar scripts en el editor de código.
 
 ## Reglas de ejemplo {#example}
 
-### Invocar el servicio del modelo de datos de formulario {#invoke}
+### Invocar servicio del modelo de datos de formulario {#invoke}
 
-Piense en un servicio web `GetInterestRates` que toma el importe del préstamo, el ejercicio y la puntuación crediticia del solicitante como entrada y devuelve un plan de préstamo que incluye el importe del EMI y el tipo de interés. Puede crear un modelo de datos de formulario utilizando el servicio web como origen de datos. Se agregan objetos del modelo de datos y un servicio `get` al modelo de formulario. El servicio aparece en la pestaña Servicios del modelo de datos de formulario. A continuación, cree un formulario adaptable que incluya campos de objetos del modelo de datos para capturar entradas del usuario para la cantidad de préstamo, la tenencia y la puntuación de crédito. Agregue un botón que active el servicio web para obtener detalles del plan. La salida se rellena en los campos adecuados.
+Piense en un servicio web `GetInterestRates` que toma el importe del préstamo, el ejercicio y la puntuación crediticia del solicitante como entrada y devuelve un plan de préstamo que incluye el importe del EMI y el tipo de interés. Puede crear un modelo de datos de formulario con el servicio web como fuente de datos. Se agregan objetos del modelo de datos y un servicio `get` al modelo de formulario. El servicio aparece en la pestaña Servicios del modelo de datos de formulario. A continuación, cree un formulario adaptable que incluya campos de los objetos del modelo de datos para capturar las entradas del usuario para el importe del préstamo, el ejercicio y la puntuación crediticia. Agregue un botón que active el servicio web para obtener detalles del plan. La salida se rellena en los campos adecuados.
 
-La siguiente regla muestra cómo configurará la acción Invocar servicio para que se realice el escenario de ejemplo.
+La siguiente regla muestra cómo configurar la acción Invocar servicio para que se realice el escenario de ejemplo.
 
 ![example-invoke-services](assets/example-invoke-services.png)
 
-Invocar el servicio del modelo de datos de formulario mediante una regla de formulario adaptable
+Invocar el servicio de modelo de datos de formulario mediante la regla de formulario adaptable
 
 ### Activación de varias acciones mediante la regla When {#triggering-multiple-actions-using-the-when-rule}
 
@@ -825,7 +825,7 @@ En un formulario de solicitud de préstamo, se desea capturar si el solicitante 
 
 * Un campo de texto, **Geometrixx customer ID** (ID de cliente de Geometrixx), para especificar el ID de cliente.
 
-Cuando escriba una regla When en el botón de radio para implementar este comportamiento, la regla aparecerá de la siguiente manera en el editor de reglas visuales.  ![when-rule-example](assets/when-rule-example.png)
+Cuando escriba una regla When en el botón de radio para implementar este comportamiento, la regla aparecerá de la siguiente manera en el editor de reglas visuales. ![when-rule-example](assets/when-rule-example.png)
 
 Regla en el editor visual
 
@@ -837,9 +837,9 @@ La regla aparece de la siguiente manera en el editor de código.
 
 Regla en el editor de código
 
-### Uso de una salida de función en una regla {#using-a-function-output-in-a-rule}
+### Usar una salida de función en una regla {#using-a-function-output-in-a-rule}
 
-En un formulario de orden de compra, tiene la siguiente tabla, en la que los usuarios rellenarán sus pedidos. En esta tabla:
+En un formulario de pedido de compra, tiene la siguiente tabla, en la que los usuarios rellenan sus pedidos. En esta tabla:
 
 * La primera fila es repetible, por lo que los usuarios pueden solicitar varios productos y especificar cantidades diferentes. Su nombre de elemento es `Row1`.
 * El título de la celda de la columna Product Quantity (cantidad de producto) de la fila repetible es Quantity (cantidad). El nombre de elemento de esta celda es `productquantity`.
@@ -849,7 +849,7 @@ En un formulario de orden de compra, tiene la siguiente tabla, en la que los usu
 
 **A.** Row1 **B.** Quantity **C.** Total Quantity
 
-Ahora, desea agregar cantidades especificadas en la columna Product Quantity para todos los productos y mostrar la suma en la celda Total Quantity. Puede conseguirlo escribiendo una regla de valor definido en la celda Cantidad total como se muestra a continuación.
+Ahora, desea agregar cantidades especificadas en la columna Product Quantity para todos los productos y mostrar la suma en la celda Total Quantity. Puede conseguirlo si escribe una regla Establecer valor de en la celda Cantidad total como se muestra a continuación.
 
 ![example-function-output](assets/example-function-output.png)
 
@@ -863,7 +863,7 @@ Regla en el editor de código
 
 ### Validación de un valor de campo mediante una expresión {#validating-a-field-value-using-expression}
 
-En el formulario de orden de compra que se explica en el ejemplo anterior, se desea restringir el pedido de más de una cantidad de cualquier producto cuyo precio sea superior a 10 000. Para ello, puede escribir una regla de validación como se muestra a continuación.
+En el formulario de orden de compra que se explica en el ejemplo anterior, se desea restringir el pedido de más de una cantidad de cualquier producto cuyo precio sea superior a 10 000. Para hacerlo, puede escribir una regla de validación como se muestra a continuación.
 
 ![example-validate](assets/example-validate.png)
 

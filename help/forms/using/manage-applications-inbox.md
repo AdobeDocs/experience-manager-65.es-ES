@@ -1,7 +1,7 @@
 ---
-title: Administrar aplicaciones y tareas de Forms en Bandeja de entrada AEM
+title: Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM
 seo-title: Manage Forms applications and tasks in AEM Inbox
-description: Bandeja de entrada AEM le permite iniciar flujos de trabajo centrados en Forms enviando aplicaciones y administrando tareas.
+description: Bandeja de entrada de AEM le permite iniciar flujos de trabajo centrados en Forms enviando aplicaciones y administrando tareas.
 seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
@@ -13,15 +13,15 @@ exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
-# Administrar aplicaciones y tareas de Forms en Bandeja de entrada AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
+# Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Una de las muchas formas de iniciar o activar un flujo de trabajo centrado en Forms es mediante las aplicaciones en Bandeja de entrada AEM. Debe crear una aplicación de flujo de trabajo para que un flujo de trabajo de Forms esté disponible como aplicación en la bandeja de entrada. Para obtener más información sobre la aplicación de flujo de trabajo y otras formas de iniciar flujos de trabajo de Forms, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](../../forms/using/aem-forms-workflow.md#launch).
+Una de las muchas formas de iniciar o activar un flujo de trabajo centrado en Forms es mediante las aplicaciones en Bandeja de entrada de AEM. Debe crear una aplicación de flujo de trabajo para que un flujo de trabajo de Forms esté disponible como aplicación en la bandeja de entrada. Para obtener más información sobre la aplicación de flujo de trabajo y otras formas de iniciar flujos de trabajo de Forms, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](../../forms/using/aem-forms-workflow.md#launch).
 
-Además, Bandeja de entrada AEM consolida las notificaciones y tareas de varios componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de Forms que contiene una Etapa de tarea de asignación, la aplicación asociada aparece como una tarea en la bandeja de entrada del usuario asignado. Si el usuario asignado es un grupo, la tarea aparece en la bandeja de entrada de todos los miembros del grupo hasta que un individuo solicite o delegue la tarea.
+Además, Bandeja de entrada de AEM consolida las notificaciones y tareas de varios componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de Forms que contiene una Etapa de tarea de asignación, la aplicación asociada aparece como una tarea en la bandeja de entrada del usuario asignado. Si el usuario asignado es un grupo, la tarea aparece en la bandeja de entrada de todos los miembros del grupo hasta que un individuo solicite o delegue la tarea.
 
 La interfaz de usuario de la bandeja de entrada ofrece vistas de lista y calendario para ver las tareas. También puede configurar la configuración de vista. Puede filtrar las tareas en función de varios parámetros. Para obtener más información sobre las vistas y los filtros, consulte [Su bandeja de entrada](/help/sites-authoring/inbox.md).
 
@@ -29,13 +29,13 @@ En resumen, la bandeja de entrada le permite crear una nueva aplicación y admin
 
 >[!NOTE]
 >
->Debe ser miembro del grupo de usuarios del flujo de trabajo para poder utilizar AEM Bandeja de entrada.
+>Debe ser miembro del grupo workflow-users para poder utilizar la Bandeja de entrada AEM.
 
 ## Crear aplicación {#create-application}
 
-1. Vaya a Bandeja de entrada AEM, en https://&#39;[server]:[port]&#39;/aem/inbox.
+1. Vaya a Bandeja de entrada de AEM, en https://&#39;[server]:[port]&#39;/aem/inbox.
 1. En la interfaz de usuario de la bandeja de entrada, pulse **[!UICONTROL Crear > Aplicación]**. Aparece la página Seleccionar aplicación.
-1. Seleccione una aplicación y haga clic en **[!UICONTROL Crear]**. Se abre el formulario adaptable asociado a la aplicación. Rellene la información del formulario adaptable y pulse **[!UICONTROL Submit]**. Inicia el flujo de trabajo asociado y crea una tarea en la bandeja de entrada del usuario asignado.
+1. Seleccione una aplicación y haga clic en **[!UICONTROL Crear]**. Se abrirá el formulario adaptable asociado a la aplicación. Rellene la información del formulario adaptable y pulse **[!UICONTROL Enviar]**. Inicia el flujo de trabajo asociado y crea una tarea en la bandeja de entrada del usuario asignado.
 
 ## Administrar tareas {#manage-tasks}
 
@@ -103,16 +103,16 @@ A medida que realiza una acción sobre la tarea, esta continúa en el flujo de t
 
 ### Ver tareas completadas {#view-completed-tasks}
 
-La Bandeja de entrada AEM solo muestra las tareas activas. Las tareas completadas no aparecen en la lista. Con todo, puede utilizar los filtros de la bandeja de entrada para filtrar las tareas según varios parámetros, como el tipo de tarea, el estado, las fechas de inicio y finalización, etc. Para ver las tareas completadas:
+La Bandeja de entrada de AEM solo muestra las tareas activas. Las tareas completadas no aparecen en la lista. Con todo, puede utilizar los filtros de la bandeja de entrada para filtrar las tareas según varios parámetros, como el tipo de tarea, el estado, las fechas de inicio y finalización, etc. Para ver las tareas completadas:
 
-1. En Bandeja de entrada AEM, pulse ![toggle-side-panel1](assets/toggle-side-panel1.png) para abrir el selector de filtros.
+1. En Bandeja de entrada de AEM, pulse ![toggle-side-panel1](assets/toggle-side-panel1.png) para abrir el selector de filtros.
 1. Pulse el acordeón **[!UICONTROL Estado de la tarea]** y seleccione **[!UICONTROL Completar]**. Se mostrarán todas las tareas completadas.
 
    ![filter](assets/filter.png)
 
 1. Pulse para seleccionar una tarea y haga clic en **[!UICONTROL Abrir]**.
 
-La tarea se abre para mostrar el documento o el formulario adaptable asociado a la tarea. En el caso de los formularios adaptables, la tarea muestra el formulario adaptable de solo lectura o su documento de registro PDF, tal y como se ha configurado en la ficha Formulario/documento de la [Paso Asignar flujo de trabajo de tarea](/help/sites-developing/workflows-step-ref.md).
+La tarea se abre para mostrar el documento o el formulario adaptable asociado a la tarea. En el caso del formulario adaptable, la tarea muestra el formulario adaptable de solo lectura o su documento de registro PDF, tal y como se ha configurado en la pestaña Formulario/Documento del [paso Asignar flujo de trabajo de tarea](/help/sites-developing/workflows-step-ref.md).
 
 La sección de detalles de la tarea muestra información como la acción realizada, el estado de la tarea, la fecha de inicio y la fecha de finalización.
 
@@ -124,9 +124,9 @@ La pestaña **[!UICONTROL Detalles del flujo de trabajo]** muestra cada paso del
 
 ## Solución de problemas {#troubleshooting-workflows}
 
-### No se pueden ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada AEM {#unable-to-see-aem-worklow-items}
+### No se pueden ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada de AEM {#unable-to-see-aem-worklow-items}
 
-El propietario de un modelo de flujo de trabajo no puede ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada AEM. Para resolver el problema, añada los siguientes índices a su repositorio de AEM y reconstruya el índice.
+El propietario de un modelo de flujo de trabajo no puede ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada de AEM. Para resolver el problema, añada los siguientes índices a su repositorio de AEM y reconstruya el índice.
 
 1. Utilice uno de los siguientes métodos para añadir índices:
 
@@ -155,4 +155,4 @@ El propietario de un modelo de flujo de trabajo no puede ver los elementos relac
 
 1. Después de configurar índices en CRX DE o implementar mediante un paquete, [vuelva a realizar el índice del repositorio](https://helpx.adobe.com/es/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 
-https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=es

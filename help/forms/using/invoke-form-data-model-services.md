@@ -1,7 +1,7 @@
 ---
 title: API para invocar el servicio del modelo de datos de formulario desde formularios adaptables
 seo-title: API to invoke form data model service from adaptive forms
-description: Explica la API de invokeWebServices que puede utilizar para invocar servicios web escritos en WSDL desde un campo de formulario adaptable.
+description: Explica la API de invokeWebServices que puede utilizar para invocar servicios web escritos en WSDL desde un campo de un formulario adaptable.
 seo-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,7 +12,7 @@ exl-id: cf037174-3153-486f-85b1-c974cd5a1ace
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '482'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 74%
 
 ## Información general {#overview}
 
-AEM Forms permite a los autores de formularios simplificar y mejorar aún más la experiencia de cumplimentación de formularios invocando los servicios configurados en un modelo de datos de formulario desde un campo de formulario adaptable. Para invocar un servicio del modelo de datos, puede crear una regla en el Editor visual o especificar un JavaScript utilizando la API `guidelib.dataIntegrationUtils.executeOperation` en el Editor de código del [Editor de reglas](/help/forms/using/rule-editor.md).
+AEM Forms permite a los autores de formularios simplificar y mejorar aún más la experiencia de rellenado de formularios invocando los servicios configurados en un modelo de datos de formulario desde un campo de un formulario adaptable. Para invocar un servicio del modelo de datos, puede crear una regla en el Editor visual o especificar un JavaScript utilizando la API `guidelib.dataIntegrationUtils.executeOperation` en el Editor de código del [Editor de reglas](/help/forms/using/rule-editor.md).
 
 Este documento explica cómo escribir un JavaScript usando la API `guidelib.dataIntegrationUtils.executeOperation` para invocar un servicio.
 
 ## Uso de la API {#using-the-api}
 
-La variable `guidelib.dataIntegrationUtils.executeOperation` API invoca un servicio desde un campo de formulario adaptable. La sintaxis de la API es la siguiente:
+La API `guidelib.dataIntegrationUtils.executeOperation` invoca un servicio desde un campo de formulario adaptable. La sintaxis de la API es la siguiente:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
@@ -60,11 +60,11 @@ La estructura de la API especifica los siguientes detalles sobre la operación d
   </tr>
   <tr>
    <td><code>operationInfo</code></td>
-   <td>Estructura para especificar el identificador del modelo de datos de formulario, el título de la operación y el nombre de la operación</td>
+   <td>La estructura para especificar el identificador del modelo de datos de formulario, el título y el nombre de la operación.</td>
   </tr>
   <tr>
    <td><code>formDataModelId</code></td>
-   <td>Especifica la ruta del repositorio al modelo de datos del formulario, incluido su nombre</td>
+   <td>Especifica la ruta del repositorio del modelo de datos de formulario, incluido su nombre.</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
@@ -113,7 +113,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 ## Uso de la API con una función de devolución de llamada {#using-the-api-callback}
 
-También puede invocar el servicio del modelo de datos de formulario mediante el `guidelib.dataIntegrationUtils.executeOperation` API con una función de llamada de retorno. La sintaxis de la API es la siguiente:
+También puede invocar el servicio del modelo de datos de formulario utilizando la API `guidelib.dataIntegrationUtils.executeOperation` con una función de devolución de llamada. La sintaxis de la API es la siguiente:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)

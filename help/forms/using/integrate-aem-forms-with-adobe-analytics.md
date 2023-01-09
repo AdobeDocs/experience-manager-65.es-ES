@@ -1,20 +1,20 @@
 ---
 title: Integrar AEM Forms con Adobe Analytics
-description: AEM Forms se integra con Adobe Analytics para capturar y rastrear las métricas de rendimiento de los formularios publicados.
+description: AEM Forms se integra con Adobe Analytics para permitirle capturar y realizar un seguimiento de las métricas de rendimiento de los formularios publicados.
 docset: aem65
-source-git-commit: 503e579a00c9e029393b0a8a580faba2231c7589
+exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
+source-git-commit: 45ca98ffb68e1e31e2f45f352e86f5aa1b6f0f00
 workflow-type: tm+mt
 source-wordcount: '1806'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-
-# Analytics que utiliza [!DNL Adobe Launch] {#analyticsusingadobelaunch}
+# Analytics con [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
 AEM Forms se integra con [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=es) para permitirle capturar y rastrear las métricas de rendimiento de sus formularios publicados. El objetivo detrás del análisis de estas métricas es permitir que los usuarios empresariales obtengan información sobre el comportamiento del usuario final y optimizar la experiencia de captura de datos. Puede capturar y hacer un seguimiento del comportamiento de los usuarios que iniciaron sesión y no los que iniciaron sesión (anónimos) mediante Adobe Analytics para formularios adaptables.
 
-También puede realizar análisis con Cloud Service Framework. Para obtener más información sobre cómo integrar AEM Forms con Cloud Service Framework, consulte [Analytics con Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md). La principal ventaja de utilizar Launch de Adobe sobre Analytics mediante Cloud Service Framework es que también puede definir eventos personalizados, además de estos eventos predeterminados. Los eventos personalizados se definen mediante el editor de reglas o clientlibs de clientes y se asignan a eventos en [!DNL Adobe Analytics].
+También puede realizar análisis con Cloud Service Framework. Para obtener más información sobre cómo integrar AEM Forms con Cloud Service Framework, consulte [Analytics con Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md). La principal ventaja de utilizar Launch de Adobe con Analytics mediante Cloud Service Framework es que, además de estos eventos predeterminados, también puede definir eventos personalizados. Los eventos personalizados se definen mediante el Editor de reglas o clientlibs de clientes, y se asignan a eventos en [!DNL Adobe Analytics].
 
 Después de realizar las acciones mencionadas en este artículo, puede configurar y ver los informes en [!DNL Adobe Analytics], como se muestra en el siguiente vídeo:
 
@@ -36,7 +36,7 @@ Puede usar [!DNL Adobe Analytics] para descubrir patrones de interacción y prob
 
 * **Guardar**: Número de veces que los usuarios guardan un formulario en el Portal de Forms.
 
-Aparte de estos eventos predeterminados, también puede definir eventos personalizados.
+Además de estos eventos predeterminados, también puede definir eventos personalizados.
 
 La siguiente imagen ilustra las acciones que debe realizar antes de ver los informes en [!DNL Adobe Analytics]:
 
@@ -208,7 +208,7 @@ Realice los siguientes pasos para crear una configuración de Adobe Launch:
 
 1. Especifique un título para la configuración en el campo **[!UICONTROL Título]**.
 
-1. Seleccione la [configuración de Adobe IMS asociada](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+1. Seleccione la [configuración de Adobe IMS asociada](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=es).
 
 1. Seleccione el nombre de la empresa utilizada mientras [configura Adobe Analytics](#Configure-adobe-analytics).
 
@@ -231,7 +231,7 @@ Para usar la configuración de [!DNL Adobe Launch] en un formulario adaptable ex
 Tras habilitar [!DNL Adobe Analytics] para un formulario adaptable, puede [validar](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=es#validate-the-page-view-beacon) si hay un flujo de eventos de datos adecuado entre AEM Forms y [!DNL Adobe Analytics]. La integración de AEM Forms con Adobe Analytics ha finalizado. Ahora puede [configurar y ver informes en Adobe Analytics](#view-reports-adobe-analytics).
 
 >[!NOTE]
->En caso afirmativo, si ambas [Analytics con Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) y **Analytics con Adobe Launch** las funciones se activan simultáneamente, **Analytics con Adobe Launch** tendrá prioridad.
+>En caso afirmativo, si las funciones [Analytics con Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) y **Analytics con Adobe Launch** se activan simultáneamente, **Analytics con Adobe Launch** tendrá prioridad.
 
 ### Crear reglas para capturar eventos personalizados (opcional) {#capture-custom-events}
 
@@ -284,4 +284,4 @@ Después de configurar un formulario adaptable para enviar datos de evento a [!D
 
 1. Pulse las teclas Ctrl + S y especifique un nombre para guardar el proyecto.
 
-Para obtener información detallada sobre la visualización de informes de análisis de formularios, consulte [Visualización y comprensión de los informes de análisis de AEM Forms](../../forms/using/view-understand-aem-forms-analytics-reports.md).
+Para obtener información detallada sobre la visualización de informes de Forms Analytics, consulte [Visualizar y compreder los informes de AEM Forms Analytics](../../forms/using/view-understand-aem-forms-analytics-reports.md).

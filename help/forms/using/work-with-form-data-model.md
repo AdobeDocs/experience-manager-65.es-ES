@@ -13,37 +13,37 @@ exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
 source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
 source-wordcount: '4165'
-ht-degree: 80%
+ht-degree: 99%
 
 ---
 
 # Trabajar con el modelo de datos de formulario{#work-with-form-data-model}
 
-![integración de datos](do-not-localize/data-integeration.png)
+![data-integration](do-not-localize/data-integeration.png)
 
-El editor del modelo de datos de formulario proporciona una interfaz de usuario intuitiva y herramientas para editar y configurar un modelo de datos de formulario. Con el editor, se pueden agregar y configurar objetos, propiedades y servicios del modelo de datos desde fuentes de datos asociadas en el modelo de datos de formulario. Además, permite crear objetos y propiedades de modelos de datos sin fuentes de datos y enlazarlos posteriormente con objetos y propiedades de modelos de datos respectivos. También puede generar y editar datos de ejemplo para propiedades de objetos del modelo de datos que puede utilizar para rellenar previamente formularios adaptables y comunicaciones interactivas al obtener una vista previa. Puede probar los objetos y servicios del modelo de datos configurados en un modelo de datos de formulario para asegurarse de que está correctamente integrado con los orígenes de datos.
+El editor del modelo de datos de formulario proporciona una interfaz de usuario intuitiva y herramientas para editar y configurar un modelo de datos de formulario. Con el editor, se pueden agregar y configurar objetos, propiedades y servicios del modelo de datos desde fuentes de datos asociadas en el modelo de datos de formulario. Además, permite crear objetos y propiedades de modelos de datos sin fuentes de datos y enlazarlos posteriormente con objetos y propiedades de modelos de datos respectivos. También puede generar y editar datos de ejemplo para propiedades de objetos del modelo de datos que puede utilizar para prerrellenar formularios adaptables y comunicaciones interactivas al previsualizar. Puede probar los objetos y servicios del modelo de datos configurados en un modelo de datos de formulario para asegurarse de que está correctamente integrado con las fuentes de datos.
 
 Si acaba de empezar con la integración de datos de Forms y no ha configurado una fuente de datos o creado un modelo de datos de formulario, consulte los temas siguientes:
 
 * [Integración de datos de AEM Forms](/help/forms/using/data-integration.md)
 * [Configurar fuentes de datos](/help/forms/using/configure-data-sources.md)
-* [Crear modelo de datos de formulario](/help/forms/using/create-form-data-models.md)
+* [Crear un modelo de datos de formulario](/help/forms/using/create-form-data-models.md)
 
 Continúe leyendo para obtener más información sobre las diversas tareas y configuraciones que puede realizar con el editor del modelo de datos de formulario.
 
 >[!NOTE]
 >
->Debe ser miembro de los grupos **fdm-author** y **forms-user** para poder crear y trabajar con el modelo de datos de formulario. Póngase en contacto con el administrador de AEM para convertirse en miembro de los grupos.
+>Debe ser miembro de los grupos **fdm-author** y **forms-user** para poder crear y trabajar con el modelo de datos de formulario. Póngase en contacto con su administrador de AEM para convertirse en miembro de los grupos.
 
 ## Agregar objetos y servicios del modelo de datos {#add-data-model-objects-and-services}
 
-Si ha creado un modelo de datos de formulario con orígenes de datos, puede utilizar el editor del modelo de datos de formulario para agregar objetos y servicios del modelo de datos, configurar sus propiedades, crear asociaciones entre objetos del modelo de datos y probar el modelo y los servicios de datos de formulario.
+Si ha creado un modelo de datos de formulario con fuentes de datos, puede utilizar el editor del modelo de datos de formulario para agregar objetos y servicios del modelo de datos, configurar sus propiedades, crear asociaciones entre objetos del modelo de datos y probar el modelo de datos de formulario y los servicios.
 
 Puede agregar objetos y servicios del modelo de datos desde fuentes de datos disponibles en el modelo de datos de formulario. Cuando los objetos del modelo de datos agregados aparecen en la pestaña Modelo, los servicios que se hayan añadido aparecen en la pestaña Servicios.
 
 Para agregar objetos y servicios del modelo de datos:
 
-1. Inicie sesión en la instancia de autor de AEM, vaya a **[!UICONTROL Forms > Integraciones de datos]** y abra el modelo de datos de formulario en el que desea agregar objetos del modelo de datos.
+1. Inicie sesión en la instancia de autor de AEM, vaya a **[!UICONTROL Formularios > Integraciones de datos]** y abra el modelo de datos de formulario en el que desea agregar objetos.
 1. En el panel Fuentes de datos, amplíe las opciones para ver los objetos y servicios disponibles del modelo de datos.
 1. Seleccione los objetos y servicios del modelo de datos que desea agregar al modelo de datos de formulario y pulse **[!UICONTROL Agregar selección]**.
 
@@ -63,7 +63,7 @@ Para agregar objetos y servicios del modelo de datos:
 
    >[!NOTE]
    >
-   >Puede mantener y arrastrar cuadros de objetos del modelo de datos alrededor para organizarlos en el área de contenido. Todos los objetos del modelo de datos agregados al modelo de datos de formulario aparecen atenuados en el panel Fuentes de datos.
+   >Puede mantener y arrastrar cuadros de objetos del modelo de datos alrededor para organizarlos en el área de contenido. Todos los objetos del modelo de datos agregados en el modelo de datos de formulario aparecen atenuados en el panel Fuentes de datos.
 
    La pestaña Servicios enumera los servicios añadidos.
 
@@ -79,7 +79,7 @@ Para agregar objetos y servicios del modelo de datos:
 
    >[!NOTE]
    >
-   >Puede invocar los servicios que configuró en la ficha Servicios de un modelo de datos de formulario mediante las reglas de formulario adaptables. Los servicios configurados están disponibles en la acción Invocar servicios del editor de reglas Para obtener más información sobre el uso de estos servicios en las reglas de formularios adaptables, consulte Invocar servicios y establecer el valor de las reglas en [editor de reglas](/help/forms/using/rule-editor.md).
+   >Puede invocar los servicios que configuró en la pestaña Servicios de un modelo de datos de formulario mediante las reglas de los formularios adaptables. Los servicios configurados están disponibles en la acción Invocar servicios del editor de reglas. Para obtener más información sobre el uso de estos servicios en las reglas de los formularios adaptables, consulte las reglas Invoke service y Set Value Of en el [editor de reglas](/help/forms/using/rule-editor.md).
 
 ## Crear objetos del modelo de datos y propiedades secundarias {#create-data-model-objects-and-child-properties}
 
@@ -89,9 +89,9 @@ Aunque puede agregar objetos de modelo de datos desde fuentes de datos configura
 
 Para crear un objeto de modelo de datos sin fuentes de datos:
 
-1. Inicie sesión en la instancia de autor de AEM, vaya a **[!UICONTROL Forms > Integraciones de datos]** y abra el modelo de datos de formulario en el que desea crear una entidad u objeto del modelo de datos.
+1. Inicie sesión en la instancia de autor de AEM, vaya a **[!UICONTROL Formularios > Integraciones de datos]** y abra el modelo de datos de formulario en el que desea crear una entidad u objeto del modelo de datos.
 1. Pulse **[!UICONTROL Crear entidad]**.
-1. En el cuadro de diálogo Crear modelo de datos, especifique un nombre para el objeto del modelo de datos y haga clic en **[!UICONTROL Agregar]**. Se agrega un objeto de modelo de datos al modelo de datos del formulario. Tenga en cuenta que el objeto del modelo de datos recién agregado no está enlazado a un origen de datos y no tiene propiedades como se muestra en la siguiente imagen.
+1. En el cuadro de diálogo Crear modelo de datos, especifique un nombre para el objeto del modelo de datos y haga clic en **[!UICONTROL Agregar]**. Se agrega un objeto de modelo de datos al modelo de datos del formulario. Tenga en cuenta que el objeto del modelo de datos recién agregado no está enlazado a una fuente de datos y no tiene propiedades como se muestra en la siguiente imagen.
 
    ![new-entity](assets/new-entity.png)
 
@@ -106,17 +106,17 @@ Para crear una propiedad secundaria:
 1. En un modelo de datos de formulario, seleccione un objeto de modelo de datos y pulse **[!UICONTROL Crear propiedad secundaria]**.
 1. En el cuadro de diálogo **[!UICONTROL Crear propiedad secundaria]**, especifique un nombre y un tipo de datos para la propiedad en los campos **[!UICONTROL Nombre]** y **[!UICONTROL Tipo]**, respectivamente. Si lo desea, puede especificar un título y una descripción para la propiedad.
 1. Habilite la opción Calculada si la propiedad es una propiedad calculada. El valor de una propiedad calculada se evalúa en función de una regla o una expresión. Para obtener más información, consulte [Editar propiedades](#edit-properties).
-1. Si el objeto del modelo de datos está enlazado a una fuente de datos, la propiedad secundaria añadida se enlazará automáticamente a la propiedad del objeto del modelo de datos principal con el mismo nombre y tipo de datos.
+1. Si el objeto del modelo de datos está enlazado a una fuente de datos, la propiedad secundaria agregada se enlazará automáticamente a la propiedad del objeto del modelo de datos principal con el mismo nombre y tipo de datos.
 
    Para enlazar manualmente una propiedad secundaria con una propiedad de objeto del modelo de datos, pulse el icono de examinar situado junto al campo **[!UICONTROL Referencia de enlace]**. El cuadro de diálogo **[!UICONTROL Seleccionar objeto]** enumera todas las propiedades del objeto del modelo de datos principal. Seleccione una propiedad con la que enlazar el objeto y pulse el icono del tic. Tenga en cuenta que solo puede seleccionar una propiedad del mismo tipo de datos que la propiedad secundaria.
 
 1. Pulse **[!UICONTROL Listo]** para guardar la propiedad secundaria y pulse **[!UICONTROL Guardar]** para guardar el modelo de datos del formulario. La propiedad secundaria se agrega ahora al objeto del modelo de datos.
 
-Después de crear objetos y propiedades del modelo de datos, puede seguir creando formularios adaptables y comunicaciones interactivas basadas en el modelo de datos del formulario. Posteriormente, cuando haya orígenes de datos disponibles y configurados, puede enlazar el modelo de datos de formulario con orígenes de datos. El enlace se actualizará automáticamente en los formularios adaptables y comunicaciones interactivas asociados. Para obtener más información sobre la creación de formularios adaptables y comunicaciones interactivas mediante el modelo de datos de formulario, consulte [Uso del modelo de datos de formulario](/help/forms/using/using-form-data-model.md).
+Después de crear objetos y propiedades del modelo de datos, puede seguir creando formularios adaptables y comunicaciones interactivas basados en el modelo de datos de formulario. Posteriormente, cuando haya fuentes de datos disponibles y configuradas, puede enlazar el modelo de datos de formulario con ellas. El enlace se actualizará automáticamente en los formularios adaptables y comunicaciones interactivas asociados. Para obtener más información sobre la creación de formularios adaptables y comunicaciones interactivas mediante el modelo de datos de formulario, consulte [Uso del modelo de datos de formulario](/help/forms/using/using-form-data-model.md).
 
 ### Enlazar objetos y propiedades del modelo de datos {#bind-data-model-objects-and-properties}
 
-Cuando los orígenes de datos que desea integrar con el modelo de datos de formulario están disponibles, puede agregarlos al modelo de datos de formulario como se describe en [Actualización de fuentes de datos](/help/forms/using/create-form-data-models.md#update). A continuación, haga lo siguiente para enlazar los objetos y propiedades del modelo de datos independiente:
+Cuando las fuentes de datos que desea integrar con el modelo de datos de formulario están disponibles, puede agregarlas al modelo tal y como se describe en [Actualizar fuentes de datos](/help/forms/using/create-form-data-models.md#update). A continuación, haga lo siguiente para enlazar los objetos y propiedades del modelo de datos independiente:
 
 1. En el modelo de datos de formulario, seleccione la fuente de datos independiente que desea enlazar con una fuente de datos.
 1. Pulse **[!UICONTROL Editar propiedades]**.
@@ -147,14 +147,14 @@ Para leer y escribir para un objeto de modelo de datos, haga lo siguiente para c
 
    >[!NOTE]
    >
-   >Además de los objetos y servicios del modelo de datos, el documento de metadatos del servicio OData incluye propiedades de navegación que definen la asociación entre dos objetos del modelo de datos. Cuando se agrega un origen de datos del servicio OData a un Modelo de datos de formulario, hay un servicio disponible en el Modelo de datos de formulario para todas las propiedades de navegación de un objeto del modelo de datos. Puede utilizar este servicio para leer las propiedades de navegación del objeto del modelo de datos correspondiente.
+   >Además de los objetos y servicios del modelo de datos, el documento de metadatos del servicio OData incluye propiedades de navegación que definen la asociación entre dos objetos del modelo de datos. Cuando se agrega una fuente de datos del servicio OData a un modelo de datos de formulario, hay un servicio disponible en el modelo para todas las propiedades de navegación de un objeto del modelo de datos. Puede utilizar este servicio para leer las propiedades de navegación del objeto del modelo de datos correspondiente.
    >
    >
    >Para obtener más información sobre el uso del servicio, consulte [Uso de las propiedades de navegación de los servicios de OData](#work-with-navigation-properties-of-odata-services).
 
 1. Cambie a **[!UICONTROL Objeto de nivel superior]** para especificar si el objeto del modelo de datos es de nivel superior.
 
-   Los objetos del modelo de datos configurados en un modelo de datos de formulario están disponibles para su uso en la ficha Objetos del modelo de datos del explorador de contenido de un formulario adaptable basado en el modelo de datos del formulario. Cuando se agrega una asociación entre dos objetos del modelo de datos, el objeto del modelo de datos con el que se asocia se anida en el objeto del modelo de datos que se asocia en la pestaña Objetos del modelo de datos. Si el modelo de datos anidado es un objeto de nivel superior, también aparecerá por separado en la ficha Objetos del modelo de datos. Por lo tanto, verá dos entradas de la misma, una dentro y otra fuera de la jerarquía anidada, lo que podría confundir a los autores del formulario. Para que el objeto del modelo de datos asociado aparezca solo en la jerarquía anidada, desactive la propiedad Objeto de nivel superior.
+   Los objetos de modelo de datos configurados en un modelo de datos de formulario están disponibles para su uso en la pestaña Objetos del modelo de datos del explorador de contenido de un formulario adaptable basado en el modelo de datos del formulario. Cuando se agrega una asociación entre dos objetos del modelo de datos, el objeto del modelo de datos con el que se asocia se anida en el objeto del modelo de datos que se asocia en la pestaña Objetos del modelo de datos. Si el modelo de datos anidado es un objeto de nivel superior, también aparecerá por separado en la pestaña Objetos del modelo de datos. Por lo tanto, se verán dos entradas, una dentro y otra fuera de la jerarquía anidada, que pueden confundir a los autores del formulario. Para que el objeto del modelo de datos asociado aparezca solo en la jerarquía anidada, desactive la propiedad Objeto de nivel superior.
 
 1. Seleccione los servicios de lectura y escritura para los objetos del modelo de datos seleccionado. Aparecen los argumentos de los servicios.
 
@@ -179,7 +179,7 @@ En este ejemplo, los detalles asociados con **4367655678**, como el valor del ar
 
 #### Atributo de perfil de usuario {#user-profile-attribute}
 
-Seleccione **[!UICONTROL Atributo de perfil de usuario]** del menú desplegable **[!UICONTROL Enlace a]** e indique el nombre del atributo en el campo **[!UICONTROL Valor de enlace]**. Los detalles del usuario que ha iniciado sesión en la instancia de AEM se recuperan del origen de datos en función del nombre del atributo.
+Seleccione **[!UICONTROL Atributo de perfil de usuario]** del menú desplegable **[!UICONTROL Enlace a]** e indique el nombre del atributo en el campo **[!UICONTROL Valor de enlace]**. Los detalles del usuario que ha iniciado sesión en la instancia de AEM se recuperan de la fuente de datos en función del nombre del atributo.
 
 El nombre de atributo especificado en el campo **[!UICONTROL Valor de enlace]** debe incluir la ruta de enlace completa hasta el nombre del atributo del usuario. Abra la siguiente URL para acceder a los detalles del usuario sobre CRXDE:
 
@@ -401,13 +401,13 @@ Para generar y editar datos de ejemplo, haga lo siguiente:
 
 1. En la ventana **[!UICONTROL Editar datos de ejemplo]**, edite los datos, según sea necesario, y pulse **[!UICONTROL Guardar]**.
 
-A continuación, puede utilizar los datos de ejemplo para rellenar previamente y probar comunicaciones interactivas basadas en el modelo de datos de formulario. Para obtener más información, consulte [Uso del modelo de datos de formulario](/help/forms/using/using-form-data-model.md).
+A continuación, puede utilizar los datos de ejemplo para prerrellenar y probar comunicaciones interactivas basadas en el modelo de datos de formulario. Para obtener más información, consulte [Usar el modelo de datos de formulario](/help/forms/using/using-form-data-model.md).
 
 ## Probar objetos y servicios del modelo de datos {#test-data-model-objects-and-services}
 
-El modelo de datos de formulario está configurado, pero antes de ponerlo en uso, es posible que desee comprobar si los objetos y servicios configurados del modelo de datos funcionan según lo esperado. Para probar los objetos y servicios del modelo de datos:
+El modelo de datos de formulario está configurado, pero antes de ponerlo en uso, es posible que desee comprobar si los objetos y servicios funcionan según lo esperado. Para probar los objetos y servicios del modelo de datos:
 
-1. Seleccione un objeto de modelo de datos o un servicio en el modelo de datos de formulario y pulse **[!UICONTROL Objeto de modelo de prueba]** o **[!UICONTROL Servicio de prueba]**, respectivamente.
+1. Seleccione un objeto del modelo de datos o un servicio en el modelo de datos de formulario y pulse **[!UICONTROL Objeto de modelo de prueba]** o **[!UICONTROL Servicio de prueba]**, respectivamente.
 
    Se abre la ventana Modelo de datos de formulario de prueba.
 
@@ -415,7 +415,7 @@ El modelo de datos de formulario está configurado, pero antes de ponerlo en uso
 
 1. En la ventana Modelo de datos de formulario de prueba, seleccione el objeto o servicio del modelo de datos que desea probar en el panel Entrada.
 
-1. Especifique un valor de argumento en el código de prueba y pulse **[!UICONTROL Prueba]**. Una prueba que funciene correctamente devuelve el resultado en el panel Salida.
+1. Especifique un valor de argumento en el código de prueba y pulse **[!UICONTROL Prueba]**. Una prueba que funcione correctamente devuelve el resultado en el panel Salida.
 
    ![Resultados de la prueba](assets/test_results_form_data_model_new.png)
 
@@ -429,9 +429,9 @@ El indicador se puede establecer en cualquiera de los siguientes valores:
 
 * **COMPLETO**: FDM realiza la validación en función de todas las restricciones.
 * **DESACTIVADO**: sin validación.
-* **BÁSICO**: FDM realiza la validación en función de las restricciones &#39;requeridas&#39; y &#39;admisibles&#39;.
+* **BÁSICO**: FDM realiza la validación en función de las restricciones “requeridas” y “admisibles”.
 
-Si no se establece ningún valor para el `ValidationOptions`indicador, se aplica una validación de nivel **BÁSICO** en los datos de entrada.
+Si no se establece ningún valor para el `ValidationOptions` indicador, se aplica una validación de nivel **BÁSICO** en los datos de entrada.
 
 A continuación se muestra un ejemplo de cómo configurar el indicador de validación en **COMPLETO**:
 
@@ -553,4 +553,4 @@ Se muestra una excepción si los datos de entrada no cumplen los criterios de va
 
 ## Pasos siguientes {#next-steps}
 
-Tiene un modelo de datos de formulario de trabajo que ya está listo para su uso en formularios adaptables y flujos de trabajo de comunicaciones interactivos. Para obtener más información, consulte [Uso del modelo de datos de formulario](/help/forms/using/using-form-data-model.md).
+Tiene un modelo de datos de formulario en funcionamiento que ya está listo para su uso en flujos de trabajo y comunicaciones interactivas de formularios adaptables. Para obtener más información, consulte [Usar el modelo de datos de formulario](/help/forms/using/using-form-data-model.md).
