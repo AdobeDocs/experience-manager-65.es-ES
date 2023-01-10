@@ -13,7 +13,7 @@ ht-degree: 70%
 
 # Comercio {#commerce}
 
-+ [AEM Contenido y comercio](/help/commerce/home.md)
++ [AEM Content and Commerce](/help/commerce/home.md)
 + [Cambios importantes en AEM contenido y comercio](cif/changes.md)
 + [Introducción y descripción general](cif/introduction.md)
 + Integraciones {#integrations}
@@ -56,6 +56,6 @@ ht-degree: 70%
       + [Administración del comercio electrónico genérico](/help/commerce/cif-classic/administering/generic.md)
       + [Commerce Cloud SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
    + Desarrollo de {#developing}
-      + [comercio electrónico](/help/commerce/cif-classic/developing/ecommerce.md)
+      + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
       + [Desarrollo (genérico)](/help/commerce/cif-classic/developing/generic.md)
       + [Desarrollo con Commerce Cloud SAP](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)

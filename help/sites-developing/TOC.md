@@ -207,7 +207,7 @@ ht-degree: 38%
       + [Referencia de pasos de flujo de trabajo](workflows-step-ref.md)
       + [Prácticas recomendadas del flujo de trabajo](workflows-best-practices.md)
       + [Referencia del proceso de flujo de trabajo](workflows-process-ref.md)
-      + [Variables en flujos de trabajo AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
+      + [Variables en flujos de trabajo de AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Ampliación del administrador de varios sitios](extending-msm.md)
    + Seguimiento y análisis{#extending-analytics}
       + [Ampliación del seguimiento de eventos](extending-analytics.md)

@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 35%
+ht-degree: 36%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 35%
    + [Compatibilidad con tokens encapsulados](encapsulated-token.md)
    + [Inicio de sesión único](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html?lang=es)
    + [Cómo auditar las operaciones de administración de usuarios en AEM](audit-user-management-operations.md)
-   + [SSL de forma predeterminada](ssl-by-default.md)
+   + [SSL predeterminado](ssl-by-default.md)
    + [Controlador de autenticación SAML 2.0](saml-2-0-authenticationhandler.md)
    + [Grupos de usuarios cerrados en AEM](closed-user-groups.md)
    + [Operaciones de Granite: administración de usuarios y grupos](granite-user-group-admin.md)
@@ -114,7 +114,7 @@ ht-degree: 35%
    + [Integración con Adobe Target](target.md)
    + [Integración con Adobe Learning Manager](adobe-learningmanager.md)
    + [Integración con Adobe Analytics](adobeanalytics.md)
-   + [Conexión a Adobe Analytics y creación de módulos](adobeanalytics-connect.md)
+   + [Conectarse a Adobe Analytics y crear marcos](adobeanalytics-connect.md)
    + [Configuración de Seguimiento de vínculos para Adobe Analytics](adobeanalytics-link.md)
    + [Asignación de datos de componente con propiedades de Adobe Analytics](adobeanalytics-mapping.md)
    + [Configuración del seguimiento de vídeo para Adobe Analytics](adobeanalytics-video.md)
