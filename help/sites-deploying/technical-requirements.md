@@ -6,10 +6,10 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
+source-git-commit: 72ed4ceee560839c6573461cb5d4d6cbccfd696f
 workflow-type: tm+mt
-source-wordcount: '3488'
-ht-degree: 3%
+source-wordcount: '3525'
+ht-degree: 22%
 
 ---
 
@@ -61,8 +61,8 @@ Adobe recomienda estas configuraciones y proporciona soporte completo como parte
    <td>Descripción<br /> </td>
   </tr>
   <tr>
-   <td><strong>A: Admitido</strong></td>
-   <td>Adobe proporciona soporte y mantenimiento completos para esta configuración. Esta configuración está cubierta por el proceso de garantía de calidad del Adobe.</td>
+   <td><strong>A: Compatible</strong></td>
+   <td>Adobe proporciona soporte y mantenimiento completos para esta configuración. Esta configuración está cubierta por el proceso de garantía de calidad de Adobe.</td>
   </tr>
   <tr>
    <td><strong>R: Compatibilidad restringida</strong></td>
@@ -75,7 +75,7 @@ Adobe recomienda estas configuraciones y proporciona soporte completo como parte
 
 | Nivel de soporte | Descripción |
 |---|---|
-| **Z: No admitido** | La configuración no es compatible. Adobe no realiza ninguna declaración sobre si la configuración funciona o no y no la admite. |
+| **Z: No compatible** | La configuración no es compatible. Adobe no realiza ninguna declaración sobre si la configuración funciona o no y no la admite. |
 
 ## Plataformas compatibles {#supported-platforms}
 
@@ -91,14 +91,14 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
 
 | **Plataforma** | **Nivel de soporte** | **Vincular** |
 |---|---|---|
-| Oracle Java SE 11 JDK - 64 bits | A: Admitido `[1]` | [Descargar](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
-| Oracle Java SE 10 JDK | Z: No admitido `[1]` |
-| Oracle Java SE 9 JDK | Z: No admitido `[1]` |
-| Oracle Java SE 8 JDK - 64 bits | A: Admitido `[1]` | [Descargar](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
-| IBM J9 VM: versión 2.9, JRE 1.8.0 | A: Admitido `[2]` |
-| IBM J9 VM: versión 2.8, JRE 1.8.0 | A: Admitido `[2]` |
-| Azul Zulu OpenJDK 11 - 64 bits | A: Admitido `[3]` |  |
-| Azul Zulu OpenJDK 8 - 64 bits | A: Admitido `[3]` |  |
+| Oracle Java SE 11 JDK - 64 bits | A: Compatible `[1]` | [Descargar](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
+| Oracle Java SE 10 JDK | Z: No compatible `[1]` |
+| Oracle Java SE 9 JDK | Z: No compatible `[1]` |
+| Oracle Java SE 8 JDK - 64 bits | A: Compatible `[1]` | [Descargar](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
+| IBM J9 VM: versión 2.9, JRE 1.8.0 | A: Compatible `[2]` |
+| IBM J9 VM: versión 2.8, JRE 1.8.0 | A: Compatible `[2]` |
+| Azul Zulu OpenJDK 11 - 64 bits | A: Compatible `[3]` |  |
+| Azul Zulu OpenJDK 8 - 64 bits | A: Compatible `[3]` |  |
 
 1. Oracle ha adoptado un modelo de soporte a largo plazo (LTS) para los productos Oracle Java SE. Java 9, Java 10 y Java 12 son versiones no LTS por Oracle (consulte [Plan de soporte de Oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implementar AEM en el entorno de producción, Adobe solo ofrece soporte para las versiones LTS de Java. El soporte técnico y la distribución del Oracle Java SE JDK, incluidas todas las actualizaciones de mantenimiento de las versiones LTS más allá del final de las actualizaciones públicas, serán compatibles directamente con el Adobe para todos los clientes AEM que utilicen la tecnología Oracle Java SE. Consulte la [Política de soporte de Java para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) para obtener más información.
 
@@ -114,24 +114,24 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 
 | **Plataforma** | **Descripción** | **Nivel de soporte** |
 |---|---|---|
-| **Sistema de archivos con archivos TAR** `[1]` | Repositorio | A: Admitido |
-| **Sistema de archivos con almacén de datos** `[1]` | Binarios | A: Admitido |
+| **Sistema de archivos con archivos TAR** `[1]` | Repositorio | A: Compatible |
+| **Sistema de archivos con almacén de datos** `[1]` | Binarios | A: Compatible |
 | Almacenar binarios en archivos TAR en el sistema de archivos `[1]` | Binarios | Z: No compatible con la producción |
-| Amazon S3 | Binarios | A: Admitido |
-| Almacenamiento del Blob de Microsoft Azure | Binarios | A: Admitido |
-| MongoDB Enterprise 4.2 | Repositorio | A: Admitido `[2, 3, 4]` |
-| MongoDB Enterprise 4.0 | Repositorio | Z: No admitido |
-| MongoDB Enterprise 3.6 | Repositorio | Z: No admitido |
-| MongoDB Enterprise 3.4 | Repositorio | Z: No admitido |
+| Amazon S3 | Binarios | A: Compatible |
+| Almacenamiento del Blob de Microsoft Azure | Binarios | A: Compatible |
+| MongoDB Enterprise 4.2 | Repositorio | A: Compatible `[2, 3, 4]` |
+| MongoDB Enterprise 4.0 | Repositorio | Z: No compatible |
+| MongoDB Enterprise 3.6 | Repositorio | Z: No compatible |
+| MongoDB Enterprise 3.4 | Repositorio | Z: No compatible |
 | IBM DB2 10.5 | Base de datos de repositorio y Forms | R: Compatibilidad restringida `[5]` |
 | Base de datos de oracle 12c (12.1.x) | Base de datos de repositorio y Forms | R: Compatibilidad restringida |
-| Microsoft SQL Server 2016 | Base de datos de Forms | A: Admitido |
-| **Apache Lucene (integrado de Quickstart)** | Servicio de búsqueda | A: Admitido |
-| Apache Solr | Servicio de búsqueda | A: Admitido |
+| Servidor Microsoft SQL 2016 | Base de datos de Forms | A: Compatible |
+| **Apache Lucene (integrado de Quickstart)** | Servicio de búsqueda | A: Compatible |
+| Apache Solr | Servicio de búsqueda | A: Compatible |
 
 1. &#39;File System&#39; incluye almacenamiento en bloque compatible con POSIX. Esto incluye la tecnología de almacenamiento en red. Tenga en cuenta que el rendimiento del sistema de archivos puede variar e influir en el rendimiento general. Se recomienda cargar AEM de prueba en combinación con el sistema de archivos de red/remoto.
 1. MongoDB Enterprise 4.2 requiere AEM 6.5 SP9 como mínimo.
-1. El uso compartido MongoDB no es compatible con AEM.
+1. El uso compartido de MongoDB no es compatible con AEM.
 1. Sólo se admite el motor de almacenamiento MongoDB WiredTiger.
 1. Compatible con los clientes de actualización de AEM Forms. No es compatible con las nuevas instalaciones.
 
@@ -141,7 +141,7 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 
 >[!NOTE]
 >
->MongoDB es software de terceros y no está incluido en el paquete de licencias de AEM. Para obtener más información, consulte [Política de licencias de MongoDB](https://www.mongodb.org/about/licensing/) página.
+>MongoDB es software de terceros y no está incluido en el paquete de licencias de AEM. Para obtener más información, consulte la página [Directiva de licencias de MongoDB](https://www.mongodb.org/about/licensing/).
 >
 >Para aprovechar al máximo su implementación de AEM con MongoDB, Adobe recomienda licenciar la versión de MongoDB Enterprise para beneficiarse del soporte profesional. Consulte [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) para obtener más información.
 >
@@ -169,14 +169,14 @@ La versión mínima de la API de servlet necesaria es Servlet 3.1
 
 | Plataforma | Nivel de soporte |
 |---|---|
-| **Motor Servlet integrado de inicio rápido (Jetty 9.4)** | A: Admitido |
-| Oracle WebLogic Server 12.2 (12cR2) | Z: No admitido |
+| **Motor Servlet integrado de inicio rápido (Jetty 9.4)** | A: Compatible |
+| Oracle WebLogic Server 12.2 (12cR2) | Z: No compatible |
 | Entrega continua del servidor de aplicaciones IBM WebSphere (LibertyProfile) con perfil web 7.0 y IBM JRE 1.8 | R: Compatibilidad restringida para nuevos contratos `[2]` |
 | IBM WebSphere Application Server 9.0 y IBM JRE 1.8 | R: Compatibilidad restringida para nuevos contratos `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R: Compatibilidad restringida para nuevos contratos `[2]` |
-| JBoss EAP 7.2.x con el servidor de aplicaciones JBoss | Z: No admitido |
+| JBoss EAP 7.2.x con el servidor de aplicaciones JBoss | Z: No compatible |
 | JBoss EAP 7.1.4 con servidor de aplicaciones JBoss | R: Compatibilidad restringida para nuevos contratos `[1]` `[2]` |
-| JBoss EAP 7.0.x con el servidor de aplicaciones JBoss | Z: No admitido |
+| JBoss EAP 7.0.x con el servidor de aplicaciones JBoss | Z: No compatible |
 
 1. Recomendado para implementaciones con AEM Forms.
 1. A partir de las implementaciones de AEM 6.5 en los servidores de aplicaciones, se cambia a Compatibilidad restringida. Los clientes existentes pueden actualizar a AEM 6.5 y seguir utilizando servidores de aplicaciones. Para los nuevos clientes, viene con criterios de asistencia y un programa de asistencia, como se indica en la descripción de nivel R anterior.
@@ -187,20 +187,30 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 
 | **Plataforma** | **Nivel de soporte** |
 |---|---|
-| **Linux, basado en la distribución de Red Hat** | A: Admitido `[1]` `[3]` |
-| Linux, basado en la distribución de Debian incl. Ubuntu | A: Admitido `[1]` `[2]` |
-| Linux, basado en la distribución SUSE | A: Admitido `[1]` |
+| **Linux, basado en la distribución de Red Hat** | A: Compatible `[1]` `[3]` |
+| Linux, basado en la distribución de Debian incl. Ubuntu | A: Compatible `[1]` `[2]` |
+| Linux, basado en la distribución SUSE | A: Compatible `[1]` |
 | Microsoft Windows Server 2019 `[4]` | R: Compatibilidad restringida para nuevos contratos `[5]` |
 | Microsoft Windows Server 2016 `[4]` | R: Compatibilidad restringida para nuevos contratos `[5]` |
-| Microsoft Windows Server 2012 R2 | Z: No admitido |
-| Oracle Solaris 11 | Z: No admitido |
-| IBM AIX 7.2 | Z: No admitido |
+| Microsoft Windows Server 2012 R2 | Z: No compatible |
+| Oracle Solaris 11 | Z: No compatible |
+| IBM AIX 7.2 | Z: No compatible |
 
 1. Linux Kernel 2.6, 3.x, 4.x y 5.x incluye derivados de la distribución de Red Hat, incluyendo Red Hat Enterprise Linux, CentOS, Oracle Linux y Amazon Linux. Las funciones de complementos de AEM Forms solo son compatibles con CentOS 7, Red Hat Enterprise Linux 7 y Red Hat Enterprise Linux 8.
 1. AEM Forms es compatible con Ubuntu 20.04 LTS.
 1. Distribución de Linux compatible con Adobe Managed Services.
 1. Las implementaciones de producción de Microsoft Windows son compatibles con los clientes que actualizan a la versión 6.5 y con el uso que no es de producción. Las nuevas implementaciones se encuentran bajo solicitud para AEM Sites y Assets.
 1. AEM Forms es compatible con Microsoft Window Server sin las restricciones de nivel de soporte R.
+
+>[!NOTE]
+>
+>Si va a instalar AEM Forms 6.5, asegúrese de que ha instalado los siguientes redistribuibles de Microsoft Visual C+++ de 32 bits.
+>
+>* Microsoft Visual C++ 2008 redistribuible
+>* Microsoft Visual C++ 2010 redistribuible
+>* Microsoft Visual C++ 2012 redistribuible
+>* Microsoft Visual C++ 2013 redistribuible (a partir de la versión 6.5)
+
 
 
 ### Entornos de computación virtual y en la nube {#virtual-cloud-computing-environments}
@@ -223,9 +233,9 @@ Los siguientes servidores web son compatibles para su uso con Dispatcher versió
 
 | Plataforma | Nivel de soporte |
 |---|---|
-| **Apache httpd 2.4.x** `[1,2]` | A: Admitido |
-| Microsoft IIS 10 (Servidor de información de Internet) | A: Admitido |
-| Microsoft IIS 8.5 (Servidor de información de Internet) | Z: No admitido |
+| **Apache httpd 2.4.x** `[1,2]` | A: Compatible |
+| Microsoft IIS 10 (Servidor de información de Internet) | A: Compatible |
+| Microsoft IIS 8.5 (Servidor de información de Internet) | Z: No compatible |
 
 1. Los servidores web creados sobre la base del código fuente httpd de Apache tendrán el mismo nivel de compatibilidad que la versión de httpd en la que se basa. En caso de duda, pida al Adobe que confirme el nivel de asistencia relacionado con el producto del servidor correspondiente. Los siguientes casos:
 
@@ -257,48 +267,48 @@ La interfaz de usuario de AEM está optimizada para pantallas más grandes (norm
   </tr>
   <tr>
    <td><strong>Google Chrome (Evergreen)</strong></td>
-   <td>A: Admitido</td>
-   <td>A: Admitido</td>
+   <td>A: Compatible</td>
+   <td>A: Compatible</td>
   </tr>
   <tr>
    <td>Microsoft Edge (Evergreen)</td>
-   <td>A: Admitido</td>
-   <td>A: Admitido</td>
+   <td>A: Compatible</td>
+   <td>A: Compatible</td>
   </tr>
   <tr>
    <td>Microsoft Internet Explorer 11</td>
-   <td>Z: No admitido</td>
-   <td>Z: No admitido</td>
+   <td>Z: No compatible</td>
+   <td>Z: No compatible</td>
   </tr>
   <tr>
    <td>Mozilla Firefox (Evergreen)</td>
-   <td>A: Admitido</td>
-   <td>A: Admitido</td>
+   <td>A: Compatible</td>
+   <td>A: Compatible</td>
   </tr>
   <tr>
    <td>Mozilla Firefox último ESR [1]</td>
-   <td>A: Admitido</td>
-   <td>A: Admitido</td>
+   <td>A: Compatible</td>
+   <td>A: Compatible</td>
   </tr>
   <tr>
    <td>Apple Safari en macOS (Evergreen)</td>
-   <td>A: Admitido</td>
-   <td>A: Admitido</td>
+   <td>A: Compatible</td>
+   <td>A: Compatible</td>
   </tr>
   <tr>
    <td>Apple Safari 11.x en macOS</td>
-   <td>Z: No admitido</td>
-   <td>Z: No admitido</td>
+   <td>Z: No compatible</td>
+   <td>Z: No compatible</td>
   </tr>
   <tr>
    <td>Apple Safari en iOS 12.x</td>
    <td>A: Admitido [2]</td>
-   <td>Z: No admitido</td>
+   <td>Z: No compatible</td>
   </tr>
   <tr>
    <td>Apple Safari en iOS 11.x</td>
-   <td>Z: No admitido</td>
-   <td>Z: No admitido</td>
+   <td>Z: No compatible</td>
+   <td>Z: No compatible</td>
   </tr>
  </tbody>
 </table>
@@ -422,7 +432,7 @@ Para Windows x86:
 
 ### Requisitos del Generador de PDF de AEM Forms {#requirements-for-aem-forms-pdf-generator}
 
-### Soporte de software para Generador de PDF {#software-support-for-pdf-generator}
+### Soporte de software para el generador de PDF {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
@@ -431,19 +441,19 @@ Para Windows x86:
    <th><p><strong>Formatos compatibles para la conversión a PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Seguimiento clásico de Acrobat 2020</a> última versión</td>
+   <td><a href="https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> última versión</td>
    <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF y DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Seguimiento clásico de Acrobat 2017</a> versión más reciente (obsoleta)</td>
-   <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF y DWF</td>
+   <td><a href="https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> versión más reciente (Obsoleto)</td>
+   <td>XPS, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, y DWF</td>
   </tr>
   <tr>
    <td>Microsoft® Office 2019</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016 (obsoleto)</td>
+   <td>Microsoft® Office 2016 (Obsoleto)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF y TXT</td>
   </tr>
   <tr>
@@ -451,7 +461,7 @@ Para Windows x86:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016 (obsoleto)<br /> </td>
+   <td>Microsoft® Office Visio 2016 (Obsoleto)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
   <tr>
@@ -459,37 +469,37 @@ Para Windows x86:
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Publisher 2016 (obsoleto)<br /> </td>
+   <td>Microsoft® Publisher 2016 (Obsoleto)<br /> </td>
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Proyecto Microsoft® 2016 (obsoleto)<br /> </td>
+   <td>Microsoft® Project 2016 (Obsoleto)<br /> </td>
    <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM RTF, y TXT</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF y TXT</td>
   </tr>
   <tr>
-   <td>OpenOffice 4.1.2 (obsoleto)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM RTF, y TXT</td>
+   <td>OpenOffice 4.1.2 (Obsoleto)</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formatos de imagen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF y TXT</td>
   </tr>  
  </tbody>
 </table>
 
 >[!NOTE]
 >
->PDF Generator solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
+>El generador de PDF solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
 >
 >Además:
 >
->* El generador de PDF requiere una versión de 32 bits de [Acrobat 2020 Classic track versión 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versión 17.011.30078 para realizar la conversión.
->* Las conversiones de PDF Generator para OpenOffice solo son compatibles con Windows y Linux.
+>* El generador de PDF requiere una versión de 32 bits de [Acrobat 2020 Classic track versión 20.004.30006](https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versión 17.011.30078 para realizar la conversión.
+>* Las conversiones del generador de PDF para OpenOffice solo son compatibles con Windows y Linux.
 >* PDF Generator solo admite la versión comercial de 32 bits de Microsoft Office Professional Plus y otro software necesario para la conversión en el sistema operativo Windows.
 >* PDF Generator es compatible con las versiones de 32 y 64 bits de OpenOffice en el sistema operativo Linux.
->* El Generador de PDF no es compatible con Microsoft Office 365.
->* Las características de PDF, Optimize PDF y Export PDF de OCR solo son compatibles con Windows.
->* Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad de Generador de PDF. Solo se debe acceder a la versión agrupada mediante programación con AEM Forms, durante el período de licencia de AEM Forms, para su uso con el Generador de PDF de AEM Forms. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* El generador de PDF no es compatible con Microsoft Office 365.
+>* Las características de PDF, Optimizar PDF y Exportar PDF de OCR solo son compatibles con Windows.
+>* Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad Generador de PDF. Solo se debe acceder a la versión agrupada mediante programación con AEM Forms, durante el período de licencia de AEM Forms, para usarlo con el generador de PDF de AEM Forms. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([On-Premise](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* El servicio Generador de PDF no es compatible con Microsoft Windows 10.
 >* El Generador de PDF no puede convertir archivos con Microsoft Visio 2019. Puede seguir utilizando Microsoft Visio 2016 para convertir archivos .VSD y .VSDX.
 >* El Generador de PDF no puede convertir archivos mediante Microsoft Project 2019. Puede seguir utilizando Microsoft Project 2016 para convertir archivos .VSD y .VSDX.
@@ -501,7 +511,7 @@ Para Windows x86:
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server o Microsoft® Windows® 10
 * Procesador de 1 GHz o más rápido con soporte para PAE, NX y SSE2.
 * 1 GB de RAM para 32 bits o 2 GB de RAM para SO de 64 bits;
-* 16 GB de espacio en disco para 32 o 20 GB de espacio en disco para SO de 64 bits
+* 16 GB de espacio en disco para 32 bits o 20 GB de espacio en disco para el sistema operativo de 64 bits
 * Memoria gráfica: 128 MB de GPU (se recomiendan 256 MB);
 * 2,35 GB de espacio disponible en disco duro;
 * 1024 X 768 píxeles de resolución de monitor o superior;
