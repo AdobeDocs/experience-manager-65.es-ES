@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
+source-git-commit: 2f635d5c856b35794ef2d62c15bc7cf4f4e57773
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 97%
@@ -219,7 +219,7 @@ Puede crear varias variaciones para este fragmento de experiencia en función de
 1. La opción **Crear** le permite crear:
 
    * **Variación**
-   * **Variación como Live Copy**.
+   * **[Variación como Live Copy](/help/sites-administering/msm.md#live-copies)**.
 
 1. Defina las propiedades requeridas:
 
@@ -299,7 +299,7 @@ Puede arrastrar el bloque de creación al sistema de párrafos de cualquier frag
 
 Se pueden ver los detalles del fragmento:
 
-1. Los detalles se muestran en todas las vistas de la consola de **fragmentos de experiencias**, con una **vista de lista**[ que incluye los detalles de una exportación a destino](/help/sites-administering/experience-fragments-target.md):
+1. Los detalles se muestran en todas las vistas de la consola de **Fragmentos de experiencias**, con una **vista de lista** que incluye los detalles de una [exportación a destino](/help/sites-administering/experience-fragments-target.md):
 
    ![ef-03](assets/ef-03.png)
 
