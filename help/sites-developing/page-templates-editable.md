@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: d30bfb9e67d0a2a0e870ee0841ed14060def7756
+source-git-commit: ae56ffafff38fe60530a8850732de58ba8c8f8f9
 workflow-type: tm+mt
 source-wordcount: '3252'
 ht-degree: 10%
@@ -262,7 +262,7 @@ La siguiente tabla detalla los permisos necesarios para la edición de plantilla
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
-   <td>Autores de plantillas<br /> </td>
+   <td>Template Autores<br /> </td>
    <td>leer, escribir, replicar</td>
    <td>Creadores de plantillas que crean, leen, actualizan, eliminan y replican plantillas en sitios específicos <code>/conf</code> espacio</td>
   </tr>
@@ -322,7 +322,7 @@ Las plantillas ya no deben almacenarse en `/conf/global`, sin embargo, para algu
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td>
-   <td>Autores de plantillas</td>
+   <td>Template Autores</td>
    <td>leer, escribir, replicar</td>
    <td>Creadores de plantillas que crean, leen, actualizan, eliminan y replican plantillas en <code>/conf/global</code></td>
   </tr>
@@ -539,7 +539,7 @@ When [editar una plantilla, puede definir el diseño](/help/sites-authoring/temp
 
 ### Políticas de contenido {#content-policies}
 
-Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente. Por ejemplo, los componentes disponibles o las dimensiones mínimas/máximas. Esto se aplica a la plantilla (y a las páginas creadas con la plantilla). Las políticas de contenido se pueden crear y seleccionar en el editor de plantillas.
+Las políticas de contenido (o diseño) definen las propiedades de diseño de un componente, como su disponibilidad o dimensiones mínimas/máximas. Esto se aplica a la plantilla (y a las páginas creadas con la plantilla). Las políticas de contenido se pueden crear y seleccionar en el editor de plantillas.
 
 * La propiedad `cq:policy`, en el `root` node
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
@@ -584,7 +584,7 @@ Las políticas de página permiten definir la variable [política de contenido](
       * Defina la propiedad:
 
          * Nombre: status
-         * Tipo: Cadena
+         * Tipo: cadena
          * Valor: `enabled`
 
 1. **Plantillas permitidas**

@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 85a0c578a2cf57e2b4d65123cffe3816624211c8
 workflow-type: tm+mt
 source-wordcount: '1802'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -90,7 +90,7 @@ El servidor AEM es **Basado en Java** y se ejecuta en la mayoría de los sistema
 
 En AEM terminología, una &quot;instancia&quot; es una copia de AEM que se ejecuta en un servidor. AEM instalaciones suelen implicar al menos dos instancias, normalmente se ejecutan en equipos separados:
 
-* **Autor**: Instancia de AEM utilizada para crear, cargar y editar contenido y para administrar el sitio web. Una vez que el contenido está listo para su lanzamiento, se duplica en la instancia de publicación.
+* **Autor**: Instancia de AEM utilizada para crear, cargar y editar contenido y para administrar el sitio web. Una vez que el contenido está listo para su publicación, se replica en la instancia de publicación.
 * **Publicación**: Una instancia de AEM que sirve el contenido publicado al público.
 
 Estas instancias son idénticas en términos de software instalado. Solo se diferencian por configuración. Además, la mayoría de las instalaciones utilizan un Dispatcher:
@@ -165,7 +165,7 @@ En la siguiente sección describimos el **instalación independiente**. Para obt
 
    *Tenga en cuenta que la ruta del directorio de archivos debe constar solamente de caracteres ASCII de EE. UU.*
 
-1. Coloque el **jar** y archivos **license **en este directorio:
+1. Coloque el **jar** y **licencia** archivos en este directorio:
 
    ```shell
    <aem-install>/
@@ -287,7 +287,7 @@ AEM inicia y redirige automáticamente el explorador web a la página adecuada, 
 
 Una vez que haya iniciado sesión, tendrá acceso a AEM. Para obtener más información, según su función, consulte lo siguiente:
 
-* [Creación  ](/help/sites-authoring/home.md)
+* [Creación](/help/sites-authoring/home.md)
 * [Administración](/help/sites-administering/home.md)
 * [Desarrollo de](/help/sites-developing/home.md)
 * [Administración](/help/managing/best-practices.md)
@@ -304,7 +304,7 @@ La sección anterior debería proporcionarle una buena comprensión de los conce
 * [Línea de comandos: start y stop](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configurar](/help/sites-deploying/configuring.md)
 * [Actualización a AEM 6.5](/help/sites-deploying/upgrade.md)
-* [comercio electrónico](/help/commerce/cif-classic/deploying/ecommerce.md)
+* [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [Artículos de procedimientos de configuración](/help/sites-deploying/ht-deploy.md)
 * [Consola web](/help/sites-deploying/web-console.md)
 * [Solución de problemas de replicación](/help/sites-deploying/troubleshoot-rep.md)
@@ -313,4 +313,4 @@ La sección anterior debería proporcionarle una buena comprensión de los conce
 * [Introducción a la plataforma AEM](/help/sites-deploying/platform.md)
 * [Directrices de rendimiento](/help/sites-deploying/performance-guidelines.md)
 * [Introducción a AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [¿Qué es AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [¿Qué es AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=es)
