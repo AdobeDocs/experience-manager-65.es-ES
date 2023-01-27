@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
+source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 1%
@@ -150,7 +150,7 @@ Cada componente debe ampliarse con una funcionalidad que decore el elemento del 
 
 Un contenedor es un componente diseñado para contener y procesar componentes secundarios. Para ello, el contenedor se repite sobre el `:itemsOrder`, `:items` y `:children` propiedades de su modelo.
 
-El contenedor obtiene dinámicamente los componentes secundarios del almacén de la variable ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)` biblioteca. A continuación, el contenedor extiende el componente secundario con las capacidades del proveedor de modelo y, finalmente, lo crea una instancia.
+El contenedor obtiene dinámicamente los componentes secundarios del almacén de la variable [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) biblioteca. A continuación, el contenedor extiende el componente secundario con las capacidades del proveedor de modelo y, finalmente, lo crea una instancia.
 
 ### Página {#page}
 

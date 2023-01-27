@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 509ea0945e6c80e50f6f5bffd4c68282d586504a
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 0%
+source-wordcount: '491'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +43,7 @@ La variable `ModelRouter` automatiza la recuperación de fragmentos del modelo. 
 
 >[!NOTE]
 >
->Actualmente, el proyecto React de muestra de We.Retail Journal ilustra el enfoque automatizado, mientras que el proyecto de Angular ilustra el manual. Un enfoque semiautomatizado también sería un caso de uso válido.
+>La variable [Diario We.Retail](https://github.com/adobe/aem-sample-we-retail-journal) ejemplo de proyecto React ilustra el enfoque automatizado, mientras que el proyecto de Angular ilustra el manual. Un enfoque semiautomatizado también sería un caso de uso válido.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ La variable `ModelRouter` admite el concepto de enrutamiento de modelo a medida 
 De forma predeterminada, este comportamiento se activa automáticamente. Para deshabilitarlo, el SPA debe renderizar la siguiente meta propiedad:
 
 ```
-<meta property="cq:pagemodel_router" content="disable"\>
+<meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
 Tenga en cuenta que cada ruta del SPA debe corresponder a un recurso accesible en AEM (por ejemplo, &quot; `/content/mysite/mypage"`) desde el `PageModelManager` intentará cargar automáticamente el modelo de página correspondiente una vez seleccionada la ruta. Aunque, si es necesario, el SPA también puede definir una &quot;lista de bloqueados&quot; de rutas que el `PageModelManager`:
