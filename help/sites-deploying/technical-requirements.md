@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 72ed4ceee560839c6573461cb5d4d6cbccfd696f
+source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
 workflow-type: tm+mt
-source-wordcount: '3525'
+source-wordcount: '3529'
 ht-degree: 22%
 
 ---
@@ -196,7 +196,7 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 | Oracle Solaris 11 | Z: No compatible |
 | IBM AIX 7.2 | Z: No compatible |
 
-1. Linux Kernel 2.6, 3.x, 4.x y 5.x incluye derivados de la distribución de Red Hat, incluyendo Red Hat Enterprise Linux, CentOS, Oracle Linux y Amazon Linux. Las funciones de complementos de AEM Forms solo son compatibles con CentOS 7, Red Hat Enterprise Linux 7 y Red Hat Enterprise Linux 8.
+1. Núcleo Linux 2.6, 3. x, 4. x y 5. x incluye derivados de la distribución de Red Hat, incluyendo Red Hat Enterprise Linux, CentOS, Oracle Linux y Amazon Linux. Las funciones de complementos de AEM Forms solo son compatibles con CentOS 7, Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8 y Red Hat Enterprise Linux 9.
 1. AEM Forms es compatible con Ubuntu 20.04 LTS.
 1. Distribución de Linux compatible con Adobe Managed Services.
 1. Las implementaciones de producción de Microsoft Windows son compatibles con los clientes que actualizan a la versión 6.5 y con el uso que no es de producción. Las nuevas implementaciones se encuentran bajo solicitud para AEM Sites y Assets.
@@ -215,7 +215,7 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 
 ### Entornos de computación virtual y en la nube {#virtual-cloud-computing-environments}
 
-Adobe Experience Manager es compatible con la ejecución en una máquina virtual en entornos de computación en la nube, como Microsoft Azure y Amazon Web Service (AWS), de acuerdo con los requisitos técnicos enumerados en esta página y según los términos de asistencia estándar de Adobe.
+Adobe Experience Manager es compatible con la ejecución en una máquina virtual en entornos de computación en la nube, como Microsoft Azure y Amazon Web Service (AWS), de acuerdo con los requisitos técnicos enumerados en esta página y según los términos de asistencia estándar del Adobe.
 
 Para un entorno nativo de la nube, revise la última oferta de la línea de productos AEM: Adobe Experience Manager as a Cloud Service. Consulte [Documentación de Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) para obtener más información.
 
