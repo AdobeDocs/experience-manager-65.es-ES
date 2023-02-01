@@ -3,10 +3,10 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Busque información sobre la versión, novedades, procedimientos de instalación y una lista detallada de cambios para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: d3b830730ef06fb9968a46d6f26a275417cf36f0
+source-git-commit: ec9094f25cfbcd1497a6bbc87cce9754e247a770
 workflow-type: tm+mt
-source-wordcount: '4046'
-ht-degree: 4%
+source-wordcount: '3759'
+ht-degree: 3%
 
 ---
 
@@ -218,7 +218,9 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->Adobe no recomienda quitar o desinstalar el [!DNL Experience Manager] Paquete 6.5.15.0. Como tal, antes de instalar el paquete, debe crear una copia de seguridad de la variable `crx-repository` en caso de que necesite revertirla. <!-- UPDATE FOR EACH NEW RELEASE -->
+> * Adobe no recomienda quitar o desinstalar el [!DNL Experience Manager] Paquete 6.5.15.0. Como tal, antes de instalar el paquete, debe crear una copia de seguridad de la variable `crx-repository` en caso de que necesite revertirla. <!-- UPDATE FOR EACH NEW RELEASE -->
+> * Para obtener instrucciones sobre la instalación de Service Pack para AEM Forms, consulte [Instrucciones de instalación de AEM Forms Service Pack](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+
 
 ### Instale el Service Pack en [!DNL Experience Manager] 6,5 {#install-service-pack}
 
@@ -259,38 +261,9 @@ Para saber cuáles son las plataformas certificadas para funcionar con esta vers
 
 1. El paquete OSGi `org.apache.jackrabbit.oak-core` es la versión 1.22.13 o posterior (utilice la consola web: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
-### Instalar [!DNL Experience Manager] Paquete de complementos de Forms {#install-aem-forms-add-on-package}
+### Instalar Service Pack en [!DNL Experience Manager] Forms {#install-service-pack-on-aemforms}
 
->[!NOTE]
->
->Omitir si no utiliza [!DNL Experience Manager] Forms.
-
-<!-- 
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
--->
-
-1. Asegúrese de que ha instalado la variable [!DNL Experience Manager] service pack.
-1. Descargue el paquete de complementos de Forms correspondiente que aparece en las [versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) para su sistema operativo.
-1. Instale el paquete de complementos de Forms como se describe en [Instalación de paquetes de complementos de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-1. Si utiliza letras en Experience Manager 6.5 Forms, instale la variable [último paquete de compatibilidad de AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates).
-
-### Instalar [!DNL Experience Manager] Forms en JEE {#install-aem-forms-jee-installer}
-
->[!NOTE]
->
->Omita este paso si no utiliza AEM Forms en JEE. Correcciones en [!DNL Experience Manager] Forms en JEE se entrega a través de un instalador independiente.
-
-Realice los siguientes pasos para todas las AEM Forms en entornos JEE utilizando cualquier servidor de aplicaciones que no sea JBoss EAP 7.4.0.
-1. Instalar [Parche JEE de AEM Forms](jee-patch-installer-65.md). El incluye todos los problemas corregidos para todos los componentes de AEM 6.5 Forms en JEE.
-1. Instale el [Fragmento para AEM 6.5 Forms en JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar). El fragmento añade las dependencias necesarias para instalar AEM Service Pack 15 (6.5.15.0).
-1. Después de instalar el fragmento, espere a que el servidor de aplicaciones se estabilice.
-1. [Instale el Service Pack en el Experience Manager 6.5](#install-service-pack).
-
-   >[!NOTE]
-   >
-   >Si instala la última [Paquete de servicio de AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)antes de instalar el [Fragmento para AEM 6.5 Forms en JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) en su Forms AEM 6.5 en el entorno JEE, el CRX/paquete y la página de inicio pueden dejar de funcionar y se encuentra con el error de servicio no disponible. Para resolver el problema, realice las acciones siguientes: [listado aquí](/help/forms/using/aem-service-pack-installation-solution.md).
-
-1. Instale el [último paquete de complementos de Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es), elimine el paquete de complementos de Forms del `crx-repository\install` y reinicie el servidor.
+Para obtener instrucciones para instalar el Service Pack en AEM Forms, consulte [Instrucciones de instalación de AEM Forms Service Pack](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 ### UberJar {#uber-jar}
 
