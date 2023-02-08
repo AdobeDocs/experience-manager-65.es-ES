@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
+source-git-commit: 1759b6b2a0360b6fc173e711aaf88484c554eae8
 workflow-type: tm+mt
-source-wordcount: '3005'
+source-wordcount: '3000'
 ht-degree: 9%
 
 ---
@@ -78,7 +78,7 @@ En **[!UICONTROL Máscara de enfoque]**, tiene las siguientes opciones de filtra
 | Radio | Determina el número de píxeles adyacentes a los píxeles de borde que afectarán al enfoque. En las imágenes de alta resolución, especifique un valor entre 1 y 2. Un valor bajo solo aplica enfoque a los píxeles de borde; un valor alto enfoca una banda más ancha de píxeles. El valor adecuado depende del tamaño de la imagen. El valor predeterminado es 0,2. El rango es 0-250. |
 | Umbral | Determina el intervalo de contraste que se debe ignorar cuando se aplica el filtro de máscara de enfoque. En otras palabras, esta opción determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y se agranden. Para evitar la introducción del ruido, experimente con valores entre 0 y 255. |
 
-El enfoque se describe en [Enfoque de imágenes](/help/assets/assets/sharpening_images.pdf.
+El enfoque se describe en [Enfoque de imágenes](/help/assets/assets/sharpening_images.pdf).
 
 ## Creación de perfiles de imagen de Dynamic Media {#creating-image-profiles}
 
@@ -158,7 +158,7 @@ Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de v�
 
 **Para aplicar un perfil de imagen de Dynamic Media globalmente:**
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Vaya a `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` y aplique el perfil adecuado y seleccione **[!UICONTROL Guardar]**.
 
