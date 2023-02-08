@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96aa75dec7433aa3961944fa57a80c4719316ba5
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2696'
 ht-degree: 85%
 
 ---
@@ -65,7 +65,7 @@ En la siguiente tabla se enumeran las opciones de configuración de lanzamiento 
   <tr>
    <td>Configuración de lanzamiento estándar</td>
    <td>La configuración de lanzamiento estándar permite iniciar procesos de lanzamiento con el activador de lanzamientos, y ejecuta acciones como crear, actualizar, eliminar contenido y ordenar nodos secundarios.</td>
-   <td>En el lanzamiento</td>
+   <td>En el despliegue</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>
   <tr>
@@ -95,31 +95,31 @@ En la siguiente tabla se enumeran las opciones de configuración de lanzamiento 
   <tr>
    <td>Lanzamiento de promoción</td>
    <td>Configuración del lanzamiento estándar para promocionar páginas de inicio con dicho fin.</td>
-   <td>En el lanzamiento</td>
+   <td>En el despliegue</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> markLiveRelationship</td>
   </tr>
   <tr>
    <td>Configuración del lanzamiento de contenido de la página del catálogo</td>
    <td>Aplica plantillas de página de un modelo de catálogo.</td>
-   <td>En el lanzamiento</td>
+   <td>En el despliegue</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productCreateUpdate<br /> orderChildren</td>
   </tr>
   <tr>
    <td>Configuración del lanzamiento de actualización de la página del catálogo</td>
    <td>Aplica propiedades de destino de un modelo de catálogo. Debe ejecutarse después de la configuración de lanzamiento del contenido de la página del catálogo.</td>
-   <td>En el lanzamiento</td>
+   <td>En el despliegue</td>
    <td>catalogRolloutHooks</td>
   </tr>
   <tr>
    <td>Configuración del lanzamiento de publicaciones de DPS</td>
    <td>La configuración del lanzamiento de publicación de DPS permite iniciar el proceso del activador "En el lanzamiento" al mismo tiempo que se excluyen las propiedades de enlace de FolioProducer en el lanzamiento inicial.</td>
-   <td>En el lanzamiento</td>
+   <td>En el despliegue</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> dpsMetadataFilter</td>
   </tr>
   <tr>
    <td>Configuración del lanzamiento del catálogo heredado (5.6.0)</td>
    <td>En desuso. Use el generador de catálogos en lugar de MSM para los lanzamientos de catálogos.</td>
-   <td>En el lanzamiento</td>
+   <td>En el despliegue</td>
    <td>editProperties</td>
   </tr>
  </tbody>
@@ -172,7 +172,7 @@ En la siguiente tabla se enumeran las acciones de sincronización que se instala
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>En la Live Copy, esta acción de sincronización actualiza referencias como, por ejemplo, los vínculos.<br /> Busca rutas de acceso en las páginas de Live Copy que apuntan a un recurso dentro del modelo. Cuando se encuentran, se actualiza la ruta de acceso para que apunte al recurso relacionado dentro de la Live Copy (en lugar del modelo). Las referencias que tienen los destinos fuera del modelo no cambian.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure el servicio de acción de actualización de referencias de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. </p> </td>
+   <td><p>En la Live Copy, esta acción de sincronización actualiza referencias como vínculos.<br /> Busca rutas de acceso en las páginas de Live Copy que apuntan a un recurso dentro del modelo. Cuando se encuentran, se actualiza la ruta de acceso para que apunte al recurso relacionado dentro de la Live Copy (en lugar del modelo). Las referencias que tienen los destinos fuera del modelo no cambian.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure el servicio de acción de actualización de referencias de CQ MSM</a> para especificar los tipos de nodo, los elementos de párrafo y las propiedades de página que se excluirán. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -279,7 +279,7 @@ En la tabla siguiente se enumeran las acciones de sincronización para las que s
 | contentDelete | Acción de eliminación de contenido de CQ MSM | com.day.cq.wcm.msm.impl.actions.ContentDeleteActionFactory |
 | contentUpdate | Acción de actualización de contenido de CQ MSM | com.day.cq.wcm.msm.impl.actions.ContentUpdateActionFactory |
 | PageMoveAction | Acción de movimiento de página de CQ MSM | com.day.cq.wcm.msm.impl.actions.PageMoveActionFactory |
-| ReferencesUpdate | Acción de actualización de referencias de CQ MSM | com.day.cq.wcm.msm.impl.actions.ReferencesUpdateActionFactory |
+| referencesUpdate | Acción de actualización de referencias de CQ MSM | com.day.cq.wcm.msm.impl.actions.ReferencesUpdateActionFactory |
 
 En la tabla siguiente se describen las propiedades que se pueden configurar:
 
