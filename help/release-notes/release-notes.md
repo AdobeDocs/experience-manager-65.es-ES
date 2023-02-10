@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Busque información sobre la versión, novedades, procedimientos de instalación y una lista detallada de cambios para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: f0746c6b7ada548c47d13089160ecccec5f2bd2b
+source-git-commit: c4d45bc80f0973097d7b5917dca54390cfd40bd7
 workflow-type: tm+mt
-source-wordcount: '3759'
+source-wordcount: '3786'
 ht-degree: 3%
 
 ---
@@ -302,6 +302,8 @@ Revise si utiliza una función o una capacidad en una implementación. Además, 
 
 * [AEM fragmento de contenido con el paquete de índice de GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
 Este paquete es necesario para los clientes que utilizan GraphQL; esto les permite añadir la definición de índice necesaria en función de las funciones que realmente utilizan.
+
+* Actualice las consultas de GraphQL que puedan haber utilizado un nombre de API personalizado para el modelo de contenido a para utilizar en su lugar el nombre predeterminado del modelo de contenido.
 
 * Como [!DNL Microsoft® Windows Server 2019] no es compatible [!DNL MySQL 5.7] y [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] no admite instalaciones llave en mano para [!DNL AEM Forms 6.5.10.0].
 
