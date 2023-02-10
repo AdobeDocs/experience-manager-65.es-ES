@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
-source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
+source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
 workflow-type: tm+mt
 source-wordcount: '7792'
 ht-degree: 2%
@@ -63,7 +63,7 @@ Si es cliente de Dynamic Media, debe utilizar el envío híbrido como mecanismo 
 
 Las tareas de configuración que siguen hacen referencia a los términos siguientes:
 
-| **Término** | **Habilitado para Dynamic Media** | **Descripción** |
+| **Term** | **Habilitado para Dynamic Media** | **Descripción** |
 |---|---|---|
 | Nodo Autor del Experience Manager | Marca de verificación blanca en círculo verde | El nodo de creación que implementa en On-Premise o a través de Managed Services. |
 | Nodo Publicación de Experience Manager | &quot;X&quot; blanco en un cuadrado rojo. | El nodo de publicación que implementa en On-Premise o a través de Managed Services. |
@@ -161,13 +161,13 @@ Para habilitar Dynamic Media, debe habilitar el modo de ejecución de Dynamic Me
 
    * Agregar `-r dynamicmedia` al final de la línea de comandos al iniciar el archivo jar.
 
-   ```shell
+   ```shellsession {.line-numbers}
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -r dynamicmedia
    ```
 
    Si está publicando en s7delivery, también debe incluir los siguientes argumentos trustStore:
 
-   ```
+   ```shellsession {.line-numbers}
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
    
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
@@ -216,7 +216,7 @@ Para deshabilitar Dynamic Media después de haberla habilitado, elimine la varia
 
    * No agregue `-r dynamicmedia` a la línea de comandos al iniciar el archivo jar.
 
-   ```shell
+   ```shellsession {.line-numbers}
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar
    ```
 
@@ -667,7 +667,7 @@ Si utiliza Dynamic Media para (1) imágenes en producción *o* (2) imágenes y v
  <tbody>
   <tr>
    <td> </td>
-   <td><strong>Filtro</strong></td>
+   <td><strong>Filter</strong></td>
    <td><strong>Tipo de máquina</strong></td>
    <td><strong>Representaciones</strong></td>
   </tr>
@@ -782,7 +782,7 @@ Si hay muchos filtros diferentes en un autor, cada agente necesita que se le asi
    | `+` | Incluye recursos para replicación |
    | `-` | Excluye los activos de la replicación |
 
-   Vaya a `content/dam/<locate your asset>/jcr:content/renditions`.
+   Navegue hasta `content/dam/<locate your asset>/jcr:content/renditions`.
 
    El siguiente gráfico es un ejemplo de las representaciones de un recurso.
 
@@ -837,7 +837,7 @@ Para definir la configuración del servidor de imágenes de Dynamic Media:
    |---|---|---|
    | Caché habilitada | Comprobado | Indica si la caché de respuesta está habilitada |
    | Raíz de caché | cache | Una o más rutas a las carpetas de caché de respuestas. Las rutas relativas se resuelven en la carpeta interna del paquete de imágenes s7imaging. |
-   | Tamaño máximo de caché | 20000000 | Tamaño máximo de la caché de respuesta en bytes. |
+   | Tamaño máximo de caché | 200000000 | Tamaño máximo de la caché de respuesta en bytes. |
    | Entradas máximas en caché | 100 000 | Número máximo de entradas permitidas en la caché. |
 
 ### Configuración predeterminada de manifiesto {#default-manifest-settings}
@@ -898,7 +898,7 @@ Para utilizar las funcionalidades de administración de color de Dynamic Media, 
 
 **Para instalar el paquete de características 12445:**
 
-1. Vaya a [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) y descargue `cq-6.3.0-featurepack-12445`.
+1. Vaya a [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/es/aem.html) y descargue `cq-6.3.0-featurepack-12445`.
 
    Consulte [Cómo trabajar con paquetes](/help/sites-administering/package-manager.md) para obtener más información sobre el uso de paquetes en [!DNL Adobe Experience Manager].
 
@@ -1129,7 +1129,7 @@ Están instalados los siguientes perfiles de color:
    <td>sRGB IEC61966-2.1</td>
   </tr>
   <tr>
-   <td>FograNoCubierta29</td>
+   <td>UncoatedFogra29</td>
    <td>CMYK</td>
    <td>FOGRA29 no recubierto (ISO 12647-2:2004)</td>
   </tr>

@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: d3045e1a68d05eb257a6444f75a30faae4950db1
+source-git-commit: a8db862b4a90ee6679de44df9508caf75a4c3eec
 workflow-type: tm+mt
 source-wordcount: '6489'
 ht-degree: 3%
@@ -56,7 +56,7 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos de 
 
 Para habilitar Dynamic Media, inicie el Experience Manager mediante `dynamicmedia_scene7` ejecute el modo desde la línea de comandos introduciendo lo siguiente en una ventana de terminal (por ejemplo, el puerto utilizado es 4502):
 
-```shell
+```shell {.line-numbers}
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
@@ -225,7 +225,7 @@ Cuando ejecuta Dynamic Media: modo Scene7 en AEM, actualmente se reenvía `/is/i
 
 1. Una nueva pestaña del navegador se abre para **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]** página.
 
-   ![29-08-2019](assets/2019-08-02_16-17-29.png)
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
 1. En la página, desplácese hasta el nombre *Adobe CQ Scene7 Platform Server*.
 
@@ -317,7 +317,7 @@ Puede introducir un valor de hasta 15 GB (`2013265920` bytes). En este caso, los
    *Ahora, establezca el tiempo de espera para el proceso de carga binaria directa de Scene7 siguiendo estos pasos:*
 
 1. En el Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global.
-1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
+1. Navegue hasta **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
 1. En la página Modelos de flujo de trabajo , seleccione **[!UICONTROL Codificar vídeo de Dynamic Media]**.
 1. En la barra de herramientas, seleccione **[!UICONTROL Editar]**.
 1. En la página de flujo de trabajo, haga doble clic en el botón **[!UICONTROL Carga binaria directa de Scene7]** paso del proceso.
@@ -385,7 +385,7 @@ Consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
 
    * Pulsar dos veces **[!UICONTROL jobParam]** para abrir el campo de texto asociado. Consulte [Tipos Mime Admitidos](/help/assets/assets-formats.md#supported-mime-types) para obtener una lista de los valores de parámetro de procesamiento permitidos que puede utilizar para un tipo de MIME determinado.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Repita los pasos del 3 al 4 para editar más tipos MIME.
    * En la barra de menús de la página CRXDE Lite, seleccione **[!UICONTROL Guardar todo]**.
@@ -404,7 +404,7 @@ Puede añadir tipos MIME personalizados para formatos no compatibles en Experien
 
 1. Una nueva pestaña del navegador se abre para **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]** página.
 
-   ![29-08-2019](assets/2019-08-02_16-17-29.png)
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
 1. En la página, desplácese hacia abajo hasta el nombre *Servicio MIME de tipo de recurso de Adobe CQ Scene7* como se muestra en la siguiente captura de pantalla. A la derecha del nombre, seleccione la opción **[!UICONTROL Editar los valores de configuración]** (icono de lápiz).
 
@@ -412,7 +412,7 @@ Puede añadir tipos MIME personalizados para formatos no compatibles en Experien
 
 1. En el **Servicio de tipo MIME de Adobe CQ Scene7 Asset** seleccione cualquier icono de signo más &lt;+>. La ubicación en la tabla donde se selecciona el signo más para añadir el nuevo tipo de mime es trivial.
 
-   ![27-27-02-08-2019](assets/2019-08-02_16-27-27.png)
+   ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
 
 1. Tipo `DWG=image/vnd.dwg` en el campo de texto vacío que acaba de añadir.
 
@@ -482,7 +482,7 @@ Hay dos elementos disponibles para la definición: Coincidencia y Nombre base. E
    * Select **[!UICONTROL Agregar]** para agregar otra convención de nombres para un elemento.
    * Select **[!UICONTROL Eliminar]** para eliminar una convención de nombres para un elemento.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Select **[!UICONTROL Guardar como]** y escriba un nombre para el ajuste preestablecido.
    * Select **[!UICONTROL Guardar]** si está editando un ajuste preestablecido existente.
@@ -508,7 +508,7 @@ Se puede utilizar el método de campo de formulario para definir un ajuste prees
 1. En el panel Lista de ajustes preestablecidos, seleccione **[!UICONTROL Agregar]** para activar los campos de definición en el panel Detalles del lado derecho de la pantalla.
 1. En el panel Detalles, en el campo Nombre de ajuste preestablecido , escriba un nombre para el ajuste preestablecido.
 1. En el menú desplegable Tipo de conjunto de lotes , seleccione un tipo de ajuste preestablecido.
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Si está utilizando una convención de nombres predeterminada que configuró anteriormente en **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]** > **[!UICONTROL Nombre predeterminado]**, expandir **[!UICONTROL Convenciones de nomenclatura de recursos]** y, a continuación, en la lista desplegable Nombres de archivo , seleccione **[!UICONTROL Predeterminado]**.
 
@@ -533,7 +533,7 @@ Puede utilizar el tipo de conjunto de lotes **[!UICONTROL Conjunto de giros de v
 
 Por ejemplo, supongamos que desea crear un conjunto de giros de varios ejes denominado `spin-2dspin`. Tiene un conjunto de imágenes de conjuntos de giros que contienen tres filas, con 12 imágenes por fila. Las imágenes reciben el nombre siguiente:
 
-```
+```xml {.line-numbers}
 spin-01-01
  spin-01-02
  …
@@ -689,7 +689,7 @@ La configuración de conexión de carga de Scene7 sincroniza los recursos de Exp
 
 **Para actualizar la conexión de carga de Dynamic Media Classic:**
 
-1. Vaya a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Navegue hasta `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. En el **[!UICONTROL Número de conexiones]** o **[!UICONTROL Tiempo de espera de trabajo activo]** , cambie el número como desee.
 
    La variable **[!UICONTROL Número de conexiones]** el ajuste controla el número máximo de conexiones HTTP permitidas para el Experience Manager de carga de Dynamic Media; normalmente, el valor predefinido de diez conexiones es suficiente.
@@ -714,7 +714,7 @@ Los filtros proporcionan una forma de *excluir* los recursos se replican en el n
 
 Si usa Dynamic Media para imágenes, vídeos o ambos, puede usar los filtros predeterminados que Adobe proporciona tal cual. Los siguientes filtros están activos de forma predeterminada:
 
-|  | Filtro | Tipo de máquina | Representaciones |
+|  | Filter | Tipo de máquina | Representaciones |
 | --- | --- | --- | --- |
 | Entrega de imágenes de Dynamic Media | filter-image<br>filter-sets | Comienza con **image/**<br> Contiene **aplicaciones/** y termine con **set**. | Las &quot;imágenes de filtro&quot; integradas (se aplican a recursos de imágenes únicas, incluidas imágenes interactivas) y &quot;conjuntos de filtros&quot; (se aplica a conjuntos de giros, conjuntos de imágenes, conjuntos de medios mixtos y conjuntos de carrusel):<br>・ Excluir de la replicación la imagen original y las representaciones de imágenes estáticas. |
 | Entrega de vídeo de Dynamic Media | filter-video | Comienza con **video/** | El &quot;vídeo de filtro&quot; listo para usar:<br>・ Excluir de la replicación el vídeo original y las representaciones en miniatura estáticas. |
@@ -753,7 +753,7 @@ Los filtros se aplican a tipos MIME y no pueden ser específicos de la ruta.
    | + | Incluye recursos para replicación |
    | - | Excluye los activos de la replicación |
 
-   Vaya a `content/dam/<locate your asset>/jcr:content/renditions`.
+   Navegue hasta `content/dam/<locate your asset>/jcr:content/renditions`.
 
    El siguiente gráfico es un ejemplo de las representaciones de un recurso.
 
