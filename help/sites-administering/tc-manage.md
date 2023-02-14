@@ -1,20 +1,11 @@
 ---
 title: Administración de proyectos de traducción
-seo-title: Managing Translation Projects
 description: Aprenda a administrar proyectos de traducción en AEM.
-seo-description: Learn how to manage translation projects in AEM.
-uuid: f6f79b5b-dc08-4dde-b464-719345d233a6
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
-feature: Language Copy
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 56%
+source-wordcount: '3536'
+ht-degree: 55%
 
 ---
 
@@ -418,6 +409,16 @@ Rellene la copia de idioma para que albergue contenido de la lengua principal qu
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
 1. Toque o haga clic en Iniciar.
+
+## Mover una página de origen o cambiarle el nombre {#move-source}
+
+Si una página de origen ya traducida necesita ser [cambiar nombre o mover](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), al volver a traducir la página después del movimiento, se creará una copia de nuevo idioma basada en el nuevo nombre o ubicación de la página. La copia de idioma anterior basada en el nombre/ubicación anterior seguirá estando allí.
+
+La práctica recomendada en este escenario es seguir este procedimiento:
+1. Cancele la publicación de las copias de idioma asociadas con la página de origen que desee mover.
+1. Eliminarlos.
+1. Cree nuevas copias de idioma desde la página de origen recién movida.
+1. Publique las copias de idioma recién creadas.
 
 ## Creación de un proyecto de traducción mediante la consola Proyectos {#creating-a-translation-project-using-the-projects-console}
 
