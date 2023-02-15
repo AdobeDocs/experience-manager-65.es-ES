@@ -2,9 +2,9 @@
 title: Instrucciones de instalación de parches de AEM Forms para AEM Forms
 description: Instrucciones de instalación de Service Pack de AEM Forms para el entorno OSGi y JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 72e4d6372a013acde1c2cf7e46cc36e3525e53bf
+source-git-commit: 0083de8ba459662d04ba80d8c63f21735d82ac82
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1797'
 ht-degree: 17%
 
 ---
@@ -91,7 +91,8 @@ Vaya al directorio apropiado, y desde un shell y escriba
 
       >[!NOTE]
       >
-      > Al usar la variable **ConfigurationManager.bat** ayuda a evitar la actualización manual del nombre de los archivos .lax.
+      >* Actualizar o reemplazar la variable **ConfigurationManager.bat** ayuda a evitar actualizar el nombre de los archivos .lax manualmente.
+
 
 1. **[Solo para Unix]:** La variable **Iniciar Administrador de configuración** está seleccionada de forma predeterminada. Haga clic en **[!UICONTROL Listo]** para ejecutar el Administrador de configuración instantáneamente o **Administrador de configuración** más tarde, anule la selección de la opción **Iniciar Administrador de configuración** antes de hacer clic en **[!UICONTROL Listo]**. Puede empezar **Administrador de configuración** más adelante, utilizando la secuencia de comandos adecuada en la `[AEM_forms_root]/configurationManager/bin` directorio.
 
@@ -104,7 +105,6 @@ Vaya al directorio apropiado, y desde un shell y escriba
    * [Instalación e implementación de formularios AEM para WebSphere® Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
    * [Instalación e implementación de AEM Forms para el clúster WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
 
-Es
 
 >[!NOTE]
 >
@@ -245,8 +245,6 @@ Para saber cuáles son las plataformas certificadas para funcionar con esta vers
 +++
 
 ## Solución de problemas
-
-* Vuelva a instalar los service packs de AEM Forms si se produce un error durante la instalación. Si el problema persiste, póngase en contacto con el servicio de asistencia al Adobe.
 
 * If **Cuadro de diálogo en la interfaz de usuario del Administrador de paquetes** sale durante la instalación del service pack, espere a que los registros de errores se estabilicen antes de acceder a la implementación. Espere los registros específicos relacionados con la desinstalación del paquete de actualización antes de asegurarse de que las instalaciones se realizan correctamente. Normalmente, este problema se produce en el explorador Safari, pero puede ocurrir de forma intermitente en cualquier explorador.
 
