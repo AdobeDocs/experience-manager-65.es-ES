@@ -2,10 +2,10 @@
 title: Instrucciones de instalación de parches de AEM Forms para AEM Forms
 description: Instrucciones de instalación de Service Pack de AEM Forms para el entorno OSGi y JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 0083de8ba459662d04ba80d8c63f21735d82ac82
+source-git-commit: c4584e34b5b12f29dc995bd5483bcbad476a82ef
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 17%
+source-wordcount: '1767'
+ht-degree: 18%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 17%
 |---|---|
 | Versión | 6.5.15.0 |
 | Tipo | Versión de Service Pack |
-| Fecha | 01 de diciembre de 2022 |
+| Fecha | 1 de diciembre de 2023 |
 | Descargar URL | [Últimas versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) |
 
 >[!NOTE]
@@ -114,7 +114,12 @@ Vaya al directorio apropiado, y desde un shell y escriba
 
 +++4. Instalación del fragmento servlet
 
-Es obligatorio instalar **fragmento servlet** para todos los servidores de aplicaciones excepto los que se ejecutan en JBoss® EAP 7.4.0. Para descargar e instalar el fragmento servlet:
+>[!NOTE]
+>
+> Es obligatorio instalar el **fragmento servlet** para todos los servidores de aplicaciones excepto los que se ejecutan en **JBoss® EAP 7.4.0**.
+
+
+Para descargar e instalar el fragmento de servlet:
 
 1. Si no ha descargado el fragmento, descárguelo desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
 
@@ -132,7 +137,7 @@ Es obligatorio instalar **fragmento servlet** para todos los servidores de aplic
 
 1. Reinicie la instancia antes de la instalación si la instancia está en modo de actualización (cuando la instancia se actualizó desde una versión anterior). Adobe recomienda reiniciar si el tiempo de actividad actual de una instancia es alto.
 1. Antes de la instalación, tome una instantánea o una copia de seguridad nueva de su [!DNL Experience Manager] instancia.
-1. Descargue el Service Pack desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Descargue el Service Pack desde [Distribución de software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es). <!-- UPDATE FOR EACH NEW RELEASE -->
 1. Abra el Administrador de paquetes y, a continuación, seleccione **[!UICONTROL Cargar paquete]** para cargar el paquete. Para obtener más información, consulte [Administrador de paquetes](/help/sites-administering/package-manager.md).
 1. Seleccione el paquete y, a continuación, seleccione **[!UICONTROL Instalar]**.
 1. Para actualizar el conector S3, detenga la instancia después de instalar el Service Pack, sustituya el conector existente por un nuevo archivo binario proporcionado en la carpeta de instalación y reinicie la instancia. Consulte [Almacenamiento de datos de Amazon S3](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
@@ -169,18 +174,6 @@ Para saber cuáles son las plataformas certificadas para funcionar con esta vers
 
 +++
 
-
-<!-- 1. (JBoss only) After installing the patch and configuring the server, delete  tmp  and work directories of JBoss application server.
-
->[!IMPORTANT]
->
->Before installing [AEM 6.5.15.0 service pack](#install-the-aem-service-pack-install-aem-service-pack), for all the AEM Forms on JEE environments using any application servers other than JBoss EAP 7.4.0: 
-> * Install  the [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet fragment and wait for the application server to stabilize.
->* If you install the latest [AEM service pack (6.5.15.0)](#install-the-aem-service-pack-install-aem-service-pack), prior to the fragment servlet `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` on JEE environment, the CRX/bundle and the start page show service unavailable errors, [click here](/help/forms/using/aem-service-pack-installation-solution.md) to know the troubleshooting steps. 
-
-### !-->
-
-
 ## Descargue e instale Service Pack en un formulario AEM en un entorno OSGi {#download-and-install-for-osgi-service-pack}
 
 ![Pasos de instalación de OSGi](/help/forms/using/assets/osgiinstallation.png)
@@ -207,7 +200,7 @@ Para saber cuáles son las plataformas certificadas para funcionar con esta vers
 
 1. Reinicie la instancia antes de la instalación si la instancia está en modo de actualización (cuando la instancia se actualizó desde una versión anterior). Adobe recomienda reiniciar si el tiempo de actividad actual de una instancia es alto.
 1. Antes de la instalación, tome una instantánea o una copia de seguridad nueva de su [!DNL Experience Manager] instancia.
-1. Descargue el Service Pack desde [Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Descargue el Service Pack desde [Distribución de software](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es). <!-- UPDATE FOR EACH NEW RELEASE -->
 1. Abra el Administrador de paquetes y, a continuación, seleccione **[!UICONTROL Cargar paquete]** para cargar el paquete. Para obtener más información, consulte [Administrador de paquetes](/help/sites-administering/package-manager.md).
 1. Seleccione el paquete y, a continuación, seleccione **[!UICONTROL Instalar]**.
 1. Para actualizar el conector S3, detenga la instancia después de instalar el Service Pack, sustituya el conector existente por un nuevo archivo binario proporcionado en la carpeta de instalación y reinicie la instancia. Consulte [Almacenamiento de datos de Amazon S3](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
@@ -250,4 +243,4 @@ Para saber cuáles son las plataformas certificadas para funcionar con esta vers
 
 * Compruebe los registros del monitor (error.log) una vez completada la instalación para cualquier actividad. Espere unos minutos hasta que no haya actividad en los registros. Reinicie la instancia de AEM.
 
-* En caso de que obtenga un **error de servicio no disponible** después de instalar el último paquete de servicio de AEM Forms 6.5.15.0, [instalar el fragmento y el paquete servlet](/help/forms/using/aem-service-pack-installation-solution.md) para solucionar el error.
+* En caso de que obtenga un **error de servicio no disponible** después de instalar el paquete de servicio de AEM Forms 6.5.15.0, [instalar el fragmento y el paquete servlet](/help/forms/using/aem-service-pack-installation-solution.md) para solucionar el error.
