@@ -12,9 +12,9 @@ feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: dacbfbc8b4677ac7b63b92c45602e030031de3a1
 workflow-type: tm+mt
-source-wordcount: '3689'
+source-wordcount: '3727'
 ht-degree: 9%
 
 ---
@@ -169,7 +169,7 @@ Seleccione el icono de información situado junto a cada opción para obtener de
 1. En el encabezado Tamaño del vídeo, asegúrese de que **[!UICONTROL Mantener relación de aspecto]** está activada.
 1. Establezca la resolución del tamaño del fotograma de vídeo en píxeles. Utilice la variable **[!UICONTROL Automático]** para escalar automáticamente para que coincida con la proporción de aspecto del origen (relación ancho-alto). Por ejemplo, Automático x 480 o 640 x Automático.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * En el **[!UICONTROL Anchura]** , introduzca **[!UICONTROL auto]**. En el **[!UICONTROL Altura]** , introduzca un valor en píxeles.
 
@@ -177,7 +177,7 @@ Seleccione el icono de información situado junto a cada opción para obtener de
 
 1. (Opcional) Seleccione el **[!UICONTROL Avanzadas]** y asegúrese de que **[!UICONTROL Usar valores predeterminados]** está activada (recomendado). También puede modificar la configuración avanzada de vídeo y audio.
 1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]** para guardar el ajuste preestablecido.
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
    * Repita los pasos 4-10 para crear ajustes preestablecidos de codificación adicionales. (El flujo de vídeo adaptable requiere más de un ajuste preestablecido de vídeo).
    * Continúe con el paso siguiente.
 
@@ -186,7 +186,7 @@ Seleccione el icono de información situado junto a cada opción para obtener de
    * En el campo Nombre , escriba un nombre para la proporción de recorte que le ayudará a identificarla fácilmente.
    * En el **[!UICONTROL Proporción de recorte]** en la lista desplegable, seleccione la proporción que desee utilizar.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Siga agregando nuevas relaciones de recorte según sea necesario.
    * Continúe con el paso siguiente.
@@ -231,7 +231,7 @@ Para ayudarle a visualizar el tamaño del vídeo, seleccione el icono de informa
 Seleccione el icono de información situado junto a cada opción para obtener descripciones adicionales o ajustes recomendados basados en el códec de formato de vídeo seleccionado.
 
 1. En la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]** para guardar el ajuste preestablecido.
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Repita los pasos 4-9 para crear ajustes preestablecidos de codificación adicionales.
    * Continúe con el paso siguiente.
@@ -242,7 +242,7 @@ Seleccione el icono de información situado junto a cada opción para obtener de
    * En el campo Nombre , escriba un nombre para la proporción de recorte que le ayudará a identificarla fácilmente.
    * En el **[!UICONTROL Proporción de recorte]** en la lista desplegable, seleccione la proporción que desee utilizar.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Siga agregando nuevas relaciones de recorte según sea necesario.
    * Continúe con el paso siguiente.
@@ -284,7 +284,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
    <td><code>keyframe</code></td>
    <td>El número de fotogramas de destino entre fotogramas clave. Calcule este valor para que pueda generar un fotograma clave cada 2-10 segundos. Por ejemplo, a 30 fotogramas por segundo, el intervalo de fotogramas clave debe ser de 60 a 300.<br /> <br /> Los intervalos más bajos de los fotogramas clave mejoran la búsqueda de flujo y el comportamiento de conmutación de flujo para las codificaciones de vídeo adaptables, y también pueden mejorar la calidad de los vídeos que tienen mucho movimiento. Sin embargo, debido a que los fotogramas clave aumentan el tamaño de un archivo, un intervalo de fotogramas clave inferior generalmente da como resultado una menor calidad de vídeo general a una velocidad de bits determinada.</td>
    <td><code>String</code></td>
-   <td><p>Número positivo.</p> <p>El valor predeterminado es 300.</p> <p>El valor recomendado para HLS (HTTP Live Streaming) es 60-90.</p> </td>
+   <td><p>Número positivo.</p> <p>El valor predeterminado es 300.</p> <p>El valor recomendado para DASH o HLS es 60-90. (Para usar DASH en los vídeos, primero debe activarse en la cuenta. Consulte <a href="/help/assets/video.md#enable-dash">Habilitar DASH en su cuenta</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -302,7 +302,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
    <td><code>audioBitrateCustom</code></td>
    <td>Definir valor como <code>true</code> para forzar una velocidad de bits constante para el flujo de audio, si es compatible con el códec de audio.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>El valor predeterminado es <code>false</code>.</p> <p>El valor recomendado para HLS (HTTP Live Streaming) es <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>El valor predeterminado es <code>false</code>.</p> <p>El valor recomendado para DASH o HLS es <code>false</code>. (Para usar DASH en los vídeos, primero debe activarse en la cuenta. Consulte <a href="/help/assets/video.md#enable-dash">Habilitar DASH en su cuenta</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -310,7 +310,7 @@ Puede editar un perfil de codificación de vídeo existente para aprovechar los 
 ![chlimage_1-516](assets/chlimage_1-516.png)
 
 1. Cerca de la esquina inferior derecha de la página, seleccione **[!UICONTROL Agregar]**.
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Repita los pasos 3 y 4 para agregar otro parámetro al perfil de codificación de vídeo.
    * Cerca de la esquina superior izquierda de la página, seleccione **[!UICONTROL Guardar todo]**.

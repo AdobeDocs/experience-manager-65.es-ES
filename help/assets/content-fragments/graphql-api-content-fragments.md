@@ -1,18 +1,18 @@
 ---
 title: API de GraphQL de AEM para su uso con fragmentos de contenido
-description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) con la API de AEM GraphQL para la entrega de contenido sin encabezado.
+description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
+source-git-commit: 42ef4694a3301ae1cd34766ce4c19f4b0e2f2c38
 workflow-type: tm+mt
-source-wordcount: '4089'
+source-wordcount: '3695'
 ht-degree: 87%
 
 ---
 
 # API de GraphQL de AEM para su uso con fragmentos de contenido {#graphql-api-for-use-with-content-fragments}
 
-Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) con la API de AEM GraphQL para la entrega de contenido sin encabezado.
+Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 
 La API de GraphQL de AEM que se utiliza con fragmentos de contenido se basa principalmente en la API estándar de código abierto de GraphQL.
 
@@ -24,7 +24,7 @@ El uso de la API de GraphQL en AEM permite la entrega eficiente de fragmentos de
 
 >[!NOTE]
 >
->GraphQL se utiliza actualmente en dos escenarios (independientes) en Adobe Experience Manager (AEM):
+>GraphQL se utiliza actualmente en dos situaciones (independientes) en Adobe Experience Manager (AEM):
 >
 >* [AEM Commerce consume datos de una plataforma de Commerce a través de GraphQL](/help/commerce/cif/integrating/magento.md).
 >* Los fragmentos de contenido de AEM trabajan junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar) para ofrecer contenido estructurado para su uso en aplicaciones.
@@ -100,12 +100,26 @@ Con GraphQL puede realizar consultas para devolver lo siguiente:
 
 * Una **[lista de entradas](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-También puede realizar:
+AEM proporciona funciones para convertir consultas (de ambos tipos) a [Consultas persistentes](/help/assets/content-fragments/persisted-queries.md), que Dispatcher y la CDN pueden almacenar en caché.
 
-* [Consultas persistentes, que se almacenan en caché](#persisted-queries-caching)
+### Prácticas recomendadas para consultas de GraphQL (Dispatcher y CDN) {#graphql-query-best-practices}
+
+La variable [Consultas persistentes](/help/assets/content-fragments/persisted-queries.md) son el método recomendado para usar en instancias de publicación como:
+
+* Se almacenan en caché.
+* se administran de forma centralizada mediante AEM
 
 >[!NOTE]
->Puede probar y depurar consultas de GraphQL usando el [IDE de GraphiQL](#graphiql-interface).
+>
+>Normalmente no hay ningún Dispatcher/CDN en el autor, por lo que no hay ganancia en el uso de consultas persistentes allí; aparte de probarlas.
+
+No se recomiendan las consultas de GraphQL que utilizan solicitudes de POST, ya que no se almacenan en caché, por lo que en una instancia predeterminada, Dispatcher está configurado para bloquear dichas consultas.
+
+Aunque GraphQL también admite solicitudes de GET, estas pueden alcanzar límites (por ejemplo, la longitud de la dirección URL) que se pueden evitar mediante consultas persistentes.
+
+>[!NOTE]
+>
+>La capacidad de realizar consultas directas puede quedar obsoleta en algún momento futuro.
 
 ## GraphQL para AEM extremo {#graphql-aem-endpoint}
 
@@ -193,11 +207,13 @@ Seleccione el nuevo punto de conexión y **Publicación** para que esté totalme
 
 ## Interfaz de GraphiQL {#graphiql-interface}
 
-Implementación de la [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) está disponible para usar con AEM GraphQL. Esto puede [instalarse con AEM](#installing-graphiql-interface).
+Implementación de la [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) está disponible para su uso con AEM GraphQL.
 
 >[!NOTE]
 >
->GraphiQL está enlazado al punto de conexión global (y no funciona con otros puntos de conexión para configuraciones de sitios específicas).
+>GraphiQL se incluye en todos los entornos de AEM (pero solo será accesible/visible al configurar los extremos).
+>
+>En versiones anteriores, se necesitaba un paquete para instalar el IDE de GraphiQL. Si tiene esto instalado, ahora lo puede quitar.
 
 Esta interfaz le permite introducir y probar directamente consultas.
 
@@ -209,13 +225,9 @@ Esto proporciona funciones como resaltado de sintaxis, autocompletado o autosuge
 
 ![Interfaz de GraphiQL](assets/cfm-graphiql-interface.png "Interfaz de GraphiQL")
 
-### Instalación de la interfaz AEM GraphiQL {#installing-graphiql-interface}
-
-La interfaz de usuario de GraphiQL se puede instalar en AEM con un paquete dedicado: el [Paquete de contenido de GraphiQL v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) paquete.
-
 >[!NOTE]
 >
->El paquete disponible es totalmente compatible con AEM 6.5.10.0 y AEM as a Cloud Service.
+>Para obtener más información, consulte [Uso del IDE de GraphiQL](/help/assets/content-fragments/graphiql-ide.md).
 
 ## Casos de uso para entornos de creación y publicación {#use-cases-author-publish-environments}
 
@@ -232,6 +244,10 @@ Los casos de uso pueden depender del tipo de entorno AEM:
 ## Permisos {#permission}
 
 Los permisos son los necesarios para acceder a Assets.
+
+Las consultas de GraphQL se ejecutan con el permiso del usuario AEM de la solicitud subyacente. Si el usuario no tiene acceso de lectura a algunos fragmentos (almacenados como activos), no pasará a formar parte del conjunto de resultados.
+
+Además, el usuario debe tener acceso a un extremo de GraphQL para poder ejecutar consultas de GraphQL.
 
 ## Generación de esquemas {#schema-generation}
 
@@ -435,7 +451,7 @@ Consulte [Consulta de muestra: todas las ciudades con una variación con nombre]
 
 >[!NOTE]
 >
->Si la variación dada no existe para un fragmento de contenido, la variación maestra se devolverá como predeterminada (reserva).
+>Si la variación dada no existe para un Fragmento de contenido, la variación principal se devolverá como una predeterminada (alternativa).
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -456,6 +472,7 @@ query GetArticlesByVariation($variation: String!) {
         items {
             _path
             author
+            _variations
         }
     }
 }
@@ -575,7 +592,7 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
          >[!NOTE]
          >
-         >Si la variación dada no existe para un fragmento de contenido, la variación maestra se devolverá como predeterminada (reserva).
+         >Si la variación dada no existe para un Fragmento de contenido, la variación principal se devolverá como una predeterminada (alternativa).
 
          >[!CAUTION]
          >Campo generado por el sistema `_variation` no se puede usar junto con el filtro `includeVariations`.
@@ -618,45 +635,46 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
    * Si la variación solicitada no existe en un fragmento anidado, la variable **Maestro** se devolverá la variación.
 
-## Consultas persistentes (almacenamiento en caché) {#persisted-queries-caching}
+<!--
+## Persisted Queries (Caching) {#persisted-queries-caching}
 
-Después de preparar una consulta con una solicitud de POST, esta se puede ejecutar con una solicitud de GET que se puede almacenar en caché mediante cachés HTTP o una CDN.
+After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
 
-Esto es necesario, ya que las consultas de POST generalmente no se almacenan en caché y si se utiliza la GET con la consulta como parámetro, existe un riesgo significativo de que el parámetro sea demasiado grande para los servicios HTTP e intermediarios.
+This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
 
-Las consultas persistentes siempre deben utilizar el punto de conexión relacionado con la [configuración de Sites adecuada](#graphql-aem-endpoint), para que puedan usar una o ambas:
+Persisted queries must always use the endpoint related to the [appropriate Sites configuration](#graphql-aem-endpoint); so they can use either, or both:
 
-* La configuración global y el punto de conexión
-La consulta tiene acceso a todos los modelos de fragmentos de contenido.
-* Configuraciones de sitios específicas y puntos de conexión
-La creación de una consulta persistente para una configuración de sitios específica requiere un punto de conexión específico de configuración de sitios correspondiente (para proporcionar acceso a los modelos de fragmentos de contenido relacionados).
-Por ejemplo, para crear una consulta persistente específica para la configuración de WKND Sites, se debe crear de antemano una configuración de sitios específica de WKND y un punto de conexión específico de WKND.
-
->[!NOTE]
->
->Consulte [Habilitar la funcionalidad de fragmento de contenido en el explorador de configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) para obtener más información.
->
->Las **Consultas de persistencia de GraphQL** deben estar habilitadas, para la configuración de Sites adecuada.
-
-Por ejemplo, si hay una consulta en particular llamada `my-query`, que utiliza un modelo `my-model` desde la configuración de Sites `my-conf`:
-
-* Puede crear una consulta utilizando el punto de conexión `my-conf` específico, y luego la consulta se guardará de la siguiente manera:
-   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* Puede crear la misma consulta utilizando el punto de conexión `global`, pero la consulta se guardará de la siguiente manera:
-   `/conf/global/settings/graphql/persistentQueries/my-query`
+* The Global configuration and endpoint
+  The query has access to all Content Fragment Models.
+* Specific Sites configuration(s) and endpoint(s)
+  Creating a persisted query for a specific Sites configuration requires a corresponding Sites-configuration-specific endpoint (to provide access to the related Content Fragment Models). 
+  For example, to create a persisted query specifically for the WKND Sites configuration, a corresponding WKND-specific Sites configuration, and a WKND-specific endpoint must be created in advance.
 
 >[!NOTE]
 >
->Estas son dos consultas distintas: se guardan en rutas diferentes.
+>See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
 >
->Simplemente, utilizan el mismo modelo, pero a través de puntos de conexión diferentes.
+>The **GraphQL Persistence Queries** need to be enabled, for the appropriate Sites configuration. 
+
+For example, if there is a particular query called `my-query`, which uses a model `my-model` from the Sites configuration `my-conf`:
+
+* You can create a query using the `my-conf` specific endpoint, and then the query will be saved as following: 
+`/conf/my-conf/settings/graphql/persistentQueries/my-query`
+* You can create the same query using `global` endpoint, but then the query will be saved as following:
+`/conf/global/settings/graphql/persistentQueries/my-query`
+
+>[!NOTE]
+>
+>These are two different queries - saved under different paths. 
+>
+>They just happen to use the same model - but via different endpoints.
 
 
-Estos son los pasos necesarios para mantener una consulta determinada:
+Here are the steps required to persist a given query:
 
-1. Prepare la consulta colocándola en la nueva URL de punto de conexión `/graphql/persist.json/<config>/<persisted-label>`.
+1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
 
-   Por ejemplo, cree una consulta persistente:
+   For example, create a persisted query:
 
    ```xml
    $ curl -X PUT \
@@ -677,32 +695,32 @@ Estos son los pasos necesarios para mantener una consulta determinada:
    }'
    ```
 
-1. En este punto, compruebe la respuesta.
+1. At this point, check the response.
 
-   Por ejemplo, compruebe si se ha realizado correctamente:
+   For example, check for success:
 
-   ```xml
-   {
-     "action": "create",
-     "configurationName": "wknd",
-     "name": "plain-article-query",
-     "shortPath": "/wknd/plain-article-query",
-     "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
-   }
-   ```
+     ```xml
+     {
+       "action": "create",
+       "configurationName": "wknd",
+       "name": "plain-article-query",
+       "shortPath": "/wknd/plain-article-query",
+       "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
+     }
+     ```
 
-1. A continuación, puede reproducir la consulta persistente obteniendo la dirección URL `/graphql/execute.json/<shortPath>`.
+1. You can then replay the persisted query by GETing the URL `/graphql/execute.json/<shortPath>`.
 
-   Por ejemplo, utilice la consulta persistente:
+   For example, use the persisted query:
 
    ```xml
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
 
-1. Actualice una consulta persistente usando POST en una ruta de consulta ya existente.
+1. Update a persisted query by POSTing to an already existing query path.
 
-   Por ejemplo, utilice la consulta persistente:
+   For example, use the persisted query:
 
    ```xml
    $ curl -X POST \
@@ -726,9 +744,9 @@ Estos son los pasos necesarios para mantener una consulta determinada:
    }'
    ```
 
-1. Cree una consulta sin formato ajustada.
+1. Create a wrapped plain query.
 
-   Por ejemplo:
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -739,9 +757,9 @@ Estos son los pasos necesarios para mantener una consulta determinada:
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
    ```
 
-1. Cree una consulta sencilla ajustada con control de caché.
+1. Create a wrapped plain query with cache control.
 
-   Por ejemplo:
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -752,9 +770,9 @@ Estos son los pasos necesarios para mantener una consulta determinada:
    '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
    ```
 
-1. Cree una consulta persistente con parámetros:
+1. Create a persisted query with parameters:
 
-   Por ejemplo:
+   For example:
 
    ```xml
    $ curl -X PUT \
@@ -778,69 +796,69 @@ Estos son los pasos necesarios para mantener una consulta determinada:
      }'
    ```
 
-1. Ejecución de una consulta con parámetros.
+1. Executing a query with parameters.
 
-   Por ejemplo:
+   For example:
 
    ```xml
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   
+
    $ curl -X GET \
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-1. Para ejecutar la consulta en la publicación, es necesario replicar el árbol persistente relacionado
+1. To execute the query on publish, the related persist tree need to replicated
 
-   * Uso de un POST para la replicación:
+   * Using a POST for replication:
 
-      ```xml
-      $curl -X POST   http://localhost:4502/bin/replicate.json \
-        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-        -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-        -F cmd=activate
-      ```
+     ```xml
+     $curl -X POST   http://localhost:4502/bin/replicate.json \
+       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
+       -F cmd=activate
+     ```
 
-   * Uso de un paquete:
-      1. Cree una nueva definición de paquete.
-      1. Incluya la configuración (por ejemplo, `/conf/wknd/settings/graphql/persistentQueries`).
-      1. Genere el paquete.
-      1. Repita el paquete.
-   * Uso de la herramienta de replicación/distribución.
-      1. Vaya a la herramienta Distribución.
-      1. Seleccione la activación del árbol para la configuración (por ejemplo, `/conf/wknd/settings/graphql/persistentQueries`).
-   * Uso de un flujo de trabajo (mediante la configuración del lanzador de flujos de trabajo):
-      1. Defina una regla de lanzador de flujos de trabajo para ejecutar un modelo de flujo de trabajo que duplique la configuración en diferentes eventos (por ejemplo, crear, modificar, entre otros).
+   * Using a package:
+     1. Create a new package definition.
+     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
+     1. Build the package.
+     1. Replicate the package.
 
+   * Using replication/distribution tool.
+     1. Go to the Distribution tool.
+     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
+   * Using a workflow (via workflow launcher configuration):
+     1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 
-1. Una vez que la configuración de la consulta está en la publicación, se aplican los mismos principios, solo con el extremo de publicación.
-
-   >[!NOTE]
-   >
-   >Para el acceso anónimo, el sistema supone que la ACL permite que “todos” tengan acceso a la configuración de la consulta.
-   >
-   >Si no es así, no podrá ejecutarse.
+1. Once the query configuration is on publish, the same principles apply, just using the publish endpoint.
 
    >[!NOTE]
    >
-   >Debe codificarse cualquier punto y coma (“;”) en las direcciones URL.
+   >For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
    >
-   >Por ejemplo, como en la solicitud para ejecutar una consulta persistente:
+   >If that is not the case it will not be able to execute.
+
+   >[!NOTE]
    >
+   >Any semicolons (";") in the URLs need to be encoded.
    >
-   ```xml
+   >For example, as in the request to Execute a persisted query:
+   >
+   >```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
 
-## Consulta del punto de conexión de GraphQL desde un sitio web externo {#query-graphql-endpoint-from-external-website}
+## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
 
-Para acceder al punto de conexión de GraphQL desde un sitio web externo, debe configurar lo siguiente:
+To access the GraphQL endpoint from an external website you need to configure the:
 
-* [Filtro CORS](#cors-filter)
-* [Filtro de referente](#referrer-filter)
+* [CORS Filter](#cors-filter)
+* [Referrer Filter](#referrer-filter)
+-->
 
 ### Filtro CORS {#cors-filter}
 
@@ -848,7 +866,7 @@ Para acceder al punto de conexión de GraphQL desde un sitio web externo, debe c
 >
 >Para obtener una descripción detallada de la política de uso compartido de recursos CORS en AEM, consulte [Comprender el Intercambio de Recursos de Origen Cruzado (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es#understand-cross-origin-resource-sharing-(cors)).
 
-Para acceder al extremo de GraphQL, se debe configurar una directiva CORS en el repositorio Git del cliente. Para ello, añada un archivo de configuración OSGi CORS apropiado para los puntos de conexión deseados. 
+Para acceder al extremo GraphQL, se debe configurar una directiva CORS en el repositorio Git del cliente. Para ello, añada un archivo de configuración OSGi CORS apropiado para los puntos de conexión deseados. 
 
 Esta configuración debe especificar un origen de sitio web de confianza `alloworigin` o `alloworiginregexp` para los que debe concederse acceso.
 

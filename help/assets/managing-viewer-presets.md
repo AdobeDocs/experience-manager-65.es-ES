@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: f578a3c5dee24bbb9995329777eea02bb8f1b654
 workflow-type: tm+mt
-source-wordcount: '4332'
-ht-degree: 9%
+source-wordcount: '4507'
+ht-degree: 8%
 
 ---
 
@@ -67,7 +67,7 @@ Consulte [Biblioteca de imágenes adaptables](https://experienceleague.adobe.com
 
 Todos los ajustes preestablecidos de visor integrados que se incluyen con Dynamic Media son totalmente compatibles con los siguientes sistemas:
 
-* Computadoras de escritorio
+* Equipos de escritorio
 * Apple iPhone
 * Apple iPad
 * Smartphone Android™
@@ -435,7 +435,7 @@ Consulte [Consideraciones especiales para la creación de un ajuste preestableci
    Consulte [Tipos de medios enriquecidos para ajustes preestablecidos de visor](#rich-media-types-for-viewer-presets).
 
 1. En la página Editor de ajustes preestablecidos de visualizador , seleccione la opción **[!UICONTROL Aspecto]** pestaña .
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * En el **[!UICONTROL Tipo seleccionado]** menú desplegable, seleccione un componente cuyo diseño visual desee personalizar. Como alternativa, puede seleccionar cualquier elemento visual en el visor para seleccionarlo para su configuración.
 
@@ -459,6 +459,19 @@ Consulte [Consideraciones especiales para la creación de un ajuste preestableci
 
 1. (Opcional) Cerca de la parte superior de la página Editar ajuste preestablecido de visualizador , seleccione **[!UICONTROL Escritorio]**, **[!UICONTROL Tablet]** o **[!UICONTROL Teléfono]** para definir de forma exclusiva estilos visuales para distintos tipos de dispositivos y pantallas.
 1. En la página Editor de ajustes preestablecidos de visualizador , seleccione la opción **[!UICONTROL Comportamiento]** pestaña . Como alternativa, puede seleccionar cualquier elemento visual en el visor para seleccionarlo para su configuración.
+Por ejemplo, para la variable *Reproductor de videos* tipo, bajo **[!UICONTROL Modificadores]** > **[!UICONTROL Reproducción]**, puede seleccionar una de las tres opciones de flujo adaptable:
+
+   * **[!UICONTROL guión]** - Los vídeos se transmiten únicamente como guiones.
+   * **[!UICONTROL hls]** - Los vídeos se transmiten solo como hls.
+   * **[!UICONTROL auto]** - Práctica recomendada. La creación de flujos DASH y HLS está optimizada para el almacenamiento. Por lo tanto, Adobe recomienda seleccionar siempre **[!UICONTROL auto]** como tipo de reproducción. Los vídeos se muestran como guiones, hls o progresivos, como se muestra a continuación:
+      * Si el explorador admite DASH, se utiliza primero la transmisión de DASH.
+      * Si el navegador no admite DASH, se utilizará el flujo HLS, segundo.
+      * Si el navegador no admite DASH o HLS, se utiliza la reproducción progresiva, por último.
+
+   >[!NOTE]
+   >
+   >Para ver y usar la variable **[!UICONTROL guión]** , primero debe activarlo el Soporte técnico de Adobe en su cuenta. Consulte [Habilitar DASH en su cuenta](/help/assets/video.md#enable-dash).
+
 1. En el menú desplegable **[!UICONTROL Tipo seleccionado]**, seleccione un componente cuyos comportamientos desee cambiar.
 
    Muchos componentes del editor visual tienen una descripción detallada asociada. Estas descripciones aparecen en cuadros azules al expandir un componente para mostrar sus parámetros asociados.
@@ -476,6 +489,10 @@ Consulte [Consideraciones especiales para la creación de un ajuste preestableci
 1. Publique el nuevo ajuste preestablecido de visor para que pueda utilizarlo en su sitio web.
 
    Consulte [Ajustes preestablecidos del visualizador de publicaciones](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >Para vídeos antiguos que utilizan un perfil de flujo adaptable, la URL sigue reproduciéndose como de costumbre (con transmisión HLS) hasta que [reprocesar los recursos de vídeo](/help/assets/processing-profiles.md#reprocessing-assets). Después del reprocesamiento, la misma dirección URL seguirá funcionando pero ahora con *both* Flujo continuo DASH y HLS habilitado.
 
 ### Consideraciones especiales para crear un ajuste preestablecido de visualizador interactivo {#special-considerations-for-creating-an-interactive-viewer-preset}
 
@@ -597,7 +614,7 @@ Puede eliminar los ajustes preestablecidos de visor que haya creado y agregado a
 
 1. En la esquina superior izquierda del Experience Manager, seleccione el logotipo del Experience Manager y, a continuación, en el carril izquierdo, seleccione **[!UICONTROL Herramientas]** (icono de martillo) **[!UICONTROL Recursos]** > **[!UICONTROL Ajustes preestablecidos de visor]**.
 1. En la página Ajustes preestablecidos de visor , marque un Título preestablecido y, a continuación, seleccione la opción **[!UICONTROL Papelera]** icono.
-1. Select **[!UICONTROL Eliminar]**.
+1. Seleccione **[!UICONTROL Eliminar]**.
 
 ## Aplicar un ajuste preestablecido de visualizador a un recurso {#applying-a-viewer-preset-to-an-asset}
 
