@@ -12,16 +12,16 @@ feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: dacbfbc8b4677ac7b63b92c45602e030031de3a1
+source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
 workflow-type: tm+mt
-source-wordcount: '3727'
+source-wordcount: '3736'
 ht-degree: 9%
 
 ---
 
 # Perfiles de vídeo {#video-profiles}
 
-Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil listos para usar están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. Al codificar los vídeos de origen principales mediante el perfil de codificación de vídeo adaptable, durante la reproducción el reproductor de vídeo ajusta automáticamente la calidad del flujo de vídeo en función de la velocidad de conexión a Internet de sus clientes. Esta funcionalidad se conoce como flujo adaptable.
+Dynamic Media ya viene con un perfil de codificación de vídeo adaptable predefinido. Los ajustes de este perfil listos para usar están optimizados para ofrecer a sus clientes la mejor experiencia de visualización posible. Al codificar los vídeos de origen principales mediante el perfil de codificación de vídeo adaptable, durante la reproducción el reproductor de vídeo ajusta automáticamente la calidad del flujo de vídeo en función de la velocidad de conexión a Internet de sus clientes. Esta funcionalidad se conoce como flujo de velocidad de bits adaptable.
 
 A continuación se indican otros factores que determinan la calidad de los vídeos:
 
@@ -130,7 +130,7 @@ Consulte [Aplicación de perfiles de vídeo a carpetas específicas](#applying-v
 
 Consulte también [Recorte inteligente para imágenes](image-profiles.md).
 
-## Creación de un perfil de vídeo para flujo adaptable {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## Creación de un perfil de vídeo para el flujo de velocidad de bits adaptable {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media ya viene con un perfil predefinido de codificación de vídeo adaptable (un grupo de ajustes de carga de vídeo para MP4 H.264) optimizado para la mejor experiencia de visualización. Puede utilizar este perfil al cargar los vídeos.
 
@@ -138,7 +138,7 @@ Sin embargo, si este perfil predefinido no satisface sus necesidades, puede eleg
 
 Al crear el perfil de codificación de vídeo, observe que la mayoría de las opciones de codificación se rellenan previamente con la configuración predeterminada recomendada para ayudarle. Sin embargo, si selecciona un valor que no sea el predeterminado recomendado, puede provocar una mala calidad de vídeo durante la reproducción y otros problemas de rendimiento.
 
-Por lo tanto, para todos los ajustes preestablecidos de codificación de vídeo MP4 H.264 del perfil, se validan los siguientes valores para garantizar que sean los mismos en todos los ajustes preestablecidos de codificación individuales del perfil, lo que permite la transmisión adaptativa:
+Por lo tanto, para todos los ajustes preestablecidos de codificación de vídeo MP4 H.264 del perfil, se validan los siguientes valores para garantizar que sean los mismos en todos los ajustes preestablecidos de codificación individuales del perfil, lo que permite la transmisión de velocidad de bits adaptable:
 
 * Códec de formato de vídeo: MP4 H.264 (.mp4)
 * Códec de audio
@@ -149,7 +149,7 @@ Por lo tanto, para todos los ajustes preestablecidos de codificación de vídeo 
 * Perfil H264
 * Velocidad de muestreo de audio
 
-Si los valores no son los mismos, puede seguir creando el perfil tal cual. Sin embargo, el flujo adaptable no es posible. En su lugar, los usuarios experimentan una transmisión de una sola velocidad de bits. Se recomienda editar la configuración de codificación para utilizar los mismos valores en ajustes preestablecidos de codificación individuales en el perfil. (El editor de perfiles/ajustes preestablecidos de vídeo exige la paridad de los ajustes de codificación de vídeo adaptable si **[!UICONTROL Codificar para flujo adaptable]** está activada).
+Si los valores no son los mismos, puede seguir creando el perfil tal cual. Sin embargo, no es posible el flujo de velocidad de bits adaptable. En su lugar, los usuarios experimentan una transmisión de una sola velocidad de bits. Se recomienda editar la configuración de codificación para utilizar los mismos valores en ajustes preestablecidos de codificación individuales en el perfil. (El editor de perfiles/ajustes preestablecidos de vídeo exige la paridad de los ajustes de codificación de vídeo adaptable si **[!UICONTROL Codificar para flujo adaptable]** está activada).
 
 Consulte también [Creación de un perfil de codificación de vídeo para flujo progresivo](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -157,7 +157,7 @@ Consulte también [Prácticas recomendadas para la codificación de vídeo](/hel
 
 Para definir parámetros de procesamiento avanzados para otros tipos de recursos, consulte [Configurar el procesamiento de recursos](/help/assets/config-dms7.md#configuring-asset-processing).
 
-**Para crear un perfil de vídeo para flujo adaptable**,
+**Para crear un perfil de vídeo para el flujo de velocidad de bits adaptable**,
 
 1. Seleccione el logotipo del Experience Manager y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Perfiles de vídeo]**.
 1. Select **[!UICONTROL Crear]** para agregar un perfil de vídeo.
@@ -204,7 +204,7 @@ Dependiendo del modo que esté ejecutando, los códecs de formato de vídeo comp
 * Modo Dynamic Media-Scene7: H.264 (.mp4)
 * Modo híbrido de Dynamic Media: H.264 (.mp4), WebM
 
-Consulte también [Creación de un perfil de codificación de vídeo para flujo adaptable](#creating-a-video-encoding-profile-for-adaptive-streaming).
+Consulte también [Creación de un perfil de codificación de vídeo para el flujo de velocidad de bits adaptable](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
 Consulte también [Prácticas recomendadas para la codificación de vídeo](/help/assets/video.md#best-practices-for-encoding-videos).
 
@@ -333,8 +333,8 @@ Para definir parámetros de procesamiento avanzados para otros tipos de recursos
 1. En la página Perfiles de vídeo , marque un nombre de perfil de vídeo.
 1. En la barra de herramientas, seleccione **[!UICONTROL Editar]**.
 1. En la página Perfil de codificación de vídeo , edite el nombre y la descripción como desee.
-1. Como práctica recomendada, compruebe que la casilla de verificación **[!UICONTROL Codificar para flujo adaptable]** está activada.
-Seleccione el icono de información para una descripción del flujo adaptable. (Si está editando un perfil de vídeo progresivo, no active esta casilla de verificación).
+1. Como práctica recomendada, asegúrese de que la variable **[!UICONTROL Codificar para flujo de velocidad de bits adaptable]** está activada.
+Seleccione el icono de información para ver una descripción del flujo de velocidad de bits adaptable. (Si está editando un perfil de vídeo progresivo, no active esta casilla de verificación).
 1. En el encabezado Ajustes preestablecidos de codificación de vídeo , agregue, edite o elimine los ajustes preestablecidos de codificación de vídeo que conforman el perfil.
 
    Seleccione el icono de información situado junto a cada opción en la **[!UICONTROL Básico]** y **[!UICONTROL Avanzadas]** para obtener descripciones adicionales o ajustes recomendados basados en el códec de formato de vídeo seleccionado.
@@ -347,7 +347,7 @@ Seleccione el icono de información para una descripción del flujo adaptable. (
 1. En la página Perfiles de vídeo , marque un nombre de perfil de vídeo.
 1. En la barra de herramientas, seleccione **[!UICONTROL Copiar]**.
 1. En la página Perfil de codificación de vídeo , introduzca un nuevo nombre para el perfil.
-1. Como práctica recomendada, compruebe que la casilla de verificación **[!UICONTROL Codificar para flujo adaptable]** está activada. Seleccione el icono de información para una descripción del flujo adaptable. (Si está copiando un perfil de vídeo progresivo, no active la casilla de verificación).
+1. Como práctica recomendada, compruebe que la casilla de verificación **[!UICONTROL Codificar para flujo adaptable]** está activada. Seleccione el icono de información para ver una descripción del flujo de velocidad de bits adaptable. (Si está copiando un perfil de vídeo progresivo, no active la casilla de verificación).
 
    En Dynamic Media: modo híbrido, si un ajuste preestablecido de vídeo WebM forma parte del perfil de vídeo, **[!UICONTROL Codificar para flujo adaptable]** no es posible porque todos los ajustes preestablecidos deben ser MP4.
 1. En el encabezado Ajustes preestablecidos de codificación de vídeo , agregue, edite o elimine los ajustes preestablecidos de codificación de vídeo que conforman el perfil.

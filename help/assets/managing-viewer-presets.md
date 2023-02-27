@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 40ae6c06f3296bfd4affe3e862d57df747d9bb82
+source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
 workflow-type: tm+mt
-source-wordcount: '4520'
+source-wordcount: '4522'
 ht-degree: 8%
 
 ---
@@ -459,7 +459,7 @@ Consulte [Consideraciones especiales para la creación de un ajuste preestableci
 
 1. (Opcional) Cerca de la parte superior de la página Editar ajuste preestablecido de visualizador , seleccione **[!UICONTROL Escritorio]**, **[!UICONTROL Tablet]** o **[!UICONTROL Teléfono]** para definir de forma exclusiva estilos visuales para distintos tipos de dispositivos y pantallas.
 1. En la página Editor de ajustes preestablecidos de visualizador , seleccione la opción **[!UICONTROL Comportamiento]** pestaña . Como alternativa, puede seleccionar cualquier elemento visual en el visor para seleccionarlo para su configuración.
-Por ejemplo, para la variable *Reproductor de videos* tipo, bajo **[!UICONTROL Modificadores]** > **[!UICONTROL Reproducción]**, puede seleccionar una de las tres opciones de flujo adaptable:
+Por ejemplo, para la variable *Reproductor de videos* tipo, bajo **[!UICONTROL Modificadores]** > **[!UICONTROL Reproducción]**, puede seleccionar entre una de las tres opciones de flujo de velocidad de bits adaptable:
 
    * **[!UICONTROL guión]** - Los vídeos se transmiten únicamente como guiones. Sin embargo, en los dispositivos Safari/iOS, debe seleccionar **[!UICONTROL hls]** como tipo, en su lugar.
    * **[!UICONTROL hls]** - Los vídeos se transmiten solo como hls.
@@ -492,7 +492,7 @@ Por ejemplo, para la variable *Reproductor de videos* tipo, bajo **[!UICONTROL M
 
    >[!IMPORTANT]
    >
-   >Para vídeos antiguos que utilizan un perfil de flujo adaptable, la URL sigue reproduciéndose como de costumbre (con transmisión HLS) hasta que [reprocesar los recursos de vídeo](/help/assets/processing-profiles.md#reprocessing-assets). Después del reprocesamiento, la misma dirección URL seguirá funcionando pero ahora con *both* Flujo continuo DASH y HLS habilitado.
+   >Para vídeos antiguos que utilizan un perfil de flujo de velocidad de bits adaptable, la URL sigue reproduciéndose como de costumbre (con transmisión HLS) hasta que [reprocesar los recursos de vídeo](/help/assets/processing-profiles.md#reprocessing-assets). Después del reprocesamiento, la misma dirección URL seguirá funcionando pero ahora con *both* Flujo continuo DASH y HLS habilitado.
 
 ### Consideraciones especiales para crear un ajuste preestablecido de visualizador interactivo {#special-considerations-for-creating-an-interactive-viewer-preset}
 
