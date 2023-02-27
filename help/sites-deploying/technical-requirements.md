@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
+source-git-commit: 93de94bb17ea898f0fe15e62fb031cab239a3682
 workflow-type: tm+mt
-source-wordcount: '3529'
+source-wordcount: '3534'
 ht-degree: 22%
 
 ---
@@ -119,6 +119,7 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 | Almacenar binarios en archivos TAR en el sistema de archivos `[1]` | Binarios | Z: No compatible con la producción |
 | Amazon S3 | Binarios | A: Compatible |
 | Almacenamiento del Blob de Microsoft Azure | Binarios | A: Compatible |
+| MongoDB Enterprise 4.4 | Repositorio | A: Compatible `[2, 3, 4]` |
 | MongoDB Enterprise 4.2 | Repositorio | A: Compatible `[2, 3, 4]` |
 | MongoDB Enterprise 4.0 | Repositorio | Z: No compatible |
 | MongoDB Enterprise 3.6 | Repositorio | Z: No compatible |
