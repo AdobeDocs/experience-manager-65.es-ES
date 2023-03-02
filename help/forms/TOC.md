@@ -8,9 +8,9 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: 29b283970f2c37782700b69302715e8404ce83ae
+source-git-commit: 071d7bf2e7c9ceb3328e77262cc45ed3f2e303cc
 workflow-type: tm+mt
-source-wordcount: '3835'
+source-wordcount: '3846'
 ht-degree: 98%
 
 ---
@@ -452,7 +452,7 @@ ht-degree: 98%
    + Administrar puntos de conexión {#manage-endpoints}
       + [Agregar, activar, modificar o eliminar puntos finales](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [Configurar extremos de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md)
-      + [Configurar la autenticación oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
+      + [Configuración de la autenticación oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
       + [Configurar puntos finales remotos](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Configurar extremos de carpetas vigiladas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Configurar los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
@@ -688,7 +688,8 @@ ht-degree: 98%
    + [No se pueden convertir archivos de Word o Excel a PDF en Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
    + [No se pueden abrir PDF forms basados en XFA en Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer o Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
    + [No se puede restaurar el repositorio CRX](/help/forms/using/restore-crx-repository.md)
-   + [Errores de servicio no disponibles después de instalar AEM Service Pack 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
+   + [AEM Errores de servicio no disponible después de instalar el paquete de servicio 6.5.15.0 de](/help/forms/using/aem-service-pack-installation-solution.md)
+   + [Problema de instalación del Service Pack de AEM Forms JEE 6.5.15.0 en el entorno JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
 + Documentación heredada {#legacy-documentation}
    + [Usar el servicio de ejecución de scripts en AEM Forms en JEE Workbench para generar datos XML](developing/building-xml.md)
    + [Comprimir y descomprimir archivos mediante AEM Forms en una DSC personalizada JEE](developing/compressing-decompressing-custom-dsc.md)
