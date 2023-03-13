@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 5c26a043d735921d91044156f2749dc761dbb566
+source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5903'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Introducción {#introduction}
 
-Cada actualización del repositorio crea una nueva revisión de contenido. Como resultado, con cada actualización el tamaño del repositorio aumenta. Para evitar el crecimiento incontrolado del repositorio, es necesario limpiar las revisiones antiguas para liberar recursos de disco. Esta funcionalidad de mantenimiento se denomina Limpieza de revisión. AEM Ha estado disponible como una rutina sin conexión desde la versión 6.0 de la aplicación de la versión de.
+Cada actualización del repositorio crea una nueva revisión de contenido. Como resultado, con cada actualización, el tamaño del repositorio aumenta. Es necesario limpiar las revisiones antiguas para liberar recursos de disco. Esto es importante para evitar un crecimiento incontrolado del repositorio. Esta funcionalidad de mantenimiento se denomina Limpieza de revisión. AEM Ha estado disponible como una rutina sin conexión desde la versión 6.0 de la aplicación de la versión de.
 
 AEM Con la versión 6.3 y superior de la, se ha introducido una versión en línea de esta funcionalidad denominada Limpieza de revisión en línea. AEM AEM En comparación con la Limpieza de revisión sin conexión, en la que la instancia de debe cerrarse, la Limpieza de revisión en línea puede ejecutarse mientras la instancia está en línea. Limpieza de revisión en línea está activada de forma predeterminada y es la forma recomendada de realizar una limpieza de revisión.
 
