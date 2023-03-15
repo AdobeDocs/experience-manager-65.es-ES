@@ -11,10 +11,10 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 879855af80ffdaa9c5f40e43f8b1543ed9305c13
-workflow-type: ht
-source-wordcount: '329'
-ht-degree: 100%
+source-git-commit: a98550c11405e6d0f43ff7ed8905644a3aedd78c
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 98%
 
 ---
 
@@ -66,7 +66,7 @@ AEM 6.5.12.0 Forms en JEE proporciona dos tipos de instaladores: [Programa de in
 
 La siguiente imagen muestra los escenarios para utilizar el programa de instalación completo y de parches.
 
-![](assets/full-and-patch-installer.png)
+![Instalador completo y instalador de parches](/help/forms/using/assets/full-and-patch-installer.png)
 
 <!--
 [Work in Progress]
