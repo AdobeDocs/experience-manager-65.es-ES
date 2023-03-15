@@ -4,9 +4,9 @@ description: Descubra cómo solucionar los problemas más comunes relacionados c
 feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
-source-git-commit: 289c4644063504ec3c8e02d930933ad7260600f0
+source-git-commit: a323e6c30bf2c226f6613d1b9b037a0beedbfc0d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 100%
 
 ---
@@ -26,8 +26,14 @@ MSM registra varios servlets que se pueden solicitar con selectores en las direc
 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Utilícelo en una página de modelo para recuperar la lista de todas las Live Copies vinculadas a ella, con información del estado de Live Copy adicional.
+   * por ejemplo:
+      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+
+
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Utilícelo en páginas de Live Copy para recuperar información avanzada sobre su conexión con sus páginas de modelo. Si la página no es una Live Copy, no se devuelve nada.
+   * por ejemplo:
+      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Estos servlets generan mensajes de registro de depuración a través del registrador `com.day.cq.wcm.msm` que también puede ser útil.
 
