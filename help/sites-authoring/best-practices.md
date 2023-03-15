@@ -35,9 +35,9 @@ Para conocer las prácticas recomendadas sobre administración, implementación 
 
 Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
 
-## Recursos {#assets}
+## Assets {#assets}
 
-Las prácticas recomendadas sobre Assets, incluidas la capacidad de Dynamic Media y la integración con Dynamic Media Classic, se describen en los siguientes temas:
+Las prácticas recomendadas en Assets, incluidas la capacidad de Dynamic Media y la integración de Dynamic Media Classic, se describen en los siguientes temas:
 
 <table>
  <tbody>
@@ -54,7 +54,7 @@ Las prácticas recomendadas sobre Assets, incluidas la capacidad de Dynamic Medi
   <tr>
    <td>Imágenes dinámicas</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Prácticas recomendadas de las imágenes dinámicas</a></td>
-   <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor manera de optimizar la calidad de las imágenes si utiliza la funcionalidad de Dynamic Media o la integración con Dynamic Media Classic. </p> </td>
+   <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor manera de optimizar la calidad de las imágenes si utiliza la funcionalidad de Dynamic Media o si se integra con Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Recursos multilingües</td>
@@ -64,18 +64,18 @@ Las prácticas recomendadas sobre Assets, incluidas la capacidad de Dynamic Medi
  </tbody>
 </table>
 
-## Sitios {#sites}
+## Sites {#sites}
 
 Para administrar y crear contenido en un sitio web, hay que seguir estas prácticas recomendadas:
 
 |  |  |  |
 |---|---|---|
-| Herramientas de creación | [Entorno y herramientas de creación](/help/sites-authoring/author-environment-tools.md) | Proporciona información general sobre las herramientas utilizadas para crear páginas. |
-| Organización de páginas | [Crear y organizar páginas](/help/sites-authoring/managing-pages.md) | Proporciona información general sobre cómo organizar las páginas, incluidas convenciones de nomenclatura. |
+| Herramientas de creación | [Herramientas y entorno de creación](/help/sites-authoring/author-environment-tools.md) | Proporciona información general sobre las herramientas utilizadas para crear páginas. |
+| Organización de páginas | [Crear y organizar páginas](/help/sites-authoring/managing-pages.md) | Proporciona información general sobre cómo organizar mejor las páginas, incluidas las convenciones de nomenclatura. |
 
 ## Forms {#forms}
 
 |  |  |  |
 |---|---|---|
-| Formularios adaptables | [Prácticas recomendadas para usar formularios adaptables](/help/forms/using/adaptive-forms-best-practices.md)  | Describe las prácticas recomendadas para configurar, crear y personalizar los formularios adaptables. |
+| Formularios adaptables | [Prácticas recomendadas para usar formularios adaptables ](/help/forms/using/adaptive-forms-best-practices.md) | Describe las prácticas recomendadas para configurar, crear y personalizar los formularios adaptables. |
 | Formularios HTML5 | [Prácticas recomendadas para diseñar formularios HTML5](/help/forms/using/best-practices-for-html5-forms.md) | Describe las prácticas recomendadas para trabajar en la composición y el diseño de los formularios HTML5. |

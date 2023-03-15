@@ -223,15 +223,15 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
    * **Principal**
 
-      Permite seleccionar todo el componente contenedor de diseño para realizar acciones en conjunto.
+      Permite seleccionar todo el componente del contenedor de diseños para realizar acciones en conjunto.
 
    * **Flotar a una línea nueva**
 
-      El componente se moverá a una nueva línea, según el espacio disponible en la cuadrícula.
+      El componente se moverá a una nueva línea, en función del espacio disponible en la cuadrícula.
 
    * **Ocultar componente**
 
-      El componente se volverá invisible (puede restaurarse desde la barra de herramientas del contenedor de diseño).
+      El componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseño).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * En el modo **Diseño** puede pulsar o hacer clic en **Arrastrar componentes aquí** para seleccionar el componente completo. Esto hará que se muestre la barra de herramientas de este modo.
@@ -242,7 +242,7 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Mostrar componentes ocultos** - Muestra todos los componentes o cada uno de ellos. El número indica cuántos componentes ocultos existen actualmente. El contador muestra cuántos componentes están ocultos.
+   * **Mostrar componentes ocultos** : Muestre todos los componentes o cada componente por separado. El número indica cuántos componentes ocultos hay actualmente. El contador muestra cuántos componentes están ocultos.
 
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 

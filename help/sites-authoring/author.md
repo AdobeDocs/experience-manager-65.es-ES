@@ -68,7 +68,7 @@ Asimismo, hay tareas administrativas que le ayudan a administrar su contenido:
 
 #### Entorno de publicación {#publish-environment}
 
-Cuando esté listo, el contenido del sitio AEM se publica en el **entorno de publicación**. Aquí las páginas del sitio web se ponen a disposición de la audiencia objetivo de acuerdo con la apariencia de la interfaz diseñada.
+AEM Cuando esté listo, el contenido del sitio de la se publica en el **entorno de publicación**. Aquí las páginas del sitio web se ponen a disposición de la audiencia objetivo de acuerdo con la apariencia de la interfaz diseñada.
 
 Normalmente, el entorno de publicación se encuentra dentro de la zona desmilitarizada, es decir, disponible para Internet, pero ya no bajo la protección completa de la red interna.
 
@@ -85,7 +85,7 @@ Cuando el sitio de AEM es un [sitio de la comunidad](/help/communities/overview.
    >  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
 >* **Replicar o replicación**
-   >  Son los términos técnicos utilizados para indicar el movimiento de datos (p. ej., contenido de la página, archivos, código, comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar a la inversa los comentarios del usuario.
+   >  Son los términos técnicos utilizados para indicar el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar de forma inversa los comentarios del usuario.
 >
 
 

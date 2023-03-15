@@ -116,7 +116,7 @@ Para obtener más información sobre cómo crear sus propios grupos de pruebas, 
 
 1. Agregue las siguientes propiedades al nodo myFirstTest :
 
-   | Nombre | Tipo | Valor |
+   | Nombre | Tipo | Valor  |
    |---|---|---|
    | `categories` | Cadena[] | `granite.testing.hobbes.tests` |
    | `dependencies` | Cadena[] | `granite.testing.hobbes.testrunner` |

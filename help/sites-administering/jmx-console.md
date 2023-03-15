@@ -1,5 +1,5 @@
 ---
-title: Monitorización de recursos del servidor utilizando la consola JMX
+title: Supervisión de recursos del servidor mediante la consola JMX
 seo-title: Monitoring Server Resources Using the JMX Console
 description: Obtenga información sobre cómo monitorizar los recursos del servidor mediante la consola JMX.
 seo-description: Learn how to monitor server resources using the JMX console.
@@ -18,15 +18,15 @@ ht-degree: 1%
 
 ---
 
-# Monitorización de recursos del servidor utilizando la consola JMX{#monitoring-server-resources-using-the-jmx-console}
+# Supervisión de recursos del servidor mediante la consola JMX{#monitoring-server-resources-using-the-jmx-console}
 
-La consola JMX le permite monitorizar y administrar los servicios en el servidor CRX. Las secciones siguientes resumen los atributos y operaciones que se exponen a través del marco JMX.
+La consola JMX permite supervisar y administrar los servicios en el servidor CRX. Las secciones siguientes resumen los atributos y las operaciones expuestos a través del marco de trabajo JMX.
 
-Para obtener información sobre cómo utilizar los controles de la consola, consulte [Uso de la consola JMX](#using-the-jmx-console). Para obtener información general sobre JMX, consulte la [Tecnología de Extensiones de administración Java (JMX)](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) en el sitio web de Oracle.
+Para obtener información sobre cómo utilizar los controles de la consola, consulte [Uso de la consola JMX](#using-the-jmx-console). Para obtener información general sobre JMX, consulte la [Tecnología Java Management Extensions (JMX)](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) en el sitio web del Oracle.
 
 Para obtener información sobre la creación de MBeans para administrar los servicios mediante la consola JMX, consulte [Integración de servicios con la consola JMX](/help/sites-developing/jmx-integration.md).
 
-## Mantenimiento del flujo de trabajo {#workflow-maintenance}
+## Mantenimiento de flujo de trabajo {#workflow-maintenance}
 
 Operaciones para administrar instancias de flujo de trabajo en ejecución, completadas, obsoletas y fallidas.
 
@@ -35,75 +35,75 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
 >[!NOTE]
 >
->Consulte la [consola de flujo de trabajo](/help/sites-administering/workflows-administering.md) para obtener herramientas de administración de flujo de trabajo adicionales y descripciones de posibles estados de instancias de flujo de trabajo.
+>Consulte la [consola de flujo de trabajo](/help/sites-administering/workflows-administering.md) para obtener herramientas de administración de flujos de trabajo adicionales y descripciones de posibles estados de instancias de flujo de trabajo.
 
 ### Operaciones {#operations}
 
-**listRunningWorkflowsPerModel** Indica el número de instancias de flujo de trabajo que se están ejecutando para cada modelo de flujo de trabajo.
+**listRunningWorkflowsPerModel** Indica el número de instancias de flujo de trabajo que se ejecutan para cada modelo de flujo de trabajo.
 
 * Argumentos: ninguno
-* Valor devuelto: Datos de tabla que contienen las columnas Count y ModelId.
+* Valor devuelto: datos tabulares que contienen las columnas Count y ModelId.
 
 **listCompletedWorkflowsPerModel** Indica el número de instancias de flujo de trabajo completadas para cada modelo de flujo de trabajo.
 
 * Argumentos: ninguno
-* Valor devuelto: Datos de tabla que contienen las columnas Count y ModelId.
+* Valor devuelto: datos tabulares que contienen las columnas Count y ModelId.
 
-**returnWorkflowQueueInfo** Muestra información sobre los elementos de flujo de trabajo que se han procesado y que se ponen en cola para su procesamiento.
+**returnWorkflowQueueInfo** Enumera información sobre los elementos de flujo de trabajo que se han procesado y que se han puesto en cola para su procesamiento.
 
 * Argumentos: ninguno
-* Valor devuelto: Datos tabulares que contienen las columnas siguientes:
+* Valor devuelto: Datos de tabla que contienen las siguientes columnas:
 
    * Trabajos
    * Nombre de cola
    * Activar tareas
-   * Tiempo de procesamiento promedio
-   * Tiempo de espera promedio
+   * Tiempo medio de procesamiento
+   * Tiempo medio de espera
    * Tareas canceladas
    * Tareas con errores
    * Trabajos finalizados
    * Trabajos procesados
    * Trabajos en cola
 
-**returnWorkflowJobTopicInfo** Muestra información de procesamiento de los trabajos de flujo de trabajo, organizada por tema.
+**returnWorkflowJobTopicInfo** Enumera la información de procesamiento de los trabajos de flujo de trabajo, organizada por temas.
 
 * Argumentos: ninguno
-* Valor devuelto: Datos de tabla que contienen las columnas siguientes:
+* Valor devuelto: datos tabulares que contienen las siguientes columnas:
 
    * Nombre del tema
-   * Tiempo de procesamiento promedio
-   * Tiempo de espera promedio
+   * Tiempo medio de procesamiento
+   * Tiempo medio de espera
    * Tareas canceladas
    * Tareas con errores
    * Trabajos finalizados
    * Trabajos procesados
 
-**returnFailedWorkflowCount** Muestra el número de instancias de flujo de trabajo que han fallado. Puede especificar un modelo de flujo de trabajo para consultar o recuperar información para todos los modelos de flujo de trabajo.
+**returnFailedWorkflowCount** Muestra el número de instancias de flujo de trabajo que han fallado. Puede especificar un modelo de flujo de trabajo para consultar o recuperar información de todos los modelos de flujo de trabajo.
 
 * Argumentos:
 
-   * modelo: El ID del modelo que se va a consultar. Para ver un recuento de instancias de flujo de trabajo fallidas para todos los modelos de flujo de trabajo, no especifique ningún valor. El ID es la ruta al nodo del modelo, por ejemplo:
+   * model: ID del modelo que se va a consultar. Para ver un recuento de instancias de flujo de trabajo con errores para todos los modelos de flujo de trabajo, especifique sin valor. El ID es la ruta al nodo del modelo, por ejemplo:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Valor devuelto: Número de instancias de flujo de trabajo fallidas.
+* Valor devuelto: número de instancias de flujo de trabajo con errores.
 
 **returnFailedWorkflowCountPerModel** Muestra el número de instancias de flujo de trabajo que han fallado para cada modelo de flujo de trabajo.
 
 * Argumentos: ninguno.
-* Valor devuelto: Datos de tabla que contienen las columnas Count y Model ID .
+* Valor devuelto: datos tabulares que contienen las columnas Recuento e ID de modelo.
 
-**terminateFailedInstances** Finalice las instancias de flujo de trabajo que hayan fallado. Puede finalizar todas las instancias con errores o solo las instancias con errores de un modelo específico. Opcionalmente, puede reiniciar las instancias después de que se terminen. También puede probar la operación para ver los resultados sin realizar realmente la operación.
+**terminateFailedInstances** Finalice las instancias de flujo de trabajo con errores. Puede finalizar todas las instancias fallidas o solo las instancias fallidas para un modelo específico. De forma opcional, puede reiniciar las instancias una vez finalizadas. También puede probar la operación para ver los resultados sin realizar realmente la operación.
 
 * Argumentos:
 
-   * Reinicie la instancia: (Opcional) Especifique un valor de `true` para reiniciar las instancias después de que se terminen. El valor predeterminado de `false` no provoca el reinicio de instancias de flujo de trabajo terminadas.
-   * Sequedad: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que la operación se realice.
-   * Modelo: (Opcional) El ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias fallidas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+   * Reinicie la instancia: (Opcional) Especifique un valor de `true` para reiniciar las instancias una vez terminadas. El valor predeterminado de `false` no provoca el reinicio de instancias de flujo de trabajo terminadas.
+   * Ejecución en seco: (Opcional) especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
+   * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias fallidas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Valor devuelto: Datos tabulares sobre las instancias que se terminan, que contienen las siguientes columnas:
+* Valor devuelto: Datos de tabla sobre las instancias que han finalizado, que contienen las columnas siguientes:
 
    * Iniciador
    * InstanceId
@@ -112,16 +112,16 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
    * StartComment
    * WorkflowTitle
 
-**retryFailedWorkItems** Intenta ejecutar pasos de elementos de trabajo que han fallado. Puede volver a intentar todos los elementos de trabajo con errores o solo los elementos de trabajo con errores para un modelo de flujo de trabajo específico. Si lo desea, puede probar la operación para ver los resultados sin realizar realmente la operación.
+**retryFailedWorkItems** Intenta ejecutar pasos de elementos de trabajo que han fallado. Puede reintentar todos los elementos de trabajo con errores o solo los elementos de trabajo con errores para un modelo de flujo de trabajo específico. Si lo desea, puede probar la operación para ver los resultados sin realizar realmente la operación.
 
 * Argumentos:
 
-   * Sequedad: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que la operación se realice.
-   * Modelo: (Opcional) El ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a los elementos de trabajo fallidos de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+   * Ejecución en seco: (Opcional) especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
+   * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a los elementos de trabajo con errores de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Valor devuelto: Datos tabulares sobre los elementos de trabajo fallidos que se vuelven a intentar, incluidas las siguientes columnas:
+* Valor devuelto: datos de tabla sobre los elementos de trabajo con errores que se vuelven a intentar, incluidas las columnas siguientes:
 
    * Iniciador
    * InstanceId
@@ -130,17 +130,17 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
    * StartComment
    * WorkflowTitle
 
-**PurgeActive** Elimina las instancias de flujo de trabajo activas de una página específica. Puede depurar instancias activas para todos los modelos o solo las instancias para un modelo específico. Opcionalmente, puede probar la operación para ver los resultados sin realizar realmente la operación.
+**PurgeActive** Elimina las instancias de flujo de trabajo activas de una página específica. Se pueden depurar instancias activas para todos los modelos o sólo las instancias de un modelo específico. Si lo desea, puede probar la operación para ver los resultados sin realizar realmente la operación.
 
 * Argumentos:
 
-   * Modelo: (Opcional) El ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+   * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Número de días transcurridos desde que se inició el flujo de trabajo: La edad de las instancias de flujo de trabajo que se van a purgar, en días.
-   * Sequedad: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que la operación se realice.
+   * Número de días desde que se inició el flujo de trabajo: antigüedad de las instancias de flujo de trabajo que se van a depurar, en días.
+   * Ejecución en seco: (Opcional) especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
 
-* Valor devuelto: Datos tabulares sobre las instancias de flujo de trabajo activas que se depuran, incluidas las columnas siguientes:
+* Valor devuelto: datos tabulares sobre las instancias de flujo de trabajo activas que se depuran, incluidas las siguientes columnas:
 
    * Iniciador
    * InstanceId
@@ -153,59 +153,59 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 
 * Argumentos:
 
-   * Modelo: (Opcional) El ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+   * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Valor devuelto: Número de instancias de flujo de trabajo obsoletas.
+* Valor devuelto: número de instancias de flujo de trabajo antiguas.
 
-**restartStaleWorkflows** Reinicia instancias de flujo de trabajo obsoletas. Puede reiniciar todas las instancias obsoletas o solo las instancias obsoletas de un modelo específico. También puede probar la operación para ver los resultados sin realizar realmente la operación.
+**restartStaleWorkflows** Reinicia instancias de flujo de trabajo obsoletas. Puede reiniciar todas las instancias antiguas o solo las instancias antiguas de un modelo específico. También puede probar la operación para ver los resultados sin realizar realmente la operación.
 
 * Argumentos:
 
-   * Modelo: (Opcional) El ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias obsoletas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+   * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias antiguas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Sequedad: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que la operación se realice.
+   * Ejecución en seco: (Opcional) especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
 
-* Valor devuelto: Lista de instancias de flujo de trabajo que se reinician.
+* Valor devuelto: lista de instancias de flujo de trabajo que se reinician.
 
 **fetchModelList** Muestra todos los modelos de flujo de trabajo.
 
 * Argumentos: ninguno
-* Valor devuelto: Datos tabulares que identifican los modelos de flujo de trabajo, incluidas las columnas ModelId y ModelName.
+* Valor devuelto: datos de tabla que identifican los modelos de flujo de trabajo, incluidas las columnas ModelId y ModelName.
 
-**countRunningWorkflows** Devuelve el número de instancias de flujo de trabajo que se están ejecutando. Puede recuperar el número de instancias en ejecución para todos los modelos de flujo de trabajo o para un modelo específico.
-
-* Argumentos:
-
-   * Modelo: (Opcional) El ID del modelo para el que se devuelve el número de instancias en ejecución. No especifique ningún modelo para devolver el número de instancias en ejecución de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
-
-      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-
-* Valor devuelto: Número de instancias de flujo de trabajo en ejecución.
-
-**countCompletedWorkflows** Devuelve el número de instancias de flujo de trabajo completadas. Puede recuperar el número de instancias completadas para todos los modelos de flujo de trabajo o para un modelo específico.
+**countRunningWorkflows** Devuelve el número de instancias de flujo de trabajo en ejecución. Puede recuperar el número de instancias en ejecución para todos los modelos de flujo de trabajo o para un modelo específico.
 
 * Argumentos:
 
-   * Modelo: (Opcional) El ID del modelo para el que se devuelve el número de instancias completadas. No especifique ningún modelo para devolver el número de instancias completadas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+   * Modelo: (Opcional) ID del modelo para el que se devuelve el número de instancias en ejecución. No especificar ningún modelo para devolver el número de instancias en ejecución de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Valor devuelto: Número de instancias de flujo de trabajo completadas.
+* Valor devuelto: número de instancias de flujo de trabajo en ejecución.
 
-**purgeCompleted** Elimina del repositorio los registros de flujos de trabajo completados de una edad específica. Utilice esta operación periódicamente para minimizar el tamaño del repositorio cuando utiliza con frecuencia flujos de trabajo. Puede purgar instancias completadas para todos los modelos o solo las instancias de un modelo específico. Opcionalmente, puede probar la operación para ver los resultados sin realizar realmente la operación.
+**countCompletedWorkflows** Devuelve el número de instancias de flujo de trabajo que se han completado. Puede recuperar el número de instancias completadas para todos los modelos de flujo de trabajo o para un modelo específico.
 
 * Argumentos:
 
-   * Modelo: (Opcional) El ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+   * Modelo: (Opcional) ID del modelo para el que se devuelve el número de instancias completadas. No especificar ningún modelo para devolver el número de instancias completadas de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Número de días transcurridos desde que se completó el flujo de trabajo: Número de días durante los que se han completado las instancias del flujo de trabajo.
-   * Sequedad: (Opcional) Especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que la operación se realice.
 
-* Valor devuelto: Datos tabulares sobre las instancias de flujo de trabajo completadas que se depuran, incluidas las siguientes columnas:
+* Valor devuelto: número de instancias de flujo de trabajo completadas.
+
+**purgeCompleted** Elimina del repositorio los registros de los flujos de trabajo completados de una página específica. Utilice esta operación periódicamente para minimizar el tamaño del repositorio cuando haga un uso intensivo de los flujos de trabajo. Puede depurar instancias completadas para todos los modelos o solo las instancias de un modelo específico. Si lo desea, puede probar la operación para ver los resultados sin realizar realmente la operación.
+
+* Argumentos:
+
+   * Modelo: (Opcional) ID del modelo al que se aplica la operación. No especifique ningún modelo para aplicar la operación a las instancias de flujo de trabajo de todos los modelos de flujo de trabajo. El ID es la ruta al nodo del modelo, por ejemplo:
+
+      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+   * Número de días transcurridos desde que se completó el flujo de trabajo: número de días durante los cuales las instancias del flujo de trabajo quedaron en el estado completado.
+   * Ejecución en seco: (Opcional) especifique un valor de `true` para ver los resultados de la operación sin realizar realmente la operación. El valor predeterminado de `false` hace que se realice la operación.
+
+* Valor devuelto: datos tabulares sobre las instancias de flujo de trabajo completadas que se depuran, incluidas las columnas siguientes:
 
    * Iniciador
    * InstanceId
@@ -219,25 +219,25 @@ Operaciones para administrar instancias de flujo de trabajo en ejecución, compl
 Información sobre el repositorio CRX
 
 * Dominio: com.adobe.granite
-* Tipo: Repositorio
+* Tipo: repositorio
 
 ### Atributos {#attributes}
 
 **Nombre** Nombre de la implementación del repositorio JCR. Solo lectura.
 
-**Versión** Versión de implementación del repositorio. Solo lectura.
+**Versión** La versión de implementación del repositorio. Solo lectura.
 
-**HomeDir** El directorio donde se encuentra el repositorio. La ubicación predeterminada es &lt;quickstart_jar_location>/crx-quickstart/repository. Solo lectura.
+**HomeDir** El directorio en el que se encuentra el repositorio. La ubicación predeterminada es &lt;quickstart_jar_location>/crx-quickstart/repository. Solo lectura.
 
-**Nombre del cliente** Nombre del cliente al que se emite la licencia de software. Solo lectura.
+**NombreCliente** El nombre del cliente al que se emite la licencia de software. Solo lectura.
 
 **LicenseKey** La clave de licencia única para esta instalación del repositorio. Solo lectura.
 
-**AvailableDiskSpace** Espacio en disco disponible para esta instancia del repositorio, en Mbytes. Solo lectura.
+**AvailableDiskSpace** Espacio en disco disponible para esta instancia del repositorio, en MB. Solo lectura.
 
 **MaximumNumberOfOpenFiles** Número de archivos que se pueden abrir al mismo tiempo. Solo lectura.
 
-**SessionTracker** El valor de la variable del sistema crx.debug.sessions . true indica una sesión de depuración. false indica una sesión normal. Lectura y escritura.
+**SessionTracker** Valor de la variable del sistema crx.debug.session. true indica una sesión de depuración. false indica una sesión normal. Lectura y escritura.
 
 **Descriptores** Conjunto de pares de clave-valor que representan las propiedades del repositorio. Todas las propiedades son de solo lectura.
 
@@ -249,21 +249,21 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>option.node.and.property.with.same.name.supported</td>
-   <td>Indica si un nodo y una propiedad del nodo pueden tener el mismo nombre. true indica que se admiten los mismos nombres, false indica que no se admite. </td>
+   <td>Indica si un nodo y una propiedad del nodo pueden tener el mismo nombre. true indica que se admiten los mismos nombres, false indica que no se admiten. </td>
   </tr>
   <tr>
    <td>identifier.stability</td>
    <td>Indica la estabilidad de los identificadores de nodo no referenciables. Los siguientes valores son posibles:
     <ul>
      <li>identifier.stable.indefinite.duration: Los identificadores no cambian.</li>
-     <li>identifier.stable.method.duration: Los identificadores pueden cambiar entre llamadas de método.</li>
-     <li>identifier.stable.save.duration: Los identificadores no cambian dentro de un ciclo de almacenamiento/actualización.</li>
-     <li>identifier.stable.session.duration: Los identificadores no cambian durante una sesión.</li>
+     <li>identifier.Stability.method.duration: los identificadores pueden cambiar entre llamadas de método.</li>
+     <li>identifier.stable.save.duration: Los identificadores no cambian dentro de un ciclo de guardado/actualización.</li>
+     <li>identifier.Stability.session.duration: Los identificadores no cambian durante una sesión.</li>
     </ul> </td>
   </tr>
   <tr>
    <td>query.xpath.pos.index</td>
-   <td>Indica si se admite el lenguaje de consulta JCR 1.0 XPath. true indica compatibilidad y false indica que no es compatible.</td>
+   <td>Indica si se admite el lenguaje de consulta JCR 1.0 XPath. true indica compatibilidad y false indica que no la admite.</td>
   </tr>
   <tr>
    <td>crx.repository.systemid</td>
@@ -271,35 +271,35 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>option.query.sql.supported</td>
-   <td>Indica si se admite el lenguaje de consulta JCR 1.0 XPath. true indica compatibilidad y false indica que no es compatible.</td>
+   <td>Indica si se admite el lenguaje de consulta JCR 1.0 XPath. true indica compatibilidad y false indica que no la admite.</td>
   </tr>
   <tr>
    <td>jcr.repository.version</td>
-   <td>Versión de la implementación del repositorio.</td>
+   <td>La versión de la implementación del repositorio.</td>
   </tr>
   <tr>
    <td>option.update.primary.node.type.supported</td>
-   <td>Indica si se puede cambiar el tipo de nodo principal de un nodo. true indica que se puede cambiar el tipo de nodo principal y false indica que no se admite el cambio.</td>
+   <td>Indica si se puede cambiar el tipo de nodo principal de un nodo. true indica que puede cambiar el tipo de nodo principal y false indica que no se admite el cambio.</td>
   </tr>
   <tr>
    <td>option.node.type.management.supported</td>
-   <td>Indica si se admite la administración de tipos de nodos. true indica que es compatible y false indica que no es compatible.</td>
+   <td>Indica si se admite la administración del tipo de nodo. true indica que se admite y false indica que no se admite.</td>
   </tr>
   <tr>
    <td>node.type.management.overrides.supported</td>
-   <td>Indica si se puede anular la definición de nodo secundario o propiedad heredada de un tipo de nodo. true indica que se admiten anulaciones y false indica que no se han anulado anulaciones.</td>
+   <td>Indica si se puede anular la propiedad heredada o la definición de nodo secundario de un tipo de nodo. true indica que se admiten invalidaciones y false indica que no se admiten invalidaciones.</td>
   </tr>
   <tr>
    <td>option.observation.supported</td>
-   <td>true indica que se admite la observación asíncrona de cambios en el repositorio. El soporte de la observación asincrónica permite que las aplicaciones reciban y respondan a las notificaciones sobre cada cambio a medida que se producen.</td>
+   <td>true indica que se admite la observación asincrónica de los cambios del repositorio. La compatibilidad con la observación asincrónica permite a las aplicaciones recibir y responder a las notificaciones sobre cada cambio a medida que se produce.</td>
   </tr>
   <tr>
    <td>query.jcrscore</td>
-   <td><p>true indica que la pseudo propiedad jcr:score está disponible en consultas XPath y SQL que incluyen una función jcrfn:contains (in XPath) o CONTAINS (in SQL) para realizar una búsqueda de texto completo.</p> </td>
+   <td><p>true indica que la pseudopropiedad jcr:score está disponible en consultas XPath y SQL que incluyen una función jcrfn:contains (en XPath) o CONTAINS (en SQL) para realizar una búsqueda de texto completo.</p> </td>
   </tr>
   <tr>
    <td>option.simple.versioning.supported</td>
-   <td>true indica que el repositorio admite versiones simples. Con el control de versiones simple, el repositorio mantiene una serie secuencial de versiones de un nodo.</td>
+   <td>true indica que el repositorio admite versiones simples. Con el control de versiones sencillo, el repositorio mantiene una serie secuencial de versiones de un nodo.</td>
   </tr>
   <tr>
    <td>option.workspace.management.supported</td>
@@ -307,15 +307,15 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>option.update.mixin.node.types.supported</td>
-   <td>true indica que el repositorio admite la adición y eliminación de tipos de nodos mixtos de un nodo existente.</td>
+   <td>true indica que el repositorio admite la adición y eliminación de tipos de nodos de mezcla de un nodo existente.</td>
   </tr>
   <tr>
    <td>node.type.management.primary.item.name.supported</td>
-   <td>true indica que el repositorio permite que las definiciones de nodos contengan un elemento principal como secundario. Se puede acceder a un elemento principal mediante la API sin conocer el nombre del elemento.</td>
+   <td>true indica que el repositorio permite que las definiciones de nodo contengan un elemento principal como elemento secundario. Se puede acceder a un elemento principal mediante la API sin conocer el nombre del elemento.</td>
   </tr>
   <tr>
-   <td>level.2.2.supported</td>
-   <td>true indica que tanto LEVEL_1_SUPPORTED como OPTION_XML_IMPORT_SUPPORTED son verdaderos.</td>
+   <td>level.2.supported</td>
+   <td>true indica que tanto LEVEL_1_SUPPORTED como OPTION_XML_IMPORT_SUPPORTED son true.</td>
   </tr>
   <tr>
    <td>write.supported</td>
@@ -323,19 +323,19 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>node.type.management.update.in.use.supported</td>
-   <td>true indica que puede cambiar las definiciones de nodos que están en uso en nodos existentes.</td>
+   <td>true indica que puede cambiar las definiciones de nodo que están en uso por los nodos existentes.</td>
   </tr>
   <tr>
    <td>jcr.specification.version</td>
-   <td>Versión de la especificación JCR que implementa el repositorio.</td>
+   <td>La versión de la especificación JCR que implementa el repositorio.</td>
   </tr>
   <tr>
    <td>option.journaled.observation.supported</td>
-   <td>true indica que las aplicaciones pueden realizar la observación en diario del repositorio. con la observación en diario, se puede obtener un conjunto de notificaciones de cambio para un período de tiempo específico. </td>
+   <td>true indica que las aplicaciones pueden realizar una observación en diario del repositorio. con la observación en diario, se puede obtener un conjunto de notificaciones de cambio para un período de tiempo específico. </td>
   </tr>
   <tr>
    <td>query.languages</td>
-   <td>Los idiomas de consulta que admite el repositorio. Ningún valor indica que no se admita ninguna consulta.</td>
+   <td>Los idiomas de consulta compatibles con el repositorio. Ningún valor indica que no se admitan consultas.</td>
   </tr>
   <tr>
    <td>option.xml.export.supported</td>
@@ -343,11 +343,11 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>node.type.management.multiple.binary.properties.supported</td>
-   <td>true indica que el repositorio admite el registro de tipos de nodos que tienen varias propiedades binarias. false indica que se admite una sola propiedad binaria para un tipo de nodo.</td>
+   <td>true indica que el repositorio admite el registro de tipos de nodo que tienen varias propiedades binarias. false indica que se admite una sola propiedad binaria para un tipo de nodo.</td>
   </tr>
   <tr>
    <td>option.access.control.supported</td>
-   <td>true indica que el repositorio admite el control de acceso para configurar y determinar los privilegios de usuario para el acceso a nodos.</td>
+   <td>true indica que el repositorio admite el control de acceso para establecer y determinar privilegios de usuario para el acceso a nodos.</td>
   </tr>
   <tr>
    <td>option.baselines.supported</td>
@@ -359,7 +359,7 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>crx.cluster.id</td>
-   <td>Identificador del clúster de repositorios.</td>
+   <td>El identificador del clúster de repositorios.</td>
   </tr>
   <tr>
    <td>query.stored.queries.supported</td>
@@ -371,11 +371,11 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>node.type.management.inheritance</td>
-   <td><p>Indica el nivel de compatibilidad del repositorio con la herencia del tipo de nodo. Los siguientes valores son posibles:</p> <p>node.type.management.herencia.Minimum: El registro de tipos de nodos principales está limitado a aquellos que solo tienen nt:base como supertipo. El registro de los tipos de nodos de mezcla está limitado a los que no tienen supertipo.</p> <p>node.type.management.herencia.single: El registro de tipos de nodos principales está limitado a los que tienen un supertipo. El registro de los tipos de nodos de mezcla está limitado a los que tienen como máximo un supertipo.</p> <p><br /> node.type.management.herencia.multiple: Los tipos de nodos primarios se pueden registrar con uno o más supertipos. Los tipos de nodos mixtos se pueden registrar con cero o más supertipos.</p> </td>
+   <td><p>Indica el nivel de compatibilidad del repositorio para la herencia de tipo de nodo. Los siguientes valores son posibles:</p> <p>node.type.management.inheritance.minimal: El registro de tipos de nodo principales se limita a los que solo tienen nt:base como supertipo. El registro de los tipos de nodos de mezcla está limitado a los que no tienen supertipo.</p> <p>node.type.management.inheritance.single: El registro de tipos de nodos principales se limita a los que tienen un supertipo. El registro de los tipos de nodos de mezcla está limitado a aquellos con un supertipo como máximo.</p> <p><br /> node.type.management.inheritance.multiple: Los tipos de nodo principales se pueden registrar con uno o varios supertipos. Los tipos de nodos mixin se pueden registrar con cero o más supertipos.</p> </td>
   </tr>
   <tr>
    <td>crx.cluster.preferredMaster</td>
-   <td>true indica que este nodo de clúster es el maestro preferido del clúster.</td>
+   <td>true indica que este nodo de clúster es el nodo maestro preferido del clúster.</td>
   </tr>
   <tr>
    <td>option.transactions.supported</td>
@@ -383,31 +383,31 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>jcr.repository.vendor.url</td>
-   <td>Dirección URL del proveedor del repositorio.</td>
+   <td>La URL del proveedor del repositorio.</td>
   </tr>
   <tr>
    <td>node.type.management.value.constraints.supported</td>
-   <td>true indica que el repositorio admite restricciones de valor para propiedades de nodo.</td>
+   <td>true indica que el repositorio admite restricciones de valor para las propiedades del nodo.</td>
   </tr>
   <tr>
    <td>node.type.management.property.types</td>
-   <td>matriz de constantes javax.jcr.PropertyType que representan los tipos de propiedad que puede especificar un tipo de nodo registrado. Una matriz de longitud cero indica que los tipos de nodo registrados no pueden especificar definiciones de propiedad. Los tipos de propiedad son STRING, URI, BOOLEAN, LONG, DOUBLE, DECIMAL, BINARY, DATE, NAME, PATH, WEAKREFERENCE, REFERENCE y UNDEFINED (si se admite).</td>
+   <td>una matriz de constantes javax.jcr.PropertyType que representan los tipos de propiedad que puede especificar un tipo de nodo registrado. Una matriz de longitud cero indica que los tipos de nodo registrados no pueden especificar definiciones de propiedades. Los tipos de propiedad son STRING, URI, BOOLEAN, LONG, DOUBLE, DECIMAL, BINARY, DATE, NAME, PATH, WEAKREFERENCE, REFERENCE y UNDEFINED (si se admite)</td>
   </tr>
   <tr>
    <td>node.type.management.orderable.child.nodes.supported</td>
-   <td>true indica que el repositorio admite la preservación del orden de los nodos secundarios.</td>
+   <td>true indica que el repositorio admite la conservación del orden de los nodos secundarios.</td>
   </tr>
   <tr>
    <td>jcr.repository.vendor</td>
-   <td>Nombre del proveedor del repositorio.</td>
+   <td>El nombre del proveedor del repositorio.</td>
   </tr>
   <tr>
    <td>query.joins</td>
    <td><p>Nivel de compatibilidad con uniones en consultas. Los siguientes valores son posibles:</p>
     <ul>
-     <li>query.joins.none: No se admiten uniones. Las consultas pueden utilizar un selector.</li>
+     <li>query.joins.none: no se admiten combinaciones. Las consultas pueden utilizar un selector.</li>
      <li>query.joins.inner: Compatibilidad con uniones internas.</li>
-     <li>query.joins.inner.outside: Compatibilidad con uniones interiores y exteriores.</li>
+     <li>query.joins.inner.outer: compatibilidad con uniones internas y externas.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -428,7 +428,7 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>node.type.management.same.name.siblings.supported</td>
-   <td>true indica que el repositorio admite nodos hermanos (nodos con el mismo elemento principal) con los mismos nombres.</td>
+   <td>true indica que el repositorio admite nodos hermanos (nodos con el mismo nodo principal) con los mismos nombres.</td>
   </tr>
   <tr>
    <td>node.type.management.residual.definitions.supported</td>
@@ -444,7 +444,7 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>level.1.supported</td>
-   <td>true indica que option.xml.export.support es verdadero y query.languages es de longitud distinta de cero.</td>
+   <td>true indica que option.xml.export.support es true y query.language tiene una longitud distinta de cero.</td>
   </tr>
   <tr>
    <td>option.unfiled.content.supported</td>
@@ -452,7 +452,7 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>jcr.specification.name</td>
-   <td>Nombre de la especificación JCR que implementa el repositorio.</td>
+   <td>El nombre de la especificación JCR que implementa el repositorio.</td>
   </tr>
   <tr>
    <td>option.versioning.supported</td>
@@ -460,7 +460,7 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>jcr.repository.name</td>
-   <td>Nombre del repositorio.</td>
+   <td>El nombre del repositorio.</td>
   </tr>
   <tr>
    <td>option.locking.supported</td>
@@ -480,7 +480,7 @@ Información sobre el repositorio CRX
   </tr>
   <tr>
    <td>option.retention.supported</td>
-   <td>true indica que el repositorio admite el uso de aplicaciones de administración de retención externas para aplicar políticas de retención al contenido y admite retención y liberación.</td>
+   <td>true indica que el repositorio admite el uso de aplicaciones de administración de retención externas para aplicar directivas de retención al contenido y admite retención y liberación.</td>
   </tr>
   <tr>
    <td>option.lifecycle.supported</td>
@@ -489,43 +489,43 @@ Información sobre el repositorio CRX
  </tbody>
 </table>
 
-**NombresDeEspacioDeTrabajo** Nombres de los espacios de trabajo en el repositorio. Solo lectura.
+**WorkspaceNames** Nombres de los espacios de trabajo del repositorio. Solo lectura.
 
-**DataStoreGarbageCollectionDelay** Cantidad de tiempo en milisegundos que la colección de residuos dura después de escanear cada décimo nodo. Lectura y escritura.
+**DataStoreGarbageCollectionDelay** Cantidad de tiempo en milisegundos que la recolección de elementos no utilizados permanece activa después de analizar cada décimo nodo. Lectura y escritura.
 
-**BackupDelay** Cantidad de tiempo en milisegundos que el proceso de backup duerme entre cada paso de la copia de seguridad. Lectura y escritura.
+**BackupDelay** La cantidad de tiempo en milisegundos que el proceso de copia de seguridad permanece en suspensión entre cada paso de la copia de seguridad. Lectura y escritura.
 
-**BackupInProgress** El valor true indica que se está ejecutando un proceso de copia de seguridad. Solo lectura.
+**CopiaDeSeguridadEnCurso** El valor true indica que se está ejecutando un proceso de copia de seguridad. Solo lectura.
 
 **BackupProgress** Para la copia de seguridad actual, el porcentaje de todos los archivos de los que se ha realizado una copia de seguridad. Solo lectura.
 
 **CurrentBackupTarget** Para la copia de seguridad actual, el archivo ZIP donde se almacenan los archivos de copia de seguridad. Cuando una copia de seguridad no está en curso, no aparece ningún valor. Solo lectura.
 
-**BackupDid** El valor true indica que no se han producido errores durante la copia de seguridad actual o que no hay copia de seguridad en curso. false indica que se ha producido un error durante la copia de seguridad actual. Solo lectura.
+**CopiaDeSeguridadCorrecta** El valor true indica que no se han producido errores durante la copia de seguridad actual o que no hay ninguna copia de seguridad en curso. false indica que se produjo un error durante la copia de seguridad actual. Solo lectura.
 
-**BackupResult** Estado de la copia de seguridad actual. Los siguientes valores son posibles:
+**BackupResult** El estado de la copia de seguridad actual. Los siguientes valores son posibles:
 
-* Copia de seguridad en curso: Se está ejecutando una copia de seguridad.
-* Copia de seguridad cancelada: La copia de seguridad se ha cancelado.
-* Copia de seguridad finalizada con error: Error durante la copia de seguridad. El mensaje de error proporciona información sobre la causa.
-* Copia de seguridad completada: La copia de seguridad se realizó correctamente.
-* Hasta ahora no se ha ejecutado ninguna copia de seguridad: No hay copia de seguridad en curso.
+* Copia de seguridad en curso: se está ejecutando una copia de seguridad.
+* Copia de seguridad cancelada: se ha cancelado la copia de seguridad.
+* Copia de seguridad finalizada con error: error durante la copia de seguridad. El mensaje de error proporciona información sobre la causa.
+* Copia de seguridad completada: la copia de seguridad se realizó correctamente.
+* No se ha ejecutado ninguna copia de seguridad hasta el momento: no hay ninguna copia de seguridad en curso.
 
 Solo lectura.
 
 **TarOptimizationRunningSince** Hora a la que comenzó el proceso actual de optimización de archivos TAR. Solo lectura.
 
-**TarOptimizationDelay** Cantidad de tiempo en milisegundos que el proceso de optimización de TAR permanece entre cada paso del proceso. Lectura y escritura.
+**TarOptimizationDelay** La cantidad de tiempo en milisegundos que el proceso de optimización de TAR pasa en suspensión entre cada paso del proceso. Lectura y escritura.
 
-**ClusterProperties** Conjunto de pares de clave-valor que representan las propiedades y los valores del clúster. Cada fila de la tabla representa una propiedad de clúster. Solo lectura.
+**Propiedades de clúster** Conjunto de pares de clave-valor que representan las propiedades y los valores del clúster. Cada fila de la tabla representa una propiedad de clúster. Solo lectura.
 
 **ClusterNodes** Los miembros del clúster de repositorios.
 
-**ClusterId** Identificador de este clúster de repositorios. Solo lectura.
+**ClusterId** El identificador de este clúster de repositorios. Solo lectura.
 
-**ClusterMasterId** Identificador del nodo maestro de este clúster de repositorios. Solo lectura.
+**ClusterMasterId** El identificador del nodo maestro de este clúster de repositorios. Solo lectura.
 
-**ClusterNodeId** Identificador de este nodo del clúster de repositorios. Solo lectura.
+**ClusterNodeId** El identificador de este nodo del clúster de repositorios. Solo lectura.
 
 ### Operaciones {#operations-1}
 
@@ -533,34 +533,34 @@ Solo lectura.
 
 * Argumentos:
 
-   * nombre: Valor de cadena que representa el nombre del nuevo espacio de trabajo.
+   * name: Valor de tipo String que representa el nombre del nuevo espacio de trabajo.
 
 * Valor devuelto: ninguno
 
-**runDataStoreGarbageCollection** Ejecuta la colección de residuos en los nodos del repositorio.
+**runDataStoreGarbageCollection** Ejecuta la recolección de elementos no utilizados en los nodos del repositorio.
 
 * Argumentos:
 
-   * eliminar: Valor booleano que indica si se eliminarán los elementos del repositorio que no se hayan utilizado. Un valor de true provoca la eliminación de nodos y propiedades no utilizados. Un valor false hace que se analicen todos los nodos, pero ninguno se elimina.
+   * delete: valor booleano que indica si se eliminarán los elementos de repositorio no utilizados. El valor true provoca la eliminación de nodos y propiedades no utilizados. El valor false hace que se analicen todos los nodos, pero no se elimina ninguno.
 
 * Valor devuelto: ninguno
 
-**stopDataStoreGarbageCollection** Detiene la colección de residuos del almacén de datos en ejecución.
+**stopDataStoreGarbageCollection** Detiene la recolección de elementos no utilizados de un almacén de datos en ejecución.
 
 * Argumentos: ninguno
 * Valor devuelto: representación de cadena del estado actual
 
-**startBackup** Copia de seguridad de los datos del repositorio en un archivo ZIP.
+**startBackup** Realiza una copia de seguridad de los datos del repositorio en un archivo ZIP.
 
 * Argumentos:
 
-   * `target`: (Opcional) A `String` que representa el nombre del archivo ZIP o directorio en el que se archivarán los datos del repositorio. Para utilizar un archivo ZIP, incluya la extensión del nombre del archivo ZIP. Para utilizar un directorio, no incluya ninguna extensión de nombre de archivo.
+   * `target`: (Opcional) A `String` valor que representa el nombre del archivo ZIP o del directorio en el que se archivan los datos del repositorio. Para utilizar un archivo ZIP, incluya la extensión del nombre del archivo ZIP. Para utilizar un directorio, no incluya ninguna extensión de nombre de archivo.
 
       Para realizar una copia de seguridad incremental, especifique el directorio que se utilizó anteriormente para la copia de seguridad.
 
-      Puede especificar una ruta absoluta o relativa. Las rutas relativas son relativas al principal del directorio crx-quickstart.
+      Puede especificar una ruta absoluta o relativa. Las rutas relativas son relativas al elemento principal del directorio crx-quickstart.
 
-      Si no especifica ningún valor, el valor predeterminado de `backup-currentdate.zip` , donde `currentdate` tiene el formato `yyyyMMdd-HHmm`.
+      Cuando no se especifica ningún valor, el valor predeterminado de `backup-currentdate.zip` se utiliza, donde `currentdate` tiene el formato `yyyyMMdd-HHmm`.
 
 * Valor devuelto: ninguno
 
@@ -569,17 +569,17 @@ Solo lectura.
 * Argumentos: ninguno
 * Valor devuelto: ninguno
 
-**blockRepositoryWrites** Bloquea los cambios en los datos del repositorio. Todos los oyentes de copia de seguridad del repositorio reciben una notificación del bloque.
+**blockRepositoryWrites** Bloquea los cambios realizados en los datos del repositorio. El bloque se notifica a todos los agentes de escucha de copia de seguridad del repositorio.
 
 * Argumentos: ninguno
 * Valor devuelto: ninguno
 
-**unblockRepositoryWrites** Quita el bloque del repositorio. A todos los oyentes de copia de seguridad del repositorio se les notifica la eliminación del bloque.
+**unblockRepositoryWrites** Quita el bloque del repositorio. La eliminación del bloque se notifica a todos los agentes de escucha de copia de seguridad del repositorio.
 
 * Argumentos: ninguno
 * Valor devuelto: ninguno
 
-**startTarOptimization** Inicia el proceso de optimización de archivos TAR utilizando el valor predeterminado para tarOptimizationDelay.
+**startTarOptimization** Inicia el proceso de optimización del archivo TAR utilizando el valor predeterminado de tarOptimizationDelay.
 
 * Argumentos: ninguno
 * Valor devuelto: ninguno
@@ -589,52 +589,52 @@ Solo lectura.
 * Argumentos: ninguno
 * Valor devuelto: ninguno
 
-**tarIndexMerge** Combina los archivos de índice superiores de todos los conjuntos TAR. Los archivos de índice principales son archivos con distintas versiones principales. Por ejemplo, los siguientes archivos se combinan en el archivo index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. Se eliminan los archivos que se han combinado (en el ejemplo anterior, se eliminan index_1_1.tar, index_2_0.tar e index_3_0.tar).
+**tarIndexMerge** Combina los archivos de índice principales de todos los conjuntos TAR. Los archivos de índice principales son archivos con diferentes versiones principales. Por ejemplo, los siguientes archivos se combinan en el archivo index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. Los archivos que se han combinado se eliminan (en el ejemplo anterior, se eliminan index_1_1.tar, index_2_0.tar e index_3_0.tar).
 
 * Argumentos:
 
-   * `background`: Valor booleano que indica si se ejecuta la operación en segundo plano para que la consola web se pueda utilizar durante la ejecución. El valor true ejecuta la operación en segundo plano.
+   * `background`: Valor booleano que indica si se debe ejecutar la operación en segundo plano para que la consola web se pueda utilizar durante la ejecución. El valor true ejecuta la operación en segundo plano.
 
 * Valor devuelto: ninguno
 
-**makeClusterMaster** Establece este nodo de repositorio como el nodo maestro del clúster. Si aún no es maestro, este comando detiene el listener de la instancia maestra actual e inicia un listener maestro en el nodo actual. A continuación, este nodo se establece como nodo maestro y se reinicia, lo que provoca que todos los demás nodos del clúster (es decir, los que están controlados por el maestro) se conecten a esta instancia.
+**beClusterMaster** Establece este nodo de repositorio como el nodo maestro del clúster. Si no es así, este comando detiene el agente de escucha de la instancia maestra actual e inicia un agente de escucha maestro en el nodo actual. A continuación, este nodo se establece como nodo maestro y se reinicia, lo que provoca que todos los demás nodos del clúster (es decir, aquellos que están controlados por el nodo maestro) se conecten a esta instancia.
 
 * Argumentos: ninguno
 * Valor devuelto: ninguno
 
-**joinCluster** Agrega este repositorio a un clúster como nodo controlado por el maestro del clúster. Debe proporcionar un nombre de usuario y una contraseña para la autenticación. La conexión utiliza autenticación básica. Las credenciales de seguridad están codificadas en base-64 antes de enviarse al servidor.
+**joinCluster** Agrega este repositorio a un clúster como un nodo controlado por el maestro del clúster. Debe proporcionar un nombre de usuario y una contraseña para fines de autenticación. La conexión utiliza autenticación básica. Las credenciales de seguridad se codifican en base 64 antes de enviarse al servidor.
 
 * Argumentos:
 
-   * `master`: Valor de cadena que representa la dirección IP o el nombre de equipo del equipo que ejecuta el nodo maestro del repositorio.
-   * `username`: El nombre que se va a usar para autenticarse con el clúster.
-   * `password`: La contraseña que se utilizará para la autenticación.
+   * `master`: Valor de cadena que representa la dirección IP o el nombre de equipo del equipo que ejecuta el nodo del repositorio principal.
+   * `username`: Nombre que se utilizará para autenticarse en el clúster.
+   * `password`: Contraseña que se utilizará para la autenticación.
 
 * Valor devuelto: ninguno
 
-**traversalCheck** Recorre y opcionalmente corrige incoherencias en un subárbol que comienza en un nodo específico. Esto se trata detalladamente en la documentación sobre los administradores de persistencia.
+**travversalCheck** Recorre y, opcionalmente, corrige las incoherencias en un subárbol que comienza en un nodo específico. Esto se trata en detalle en la documentación sobre Administradores de persistencia.
 
-**consistencyCheck** Comprobaciones y, opcionalmente, correcciones de coherencia en el almacén de datos. Esto se trata detalladamente en la documentación del almacén de datos.
+**consistencyCheck** Comprueba y, opcionalmente, corrige la coherencia en el almacén de datos. Esto se trata en detalle en la documentación del almacén de datos.
 
-## Estadísticas del repositorio (Serie temporal) {#repository-statistics-timeseries}
+## Estadísticas del repositorio (TimeSeries) {#repository-statistics-timeseries}
 
-El valor del campo TimeSeries para cada tipo de estadística que `org.apache.jackrabbit.api.stats.RepositoryStatistics` define.
+El valor del campo Serie temporal para cada tipo de estadística que `org.apache.jackrabbit.api.stats.RepositoryStatistics` define.
 
 * Dominio: `com.adobe.granite`
 * Tipo: `TimeSeries`
-* Nombre: Uno de los siguientes valores de la variable `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Clase Enum:
+* Nombre: uno de los siguientes valores de `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Clase de enumeración:
 
    * BUNDLE_CACHE_ACCESS_COUNTER
    * BUNDLE_CACHE_MISS_AVERAGE
-   * BUNDLE_CACHE_MISS_COUNTER
+   * PAQUETE_CACHE_MISS_COUNTER
    * BUNDLE_CACHE_MISS_DURATION
    * BUNDLE_CACHE_SIZE_COUNTER
-   * BUNDLE_COUNTER
-   * BUNDLE_READ_COUNTER
+   * PAQUETE_CONTADOR
+   * PAQUETE_READ_COUNTER
    * BUNDLE_WRITE_AVERAGE
-   * BUNDLE_WRITE_COUNTER
+   * PAQUETE_WRITE_COUNTER
    * BUNDLE_WRITE_DURATION
-   * BUNDLE_WS_SIZE_COUNTER
+   * PAQUETE_WS_SIZE_COUNTER
    * QUERY_AVERAGE
    * QUERY_COUNT
    * QUERY_DURATION
@@ -649,33 +649,33 @@ El valor del campo TimeSeries para cada tipo de estadística que `org.apache.jac
 
 ### Atributos {#attributes-1}
 
-Se proporcionan los siguientes atributos para cada tipo de estadística del informe:
+Se proporcionan los atributos siguientes para cada tipo de estadística del que se informa:
 
-* ValuePerSecond: El valor medido por segundo durante el último minuto. Solo lectura.
-* ValuePerMinute: El valor medido por minuto durante la última hora. Solo lectura.
-* ValuePerHour: El valor medido por hora durante la última semana. Solo lectura.
-* ValuePerWeek: El valor medido por semana durante los últimos tres años. Solo lectura.
+* ValuePerSecond: valor medido por segundo en el último minuto. Solo lectura.
+* ValuePerMinute: valor medido por minuto durante la última hora. Solo lectura.
+* ValuePerHour: Valor medido por hora durante la última semana. Solo lectura.
+* ValuePerWeek: valor medido por semana durante los últimos tres años. Solo lectura.
 
 ## Estadísticas de consulta del repositorio {#repository-query-stats}
 
-Información estadística sobre consultas de repositorios.
+Información estadística sobre consultas del repositorio.
 
 * Dominio: com.adobe.granite
 * Tipo: QueryStat
 
 ### Atributos {#attributes-2}
 
-**Consultas lentas** Información sobre las consultas del repositorio que han tardado más en completarse. Solo lectura.
+**SlowQueries** Información sobre las consultas del repositorio que han tardado más tiempo en completarse. Solo lectura.
 
-**SlowQueriesQueueSize** El número máximo de consultas que se incluirán en la lista Consultas lentas. Lectura-escritura.
+**SlowQueriesQueueSize** Número máximo de consultas que se incluirán en la lista de consultas lentas. Lectura-escritura.
 
 **Consultas populares** Información sobre las consultas del repositorio que más se han producido. Solo lectura.
 
-**PopularQueriesQueueSize** Número máximo de consultas en la lista Consultas populares. Lectura-escritura.
+**PopularConsultasTamañoCola** Número máximo de consultas en la lista Consultas populares. Lectura-escritura.
 
 ### Operaciones {#operations-2}
 
-**clearSlowQueriesQueue** Quita todas las consultas de la lista SlowQueries.
+**clearSlowQueriesQueue** Quita todas las consultas de la lista de consultas lentas.
 
 * Argumentos: ninguno
 * Valor devuelto: ninguno
@@ -687,7 +687,7 @@ Información estadística sobre consultas de repositorios.
 
 ## Agentes de replicación {#replication-agents}
 
-Monitorice los servicios para cada agente de replicación. Cuando crea un agente de replicación, el servicio aparece automáticamente en la consola JMX.
+Supervise los servicios de cada agente de replicación. Al crear un agente de replicación, el servicio aparece automáticamente en la consola JMX.
 
 * **Dominio:** com.adobe.granite.replication
 * **Tipo:** agente
@@ -696,47 +696,47 @@ Monitorice los servicios para cada agente de replicación. Cuando crea un agente
 
 ### Atributos {#attributes-3}
 
-**Id** Un valor de cadena que representa el identificador de la configuración del agente de replicación. Varios agentes pueden utilizar la misma configuración. Solo lectura.
+**Id** Valor de tipo String que representa el identificador de la configuración del agente de replicación. Varios agentes pueden utilizar la misma configuración. Solo lectura.
 
 **Válido** Un valor booleano que indica si el agente está configurado correctamente:
 
 * `true`: Configuración válida.
-* `false` : La configuración contiene errores.
+* `false` : la configuración contiene errores.
 
 Solo lectura.
 
 **Habilitado** Un valor booleano que indica si el agente está habilitado:
 
-* `true`: habilitado.
-* `false`: deshabilitado.
+* `true`: Habilitado.
+* `false`: Deshabilitado.
 
 **QueueBlocked** Un valor booleano que indica si la cola existe y está bloqueada:
 
-* `true`: Bloqueado. Hay un reintento automático pendiente.
-* `false`: No está bloqueado o no existe.
+* `true`: Bloqueado. Está pendiente un reintento automático.
+* `false`: No bloqueado o no existe.
 
 Solo lectura.
 
 **QueuePaused** Un valor booleano que indica si la cola de trabajos está en pausa:
 
-* `true`: En pausa (suspendido)
+* `true`: en pausa (suspendido)
 * `false`: No está en pausa o no existe.
 
 Lectura-escritura.
 
-**QueueNumEntries** Un valor int que representa el número de trabajos en la cola del agente. Solo lectura.
+**QueueNumEntries** Valor int que representa el número de trabajos de la cola del agente. Solo lectura.
 
-**QueueStatusTime** Valor de fecha que indica la hora del servidor en la que se obtuvieron los valores de estado mostrados. El valor corresponde al tiempo en que se cargó la página. Solo lectura.
+**QueueStatusTime** Valor de fecha que indica la hora del servidor en que se obtuvieron los valores de estado mostrados. El valor corresponde a la hora en que se cargó la página. Solo lectura.
 
-**QueueNextRetryTime** Para las colas bloqueadas, un valor de Fecha que indica cuándo se produce el siguiente reintento automático. Cuando no aparece ningún tiempo, la cola no está bloqueada. Solo lectura.
+**QueueNextRetryTime** Para colas bloqueadas, un valor Date que indica cuándo se produce el siguiente reintento automático. Cuando no aparece ningún tiempo, la cola no se bloquea. Solo lectura.
 
-**QueueProcessingSince** Valor de fecha que indica cuándo se inició el procesamiento del trabajo actual. Cuando no aparece ningún tiempo, la cola está bloqueada o inactiva. Solo lectura.
+**QueueProcessingSince** Valor de fecha que indica cuándo comenzó el procesamiento del trabajo actual. Cuando no aparece ningún tiempo, la cola está bloqueada o inactiva. Solo lectura.
 
 **QueueLastProcessTime** Valor de fecha que indica cuándo se completó el trabajo anterior. Solo lectura.
 
 ### Operaciones {#operations-3}
 
-**queueForceRetry** Para las colas bloqueadas, envía el comando de reintento a la cola.
+**queueForceRetry** Para colas bloqueadas, envía el comando retry a la cola.
 
 * Argumentos: ninguno
 * Valor devuelto: ninguno
@@ -756,19 +756,19 @@ Proporciona estadísticas sobre las solicitudes HTTP para que pueda supervisar e
 
 ### Atributos {#attributes-4}
 
-**RequestsCount** Número de solicitudes que se han producido desde que se restablecieron las estadísticas por última vez.
+**RequestsCount** El número de solicitudes que se han producido desde que se restablecieron las estadísticas por última vez.
 
-**MinRequestDurationMsec** La menor cantidad de tiempo (en milisegundos) necesario para procesar una solicitud desde que se restablecieron las estadísticas por última vez.
+**MinRequestDurationMsec** La cantidad de tiempo más corta (en milisegundos) que se requirió para procesar una solicitud desde que se restablecieron las estadísticas por última vez.
 
-**MaxRequestDurationMsec** La mayor cantidad de tiempo (en milisegundos) que se requirió para procesar una solicitud desde que se restablecieron las estadísticas por última vez.
+**MaxRequestDurationMsec** La cantidad de tiempo más larga (en milisegundos) necesaria para procesar una solicitud desde que se restablecieron las estadísticas por última vez.
 
-**StandardDeviationDurationMsec** La desviación estándar de la cantidad de tiempo necesaria para procesar las solicitudes. La desviación estándar se calcula utilizando todas las solicitudes desde que se restablecieron las estadísticas por última vez.
+**StandardDeviationDurationMsec** La desviación estándar de la cantidad de tiempo necesario para procesar solicitudes. La desviación estándar se calcula utilizando todas las solicitudes desde el último restablecimiento de las estadísticas.
 
-**MediaRequestDurationMsec** Cantidad media de tiempo necesaria para procesar una solicitud. La media se calcula utilizando todas las solicitudes desde que se restablecieron las estadísticas por última vez
+**MediaRequestDurationMsec** Cantidad media de tiempo necesaria para procesar una solicitud. La media se calcula utilizando todas las solicitudes desde el último restablecimiento de las estadísticas
 
 ### Operaciones {#operations-4}
 
-**resetStatistics** Establece todas las estadísticas en cero. Restablezca las estadísticas cuando necesite analizar el rendimiento del procesamiento de solicitudes durante un intervalo de tiempo específico.
+**resetStatistics** Establece todas las estadísticas en cero. Restablezca las estadísticas cuando necesite analizar el rendimiento del procesamiento de la solicitud durante un lapso de tiempo específico.
 
 * Argumentos: ninguno
 * Valor devuelto: ninguno
@@ -780,34 +780,34 @@ Proporciona estadísticas sobre las solicitudes HTTP para que pueda supervisar e
 * `true`: Instalado.
 * `false`: No está instalado.
 
-**instaladoBy** ID del usuario que instaló el paquete por última vez.
+**installBy** El ID del usuario que instaló el paquete por última vez.
 
-**InstallDate** La fecha en la que se instaló el paquete por última vez.
+**installationDate** La fecha en la que se instaló el paquete por última vez.
 
-**size** Un valor largo que contiene el tamaño del paquete en bytes.
+**talla** Valor de tipo long que contiene el tamaño del paquete en bytes.
 
 
-## Inicio rápido {#quickstart-launcher}
+## Lanzador rápido {#quickstart-launcher}
 
-Información sobre el proceso de inicio y el inicio rápido.
+Información sobre el proceso de inicio y el lanzador de inicio rápido.
 
 * Dominio: com.adobe.granite.quickstart
-* Tipo: Iniciador
+* Tipo: lanzador
 
 ### Operaciones {#operations-5}
 
-**log**
+**registro**
 
-Muestra un mensaje en la ventana Inicio rápido .
+Muestra un mensaje en la ventana Inicio rápido.
 
 Argumentos:
 
-* p1: A `String` que representa el mensaje que se va a mostrar.
+* p1: A `String` valor que representa el mensaje que se va a mostrar.
 * Valor devuelto: ninguno
 
 **startupFinished**
 
-Llama al método startupFinished del lanzador del servidor. El método intenta abrir la página de bienvenida en un explorador web.
+Llama al método startupFinished del iniciador del servidor. El método intenta abrir la página de bienvenida en un explorador web.
 
 * Argumentos: ninguno
 * Valor devuelto: ninguno
@@ -817,22 +817,22 @@ Llama al método startupFinished del lanzador del servidor. El método intenta a
 Establece el valor de finalización del proceso de inicio del servidor. La barra de progreso de la ventana QuickStart representa el valor de finalización.
 
 * Argumentos:
-   * p1: Un valor Float que representa cuánto del proceso de inicio se ha completado, como fracción. El valor debe estar entre cero y uno. Por ejemplo, 0,3 indica que se ha completado el 30 %.
+   * p1: Valor flotante que representa la parte completa del proceso de inicio, como fracción. El valor debe estar entre cero y uno. Por ejemplo, 0,3 indica que se ha completado el 30 %.
 * Valor devuelto: ninguno.
 
 ## Servicios de terceros {#third-party-services}
 
-Varios recursos de servidor de terceros instalan MBeans que exponen atributos y operaciones a la consola JMX. La siguiente tabla enumera los recursos de terceros y proporciona vínculos a más información.
+Varios recursos de servidor de terceros instalan MBeans que exponen atributos y operaciones a la consola JMX. En la siguiente tabla se enumeran los recursos de terceros y se proporcionan vínculos a más información.
 
 <table>
  <tbody>
   <tr>
    <th>Dominio</th>
    <th>Tipo</th>
-   <th>Clase MBean</th>
+   <th>Clase de MBean</th>
   </tr>
   <tr>
-   <td>Implementación de JMI</td>
+   <td>Implementación JMI</td>
    <td>MBeanServerDelegate</td>
    <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/MBeanServerDelegate.html">javax.management.MBeanServerDelegate</a></td>
   </tr>
@@ -847,13 +847,13 @@ Varios recursos de servidor de terceros instalan MBeans que exponen atributos y 
     <ul>
      <li>ClassLoading</li>
      <li>Compilación</li>
-     <li>Colector de residuos</li>
+     <li>GarbageCollector</li>
      <li>Memoria</li>
      <li>MemoryManager</li>
      <li>MemoryPool</li>
-     <li>Sistema operativo</li>
-     <li>Tiempo de ejecución</li>
-     <li>Threading</li>
+     <li>OperatingSystem</li>
+     <li>Runtime</li>
+     <li>Subprocesamiento</li>
     </ul> </td>
    <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a> paquete</td>
   </tr>
@@ -880,54 +880,54 @@ Varios recursos de servidor de terceros instalan MBeans que exponen atributos y 
 
 La consola JMX muestra información sobre varios servicios que se ejecutan en el servidor:
 
-* Atributos: Propiedades del servicio, como configuraciones o datos de tiempo de ejecución. Los atributos pueden ser de solo lectura o de lectura y escritura.
-* Operaciones: Comandos que puede invocar en el servicio.
+* Atributos: propiedades del servicio como configuraciones o datos en tiempo de ejecución. Los atributos pueden ser de solo lectura o de lectura-escritura.
+* Operaciones: comandos que se pueden invocar en el servicio.
 
-Los MBeans implementados con un servicio OSGi exponen los atributos de servicio y las operaciones a la consola. MBean determina los atributos y las operaciones que se exponen y si los atributos son de solo lectura o de lectura y escritura.
+Los MBean que se implementan con un servicio OSGi exponen atributos y operaciones de servicio a la consola. El MBean determina los atributos y las operaciones que se exponen, y si los atributos son de sólo lectura o de lectura-escritura.
 
-La página principal de la consola JMX incluye una tabla de servicios. Cada fila de la tabla representa un servicio que está expuesto por un MBean.
+La página principal de la consola JMX incluye una tabla de servicios. Cada fila de la tabla representa un servicio que se expone mediante un MBean.
 
-1. Abra la consola web y haga clic en la pestaña JMX . ([http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
-2. Haga clic en un valor de celda de un servicio para ver los atributos y las operaciones del servicio.
+1. Abra la consola web y haga clic en la pestaña JMX. ([http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
+2. Haga clic en un valor de celda de un servicio para ver sus atributos y operaciones.
 3. Para cambiar un valor de atributo, haga clic en el valor, especifique el valor en el cuadro de diálogo que aparece y haga clic en Guardar.
-4. Para invocar una operación de servicio, haga clic en el nombre de la operación, especifique los valores de los argumentos en el cuadro de diálogo que aparece y haga clic en Invocar.
+4. Para invocar una operación de servicio, haga clic en el nombre de la operación, especifique valores de argumento en el cuadro de diálogo que aparece y haga clic en Invocar.
 
-## Uso de aplicaciones JMX externas para monitorización {#using-external-jmx-applications-for-monitoring}
+## Uso de aplicaciones JMX externas para la monitorización {#using-external-jmx-applications-for-monitoring}
 
-CRX permite que las aplicaciones externas interactúen con Managed Beans (MBeans) mediante [Extensiones de administración de Java (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Uso de consolas genéricas como [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) para aplicaciones de monitorización específicas del dominio, permite obtener y configurar configuraciones y propiedades CRX, así como monitorizar el rendimiento y el uso de los recursos.
+CRX permite que las aplicaciones externas interactúen con Managed Beans (MBeans) mediante [Extensiones de administración de Java (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Uso de consolas genéricas como [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) o aplicaciones de monitorización específicas del dominio, permite obtener y establecer configuraciones y propiedades de CRX, así como monitorizar el rendimiento y el uso de recursos.
 
-### Uso de JConsole para conectarse a CRX {#using-jconsole-to-connect-to-crx}
+### Usar JConsole para conectarse a CRX {#using-jconsole-to-connect-to-crx}
 
-Para conectarse a CRX usando JConsole, siga estos pasos:
+Para conectarse a CRX mediante JConsole, siga estos pasos:
 
 1. Abra una ventana de terminal.
 1. Introduzca el siguiente comando:
 
    `jconsole`
 
-JConsole se iniciará y aparecerá la ventana JConsole .
+JConsole se iniciará y aparecerá la ventana de JConsole.
 
-### Conexión a un proceso CRX local {#connecting-to-a-local-crx-process}
+### Conectarse a un proceso CRX local {#connecting-to-a-local-crx-process}
 
 JConsole mostrará una lista de los procesos locales de la máquina virtual Java. La lista contendrá dos procesos de inicio rápido. Seleccione el proceso &quot;CHILD&quot; de inicio rápido de la lista de procesos locales (normalmente el que tiene el PID más alto).
 
 ![screen_shot_2012-03-26at114557am](assets/screen_shot_2012-03-26at114557am.png)
 
-### Conexión a un proceso CRX remoto {#connecting-to-a-remote-crx-process}
+### Conectarse a un proceso CRX remoto {#connecting-to-a-remote-crx-process}
 
-Para poder conectarse a un proceso CRX remoto, la JVM que aloja el proceso CRX remoto tendrá que estar habilitada para aceptar conexiones JMX remotas.
+Para conectarse a un proceso CRX remoto, la JVM que aloja el proceso CRX remoto deberá estar habilitada para aceptar conexiones JMX remotas.
 
 Para habilitar conexiones JMX remotas, se debe establecer la siguiente propiedad del sistema al iniciar la JVM:
 
 `com.sun.management.jmxremote.port=portNum`
 
-En la propiedad anterior, `portNum` es el número de puerto a través del cual desea habilitar las conexiones RMI JMX. Asegúrese de especificar un número de puerto no utilizado. Además de publicar un conector RMI para el acceso local, al configurar esta propiedad se publica un conector RMI adicional en un registro de solo lectura privado en el puerto especificado, con un nombre bien conocido, &quot;jmxrmi&quot;.
+En la propiedad anterior, `portNum` es el número de puerto a través del cual desea habilitar conexiones JMX RMI. Asegúrese de especificar un número de puerto no utilizado. Además de publicar un conector RMI para acceso local, al establecer esta propiedad se publica un conector RMI adicional en un registro privado de sólo lectura en el puerto especificado con un nombre conocido, &quot;jmxrmi&quot;.
 
-De forma predeterminada, cuando habilita el agente JMX para monitorización remota, utiliza la autenticación de contraseña basada en un archivo de contraseña que debe especificarse con la siguiente propiedad del sistema al iniciar la VM de Java:
+De forma predeterminada, al habilitar el agente JMX para la monitorización remota, utiliza la autenticación de contraseña basada en un archivo de contraseña que debe especificarse mediante la siguiente propiedad del sistema al iniciar la VM de Java:
 
 `com.sun.management.jmxremote.password.file=pwFilePath`
 
-Consulte la [documentación relevante de JMX](https://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html) para obtener instrucciones detalladas sobre la configuración de un archivo de contraseña.
+Consulte la [documentación JMX relevante](https://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html) para obtener instrucciones detalladas sobre la configuración de un archivo de contraseña.
 
 Ejemplo:
 
@@ -938,14 +938,14 @@ $ java
   -jar ./cq-quickstart.jar
 ```
 
-### Uso de los MBeans proporcionados por CRX {#using-the-mbeans-provided-by-crx}
+### Usar los MBeans proporcionados por CRX {#using-the-mbeans-provided-by-crx}
 
-Después de conectarse al proceso de inicio rápido, JConsole proporciona una serie de herramientas generales de monitorización para la JVM en la que CRX se está ejecutando.
+Después de conectarse al proceso de inicio rápido, JConsole proporciona una serie de herramientas de monitorización generales para la JVM en la que CRX se está ejecutando.
 
 ![screen_shot_2012-03-26at115056am](assets/screen_shot_2012-03-26at115056am.png)
 
-Para acceder a las opciones de supervisión y configuración internas de CRX, vaya a la pestaña MBeans y, en el árbol de contenido jerárquico de la izquierda, seleccione la sección Atributos o Operaciones en la que está interesado. Por ejemplo, la sección com.adobe.granite/Repository/Operations .
+Para acceder a las opciones de monitorización y configuración internas de CRX, vaya a la pestaña MBeans y, en el árbol de contenido jerárquico de la izquierda, seleccione la sección Attributes or Operations que le interese. Por ejemplo, la sección com.adobe.granite/Repository/Operations.
 
-Dentro de esa sección, seleccione el atributo u operación que desee en el panel izquierdo.
+En esa sección, seleccione el atributo u operación que desee en el panel izquierdo.
 
 ![screen_shot_2012-03-26at115728am](assets/screen_shot_2012-03-26at115728am.png)

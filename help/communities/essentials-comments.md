@@ -1,7 +1,7 @@
 ---
-title: Comentarios esenciales
+title: Comments Essentials
 seo-title: Comments Essentials
-description: Información general del componente Comentarios
+description: Resumen del componente Comentarios
 seo-description: Comments component overview
 uuid: 58b7bb58-f598-4bcb-93ae-b7795cab51cd
 contentOwner: Guillaume Carlino
@@ -17,13 +17,13 @@ ht-degree: 4%
 
 ---
 
-# Comentarios esenciales {#comments-essentials}
+# Comments Essentials {#comments-essentials}
 
-Esta página proporciona lo esencial de trabajar con el sistema de comentarios (componente de comentarios) y las opciones para administrar el contenido generado por el usuario (UGC) que se produce cuando los miembros publican comentarios o respuestas.
+Esta página proporciona lo esencial para trabajar con el sistema de comentarios (componente de comentarios) y las opciones para administrar el contenido generado por el usuario (UGC) que se produce cuando los miembros publican comentarios o respuestas.
 
-El componente de comentarios establece un sistema de comentarios de modo que cada publicación individual esté representada por un componente de comentarios (singular). Es el sistema de comentarios que se incluye en la página. El sistema de comentarios creará los comentarios individuales cuando se invoquen.
+El componente de comentarios establece un sistema de comentarios tal que cada publicación individual está representada por un componente de comentario (singular). Es el sistema de comentarios el que se incluye en la página. El sistema de comentarios creará los comentarios individuales cuando se invoquen.
 
-## Elementos esenciales para el cliente {#essentials-for-client-side}
+## Essentials para el lado del cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -32,8 +32,8 @@ El componente de comentarios establece un sistema de comentarios de modo que cad
    <td> social/commons/components/hbs/comments</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
-   <td>Sí: las propiedades se pueden editar en <i>diseño </i>mode</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
+   <td>Sí, las propiedades se pueden editar en <i>diseño </i>modo</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -58,9 +58,9 @@ El componente de comentarios establece un sistema de comentarios de modo que cad
 
 ### Una instancia por página {#one-instance-per-page}
 
-La paginación y el uso de direcciones URL para el almacenamiento en caché y la vinculación requieren que la dirección URL sea única por sistema de comentarios. Por lo tanto, solo se permite una instancia de un sistema de comentarios por página.
+La paginación y el uso de direcciones URL para el almacenamiento en caché y la vinculación requieren que la URL sea única para cada sistema de comentarios. Por lo tanto, solo se permite una instancia de un sistema de comentarios por página.
 
-Otras funciones ya incluyen el sistema de comentarios. Estos son:
+Otras características ya incluyen el sistema de comentarios. Estos son:
 
 * [Blog](blog-developer-basics.md)
 * [Calendario](calendar-basics-for-developers.md)
@@ -71,32 +71,32 @@ Otras funciones ya incluyen el sistema de comentarios. Estos son:
 
 ### Lista de motivos de indicación {#flag-reason-list}
 
-La lista de motivos de marca se puede personalizar agregando flagreasonlist.hbs a la aplicación para sobrescribir lo que se encuentra en
+La lista de motivos de indicación se puede personalizar añadiendo flagreasonlist.hbs a la aplicación para sobrescribir lo que hay en
 
 * `/libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs`
 
-Esto se aplica a cualquier componente que extienda un sistema de comentarios.
+Esto se aplica a cualquier componente que amplía un sistema de comentarios.
 
-## Elementos esenciales para el servidor {#essentials-for-server-side}
+## Essentials para servidor {#essentials-for-server-side}
 
 * [API de comentarios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [Puntos finales de comentarios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [Extremos de comentarios](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
-### Acceso a los comentarios publicados (UGC) {#accessing-posted-comments-ugc}
+### Acceder a los comentarios publicados (UGC) {#accessing-posted-comments-ugc}
 
-UGC debe moderarse utilizando uno de los métodos estándar de moderación.
+La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir del AEM 6.1 Comunidades, se utilizará un [tienda común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Información general del proveedor de recursos de almacenamiento](srp.md) - Introducción y descripción general del uso del repositorio.
-* [Elementos esenciales de SRP y UGC](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
+* [Resumen del proveedor de recursos de almacenamiento](srp.md) - Introducción y descripción general del uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
-* [Refactorización de SocialUtils](socialutils.md) - Asignación de métodos de utilidad obsoletos a los métodos de utilidad SRP actuales.
+* [Refactorización de SocialUtils](socialutils.md) : Asignación de métodos de utilidad obsoletos a los métodos de utilidad SRP actuales.

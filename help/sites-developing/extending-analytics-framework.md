@@ -1,7 +1,7 @@
 ---
-title: Personalización del marco de trabajo de Adobe Analytics
+title: Personalizar Adobe Analytics Framework
 seo-title: Customizing the Adobe Analytics Framework
-description: Personalización del marco de trabajo de Adobe Analytics
+description: Personalizar Adobe Analytics Framework
 seo-description: null
 uuid: 444a29c2-3b4e-4d21-adc0-5f317ece2b77
 contentOwner: User
@@ -17,15 +17,15 @@ ht-degree: 0%
 
 ---
 
-# Personalización del marco de trabajo de Adobe Analytics{#customizing-the-adobe-analytics-framework}
+# Personalizar Adobe Analytics Framework{#customizing-the-adobe-analytics-framework}
 
-El marco de Adobe Analytics determina la información que se rastrea con Adobe Analytics. Para personalizar el marco predeterminado, utilice javascript para agregar seguimiento personalizado, integrar complementos de Adobe Analytics y cambiar la configuración general dentro del marco utilizado para el seguimiento.
+El marco de Adobe Analytics determina la información de la que se realiza un seguimiento con Adobe Analytics. Para personalizar el marco de trabajo predeterminado, utilice javascript para añadir un seguimiento personalizado, integrar complementos de Adobe Analytics y cambiar la configuración general dentro del marco de trabajo utilizado para el seguimiento.
 
 ## Acerca del javascript generado para módulos {#about-the-generated-javascript-for-frameworks}
 
-Cuando una página está asociada a un marco de Adobe Analytics, y la página incluye [referencias al módulo Analytics](/help/sites-administering/adobeanalytics.md), se genera automáticamente un archivo analytics.sitecatalyst.js para la página.
+Cuando una página está asociada a un marco de trabajo de Adobe Analytics y la página incluye [referencias al módulo de Analytics](/help/sites-administering/adobeanalytics.md), se generará automáticamente un archivo analytics.sitecatalyst.js para la página.
 
-El javascript de la página crea un `s_gi`(que define la biblioteca s_code.js de Adobe Analytics) y asigna valores a sus propiedades. El nombre de la instancia del objeto es `s`. Los ejemplos de código que se presentan en esta sección hacen varias referencias a esta `s` variable.
+El javascript de la página crea un `s_gi`(que define la biblioteca de Adobe Analytics s_code.js) y asigna valores a sus propiedades. El nombre de la instancia de objeto es `s`. Los ejemplos de código que se presentan en esta sección hacen varias referencias a esto `s` variable.
 
 El siguiente código de ejemplo es similar al código de un archivo analytics.sitecatalyst.js:
 
@@ -59,15 +59,15 @@ s.doPlugins=s_doPlugins;
 */
 ```
 
-Al utilizar código personalizado de javascript para personalizar el marco, se modifica el contenido de este archivo.
+Cuando se utiliza código javascript personalizado para personalizar el marco de trabajo, se modifica el contenido de este archivo.
 
-## Configuración de las propiedades de Adobe Analytics {#configuring-adobe-analytics-properties}
+## Configuración de propiedades de Adobe Analytics {#configuring-adobe-analytics-properties}
 
-Hay varias variables predefinidas dentro de Adobe Analytics que se pueden configurar en un marco. La variable **charset**, **cookieLifetime**, **currencyCode** y **trackInlineStats** se incluyen en la variable **Configuración general de análisis** de forma predeterminada.
+Hay varias variables predefinidas en Adobe Analytics que se pueden configurar en un marco de trabajo. El **charset**, **cookieLifetime**, **currencyCode** y **trackInlineStats** Las variables de se incluyen en **Configuración general de Analytics** lista de forma predeterminada.
 
 ![aa-22](assets/aa-22.png)
 
-Puede agregar nombres y valores de variables a la lista. Estas variables predefinidas y cualquier variable que agregue se utilizan para configurar las propiedades de la variable `s` en el archivo analytics.sitecatalyst.js. El siguiente ejemplo muestra cómo se ha añadido la variable `prop10` propiedad de value `CONSTANT` se representa en el código javascript:
+Puede agregar nombres y valores de variables a la lista. Estas variables predefinidas y cualquier variable que agregue se utilizan para configurar las propiedades del `s` en el archivo analytics.sitecatalyst.js. El siguiente ejemplo muestra cómo se agrega el elemento `prop10` propiedad de valor `CONSTANT` se representa en el código javascript:
 
 ```
 var s_account = "my_sitecatalyst_account";
@@ -93,33 +93,33 @@ s.trackingServerSecure = "xxxxxxx.net";
 
 Utilice el siguiente procedimiento para añadir variables a la lista:
 
-1. En la página del marco de Adobe Analytics, expanda la **Configuración general de análisis** .
-1. Debajo de la lista de variables, haga clic en Agregar elemento para agregar una variable nueva a la lista.
+1. En la página del marco de trabajo de Adobe Analytics, expanda **Configuración general de Analytics** área.
+1. Debajo de la lista de variables, haga clic en Agregar elemento para agregar una nueva variable a la lista.
 1. En la celda de la izquierda, introduzca un nombre para la variable, por ejemplo `prop10`.
 
 1. En la columna derecha, introduzca un valor para la variable, por ejemplo `CONSTANT`.
 
-1. Para eliminar una variable, haga clic en el botón (-) situado junto a la variable .
+1. Para quitar una variable, haga clic en el botón (-) junto a la variable.
 
 >[!NOTE]
 >
->Cuando introduzca variables y valores, asegúrese de que tengan el formato y la ortografía correctos, o bien que la variable **llamadas no se envían** con el par valor/variable correcto. Los valores y las variables mal escritas pueden incluso impedir que se realicen llamadas.
+>Al introducir variables y valores, asegúrese de que tienen el formato y la ortografía correctos, o la variable **las llamadas de no se enviarán** con el par de valor y variable correcto. Las variables y los valores mal escritos pueden incluso evitar que se produzcan llamadas.
 >
->Póngase en contacto con su representante de Adobe Analytics para asegurarse de que estas variables estén correctamente configuradas.
+>Consulte con su representante de Adobe Analytics para asegurarse de que estas variables estén configuradas correctamente.
 
 >[!CAUTION]
 >
->Algunas de las variables de esta lista son **mandatory** para que las llamadas de Adobe Analytics funcionen correctamente (p. ej. **currencyCode**, **charSet**)
+>Algunas de las variables de esta lista son **obligatorio** para que las llamadas de Adobe Analytics funcionen correctamente (por ejemplo, **currencyCode**, **charSet**)
 >
->Por lo tanto, incluso si se eliminan de la propia infraestructura, se adjuntarán con un valor predeterminado cuando se realice la llamada de Adobe Analytics.
+>Por lo tanto, aunque se eliminen del propio marco de trabajo, se adjuntarán con un valor predeterminado cuando se realice la llamada de Adobe Analytics.
 
-### Adición de javascript personalizado a un Adobe Analytics Framework {#adding-custom-javascript-to-an-adobe-analytics-framework}
+### Agregar JavaScript personalizado a un marco de trabajo de Adobe Analytics {#adding-custom-javascript-to-an-adobe-analytics-framework}
 
-El cuadro de javascript libre de la variable **Configuración general de análisis** area permite agregar código personalizado a un marco de Adobe Analytics.
+El cuadro de diálogo javascript de forma libre en el **Configuración general de Analytics** permite agregar código personalizado a un marco de trabajo de Adobe Analytics.
 
 ![aa-21](assets/aa-21.png)
 
-El código que agregue se añadirá al archivo analytics.sitecatalyst.js . Por lo tanto, puede acceder al `s` , que es una instancia de la variable `s_gi` objeto de javascript definido en `s_code.js`. Por ejemplo, agregar el siguiente código equivale a agregar una variable denominada `prop10` de valor `CONSTANT`, que es el ejemplo de la sección anterior:
+El código que agregue se anexará al archivo analytics.sitecatalyst.js. Por lo tanto, puede acceder a las `s` , que es una instancia de `s_gi` objeto javascript definido en `s_code.js`. Por ejemplo, añadir el siguiente código equivale a añadir una variable denominada `prop10` de valor `CONSTANT`, que es el ejemplo de la sección anterior:
 
 `s.prop10= 'CONSTANT';`
 
@@ -127,9 +127,9 @@ El código de la variable [analytics.sitecatalyst.js](/help/sites-developing/ext
 
 `if (s.usePlugins) s.doPlugins(s)`
 
-El siguiente procedimiento muestra cómo utilizar el cuadro de javascript para personalizar el seguimiento de Adobe Analytics. Si su javascript necesita utilizar complementos de Adobe Analytics, [integrarlos](/help/sites-administering/adobeanalytics.md) en AEM.
+El siguiente procedimiento muestra cómo utilizar el cuadro de javascript para personalizar el seguimiento de Adobe Analytics. Si el javascript necesita utilizar complementos de Adobe Analytics, [integrarlos](/help/sites-administering/adobeanalytics.md) AEM en el.
 
-1. Agregue el siguiente código javascript al cuadro para que `s.doPlugins` se ejecuta:
+1. Agregue el siguiente código JavaScript al cuadro para que `s.doPlugins` se ejecuta:
 
    ```
    s.usePlugins=true;
@@ -143,19 +143,19 @@ El siguiente procedimiento muestra cómo utilizar el cuadro de javascript para p
    >
    >Este código es necesario si desea enviar variables en una llamada de Adobe Analytics que se hayan personalizado de alguna manera que no se puedan realizar a través de la interfaz básica de arrastrar y soltar o a través de javascript en línea en la vista de Adobe Analytics.
    >
-   >Si las variables personalizadas están fuera de la función s_doPlugins , se enviarán como *undefined *en la llamada de Adobe Analytics
+   >Si las variables personalizadas están fuera de la función s_doPlugins, se enviarán como *undefined *en la llamada de Adobe Analytics
 
-1. Agregue el código de javascript en la **s_doPlugins** función.
+1. Añada el código javascript en la **s_doPlugins** función.
 
-En el siguiente ejemplo se concatenan los datos capturados en una página en orden jerárquico, utilizando un separador común de &quot;|&quot;.
+En el siguiente ejemplo, se concatenan los datos capturados en una página en orden jerárquico, utilizando un separador común de &quot;|&quot;.
 
-Un marco de Adobe Analytics tiene las siguientes configuraciones:
+Un marco de trabajo de Adobe Analytics tiene las siguientes configuraciones:
 
-* La variable `prop2` La variable de Adobe Analytics está asignada a la variable `pagedata.sitesection` propiedad site .
+* El `prop2` La variable de Adobe Analytics está asignada a `pagedata.sitesection` propiedad del sitio.
 
-* La variable `prop3` La variable de Adobe Analytics está asignada a la variable `pagedata.subsection` propiedad site .
+* El `prop3` La variable de Adobe Analytics está asignada a `pagedata.subsection` propiedad del sitio.
 
-* El siguiente código se agrega al cuadro javascript libre:
+* Se agrega el siguiente código al cuadro de diálogo JavaScript libre de código:
 
    ```
    s.usePlugins=true;
@@ -165,15 +165,15 @@ Un marco de Adobe Analytics tiene las siguientes configuraciones:
     s.doPlugins=s_doPlugins;
    ```
 
-* Cuando se visita la página web que utiliza la estructura (o, en modo de edición, se vuelve a cargar o previsualiza la página), se realizan las llamadas a Adobe Analytics.
+* Cuando se visita la página web que utiliza el módulo de (o, en el modo de edición, se vuelve a cargar la página o se obtiene una vista previa de ella), se realizan las llamadas a Adobe Analytics.
 
 Por ejemplo, en Adobe Analytics se generan los siguientes valores:
 
 ![aa-20](assets/aa-20.png)
 
-### Adición de código personalizado global para todos los marcos de Adobe Analytics {#adding-global-custom-code-for-all-adobe-analytics-frameworks}
+### Añadir código personalizado global para todos los marcos de Adobe Analytics {#adding-global-custom-code-for-all-adobe-analytics-frameworks}
 
-Proporcione código javascript personalizado que esté integrado en todos los marcos de Adobe Analytics. Cuando el marco de Adobe Analytics de una página no contiene ninguna variable personalizada [javascript de forma libre](/help/sites-administering/adobeanalytics.md), el javascript que genera el script /libs/cq/analytics/components/sitecatalyst/config.js.jsp se anexa al [analytics.sitecatalyst.js](/help/sites-administering/adobeanalytics.md) archivo. De forma predeterminada, la secuencia de comandos no tiene ningún efecto porque está comentada. El código también establece `s.usePlugins` a `false`:
+Proporcione código javascript personalizado que esté integrado en todos los marcos de Adobe Analytics. Cuando el marco de trabajo de Adobe Analytics de una página no contiene elementos personalizados [javascript de forma libre](/help/sites-administering/adobeanalytics.md), el javascript que genera el script /libs/cq/analytics/components/sitecatalyst/config.js.jsp se anexa al [analytics.sitecatalyst.js](/help/sites-administering/adobeanalytics.md) archivo. De forma predeterminada, la secuencia de comandos no tiene efecto porque está comentada. El código también establece `s.usePlugins` hasta `false`:
 
 ```
 /* Plugin Config */
@@ -186,40 +186,40 @@ s.doPlugins=s_doPlugins;
 */
 ```
 
-El código del archivo analytics.sitecatalyst.js (que incluye el contenido del archivo s_code.js de Adobe Analytics) contiene el siguiente código:
+El código del archivo analytics.sitecatalyst.js (que incluye el contenido del archivo Adobe Analytics s_code.js) contiene el siguiente código:
 
-if (s.usePlugins) s.doPlugins(s)
+if (s.usePlugins) s.doPlugins
 
-Por lo tanto, su javascript debe establecer `s.usePlugins` a `true` para que cualquier código de la variable `s_doPlugins` se ejecuta. Para personalizar el código, superponga el archivo config.js.jsp con uno que utilice su propio javascript. Si su javascript necesita utilizar complementos de Adobe Analytics, [integrarlos](/help/sites-administering/adobeanalytics.md) en AEM.
+Por lo tanto, el javascript debe establecer `s.usePlugins` hasta `true` para que cualquier código de la variable `s_doPlugins` se ejecuta. Para personalizar el código, superponga el archivo config.js.jsp con uno que utilice su propio javascript. Si el javascript necesita utilizar complementos de Adobe Analytics, [integrarlos](/help/sites-administering/adobeanalytics.md) AEM en el.
 
 >[!NOTE]
 >
->No edite el archivo /libs/cq/analytics/components/sitecatalyst/config.js.jsp. Algunas tareas de actualización o mantenimiento de AEM pueden volver a instalar el archivo original, eliminando los cambios.
+>No edite el archivo /libs/cq/analytics/components/sitecatalyst/config.js.jsp. AEM Ciertas tareas de actualización o mantenimiento pueden volver a instalar el archivo original y eliminar los cambios.
 
-1. En el CRXDE Lite, cree la estructura de carpetas /apps/cq/analytics/components:
+1. En CRXDE Lite, cree la estructura de carpetas /apps/cq/analytics/components:
 
    1. Haga clic con el botón derecho en la carpeta /apps y haga clic en Crear > Crear carpeta.
-   1. Especifique `cq` como nombre de la carpeta y haga clic en Aceptar.
-   1. Del mismo modo, cree la variable `analytics` y `components` carpetas.
+   1. Especificar `cq` como el nombre de la carpeta y haga clic en Aceptar.
+   1. Del mismo modo, cree el `analytics` y `components` carpetas.
 
-1. Haga clic con el botón derecho en el `components` carpeta que acaba de crear y haga clic en Crear > Crear componente. Especifique los siguientes valores de propiedad:
+1. Haga clic con el botón derecho en `components` que acaba de crear y haga clic en Crear > Crear componente. Especifique los siguientes valores de propiedad:
 
    * Etiqueta: `sitecatalyst`
    * Título: `sitecatalyst`
    * Super Type: `/libs/cq/analytics/components/sitecatalyst`
    * Grupo: `hidden`
 
-1. Haga clic en Siguiente varias veces hasta que el botón Aceptar esté habilitado y, a continuación, haga clic en Aceptar.
+1. Haga clic repetidamente en Siguiente hasta que el botón Aceptar esté habilitado y, a continuación, haga clic en Aceptar.
 
-   El componente sitecatalyst contiene el archivo sitecatalyst.jsp creado automáticamente.
+   El componente de SiteCatalyst contiene el archivo sitecatalyst.jsp creado automáticamente.
 
-1. Haga clic con el botón derecho en el archivo sitecatalyst.jsp y, a continuación, haga clic en Eliminar.
+1. Haga clic con el botón derecho en el archivo sitecatalyst.jsp y haga clic en Eliminar.
 
-1. Haga clic con el botón derecho en el componente de sitecatalyst y, a continuación, haga clic en Crear > Crear archivo. Especifique el nombre `config.js.jsp` y, a continuación, haga clic en Aceptar.
+1. Haga clic con el botón derecho en el componente SiteCatalyst y haga clic en Crear > Crear archivo. Especifique el nombre `config.js.jsp` y, a continuación, haga clic en Aceptar.
 
    El archivo config.js.jsp se abre automáticamente para su edición.
 
-1. Agregue el siguiente texto al archivo y haga clic en Guardar todo:
+1. Agregue el siguiente texto al archivo y, a continuación, haga clic en Guardar todo:
 
    ```java
    <%@page session="true"%>
@@ -231,19 +231,19 @@ Por lo tanto, su javascript debe establecer `s.usePlugins` a `true` para que cua
    s.doPlugins=s_doPlugins;
    ```
 
-   El código javascript que genera el script /apps/cq/analytics/components/sitecatalyst/config.js.jsp ahora se inserta en el archivo analytics.sitecatalyst.js para todas las páginas que utilizan un marco de Adobe Analytics.
+   El código javascript que genera el script /apps/cq/analytics/components/sitecatalyst/config.js.jsp ahora se inserta en el archivo analytics.sitecatalyst.js para todas las páginas que utilizan un marco de trabajo de Adobe Analytics.
 
-1. Agregue el código de javascript que desea ejecutar en la `s_doPlugins` y, a continuación, haga clic en Guardar todo.
+1. Agregue el código javascript que desea ejecutar en la variable `s_doPlugins` y, a continuación, haga clic en Guardar todo.
 
 >[!CAUTION]
 >
->Si hay texto presente en el javascript de forma libre del marco de una página (incluso solo espacio en blanco), se ignorará config.js.jsp.
+>Si hay texto presente en el javascript de forma libre del marco de trabajo de una página (incluso solo espacio en blanco), se ignora config.js.jsp.
 
-### Uso de complementos de Adobe Analytics en AEM {#using-adobe-analytics-plugins-in-aem}
+### Uso de complementos de Adobe Analytics AEM en la {#using-adobe-analytics-plugins-in-aem}
 
-Obtenga el código de javascript para los complementos de Adobe Analytics e inclúyalos en la infraestructura de Adobe Analytics en AEM. Añadir el código a una carpeta de biblioteca de cliente de la categoría `sitecatalyst.plugins` para que estén disponibles para su código personalizado de javascript.
+Obtenga el código javascript para los complementos de Adobe Analytics e inclúyalos en su marco de trabajo de Adobe Analytics AEM en la versión de. Agregue el código a una carpeta de la biblioteca de cliente de la categoría `sitecatalyst.plugins` para que estén disponibles en el código javascript personalizado.
 
-Por ejemplo, si integra la variable `getQueryParams` complemento, puede llamar al complemento desde el complemento `s_doPlugins` de su javascript personalizado. El siguiente código de ejemplo envía la cadena de consulta en **&quot;pid&quot;** de la dirección URL del referente como **eVar1**, cuando se activa una llamada de Adobe Analytics .
+Por ejemplo, si integra la variable `getQueryParams` , puede llamar al complemento desde el `s_doPlugins` de su javascript personalizado. El siguiente código de ejemplo envía la cadena de consulta en **&quot;pid&quot;** desde la dirección URL del referente como **EVAR 1**, cuando se activa una llamada de Adobe Analytics.
 
 ```
 s.usePlugins=true;
@@ -260,54 +260,54 @@ AEM instala los siguientes complementos de Adobe Analytics, de modo que estén d
 * getPreviousValue()
 * split()
 
-La carpeta de biblioteca de cliente /libs/cq/analytics/clientlibs/sitecatalyst/plugins incluye estos complementos en la categoría sitecatalyst.plugins .
+La carpeta de biblioteca de cliente /libs/cq/analytics/clientlibs/sitecatalyst/plugins incluye estos complementos en la categoría sitecatalyst.plugins.
 
 >[!NOTE]
 >
->Cree una nueva carpeta de biblioteca de cliente para sus complementos. No agregue complementos a `/libs/cq/analytics/clientlibs/sitecatalyst/plugins` carpeta. Esta práctica garantiza que su contribución al `sitecatalyst.plugins` no se sobrescriben durante AEM reinstalaciones o tareas de actualización.
+>Cree una nueva carpeta de biblioteca de cliente para los complementos. No agregue complementos a `/libs/cq/analytics/clientlibs/sitecatalyst/plugins` carpeta. Esta práctica garantiza que su contribución a la `sitecatalyst.plugins` AEM Las categorías de no se sobrescriben durante las tareas de reinstalación o actualización de la.
 
-Utilice el siguiente procedimiento para crear la carpeta de la biblioteca del cliente para sus complementos. Solo debe realizar este procedimiento una vez. Para agregar un complemento a la carpeta de la biblioteca del cliente, utilice el procedimiento siguiente.
+Utilice el siguiente procedimiento para crear la carpeta de la biblioteca de cliente para sus complementos. Solo debe realizar este procedimiento una vez. Para añadir un complemento a la carpeta de biblioteca del cliente, utilice el procedimiento siguiente.
 
-1. En un explorador web, abra CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+1. En un explorador web, abra el CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
 
 1. Haga clic con el botón derecho en la carpeta /apps/my-app/clientlibs y haga clic en Crear > Crear nodo. Introduzca los siguientes valores de propiedad y haga clic en Aceptar:
 
-   * Nombre: Un nombre para la carpeta de la biblioteca del cliente, como my-plugins
+   * Nombre: un nombre para la carpeta de la biblioteca de cliente, como my-plugins
 
    * Tipo: cq:ClientLibraryFolder
 
 1. Seleccione la carpeta de la biblioteca de cliente que acaba de crear y utilice la barra de propiedades inferior derecha para añadir la siguiente propiedad:
 
    * Nombre: categories
-   * Tipo: Cadena
+   * Tipo: cadena
    * Valor: sitecatalyst.plugins
-   * Varios: seleccionado
+   * Múltiple: seleccionado
 
-   Haga clic en Aceptar en la ventana Editar para confirmar el valor de la propiedad.
+   Haga clic en OK en la ventana Edit para confirmar el valor de la propiedad.
 
-1. Haga clic con el botón derecho en la carpeta de biblioteca de cliente que acaba de crear y haga clic en Crear > Crear archivo. Para el nombre de archivo, escriba js.txt y, a continuación, haga clic en Aceptar.
+1. Haga clic con el botón derecho en la carpeta de la biblioteca de cliente que acaba de crear y haga clic en Crear > Crear archivo. Para el nombre de archivo, escriba js.txt y haga clic en Aceptar.
 
 1. Haga clic en Guardar todo.
 
-Utilice el siguiente procedimiento para obtener el código del complemento, almacenar el código en el repositorio de AEM y agregar el código a la carpeta de la biblioteca del cliente.
+AEM Utilice el siguiente procedimiento para obtener el código del complemento, almacenarlo en el repositorio de y agregarlo a la carpeta de la biblioteca de cliente.
 
-1. Iniciar sesión en [sc.omniture.com](https://sc.omniture.com) usando su cuenta de Adobe Analytics.
-1. En la página de aterrizaje, vaya a Ayuda > Página inicial de Ayuda.
+1. Iniciar sesión en [sc.omniture.com](https://sc.omniture.com) con su cuenta de Adobe Analytics.
+1. En la página de aterrizaje, vaya a Ayuda > Página principal de ayuda.
 1. En la tabla de contenido de la izquierda, haga clic en Complementos de implementación.
-1. Haga clic en el vínculo al complemento que desee agregar y, cuando se abra la página, busque el código fuente de javascript para el complemento y, a continuación, seleccione el código y cópielo.
+1. Haga clic en el vínculo al complemento que desee añadir y, cuando se abra la página, busque el código fuente de JavaScript para el complemento y, a continuación, seleccione el código y cópielo.
 
-1. Haga clic con el botón derecho en la carpeta de la biblioteca del cliente y, a continuación, haga clic en Crear > Crear archivo. Para el nombre del archivo, escriba el nombre del complemento que está integrando seguido de .js y, a continuación, haga clic en Aceptar. Por ejemplo, si está integrando el complemento getQueryParam , asigne un nombre al archivo getQueryParam.js.
+1. Haga clic con el botón derecho en la carpeta de la biblioteca de cliente y haga clic en Crear > Crear archivo. Para el nombre del archivo, escriba el nombre del complemento que está integrando seguido de .js y, a continuación, haga clic en Aceptar. Por ejemplo, si está integrando el complemento getQueryParam, asigne al archivo el nombre getQueryParam.js.
 
-   Cuando crea el archivo, se abre para su edición.
+   Cuando cree el archivo, se abrirá para editarlo.
 
-1. Pegue el código javascript del complemento en el archivo, haga clic en Guardar todo y cierre el archivo.
+1. Pegue el código javascript del complemento en el archivo, haga clic en Guardar todo y, a continuación, cierre el archivo.
 
-1. Abra el archivo js.txt desde la carpeta de la biblioteca del cliente.
+1. Abra el archivo js.txt desde la carpeta de biblioteca de cliente.
 
-1. En una nueva línea, añada el nombre del archivo que contiene el complemento, por ejemplo getQueryParam.js. A continuación, haga clic en Guardar todo y cierre el archivo.
+1. En una línea nueva, añada el nombre del archivo que contiene el complemento, por ejemplo getQueryParam.js. A continuación, haga clic en Guardar todo y cierre el archivo.
 
 >[!NOTE]
 >
->Al utilizar complementos, asegúrese de integrar también cualquier complemento de soporte; de lo contrario, el complemento javascript no reconocerá las llamadas que realiza a las funciones del complemento de soporte. Por ejemplo, el complemento getPreviousValue() requiere que el complemento split() funcione correctamente.
+>Cuando utilice complementos, asegúrese de integrar también cualquier complemento de soporte; de lo contrario, el complemento javascript no reconocerá las llamadas que realiza a las funciones del complemento de soporte. Por ejemplo, el complemento getPreviousValue() requiere que el complemento split() funcione correctamente.
 >
->El nombre del complemento de asistencia debe agregarse a **js.txt** también.
+>El nombre del complemento de asistencia debe añadirse a **js.txt** y también.

@@ -1,7 +1,7 @@
 ---
-title: Configuración para aplicaciones AEM
+title: AEM Configuración de para aplicaciones de
 seo-title: Configuring for AEM Apps
-description: Obtenga información sobre cómo configurar AEM aplicaciones.
+description: AEM Obtenga información sobre cómo configurar aplicaciones de.
 seo-description: Learn how to configure AEM Apps.
 uuid: ab9acd93-da7f-4bb7-8d26-224044899068
 contentOwner: Guillaume Carlino
@@ -17,21 +17,21 @@ ht-degree: 0%
 
 ---
 
-# Configuración para aplicaciones AEM{#configuring-for-aem-apps}
+# AEM Configuración de para aplicaciones de{#configuring-for-aem-apps}
 
-Adobe Experience Manager Apps proporciona la capacidad de actualizar el contenido de su aplicación por aire (OTA). El contenido actualizado se almacena en la instancia de publicación. Para permitir que la aplicación del dispositivo se conecte a la instancia de publicación y compruebe si hay actualizaciones, la instancia de publicación debe configurarse para permitir un encabezado de referente vacío.
+Las aplicaciones de Adobe Experience Manager permiten actualizar el contenido de la aplicación por el aire (OTA). El contenido actualizado se almacena en la instancia de publicación. Para permitir que la aplicación de su dispositivo se conecte a la instancia de publicación y compruebe las actualizaciones, la instancia de publicación debe configurarse para permitir un encabezado de referente vacío.
 
-## Configuración del encabezado de referente vacío {#configuring-empty-referrer-header}
+## Configuración de un encabezado de referente vacío {#configuring-empty-referrer-header}
 
-Para configurar el servicio de filtro de referente:
+Para configurar el servicio del filtro de referente:
 
-* Abra la consola Apache Felix (**Configuraciones**) en:
+* Abra la consola Apache Felix (**Configuraciones**) a las:
 * https://&lt;server>:&lt;port_number>/system/console/configMgr
 * Inicie sesión como administrador.
-* En el **Configuraciones** seleccione: *Filtro de referente de Apache Sling*
-* Marque el campo Permitir vacío para permitir encabezados de referente vacíos o que faltan.
-* Haga clic en **Guardar** para guardar los cambios.
+* En el **Configuraciones** menú, seleccione: *Filtro de referente de Apache Sling*
+* Marque el campo Permitir vacío para permitir encabezados de referente vacíos o que falten.
+* Clic **Guardar** para guardar los cambios.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 
-Consulte la [Configuración de OSGI](/help/sites-deploying/osgi-configuration-settings.md) y [Lista de comprobación de seguridad: problemas con la falsificación de solicitudes entre sitios](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) para obtener más información.
+Consulte la [Ajustes de configuración de OSGI](/help/sites-deploying/osgi-configuration-settings.md) y [Lista de comprobación de seguridad - Problemas con la falsificación de solicitudes entre sitios](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) para obtener más información.

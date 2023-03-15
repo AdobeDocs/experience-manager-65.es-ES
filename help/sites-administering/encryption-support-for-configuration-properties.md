@@ -21,38 +21,38 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-Esta función permite almacenar todas las propiedades de configuración de OSGi en una forma cifrada protegida en lugar de en un texto claro. El formulario de la interfaz de usuario de la consola web se utiliza para crear texto cifrado a partir de texto sin formato utilizando la clave maestra de cifrado de todo el sistema.
+Esta función permite almacenar todas las propiedades de configuración de OSGi en un formulario cifrado protegido en lugar de texto no cifrado. El formulario de la IU de la consola web se utiliza para crear texto cifrado a partir de texto no cifrado mediante la clave maestra de cifrado de todo el sistema.
 
 Se agregó compatibilidad con el complemento de configuración OSGi para descifrar la propiedad antes de que la utilice un servicio.
 
 >[!NOTE]
 >
->Los servicios que esperan un valor cifrado deben utilizar la comprobación IsProtection para ver si el valor está cifrado antes de intentar descifrarlo, ya que es posible que ya se haya descifrado.
+>Los servicios que esperan un valor cifrado deben utilizar la comprobación IsProtected para ver si el valor está cifrado antes de intentar descifrarlo, ya que puede que ya se haya descifrado.
 
-## Habilitación de la compatibilidad con el cifrado {#enabling-encryption-support}
+## Habilitar compatibilidad con cifrado {#enabling-encryption-support}
 
-Estos pasos muestran cómo cifrar la contraseña SMTP para el servicio de correo. Puede completar estos pasos para una propiedad OSGI que desee codificar.
+Estos pasos muestran cómo cifrar la contraseña SMTP del servicio de correo. Puede completar estos pasos para una propiedad OSGI que desee cifrar.
 
-1. Vaya a la consola web de AEM en *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
-1. En la esquina superior izquierda, vaya a **Principal: Compatibilidad con Crypto**
+1. AEM Vaya a la consola web de en *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. En la esquina superior izquierda, vaya a **Principal: compatibilidad con cifrado**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. La variable **Compatibilidad con criptografía de la consola web de Adobe Experience Manager** se muestra.
+1. El **Compatibilidad con cifrado de la consola web de Adobe Experience Manager** se muestra la página.
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
 1. En el **Texto sin formato** , introduzca el texto de los datos confidenciales que desea proteger.
-1. Select **Protect**. El texto protegido se muestra como texto cifrado.
+1. Seleccionar **Protect**. El texto protegido se muestra como texto cifrado.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. Copie el Texto protegido del paso 5 y péguelo en el valor del formulario OSGI. En este ejemplo, el **Contraseña SMTP** se agrega a la variable *Day CQ Mail Service*.
+1. Copie el texto protegido del paso n.º 5 y péguelo en el valor del formulario OSGI. En este ejemplo, la variable **Contraseña SMTP** se añade a *Day CQ Mail Service*.
 
    ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 
-1. Guarde las propiedades de Day CQ Mail Service. La contraseña SMTP ahora se envía como valor cifrado.
+1. Guarde las propiedades del servicio Day CQ Mail. La contraseña SMTP se enviará ahora como un valor cifrado.
 
 ## Compatibilidad con descifrado {#decryption-support}
 
-AEM ahora proporciona un complemento de configuración para descifrar las propiedades de configuración. Este complemento de AEM descifrará automáticamente y recuperará las propiedades de texto limpio.
+AEM ahora proporciona un complemento de configuración para descifrar las propiedades de configuración. AEM Este complemento de la descifrará y recuperará automáticamente las propiedades de texto no cifrado.

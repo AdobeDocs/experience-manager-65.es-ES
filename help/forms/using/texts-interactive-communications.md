@@ -11,7 +11,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 100%
 

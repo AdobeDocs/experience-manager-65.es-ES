@@ -10,7 +10,7 @@ discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4529'
 ht-degree: 100%
 

@@ -1,7 +1,7 @@
 ---
-title: Licencias de SharePoint Connector, avisos de copyright y exenciones de responsabilidad
+title: Licencias, avisos de copyright y exenciones de responsabilidad del conector de SharePoint
 seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
-description: Obtenga más información sobre las licencias de SharePoint Connector, los avisos de copyright y las exenciones de responsabilidad.
+description: Obtenga información acerca de las licencias de SharePoint Connector, los avisos de copyright y las exenciones de responsabilidad.
 seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
 contentOwner: User
@@ -18,30 +18,30 @@ ht-degree: 19%
 
 ---
 
-# Licencias de SharePoint Connector, avisos de copyright y exenciones de responsabilidad{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# Licencias, avisos de copyright y exenciones de responsabilidad del conector de SharePoint{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-Esta sección enumera todas las licencias, avisos de copyright y exenciones de responsabilidad que deben declararse explícitamente en relación con Day JCR Connector para MS SharePoint.
+Esta sección enumera todas las licencias, avisos de copyright y exenciones de responsabilidad que deben indicarse explícitamente en relación con el conector JCR Day para MS SharePoint.
 
-## Descripción general de las bibliotecas de terceros del conector {#overview-of-connector-rd-party-libraries}
+## Descripción general de las bibliotecas de terceros de conectores {#overview-of-connector-rd-party-libraries}
 
-La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de las bibliotecas principales de SharePoint Connector, junto con las licencias, los avisos de copyright o las exenciones de responsabilidad por las que se tratan:
+En la tabla siguiente se enumeran las bibliotecas de terceros que se utilizan en las bibliotecas principales de SharePoint Connector, junto con las licencias, los avisos de copyright o las exenciones de responsabilidad legal a las que están sujetas:
 
 | Biblioteca | Tipo de licencia |
 |---|---|
-| Anogen | [Apache](#apache) |
-| axiom-api | [Apache](#apache) |
-| axiom-dom | [Apache](#apache) |
-| axiom-impl | [Apache](#apache) |
+| anógeno | [Apache](#apache) |
+| api-axioma | [Apache](#apache) |
+| axioma-dom | [Apache](#apache) |
+| axioma-impl | [Apache](#apache) |
 | axis2-adb | [Apache](#apache) |
 | axis2-kernel | [Apache](#apache) |
-| Backport-util-simultánea | Dominio público |
+| Backport-util-concurrente | Dominio público |
 | commons-codec | [Apache](#apache) |
 | commons-collections | [Apache](#apache) |
 | commons-fileupload | [Apache](#apache) |
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| simultáneo | [Simultáneo](#concurrent) (Dominio público) |
+| concurrente | [Simultáneo](#concurrent) (Dominio público) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -60,12 +60,12 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de las 
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache) (contiene partes cubiertas por licencias de dominio público y software W3C) |
+| xml-api | [Apache](#apache) (contiene partes cubiertas por las licencias de Public Domain y W3C Software) |
 | XmlSchema | [Apache](#apache) |
 
-## Descripción general de las bibliotecas de terceros de CRX {#overview-of-crx-rd-party-libraries}
+## Descripción general de las bibliotecas de terceros CRX {#overview-of-crx-rd-party-libraries}
 
-La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de CRX, junto con las licencias, avisos de copyright o exenciones de responsabilidad por las que están cubiertas:
+La siguiente tabla enumera las bibliotecas de terceros utilizadas en CRX, junto con las licencias, los avisos de copyright o las exenciones de responsabilidad legal a las que están cubiertas:
 
 <table>
  <colgroup>
@@ -97,7 +97,7 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de CRX,
    <td><a href="#apache">Apache</a></td>
   </tr>
   <tr>
-   <td>concurrent-1.3.4.jar</td>
+   <td>concurrente-1.3.4.jar</td>
    <td><a href="#concurrent">Simultáneo</a></td>
   </tr>
   <tr>
@@ -106,7 +106,7 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de CRX,
   </tr>
   <tr>
    <td>hsqldb-1.8.0.4.jar</td>
-   <td><a href="#hypersonic-sql-group">Grupo SQL Hypersonic</a></td>
+   <td><a href="#hypersonic-sql-group">Grupo SQL hipersónico</a></td>
   </tr>
   <tr>
    <td>jaxen-1.1-beta-6.jar</td>
@@ -157,7 +157,7 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de CRX,
 
 ## Descripción general de las bibliotecas de terceros de CQSE {#overview-of-cqse-rd-party-libraries}
 
-La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro del motor Servlet de Communiqué, junto con las licencias, los avisos de copyright o las exenciones de responsabilidad por las que se tratan:
+En la siguiente tabla se enumeran las bibliotecas de terceros que se utilizan en el Communiqué Servlet Engine, junto con las licencias, los avisos de copyright o las exenciones de responsabilidad que cubren:
 
 <table>
  <colgroup>
@@ -199,7 +199,7 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro del mot
   </tr>
   <tr>
    <td>servletapi-2.3.jar</td>
-   <td><a href="#sun-servlet">Servlet Sun</a></td>
+   <td><a href="#sun-servlet">Sun Servlet</a></td>
   </tr>
   <tr>
    <td>xml-apis-2.0.2.jar</td>
@@ -567,7 +567,7 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro del mot
      implementations, and test suites thereof.
 ```
 
-## Grupo SQL Hypersonic {#hypersonic-sql-group}
+## Grupo SQL hipersónico {#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES
@@ -966,7 +966,7 @@ La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro del mot
      (LFI#134403/Form ID#011801)
 ```
 
-## Servlet Sun {#sun-servlet}
+## Sun Servlet {#sun-servlet}
 
 ```xml
      Java(TM) Servlet API Specification ("Specification")

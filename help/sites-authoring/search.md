@@ -72,7 +72,7 @@ Para buscar y filtrar sus recursos:
    * Búsquedas guardadas
    * Directorio de búsqueda
    * Etiquetas
-   * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de Live Copy
+   * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de LiveCopy
 
    >[!NOTE]
    >

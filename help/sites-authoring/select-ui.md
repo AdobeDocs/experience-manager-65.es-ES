@@ -46,7 +46,7 @@ Hay varias ubicaciones en las que puede definir la IU que se utilizará:
 >
 >Las instancias actualizadas de una versión anterior conservarán la IU clásica para la creación de páginas.
 >
->Después de la actualización, la creación de páginas no cambiará automáticamente a la IU táctil, pero puede configurarla con el [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) del **Servicio de modo de IU de creación WCM** ( `AuthoringUIMode` ). Consulte [Omisiones de IU del editor](#ui-overrides-for-the-editor).
+>Después de la actualización, la creación de páginas no se cambiará automáticamente a la IU táctil, pero puede configurarla con el [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) de la **Servicio de modo de IU de creación de WCM** ( `AuthoringUIMode` service). Consulte [Omisiones de IU del editor](#ui-overrides-for-the-editor).
 
 ## Configurar la IU predeterminada para su instancia {#configuring-the-default-ui-for-your-instance}
 
@@ -81,7 +81,7 @@ Al utilizar la IU táctil, puede ser que los usuarios de escritorio deseen cambi
 
 * **URL**
 
-   Se puede acceder a la IU clásica mediante la URL de la pantalla de bienvenida en `welcome.html`. Por ejemplo:
+   Se puede acceder a la IU clásica utilizando la URL de la pantalla de bienvenida en `welcome.html`. Por ejemplo:
 
    `https://localhost:4502/welcome.html`
 
@@ -113,12 +113,12 @@ El sistema puede anular la configuración definida por un usuario o administrado
    * Se fuerza el uso del editor clásico al acceder a la página mediante `cf#` en la dirección URL. Por ejemplo:
       `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * Se fuerza el uso del editor táctil al utilizar `/editor.html` en la URL o cuando se utiliza un dispositivo táctil. Por ejemplo:
+   * Se fuerza el uso del editor táctil al utilizar `/editor.html` en la dirección URL o al utilizar un dispositivo táctil. Por ejemplo:
       `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Los forzados son temporales y solo son válidos para esa sesión del navegador
 
-   * Se definirá una cookie en función de si se puede pulsar ( `editor.html`) o clásica ( `cf#`).
+   * Se establecerá un conjunto de cookies en función de si la opción táctil está activada ( `editor.html`) o clásica ( `cf#`) se utiliza.
 
 * Al abrir páginas mediante `siteadmin`, se buscará:
 

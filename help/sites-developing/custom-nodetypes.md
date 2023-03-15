@@ -1,7 +1,7 @@
 ---
 title: Tipos de nodos personalizados
 seo-title: Custom Node Types
-description: AEM se basa en Sling y utiliza un repositorio JCR con tipos de nodos ofrecidos por ambos, pero AEM también proporciona una gama de tipos de nodos personalizados
+description: AEM AEM se basa en Sling y utiliza un repositorio JCR con tipos de nodo ofrecidos por ambos, pero también proporciona un rango de tipos de nodo personalizados
 seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
@@ -19,10 +19,10 @@ ht-degree: 9%
 
 # Tipos de nodos personalizados{#custom-node-types}
 
-Debido a que AEM se basa en Sling y utiliza un repositorio JCR, los tipos de nodos ofrecidos por ambos están disponibles para su uso:
+AEM Dado que se basa en Sling y utiliza un repositorio JCR, los tipos de nodo ofrecidos por ambos están disponibles para su uso:
 
 * [Tipos de nodos JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
-* [Tipos de nodos Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
+* [Tipos de nodos de Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Además de estos. AEM proporciona una amplia gama de tipos de nodos personalizados.
 
@@ -56,7 +56,7 @@ Define el tipo de nodo de un nodo de evento de auditoría.
 
 ## Comentar {#comment}
 
-### cq:Comment {#cq-comment}
+### cq:Comentario {#cq-comment}
 
 **Descripción**
 
@@ -79,7 +79,7 @@ Define el tipo de nodo de un nodo de comentario.
 
 **Descripción**
 
-Define el tipo de nodo de un `commentattachment` node
+Define el tipo de nodo de un `commentattachment` nodo
 
 **Definición**
 
@@ -91,7 +91,7 @@ Define el tipo de nodo de un `commentattachment` node
 
 **Descripción**
 
-Define el tipo de nodo de un nodo de contenido de comentarios
+Define el tipo de nodo de un nodo de contenido de comentario
 
 **Definición**
 
@@ -110,8 +110,8 @@ Define el tipo de nodo de un nodo de contenido de comentarios
 
 Mezcla que define una ubicación geográfica en grados decimales (DD)
 
-* `@prop latitude` - latitud codificada como doble utilizando grados decimales
-* `@prop longitude` - longitud codificada como doble utilizando grados decimales
+* `@prop latitude` - latitud codificada como doble con grados decimales
+* `@prop longitude` - longitud codificada como doble usando grados decimales
 
 **Definición**
 
@@ -123,7 +123,7 @@ Mezcla que define una ubicación geográfica en grados decimales (DD)
 
 **Descripción**
 
-Define el tipo de nodo de un nodo de seguimiento.
+Define el tipo de nodo de un nodo de trackback.
 
 **Definición**
 
@@ -149,7 +149,7 @@ Define la página de CQ predeterminada.
 
 **Descripción**
 
-Define un tipo de mezcla que marca los nodos como pseudopáginas. Esto significa que se pueden adaptar para la compatibilidad con la edición de páginas y WCM.
+Define un tipo de mezcla que marca los nodos como pseudopáginas. Esto significa que se pueden adaptar para admitir la edición de páginas y WCM.
 
 **Definición**
 
@@ -161,22 +161,22 @@ Define un tipo de mezcla que marca los nodos como pseudopáginas. Esto significa
 
 Define el nodo predeterminado para el contenido de la página, con las propiedades mínimas que utiliza WCM.
 
-* `@prop jcr:title` - Título de la página.
+* `@prop jcr:title` : título de la página.
 * `@prop jcr:description` - Descripción de esta página.
-* `@prop cq:template` : Ruta a la plantilla utilizada para crear la página.
-* `@prop cq:allowedTemplates` - Lista de expresiones regulares utilizadas para determinar las rutas a la plantilla permitida.
-* `@prop pageTitle` - El título se muestra generalmente en la variable `<title>` etiqueta.
-* `@prop navTitle` - Título que se utiliza normalmente en la navegación.
-* `@prop hideInNav` - Especifica si la página debe estar oculta en la navegación.
-* `@prop onTime` - Hora a la que esta página se convierte en válida.
+* `@prop cq:template` - Ruta a la plantilla utilizada para crear la página.
+* `@prop cq:allowedTemplates` - Lista de expresiones regulares utilizadas para determinar la(s) ruta(s) a la plantilla permitida.
+* `@prop pageTitle` - Título mostrado normalmente en `<title>` etiqueta.
+* `@prop navTitle` - Título utilizado generalmente en la navegación.
+* `@prop hideInNav` : especifica si la página debe ocultarse en la navegación.
+* `@prop onTime` - Hora a la que esta página pasa a ser válida.
 * `@prop offTime` - Hora a la que esta página deja de ser válida.
-* `@prop cq:lastModified` - Fecha en la que se modificó la página (o sus párrafos) por última vez.
-* `@prop cq:lastModifiedBy` : Último usuario que cambia la página (o sus párrafos).
-* `@prop jcr:language` - El idioma del contenido de la página.
+* `@prop cq:lastModified` - Fecha de la última modificación de la página (o de sus párrafos).
+* `@prop cq:lastModifiedBy` : último usuario en cambiar la página (o sus párrafos).
+* `@prop jcr:language` : El idioma del contenido de la página.
 
 >[!NOTE]
 >
->El uso de este tipo no es obligatorio para el contenido de la página.
+>No es obligatorio que el contenido de la página utilice este tipo.
 
 **Definición**
 * `[cq:PageContent] > nt:unstructured, mix:title, mix:created, cq:OwnerTaggable, sling:VanityPath, cq:ReplicationStatus, sling:Resource orderable`
@@ -199,16 +199,16 @@ Define el nodo predeterminado para el contenido de la página, con las propiedad
 Define una plantilla de CQ.
 
 * `@node jcr:content` - Contenido predeterminado para páginas nuevas.
-* `@node icon.png` - Archivo que contiene un icono característico.
-* `@node thumbnail.png` - Archivo que contiene una imagen en miniatura característica.
-* `@node workflows` - Asignación automática de la configuración del flujo de trabajo. La configuración seguirá la siguiente estructura:
+* `@node icon.png` : archivo que contiene un icono característico.
+* `@node thumbnail.png` : archivo que contiene una imagen en miniatura característica.
+* `@node workflows` - Asignar automáticamente la configuración del flujo de trabajo. La configuración sigue la estructura siguiente:
    * `+ workflows`
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents` - Patrones de expresión regulares para determinar las rutas a las plantillas permitidas como plantillas principales.
-* `@prop allowedChildren` - Patrones de expresión regulares para determinar las rutas a las plantillas permitidas como plantillas secundarias.
-* `@prop ranking` - Colocar en la lista de plantillas en el cuadro de diálogo crear página.
+* `@prop allowedParents` : Patrones de expresión regular para determinar la(s) ruta(s) a las plantillas permitidas como plantillas principales.
+* `@prop allowedChildren` : Patrones de expresión regular para determinar la ruta o rutas a las plantillas permitidas como plantillas secundarias.
+* `@prop ranking` - Colocar dentro de la lista de plantillas en el cuadro de diálogo Crear página.
 
 **Definición**
 
@@ -230,24 +230,24 @@ Define una plantilla de CQ.
 
 Define un componente CQ.
 
-* `@prop jcr:title` - Título del componente.
+* `@prop jcr:title` : título del componente.
 * `@prop jcr:description` - Descripción del componente.
-* `@node dialog` - Diálogo principal.
-* `@prop dialogPath` - Ruta de diálogo principal (alternativa al diálogo).
-* `@node design_dialog` - Cuadro de diálogo Diseño.
+* `@node dialog` - Cuadro de diálogo principal.
+* `@prop dialogPath` - Ruta del cuadro de diálogo principal (alternativa al cuadro de diálogo).
+* `@node design_dialog` - Cuadro de diálogo de diseño.
 * `@prop cq:cellName` - Nombre de la celda de diseño.
-* `@prop cq:isContainer` - Indica si se trata de un componente contenedor. Esto obliga a utilizar los nombres de celdas de los componentes secundarios en lugar de los nombres de ruta. Por ejemplo, la variable `parsys` es un componente contenedor. Si este valor no está definido, la comprobación se realiza en función de la existencia de un `cq:childEditConfig`.
-* `@prop cq:noDecoration` - Si es cierto, sin decoración `div` las etiquetas se dibujan al incluir este componente.
+* `@prop cq:isContainer` - Indica si se trata de un componente contenedor. Esto fuerza a que se utilicen los nombres de celda de los componentes secundarios en lugar de los nombres de ruta. Por ejemplo, la variable `parsys` es un componente contenedor. Si no se define este valor, la comprobación se realiza en función de la existencia de un `cq:childEditConfig`.
+* `@prop cq:noDecoration` - Si es verdad, sin decoración `div` las etiquetas se dibujan al incluir este componente.
 * `@node cq:editConfig` - La configuración que define los parámetros de la barra de edición.
-* `@node cq:childEditConfig` - La configuración de edición heredada por los componentes secundarios.
-* `@node cq:htmlTag` - Define atributos de etiqueta adicionales que se agregan al &quot;entorno&quot; `div` cuando se incluye el componente.
-* `@node icon.png`- Archivo que contiene un icono característico.
-* `@node thumbnail.png` - Archivo que contiene una imagen en miniatura característica.
-* `@prop allowedParents` : patrones de expresión regulares para determinar las rutas de los componentes permitidos como componentes principales.
-* `@prop allowedChildren` - Patrones de expresión regulares para determinar las rutas de los componentes permitidos como componentes secundarios.
-* `@node virtual` - Contiene subnodos que reflejan componentes virtuales utilizados para arrastrar y soltar el componente.
-* `@prop componentGroup` - Nombre del grupo de componentes, utilizado para arrastrar y soltar el componente.
-* `@node cq:infoProviders` - Contiene subnodos, cada uno de los cuales tiene una propiedad `className` que hace referencia a un `PageInfoProvider`.
+* `@node cq:childEditConfig` : la configuración de edición que heredan los componentes secundarios.
+* `@node cq:htmlTag` : define atributos de etiqueta adicionales que se añaden al &quot;entorno&quot; `div` cuando se incluye el componente.
+* `@node icon.png`: archivo que contiene un icono característico.
+* `@node thumbnail.png` : archivo que contiene una imagen en miniatura característica.
+* `@prop allowedParents` : patrones de expresión regular para determinar la ruta o rutas de los componentes permitidos como componentes principales.
+* `@prop allowedChildren` : Patrones de expresión regular para determinar la ruta o rutas de los componentes permitidos como componentes secundarios.
+* `@node virtual` : contiene subnodos que reflejan los componentes virtuales utilizados para arrastrar y soltar el componente.
+* `@prop componentGroup` : nombre del grupo de componentes, utilizado para arrastrar y soltar el componente.
+* `@node cq:infoProviders` : contiene subnodos, cada uno de los cuales tiene una propiedad `className` que hace referencia a un `PageInfoProvider`.
 
 **Definición**
 
@@ -288,20 +288,20 @@ Define un componente CQ como tipo de mezcla.
 
 Define la configuración de la &quot;barra de edición&quot;.
 
-* `@prop cq:dialogMode` - Modo del cuadro de diálogo:
+* `@prop cq:dialogMode` - Modo de diálogo:
    * `floating` - para un diálogo normal y flotante
    * `inline` - edición en línea
-   * `auto` - detección automática (según el espacio disponible)
-* `@node cq:inplaceEditing` - Configuración de edición in situ para este componente.
+   * `auto` - detección automática (en función del espacio disponible)
+* `@node cq:inplaceEditing` - Configuración de edición para este componente.
 * `@prop cq:layout`- Diseño de la barra de edición:
-   * `editbar` - editar barra
-   * `rollover` - pasar sobre marco
+   * `editbar` - barra de edición
+   * `rollover` - rodar sobre el marco
    * `auto` - detección automática
-* `@node cq:formParameters`- Parámetros adicionales que se agregarán al formulario de diálogo.
-* `@prop cq:actions`- Lista de acciones (editar botones de barra o elementos de menú).
-* `@node cq:actionConfigs` - Configuraciones de utilidades para la barra de edición o los elementos de menú.
-* `@prop cq:emptyText` - Texto que se mostrará si no hay contenido visual presente.
-* `@node cq:dropTargets` - Recopilación de `{@link cq:DropTargetConfig}` nodos.
+* `@node cq:formParameters`- Parámetros adicionales para añadir al formulario de diálogo.
+* `@prop cq:actions`- Lista de acciones (botones de barra de edición o elementos de menú).
+* `@node cq:actionConfigs` - Configuraciones de widget para elementos de barra de edición o menú.
+* `@prop cq:emptyText` : texto que se mostrará si no hay contenido visual.
+* `@node cq:dropTargets` - Colección de `{@link cq:DropTargetConfig}` nodos.
 
 **Definición**
 
@@ -320,9 +320,9 @@ Define la configuración de la &quot;barra de edición&quot;.
 
 Configura un destino de colocación de un componente. El nombre de este nodo se utilizará como ID para arrastrar y soltar.
 
-* `@prop accept` - Lista de tipos de mime aceptados por este objetivo de colocación; p. ej. `["image/*"]`
-* `@prop groups` - Lista de grupos de arrastrar y soltar que aceptan un origen.
-* `@prop propertyName` - Nombre de la propiedad utilizada para almacenar la referencia.
+* `@prop accept` - Lista de tipos MIME aceptados por este destino de colocación; p. ej., `["image/*"]`
+* `@prop groups` - Lista de grupos de arrastrar y soltar que aceptan una fuente.
+* `@prop propertyName` : nombre de la propiedad utilizado para almacenar la referencia.
 
 **Definición**
 
@@ -338,15 +338,15 @@ Configura un destino de colocación de un componente. El nombre de este nodo se 
 
 Define un componente CQ virtual. Actualmente solo se utilizan para el nuevo asistente de arrastrar y soltar componentes.
 
-* `@prop jcr:title` - Título de este componente.
-* `@prop jcr:description` - Descripción de este componente.
-* `@node cq:editConfig` - Edite la configuración que define los parámetros de la barra de edición.
-* `@node cq:childEditConfig`- Edite la configuración heredada por los componentes secundarios.
-* `@node icon.png` - Archivo que contiene un icono característico.
-* `@node thumbnail.png` - Archivo que contiene una imagen en miniatura característica.
-* `@prop allowedParents` : patrones de expresión regulares para determinar las rutas de los componentes permitidos como componentes principales.
-* `@prop allowedChildren` - Patrones de expresión regulares para determinar las rutas de los componentes permitidos como componentes secundarios.
-* `@prop componentGroup` - Nombre del grupo de componentes para arrastrar y soltar el componente.
+* `@prop jcr:title` : título de este componente.
+* `@prop jcr:description` : descripción de este componente.
+* `@node cq:editConfig` - Editar configuración que define los parámetros de la barra de edición.
+* `@node cq:childEditConfig`: edite la configuración que heredan los componentes secundarios.
+* `@node icon.png` : archivo que contiene un icono característico.
+* `@node thumbnail.png` : archivo que contiene una imagen en miniatura característica.
+* `@prop allowedParents` : patrones de expresión regular para determinar la ruta o rutas de los componentes permitidos como componentes principales.
+* `@prop allowedChildren` : patrones de expresión regular para determinar la ruta o rutas de los componentes permitidos como componentes secundarios.
+* `@prop componentGroup` : nombre del grupo de componentes para el componente de arrastrar y soltar.
 
 **Definición**
 
@@ -365,17 +365,17 @@ Define un componente CQ virtual. Actualmente solo se utilizan para el nuevo asis
 
 **Descripción**
 
-Define los oyentes (del lado del cliente) que se ejecutarán en un evento de edición. Los valores deben hacer referencia a una función de escucha del lado del cliente válida o contener un acceso directo predefinido:
+Define los oyentes (del lado del cliente) que se ejecutan en un evento de edición. Los valores deben hacer referencia a una función de escucha del lado del cliente válida o contener un acceso directo predefinido:
 
 * `REFRESH_PAGE`
 * `REFRESH_SELF`
 * `REFRESH_PARENT`
 
 * `@prop aftercreate` : se activa después de crear un componente.
-* `@prop afteredit` - Se activa después de editar (modificar) un componente.
-* `@prop afterdelete` - Se activa después de eliminar un componente.
-* `@prop afterinsert` - Se activa después de agregar un componente a este contenedor.
-* `@prop afterremove` - Se activa después de eliminar un componente de este contenedor.
+* `@prop afteredit` : se activa después de editar (modificar) un componente.
+* `@prop afterdelete` : se activa después de eliminar un componente.
+* `@prop afterinsert` : se activa después de agregar un componente a este contenedor.
+* `@prop afterremove` : se activa después de eliminar un componente de este contenedor.
 * `@prop aftermove` - Se activa después de que los componentes se hayan movido a este contenedor.
 
 **Definición**
@@ -417,7 +417,7 @@ Recurso DAM.
 `+ jcr:content (dam:AssetContent) = dam:AssetContent copy primary`
 `+ * (nt:base) = nt:base version`
 
-### dam:Thumbnail {#dam-thumbnail}
+### dam:Miniatura {#dam-thumbnail}
 
 **Descripción**
 
@@ -448,12 +448,12 @@ Lista de contenedores.
 
 **Descripción**
 
-`cq:attributes` es el tipo de nodo para las etiquetas de versión de ContentBus. Este nodo solo tiene una serie de propiedades; de los cuales tres están predefinidos &quot;created&quot;, &quot;csd&quot; y &quot;timestampe&quot;.
+`cq:attributes` es el tipo de nodo de las etiquetas de versión de ContentBus. Este nodo solo tiene una serie de propiedades, de las cuales tres son predefinidas como &quot;created&quot;, &quot;csd&quot; y &quot;timestampe&quot;.
 
-* `@prop created (long) mandatory copy` - Marca de tiempo de la creación de la información de la versión, generalmente la hora de la comprobación de la versión anterior o la hora de creación de la página.
-* `@prop csd (string) mandatory copy` - atributo estándar csd, copia de la propiedad cq:csd del nodo de página
-* `@prop timestamp (long) mandatory copy` - Marca de tiempo de la última modificación de la versión, por lo general, tiempo de registro.
-* `@prop * (string) copy` : atributos adicionales, con versión del nodo principal.
+* `@prop created (long) mandatory copy` - Marca de tiempo de la creación de la información de versión, generalmente la hora de registro de la versión anterior o la hora de creación de la página.
+* `@prop csd (string) mandatory copy` : atributo estándar de csd, copia de la propiedad cq:csd del nodo de página
+* `@prop timestamp (long) mandatory copy` - Marca de tiempo de la última modificación de la versión, generalmente la hora de registro.
+* `@prop * (string) copy` : atributos adicionales, con versiones con el nodo principal.
 
 **Definición**
 
@@ -467,13 +467,13 @@ Lista de contenedores.
 
 **Descripción**
 
-El tipo de nodo `cq:contentPage` contiene las definiciones de propiedad y nodo secundario para páginas de contenido de ContentBus. Solo cuando este tipo de mezcla se añade a un nodo de tipo `cq:page`, un nodo se convierte en una página de contenido de ContentBus.
+El tipo de nodo `cq:contentPage` contiene las definiciones de propiedad y nodo secundario para las páginas de contenido de ContentBus. Solo cuando este tipo de mezcla se agrega a un nodo de tipo `cq:page`, un nodo se convierte en una página de contenido de ContentBus.
 
-Los elementos de un `cq:Cq4ContentPage` son:
+Los elementos de una `cq:Cq4ContentPage` son:
 
-* `@prop cq:csd` - El CSD de ContentBus de la página.
-* `@node cq:content` - El contenido de la página. Este nodo secundario no existe si el nodo de página está en estado &quot;Existente sin contenido&quot; o &quot;Eliminado&quot;.
-* `@node cq:attributes` - La lista de atributos de página, anteriormente conocidos como etiquetas de versión. Este nodo es obligatorio para el tipo cq:contentPage . Se crea una versión del nodo attributes cuando la página tiene un nodo al que se le asigna una versión.
+* `@prop cq:csd` - El CSD del ContentBus de la página.
+* `@node cq:content` - El contenido de la página. Este nodo secundario no existe si el nodo de la página tiene el estado &quot;Existente sin contenido&quot; o &quot;Eliminado&quot;.
+* `@node cq:attributes` - La lista de atributos de página, que antes se conocían como etiquetas de versión. Este nodo es obligatorio para el tipo cq:contentPage. Se crea una versión del nodo de atributos cuando se crea una versión de la página.
 
 **Definición**
 
@@ -490,9 +490,9 @@ Los elementos de un `cq:Cq4ContentPage` son:
 Configuración de encuesta.
 
 * `@prop source (String) mandatory` : URI de fuente de datos, esto es obligatorio y no debe estar vacío
-* `@prop target (String)` : Ubicación de destino en la que se almacenan los datos recuperados del origen de datos. Esto es opcional y el valor predeterminado es el nodo cq:PollConfig .
-* `@prop interval (Long)` - El intervalo en segundos en el que se deben sondear los datos nuevos o actualizados de la fuente de datos. Esto es opcional y el valor predeterminado es 30 minutos (1800 segundos).
-* [Creación de servicios del importador de datos personalizado para Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
+* `@prop target (String)` : ubicación de destino en la que se almacenan los datos recuperados de la fuente de datos. Es opcional y toma el valor predeterminado del nodo cq:PollConfig.
+* `@prop interval (Long)` : intervalo en segundos durante el cual se sondearán los datos nuevos o actualizados de la fuente de datos. Es opcional y el valor predeterminado es de 30 minutos (1800 segundos).
+* [Crear servicios de importador de datos personalizados para Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definición**
 
@@ -506,7 +506,7 @@ Configuración de encuesta.
 
 **Descripción**
 
-Tipo de nodo principal de conveniencia para crear fácilmente nodos de configuración de encuesta.
+Tipo de nodo principal práctico para crear fácilmente nodos de configuración de encuestas.
 
 **Definición**
 
@@ -520,8 +520,8 @@ Tipo de nodo principal de conveniencia para crear fácilmente nodos de configura
 
 Mezcla que define una ubicación geográfica en grados decimales (DD).
 
-* `@prop latitude` - Latitud codificada como doble utilizando grados decimales.
-* `@prop longitude` - Longitud codificada como doble utilizando grados decimales.
+* `@prop latitude` - Latitud codificada como doble con grados decimales.
+* `@prop longitude` - Longitud codificada como doble usando grados decimales.
 
 **Definición**
 
@@ -536,7 +536,7 @@ Mezcla que define una ubicación geográfica en grados decimales (DD).
 
 **Descripción**
 
-Tipos de nodos MailerService. El buzón utiliza nodos que tienen esta mezcla como nodos raíz de definiciones de mensajes.
+Tipos de nodos MailerService. El administrador de correo utiliza nodos que tienen este mixin como nodos raíz de definiciones de mensajes.
 
 **Definición**
 
@@ -552,7 +552,7 @@ Tipos de nodos MailerService. El buzón utiliza nodos que tienen esta mezcla com
 
 **Descripción**
 
-Define una mezcla LiveRelationship. Un nodo de origen principal (control) y un nodo de Live Copy (control) pueden vincularse virtualmente a través de LiveRelationship.
+Define un mixin de LiveRelationship. Un nodo de origen principal (control) y un nodo de Live Copy (controlado) se pueden vincular virtualmente a través de una LiveRelationship.
 
 **Definición**
 
@@ -565,12 +565,12 @@ Define una mezcla LiveRelationship. Un nodo de origen principal (control) y un n
 
 **Descripción**
 
-Define una mezcla de LiveSync. Si un nodo participa en una LiveRelationship con un nodo de origen principal (control) y un nodo de Live Copy (control), se marca como LiveSync.
+Define un mixin de LiveSync. Si un nodo está involucrado en una LiveRelationship con un nodo de origen principal (control) y un nodo de Live Copy (controlado), se marca como LiveSync.
 
-* `@prop cq:master` - Ruta de la fuente principal (control) de LiveRelationship.
-* `@prop cq:isDeep` - Define si la relación está disponible para niños.
-* `@prop cq:syncTrigger` - Define cuándo se activa la sincronización.
-* `@node * LiveSyncAction` - Acciones que se realizan en la sincronización
+* `@prop cq:master` - Ruta del origen principal (control) de LiveRelationship.
+* `@prop cq:isDeep` - Define si la relación está disponible para los elementos secundarios.
+* `@prop cq:syncTrigger` : define cuándo se activa la sincronización.
+* `@node * LiveSyncAction` - Acciones que se deben realizar al sincronizar
 
 **Definición**
 
@@ -578,13 +578,13 @@ Define una mezcla de LiveSync. Si un nodo participa en una LiveRelationship con 
 `+ * (cq:LiveSyncAction) = cq:LiveSyncAction`
 `+ cq:LiveSyncConfig (nt:base) = cq:LiveSyncConfig`
 
-### cq:LiveSyncCancelled {#cq-livesynccancelled}
+### cq:LiveSyncCanceled {#cq-livesynccancelled}
 
 **Descripción**
 
-Define una mezcla LiveSyncCanceled. Cancele el comportamiento de LiveSync de un nodo de Live Copy (controlado) que puede estar involucrado en una LiveRelationship debido a uno de sus padres.
+Define un mixin de LiveSyncCanceled. Cancele el comportamiento de LiveSync de un nodo de Live Copy (controlado) que pueda estar relacionado con una LiveRelationship debido a uno de sus nodos principales.
 
-* `@prop cq:isCancelledForChildren` - Define si se cancela LiveSync; también para niños.
+* `@prop cq:isCancelledForChildren` - Define si se cancela una LiveSync; también para elementos secundarios.
 
 **Definición**
 
@@ -595,10 +595,10 @@ Define una mezcla LiveSyncCanceled. Cancele el comportamiento de LiveSync de un 
 
 **Descripción**
 
-Define un LiveSyncAction adjunto a un LiveSync.
+Define una LiveSyncAction adjunta a una LiveSync.
 
 * `@prop name` - Nombre de la acción
-* `@prop value` - Valor de la acción
+* `@prop value` - Valor de acción
 
 **Definición**
 
@@ -617,7 +617,7 @@ Configuración de Live Sync.
    * `- cq:isDeep (boolean)`
    * `- cq:trigger (string) /** deprecated **/`
 
-Para AEM 5.4 añadir al final de la lista:
+AEM Para la versión 5.4, añada al final de la lista:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
@@ -650,14 +650,14 @@ Define el tipo de nodo de un nodo de consola.
 
 **Descripción**
 
-Define la mezcla de información de estado de replicación.
+Define el mixin de información de estado de replicación.
 
-* `@prop cq:lastPublished`- La fecha de la última publicación de la página (ya no se usa).
-* `@prop cq:lastPublishedBy`- El usuario que publicó la página por última vez (ya no se usa).
-* `@prop cq:lastReplicated` - La fecha en que se replicó la página por última vez.
+* `@prop cq:lastPublished`: La fecha en la que se publicó la página por última vez (ya no se utiliza).
+* `@prop cq:lastPublishedBy`: el usuario que publicó la página por última vez (ya no se utiliza).
+* `@prop cq:lastReplicated` - La última fecha de replicación de la página.
 * `@prop cq:lastReplicatedBy` - El usuario que replicó la página por última vez.
 * `@prop cq:lastReplicationAction` - La acción de replicación: activar o desactivar.
-* `@prop cq:lastReplicationStatus` - El estado de la replicación (ya no se utiliza).
+* `@prop cq:lastReplicationStatus` - El estado de replicación (ya no se utiliza).
 
 **Definición**
 
@@ -686,7 +686,7 @@ Define un privilegio de aplicación.
 
 **Descripción**
 
-Define un ACL de privilegio de aplicación.
+Define una ACL de privilegio de aplicación.
 
 * `@prop cq:isPathDependent`
 * `@node * ACEs`
@@ -701,7 +701,7 @@ Define un ACL de privilegio de aplicación.
 
 **Descripción**
 
-Define un ACE de privilegio de aplicación.
+Define una ACE de privilegio de aplicación.
 
 * `@prop path`
 * `@prop deny`
@@ -726,7 +726,7 @@ Define un privilegio de aplicación.
 
 **Descripción**
 
-Define un ACL de privilegio de aplicación.
+Define una ACL de privilegio de aplicación.
 
 * `@prop cq:isPathDependent`
 * `@node * ACEs`
@@ -741,7 +741,7 @@ Define un ACL de privilegio de aplicación.
 
 **Descripción**
 
-Define un ACE de privilegio de aplicación.
+Define una ACE de privilegio de aplicación.
 
 * `@prop path`
 * `@prop deny`
@@ -766,11 +766,11 @@ Define un tipo de mezcla que marca los archivos que se pueden abrir con el extra
 
 ## Etiquetado {#tagging}
 
-### cq:Tag {#cq-tag}
+### cq:Etiqueta {#cq-tag}
 
 **Descripción**
 
-Define una sola etiqueta, pero también puede contener etiquetas, creando así una taxonomía
+Define una sola etiqueta, pero también puede contener etiquetas, lo que crea una taxonomía
 
 **Definición**
 
@@ -797,7 +797,7 @@ Mezcla de base abstracta para contenido etiquetable.
 
 **Descripción**
 
-Solo los autores o propietarios pueden etiquetar el contenido (etiquetado moderado/administrado).
+Solo los autores/propietarios pueden etiquetar el contenido (etiquetado moderado/administrado).
 
 **Definición**
 
@@ -807,18 +807,18 @@ Solo los autores o propietarios pueden etiquetar el contenido (etiquetado modera
 
 **Descripción**
 
-Cualquier usuario/sitio web público puede etiquetar el contenido (estilo Web2.0), usado dentro de cq:userContent.
+Cualquier usuario/sitio web público puede etiquetar el contenido (estilo Web2.0), utilizado dentro de cq:userContent.
 
 **Definición**
 
 * `[cq:UserTaggable] > cq:Taggable`
    * `mixin`
 
-### cq:AllowUserContent {#cq-allowsusercontent}
+### cq:AllowsUserContent {#cq-allowsusercontent}
 
 **Descripción**
 
-Añade un `cq:userContent` subnodo que los usuarios pueden modificar. Cada usuario tendrá su propio `cq:userContent/<userid>` subnodo, que normalmente tiene la mezcla `cq:UserTaggable`.
+Agrega un `cq:userContent` subnodo que los usuarios pueden modificar. Cada usuario tendrá su propio `cq:userContent/<userid>` subnodo, que generalmente tiene el mixin `cq:UserTaggable`.
 
 **Definición**
 
@@ -826,7 +826,7 @@ Añade un `cq:userContent` subnodo que los usuarios pueden modificar. Cada usuar
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-Variante extendida, definiendo más explícitamente la variable `cq:userContent` tree
+Variante extendida, que define de forma más explícita la variable `cq:userContent` árbol
 
 * `[cq:AllowsUserContent]`
    * `mixin`
@@ -836,7 +836,7 @@ Variante extendida, definiendo más explícitamente la variable `cq:userContent`
 
 **Descripción**
 
-Los usuarios pueden modificarlo.
+Los usuarios pueden modificarla.
 
 **Definición**
 
@@ -888,7 +888,7 @@ Widget
 
 **Descripción**
 
-Colección de utilidades
+Colección de widgets
 
 **Definición**
 
@@ -920,7 +920,7 @@ Panel
 
 **Descripción**
 
-Panel de pestañas
+Panel de fichas
 
 **Definición**
 
@@ -942,7 +942,7 @@ Campo
 
 ## Wiki {#wiki}
 
-### wiki:tema {#wiki-topic}
+### wiki:Tema {#wiki-topic}
 
 **Descripción**
 
@@ -967,18 +967,18 @@ Tema Wiki
 
 **Descripción**
 
-Usuario Wiki
+Usuario de wiki
 
 **Definición**
 
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki:Properties {#wiki-properties}
+### wiki:Propiedades {#wiki-properties}
 
 **Descripción**
 
-Propiedades de Wiki
+Propiedades de wiki
 
 **Definición**
 
@@ -1031,7 +1031,7 @@ Elemento de trabajo.
    * `- sling:resourceType (String) = "cq/workflow/components/workitem" mandatory autocreated`
    * `+ metaData (nt:unstructured)`
 
-### cq:Payload {#cq-payload}
+### cq:Carga útil {#cq-payload}
 
 **Descripción**
 
@@ -1066,7 +1066,7 @@ Datos de flujo de trabajo
 
 **Descripción**
 
-Asignación automática de la configuración del flujo de trabajo. La configuración seguirá esta estructura a continuación:
+Asignar automáticamente la configuración del flujo de trabajo. La configuración sigue esta estructura:
 * `workflows`
    * `+ name1`
       * `- cq:path`
@@ -1091,7 +1091,7 @@ Asignación automática de la configuración del flujo de trabajo. La configurac
 
 **Descripción**
 
-Nodo de flujo de trabajo
+nodo de flujo de trabajo
 
 **Definición**
 
@@ -1111,7 +1111,7 @@ Nodo de flujo de trabajo
 
 **Descripción**
 
-Transición del flujo de trabajo
+Transición de flujo de trabajo
 
 **Definición**
 
@@ -1126,7 +1126,7 @@ Transición del flujo de trabajo
 
 **Descripción**
 
-Ficha O
+Pestaña O
 
 **Definición**
 
@@ -1178,7 +1178,7 @@ Pila de procesos
 
 **Descripción**
 
-Iniciador del flujo de trabajo
+Iniciador de flujo de trabajo
 
 **Definición**
 

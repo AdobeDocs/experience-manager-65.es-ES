@@ -1,7 +1,7 @@
 ---
-title: Inicio rápido de la API de Java (SOAP) de LiveCycleProcess
+title: Inicio rápido (SOAP) de la API de Java de LiveCycleProcess
 seo-title: LiveCycleProcess Java API(SOAP)Quick Start
-description: Utilice el inicio rápido de la API Java (SOAP) de LiveCycleProcess para buscar instancias de proceso, suspender instancias de proceso, iniciar instancias de proceso suspendidas, finalizar instancias de proceso, depurar datos de proceso y recuperar el estado de un trabajo.
+description: Utilice el Inicio rápido (SOAP) de la API de Java de LiveCycleProcess para buscar instancias de proceso, suspender instancias de proceso, iniciar instancias de proceso suspendidas, finalizar instancias de proceso, depurar datos de proceso y recuperar el estado de un trabajo.
 seo-description: Use the LiveCycleProcess Java API (SOAP) Quick Start to search for process instances, suspend process instances, start suspended process instances, terminate process instances, purge process data, and retrieve the status of a job.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
@@ -14,13 +14,13 @@ exl-id: 7b309743-10ea-4d10-adb6-be5ce9f03ce2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Inicio rápido de la API de Java (SOAP) de LiveCycleProcess {#livecycleprocess-java-api-soap-quick-start}
+# Inicio rápido (SOAP) de la API de Java de LiveCycleProcess {#livecycleprocess-java-api-soap-quick-start}
 
-El inicio rápido de la API de Java (SOAP) está disponible para procesos. A *instancia de proceso* es una ocurrencia de un proceso específico que se inició con un método de invocación como la API de invocación o desde Workspace.
+El Inicio rápido de la API de Java (SOAP) está disponible para los procesos de. A *instancia de proceso* es una ocurrencia de un proceso específico que se inició mediante un método de invocación como la API de invocación o desde Workspace.
 
 [Inicio rápido (modo SOAP): Búsqueda de instancias de proceso mediante la API de Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -34,15 +34,15 @@ El inicio rápido de la API de Java (SOAP) está disponible para procesos. A *in
 
 [Inicio rápido (modo SOAP): Recuperación del estado de un trabajo mediante la API de Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
->Los inicios rápidos ubicados en Programación con AEM Forms se basan en Forms si está utilizando otro sistema operativo, como Unix, reemplace las rutas específicas de windows con rutas compatibles con el sistema operativo aplicable. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Los inicios rápidos ubicados en Programación con AEM Forms se basan en Forms si utiliza otro sistema operativo, como Unix, y reemplaza rutas de acceso específicas de Windows por rutas admitidas por el sistema operativo aplicable. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. (Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 ## Inicio rápido (modo SOAP): Búsqueda de instancias de proceso mediante la API de Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-El siguiente ejemplo de código Java busca instancias de proceso basadas en la variable *Préstamo hipotecario - Pregenerado* proceso.
+El siguiente ejemplo de código Java busca instancias de proceso basadas en la variable *Préstamo Hipotecario - Preconstruido* proceso.
 
 ```java
  /*
@@ -431,7 +431,7 @@ El siguiente ejemplo de código Java finaliza una instancia de proceso con el va
 
 ## Inicio rápido (modo SOAP): Depuración de datos de proceso mediante la API de Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-El siguiente código Java depura los datos de un proceso denominado *SecureDocument*. Se utiliza un filtro que especifica depurar los datos de las instancias de proceso donde se denomina la variable de proceso *inValue* es bueno a 200.
+El siguiente código Java depura los datos de un proceso denominado *SecureDocument*. Se utiliza un filtro que especifica la depuración de datos para las instancias de proceso en las que la variable de proceso denominada *inValue* es bueno que 200.
 
 ```java
  /*

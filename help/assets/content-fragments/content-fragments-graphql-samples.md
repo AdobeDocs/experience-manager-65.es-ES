@@ -356,14 +356,14 @@ Si crea una nueva variación, denominada “Centro de Berlín” (`berlin_centre
 }
 ```
 
-### Consulta de muestra: nombres de todas las ciudades Etiquetado como pausas {#sample-names-all-cities-tagged-city-breaks}
+### Consulta de muestra: nombres de todas las ciudades Etiquetado como City Breaks {#sample-names-all-cities-tagged-city-breaks}
 
 Si:
 
-* crear una variedad de etiquetas con el nombre `Tourism` : `Business`, `City Break`, `Holiday`
-* y asignarlas a la variación principal de varias `City` instancias
+* cree una variedad de etiquetas, con el nombre `Tourism` : `Business`, `City Break`, `Holiday`
+* y asignarlas a la variación Principal de varios `City` instances
 
-A continuación, puede utilizar una consulta para devolver detalles de la variable `name` y `tags`de todas las entradas etiquetadas como City Breaks en la `city`esquema.
+A continuación, puede utilizar una consulta para devolver detalles de la `name` y `tags`de todas las entradas etiquetadas como City Breaks en la `city`esquema.
 
 **Consulta de muestra**
 
@@ -1535,7 +1535,7 @@ Esta consulta busca lo siguiente:
 }
 ```
 
-### Consulta de ejemplo para varios fragmentos de contenido y sus variaciones de un modelo determinado {#sample-wknd-multiple-fragment-variations-given-model}
+### Consulta de muestra para varios fragmentos de contenido y sus variaciones de un modelo determinado {#sample-wknd-multiple-fragment-variations-given-model}
 
 Esta consulta busca lo siguiente:
 
@@ -1562,11 +1562,11 @@ query {
 }
 ```
 
-### Consulta de ejemplo para variaciones de fragmento de contenido de un modelo determinado que tiene una etiqueta específica adjunta{#sample-wknd-fragment-variations-given-model-specific-tag}
+### Consulta de muestra para variaciones de fragmentos de contenido de un modelo determinado que tienen una etiqueta específica adjunta{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 Esta consulta busca lo siguiente:
 
-* para fragmentos de contenido de tipo `article` con una o más variaciones que tengan la etiqueta `WKND : Activity / Hiking`
+* para fragmentos de contenido de tipo `article` con una o más variaciones que tienen la etiqueta `WKND : Activity / Hiking`
 
 **Consulta de muestra**
 
@@ -1630,7 +1630,7 @@ Para las consultas de muestra, utilizaremos los siguientes modelos de contenido 
 
 * [Compañía](#model-company)
 -> [Persona](#model-person)
-    -> [Premio](#model-award)
+-> [Premio](#model-award)
 
 * [Ciudad](#model-city)
 
@@ -1717,4 +1717,4 @@ Los siguientes fragmentos se utilizan para el modelo adecuado.
 | San Francisco |  EE. UU. |  883306 |  city:beach<br>city:na |
 | San José |  EE. UU. |  102635 |  city:na |
 | Stuttgart |  Alemania |  634830 |  city:emea |
-|  Zúrich |  Suiza |  415367 |  ciudad:capital<br>ciudad:emea |
+|  Zúrich |  Suiza |  415367 |  city:capital<br>city:emea |

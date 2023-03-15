@@ -1,7 +1,7 @@
 ---
-title: Variables en flujos de trabajo AEM
+title: Variables en flujos de trabajo de AEM
 seo-title: Variables in AEM Workflows
-description: Cree una variable, establezca un valor para la variable y utilícelo en los pasos de flujo de trabajo AEM O Dividir y Ir a .
+description: AEM Cree una variable, establezca un valor para ella y utilícela en los pasos OR Split y Goto del flujo de trabajo de la.
 seo-description: Create a variable, set a value for the variable, and use it in OR Split and  Goto AEM workflow steps.
 uuid: cc62ff11-51d4-4db4-9c6d-5dc2caa1da52
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,21 +13,21 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2057'
-ht-degree: 80%
+ht-degree: 90%
 
 ---
 
-# Variables en flujos de trabajo AEM{#variables-in-aem-workflows}
+# Variables en flujos de trabajo de AEM{#variables-in-aem-workflows}
 
-Una variable en un modelo de flujo de trabajo es una forma de almacenar un valor basado en su tipo de datos. A continuación, puede utilizar el nombre de la variable en cualquier paso del flujo de trabajo para recuperar el valor almacenado en la variable . También puede utilizar nombres de variables para definir expresiones para tomar decisiones de enrutamiento.
+Una variable en un modelo de flujo de trabajo es una forma de almacenar un valor basado en su tipo de datos. Entonces, puede utilizar el nombre de la variable en cualquier paso del flujo de trabajo para recuperar el valor almacenado en la variable. También puede utilizar nombres de variables para definir expresiones para tomar decisiones de enrutamiento.
 
-En AEM modelos de flujo de trabajo, puede:
+En los modelos de flujo de trabajo de AEM, puede hacer lo siguiente:
 
 * [Crear una variable](/help/sites-developing/using-variables-in-aem-workflows.md#create-a-variable) de un tipo de datos basada en el tipo de información que desea almacenar en él.
 * [Configurar un valor para la variable](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable) mediante el paso del flujo de trabajo Establecer variable.
-* [Utilice la variable](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) en OR Split y Goto AEM pasos del flujo de trabajo para definir una expresión para tomar decisiones de enrutamiento. También puede utilizar variables en todos los pasos del flujo de trabajo de AEM Forms.
+* [Usar la variable](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) AEM en los pasos OR Split y Goto del flujo de trabajo para definir una expresión para tomar decisiones de enrutamiento. También puede utilizar variables en todos los pasos del flujo de trabajo de AEM Forms.
 
-En el siguiente vídeo se muestra cómo crear, establecer y utilizar variables en AEM modelos de flujo de trabajo:
+En el siguiente vídeo se muestra cómo crear, establecer y utilizar variables en los modelos de flujo de trabajo de AEM:
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
@@ -35,7 +35,7 @@ Las variables son una extensión de [MetaDataMap](https://helpx.adobe.com/experi
 
 ## Crear una variable {#create-a-variable}
 
-Las variables se crean mediante la sección Variables disponible en la barra de tareas del modelo de flujo de trabajo. AEM variables de flujo de trabajo admiten los siguientes tipos de datos:
+Las variables se crean mediante la sección Variables disponible en la barra de tareas del modelo de flujo de trabajo. Las variables del flujo de trabajo de AEM admiten los siguientes tipos de datos:
 
 * **Tipos de datos primitivos**: Largo, Doble, Booleano, Fecha y Cadena
 * **Tipos de datos complejos**: [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html) y [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)
@@ -44,7 +44,7 @@ Las variables se crean mediante la sección Variables disponible en la barra de 
 >
 >Los flujos de trabajo solo admiten el formato ISO8601 para las variables de tipo Fecha.
 
-Para obtener más tipos de datos complejos disponibles en flujos de trabajo de AEM Forms, consulte [Variables en flujos de trabajo de AEM Forms](/help/forms/using/variable-in-aem-workflows.md).  Utilice el tipo de datos ArrayList para crear colecciones de variables. Puede crear una variable ArrayList para todos los tipos de datos primitivos y complejos. Por ejemplo, cree una variable ArrayList y seleccione String como subtipo para almacenar varios valores de cadena usando la variable .
+Para ver los tipos de datos complejos adicionales disponibles en los flujos de trabajo de AEM Forms, consulte [Variables en flujos de trabajo de AEM Forms](/help/forms/using/variable-in-aem-workflows.md).  Utilice el tipo de datos ArrayList para crear colecciones de variables. Puede crear una variable ArrayList para todos los tipos de datos primitivos y complejos. Por ejemplo, cree una variable ArrayList y seleccione Cadena como subtipo para almacenar varios valores en cadena mediante el uso de la variable.
 
 Siga estos pasos para crear una variable:
 
@@ -60,7 +60,7 @@ Siga estos pasos para crear una variable:
    * Tipo de datos primitivo: especifique un valor predeterminado opcional para la variable.
    * JSON o XML: especifique una ruta de esquema JSON o XML opcional. El sistema valida la ruta del esquema al asignar y almacenar las propiedades disponibles en este esquema para otra variable.
    * Modelo de datos de formulario: especifique una ruta del modelo de datos de formulario.
-   * ArrayList : especifique un subtipo para la colección.
+   * ArrayList: Especifique un subtipo para la colección.
 
 1. Especifique una descripción opcional para la variable y pulse ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para guardar los cambios. La variable se muestra en la lista disponible en el panel izquierdo.
 
@@ -74,12 +74,12 @@ Cuando cree variables, tenga en cuenta las siguientes prácticas:
 
 Puede utilizar el paso Establecer variable para establecer el valor de una variable y definir el orden en que se configuran los valores. La variable se configura en el orden en que se enumeran las asignaciones de variables en el paso Establecer variable.
 
-Los cambios en los valores de las variables afectan únicamente a la instancia del proceso en que se produce el cambio. Por ejemplo, cuando se inicia un flujo de trabajo y cambian los datos de las variables, los cambios afectan únicamente a esa instancia del flujo de trabajo. Los cambios no afectan a otras instancias del flujo de trabajo que se iniciaron anteriormente o que se iniciaron posteriormente.
+Los cambios en los valores de las variables afectan únicamente a la instancia del proceso en que se produce el cambio. Por ejemplo, cuando se inicia un flujo de trabajo y cambian los datos de las variables, los cambios afectan únicamente a esa instancia del flujo de trabajo. Los cambios no afectan a otras instancias del flujo de trabajo que se iniciaron anteriormente o más tarde.
 
 Según el tipo de datos de la variable, puede utilizar las siguientes opciones para establecer su valor:
 
-* **Literal:** Utilice la opción cuando conozca el valor exacto que desea especificar.
-* **Expresión:** Utilice la opción cuando el valor que se va a utilizar se calcule en función de una expresión. La expresión se crea en el editor de expresiones proporcionado.
+* **Literal:** utilice la opción cuando conozca el valor exacto que desea especificar.
+* **Expresión:** utilice la opción cuando el valor que se va a utilizar se calcule en función de una expresión. La expresión se crea en el editor de expresiones proporcionado.
 * **Notación de puntos JSON:** Utilice la opción para recuperar un valor de una variable de tipo JSON o FDM.
 * **XPATH:** Utilice la opción para recuperar un valor de una variable de tipo XML.
 * **En relación con la carga útil:** Utilice la opción cuando el valor que se va a guardar en la variable esté disponible en una ruta relativa a la carga útil.
@@ -95,7 +95,7 @@ Ejecute los siguientes pasos para agregar la asignación entre variables:
 1. Arrastre y suelte el paso **Establecer paso** en el editor de flujo de trabajo, pulse el paso y seleccione ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configurar).
 1. En el cuadro de diálogo Establecer variable, seleccione **[!UICONTROL Asignación]** > **[!UICONTROL Agregar asignación]**.
 1. En la sección **Variable de mapa**, seleccione la variable para almacenar datos, seleccione el modo de asignación y especifique un valor para almacenar en la variable. Los modos de asignación varían en función del tipo de variable.
-1. Asigne más variables para crear una expresión significativa. Toque ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para guardar los cambios.
+1. Asigne más variables para crear una expresión significativa. Tocar ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para guardar los cambios.
 
 ### Ejemplo 1: Consultar una variable XML para establecer el valor de una variable en cadena {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -103,7 +103,7 @@ Seleccione una variable de tipo XML para almacenar un archivo XML. Consulte la v
 
 En este ejemplo, seleccione una variable XML **formdata** para almacenar el archivo **cc-app.xml**. Consulte la variable **formdata** para establecer el valor de la variable en cadena **emailaddress** para almacenar el valor de la propiedad **emailAddress** disponible en el archivo **cc-app.xml**.
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Establezca el valor de una variable")
+>[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Establecer el valor de una variable")
 
 ### Ejemplo 2: Usar una expresión para almacenar valores según otras variables {#example2}
 
@@ -126,7 +126,7 @@ Utilice el editor de expresiones para lo siguiente:
 
 ![Editor de expresiones](assets/variables_expression_editor_new.png)
 
-Se basa en el editor de reglas de formularios adaptables con los cambios siguientes. Editor de reglas en variables:
+Se basa en el editor de reglas de formularios adaptables con los siguientes cambios. Editor de reglas en variables:
 
 * No admite funciones.
 * No proporciona una interfaz de usuario para ver el resumen de las reglas
@@ -135,7 +135,7 @@ Se basa en el editor de reglas de formularios adaptables con los cambios siguien
 * No admite la configuración de la propiedad de un objeto.
 * No admite llamar a un servicio web.
 
-Para obtener más información, consulte [editor de reglas de formularios adaptables](/help/forms/using/rule-editor.md).
+Para obtener más información, consulte [Editor de reglas de formularios adaptables](/help/forms/using/rule-editor.md).
 
 ## Usar una variable {#use-a-variable}
 
@@ -146,7 +146,7 @@ Puede utilizar variables para recuperar entradas y salidas o para guardar el res
 
 ### Pasos del flujo de trabajo compatibles con las variables {#workflow-steps-with-support-for-variables}
 
-El paso Ir a o Dividir y todos los pasos del flujo de trabajo de AEM Forms admiten variables.
+El paso Ir a, OR Split y todos pasos del flujo de trabajo de AEM Forms admiten variables.
 
 #### Paso OR Split {#or-split-step}
 
@@ -162,21 +162,21 @@ En este ejemplo, antes de definir la expresión de enrutamiento, utilice el [eje
 
 Del mismo modo, seleccione una ruta de script externa o especifique el script ECMA para las expresiones de enrutamiento para evaluar la rama activa. Pulse **[!UICONTROL Cambiar nombre de rama]** para especificar un nombre alternativo para la rama.
 
-Para ver más ejemplos, consulte [Creación de un modelo de flujo de trabajo](/help/forms/using/aem-forms-workflow.md#create-a-workflow-model).
+Para ver más ejemplos, consulte [Crear un modelo del flujo de trabajo](/help/forms/using/aem-forms-workflow.md#create-a-workflow-model).
 
-#### Paso Go To {#go-to-step}
+#### Paso Ir a {#go-to-step}
 
-**Paso Goto** permite especificar el siguiente paso en el modelo de flujo de trabajo que se va a ejecutar, según el resultado de una expresión de enrutamiento.
+El **Paso Ir a** permite especificar el siguiente paso en el modelo de flujo de trabajo que se va a ejecutar, según el resultado de una expresión de enrutamiento.
 
-De forma similar al paso OR Split, puede definir la expresión de enrutamiento para el paso Goto mediante una definición de regla, un script ECMA o un script externo.
+De forma similar al paso OR Split, puede definir la expresión de enrutamiento para el paso Ir a mediante una definición de regla, un script ECMA o un script externo.
 
-Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso Go To, consulte [Paso Go To](/help/sites-developing/workflows-step-ref.md#goto-step).
+Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso Ir a, consulte [Paso Ir a](/help/sites-developing/workflows-step-ref.md#goto-step).
 
-![Regla Goto](assets/variables_goto_rule1_new.png)
+![Regla Ir a](assets/variables_goto_rule1_new.png)
 
-En este ejemplo, el paso Goto especifica la solicitud de la tarjeta de crédito de revisión como el siguiente paso si el valor de la variable **actiontaken** es igual a **Necesita más información**.
+En este ejemplo, el paso Ir a especifica la solicitud de la tarjeta de crédito de revisión como el siguiente paso si el valor de la variable **actiontaken** es igual a **Necesita más información**.
 
-Para obtener más ejemplos sobre el uso de la definición de regla en el paso Goto consulte [Simulación de un bucle For](/help/sites-developing/workflows-step-ref.md#simulateforloop).
+Para obtener más ejemplos sobre el uso de la definición de regla en el paso Ir a consulte [Simulación de un bucle For](/help/sites-developing/workflows-step-ref.md#simulateforloop).
 
 #### Pasos del flujo de trabajo centrado en el flujo de trabajo de Forms {#forms-workflow-centric-workflow-steps}
 
@@ -196,7 +196,7 @@ Utilice las siguientes API en el script ECMA para recuperar los valores de varia
 | XML | Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Para obtener información sobre las API para tipos de datos de variables complejas adicionales disponibles en flujos de trabajo de AEM Forms, consulte [Variables en flujos de trabajo de AEM Forms](/help/forms/using/variable-in-aem-workflows.md).
+Para obtener información sobre las API para tipos de datos de variables complejos adicionales disponibles en los flujos de trabajo de AEM Forms, consulte [Variables en flujos de trabajo de AEM Forms](/help/forms/using/variable-in-aem-workflows.md).
 
 **Ejemplo**
 
@@ -220,7 +220,7 @@ workItem.getWorkflowData().getMetaDataMap().put(variableName, value)
 workItem.getWorkflowData().getMetaDataMap().put(salary, 50000)
 ```
 
-actualiza el valor de la variable **salario** a 50000.
+Actualiza el valor de la variable **salario** a 50 000.
 
 ### Establecer variables para invocar flujos de trabajo {#apiinvokeworkflow}
 
@@ -246,7 +246,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Editar una variable {#edit-a-variable}
 
 1. En la página Editar flujo de trabajo, pulse el icono Variables de la barra de tareas del modelo de flujo de trabajo. La sección Variables del panel izquierdo muestra todas las variables existentes.
-1. Toque . ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Editar) junto al nombre de la variable que desea editar.
+1. Pulse el botón ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Editar) junto al nombre de la variable que desea editar.
 1. Edite la información de la variable y pulse ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para guardar los cambios. No se pueden editar los campos **[!UICONTROL Nombre]** y **[!UICONTROL Tipo]** para una variable.
 
 ## Eliminar una variable {#delete-a-variable}
@@ -257,4 +257,4 @@ Siga estos pasos para eliminar una variable:
 
 1. En la página Editar flujo de trabajo, pulse el icono Variables de la barra de tareas del modelo de flujo de trabajo. La sección Variables del panel izquierdo muestra todas las variables existentes.
 1. Pulse el icono Eliminar junto al nombre de la variable que desee eliminar.
-1. Toque ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para confirmar y eliminar la variable.
+1. Tocar ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) para confirmar y eliminar la variable.

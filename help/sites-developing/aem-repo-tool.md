@@ -1,7 +1,7 @@
 ---
 title: AEM Repo Tool
 seo-title: AEM Repo Tool
-description: La herramienta AEM Repo es una solución sencilla para transferir contenido JCR entre su sistema de archivos local y el servidor de AEM a través de la línea de comandos comparable a FTP. La herramienta AEM Repo es similar a la herramienta Jackrabbit FileVault, pero es más rápida, tiene dependencias mínimas y es un script bash simple.
+description: AEM AEM La Herramienta de Repo es una solución sencilla para transferir contenido JCR entre el sistema de archivos local y el servidor de la a través de una línea de comandos comparable a la de FTP. AEM La herramienta de repo de datos es similar a la herramienta Jackrabbit FileVault, pero es más rápida, tiene dependencias mínimas y es un script bash simple.
 seo-description: The AEM Repo Tool is a simple solution to transfer JCR content between your local filesystem and the AEM server via the command line comparable to FTP. The AEM Repo Tool is similar to the Jackrabbit FileVault tool, but is faster, has minimal dependencies, and is a simple bash script.
 uuid: 6c4a3504-e8e8-46c0-83cb-c18d9791f93e
 contentOwner: User
@@ -17,31 +17,31 @@ ht-degree: 2%
 
 ---
 
-# Herramienta AEM Repositorio{#aem-repo-tool}
+# AEM Repo Tool{#aem-repo-tool}
 
-La herramienta AEM Repo es una solución sencilla para transferir contenido JCR entre su sistema de archivos local y el servidor de AEM a través de la línea de comandos comparable a FTP. La herramienta Repositorio de AEM es similar a la [Herramienta Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), pero es más rápido, tiene dependencias mínimas y es un script bash simple.
+AEM AEM La Herramienta de Repo es una solución sencilla para transferir contenido JCR entre el sistema de archivos local y el servidor de la a través de una línea de comandos comparable a la de FTP. AEM La herramienta de repo de datos es similar a la de la variable [Herramienta Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), pero es más rápido, tiene dependencias mínimas y es un script bash simple.
 
-Esta herramienta simplifica la transferencia de archivos para el desarrollador y también se puede integrar en IntelliJ y Eclipse para que el desarrollo sea aún más eficiente.
+Esta herramienta simplifica la transferencia de archivos para el desarrollador y también se puede integrar en IntelliJ y Eclipse para hacer el desarrollo aún más eficiente.
 
 ## Información general {#overview}
 
-Para una ruta determinada dentro de un `jcr_root` estructura filevault en el sistema de archivos, AEM herramienta Repo crea un paquete con un filtro único para todo el subárbol y lo empuja al servidor (similar a FTP) `put`), lo recupera del servidor ( `get`) o compara las diferencias ( `status` y `diff`).
+Para una ruta determinada dentro de un `jcr_root` AEM filevault en el sistema de archivos, la herramienta de repo crea un paquete con un solo filtro para todo el subárbol y lo envía al servidor (similar al FTP) `put`), lo recupera del servidor ( `get`) o compara las diferencias ( `status` y `diff`).
 
-La herramienta no admite varias rutas de filtro ni las de FileVault `filter.xml`.
+La herramienta no admite varias rutas de filtro ni de FileVault `filter.xml`.
 
 >[!CAUTION]
 >
->Tenga en cuenta que la herramienta AEM Repositorio siempre sobrescribirá todo el archivo o directorio especificado.
+>AEM Tenga en cuenta que la herramienta de repo de siempre sobrescribirá todo el archivo o directorio especificado.
 
-## Descargar y documentación {#download-and-documentation}
+## Descarga y documentación {#download-and-documentation}
 
-La variable [AEM herramienta Repositorio está disponible en GitHub a través de este enlace](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) junto con instrucciones detalladas de instalación y uso.
+El [AEM La herramienta de repo está disponible en GitHub a través de este vínculo](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) junto con instrucciones detalladas de instalación y uso.
 
-Si desea descargar la fuente de la herramienta de cesión temporal AEM, consulte el proyecto de GitHub que se muestra a continuación.
+AEM Si desea descargar la fuente de la herramienta de repo de, consulte el proyecto de GitHub vinculado a continuación.
 
-CÓDIGO DE GITHUB
+CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abrir un proyecto de herramientas en GitHub](https://github.com/Adobe-Marketing-Cloud/tools)
+* [Abrir proyecto de herramientas en GitHub](https://github.com/Adobe-Marketing-Cloud/tools)
 * Descargue el proyecto como [un archivo ZIP](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip)

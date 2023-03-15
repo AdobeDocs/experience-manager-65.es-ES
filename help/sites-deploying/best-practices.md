@@ -1,7 +1,7 @@
 ---
-title: Prácticas Recomendadas De Implementación
+title: Implementación de prácticas recomendadas
 seo-title: Deploying Best Practices
-description: Implementación y mantenimiento de las prácticas recomendadas.
+description: Implementación y mantenimiento de prácticas recomendadas.
 seo-description: Deploying and maintaining best practices.
 uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
@@ -17,9 +17,9 @@ ht-degree: 16%
 
 ---
 
-# Prácticas Recomendadas De Implementación{#deploying-best-practices}
+# Implementación de prácticas recomendadas{#deploying-best-practices}
 
-Las prácticas recomendadas de implementación describen cómo implementar o mantener AEM de la forma más eficiente y eficaz posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
+AEM Las prácticas recomendadas sobre la implementación describen cómo implementar o mantener los recursos de la manera más eficiente y eficaz posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
 
 Las siguientes áreas tienen documentación disponible sobre la implementación y el mantenimiento de las prácticas recomendadas y recomendaciones:
 
@@ -28,39 +28,39 @@ Las siguientes áreas tienen documentación disponible sobre la implementación 
 * [IU](#ui)
 * [Actuación](#performance)
 
-Para conocer las prácticas recomendadas sobre administración, desarrollo o creación, consulte uno de los siguientes temas:
+Para conocer las prácticas recomendadas sobre la administración, el desarrollo o la creación, consulte una de las siguientes opciones:
 
 * [Prácticas recomendadas sobre administración](/help/sites-administering/administer-best-practices.md)
 * [Prácticas recomendadas sobre desarrollo](/help/sites-developing/best-practices.md)
-* [Prácticas recomendadas sobre la creación](/help/sites-authoring/best-practices.md)
+* [Prácticas recomendadas de creación](/help/sites-authoring/best-practices.md)
 
 Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
 
 ## OAK {#oak}
 
-[Oak](/help/sites-deploying/platform.md) es un repositorio de contenido jerárquico escalable y con rendimiento que es la base de AEM.
+[Oak](/help/sites-deploying/platform.md) AEM es un repositorio de contenido jerárquico escalable y con buen rendimiento que es la base de la creación de informes de contenido de tipo
 
 <table>
  <tbody>
   <tr>
-   <td><p>Escalabilidad, Performance y Recuperación ante Desastres</p> </td>
+   <td><p>Escalabilidad, rendimiento y recuperación ante desastres</p> </td>
    <td><a href="/help/sites-deploying/performance.md">Rendimiento y escalabilidad</a></td>
-   <td>Proporciona un documento técnico en el que se analizan la agilidad técnica, el alto rendimiento y las funciones de recuperación ante desastres sólidas</td>
+   <td>Proporciona un documento técnico en el que se describen las características técnicas de agilidad, alto rendimiento y recuperación ante desastres con sonido</td>
   </tr>
   <tr>
-   <td>Implementaciones de OAK recomendadas</td>
+   <td>Implementaciones OAK recomendadas</td>
    <td><a href="/help/sites-deploying/recommended-deploys.md">Implementaciones recomendadas</a></td>
-   <td>Describe los escenarios de implementación</td>
+   <td>Describe escenarios de implementación</td>
   </tr>
   <tr>
-   <td>Topología mongo</td>
-   <td><a href="/help/sites-deploying/recommended-deploys.md">Prácticas recomendadas sobre la topología de Mongo</a></td>
-   <td>Describe la topología de mongo: cuándo utilizar qué topología.</td>
+   <td>Topología Mongo</td>
+   <td><a href="/help/sites-deploying/recommended-deploys.md">Prácticas recomendadas de topología Mongo</a></td>
+   <td>Describe la topología mongo: cuándo utilizar qué topología.</td>
   </tr>
   <tr>
-   <td>Opciones del almacén de datos</td>
-   <td><a href="/help/sites-deploying/data-store-config.md">Configuración de nodos y almacenes de datos</a></td>
-   <td>En este documento se explican las prácticas recomendadas relacionadas con el almacenamiento de datos binarios y nodos de contenido. Incluye información sobre el uso del almacén de datos de Amazon S3.</td>
+   <td>Opciones de almacén de datos</td>
+   <td><a href="/help/sites-deploying/data-store-config.md">Configuración de almacenes de datos y nodos</a></td>
+   <td>En este documento se explican las prácticas recomendadas sobre el almacenamiento de datos binarios y nodos de contenido. Incluye información sobre el uso del almacén de datos de Amazon S3.</td>
   </tr>
   <tr>
    <td>Buscar en OAK</td>
@@ -70,32 +70,32 @@ Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
  </tbody>
 </table>
 
-## Comunidades {#communities}
+## Communities {#communities}
 
-AEM Communities simplifica la creación y gestión de comunidades locales. Las prácticas recomendadas para AEM Communities se describen a continuación:
+AEM Communities simplifica la creación y administración de comunidades locales. Las prácticas recomendadas para AEM Communities se describen aquí:
 
-[Almacenamiento de contenido de la comunidad](/help/communities/working-with-srp.md) - Analiza la nueva función de almacenamiento compartido para el contenido generado por el usuario (UGC) y las consideraciones para elegir el subyacente [topología](/help/communities/topologies.md).
+[Almacenamiento de contenido de comunidad](/help/communities/working-with-srp.md) : analiza la nueva función de almacenamiento compartido para el contenido generado por el usuario (UGC) y las consideraciones para elegir el subyacente [topología](/help/communities/topologies.md).
 
 [Implementaciones recomendadas para comunidades](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Describe las implementaciones recomendadas para Communities. |
 
 ## IU {#ui}
 
-Las prácticas recomendadas en torno a la interfaz de usuario se describen a continuación:
+Las prácticas recomendadas en la interfaz de usuario se describen aquí:
 
 [Interfaz de usuario de Recommendations para clientes](/help/sites-deploying/ui-recommendations.md)
 
-AEM tiene dos IU actualmente: IU clásica y táctil optimizada en la misma versión. Por lo tanto, los clientes deben tomar una decisión sobre qué utilizar durante la implementación del proyecto. El objetivo de este documento es ayudar a encontrar la opción correcta.
+AEM Actualmente, tiene dos interfaces de usuario: la clásica y la táctil en la misma versión. Por lo tanto, los clientes deben tomar una decisión sobre cuál utilizar durante la implementación del proyecto. El objetivo de este documento es ayudar a encontrar la opción correcta.
 
 ## Actuación {#performance}
 
-Las prácticas recomendadas sobre el rendimiento se enumeran a continuación:
+Las prácticas recomendadas en cuanto a rendimiento se enumeran a continuación:
 
 <table>
  <tbody>
   <tr>
-   <td>Prácticas recomendadas para garantizar la calidad</td>
-   <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Prácticas recomendadas para garantizar la calidad</a></td>
-   <td>Una visión general estandarizada de los problemas relacionados con la definición de un concepto de prueba específicamente para las pruebas de rendimiento en su <em>publicar</em> entorno. Esto es de interés principalmente para los ingenieros de control de calidad, los directores de proyectos y los administradores de sistemas.</td>
+   <td>Prácticas recomendadas para el control de calidad</td>
+   <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Prácticas recomendadas para el control de calidad</a></td>
+   <td>Una visión general estandarizada de los problemas relacionados con la definición de un concepto de prueba específicamente para pruebas de rendimiento en su <em>publicar</em> entorno. Esto es principalmente de interés para los ingenieros de control de calidad, gestores de proyectos y administradores de sistemas.</td>
   </tr>
   <tr>
    <td>Utilizar Dispatcher con una CDN</td>
@@ -109,8 +109,8 @@ Las prácticas recomendadas sobre el rendimiento se enumeran a continuación:
   </tr>
   <tr>
    <td>Pruebas de rendimiento</td>
-   <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Prácticas recomendadas para pruebas de rendimiento</a></td>
-   <td>Describe las prácticas recomendadas para ejecutar pruebas de rendimiento en una implementación AEM.<br /> </td>
+   <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Prácticas recomendadas para las pruebas de rendimiento</a></td>
+   <td>AEM Describe las prácticas recomendadas para ejecutar pruebas de rendimiento en una implementación de.<br /> </td>
   </tr>
  </tbody>
 </table>

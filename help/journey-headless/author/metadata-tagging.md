@@ -1,11 +1,11 @@
 ---
 title: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
 description: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
-exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 15%
+ht-degree: 97%
 
 ---
 
@@ -13,38 +13,38 @@ ht-degree: 15%
 
 ## La historia hasta ahora {#story-so-far}
 
-Al principio del [recorrido de autor de contenido sin encabezado de AEM](overview.md) el [Introducción](introduction.md) abarcaba los conceptos básicos y la terminología relevantes para la creación sin encabezado.
+Al principio del [recorrido del autor de contenido de AEM sin encabezado](overview.md), en la [introducción](introduction.md) se han abordado los conceptos básicos y la terminología relevante para la creación sin encabezado.
 
-En el paso anterior se le introdujo el uso de referencias para la creación de CMS sin encabezado. Ha aprendido qué tipos de referencias están disponibles y cuáles son sus propósitos: Referencias de contenido, Referencias de recursos/medios y Referencias de fragmento.
+En el paso anterior se introdujo el uso de referencias para la creación de CMS sin encabezado. Ha aprendido qué tipos de referencias están disponibles y cuáles son sus propósitos: Referencias de contenido, Referencias de recursos/medios y Referencias de fragmento.
 
-Este artículo se basa en estos elementos para que pueda comprender cómo usar metadatos y etiquetado para crear su propio contenido para su proyecto sin encabezado de AEM.
+Este artículo se basa en estos conceptos para que pueda comprender cómo usar los metadatos y el etiquetado para crear su propio contenido para su proyecto sin encabezado de AEM.
 
 ## Objetivo {#objective}
 
-* **Audiencia**: Avanzadas
-* **Objetivo**: Introduzca el uso de metadatos y etiquetas para la creación de CMS sin encabezado.
+* **Audiencia**: avanzadas
+* **Objetivo**: introducir el uso de metadatos y el etiquetado para la creación de CMS sin encabezado.
 
 ## Adición de metadatos y etiquetas {#adding-metadata-and-tags}
 
-Hay tres métodos que puede utilizar para agregar metadatos y etiquetas:
+Hay tres métodos que se pueden utilizar para añadir metadatos y etiquetas:
 
 * Al crear el fragmento por primera vez:
 
    ![Crear fragmento de contenido: proporcionar nombre](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* La variable **Metadatos** del editor de fragmentos de contenido le permite agregar varios campos de metadatos y predefinidos **Etiquetas** del proyecto:
+* La pestaña **Metadatos** del editor de fragmentos de contenido permite agregar varios campos de metadatos y **Etiquetas** predefinidas del proyecto:
 
    ![Editor de fragmentos de contenido: metadatos](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * También se puede acceder directamente a esta aplicación mediante la **Propiedades** en la barra de herramientas de la consola Recursos.
+   * También se puede acceder directamente a esta aplicación mediante la opción **Propiedades** en la barra de herramientas de la consola Recursos.
 
 ## Siguientes pasos {#whats-next}
 
-Ahora puede poner todo este conocimiento en uso y empezar a crear fragmentos de contenido para su proyecto.
+Ahora, puede poner en práctica todos estos conocimientos y empezar a crear fragmentos de contenido para su proyecto.
 
 ## Recursos adicionales {#additional-resources}
 
-* [Metadatos: Propiedades del fragmento](/help/assets/content-fragments/content-fragments-metadata.md)
+* [Metadatos: propiedades del fragmento](/help/assets/content-fragments/content-fragments-metadata.md)
 
 * [Uso de etiquetas](/help/sites-authoring/tags.md)
 

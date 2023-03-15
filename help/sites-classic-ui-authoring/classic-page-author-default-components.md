@@ -34,7 +34,7 @@ En las siguientes páginas se proporcionan enlaces rápidos a algunas de las pri
 
 * [Componentes para la creación de páginas](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Los componentes utilizados para crear contenido de página estándar se encuentran principalmente en los grupos **General**, **Columnas** y **Forms**.
+   Los componentes utilizados para crear contenido de página estándar están principalmente contenidos en los grupos **General**, **Columnas** y **Forms**.
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 

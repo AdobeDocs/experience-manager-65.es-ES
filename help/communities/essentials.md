@@ -1,7 +1,7 @@
 ---
-title: Componentes, funciones y características esenciales
+title: Aspectos básicos de componentes, funciones y funciones
 seo-title: Component, Function and Feature Essentials
-description: Función de los sitios, plantillas y grupos de la comunidad
+description: Funcionamiento de los sitios, plantillas y grupos de la comunidad
 seo-description: How community sites, templates, and groups function
 uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
@@ -17,13 +17,13 @@ ht-degree: 18%
 
 ---
 
-# Componentes, funciones y características esenciales  {#component-function-and-feature-essentials}
+# Aspectos básicos de componentes, funciones y funciones  {#component-function-and-feature-essentials}
 
-Las funciones de AEM Communities requieren que los visitantes del sitio se conviertan en miembros e inicien sesión en el [sitio de la comunidad](overview.md#communitiessites) antes de poder publicar contenido. Así, [plantillas de sitio de la comunidad](sites.md), desde el cual se encuentra un sitio de comunidad [created](sites-console.md), están diseñados para incluir una función de inicio de sesión, así como perfiles de usuario, mensajes, búsquedas, moderación y traducción.
+Las funciones de AEM Communities requieren que los visitantes del sitio se conviertan en miembros e inicien sesión en [sitio comunitario](overview.md#communitiessites) antes de poder publicar contenido. Por lo tanto, [plantillas de sitio de comunidad](sites.md), desde el que se crea un sitio de comunidad [created](sites-console.md), están diseñadas para incluir una función de inicio de sesión, así como perfiles de usuario, mensajería, búsqueda, moderación y traducción.
 
-Un sitio de la comunidad ayudará a los miembros a crear grupos de la comunidad cuando [función de grupos de comunidades](functions.md#groups-function) se incluye en la plantilla de sitio de la comunidad seleccionada.
+Un sitio de la comunidad ayudará a los miembros a crear grupos de la comunidad cuando [función de grupos comunitarios](functions.md#groups-function) se incluye en la plantilla de sitio de la comunidad seleccionada.
 
-A continuación se muestran vínculos a información esencial para componentes, funciones y características de Communities.
+A continuación se muestran vínculos a información esencial para los componentes, las funciones y las características de las Comunidades.
 
 ## Componentes básicos {#base-components}
 
@@ -34,7 +34,7 @@ A continuación se muestran vínculos a información esencial para componentes, 
    * [Me está gustando](essentials-liking.md)
    * [Clasificación](rating-basics.md)
    * [Votación](essentials-voting.md)
-   * *Encuesta (ya no está disponible)*
+   * *Encuesta (ya no disponible)*
 
 ## Componentes con funciones {#components-with-functions}
 
@@ -56,8 +56,8 @@ A continuación se muestran vínculos a información esencial para componentes, 
 
 * [Bibliotecas de cliente](clientlibs.md)
 * [Sitios de la comunidad](sites-for-developers.md)
-* [Eventos OSGi de componentes](events.md)
-* [Carga de componentes](sideloading.md)
+* [Eventos OSGi de componente](events.md)
+* [Descarga de componentes](sideloading.md)
 * [Mensajes](essentials-messaging.md)
 * [Editor de texto enriquecido](rte.md)
 * [Puntuación y distintivos](configure-scoring.md)
@@ -69,10 +69,10 @@ A continuación se muestran vínculos a información esencial para componentes, 
 
 ## Javadocs {#javadocs}
 
-La variable [javadocs en línea](../../help/sites-developing/reference-materials.md) reflejan las API disponibles en la versión AEM 6.3.
+El [javadocs en línea](../../help/sites-developing/reference-materials.md) AEM Reflejar las API disponibles en la versión 6.3 de.
 Las API de Communities están en `com.adobe.cq.social.*` paquetes.
 
-Para cada [paquete de características](deploy-communities.md#latestfeaturepack), hay disponible un jar javadoc. Para obtener más información, visite [Uso de Maven para comunidades](maven.md#javadocs).
+Para cada [paquete de funciones](deploy-communities.md#latestfeaturepack), hay disponible un jar de javadoc. Para obtener más información, visite [Uso de Maven para comunidades](maven.md#javadocs).
 
 ## Información adicional {#additional-information}
 
@@ -80,7 +80,7 @@ Para cada [paquete de características](deploy-communities.md#latestfeaturepack)
 
    * [Personalizaciones del lado del cliente](client-customize.md)
    * [Personalizaciones del lado del servidor](server-customize.md)
-   * [Información general del proveedor de recursos de almacenamiento](srp.md)
+   * [Resumen del proveedor de recursos de almacenamiento](srp.md)
 
 * [Directrices de codificación](code-guide.md)
 * [Tutoriales](tutorials.md)

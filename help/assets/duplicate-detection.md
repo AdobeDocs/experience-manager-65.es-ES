@@ -14,19 +14,19 @@ ht-degree: 0%
 
 # Habilitar la detección de recursos duplicados {#enable-detection-of-duplicate-assets}
 
-Si intenta cargar un recurso que exista en [!DNL Adobe Experience Manager Assets], la función de detección de duplicados la identifica como duplicada. La detección de duplicados está deshabilitada de forma predeterminada. Para habilitar la función, siga estos pasos:
+Si intenta cargar un recurso que existe en [!DNL Adobe Experience Manager Assets], la función de detección de duplicados la identifica como duplicada. La detección de duplicados está desactivada de forma predeterminada. Para habilitar la función, siga estos pasos:
 
 1. Abra el [!DNL Experience Manager] página de configuración de la consola web accediendo a `https://[aem_server]:[port]/system/console/configMgr`.
-1. Editar la configuración del servlet **[!UICONTROL Recurso de creación de DAM CQ de día]**.
-1. Seleccione el **[!UICONTROL detectar duplicado]** y haga clic en **[!UICONTROL Guardar]**.
+1. Edite la configuración del servlet **[!UICONTROL Crear recurso de CQ DAM del día]**.
+1. Seleccione el **[!UICONTROL detectar duplicados]** y haga clic en **[!UICONTROL Guardar]**.
 
-   ![Seleccione la opción Detectar duplicado en el servlet](assets/chlimage_1-377.png)
+   ![Seleccione la opción detectar duplicados en el servlet](assets/chlimage_1-377.png)
 
-   *Figura: Seleccione la opción Detectar duplicado en el servlet.*
+   *Imagen: seleccione la opción detectar duplicados en el servlet.*
 
-La función Detectar duplicado está ahora habilitada en [!DNL Assets]. Cuando un usuario intenta cargar un recurso que existe en [!DNL Experience Manager], el sistema comprueba si hay conflicto y lo indica. Los recursos se identifican utilizando el hash SHA-1 almacenado en `jcr:content/metadata/dam:sha1`, lo que significa que los recursos duplicados se detectan independientemente de los nombres de archivo.
+La función de detección de duplicados ahora está habilitada en [!DNL Assets]. Cuando un usuario intenta cargar un recurso que existe en [!DNL Experience Manager], el sistema comprueba la existencia de conflictos y lo indica. Los recursos se identifican mediante un hash SHA-1 almacenado en `jcr:content/metadata/dam:sha1`, lo que significa que se detectan recursos duplicados independientemente de los nombres de archivo.
 
 >[!MORELIKETHIS]
 >
->* [Duplicar recursos en un repositorio existente (un tutorial de un miembro de la comunidad)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
+>* [Activos duplicados en el repositorio existente (un tutorial de un miembro de la comunidad)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
 

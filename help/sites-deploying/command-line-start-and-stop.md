@@ -1,7 +1,7 @@
 ---
 title: 'Línea de comandos: start y stop'
 seo-title: Command Line Start and Stop
-description: Aprenda a iniciar y detener AEM desde la línea de comandos.
+description: AEM Obtenga información sobre cómo iniciar y detener el inicio de la línea de comandos desde la línea de comandos.
 seo-description: Learn how to start and stop AEM from the command line.
 uuid: 585f071c-2286-4a2c-af07-404bf298cba8
 contentOwner: Guillaume Carlino
@@ -19,11 +19,11 @@ ht-degree: 3%
 
 # Línea de comandos: start y stop{#command-line-start-and-stop}
 
-## Inicio de Adobe Experience Manager desde la línea de comandos {#starting-adobe-experience-manager-from-the-command-line}
+## Iniciar Adobe Experience Manager desde la línea de comandos {#starting-adobe-experience-manager-from-the-command-line}
 
-La variable `start` la secuencia de comandos está disponible en *el &lt;cq-installation>/bin* directorio. Se proporcionan las versiones Unix y Windows. La secuencia de comandos inicia la instancia instalada en *&lt;cq-installation>* directorio.
+El `start` El script está disponible en *el &lt;cq-installation>/bin* directorio. Se proporcionan las versiones Unix y Windows. La secuencia de comandos inicia la instancia instalada en *&lt;cq-installation>* directorio.
 
-Estas dos versiones admiten una lista de variables de entorno que podrían utilizarse para iniciar y ajustar la instancia de AEM.
+AEM Estas dos versiones admiten una lista de variables de entorno que se pueden usar para iniciar y ajustar la instancia de.
 
 <table>
  <tbody>
@@ -33,11 +33,11 @@ Estas dos versiones admiten una lista de variables de entorno que podrían utili
   </tr>
   <tr>
    <td>CQ_PORT</td>
-   <td>Puerto TCP usado para scripts de detención y estado<br /> </td>
+   <td>Puerto TCP utilizado para secuencias de comandos de estado y detención<br /> </td>
   </tr>
   <tr>
    <td>CQ_HOST</td>
-   <td>Nombre del host<br /> </td>
+   <td>Nombre de host<br /> </td>
   </tr>
   <tr>
    <td>CQ_INTERFACE</td>
@@ -45,18 +45,18 @@ Estas dos versiones admiten una lista de variables de entorno que podrían utili
   </tr>
   <tr>
    <td>CQ_RUNMODE</td>
-   <td>Modo de ejecución separado por coma<br /> </td>
+   <td>Modo(s) de ejecución separado(s) por coma<br /> </td>
   </tr>
   <tr>
    <td>CQ_JARFILE</td>
-   <td>Nombre del archivo de jerga<br /> </td>
+   <td>Nombre del archivo jar<br /> </td>
   </tr>
   <tr>
-   <td>CQ_USE_JAAS</td>
+   <td>CQ_USE_JAS</td>
    <td>Uso de JAAS (si es verdadero)<br /> </td>
   </tr>
   <tr>
-   <td>CQ_JAAS_CONFIG</td>
+   <td>CQ_JAS_CONFIG</td>
    <td>Ruta de la configuración de JAAS<br /> </td>
   </tr>
   <tr>
@@ -68,7 +68,7 @@ Estas dos versiones admiten una lista de variables de entorno que podrían utili
 
 >[!CAUTION]
 >
->Tenga en cuenta que algunos modos de ejecución, entre ellos el de autor y publicación, deben configurarse antes del primer inicio AEM y no se pueden cambiar posteriormente. Antes de configurar una instancia de AEM que se supone que debe utilizarse en la producción, consulte la [documentación de modos de ejecución](/help/sites-deploying/configure-runmodes.md) para obtener más información.
+>AEM Tenga en cuenta que algunos modos de ejecución, entre los que se incluyen Autor y Publicación, deben configurarse antes de comenzar la primera ejecución y no se pueden cambiar posteriormente. AEM Antes de configurar una instancia de que se supone que debe utilizarse en producción, consulte la [documentación sobre los modos de ejecución](/help/sites-deploying/configure-runmodes.md) para obtener más información.
 
 ### Ejemplo de script start.bat de la plataforma Windows {#windows-platform-start-bat-script-example}
 
@@ -84,32 +84,32 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->La secuencia de comandos de inicio inicia el AEM Quickstart instalado en *el &lt;cq-installation>/app* carpeta.
+>AEM La secuencia de comandos de inicio inicia el inicio rápido de la aplicación instalado en *el &lt;cq-installation>/app* carpeta.
 
 ## Detención de Adobe Experience Manager {#stopping-adobe-experience-manager}
 
-Para detener AEM, realice una de las siguientes acciones:
+AEM Para detener la, siga uno de estos procedimientos:
 
 * Según la plataforma que utilice:
 
-   * Si ha empezado a AEM desde una secuencia de comandos o la línea de comandos, pulse **Ctrl + C** para apagar el servidor.
-   * Si ha utilizado el script de inicio en UNIX, debe utilizar el script de parada para detener AEM.
+   * AEM Si ha empezado a utilizar el comando desde una secuencia de comandos o desde la línea de comandos, pulse **Ctrl + C** para apagar el servidor.
+   * AEM Si ha utilizado la secuencia de comandos de inicio en UNIX, debe utilizar la secuencia de comandos de parada para detener la ejecución de la secuencia de comandos de inicio de la secuencia de comandos de.
 
-* Si ha empezado a AEM haciendo doble clic en el archivo jar, haga clic en el botón **Activado** en la ventana de inicio (el botón luego cambia a **Off**) para apagar el servidor.
+* AEM Si ha empezado a hacer clic en el archivo jar, haga clic en el botón de la barra de herramientas. **Activado** en la ventana de inicio (el botón cambia a **Desactivado**) para apagar el servidor.
 
-   ![imagen_1-63](assets/chlimage_1-63.png)
+   ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ## Detención de Adobe Experience Manager desde la línea de comandos {#stopping-adobe-experience-manager-from-the-command-line}
 
-La variable `stop` la secuencia de comandos está disponible en *el &lt;cq-installation>/bin* directorio. Se proporcionan las versiones Unix y Windows. La secuencia de comandos detiene la instancia en ejecución instalada en *&lt;cq-installation>* directorio.
+El `stop` El script está disponible en *el &lt;cq-installation>/bin* directorio. Se proporcionan las versiones Unix y Windows. El script detiene la instancia en ejecución instalada en *&lt;cq-installation>* directorio.
 
-### Ejemplo de script de parada de plataforma Unix {#unix-platform-stop-script-example}
+### Ejemplo de script de detención de plataforma Unix {#unix-platform-stop-script-example}
 
 ```shell
 ./stop
 ```
 
-### Ejemplo de script de Windows platform stop.bat {#windows-platform-stop-bat-script-example}
+### Ejemplo de script stop.bat de la plataforma Windows {#windows-platform-stop-bat-script-example}
 
 ```shell
 ./stop.bat
@@ -119,7 +119,7 @@ Si solo desea preconfigurar el repositorio (sin reubicarlo), solo tiene que:
 
 * extracción `repository.xml` a la ubicación requerida
 
-* actualizar `repository.xml` según se requiera
+* actualizar `repository.xml` según sea necesario
 
 * crear `bootstrap.properties` y definir `repository.config`
 

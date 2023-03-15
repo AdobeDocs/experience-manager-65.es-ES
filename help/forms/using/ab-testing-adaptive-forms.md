@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
-workflow-type: ht
+exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
+source-git-commit: 45ca98ffb68e1e31e2f45f352e86f5aa1b6f0f00
+workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 100%
 

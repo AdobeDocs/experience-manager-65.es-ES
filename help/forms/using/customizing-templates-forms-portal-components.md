@@ -12,7 +12,7 @@ docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1225'
 ht-degree: 100%
 

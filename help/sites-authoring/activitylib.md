@@ -81,7 +81,7 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 * **Motor de segmentación:** [AEM](/help/sites-authoring/personalization.md#aem) o [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) como motor del contenido segmentado.
 
 * **Seleccione una configuración de Target:** (Solo Adobe Target) La configuración de nube que esta actividad debe utilizar para conectarse a Adobe Target. Esta opción solo aparece cuando Adobe Target está seleccionado como motor de segmentación.
-* **Tipo de actividad: **El tipo de actividad: Prueba A/B o Segmentación de experiencias
+* **Tipo de actividad: **El tipo de actividad: prueba A/B o segmentación de experiencias
 * **Objetivo:** (Opcional) Una descripción de la actividad.
 * **Experiencias:** Asignaciones entre los nombres de audiencia y los segmentos de marketing a los que está dirigiendo.
 * **Porcentajes de tráfico:** Si se selecciona la prueba A/B, puede cambiar el tráfico (en porcentaje) que se destina a cada experiencia.
@@ -97,7 +97,7 @@ Añada una actividad o edite una actividad existente para centrar sus esfuerzos 
 
 Para añadir una actividad:
 
-1. Toque o haga clic en la marca para la que está creando la actividad y haga clic o pulse **Crear** y luego **Crear actividad**. Si está editando, seleccione la actividad y, a continuación, toque o haga clic en **Editar**.
+1. Toque o haga clic en la marca para la que está creando la actividad, o haga clic o toque **Crear** y luego **Crear actividad**. Si está editando, seleccione la actividad y toque o haga clic en **Editar**.
 1. Proporcione la información siguiente y, a continuación, haga clic o pulse **Siguiente**:
 
    * El nombre de la actividad.
@@ -109,7 +109,7 @@ Para añadir una actividad:
 1. Agregue una o varias experiencias a la actividad. Pulse o haga clic en **Agregar experiencia**.
 1. Si utiliza la segmentación AEM o la segmentación por experiencia de Adobe Target:
 
-   1. Toque o haga clic en **Seleccionar audiencia **y seleccione el segmento al que se orienta su experiencia.
+   1. Toque o haga clic en **Seleccionar audiencia **y seleccione el segmento de destino de la experiencia.
    1. Haga clic o pulse **Añadir experiencia**, escriba un nombre y haga clic o pulse **Aceptar**.
 
    1. Haga clic o pulse **Siguiente**.
@@ -131,7 +131,7 @@ Para añadir una actividad:
 1. Para especificar cuándo finaliza la actividad, utilice el menú desplegable final para seleccionar uno de los siguientes valores:
 
    * **Cuando se desactiva:** la actividad finaliza cuando la página que tiene el contenido de destino se desactiva.
-   * **Fecha y hora especificadas**: una hora específica. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
+   * **Fecha y hora especificadas**: una hora determinada. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
 
 1. Para especificar una prioridad de la actividad, utilice el regulador para seleccionar cualquier valor: **Baja**, **Normal** o **Alta**.
 1. Si utiliza Adobe Target como motor de segmentación, seleccione qué desea medir con esta actividad. Consulte [Configuración de la actividad y definición de objetivos](/help/sites-authoring/content-targeting-touch.md) para obtener más información acerca de las métricas de éxito disponibles. Debe seleccionar por lo menos un objetivo.
@@ -229,7 +229,7 @@ Para evitar problemas de sincronización, use siempre nombres exclusivos para la
 
 >[!NOTE]
 >
->Cuando crea una campaña en Adobe Target, asigna una propiedad llamada `thirdPartyId t`en cada campaña. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; por tanto, los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
+>Al crear una campaña en Adobe Target, se asigna una propiedad denominada `thirdPartyId t`en cada campaña. Cuando elimine una campaña en Adobe Target, la propiedad `thirdPartyId` no se eliminará. No puede volver a utilizar `thirdPartyId` para las campañas de distintos tipos (AB, XT) y no se puede quitar manualmente. Para evitar este problema, asigne a cada campaña un nombre único; por tanto, los nombres de campaña no se pueden reutilizar en tipos de campaña diferentes.
 >
 >Si utiliza el mismo nombre en el mismo tipo de campaña, sobrescribirá la campaña existente.
 >

@@ -37,11 +37,11 @@ Para publicar el correo electrónico en el proveedor de servicios de correo elec
 
 ## Crear un correo electrónico {#creating-an-email}
 
-Se puede crear en una campaña un boletín o mensaje de correo electrónico que desee publicar en un servicio de correo electrónico mediante la **Newsletter de Geometrixx** plantilla. También puede usar la plantilla **Correo electrónico de Geometrixx Outdoors**. Ejemplo de correo electrónico o newsletter basado en la variable **Correo electrónico de los Geometrixx Outdoors** la plantilla está disponible en `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
+Se puede crear un correo electrónico o una newsletter que desee publicar en un servicio de correo electrónico en una campaña utilizando **Newsletter de Geometrixx** plantilla. También puede usar la plantilla **Correo electrónico de Geometrixx Outdoors**. Ejemplo de correo electrónico/newsletter basado en el **Correo electrónico de Geometrixx Outdoors** Las plantillas de están disponibles en `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-Para crear un nuevo correo electrónico que se publique en el servicio de correo electrónico configurado:
+Para crear un nuevo correo electrónico publicado en el servicio de correo electrónico configurado:
 
-1. Vaya a **Sitios web** y luego **Campañas**. Seleccione una campaña.
+1. Ir a **Sitios web** y luego **Campañas**. Seleccione una campaña.
 1. Haga clic en **Nuevo** para abrir la ventana **Crear página**.
 1. Especifique el título y nombre y seleccione la plantilla **Boletín de Geometrixx** de la lista de plantillas disponibles.
 1. Haga clic en **Crear**.
@@ -60,7 +60,7 @@ El componente **Herramientas de correo electrónico** de ExactTarget puede añad
 1. Abra el correo electrónico que quiera publicar en ExactTarget.
 1. Añada el componente **ET: herramientas de correo electrónico** a la página mediante la barra de tareas. Abra el componente en el modo de edición.
 
-   ![imagen_1](assets/chlimage_1.gif)
+   ![chlimage_1](assets/chlimage_1.gif)
 
 1. Seleccione una opción del menú **Opciones**:
 
@@ -68,7 +68,7 @@ El componente **Herramientas de correo electrónico** de ExactTarget puede añad
  <tbody>
   <tr>
    <td>Dirección física de envío (obligatoria)</td>
-   <td>Este componente inserta la dirección de correo física de su organización en el correo electrónico.</td>
+   <td>Este componente inserta la dirección de correo física de la organización en el correo electrónico.</td>
   </tr>
   <tr>
    <td>Centro de perfiles (obligatorio)</td>
@@ -99,7 +99,7 @@ El componente **Herramientas de correo electrónico** de ExactTarget puede añad
 
 >[!NOTE]
 >
->El menú desplegable **Opciones** solo se rellenará si se aplica la configuración ExactTarget al correo electrónico. Consulte [Aplicación de la configuración del servicio de correo electrónico a la configuración del correo electrónico](#applying-e-mail-service-configuration-to-e-mail-settings) para obtener más información.
+>El menú desplegable **Opciones** solo se rellenará si se aplica la configuración ExactTarget al correo electrónico. Consulte [Aplicación de la configuración del servicio de correo electrónico a la configuración de correo electrónico](#applying-e-mail-service-configuration-to-e-mail-settings) para obtener más información.
 
 1. Publicar el correo electrónico en ExactTarget.
 
@@ -107,7 +107,7 @@ El componente **Herramientas de correo electrónico** de ExactTarget puede añad
 
 >[!NOTE]
 >
->* Las direcciones URL dentro de las herramientas de correo electrónico solo se reemplazan (en el correo recibido) por sus valores reales cuando se envía un correo electrónico mediante **Envío simple** o **Envío guiado** pero no **Envío de prueba**.
+>* Las direcciones URL de las herramientas de correo electrónico se sustituyen (en el correo electrónico recibido) por sus valores reales solo cuando se envía un correo electrónico mediante **Envío simple** o **Envío guiado** pero no **Probar envío**.
 >
 >* Se requieren dos de las herramientas de correo electrónico: **Dirección física de envío (obligatoria)** y **Centro de perfiles (obligatorio)**. Cuando se publica el correo electrónico en ExactTarget, se añaden estas dos herramientas de correo electrónico de forma predeterminada en la parte inferior de cada mensaje.
 >
@@ -118,8 +118,8 @@ El componente **Herramientas de correo electrónico** de ExactTarget puede añad
 Puede añadir campos personalizados en un correo electrónico; para ello, añada el componente **Texto y personalización** a la página:
 
 1. Abra el correo electrónico que se publicará en el servicio de correo electrónico.
-1. Para activar el campo personalización del servicio de correo electrónico, añada la configuración del marco mientras configura el servicio de correo electrónico. Consulte [configuración de Silverpop Engage](/help/sites-administering/silverpop.md) y [configuración de ExactTarget](/help/sites-administering/exacttarget.md) para obtener más información.
-1. Añadir el componente **Texto y personalización** de la barra de tareas. Este componente forma parte del grupo del boletín. Abra este componente en el modo de edición.
+1. Para activar el campo personalización del servicio de correo electrónico, añada la configuración del marco mientras configura el servicio de correo electrónico. Consulte [configurar Silverpop Engage](/help/sites-administering/silverpop.md) y [configuración de Exact Target](/help/sites-administering/exacttarget.md) para obtener más información.
+1. Añadir el componente **Texto y personalización** de la compañera. Este componente forma parte del grupo del boletín. Abra este componente en el modo de edición.
 
    ![chlimage_1-110](assets/chlimage_1-110a.png)
 
@@ -132,10 +132,10 @@ Para aplicar la configuración del servicio de correo electrónico a un boletín
 
 1. Cree una configuración de servicio de correo electrónico.
 1. Abra el correo electrónico o el boletín.
-1. Abra la configuración del correo electrónico o del boletín haciendo clic en **Configuración** o haciendo clic en **Propiedades de página de** la barra de tareas.
+1. Abra la configuración del correo electrónico/newsletter haciendo clic en **Configuración** o haciendo clic en **Propiedades de página en** la compañera.
 1. Haga clic en **Añadir servicio** en la ficha **Servicios de nube**. Verá la lista de servicios. Seleccione la configuración necesaria (**ExactTarget** o **Silverpop**) de la lista que encontrará en la lista desplegable.
 
-   ![Chlimage_1-5](assets/chlimage_1-5a.jpeg)
+   ![chlimage_1-5](assets/chlimage_1-5a.jpeg)
 
 1. Haga clic en **Aceptar**.
 
@@ -149,11 +149,11 @@ Los mensajes de correo electrónico y los boletines se pueden publicar en el ser
 1. Rellene el campo **Nombre del boletín**. El correo electrónico o el boletín se publicó en el proveedor de servicios de correo electrónico con este nombre. Si no se especifica ningún nombre, el correo electrónico se publicará con el nombre de la página del boletín en AEM.
 1. Haga clic en **Publicar**.
 
-   ![Chlimage_1-6](assets/chlimage_1-6.jpeg)
+   ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
    Si la operación es correcta, AEM confirmará que se puede ver el correo electrónico en ExactTarget o Silverpop Engage.
 
-   En el caso de ExactTarget, el correo electrónico publicado se puede ver haciendo clic en **Ver correo electrónico publicado**. Esto le llevará directamente a la newsletter publicada en ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
+   En el caso de ExactTarget, el correo electrónico publicado se puede ver haciendo clic en **Ver correo electrónico publicado**. Esto lo lleva directamente a la newsletter publicada en ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
 
 >[!NOTE]
 >
@@ -163,12 +163,12 @@ Los mensajes de correo electrónico y los boletines se pueden publicar en el ser
 
 ### Actualizar un correo electrónico publicado {#updating-a-published-e-mail}
 
-La variable **Actualizar** en el cuadro de diálogo Publicar permite actualizar una newsletter ya publicada en un proveedor de servicios de correo electrónico. Si todavía no se ha publicado el boletín y hace clic en el botón **Actualizar**, se mostrará el mensaje **No se publicó el boletín**.
+El **Actualizar** del cuadro de diálogo Publicar permite actualizar una newsletter ya publicada en un proveedor de servicios de correo electrónico. Si todavía no se ha publicado el boletín y hace clic en el botón **Actualizar**, se mostrará el mensaje **No se publicó el boletín**.
 
 Para actualizar un correo electrónico publicado:
 
 1. Abra el correo electrónico o el boletín que ya se haya publicado en un proveedor de servicios de correo electrónico, y que quiera volver a publicar después de realizar cambios en él.
-1. Haga clic en **Publicar**. La variable **Publicar newsletter en el proveedor de servicios de correo electrónico** se muestra. Haga clic en **Actualizar**.
+1. Haga clic en **Publicar**. El **Publicar newsletter en el Email Service Provider** se muestra la ventana. Haga clic en **Actualizar**.
 
    Para comprobar si el correo electrónico o la newsletter se han actualizado en ExactTarget, haga clic en **Ver correo electrónico publicado**. Esto le llevará al correo electrónico publicado en ExactTarget.
 

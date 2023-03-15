@@ -1,7 +1,7 @@
 ---
 title: Herramientas de prueba y seguimiento
 seo-title: Testing and Tracking Tools
-description: AEM proporciona un marco para probar la interfaz de usuario de los componentes y un mecanismo para probar y depurar componentes
+description: AEM proporciona un marco de trabajo para probar la interfaz de usuario de los componentes y un mecanismo para probar y depurar componentes
 seo-description: AEM provides a framework for testing component UI and a mechanism for testing and debugging components
 uuid: 12abedb5-4ee7-4389-9340-e628adbbc053
 contentOwner: Guillaume Carlino
@@ -31,37 +31,37 @@ Las siguientes son dos herramientas de prueba de código abierto:
 
 **Selenio**
 
-Selenium se utiliza para pruebas de funciones en un explorador con un usuario por actividad. Registra los pasos de prueba (clics) como tablas de HTML o clases Java.
+Selenium se utiliza para probar funciones en un navegador con un usuario por actividad. Registra los pasos de prueba (clics) como tablas de HTML o clases Java.
 
 Para obtener más información, consulte [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 
-JMeter se utiliza para rastrear solicitudes y puede utilizarse para pruebas funcionales, de rendimiento y de estrés.
+JMeter se utiliza para realizar un seguimiento de las solicitudes y puede utilizarse para pruebas funcionales, de rendimiento y de esfuerzo.
 
 Para obtener más información, consulte [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter).
 
-También existen muchas herramientas propietarias para automatizar pruebas y administrar planes de prueba.
+También hay muchas herramientas propietarias para automatizar pruebas y administrar planes de prueba.
 
 ### Seguimiento {#tracking}
 
-Las siguientes herramientas están fácilmente disponibles. Sin embargo, un problema clave en todos los casos es la disponibilidad de los datos para todos los miembros del equipo del proyecto: socio y cliente.
+Las siguientes herramientas están disponibles fácilmente. Sin embargo, un problema clave en todos los casos es la disponibilidad de los datos para todos los miembros del equipo del proyecto: socio y cliente.
 
 **Bugzilla**
 
-Un sistema de seguimiento de errores que puede configurarse según sus propios requisitos.
+Un sistema de seguimiento de errores que se puede configurar según sus propios requisitos.
 
 **Hojas de cálculo**
 
-Aunque no se trata específicamente de una herramienta de seguimiento de errores, las hojas de cálculo suelen *mis* se utilizan para este fin, ya que son fáciles de entender y la mayoría de los usuarios tienen experiencia en su funcionalidad.
+Aunque no es específicamente una herramienta de seguimiento de errores, las hojas de cálculo suelen ser *faltar* se utilizan para este fin, ya que son fáciles de entender y la mayoría de los usuarios tienen experiencia en su funcionalidad.
 
-Si se utilizan para el seguimiento, entonces:
+Si se utilizan para el seguimiento:
 
 * deben mantenerse simples.
 * el número de hojas de cálculo individuales debe reducirse al mínimo.
 * deben actualizarse periódicamente.
-* solo se debe mantener una copia maestra y todos deben saber dónde está la copia maestra.
+* solo debe conservarse una copia maestra, y todos deben saber dónde se encuentra la copia maestra.
 * deben ser accesibles para todos los miembros del proyecto.
-* si la seguridad es un problema (a menudo ocurre en grandes empresas) y el acceso común no es posible, las copias se pueden distribuir siempre que todos entiendan que se trata de copias y no se puedan actualizar.
+* si la seguridad es un problema (a menudo ocurre en grandes empresas) y el acceso común no es posible, entonces las copias pueden distribuirse siempre y cuando todos entiendan que son copias y no se pueden actualizar.
 
-De nuevo, existen muchas herramientas propietarias para rastrear errores y requisitos de funciones.
+Una vez más, hay muchas herramientas propietarias para el seguimiento de errores y requisitos de funciones.

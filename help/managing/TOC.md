@@ -22,8 +22,8 @@ ht-degree: 66%
    + [Administración de proyectos: lista de comprobación de prácticas recomendadas](best-practices.md)
    + [La lista de comprobación](best-practices-checklist.md)
    + [Glosario](best-practices-glossary.md)
-   + [Lista de comprobación: referencia adicional](best-practices-further-reference.md)
-+ Administración: referencia adicional {#managing-further-reference}
+   + [La lista de comprobación: referencia adicional](best-practices-further-reference.md)
++ Gestión: referencia adicional {#managing-further-reference}
    + [Pautas para configurar el tamaño del hardware ](hardware-sizing-guidelines.md)
    + [Operaciones de desarrollo empresarial ](enterprise-devops.md)
    + [Recomendaciones para la administración de direcciones URL y SEO ](seo-and-url-management.md)

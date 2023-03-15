@@ -1,7 +1,7 @@
 ---
-title: Función de asignaciones
+title: Función Asignaciones
 seo-title: Assignments Feature
-description: Los miembros de la comunidad con sesión iniciada actualmente pueden acceder a los recursos de habilitación asignados
+description: Los miembros de la comunidad que iniciaron sesión actualmente pueden acceder a los recursos de habilitación asignados
 seo-description: Currently signed-in community members can access assigned enablement resources
 uuid: b71716d2-e882-48dc-90f0-5ecffa8c4a4c
 contentOwner: Guillaume Carlino
@@ -18,16 +18,16 @@ ht-degree: 2%
 
 ---
 
-# Función de asignaciones {#assignments-feature}
+# Función Asignaciones {#assignments-feature}
 
-Las asignaciones de habilitación y [Catálogo de habilitación](/help/communities/catalog.md) los componentes que se encuentran en el grupo Comunidades en el navegador de componentes son componentes de un [comunidad de habilitación](/help/communities/overview.md#enablement-community).
+Las Asignaciones de habilitación y [Catálogo de habilitación](/help/communities/catalog.md) los componentes que se encuentran en el grupo Comunidades del navegador de componentes son componentes de un [comunidad de habilitación](/help/communities/overview.md#enablement-community).
 
-El componente Asignaciones de habilitación permite que el miembro de la comunidad que ha iniciado sesión (alumno) acceda a su asignación [recursos de habilitación](/help/communities/resources.md).
+El componente Asignaciones de habilitación permite que el miembro de la comunidad (alumno) que ha iniciado sesión tenga acceso a las asignaciones asignadas [recursos de habilitación](/help/communities/resources.md).
 
-En el [Introducción a AEM Communities para la activación](/help/communities/getting-started-enablement.md) vea la vista de un miembro de las asignaciones y catálogos en la [Experiencia del sitio publicado](/help/communities/enablement-published-site.md) para obtener más información.
+Desde el [Introducción a AEM Communities para la habilitación](/help/communities/getting-started-enablement.md) tutorial, consulte la vista de un miembro sobre las asignaciones y los catálogos en la [Experimente el sitio publicado](/help/communities/enablement-published-site.md) sección.
 
 ## Información adicional {#additional-information}
 
-Para obtener más información, consulte la [Ascripciones esenciales](/help/communities/essentials-assignments.md) para desarrolladores.
+Para obtener más información, consulte la [Assignments Essentials](/help/communities/essentials-assignments.md) para desarrolladores.
 
-La variable [asignar, función](/help/communities/functions.md#assignments-function) está disponible al crear un [sitio de la comunidad](/help/communities/sites-console.md).
+El [función asignaciones](/help/communities/functions.md#assignments-function) está disponible al crear un [sitio comunitario](/help/communities/sites-console.md).

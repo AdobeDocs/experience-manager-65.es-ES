@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Creación de un grupo de usuarios cerrado{#creating-a-closed-user-group}
 
-Los grupos de usuarios cerrados (CUG) se utilizan para limitar el acceso a páginas específicas que residen dentro de un sitio de Internet publicado. Estas páginas requieren que los miembros asignados inicien sesión y proporcionen credenciales de seguridad.
+Los grupos cerrados de usuarios (CUG) se utilizan para limitar el acceso a páginas específicas que residen en un sitio de Internet publicado. Estas páginas requieren que los miembros asignados inicien sesión y proporcionen credenciales de seguridad.
 
 Para configurar un área de este tipo dentro del sitio web, debe:
 
@@ -28,23 +28,23 @@ Para configurar un área de este tipo dentro del sitio web, debe:
 
 * [aplicar este grupo a las páginas requeridas](#applying-your-closed-user-group-to-content-pages) y seleccione (o cree) la página de inicio de sesión para que la utilicen los miembros del CUG; también se especifica al aplicar un CUG a una página de contenido.
 
-* [crear un vínculo, de cualquier forma, a al menos una página dentro del área protegida](#linking-to-the-cug-pages), de lo contrario no será visible.
+* [crear un vínculo, de algún tipo, al menos a una página dentro del área protegida](#linking-to-the-cug-pages), de lo contrario, no será visible.
 
-* [configuración de Dispatcher](#configure-dispatcher-for-cugs) si está en uso.
+* [configurar Dispatcher](#configure-dispatcher-for-cugs) en uso.
 
 >[!CAUTION]
 >
 >Los grupos de usuarios cerrados (CUG) siempre deben crearse teniendo en cuenta el rendimiento.
 >
->Aunque el número de usuarios y grupos de un CUG no está limitado, un número elevado de CUG en una página puede ralentizar el rendimiento de la renderización.
+>Aunque el número de usuarios y grupos de un CUG no es limitado, un número elevado de CUG en una página puede ralentizar el rendimiento del procesamiento.
 >
->Siempre debe tenerse en cuenta el impacto de los CUG al realizar pruebas de rendimiento.
+>El impacto de los CUG siempre debe tenerse en cuenta al realizar pruebas de rendimiento.
 
-## Creación Del Grupo De Usuarios Que Se Utilizará {#creating-the-user-group-to-be-used}
+## Creación Del Grupo De Usuarios A Utilizar {#creating-the-user-group-to-be-used}
 
 Para crear un grupo de usuarios cerrado:
 
-1. Vaya a **Herramientas - Seguridad** de la pantalla AEM.
+1. Ir a **Herramientas - Seguridad** AEM desde la pantalla de inicio de la.
 
    >[!NOTE]
    >
@@ -52,79 +52,79 @@ Para crear un grupo de usuarios cerrado:
 
 1. Seleccione el **Grupos** de la siguiente pantalla.
 
-   ![captura de pantalla_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
+   ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
 1. Pulse el botón **Crear** en la esquina superior derecha, para crear un nuevo grupo.
-1. Asigne un nombre al nuevo grupo; por ejemplo, `cug_access`.
+1. Asigne un nombre al nuevo grupo. Por ejemplo, `cug_access`.
 
-   ![captura de pantalla_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
+   ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
-1. Vaya a la **Miembros** y asigne a este grupo los usuarios necesarios.
+1. Vaya a la **Miembros** y asigne los usuarios necesarios a este grupo.
 
-   ![captura de pantalla_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
+   ![screenshot_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
 
-1. Active cualquier usuario que haya asignado al CUG; en este caso, todos los miembros de `cug_access`.
-1. Active el grupo de usuarios cerrado para que esté disponible en el entorno de publicación; en este ejemplo, `cug_access`.
+1. Active los usuarios que haya asignado a su CUG; en este caso, todos los miembros de `cug_access`.
+1. Activar el grupo de usuarios cerrado para que esté disponible en el entorno de publicación; en este ejemplo, `cug_access`.
 
 ## Aplicación Del Grupo De Usuarios Cerrado A Las Páginas De Contenido {#applying-your-closed-user-group-to-content-pages}
 
-Para aplicar el CUG a una página o páginas:
+Para aplicar el CUG a una o varias páginas:
 
-1. Navegue a la página raíz de la sección restringida que desee asignar a su CUG.
-1. Seleccione la página haciendo clic en su miniatura y, a continuación, seleccionando **Propiedades** en la barra de herramientas superior.
+1. Navegue hasta la página raíz de la sección restringida que desee asignar al CUG.
+1. Seleccione la página haciendo clic en su miniatura y seleccionando **Propiedades** en la barra de herramientas superior.
 
-   ![captura de pantalla_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
+   ![screenshot_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
 
-1. En la siguiente ventana, abra la **Avanzadas** pestaña .
+1. En la siguiente ventana, abra el **Avanzadas** pestaña.
 
-1. Desplácese hacia abajo hasta el **Requisito de autenticación** para obtener más información.
+1. Desplácese hacia abajo hasta el **Requisito de autenticación** sección.
 
-   1. Active la variable **Habilitar** tickbox.
+   1. Activar el **Activar** tickbox.
 
-   1. Añada la ruta a su **Página de inicio de sesión**.
-Esto es opcional, si se deja en blanco, se utilizará la página de inicio de sesión estándar.
+   1. Añada la ruta a su **Página de inicio**.
+Es opcional; si se deja en blanco, se utilizará la página de inicio de sesión estándar.
 
-   ![CUG agregado](assets/cug-authentication-requirement.png)
+   ![CUG añadido](assets/cug-authentication-requirement.png)
 
-1. A continuación, vaya a la **Permisos** y seleccione **Editar grupo de usuarios cerrado**.
+1. A continuación, vaya a **Permisos** y seleccione **Editar grupo de usuarios cerrado**.
 
-   ![captura de pantalla_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
+   ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
    >[!NOTE]
    >
-   >Los CUG de la ficha Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esto al configurar Live Copy.
+   >Los CUG de la pestaña Permisos no se pueden desplegar en Live Copies desde modelos. Tenga en cuenta esto al configurar Live Copy.
    >
    >Para obtener más información, consulte [esta página](closed-user-groups.md#aem-livecopy).
 
-1. La variable **Editar grupo de usuarios cerrado** se abrirá. Aquí puede buscar y seleccionar su CUG y, a continuación, confirmar la selección del grupo con **Guardar**.
+1. El **Editar grupo de usuarios cerrado** se abrirá. Aquí puede buscar y seleccionar su CUG y confirmar la selección del grupo con **Guardar**.
 
-   El grupo se añadirá a la lista; por ejemplo, el grupo **cug_access**.
+   El grupo se agregará a la lista; por ejemplo, el grupo **cug_access**.
 
-   ![CUG agregado](assets/cug-added.png)
+   ![CUG añadido](assets/cug-added.png)
 
 1. Confirme los cambios con **Guardar y cerrar**.
 
 >[!NOTE]
 >
->Consulte [Identity Management](/help/sites-administering/identity-management.md) para obtener información sobre perfiles en el entorno de publicación y proporcionar formularios para iniciar y cerrar sesión.
+>Consulte [Identity Management](/help/sites-administering/identity-management.md) para obtener información sobre los perfiles en el entorno de publicación y proporcionar formularios para iniciar y cerrar sesión.
 
-## Vinculación A Las Páginas De CUG {#linking-to-the-cug-pages}
+## Vinculación a las páginas de CUG {#linking-to-the-cug-pages}
 
-Dado que el objetivo de cualquier vínculo a las páginas de CUG no es visible para el usuario anónimo, el verificador de enlaces elimina esos enlaces.
+Dado que el usuario anónimo no puede ver el destino de los vínculos a las páginas del CUG, el verificador de vínculos eliminará dichos vínculos.
 
-Para evitarlo, se recomienda crear páginas de redireccionamiento no protegidas que apunten a páginas dentro del área de CUG. Las entradas de navegación se procesan sin causar ningún problema al verificador de enlaces. Solo cuando realmente acceda a la página de redireccionamiento se redirigirá al usuario dentro del área CUG, después de proporcionar correctamente sus credenciales de inicio de sesión.
+Para evitarlo, es aconsejable crear páginas de redireccionamiento no protegidas que apunten a páginas dentro del área de CUG. A continuación, las entradas de navegación se representan sin que el verificador de vínculos tenga problemas. Solo al acceder realmente a la página de redireccionamiento se redirige al usuario dentro del área de CUG, después de proporcionar correctamente sus credenciales de inicio de sesión.
 
-## Configuración de Dispatcher para CUG {#configure-dispatcher-for-cugs}
+## Configurar Dispatcher para CUG {#configure-dispatcher-for-cugs}
 
 Si utiliza Dispatcher, debe definir una granja de Dispatcher con las siguientes propiedades:
 
-* [hosts virtuales](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#identifying-virtual-hosts-virtualhosts): Coincide con la ruta a las páginas a las que se aplica el CUG.
-* \sessionmanagement: consulte a continuación.
-* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache): Un directorio de caché dedicado a los archivos a los que se aplica el CUG.
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#identifying-virtual-hosts-virtualhosts): Coincide con la ruta a las páginas a las que se aplica el CUG.
+* \sessionmanagement: consulte la información siguiente.
+* [escondrijo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache): Un directorio de caché dedicado a los archivos a los que se aplica el CUG.
 
 ### Configuración de la administración de sesiones de Dispatcher para CUG {#configuring-dispatcher-session-management-for-cugs}
 
-Configurar [administración de sesiones en el archivo dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) para el CUG. El controlador de autenticación que se utiliza cuando se solicita el acceso a las páginas CUG determina cómo se configura la administración de sesiones.
+Configurar [administración de sesiones en el archivo dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) para el CUG. El controlador de autenticación que se utiliza cuando se solicita acceso para páginas de CUG determina cómo se configura la administración de sesiones.
 
 ```xml
 /sessionmanagement
@@ -135,10 +135,10 @@ Configurar [administración de sesiones en el archivo dispatcher.any](https://ex
 
 >[!NOTE]
 >
->Cuando una granja de Dispatcher tiene habilitada la administración de sesiones, todas las páginas que gestiona la granja no se almacenan en caché. Para almacenar en caché las páginas que están fuera del CUG, cree una segunda granja en dispatcher.any
+>Cuando una granja de Dispatcher tiene habilitada la administración de sesiones, todas las páginas que administra la granja no se almacenan en caché. Para almacenar en caché las páginas que están fuera de CUG, cree una segunda granja en dispatcher.any
 >que gestiona las páginas que no son de CUG.
 
-1. Configurar [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) definiendo `/directory`; por ejemplo:
+1. Configurar [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) al definir `/directory`; por ejemplo:
 
    ```xml
    /sessionmanagement
@@ -148,4 +148,4 @@ Configurar [administración de sesiones en el archivo dispatcher.any](https://ex
      }
    ```
 
-1. Establezca [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-when-authentication-is-used) a `0`.
+1. Establecer [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-when-authentication-is-used) hasta `0`.

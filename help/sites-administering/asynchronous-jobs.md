@@ -145,7 +145,7 @@ Si el número de referencias a las páginas que se van a mover supera el número
 >* [Crear y organizar páginas](/help/sites-authoring/managing-pages.md)
 >* [Creación y sincronización de Live Copies](/help/sites-administering/msm-livecopy.md)
 >* [Configuración del correo electrónico en el Experience Manager](/help/sites-administering/notification.md).
->* [Importación de metadatos de recursos](/help/assets/metadata.md#import-metadata).
+>* [Importar metadatos de recursos](/help/assets/metadata.md#import-metadata).
 >* [Exportar metadatos de recursos](/help/assets/metadata.md#export-metadata).
 >* [Utilice Recursos conectados para compartir recursos DAM desde implementaciones remotas](/help/assets/use-assets-across-connected-assets-instances.md).
 

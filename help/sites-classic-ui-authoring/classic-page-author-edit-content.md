@@ -295,7 +295,7 @@ Puede usar los comandos Deshacer y Rehacer para los siguientes tipos de cambios 
 * Agregar, editar, quitar y mover párrafos
 * Editar contenido de párrafos en el lugar
 * Copiar, cortar y pegar elementos en una página
-* Copiar, cortar y pegar elementos entre páginas
+* Copiar, cortar y pegar elementos en las páginas
 * Agregar, quitar y cambiar archivos e imágenes
 * Agregar, quitar, y cambiar anotaciones y bocetos
 * Cambios a Scaffold

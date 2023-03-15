@@ -33,7 +33,7 @@ Para promocionar páginas, realice los pasos siguientes al editar la página de 
 1. En la ficha **Página** de la barra de tareas, haga clic en **Promocionar lanzamiento**.
 1. Especifique las páginas que desee promocionar:
 
-   * (Predeterminado) Para promocionar solo la página actual, seleccione **Promocionar Cambios De Página A La Versión De Producción**.
+   * (Predeterminado) Para promocionar solo la página actual, seleccione **Promocionar Cambios De Página En La Versión De Producción**.
    * Para promocionar también las páginas secundarias de la página actual, seleccione **Incluir páginas secundarias**.
    * Para promocionar todas las páginas del lanzamiento, seleccione **Promocionar lanzamiento completo en la versión de producción**.
 

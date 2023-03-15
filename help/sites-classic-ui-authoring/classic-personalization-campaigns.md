@@ -27,7 +27,7 @@ Este documento describe los elementos diversos que componen las campañas. Tiene
 
 * [Teasers y estrategias](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
 * [Marketing por correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
-* [Páginas de aterrizaje](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
+* [Páginas de destino](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Ofertas de Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
 * [Trabajo con Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
 * [Información acerca de la segmentación](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
@@ -36,7 +36,7 @@ Este documento describe los elementos diversos que componen las campañas. Tiene
 La administración de campañas consta de varios elementos:
 
 * **Marcas**
-En AEM, las marcas son la unidad de nivel superior y forman una colección de 
+AEM En la práctica, las marcas son la unidad de nivel superior y forman una colección de 
 **Campañas**.
 
 * **Campañas**
@@ -45,7 +45,7 @@ Una campaña es una colección de individuos
 
 * **Experiencias**
 El contenido centrado forma las distintas experiencias, presentadas al visitante en 
-**Touchpoints**. Existen varios tipos de experiencia:
+**Puntos de contacto**. Existen varios tipos de experiencia:
 
    * **Teasers**
       [Las páginas o los párrafos de teaser](#teasers) se utilizan para dirigir **Segmentos** de visitantes específicos a contenido centrado en sus intereses.
@@ -66,7 +66,7 @@ El contenido centrado forma las distintas experiencias, presentadas al visitante
       Permite la integración con Adobe Target (antes conocido como Test&amp;Target), lo que proporciona a los especialistas en marketing una herramienta de optimización de sitio web de conversión con las capacidades necesarias para que las ofertas y el contenido en línea sigan siendo relevantes para los clientes, lo que resulta en más conversiones. Adobe Target ofrece una interfaz intuitiva para diseñar y ejecutar pruebas, crear segmentos de audiencia y contenido de segmentación, todo ello desde una sola aplicación.
 
 
-* **Touchpoints**
+* **Puntos de contacto**
 
    Son puntos de contacto entre el visitante y la campaña. Los touchpoints están conectados con las experiencias creadas.
 

@@ -1,7 +1,7 @@
 ---
-title: Precauciones del código
+title: Peligros de código
 seo-title: Code pitfalls
-description: Problemas comunes de codificación que se evitan al desarrollar para AEM
+description: AEM Peligros comunes de codificación que se deben evitar al desarrollar para la
 seo-description: Common coding pitfalls to avoid when developing for AEM
 uuid: e7413bdc-4889-45ff-bdcb-b0893d33a3b7
 contentOwner: User
@@ -17,16 +17,16 @@ ht-degree: 0%
 
 ---
 
-# Precauciones del código{#code-pitfalls}
+# Peligros de código{#code-pitfalls}
 
-## Evitar enlaces de Sling en código Java {#avoid-sling-bindings-in-java-code}
+## Evite los enlaces de Sling en el código Java {#avoid-sling-bindings-in-java-code}
 
-Los enlaces de Sling son una manera inapropiada de obtener acceso a un servicio en el 90% de los casos. En su lugar, debe usar *@Reference* o *@Inject* anotaciones.
+Los enlaces de Sling son una forma inadecuada de obtener acceso a un servicio en el 90 % de los casos. En su lugar, debe utilizar *@Reference* o *@Inject* anotaciones.
 
-## Evitar Thread.interrupt en el código Java {#avoid-thread-interrupt-in-java-code}
+## Evite Thread.interrupt en el código Java {#avoid-thread-interrupt-in-java-code}
 
-*Thread.interrupt* es peligroso porque puede cerrar archivos, incluidos archivos Lucene y archivos de caché persistentes, cuando se los llama en el momento incorrecto.
+*Thread.interrupt* es peligroso porque puede cerrar archivos, incluidos archivos Lucene y archivos de caché persistentes, cuando se llama en el momento incorrecto.
 
 ## Evite mezclar la sincronización de Java con ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
 
-Esto puede llevar a una condición de carrera en la que el código eventualmente se bloqueará.
+Esto puede provocar una condición de carrera en la que el código se interbloqueará finalmente.

@@ -1,7 +1,7 @@
 ---
-title: Reestructuración de repositorios en AEM 6.5
+title: AEM Reestructuración de repositorios en 6.5
 seo-title: Repository Restructuring in AEM 6.5
-description: Obtenga información sobre los conceptos básicos y el razonamiento detrás de la reestructuración de repositorios en AEM 6.5
+description: AEM Obtenga información acerca de los conceptos básicos y el razonamiento detrás de la reestructuración de repositorios en.5
 seo-description: Learn about the basics and reasoning behind the repository restructuring in AEM 6.5
 uuid: e9cd3e88-e352-44a8-9b97-69488d3267cb
 contentOwner: chaikels
@@ -18,38 +18,38 @@ ht-degree: 0%
 
 ---
 
-# Reestructuración de repositorios en AEM 6.5{#repository-restructuring-in-aem}
+# AEM Reestructuración de repositorios en 6.5{#repository-restructuring-in-aem}
 
 ## Introducción {#introduction}
 
-Antes de AEM 6.4, el código de cliente se implementaba en áreas impredecibles del JCR que estaban sujetas a cambios en las actualizaciones. Debido a esto, era común que las versiones formales de AEM sobrescribieran el código, la configuración o el contenido personalizados. Además, a veces los cambios de los clientes se sobrescriben AEM código de producto o contenido, lo que rompe la funcionalidad del producto.
+AEM Antes de la versión 6.4 de, el código de cliente se implementaba en áreas impredecibles del JCR que estaban sujetas a cambios en las actualizaciones. AEM Debido a esto, era común que las versiones formales de la sobrescribieran código, configuración o contenido personalizados. AEM Además, los cambios del cliente a veces sobrescribían el código o el contenido del producto, lo que rompe la funcionalidad del producto.
 
-Si se delinean claramente las jerarquías para AEM código de producto y código de cliente, estos conflictos se pueden evitar.
+AEM Al delinear claramente las jerarquías para el código de producto y el código de cliente, se pueden evitar estos conflictos.
 
-Con este fin, a partir del AEM 6.4 y que continuará en futuras versiones, el contenido se está reestructurando fuera de /etc a otras carpetas del repositorio, junto con directrices sobre qué contenido va a dónde, siguiendo las siguientes reglas de alto nivel:
+AEM Con este fin, a partir de la versión 6.4 de la versión 6.4 y para continuar en futuras versiones, el contenido se está reestructurando fuera de /etc a otras carpetas del repositorio, junto con directrices sobre qué contenido va a dónde, siguiendo las siguientes reglas de alto nivel:
 
-* AEM código de producto siempre se colocará en /libs, que no debe sobrescribirse con código personalizado
+* AEM El código de producto siempre se colocará en /libs, que no se debe sobrescribir con el código personalizado
 * El código personalizado debe colocarse en /apps, /content y /conf
 
-## Impacto en las actualizaciones de la versión 6.5 {#impact-on-upgrades}
+## Impacto en las actualizaciones de 6.5 {#impact-on-upgrades}
 
-Al actualizar a AEM 6.5, un gran subconjunto del contenido bajo /etc se duplica en otras carpetas del repositorio. Estas nuevas ubicaciones son las ubicaciones preferidas en las que se hace referencia al contenido. Sin embargo, se ha hecho todo lo posible para que la actualización AEM 6.5 sea compatible con las ubicaciones anteriores en la carpeta /etc y, por lo tanto, en la mayoría de los casos, el código AEM seguirá haciendo referencia a las ubicaciones antiguas hasta que los cambios se realicen de forma activa (y, en muchos casos, manual) en la aplicación de un cliente. Desde la perspectiva de la cronología, existen dos categorías de cambios:
+AEM Al actualizar a la versión 6.5, un gran subconjunto del contenido en /etc se duplica en otras carpetas del repositorio. Estas nuevas ubicaciones son las ubicaciones preferidas en las que se hace referencia al contenido. AEM AEM Sin embargo, se ha hecho todo lo posible para que la actualización de la versión 6.5 de la aplicación sea compatible con las ubicaciones anteriores de la carpeta /etc y, por lo tanto, en la mayoría de los casos se seguirá haciendo referencia a las ubicaciones antiguas mediante código hasta que se realicen cambios activos, y en muchos casos manuales, en la aplicación de un cliente. Desde una perspectiva de cronología, hay dos categorías de cambios:
 
-* Con la actualización a la versión 6.5: algunos de los cambios de reestructuración /etc no son compatibles con versiones anteriores, por lo que las modificaciones deben planificarse e implementarse como parte de la actualización a la versión AEM 6.5.
-* Antes de una actualización futura: la gran mayoría de los cambios de reestructuración /etc se pueden aplazar hasta algún momento en el futuro posterior a la actualización. Como se mencionó anteriormente, AEM código 6.5 seguirá haciendo referencia a las ubicaciones antiguas hasta que las modificaciones se implementen como parte de una versión para clientes. Aunque no hay un calendario forzado para los cambios que se deben realizar, se recomienda que se realicen antes de la futura actualización, ya que las funciones futuras pueden depender de las nuevas ubicaciones a las que se hace referencia. Además, la documentación de una función determinada hará referencia por convención a las nuevas ubicaciones y, por lo tanto, podría resultar confuso si las ubicaciones antiguas siguen utilizándose.
+* AEM Con la actualización a 6.5: algunos de los cambios de reestructuración /etc no son compatibles con versiones anteriores y, por lo tanto, las modificaciones deben planificarse e implementarse como parte de la actualización a 6.5 de.
+* Antes de una actualización futura: la gran mayoría de los cambios de reestructuración /etc se pueden aplazar hasta algún momento posterior a la actualización. AEM Como se ha mencionado anteriormente, el código de la versión 6.5 de seguirá haciendo referencia a las ubicaciones antiguas hasta que las modificaciones se implementen como parte de una versión del cliente. Aunque no hay una cronología forzada para la cual se deban realizar los cambios, se recomienda que se realicen antes de la actualización futura, ya que las funciones futuras pueden depender de las nuevas ubicaciones a las que se hace referencia. Además, la documentación de una función determinada hará referencia por convención a las nuevas ubicaciones y, por lo tanto, podría resultar confuso si se siguen utilizando las ubicaciones antiguas.
 
-### Guía de reestructuración {#restructuring-guidance}
+### Directrices de reestructuración {#restructuring-guidance}
 
-Al planificar una actualización a AEM 6.5, se debe hacer referencia a las siguientes páginas por solución para evaluar el esfuerzo de trabajo:
+AEM Al planificar la actualización a la versión 6.5 de la versión, se debe hacer referencia a las siguientes páginas por solución para evaluar el esfuerzo de trabajo:
 
-* [Reestructuración de repositorios común a todas las soluciones AEM](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
-* [Reestructuración de repositorios de AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)
-* [Reestructuración de repositorios de AEM Assets](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
-* [Reestructuración de repositorios de AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
-* [Reestructuración de repositorios de AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
-* [Reestructuración de repositorios de AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
-* [Reestructuración del repositorio de AEM Commerce](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
+* [AEM Reestructuración de repositorios común a todas las soluciones de la](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
+* [Reestructuración del repositorio de AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)
+* [Reestructuración del repositorio de AEM Assets](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
+* [Reestructuración del repositorio de AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
+* [Reestructuración del repositorio de AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
+* [Reestructuración del repositorio de AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
+* [AEM Reestructuración del repositorio de Commerce](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
 
-Cada página contiene dos secciones que corresponden a la urgencia de los cambios necesarios. Cualquier cosa en la sección &quot;Con actualización a la versión 6.5&quot; debe abordarse como parte del proyecto de actualización a la versión AEM 6.5. Cualquier cosa en &quot;Antes de una actualización futura&quot; se puede aplazar opcionalmente hasta después de la actualización.
+Cada página contiene dos secciones que corresponden a la urgencia de los cambios necesarios. AEM Cualquier elemento de la sección &quot;Con actualización de 6.5&quot; debe abordarse como parte del proyecto de actualización de 6.5 de. Todo lo que se encuentre bajo la sección &quot;Antes de una actualización futura&quot; se puede diferir opcionalmente hasta después de la actualización.
 
-Cada entrada de la página incluye un campo &quot;Guía de reestructuración&quot;, que detalla la estrategia técnica recomendada para alinearse con el nuevo modelo de repositorio 6.5, de modo que se haga referencia a las nuevas ubicaciones para el contenido que anteriormente estaba en la carpeta /etc. Un campo adicional &quot;Notas&quot; proporciona cualquier contexto útil adicional.
+Cada entrada en la página incluye un campo &quot;Directrices de reestructuración&quot;, que detalla la estrategia técnica recomendada para alinearse con el nuevo modelo de repositorio de 6.5, de modo que se haga referencia a las nuevas ubicaciones para el contenido que anteriormente se encontraba en la carpeta /etc. Un campo adicional &quot;Notas&quot; proporciona cualquier contexto útil adicional.

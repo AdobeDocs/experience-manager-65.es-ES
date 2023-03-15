@@ -1,7 +1,7 @@
 ---
 title: Creación de asignaciones de formularios personalizados
 seo-title: Creating Custom Form Mappings
-description: Cuando cree una tabla personalizada en Adobe Campaign, puede que desee crear un formulario en AEM que se asigne a esa tabla personalizada
+description: Al crear una tabla personalizada en Adobe Campaign AEM, es posible que desee crear un formulario en que se asigne a esa tabla personalizada en la que se cree una tabla personalizada.
 seo-description: When you create a custom table in Adobe Campaign, you may want to build a form in AEM that maps to that custom table
 uuid: f3bde513-6edb-4eb6-9048-40045ee08c4a
 contentOwner: User
@@ -19,9 +19,9 @@ ht-degree: 3%
 
 # Creación de asignaciones de formularios personalizados{#creating-custom-form-mappings}
 
-Cuando cree una tabla personalizada en Adobe Campaign, puede que desee crear un formulario en AEM que se asigne a esa tabla personalizada.
+Al crear una tabla personalizada en Adobe Campaign AEM, es posible que desee crear un formulario en que se asigne a esa tabla personalizada.
 
-Este documento describe cómo crear asignaciones de formulario personalizadas. Cuando complete los pasos de este documento, proporcionará a los usuarios una página de evento en la que podrán registrarse para un evento próximo. A continuación, realice un seguimiento de estos usuarios a través de Adobe Campaign.
+Este documento describe cómo crear asignaciones de formularios personalizadas. Cuando complete los pasos de este documento, proporcionará a los usuarios una página de evento en la que podrán registrarse en un evento próximo. A continuación, puede realizar un seguimiento con estos usuarios a través de Adobe Campaign.
 
 ## Requisitos previos {#prerequisites}
 
@@ -30,17 +30,17 @@ Debe tener instalado lo siguiente:
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-Consulte [Integración de AEM con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) para obtener más información.
+Consulte [AEM Integración de los usuarios de con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) para obtener más información.
 
 ## Creación de asignaciones de formularios personalizados {#creating-custom-form-mappings-2}
 
-Para crear asignaciones de formulario personalizadas, debe seguir estos pasos de alto nivel, que se describen detalladamente en las siguientes secciones:
+Para crear asignaciones de formularios personalizadas, debe seguir estos pasos de alto nivel, que se describen en detalle en las secciones siguientes:
 
 1. Cree una tabla personalizada.
-1. Amplíe el **seed** tabla.
+1. Ampliación de la **semilla** tabla.
 1. Cree una asignación personalizada.
-1. Cree un envío basado en la asignación personalizada.
-1. Cree el formulario en AEM, que utilizará la entrega creada.
+1. Cree una entrega basado en la asignación personalizada.
+1. AEM Genere el formulario en, que utilizará la entrega creada en el momento de la entrega.
 1. Envíe el formulario para probarlo.
 
 ### Creación de la tabla personalizada en Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
@@ -60,11 +60,11 @@ Después de crear la tabla de eventos, ejecute el **Actualizar asistente de estr
 
 ### Ampliación de la tabla semilla {#extending-the-seed-table}
 
-En Adobe Campaign, toque o haga clic en **Agregar** para crear una nueva extensión de **Direcciones semilla (nms)** tabla.
+En Adobe Campaign, pulse o haga clic en **Añadir** para crear una nueva extensión de **Direcciones semilla (nms)** tabla.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Ahora, utilice los campos de la **evento** para ampliar el **seed** tabla:
+Ahora, utilice los campos del **evento** tabla para ampliar el **semilla** tabla:
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -77,9 +77,9 @@ Ahora, utilice los campos de la **evento** para ampliar el **seed** tabla:
 
 Después de esto, ejecute **Actualizar asistente de base de datos** para aplicar los cambios.
 
-### Creación de una asignación de destino personalizada {#creating-custom-target-mapping}
+### Creación de asignaciones de destino personalizadas {#creating-custom-target-mapping}
 
-En **Administración/Administración de campañas** t, vaya a **Asignaciones de Target** y añada una nueva T **Asignación de objetivos.**
+Entrada **Administración/Administración de campañas** t, vaya a **Asignaciones de destino** y agregue una nueva **Asignación de destino.**
 
 >[!NOTE]
 >
@@ -89,17 +89,17 @@ En **Administración/Administración de campañas** t, vaya a **Asignaciones de 
 
 ### Creación de una plantilla de envíos personalizada {#creating-a-custom-delivery-template}
 
-En este paso, está agregando una plantilla de envío que utiliza el **Asignación de destino**.
+En este paso, se añade una plantilla de envío que utiliza el **Asignación de destino**.
 
-En **Recursos/Plantillas**, vaya a la plantilla Entrega y duplique la entrega de AEM existente. Al hacer clic en **Hasta**, seleccione el evento crear **Asignación de destino**.
+Entrada **Recursos/Plantillas** AEM , vaya a la plantilla de envío y duplique la entrega de la aplicación existente en el mercado de trabajo Al hacer clic en **Hasta**, seleccione el evento create **Asignación de destino**.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-### Creación del formulario en AEM {#building-the-form-in-aem}
+### AEM Creación del formulario en la {#building-the-form-in-aem}
 
-En AEM, asegúrese de haber configurado un Cloud Service en **Propiedades de página**.
+AEM En, asegúrese de que ha configurado un Cloud Service en **Propiedades de página**.
 
-A continuación, en la variable **Adobe Campaign** , seleccione la entrega creada en [Creación de una plantilla de envíos personalizada](#creating-a-custom-delivery-template).
+A continuación, en la **Adobe Campaign** pestaña, seleccione la entrega que se creó en [Creación de una plantilla de envíos personalizada](#creating-a-custom-delivery-template).
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -107,24 +107,24 @@ Al configurar los campos, asegúrese de especificar nombres de elemento únicos 
 
 Una vez configurados los campos, debe cambiar manualmente la asignación.
 
-En CRXDE-lite, vaya a la **jcr:content** (de la página) y cambie el **acMapping** al nombre interno del **Asignación de destino**.
+En CRXDE-lite, vaya a **jcr:contenido** (de la página) y cambie el **acMapping** al nombre interno de la variable **Asignación de destino**.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-En la configuración del formulario, asegúrese de marcar la casilla de verificación para crear si no existe
+En la configuración del formulario, asegúrese de marcar la casilla para crear si no existe
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
-### Envío del formulario {#submitting-the-form}
+### Enviar el formulario {#submitting-the-form}
 
-Ahora puede enviar el formulario y validar en Adobe Campaign si los valores se guardan.
+Ahora puede enviar el formulario y validar en Adobe Campaign si los valores se han guardado.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 ## Solución de problemas {#troubleshooting}
 
-**&quot;Tipo no válido para el valor &#39;02/02/2015&#39; del elemento &#39;@eventdate&#39; (documento de tipo &#39;Event ([adb:event])&#39;)&quot;**
+**&quot;Tipo no válido para el valor &#39;02/02/2015&#39; del elemento &#39;@eventdate&#39; (documento de tipo &#39;Event ([adb:evento])&#39;)&quot;**
 
-Al enviar el formulario, este error se registra en la **error.log** en AEM.
+Al enviar el formulario, este error se registra en **error.log** AEM en la.
 
-Esto se debe a que el formato del campo de fecha no es válido. La solución es suministrar **aaaa-mm-dd** como valor.
+Esto se debe a un formato no válido para el campo de fecha. La solución es proporcionar **aaaa-mm-dd** como el valor.

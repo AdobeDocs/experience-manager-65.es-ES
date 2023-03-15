@@ -21,10 +21,10 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->Adobe no tiene previsto mejorar aún más esta capacidad (Administración de posibles clientes y listas).
->La recomendación es aprovechar [Adobe Campaign y su integración AEM](/help/sites-administering/campaign.md).
+>El Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes y listas).
+>La recomendación es aprovechar [Adobe Campaign AEM y su integración con la](/help/sites-administering/campaign.md).
 
-Se puede solicitar a los usuarios que se suscriban a **del proveedor de servicios de correo electrónico** listas de correo con la ayuda de **Formulario** componente utilizado en una página web AEM. Para preparar una página de AEM con un componente de formulario de registro configurado para la suscripción a las listas de correo del servicio de correo electrónico, deberá aplicar la configuración de servicio correspondiente a la página de AEM que visitará el posible suscriptor.
+Se puede pedir a los usuarios que se suscriban a **Proveedor de servicio de correo electrónico** listas de correo con la ayuda de **Form** AEM Componente utilizado en una página web de. Para preparar una página de AEM con un componente de formulario de registro configurado para la suscripción a las listas de correo del servicio de correo electrónico, deberá aplicar la configuración de servicio correspondiente a la página de AEM que visitará el posible suscriptor.
 
 ## Aplicar la configuración del servicio de correo electrónico a una página {#applying-email-service-configuration-to-a-page}
 
@@ -33,7 +33,7 @@ Para configurar una página de AEM:
 1. Desplácese a la ficha **Sitios web**.
 1. Seleccione la página que debe configurarse para el servicio. Haga clic con el botón derecho en la página y seleccione **Propiedades**.
 
-1. Select **Cloud Services** then **Añadir servicio**. Seleccione una configuración de la lista de configuraciones disponibles.
+1. Seleccionar **Cloud Services** entonces **Añadir servicio**. Seleccione una configuración de la lista de configuraciones disponibles.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -47,12 +47,12 @@ Para crear un formulario de registro y configurarlo para las suscripciones a las
 1. Aplique la configuración del proveedor de servicio de correo electrónico a la página.
 
 1. Añada el componente **Formulario** a la página arrastrándolo desde la barra de tareas. Si el componente no estuviera disponible, cambie al modo de diseño y habilite el grupo **Formularios**.
-1. Haga clic en **Editar** en el **Inicio de formulario** y vaya a **Avanzadas** pestaña .
-1. En el **Formulario** menú desplegable, seleccione **Servicio de correo electrónico: Crear suscriptor** y añadir a la lista.
-1. En la parte inferior del cuadro de diálogo, abra la **Configuración de la acción** , que le permite seleccionar una o varias listas de suscripción.
+1. Clic **Editar** en el **Inicio de formulario** y vaya a la **Avanzadas** pestaña.
+1. En el **Form** menú desplegable, seleccione **Servicio de correo electrónico: crear suscriptor** y añadir a la lista.
+1. En la parte inferior del cuadro de diálogo, abra el **Configuración de acción** , que le permite seleccionar una o más listas de suscripción.
 1. En la lista **Selección**, seleccione la lista a la que quiere que se suscriban los usuarios. Puede añadir varias listas; para ello, utilice el botón del signo más (+) (**Añadir elemento**).
 
-   ![imagen_1-10](assets/chlimage_1-10.jpeg)
+   ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
    >[!NOTE]
    >
@@ -72,7 +72,7 @@ Para crear un formulario de registro y configurarlo para las suscripciones a las
 Para la que suscripción y la cancelación de suscripciones del servicio de correo electrónico funcionen mediante el formulario de registro en la instancia de publicación, deberá realizar los pasos siguientes:
 
 1. En la instancia de creación, desplácese al Administrador de paquetes.
-1. Cree un paquete nuevo. Establezca el filtro como `/etc/key`.
+1. Cree un paquete nuevo. Definir el filtro como `/etc/key`.
 1. Cree y descargue el paquete.
 1. Desplácese al Administrador de paquetes en la instancia de publicación y cargue este paquete.
 1. Desplácese a la consola OSGi de publicación y reinicie el paquete denominado **Adobe Granite Crypto Support**.
@@ -84,10 +84,10 @@ Para cancelar la suscripción de usuarios de las listas:
 1. Abra las propiedades de página de la página de AEM que contenga el formulario de registro para cancelar la suscripción de un posible cliente.
 1. Aplique la configuración de servicio a la página.
 1. Cree un formulario de registro en la página.
-1. Al configurar el componente, seleccione la acción **Servicio de correo electrónico**: **Cancele la suscripción del usuario a la lista.**
+1. Al configurar el componente, seleccione la acción **Servicio de correo electrónico**: **Cancelar la suscripción del usuario a la lista.**
 1. Desde el menú desplegable, seleccione la lista apropiada de la que debe eliminarse el usuario al cancelar la suscripción.
 
-   ![imagen_1-11](assets/chlimage_1-11.jpeg)
+   ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
 1. Exporte las claves de creación a la publicación.
 
@@ -95,18 +95,18 @@ Para cancelar la suscripción de usuarios de las listas:
 
 Para configurar un correo electrónico de respuesta automática para un suscriptor:
 
-1. Abra las propiedades de página de la página AEM que contenga el formulario de registro para configurar el respondedor automático de un posible cliente.
+1. AEM Abra las propiedades de la página de la página de la página de la que tenga el formulario de registro para configurar el respondedor automático de un posible cliente.
 1. Aplique la configuración de ExactTarget a la página.
 
 1. Añada el componente **Formulario** a la página arrastrándolo desde la barra de tareas. Si el componente no estuviera disponible, cambie al modo de diseño y habilite el grupo **Formularios**.
-1. Haga clic en **Editar** en el **Inicio de formulario** y vaya a **Avanzadas** pestaña .
-1. En el **Formulario** menú desplegable, seleccione **Servicio de correo electrónico: Enviar correo electrónico de respuesta automática.**
-1. **Seleccionar un correo electrónico** (es el correo que se envía como correo electrónico de respuesta automática).
+1. Clic **Editar** en el **Inicio de formulario** y vaya a la **Avanzadas** pestaña.
+1. En el **Form** menú desplegable, seleccione **Servicio de correo electrónico: enviar correo electrónico de respuesta automática.**
+1. **Seleccionar un correo electrónico** (este es el correo electrónico que se envía como correo electrónico de respuesta automática).
 
 1. **Seleccionar clasificación** (esta clasificación se utiliza para enviar el correo electrónico).
-1. Seleccione el **Gracias** (la página a la que se dirige a los usuarios una vez que envían el formulario).
+1. Seleccione el **Gracias.** página (la página a la que se dirige a los usuarios una vez que envían el formulario).
 
-   En el **Formulario** , seleccione la página de agradecimiento a la que desea que se dirijan los usuarios después de enviar el formulario. (Si se deja en blanco, el formulario se vuelve a mostrar tras el envío). Haga clic en **Aceptar**.
+   En el **Form** , seleccione la página de agradecimiento a la que desee que vayan los usuarios después de enviar el formulario. (Si se deja en blanco, el formulario se vuelve a mostrar tras el envío). Haga clic en **Aceptar**.
 
 1. Exporte las claves de creación a la publicación.
 1. Añada el componente de botón **Enviar** de la sección **Formulario** de la barra de tareas.
@@ -117,4 +117,4 @@ Para configurar un correo electrónico de respuesta automática para un suscript
    >
    >Para que la suscripción del formulario de registro funcione correctamente, [deben exportarse las claves de cifrado del autor e importarse en la instancia de publicación](#exporting-keys-from-author-and-importing-on-publish).
 
-   ![imagen_1-12](assets/chlimage_1-12.jpeg)
+   ![chlimage_1-12](assets/chlimage_1-12.jpeg)

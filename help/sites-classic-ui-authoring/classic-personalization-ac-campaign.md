@@ -36,7 +36,7 @@ A continuación, el contenido se puede sincronizar con un envío en Adobe Campai
 
 Después de configurar AEM y Adobe Campaign, puede crear contenido de envío de correo electrónico directamente en AEM y, a continuación, procesarlo en Adobe Campaign.
 
-Al crear contenido de Adobe Campaign en AEM, debe vincular a un servicio de Adobe Campaign antes de editar el contenido para acceder a todas las funciones.
+Al crear contenido de Adobe Campaign AEM en la, debe vincular a un servicio de Adobe Campaign antes de editar el contenido para acceder a todas las funcionalidades.
 
 Existen dos casos posibles:
 
@@ -49,9 +49,9 @@ Las instrucciones detalladas se describen en este documento.
 
 >[!NOTE]
 >
->Al añadir plantillas de correo electrónico, asegúrese de agregarlas en **/content/igns** para que estén disponibles.
+>Al añadir plantillas de correo electrónico, asegúrese de añadirlas en **/content/campaigns** para que estén disponibles.
 
-1. En AEM, seleccione la opción **Sitios web** a continuación, examine el explorador para encontrar dónde se administran las campañas de correo electrónico. En el ejemplo siguiente, el nodo correspondiente es **Sitios web** > **Campañas** > **Geometrixx Outdoors** > **Campañas de correo electrónico**.
+1. AEM En, seleccione la opción **Sitios web** a continuación, examine el explorador para encontrar dónde se administran las campañas de correo electrónico. En el ejemplo siguiente, el nodo correspondiente es **Sitios web** > **Campañas** > **Geometrixx Outdoors** > **Campañas de correo electrónico**.
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ Las instrucciones detalladas se describen en este documento.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-1. Select **Nuevo** > **Nueva página** para crear contenido de correo electrónico nuevo.
+1. Seleccionar **Nuevo** > **Nueva página** para crear contenido de correo electrónico nuevo.
 1. Seleccione una de las plantillas disponibles específicas de Adobe Campaign y rellene las propiedades generales de la página. De forma predeterminada, están disponibles tres plantillas:
 
    * **Correo electrónico de Adobe Campaign (AC 6.1)**: permite añadir contenido a una plantilla predefinida antes de enviarlo a Adobe Campaign 6.1 para su envío.
@@ -67,7 +67,7 @@ Las instrucciones detalladas se describen en este documento.
 
    ![chlimage_1-173](assets/chlimage_1-173.png)
 
-1. Haga clic en **Crear** para crear su correo electrónico o newsletter.
+1. Clic **Crear** para crear el correo electrónico o la newsletter.
 
 ### Selección del servicio de nube y de la plantilla de Adobe Campaign {#selecting-the-adobe-campaign-cloud-service-and-template}
 
@@ -76,27 +76,27 @@ Para integrar con Adobe Campaign, debe añadir un servicio de nube de Adobe Camp
 Además, puede que deba seleccionar la plantilla de Adobe Campaign, cambiar el asunto y añadir contenido con texto sin formato para aquellos usuarios que no puedan ver el correo electrónico en HTML.
 
 1. Seleccione el **Página** en la barra de tareas y, a continuación, seleccione **Propiedades de página.**
-1. En el **Servicios de nube** en la ventana emergente, seleccione **Añadir servicio** para añadir el servicio Adobe Campaign y haga clic en **OK**.
+1. En el **Cloud Services** en la ventana emergente, seleccione **Añadir servicio** para añadir el servicio Adobe Campaign, haga clic en **OK**.
 
    ![chlimage_1-174](assets/chlimage_1-174.png)
 
-1. Seleccione la configuración que coincida con su instancia de Adobe Campaign en la lista desplegable y haga clic en **OK**.
+1. Seleccione la configuración que coincida con la instancia de Adobe Campaign en la lista desplegable y haga clic en **OK**.
 
    >[!NOTE]
    >
    >Asegúrese de tocar o de hacer clic en **OK** o **Aplicar** después de añadir el servicio de nube. Esto permite que la pestaña **Adobe Campaign** funcione correctamente.
 
-1. Si desea aplicar una plantilla de envío de correo electrónico específica (de Adobe Campaign) distinta de la predeterminada **correo** plantilla, seleccione **Propiedades de página** de nuevo. En el **Adobe Campaign** , introduzca el nombre interno de la plantilla de envío de correo electrónico en la instancia de Adobe Campaign relacionada.
+1. Si desea aplicar una plantilla de envíos de correo electrónico específica (de Adobe Campaign), distinta de la predeterminada **correo** plantilla, seleccione **Propiedades de página** otra vez. En el **Adobe Campaign** pestaña, introduzca el nombre interno de la plantilla de envíos de correo electrónico en la instancia de Adobe Campaign relacionada.
 
    En Adobe Campaign Standard, la plantilla es **Envío con contenido de AEM**. En Adobe Campaign 6.1, la plantilla es **Envío de correo electrónico con contenido de AEM**.
 
-   Al seleccionar la plantilla, AEM activa automáticamente la variable **Newsletter de Adobe Campaign** componentes.
+   AEM Al seleccionar la plantilla, se activa automáticamente la opción de configuración de la plantilla de **Newsletter de Adobe Campaign** componentes.
 
 ### Edición del contenido de correo electrónico {#editing-email-content}
 
 Puede editar el contenido de correo electrónico en la interfaz de usuario clásica o en la interfaz de usuario táctil.
 
-1. Introduzca el asunto y la versión de texto del correo electrónico seleccionando **Propiedades de página** > **Correo electrónico** del cuadro de herramientas.
+1. Introduzca el asunto y la versión de texto del correo electrónico seleccionando **Propiedades de página** > **Correo electrónico** de la caja de herramientas.
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -114,15 +114,15 @@ Puede editar el contenido de correo electrónico en la interfaz de usuario clás
 
 Al editar el contenido, puede insertar:
 
-* Campos de contexto de Adobe Campaign. Son campos que puede insertar en el texto y que se adaptarán según los datos del destinatario (por ejemplo, nombre, apellido o cualquier dato de la dimensión de destino).
-* Bloques de personalización de Adobe Campaign. Son bloques de contenido predefinido que no están relacionados con los datos del destinatario, como un logotipo de marca o un vínculo a una página espejo.
+* Campos de contexto de Adobe Campaign. Son campos que se pueden insertar dentro del texto y que se adaptan a los datos del destinatario (por ejemplo, nombre, apellidos o cualquier dato de la dimensión objetivo).
+* Bloques de personalización de Adobe Campaign. Son bloques de contenido predefinido que no están relacionados con los datos del destinatario, como un logotipo de una marca o un vínculo a una página espejo.
 
 Consulte [Componentes de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) para obtener una descripción exhaustiva de los componentes de Campaign.
 
 >[!NOTE]
 >
 >* Solo se tienen en cuenta los campos de la dimensión objetivo **Perfiles** de Adobe Campaign.
->* Al ver las propiedades desde **Sitios**, no tiene acceso a los campos de contexto de Adobe Campaign. Puede acceder a ellos directamente desde el correo electrónico durante la edición.
+>* Al ver las propiedades de **Sites**, no tiene acceso a los campos de contexto de Adobe Campaign. Puede acceder a ellos directamente desde el correo electrónico durante la edición.
 >
 
 
@@ -133,11 +133,11 @@ Consulte [Componentes de Adobe Campaign](/help/sites-classic-ui-authoring/classi
    >
    >Los campos de contexto disponibles corresponden a la dimensión objetivo **Perfiles** de Adobe Campaign.
    >
-   >Consulte [Vinculación de una página AEM a un correo electrónico de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail).
+   >Consulte [AEM Vinculación de una página de a un correo electrónico de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail).
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
-1. Select **ClientContext** en la barra de tareas para probar los campos de personalización utilizando los datos de los perfiles de persona.
+1. Seleccionar **Client Context** en la barra de tareas para probar los campos personalizados con los datos de los perfiles de persona.
 
    ![chlimage_1-179](assets/chlimage_1-179.png)
 
@@ -158,7 +158,7 @@ Puede previsualizar el aspecto que tendrá la newsletter, así como la personali
 
 ### Aprobación de contenido en AEM {#approving-content-in-aem}
 
-Una vez terminado el contenido, puede iniciar el proceso de aprobación. Vaya a la **Flujo de trabajo** del cuadro de herramientas y seleccione la **Aprobar para Adobe Campaign** flujo de trabajo.
+Una vez terminado el contenido, puede iniciar el proceso de aprobación. Vaya a la **Flujo de trabajo** de la caja de herramientas y seleccione la **Aprobar para Adobe Campaign** flujo de trabajo.
 
 Este flujo de trabajo listo para usar tiene dos pasos: revisión y aprobación, o revisión y rechazo. Sin embargo, este flujo de trabajo puede ampliarse y adaptarse a un proceso más complejo.
 
@@ -186,4 +186,4 @@ En Adobe Campaign 6.1:
 
 >[!NOTE]
 >
->Consulte [Vinculación de AEM con Adobe Campaign Standard y Adobe Campaign 6.1](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic) under [Uso de Adobe Campaign 6.1 y Adobe Campaign Standard](/help/sites-authoring/campaign.md) en la documentación de creación estándar para obtener más información.
+>Consulte [AEM Vinculación de con Adobe Campaign Standard y Adobe Campaign 6.1](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic) bajo [Uso de Adobe Campaign 6.1 y Adobe Campaign Standard](/help/sites-authoring/campaign.md) en la documentación de creación estándar para obtener más información.

@@ -1,7 +1,7 @@
 ---
-title: Cómo auditar las operaciones de administración de usuarios en AEM
+title: AEM Cómo auditar las operaciones de administración de usuarios en el
 seo-title: How to Audit User Management Operations in AEM
-description: Obtenga información sobre cómo auditar las operaciones de administración de usuarios en AEM.
+description: AEM Obtenga información sobre cómo auditar las operaciones de administración de usuarios en la.
 seo-description: Learn how to audit User Management Operations in AEM.
 uuid: 9d177afb-172c-4858-a678-254c97cfa472
 contentOwner: User
@@ -19,26 +19,26 @@ ht-degree: 1%
 
 ---
 
-# Cómo auditar las operaciones de administración de usuarios en AEM{#how-to-audit-user-management-operations-in-aem}
+# AEM Cómo auditar las operaciones de administración de usuarios en el{#how-to-audit-user-management-operations-in-aem}
 
 ## Introducción {#introduction}
 
-AEM ha introducido la capacidad de registrar cambios en los permisos para que se puedan auditar más adelante.
+AEM ha introducido la capacidad de registrar cambios de permisos para que se puedan auditar más adelante.
 
-La mejora permite auditar acciones CRUD (Crear, Leer, Actualizar, Eliminar) en permisos y asignaciones de grupo de usuarios. Más específicamente, registrará:
+La mejora permite auditar las acciones CRUD (Crear, Leer, Actualizar, Eliminar) en permisos y asignaciones de grupos de usuarios. Más específicamente, registrará:
 
-* Se crea un nuevo usuario
-* Un usuario que se está agregando a un grupo
+* Se está creando un nuevo usuario
+* Se está agregando un usuario a un grupo
 * Cambios de permisos de un usuario o grupo existente
 
-De forma predeterminada, las entradas se escriben en la variable `error.log` archivo. Para facilitar la monitorización, se recomienda que se redirijan a un archivo de registro independiente. Más información sobre cómo hacerlo en el párrafo siguiente.
+De forma predeterminada, las entradas se escriben en `error.log` archivo. Para facilitar la monitorización, se recomienda redirigirlos a un archivo de registro independiente. Encontrará más información sobre cómo hacerlo en el párrafo siguiente.
 
-## Redireccionar la salida a un archivo de registro independiente {#redirecting-the-output-to-a-separate-log-file}
+## Redirigir la salida a un archivo de registro independiente {#redirecting-the-output-to-a-separate-log-file}
 
-Para redirigir la salida de registro a un archivo de registro independiente, debe crear un nuevo **Registrador de Apache Sling** configuración. Usaremos `useraudit.log` como el nombre del archivo independiente en el ejemplo siguiente.
+Para redirigir el resultado del registro a un archivo de registro independiente, deberá crear un nuevo **Registrador de registro de Apache Sling** configuración. Vamos a usar `useraudit.log` como el nombre del archivo independiente en el ejemplo siguiente.
 
 1. Vaya a la consola web navegando hasta *https://serveraddress:serverport/system/console/configMgr*
-1. Buscar **Configuración del registrador de Apache Sling**. A continuación, pulse el &quot;+&quot; en el lado derecho de la entrada para crear una nueva configuración de fábrica.
+1. Buscar por **Configuración del registrador de Apache Sling**. A continuación, pulse el signo + en el lado derecho de la entrada para crear una nueva configuración de fábrica.
 1. Cree la siguiente configuración:
 
    * **Nivel de registro:** Información
@@ -46,11 +46,11 @@ Para redirigir la salida de registro a un archivo de registro independiente, deb
    * **Patrón de mensaje:** nivel predeterminado
    * **Registrador:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Para introducir ambos registros en la variable **Registrador** , debe introducir el nombre del primero y, a continuación, crear otro campo pulsando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
+   Para introducir ambos registradores en la variable **Logger** , debe introducir el nombre del primer campo y, a continuación, crear otro campo pulsando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
 
-## Ejemplo de salida {#example-output}
+## Salida de ejemplo {#example-output}
 
-Si se configura correctamente, la salida debería tener el siguiente aspecto:
+Si se configura correctamente, el resultado debería ser similar al siguiente:
 
 ```xml
 19.05.2017 15:15:08.933 *INFO* [0:0:0:0:0:0:0:1 [1495196108932] POST /libs/granite/security/post/authorizables.html HTTP/1.1] com.adobe.granite.security.user.internal.servlets.AuthorizableServlet Create Group 'group1' operation initiated by User 'admin' (administrator)
@@ -84,7 +84,7 @@ Si se configura correctamente, la salida debería tener el siguiente aspecto:
 
 ## IU clásica {#classic-ui}
 
-En la interfaz de usuario clásica, la información sobre las operaciones de CRUD registradas en el registro de auditoría relacionada con la adición y eliminación de usuarios se limita al ID del usuario afectado y el momento en que se produjo el cambio.
+En la IU clásica, la información sobre las operaciones de CRUD registradas en el registro de auditoría en relación con la adición y eliminación de usuarios se limita al ID del usuario afectado y a cuándo se produjo el cambio.
 
 Por ejemplo:
 

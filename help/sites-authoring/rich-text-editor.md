@@ -18,10 +18,10 @@ ht-degree: 68%
 
 # Uso del editor de texto enriquecido para crear contenido {#use-rich-text-editor-to-author-content}
 
-El editor de texto enriquecido (RTE) es un bloque de creación básico para insertar contenido de texto en AEM. Constituye la base de diversos componentes., incluido:
+El editor de texto enriquecido (RTE) es un bloque de creación básico para insertar contenido de texto en AEM. Constituye la base de diversos componentes., incluidos:
 
 * Texto
-* Texto Imagen
+* Texto  Imagen
 * Tabla
 
 ## Edición local {#in-place-editing}
@@ -46,7 +46,7 @@ Esta barra de herramientas ofrece las opciones siguientes:
 
 ## Edición en pantalla completa {#full-screen-editing}
 
-Para los componentes basados en texto, pulsar el modo de pantalla completa desde la barra de herramientas ![](do-not-localize/screen_shot_2018-03-21at163236.png) abre el editor de texto enriquecido y oculta el resto del contenido de la página.
+Para los componentes basados en texto, pulse el modo de pantalla completa en la barra de herramientas ![](do-not-localize/screen_shot_2018-03-21at163236.png) abre el editor de texto enriquecido y oculta el resto del contenido de la página.
 
 El modo de pantalla completa muestra todas las opciones configuradas que puede utilizar para la creación. La disponibilidad es opciones [depende de la configuración](/help/sites-administering/rich-text-editor.md).
 
@@ -65,4 +65,4 @@ El modo de pantalla completa se cierra haciendo clic en el icono de minimizar.
 
 >[!NOTE]
 >
->Copiar listas anidadas de Microsoft Word en RTE puede arrojar resultados incoherentes y requerir ajuste manual después de pegar el texto en RTE.
+>Copiar listas anidadas de Microsoft Word en el editor de texto enriquecido puede dar resultados incoherentes y necesitar un ajuste manual después de pegar el texto en el editor de texto enriquecido.

@@ -42,7 +42,7 @@ El contenido se añade mediante los [componentes](/help/sites-authoring/default-
 
 La barra de herramientas de página ofrece acceso a las funciones correspondientes, en función de la configuración de la página.
 
-![screen_shot_2018-03-22at11338](assets/screen_shot_2018-03-22at111338.png)
+![screen_shot_2018-03-22at111338](assets/screen_shot_2018-03-22at111338.png)
 
 La barra de herramientas ofrece acceso a numerosas opciones. En función del contexto y la configuración, puede que algunas opciones no estén disponibles.
 
@@ -68,13 +68,13 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
    Abre el [Context Hub](/help/sites-authoring/ch-previewing.md). Solo está disponible en el modo de vista previa.
 
-   ![screen_shot_2018-03-22at11543](assets/screen_shot_2018-03-22at111543.png)
+   ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
 
 * **Título de página**
 
    Es meramente informativo.
 
-   ![screen_shot_2018-03-22at11554](assets/screen_shot_2018-03-22at111554.png)
+   ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
 
 * **Selector de modo** 
 
@@ -98,7 +98,7 @@ La barra de herramientas ofrece acceso a numerosas opciones. En función del con
 
 Si una página es parte de uno o varios [flujos de trabajo](/help/sites-authoring/workflows.md), esta información se muestra en una barra de notificación situada en la parte superior de la pantalla cuando edita la página.
 
-![screen_shot_2018-03-22at11739](assets/screen_shot_2018-03-22at111739.png)
+![screen_shot_2018-03-22at111739](assets/screen_shot_2018-03-22at111739.png)
 
 >[!NOTE]
 >
@@ -106,9 +106,9 @@ Si una página es parte de uno o varios [flujos de trabajo](/help/sites-authorin
 
 La notificación indica el flujo de trabajo que se está ejecutando con la página. Si el usuario participa en el paso actual del flujo de trabajo, también dispondrá de opciones para [afectar al estado del flujo de trabajo](/help/sites-authoring/workflows-participating.md) y obtener más información sobre el mismo, como por ejemplo:
 
-* **Completar** - Abre el **Completar elemento de trabajo** cuadro de diálogo
+* **Completar** - Abre el **Completar elemento de trabajo** diálogo
 
-* **Delegar** - Abre el **Completar elemento de trabajo** cuadro de diálogo
+* **Delegar** - Abre el **Completar elemento de trabajo** diálogo
 
 * **Ver detalles**: abre la ventana **Detalles** del flujo de trabajo.
 
@@ -124,7 +124,7 @@ El marcador de posición de componente es un indicador para mostrar la posición
 
 * Al añadir un componente nuevo a la página (arrastrándolo desde el navegador de componentes):
 
-   ![screen_shot_2018-03-22at11928](assets/screen_shot_2018-03-22at111928.png)
+   ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
 
 * Al mover un componente existente:
 
@@ -411,7 +411,7 @@ En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-au
 
 >[!NOTE]
 >
->El ámbito de la acción Diseño se reduce al componente seleccionado. Por ejemplo, si está editando el diseño de un componente y hace clic en otro componente, se muestra la barra de herramientas de edición estándar (no la barra de herramientas de diseño) del componente recién seleccionado y desaparecen los controles de cambio de tamaño, así como la barra de herramientas del emulador.
+>El ámbito de la acción Diseño se reduce al componente seleccionado. Por ejemplo, si está editando el diseño de un componente y hace clic en otro componente, se muestra la barra de herramientas de edición estándar del componente recién seleccionado (no la barra de herramientas de diseño) y desaparecen los controladores de cambio de tamaño y la barra de herramientas del emulador.
 >
 >Si necesita editar el diseño general de la página y modificar múltiples componentes, cambie al [modo de diseño](/help/sites-authoring/responsive-layout.md).
 
@@ -453,7 +453,7 @@ Puede cancelar (y volver a habilitar) la herencia. En función del componente, e
 
 Si la página se basa en una [plantilla editable](/help/sites-authoring/templates.md#editable-and-static-templates), puede cambiar fácilmente al [editor de plantillas](/help/sites-authoring/templates.md#editing-templates-template-authors) seleccionando **Editar plantilla** en el [menú Información de página](/help/sites-authoring/author-environment-tools.md#page-information).
 
-Si la página está basada en un [plantilla estática](/help/sites-authoring/templates.md#editable-and-static-templates), puede cambiar a [Modo de diseño](/help/sites-authoring/default-components-designmode.md) usando la variable [selector de modo de página](/help/sites-authoring/author-environment-tools.md#page-modes) en la barra de herramientas para activar o desactivar componentes que se usarán en la página.
+Si la página está basada en un [plantilla estática](/help/sites-authoring/templates.md#editable-and-static-templates), puede cambiar a [Modo de diseño](/help/sites-authoring/default-components-designmode.md) uso del [selector de modo de página](/help/sites-authoring/author-environment-tools.md#page-modes) en la barra de herramientas para habilitar o deshabilitar componentes para su uso en la página.
 
 Puede ver fácilmente en qué plantilla se basa la página al seleccionar la página en la vista [Columna](/help/sites-authoring/basic-handling.md#column-view) o en la [vista Lista](/help/sites-authoring/basic-handling.md#list-view).
 
@@ -558,9 +558,9 @@ Los iconos siguientes le permiten deshacer o rehacer una acción. Se muestran en
 
 >[!NOTE]
 >
->La variable [combinación de teclas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` también está disponible para deshacer las acciones de edición de página.
+>El [atajo de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` también está disponible para deshacer las acciones de edición de página.
 >
->El atajo de teclado `Ctrl-Y` también está disponible para rehacer las acciones de edición de página.
+>El método abreviado de teclado `Ctrl-Y` también está disponible para rehacer las acciones de edición de página.
 
 >[!NOTE]
 >

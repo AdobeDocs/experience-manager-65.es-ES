@@ -12,7 +12,7 @@ discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65
 exl-id: f26c4268-7885-4e61-a258-219d98288548
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 100%
 

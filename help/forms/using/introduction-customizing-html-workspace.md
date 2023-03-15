@@ -12,7 +12,7 @@ discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 100%
 
@@ -282,7 +282,7 @@ Este paquete se puede crear utilizando los tres perfiles que se describen a cont
    * ja-JP: contiene el archivo translation.json para japonés.
    * html.jsp: contiene código para detectar la configuración regional actual del explorador.
 
-* Índice: contiene .content.xml.
+* Index: contiene .content.xml.
 * profile: contiene offline.jsp.
 * GET.jsp
 * html.jsp
@@ -327,7 +327,7 @@ Este paquete se puede crear utilizando los tres perfiles que se describen a cont
    * ja-JP: contiene el archivo translation.json para japonés.
    * html.jsp: contiene código para detectar la configuración regional actual del explorador.
 
-* Índice: contiene .content.xml.
+* Index: contiene .content.xml.
 * profile: contiene offline.jsp.
 * GET.jsp
 * html.jsp

@@ -1,5 +1,5 @@
 ---
-title: Adición de fuentes para la renderización gráfica
+title: Agregar fuentes para la representación gráfica
 seo-title: Adding Fonts for Graphic-Rendering
 description: AEM le permite generar gráficos que incorporen texto tomado dinámicamente del contenido
 seo-description: AEM allows you to generate graphics incorporating text dynamically taken from your content
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 ---
 
-# Adición de fuentes para la renderización gráfica{#adding-fonts-for-graphic-rendering}
+# Agregar fuentes para la representación gráfica{#adding-fonts-for-graphic-rendering}
 
-AEM permite generar gráficos que incorporen texto de forma dinámica tomado del contenido.
+AEM le permite generar gráficos que incorporen texto tomado dinámicamente del contenido.
 
 Para ello, también puede cargar y utilizar sus propias fuentes.
 
@@ -36,16 +36,16 @@ Actualmente, todas las implementaciones de la plataforma Java son compatibles [T
 
    Guarde todos los cambios.
 
-1. Copie los archivos de fuente en esta carpeta; por ejemplo, usando WebDAV.
+1. Copie los archivos de fuente en esta carpeta; por ejemplo, mediante WebDAV.
 
    >[!NOTE]
    >
    >Los archivos de fuente del repositorio deben tener el sufijo `*.ttf` o `*.TTF`.
 
-1. Actualice el [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) de [Ayudante de fuentes GFX de Day Commons](/help/sites-deploying/osgi-configuration-settings.md). Añada la ruta a la carpeta de fuentes; es decir, `/apps/<your-project>/fonts`.
+1. Actualice el [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) de [Ayuda de fuentes GFX de Day Commons](/help/sites-deploying/osgi-configuration-settings.md). Añada la ruta a la carpeta de fuentes; p. ej. `/apps/<your-project>/fonts`.
 
-1. Vuelva al CRXDE Lite. Ahora debería ver un `.fontlist` en la carpeta que contiene el nombre de las fuentes importadas.
+1. Volver a CRXDE Lite. Ahora debería ver una `.fontlist` nodo de la carpeta que contiene el nombre de las fuentes importadas.
 
    Estas fuentes ya están listas para utilizarse en la API de Java.
 
-Para obtener más información sobre cómo utilizar las fuentes con la API de Java, consulte la [documentación para la clase Font de la API Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).
+Para obtener más información sobre cómo utilizar las fuentes con la API de Java, consulte la [Documentación de la clase Font de la API de Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).

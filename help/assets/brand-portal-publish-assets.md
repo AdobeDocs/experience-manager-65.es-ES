@@ -28,21 +28,21 @@ ht-degree: 42%
 | AEM 6.5 | Este artículo |
 | AEM 6.4 | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/brandportal/brand-portal-publish-assets.html?lang=en) |
 
-Como administrador de recursos de Adobe Experience Manager (AEM), puede publicar recursos y carpetas en la instancia de AEM Assets Brand Portal (o programar el flujo de trabajo de publicación para una fecha y hora posteriores) para su organización. Sin embargo, primero debe configurar AEM Assets con Brand Portal. Para obtener más información, consulte [Configurar AEM Assets con Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
+Como administrador de recursos de Adobe Experience Manager AEM (), puede publicar recursos y carpetas en la instancia de AEM Assets Brand Portal (o programar el flujo de trabajo de publicación para una fecha u hora posterior) para su organización. Sin embargo, primero debe configurar AEM Assets con Brand Portal. Para obtener más información, consulte [Configurar AEM Assets con Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
-Una vez que la replicación se haya realizado correctamente, puede publicar recursos, carpetas y colecciones en Brand Portal. Para publicar recursos en Brand Portal, siga estos pasos:
+Una vez completada la replicación, puede publicar recursos, carpetas y colecciones en Brand Portal. Para publicar recursos en Brand Portal, siga estos pasos:
 
 >[!NOTE]
 >
 >Adobe recomienda la publicación escalonada, de preferencia durante las horas no pico, para que el autor de AEM no ocupe recursos excesivos.
 
-1. En la consola Recursos, seleccione los recursos o la carpeta que desee publicar y haga clic en **[!UICONTROL Publicación rápida]** en la barra de herramientas.
+1. En la consola Recursos, seleccione los recursos o la carpeta que desee publicar y haga clic en **[!UICONTROL Publicación rápida]** de la barra de herramientas.
 
    También puede seleccionar los recursos que desea publicar en Brand Portal.
 
    ![publish2bp-2](assets/publish2bp.png)
 
-1. Para publicar los recursos en Brand Portal, hay dos opciones disponibles:
+1. Para publicar los recursos en Brand Portal, existen dos opciones disponibles:
    * [Publicar recursos inmediatamente](#publish-to-bp-now)
    * [Publicar recursos más tarde](#publish-to-bp-now)
 
@@ -50,13 +50,13 @@ Una vez que la replicación se haya realizado correctamente, puede publicar recu
 
 Para publicar los recursos seleccionados en Brand Portal, haga una de las acciones siguientes:
 
-* En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**. A continuación, en el menú , seleccione **[!UICONTROL Publicar en Brand Portal]**.
+* En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**. A continuación, en el menú, seleccione **[!UICONTROL Publicar en Brand Portal]**.
 
 * En la barra de herramientas, seleccione **[!UICONTROL Administrar publicación]**.
 
-   1. A continuación, desde el **[!UICONTROL Acción]** select **[!UICONTROL Publicar en Brand Portal]** y de **[!UICONTROL Programación]** select **[!UICONTROL Ahora]**. Haga clic en **[!UICONTROL Siguiente]**.
+   1. A continuación, desde el **[!UICONTROL Acción]** select **[!UICONTROL Publicar en Brand Portal]**, y desde **[!UICONTROL Programación]** select **[!UICONTROL Ahora]**. Haga clic en **[!UICONTROL Siguiente]**.
 
-   2. Within **[!UICONTROL Ámbito]**, confirme la selección y haga clic en **[!UICONTROL Publicar en Brand Portal]**.
+   2. En **[!UICONTROL Ámbito]**, confirme la selección y haga clic en **[!UICONTROL Publicar en Brand Portal]**.
 
 Aparece un mensaje que indica que los recursos se han puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver los recursos publicados.
 
@@ -64,9 +64,9 @@ Aparece un mensaje que indica que los recursos se han puesto en cola para su pub
 
 Para programar la publicación de recursos en Brand Portal para una fecha u hora posterior:
 
-1. Una vez que haya seleccionado los recursos o carpetas que desea publicar, seleccione **[!UICONTROL Administrar publicación]** en la barra de herramientas de la parte superior.
+1. Una vez que haya seleccionado los recursos o las carpetas que desea publicar, seleccione **[!UICONTROL Administrar publicación]** en la barra de herramientas de la parte superior.
 
-1. Activado **[!UICONTROL Administrar publicación]** página, seleccione **[!UICONTROL Publicar en Brand Portal]** from **[!UICONTROL Acción]** y seleccione **[!UICONTROL Más tarde]** from **[!UICONTROL Programación]**.
+1. Activado **[!UICONTROL Administrar publicación]** página, seleccione **[!UICONTROL Publicar en Brand Portal]** de **[!UICONTROL Acción]** y seleccione **[!UICONTROL Más tarde]** de **[!UICONTROL Programación]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 

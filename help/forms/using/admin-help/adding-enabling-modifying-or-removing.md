@@ -1,7 +1,7 @@
 ---
-title: Adición, activación, modificación o eliminación de puntos finales
+title: Agregar, activar, modificar o eliminar puntos finales
 seo-title: Adding, enabling, modifying, or removing endpoints
-description: Aprenda a añadir, habilitar, modificar y eliminar puntos finales.
+description: Obtenga información sobre cómo agregar, habilitar, modificar y quitar extremos.
 seo-description: Learn how to add, enable, modify and remove endpoints.
 uuid: c53f225b-3d55-42f6-8982-0cd7dde0c4f5
 contentOwner: admin
@@ -13,63 +13,63 @@ exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Adición, activación, modificación o eliminación de puntos finales {#adding-enabling-modifying-or-removing-endpoints}
+# Agregar, activar, modificar o eliminar puntos finales {#adding-enabling-modifying-or-removing-endpoints}
 
-## Añadir un extremo a un servicio {#add-an-endpoint-to-a-service}
+## Agregar un extremo a un servicio {#add-an-endpoint-to-a-service}
 
-Los puntos de conexión solo se pueden agregar a servicios. Un punto final no puede existir solo; debe estar asociado a un servicio.
+Los extremos solo se pueden agregar a los servicios. Un extremo no puede existir solo; debe estar asociado a un servicio.
 
 >[!NOTE]
 >
->Se recomienda utilizar nombres únicos al añadir extremos.
+>Se recomienda utilizar nombres únicos al agregar puntos finales.
 
 1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de servicios.
-1. En la página Administración de servicios , haga clic en el servicio para configurarlo.
-1. En la lista de la ficha Extremos , seleccione el tipo de extremo que desea agregar y haga clic en Agregar.
-1. Dependiendo del tipo de extremo, configure ajustes de extremo adicionales.
+1. En la página Administración de servicios, haga clic en el servicio que desea configurar.
+1. En la lista de la pestaña Puntos finales, seleccione el tipo de punto de conexión que desea agregar y haga clic en Agregar.
+1. Según el tipo de extremo, configure opciones de extremo adicionales.
 
-[Configuración de extremo de carpeta vigilada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
+[Configuración del extremo de carpeta inspeccionada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
 [Configuración de extremo de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-[Configuración de los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+[Configurar los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
-[Configuración de extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
+[Configuración del extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
 1. Haga clic en Agregar.
 
-## Habilitar o deshabilitar un punto final {#enable-or-disable-an-endpoint}
+## Habilitar o deshabilitar un extremo {#enable-or-disable-an-endpoint}
 
-De forma predeterminada, los nuevos extremos se activan automáticamente. Pero si ha deshabilitado un punto final, tendrá que habilitarlo para que funcione.
+De forma predeterminada, los nuevos extremos se habilitan automáticamente. Pero si ha deshabilitado un punto final, deberá habilitarlo para que esté operativo.
 
-Si tiene problemas con los servicios, deshabilite los extremos asociados para solucionar mejor el problema. También es posible que desee deshabilitar los extremos durante el mantenimiento regular del sistema o al actualizar un servicio.
+Si tiene problemas con los servicios de, deshabilite los extremos asociados de para solucionar mejor el problema. También es posible que desee deshabilitar los extremos durante el mantenimiento regular del sistema o al actualizar un servicio.
 
-1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de extremos.
-1. En la página Administración de puntos de conexión, active la casilla de verificación del punto final para habilitar o deshabilitar y haga clic en Habilitar o Deshabilitar.
+1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Endpoint Management.
+1. En la página Administración de extremos, active la casilla de verificación del extremo que desea habilitar o deshabilitar y haga clic en Habilitar o Deshabilitar.
 
-## Modificación de un punto final {#modify-an-endpoint}
+## Modificar un extremo {#modify-an-endpoint}
 
 >[!NOTE]
 >
->Los cambios que realice en una configuración de extremo mediante la consola de administración no se reflejarán en las copias en tiempo de diseño de las aplicaciones. Si vuelve a implementar una aplicación, se perderá cualquier cambio que haya realizado en sus puntos finales mediante la consola de administración.
+>Los cambios realizados en una configuración de extremo mediante la consola de administración no se reflejan en las copias en tiempo de diseño de las aplicaciones. Si vuelve a implementar una aplicación, se perderá cualquier cambio que haya realizado en sus extremos mediante la consola de administración.
 
-1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de extremos.
-1. En la página Administración de puntos finales , haga clic en el punto final para modificarlo.
-1. En la página Actualizar extremo , modifique el nombre del extremo, la descripción y la configuración.
+1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Endpoint Management.
+1. En la página Endpoint Management, haga clic en el extremo que desea modificar.
+1. En la página Actualizar extremo, modifique el nombre, la descripción y la configuración del extremo.
 
    >[!NOTE]
    >
-   >No incluya un carácter &lt; en el nombre o la descripción porque truncará el nombre o la descripción mostrados en Workspace.
+   >No incluya un carácter &lt; en el nombre o la descripción, ya que truncará el nombre o la descripción mostrados en Workspace.
 
 1. Para guardar los cambios, haga clic en Actualizar.
 
-También puede realizar esta tarea desde la página Administración de servicios seleccionando un servicio y luego haciendo clic en la pestaña Puntos de conexión .
+También puede realizar esta tarea desde la página Administración de servicios seleccionando un servicio y haciendo clic en la pestaña Puntos finales.
 
-## Eliminar un punto final {#remove-an-endpoint}
+## Quitar un extremo {#remove-an-endpoint}
 
-1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Administración de extremos.
-1. En la página Administración de puntos de conexión, active la casilla de verificación del punto final que desea eliminar y haga clic en Quitar. El punto final ya no se muestra.
+1. En la consola de administración, haga clic en Servicios > Aplicaciones y servicios > Endpoint Management.
+1. En la página Administración de extremos, active la casilla de verificación del extremo que desea quitar y haga clic en Quitar. El extremo ya no se muestra.

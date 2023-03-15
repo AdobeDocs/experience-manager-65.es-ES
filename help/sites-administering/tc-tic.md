@@ -1,7 +1,7 @@
 ---
 title: Configuración del marco de trabajo de integración de traducción
 seo-title: Configuring the Translation Integration Framework
-description: Obtenga información sobre cómo configurar el marco de integración de traducción.
+description: Obtenga información sobre cómo configurar el marco de trabajo de integración de traducciones.
 seo-description: Learn how to configure the Translation Integration Framework.
 uuid: 5ecfe154-732f-4a13-96f8-92f55023c54d
 contentOwner: Guillaume Carlino
@@ -44,15 +44,15 @@ Los siguientes proveedores de traducción proporcionan una implementación de la
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
 * [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
-* Microsoft (Microsoft Translator está preinstalado en AEM)
+* Microsoft (Microsoft AEM Translator está preinstalado en el servidor de)
 
 >[!NOTE]
 >
->Para encontrar la lista más reciente de proveedores de traducción automática y humana, eche un vistazo a estas páginas:
+>Para encontrar la lista más reciente de proveedores de traducción humana y automática, consulte estas páginas:
 >
 >
->* [AEM Traducción humana](https://www.adobe.com/go/aem-human-translation-connectors)
->* [AEM traducción automática](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* [AEM Traducción humana de](https://www.adobe.com/go/aem-human-translation-connectors)
+>* [AEM Traducción automática de](https://www.adobe.com/go/aem-machine-translation-connectors)
 >
 
 
@@ -76,14 +76,14 @@ Cuando las diferentes secciones del sitio web tengan distintos requisitos de tra
 
 Después de configurar un marco de trabajo de integración de traducciones, puede [asociarlo a las páginas](/help/sites-administering/tc-prep.md) que lo usan.
 
-**Nota:** Para obtener una descripción general de las funciones de traducción de contenido de AEM, consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md).
+**Nota:** AEM Para obtener una descripción general de las funciones de traducción de contenido de la documentación de, consulte la sección sobre traducción de contenido en la documentación de la documentación de la [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md).
 
-Una sola configuración del marco controla cómo traducir contenido de página, contenido de la comunidad y recursos.
+Una sola configuración del marco de trabajo controla cómo traducir contenido de página, contenido de la comunidad y recursos.
 ![chlimage_1-386](assets/translation-config-65.jpg)
 
 ### Propiedades de configuración de sitios {#sites-configuration-properties}
 
-Las propiedades Sitios controlan cómo se realiza la traducción del contenido de la página.
+Las propiedades de Sites controlan cómo se traduce el contenido de la página.
 
 <table>
  <tbody>
@@ -93,16 +93,16 @@ Las propiedades Sitios controlan cómo se realiza la traducción del contenido d
   </tr>
   <tr>
    <td>Flujo de trabajo de traducción</td>
-   <td><p>Seleccione el método de traducción que realiza el marco para el contenido del sitio:</p>
+   <td><p>Seleccione el método de traducción que el marco de trabajo aplica al contenido del sitio:</p>
     <ul>
-     <li>Traducción automática: El proveedor de traducción realiza la traducción mediante traducción automática en tiempo real.</li>
+     <li>Traducción automática: el proveedor de traducción realiza la traducción mediante traducción automática en tiempo real.</li>
      <li>Traducción humana: el contenido se envía al proveedor de traducción para que lo traduzcan traductores. </li>
-     <li>No traducir: El contenido no se envía para su traducción. Esto sirve para omitir ciertas divisiones de contenido que no se traducen, pero que podrían actualizarse con el contenido más reciente.</li>
+     <li>No traducir: el contenido no se envía para su traducción. Esto sirve para omitir ciertas divisiones de contenido que no se traducen, pero que podrían actualizarse con el contenido más reciente.</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Proveedor de traducciones</td>
-   <td>Seleccione el proveedor de traducción para realizar la traducción. Cuando se instala su conector correspondiente, aparece un proveedor en la lista.</td>
+   <td>Seleccione el proveedor de traducción para llevar a cabo la traducción. Cuando se instala su conector correspondiente, aparece un proveedor en la lista.</td>
   </tr>
   <tr>
    <td>Categoría de contenido</td>
@@ -110,33 +110,33 @@ Las propiedades Sitios controlan cómo se realiza la traducción del contenido d
   </tr>
   <tr>
    <td>Traducir etiquetas</td>
-   <td>Seleccione para traducir las etiquetas asociadas a la página.</td>
+   <td>Seleccione para traducir las etiquetas asociadas con la página.</td>
   </tr>
   <tr>
    <td>Traducir recursos de la página</td>
-   <td><p>Seleccione cómo traducir recursos que se agregan a los componentes del sistema de archivos o a los que se hace referencia desde Assets:</p>
+   <td><p>Seleccione cómo traducir recursos que se añaden a componentes del sistema de archivos o a los que se hace referencia desde Recursos:</p>
     <ul>
-     <li>No traducir: Los recursos de página no se traducen.</li>
-     <li>Uso del flujo de trabajo de traducción de sitios: Los recursos se gestionan según las propiedades de configuración de la ficha Sitios .</li>
-     <li>Uso del flujo de trabajo de traducción de Assets: Los recursos se gestionan según la configuración de las propiedades de la pestaña Recursos .</li>
+     <li>No traducir: los recursos de la página no se traducen.</li>
+     <li>Uso del flujo de trabajo de traducción de sitios: los recursos se gestionan según las propiedades de configuración de la pestaña Sitios.</li>
+     <li>Uso del flujo de trabajo de traducción de recursos: los recursos se gestionan según la configuración de las propiedades de la pestaña Recursos.</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Ejecutar traducción automáticamente</td>
-   <td>Seleccione para ejecutar los trabajos de traducción automáticamente después de crear los proyectos de traducción. Cuando selecciona esta opción, no tiene la oportunidad de revisar y ampliar el ámbito del trabajo de traducción.</td>
+   <td>Seleccione esta opción para ejecutar los trabajos de traducción automáticamente después de crear los proyectos. Cuando selecciona esta opción, no tiene la oportunidad de revisar y ampliar el ámbito del trabajo de traducción.</td>
   </tr>
  </tbody>
 </table>
 
 ### Propiedades de configuración de comunidades {#communities-configuration-properties}
 
-Las propiedades de las comunidades controlan cómo se realiza la traducción del contenido generado por el usuario. La traducción del contenido generado por el usuario siempre utiliza la traducción automática. Para obtener más información, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).
+Las propiedades de las comunidades controlan cómo se traduce el contenido generado por el usuario. La traducción del contenido generado por el usuario siempre utiliza la traducción automática. Para obtener más información, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).
 
 | Propiedad | Descripción |
 |---|---|
-| Proveedor de traducciones | Seleccione el proveedor de traducción para realizar la traducción. El proveedor para el que se crean configuraciones de nube aparece en la lista. |
-| Categoría de contenido | Categoría que describe el contenido que está traduciendo. La categoría puede afectar a la elección de la terminología y el estilo al traducir el contenido. |
-| Elija Una Configuración Regional Para Usar Como Tienda Compartida Global | (Opcional) Al seleccionar una configuración regional para almacenar UGC, las publicaciones de todas las copias de idiomas aparecerán en una conversación global. Por convención, elija la configuración regional para la variable [idioma base](/help/communities/sites-console.md#translation) para el sitio web. Si elige No Common Store , se deshabilitará la traducción global. De forma predeterminada, la traducción global está desactivada. |
+| Proveedor de traducciones | Seleccione el proveedor de traducción para llevar a cabo la traducción. El proveedor para el que se crean configuraciones de nube aparece en la lista. |
+| Categoría de contenido | Una categoría que describe el contenido que está traduciendo. La categoría puede afectar a la elección de la terminología y el estilo al traducir el contenido. |
+| Elija Una Configuración Regional Para Utilizarla Como Almacén Compartido Global | (Opcional) Al seleccionar una configuración regional para almacenar UGC, las publicaciones de todas las copias de idioma aparecerán en una conversación global. Por convención, elija la configuración regional del [idioma base](/help/communities/sites-console.md#translation) para el sitio web. Si se elige Sin almacén común, se desactivará la traducción global. De forma predeterminada, la traducción global está desactivada. |
 
 ### Propiedades de configuración de recursos {#assets-configuration-properties}
 
@@ -150,16 +150,16 @@ Las propiedades de recursos controlan cómo se configuran los recursos. Para obt
   </tr>
   <tr>
    <td>Flujo de trabajo de traducción</td>
-   <td><p>Seleccione el tipo de traducción que realiza el marco para los recursos:</p>
+   <td><p>Seleccione el tipo de traducción que el marco de trabajo realiza para los recursos:</p>
     <ul>
-     <li>Traducción automática: El proveedor de traducción realiza la traducción inmediatamente mediante traducción automática.</li>
+     <li>Traducción automática: el proveedor de traducción realiza la traducción inmediatamente mediante traducción automática.</li>
      <li>Traducción humana: el contenido se envía al proveedor de traducción para que lo traduzcan traductores. </li>
-     <li>No traducir: Los recursos no se envían para su traducción.</li>
+     <li>No traducir: los recursos no se envían para su traducción.</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Proveedor de traducciones</td>
-   <td>Seleccione el proveedor de traducción para realizar la traducción. Cuando se instala su conector correspondiente, aparece un proveedor en la lista.</td>
+   <td>Seleccione el proveedor de traducción para llevar a cabo la traducción. Cuando se instala su conector correspondiente, aparece un proveedor en la lista.</td>
   </tr>
   <tr>
    <td>Categoría de contenido</td>
@@ -175,23 +175,23 @@ Las propiedades de recursos controlan cómo se configuran los recursos. Para obt
   </tr>
   <tr>
    <td>Traducir etiquetas</td>
-   <td>Seleccione para traducir las etiquetas asociadas al recurso.</td>
+   <td>Seleccione esta opción para traducir las etiquetas asociadas al recurso.</td>
   </tr>
   <tr>
    <td>Ejecutar traducción automáticamente</td>
-   <td>Seleccione para ejecutar los trabajos de traducción automáticamente después de crear los proyectos de traducción. Cuando selecciona esta opción, no tiene la oportunidad de revisar o ampliar el ámbito del trabajo de traducción.</td>
+   <td>Seleccione esta opción para ejecutar los trabajos de traducción automáticamente después de crear los proyectos. Cuando selecciona esta opción, no tiene la oportunidad de revisar o ampliar el ámbito del trabajo de traducción.</td>
   </tr>
  </tbody>
 </table>
 
 1. En la barra lateral, pulse o haga clic en Herramientas > Operaciones > Nube > Cloud Services.
-1. En el área Integración de traducción , si se ha creado alguna configuración determina qué vínculo aparece:
+1. En el área Integración de traducción, si se ha creado alguna configuración, determina qué vínculo aparece:
 
-   * Si no se han creado configuraciones, toque o haga clic en Configurar ahora.
+   * Si no se ha creado ninguna configuración, toque o haga clic en Configurar ahora.
    * Si ya existen configuraciones, toque o haga clic en Mostrar configuraciones y, a continuación, toque o haga clic en el vínculo + que aparece junto a Configuraciones disponibles.
 
 1. Escriba un nombre para la configuración y, a continuación, toque o haga clic en Crear.
-1. Configure las propiedades en la ficha Sitios, Comunidades y Recursos y, a continuación, toque o haga clic en Aceptar.
+1. Configure las propiedades en la ficha Sitios, comunidades y recursos y, a continuación, toque o haga clic en Aceptar.
 
 ## Configuración de páginas para su traducción {#configuring-pages-for-translation}
 
@@ -202,9 +202,9 @@ Para configurar la traducción de las páginas de origen a otros idiomas, asóci
 
 Tenga en cuenta que la configuración de nube del marco de trabajo de integración de traducción identifica la configuración de nube que se utilizará para la conexión con el proveedor de servicios. Cuando asocia una página de origen con una configuración de nube de marco de trabajo, la página debe asociarse a la configuración de nube del proveedor de servicios que utiliza la configuración de nube de marco trabajo.
 
-Cuando asocia una página con una configuración de nube, los descendientes de la página heredan la asociación. Por ejemplo, si asocia la página /content/geometrixx/en/products con un marco de integración de traducción, la página Productos y todas las páginas debajo se traducen según el marco.
+Cuando asocia una página con una configuración de nube, los descendientes de la página heredan la asociación. Por ejemplo, si asocia la página /content/geometrixx/en/products con un marco de trabajo de integración de traducciones, la página Products y todas las páginas por debajo se traducen según el marco de trabajo.
 
-Si es necesario, puede anular la asociación en una página descendiente. Por ejemplo, el contenido de un sitio web se trata principalmente de ropa. Sin embargo, una rama de páginas describe la compañía. La página raíz del sitio está asociada con un Marco de integración de traducción que especifica la traducción automática mediante la categoría Ropa. La rama que describe la empresa utiliza un marco que realiza la traducción automática mediante la categoría General .
+Si es necesario, puede anular la asociación en una página descendiente. Por ejemplo, el contenido de un sitio web se refiere principalmente a la ropa. Sin embargo, una rama de páginas describe la compañía. La página raíz del sitio está asociada a un marco de trabajo de integración de traducción que especifica la traducción automática mediante la categoría Ropa. La rama que describe la compañía utiliza un marco de trabajo que realiza la traducción automática mediante la categoría General.
 
 Además, para cualquier comunidad [Componentes de SCF](/help/communities/scf.md) en las páginas, el contenido generado por el usuario (UGC) incluirá la capacidad de los usuarios de traducir contenido. Para obtener más información, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).
 
@@ -212,16 +212,16 @@ Además, para cualquier comunidad [Componentes de SCF](/help/communities/scf.md)
 
 Asocie una página al proveedor de traducción que esté utilizando para traducir la página y las páginas descendientes.
 
-1. En la consola Sitios , seleccione la página que desea configurar y toque o haga clic en Ver propiedades.
-1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la pestaña Cloud Services .
+1. En la consola Sitios, seleccione la página que desea configurar y toque o haga clic en Ver propiedades.
+1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la pestaña Cloud Services.
 1. Toque o haga clic en Agregar configuración > Integración de traducción.
-1. Seleccione el proveedor de traducción que desea utilizar y, a continuación, toque o haga clic en Finalizado.
+1. Seleccione el proveedor de traducción que desea utilizar y, a continuación, toque o haga clic en Listo.
 
 ### Asociación de páginas a un marco de trabajo integración de traducción {#associating-pages-with-a-translation-integration-framework}
 
 Asocie una página al marco de trabajo de integración de traducción que define cómo desea realizar la traducción de la página y de las páginas descendientes.
 
-1. En la consola Sitios , seleccione la página que desea configurar y toque o haga clic en Ver propiedades.
-1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la pestaña Cloud Services .
+1. En la consola Sitios, seleccione la página que desea configurar y toque o haga clic en Ver propiedades.
+1. Toque o haga clic en Editar y, a continuación, toque o haga clic en la pestaña Cloud Services.
 1. Toque o haga clic en Agregar configuración > Integración de traducción.
-1. Seleccione el marco de integración de traducción que desea utilizar y, a continuación, toque o haga clic en Finalizado.
+1. Seleccione el marco de trabajo de integración de traducciones que desea utilizar y, a continuación, toque o haga clic en Listo.

@@ -10,7 +10,7 @@ discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * Estándares de diseño web de EE. UU.
 * Tranquil
 
-Cada temática contiene un estilo único y elegante que puede utilizar para crear formularios adaptables para los usuarios. Contiene un estilo único para selectores como panel, cuadro de texto, cuadro numérico, botón de radio, tabla e interruptor. Los ajustes en estas temáticas se basan en requisitos. Por ejemplo, en una situación concreta se requiere una temática minimalista con fuentes limpias. La temática Liberty permite conseguir esa apariencia.
+Cada temática contiene un estilo único y elegante que puede utilizar para crear formularios adaptables para los usuarios. Contiene un estilo único para selectores como panel, cuadro de texto, cuadro numérico, botón de radio, tabla y conmutador. El estilo de estos temas dependerá de los requisitos. Por ejemplo, en una situación concreta se requiere una temática minimalista con fuentes limpias. La temática Liberty permite conseguir esa apariencia.
 
 ![Temáticas de referencia](assets/ref-themes.png)
 
@@ -39,7 +39,7 @@ Para obtener más información sobre la instalación del paquete, consulte [Cóm
 
 ## Beryl {#beryl}
 
-La temática Beryl se utiliza por la forma adaptativa de We.Gov y enfatiza el uso de la imagen de fondo, la transparencia y los iconos grandes y planos. En la siguiente captura de pantalla, puede ver la apariencia de la temática Beryl y cómo puede mejorar el estilo del formulario.
+El tema Beryl se usa en el formulario adaptativo We.Gov, y enfatiza el uso de la imagen de fondo, la transparencia y los iconos grandes y planos. En la captura de pantalla siguiente, puede ver el aspecto del tema Beryl y cómo puede mejorar el estilo del formulario.
 
 ![Temática Beryl](assets/beryl.png)
 
@@ -79,9 +79,9 @@ La temática Liberty utiliza un enfoque minimalista para resaltar lo importante.
 
 ## Tranquil {#tranquil}
 
-La temática Tranquil ofrece tonos claros y oscuros de la combinación de colores Tranquil para resaltar los diferentes componentes de un formulario. Por ejemplo, los botones de radio, los paneles y las pestañas tienen un color verde diferente.
+El tema Tranquil ofrece tonos claros y oscuros de su esquema de colores para resaltar los diferentes componentes de un formulario. Por ejemplo, los botones de radio, los paneles y las pestañas tienen un color verde diferente.
 
-![Temática Tranquil](assets/tranquil.png)
+![Tema Tranquil](assets/tranquil.png)
 
 <!--[Click to enlarge
 
@@ -89,15 +89,15 @@ La temática Tranquil ofrece tonos claros y oscuros de la combinación de colore
 
 ## Ultramarine {#ultramarine}
 
-La temática Ultramarine utiliza tonos azules profundos para resaltar componentes como pestañas, paneles, cuadros de texto y botones.
+El tema Ultramarine utiliza tonos azules profundos para resaltar componentes como fichas, paneles, cuadros de texto y botones.
 
-![Temática Ultramarine](assets/ultramarine.png)
+![Tema Ultramarine](assets/ultramarine.png)
 
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
 ## Urbane {#urbane}
 
-La temática Urbane destaca la apariencia minimalista y funcional del formulario. Al aplicar la temática Urbane al formulario puede ver que los componentes son planos. Los paneles tienen contornos finos para crear una apariencia moderna.
+El tema de Urbane destaca el aspecto minimalista y funcional de su formulario. Al aplicar el tema Urbane al formulario, puede ver que los componentes son planos. Los paneles tienen contornos finos para crear un aspecto moderno.
 
 ![Temática Urbane](assets/urbane.png)
 

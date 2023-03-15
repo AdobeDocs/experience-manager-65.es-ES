@@ -14,7 +14,7 @@ exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
 source-wordcount: '3466'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -397,7 +397,7 @@ Para obtener información sobre cómo aplicar saltos de página y aplicar varias
 **Configuración del nivel de formulario**
 
 * **Incluir campos no enlazados en el documento de registro:** al establecer la propiedad, se incluyen los campos no enlazados del formulario adaptable basado en esquema en el documento de registro. De forma predeterminada, es True.
-* **Excluir campos de DoR si están ocultos:** Establezca la propiedad para excluir los campos ocultos de [!UICONTROL Documento de registro] en el envío del formulario. Al activar [Revalidate en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), el servidor vuelve a calcular los campos ocultos antes de excluir dichos campos del [!UICONTROL Documento de registro].
+* **Excluir campos de DoR si están ocultos:**[!UICONTROL  establezca la propiedad para excluir los campos ocultos del documento de registro al enviar el formulario. ] Al activar [Revalidar en el servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)[!UICONTROL , el servidor vuelve a calcular los campos ocultos antes de excluir dichos campos del documento de registro].
 
 ## Aplicar un salto de página en un documento de registro {#apply-page-breaks-in-dor}
 

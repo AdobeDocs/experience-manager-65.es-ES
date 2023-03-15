@@ -1,7 +1,7 @@
 ---
-title: Elementos esenciales del panel de control
+title: Leaderboard Essentials
 seo-title: Leaderboard Essentials
-description: Información general sobre las características del panel de vanguardia
+description: Resumen de características de clasificación
 seo-description: Leaderboard feature overview
 uuid: 815a6928-b147-496d-9751-13159ad1304d
 contentOwner: msm-service
@@ -17,28 +17,28 @@ ht-degree: 6%
 
 ---
 
-# Elementos esenciales del panel de control {#leaderboard-essentials}
+# Leaderboard Essentials {#leaderboard-essentials}
 
-Esta página proporciona la información esencial para trabajar con la función de panel de control.
+Esta página proporciona información esencial para trabajar con la función de clasificación.
 
-Antes de incluir el componente de panel de encabezado en una página, es necesario configurar [Puntuación y distintivos de comunidades](implementing-scoring.md).
+Antes de incluir el componente de tabla de posiciones en una página, es necesario configurar [Puntuación y distintivos de comunidades](implementing-scoring.md).
 
-Consulte [Aspectos básicos de la puntuación y los distintivos](configure-scoring.md).
+Consulte [Elementos esenciales de puntuación e insignias](configure-scoring.md).
 
-## Elementos esenciales para el cliente {#essentials-for-client-side}
+## Essentials para el lado del cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/gamificación/componentes/hbs/panel de control</td>
+   <td>social/gamification/components/hbs/scoreboard</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
    <td>cq.social.gamification.hbs.leaderboard</td>
   </tr>
   <tr>
@@ -51,7 +51,7 @@ Consulte [Aspectos básicos de la puntuación y los distintivos](configure-scori
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="enabling-leaderboard.md">Función de portapapeles</a></td>
+   <td>Consulte <a href="enabling-leaderboard.md">Función de clasificación</a></td>
   </tr>
  </tbody>
 </table>
@@ -60,4 +60,4 @@ Consulte [Aspectos básicos de la puntuación y los distintivos](configure-scori
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de la comunidad que incluye el [Función del panel de instrumentos](functions.md#leaderboard-function), incluye un `leaderboard` componente.
+Una estructura de sitio de la comunidad que incluye [Función de clasificación](functions.md#leaderboard-function), incluye un configurado `leaderboard` componente.

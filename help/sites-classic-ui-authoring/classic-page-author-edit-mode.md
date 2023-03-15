@@ -30,9 +30,9 @@ Algunos están disponibles directamente mediante la barra de tareas, mientras qu
 >
 >En función de su instancia, puede disponer de componentes personalizados desarrollados explícitamente para sus necesidades. Pueden tener incluso el mismo nombre que algunos de los componentes mencionados aquí.
 
-Los componentes están disponibles cuando [edición de una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) de la variable **Componentes** de la barra de tareas y la **Insertar nuevo componente** (cuando hace doble clic en el **Arrastrar componentes o recursos aquí** ).
+Los componentes están disponibles cuando [edición de una página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) desde el **Componentes** pestaña de la barra de tareas y **Insertar nuevo componente** selector (al hacer doble clic en el icono **Arrastre componentes o recursos aquí** área).
 
-Puede seleccionar un componente, arrastrarlo a la ubicación requerida en la página y, a continuación, [Editar contenido y propiedades](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
+Puede seleccionar un componente, arrastrarlo a la ubicación deseada en la página y, a continuación, [Editar contenido y propiedades](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
 
 Los componentes se clasifican en varias categorías (grupos de componentes), incluyendo (para la creación de páginas):
 
@@ -156,7 +156,7 @@ Especificar una ruta manualmente o con el selector. Deje esta opción en blanco 
 
          * **Páginas**
 Seleccione una lista de páginas. Uso 
-`+` para añadir más entradas y los botones de flecha hacia arriba y hacia abajo para ajustar el orden.
+`+` para añadir más entradas y los botones arriba/abajo para ajustar el orden.
       * **Opciones de Buscar**
 
          * **Iniciar en** Indique una ruta de inicio manualmente o con el selector.
@@ -166,8 +166,8 @@ Seleccione una lista de páginas. Uso
 
          * **Anotación predicada Querybuilder** Es posible introducir una consulta de búsqueda utilizando una anotación predicada QueryBuilder. Por ejemplo, puede introducir &quot;fulltext=Marketing&quot; para que se muestren todas las páginas en cuyo contenido aparezca &quot;Marketing&quot; en el Carrusel. Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
    * **Ordenar por**
-Select 
-`jcr:title`, `jcr:created`, `cq:lastModified`o `cq:template` en el menú desplegable.
+Seleccionar 
+`jcr:title`, `jcr:created`, `cq:lastModified`, o `cq:template` en el menú desplegable.
 
    * **Límite** Máximo de elementos que se pueden utilizar en el Carrusel; es opcional.
 
@@ -186,7 +186,7 @@ El componente Gráfico permite añadir una barra, línea o gráfico circular. AE
 * **Datos**
 
    * **Datos de gráfico**
-Introduzca los datos del gráfico utilizando el formato CSV; el formato Valores separados por comas utiliza comas (&quot;,&quot;) como separador de campos.
+Introduzca los datos del gráfico en el formato CSV; el formato de valores separados por comas utiliza comas (&quot;,&quot;) como separador de campos.
 
 * **Avanzado**
 
@@ -200,7 +200,7 @@ Introduzca los datos del gráfico utilizando el formato CSV; el formato Valores 
 
 En el ejemplo siguiente se muestran los datos de un gráfico seguido del gráfico de barras resultante:
 
-![Chlimage_1-6](assets/chlimage_1-6.png) ![dc_chart_use](assets/dc_chart_use.png)
+![chlimage_1-6](assets/chlimage_1-6.png) ![dc_chart_use](assets/dc_chart_use.png)
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ El componente de integración de aplicaciones externo (**Externo**) permite incr
 
 La aplicación externa se integra en el sistema de párrafos de la página AEM; por ejemplo, cuando se utiliza una aplicación de destino de `https://en.wikipedia.org/wiki/Main_Page`:
 
-![Chlimage_1-7](assets/chlimage_1-7.png)
+![chlimage_1-7](assets/chlimage_1-7.png)
 
 >[!NOTE]
 >
@@ -321,13 +321,13 @@ Es posible arrastrar y soltar una imagen del [Buscador de contenido](/help/sites
 >
 >Los usuarios de Internet Explorer deben cargar la imagen, hacer clic en **Aceptar** y volver a abrir la imagen para ver el archivo cargado en la previsualización y para poder realizar modificaciones (p. ej. recortar).
 >
->Consulte la [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obtener más información sobre las funciones de HTML5 que utiliza AEM.
+>Consulte la [Plataformas certificadas](/help/release-notes/release-notes.md#certifiedplatforms) para obtener más información sobre las funciones de HTML AEM 5 utilizadas por los usuarios de la sección de, haga lo siguiente.
 
 Al cargar una imagen, se pueden configurar los aspectos siguientes:
 
 * **Asignar**
 
-   Para asignar una imagen, seleccione Asignar. Es posible especificar cómo será el mapa de imagen (un rectángulo, un polígono, etc.) y hacia dónde debe apuntar la zona.
+   Para asignar una imagen, seleccione Mapa. Es posible especificar cómo será el mapa de imagen (un rectángulo, un polígono, etc.) y hacia dónde debe apuntar la zona.
 
 * **Recortar**
 
@@ -335,7 +335,7 @@ Al cargar una imagen, se pueden configurar los aspectos siguientes:
 
 * **Rotar**
 
-   Para girar una imagen, seleccione Rotar. Utilícelo repetidamente hasta que la imagen rote hacia el lado que prefiera.
+   Para rotar una imagen, seleccione Rotar. Utilícelo repetidamente hasta que la imagen rote hacia el lado que prefiera.
 
 * **Borrar**
 
@@ -351,11 +351,11 @@ Al cargar una imagen, se pueden configurar los aspectos siguientes:
 
 * **Texto alternativo**
 
-   Texto alternativo para usar al crear contenido accesible.
+   Texto alternativo que se puede utilizar al crear contenido accesible.
 
 * **Vínculos**
 
-   Cree un vínculo a los recursos u otras páginas dentro del sitio web.
+   Cree un vínculo a recursos u otras páginas dentro del sitio web.
 
 * **Descripción**
 
@@ -367,7 +367,7 @@ Al cargar una imagen, se pueden configurar los aspectos siguientes:
 
 La imagen final (con **Título** y **Descripción**) pueden aparecer así:
 
-![Chlimage_1-8](assets/chlimage_1-8.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 ### Contenedor de diseño {#layout-container}
 
@@ -400,7 +400,7 @@ Especifique una ruta manualmente o con el selector. Deje esta opción en blanco 
 
          * **Iniciar en**
 
-            Introduzca una ruta de inicio manualmente o con el selector.
+            Introduzca una ruta de inicio, ya sea manualmente o con el selector.
 
          * **Consulta de búsqueda**
 
@@ -409,13 +409,13 @@ Especifique una ruta manualmente o con el selector. Deje esta opción en blanco 
 
          * **Notación de predicado de Querybuilder**
 
-            Puede introducir una consulta de búsqueda utilizando la notación de predicado QueryBuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
+            Puede introducir una consulta de búsqueda utilizando la notación de predicado de Querybuilder. Por ejemplo, puede indicar &quot;fulltext=Marketing&quot; para que se muestren en el carrusel todas las páginas que contengan &quot;Marketing&quot;.
 
 
             Consulte [QueryBuilder API](/help/sites-developing/querybuilder-api.md) para un tratamiento más extenso de las expresiones de consulta y más ejemplos.
       * **Etiquetas**
 
-         Especifique la variable **Página principal**, **Etiquetas/Palabras clave** y los criterios de coincidencia necesarios.
+         Especifique el **Página principal**, **Etiquetas/Palabras clave** y los criterios de coincidencia requeridos.
    * **Mostrar como**
 
       Cómo desea que se incluyan los elementos; incluye vínculos, teasers y noticias.
@@ -449,7 +449,7 @@ En el siguiente ejemplo se muestra un componente **Lista** del modo en que puede
 
 Este componente proporciona los campos Nombre de usuario y Contraseña.
 
-![Chlimage_1-9](assets/chlimage_1-9.png)
+![chlimage_1-9](assets/chlimage_1-9.png)
 
 Puede configurar:
 
@@ -457,7 +457,7 @@ Puede configurar:
 
    * Etiqueta de sección
 
-      Texto introductorio para los campos de entrada.
+      Texto de entrada para los campos de entrada.
 
    * Etiqueta de nombre de usuario
 
@@ -487,17 +487,17 @@ Puede configurar:
 
    * **Título**
 
-      Especifique el texto del título que desea que se muestre.
+      Especifique el texto del título que desea mostrar.
 
    * **Vincular**
 
-      Especifique la página (producto) para la que se debe mostrar el estado de pedido.
+      Especifique la página (producto) para la que se debe mostrar el estado del pedido.
 
    * **Tipo / Tamaño**
 
-      Seleccione en la selección proporcionada.
+      Seleccione de la selección proporcionada.
 
-![imagen_1-10](assets/chlimage_1-10.png)
+![chlimage_1-10](assets/chlimage_1-10.png)
 
 ### Referencia {#reference}
 
@@ -507,7 +507,7 @@ El componente **Referencia** permite hacer referencia a un texto de otra página
 
    * **Referencia**
 
-      Especifique la ruta a la página y al párrafo al que desea hacer referencia (incluya contenido).
+      Especifique la ruta a la página y al párrafo al que desea hacer referencia (incluir contenido).
 
 Para especificar la ruta a un párrafo determine un sufijo para la ruta (hasta la página) con:
 
@@ -527,7 +527,7 @@ Por ejemplo:
 
 Una vez que se haya configurado, el contenido aparecerá exactamente como en la página de origen. Solo se puede comprobar que se trata de una referencia cuando se abre el componente de edición:
 
-![imagen_1-11](assets/chlimage_1-11.png)
+![chlimage_1-11](assets/chlimage_1-11.png)
 
 ### Búsqueda {#searching}
 
@@ -539,7 +539,7 @@ Puede configurar:
 
    * **Tipos de nodo**
 
-      Si la búsqueda se va a restringir a un tipo de nodo específico, enumérenlos aquí; por ejemplo, `cq:Page`.
+      Si la búsqueda se va a restringir a un tipo de nodo específico, muéstrelos aquí; por ejemplo, `cq:Page`.
 
    * **Ruta de búsqueda**
 
@@ -618,7 +618,7 @@ Puede configurar:
 
    * **Nueva diapositiva**
 
-      Puede especificar una selección de diapositivas utilizando la variable **Agregar** (y **Eliminar**).
+      Puede especificar una selección de diapositivas utilizando la variable **Añadir** (y **Eliminar**).
 
    * **Título**
 
@@ -701,7 +701,7 @@ Además del modo de edición de texto enriquecido basado en el cuadro de diálog
 
 El componente Texto e imagen añade un bloque de texto y una imagen. También se puede añadir y editar texto e imágenes por separado. Consulte los componentes de [Texto](#text) e [imagen](#image) para obtener más información.
 
-![imagen_1-12](assets/chlimage_1-12.png) ![imagen_1-13](assets/chlimage_1-13.png)
+![chlimage_1-12](assets/chlimage_1-12.png) ![chlimage_1-13](assets/chlimage_1-13.png)
 
 Puede configurar:
 
@@ -778,7 +778,7 @@ Después de colocar un ejemplo de componente en su página, puede configurar:
 
    * **Recurso de vídeo**
 
-      Cargue o suelte su recurso de vídeo.
+      Cargue o suelte el recurso de vídeo.
 
    * **Tamaño**
 
@@ -800,7 +800,7 @@ En AEM, las columnas funcionan como un mecanismo para controlar el formato del c
 
 En el siguiente ejemplo se muestran los componentes 2 columnas y 3 columnas que están en uso. Puede utilizar los marcadores de posición para componentes nuevos:
 
-![imagen_1-14](assets/chlimage_1-14.png)
+![chlimage_1-14](assets/chlimage_1-14.png)
 
 ### 2 columnas {#columns-1}
 
@@ -910,7 +910,7 @@ Se trata de un campo obligatorio y sólo debe incluir los siguientes caracteres:
 
    * **Requerido**
 
-      Esto depende del tipo de componente del formulario, pero proporciona una o más casillas de verificación para indicar que este campo, o ciertas partes de este campo, es obligatorio.
+      Esto depende del tipo de componente del formulario, pero proporciona uno o más cuadros de clic para indicar que este campo, o ciertas partes de este campo, son obligatorios.
 
    * **Mensaje obligatorio**
 
@@ -995,7 +995,7 @@ Este componente es necesario para definir el inicio de un nuevo formulario en un
 
    * **Ruta de acceso de carga**
 
-      Ruta a las propiedades del nodo que se utiliza para cargar valores predefinidos en los campos del formulario.
+      Ruta a las propiedades del nodo utilizada para cargar valores predefinidos en los campos del formulario.
 Se trata de un campo opcional que especifica la ruta a un nodo en el repositorio. Cuando este nodo cuenta con propiedades que coinciden con los nombres de campo, los campos apropiados del formulario se cargan previamente con el valor de estas propiedades. Si no existe coincidencia, el campo contiene el valor predeterminado.
 Si utiliza una **ruta de carga** puede cargar previamente el formulario con valores en los campos obligatorios. Consulte [Cargar previamente valores de formulario](/help/sites-developing/developing-forms.md#preloading-form-values).
 
@@ -1016,14 +1016,14 @@ Si utiliza una **ruta de carga** puede cargar previamente el formulario con valo
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **Configuración de la acción**
 
-      Las opciones disponibles en **Configuración de la acción** dependen de la variable **Tipo de acción** seleccionados:
+      Las opciones disponibles en **Configuración de acción** dependen de la variable **Tipo de acción** seleccionados:
 
       * **Solicitud de cuenta**
 
          * **Crear una página de cuenta** Página que se utiliza cuando se crea una nueva cuenta.
       * **Crear contenido**
 
-         * Ruta del contenido Ruta del contenido para cualquier contenido que descargue el formulario. Introduzca una ruta que termine con una barra diagonal `/`. La barra diagonal significa que para cada puerto del formulario, se crea un nuevo nodo en la ubicación dada; por ejemplo:
+         * Ruta de contenido La ruta de contenido para cualquier contenido que el formulario envíe. Escriba una ruta que termine con una barra diagonal `/`. La barra diagonal significa que, para cada puerto de formulario, se crea un nuevo nodo en la ubicación determinada; por ejemplo:
             `/forms/feedback/`
 
          * **Tipo**
@@ -1036,11 +1036,11 @@ Si utiliza una **ruta de carga** puede cargar previamente el formulario con valo
 
          * **Procesar con**
 
-            Seleccione la opción requerida de la lista.
+            Seleccione la opción requerida en la lista.
 
          * **Tipo de medio**
 
-            Si se configura, se agrega esto a cada comentario como `sling:resourceType`
+            Si se configura, se agrega a cada comentario como `sling:resourceType`
 
          * **Selector de vista**
       * **Crear posible cliente**
@@ -1062,7 +1062,7 @@ Si utiliza una **ruta de carga** puede cargar previamente el formulario con valo
 
          * **Ver datos...**
 
-            Haga clic en este botón para acceder a la información sobre los resultados en el editor de información masiva. Desde aquí puede exportar la información a un `.tsv` (separado por tabulaciones) (para su uso, por ejemplo, en una hoja de cálculo de Excel).
+            Haga clic en este botón para acceder a la información sobre los resultados en el editor de información masiva. Desde aquí, puede exportar la información a un `.tsv` archivo (separado por tabulaciones) (por ejemplo, en una hoja de cálculo de Excel).
       * **Correo**
 
          * **De**
@@ -1107,7 +1107,7 @@ Si utiliza una **ruta de carga** puede cargar previamente el formulario con valo
 
          * **El posible cliente se eliminará de esta lista**
 
-            Especifique la lista de posibles clientes requerida.
+            Especifique la lista de posibles clientes necesaria.
 
 
 
@@ -1174,7 +1174,7 @@ Se pueden configurar distintos parámetros para este componente, incluyendo un m
 
 Una casilla de verificación permite crear una lista de una o varias casillas, algunas de las cuales se pueden activar al mismo tiempo.
 
-![dc_form_checkboxgrouput](assets/dc_form_checkboxgroupuse.png)
+![dc_form_checkboxgroupause](assets/dc_form_checkboxgroupuse.png)
 
 Es posible especificar varios parámetros, incluidos el título, una descripción y el nombre del elemento. Al utilizar los botones + y -, es posible añadir o eliminar elementos y posteriormente situarlos con las flechas arriba y abajo.
 
@@ -1188,7 +1188,7 @@ Es posible especificar varios parámetros, incluidos el título, una descripció
 
 Permite proporcionar los campos necesarios para introducir los datos de las tarjetas de crédito. Se puede configurar para especificar los tipos de tarjeta aceptadas y la información obligatoria (por ejemplo, el código de seguridad).
 
-![imagen_1-15](assets/chlimage_1-15.png)
+![chlimage_1-15](assets/chlimage_1-15.png)
 
 ### Lista desplegable {#dropdown-list}
 
@@ -1269,7 +1269,7 @@ Un grupo de opciones proporciona una lista de una o varias casillas de verificac
 
 Es posible especificar el nombre del elemento junto con un título y una descripción. Al utilizar los botones + y -, es posible añadir o eliminar elementos y posteriormente situarlos con las flechas arriba y abajo y especificar un valor por defecto si es necesario:
 
-![dc_form_radiogroupausa](assets/dc_form_radiogroupuse.png)
+![dc_form_radiogroupause](assets/dc_form_radiogroupuse.png)
 
 >[!NOTE]
 >
@@ -1321,4 +1321,4 @@ El campo de texto estándar se puede configurar con el tamaño necesario y con s
 
 Permite crear un botón de Enviar para utilizarlo en el flujo de trabajo.
 
-![imagen_1-16](assets/chlimage_1-16.png)
+![chlimage_1-16](assets/chlimage_1-16.png)

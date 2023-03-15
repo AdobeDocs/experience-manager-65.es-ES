@@ -53,7 +53,7 @@ Puede desarrollar sus propias secuencias de comandos para personalizar las pági
 
    Como la ruta de destino no existe de forma predeterminada, deberá crearla al hacerlo por primera vez.
 
-1. Vaya a `/apps/sling/servlet/errorhandler`. Aquí puede:
+1. Navegue hasta `/apps/sling/servlet/errorhandler`. Aquí puede:
 
    * edite la secuencia de comandos existente adecuada para proporcionar la información necesaria.
    * cree y edite una nueva secuencia de comandos para el código requerido.

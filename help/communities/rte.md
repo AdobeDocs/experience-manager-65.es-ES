@@ -1,7 +1,7 @@
 ---
 title: Elementos básicos del editor de texto enriquecido
 seo-title: Rich Text Editor Essentials
-description: Descripción general de la función Editor de texto enriquecido
+description: Resumen de las funciones del Editor de texto enriquecido
 seo-description: Rich text Editor feature overview
 uuid: f96015cc-114b-431a-a5ba-dc195c2a0b83
 contentOwner: msm-service
@@ -23,15 +23,15 @@ ht-degree: 3%
 
 Un editor de texto enriquecido (RTE) permite introducir texto con marcado.
 
-Para los componentes de Communities, mientras que es similar a la variable [editor de texto enriquecido en el entorno de creación](../../help/sites-authoring/rich-text-editor.md), afecta al texto introducido en el entorno de publicación.
+Para los componentes de Communities, aunque es similar a la [editor de texto enriquecido en el entorno de creación](../../help/sites-authoring/rich-text-editor.md), afecta al texto introducido en el entorno de publicación.
 
-![rich-text-editor](assets/rich-text-editor.png)
+![editor de texto enriquecido](assets/rich-text-editor.png)
 
-## Habilitación del editor de texto enriquecido {#enabling-rich-text-editor}
+## Habilitar el editor de texto enriquecido {#enabling-rich-text-editor}
 
-Los componentes de Communities que permiten el contenido generado por el usuario (UGC) pueden habilitarse para permitir RTE. Dependiendo de si el componente se agregó a una página o se incluyó dentro de un [function](functions.md), RTE puede o no estar habilitado de forma predeterminada.
+Los componentes de las comunidades que permiten contenido generado por el usuario (UGC) se pueden habilitar para permitir RTE. En función de si el componente se añadió a una página o se incluyó en una [función](functions.md), RTE puede estar o no habilitado de forma predeterminada.
 
-Si no está activada, simplemente introduzca [modo de edición de autor](sites-console.md#authoring-site-content), seleccione el componente para editar y el `Rich Text Editor` casilla de verificación.
+Si no está activada, simplemente introduzca [modo de edición de autor](sites-console.md#authoring-site-content), seleccione el componente para editarlo y seleccione el `Rich Text Editor` casilla de verificación
 
 RTE está disponible para los siguientes componentes de Communities:
 
@@ -46,23 +46,23 @@ RTE está disponible para los siguientes componentes de Communities:
 
 ## Personalización {#customization}
 
-La personalización del editor de texto enriquecido es posible, ya que la implementación se basa en [CKEditor](https://www.ckeditor.com/).
+La personalización del editor de texto enriquecido es posible porque la implementación se basa en lo siguiente [CKEditor](https://www.ckeditor.com/).
 
-La configuración actual de los componentes de Communities se encuentra en la `cq.social.  scf   clientlib`, ubicado en el repositorio en
+La configuración actual de los componentes de Communities se encuentra en `cq.social.  scf   clientlib`, ubicado en el repositorio en
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
-No se recomienda modificar la clientlib cq.social.scf, ya que las futuras actualizaciones pueden anular cualquier edición.
+No se recomienda modificar cq.social.scf clientlib, ya que las futuras actualizaciones pueden anular las ediciones.
 
 ### Personalización de ejemplo: Vínculos en línea {#example-customization-inline-links}
 
-Debido a problemas de seguridad, las opciones de hipervínculo no se incluyen en el conjunto de iconos de texto enriquecido que se presentan a los miembros de forma predeterminada. La capacidad para cometer delitos es amplia cuando se permiten hrefs en UGC.
+Por motivos de seguridad, las opciones de hipervínculos no se incluyen en el conjunto de iconos de texto enriquecido que se presentan a los miembros de forma predeterminada. La capacidad para la travesura es extensa cuando se permiten hrefs en UGC.
 
 Para agregar las opciones de hipervínculo a la barra de herramientas:
 
-* Agregar una barra de herramientas denominada &quot; `links`&quot;
+* Añada una barra de herramientas denominada &quot; `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
-* Select **[!UICONTROL Guardar todo]**
+* Seleccionar **[!UICONTROL Guardar todo]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
 

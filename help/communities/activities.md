@@ -22,80 +22,80 @@ ht-degree: 4%
 
 ## Introducción {#introduction}
 
-Las actividades de un miembro de la comunidad que ha firmado, como la publicación en un foro o blog, se recopilan en un flujo que puede filtrarse y mostrarse de varias maneras a través de la configuración de la `Activity Streams` componente.
+Las actividades de un miembro de la comunidad que ha iniciado sesión, como publicar en un foro o blog, se recopilan en un flujo que puede filtrarse y mostrarse de varias formas mediante la configuración del `Activity Streams` componente.
 
-La capacidad de seguir agrega otra visión de las actividades cuando los miembros de la comunidad siguen publicaciones de interés o siguen las actividades de otros miembros de la comunidad.
+La capacidad de seguir agrega otra vista de las actividades cuando los miembros de la comunidad siguen publicaciones de interés o siguen las actividades de otros miembros de la comunidad.
 
 El documento describe:
 
-* Adición del componente Flujos de actividad a un sitio AEM
+* AEM Adición del componente Flujos de actividad a un sitio de
 * Ajustes de configuración del componente Flujos de actividad
 
 ### Adición de flujos de actividad a una página {#adding-activity-streams-to-a-page}
 
-Si desea agregar un `Activity Streams` a una página en modo de autor, utilice el navegador de componentes para localizar
+Si se desea añadir un `Activity Streams` a una página en modo de autor, utilice el navegador de componentes para localizar
 
 * `Communities / Activity Streams`
 
-y arrástrela a su lugar en una página en la que deberían aparecer las emisiones de actividad.
+y arrástrela a su lugar en una página en la que deban aparecer flujos de actividad.
 
-Para obtener la información necesaria, visite [Conceptos básicos de los componentes de Communities](/help/communities/basics.md).
+Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
-Cuando la variable [bibliotecas requeridas del lado del cliente](/help/communities/essentials-activities.md#essentials-for-client-side) se incluyen, así es como se muestra la variable `Activity Streams` aparecerá el componente :
+Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/essentials-activities.md#essentials-for-client-side) están incluidos, así es como se `Activity Streams` el componente aparecerá :
 
-![flujos de actividad](assets/activity-component.png)
+![activity-streams](assets/activity-component.png)
 
 ### Configuración de flujos de actividad {#configuring-activity-streams}
 
-Seleccione la colocación `Activity Streams` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `Activity Streams` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
-![configure](assets/configure-new.png)
+![configurar](assets/configure-new.png)
 
-En el **Actividades del usuario** especifique qué actividades mostrar :
+En el **Actividades de usuario** , especifique qué actividades mostrar :
 
 ![user-activities](assets/user-activities.png)
 
 * **Número máximo de actividades**
 
-   El número de actividades que se van a mostrar
+   Número de actividades que se van a mostrar
 
 * **Ruta de medio de flujo**
 
-   Déjelo en blanco para acceder de forma predeterminada al sitio de la comunidad o al grupo de la comunidad. La ruta del recurso de flujo identifica el origen de las actividades. El valor predeterminado es en blanco.
+   Déjelo en blanco para establecer de forma predeterminada el sitio o el grupo de la comunidad. La ruta del recurso de flujo identifica el origen de las actividades. El valor predeterminado está en blanco.
 
 * **Mostrar vista de actividades de usuario**
 
-   Si se selecciona, la página actividades incluirá una pestaña que filtra las actividades en función de las generadas dentro de la comunidad por el miembro actual. El valor predeterminado está marcado.
+   Si se selecciona, la página de actividades incluirá una pestaña que filtra las actividades en función de las que genere el miembro actual dentro de la comunidad. La opción predeterminada está activada.
 
 * **Mostrar vista de todas las actividades**
 
-   Si se selecciona, la página actividades incluirá una pestaña que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. El valor predeterminado está marcado.
+   Si se selecciona, la página de actividades incluirá una pestaña que incluye todas las actividades generadas dentro de la comunidad a la que tiene acceso el miembro actual. La opción predeterminada está activada.
 
 * **Mostrar la vista siguiente**
 
-   Si se selecciona, la página actividades incluirá una pestaña que filtra las actividades en función de las que sigue el miembro actual. El valor predeterminado está marcado.
+   Si se selecciona, la página de actividades incluirá una pestaña que filtra las actividades en función de las que está siguiendo el miembro actual. La opción predeterminada está activada.
 
 ### Vista siguiente {#following-view}
 
-Los componentes deben configurarse para habilitar lo siguiente. Las funciones que permiten lo siguiente son: [blog](/help/communities/blog-feature.md), [foro](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendario](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md)y [comentarios](/help/communities/comments.md).
+Los componentes deben configurarse para habilitar lo siguiente. Las funciones que permiten lo siguiente son [blog](/help/communities/blog-feature.md), [foro](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendario](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md), y [comentarios](/help/communities/comments.md).
 
-![vista posterior](assets/following-activities.png)
+![vista siguiente](assets/following-activities.png)
 
-La variable **Seguir** proporciona un medio para seguir entradas como actividades, [notificaciones](/help/communities/notifications.md)o [suscripciones](/help/communities/subscriptions.md). Cada vez que se usa la variable **Seguir** está seleccionado, es posible activar o desactivar una selección. La variable `Email Subscriptions` La selección solo está presente cuando está configurada.
+El **Seguir** proporciona un medio para seguir las entradas como actividades, [notificaciones](/help/communities/notifications.md), o [suscripciones](/help/communities/subscriptions.md). Cada vez que **Seguir** botón está seleccionado, es posible activar o desactivar una selección. El `Email Subscriptions` la selección solo está presente cuando está configurada.
 
-Si se selecciona cualquier método de seguimiento, el texto del botón cambia a **A continuación**. Para mayor comodidad, es posible seleccionar `Unfollow All` para desactivar todos los métodos.
+Si se selecciona cualquier método de seguimiento, el texto del botón cambia a **Siguientes**. Para su comodidad, es posible seleccionar `Unfollow All` para desactivar todos los métodos.
 
-La variable **Seguir** aparecerá:
+El **Seguir** aparecerá el botón:
 
-* Al ver el perfil de otro miembro.
-* En una página de características principales, como foros, QnA y blogs.
+* Al ver el perfil de otro usuario.
+* En una página de características principal, como foros, control de calidad y blogs.
 
-   * Sigue toda la actividad de esa función general.
+   * Sigue toda la actividad de para esa función general.
 
 * Para una entrada específica, como un tema de foro, una pregunta de control de calidad o un artículo de blog.
 
-   * Sigue toda la actividad de esa entrada específica.
+   * Sigue todas las actividades de esa entrada específica.
 
 ### Información adicional {#additional-information}
 
-Puede encontrar más información en la [Elementos esenciales de flujos de actividad](/help/communities/essentials-activities.md) para desarrolladores.
+Puede encontrar más información en la [Activity Streams Essentials](/help/communities/essentials-activities.md) para desarrolladores.

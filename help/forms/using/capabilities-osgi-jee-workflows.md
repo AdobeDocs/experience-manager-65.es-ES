@@ -4,7 +4,7 @@ description: Acciones y capacidades de los flujos de trabajo de AEM centrados en
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 100%
 
@@ -56,7 +56,7 @@ Puede utilizar la bandeja de entrada de AEM para ejecutar y supervisar los flujo
   <tr>
    <td>Reasignar tareas</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Archivos adjuntos de nivel de campo para formularios adaptables</td>
@@ -76,17 +76,17 @@ Puede utilizar la bandeja de entrada de AEM para ejecutar y supervisar los flujo
   <tr>
    <td>Colas (cola personal compartida, Reclamar tareas de la cola)</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Notificación fuera de la oficina</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
     <tr>
    <td>Personalizar elementos de la interfaz de usuario</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Asignar una tarea a varios usuarios</td>
@@ -115,7 +115,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Integración con otras soluciones de AEM</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Firma manuscrita</td>
@@ -130,27 +130,27 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Definir la prioridad de la tarea</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Tiempo de espera de una tarea después de la fecha de vencimiento</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Bucles dentro del flujo de trabajo</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Selección dinámica de un usuario asignado </td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Usar metadatos personalizados</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Firma electrónica (Adobe Sign)</td>
@@ -175,27 +175,27 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Integración con Administración de correspondencia</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
    <tr>
    <td>Portales, SIN ESPERA </td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
    <tr>
    <td>Variables para almacenar datos </td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>OR, Y División</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Avatar del usuario</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Enviar un correo electrónico al final del flujo de trabajo</td>
@@ -205,7 +205,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Llamar a un servicio web desde un flujo de trabajo</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Firma digital</td>
@@ -245,32 +245,32 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Aplicación de formularios adaptables</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Servicio Assembler </td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Servicio Generador de PDF</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Servicio de Forms</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Servicio de salida</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Seguro de documento</td>
    <td>Compatible</td>
-   <td>Compatible </td>
+   <td>Compatible  </td>
   </tr>
   <tr>
    <td>Ejecutar script</td>
@@ -280,7 +280,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Assembler</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>  
   <tr>
    <td>Formularios HTML5, formularios PDF interactivos, Conjunto de formularios</td>
@@ -295,7 +295,7 @@ Flujos de trabajo de AEM centrados en Forms en flujos de trabajo de OSGi y JEE d
   <tr>
    <td>Firma digital</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Categorías de puntos de inicio</td>
@@ -410,12 +410,12 @@ La siguiente tabla muestra las capacidades de la bandeja de entrada de AEM y la 
   <tr>
    <td><p>Iniciar una aplicación de formulario</p> </td>
    <td><p>Compatible</p> </td>
-   <td><p>Compatible</p> </td>
+   <td><p>Compatible </p> </td>
   </tr>
   <tr>
    <td><p>Enviar tareas</p> </td>
    <td><p>Compatible</p> </td>
-   <td><p>Compatible</p> </td>
+   <td><p>Compatible </p> </td>
   </tr>
   <tr>
    <td><p>Delegar tareas</p> </td>
@@ -430,17 +430,17 @@ La siguiente tabla muestra las capacidades de la bandeja de entrada de AEM y la 
   <tr>
    <td><p>Agregar archivos adjuntos de nivel de tarea</p> </td>
    <td><p>Compatible</p> </td>
-   <td><p>Compatible</p> </td>
+   <td><p>Compatible </p> </td>
   </tr>
   <tr>
    <td><p>Visualizar archivos adjuntos en el nivel de tarea</p> </td>
    <td><p>Compatible</p> </td>
-   <td><p>Compatible</p> </td>
+   <td><p>Compatible </p> </td>
   </tr>
   <tr>
    <td><p>Agregar archivos adjuntos de nivel de campo</p> </td>
    <td><p>Compatible</p> </td>
-   <td><p>Compatible</p> </td>
+   <td><p>Compatible </p> </td>
   </tr>
   <tr>
    <td><p>Visualizar la vista de calendario</p> </td>
@@ -450,7 +450,7 @@ La siguiente tabla muestra las capacidades de la bandeja de entrada de AEM y la 
   <tr>
    <td><p>Adición de comentarios</p> </td>
    <td><p>Compatible</p> </td>
-   <td><p>Compatible</p> </td>
+   <td><p>Compatible </p> </td>
   </tr>
  </tbody>
 </table>

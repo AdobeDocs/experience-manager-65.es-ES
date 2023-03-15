@@ -1,5 +1,5 @@
 ---
-title: Elementos esenciales de la biblioteca de archivos
+title: Elementos básicos de biblioteca de archivos
 seo-title: File Library Essentials
 description: Uso de la función de biblioteca de archivos
 seo-description: Working with the file library feature
@@ -17,11 +17,11 @@ ht-degree: 2%
 
 ---
 
-# Elementos esenciales de la biblioteca de archivos {#file-library-essentials}
+# Elementos básicos de biblioteca de archivos {#file-library-essentials}
 
 Esta página proporciona la información esencial para trabajar con la función de biblioteca de archivos.
 
-## Elementos esenciales para el cliente {#essentials-for-client-side}
+## Essentials para el lado del cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -30,11 +30,11 @@ Esta página proporciona la información esencial para trabajar con la función 
    <td>social/filelibrary/components/hbs/filelibrary</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
    <td>cq.ckeditor<br /> cq.social.hbs.vote<br /> cq.social.hbs.filelibrary</td>
   </tr>
   <tr>
@@ -47,37 +47,37 @@ Esta página proporciona la información esencial para trabajar con la función 
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="file-library.md">Función de la biblioteca de archivos</a></td>
+   <td>Consulte <a href="file-library.md">Función Biblioteca de archivos</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizaciones del lado del cliente](client-customize.md)
 
-## Elementos esenciales para el servidor {#essentials-for-server-side}
+## Essentials para servidor {#essentials-for-server-side}
 
 * [API de biblioteca de archivos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [Puntos finales de la biblioteca de archivos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [Puntos finales de biblioteca de archivos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de la comunidad que incluye el [Función Biblioteca de archivos](functions.md#file-library-function), incluye un `file library` componente.
+Una estructura de sitio de la comunidad que incluye [Función Biblioteca de archivos](functions.md#file-library-function), incluye un configurado `file library` componente.
 
-### Acceso a los comentarios anunciados para bibliotecas de archivos (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
+### Acceder a los comentarios publicados para las bibliotecas de archivos (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
 
-UGC debe moderarse utilizando uno de los métodos estándar de moderación.
+La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir del AEM 6.1 Comunidades, se utilizará un [tienda común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Información general del proveedor de recursos de almacenamiento](srp.md) : introducción y descripción general del uso del repositorio.
-* [Elementos esenciales de SRP y UGC](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
+* [Resumen del proveedor de recursos de almacenamiento](srp.md) - introducción y descripción general del uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - directrices de codificación.
 * [Refactorización de SocialUtils](socialutils.md) : asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.

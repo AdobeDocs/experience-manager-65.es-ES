@@ -1,7 +1,7 @@
 ---
-title: Tendencias de actividad
+title: Tendencias de actividades
 seo-title: Activity Trends
-description: Adición de un componente de Lista de actividades de la comunidad a una página
+description: Adición de un componente de lista de actividades de la comunidad a una página
 seo-description: Adding a Community Activity List component to a page
 uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
 contentOwner: msm-service
@@ -18,25 +18,25 @@ ht-degree: 4%
 
 ---
 
-# Tendencias de actividad {#activity-trends}
+# Tendencias de actividades {#activity-trends}
 
 ## Introducción {#introduction}
 
-La variable `Community Activity List` proporciona la capacidad de agregar información de tendencias con respecto a anuncios y vistas por miembros, así como anuncios y vistas de contenido.
+El `Community Activity List` Este componente permite agregar información de tendencias sobre las publicaciones y las vistas de los miembros, así como publicaciones y vistas del contenido.
 
 El documento describe:
 
-* Adición de la variable `Community Activity List` componente a un [sitio de la comunidad](/help/communities/overview.md#community-sites).
+* Añadir el `Community Activity List` componente a [sitio comunitario](/help/communities/overview.md#community-sites).
 
 * Ajustes de configuración para `Community Activity List` componente.
 
 ### Requisito {#requirement}
 
-Los datos del `Community Activity List` solo está disponible cuando Adobe Analytics tiene licencia y está configurado para el sitio de la comunidad.
+Datos de la `Community Activity List` solo está disponible cuando Adobe Analytics tiene licencia y está configurado para el sitio de la comunidad.
 
-Consulte [Funciones de Configuración de Analytics para Communities](/help/communities/analytics.md).
+Consulte [Configuración de Analytics para funciones de Communities](/help/communities/analytics.md).
 
-### Adición de una lista de actividades de la comunidad a una página {#adding-a-community-activity-list-to-a-page}
+### Agregar una lista de actividades de la comunidad a una página {#adding-a-community-activity-list-to-a-page}
 
 Para agregar un `Community Activity List` a una página en modo de autor, busque el componente
 
@@ -44,27 +44,27 @@ Para agregar un `Community Activity List` a una página en modo de autor, busque
 
 y arrástrela a su lugar en una página.
 
-Para obtener la información necesaria, visite [Conceptos básicos de los componentes de Communities](/help/communities/basics.md).
+Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
-Cuando se coloca por primera vez en una página de un sitio de comunidad, así es como aparece el componente:
+Cuando se coloca por primera vez en una página de un sitio de la comunidad, así es como aparece el componente:
 
 ![actividad de la comunidad](assets/community-activity.png)
 
-### Configuración de la lista de actividades de la comunidad  {#configuring-community-activity-list}
+### Configurar la lista de actividades de comunidad  {#configuring-community-activity-list}
 
-Seleccione la colocación `Community Activity List` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `Community Activity List` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
-![configure](assets/configure-new.png)
+![configurar](assets/configure-new.png)
 
-En el **Comentarios** especifique si aparecen los comentarios de los archivos cargados y cómo aparecerán:
+En el **Comentarios** , especifique si aparecen los comentarios de los archivos cargados y cómo:
 
 ![propiedades](assets/activity-list-properties.png)
 
 * **Tipo**
 
-   Especifique si desea mostrar datos sobre los miembros de la comunidad o el contenido generado por el usuario (UGC).
+   Especifique si desea mostrar datos sobre los miembros de la comunidad o sobre el contenido generado por el usuario (UGC).
 
-   Seleccione entre:
+   Seleccionar de:
 
    * `Members`
    * `Content`
@@ -73,12 +73,12 @@ En el **Comentarios** especifique si aparecen los comentarios de los archivos ca
 
 * **Título que se mostrará**
 
-   Un título descriptivo que se mostrará encima de los datos, como `Trending Content`.
-El valor predeterminado no es título.
+   Título descriptivo que se mostrará sobre los datos, como `Trending Content`.
+El valor predeterminado es sin título.
 
 * **Número de de visualizaciones**
 
-   El número de elementos que desea enumerar.
+   Número de elementos que se van a enumerar.
 El valor predeterminado es 10.
 
 * **Tipo de actividad**
@@ -107,22 +107,22 @@ El valor predeterminado es 10.
 
 * **Ruta de contexto**
 
-   Proporciona la capacidad de ampliar el ámbito de la actividad a un subconjunto del sitio, como un Blog específico.
-El valor predeterminado es todo el sitio de la comunidad.
+   Proporciona la capacidad de asignar el ámbito de la actividad a un subconjunto del sitio, como un blog específico.
+De forma predeterminada, se muestra todo el sitio de la comunidad.
 
 * **Suma de recuento de miembros**
 
-   Cuando se anula la selección (se desactiva), solo se cuentan los anuncios de nivel superior. Por ejemplo, si el contexto es la página raíz (el valor predeterminado), se muestra una `Activity Type` de `Posts` nunca mostrará ninguna actividad, ya que no se puede publicar contenido en la página raíz. Cuando se selecciona, se incluyen los recuentos de todas las páginas descendientes.
-El valor predeterminado está marcado.
+   Cuando no está seleccionada (desactivada), solo se cuentan las publicaciones de nivel superior. Por ejemplo, si el contexto es la página raíz (el valor predeterminado), un `Activity Type` de `Posts` nunca mostrará ninguna actividad, ya que no hay capacidad para publicar contenido en la página raíz. Cuando se selecciona, se incluyen los recuentos de todas las páginas descendientes.
+La opción predeterminada está activada.
 
 ### Página de ejemplo con 4 componentes {#example-page-with-components}
 
 **Visitantes principales** config: Tipo = Miembros, Tipo de actividad = Vistas
 
-**Colaboradores principales** config: Tipo = Miembros, Tipo de actividad = Anuncios
+**Colaboradores principales** config: Tipo = Miembros, Tipo de actividad = Entradas
 
 **Contenido principal** config: Tipo = Contenido, Tipo de actividad = Vistas,
 
-**Tendencias de contenido** config: Tipo = Contenido, Tipo de actividad = Anuncios
+**Contenido de tendencias** config: Tipo = Contenido, Tipo de actividad = Publicaciones
 
 ![componentes](assets/activity-list-components.png)

@@ -25,10 +25,10 @@ Esta sección le ofrece una descripción general de las principales tareas que u
 Cubre:
 
 * [Introducción](#getting-started)\
-   Detalla la secuencia básica de eventos necesaria para crear y publicar su primera página.
+   Detallando la secuencia básica de eventos que necesita para crear y publicar su primera página.
 
 * [Más acciones](#further-actions)\
-   A continuación, se incluyen muchas otras acciones que puede utilizar durante la creación.
+   Continuando con las muchas otras acciones que puede utilizar durante la creación.
 
 ## Introducción {#getting-started}
 

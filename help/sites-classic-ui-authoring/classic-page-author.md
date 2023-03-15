@@ -1,7 +1,7 @@
 ---
 title: Creación de páginas
 seo-title: Authoring Pages
-description: 'Hay dos descripciones generales para la creación con AEM. (1) Primeros pasos de creación: introducción para nuevos autores, y (2) Guía rápida para la creación de páginas: una guía rápida (de alto nivel) sobre las principales acciones.'
+description: 'AEM La creación con el servicio de información general tiene dos aspectos (1) Primeros pasos para los autores: una introducción para los nuevos autores y (2) Guía rápida para la creación de páginas: una guía rápida (de alto nivel) para las acciones principales.'
 seo-description: There are two overviews to authoring with AEM. (1) First Steps for Authors - an introduction for new authors, and (2) Quick Guide to Authoring Pages - a quick guide (high-level) to the main actions.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
@@ -19,7 +19,7 @@ ht-degree: 86%
 
 # Creación de páginas{#authoring-pages}
 
-A continuación se ofrece una descripción general de la creación con AEM:
+AEM A continuación se ofrece una descripción general de la creación con la ayuda de la creación de:
 
 * [Primeros pasos de creación:](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) introducción para autores nuevos
 

@@ -10,7 +10,7 @@ discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ La estructura contiene datos con los siguientes modos de entrada:
 
 * Texto estático
 * Modelo de datos de formulario
-* IU del agente
+* IU del Agente
 * Datos condicionales
 * Imágenes
 

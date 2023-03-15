@@ -1,7 +1,7 @@
 ---
 title: Configuración de almacenamiento
 seo-title: Storage Configuration
-description: Acceso a la Consola de Configuración de Almacenamiento
+description: Cómo acceder a la consola de configuración de almacenamiento
 seo-description: How to access the Storage Configuration Console
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
@@ -20,42 +20,42 @@ ht-degree: 4%
 
 # Configuración de almacenamiento {#storage-configuration}
 
-La configuración del almacenamiento es la forma de identificar el almacenamiento elegido para el contenido de la comunidad, también conocido como contenido generado por el usuario (UGC).
+La configuración de almacenamiento es el medio para identificar el almacenamiento elegido para el contenido de la comunidad, también conocido como contenido generado por el usuario (UGC).
 
-Esta configuración informa al código de AEM Communities de qué implementación del proveedor de recursos de almacenamiento (SRP) se utilizará al acceder a UGC y debe reflejar la topología establecida cuando se implementó AEM.
+Esta configuración informa al código AEM Communities AEM de qué implementación del proveedor de recursos de almacenamiento (SRP) se va a utilizar al acceder a UGC y debe reflejar la topología establecida cuando se implementó el.
 
-Para un análisis de las opciones de almacenamiento y las topologías de implementación, visite:
+Para ver un análisis de las opciones de almacenamiento y las topologías de implementación, visite:
 
-* [Almacenamiento de contenido de la comunidad](working-with-srp.md)
+* [Almacenamiento de contenido de comunidad](working-with-srp.md)
 * [Topologías recomendadas](topologies.md)
 
 ## Consola de configuración de almacenamiento {#storage-configuration-console}
 
 ![jsrp-configuration](assets/jsrp-configuration.png)
 
-En el entorno de creación, para llegar a la consola de configuración de almacenamiento.
+En el entorno de creación, para acceder a la consola de configuración de Storage.
 
-* En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Configuración de almacenamiento]**
+* En la navegación global, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Communities]** > **[!UICONTROL Configuración de almacenamiento]**
 
 Para seleccionar una opción de almacenamiento que no sea el JCR predeterminado:
 
 * Seleccione una opción
 * Configure correctamente
 
-   * Consulte los detalles para [selección de MSRP](msrp.md#select-msrp)
-   * Consulte los detalles para [seleccionar DSRP](dsrp.md#select-dsrp)
-   * Consulte los detalles para [seleccionar ASRP](asrp.md#select-asrp)
+   * Ver detalles de [seleccionar MSRP](msrp.md#select-msrp)
+   * Ver detalles de [seleccionar DSRP](dsrp.md#select-dsrp)
+   * Ver detalles de [seleccionar ASRP](asrp.md#select-asrp)
 
 * Seleccione **[!UICONTROL Enviar]**.
 
 ### Acerca del almacenamiento JCR {#about-jcr-storage}
 
-Tenga en cuenta que si no se realiza ninguna selección, el valor predeterminado es el repositorio AEM, JCR.
+AEM Tenga en cuenta que si no se realiza ninguna selección, el valor predeterminado es el repositorio de, JCR.
 
-JCR es *not* una tienda común compartida por los entornos de autor y publicación. El contenido de la comunidad solo será visible desde el entorno de creación o publicación en el que se creó.
+JCR es *no* un almacén común compartido por los entornos de creación y publicación. El contenido de la comunidad solo será visible desde el entorno de creación o publicación en el que se creó.
 
-Visita [Almacenamiento JCR](jsrp.md) para obtener más información.
+Visita [Almacén JCR](jsrp.md) para obtener más información.
 
 >[!NOTE]
 >
->La ausencia del nodo `srpc` under `/etc/socialconfig` indica el valor predeterminado [Almacén JCR](jsrp.md).
+>La ausencia del nodo `srpc` bajo `/etc/socialconfig` indica el valor predeterminado [Almacén JCR](jsrp.md).

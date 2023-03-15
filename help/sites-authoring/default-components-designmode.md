@@ -35,7 +35,7 @@ Además de estos, también hay otros componentes disponibles. Se puede utilizar 
 >
 >El modo de diseño solo está disponible para las configuraciones de diseño almacenadas como contenido en ( `/etc`).
 >
->A partir de AEM 6.4, se recomienda almacenar los diseños como datos de configuración en `/apps` para admitir escenarios de implementación continuos. Diseños almacenados en `/apps` no se pueden editar durante la ejecución y el modo Diseño no estará disponible para los usuarios que no sean administradores para estas plantillas.
+>AEM A partir de la versión 6.4, se recomienda almacenar los diseños como datos de configuración en `/apps` para admitir escenarios de implementación continua. Diseños almacenados en `/apps` no se pueden editar durante la ejecución y el modo Diseño no estará disponible para los usuarios que no sean administradores de dichas plantillas.
 
 Esto implica añadir o quitar los componentes permitidos en el sistema de párrafos de la página. El sistema de párrafos (`parsys`) es un componente compuesto que contiene todos los demás componentes de párrafos. El sistema de párrafos permite a los autores añadir componentes de distintos tipos a una página, ya que contiene todos los demás componentes de párrafos. Cada tipo de párrafo se representa como un componente.
 
@@ -91,7 +91,7 @@ Para activar o desactivar un componente:
 
    **Componentes permitidos**
 
-   En el **Componentes permitidos** , puede definir qué componentes están disponibles para parsys.
+   En el **Componentes permitidos** , se definen qué componentes están disponibles para parsys.
 
    * Los componentes se agrupan por grupos de componentes, que se pueden expandir y contraer.
    * Es posible seleccionar un grupo completo marcando la casilla del nombre del grupo, y se puede anular la selección de todo desactivando la casilla de verificación.
@@ -109,7 +109,7 @@ Para activar o desactivar un componente:
 
    En la ficha **Configuración**, puede definir opciones adicionales como, por ejemplo, para dibujar un anclaje para cada componente y definir el margen de celdas de cada contenedor.
 
-1. Select **Listo** para guardar la configuración.
+1. Seleccionar **Listo** para guardar la configuración.
 
 ## Configuración del diseño de un componente {#configuring-the-design-of-a-component}
 
@@ -151,9 +151,9 @@ Para activar o desactivar un componente:
 
    Utilice el botón **Añadir** para agregar más entradas a la lista del cuadro de diálogo de entrada múltiple.
 
-   ![imagen_1-94](assets/chlimage_1-94.png)
+   ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Utilice el icono** Eliminar **para eliminar una entrada de una lista de cuadros de diálogo de entrada múltiple.
+   Utilice el icono** Eliminar ** para eliminar una entrada de una lista de cuadros de diálogo de varias entradas.
 
    ![](do-not-localize/screen_shot_2018-03-22at103809.png)
 

@@ -1,7 +1,7 @@
 ---
-title: Trabajo con operaciones y ramas estancadas
+title: Trabajar con operaciones y ramas estancadas
 seo-title: Working with stalled operations and branches
-description: La página Operaciones interrumpidas y la página Ramas interrumpidas muestran los procesos que se han estancado.
+description: La página Operaciones paralizadas y la página Ramas paralizadas muestran los procesos que se han paralizado.
 seo-description: The Stalled Operations page and the Stalled Branches page show the processes that have stalled.
 uuid: 5f6202b0-79c2-4c3c-847a-236c0366e60b
 contentOwner: admin
@@ -13,74 +13,74 @@ exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '707'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Trabajo con operaciones y ramas estancadas {#working-with-stalled-operations-and-branches}
+# Trabajar con operaciones y ramas estancadas {#working-with-stalled-operations-and-branches}
 
-La página Operaciones interrumpidas y la página Ramas interrumpidas muestran los procesos que se han estancado. Un proceso puede paralizarse cuando se produce un error durante o después de la ejecución de una operación o debido a una operación de paralización deliberada en el proceso:
+La página Operaciones paralizadas y la página Ramas paralizadas muestran los procesos que se han paralizado. Un proceso se puede detener cuando se produce un error durante o después de la ejecución de una operación o debido a una operación de detención deliberada en el proceso:
 
-* Las operaciones se pueden detener debido a un error imprevisto. Sin embargo, una operación de bifurcación en un proceso impide deliberadamente que un proceso siga ejecutándose y requiere la intervención del administrador.
-* Las ramas se pueden paralizar entre operaciones durante una evaluación de regla.
+* Las operaciones pueden detenerse debido a un error imprevisto. Sin embargo, una operación de Rama de detención en un proceso detiene deliberadamente la ejecución de un proceso y requiere la intervención del administrador.
+* Las ramas pueden detenerse entre operaciones durante una evaluación de regla.
 
-Cuando un proceso se detiene, no se ejecutan más operaciones hasta que se soluciona el problema y se reinicia la operación o rama.
+Cuando se detiene un proceso, no se ejecutan más operaciones hasta que se soluciona el problema y se reinicia la operación o rama.
 
-La lista muestra la siguiente información para cada elemento bloqueado:
+Para cada elemento parado, la lista muestra la siguiente información:
 
 **Nombre de operación o nombre de rama:** Nombre de la operación o rama.
 
-**Estado:** Siempre está paralizado para los elementos paralizados.
+**Estado:** Siempre PARALIZADO para elementos paralizados.
 
-**Error:** Una breve descripción del problema.
+**Error:** Breve descripción del problema.
 
-**ID de proceso:** El entero positivo que asigna el flujo de trabajo de formularios cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inician un proceso). Puede utilizar este identificador para rastrear la instancia de proceso a lo largo de su ciclo de vida.
+**ID de proceso:** El entero positivo que asigna el flujo de trabajo de Forms cuando se crea una instancia del proceso (es decir, cuando un usuario o un paso automatizado inicia un proceso). Puede utilizar este identificador para realizar un seguimiento de la instancia de proceso a lo largo de su ciclo de vida.
 
 **Nombre del proceso - Versión:** Nombre del proceso asignado en Workbench.
 
-**Fecha de interrupción:** La fecha y hora en que la operación o rama se ha estancado.
+**Fecha de detención:** La fecha y hora en que se detuvo la operación o rama.
 
-Puede realizar las siguientes tareas en la página Operaciones paralizadas o Ramas paralizadas :
+Puede realizar las siguientes tareas en la página Operaciones paralizadas o Ramas paralizadas:
 
-* Seleccione un error para ver los detalles sobre él. Cuando selecciona un error, aparece la página Detalles del error.
-* Finalice o vuelva a intentar las operaciones interrumpidas o vuelva a intentar las ramas interrumpidas.
+* Seleccione un error para ver los detalles al respecto. Cuando selecciona un error, aparece la página Detalles del Error.
+* Finalizar o reintentar operaciones estancadas o reintentar ramas estancadas.
 
-## Finalización o reintento de operaciones o sucursales interrumpidas {#terminating-or-retrying-stalled-operations-or-branches}
+## Finalizar o reintentar operaciones o ramas estancadas {#terminating-or-retrying-stalled-operations-or-branches}
 
-En la página Operaciones paralizadas , puede finalizar las instancias de proceso mostradas.
+En la página Operaciones estancadas, puede finalizar las instancias de proceso mostradas.
 
-Cuando finaliza una instancia de proceso, esta deja de ejecutarse y no se realizan más operaciones. Normalmente, un proceso finaliza solo si queda bloqueado o inutilizable debido a un error y no se puede corregir ni reiniciar.
+Al finalizar una instancia de proceso, esta deja de ejecutarse y no se realizan más operaciones. Normalmente, un proceso solo se finaliza si se bloquea o deja de utilizarse debido a un error y no se puede corregir ni reiniciar.
 
-En la página Operaciones paralizadas o en la página Ramas paralizadas , puede reintentar la operación o rama.
+En la página Operaciones bloqueadas o en la página Ramas bloqueadas, puede volver a intentar la operación o rama.
 
-Cuando vuelve a intentar una operación, se envía una solicitud al flujo de trabajo de Forms para reiniciar la operación. Si el error que provocó que el proceso se paralizara se ha corregido y la solicitud de reintento se ha realizado correctamente, el proceso comienza a ejecutarse de nuevo desde el punto en que se había estancado y su estado cambia a EJECUTANDO. Si la operación no se puede reiniciar, permanece STALLED y es posible que tenga que terminarla.
+Al reintentar una operación, el flujo de trabajo de Forms se envía a una solicitud para reiniciar la operación. Si se ha corregido el error que provocó que el proceso se detuviera y la solicitud de reintento se realiza correctamente, el proceso vuelve a ejecutarse desde el punto en que se detuvo y su estado cambia a EN EJECUCIÓN. Si la operación no se puede reiniciar, permanece DETENIDA y es posible que tenga que finalizarla.
 
-### Finalización de una operación interrumpida {#terminate-a-stalled-operation}
+### Finalizar una operación detenida {#terminate-a-stalled-operation}
 
-1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios > Errores de operaciones interrumpidas.
-1. En la página Operaciones interrumpidas , seleccione el artículo que desee finalizar y haga clic en Finalizar.
+1. En la consola de administración, haga clic en Servicios > Forms workflow > Errores de operaciones detenidas.
+1. En la página Operaciones interrumpidas, seleccione el elemento que desea finalizar y haga clic en Finalizar.
 
-### Reintentar una operación o rama interrumpida {#retry-a-stalled-operation-or-branch}
+### Reintentar una operación o rama estancada {#retry-a-stalled-operation-or-branch}
 
-1. En la consola de administración, haga clic en Servicios > flujo de trabajo de formularios y, a continuación, haga clic en Errores de operaciones interrumpidas o Errores de ramas interrumpidas.
-1. En la página Operaciones interrumpidas o Ramas interrumpidas , seleccione el elemento que desee reintentar y haga clic en Reintentar.
+1. En la consola de administración, haga clic en Servicios > Flujo de trabajo de formularios y, a continuación, haga clic en Errores de operaciones paralizadas o Errores de ramas paralizadas.
+1. En la página Operaciones paralizadas o Ramas paralizadas, seleccione el elemento que desea reintentar y haga clic en Reintentar.
 
-## Visualización de detalles de error sobre operaciones o ramas interrumpidas {#viewing-error-details-about-stalled-operations-or-branches}
+## Visualización de detalles de error sobre operaciones o ramas estancadas {#viewing-error-details-about-stalled-operations-or-branches}
 
-Si selecciona un error en la lista de elementos detenidos de la página Operaciones interrumpidas o Ramas interrumpidas, aparecerá la página Detalles del error, que muestra detalles sobre el error que pueden ayudarle a solucionar el problema.
+Si selecciona un error de la lista de elementos paralizados en la página Operaciones paralizadas o Ramas paralizadas, aparecerá la página Detalles del error, que muestra detalles sobre el error que pueden ayudarle a solucionar el problema.
 
-El cuadro de la parte inferior de la página contiene la información de error.
+El cuadro de la parte inferior de la página contiene la información del error.
 
-También puede finalizar o reintentar operaciones interrumpidas y reintentar ramas interrumpidas desde la página Detalles del error .
+También puede finalizar o reintentar operaciones estancadas, y reintentar ramas estancadas, desde la página Detalles del error.
 
 ## El proceso no se detiene cuando el usuario de escalación no existe {#process-does-not-stall-when-escalation-user-does-not-exist}
 
-Los errores se producen cuando la operación Asignar tarea del servicio Usuario de formularios AEM está configurada para escalar la tarea a otro usuario después de un período de tiempo específico y el usuario de escalación se elimina después de que se ejecute la operación Asignar tarea pero antes de que se produzca la escalación.
+AEM Se producen errores cuando la operación Asignar tarea en el servicio de usuario de formularios de la aplicación se configura para escalar la tarea a otro usuario después de un período de tiempo específico, y el usuario de escalación se elimina después de que se ejecute la operación Asignar tarea, pero antes de que se produzca la escalación.
 
-Cuando se produce esta situación, el estado del proceso y la tarea no cambia en el momento de escalación configurado y la escalación no se produce pero el proceso no se detiene. El siguiente mensaje aparece en el registro del servidor:
+Cuando se produce esta situación, el estado del proceso y la tarea no cambia en el momento de escalación configurado y la escalación no se produce, pero el proceso no se detiene. El siguiente mensaje aparece en el registro del servidor:
 
-&quot;La entidad de seguridad especificada para la escalación no es válida para taskID: *number*, cola especificada: *number*.&quot;
+&quot;La entidad de seguridad especificada para la escalación no es válida, para taskID: *número*, cola especificada: *número*.&quot;
 
-Si el usuario de escalación se elimina antes de que se genere la tarea (antes de que se ejecute la operación Asignar tarea), se detendrá el proceso o se generará el evento de excepción InvalidPrincipal.
+Si se elimina el usuario de escalación antes de que se genere la tarea (antes de que se ejecute la operación Asignar tarea), el proceso se detendrá o se producirá el evento de excepción InvalidPrincipal.
 
-Para evitar este problema, al eliminar un usuario, busque tareas que pertenezcan a ese usuario y tratarlas según corresponda. (Consulte [Trabajo con tareas](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+Para evitar este problema, cuando elimine un usuario, busque tareas que pertenezcan a ese usuario y haga frente a ellas en consecuencia. (Consulte [Trabajar con tareas](/help/forms/using/admin-help/tasks.md#working-with-tasks).)

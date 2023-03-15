@@ -70,7 +70,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 * **Problema:**
 
-   * Al usar la variable **Buscar y reemplazar** puede suceder que no todas las instancias de la variable `find` en una página.
+   * Al usar el **Buscar y reemplazar** opción puede ocurrir que no todas las instancias de la variable `find` Los términos se reemplazan en una página.
 
 * **Motivo**:
 

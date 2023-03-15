@@ -1,7 +1,7 @@
 ---
 title: Hoja de referencia de Sling
 seo-title: Sling Cheatsheet
-description: Una sencilla referencia de Sling
+description: Una referencia sencilla de Sling
 seo-description: An easy Sling reference
 uuid: 8e5e90da-2e97-45a4-be06-91e5e07e5bed
 contentOwner: Guillaume Carlino
@@ -21,4 +21,4 @@ ht-degree: 13%
 
 ![Explicación de la resolución de scripts de Apache Sling.](assets/sling-cheatsheet-01.png)
 
-![Uso de SlingPostServlet : este es el controlador predeterminado para las solicitudes de POST; puede hacer casi cualquier cosa.](assets/sling-cheatsheet-02.png)
+![Uso de SlingPostServlet: este es el controlador predeterminado para las solicitudes de los POST; puede hacer casi cualquier cosa.](assets/sling-cheatsheet-02.png)

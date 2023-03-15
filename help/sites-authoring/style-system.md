@@ -130,7 +130,7 @@ Con el componente configurado, AEM insertará automáticamente en el elemento de
 
 ### Activar la pestaña Estilos en el cuadro de diálogo Editar {#enable-styles-tab-edit}
 
-A partir de AEM versión 6.5.3.0 ya está disponible una pestaña Estilos opcional en el cuadro de diálogo Editar. A diferencia de la pestaña Cuadro de diálogo de diseño, la pestaña en el cuadro de diálogo Editar no es esencial para que funcione el sistema de estilos, pero es una interfaz alternativa opcional para que un autor de contenido defina estilos.
+AEM A partir de la versión 6.5.3.0 de la, una pestaña opcional de Estilos en el cuadro de diálogo de edición ya está disponible. A diferencia de la pestaña Cuadro de diálogo de diseño, la pestaña en el cuadro de diálogo Editar no es esencial para que funcione el sistema de estilos, pero es una interfaz alternativa opcional para que un autor de contenido defina estilos.
 
 La pestaña Editar del cuadro de diálogo se puede incluir de forma similar a la pestaña Diseño:
 

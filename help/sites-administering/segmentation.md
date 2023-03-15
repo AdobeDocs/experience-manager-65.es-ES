@@ -13,7 +13,7 @@ exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1787'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
@@ -21,33 +21,33 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->En esta sección se describe la configuración de la segmentación al utilizar ContextHub. Si utiliza la funcionalidad Client Context, consulte la documentación relevante para [configuración de segmentación para Client Context](/help/sites-administering/campaign-segmentation.md).
+>En esta sección se describe la configuración de la segmentación al utilizar ContextHub. Si utiliza la funcionalidad de Client Context, consulte la documentación pertinente de [configuración de la segmentación para Client Context](/help/sites-administering/campaign-segmentation.md).
 
-La segmentación es una consideración clave al crear una campaña. Consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md) para obtener información sobre cómo funciona la segmentación y términos clave.
+La segmentación es una consideración clave al crear una campaña. Consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md) para obtener información sobre cómo funciona la segmentación y los términos clave.
 
 En función de la información que ya haya recopilado acerca de los visitantes del sitio y los objetivos que quiera lograr, deberá definir los segmentos y las estrategias necesarios para el contenido de destino.
 
-Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Este contenido se mantiene en la variable [Personalización](/help/sites-authoring/personalization.md) del sitio web. Las [Actividades](/help/sites-authoring/activitylib.md) definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
+Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Este contenido se mantiene en la variable [Personalización](/help/sites-authoring/personalization.md) de la página web. Las [Actividades](/help/sites-authoring/activitylib.md) definidas aquí se pueden incluir en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
-AEM permite personalizar fácilmente la experiencia de los usuarios. También le deja verificar los resultados de sus definiciones de segmento.
+AEM le permite personalizar fácilmente la experiencia de sus usuarios. También le deja verificar los resultados de sus definiciones de segmento.
 
 ## Acceso a segmentos {#accessing-segments}
 
-La variable [Audiencias](/help/sites-authoring/managing-audiences.md) se utiliza para administrar segmentos para ContextHub o Client Context, así como audiencias para su cuenta de Adobe Target. Esta documentación cubre la administración de segmentos para ContextHub. Para [Segmentos de ClientContext](/help/sites-administering/campaign-segmentation.md) y segmentos de Adobe Target, consulte la documentación pertinente.
+El [Audiencias](/help/sites-authoring/managing-audiences.md) La consola de se utiliza para administrar segmentos para ContextHub o Client Context, así como audiencias para su cuenta de Adobe Target. Esta documentación cubre la administración de segmentos para ContextHub. Para [Segmentos de ClientContext](/help/sites-administering/campaign-segmentation.md) y segmentos de Adobe Target, consulte la documentación pertinente.
 
 Para acceder a sus segmentos, debe seleccionar su configuración. En la navegación global, seleccione **Navegación > Personalización > Audiencias**. Verá las configuraciones disponibles:
 
 ![Audiencias: configuraciones](assets/segmentation-access-confs.png)
 
-Seleccione la configuración para ver los segmentos como, por ejemplo, WKND Site:
+Seleccione la configuración para ver los segmentos, por ejemplo WKND Site:
 
-![Audiencias: segmentos](assets/segmentation-access-segments.png)
+![Audiencias - Segmentos](assets/segmentation-access-segments.png)
 
 ## Editor de segmentos {#segment-editor}
 
-El **Editor de segmentos** le permite modificar con facilidad un segmento. Para editar un segmento, seleccione un segmento en la [lista de segmentos](/help/sites-administering/segmentation.md#accessing-segments) y haga clic en el botón **Editar** botón.
+El **Editor de segmentos** le permite modificar con facilidad un segmento. Para editar un segmento, seleccione uno en la [lista de segmentos](/help/sites-administering/segmentation.md#accessing-segments) y haga clic en **Editar** botón.
 
-![editor de segmentos](assets/segmenteditor.png)
+![segmenteditor](assets/segmenteditor.png)
 
 Con el explorador de componentes, puede añadir contenedores **AND** y **OR** para definir la lógica del segmento. A continuación, agregue componentes adicionales para comparar propiedades y valores o secuencias de comandos de referencia y otros segmentos para definir los criterios de selección (consulte [Creación de un nuevo segmento](#creating-a-new-segment)) y el escenario exacto para seleccionar el segmento.
 
@@ -55,7 +55,7 @@ Cuando toda la instrucción se evalúa como verdadera, el segmento se ha resuelt
 
 >[!CAUTION]
 >
->El editor de segmentos no comprueba la existencia de referencias circulares. Por ejemplo, el segmento A hace referencia a otro segmento B, que a su vez hace referencia al segmento A. Debe asegurarse de que los segmentos no contengan ninguna referencia circular.
+>El editor de segmentos no comprueba la existencia de referencias circulares. Por ejemplo, el segmento A hace referencia a otro segmento B, que a su vez hace referencia al A. Debe asegurarse de que los segmentos no contengan ninguna referencia circular.
 
 ### Contenedores {#containers}
 
@@ -134,7 +134,7 @@ Las siguientes referencias están disponibles listas para usarse y para vincular
 
 Para definir el nuevo segmento:
 
-1. Después [acceso a los segmentos](/help/sites-administering/segmentation.md#accessing-segments), [Vaya a la carpeta .](#organizing-segments) donde desea crear el segmento.
+1. Después de [acceder a los segmentos](/help/sites-administering/segmentation.md#accessing-segments), [vaya a la carpeta](#organizing-segments) donde desea crear el segmento.
 
 1. toque o haga clic en el botón Crear y seleccione **Crear segmento de ContextHub**.
 
@@ -156,7 +156,7 @@ Para definir el nuevo segmento:
 
    Establezca siempre un **Tipo de datos** si es posible, para garantizar que las comparaciones se evalúen correctamente. Consulte [Comparaciones](/help/sites-administering/segmentation.md#comparisons) para obtener más información.
 
-1. Haga clic en **OK** para guardar la definición:
+1. Clic **OK** para guardar su definición:
 1. Agregue más componentes según sea necesario. Puede formular expresiones boolean utilizando los componentes de contenedor para las comparaciones AND y OR (consulte [Uso de los contenedores AND y OR](/help/sites-administering/segmentation.md#using-and-and-or-containers) más abajo). Con el editor de segmentos puede eliminar componentes que ya no se necesitan o arrastrarlos a nuevas posiciones dentro de la instrucción.
 
 ### Uso de contenedores AND y OR {#using-and-and-or-containers}
@@ -166,15 +166,15 @@ Con los componentes de contenedor AND y OR, puede construir segmentos complejos 
 * El nivel superior de la definición es siempre el contenedor AND que se crea inicialmente. Esto no se puede cambiar, pero no afecta al resto de la definición del segmento.
 * Asegúrese de que tenga sentido anidar el contenedor. Los contenedores pueden verse como los corchetes de su expresión boolean.
 
-El siguiente ejemplo se utiliza para seleccionar visitantes que se consideran en nuestro grupo de edad avanzada:
+El siguiente ejemplo se utiliza para seleccionar visitantes que se consideran en nuestro grupo de edad principal:
 
-Hombre y entre 30 y 59 años
+Varón y entre 30 y 59 años
 
 O
 
-Mujeres y entre los 30 y los 59 años
+Mujer y entre 30 y 59 años
 
-Para empezar, coloque un componente contenedor OR dentro del contenedor AND predeterminado. Dentro del contenedor OR , agregue dos contenedores AND y dentro de ambos, puede agregar la propiedad o los componentes de referencia.
+Para empezar, coloque un componente contenedor OR dentro del contenedor AND predeterminado. Dentro del contenedor OR, se agregan dos contenedores AND y en ambos se puede agregar la propiedad o los componentes de referencia.
 
 ![screen_shot_2012-02-02at105145am](assets/screen_shot_2012-02-02at105145ama.png)
 
@@ -308,7 +308,7 @@ Una vez definido el segmento, se pueden probar los resultados potenciales con la
 1. Seleccione un perfil que coincida con el segmento que ha creado
 1. ContextHub resolverá los segmentos aplicables para el personaje seleccionado
 
-Por ejemplo, nuestra definición de segmento simple para identificar a los usuarios en nuestro grupo de edad avanzada es una definición de segmento simple basada en la edad y el sexo del usuario. Al cargar un perfil específico que coincida con esos criterios, se muestra si el segmento se ha resuelto correctamente:
+Por ejemplo, nuestra definición de segmento simple para identificar a los usuarios en nuestro grupo de edad principal es una definición de segmento simple basada en la edad y el sexo del usuario. Al cargar un perfil específico que coincida con esos criterios, se muestra si el segmento se ha resuelto correctamente:
 
 ![screen_shot_2012-02-02at105926am](assets/screen_shot_2012-02-02at105926am.png)
 
@@ -322,7 +322,7 @@ O si no se resuelve:
 
 Estas pruebas también se pueden realizar en páginas de contenido y en combinación con contenido de destino y **Actividades** y **Experiencias** relacionadas.
 
-Si ha configurado una actividad y experiencia utilizando el ejemplo del segmento de grupo de edad superior anterior, puede probar fácilmente el segmento con la actividad . Para obtener más información sobre la configuración de una actividad, consulte la [documentación sobre la creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md).
+Si ha configurado una actividad y experiencia utilizando el ejemplo de segmento de grupo de edad principal anterior, puede probar fácilmente el segmento con la actividad. Para obtener más información sobre la configuración de una actividad, consulte la [documentación sobre la creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md).
 
 1. En el modo de edición de una página en la que ha configurado contenido de destino, puede ver que el contenido se orienta mediante un icono de flecha en el contenido.
 
@@ -338,4 +338,4 @@ Si ha configurado una actividad y experiencia utilizando el ejemplo del segmento
 
 ## Uso del segmento {#using-your-segment}
 
-Los segmentos se utilizan para dirigir el contenido real que ven las audiencias de destino específicas. Consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md) para obtener más información sobre audiencias y segmentos, y [Creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md) acerca del uso de audiencias y segmentos para segmentar contenido.
+Los segmentos se utilizan para dirigir el contenido real que ven determinadas audiencias de destino. Consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md) para obtener más información sobre audiencias y segmentos, y [Creación de contenido de destino](/help/sites-authoring/content-targeting-touch.md) acerca del uso de audiencias y segmentos para segmentar contenido.

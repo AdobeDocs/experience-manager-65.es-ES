@@ -1,6 +1,6 @@
 ---
 title: Fin de vida útil del visualizador DHTML
-description: A partir del 31 de enero de 2014, la plataforma del visor DHTML finaliza oficialmente su vida útil.
+description: A partir del 31 de enero de 2014, la plataforma del visor DHTML quedará obsoleta oficialmente.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -16,9 +16,9 @@ ht-degree: 0%
 
 # Fin de vida útil del visualizador DHTML {#dhtml-viewer-end-of-life}
 
-A partir del 31 de enero de 2014, la plataforma del visor DHTML finaliza oficialmente su vida útil.
+A partir del 31 de enero de 2014, la plataforma del visor DHTML quedará obsoleta oficialmente.
 
-Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) para los últimos visores compatibles.
+Consulte la [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) para los visores compatibles más recientes.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 

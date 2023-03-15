@@ -1,7 +1,7 @@
 ---
-title: "Base de datos de Microsoft SQL Server: Ajuste de la configuración"
+title: "Base de datos de Microsoft SQL Server: Ajustar la configuración"
 seo-title: "Microsoft SQL Server database: Fine-tuning the configuration"
-description: Aprenda cómo puede ajustar la configuración de la base de datos de Microsoft SQL Server.
+description: Aprenda a ajustar la configuración de la base de datos de Microsoft SQL Server.
 seo-description: Learn how you can fine tune the configuration of your Microsoft SQL Server database.
 uuid: 2d618aab-3c67-4edb-a28f-a20904689e6f
 contentOwner: admin
@@ -13,28 +13,28 @@ exl-id: 9c570827-86e2-47d5-b8ae-66c0767bff2e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Base de datos de Microsoft SQL Server: Ajuste de la configuración {#microsoft-sql-server-database-fine-tuning-the-configuration}
+# Base de datos de Microsoft SQL Server: Ajustar la configuración {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
-Debe cambiar la configuración predeterminada al usar Microsoft SQL Server. Haga clic con el botón derecho en el servidor local de Oracle Enterprise Manager para acceder al cuadro de diálogo de propiedades.
+Debe cambiar las opciones de configuración predeterminadas al utilizar Microsoft SQL Server. Haga clic con el botón derecho en el servidor local de Enterprise Manager de Oracle para acceder al cuadro de diálogo de propiedades.
 
 ## Configuración de memoria {#memory-settings}
 
-Cambie la asignación mínima de memoria a un número lo más grande posible. Si la base de datos se está ejecutando en un equipo independiente, utilice toda la memoria. La configuración predeterminada no asigna la memoria de forma agresiva, lo que dificulta el rendimiento en casi cualquier base de datos. Debe ser más agresivo a la hora de asignar memoria a las máquinas de producción.
+Cambie la asignación de memoria mínima al mayor número posible. Si la base de datos se está ejecutando en un equipo independiente, utilice toda la memoria. La configuración predeterminada no asigna memoria de forma agresiva, lo que dificulta el rendimiento en casi cualquier base de datos. Debe ser más agresivo a la hora de asignar memoria en las máquinas de producción.
 
-## Configuración del procesador {#processor-settings}
+## Ajustes del procesador {#processor-settings}
 
-Modifique la configuración del procesador y, lo que es más importante, active la casilla de verificación Mejorar la prioridad de SQL Server en Windows para que el servidor utilice tantos ciclos como sea posible. La configuración Usar fibras NT es menos importante, pero es posible que también desee seleccionarla.
+Modifique la configuración del procesador y, lo que es más importante, active la casilla de verificación Aumentar prioridad de SQL Server en Windows para que el servidor utilice tantos ciclos como sea posible. La configuración Usar fibras NT es menos importante, pero es posible que también desee seleccionarla.
 
-## Configuración de la base de datos {#database-settings}
+## Configuración de base de datos {#database-settings}
 
-Cambie la configuración de la base de datos. La configuración más importante es Intervalo de recuperación, que especifica la cantidad máxima de tiempo de espera para la recuperación después de un bloqueo. La configuración predeterminada es de un minuto. El uso de un valor mayor, de 5 a 15 minutos, mejora el rendimiento porque le da al servidor más tiempo para escribir cambios desde el registro de la base de datos de nuevo en los archivos de la base de datos.
+Cambiar la configuración de la base de datos. La configuración más importante es Intervalo de recuperación, que especifica la cantidad máxima de tiempo que se debe esperar para la recuperación después de un bloqueo. El valor predeterminado es de un minuto. El uso de un valor mayor, de 5 a 15 minutos, mejora el rendimiento porque da al servidor más tiempo para escribir los cambios del registro de base de datos en los archivos de base de datos.
 
 >[!NOTE]
 >
->Esta configuración no compromete el comportamiento transaccional porque solo cambia la duración de la reproducción del archivo de registro que debe realizarse al inicio.
+>Esta configuración no compromete el comportamiento transaccional porque cambia únicamente la duración de la reproducción del archivo de registro que debe realizarse al inicio.
 
-Establezca el tamaño asignado de espacio tanto para el registro como para el archivo de datos para que sea mucho mayor que la base de datos inicial. Tenga en cuenta cuánto puede crecer la base de datos a lo largo de un año. Lo ideal es que los archivos de registro y datos se asignen en forma contigua para que los datos no terminen fragmentados en todo el disco.
+Establezca el tamaño asignado para el registro y el archivo de datos en un valor mucho mayor que el de la base de datos inicial. Considere cuánto puede crecer la base de datos durante un año. Lo ideal es que los archivos de registro y de datos se asignen en una extensión contigua para que los datos no terminen fragmentados por todo el disco.

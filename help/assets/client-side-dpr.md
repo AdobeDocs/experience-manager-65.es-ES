@@ -1,5 +1,5 @@
 ---
-title: Uso de imágenes inteligentes con relación de píxeles de dispositivo del lado del cliente
+title: Uso de imágenes inteligentes con proporción de píxeles de dispositivo del lado del cliente
 description: Aprenda a utilizar la proporción de píxeles de dispositivo del lado del cliente con imágenes inteligentes en Adobe Experience Manager as a Cloud Service con Dynamic Media.
 role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
@@ -10,27 +10,27 @@ ht-degree: 0%
 
 ---
 
-# Acerca de las imágenes inteligentes con proporción de píxeles de dispositivo del lado del cliente (DPR) {#client-side-dpr}
+# Acerca de las imágenes inteligentes con proporción de píxeles de dispositivo (DPR) del lado del cliente {#client-side-dpr}
 
-La solución de imágenes inteligentes actual utiliza cadenas del agente de usuario para determinar el tipo de dispositivo (escritorio, tableta, móvil, etc.) que se está utilizando.
+La solución actual de imágenes inteligentes utiliza cadenas del agente de usuario para determinar el tipo de dispositivo (escritorio, tableta, móvil, etc.) que se está utilizando.
 
-Las capacidades de detección de dispositivos (RGPD basado en cadenas de agente de usuario) son inexactas a menudo, especialmente en dispositivos Apple. Además, cada vez que se inicia un nuevo dispositivo, debe validarse.
+Las funcionalidades de detección de dispositivos (DPR basadas en cadenas del agente de usuario) suelen ser inexactas, especialmente para dispositivos Apple. Además, cada vez que se inicie un nuevo dispositivo, debe validarse.
 
-El RGPD del lado del cliente le ofrece valores 100% precisos y funciona con cualquier dispositivo, ya sea Apple o cualquier otro dispositivo nuevo que se haya iniciado.
+El RGPD del lado del cliente le proporciona valores de precisión del 100 % y funciona para cualquier dispositivo, ya sea Apple o cualquier otro dispositivo nuevo que se haya iniciado.
 
-## Uso del código RGPD del lado del cliente
+## Usar el código DPR del lado del cliente
 
 **Aplicaciones procesadas del lado del servidor**
 
-1. Cargar inicio de trabajo del servicio (`srvinit.js`) incluyendo la siguiente secuencia de comandos en la sección del encabezado de la página del HTML:
+1. Cargar inicialización del trabajador de servicio (`srvinit.js`) al incluir la siguiente secuencia de comandos en la sección de encabezado de la página del HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   Adobe recomienda cargar esta secuencia de comandos _before_ cualquier otra secuencia de comandos para que el trabajador de servicio comience la inicialización inmediatamente.
+   El Adobe recomienda cargar este script _antes_ cualquier otro script para que el trabajador de servicio inicie la inicialización de inmediato.
 
-1. Incluya el siguiente código de etiqueta de imagen de RGPD en la parte superior de la sección de cuerpo de la página de HTML:
+1. Incluya el siguiente código de etiqueta de imagen DPR en la parte superior de la sección del cuerpo de la página de HTML:
 
    ```html
    <img src="aem_dm_dpr_1x.jpg" style="width:1px;height:1px;display:none"
@@ -41,25 +41,25 @@ El RGPD del lado del cliente le ofrece valores 100% precisos y funciona con cual
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   Es obligatorio incluir este código de etiqueta de imagen DPR _before_ todas las imágenes estáticas de la página HTML.
+   Es obligatorio incluir este código de etiqueta de imagen DPR _antes_ todas las imágenes estáticas de la página del HTML.
 
 **Aplicaciones procesadas del lado del cliente**
 
-1. Incluya las siguientes secuencias de comandos de RGPD en la sección del encabezado de la página HTML:
+1. Incluya los siguientes scripts de DPR en la sección de encabezado de la página de HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    <script type="text/javascript" src="dprImageInjection.js"></script>
    ```
 
-   Puede combinar ambos scripts de RGPD en uno para evitar múltiples solicitudes de red.
+   Puede combinar ambos scripts de DPR en uno para evitar varias solicitudes de red.
 
-   Adobe recomienda cargar estas secuencias de comandos _before_ cualquier otra secuencia de comandos de la página HTML.
-Adobe también recomienda almacenar en Bootstrap la aplicación en la etiqueta HTML de diferencias en lugar de en un elemento de cuerpo. La razón es porque `dprImageInjection.js` inserta dinámicamente la etiqueta de imagen en la parte superior de la sección del cuerpo en la página HTML.
+   El Adobe recomienda cargar estos scripts _antes_ cualquier otro script de la página del HTML.
+El Adobe también recomienda almacenar la aplicación en Bootstrap con la etiqueta de HTML de diferencia en lugar de con un elemento de cuerpo. La razón es porque `dprImageInjection.js` inserta dinámicamente la etiqueta de imagen en la parte superior de la sección del cuerpo en la página del HTML.
 
 ## Descarga de archivos JavaScript {#client-side-dpr-script}
 
-Los siguientes archivos JavaScript de la descarga solo se proporcionan como referencia de ejemplo. Si desea utilizar estos archivos en páginas de HTML, asegúrese de editar el código de cada archivo para que se ajuste a sus propios requisitos.
+Los siguientes archivos JavaScript de la descarga se proporcionan solo como referencia de ejemplo. Si tiene intención de utilizar estos archivos en páginas de HTML, asegúrese de editar el código de cada archivo para adaptarlo a sus necesidades.
 
 * `dprImageInjection.js`
 * `srvinit.js`

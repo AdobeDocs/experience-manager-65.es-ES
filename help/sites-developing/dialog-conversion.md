@@ -1,7 +1,7 @@
 ---
-title: Herramienta Conversión de cuadro de diálogo
+title: Herramienta de conversión de diálogos
 seo-title: Dialog Conversion Tool
-description: La herramienta de conversión de cuadro de diálogo se proporciona para ayudarle a ampliar los componentes existentes que solo tienen un cuadro de diálogo definido para la IU clásica
+description: La herramienta de conversión de cuadros de diálogo se proporciona para ayudarle a ampliar los componentes existentes que solo tienen un cuadro de diálogo definido para la IU clásica
 seo-description: The dialog conversion tool is provided to help you extend existing components that only have a dialog defined for the classic UI
 uuid: 999aeef5-3351-48e3-a02e-c960fa58f775
 contentOwner: Guillaume Carlino
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Herramienta Conversión de cuadro de diálogo{#dialog-conversion-tool}
+# Herramienta de conversión de diálogos{#dialog-conversion-tool}
 
-La herramienta de conversión de cuadro de diálogo se proporciona para ayudar a ampliar los componentes existentes que solo tienen un cuadro de diálogo definido para la IU clásica (basado en ExtJS) o basado en la IU de Granite y Coral 2. La herramienta utiliza el cuadro de diálogo original para crear un cuadro de diálogo duplicado diseñado para la IU estándar, basado en la IU de Granite y Coral 3.
+La herramienta de conversión de cuadros de diálogo se proporciona para ayudar a ampliar los componentes existentes que solo tienen un cuadro de diálogo definido para la IU clásica (basado en ExtJS) o basado en la IU de Granite y Coral 2. La herramienta utiliza el cuadro de diálogo original para crear un cuadro de diálogo duplicado diseñado para la interfaz de usuario estándar, basado en Granite UI y Coral 3.
 
-La herramienta de conversión de cuadro de diálogo forma parte de [Conjunto de herramientas de modernización de Adobe.](modernization-tools.md) Consulte esa documentación para obtener más información.
+La herramienta de conversión de diálogos forma parte de la [Conjunto de herramientas de modernización de Adobes.](modernization-tools.md) Consulte esa documentación para obtener más información.

@@ -1,7 +1,7 @@
 ---
-title: Aspectos básicos de la clasificación
+title: Rating Essentials
 seo-title: Rating Essentials
-description: Información general sobre los componentes de clasificación
+description: Resumen del componente Clasificación
 seo-description: Rating component overview
 uuid: 48ef61ad-be7a-4a6b-a284-23e5bb4f1671
 contentOwner: Guillaume Carlino
@@ -17,15 +17,15 @@ ht-degree: 1%
 
 ---
 
-# Aspectos básicos de la clasificación {#rating-essentials}
+# Rating Essentials {#rating-essentials}
 
-El componente de clasificación, un [tally](tally.md) , permite que los miembros de la comunidad que han iniciado sesión clasifiquen una función en el sitio web.
+El componente de calificación, a [corresponder](tally.md) subclase, permite a los miembros de la comunidad que han iniciado sesión clasificar una función del sitio web.
 
-Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con un `tally name` propiedad.
+Se permite colocar varias instancias de un componente de votación en la misma página; cada instancia debe configurarse con un único `tally name` propiedad.
 
-No se admite la publicación anónima de una clasificación. Los visitantes del sitio deben registrarse e iniciar sesión para participar en una clasificación solo una vez. El visitante (miembro) que haya iniciado sesión puede cambiar su clasificación en cualquier momento.
+No se admite la publicación anónima de una clasificación. Los visitantes del sitio deben registrarse e iniciar sesión para participar en una valoración solo una vez. El visitante (miembro) que ha iniciado sesión puede cambiar su clasificación en cualquier momento.
 
-## Elementos esenciales para el cliente {#essentials-for-client-side}
+## Essentials para el lado del cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -34,8 +34,8 @@ No se admite la publicación anónima de una clasificación. Los visitantes del 
    <td> social/tally/componentes/hbs/rating</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
-   <td>Sí: las propiedades se pueden editar en <i>diseño </i>mode</td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
+   <td>Sí, las propiedades se pueden editar en <i>diseño </i>modo</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -51,33 +51,33 @@ No se admite la publicación anónima de una clasificación. Los visitantes del 
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td><p>Consulte <a href="rating.md">Uso de la clasificación</a></p> </td>
+   <td><p>Consulte <a href="rating.md">Uso de clasificación</a></p> </td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizaciones del lado del cliente](client-customize.md)
 
-## Elementos esenciales para el servidor {#essentials-for-server-side}
+## Essentials para servidor {#essentials-for-server-side}
 
-* [API de Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API de recuento](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Puntos finales totales](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Extremos de recuento](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
-### Acceso a clasificaciones registradas (UGC) {#accessing-posted-ratings-ugc}
+### Acceso a valoraciones publicadas (UGC) {#accessing-posted-ratings-ugc}
 
-UGC debe moderarse utilizando uno de los métodos estándar de moderación.
+La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir del AEM 6.1 Comunidades, se utilizará un [tienda común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Información general del proveedor de recursos de almacenamiento](srp.md) : introducción y descripción general del uso del repositorio.
-* [Elementos esenciales de SRP y UGC](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
+* [Resumen del proveedor de recursos de almacenamiento](srp.md) - introducción y descripción general del uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - directrices de codificación.
 * [Refactorización de SocialUtils](socialutils.md) : asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.

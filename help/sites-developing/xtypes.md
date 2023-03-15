@@ -1,7 +1,7 @@
 ---
-title: Uso de xtype (IU clásica)
+title: Uso de xtypes (IU clásica)
 seo-title: Using xtypes (Classic UI)
-description: Obtenga información sobre todos los xtype disponibles con AEM
+description: AEM Obtenga información acerca de todos los xtype disponibles con la función de tipo de datos de la aplicación de
 seo-description: Learn about all the xtypes that are available with AEM
 uuid: 6497caa4-2f9b-4f21-9023-88d485fd1d78
 contentOwner: Guillaume Carlino
@@ -17,15 +17,15 @@ ht-degree: 0%
 
 ---
 
-# Uso de xtype (IU clásica){#using-xtypes-classic-ui}
+# Uso de xtypes (IU clásica){#using-xtypes-classic-ui}
 
-Esta página describe todos los xtype disponibles con Adobe Experience Manager (AEM).
+Esta página describe todos los xtype disponibles con Adobe Experience Manager AEM ().
 
-En el lenguaje ExtJS, un xtype es un nombre simbólico dado a una clase. Puede leer el párrafo &quot;Componente XTypes&quot; del [Descripción general de ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) para obtener una explicación detallada sobre qué es un xtype y cómo se puede utilizar.
+En el lenguaje ExtJS, un xtype es un nombre simbólico dado a una clase. Puede leer el párrafo &quot;Tipos XT de componentes&quot; del [Descripción general de ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) para obtener una explicación detallada sobre qué es un xtype y cómo se puede utilizar.
 
-Para obtener información completa sobre todos los widgets disponibles en AEM, consulte la [documentación de la API del widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+AEM Para obtener información completa sobre todos los widgets disponibles en, consulte la sección sobre la configuración de los widgets en la barra de herramientas de [documentación de API de widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
-Para averiguar en qué componentes se utiliza un xtype determinado en AEM, puede utilizar la siguiente consulta Xpath en CRXDE reemplazando &quot;casilla de verificación&quot; por el xtype que le interese:
+AEM Para saber en qué componentes se utiliza un xtype determinado en la, puede utilizar la siguiente consulta Xpath en CRXDE reemplazando &quot;casilla de verificación&quot; por el xtype que le interese:
 
 `//element(*, cq:Widget)[@xtype='checkbox']`
 
@@ -33,15 +33,15 @@ Para averiguar en qué componentes se utiliza un xtype determinado en AEM, puede
 >
 >Esta página describe el uso de xtype de ExtJS dentro de la IU clásica.
 >
->Adobe recomienda aprovechar el [IU táctil](/help/sites-developing/touch-ui-concepts.md) basado en [Interfaz de usuario de Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) y [Interfaz de usuario de Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
+>Adobe recomienda aprovechar el estándar, moderno, [IU táctil](/help/sites-developing/touch-ui-concepts.md) basado en [IU de Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) y [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
 
 ## xtypes {#xtypes}
 
-Encuentre a continuación una lista de los xtype disponibles en Adobe Experience Manager:
+A continuación encontrará una lista de los xtype disponibles en Adobe Experience Manager:
 
 * anotación
 
-   [CQ.wcm.AnNotación](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Annotation)
+   [CQ.wcm.Annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Annotation)
 
    El cuadro de diálogo es un tipo especial de ventana con un formulario en el cuerpo y un grupo de botones en el pie de página. Normalmente se utiliza para editar contenido, pero también puede mostrar información.
 
@@ -49,17 +49,17 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.Ext.data.ArrayStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.ArrayStore)
 
-   Anteriormente conocido como &quot;SimpleStore&quot;.
+   Anteriormente conocida como &quot;SimpleStore&quot;.
 
-   Clase de ayuda pequeña para crear [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)s de Array data más fácil. Una ArrayStore se configurará automáticamente con un [CQ.Ext.data.ArrayReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.ArrayReader).
+   Clase auxiliar pequeña para crear [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)Es más fácil extraer de los datos de la matriz. ArrayStore se configurará automáticamente con un [CQ.Ext.data.ArrayReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.ArrayReader).
 
-* asseteditor
+* editor de recursos
 
    [CQ.dam.AssetEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.dam.AssetEditor)
 
-   El Editor de recursos se utiliza en la administración de DAM.
+   Editor de recursos utilizado en el administrador de DAM.
 
-* assetrefercesearchdialog
+* assetreferencesearchdialog
 
    [CQ.wcm.AssetReferenceSearchDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.AssetReferenceSearchDialog)
 
@@ -69,53 +69,53 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.wcm.msm.BlueprintConfig](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig)
 
-   BlueprintConfig proporciona un panel para ver las Live Copies de un modelo y editar estas propiedades de modelo ( sincronizar acciones de déclencheur y sincronización ).
+   BlueprintConfig proporciona un panel para ver las Live Copies de un modelo y editar sus propiedades ( sincronizar déclencheur y acciones de sincronización ).
 
-* estado de blueprint
+* blueprintstatus
 
    [CQ.wcm.msm.BlueprintStatus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus)
 
-   BlueprintStatus proporciona un panel para ver y editar un modelo y sus relaciones con Live Copies. La navegación se realiza mediante un [CQ.wcm.msm.BlueprintStatus.Tree](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus.Tree), edición a través de un [CQ.wcm.msm.BlueprintConfig](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig) y a [CQ.wcm.msm.LiveCopyProperties](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties).
+   BlueprintStatus proporciona un panel para ver y editar un modelo y sus relaciones de Live Copies. La exploración se realiza mediante una [CQ.wcm.msm.BlueprintStatus.Tree](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus.Tree), edición a través de un [CQ.wcm.msm.BlueprintConfig](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig) y a [CQ.wcm.msm.LiveCopyProperties](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties).
 
 * box
 
    [CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent)
 
-   Clase base para cualquier [Componente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component) que se va a cambiar de tamaño como cuadro, utilizando anchura y altura.
+   Clase base para cualquier [Componente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component) que se debe dimensionar como una caja, usando anchura y altura.
 
-   BoxComponent proporciona ajustes automáticos del modelo de cajas para el ajuste de tamaño y la colocación y funcionará correctamente en el modelo de renderización de componentes.
+   BoxComponent proporciona ajustes automáticos del modelo de cuadro para el tamaño y la posición y funcionará correctamente dentro del modelo de representación de componentes.
 
 * browsedialog
 
    [CQ.BrowseDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.BrowseDialog)
 
-   BrowseDialog permite al usuario examinar el repositorio para seleccionar una ruta. Normalmente se utiliza mediante un [CampoExaminar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.BrowseField).
+   El cuadro de diálogo Examinar permite al usuario examinar el repositorio para seleccionar una ruta. Normalmente se utiliza a través de una [BrowseField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.BrowseField).
 
 * browsefield
 
    [CQ.form.BrowseField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.BrowseField)
 
-   **Obsoleto: Uso [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) en lugar de**
+   **Obsoleto: usar [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) en su lugar**
 
-* bulkeditor
+* editor por lotes
 
    [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)
 
-   El Editor por lotes proporciona un motor de búsqueda y una cuadrícula para editar los resultados de la búsqueda.
+   BulkEditor proporciona un motor de búsqueda y una cuadrícula para editar los resultados de búsqueda.
 
-   BulkEditor debe insertarse en un formulario de HTML (requerido por la funcionalidad de importación). Esto funciona perfectamente con un [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog).
+   El editor en bloque debe insertarse en un formulario de HTML (requerido por la funcionalidad de importación). Esto funciona perfectamente con un [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog).
 
 * bulkeditorform
 
    [CQ.wcm.BulkEditorForm](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditorForm)
 
-   BulkEditorForm proporciona [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) rodeado por un formulario de HTML. Esta es la versión independiente de [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor), se requiere un formulario de HTML para el botón de importación.
+   BulkEditorForm proporciona lo siguiente [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) rodeado por un formulario de HTML. Esta es la versión independiente de [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor), se requiere el formulario del HTML para el botón import.
 
 * botón
 
    [CQ.Ext.Button](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button)
 
-   Clase Button simple
+   Clase de botón simple
 
 * buttongroup
 
@@ -127,13 +127,13 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.Ext.chart.Chart](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart)
 
-   El paquete CQ.Ext.chart proporciona la capacidad de visualizar datos con gráficos basados en flash. Cada gráfico se vincula directamente a un CQ.Ext.data.Store que permite las actualizaciones automáticas del gráfico. Para cambiar el aspecto de un gráfico, consulte la [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) y [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) opciones de configuración.
+   El paquete CQ.Ext.chart proporciona la capacidad de visualizar datos con gráficos basados en Flash. Cada gráfico se vincula directamente a un CQ.Ext.data.Store, lo que permite realizar actualizaciones automáticas del gráfico. Para cambiar el aspecto de un gráfico, consulte la [chartStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) y [extraStyle](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) opciones de configuración.
 
 * casilla de verificación
 
    [CQ.Ext.form.Checkbox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Checkbox)
 
-   Campo de casilla de verificación única. Se puede utilizar como reemplazo directo de los campos de casilla de verificación tradicionales.
+   Campo de casilla de verificación único. Se puede utilizar como reemplazo directo de los campos de casilla de verificación tradicionales.
 
 * checkboxgroup
 
@@ -141,103 +141,103 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    Un contenedor de agrupación para [CQ.Ext.form.Checkbox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Checkbox) controles.
 
-* clearcombinación
+* clearcombo
 
    [CQ.form.ClearableComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ClearableComboBox)
 
    ClearableComboBox es un cuadro combinado no editable con un déclencheur para borrar su valor.
 
-* colorfield
+* campo de color
 
    [CQ.form.ColorField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ColorField)
 
-   El campo de color permite al usuario introducir un valor hexadecimal de color directamente o utilizando una [CQ.Ext.ColorMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ColorMenu).
+   ColorField permite al usuario introducir un valor hexadecimal de color directamente o mediante un [CQ.Ext.ColorMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ColorMenu).
 
-* lista de colores
+* colorlist
 
    [CQ.form.ColorList](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ColorList)
 
-   La Lista de colores permite al usuario elegir un color de una lista editable.
+   ColorList permite al usuario elegir un color de una lista editable.
 
 * colormenu
 
    [CQ.Ext.menu.ColorMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.ColorMenu)
 
-   Un menú que contiene un [CQ.Ext.ColorPalette](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ColorPalette) Componente.
+   Menú que contiene un [CQ.Ext.ColorPalette](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ColorPalette) Componente.
 
 * paleta de colores
 
    [CQ.Ext.ColorPalette](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ColorPalette)
 
-   Clase de paleta de color simple para elegir colores. La paleta se puede representar en cualquier contenedor.
+   Clase de paleta de colores sencilla para elegir colores. La paleta se puede representar en cualquier contenedor.
 
-* combinación
+* combinado
 
    [CQ.Ext.form.ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)
 
-   Control combobox compatible con autocompletar, carga remota, paginación y muchas otras funciones.
+   Un control combobox con compatibilidad para autocompletar, carga remota, paginación y muchas otras características.
 
-   Un ComboBox funciona de manera similar a un HTML tradicional &lt;select> campo . La diferencia es que para enviar la variable [valueField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox), debe especificar un [hiddenName](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) para crear una entrada oculta.
+   Un ComboBox funciona de manera similar a un HTML tradicional &lt;select> field. La diferencia es que para enviar la [valueField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox), debe especificar un [hiddenName](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) para crear una entrada oculta.
 
 * componente
 
    [CQ.Ext.Component](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component)
 
-   Clase base para todos los componentes Ext. Todas las subclases de Componente pueden participar en el ciclo de vida del componente Ext automatizado de la creación, renderización y destrucción que proporciona el [Contenedor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) Clase . Los componentes se pueden agregar a un contenedor a través del [items](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) opción de configuración en el momento en que se crea el contenedor.
+   Clase base para todos los componentes de texto. Todas las subclases de componentes pueden participar en el ciclo de vida automatizado del componente Ext de creación, representación y destrucción que proporciona el [Contenedor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) clase. Los componentes se pueden añadir a un contenedor mediante la variable [items](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) en el momento en que se crea el contenedor.
 
-* extractor de componentes
+* componentextractor
 
    [CQ.wcm.ComponentExtractor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ComponentExtractor)
 
-   ComponentExtractor permite al usuario extraer componentes de un sitio web o página.
+   ComponentExtractor permite al usuario extraer componentes de un sitio web o una página.
 
-* componentselector
+* selector de componente
 
    [CQ.form.ComponentSelector](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ComponentSelector)
 
-   Una selección agrupada y ordenada de componentes disponibles.
+   Una selección agrupada y ordenada de los componentes disponibles.
 
-* componentstyle
+* componentstyles
 
    [CQ.form.ComponentStyles](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ComponentStyles)
 
-* compositefield
+* campo compuesto
 
    [CQ.form.CompositeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField)
 
    Clase base para campos de formulario complejos basados en panel que incluyen un campo de formulario o un grupo de campos de formulario.
 
-* container
+* contenedor
 
    [CQ.Ext.Container](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)
 
-   Clase base para cualquier [CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent) que pueden contener otros componentes. Los contenedores manejan el comportamiento básico de contener elementos, concretamente agregar, insertar y eliminar elementos.
+   Clase base para cualquier [CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent) que pueden contener otros componentes. Los contenedores administran el comportamiento básico de los elementos contenedores, a saber, agregar, insertar y quitar elementos.
 
-   Las clases de contenedores más utilizadas son [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel), [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) y [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel).
+   Las clases de contenedor más utilizadas son [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel), [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) y [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel).
 
 * contentfinder
 
    [CQ.wcm.ContentFinder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder)
 
-   ContentFinder es una columna especializada de dos columnas [Viewport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Viewport) que contiene el Buscador de contenido real a la izquierda y el Marco de contenido a la derecha.
+   ContentFinder es una columna especializada de dos columnas [Ventanilla](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Viewport) que contiene el buscador de contenido real a la izquierda y el marco de contenido a la derecha.
 
 * contentfindertab
 
    [CQ.wcm.ContentFinderTab](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinderTab)
 
-   ContentFinderTab es un panel especializado que proporciona funciones utilizadas en los paneles de pestañas del [CQ.wcm.ContentFinder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder). Normalmente, presenta un formulario de búsqueda (el cuadro de consulta) y una vista de datos para mostrar la búsqueda.
+   ContentFinderTab es un panel especializado que proporciona funciones utilizadas en los paneles de pestañas del [CQ.wcm.ContentFinder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder). Normalmente incluye un formulario de búsqueda (el Cuadro de consulta) y una vista de datos para mostrar la búsqueda.
 
 * cq.workflow.model.combo
 
    [CQ.wcm.WorkflowModelCombo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.WorkflowModelCombo)
 
-   WorkflowModelCombo es un [CQ.Ext.form.ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) que muestra una lista de los modelos de flujo de trabajo disponibles.
+   WorkflowModelCombo es una variable personalizada [CQ.Ext.form.ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) que muestra una lista de los modelos de flujo de trabajo disponibles.
 
 * cq.workflow.model.selector
 
    [CQ.wcm.WorkflowModelSelector](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.WorkflowModelSelector)
 
-   WorkflowModelSelector combina un WorkflowModelCombo con una imagen en miniatura del flujo de trabajo y botones para crear y editar modelos de flujo de trabajo.
+   WorkflowModelSelector combina WorkflowModelCombo con una imagen en miniatura del flujo de trabajo y botones para crear y editar modelos de flujo de trabajo.
 
 * createsitewizard
 
@@ -255,37 +255,37 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.CustomContentPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.CustomContentPanel)
 
-   El CustomContentPanel es un tipo especial de panel para usar en [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): Su contenido se recupera de y se envía a una dirección URL diferente a los demás campos del cuadro de diálogo.
+   CustomContentPanel es un tipo especial de panel que se utiliza en [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): su contenido se recupera y se envía a una dirección URL diferente a la de los demás campos del cuadro de diálogo.
 
 * ciclo
 
    [CQ.Ext.CycleButton](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton)
 
-   SplitButton especializado que contiene un menú de [CQ.Ext.menu.CheckItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.CheckItem) elementos. El botón recorre automáticamente cada elemento de menú al hacer clic, elevando el [change](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) (o llamando al evento del botón [changeHandler](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) , si se proporciona) para el elemento de menú activo.
+   Un control SplitButton especializado que contiene un menú de [CQ.Ext.menu.CheckItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.CheckItem) elementos. El botón recorre automáticamente cada elemento de menú al hacer clic, lo que provoca la aparición del botón [cambiar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) (o llamando al del botón) [changeHandler](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) función, si se proporciona) para el elemento de menú activo.
 
 * dataview
 
    [CQ.Ext.DataView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DataView)
 
-   Mecanismo para mostrar los datos mediante plantillas de diseño personalizadas y formato. DataView utiliza un [CQ.Ext.XTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.XTemplate) como mecanismo de plantilla interno y está enlazado a un [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) de modo que, a medida que cambian los datos del almacén, la vista se actualiza automáticamente para reflejar los cambios.
+   Mecanismo para mostrar datos mediante plantillas de diseño y formato personalizados. DataView utiliza un [CQ.Ext.XTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.XTemplate) como su mecanismo de creación de plantillas interno, y está enlazado a un [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) para que, a medida que los datos de la tienda cambian, la vista se actualice automáticamente para reflejar los cambios.
 
 * datefield
 
    [CQ.Ext.form.DateField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField)
 
-   Proporciona un campo de entrada de fecha con un [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker) lista desplegable y validación automática de fechas.
+   Proporciona un campo de entrada de fecha con una [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker) desplegable y validación automática de fechas.
 
 * datemenu
 
    [CQ.Ext.menu.DateMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.DateMenu)
 
-   Un menú que contiene un [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker) Componente.
+   Menú que contiene un [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker) Componente.
 
-* datepicker
+* selector de fecha
 
    [CQ.Ext.DatePicker](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DatePicker)
 
-   Selector de fecha emergente. Esta clase la usa el [CampoFecha](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField) para permitir la exploración y selección de fechas válidas.
+   Un selector de fechas emergente. Esta clase la utiliza el [DateField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField) para permitir la exploración y selección de fechas válidas.
 
 * datetime
 
@@ -303,13 +303,13 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.form.DialogFieldSet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.DialogFieldSet)
 
-   DialogFieldSet es un [FieldSet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FieldSet) para uso en [Cuadros de diálogo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog).
+   DialogFieldSet es un [FieldSet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FieldSet) para su uso en [Cuadros de diálogo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog).
 
 * directstore
 
    [CQ.Ext.data.DirectStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectStore)
 
-   Clase de ayuda pequeña para crear un [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) configurado con un [CQ.Ext.data.DirectProxy](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectProxy) y [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader) para interactuar con un [CQ.Ext.Direct](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Direct) Lado del servidor [Proveedor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.direct.Provider) más fácil.
+   Clase auxiliar pequeña para crear un [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) configurado con un [CQ.Ext.data.DirectProxy](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectProxy) y [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader) para hacer que la interacción con un [CQ.Ext.Direct](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Direct) Del lado del servidor [Proveedor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.direct.Provider) más fácil.
 
 * displayfield
 
@@ -317,25 +317,25 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    Campo de texto de solo visualización que no se valida ni se envía.
 
-* editor
+* barra de edición
 
    [CQ.wcm.EditBar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar)
 
-   La barra de edición permite al usuario editar contenido mediante botones en una barra.
+   EditBar permite al usuario editar contenido mediante los botones de una barra.
 
-   Aunque no se enumera aquí, EditBar tiene todos los miembros de [CQ.wcm.EditBase](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBase).
+   Aunque no aparece en la lista aquí, EditBar tiene todos los miembros de [CQ.wcm.EditBase](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBase).
 
 * editor
 
    [CQ.Ext.Editor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Editor)
 
-   Campo de editor base que gestiona la visualización/ocultación bajo demanda y que tiene incorporada una lógica de tamaño y gestión de eventos.
+   Campo de editor base que controla la visualización y la ocultación bajo demanda y tiene lógica integrada de tamaño y de administración de eventos.
 
-* editorgrid
+* rejilla del editor
 
    [CQ.Ext.grid.EditorGridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)
 
-   Esta clase amplía el [Clase GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) para proporcionar edición de celdas en [columnas](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.Column). Las columnas editables se especifican proporcionando un [editor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel) en el [configuración de columna](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.Column).
+   Esta clase amplía el [Clase GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) para proporcionar la edición de celdas en la selección [columnas](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.Column). Las columnas editables se especifican mediante un [editor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel) en el [configuración de columna](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.Column).
 
 * editrollover
 
@@ -343,7 +343,7 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    EditRollover permite al usuario editar contenido mediante doble clic y proporciona más acciones de edición a través de un menú contextual. El área editable se indica con un marco cuando el ratón se desplaza sobre el contenido.
 
-* feedimporter
+* importador de alimentos
 
    [CQ.wcm.FeedImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.FeedImporter)
 
@@ -353,9 +353,9 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.Ext.form.Field](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Field)
 
-   Clase base para campos de formulario que proporcionan la gestión de eventos predeterminada, el tamaño, la administración de valores y otras funciones.
+   Clase base para campos de formulario que proporciona control de eventos, tamaño, control de valores y otras funcionalidades predeterminadas.
 
-* fieldSet
+* fieldset
 
    [CQ.Ext.form.FieldSet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FieldSet)
 
@@ -365,7 +365,7 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.form.FileUploadDialogButton](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.FileUploadDialogButton)
 
-   FileUploadDialogButton crea un botón que abre un nuevo cuadro de diálogo para cargar un archivo a través de FileUploadField. Se puede utilizar dentro de los cuadros de diálogo de edición en los que la carga debe realizarse en un formulario independiente.
+   FileUploadDialogButton crea un botón que abre un nuevo cuadro de diálogo para cargar un archivo a través de FileUploadField. Se puede utilizar dentro de cuadros de diálogo de edición, donde la carga debe realizarse en un formulario independiente.
 
 * fileuploadfield
 
@@ -377,13 +377,13 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.wcm.FindReplaceDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.FindReplaceDialog)
 
-   El cuadro de diálogo FindReplaceDialog es un cuadro de diálogo para buscar y reemplazar tokens en una página y sus páginas secundarias.
+   FindReplaceDialog es un cuadro de diálogo para buscar y reemplazar tokens en una página y sus páginas secundarias.
 
-* flash
+* destellar
 
    [CQ.Ext.FlashComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.FlashComponent)
 
-* cuadrícula
+* rejilla
 
    [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)
 
@@ -393,13 +393,13 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.Ext.data.GroupingStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)
 
-   Implementación de almacén especializada que permite agrupar registros por uno de los campos disponibles. Normalmente se utiliza junto con un [CQ.Ext.grid.GroupingView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GroupingView) para probar el modelo de datos de un GridPanel agrupado.
+   Implementación de tienda especializada que permite agrupar registros por uno de los campos disponibles. Esto se usa generalmente junto con un [CQ.Ext.grid.GroupingView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GroupingView) para probar el modelo de datos de un GridPanel agrupado.
 
-* cuadro de diálogo
+* heavy-movedialog
 
    [CQ.wcm.HeavyMoveDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.HeavyMoveDialog)
 
-   HeavyMoveDialog es un cuadro de diálogo para mover una página y sus páginas secundarias, también considera la reactivación de páginas activadas anteriormente (movimiento &quot;pesado&quot;).
+   HeavyMoveDialog es un cuadro de diálogo para mover una página y sus páginas secundarias, considerando también la reactivación de páginas activadas anteriormente (movimiento &quot;pesado&quot;).
 
 * oculto
 
@@ -411,15 +411,15 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.HistoryButton](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.HistoryButton)
 
-   HistoryButton es una pequeña clase de ayuda para proporcionar fácilmente botones de retroceso y reenvío. Normalmente se requieren dos instancias relacionadas: La instancia del botón de reenvío es un botón simple vinculado a la instancia del botón de retroceso que gestiona el historial.
+   HistoryButton es una pequeña clase de ayuda que proporciona fácilmente botones de atrás y adelante. Normalmente se requieren dos instancias relacionadas: La instancia del botón adelante es un botón simple vinculado a la instancia del botón atrás que administra el historial.
 
-* htmleditor
+* htmleeditor
 
    [CQ.Ext.form.HtmlEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
 
-   Proporciona un componente ligero del Editor de HTML. Safari no admite algunas funciones de la barra de herramientas y se ocultarán automáticamente cuando sea necesario. Se indican en las opciones de configuración donde corresponda.
+   Proporciona un componente ligero de Editor de HTML. Safari no admite algunas funciones de la barra de herramientas, por lo que se ocultarán automáticamente cuando sea necesario. Se indican en las opciones de configuración cuando corresponde.
 
-   Los botones de la barra de herramientas del editor tienen información sobre herramientas definida en la variable [buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor) propiedad.
+   Los botones de la barra de herramientas del editor tienen la información de objeto definida en la variable [buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor) propiedad.
 
 * iframedialog
 
@@ -431,27 +431,27 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.IframePanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.IframePanel)
 
-   Panel que contiene un iframe. Proporciona una fácil creación de iframes, un evento de carga de iframe y fácil acceso al contenido del iframe.
+   Panel que contiene un iframe. Proporciona una fácil creación de iframes, un evento de carga de iframes y un fácil acceso al contenido del iframe.
 
 * inlinetextfield
 
    [CQ.form.InlineTextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.InlineTextField)
 
-   InlineField es un campo de texto que se muestra como etiqueta cuando no está enfocado.
+   InlineField es un campo de texto que se muestra como una etiqueta cuando no está enfocado.
 
 * jsonstore
 
    [CQ.Ext.data.JsonStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonStore)
 
-   Clase de ayuda pequeña para crear [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)s de datos JSON más fácil. Un JsonStore se configurará automáticamente con un [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader).
+   Clase auxiliar pequeña para crear [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)Es más fácil extraer datos JSON. Se configurará automáticamente un JsonStore con un [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader).
 
-* label
+* etiqueta
 
    [CQ.Ext.form.Label](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Label)
 
-   Campo Etiqueta básica .
+   Campo Etiqueta básico.
 
-* languageecopydialog
+* languageCopyDialog
 
    [CQ.wcm.LanguageCopyDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.LanguageCopyDialog)
 
@@ -461,65 +461,65 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.wcm.LinkChecker](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.LinkChecker)
 
-   LinkChecker es una herramienta para comprobar los vínculos externos en un sitio.
+   LinkChecker es una herramienta para comprobar vínculos externos en un sitio.
 
-* vista de lista
+* listview
 
    [CQ.Ext.list.ListView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView)
 
-   CQ.Ext.list.ListView es una implementación rápida y ligera de un [Cuadrícula](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) como view.
+   CQ.Ext.list.ListView es una implementación rápida y ligera de un [Cuadrícula](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) como vista.
 
 * livecopyproperties
 
    [CQ.wcm.msm.LiveCopyProperties](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties)
 
-   LiveCopyProperties proporciona un panel para ver y editar las propiedades de Live Copy ( herencia de relación, déclencheur de sincronización y acciones de sincronización ).
+   LiveCopyProperties proporciona un panel para ver y editar las propiedades de Live Copy ( herencia de relaciones, déclencheur de sincronización y acciones de sincronización ).
 
 * lvbooleancolumn
 
    [CQ.Ext.list.BooleanColumn](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.BooleanColumn)
 
-   Una clase Column definition que procesa campos de datos booleanos. Consulte la [xtype](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) opción de configuración de [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) para obtener más información.
+   Una clase de definición de columna que procesa campos de datos booleanos. Consulte la [xtype](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) opción de configuración de [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) para obtener más información.
 
 * lvcolumn
 
    [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column)
 
-   Esta clase encapsula los datos de configuración de columna que se utilizarán en la inicialización de una [Vista de lista](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView).
+   Esta clase encapsula los datos de configuración de columna que se van a utilizar en la inicialización de un [ListView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView).
 
 * lvdatecolumn
 
    [CQ.Ext.list.DateColumn](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.DateColumn)
 
-   Una clase de definición de columna que procesa una fecha pasada según la configuración regional predeterminada o una [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.DateColumn). Consulte la [xtype](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) opción de configuración de [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) para obtener más información.
+   Una clase de definición de columna que procesa una fecha pasada según la configuración regional predeterminada o un valor configurado [formato](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.DateColumn). Consulte la [xtype](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) opción de configuración de [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) para obtener más información.
 
-* lvnumber ercolumn
+* lvnumbercolumn
 
    [CQ.Ext.list.NumberColumn](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.NumberColumn)
 
-   Una clase de definición de columna que representa un campo de datos numérico según una [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.NumberColumn) cadena. Consulte la [xtype](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) opción de configuración de [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) para obtener más información.
+   Una clase de definición de columna que procesa un campo de datos numéricos según una [formato](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.NumberColumn) cadena. Consulte la [xtype](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) opción de configuración de [CQ.Ext.list.Column](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.Column) para obtener más información.
 
 * mediabrowsedialog
 
    [CQ.MediaBrowseDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.MediaBrowseDialog)
 
-   **Obsoleto: Uso [Buscador de contenido](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder) para examinar los medios en su lugar.**
+   **Obsoleto: usar [Buscador de contenido](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder) para examinar los medios.**
 
-   MediaBrowseDialog es un cuadro de diálogo para explorar la biblioteca multimedia.
+   MediaBrowseDialog es un cuadro de diálogo para examinar la biblioteca de medios.
 
 * menú
 
    [CQ.Ext.menu.Menu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Menu)
 
-   Un objeto de menú. Este es el contenedor al que puede añadir elementos de menú. El menú también puede servir como clase base cuando desea un menú especializado basado en otro componente (como [CQ.Ext.menu.DateMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.DateMenu) por ejemplo).
+   Un objeto de menú. Este es el contenedor al que se pueden agregar elementos de menú. El menú también puede servir como clase base cuando desee un menú especializado basado en otro componente (como [CQ.Ext.menu.DateMenu](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.DateMenu) por ejemplo).
 
-   Los menús pueden contener: [elementos de menú](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Item)o general [Componente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component)s.
+   Los menús pueden contener [elementos de menú](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Item), o general [Componente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component)s.
 
 * menubaseitem
 
    [CQ.Ext.menu.BaseItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.BaseItem)
 
-   Clase base para todos los elementos que se renderizan en menús. BaseItem proporciona opciones predeterminadas de renderización, administración de estado activado y configuración base compartidas por todos los componentes de menú.
+   La clase base para todos los elementos que se representan en menús. BaseItem proporciona opciones predeterminadas de procesamiento, administración de estado activada y configuración base compartidas por todos los componentes de menú.
 
 * menucheckitem
 
@@ -531,29 +531,29 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.Ext.menu.Item](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Item)
 
-   Una clase base para todos los elementos de menú que requieren funcionalidad relacionada con el menú (como submenús) y que no son elementos de visualización estáticos. El elemento amplía la funcionalidad básica de [CQ.Ext.menu.BaseItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.BaseItem) añadiendo activación específica del menú y gestión de clics.
+   Una clase base para todos los elementos de menú que requieren funciones relacionadas con menús (como submenús) y no son elementos de visualización estáticos. El elemento amplía la funcionalidad base de [CQ.Ext.menu.BaseItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.BaseItem) añadiendo activación específica del menú y control de clics.
 
 * menuseparator
 
    [CQ.Ext.menu.Separator](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Separator)
 
-   Agrega una barra separadora a un menú, que se utiliza para dividir grupos lógicos de elementos de menú. Generalmente agregará uno de estos elementos utilizando &quot;-&quot; en la llamada a add() o en la configuración de elementos en lugar de crear uno directamente.
+   Agrega una barra de separación a un menú, que se utiliza para dividir grupos lógicos de elementos de menú. Por lo general, agregará uno de estos elementos utilizando &quot;-&quot; en la llamada a add() o en la configuración de elementos en lugar de crear uno directamente.
 
 * menutextitem
 
    [CQ.Ext.menu.TextItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.TextItem)
 
-   Agrega una cadena de texto estática a un menú, que normalmente se utiliza como encabezado o separador de grupo.
+   Agrega una cadena de texto estático a un menú, que suele utilizarse como encabezado o como separador de grupos.
 
-* metadatos
+* metadata
 
    [CQ.dam.form.Metadata](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.dam.form.Metadata)
 
-   Los metadatos proporcionan un conjunto de campos para determinar la información necesaria para un campo de metadatos como se utiliza, por ejemplo, en las páginas del editor de recursos.
+   Los metadatos proporcionan un conjunto de campos para determinar la información necesaria para un campo de metadatos tal como se utiliza, por ejemplo, en las páginas del editor de recursos.
 
-   Proporciona los campos siguientes:
+   Proporciona los siguientes campos:
 
-* multifield
+* multicampo
 
    [CQ.form.MultiField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.MultiField)
 
@@ -563,25 +563,25 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.form.MVT](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.MVT)
 
-   El componente Multivariate testing se puede utilizar para definir y editar un conjunto de imágenes que se presentan como titulares alternativos. Las estadísticas de la tasa de pulsaciones se recopilan por banner.
+   El componente Prueba multivariable se puede utilizar para definir y editar un conjunto de imágenes que se presentan como titulares alternativos. Las estadísticas de tasa de pulsaciones se recopilan por banner.
 
 * notificationinbox
 
    [CQ.wcm.NotificationInbox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.NotificationInbox)
 
-   NotificationInbox permite al usuario suscribirse a las acciones de WCM y administrar las notificaciones.
+   La bandeja de entrada de notificaciones permite al usuario suscribirse a las acciones de WCM y administrar las notificaciones.
 
 * campo numérico
 
    [CQ.Ext.form.NumberField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.NumberField)
 
-   Campo de texto numérico que proporciona filtrado automático de pulsaciones de teclas y validación numérica.
+   Campo de texto numérico que proporciona filtrado automático de pulsación de tecla y validación numérica.
 
 * offlineimporter
 
    [CQ.wcm.OfflineImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.OfflineImporter)
 
-   OfflineImporter es una herramienta para importar y convertir documentos de Microsoft Word en páginas AEM. Esta función permite editar contenido sin conexión mediante un procesador de texto.
+   OfflineImporter es una herramienta para importar y convertir documentos de Microsoft AEM Word en páginas de la. Esta función permite editar contenido sin conexión mediante un procesador de textos.
 
 * ownerdraw
 
@@ -593,21 +593,21 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.Ext.PagingToolbar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.PagingToolbar)
 
-   A medida que aumenta la cantidad de registros, aumenta el tiempo necesario para que el explorador los procese. El paginación se utiliza para reducir la cantidad de datos intercambiados con el cliente.
+   A medida que aumenta la cantidad de registros, aumenta el tiempo necesario para que el explorador los procese. La paginación se utiliza para reducir la cantidad de datos intercambiados con el cliente.
 
 * panel
 
    [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel)
 
-   El panel es un contenedor que tiene funcionalidades específicas y componentes estructurales que lo convierten en el bloque de creación perfecto para interfaces de usuario orientadas a la aplicación.
+   El panel es un contenedor que tiene una funcionalidad específica y componentes estructurales que lo convierten en el bloque de creación perfecto para interfaces de usuario orientadas a la aplicación.
 
    Los grupos especiales son, en virtud de su herencia de [CQ.Ext.Container](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container).
 
-* referencia del párrafo
+* paragraphreference
 
    [CQ.form.ParagraphReference](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ParagraphReference)
 
-   El campo de referencia de párrafo permite examinar páginas y seleccionar uno de sus párrafos. Consiste en un campo de déclencheur y un cuadro de diálogo de exploración de párrafo asociado.
+   El campo de referencia de párrafo permite examinar las páginas y seleccionar uno de sus párrafos. Consiste en un campo de déclencheur y un cuadro de diálogo de exploración de párrafo asociado.
 
 * password
 
@@ -615,61 +615,61 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    La contraseña es como una [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField) pero mantiene su valor privado, lo que permite a los usuarios introducir datos confidenciales.
 
-* pathcomplete
+* conclusión de ruta
 
    [CQ.form.PathCompletion](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathCompletion)
 
-   **Obsoleto: Uso [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) en lugar de**
+   **Obsoleto: usar [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) en su lugar**
 
-* pathfield
+* campo de trayectoria
 
    [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField)
 
-   PathField es un campo de entrada diseñado para rutas con finalización de ruta y un botón para abrir un [CQ.BrowseDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.BrowseDialog) para explorar el repositorio del servidor. También puede examinar los párrafos de la página para generar vínculos avanzados.
+   PathField es un campo de entrada diseñado para rutas con finalización de rutas y un botón para abrir un [CQ.BrowseDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.BrowseDialog) para explorar el repositorio del servidor. También puede examinar los párrafos de la página para obtener información sobre la generación avanzada de vínculos.
 
 * progreso
 
    [CQ.Ext.ProgressBar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ProgressBar)
 
-   Un componente de barra de progreso que se puede actualizar. La barra de progreso admite dos modos diferentes: manual y automático.
+   Un componente actualizable de la barra de progreso. La barra de progreso admite dos modos diferentes: manual y automático.
 
-   En el modo manual, usted es responsable de la visualización, actualización (mediante [updateProgress](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ProgressBar)) y borre la barra de progreso según sea necesario de su propio código. Este método es más adecuado cuando desea mostrar el progreso.
+   En el modo manual, usted es responsable de mostrar, actualizar (a través de [updateProgress](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ProgressBar)) y borre la barra de progreso según sea necesario desde su propio código. Este método es el más adecuado cuando desea mostrar el progreso.
 
 * propertygrid
 
    [CQ.Ext.grid.PropertyGrid](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyGrid)
 
-   Implementación de cuadrícula especializada diseñada para imitar la cuadrícula de propiedades tradicional como se suele ver en los IDE de desarrollo. Cada fila de la cuadrícula representa una propiedad de algún objeto y los datos se almacenan como un conjunto de pares de nombre/valor en [CQ.Ext.grid.PropertyRecord](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord)s.
+   Implementación de cuadrícula especializada diseñada para imitar la cuadrícula de propiedades tradicional, como se suele ver en los IDE de desarrollo. Cada fila de la cuadrícula representa una propiedad de algún objeto y los datos se almacenan como un conjunto de pares de nombre/valor en [CQ.Ext.grid.PropertyRecord](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.PropertyRecord)s.
 
 * propgrid
 
    [CQ.PropertyGrid](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.PropertyGrid)
 
-   PropertyGrid es una cuadrícula genérica que se utiliza para mostrar y editar las propiedades de los objetos.
+   PropertyGrid es una cuadrícula genérica que se utiliza para mostrar y editar propiedades de objetos.
 
 * información rápida
 
    [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip)
 
-   @xtype quicktip Clase de información sobre herramientas especializada para informaciones sobre herramientas que se pueden especificar en marcado y administrar automáticamente mediante la función global [CQ.Ext.QuickTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTips) instancia. Consulte el encabezado de la clase QuickTips para obtener más información sobre el uso y ejemplos.
+   @xtype información rápida Clase de información de objeto especializada para información de objeto que se puede especificar en marcado y administrar automáticamente en el global [CQ.Ext.QuickTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTips) ejemplo. Consulte el encabezado de clase QuickTips para obtener detalles y ejemplos de uso adicionales.
 
 * radio
 
    [CQ.Ext.form.Radio](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Radio)
 
-   Campo de radio único. Igual que la casilla de verificación, pero como una comodidad para configurar automáticamente el tipo de entrada. El navegador gestiona automáticamente la agrupación por radio si asigna el mismo nombre a cada radio de un grupo.
+   Un solo campo de radio. Igual que la casilla de verificación, pero se proporciona como una comodidad para configurar automáticamente el tipo de entrada. El explorador gestiona automáticamente la agrupación de emisoras si asigna a cada emisora de radio de un grupo el mismo nombre.
 
-* radiogroup
+* grupo radioeléctrico
 
    [CQ.Ext.form.RadioGroup](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.RadioGroup)
 
    Un contenedor de agrupación para [CQ.Ext.form.Radio](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Radio) controles.
 
-* cuadro de diálogo referencias
+* referencesdialog
 
    [CQ.wcm.ReferencesDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ReferencesDialog)
 
-   El cuadro de diálogo Referencias es un cuadro de diálogo para mostrar las referencias en una página.
+   El cuadro de diálogo Referencias es un cuadro de diálogo para mostrar referencias en una página.
 
 * restoretreedialog
 
@@ -689,37 +689,37 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    RichText proporciona un campo de formulario para editar información de texto con estilo (texto enriquecido).
 
-   El componente Texto enriquecido actualmente proporciona las siguientes funciones:
+   Actualmente, el componente Texto enriquecido proporciona las siguientes funciones:
 
-* plan de implementación
+* plan de despliegue
 
    [CQ.wcm.msm.RolloutPlan](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutPlan)
 
-   El RolloutPlan proporciona un cuadro de diálogo para ver el progreso de despliegue de una página. RolloutPlan se inicia con un [CQ.wcm.msm.RolloutWizard](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutWizard).
+   El plan de despliegue proporciona un cuadro de diálogo para ver el progreso de un despliegue de página. El plan de despliegue lo inicia un [CQ.wcm.msm.RolloutWizard](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutWizard).
 
 * rolloutwizard
 
    [CQ.wcm.msm.RolloutWizard](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutWizard)
 
-   El RolloutWizard proporciona un asistente para desplegar una página. RolloutWizard inicia un [CQ.wcm.msm.RolloutPlan](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutPlan).
+   El Asistente para despliegue proporciona un asistente para desplegar una página. RolloutWizard inicia un [CQ.wcm.msm.RolloutPlan](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.RolloutPlan).
 
-* searchfield
+* campo de búsqueda
 
    [CQ.form.SearchField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SearchField)
 
-   SearchField proporciona un campo de búsqueda que proporciona los resultados en una lista desplegable que puede utilizarse para buscar en el repositorio.
+   SearchField proporciona un campo de búsqueda que proporciona los resultados de una lista desplegable que se puede utilizar para buscar en el repositorio.
 
 * selección
 
    [CQ.form.Selection](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Selection)
 
-   La opción Selección permite al usuario elegir entre varias opciones. Las opciones pueden formar parte de la configuración o cargarse desde una respuesta JSON. La selección se puede representar como lista desplegable (seleccionar) o como un cuadro combinado (seleccionar más entrada de texto libre).
+   Selection permite al usuario elegir entre varias opciones. Las opciones pueden formar parte de la configuración o cargarse desde una respuesta JSON. La selección se puede representar como un cuadro desplegable (seleccionar) o un cuadro combinado (seleccionar más la entrada de texto libre).
 
-* barra de tareas
+* compinche
 
    [CQ.wcm.Sidekick](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Sidekick)
 
-   La barra de tareas es un ayudante flotante que proporciona al usuario herramientas comunes para editar páginas.
+   La barra de tareas es un asistente flotante que proporciona al usuario herramientas comunes para la edición de páginas.
 
 * siteadmin
 
@@ -727,31 +727,31 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    SiteAdmin es una consola que proporciona funciones de administración de WCM.
 
-* siteimporter
+* importador de sitios
 
    [CQ.wcm.SiteImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteImporter)
 
    SiteImporter permite al usuario importar sitios web completos y crear proyectos iniciales.
 
-* sizefield
+* campo de tamaño
 
    [CQ.form.SizeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SizeField)
 
-   SizeField permite al usuario introducir la anchura y la altura (por ejemplo, en una imagen).
+   SizeField permite al usuario introducir el ancho y el alto (por ejemplo, para una imagen).
 
 * regulador
 
    [CQ.Ext.Slider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Slider)
 
-   Control deslizante que admite orientación vertical u horizontal, ajustes de teclado, ajuste configurable, clics en ejes y animación. Se puede agregar como un elemento a cualquier contenedor. Ejemplo de uso: ...
+   Regulador que admite orientación vertical u horizontal, ajustes de teclado, ajuste configurable, clic en el eje y animación. Se puede agregar como elemento a cualquier contenedor. Ejemplo de uso: ...
 
-* presentación de diapositivas
+* presentación
 
    [CQ.form.Slideshow](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Slideshow)
 
-   La Presentación de diapositivas proporciona un componente que puede utilizarse para definir y editar un conjunto de imágenes y títulos de imágenes que pueden verse como una presentación de diapositivas.
+   La presentación de diapositivas proporciona un componente que se puede utilizar para definir y editar un conjunto de imágenes y títulos de imágenes que pueden verse como una presentación de diapositivas.
 
-   El componente Presentación de diapositivas se basa en la variable [CQ.form.SmartImage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SmartImage) componente.
+   El componente Presentación de diapositivas se basa en [CQ.form.SmartImage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SmartImage) componente.
 
 * smartfile
 
@@ -759,15 +759,15 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    SmartFile es un cargador de archivos inteligente.
 
-   Si hay instalado un complemento de Flash (versión >= 9), las cargas se ejecutan mediante la biblioteca SWFupload , que proporciona una forma cómoda de gestionar las cargas.
+   Si hay instalado un complemento de Flash (versión >= 9), las cargas se ejecutan mediante la biblioteca de carga SWF, que proporciona una forma cómoda de gestionar las cargas.
 
 * smartimage
 
    [CQ.form.SmartImage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SmartImage)
 
-   SmartImage es un cargador de imágenes inteligente. Proporciona herramientas para procesar una imagen cargada, por ejemplo, una herramienta para definir mapas de imágenes y un captador de imágenes.
+   SmartImage es un cargador de imágenes inteligente. Proporciona herramientas para procesar una imagen cargada como, por ejemplo, una herramienta para definir mapas de imagen y un recortador de imágenes.
 
-   Tenga en cuenta que el componente está diseñado principalmente para utilizarse en una pestaña de diálogo independiente.
+   Tenga en cuenta que el componente está diseñado principalmente para utilizarlo en una pestaña de diálogo independiente.
 
 * espaciador
 
@@ -775,53 +775,53 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    Se utiliza para proporcionar un espacio considerable en un diseño.
 
-* spinner
+* hilandero
 
    [CQ.form.Spinner](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Spinner)
 
-   El control de número es un campo de déclencheur para valores numéricos, de fecha o de hora. El valor se puede aumentar y reducir utilizando los déclencheur arriba y abajo proporcionados, la rueda de desplazamiento o las teclas.
+   El control de número es un campo de déclencheur para valores numéricos, de fecha u hora. El valor se puede aumentar y reducir utilizando los déclencheur arriba y abajo proporcionados, la rueda de desplazamiento o las teclas.
 
-* botón de división
+* splitbutton
 
    [CQ.Ext.SplitButton](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.SplitButton)
 
-   Botón dividido que proporciona una flecha desplegable integrada que puede activar un evento de forma independiente del evento de clic predeterminado del botón. Normalmente, esto se utilizaría para mostrar un menú desplegable que proporciona opciones adicionales a la acción del botón principal, pero cualquier controlador personalizado puede proporcionar la implementación arrowclick.
+   Botón dividido que proporciona una flecha desplegable integrada que puede activar un evento independientemente del evento de clic predeterminado del botón. Normalmente, esto se utilizaría para mostrar un menú desplegable que proporciona opciones adicionales a la acción del botón principal, pero cualquier controlador personalizado puede proporcionar la implementación mediante flechas.
 
 * static
 
    [CQ.Static](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Static)
 
-   El Static puede utilizarse para mostrar texto arbitrario o HTML.
+   El Static se puede utilizar para mostrar texto o HTML arbitrario.
 
 * estadísticas
 
    [CQ.wcm.Statistics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Statistics)
 
-   Las Estadísticas muestran las impresiones de la página como un gráfico. La utilidad permite seleccionar un punto; las estadísticas deben mostrarse.
+   Las Estadísticas muestran las impresiones de la página como un gráfico. El widget permite seleccionar un periodo, las estadísticas deben mostrarse para.
 
 * almacenar
 
    [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)
 
-   La clase Store encapsula una caché del lado del cliente de [Registro](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Record) objetos que proporcionan datos de entrada para componentes como el [Panel de cuadrícula](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel), el [ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)o [Vista de datos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DataView).
+   La clase Store encapsula una caché de cliente de [Registro](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Record) que proporcionan datos de entrada para Componentes como [GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel), el [ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox), o el [DataView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DataView).
 
-* Suestfield
+* sugerir campo
 
-   [CQ.form.SuggerField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SuggestField)
+   [CQ.form.SuggestField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SuggestField)
 
-   El campo SuSugerir proporciona al usuario sugerencias basadas en esta entrada.
+   SuggestField proporciona al usuario sugerencias basadas en su entrada.
 
-* alternador
+* cambiador
 
    [CQ.Switcher](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Switcher)
 
-   El conmutador proporciona un grupo de botones para la barra de encabezado de una consola para cambiar entre sitios web, recursos digitales, herramientas, flujo de trabajo y seguridad.
+   El conmutador proporciona un grupo de botones para la barra de encabezado de una consola para cambiar entre sitios web, recursos digitales, herramientas, flujos de trabajo y seguridad.
 
 * tableedit
 
    [CQ.form.TableEdit](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit)
 
-   **Obsoleto: Uso [CQ.form.TableEdit2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit2) en su lugar.**
+   **Obsoleto: usar [CQ.form.TableEdit2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit2) en su lugar.**
 
 * tableedit2
 
@@ -829,11 +829,11 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    TableEdit2 proporciona un widget para crear tablas.
 
-* panel de tabla
+* tablero de fichas
 
    [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel)
 
-   Un contenedor de pestañas básico. Los paneles de pestañas se pueden usar exactamente como un estándar [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel) con fines de diseño, pero también tienen compatibilidad especial para contener componentes secundarios ([`items`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)).
+   Un contenedor de pestañas básico. Los TabPanels se pueden usar exactamente igual que un estándar [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel) para fines de diseño, pero también tienen compatibilidad especial con componentes secundarios ([`items`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)).
 
 * etiquetas
 
@@ -843,7 +843,7 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
    CQ.tagging.TagInputField
    ```
 
-   es un widget de formulario para introducir etiquetas. Tiene un menú emergente para seleccionar etiquetas existentes, incluye el completado automático y muchas otras funciones.
+   es un widget de formulario para introducir etiquetas. Tiene un menú emergente para seleccionar entre las etiquetas existentes, incluye finalización automática y muchas otras funciones.
 
 * área de texto
 
@@ -851,7 +851,7 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    Campo de texto multilínea. Se puede utilizar como reemplazo directo de los campos de área de texto tradicionales, además de añadir compatibilidad con el ajuste automático de tamaño.
 
-* botón de texto
+* textbutton
 
    [CQ.TextButton](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.TextButton)
 
@@ -861,92 +861,92 @@ Encuentre a continuación una lista de los xtype disponibles en Adobe Experience
 
    [CQ.Ext.form.TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextField)
 
-   Campo de texto básico. Se puede utilizar como reemplazo directo de las entradas de texto tradicionales o como clase base para controles de entrada más sofisticados (como [CQ.Ext.form.TextArea](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextArea) y [CQ.Ext.form.ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)).
+   Campo de texto básico. Se puede utilizar como reemplazo directo de entradas de texto tradicionales o como clase base para controles de entrada más sofisticados (como [CQ.Ext.form.TextArea](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TextArea) y [CQ.Ext.form.ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)).
 
 * miniatura
 
    [CQ.form.Thumbnail](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Thumbnail)
 
-* timefield
+* campo de tiempo
 
    [CQ.Ext.form.TimeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TimeField)
 
-   Proporciona un campo de entrada de tiempo con un menú desplegable de tiempo y una validación automática de tiempo. Ejemplo de uso: ...
+   Proporciona un campo de entrada de tiempo con un menú desplegable de tiempo y validación automática de la hora. Ejemplo de uso: ...
 
-* tip
+* propina
 
    [CQ.Ext.Tip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tip)
 
-   @xtype tip Esta es la clase base para [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip) y [CQ.Ext.Tooltip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tooltip) que proporciona el diseño y la posición básicos que requieren todas las clases basadas en sugerencias. Esta clase se puede utilizar directamente para obtener sugerencias sencillas y con posición estática.
+   @xtype sugerencia Esta es la clase base para [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip) y [CQ.Ext.Tooltip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tooltip) que proporciona el diseño y la posición básicos que requieren todas las clases basadas en sugerencias. Esta clase se puede utilizar directamente para obtener sugerencias simples con una posición estática.
 
 * titleseparator
 
    [CQ.menu.TitleSeparator](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.menu.TitleSeparator)
 
-   Agrega una barra separadora a un menú, que se utiliza para dividir grupos lógicos de elementos de menú. El separador también puede llevar un título.
+   Agrega una barra de separación a un menú, que se utiliza para dividir grupos lógicos de elementos de menú. El separador también puede llevar un título.
 
-* toolbar
+* barra de herramientas
 
    [CQ.Ext.Toolbar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Toolbar)
 
-   Clase de barra de herramientas básica. Aunque la variable [`defaultType`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) para la barra de herramientas es [`button`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button), los elementos de la barra de herramientas (elementos secundarios para el contenedor de la barra de herramientas) pueden ser prácticamente cualquier tipo de componente. Los elementos de la barra de herramientas se pueden crear explícitamente mediante sus constructores.
+   Clase Basic Toolbar. Aunque la variable [`defaultType`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) para la barra de herramientas es [`button`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button), Los elementos de la barra de herramientas (elementos secundarios para el contenedor de la barra de herramientas) pueden ser prácticamente cualquier tipo de Component. Los elementos de la barra de herramientas se pueden crear explícitamente mediante sus constructores.
 
-* tooltip
+* información de objeto
 
    [CQ.Ext.ToolTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ToolTip)
 
-   Implementación de información sobre herramientas estándar para proporcionar información adicional al pasar el ratón por encima de un elemento de destino. @xtype tooltip.
+   Implementación de información sobre herramientas estándar para proporcionar información adicional al pasar el ratón por encima de un elemento de destino. @xtype información sobre herramientas.
 
-* treegrid
+* triglía
 
    [CQ.tree.TreeGrid](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.tree.TreeGrid)
 
-   @xtype treegrid
+   @xtype triglicérido
 
-* treepanel
+* panel de árbol
 
    [CQ.Ext.tree.TreePanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)
 
-   El Panel de árbol proporciona una representación de IU estructurada en árbol de datos estructurados en árbol.
+   TreePanel proporciona una representación de la interfaz de usuario con estructura de árbol de los datos con estructura de árbol.
 
-   [TreeNode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreeNode)s add to the TreePanel pueden contener metadatos utilizados por la aplicación en sus [attributes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreeNode) propiedad.
+   [TreeNode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreeNode)Las que se agregan al TreePanel pueden contener metadatos utilizados por la aplicación en sus [atributos](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreeNode) propiedad.
 
 * déclencheur
 
    [CQ.Ext.form.TriggerField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField)
 
-   Proporciona un envoltorio práctico para TextFields que agrega un botón de déclencheur en el que se puede hacer clic (se parece a un combobox de forma predeterminada). El déclencheur no tiene ninguna acción predeterminada, por lo que debe asignar una función para implementar el controlador de clic de déclencheur anulando [onTriggerClick](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField). Puede crear un TriggerField directamente, ya que se muestra exactamente como un combobox.
+   Proporciona un contenedor cómodo para TextFields que agrega un botón de déclencheur en el que se puede hacer clic (de forma predeterminada, parece un cuadro combinado). El déclencheur no tiene acción predeterminada, por lo que debe asignar una función para implementar el controlador de clics de déclencheur anulando [onTriggerClick](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TriggerField). Puede crear un TriggerField directamente, ya que se representa exactamente como un cuadro combinado.
 
 * uploaddialog
 
    [CQ.UploadDialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.UploadDialog)
 
-   UploadDialog permite al usuario cargar archivos en el repositorio Crea un nuevo UploadDialog.
+   UploadDialog permite al usuario cargar archivos en el repositorio. Crea un nuevo UploadDialog.
 
 * userinfo
 
    [CQ.UserInfo](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.UserInfo)
 
-   Elemento de la barra de herramientas para mostrar el nombre de usuario actual y permitir acciones de usuario como editar propiedades de usuario y suplantación.
+   Elemento de la barra de herramientas para mostrar el nombre de usuario actual y permitir acciones del usuario como editar propiedades del usuario y suplantar.
 
-* viewport
+* ventanilla
 
    [CQ.Ext.Viewport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Viewport)
 
-   Un contenedor especializado que representa el área de la aplicación visible (la ventanilla del explorador).
+   Un contenedor especializado que representa el área de aplicación visible (la ventanilla del explorador).
 
-   La ventanilla se procesa en el cuerpo del documento, se ajusta automáticamente al tamaño de la ventanilla móvil y gestiona el cambio de tamaño de la ventana. Solo puede haber una ventanilla creada.
+   La ventanilla se procesa en el cuerpo del documento y se ajusta automáticamente al tamaño de la ventanilla del explorador y administra el cambio de tamaño de la ventana. Solo puede haber una ventanilla creada.
 
 * ventana
 
    [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)
 
-   Panel especializado que se utilizará como ventana de aplicación. Windows están flotantes, [redimensionable](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)y [arrastrable](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) de forma predeterminada. Windows puede [maximizado](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) para rellenar la ventanilla, restaurada a su tamaño anterior y se puede [minimizar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)d.
+   Panel especializado diseñado para utilizarse como ventana de aplicación. Las ventanas están flotadas, [redimensionable](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window), y [arrastrable](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) de forma predeterminada. Windows puede ser [maximizado](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) para rellenar la ventanilla móvil, se restaura a su tamaño anterior y se puede [minimizar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window)d.
 
 * xmlstore
 
    [CQ.Ext.data.XmlStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.XmlStore)
 
-   Clase de ayuda pequeña para crear [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)s de datos XML más fácil. Un XmlStore se configurará automáticamente con un [CQ.Ext.data.XmlReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.XmlReader).
+   Clase auxiliar pequeña para crear [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)Es más fácil extraer datos XML. Se configurará automáticamente un XmlStore con un [CQ.Ext.data.XmlReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.XmlReader).
 
-   **cqinclude** Pseudotipo que incluye definiciones de utilidades de una ruta diferente en el repositorio. Normalmente se utiliza en los cuadros de diálogo de la página. No hay ninguna clase de utilidad JavaScript para este xtype. Se procesa mediante la función formatData() de la clase CQ.Util. Para obtener más información, consulte este artículo de la base de conocimientos.
+   **cqinclude** Pseudotipo que incluye definiciones de widget de una ruta diferente en el repositorio. Se utiliza comúnmente en los cuadros de diálogo de página. No hay ninguna clase de widget JavaScript real para este xtype. La función formatData() de la clase CQ.Util la procesa. Para obtener más información, consulte este artículo de la base de conocimiento.

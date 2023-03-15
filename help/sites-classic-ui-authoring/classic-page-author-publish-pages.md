@@ -37,7 +37,7 @@ También puede publicar una página (o cancelar su publicación) inmediatamente 
    >  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
 >* **Replicar o replicación**
-   >  Son los términos técnicos que describen el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar a la inversa los comentarios del usuario.
+   >  Son los términos técnicos que describen el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
 >
 
 
@@ -127,9 +127,9 @@ Si desea cancelar esta activación/desactivación, vaya a la [consola Flujo de t
 
 Si desea programar la desactivación para un momento posterior:
 
-1. En la consola Sitio web, vaya a la **Desactivar** y seleccione **Desactivar más tarde**.
+1. En la consola del sitio web, vaya a **Desactivar** y seleccione. **Desactivar más tarde**.
 
-1. En el cuadro de diálogo que se abre, proporcione la fecha y hora de la desactivación y haga clic en **OK**.
+1. En el cuadro de diálogo que se abre, proporcione la fecha y la hora de desactivación y haga clic en **OK**.
 
    ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
 
@@ -149,17 +149,17 @@ El estado se puede ver desde la [consola Sitios web](/help/sites-classic-ui-auth
 
 Desde la ficha **Sitios web**, puede activar cada página por separado. Cuando haya especificado o actualizado una cantidad considerable de páginas de contenido (todas residentes en la misma página raíz), será más fácil activar el árbol entero con una sola acción. También puede hacer un ensayo para emular una activación y resaltar qué páginas se activarían.
 
-1. Abra el **Herramientas** seleccionando esta opción en la **Bienvenido** y, a continuación, haga doble clic en **Replicación** para abrir la consola ( `https://localhost:4502/etc/replication.html`).
+1. Abra el **Herramientas** consola de seleccionándola en la **Bienvenido** y haga doble clic en **Replicación** para abrir la consola ( `https://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
 1. En la consola **Replicación**, haga clic en **Activar árbol**.
 
-   La siguiente ventana ( `https://localhost:4502/etc/replication/treeactivation.html`).
+   La siguiente ventana ( `https://localhost:4502/etc/replication/treeactivation.html`) se mostrará.
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Introduzca la variable **Ruta de inicio**. Esto especifica la ruta a la raíz de la sección que desea activar (publicar). Esta página y todas las páginas debajo se consideran para la activación (o se usan en la emulación si se selecciona un ensayo).
+1. Introduzca el **Ruta de inicio**. Esto especifica la ruta a la raíz de la sección que desea activar (publicar). Esta página y todas las páginas por debajo se consideran para su activación (o se utilizan en la emulación si se selecciona una Ejecución en seco).
 1. Active los criterios de selección según necesite:
 
    * **Solo modificado**: active únicamente las páginas modificadas.
@@ -168,6 +168,6 @@ Desde la ficha **Sitios web**, puede activar cada página por separado. Cuando h
 
 1. Seleccione la acción que desee realizar:
 
-   1. Select **Ensayo** si desea comprobar qué páginas *will* se activará. Esto es solo una emulación, no se activará ninguna página.
+   1. Seleccionar **Ejecución en seco** si desea comprobar qué páginas *haría* se activará. Esto es solo una emulación, no se activará ninguna página.
 
-   1. Select **Activar** si desea activar las páginas.
+   1. Seleccionar **Activar** si desea activar las páginas.

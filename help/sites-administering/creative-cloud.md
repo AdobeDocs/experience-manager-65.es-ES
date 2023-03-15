@@ -22,7 +22,7 @@ ht-degree: 15%
 
 >[!CAUTION]
 >
->La función de uso compartido de carpetas de AEM a Creative Cloud está en desuso. Se recomienda encarecidamente a los clientes que utilicen las nuevas funcionalidades, como [Vínculo de recurso de Adobe](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o [aplicación de escritorio AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es). Obtenga más información en [Prácticas recomendadas para la integración de AEM y Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>AEM La función de uso compartido de carpetas de Creative Cloud de está obsoleta. Se recomienda encarecidamente a los clientes que utilicen funciones más nuevas, como [Adobe Asset Link](https://helpx.adobe.com/es/enterprise/using/adobe-asset-link.html) o [AEM aplicación de escritorio de](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=es). Obtenga más información en [AEM Prácticas recomendadas de integración de Creative Cloud y](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

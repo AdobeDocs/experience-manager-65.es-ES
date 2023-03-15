@@ -48,7 +48,7 @@ A continuación encontrará un fragmento del sitio Geometrixx, desde el que se a
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Según la configuración de su instancia, use `/content` puede ser opcional en el entorno de publicación.
+   Según la configuración de la instancia, utilice `/content` puede ser opcional en el entorno de publicación.
 
 ```xml
   /content
@@ -70,7 +70,7 @@ A continuación encontrará un fragmento del sitio Geometrixx, desde el que se a
     /...
 ```
 
-Esta estructura se puede ver desde la consola Sitios web , que puede usar para [navegar por la estructura de árbol](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Esta estructura se puede ver desde la consola Sitios web, que puede utilizar para [navegar por la estructura de árbol](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -88,9 +88,9 @@ Cuando se crea una nueva página aparecen dos campos clave:
    * Se usa para generar la URI.
    * Es opcional que el usuario especifique algo en este campo. Si no se especifica, el nombre se deriva del título.
 
-Al crear una página nueva, AEM [valide el nombre de página según las convenciones](/help/sites-developing/naming-conventions.md) impuesto por AEM y JCR.
+AEM Al crear una página nueva, la opción de configuración de la página de inicio de sesión es: [valide el nombre de página según las convenciones](/help/sites-developing/naming-conventions.md) AEM impuesta por el y el JCR.
 
-La implementación y la lista de caracteres permitidos difieren ligeramente según la IU (es más extensa para la IU táctil), pero el mínimo permitido es:
+La implementación y la lista de caracteres permitidos difieren ligeramente según la interfaz de usuario (es más extensa para la interfaz con capacidad táctil), pero el mínimo permitido es:
 
 * De la &quot;a&quot; a la &quot;z&quot;
 * De la &quot;A&quot; a la &quot;Z&quot;
@@ -113,10 +113,10 @@ Si proporciona solo un **título** de página al crear una nueva página, AEM de
 
 Al indicar un valor **Nombre** cuando se cree una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
 
-En la IU clásica, **no se pueden introducir caracteres no válidos** en el **Nombre** campo .
+En la IU clásica puede **no puede introducir caracteres no válidos** en el **Nombre** field.
 
 >[!NOTE]
->En la IU táctil puede **no se pueden enviar caracteres no válidos** en el **Nombre** campo . Cuando AEM detecte caracteres no válidos, el campo se resaltará y aparecerá un mensaje explicativo para indicar qué caracteres se deben eliminar o reemplazar.
+>En la IU táctil puede hacer lo siguiente **no se pueden enviar caracteres no válidos** en el **Nombre** field. Cuando AEM detecte caracteres no válidos, el campo se resaltará y aparecerá un mensaje explicativo para indicar qué caracteres se deben eliminar o reemplazar.
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de 
 * Vídeo
 * Muchas más
 
-Una vez que haya creado y abierto una página, puede [añadir contenido mediante los componentes](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponible en el [barra de tareas](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Una vez que haya creado y abierto una página, puede [añadir contenido mediante los componentes](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponible en el [compinche](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## Administrar páginas {#managing-pages}
 
@@ -194,7 +194,7 @@ A menos que alguien haya creado todas las páginas con antelación, antes de pod
 
    >[!NOTE]
    >
-   >También puede crear una página mientras edita una página existente. Uso de **Crear página secundaria **desde la **Página** de la barra de tareas, creará una nueva página directamente debajo de la página que se esté editando.
+   >También puede crear una página mientras edita una página existente. Uso de **Crear página secundaria **desde **Página** de la barra de tareas, creará una nueva página directamente debajo de la página que se está editando.
 
 ### Abrir una página para su edición {#opening-a-page-for-editing}
 

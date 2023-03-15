@@ -27,7 +27,7 @@ ht-degree: 69%
    ![](do-not-localize/chlimage_1-11.png)
 
 1. Haga clic en **Nuevo…**
-1. Puede especificar la variable **Título**, **Nombre** y el tipo de experiencia que se creará; en este caso, oferta de Test&amp;Target.
+1. Puede especificar la variable **Título**, **Nombre** y tipo de experiencia que se va a crear; en este caso, Oferta de Test&amp;Target.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -39,4 +39,4 @@ ht-degree: 69%
 
 ## Integración con Adobe Target {#integrating-with-adobe-target}
 
-Consulte [Integrar con Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) para obtener más información.
+Consulte [Integración con Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) para obtener información detallada.

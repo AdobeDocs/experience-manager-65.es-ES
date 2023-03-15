@@ -12,7 +12,7 @@ discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
 role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 100%
 
@@ -42,13 +42,13 @@ La siguiente tabla muestra todos los tipos de persistencia admitidos, así como 
    <th><strong>Configuración independiente</strong></th>
    <td>Compatibilidad<br /> </td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <th><strong>Configuración del clúster</strong></th>
    <td>No compatible</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <th><strong>Coste de licencia</strong></th>

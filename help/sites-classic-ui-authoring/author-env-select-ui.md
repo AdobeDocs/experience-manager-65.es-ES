@@ -19,7 +19,7 @@ ht-degree: 55%
 
 # Seleccionar la IU{#selecting-your-ui}
 
-Dado que la IU táctil sustituye a la IU clásica, el usuario o administrador de la instancia de AEM debe tomar una decisión activa para continuar utilizando la IU clásica. Como la IU clásica ya no se mantiene, no hay forma de que el usuario autor cambie de la IU clásica al equivalente en la IU táctil.
+AEM Dado que la IU táctil reemplaza a la IU clásica, el usuario o administrador de la instancia de la instancia de la debe tomar una decisión activa para seguir utilizando la IU clásica. Dado que la IU clásica ya no se mantiene, no hay forma de que el usuario autor simplemente cambie de la IU clásica a la equivalente en la IU táctil.
 
 Para facilitar la labor de los usuarios que crean contenido, la IU táctil permite cambiar a la IU clásica en caso necesario. Consulte [Seleccionar la IU](/help/sites-authoring/select-ui.md) en la documentación de creación estándar para obtener más detalles.
 
@@ -27,7 +27,7 @@ Para facilitar la labor de los usuarios que crean contenido, la IU táctil permi
 >
 >Las instancias actualizadas de una versión anterior conservarán la IU clásica para la creación de páginas.
 >
->Después de la actualización, la creación de páginas no cambiará automáticamente a la IU táctil, pero puede configurar esta opción mediante la función[Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) del **Servicio de modo de IU de creación WCM** ( `AuthoringUIMode` ). Consulte [Omisiones de IU del editor](#uioverridesfortheeditor).
+>Después de la actualización, la creación de páginas no se cambiará automáticamente a la IU táctil, pero puede configurarla con el[Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) de la **Servicio de modo de IU de creación de WCM** ( `AuthoringUIMode` service). Consulte [Omisiones de IU del editor](#uioverridesfortheeditor).
 
 ## Configurar la IU predeterminada para su instancia {#configuring-the-default-ui-for-your-instance}
 

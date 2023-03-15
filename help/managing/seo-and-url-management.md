@@ -1,7 +1,7 @@
 ---
 title: Recomendaciones para la administración de direcciones URL y SEO
 seo-title: SEO and URL Management Best Practices
-description: Obtenga información sobre las prácticas recomendadas de SEO y las recomendaciones para lograrlas en una implementación AEM.
+description: AEM Conozca las prácticas recomendadas de SEO y las recomendaciones para lograrlas en una implementación de la.
 seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
 topic-tags: managing
 content-type: reference
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 # Recomendaciones para la administración de direcciones URL y SEO {#seo-and-url-management-best-practices}
 
-La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. En consecuencia, es necesario abordar las preocupaciones de la SEO en muchos proyectos AEM.
+La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. AEM En consecuencia, es necesario abordar las preocupaciones de la SEO en muchos proyectos de.
 
 En este documento primero se describen algunas [Prácticas recomendadas de SEO](#seo-best-practices) y recomendaciones para lograrlas en una implementación de AEM Luego, se profundiza en algunos de los [pasos de implementación más complejos](#aem-configurations) que se mencionan en la primera sección.
 
@@ -180,7 +180,7 @@ Los beneficios de este enfoque son:
 
 En AEM, todas las páginas web se almacenan en `/content/my-brand/my-content`. Aunque esto puede resultar útil desde la perspectiva de la administración de datos del repositorio, no es necesariamente la forma en que desea que los clientes vean el sitio y puede entrar en conflicto con las directrices de SEO para que las URL sean lo más cortas posible. Además, es posible que sirva varios sitios web desde la misma instancia de AEM y desde diferentes nombres de dominio.
 
-En esta sección se analizan las opciones disponibles en AEM para administrar estas URL y presentarlas a los usuarios de una forma más fácil de leer y compatible con la optimización para motores de búsqueda.
+En esta sección se analizan las opciones disponibles en AEM para administrar estas URL y presentarlas a los usuarios de una forma más fácil de leer y compatible con la optimización de los motores de búsqueda.
 
 #### URL de vanidad {#vanity-urls}
 
@@ -345,7 +345,7 @@ RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 
 ### Implementación de robots.txt para proteger los entornos de desarrollo {#implementing-robots-txt-to-protect-development-environments}
 
-Los motores de búsqueda *deben* comprobar la presencia de un `robots.txt` archivo en la raíz del sitio antes de rastrear el sitio. Debe destacarse aquí porque mientras los principales motores de búsqueda como Google, Yahoo o Bing respetan esto, algunos motores de búsqueda extranjeros no lo hacen.
+Los motores de búsqueda *deben* comprobar la presencia de un archivo `robots.txt` en la raíz del sitio antes de rastrear el sitio. Debe destacarse aquí porque mientras los principales motores de búsqueda como Google, Yahoo o Bing respetan esto, algunos motores de búsqueda extranjeros no lo hacen.
 
 La manera más sencilla de bloquear el acceso a todo el sitio es colocar un archivo denominado `robots.txt` en la raíz del sitio con el siguiente contenido:
 
@@ -360,15 +360,15 @@ La advertencia de colocar el archivo `robots.txt` en la raíz del sitio es que l
 
 ### Crear un mapa del sitio XML en AEM {#building-an-xml-sitemap-on-aem}
 
-Los rastreadores utilizan mapas del sitio XML para comprender mejor la estructura de los sitios web. Si bien no hay garantías de que proporcionar un mapa del sitio conduzca a mejores clasificaciones SEO, se trata de una práctica recomendada acordada. Puede mantener manualmente un archivo XML en el servidor web para utilizarlo como mapa del sitio, pero se recomienda generar el mapa del sitio mediante programación, lo que garantiza que, a medida que los autores creen nuevo contenido, el mapa del sitio reflejará automáticamente sus cambios.
+Los rastreadores utilizan mapas del sitio en XML para comprender mejor la estructura de los sitios web. Si bien no hay garantías de que proporcionar un mapa del sitio conduzca a mejores clasificaciones SEO, se trata de una práctica recomendada acordada. Puede mantener manualmente un archivo XML en el servidor web para utilizarlo como mapa del sitio, pero se recomienda generar el mapa del sitio mediante programación, lo que garantiza que, a medida que los autores creen nuevo contenido, el mapa del sitio reflejará automáticamente sus cambios.
 
 AEM usa el [módulo de mapa del sitio Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap) para generar mapas del sitio XML, que proporciona una amplia gama de opciones para que los desarrolladores y editores mantengan un mapa del sitio XML de sitios actualizado.
 
 >[!NOTE]
 >
->Esta función está disponible como función de producto desde la versión 6.5.11.0 de Adobe Experience Manager.
+>Está disponible como función de producto desde la versión 6.5.11.0 de Adobe Experience Manager.
 > 
->Para versiones anteriores, puede registrar un Sling Servlet usted mismo, para escuchar un `sitemap.xml` llame a y utilice el recurso proporcionado a través de la API de servlet para buscar en la página actual y sus descendientes para generar un archivo sitemap.xml.
+>Para versiones anteriores, puede registrar un Sling Servlet usted mismo, para escuchar un `sitemap.xml` llame a y utilice el recurso proporcionado mediante la API de servlet para buscar la página actual y sus descendientes para generar un archivo sitemap.xml.
 
 El módulo de mapa del sitio Apache Sling distingue entre un mapa del sitio de nivel superior y un mapa del sitio anidado, ambos generados para cualquier recurso que tenga la propiedad `sling:sitemapRoot` establecida en `true`. En general, los mapas del sitio se representan con selectores en la ruta del mapa del sitio de nivel superior del árbol, que es el recurso que no tiene otro antecesor raíz del mapa del sitio. Esta raíz de mapa del sitio de nivel superior también expone el índice de mapa del sitio, que normalmente es lo que el propietario del sitio configuraría en el portal de configuración del motor de búsqueda o añadiría al sitio `robots.txt`.
 
@@ -472,7 +472,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Además, la funcionalidad implementada para los mapas del sitio XML también se puede utilizar para diferentes casos de uso, por ejemplo para añadir el vínculo canónico o el idioma alterna al encabezado de una página. Consulte la interfaz [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) para obtener más información.
+Además, la funcionalidad implementada para los mapas del sitio XML también se puede utilizar para diferentes casos de uso, por ejemplo para añadir el vínculo canónico o las alternativas de idioma al encabezado de una página. Consulte la interfaz [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) para obtener más información.
 
 ### Crear redirecciones 301 para URL heredadas {#creating-redirects-for-legacy-urls}
 

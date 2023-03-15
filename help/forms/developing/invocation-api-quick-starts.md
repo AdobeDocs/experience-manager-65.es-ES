@@ -1,7 +1,7 @@
 ---
 title: Inicio rápido de la API de invocación
 seo-title: Invocation API Quick Starts
-description: Utilice Quick Starts para invocar mediante programación los servicios de AEM Forms.
+description: Utilice los tutoriales rápidos para invocar mediante programación los servicios de AEM Forms.
 seo-description: Use the Quick Starts to programmatically invoke AEM Forms services.
 uuid: acf67177-98a4-4c99-95a5-3086907d7c2c
 contentOwner: admin
@@ -14,110 +14,110 @@ exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1249'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # Inicio rápido de la API de invocación {#invocation-api-quick-starts}
 
-**Los ejemplos y ejemplos de este documento son solo para AEM Forms en un entorno JEE.**
+**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-Los siguientes Quick Starts están disponibles para invocar mediante programación los servicios de AEM Forms:
+Los siguientes tutoriales rápidos están disponibles para invocar servicios de AEM Forms mediante programación:
 
 <table>
  <thead>
   <tr>
    <th><p>Descripción</p></th>
-   <th><p>API de reubicación</p></th>
+   <th><p>API remota</p></th>
    <th><p>API de Java</p></th>
    <th><p>API de servicio web</p></th>
   </tr>
  </thead>
  <tbody>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking_human_centric_long_lived_processes">Invocación de procesos de larga vida centrados en el ser humano</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking-a-long-lived-process-using-remoting">Invocación de un proceso de larga duración mediante AEM Forms Remoting (obsoleto para AEM formularios)</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_invocation_api">Inicio rápido: Invocación de un proceso de larga duración mediante la API de invocación</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_web_service_api">Inicio rápido: Invocación de un proceso de larga duración mediante la API de servicio web</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking_human_centric_long_lived_processes">Invocar procesos de larga duración centrados en el ser humano</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking-a-long-lived-process-using-remoting">AEM Invocación de un proceso de larga duración mediante (obsoleto para formularios en forma de) Remoting en AEM Forms</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_invocation_api">Inicio rápido: invocación de un proceso de larga duración mediante la API de invocación</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_web_service_api">Inicio rápido: invocar un proceso de larga duración mediante la API de servicio web</a></p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">Invocación de un proceso de corta duración mediante la API de invocación</a></p></td>
    <td><p>N/D</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">Inicio rápido: Invocación de un proceso de corta duración mediante la API de invocación</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">Inicio rápido: invocación de un proceso de corta duración mediante la API de invocación</a></p></td>
    <td><p>N/D</p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">Invocación de AEM Forms mediante la codificación Base64</a> (proxy de servicio web Java)</p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">Invocar AEM Forms con codificación Base64</a> (Proxy de servicio web de Java)</p></td>
    <td><p>N/D</p></td>
    <td><p>N/D</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_java_proxy_files_and_base64_encoding">Inicio rápido: Invocación de un servicio mediante archivos proxy Java y codificación Base64</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_java_proxy_files_and_base64_encoding">Inicio rápido: Invocar un servicio mediante archivos proxy Java y codificación Base64</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">Invocación de AEM Forms mediante la codificación Base64</a> (proxy de servicio web .NET)</p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">Invocar AEM Forms con codificación Base64</a> (proxy de servicio web de .NET)</p></td>
    <td><p>N/D</p></td>
    <td><p>N/D</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_base64_in_a_microsoft_net_project">Inicio rápido: Invocación de un servicio mediante base64 en un proyecto de Microsoft .NET</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_base64_in_a_microsoft_net_project">Inicio rápido: Invocar un servicio utilizando base64 en un proyecto de Microsoft .NET</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom">Invocación de AEM Forms mediante MTOM</a> (ejemplo de servicio web de .NET)</p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom">Invocar AEM Forms mediante MTOM</a> (ejemplo del servicio web de .NET)</p></td>
    <td><p>N/D</p></td>
    <td><p>N/D</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_mtom_in_a_net_project">Inicio rápido: Invocación de un servicio mediante MTOM en un proyecto .NET</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_mtom_in_a_net_project">Inicio rápido: Invocar un servicio mediante MTOM en un proyecto de .NET</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref">Invocación de AEM Forms mediante SwaRef</a> (Ejemplo de servicio web de Java)</p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref">Invocar AEM Forms mediante SwaRef</a> (Ejemplo del servicio web Java)</p></td>
    <td><p>N/D</p></td>
    <td><p>N/D</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_swaref_in_a_java_project">Inicio rápido: Invocación de un servicio mediante SwaRef en un proyecto Java</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_swaref_in_a_java_project">Inicio rápido: Invocar un servicio mediante SwaRef en un proyecto Java</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">Invocación de AEM Forms mediante datos BLOB a través de HTTP</a> (Ejemplo de servicio web de Java)</p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">Invocar AEM Forms mediante datos BLOB a través de HTTP</a> (Ejemplo del servicio web Java)</p></td>
    <td><p>N/D</p></td>
    <td><p>N/D</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_net_project">Inicio rápido: Invocación de un servicio mediante datos BLOB a través de HTTP en un proyecto .NET</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_net_project">Inicio rápido: Invocar un servicio mediante datos BLOB a través de HTTP en un proyecto .NET</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">Invocación de AEM Forms mediante datos BLOB a través de HTTP</a> (ejemplo de servicio web de .NET)</p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">Invocar AEM Forms mediante datos BLOB a través de HTTP</a> (ejemplo del servicio web de .NET)</p></td>
    <td><p>N/D</p></td>
    <td><p>N/D</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_java_project">Inicio rápido: Invocación de un servicio mediante datos BLOB a través de HTTP en un proyecto Java</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_java_project">Inicio rápido: Invocar un servicio mediante datos BLOB a través de HTTP en un proyecto Java</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime">Invocación de AEM Forms mediante DIME</a> (Ejemplo de servicio web de Java)</p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime">Invocar AEM Forms mediante DIME</a> (Ejemplo del servicio web Java)</p></td>
    <td><p>N/D</p></td>
    <td><p>N/D</p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_dime_in_a_java_project">Inicio rápido: Invocación de un servicio mediante DIME en un proyecto Java</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_dime_in_a_java_project">Inicio rápido: Invocar un servicio mediante DIME en un proyecto Java</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Invocación de AEM Forms mediante AEM Forms Remoting (obsoleto para formularios AEM)</a></p></td>
-   <td><p><a href="invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting">Inicio rápido: Invocación de un proceso de corta duración pasando un documento no seguro usando (obsoleto para formularios AEM) AEM Forms Remoting</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Invocar AEM Forms AEM mediante (obsoleto para formularios) AEM Forms Remoting</a></p></td>
+   <td><p><a href="invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting">AEM Inicio rápido: invocar un proceso de corta duración al pasar un documento no seguro mediante (obsoleto para formularios de la lista de permitidos) Remoting de AEM Forms</a></p></td>
    <td><p>N/D</p></td>
    <td><p>N/D</p></td>
   </tr>
   <tr>
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#passing_secure_documents_to_invoke_processes_using_remoting">Pasar documentos seguros para invocar procesos mediante Remoting</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting">Inicio rápido: Invocación de un proceso de corta duración pasando un documento seguro usando (obsoleto para formularios AEM) AEM Forms Remoting</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting">AEM Inicio rápido: invocar un proceso de corta duración al pasar un documento seguro mediante (obsoleto para formularios de la lista de permitidos) Remoting de AEM Forms</a></p></td>
    <td><p>N/D</p></td>
    <td><p>N/D</p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking_custom_component_services_using_remoting">Invocación de servicios de componentes personalizados mediante Remoting</a></p></td>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">Inicio rápido: Invocación del servicio personalizado del cliente mediante (obsoleto para AEM formularios) AEM Forms Remoting</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking_custom_component_services_using_remoting">Invocar servicios de componentes personalizados mediante Remoting</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">AEM Inicio rápido: Invocar el servicio personalizado del cliente mediante (Obsoleto para formularios en forma de) Remoting de AEM Forms</a></p></td>
    <td><p>N/D</p></td>
    <td><p>N/D</p></td>
   </tr>
  </tbody>
 </table>
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión se debe establecer en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
->Quick Starts ubicado en Programación con formularios AEM se basan en que el servidor de Forms se implementa en JBoss Application Server y el sistema operativo Microsoft Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas compatibles con el sistema operativo aplicable. Del mismo modo, si utiliza otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM Los inicios rápidos, ubicados en Programación con formularios de la aplicación, se basan en el servidor de Forms que se implementa en el servidor de aplicaciones JBoss y en el sistema operativo Microsoft Windows. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Inicio rápido: Invocación de un proceso de corta duración mediante la API de invocación {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
+## Inicio rápido: invocación de un proceso de corta duración mediante la API de invocación {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
 
-El siguiente ejemplo de código Java invoca un proceso de corta duración llamado `MyApplication/EncryptDocument`. Observe que este proceso se invoca sincrónicamente. El parámetro de entrada para este proceso se denomina `inDoc`. El parámetro de salida para este proceso se denomina `outDoc`. El documento de PDF cifrado con contraseña se guarda como un archivo de PDF denominado `EncryptLoan.pdf`. (Consulte [Invocación de un proceso de corta duración mediante la API de invocación](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api).)
+El siguiente ejemplo de código Java invoca un proceso de corta duración denominado `MyApplication/EncryptDocument`. Observe que este proceso se invoca sincrónicamente. El parámetro de entrada para este proceso se denomina `inDoc`. El parámetro de salida de este proceso se denomina `outDoc`. El documento de PDF cifrado con contraseña se guarda como un archivo de PDF denominado `EncryptLoan.pdf`. (Consulte [Invocación de un proceso de corta duración mediante la API de invocación](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api).)
 
 ```java
  /*
@@ -229,11 +229,11 @@ El siguiente ejemplo de código Java invoca un proceso de corta duración llamad
  }
 ```
 
-## Inicio rápido: Invocación de un servicio mediante base64 en un proyecto de Microsoft .NET {#quick-start-invoking-a-service-using-base64-in-a-microsoft-net-project}
+## Inicio rápido: Invocar un servicio utilizando base64 en un proyecto de Microsoft .NET {#quick-start-invoking-a-service-using-base64-in-a-microsoft-net-project}
 
-El siguiente ejemplo de código C# invoca un proceso denominado `MyApplication/EncryptDocument` desde un proyecto de Microsoft .NET utilizando la codificación Base64. (Consulte [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+El siguiente ejemplo de código de C# invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto de Microsoft .NET con codificación Base64. (Consulte [Invocar AEM Forms con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
-Documento PDF no protegido basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como un archivo de PDF denominado *EncryptedPDF.pdf*.
+Un documento de PDF no protegido basado en un archivo de PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como archivo de PDF denominado *EncryptedPDF.pdf*.
 
 ```java
  /*
@@ -310,11 +310,11 @@ Documento PDF no protegido basado en un archivo PDF denominado *Loan.pdf* se pas
  
 ```
 
-## Inicio rápido: Invocación de un servicio mediante archivos proxy Java y codificación Base64 {#quick-start-invoking-a-service-using-java-proxy-files-and-base64-encoding}
+## Inicio rápido: Invocar un servicio mediante archivos proxy Java y codificación Base64 {#quick-start-invoking-a-service-using-java-proxy-files-and-base64-encoding}
 
-El siguiente ejemplo de código Java invoca un proceso denominado `MyApplication/EncryptDocument` uso de archivos proxy Java creados con codificación JAX-WS y Base64. (Consulte [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+El siguiente ejemplo de código Java invoca un proceso denominado `MyApplication/EncryptDocument` usar archivos proxy Java creados con la codificación JAX-WS y Base64. (Consulte [Invocar AEM Forms con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
-Documento PDF no protegido basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como un archivo de PDF denominado *EncryptedDocument.pdf*.
+Un documento de PDF no protegido basado en un archivo de PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como archivo de PDF denominado *EncryptedDocument.pdf*.
 
 ```java
  /**
@@ -396,13 +396,13 @@ Documento PDF no protegido basado en un archivo PDF denominado *Loan.pdf* se pas
  
 ```
 
-## Inicio rápido: Invocación de un proceso de corta duración pasando un documento no seguro usando (obsoleto para formularios AEM) AEM Forms Remoting {#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting}
+## AEM Inicio rápido: invocar un proceso de corta duración al pasar un documento no seguro mediante (obsoleto para formularios de la lista de permitidos) Remoting de AEM Forms {#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting}
 
-El siguiente ejemplo de código de Flex invoca un proceso de corta duración denominado `MyApplication/EncryptDocument`. (Consulte [Invocación de AEM Forms mediante AEM Forms Remoting (obsoleto para formularios AEM)](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+El siguiente ejemplo de código Flex invoca un proceso de corta duración denominado `MyApplication/EncryptDocument`. (Consulte [Invocar AEM Forms AEM mediante (obsoleto para formularios) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 >[!NOTE]
 >
->Este inicio rápido invoca un proceso de AEM Forms y carga un documento no seguro. Para ejecutar este inicio rápido, AEM Forms debe estar configurado para cargar documentos no seguros. Para obtener información sobre cómo configurar AEM Forms para que acepte documentos no seguros, consulte [Configuración de AEM Forms para aceptar documentos seguros y no seguros](/help/forms/developing/invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
+>Este inicio rápido invoca un proceso de AEM Forms y carga un documento no seguro. Para ejecutar este inicio rápido, AEM Forms debe configurarse para cargar documentos no seguros. Para obtener información sobre cómo configurar AEM Forms para que acepte documentos no seguros, consulte [Configuración de AEM Forms para aceptar documentos seguros y no seguros](/help/forms/developing/invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
 ```java
  <?xml version="1.0" encoding="utf-8"?>
@@ -553,11 +553,11 @@ El siguiente ejemplo de código de Flex invoca un proceso de corta duración den
  
 ```
 
-## Inicio rápido: Invocación de un servicio mediante DIME en un proyecto .NET {#quick-start-invoking-a-service-using-dime-in-a-net-project}
+## Inicio rápido: Invocar un servicio mediante DIME en un proyecto .NET {#quick-start-invoking-a-service-using-dime-in-a-net-project}
 
-El siguiente ejemplo de código C# invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto de Microsoft .NET con Dime. (Consulte [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+El siguiente ejemplo de código de C# invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto de Microsoft .NET con Dime. (Consulte [Invocar AEM Forms con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
-Documento PDF no protegido basado en un archivo PDF denominado *map.pdf* se pasa al proceso de AEM Forms mediante DIME. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como un archivo de PDF denominado *mapEncrypt.pdf*.
+Un documento de PDF no protegido basado en un archivo de PDF denominado *map.pdf* se pasa al proceso de AEM Forms mediante DIME. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como archivo de PDF denominado *mapEncrypt.pdf*.
 
 ```java
  /**
@@ -658,11 +658,11 @@ Documento PDF no protegido basado en un archivo PDF denominado *map.pdf* se pasa
  
 ```
 
-## Inicio rápido: Invocación de un servicio mediante DIME en un proyecto Java {#quick-start-invoking-a-service-using-dime-in-a-java-project}
+## Inicio rápido: Invocar un servicio mediante DIME en un proyecto Java {#quick-start-invoking-a-service-using-dime-in-a-java-project}
 
-El siguiente ejemplo de código Java invoca un proceso denominado `MyApplication/EncryptDocument` uso de DIME. (Consulte [Invocación de AEM Forms mediante DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime).)
+El siguiente ejemplo de código Java invoca un proceso denominado `MyApplication/EncryptDocument` utilizando DIME. (Consulte [Invocar AEM Forms mediante DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime).)
 
-Documento PDF no protegido basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante DIME. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como un archivo de PDF denominado *EncryptLoan.pdf*.
+Un documento de PDF no protegido basado en un archivo de PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante DIME. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como archivo de PDF denominado *EncryptLoan.pdf*.
 
 ```java
  /**
@@ -759,11 +759,11 @@ Documento PDF no protegido basado en un archivo PDF denominado *Loan.pdf* se pas
  
 ```
 
-## Inicio rápido: Invocación de un servicio mediante datos BLOB a través de HTTP en un proyecto Java {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-java-project}
+## Inicio rápido: Invocar un servicio mediante datos BLOB a través de HTTP en un proyecto Java {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-java-project}
 
-El siguiente ejemplo de código Java invoca un proceso denominado `MyApplication/EncryptDocument` uso de datos sobre HTTP. (Consulte [Invocación de AEM Forms mediante datos BLOB a través de HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
+El siguiente ejemplo de código Java invoca un proceso denominado `MyApplication/EncryptDocument` uso de datos a través de HTTP. (Consulte [Invocar AEM Forms mediante datos BLOB a través de HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
-Documento PDF no protegido basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante SOAP a través de HTTP. El archivo de PDF se encuentra en la siguiente dirección URL: `https://'[server]:[port]'/FormsQS`. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como un archivo de PDF denominado *EncryptedDocument.pdf*.
+Un documento de PDF no protegido basado en un archivo de PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante SOAP a través de HTTP. El archivo de PDF se encuentra en la siguiente dirección URL: `https://'[server]:[port]'/FormsQS`. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como archivo de PDF denominado *EncryptedDocument.pdf*.
 
 ```java
  /**
@@ -834,11 +834,11 @@ Documento PDF no protegido basado en un archivo PDF denominado *Loan.pdf* se pas
  
 ```
 
-## Inicio rápido: Invocación de un servicio mediante datos BLOB a través de HTTP en un proyecto .NET {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-net-project}
+## Inicio rápido: Invocar un servicio mediante datos BLOB a través de HTTP en un proyecto .NET {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-net-project}
 
-El siguiente ejemplo de código C# invoca un proceso denominado `MyApplication/EncryptDocument` desde un proyecto de Microsoft .NET que utiliza datos a través de HTTP. (Consulte [Invocación de AEM Forms mediante datos BLOB a través de HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
+El siguiente ejemplo de código de C# invoca un proceso denominado `MyApplication/EncryptDocument` desde un proyecto de Microsoft .NET que utiliza datos a través de HTTP. (Consulte [Invocar AEM Forms mediante datos BLOB a través de HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
-Documento PDF no protegido basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante BLOB a través de HTTP. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como un archivo de PDF denominado *EncryptedPDF.pdf*.
+Un documento de PDF no protegido basado en un archivo de PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante BLOB sobre HTTP. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como archivo de PDF denominado *EncryptedPDF.pdf*.
 
 ```java
  /*
@@ -934,11 +934,11 @@ Documento PDF no protegido basado en un archivo PDF denominado *Loan.pdf* se pas
  
 ```
 
-## Inicio rápido: Invocación de un servicio mediante MTOM en un proyecto .NET {#quick-start-invoking-a-service-using-mtom-in-a-net-project}
+## Inicio rápido: Invocar un servicio mediante MTOM en un proyecto de .NET {#quick-start-invoking-a-service-using-mtom-in-a-net-project}
 
-El siguiente ejemplo de código C# invoca un proceso denominado `MyApplication/EncryptDocument` desde un proyecto de Microsoft .NET usando MTOM. (Consulte [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).)
+El siguiente ejemplo de código de C# invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto de Microsoft .NET que utiliza MTOM. (Consulte [Invocar AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).)
 
-Documento PDF no protegido basado en un archivo PDF denominado *loan.pdf* se pasa al proceso de AEM Forms mediante MTOM. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como un archivo de PDF denominado *EncryptedDocument.pdf*.
+Un documento de PDF no protegido basado en un archivo de PDF denominado *préstamo.pdf* se pasa al proceso de AEM Forms mediante MTOM. El proceso devuelve un documento de PDF cifrado con contraseña que se guarda como archivo de PDF denominado *EncryptedDocument.pdf*.
 
 ```java
  ???/**
@@ -1022,13 +1022,13 @@ Documento PDF no protegido basado en un archivo PDF denominado *loan.pdf* se pas
 
 >[!NOTE]
 >
->Muchos inicios rápidos que muestran cómo realizar operaciones de servicio de AEM Forms incluyen un ejemplo de código MTOM.
+>Muchos inicios rápidos que muestran cómo realizar operaciones del servicio AEM Forms incluyen un ejemplo de código MTOM.
 
-## Inicio rápido: Invocación de un servicio mediante SwaRef en un proyecto Java {#quick-start-invoking-a-service-using-swaref-in-a-java-project}
+## Inicio rápido: Invocar un servicio mediante SwaRef en un proyecto Java {#quick-start-invoking-a-service-using-swaref-in-a-java-project}
 
-El siguiente ejemplo de código Java invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto Java. Este proyecto Java usa clases proxy que se crearon usando JAX-WS y SwaRef como tipo de codificación. (Consulte [Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref).)
+El siguiente ejemplo de código Java invoca un proceso denominado `MyApplication/EncryptDocument` de un proyecto Java. Este proyecto Java utiliza clases de proxy creadas con JAX-WS y SwaRef como tipo de codificación. (Consulte [Invocar AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref).)
 
-Documento PDF no protegido basado en un archivo PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante SwaRef. El documento de PDF cifrado se guarda como un archivo de PDF denominado *EncryptedDocument.pdf*.
+Un documento de PDF no protegido basado en un archivo de PDF denominado *Loan.pdf* se pasa al proceso de AEM Forms mediante SwaRef. El documento de PDF cifrado se guarda como un archivo de PDF denominado *EncryptedDocument.pdf*.
 
 ```java
  /**

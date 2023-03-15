@@ -32,7 +32,7 @@ Las operaciones de desarrollo empresarial tienen como objetivo evitar problemas 
 
 ## Entornos {#environments}
 
-Una implementación de Adobe Experience Manager (AEM) suele consistir en varios entornos, que se utilizan para diferentes propósitos en diferentes niveles:
+Una implementación de Adobe Experience Manager AEM () suele consistir en varios entornos, que se utilizan para diferentes propósitos en diferentes niveles:
 
 * [Desarrollo](#development)
 * [Garantía de calidad](#quality-assurance)
@@ -62,7 +62,7 @@ Según la escala del sistema, el entorno de desarrollo puede tener instancias de
 
 ### Garantía de calidad {#quality-assurance}
 
-El equipo de garantía de calidad utiliza este entorno de forma exhaustiva [prueba](/help/sites-developing/test-plan.md) su nuevo sistema; diseño y función. Debe tener entornos de creación y de publicación, con contenido adecuado, y proporcionar todos los servicios necesarios para permitir un conjunto de todas las aplicaciones de pruebas.
+El equipo de garantía de la calidad utiliza este entorno para [prueba](/help/sites-developing/test-plan.md) su nuevo sistema; diseño y función. Debe tener entornos de creación y de publicación, con contenido adecuado, y proporcionar todos los servicios necesarios para permitir un conjunto de todas las aplicaciones de pruebas.
 
 ### Ensayo {#staging}
 
@@ -118,12 +118,12 @@ El código siempre debe propagarse de abajo a arriba:
 
 El código (por ejemplo, las plantillas de diseño y la funcionalidad personalizada de la aplicación web) se transfiere generalmente con la exportación e importación de paquetes entre los distintos repositorios de contenido. Cuando es significativa, esta replicación puede configurarse como un proceso automático.
 
-AEM proyectos suelen almacenar en déclencheur la implementación de código:
+AEM Los proyectos suelen implementar el código de déclencheur:
 
 * Automáticamente: para su transferencia a los entornos de desarrollo y control de calidad.
 * Manualmente: las implementaciones en los entornos de ensayo y producción se realizan de manera más controlada, a menudo manual; aunque la automatización es posible si es necesario.
 
-![imagen_1](assets/chlimage_1.png)
+![chlimage_1](assets/chlimage_1.png)
 
 ## Movimiento de contenido  {#content-movement}
 
@@ -140,6 +140,6 @@ El contenido de producción debe trasladarse del entorno de producción al entor
 El contenido se puede transferir de la siguiente manera:
 
 * Entre los distintos entornos, mediante la exportación e importación de paquetes.
-* Entre diferentes instancias: replicando directamente ([AEM replicación](/help/sites-deploying/replication.md)) el contenido (mediante una conexión HTTP o HTTPS).
+* Entre diferentes instancias: replicando directamente ([AEM replicación de](/help/sites-deploying/replication.md)) el contenido (mediante una conexión HTTP o HTTPS).
 
-![Chlimage_1-1](assets/chlimage_1-1.png)
+![chlimage_1-1](assets/chlimage_1-1.png)

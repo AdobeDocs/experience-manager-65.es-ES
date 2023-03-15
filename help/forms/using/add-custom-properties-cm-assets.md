@@ -12,7 +12,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4443'
 ht-degree: 100%
 
@@ -123,7 +123,7 @@ Este escenario muestra cómo se puede agregar una propiedad personalizada a todo
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Valor</strong></td>
+      <td><strong>Valor </strong></td>
    </tr>
    <tr>
       <td>fieldLabel</td>
@@ -159,7 +159,7 @@ Este escenario muestra cómo se puede agregar una propiedad personalizada a todo
          <tr>
           <td><strong>Nombre</strong></td>
           <td><strong>Tipo</strong></td>
-          <td><strong>Valor</strong></td>
+          <td><strong>Valor </strong></td>
          </tr>
          <tr>
           <td>text</td>
@@ -275,7 +275,7 @@ Con el siguiente procedimiento, puede agregar una pestaña con un campo a todos 
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Valor</strong></td>
+           <td><strong>Valor </strong></td>
          </tr>
          <tr>
            <td>sling:resourceType</td>
@@ -353,7 +353,7 @@ Con el siguiente procedimiento, puede agregar una pestaña con un campo a todos 
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Valor</strong></td>
+           <td><strong>Valor </strong></td>
          </tr>
          <tr>
            <td>path<br /> </td>
@@ -470,7 +470,7 @@ Para agregar una propiedad a un tipo de recurso, complete los siguientes pasos:
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Valor</strong></td>
+           <td><strong>Valor </strong></td>
          </tr>
          <tr>
            <td>sling:resourceType</td>
@@ -558,7 +558,7 @@ De forma predeterminada, las propiedades personalizadas agregadas a las pestaña
   <tr>
    <td><strong>Nombre</strong></td>
    <td><strong>Tipo</strong></td>
-   <td><strong>Valor</strong></td>
+   <td><strong>Valor </strong></td>
   </tr>
   <tr>
    <td>path</td>
@@ -626,7 +626,7 @@ Complete los siguientes pasos para mostrar la propiedad personalizada en la inte
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Valor</strong></td>
+           <td><strong>Valor </strong></td>
          </tr>
          <tr>
            <td>jcr:primaryType</td>
@@ -741,7 +741,7 @@ Complete los siguientes pasos para mostrar la propiedad personalizada en la inte
   <tr>
    <td><strong>Nombre</strong></td>
    <td><strong>Tipo</strong></td>
-   <td><strong>Valor</strong></td>
+   <td><strong>Valor </strong></td>
   </tr>
   <tr>
    <td>sling:orderBefore</td>
@@ -800,7 +800,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
          <tr>
            <td><strong>Nombre</strong></td>
            <td><strong>Tipo</strong></td>
-           <td><strong>Valor</strong></td>
+           <td><strong>Valor </strong></td>
          </tr>
          <tr>
            <td>path</td>
@@ -871,7 +871,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Valor</strong></td>
+      <td><strong>Valor </strong></td>
    </tr>
    <tr>
       <td>sling:orderBefore<br /> </td>
@@ -917,7 +917,7 @@ Para permitir la indexación de propiedades personalizadas, complete los siguien
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Valor</strong></td>
+      <td><strong>Valor </strong></td>
    </tr>
    <tr>
       <td>sling:orderBefore<br /> </td>
@@ -941,7 +941,7 @@ Para mostrar u ocultar las propiedades personalizadas, complete los siguientes p
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Valor</strong></td>
+      <td><strong>Valor </strong></td>
    </tr>
    <tr>
       <td>sling:resourceType<br /> </td>
@@ -958,7 +958,7 @@ Para mostrar u ocultar las propiedades personalizadas, complete los siguientes p
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Valor</strong></td>
+      <td><strong>Valor </strong></td>
    </tr>
    <tr>
       <td>hideOnCreate<br /> </td>
@@ -975,7 +975,7 @@ Para mostrar u ocultar las propiedades personalizadas, complete los siguientes p
    <tr>
       <td><strong>Nombre</strong></td>
       <td><strong>Tipo</strong></td>
-      <td><strong>Valor</strong></td>
+      <td><strong>Valor </strong></td>
    </tr>
    <tr>
       <td>hideOnEdit<br /> </td>

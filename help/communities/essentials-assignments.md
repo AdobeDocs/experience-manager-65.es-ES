@@ -1,5 +1,5 @@
 ---
-title: Ascripciones esenciales
+title: Assignments Essentials
 seo-title: Assignments Essentials
 description: Información general sobre la función Asignaciones para comunidades de habilitación
 seo-description: Assignments feature overview for enablement communities
@@ -18,27 +18,27 @@ ht-degree: 13%
 
 ---
 
-# Ascripciones esenciales {#assignments-essentials}
+# Assignments Essentials {#assignments-essentials}
 
-Siga leyendo para conocer la información esencial para trabajar con la función de asignaciones de [comunidad de habilitación](/help/communities/overview.md#enablement-community) sitios web.
+Siga leyendo para conocer la información esencial para trabajar con la función de asignaciones de [comunidad de habilitación](/help/communities/overview.md#enablement-community) sitios.
 
-La función de asignaciones es la capacidad de asignar recursos de habilitación y rutas de aprendizaje a miembros de comunidades de habilitación.
+La función de asignaciones permite asignar recursos de habilitación y rutas de aprendizaje a miembros de comunidades de habilitación.
 
-## Elementos esenciales para el cliente {#essentials-for-client-side}
+## Essentials para el lado del cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/habilitación/componentes/hbs/myassigned</td>
+   <td>social/enablement/components/hbs/myassigned</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
+   <td> <a href="/help/communities/scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learn.path</td>
+   <td> <a href="/help/communities/clientlibs.md"><strong>clientlibs</strong></a></td>
+   <td>cq.social.enablement.hbs.breadrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -50,19 +50,19 @@ La función de asignaciones es la capacidad de asignar recursos de habilitación
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="/help/communities/assignments.md">Función de asignaciones</a></td>
+   <td>Consulte <a href="/help/communities/assignments.md">Función Asignaciones</a></td>
   </tr>
  </tbody>
 </table>
 
 ### Estado de finalización y éxito {#completion-and-success-status}
 
-El estado de Finalización y Éxito se utiliza en los informes y los titulares de estado en Asignaciones.
+Los estados de finalización y éxito se utilizan en los informes y en los titulares de estado de las Asignaciones.
 
 Estado de finalización:
 
 * Sin asignar
-* No iniciado (nuevo)
+* Sin iniciar (nuevo)
 * En curso
 * Completar
 
@@ -72,7 +72,7 @@ Estado de éxito:
 * Pase
 * Error
 
-Las únicas combinaciones posibles de Estado de finalización y éxito son:
+Las únicas combinaciones posibles de estado de éxito y finalización son las siguientes:
 
 | **Finalización** | **Correcto** |
 |---|---|
@@ -81,11 +81,11 @@ Las únicas combinaciones posibles de Estado de finalización y éxito son:
 | Completar | Pase |
 | Completar | Error |
 
-## Elementos esenciales para el servidor {#essentials-for-server-side}
+## Essentials para servidor {#essentials-for-server-side}
 
 ### Función Asignaciones {#assignments-function}
 
-Una estructura de sitio de la comunidad que incluye el [Función Asignaciones](/help/communities/functions.md#assignments-function), incluye un ` [assignments](/help/communities/assignments.md)` componente.
+Una estructura de sitio de la comunidad que incluye [Función Asignaciones](/help/communities/functions.md#assignments-function), incluye un configurado ` [assignments](/help/communities/assignments.md)` componente.
 
 ### API de referencia {#reference-apis}
 
@@ -93,4 +93,4 @@ Una estructura de sitio de la comunidad que incluye el [Función Asignaciones](/
 
 * [API de informes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API de informes de Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/model/api/package-summary.html)
+* [API de Reporting Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/model/api/package-summary.html)

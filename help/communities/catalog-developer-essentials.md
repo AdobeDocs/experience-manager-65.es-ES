@@ -1,7 +1,7 @@
 ---
-title: Esenciales del catálogo
+title: Catalog Essentials
 seo-title: Catalog Essentials
-description: Información general del catálogo
+description: Resumen del catálogo
 seo-description: Catalog overview
 uuid: 788512bb-fa38-48fb-a769-1eaae6bb95a1
 contentOwner: Guillaume Carlino
@@ -13,35 +13,35 @@ exl-id: 4ca76b50-d56d-4f4d-be92-bf8929c5d754
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# Esenciales del catálogo {#catalog-essentials}
+# Catalog Essentials {#catalog-essentials}
 
-Esta página proporciona la información esencial para trabajar con la función de catálogo de los sitios de la comunidad de habilitación.
+Esta página proporciona información esencial para trabajar con la función de catálogo de los sitios de la comunidad de habilitación.
 
-La función de catálogo, cuando se incluye en un sitio de la comunidad, permite a los miembros de la comunidad examinar y seleccionar los recursos de habilitación enumerados en un catálogo.
+La función de catálogo, cuando se incluye en un sitio de comunidad, permite a los miembros de la comunidad examinar y seleccionar los recursos de habilitación enumerados en un catálogo.
 
-La variable [ `enablement catalog` componente](catalog.md) permite a los miembros de la comunidad acceder a un catálogo de [recursos de habilitación](resources.md). El uso de etiquetas AEM es una parte importante de la gestión del aspecto de los recursos de habilitación en un catálogo.
+El [ `enablement catalog` componente](catalog.md) permite a los miembros de la comunidad acceder a un catálogo de [recursos de habilitación](resources.md). AEM El uso de etiquetas de es una parte importante de la administración del aspecto de los recursos de habilitación en un catálogo.
 
-Consulte [Etiquetado de recursos de habilitación](tag-resources.md).
+Consulte [Recursos de habilitación de etiquetas](tag-resources.md).
 
-## Elementos esenciales para el cliente {#essentials-for-client-side}
+## Essentials para el lado del cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/activación/componentes/hbs/catálogo</td>
+   <td>social/enablement/components/hbs/catalog</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.catalog<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learn.path</td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
+   <td>cq.social.enablement.hbs.breadrumbs<br /> cq.social.enablement.hbs.catalog<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -53,61 +53,61 @@ Consulte [Etiquetado de recursos de habilitación](tag-resources.md).
   </tr>
   <tr>
    <td><strong> propiedades</strong></td>
-   <td>Consulte <a href="catalog.md">Función de catálogo</a></td>
+   <td>Consulte <a href="catalog.md">Función Catálogo</a></td>
   </tr>
  </tbody>
 </table>
 
-## Elementos esenciales para el servidor {#essentials-for-server-side}
+## Essentials para servidor {#essentials-for-server-side}
 
 ### Función Catálogo {#catalog-function}
 
-Una estructura de sitio de la comunidad que incluye el [Función Catálogo](functions.md#catalog-function), incluye un `enablement catalog` componente.
+Una estructura de sitio de la comunidad que incluye [Función Catálogo](functions.md#catalog-function), incluye un configurado `enablement catalog` componente.
 
 ### Prefiltros {#pre-filters}
 
-Cuando se añade una función Catálogo a un sitio de comunidad, es posible restringir los recursos de habilitación y las rutas de aprendizaje que aparecen en el catálogo especificando un prefiltro. Esto se hace estableciendo propiedades en la instancia del recurso de catálogo para el sitio.
+Cuando se añade una función Catálogo a un sitio de la comunidad, es posible restringir los recursos de habilitación y las rutas de aprendizaje que aparecen en el catálogo especificando un filtro previo. Esto se hace estableciendo propiedades en la instancia del recurso de catálogo para el sitio.
 
-Con el ejemplo de [Tutorial de habilitación](getting-started-enablement.md):
+Uso del ejemplo de [Tutorial de habilitación](getting-started-enablement.md):
 
-* Sobre el autor
-* Uso [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
+* En el autor
+* Uso de [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md)
 
    * Como [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
 
-* Vaya al recurso de catálogo en la página de catálogo
+* Vaya al recurso de catálogo en la página del catálogo
 
    * Por ejemplo, `/content/sites/enable/en/catalog/jcr:content/content/primary/catalog`. 
 
-* Añadir un nodo de filtros secundarios
+* Adición de un nodo de filtros secundarios
 
-   * Seleccione el `catalog`node
-   * Select **[!UICONTROL Crear nodo]**
+   * Seleccione el `catalog`nodo
+   * Seleccionar **[!UICONTROL Crear nodo]**
 
       * Nombre: `filters`
       * Tipo: `nt:unstructured`
-      * Select **[!UICONTROL Guardar todo]**
+      * Seleccionar **[!UICONTROL Guardar todo]**
 
-* Agregar `se_resource-tags` a la `filters` node
+* Añadir `se_resource-tags` a la propiedad `filters` nodo
 
-   * Seleccione el `filters` node
+   * Seleccione el `filters` nodo
    * Añadir una propiedad Multi
 
       * Nombre: `se_resource-tags`
-      * Tipo: Cadena
+      * Tipo: cadena
       * Valor: *&lt;enter a=&quot;&quot; span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />TagID](#pre-filter-tagids)>*[
-         * Select **[!UICONTROL Multi]**
-         * Select **[!UICONTROL Agregar]**
+         * Seleccionar **[!UICONTROL Múltiple]**
+         * Seleccionar **[!UICONTROL Añadir]**
 
-            * En el cuadro de diálogo emergente, seleccione `+` para agregar identificadores de etiquetas prefiltrados adicionales
+            * En el cuadro de diálogo emergente, seleccione `+` para agregar TagID adicionales previo al filtro
 
 * Volver a publicar el sitio de la comunidad
 
 ![configure-catalog](assets/configure-catalog.png)
 
-#### TagID prefiltrados {#pre-filter-tagids}
+#### Filtrado previo de TagID {#pre-filter-tagids}
 
-El filtro previo [TagIDs](../../help/sites-developing/framework.md#tagid) debe coincidir exactamente con las etiquetas aplicadas a los recursos de habilitación. Se pueden ver en la sección `resources` carpeta del sitio como valores de la propiedad `se_resource-tags`.
+El prefiltro [TagID](../../help/sites-developing/framework.md#tagid) debe coincidir exactamente con las etiquetas aplicadas a los recursos de habilitación. Estos se pueden ver en `resources` para el sitio como valores de la propiedad `se_resource-tags`.
 
 ![configure-filters](assets/configure-catalog1.png)
 
@@ -117,4 +117,4 @@ El filtro previo [TagIDs](../../help/sites-developing/framework.md#tagid) debe c
 
 * [API de informes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API de informes de Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/model/api/package-summary.html)
+* [API de Reporting Analytics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/model/api/package-summary.html)

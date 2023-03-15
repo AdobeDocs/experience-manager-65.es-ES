@@ -1,7 +1,7 @@
 ---
-title: Creación De Un Simulador Para Pruebas SCF
+title: Creación de una zona protegida SCF
 seo-title: Create An SCF Sandbox
-description: Este tutorial es principalmente para desarrolladores, nuevos AEM, interesados en utilizar componentes SCF.  Recorre la creación de un sitio de espacio aislado de SCF
+description: AEM Este tutorial es principalmente para desarrolladores, nuevos en el ámbito de la aplicación, que están interesados en utilizar componentes de SCF.  Recorre la creación de un sitio de espacio aislado de SCF
 seo-description: This tutorial is primarily for developers, new to AEM, who are interested in using SCF components.  It walks through the creation of An SCF Sandbox site
 uuid: ee52e670-e1e6-4bcd-9548-c963142e6704
 contentOwner: Guillaume Carlino
@@ -17,56 +17,56 @@ ht-degree: 1%
 
 ---
 
-# Creación De Un Simulador Para Pruebas SCF  {#create-an-scf-sandbox}
+# Creación de una zona protegida SCF  {#create-an-scf-sandbox}
 
 
-A partir de AEM 6.1 Comunidades, la forma más sencilla de crear rápidamente un simulador de pruebas es crear un sitio de comunidad. Consulte [Introducción a AEM Communities](getting-started.md).
+AEM A partir de comunidades de 6.1, la forma más sencilla de crear rápidamente una zona protegida es crear un sitio de comunidad. Consulte [Introducción a AEM Communities](getting-started.md).
 
-Otra herramienta útil para los desarrolladores es la [Guía de componentes de comunidad](components-guide.md), que permite la exploración y la creación rápida de prototipos de componentes y funciones de Communities.
+Otra herramienta útil para los desarrolladores es la [Guía de componentes de la comunidad](components-guide.md), que permite explorar y crear prototipos rápidos de componentes y características de Communities.
 
-El ejercicio de crear un sitio web puede ser útil para comprender la estructura de un sitio web AEM que puede incluir características de las comunidades, al mismo tiempo que proporciona páginas sencillas en las que explorar la posibilidad de trabajar con el [marco de componentes sociales (SCF)](scf.md).
+AEM El ejercicio de crear un sitio web puede ser útil para comprender la estructura de un sitio web de la comunidad que puede incluir características de la comunidad, al tiempo que proporciona páginas sencillas en las que explorar y trabajar con la comunidad [marco de componentes sociales (SCF)](scf.md).
 
-Este tutorial es principalmente para desarrolladores, nuevos AEM, interesados en utilizar componentes SCF. Recorre la creación de un sitio de espacio aislado de SCF, similar al tutorial de [Cómo crear un sitio web de Internet con todas las funciones](../../help/sites-developing/website.md) que se centra en las estructuras del sitio, como la navegación, el logotipo, la búsqueda, la barra de herramientas y el listado de páginas secundarias.
+AEM Este tutorial es principalmente para desarrolladores, nuevos en el ámbito de la aplicación, que están interesados en utilizar componentes de SCF. Recorre la creación de un sitio de espacio aislado de SCF, similar al tutorial de [Cómo crear un sitio web de Internet con todas las funciones](../../help/sites-developing/website.md) que se centra en las estructuras del sitio, como la navegación, el logotipo, la búsqueda, la barra de herramientas y la lista de páginas secundarias.
 
-El desarrollo tiene lugar en una instancia de autor, mientras que la mejor manera de experimentar con el sitio es en una instancia de publicación.
+El desarrollo se produce en una instancia de autor, mientras que la experimentación con el sitio es mejor en una instancia de publicación.
 
-Los pasos de este tutorial son:
+Los pasos de este tutorial son los siguientes:
 
-* [Configuración de la estructura del sitio web](setup-website.md)
-* [Aplicación de espacio aislado inicial](initial-app.md)
-* [Contenido inicial del Simulador para pruebas](initial-content.md)
-* [Desarrollar aplicación de espacio aislado](develop-app.md)
-* [Agregar Clientlibs](add-clientlibs.md)
-* [Desarrollar contenido de espacio aislado](develop-content.md)
+* [Configurar estructura del sitio web](setup-website.md)
+* [Aplicación de zona protegida inicial](initial-app.md)
+* [Contenido inicial de zona protegida](initial-content.md)
+* [Desarrollar aplicación de zona protegida](develop-app.md)
+* [Añadir Clientlibs](add-clientlibs.md)
+* [Desarrollar contenido de zona protegida](develop-content.md)
 
 >[!CAUTION]
 >
->Este tutorial no crea un sitio de comunidad con la funcionalidad creada con el [Consola Sitios de Communities](sites-console.md). Por ejemplo, este tutorial no describe cómo configurar el inicio de sesión, el registro propio, [inicio de sesión social](social-login.md), mensajes, perfiles, etc.
+>Este tutorial no crea un sitio de la comunidad con la funcionalidad creada con la variable [Consola Sitios de Communities](sites-console.md). Por ejemplo, este tutorial no describe cómo configurar el inicio de sesión, el registro automático, [inicio de sesión social](social-login.md), mensajería, perfiles, etc.
 >
->Si prefiere un sitio de comunidad simple, siga la [Crear una página de muestra](create-sample-page.md) tutorial.
+>Si prefiere un sitio de comunidad simple, siga las [Crear una página de muestra](create-sample-page.md) tutorial.
 
 ## Requisitos previos {#prerequisites}
 
-Este tutorial supone que tiene instalado un autor AEM y una instancia de publicación AEM que tiene la variable [última versión](deploy-communities.md#latest-releases) de las Comunidades.
+AEM AEM En este tutorial se da por hecho que tiene instalados una instancia de autor y una instancia de publicación de que tiene el [última versión](deploy-communities.md#latest-releases) de Communities.
 
-A continuación, se muestran algunos vínculos útiles para los desarrolladores que van a la plataforma AEM:
+AEM A continuación se muestran algunos vínculos útiles para los desarrolladores que son nuevos en la plataforma de:
 
-* [Introducción](../../help/sites-deploying/deploy.md#getting-started): para implementar instancias de AEM.
+* [Primeros pasos](../../help/sites-deploying/deploy.md#getting-started)AEM : para implementar instancias de.
 
    * [Conceptos básicos](../../help/sites-developing/the-basics.md): para desarrolladores de sitios web y funciones.
-   * [Primeros pasos de creación](../../help/sites-authoring/first-steps.md): para crear contenido de página.
+   * [Primeros pasos para los autores](../../help/sites-authoring/first-steps.md): para crear contenido de página.
 
 ## Uso del entorno de desarrollo de CRXDE Lite {#using-crxde-lite-development-environment}
 
-AEM desarrolladores pasan gran parte de su tiempo en el [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) entorno de desarrollo en una instancia de autor. CRXDE Lite proporciona un acceso menos restringido al repositorio CRX. Las herramientas de IU clásica y las consolas de IU con capacidad táctil proporcionan un acceso más estructurado a partes específicas del repositorio CRX.
+AEM Los desarrolladores de pasan gran parte de su tiempo en el [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) entorno de desarrollo en una instancia de autor. El CRXDE Lite de proporciona un acceso menos restringido al repositorio CRX. Las herramientas de IU clásica y las consolas de IU táctiles proporcionan un acceso más estructurado a partes específicas del repositorio CRX.
 
-Después de iniciar sesión con privilegios administrativos, hay varias formas de acceder al CRXDE Lite:
+Después de iniciar sesión con privilegios de administrador, hay varias formas de acceder a CRXDE Lite:
 
-1. En la navegación global, seleccione navegación **[!UICONTROL Herramientas > CRXDE Lite]**.
+1. En navegación global, seleccione navegación **[!UICONTROL Herramientas > CRXDE Lite]**.
 
    ![crxde-lite](assets/tools-crxde.png)
 
-2. En el [página de bienvenida de la IU clásica](http://localhost:4502/welcome.html), desplácese hacia abajo y haga clic en **[!UICONTROL CRXDE Lite]** en el panel derecho.
+2. Desde el [página de bienvenida de IU clásica](http://localhost:4502/welcome.html), desplácese hacia abajo y haga clic en **[!UICONTROL CRXDE Lite]** en el panel derecho.
 
    ![classic-ui-crxde](assets/classic-ui-crxde.png)
 
@@ -74,16 +74,16 @@ Después de iniciar sesión con privilegios administrativos, hay varias formas d
 
    Por ejemplo, en una instancia de autor local: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-Para trabajar con CRXDE Lite, debe iniciar sesión con los privilegios de desarrollador o administrador. Para la instancia de host local predeterminada, puede iniciar sesión con
+Para trabajar con CRXDE Lite, debe iniciar sesión con privilegios de desarrollador o administrador. Para la instancia de localhost predeterminada, puede iniciar sesión con
 
 * `username: admin`
 * `password: admin`
 
 
-**Tenga en cuenta** que este inicio de sesión se agotará y tendrá que volver a iniciar sesión periódicamente mediante la lista desplegable del extremo derecho de la barra de herramientas CRXDe Lite.
+**Tenga en cuenta** Tenga en cuenta que este inicio de sesión agotará el tiempo de espera y deberá volver a iniciarlo periódicamente mediante la lista desplegable situada en el extremo derecho de la barra de herramientas de CRXDe Lite.
 
-Si no ha iniciado sesión, no podrá navegar por el repositorio de JCR ni realizar ninguna operación de edición o guardado.
+Si no ha iniciado sesión, no podrá navegar por el repositorio JCR ni realizar operaciones de edición/guardado.
 
-***Cuando tenga dudas, vuelva a iniciar sesión.***
+***En caso de duda, vuelva a iniciar sesión.***
 
 ![volver a iniciar sesión](assets/relogin.png)

@@ -1,7 +1,7 @@
 ---
-title: Gestión de solicitudes de RGPD para la base de AEM
+title: AEM Gestión de solicitudes de RGPD para la Fundación de la
 seo-title: Handling GDPR Requests for the AEM Foundation
-description: Gestión de solicitudes de RGPD para la base de AEM
+description: AEM Gestión de solicitudes de RGPD para la Fundación de la
 seo-description: null
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
@@ -14,21 +14,21 @@ ht-degree: 55%
 
 ---
 
-# Gestión de solicitudes de RGPD para la base de AEM{#handling-gdpr-requests-for-the-aem-foundation}
+# AEM Gestión de solicitudes de RGPD para la Fundación de la{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
->El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las normas de protección de datos y privacidad; como el RGPD, la CCPA, etc.
+>El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las regulaciones de protección de datos y privacidad; como el RGPD, la CCPA, etc.
 
-## Compatibilidad con el RGPD de AEM Foundation {#aem-foundation-gdpr-support}
+## AEM Compatibilidad con RGPD de base de {#aem-foundation-gdpr-support}
 
-En el nivel de base de AEM, los datos personales almacenados son el Perfil de usuario. Por lo tanto, la información de este artículo trata principalmente sobre cómo acceder y eliminar perfiles de usuario, para tratar las solicitudes de Acceso y Eliminación del RGPD respectivamente.
+AEM En el nivel de base de datos de usuario, los datos personales almacenados son el perfil del usuario. Por lo tanto, la información de este artículo aborda principalmente de cómo acceder y eliminar perfiles de usuario, para tratar las solicitudes de Acceso y Eliminación de RGPD respectivamente.
 
 ## Acceso a un perfil de usuario {#accessing-a-user-profile}
 
 ### Pasos manuales {#manual-steps}
 
-1. Abra la consola Administración de usuarios, navegando hasta **[!UICONTROL Configuración - Seguridad - Usuarios]** o navegando directamente a `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Abra la consola Administración de usuarios navegando hasta **[!UICONTROL Configuración - Seguridad - Usuarios]** o directamente a `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -86,13 +86,13 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   A continuación, la interfaz de usuario indicará que el usuario se ha desactivado atenuando y añadiendo un bloqueo a la tarjeta de perfil:
+   La interfaz de usuario indicará que el usuario se ha desactivado atenuando y añadiendo un candado a la tarjeta del perfil:
 
    ![disableduser](assets/disableduser.png)
 
 ### Eliminación de información del perfil de usuario {#delete-user-profile-information}
 
-1. Inicie sesión en el CRXDE Lite y, a continuación, busque la variable `[!UICONTROL userId]`:
+1. Inicie sesión en el CRXDE Lite y busque `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
@@ -100,10 +100,10 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. Elimine los nodos de perfil y todos sus elementos secundarios. Existen dos formatos para los nodos de perfil, según la versión de AEM:
+1. Elimine los nodos de perfil y todos sus elementos secundarios. AEM Existen dos formatos para los nodos de perfil, según la versión de la:
 
    1. El perfil privado predeterminado en `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`, para nuevos perfiles creados con AEM 6.5.
+   1. `[!UICONTROL /profiles]`AEM , para los nuevos perfiles creados con la versión 6.5 de la versión de.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 

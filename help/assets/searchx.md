@@ -1,6 +1,6 @@
 ---
-title: Ampliar funcionalidad de búsqueda
-description: Amplíe las capacidades de búsqueda de [!DNL Adobe Experience Manager Assets] más allá de los valores predeterminados.
+title: Ampliación de la funcionalidad de búsqueda
+description: Ampliación de las capacidades de búsqueda de [!DNL Adobe Experience Manager Assets] más allá de los valores predeterminados.
 contentOwner: AG
 role: Developer
 feature: Search
@@ -8,59 +8,59 @@ exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
-# Ampliar la búsqueda de recursos {#extending-assets-search}
+# Ampliar búsqueda de recursos {#extending-assets-search}
 
-Puede ampliar [!DNL Adobe Experience Manager Assets] capacidades de búsqueda. Fuera de la caja, [!DNL Experience Manager Assets] busca recursos por cadenas.
+Puede ampliar [!DNL Adobe Experience Manager Assets] capacidades de búsqueda. De serie, [!DNL Experience Manager Assets] busca recursos por cadenas.
 
-La búsqueda se realiza a través de la interfaz de QueryBuilder para que la búsqueda se pueda personalizar con varios predicados. Puede superponer el conjunto predeterminado de predicados en el siguiente directorio: `/apps/dam/content/search/searchpanel/facets`.
+La búsqueda se realiza mediante la interfaz de QueryBuilder, para que la búsqueda se pueda personalizar con varios predicados. Puede superponer el conjunto predeterminado de predicados en el siguiente directorio: `/apps/dam/content/search/searchpanel/facets`.
 
-También puede agregar fichas adicionales al [!DNL Assets] panel de administración.
+También puede agregar pestañas adicionales a la [!DNL Assets] panel de administración.
 
 >[!CAUTION]
 >
->A partir de [!DNL Experience Manager] 6.4, la IU clásica está en desuso. Para ver el anuncio, consulte [funciones obsoletas y eliminadas](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recomienda utilizar la IU táctil. Para personalizar, consulte [facetas de búsqueda](/help/assets/search-facets.md).
+>A partir de [!DNL Experience Manager] La IU clásica de 6.4 está en desuso. Para ver el anuncio, consulte [funciones en desuso y eliminadas](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=es). El Adobe recomienda utilizar la IU táctil. Para personalizar, consulte [facetas de búsqueda](/help/assets/search-facets.md).
 
 ## Superposición {#overlaying}
 
-Para superponer los predicados preconfigurados, copie el `facets` nodo de `/libs/dam/content/search/searchpanel` a `/apps/dam/content/search/searchpanel/` o especificar otro `facetURL` en la variable `searchpanel` (el valor predeterminado es `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Para superponer los predicados preconfigurados, copie el `facets` nodo de `/libs/dam/content/search/searchpanel` hasta `/apps/dam/content/search/searchpanel/` o especifique otro `facetURL` propiedad en el `searchpanel` (el valor predeterminado es `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
 >[!NOTE]
 >
->De forma predeterminada, la estructura de directorios de `/apps` no existe, así que créelo. Asegúrese de que los tipos de nodo coinciden con los de `/libs`.
+>De forma predeterminada, la estructura de directorios en `/apps` no existe, así que créelo. Asegúrese de que los tipos de nodo coincidan con los de `/libs`.
 
-## Añadir pestañas {#adding-tabs}
+## Agregar pestañas {#adding-tabs}
 
-Puede añadir pestañas de búsqueda adicionales configurándolas en la sección [!DNL Assets] interfaz de administración. Para crear pestañas adicionales:
+Puede añadir pestañas de búsqueda adicionales configurándolas en la [!DNL Assets] interfaz de administración. Para crear pestañas adicionales:
 
-1. Crear la estructura de carpetas `/apps/wcm/core/content/damadmin/tabs,`si aún no existe, y copie la `tabs` nodo de `/libs/wcm/core/content/damadmin` y péguelo.
+1. Creación de la estructura de carpetas `/apps/wcm/core/content/damadmin/tabs,`si aún no existe, y copie el `tabs` nodo de `/libs/wcm/core/content/damadmin` y péguelo.
 1. Cree y configure la segunda pestaña como desee.
 
    >[!NOTE]
    >
-   >Al crear un segundo `siteadminsearchpanel`, asegúrese de establecer un `id` para evitar conflictos de formularios.
+   >Al crear una segunda `siteadminsearchpanel`, asegúrese de establecer un `id` para evitar conflictos en el formulario.
 
-## Crear predicados personalizados {#creating-custom-predicates}
+## Creación de predicados personalizados {#creating-custom-predicates}
 
-[!DNL Assets] viene con un conjunto de predicados predefinidos que pueden utilizarse para personalizar una página de uso compartido de recursos. La personalización de un recurso compartido de esta forma se explica en [crear y configurar una página Uso compartido de recursos](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Assets] viene con un conjunto de predicados predefinidos que se pueden utilizar para personalizar una página de uso compartido de recursos. La personalización de un uso compartido de recursos de esta manera se cubre en [crear y configurar una página de uso compartido de recursos](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Además de usar predicados preexistentes, [!DNL Experience Manager] los desarrolladores también pueden crear sus propios predicados utilizando [API del generador de consultas](/help/sites-developing/querybuilder-api.md).
+Además de utilizar predicados preexistentes, [!DNL Experience Manager] los desarrolladores también pueden crear sus propios predicados utilizando [API de Query Builder](/help/sites-developing/querybuilder-api.md).
 
-La creación de predicados personalizados requiere conocimientos básicos sobre [Marco de utilidades](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+La creación de predicados personalizados requiere conocimientos básicos sobre [Marco de widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
-La práctica recomendada es copiar un predicado existente y ajustarlo. Los predicados de ejemplo se encuentran en **/libs/cq/search/components/predicates**.
+La práctica recomendada es copiar un predicado existente y ajustarlo. Los predicados de muestra se encuentran en **/libs/cq/search/components/predicates**.
 
-### Ejemplo: Crear un predicado de propiedad simple {#example-build-a-simple-property-predicate}
+### Ejemplo: Creación de un predicado de propiedad simple {#example-build-a-simple-property-predicate}
 
-Para crear un predicado de propiedad:
+Para generar un predicado de propiedad:
 
 1. Cree una carpeta de componentes en el directorio de proyectos, por ejemplo **/apps/weretail/components/titlepredicate**.
-1. Agregar **content.xml**:
+1. Añadir **content.xml**:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -140,20 +140,20 @@ Para crear un predicado de propiedad:
    ```
 
 1. Para que el componente esté disponible, hace falta poder editarlo. Para que un componente se pueda editar, en CRXDE, agregue un nodo **cq:editConfig** de tipo principal **cq:EditConfig**. Para poder eliminar párrafos, agregue una propiedad de varios valores **cq:actions** con un único valor de **ELIMINAR**.
-1. Vaya al explorador y a la página de muestra (por ejemplo, **press.html**) cambiar al modo de diseño y activar el nuevo componente para el sistema de párrafos predicado (por ejemplo, **left**).
+1. Vaya al explorador y, en la página de muestra (por ejemplo, **press.html**) cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos de predicado (por ejemplo, **left**).
 
-1. En **Editar** , el nuevo componente ya está disponible en la barra de tareas (que se encuentra en la **Buscar** grupo). Inserte el componente en el **Predicados** y escriba una palabra de búsqueda, por ejemplo, **Diamante** y haga clic en la lupa para iniciar la búsqueda.
+1. Entrada **Editar** modo, el nuevo componente ya está disponible en la barra de tareas (que se encuentra en el **Buscar** grupo). Inserte el componente en la **Predicados** y escriba una palabra de búsqueda, por ejemplo, **Diamante** y haga clic en la lupa para iniciar la búsqueda.
 
    >[!NOTE]
    >
    >Al buscar, asegúrese de escribir el término exactamente, incluidas las mayúsculas y minúsculas correctas.
 
-### Ejemplo: Crear un predicado de grupo simple {#example-build-a-simple-group-predicate}
+### Ejemplo: Creación de un predicado de grupo simple {#example-build-a-simple-group-predicate}
 
-Para crear un predicado de grupo:
+Para generar un predicado de grupo:
 
 1. Cree una carpeta de componentes en el directorio de proyectos, por ejemplo **/apps/weretail/components/picspredicate**.
-1. Agregar **content.xml**:
+1. Añadir **content.xml**:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -165,7 +165,7 @@ Para crear un predicado de grupo:
        componentGroup="Search"/>
    ```
 
-1. Agregar **titlepredicate.jsp**:
+1. Añadir **titlepredicate.jsp**:
 
    ```java
    <%--
@@ -244,14 +244,14 @@ Para crear un predicado de grupo:
    ```
 
 1. Para que el componente esté disponible, hace falta poder editarlo. Para que un componente se pueda editar, en CRXDE, agregue un nodo **cq:editConfig** de tipo principal **cq:EditConfig**. Para poder eliminar párrafos, agregue una propiedad de varios valores **cq:actions** con un único valor de **ELIMINAR**.
-1. Vaya al explorador y a la página de muestra (por ejemplo, **press.html**) cambiar al modo de diseño y activar el nuevo componente para el sistema de párrafos predicado (por ejemplo, **left**).
-1. En **Editar** , el nuevo componente ya está disponible en la barra de tareas (que se encuentra en la **Buscar** grupo). Inserte el componente en el **Predicados** para abrir el Navegador.
+1. Vaya al explorador y, en la página de muestra (por ejemplo, **press.html**) cambie al modo de diseño y habilite el nuevo componente para el sistema de párrafos de predicado (por ejemplo, **left**).
+1. Entrada **Editar** modo, el nuevo componente ya está disponible en la barra de tareas (que se encuentra en el **Buscar** grupo). Inserte el componente en la **Predicados** columna.
 
-## Widgets de predicados instalados {#installed-predicate-widgets}
+## Widgets de predicado instalados {#installed-predicate-widgets}
 
 Los siguientes predicados están disponibles como widgets preconfigurados de ExtJS.
 
-### Predicado de texto completo {#fulltextpredicate}
+### FulltextPredicate {#fulltextpredicate}
 
 | Propiedad | Tipo | Descripción |
 |---|---|---|
@@ -264,7 +264,7 @@ Los siguientes predicados están disponibles como widgets preconfigurados de Ext
 |---|---|---|
 | predicateName | Cadena | Nombre del predicado. El valor predeterminado es `property` |
 | propertyName | Cadena | Nombre de la propiedad JCR. El valor predeterminado es `jcr:title` |
-| defaultValue | Cadena | Valor predeterminado prerellenado. |
+| defaultValue | Cadena | Valor predeterminado rellenado previamente. |
 
 ### PathPredicate {#pathpredicate}
 
@@ -273,7 +273,7 @@ Los siguientes predicados están disponibles como widgets preconfigurados de Ext
 | predicateName | Cadena | Nombre del predicado. El valor predeterminado es `path` |
 | rootPath | Cadena | Ruta raíz del predicado. El valor predeterminado es `/content/dam` |
 | pathFieldPredicateName | Cadena | El valor predeterminado es `folder` |
-| showFlatOption | Booleano | Indicador que muestra la casilla de verificación `search in subfolders`. La opción predeterminada es true. |
+| showFlatOption | Booleano | Marcar para mostrar la casilla `search in subfolders`. La opción predeterminada es true. |
 
 ### DatePredicate {#datepredicate}
 
@@ -281,22 +281,22 @@ Los siguientes predicados están disponibles como widgets preconfigurados de Ext
 |---|---|---|
 | predicateName | Cadena | Nombre del predicado. El valor predeterminado es `daterange` |
 | propertyname | Cadena | Nombre de la propiedad JCR. El valor predeterminado es `jcr:content/jcr:lastModified` |
-| defaultValue | Cadena | Valor predeterminado prerellenado |
+| defaultValue | Cadena | Valor predeterminado rellenado previamente |
 
-### OptionsPredicate {#optionspredicate}
+### PredicadoDeOpciones {#optionspredicate}
 
 | Propiedad | Tipo | Descripción |
 |---|---|---|
-| title | Cadena | Añade un título superior adicional |
+| título | Cadena | Agrega un título superior adicional |
 | predicateName | Cadena | Nombre del predicado. El valor predeterminado es `daterange` |
 | propertyname | Cadena | Nombre de la propiedad JCR. El valor predeterminado es `jcr:content/metadata/cq:tags` |
-| contraer | Cadena | Contraer nivel. El valor predeterminado es `level1` |
+| derrumbarse | Cadena | Contraer nivel. El valor predeterminado es `level1` |
 | triggerSearch | Booleano | Indicador para activar la búsqueda al marcar. El valor predeterminado es false |
 | searchCallback | Función | Llamada de retorno para activar la búsqueda. El valor predeterminado es `CQ.wcm.SiteAdmin.doSearch` |
-| searchTimeoutTime | Número | Tiempo de espera antes de que se active searchCallback. El valor predeterminado es 800 ms |
+| searchTimeoutTime | Número | Tiempo de espera antes de activar searchCallback. El valor predeterminado es 800 ms |
 
 ## Personalizar resultados de búsqueda {#customizing-search-results}
 
-La presentación de los resultados de búsqueda en una página Uso compartido de recursos se rige por la lente seleccionada. [!DNL Experience Manager Assets] viene con un conjunto de lentes predefinidas que se pueden usar para personalizar una página de Asset Share. La personalización de un recurso compartido de esta forma se explica en [Creación y configuración de una página de uso compartido de recursos](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+La presentación de los resultados de búsqueda en una página de uso compartido de recursos se rige por la lente seleccionada. [!DNL Experience Manager Assets] incluye un conjunto de lentes predefinidas que se pueden utilizar para personalizar una página de uso compartido de recursos. La personalización de un uso compartido de recursos de esta manera se cubre en [Creación y configuración de una página de uso compartido de recursos](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
 Además de usar lentes preexistentes, [!DNL Experience Manager] los desarrolladores también pueden crear sus propias lentes.

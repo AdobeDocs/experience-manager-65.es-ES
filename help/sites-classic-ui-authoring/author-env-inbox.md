@@ -25,7 +25,7 @@ Puede recibir notificaciones desde varias áreas de AEM, como notificaciones sob
 Estas notificaciones se reciben en dos bandejas de entrada, que están separadas por tipo de notificación:
 
 * Una bandeja de entrada donde se ven las notificaciones recibidas en relación con las suscripciones (se describe en la sección siguiente).
-* Una bandeja de entrada especializada para elementos de flujo de trabajo se describe en la sección [Participación en flujos de trabajo](/help/sites-classic-ui-authoring/classic-workflows-participating.md) documento.
+* Una bandeja de entrada especializada para elementos de flujo de trabajo se describe en la [Participación en flujos de trabajo](/help/sites-classic-ui-authoring/classic-workflows-participating.md) documento.
 
 ## Visualizar notificaciones {#viewing-your-notifications}
 
@@ -47,7 +47,7 @@ Para ver las notificaciones:
    * [Suscripción a las notificaciones](#subscribing-to-notifications)
    * [Procesamiento de notificaciones](#processing-your-notifications)
 
-   ![Chlimage_1-4](assets/chlimage_1-4.jpeg)
+   ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
 ## Suscripción a las notificaciones {#subscribing-to-notifications}
 
@@ -92,7 +92,7 @@ Cuando se elimina o mueve una página, se replica automáticamente una acción d
 1. Defina las rutas de las páginas para las cuales recibirá notificaciones:
 
    * Haga clic en **Añadir** para añadir una nueva fila a la tabla.
-   * Haga clic en el **Ruta** celda de tabla e introduzca la ruta, por ejemplo `/content/docs`.
+   * Haga clic en **Ruta** celda de la tabla e introduzca la ruta, p. ej., `/content/docs`.
 
    * Para recibir notificaciones para todas las páginas pertenecientes al subárbol, establezca **¿Exacto?** en **No**.
 Para recibir notificaciones únicamente para acciones en la página definida por la ruta, establezca **¿Exacto?** en **Sí**.
@@ -111,4 +111,4 @@ Si eligió recibir notificaciones en su bandeja de entrada AEM, la bandeja de en
 
 * Eliminarla al hacer clic en **Eliminar**.
 
-![Chlimage_1-5](assets/chlimage_1-5.jpeg)
+![chlimage_1-5](assets/chlimage_1-5.jpeg)

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
 source-git-commit: 415744ca5c46a1495fe90369c162158c7fc2f1d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 100%
 
@@ -122,12 +122,12 @@ La comunicación interactiva es la forma predeterminada y recomendada de crear c
    <tr>
    <td>Borradores</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
    <tr>
    <td>Envíos</td>
    <td>Compatible</td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
   <tr>
@@ -142,7 +142,7 @@ La comunicación interactiva es la forma predeterminada y recomendada de crear c
   </tr>
    <td>Procesamiento por lotes</td>
    <td>Compatible </td>
-   <td>Compatible</td>
+   <td>Compatible </td>
   </tr>
   <tr>
    <td>Firma del agente</td>

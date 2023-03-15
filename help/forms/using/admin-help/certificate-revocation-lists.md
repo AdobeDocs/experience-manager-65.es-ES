@@ -1,7 +1,7 @@
 ---
-title: Administración de listas de revocación de certificados
+title: Administrar listas de revocación de certificados
 seo-title: Managing certificate revocationlists
-description: Obtenga información sobre cómo administrar las listas de revocación de certificados.
+description: Obtenga información sobre cómo administrar listas de revocación de certificados.
 seo-description: Learn how to manage certificate revocation lists.
 uuid: d8c4b64c-a273-4f5d-8b71-f6ea455c0f0a
 contentOwner: admin
@@ -17,24 +17,24 @@ ht-degree: 1%
 
 ---
 
-# Administración de listas de revocación de certificados{#managing-certificate-revocationlists}
+# Administrar listas de revocación de certificados{#managing-certificate-revocationlists}
 
-Mediante la administración de almacenes de confianza, puede importar, editar y eliminar listas de revocación de certificados (CRL). Se admiten las listas de revocación de certificados codificadas Base64 y DER.
+Con la administración de almacén de confianza, puede importar, editar y eliminar listas de revocación de certificados (CRL). Se admiten listas de revocación de certificados codificadas en DER y Base64.
 
 ## Importar una CRL {#import-a-crl}
 
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Listas de revocación de certificados y, a continuación, haga clic en Importar.
 1. En el cuadro Alias, escriba un identificador para la CRL.
-1. Haga clic en Examinar para localizar la CRL y, a continuación, haga clic en Aceptar.
+1. Haga clic en Examinar para buscar la CRL y, a continuación, haga clic en Aceptar.
 
 ## Exportar una CRL {#export-a-crl}
 
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Listas de revocación de certificados.
 1. Haga clic en el nombre de alias de la CRL que desea exportar y, a continuación, haga clic en Exportar.
-1. Siga las instrucciones para exportar la CRL. Las CRL se exportan con codificación Base64.
+1. Siga las instrucciones para exportar la CRL. Las listas CRL se exportan con codificación Base64.
 1. Haga clic en Aceptar.
 
 ## Eliminar una CRL {#delete-a-crl}
 
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Listas de revocación de certificados.
-1. Seleccione las casillas de verificación de las listas CRL que desea eliminar, haga clic en Eliminar y, a continuación, haga clic en Aceptar.
+1. Active las casillas de verificación de las listas CRL que desea eliminar, haga clic en Eliminar y, a continuación, haga clic en Aceptar.

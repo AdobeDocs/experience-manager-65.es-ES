@@ -1,7 +1,7 @@
 ---
-title: Representación de Forms HTML con barras de herramientas personalizadas
+title: Procesar formularios HTML con barras de herramientas personalizadas
 seo-title: Rendering HTML Forms with CustomToolbars
-description: Utilice el servicio Forms para personalizar una barra de herramientas que se procese con un formulario de HTML. Puede procesar un formulario de HTML con una barra de herramientas personalizada mediante la API de Java y una API de servicio web.
+description: Utilice el servicio Forms para personalizar una barra de herramientas que se procesa con un formulario de HTML. Puede procesar un formulario de HTML con una barra de herramientas personalizada mediante la API de Java y una API de servicio web.
 seo-description: Use the Forms service to customize a toolbar that is rendered with an HTML form. You can render an HTML Form with a custom toolbar using the Java API and a Web Service API.
 uuid: b9c9464e-ff19-4051-a39b-4ec71c512d10
 contentOwner: admin
@@ -15,25 +15,25 @@ exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2345'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Representación de Forms HTML con barras de herramientas personalizadas {#rendering-html-forms-with-customtoolbars}
+# Procesar formularios HTML con barras de herramientas personalizadas {#rendering-html-forms-with-customtoolbars}
 
-**Los ejemplos y ejemplos de este documento son solo para AEM Forms en un entorno JEE.**
+**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-## Representación de Forms HTML con barras de herramientas personalizadas {#rendering-html-forms-with-custom-toolbars}
+## Representar Forms de HTML con barras de herramientas personalizadas {#rendering-html-forms-with-custom-toolbars}
 
-El servicio Forms permite personalizar una barra de herramientas que se procesa con un formulario de HTML. Se puede personalizar una barra de herramientas para modificar su aspecto anulando los estilos CSS predeterminados y para añadir un comportamiento dinámico anulando los scripts Java. Una barra de herramientas se personaliza utilizando un archivo XML llamado fscmenu.xml. De forma predeterminada, el servicio Forms recupera este archivo desde una ubicación URI especificada internamente.
+El servicio Forms permite personalizar una barra de herramientas que se procesa con un formulario de HTML. Se puede personalizar una barra de herramientas para modificar su aspecto al anular los estilos CSS predeterminados y agregar un comportamiento dinámico al anular los scripts de Java. Una barra de herramientas se personaliza mediante un archivo XML denominado fscmenu.xml. De forma predeterminada, el servicio Forms recupera este archivo desde una ubicación URI especificada internamente.
 
 >[!NOTE]
 >
->Esta ubicación URI se encuentra en el archivo adobe-forms-core.jar , que se encuentra en el archivo adobe-forms-dsc.jar . El archivo adobe-forms-dsc.jar se encuentra en C:\Adobe\Adobe_Experience_Manager_forms\ folder (C:\ is the installation directory). Puede utilizar una herramienta de extracción de archivos, como Win RAR, para abrir el adobe.
+>La ubicación de este URI se encuentra en el archivo adobe-forms-core.jar, que se encuentra en el archivo adobe-forms-dsc.jar. El archivo adobe-forms-dsc.jar se encuentra en la carpeta C:\Adobe\Adobe_Experience_Manager_forms\ (C:\ es el directorio de instalación). Puede utilizar una herramienta de extracción de archivos, como Win RAR, para abrir Adobe.
 
-Puede copiar el archivo fscmenu.xml desde esta ubicación, modificarlo para satisfacer sus necesidades y, a continuación, colocarlo en una ubicación URI personalizada. A continuación, con la API de servicio de Forms, establezca las opciones en tiempo de ejecución que resulten en que el servicio de Forms use su archivo fscmenu.xml desde la ubicación especificada. Estas acciones resultan en que el servicio de Forms procese un formulario de HTML que tiene una barra de herramientas personalizada.
+Puede copiar el archivo fscmenu.xml desde esta ubicación, modificarlo para que se ajuste a sus necesidades y, a continuación, colocarlo en una ubicación URI personalizada. A continuación, mediante la API del servicio de Forms, establezca las opciones en tiempo de ejecución que resultan en el servicio de Forms mediante el archivo fscmenu.xml desde la ubicación especificada. Estas acciones hacen que el servicio Forms procese un formulario de HTML que tiene una barra de herramientas personalizada.
 
-Además del archivo fscmenu.xml, también debe obtener los siguientes archivos:
+Además del archivo fscmenu.xml, también necesita obtener los siguientes archivos:
 
 * fscmenu.js
 * fscattachments.js
@@ -42,21 +42,21 @@ Además del archivo fscmenu.xml, también debe obtener los siguientes archivos:
 * fscmenu-ie.css
 * fscdialog.css
 
-fscJS es la secuencia de comandos Java asociada a cada nodo. Es necesario suministrar uno para el `div#fscmenu` nodo y, opcionalmente, para `ul#fscmenuItem` nodos. Los archivos JS implementan la funcionalidad principal de la barra de herramientas y los archivos predeterminados funcionan.
+fscJS es la secuencia de comandos Java asociada a cada nodo. Es necesario suministrar uno para el `div#fscmenu` nodo y, opcionalmente, para `ul#fscmenuItem` nodos. Los archivos JS implementan la funcionalidad principal de la barra de herramientas y funcionan los archivos predeterminados.
 
-fscCSS es una hoja de estilos asociada a un nodo en particular. Los estilos de los archivos CSS especifican el aspecto de la barra de herramientas. *fscVCSS* es una hoja de estilo para una barra de herramientas vertical que se muestra a la izquierda del formulario HTML procesado. *fscIECSS* es una hoja de estilo que se utiliza para formularios HTML que se procesan en Internet Explorer.
+fscCSS es una hoja de estilos asociada a un nodo concreto. Los estilos de los archivos CSS especifican el aspecto de la barra de herramientas. *fscVCSS* es una hoja de estilos para una barra de herramientas vertical que se muestra a la izquierda del formulario de HTML procesado. *fscIECSS* es una hoja de estilos que se utiliza para los formularios de HTML que se representan en Internet Explorer.
 
-Asegúrese de que todos los archivos anteriores están referenciados en el archivo fscmenu.xml. Es decir, en el archivo fscmenu.xml, especifique las ubicaciones de URI que apunten a estos archivos para que el servicio de Forms pueda localizarlos. De forma predeterminada, estos archivos están disponibles en ubicaciones de URI que empiezan por palabras clave internas `FSWebRoot` o `ApplicationWebRoot`.
+Asegúrese de que se hace referencia a todos los archivos anteriores en el archivo fscmenu.xml. Es decir, en el archivo fscmenu.xml, especifique las ubicaciones de los URI que apuntarán a estos archivos para que el servicio de Forms pueda localizarlos. De forma predeterminada, estos archivos están disponibles en ubicaciones de URI que comienzan con palabras clave internas `FSWebRoot` o `ApplicationWebRoot`.
 
-Para personalizar la barra de herramientas, reemplace las palabras clave utilizando la palabra clave externa `FSToolBarURI`. Esta palabra clave representa el URI que se pasa al servicio de Forms en tiempo de ejecución (este método se muestra más adelante en esta sección).
+Para personalizar la barra de herramientas, reemplace las palabras clave por la palabra clave externa `FSToolBarURI`. Esta palabra clave representa el URI que se pasa al servicio Forms en tiempo de ejecución (este método se muestra más adelante en esta sección).
 
-También puede especificar las ubicaciones absolutas de estos archivos JS y CSS, como https://www.mycompany.com/scripts/misc/fscmenu.js. En este caso, no es necesario usar la variable `FSToolBarURI` palabra clave.
+También puede especificar las ubicaciones absolutas de estos archivos JS y CSS, como https://www.mycompany.com/scripts/misc/fscmenu.js. En este caso, no es necesario utilizar el `FSToolBarURI` palabra clave.
 
 >[!NOTE]
 >
->No se recomienda mezclar las formas en que se hace referencia a estos archivos. Es decir, se debe hacer referencia a todos los URI utilizando la variable `FSToolBarURI` o una ubicación absoluta.
+>No se recomienda mezclar las formas en que se hace referencia a estos archivos. Es decir, se debe hacer referencia a todos los URI utilizando el método `FSToolBarURI` palabra clave o una ubicación absoluta.
 
-Puede obtener los archivos JS y CSS abriendo adobe-forms-&lt;appserver>archivo .ear. En este archivo, abra adobe-forms-res.war. Todos estos archivos se encuentran en el archivo WAR. Los adobe-forms-&lt;appserver>El archivo .ear se encuentra en la carpeta de instalación de AEM forms (C:\ is the installation directory). Puede abrir adobe-forms-&lt;appserver>.ear con una herramienta de extracción de archivos como WinRAR.
+Puede obtener los archivos JS y CSS abriendo adobe-forms-&lt;appserver>archivo .ear. Dentro de este archivo, abra adobe-forms-res.war. Todos estos archivos se encuentran en el archivo WAR. El adobe-forms-&lt;appserver>AEM El archivo .ear se encuentra en la carpeta de instalación de formularios de la aplicación (C:\ es el directorio de instalación). Puede abrir adobe-forms-&lt;appserver>.ear utilizando una herramienta de extracción de archivos como WinRAR.
 
 La siguiente sintaxis XML muestra un archivo fscmenu.xml de ejemplo.
 
@@ -99,20 +99,20 @@ La siguiente sintaxis XML muestra un archivo fscmenu.xml de ejemplo.
 
 Los siguientes elementos describen cómo se puede personalizar una barra de herramientas:
 
-* Cambiar los valores de `fscJS`, `fscCSS`, `fscVCSS`, `fscIECSS` (en el archivo fscmenu.xml ) para reflejar las ubicaciones personalizadas de los archivos a los que se hace referencia utilizando uno de los métodos que se describen en esta sección (por ejemplo, `fscJS="FSToolBarURI/scripts/fscmenu.js"`).
+* Cambiar los valores de `fscJS`, `fscCSS`, `fscVCSS`, `fscIECSS` atributos (en el archivo fscmenu.xml) para reflejar las ubicaciones personalizadas de los archivos a los que se hace referencia mediante uno de los métodos que se describen en esta sección (por ejemplo, `fscJS="FSToolBarURI/scripts/fscmenu.js"`).
 * Se deben especificar todos los archivos CSS y JS. Si no se modifica ninguno de los archivos, proporcione el predeterminado en la ubicación personalizada. Puede obtener los archivos predeterminados abriendo varios archivos como se describe en esta sección.
 * Se permite proporcionar una referencia absoluta (por ejemplo, https://www.example.com/scripts/custom-vertical-fscmenu.css) para cualquier archivo.
-* Los archivos JS y CSS que la variable `div#fscmenu` Los requisitos del nodo son esenciales para la funcionalidad de la barra de herramientas. Individual `ul#fscmenuItem` los nodos pueden tener o no admitir archivos JS o CSS.
+* Los archivos JS y CSS que `div#fscmenu` Los requisitos de nodo son esenciales para la funcionalidad de la barra de herramientas. Individual `ul#fscmenuItem` Los nodos de pueden tener o no archivos JS o CSS compatibles.
 
-**Modificación del valor local**
+**Cambio del valor local**
 
-Como parte de la personalización de una barra de herramientas, puede cambiar el valor de configuración regional de la barra de herramientas. Es decir, puede mostrarlo en otro idioma. La siguiente ilustración muestra una barra de herramientas personalizada que se muestra en francés.
+Al personalizar una barra de herramientas, puede cambiar su valor de configuración regional. Es decir, puede mostrarlo en otro idioma. La siguiente ilustración muestra una barra de herramientas personalizada que se muestra en francés.
 
 >[!NOTE]
 >
->No es posible crear una barra de herramientas personalizada en más de un idioma. Las barras de herramientas no pueden utilizar diferentes archivos XML basados en la configuración regional.
+>No es posible crear una barra de herramientas personalizada en más de un idioma. Las barras de herramientas no pueden utilizar archivos XML diferentes basados en la configuración regional.
 
-Para cambiar el valor de configuración regional de una barra de herramientas, asegúrese de que el archivo fscmenu.xml contenga el idioma que desea mostrar. La siguiente sintaxis XML muestra el archivo fscmenu.xml que se utiliza para mostrar una barra de herramientas en francés.
+Para cambiar el valor de configuración regional de una barra de herramientas, asegúrese de que el archivo fscmenu.xml contiene el idioma que desea mostrar. La siguiente sintaxis XML muestra el archivo fscmenu.xml que se utiliza para mostrar una barra de herramientas en francés.
 
 ```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
@@ -149,13 +149,13 @@ Para cambiar el valor de configuración regional de una barra de herramientas, a
 
 >[!NOTE]
 >
->Los Quick Starts asociados a esta sección utilizan este archivo XML para mostrar una barra de herramientas personalizada en francés, como se muestra en la ilustración anterior.
+>Los tutoriales rápidos asociados a esta sección utilizan este archivo XML para mostrar una barra de herramientas personalizada en francés, como se muestra en la ilustración anterior.
 
-Además, especifique un valor de configuración regional válido invocando la variable `HTMLRenderSpec` del objeto `setLocale` y pasando un valor de cadena que especifica el valor de configuración regional. Por ejemplo, pase `fr_FR` para especificar el francés. El servicio Forms está empaquetado con barras de herramientas localizadas.
+Especifique también un valor de configuración regional válido invocando el `HTMLRenderSpec` del objeto `setLocale` y pasando un valor de cadena que especifica el valor de configuración regional. Por ejemplo, pase `fr_FR` para especificar francés. El servicio Forms está empaquetado con barras de herramientas localizadas.
 
 >[!NOTE]
 >
->Antes de procesar un formulario de HTML que utilice una barra de herramientas personalizada, debe saber cómo se procesan los formularios de HTML. (Consulte [Representación de Forms como HTML](/help/forms/developing/rendering-forms-html.md).)
+>Antes de procesar un formulario de HTML que utilice una barra de herramientas personalizada, debe saber cómo se procesan los formularios de HTML. (Consulte [Representar Forms como HTML](/help/forms/developing/rendering-forms-html.md).)
 
 Para obtener más información sobre el servicio Forms, consulte [Referencia de servicios para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
@@ -164,161 +164,161 @@ Para obtener más información sobre el servicio Forms, consulte [Referencia de 
 Para procesar un formulario de HTML que contenga una barra de herramientas personalizada, realice estas tareas:
 
 1. Incluir archivos de proyecto.
-1. Cree un objeto de API Java de Forms.
-1. Haga referencia a un archivo XML de fscmenu personalizado.
-1. Representar un formulario de HTML.
+1. Cree un objeto de API de Java de Forms.
+1. Hacer referencia a un archivo XML fscmenu personalizado.
+1. Procesar un formulario de HTML.
 1. Escriba el flujo de datos del formulario en el explorador web del cliente.
 
 **Incluir archivos de proyecto**
 
-Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, incluya los archivos proxy.
+Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente con Java, incluya los archivos JAR necesarios. Si utiliza servicios web, incluya los archivos proxy.
 
-**Creación de un objeto de API Java de Forms**
+**Creación de un objeto de API de Java de Forms**
 
-Para poder realizar mediante programación una operación que admita el servicio Forms, debe crear un objeto cliente Forms.
+Para poder realizar mediante programación una operación compatible con el servicio Forms, debe crear un objeto de cliente de Forms.
 
-**Hacer referencia a un archivo XML de fscmenu personalizado**
+**Hacer referencia a un archivo XML fscmenu personalizado**
 
-Para procesar un formulario de HTML que contenga una barra de herramientas personalizada, haga referencia a un archivo XML fscmenu que describe la barra de herramientas. (Esta sección proporciona dos ejemplos de archivo XML fscmenu). Además, asegúrese de que el archivo fscmenu.xml especifica las ubicaciones de todos los archivos a los que se hace referencia correctamente. Como se mencionó anteriormente en esta sección, asegúrese de que todos los archivos estén referenciados por `FSToolBarURI` o sus ubicaciones absolutas.
+Para procesar un formulario de HTML que contenga una barra de herramientas personalizada, haga referencia a un archivo XML fscmenu que describa la barra de herramientas. (Esta sección proporciona dos ejemplos de un archivo XML fscmenu.) Asegúrese también de que el archivo fscmenu.xml especifica correctamente las ubicaciones de todos los archivos a los que se hace referencia. Como se mencionó anteriormente en esta sección, asegúrese de que todas las referencias de los archivos sean `FSToolBarURI` o sus ubicaciones absolutas.
 
-**Representar un formulario de HTML**
+**Procesar un formulario de HTML**
 
-Para procesar un formulario de HTML, especifique un diseño de formulario creado en Designer y guardado como archivo XDP. Seleccione también un tipo de transformación de HTML. Por ejemplo, puede especificar el tipo de transformación del HTML que representa un HTML dinámico para Internet Explorer 5.0 o posterior.
+Para procesar un formulario de HTML, especifique un diseño de formulario creado en Designer y guardado como archivo XDP. Seleccione también un tipo de transformación de HTML. Por ejemplo, puede especificar el tipo de transformación de HTML que procesa un HTML dinámico para Internet Explorer 5.0 o posterior.
 
-La renderización de un formulario de HTML también requiere valores, como valores de URI, para procesar otros tipos de formulario.
+El procesamiento de un formulario HTML también requiere valores, como valores URI para el procesamiento de otros tipos de formulario.
 
 **Escribir el flujo de datos del formulario en el explorador web del cliente**
 
 Cuando el servicio Forms procesa un formulario de HTML, devuelve un flujo de datos de formulario que debe escribir en el explorador web del cliente para que el formulario de HTML sea visible para los usuarios.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Representar un formulario de HTML con una barra de herramientas personalizada mediante la API de Java](#render-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[Procesar un formulario de HTML con una barra de herramientas personalizada mediante la API de Java](#render-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Representación de un formulario de HTML con una barra de herramientas personalizada mediante la API de servicio web](#rendering-an-html-form-with-a-custom-toolbar-using-the-web-service-api)
+[Representar un formulario de HTML con una barra de herramientas personalizada mediante la API de servicio web](#rendering-an-html-form-with-a-custom-toolbar-using-the-web-service-api)
 
-[Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 [Inicio rápido de la API del servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderización de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Procesar formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Representación de Forms como HTML](/help/forms/developing/rendering-forms-html.md)
+[Procesar formularios como HTML](/help/forms/developing/rendering-forms-html.md)
 
-[Creación de aplicaciones web que procesen Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Crear aplicaciones web que procesen Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-### Representar un formulario de HTML con una barra de herramientas personalizada mediante la API de Java {#render-an-html-form-with-a-custom-toolbar-using-the-java-api}
+### Procesar un formulario de HTML con una barra de herramientas personalizada mediante la API de Java {#render-an-html-form-with-a-custom-toolbar-using-the-java-api}
 
-Representar un formulario de HTML que contenga una barra de herramientas personalizada mediante la API de servicio de Forms (Java):
+Procese un formulario de HTML que contenga una barra de herramientas personalizada mediante la API del servicio de Forms (Java):
 
 1. Incluir archivos de proyecto
 
-   Incluya archivos JAR del cliente, como adobe-forms-client.jar, en la ruta de clase de su proyecto Java.
+   Incluya archivos JAR de cliente, como adobe-forms-client.jar, en la ruta de clase del proyecto Java.
 
-1. Creación de un objeto de API Java de Forms
+1. Creación de un objeto de API de Java de Forms
 
-   * Cree un `ServiceClientFactory` objeto que contiene propiedades de conexión.
-   * Cree un `FormsServiceClient` usando su constructor y pasando el `ServiceClientFactory` objeto.
+   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión.
+   * Crear un `FormsServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
 
-1. Hacer referencia a un archivo XML de fscmenu personalizado
+1. Hacer referencia a un archivo XML fscmenu personalizado
 
-   * Cree un `HTMLRenderSpec` usando su constructor.
-   * Para procesar un formulario de HTML con una barra de herramientas, invoque la función `HTMLRenderSpec` del objeto `setHTMLToolbar` método y pasar un `HTMLToolbar` valor de enumeración. Por ejemplo, para mostrar una barra de herramientas vertical del HTML, pase `HTMLToolbar.Vertical`.
+   * Crear un `HTMLRenderSpec` mediante su constructor.
+   * Para procesar un formulario de HTML con una barra de herramientas, invoque la variable `HTMLRenderSpec` del objeto `setHTMLToolbar` método y pase un `HTMLToolbar` valor de enumeración. Por ejemplo, para mostrar una barra de herramientas de HTML vertical, pase `HTMLToolbar.Vertical`.
    * Especifique la ubicación del archivo XML fscmenu invocando la variable `HTMLRenderSpec` del objeto `setToolbarURI` y pasando un valor de cadena que especifica la ubicación URI del archivo XML.
-   * Si corresponde, establezca el valor de configuración regional invocando la variable `HTMLRenderSpec` del objeto `setLocale` y pasando un valor de cadena que especifica el valor de configuración regional. El valor predeterminado es inglés.
+   * Si procede, establezca el valor de configuración regional invocando la variable `HTMLRenderSpec` del objeto `setLocale` y pasando un valor de cadena que especifica el valor de configuración regional. El valor predeterminado es inglés.
 
    >[!NOTE]
    >
-   >El valor Inicio rápido asociado a esta sección se establece en `fr_FR`*.*
+   >Los inicios rápidos asociados con esta sección establecen este valor como `fr_FR`*.*
 
-1. Representar un formulario de HTML
+1. Procesar un formulario de HTML
 
-   Invocar el `FormsServiceClient` del objeto `renderHTMLForm` y pase los siguientes valores:
+   Invoque el `FormsServiceClient` del objeto `renderHTMLForm` y pasar los siguientes valores:
 
-   * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `TransformTo` valor enum que especifica el tipo de preferencia de HTML. Por ejemplo, para procesar un formulario de HTML compatible con dynamic HTML para Internet Explorer 5.0 o posterior, especifique `TransformTo.MSDHTML`.
-   * A `com.adobe.idp.Document` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un vacío `com.adobe.idp.Document` objeto.
-   * La variable `HTMLRenderSpec` que almacena las opciones de tiempo de ejecución del HTML.
+   * Un valor de cadena que especifica el nombre del diseño del formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta de acceso completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * A `TransformTo` valor de enumeración que especifica el tipo de preferencia del HTML. Por ejemplo, para procesar un formulario de HTML compatible con dynamic HTML para Internet Explorer 5.0 o posterior, especifique `TransformTo.MSDHTML`.
+   * A `com.adobe.idp.Document` que contiene datos para combinar con el formulario. Si no desea combinar datos, pase un vacío `com.adobe.idp.Document` objeto.
+   * El `HTMLRenderSpec` que almacena las opciones de tiempo de ejecución de HTML.
    * Un valor de cadena que especifica la variable `HTTP_USER_AGENT` valor de encabezado, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-   * A `URLSpec` objeto que almacena valores de URI necesarios para procesar un formulario de HTML.
+   * A `URLSpec` que almacena valores de URI necesarios para procesar un formulario de HTML.
    * A `java.util.HashMap` que almacena archivos adjuntos. Este es un parámetro opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
 
-   La variable `renderHTMLForm` el método devuelve un `FormsResult` objeto que contiene un flujo de datos de formulario que debe escribirse en el explorador web del cliente.
+   El `renderHTMLForm` El método devuelve un valor `FormsResult` que contiene un flujo de datos de formulario que debe escribirse en el explorador web cliente.
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Cree un `com.adobe.idp.Document` invocando el objeto `FormsResult` objeto ‘s `getOutputContent` método.
-   * Obtenga el tipo de contenido de la variable `com.adobe.idp.Document` invocando su `getContentType` método.
-   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasar el tipo de contenido de la variable `com.adobe.idp.Document` objeto.
-   * Cree un `javax.servlet.ServletOutputStream` objeto que se utiliza para escribir el flujo de datos del formulario en el explorador web del cliente invocando la variable `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
-   * Cree un `java.io.InputStream` invocando el objeto `com.adobe.idp.Document` del objeto `getInputStream` método.
-   * Cree una matriz de bytes y rellénela con la secuencia de datos del formulario invocando la variable `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
-   * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
+   * Crear un `com.adobe.idp.Document` invocando el objeto de `FormsResult` objeto ‘s `getOutputContent` método.
+   * Obtenga el tipo de contenido del `com.adobe.idp.Document` invocando su objeto `getContentType` método.
+   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `com.adobe.idp.Document` objeto.
+   * Crear un `javax.servlet.ServletOutputStream` objeto que se utiliza para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
+   * Crear un `java.io.InputStream` invocando el objeto de `com.adobe.idp.Document` del objeto `getInputStream` método.
+   * Cree una matriz de bytes y rellénela con el flujo de datos de formulario invocando el método `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
+   * Invoque el `javax.servlet.ServletOutputStream` del objeto `write` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes a `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Inicio rápido (modo SOAP): Representación de un formulario de HTML con una barra de herramientas personalizada mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[Inicio rápido (modo SOAP): Procesamiento de un formulario de HTML con una barra de herramientas personalizada mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Representación de un formulario de HTML con una barra de herramientas personalizada mediante la API de servicio web {#rendering-an-html-form-with-a-custom-toolbar-using-the-web-service-api}
+### Representar un formulario de HTML con una barra de herramientas personalizada mediante la API de servicio web {#rendering-an-html-form-with-a-custom-toolbar-using-the-web-service-api}
 
-Representar un formulario de HTML que contenga una barra de herramientas personalizada mediante la API de servicio de Forms (servicio web):
+Procese un formulario de HTML que contenga una barra de herramientas personalizada mediante la API del servicio Forms (servicio web):
 
 1. Incluir archivos de proyecto
 
    * Cree clases de proxy Java que consuman el WSDL del servicio Forms.
-   * Incluya las clases proxy de Java en la ruta de clase.
+   * Incluya las clases de proxy Java en la ruta de clase.
 
-1. Creación de un objeto de API Java de Forms
+1. Creación de un objeto de API de Java de Forms
 
-   Cree un `FormsService` y establezca los valores de autenticación.
+   Crear un `FormsService` y establezca los valores de autenticación.
 
-1. Hacer referencia a un archivo XML de fscmenu personalizado
+1. Hacer referencia a un archivo XML fscmenu personalizado
 
-   * Cree un `HTMLRenderSpec` usando su constructor.
-   * Para procesar un formulario de HTML con una barra de herramientas, invoque la función `HTMLRenderSpec` del objeto `setHTMLToolbar` método y pasar un `HTMLToolbar` valor de enumeración. Por ejemplo, para mostrar una barra de herramientas vertical del HTML, pase `HTMLToolbar.Vertical`.
+   * Crear un `HTMLRenderSpec` mediante su constructor.
+   * Para procesar un formulario de HTML con una barra de herramientas, invoque la variable `HTMLRenderSpec` del objeto `setHTMLToolbar` método y pase un `HTMLToolbar` valor de enumeración. Por ejemplo, para mostrar una barra de herramientas de HTML vertical, pase `HTMLToolbar.Vertical`.
    * Especifique la ubicación del archivo XML fscmenu invocando la variable `HTMLRenderSpec` del objeto `setToolbarURI` y pasando un valor de cadena que especifica la ubicación URI del archivo XML.
-   * Si corresponde, establezca el valor de configuración regional invocando la variable `HTMLRenderSpec` del objeto `setLocale` y pasando un valor de cadena que especifica el valor de configuración regional. El valor predeterminado es inglés.
+   * Si procede, establezca el valor de configuración regional invocando la variable `HTMLRenderSpec` del objeto `setLocale` y pasando un valor de cadena que especifica el valor de configuración regional. El valor predeterminado es inglés.
 
    >[!NOTE]
    >
-   >El valor Inicio rápido asociado a esta sección se establece en `fr_FR`*.*
+   >Los inicios rápidos asociados con esta sección establecen este valor como `fr_FR`*.*
 
-1. Representar un formulario de HTML
+1. Procesar un formulario de HTML
 
-   Invocar el `FormsService` del objeto `renderHTMLForm` y pase los siguientes valores:
+   Invoque el `FormsService` del objeto `renderHTMLForm` y pasar los siguientes valores:
 
-   * Un valor de cadena que especifica el nombre del diseño de formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `TransformTo` valor enum que especifica el tipo de preferencia de HTML. Por ejemplo, para procesar un formulario de HTML compatible con dynamic HTML para Internet Explorer 5.0 o posterior, especifique `TransformTo.MSDHTML`.
-   * A `BLOB` objeto que contiene datos para combinar con el formulario. Si no desea combinar datos, pase `null`.
-   * La variable `HTMLRenderSpec` que almacena las opciones de tiempo de ejecución del HTML.
+   * Un valor de cadena que especifica el nombre del diseño del formulario, incluida la extensión del nombre de archivo. Si hace referencia a un diseño de formulario que forma parte de una aplicación de Forms, asegúrese de especificar la ruta de acceso completa, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * A `TransformTo` valor de enumeración que especifica el tipo de preferencia del HTML. Por ejemplo, para procesar un formulario de HTML compatible con dynamic HTML para Internet Explorer 5.0 o posterior, especifique `TransformTo.MSDHTML`.
+   * A `BLOB` que contiene datos para combinar con el formulario. Si no desea combinar los datos, apruebe `null`.
+   * El `HTMLRenderSpec` que almacena las opciones de tiempo de ejecución de HTML.
    * Un valor de cadena que especifica la variable `HTTP_USER_AGENT` valor de encabezado, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Puede pasar una cadena vacía si no desea establecer este valor.
-   * A `URLSpec` objeto que almacena valores de URI necesarios para procesar un formulario de HTML.
-   * A `java.util.HashMap` que almacena archivos adjuntos. Este parámetro es opcional y puede especificar `null` si no desea adjuntar archivos al formulario.
-   * Un vacío `com.adobe.idp.services.holders.BLOBHolder` objeto que rellena el `renderHTMLForm` método. Este valor de parámetro almacena el formulario procesado.
-   * Un vacío `com.adobe.idp.services.holders.BLOBHolder` objeto que rellena el `renderHTMLForm` método. Este parámetro almacena los datos XML de salida.
-   * Un vacío `javax.xml.rpc.holders.LongHolder` objeto que rellena el `renderHTMLForm` método. Este argumento almacena el número de páginas del formulario.
-   * Un vacío `javax.xml.rpc.holders.StringHolder` objeto que rellena el `renderHTMLForm` método. Este argumento almacena el valor de configuración regional.
-   * Un vacío `javax.xml.rpc.holders.StringHolder` objeto que rellena el `renderHTMLForm` método. Este argumento almacena el valor de renderización del HTML que se utiliza.
+   * A `URLSpec` que almacena valores de URI necesarios para procesar un formulario de HTML.
+   * A `java.util.HashMap` que almacena archivos adjuntos. Este parámetro es opcional y puede especificar `null` si no tiene intención de adjuntar archivos al formulario.
+   * Un vacío `com.adobe.idp.services.holders.BLOBHolder` objeto que se rellena con la variable `renderHTMLForm` método. Este valor de parámetro almacena el formulario procesado.
+   * Un vacío `com.adobe.idp.services.holders.BLOBHolder` objeto que se rellena con la variable `renderHTMLForm` método. Este parámetro almacena los datos XML de salida.
+   * Un vacío `javax.xml.rpc.holders.LongHolder` objeto que se rellena con la variable `renderHTMLForm` método. Este argumento almacena el número de páginas del formulario.
+   * Un vacío `javax.xml.rpc.holders.StringHolder` objeto que se rellena con la variable `renderHTMLForm` método. Este argumento almacena el valor de configuración regional.
+   * Un vacío `javax.xml.rpc.holders.StringHolder` objeto que se rellena con la variable `renderHTMLForm` método. Este argumento almacena el valor de procesamiento del HTML que se utiliza.
    * Un vacío `com.adobe.idp.services.holders.FormsResultHolder` que contendrá los resultados de esta operación.
 
-   La variable `renderHTMLForm` rellena el `com.adobe.idp.services.holders.FormsResultHolder` objeto que se pasa como el último valor de argumento con un flujo de datos de formulario que debe escribirse en el explorador web del cliente.
+   El `renderHTMLForm` rellena el método `com.adobe.idp.services.holders.FormsResultHolder` que se pasa como el último valor de argumento con un flujo de datos de formulario que debe escribirse en el explorador web del cliente.
 
 1. Escribir el flujo de datos del formulario en el explorador web del cliente
 
-   * Cree un `FormResult` obteniendo el valor de `com.adobe.idp.services.holders.FormsResultHolder` del objeto `value` miembro de datos.
-   * Cree un `BLOB` objeto que contiene datos de formulario invocando la variable `FormsResult` del objeto `getOutputContent` método.
-   * Obtenga el tipo de contenido de la variable `BLOB` invocando su `getContentType` método.
-   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasar el tipo de contenido de la variable `BLOB` objeto.
-   * Cree un `javax.servlet.ServletOutputStream` objeto que se utiliza para escribir el flujo de datos del formulario en el explorador web del cliente invocando la variable `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
-   * Cree una matriz de bytes y rellénela invocando la variable `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido de la variable `FormsResult` a la matriz de bytes.
-   * Invocar el `javax.servlet.http.HttpServletResponse` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
+   * Crear un `FormResult` al obtener el valor de la variable `com.adobe.idp.services.holders.FormsResultHolder` del objeto `value` miembro de datos.
+   * Crear un `BLOB` que contiene datos de formulario invocando el `FormsResult` del objeto `getOutputContent` método.
+   * Obtenga el tipo de contenido del `BLOB` invocando su objeto `getContentType` método.
+   * Configure las variables `javax.servlet.http.HttpServletResponse` tipo de contenido del objeto invocando su `setContentType` y pasando el tipo de contenido del `BLOB` objeto.
+   * Crear un `javax.servlet.ServletOutputStream` objeto que se utiliza para escribir el flujo de datos de formulario en el explorador web del cliente invocando el `javax.servlet.http.HttpServletResponse` del objeto `getOutputStream` método.
+   * Cree una matriz de bytes y rellénela invocando el método `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido del `FormsResult` a la matriz de bytes.
+   * Invoque el `javax.servlet.http.HttpServletResponse` del objeto `write` para enviar el flujo de datos de formulario al explorador web del cliente. Pase la matriz de bytes a `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Invocar AEM Forms con codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

@@ -13,7 +13,7 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 100%
 

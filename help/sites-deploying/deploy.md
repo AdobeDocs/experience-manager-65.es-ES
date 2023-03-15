@@ -14,7 +14,7 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 source-git-commit: 9052ed3e89fdc67d94fc60bbff64d42255565767
 workflow-type: tm+mt
 source-wordcount: '1802'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -95,7 +95,7 @@ AEM AEM En la terminología de la, una &quot;instancia&quot; es una copia de la 
 
 Estas instancias son idénticas en términos de software instalado. Solo se diferencian por la configuración. Además, la mayoría de las instalaciones utilizan un Dispatcher:
 
-* **Dispatcher**: Un servidor web estático (Apache httpd, Microsoft IIS, etc.) AEM se ha ampliado con el módulo de Dispatcher de. Almacena en caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
+* **Dispatcher**: Un servidor web estático (Apache httpd, Microsoft IIS, etc.) AEM se ha ampliado con el módulo de Dispatcher de. Almacena en la caché las páginas web producidas por la instancia de publicación para mejorar el rendimiento.
 
 Existen muchas opciones y elaboraciones avanzadas de esta configuración, pero el patrón básico de creación, publicación y Dispatcher es el núcleo de la mayoría de las implementaciones. Empezaremos por centrarnos en una configuración relativamente sencilla. A continuación se analizarán las opciones de implementación avanzadas.
 

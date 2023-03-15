@@ -32,4 +32,4 @@ Los datos de análisis de la página se muestran en la consola Sitios. Cuando lo
 
 >[!NOTE]
 >
->La visualización de datos de análisis del sitio directamente en la consola solo está disponible en la IU táctil. Consulte [Visualización de datos de análisis de página](/help/sites-authoring/page-analytics-using.md) en la documentación de creación estándar para obtener más información.
+>La visualización de datos de análisis del sitio directamente en la consola solo está disponible en la IU táctil. Consulte [Ver datos de análisis de página](/help/sites-authoring/page-analytics-using.md) en la documentación de creación estándar para obtener más información.

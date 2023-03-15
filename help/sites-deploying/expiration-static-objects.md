@@ -1,7 +1,7 @@
 ---
 title: Caducidad de objetos estáticos
 seo-title: Expiration of Static Objects
-description: Aprenda a configurar AEM para que los objetos estáticos no caduquen (durante un período de tiempo razonable).
+description: AEM Aprenda a configurar los objetos estáticos de modo que no caduquen (durante un período de tiempo razonable).
 seo-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
 uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
 contentOwner: User
@@ -20,28 +20,28 @@ ht-degree: 0%
 
 # Caducidad de objetos estáticos{#expiration-of-static-objects}
 
-Los objetos estáticos (por ejemplo, los iconos) no cambian. Por lo tanto, el sistema debe configurarse para que no caduque (durante un período de tiempo razonable) y reduzca así el tráfico innecesario.
+Los objetos estáticos (por ejemplo, los iconos) no cambian. Por lo tanto, el sistema debe configurarse para que no caduque (durante un periodo de tiempo razonable) y, por lo tanto, reducir el tráfico innecesario.
 
 Esto tiene el siguiente impacto:
 
-* Descarga las solicitudes de la infraestructura del servidor.
-* Aumenta el rendimiento de la carga de páginas, ya que el explorador almacena en caché los objetos en la caché del explorador.
+* Descarga solicitudes desde la infraestructura del servidor.
+* Aumenta el rendimiento de la carga de páginas, ya que el explorador almacena en caché los objetos de la caché del explorador.
 
-El estándar HTTP especifica las caducidades con respecto a la &quot;caducidad&quot; de los archivos (consulte, por ejemplo, el capítulo 14.21 de [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Protocolo de transferencia de hipertexto — HTTP 1.1&quot;). Este estándar utiliza el encabezado para permitir que los clientes almacenen en caché los objetos hasta que se consideren obsoletos; estos objetos se almacenan en caché durante el tiempo especificado sin que se realice ninguna comprobación de estado en el servidor de origen.
+El estándar HTTP especifica las caducidades en relación con la &quot;caducidad&quot; de los archivos (consulte, por ejemplo, el capítulo 14.21 de [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Protocolo de transferencia de hipertexto — HTTP 1.1&quot;). Este estándar utiliza el encabezado para permitir a los clientes almacenar en caché los objetos hasta que se consideren obsoletos; dichos objetos se almacenan en caché durante el tiempo especificado sin que se realice ninguna comprobación de estado en el servidor de origen.
 
 >[!NOTE]
 >
->Esta configuración es completamente independiente (y no funcionará para) Dispatcher.
+>Esta configuración es completamente independiente de Dispatcher (y no funcionará para).
 >
->El propósito de Dispatcher es almacenar en caché los datos delante de AEM.
+>AEM El propósito de Dispatcher es almacenar en caché los datos delante de las carpetas de datos de la interfaz de usuario de.
 
-Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden y deben almacenarse en caché. La configuración del servidor HTTP de Apache podría parecerse a una de las siguientes: depende del entorno:
+Todos los archivos, que no son dinámicos y que no cambian con el tiempo, se pueden y deben almacenar en caché. La configuración del servidor HTTPD de Apache podría parecerse a una de las siguientes opciones, según el entorno:
 
 >[!CAUTION]
 >
->Debe tener cuidado al definir el periodo de tiempo durante el cual un objeto se considera actualizado. Como *no hay comprobación hasta que el período de tiempo especificado haya caducado*, el cliente puede terminar presentando contenido antiguo desde la caché.
+>Debe tener cuidado al definir el período de tiempo durante el cual se considera que un objeto está actualizado. Como hay *no se realizará ninguna comprobación hasta que haya transcurrido el período de tiempo especificado*, el cliente puede terminar presentando contenido antiguo desde la caché.
 
-1. **Para una instancia de Autor:**
+1. **Para una instancia de autor:**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so
@@ -53,11 +53,11 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la caché del navegador) almacene archivos CSS, Javascript, PNG y GIF durante un mes hasta que caduquen. Esto significa que no es necesario solicitarlas a AEM o al servidor web, pero puede permanecer en la caché del explorador.
+   Esto permite que la caché intermedia (por ejemplo, la del explorador) almacene archivos CSS, Javascript, PNG y de GIF durante un máximo de un mes, hasta que caduquen. AEM Esto significa que no es necesario solicitarlas desde o desde el servidor web, pero pueden permanecer en la caché del explorador.
 
    Otras secciones del sitio no deben almacenarse en caché en una instancia de autor, ya que están sujetas a cambios en cualquier momento.
 
-1. **Para una instancia de publicación:**
+1. **Para una instancia de Publish:**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so
@@ -75,9 +75,9 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
    </Location>
    ```
 
-   Esto permite que la caché intermedia (por ejemplo, la caché del navegador) almacene archivos CSS, Javascript, PNG y GIF durante un día en las cachés del cliente. Aunque este ejemplo ilustra la configuración global de todo lo siguiente `/content` y `/etc/designs`, debe hacerlo más granular.
+   Esto permite que la caché intermedia (por ejemplo, la del explorador) almacene archivos CSS, Javascript, PNG y de GIF durante un máximo de un día en las cachés de cliente. Aunque este ejemplo ilustra la configuración global de todo lo siguiente `/content` y `/etc/designs`, debe hacerlo más granular.
 
-   Según la frecuencia con la que se actualice el sitio, también puede considerar la posibilidad de almacenar en caché las páginas de HTML. Un período de tiempo razonable sería de 1 hora:
+   Dependiendo de la frecuencia con la que se actualice el sitio, también puede considerar el almacenamiento en caché de las páginas del HTML. Un período de tiempo razonable sería de 1 hora:
 
    ```xml
    <Location /content>
@@ -85,4 +85,4 @@ Todos los archivos, que no son dinámicos y que no cambian con el tiempo, pueden
    </Location>
    ```
 
-Una vez configurados los objetos estáticos, analice `request.log`, al seleccionar páginas que contienen dichos objetos, para confirmar que no se están realizando solicitudes (innecesarias) para objetos estáticos.
+Una vez configurados los objetos estáticos, realice el análisis `request.log`, al seleccionar páginas que contienen estos objetos, para confirmar que no se realizan solicitudes (innecesarias) para objetos estáticos.

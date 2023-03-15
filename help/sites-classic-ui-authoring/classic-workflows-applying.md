@@ -37,9 +37,9 @@ A la hora de aplicar el flujo de trabajo, puede especificar la siguiente informa
 
 Los flujos de trabajo se pueden iniciar desde la consola sitios web o, al editar una página, desde la barra de tareas.
 
-La variable **Estado** en la columna **Sitios web** console indica si se ha aplicado un flujo de trabajo a una página:
+El **Estado** en la columna **Sitios web** La consola de indica si se ha aplicado un flujo de trabajo a una página:
 
-![estado del flujo de trabajo](assets/workflowstatus.png)
+![workflow status](assets/workflowstatus.png)
 
 ### Iniciar un flujo de trabajo desde la consola de sitios web {#starting-a-workflow-from-the-websites-console}
 
@@ -53,7 +53,7 @@ La variable **Estado** en la columna **Sitios web** console indica si se ha apli
 1. Abra la consola Sitios web. 
 1. Abra la página necesaria.
 1. Seleccione la ficha del flujo de trabajo de la barra de tareas.
-1. Expanda el **Flujo de trabajo** , lo que le permite seleccionar la **Flujo de trabajo** y, opcionalmente, introduzca **Título del flujo de trabajo** y **Comentario**.
+1. Expanda el **Flujo de trabajo** , lo que permite seleccionar el **Flujo de trabajo** y, opcionalmente, introduzca **Título de flujo de trabajo** y **Comentario**.
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)
 

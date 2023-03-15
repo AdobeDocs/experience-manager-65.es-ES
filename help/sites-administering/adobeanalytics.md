@@ -1,7 +1,7 @@
 ---
 title: Integración con Adobe Analytics
 seo-title: Integrating with Adobe Analytics
-description: Aprenda a integrar AEM con Adobe Analytics.
+description: AEM Obtenga información sobre cómo integrar la con Adobe Analytics.
 seo-description: Learn how to integrate AEM with Adobe Analytics.
 uuid: d8548263-6ac5-45fb-8c70-52ecd4161bbb
 contentOwner: Guillaume Carlino
@@ -14,18 +14,18 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 73%
+ht-degree: 76%
 
 ---
 
 # Integración con Adobe Analytics{#integrating-with-adobe-analytics}
 
-La integración de Adobe Analytics y AEM permite rastrear la actividad de la página web:
+La integración de Adobe Analytics AEM y el uso de la le permite realizar un seguimiento de la actividad de la página web:
 
 * Una configuración de Adobe Analytics permite a AEM autenticarse con Adobe Analytics.
 * Un marco de trabajo identifica los datos que se envían al grupo de informes de Adobe Analytics.
 
-Los datos incluyen datos de página y usuario; por ejemplo:
+Los datos incluyen datos de páginas y usuarios; por ejemplo:
 
 * datos que recopilan los componentes de AEM
 * clics en vínculos
@@ -34,17 +34,17 @@ Los datos incluyen datos de página y usuario; por ejemplo:
 
 Las siguientes páginas le ayudan a configurar la integración:
 
-* [Conexión a Adobe Analytics y creación de módulos](/help/sites-administering/adobeanalytics-connect.md)
+* [Conectarse a Adobe Analytics y crear marcos](/help/sites-administering/adobeanalytics-connect.md)
 * [Configuración de Seguimiento de vínculos para Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
 * [Asignación de datos de componente con propiedades de Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
 * [Configuración del seguimiento de vídeo para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 * [Clasificaciones de Adobe](/help/sites-administering/adobeanalytics-classifications.md)
 
-También puede usar la variable [Asistente de inclusión](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
+También puede utilizar la variable [Asistente de inclusión](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
 
 >[!NOTE]
 >
->Consulte también el artículo explicativo: [Integración de AEM con Adobe Target y Adobe Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Consulte también el artículo de procedimientos: [AEM Integración de los recursos de la con Adobe Target y Adobe Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Información adicional {#further-information}
 

@@ -1,7 +1,7 @@
 ---
 title: Herramientas de modernización de AEM
 seo-title: AEM Modernization Tools
-description: AEM herramientas de modernización le ayudan a convertir sus funciones de AEM heredadas a la última tecnología
+description: AEM AEM Las herramientas de modernización le ayudan a convertir las funciones de la versión heredada de la a la tecnología más reciente
 seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

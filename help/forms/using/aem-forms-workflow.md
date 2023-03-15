@@ -10,7 +10,7 @@ discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3681'
 ht-degree: 100%
 
@@ -195,7 +195,7 @@ Puede iniciar o habilitar un flujo de trabajo centrado en Forms mediante:
 * [El envío de una aplicación desde la aplicación de AEM Forms](#afa)
 
 * [Enviar un formulario adaptable](#af)
-* [El uso de la carpeta vigilada](#watched)
+* [Usar una carpeta inspeccionada](#watched)
 
 * [El envío de una comunicación interactiva o una carta](#letter)
 

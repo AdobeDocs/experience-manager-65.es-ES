@@ -11,7 +11,7 @@ ht-degree: 99%
 
 # Guía rápida de WCAG 2.1{#quick-guide-to-wcag}
 
-Adobe Experience Manager (AEM) se ha desarrollado para maximizar el cumplimiento de las directrices de accesibilidad del contenido web.
+Adobe Experience Manager AEM () se ha desarrollado para maximizar el cumplimiento de las Directrices de accesibilidad del contenido web.
 
 Las [Directrices de accesibilidad al contenido web (WCAG) versión 2.1](https://www.w3.org/TR/WCAG/) son un conjunto de directrices reconocidas internacionalmente desarrolladas por el [World Wide Web Consortium (W3C)](https://www.w3.org/) en el marco de su [Iniciativa de accesibilidad a la web (WAI)](https://www.w3.org/WAI/).
 

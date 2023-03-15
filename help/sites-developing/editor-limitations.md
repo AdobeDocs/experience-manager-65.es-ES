@@ -1,7 +1,7 @@
 ---
 title: Limitaciones del editor
 seo-title: Editor Limitations
-description: El editor de la IU táctil utiliza superposiciones para interactuar con contenido limitado en un iframe. Esta interacción crea algunas limitaciones en el uso del editor y también para los desarrolladores.
+description: El editor de la IU táctil utiliza las superposiciones para interactuar con el contenido limitado en un iframe. Esta interacción crea algunas limitaciones en el uso del editor y también para los desarrolladores.
 seo-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
 uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
 contentOwner: User
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 # Limitaciones del editor{#editor-limitations}
 
-El editor de la IU táctil utiliza superposiciones para interactuar con contenido limitado en un iframe. Esta interacción crea algunas limitaciones en el uso del editor y también para los desarrolladores. Esta página resume estas limitaciones y proporciona soluciones o soluciones alternativas siempre que es posible.
+El editor de la IU táctil utiliza las superposiciones para interactuar con el contenido limitado en un iframe. Esta interacción crea algunas limitaciones en el uso del editor y también para los desarrolladores. Esta página resume estas limitaciones y proporciona soluciones o soluciones alternativas siempre que sea posible.
 
 ## Limitaciones funcionales {#functional-limitations}
 
@@ -27,39 +27,39 @@ Un autor puede encontrar las siguientes limitaciones funcionales al utilizar el 
 
 ### Vínculos no activos {#links-not-active}
 
-When [edición de una página](/help/sites-authoring/editing-content.md), los vínculos no están activos.
+Cuándo [edición de una página](/help/sites-authoring/editing-content.md), los vínculos no están activos.
 
-* [Cambie a **Vista previa** mode](/help/sites-authoring/editing-content.md#preview-mode) para navegar mediante los vínculos del contenido.
+* [Cambiar a **Previsualizar** modo](/help/sites-authoring/editing-content.md#preview-mode) para navegar mediante los vínculos del contenido.
 
 ### Páginas de estructura {#structure-pages}
 
-Las páginas no pueden tener nombres `structure`. Páginas con nombre `structure` no se puede editar en el editor de páginas.
+Las páginas no pueden tener nombre `structure`. Páginas con nombre `structure` no se podrán editar en el editor de páginas.
 
 ## Limitaciones de CSS {#css-limitations}
 
 Un desarrollador puede encontrar las siguientes limitaciones con las interacciones del editor con CSS.
 
-### Elementos con posición absoluta {#absolutely-positioned-elements}
+### Elementos en posición absoluta {#absolutely-positioned-elements}
 
-Los elementos con posición absoluta pueden causar problemas en la posición de su superposición.
+Los elementos con una posición absoluta pueden causar problemas en la posición de su superposición.
 
-* Si esto sucede, asegúrese de que las dimensiones del elemento con posición absoluta sean correctas, ya que el editor creará una superposición con las mismas dimensiones.
+* Si esto sucede, asegúrese de que las dimensiones del elemento con una posición absoluta son correctas, ya que el editor creará una superposición con las mismas dimensiones.
 
-### unidades vh {#vh-units}
+### Unidades vh {#vh-units}
 
-`vh` no se admiten unidades porque la altura del iframe debe ajustarse automáticamente por AEM.
+`vh` AEM las unidades no son compatibles porque la altura del iframe debe ajustarse automáticamente mediante la opción de configuración de la posición de la unidad de control de.
 
 ### Imágenes de fondo fijas {#fixed-background-images}
 
 Es posible que las imágenes de fondo fijas no se muestren como fijas al desplazarse debido al hecho de que están incrustadas dentro de un iframe.
 
-* Selección **Ver página tal y como aparece publicado** en la barra de encabezado, las acciones muestran la página correctamente.
+* Seleccionar **Ver página publicada** en las acciones de la barra de encabezado muestra la página correctamente.
 
-### Altura del 100 % {#height}
+### Altura al 100% {#height}
 
-La altura del 100 % no se admite en el elemento de cuerpo de una página.
+El 100 % de altura no es compatible con el elemento de cuerpo de una página.
 
-* Es posible una solución alternativa para implementar un cuerpo de pantalla completa al &quot;estirar&quot; el elemento de cuerpo de la siguiente manera:
+* Se puede solucionar el problema para implementar un cuerpo de pantalla completa &quot;estirando&quot; el elemento de cuerpo de la siguiente manera:
 
 ```xml
 body {
@@ -73,9 +73,9 @@ body {
 
 ### Contraer margen {#margin-collapsing}
 
-Se pueden ver problemas de colapso del margen si el primer elemento secundario del elemento de cuerpo tiene un margen.
+Los problemas de contracción del margen se pueden ver si el primer elemento secundario del elemento body tiene un margen.
 
-* La solución es agregar una corrección en el nivel del elemento de cuerpo como la siguiente:
+* La solución consiste en añadir una corrección clara en el nivel de elemento de cuerpo como se indica a continuación:
 
 ```xml
 body:before, body:after{

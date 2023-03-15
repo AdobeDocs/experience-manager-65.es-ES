@@ -23,7 +23,7 @@ Please note that all links to other guides need to be absolute references with l
    + [¿Qué es un recorrido de documentación?](home.md)
 
 + Recorridos sin encabezado {#headless}
-   + [Página de inicio de Recorridos sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/home.html)
+   + [Inicio de Recorridos sin encabezado](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/home.html)
    + Recorrido sin encabezado para desarrolladores {#developer}
       + [Comprender el sin encabezado en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
       + [Obtenga información acerca del desarrollo sin encabezado de CMS](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/learn-about.html)

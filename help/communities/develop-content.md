@@ -1,7 +1,7 @@
 ---
-title: Desarrollar contenido de espacio aislado
+title: Desarrollar contenido de zona protegida
 seo-title: Develop Sandbox Content
-description: Desarrollo de contenido
+description: Desarrollar contenido
 seo-description: Develop content
 uuid: ca046cf8-f6cd-41a1-97c8-74a86fbe9cd2
 contentOwner: User
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Desarrollar contenido de espacio aislado  {#develop-sandbox-content}
+# Desarrollar contenido de zona protegida  {#develop-sandbox-content}
 
-**[Agregar Clientlibs](add-clientlibs.md)**
+**[Añadir Clientlibs](add-clientlibs.md)**
 
-En este punto, es posible explorar las funciones de la comunidad en el entorno limitado, además de utilizar [Comunidad de We-Retail](../../help/sites-developing/we-retail.md), el [Guía de componentes de comunidad](components-guide.md) y [aspectos básicos de las funciones](essentials.md) como referencia.
+En este punto, es posible explorar las funciones de la comunidad en la zona protegida junto con el uso de [Comunidad We-Retail](../../help/sites-developing/we-retail.md), el [Guía de componentes de la comunidad](components-guide.md) y [funciones básicas](essentials.md) como referencia.

@@ -25,12 +25,12 @@ Un lanzamiento se crea para permitir que se realicen cambios preparados para una
 
 >[!NOTE]
 >
->La teoría detrás de los lanzamientos se describe en detalle en [Lanzamientos](/help/sites-authoring/launches.md) en la documentación de creación estándar.
+>La teoría subyacente a los lanzamientos se describe en detalle en [Lanzamientos](/help/sites-authoring/launches.md) en la documentación de creación estándar.
 >
->En la siguiente documentación, junto con [Creación de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Edición de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-editing.md)y [Promoción de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>La información específica sobre el uso de lanzamientos en la IU clásica se encuentra en la siguiente documentación junto con [Creación de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Edición de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-editing.md), y [Promoción de lanzamientos](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >
 >En la IU clásica no es posible tener varias ramas de origen para un lanzamiento.
 
-Se puede acceder directamente a la consola Lanzamientos mediante [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+Se puede acceder directamente a la consola Lanzamientos con [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)

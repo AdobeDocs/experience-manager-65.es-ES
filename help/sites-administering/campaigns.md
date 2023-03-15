@@ -1,7 +1,7 @@
 ---
 title: Campañas
 seo-title: Campaigns
-description: Conozca los conceptos básicos del uso de AEM campañas.
+description: AEM Aprenda los conceptos básicos del uso de Campañas de.
 seo-description: Learn the basics of using AEM Campaigns.
 uuid: f4be814f-8b0f-4089-88bb-0141227bce02
 contentOwner: Guillaume Carlino
@@ -21,14 +21,14 @@ ht-degree: 1%
 
 La administración de campañas ofrece a los especialistas en marketing digital la oportunidad de ofrecer contenido personalizado y crear experiencias dedicadas para los visitantes.
 
-Si está administrando campañas (incluidas las páginas de aterrizaje), es posible que tenga que hacer lo siguiente:
+Si está administrando campañas (incluidas páginas de aterrizaje), es posible que tenga que hacer lo siguiente:
 
-* **Definir segmentos** : debe definir segmentos y estrategias para el contenido de destino.
-* **Preparación del HTML para páginas de aterrizaje** - Las páginas de aterrizaje permiten a los autores importar diseño y contenido directamente en una página AEM de forma rápida y sencilla. Debe preparar el HTML para que los recursos se puedan importar correctamente. Las páginas de aterrizaje son útiles a la hora de crear páginas de aterrizaje de marketing que solo están activas durante un tiempo limitado y que deben crearse rápidamente.
-* **Integrar con SiteCatalyst** - Puede integrar páginas de aterrizaje con SiteCatalyst.
+* **Definición de segmentos** : Debe definir segmentos y estrategias para el contenido de destino.
+* **Preparar el HTML para las páginas de aterrizaje** AEM - Las páginas de aterrizaje permiten a los autores importar diseño y contenido directamente en una página de la de forma rápida y sencilla. Debe preparar el HTML para que los recursos se puedan importar correctamente. Las páginas de aterrizaje son útiles al crear páginas de aterrizaje de marketing que solo están activas durante un tiempo limitado y deben crearse rápidamente.
+* **Integración con SiteCatalyst** : Puede integrar páginas de aterrizaje con el SiteCatalyst.
 
-Consulte las páginas siguientes:
+Consulte las siguientes páginas:
 
-* [Configuración de la segmentación](/help/sites-administering/campaign-segmentation.md)
-* [Ampliación y configuración del Importador de diseños para páginas de aterrizaje](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
-* [Integración de páginas de aterrizaje con Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
+* [Configuración de segmentación](/help/sites-administering/campaign-segmentation.md)
+* [Ampliación y configuración del importador de diseños para páginas de destino](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+* [Integración de páginas de destino con Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)

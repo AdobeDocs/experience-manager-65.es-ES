@@ -19,41 +19,41 @@ ht-degree: 1%
 
 # ContextHub{#contexthub}
 
-ContextHub es un marco para almacenar, manipular y presentar datos de contexto. La API de JavaScript del lado del cliente le permite acceder a los datos para personalizar el contenido.
+ContextHub es un marco de trabajo para almacenar, manipular y presentar datos de contexto. La API de JavaScript del lado del cliente le permite acceder a los datos para personalizar el contenido.
 
 >[!NOTE]
 >
->La variable [Implementación de referencia de We.Retail](/help/sites-developing/we-retail.md) implementa ContextHub y puede servir de referencia cuando integra ContextHub en su propio proyecto.
+>El [Implementación de referencia de We.Retail](/help/sites-developing/we-retail.md) implementa ContextHub y puede servir de referencia al integrar ContextHub en su propio proyecto.
 
 >[!CAUTION]
 >
->La ruta que contiene la configuración de ContextHub de muestra que usa el [Implementación de referencia de We.Retail](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) solo debe utilizarse como referencia para crear su propia configuración.
+>La ruta que contiene la configuración de ContextHub de ejemplo que utiliza el [Implementación de referencia de We.Retail](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) solo debe utilizarse como referencia para crear su propia configuración.
 >
 >No debe utilizarse en un proyecto como su propia configuración de ContextHub.
 
 ## Persistencia {#persistence}
 
-ContextHub almacena datos de contexto persistentes en el cliente. La API de JavaScript de ContextHub le permite acceder a las tiendas para crear, actualizar y eliminar datos según sea necesario. Como tal, ContextHub representa una capa de datos en las páginas.
+ContextHub almacena datos de contexto persistentes en el cliente. La API de JavaScript de ContextHub le permite acceder a las tiendas para crear, actualizar y eliminar datos según sea necesario. De este modo, ContextHub representa una capa de datos en las páginas.
 
-Cada almacén de ContextHub es una instancia de un tipo de almacén predefinido:
+Cada tienda de ContextHub es una instancia de un tipo de tienda predefinido:
 
-* ContextHub proporciona varios [tipos de almacén de muestras](/help/sites-developing/ch-samplestores.md).
-* Usar AEM consolas para [crear tiendas](ch-configuring.md#creating-a-contexthub-store).
-* Los desarrolladores pueden [crear tipos de almacén personalizados](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
-* Los desarrolladores pueden [datos de almacenamiento de acceso](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) a través de Javascript.
+* ContextHub proporciona varios [tipos de almacén de muestra](/help/sites-developing/ch-samplestores.md).
+* AEM Usar consolas de consola para [crear tiendas](ch-configuring.md#creating-a-contexthub-store).
+* Los desarrolladores pueden [crear tipos de tienda personalizados](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
+* Los desarrolladores pueden [datos de tienda de acceso](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) mediante JavaScript.
 
 ## Segmentación {#segmentation}
 
-ContextHub incluye un motor de segmentación que administra segmentos y determina qué segmentos se resuelven para el contexto actual. Se definen varios segmentos. Puede utilizar la API de Javascript para [determinar segmentos resueltos](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments).
+ContextHub incluye un motor de segmentación que administra segmentos y determina qué segmentos se resuelven para el contexto actual. Se definen varios segmentos. Puede utilizar la API de JavaScript para lo siguiente [determinar segmentos resueltos](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments).
 
 ## Presentación {#presentation}
 
-La variable [Barra de herramientas de ContextHub](/help/sites-authoring/ch-previewing.md) permite a los especialistas en marketing y a los autores ver y manipular los datos de almacenamiento para simular la experiencia del usuario al crear páginas. La barra de herramientas está formada por grupos de módulos de IU que proporcionan acceso a los almacenes de ContextHub.
+El [Barra de herramientas de ContextHub](/help/sites-authoring/ch-previewing.md) permite a los especialistas en marketing y a los autores ver y manipular los datos de almacén para simular la experiencia del usuario al crear páginas. La barra de herramientas consiste en grupos de módulos de interfaz de usuario que proporcionan acceso a los almacenes de ContextHub.
 
-Cada módulo de interfaz de usuario de ContextHub es una instancia de un tipo de módulo predefinido:
+Cada módulo de IU de ContextHub es una instancia de un tipo de módulo predefinido:
 
-* ContextHub proporciona varios [tipos de módulo de muestra](/help/sites-developing/ch-samplemodules.md).
-* Usar AEM consolas para [añadir módulos de IU](ch-configuring.md#adding-a-ui-module)y [agruparlos en modos de IU](ch-configuring.md#adding-a-ui-mode).
+* ContextHub proporciona varios [tipos de módulos de muestra](/help/sites-developing/ch-samplemodules.md).
+* AEM Usar consolas de consola para [agregar módulos de IU](ch-configuring.md#adding-a-ui-module), y a [agruparlos en modos de IU](ch-configuring.md#adding-a-ui-mode).
 
 * Los desarrolladores pueden [crear tipos de módulos personalizados](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 

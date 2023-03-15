@@ -1,5 +1,5 @@
 ---
-title: Información general del proveedor de recursos de almacenamiento
+title: Resumen del proveedor de recursos de almacenamiento
 seo-title: Storage Resource Provider Overview
 description: Almacenamiento común para las comunidades
 seo-description: Common storage for Communities
@@ -17,139 +17,139 @@ ht-degree: 0%
 
 ---
 
-# Información general del proveedor de recursos de almacenamiento {#storage-resource-provider-overview}
+# Resumen del proveedor de recursos de almacenamiento {#storage-resource-provider-overview}
 
 ## Introducción {#introduction}
 
-A partir de AEM Communities 6.1, el contenido de la comunidad, denominado comúnmente contenido generado por el usuario (UGC), se almacena en un único almacén común proporcionado por un [proveedor de recursos de almacenamiento](working-with-srp.md) (SRP).
+A partir de AEM Communities 6.1, el contenido de la comunidad, comúnmente denominado contenido generado por el usuario (UGC), se almacena en un único almacén común proporcionado por un [proveedor de recursos de almacenamiento](working-with-srp.md) (SRP).
 
-Existen varias opciones de SRP, todas las cuales acceden a UGC a través de una nueva interfaz de AEM Communities, la [API de SocialResourceProvider](srp-and-ugc.md) (API de SRP), que incluye todas las operaciones de creación, lectura, actualización y eliminación (CRUD).
+Existen varias opciones de SRP, todas las cuales acceden a UGC a través de una nueva interfaz de AEM Communities, la [API SocialResourceProvider](srp-and-ugc.md) (API de SRP), que incluye todas las operaciones de creación, lectura, actualización y eliminación (CRUD).
 
-Todos los componentes de SCF se implementan utilizando la API de SRP, lo que permite desarrollar código sin tener conocimiento de las [topología subyacente](topologies.md) o ubicación de UGC.
+Todos los componentes de SCF se implementan mediante la API de SRP, lo que permite desarrollar código sin conocer ninguno de los dos [topología subyacente](topologies.md) o la ubicación de UGC.
 
-***La API de SocialResourceProvider solo está disponible para clientes con licencia de AEM Communities.***
+***La API de SocialResourceProvider solo está disponible para los clientes con licencia de AEM Communities.***
 
 >[!NOTE]
 >
->**Componentes personalizados**: Para los clientes con licencia de AEM Communities, la API de SRP está disponible para los desarrolladores de componentes personalizados con el fin de acceder a UGC independientemente de la topología subyacente. Consulte [Elementos esenciales de SRP y UGC](srp-and-ugc.md).
+>**Componentes personalizados**: Para los clientes con licencia de AEM Communities, la API de SRP está disponible para los desarrolladores de componentes personalizados con el fin de acceder a UGC independientemente de la topología subyacente. Consulte [SRP y UGC Essentials](srp-and-ugc.md).
 
 Consulte también lo siguiente:
 
-* [Elementos esenciales de SRP y UGC](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
+* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
-* [Refactorización de SocialUtils](socialutils.md) - Asignación de métodos de utilidad obsoletos a los métodos de utilidad SRP actuales.
+* [Refactorización de SocialUtils](socialutils.md) : Asignación de métodos de utilidad obsoletos a los métodos de utilidad SRP actuales.
 
 ## Acerca del repositorio {#about-the-repository}
 
-Para comprender el SRP, es útil comprender el papel del repositorio de AEM (OAK) en un sitio de comunidad de AEM.
+AEM AEM Para comprender el SRP, es útil comprender el papel del repositorio de la (OAK) en un sitio de la comunidad de.
 
-**Repositorio de contenido Java (JCR)**
-Este estándar define un modelo de datos y una interfaz de programación de aplicaciones ([API de JCR](https://jackrabbit.apache.org/jcr/jcr-api.html)) para repositorios de contenido. Combina características de file systems convencionales con las de bases de datos relacionales y agrega una serie de características adicionales que las aplicaciones de contenido a menudo necesitan.
+**Repositorio de contenido de Java (JCR)**
+Este estándar define un modelo de datos y una interfaz de programación de aplicaciones ([API JCR](https://jackrabbit.apache.org/jcr/jcr-api.html)) para repositorios de contenido. Combina las características de los sistemas de archivos convencionales con las de las bases de datos relacionales y agrega una serie de características adicionales que las aplicaciones de contenido suelen necesitar.
 
-Una implementación de JCR es el repositorio AEM, OAK.
+AEM Una implementación de JCR es el repositorio de, OAK.
 
 **Apache Jackrabbit Oak (OAK)**
-[OAK](../../help/sites-deploying/platform.md) es una implementación de JCR 2.0 que es un sistema de almacenamiento de datos diseñado específicamente para aplicaciones centradas en el contenido. Es un tipo de base de datos jerárquica diseñada para datos no estructurados y semiestructurados. El repositorio almacena no solo el contenido orientado al usuario, sino también todo el código, las plantillas y los datos internos utilizados por la aplicación. La IU para acceder al contenido es [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+[OAK](../../help/sites-deploying/platform.md) es una implementación de JCR 2.0 que es un sistema de almacenamiento de datos diseñado específicamente para aplicaciones centradas en el contenido. Es un tipo de base de datos jerárquica diseñada para datos no estructurados y semiestructurados. El repositorio almacena no solo el contenido orientado al usuario, sino también todo el código, las plantillas y los datos internos utilizados por la aplicación. La interfaz de usuario para acceder al contenido es [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
-Tanto JCR como OAK suelen utilizarse para hacer referencia al repositorio de AEM.
+AEM Tanto JCR como OAK se utilizan normalmente para hacer referencia al repositorio de.
 
-Después de desarrollar el contenido del sitio en el entorno de creación privado, debe copiarse en el entorno de publicación público. Esto a menudo se realiza mediante una operación denominada *[replicación](deploy-communities.md#replication-agents-on-author)*. Esto sucede bajo el control del autor/desarrollador/administrador.
+Después de desarrollar el contenido del sitio en el entorno de creación privado, debe copiarse en el entorno de publicación público. A menudo, esto se lleva a cabo mediante una operación llamada *[réplica](deploy-communities.md#replication-agents-on-author)*. Esto sucede bajo el control del autor, desarrollador o administrador.
 
-Para UGC, el contenido lo introducen los visitantes del sitio registrados (miembros de la comunidad) en el entorno de publicación pública. Esto sucede aleatoriamente.
+Para UGC, el contenido lo introducen visitantes registrados del sitio (miembros de la comunidad) en el entorno de publicación público. Esto sucede al azar.
 
-A los efectos de la gestión y la presentación de informes, es útil tener acceso a UGC desde el entorno de creación privado. Con SRP, el acceso a UGC desde el autor es más coherente y eficaz, ya que no es necesario realizar la replicación inversa de la publicación al autor.
+Para fines de administración y creación de informes, es útil tener acceso a UGC desde el entorno de creación privado. Con SRP, el acceso a UGC desde el autor es más coherente y eficaz, ya que la replicación inversa de la publicación al autor no es necesaria.
 
 ## Acerca de SRP {#about-srp}
 
-Cuando UGC se guarda en almacenamiento compartido, existe una única instancia de contenido miembro a la que se puede acceder, en la mayoría de las implementaciones, desde los entornos de autor y publicación. Independientemente de la elección de SRP (MSRP, ASRP, JSRP), se debe acceder a todos mediante programación con la API de SRP.
+Cuando UGC se guarda en un almacenamiento compartido, hay una sola instancia de contenido miembro a la que, en la mayoría de las implementaciones, se puede acceder desde los entornos de creación y publicación. Independientemente de la opción de SRP (MSRP, ASRP, JSRP), se debe acceder a todos mediante programación con la API de SRP.
 
 >[!NOTE]
 >
->Consulte [Elementos esenciales de SRP y UGC](srp-and-ugc.md) para obtener un código de muestra y detalles adicionales.
+>Consulte [SRP y UGC Essentials](srp-and-ugc.md) para obtener código de ejemplo y detalles adicionales.
 >
 >Consulte [Acceso a UGC con SRP](accessing-ugc-with-srp.md) para conocer las prácticas recomendadas al codificar.
 
 ### ASRP {#asrp}
 
-En el caso de ASRP, UGC no se almacena en JCR, sino en un servicio en la nube alojado y administrado por Adobe. El UGC almacenado en ASRP no se puede ver con el CRXDE Lite ni se puede acceder a él mediante la API de JCR.
+En el caso de ASRP, UGC no se almacena en JCR, sino en un servicio en la nube alojado y administrado por el Adobe. Los UGC almacenados en ASRP no se pueden ver con CRXDE Lite ni se puede acceder a ellos mediante la API de JCR.
 
 Consulte [ASRP: proveedor de recursos de almacenamiento de Adobe](asrp.md).
 
-Los desarrolladores no pueden acceder directamente a UGC.
+Los desarrolladores no pueden acceder directamente al UGC.
 
 ASRP utiliza la nube de Adobe para las consultas.
 
 ### MSRP {#msrp}
 
-En el caso del MSRP, UGC no se almacena en JCR, sino en MongoDB. El UGC almacenado en MSRP no se puede ver con el CRXDE Lite ni se puede acceder a él mediante la API de JCR.
+En el caso de MSRP, UGC no se almacena en JCR, sino en MongoDB. Los UGC almacenados en MSRP no se pueden ver con CRXDE Lite ni se puede acceder a ellos mediante la API JCR.
 
-Consulte [MSRP - Proveedor de recursos de almacenamiento MongoDB](msrp.md).
+Consulte [MSRP: proveedor de recursos de almacenamiento de MongoDB](msrp.md).
 
-Aunque el MSRP es comparable al ASRP, como todas las instancias de servidor AEM acceden al mismo UGC, es posible utilizar herramientas comunes para acceder directamente al UGC almacenado en MongoDB.
+AEM Aunque el MSRP es comparable al ASRP, ya que todas las instancias de servidor de acceden al mismo UGC, es posible utilizar herramientas comunes para acceder directamente al UGC almacenado en MongoDB.
 
 MSRP utiliza Solr para las consultas.
 
 ### JSRP {#jsrp}
 
-JSRP es el proveedor predeterminado para acceder a todo UGC en una única instancia de AEM. Proporciona la capacidad de experimentar rápidamente AEM Communities 6.1 sin necesidad de configurar MSRP o ASRP.
+AEM JSRP es el proveedor predeterminado para acceder a todos los UGC en una sola instancia de. Proporciona la capacidad de experimentar rápidamente AEM Communities 6.1 sin necesidad de configurar MSRP o ASRP.
 
-Consulte [JSRP: proveedor de recursos de almacenamiento JCR](jsrp.md).
+Consulte [JSRP: proveedor de recursos de almacenamiento de JCR](jsrp.md).
 
-En el caso de JSRP, mientras que UGC se almacena en JCR y se puede acceder a él a través de la API de CRXDE Lite y JCR, se recomienda encarecidamente que la API de JCR no se utilice nunca para hacerlo, de lo contrario, los cambios futuros podrían afectar al código personalizado.
+En el caso de JSRP, mientras que UGC se almacena en JCR y se puede acceder a través de la API de CRXDE Lite y JCR, se recomienda encarecidamente que la API de JCR nunca se utilice para hacerlo, de lo contrario los cambios futuros pueden afectar al código personalizado.
 
-Además, el repositorio para los entornos de autor y publicación no se comparte. Aunque un clúster de instancias de publicación resulta en un repositorio de publicación compartido, el UGC introducido en la publicación no será visible para el autor, por lo que no se puede administrar el UGC desde el autor. UGC solo se mantiene en el repositorio AEM (JCR) de la instancia en la que se introdujo.
+Además, el repositorio de los entornos de creación y publicación no se comparte. Mientras que un clúster de instancias de publicación genera un repositorio de publicación compartido, el UGC introducido en la publicación no será visible en el autor, por lo que no es posible administrar el UGC desde el autor. AEM UGC solo persiste en el repositorio de la instancia en la que se ingresó, es decir, en el repositorio de la instancia en la que se ingresó.
 
-JSRP utiliza los índices Oak para las consultas.
+JSRP utiliza los índices de Oak para las consultas.
 
 ## Acerca de los nodos de sombra en JCR {#about-shadow-nodes-in-jcr}
 
-Los nodos de sombra, que imitan la ruta a UGC, existen en el repositorio local para cumplir dos propósitos:
+Los nodos sombreados, que imitan la ruta a UGC, existen en el repositorio local para servir dos propósitos:
 
 1. [Control de acceso (ACL)](#for-access-control-acls)
 1. [Recursos no existentes (NER)](#for-non-existing-resources-ners)
 
-Independientemente de la implementación de SRP, el UGC real *no será visible en la misma ubicación que el nodo de sombra.
+Independientemente de la implementación de SRP, el UGC real *no *será visible en la misma ubicación que el nodo en la sombra.
 
-### Para control de acceso (ACL) {#for-access-control-acls}
+### Para el control de acceso (ACL) {#for-access-control-acls}
 
-Algunas implementaciones de SRP, como ASRP y MSRP, almacenan contenido de la comunidad en bases de datos que no proporcionan verificación de ACL. Los nodos de sombra proporcionan una ubicación en el repositorio local al que se pueden aplicar las ACL.
+Algunas implementaciones de SRP, como ASRP y MSRP, almacenan contenido de la comunidad en bases de datos que no proporcionan verificación de ACL. Los nodos sombreados proporcionan una ubicación en el repositorio local a la que se pueden aplicar las ACL.
 
-Con la API de SRP, todas las opciones de SRP realizan la misma comprobación de la ubicación de sombra antes de todas las operaciones de CRUD.
+Con la API de SRP, todas las opciones de SRP realizan la misma comprobación de la ubicación en la sombra antes de todas las operaciones de CRUD.
 
 La comprobación ACL utiliza un método de utilidad que devuelve una ruta adecuada para comprobar los permisos aplicados al UGC del recurso.
 
-Consulte [Elementos esenciales de SRP y UGC](srp-and-ugc.md) para código de muestra.
+Consulte [SRP y UGC Essentials](srp-and-ugc.md) para el código de ejemplo.
 
 ### Para recursos no existentes (NER) {#for-non-existing-resources-ners}
 
-Algunos componentes de Communities pueden incluirse en un script y, por lo tanto, es necesario un nodo direccionable de Sling para admitir funciones de Communities. [Componentes incluidos](scf.md#add-or-include-a-communities-component) se denominan recursos no existentes.
+Algunos componentes de Communities se pueden incluir dentro de un script y, por lo tanto, requieren un nodo direccionable de Sling para admitir las funciones de Communities. [Componentes incluidos](scf.md#add-or-include-a-communities-component) se denominan recursos no existentes (NER).
 
-Los nodos de sombra proporcionan una ubicación direccionable de Sling en el repositorio.
+Los nodos sombreados proporcionan una ubicación direccionable de Sling en el repositorio.
 
 >[!CAUTION]
 >
->Como el nodo de sombra tiene varios usos, la presencia de un nodo de sombra sí *not* implican que el componente es un NER.
+>Como el nodo en la sombra tiene varios usos, la presencia de un nodo en la sombra sí lo hace *no* implicar que el componente es un NER.
 
 ### Ubicación de almacenamiento {#storage-location}
 
-A continuación, se muestra un ejemplo de un nodo de sombra que utiliza la variable [Componente Comentarios](http://localhost:4502/content/community-components/en/comments.html) en el [Guía de componentes de comunidad](components-guide.md):
+A continuación se muestra un ejemplo de un nodo en la sombra, con el [Componente Comentarios](http://localhost:4502/content/community-components/en/comments.html) en el [Guía de componentes de la comunidad](components-guide.md):
 
 * El componente existe en el repositorio local en:
 
    `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-* El nodo de sombra correspondiente existe en el repositorio local en:
+* El nodo central correspondiente existe en el repositorio local en:
 
    `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-No se encontrará ningún UGC en el nodo de sombra.
+No se encuentra ningún UGC bajo el nodo de la sombra.
 
-El comportamiento predeterminado es configurar nodos de sombra en una instancia de publicación siempre que se haga referencia al subárbol correspondiente para una lectura o escritura.
+El comportamiento predeterminado es configurar nodos en la sombra en una instancia de publicación siempre que se haga referencia al subárbol relevante para una lectura o escritura.
 
-A modo de ejemplo, supongamos que la implementación es [MSRP](msrp.md) con una granja de publicación TarMK.
+Por ejemplo, supongamos que la implementación es [MSRP](msrp.md) con una granja de servidores de publicación TarMK.
 
-Cuando [miembro](users.md) publica UGC en pub1 (almacenado en MongoDB), los nodos sombra se crean en JCR en pub1.
+Cuando un [miembro](users.md) publica UGC en pub1 (almacenado en MongoDB), los nodos sombreados se crean en JCR en pub1.
 
-La primera vez que se lee el UGC en pub2, si no hay nada configurado, el comportamiento predeterminado es crear los nodos de sombra.
+La primera vez que se lee el UGC en pub2, si no hay nada configurado, el comportamiento predeterminado es crear los nodos en la sombra.
 
-Si no se desea el comportamiento predeterminado, debe configurarse en la instancia de autor y redirigirse a todas las instancias de publicación, que suele ser un proceso manual.
+Si se desea un comportamiento distinto del predeterminado, debe configurarse en la instancia de autor y revertirse a todas las instancias de publicación, lo que suele ser un proceso manual.

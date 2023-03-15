@@ -131,7 +131,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## Publicación de consultas persistentes {#publishing-persisted-queries}
 
-Una vez que haya seleccionado la [consulta persistente](/help/assets/content-fragments/persisted-queries.md) en la lista (panel izquierdo) puede usar el **Publicación** y **Cancelar la publicación** acciones. Esto las activará en el entorno de publicación (por ejemplo, `dev-publish`) para facilitar el acceso a las aplicaciones a la hora de realizar pruebas.
+Una vez que haya seleccionado su [consulta persistente](/help/assets/content-fragments/persisted-queries.md) en la lista (panel izquierdo), puede utilizar el **Publish** y **Cancelar publicación** acciones. Esto las activará en el entorno de publicación (por ejemplo, `dev-publish`) para facilitar el acceso a las aplicaciones a la hora de realizar pruebas.
 
 >[!NOTE]
 >

@@ -65,7 +65,7 @@ Puede configurar bases de datos relacionales mediante la configuración de la co
 
    >[!NOTE]
    >
-   > Si el Modelo de datos de Forms contiene un objeto que es una palabra clave reservada para la base de datos relacional, puede provocar problemas de adición, actualización o recuperación de datos. Por lo tanto, evite utilizar estos objetos en el Modelo de datos de formulario.
+   > Si el modelo de datos de Forms contiene un objeto que es una palabra clave reservada para la base de datos relacional, puede provocar problemas de adición, actualización o recuperación de datos. Por lo tanto, evite utilizar estos objetos en el modelo de datos de formulario.
 
 ## Configurar el perfil de usuario de AEM {#configure-aem-user-profile}
 
@@ -223,4 +223,4 @@ Cuando se habilita la autenticación mutua para el modelo de datos de formulario
 
 ## Pasos siguientes {#next-steps}
 
-Ha configurado las fuentes de datos. A continuación, puede crear un modelo de datos de formulario o, si ya ha creado un modelo de datos de formulario sin un origen de datos, puede asociarlo a los orígenes de datos configurados. Consulte [Crear un modelo de datos de formulario](/help/forms/using/create-form-data-models.md) para obtener más información.
+Ha configurado las fuentes de datos. A continuación, puede crear un modelo de datos de formulario o, si ya ha creado uno sin una fuente de datos, puede asociarlo a las fuentes de datos configuradas. Consulte [Crear un modelo de datos de formulario](/help/forms/using/create-form-data-models.md) para obtener más información.

@@ -13,7 +13,7 @@ exl-id: 4da96c8f-8bd0-4cad-9087-18e324f084e7
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[port]'/rest/services/SystemInfo.properties'</p></td>
-   <td><p>Esta API es un envoltorio para <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> API de Java. Recupera la configuración del entorno de trabajo actual. </p></td>
+   <td><p>Esta API es un contenedor para <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> API de Java. Recupera la configuración del entorno de trabajo actual. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -43,7 +43,7 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
   <tr>
    <td><p>SystemInfo.logs</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.logs</p></td>
-   <td><p>Descarga un archivo zip que contiene registros del servidor de aplicaciones. </p></td>
+   <td><p>Descarga un archivo zip que contiene los registros del servidor de aplicaciones. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.config</p></td>
@@ -53,12 +53,12 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
   <tr>
    <td><p>SystemInfo.services</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.services</p></td>
-   <td><p>Recupera el estado y los parámetros de configuración de AEM servicios de formularios.</p></td>
+   <td><p>AEM Recupera el estado y los parámetros de configuración de los servicios de formularios de.</p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.vitalDetails</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.vitalDetails</p></td>
-   <td><p>Recupera el tiempo de actividad del servidor, los argumentos de JVM, la memoria del sistema, el tamaño de pila, el nombre del sistema operativo, el número de subprocesos activos y el recuento de subprocesos. </p></td>
+   <td><p>Recupera el tiempo activo del servidor, los argumentos de JVM, la memoria del sistema, el tamaño de la pila, el nombre del sistema operativo, el número de subprocesos activos y el recuento de subprocesos. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.coreSettings</p></td>
@@ -73,9 +73,9 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
      <li><p>DefaultDocumentDisposeTimeout</p></li>
      <li><p>EnableDocumentDBStorage</p></li>
      <li><p>GlobalDocumentStorageUseNetworkShare</p></li>
-     <li><p>EnableFIPS</p></li>
-     <li><p>EnableWSDL</p></li>
-     <li><p>Archivo de configuración de DataServices </p></li>
+     <li><p>Habilitar FIPS</p></li>
+     <li><p>Habilitar WSDL</p></li>
+     <li><p>DataServicesConfigFile </p></li>
      <li><p>EnableRDS</p></li>
     </ul><p></p></td>
   </tr>
@@ -87,7 +87,7 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
   <tr>
    <td><p>SystemInfo.licenseInfo</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.licenseInfo</p></td>
-   <td><p>Recupera la información de versión y licencia de los componentes de formularios AEM instalados. </p></td>
+   <td><p>AEM Recupera la información de la versión y la licencia de los componentes de formularios instalados de la. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfNo.serverConfig</p></td>
@@ -97,16 +97,16 @@ El servicio de información del sistema proporciona un conjunto de API de REST p
   <tr>
    <td><p>SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
-   <td><p>Recupera el recuento y el seguimiento de pila de subprocesos activos. Acepta los siguientes parámetros:</p>
+   <td><p>Recupera el recuento y el seguimiento de pila de los subprocesos activos. Acepta los siguientes parámetros:</p>
     <ul>
-     <li><p>iteraciones= [n]: Especifica el recuento de iteraciones. Sustituya n por un número. </p></li>
-     <li><p>Delay= [n]: Especifica el número de milisegundos que hay que esperar antes de iniciar la siguiente iteración. </p></li>
+     <li><p>iterations= [n]: especifica el número de iteraciones. Sustituya n por un número. </p></li>
+     <li><p>Delay= [n]: especifica el número de milisegundos que hay que esperar antes de iniciar la siguiente iteración. </p></li>
     </ul><p></p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.info</p></td>
-   <td><p>Esta API es un envoltorio para todas las API del servicio de información del sistema. De forma interna, ejecuta todas las API de información del sistema y descarga información en formato zip. </p><p><i><strong>nota</strong>: SystemInfo.info no proporciona el seguimiento de recuento y pila de subprocesos activos. </i></p></td>
+   <td><p>Esta API es un contenedor para todas las API del servicio de información del sistema. Internamente, ejecuta todas las API de información del sistema y descarga la información en formato zip. </p><p><i><strong>nota</strong>: SystemInfo.info no proporciona un recuento ni un seguimiento de pila de los subprocesos activos. </i></p></td>
   </tr>
  </tbody>
 </table>

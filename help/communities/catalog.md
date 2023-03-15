@@ -1,5 +1,5 @@
 ---
-title: Función de catálogo
+title: Función Catálogo
 seo-title: Catalog Feature
 description: Los componentes Asignaciones de habilitación y Catálogo de habilitación son componentes de una comunidad de habilitación
 seo-description: The Enablement Assignments and Enablement Catalog components are components of an enablement community
@@ -17,16 +17,16 @@ ht-degree: 1%
 
 ---
 
-# Función de catálogo {#catalog-feature}
+# Función Catálogo {#catalog-feature}
 
-La variable [`Enablement Assignments`](assignments.md) y `Enablement Catalog` los componentes que se encuentran en el grupo Comunidades en el navegador de componentes son componentes de un [comunidad de habilitación](overview.md#enablement-community).
+El [`Enablement Assignments`](assignments.md) y `Enablement Catalog` los componentes que se encuentran en el grupo Comunidades del navegador de componentes son componentes de un [comunidad de habilitación](overview.md#enablement-community).
 
-La variable `Enablement Catalog` permite que los miembros de la comunidad accedan a un catálogo de [recursos de habilitación](resources.md). El uso de etiquetas AEM es una parte importante de la administración de la lista de recursos de habilitación de un catálogo (consulte [Etiquetado de recursos de habilitación](tag-resources.md)).
+El `Enablement Catalog` permite a los miembros de la comunidad acceder a un catálogo de [recursos de habilitación](resources.md). AEM El uso de etiquetas de es una parte importante de la administración de la lista de recursos de habilitación en un catálogo (consulte [Recursos de habilitación de etiquetas](tag-resources.md)).
 
-En el [Introducción a AEM Communities para la activación](getting-started-enablement.md) vea la vista de un miembro de las asignaciones y catálogos en la [Experiencia del sitio publicado](enablement-published-site.md) para obtener más información.
+Desde el [Introducción a AEM Communities para la habilitación](getting-started-enablement.md) tutorial, consulte la vista de un miembro sobre las asignaciones y los catálogos en la [Experimente el sitio publicado](enablement-published-site.md) sección.
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la [Esenciales del catálogo](catalog-developer-essentials.md) para desarrolladores.
+Puede encontrar más información en la [Catalog Essentials](catalog-developer-essentials.md) para desarrolladores.
 
-La variable [función de catálogo](functions.md#catalog-function) está disponible al crear una [sitio de la comunidad](sites-console.md).
+El [función de catálogo](functions.md#catalog-function) está disponible al crear un [sitio comunitario](sites-console.md).

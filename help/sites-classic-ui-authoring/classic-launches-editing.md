@@ -27,7 +27,7 @@ Cuando se crea un lanzamiento de una página (o conjunto de páginas), se puede 
 1. Abra la página para su edición.
 1. En la barra de tareas, seleccione la ficha **Versiones** y amplíe el grupo **Lanzamientos**. El título del lanzamiento que se esté editando estará en negrita.
 
-   ![imagen_1-13](assets/chlimage_1-13.jpeg)
+   ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
 1. Seleccione el lanzamiento en el que quiere trabajar y haga clic en **Cambiar**.
 1. Comience a editar.

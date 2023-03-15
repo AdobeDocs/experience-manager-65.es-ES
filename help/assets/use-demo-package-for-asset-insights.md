@@ -1,6 +1,6 @@
 ---
 title: Uso del paquete de demostración para Assets Insights
-description: Utilice el paquete de demostración para permitir que Adobe Assets Insights capture datos de una página web y genere perspectivas para ella.
+description: Utilice el paquete de demostración para permitir que Adobe Assets Insights capture datos de y genere perspectivas para una página web.
 contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
@@ -14,16 +14,16 @@ ht-degree: 2%
 
 # Uso del paquete de demostración para Assets Insights {#using-demo-package-for-asset-insights}
 
-Con el paquete de demostración, puede habilitar Adobe Assets Insights para capturar datos de una página web de muestra y generar perspectivas para ella.
+Con el paquete de demostración, puede habilitar Adobe Assets Insights para capturar datos y generar perspectivas para una página web de ejemplo.
 
-## [!DNL Use Experience Manager Assets] Información sobre la página web de muestra  {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] Perspectivas con la página web de muestra  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Configure Assets Insights siguiendo las instrucciones de [Configuración de Assets Insights](configure-asset-insights.md).
-1. Descargue el paquete de activos de muestra desde abajo e instale el paquete desde el gestor de paquetes CRXDE.
+1. Descargue el paquete de recursos de ejemplo desde abajo e instale el paquete desde el administrador de paquetes CRXDE.
 
 [Obtener archivo](assets/insightsdemo.zip)
 
-1. Descargue el archivo ZIP que contiene la página web de muestra desde abajo y extráigalo en su sistema de archivos local.
+1. Descargue el archivo ZIP que contiene la página web de ejemplo de a continuación y extraiga en su sistema de archivos local.
 
 [Obtener archivo](assets/demosite.zip)
 
@@ -31,8 +31,8 @@ Con el paquete de demostración, puede habilitar Adobe Assets Insights para capt
 
    >[!CAUTION]
    >
-   >La página web está configurada para cargar el recurso desde el servidor localhost . En caso de que el servidor se esté ejecutando en otro lugar, cambie la dirección del servidor de localhost a dirección del servidor en el contenido del HTML de la página web.
+   >La página web está configurada para cargar recursos desde el servidor localhost En caso de que el servidor se esté ejecutando en otro lugar, cambie la dirección del servidor de localhost a la dirección del servidor en el contenido del HTML de la página web.
 
    >[!NOTE]
    >
-   >La página web externa puede estar en [!DNL Experience Manager] en sí.
+   >La página web externa puede estar en [!DNL Experience Manager] sí mismo.

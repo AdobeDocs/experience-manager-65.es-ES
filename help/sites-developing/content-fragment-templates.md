@@ -1,7 +1,7 @@
 ---
-title: Plantillas de fragmento de contenido
+title: Plantillas de fragmentos de contenido
 seo-title: Content Fragment Templates
-description: Las plantillas se seleccionan al crear un fragmento de contenido y proporcionan el nuevo fragmento con la estructura básica, el elemento y la variación
+description: Las plantillas se seleccionan al crear un fragmento de contenido y proporcionan al nuevo fragmento la estructura básica, el elemento y la variación
 seo-description: Templates are selected when creating a content fragmen and provide the new fragment with the basic structure, element, and variation
 uuid: d147bac8-b710-40ed-9664-decb5ffcf8e7
 contentOwner: Guillaume Carlino
@@ -18,30 +18,30 @@ ht-degree: 5%
 
 ---
 
-# Plantillas de fragmento de contenido{#content-fragment-templates}
+# Plantillas de fragmentos de contenido{#content-fragment-templates}
 
 >[!CAUTION]
 >
->[Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) para crear todos los fragmentos de contenido nuevos.
+>[Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md) Se recomiendan para crear todos los fragmentos de contenido nuevos.
 >
->Los modelos de fragmentos de contenido se utilizan en todos los ejemplos de WKND.
+>Los modelos de fragmento de contenido se utilizan para todos los ejemplos en WKND.
 
 >[!NOTE]
 >
->Antes de AEM 6.3, los fragmentos de contenido se creaban en función de plantillas en lugar de modelos.
+>AEM Antes de la versión 6.3, los fragmentos de contenido se creaban en función de plantillas en lugar de modelos.
 >
->Las plantillas de fragmento de contenido ya no se utilizan. Pueden seguir utilizándose para crear fragmentos, pero se recomienda utilizar modelos de fragmento de contenido en su lugar. No se agregarán nuevas funciones a las plantillas de fragmento y se eliminarán en una versión futura.
+>Las plantillas de fragmento de contenido ya no se utilizan. Todavía se pueden utilizar para crear fragmentos, pero se recomienda utilizar Modelos de fragmentos de contenido en su lugar. No se agregarán nuevas funciones a las plantillas de fragmento y se eliminarán en una versión futura.
 
 Las plantillas se seleccionan al crear un fragmento de contenido. Proporcionan al nuevo fragmento la estructura básica, los elementos y la variación. Las plantillas utilizadas para los fragmentos de contenido están sujetas al Administrador de configuración de Granite.
 
-Las plantillas listas para usar se incluyen en:
+Las plantillas listas para usar se encuentran en:
 
 * `/libs/settings/dam/cfm/templates`
 
 Puede crear plantillas específicas del sitio para fragmentos de contenido en:
 
 * `/apps/settings/dam/cfm/templates`
-La ubicación para superponer plantillas integradas o proporcionar plantillas específicas del cliente y para toda la aplicación que no se pretendan ampliar o cambiar durante la ejecución.
+La ubicación para superponer plantillas predeterminadas o proporcionar plantillas específicas del cliente para toda la aplicación que no se van a ampliar/cambiar durante la ejecución.
 
 * `/conf/global/settings/dam/cfm/templates`
 La ubicación de las plantillas específicas del cliente para toda la instancia que deben cambiarse durante la ejecución.
@@ -50,20 +50,20 @@ El orden de prioridad es (en orden descendente) `/conf`, `/apps`, `/libs`.
 
 >[!CAUTION]
 >
->You ***must*** no cambie nada en la variable `/libs` ruta.
+>Usted ***debe*** no cambie nada en el `/libs` ruta.
 >
->Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una corrección o un paquete de funciones).
+>Esto se debe al contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
 >
 >El método recomendado para la configuración y otros cambios es:
 >
->1. Volver a crear el elemento requerido (es decir, tal como existe en `/libs`) en `/apps`
+>1. Vuelva a crear el elemento necesario (es decir, tal como existe en `/libs`) en `/apps`
 >
->1. Realice cambios dentro de `/apps`
+>1. Realice cualquier cambio en `/apps`
 
 >
 
 
-La estructura básica de una plantilla se mantiene en:
+La estructura básica de una plantilla se encuentra debajo de:
 
 ```xml
 conf
@@ -76,7 +76,7 @@ conf
               ...
 ```
 
-Con una estructura específica:
+Con la estructura específica:
 
 ```xml
 + <template-name>
@@ -114,7 +114,7 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <th>Nombre</th>
      <th>Tipo</th>
-     <th>Valor</th>
+     <th>Valor </th>
     </tr>
     <tr>
      <td><code>&lt;<em>template-name</em>&gt;</code></td>
@@ -124,12 +124,12 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <td><code>jcr:title</code></td>
      <td><p><code>String</code></p> <p>required<br /> </p> </td>
-     <td>El título de la plantilla (se muestra en la <strong>Crear fragmento</strong> ).</td>
+     <td>El título de la plantilla (mostrado en la <strong>Crear fragmento</strong> asistente).</td>
     </tr>
     <tr>
      <td><code>jcr:description</code></td>
      <td><p><code>String</code></p> <p>opcional</p> </td>
-     <td>Texto que describe el propósito de la plantilla (mostrado en la <strong>Crear fragmento</strong> ).</td>
+     <td>Un texto que describe el propósito de la plantilla (mostrado en el <strong>Crear fragmento</strong> asistente).</td>
     </tr>
     <tr>
      <td><code>initialAssociatedContent</code></td>
@@ -139,12 +139,12 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <td><code>precreateElements</code></td>
      <td><p><code>Boolean</code></p> <p>required</p> </td>
-     <td><p><code>true</code>, si los subrecursos que representan los elementos (excepto el elemento maestro) del fragmento de contenido se deben crear al crear el fragmento de contenido; <em>false</em> si deben crearse "sobre la marcha".</p> <p><strong>Nota</strong>: actualmente, este parámetro debe establecerse como <code>true</code>.</p> </td>
+     <td><p><code>true</code>, si los subrecursos que representan los elementos (excepto el elemento principal) del fragmento de contenido deben crearse cuando se cree el fragmento de contenido; <em>false</em> si deben crearse "sobre la marcha".</p> <p><strong>Nota</strong>: actualmente este parámetro debe establecerse en <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
-     <td><p><code>Long</code></p> <p>obligatorio</p> </td>
-     <td><p>Versión de la estructura de contenido; compatible actualmente:</p> <p><strong>Nota</strong>: actualmente, este parámetro debe establecerse como <code>2</code>.<br /> </p> </td>
+     <td><p><code>Long</code></p> <p>required</p> </td>
+     <td><p>Versión de la estructura de contenido; compatible actualmente:</p> <p><strong>Nota</strong>: actualmente este parámetro debe establecerse en <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
   </table>
@@ -156,12 +156,12 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <th>Nombre</th>
      <th>Tipo</th>
-     <th>Valor</th>
+     <th>Valor </th>
     </tr>
     <tr>
      <td><code>elements</code> </td>
-     <td><p><code>nt:unstructured</code></p> <p>obligatorio</p> </td>
-     <td><p>Nodo que contiene la definición de los elementos del fragmento de contenido. Es obligatorio y debe contener al menos un nodo secundario para la variable <strong>Principal</strong> pero puede contener [1..n] nodos secundarios.</p> <p>Cuando se utiliza la plantilla, la subrama de elementos se copia en la subrama de modelo del fragmento.</p> <p>El primer elemento (como se ve en el CRXDE Lite) se considera automáticamente como el <i>main</i> elemento; el nombre del nodo es irrelevante y el nodo en sí no tiene una relevancia especial, aparte del hecho de que está representado por el recurso principal; los demás elementos se gestionan como subrecursos.</p> </td>
+     <td><p><code>nt:unstructured</code></p> <p>required</p> </td>
+     <td><p>Nodo que contiene la definición de los elementos del fragmento de contenido. Es obligatorio y debe contener al menos un nodo secundario para <strong>Principal</strong> , pero puede contener [1..n] nodos secundarios.</p> <p>Cuando se utiliza la plantilla, la subrama de elementos se copia en la subrama del modelo del fragmento.</p> <p>El primer elemento (tal como se ve en el CRXDE Lite) se considera automáticamente como el <i>main</i> elemento; el nombre del nodo es irrelevante y el nodo en sí no tiene una relevancia especial, aparte del hecho de que está representado por el recurso principal; los demás elementos se gestionan como subrecursos.</p> </td>
     </tr>
    </tbody>
   </table>
@@ -173,7 +173,7 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <th>Nombre</th>
      <th>Tipo</th>
-     <th>Valor</th>
+     <th>Valor </th>
     </tr>
     <tr>
      <td><code>&lt;<i>element-name</i>&gt;</code></td>
@@ -182,18 +182,18 @@ Más detalles sobre los nodos y sus propiedades son:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>obligatorio</p> </td>
-     <td>Título del elemento (mostrado en el selector de elementos del editor de fragmentos).</td>
+     <td><p><code>String</code></p> <p>required</p> </td>
+     <td>El título del elemento (mostrado en el selector de elementos del editor de fragmentos).</td>
     </tr>
     <tr>
      <td><code>defaultContent</code></td>
      <td><p><code>String</code></p> <p>opcional</p> <p>predeterminada: ""</p> </td>
-     <td>Contenido inicial del elemento; solo se usa si <code>precreateElements</code><i> = </i><code>true</code></td>
+     <td>Contenido inicial del elemento; solo se utiliza si <code>precreateElements</code><i> = </i><code>true</code></td>
     </tr>
     <tr>
      <td><code>initialContentType</code></td>
      <td><p><code>String</code></p> <p>opcional</p> <p>predeterminada: <code>text/html</code></p> </td>
-     <td><p>Tipo de contenido inicial del elemento; solo se usa si <code>precreateElements</code><i> = </i><code>true</code>; compatible actualmente:</p>
+     <td><p>Tipo de contenido inicial del elemento; solo se utiliza si <code>precreateElements</code><i> = </i><code>true</code>; compatible actualmente:</p>
       <ul>
        <li><code>text/html</code></li>
        <li><code>text/plain</code></li>
@@ -202,7 +202,7 @@ Más detalles sobre los nodos y sus propiedades son:
     </tr>
     <tr>
      <td><code>name</code></td>
-     <td><p><code>String</code></p> <p>obligatorio</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>El nombre interno del elemento; debe ser único para el tipo de fragmento.</td>
     </tr>
    </tbody>
@@ -215,7 +215,7 @@ Más detalles sobre los nodos y sus propiedades son:
     <tr>
      <th>Nombre</th>
      <th>Tipo</th>
-     <th>Valor</th>
+     <th>Valor </th>
     </tr>
     <tr>
      <td><code>variations</code> </td>
@@ -225,14 +225,14 @@ Más detalles sobre los nodos y sus propiedades son:
    </tbody>
   </table>
 
-* **Nombre de la variación**
+* **Nombre de variación**
 
    <table>
    <tbody>
     <tr>
      <th>Nombre</th>
      <th>Tipo</th>
-     <th>Valor</th>
+     <th>Valor </th>
     </tr>
     <tr>
      <td><code>&lt;<i>variation-name</i>&gt;</code> </td>
@@ -242,13 +242,13 @@ Más detalles sobre los nodos y sus propiedades son:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>obligatorio</p> </td>
-     <td>El título de la variación (se muestra en la sección <strong>Variación</strong> (carril izquierdo).</td>
+     <td><p><code>String</code></p> <p>required</p> </td>
+     <td>El título de la variación (mostrado en el del editor de fragmentos) <strong>Variación</strong> pestaña (carril izquierdo).</td>
     </tr>
     <tr>
      <td><code>jcr:desciption</code></td>
      <td><p><code>String</code></p> <p>opcional</p> <p>predeterminada: ""</p> </td>
-     <td>Texto que proporciona una descripción de la variación <span>(se muestra en el <strong>Variación</strong> (carril izquierdo).</code></td>
+     <td>Un texto que proporciona una descripción de la variación <span>(mostrado en el del editor de fragmentos) <strong>Variación</strong> pestaña (carril izquierdo).</code></td>
     </tr>
    </tbody>
   </table>

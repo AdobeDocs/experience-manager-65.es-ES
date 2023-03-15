@@ -1,7 +1,7 @@
 ---
-title: Prácticas recomendadas del flujo de trabajo
+title: Prácticas recomendadas de flujo de trabajo
 seo-title: Workflow Best Practices
-description: Prácticas recomendadas del flujo de trabajo
+description: Prácticas recomendadas de flujo de trabajo
 seo-description: null
 uuid: 79be4055-c2ef-428e-9054-103c6cfde1d2
 contentOwner: User
@@ -17,84 +17,84 @@ ht-degree: 1%
 
 ---
 
-# Prácticas recomendadas del flujo de trabajo{#workflow-best-practices}
+# Prácticas recomendadas de flujo de trabajo{#workflow-best-practices}
 
-Los flujos de trabajo permiten automatizar las actividades de Adobe Experience Manager (AEM).
+Los flujos de trabajo permiten automatizar las actividades de Adobe Experience Manager AEM ().
 
-A menudo representan una gran cantidad del procesamiento que se produce en un entorno de AEM, por lo que cuando los pasos de flujo de trabajo personalizados no se escriben según las prácticas recomendadas o los flujos de trabajo listos para usar no están configurados para ejecutarse de la manera más eficiente posible, el sistema puede verse afectado como resultado.
+AEM A menudo representan una gran cantidad del procesamiento que se produce en un entorno de trabajo de la, por lo que cuando los pasos personalizados del flujo de trabajo no se escriben según las prácticas recomendadas o los flujos de trabajo listos para usar no están configurados para ejecutarse de la manera más eficiente posible, el sistema puede sufrir las consecuencias.
 
-Por lo tanto, se recomienda planificar cuidadosamente las implementaciones de los flujos de trabajo.
+Por lo tanto, es muy recomendable planificar cuidadosamente las implementaciones de los flujos de trabajo.
 
 ## Configuración {#configuration}
 
-Al configurar los procesos de flujo de trabajo (personalizados o predeterminados), hay que tener en cuenta algunas cosas.
+Al configurar los procesos de flujo de trabajo (personalizados o predeterminados), hay algunas cosas que deben tenerse en cuenta.
 
 ### Flujos de trabajo transitorios {#transient-workflows}
 
-Para optimizar las cargas de ingesta alta, puede definir una [flujo de trabajo como transitorio](/help/sites-developing/workflows.md#transient-workflows).
+Para optimizar las cargas de ingesta altas, puede definir una [flujo de trabajo como transitorio](/help/sites-developing/workflows.md#transient-workflows).
 
 Cuando un flujo de trabajo es transitorio, los datos de tiempo de ejecución relacionados con los pasos de trabajo intermedios no se mantienen en el JCR cuando se ejecutan (las representaciones de salida se mantienen, por supuesto).
 
 Las ventajas pueden incluir:
 
-* Reducción del tiempo de procesamiento del flujo de trabajo; de hasta el 10 %.
+* Reducción en el tiempo de procesamiento del flujo de trabajo de hasta el 10 %.
 * Reduzca considerablemente el crecimiento del repositorio.
-* No se necesitan más flujos de trabajo CRUD para purgar.
-* Además, reduce el número de archivos TAR a compactos.
+* No se requieren más flujos de trabajo CRUD para purgar.
+* Además, reduce el número de archivos TAR que se van a compactar.
 
 >[!CAUTION]
 >
->Si su empresa dicta que persiste o archiva los datos de tiempo de ejecución del flujo de trabajo para fines de auditoría, no habilite esta función.
+>Si su empresa dicta que los datos de tiempo de ejecución del flujo de trabajo se conservan o archivan con fines de auditoría, no habilite esta función.
 
-### Ajuste de los flujos de trabajo DAM {#tuning-dam-workflows}
+### Ajuste de flujos de trabajo DAM {#tuning-dam-workflows}
 
-Para ver las directrices de ajuste del rendimiento para los flujos de trabajo de DAM, consulte la [Guía de ajuste del rendimiento de AEM Assets](/help/assets/performance-tuning-guidelines.md).
+Para ver las directrices de ajuste del rendimiento para flujos de trabajo de DAM, consulte la [Guía de ajuste de rendimiento de AEM Assets](/help/assets/performance-tuning-guidelines.md).
 
-### Configurar el número máximo de flujos de trabajo simultáneos {#configure-the-maximum-number-of-concurrent-workflows}
+### Configuración del número máximo de flujos de trabajo simultáneos {#configure-the-maximum-number-of-concurrent-workflows}
 
-AEM permitir que varios subprocesos de flujo de trabajo se ejecuten simultáneamente. De forma predeterminada, el número de subprocesos está configurado para ser la mitad del número de núcleos de procesador en el sistema.
+AEM Puede permitir que varios subprocesos de flujo de trabajo se ejecuten de forma simultánea. De forma predeterminada, el número de subprocesos está configurado para ser la mitad del número de núcleos de procesador del sistema.
 
-En los casos en los que los flujos de trabajo que se ejecutan exigen recursos del sistema, esto puede significar que queda poco para que AEM utilice para otras tareas, como renderizar la interfaz de usuario de creación. Como resultado, el sistema puede ser lento durante actividades como la carga masiva de imágenes.
+AEM En los casos en los que los flujos de trabajo que se ejecutan requieren recursos del sistema, esto puede significar poco para que se lo utilice en otras tareas, como procesar la interfaz de usuario de creación. Como resultado, el sistema puede resultar lento durante actividades como la carga masiva de imágenes.
 
-Para solucionar este problema, Adobe recomienda configurar el número de **Trabajos paralelos máximos** estar entre la mitad y las tres cuartas partes del número de núcleos de procesador del sistema. Esto debería permitir suficiente capacidad para que el sistema siga respondiendo al procesar estos flujos de trabajo.
+Para solucionar este problema, el Adobe recomienda configurar el número de **Máximo de trabajos paralelos** que se sitúe entre la mitad y las tres cuartas partes del número de núcleos de procesador del sistema. Esto debería permitir suficiente capacidad para que el sistema mantenga su capacidad de respuesta al procesar estos flujos de trabajo.
 
-Para configurar **Trabajos paralelos máximos**, puede:
+Para configurar **Máximo de trabajos paralelos**, puede hacer lo siguiente:
 
-* Configure las variables **[Configuración de OSGi](/help/sites-deploying/configuring-osgi.md)** desde la consola web AEM; para **Cola: Cola de flujo de trabajo de Granite** ( **Configuración de cola de trabajos Apache Sling**).
+* Configure las variables **[Configuración de OSGi](/help/sites-deploying/configuring-osgi.md)** AEM desde la consola web de; para **Cola: Cola de flujo de trabajo de Granite** (an) **Configuración de cola de trabajos de Apache Sling**).
 
-* Configure la cola puede desde el **Trabajos de Sling** de la consola web AEM; para **Configuración de cola de trabajos: Cola de flujo de trabajo de Granite**, en `http://localhost:4502/system/console/slingevent`.
+* Configure la cola desde el **Trabajos de Sling** AEM opción de la consola web de; para **Configuración de cola de trabajos: cola de flujo de trabajo de Granite**, en `http://localhost:4502/system/console/slingevent`.
 
-Además, existe una configuración independiente para la variable **Cola de trabajos de proceso externo de Granite Workflow**. Se utiliza para procesos de flujo de trabajo que inician binarios externos, como **InDesign Server** o **Imagen Magick**.
+Además, hay una configuración independiente para **Cola de trabajos de proceso externo de Granite Workflow**. Se utiliza para procesos de flujo de trabajo que inician binarios externos como **InDesign Server** o **Imagen Magick**.
 
 ### Configurar colas de trabajos individuales {#configure-individual-job-queues}
 
-En algunos casos, es útil configurar colas de trabajos individuales para controlar los subprocesos simultáneos u otras opciones de cola, de forma individual. Puede añadir y configurar una cola individual desde la consola web a través del **Configuración de cola de trabajos Apache Sling** fábrica. Para encontrar el tema adecuado a la lista, ejecute el modelo del flujo de trabajo y búsquelo en el **Trabajos de Sling** consola; por ejemplo, en `http://localhost:4502/system/console/slingevent`.
+En algunos casos, resulta útil configurar colas de trabajos individuales para controlar los subprocesos simultáneos u otras opciones de cola de forma individual. Puede agregar y configurar una cola individual desde la consola web a través de **Configuración de cola de trabajos de Apache Sling** de fábrica. Para encontrar el tema correspondiente, ejecute el modelo del flujo de trabajo y búsquelo en la **Trabajos de Sling** consola; por ejemplo, en `http://localhost:4502/system/console/slingevent`.
 
 También se pueden agregar colas de trabajos individuales para flujos de trabajo transitorios.
 
-### Configurar la depuración del flujo de trabajo {#configure-workflow-purging}
+### Configurar depuración de flujo de trabajo {#configure-workflow-purging}
 
-En una instalación estándar AEM proporciona una consola de mantenimiento en la que se pueden programar y configurar las actividades de mantenimiento diarias y semanales; por ejemplo, en:
+AEM En una instalación estándar, proporciona una consola de mantenimiento en la que se pueden programar y configurar actividades de mantenimiento diarias y semanales; por ejemplo, en:
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
-De forma predeterminada, la variable **Período de mantenimiento semanal** tiene un **Purga del flujo de trabajo** , pero esto debe configurarse antes de que se ejecute. Para configurar las purgas del flujo de trabajo, se ha añadido una nueva **Configuración de depuración del flujo de trabajo de Adobe Granite** debe agregarse en la consola web.
+De forma predeterminada, la variable **Ventana de mantenimiento semanal** tiene un **Depuración de flujo de trabajo** , pero esto debe configurarse antes de que se ejecute. Para configurar las depuraciones del flujo de trabajo, cree un nuevo **Configuración de depuración del flujo de trabajo de Adobe Granite** debe añadirse en la consola web.
 
-Para obtener más información sobre las tareas de mantenimiento en AEM, consulte la [Tablero de operaciones](/help/sites-administering/operations-dashboard.md).
+AEM Para obtener más información sobre las tareas de mantenimiento en la, consulte la [Tablero de operaciones](/help/sites-administering/operations-dashboard.md).
 
 ## Personalización {#customization}
 
-Al escribir procesos de flujo de trabajo personalizados, hay que tener en cuenta algunas cosas.
+Al escribir procesos de flujo de trabajo personalizados, hay algunas cosas que deben tenerse en cuenta.
 
 ### Ubicaciones {#locations}
 
-Las definiciones de modelos de flujo de trabajo, lanzadores, secuencias de comandos y notificaciones se mantienen en el repositorio según el tipo; es decir, preestablecido, personalizado, entre otros.
+Las definiciones de modelos de flujo de trabajo, iniciadores, scripts y notificaciones se mantienen en el repositorio según el tipo; es decir, listas para usar, personalizadas, entre otros.
 
 >[!NOTE]
 >
->Consulte también [Reestructuración de repositorios en AEM 6.5](/help/sites-deploying/repository-restructuring.md).
+>Consulte también [AEM Reestructuración de repositorios en 6.5](/help/sites-deploying/repository-restructuring.md).
 
-#### Ubicaciones: modelos de flujo de trabajo {#locations-workflow-models}
+#### Ubicaciones - Modelos de flujo de trabajo {#locations-workflow-models}
 
 Los modelos de flujo de trabajo se almacenan en el repositorio según el tipo:
 
@@ -104,21 +104,21 @@ Los modelos de flujo de trabajo se almacenan en el repositorio según el tipo:
 
    >[!CAUTION]
    >
-   >No:
+   >No haga lo siguiente:
    >
    >* coloque cualquiera de los modelos de flujo de trabajo personalizados en esta carpeta
-   >* editar cualquier cosa en `/libs`
+   >* editar cualquier elemento en `/libs`
 
    >
-   >Como cualquier cambio se puede sobrescribir en la actualización o al instalar correcciones, paquetes fijos acumulativos o paquetes de servicio.
+   >Como cualquier cambio puede sobrescribirse durante la actualización o al instalar correcciones rápidas, paquetes de correcciones acumulativos o paquetes de servicio.
 
-* Los diseños de flujo de trabajo personalizados se incluyen en:
+* Los diseños de flujo de trabajo personalizados se encuentran en:
 
    ```
    /conf/global/settings/workflow/models/...
    ```
 
-* Los diseños de flujo de trabajo en tiempo de ejecución (tanto predeterminados como personalizados) se mantienen en la siguiente ruta:
+* Los diseños de flujo de trabajo de tiempo de ejecución (tanto predeterminados como personalizados) se mantienen en la siguiente ruta:
 
    `/var/workflow/models/`
 
@@ -128,41 +128,41 @@ Los modelos de flujo de trabajo se almacenan en el repositorio según el tipo:
 
    >[!NOTE]
    >
-   >Si estos diseños se editan *uso de la interfaz de usuario de AEM*, los detalles se copiarán en las nuevas ubicaciones.
+   >Si estos diseños se editan *AEM uso de la IU de*, los detalles se copiarán en las nuevas ubicaciones.
 
-#### Ubicaciones: iniciadores de flujo de trabajo {#locations-workflow-launchers}
+#### Ubicaciones - Iniciadores de flujo de trabajo {#locations-workflow-launchers}
 
-Las definiciones del iniciador de flujo de trabajo también se almacenan en el repositorio según el tipo:
+Las definiciones del lanzador de flujos de trabajo también se almacenan en el repositorio según el tipo:
 
-* Los lanzadores de flujo de trabajo listos para usar se mantienen en la siguiente ruta:
+* Los iniciadores de flujo de trabajo listos para usar se mantienen en la siguiente ruta:
 
    `/libs/settings/workflow/launcher/`
 
    >[!CAUTION]
    >
-   >No:
+   >No haga lo siguiente:
    >
    >* coloque cualquiera de los iniciadores de flujo de trabajo personalizados en esta carpeta
-   >* editar cualquier cosa en `/libs`
+   >* editar cualquier elemento en `/libs`
 
    >
-   >Como cualquier cambio se puede sobrescribir en la actualización o al instalar correcciones, paquetes fijos acumulativos o paquetes de servicio.
+   >Como cualquier cambio puede sobrescribirse durante la actualización o al instalar correcciones rápidas, paquetes de correcciones acumulativos o paquetes de servicio.
 
-* Los iniciadores de flujo de trabajo personalizados se incluyen en:
+* Los iniciadores de flujo de trabajo personalizados se encuentran en:
 
    ```
    /conf/global/settings/workflow/launcher/...
    ```
 
-* Los iniciadores de flujo de trabajo heredados se mantienen en la siguiente ruta:
+* Los iniciadores de flujos de trabajo heredados se mantienen en la siguiente ruta:
 
    `/etc/workflow/launcher/`
 
    >[!NOTE]
    >
-   >Si se editan estas definiciones *uso de la interfaz de usuario de AEM*, los detalles se copiarán en las nuevas ubicaciones.
+   >Si se editan estas definiciones *AEM uso de la IU de*, los detalles se copiarán en las nuevas ubicaciones.
 
-#### Ubicaciones: secuencias de comandos de flujo de trabajo {#locations-workflow-scripts}
+#### Ubicaciones - Scripts de flujo de trabajo {#locations-workflow-scripts}
 
 Los scripts de flujo de trabajo también se almacenan en el repositorio según el tipo:
 
@@ -172,15 +172,15 @@ Los scripts de flujo de trabajo también se almacenan en el repositorio según e
 
    >[!CAUTION]
    >
-   >No:
+   >No haga lo siguiente:
    >
-   >* coloque cualquiera de las secuencias de comandos de flujo de trabajo personalizadas en esta carpeta
-   >* editar cualquier cosa en `/libs`
+   >* coloque cualquiera de los scripts de flujo de trabajo personalizados en esta carpeta
+   >* editar cualquier elemento en `/libs`
 
    >
-   >Como cualquier cambio se puede sobrescribir en la actualización o al instalar correcciones, paquetes fijos acumulativos o paquetes de servicio.
+   >Como cualquier cambio puede sobrescribirse durante la actualización o al instalar correcciones rápidas, paquetes de correcciones acumulativos o paquetes de servicio.
 
-* Los scripts de flujo de trabajo personalizados se mantienen en:
+* Los scripts de flujo de trabajo personalizados se encuentran en:
 
    ```
    /apps/workflow/scripts/...
@@ -190,25 +190,25 @@ Los scripts de flujo de trabajo también se almacenan en el repositorio según e
 
    `/etc/workflow/scripts/`
 
-#### Ubicaciones: notificaciones de flujo de trabajo {#locations-workflow-notifications}
+#### Ubicaciones - Notificaciones de flujo de trabajo {#locations-workflow-notifications}
 
 Las notificaciones de flujo de trabajo también se almacenan en el repositorio según el tipo:
 
-* Las definiciones de notificaciones de flujo de trabajo integradas se mantienen en la siguiente ruta:
+* Las definiciones de notificaciones de flujo de trabajo listas para usar se mantienen en la siguiente ruta:
 
    `/libs/settings/workflow/notification/`
 
    >[!CAUTION]
    >
-   >No:
+   >No haga lo siguiente:
    >
-   >* Coloque cualquiera de las definiciones de notificación de flujo de trabajo personalizadas en esta carpeta
-   >* editar cualquier cosa en `/libs`
+   >* coloque cualquiera de las definiciones de notificación de flujo de trabajo personalizadas en esta carpeta
+   >* editar cualquier elemento en `/libs`
 
    >
-   >Como cualquier cambio se puede sobrescribir en la actualización o al instalar correcciones, paquetes fijos acumulativos o paquetes de servicio.
+   >Como cualquier cambio puede sobrescribirse durante la actualización o al instalar correcciones rápidas, paquetes de correcciones acumulativos o paquetes de servicio.
 
-* Las definiciones de notificaciones de flujo de trabajo personalizadas se incluyen en:
+* Las definiciones de notificaciones de flujo de trabajo personalizadas se encuentran en:
 
    ```
    /conf/global/settings/workflow/notification/...
@@ -227,16 +227,16 @@ Las notificaciones de flujo de trabajo también se almacenan en el repositorio s
 
 ### Sesiones de proceso {#process-sessions}
 
-Como en cualquier desarrollo personalizado, siempre se recomienda utilizar la sesión de un usuario cuando sea posible:
+Como en cualquier desarrollo personalizado, siempre se recomienda utilizar una sesión del usuario cuando sea posible:
 
-* para el mejor cumplimiento de las directrices de seguridad
-* para permitir que el sistema administre la apertura y cierre de la sesión
+* para un mejor cumplimiento de las directrices de seguridad
+* para permitir que el sistema administre la apertura y el cierre de la sesión
 
 Al implementar un proceso de flujo de trabajo:
 
-* Se proporcionará una sesión de flujo de trabajo que debe utilizarse a menos que haya una razón convincente para no hacerlo.
-* Las nuevas sesiones no deben crearse a partir de pasos de flujo de trabajo, ya que esto causa incoherencias en los estados junto con posibles problemas de concurrencia en el motor del flujo de trabajo.
-* No debe adquirir una nueva sesión JCR desde dentro de un paso de proceso en un flujo de trabajo; debe adaptar la sesión de flujo de trabajo proporcionada por la API de paso de proceso a una sesión jcr. Por ejemplo:
+* Se proporcionará una sesión de flujo de trabajo que se debe utilizar a menos que haya una razón de peso para no hacerlo.
+* No se deben crear nuevas sesiones a partir de los pasos del flujo de trabajo, ya que esto provoca incoherencias en los estados junto con posibles problemas de concurrencia en el motor de flujos de trabajo.
+* No debe adquirir una nueva sesión JCR desde un paso de proceso en un flujo de trabajo; debe adaptar la sesión de flujo de trabajo proporcionada por la API de paso de proceso a una sesión JCR. Por ejemplo:
 
 ```
 public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
@@ -249,101 +249,101 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 Guardar una sesión:
 
-* Dentro de un proceso de flujo de trabajo, si la variable `WorkflowSession` se está utilizando para modificar el repositorio y luego no guardar explícitamente la sesión: el flujo de trabajo guarda la sesión cuando se completa.
-* `Session.Save` no debe llamarse desde un paso de flujo de trabajo:
+* Dentro de un proceso de flujo de trabajo, si la variable `WorkflowSession` se está utilizando para modificar el repositorio y, a continuación, no guarde la sesión explícitamente: el flujo de trabajo guardará la sesión cuando se complete.
+* `Session.Save` no se debe llamar desde un paso del flujo de trabajo:
 
-   * se recomienda adaptar la sesión jcr del flujo de trabajo; then `save` no es necesario, ya que el motor de flujo de trabajo guarda la sesión automáticamente una vez que el flujo de trabajo ha terminado de ejecutarse.
-   * no se recomienda para un paso de proceso crear su propia sesión jcr.
+   * se recomienda adaptar la sesión jcr del flujo de trabajo; a continuación, `save` no es necesario, ya que el motor de flujos de trabajo guarda la sesión automáticamente una vez que el flujo de trabajo ha terminado de ejecutarse.
+   * no se recomienda que un paso de proceso cree su propia sesión jcr.
 
 * Al eliminar los ahorros innecesarios, puede reducir la sobrecarga y, por lo tanto, hacer que los flujos de trabajo sean más eficientes.
 
 >[!CAUTION]
 >
->Si, a pesar de las recomendaciones aquí, usted crea su propia sesión jcr, entonces tendrá que ser guardada.
+>Si, a pesar de las recomendaciones aquí, crea su propia sesión jcr, deberá guardarla.
 
-### Minimizar el número/alcance de lanzadores {#minimize-the-number-scope-of-launchers}
+### Minimizar el número/ámbito de los lanzadores {#minimize-the-number-scope-of-launchers}
 
-Hay un oyente que es responsable de todo el [lanzadores de flujo de trabajo](/help/sites-administering/workflows-starting.md#workflows-launchers) que están registrados:
+Hay un oyente que es responsable de todas las [iniciadores de flujo de trabajo](/help/sites-administering/workflows-starting.md#workflows-launchers) que están registrados:
 
-* Detectará cambios en todas las rutas especificadas en las propiedades de globalización de los otros lanzadores.
-* Cuando se envía un evento, el motor de flujo de trabajo evalúa cada lanzador para determinar si debe ejecutarse.
+* Escuchará los cambios en todas las rutas especificadas en las propiedades de globalización de los otros lanzadores.
+* Cuando se envía un evento, el motor de flujo de trabajo evalúa cada iniciador para determinar si debe ejecutarse.
 
-La creación de demasiados lanzadores hará que el proceso de evaluación se ejecute más lentamente.
+Si crea demasiados iniciadores, el proceso de evaluación se ejecutará más lentamente.
 
-La creación de una ruta de globalización en la raíz del repositorio en un único lanzador haría que el motor de flujo de trabajo escuchara y evaluara eventos create/modify en cada nodo del repositorio. Por este motivo, se recomienda crear únicamente lanzadores que sean necesarios y hacer que la ruta de globalización sea lo más específica posible.
+La creación de una ruta globbing en la raíz del repositorio en un único lanzador haría que el motor de flujos de trabajo escuchara y evaluara los eventos create/modify en cada nodo del repositorio. Por este motivo, se recomienda crear únicamente iniciadores necesarios y hacer que la ruta de globalización sea lo más específica posible.
 
-Debido al impacto de estos lanzadores en el comportamiento del flujo de trabajo, también puede resultar útil deshabilitar cualquier lanzador listo para usar que no esté en uso.
+Debido al impacto de estos iniciadores en el comportamiento del flujo de trabajo, también puede resultar útil deshabilitar cualquier lanzador predeterminado que no esté en uso.
 
-### Mejoras de configuración para lanzadores {#configuration-enhancements-for-launchers}
+### Mejoras en la configuración de los lanzadores {#configuration-enhancements-for-launchers}
 
-El [configuración del lanzador](/help/sites-administering/workflows-starting.md#workflows-launchers) se ha mejorado para admitir lo siguiente:
+El personalizado [configuración del lanzador](/help/sites-administering/workflows-starting.md#workflows-launchers) se ha mejorado para admitir lo siguiente:
 
-* Tener múltiples condiciones &quot;AND&quot; terminadas juntas.
-* Tener condiciones OR dentro de una sola condición.
-* Desactivar/habilitar lanzadores en función de si un indicador de característica está habilitado o deshabilitado.
-* Admita regex en condiciones de lanzador.
+* Tienen múltiples condiciones &quot;Y&quot; juntas.
+* Tener condiciones O dentro de una sola condición.
+* Deshabilitar/habilitar iniciadores en función de si un indicador de funcionalidad está habilitado o deshabilitado.
+* Compatibilidad con regex en condiciones de lanzador.
 
-### No iniciar flujos de trabajo de otros flujos de trabajo {#do-not-start-workflows-from-other-workflows}
+### No iniciar flujos de trabajo desde otros flujos de trabajo {#do-not-start-workflows-from-other-workflows}
 
-Los flujos de trabajo pueden conllevar una gran sobrecarga, tanto en términos de objetos creados en memoria como de nodos rastreados en el repositorio. Por este motivo, es mejor hacer que un flujo de trabajo realice su procesamiento en sí mismo en lugar de iniciar flujos de trabajo adicionales.
+Los flujos de trabajo pueden conllevar una cantidad significativa de sobrecarga, tanto en términos de objetos creados en memoria como de nodos rastreados en el repositorio. Por este motivo, es mejor que un flujo de trabajo realice su procesamiento dentro de sí mismo en lugar de iniciar flujos de trabajo adicionales.
 
-Un ejemplo de esto sería un flujo de trabajo que implementa un proceso empresarial en un conjunto de contenido y luego activa ese contenido. Es mejor crear un proceso de flujo de trabajo personalizado que active cada uno de estos nodos, en lugar de iniciar un **Activar contenido** para cada uno de los nodos de contenido que deben publicarse. Este método requerirá trabajo de desarrollo adicional, pero es más eficaz cuando se ejecuta que iniciar una instancia de flujo de trabajo independiente para cada activación.
+Un ejemplo de esto sería un flujo de trabajo que implementa un proceso empresarial en un conjunto de contenido y luego activa ese contenido. Es mejor crear un proceso de flujo de trabajo personalizado que active cada uno de estos nodos, en lugar de iniciar un **Activar contenido** modelo para cada uno de los nodos de contenido que deben publicarse. Este método requerirá un trabajo de desarrollo adicional, pero es más eficaz cuando se ejecuta que iniciar una instancia de flujo de trabajo independiente para cada activación.
 
-Otro ejemplo sería un flujo de trabajo que procesa varios nodos, crea un paquete de flujo de trabajo y, a continuación, activa dicho paquete. En lugar de crear el paquete y luego iniciar un flujo de trabajo independiente con el paquete como carga útil, puede cambiar la carga útil del flujo de trabajo en el paso que crea el paquete y, a continuación, llamar al paso para activar el paquete dentro del mismo modelo de flujo de trabajo.
+Otro ejemplo sería un flujo de trabajo que procese una serie de nodos, cree un paquete de flujo de trabajo y luego active dicho paquete. En lugar de crear el paquete y luego iniciar un flujo de trabajo independiente con el paquete como carga útil, puede cambiar la carga útil del flujo de trabajo en el paso que crea el paquete y luego llamar al paso para activar el paquete dentro del mismo modelo de flujo de trabajo.
 
 ### Avance de controlador {#handler-advance}
 
-Al diseñar un modelo de flujo de trabajo, tiene la opción de habilitar el avance del controlador en los pasos del flujo de trabajo. Como alternativa, puede agregar código al paso del flujo de trabajo para determinar qué paso se debe ejecutar a continuación y luego ejecutarlo.
+Al diseñar un modelo del flujo de trabajo, tiene la opción de habilitar el avance del controlador en los pasos del flujo de trabajo. Como alternativa, puede agregar código al paso del flujo de trabajo para determinar qué paso se debe ejecutar a continuación y, a continuación, ejecutarlo.
 
 Se recomienda utilizar el avance del controlador, ya que ofrece un mejor rendimiento.
 
-### Etapas del flujo de trabajo {#workflow-stages}
+### Fases del flujo de trabajo {#workflow-stages}
 
-Puede definir [etapas del flujo de trabajo](/help/sites-developing/workflows.md#workflow-stages)y, a continuación, asigne tareas/pasos a una fase de flujo de trabajo específica.
+Puede definir [fases del flujo de trabajo](/help/sites-developing/workflows.md#workflow-stages), luego asigne tareas/pasos a una fase específica del flujo de trabajo.
 
-Esta información se utiliza para mostrar el progreso de un flujo de trabajo al hacer clic en el [**Información del flujo de trabajo** de un elemento de trabajo de **Bandeja de entrada**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Los modelos de flujo de trabajo existentes se pueden editar para añadir etapas.
+Esta información se utiliza para mostrar el progreso de un flujo de trabajo al hacer clic en [**Información de flujo de trabajo** de un elemento de trabajo de la **Bandeja de entrada**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Los modelos de flujo de trabajo existentes se pueden editar para añadir fases.
 
-### Activar paso de proceso de página {#activate-page-process-step}
+### Activar etapa de proceso de página {#activate-page-process-step}
 
-La variable **Activar proceso de página** este paso activará las páginas por usted, pero no buscará automáticamente ningún recurso DAM referenciado y los activará también.
+El **Activar proceso de página** Este paso activará las páginas por usted, pero no encontrará automáticamente ningún recurso DAM al que se haga referencia ni los activará también.
 
-Esto es algo que se debe tener en cuenta si planea utilizar este paso como parte de un modelo de flujo de trabajo.
+Es algo que debe tener en cuenta si planea utilizar este paso como parte de un modelo del flujo de trabajo.
 
-### Consideraciones sobre la actualización {#upgrade-considerations}
+### Consideraciones de actualización {#upgrade-considerations}
 
-Al actualizar su instancia:
+Al actualizar la instancia:
 
-* asegúrese de que todos los modelos de flujo de trabajo personalizados estén respaldados antes de actualizar una instancia.
-* confirme que ninguno de los flujos de trabajo personalizados se almacena en la sección [ubicación](#locations):
+* asegúrese de que se realiza una copia de seguridad de todos los modelos de flujo de trabajo personalizados antes de actualizar una instancia.
+* confirme que ninguno de los flujos de trabajo personalizados se almacena en la variable [ubicación](#locations):
 
    * `/libs/settings/workflow/models/projects`
 
 >[!NOTE]
 >
->Consulte también [Reestructuración de repositorios en AEM 6.5](/help/sites-deploying/repository-restructuring.md).
+>Consulte también [AEM Reestructuración de repositorios en 6.5](/help/sites-deploying/repository-restructuring.md).
 
 ## Herramientas del sistema {#system-tools}
 
-Hay muchas herramientas del sistema disponibles para ayudar con la monitorización, el mantenimiento y la resolución de problemas de los flujos de trabajo. Todas las URL de ejemplo siguientes utilizan `localhost:4502`, pero debe estar disponible en cualquier instancia de autor ( `<hostname>:<port>`).
+Hay muchas herramientas del sistema disponibles para ayudar con la monitorización, el mantenimiento y la resolución de problemas de los flujos de trabajo. Todas las URL de ejemplo siguientes utilizan `localhost:4502`, pero debería estar disponible en cualquier instancia de autor ( `<hostname>:<port>`).
 
-### Consola de administración de trabajos de Sling {#sling-job-handling-console}
+### Consola de administración de trabajos Sling {#sling-job-handling-console}
 
 `http://localhost:4502/system/console/slingevent`
 
-La consola de Gestión de trabajos de Sling mostrará:
+La consola de administración de trabajos de Sling mostrará lo siguiente:
 
 * Estadísticas sobre el estado de los trabajos en el sistema desde el último reinicio.
-* También muestra las configuraciones de todas las colas de trabajos y proporciona un método abreviado para editarlas en el administrador de configuración.
+* También mostrará las configuraciones de todas las colas de trabajos y proporcionará un acceso directo para editarlas en el administrador de configuración.
 
 ### Herramienta Informe de flujo de trabajo {#workflow-report-tool}
 
-La herramienta de informes de flujo de trabajo se está eliminando en la versión 6.3 para evitar la degradación del rendimiento.
+La herramienta de creación de informes de flujo de trabajo se ha eliminado en la versión 6.3 para evitar una degradación del rendimiento.
 
-### Operaciones de mantenimiento del flujo de trabajo MBean {#workflow-maintenance-operations-mbean}
+### MBean de operaciones de mantenimiento de flujo de trabajo {#workflow-maintenance-operations-mbean}
 
 `http://localhost:4502/system/console/jmx/com.adobe.granite.workflow:type=Maintenance`
 
-El MBean de mantenimiento del flujo de trabajo expone varias rutinas de mantenimiento útiles, como purgar los flujos de trabajo completados y recuperar las estadísticas del flujo de trabajo.
+El MBean de mantenimiento del flujo de trabajo expone varias rutinas de mantenimiento útiles, como la depuración de flujos de trabajo completados y la recuperación de estadísticas de flujo de trabajo.
 
 ## Información adicional {#further-information}
 

@@ -10,7 +10,7 @@ discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 100%
 
@@ -196,7 +196,7 @@ Las API de facturación no tienen en cuenta el número de páginas, la longitud 
    <td><a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>Convierte un conjunto de documentos XDP y PDF a un conjunto de formatos de archivo PostScript (PS), Printer Command Language (PCL) y ZPL. </td>
    <td>Documentos procesados</td>
-   <td> La API generatePDFOutputBatch combina una plantilla de formulario con un registro y genera un PDF. Al procesar un lote de registros, el servicio de informes de transacciones contabiliza cada registro como una representación de PDF independiente. <br> Puede usar el indicador <a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> para combinar varias representaciones en un solo archivo PDF. Independientemente del estado del indicador, el servicio cuenta cada registro como una representación de PDF independiente. </td>
+   <td> El API generatePDFOutputBatch combina una plantilla de formulario con un registro y genera un PDF. Al procesar un lote de registros, el servicio de informes de transacciones contabiliza cada registro como una representación de PDF independiente. <br> Puede usar el indicador <a href="https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> para combinar varias representaciones en un solo archivo PDF. Independientemente del estado del indicador, el servicio cuenta cada registro como una representación de PDF independiente. </td>
   </tr>
  </tbody>
 </table>

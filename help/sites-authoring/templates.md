@@ -45,7 +45,7 @@ Para obtener información detallada acerca de cómo funcionan las plantillas edi
 
 >[!CAUTION]
 >
->Páginas y plantillas creadas con la variable **Consola Plantillas** no están pensados para utilizarse con la IU clásica y este uso no es compatible.
+>Páginas y plantillas creadas con **Consola de plantillas** no están pensados para utilizarse con la IU clásica y este uso no es compatible.
 
 ## Antes de comenzar {#before-you-start}
 
@@ -110,7 +110,7 @@ Actualmente, AEM ofrece dos tipos básicos de plantillas:
    * Las [proporcionan los desarrolladores](/help/sites-developing/page-templates-static.md), por lo que los autores no las pueden crear ni editar.
    * Se copian para crear la página nueva, pero no existe ninguna conexión dinámica después de esto (aunque el nombre de plantilla se registra a título informativo).
    * Utilice el [modo de diseño](/help/sites-authoring/default-components-designmode.md) para mantener las propiedades del diseño.
-   * Como editar plantillas estáticas es tarea exclusiva de un desarrollador, consulte el documento para desarrolladores [Plantillas de página: estáticas](/help/sites-developing/page-templates-static.md) para obtener más información.
+   * Como la edición de plantillas estáticas es una tarea exclusiva de un desarrollador, consulte el documento para desarrolladores [Plantillas de página: estáticas](/help/sites-developing/page-templates-static.md) para obtener más información.
 
 Por definición, la consola y el editor de plantillas solo permiten la creación y edición de plantillas editables. Por tanto, el documento se centra exclusivamente en plantillas editables.
 
@@ -147,7 +147,7 @@ Al crear una nueva plantilla editable, realiza estas acciones:
 
 >[!CAUTION]
 >
->No introduzca nunca en una plantilla información que deba [internacionalizarse. ](/help/sites-developing/i18n.md) Para fines de internalización, la variable [características de localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es) se recomienda.
+>No introduzca nunca en una plantilla información que deba [internacionalizarse. ](/help/sites-developing/i18n.md) Para fines de internalización, la variable [Funciones de localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es) se recomiendan.
 
 ### Creación de una carpeta de plantillas: administrador {#creating-a-template-folder-admin}
 
@@ -604,7 +604,7 @@ Aunque todo el contenido creado en el modo de **Estructura** sea visible en el *
 >
 >El contenido inicial está diseñado para preparar componentes y el diseño de página que sirve como punto de partida para crear el contenido. No se prevé que el contenido real permanezca tal cual. Por este motivo, no se puede traducir el contenido inicial.
 >
->Si necesita incluir texto traducible en la plantilla, como en encabezados o pies de página, puede utilizar las funciones de [localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>Si necesita incluir texto traducible en la plantilla, como en encabezados o pies de página, puede utilizar las funciones de [localización de los componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=es).
 
 ### Edición de una plantilla: diseño, autor de plantillas {#editing-a-template-layout-template-author}
 
@@ -622,7 +622,7 @@ El diseño de la página, incluidas las bibliotecas del lado del cliente y las p
 
 Para acceder al cuadro de diálogo **Diseño de página**:
 
-1. En el **Editor de plantillas**, seleccione **Información de la página** en la barra de herramientas y, a continuación, **Diseño de página** para abrir el cuadro de diálogo.
+1. Desde el **Editor de plantillas**, seleccione **Información de página** en la barra de herramientas, **Diseño de página** para abrir el cuadro de diálogo.
 1. El cuadro de diálogo **Diseño de página** se abre y se divide en dos secciones:
 
    * En la mitad izquierda, se definen las [políticas de la página](/help/sites-authoring/templates.md#page-policies)

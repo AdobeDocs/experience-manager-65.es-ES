@@ -110,7 +110,7 @@ Puede hacer lo siguiente:
 
 ![wf-91](assets/wf-91.png)
 
-### Bandeja de entrada: Configuración {#inbox-view-settings}
+### Bandeja de entrada - Configuración {#inbox-view-settings}
 
 Puede definir la configuración para ambas vistas (lista y calendario):
 
@@ -133,35 +133,35 @@ Puede definir la configuración para ambas vistas (lista y calendario):
 
    ![wf-83](assets/inbox-settings.png)
 
-### Bandeja de entrada: Control de administración {#inbox-admin-control}
+### Bandeja de entrada - Control de administración {#inbox-admin-control}
 
-La opción Control de administración permite a los administradores:
+La opción Admin Control permite a los administradores lo siguiente:
 
-* Personalizar las columnas de la bandeja de entrada AEM
+* AEM Personalizar las columnas de la bandeja de entrada
 
-* Personalización del texto y el logotipo del encabezado
+* Personalizar el texto y el logotipo del encabezado
 
 * Controlar la visualización de los vínculos de navegación disponibles en el encabezado
 
 La opción Control de administración solo está visible para los miembros del `administrators` o `workflow-administrators` grupo.
 
-* **Personalización de columnas**: Personalice una Bandeja de entrada AEM para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
-   * **Agregar columna**: Seleccione una columna para agregar en AEM Bandeja de entrada.
-   * **Editar columna**: Pase el ratón sobre el título de la columna y pulse ![editar](assets/edit.svg) para introducir un nombre para mostrar de columna.
-   * **Eliminar columna**: Toque . ![delete](assets/delete_updated.svg) para eliminar la columna de AEM Bandeja de entrada.
-   * **Mover columna**: Arrastre el ![move](assets/move_updated.svg) para mover una columna a una nueva posición en AEM Bandeja de entrada.
+* **Personalización de columnas** AEM : personalice una bandeja de entrada de para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
+   * **Agregar columna** AEM : seleccione una columna para añadirla a la bandeja de entrada de la.
+   * **Editar columna**: pase el ratón sobre el título de la columna y pulse ![editar](assets/edit.svg) para introducir un nombre para mostrar en la columna.
+   * **Eliminar columna**: pulse el botón ![eliminar](assets/delete_updated.svg) AEM para eliminar la columna de la bandeja de entrada de la.
+   * **Mover columna**: arrastre el ![mover](assets/move_updated.svg) AEM para mover una columna a una nueva posición en la bandeja de entrada de la bandeja de entrada de la.
 
    ![admin-control](assets/admin-control-column-customize.png)
 
-* **Personalización de promoción de la marca**
+* **Personalizar la promoción de la marca**
 
-   * **Personalizar texto del encabezado:** Especifique el texto que se mostrará en el encabezado para reemplazar el valor predeterminado **Adobe Experience Manager** texto.
+   * **Personalizar el texto del encabezado:** Especifique el texto que se mostrará en el encabezado para reemplazar el predeterminado **Adobe Experience Manager** texto.
 
-   * **Personalizar logotipo:** Especifique la imagen que se mostrará en el encabezado como logotipo. Cargue una imagen en Digital Asset Management (DAM) y consulte esa imagen en el campo .
+   * **Personalizar logotipo:** Especifique la imagen que se mostrará en el encabezado como logotipo. Cargue una imagen en Digital Asset Management (DAM) y consulte esa imagen en el campo.
 
 * **Navegación del usuario**
-   * **Ocultar opciones de navegación:** Seleccione esta opción para ocultar las opciones de navegación disponibles en el encabezado. Las opciones de navegación incluyen vínculos a otras soluciones, vínculos de ayuda y las opciones de creación disponibles al pulsar el logotipo o el texto de Adobe Experience Manager.
-* **Guardar:** Toque o haga clic en esta opción para guardar la configuración.
+   * **Ocultar opciones de navegación:** Seleccione esta opción para ocultar las opciones de navegación disponibles en el encabezado. Las opciones de navegación incluyen vínculos a otras soluciones de, vínculos de ayuda y las opciones de creación disponibles al pulsar el logotipo o el texto de Adobe Experience Manager.
+* **Guardar:** Pulse o haga clic en esta opción para guardar la configuración.
 
 ## Acción en un elemento {#taking-action-on-an-item}
 
@@ -233,7 +233,7 @@ Desde la bandeja de entrada, puede crear tareas:
 
    * **Avanzado**
 
-      * **Nombre**: se utilizará para formar la dirección URL; si está en blanco, se basará en la variable **Título**.
+      * **Nombre**: se utilizará para formar la dirección URL; si está en blanco, se basará en **Título**.
 
    ![wf-87](assets/wf-87.png)
 

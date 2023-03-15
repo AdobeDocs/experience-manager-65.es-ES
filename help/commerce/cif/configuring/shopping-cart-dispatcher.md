@@ -18,5 +18,5 @@ Los [componentes principales del CIF de AEM](https://github.com/adobe/aem-core-c
 Puede encontrar más información sobre este tema en los siguientes recursos:
 
 - [Carro de compras](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
-- [AEM Dispatcher con proxy Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
+- [AEM Dispatcher con el proxy de Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
 - [Docker Hub](https://hub.docker.com/)

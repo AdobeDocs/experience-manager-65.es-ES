@@ -1,6 +1,6 @@
 ---
 title: Trabajar con fragmentos de contenido
-description: Descubra cómo los fragmentos de contenido en Adobe Experience Manager (AEM) le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas, lo que resulta ideal para una entrega sin periféricos.
+description: Descubra cómo los fragmentos de contenido en Adobe Experience Manager AEM () le permiten diseñar, crear, depurar y utilizar contenido independiente de las páginas, lo que resulta ideal para una entrega sin encabezado.
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 # Trabajar con fragmentos de contenido {#working-with-content-fragments}
 
-Con Adobe Experience Manager (AEM), los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de la página](/help/sites-authoring/content-fragments.md) Permiten preparar contenido listo para usar en varias ubicaciones o en varios canales, lo que resulta ideal para una entrega sin periféricos.
+Con Adobe Experience Manager AEM (), los fragmentos de contenido le permiten diseñar, crear, depurar y [publicar contenido independiente de las páginas](/help/sites-authoring/content-fragments.md) Permiten preparar contenido listo para usar en varias ubicaciones/en varios canales, lo que resulta ideal para la entrega sin encabezado.
 
 Los fragmentos de contenido incluyen contenido estructurado:
 
@@ -43,7 +43,7 @@ Esta y las siguientes páginas tratan sobre las tareas para crear, configurar, m
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md): uso de la sintaxis de markdown para el fragmento
 * [Uso de contenido asociado](/help/assets/content-fragments/content-fragments-assoc-content.md): añadir contenido asociado
 * [Metadatos, propiedades del fragmento](/help/assets/content-fragments/content-fragments-metadata.md): visualización y edición de las propiedades del fragmento
-* Uso [Fragmentos de contenido, junto con GraphQL, para entregar contenido](/help/assets/content-fragments/content-fragments-graphql.md) para usar en sus aplicaciones. Para ayudarle con esto, puede obtener una vista previa [Salida JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
+* Uso [Fragmentos de contenido, junto con GraphQL, para entregar contenido](/help/assets/content-fragments/content-fragments-graphql.md) para su uso en aplicaciones. Para ayudarle con esto, puede obtener una vista previa [Salida JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ Estos fragmentos de contenido se pueden ensamblar para ofrecer experiencias en u
 
 >[!NOTE]
 >
->Antes de AEM 6.3, los fragmentos de contenido se creaban con el uso de plantillas en lugar de modelos. Las plantillas ya no están disponibles para crear nuevos fragmentos, pero los fragmentos creados con una plantilla de este tipo siguen siendo compatibles.
+>AEM Antes de la versión 6.3, los fragmentos de contenido se creaban con el uso de plantillas en lugar de modelos. Las plantillas ya no están disponibles para crear nuevos fragmentos, pero todos los fragmentos creados con una plantilla de este tipo siguen siendo compatibles.
 
 ## Fragmentos de contenido y servicios de contenido {#content-fragments-and-content-services}
 
@@ -126,7 +126,7 @@ Los fragmentos de contenido son lo siguiente:
 
 * Se almacenan como **Recursos**:
 
-   * Los fragmentos de contenido (y sus variaciones) se pueden crear y mantener a partir del **Recursos** consola.
+   * Los fragmentos de contenido (y sus variaciones) se pueden crear y mantener desde **Assets** consola.
    * Se crean y editan en el editor de fragmentos de contenido.
 
 * Se usan en el [editor de páginas mediante el componente Fragmento de contenido](/help/sites-authoring/content-fragments.md) (componente de referencia):

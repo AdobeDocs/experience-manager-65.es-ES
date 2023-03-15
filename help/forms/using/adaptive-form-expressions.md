@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2746'
 ht-degree: 100%
 

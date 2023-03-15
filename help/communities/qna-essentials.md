@@ -1,5 +1,5 @@
 ---
-title: Aspectos básicos de la garantía de calidad
+title: Aspectos básicos de QnA
 seo-title: QnA Essentials
 description: Función de foro de preguntas y respuestas
 seo-description: Questions and answers forum feature
@@ -17,11 +17,11 @@ ht-degree: 2%
 
 ---
 
-# Aspectos básicos de la garantía de calidad {#qna-essentials}
+# Aspectos básicos de QnA {#qna-essentials}
 
-Esta página proporciona la información esencial para trabajar con la función de foro de preguntas y respuestas (QnA).
+Esta página proporciona la información esencial para trabajar con la función de foro preguntas y respuestas (QnA).
 
-## Elementos esenciales para el cliente {#essentials-for-client-side}
+## Essentials para el lado del cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -30,11 +30,11 @@ Esta página proporciona la información esencial para trabajar con la función 
    <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">inclusible</a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component">incluible</a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md">clientllibs</a></td>
+   <td> <a href="clientlibs.md">clientlibs</a></td>
    <td>cq.ckeditor<br /> cq.social.hbs.vote<br /> cq.social.hbs.qna</td>
   </tr>
   <tr>
@@ -54,9 +54,9 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 * [Personalizaciones del lado del cliente](client-customize.md)
 
-## Elementos esenciales para el servidor {#essentials-for-server-side}
+## Essentials para servidor {#essentials-for-server-side}
 
-* [API QnA](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [API de QnA](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
 * [Puntos finales de control de calidad](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
@@ -64,20 +64,20 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 ### Función Preguntas y respuestas {#qna-function}
 
-Una estructura de sitio de la comunidad que incluye el [Función QnA](functions.md#qna-function) tendrá configurado un `QnA` , así como la configuración que afecta a la moderación y al etiquetado. La función QnA admite la identificación de un [grupo de usuarios miembro privilegiado](users.md#privileged-members-group).
+Una estructura de sitio de la comunidad que incluye [Función QnA](functions.md#qna-function) tendrá un configurado `QnA` , así como los ajustes que afectan a la moderación y al etiquetado. La función de control de calidad admite la identificación de [grupo de usuarios miembros privilegiados](users.md#privileged-members-group).
 
 ### Acceso a las publicaciones del foro de control de calidad (UGC) {#accessing-qna-forum-posts-ugc}
 
-UGC debe moderarse utilizando uno de los métodos estándar de moderación.
+La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir del AEM 6.1 Comunidades, se utilizará un [tienda común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Información general del proveedor de recursos de almacenamiento](srp.md) : introducción y descripción general del uso del repositorio.
-* [Elementos esenciales de SRP y UGC](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
+* [Resumen del proveedor de recursos de almacenamiento](srp.md) - introducción y descripción general del uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - directrices de codificación.
 * [Refactorización de SocialUtils](socialutils.md) : asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales.

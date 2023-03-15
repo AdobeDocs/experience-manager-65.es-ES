@@ -1,7 +1,7 @@
 ---
 title: Creación dinámica de documentos DDX
 seo-title: Dynamically Creating DDX Documents
-description: Cree un documento DDX de forma dinámica mediante la API de Java y la API de servicio web. La creación dinámica de un documento DDX permite utilizar valores en el documento DDX obtenidos durante la ejecución.
+description: Cree un documento DDX de forma dinámica mediante la API de Java y la API de servicio web. La creación dinámica de un documento DDX permite utilizar valores en el documento DDX que se obtienen durante el tiempo de ejecución.
 seo-description: Create a DDX document dynamically using the Java API and Web Service API. Dynamically creating a DDX document enables you to use values in the DDX document that are obtained during run-time.
 uuid: b73e8069-6c9f-4517-a0ae-f3d503191d2d
 contentOwner: admin
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 # Creación dinámica de documentos DDX {#dynamically-creating-ddx-documents}
 
-**Los ejemplos y ejemplos de este documento son solo para AEM Forms en un entorno JEE.**
+**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-Puede crear dinámicamente un documento DDX que pueda utilizarse para realizar una operación Assembler. La creación dinámica de un documento DDX permite utilizar valores en el documento DDX obtenidos durante la ejecución. Para crear dinámicamente un documento DDX, utilice clases que pertenezcan al lenguaje de programación que esté utilizando. Por ejemplo, si está desarrollando la aplicación cliente mediante Java, utilice clases que pertenezcan al grupo `org.w3c.dom.*`paquete. Del mismo modo, si utiliza Microsoft .NET, utilice clases que pertenezcan a la variable `System.Xml` espacio de nombres.
+Puede crear dinámicamente un documento DDX que se pueda utilizar para realizar una operación de Assembler. La creación dinámica de un documento DDX permite utilizar valores en el documento DDX que se obtienen durante el tiempo de ejecución. Para crear dinámicamente un documento DDX, utilice clases que pertenezcan al lenguaje de programación que esté utilizando. Por ejemplo, si está desarrollando la aplicación cliente utilizando Java, utilice clases que pertenezcan a `org.w3c.dom.*`paquete. Del mismo modo, si utiliza Microsoft .NET, utilice clases que pertenezcan a la variable `System.Xml` namespace.
 
-Para poder pasar el documento DDX al servicio Assembler, convierta el XML desde un `org.w3c.dom.Document` instancia a un `com.adobe.idp.Document` instancia. Si utiliza servicios web, convierta el XML del tipo de datos utilizado para crear el XML (por ejemplo, `XmlDocument`) a `BLOB` instancia.
+Antes de poder pasar el documento DDX al servicio Assembler, convierta el XML de un `org.w3c.dom.Document` instancia a `com.adobe.idp.Document` ejemplo. Si utiliza servicios web, convierta el XML del tipo de datos utilizado para crear el XML (por ejemplo, `XmlDocument`) a un `BLOB` ejemplo.
 
-Para esta discusión, supongamos que el siguiente documento DDX se crea de forma dinámica.
+Para esta discusión, suponga que el siguiente documento DDX se crea dinámicamente.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8"?>
@@ -38,7 +38,7 @@ Para esta discusión, supongamos que el siguiente documento DDX se crea de forma
  </DDX>
 ```
 
-Este documento DDX desmonta un documento PDF. Se recomienda que esté familiarizado con el desmontaje de documentos PDF.
+Este documento DDX desmonta un documento de PDF. Se recomienda estar familiarizado con el desmontaje de documentos del PDF.
 
 >[!NOTE]
 >
@@ -46,237 +46,237 @@ Este documento DDX desmonta un documento PDF. Se recomienda que esté familiariz
 
 >[!NOTE]
 >
->Para obtener más información sobre un documento DDX, consulte [Servicio de ensamblador y referencia DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Para obtener más información sobre un documento DDX, consulte [Servicio Assembler y referencia DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Resumen de los pasos {#summary-of-steps}
 
-Para desmontar un documento PDF utilizando un documento DDX creado dinámicamente, realice las siguientes tareas:
+Para desmontar un documento de PDF mediante un documento DDX creado dinámicamente, realice las siguientes tareas:
 
 1. Incluir archivos de proyecto.
-1. Cree un cliente de ensamblador de PDF.
+1. Cree un cliente de PDF Assembler.
 1. Cree el documento DDX.
 1. Convierta el documento DDX.
-1. Establezca las opciones de tiempo de ejecución.
-1. Desmonte el documento del PDF.
-1. Guarde los documentos de PDF desmontados.
+1. Establecer opciones en tiempo de ejecución.
+1. Desmontar el documento del PDF.
+1. Guarde los documentos del PDF desmontados.
 
 **Incluir archivos de proyecto**
 
-Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
+Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente con Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
 Los siguientes archivos JAR deben agregarse a la ruta de clase del proyecto:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-Utilities.jar (obligatorio si AEM Forms está implementado en JBoss)
+* adobe-utilities.jar (requerido si AEM Forms está implementado en JBoss)
 * jbossall-client.jar (requerido si AEM Forms está implementado en JBoss)
 
-**Creación de un cliente de ensamblador de PDF**
+**Crear un cliente de PDF Assembler**
 
-Antes de realizar una operación Assembler mediante programación, cree un cliente de servicio Assembler.
+Para poder realizar mediante programación una operación de Assembler, cree un cliente de servicio Assembler.
 
-**Crear el documento DDX**
+**Creación del documento DDX**
 
-Cree un documento DDX utilizando el lenguaje de programación que está utilizando. Para crear un documento DDX que desmonte un documento PDF, asegúrese de que contiene el `PDFsFromBookmarks` elemento. Convertir el tipo de datos utilizado para crear el documento DDX a un `com.adobe.idp.Document` instancia si utiliza la API de Java. Si utiliza servicios web, convierta el tipo de datos en un `BLOB` instancia.
+Cree un documento DDX utilizando el lenguaje de programación que está utilizando. Para crear un documento DDX que desensambla un documento de PDF, asegúrese de que contiene el `PDFsFromBookmarks` Elemento. Convierta el tipo de datos utilizado para crear el documento DDX en un `com.adobe.idp.Document` instancia de si utiliza la API de Java. Si utiliza servicios web, convierta el tipo de datos a un `BLOB` ejemplo.
 
-**Convertir el documento DDX**
+**Conversión del documento DDX**
 
-Un documento DDX que se crea mediante el uso de `org.w3c.dom` las clases deben convertirse en `com.adobe.idp.Document` objeto. Para realizar esta tarea al utilizar la API de Java, utilice clases de transformación XML de Java. Si utiliza servicios web, convierta el documento DDX a un `BLOB` objeto.
+Un documento DDX creado mediante `org.w3c.dom` las clases deben convertirse en un `com.adobe.idp.Document` objeto. Para realizar esta tarea al utilizar la API de Java, utilice las clases de transformación XML de Java. Si utiliza servicios web, convierta el documento DDX en un `BLOB` objeto.
 
-**Haga referencia a un documento del PDF para desmontarlo**
+**Hacer referencia a un documento de PDF para desmontar**
 
-Para desmontar un documento de PDF, haga referencia a un archivo de PDF que representa el documento de PDF que se va a desmontar. Cuando se pasa al servicio Assembler, se devuelve un documento PDF independiente para cada marcador de nivel 1 del documento.
+Para desmontar un documento de PDF, haga referencia a un fichero de PDF que represente el documento de PDF que se va a desmontar. Cuando se pasa al servicio Assembler, se devuelve un documento de PDF independiente para cada marcador de nivel 1 del documento.
 
-**Establecer opciones de tiempo de ejecución**
+**Establecer opciones en tiempo de ejecución**
 
-Puede establecer opciones en tiempo de ejecución que controlan el comportamiento del servicio Assembler mientras realiza un trabajo. Por ejemplo, puede definir una opción que indique al servicio Assembler que continúe procesando un trabajo si se encuentra un error. Para configurar las opciones de tiempo de ejecución, utilice un `AssemblerOptionSpec` objeto.
+Puede establecer opciones en tiempo de ejecución que controlen el comportamiento del servicio Assembler mientras realiza un trabajo. Por ejemplo, puede establecer una opción que indique al servicio Assembler que continúe procesando un trabajo si se produce un error. Para establecer las opciones en tiempo de ejecución, se utiliza un `AssemblerOptionSpec` objeto.
 
 **Desmontar el documento del PDF**
 
-Desmonte el documento del PDF invocando el `invokeDDX` operación. Pase el documento DDX que se creó dinámicamente. El servicio Assembler devuelve documentos PDF desmontados dentro de un objeto de colección.
+Desmontar el documento del PDF invocando el `invokeDDX` operación. Pase el documento DDX creado dinámicamente. El servicio Assembler devuelve documentos de PDF desensamblados dentro de un objeto de colección.
 
-**Guarde los documentos del PDF desmontados**
+**Guardar los documentos de PDF desensamblados**
 
-Todos los documentos PDF desmontados se devuelven dentro de un objeto de colección. Itere a través del objeto de colección y guarde cada documento de PDF como archivo de PDF.
+Todos los documentos de PDF desensamblados se devuelven dentro de un objeto de colección. Recorra en iteración el objeto de colección y guarde cada documento de PDF como un archivo de PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Creación dinámica de un documento DDX mediante la API de Java](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-java-api)
+[Crear dinámicamente un documento DDX mediante la API de Java](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-java-api)
 
-[Creación dinámica de un documento DDX mediante la API de servicio web](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-web-service-api)
+[Crear dinámicamente un documento DDX mediante la API de servicio web](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-web-service-api)
 
-[Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 [Desmontaje programático de documentos PDF](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)
 
-## Creación dinámica de un documento DDX mediante la API de Java {#dynamically-create-a-ddx-document-using-the-java-api}
+## Crear dinámicamente un documento DDX mediante la API de Java {#dynamically-create-a-ddx-document-using-the-java-api}
 
-Cree dinámicamente un documento DDX y desmonte un documento PDF utilizando la API de servicio del ensamblador (Java):
+Cree de forma dinámica un documento DDX y desmonte un documento de PDF mediante la API del servicio Assembler (Java):
 
 1. Incluir archivos de proyecto.
 
-   Incluya archivos JAR del cliente, como adobe-assembler-client.jar, en la ruta de clase de su proyecto Java.
+   Incluya archivos JAR de cliente, como adobe-assembler-client.jar, en la ruta de clase del proyecto Java.
 
-1. Cree un cliente de ensamblador de PDF.
+1. Cree un cliente de PDF Assembler.
 
-   * Cree un `ServiceClientFactory` objeto que contiene propiedades de conexión.
-   * Cree un `AssemblerServiceClient` usando su constructor y pasando el `ServiceClientFactory` objeto.
+   * Crear un `ServiceClientFactory` que contiene las propiedades de conexión.
+   * Crear un `AssemblerServiceClient` usando su constructor y pasando el objeto `ServiceClientFactory` objeto.
 
 1. Cree el documento DDX.
 
-   * Creación de un Java `DocumentBuilderFactory` llamando al `DocumentBuilderFactory` class&quot; `newInstance` método.
-   * Creación de un Java `DocumentBuilder` llamando al `DocumentBuilderFactory` del objeto `newDocumentBuilder` método.
-   * Llame a la función `DocumentBuilder` del objeto `newDocument` para crear una instancia de `org.w3c.dom.Document` objeto.
-   * Cree el elemento raíz del documento DDX invocando la variable `org.w3c.dom.Document` del objeto `createElement` método. Este método crea un `Element` objeto que representa el elemento raíz. Pase un valor de cadena que represente el nombre del elemento a la variable `createElement` método. Conversión del valor devuelto a `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `setAttribute` método. Finalmente, anexe el elemento al elemento del encabezado llamando al elemento del encabezado `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
+   * Crear un Java `DocumentBuilderFactory` llamando a la función `DocumentBuilderFactory` class&quot; `newInstance` método.
+   * Crear un Java `DocumentBuilder` llamando a la función `DocumentBuilderFactory` del objeto `newDocumentBuilder` método.
+   * Llame a `DocumentBuilder` del objeto `newDocument` método para crear una instancia de `org.w3c.dom.Document` objeto.
+   * Cree el elemento raíz del documento DDX invocando el `org.w3c.dom.Document` del objeto `createElement` método. Este método crea un `Element` que representa el elemento raíz. Pase un valor de cadena que represente el nombre del elemento a `createElement` método. Convierta el valor devuelto en `Element`. A continuación, establezca un valor para el elemento secundario llamando a su `setAttribute` método. Finalmente, anexe el elemento al elemento header llamando al de `appendChild` y pase el objeto de elemento secundario como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
       ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
-   * Cree la variable `PDFsFromBookmarks` llamando al `Document` del objeto `createElement` método. Pase un valor de cadena que represente el nombre del elemento a la variable `createElement` método. Conversión del valor devuelto a `Element`. Establezca un valor para la variable `PDFsFromBookmarks` llamando a su `setAttribute` método. Anexe la variable `PDFsFromBookmarks` al `DDX` llamando al elemento DDX de `appendChild` método. Pase el `PDFsFromBookmarks` objeto element como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
+   * Cree el `PDFsFromBookmarks` llamando a la variable `Document` del objeto `createElement` método. Pase un valor de cadena que represente el nombre del elemento a `createElement` método. Convierta el valor devuelto en `Element`. Establezca un valor para `PDFsFromBookmarks` llamando a su elemento `setAttribute` método. Adjuntar el `PDFsFromBookmarks` al elemento `DDX` llamando al elemento DDX de `appendChild` método. Pase el `PDFsFromBookmarks` objeto element como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
       ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
 
-   * Cree un `PDF` llamando al `Document` del objeto `createElement` método. Pase un valor de cadena que represente el nombre del elemento. Conversión del valor devuelto a `Element`. Establezca un valor para la variable `PDF` llamando a su `setAttribute` método. Anexe la variable `PDF` al `PDFsFromBookmarks` llamando al `PDFsFromBookmarks` del elemento `appendChild` método. Pase el `PDF` objeto element como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
+   * Crear un `PDF` llamando a la variable `Document` del objeto `createElement` método. Pase un valor de cadena que represente el nombre del elemento. Convierta el valor devuelto en `Element`. Establezca un valor para `PDF` llamando a su elemento `setAttribute` método. Adjuntar el `PDF` al elemento `PDFsFromBookmarks` llamando a la variable `PDFsFromBookmarks` del elemento `appendChild` método. Pase el `PDF` objeto element como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
       ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
 
 1. Convierta el documento DDX.
 
-   * Cree un `javax.xml.transform.Transformer` invocando el objeto `javax.xml.transform.Transformer` estático del objeto `newInstance` método.
-   * Cree un `Transformer` invocando el objeto `TransformerFactory` del objeto `newTransformer` método.
-   * Cree un `ByteArrayOutputStream` usando su constructor.
-   * Cree un `javax.xml.transform.dom.DOMSource` usando su constructor. Pase el `org.w3c.dom.Document` que representa el documento DDX.
-   * Cree un `javax.xml.transform.dom.DOMSource` usando su constructor y pasando el `ByteArrayOutputStream` objeto.
-   * Rellenar el Java `ByteArrayOutputStream` invocando el objeto `javax.xml.transform.Transformer` del objeto `transform` método. Pase el `javax.xml.transform.dom.DOMSource` y `javax.xml.transform.stream.StreamResult` objetos.
-   * Cree una matriz de bytes y asigne el tamaño de la variable `ByteArrayOutputStream` a la matriz de bytes.
-   * Rellene la matriz de bytes invocando la variable `ByteArrayOutputStream` del objeto `toByteArray` método.
-   * Cree un `com.adobe.idp.Document` usando su constructor y pasando la matriz de bytes.
+   * Crear un `javax.xml.transform.Transformer` invocando el objeto de `javax.xml.transform.Transformer` estático del objeto `newInstance` método.
+   * Crear un `Transformer` invocando el objeto de `TransformerFactory` del objeto `newTransformer` método.
+   * Crear un `ByteArrayOutputStream` mediante su constructor.
+   * Crear un `javax.xml.transform.dom.DOMSource` mediante su constructor. Pase el `org.w3c.dom.Document` que representa el documento DDX.
+   * Crear un `javax.xml.transform.dom.DOMSource` usando su constructor y pasando el objeto `ByteArrayOutputStream` objeto.
+   * Rellenar el Java `ByteArrayOutputStream` invocando el objeto de `javax.xml.transform.Transformer` del objeto `transform` método. Pase el `javax.xml.transform.dom.DOMSource` y el `javax.xml.transform.stream.StreamResult` objetos.
+   * Cree una matriz de bytes y asigne el tamaño del `ByteArrayOutputStream` a la matriz de bytes.
+   * Rellene la matriz de bytes invocando `ByteArrayOutputStream` del objeto `toByteArray` método.
+   * Crear un `com.adobe.idp.Document` mediante su constructor y pasando la matriz de bytes.
 
-1. Haga referencia a un documento del PDF para desmontarlo.
+1. Hacer referencia a un documento de PDF para desmontar.
 
-   * Cree un `java.util.Map` objeto que se utiliza para almacenar documentos del PDF de entrada mediante un `HashMap` constructor.
-   * Cree un `java.io.FileInputStream` utilizando su constructor y pasando la ubicación del documento PDF para desmontarlo.
-   * Cree un `com.adobe.idp.Document` objeto. Pase el `java.io.FileInputStream` objeto que contiene el documento PDF que se va a desmontar.
-   * Agregue una entrada al `java.util.Map` invocando su `put` y pasando los siguientes argumentos:
+   * Crear un `java.util.Map` objeto que se utiliza para almacenar documentos del PDF de entrada mediante un `HashMap` constructor.
+   * Crear un `java.io.FileInputStream` utilizando su constructor y pasando la ubicación del documento de PDF que se va a desmontar.
+   * Crear un `com.adobe.idp.Document` objeto. Pase el `java.io.FileInputStream` que contiene el documento de PDF que se va a desmontar.
+   * Añada una entrada a `java.util.Map` invocando su objeto `put` y pasando los siguientes argumentos:
 
-      * Un valor de cadena que representa el nombre de la clave. Este valor debe coincidir con el valor del elemento de origen del PDF especificado en el documento DDX. (En el documento DDX que se crea dinámicamente, el valor es `AssemblerResultPDF.pdf`.)
-      * A `com.adobe.idp.Document` objeto que contiene el documento PDF que se va a desmontar.
+      * Valor de cadena que representa el nombre de clave. Este valor debe coincidir con el valor del elemento de origen PDF especificado en el documento DDX. (En el documento DDX creado dinámicamente, el valor es `AssemblerResultPDF.pdf`.)
+      * A `com.adobe.idp.Document` que contiene el documento de PDF que se va a desmontar.
 
-1. Establezca las opciones de tiempo de ejecución.
+1. Establecer opciones en tiempo de ejecución.
 
-   * Cree un `AssemblerOptionSpec` que almacena opciones en tiempo de ejecución mediante su constructor.
-   * Configure las opciones en tiempo de ejecución para satisfacer los requisitos empresariales invocando un método que pertenece al `AssemblerOptionSpec` objeto. Por ejemplo, para solicitar al servicio Assembler que continúe procesando un trabajo cuando se produzca un error, invoque la función `AssemblerOptionSpec` del objeto `setFailOnError` método y pase `false`.
+   * Crear un `AssemblerOptionSpec` que almacena las opciones en tiempo de ejecución mediante su constructor.
+   * Establezca opciones en tiempo de ejecución para satisfacer sus necesidades empresariales invocando un método que pertenezca a `AssemblerOptionSpec` objeto. Por ejemplo, para indicar al servicio Assembler que continúe procesando un trabajo cuando se produzca un error, invoque el `AssemblerOptionSpec` del objeto `setFailOnError` método y pase `false`.
 
-1. Desmonte el documento del PDF.
+1. Desmontar el documento del PDF.
 
-   Invocar el `AssemblerServiceClient` del objeto `invokeDDX` y pase los siguientes valores:
+   Invoque el `AssemblerServiceClient` del objeto `invokeDDX` y pasar los siguientes valores:
 
-   * A `com.adobe.idp.Document` objeto que representa el documento DDX creado dinámicamente
-   * A `java.util.Map` objeto que contiene el documento del PDF que se va a desmontar
-   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica las opciones de tiempo de ejecución, incluyendo la fuente predeterminada y el nivel de registro de trabajo
+   * A `com.adobe.idp.Document` que representa el documento DDX creado dinámicamente
+   * A `java.util.Map` que contiene el documento de PDF que se va a desmontar
+   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica las opciones en tiempo de ejecución, incluida la fuente predeterminada y el nivel de registro de trabajo
 
-   La variable `invokeDDX` el método devuelve un `com.adobe.livecycle.assembler.client.AssemblerResult` que contiene los documentos de PDF desmontados y cualquier excepción que se haya producido.
+   El `invokeDDX` El método devuelve un valor `com.adobe.livecycle.assembler.client.AssemblerResult` que contiene los documentos de PDF desensamblados y las excepciones que se han producido.
 
-1. Guarde los documentos de PDF desmontados.
+1. Guarde los documentos del PDF desmontados.
 
    Para obtener los documentos de PDF desmontados, realice las siguientes acciones:
 
-   * Invocar el `AssemblerResult` del objeto `getDocuments` método. Este método devuelve un `java.util.Map` objeto.
-   * Iterar a través de la variable `java.util.Map` hasta que encuentre el resultado `com.adobe.idp.Document` objeto.
-   * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` método para extraer el documento PDF.
+   * Invoque el `AssemblerResult` del objeto `getDocuments` método. Este método devuelve un `java.util.Map` objeto.
+   * Itere a través de `java.util.Map` hasta que encuentre el resultado `com.adobe.idp.Document` objeto.
+   * Invoque el `com.adobe.idp.Document` del objeto `copyToFile` para extraer el documento del PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Creación dinámica de un documento DDX mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluir archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Creación dinámica de un documento DDX mediante la API de servicio web {#dynamically-create-a-ddx-document-using-the-web-service-api}
+## Crear dinámicamente un documento DDX mediante la API de servicio web {#dynamically-create-a-ddx-document-using-the-web-service-api}
 
-Cree dinámicamente un documento DDX y desmonte un documento PDF utilizando la API de servicio del ensamblador (servicio web):
+Cree de forma dinámica un documento DDX y desmonte un documento de PDF mediante la API del servicio Assembler (servicio web):
 
 1. Incluir archivos de proyecto.
 
-   Cree un proyecto de Microsoft .NET que utilice MTOM. Asegúrese de utilizar la siguiente definición WSDL al configurar una referencia de servicio: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
+   Cree un proyecto de Microsoft .NET que utilice MTOM. Asegúrese de utilizar la siguiente definición de WSDL al configurar una referencia de servicio: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Reemplazar `localhost` con la dirección IP del servidor que hospeda AEM Forms.
+   >Reemplazar `localhost` con la dirección IP del servidor que aloja AEM Forms.
 
-1. Cree un cliente de ensamblador de PDF.
+1. Cree un cliente de PDF Assembler.
 
-   * Cree un `AssemblerServiceClient` usando su constructor predeterminado.
-   * Cree un `AssemblerServiceClient.Endpoint.Address` usando la variable `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio de AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario que use la variable `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio.
-   * Cree un `System.ServiceModel.BasicHttpBinding` obteniendo el valor de `AssemblerServiceClient.Endpoint.Binding` campo . Conversión del valor devuelto a `BasicHttpBinding`.
-   * Configure las variables `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` campo a `WSMessageEncoding.Mtom`. Este valor garantiza que se utilice MTOM.
+   * Crear un `AssemblerServiceClient` mediante su constructor predeterminado.
+   * Crear un `AssemblerServiceClient.Endpoint.Address` mediante el uso del objeto `System.ServiceModel.EndpointAddress` constructor. Pase un valor de cadena que especifique el WSDL al servicio AEM Forms (por ejemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). No es necesario que utilice el `lc_version` atributo. Este atributo se utiliza al crear una referencia de servicio.
+   * Crear un `System.ServiceModel.BasicHttpBinding` al obtener el valor de la variable `AssemblerServiceClient.Endpoint.Binding` field. Convierta el valor devuelto en `BasicHttpBinding`.
+   * Configure las variables `System.ServiceModel.BasicHttpBinding` del objeto `MessageEncoding` field a `WSMessageEncoding.Mtom`. Este valor garantiza que se utiliza MTOM.
    * Habilite la autenticación HTTP básica realizando las siguientes tareas:
 
-      * Asignar el nombre de usuario de los formularios AEM al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Asignar el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+      * AEM Asigne el nombre de usuario del formulario de la al campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Asigne el valor de contraseña correspondiente al campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Asignar el valor constante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Asignar el valor constante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Cree el documento DDX.
 
-   * Cree un `System.Xml.XmlElement` usando su constructor.
-   * Cree el elemento raíz del documento DDX invocando la variable `XmlElement` del objeto `CreateElement` método. Este método crea un `Element` objeto que representa el elemento raíz. Pase un valor de cadena que represente el nombre del elemento a la variable `CreateElement` método. Establezca un valor para el elemento DDX llamando a su `SetAttribute` método. Finalmente, anexe el elemento al documento DDX llamando a la variable `XmlElement` del objeto `AppendChild` método. Pase el objeto DDX como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
+   * Crear un `System.Xml.XmlElement` mediante su constructor.
+   * Cree el elemento raíz del documento DDX invocando el `XmlElement` del objeto `CreateElement` método. Este método crea un `Element` que representa el elemento raíz. Pase un valor de cadena que represente el nombre del elemento a `CreateElement` método. Establezca un valor para el elemento DDX llamando a su `SetAttribute` método. Finalmente, anexe el elemento al documento DDX llamando a la función `XmlElement` del objeto `AppendChild` método. Pase el objeto DDX como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
       ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
 
-   * Creación del documento DDX `PDFsFromBookmarks` llamando al `XmlElement` del objeto `CreateElement` método. Pase un valor de cadena que represente el nombre del elemento a la variable `CreateElement` método. A continuación, establezca un valor para el elemento llamando a su `SetAttribute` método. Anexe la variable `PDFsFromBookmarks` al elemento raíz llamando a la función `DDX` del elemento `AppendChild` método. Pase el `PDFsFromBookmarks` objeto element como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
+   * Cree el documento DDX de `PDFsFromBookmarks` llamando a la variable `XmlElement` del objeto `CreateElement` método. Pase un valor de cadena que represente el nombre del elemento a `CreateElement` método. A continuación, establezca un valor para el elemento llamando a su `SetAttribute` método. Adjuntar el `PDFsFromBookmarks` al elemento raíz llamando a la variable `DDX` del elemento `AppendChild` método. Pase el `PDFsFromBookmarks` objeto element como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
       ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
 
-   * Creación del documento DDX `PDF` llamando al `XmlElement` del objeto `CreateElement` método. Pase un valor de cadena que represente el nombre del elemento a la variable `CreateElement` método. A continuación, establezca un valor para el elemento secundario llamando a su `SetAttribute` método. Anexe la variable `PDF` al `PDFsFromBookmarks` llamando al `PDFsFromBookmarks` del elemento `AppendChild` método. Pase el `PDF` objeto element como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
+   * Cree el documento DDX de `PDF` llamando a la variable `XmlElement` del objeto `CreateElement` método. Pase un valor de cadena que represente el nombre del elemento a `CreateElement` método. A continuación, establezca un valor para el elemento secundario llamando a su `SetAttribute` método. Adjuntar el `PDF` al elemento `PDFsFromBookmarks` llamando a la variable `PDFsFromBookmarks` del elemento `AppendChild` método. Pase el `PDF` objeto element como argumento. Las siguientes líneas de código muestran esta lógica de aplicación:
 
       ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
 
 1. Convierta el documento DDX.
 
-   * Cree un `System.IO.MemoryStream` usando su constructor.
-   * Rellene el `MemoryStream` con el documento DDX utilizando la variable `XmlElement` que representa el documento DDX. Invocar el `XmlElement` del objeto `Save` y pase el `MemoryStream` objeto.
+   * Crear un `System.IO.MemoryStream` mediante su constructor.
+   * Rellene el `MemoryStream` con el documento DDX utilizando el objeto `XmlElement` que representa el documento DDX. Invoque el `XmlElement` del objeto `Save` y pase el `MemoryStream` objeto.
    * Cree una matriz de bytes y rellénela con datos ubicados en la variable `MemoryStream` objeto. El siguiente código muestra esta lógica de aplicación:
 
       ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
 
-   * Cree un `BLOB` objeto. Asigne la matriz de bytes a la variable `BLOB` del objeto `MTOM` campo .
+   * Crear un `BLOB` objeto. Asigne la matriz de bytes al `BLOB` del objeto `MTOM` field.
 
-1. Haga referencia a un documento del PDF para desmontarlo.
+1. Hacer referencia a un documento de PDF para desmontar.
 
-   * Cree un `BLOB` usando su constructor. La variable `BLOB` se utiliza para almacenar el documento del PDF de entrada. Esta `BLOB` se pasa al `invokeOneDocument` como argumento.
-   * Cree un `System.IO.FileStream` invocando su constructor. Pase un valor de cadena que represente la ubicación del archivo del documento del PDF de entrada y el modo en que se abre el archivo.
-   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo la variable `System.IO.FileStream` del objeto `Length` propiedad.
-   * Rellene la matriz de bytes con los datos de flujo invocando la variable `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de flujo para leer.
-   * Rellene el `BLOB` asignando su `MTOM` propiedad del contenido de la matriz de bytes.
+   * Crear un `BLOB` mediante su constructor. El `BLOB` se utiliza para almacenar el documento del PDF de entrada. Esta `BLOB` El objeto se pasa a `invokeOneDocument` como argumento.
+   * Crear un `System.IO.FileStream` invocando su constructor. Pase un valor de cadena que represente la ubicación del archivo del documento del PDF de entrada y el modo en que se abrirá el archivo.
+   * Cree una matriz de bytes que almacene el contenido del `System.IO.FileStream` objeto. Puede determinar el tamaño de la matriz de bytes obteniendo el `System.IO.FileStream` del objeto `Length` propiedad.
+   * Rellene la matriz de bytes con datos de flujo invocando el método `System.IO.FileStream` del objeto `Read` y pasando la matriz de bytes, la posición inicial y la longitud de la secuencia que se va a leer.
+   * Rellene el `BLOB` al asignar su `MTOM` propiedad el contenido de la matriz de bytes.
 
-1. Establezca las opciones de tiempo de ejecución.
+1. Establecer opciones en tiempo de ejecución.
 
-   * Cree un `AssemblerOptionSpec` que almacena opciones en tiempo de ejecución mediante su constructor.
-   * Configure las opciones en tiempo de ejecución para satisfacer los requisitos empresariales asignando un valor a un miembro de datos que pertenezca al grupo `AssemblerOptionSpec` objeto. Por ejemplo, para solicitar al servicio Assembler que continúe procesando un trabajo cuando se produzca un error, asigne `false` a `AssemblerOptionSpec` del objeto `failOnError` miembro de datos.
+   * Crear un `AssemblerOptionSpec` que almacena las opciones en tiempo de ejecución mediante su constructor.
+   * Establezca las opciones en tiempo de ejecución para satisfacer sus necesidades empresariales asignando un valor a un miembro de datos que pertenezca a `AssemblerOptionSpec` objeto. Por ejemplo, para indicar al servicio Assembler que continúe procesando un trabajo cuando se produzca un error, asigne a `false` a la `AssemblerOptionSpec` del objeto `failOnError` miembro de datos.
 
-1. Desmonte el documento del PDF.
+1. Desmontar el documento del PDF.
 
-   Invocar el `AssemblerServiceClient` del objeto `invokeDDX` y pase los siguientes valores:
+   Invoque el `AssemblerServiceClient` del objeto `invokeDDX` y pasar los siguientes valores:
 
-   * A `BLOB` objeto que representa el documento DDX creado dinámicamente
-   * La variable `mapItem` matriz que contiene el documento del PDF de entrada
+   * A `BLOB` que representa el documento DDX creado dinámicamente
+   * El `mapItem` matriz que contiene el documento del PDF de entrada
    * Un `AssemblerOptionSpec` objeto que especifica opciones en tiempo de ejecución
 
-   La variable `invokeDDX` devuelve un valor `AssemblerResult` que contiene los resultados del trabajo y cualquier excepción que se haya producido.
+   El `invokeDDX` El método devuelve un `AssemblerResult` que contiene los resultados del trabajo y las excepciones que se han producido.
 
-1. Guarde los documentos de PDF desmontados.
+1. Guarde los documentos del PDF desmontados.
 
-   Para obtener los documentos de PDF recién creados, realice las siguientes acciones:
+   Para obtener los documentos del PDF recién creados, realice las siguientes acciones:
 
-   * Acceda a la `AssemblerResult` del objeto `documents` , que es un `Map` que contiene los documentos de PDF desmontados.
-   * Iterar a través de la variable `Map` para obtener cada documento resultante. A continuación, cree el `value` a `BLOB`.
-   * Extraiga los datos binarios que representan el documento del PDF accediendo a su `BLOB` del objeto `MTOM` propiedad. Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
+   * Acceda a la `AssemblerResult` del objeto `documents` , que es un `Map` que contiene los documentos de PDF desensamblados.
+   * Itere a través de `Map` para obtener cada documento resultante. A continuación, convierta el de ese miembro de la matriz `value` a un `BLOB`.
+   * Extraiga los datos binarios que representan el documento PDF accediendo a su `BLOB` del objeto `MTOM` propiedad. Devuelve una matriz de bytes que puede escribir en un archivo PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Invocar AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[Invocación de AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[Invocar AEM Forms mediante SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)

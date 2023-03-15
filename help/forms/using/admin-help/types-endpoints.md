@@ -1,7 +1,7 @@
 ---
 title: Tipos de extremos
 seo-title: Types of endpoints
-description: Obtenga información sobre los distintos tipos de extremos.
+description: Obtenga información acerca de los distintos tipos de extremos.
 seo-description: Learn about the different types of endpoints.
 uuid: c899245c-14cc-4035-9440-95a5b6c1e47f
 contentOwner: admin
@@ -13,36 +13,36 @@ exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Tipos de extremos {#types-of-endpoints}
 
-Para poder utilizar un servicio, debe configurar y habilitar un punto final. Un punto final especifica cómo se va a invocar un servicio.
+Para poder utilizar un servicio, debe configurar y habilitar un extremo. Un extremo especifica cómo se va a invocar un servicio.
 
 >[!NOTE]
 >
->En Workbench, los extremos se denominan puntos de inicio.
+>En Workbench, los puntos finales se denominan puntos iniciales.
 
 Se pueden agregar los siguientes tipos de extremos a los servicios. No todos los servicios admiten todos los extremos:
 
-**Correo electrónico:** Permite que un usuario invoque un servicio enviando un mensaje de correo electrónico con uno o más archivos adjuntos a una cuenta de correo electrónico especificada. Antes de configurar un extremo de correo electrónico, debe configurar las cuentas de correo electrónico necesarias. (Consulte Configuración de extremos de correo electrónico).
+**Correo electrónico:** Permite que un usuario invoque un servicio enviando un mensaje de correo electrónico con uno o más archivos adjuntos a una cuenta de correo electrónico especificada. Antes de configurar un extremo de correo electrónico, debe configurar las cuentas de correo electrónico necesarias. (Consulte Configuración de puntos finales de correo electrónico).
 
-**Carpeta vigilada:** Permite que un usuario invoque un servicio colocando un archivo en una carpeta, que se analiza en un intervalo definido. (Consulte Configuración de los extremos de las carpetas vigiladas.)
+**Carpeta inspeccionada:** Permite que un usuario invoque un servicio colocando un archivo en una carpeta, que se analiza a un intervalo definido. (Consulte Configuración de puntos finales de carpetas vigiladas).
 
-**TaskManager:** Permite a un usuario de Workspace invocar el servicio.
+**Administrador de tareas:** Permite que un usuario de Workspace invoque el servicio.
 
-**Remotando:** Habilita una aplicación creada con Flex para invocar el servicio mediante (obsoleto para AEM formularios) AEM Forms Remoting. Se crea automáticamente un punto final remoto para cada servicio activado. Se crea un destino de Flex que tiene el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio correspondiente.
+**Remoting:** Habilita una aplicación creada con Flex AEM AEM para invocar el servicio mediante (obsoleto para formularios de la versión de la aplicación en tiempo de ejecución) la comunicación remota de formularios de la aplicación de formularios. Se crea automáticamente un extremo remoto para cada servicio activado. Se crea un destino de Flex con el mismo nombre que el extremo y los clientes de Flex pueden crear objetos remotos que apunten a este destino para invocar operaciones en el servicio correspondiente.
 
-**SOAP:** Permite que una aplicación cliente desarrollada mediante las API de programación de formularios AEM invoque el servicio mediante el modo SOAP. Se crea automáticamente un extremo SOAP para cada servicio activado.
+**SOAP:** AEM Habilita una aplicación cliente desarrollada mediante las API de programación de formularios de la aplicación para invocar el servicio mediante el modo SOAP. Se crea automáticamente un punto final SOAP para cada servicio activado.
 
-**nota**: *La seguridad se puede eliminar de los documentos de seguridad de documentos cuando se utiliza el extremo SOAP al ver los documentos en Adobe Acrobat o Adobe Reader. Para obtener más información sobre cómo deshabilitar los puntos de conexión SOAP en los documentos LCRM, consulte [Desactivación de extremos SOAP para documentos de seguridad de documentos](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
+**nota**: *La seguridad se puede quitar de los documentos de seguridad del documento cuando se utiliza el extremo SOAP mientras se visualizan los documentos en Adobe Acrobat o Adobe Reader. Para obtener más información sobre cómo deshabilitar los extremos SOAP en los documentos de CRM, consulte [Deshabilitar extremos SOAP para documentos de Document Security](/help/forms/using/admin-help/configuring-client-server-options.md#disable-soap-endpoints-for-document-security-documents)*
 
-**EJB:** Permite que una aplicación cliente desarrollada mediante las API de programación de formularios AEM invoque el servicio mediante el modo Enterprise JavaBeans (EJB). Se crea automáticamente un extremo EJB para cada servicio activado.
+**EJB:** AEM Habilita una aplicación cliente desarrollada mediante las API de programación de formularios de la aplicación para invocar el servicio mediante Enterprise JavaBeans (EJB). Se crea automáticamente un extremo de EJB para cada servicio activado.
 
-**WSDL:** Permite que una aplicación cliente desarrollada mediante las API de programación de formularios AEM invoque el servicio mediante el lenguaje de definición de servicio web (WSDL). La página Configuraciones principales contiene una opción para habilitar la generación de WSDL para todos los servicios que forman parte de AEM formularios. (Consulte Configuración general AEM la configuración de formularios).
+**WSDL:** AEM Habilita una aplicación cliente desarrollada mediante las API de programación de formularios de la aplicación para invocar el servicio mediante el Lenguaje de definición de servicios web (WSDL). AEM La página Configuraciones principales contiene una opción para habilitar la generación de WSDL para todos los servicios que forman parte de los formularios de. AEM (Consulte Configuración general de los formularios de ).
 
-**REST:** Los procesos creados en Workbench se pueden configurar para que pueda invocarlos mediante solicitudes de transferencia de estado representativo (REST). Las solicitudes REST se envían desde páginas de HTML. Es decir, puede invocar un proceso de formularios AEM directamente desde una página web mediante una solicitud REST.
+**REST:** Los procesos creados en Workbench se pueden configurar para que se puedan invocar a través de solicitudes de transferencia de estado representacional (REST). Las solicitudes REST se envían desde páginas del HTML. AEM Es decir, puede invocar un proceso de formularios de la directamente desde una página web mediante una solicitud REST.
 
-Los extremos Correo electrónico, TaskManager, Carpeta vigilada y Remoting solo exponen una operación específica del servicio. La adición de estos extremos requiere un segundo paso de configuración para seleccionar un método para invocar el servicio, configurar parámetros de configuración y especificar asignaciones de parámetros de entrada y salida.
+Los extremos Correo electrónico, TaskManager, Carpeta inspeccionada y Remoting exponen únicamente una operación específica del servicio. Para agregar estos extremos, es necesario realizar un segundo paso de configuración para seleccionar un método para invocar el servicio, establecer parámetros de configuración y especificar asignaciones de parámetros de entrada y salida.

@@ -1,7 +1,7 @@
 ---
 title: Integración de soluciones
 seo-title: Solutions Integration
-description: Obtenga más información sobre la integración de soluciones en AEM.
+description: AEM Obtenga más información sobre la integración de soluciones en la.
 seo-description: Learn more about Solutions Integration in AEM.
 uuid: 3bf56b1b-284d-4f14-8974-0a595ece5028
 contentOwner: Guillaume Carlino
@@ -25,11 +25,11 @@ ht-degree: 32%
 * [Productor de catálogos](/help/sites-administering/catalog-producer.md)
 * [Conector de SharePoint](/help/sites-administering/sharepoint-connector.md)
 
-La siguiente información está disponible sobre la integración de AEM con otros servicios de Adobe o de terceros:
+AEM La siguiente información está disponible acerca de la integración de la integración de con otros servicios de Adobe o de terceros:
 
 >[!NOTE]
 >
->Si utiliza una configuración de proxy personalizada junto con su integración, debe configurar ambas configuraciones de proxy del cliente HTTP, ya que algunas funcionalidades de AEM utilizan las API 3.x y otras las API 4.x:
+>AEM Si utiliza una configuración proxy personalizada junto con su integración, debe configurar ambas configuraciones proxy del cliente HTTP, ya que algunas funcionalidades de las API 3.x y algunas otras utilizan las API 4.x.
 >
 >* 3.x está configurado con [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x está configurado con [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)

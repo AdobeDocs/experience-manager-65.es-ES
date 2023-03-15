@@ -1,7 +1,7 @@
 ---
 title: Componentes de Communities
 seo-title: Communities Components
-description: Adición de funciones de comunidad a cualquier sitio AEM
+description: AEM Agregar características de la comunidad a cualquier sitio de la
 seo-description: Adding community features to any AEM site
 uuid: 76824820-81e9-4192-8df3-dff55eaf144e
 contentOwner: Chris Bohnert
@@ -24,34 +24,34 @@ ht-degree: 44%
 
 Cuando se dispone de una licencia de AEM Communities, además de crear sitios de comunidad, es posible añadir funciones de Communities a cualquier sitio de AEM mediante las herramientas de edición estándar de AEM.
 
-Para obtener más información sobre la creación de un sitio de comunidad, visite:
+Para obtener más información sobre la creación de un sitio de la comunidad, visite:
 
 * [Información general de AEM Communities](/help/communities/overview.md)
 * [Introducción a Comunidades de AEM](/help/communities/getting-started.md)
-* [Introducción a AEM Communities para la activación](/help/communities/getting-started-enablement.md)
+* [Introducción a AEM Communities para la habilitación](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
->Si no está familiarizado con el entorno de creación, consulte la documentación de [tratamiento básico](/help/sites-authoring/basic-handling.md) y [guía rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
+>Si no está familiarizado con el entorno de creación de, consulte la documentación sobre [manipulación básica](/help/sites-authoring/basic-handling.md) y una [guía rápida para la creación de páginas](/help/sites-authoring/qg-page-authoring.md).
 
 ## Componentes de comunidades disponibles {#available-communities-components}
 
-En la tabla siguiente se enumeran los componentes de Communities visibles para los autores cuando están activados en el navegador de componentes (barra de tareas).
+En la tabla siguiente se enumeran los componentes de Communities visibles para los autores cuando se habilitan en el explorador de componentes (barra de tareas).
 
-Consulte también la [Guía de componentes de comunidad](/help/communities/components-guide.md).
+Consulte también la sección interactiva [Guía de componentes de la comunidad](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->Lectura [Conceptos básicos de los componentes de Communities](/help/communities/basics.md) ya que contiene información necesaria para la creación con componentes de Communities.
+>Leer [Conceptos básicos de componentes de comunidades](/help/communities/basics.md) ya que contiene la información necesaria para la creación con componentes de Communities.
 
-| **Título de componente** | **Función** |
+| **Título del componente** | **Función** |
 |---|---|
 | Flujos de actividad | [Flujos de actividad](/help/communities/activities.md) |
 | Blog | [Blog](/help/communities/blog-feature.md) |
 | Barra lateral de blog | [Blog](/help/communities/blog-feature.md) |
 | Calendario | [Calendario](/help/communities/calendar.md) |
 | Comentarios | [Comentarios](/help/communities/comments.md) |
-| Lista de actividades de la comunidad | [Tendencias de actividad](/help/communities/trends.md) |
+| Lista de actividades de la comunidad | [Tendencias de actividades](/help/communities/trends.md) |
 | Lista de miembros del grupo de la comunidad | [Grupos de la comunidad](/help/communities/creating-groups.md) |
 | Componer mensaje | [Mensajes](/help/communities/configure-messaging.md) |
 | Asignaciones de habilitación | [Asignaciones](/help/communities/assignments.md) |
@@ -79,12 +79,12 @@ Consulte también la [Guía de componentes de comunidad](/help/communities/compo
 
 >[!NOTE]
 >
->El componente de encuesta ya no está disponible y se admite en Comunidades de Experience Manager.
+>El componente de encuesta ya no está disponible y es compatible con las comunidades de Experience Manager.
 
-## Documentación de Communities relacionadas {#related-communities-documentation}
+## Documentación de comunidades relacionadas {#related-communities-documentation}
 
 * Visita [Implementación de comunidades](/help/communities/deploy-communities.md) para obtener más información sobre las implementaciones recomendadas.
 
-* Visita [Administración de sitios de comunidades](/help/communities/administer-landing.md) para obtener información sobre la creación de un sitio de comunidad, la configuración de plantillas de sitio de comunidad, la moderación del contenido de la comunidad, la administración de miembros y la configuración de mensajes.
+* Visita [Administración de sitios de Communities](/help/communities/administer-landing.md) para obtener más información sobre cómo crear un sitio de la comunidad, configurar las plantillas de sitio de la comunidad, moderar el contenido de la comunidad, administrar miembros y configurar la mensajería.
 
-* Visita [Desarrollo de comunidades](/help/communities/communities.md) para obtener información sobre el marco de componentes sociales (SCF) y la personalización de componentes y funciones de Communities.
+* Visita [Desarrollo de comunidades](/help/communities/communities.md) para obtener más información sobre el marco de trabajo de componentes sociales (SCF) y personalizar los componentes y las funciones de las Comunidades.

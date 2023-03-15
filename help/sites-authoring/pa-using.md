@@ -63,7 +63,7 @@ Los miembros del grupo de usuarios de administradores analíticos pueden configu
 >
 >Cuando un árbol de páginas contiene elementos secundarios asociados a distintas configuraciones de la nube de Adobe Analytics, no puede configurar las columnas de datos disponibles para las páginas.
 
-1. En la vista de lista, utilice los selectores de vista (derecha de la barra de herramientas) y seleccione **Configuración de vista** y luego **Añadir datos de análisis personalizados**.
+1. En Vista de lista, utilice los selectores de vista (a la derecha de la barra de herramientas), seleccione **Configuración de vista** y luego **Añadir datos personalizados de Analytics**.
 
    ![aa-15](assets/aa-15.png)
 
@@ -75,7 +75,7 @@ Los miembros del grupo de usuarios de administradores analíticos pueden configu
 
 ### Abrir la información del contenido desde Sitios {#opening-content-insights-from-sites}
 
-Apertura [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
+Abrir [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
 
 1. En la consola de Sitios, seleccione la página en la cual quiera ver la información del contenido.
 1. En la barra de herramientas, haga clic en el icono de análisis y recomendaciones.

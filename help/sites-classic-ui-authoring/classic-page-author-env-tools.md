@@ -61,7 +61,7 @@ Puede utilizar el buscador de contenido para ubicar toda una serie de medios. Cu
 * [Imágenes](#finding-images)
 * [Documentos](#finding-documents)
 * [Películas](#finding-movies)
-* [Explorador Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Explorador de Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [Páginas](#finding-pages)
 
 * [Párrafos](#referencing-paragraphs-from-other-pages)
@@ -102,7 +102,7 @@ Esta ficha enumera los productos. Después de crear un párrafo apropiado (por e
 
 ### Búsqueda de páginas {#finding-pages}
 
-Esta ficha muestra todas las páginas. Haga doble clic en cualquier página para abrirla y editarla.
+Esta pestaña muestra todas las páginas. Haga doble clic en cualquier página para abrirla y editarla.
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
@@ -163,7 +163,7 @@ Para mostrar referencias de páginas directas:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Select **Mostrar referencias...** AEM abre la ventana Referencias y muestra qué páginas hacen referencia a la página seleccionada, incluidas sus rutas de acceso.
+1. Seleccionar **Mostrar referencias...** AEM Se abrirá la ventana Referencias (References) y se mostrarán las páginas que hacen referencia a la página seleccionada, incluidas sus rutas.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -184,7 +184,7 @@ Se puede acceder al **registro de auditoría** desde la ficha **Información** d
 
 ## Información de la página {#page-information}
 
-La consola Sitios web también [proporciona información sobre el estado actual de la página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) como publicación, modificación, bloqueo, Live Copy, etc.
+La consola Sitio web también [proporciona información sobre el estado actual de la página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) como publicación, modificación, bloqueado, livecopy, etc.
 
 ## Modos de página   {#page-modes}
 

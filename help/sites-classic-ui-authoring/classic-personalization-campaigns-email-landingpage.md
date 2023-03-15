@@ -32,7 +32,7 @@ Para crear una página de base de boletín eficaz, debe hacer lo siguiente:
 >[!NOTE]
 >
 >Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes y listas).
->La recomendación es aprovechar [Adobe Campaign y la integración a AEM](/help/sites-administering/campaign.md).
+>La recomendación es aprovechar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
 
 ## Crear una lista para el boletín {#creating-a-list-for-the-newsletter}
 
@@ -70,7 +70,7 @@ Cuando los usuarios hacen clic en **Suscribirse ahora**, desea que se abra una p
 
 Al enviar la solicitud, el usuario se dirige a la página de **agradecimiento** tras la cual recibirá un correo electrónico. Esta página de agradecimiento se creó en /content/geometrixx/en/toolbar/newsletter/thank_you.
 
-![mcm_newsletter_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
+![mcm_newsletter_thank_youpage](assets/mcm_newsletter_thankyoupage.png)
 
 ### Añadir teasers {#adding-teasers}
 
@@ -80,7 +80,7 @@ Para añadir teasers con el fin de que la página de base de la newsletter sea e
 
 1. Cree un párrafo de teaser para obtener un regalo de registro. Seleccione **Primero** como estrategia e incluya texto que informe sobre qué regalo podrán recibir los usuarios.
 
-   ![dc_teaser_thankyou](assets/dc_teaser_thankyou.png)
+   ![dc_teaser_thank_you](assets/dc_teaser_thankyou.png)
 
 1. Cree un párrafo de teaser para la página de agradecimiento. Seleccione **Primero** como estrategia e incluya texto que indique que el regalo ya se ha enviado.
 

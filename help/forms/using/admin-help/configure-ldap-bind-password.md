@@ -1,5 +1,5 @@
 ---
-title: Configuración de la contraseña de enlace LDAP
+title: Configurar la contraseña de enlace LDAP
 seo-title: Configure the LDAP bind password
 description: Obtenga información sobre cómo configurar el campo de contraseña de enlace antes de importar el archivo de configuración en otro sistema.
 seo-description: Learn how to configure the bind password field before you import the configuration file into another system.
@@ -13,17 +13,17 @@ exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
-# Configuración de la contraseña de enlace LDAP{#configure-the-ldap-bind-password}
+# Configurar la contraseña de enlace LDAP{#configure-the-ldap-bind-password}
 
-Para evitar riesgos de seguridad, el campo bind password en el archivo de configuración exportado (config.xml) no está configurado. Antes de importar el archivo de configuración en otro sistema, asegúrese de configurar esta contraseña. Esta contraseña anula una contraseña existente almacenada en la base de datos. Una contraseña nula no invalida un valor de contraseña no nula existente.
+Para evitar riesgos de seguridad, el campo de contraseña de enlace del archivo de configuración exportado (config.xml) no está configurado. Antes de importar el archivo de configuración a otro sistema, asegúrese de configurar esta contraseña. Esta contraseña anula una contraseña existente almacenada en la base de datos. Una contraseña nula no reemplaza un valor de contraseña no nula existente.
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Configuración > Importar y exportar archivos de configuración.
 1. Para exportar la configuración actual a un archivo, haga clic en Exportar y guarde el archivo de configuración en otra ubicación.
-1. En el archivo , busque la variable `Domains` > *[Su nombre de dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` nodo . He aquí un ejemplo:
+1. En el archivo, busque `Domains` > *[Su nombre de dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` nodo. He aquí un ejemplo:
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -38,7 +38,7 @@ Para evitar riesgos de seguridad, el campo bind password en el archivo de config
 
    Escriba un valor para `bindpassword` y guarde los cambios.
 
-1. En el archivo , busque la variable `Domains` > *[Su nombre de dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` nodo . He aquí un ejemplo:
+1. En el archivo, busque `Domains` > *[Su nombre de dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` nodo. He aquí un ejemplo:
 
    ```xml
     <node name="LDAPUserConfig">
@@ -54,4 +54,4 @@ Para evitar riesgos de seguridad, el campo bind password en el archivo de config
    Escriba un valor para `bindpassword` y guarde los cambios.
 
 1. Para importar el archivo actualizado, en Administración de usuarios, haga clic en Configuración > Importar y exportar archivos de configuración.
-1. Haga clic en Examinar para buscar el archivo, haga clic en Importar y, a continuación, haga clic en Aceptar.
+1. Haga clic en Examinar para buscar el archivo, en Importar y, a continuación, en Aceptar.

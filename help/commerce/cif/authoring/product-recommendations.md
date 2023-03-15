@@ -1,6 +1,6 @@
 ---
 title: Recomendaciones de producto
-description: Adobe Commerce cuenta con un motor de recomendaciones equipado con Adobe Sensei. Aprenda a insertar dinámicamente estas recomendaciones de productos en una tienda de Adobe Experience Manager (AEM).
+description: Adobe Commerce cuenta con un motor de recomendaciones impulsado por Adobe Sensei. Aprenda a insertar dinámicamente estas recomendaciones de productos en una tienda de Adobe Experience Manager AEM ().
 sub-product: Commerce
 version: 6.5
 doc-type: feature-video
@@ -19,6 +19,6 @@ ht-degree: 7%
 
 # Recomendaciones de producto
 
-Adobe Commerce cuenta con un motor de recomendaciones equipado con Adobe Sensei. Aprenda a insertar dinámicamente estas recomendaciones de productos en una tienda de Adobe Experience Manager (AEM).
+Adobe Commerce cuenta con un motor de recomendaciones impulsado por Adobe Sensei. Aprenda a insertar dinámicamente estas recomendaciones de productos en una tienda de Adobe Experience Manager AEM ().
 
 >[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)

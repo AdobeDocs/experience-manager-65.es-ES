@@ -1,7 +1,7 @@
 ---
-title: Configurar mensajería
+title: Configurar la mensajería
 seo-title: Configuring Messaging
-description: Mensajería de comunidades
+description: Mensajería de Communities
 seo-description: Communities messaging
 uuid: 159dcf9d-7948-4a3d-9f51-a5b4d03e172b
 contentOwner: Janice Kendall
@@ -19,89 +19,89 @@ ht-degree: 1%
 
 ---
 
-# Configurar mensajería {#configure-messaging}
+# Configurar la mensajería {#configure-messaging}
 
 ## Información general {#overview}
 
-La función de mensajería para AEM Communities permite a los visitantes del sitio (miembros) con sesión iniciada enviar mensajes entre sí a los que se puede acceder desde la sesión iniciada en el sitio.
+La función de mensajería para AEM Communities permite a los visitantes (miembros) del sitio que han iniciado sesión enviarse mensajes que son accesibles una vez que han iniciado sesión en el sitio.
 
-La mensajería está habilitada para un sitio de la comunidad marcando una casilla durante [creación de sitios de comunidad](/help/communities/sites-console.md).
+La mensajería está habilitada para un sitio de la comunidad marcando una casilla durante [creación de sitios de la comunidad](/help/communities/sites-console.md).
 
-Esta página tiene información sobre la configuración predeterminada y los posibles ajustes.
+Esta página contiene información sobre la configuración predeterminada y los posibles ajustes.
 
-Para obtener información adicional para desarrolladores, consulte [Elementos básicos de mensajería](/help/communities/essentials-messaging.md).
+Para obtener información adicional para desarrolladores, consulte [Messaging Essentials](/help/communities/essentials-messaging.md).
 
 ## Servicio de operaciones de mensajería {#messaging-operations-service}
 
-La configuración [Servicio de operaciones de mensajería de AEM Communities](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifica el punto final que gestiona las solicitudes relacionadas con la mensajería, las carpetas que debe utilizar el servicio para almacenar mensajes y, si los mensajes pueden incluir archivos adjuntos, qué tipos de archivos están permitidos.
+La configuración [Servicio de operaciones de mensajería de AEM Communities](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifica el extremo que administra las solicitudes relacionadas con la mensajería, las carpetas que el servicio debe utilizar para almacenar mensajes y, si los mensajes pueden incluir archivos adjuntos, qué tipos de archivo se permiten.
 
-Para sitios de comunidad creados con el `Communities Sites console`, ya existe una instancia del servicio, con la bandeja de entrada configurada como `/mail/inbox`.
+Para los sitios de la comunidad creados con `Communities Sites console`, ya existe una instancia del servicio, con la bandeja de entrada configurada como `/mail/inbox`.
 
-### Servicio de operaciones de mensajería de la comunidad {#community-messaging-operations-service}
+### Servicio Community Messaging Operations {#community-messaging-operations-service}
 
-Como se muestra a continuación, existe una configuración del servicio para los sitios creados con la variable [asistente de creación de sitios](/help/communities/sites-console.md). La configuración se puede ver o editar seleccionando el icono de lápiz junto a la configuración.
+Como se muestra a continuación, existe una configuración del servicio para los sitios creados con [asistente de creación de sitios](/help/communities/sites-console.md). La configuración se puede ver o editar seleccionando el icono de lápiz junto a la configuración.
 
-![operaciones de mensajería](assets/messaging-operations.png)
+![messaging-operations](assets/messaging-operations.png)
 
 ### Añadir nueva configuración {#add-new-configuration}
 
-Para añadir una configuración nueva, seleccione el signo más **+** Icono &#39; junto al nombre del servicio :
+Para añadir una nueva configuración, seleccione el signo más &#39;**+**&#39; junto al nombre del servicio:
 
-* **Lista de permitidos de campos del mensaje**
+* **Lista de permitidos Campos de mensaje**
 
-   Especifica las propiedades del componente Componer mensaje que los usuarios pueden editar y mantener. Si se añaden nuevos elementos de formulario, sería necesario añadir el id de elemento si se desea almacenar en SRP. El valor predeterminado son dos entradas: *subject* y *contenido*.
+   Especifica las propiedades del componente Componer mensaje que los usuarios pueden editar y conservar. Si se agregan nuevos elementos de formulario, el ID del elemento tendría que agregarse si se desea almacenar en SRP. El valor predeterminado es dos entradas: *sujeto* y *content*.
 
-* **Límite de tamaño del cuadro de mensaje**
+* **Límite de tamaño de cuadro de mensaje**
 
    Número máximo de bytes en el cuadro de mensaje de cada usuario. El valor predeterminado es *1073741824* (1 GB).
 
 * **Límite de recuento de mensajes**
 
-   El número total de mensajes permitidos por usuario. El valor -1 indica que se permite un número ilimitado de mensajes, sujeto al límite de tamaño del cuadro de mensaje. El valor predeterminado es *10000* (10 k).
+   Número total de mensajes permitidos por usuario. El valor -1 indica que se permite un número ilimitado de mensajes, sujeto al límite de tamaño del cuadro de mensaje. El valor predeterminado es *10000* (10k).
 
-* **Notificar el error de entrega**
+* **Notificar error de envío**
 
-   Si está activado, notifique al remitente si la entrega de mensajes falla en algunos destinatarios. El valor predeterminado es *activado*.
+   Si se selecciona, se notifica al remitente si la entrega del mensaje falla a algunos destinatarios. El valor predeterminado es *comprobado*.
 
-* **Id. del remitente del envío de error**
+* **Error de ID de remitente de entrega**
 
    Nombre del remitente que aparece en el mensaje de error de entrega. El valor predeterminado es *failureNotifier*.
 
-* **Ruta de la plantilla del mensaje de error**
+* **Ruta de plantilla de mensaje de error**
 
-   La ruta absoluta a la entrega produjo un error en la raíz de la plantilla de mensaje. El valor predeterminado es */etc/notification/messaging/default*.
+   Ruta absoluta a la raíz de la plantilla de mensaje del envío con error. El valor predeterminado es */etc/notification/messaging/default*.
 
 * **Número de reintentos**
 
-   Número de veces que se intenta reenviar el mensaje que no se puede entregar. El valor predeterminado es *3*.
+   Número de veces que se intenta reenviar el mensaje que no se puede enviar. El valor predeterminado es *3*.
 
-* **Espera entre reintentos**
+* **Esperar entre reintentos**
 
-   Número de segundos que hay que esperar entre los intentos de reenviar el mensaje si no se ha enviado. El valor predeterminado es *100* (segundos).
+   Número de segundos de espera entre intentos para reenviar el mensaje si no se puede enviar. El valor predeterminado es *100* (segundos).
 
-* **Recuento del tamaño del grupo de informes de actualización**
+* **Contar tamaño del grupo de actualización**
 
-   Número de subprocesos simultáneos utilizados para la actualización del recuento. El valor predeterminado es *10*.
+   Número máximo de subprocesos simultáneos utilizados para la actualización del recuento. El valor predeterminado es *10*.
 
-* **Ruta de la bandeja de entrada**
+* **Ruta de bandeja de entrada**
 
-   (*Requerido*) La ruta, relativa al nodo del usuario (/home/users/*username*), para usar con la variable `inbox` carpeta. La ruta NO debe terminar con una barra diagonal final &#39;/&#39;. El valor predeterminado es */mail/inbox*.
+   (*Requerido*) La ruta relativa al nodo del usuario (/home/users/*nombre de usuario*), que se usará para `inbox` carpeta. La ruta NO debe finalizar con una barra diagonal final &quot;/&quot;. El valor predeterminado es */mail/inbox*.
 
-* **Ruta de acceso de elementos enviados**
+* **Ruta de elementos enviados**
 
-   (*Requerido*) La ruta, relativa al nodo del usuario (/home/users/*username*), para usar con la variable `sent items` carpeta. La ruta NO debe terminar con una barra diagonal final &#39;/&#39;. El valor predeterminado es */mail/sentiitems* .
+   (*Requerido*) La ruta relativa al nodo del usuario (/home/users/*nombre de usuario*), que se usará para `sent items` carpeta. La ruta NO debe finalizar con una barra diagonal final &quot;/&quot;. El valor predeterminado es */mail/sentitems* .
 
 * **Admitir archivos adjuntos**
 
-   Si se selecciona, los usuarios pueden añadir archivos adjuntos a sus mensajes. El valor predeterminado es *activado*.
+   Si se selecciona, los usuarios pueden agregar archivos adjuntos a sus mensajes. El valor predeterminado es *comprobado*.
 
 * **Habilitar la mensajería de grupo**
 
-   Si se selecciona, los usuarios registrados pueden enviar mensajes masivos a un grupo de miembros. El valor predeterminado es *deseleccionado*.
+   Si se selecciona, los usuarios registrados pueden enviar mensajes masivos a un grupo de miembros. El valor predeterminado es *no seleccionado*.
 
 * **Nº máximo de destinatarios totales**
 
-   Si la mensajería de grupo está habilitada, especifique el número máximo de destinatarios a los que se puede enviar el mensaje de grupo a la vez. El valor predeterminado es *100*.
+   Si la mensajería de grupo está habilitada, especifique el número máximo de destinatarios a los que se pueden enviar mensajes de grupo a la vez. El valor predeterminado es *100*.
 
 * **Tamaño del lote**
 
@@ -109,35 +109,35 @@ Para añadir una configuración nueva, seleccione el signo más **+** Icono &#39
 
 * **Tamaño total del archivo adjunto**
 
-   Si se selecciona supportAttachments , este valor especifica el tamaño total máximo permitido (en bytes) de todos los archivos adjuntos. El valor predeterminado es *104857600* (100 MB).
+   Si se activa supportAttachments, este valor especifica el tamaño total máximo permitido (en bytes) de todos los datos adjuntos. El valor predeterminado es *104857600* (100 MB).
 
-* **Lista de bloqueados de tipo de archivo adjunto**
+* **Lista de bloqueados de tipo de adjunto**
 
-   Una lista de bloqueados de extensiones de nombre de archivo con el prefijo &quot;**.**&#39;, que será rechazado por el sistema. Si no está incluida en la lista de bloqueados, se permite la extensión. Las extensiones pueden agregarse o eliminarse utilizando la función **+**&#39; y &#39;**-**&#39;.
+   Una lista de bloqueados de extensiones de nombre de archivo, con el prefijo &#39;**.**&#39;, que será rechazado por el sistema. Si no está incluida en la lista de bloqueados, se permite la extensión. Las extensiones se pueden añadir o eliminar utilizando &#39;**+**&#39; y &#39;**-** Iconos de.
 
 * **Tipos de archivos adjuntos permitidos**
 
-   **(*Acción requerida*)** Una lista de permitidos de extensiones de nombre de archivo, lo contrario de la lista de bloqueados. Para permitir todas las extensiones de nombre de archivo, excepto las incluidas en la lista de bloqueados, utilice el **-** para eliminar la única entrada vacía.
+   **(*Acción necesaria*)** Una lista de permitidos de extensiones de nombre de archivo, la opuesta a la lista de bloqueados. Para permitir todas las extensiones de nombre de archivo, excepto las incluidas en la lista de bloqueados, utilice el **-**&#39; para eliminar la única entrada vacía.
 
 * **Selector de servicio**
 
-   (*Requerido*) Una ruta absoluta (extremo) a través de la cual se llama al servicio (un recurso virtual). La raíz de la ruta elegida debe estar incluida en el *Rutas de ejecución* configuración de la configuración OSGi [ `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), como `/bin/`, `/apps/`y `/services/`. Para seleccionar esta configuración para la función de mensajería de un sitio, este punto final se proporciona como la variable **`Service selector`** para la variable `Message List and Compose Message components` (consulte [Función de mensaje](/help/communities/configure-messaging.md)).
+   (*Requerido*) Una ruta absoluta (extremo) a través de la cual se llama al servicio (recurso virtual). La raíz de la ruta elegida debe ser una incluida en la variable *Rutas de ejecución* Ajuste de configuración de la configuración de OSGi [ `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), como `/bin/`, `/apps/`, y `/services/`. Para seleccionar esta configuración para la función de mensajería de un sitio, este extremo se proporciona como **`Service selector`** valor para `Message List and Compose Message components` (consulte [Función de mensaje](/help/communities/configure-messaging.md)).
 
    El valor predeterminado es */bin/messaging* .
 
 * **Lista de permitidos de campo**
 
-   Uso **Lista de permitidos de campos del mensaje**.
+   Uso **Lista de permitidos Campos de mensaje**.
 
 >[!CAUTION]
 >
->Cada vez que se `Messaging Operations Service` la configuración se abre para su edición, si `allowedAttachmentTypes.name` se ha eliminado, se vuelve a añadir una entrada vacía para que la propiedad se pueda configurar. Una sola entrada vacía deshabilita los archivos adjuntos.
+>Cada vez que `Messaging Operations Service` La configuración de se abre para su edición, si `allowedAttachmentTypes.name` Si se ha eliminado, se vuelve a agregar una entrada vacía para poder configurar la propiedad. Una sola entrada vacía deshabilita efectivamente los archivos adjuntos.
 >
->Para permitir todas las extensiones de nombre de archivo, excepto las incluidas en la lista de bloqueados, utilice el **-**&#39; para (de nuevo) quitar la única entrada vacía antes de hacer clic en **Guardar**.
+>Para permitir todas las extensiones de nombre de archivo, excepto las incluidas en la lista de bloqueados, utilice el **-**&#39; para eliminar (de nuevo) la única entrada vacía antes de hacer clic en **Guardar**.
 
-## Mensajería de grupo {#group-messaging}
+## Mensajería grupal {#group-messaging}
 
-Para permitir que los usuarios registrados envíen mensajes directos de forma masiva a los grupos de usuarios, asegúrese de **Habilitar la mensajería de grupo** en las dos instancias siguientes de **Servicios de operaciones de mensajería** configuración:
+Para permitir que los usuarios registrados envíen mensajes directos de forma masiva a grupos de usuarios, asegúrese de lo siguiente **Habilitar la mensajería de grupo** en las dos instancias siguientes de **Servicios de operación de mensajería** configuración:
 
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console`
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging`
@@ -146,14 +146,14 @@ Para permitir que los usuarios registrados envíen mensajes directos de forma ma
 
 ![social-console-op-service](assets/social-console-op-service.png)
 
-**Servicio de operaciones de mensajería: mensajería social**
+**Servicio de Operaciones de Mensajería: mensajería social**
 
 ![social-message-op-service](assets/social-message-op-service.png)
 
 ## Solución de problemas {#troubleshooting}
 
-Una forma de solucionar problemas es habilitar [depuración de mensajes en el registro.](/help/sites-administering/troubleshooting.md)
+Una forma de solucionar los problemas es habilitar [depuración de mensajes en el registro.](/help/sites-administering/troubleshooting.md)
 
 Consulte también [Registradores y escritores para servicios individuales](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
 
-El paquete a monitorizar es `com.adobe.cq.social.messaging`.
+El paquete que se va a supervisar es `com.adobe.cq.social.messaging`.

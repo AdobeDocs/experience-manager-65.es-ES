@@ -1,7 +1,7 @@
 ---
 title: Editor
 seo-title: Editor
-description: Obtenga información sobre cómo volver al Editor de IU clásica.
+description: Aprenda a volver al Editor de IU clásico.
 seo-description: Learn how to switch back to the Classic UI Editor.
 uuid: ca8b07e7-014f-428e-82bd-87f3aae12f6e
 contentOwner: Chris Bohnert
@@ -20,11 +20,11 @@ ht-degree: 7%
 
 # Editor{#editor}
 
-De forma predeterminada, se ha desactivado la posibilidad de cambiar a la IU clásica desde el editor.
+De forma predeterminada, se ha deshabilitado la capacidad para cambiar a la IU clásica desde el editor.
 
-Para volver a activar la opción **Abrir en la IU clásica** en el **Información de la página** , siga estos pasos.
+Para volver a activar la opción **Abrir en IU clásica** en el **Información de página** , siga estos pasos.
 
-1. Con CRXDE Lite, busque el nodo siguiente:
+1. Con el CRXDE Lite, busque el siguiente nodo:
 
    `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 
@@ -32,16 +32,16 @@ Para volver a activar la opción **Abrir en la IU clásica** en el **Informació
 
    ` [https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui)`
 
-1. Creación de una superposición con la variable **Nodo de superposición** , por ejemplo:
+1. Cree una superposición con la variable **Nodo de superposición** opción; por ejemplo:
 
    * **Ruta**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Ubicación de la superposición**: `/apps/`
-   * **Coincidir tipos de nodo**: activo (seleccione la casilla de verificación)
+   * **Hacer coincidir tipos de nodo**: activo (seleccione la casilla de verificación)
 
 1. Agregue la siguiente propiedad de texto de varios valores al nodo superpuesto:
 
    `sling:hideProperties = ["granite:hidden"]`
 
-1. La variable **Abrir en la IU clásica** vuelve a estar disponible en la **Información de la página** al editar páginas.
+1. El **Abrir en IU clásica** está disponible de nuevo en la **Información de página** al editar páginas.
 
    ![](assets/syui-03-2019-02-27-15-19-48.png)

@@ -1,7 +1,7 @@
 ---
-title: Publicar Cancelar publicación de contenido
+title: Publicar contenido para cancelar su publicación
 seo-title: Publish UnPublish Content
-description: Una vez que esté familiarizado con las acciones de administración de contenido en artículos, banners y colecciones, siga esta página para obtener información sobre cómo publicar el contenido. También puede cancelar la publicación del contenido.
+description: Una vez que esté familiarizado con las acciones de administración de contenido en artículos, titulares y colecciones, siga esta página para obtener información sobre cómo publicar el contenido. Además, puede cancelar la publicación del contenido.
 seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
 uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
@@ -17,47 +17,47 @@ ht-degree: 1%
 
 ---
 
-# Publicar Cancelar publicación de contenido{#publish-unpublish-content}
+# Publicar contenido para cancelar su publicación{#publish-unpublish-content}
 
 >[!NOTE]
 >
->Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Una vez que esté familiarizado con las acciones de administración de contenido en artículos, banners y colecciones, puede publicar el contenido. También puede cancelar la publicación del contenido.
+Una vez que esté familiarizado con las acciones de administración de contenido en artículos, titulares y colecciones, puede publicar el contenido. Además, puede cancelar la publicación del contenido.
 
 >[!NOTE]
 >
->Para obtener más información sobre las consideraciones de diseño para las aplicaciones de AEM Mobile, consulte [Consideraciones de diseño para aplicaciones de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
+>Para obtener más información sobre consideraciones de diseño para aplicaciones de AEM Mobile, consulte [Consideraciones de diseño para aplicaciones de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) en la Ayuda en línea.
 
 ## Publicación/cancelación de la publicación del contenido {#publishing-unpublishing-the-content}
 
-Esto difiere de una &quot;AEM Publish&quot;. No se está insertando contenido en una instancia de servidor de AEM Publish para que pueda verse públicamente. Aquí, informamos a Mobile On-Demand de que el contenido seleccionado debe publicarse en la aplicación móvil bajo demanda activa.
+Esto difiere de una &quot;Publicación AEM&quot;. No insertamos contenido en una instancia de servidor de publicación de AEM para que sea visible públicamente. En este caso, informamos a Mobile On-Demand de que el contenido seleccionado debe hacerse público dentro de la aplicación Mobile On-Demand activa.
 
 >[!NOTE]
 >
->El contenido debe cargarse en Mobile On-Demand para poder publicarse.
+>El contenido debe cargarse en Mobile On-Demand antes de poder publicarse.
 
-Flujo de trabajo general para publicar/cancelar la publicación de un artículo:
+Flujo de trabajo general para publicar o cancelar la publicación de un artículo:
 
-1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
+1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
 1. Seleccione un artículo.
 1. Agregue artículos adicionales si es necesario desde la vista de lista.
-1. Seleccione Publicar en la barra de acciones. Después de unos momentos, sus artículos serán ahora públicos.
-1. Siga los mismos pasos descritos anteriormente para cancelar la publicación de artículos.
+1. Seleccione Publicar en la barra de acciones. Después de unos momentos, los artículos se harán públicos.
+1. Siga los mismos pasos anteriores para Cancelar la publicación de artículos.
 
 <!-- FAIL >>[!NOTE]
 >
 >Generally, you should preflight before publishing. See [Previewing with Preflight](/content/docs/en/aem/6-3/administer/mobile-apps/aem-mobile/previewing-with-preflight-on-demand-services.md) for more details.-->
 
-![Chlimage_1-9](assets/chlimage_1-9.gif)
+![chlimage_1-9](assets/chlimage_1-9.gif)
 
 ### Pasos siguientes {#the-next-steps}
 
 Una vez que haya aprendido a crear y publicar contenido, consulte
 
-* [Desarrollo de contenido de AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Administración de contenido para usar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
+* [AEM Desarrollo de contenido para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Administración de contenido para utilizar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-O necesita conocer los temas de creación, consulte
+O bien, todavía tiene que aprender acerca de los temas de creación. Consulte
 
-[Creación AEM contenido para aplicaciones de AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+[AEM Creación de contenido de la para aplicaciones AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)

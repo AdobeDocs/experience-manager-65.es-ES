@@ -12,7 +12,7 @@ docset: aem65
 role: Admin
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '893'
 ht-degree: 100%
 
@@ -172,6 +172,6 @@ Para mejorar el rendimiento, puede configurar el software antivirus para que exc
 >[!NOTE]
 >
 >* Si utiliza una ubicación diferente para el GDS y el directorio temporal, abra AdminUI en `https://'[server]:[port]'/adminui`, vaya a **Inicio > Configuración > Configuración del sistema principal > Configuraciones principales** para confirmar la ubicación utilizada.
->* Si el servidor AEM Forms experimenta un rendimiento lento incluso después de excluir los directorios sugeridos, excluya también el archivo ejecutable Java (java.exe).
+* Si el servidor AEM Forms experimenta un rendimiento lento incluso después de excluir los directorios sugeridos, excluya también el archivo ejecutable Java (java.exe).
 >
 

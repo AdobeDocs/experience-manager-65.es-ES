@@ -22,38 +22,38 @@ ht-degree: 7%
 
 ## Introducción {#introduction}
 
-La función de calendario permite proporcionar información de eventos de la comunidad en formato de calendario a todos los visitantes del sitio o solo a los visitantes del sitio (miembros de la comunidad), mientras que solo los miembros autorizados pueden agregar eventos.
+La función de calendario permite proporcionar información de eventos de la comunidad en formato de calendario a todos los visitantes del sitio o solo a los visitantes del sitio (miembros de la comunidad) que hayan iniciado sesión, mientras que solo los miembros autorizados pueden agregar eventos.
 
 Esta sección de la documentación describe
 
-* Adición de la función de calendario a un sitio AEM
+* AEM Adición de la función de calendario a un sitio de
 * Ajustes de configuración para `Calendar` componentes
 
-## Adición de un calendario a una página {#adding-a-calendar-to-a-page}
+## Agregar un calendario a una página {#adding-a-calendar-to-a-page}
 
 Para agregar un `Calendar` a una página en modo de autor, utilice el navegador de componentes para localizar
 
 * `Communities / Calendar`
 
-y arrástrela a su lugar en una página, por ejemplo, una posición relativa a la función para que los usuarios la revisen.
+y arrástrela a su lugar en una página, como una posición relativa a la función que deben revisar los usuarios.
 
-Para obtener la información necesaria, visite [Conceptos básicos de los componentes de Communities](/help/communities/basics.md).
+Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
-Cuando la variable [bibliotecas requeridas del lado del cliente](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) se incluyen, así es como se muestra la variable `Calendar` aparecerá el componente.
+Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) están incluidos, así es como se `Calendar` El componente aparecerá.
 
 ![componente de calendario](assets/calendar-component.png)
 
-### Configuración del calendario {#configuring-calendar}
+### Configurar el calendario {#configuring-calendar}
 
-Seleccione la colocación `Calendar` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `Calendar` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
-![configure](assets/configure-new.png)
+![configurar](assets/configure-new.png)
 
 ![configure-calendar](assets/configure-calendar1.png)
 
-#### Ficha Configuración {#settings-tab}
+#### Pestaña Configuración {#settings-tab}
 
-En el **Configuración** , especifique si desea permitir o no que las etiquetas se apliquen a las entradas del calendario.
+En el **Configuración** , especifique si desea permitir o no que se apliquen etiquetas a las entradas del calendario.
 
 * **Eventos por página**
 
@@ -61,123 +61,123 @@ En el **Configuración** , especifique si desea permitir o no que las etiquetas 
 
 * **Moderado**
 
-   Si se selecciona, la publicación de eventos de calendario y comentarios debe aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado no está seleccionado.
+   Si se selecciona, la publicación de eventos de calendario y comentarios debe aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado está desmarcado.
 
 * **Cerrado**
 
-   Si se selecciona, el calendario se cierra a nuevas entradas de eventos y comentarios. El valor predeterminado no está seleccionado.
+   Si se selecciona, el calendario se cierra a las nuevas entradas de evento y comentarios. El valor predeterminado está desmarcado.
 
 * **Editor de texto enriquecido**
 
-   Si se selecciona, los eventos de calendario y los comentarios se pueden introducir con marcado. El valor predeterminado está marcado.
+   Si se selecciona, los eventos de calendario y los comentarios se pueden introducir con marcado. La opción predeterminada está activada.
 
 * **Permitir etiquetado**
 
-   Si está activada, permita que los miembros agreguen etiquetas a los eventos que anuncien (consulte **Campo de etiqueta** ). El valor predeterminado está marcado.
+   Si se selecciona esta opción, permite a los miembros agregar etiquetas de etiqueta a los eventos que publican (consulte **Campo de etiqueta** pestaña). La opción predeterminada está activada.
 
 * **Permitir cargas de archivos**
 
-   Si está activada, permita que los archivos adjuntos se agreguen a un evento o comentario de calendario. El valor predeterminado está marcado.
+   Si se selecciona esta opción, se permite agregar archivos adjuntos a un evento de calendario o comentario. La opción predeterminada está activada.
 
 * **Permitir seguimiento**
 
-   Si está activada, permita que los miembros sigan los eventos anunciados en el calendario. El valor predeterminado está marcado.
+   Si se selecciona esta opción, se permite a los miembros seguir los eventos publicados en el calendario. La opción predeterminada está activada.
 
 * **Tamaño máximo de archivo**
 
-   Solo relevante si `Allow File Uploads` está activada. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
+   Relevante solo si `Allow File Uploads` está marcada. Este campo limitará el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
 
 * **Tipos de archivo permitidos**
 
-   Solo relevante si `Allow File Uploads` está activada. Lista de extensiones de archivo separados por coma con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar aquellos que no se especifiquen. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Relevante solo si `Allow File Uploads` está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los que no se hayan especificado. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
-   Solo es relevante si está marcada la opción Permitir cargas de archivos . Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152** **(2 Mb).
+   Solo es relevante si está marcada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152** **(2 Mb).
 
 * **Tipos de imagen de portada permitidos**
 
-   Lista separada por comas de las extensiones de archivo de imagen con el separador &quot;punto&quot;. El valor predeterminado es `.jpg,.jpeg,.png,.gif,.bmp`.
+   Lista separada por comas de las extensiones de archivo de imagen con el separador de &quot;puntos&quot;. El valor predeterminado es `.jpg,.jpeg,.png,.gif,.bmp`.
 
 * **Permitir respuestas de debate**
 
-   Si está marcada esta opción, permita que se respondan a los comentarios anunciados en el evento de calendario. El valor predeterminado está marcado.
+   Si se selecciona esta opción, se permiten las respuestas a los comentarios publicados en el evento del calendario. La opción predeterminada está activada.
 
 * **Permitir que los usuarios eliminen comentarios y eventos**
 
-   Si está activada, permita que los miembros eliminen los comentarios y los eventos de calendario que hayan publicado. El valor predeterminado es** **marcado.
+   Si se selecciona esta opción, permite que los miembros eliminen los comentarios y los eventos de calendario que hayan publicado. El valor predeterminado es** **activado.
 
 * **Habilitar la votación**
 
-   Si está marcada esta opción, incluya la función Votación con un evento de calendario. El valor predeterminado está marcado.
+   Si se selecciona, se debe incluir la función de votación con un evento de calendario. La opción predeterminada está activada.
 
 * **Mostrar rutas**
 
-   Mostrar rutas en la página de eventos. El valor predeterminado está marcado.
+   Mostrar rutas en la página de eventos. La opción predeterminada está activada.
 
 * **Filtro de intervalo de fechas**
 
-   Define el número de días agregados a la fecha actual para calcular el valor &quot;Para&quot; del filtro de página de lista de eventos de calendario. El número predeterminado es 30.
+   Define el número de días agregados a la fecha actual para calcular el valor &quot;Hasta&quot; del filtro de página con lista de eventos de calendario. El número predeterminado es 30.
 
 * **Permitir contenido destacado**
 
-   Si se selecciona, la idea puede identificarse como [contenido destacado](/help/communities/featured.md). El valor predeterminado no está seleccionado.
+   Si se selecciona, la idea puede identificarse como [contenido destacado](/help/communities/featured.md). El valor predeterminado está desmarcado.
 
-En el **Moderación del usuario** especifique cómo se administran los temas publicados y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
+En el **Moderación de usuario** , especifique cómo se administran los temas expuestos y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
-#### Pestaña Moderación del usuario {#user-moderation-tab}
+#### Pestaña Moderación de usuario {#user-moderation-tab}
 
 * **Denegar entradas**
 
-   Si se selecciona, se permitirá a los moderadores miembros de confianza denegar publicaciones e impedir que la publicación aparezca en el foro público. El valor predeterminado está marcado.
+   Si se selecciona, se permitirá a los moderadores miembros de confianza denegar publicaciones e impedir que aparezcan en el foro público. La opción predeterminada está activada.
 
 * **Cerrar/abrir de nuevo los eventos**
 
-   Si se selecciona, los moderadores miembros de confianza pueden cerrar un evento para realizar más ediciones y comentarios, y también pueden volver a abrir un evento. El valor predeterminado está marcado.
+   Si se selecciona, los moderadores de miembros de confianza pueden cerrar un evento para realizar más ediciones y comentarios, y también pueden volver a abrir un evento. La opción predeterminada está activada.
 
 * **Marcar entradas**
 
-   Si está activada, permita que los miembros marquen los eventos o comentarios de otros como inapropiados. El valor predeterminado está marcado.
+   Si se selecciona esta opción, se permite a los miembros marcar los eventos o comentarios de otros como inadecuados. La opción predeterminada está activada.
 
 * **Lista de motivos de indicación**
 
-   Si está marcada esta opción, permita que los miembros elijan, desde una lista desplegable, el motivo por el que marcan un evento o comentario como inapropiado. El valor predeterminado no está seleccionado.
+   Si se selecciona esta opción, se permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan un evento o comentario como inapropiado. El valor predeterminado está desmarcado.
 
 * **Motivo de indicación personalizado**
 
-   Si está marcada esta opción, permita que los miembros especifiquen su propio motivo para marcar un evento o comentario como inapropiado. El valor predeterminado no está seleccionado.
+   Si se selecciona esta opción, permite que los miembros especifiquen su propio motivo para marcar un evento o comentario como inapropiado. El valor predeterminado está desmarcado.
 
 * **Umbral de moderación**
 
-   Introduzca el número de veces que los miembros deben marcar un evento o comentario antes de notificar a los moderadores. El valor predeterminado es 1 ( una vez).
+   Introduzca el número de veces que los miembros deben marcar un evento o comentario antes de notificarlo a los moderadores. El valor predeterminado es 1 ( una vez).
 
 * **Límite de indicación**
 
-   Introduzca el número de veces que se debe marcar un evento o comentario antes de ocultarlo de la vista pública. Si se establece en -1, el tema o comentario marcado nunca se oculta a la vista del público. De lo contrario, este número debe ser bueno o igual al umbral de moderación. El valor predeterminado es 5.
+   Introduzca el número de veces que se debe marcar un evento o comentario antes de ocultarlo de la vista pública. Si se establece en -1, el tema o comentario marcado nunca se ocultará de la vista pública. De lo contrario, este número debe ser bueno o igual al umbral de moderación. El valor predeterminado es 5.
 
-#### Ficha Campo de etiqueta {#tag-field-tab}
+#### Pestaña Campo de etiqueta {#tag-field-tab}
 
-En el **Campo de etiqueta** , las etiquetas que se pueden aplicar, si se permiten en la sección **Configuración** , se limitan según los espacios de nombres seleccionados.
+En el **Campo de etiqueta** pestaña, las etiquetas que se pueden aplicar, si se permiten en la **Configuración** están limitadas según las áreas de nombres seleccionadas.
 
 * **Espacios de nombres permitidos**
 
-   Pertinente si `Allow Tagging` se marca en la sección **Configuración** pestaña . Las etiquetas que se pueden aplicar se limitan a las que están dentro de las categorías de espacio de nombres seleccionadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el espacio de nombres predeterminado) así como &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno activado, lo que significa que se permiten todas las áreas de nombres.
+   Relevante si `Allow Tagging` está marcada en la **Configuración** pestaña. Las etiquetas que se pueden aplicar se limitan a aquellas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) así como &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
 
 * **Límite de sugerencias**
 
-   Introduzca el número de etiquetas que se mostrarán como una sugerencia para el usuario que publica en el foro. El valor predeterminado es **-**1 (sin límites).
+   Introduzca el número de etiquetas que desea mostrar como sugerencia al usuario que publica en el foro. El valor predeterminado es **-**1 (sin límites).
 
 >[!NOTE]
 >
->Visita [Administración de etiquetas](/help/sites-administering/tags.md) para aprender a añadir un nuevo espacio de nombres de etiqueta (taxonomía).
+>Visita [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre cómo añadir un nuevo área de nombres de etiqueta (taxonomía).
 
-#### Ficha Traducción {#translation-tab}
+#### Pestaña Traducción {#translation-tab}
 
-En el **Traducción** , si la traducción está habilitada para el sitio de la comunidad, la traducción se puede configurar para que traduzca todo el subproceso (evento y comentarios) en lugar de anuncios específicos.
+En el **Traducción** , si la traducción está habilitada para el sitio de la comunidad, la traducción puede configurarse para traducir todo el hilo (evento y comentarios) en lugar de publicaciones específicas.
 
 * **Traducir todos**
 
-   Si se selecciona, el evento y los comentarios se traducen al idioma preferido del usuario. El valor predeterminado está marcado.
+   Si se selecciona, el evento y los comentarios se traducen al idioma preferido del usuario. La opción predeterminada está activada.
 
 ## Experiencia del visitante del sitio {#site-visitor-experience}
 
@@ -185,25 +185,25 @@ En el entorno de publicación, la función de calendario mostrará un campo de b
 
 Cuando se selecciona un evento de calendario, se muestran los detalles, la descripción y los comentarios del evento de calendario.
 
-Otras capacidades dependen de si el visitante del sitio es moderador, administrador, miembro de la comunidad, miembro privilegiado o anónimo.
+Otras capacidades dependen de si el visitante del sitio es un moderador, administrador, miembro de la comunidad, miembro privilegiado o anónimo.
 
 ### Moderadores y administradores {#moderators-and-administrators}
 
-Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar [tareas de moderación](/help/communities/moderate-ugc.md) (según lo permita la configuración del componente) en todos los eventos de calendario y comentarios anunciados en un evento.
+Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar lo siguiente [tareas de moderación](/help/communities/moderate-ugc.md) (según lo permitido por la configuración del componente) en todos los eventos de calendario y comentarios publicados en un evento.
 
-![vista moderadores](assets/moderators-view.png)
+![moderators-view](assets/moderators-view.png)
 
 #### Miembros {#members}
 
-Cuando el usuario que ha iniciado sesión es un miembro de la comunidad o [miembro privilegiado](/help/communities/users.md#privileged-members-group) (según la configuración), pueden seleccionar `New Event` para crear y anunciar un nuevo evento de calendario.
+Cuando el usuario que ha iniciado sesión es miembro de la comunidad o [miembro privilegiado](/help/communities/users.md#privileged-members-group) (según la configuración), pueden seleccionar `New Event` para crear y publicar un nuevo evento de calendario.
 
-Concretamente, podrán:
+Concretamente, pueden:
 
 * Crear un nuevo evento de calendario
 * Publicar un comentario en un evento de calendario
-* Editar su propio evento de calendario o comentario
-* Eliminar su propio evento de calendario o comentario
-* Marcar eventos de calendario o comentarios de otros
+* Editar su propio evento o comentario del calendario
+* Eliminar su propio evento o comentario del calendario
+* Marcar los eventos o comentarios del calendario de otros usuarios
 
 ![create-event](assets/configure-calendar2.png)
 
@@ -211,16 +211,16 @@ Concretamente, podrán:
 
 #### Anónimo {#anonymous}
 
-Los visitantes del sitio que no hayan iniciado sesión solo podrán leer los eventos de calendario anunciados, traducirlos si son compatibles, pero no pueden agregar un evento o comentario ni marcar los eventos o comentarios de otros.
+Los visitantes del sitio que no hayan iniciado sesión solo pueden leer los eventos de calendario publicados, traducirlos si se admiten, pero no pueden agregar un evento o comentario ni marcar los eventos o comentarios de otros.
 
 ![anonymous-user-view](assets/anonymous-user-view1.png)
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la [Elementos básicos del calendario](/help/communities/calendar-basics-for-developers.md) para desarrolladores.
+Puede encontrar más información en la [Calendar Essentials](/help/communities/calendar-basics-for-developers.md) para desarrolladores.
 
-Para moderar eventos de calendario y comentarios, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
+Para ver la moderación de los eventos de calendario y los comentarios, consulte [Moderación del contenido generado por el usuario](/help/communities/moderate-ugc.md).
 
 Para etiquetar eventos de calendario y comentarios, consulte [Etiquetado del contenido generado por el usuario](/help/communities/tag-ugc.md).
 
-Para ver la traducción de los eventos y comentarios del calendario, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).
+Para ver la traducción de los eventos de calendario y los comentarios, consulte [Traducción del contenido generado por el usuario](/help/communities/translate-ugc.md).

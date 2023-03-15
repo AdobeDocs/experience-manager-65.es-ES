@@ -1,7 +1,7 @@
 ---
-title: Aplicaciones móviles
+title: Mobile-Apps
 seo-title: Mobile-Apps
-description: "Aplicaciones móviles"
+description: "Mobile-Apps"
 seo-description: null
 uuid: 4a91241e-8c78-42fe-a5d3-732a6c34cbfd
 contentOwner: msm-service
@@ -16,19 +16,19 @@ ht-degree: 1%
 
 ---
 
-# Aplicaciones móviles{#mobile-apps}
+# Mobile-Apps{#mobile-apps}
 
 >[!NOTE]
 >
->Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) Mobile forma parte de la plataforma digital de varios canales de Adobe Experience Manager que también utiliza AEM Assets, Sites, Screens, Workflow, User Manager, Commerce y Forms. AEM Mobile ofrece una notable flexibilidad de implementación, lo que permite a las empresas utilizar una variedad de fuentes de contenido.
+Adobe Experience Manager AEM () Mobile forma parte de la plataforma digital multicanal de Adobe Experience Manager que también aprovecha AEM Assets, Sites, Screens, Workflow, User Manager, Commerce y Forms. AEM Mobile ofrece una notable flexibilidad de implementación, lo que permite a las empresas utilizar una variedad de fuentes de contenido.
 
-AEM Mobile ofrece varios métodos para crear aplicaciones. Las diferentes formas de crear aplicaciones son:
+AEM Mobile ofrece varios métodos para crear aplicaciones. Las diferentes formas de crear aplicaciones de son las siguientes:
 
 * [Introducción a AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
-* [Introducción a Adobe PhoneGap Enterprise con AEM](/help/mobile/phonegap.md)
+* [Introducción a Adobe PhoneGap AEM Enterprise con](/help/mobile/phonegap.md)
 
 >[!NOTE]
 >
->Si es nuevo en Adobe Experience Manager, es posible que desee pasar por [Introducción a AEM](/help/sites-deploying/deploy.md).
+>Si es su primera vez en Adobe Experience Manager, puede que quiera seguir [AEM Introducción a la administración de segmentos](/help/sites-deploying/deploy.md).

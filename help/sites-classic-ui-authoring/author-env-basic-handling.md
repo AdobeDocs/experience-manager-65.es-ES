@@ -56,7 +56,7 @@ Las siguientes son las consolas principales:
   </tr>
   <tr>
    <td><strong>Lanzamientos</strong></td>
-   <td>Esto le ayuda a administrar sus <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanzamientos</a>, que le permiten desarrollar contenido para una versión futura de una o varias páginas web activadas.<br /> <i>Nota: En la IU táctil, muchas de las mismas funcionalidades están disponibles en la consola Sitios, junto con el carril Referencias .</i> <i>Si se necesita, esta consola está disponible desde la consola Herramientas; seleccione Operaciones y, después, Lanzamientos.</i></td>
+   <td>Esto le ayuda a administrar sus <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanzamientos</a>, que le permiten desarrollar contenido para una versión futura de una o varias páginas web activadas.<br /> <i>Nota: En la IU táctil, gran parte de la misma funcionalidad está disponible en la consola Sitios, junto con el carril Referencias.</i> <i>Si se necesita, esta consola está disponible desde la consola Herramientas; seleccione Operaciones y, después, Lanzamientos.</i></td>
   </tr>
   <tr>
    <td><strong>Bandeja de entrada </strong></td>
@@ -89,13 +89,13 @@ La consola **Sitios web** ofrece dos paneles para desplazarse y administrar sus 
 
 * Panel izquierdo
 
-   Muestra la estructura de árbol de los sitios web y las páginas de dichos sitios web.
+   Esto muestra la estructura de árbol de los sitios web y las páginas dentro de esos sitios web.
 
    También muestra información sobre otros aspectos o AEM, entre ellos proyectos, modelos y recursos.
 
 * Panel derecho
 
-   Muestra las páginas (en la ubicación seleccionada en el panel izquierdo) y se puede utilizar para realizar acciones.
+   Esto muestra las páginas (en la ubicación seleccionada en el panel izquierdo) y se puede utilizar para realizar acciones.
 
 Desde aquí puede [administrar sus páginas](/help/sites-authoring/managing-pages.md) mediante la barra de herramientas, un menú contextual o abriendo una página para efectuar más acciones.
 
@@ -103,13 +103,13 @@ Desde aquí puede [administrar sus páginas](/help/sites-authoring/managing-page
 >
 >El control básico es idéntico en todas las consolas. Esta sección se centra en la consola **Sitios web**, ya que es la consola principal durante la creación.
 
-![Chlimage_1-9](assets/chlimage_1-9a.png)
+![chlimage_1-9](assets/chlimage_1-9a.png)
 
 ## Acceso a la Ayuda   {#accessing-help}
 
 En varias consolas (p. ej., Sitios web) también existe el botón **Ayuda**, que abre Uso compartido de paquetes o el sitio de documentación.
 
-![imagen_1-10](assets/chlimage_1-10a.png)
+![chlimage_1-10](assets/chlimage_1-10a.png)
 
 Al editar una página, la [barra de tareas también tiene un botón para acceder a la ayuda](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
@@ -229,4 +229,4 @@ Los colores junto a las páginas en las columnas **Publicado** y **Modificado** 
 
 La IU clásica utiliza mecanismos familiares para desplazarse e iniciar acciones, incluidos clics y doble clics. Según la situación actual, también hay disponible una selección de menús contextuales (que normalmente se abren con el botón derecho del ratón):
 
-![imagen_1-11](assets/chlimage_1-11a.png)
+![chlimage_1-11](assets/chlimage_1-11a.png)

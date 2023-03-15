@@ -1,7 +1,7 @@
 ---
 title: Artículos relacionados de la comunidad
 seo-title: Related Community Articles
-description: Encuentre una lista de artículos generados por la comunidad sobre las integraciones de Marketing Cloud con AEM.
+description: Encuentre una lista de artículos generados por la comunidad acerca de las integraciones de Marketing Cloud AEM de con los recursos de la.
 seo-description: Find a list of community generated articles about Marketing Cloud integrations with AEM.
 uuid: b1562a21-a6f5-4cd9-821f-f258b53a1d99
 contentOwner: Guillaume Carlino
@@ -19,10 +19,10 @@ ht-degree: 6%
 
 # Artículos relacionados de la comunidad{#related-community-articles}
 
-La Comunidad AEM ha elaborado una serie de artículos relacionados con las integraciones de Marketing Cloud con AEM.
+AEM La Comunidad de usuarios de ha generado una serie de artículos relacionados con Integraciones de Marketing Cloud AEM de con la.
 
-A continuación se muestra una lista del contenido disponible:
+Este es un listado del contenido disponible:
 
 * [Uso de reglas de activación en páginas web de Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/dtm.html)
-* [Integración de AEM con Adobe Analytics y Target mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)
-* [Integración de Adobe Experience Manager y Adobe Campaign Standard para crear newsletters](https://helpx.adobe.com/experience-manager/using/aem_campaign.html)
+* [AEM Integración de los segmentos de con Adobe Analytics y Target mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)
+* [Integración de Adobe Experience Manager y Adobe Campaign Standard para crear boletines informativos](https://helpx.adobe.com/experience-manager/using/aem_campaign.html)

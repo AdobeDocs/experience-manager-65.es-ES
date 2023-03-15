@@ -25,38 +25,38 @@ El asistente de copia de idioma es una experiencia guiada para crear e instrumen
 
 >[!NOTE]
 >
->El usuario debe ser miembro del grupo de administradores de proyectos para crear la copia de idioma de un sitio.
+>El usuario debe ser miembro del grupo de administradores del proyecto para crear la copia de idioma de un sitio.
 
 Para acceder a este asistente:
 
 1. En Sitios, seleccione una página y pulse o haga clic en Crear.
 
-   ![Chlimage_1-9](assets/chlimage_1-9.jpeg)
+   ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
 1. Seleccione Copia de idioma y se abrirá el asistente.
 
-   ![imagen_1-10](assets/chlimage_1-10.jpeg)
+   ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. La variable **Seleccionar origen** paso del asistente le permite agregar o quitar páginas. También tiene la opción de incluir o excluir las subpáginas.
+1. El **Seleccionar origen** Este paso del asistente le permite agregar o quitar páginas. También tiene la opción de incluir o excluir las subpáginas.
 
-   ![imagen_1-11](assets/chlimage_1-11.jpeg)
+   ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. La variable **Siguiente** le lleva a la función **Configurar** del asistente. Aquí puede añadir o eliminar idiomas y seleccionar el método de traducción.
+1. El **Siguiente** El botón le lleva a la **Configurar** del asistente. Aquí puede añadir o quitar idiomas y seleccionar el método de traducción.
 
-   ![imagen_1-12](assets/chlimage_1-12.jpeg)
+   ![chlimage_1-12](assets/chlimage_1-12.jpeg)
 
    >[!NOTE]
    >
    >De forma predeterminada, solo hay una configuración de traducción. Para poder seleccionar otra configuración, primero debe configurar las configuraciones de nube. Consulte [Configuración del marco de trabajo de integración de traducción](/help/sites-administering/tc-tic.md)
 
-1. La variable **Siguiente** le lleva a la función **Traducir** del asistente. Aquí puede elegir entre crear solo la estructura, crear un nuevo proyecto de traducción o agregar a un proyecto de traducción existente.
+1. El **Siguiente** El botón le lleva a la **Traducir** del asistente. Aquí puede elegir entre crear solo la estructura, crear un nuevo proyecto de traducción o agregar a un proyecto de traducción existente.
 
    >[!NOTE]
    >
    >Si ha seleccionado varios idiomas en el paso anterior, se crearán varios proyectos de traducción.
 
-   ![imagen_1-13](assets/chlimage_1-13.jpeg)
+   ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
 1. El botón **Crear** finaliza el asistente.
 
-   ![imagen_1-14](assets/chlimage_1-14.jpeg)
+   ![chlimage_1-14](assets/chlimage_1-14.jpeg)

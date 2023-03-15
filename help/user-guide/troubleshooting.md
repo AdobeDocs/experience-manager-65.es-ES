@@ -1,7 +1,7 @@
 ---
-title: Solución de problemas AEM
+title: AEM Solución de problemas
 seo-title: Troubleshooting AEM
-description: Solución de problemas AEM
+description: AEM Solución de problemas
 seo-description: Troubleshooting AEM
 exl-id: f7a220bf-0b0c-4d16-824d-dad7d86c01c9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
@@ -11,20 +11,20 @@ ht-degree: 6%
 
 ---
 
-# Solución de problemas AEM {#troubleshooting-aem}
+# AEM Solución de problemas {#troubleshooting-aem}
 
 ## Solución de problemas relacionados con el rendimiento de la instancia del autor {#performance}
 
-[Consulte esta guía y sugerencias para solucionar el problema de la instancia de autor de AEM.](/help/sites-authoring/troubleshooting.md)
+[AEM Consulte esta guía y sugerencias para solucionar problemas de la instancia de autor de la.](/help/sites-authoring/troubleshooting.md)
 
-## Solución de problemas de administración {#administering}
+## Resolución de problemas de administración {#administering}
 
-[Consulte esta guía y sugerencias para solucionar problemas de administración en AEM.](/help/sites-administering/troubleshoot.md)
+[AEM Consulte esta guía y sugerencias para solucionar los problemas de administración en la aplicación de la solución de problemas de la administración de.](/help/sites-administering/troubleshoot.md)
 
-## Resolución de problemas de registros de AEM {#logs}
+## AEM Resolución de problemas de registros {#logs}
 
-[Consulte esta guía y sugerencias para solucionar problemas con los registros de AEM.](/help/sites-administering/troubleshooting.md)
+[AEM Consulte esta guía y sugerencias para solucionar problemas con los registros de.](/help/sites-administering/troubleshooting.md)
 
 ## Solución de problemas de replicación {#replication}
 
-[Consulte esta guía y sugerencias para solucionar problemas de replicación en AEM.](/help/sites-deploying/troubleshoot-rep.md)
+[AEM Consulte esta guía y sugerencias para solucionar los problemas de replicación en la.](/help/sites-deploying/troubleshoot-rep.md)

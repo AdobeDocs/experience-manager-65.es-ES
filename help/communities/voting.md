@@ -19,50 +19,50 @@ ht-degree: 5%
 
 # Uso de la votación {#using-voting}
 
-La variable `Voting` es una herramienta útil que permite a los miembros de la comunidad clasificar un contenido determinado, como una respuesta dentro de un componente QnA. Con la variable `Voting` , los miembros seleccionan flechas arriba o abajo para indicar su opinión.
+El `Voting` El componente es una herramienta útil que permite a los miembros de la comunidad clasificar un fragmento de contenido en particular, como una respuesta dentro de un componente de control de calidad. Con el `Voting` componente, los miembros seleccionan flechas arriba o abajo para indicar su opinión.
 
-## Adición de votos a una página {#adding-voting-to-a-page}
+## Agregar la votación a una página {#adding-voting-to-a-page}
 
-Para agregar un `Voting` a una página en modo de autor, utilice el navegador de componentes para localizar `Communities / Voting` y arrástrela a su lugar en una página, como una posición relativa a la función para que los usuarios voten.
+Para agregar un `Voting` a una página en modo de autor, utilice el navegador de componentes para localizar `Communities / Voting` y arrástrela a su lugar en una página, como una posición relativa a la función por la que los usuarios pueden votar.
 
-Para obtener la información necesaria, visite [Conceptos básicos de los componentes de Communities](basics.md).
+Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](basics.md).
 
-Cuando la variable [bibliotecas requeridas del lado del cliente](essentials-voting.md#essentials-for-client-side) se incluyen, así es como se muestra la variable `Voting` aparecerá el componente.
+Si la variable [bibliotecas requeridas del lado del cliente](essentials-voting.md#essentials-for-client-side) están incluidos, así es como se `Voting` El componente aparecerá.
 
 ![componente de votación](assets/voting-component.png)
 
-## Configuración del voto {#configuring-voting}
+## Configuración de votación {#configuring-voting}
 
-Seleccione la colocación `Voting` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `Voting` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
-![configure](assets/configure-new.png)
+![configurar](assets/configure-new.png)
 
-En el **[!UICONTROL Textos y etiquetas]** especifique las propiedades utilizadas para registrar votos.
+En el **[!UICONTROL Textos y etiquetas]** , especifique las propiedades utilizadas para registrar votos.
 
-![etiqueta de voto](assets/voting-label.png)
+![etiqueta de votación](assets/voting-label.png)
 
 * **[!UICONTROL Etiqueta de respuesta positiva]**
 
-   (*Requerido*) El nombre de propiedad interno para una respuesta positiva.
+   (*Requerido*) El nombre de propiedad interno de una respuesta positiva.
 
 * **[!UICONTROL Etiqueta de respuesta negativa]**
 
-   (*Requerido*) El nombre de propiedad interna para una respuesta negativa.
+   (*Requerido*) El nombre de propiedad interno de una respuesta negativa.
 
 * **[!UICONTROL Nombre de recuento]**
 
-   (*Requerido*) El nombre de propiedad interno identificable para esta instancia de un componente de votación.
+   (*Requerido*) El nombre de propiedad interno e identificable para esta instancia de un componente de voto.
 
 ## Experiencia del visitante del sitio {#site-visitor-experience}
 
 ### Miembros {#members}
 
-Los Miembros sólo podrán votar una vez, pero podrán modificarlo en cualquier momento.
+Los diputados sólo podrán votar una vez, pero podrán cambiar su voto en cualquier momento.
 
 ### Anónimo {#anonymous}
 
-No se admite la votación anónima. Los visitantes del sitio deben registrarse (convertirse en miembros) e iniciar sesión para participar en la votación una vez.
+No se admite el voto anónimo. Los visitantes del sitio deben registrarse (convertirse en miembros) e iniciar sesión para participar en la votación una vez.
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la [Esenciales de votación](essentials-voting.md) para desarrolladores.
+Puede encontrar más información en la [Voting Essentials](essentials-voting.md) para desarrolladores.

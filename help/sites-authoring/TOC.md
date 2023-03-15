@@ -18,8 +18,8 @@ ht-degree: 87%
 
 # Guía del usuario de creación de AEM 6.5 {#authoring}
 
-+ [Información general sobre la Guía del usuario sobre creación](home.md)
-+ Tareas, herramientas y conceptos esenciales para la creación AEM {#essentials}
++ [Creación de Guía del usuario](home.md)
++ AEM Tareas, herramientas y conceptos esenciales para la creación de {#essentials}
    + [Primeros pasos de creación](first-steps.md)
    + [Creación de páginas](page-authoring.md)
    + [Guía rápida para la creación de páginas](qg-page-authoring.md)
@@ -76,7 +76,7 @@ ht-degree: 87%
    + [Aplicación de flujos de trabajo a páginas](workflows-applying.md)
    + [Participación en flujos de trabajo](workflows-participating.md)
    + [Uso de flujos de trabajo de proyecto](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
-+ Rendimiento de la página {#page-performance}
++ Rendimiento de página {#page-performance}
    + [Perspectiva de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
    + [Analizar el rendimiento de la página](ci-analyze.md)
    + [Visualización de datos de análisis de la página](pa-using.md)
@@ -90,7 +90,7 @@ ht-degree: 87%
    + [Administrar audiencias](managing-audiences.md)
    + [Creación y administración de ofertas](offerlib.md)
    + [Información acerca de la segmentación](segmentation-overview.md)
-+ AEM y Adobe Campaign {#aem-adobe-campaign}
++ AEM y ADOBE CAMPAIGN {#aem-adobe-campaign}
    + [Trabajo con Adobe Campaign](adobe-campaign.md)
    + [Trabajo con Adobe Campaign Classic y Adobe Campaign Standard](campaign.md)
    + [Targeting de Adobe Campaign](target-adobe-campaign.md)

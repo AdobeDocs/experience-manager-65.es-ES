@@ -1,7 +1,7 @@
 ---
 title: Prácticas recomendadas de traducción
 seo-title: Translation Best Practices
-description: Encuentre las prácticas recomendadas recopiladas por los equipos de consultoría e ingeniería de Adobe para ayudarle a poner en marcha proyectos de traducción.
+description: Encuentre prácticas recomendadas recopiladas por equipos de consultoría e ingeniería de Adobes para ayudarle a poner en marcha proyectos de traducción.
 seo-description: Find best practices compiled by Adobe engineering and consulting teams to help you get up and running with translation projects.
 uuid: 3bac1d73-9696-4c9b-8bdd-6f00fac40cf7
 contentOwner: msm-service

@@ -1,7 +1,7 @@
 ---
-title: Configuración de la segmentación
+title: Configuración de segmentación
 seo-title: Configuring Segmentation
-description: Obtenga información sobre cómo configurar la segmentación para AEM Campaign.
+description: AEM Obtenga información sobre cómo configurar la segmentación para la campaña de.
 seo-description: Learn how to configure segmentation for AEM Campaign.
 uuid: 604ca34d-cdb9-49ff-8f75-02a44b60a8a2
 contentOwner: msm-service
@@ -18,36 +18,36 @@ ht-degree: 18%
 
 ---
 
-# Configuración de la segmentación {#configuring-segmentation}
+# Configuración de segmentación {#configuring-segmentation}
 
 >[!NOTE]
 >
->Este documento cubre la configuración de la segmentación como se usa con Client Context. Para configurar segmentos con ContextHub mediante la IU táctil, consulte [Configuración de la segmentación con ContextHub](/help/sites-administering/segmentation.md).
+>Este documento cubre la configuración de la segmentación tal como se utiliza con Client Context. Para configurar segmentos con ContextHub mediante la interfaz de usuario táctil, consulte [Configuración de la segmentación con ContextHub](/help/sites-administering/segmentation.md).
 
-La segmentación es una consideración clave al crear una campaña. Consulte [Glosario de segmentación](/help/sites-authoring/segmentation-overview.md) para obtener información sobre cómo funciona la segmentación y términos clave.
+La segmentación es una consideración clave al crear una campaña. Consulte [Glosario de segmentación](/help/sites-authoring/segmentation-overview.md) para obtener información sobre cómo funciona la segmentación y los términos clave.
 
 En función de la información que ya haya recopilado acerca de los visitantes del sitio y los objetivos que quiera lograr, deberá definir los segmentos y las estrategias necesarios para el contenido de destino.
 
-Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Este contenido se mantiene en la variable [Campañas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) del sitio web. Las páginas de teaser definidas aquí se pueden incluir como párrafos de teaser en cualquier página y definir para qué segmento del visitante se aplica el contenido especializado.
+Estos segmentos se utilizan para proporcionar a un visitante contenido dirigido específicamente. Este contenido se mantiene en la variable [Campañas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) de la página web. Las páginas de teaser definidas aquí se pueden incluir como párrafos de teaser en cualquier página y definir para qué segmento de visitante se aplica el contenido especializado.
 
 AEM le permite crear y actualizar fácilmente segmentos, teasers y campañas. También le permite verificar los resultados de sus definiciones.
 
-La variable **Editor de segmentos** le permite definir fácilmente un segmento:
+El **Editor de segmentos** le permite definir fácilmente un segmento:
 
 ![](assets/segmenteditor.png)
 
-Puede **Editar** cada segmento para especificar un **Título**, **Descripción** y **Aumento** factor. Con la barra de tareas, puede agregar **Y** y **O** contenedores para definir la variable **Lógica de segmento** y, a continuación, añada el **Características del segmento** para definir los criterios de selección.
+Puede **Editar** Seleccione cada segmento para especificar un **Título**, **Descripción** y **Aumentar** factor. Mediante la barra de tareas puede agregar **Y** y **O** contenedores para definir el **Lógica de segmento** y, a continuación, agregue el requerido **Características del segmento** para definir los criterios de selección.
 
 ## Factor de ampliación {#boost-factor}
 
-Cada segmento tiene un **Aumento** parámetro que se utiliza como factor de ponderación; un número mayor indica que el segmento se seleccionará con preferencia sobre un segmento con un número menor.
+Cada segmento tiene un **Aumentar** parámetro que se utiliza como factor de ponderación; un número mayor indica que el segmento se seleccionará con preferencia sobre un segmento con un número menor.
 
 * Valor mínimo: `0`
 * Valor máximo: `1000000`
 
 ## Lógica de segmento {#segment-logic}
 
-Los siguientes contenedores de lógica están disponibles de forma predeterminada y le permiten construir la lógica de su selección de segmentos. Se pueden arrastrar desde la barra de tareas al editor:
+Los siguientes contenedores lógicos están disponibles de forma predeterminada y le permiten construir la lógica de su selección de segmentos. Se pueden arrastrar de la barra de tareas al editor:
 
 <table>
  <tbody>
@@ -64,13 +64,13 @@ Los siguientes contenedores de lógica están disponibles de forma predeterminad
 
 ## Características del segmento {#segment-traits}
 
-Las siguientes características de segmento están disponibles de forma predeterminada: se pueden arrastrar desde la barra de tareas al editor:
+Las siguientes características del segmento están disponibles y se pueden arrastrar de la barra de tareas al editor:
 
 <table>
  <tbody>
   <tr>
    <td> Rango de IP<br /> </td>
-   <td>Define un rango de direcciones IP que el visitante puede tener.<br /> </td>
+   <td>Define un intervalo de direcciones IP que puede tener el visitante.<br /> </td>
   </tr>
   <tr>
    <td> Visitas de la página<br /> </td>
@@ -86,7 +86,7 @@ Las siguientes características de segmento están disponibles de forma predeter
   </tr>
   <tr>
    <td> Script</td>
-   <td>Expresión de JavaScript que se va a evaluar.<br /> </td>
+   <td>Expresión JavaScript que se va a evaluar.<br /> </td>
   </tr>
   <tr>
    <td> Referencia del segmento <br /> </td>
@@ -94,20 +94,20 @@ Las siguientes características de segmento están disponibles de forma predeter
   </tr>
   <tr>
    <td> Nube de etiquetas<br /> </td>
-   <td>Etiquetas que se compararán con las de las páginas visitadas.<br /> </td>
+   <td>Etiquetas que deben coincidir con las de las páginas visitadas.<br /> </td>
   </tr>
   <tr>
    <td> Edad del usuario<br /> </td>
-   <td>Tomado del perfil de usuario.<br /> </td>
+   <td>Como se toma del perfil de usuario.<br /> </td>
   </tr>
   <tr>
    <td> Propiedad de usuario<br /> </td>
-   <td>Cualquier otra información disponible en el perfil del usuario. </td>
+   <td>Cualquier otra información que esté disponible en el perfil del usuario. </td>
   </tr>
  </tbody>
 </table>
 
-Puede combinar estos rasgos con los operadores booleanos OR y AND (consulte [Creación de un nuevo segmento](#creating-a-new-segment)) para definir el escenario exacto para seleccionar este segmento.
+Puede combinar estos rasgos mediante los operadores booleanos OR y AND (consulte [Creación de un nuevo segmento](#creating-a-new-segment)) para definir el escenario exacto para seleccionar este segmento.
 
 Cuando toda la instrucción se evalúa como verdadera, este segmento se ha resuelto. En caso de que se apliquen varios segmentos, el factor **[Aumento](/help/sites-administering/campaign-segmentation.md#boost-factor)** también se utiliza.
 
@@ -117,7 +117,7 @@ Cuando toda la instrucción se evalúa como verdadera, este segmento se ha resue
 
 >[!NOTE]
 >
->Propiedades con la variable **_i18n** Los sufijos se establecen mediante un script que forma parte de la clientlib de la interfaz de usuario de la personalización. Todos los clientlibs relacionados con la interfaz de usuario se cargan en Author solo porque la interfaz de usuario no es necesaria en la publicación.
+>Propiedades con la variable **_i18n** Los sufijos se establecen mediante una secuencia de comandos que forma parte de la interfaz de usuario de la personalización clientlib. Todos los clientlibs relacionados con la interfaz de usuario se cargan en el autor solamente, ya que la interfaz de usuario no es necesaria para la publicación.
 >
 >Por lo tanto, al crear un segmento con estas propiedades, normalmente es necesario confiar en **browserFamily** por ejemplo, en lugar de **browserFamily_i18n**.
 
@@ -125,54 +125,54 @@ Cuando toda la instrucción se evalúa como verdadera, este segmento se ha resue
 
 Para definir el nuevo segmento:
 
-1. En el carril , elija **Herramientas > Operaciones > Configuración**.
-1. Haga clic en el **Segmentación** en el panel izquierdo y vaya a la ubicación requerida.
-1. Cree un [nueva página](/help/sites-authoring/editing-content.md#creatinganewpage) usando la variable **Segmento** plantilla.
+1. En el carril, elija **Herramientas > Operaciones > Configuración**.
+1. Haga clic en **Segmentación** en el panel izquierdo y vaya a la ubicación requerida.
+1. Crear un [nueva página](/help/sites-authoring/editing-content.md#creatinganewpage) uso del **Segmento** plantilla.
 1. Abra la nueva página para ver el editor de segmentos:
 
    ![](assets/screen_shot_2012-02-02at101726am.png)
 
-1. Utilice la barra de tareas o el menú contextual (normalmente, haga clic con el botón derecho del ratón y, a continuación, seleccione **Nuevo...** para abrir la ventana Insertar nuevo componente ) y encontrar el rasgo de segmento que necesita. A continuación, arrástrela al **Editor de segmentos** aparecerá en el valor predeterminado **Y** contenedor.
+1. Utilice la barra de tareas o el menú contextual (normalmente, haga clic con el botón secundario del mouse y, a continuación, seleccione **Nuevo...** para abrir la ventana Insertar nuevo componente) y encontrar el rasgo del segmento que necesita. A continuación, arrástrela a **Editor de segmentos** aparecerá en la lista predeterminada **Y** contenedor.
 1. Haga doble clic en el nuevo rasgo para editar los parámetros específicos; por ejemplo, la posición del ratón:
 
    ![](assets/screen_shot_2012-02-02at103135am.png)
 
-1. Haga clic en **OK** para guardar la definición:
-1. Puede **Editar** la definición del segmento para darle una **Título**, **Descripción** y **[Aumento](#boost-factor)** factor:
+1. Clic **OK** para guardar su definición:
+1. Puede **Editar** la definición del segmento para darle un **Título**, **Descripción** y **[Aumentar](#boost-factor)** factor:
 
    ![](assets/screen_shot_2012-02-02at103547am.png)
 
-1. Agregue más características si es necesario. Puede formular expresiones booleanas utilizando la variable **Contenedor AND** y **Contenedor O** componentes encontrados en **Lógica de segmento**. Con el editor de segmentos puede eliminar características o contenedores que ya no se necesitan, o arrastrarlos a nuevas posiciones dentro de la instrucción.
+1. Añada más rasgos si es necesario. Puede formular expresiones booleanas mediante el complemento **Contenedor Y** y **Contenedor O** componentes encontrados en **Lógica de segmento**. Con el editor de segmentos puede eliminar características o contenedores que ya no se necesitan o arrastrarlos a nuevas posiciones dentro de la instrucción.
 
 ### Uso de contenedores AND y OR {#using-and-and-or-containers}
 
-Puede construir segmentos complejos en AEM. Es importante tener en cuenta algunos puntos básicos:
+AEM Puede construir segmentos complejos en la. Es útil tener en cuenta algunos puntos básicos:
 
 * El nivel superior de la definición es siempre el contenedor AND que se crea inicialmente; esto no se puede cambiar, pero no afecta al resto de la definición del segmento.
 * Asegúrese de que tenga sentido anidar el contenedor. Los contenedores pueden verse como los corchetes de su expresión boolean.
 
-El ejemplo siguiente se utiliza para seleccionar visitantes que:
+El siguiente ejemplo se utiliza para seleccionar visitantes que están:
 
-Hombre y entre los 16 y 65 años
+Varón y entre 16 y 65 años
 
 O
 
-Mujeres y entre los 16 y los 62 años
+Mujer y entre 16 y 62 años
 
-Como el operador principal es O necesita comenzar con un **Contenedor O**. Dentro de esto tiene 2 instrucciones AND, para cada una de ellas se necesita un **Contenedor AND**, a la que se pueden añadir los rasgos individuales.
+Como el operador principal es OR, debe empezar con un **Contenedor O**. Dentro de esto tiene 2 frases AND, para cada una de ellas necesita una **Contenedor Y**, en el que se pueden añadir los rasgos individuales.
 
 ![](assets/screen_shot_2012-02-02at105145am.png)
 
 ## Prueba de la aplicación de un segmento {#testing-the-application-of-a-segment}
 
-Una vez definido el segmento, se pueden probar los resultados potenciales con la ayuda de la variable **[ClientContext](/help/sites-administering/client-context.md)**:
+Una vez definido el segmento, se pueden probar los resultados potenciales con la ayuda del **[Client Context](/help/sites-administering/client-context.md)**:
 
 1. Seleccione el segmento que desea probar.
-1. Press **[Ctrl-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)** para abrir el **[ClientContext](/help/sites-administering/client-context.md)**, que muestra los datos que se han recopilado. Para fines de prueba, puede **Editar** determinados valores, o **Cargar** otro perfil para ver el impacto allí.
+1. Prensa **[Ctrl-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)** para abrir **[Client Context](/help/sites-administering/client-context.md)**, que muestra los datos recopilados. Para realizar pruebas, puede **Editar** determinados valores, o **Cargar** otro perfil para ver el impacto allí.
 
-1. Dependiendo de los rasgos definidos, los datos disponibles para la página actual pueden o no coincidir con la definición del segmento. El estado de la coincidencia se muestra debajo de la definición.
+1. Según los rasgos definidos, los datos disponibles para la página actual pueden coincidir o no con la definición del segmento. El estado de la coincidencia se muestra debajo de la definición.
 
-Por ejemplo, una definición de segmento simple puede basarse en la edad y el sexo del usuario. La carga de un perfil específico muestra que el segmento se ha resuelto correctamente:
+Por ejemplo, una definición de segmento simple se puede basar en la edad y el sexo del usuario. Al cargar un perfil específico, se muestra que el segmento se ha resuelto correctamente:
 
 ![](assets/screen_shot_2012-02-02at105926am.png)
 
@@ -186,10 +186,10 @@ O no:
 
 Estas pruebas también se pueden realizar en páginas de contenido y en combinación con **Teaser** componentes.
 
-Si pasa el ratón por encima de un párrafo de teaser, se mostrarán los segmentos aplicados, tanto si se resuelven actualmente como por qué se ha seleccionado la instancia de teaser actual:
+Al pasar el ratón por encima de un párrafo de teaser, se mostrarán los segmentos aplicados, independientemente de si se resuelven actualmente y, por lo tanto, de por qué se ha seleccionado la instancia de teaser actual:
 
 ![](assets/chlimage_1-47.png)
 
 ### Uso del segmento {#using-your-segment}
 
-Los segmentos se utilizan actualmente en [Campañas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md). Se utilizan para dirigir el contenido real que ven las audiencias objetivo específicas. Consulte [Explicación de los segmentos](/help/sites-authoring/segmentation-overview.md) para obtener más información.
+Los segmentos se utilizan actualmente en [Campañas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md). Se utilizan para dirigir el contenido real que ven determinadas audiencias de destino. Consulte [Explicación de los segmentos](/help/sites-authoring/segmentation-overview.md) para obtener más información.

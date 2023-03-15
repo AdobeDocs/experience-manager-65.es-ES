@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 100%
 
@@ -68,15 +68,15 @@ La integración de datos de [[!DNL Experience Manager Forms] ](data-integration.
 
 Para utilizar un modelo de datos de formulario para crear un formulario adaptable haga lo siguiente:
 
-1. En la pestaña modelo de formulario de la pantalla Agregar propiedades, seleccione **[!UICONTROL Modelo de datos de formulario]** en la lista desplegable **[!UICONTROL Seleccionar desde]**.
+1. En la pestaña Modelo de formulario de la pantalla Agregar propiedades, seleccione **[!UICONTROL Modelo de datos de formulario]** en la lista desplegable **[!UICONTROL Seleccionar desde]**.
 
-   ![crear-af-1-1](assets/create-af-1-1.png)
+   ![create-af-1-1](assets/create-af-1-1.png)
 
 1. Pulse para expandir **[!UICONTROL Seleccionar modelo de datos de formulario]**. Se muestran todos los modelos de datos de formulario disponibles.
 
    Seleccione un modelo de datos de formulario.
 
-   ![crear-af-2-1](assets/create-af-2-1.png)
+   ![create-af-2-1](assets/create-af-2-1.png)
 
 >[!NOTE]
 >

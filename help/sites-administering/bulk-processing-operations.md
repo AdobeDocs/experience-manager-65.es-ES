@@ -20,15 +20,15 @@ ht-degree: 2%
 
 ## Introducción {#introduction}
 
-Con la versión más reciente de AEM, el botón Seleccionar todo se ha ampliado a todas las vistas: Vista de lista, columna y tarjeta. El botón Seleccionar todo ahora selecciona todo el contenido de una carpeta o colección determinada y no solo los recursos y páginas que se cargan y son visibles en el explorador del cliente.
+AEM Con la versión más reciente de la aplicación, el botón Seleccionar todo se ha ampliado a todas las vistas: Lista, Columna y Vista de tarjeta. El botón Seleccionar todo ahora selecciona todo el contenido de una carpeta o colección determinada, y no solo los recursos y las páginas cargados y visibles en el explorador del cliente.
 
-Las acciones clave se han habilitado para la operación masiva: **Mover**, **Eliminar** y **Copiar**. Un nuevo cuadro de diálogo permitirá a los clientes saber cuáles son las acciones para las que el procesamiento masivo no está disponible.
+Se han habilitado acciones clave para la operación masiva: **Mover**, **Eliminar** y **Copiar**. Un nuevo cuadro de diálogo permitirá a los clientes saber cuáles son las acciones para las que no está disponible el procesamiento masivo.
 
-## Cómo usar {#how-to-use}
+## Cómo Usar {#how-to-use}
 
-Un nuevo botón llamado **Seleccionar todo** se ha añadido a las vistas de tarjeta, lista o columna. Este botón se puede utilizar en cualquiera de las vistas para seleccionar todos los elementos del conjunto de datos.
+Un nuevo botón llamado **Seleccionar todo** se ha agregado a las vistas Tarjeta, Lista o Columna. Este botón se puede utilizar en cualquiera de las vistas para seleccionar todos los elementos del conjunto de datos.
 
-En versiones anteriores de AEM, la selección estaba limitada a lo que se cargaba en el explorador del cliente. Estos nuevos cambios se han introducido para evitar confusiones con respecto al número de elementos en los que se está realizando una operación masiva.
+AEM En las versiones anteriores de la aplicación, la selección estaba limitada a lo que se cargaba en el explorador del cliente. Estos nuevos cambios se han introducido para evitar confusiones con respecto al número de elementos en los que se realiza una operación masiva.
 
 Por ahora, se han añadido tres operaciones al procesamiento masivo:
 
@@ -36,8 +36,8 @@ Por ahora, se han añadido tres operaciones al procesamiento masivo:
 * Copiar
 * Eliminar
 
-En el futuro se añadirán nuevas funciones.
-Para utilizar esta función, debe desplazarse a la carpeta o colección en la que desea realizar una operación masiva en Páginas o en Recursos.
+En el futuro se agregará compatibilidad con más operaciones.
+Para utilizar esta función, debe desplazarse a la carpeta o colección en la que desea realizar una operación masiva en páginas o recursos.
 
 A continuación, elija una de las vistas, como se muestra a continuación:
 
@@ -47,13 +47,13 @@ A continuación, elija una de las vistas, como se muestra a continuación:
 
 ### Selección masiva en la vista de tarjeta {#bulk-selection-in-card-view}
 
-Los recursos o las páginas se pueden seleccionar de forma masiva mediante la **Seleccionar todo** en la parte superior derecha:
+Los recursos o las páginas se pueden seleccionar de forma masiva mediante las opciones **Seleccionar todo** botón en la parte superior derecha:
 
 ![](assets/doi.png) ![](assets/trei.png)
 
 ### Vista de lista    {#list-view}
 
-Lo mismo sucede con la vista de lista:
+Lo mismo ocurre con la vista de lista:
 
 ![](assets/patru_modified.png)
 
@@ -73,12 +73,12 @@ En la vista de lista, utilice la variable **Seleccionar todo** o utilice la casi
 
 ## Operaciones habilitadas por lotes {#bulk-enabled-operations}
 
-Después de la selección, se puede realizar una de las tres acciones habilitadas por lotes: **Mover**, **Copiar** o **Eliminar**.
+Tras la selección, se puede realizar una de las tres acciones activadas de forma masiva: **Mover**, **Copiar** o **Eliminar**.
 
-Aquí, **Mover** La operación se realiza en los recursos seleccionados anteriormente. En cualquiera de las vistas, esto hará que todos los recursos se movieran a la ubicación elegida y no solo a los que se cargan en la pantalla.
+Aquí, **Mover** Esta operación se realiza en los recursos seleccionados anteriormente. En cualquiera de las vistas, esto hará que todos los recursos se muevan a la ubicación elegida y no solo a los que se cargan en la pantalla.
 
 ![](assets/noua.png)
 
-Para otras operaciones que no están habilitadas de forma masiva, como **Descargar,** se mostrará una advertencia que indica que solo se incluirán en la operación los elementos cargados en el explorador.
+Para otras operaciones que no se activan por lotes, como **Descargar,** aparecerá una advertencia que indica que solo se incluirán en la operación los elementos cargados en el explorador.
 
 ![](assets/zece.png)

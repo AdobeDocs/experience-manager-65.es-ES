@@ -3,8 +3,8 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic
-user-guide-description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
+user-guide-title: AEM Guía del usuario de creación de IU clásica de.5
+user-guide-description: AEM Esta guía explica los conceptos de creación de la interfaz de usuario clásica de en la.
 feature: Authoring
 role: User
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
@@ -15,9 +15,9 @@ ht-degree: 83%
 ---
 
 
-# Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic {#classic-ui}
+# AEM Guía del usuario de creación de IU clásica de.5 {#classic-ui}
 
-+ [Descripción general de la guía de creación de IU clásica](home.md)
++ [Información general sobre la Guía de creación de IU clásica](home.md)
 + Introducción a la creación de IU clásica {#introduction}
    + [Primeros pasos de creación](classic-page-author-first-steps.md)
    + [Crear en la IU clásica](classicui.md)

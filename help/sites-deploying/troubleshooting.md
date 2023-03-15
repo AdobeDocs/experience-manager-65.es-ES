@@ -1,7 +1,7 @@
 ---
 title: Solución de problemas
 seo-title: Troubleshooting
-description: Este artículo cubre algunos de los problemas de instalación que podría encontrar con AEM.
+description: AEM Este artículo trata algunos de los problemas de instalación con los que podría encontrar a la hora de realizar la instalación de la aplicación de la manera más sencilla
 seo-description: This article covers some of the installation issues you might encounter with AEM.
 uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 # Solución de problemas{#troubleshooting}
 
-Esta sección incluye información detallada sobre los registros disponibles para ayudarle a solucionar los problemas y también incluye información sobre algunos de los problemas con los que podría encontrar AEM.
+AEM Esta sección incluye información detallada sobre los registros disponibles para ayudarle a solucionar problemas, así como información sobre algunos de los problemas que puede encontrar con los.
 
-## Resolución de problemas del rendimiento del autor {#troubleshoot-author-performance}
+## Solucionar problemas de rendimiento de autor {#troubleshoot-author-performance}
 
-Analizar el rendimiento lento en la instancia de creación puede resultar bastante complejo. Como primer paso, es necesario averiguar en qué nivel de pila de tecnología disminuye el rendimiento.
+Analizar el rendimiento lento en la instancia de creación puede resultar bastante complejo. Como primer paso, es necesario averiguar en qué nivel de la pila de tecnología está disminuyendo el rendimiento.
 
 El siguiente árbol de decisión proporciona directrices para reducir el cuello de botella.
 
@@ -35,114 +35,114 @@ El siguiente árbol de decisión proporciona directrices para reducir el cuello 
 
 ## Configuración de archivos de registro y registros de auditoría {#configuring-log-files-and-audit-logs}
 
-AEM registros registros detallados que puede que desee configurar para solucionar problemas de instalación. Para obtener más información, consulte la [Uso de registros de auditoría y archivos de registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) para obtener más información.
+AEM Registra registros detallados que es posible que desee configurar para solucionar los problemas de instalación. Para obtener más información, consulte [Trabajar con registros de auditoría y archivos de registro](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) sección.
 
-## Uso de la opción Verbose {#using-the-verbose-option}
+## Uso de la opción Detallada {#using-the-verbose-option}
 
-Al iniciar AEM WCM, puede añadir la opción -v (verbose) a la línea de comandos como en: java -jar cq-wcm-quickstart&lt;version>.jar -v.
+AEM Al iniciar WCM, puede agregar la opción -v (detallada) a la línea de comandos como en: java -jar cq-wcm-quickstart-&lt;version>.jar -v.
 
-La opción &quot;verbose&quot; muestra algunos de los resultados del registro de inicio rápido en la consola, por lo que se pueden utilizar para solucionar problemas.
+La opción detallada muestra parte de la salida del registro de inicio rápido en la consola, por lo que se puede utilizar para solucionar problemas.
 
 ## Problemas comunes de instalación {#common-installation-issues}
 
 En la siguiente sección se describen algunos problemas de instalación y sus soluciones.
 
-### Hacer doble clic en el jar de inicio rápido no tiene ningún efecto o abre el archivo jar con otro programa (por ejemplo, el administrador de archivos) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
+### Al hacer doble clic en el JAR de inicio rápido no se produce ningún efecto o se abre el archivo JAR con otro programa (por ejemplo, archive manager) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
-Esto suele indicar un problema con la forma en que el entorno de escritorio del sistema operativo está configurado para abrir archivos con la extensión .jar. También puede indicar que no tiene Java instalado o que está utilizando una versión incompatible de Java.
+Esto generalmente indica un problema con la forma en que el entorno de escritorio del sistema operativo está configurado para abrir los archivos con la extensión .jar. También puede indicar que no tiene Java instalado o que está utilizando una versión de Java no compatible.
 
-Como los archivos jar utilizan el formato ZIP ubicuo, algunos de los programas de archivado pueden configurar automáticamente el escritorio para abrir archivos jar como archivos de archivo.
+Como los archivos jar utilizan el omnipresente formato ZIP, algunos de los programas de archivado pueden configurar automáticamente el escritorio para abrir archivos jar como archivos de archivado.
 
 Para solucionar problemas, haga lo siguiente:
 
-* Compruebe que tiene al menos Java versión 1.6 instalada.
-* Pruebe un menú contextual (normalmente con el botón derecho del ratón) en el AEM WCM Quickstart y seleccione &quot;Abrir con....&quot;
-* Compruebe si Java o Sun Java están en la lista e intente ejecutar AEM WCM con él. Si tiene varias versiones de Java instaladas, seleccione la compatible.
+* Compruebe que tiene instalado al menos la versión 1.6 de Java.
+* AEM Pruebe con un menú contextual (normalmente haciendo clic con el botón derecho del ratón) en el Inicio rápido de WCM de la y seleccione &quot;Abrir con&quot;....
+* AEM Compruebe si Java o Sun Java aparece en la lista e intente ejecutar el WCM de forma independiente con el mismo. Si tiene instaladas varias versiones de Java, seleccione la compatible.
 
-   Si tiene éxito con este paso, y sus sistemas operativos ofrecen la opción de usar siempre el programa seleccionado para ejecutar los archivos .jar, selecciónelo. Hacer doble clic debería funcionar a partir de ahora.
+   Si lo consigue, y los sistemas operativos ofrecen la opción de usar siempre el programa seleccionado para ejecutar los archivos .jar, selecciónelo. Hacer doble clic debería funcionar a partir de ahora.
 
-* A veces, la reinstalación de la versión de Java compatible ayuda a restaurar la asociación correcta.
-* Siempre puede ejecutar CRX utilizando la línea de comandos o los scripts de inicio/parada como se describió anteriormente en este documento.
+* A veces, la reinstalación de la versión de Java admitida ayuda a restaurar la asociación correcta.
+* Siempre puede ejecutar CRX mediante la línea de comandos o secuencias de comandos de inicio y detención, tal como se ha descrito anteriormente en este documento.
 
-### Mi aplicación que se ejecuta en CRX arroja errores de memoria insuficiente {#my-application-running-on-crx-throws-out-of-memory-errors}
+### Mi aplicación que se ejecuta en CRX genera errores de memoria insuficiente {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
 >Consulte también [Analizar problemas de memoria](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 
-El propio CRX tiene una huella de memoria muy baja. Si la aplicación que se ejecuta dentro de CRX tiene requisitos de memoria mayores o solicita operaciones con gran cantidad de memoria (por ejemplo, transacciones grandes), la instancia de JVM donde se ejecuta CRX debe iniciarse con la configuración de memoria adecuada.
+CRX tiene un espacio de memoria muy bajo. Si la aplicación que se ejecuta dentro de CRX tiene requisitos de memoria más grandes o solicita operaciones con gran cantidad de memoria (por ejemplo, transacciones grandes), la instancia de JVM donde se ejecuta CRX debe iniciarse con la configuración de memoria adecuada.
 
-Utilice las opciones de comando de Java para definir la configuración de memoria de JVM (por ejemplo, java -Xmx512m -jar crx&amp;ast;.jar para establecer el tamaño de pila en 512MB).
+Utilice las opciones de comandos de Java para definir la configuración de memoria de JVM (por ejemplo, java -Xmx512m -jar crx&amp;ast;.jar para establecer el tamaño de pila en 512 MB).
 
-Especifique la opción de configuración de memoria al iniciar AEM WCM desde la línea de comandos. Los scripts de inicio/parada de WCM AEM o los scripts personalizados para administrar AEM inicio de WCM también se pueden modificar para definir la configuración de memoria necesaria.
+AEM Especifique la opción de configuración de memoria al iniciar WCM desde la línea de comandos. AEM AEM Los scripts de inicio/parada de WCM de WCM de WCM o los scripts personalizados para administrar el inicio de WCM también se pueden modificar para definir la configuración de memoria necesaria.
 
-Si ya ha definido su tamaño de pila en 512 MB, es posible que desee analizar el problema de la memoria creando un volcado de memoria:
+Si ya ha definido el tamaño de la pila en 512 MB, puede que desee analizar más el problema de memoria creando un volcado:
 
-Para crear automáticamente un volcado de montículos cuando se quede sin memoria, utilice el siguiente comando:
+Para crear automáticamente un volcado de la pila cuando se agote la memoria, utilice el siguiente comando:
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-Esto genera un archivo de volcado de montículos (**java_...hprof**) siempre que el proceso se quede sin memoria. El proceso puede seguir ejecutándose después de que se haya generado el volcado de montículos. Normalmente, un archivo de volcado de montículos es suficiente para analizar el problema.
+Esto genera un archivo de volcado de la pila (**java_...hprof**) siempre que el proceso se quede sin memoria. El proceso puede seguir ejecutándose después de que se haya generado el volcado de la pila. Normalmente, un archivo de volcado de la pila es suficiente para analizar el problema.
 
 ### La pantalla de bienvenida de AEM no se muestra en el navegador después de hacer doble clic en el inicio rápido de AEM {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
-En determinadas situaciones, las pantallas de bienvenida de WCM AEM no se muestran automáticamente aunque el repositorio en sí se esté ejecutando correctamente. Esto puede depender de la configuración del sistema operativo, la configuración del explorador o factores similares.
+AEM En determinadas situaciones, las pantallas de bienvenida de WCM no se muestran automáticamente aunque el repositorio en sí se esté ejecutando correctamente. Esto puede depender de la configuración del sistema operativo, del explorador o de factores similares.
 
-El síntoma habitual es que la ventana AEM WCM Quickstart muestra &quot;AEM WCM iniciándose, esperando el inicio del servidor....&quot; Si ese mensaje se muestra durante un tiempo relativamente largo, introduzca la URL AEM WCM en la ventana del explorador manualmente, utilizando el puerto predeterminado 4502 o el puerto en el que se está ejecutando la instancia: http://localhost:4502/.
+AEM AEM El síntoma habitual es que la ventana Inicio rápido de WCM de la muestra &quot;Inicio rápido de WCM de la, esperando al inicio del servidor&quot;.... AEM Si ese mensaje se muestra durante un tiempo relativamente largo, introduzca manualmente la dirección URL de WCM de la en la ventana del explorador, utilizando el puerto 4502 predeterminado o el puerto en el que se está ejecutando la instancia: http://localhost:4502/.
 
-Además, los registros pueden revelar el motivo de que el explorador no se inicie.
+Además, los registros pueden revelar el motivo por el que el explorador no se inicia.
 
-A veces, la ventana AEM WCM Quickstart tiene el mensaje &quot;AEM WCM se ejecuta en http://localhost:port/&quot; y el explorador no se inicia automáticamente. En este caso, haga clic en la URL en la ventana de inicio rápido de WCM AEM (es un hipervínculo) o introduzca manualmente la URL en el explorador.
+AEM AEM A veces, la ventana Inicio rápido de WCM de la tiene el mensaje &quot;WCM se ejecuta en http://localhost:port/&quot; y el explorador no se inicia automáticamente. AEM En este caso, haga clic en la dirección URL en la ventana Inicio rápido de WCM de la (es un hipervínculo) o introduzca manualmente la dirección URL en el explorador.
 
-Si todo lo demás falla, compruebe los registros para averiguar qué ha pasado.
+Si todo lo demás falla, consulte los registros para averiguar qué ha sucedido.
 
-### El sitio web no se carga o falla de forma intermitente con Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
+### El sitio web no se carga o falla intermitentemente con Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
 
-Hay un problema conocido con AEM 6.5 que se ejecuta en Java 11 en el que es posible que el sitio web no se cargue o falle de forma intermitente.
+AEM Hay un problema conocido con la ejecución de 6.5 en Java 11 en el que el sitio web puede no cargarse o fallar intermitentemente.
 
-Si esto sucede, siga la siguiente solución:
+Si esto sucede, siga esta solución:
 
-1. Abra el `sling.properties` en el `crx-quickstart/conf/` carpeta
-1. Busque la línea siguiente:
+1. Abra el `sling.properties` en el archivo `crx-quickstart/conf/` carpeta
+1. Busque la siguiente línea:
 
    `org.osgi.framework.bootdelegation=sun.,com.sun.`
 
-1. Sustitúyalo por el siguiente:
+1. Sustitúyala por lo siguiente:
 
    `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
 
 1. Reinicie la instancia.
 
-## Solución de problemas de instalación con un servidor de aplicaciones {#troubleshooting-installations-with-an-application-server}
+## Solución de problemas de instalaciones con un servidor de aplicaciones {#troubleshooting-installations-with-an-application-server}
 
-### Página no encontrada devuelta al solicitar una página al aire libre de geometrixx {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
+### Página no encontrada devuelta al solicitar una página de geometrixx-outdoor {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
 **Se aplica a WebLogic 10.3.5 y JBoss 5.1**
 
-Cuando una solicitud a la página geometrixx-outdoors/en devuelve un error 404 (Página no encontrada), puede volver a comprobar que ha establecido la propiedad sling adicional en el archivo sling.properties necesaria para estos servidores de aplicaciones específicos.
+Cuando una solicitud a la página geometrixx-outdoors/es devuelve un valor 404 (página no encontrada), puede volver a comprobar que ha establecido la propiedad sling adicional en el archivo sling.properties necesario para estos servidores de aplicaciones específicos.
 
-Consulte en la *Implementación AEM aplicación web* para obtener más información.
+Consulte en la *AEM Implementación de aplicación web* pasos para obtener los detalles.
 
-### El tamaño del encabezado de respuesta puede ser bueno de 4 Kb {#response-header-size-can-be-greater-than-kb}
+### El tamaño del encabezado de respuesta puede ser bueno a 4 Kb {#response-header-size-can-be-greater-than-kb}
 
-Los errores 502 pueden indicar que el servidor web no puede gestionar el tamaño del encabezado de respuesta HTTP AEM. AEM generar encabezados de respuesta HTTP que incluyen cookies de tamaño bueno a 4 Kb. Asegúrese de que el contenedor de servlet esté configurado para que el tamaño máximo del encabezado de respuesta pueda superar los 4 kb.
+AEM Los errores 502 pueden indicar que el servidor web no puede gestionar el tamaño del encabezado de respuesta HTTP de la. AEM Puede generar encabezados de respuesta HTTP que incluyan cookies de tamaño bueno a 4 KB. Asegúrese de que el contenedor del servlet esté configurado para que el tamaño máximo del encabezado de respuesta pueda superar los 4 kb.
 
-Por ejemplo, para Tomcat 7.0, el atributo maxHttpHeaderSize de la variable [Conector HTTP](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controla las limitaciones del tamaño del encabezado.
+Por ejemplo, para Tomcat 7.0, el atributo maxHttpHeaderSize del [Conector HTTP](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) controla las limitaciones en el tamaño del encabezado.
 
 ## Desinstalación de Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
-Debido a que AEM instala en un solo directorio, no es necesario desinstalar una utilidad. La desinstalación puede ser tan simple como borrar todo el directorio de instalación, aunque la forma en que desinstale AEM depende de lo que desee conseguir y del almacenamiento persistente que utilice.
+AEM Debido a que se instala en un único directorio, no es necesario instalar ninguna utilidad de desinstalación. AEM La desinstalación puede ser tan sencilla como eliminar todo el directorio de instalación, aunque la forma de desinstalar depende de lo que desee conseguir y del almacenamiento persistente que utilice.
 
 Si el almacenamiento persistente está incrustado en el directorio de instalación, por ejemplo, en la instalación predeterminada de TarPM, al eliminar carpetas también se eliminan datos.
 
 >[!NOTE]
 >
->Adobe recomienda encarecidamente que realice una copia de seguridad del repositorio antes de eliminar AEM. Si elimina todo el &lt;cq-installation-directory>, eliminará el repositorio. Para conservar los datos del repositorio antes de eliminarlos, moverlos o copiarlos &lt;cq-installation-directory>/crx-quickstart/repository carpeta en otro lugar antes de eliminar las otras carpetas.
+>El Adobe AEM recomienda encarecidamente que realice una copia de seguridad del repositorio antes de eliminar los recursos de la. Si elimina todo el &lt;cq-installation-directory>, eliminará el repositorio. Para conservar los datos del repositorio antes de eliminarlos, mueva o copie el &lt;cq-installation-directory>La carpeta /crx-quickstart/repository se encuentra en otro lugar antes de eliminar las demás carpetas.
 
-Si la instalación de AEM utiliza almacenamiento externo, por ejemplo, un servidor de base de datos, la eliminación de la carpeta no elimina los datos automáticamente, pero sí la configuración de almacenamiento, lo que dificulta la restauración del contenido de JCR.
+AEM Si la instalación de la utiliza almacenamiento externo, por ejemplo, un servidor de base de datos, al eliminar la carpeta no se eliminan los datos automáticamente, pero sí la configuración de almacenamiento, lo que dificulta la restauración del contenido JCR.
 
-### Los archivos JSP no están compilados en JBoss {#jsp-files-are-not-compiled-on-jboss}
+### Los archivos JSP no se compilan en JBoss {#jsp-files-are-not-compiled-on-jboss}
 
-Si instala o actualiza archivos JSP al Experience Manager en JBoss y los servlets correspondientes no están compilados, asegúrese de que el compilador JSP de JBoss esté correctamente configurado. Para obtener más información, consulte la
+Si instala o actualiza archivos JSP en Experience Manager en JBoss y no se compilan los servlets correspondientes, asegúrese de que el compilador JSP de JBoss esté configurado correctamente. Para obtener más información, consulte
 [Problemas de compilación de JSP en JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) artículo.

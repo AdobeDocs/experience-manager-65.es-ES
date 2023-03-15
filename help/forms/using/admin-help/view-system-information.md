@@ -1,7 +1,7 @@
 ---
 title: Ver información del sistema
 seo-title: View system information
-description: Descubra cómo puede ver gráficos de monitorización de recursos e información sobre el servidor que ejecuta AEM formularios.
+description: AEM Obtenga información sobre cómo ver gráficos de monitorización de recursos e información sobre el servidor que ejecuta formularios en la aplicación de la versión de la aplicación de datos de la aplicación de la versión de.
 seo-description: Learn how you can view resource monitoring charts and information about the server that is running AEM forms.
 uuid: 983c1cc7-a8b3-48b2-a4c8-7b28a2e32537
 contentOwner: admin
@@ -13,90 +13,90 @@ exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Ver información del sistema {#view-system-information}
 
-La ficha Sistema muestra gráficos de supervisión de recursos e información sobre el servidor que ejecuta AEM formularios. Para acceder a esta información, en la consola de administración, haga clic en Monitor de estado en la esquina superior derecha de la página. Si está ejecutando AEM formularios en un entorno agrupado, la información mostrada es para el nodo seleccionado en la lista Servidor.
+AEM La pestaña Sistema muestra gráficos de monitorización de recursos e información sobre el servidor que ejecuta los formularios de la. Para acceder a esta información, en la consola de administración, haga clic en Monitor de estado en la esquina superior derecha de la página. AEM Si está ejecutando formularios en un entorno agrupado, la información mostrada es para el nodo seleccionado en la lista Servidor.
 
 Para guardar la información actual del sistema como un archivo de propiedades, haga clic en Guardar.
 
-El panel derecho de la ficha Sistema muestra representaciones gráficas de la siguiente información:
+El panel derecho de la pestaña Sistema muestra representaciones gráficas de la siguiente información:
 
 * Elementos de trabajo y recuento de trabajo
-* Uso de montículos y montículos comprometidos
-* Uso sin montículos y sin montículos comprometidos
+* Uso de pila y pila comprometida
+* Uso sin montón y sin montón comprometido
 
-Puede arrastrar el puntero a lo largo de la cronología para obtener valores para un punto en el tiempo en particular.
+Puede arrastrar el puntero a lo largo de la cronología para obtener los valores de un momento determinado.
 
 >[!NOTE]
 >
->Los datos del gráfico, los valores de la información del servidor y el tiempo de reloj se actualizan cada 10 minutos. La información no se muestra en tiempo real.
+>Los datos de gráficos, los valores de información del servidor y la hora del reloj se actualizan cada 10 minutos. La información no se muestra en tiempo real.
 
 El panel izquierdo de la ficha Sistema muestra la siguiente información sobre el servidor o nodo:
 
-**Máquina virtual:** Versión Java Virtual Machine (JVM) en el servidor.
+**Máquina virtual:** Versión de Java Virtual Machine (JVM) en el servidor.
 
-**Proveedor de máquina virtual:** Fabricante de la JVM.
+**Proveedor de máquina virtual:** Fabricante de JVM.
 
 **Versión de máquina virtual:** Número de versión de JVM
 
-**Nombre del equipo:** Nombre de host del servidor en el que están instalados AEM formularios.
+**Nombre de la máquina:** AEM Nombre del host del servidor en el que se instalan los formularios de.
 
-**Tiempo de espera:** Tiempo, en horas y minutos, que el servidor ha estado ejecutando.
+**Tiempo de actividad:** El tiempo, en horas y minutos, que ha estado ejecutando el servidor.
 
-**Compilador Just-In-Time:** Nombre del compilador que se está utilizando.
+**Compilador justo a tiempo:** Nombre del compilador que se está utilizando.
 
 **Tiempo de compilación:** Cantidad de tiempo empleado en la compilación.
 
-**Número de subprocesos en directo:** Número total de subprocesos presentes actualmente en el sistema de formularios AEM.
+**Número de hilos activos:** AEM Número total de subprocesos presentes actualmente en el sistema de formularios de la.
 
-**Número máximo de subprocesos:** El mayor número de subprocesos en directo jamás registrado en el sistema.
+**Número máximo de subprocesos:** Número máximo de subprocesos activos registrados en el sistema.
 
 **Número de clases cargadas:** Número de clases cargadas en la JVM.
 
 **Número de clases descargadas:** Número de clases descargadas de la JVM.
 
-**Superficie mínima:** Cantidad mínima de memoria que se utilizó.
+**Montón mínimo:** Cantidad mínima de pila que se ha utilizado.
 
-**Montaje máximo:** Cantidad máxima de memoria que se utilizó.
+**Montón máximo:** Cantidad máxima de pila que se ha utilizado.
 
-**Nombre del sistema operativo:** Nombre del sistema operativo que se ejecuta en el servidor de AEM forms.
+**Nombre del sistema operativo:** AEM El nombre del sistema operativo que se ejecuta en el servidor de formularios de la.
 
-**Versión del sistema operativo:** Número de versión del sistema operativo que se ejecuta en el servidor de AEM forms.
+**Versión del sistema operativo:** AEM Número de versión del sistema operativo que se ejecuta en el servidor de formularios de la.
 
-**Arco del sistema operativo:** La arquitectura del sistema operativo en la que se ejecuta la JVM.
+**Arco del sistema operativo:** Arquitectura del sistema operativo en la que se ejecuta JVM.
 
 **Número de procesadores:** Número de procesadores del sistema.
 
-**Argumentos de máquina virtual:** El argumento utilizado por la JVM.
+**Argumentos de máquina virtual:** Argumento utilizado por JVM.
 
-**Ruta de clase:** Ruta de clase utilizada por la JVM.
+**Ruta de clase:** Ruta de clase utilizada por JVM.
 
-**Ruta de biblioteca:** Ruta de biblioteca utilizada por la JVM.
+**Ruta de biblioteca:** Ruta de biblioteca utilizada por JVM.
 
-**Ruta de clase de arranque:** Ruta de clase de arranque utilizada por la JVM.
+**Ruta de clase de arranque:** Ruta de clase de arranque utilizada por JVM.
 
-**Tipo de servidor de aplicaciones:** Tipo de servidor de aplicaciones utilizado para ejecutar AEM formularios.
+**Tipo de servidor de aplicaciones:** AEM Tipo de servidor de aplicaciones que se utiliza para ejecutar formularios en la.
 
-**Versión del servidor de aplicaciones:** Número de versión del servidor de aplicaciones utilizado para ejecutar AEM formularios.
+**Versión del servidor de aplicaciones:** AEM Número de versión del servidor de aplicaciones que se utiliza para ejecutar formularios de la.
 
-**Proveedor del servidor de aplicaciones:** Fabricante del servidor de aplicaciones utilizado para ejecutar AEM formularios.
+**Proveedor de servidor de aplicaciones:** AEM Fabricante del servidor de aplicaciones que se utiliza para ejecutar los formularios de la.
 
-**Fecha de instalación:** Fecha (en formato aaaa-mm-dd) en que se instalaron AEM formularios.
+**Fecha de instalación:** AEM Fecha (en formato aaaa-mm-dd) en la que se instalaron los formularios de la.
 
-**AEM versión de formularios:** Versión de AEM formularios instalados.
+**AEM Versión de formularios de:** AEM Versión de los formularios instalados.
 
-**Versión del parche:** AEM número de parche de formularios.
+**Versión del parche:** AEM Número de parche de formularios de.
 
-**Nombre de base de datos:** Tipo de base de datos utilizada por AEM formularios.
+**Nombre de base de datos:** AEM Tipo de base de datos utilizada por los formularios de.
 
-**Versión de la base de datos:** Número de versión de la base de datos utilizada por AEM formularios.
+**Versión de base de datos:** AEM Número de versión de la base de datos utilizada por los formularios de.
 
-**Nombre de unidad de base de datos:** Nombre del controlador que utiliza la JVM para conectarse a la base de datos.
+**Nombre de unidad de base de datos:** Nombre del controlador utilizado por JVM para conectarse a la base de datos.
 
-**Versión del controlador de base de datos:** Versión del controlador utilizado por la JVM para conectarse a la base de datos.
+**Versión del controlador de base de datos:** La versión del controlador utilizado por JVM para conectarse a la base de datos.
 
-La variable **Guardar** permite guardar esta información del sistema en un archivo de propiedad.
+El **Guardar** permite guardar esta información del sistema en un archivo de propiedades.

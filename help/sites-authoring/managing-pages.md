@@ -34,7 +34,7 @@ También puede usar [carpetas](#creating-a-new-folder) para organizar el conteni
 
 La estructura de un sitio web se puede considerar como una estructura de árbol que alberga las páginas de contenido. Los nombres de estas páginas de contenido se usan para formar las direcciones URL, y el título se muestra cuando se visualiza el contenido de la página.
 
-A continuación se muestra un ejemplo del sitio de We.Retail, en el que una página de pantalones de senderismo ( `desert-sky-shorts`):
+A continuación, se muestra un ejemplo del sitio de We.Retail, donde una página de shorts de senderismo ( `desert-sky-shorts`) se accede a:
 
 * Entorno de creación
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
@@ -42,7 +42,7 @@ A continuación se muestra un ejemplo del sitio de We.Retail, en el que una pág
 * Entorno de publicación
    `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Según la configuración de su instancia, use `/content` puede ser opcional en el entorno de publicación.
+Según la configuración de la instancia, utilice `/content` puede ser opcional en el entorno de publicación.
 
 ```xml
  /content
@@ -161,7 +161,7 @@ AEM incluye varias plantillas listas para usar. Las plantillas disponibles depen
 
 ### Componentes {#components}
 
-Componentes son los elementos proporcionados por AEM para que pueda añadir tipos de contenido específicos. AEM incluye una amplia gama de [componentes integrados](/help/sites-authoring/default-components-console.md) que proporcionan una amplia funcionalidad. Estos incluyen:
+AEM Los componentes son los elementos proporcionados por los componentes para que pueda agregar tipos de contenido específicos. AEM viene con una gama de [componentes listos para usar](/help/sites-authoring/default-components-console.md) que proporcionan una funcionalidad completa. Estos incluyen:
 
 * Texto
 * Imagen
@@ -389,11 +389,11 @@ El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado
 
 >[!NOTE]
 >
->Para obtener más información sobre el procesamiento asincrónico de trabajos y cómo configurar el límite para las acciones de mover y cambiar el nombre de la página, consulte la [Trabajos asincrónicos](/help/sites-administering/asynchronous-jobs.md) en la guía de usuario de administración.
+>Para obtener más información sobre el procesamiento asincrónico de trabajos y cómo configurar el límite para las acciones de mover y cambiar el nombre de la página, consulte la [Trabajos asincrónicos](/help/sites-administering/asynchronous-jobs.md) en la guía del usuario de Administración.
 
 >[!NOTE]
 >
->El procesamiento asincrónico de movimiento de página requiere AEM 6.5.3.0 o superior.
+>AEM El procesamiento asincrónico de movimiento de página requiere la versión 6.5.3.0 o superior de la.
 
 ### Eliminar una página {#deleting-a-page}
 

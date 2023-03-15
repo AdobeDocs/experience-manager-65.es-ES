@@ -2,7 +2,7 @@
 title: Mensajes de error sobre API obsoletas en registros de errores
 description: Mensajes de error sobre API obsoletas en registros de errores
 source-git-commit: b05666883645ca11784292e4bfb5bf9c1e35a43b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 100%
 

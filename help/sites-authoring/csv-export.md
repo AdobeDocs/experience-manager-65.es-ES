@@ -55,7 +55,7 @@ El archivo `export.csv` resultante se puede abrir en Excel o en cualquier otra a
 
 ![etc-01](assets/etc-01.png)
 
-El creador **Informe CSV** está disponible al examinar la **Sitios** consola (en la vista de lista): es una opción del **Crear** menú desplegable:
+La creación de **Informe CSV** La opción está disponible al navegar por la **Sites** consola (en la vista de lista): es una opción del **Crear** menú desplegable:
 
 ![etc-02](assets/etc-02.png)
 

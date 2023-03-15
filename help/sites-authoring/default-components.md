@@ -59,9 +59,9 @@ Las páginas siguientes proporcionan vínculos a información adicional e import
 
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es): los componentes principales ofrecen funciones flexibles y personalizables de creación de contenido, que proporcionan tipos de contenido esenciales para crear páginas.
 
-* [Comunidades](/help/communities/author-communities.md): los componentes proporcionan funciones interactivas para un sitio web, como foros y comentarios. Muchos de estos componentes se incluyen cuando se usa un [Sitio de la comunidad](/help/communities/overview.md) se crea.
+* [Comunidades](/help/communities/author-communities.md): los componentes proporcionan funciones interactivas para un sitio web, como foros y comentarios. Muchos de estos componentes se incluyen cuando [Sitio de comunidad](/help/communities/overview.md) se ha creado.
 
-* [comercio electrónico](/help/commerce/cif-classic/administering/ecommerce.md) - La funcionalidad eCommerce de AEM también incluye una serie de componentes. El uso real puede depender del motor de comercio utilizado.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) AEM : La funcionalidad de comercio electrónico dentro de la también incluye una serie de componentes. El uso real puede depender del motor de comercio que se utilice.
 
 ### Configurar componentes {#configuring-components}
 

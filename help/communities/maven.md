@@ -1,7 +1,7 @@
 ---
 title: Uso de Maven para comunidades
 seo-title: Using Maven for Communities
-description: de la API de AEM
+description: AEM JAR de API de Uber
 seo-description: AEM Uber API jar
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
@@ -21,19 +21,19 @@ ht-degree: 0%
 
 ## Información general {#overview}
 
-Esta sección de la documentación de AEM Communities se suma a:
+Esta sección de la documentación de AEM Communities se suma a lo siguiente:
 
-* [Creación de AEM proyectos con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* [AEM Creación de proyectos de con Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
 Solo hay un artefacto &quot;uber&quot; que reemplaza artefactos individuales:
 
-* AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [JAR de API de Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
->A partir de AEM 6.4, las API de Communities no se publican explícitamente. Todas las API de Communities están ahora incluidas en el propio Uber jar.
+>AEM A partir de la versión 6.4, las API de comunidades no se liberan explícitamente. Todas las API de Communities ahora están incluidas en el propio Uber jar.
 >
->Se recomienda estar actualizado con la versión de Communities más reciente.
+>Se recomienda estar al día con la versión más reciente de Communities.
 >
 >Consulte [Últimas versiones](deploy-communities.md#latest-releases) para identificar la versión más reciente.
 
@@ -50,7 +50,7 @@ Solo hay un artefacto &quot;uber&quot; que reemplaza artefactos individuales:
 
 >[!NOTE]
 >
->Consulte [Repositorio de Uber AEM](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) para identificar el último artefacto de Uber jar.
+>Consulte [AEM Repositorio jar de Uber](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) para identificar el último artefacto de Uber jar.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

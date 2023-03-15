@@ -1,7 +1,7 @@
 ---
 title: Cambiar el número de elementos mostrados en las páginas Aplicaciones y Servicios
 seo-title: Change the number of items displayed on the Applications and Services pages
-description: Aprenda a cambiar el número de elementos mostrados en las páginas Aplicaciones y Servicios.
+description: Aprenda a cambiar el número de elementos que se muestran en las páginas Aplicaciones y Servicios.
 seo-description: Learn how to change the number of items displayed on the Applications and Services pages.
 uuid: fa42fbf7-dcd2-46cb-a16c-148d05581705
 contentOwner: admin
@@ -13,13 +13,13 @@ exl-id: cfb81f5b-e018-43b1-b76e-bac56b8bd96d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 0%
+ht-degree: 24%
 
 ---
 
 # Cambiar el número de elementos mostrados en las páginas Aplicaciones y Servicios {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
 
-En la página Preferencias, puede controlar el número de servicios, extremos, categorías y archivos que se muestran en cada una de las páginas web de Aplicaciones y Servicios.
+En la página Preferencias, puede controlar el número de servicios, extremos, categorías y archivos que se muestran en cada una de las páginas Web Aplicaciones y servicios.
 
-1. En la consola de administración, **[!UICONTROL haga clic en Servicios > Aplicaciones y servicios > Preferencias]**.
-1. En la página Preferencias, escriba la cantidad de servicios, extremos, categorías y archivos que se pueden mostrar en cada página y, a continuación, haga clic en **[!UICONTROL Guardar]**.
+1. En la consola de administración, **[!UICONTROL Haga clic en Servicios > Aplicaciones y servicios > Preferencias]**.
+1. En la página Preferencias, escriba el número de servicios, extremos, categorías y archivos que se pueden mostrar en cada página y haga clic en **[!UICONTROL Guardar]**.

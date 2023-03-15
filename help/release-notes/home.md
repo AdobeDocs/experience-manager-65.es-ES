@@ -17,11 +17,11 @@ Las Notas de la versión de AEM incluyen información importante sobre la versi�
 
 ## Artículos clave de AEM
 
-* [Introducción a AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es)
+* [AEM Introducción a la aplicación de la](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es)
 * [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
-## Guías del usuario de AEM 6.5
+## AEM Guías del usuario de.5
 
 | Guía del usuario | Descripción |
 |--- |---|
@@ -50,8 +50,8 @@ Las Notas de la versión de AEM incluyen información importante sobre la versi�
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other)
 * [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
-## Derechos de autor, licencias y exenciones de responsabilidad {#copyright-licenses-and-disclaimers}
+## Copyright, licencias y exenciones de responsabilidad {#copyright-licenses-and-disclaimers}
 
 Para obtener más información, consulte [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
-Notificación de licencias de terceros: [https://www.adobe.com/products/eula/third_party](https://www.adobe.com/products/eula/third_party.html)
+Aviso de licencias de terceros: [https://www.adobe.com/products/eula/third_party](https://www.adobe.com/products/eula/third_party.html)

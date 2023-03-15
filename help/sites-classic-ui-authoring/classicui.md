@@ -21,7 +21,7 @@ ht-degree: 79%
 
 ## IU clásica e IU táctil {#classic-ui-and-touch-enabled-ui}
 
-La IU clásica es la interfaz de usuario orientada al escritorio que ha estado disponible desde CQ5 (la anterior a AEM). La siguiente documentación sobre creación trata acerca de esta IU.
+AEM La IU clásica es la interfaz de usuario orientada al escritorio que ha estado disponible desde CQ5 (la interfaz predecesora de la interfaz de usuario de). La siguiente documentación sobre creación trata acerca de esta IU.
 
 La IU táctil es la nueva interfaz de usuario estándar para AEM, diseñada para utilizarse tanto en dispositivos táctiles como de escritorio. Consulte la [documentación de creación estándar](/help/sites-authoring/author.md) para obtener más información.
 

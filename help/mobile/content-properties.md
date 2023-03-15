@@ -21,47 +21,47 @@ ht-degree: 21%
 
 >[!NOTE]
 >
->Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Los artículos, los banners y las colecciones se representan como cq:Pages en AEM.
+AEM Los artículos, titulares y colecciones se representan como cq:Pages en la sección de artículos de la página de la página de la página de.
 
-Comparten las mismas propiedades comunes que se encuentran en cualquier cq:Page, además de varias que se muestran a continuación, que representan los metadatos de Adobe Experience Manager (AEM) Mobile On-Demand Services y las propiedades de integración compatibles.
+Comparten las mismas propiedades comunes que se encuentran en cualquier cq:Page, además de otras que se muestran a continuación y que representan metadatos de Adobe Experience Manager AEM () Mobile On-Demand Services y propiedades de compatibilidad con la integración.
 
-Las tablas siguientes describen las propiedades y los nodos de contenido.
+Las siguientes tablas describen las propiedades y los nodos de contenido.
 
 ## Propiedades de integración comunes {#common-integration-properties}
 
-| **Nombre de propiedad** | **Tipo** | **Valores predeterminados o esperados** | **Descripción** |
+| **Nombre de propiedad** | **Tipo** | **Valores predeterminados o valores esperados** | **Descripción** |
 |---|---|---|---|
-| dps-id | Cadena |  | asignado por AEM Mobile y almacenado por AEM una vez cargado en AEM Mobile o importado desde AEM Mobile |
+| dps-id | Cadena |  | asignado por AEM Mobile AEM y almacenado por una vez cargado en AEM Mobile o importado desde AEM Mobile, por el usuario. |
 | dps-resourceType | Cadena | dps:Article | dps:Banner | dps:Collection | propiedad de tipo de entidad |
-| dps-version | Cadena |  | versión de la entidad de AEM Mobile (también incluida en el aemm-id completo) |
-| dps-lastSynced | Fecha |  | fecha de la última sincronización/importación de AEM Mobile en AEM |
-| dps-lastUploaded | Fecha |  | fecha de la última carga de AEM a AEM Mobile |
-| dps-lastUploadedBy | Cadena:userid |  | usuario de id que realizó la última solicitud de carga de AEM a AEM Mobile |
+| dps-version | Cadena |  | versión de AEM Mobile entity (también incluida en el aem-id completo) |
+| dps-lastSynced | Fecha |  | fecha de la última sincronización/importación de AEM Mobile AEM a la red de distribución de datos |
+| dps-lastUploaded | Fecha |  | AEM fecha de la última carga desde el servidor de correo electrónico a AEM Mobile |
+| dps-lastUploadedBy | String:id de usuario |  | AEM usuario de id que realizó la última solicitud de carga de la aplicación de la que se hizo la solicitud de acceso desde la base de datos de a AEM Mobile |
 
-## Propiedades de los metadatos principales {#core-metadata-properties}
+## Propiedades de metadatos principales {#core-metadata-properties}
 
-| Nombre de propiedad | Tipo | Valores predeterminados o esperados |
+| Nombre de propiedad | Tipo | Valores predeterminados o valores esperados |
 |--- |--- |--- |
 | dps-title | Cadena |  |
 | dps-shortTitle | Cadena |  |
 | dps-abstract | Cadena |  |
 | dps-shortAbstract | Cadena |  |
-| dps-Department | Cadena |  |
+| dps-department | Cadena |  |
 | dps-category | Cadena |  |
 | dps-keywords | Cadena[] |  |
 | dps-internalKeywords | Cadena[] |  |
-| dps-important | Cadena[] | Importancia de {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
+| dps-important | Cadena[] | Importancia desde {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
 
 ### Artículos {#articles}
 
-| **Nombre de propiedad** | **Tipo** | **Valores predeterminados o esperados** |
+| **Nombre de propiedad** | **Tipo** | **Valores predeterminados o valores esperados** |
 |---|---|---|
 | dps-author | Cadena |  |
 | dps-authorURL | Cadena |  |
 | dps-hideFromBrowsePage | Booleano |  |
-| dps-access | Cadena | Protegido: Acceso desde {&quot;protegido&quot;, &quot;medido&quot;, &quot;gratuito&quot;} |
+| dps-access | Cadena | ProtectedAccess from {&quot;protegido&quot;, &quot;medido&quot;, &quot;libre&quot;} |
 | **Social** |  |  |
 | dps-socialShareURL | Cadena |  |
 | dps-articleText | Cadena |  |
@@ -69,29 +69,29 @@ Las tablas siguientes describen las propiedades y los nodos de contenido.
 
 ### Banners {#banners}
 
-| **Nombre de propiedad** | **Tipo** | **Valores predeterminados o esperados** |
+| **Nombre de propiedad** | **Tipo** | **Valores predeterminados o valores esperados** |
 |---|---|---|
-| dps-tapAction |  | TapAction de {webLink} |
+| dps-tapAction |  | Pulse Acción desde {webLink} |
 | dps-tapActionUrl |  |  |
 
 ### Colecciones {#collections}
 
-| Nombre de propiedad | Tipo | Valores predeterminados o esperados |
+| Nombre de propiedad | Tipo | Valores predeterminados o valores esperados |
 |--- |--- |--- |
 | dps-productId | Cadena |  |
-| dps-readPosition | Cadena | desde {&quot;reset&quot;,&quot;keep&quot;} |
+| dps-readingPosition | Cadena | de {&quot;reset&quot;,&quot;keep&quot;} |
 | dps-horizontalSwipe | Booleano |  |
 | dps-allowDownload | Booleano |  |
-| dps-openDefault | Cadena | desde {&quot;browsePage&quot;,&quot;contentView&quot;} |
+| dps-openDefault | Cadena | de {&quot;browsePage&quot;,&quot;contentView&quot;} |
 | dps-layout | Cadena |  |
 
 ## Nodos de contenido {#content-nodes}
 
 ### Nodos comunes {#common-nodes}
 
-| Nombre de nodo | Tipo | Valores predeterminados o esperados | Descripción |
+| Nombre de nodo | Tipo | Valores predeterminados o valores esperados | Descripción |
 |--- |--- |--- |--- |
-| imagen | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
+| image | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
 
 ### Entidades {#entities}
 
@@ -111,4 +111,4 @@ Las tablas siguientes describen las propiedades y los nodos de contenido.
 
 | Nombre de nodo | Tipo | Valores predeterminados de los valores esperados | Descripción |
 |--- |--- |--- |--- |
-| imagen de fondo | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
+| background-image | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |

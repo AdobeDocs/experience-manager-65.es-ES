@@ -19,7 +19,7 @@ ht-degree: 23%
 
 # Habilitar el acceso a la IU clásica{#enabling-access-to-classic-ui}
 
-Como la funcionalidad táctil alcanza la paridad con la IU clásica y, de hecho, supera a la de muchas áreas de AEM, el acceso a la interfaz clásica a través de la interfaz táctil ahora está desactivado de forma predeterminada. En las siguientes páginas se explica cómo volver a habilitar este acceso si es necesario.
+AEM Con la funcionalidad táctil que alcanza la paridad con y y que de hecho supera la de la IU clásica en muchas áreas de la interfaz de usuario, el acceso a la interfaz clásica a través de la interfaz táctil ahora está deshabilitado de forma predeterminada. En las siguientes páginas se explica cómo volver a habilitar este acceso si es necesario.
 
 * [Editor](/help/sites-administering/enable-classic-ui-editor.md)
 * [Admin Console](/help/sites-administering/enable-classic-ui-admin.md)

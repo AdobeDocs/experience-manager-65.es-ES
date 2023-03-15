@@ -12,7 +12,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ Siga estos pasos para agregar compatibilidad con caracteres especiales personali
 
 1. Asegúrese de que el nodo **[!UICONTROL textEditorConfig]** tiene las siguientes propiedades y valores:
 
-   | Nombre | Tipo | Valor |
+   | Nombre | Tipo | Valor  |
    |---|---|---|
    | cmConfigurationType | Cadena | cmTextEditorConfiguration |
    | cssPath | Cadena | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |

@@ -1,7 +1,7 @@
 ---
 title: Etiquetado
 seo-title: Tagging
-description: El etiquetado permite categorizar y organizar el contenido
+description: El etiquetado permite clasificar y organizar el contenido
 seo-description: Tagging allows content to be categorized and organized
 uuid: fbbce525-ebc4-484b-bec9-2d68314cf15a
 contentOwner: Guillaume Carlino
@@ -20,13 +20,13 @@ ht-degree: 2%
 
 # Etiquetado{#tagging}
 
-El etiquetado permite categorizar y organizar el contenido. Las etiquetas se pueden clasificar mediante un área de nombres y una taxonomía.
+El etiquetado permite clasificar y organizar el contenido. Las etiquetas se pueden clasificar por un área de nombres y una taxonomía.
 
 * Consulte [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre la creación y administración de etiquetas, así como sobre las etiquetas de contenido que se han aplicado.
-* Consulte [Uso de etiquetas](/help/sites-authoring/tags.md) para obtener información sobre el etiquetado de contenido.
+* Consulte [Uso de etiquetas](/help/sites-authoring/tags.md) para obtener información sobre cómo etiquetar contenido.
 
-La siguiente información está disponible para los desarrolladores de :
+La siguiente información está disponible para los desarrolladores:
 
-* [Marco de etiquetado de AEM](/help/sites-developing/framework.md) - Una descripción de los nodos y propiedades utilizados para el etiquetado
+* [AEM Marco de etiquetado de](/help/sites-developing/framework.md) : descripción de los nodos y las propiedades utilizados para el etiquetado
 
-* [Creación del etiquetado en una aplicación AEM](/help/sites-developing/building.md) : una descripción de las API que funcionan con el marco de etiquetado desde el lado del cliente y el código del lado del servidor
+* [AEM Creación de etiquetas en una aplicación de](/help/sites-developing/building.md) : descripción de las API que funcionan con el marco de etiquetado desde el código del lado del cliente y del lado del servidor

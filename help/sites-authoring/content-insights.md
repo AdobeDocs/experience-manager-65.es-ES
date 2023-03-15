@@ -50,7 +50,7 @@ Consulte [Cambio del período de informe](/help/sites-authoring/ci-analyze.md#ch
 
 >[!NOTE]
 >
->Los informes de Perspectiva de contenido requieren que el administrador haya integrado AEM con SiteCatalyst, Target y BrightEdge. Consulte [Integración con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integración con Adobe Target](/help/sites-administering/target.md)y [Integración con BrightEdge](/help/sites-administering/brightedge.md).
+>Los informes de Perspectiva de contenido requieren que el administrador haya integrado AEM con SiteCatalyst, Target y BrightEdge. Consulte [Integración con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integración con Adobe Target](/help/sites-administering/target.md), y [Integración con BrightEdge](/help/sites-administering/brightedge.md).
 
 ## El informe Vistas {#the-views-report}
 
@@ -87,7 +87,7 @@ En el informe Devoluciones se incluye un gráfico en que se muestra el número d
 
 ## El informe Actividad de la campaña {#the-campaign-activity-report}
 
-Para cada campaña para la que la página esté activa, aparece un informe denominado Actividad de *nombre de la campaña*. El informe muestra las impresiones y conversiones de la página para cada segmento para el que se proporciona una oferta.
+Para cada campaña para la que la página esté activa, aparece un informe denominado Actividad de *nombre de la campaña*. El informe muestra las impresiones y conversiones de página de cada segmento para el que se proporciona una oferta.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 

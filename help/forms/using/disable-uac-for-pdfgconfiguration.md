@@ -1,8 +1,9 @@
 ---
 title: Deshabilitar UAC para la configuración de PDFG aplicable tanto a JEE como a OSGI
 description: Pasos para deshabilitar UAC para la configuración de PDFG
-source-git-commit: f6dcb488c64dad2d65facc0e8e1d6685b7375a08
-workflow-type: ht
+exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
+source-git-commit: 2e9b9c40f54aa54a946e4320341ed4a760c56fd1
+workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 100%
 
@@ -14,8 +15,7 @@ ht-degree: 100%
 
 Cuando el usuario intenta convertir archivos de Word o Excel a PDF en Microsoft Windows Server, se encuentra el siguiente error:
 
-*Mensaje de error del convertidor principal:
-ALC-PDG-015-003-El sistema no puede abrir el archivo de entrada. Vuelva a enviar el archivo o póngase en contacto con el administrador del sistema.*
+*Mensaje de error del convertidor principal: ALC-PDG-015-003-El sistema no puede abrir el archivo de entrada. Vuelva a enviar el archivo o póngase en contacto con el administrador del sistema.*
 
 
 ## Solución {#solution}

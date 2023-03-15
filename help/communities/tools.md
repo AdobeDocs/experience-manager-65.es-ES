@@ -1,5 +1,5 @@
 ---
-title: Herramientas de comunidades
+title: Herramientas de Communities
 seo-title: Communities Tools
 description: Cómo acceder a la consola Herramientas de Communities
 seo-description: How to access Communities Tools console
@@ -19,22 +19,22 @@ ht-degree: 0%
 
 ---
 
-# Herramientas de comunidades {#communities-tools}
+# Herramientas de Communities {#communities-tools}
 
 Para acceder a la consola de herramientas de Communities, inicie sesión en la instancia de autor:
 
-* Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]**.
+* Desde la navegación global: **[!UICONTROL Herramientas]** > **[!UICONTROL Communities]**.
 
    ![comunidades](assets/communities-home.png)
 
-* [Plantillas de sitio](sites.md) : Consola para la creación y administración de plantillas de sitio.
+* [Plantillas de sitio](sites.md) : consola para la creación y administración de plantillas de sitio.
 
-* [Plantillas de grupo](tools-groups.md) - Consola para la creación y administración de plantillas de grupo.
+* [Plantillas de grupo](tools-groups.md) : consola para la creación y administración de plantillas de grupo.
 
-* [Funciones de la comunidad](functions.md) - Consola para la creación y administración de funciones de la comunidad.
+* [Funciones de comunidad](functions.md) : consola para la creación y administración de funciones de la comunidad.
 
 * [Configuración de almacenamiento](srp-config.md) - Consola para la configuración y selección del [SRP predeterminado](working-with-srp.md).
 
 * [Guía de componentes](components-guide.md) : abre un sitio interactivo que permite experimentar con cómo funcionan los componentes de SCF y cómo se pueden configurar o personalizar.
 
-* [Distintivos](badges.md) - Consola desde la que se pueden agregar distintivos personalizados para su uso en [puntuación y reglas de distintivo](implementing-scoring.md)
+* [Insignias](badges.md) : consola desde la que se pueden añadir insignias personalizadas para su uso en [reglas de puntuación e identificación](implementing-scoring.md)

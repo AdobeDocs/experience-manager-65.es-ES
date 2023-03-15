@@ -32,7 +32,7 @@ Para acceder al panel de búsqueda, haga clic en la ficha **Buscar** situada en 
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-El panel de búsqueda permite realizar búsquedas en todas las páginas del sitio web. Contiene campos y utilidades para lo siguiente:
+El panel de búsqueda le permite buscar en todas las páginas del sitio web. Contiene campos y widgets para lo siguiente:
 
 * **Texto completo**: buscar el texto especificado
 * **Modificado después de/antes de**: buscar solo las páginas modificadas entre las fechas especificadas
@@ -54,7 +54,7 @@ El panel de búsqueda permite realizar búsquedas en todas las páginas del siti
 
 Para ejecutar la búsqueda, haga clic en **Buscar** en la parte inferior del panel. Haga clic en **Restablecer** para borrar los criterios de búsqueda.
 
-## Filtro {#filter}
+## Filter {#filter}
 
 Un filtro se puede definir (y borrar) en varias ubicaciones para restringir y perfeccionar la vista:
 
@@ -77,7 +77,7 @@ En la consola **Sitios web** está la opción de menú **Buscar y reemplazar**, 
    * indica si la búsqueda debería distinguir mayúsculas y minúsculas
    * indica si únicamente deberían buscarse palabras completas (de lo contrario, también se buscan subcadenas)
 
-   Hacer clic **Vista previa** enumera dónde se ha encontrado el término. Puede seleccionar o borrar instancias específicas para reemplazarlas:
+   Clic **Previsualizar** listas en las que se ha encontrado el término. Puede seleccionar o borrar instancias específicas para sustituirlas:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -90,7 +90,7 @@ El alcance predeterminado para el servlet de buscar y reemplazar cubre las sigui
 * `jcr:text`
 * `text`
 
-El ámbito se puede cambiar mediante la consola de gestión web Apache Felix (por ejemplo, en `https://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` y configure el ámbito según sea necesario.
+El ámbito se puede cambiar mediante la consola de administración web de Apache Felix (por ejemplo, en `https://localhost:4502/system/console/configMgr`). Seleccionar `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` y configure el ámbito según sea necesario.
 
 >[!NOTE]
 >

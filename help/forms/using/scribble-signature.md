@@ -13,7 +13,7 @@ docset: aem65
 feature: Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Una vez que se ha agregado un campo de Firma manuscrita al formulario y se ha pr
 Al hacer clic en el icono de geolocalización mientras se crea la firma manuscrita, la ubicación geográfica y la información horaria se incrustarán en el campo.
 
 >[!NOTE]
->De forma predeterminada, en iPad es obligatorio incrustar información de geolocalización.
+De forma predeterminada, en iPad es obligatorio incrustar información de geolocalización.
 
 En iPad, el icono de geolocalización no se muestra de forma predeterminada y la información de geolocalización se incrusta automáticamente al hacer clic en **Aceptar**.
 

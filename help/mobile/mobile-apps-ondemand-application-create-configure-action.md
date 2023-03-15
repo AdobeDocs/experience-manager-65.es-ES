@@ -1,7 +1,7 @@
 ---
 title: Acciones de creación y configuración de aplicaciones
 seo-title: Application Create and Configuration Actions
-description: La creación de una aplicación suele ser el primer paso para crear y administrar el contenido bajo demanda de AEM Mobile. Siga esta página para obtener más información.
+description: La creación de una aplicación suele ser el primer paso para crear y administrar contenido de AEM Mobile On-Demand. Siga esta página para obtener más información.
 seo-description: Creating an app is often the first step towards creating and managing AEM Mobile On-Demand content. Follow this page to learn more.
 uuid: f6b41d9a-d896-479e-9f6c-e91a88f3e74d
 contentOwner: User
@@ -21,65 +21,65 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-## Creación de una aplicación a petición {#creating-an-on-demand-application}
+## Creación de una aplicación bajo demanda {#creating-an-on-demand-application}
 
-La creación de una aplicación suele ser el primer paso para crear y administrar el contenido bajo demanda de AEM Mobile, y a menudo se realiza en el nivel de administrador AEM. Representa un shell de contenido, visible en dispositivos móviles, listo para mostrar contenido creado por el autor, como artículos, imágenes, colecciones, etc.
+La creación de una aplicación suele ser el primer paso para crear y administrar contenido de AEM Mobile AEM On-Demand, y a menudo se realiza en el nivel de administrador de. Representa un shell de contenido, visible en dispositivos móviles, listo para mostrar el contenido creado por el autor, como artículos, imágenes, colecciones, etc.
 
-Los detalles de la aplicación se pueden ver en el panel de control o en el centro de control de AEM Mobile.
+Los detalles de la aplicación se pueden ver en el panel o en el centro de control de AEM Mobile.
 
 >[!NOTE]
 >
->El panel es una serie de útiles mosaicos que proporcionan información general sobre el contenido de la aplicación, los metadatos y el estado de conexión a AEM Mobile On-Demand.
+>El panel es una serie de mosaicos útiles que proporcionan una visión general del contenido de la aplicación, los metadatos y el estado de conexión de AEM Mobile On-Demand.
 >
->Consulte [Panel de aplicaciones de AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obtener más información.
+>Consulte [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obtener más información.
 
 **Para crear una aplicación bajo demanda:**
 
-1. Select **Móvil** del carril lateral.
-1. Select **Aplicaciones** de Navegación.
-1. Haga clic en **Crear** y seleccione **Aplicación** en la lista desplegable .
+1. Seleccionar **Móvil** desde la barra lateral.
+1. Seleccionar **Aplicaciones** desde el panel de navegación.
+1. Clic **Crear** y seleccione **Aplicación** de la lista desplegable.
 1. Seleccione la plantilla Aplicación móvil y haga clic en **Siguiente**.
-1. Introduzca propiedades de la aplicación como **Título**, **Nombre**, **Descripción**.
+1. Introduzca las propiedades de la aplicación, como **Título**, **Nombre**, **Descripción**.
 1. Haga clic en **Siguiente**.
-1. Si se conoce, introduzca los detalles de configuración de la nube; de lo contrario, haga clic en **Crear**.
-1. Haga clic en **Listo** para ver la nueva aplicación de AEM Mobile en el catálogo.
+1. Si lo sabe, introduzca los detalles de configuración de la nube o haga clic en **Crear**.
+1. Clic **Listo** para ver la nueva aplicación de AEM Mobile en el catálogo.
 
-![imagen_1](assets/chlimage_1.gif)
+![chlimage_1](assets/chlimage_1.gif)
 
 >[!NOTE]
 >
->Este proceso le permite crear una instancia de aplicación en AEM.
+>AEM Este proceso le permite crear una instancia de aplicación en la aplicación de forma.
 
 ## Uso de plantillas de aplicación {#using-app-templates}
 
-Las plantillas de aplicación proporcionan una manera sencilla de aprovechar los diseños existentes creados por los desarrolladores y utilizados para la creación de nuevas aplicaciones en AEM.
+AEM Las plantillas de aplicación ofrecen una forma sencilla de aprovechar los diseños existentes creados por desarrolladores y utilizados para la creación de nuevas aplicaciones dentro de los programas de desarrollo de aplicaciones de la aplicación de la aplicación de la plataforma de creación de aplicaciones de la plataforma de creación de aplicaciones de.
 
-¿Qué es una plantilla de aplicación? Piense en ella como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación.
-Al crear una aplicación nueva basada en la plantilla de otra aplicación, obtendrá una aplicación que tenga un punto de partida representativo de la aplicación desde la que se creó.
+¿Qué es una plantilla de aplicación? Considérelo como una colección de plantillas de página y componentes que representan una línea de base o una base de una aplicación.
+Al crear una aplicación nueva basada en la plantilla de otra aplicación, obtendrá una aplicación que tenga un punto de partida representativo de la aplicación en la que se creó.
 
-Debe tener una plantilla de aplicación móvil existente (o una aplicación instalada que tenga una plantilla de aplicación) para poder usar esta función.
+Debe tener una plantilla de aplicación móvil existente (o una aplicación instalada que tenga una plantilla de aplicación) para utilizar esta función.
 
 ### El paso siguiente {#the-next-step}
 
-Una vez que haya creado una aplicación a petición desde el panel de la aplicación, el paso siguiente consiste en asociar la aplicación a la configuración de la nube.
+Una vez que haya creado una aplicación bajo demanda desde el panel de aplicaciones, el siguiente paso es asociar la aplicación a la configuración en la nube.
 
-Consulte [Asociación de la aplicación a la configuración de Cloud](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) para obtener más información.
+Consulte [Asociar la aplicación a la configuración de la nube](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) para obtener más información.
 
-### Cómo avanzar {#getting-ahead}
+### Primeros pasos {#getting-ahead}
 
-Una vez que esté familiarizado con la creación de una aplicación bajo demanda y, por lo tanto, asociarla a una configuración de nube, consulte [Acciones de administración de contenido](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Una vez que esté familiarizado con la creación de una aplicación bajo demanda y, por lo tanto, con la asociación de dicha aplicación a una configuración en la nube, consulte [Acciones de administración de contenido](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
 **Acciones de administración de contenido** implica la creación y administración del siguiente contenido:
 
-* [Administración de artículos](/help/mobile/mobile-on-demand-managing-articles.md)
+* [Administrar artículos](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Administración de titulares](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Administración de colecciones](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Carga de recursos compartidos](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publicar Cancelar publicación de contenido](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publicar contenido para cancelar su publicación](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
-Para obtener más información sobre las funciones y responsabilidades de un administrador y desarrollador, consulte los siguientes recursos:
+Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 
-* [Desarrollo de contenido de AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Administración de contenido para usar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
+* [AEM Desarrollo de contenido para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Administración de contenido para utilizar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)

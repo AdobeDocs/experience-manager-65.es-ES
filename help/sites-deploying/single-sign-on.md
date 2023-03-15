@@ -1,7 +1,7 @@
 ---
 title: Inicio de sesión único
 seo-title: Single Sign On
-description: Obtenga información sobre cómo configurar el inicio de sesión único (SSO) para una instancia de AEM.
+description: AEM Obtenga información sobre cómo configurar el inicio de sesión único (SSO) para una instancia de.
 seo-description: Learn how to configure Single Sign On (SSO) for an AEM instance.
 uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
@@ -14,17 +14,17 @@ exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Inicio de sesión único {#single-sign-on}
 
-Inicio de sesión único (SSO) permite que un usuario acceda a varios sistemas después de proporcionar credenciales de autenticación (como un nombre de usuario y una contraseña) una vez. Un sistema independiente (conocido como autenticador de confianza) realiza la autenticación y proporciona al Experience Manager las credenciales del usuario. El Experience Manager comprueba y aplica los permisos de acceso para el usuario (es decir, determina a qué recursos se le permite acceder).
+Inicio de sesión único (SSO) permite a un usuario acceder a varios sistemas después de proporcionar credenciales de autenticación (como nombre de usuario y contraseña) una vez. Un sistema independiente (conocido como autenticador de confianza) realiza la autenticación y proporciona al Experience Manager las credenciales de usuario. El Experience Manager comprueba y aplica los permisos de acceso del usuario (es decir, determina a qué recursos puede acceder el usuario).
 
-El servicio Gestor de autenticación SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) procesa los resultados de autenticación que proporciona el autenticador de confianza. El gestor de autenticación SSO busca un ssid (identificador SSO) como el valor de un atributo especial en las siguientes ubicaciones en este orden:
+El servicio Controlador de autenticación SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) procesa los resultados de autenticación que proporciona el autenticador de confianza. El Controlador de autenticación SSO busca un ssid (Identificador de SSO) como el valor de un atributo especial en las siguientes ubicaciones en este orden:
 
-1. Solicitar encabezados
+1. Encabezados de solicitud
 1. Cookies
 1. Parámetros de solicitud
 
@@ -35,13 +35,13 @@ Configure los dos servicios siguientes para reconocer el nombre del atributo que
 * El módulo de inicio de sesión.
 * El servicio de autenticación SSO.
 
-Debe especificar el mismo nombre de atributo para ambos servicios. El atributo se incluye en la variable `SimpleCredentials` que se proporciona a `Repository.login`. El valor del atributo es irrelevante e ignorado, la mera presencia de él es importante y verificada.
+Debe especificar el mismo nombre de atributo para ambos servicios. El atributo se incluye en la variable `SimpleCredentials` que se proporciona a `Repository.login`. El valor del atributo es irrelevante e ignorado, su mera presencia es importante y verificada.
 
 ## Configuración de SSO {#configuring-sso}
 
-Para configurar SSO para una instancia de AEM, debe configurar la variable [Gestor de autenticación SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+AEM Para configurar el SSO de una instancia de, debe configurar el [Controlador de autenticación SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. Al trabajar con AEM hay varios métodos para administrar los ajustes de configuración de dichos servicios; see [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
+1. AEM Al trabajar con los servicios de correo electrónico, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información y las prácticas recomendadas.
 
    Por ejemplo, para el conjunto NTLM:
 
@@ -50,68 +50,68 @@ Para configurar SSO para una instancia de AEM, debe configurar la variable [Gest
    * **Formato de ID**: `^<DOMAIN>\\(.+)$`
 
       Donde `<*DOMAIN*>` se reemplaza por su propio nombre de dominio.
-   Para CoSign:
+   Para firmar conjuntamente:
 
    * **Ruta:** según sea necesario; por ejemplo, `/`
-   * **Nombres de encabezado**: remote_user
+   * **Nombres de encabezado**: usuario_remoto
    * **Formato de ID:** AsIs
 
    Para SiteMinder:
 
    * **Ruta:** según sea necesario; por ejemplo, `/`
    * **Nombres de encabezado:** SM_USER
-   * **Formato de ID**: AsIs
+   * **Formato de ID**: tal cual
 
 
 
-1. Confirme que el Inicio de sesión único funciona según sea necesario. incluida la autorización.
+1. Confirme que el inicio de sesión único funciona según sea necesario, incluida la autorización.
 
 >[!CAUTION]
 >
->Asegúrese de que los usuarios no puedan acceder a AEM directamente si SSO está configurado.
+>AEM Asegúrese de que los usuarios no puedan acceder directamente a la si el SSO está configurado.
 >
->Al exigir a los usuarios que pasen por un servidor web que ejecute el agente de su sistema SSO, se garantiza que ningún usuario pueda enviar directamente un encabezado, cookie o parámetro que lleve a que el usuario sea de confianza para AEM, ya que el agente filtrará dicha información si se envía desde el exterior.
+>AEM Al requerir que los usuarios pasen a través de un servidor web que ejecute el agente de su sistema SSO, se garantiza que ningún usuario puede enviar directamente un encabezado, cookie o parámetro que lleve al usuario a ser de confianza para los usuarios, ya que el agente filtrará dicha información si se envía desde el exterior.
 >
->Cualquier usuario que pueda acceder directamente a su instancia de AEM sin pasar por el servidor web podrá actuar como cualquier usuario enviando el encabezado, la cookie o el parámetro si se conocen los nombres.
+>AEM Cualquier usuario que pueda acceder directamente a su instancia de sin pasar por el servidor web podrá actuar como cualquier usuario enviando el encabezado, la cookie o el parámetro si se conocen los nombres.
 >
->Asegúrese también de que de los encabezados, cookies y nombres de parámetros de solicitud, solo configure el que es necesario para la configuración de SSO.
+>Asegúrese también de que, entre los encabezados, las cookies y los nombres de parámetros de solicitud, solo configure el que sea necesario para la configuración de SSO.
 
 >[!NOTE]
 >
->Inicio de sesión único se utiliza a menudo junto con [LDAP](/help/sites-administering/ldap-config.md).
+>El inicio de sesión único se utiliza a menudo junto con [LDAP](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
->Si también utiliza la variable [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) con el servidor de información de Internet (IIS) de Microsoft, se necesitará una configuración adicional en:
+>Si también está utilizando la variable [Dispatcher](https://helpx.adobe.com/es/experience-manager/dispatcher/using/dispatcher.html) con Microsoft Internet Information Server (IIS), se requerirá una configuración adicional en:
 >
 >* `disp_iis.ini`
 >* IIS
 >
->En `disp_iis.ini` configurado:
->(consulte [instalación de Dispatcher con el servidor de información de Internet de Microsoft](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) para obtener más información)
+>Entrada `disp_iis.ini` set:
+>(consulte [instalar Dispatcher con Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) para obtener información detallada)
 >
->* `servervariables=1` (reenvía variables de servidor IIS como encabezados de solicitud a la instancia remota)
+>* `servervariables=1` (reenvía variables del servidor IIS como encabezados de solicitud a la instancia remota)
 >* `replaceauthorization=1` (reemplaza cualquier encabezado denominado &quot;Autorización&quot; que no sea &quot;Básico&quot; por su equivalente &quot;Básico&quot;)
 >
 >En IIS:
 >
 >* disable **Acceso anónimo**
 >
->* enable **Autenticación integrada de Windows**
+>* habilitar **Autenticación de Windows integrada**
 >
 
 
-Puede ver qué controlador de autenticación se está aplicando a cualquier sección del árbol de contenido mediante la variable **Autenticador** de la Consola Felix; por ejemplo:
+Puede ver qué controlador de autenticación se está aplicando a cualquier sección del árbol de contenido utilizando **Autenticador** de la Consola Felix; por ejemplo:
 
 `http://localhost:4502/system/console/slingauth`
 
-El controlador que mejor se adapte a la ruta se consulta primero. Por ejemplo, si configura handler-A para la ruta `/` y handler-B para la ruta `/content`y luego una solicitud para `/content/mypage.html` primero consultará handler-B.
+Primero se consulta el controlador que mejor coincida con la ruta. Por ejemplo, si configura el controlador A para la ruta `/` y el controlador B para la ruta `/content`, luego una solicitud a `/content/mypage.html` consultará primero el controlador-B.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
 ### Ejemplo {#example}
 
-Para una solicitud de cookie (con la dirección URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
+Para una solicitud de cookie (mediante la dirección URL) `http://localhost:4502/libs/wcm/content/siteadmin.html`):
 
 ```xml
 GET /libs/cq/core/content/welcome.html HTTP/1.1
@@ -119,7 +119,7 @@ Host: localhost:4502
 Cookie: TestCookie=admin
 ```
 
-Con la siguiente configuración:
+Usar la siguiente configuración:
 
 * **Ruta**: `/`
 
@@ -149,30 +149,30 @@ Transfer-Encoding: chunked
 ....
 ```
 
-Esto también funciona si se solicita:
+Esto también funciona si solicita:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-O puede utilizar el siguiente comando curl para enviar la variable `TestHeader` Encabezado a `admin:`
+O puede utilizar el siguiente comando curl para enviar la variable `TestHeader` encabezado a `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
 >
->Al utilizar el parámetro de solicitud en un navegador, solo verá algunos de los HTML - sin CSS. Esto se debe a que todas las solicitudes del HTML se realizan sin el parámetro de solicitud .
+>Al utilizar el parámetro de solicitud en un explorador, solo verá parte del HTML, sin CSS. Esto se debe a que todas las solicitudes del HTML se realizan sin el parámetro de solicitud.
 
-## Eliminación de vínculos AEM cierre de sesión {#removing-aem-sign-out-links}
+## AEM Eliminación de vínculos de cierre de sesión {#removing-aem-sign-out-links}
 
-Al utilizar SSO, el inicio y la cierre de sesión se gestionan de forma externa, por lo que AEM propios vínculos de cierre de sesión ya no son aplicables y deben eliminarse.
+AEM Al utilizar SSO, el inicio y cierre de sesión se gestionan externamente, por lo que los vínculos de cierre de sesión propios ya no son aplicables y deben eliminarse.
 
-El vínculo de cierre de sesión en la pantalla de bienvenida se puede eliminar siguiendo los pasos siguientes.
+El vínculo de cierre de sesión en la pantalla de bienvenida se puede eliminar mediante los siguientes pasos.
 
-1. Superposición `/libs/cq/core/components/welcome/welcome.jsp` a `/apps/cq/core/components/welcome/welcome.jsp`
+1. Superposición `/libs/cq/core/components/welcome/welcome.jsp` hasta `/apps/cq/core/components/welcome/welcome.jsp`
 1. elimine la siguiente parte del jsp.
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
 Para eliminar el vínculo de cierre de sesión disponible en el menú personal del usuario en la esquina superior derecha, siga estos pasos:
 
-1. Superposición `/libs/cq/ui/widgets/source/widgets/UserInfo.js` a `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
+1. Superposición `/libs/cq/ui/widgets/source/widgets/UserInfo.js` hasta `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
 
 1. Elimine la siguiente parte del archivo:
 

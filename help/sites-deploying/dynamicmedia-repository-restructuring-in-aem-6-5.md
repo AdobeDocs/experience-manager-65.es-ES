@@ -1,5 +1,5 @@
 ---
-title: Reestructuración de repositorios de Dynamic Media en Adobe Experience Manager 6.5
+title: Reestructuración del repositorio de Dynamic Media en Adobe Experience Manager 6.5
 description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorios en Experience Manager 6.5 para Dynamic Media.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -15,19 +15,19 @@ ht-degree: 4%
 
 ---
 
-# Reestructuración de repositorios de Dynamic Media en Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
+# Reestructuración del repositorio de Dynamic Media en Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Tal como se describe en el elemento principal [Reestructuración de repositorios en Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , los clientes que actualicen a Experience Manager 6.5 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios en el repositorio que afectan a Dynamic Media. Algunos cambios requieren un esfuerzo durante el proceso de actualización de Experience Manager 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
+Como se describe en el elemento principal [Reestructuración de repositorios en Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , los clientes que actualicen a Experience Manager 6.5 deben utilizar esta página para valorar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a Dynamic Media. Algunos cambios requieren esfuerzo de trabajo durante el proceso de actualización de Experience Manager 6.5, mientras que otros se pueden aplazar hasta una actualización futura.
 
-**Antes de una actualización futura**
+**Antes de futuras actualizaciones**
 
 * [Configuraciones personalizadas de codificación de vídeo adaptable](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
-* [Configuración de nube de Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
-* [Configuración del Cloud Service Dynamic Media (híbrido DM)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
-* [Dynamic Media: Configuración de Cloud Service de YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
-* [Misc](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
+* [Configuración en la nube de Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
+* [Configuración del Cloud Service de Dynamic Media (DM Hybrid)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
+* [Dynamic Media: Configuración del Cloud Service de YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
+* [Varios](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
-## Antes de una actualización futura {#prior-to-upgrade}
+## Antes de futuras actualizaciones {#prior-to-upgrade}
 
 ### Configuraciones personalizadas de codificación de vídeo adaptable  {#custom-adaptive-video-encoding-configurations}
 
@@ -43,7 +43,7 @@ Tal como se describe en el elemento principal [Reestructuración de repositorios
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>Puede ejecutar el siguiente script de migración para migrar a la nueva ubicación:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Como alternativa, puede editar la configuración en la interfaz de usuario del Experience Manager y los cambios se guardan en la nueva ubicación.</p> </td>
+   <td><p>Puede ejecutar el siguiente script de migración para migrar a la nueva ubicación:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Como alternativa, puede editar la configuración en la interfaz de usuario de Experience Manager y los cambios se guardan en la nueva ubicación.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
@@ -52,7 +52,7 @@ Tal como se describe en el elemento principal [Reestructuración de repositorios
  </tbody>
 </table>
 
-### Configuración de nube de Dynamic Media (DMS7) {#dynamic-media-dms-cloud-configuration}
+### Configuración en la nube de Dynamic Media (DMS7) {#dynamic-media-dms-cloud-configuration}
 
 <table>
  <tbody>
@@ -66,7 +66,7 @@ Tal como se describe en el elemento principal [Reestructuración de repositorios
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>El cliente puede ejecutar una secuencia de comandos de migración en esta ubicación:<br /> </p>
+   <td><p>El cliente puede ejecutar un script de migración en esta ubicación:<br /> </p>
     <ul>
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
      <li>Reinicie el paquete OSGi de Dynamic Media.</li>
@@ -79,7 +79,7 @@ Tal como se describe en el elemento principal [Reestructuración de repositorios
  </tbody>
 </table>
 
-### Configuración del Cloud Service Dynamic Media (DM Hybrid) {#cloudserviceconfiguration}
+### Configuración del Cloud Service de Dynamic Media (DM Hybrid) {#cloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -93,7 +93,7 @@ Tal como se describe en el elemento principal [Reestructuración de repositorios
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>Puede ejecutar la secuencia de comandos de migración siguiente para alinearla con el modelo más reciente:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td>
+   <td><p>Puede ejecutar el siguiente script de migración para alinearlo con el modelo más reciente:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
@@ -116,7 +116,7 @@ Tal como se describe en el elemento principal [Reestructuración de repositorios
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>1. Cancelar la publicación de todos los vídeos de YouTube<br /> 2. Cree la configuración de YouTube mediante la nueva interfaz de usuario táctil (desde <code>/conf</code>), incluida la copia de todos los canales de la ubicación antigua<br /> 3. Vuelva a publicar todos los vídeos en YouTube.</p> <p>Este flujo de trabajo resulta en nuevas URL de YouTube. Si no cancela la publicación antes de crear una configuración de YouTube de TouchUI, tendrá varias URL de YouTube en Propiedades porque los canales recreados se publicarán de nuevo, si se le da la oportunidad. Esta funcionalidad significa que tiene direcciones URL inútiles enumeradas en Propiedades.</p> </td>
+   <td><p>1. Anule la publicación de todos los vídeos de YouTube<br /> 2. Cree la configuración de YouTube con la nueva interfaz de usuario táctil (desde <code>/conf</code>), incluida la copia de todos los canales de la ubicación antigua<br /> 3. Vuelva a publicar todos los vídeos en YouTube.</p> <p>Este flujo de trabajo genera nuevas direcciones URL de YouTube. Si no cancela la publicación antes de crear una configuración de YouTube de IU táctil, tiene varias URL de YouTube enumeradas en Propiedades porque los canales creados de nuevo se publican de nuevo, si se le da la oportunidad. Esta funcionalidad significa que tiene direcciones URL inútiles en Propiedades.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
@@ -125,7 +125,7 @@ Tal como se describe en el elemento principal [Reestructuración de repositorios
  </tbody>
 </table>
 
-### Misc {#misc}
+### Varios {#misc}
 
 <table>
  <tbody>
@@ -139,7 +139,7 @@ Tal como se describe en el elemento principal [Reestructuración de repositorios
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td>
-   <td><p>El cliente puede ejecutar el siguiente script de migración.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Como alternativa, puede editar la configuración en la interfaz de usuario del Experience Manager y los cambios se guardan en la nueva ubicación.</p> </td>
+   <td><p>El cliente puede ejecutar el siguiente script de migración.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Como alternativa, puede editar la configuración en la interfaz de usuario de Experience Manager y los cambios se guardan en la nueva ubicación.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>

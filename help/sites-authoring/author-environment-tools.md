@@ -140,7 +140,7 @@ Desde la barra de herramientas superior del navegador de recursos puede filtrar 
 * Nombre
 * Ruta
 * Tipo de recurso, por ejemplo imágenes, manuscritos, documentos, vídeos, páginas, párrafos y productos
-* Características de los recursos, como Orientación (Vertical, Horizontal, Cuadrado) y Estilo (Color, Monocromo, Escala de grises)
+* Características del recurso como Orientación (vertical, horizontal, cuadrado) y Estilo (color, monocromo, escala de grises)
 
    * Disponible solo para determinados tipos de recursos
 
@@ -156,7 +156,7 @@ El aspecto y el control dependerán del tipo de dispositivo que esté utilizando
 
    Para añadir un recurso a la página mantenga pulsado el recurso requerido y muévalo a la derecha; el navegador de recursos se cerrará para volver a mostrar la página, donde puede agregar el recurso al componente deseado.
 
-   ![ateat-09](assets/ateat-09.png)
+   ![Fate-09](assets/ateat-09.png)
 
 * **Dispositivo de escritorio**
 
@@ -285,7 +285,7 @@ La Información de página (icono de ecualizador) abre un menú que también mue
 Por ejemplo, cuando corresponda, **Información de página** también dispone de las opciones siguientes:
 
 * [Promocionar lanzamiento](/help/sites-authoring/launches-promoting.md) si la página es nueva.
-* [Abrir en la IU clásica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si estas opciones se han [activado por un administrador](/help/sites-administering/enable-classic-ui-editor.md)
+* [Abrir en IU clásica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si esta opción se ha [activado por un administrador](/help/sites-administering/enable-classic-ui-editor.md)
 
 Además, **Información de página** puede proporcionar acceso a análisis y recomendaciones cuando es necesario.
 

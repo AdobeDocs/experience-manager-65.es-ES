@@ -19,23 +19,23 @@ ht-degree: 2%
 
 # Crear una página de muestra {#create-a-sample-page}
 
-A partir de AEM comunidades 6.1, la forma más sencilla de crear una página de muestra es crear un sitio de comunidad simple que consista simplemente en una función Página .
+AEM Como en las comunidades de 6.1, la forma más sencilla de crear una página de muestra es crear un sitio de comunidad simple que consista simplemente en una función Página.
 
-Esto incluirá un componente parsys para que pueda [activación de componentes para la creación](basics.md#accessing-communities-components).
+Esto incluirá un componente parsys para que pueda [habilitar componentes para la creación](basics.md#accessing-communities-components).
 
-Otra opción para explorar con componentes de muestra es utilizar las funciones presentadas en la [Guía de componentes de comunidad](components-guide.md).
+Otra opción para la exploración con componentes de muestra es utilizar las funciones presentadas en la variable [Guía de componentes de la comunidad](components-guide.md).
 
-## Crear un sitio de comunidad {#create-a-community-site}
+## Crear un sitio de la comunidad {#create-a-community-site}
 
-Esto es muy similar a la creación de un nuevo sitio descrito en [Introducción a AEM Communities](getting-started.md).
+Esto es muy similar a crear un nuevo sitio descrito en [Introducción a AEM Communities](getting-started.md).
 
-La diferencia principal es que este tutorial creará una nueva plantilla de sitio de la comunidad que solo contiene la variable [Función de página](functions.md#page-function) para crear un sitio de comunidad simple libre de otras características (aparte de las características precableadas básicas de todos los sitios de la comunidad).
+La diferencia principal es que este tutorial creará una nueva plantilla del sitio de la comunidad que solo contenga la variable [Page, función](functions.md#page-function) para crear un sitio de la comunidad simple sin otras características (que no sean las características preconfiguradas básicas para todos los sitios de la comunidad).
 
-### Crear nueva plantilla de sitio {#create-new-site-template}
+### Crear nueva plantilla del sitio {#create-new-site-template}
 
 Para empezar, cree un [plantilla del sitio de la comunidad](sites.md).
 
-En la navegación global en una instancia de autor, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Plantillas de sitio]**.
+En la navegación global en una instancia de autor, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Communities]** > **[!UICONTROL Plantillas de sitio]**.
 
 ![create-site-template](assets/create-site-template1.png)
 
@@ -43,41 +43,41 @@ En la navegación global en una instancia de autor, seleccione **[!UICONTROL Her
 * INFORMACIÓN BÁSICA
 
    * `Name`: Plantilla de una sola página
-   * `Description`: Una plantilla que consiste en una función Page única.
+   * `Description`: una plantilla que consta de una sola función Página.
    * Seleccione `Enabled`
 
 ![site-template-editor](assets/site-template-editor.png)
 
 * ESTRUCTURA
 
-   * Arrastre un `Page` al Generador de plantillas
-   * Para Detalles de función de configuración, introduzca
+   * Arrastre una `Page` al Generador de plantillas
+   * Para Detalles de la función de configuración, introduzca
 
-      * `Title`: Página única
-      * `URL`: page
+      * `Title`: Una página
+      * `URL`: página
 
 ![site-template-editor-structure](assets/site-template-editor1.png)
 
-* Select **`Save`** para la configuración
-* Select **`Save`** para la plantilla de sitio
+* Seleccionar **`Save`** para la configuración
+* Seleccionar **`Save`** para la plantilla del sitio
 
-### Crear nuevo sitio de comunidad {#create-new-community-site}
+### Crear nuevo sitio de la comunidad {#create-new-community-site}
 
 Ahora cree un nuevo sitio de comunidad basado en la plantilla de sitio simple.
 
-Después de crear la plantilla del sitio, en la navegación global, seleccione **[!UICONTROL Comunidades > Sitios]**.
+Después de crear la plantilla del sitio, en navegación global, seleccione **[!UICONTROL Comunidades > Sitios]**.
 
 ![create-community-site](assets/create-community-site1.png)
 
-* Select **`Create`** icono
+* Seleccionar **`Create`** icono
 
 * Paso `1 - Site Template`
 
    * `Title`: Sitio de comunidad simple
-   * `Description`: Un sitio de la comunidad que consiste en una sola página para la experimentación.
+   * `Description`: un sitio de la comunidad que consta de una sola página para la experimentación.
    * `Community Site Root: (leave blank)`
    * `Community Site Base Language: English`
-   * `Name`: ejemplo
+   * `Name`: muestra
 
       * url = http://localhost:4502/content/sites/sample
 
@@ -89,35 +89,35 @@ Después de crear la plantilla del sitio, en la navegación global, seleccione *
 * Seleccione `Next`
 * Paso `2 - Design`
 
-   * Seleccionar cualquier diseño
+   * Seleccione cualquier diseño
 
 * Seleccione `Next`
 * Seleccione `Next`
 
-   (Acepte todos los ajustes predeterminados)
+   (Aceptar todos los ajustes predeterminados)
 
 * Seleccione `Create`
 
    ![create-community-site](assets/create-community-site.png)
 
-## Publicar el sitio {#publish-the-site}
+## Publicación del sitio {#publish-the-site}
 
 ![publish-site](assets/publish-site.png)
 
-En el [consola sitios de comunidad](sites-console.md), seleccione el icono de publicación para publicar el sitio, de forma predeterminada a http://localhost:4503.
+Desde el [consola sitios de la comunidad](sites-console.md), seleccione el icono de publicación para publicar el sitio, de forma predeterminada, en http://localhost:4503.
 
-## Abra el sitio en modo de autor en el modo de edición . {#open-the-site-on-author-in-edit-mode}
+## Abrir el sitio en Autor en modo de edición {#open-the-site-on-author-in-edit-mode}
 
-![open-site](assets/open-site.png)
+![de sitio abierto](assets/open-site.png)
 
-Seleccione el icono para abrir el sitio en modo de edición.
+Seleccione el icono de abrir sitio para ver el sitio en modo de edición.
 
 La dirección URL será [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
-![author-site](assets/author-site.png)
+![Author-Site](assets/author-site.png)
 
-En la página de inicio simple es posible ver qué está preconectado a través de las funciones y plantillas de la comunidad, y jugar con la adición y configuración de componentes de la comunidad.
+En la página de inicio simple es posible ver lo que está precableado a través de las funciones y plantillas de la comunidad, y jugar con la adición y configuración de componentes de la comunidad.
 
-## Ver sitio en publicación {#view-site-on-publish}
+## Ver sitio al publicar {#view-site-on-publish}
 
-Después de publicar la página, ábrala en el [instancia de publicación](http://localhost:4503/content/sites/sample/en.html) para experimentar con las funciones como visitante anónimo del sitio, miembro registrado o administrador. El vínculo Administration visible en el entorno de creación no aparecerá en el entorno de publicación a menos que un administrador inicie sesión.
+Después de publicar la página, ábrala en el [instancia de publicación](http://localhost:4503/content/sites/sample/en.html) para experimentar con las funciones como visitante anónimo del sitio, miembro conectado o administrador. El vínculo Administración visible en el entorno de creación no aparecerá en el entorno de publicación a menos que un administrador inicie sesión.

@@ -32,9 +32,9 @@ Los dispositivos se agrupan en las categorías característica, inteligente y t�
 Utilice el siguiente procedimiento para crear una página para móvil:
 
 1. En la navegación global, abra la consola **Sitios**.
-1. Abra la página . **We.Retail** -> **Estados Unidos** -> **Inglés**.
+1. Abra la página. **We.Retail** -> **Estados Unidos** -> **Inglés**.
 
-1. Cambie a **Vista previa** en el menú contextual.
+1. Cambiar a **Previsualizar** modo.
 1. Cambie al emulador que quiera usar haciendo clic en el icono del dispositivo en la parte superior de la página.
 1. Arrastre los componentes del navegador de componentes y colóquelos en la página.
 

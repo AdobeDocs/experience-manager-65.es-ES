@@ -1,7 +1,7 @@
 ---
-title: Inicio y parada de WebLogic Server
+title: Iniciar y detener WebLogic Server
 seo-title: Starting and stopping WebLogic Server
-description: Varios procedimientos requieren que inicie o detenga la instancia de WebLogic Server en la que desea implementar módulos de formularios AEM. Este documento describe cómo iniciar y detener el servidor WebLogic.
+description: AEM Varios procedimientos requieren que inicie o detenga la instancia de WebLogic Server en la que desea implementar módulos de formularios de la forma que desee. Este documento describe cómo iniciar y detener WebLogic Server.
 seo-description: Several procedures require you to start or stop the instance of WebLogic Server where you want to deploy AEM forms modules. This document describes how to start and stop the WebLogic Server.
 uuid: 957787fe-4cea-4ecd-b49a-c33023c5c309
 contentOwner: admin
@@ -12,25 +12,25 @@ discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
 source-wordcount: '601'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Inicio y parada de WebLogic Server {#starting-and-stopping-weblogic-server}
+# Iniciar y detener WebLogic Server {#starting-and-stopping-weblogic-server}
 
-Varios procedimientos requieren que inicie o detenga la instancia de WebLogic Server en la que desea implementar módulos de formularios AEM. Asegúrese de que el servidor WebLogic está detenido o en ejecución, según la tarea que esté realizando.
+AEM Varios procedimientos requieren que inicie o detenga la instancia de WebLogic Server en la que desea implementar módulos de formularios de la forma que desee. Asegúrese de que WebLogic Server esté detenido o en ejecución, según la tarea que esté realizando.
 
 <table>
  <thead>
   <tr>
    <th><p>Actividad</p></th>
-   <th><p>Estado requerido de WebLogic</p></th>
+   <th><p>Estado de WebLogic requerido</p></th>
   </tr>
  </thead>
  <tbody>
   <tr>
-   <td><p>Creación de un dominio WebLogic</p></td>
+   <td><p>Creación de un dominio de WebLogic</p></td>
    <td><p>Detenido</p></td>
   </tr>
   <tr>
@@ -38,11 +38,11 @@ Varios procedimientos requieren que inicie o detenga la instancia de WebLogic Se
    <td><p>En ejecución</p></td>
   </tr>
   <tr>
-   <td><p>Aumento del recuento de subprocesos del servidor</p></td>
+   <td><p>Aumento del número de subprocesos del servidor</p></td>
    <td><p>En ejecución</p></td>
   </tr>
   <tr>
-   <td><p>Implementación de productos de formularios AEM</p></td>
+   <td><p>AEM Implementar productos de formularios de</p></td>
    <td><p>En ejecución</p></td>
   </tr>
  </tbody>
@@ -50,9 +50,9 @@ Varios procedimientos requieren que inicie o detenga la instancia de WebLogic Se
 
 >[!NOTE]
 >
->Si está ejecutando WebLogic Server en Red Hat® Enterprise Linux Advanced Server 4.0, establezca la variable `LD_ASSUME_KERNEL` de entorno a 2.4.19 usando la variable `export LD_ASSUME_KERNEL=2.4.19` comando. A continuación, ejecute WebLogic Server desde el mismo shell en el que configuró esta variable de entorno.
+>Si está ejecutando WebLogic Server en Red Hat® Enterprise Linux Advanced Server 4.0, establezca el `LD_ASSUME_KERNEL` variable de entorno a 2.4.19 utilizando `export LD_ASSUME_KERNEL=2.4.19` comando. A continuación, ejecute WebLogic Server desde el mismo shell en el que se configura esta variable de entorno.
 
-## Iniciar servidor WebLogic {#start-weblogic-server}
+## Iniciar WebLogic Server {#start-weblogic-server}
 
 1. Desde un símbolo del sistema, vaya a *[raíz de appserver]*/user_projects/domains/*[appserverdomain]*.
 1. Introduzca el siguiente comando:
@@ -60,62 +60,62 @@ Varios procedimientos requieren que inicie o detenga la instancia de WebLogic Se
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-## Detener el servidor WebLogic {#stop-weblogic-server}
+## Detener WebLogic Server {#stop-weblogic-server}
 
-1. Inicie la consola de administración del servidor WebLogic escribiendo `https://[host name]:7001/console` en la línea URL de un explorador web.
-1. Inicie sesión escribiendo el nombre de usuario y la contraseña que se usaron al crear esta configuración de WebLogic y, a continuación, haga clic en Iniciar sesión.
+1. Inicie la consola de administración de WebLogic Server escribiendo `https://[host name]:7001/console` en la línea URL de un explorador web.
+1. Inicie sesión escribiendo el nombre de usuario y la contraseña que utilizó al crear esta configuración de WebLogic y, a continuación, haga clic en Iniciar sesión.
 1. En Centro de cambios, haga clic en Bloquear y editar.
-1. En Estructura del dominio, haga clic en Entorno > Servidores.
-1. Haga clic en AdminServer y, en el panel Configuración de AdminServer, haga clic en la ficha Control .
-1. Asegúrese de que AdminServer está seleccionado en la tabla Estado del servidor y haga clic en Cerrar.
-1. Seleccione Cuando el trabajo se complete para apagar correctamente el servidor o seleccione Forzar apagado ahora para detener el servidor inmediatamente sin completar las tareas continuas.
-1. En el panel Ayudante de ciclo de vida del servidor, haga clic en Sí para completar el cierre.
+1. En Estructura de dominio, haga clic en Entorno > Servidores.
+1. Haga clic en AdminServer y, en el panel Configuración de AdminServer, haga clic en la ficha Control.
+1. Asegúrese de que AdminServer está seleccionado en la tabla Estado del servidor y haga clic en Apagar.
+1. Seleccione Al finalizar el trabajo para apagar correctamente el servidor o seleccione Forzar apagado ahora para detener el servidor inmediatamente sin completar las tareas en curso.
+1. En el panel Asistente para el ciclo de vida del servidor, haga clic en Sí para completar el apagado.
 
-La consola de administración del servidor de WebLogic ya no está disponible y el símbolo del sistema desde el que ejecutó el comando de inicio está disponible.
+La consola de administración de WebLogic Server ya no está disponible y el símbolo del sistema desde el que ejecutó el comando start está disponible.
 
 ## Iniciar la consola de administración de WebLogic {#start-weblogic-administration-console}
 
-1. Si el servidor de administración de WebLogic aún no se está ejecutando, vaya a la sección *[raíz de appserver]\user_projects\domains\[domainname]* e introduzca el siguiente comando:
+1. Si el servidor de administración de WebLogic aún no se está ejecutando, desde un símbolo del sistema, vaya a *[raíz de appserver]\user_projects\domains\[domainname]* e introduzca el siguiente comando:
 
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. Acceda a la consola de administración del servidor WebLogic escribiendo `https://[host name]:[port]/console` en la línea URL de un explorador web, donde *[puerto]* es el puerto de escucha no seguro. De forma predeterminada, este valor de puerto es 7001.
-1. En la pantalla de inicio de sesión, escriba su nombre de usuario y contraseña de administrador y haga clic en Iniciar sesión.
+1. Acceda a la consola de administración de WebLogic Server escribiendo `https://[host name]:[port]/console` en la línea URL de un explorador web, donde *[puerto]* es el puerto de escucha no seguro. De forma predeterminada, este valor de puerto es 7001.
+1. En la pantalla de inicio de sesión, escriba el nombre de usuario y la contraseña del administrador y haga clic en Iniciar sesión.
 
-## Iniciar administrador de nodos {#start-node-manager}
+## Iniciar el administrador de nodos {#start-node-manager}
 
-1. Asegúrese de que el servidor WebLogic se esté ejecutando.
+1. Asegúrese de que WebLogic Server se esté ejecutando.
 1. Desde un nuevo símbolo del sistema, vaya a *[raíz de appserver]*/server/bin.
 1. Introduzca el siguiente comando:
 
    * (Windows) `startNodeManager.cmd`
    * (Linux, UNIX) `./startNodeManager.sh`
 
-## Detener administrador de nodos {#stop-node-manager}
+## Detener el administrador de nodos {#stop-node-manager}
 
-Después de cerrar el servidor WebLogic, puede cerrar el símbolo del sistema desde el que llamó al Administrador de nodos.
+Después de cerrar WebLogic Server, puede cerrar el símbolo del sistema desde el que llamó a Node Manager.
 
-## Iniciar un servidor administrado por WebLogic {#start-a-weblogic-managed-server}
+## Inicio de un servidor administrado por WebLogic {#start-a-weblogic-managed-server}
 
 >[!NOTE]
 >
->Esta tarea solo se puede realizar después de crear un dominio WebLogic y un servidor administrado.
+>Esta tarea solo se puede realizar después de crear un dominio de WebLogic y un servidor administrado.
 
-1. Asegúrese de que el servidor WebLogic y el administrador de nodos se estén ejecutando.
-1. Inicie la consola de administración del servidor WebLogic escribiendo `https://host name]:[port]/console` en la línea URL de un explorador web.
-1. En Estructura del dominio, haga clic en Entorno > Servidores.
-1. En el panel derecho, haga clic en la ficha Control .
+1. Asegúrese de que WebLogic Server y el administrador de nodos se estén ejecutando.
+1. Inicie la consola de administración de WebLogic Server escribiendo `https://host name]:[port]/console` en la línea URL de un explorador web.
+1. En Estructura de dominio, haga clic en Entorno > Servidores.
+1. En el panel derecho, haga clic en la ficha Control.
 1. Seleccione el servidor administrado que desea iniciar.
-1. Haga clic en el botón Start situado debajo del servidor administrado que desee iniciar.
+1. Haga clic en el botón Inicio situado debajo del servidor administrado que desea iniciar.
 
 ## Detener un servidor administrado por WebLogic {#stop-a-weblogic-managed-server}
 
-1. Inicie la consola de administración del servidor WebLogic escribiendo `https://`*[nombre de host]:[puerto ]*`/console` en la línea URL de un explorador web.
-1. En Estructura del dominio, haga clic en Entorno > Servidores.
-1. En el panel derecho, haga clic en la ficha Control .
+1. Inicie la consola de administración de WebLogic Server escribiendo `https://`*[nombre de host]:[puerto ]*`/console` en la línea URL de un explorador web.
+1. En Estructura de dominio, haga clic en Entorno > Servidores.
+1. En el panel derecho, haga clic en la ficha Control.
 1. Seleccione el servidor administrado que desea detener.
-1. Haga clic en el botón Apagado situado debajo del servidor administrado que desea detener.
-1. Seleccione Cuando el trabajo se complete para apagar correctamente el servidor o seleccione Forzar apagado ahora para detener el servidor inmediatamente sin completar las tareas continuas.
-1. En el panel Ayudante de ciclo de vida del servidor, haga clic en Sí para completar el cierre.
+1. Haga clic en el botón Apagar situado debajo del servidor administrado que desea detener.
+1. Seleccione Al finalizar el trabajo para apagar correctamente el servidor o seleccione Forzar apagado ahora para detener el servidor inmediatamente sin completar las tareas en curso.
+1. En el panel Asistente para el ciclo de vida del servidor, haga clic en Sí para completar el apagado.
 

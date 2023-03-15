@@ -81,7 +81,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
    Permite especificar una URL de vanidad para esta página. Esta opción le permitirá crear URL más cortas y expresivas.
 
-   Por ejemplo, si la URL de vanidad está configurada en w `elcome`a la página identificada por la ruta / `v1.0/startpage`para el sitio web h `ttp://example.com,` then h `ttp://example.com/welcome`sería la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
+   Por ejemplo, si la URL de vanidad está configurada en w `elcome`a la página identificada por la ruta / `v1.0/startpage`para el sitio web h `ttp://example.com,` entonces h `ttp://example.com/welcome`sería la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >

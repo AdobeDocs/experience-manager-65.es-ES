@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas para optimizar la calidad de las imágenes en Dynamic Media
-description: Conozca las prácticas recomendadas para optimizar la calidad de imagen en Dynamic Media
+description: Conozca las prácticas recomendadas para optimizar la calidad de la imagen en Dynamic Media
 uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -19,98 +19,98 @@ ht-degree: 4%
 
 # Prácticas recomendadas para optimizar la calidad de las imágenes en Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
 
-La optimización de la calidad de la imagen puede ser un proceso largo, ya que muchos factores contribuyen a que se obtengan resultados aceptables. El resultado es en parte subjetivo porque las personas perciben la calidad de la imagen de manera diferente. La experimentación estructurada es clave.
+La optimización de la calidad de la imagen puede ser un proceso laborioso, ya que muchos factores contribuyen a obtener resultados aceptables. El resultado es en parte subjetivo porque los individuos perciben la calidad de la imagen de manera diferente. La experimentación estructurada es clave.
 
-Adobe Experience Manager incluye más de 100 comandos de envío de imágenes de Dynamic Media para ajustar y optimizar imágenes y procesar resultados. Las siguientes directrices pueden ayudarle a agilizar el proceso y a obtener buenos resultados rápidamente mediante algunos comandos esenciales y prácticas recomendadas.
+Adobe Experience Manager incluye más de 100 comandos de entrega de imágenes de Dynamic Media para ajustar y optimizar imágenes y resultados de procesamiento. Las siguientes directrices pueden ayudarle a optimizar el proceso y obtener buenos resultados rápidamente mediante algunos comandos esenciales y prácticas recomendadas.
 
 ## Prácticas recomendadas para el formato de imagen (`&fmt=`) {#best-practices-for-image-format-fmt}
 
-* El JPG o PNG son las mejores opciones para ofrecer imágenes de buena calidad y con un tamaño y peso manejables.
-* Si no se proporciona ningún comando de formato en la dirección URL, Dynamic Media Image Delivery selecciona de forma predeterminada JPG para su envío.
-* El JPG comprime a una proporción de 10:1 y normalmente produce tamaños de archivo de imagen más pequeños. PNG se comprime a una proporción de aproximadamente 2:1, excepto a veces, como cuando las imágenes contienen un fondo blanco. Por lo general, los tamaños de archivo PNG son más grandes que los archivos JPG.
-* JPG utiliza compresión con pérdida, lo que significa que los elementos de imagen (píxeles) se pierden durante la compresión. Por otro lado, PNG utiliza compresión sin pérdidas.
-* El JPG a menudo comprime las imágenes fotográficas con mejor fidelidad que las imágenes sintéticas con bordes nítidos y contraste.
-* Si sus imágenes contienen transparencia, utilice PNG porque el JPG no admite transparencia.
+* JPG o PNG son las mejores opciones para ofrecer imágenes de buena calidad y con un tamaño y peso manejables.
+* Si no se proporciona ningún comando de formato en la dirección URL, la opción predeterminada de Dynamic Media Image Delivery es JPG para la entrega.
+* El JPG comprime en una proporción de 10:1 y normalmente produce tamaños de archivo de imagen más pequeños. PNG comprime en una proporción de aproximadamente 2:1, excepto a veces, como cuando las imágenes contienen un fondo blanco. Sin embargo, normalmente, los tamaños de archivo PNG son mayores que los archivos de JPG.
+* El JPG utiliza la compresión con pérdida, lo que significa que los elementos de la imagen (píxeles) se pierden durante la compresión. PNG, por otro lado, utiliza compresión sin pérdidas.
+* El JPG suele comprimir las imágenes fotográficas con mejor fidelidad que las imágenes sintéticas con bordes nítidos y contraste.
+* Si las imágenes contienen transparencias, utilice PNG porque JPG no las admite.
 
 Como práctica recomendada para el formato de imagen, comience con la configuración más común `&fmt=JPG`.
 
-## Prácticas recomendadas para el tamaño de la imagen {#best-practices-for-image-size}
+## Prácticas recomendadas para el tamaño de imagen {#best-practices-for-image-size}
 
-La reducción dinámica del tamaño de la imagen es una de las tareas más comunes. Requiere especificar el tamaño y, opcionalmente, qué modo de disminución de resolución se utiliza para reducir la escala de la imagen.
+La reducción dinámica del tamaño de la imagen es una de las tareas más comunes. Implica especificar el tamaño y, opcionalmente, qué modo de disminución de resolución se utiliza para reducir la escala de la imagen.
 
-* Para el tamaño de las imágenes, el método más sencillo y sencillo es usar `&wid=<value>` y `&hei=<value>,`o solo `&hei=<value>`. Estos parámetros establecen automáticamente la anchura de la imagen según la proporción de aspecto.
-* `&resMode=<value>`controla el algoritmo utilizado para la disminución de resolución. Comience por `&resMode=sharp2`. Este valor proporciona la mejor calidad de imagen. Mientras se utiliza la disminución de resolución `value =bilin` es más rápido, a menudo resulta en el aliasing de artefactos.
+* Para el tamaño de la imagen, el enfoque mejor y más directo es utilizar `&wid=<value>` y `&hei=<value>,`o simplemente `&hei=<value>`. Estos parámetros establecen automáticamente el ancho de la imagen de acuerdo con la relación de aspecto.
+* `&resMode=<value>`controla el algoritmo utilizado para la disminución de resolución. Comience por `&resMode=sharp2`. Este valor proporciona la mejor calidad de imagen. Mientras se utiliza la disminución de resolución `value =bilin` es más rápido, a menudo resulta en el solapamiento de artefactos.
 
-Como práctica recomendada para el ajuste de tamaño de imágenes, utilice `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
+Como práctica recomendada para el tamaño de imágenes, utilice `&wid=<value>&hei=<value>&resMode=sharp2` o `&hei=<value>&resMode=sharp2`
 
-## Prácticas recomendadas para el perfeccionamiento de imágenes {#best-practices-for-image-sharpening}
+## Prácticas recomendadas para el enfoque de imágenes {#best-practices-for-image-sharpening}
 
-El enfoque de imágenes es el aspecto más complejo de controlar las imágenes en su sitio web, y donde se cometen muchos errores. Tómese el tiempo para obtener más información sobre cómo funciona la máscara de enfoque y enfoque en el Experience Manager haciendo referencia a los siguientes recursos útiles:
+El enfoque de imágenes es el aspecto más complejo del control de imágenes en su sitio web y donde se cometen muchos errores. Tómese el tiempo necesario para obtener más información sobre el funcionamiento de las máscaras de enfoque y enfoque en Experience Manager consultando los siguientes recursos útiles:
 
-Informe técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) que se aplica también al Experience Manager.
+Documentación técnica sobre prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) que también se aplica al Experience Manager.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
 
-Con Experience Manager, puede enfocar las imágenes en la ingesta, en la entrega o en ambos. Por lo general, sin embargo, enfoca las imágenes utilizando solo un método o el otro, pero no ambos. Por lo general, el enfoque de imágenes en la entrega, en una dirección URL, le proporciona los mejores resultados.
+Con Experience Manager, puede enfocar las imágenes durante la ingesta, la entrega o ambas cosas. Sin embargo, normalmente las imágenes se enfocan utilizando un solo método o el otro, pero no ambos. Enfoque de las imágenes en el momento de la entrega, en una dirección URL, normalmente le ofrece los mejores resultados.
 
-Hay dos métodos de perfeccionamiento de imagen que puede utilizar:
+Existen dos métodos de enfoque de imagen que puede utilizar:
 
-* Enfoque simple ( `&op_sharpen`) - Al igual que el filtro de nitidez utilizado en Photoshop, el enfoque simple aplica un enfoque básico a la vista final de la imagen después del cambio de tamaño dinámico. Sin embargo, este método no es configurable por el usuario. La práctica recomendada es no utilizar &amp;op_sharpen a menos que sea necesario.
-* Enmascaramiento de enfoque ( `&op_USM`): la máscara de enfoque es un filtro de enfoque estándar del sector. Se recomienda enfocar las imágenes con máscaras de enfoque siguiendo las directrices que se indican a continuación. La máscara de enfoque permite controlar los tres parámetros siguientes:
+* Enfoque simple ( `&op_sharpen`): similar al filtro de enfoque utilizado en Photoshop, el enfoque simple aplica un enfoque básico a la vista final de la imagen después del cambio de tamaño dinámico. Sin embargo, este método no se puede configurar por el usuario. Se recomienda no utilizar &amp;op_sharpen a menos que sea necesario.
+* Máscara de enfoque ( `&op_USM`) - Máscara de enfoque es un filtro de enfoque estándar de la industria. La práctica recomendada es enfocar las imágenes con máscara de enfoque siguiendo las directrices que se indican a continuación. El enmascaramiento de enfoque permite controlar los tres parámetros siguientes:
 
    * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL *importe *]**(0-5, fuerza del efecto).
-      * **[!UICONTROL *radius *]**(0-250, ancho de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medido en píxeles).
+      * **[!UICONTROL *cantidad *]**(0-5, intensidad del efecto.)
+      * **[!UICONTROL *radio *]**(0-250, anchura de las &quot;líneas de enfoque&quot; dibujadas alrededor del objeto enfocado, medida en píxeles.)
 
-      Tenga en cuenta que los parámetros radius e amount funcionan entre sí. La reducción del radio se puede compensar aumentando la cantidad. El radio permite un control más preciso, ya que un valor inferior afila sólo los píxeles de borde, mientras que un valor más alto afila una banda más amplia de píxeles.
+      Tenga en cuenta que los parámetros radio y cantidad funcionan entre sí. La reducción del radio puede compensarse aumentando la cantidad. El radio permite un control más preciso, ya que un valor más bajo enfoca únicamente los píxeles del borde, mientras que un valor más alto enfoca una banda más ancha de píxeles.
 
-      * **[!UICONTROL *umbral *]**(0-255, sensibilidad del efecto).
+      * **[!UICONTROL *umbral *]**(0-255, sensibilidad del efecto.)
 
              Este parámetro determina la diferencia entre los píxeles enfocados y el área circundante antes de que se consideren píxeles de borde y el filtro los enfoque. El parámetro **[!UICONTROL Umbral]** ayuda a evitar áreas de enfoque excesivo con colores similares, como los tonos de piel. Por ejemplo, un valor de umbral de 12 ignora las ligeras variaciones en el brillo del tono de la piel para evitar agregar “ruido”, mientras que al mismo tiempo agrega contraste al borde de las áreas de alto contraste, como cuando las pestañas tocan la piel.
          
-         Para obtener más información sobre cómo configurar estos tres parámetros, incluidas las prácticas recomendadas para usar con el filtro, consulte los siguientes recursos:
+         Para obtener más información sobre cómo configurar estos tres parámetros, incluidas las prácticas recomendadas para su uso con el filtro, consulte los siguientes recursos:
 
-         Tema de ayuda del Experience Manager sobre cómo enfocar una imagen.
+         Tema de ayuda del Experience Manager sobre el enfoque de una imagen.
 
-         Informe técnico de prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+         Documentación técnica sobre prácticas recomendadas [Enfoque de imágenes en Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
-      * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si la máscara de enfoque se aplica a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
+      * Experience Manager también permite controlar un cuarto parámetro: monocromo (0,1). Este parámetro determina si se aplica máscara de enfoque a cada componente de color por separado utilizando el valor 0 o al brillo/intensidad de la imagen utilizando el valor 1.
 
 
-Se recomienda comenzar con el parámetro de radio de máscara de enfoque. La configuración de radio con la que puede empezar es la siguiente:
+Se recomienda comenzar con el parámetro radio de la máscara de enfoque. Los ajustes de radio con los que puede empezar son los siguientes:
 
 * **[!UICONTROL Sitio web]** - 0,2-0,3 píxeles
-* **[!UICONTROL Impresión fotográfica (250-300 ppp)]** - 0,3-0,5 píxeles
-* **[!UICONTROL Impresión offset (266-300 ppp)]** - 0,7-1,0 píxeles
-* **[!UICONTROL Impresión de lienzo (150 ppi)]** - 1,5-2,0 píxeles
+* **[!UICONTROL Impresión fotográfica (250-300 ppi)]** - 0,3-0,5 píxeles
+* **[!UICONTROL Impresión offset (266-300 ppi)]** - 0,7-1,0 píxeles
+* **[!UICONTROL Impresión en lienzo (150 ppp)]** - 1,5-2,0 píxeles
 
-Aumentar gradualmente la cantidad de 1,75 a 4. Si el enfoque sigue sin ser el que desea, aumente el radio en un punto decimal y ejecute de nuevo la cantidad de 1,75 a 4. Repita el proceso según sea necesario.
+Aumente gradualmente la cantidad de 1,75 a 4. Si el enfoque sigue sin ser el deseado, aumente el radio en un punto decimal y vuelva a ejecutar la cantidad de 1,75 a 4. Repita el proceso según sea necesario.
 
-Deje el parámetro monocromo configurado en 0.
+Deje el parámetro monocromo en 0.
 
-### Prácticas recomendadas para la compresión de JPEG (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
+### Prácticas recomendadas para la compresión JPEG (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
 
-* Este parámetro controla la calidad de codificación del JPG. Un valor superior significa una imagen de mayor calidad pero un tamaño de archivo grande; también, un valor inferior significa una imagen de menor calidad pero un tamaño de archivo más pequeño. El rango para este parámetro es 0-100.
-* Para optimizar la calidad, no establezca el valor del parámetro en 100. La diferencia entre un ajuste de 90 o 95 y 100 es casi imperceptible, pero 100 aumenta innecesariamente el tamaño del archivo de imagen. Por lo tanto, para optimizar la calidad pero evitar que los archivos de imagen sean demasiado grandes, establezca la variable `qlt= value` a 90 o 95.
-* Para optimizar un tamaño de archivo de imagen pequeño pero mantener la calidad de imagen en un nivel aceptable, establezca la variable `qlt= value` a 80. Los valores por debajo de 70 a 75 producen una degradación significativa de la calidad de imagen.
-* Como práctica recomendada, para permanecer en el medio, configure la variable `qlt= value` a 85 para quedarse en el medio.
+* Este parámetro controla la calidad de codificación JPG. Un valor más alto significa una imagen de mayor calidad pero un tamaño de archivo grande; alternativamente, un valor más bajo significa una imagen de menor calidad pero un tamaño de archivo más pequeño. El rango de este parámetro es de 0 a 100.
+* Para optimizar la calidad, no establezca el valor del parámetro en 100. La diferencia entre un ajuste de 90 o 95 y 100 es casi imperceptible, pero 100 aumenta innecesariamente el tamaño del archivo de imagen. Por lo tanto, para optimizar la calidad pero evitar que los archivos de imagen se vuelvan demasiado grandes, establezca el `qlt= value` a 90 o 95.
+* Para optimizar para un tamaño de archivo de imagen pequeño pero mantener la calidad de imagen en un nivel aceptable, establezca el `qlt= value` a 80. Los valores por debajo de 70 a 75 dan como resultado una degradación significativa de la calidad de imagen.
+* Como práctica recomendada, para permanecer en el medio, configure el `qlt= value` a 85 para permanecer en el medio.
 * Uso del indicador de croma en `qlt=`
 
-   * La variable `qlt=` tiene un segundo ajuste que le permite activar la disminución de resolución de cromaticidad RGB utilizando el valor `,1` o off mediante el valor `,0`.
-   * Para que sea sencillo, comience con la disminución de la resolución de cromaticidad del RGB desactivada (`,0`). Este ajuste suele dar como resultado una mejor calidad de imagen, especialmente para imágenes sintéticas con muchos bordes nítidos y contraste.
+   * El `qlt=` tiene un segundo ajuste que permite activar la disminución de resolución de cromaticidad del RGB con el valor `,1` o desactivado con el valor `,0`.
+   * Para que sea sencillo, comience con la disminución de resolución de cromaticidad RGB desactivada (`,0`). Esta configuración suele mejorar la calidad de imagen, especialmente en imágenes sintéticas con muchos bordes nítidos y contraste.
 
-Como práctica recomendada para el uso de compresión de JPG `&qlt=85,0`.
+Como práctica recomendada para el uso de compresión JPG `&qlt=85,0`.
 
-## Prácticas recomendadas para el tamaño del JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## Prácticas recomendadas para el tamaño de JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
-jpegSize es un parámetro útil si desea garantizar que una imagen no supere un tamaño determinado para su entrega a dispositivos que tengan memoria limitada.
+jpegSize es un parámetro útil si desea garantizar que una imagen no supere un tamaño determinado para su entrega a dispositivos con memoria limitada.
 
 * Este parámetro se establece en kilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Define el tamaño máximo permitido para la entrega de imágenes.
-* `&jpegSize=` interactúa con el parámetro de compresión del JPG `&qlt=`. Si la respuesta del JPG con el parámetro de compresión del JPG especificado (`&qlt=`) no supera el valor jpegSize, la imagen se devuelve con `&qlt=` tal como están definidas. De lo contrario, `&qlt=` se reduce gradualmente hasta que la imagen se ajuste al tamaño máximo permitido, o hasta que el sistema determine que no se puede ajustar y devuelva un error.
+* `&jpegSize=` interactúa con el parámetro de compresión del JPG `&qlt=`. Si la respuesta del JPG con el parámetro de compresión del JPG especificado (`&qlt=`) no supera el valor jpegSize, la imagen se devuelve con `&qlt=` como se define. De lo contrario, `&qlt=` disminuye gradualmente hasta que la imagen se ajusta al tamaño máximo permitido o hasta que el sistema determina que no se ajusta y devuelve un error.
 
-Como práctica recomendada, establezca `&jpegSize=` y añada el parámetro `&qlt=` si entrega imágenes JPG a dispositivos con memoria limitada.
+Como práctica recomendada, establezca `&jpegSize=` y añada el parámetro `&qlt=` si ofrece imágenes JPG a dispositivos con memoria limitada.
 
 ## Resumen de prácticas recomendadas {#best-practices-summary}
 
@@ -118,14 +118,14 @@ Como práctica recomendada, para lograr una alta calidad de imagen y un tamaño 
 
 `fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0`
 
-Esta combinación de configuraciones de productos excelentes resultados en la mayoría de las circunstancias.
+Esta combinación de ajustes produce resultados excelentes en la mayoría de las circunstancias.
 
-Si la imagen requiere mayor optimización, ajuste gradualmente los parámetros de nitidez (máscara de enfoque) empezando por un radio definido en 0,2 o 0,3. A continuación, aumente gradualmente la cantidad de 1,75 a un máximo de 4 (equivalente al 400 % en Photoshop). Compruebe que se logra el resultado deseado.
+Si la imagen requiere una mayor optimización, ajuste gradualmente los parámetros de enfoque (máscara de enfoque) empezando por un radio establecido en 0,2 o 0,3. A continuación, aumente gradualmente la cantidad de 1,75 a un máximo de 4 (equivalente a 400 % en Photoshop). Compruebe que se obtiene el resultado deseado.
 
-Si los resultados de nitidez siguen siendo insatisfactorios, aumente el radio en incrementos decimales. Para cada incremento decimal, reinicie la cantidad a 1,75 y aumente gradualmente a 4. Repita este proceso hasta obtener el resultado deseado. Aunque los valores anteriores son un enfoque que los estudios creativos han validado, recuerde que puede empezar con otros valores y seguir otras estrategias. Si los resultados son satisfactorios para usted o no es un asunto subjetivo, por lo tanto la experimentación estructurada es clave.
+Si los resultados de enfoque siguen sin ser satisfactorios, aumente el radio en incrementos decimales. Para cada incremento decimal, reinicie la cantidad a 1,75 y aumente gradualmente a 4. Repita este proceso hasta que obtenga el resultado deseado. Aunque los valores anteriores son un enfoque que los estudios creativos han validado, recuerde que puede empezar con otros valores y seguir otras estrategias. Si los resultados son satisfactorios o no es una cuestión subjetiva, por lo tanto la experimentación estructurada es clave.
 
 A medida que experimenta, las siguientes sugerencias generales pueden resultar útiles para optimizar aún más el flujo de trabajo:
 
-* Pruebe diferentes parámetros en tiempo real, directamente en una dirección URL.
-* Como práctica recomendada, recuerde que puede agrupar comandos de Dynamic Media Image Serving en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen es básicamente un comando URL macros con nombres preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre de ajuste preestablecido personalizado en una ruta de URL llama a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar los comandos y la configuración de calidad para diferentes patrones de uso de imágenes en su sitio web y acorta la longitud total de las direcciones URL.
-* Experience Manager también proporciona formas más avanzadas de ajustar la calidad de imagen, como la aplicación de imágenes de nitidez durante la ingesta. Para casos de uso avanzado en los que existen opciones para ajustar y optimizar los resultados de procesamiento, [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html) puede ayudarle con las prácticas recomendadas y la perspectiva personalizada.
+* Pruebe diferentes parámetros en tiempo real directamente en una dirección URL.
+* Como práctica recomendada, recuerde que puede agrupar comandos del servicio de imágenes de Dynamic Media en un ajuste preestablecido de imagen. Un ajuste preestablecido de imagen son básicamente macros de comandos de URL con nombres de ajustes preestablecidos personalizados como `$thumb_low$` y `&product_high$`. El nombre del ajuste preestablecido personalizado en una ruta URL llama a estos ajustes preestablecidos. Esta funcionalidad le ayuda a administrar comandos y configuraciones de calidad para diferentes patrones de uso de imágenes en el sitio web y acorta la longitud general de las direcciones URL.
+* Experience Manager también proporciona formas más avanzadas de ajustar la calidad de la imagen, como aplicar imágenes de enfoque durante la ingesta. Para casos de uso avanzados en los que hay opciones para ajustar y optimizar los resultados de procesamiento, [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html) puede ayudarle con información y prácticas recomendadas personalizadas.

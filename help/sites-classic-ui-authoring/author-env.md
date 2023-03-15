@@ -21,11 +21,11 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->La siguiente documentación trata sobre la IU clásica. Para obtener información sobre la creación en la IU moderna y con capacidad táctil, consulte la [documentación de creación estándar](/help/assets/assets.md).
+>La siguiente documentación trata sobre la IU clásica. Para obtener información sobre la creación en la IU moderna y táctil, consulte la [Documentación de creación estándar](/help/assets/assets.md).
 
 El entorno de creación permite realizar tareas relacionadas con:
 
-* [Creación](/help/sites-authoring/author.md) (incluido [creación de páginas](/help/sites-authoring/qg-page-authoring.md) y [administración de recursos](/help/assets/assets.md))
+* [Creación](/help/sites-authoring/author.md) (incluido [creación de páginas](/help/sites-authoring/qg-page-authoring.md) y [administrar recursos](/help/assets/assets.md))
 
 * [Tareas de administración](/help/sites-administering/administer-best-practices.md) necesarias para generar y mantener el contenido de su sitio web
 
@@ -45,10 +45,10 @@ Para conseguirlo se ofrecen dos interfaces gráficas de usuario, accesibles desd
    * Esta es la nueva IU estándar de AEM.
    * Es, principalmente, de color gris, con una interfaz sencilla y clara.
    * Está diseñada para utilizarse tanto en dispositivos táctiles como de escritorio (optimizada para los dispositivos táctiles). El aspecto es el mismo en todos los dispositivos, aunque la forma de [ver y seleccionar los recursos](/help/sites-authoring/basic-handling.md) varía ligeramente (toques en lugar de clics).
-   * Consulte la [documentación de creación estándar](/help/sites-authoring/author.md) para obtener más información sobre cómo crear con la IU táctil. La siguiente documentación trata sobre la IU clásica.
+   * Consulte la [Documentación de creación estándar](/help/sites-authoring/author.md) para obtener más información sobre cómo crear contenido con la IU táctil. La siguiente documentación trata sobre la IU clásica.
 
    * Escritorio:
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * Dispositivos de tableta (o de escritorio con menos de 1024 píxeles de ancho):
-   ![Chlimage_1-7](assets/chlimage_1-7.jpeg)
+   ![chlimage_1-7](assets/chlimage_1-7.jpeg)

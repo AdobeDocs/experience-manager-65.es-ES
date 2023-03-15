@@ -49,7 +49,7 @@ En el modo Diseño, se minimiza la barra de tareas y se pueden configurar los co
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Haga clic en **Editar** en el sistema de párrafos (**Diseño de par**).
+1. Clic **Editar** en el sistema de párrafos (**Diseño del par**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -75,7 +75,7 @@ En el modo Diseño, también se pueden configurar los atributos de los component
 
    Por ejemplo, si hace clic en **Editar** en el componente Imagen (**Diseño de la imagen**) puede configurar los parámetros específicos del componente:
 
-   ![Chlimage_1-5](assets/chlimage_1-5.png)
+   ![chlimage_1-5](assets/chlimage_1-5.png)
 
 1. Haga clic en **Aceptar** para guardar los cambios.
 

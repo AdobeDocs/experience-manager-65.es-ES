@@ -1,7 +1,7 @@
 ---
-title: Cómo probar fragmentos de experiencias en We.Retail
+title: Prueba de fragmentos de experiencia en We.Retail
 seo-title: Trying out Experience Fragments in We.Retail
-description: Cómo probar fragmentos de experiencias en We.Retail
+description: Prueba de fragmentos de experiencia en We.Retail
 seo-description: Trying out Experience Fragments in We.Retail
 uuid: 43a6df77-9dd3-4316-b749-0ef059370f7d
 contentOwner: AEM Docs
@@ -17,15 +17,15 @@ ht-degree: 40%
 
 ---
 
-# Cómo probar fragmentos de experiencias en We.Retail{#trying-out-experience-fragments-in-we-retail}
+# Prueba de fragmentos de experiencia en We.Retail{#trying-out-experience-fragments-in-we-retail}
 
-Cómo probar fragmentos de experiencias en We.Retail
+Prueba de fragmentos de experiencia en We.Retail
 
 Un [fragmento de experiencias](/help/sites-authoring/experience-fragments.md) es un grupo de uno o varios componentes que incluye contenido y diseño que se puede consultar dentro de las páginas. Estos pueden contener cualquier componente.
 
-Permiten a un autor reutilizar partes de una página (un fragmento de una experiencia) sin tener que copiar y pegar el contenido.
+Permiten a un autor reutilizar partes de una página (un fragmento de una experiencia), sin tener que copiar y pegar el contenido.
 
-Esto admite el caso de uso del Sistema de administración de contenido (CMS) sin encabezado, donde los autores desean utilizar AEM solo para la creación, pero no para la entrega al cliente. Un punto de contacto o sistema de terceros puede consumir esa experiencia y luego ofrecerla al usuario final.
+AEM Esto es compatible con el caso de uso del Sistema de administración de contenido (CMS) sin encabezado, en el que los autores desean usar el sistema solo para la creación, pero no para la entrega al cliente. Un sistema o punto de contacto de terceros puede consumir esa experiencia y luego entregársela al usuario final.
 
 >[!NOTE]
 >
@@ -40,9 +40,9 @@ Esto admite el caso de uso del Sistema de administración de contenido (CMS) sin
 
 Seleccione **fragmentos de experiencias** desde la navegación global. Aquí puede configurar, [crear](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) y [editar](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) sus fragmentos de experiencias y cualquier elemento relacionado [variaciones](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
 
-## Dónde se utilizan los fragmentos de experiencias en We.Retail {#where-to-use-experience-fragments-in-we-retail}
+## Uso de fragmentos de experiencia en We.Retail {#where-to-use-experience-fragments-in-we-retail}
 
-Puede usar su [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (como con cualquier otro componente) en [cualquier página](/help/sites-authoring/editing-content.md) under **Sitios** en Navegación global.
+Puede usar su [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) (como con cualquier otro componente) en [cualquier página](/help/sites-authoring/editing-content.md) bajo **Sites** en la navegación global.
 
 ## Información adicional {#further-information}
 

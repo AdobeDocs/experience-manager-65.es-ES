@@ -17,7 +17,7 @@ ht-degree: 81%
 
 ---
 
-# Andamiaje{#scaffolding}
+# Scaffolding{#scaffolding}
 
 A veces, es posible que necesite crear un conjunto grande de páginas que comparten la misma estructura pero tienen contenido diferente. A través de la interfaz de AEM estándar, necesitaría crear cada página, arrastrar los componentes correspondientes a la página y rellenar cada uno individualmente.
 
@@ -25,4 +25,4 @@ Con scaffolding, puede crear un formulario (un scaffold) con campos que reflejen
 
 >[!NOTE]
 >
->Aunque hay un Scaffolding [mode](/help/sites-authoring/author-environment-tools.md#page-modes) está disponible, el mantenimiento y la creación de scaffolds, así como la creación de páginas nuevas a partir de scaffolds, se realizan en la IU clásica. Consulte [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) en la documentación de creación en la IU clásica para obtener información.
+>Aunque hay un andamiaje [modo](/help/sites-authoring/author-environment-tools.md#page-modes) disponible, el mantenimiento y la creación de andamios, así como la creación de nuevas páginas a partir de andamios, se realizan en la IU clásica. Consulte [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) en la documentación de creación en la IU clásica para obtener información.

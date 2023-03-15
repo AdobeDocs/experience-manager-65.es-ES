@@ -1,7 +1,7 @@
 ---
 title: Administración de titulares
 seo-title: Managing Banners
-description: Los banners representan vínculos promocionales gráficos. Siga esta página para obtener más información.
+description: Los titulares suelen representar vínculos promocionales gráficos. Siga esta página para obtener más información.
 seo-description: Banners represent typically graphical promotional links. Follow this page to learn more.
 uuid: 593fe2ef-84df-42e2-8a03-897fb67a896d
 contentOwner: User
@@ -21,17 +21,17 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Las acciones de administración de contenido son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Las siguientes acciones se realizan en el contenido de la aplicación.
+Las acciones de Content Management son los componentes básicos que ayudan a crear y administrar contenido dentro de una aplicación. Las siguientes acciones se realizan en el contenido de la aplicación.
 
-## Información general sobre banners {#banners-overview}
+## Información general de titulares {#banners-overview}
 
-Los banners representan vínculos promocionales gráficos.
+Los titulares suelen representar vínculos promocionales gráficos.
 
 >[!NOTE]
 >
->Consulte los siguientes recursos en la Ayuda en línea para obtener más información sobre los siguientes temas en las aplicaciones de AEM Mobile:
+>Consulte los siguientes recursos en la Ayuda en línea para conocer los siguientes temas en las aplicaciones de AEM Mobile:
 >
 >* [Consideraciones de diseño](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
@@ -39,22 +39,22 @@ Los banners representan vínculos promocionales gráficos.
 >
 
 
-## Creación de un banner {#creating-a-banner}
+## Creación de un titular {#creating-a-banner}
 
 El flujo de trabajo general para crear un artículo es el siguiente:
 
-1. Select **Móvil** del carril lateral.
-1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
-1. Haga clic en la flecha hacia abajo en la esquina superior derecha de la **Administrar titulares** mosaico.
-1. Complete cada paso del asistente para seguir creando el nuevo banner.
+1. Seleccionar **Móvil** desde la barra lateral.
+1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
+1. Haga clic en la flecha hacia abajo situada en la esquina superior derecha de la **Administrar titulares** mosaico.
+1. Siga cada paso del asistente para seguir creando el nuevo titular.
 1. Cuando esté listo, haga clic en **Crear**.
-1. El nuevo banner aparece en la sección **Administrar titulares** mosaico.
+1. El nuevo titular aparecerá en la **Administrar titulares** mosaico.
 
-![Chlimage_1-6](assets/chlimage_1-6.gif)
+![chlimage_1-6](assets/chlimage_1-6.gif)
 
-## Importación de un nuevo titular {#importing-a-new-banner}
+## Importación de un titular nuevo {#importing-a-new-banner}
 
-El contenido existente de Mobile On-Demand se puede descargar (importar) de Mobile On-Demand a AEM. Esto permite la edición y visualización del contenido local.
+AEM El contenido existente de Mobile On-Demand se puede descargar (importar) de Mobile On-Demand a. Esto permite editar y ver el contenido local.
 
 >[!NOTE]
 >
@@ -62,77 +62,77 @@ El contenido existente de Mobile On-Demand se puede descargar (importar) de Mobi
 
 Flujo de trabajo para importar un nuevo artículo
 
-1. En Móvil, elija su aplicación móvil bajo demanda en el catálogo.
-1. Haga clic en la flecha hacia abajo en la esquina superior derecha de la **Administrar titulares** mosaico y seleccione Importar titulares.
-1. Haga clic en **Importar titular** en el cuadro de diálogo y, a continuación, cierre.
-1. Los artículos a la carta de Mobile ahora aparecen en la **Administrar titulares** mosaico.
+1. En Mobile, seleccione su aplicación Mobile On-Demand en el catálogo.
+1. Haga clic en la flecha hacia abajo situada en la esquina superior derecha de la **Administrar titulares** y seleccione Importar titulares.
+1. Clic **Importar titular** en el cuadro de diálogo y, a continuación, Cerrar.
+1. Sus artículos de Mobile On-Demand ahora aparecen en la **Administrar titulares** mosaico.
 
 >[!CAUTION]
 >
->Primero debe asociar una conexión móvil bajo demanda.
+>Primero debe asociar una conexión de Mobile On-Demand.
 
 ## Edición de un titular {#editing-a-banner}
 
-Utilice el editor integrado AEM arrastrar y soltar para añadir o cambiar un artículo. Se pueden añadir o eliminar componentes como texto e imágenes. Se pueden insertar imágenes de recursos DAM.
+AEM Utilice el editor integrado de arrastrar y soltar para agregar o cambiar un artículo de la lista de editores de la lista de editores de. Se pueden añadir o eliminar componentes como texto e imágenes. Se pueden insertar imágenes de los recursos DAM.
 
 >[!CAUTION]
 >
->En el editor solo se pueden abrir los titulares creados en AEM.
+>AEM En el editor solo se pueden abrir los banners creados en la.
 
 Flujo de trabajo para editar un artículo:
 
-1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
-1. Seleccione un banner de origen AEM en el mosaico** Administrar banners**.
+1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
+1. AEM Seleccione un banner de origen de ** en el mosaico Administrar banners**.
 1. Haga clic en el banner resaltado de la vista de lista para abrirlo en el editor de contenido.
-1. Utilice el editor de contenido para arrastrar el contenido del banner (manuscritos, imágenes, texto, etc.).
+1. Utilice el editor de contenido para arrastrar el contenido del titular (manuscritos, imágenes, texto, etc.).
 
-### Visualización y edición de los metadatos dentro de un banner {#viewing-and-editing-the-metadata-within-a-banner}
+### Visualización y edición de los metadatos de un titular {#viewing-and-editing-the-metadata-within-a-banner}
 
-Los titulares tienen numerosas propiedades, como títulos, descripciones e imágenes. Esta acción se utiliza para ver y modificar estas propiedades. Opcionalmente, estos cambios se pueden cargar en Mobile On-Demand al guardarlos.
+Los titulares tienen numerosas propiedades, como títulos, descripciones e imágenes. Esta acción se utiliza para ver y modificar dichas propiedades. De forma opcional, estos cambios se pueden cargar en Mobile On-Demand tras guardarlos.
 
 Flujo de trabajo general para ver o editar un artículo:
 
-1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
-1. Elija un banner en la lista **Administrar titulares** mosaico.
+1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
+1. Elija un banner en la **Administrar titulares** mosaico.
 
-1. Select **Propiedades** de la barra de acciones.
-1. Ver todos los metadatos disponibles para ese artículo.
-1. Edite los metadatos si lo desea y haga clic en **Guardar** cuando haya terminado.
+1. Seleccionar **Propiedades** de la barra de acciones.
+1. Vea todos los metadatos disponibles para ese artículo.
+1. Si lo desea, edite los metadatos y haga clic en **Guardar** cuando termine.
 1. De forma opcional, cargue los cambios inmediatamente en Mobile On-Demand.
 
-## Carga de un banner {#uploading-a-banner}
+## Cargar un titular {#uploading-a-banner}
 
-La acción de carga copia el contenido seleccionado y lo agrega a un proyecto de Mobile On-Demand. El contenido de Mobile On-Demand ya existente se sustituye por la nueva versión.
+La acción de carga copia el contenido seleccionado y lo añade a un proyecto de Mobile On-Demand. El contenido existente de Mobile On-Demand se ha sustituido por la nueva versión.
 
 Flujo de trabajo general para cargar un banner:
 
-1. De **Móvil**, elija la aplicación móvil bajo demanda en el catálogo.
-1. En el **Administrar titulares** , seleccione un banner para cargarlo en Mobile On-Demand.
-1. Agregue más banners si es necesario desde la vista de lista.
-1. Select **Cargar** en la barra de acciones, haga clic en Cargar en el cuadro de diálogo.
-1. Los banners ahora se cargan en Mobile On-Demand.
+1. Desde **Móvil**, elija la aplicación Mobile On-Demand en el catálogo.
+1. En el **Administrar titulares** , seleccione un banner para cargar en Mobile On-Demand.
+1. Agregue más titulares si es necesario desde la vista de lista.
+1. Seleccionar **Cargar** en la barra de acciones y, a continuación, haga clic en Cargar en el cuadro de diálogo.
+1. Los titulares se han cargado ahora en Mobile On-Demand.
 
-![Chlimage_1-7](assets/chlimage_1-7.gif)
+![chlimage_1-7](assets/chlimage_1-7.gif)
 
 ## Eliminación de un titular {#deleting-a-banner}
 
-Esta operación elimina el banner seleccionado de Mobile On-Demand y, opcionalmente, de la instancia de AEM local.
+AEM Esta operación elimina el banner seleccionado de Mobile On-Demand y, opcionalmente, de la instancia local de la instancia de la.
 
-Flujo de trabajo general para eliminar un banner:
+Flujo de trabajo general para eliminar un titular:
 
-1. En Mobile, elija la aplicación móvil bajo demanda en el catálogo.
-1. Seleccione el banner que desea eliminar en la **Administrar titulares** mosaico.
-1. Asegúrese de que está seleccionado en la lista (seleccione otras para eliminarlas según sea necesario).
-1. Haga clic en **Eliminar** de la barra de acciones.
-1. Compruebe si desea eliminar tanto de AEM como de Mobile On-Demand.
+1. En Mobile, elija su aplicación Mobile On-Demand en el catálogo.
+1. Seleccione el titular que desea eliminar en la **Administrar titulares** mosaico.
+1. Asegúrese de que esté seleccionado en la lista (seleccione otros para eliminarlos según sea necesario).
+1. Clic **Eliminar** de la barra de acciones.
+1. AEM Seleccione si quiere eliminar de la aplicación, así como de Mobile On-Demand, si lo desea.
 1. Haga clic en **Eliminar**.
-1. El banner ahora se elimina de la lista.
+1. El titular se eliminará de la lista.
 
 ### Pasos siguientes {#the-next-steps}
 
-Una que obtenga información sobre la administración de banners, consulte
+Una vez que aprenda a administrar titulares, consulte
 
-* [Administración de artículos](/help/mobile/mobile-on-demand-managing-articles.md)
+* [Administrar artículos](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Administración de colecciones](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Carga de recursos compartidos](/help/mobile/mobile-on-demand-shared-resources.md)
 * [Publicación/cancelación de la publicación del contenido](/help/mobile/mobile-on-demand-publishing-unpublishing.md)

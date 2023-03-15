@@ -39,7 +39,7 @@ Utilice el siguiente procedimiento para crear una página para móvil:
    * Hacer clic en el icono del dispositivo en la parte superior de la página.
    * Hacer clic en el botón **Editar** en la **barra de tareas** y seleccionar el dispositivo en el menú desplegable.
 
-1. Arrastre y suelte la **Texto e imagen** de la ficha Móvil de la barra de tareas a la página.
+1. Arrastre y suelte el **Texto e imagen** de la pestaña Móvil de la barra de tareas a la página.
 1. Edite el componente y añada texto. Haga clic en **Aceptar** para guardar los cambios.
 
 La página presenta un aspecto similar al siguiente:
@@ -48,4 +48,4 @@ La página presenta un aspecto similar al siguiente:
 
 >[!NOTE]
 >
->Los emuladores se desactivan cuando se solicita una página de la instancia del autor desde un dispositivo móvil. La creación se puede realizar utilizando la IU táctil.
+>Los emuladores se desactivan cuando se solicita una página de la instancia del autor desde un dispositivo móvil. La creación se puede realizar mediante la IU táctil.

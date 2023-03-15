@@ -36,8 +36,8 @@ Para crear una nueva versión de una página:
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Introduzca un **comentario** (opcional).
-1. Para establecer una etiqueta en la versión (opcional), haga clic en el botón **Más >>** y configure la variable **Etiqueta** para asignar un nombre a la versión. Si no se establece la etiqueta, la versión se incrementa automáticamente.
-1. Haga clic en **Crear versión**. Se mostrará un mensaje atenuado en la página; por ejemplo:
+1. Para establecer una etiqueta en la versión (opcional), haga clic en **Más >>** y configure el **Etiqueta** para nombrar la versión. Si no se define la etiqueta, la versión es un número incrementado automáticamente.
+1. Clic **Crear versión**. Se mostrará un mensaje atenuado en la página; por ejemplo:
 Versión 1.2 creada para: Shirts.
 
 >[!NOTE]
@@ -87,7 +87,7 @@ Este método puede utilizarse para restaurar una versión de página. También p
 Para compara la versión actual de la página con una versión anterior:
 
 1. En el navegador, abra la página que desee comparar con una versión anterior.
-1. En la barra de tareas, seleccione la **Versiones** y, a continuación, la pestaña **Restaurar versión** en la subpestaña .
+1. En la barra de tareas, seleccione **Versiones** y, a continuación, **Restaurar versión** En la subpestaña.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -176,7 +176,7 @@ En el ejemplo que se muestra a continuación, la línea roja indica que la pági
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
-1. Haga clic:
+1. Hacer clic:
 
    1. **Ir** para mostrar el contenido de la página publicada en el punto temporal seleccionado.
    1. Cuando se muestre el contenido, use **Salir de Deformación de tiempo** para salir y volver a la página de creación actual.

@@ -1,7 +1,7 @@
 ---
 title: Integración con Adobe Target
 seo-title: Integrating with Adobe Target
-description: Obtenga información sobre la integración de AEM con Adobe Target.
+description: AEM Obtenga información acerca de la integración de la con Adobe Target.
 seo-description: Learn about integrating AEM with Adobe Target.
 uuid: b90346e8-9757-4272-a870-bbe5e647303f
 contentOwner: Guillaume Carlino
@@ -13,13 +13,13 @@ exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
 source-wordcount: '598'
-ht-degree: 64%
+ht-degree: 66%
 
 ---
 
 # Integración con Adobe Target{#integrating-with-adobe-target}
 
-Como parte de Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) permite aumentar la relevancia del contenido mediante el direccionamiento y efectuando mediciones en todos los canales. Los especialistas en marketing utilizan Adobe Target para diseñar y ejecutar pruebas en línea, crear segmentos de audiencia sobre la marcha (basados en el comportamiento) y automatizar el direccionamiento del contenido y las experiencias en línea. AEM ha adoptado el flujo de trabajo de objetivos que se utiliza en Adobe Target Standard. Si usa Target, estará familiarizado con el entorno de edición de segmentación en AEM.
+Como parte de Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) permite aumentar la relevancia del contenido mediante el direccionamiento y efectuando mediciones en todos los canales. Los especialistas en marketing utilizan Adobe Target para diseñar y ejecutar pruebas en línea, crear segmentos de audiencia sobre la marcha (basados en el comportamiento) y automatizar el direccionamiento del contenido y las experiencias en línea. AEM ha adoptado el flujo de trabajo de direccionamiento que se utiliza en Adobe Target Standard. AEM Si utiliza Target, estará familiarizado con el entorno de edición de direccionamiento en la creación de segmentos de la lista de distribución de elementos de la lista de distribución de elementos de la lista de distribución de elementos.
 
 Integre los AEM Sites con Adobe Target para personalizar el contenido de sus páginas:
 
@@ -30,18 +30,18 @@ Integre los AEM Sites con Adobe Target para personalizar el contenido de sus pá
 
 Para integrarse con Target, realice las siguientes tareas:
 
-1. [Realizar tareas previas](/help/sites-administering/target-requirements.md): regístrese en Adobe Target y configure ciertos aspectos de la instancia de autor de AEM. Su cuenta de Adobe Target debe tener permisos de **aprobador **nivel como mínimo. Además, debe proteger la configuración de actividad en el nodo de publicación para que los usuarios no puedan acceder a ella.
+1. [Realizar tareas previas](/help/sites-administering/target-requirements.md): regístrese en Adobe Target y configure ciertos aspectos de la instancia de autor de AEM. Su cuenta de Adobe Target debe tener permisos de nivel **aprobador **&quot; como mínimo. Además, debe proteger la configuración de actividad en el nodo de publicación para que los usuarios no puedan acceder a ella.
 
 1. O bien, haga lo siguiente:
 
-   1. [Opt-in Adobe Target](/help/sites-administering/opt-in.md): El asistente de inclusión toma la información de su cuenta de Target y crea una configuración de nube de Adobe Target y un marco de Target. El asistente también asocia sus sitios con Target Framework. Si el asistente no puede conectarse a target, consulte la sección [solucionar problemas de conexión](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) para obtener más información. Entonces puede [Modificación de las configuraciones de nube predeterminadas](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): Si es necesario, modifique la configuración de nube y el marco que creó el asistente de inclusión. Por ejemplo, modifique la estructura para enviar datos de contexto adicionales a Target. Si desea utilizar Adobe Analytics como fuente de informes para Adobe Target, debe modificar la configuración de la nube para que apunte a la configuración de A4T.
+   1. [Inclusión en Adobe Target](/help/sites-administering/opt-in.md): el asistente de inclusión toma la información de la cuenta de Target y crea una configuración de nube de Adobe Target y un marco de trabajo de Target. El asistente también asocia los sitios con el marco de trabajo de Target. Si el asistente no se puede conectar al destino, consulte la [solución de problemas de conexión](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) sección. Puede hacer lo siguiente [Modificar las configuraciones de nube predeterminadas](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): Si es necesario, modifique la configuración y el marco de trabajo de la nube que creó el asistente de inclusión. Por ejemplo, modifique el marco de trabajo para enviar datos de contexto adicionales a Target. Si desea utilizar Adobe Analytics como fuente de informes para Adobe Target, debe modificar la configuración en la nube para que apunte a la configuración de A4T.
    1. [Integración manual con Adobe Target](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 
 1. [Configurar actividades](/help/sites-authoring/activitylib.md): asocie sus actividades a la configuración de nube de Target.
 
 >[!NOTE]
 >
->Consulte también [Integración de AEM con Adobe Target y Adobe Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Consulte también [AEM Integración de los recursos de la con Adobe Target y Adobe Analytics mediante DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 >[!NOTE]
 >
@@ -66,11 +66,11 @@ Cuando se complete la integración, puede [crear contenido de destino](/help/sit
 
 ## Fuentes de información de fondo {#background-information-sources}
 
-La integración de AEM con Adobe Target requiere conocimientos de Adobe Target, administración de actividades de AEM y administración AEM audiencias. Debe estar familiarizado con la siguiente información:
+AEM La integración de los con Adobe Target requiere conocimientos de Adobe Target AEM AEM, gestión de actividades de la y gestión de audiencias de la. Debe estar familiarizado con la siguiente información:
 
 * Adobe Target (consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=es)).
-* Consola AEM actividades (consulte [Administración de actividades](/help/sites-authoring/activitylib.md)).
-* Audiencias AEM (Consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md)).
+* Consola de AEM Activities (consulte [Administración de actividades](/help/sites-authoring/activitylib.md)).
+* AEM Audiences (consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md)).
 
 >[!NOTE]
 >

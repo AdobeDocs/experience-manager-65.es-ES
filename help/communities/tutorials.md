@@ -1,7 +1,7 @@
 ---
 title: Tutoriales
 seo-title: Tutorials
-description: Ejemplos de ayuda para aprender y trabajar con el marco de componentes sociales de AEM Communities (SCF)
+description: Ejemplos que le ayudarán a aprender y trabajar con el marco de componentes sociales de AEM Communities (SCF)
 seo-description: Examples to help in learning and working with AEM Communities social component framework (SCF)
 uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
 contentOwner: Guillaume Carlino
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Tutoriales {#tutorials}
 
-Estos son ejemplos de ayuda para el aprendizaje y el trabajo con AEM comunidades 6.1 [marco de componentes sociales (SCF)](scf.md).
+AEM Estos son ejemplos para ayudar a aprender y trabajar con comunidades de la versión 6.1 de la [marco de componentes sociales (SCF)](scf.md).
 
 ## Personalización del lado del cliente {#client-side-customization}
 
@@ -27,7 +27,7 @@ Consulte también lo siguiente:
 
 * [Personalización del lado del cliente de SCF](client-customize.md)
 
-* [Guía de componentes de comunidad](components-guide.md)
+* [Guía de componentes de la comunidad](components-guide.md)
 
 * [Componente Comentarios de superposición](overlay-comments.md)
 
@@ -37,37 +37,37 @@ Consulte también lo siguiente:
 
 Consulte también [Personalización del lado del servidor SCF](server-customize.md).
 
-El código de muestra está disponible en la [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) repositorio:
+El código de muestra está disponible en la variable [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) repositorio:
 
-* [Personalización de la muestra de componentes SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
+* [Personalizar muestra de componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
-* [Ejemplo de componente SCF de superposición](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
+* [Superponer muestra de componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
 * [Ampliar muestra de componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
 
-## Instrucciones de uso {#how-to-instructions}
+## Instrucciones sobre procedimientos {#how-to-instructions}
 
 * [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
-   ToDo MVC Muestra cómo desarrollar un componente SCF+SRP desde cero.
+   ToDo MVC muestra cómo desarrollar un componente SCF+SRP desde cero.
 
 * [Introducción a Comunidades de AEM](getting-started.md)
 
-* [Configuración de MongoDB para demostración](demo-mongo.md)
+* [Cómo configurar MongoDB para la demostración](demo-mongo.md)
 
-* [Creación de un Simulador para pruebas SCF](an-scf-sandbox.md)
+* [Crear una zona protegida SCF](an-scf-sandbox.md)
 
 * [Crear una página de muestra](create-sample-page.md)
 
 ## Usuarios de demostración {#demo-users}
 
-El paquete de muestras de Geometrixx incluye usuarios de demostración. A menudo, existe una diferencia en la experiencia entre ser un visitante (sin sesión iniciada) o un miembro (con sesión iniciada) y, siempre que los paquetes de muestras de Geometrixx permanezcan instalados, puede utilizar estos usuarios para simular un estado con sesión iniciada al explorar con el [Guía de componentes de comunidad](components-guide.md).
+El paquete de muestras de Geometrixx incluye usuarios de demostración. A menudo existe una diferencia en la experiencia entre ser visitante (sin sesión iniciada) o miembro (con sesión iniciada) y, siempre y cuando los paquetes de muestras de Geometrixx permanezcan instalados, puede utilizar estos usuarios para simular un estado de sesión iniciada al explorar con [Guía de componentes de la comunidad](components-guide.md).
 
-Para obtener una lista completa de los usuarios de demostración, vaya usando el carril a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Seguridad > Usuarios]**. O usar la IU clásica [consola de seguridad](http://localhost:4502/useradmin) para administrar usuarios y grupos.
+Para obtener una lista completa de los usuarios de la demostración, vaya utilizando el carril a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Seguridad > Usuarios]**. O utilice la IU clásica [consola de seguridad](http://localhost:4502/useradmin) para administrar usuarios y grupos.
 
-Si [se ha creado el sitio de la comunidad](getting-started.md), es posible asignar usuarios de demostración a su [grupos de usuarios de la comunidad](users.md).
+Si un [se ha creado el sitio de la comunidad](getting-started.md), es posible asignar usuarios de demostración a su [grupos de usuarios de la comunidad](users.md).
 
-***id de usuario* / *password***:
+***id de usuario* / *contraseña***:
 
 * aaron.mcdonald@mailinator.com / contraseña
 * emily.andrews@mailinator.com / contraseña

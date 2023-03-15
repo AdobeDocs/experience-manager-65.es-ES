@@ -1,7 +1,7 @@
 ---
 title: La próxima versión...
 seo-title: The next release...
-description: Una versión posterior está casi siempre prevista, e incluso puede comenzar durante las etapas finales de la implementación actual
+description: Casi siempre se prevé una versión posterior, que incluso puede iniciarse durante las etapas finales de la implementación actual
 seo-description: A subsequent release is nearly always foreseen, and can even start during the final stages of the current implementation
 uuid: 6ae213fb-1bd3-464c-bfd0-14ddceaee11e
 contentOwner: Guillaume Carlino
@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # La próxima versión...{#the-next-release}
 
-La ejecución de un proyecto rara vez es el final del proceso. Una versión posterior (casi) siempre está prevista, e incluso puede comenzar durante las etapas finales de la implementación actual.
+La implementación de un proyecto rara vez es el final del proceso. Una versión posterior está (casi) siempre prevista, y puede incluso comenzar durante las etapas finales de la implementación actual.
 
-En cualquier caso, puede resultar útil planificar para la próxima versión de:
+En cualquier caso, puede resultar útil planificar para la próxima versión:
 
-* Documentar y almacenar cuidadosamente los casos de prueba para que se pueda hacer referencia a ellos o, ojalá, reutilizarlos.
-* Desarrollo de pruebas que pueden utilizarse como pruebas de regresión para la próxima versión.
+* Documente y almacene cuidadosamente sus casos de prueba para que se pueda hacer referencia a ellos o, con suerte, reutilizarlos.
+* Desarrollar pruebas que puedan utilizarse como pruebas de regresión para la próxima versión.
 * Recopilar cualquier información que usted o el cliente hayan obtenido a través de la experiencia del proceso de prueba.
 
-   Esto puede ayudar a crear requisitos para la próxima versión; por ejemplo, como la experiencia del cliente con el producto ha aumentado durante las pruebas.
+   Esto puede ayudar a definir los requisitos para la próxima versión; por ejemplo, a medida que la experiencia del cliente con el producto aumenta durante las pruebas.
 
 Como la próxima versión puede ser una migración, cualquier información relacionada con esto resultará útil.

@@ -1,7 +1,7 @@
 ---
 title: Vista principal para la administración de permisos
 seo-title: Principal View for Permissions Management
-description: Obtenga información sobre la nueva interfaz de usuario táctil que facilita la administración de permisos.
+description: Obtenga información acerca de la nueva interfaz de usuario táctil que facilita la administración de permisos.
 seo-description: Learn about the new Touch UI interface that facilitates permissions management.
 uuid: 16c5889a-60dd-4b66-bbc4-74fbdb5fc32f
 contentOwner: sarchiz
@@ -22,43 +22,43 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-AEM 6.5 presenta la Administración de permisos para usuarios y grupos. La funcionalidad principal sigue siendo la misma que la IU clásica, pero es más fácil de usar y eficaz.
+AEM.5 presenta la Administración de permisos para usuarios y grupos. La funcionalidad principal sigue siendo la misma que la IU clásica, pero es más fácil de usar y eficiente.
 
 ## Usos {#how-to-use}
 
 ### Acceso a la IU {#accessing-the-ui}
 
-Se accede a la nueva administración de permisos basada en la interfaz de usuario a través de la tarjeta Permisos en Seguridad como se muestra a continuación:
+Se accede a la nueva administración de permisos basada en la interfaz de usuario a través de la tarjeta Permisos en Seguridad, como se muestra a continuación:
 
 ![](assets/screen_shot_2019-03-17at63333pm.png)
 
-La nueva vista facilita la visualización de todo el conjunto de privilegios y restricciones para una entidad de seguridad determinada en todas las rutas en las que los permisos se han concedido explícitamente. Esto elimina la necesidad de ir a
+La nueva vista facilita la visualización de todo el conjunto de privilegios y restricciones para un principal determinado en todas las rutas en las que se han concedido permisos explícitamente. Esto elimina la necesidad de ir a
 
-CRXDE para administrar privilegios y restricciones avanzados. Se ha consolidado en la misma vista. El valor predeterminado de la vista es &quot;todos&quot;.
+CRXDE para administrar privilegios y restricciones avanzados. Se ha consolidado en la misma vista. La vista predeterminada es Grupo &quot;todos&quot;.
 
 ![](assets/unu-1.png)
 
-Hay un filtro que permite al usuario seleccionar el tipo de entidades principales para ver **Usuarios**, **Grupos** o **Todo** y buscar cualquier principal **.**
+Hay un filtro que permite al usuario seleccionar el tipo de entidades de seguridad que desea ver **Usuarios**, **Grupos**, o **Todo** y buscar cualquier principal **.**
 
 ![](assets/image2019-3-20_23-52-51.png)
 
-### Visualización de permisos para un director {#viewing-permissions-for-a-principal}
+### Visualización de permisos para una entidad principal {#viewing-permissions-for-a-principal}
 
-El marco de la izquierda permite a los usuarios desplazarse hacia abajo para encontrar cualquier entidad de seguridad o buscar un grupo o un usuario en función del filtro seleccionado, como se muestra a continuación:
+El marco de la izquierda permite a los usuarios desplazarse hacia abajo para encontrar cualquier principal o buscar un grupo o un usuario en función del filtro seleccionado, como se muestra a continuación:
 
 ![](assets/doi-1.png)
 
-Al hacer clic en el nombre se muestran los permisos asignados a la derecha. El panel de permisos muestra la lista de entradas de control de acceso en rutas específicas junto con las restricciones configuradas.
+Al hacer clic en el nombre, se muestran los permisos asignados a la derecha. El panel de permisos muestra la lista de entradas de control de acceso en rutas específicas junto con las restricciones configuradas.
 
 ![](assets/trei-1.png)
 
-### Adición de una nueva entrada de control de acceso para un principal {#adding-new-access-control-entry-for-a-principal}
+### Agregar una nueva entrada de control de acceso para una entidad principal {#adding-new-access-control-entry-for-a-principal}
 
-Se pueden agregar nuevos permisos agregando una nueva Entrada de control de acceso haciendo clic en el botón Añadir ACE .
+Para agregar nuevos permisos, agregue una nueva Entrada de control de acceso haciendo clic en el botón Agregar ACE.
 
 ![](assets/patru.png)
 
-Esto abre la ventana que se muestra a continuación; el siguiente paso es elegir una ruta en la que se debe configurar el permiso.
+Esto abre la ventana que se muestra a continuación. El siguiente paso es elegir una ruta en la que se deba configurar el permiso.
 
 ![](assets/cinci-1.png)
 
@@ -66,9 +66,9 @@ Aquí seleccionamos una ruta en la que queremos configurar un permiso para **dam
 
 ![](assets/sase-1.png)
 
-Una vez seleccionada la ruta, el flujo de trabajo vuelve a esta pantalla, en la que el usuario puede seleccionar uno o más de los privilegios de las áreas de nombres disponibles (como `jcr`, `rep` o `crx`) como se muestra a continuación.
+Una vez seleccionada la ruta, el flujo de trabajo vuelve a esta pantalla, donde el usuario puede seleccionar uno o varios privilegios de las áreas de nombres disponibles (como `jcr`, `rep` o `crx`) como se muestra a continuación.
 
-Los privilegios se pueden agregar buscando utilizando el campo de texto y luego seleccionando en la lista.
+Los privilegios se pueden añadir buscando en el campo de texto y seleccionando a continuación en la lista.
 
 >[!NOTE]
 >
@@ -82,56 +82,56 @@ Una vez seleccionada la lista de privilegios, el usuario puede elegir el Tipo de
 
 ### Uso de restricciones {#using-restrictions}
 
-Además de la lista de privilegios y el tipo de permiso en una ruta determinada, esta pantalla también permite añadir restricciones para el control de acceso de grano fino como se muestra a continuación:
+Además de la lista de privilegios y el Tipo de permiso en una ruta determinada, esta pantalla también permite agregar restricciones para el control de acceso de grano fino como se muestra a continuación:
 
 ![](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
->Para obtener más información sobre qué significa cada restricción, consulte [la documentación de Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Para obtener más información sobre el significado de cada restricción, consulte [Documentación de Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
-Las restricciones se pueden agregar como se muestra a continuación; para ello, elija el tipo de restricción, introduzca el valor y pulse la variable **+** icono.
+Las restricciones se pueden añadir como se muestra a continuación seleccionando el tipo de restricción, introduciendo el valor y pulsando el botón **+** icono.
 
 ![](assets/sapte-1.png) ![](assets/opt-1.png)
 
-El nuevo ACE se refleja en la lista de control de acceso como se muestra a continuación. Tenga en cuenta que `jcr:write` es un privilegio agregado que incluye `jcr:removeNode` que se agregó anteriormente, pero que no se muestra a continuación como cubierto en `jcr:write`.
+La nueva ACE se refleja en la Lista de control de acceso como se muestra a continuación. Tenga en cuenta que `jcr:write` es un privilegio agregado que incluye `jcr:removeNode` que se añadió anteriormente, pero no se muestra a continuación como cubierto en `jcr:write`.
 
 ### Edición de ACE {#editing-aces}
 
-Las Entradas de control de acceso se pueden editar seleccionando una entidad de seguridad y eligiendo el ACE que desee editar.
+Las entradas de control de acceso se pueden editar seleccionando un principal y eligiendo el elemento ACE que desea editar.
 
-Por ejemplo, aquí podemos editar la siguiente entrada para **dam-users** haciendo clic en el icono de lápiz de la derecha:
+Por ejemplo, aquí podemos editar la siguiente entrada para **dam-users** haciendo clic en el icono de lápiz a la derecha:
 
-![Agregar restricción](assets/image2019-3-21_0-35-39.png)
+![Añadir restricción](assets/image2019-3-21_0-35-39.png)
 
-La pantalla de edición se muestra con los ACE configurados preseleccionados, estos se pueden eliminar haciendo clic en el icono cruzado junto a ellos o se pueden añadir nuevos privilegios para la ruta dada, como se muestra a continuación.
+La pantalla de edición se muestra con las entradas de control de acceso configuradas preseleccionadas, que se pueden eliminar haciendo clic en el icono en forma de cruz junto a ellas o se pueden añadir nuevos privilegios para la ruta dada, como se muestra a continuación.
 
 ![Editar entrada](assets/noua-1.png)
 
-A continuación, agregamos la variable `addChildNodes` privilegio para **dam-users** en la ruta dada.
+Aquí se agrega el `addChildNodes` privilegio para **dam-users** en la ruta dada.
 
 ![](assets/image2019-3-21_0-45-35.png)
 
-Los cambios se pueden guardar haciendo clic en el botón **Guardar** en la parte superior derecha, y los cambios se reflejarán en los nuevos permisos para **dam-users **como se muestra a continuación:
+Los cambios se pueden guardar haciendo clic en el **Guardar** en la parte superior derecha, y los cambios se reflejarán en los nuevos permisos para **dam-users **como se muestra a continuación:
 
 ![](assets/zece-1.png)
 
 ### Eliminación de ACE {#deleting-aces}
 
-Las Entradas de control de acceso se pueden eliminar para eliminar todos los permisos otorgados a una entidad de seguridad en una ruta específica. El icono X situado junto a ACE se puede usar para eliminarlo como se muestra a continuación:
+Las entradas de control de acceso se pueden eliminar para eliminar todos los permisos otorgados a una entidad de seguridad en una ruta específica. El icono X situado junto a ACE puede utilizarse para eliminarlo, como se muestra a continuación:
 
 ![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
 
-### Combinaciones de privilegios de la IU clásica {#classic-ui-privilege-combinations}
+### Combinaciones de privilegios de IU clásica {#classic-ui-privilege-combinations}
 
 Tenga en cuenta que la nueva interfaz de usuario de permisos utiliza explícitamente el conjunto básico de privilegios en lugar de combinaciones predefinidas que no reflejaban realmente los privilegios subyacentes exactos que se concedieron.
 
-Provocó confusión sobre qué se está configurando exactamente. La tabla siguiente muestra la asignación entre las combinaciones de privilegios de la IU clásica y los privilegios reales que las constituyen:
+Causó confusión sobre qué se está configurando exactamente. En la tabla siguiente se muestra la asignación entre las combinaciones de privilegios de la IU clásica a los privilegios reales que las constituyen:
 
 <table>
  <tbody>
   <tr>
-   <th>Combinaciones de privilegios de la IU clásica</th>
+   <th>Combinaciones de privilegios de IU clásica</th>
    <th>Privilegio de IU de permisos</th>
   </tr>
   <tr>

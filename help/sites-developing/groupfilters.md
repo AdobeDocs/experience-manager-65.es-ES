@@ -1,7 +1,7 @@
 ---
 title: Creación de filtros de grupo de dispositivos
 seo-title: Creating Device Group Filters
-description: Crear un filtro de grupo de dispositivos para definir un conjunto de requisitos de capacidad de dispositivos
+description: Cree un filtro de grupo de dispositivos para definir un conjunto de requisitos de capacidad de los dispositivos
 seo-description: Create a device group filter to define a set of device capability requirements
 uuid: 30c0699d-2388-41b5-a062-f5ea9d6f08bc
 contentOwner: Guillaume Carlino
@@ -15,7 +15,7 @@ exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -23,19 +23,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-Cree un filtro de grupo de dispositivos para definir un conjunto de requisitos de capacidad de dispositivos. Cree tantos filtros como necesite para dirigirse a los grupos necesarios de capacidades del dispositivo.
+Cree un filtro de grupo de dispositivos para definir un conjunto de requisitos de capacidad de los dispositivos. Cree tantos filtros como necesite para dirigirse a los grupos necesarios de capacidades de dispositivos.
 
-Diseñe los filtros de modo que pueda utilizar combinaciones de ellos para definir los grupos de capacidades. Normalmente, hay superposición de las capacidades de diferentes grupos de dispositivos. Por lo tanto, puede utilizar algunos filtros con varias definiciones de grupo de dispositivos.
+Diseñe los filtros de modo que pueda utilizar combinaciones de ellos para definir los grupos de capacidades. Normalmente, hay superposición de las capacidades de diferentes grupos de dispositivos. Por lo tanto, puede utilizar algunos filtros con varias definiciones de grupos de dispositivos.
 
-Después de crear un filtro, puede utilizarlo en la [configuración de grupo.](/help/sites-developing/mobile.md#creating-a-device-group)
+Después de crear un filtro, puede utilizarlo en el [configuración del grupo.](/help/sites-developing/mobile.md#creating-a-device-group)
 
-## La clase Java de filtro {#the-filter-java-class}
+## La clase Java del filtro {#the-filter-java-class}
 
-Un filtro de grupo de dispositivos es un componente OSGi que implementa el [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interfaz. Cuando se implementa, la clase de implementación proporciona un servicio de filtro que está disponible para las configuraciones de grupo de dispositivos.
+Un filtro de grupo de dispositivos es un componente OSGi que implementa la variable [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interfaz. Cuando se implementa, la clase de implementación proporciona un servicio de filtro disponible para las configuraciones de grupo de dispositivos.
 
-La solución descrita en este artículo utiliza el plugin Apache Felix Maven SCR para facilitar el desarrollo del componente y el servicio. Por lo tanto, la clase Java de ejemplo utiliza la variable `@Component`y `@Service` anotaciones. La clase tiene la siguiente estructura:
+La solución descrita en este artículo utiliza el complemento Apache Felix Maven SCR para facilitar el desarrollo del componente y el servicio. Por lo tanto, la clase Java de ejemplo utiliza la variable `@Component`y `@Service` anotaciones. La clase tiene la siguiente estructura:
 
 ```java
 package com.adobe.example.myapp;
@@ -71,11 +71,11 @@ Debe proporcionar código para los siguientes métodos:
 
 * `getDescription`: Devuelve la descripción del filtro. La descripción aparece en el cuadro de diálogo de configuración del grupo de dispositivos.
 * `getTitle`: Devuelve el nombre del filtro. El nombre aparece al seleccionar filtros para el grupo de dispositivos.
-* `matches`: Determina si el dispositivo tiene las capacidades necesarias.
+* `matches`: Determina si el dispositivo tiene las capacidades requeridas.
 
-### Proporcionar el nombre y la descripción del filtro {#providing-the-filter-name-and-description}
+### Proporción del nombre y la descripción del filtro {#providing-the-filter-name-and-description}
 
-La variable `getTitle` y `getDescription` los métodos devuelven el nombre y la descripción del filtro, respectivamente. El siguiente código ilustra la implementación más sencilla:
+El `getTitle` y `getDescription` Los métodos de devuelven el nombre del filtro y la descripción, respectivamente. El siguiente código ilustra la implementación más sencilla:
 
 ```java
 public String getDescription() {
@@ -87,36 +87,36 @@ public String getTitle() {
 }
 ```
 
-La codificación rígida del texto del nombre y la descripción es suficiente para los entornos de creación uni-lingües. Considere la posibilidad de externalizar las cadenas para uso multilingüe o para permitir el cambio de cadenas sin volver a compilar el código fuente.
+Codificar el nombre y el texto de descripción es suficiente para entornos de creación multilingües. Considere la posibilidad de externalizar las cadenas para uso multilingüe o para habilitar el cambio de cadenas sin volver a compilar el código fuente.
 
-### Evaluar Con Criterios De Filtro {#evaluating-against-filter-criteria}
+### Evaluación según los criterios de filtro {#evaluating-against-filter-criteria}
 
-La variable `matches` devuelve `true` si las capacidades del dispositivo cumplen todos los criterios del filtro. Evalúe la información proporcionada en argumentos de método para determinar si el dispositivo pertenece al grupo. Los siguientes valores se proporcionan como argumentos:
+El `matches` función devuelve `true` si las capacidades del dispositivo cumplen todos los criterios de filtro. Evalúe la información proporcionada en los argumentos del método para determinar si el dispositivo pertenece al grupo. Se proporcionan los siguientes valores como argumentos:
 
 * Un objeto DeviceGroup
-* Nombre del agente de usuario
-* Un objeto Map que contiene las capacidades del dispositivo. Las claves Map son los nombres de las capacidades WURFL™ y los valores son los valores correspondientes de la base de datos WURFL™.
+* El nombre del agente de usuario
+* Objeto Map que contiene las funciones del dispositivo. Las claves de mapa son los nombres de capacidad WURFL™ y los valores son los valores correspondientes de la base de datos WURFL™.
 
-La variable [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contiene un subconjunto de los nombres de la capacidad WURFL™ en campos estáticos. Utilice estas constantes de campo como claves al recuperar valores del mapa de las capacidades del dispositivo.
+El [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) La interfaz contiene un subconjunto de los nombres de capacidad WURFL™ en campos estáticos. Utilice estas constantes de campo como claves al recuperar valores desde el Mapa de capacidades de dispositivo.
 
-Por ejemplo, el siguiente ejemplo de código determina si el dispositivo es compatible con CSS:
+Por ejemplo, el siguiente ejemplo de código determina si el dispositivo admite CSS:
 
 ```xml
 boolean cssSupport = true;
 cssSupport = NumberUtils.toInt(capabilities.get(DeviceSpecsConstants.DSPEC_XHTML_SUPPORT_LEVEL)) > 1;
 ```
 
-La variable `org.apache.commons.lang.math` proporciona el `NumberUtils` Clase .
+El `org.apache.commons.lang.math` El paquete proporciona el `NumberUtils` clase.
 
 >[!NOTE]
 >
->Asegúrese de que la base de datos WURFL™ implementada en AEM incluye las capacidades que utiliza como criterios de filtro. (Consulte [Detección de dispositivos](/help/sites-developing/mobile.md#server-side-device-detection).)
+>AEM Asegúrese de que la base de datos WURFL™ implementada para incluir las capacidades que utiliza como criterio de filtro. (Consulte [Detección de dispositivos](/help/sites-developing/mobile.md#server-side-device-detection).)
 
-### Filtro de ejemplo para tamaño de pantalla {#example-filter-for-screen-size}
+### Filtro De Ejemplo Para El Tamaño De Pantalla {#example-filter-for-screen-size}
 
-El ejemplo de implementación de DeviceGroupFilter que se muestra a continuación determina si el tamaño físico del dispositivo cumple los requisitos mínimos. Este filtro está diseñado para añadir granularidad al grupo de dispositivos táctiles. El tamaño de los botones en la interfaz de usuario de la aplicación debe ser el mismo independientemente del tamaño de la pantalla física. El tamaño de otros elementos, como el texto, puede variar. El filtro permite la selección dinámica de una CSS concreta que controla el tamaño de los elementos de la interfaz de usuario.
+El ejemplo de implementación de DeviceGroupFilter que se muestra a continuación determina si el tamaño físico del dispositivo cumple los requisitos mínimos. Este filtro está diseñado para agregar granularidad al grupo de dispositivos táctiles. El tamaño de los botones en la interfaz de usuario de la aplicación debe ser el mismo independientemente del tamaño de la pantalla física. El tamaño de otros elementos, como el texto, puede variar. El filtro permite la selección dinámica de un CSS concreto que controla el tamaño de los elementos de la interfaz de usuario.
 
-Este filtro aplica criterios de tamaño a la variable `physical_screen_height` y `physical_screen_width` Nombres de propiedades WURFL™.
+Este filtro aplica criterios de tamaño a `physical_screen_height` y `physical_screen_width` WURFL™ nombres de propiedades.
 
 ```java
 package com.adobe.example.myapp;
@@ -165,35 +165,35 @@ public class ScreenSizeLarge implements DeviceGroupFilter {
 }
 ```
 
-El valor String que devuelve el método getTitle aparece en la lista desplegable de las propiedades del grupo de dispositivos.
+El valor de tipo String que devuelve el método getTitle aparece en la lista desplegable de las propiedades del grupo de dispositivos.
 
 ![filteraddtogroup](assets/filteraddtogroup.png)
 
-Los valores de cadena que devuelven los métodos getTitle y getDescription se incluyen en la parte inferior de la página de resumen del grupo de dispositivos.
+Los valores de tipo String que devuelven los métodos getTitle y getDescription se incluyen en la parte inferior de la página de resumen del grupo de dispositivos.
 
 ![filterdescription](assets/filterdescription.png)
 
-### El archivo Maven POM {#the-maven-pom-file}
+### El archivo POM de Maven {#the-maven-pom-file}
 
 El siguiente código POM es útil si utiliza Maven para crear sus aplicaciones. El POM hace referencia a varios complementos y dependencias necesarios.
 
 **Plugins:**
 
-* Complemento Compilador Apache Maven: Compila las clases Java a partir del código fuente.
+* Complemento del compilador de Apache Maven: compila clases Java a partir del código fuente.
 * Complemento Apache Felix Maven Bundle: Crea el paquete y el manifiesto
-* Complemento Apache Felix Maven SCR: Crea el archivo descriptor de componente y configura el encabezado de manifiesto de componente de servicio.
+* Complemento Apache Felix Maven SCR: Crea el archivo descriptor de componente y configura el encabezado de manifiesto del componente de servicio.
 
 **Dependencias:**
 
-* `cq-wcm-mobile-api-5.5.2.jar`: Proporciona las interfaces DeviceGroup y DeviceGroupFilter .
+* `cq-wcm-mobile-api-5.5.2.jar`: proporciona las interfaces DeviceGroup y DeviceGroupFilter.
 
-* `org.apache.felix.scr.annotations.jar`: Proporciona las anotaciones Componente y Servicio .
+* `org.apache.felix.scr.annotations.jar`: proporciona las anotaciones Componente y Servicio.
 
-Las interfaces DeviceGroup y DeviceGroupFilter están incluidas en el paquete de API móvil WCM Day Communique 5. Las anotaciones Felix están incluidas en el paquete de servicios declarativos Apache Felix. Puede obtener este archivo JAR del repositorio de Adobe público.
+Las interfaces DeviceGroup y DeviceGroupFilter se incluyen en el paquete de la API móvil de WCM de la comunicación de día 5. Las anotaciones de Felix se incluyen en el paquete de servicios declarativos de Apache Felix. Puede obtener este archivo JAR del repositorio de Adobe público.
 
-En el momento de la creación, 5.5.2 es la versión del paquete de API de WCM Mobile que se encuentra en la última versión de AEM. Usar la consola web de Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) para garantizar que esta es la versión del paquete que se implementa en su entorno.
+AEM En el momento de la creación, 5.5.2 es la versión del paquete de la API móvil de WCM que se encuentra en la última versión de. Usar la consola web de Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) para asegurarse de que esta sea la versión del paquete implementada en su entorno.
 
-**POM:** (El POM utilizará un groupId y una versión diferentes).
+**POM:** (El POM usará un groupId y una versión diferentes).
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -258,4 +258,4 @@ En el momento de la creación, 5.5.2 es la versión del paquete de API de WCM Mo
 </project>
 ```
 
-Añada el perfil en el que [Obtención del complemento Maven del paquete de contenido](/help/sites-developing/vlt-mavenplugin.md) proporciona al archivo de configuración de maven para utilizar el repositorio de Adobe público.
+Añada el perfil que el [Obtención del complemento Maven del paquete de contenido](/help/sites-developing/vlt-mavenplugin.md) proporciona al archivo de configuración de maven para utilizar el repositorio de Adobe público.

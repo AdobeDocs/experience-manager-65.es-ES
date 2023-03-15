@@ -1,7 +1,7 @@
 ---
 title: Refactorización de SocialUtils
 seo-title: SocialUtils Refactoring
-description: El paquete com.adobe.cq.social.ugcbase.SocialUtils quedó obsoleto en AEM 6.1
+description: AEM El paquete com.adobe.cq.social.ugcbase.SocialUtils ha quedado obsoleto en la versión 6.1 de
 seo-description: The package com.adobe.cq.social.ugcbase.SocialUtils was deprecated in AEM 6.1
 uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
 contentOwner: Guillaume Carlino
@@ -21,70 +21,70 @@ ht-degree: 1%
 
 ## Paquete SocialUtils obsoleto {#socialutils-package-deprecated}
 
-El paquete `com.adobe.cq.social.ugcbase.SocialUtils` quedó obsoleto en AEM 6.1.
+El paquete `com.adobe.cq.social.ugcbase.SocialUtils` AEM quedó obsoleto en la versión 6.1 de.
 
 En las tablas siguientes se enumeran los métodos que se deben utilizar en lugar de `SocialUtils` métodos.
 
 ## Paquete SocialResourceUtilities  {#socialresourceutilities-package}
 
-| Métodos en com.adobe.cq.social.srp.Utilities.api.SocialResourceUtilities |
+| Métodos en com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
-| Boolean checkPermission(ResourceResolver resolver, String path, String action) |  |
-| SocialResourceProvider getSocialResourceProvider(recurso de recurso) |  |
-| SocialResourceConfiguration getStorageConfig(Recurso) |  |
-| Recurso getUGCResource(Recurso usuarioRecurso) |  |
-| Resource getUGCResource(Resource userResource, ResourceResolverFactory rf) | nuevo |
-| Resource getUGCResource(Resource userResource, ResourceResolverFactory rf, String resourceTypeHint) | nuevo |
-| Resource getUGCResource(Resource userResource, String resourceTypeHint) |  |
-| booleano hasModeratePermissions(Resource resource) |  |
-| String resourceToACLPath(Resource resource) |  |
-| String resourceToUGCStoragePath(Resource resource) | reemplaza a String resourceToUGCPath(Resource resource) |
-| String UGCToResourcePath(Recurso) |  |
-| String UGCToResourcePath(String ugcPath) | firma de método cambiada |
-| String UGCToResourcePath(String ugcPath, ResourceResolver resolver) | nuevo |
+| Boolean checkPermission(Resolución de ResourceResolver, Ruta de cadena, Acción de cadena) |  |
+| SocialResourceProvider getSocialResourceProvider(Recurso) |  |
+| SocialResourceConfiguration getStorageConfig(recurso) |  |
+| Recurso getUGCResource(Recurso userResource) |  |
+| Recurso getUGCResource(Recurso userResource, ResourceResolverFactory rrf) | nuevo |
+| Recurso getUGCResource(Recurso userResource, ResourceResolverFactory rrf, Cadena resourceTypeHint) | nuevo |
+| Recurso getUGCResource(Recurso userResource, Cadena resourceTypeHint) |  |
+| El booleano hasModeratePermissions(Recurso) |  |
+| Cadena resourceToACLPath(Recurso) |  |
+| String resourceToUGCStoragePath(Resource) | reemplaza String resourceToUGCPath(Resource resource) |
+| Cadena UGCToResourcePath(Recurso) |  |
+| Cadena UGCToResourcePath(Cadena ugcPath) | firma de método modificada |
+| String UGCToResourcePath(String ugcPath, resolución de ResourceResolver) | nuevo |
 
-| Métodos en `com.adobe.cq.social.`Utilidades.resource.api.SocialResourceUtilities |
+| Métodos en `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
 |---|
-| SocialResourceProvider getSocialResourceProvider(recurso de recurso) | reemplaza a SocialResourceProvider getConfiectedProvider(Resource resource) |
+| SocialResourceProvider getSocialResourceProvider(Recurso) | reemplaza a SocialResourceProvider getConficonfiguredProvider(recurso) |
 
-## Paquete SCFUtilities {#scfutilities-package}
+## Paquete de utilidades SCFU {#scfutilities-package}
 
-| Métodos en `com.adobe.cq.social.`Utilidades.scf.api.SCFUtilites |
+| Métodos en `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
 |---|
-| String getAvatar(UserProperties userProperties) |
-| String getAvatar(UserProperties userProperties, int size) |
-| String getAvatar(UserProperties userProperties, String AbsolutDefaultAvatar) |
-| String getAvatar(UserProperties userProperties, String AbsolutDefaultAvatar, SocialUtils.AVATAR_SIZE size) |
-| Page getContainPage(Resource resource) |
-| String getSocialProfileURL(nombre de usuario de cadena, resolución de ResourceResolver, página) |
-| UserProperties getUserProperties(ResourceResolver resolver, String userId) |
+| Cadena getAvatar(UserProperties userProperties) |
+| Cadena getAvatar(UserProperties, userProperties, int size) |
+| Cadena getAvatar(UserProperties userProperties, Cadena absoluteDefaultAvatar) |
+| String getAvatar(UserProperties userProperties, String absoluteDefaultAvatar, SocialUtils.AVATAR_SIZE size) |
+| Página getContainingPage(Recurso) |
+| String getSocialProfileURL(nombre de usuario de cadena, resolución de ResourceResolver, página de página) |
+| UserProperties getUserProperties(resolución de ResourceResolver, cadena userId) |
 
 ## Solo para uso interno {#for-internal-use-only}
 
-| booleano canAddNode(Session session, String path) |
+| canAddNode(Session session, String path) booleano |
 |---|
-| String createUniqueNameHint(Mensaje de cadena) |
+| Cadena createUniqueNameHint(Mensaje de cadena) |
 | String createUniqueNameHint(Mensaje de cadena, int numRandomChars) |
-| String generateRandomString(int length) |
+| Cadena generateRandomString(int length) |
 | SocialResourceConfiguration getDefaultStorageConfig() |
-| Page getPage(String path, ResourceResolver resolver) |
-| String getPagePath(Resource resource) |
+| Page getPage(Ruta de cadena, resolución de ResourceResolver) |
+| Cadena getPagePath(Recurso) |
 | String getPagePath(String path) |
-| String getResourceTypeForIncludedResource(Componente de recurso, String defaultResourceType, String designPropertyName) |
-| String getResourceTypeFromDesign(Resource resource, String styleProperty, String defaultValue) |
-| booleano isResourceOwner(Resource resource) |
-| String mapUGCPath(Resource resource) |
-| String mapUGCPath(String ugcPath, ResourceResolver resolver) |
-| boolean mayPost(ResourceResolver resolver, Resource resource) |
-| String preparationUserGeneratedContent(ResourceResolver resolver, ruta de acceso de cadena) |
+| Cadena getResourceTypeForIncludedResource(Componente de recurso, cadena defaultResourceType, cadena designPropertyName) |
+| String getResourceTypeFromDesign(Recurso, String styleProperty, String defaultValue) |
+| isResourceOwner(Recurso) booleano |
+| String mapUGCPath(Recurso) |
+| String mapUGCPath(String ugcPath, resolución de ResourceResolver) |
+| booleano mayPost(ResourceResolver resolver, Resource resource) |
+| String prepareUserGeneratedContent(Resolución de ResourceResolver, ruta de la cadena) |
 
-## Métodos que ya no están disponibles {#methods-no-longer-available}
+## Métodos ya no disponibles {#methods-no-longer-available}
 
-| Node createNode(ResourceResolver resolver, String path, String nodeType) |
+| Nodo createNode(ResourceResolver resolver, String ruta, String nodeType) |
 |---|
-| Recurso getResourceAtPath(ResourceResolver resolver, ruta de acceso de cadena) |
-| Resource getResourceAtPath(ResourceResolver resolver, String path, String resourceType) |
-| Configuración getStorageCloudServiceConfig(recurso de recurso) |
+| Recurso getResourceAtPath(resolución de ResourceResolver, ruta de la cadena) |
+| Recurso getResourceAtPath(Resolución de ResourceResolver, Ruta de cadena, Tipo de recurso de cadena) |
+| Configuración de getStorageCloudServiceConfig(recurso) |
 | TranslationManager getTranslationManager() |
 | TranslationSaveQueue getTranslationSaveQueue() |
 | booleano mayAccessUGC(ResourceResolver resolver) |

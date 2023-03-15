@@ -43,9 +43,9 @@ A la hora de diseñar la estructura de contenido para un sitio y el esquema de m
 
 En el entorno de creación, los creadores pueden aplicar etiquetas si acceden a las propiedades de página e introducen una o varias etiquetas en el campo **Etiquetas y palabras clave**.
 
-Para aplicar [etiquetas predefinidas](/help/sites-administering/tags.md), en el **Propiedades de página** utilice el `Tags/Keywords` desplegable de campos para seleccionarlos de la lista de etiquetas permitidas para la página. La variable **Etiquetas estándar** es el espacio de nombres predeterminado, lo que significa que no hay `namespace-string:` con el prefijo taxonomía.
+Para aplicar [etiquetas predefinidas](/help/sites-administering/tags.md), en el **Propiedades de página** ventana use el `Tags/Keywords` la lista desplegable de campos para seleccionar de la lista de etiquetas permitidas para la página. El **Etiquetas estándar** tab es el área de nombres predeterminada, lo que significa que no hay `namespace-string:` con el prefijo de taxonomía.
 
-![Chlimage_1-2](assets/chlimage_1-2a.png)
+![chlimage_1-2](assets/chlimage_1-2a.png)
 
 ### Publicación de etiquetas {#publishing-tags}
 
@@ -59,7 +59,7 @@ Al igual que con las páginas, puede realizar las siguientes acciones con etique
 
 >[!NOTE]
 >
->Al activar una página, se abre automáticamente un cuadro de diálogo que le permite activar las etiquetas desactivadas que pertenecen a la página.
+>Al activar una página, se abre automáticamente un cuadro de diálogo que le permite activar las etiquetas no activadas que pertenecen a la página.
 
 **Desactivar**
 
@@ -77,6 +77,6 @@ Puede buscar etiquetas en los entornos de autor y publicación.
 
 ### Uso del componente de búsqueda {#using-search-component}
 
-Adición de un [Componente de búsqueda](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) a una página proporciona una capacidad de búsqueda que incluye etiquetas y que puede utilizarse en los entornos de autor y publicación.
+Adición de un [Componente de búsqueda](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) a una página proporciona una capacidad de búsqueda que incluye etiquetas y puede utilizarse en los entornos de creación y publicación.
 
-![Chlimage_1-3](assets/chlimage_1-3a.png)
+![chlimage_1-3](assets/chlimage_1-3a.png)

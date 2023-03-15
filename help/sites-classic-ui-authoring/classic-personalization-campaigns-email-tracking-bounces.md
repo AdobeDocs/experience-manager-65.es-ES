@@ -21,13 +21,13 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->Adobe no tiene previsto mejorar aún más el seguimiento de los correos electrónicos abiertos o devueltos enviados por AEM servicio SMTP.
+>El Adobe AEM de no planea mejorar aún más el seguimiento de los correos electrónicos abiertos/rechazados enviados por el servicio SMTP de la.
 >
->La recomendación es [aprovechar Adobe Campaign y su integración AEM](/help/sites-administering/campaign.md).
+>La recomendación es [Aprovechamiento de Adobe Campaign AEM y su integración con el servicio de](/help/sites-administering/campaign.md).
 
 Cuando envíe una newsletter a varios usuarios, normalmente habrá direcciones de correo electrónico no válidas en la lista. Si se envían newsletters a estas direcciones, se devolverán. AEM puede administrar el correo devuelto y dejar de enviar newsletters a dichas direcciones cuando se supera el contador de devoluciones. De forma predeterminada, la tasa de devolución es de 3, pero puede configurarse.
 
-Para configurar AEM de modo que realice el seguimiento de los correos electrónicos devueltos, deberá configurar AEM para que sondee un buzón de correo existente en el que se recibirán los correos devueltos (normalmente, será la dirección de correo electrónico remitente que especifique al enviar la newsletter). AEM sondea esta bandeja de entrada e importa todos los correos electrónicos por debajo de la ruta especificada en la configuración de sondeo. A continuación, se activa un flujo de trabajo para buscar las direcciones de correo electrónico devueltas dentro de los usuarios y actualiza el valor de la propiedad bounceCounter del usuario en consecuencia. Tras superar el número máximo de devoluciones configurado, el usuario se eliminará de la lista de newsletter.
+Para configurar AEM de modo que realice el seguimiento de los correos electrónicos devueltos, deberá configurar AEM para que sondee un buzón de correo existente en el que se recibirán los correos devueltos (normalmente, será la dirección de correo electrónico remitente que especifique al enviar la newsletter). AEM sondea esta bandeja de entrada e importa todos los correos electrónicos por debajo de la ruta especificada en la configuración de sondeo. A continuación, se activa un flujo de trabajo para buscar las direcciones de correo electrónico rechazadas dentro de los usuarios y se actualiza el valor de la propiedad bounceCounter del usuario en consecuencia. Tras superar el número máximo de devoluciones configurado, el usuario se eliminará de la lista de newsletter.
 
 ## Configuración de Feed Importer {#configuring-the-feed-importer}
 
@@ -39,7 +39,7 @@ Para configurar Feed Importer para que realice el seguimiento de los correos ele
 
 1. Haga clic en **Añadir** para crear una configuración nueva.
 
-   ![imagen_1](assets/chlimage_1a.png)
+   ![chlimage_1](assets/chlimage_1a.png)
 
 1. Para añadir una configuración nueva, seleccione el tipo y añada información a la URL de sondeo para configurar el host y el puerto. Asimismo, debe añadir parámetros de correo y protocolo a la consulta URL. Establezca la configuración de forma que se sondee al menos una vez al día.
 
@@ -67,7 +67,7 @@ Para configurar Feed Importer para que realice el seguimiento de los correos ele
 
    `imap.flag.SEEN`:Configurar false para los mensajes nuevos o no vistos y true para los mensajes ya leídos
 
-   Consulte [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) para la lista completa de indicadores.
+   Consulte [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) para obtener la lista completa de indicadores.
 
    **Ejemplos de IMAP:**
 
@@ -84,11 +84,11 @@ Tras configurar Feed Importer, debe configurar la dirección De y el contador de
 
 Para configurar el servicio de newsletter:
 
-1. En la consola OSGi en `<host>:<port>/system/console/configMgr` y vaya a **Newsletter de MCM**.
+1. En la consola OSGi, en `<host>:<port>/system/console/configMgr` y vaya a **Newsletter de MCM**.
 
 1. Configure el servicio y guarde los cambios cuando haya terminado.
 
-   ![Chlimage_1-1](assets/chlimage_1-1a.png)
+   ![chlimage_1-1](assets/chlimage_1-1a.png)
 
    Se pueden ajustar las configuraciones siguientes para cambiar el comportamiento:
 

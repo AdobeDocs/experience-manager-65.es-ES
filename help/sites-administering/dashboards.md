@@ -1,7 +1,7 @@
 ---
 title: Tableros
 seo-title: Dashboards
-description: Aprenda a crear, configurar y desarrollar nuevos paneles de AEM.
+description: AEM Aprenda a crear, configurar y desarrollar nuevos paneles de datos de.
 seo-description: Learn how to create, configure and develop new AEM dashboards.
 uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
@@ -25,9 +25,9 @@ Al utilizar AEM, podrá administrar mucho contenido de distintos tipos (p. ej. p
 >
 >Los tableros AEM se crean para cada usuario, para que cada uno pueda acceder a su propio tablero.
 >
->Sin embargo, [Plantillas de tablero](#creating-a-dashboard-template) se puede utilizar para compartir una configuración común y el diseño del panel.
+>Sin embargo, [Plantillas de panel](#creating-a-dashboard-template) se puede utilizar para compartir la configuración común y el diseño del panel.
 
-![imagen_1-22](assets/chlimage_1-22.jpeg)
+![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
 ## Administración de tableros {#administering-dashboards}
 
@@ -36,7 +36,7 @@ Al utilizar AEM, podrá administrar mucho contenido de distintos tipos (p. ej. p
 Para crear un tablero nuevo, realice las acciones siguientes:
 
 1. En la sección **Herramientas**, haga clic en **Consola de configuración**.
-1. En el árbol, haga doble clic en **Panel**.
+1. En el árbol, haga doble clic **Tablero**.
 1. Haga clic en **Nuevo tablero**.
 1. Especifique el **Título** (p. ej. Mi tablero) y el **Nombre**.
 1. Haga clic en **Crear**.
@@ -69,7 +69,7 @@ Es posible que quiera tener varios tableros para ver información sobre el conte
 
 ### Información general {#overview}
 
-Los componentes del panel no son más que normales [AEM componentes](/help/sites-developing/developing-components-samples.md). En esta sección se describen los componentes de informe que se envían con AEM.
+Los componentes del panel no son más que normales [AEM componentes de](/help/sites-developing/developing-components-samples.md). En esta sección se describen los componentes de informe que se envían con AEM.
 
 ### Componentes de informes analíticos web {#web-analytics-reporting-components}
 
@@ -88,13 +88,13 @@ Los componentes de informe se inician con una configuración predeterminada que 
 
 La ficha **Básico** permite acceder a las entradas de configuración siguientes:
 
-**Título** El título que se muestra en el tablero.
+**Título** El título se muestra en el panel.
 
-**Tipo de solicitud** Cómo se solicitan los datos.
+**Tipo de solicitud** La forma en que se solicitan los datos.
 
-**Configuración de SiteCatalyst (opcional)** La configuración que desea utilizar para conectarse a SiteCatalyst. Si no se define, se asumirá que ya está configurada en la página Panel (mediante las propiedades de página).
+**Configuración de SiteCatalyst (opcional)** La configuración que desea utilizar para conectarse al SiteCatalyst. Si no se define, se asumirá que ya está configurada en la página Panel (mediante las propiedades de página).
 
-**ID del grupo de informes (opcional)** Grupo de informes de SiteCatalyst que desea utilizar para generar el gráfico.
+**ID del grupo de informes (opcional)** El grupo de informes de SiteCatalyst que desea utilizar para generar el gráfico.
 
 #### Configuración de informes {#report-configuration}
 
@@ -104,31 +104,31 @@ Para mostrar las estadísticas de web, debe definir el intervalo de fechas para 
 >
 >Si se elige un intervalo de fechas muy grande, se reducirá el nivel de respuesta del tablero.
 
-**Fecha desde** Fecha absoluta o relativa a partir de la cual se recuperan los datos.
+**Fecha desde** Fecha absoluta o relativa desde la que se recuperan los datos.
 
-**Fecha hasta** Fecha absoluta o relativa a la que se recuperan los datos.
+**Fecha de finalización** Fecha absoluta o relativa en la que se recuperan los datos.
 
 Cada componente también define ajustes específicos.
 
 #### Informe de tiempo extra {#overtime-report}
 
-![imagen_1-26](assets/chlimage_1-26a.png)
+![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Granularidad de la fecha** Unidad de tiempo del eje X (por ejemplo, día, hora).
+**Granularidad de fecha** Unidad de tiempo del eje X (por ejemplo, día, hora).
 
-**Métricas** Lista de eventos que desea mostrar.
+**Métricas** La lista de eventos que desea mostrar.
 
-**Elementos** Lista de elementos que desglosa los datos de métricas en el gráfico.
+**Elementos** La lista de elementos que desglosa los datos de las métricas en el gráfico.
 
 #### Informe de lista clasificada {#ranked-list-report}
 
 ![chlimage_1-27](assets/chlimage_1-27a.png)
 
-**Elementos** Elemento que desglosa los datos de métricas en el gráfico.
+**Elementos** Elemento que desglosa los datos de las métricas en el gráfico.
 
 **Métricas** El evento que desea mostrar.
 
-**No. de elementos principales** Número de elementos que muestra el informe.
+**No. de elementos principales** Número de elementos mostrados por el informe.
 
 #### Informe clasificado {#ranked-report}
 
@@ -136,7 +136,7 @@ Cada componente también define ajustes específicos.
 
 **Métricas** El evento que desea mostrar.
 
-**Elementos** Elemento que desglosa los datos de métricas en el gráfico.
+**Elementos** Elemento que desglosa los datos de las métricas en el gráfico.
 
 #### Informe de sección de sitio principal {#top-site-section-report}
 
@@ -144,17 +144,17 @@ Este componente muestra un gráfico sobre la sección más visitada del sitio we
 
 ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-**No. de elementos principales** Número de sección que se muestra en el informe.
+**No. de elementos principales** Número de secciones mostradas por en el informe.
 
 #### Informe de tendencias {#trended-report}
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Granularidad de la fecha** Unidad de tiempo del eje X (por ejemplo, día, hora).
+**Granularidad de fecha** Unidad de tiempo del eje X (por ejemplo, día, hora).
 
 **Métricas** El evento que desea mostrar.
 
-**Elementos** Elemento que desglosa los datos de métricas en el gráfico.
+**Elementos** Elemento que desglosa los datos de las métricas en el gráfico.
 
 ## Ampliación del tablero {#extending-dashboard}
 
@@ -162,13 +162,13 @@ Este componente muestra un gráfico sobre la sección más visitada del sitio we
 
 Los tableros son páginas normales (`cq:Page`), por lo que puede utilizarse cualquier componente para crearlos.
 
-Hay un grupo de componentes predeterminado `Dashboard` que contienen componentes de informes de analytics que están habilitados en la plantilla de forma predeterminada.
+Hay un grupo de componentes predeterminado `Dashboard` que contiene los componentes de informes de analytics habilitados en la plantilla de forma predeterminada.
 
 ### Creación de una plantilla de tablero {#creating-a-dashboard-template}
 
 Una plantilla define el contenido predeterminado de un tablero nuevo. Puede utilizar varias plantillas para crear diferentes tipos de tableros.
 
-Las plantillas de tablero se crean como otras plantillas de página, excepto que se almacenan en `/libs/cq/dashboards/templates/`. Consulte la [Creación de una plantilla de Contentpage](/help/sites-developing/website.md#creating-the-contentpage-template) para obtener más información.
+Las plantillas de tablero se crean como otras plantillas de página, excepto que se almacenan en `/libs/cq/dashboards/templates/`. Consulte la [Creando plantilla de página de contenido](/help/sites-developing/website.md#creating-the-contentpage-template) sección.
 
 >[!NOTE]
 >
@@ -180,7 +180,7 @@ El desarrollo de un componente de tablero consiste en la creación de un compone
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-Los componentes de autor principales se almacenan en el repositorio en `/apps/geometrixx-outdoors/components/reporting` y está compuesto por :
+Los componentes de autor principales se almacenan en el repositorio en `/apps/geometrixx-outdoors/components/reporting` y se compone de :
 
 1. un archivo `jsp` que lee datos jcr y define el marcador de posición `html`.
 
@@ -188,9 +188,9 @@ Los componentes de autor principales se almacenan en el repositorio en `/apps/ge
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
-El siguiente archivo JavaScript se define en la variable `geout.reporting.topauthors` [Biblioteca de clientes](/help/sites-developing/clientlibs.md) como elemento secundario del componente en sí.
+El siguiente archivo JavaScript se define en la variable `geout.reporting.topauthors` [Biblioteca de cliente](/help/sites-developing/clientlibs.md) como elemento secundario del propio componente.
 
-La variable [QueryBuilder](/help/sites-developing/querybuilder-api.md) se utiliza para consultar el repositorio para leer `cq:AuditEvent` nodos. El resultado de la consulta es un objeto JSON desde el que se extraen las contribuciones de autor.
+El [QueryBuilder](/help/sites-developing/querybuilder-api.md) se utiliza para consultar el repositorio para leer `cq:AuditEvent` nodos. El resultado de la consulta es un objeto JSON desde el que se extraen las contribuciones de autor.
 
 #### top_authors.js {#top-authors-js}
 
@@ -237,7 +237,7 @@ $.ajax({
 });
 ```
 
-La variable `JSP` incluye ambas `global.jsp` y `clientlib`.
+El `JSP` incluye ambos `global.jsp` y `clientlib`.
 
 #### top_authors.jsp {#top-authors-jsp}
 

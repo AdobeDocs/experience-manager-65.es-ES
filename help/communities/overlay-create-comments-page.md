@@ -1,7 +1,7 @@
 ---
 title: Página Crear Comentarios
 seo-title: Create Comments Page
-description: Ver página Comentarios
+description: Página Ver Comentarios
 seo-description: View Comments page
 uuid: 1f043133-51c6-41e8-bbdb-d9fd7780136b
 contentOwner: User
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 # Página Crear Comentarios {#create-comments-page}
 
-**[Componente de comentarios de superposición de ⇐](overlay-comments.md) [Crear nodos limítrofes](overlay-create-nodes.md)**
+**[⇐ componente Comentarios de superposición](overlay-comments.md) [Crear nodos ⇒](overlay-create-nodes.md)**
 
-## Página Comentarios {#comments-page}
+## Página de comentarios {#comments-page}
 
-La variable [Guía de componentes de comunidad](components-guide.md) permite superponer fácilmente el componente de comentarios.
+El [Guía de componentes de la comunidad](components-guide.md) permite superponer fácilmente el componente comentarios.
 
 Vea la página en la instancia de autor:
 
@@ -31,4 +31,4 @@ Vea la página en la instancia de autor:
 
 ![comentarios](assets/comments.png)
 
-**[Componente de comentarios de superposición de ⇐](overlay-comments.md) [Crear nodos limítrofes](overlay-create-nodes.md)**
+**[⇐ componente Comentarios de superposición](overlay-comments.md) [Crear nodos ⇒](overlay-create-nodes.md)**

@@ -20,7 +20,7 @@ ht-degree: 91%
 
 # Creación de contenido orientado mediante el modo de Orientación{#authoring-targeted-content-using-targeting-mode}
 
-Contenido orientado por el autor mediante el modo de Orientación de AEM. El modo de Orientación y el componente Target proporcionan herramientas para crear contenido para las experiencias:
+Contenido orientado por el autor mediante el modo de segmentación de AEM. El modo de Orientación y el componente Target proporcionan herramientas para crear contenido para las experiencias:
 
 * Reconozca fácilmente el contenido orientado que se encuentra en la página. Una línea discontinua forma un borde alrededor de todo el contenido orientado.
 * Seleccione una marca y una actividad para ver las experiencias.
@@ -33,7 +33,7 @@ Contenido orientado por el autor mediante el modo de Orientación de AEM. El mod
 
 Puede utilizar AEM o Adobe Target como motor de orientación (para utilizar Adobe Target, debe tener una cuenta de Adobe Target válida). Si utiliza Adobe Target, primero debe configurar la integración. Consulte [instrucciones para la integración con Adobe Target](/help/sites-administering/target.md).
 
-![Chlimage_1-8](assets/chlimage_1-8.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 Las actividades y experiencias que ve en el modo de Target reflejan la [consola Actividades](/help/sites-authoring/activitylib.md):
 
@@ -61,11 +61,11 @@ Para cambiar al modo de Target:
 1. Abra la página para la que desea crear contenido orientado.
 1. En la barra de herramientas situada en la parte superior de la página, toque o haga clic en el menú emergente de modo para mostrar los tipos de modo disponibles.
 
-   ![Chlimage_1-9](assets/chlimage_1-9.png)
+   ![chlimage_1-9](assets/chlimage_1-9.png)
 
 1. Toque o haga clic en **Direccionamiento**. Las opciones de orientación se muestran en la parte superior de la página.
 
-   ![imagen_1-10](assets/chlimage_1-10.png)
+   ![chlimage_1-10](assets/chlimage_1-10.png)
 
 ## Adición de una actividad con el modo de Orientación {#adding-an-activity-using-targeting-mode}
 
@@ -128,7 +128,7 @@ Para añadir una actividad:
 1. En el menú desplegable **Actividad**, seleccione la actividad para la que está creando contenido orientado.
 1. Para mostrar los controles que lo guiarán a través del proceso de orientación, toque o haga clic en **Iniciar orientación**.
 
-   ![imagen_1-11](assets/chlimage_1-11.png)
+   ![chlimage_1-11](assets/chlimage_1-11.png)
 
    >[!NOTE]
    >
@@ -152,15 +152,15 @@ Después de [iniciar el proceso de orientación](/help/sites-authoring/content-t
 
 Las experiencias se muestran en el panel Audiencies. En el siguiente ejemplo, las experiencias incluyen **Predeterminado**, **Mujer**, **Mujer mayor de 30 años** y **Mujer menor de 30 años**. Este ejemplo muestra la oferta predeterminada de un componente de **imagen** segmentado.
 
-![imagen_1-12](assets/chlimage_1-12.png)
+![chlimage_1-12](assets/chlimage_1-12.png)
 
 Al seleccionar una experiencia distinta, el componente Imagen muestra la oferta para esa experiencia.
 
-![imagen_1-13](assets/chlimage_1-13.png)
+![chlimage_1-13](assets/chlimage_1-13.png)
 
 Cuando se selecciona una experiencia y el componente segmentado no incluye una oferta para esa experiencia, el componente muestra la opción **Agregar oferta** superpuesta a la oferta predeterminada semitransparente. Cuando no se ha creado ninguna oferta para una experiencia, se muestra la oferta **predeterminada** para el segmento asignado a la experiencia.
 
-![imagen_1-14](assets/chlimage_1-14.png)
+![chlimage_1-14](assets/chlimage_1-14.png)
 
 La experiencia predeterminada también se muestra cuando las propiedades del visitante no coinciden con ningún segmento asignado a las experiencias. Consulte [Adición de experiencias con el modo de direccionamiento](#adding-and-removing-experiences-using-targeting-mode).
 
@@ -168,11 +168,11 @@ La experiencia predeterminada también se muestra cuando las propiedades del vis
 
 Las ofertas que [se crean en la página](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) y se utilizan para una experiencia única se denominan ofertas personalizadas. La imagen siguiente está superpuesta al contenido de una oferta personalizada:
 
-![imagen_1-15](assets/chlimage_1-15.png)
+![chlimage_1-15](assets/chlimage_1-15.png)
 
 Las ofertas que [se añaden desde una biblioteca de ofertas](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library) se superponen a la imagen siguiente:
 
-![imagen_1-16](assets/chlimage_1-16.png)
+![chlimage_1-16](assets/chlimage_1-16.png)
 
 Puede guardar ofertas personalizadas en una biblioteca de ofertas si decide que quiere volver a utilizarlas. También puede convertir una oferta de la biblioteca en una oferta personalizada si desea modificar el contenido de una experiencia. Tras la edición, puede volver a guardar la oferta en la biblioteca.
 
@@ -313,7 +313,7 @@ Si decide que la oferta se puede utilizar para otras experiencias, puede crear u
 1. Seleccione la experiencia a la que añade la oferta.
 1. Para mostrar el menú de componentes, toque o haga clic en el componente orientado al que va a añadir la oferta.
 
-   ![imagen_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-21](assets/chlimage_1-21.png)
 
 1. Toque o haga clic en el icono +.
 
@@ -334,7 +334,7 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 1. Seleccione la experiencia a la que añade la oferta.
 1. Para mostrar el menú de componentes, toque o haga clic en el componente orientado al que va a añadir la oferta.
 
-   ![imagen_1-22](assets/chlimage_1-22.png)
+   ![chlimage_1-22](assets/chlimage_1-22.png)
 
 1. Toque o haga clic en el icono Carpeta.
 
@@ -342,13 +342,13 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 
 1. Seleccione la oferta de la biblioteca y, a continuación, toque o haga clic en el icono de la marca.
 
-   ![imagen_1-23](assets/chlimage_1-23.png)
+   ![chlimage_1-23](assets/chlimage_1-23.png)
 
    El selector de ofertas le permite examinar o filtrar las ofertas. Al examinar o filtrar, puede que también desee clasificar las ofertas y cambiar la manera de verlas. El número que aparece en la parte superior derecha indica la cantidad de ofertas que están disponibles en la biblioteca actual.
 
    * Toque o haga clic en **Examinar** para desplazarse a otra carpeta. Se abrirá el panel de navegación; haga clic en la flecha para navegar por las carpetas. Vuelva a tocar o hacer clic en **Examinar** para cerrar el panel de navegación.
 
-   ![imagen_1-24](assets/chlimage_1-24.png)
+   ![chlimage_1-24](assets/chlimage_1-24.png)
 
    * Toque o haga clic en **Filtrar** para filtrar las ofertas por palabras clave o etiquetas. Introduzca palabras clave y seleccione etiquetas en el menú desplegable. Vuelva a tocar o hacer clic en **Filtrar** para cerrar el panel de filtrado.
 
@@ -356,7 +356,7 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 
    * Para cambiar la manera de ordenar las ofertas, toque o haga clic en la flecha al lado de **La más reciente a la más antigua**. Las ofertas se pueden ordenar de la más reciente a la más antigua o de la más antigua a la más reciente.
 
-   ![imagen_1-26](assets/chlimage_1-26.png)
+   ![chlimage_1-26](assets/chlimage_1-26.png)
 
    Toque o haga clic en el icono junto a **Ver como** para ver las ofertas como mosaicos o como una lista.
 
@@ -464,8 +464,8 @@ Las métricas de éxito siguientes están disponibles (se utilizan para publicar
    <td><strong>Conversión</strong></td>
    <td><p>El porcentaje de visitantes que hicieron clic en cualquier parte de la experiencia que se está probando. Las conversiones se pueden contabilizar una vez por visitante o cada vez que un visitante completa una conversión. La métrica de conversión se configura en una de las siguientes:</p>
     <ul>
-     <li><strong>Visualizó una página</strong> - Puede definir qué página ha visto la audiencia seleccionando: <strong>La dirección URL es</strong> y, a continuación, definir la dirección URL o varias direcciones URL, o bien seleccionar <strong>La dirección URL contiene</strong> y luego agregar una ruta o palabra clave.</li>
-     <li><strong>Visualizó un mbox</strong> : puede definir qué mbox ha visto la audiencia introduciendo el nombre del mbox. Para introducir varios mboxes, haga clic en <strong>Adición de un mbox</strong>.</li>
+     <li><strong>Visualizó una página</strong> : Puede definir qué página vio la audiencia seleccionando una de las siguientes opciones <strong>La URL es</strong> y, a continuación, definiendo la dirección URL o varias direcciones URL, o seleccionando <strong>La URL contiene</strong> y, a continuación, agregue una ruta o palabra clave.</li>
+     <li><strong>Visualizó un mbox</strong> : Puede definir el mbox que vio la audiencia introduciendo el nombre del mbox. Para introducir varios mboxes, haga clic en <strong>Añadir un Mbox</strong>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -505,7 +505,7 @@ Use la configuración avanzada para determinar qué sucede **después** de que u
    <td>Especifique cómo se incrementa el recuento:
     <ul>
      <li>Una vez por participante</li>
-     <li>En cada impresión, excluyendo las actualizaciones de página</li>
+     <li>En cada impresión, excluidas las actualizaciones de página</li>
      <li>En cada impresión</li>
     </ul> </td>
   </tr>
@@ -519,7 +519,7 @@ Use la configuración avanzada para determinar qué sucede **después** de que u
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Recuento de incrementos, usuario de versiones y reentrada de barras</strong></td>
+   <td><strong>Aumentar recuento, liberar usuario y volver a entrar en la barra</strong></td>
    <td>Determine lo que el usuario ve en lugar del contenido de la actividad:
     <ul>
      <li>La misma experiencia, sin seguimiento</li>
@@ -543,7 +543,7 @@ Para definir la configuración si utiliza la orientación de AEM:
 1. Para especificar el momento en que la actividad finalizará, use el menú desplegable **Finalizar** para seleccionar uno de los valores siguientes:
 
    * **Al desactivar**: la actividad finaliza cuando la página que contiene el contenido orientado se desactiva.
-   * **Fecha y hora especificadas**: una hora específica. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
+   * **Fecha y hora especificadas**: una hora determinada. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
 
 1. Para especificar una prioridad de la actividad, utilice el regulador para seleccionar **Baja**, **Normal** o **Alta**.
 
@@ -559,7 +559,7 @@ Para configurar los objetivos y las configuraciones si utiliza Adobe Target:
 1. Para especificar el momento en que la actividad finalizará, use el menú desplegable **Finalizar** para seleccionar uno de los valores siguientes:
 
    * **Al desactivar**: la actividad finaliza cuando la página que contiene el contenido orientado se desactiva.
-   * **Fecha y hora especificadas**: una hora específica. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
+   * **Fecha y hora especificadas**: una hora determinada. Al seleccionar esta opción, toque o haga clic en el icono de calendario, seleccione una fecha y especifique la hora de finalización de la actividad.
 
 1. Para especificar una prioridad de la actividad, utilice el regulador para seleccionar **Baja**, **Normal** o **Alta**.
 1. Si ha configurado Adobe Analytics con la cuenta de Adobe Target, se mostrará el menú desplegable **Origen del informe**. Seleccione **Adobe Target** o **Adobe Analytics** como fuente.
@@ -568,13 +568,13 @@ Para configurar los objetivos y las configuraciones si utiliza Adobe Target:
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-1. En el área **Métrica de objetivo**, en **Mi objetivo principal**, seleccione la métrica de éxito que desee rastrear (conversión, ingresos, participación) y especifique cómo se mide esa métrica (o qué acción toma la audiencia para indicar que se ha alcanzado un objetivo). Consulte la definición de las métricas de objetivo en la tabla anterior y consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) sobre las métricas de éxito.
+1. En el área **Métrica de objetivo**, en **Mi objetivo principal**, seleccione la métrica de éxito que desee rastrear (conversión, ingresos, participación) y especifique cómo se mide esa métrica (o qué acción toma la audiencia para indicar que se ha alcanzado un objetivo). Consulte la definición de las métricas de objetivo en la tabla anterior y consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=es) sobre las métricas de éxito.
 
    Para cambiar el nombre del objetivo, haga clic en los tres puntos de la esquina superior derecha y seleccione **Cambiar nombre**.
 
    Si necesita borrar todos los campos, haga clic en los tres puntos de la esquina superior derecha y seleccione **Borrar todos los campos**.
 
-   Todas las métricas también tienen configuraciones avanzadas que puede definir. Seleccione **Configuraciones avanzadas** para acceder a las mismas. Consulte la definición de cómo se cuentan las métricas de éxito en la tabla anterior y consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
+   Todas las métricas también tienen configuraciones avanzadas que puede definir. Seleccione **Configuraciones avanzadas** para acceder a las mismas. Consulte la definición de cómo se cuentan las métricas de éxito en la tabla anterior y consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=es).
 
    >[!NOTE]
    Debe tener un objetivo definido como mínimo.
@@ -665,7 +665,7 @@ Para personalizar el componente Target, acceda a las opciones del componente de 
   </tr>
   <tr>
    <td><strong>Motor</strong></td>
-   <td>Seleccionar entre <strong>Reglas del lado del cliente (sin seguimiento), Adobe Target, ContextHub, </strong>y<strong> Adobe Campaign </strong>dependiendo del motor que desee utilizar.</td>
+   <td>Seleccionar entre <strong>Reglas de cliente (sin seguimiento), Adobe Target, ContextHub, </strong>y<strong> Adobe Campaign </strong>en función del motor que desee utilizar.</td>
   </tr>
  </tbody>
 </table>
@@ -682,7 +682,7 @@ Si selecciona Adobe Target como motor:
   </tr>
   <tr>
    <td><strong>Direccionamiento preciso</strong></td>
-   <td><p>Al habilitar el direccionamiento preciso, se indica al componente que espere a que los datos de Client Context o Context Hub estén disponibles antes de enviar la solicitud a Adobe Target. Puede aumentar el tiempo de carga. Para la creación, la orientación precisa siempre está activada.</p> <p>Si selecciona la opción <strong>Segmentación precisa</strong> , el mbox realiza una <code>mboxDefine</code> primero y después de <code>mboxUpdate</code> posteriormente, lo que resulta en una solicitud de Ajax una vez que los datos están disponibles.</p> <p>Si no selecciona el <strong>Segmentación precisa</strong> , el mbox realiza una <code>mboxCreate</code> lo que da como resultado una solicitud sincrónica inmediatamente (en este caso, es posible que no todos los datos de contexto estén disponibles aún).</p> <p><strong>Nota:</strong> La activación o desactivación de la orientación precisa en un componente específico no afecta a la configuración que haya establecido globalmente. Siempre puede seleccionar Orientación precisa en el componente para anular la configuración global.</p> </td>
+   <td><p>Al habilitar el direccionamiento preciso, se indica al componente que espere a que los datos de Client Context o Context Hub estén disponibles antes de enviar la solicitud a Adobe Target. Puede aumentar el tiempo de carga. Para la creación, la orientación precisa siempre está activada.</p> <p>Si selecciona la opción <strong>Direccionamiento preciso</strong> , el mbox realiza una acción <code>mboxDefine</code> primero y un <code>mboxUpdate</code> posteriormente, lo que resulta en una solicitud de Ajax una vez que los datos están disponibles.</p> <p>Si no selecciona la variable <strong>Direccionamiento preciso</strong> , el mbox realiza una acción <code>mboxCreate</code> que genera una solicitud sincrónica de inmediato (en este caso, es posible que no todos los datos de contexto estén disponibles aún).</p> <p><strong>Nota:</strong> Activar o desactivar el direccionamiento preciso en un componente específico no afecta a la configuración establecida globalmente. Siempre puede seleccionar Orientación precisa en el componente para anular la configuración global.</p> </td>
   </tr>
   <tr>
    <td><strong>Incluir segmentos resueltos</strong></td>
@@ -694,11 +694,11 @@ Si selecciona Adobe Target como motor:
   </tr>
   <tr>
    <td><strong>Parámetros de contexto</strong></td>
-   <td>Toque o haga clic en <strong>Añadir campo</strong> para configurar parámetros de contexto adicionales (lo mismo que está disponible en Target framework). Se aplican los parámetros de contexto añadidos al componente <i>only</i> al componente y no a otro componente, como sería el caso si hubiera añadido parámetros de contexto directamente a la infraestructura.</td>
+   <td>Haga clic o toque <strong>Añadir campo</strong> para configurar parámetros de contexto adicionales (lo mismo que está disponible en el marco de trabajo de Target). Se aplican los parámetros de contexto añadidos al componente <i>solamente</i> al componente y no a otro componente, como sería el caso si agregara parámetros de contexto directamente al marco de trabajo.</td>
   </tr>
   <tr>
    <td><strong>Parámetros estáticos</strong></td>
-   <td>Toque o haga clic en <strong>Añadir campo</strong> para configurar parámetros estáticos adicionales (lo mismo que está disponible en la infraestructura de Target). Se aplican parámetros estáticos agregados al componente <i>only</i> al componente y no a otro componente, como sería el caso si hubiera añadido parámetros estáticos directamente a la infraestructura. Los parámetros estáticos no proceden del contexto (Client Context o ContextHub).</td>
+   <td>Haga clic o toque <strong>Añadir campo</strong> para configurar parámetros estáticos adicionales (lo mismo que está disponible en el marco de trabajo de Target). Se aplican parámetros estáticos añadidos al componente <i>solamente</i> al componente y no a otro componente, como sería el caso si agregara parámetros estáticos directamente al marco de trabajo. Los parámetros estáticos no proceden del contexto (Client Context o ContextHub).</td>
   </tr>
  </tbody>
 </table>
@@ -720,9 +720,9 @@ Si selecciona Client Context (cliente) como motor:
    <td><strong>Opciones del lado del cliente: estrategia</strong></td>
    <td><p>Seleccione una de las siguientes opciones:</p>
     <ul>
-     <li><strong>First</strong>: La experiencia superior de la lista, según se ha ordenado en la campaña.</li>
+     <li><strong>Primero</strong>: la experiencia más alta de la lista, según se ha ordenado en la campaña.</li>
      <li><strong>Aleatorio</strong>: Se utiliza cualquier experiencia.</li>
-     <li><strong>Puntuación del flujo de navegación</strong>: Se utilizan las etiquetas y las visitas de etiquetas relacionadas de las que se realiza un seguimiento en ClientContext. Se comparan los porcentajes de visitas para las etiquetas definidas en la página de teaser.</li>
+     <li><strong>Puntuación del flujo de navegación</strong>: se utilizan las etiquetas y las visitas de etiquetas relacionadas que se rastrean en el contexto del cliente. Se comparan los porcentajes de visitas para las etiquetas definidas en la página de teaser.</li>
     </ul> </td>
   </tr>
  </tbody>

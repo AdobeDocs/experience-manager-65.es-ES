@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 8b4459c69b73159ce5afd819dfb772df5c51cd16
+source-git-commit: 1b57fca352457e973bd7395e060e3d0495a9d920
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 87%
+source-wordcount: '1134'
+ht-degree: 84%
 
 ---
 
@@ -23,7 +23,7 @@ La consola de flujo de trabajo proporciona varias herramientas para administrar 
 
 >[!NOTE]
 >
->La variable [Consola JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) proporciona operaciones de mantenimiento de flujo de trabajo adicionales.
+>El [consola JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) proporciona operaciones de mantenimiento de flujo de trabajo adicionales.
 
 Hay una serie de consolas disponibles para administrar los flujos de trabajo. Utilice la variable [navegación global](/help/sites-authoring/basic-handling.md#global-navigation) para abrir el panel **Herramientas** y, a continuación, seleccione **Flujo de trabajo**:
 
@@ -98,13 +98,13 @@ Cuando falla un flujo de trabajo, AEM proporciona la consola **Errores** para qu
 
 * **Detalles del error**
 Abre una ventana para mostrar el 
-**Mensaje de error**, **Paso** y **Pila de errores**.
+**Mensaje de error**, **Etapa**, y **Pila de errores**.
 
 * **Abrir historial**
 Muestra detalles del historial del flujo de trabajo.
 
 * **Paso de reintento** Ejecuta de nuevo la instancia del componente Paso de script. Utilice el comando Paso de reintento después de haber corregido la causa del error original. Por ejemplo, vuelva a intentar el paso después de corregir un error en el script que ejecuta el Paso de proceso.
-* **Finalizar** Finalice el flujo de trabajo si el error ha provocado una situación irreconsiderable para el flujo de trabajo. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio que ya no son válidas para la instancia de flujo de trabajo.
+* **Finalizar** Finalice el flujo de trabajo si el error ha provocado una situación irreconciliable. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio, que ya no son válidas para la instancia de flujo de trabajo.
 * **Finalizar y reintentar** Similar a **Finalizar**, excepto que se inicia una nueva instancia de flujo de trabajo utilizando la carga útil, el título y la descripción originales.
 
 Para investigar los errores y luego reanudar o finalizar el flujo de trabajo más tarde, siga estos pasos:
@@ -119,11 +119,11 @@ Para investigar los errores y luego reanudar o finalizar el flujo de trabajo má
 
 Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujo de trabajo, por lo que puede depurar con regularidad las instancias de flujo de trabajo completadas o en ejecución desde el repositorio.
 
-Configure **Configuración de depuración del flujo de trabajo de Adobe Granite** para depurar instancias de flujo de trabajo según su antigüedad y estado. También puede depurar instancias de flujo de trabajo de todos los modelos o de uno específico.
+Configurar **Configuración de depuración del flujo de trabajo de Adobe Granite** para depurar instancias de flujo de trabajo según su antigüedad y estado. También puede depurar instancias de flujo de trabajo de todos los modelos o de uno específico.
 
 También puede crear varias configuraciones del servicio para depurar instancias de flujo de trabajo que cumplan distintos criterios. Por ejemplo, cree una configuración que depure las instancias de un modelo de flujo de trabajo concreto cuando se ejecuten durante mucho más tiempo del esperado. Cree otra configuración que depure todos los flujos de trabajo completados después de un determinado número de días para minimizar el tamaño del repositorio.
 
-Para configurar el servicio, puede utilizar la variable [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describen las propiedades que necesita para cualquiera de los métodos.
+Para configurar el servicio, puede utilizar el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describen las propiedades que necesita para cualquiera de los métodos.
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ Para configurar el servicio, puede utilizar la variable [Consola web](/help/site
   <tr>
    <td>Modelos para purgar</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>El ID de los modelos de flujo de trabajo que se van a depurar. El ID es la ruta al nodo del modelo, por ejemplo:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> No especifique ningún valor para depurar instancias de todos los modelos de flujo de trabajo.</p> <p>Para especificar varios modelos, haga clic en el botón + de la consola web. </p> </td>
+   <td><p>El ID de los modelos de flujo de trabajo que se van a depurar. El ID es la ruta al nodo del modelo, por ejemplo:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Para especificar varios modelos, haga clic en el botón + de la consola web. </p> <p>No especifique ningún valor para depurar instancias de todos los modelos de flujo de trabajo.</p> </td>
   </tr>
   <tr>
    <td>Edad del flujo de trabajo</td>
@@ -171,7 +171,7 @@ Para configurar el servicio, puede utilizar la variable [Consola web](/help/site
 
 ## Configuración del tamaño máximo de la bandeja de entrada {#setting-the-maximum-size-of-the-inbox}
 
-Puede configurar el tamaño máximo de la bandeja de entrada configurando la variable **Servicio de flujo de trabajo de Adobe Granite**, usando la variable [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describe la propiedad que se configura para cualquiera de los métodos.
+Puede establecer el tamaño máximo de la bandeja de entrada configurando **Adobe Granite Workflow Service**, usando el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describe la propiedad que se configura para cualquiera de los métodos.
 
 >[!NOTE]
 >
@@ -185,7 +185,7 @@ Puede configurar el tamaño máximo de la bandeja de entrada configurando la var
 
 ## Uso de variables de flujo de trabajo para almacenes de datos propiedad del cliente {#using-workflow-variables-customer-datastore}
 
-Los datos procesados por flujos de trabajo se almacenan en el almacenamiento proporcionado por el Adobe (JCR). Estos datos pueden ser de naturaleza delicada. Es posible que desee guardar todos los metadatos/datos definidos por el usuario en su propio almacenamiento administrado en lugar del almacenamiento proporcionado por el Adobe. En estas secciones se describe cómo configurar estas variables para el almacenamiento externo.
+Los datos procesados por flujos de trabajo se almacenan en el almacenamiento proporcionado por el Adobe (JCR). Estos datos pueden ser de naturaleza delicada. Es posible que desee guardar todos los metadatos/datos definidos por el usuario en su propio almacenamiento administrado en lugar del almacenamiento proporcionado por el Adobe. Estas secciones describen cómo configurar estas variables para el almacenamiento externo.
 
 ### Establecer el modelo para que utilice el almacenamiento externo de metadatos {#set-model-for-external-storage}
 
@@ -193,7 +193,7 @@ En el nivel del modelo de flujo de trabajo, se proporciona un indicador para ind
 
 La propiedad *userMetadataPersistenceEnabled* se almacenará en la variable *jcr:nodo de contenido* del modelo de flujo de trabajo. Este indicador se mantendrá en los metadatos del flujo de trabajo como *cq:userMetaDataCustomPersistenceEnabled*.
 
-La siguiente ilustración muestra que deben establecer el indicador en un flujo de trabajo.
+La siguiente ilustración muestra cómo establecer el indicador en un flujo de trabajo.
 
 ![workflow-externalize-config](assets/workflow-externalize-config.png)
 

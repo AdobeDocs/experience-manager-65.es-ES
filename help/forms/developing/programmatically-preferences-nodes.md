@@ -1,7 +1,7 @@
 ---
-title: Administración programática de los nodos Preferences
+title: Administración programática de PreferencesNodes
 seo-title: Programmatically managing the PreferencesNodes
-description: Utilice la API de servicio del Administrador de preferencias (Java) para administrar mediante programación los nodos de preferencias.
+description: Utilice la API del servicio Administrador de preferencias (Java) para administrar mediante programación los nodos de preferencias.
 seo-description: Use the Preferences Manager Service API (Java) to programmatically manage the Preferences Nodes.
 uuid: f0cb117a-a6cc-4ca5-8511-b3bc9f6738e9
 contentOwner: admin
@@ -14,32 +14,32 @@ exl-id: 108eb249-879b-4e4f-b431-8118b8656e62
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Gestión programática de los nodos de preferencias {#programmatically-managing-the-preferencesnodes}
+# Administración programática de los nodos de preferencias {#programmatically-managing-the-preferencesnodes}
 
-**Los ejemplos y ejemplos de este documento son solo para AEM Forms en un entorno JEE.**
+**Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-En este tema se describe cómo utilizar la API de servicio de Administrador de preferencias (Java) para administrar mediante programación los nodos de preferencias.
+En este tema se describe cómo se puede utilizar la API del servicio Administrador de preferencias (Java) para administrar mediante programación los nodos de preferencias.
 
-Puede cambiar manualmente los ajustes de configuración desde la interfaz de usuario del administrador. Para cambiar las opciones, vaya a `Home>Settings>User Management> Configuration>Manual Configuration`. Importar `config.xml` después de realizar los cambios, observará que todos los cambios excepto los realizados en el nodo `/Adobe/Adobe Experience Manager Forms/Config/UM persist` se pierden. La vista previa de Importación y exportación de administración de usuarios no admite el cambio de los ajustes de configuración de otros componentes. Ahora, estos cambios se pueden realizar utilizando `PreferencesManagerServiceClient` API.
+Puede cambiar manualmente las opciones de configuración desde la IU del administrador. Para cambiar las opciones, vaya a `Home>Settings>User Management> Configuration>Manual Configuration`. Importar `config.xml` después de realizar los cambios, observará que todos los cambios excepto los realizados en el nodo `/Adobe/Adobe Experience Manager Forms/Config/UM persist` se pierden. La vista previa de Administración de usuarios Importar y exportar no admite el cambio de los valores de configuración de otros componentes. Ahora, estos cambios se pueden realizar utilizando `PreferencesManagerServiceClient` API.
 
-**Resumen de los pasos** Para administrar mediante programación los nodos de preferencias, realice los pasos siguientes:
+**Resumen de los pasos** Para administrar mediante programación los nodos de preferencias, realice los siguientes pasos:
 
 1. Incluir archivos de proyecto.
 1. Crear un cliente PreferencesManagerService
-1. Invocar la función adecuada o las operaciones de permisos
+1. Invocar las operaciones de rol o permiso adecuadas
 
 **Incluir archivos de proyecto**
 
-Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente utilizando Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
+Incluya los archivos necesarios en el proyecto de desarrollo. Si está creando una aplicación cliente mediante Java, incluya los archivos JAR necesarios. Si utiliza servicios web, asegúrese de incluir los archivos proxy.
 
 **Crear un cliente PreferencesManagerService**
 
-Para poder realizar mediante programación una operación User Management PreferencesManagerService, debe crear un cliente PreferencesManagerService. Con la API de Java, esto se consigue creando un objeto PreferencesManagerServiceClient .
+Para poder realizar mediante programación una operación de User Management PreferencesManagerService, debe crear un cliente PreferencesManagerService. Con la API de Java, esto se logra creando un objeto PreferencesManagerServiceClient.
 
-**Invocar la función adecuada o las operaciones de permisos**
+**Invocar las operaciones de rol o permiso adecuadas**
 
 Una vez creado el cliente de servicio, puede invocar las operaciones del Administrador de preferencias. El cliente de servicio le permite leer y establecer permisos.

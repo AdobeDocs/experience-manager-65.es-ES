@@ -20,30 +20,30 @@ ht-degree: 0%
 
 # Compilar el plan de prueba{#compiling-your-test-plan}
 
-Los casos de prueba individuales se fusionarán en su plan de prueba, que también definirá:
+Los casos de prueba individuales se fusionarán en el plan de prueba, que también define lo siguiente:
 
 **Prioridades**
 
 Algunas pruebas tendrán más importancia que otras, por lo que es aconsejable indicar su prioridad.
 
-Por ejemplo, ciertas pruebas pueden afectar a una decisión Go / No-Go y, por lo tanto, deben confirmarse con cada versión provisional probada.
+Por ejemplo, ciertas pruebas pueden afectar a una decisión de Go / No-Go y, por lo tanto, deben confirmarse con cada versión intermedia probada.
 
 **Iteraciones**
 
-Si el proyecto utiliza cualquier forma de iteración de desarrollo (que implique que se pongan a disposición varias versiones), es posible que necesite o desee una indicación de los resultados de cada iteración. Esto puede utilizarse para indicar:
+Si su proyecto utiliza cualquier forma de iteración de desarrollo (que implique la publicación de varias versiones), puede que necesite o desee una indicación de los resultados de cada iteración. Esto puede usarse para indicar:
 
-* qué pruebas se incluirán en qué iteración.
-* los resultados observados para las pruebas repetidas en varias iteraciones.
-* que se repitan a intervalos regulares los ensayos y pruebas prioritarios de las características básicas.
+* qué pruebas se tratarán en qué iteración.
+* los resultados observados para las pruebas se repitieron en varias iteraciones.
+* que las pruebas prioritarias y las pruebas de las características básicas se repitan a intervalos regulares.
 
-**Tester**
+**Probador**
 
-En algún momento puede asignar el equipo de prueba adecuado o una persona de prueba específica (dependiendo posiblemente de la disponibilidad o experiencia).
+En algún momento puede asignar el equipo de prueba adecuado o una persona de prueba específica (posiblemente en función de la disponibilidad o la experiencia).
 
-**Resumen o información general**
+**Resumen o descripción general**
 
-A efectos de creación de informes, le recomendamos que proporcione una descripción general de los resultados de las pruebas:
+Para fines de creación de informes, le recomendamos que proporcione una descripción general de los resultados de las pruebas:
 
 * Porcentaje de pruebas ya cubiertas.
 * Porcentaje de éxito/error.
-* Cifras específicas relacionadas con los ensayos de prioridad.
+* Cifras específicas relacionadas con las pruebas prioritarias.

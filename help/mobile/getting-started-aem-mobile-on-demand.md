@@ -1,7 +1,7 @@
 ---
-title: AEM Mobile On Demand
+title: AEM Mobile On-Demand
 seo-title: AEM Mobile On-Demand
-description: El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una cohesión de funciones antes de que esté lista para la edición de contenido. Siga esta página para empezar a utilizar AEM servicios móviles bajo demanda.
+description: El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una cohesión de funciones antes de que esté lista para la edición de contenido. AEM Siga esta página para empezar a usar los servicios móviles bajo demanda de la aplicación de la versión de.
 seo-description: Starting a new AEM Mobile app experience requires a cohesion of roles before it is ready for content editing. Follow this page to get started with AEM mobile On-Demand services.
 uuid: 175c609d-3cb8-4a1b-bfea-278df272e500
 contentOwner: User
@@ -17,37 +17,37 @@ ht-degree: 1%
 
 ---
 
-# AEM Mobile On Demand{#aem-mobile-on-demand}
+# AEM Mobile On-Demand{#aem-mobile-on-demand}
 
 >[!NOTE]
 >
->Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Si no utiliza AEM como fuente de administración de contenido, consulte [Ayuda de AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>AEM Si no usa la fuente de administración de contenido como, consulte la sección sobre fuentes de administración de contenido. [Ayuda de AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
-AEM proporciona varias herramientas que le permiten integrar su contenido en aplicaciones móviles.
+AEM proporciona varias herramientas que le permiten integrar el contenido en aplicaciones móviles.
 
-El diagrama siguiente ilustra cómo se ajustan los distintos componentes de AEM Mobile y los servicios bajo demanda para ofrecer contenido a las aplicaciones móviles.
+El diagrama siguiente ilustra cómo los distintos componentes de AEM Mobile y On-Demand Services encajan para ofrecer contenido a las aplicaciones móviles.
 
-AEM aplicación Preflight puede considerarse un entorno de prueba para previsualizar la aplicación y el contenido antes de la publicación; mientras que la aplicación de AEM Mobile es la aplicación final que se ha creado para su distribución.
+AEM La aplicación de comprobaciones puede considerarse un entorno de prueba para obtener una vista previa de la aplicación y el contenido antes de publicarla, mientras que la aplicación de AEM Mobile es la última creada para su distribución.
 
 >[!NOTE]
 >
->Para obtener información detallada sobre la aplicación Preflight, consulte [Uso de la aplicación AEM Preflight](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html) en la Ayuda de AEM Mobile On-demand Services.
+>Para obtener información detallada sobre la aplicación de comprobaciones, consulte [AEM Uso de la aplicación de comprobación preliminar de](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html) en la Ayuda de AEM Mobile On-demand Services.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
 >[!NOTE]
 >
->En el diagrama anterior, la instancia de AEM Publish no es necesaria para un escenario de implementación típico en AEM Mobile On-demand Services.
+>En el diagrama anterior, la instancia de publicación de AEM no es necesaria para un escenario de implementación típico en AEM Mobile On-demand Services.
 
 ## Inicio de una nueva aplicación móvil {#starting-a-new-mobile-app}
 
-AEM Mobile es solo un pilar que constituye la plataforma AEM completa.
+AEM Mobile AEM es solo uno de los pilares que conforman la plataforma completa de la.
 
-El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una cohesión de funciones antes de que esté lista para la edición de contenido. Las funciones siguientes proporcionan un punto de partida para crear una nueva aplicación de AEM Mobile:
+El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una cohesión de funciones antes de que esté lista para la edición de contenido. Las siguientes funciones proporcionan un punto de partida para crear una nueva aplicación de AEM Mobile:
 
 * **Administrador**
 * **Desarrollador**
@@ -55,56 +55,56 @@ El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una coh
 
 >[!NOTE]
 >
->Antes de trabajar con AEM Mobile y seguir los pasos de esta guía de introducción, los usuarios deben estar familiarizados con AEM. Conozca los conceptos básicos de AEM [here](/help/sites-deploying/deploy.md).
+>Antes de trabajar con AEM Mobile AEM y seguir los pasos de esta guía de introducción, los usuarios deben estar familiarizados con el uso de las funciones de la interfaz de usuario de. AEM Conozca los conceptos básicos de la [aquí](/help/sites-deploying/deploy.md).
 
 ### Explicación del panel de aplicaciones de AEM Mobile {#understanding-the-aem-mobile-application-dashboard}
 
-Antes de comprender las funciones y responsabilidades, el usuario debe tener un conocimiento profundo de **Centro de control de AEM Mobile** o **Panel de aplicaciones**. Haga clic en [here](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para una comprensión más detallada.
+Antes de comprender las funciones y responsabilidades, el usuario debe conocer a fondo **Centro de control de AEM Mobile** o el **Tablero de aplicación**. Clic [aquí](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para una comprensión exhaustiva.
 
 ### Administrador de AEM {#aem-administrator}
 
-Un ***administrador de AEM*** es responsable de agregar una nueva aplicación al catálogo de AEM Mobile, ya sea creando una nueva aplicación con el asistente de creación o importando una aplicación existente. AEM administradores que crean una aplicación nueva con AEM Mobile *asistente de creación* normalmente, seleccione una de las plantillas de aplicación que desee entre nuestras muestras de referencia predeterminadas o (en la mayoría de los casos) una plantilla de aplicación personalizada creada por *AEM desarrolladores.*
+Un ***AEM administrador de*** es responsable de añadir una nueva aplicación al catálogo de AEM Mobile, ya sea creando una nueva aplicación con el asistente de creación o importando una aplicación existente. AEM AEM Mobile administradores de que crean una nueva aplicación con el *asistente de creación* normalmente, seleccione una de las plantillas de aplicación que desee entre nuestras muestras de referencia predeterminadas o (en la mayoría de los casos) una plantilla de aplicación personalizada creada por *AEM desarrolladores de.*
 
-Un administrador de AEM es responsable de las siguientes tareas al crear una aplicación con AEM Mobile On-demand Services:
+AEM Un administrador de la aplicación es responsable de las siguientes tareas al crear una aplicación mediante AEM Mobile On-demand Services:
 
 * [Configuración de AEM Mobile](/help/mobile/aem-mobile-setup.md)
-* [Configuración de los grupos de usuarios y usuarios](/help/mobile/aem-mobile-configure-users.md)
+* [Configuración de los usuarios y grupos de usuarios](/help/mobile/aem-mobile-configure-users.md)
 * [Vista previa con comprobación preliminar](/help/mobile/aem-mobile-manage-ondemand-services.md)
 * [Administración de servicios de contenido](/help/mobile/developing-content-services.md)
 
-Para empezar a utilizar las funciones y responsabilidades de un administrador, consulte [Administración de contenido para usar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md).
+Para empezar con las funciones y responsabilidades de un administrador, consulte [Administración de contenido para utilizar AEM Mobile On-demand Services](/help/mobile/aem-mobile.md).
 
-## Desarrollador de AEM {#aem-developer}
+## AEM Desarrollador de {#aem-developer}
 
-Un **AEM desarrollador** amplía y crea plantillas y componentes web personalizados para permitir que *AEM Author *cree experiencias móviles hermosas y atractivas. Estas plantillas y componentes no solo están optimizados para el mundo de las aplicaciones móviles; pero comuníquese tanto con el dispositivo como con el servidor AEM (cualquier servidor remoto) a los puntos finales del servicio omnicanal. AEM editor de contenido integrado es utilizado por *Autores de AEM* para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Marketing Cloud.
+Un **AEM desarrollador de** amplía y crea plantillas web y componentes personalizados para permitir que *AEM Author *cree experiencias móviles hermosas y atractivas. AEM Estas plantillas y componentes no solo están optimizadas para el mundo de las aplicaciones móviles, sino que se comunican tanto con el dispositivo como con el servidor de (cualquier servidor remoto) a los puntos finales de servicios omnicanal. AEM El editor de contenido integrado de la lo utiliza *Autores AEM* para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Marketing Cloud.
 
-Un desarrollador de AEM es responsable de las siguientes tareas mientras crea una aplicación con AEM Mobile On-demand Services:
+AEM Un desarrollador de aplicaciones es responsable de las siguientes tareas al crear una aplicación mediante AEM Mobile On-demand Services:
 
 * [Plantillas y componentes de aplicación](/help/mobile/app-templates-and-components1.md)
 * [Móvil con sincronización de contenido](/help/mobile/mobile-ondemand-contentsync.md)
 * [Propiedades de contenido y exportación de contenido](/help/mobile/on-demand-content-properties-exporting.md)
-* [Desarrollo de los servicios de contenido de AEM Mobile](/help/mobile/developing-content-services.md)
+* [Desarrollo de AEM Mobile Content Services](/help/mobile/developing-content-services.md)
 
-Para empezar a utilizar las funciones y responsabilidades del desarrollador, consulte [Desarrollo de contenido de AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md).
+Para empezar a usar las funciones y responsabilidades de desarrollador, consulte [AEM Desarrollo de contenido para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md).
 
 >[!NOTE]
 >
->Un *AEM del desarrollador* no comienza ni finaliza con el desarrollo de plantillas y componentes. Un *AEM desarrollador* puede crear una aplicación completamente nueva en lugar de simplemente ampliar el ejemplo de implementación de referencia predeterminada.
+>Un *AEM de desarrollador de* Esta función no comienza ni finaliza con el desarrollo de plantillas y componentes. Un *AEM desarrollador de* puede crear una aplicación completamente nueva en lugar de simplemente ampliar el ejemplo de implementación de referencia listo para usar.
 
 ## AEM Author {#aem-author}
 
-Un ***Autor de AEM* (o *Especialista en marketing*)**utiliza las plantillas y componentes desarrollados o listos para usar para agregar y editar páginas, arrastrar y soltar componentes y añadir medios de todo tipo desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido). AEM editor de contenido integrado lo utiliza *Autores de AEM* para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Marketing Cloud.
+Un ***AEM Author* (o *Especialista en marketing*)**utiliza las plantillas y los componentes desarrollados o predeterminados para añadir y editar páginas, arrastrar y soltar componentes y añadir medios de todo tipo desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido). AEM A continuación, utiliza el editor de contenido integrado de la *Autores AEM* para crear experiencias enriquecidas y relevantes dentro de la aplicación, incluida la integración con el resto de Adobe Marketing Cloud.
 
-Un autor AEM debe comprender los siguientes temas al crear una aplicación con AEM Mobile On-demand Services:
+AEM Un autor de la debe comprender los siguientes temas al crear una aplicación con AEM Mobile On-demand Services:
 
-* [Panel de aplicaciones de AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
+* [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [Acciones de creación y configuración de aplicaciones](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
 * [Configuración de nube](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [Administración de contenido](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
-* [Información general de los servicios de contenido](/help/mobile/develop-content-as-a-service.md)
+* [Información general de servicios de contenido](/help/mobile/develop-content-as-a-service.md)
 
-Para empezar a utilizar las funciones y responsabilidades de un autor, consulte [Creación de contenido AEM para aplicaciones de AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md).
+Para empezar con las funciones y responsabilidades de un autor, consulte [AEM Creación de contenido de la aplicación de para AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md).
 
 >[!NOTE]
 >
->Un autor de AEM también es responsable de configurar la asignación de derechos, crear tarjetas y diseños y enviar notificaciones push. Además, para obtener más información sobre métodos para crear contenido; administrar artículos y colecciones; creación de titulares, tarjetas y diseños en AEM Mobile, consulte [Portal bajo demanda de AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).
+>Un autor de AEM también es responsable de configurar el derecho, crear tarjetas y diseños y enviar notificaciones push. Además, para obtener más información sobre los métodos para crear contenido, administrar artículos y colecciones, crear titulares, tarjetas y diseños en AEM Mobile, consulte [Portal de AEM Mobile On-Demand](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).

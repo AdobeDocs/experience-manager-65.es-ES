@@ -51,7 +51,7 @@ Cuando se le asigna un elemento de trabajo (por ejemplo, **Aprobar contenido**),
 
 * La columna **Estado** de la consola Sitios web indica si una página está en un flujo de trabajo.
 
-   ![workflow-status-1](assets/workflowstatus-1.png)
+   ![workflowstatus-1](assets/workflowstatus-1.png)
 
 * Cuando usted o el grupo al que pertenece tengan un elemento de trabajo asignado como parte de un flujo de trabajo, el elemento de trabajo aparecerá en la bandeja de entrada del flujo de trabajo de AEM.
 
@@ -64,7 +64,7 @@ Una vez haya realizado la acción indicada, puede finalizar el elemento de traba
 1. Seleccione el paso del flujo de trabajo y haga clic en el botón **Completar** en la barra de navegación superior.
 1. En el cuadro de diálogo que aparece, seleccione **Paso siguiente**; esto es, el paso que se ejecutará a continuación. Un menú desplegable muestra todos los destinos correctos. También se puede escribir un **comentario**.
 
-   ![flujo de trabajo completado](assets/workflowcomplete.png)
+   ![workflow complete](assets/workflowcomplete.png)
 
    El número de pasos que se enumera depende del diseño del modelo de flujo de trabajo.
 

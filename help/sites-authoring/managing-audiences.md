@@ -25,7 +25,7 @@ La consola Audiencias permite crear, organizar y administrar las audiencias de l
 * Añadir audiencias: audiencias de Adobe Target o segmentos de ContextHub.
 * Administre audiencias.
 
-Una audiencia, denominada *segmento* en ContextHub y Client Context, es una clase de visitantes definida por criterios específicos que luego determinan quién ve una actividad segmentada. Al segmentar una actividad, puede seleccionar la audiencia directamente en el proceso de segmentación o crear una nueva en la consola de audiencias.
+Una audiencia, llamada *segmento* en ContextHub y Client Context, es una clase de visitantes definidos por criterios específicos y que, a continuación, determina quién ve una actividad de destino. Al segmentar una actividad, puede seleccionar la audiencia directamente en el proceso de segmentación o crear una nueva en la consola de audiencias.
 
 En la consola de audiencias, las audiencias se organizan según la marca.
 
@@ -66,7 +66,7 @@ Al utilizar más de una regla, estas reglas se combinan según el operador boole
 
 >[!NOTE]
 >
->Si no ve **Crear audiencia de destino **en la **Crear** , no tiene los permisos necesarios para crear una audiencia. Necesita permisos de escritura en **/etc/segmentation** para poder crear audiencias. Los autores de contenido del grupo tienen permisos de escritura de forma predeterminada.
+>Si no ve **Crear audiencia de Target **en la **Crear** , no tiene los permisos necesarios para crear una audiencia. Necesita permisos de escritura en **/etc/segmentation** para poder crear audiencias. Los autores de contenido del grupo tienen permisos de escritura de forma predeterminada.
 
 Para crear una audiencia de Adobe Target:
 
@@ -74,7 +74,7 @@ Para crear una audiencia de Adobe Target:
 
    ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. En la consola de audiencias, toque o haga clic en **Crear** y, a continuación,** Crear audiencia de Target**.
+1. En la consola Audiencias, toque o haga clic en **Crear** y luego** Crear audiencia de Target**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 

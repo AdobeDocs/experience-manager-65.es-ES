@@ -1,7 +1,7 @@
 ---
-title: Consola de etiquetado de la IU clásica
+title: Consola de etiquetado de IU clásica
 seo-title: Classic UI Tagging Console
-description: Obtenga información sobre la consola de etiquetado de la IU clásica.
+description: Obtenga información acerca de la consola de etiquetado de IU clásica.
 seo-description: Learn about the Classic UI Tagging Console.
 uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
@@ -18,17 +18,17 @@ ht-degree: 37%
 
 ---
 
-# Consola de etiquetado de la IU clásica{#classic-ui-tagging-console}
+# Consola de etiquetado de IU clásica{#classic-ui-tagging-console}
 
-Esta sección es para la consola de etiquetado de la IU clásica.
+Esta sección es para la Consola de etiquetado de IU clásica.
 
-La consola de etiquetado de la IU táctil está optimizada para [here](/help/sites-administering/tags.md#tagging-console).
+La consola de etiquetado de IU táctil está optimizada [aquí](/help/sites-administering/tags.md#tagging-console).
 
-Para acceder a la consola de etiquetado de la IU clásica :
+Para acceder a la consola de etiquetado de IU clásica:
 
-* en author
+* sobre el autor
 * iniciar sesión con privilegios administrativos
-* vaya a la consola, por ejemplo, [https://localhost:4502/tagging](https://localhost:4502/tagging)
+* vaya a la consola, por ejemplo: [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
 ![](assets/managing_tags_usingthetagasministrationconsole.png)
 
@@ -48,16 +48,16 @@ Para acceder a la consola de etiquetado de la IU clásica :
 
    * **Título**
 (
-*Requerido*) Título para mostrar de la etiqueta. Aunque se puede introducir cualquier carácter, se recomienda no utilizar estos caracteres especiales:
+*Requerido*) El título para mostrar de la etiqueta. Aunque se puede introducir cualquier carácter, se recomienda no utilizar estos caracteres especiales:
 
       * `colon (:)` - delimitador de área de nombres
       * `forward slash (/)` - delimitador de subetiqueta
 
-      Estos caracteres no se muestran si se introducen.
+      Estos caracteres no se mostrarán si se introducen.
 
    * **Nombre**
 (
-*Requerido*) El nombre de nodo de la etiqueta .
+*Requerido*) El nombre del nodo de la etiqueta.
 
    * **Descripción**
 (
@@ -77,13 +77,13 @@ Para acceder a la consola de etiquetado de la IU clásica :
 
 1. En el panel derecho, seleccione la etiqueta que desee eliminar.
 1. Haga clic en **Eliminar**.
-1. Haga clic en **Sí** para cerrar el cuadro de diálogo.
+1. Clic **Sí** para cerrar el cuadro de diálogo.
 
    La etiqueta ya no debería aparecer en la lista.
 
 ## Activación y desactivación de tags {#activating-and-deactivating-tags}
 
-1. En el panel derecho, seleccione el área de nombres o la etiqueta que desee activar (publicar) o desactivar (cancelar la publicación).
+1. En el panel derecho, seleccione el área de nombres o la etiqueta que desea activar (publicar) o desactivar (cancelar la publicación).
 1. Haga clic en **Activar** o **Desactivar** según sea necesario.
 
 ## Lista - mostrar el lugar donde se hace referencia a los tags {#list-showing-where-tags-are-referenced}
@@ -94,7 +94,7 @@ Para acceder a la consola de etiquetado de la IU clásica :
 
 ## Movimiento de tags {#moving-tags}
 
-Para ayudar a los administradores y desarrolladores de etiquetas a limpiar la taxonomía o cambiar el nombre de un ID de etiqueta, es posible mover una etiqueta a una nueva ubicación :
+Para ayudar a los administradores y desarrolladores de etiquetas a limpiar la taxonomía o cambiar el nombre de un ID de etiqueta, es posible mover una etiqueta a una nueva ubicación:
 
 1. Abra la consola **Tagging**.
 1. Seleccione la etiqueta y haga clic en **Mover...** en la barra de herramientas superior (o en el menú contextual).
@@ -111,7 +111,7 @@ El cuadro de diálogo **Mover etiqueta** tiene el siguiente aspecto:
 
 >[!NOTE]
 >
->Los autores no deben mover etiquetas ni cambiar el nombre de un ID de etiqueta. Si es necesario, los autores solo deben [cambiar los títulos de las etiquetas](#editing-tags).
+>Los autores no deben mover etiquetas ni cambiar el nombre de un ID de etiqueta. Cuando sea necesario, los autores solo deben [cambiar los títulos de las etiquetas](#editing-tags).
 
 ## Combinación de tags {#merging-tags}
 
@@ -127,7 +127,7 @@ Para combinar una etiqueta con otra:
 
 1. Haga clic en **Combinar**.
 
-La variable **Combinar etiqueta** El cuadro de diálogo tiene el siguiente aspecto:
+El **Combinar etiqueta** tiene el siguiente aspecto:
 
 ![](assets/mergetag.png)
 
@@ -140,14 +140,14 @@ Para ver cuántas veces se está usando una etiqueta:
 
 ## Administración de tags en distintos idiomas {#managing-tags-in-different-languages}
 
-La opción `title`La propiedad de una etiqueta puede traducirse a varios idiomas. Etiqueta `titles` se puede mostrar según el idioma del usuario o el idioma de la página.
+El opcional `title`La propiedad de una etiqueta se puede traducir a varios idiomas. Etiqueta `titles` a continuación, se puede mostrar según el idioma del usuario o el idioma de la página.
 
 ### Definición de títulos de tags en varios idiomas {#defining-tag-titles-in-multiple-languages}
 
-El siguiente procedimiento muestra cómo traducir la variable `title`de la etiqueta **Animales** inglés, alemán y francés:
+El siguiente procedimiento muestra cómo traducir el `title`de la etiqueta **Animales** en inglés, alemán y francés:
 
 1. Vaya a la **Etiquetado** consola.
-1. Editar la etiqueta **Animales** below **Etiquetas** > **Fotografía de archivo**.
+1. Editar la etiqueta **Animales** abajo **Etiquetas** > **Fotografías de archivo**.
 1. Agregue las traducciones en los siguientes idiomas:
 
    * **Inglés**: Animals
@@ -160,26 +160,26 @@ El cuadro de diálogo tiene este aspecto:
 
 ![](assets/edit_tag.png)
 
-La consola Etiquetado utiliza la configuración de idioma del usuario, por lo que para la etiqueta Animal se muestra &quot;Animaux&quot; para un usuario que establece el idioma en francés en las propiedades de usuario.
+La consola de etiquetado utiliza la configuración de idioma del usuario, por lo que para la etiqueta Animal, se muestra &quot;Animaux&quot; para un usuario que establece el idioma en francés en las propiedades del usuario.
 
-Para añadir un nuevo idioma al cuadro de diálogo, consulte la sección [Adición de un nuevo idioma al cuadro de diálogo Editar etiqueta](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) en el **Etiquetado para desarrolladores** para obtener más información.
+Para añadir un nuevo idioma al cuadro de diálogo, consulte la sección [Adición de un nuevo idioma al cuadro de diálogo Editar etiqueta](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) en el **Etiquetado para desarrolladores** sección.
 
-### Visualización de títulos de etiquetas en propiedades de página en un idioma especificado {#displaying-tag-titles-in-page-properties-in-a-specified-language}
+### Mostrar títulos de etiquetas en las propiedades de página en un idioma especificado {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
-De forma predeterminada, la etiqueta `titles`en las propiedades de página se muestran en el idioma de la página. El cuadro de diálogo etiqueta de las propiedades de página tiene un campo de idioma que permite la visualización de la etiqueta `titles`en un idioma diferente. El siguiente procedimiento describe cómo mostrar la etiqueta `titles`en francés:
+De forma predeterminada, la etiqueta `titles`en la página, las propiedades se muestran en el idioma de la página. El cuadro de diálogo de etiquetas de las propiedades de página tiene un campo de idioma que permite mostrar la etiqueta `titles`en un idioma diferente. El siguiente procedimiento describe cómo mostrar la etiqueta `titles`en francés:
 
-1. Consulte la sección anterior para agregar la traducción al francés al **Animales** below **Etiquetas** > **Fotografía de archivo**.
+1. Consulte la sección anterior para añadir la traducción al francés a la **Animales** abajo **Etiquetas** > **Fotografías de archivo**.
 1. Abra las propiedades de página correspondientes a la página **Products** en la rama en inglés del sitio **Geometrixx**.
-1. Abra el **Etiquetas/Palabras clave** (seleccionando el menú desplegable a la derecha del área de visualización Etiquetas/palabras clave) y seleccione la **Francés** del menú desplegable en la esquina inferior derecha.
-1. Desplácese con las flechas izquierda-derecha hasta que pueda seleccionar la variable **Fotografía de archivo** ficha
+1. Abra el **Etiquetas/Palabras clave** (seleccionando el menú desplegable a la derecha del área de visualización de Etiquetas/Palabras clave) y seleccione la opción **francés** idioma del menú desplegable en la esquina inferior derecha.
+1. Desplácese utilizando las flechas izquierda-derecha hasta que pueda seleccionar la variable **Fotografías de archivo** pestaña
 
-   Seleccione el **Animales** (**Animaux**) y seleccione fuera del cuadro de diálogo para cerrarlo y agregar la etiqueta a las propiedades de página.
+   Seleccione el **Animales** (**Animaux**) y seleccione fuera del cuadro de diálogo para cerrarlo y añadir la etiqueta a las propiedades de página.
 
    ![](assets/french_tag.png)
 
 De forma predeterminada, el cuadro de diálogo Propiedades de página muestra la etiqueta `titles`según el idioma de la página.
 
-En general, el idioma de la etiqueta se toma del idioma de la página si este está disponible. Cuando la variable [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) se utiliza en otros casos (por ejemplo, en formularios o en cuadros de diálogo), el idioma de la etiqueta depende del contexto.
+En general, el idioma de la etiqueta se toma del idioma de la página si este está disponible. Si la variable [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) se utiliza en otros casos (por ejemplo, en formularios o cuadros de diálogo), el idioma de la etiqueta depende del contexto.
 
 >[!NOTE]
 >

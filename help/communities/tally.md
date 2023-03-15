@@ -1,7 +1,7 @@
 ---
 title: Tally Essentials
 seo-title: Tally Essentials
-description: Información general de la clase tally
+description: Resumen de clase de recuento
 seo-description: Tally class overview
 uuid: c369c6a1-9ced-4b5c-af43-8c03236eaa52
 contentOwner: msm-service
@@ -19,44 +19,44 @@ ht-degree: 0%
 
 # Tally Essentials {#tally-essentials}
 
-Tally es una clase abstracta que proporciona un método estándar para recopilar comentarios de los miembros sobre cómo valoran productos y servicios específicos. No se admiten comentarios anónimos. El visitante del sitio debe registrarse e iniciar sesión para participar e iniciar sesión para cambiar sus comentarios. El requisito de iniciar sesión facilita la moderación y mejora el valor de los comentarios al evitar que se publiquen varias publicaciones.
+Tally es una clase abstracta que proporciona un método estándar de recopilar comentarios de los miembros sobre cómo valoran productos y servicios específicos. No se admiten comentarios anónimos. El visitante del sitio debe registrarse e iniciar sesión para participar e iniciar sesión para cambiar sus comentarios. El requisito de iniciar sesión facilita la moderación y aumenta el valor de los comentarios al evitar varias publicaciones.
 
 Se puede crear un componente de recuento personalizado ampliando la clase de recuento abstracto.
 
-[&quot;Me gusta&quot;](essentials-liking.md) es una implementación de la cuenta que es una forma simple de expresar una opinión positiva.
+[Gusto](essentials-liking.md) es una implementación de recuento que es una forma simple de expresar una opinión positiva.
 
-[Votación](essentials-voting.md) es una implementación de la cuenta que es una forma simple de expresar una opinión positiva o negativa.
+[Votación](essentials-voting.md) es una implementación de recuento que es una forma simple de expresar una opinión positiva o negativa.
 
-[Clasificación](rating-basics.md) es una implementación de la cuenta que utiliza un sistema de estrellas para expresar una gama de opiniones desde positivas a negativas.
+[Clasificación](rating-basics.md) es una implementación de recuento que utiliza un sistema de estrellas para expresar una amplia gama de opiniones desde positivas a negativas.
 
-A partir de AEM 6.1, el componente de encuesta ya no está disponible.
+AEM A partir de la versión 6.1, el componente de encuesta ya no está disponible.
 
-[Reseñas](reviews-basics.md) es un componente SCF que es híbrido de [comentarios](essentials-comments.md) y [clasificación](rating-basics.md).
+[Críticas](reviews-basics.md) es un componente SCF que es híbrido de [comentarios](essentials-comments.md) y [clasificación](rating-basics.md).
 
-## Elementos esenciales para el cliente {#essentials-for-client-side}
+## Essentials para el lado del cliente {#essentials-for-client-side}
 
 * [Personalizaciones del lado del cliente](client-customize.md)
 
-## Elementos esenciales para el servidor {#essentials-for-server-side}
+## Essentials para servidor {#essentials-for-server-side}
 
-* [API de Tally](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [API de recuento](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Puntos finales totales](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Extremos de recuento](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
-### Acceso a listas de correos (UGC) {#accessing-posted-tallies-ugc}
+### Acceso a los recuentos publicados (UGC) {#accessing-posted-tallies-ugc}
 
-UGC debe moderarse utilizando uno de los métodos estándar de moderación.
+La UGC debe moderarse utilizando uno de los métodos habituales de moderación.
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir del AEM 6.1 Comunidades, se utilizará un [tienda común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+AEM A partir de la versión 6.1 de las comunidades de la, se utilizará [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Información general del proveedor de recursos de almacenamiento](srp.md) - Introducción y descripción general del uso del repositorio.
-* [Elementos esenciales de SRP y UGC](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP.
+* [Resumen del proveedor de recursos de almacenamiento](srp.md) - Introducción y descripción general del uso del repositorio.
+* [SRP y UGC Essentials](srp-and-ugc.md) - Métodos y ejemplos de la utilidad SRP.
 * [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación.
-* [Refactorización de SocialUtils](socialutils.md) - Asignación de métodos de utilidad obsoletos a los métodos de utilidad SRP actuales.
+* [Refactorización de SocialUtils](socialutils.md) : Asignación de métodos de utilidad obsoletos a los métodos de utilidad SRP actuales.

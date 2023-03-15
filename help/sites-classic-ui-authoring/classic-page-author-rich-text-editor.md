@@ -19,7 +19,7 @@ ht-degree: 77%
 El editor de texto enriquecido es un bloque de creación básico para introducir contenido textual en AEM. Constituye la base de diversos componentes, que incluyen:
 
 * Texto
-* Texto Imagen
+* Texto  Imagen
 * Tabla
 
 ## Editor de texto enriquecido {#rich-text-editor-1}
@@ -56,7 +56,7 @@ Actualmente, el modo de edición directamente está habilitado para elementos de
 
 ## Funciones del Editor de texto enriquecido {#features-of-the-rich-text-editor}
 
-El Editor de texto enriquecido ofrece una amplia gama de funciones, estas [dependen de la configuración](/help/sites-administering/rich-text-editor.md) del componente individual. Las funciones están disponibles tanto para la IU táctil como para la clásica.
+El Editor de texto enriquecido proporciona una serie de funciones, que [dependen de la configuración](/help/sites-administering/rich-text-editor.md) del componente individual. Las funciones están disponibles tanto para la interfaz de usuario táctil optimizada como para la clásica.
 
 ### Formatos de carácter básicos {#basic-character-formats}
 
@@ -76,17 +76,17 @@ Todos funcionan como conmutadores; por lo tanto, si vuelve a seleccionar, se qui
 
 ### Formatos y estilos predefinidos {#predefined-styles-and-formats}
 
-![cq55_rte_stylesParagraph](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
 Su instalación puede incluir estilos y formatos predefinidos. Están disponibles con las listas desplegables **[!UICONTROL Estilo]** y **[!UICONTROL Formato]**, y pueden aplicarse a texto seleccionado.
 
 Se puede aplicar un estilo a una cadena específica (un estilo se correlaciona con CSS):
 
-![cq55_rte_style_use](assets/cq55_rte_styles_use.png)
+![cq55_rte_styles_use](assets/cq55_rte_styles_use.png)
 
 Mientras que se aplica un formato a todo el texto del párrafo (un formato está basado en HTML):
 
-![cq55_rte_Paragraph_use](assets/cq55_rte_paragraph_use.png)
+![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
 
 Un formato específico puede cambiarse solamente (el valor predeterminado es **[!UICONTROL Párrafo]**).
 
@@ -104,11 +104,11 @@ Están disponibles las funciones estándar de **[!UICONTROL Cortar]** y **[!UICO
 
 * Cortar (Ctrl-X)
 * Copiar (Ctrl-C)
-* Pegar Este es el mecanismo de pegado predeterminado (Ctrl-V) para el componente; cuando se instala de forma predeterminada, se configura para que [!UICONTROL Pegar desde Word].
+* Pegar Este es el mecanismo de pegado predeterminado (Ctrl-V) para el componente; cuando se instala de forma predeterminada, se configura para que sea [!UICONTROL Pegar desde Word].
 
-* Pegar como texto: Quita todos los estilos y formatos para pegar solo texto sin formato.
+* Pegar como texto: elimina todos los estilos y formatos para pegar únicamente el texto sin formato.
 
-* Pegar desde Word: Esto pega el contenido como HTML (con algunas modificaciones de formato necesarias).
+* Pegar desde Word: pega el contenido como HTML (con el formato adicional necesario).
 
 ### Deshacer y rehacer {#undo-redo}
 
@@ -138,7 +138,7 @@ El texto puede alinearse a la izquierda, al medio o a la derecha.
 
 Es posible aumentar o reducir la sangría de un párrafo. Se aplicará sangría al párrafo seleccionado, todo nuevo texto especificado retendrá el nivel de sangría actual.
 
-![cq55_rte_guión_use](assets/cq55_rte_indent_use.png)
+![cq55_rte_int_use](assets/cq55_rte_indent_use.png)
 
 ### Listas {#lists}
 
@@ -156,7 +156,7 @@ El estilo de una lista puede cambiar con solo colocar el cursor dentro de ella y
 
 ![](do-not-localize/cq55_rte_links.png)
 
-Se genera un vínculo a una dirección URL (ya sea dentro del sitio web o una ubicación externa) al resaltar el texto requerido y luego hacer clic en el icono de hipervínculo:
+Un vínculo a una dirección URL (ya sea dentro del sitio web o una ubicación externa) se genera resaltando el texto requerido y haciendo clic en el icono de hipervínculo:
 
 ![](do-not-localize/chlimage_1-9.png)
 
@@ -167,14 +167,14 @@ Un cuadro de diálogo permitirá especificar la URL de destino; también si debe
 Puede hacer lo siguiente:
 
 * Escriba un URI directamente
-* Utilice el mapa del sitio para seleccionar una página dentro del sitio web
-* Introduzca el URI y, a continuación, añada el anclaje de destino; p. ej. `www.TargetUri.org#AnchorName`
-* Introduzca un anclaje únicamente (para hacer referencia a &quot;la página actual&quot;); Por ejemplo, `#anchor`
-* Busque una página en el buscador de contenido y, a continuación, arrastre y suelte el icono de página en el cuadro de diálogo Hipervínculo
+* Utilice el mapa del sitio para seleccionar una página del sitio web
+* Introduzca el URI y, a continuación, añada el anclaje de destino; p. ej., `www.TargetUri.org#AnchorName`
+* Introducir solo un anclaje (para hacer referencia a &quot;la página actual&quot;); por ejemplo, `#anchor`
+* Busque una página en el buscador de contenido y arrastre y suelte el icono de página en el cuadro de diálogo Hipervínculo
 
 >[!NOTE]
 >
->El URI puede añadirse delante con cualquiera de los protocolos configurados para la instalación. En una instalación estándar, estos son `https://`, `ftp://`y `mailto:`. Los protocolos que no estén configurados para la instalación serán rechazados y marcados como no válidos.
+>El URI puede añadirse delante con cualquiera de los protocolos configurados para la instalación. En una instalación estándar, estos son `https://`, `ftp://`, y `mailto:`. Los protocolos que no estén configurados para la instalación serán rechazados y marcados como no válidos.
 
 Para anular el vínculo, posicione el cursor en cualquier parte dentro del texto del vínculo y haga clic en el icono [!UICONTROL Desvincular:]
 
@@ -248,7 +248,7 @@ Las tablas están disponibles tanto:
 
    >[!NOTE]
    >
-   >Aunque las tablas están disponibles en el RTE, se recomienda usar la variable **Tabla** al crear tablas.
+   >Aunque las tablas están disponibles en el RTE, se recomienda utilizar el **Tabla** al crear tablas.
 
 En los componentes **Texto** y **Tabla**, la funcionalidad de tabla está disponible mediante el menú contextual (generalmente el botón derecho del ratón) donde se hace clic dentro de la tabla. Por ejemplo:
 
@@ -278,23 +278,23 @@ Las propiedades básicas de la tabla pueden configurarse antes de hacer clic en 
 
 ![cq55_rte_tableproperties_dialog](assets/cq55_rte_tableproperties_dialog.png)
 
-* **Anchura**: Ancho total de la tabla.
+* **Ancho**: Ancho total de la tabla.
 
-* **Altura**: Altura total de la tabla.
+* **Altura**: altura total de la tabla.
 
-* **Borde**: El tamaño del borde de la tabla.
+* **Borde**: tamaño del borde de la tabla.
 
-* **Margen de celdas**: Define el espacio en blanco entre el contenido de la celda y sus bordes.
+* **Margen de celdas**: define el espacio en blanco entre el contenido de la celda y sus bordes.
 
-* **Espaciado de celdas**: Define la distancia entre las celdas.
+* **Espaciado de celdas**: define la distancia entre las celdas.
 
 >[!NOTE]
 >
->Algunas propiedades de celda, como Anchura y Altura, se pueden definir como píxeles o como porcentajes.
+>Algunas propiedades de celda, como Width y Height, pueden definirse como píxeles o como porcentajes.
 
 >[!CAUTION]
 >
->Adobe recomienda definir una anchura para la tabla.
+>El Adobe recomienda definir una anchura para la tabla.
 
 #### Propiedades de celda {#cell-properties}
 
@@ -304,12 +304,12 @@ Es posible configurar las propiedades de una celda específica o serie de celdas
 
 ![cq55_rte_cellproperties_dialog](assets/cq55_rte_cellproperties_dialog.png)
 
-* **Ancho**
+* **Anchura**
 * **Altura**
-* **Alineación horizontal** - Izquierda, Centro o Derecha
-* **Alineación vertical** - Superior, Centro, Abajo o Línea de base
-* **Tipo de celda**- Datos o Encabezado
-* **Aplicar a:** Celda única, fila entera, columna completa
+* **Alineación horizontal** - Izquierda, centro o derecha
+* **Alineación vertical** - Superior, Medio, Inferior o Línea de base
+* **Tipo de celda**- Datos o encabezado
+* **Aplicar a:** Una celda, toda la fila, toda la columna
 
 #### Agregar o eliminar filas {#add-or-delete-rows}
 
@@ -360,14 +360,14 @@ Crear una tabla anidada creará una nueva tabla autocontenida dentro de la celda
 >El navegador determina cierto comportamiento adicional:
 >
 >* Windows IE: use Ctrl + clic con el botón principal del ratón (generalmente el izquierdo) para seleccionar varias celdas.
->* Firefox: Arrastre el puntero para seleccionar un rango de celdas.
+>* Firefox: arrastre el puntero para seleccionar un rango de celdas.
 
 
 #### Quitar tabla {#remove-table}
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
 
-Utilice la opción para quitar la tabla desde el **[!UICONTROL Texto]** componente.
+Utilice la opción para quitar la tabla de la tabla de **[!UICONTROL Texto]** componente.
 
 ### Caracteres especiales {#special-characters}
 

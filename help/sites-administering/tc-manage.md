@@ -1,6 +1,6 @@
 ---
 title: Administración de proyectos de traducción
-description: Aprenda a administrar proyectos de traducción en AEM.
+description: AEM Obtenga información sobre cómo administrar proyectos de traducción en.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 55%
 
 # Administración de proyectos de traducción{#managing-translation-projects}
 
-Después de preparar el contenido para la traducción, debe completar la estructura del idioma creando las copias de idioma que faltan y crear proyectos de traducción.
+Después de preparar el contenido para la traducción, debe completar la estructura lingüística creando las copias de idioma que faltan y crear proyectos de traducción.
 
 Los proyectos de traducción le permiten administrar la traducción del contenido de AEM. Un proyecto de traducción es un tipo de [proyecto](/help/sites-authoring/projects.md) de AEM que contiene recursos que se van a traducir a otros idiomas. Estos recursos son las páginas y activos de las [copias de idioma](/help/sites-administering/tc-prep.md) que se crean a partir del idioma principal.
 
@@ -31,7 +31,7 @@ Los proyectos y trabajos de traducción se crean con los flujos de trabajo de pr
 
 >[!NOTE]
 >
->La opción 3 no está relacionada con el trabajo o proyecto de traducción. Le permite copiar el contenido y los cambios estructurales en el idioma maestro a (sin traducir) copias de idioma. Puede usar esto para mantener a los maestros de idiomas sincronizados, incluso sin traducción.
+>La opción 3 no está relacionada con el trabajo o proyecto de traducción. Le permite copiar contenido y cambios estructurales en el idioma principal a copias de idioma (no traducidas). Puede usar esto para mantener a los maestros de idiomas sincronizados, incluso sin traducción.
 
 ## Realización de traducciones iniciales y actualización de traducciones existentes {#performing-initial-translations-and-updating-existing-translations}
 
@@ -43,10 +43,10 @@ AEM detecta si se está creando un proyecto de traducción para la traducción i
    * Cuando la página traducida se importa a AEM, sobrescribe la página en el lanzamiento.
    * La página traducida sobrescribe la copia de idioma solo cuando se promociona el lanzamiento.
 
-Por ejemplo, la raíz de idioma /content/geometrixx/fr se crea para la traducción al francés del idioma maestro /content/geometrixx/en. No hay más páginas en la copia en francés.
+Por ejemplo, la raíz de idioma /content/geometrixx/fr se crea para la traducción al francés del idioma principal /content/geometrixx/en. No hay más páginas en la copia en francés.
 
-* Se crea un proyecto de traducción para la página /content/geometrixx/en/products y todas las páginas secundarias, dirigiéndose a la copia en francés. Como la copia de idioma no incluye la página /content/geometrixx/fr/products , AEM copia inmediatamente la página /content/geometrixx/en/products y todas las páginas secundarias a la copia en francés. Las copias también se incluyen en el proyecto de traducción.
-* Se crea un proyecto de traducción para la página /content/geometrixx/en y todas las páginas secundarias, con el objetivo de la copia en francés. Como la copia de idioma incluye la página que corresponde a la página /content/geometrixx/en (la raíz del idioma), AEM copia la página /content/geometrixx/en y todas las páginas secundarias y las añade a un lanzamiento. Las copias también se incluyen en el proyecto de traducción.
+* Se crea un proyecto de traducción para la página /content/geometrixx/en/products y todas las páginas secundarias, destinado a la copia en francés. AEM Dado que la copia de idioma no incluye la página /content/geometrixx/fr/products, copia inmediatamente la página /content/geometrixx/en/products y todas las páginas secundarias a la copia en francés. Las copias también se incluyen en el proyecto de traducción.
+* Se crea un proyecto de traducción para la página /content/geometrixx/en y todas las páginas secundarias, destinado a la copia en francés. AEM Como la copia de idioma incluye la página que corresponde con la página /content/geometrixx/en (la raíz del idioma), copia la página /content/geometrixx/en y todas las páginas secundarias y las añade a un lanzamiento. Las copias también se incluyen en el proyecto de traducción.
 
 ## Creación de proyectos de traducción mediante el panel Referencias {#creating-translation-projects-using-the-references-panel}
 
@@ -78,9 +78,9 @@ Después de traducir, puede [revisar la traducción](#reviewing-and-promoting-up
 
 1. Utilice la consola Sites para seleccionar la página que está añadiendo a los proyectos de traducción.
 
-   Por ejemplo, para traducir las páginas en inglés de Sitio de demostración de Geometrixx, seleccione Sitio de demostración de Geometrixx > Inglés.
+   Por ejemplo, para traducir las páginas en inglés de Geometrixx Demo Site, seleccione Geometrixx Demo Site > Inglés.
 
-1. En la barra de herramientas, pulse o haga clic en Referencias.
+1. En la barra de herramientas, toque o haga clic en Referencias.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
@@ -88,7 +88,7 @@ Después de traducir, puede [revisar la traducción](#reviewing-and-promoting-up
 1. Pulse o haga clic en Crear y traducir y configure el trabajo de traducción:
 
    * Utilice la lista desplegable Idiomas para seleccionar la copia de idioma que desea traducir. Seleccione otros idiomas según sea necesario. Los idiomas que aparecen en la lista se corresponden con las [raíces de idioma que ha creado](/help/sites-administering/tc-prep.md#creating-a-language-root).
-   * Para traducir la página seleccionada y todas las páginas secundarias, seleccione Seleccionar todas las subpáginas. Para traducir solo la página que ha seleccionado, desactive la opción.
+   * Para traducir la página seleccionada y todas las secundarias, seleccione Seleccionar todas las páginas secundarias. Para traducir solo la página que ha seleccionado, desactive la opción.
    * En Proyecto, seleccione Crear nuevo proyecto de traducción.
    * Escriba un nombre para el proyecto.
 
@@ -100,26 +100,26 @@ Después de traducir, puede [revisar la traducción](#reviewing-and-promoting-up
 
 1. Utilice la consola Sites para seleccionar la página que está añadiendo a los proyectos de traducción.
 
-   Por ejemplo, para traducir las páginas en inglés de Sitio de demostración de Geometrixx, seleccione Sitio de demostración de Geometrixx > Inglés.
+   Por ejemplo, para traducir las páginas en inglés de Geometrixx Demo Site, seleccione Geometrixx Demo Site > Inglés.
 
-1. En la barra de herramientas, pulse o haga clic en Referencias.
+1. En la barra de herramientas, toque o haga clic en Referencias.
 
-   ![imagen_1-243](assets/chlimage_1-243.png)
+   ![chlimage_1-243](assets/chlimage_1-243.png)
 
 1. Seleccione Copias de idioma y, a continuación, las copias de idioma para las que está traduciendo las páginas de origen.
 1. Pulse o haga clic en Actualizar copias de idioma y, a continuación, configure el trabajo de traducción:
 
-   * Para traducir la página seleccionada y todas las páginas secundarias, seleccione Seleccionar todas las subpáginas. Para traducir solo la página que ha seleccionado, desactive la opción.
+   * Para traducir la página seleccionada y todas las secundarias, seleccione Seleccionar todas las páginas secundarias. Para traducir solo la página que ha seleccionado, desactive la opción.
    * En Proyecto, seleccione Crear nuevo proyecto de traducción.
    * Escriba un nombre para el proyecto.
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. Toque o haga clic en Iniciar.
+1. Toque o haga clic en Inicio.
 
 ## Adición de páginas a un proyecto de traducción {#adding-pages-to-a-translation-project}
 
-Después de crear un proyecto de traducción, puede usar el panel Recursos para agregar páginas al proyecto. Agregarlas resulta útil cuando se incluyen páginas de distintas ramas en el mismo proyecto.
+Después de crear un proyecto de traducción, puede utilizar el panel Recursos para agregar páginas al proyecto. Agregarlas resulta útil cuando se incluyen páginas de distintas ramas en el mismo proyecto.
 
 Al añadir páginas a un proyecto de traducción, estas se incluyen en un nuevo trabajo de traducción. También puede [agregar páginas a un trabajo existente](#adding-pages-assets-to-a-translation-job).
 
@@ -127,9 +127,9 @@ Al igual que al crear un nuevo proyecto, al anexar páginas, se añaden copias d
 
 1. Utilice la consola Sites para seleccionar la página que está agregando al proyecto de traducción.
 
-   Por ejemplo, para traducir las páginas en inglés de Sitio de demostración de Geometrixx, seleccione Sitio de demostración de Geometrixx > Inglés.
+   Por ejemplo, para traducir las páginas en inglés de Geometrixx Demo Site, seleccione Geometrixx Demo Site > Inglés.
 
-1. En la barra de herramientas, pulse o haga clic en Referencias.
+1. En la barra de herramientas, toque o haga clic en Referencias.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -139,7 +139,7 @@ Al igual que al crear un nuevo proyecto, al anexar páginas, se añaden copias d
 
 1. Pulse o haga clic en Actualizar copias de idioma y, a continuación, configure las propiedades:
 
-   * Para traducir la página seleccionada y todas las páginas secundarias, seleccione Seleccionar todas las subpáginas. Para traducir solo la página que ha seleccionado, desactive la opción.
+   * Para traducir la página seleccionada y todas las secundarias, seleccione Seleccionar todas las páginas secundarias. Para traducir solo la página que ha seleccionado, desactive la opción.
    * En Proyecto, seleccione Agregar a proyecto de traducción existente.
    * Seleccione el proyecto.
 
@@ -149,21 +149,21 @@ Al igual que al crear un nuevo proyecto, al anexar páginas, se añaden copias d
 
    ![chlimage_1-36](assets/chlimage_1-36.jpeg)
 
-1. Toque o haga clic en Iniciar.
+1. Toque o haga clic en Inicio.
 
-## Adición de páginas o recursos a un trabajo de traducción {#adding-pages-assets-to-a-translation-job}
+## Adición de páginas o activos a un trabajo de traducción {#adding-pages-assets-to-a-translation-job}
 
-Puede agregar páginas, recursos, etiquetas o diccionarios i18n al trabajo de traducción de su proyecto de traducción. Para agregar páginas o activos:
+Puede añadir páginas, recursos, etiquetas o diccionarios i18n al trabajo de traducción de su proyecto de traducción. Para agregar páginas o activos:
 
 1. En la parte inferior del mosaico Trabajo de traducción del proyecto de traducción, toque o haga clic en los puntos suspensivos.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Toque o haga clic en Agregar y en Páginas/Recursos.
+1. Toque o haga clic en Agregar y Páginas/recursos.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-1. Seleccione el elemento superior de la rama que desea agregar y, a continuación, toque o haga clic en el icono de marca de verificación. Puede realizar varias selecciones.
+1. Seleccione el elemento superior de la rama que desee agregar y, a continuación, toque o haga clic en el icono de marca de verificación. Puede hacer una selección múltiple.
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -175,17 +175,17 @@ Sus páginas o recursos se añaden a su trabajo de traducción.
 
 ## Adición de diccionarios i18n a un trabajo de traducción {#adding-i-n-dictionaries-to-a-translation-job}
 
-Puede agregar páginas, recursos, etiquetas o diccionarios i18n al trabajo de traducción de su proyecto de traducción. Para añadir un diccionario i18n:
+Puede añadir páginas, recursos, etiquetas o diccionarios i18n al trabajo de traducción de su proyecto de traducción. Para añadir un diccionario i18n:
 
 1. En la parte inferior del mosaico Trabajo de traducción del proyecto de traducción, toque o haga clic en los puntos suspensivos.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Toque o haga clic en Agregar y en el diccionario I18N.
+1. Toque o haga clic en Agregar y Diccionario I18N.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Seleccione el diccionario que desea agregar y, a continuación, toque o haga clic en el botón Agregar .
+1. Seleccione el diccionario que desea agregar y, a continuación, toque o haga clic en el botón Agregar.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -195,11 +195,11 @@ El diccionario está ahora en su trabajo de traducción.
 
 >[!NOTE]
 >
->Para obtener más información sobre los diccionarios i18n, lea [Uso del traductor para administrar diccionarios](/help/sites-developing/i18n-translator.md).
+>Para obtener más información sobre los diccionarios i18n, lea [Usar Translator para administrar diccionarios](/help/sites-developing/i18n-translator.md).
 
 ## Adición de etiquetas a un trabajo de traducción {#adding-tags-to-a-translation-job}
 
-Puede agregar páginas, recursos, etiquetas o diccionarios i18n al trabajo de traducción de su proyecto de traducción. Para agregar etiquetas:
+Puede añadir páginas, recursos, etiquetas o diccionarios i18n al trabajo de traducción de su proyecto de traducción. Para agregar etiquetas:
 
 1. En la parte inferior del mosaico Trabajo de traducción del proyecto de traducción, toque o haga clic en los puntos suspensivos.
 
@@ -209,32 +209,32 @@ Puede agregar páginas, recursos, etiquetas o diccionarios i18n al trabajo de tr
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Seleccione las etiquetas que desee agregar y, a continuación, toque o haga clic en el icono de marca de verificación. Puede realizar varias selecciones.
+1. Seleccione las etiquetas que desee agregar y, a continuación, toque o haga clic en el icono de marca de verificación. Puede hacer una selección múltiple.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-Las etiquetas ahora se añaden en el trabajo de traducción.
+Las etiquetas se añadirán ahora al trabajo de traducción.
 
 ![chlimage_1-257](assets/chlimage_1-257.png)
 
 ## Ver detalles del proyecto de traducción {#seeing-translation-project-details}
 
-El mosaico Resumen de traducción contiene las propiedades configuradas para un proyecto de traducción. Además del genérico [información del proyecto](/help/sites-authoring/projects.md#project-info), la pestaña Translation contiene propiedades específicas de la traducción:
+El mosaico Resumen de traducción contiene las propiedades configuradas para un proyecto de traducción. Además del genérico [información del proyecto](/help/sites-authoring/projects.md#project-info), la pestaña Traducción contiene propiedades específicas de la traducción:
 
 * Idioma de origen: el idioma de las páginas que se están traduciendo.
-* Idioma de destino: El idioma en que se traducen las páginas.
-* Método de traducción: Flujo de trabajo de traducción. Se admite la traducción humana o la traducción automática.
+* Idioma de destino: el idioma al que se traducen las páginas.
+* Método de traducción: flujo de trabajo de traducción. Se admite la traducción humana o la traducción automática.
 * Proveedor de traducción: el proveedor de servicios de traducción que realiza la traducción.
 * Categoría de contenido (traducción automática): la categoría de contenido que se utiliza para la traducción.
-* Configuración de nube: La configuración de nube para el conector del servicio de traducción que se utiliza para el proyecto.
+* Configuración de nube: la configuración de nube para el conector del servicio de traducción que se utiliza para el proyecto.
 
-Cuando se crea un proyecto con el panel Recursos de una página, estas propiedades se configuran automáticamente según las propiedades de la página de origen.
+Cuando se crea un proyecto utilizando el panel Recursos de una página, estas propiedades se configuran automáticamente en función de las propiedades de la página de origen.
 
 ![chlimage_1-258](assets/chlimage_1-258.png)
 
 ## Monitorización del estado de un trabajo de traducción {#monitoring-the-status-of-a-translation-job}
 
-El mosaico Trabajo de traducción de un proyecto de traducción proporciona el estado de un trabajo de traducción, así como el número de páginas y recursos del trabajo.
+El mosaico Trabajo de traducción de un proyecto de traducción proporciona el estado de un trabajo de traducción, así como el número de páginas y activos del trabajo.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -243,8 +243,8 @@ En la tabla siguiente se describe cada estado que puede tener un trabajo o eleme
 | Estado | Descripción |
 |---|---|
 | Borrador | El trabajo de traducción no se ha iniciado. Los trabajos de traducción están en estado BORRADOR cuando se crean. |
-| Enviado | Los archivos del trabajo de traducción tienen este estado cuando se han enviado correctamente al servicio de traducción. Este estado puede ocurrir después de que se emita el comando Solicitar ámbito o el comando Inicio. |
-| Previsión solicitada | Para el flujo de trabajo Traducción humana, los archivos del trabajo se han enviado al proveedor de traducción para que los examine. Este estado aparece después de que el comando Ámbito de la solicitud se emita. |
+| Enviado | Los archivos del trabajo de traducción tienen este estado cuando se han enviado correctamente al servicio de traducción. Este estado se puede producir después de que se emita el comando Ámbito de la solicitud o Inicio. |
+| Previsión solicitada | Para el flujo de trabajo de traducción humana, los archivos del trabajo se han enviado al proveedor de traducción para que los examine. Este estado aparece después de que el comando Ámbito de la solicitud se emita. |
 | Previsión finalizada | El proveedor ha creado un ámbito para el trabajo de traducción. |
 | Asignado para traducción | El propietario del proyecto ha aceptado el ámbito. Este estado indica que el proveedor de traducción debe empezar a traducir los archivos del trabajo. |
 | Traducción en progreso | Para un trabajo, la traducción de uno o más archivos del trabajo aún no está completa. Para un elemento del trabajo, el artículo se está traduciendo. |
@@ -259,16 +259,16 @@ Para ver el estado de cada archivo en el trabajo, toque o haga clic en los punto
 
 ## Configuración de la fecha de entrega de los trabajos de traducción {#setting-the-due-date-of-translation-jobs}
 
-Especifique la fecha antes de la cual el proveedor de traducción debe devolver los archivos traducidos. Puede establecer la fecha de vencimiento del proyecto o de un trabajo específico:
+Especifique la fecha antes de la cual el proveedor de traducción debe devolver los archivos traducidos. Puede establecer la fecha límite del proyecto o de un trabajo específico:
 
 * **Proyecto:** Los trabajos de traducción del proyecto heredan la fecha de vencimiento.
-* **Trabajo:** La fecha de vencimiento establecida para el trabajo anula la fecha de vencimiento establecida para el proyecto.
+* **Trabajo:** La fecha de vencimiento que ha establecido para el trabajo anula la fecha de vencimiento establecida para el proyecto.
 
 La configuración de la fecha de entrega funciona correctamente solo cuando el proveedor de traducción que está utilizando admite esta función.
 
-El siguiente procedimiento establece la fecha de vencimiento de un proyecto.
+El siguiente procedimiento establece la fecha límite de un proyecto.
 
-1. Toque o haga clic en los puntos suspensivos en la parte inferior del mosaico Resumen de traducción.
+1. Toque o haga clic en los puntos suspensivos en la parte inferior del mosaico Resumen de la traducción.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
@@ -276,15 +276,15 @@ El siguiente procedimiento establece la fecha de vencimiento de un proyecto.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Toque o haga clic en Finalizado.
+1. Haga clic o pulse Listo.
 
-El siguiente procedimiento establece la fecha de vencimiento de un trabajo de traducción.
+El siguiente procedimiento establece la fecha límite de un trabajo de traducción.
 
 1. En el mosaico Trabajo de traducción, toque o haga clic en el menú de comandos y, a continuación, toque o haga clic en Fecha de vencimiento.
 
    ![chlimage_1-262](assets/chlimage_1-262.png)
 
-1. En el cuadro de diálogo, toque o haga clic en el icono de calendario y, a continuación, seleccione la fecha y la hora de uso como fecha de vencimiento y, a continuación, haga clic en Guardar.
+1. En el cuadro de diálogo, toque o haga clic en el icono de calendario, luego seleccione la fecha y la hora que desea usar como fecha de vencimiento y luego haga clic en Guardar.
 
    ![chlimage_1-263](assets/chlimage_1-263.png)
 
@@ -298,26 +298,26 @@ Para obtener más información sobre los resultados de ámbito, póngase en cont
 >
 >El ámbito es opcional. Puede comenzar un trabajo de traducción sin ámbitos.
 
-Cuando se escala un trabajo de traducción, el estado del trabajo es `Scope Requested`. Cuando el proveedor de traducción devuelve el ámbito, el estado se cambia a `Scope Completed`. Cuando finalice el ámbito, puede utilizar el comando Mostrar ámbito para revisar los resultados de creación de ámbitos.
+Cuando se define un trabajo de traducción, el estado del trabajo es `Scope Requested`. Cuando el proveedor de traducción devuelve el ámbito, el estado se cambia a `Scope Completed`. Cuando finalice el ámbito, puede utilizar el comando Mostrar ámbito para revisar los resultados de creación de ámbitos.
 
 El ámbito funciona correctamente solo cuando el proveedor de traducción que está utilizando admite esta función.
 
-1. En la consola Proyectos , abra el proyecto de traducción.
-1. En el mosaico Trabajo de traducción, pulse o haga clic en el menú de comandos y, a continuación, pulse o haga clic en Solicitar ámbito.
+1. En la consola Proyectos, abra el proyecto de traducción.
+1. En el mosaico Trabajo de traducción, toque o haga clic en el menú de comandos y luego, en Ámbito de la solicitud.
 
    ![chlimage_1-264](assets/chlimage_1-264.png)
 
-1. Cuando el estado del trabajo cambie a SCOPE_COMPLETED, en el mosaico Trabajo de traducción pulse o haga clic en el menú de comandos y, a continuación, pulse o haga clic en Mostrar ámbito.
+1. Cuando el estado del trabajo cambia a SCOPE_COMPLETED, en el mosaico Trabajo de traducción, toque o haga clic en el menú de comandos y, a continuación, toque o haga clic en Mostrar ámbito.
 
 ## Inicio de un trabajo de traducción {#starting-a-translation-job}
 
-Inicie un trabajo de traducción para traducir las páginas de origen al idioma de destino. La traducción se realiza según los valores de propiedad del mosaico Resumen de traducción.
+Inicie un trabajo de traducción para traducir las páginas de origen al idioma de destino. La traducción se realiza según los valores de propiedad del mosaico Resumen de la traducción.
 
 Después de iniciar el trabajo de traducción, el mosaico Trabajo de traducción muestra el estado Traducción en curso.
 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
-1. En la consola Proyectos , abra el proyecto de traducción.
+1. En la consola Proyectos, abra el proyecto de traducción.
 1. En el mosaico Trabajo de traducción, toque o haga clic en el menú de comandos y, a continuación, toque o haga clic en Inicio.
 
    ![chlimage_1-266](assets/chlimage_1-266.png)
@@ -326,13 +326,13 @@ Después de iniciar el trabajo de traducción, el mosaico Trabajo de traducción
 
 ## Cancelación de un trabajo de traducción {#canceling-a-translation-job}
 
-Cancelar un trabajo de traducción para detener el proceso de traducción e impedir que el proveedor de traducción realice más traducciones. Puede cancelar un trabajo cuando el trabajo tenga la variable `Committed For Translation` o `Translation In Progress` estado.
+Cancelar un trabajo de traducción para detener el proceso de traducción e impedir que el proveedor de traducción realice más traducciones. Puede cancelar un trabajo cuando el trabajo tenga `Committed For Translation` o `Translation In Progress` estado.
 
-1. En la consola Proyectos , abra el proyecto de traducción.
+1. En la consola Proyectos, abra el proyecto de traducción.
 1. En el mosaico Trabajo de traducción, toque o haga clic en el menú de comandos y, a continuación, toque o haga clic en Cancelar.
-1. En el cuadro de diálogo Acción que confirma la cancelación de la traducción, pulse o haga clic en Aceptar.
+1. En el cuadro de diálogo Acción que confirma la cancelación de la traducción, toque o haga clic en OK.
 
-## Flujo de trabajo de aceptar/rechazar {#accept-reject-workflow}
+## Aceptar/rechazar flujo de trabajo {#accept-reject-workflow}
 
 Cuando el contenido regresa después de la traducción y se encuentra en el estado Listo para revisión, puede ir al trabajo de traducción y aceptar/rechazar contenido.
 
@@ -342,7 +342,7 @@ Si selecciona Rechazar traducción, tiene la opción de agregar un comentario.
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 
-El rechazo de contenido lo devuelve al proveedor de traducción donde podrá ver el comentario.
+El rechazo de contenido lo devuelve al proveedor de traducción, donde podrá ver el comentario.
 
 ## Revisión y promoción del contenido actualizado {#reviewing-and-promoting-updated-content}
 
@@ -365,12 +365,12 @@ Cuando el contenido se traduce para una copia de idioma existente, revise las tr
 
 ## Comparación de copias de idioma {#comparing-language-copies}
 
-Para comparar copias de idioma con el idioma maestro:
+Para comparar las copias de idioma con el idioma principal:
 
-1. En el **Sitios** , vaya a la copia de idioma que desee comparar.
+1. En el **Sites** , vaya a la copia de idioma que desee comparar.
 1. Abra el **[Referencias](/help/sites-authoring/basic-handling.md#references)** panel.
 1. En el encabezado **Copias**, seleccione **Copias de idioma.**
-1. Seleccione la copia de idioma específica y, a continuación, puede hacer clic en **Comparar con maestro **o **Comparar con anterior **si corresponde.
+1. Seleccione la copia de idioma específica y, a continuación, puede hacer clic en **Comparar con maestro **o **Comparar con anterior **si procede.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
@@ -382,7 +382,7 @@ Para comparar copias de idioma con el idioma maestro:
 
 Complete un trabajo de traducción después de haber revisado los archivos traducidos del proveedor. Para los flujos de trabajo de traducción humana, completar una traducción indica al proveedor que el contrato de traducción se ha cumplido y que debe guardar la traducción en su memoria de traducción.
 
-Una vez completado el trabajo, el trabajo tiene el estado Complete .
+Una vez finalizado el trabajo, el trabajo pasará al estado Completado.
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
@@ -392,8 +392,8 @@ Archive el trabajo de traducción una vez completado para ya no ver los detalles
 
 Rellene la copia de idioma para que albergue contenido de la lengua principal que está traduciendo. Antes de rellenar la copia de idioma, debe tener [creada su raíz del idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
-1. Utilice la consola Sitios para seleccionar la raíz de idioma del idioma maestro que está utilizando como origen. Por ejemplo, para traducir las páginas en inglés del sitio de demostración de Geometrixx, seleccione Contenido > Sitio de demostración de Geometrixx > Inglés.
-1. En la barra de herramientas, pulse o haga clic en Referencias.
+1. Utilice la consola Sitios para seleccionar la raíz de idioma del idioma principal que está utilizando como origen. Por ejemplo, para traducir las páginas en inglés del sitio de demostración de Geometrixx, seleccione Contenido > Sitio de demostración de Geometrixx > Inglés.
+1. En la barra de herramientas, toque o haga clic en Referencias.
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
 
@@ -403,26 +403,26 @@ Rellene la copia de idioma para que albergue contenido de la lengua principal qu
 
 1. Pulse o haga clic en Actualizar copias de idioma para mostrar las herramientas de traducción y configurar las propiedades:
 
-   * Seleccione la opción Select All Sub-pages .
+   * Seleccione la opción Seleccionar todas las páginas secundarias.
    * Para Proyecto, seleccione Crear solo estructura.
 
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
-1. Toque o haga clic en Iniciar.
+1. Toque o haga clic en Inicio.
 
 ## Mover una página de origen o cambiarle el nombre {#move-source}
 
-Si una página de origen ya traducida necesita ser [cambiar nombre o mover](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), al volver a traducir la página después del movimiento, se creará una copia de nuevo idioma basada en el nuevo nombre o ubicación de la página. La copia de idioma anterior basada en el nombre/ubicación anterior seguirá estando allí.
+Si una página de origen ya traducida necesita ser [cambiado de nombre o movido](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), volver a traducir la página después del traslado creará una nueva copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior seguirá ahí.
 
 La práctica recomendada en este escenario es seguir este procedimiento:
 1. Cancele la publicación de las copias de idioma asociadas con la página de origen que desee mover.
-1. Eliminarlos.
-1. Cree nuevas copias de idioma desde la página de origen recién movida.
+1. Elimínelos.
+1. Cree nuevas copias de idioma a partir de la página de origen que acaba de mover.
 1. Publique las copias de idioma recién creadas.
 
 ## Creación de un proyecto de traducción mediante la consola Proyectos {#creating-a-translation-project-using-the-projects-console}
 
-Puede crear manualmente un proyecto de traducción si prefiere usar la consola Proyectos .
+Puede crear manualmente un proyecto de traducción si prefiere utilizar la consola Proyectos.
 
 >[!NOTE]
 >
@@ -432,27 +432,27 @@ Cuando cree manualmente un proyecto de traducción, debe proporcionar valores pa
 
 * **Nombre:** nombre del proyecto.
 * **Idioma de origen:** el idioma del contenido de origen.
-* **Idioma de destino:** El idioma en el que se traduce el contenido.
+* **Idioma de destino:** El idioma al que se traduce el contenido.
 * **Método de traducción:** seleccione Traducción humana para indicar que la traducción se debe llevar a cabo manualmente.
 
-1. En la barra de herramientas de la consola Proyectos , toque o haga clic en Crear .
+1. En la barra de herramientas de la consola Proyectos, toque o haga clic en Crear.
 1. Seleccione la plantilla Proyecto de traducción y, a continuación, haga clic o pulse en Siguiente.
-1. Introduzca valores para las propiedades básicas.
+1. Introduzca valores para las propiedades Básicas.
 1. Pulse o haga clic en Avanzadas y proporcione valores para las propiedades relacionadas con la traducción.
-1. Haga clic o pulse Crear. En el cuadro de confirmación, toque o haga clic en Listo para volver a la consola Proyectos o haga clic o pulse Abrir proyecto para abrir y comenzar a administrar el proyecto.
+1. Haga clic o pulse Crear. En el cuadro de confirmación, pulse o haga clic en Listo para volver a la consola Proyectos, o pulse o haga clic en Abrir proyecto para abrir y comenzar a administrar el proyecto.
 
 ## Exportación de un trabajo de traducción {#exporting-a-translation-job}
 
 Puede descargar el contenido de un trabajo de traducción, por ejemplo, para enviarlo a un proveedor de traducción que no esté integrado con AEM a través de un conector o para revisar el contenido.
 
-1. En el menú desplegable del mosaico Trabajo de traducción , pulse o haga clic en Exportar.
-1. En el cuadro de diálogo Exportar, pulse o haga clic en Descargar archivo exportado y, si es necesario, utilice el cuadro de diálogo del explorador web para guardar el archivo.
-1. En el cuadro de diálogo Exportar, pulse o haga clic en Cerrar.
+1. En el menú desplegable del mosaico Trabajo de traducción, toque o haga clic en Exportar.
+1. En el cuadro de diálogo Exportar, toque o haga clic en Descargar archivo exportado y, si es necesario, utilice el cuadro de diálogo del explorador web para guardar el archivo.
+1. En el cuadro de diálogo Exportar, toque o haga clic en Cerrar.
 
 ## Importación de un trabajo de traducción {#importing-a-translation-job}
 
 Puede importar contenido traducido a AEM, por ejemplo, cuando el proveedor de traducción se lo envía porque no están integrados con AEM a través de un conector.
 
-1. En el menú desplegable del mosaico Trabajo de traducción , pulse o haga clic en Importar.
+1. En el menú desplegable del mosaico Trabajo de traducción, toque o haga clic en Importar.
 1. Utilice el cuadro de diálogo del explorador web para seleccionar el archivo que desea importar.
-1. En el cuadro de diálogo Importar, pulse o haga clic en Cerrar.
+1. En el cuadro de diálogo Importar, toque o haga clic en Cerrar.

@@ -1,6 +1,6 @@
 ---
-title: 'Metadatos: Propiedades del fragmento'
-description: Consulte cómo puede ver y editar las propiedades de los metadatos de los fragmentos de contenido en AEM para ajustar el contenido sin encabezado.
+title: 'Metadatos: propiedades del fragmento'
+description: AEM Consulte cómo puede ver y editar las propiedades de los metadatos de los fragmentos de contenido en la documentación de para ajustar el contenido sin encabezado en la documentación de la documentación de.
 feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
@@ -11,9 +11,9 @@ ht-degree: 59%
 
 ---
 
-# Metadatos: Propiedades del fragmento {#metadata-fragment-properties}
+# Metadatos: propiedades del fragmento {#metadata-fragment-properties}
 
-Consulte cómo puede ver y editar las propiedades de los metadatos de los fragmentos de contenido en AEM para ajustar el contenido sin encabezado.
+AEM Consulte cómo puede ver y editar las propiedades de los metadatos de los fragmentos de contenido en la documentación de para ajustar el contenido sin encabezado en la documentación de la documentación de.
 
 ## Edición de propiedades/metadatos {#editing-properties-meta-data}
 
@@ -37,7 +37,7 @@ Puede ver y editar los metadatos (propiedades) de los fragmentos de contenido:
 Por ejemplo, puede etiquetar fragmentos relevantes como &quot;lanzamiento de Navidad&quot; para permitir solo explorarlos como un subconjunto o copiarlos para usarlos con otro lanzamiento futuro en una nueva carpeta.
       >[!NOTE]
       >
-      >**Etiquetas** también se puede agregar cuando [creación del contenido de la variación](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) y cuándo [creación de variaciones](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+      >**Etiquetas** también se puede agregar cuando [creación del contenido de Variación](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) y cuándo [creación de variaciones](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
 
    * **Creado** (solo visualización)
    Por ejemplo:

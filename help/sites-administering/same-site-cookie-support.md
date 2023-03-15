@@ -1,6 +1,6 @@
 ---
-title: Compatibilidad con cookies del mismo sitio para AEM 6.5
-description: Compatibilidad con cookies del mismo sitio para AEM 6.5
+title: AEM Compatibilidad con cookies de SameSite para la versión 6.5 de
+description: AEM Compatibilidad con cookies de SameSite para la versión 6.5 de
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
 source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
@@ -10,13 +10,13 @@ ht-degree: 74%
 
 ---
 
-# Compatibilidad con cookies del mismo sitio para AEM 6.5 {#same-site-cookie-support-for-aem-65}
+# AEM Compatibilidad con cookies de SameSite para la versión 6.5 de {#same-site-cookie-support-for-aem-65}
 
 Desde la versión 80, Chrome y posterior Safari, introdujeron un nuevo modelo para la seguridad de las cookies. Este modo está diseñado para introducir controles de seguridad en torno a la disponibilidad de cookies en sitios de terceros, a través de una configuración denominada `SameSite`. Para obtener información más detallada, consulte este [artículo](https://web.dev/samesite-cookies-explained/).
 
 El valor predeterminado de esta configuración (`SameSite=Lax`) puede causar que la autenticación entre instancias o servicios de AEM no funcione. Esto se debe a que es posible que los dominios o las estructuras URL de estos servicios no entren dentro de las restricciones de esta directiva de cookies.
 
-Para evitarlo, debe configurar la variable `SameSite` atributo de cookie a `None` para el token de inicio de sesión.
+Para evitar esto, debe configurar la variable `SameSite` atributo de cookie a `None` para el token de inicio de sesión.
 
 >[!CAUTION]
 >

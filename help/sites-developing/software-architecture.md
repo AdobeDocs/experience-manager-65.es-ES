@@ -1,7 +1,7 @@
 ---
 title: Arquitectura de software
 seo-title: Software Architecture
-description: Prácticas recomendadas para diseñar el software
+description: Prácticas recomendadas para crear el software
 seo-description: Best practices for architecting your software
 uuid: a557f6ca-c3f1-486e-a45e-6e1f986fab41
 contentOwner: User
@@ -21,46 +21,46 @@ ht-degree: 0%
 
 ## Diseño para actualizaciones {#design-for-upgrades}
 
-Al ampliar los comportamientos de OOTB, es importante tener en cuenta las actualizaciones. Siempre aplique personalizaciones en el directorio /apps y superponga los nodos correspondientes en el directorio /libs o utilice sling:resourceSuperType para extender el comportamiento predeterminado. Aunque pueden ser necesarias algunas modificaciones para admitir una nueva versión de AEM, la nueva versión no debe sobrescribir las personalizaciones si se sigue esta práctica.
+Al ampliar los comportamientos de OOTB, es importante tener en cuenta las actualizaciones. Aplique siempre las personalizaciones en el directorio /apps y superponga los nodos correspondientes en el directorio /libs o utilice sling:resourceSuperType para ampliar el comportamiento predeterminado. AEM Aunque es posible que se necesiten algunas modificaciones para admitir una nueva versión de, la nueva versión no debe sobrescribir las personalizaciones si se sigue esta práctica.
 
-### Reutilizar plantillas y componentes cuando sea posible {#reuse-template-and-components-when-possible}
+### Reutilizar plantillas y componentes siempre que sea posible {#reuse-template-and-components-when-possible}
 
-Esto permitirá que el sitio mantenga una apariencia más coherente y simplifique el mantenimiento del código. Cuando se necesite una nueva plantilla, asegúrese de extenderse desde una plantilla base compartida para que los requisitos globales, como la inclusión clientlib, se puedan codificar en un solo lugar. Cuando se necesita un componente nuevo, busque oportunidades para ampliar desde un componente existente.
+Esto permitirá que el sitio mantenga una apariencia más coherente y simplifique el mantenimiento del código. Cuando se necesite una plantilla nueva, asegúrese de ampliarla desde una plantilla base compartida para que los requisitos globales, como la inclusión clientlib, se puedan codificar en un solo lugar. Cuando se necesite un nuevo componente, busque oportunidades para ampliarse desde un componente existente.
 
-### Diseño de diseños de plantilla {#design-template-designs}
+### Diseñar diseños de plantilla {#design-template-designs}
 
-Al definir qué componentes se pueden incluir en cada parsys de la página, se puede controlar la coherencia de la apariencia del sitio. Al restringir el acceso al diseño en las páginas, se puede permitir que los &quot;superautores&quot; modifiquen los componentes permitidos por página sin intervención del desarrollador, mientras que los demás autores se aseguran de que siguen los estándares corporativos.
+Al definir qué componentes se pueden incluir en cada parsys de la página, se puede controlar la coherencia de la apariencia del sitio. Al restringir el acceso al diseño en las páginas, se puede permitir a los &quot;superautores&quot; modificar los componentes permitidos por página sin la intervención del desarrollador, siempre que los demás autores sigan los estándares corporativos.
 
-### Desarrollar una arquitectura SOLID {#develop-a-solid-architecture}
+### Desarrollar una arquitectura sólida {#develop-a-solid-architecture}
 
-SOLID es un acrónimo que describe cinco principios arquitectónicos que deben ser respetados:
+SOLID es un acrónimo que describe cinco principios arquitectónicos a los que hay que adherirse:
 
-* **S** Principio de responsabilidad única: cada módulo, clase, método, etc., solo debe tener una responsabilidad.
-* **O** Principio abierto/cerrado: los módulos deben estar abiertos para su extensión y cerrados para su modificación.
-* **L** Principio de sustitución de iskov: los tipos deben reemplazarse por sus subtipos.
-* **I** Principio de segmentación de la interfaz : ningún cliente debe estar obligado a depender de métodos que no utilice.
-* **D** Principio de inversión de dependencia: los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambos deberían depender de las abstracciones. Las abstracciones no deben depender de los detalles. Los detalles deben depender de las abstracciones.
+* **S** Principio de responsabilidad único: cada módulo, clase, método, etc., solo debe tener una responsabilidad.
+* **O** Principio abierto/Cerrado: los módulos deben estar abiertos para su extensión y cerrados para su modificación.
+* **L** Principio de sustitución de iskov: los tipos deben ser reemplazables por sus subtipos.
+* **I** Principio de segregación de interfaz: no se debe obligar a ningún cliente a depender de métodos que no utiliza.
+* **D** Principio de inversión de dependencia: los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambas deberían depender de abstracciones. Las abstracciones no deben depender de los detalles. Los detalles deben depender de las abstracciones.
 
-La lucha por el cumplimiento de estos cinco principios debería dar lugar a un sistema que tenga una estricta separación de preocupaciones.
+La lucha por el cumplimiento de estos cinco principios debería dar como resultado un sistema que tenga una estricta separación de intereses.
 
 >[!TIP]
 >
->SOLID es un concepto comúnmente utilizado en la programación orientada a objetos y cada elemento es ampliamente discutido en la bibliografía del sector.
+>SOLID es un concepto comúnmente utilizado en la programación orientada a objetos y cada elemento es ampliamente discutido en la literatura de la industria.
 >
->Este es solo un breve resumen presentado para la sensibilización y se le recomienda familiarizarse con estos conceptos en mayor profundidad.
+>Este es solo un breve resumen presentado para la concienciación y se le anima a que se familiarice con estos conceptos en más profundidad.
 
 ### Siga el principio de solidez {#follow-the-robustness-principle}
 
-El principio de la solidez dice que deberíamos ser conservadores en lo que enviamos, pero liberales en lo que aceptamos. En otras palabras, al enviar mensajes a un tercero, debemos cumplir todas las especificaciones, pero al recibir mensajes de un tercero, debemos aceptar mensajes no conformes siempre y cuando el significado del mensaje sea claro.
+El Principio de Solidez afirma que debemos ser conservadores en lo que enviamos, pero ser liberales en lo que aceptamos. En otras palabras, cuando enviamos mensajes a un tercero, debemos cumplir completamente con las especificaciones, pero cuando recibimos mensajes de un tercero, debemos aceptar mensajes no conformes siempre y cuando el significado del mensaje sea claro.
 
-### Implementación de picos en sus propios módulos {#implement-spikes-in-their-own-modules}
+### Implementar picos en sus propios módulos {#implement-spikes-in-their-own-modules}
 
-Los picos y el código de prueba son una parte integral de cualquier implementación de software de Agile, pero queremos asegurarnos de que no entren en nuestra base de código de producción sin el nivel apropiado de supervisión. Como resultado, se recomienda crear picos en su propio módulo.
+Los picos y el código de prueba son parte integral de cualquier implementación de software de Agile, pero queremos asegurarnos de que no entren en nuestra base de código de producción sin el nivel adecuado de supervisión. Como resultado, se recomienda crear picos en su propio módulo.
 
-### Implementar secuencias de comandos de migración de datos en su propio módulo {#implement-data-migration-scripts-in-their-own-module}
+### Implementar scripts de migración de datos en su propio módulo {#implement-data-migration-scripts-in-their-own-module}
 
-Los scripts de migración de datos, mientras que el código de producción, generalmente se ejecutan una sola vez al inicio inicial de un sitio. Por lo tanto, tan pronto como el sitio está activo, se convierte en código muerto. Para garantizar que no generemos código de implementación que dependa de los scripts de migración, estos deben implementarse en su propio módulo. Esto también nos permite eliminar y retirar este código inmediatamente después del lanzamiento, eliminando el código muerto del sistema.
+Los scripts de migración de datos, mientras que el código de producción, suelen ejecutarse solo una vez al inicio del sitio. Por lo tanto, tan pronto como el sitio está activo, esto se convierte en código muerto. Para garantizar que no se genere código de implementación que dependa de los scripts de migración, deben implementarse en su propio módulo. Esto también nos permite eliminar y retirar este código inmediatamente después del lanzamiento, eliminando el código muerto del sistema.
 
-### Siga las convenciones publicadas de Maven en los archivos POM {#follow-published-maven-conventions-in-pom-files}
+### Seguir convenciones de Maven publicadas en archivos POM {#follow-published-maven-conventions-in-pom-files}
 
-Apache ha publicado convenciones de estilo en [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). Es mejor seguir estas convenciones, ya que facilitará que los nuevos recursos lleguen rápidamente.
+Apache ha publicado convenciones de estilo en [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). Es mejor seguir estas convenciones, ya que hará que sea más fácil que los nuevos recursos se pongan al día rápidamente.

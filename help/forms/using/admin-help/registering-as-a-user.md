@@ -1,7 +1,7 @@
 ---
-title: Registro como usuario
+title: Registrarse como usuario
 seo-title: Registering as a User
-description: Aprenda a utilizar los documentos protegidos por políticas que reciba de un usuario de seguridad de documentos, incluso si es externo a la organización del usuario.
+description: Descubra cómo puede utilizar los documentos protegidos por directivas que recibe de un usuario de Document Security, incluso si es externo a la organización del usuario.
 seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,59 +13,59 @@ exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '700'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
-# Registro como usuario {#registering-as-a-user}
+# Registrarse como usuario {#registering-as-a-user}
 
-Puede utilizar documentos protegidos por políticas que reciba de un usuario de seguridad de documentos, incluso si es externo a la organización del usuario. Para utilizar un documento protegido por políticas, debe registrarse con document security. Si anteriormente no se le invitó a registrarse, la seguridad del documento inicia el proceso de registro cuando se producen estos eventos:
+Puede utilizar documentos protegidos por directivas que reciba de un usuario de Document Security, incluso si es externo a la organización del usuario. Para utilizar un documento protegido por una directiva, debe registrarse en Document Security. Si no se le ha invitado anteriormente a registrarse, Document Security inicia el proceso de registro cuando se producen estos eventos:
 
-* Un usuario de seguridad de documento que desea enviarle un documento protegido por políticas lo agrega a una directiva.
-* Un administrador de seguridad de documentos crea una cuenta por usted.
+* Un usuario de Document Security que desea enviarle un documento protegido por una directiva le agrega a una directiva.
+* Un administrador de Document Security crea una cuenta para usted.
 
-   Después de registrar y activar su cuenta, puede utilizar documentos protegidos por políticas que esté autorizado a utilizar mediante una directiva. Si el administrador de seguridad de documentos habilita estas funciones para los usuarios invitados, es posible que tenga permiso para realizar estas tareas:
+   Después de registrarse y activar la cuenta, puede utilizar documentos protegidos por directivas que esté autorizado a utilizar mediante una directiva. Si el administrador de Document Security habilita estas funciones para usuarios invitados, es posible que tenga permiso para realizar estas tareas:
 
 * Documentos de Protect mediante directivas de seguridad de documentos.
-* Cree sus propias políticas de usuario que puede aplicar a sus documentos.
-* Invite a otros usuarios externos a utilizar un documento protegido por políticas agregándolos a la directiva.
+* Cree sus propias directivas de usuario que pueda aplicar a sus documentos.
+* Invitar a otros usuarios externos a utilizar un documento protegido por una directiva agregándolos a la directiva.
 
-   Además, al registrarse, no es necesario volver a registrarse para utilizar otros documentos protegidos por políticas. Su cuenta permanece activa hasta que un administrador de directivas la deshabilite o elimine.
+   Además, cuando se registra, no es necesario registrarse de nuevo para utilizar otros documentos protegidos por políticas. Su cuenta permanece activa hasta que un administrador de directivas la deshabilite o elimine.
 
 >[!NOTE]
 >
->Si recibe un documento protegido por políticas pero no recibe una invitación por correo electrónico de registro, póngase en contacto con la persona que le envió el documento para obtener más información.
+>Si recibe un documento protegido por una directiva pero no recibe una invitación por correo electrónico de registro, póngase en contacto con la persona que le envió el documento para obtener más información.
 
 ## Registrarse como usuario invitado {#register-as-an-invited-user}
 
-Si es un usuario invitado y recibe un mensaje de registro por correo electrónico de document security, puede registrarse utilizando la URL del mensaje para abrir la página de registro en línea. Después de registrarse, recibirá un segundo aviso sobre la activación de su cuenta.
+Si es un usuario invitado y recibe un mensaje de registro por correo electrónico de Document Security, puede registrarse utilizando la URL del mensaje para abrir la página de registro en línea. Después de registrarse, recibirá un segundo aviso sobre la activación de su cuenta.
 
-1. Abra el correo electrónico de registro de seguridad del documento. La dirección URL que contiene el mensaje es un vínculo a la página Registro de usuarios externos en seguridad de documentos.
-1. Haga clic en la dirección URL o cópiela y péguela en el explorador. Se muestra la página Registro de usuarios externos .
+1. Abra el correo electrónico de registro de Document Security. La dirección URL que contiene el mensaje es un vínculo a la página de registro de usuarios externos en Document Security.
+1. Haga clic en la dirección URL o cópiela y péguela en el explorador. Se muestra la página Registro de usuarios externos.
 1. Escriba su nombre, número de teléfono, dirección, organización y contraseña en los cuadros correspondientes y, a continuación, vuelva a escribir la contraseña en el cuadro Confirmar contraseña. La contraseña puede ser cualquier combinación de ocho caracteres.
-1. Haga clic en Guardar. Aparece un mensaje de agradecimiento que le informa de que debe comprobar el correo electrónico para ver si hay un mensaje de correo electrónico de activación. Ahora debe activar su cuenta para finalizar el proceso de registro.
+1. Haga clic en Guardar. Aparece un mensaje de agradecimiento que le informa de que debe buscar un mensaje de correo electrónico de activación en su correo electrónico. Ahora debe activar su cuenta para finalizar el proceso de registro.
 
 ## Activar la cuenta de usuario invitada {#activate-your-invited-user-account}
 
-Después de registrarse, document security le envía un correo electrónico de activación. Debe activar la cuenta utilizando la dirección URL del mensaje. A continuación, puede iniciar sesión en document security para utilizar documentos protegidos por políticas a los que tenga acceso. Según las funciones que el administrador active para los usuarios externos, puede tener permiso para crear directivas, aplicar directivas a documentos y agregar otros usuarios externos a sus directivas.
+Después de registrarse, Document Security le enviará un correo electrónico de activación. Debe activar la cuenta utilizando la dirección URL del mensaje. A continuación, puede iniciar sesión en Document Security para utilizar documentos protegidos por directivas a los que tenga acceso. Según las funciones que el administrador habilite para los usuarios externos, puede tener permiso para crear directivas, aplicar directivas a documentos y agregar otros usuarios externos a las directivas.
 
-Su cuenta permanece activa hasta que el administrador la desactive o elimine.
+Su cuenta permanece activa hasta que el administrador la desactiva o elimina.
 
-1. Abra el correo electrónico de confirmación de registro de seguridad del documento.
-1. Haga clic en la dirección URL que aparece en el mensaje. Se muestra la página de activación de seguridad del documento.
-1. Haga clic en la palabra Aquí para ir a la página de inicio de sesión.
-1. En el cuadro Nombre de usuario, escriba la dirección de correo electrónico en la que se registró con la seguridad del documento. Esta dirección de correo electrónico es el nombre de usuario predeterminado de seguridad del documento.
-1. En el cuadro Contraseña, escriba la contraseña que creó cuando se registró y, a continuación, haga clic en Iniciar sesión.
+1. Abra el correo electrónico de confirmación de registro de Document Security.
+1. Haga clic en la dirección URL que aparece en el mensaje. Se muestra la página de activación de Document Security.
+1. Haga clic en la palabra Here para ir a la página de inicio de sesión.
+1. En el cuadro Nombre de usuario, escriba la dirección de correo electrónico en la que se registró con Document Security. Esta dirección de correo electrónico es el nombre de usuario predeterminado de Document Security.
+1. En el cuadro Contraseña, escriba la contraseña que creó al registrarse y, a continuación, haga clic en Iniciar sesión.
 
-## Restaurar la contraseña {#reset-your-password}
+## Restablecer la contraseña {#reset-your-password}
 
-Si olvida su contraseña, el administrador de directivas puede restablecerla por usted. El restablecimiento de una contraseña genera un correo electrónico que le invita a iniciar sesión utilizando una contraseña temporal. A continuación, puede crear una nueva contraseña.
+Si olvida su contraseña, el administrador de políticas puede restablecerla por usted. El restablecimiento de una contraseña genera un correo electrónico que le invita a iniciar sesión con una contraseña temporal. A continuación, puede crear una nueva contraseña.
 
-Para obtener información sobre cómo ponerse en contacto con un administrador de seguridad de documentos para obtener una nueva contraseña, consulte el aviso de activación por correo electrónico u otros avisos de la organización que le invitó a registrarse.
+Para obtener información sobre cómo ponerse en contacto con un administrador de Document Security para obtener una nueva contraseña, consulte el aviso de activación por correo electrónico u otros avisos de la organización que le invitó a registrarse.
 
-1. Notificar al administrador de directivas que necesita una contraseña nueva.
-1. Cuando reciba el correo electrónico de la contraseña de seguridad del documento, ábrala y obtenga la nueva contraseña temporal.
-1. Inicie sesión en la seguridad del documento utilizando la nueva contraseña temporal.
-1. Haga clic en Opciones en la esquina superior derecha de la página. Se muestra la página Usuarios externos .
-1. Seleccione Cambiar contraseña y escriba la contraseña temporal en el cuadro Contraseña antigua.
-1. En el cuadro Nueva contraseña, escriba una nueva contraseña y vuelva a escribirla en el cuadro Confirmar contraseña.
+1. Notificar al administrador de directivas que necesita una nueva contraseña.
+1. Cuando reciba el correo electrónico sobre la contraseña de Document Security, ábrala y obtenga la nueva contraseña temporal.
+1. Inicie sesión en Document Security con la nueva contraseña temporal.
+1. Haga clic en Opciones en la esquina superior derecha de la página. Se muestra la página Usuarios externos.
+1. Seleccione Cambiar contraseña y escriba la contraseña temporal en el cuadro Contraseña anterior.
+1. En el cuadro Nueva contraseña, escriba una nueva contraseña y, a continuación, vuelva a escribirla en el cuadro Confirmar contraseña.

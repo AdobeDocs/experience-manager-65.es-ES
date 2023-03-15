@@ -85,7 +85,7 @@ Debe completar los pasos de configuración para que las integraciones de AEM Mob
    1. **(Obligatorio)** Introduzca los campos obligatorios:
 
       1. ID del cliente.
-      1. Secreto del cliente.
+      1. Secreto de cliente.
    1. **(Opcional)** Edite los valores existentes.
 
 

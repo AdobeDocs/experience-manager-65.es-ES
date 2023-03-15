@@ -20,12 +20,12 @@ ht-degree: 44%
 
 # Consolas de herramientas{#tools-consoles}
 
-Las consolas de **herramientas** permiten acceder a toda una serie de herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido. Actualmente hay dos sabores del **Herramientas** consola en función de la IU que utilice:
+Las consolas de **herramientas** permiten acceder a toda una serie de herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido. Actualmente hay dos sabores de la **Herramientas** La consola de depende de la interfaz de usuario que utilice:
 
-* [Herramientas: IU táctil](#tools-touch-optimized-ui)
+* [Herramientas: IU táctil optimizada](#tools-touch-optimized-ui)
 * [Herramientas: IU clásica](#tools-classic-ui)
 
-## Herramientas: IU táctil {#tools-touch-optimized-ui}
+## Herramientas: IU táctil optimizada {#tools-touch-optimized-ui}
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
 
 >[!NOTE]
 >
->Dado que las tarjetas de la interfaz de usuario proporcionan detalles sobre el propósito de cada opción, esta tabla simplemente proporciona una referencia rápida sobre la ubicación de las funciones en el árbol.
+>Dado que las tarjetas de la IU proporcionan detalles sobre el propósito de cada opción, esta tabla simplemente proporciona una referencia rápida sobre la ubicación de las funciones en el árbol.
 
 <table>
  <tbody>
@@ -47,7 +47,7 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE Lite</td>
+   <td>CRXDE LITE</td>
   </tr>
   <tr>
    <td> </td>
@@ -377,8 +377,8 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
    <td>Punto centralizado para administrar varios sitios.</td>
   </tr>
   <tr>
-   <td>Configuraciones de Client Context<br /> </td>
-   <td>Client Context representa una colección de datos de usuario ensamblada dinámicamente. Las configuraciones predeterminadas y de marketing cloud se incluyen aquí.<br /> </td>
+   <td>Configuraciones de ClientContext<br /> </td>
+   <td>Client Context representa una colección ensamblada dinámicamente de datos de usuario. Las configuraciones predeterminadas y de Experience Cloud se mantienen aquí.<br /> </td>
   </tr>
   <tr>
    <td>Configuración de servicios de nube<br /> </td>
@@ -386,11 +386,11 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td>Configuración de nube<br /> </td>
-   <td>Ajustes del administrador de configuración.</td>
+   <td>Configuración del administrador de configuración.</td>
   </tr>
   <tr>
    <td>Comercio</td>
-   <td>Proporciona acceso a importadores y a varios datos de productos.</td>
+   <td>Proporciona acceso a los importadores y a diversos datos de productos.</td>
   </tr>
   <tr>
    <td>DAM  </td>
@@ -398,7 +398,7 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td>Tableros</td>
-   <td>Permite crear tableros de informes; proporcionan una forma personalizable de definir páginas que muestran datos consolidados.</td>
+   <td>Permite crear paneles de creación de informes, que proporcionan una forma personalizable de definir páginas que muestran datos consolidados.</td>
   </tr>
   <tr>
    <td>Documentación personalizada</td>
@@ -410,15 +410,15 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td>Envíos de formularios</td>
-   <td>Contiene la lista de envíos de formularios recibidos.</td>
+   <td>Contiene la lista de los envíos de formularios recibidos.</td>
   </tr>
   <tr>
-   <td>Importadores </td>
+   <td>importadores </td>
    <td>Proporciona acceso a varias opciones.</td>
   </tr>
   <tr>
    <td>Comprobador de vínculos externos</td>
-   <td>Comprobador de enlaces externos.</td>
+   <td>Comprobador de vínculos externo.</td>
   </tr>
   <tr>
    <td>Móvil</td>
@@ -426,15 +426,15 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td>Paquetes</td>
-   <td>Un vínculo alternativo al Administrador de paquetes que muestra los paquetes que se han cargado para AEM WCM. Similar a la información mostrada en el Administrador de paquetes de CRX.</td>
+   <td>AEM Un vínculo alternativo al Administrador de paquetes que muestra los paquetes que se han cargado para el WCM de la. Similar a la información que se muestra en el Administrador de paquetes de CRX.</td>
   </tr>
   <tr>
-   <td>Replicación: Agentes de replicación</td>
-   <td>Se utiliza para replicar datos del autor para publicarlos al publicar páginas, o con replicación inversa para devolver comentarios del usuario del entorno de publicación al autor.</td>
+   <td>Replicación: agentes de replicación</td>
+   <td>Se utiliza para replicar datos de autor a publicación al publicar páginas, o con replicación inversa para devolver comentarios del usuario del entorno de publicación a autor.</td>
   </tr>
   <tr>
    <td>Informes</td>
-   <td>AEM ofrece una amplia gama de informes personalizados, le permite crear informes personalizados y/o desarrollar sus propios informes.</td>
+   <td>AEM proporciona una serie de informes personalizados, le permite crear informes personalizados o desarrollar los suyos propios.</td>
   </tr>
   <tr>
    <td>Andamiaje de página predeterminada</td>
@@ -442,23 +442,23 @@ Las consolas de **herramientas** permiten acceder a toda una serie de herramient
   </tr>
   <tr>
    <td>Seguridad: configuración de autoservicio </td>
-   <td>Permite configurar los correos electrónicos que los usuarios reciben automáticamente cuando crean una cuenta o restablecen una contraseña y confirmar una contraseña que se haya restablecido.</td>
+   <td>Permite configurar los mensajes de correo electrónico que los usuarios reciben automáticamente cuando crean una cuenta o restablecen una contraseña y confirmar una contraseña que se ha restablecido.</td>
   </tr>
   <tr>
    <td>Segmentación</td>
-   <td>Los visitantes del sitio tienen diferentes intereses y objetivos cuando acceden al sitio. Comprender estos objetivos y cumplir las expectativas son importantes factores de éxito para el marketing en línea. La segmentación ayuda a conseguirlo mediante el análisis y la caracterización de los detalles de un visitante.<br /> </td>
+   <td>Los visitantes del sitio tienen diferentes intereses y objetivos cuando acceden al sitio. Comprender estos objetivos y cumplir las expectativas son importantes factores de éxito para el marketing en línea. La segmentación ayuda a conseguirlo al analizar y caracterizar los detalles de un visitante.<br /> </td>
   </tr>
   <tr>
    <td>inquilinos</td>
    <td>No hay ninguna funcionalidad activa relacionada con esta entrada.</td>
   </tr>
   <tr>
-   <td>truststore</td>
+   <td>almacén de confianza</td>
    <td>No hay ninguna funcionalidad activa relacionada con esta entrada.</td>
   </tr>
   <tr>
-   <td>Versiones: purgar versiones</td>
-   <td>Permite depurar las versiones de la página según sea necesario.</td>
+   <td>Versiones: Purgar versiones</td>
+   <td>Permite purgar las versiones de la página según sea necesario.</td>
   </tr>
   <tr>
    <td>Flujo de trabajo</td>

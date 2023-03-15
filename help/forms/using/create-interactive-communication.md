@@ -11,9 +11,9 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 source-git-commit: 92092e1c050c9264c19e3cd9da9b240607af7bab
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '6178'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -118,7 +118,7 @@ Para obtener más información sobre la interfaz de creación de comunicaciones 
   </tr>
   <tr>
    <td><a href="/help/forms/using/texts-interactive-communications.md" target="_blank">Texto</a></td>
-   <td>Texto  para agregar la dirección, el correo electrónico del destinatario y el texto del cuerpo de la carta </td>
+   <td>Texto para agregar la dirección, el correo electrónico del destinatario y el texto del cuerpo de la carta </td>
   </tr>
   <tr>
    <td><a href="/help/forms/using/conditions-interactive-communications.md" target="_blank">Condición</a></td>

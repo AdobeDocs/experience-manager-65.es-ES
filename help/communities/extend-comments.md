@@ -1,7 +1,7 @@
 ---
 title: Componente Ampliar comentarios
 seo-title: Extend Comments Component
-description: Ampliar el componente Comentarios para modificar su aspecto o comportamiento para usos específicos
+description: Amplíe el componente Comentarios para modificar su apariencia o comportamiento para usos específicos
 seo-description: Extend the Comments component to alter its appearance or behavior for specific uses
 uuid: 6f439097-b1d0-4e7d-afcf-01d8f43aa866
 contentOwner: Guillaume Carlino
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Componente Ampliar comentarios  {#extend-comments-component}
 
-La intención de [ampliar](client-customize.md#extensions) un componente predeterminado es modificar el aspecto o el comportamiento de un componente para usos específicos.
+La intención de [extensivo](client-customize.md#extensions) un componente predeterminado es modificar el aspecto o el comportamiento de un componente para usos específicos.
 
-La ruta al componente es única y hace referencia al componente predeterminado como un tipo de superrecurso. Hay menos riesgo, ya que el ámbito está limitado en comparación con el ámbito global de una superposición de componentes.
+La ruta al componente es única y hace referencia al componente predeterminado como un supertipo de recurso. Hay menos riesgo, ya que el ámbito es limitado en comparación con el ámbito global de una superposición de componentes.
 
 >[!NOTE]
 >
@@ -29,14 +29,14 @@ La ruta al componente es única y hace referencia al componente predeterminado c
 
 ## Ejemplo {#example}
 
-Supongamos que el encabezado del componente de comentario debe mostrarse con un aspecto alternativo en un sitio de la instancia de AEM, mientras aparece con la visualización predeterminada en otro sitio. En lugar de superponer el comentario predeterminado, que cambia el componente de comentario para todas las instancias, una mejor solución es asegurarse de que haya varios componentes de comentario disponibles para usar en varios sitios.
+AEM Supongamos que el encabezado del componente Comentario debe mostrarse con una apariencia alternativa en un sitio de la instancia de la, mientras que aparece con la visualización predeterminada en otro sitio. En lugar de superponer el comentario predeterminado, que cambia el componente de comentario para todas las instancias, una mejor solución es garantizar que haya varios componentes de comentario disponibles para su uso en varios sitios.
 
-Para implementar esta solución, cree un nuevo componente que amplíe (reemplace) el existente y modifique la secuencia de comandos Handlebars. El área del sitio que utiliza los nuevos comentarios puede utilizar la extendida, mientras que los sitios que utilizan el aspecto predeterminado no se verán afectados.
+Para implementar esta solución, cree un nuevo componente que amplíe (anule) el existente y modifique el script Handlebars. El área del sitio que utiliza los nuevos comentarios puede utilizar la ampliada, mientras que los sitios que utilizan la apariencia predeterminada no se ven afectados.
 
-El componente de comentarios es en realidad uno de los dos componentes que componen el sistema de comentarios. Por lo tanto, hay dos componentes que se pueden ampliar: *comentarios* y *comment*. La secuencia de comandos que se va a editar se encuentra en la sección *comment* del componente `header.hbs` mientras que el principal *comentarios* (el sistema de comentarios) es lo que un autor agrega a la página.
+El componente de comentario es en realidad uno de los dos componentes que componen el sistema de comentarios. Por lo tanto, hay dos componentes que se deben ampliar: *comentarios* y *comentario*. La secuencia de comandos que se va a editar se encuentra en *comentario* de componente `header.hbs` archivo, mientras que el principal *comentarios* (el sistema de comentarios) es lo que un autor añade a la página.
 
 Para ampliar los comentarios, deberá:
 
-1. [Crear los componentes](extend-create-components.md)
-1. [Agregar comentario a una página de muestra](extend-sample-page.md)
+1. [Creación de componentes](extend-create-components.md)
+1. [Agregar comentario a página de muestra](extend-sample-page.md)
 1. [Modificar el aspecto](extend-alter-appearance.md)

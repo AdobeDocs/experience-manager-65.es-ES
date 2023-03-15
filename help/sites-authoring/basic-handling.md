@@ -80,7 +80,7 @@ Las opciones disponibles en estos paneles se describen a continuación.
 
 ### Panel de navegación    {#navigation-panel}
 
-El panel Navegación proporciona acceso a las consolas de AEM:
+AEM El panel Navegación proporciona acceso a las consolas de la:
 
 ![bh-01](assets/bh-01.png)
 
@@ -221,9 +221,9 @@ El encabezado siempre está presente en la parte superior de la pantalla. Aunque
 
 * Navegación por teclado
 
-   Puede navegar por un sitio web utilizando solo el teclado. Utiliza la funcionalidad estándar del explorador de la variable **TAB** clave (o **OPT+TAB**) para desplazarlo entre los elementos de la página que se *enfocable*.
+   Puede navegar por un sitio web utilizando solo el teclado. Utiliza la funcionalidad estándar del explorador de **TABULACIÓN** clave (o **OPT+TAB**) para desplazarlo entre los elementos de la página que *enfocable*.
 
-   En la consola **Sites** hay una opción agregada para **Omitir al contenido principal**. Esto se hace visible a medida que *ficha* a través de las opciones de encabezado y acelera la navegación al permitirle omitir los elementos estándar de la barra de herramientas (producto) y llevarle directamente al contenido principal.
+   En la consola **Sites** hay una opción agregada para **Omitir al contenido principal**. Esto se hace visible a medida que *pestaña* a través de las opciones de encabezado y acelera la navegación permitiéndole omitir los elementos estándar en la barra de herramientas (producto), y lo lleva directamente al contenido principal.
 
    ![bh-30](assets/bh-30.png)
 
@@ -272,7 +272,7 @@ Recursos y descargas para desarrolladores
 
 ## Barra de herramientas Acciones {#actions-toolbar}
 
-Siempre que se selecciona un recurso (por ejemplo, una página o un recurso), varias acciones aparecen indicadas en la barra de herramientas mediante iconos acompañados por un texto explicativo. Estas acciones dependen de:
+Siempre que se selecciona un recurso (por ejemplo, una página o un recurso), varias acciones aparecen indicadas en la barra de herramientas mediante iconos acompañados por un texto explicativo. Estas acciones dependen de lo siguiente:
 
 * La consola actual.
 * El contexto actual.
@@ -341,7 +341,7 @@ La selección de un recurso específico depende de la vista y el dispositivo com
    <td>Vista de tarjeta<br /> </td>
    <td>
     <ul>
-     <li>Escritorio:<br /> Pase el ratón y, a continuación, utilice la acción rápida de marca de verificación</li>
+     <li>Escritorio:<br /> Pase el ratón sobre él y utilice la acción rápida de marca</li>
      <li>Dispositivo móvil: <br /> toque y mantenga pulsada la tarjeta.</li>
     </ul> </td>
    <td>

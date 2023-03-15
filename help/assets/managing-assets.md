@@ -1,6 +1,6 @@
 ---
-title: Acerca de la administración de recursos de Dynamic Media
-description: Obtenga información sobre cómo trabajar con recursos de Dynamic Media
+title: Acerca de la administración de recursos Dynamic Media
+description: Aprenda a trabajar con recursos de Dynamic Media
 uuid: 9c7f9d4e-caab-434f-a1ae-eca16c883461
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -17,15 +17,15 @@ ht-degree: 14%
 
 ---
 
-# Acerca de la administración de recursos de Dynamic Media {#managing-assets}
+# Acerca de la administración de recursos Dynamic Media {#managing-assets}
 
-La administración de recursos de Dynamic Media (imágenes, vídeos y recursos interactivos) una vez cargados implica muchas tareas, como previsualizarlos, descargarlos o publicarlos.
+La administración de recursos de Dynamic Media (imágenes, vídeo y recursos interactivos) una vez cargados implica muchas tareas, como previsualizarlos, descargarlos o publicarlos.
 
-Al obtener una vista previa, también puede aplicar ajustes preestablecidos de imagen (solo para imágenes) o ajustes preestablecidos de visor (para vídeo e imágenes). No puede aplicar ambos a un recurso. Consulte [Aplicación de ajustes preestablecidos de visor](/help/assets/viewer-presets.md) y [Aplicación de ajustes preestablecidos de imagen](/help/assets/image-sets.md).
+Al obtener una vista previa, también puede aplicar ajustes preestablecidos de imagen (solo para imágenes) o ajustes preestablecidos de visualizador (para vídeo e imágenes). No puede aplicar ambas a un recurso. Consulte [Aplicar ajustes preestablecidos de visor](/help/assets/viewer-presets.md) y [Aplicar ajustes preestablecidos de imagen](/help/assets/image-sets.md).
 
-La información general sobre la administración de recursos se encuentra en [Administrar recursos](/help/assets/manage-assets.md).
+Encontrará información general sobre la administración de recursos en [Administrar recursos](/help/assets/manage-assets.md).
 
-En los temas siguientes se describe cómo administrar los recursos de Dynamic Media:
+En los siguientes temas se describe cómo administrar los recursos de Dynamic Media:
 
 * [Práctica recomendada para optimizar la calidad de las imágenes](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Vista previa de recursos de Dynamic Media](/help/assets/previewing-assets.md)

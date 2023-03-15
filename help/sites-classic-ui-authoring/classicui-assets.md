@@ -21,6 +21,6 @@ ht-degree: 90%
 
 La sección [Entorno y herramientas de autor](/help/sites-authoring/author-environment-tools.md) proporciona información sobre cómo utilizar el buscador de contenido para buscar y usar recursos al editar páginas.  AEM Assets proporciona otros métodos para trabajar con los recursos:
 
-* [Adición de funciones de Dynamic Media Classic a la página](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
+* [Añadir funciones de Dynamic Media Classic a la página](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Trabajo con Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
 * [Convenciones de nomenclatura de los recursos](/help/sites-classic-ui-authoring/asset-naming-conventions.md)

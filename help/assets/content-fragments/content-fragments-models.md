@@ -1,30 +1,30 @@
 ---
 title: Modelos de fragmento de contenido
-description: Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en AEM y cómo crear fragmentos de contenido con contenido estructurado.
+description: AEM Descubra cómo los modelos de fragmentos de contenido sirven de base para su contenido sin encabezado en la creación de fragmentos de contenido y cómo crear fragmentos de contenido con contenido estructurado.
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 source-git-commit: 6b9eb1a6df7cc4a8afab1c83d93d8a53bd94f6f5
 workflow-type: tm+mt
 source-wordcount: '2332'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
 # Modelos de fragmento de contenido {#content-fragment-models}
 
-Los modelos de fragmento de contenido de AEM definen la estructura de contenido del [fragmentos de contenido,](/help/assets/content-fragments/content-fragments.md) sirve como base de su contenido sin encabezado.
+AEM Los modelos de fragmentos de contenido de la definición de la estructura de contenido para su contenido en la [fragmentos de contenido,](/help/assets/content-fragments/content-fragments.md) servir como base del contenido sin encabezado.
 
 Para usar modelos de fragmentos de contenido, haga lo siguiente:
 
 1. [Habilite la funcionalidad de modelos de fragmentos de contenido para la instancia.](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Cree](#creating-a-content-fragment-model) y [configure](#defining-your-content-fragment-model) sus modelos de fragmentos de contenido.
-1. [Habilitar los modelos de fragmento de contenido](#enabling-disabling-a-content-fragment-model) para usar al crear fragmentos de contenido
+1. [Habilite los modelos de fragmento de contenido](#enabling-disabling-a-content-fragment-model) para usar al crear fragmentos de contenido
 1. [Permita los modelos de fragmentos de contenido en las carpetas de recursos necesarias](#allowing-content-fragment-models-assets-folder) configurando **Políticas**.
 
 ## Creación de un modelo de fragmento de contenido {#creating-a-content-fragment-model}
 
-1. Vaya a **Herramientas**, **Recursos** y, a continuación, abra **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas**, **Assets**, luego abra **Modelos de fragmento de contenido**.
 1. Vaya a la carpeta adecuada para su [configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Use **Crear** para abrir el asistente.
 
@@ -46,7 +46,7 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
 >
 >Editar un modelo de fragmento de contenido existente puede afectar a los fragmentos dependientes.
 
-1. Vaya a **Herramientas**, **Recursos** y, a continuación, abra **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas**, **Assets**, luego abra **Modelos de fragmento de contenido**.
 
 1. Vaya a la carpeta que contiene el modelo de fragmento de contenido.
 
@@ -76,7 +76,7 @@ El modelo de fragmento de contenido define de manera efectiva la estructura de l
 
          >[!CAUTION]
          >
-         >Al actualizar manualmente la propiedad **Nombre de propiedad** para un tipo de datos, tenga en cuenta que los nombres deben contener únicamente A-Z, a-z, 0-9 y el guion bajo &quot;_&quot; como carácter especial.
+         >Al actualizar de forma manual la propiedad **Nombre de propiedad** para un tipo de datos, tenga en cuenta que los nombres solo deben contener caracteres latinos, dígitos numéricos y guiones bajos “_” como carácter especial.
          >
          >Si los modelos creados en versiones anteriores de AEM contienen caracteres no permitidos, elimínelos o actualícelos.
       Por ejemplo:
@@ -143,7 +143,7 @@ Muchas propiedades se explican por sí mismas; para otras, a continuación se pr
 
 * **Nombre de propiedad**
 
-   Cuando actualice manualmente esta propiedad para un tipo de datos, tenga en cuenta que los nombres **must** contain *only* A-Z, a-z, 0-9 y guión bajo &quot;_&quot; como carácter especial.
+   Cuando actualice manualmente esta propiedad para un tipo de datos, tenga en cuenta que los nombres **deben** contener *solo* caracteres latinos, dígitos numéricos y guiones bajos “_” como carácter especial.
 
    >[!CAUTION]
    >
@@ -393,7 +393,7 @@ Los modelos de fragmento de contenido permitidos para una carpeta se resuelven d
 
 Para eliminar un modelo de fragmento de contenido, haga lo siguiente:
 
-1. Vaya a **Herramientas**, **Recursos** y, a continuación, abra **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas**, **Assets**, luego abra **Modelos de fragmento de contenido**.
 
 1. Vaya a la carpeta que contiene el modelo de fragmento de contenido.
 1. Seleccione el modelo, seguido de **Eliminar** en la barra de herramientas.
@@ -408,7 +408,7 @@ Los modelos de fragmento de contenido deben publicarse cuando se publican fragme
 
 Para publicar un modelo de fragmento de contenido, haga lo siguiente:
 
-1. Vaya a **Herramientas**, **Recursos** y, a continuación, abra **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas**, **Assets**, luego abra **Modelos de fragmento de contenido**.
 
 1. Vaya a la carpeta que contiene el modelo de fragmento de contenido.
 1. Seleccione el modelo, seguido de **Publicación** en la barra de herramientas.
@@ -424,7 +424,7 @@ Los modelos de fragmento de contenido se pueden cancelar si ningún fragmento ha
 
 Para cancelar la publicación de un modelo de fragmento de contenido:
 
-1. Vaya a **Herramientas**, **Recursos** y, a continuación, abra **Modelos de fragmento de contenido**.
+1. Vaya a **Herramientas**, **Assets**, luego abra **Modelos de fragmento de contenido**.
 
 1. Vaya a la carpeta que contiene el modelo de fragmento de contenido.
 1. Seleccione el modelo, seguido de **Cancelar la publicación** en la barra de herramientas.

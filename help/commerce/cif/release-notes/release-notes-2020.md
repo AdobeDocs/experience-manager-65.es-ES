@@ -1,6 +1,6 @@
 ---
-title: Notas de la versión de contenido y comercio de AEM 2021
-description: Notas de la versión de contenido y comercio de AEM 2021
+title: AEM Notas de la versión de Content and Commerce de 2021
+description: AEM Notas de la versión de Content and Commerce de 2021
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
@@ -11,250 +11,250 @@ ht-degree: 12%
 
 # Información general sobre la versión de Commerce Integration Framework GitHub
 
-## Fecha de versión: Noviembre de 2020
+## Fecha de versión: noviembre de 2020
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 1,6,0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principales de CIF | 1,6,0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
-| Sitio de referencia de Venia del CIF | 2020.12.01 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Conector del CIF | 1.6.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principales del CIF | 1.6.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
+| Sitio de referencia de CIF Venia | 2020.12.01 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novedades {#what-is-new-november}
 
-* Se agregó la herencia de plantilla a una página de categoría específica. Esta función mejora la eficacia del usuario empresarial porque permite que todas las subcategorías hereden la plantilla creada para una categoría superior específica.
+* Herencia de plantilla agregada a una página de categoría específica. Esta función mejora la eficacia del usuario empresarial porque permite que todas las subcategorías hereden la plantilla creada para una categoría principal específica.
 
-* Tienda de referencia de Venia actualizada para usar el fragmento de experiencia para el pie de página. Los usuarios empresariales pueden editar el pie de página mediante AEM herramientas de creación.
+* Tienda de referencia de Venia actualizada para utilizar el fragmento de experiencia como pie de página. AEM Los usuarios empresariales tienen la capacidad de editar el pie de página mediante herramientas de creación de páginas de acceso a la página de inicio de sesión
 
-### Novedades mejoradas {#what-is-improved-november}
+### Qué se ha mejorado {#what-is-improved-november}
 
-* Se ha mejorado el componente de cierre de compra para que los compradores puedan entrar en el país de destino y permitir direcciones de facturación/envío fuera de los Estados Unidos.
+* Se ha mejorado el componente de cierre de compra para que los compradores puedan introducir el país de destino y permitir las direcciones de facturación y envío fuera de los Estados Unidos.
 
-* Componente de navegación extendido para hidratar la capa de datos del cliente de Adobe.
+* Componente de navegación ampliado para hidratar la capa de datos del cliente de Adobe.
 
 * Varias correcciones de errores.
 
-## Fecha de versión: Octubre de 2020
+## Fecha de versión: octubre de 2020
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 1,5,0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principales de CIF | 1,5,0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
-| Sitio de referencia de Venia del CIF | 2020.10.27 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Conector del CIF | 1.5.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principales del CIF | 1.5.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
+| Sitio de referencia de CIF Venia | 2020.10.27 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novedades {#what-is-new-october}
 
-* Se ha agregado un nuevo componente de carrusel de categoría para permitir a los usuarios empresariales arrastrar y soltar este componente en páginas de contenido AEM para enriquecer páginas de contenido con datos de comercio.
+* AEM Se ha agregado un nuevo componente de carrusel de categoría para permitir que los usuarios empresariales arrastren y suelten este componente en páginas de contenido para enriquecer las páginas de contenido con datos de comercio.
 
-* Los componentes principales del CIF se ampliaron para hidratar la capa de datos del cliente de Adobe al enviar datos de comercio. La capa de datos del cliente de Adobe es un método estandarizado para recopilar datos y comunicarlos a los servidores de informes y análisis digitales. Para obtener más información, consulte [Capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Los componentes principales del CIF se ampliaron para hidratar la capa de datos del cliente del Adobe mediante el envío de datos comerciales. La capa de datos del cliente de Adobe es un método estandarizado para recopilar datos y comunicar los datos a servidores de informes y análisis digitales. Para obtener más información, consulte [Capa de datos del cliente de Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
-* Las páginas Detalles del producto y Lista de productos se han ampliado para rellenar automáticamente los metadatos de SEO (como título, meta descripción, metapalabras clave) configurados desde la interfaz de usuario del administrador de Adobe Commerce
+* Las páginas de detalles de producto y listas de productos se han ampliado para rellenar automáticamente los metadatos de SEO (como título, metadescripción o palabras clave meta) configurados desde la interfaz de usuario de administración de Adobe Commerce
 
-* Se ha corregido un error del componente teaser de comercio.
+* Error del componente teaser de Commerce corregido.
 
-## Fecha de versión: Septiembre de 2020
+## Fecha de versión: septiembre de 2020
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
 | Conector del CIF | 1.4.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principales de CIF | 1.4.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
-| Sitio de referencia de Venia del CIF | 2020.10.2 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Componentes principales del CIF | 1.4.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
+| Sitio de referencia de CIF Venia | 2020.10.2 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novedades {#what-is-new-september}
 
-* Admite consultas para el esquema Adobe Commerce 2.4.0.
+* Admite consultas para el esquema de Adobe Commerce 2.4.0.
 
-* Se han agregado características de información de cuenta para permitir que los compradores actualicen su información personal.
+* Se han agregado funciones de información de la cuenta para permitir que los compradores actualicen la información personal.
 
-* Se ha implementado un estilo de paginación de carga diferida para las páginas de resultados de búsqueda y lista de productos para permitir a los desarrolladores configurar estos componentes para que muestren el botón Cargar más como estilo de paginación.
+* Estilo de paginación de carga diferida implementado para las páginas de Lista de productos y Resultados de búsqueda para permitir a los desarrolladores configurar estos componentes para mostrar el botón &quot;Cargar más&quot; como estilo de paginación.
 
-* Se ha implementado una página de restablecimiento de contraseña para permitir a los compradores actualizar o restablecer la contraseña de su cuenta.
+* Se ha implementado una página de restablecimiento de contraseña para permitir que los compradores puedan actualizar o restablecer la contraseña de su cuenta.
 
-* Compatibilidad con los tipos de productos agrupados disponibles.
+* Compatibilidad con tipos de productos agrupados disponibles.
 
 * Los desarrolladores pueden configurar las etiquetas de HTML para los componentes Carrusel de productos, Productos relacionados y Lista de categorías destacadas para seguir las prácticas recomendadas de SEO.
 
-* Se corrigieron errores de mi cuenta.
+* Se han corregido errores de Mi cuenta.
 
 * Varias correcciones de errores.
 
-## Fecha de versión: Agosto de 2020
+## Fecha de versión: agosto de 2020
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
 | Conector del CIF | 1.3.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principales de CIF | 1.3.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
-| Sitio de referencia de Venia del CIF | 2020.9.2 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Componentes principales del CIF | 1.3.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
+| Sitio de referencia de CIF Venia | 2020.9.2 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novedades {#what-is-new-august}
 
-* Se ha agregado un componente de ruta de exploración para admitir páginas de comercio y contenido.
+* Se ha agregado un componente Ruta de exploración para admitir páginas de contenido y comercio.
 
-* Se ha añadido la pestaña Comercio en las propiedades de página para exponer las propiedades del CIF para la página de aterrizaje y los fragmentos de experiencia.
+* Se ha añadido la pestaña Comercio en Propiedades de página para exponer las propiedades del CIF para la página de aterrizaje y los fragmentos de experiencias.
 
-* Se ha mejorado el componente Barra de búsqueda para que admita la opción de mostrar el texto del marcador de posición
+* Componente de barra de búsqueda mejorado para admitir la opción de mostrar texto de marcador de posición
 
-* Se ha agregado flexibilidad a los componentes de teaser de productos y productos para admitir personalizaciones sencillas.
+* Flexibilidad añadida a los componentes teaser de productos para admitir personalizaciones sencillas.
 
-* Se ha agregado flexibilidad para anular y configurar la etiqueta de botón de llamada a acción predeterminada para el componente teaser de productos.
+* Se ha agregado flexibilidad para anular y configurar la etiqueta de botón de CTA predeterminada para el componente teaser de productos.
 
 * Se ha mejorado el componente Libreta de direcciones para permitir que el comprador registrado elija las direcciones de envío y facturación guardadas en la libreta de direcciones durante el cierre de compra.
 
 * Varias correcciones de errores.
 
-## Fecha de versión: Julio de 2020
+## Fecha de versión: julio de 2020
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
 | Conector del CIF | 1.2.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principales de CIF | 1.2.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
-| Sitio de referencia de Venia del CIF | 2020.8.14 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Componentes principales del CIF | 1.2.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
+| Sitio de referencia de CIF Venia | 2020.8.14 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novedades {#what-is-new-july}
 
-* El sitio de referencia de Venia del CIF se extrajo del repositorio de tipo de archivo del CIF y ahora es un repositorio independiente de GitHub.
+* El sitio de referencia de CIF Venia se extrajo del repositorio de tipo de archivo del CIF y ahora es un repositorio independiente de GitHub.
 
-* El tipo de archivo CIF se combina con AEM tipo de archivo del proyecto. Para nuevos proyectos, utilice [Tipo de archivo del proyecto AEM](https://github.com/adobe/aem-project-archetype) como punto de partida.
+* AEM El tipo de archivo CIF se ha combinado con el tipo de archivo del proyecto. Para nuevos proyectos, utilice [AEM Tipo de archivo del proyecto](https://github.com/adobe/aem-project-archetype) como punto de partida.
 
-* Se ha agregado la administración de libreta de direcciones para permitir que los usuarios que iniciaron sesión administren sus direcciones.
+* Se agregó la administración de libreta de direcciones para permitir que los usuarios que iniciaron sesión administren sus direcciones.
 
-* La interfaz de usuario de configuración de CIF Cloud admite acciones de publicación/cancelación de publicación.
+* La IU de configuración del CIF en la nube admite acciones de publicación/cancelación de publicación.
 
-### Novedades mejoradas {#what-is-improved-july}
+### Qué se ha mejorado {#what-is-improved-july}
 
-* El componente de inicio de sesión se ha trasladado al menú desplegable del usuario para facilitar el acceso.
+* El componente de inicio de sesión se ha trasladado a la lista desplegable de usuarios para facilitar el acceso.
 
-* Se ha simplificado el paquete aem-core-cif-react-components .
+* Se ha simplificado el paquete aem-core-cif-react-components.
 
 * Varias correcciones de errores.
 
-## Fecha de versión: Junio de 2020
+## Fecha de versión: junio de 2020
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
 | Conector del CIF | 1.1.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principales de CIF | 1.1.1 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
-| Tipo de archivo del CIF | 0,11,0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Componentes principales del CIF | 1.1.1 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
+| Tipo de archivo CIF | 0.11.0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novedades {#what-is-new-june}
 
-Esta es la primera versión de los componentes principales de CIF que se admiten en Adobe Experience Manager.
+Esta es la primera versión de los componentes principales del CIF que se admite en Adobe Experience Manager.
 
-* Se ha agregado la clasificación de productos en la página Lista de productos y en la página Resultados de búsqueda para permitir que los compradores ordenen según la relevancia, el precio y el nombre del producto.
+* Se ha añadido la ordenación de productos en la página Lista de productos y en la página Resultados de búsqueda para permitir que los compradores ordenen en función de la relevancia, el precio y el nombre del producto.
 
-* Se ha agregado el filtrado de categorías como faceta para permitir que los compradores filtren en función de la categoría.
+* Se ha añadido el filtrado de categorías como faceta para permitir que los compradores filtren según la categoría.
 
-* Se ha agregado la asignación de usuarios de servicio como parte de los requisitos de seguridad para garantizar el acceso a /conf a través de los usuarios de servicio y no manipulando directamente las ACL. Los componentes principales de CIF ahora deben utilizar un usuario de servicio para acceder a las configuraciones.
+* Se ha agregado la asignación de usuarios de servicio como parte del requisito de seguridad para garantizar el acceso a /conf mediante usuarios de servicio y no manipulando directamente las ACL. Los componentes principales del CIF ahora deben utilizar un usuario de servicio para acceder a las configuraciones.
 
-### Novedades mejoradas {#what-is-improved-june}
+### Qué se ha mejorado {#what-is-improved-june}
 
-* La página Lista de productos y la página Resultado de la búsqueda muestran el número total de elementos. El número de elementos se actualiza cuando se aplican filtros de comprador.
+* La página Lista de productos y la página Resultado de la búsqueda muestran el número total de elementos. El número de elementos se actualiza cuando el comprador aplica filtros.
 
-* Búsqueda faceteada optimizada combinando consulta de categoría con consulta de búsqueda de producto.
+* Búsqueda con facetas optimizada al combinar la consulta de categoría con la consulta de búsqueda de productos.
 
-* Selector de categoría/producto para la vista previa de página honor cq:catalogPath.
+* Los selectores de categorías/productos para la vista previa de página respetan cq:catalogPath.
 
 * Varias correcciones de errores.
 
-## Fecha de versión: Mayo de 2020
+## Fecha de versión: mayo de 2020
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
 | Conector del CIF | 1.0.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principales de CIF | 1.0.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
-| Tipo de archivo del CIF | 0,11,0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Componentes principales del CIF | 1.0.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
+| Tipo de archivo CIF | 0.11.0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novedades {#what-is-new-may}
 
-* Admite consultas para el esquema Adobe Commerce 2.3.5.
+* Admite consultas para el esquema de Adobe Commerce 2.3.5.
 
-* Se agregó compatibilidad con la búsqueda faceteada a Página de búsqueda y Página de lista de productos para permitir a los compradores filtrar los resultados de búsqueda según las facetas del producto.
+* Se ha agregado compatibilidad con la búsqueda con facetas a la página de búsqueda y a la página de lista de productos para permitir que los compradores filtren los resultados de búsqueda según las facetas del producto.
 
-* Se ha agregado un nuevo servicio OSGi para personalizar las URL de PDP/PLP con el propósito de SEO. Para obtener más información, consulte [documentación](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
+* Se ha agregado un nuevo servicio OSGi para personalizar las URL de PDP/PLP para la SEO. Para obtener más información, consulte [documentación](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
 
-* Enlace de productos creado automáticamente cuando se crea una configuración de nube.
+* Enlace de productos creado automáticamente al crear una configuración de nube.
 
-### Novedades mejoradas
+### Qué se ha mejorado
 
-* La configuración de nube se ha ampliado para mostrar la acción &quot;Crear carpeta&quot;.
+* Configuración de nube ampliada para mostrar la acción &quot;Crear carpeta&quot;.
 
 * Se han aplicado varias correcciones de errores.
 
-## Fecha de versión: Abril de 2020
+## Fecha de versión: abril de 2020
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 0,10,0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principales de CIF | 0,10,0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
-| Tipo de archivo del CIF | 0,10,0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Conector del CIF | 0.10.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principales del CIF | 0.10.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
+| Tipo de archivo CIF | 0.10.0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novedades {#what-is-new-april}
 
-* Ajustes de configuración para conector del CIF unificado y simplificado. Para obtener más información, cierre de compra [Introducción](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) o [Nueva configuración del proyecto del CIF AEM](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
+* Los ajustes de configuración para el conector del CIF están unificados y simplificados. Para obtener más información, cierre de compra [Primeros pasos](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) o [AEM Nueva configuración del proyecto de CIF](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
 
-### Novedades mejoradas {#what-is-improved-april}
+### Qué se ha mejorado {#what-is-improved-april}
 
-* El flujo de carro de compras y cierre de compra se ha ampliado para admitir compradores registrados.
+* El flujo de carro de compras y cierre de compra se amplió para admitir compradores registrados.
 
-* Compatibilidad con internacionalización ampliada en todos los componentes.
+* Mayor compatibilidad con la internacionalización en todos los componentes.
 
-* Compatibilidad con productos agrupados y productos virtuales disponibles.
+* Compatibilidad con productos agrupados y productos virtuales disponible.
 
-* Se han mejorado los componentes Productos relacionados, Carrusel de productos y Categoría destacada para que admitan el título opcional.
+* Se han mejorado los componentes Productos relacionados, Carrusel de productos y Categoría destacada para que admitan títulos opcionales.
 
 * Se han aplicado varias correcciones de errores.
 
-## Fecha de versión: Febrero de 2020
+## Fecha de versión: febrero de 2020
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 0,9,0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principales de CIF | 0,9,0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
-| Tipo de archivo del CIF | 0,9,0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Conector del CIF | 0.9.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principales del CIF | 0.9.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
+| Tipo de archivo CIF | 0.9.0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novedades {#what-is-new-february}
 
-* Admite consultas para el esquema Adobe Commerce 2.3.4.
+* Admite consultas para el esquema de Adobe Commerce 2.3.4.
 
-* Se ha agregado compatibilidad de búsqueda en el Selector de categorías.
+* Se ha agregado compatibilidad con búsquedas en Selector de categorías.
 
-* Paginación en el componente Lista de categorías para admitir grandes conjuntos de catálogos.
+* Paginación en el componente Lista de categorías para admitir conjuntos de catálogos grandes.
 
-### Novedades mejoradas {#what-is-improved-february}
+### Qué se ha mejorado {#what-is-improved-february}
 
 * Carro de compras mejorado para mostrar descuentos.
 
-* Los componentes Detalles del producto, Teaser del producto y Lista de productos admiten la visualización de información de precios avanzada.
+* Los componentes Detalles del producto, Teaser de productos y Lista de productos admiten la visualización de información avanzada de precios.
 
-* Se ha mejorado la búsqueda de productos en la consola de producto y el selector de productos.
+* Se ha mejorado la búsqueda de productos en la consola y el selector de productos.
 
 * Se han aplicado varias correcciones de errores.
 
-## Fecha de versión: Enero de 2020
+## Fecha de versión: enero de 2020
 
 | GitHub | Versión | Notas de la versión detalladas |
 |:-------|:-----:|---------------------:|
-| Conector del CIF | 0,8,0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principales de CIF | 0,8,0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
-| Tipo de archivo del CIF | 0,7,0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Conector del CIF | 0.8.0 | [Notas de la versión](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principales del CIF | 0.8.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
+| Tipo de archivo CIF | 0.7.0 | [Notas de la versión](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novedades {#what-is-new-january}
 
-* Se ha agregado el componente Fragmento de experiencia (XF) para permitir a los clientes crear XF en su proyecto comercial.
+* Se ha agregado el componente Fragmento de experiencia (XF) para permitir a los clientes crear XF en sus proyectos comerciales.
 
-* Cambie la funcionalidad de contraseña disponible en mi cuenta.
+* Cambiar la funcionalidad de contraseña disponible en mi cuenta.
 
-* Compatibilidad con i18n para componentes principales del lado del servidor AEM CIF.
+* AEM Compatibilidad con i18n para componentes principales del lado del servidor del CIF de la.
 
-* Componente de producto relacionado genérico disponible.
+* Componente de producto genérico relacionado disponible.
 
-### Novedades mejoradas {#what-is-improved-january}
+### Qué se ha mejorado {#what-is-improved-january}
 
 * Compatibilidad para mostrar el botón CTA en el teaser de productos.
 
-* Opción para cambiar o seleccionar imágenes en el componente Lista de categorías destacadas .
+* Opción para cambiar o seleccionar imágenes en el componente Lista de categorías destacadas.
 
-* Opción para ocultar o mostrar el título o el banner en el componente Lista de productos .
+* Opción para ocultar/mostrar el título/titular en el componente Lista de productos.
 
-* Función de arrastrar y soltar aplicada al componente Carrusel del producto.
+* Función de arrastrar y soltar aplicada al componente Carrusel de productos.
 
 * Se han aplicado varias correcciones de errores.

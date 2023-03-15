@@ -1,7 +1,7 @@
 ---
 title: Configuración de nube
 seo-title: Cloud Configuration
-description: La asociación de una aplicación bajo demanda a una configuración de nube permite que Adobe Experience Manager (AEM) se comunique directamente con un proyecto alojado por Mobile On-Demand estableciendo un vínculo bidireccional. Siga esta página para obtener más información.
+description: La asociación de una aplicación bajo demanda a una configuración en la nube permite a Adobe Experience Manager AEM () comunicarse directamente con un proyecto alojado de Mobile On-Demand mediante el establecimiento de un vínculo bidireccional. Siga esta página para obtener más información.
 seo-description: Associating an On-Demand App to a Cloud Configuration allows Adobe Experience Manager (AEM) to communicate directly with a Mobile On-Demand hosted project by establishing a two way link. Follow this page to learn more.
 uuid: f377f2af-864b-43df-9d42-4a5fd6cd70d5
 contentOwner: User
@@ -21,64 +21,64 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-La asociación de una aplicación bajo demanda a una configuración de nube permite que Adobe Experience Manager (AEM) se comunique directamente con un proyecto alojado por Mobile On-Demand estableciendo un vínculo bidireccional. Al vincular su aplicación a un proyecto móvil bajo demanda, podrá crear contenido, como artículos, titulares y colecciones dentro de AEM, pero también servirlo en Mobile On-Demand.
+La asociación de una aplicación bajo demanda a una configuración en la nube permite a Adobe Experience Manager AEM () comunicarse directamente con un proyecto alojado de Mobile On-Demand mediante el establecimiento de un vínculo bidireccional. AEM Al vincular la aplicación a un proyecto de Mobile On-Demand, podrá crear contenido, como artículos, titulares y colecciones, dentro de la aplicación, pero también podrá servir ese contenido a Mobile On-Demand.
 
-A partir de ahí, será posible publicar, previsualizar y administrar contenido. También puede importar contenido existente de Mobile On-Demand en AEM y realizar ediciones de contenido.
+A partir de ahí, es posible publicar, previsualizar y administrar contenido. AEM También puede importar contenido existente de Mobile On-Demand en y realizar ediciones de contenido en la interfaz de usuario de.
 
-## Configuración de Cloud {#setting-up-cloud-configuration}
+## Configuración de nube {#setting-up-cloud-configuration}
 
 >[!CAUTION]
 >
->Antes de empezar a configurar la nube para la aplicación On-Demand, debe estar familiarizado con el aprovisionamiento y la configuración del cliente de AEM Mobile On-demand Services de AEM Mobile.
+>Antes de empezar a configurar la nube para la aplicación On-Demand, debe estar familiarizado con el aprovisionamiento de AEM Mobile y la configuración del cliente de AEM Mobile On-demand Services.
 >
->Para obtener más información, consulte [Configuración de AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) en la sección Administración .
+>Para obtener más información, consulte [Configuración de AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) en la sección Administración.
 
-Para configurar los Cloud Services móviles bajo demanda, haga clic en el engranaje superior en la esquina superior derecha de la **Administrar conexión** desde el panel de la aplicación.
+Para configurar los Cloud Services de Mobile On-Demand, haga clic en la parte superior derecha de la barra de herramientas **Administrar conexión** mosaico del tablero de la aplicación.
 
-Debe estar familiarizado con el panel de aplicaciones y los mosaicos disponibles. Consulte [Panel de aplicaciones de AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obtener más información.
+Debe estar familiarizado con el panel de la aplicación y los mosaicos disponibles. Consulte [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obtener más información.
 
 ### Configuración del vínculo a la nube {#setting-up-link-to-cloud-configuration}
 
 >[!CAUTION]
 >
->Asegúrese de que tiene una configuración de cliente y nube On-Demand existente.
+>Asegúrese de que tiene una configuración de cliente On-Demand y de nube existente.
 >
->Para obtener más información, consulte [Configuración de AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) en la sección Administración .
+>Para obtener más información, consulte [Configuración de AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) en la sección Administración.
 
-Los pasos siguientes describen la configuración del vínculo a la configuración de la nube:
+Los siguientes pasos describen la configuración del vínculo a la nube:
 
-1. De **Móvil**, elija **Aplicaciones** y, a continuación, la aplicación móvil bajo demanda del catálogo.
-1. Haga clic en el icono del engranaje en la **Administrar conexión** mosaico.
+1. Desde **Móvil**, elija **Aplicaciones** y, a continuación, su aplicación Mobile On-Demand desde el catálogo.
+1. Haga clic en el icono de engranaje de la **Administrar conexión** mosaico.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Introduzca la configuración ya existente o cree una nueva introduciendo el **Título de configuración**, **ID del dispositivo** y **Token de dispositivo**.
+1. Introduzca la configuración ya existente o cree una nueva introduciendo el **Título de configuración**, **ID de dispositivo**, y **Token de dispositivo**.
 
-   ![imagen_1-66](assets/chlimage_1-66.png)
+   ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Una vez que **ID del dispositivo** y **Token de dispositivo** estén verificados, seleccione el proyecto bajo demanda de la lista.
+1. Una vez que **ID de dispositivo** y **Token de dispositivo** Una vez verificados, elija el proyecto On-Demand en la lista.
 
-   Haga clic en **Submit**.
+   Haga clic en **Enviar**.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   La variable **Administrar conexión** El mosaico muestra la configuración de Cloud.
+   El **Administrar conexión** El mosaico muestra su Configuración de nube.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
    >[!CAUTION]
    >
-   >Si intenta cambiar el proyecto al que está asociada esta aplicación al cambiar de proyecto en el panel, recibirá una advertencia para los problemas de integridad del contenido, como se muestra en la figura siguiente:
+   >Si intenta cambiar a qué proyecto está asociada esta aplicación, mientras cambia de proyecto en el panel, recibirá una advertencia por problemas de integridad del contenido, como se muestra en la figura siguiente:
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
 ### Pasos siguientes {#the-next-steps}
 
-Una vez configurada la configuración de nube para la aplicación, consulte los siguientes recursos para administrar contenido:
+Una vez que haya configurado la nube para su aplicación, consulte los siguientes recursos para administrar contenido:
 
-* [Administración de artículos](/help/mobile/mobile-on-demand-managing-articles.md)
+* [Administrar artículos](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Administración de titulares](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Administración de colecciones](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Carga de recursos compartidos](/help/mobile/mobile-on-demand-shared-resources.md)

@@ -1,7 +1,7 @@
 ---
 title: Registro
 seo-title: Logging
-description: Obtenga información sobre cómo configurar parámetros globales para el servicio de registro central, ajustes específicos para los servicios individuales o cómo solicitar el registro de datos.
+description: Obtenga información sobre cómo configurar parámetros globales para el servicio de registro central, la configuración específica de los servicios individuales o cómo solicitar el registro de datos.
 seo-description: Learn how to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
 uuid: 8c9e3628-2f2c-445d-9706-5c7725b85fe2
 contentOwner: User
@@ -20,74 +20,74 @@ ht-degree: 0%
 
 # Registro{#logging}
 
-AEM le ofrece la posibilidad de configurar:
+AEM le ofrece la posibilidad de configurar lo siguiente:
 
 * parámetros globales para el servicio de registro central
-* solicitar el registro de datos; una configuración de registro especializada para información de solicitud
-* ajustes específicos para los servicios individuales; por ejemplo, un archivo de registro y un formato individuales para los mensajes de registro
+* registro de datos de solicitud; una configuración de registro especializada para solicitar información
+* configuración específica para los servicios individuales; por ejemplo, un archivo de registro individual y formato para los mensajes de registro
 
 Estos son todos [Configuraciones de OSGi](/help/sites-deploying/configuring-osgi.md).
 
 >[!NOTE]
 >
->El inicio de sesión en AEM se basa en los principios de Sling. Consulte [Registro de Sling](https://sling.apache.org/site/logging.html) para obtener más información.
+>AEM El inicio de sesión en la se basa en los principios de Sling. Consulte [Registro de Sling](https://sling.apache.org/site/logging.html) para obtener más información.
 
 ## Registro global {#global-logging}
 
-[Configuración de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md) se utiliza para configurar el registrador raíz. Esto define la configuración global para iniciar sesión en AEM:
+[Configuración de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md) se utiliza para configurar el registrador raíz. AEM Esto define la configuración global para iniciar sesión en el sitio de trabajo de la siguiente manera
 
 * el nivel de registro
 * la ubicación del archivo de registro central
-* el número de versiones que deben conservarse
-* rotación de versiones; bien un tamaño máximo o un intervalo de tiempo
+* el número de versiones que se van a conservar
+* rotación de versiones; tamaño máximo o intervalo de tiempo
 * el formato que se utilizará al escribir los mensajes de registro
 
 >[!NOTE]
 >
->Esta [Artículo de la base de conocimiento](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) explica cómo girar los archivos request.log y access.log.
+>Esta [Artículo de Knowledge Base](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) explica cómo girar los archivos request.log y access.log.
 
 ## Registradores y escritores para servicios individuales {#loggers-and-writers-for-individual-services}
 
-Además de la configuración de registro global, AEM permite configurar opciones específicas para un servicio individual:
+AEM Además de la configuración del registro global, le permite configurar opciones específicas para un servicio individual:
 
 * el nivel de registro específico
 * la ubicación del archivo de registro individual
-* el número de versiones que deben conservarse
-* rotación de versiones; bien el tamaño máximo o el intervalo de tiempo
+* el número de versiones que se van a conservar
+* rotación de versiones; tamaño máximo o intervalo de tiempo
 * el formato que se utilizará al escribir los mensajes de registro
-* el registrador (el servicio OSGi que proporciona los mensajes de registro)
+* el registrador (el servicio OSGi que suministra los mensajes de registro)
 
-Esto le permite canalizar mensajes de registro para un solo servicio en un archivo independiente. Esto puede resultar especialmente útil durante el desarrollo o los ensayos; por ejemplo, cuando necesita un nivel de registro mayor para un servicio específico.
+Esto le permite canalizar mensajes de registro para un único servicio en un archivo independiente. Esto puede resultar especialmente útil durante el desarrollo o las pruebas; por ejemplo, cuando necesita aumentar el nivel de registro para un servicio específico.
 
-AEM utiliza lo siguiente para escribir mensajes de registro en el archivo:
+AEM Utiliza lo siguiente para escribir mensajes de registro en el archivo:
 
 1. Un **Servicio OSGi** (logger) escribe un mensaje de registro.
-1. A **Registrador** toma este mensaje y lo formatea según su especificación.
-1. A **Escritor de registros** escribe todos estos mensajes en el archivo físico que ha definido.
+1. A **Registrador de registros** toma este mensaje y le da formato según su especificación.
+1. A **Escritor de registro** escribe todos estos mensajes en el archivo físico que ha definido.
 
-Estos elementos están vinculados por los siguientes parámetros para los elementos adecuados:
+Estos elementos están vinculados por los siguientes parámetros para los elementos correspondientes:
 
-* **Registrador (registrador)**
+* **Registrador (Registrador)**
 
    Defina los servicios que generan los mensajes.
 
-* **Archivo de registro (registrador)**
+* **Archivo de registro (registrador de registros)**
 
    Defina el archivo físico para almacenar los mensajes de registro.
 
-   Se utiliza para vincular un Registrador de registros con un Escritor de registros. El valor debe ser idéntico al mismo parámetro en la configuración de Logging Writer para la conexión que se va a realizar.
+   Se utiliza para vincular un registrador con un registrador. El valor debe ser idéntico al mismo parámetro en la configuración de Escritor de registro para que se realice la conexión.
 
-* **Archivo de registro (escritor de registro)**
+* **Archivo de registro (Escritor de registro)**
 
    Defina el archivo físico en el que se escribirán los mensajes de registro.
 
-   Debe ser idéntico al mismo parámetro en la configuración del Escritor de registros o no se producirá la coincidencia. Si no hay coincidencia, se creará un Writer implícito con la configuración predeterminada (rotación diaria del registro).
+   Debe ser idéntico al mismo parámetro en la configuración de Escritor de registro; de lo contrario, no se realizará la coincidencia. Si no hay coincidencia, se creará un objeto Writer implícito con la configuración predeterminada (rotación diaria del registro).
 
 ### Registradores y escritores estándar {#standard-loggers-and-writers}
 
-Algunos Registradores y Escritores están incluidos en una instalación AEM estándar.
+AEM Ciertos registradores y escritores están incluidos en una instalación estándar de la.
 
-El primero es un caso especial, ya que controla ambos `request.log` y `access.log` archivos:
+El primero es un caso especial, ya que controla tanto la `request.log` y `access.log` archivos:
 
 * El registrador:
 
@@ -117,9 +117,9 @@ Los otros pares siguen la configuración estándar:
 
    * Escribe `Information` mensajes a `logs/error.log`.
 
-* Enlaces al escritor:
+* Vínculos al escritor:
 
-   * Configuración del Escritor de registro de Apache Sling
+   * Configuración del escritor de registro de Apache Sling
 
       (org.apache.sling.commons.log.LogManager.factory.writer)
 
@@ -129,23 +129,23 @@ Los otros pares siguen la configuración estándar:
 
    * Escribe `Warning` mensajes a `../logs/error.log` para el servicio `org.apache.pdfbox`.
 
-* No vincula a un escritor específico, por lo que creará y utilizará un Writer implícito con la configuración predeterminada (rotación diaria del registro).
+* No se vincula a un objeto Writer específico, por lo que se crea y utiliza un objeto Writer implícito con la configuración predeterminada (rotación diaria del registro).
 
-### Creación de sus propios registradores y escritores {#creating-your-own-loggers-and-writers}
+### Crear sus propios registradores y escritores {#creating-your-own-loggers-and-writers}
 
-Puede definir su propio par Logger / Writer:
+Puede definir su propio par Registrador/Escritor:
 
-1. Crear una nueva instancia de la configuración de fábrica [Configuración del registrador de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
+1. Cree una nueva instancia de la configuración de fábrica [Configuración del registrador de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
 
-   1. Especifique el archivo de registro.
-   1. Especifique el Registrador.
+   1. Especifique el Archivo de registro.
+   1. Especifique el registrador.
    1. Configure los demás parámetros según sea necesario.
 
-1. Crear una nueva instancia de la configuración de fábrica [Configuración del Escritor de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
+1. Cree una nueva instancia de la configuración de fábrica [Configuración del escritor de registro de Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
 
-   1. Especifique el archivo de registro: debe coincidir con el especificado para el registrador.
+   1. Especifique el Archivo de registro: debe coincidir con el especificado para el registrador.
    1. Configure los demás parámetros según sea necesario.
 
 >[!NOTE]
 >
->En determinadas circunstancias, es posible que desee crear un [archivo de registro personalizado](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
+>En determinadas circunstancias, es posible que desee crear una [archivo de registro personalizado](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).

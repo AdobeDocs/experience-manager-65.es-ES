@@ -66,7 +66,7 @@ El tablero muestra cuatro paneles que le ofrecen información general de sus lis
 >[!NOTE]
 >
 >Adobe no tiene previsto mejorar aún más esta capacidad (Gestión de posibles clientes).
->La recomendación es aprovechar [Adobe Campaign y la integración a AEM](/help/sites-administering/campaign.md).
+>La recomendación es aprovechar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
 
 En AEM MCM, es posible organizar y añadir posibles clientes introduciéndolos manualmente o importando una lista separada por comas; por ejemplo, una lista de correo. Las formas adicionales de generar posibles clientes consisten en los registros a boletines y comunidades (si se configuran, pueden generar un flujo de trabajo que rellene los posibles clientes). Los posibles clientes se suelen categorizar y situar en una lista para que más adelante se puedan realizar operaciones en toda la lista como, por ejemplo, enviar un correo electrónico personalizado a una lista concreta.
 
@@ -83,7 +83,7 @@ En el panel izquierdo de **Posibles clientes** podrá crear, importar, editar y 
 >[!NOTE]
 >
 >Adobe no tiene previsto mejorar aún más esta capacidad (Gestión de listas).
->La recomendación es aprovechar [Adobe Campaign y la integración a AEM](/help/sites-administering/campaign.md).
+>La recomendación es aprovechar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
 
 Las listas permiten organizar los posibles clientes en grupos. Con las listas, puede dirigir sus campañas de marketing a un grupo determinado de usuarios; por ejemplo, puede enviar un boletín dirigido a una lista.
 
@@ -103,7 +103,7 @@ En **Listas**, podrá administrar sus listas mediante la creación, importación
 
 Para acceder a las campañas existentes, en MCM, haga clic en **Campaigns** (Campañas).
 
-![screen_shot_2012-02-21at1106pm](assets/screen_shot_2012-02-21at11106pm.png)
+![screen_shot_2012-02-21at11106pm](assets/screen_shot_2012-02-21at11106pm.png)
 
 * **En el panel izquierdo**: hay una lista de todas las marcas y campañas.
 Si hace clic en una marca:
@@ -144,7 +144,7 @@ Hay dos vistas disponibles para las campañas individuales:
 
    Se presentará una lista de todos los touchpoints (grises) con un intervalo de tiempo horizontal de las experiencias (verdes) conectadas con dicho touchpoint:
 
-   ![mcm_banner_calendarview](assets/mcm_banner_calendarview.png)
+   ![mcm_banner_calendar_view](assets/mcm_banner_calendarview.png)
 
    Desde aquí puede:
 
@@ -166,7 +166,7 @@ Hay dos vistas disponibles para las campañas individuales:
 
    Desde aquí puede:
 
-   * Cree un **Nuevo...** experiencia; por ejemplo, ofertas, teasers y newsletters de Adobe Target.
+   * Crear un **Nuevo...** experiencia; por ejemplo, ofertas, teasers y boletines de Adobe Target.
    * **Editar** los detalles de una página de teaser o newsletter específica (también se puede hacer doble clic).
    * Definir las **Propiedades...** de una página de teaser o newsletter específica.
    * **Simular** el aspecto de una experiencia (página de teaser o newsletter).

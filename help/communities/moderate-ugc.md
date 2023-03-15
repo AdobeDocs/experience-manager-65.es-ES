@@ -1,5 +1,5 @@
 ---
-title: Moderación del contenido de la comunidad
+title: Moderar contenido de la comunidad
 seo-title: Moderating Community Content
 description: Conceptos y acciones de moderación
 seo-description: Moderation concepts and actions
@@ -15,44 +15,44 @@ exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1516'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# Moderación del contenido de la comunidad {#moderating-community-content}
+# Moderar contenido de la comunidad {#moderating-community-content}
 
 ## Información general {#overview}
 
-El contenido de la comunidad, también conocido como contenido generado por el usuario (UGC), se crea cuando un miembro (visitante que ha iniciado sesión en el sitio) publica contenido de un sitio de la comunidad publicado mediante la interacción con uno de los siguientes componentes de la comunidad :
+El contenido de la comunidad, también conocido como contenido generado por el usuario (UGC), se crea cuando un miembro (visitante del sitio conectado) publica contenido de un sitio de comunidad publicado mediante la interacción con uno de los siguientes componentes de la comunidad:
 
 * [Blog](/help/communities/blog-feature.md): los miembros publican un artículo o comentario en el blog.
-* [Calendario](/help/communities/calendar.md): los miembros publican un evento o comentario de calendario.
+* [Calendario](/help/communities/calendar.md): los miembros publican un evento de calendario o un comentario.
 * [Comentarios](/help/communities/comments.md): los miembros publican un comentario o responden a un comentario.
 
-* [Foro](/help/communities/forum.md): los miembros publican un tema nuevo o responden a él.
+* [Foro](/help/communities/forum.md): los miembros publican un nuevo tema o responden a un tema.
 * [Ideación](/help/communities/ideation-feature.md): los miembros publican una idea o comentario.
 * [QnA](/help/communities/working-with-qna.md): los miembros crean una pregunta o responden a una pregunta.
-* [Reseñas](/help/communities/reviews.md): los miembros publican un comentario al clasificar un elemento.
+* [Críticas](/help/communities/reviews.md): los miembros publican un comentario al clasificar un elemento.
 
-La moderación de UGC es útil para reconocer contribuciones positivas, así como para limitar las negativas (como spam y lenguaje abusivo). UGC se puede moderar desde varios entornos:
+La moderación de UGC es útil para reconocer las contribuciones positivas y limitar las negativas (como el spam y el lenguaje abusivo). UGC se puede moderar desde varios entornos:
 
-* [Almacenamiento de contenido de la comunidad](working-with-srp.md)
+* [Almacenamiento de contenido de comunidad](working-with-srp.md)
 
 * [Consola de moderación masiva](moderation.md)
 
-   Los administradores y [moderadores de la comunidad](/help/communities/users.md) en el entorno público, así como por administradores en el entorno de creación. Esto es posible cuando el contenido de la comunidad se almacena en una [tienda común](/help/communities/working-with-srp.md).
+   Los administradores y pueden acceder a la consola de moderación [moderadores de la comunidad](/help/communities/users.md) en el entorno público, así como por los administradores del entorno de creación. Esto es posible cuando el contenido de la comunidad se almacena en una [almacén común](/help/communities/working-with-srp.md).
 
 * [Moderación en contexto](in-context.md)
 
-   La moderación en el entorno de publicación puede ser realizada por administradores y moderadores de la comunidad directamente en la página donde se publicó el contenido.
+   La moderación en el entorno de publicación la pueden realizar los administradores y los moderadores de la comunidad directamente en la página en la que se publicó el contenido.
 
 ## Acciones de moderación {#moderation-actions}
 
-Las acciones que se pueden realizar en el contenido publicado (UGC) varían según la identidad del usuario y el entorno. La tabla siguiente utiliza la siguiente terminología para describir las distintas funciones según la identidad del usuario:
+Las acciones que se pueden realizar en el contenido publicado (UGC) varían según la identidad del usuario y el entorno. La siguiente tabla utiliza la siguiente terminología para describir las distintas funciones según la identidad del usuario:
 
 * `Admin`
 
-   Un usuario que es miembro de [administradores de la comunidad](users.md) grupo.
+   Un usuario que es miembro de [community-administrators](users.md) grupo.
 
 * `Moderator`
 
@@ -64,7 +64,7 @@ Las acciones que se pueden realizar en el contenido publicado (UGC) varían seg�
 
 * `Member`
 
-   Usuario que ha iniciado sesión sin permisos especiales.
+   Un usuario que ha iniciado sesión sin permisos especiales.
 
 * `Visitor`
 
@@ -113,7 +113,7 @@ Las acciones que se pueden realizar en el contenido publicado (UGC) varían seg�
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Cerrar/<br /> Volver a abrir</strong></td>
+   <td><strong>Cerrar/<br /> Reabrir</strong></td>
    <td>X</td>
    <td>X</td>
    <td> </td>
@@ -145,7 +145,7 @@ Las acciones que se pueden realizar en el contenido publicado (UGC) varían seg�
  </tbody>
 </table>
 
-### Editar / Eliminar {#edit-delete}
+### Editar/eliminar {#edit-delete}
 
 Una vez realizada una publicación, el creador, un administrador o un moderador de la comunidad pueden editarla o eliminarla.
 
@@ -153,7 +153,7 @@ Cuando se elimina UGC, se elimina del repositorio y es posible que no se recuper
 
 ### Cortar {#cut}
 
-Es posible que un administrador o un moderador de la comunidad mueva uno o más temas del foro o preguntas de control de calidad de una ubicación a otra. Esto incluye desde un sitio de la comunidad a otro sitio de la comunidad, siempre que el mismo miembro tenga privilegios de moderación en ambos sitios.
+Un administrador o un moderador de la comunidad pueden mover uno o más temas de foro o preguntas de control de calidad de una ubicación a otra. Esto incluye de un sitio de comunidad a otro sitio de comunidad, siempre que el mismo miembro tenga privilegios de moderación en ambos sitios.
 
 Al seleccionar la acción Cortar, el contenido se copia en un portapapeles. Se pueden copiar varias publicaciones y moverlas como un grupo a la nueva ubicación.
 
@@ -161,7 +161,7 @@ Al seleccionar la acción Cortar, el contenido se copia en un portapapeles. Se p
 
 ![putbackugc](assets/putbackugc.png)
 
-En la otra ubicación, cuando el contenido está presente en el portapapeles, aparece un botón Pegar junto a Nueva publicación con un número que identifica el número de publicaciones que se pegarán. El botón Pegar incluye una opción para borrar el portapapeles en lugar de pegarlo.
+En la otra ubicación, cuando el contenido está presente en el portapapeles, se ve un botón Pegar junto a Nueva publicación con un número que identifica el número de publicaciones que se pegarán. El botón Pegar incluye una opción para borrar el portapapeles en lugar de pegarlo.
 
 ![pasteugc](assets/pasteugc.png)
 
@@ -169,68 +169,68 @@ En la otra ubicación, cuando el contenido está presente en el portapapeles, ap
 
 ### Denegar {#deny}
 
-Un moderador puede no permitir que UGC permanezca visible en el sitio publicado. Para los administradores y moderadores de la comunidad, la publicación sigue disponible y se anota como correo no deseado.
+Un moderador puede impedir que UGC permanezca visible en el sitio publicado. Para los administradores y moderadores de la comunidad, la publicación sigue disponible y se anota como correo no deseado.
 
 ### Cerrar/volver a abrir {#close-reopen}
 
-La acción Cerrar funciona en todo el subproceso de conversación (un tema del foro o el comentario inicial) e incluye todos los anuncios o respuestas posteriores.
+La acción Cerrar funciona en todo el hilo de conversación (un tema de foro o el comentario inicial) e incluye todas las publicaciones o respuestas posteriores.
 
-Cuando se cierra, no solo no se pueden obtener más respuestas, sino que tampoco se permiten acciones de moderación.
+Cuando se cierra, no solo no son posibles más respuestas, sino que tampoco se permiten acciones de moderación.
 
-Para realizar cualquier operación, se debe volver a abrir el tema o comentario.
+Para realizar cualquier operación, el tema o comentario debe volver a abrirse.
 
-Los administradores o los moderadores de la comunidad pueden realizar la acción Cerrar/Volver a abrir .
+La acción Cerrar/Volver a abrir puede ser realizada por administradores o moderadores de la comunidad.
 
-### Marcar/Desmarcar {#flag-unflag}
+### Marcar/Anular marca {#flag-unflag}
 
-El marcado es un medio para que cualquier miembro que haya iniciado sesión, excepto el creador del contenido, indique que hay un problema con el contenido de una publicación. Una vez marcado, aparecerá un icono para desmarcar que permitirá que el mismo miembro desmarque el contenido.
+Marcar es un medio para que cualquier miembro que haya iniciado sesión, excepto el creador del contenido, indique que hay un problema con el contenido de una publicación. Una vez marcado, aparecerá un icono de desmarcar que permitirá al mismo miembro desmarcar el contenido.
 
-Se puede configurar la moderación en contexto para permitir que los miembros seleccionen un motivo al marcar una publicación. La lista de motivos de indicador seleccionables se puede configurar, incluso si se puede introducir o no un motivo personalizado. El motivo del indicador se guarda con el UGC, pero el motivo no da déclencheur a ninguna acción en particular. Solo el número de indicadores déclencheur una notificación. El contenido marcado se anota como tal, para que los moderadores puedan actuar en él.
+La moderación en contexto se puede configurar para permitir que los miembros seleccionen un motivo al marcar una publicación. La lista de motivos de marca seleccionables se puede configurar, incluido si se puede introducir o no un motivo personalizado. El motivo del indicador se guarda con el UGC, pero el motivo no almacena en déclencheur ninguna acción en particular. Solo el número de indicadores déclencheur una notificación. El contenido marcado se anota como tal para que los moderadores puedan actuar en consecuencia.
 
-El sistema realiza un seguimiento de todos los indicadores, que están marcados, y del motivo del indicador y envía un evento cuando se alcanza el umbral. Si un moderador de la comunidad permite el UGC, estos indicadores se archivan. Después de permitir y archivar, si hay retornos subsiguientes, se archivarían como si no hubiera habido retornos anteriores.
+El sistema realiza un seguimiento de todas las marcas, quién las marcó y el motivo de la marca, y envía un evento cuando se alcanza el umbral. Si un moderador de la comunidad permite el UGC, estos indicadores se archivan. Después de permitir y archivar, si hay marcas posteriores, se archivan como si no hubiera habido marcas anteriores.
 
 ### Permitir {#allow}
 
-La acción Permitir es una opción para UGC que se ha marcado, rechazado o no se ha aprobado en un sistema moderado previamente. La acción Permitir borrará cualquier estado marcado, denegado o no deseado presente y archivará los datos marcados.
+La acción Permitir es una opción para UGC que se ha marcado, denegado o no se ha aprobado en un sistema con moderación previa. La acción Permitir borrará cualquier estado marcado o denegado/spam presente y archivará cualquier dato marcado.
 
-## Conceptos de moderación comunes {#common-moderation-concepts}
+## Conceptos comunes de moderación {#common-moderation-concepts}
 
 ### Premoderación {#premoderation}
 
-Cuando se modera previamente UGC, la publicación no aparece en el sitio publicado hasta que se aprueba mediante una acción de moderación. Durante la creación de un [sitio de la comunidad](/help/communities/sites-console.md), marcando la casilla [El contenido está moderado previamente](sites-console.md#moderation) habilitará la moderación previa para todo el sitio. Una vez que los componentes se colocan en una página, los componentes compatibles con la moderación se pueden configurar para la premoderación mediante un ajuste en el cuadro de diálogo de edición:
+Cuando UGC está premoderado, la publicación no aparecerá en el sitio publicado hasta que sea aprobada por una acción de moderación. Durante la creación de un [sitio comunitario](/help/communities/sites-console.md), marcando la casilla [Contenido con moderación previa](sites-console.md#moderation) habilitará la moderación previa en todo el sitio. Una vez que los componentes se colocan en una página, los que admiten la moderación se pueden configurar para la moderación previa mediante una configuración en el cuadro de diálogo de edición:
 
-* [Comentarios](comments.md) y [revisiones](reviews.md)
-en **[!UICONTROL Moderación del usuario]** > **[!UICONTROL Premoderación]**.
+* [Comentarios](comments.md) y [críticas](reviews.md)
+in **[!UICONTROL Moderación de usuario]** > **[!UICONTROL Premoderación]**.
 
-* [Foro](/help/communities/forum.md), [ideación](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md)y [calendario](/help/communities/calendar.md)
-en **[!UICONTROL Configuración]** > **[!UICONTROL Moderado]**.
+* [Foro](/help/communities/forum.md), [ideación](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md), y [calendario](/help/communities/calendar.md)
+in **[!UICONTROL Configuración]** > **[!UICONTROL Moderado]**.
 
-### Detección de correo no deseado {#spam-detection}
+### Detección de spam {#spam-detection}
 
-La detección de correo no deseado es una funcionalidad de moderación automática que filtra fragmentos indeseables de contenido generado por el usuario y los marca como correo no deseado. Una vez activado, identifica si el contenido generado por el usuario es correo no deseado o no se basa en una colección preconfigurada de palabras de correo no deseado. Las palabras de spam predeterminadas se proporcionan en
+La detección de correo no deseado es una funcionalidad de moderación automática que filtra los fragmentos no deseados del contenido generado por el usuario al marcarlos como correo no deseado. Una vez habilitado, identifica si el contenido generado por un usuario es correo no deseado o no en función de una colección preconfigurada de palabras no deseadas. Las palabras de correo no deseado predeterminadas se proporcionan en
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-Sin embargo, para personalizar o ampliar las palabras de spam predeterminadas, cree un conjunto de palabras en el directorio /apps siguiendo la estructura de las palabras de spam predeterminadas mediante [superposición](/help/communities/overlay-comments.md).
+Sin embargo, para personalizar o ampliar las palabras de correo no deseado predeterminadas, cree un conjunto de palabras en el directorio /apps siguiendo la estructura de las palabras de correo no deseado predeterminadas mediante [superposición](/help/communities/overlay-comments.md).
 
-Un anuncio generado por el usuario (en todos los tipos de contenido, por ejemplo blogs, foros y comentarios) que contiene palabras de spam está marcado con el texto &quot;Este anuncio fue clasificado como correo no deseado&quot; encima del anuncio.
+Una publicación generada por el usuario (en todos los tipos de contenido, por ejemplo, blogs, foros y comentarios) que contenga palabras no deseadas se marca con el texto &quot;Esta publicación se clasificó como no deseada&quot; encima de la publicación.
 
-El moderador puede ver una publicación de este tipo y marcar la misma para permitir o negar que aparezca en el sitio. Las acciones de moderación en estas publicaciones se pueden realizar en contexto o a través de la interfaz de usuario de moderación masiva.
+El moderador puede ver una publicación de este tipo y marcar la misma para permitir o denegar la aparición en el sitio. Las acciones de moderación de estas publicaciones se pueden realizar en contexto o a través de la interfaz de usuario de moderación masiva.
 
-![spamdetect](assets/spamdetection.png)
+![detección de spam](assets/spamdetection.png)
 
-Para habilitar el motor de detección de correo no deseado, siga estos pasos:
+Para activar el motor de detección de correo no deseado, siga estos pasos:
 
-1. Apertura [Consola web](https://localhost:4502/system/console/configMgr), accediendo a `/system/console/configMgr`.
+1. Abrir [Consola web](https://localhost:4502/system/console/configMgr), accediendo a `/system/console/configMgr`.
 
-1. Localizar **Moderación automática de AEM Communities** y edítela.
-1. Agregue la variable **[!UICONTROL SpamProcess]** entrada.
+1. Localizar **Moderación automática de AEM Communities** y editarla.
+1. Añada el **[!UICONTROL SpamProcess]** entrada.
 
-![spamprocess](assets/spamprocess.png)
+![proceso spam](assets/spamprocess.png)
 
 >[!NOTE]
 >
->La detección de correo no deseado solo se implementa para la configuración regional en inglés.
+>La detección de correo no deseado solo se implementa en la configuración regional en inglés.
 
 ### Opinión {#sentiment}
 
@@ -238,59 +238,59 @@ La opinión se calcula según el número de palabras clave positivas y negativas
 
 El análisis de opinión utiliza un conjunto de reglas preconfiguradas y calcula la opinión del UGC. Las reglas predeterminadas se encuentran en: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
-El valor que generan las reglas es de 1 (todas negativas, ninguna palabra positiva) a 10 (todas positivas, ninguna palabra negativa). Un valor de opinión de 5 es una opinión neutra y es el valor predeterminado.
+El valor que generan las reglas es de 1 (todas negativas, sin palabras positivas) a 10 (todas positivas, sin palabras negativas). Un valor de opinión de 5 es un sentimiento neutro y es el valor predeterminado.
 
-Las reglas definidas en el componente /libs son:
+Las reglas definidas en el componente /libs son las siguientes:
 
 * Regla 1: establezca el valor en 1 si no hay palabras positivas y al menos una palabra negativa.
-* Artículo 2: establezca el valor en 10 si no hay palabras negativas y al menos una palabra positiva.
+* Regla 2: establezca el valor en 10 si no hay palabras negativas y al menos una palabra positiva.
 * Regla 3: establezca el valor en 3 si hay más palabras negativas que positivas.
-* Artículo 4: establezca el valor en 8 si hay más palabras positivas que negativas.
+* Regla 4: establezca el valor en 8 si hay más palabras positivas que negativas.
 
-Para sobrescribir o añadir reglas, cree un conjunto de reglas en el directorio /apps siguiendo la estructura de las reglas predeterminadas. Edite la configuración de opinión para identificar la ubicación de las reglas.
+Para sobrescribir o agregar reglas, cree un conjunto de reglas en el directorio /apps siguiendo la estructura de las reglas predeterminadas. Edite la configuración de opinión para identificar la ubicación de las reglas.
 
-Una vez analizada, la opinión se almacena con el UGC.
+Una vez analizado, la opinión se almacena con el UGC.
 
-En el [consola de moderación masiva](/help/communities/moderation.md), es posible filtrar y ver el UGC en función de si la opinión es negativa, neutra o positiva.
+Desde el [consola de moderación masiva](/help/communities/moderation.md)Sin embargo, es posible filtrar y ver UGC en función de si la opinión es negativa, neutral o positiva.
 
-#### Palabras clave {#watchwords}
+#### Watchwords {#watchwords}
 
-AEM comunidades proporciona un *analizador de palabras clave* como paso en el proceso de evaluación [opinión](#sentiment). La contribución al valor de opinión que proporcionan las palabras clave se debe a una comparación de palabras clave negativas y positivas utilizadas en el contenido publicado, así como a palabras prohibidas.
+AEM Las comunidades de proporcionan un *analizador de palabras clave* como paso en el proceso de evaluación [opinión](#sentiment). La contribución al valor de opinión proporcionado por las palabras clave se debe a una comparación de palabras clave negativas y positivas utilizadas en el contenido publicado, así como palabras prohibidas.
 
-#### Configuración de opiniones y palabras clave {#configure-sentiment-and-watchwords}
+#### Configuración de opiniones y palabras de inspección {#configure-sentiment-and-watchwords}
 
-La lista de palabras clave positivas y negativas se puede personalizar, al igual que las reglas de opinión.
+La lista de palabras observadas positivas y negativas se puede personalizar, al igual que las reglas de opinión.
 
-La lista predeterminada de palabras clave se puede introducir como propiedades de un nodo en el repositorio, similar al valor predeterminado o anulando el valor predeterminado configurando el servicio OSGi `sentimentprocess.name` con la lista de palabras.
+La lista predeterminada de palabras observadas se puede introducir como propiedades de un nodo en el repositorio, de forma similar a la predeterminada, o anulando la predeterminada configurando el servicio OSGi `sentimentprocess.name` con la lista de palabras.
 
-La variable **sentimentprocess.name** también se puede modificar para hacer referencia a la ubicación de un conjunto personalizado de reglas de opinión.
+El **sentimentprocess.name** también se puede modificar para hacer referencia a la ubicación de un conjunto personalizado de reglas de opinión.
 
-Para configurar la opinión y las palabras clave:
+Para configurar opiniones y palabras observadas:
 
-* Inicie sesión en la instancia de autor como administrador.
-* Apertura [Consola web](https://localhost:4502/system/console/configMgr).
+* Inicie sesión en la instancia de autor de como administrador.
+* Abrir [Consola web](https://localhost:4502/system/console/configMgr).
 * Localizar `sentimentprocess.name`.
 * Seleccione la configuración que desea abrir en el modo de edición.
 
 ![sentimentprocess](assets/sentimentprocess.png)
 
-* **Palabras clave positivas**
+* **Observaciones positivas**
 
-   Lista de palabras separadas por coma que contribuyen a una opinión positiva que anula los valores predeterminados. El valor predeterminado es una lista vacía.
+   Una lista separada por comas de palabras que contribuyen a un sentimiento positivo que anula los valores predeterminados. La lista predeterminada está vacía.
 
-* **Palabras clave negativas**
+* **Observaciones negativas**
 
-   Lista de palabras separadas por coma que contribuyen a una opinión negativa que anula los valores predeterminados. El valor predeterminado es una lista vacía.
+   Una lista separada por comas de palabras que contribuyen a un sentimiento negativo que anula los valores predeterminados. La lista predeterminada está vacía.
 
 * **Ruta explícita al nodo Watchwords**
 
-   La ubicación del repositorio de un nodo que contiene el valor predeterminado `positive` y `negative` propiedades que especifican las palabras clave predeterminadas. El valor predeterminado es `/libs/settings/community/watchwords/default`.
+   Ubicación del repositorio de un nodo que contiene el valor predeterminado `positive` y `negative` propiedades especificar palabras observadas predeterminadas. El valor predeterminado es `/libs/settings/community/watchwords/default`.
 
 * **Reglas de opinión**
 
-   La ubicación del repositorio de las reglas para calcular la opinión en función de las palabras clave positivas y negativas. El valor predeterminado es `/libs/cq/workflow/components/workflow/social/sentiments/rules` (sin embargo, ya no hay ningún flujo de trabajo implicado).
+   Ubicación del repositorio de las reglas para calcular la opinión basada en palabras observadas positivas y negativas. El valor predeterminado es `/libs/cq/workflow/components/workflow/social/sentiments/rules` (sin embargo, ya no hay ningún flujo de trabajo involucrado).
 
-A continuación se muestra un ejemplo de una entrada personalizada para las palabras clave predeterminadas, cuando `Explicit Path to Watchwords Node` está configurado como `/libs/settings/community/watchwords/default`.
+A continuación se muestra un ejemplo de una entrada personalizada para las palabras clave predeterminadas, cuando `Explicit Path to Watchwords Node` se establece en `/libs/settings/community/watchwords/default`.
 
 ![crxde](assets/crxde.png)
 

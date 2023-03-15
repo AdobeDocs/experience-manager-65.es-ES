@@ -1,7 +1,7 @@
 ---
 title: Métodos abreviados del teclado para las consolas
 seo-title: Keyboard Shortcuts for Consoles
-description: Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas, mientras que otros se refieren a la edición de páginas.
+description: Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se usan en las consolas, mientras que otros se emplean para la edición de páginas.
 seo-description: Various keyboard shortcuts are available throughout AEM. Some apply to the use of consoles, others to page editing.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert

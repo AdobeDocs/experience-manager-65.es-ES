@@ -4,7 +4,7 @@ product: experience manager
 audience: end-user
 user-guide-title: Notas de la versión de Adobe Experience Manager 6.5
 breadcrumb-title: Notas de la versión
-user-guide-description: Obtenga información sobre las últimas funciones nuevas de AEM 6.5 en las notas de la versión.
+user-guide-description: AEM Obtenga información acerca de las últimas funciones de la versión 6.5 de en las notas de la versión.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: dbe13e38861486b0b7d82e860fa6a3ff52b03a07
@@ -19,7 +19,7 @@ ht-degree: 47%
 
 + [Notas de la versión 6.5 de AEM](home.md)
 + [Notas de la versión actual](release-notes.md)
-+ [Instrucciones de instalación de AEM Forms Service Pack](aem-forms-current-service-pack-installation-instructions.md)
++ [Instrucciones de instalación del Service Pack de AEM Forms](aem-forms-current-service-pack-installation-instructions.md)
 + [Notas de la versión anterior]{#service-pack}
    + [6.5.15](previous/6.5.15.md)
    + [6.5.14](previous/6.5.14.md)
@@ -37,6 +37,6 @@ ht-degree: 47%
    + [6.5.2](previous/6.5.2.md)
    + [6.5.1](previous/6.5.1.md)
    + [6.5.0](previous/ga.md)
-+ [Instalador de parches JEE de AEM Forms](jee-patch-installer-65.md)
++ [Programa de instalación de parches de AEM Forms JEE](jee-patch-installer-65.md)
 + [Funciones en desuso y eliminadas](deprecated-removed-features.md)
 + [Estado de la función de IU táctil](touch-ui-features-status.md)

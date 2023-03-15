@@ -22,7 +22,7 @@ ht-degree: 92%
 
 Cree un lanzamiento para poder actualizar las páginas web existentes a una versión nueva que se activará en el futuro. Al crear un lanzamiento, especificará un título y la página de origen:
 
-* El título aparece en la sección **Barra de tareas**, desde donde los autores pueden acceder para trabajar en ellos.
+* El título aparece en la **Compañero**, desde donde los autores pueden acceder a ellas para trabajar en ellas.
 * Las páginas secundarias de la página de origen se incluyen en el lanzamiento de forma predeterminada. Si lo desea, puede utilizar solo una página de origen.
 * De forma predeterminada, [Live Copy](/help/sites-administering/msm.md) actualiza automáticamente las páginas de lanzamiento a medida que cambian las páginas de origen. Puede especificar que se cree una copia estática para evitar cambios automáticos.
 
@@ -42,7 +42,7 @@ En el siguiente procedimiento se crea un lanzamiento.
    * **Mantener sincronizado**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Para ello, el lanzamiento se convierte en una [Live Copy](/help/sites-administering/msm.md).
    * **Fecha del lanzamiento**: la fecha y hora en que la copia de lanzamiento se debe activar (depende del indicador **Producción lista**; consulte [Lanzamientos: orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
-   ![imagen_1-99](assets/chlimage_1-99a.png)
+   ![chlimage_1-99](assets/chlimage_1-99a.png)
 
 1. Haga clic en **Crear**.
 

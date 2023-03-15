@@ -1,6 +1,6 @@
 ---
-title: 'Migración de Dynamic Media: modo híbrido a Dynamic Media: modo S7'
-description: Obtenga información sobre cómo migrar su instancia de Dynamic Media - Modo híbrido a Dynamic Media - Modo S7
+title: Migración de Dynamic Media - Modo híbrido a Dynamic Media - Modo S7
+description: 'Obtenga información sobre cómo migrar su instancia de Dynamic Media: modo híbrido a Dynamic Media: modo S7'
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -18,37 +18,37 @@ ht-degree: 2%
 
 # Acerca del paso de Dynamic Media-Hybrid a Dynamic Media-Scene7 {#about-migrating}
 
-Dynamic Media-Hybrid es una versión anterior de la integración de Dynamic Media con Adobe Experience Manager. La versión híbrida se introdujo por primera vez en Adobe Experience Manager 6.1. Aunque el Adobe sigue admitiendo el modo híbrido, no es el modo preferido; Dynamic Media-Scene7 es el modo preferido para usar. El modo híbrido tampoco admite nuevas funciones como Recorte inteligente e imágenes panorámicas, mientras que Dynamic Media-Scene7 sí las admite.
+Dynamic Media-Hybrid es una versión anterior de la integración de Dynamic Media con Adobe Experience Manager. La versión híbrida se introdujo por primera vez en Adobe Experience Manager 6.1. Aunque el Adobe sigue admitiendo el modo híbrido, no es el modo preferido; Dynamic Media-Scene7 es el modo preferido para usar. El modo híbrido tampoco admite nuevas funciones, como Recorte inteligente e imágenes panorámicas, mientras que Dynamic Media-Scene7 sí las admite.
 
-Entre las diferencias clave adicionales entre Dynamic Media-Hybrid y Dynamic Media-Scene7 se incluyen las siguientes:
+Otras diferencias clave entre Dynamic Media-Hybrid y Dynamic Media-Scene7 son las siguientes:
 
 * Estructura de las direcciones URL.
 * Ingesta de vídeos.
 * Creación y almacenamiento de representaciones de imágenes.
-* Configuración y credenciales de Cloud (aprovisionamiento).
+* Configuración y credenciales de nube (aprovisionamiento).
 
-Hay dos opciones disponibles al pasar de Dynamic Media-Hybrid a Dynamic Media-Scene7. La primera opción es simplemente aprovisionar una nueva instancia de Dynamic Media-Scene7 en el Experience Manager. La segunda opción es migrar la instancia existente de Dynamic Media-Hybrid a Dynamic Media-Scene7. Esta opción describe, en el formulario de la tabla siguiente, los pasos y las consideraciones que debe realizar durante el desplazamiento.
+Hay dos opciones disponibles al pasar de Dynamic Media-Hybrid a Dynamic Media-Scene7. La primera opción es simplemente aprovisionar una nueva instancia de Dynamic Media-Scene7 en el Experience Manager. La segunda opción es migrar la instancia existente de Dynamic Media-Hybrid a Dynamic Media-Scene7. Esta opción describe el formulario de tabla siguiente: los pasos y las consideraciones que debe seguir durante el movimiento.
 
 >[!IMPORTANT]
 >
->Adobe recomienda que no migre una implementación híbrida de Dynamic Media a Dynamic Media-Scene7 en instancias de producción activas.
+>El Adobe recomienda no migrar una implementación híbrida de Dynamic Media a Dynamic Media-Scene7 en instancias de producción activas.
 
-## Opción 1: Aprovisionar una nueva instancia de Dynamic Media-Scene7 en el Experience Manager {#provision-new-dms7}
+## Opción 1: aprovisionar una nueva instancia de Dynamic Media-Scene7 en el Experience Manager {#provision-new-dms7}
 
-Considere simplemente comenzar de nuevo con una nueva instancia aprovisionada de Dynamic Media-Scene7 en Adobe Experience Manager. Además de la ingesta y el procesamiento de recursos mediante Dynamic Media Cloud Service, se recomienda realizar una auditoría de Adobe del uso de recursos, los flujos de trabajo y los componentes. A menudo, puede reemplazar componentes personalizados y flujos de trabajo mediante el uso de funciones nuevas integradas.
+Considere simplemente empezar de cero con una nueva instancia aprovisionada de Dynamic Media-Scene7 en Adobe Experience Manager. Además de la ingesta y el procesamiento de recursos mediante Dynamic Media Cloud Service, se recomienda realizar una auditoría de Adobe del uso de los recursos, los flujos de trabajo y los componentes. A menudo, puede reemplazar componentes y flujos de trabajo personalizados mediante el uso de funciones más nuevas y listas para usar.
 
 ## Opción 2: Migre la instancia existente de Dynamic Media-Hybrid a Dynamic Media-Scene7 {#process-for-migrating}
 
-| Etapa | Tarea | Consideraciones |
+| Paso | Tarea | Consideraciones |
 |---|---|---|
-| 1 | Clona la instancia de Autor híbrido de Dynamic Media. | Mantenga la instancia existente de Dynamic Media-Hybrid Author con fines de reserva hasta que los pasos restantes de este proceso de migración se completen correctamente. |
-| 2 | Inicie la instancia de Autor clonada en el modo Dynamic Media-Scene7. |  |
-| 3 | En los Cloud Services de Adobe Experience Manager, configure Dynamic Media con las credenciales de Dynamic Media-Scene7. | Adobe debe aprobar el aprovisionamiento Dynamic Media-Scene7. Como tal, tiene entornos dinámicos MediaM-híbridos y Dynamic Media-Scene7 simultáneos compatibles con el Adobe, pero solo durante un tiempo limitado. |
-| 4 | Cree un paquete de migración para que pueda ingerir los recursos según sea necesario.<br>Elimine los PTIFF locales que se crearon durante la ingesta inicial en Dynamic Media-Hybrid. | Si todos los recursos están disponibles actualmente en su instancia Dynamic Media-Hybrid, un clon de que ya los incluye a todos. Por lo tanto, no se necesita ningún paquete. |
-| 5 | Ejecute el flujo de trabajo de actualización de recursos para poder sincronizar recursos con el Cloud Service de Dynamic Media. | Adobe recomienda realizar el flujo de trabajo de actualización en lotes para permitir la compactación. |
-| 6 | Migre los ajustes preestablecidos de visor, imagen y vídeo. |  |
-| 7 | Vaya por cada recurso al que se hace referencia en la Administración de contenido web y actualice sus direcciones URL asociadas. |  |
-| 8 | Migre cualquier flujo de trabajo personalizado que desee que admita el nuevo modo Dynamic Media-Scene7 (actualizaciones manuales). |  |
-| 9 | Compruebe la carga y la configuración de la administración de contenido web. |  |
-| 10 | Después de la verificación, obtenga una aprobación para deshabilitar Dynamic Media-Hybrid Author (mantenga como alternativa). |  |
-| 11 | Elimine la instancia Dynamic Media-Hybrid Author después de aproximadamente un mes de uso correcto de Dynamic Media-Scene7. |  |
+| 1 | Clonar instancia de autor híbrido de Dynamic Media. | Mantenga la instancia existente de Dynamic Media-Hybrid Author como alternativa hasta que los pasos restantes de este proceso de migración se completen correctamente. |
+| 2 | Inicie la instancia de autor clonada en el modo Dynamic Media-Scene7. |  |
+| 3 | En Cloud Services de Adobe Experience Manager, configure Dynamic Media con las credenciales de Dynamic Media-Scene7. | El Adobe debe aprobar el aprovisionamiento Dynamic Media-Scene7. Como tal, tiene entornos simultáneos Dynamic MediaM-Hybrid y Dynamic Media-Scene7 compatibles con el Adobe, pero solo por un tiempo limitado. |
+| 4 | Cree un paquete de migración para poder ingerir recursos según sea necesario.<br>Elimine los PTIFF locales creados durante la ingesta inicial en Dynamic Media-Hybrid. | Si todos los recursos están disponibles actualmente en la instancia híbrida de Dynamic Media, un clon de que ya los incluye a todos. Por lo tanto, no se necesita ningún paquete. |
+| 5 | Ejecute el flujo de trabajo de actualización de recursos para poder sincronizar recursos con el Cloud Service de Dynamic Media. | El Adobe recomienda realizar el flujo de trabajo de actualización por lotes para permitir la compactación. |
+| 6 | Migre ajustes preestablecidos de visualizador, imagen y vídeo. |  |
+| 7 | Pase por cada recurso al que se hace referencia en la Administración de contenido web y actualice sus direcciones URL asociadas. |  |
+| 8 | Migre los flujos de trabajo personalizados que desee que admitan el nuevo modo Dynamic Media-Scene7 (actualizaciones manuales). |  |
+| 9 | Compruebe la carga y configuración de la gestión de contenido web. |  |
+| 10 | Después de la verificación, obtenga una aprobación para deshabilitar Dynamic Media-Hybrid Author (mantener como reserva). |  |
+| 11 | Elimine la instancia de autor híbrida de Dynamic Media después de aproximadamente un mes de uso correcto de Dynamic Media y Scene7. |  |

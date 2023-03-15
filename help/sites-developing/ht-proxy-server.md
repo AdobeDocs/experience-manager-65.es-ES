@@ -1,5 +1,5 @@
 ---
-title: Cómo utilizar la herramienta Proxy Server
+title: Cómo utilizar la herramienta de servidor proxy
 seo-title: How to use the Proxy Server Tool
 description: El servidor proxy actúa como un servidor intermedio que transmite solicitudes entre un cliente y un servidor
 seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
@@ -17,24 +17,24 @@ ht-degree: 0%
 
 ---
 
-# Cómo utilizar la herramienta Proxy Server{#how-to-use-the-proxy-server-tool}
+# Cómo utilizar la herramienta de servidor proxy{#how-to-use-the-proxy-server-tool}
 
-El servidor proxy actúa como un servidor intermedio que transmite solicitudes entre un cliente y un servidor. El servidor proxy realiza un seguimiento de todas las interacciones cliente-servidor y genera un registro de toda la comunicación TCP. Esto le permite monitorizar exactamente lo que está sucediendo, sin tener que acceder al servidor principal.
+El servidor proxy actúa como un servidor intermedio que transmite solicitudes entre un cliente y un servidor. El servidor proxy realiza un seguimiento de todas las interacciones cliente-servidor y genera un registro de toda la comunicación TCP. Esto le permite monitorizar exactamente lo que está pasando, sin tener que acceder al servidor principal.
 
-Puede encontrar el servidor proxy en su instalación de AEM aquí:
+AEM Puede encontrar el servidor proxy en su instalación de la aquí:
 
 `crx-quickstart/opt/helpers/proxy-2.1.jar`
 
-Puede utilizar el servidor proxy para supervisar todas las interacciones cliente-servidor, independientemente del protocolo de comunicación subyacente. Por ejemplo, puede monitorizar los siguientes protocolos:
+Puede utilizar el servidor proxy para supervisar toda la interacción cliente-servidor, independientemente del protocolo de comunicación subyacente. Por ejemplo, puede supervisar los siguientes protocolos:
 
 * HTTP para páginas web
 * HTTPS para páginas web seguras
 * SMTP para mensajes de correo electrónico
-* LDAP para administración de usuarios
+* LDAP para la administración de usuarios
 
-Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones cualesquiera que se comuniquen a través de una red TCP/IP; Por ejemplo, un explorador web y AEM. Esto le permite monitorizar exactamente lo que sucede cuando solicita una página de CQ.
+AEM Por ejemplo, puede colocar el servidor proxy entre dos aplicaciones que se comunican a través de una red TCP/IP; por ejemplo, un explorador web y un servidor de correo electrónico de la red de red de la red de red de la red de Internet (). Esto le permite monitorizar exactamente lo que sucede cuando solicita una página CQ.
 
-## Inicio de la herramienta Proxy Server {#starting-the-proxy-server-tool}
+## Inicio de la herramienta de servidor proxy {#starting-the-proxy-server-tool}
 
 Inicie el servidor en la línea de comandos:
 
@@ -44,52 +44,52 @@ Inicie el servidor en la línea de comandos:
 
 `<host>`
 
-Esta es la dirección host de la instancia CRX a la que desea conectarse. Si la instancia está en el equipo local, entonces esto será `localhost`.
+Esta es la dirección de host de la instancia CRX a la que desea conectarse. Si la instancia está en el equipo local, el estado será `localhost`.
 
 `<remoteport>`
 
-Este es el puerto host de la instancia CRX de destino. Por ejemplo, el valor predeterminado de una instalación de AEM recién instalada es **`4502`** y el valor predeterminado para una instancia de autor de AEM recién instalada es `4502`.
+Este es el puerto host de la instancia CRX de destino. AEM Por ejemplo, el valor predeterminado de una instalación recién instalada es el siguiente: **`4502`** AEM y el valor predeterminado para una instancia de autor recién instalada es `4502`.
 
 `<localport>`
 
-Este es el puerto de su equipo local al que desea conectarse para acceder a la instancia CRX a través del proxy.
+Este es el puerto del equipo local al que desea conectarse para acceder a la instancia CRX a través del proxy.
 
 **Opciones**
 
 `-q` (modo silencioso)
 
-No escribe el resultado en la ventana de la consola. Utilícelo si no desea ralentizar la conexión o si registra la salida en un archivo (consulte la opción -logfile).
+No escribe el resultado en la ventana de la consola. Utilice esta opción si no desea ralentizar la conexión o si registra la salida en un archivo (consulte la opción -logfile ).
 
 `-b`(modo binario)
 
-Si está buscando combinaciones de bytes específicas en el tráfico, habilite el modo binario. La salida contendrá la salida hexadecimal y de caracteres.
+Si está buscando combinaciones de bytes específicas en el tráfico, habilite el modo binario. El resultado contendrá la salida hexadecimal y de caracteres.
 
-`-t` (entradas de registro de marca de hora)
+`-t` (entradas de registro de marca de tiempo)
 
-Agrega una marca de hora a cada salida de registro. La marca de tiempo se expresa en segundos, por lo que puede que no sea adecuada para comprobar solicitudes únicas. Utilícelo para localizar eventos que se produjeron en un momento específico si utiliza el servidor proxy durante un período de tiempo más largo.
+Agrega una marca de tiempo a cada salida de registro. La marca de tiempo está en segundos, por lo que es posible que no sea adecuada para comprobar solicitudes únicas. Utilícelo para localizar eventos que se produjeron en un momento específico si utiliza el servidor proxy durante un período de tiempo más largo.
 
 `-logfile <filename>`(escribir en el archivo de registro)
 
 Escribe la conversación cliente-servidor en un archivo de registro. Este parámetro también funciona en modo silencioso.
 
-**`-i <numIndentions>`**(añadir sangría)
+**`-i <numIndentions>`**(agregar sangría)
 
-Cada conexión activa tiene una sangría para mejorar la legibilidad. El valor predeterminado es de 16 niveles. Esta función se introdujo con `proxy.jar version 1.16`.
+Cada conexión activa tiene una sangría para mejorar la legibilidad. El valor predeterminado es 16 niveles. Esta función se introdujo con `proxy.jar version 1.16`.
 
 ### Formato de registro {#log-format}
 
-Las entradas de registro producidas por proxy-2.1.jar tienen todos el siguiente formato:
+Las entradas de registro producidas por proxy-2.1.jar tienen el siguiente formato:
 
 `[timestamp (optional)] [Client|Server]-[ConnectionNumber]-[BytePosition] ->[Character Stream]`
 
-Por ejemplo, una solicitud de una página web puede tener el siguiente aspecto:
+Por ejemplo, una solicitud de página Web puede tener el siguiente aspecto:
 
 `C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]`
 
-* C significa que esta entrada proviene del cliente (es una solicitud para una página web)
+* C significa que esta entrada proviene del cliente (es una solicitud de una página web)
 * 0 es el número de conexión (el contador de conexión comienza en 0)
-* # 00000 el desplazamiento en el flujo de bytes. Esta es la primera entrada, por lo que el desplazamiento es 0.
-* `[GET <?>]` es el contenido de la solicitud, en el ejemplo uno de los encabezados HTTP (url).
+* #00000 el desplazamiento en la secuencia de bytes. Esta es la primera entrada, por lo que el desplazamiento es 0.
+* `[GET <?>]` es el contenido de la solicitud; en el ejemplo, uno de los encabezados HTTP (url).
 
 Cuando se cierra una conexión, se registra la siguiente información:
 
@@ -98,15 +98,15 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Muestra el número de bytes que pasaron entre el cliente ( `C`) y el servidor ( `S`) en la 6ª conexión y a la velocidad media.
+Muestra el número de bytes que pasaron entre el cliente ( `C`) y el servidor ( `S`) en la sexta conexión y a la velocidad media.
 
 **Ejemplo de salida de registro**
 
-Por ejemplo, considere una página que produce el siguiente código cuando se solicita:
+Por ejemplo, considere una página que produzca el siguiente código cuando se solicite:
 
 ### Ejemplo {#example}
 
-Como ejemplo, considere un documento HTML muy simple ubicado en el repositorio en
+Por ejemplo, considere un documento HTML muy sencillo ubicado en el repositorio en
 
 `/content/test.html`
 
@@ -128,15 +128,15 @@ El contenido de `test.html` es:
 </html>
 ```
 
-Suponiendo que la instancia de AEM se está ejecutando en `localhost:4502` iniciamos el proxy de esta manera:
+AEM Suponiendo que la instancia de se esté ejecutando en `localhost:4502` iniciamos el proxy de esta manera:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-Ahora se puede acceder a la instancia CQ/CRX a través del proxy en `localhost:4444` y toda la comunicación a través de este puerto se registra en `test.log`.
+Ahora se puede acceder a la instancia de CQ/CRX a través del proxy en `localhost:4444` y toda la comunicación a través de este puerto se registra en `test.log`.
 
-Si ahora vemos el resultado del proxy, veremos la interacción entre el explorador y la instancia de AEM.
+AEM Si ahora vemos la salida del proxy, veremos la interacción entre el explorador y la instancia de la.
 
-Al iniciar, el proxy genera lo siguiente:
+Al inicio, el proxy genera lo siguiente:
 
 ```xml
 starting proxy for localhost:4502 on port 4444
@@ -147,7 +147,7 @@ A continuación, abrimos un explorador y accedemos a la página de prueba:
 
 `http://localhost:4444/content/test.html`
 
-y vemos que el navegador hace un `GET` solicitud para la página:
+y vemos que el navegador hace una `GET` solicitud de la página:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -164,7 +164,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-La instancia de AEM responde con el contenido del archivo `test.html`:
+AEM La instancia de respuesta responde con el contenido del archivo `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -190,7 +190,7 @@ S-0-#000319 -> [</html>]
 
 Los siguientes escenarios ilustran algunos de los propósitos para los que se puede utilizar el servidor proxy:
 
-**Comprobar las cookies y sus valores**
+**Buscar cookies y sus valores**
 
 El siguiente ejemplo de entrada de registro muestra todas las cookies y sus valores enviados por el cliente en la sexta conexión abierta desde que se inició el proxy:
 
@@ -198,7 +198,7 @@ El siguiente ejemplo de entrada de registro muestra todas las cookies y sus valo
 
 **Comprobación de encabezados y sus valores**
 
-El siguiente ejemplo de entrada de registro muestra que el servidor es capaz de establecer una conexión permanente y que el encabezado de longitud del contenido se configuró correctamente:
+El siguiente ejemplo de entrada de registro muestra que el servidor puede realizar una conexión persistente y que el encabezado de longitud de contenido se ha establecido correctamente:
 
 ```
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -206,29 +206,29 @@ S-7-#000017 -> [Connection: Keep-Alive ]
  S-7-#000107 -> [Content-Length: 124 ]
 ```
 
-**Comprobación de si Keep-Alive funciona**
+**Comprobar si Keep-Alive funciona**
 
-Keep-live es una función de HTTP que permite al cliente reutilizar la conexión TCP con el servidor para realizar varias solicitudes (para el código de página, imágenes, hojas de estilo, etc.). Sin mantenimiento, el cliente debe establecer una nueva conexión para cada solicitud.
+Keep-alive es una función de HTTP que permite a un cliente reutilizar la conexión TCP con el servidor para realizar varias solicitudes (para el código de página, imágenes, hojas de estilo, etc.). Sin la conexión persistente, el cliente debe establecer una nueva conexión para cada solicitud.
 
-Para comprobar si keep-live funciona:
+Para comprobar si la conexión persistente funciona:
 
 * Inicie el servidor proxy.
 * Solicite una página.
-* Si keep-live funciona, el contador de conexión nunca debe superar las 5 a 10 conexiones.
-* Si keep-live no funciona, el contador de conexiones aumenta rápidamente.
+* Si la conexión persistente funciona, el contador de conexiones nunca debe superar las 5 a 10 conexiones.
+* Si la conexión persistente no funciona, el contador de conexiones aumenta rápidamente.
 
 **Búsqueda de solicitudes perdidas**
 
-Si pierde solicitudes en una configuración de servidor compleja, por ejemplo, con un firewall y un distribuidor, puede utilizar el servidor proxy para averiguar dónde se perdió la solicitud. En el caso de un cortafuegos:
+Si pierde solicitudes en una configuración de servidor compleja, por ejemplo, con un cortafuegos y un distribuidor, puede utilizar el servidor proxy para averiguar dónde se perdió la solicitud. En el caso de un cortafuegos:
 
 * Iniciar un proxy antes de un cortafuegos
 * Iniciar otro proxy después de un cortafuegos
 * Utilícelos para ver hasta dónde llegan las solicitudes.
 
-**Solicitudes colgadas**
+**Solicitudes suspendidas**
 
-Si se producen solicitudes que se suspenden de vez en cuando:
+Si sufre solicitudes que se bloquean de vez en cuando:
 
 * Inicie el proxy.
-* Espere o escriba el registro de acceso en un archivo con cada entrada con una marca de tiempo.
-* Cuando la solicitud comienza a aparecer, puede ver cuántas conexiones estaban abiertas y qué solicitud está causando problemas.
+* Espere o escriba el registro de acceso en un archivo en el que cada entrada tenga una marca de tiempo.
+* Cuando la solicitud comienza a bloquearse, puede ver cuántas conexiones estaban abiertas y qué solicitud está causando problemas.

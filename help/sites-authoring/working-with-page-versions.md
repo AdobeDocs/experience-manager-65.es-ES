@@ -45,7 +45,7 @@ Puede crear una versión de su recurso desde:
 1. Seleccione **Guardar como versión**.
 1. Si procede, introduzca un valor en **Etiqueta** y en **Comentario**.
 
-   ![imagen_1-42](assets/chlimage_1-42.png)
+   ![chlimage_1-42](assets/chlimage_1-42.png)
 
 1. Confirme la nueva versión con **Crear**.
 
@@ -203,7 +203,7 @@ Deformación de tiempo es una función diseñada para simular el estado *publica
 
 >[!TIP]
 >
->[Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro](/help/sites-authoring/launches.md) cuando se ejecuta AEM 6.5.10.0 o posterior.
+>[La Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro](/help/sites-authoring/launches.md) AEM al ejecutar la versión 6.5.10.0 o posterior de la versión de.
 
 Debido a que la creación de contenido es un proceso continuo y colaborativo, el propósito de Deformación de tiempo es permitir que los creadores rastreen el sitio web publicado con el paso del tiempo para comprender cómo ha cambiado el contenido. Esta función emplea las versiones de página para determinar el estado del entorno de publicación.
 

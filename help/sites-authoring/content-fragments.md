@@ -108,7 +108,7 @@ En el cuadro de diálogo de configuración adecuado, puede seleccionar los pará
 
    * **Elemento de texto único**
 
-   * **Elemento múltiple**
+   * **Varios elementos**
 
 * **Elemento**
 

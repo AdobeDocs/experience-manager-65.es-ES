@@ -23,7 +23,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 >[!NOTE]
 >
->En las tablas siguientes, para las combinaciones de teclas de la variable **Acceso directo** , las teclas Ctrl y Comando funcionan en macOS.
+>En las tablas siguientes, para las combinaciones de teclas en la variable **Acceso directo** , las teclas Ctrl y Comando funcionan en macOS.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Existen otros métodos abreviados del teclado para los desarrolladores de escrit
   </tr>
   <tr>
    <td>Modo de edición</td>
-   <td>Establezca el siguiente sufijo en la URL:<br /> <code>?debugClientLibs=true</code><br /> A continuación, utilice:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Establezca el siguiente sufijo en la dirección URL:<br /> <code>?debugClientLibs=true</code><br /> A continuación utilice:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Para ver estadísticas de tiempo para la carga de páginas.</td>
   </tr>
  </tbody>

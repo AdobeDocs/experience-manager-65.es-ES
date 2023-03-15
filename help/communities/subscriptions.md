@@ -1,7 +1,7 @@
 ---
 title: Suscripciones de Communities
 seo-title: Communities Subscriptions
-description: Los miembros de la comunidad interactúan con otros miembros a través del correo electrónico
+description: Los miembros de la comunidad interactúan con otros miembros por correo electrónico
 seo-description: Community members interact with other members through email
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
@@ -22,15 +22,15 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-Como comunidades [FP1](deploy-communities.md#latestfeaturepack), los miembros de la comunidad pueden interactuar con la comunidad por correo electrónico con una función denominada como suscripciones.
+A partir de comunidades [FP1](deploy-communities.md#latestfeaturepack)Por lo tanto, los miembros de la comunidad pueden interactuar con la comunidad por correo electrónico mediante una función denominada suscripciones.
 
-Las suscripciones son similares a [notificaciones](notifications.md) como miembros pueden suscribirse a los artículos de blog, temas de foro o preguntas de control de calidad.
+Las suscripciones son similares a [notificaciones](notifications.md) como miembros pueden suscribirse al seguir artículos de blogs, temas de foros o preguntas de control de calidad.
 
 Lo que distingue las suscripciones de las notificaciones es:
 
-* Los Miembros no podrán suscribirse cuando sigan a otros miembros.
-* La única acción que deben realizar los miembros es seleccionar `Email Subscriptions` al siguiente.
-* Cuando se configura la respuesta por correo electrónico, los miembros pueden publicar contenido simplemente respondiendo al correo electrónico recibido.
+* Los Miembros no podrán suscribirse cuando sigan a otros Miembros.
+* La única acción que pueden realizar los miembros es seleccionar `Email Subscriptions` al seguir.
+* Cuando se configura la respuesta al correo electrónico, los miembros pueden publicar contenido de manera efectiva simplemente respondiendo al correo electrónico recibido.
 
 ### Requisitos  {#requirements}
 
@@ -38,34 +38,34 @@ Lo que distingue las suscripciones de las notificaciones es:
 
 El correo electrónico debe configurarse para que las suscripciones funcionen y para que los miembros respondan por correo electrónico.
 
-Para obtener instrucciones sobre la configuración del correo electrónico, consulte [Configuración del correo electrónico](email.md).
+Para obtener instrucciones sobre la configuración del correo electrónico, consulte [Configurar correo electrónico](email.md).
 
 **Habilitar suscripciones y seguir**
 
-Los componentes deben configurarse para habilitar las suscripciones *y* a continuación. Funciones que permiten suscripciones [blog](blog-feature.md), [foro](forum.md) y [QnA](working-with-qna.md).
+Los componentes deben configurarse para habilitar las suscripciones *y* siguiente. Las funciones que permiten suscripciones son [blog](blog-feature.md), [foro](forum.md) y [QnA](working-with-qna.md).
 
-## Suscripciones de lo siguiente {#subscriptions-from-following}
+## Suscripciones de los siguientes {#subscriptions-from-following}
 
-![suscripción siguiente](assets/subscription-following.png)
+![subscripción-siguiente](assets/subscription-following.png)
 
-La variable **Seguir** proporciona un medio para seguir entradas como actividades, suscripciones o notificaciones. Cada vez que se usa la variable **Seguir** está seleccionado, es posible activar o desactivar una selección.
+El **Seguir** El botón proporciona un medio para seguir las entradas como actividades, suscripciones o notificaciones. Cada vez que **Seguir** botón está seleccionado, es posible activar o desactivar una selección.
 
-Si se selecciona cualquier método de seguimiento, el texto del botón cambia a **A continuación**. Para mayor comodidad, es posible seleccionar `Unfollow All` para desactivar todos los métodos.
+Si se selecciona cualquier método de seguimiento, el texto del botón cambia a **Siguientes**. Para su comodidad, es posible seleccionar `Unfollow All` para desactivar todos los métodos.
 
-La variable **Seguir** incluirá `Email Subscriptions` solo cuando un foro, control de calidad o blog está configurado para habilitar suscripciones de correo electrónico. Aparecerá este botón:
+El **Seguir** El botón incluirá el `Email Subscriptions` opción solo cuando un foro, control de calidad o blog está configurado para habilitar suscripciones por correo electrónico. Este botón aparecerá:
 
-* En la página de características principal del foro habilitado, QnA o blog Enviará un correo electrónico para toda la actividad que se encuentre bajo esa función.
+* En la página de características principal del foro, control de calidad o blog habilitados, se enviará un correo electrónico con todas las actividades incluidas en dicha función.
 
-* Para una entrada específica, como un tema del foro, una pregunta de control de calidad o un artículo del blog Enviará un correo electrónico cuando haya actividad para esa entrada específica.
+* Para una entrada específica, como un tema de foro, una pregunta de control de calidad o un artículo de blog, se enviará un correo electrónico cuando haya actividad para esa entrada específica.
 
 ## Responder por correo electrónico {#reply-by-email}
 
-Cuando el correo electrónico es [configurado para responder por correo electrónico](email.md#configure-polling-importer), el miembro que se haya suscrito recibirá un correo electrónico con el contenido publicado y un vínculo al contenido en línea.
+Cuando el correo electrónico es [configurado para responder por correo electrónico](email.md#configure-polling-importer), el miembro que se haya suscrito recibirá un correo electrónico con el contenido publicado y un enlace al contenido en línea.
 
-Si responden al correo electrónico, el contenido que introduzcan en la respuesta aparecerá como contenido en línea.
+Si responde al correo electrónico, el contenido que introduce en la respuesta aparece como contenido en línea.
 
 ![email-reply](assets/email-reply.png)
 
-La cantidad de tiempo que se tarda en publicar una respuesta está controlada por la variable [intervalo de actualización del importador de encuestas](email.md#configure-polling-importer).
+La cantidad de tiempo que tarda una respuesta en publicarse está controlada por el [intervalo de actualización del importador de encuestas](email.md#configure-polling-importer).
 
 ![QA](assets/qa.png)

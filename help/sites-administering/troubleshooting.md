@@ -1,7 +1,7 @@
 ---
 title: Uso de registros
 seo-title: Working with Logs
-description: Obtenga información sobre cómo solucionar problemas de AEM trabajando con registros.
+description: AEM Obtenga información sobre cómo solucionar problemas de los registros de trabajo de la aplicación de.
 seo-description: Learn how to troubleshoot AEM by working with logs.
 uuid: af8b7f50-c8d4-4760-9f00-3feb0b79ee4c
 contentOwner: Guillaume Carlino
@@ -20,9 +20,9 @@ ht-degree: 3%
 
 # Uso de registros{#working-with-logs}
 
-Esta sección incluye información detallada sobre los registros disponibles para ayudarle a solucionar el problema.
+Esta sección incluye información detallada sobre los registros disponibles para ayudarle a solucionar problemas.
 
-CRX registra registros detallados. Después de desempaquetar e iniciar QuickStart, puede encontrar los registros en las siguientes ubicaciones:
+CRX registra los registros detallados. Después de desempaquetar e iniciar Quickstart, puede encontrar registros en las siguientes ubicaciones:
 
 * crx-quickstart/launchpad/logs
 * crx-quickstart/server/logs
@@ -30,17 +30,17 @@ CRX registra registros detallados. Después de desempaquetar e iniciar QuickStar
 
 ## Activación del nivel de registro de depuración {#activating-the-debug-log-level}
 
-El nivel de registro predeterminado es INFO, es decir, los mensajes DEBUG no se registran.
+El nivel de registro predeterminado es INFO, es decir, los mensajes de DEPURACIÓN no se registran.
 
-Para activar el nivel de registro de depuración, utilice el explorador CRX para establecer la variable
+Para activar el nivel de registro DEBUG, utilice el explorador CRX para establecer la variable
 
 ```xml
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
 ```
 
-para depurar. No deje el registro en el nivel de registro DEBUG más tiempo del necesario, ya que genera muchos registros.
+propiedad para depurar. No deje el registro en el nivel de registro DEBUG más tiempo del necesario, ya que genera muchos registros.
 
-Una línea en el archivo de depuración normalmente comienza con DEBUG y, a continuación, proporciona el nivel de registro, la acción del instalador y el mensaje de registro. Por ejemplo:
+Una línea del archivo de depuración suele comenzar con DEBUG y, a continuación, proporciona el nivel de registro, la acción del instalador y el mensaje de registro. Por ejemplo:
 
 ```xml
 DEBUG 3 WebApp Panel: WebApp successfully deployed
@@ -51,12 +51,12 @@ Los niveles de registro son los siguientes:
 | 0 | Error grave | La acción ha fallado y el instalador no puede continuar. |
 |---|---|---|
 | 1 | Error | La acción ha fallado. La instalación continúa, pero una parte de CRX no se instaló correctamente y no funcionará. |
-| 2 | Advertencia | La acción se ha realizado correctamente, pero se han encontrado problemas. CRX puede o no funcionar correctamente. |
+| 2 | Advertencia | La acción se realizó correctamente pero se encontraron problemas. CRX puede funcionar o no correctamente. |
 | 3 | Información | La acción se ha realizado correctamente. |
 
-## Opción versbose utilizada para la resolución de problemas {#verbose-option-used-for-troubleshooting}
+## Opción detallada utilizada para la resolución de problemas {#verbose-option-used-for-troubleshooting}
 
-Cuando inicie CRX, puede agregar la opción -v (verbose) a la línea de comandos como en:
+Al iniciar CRX, puede agregar la opción -v (detallada) a la línea de comandos como en:
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 

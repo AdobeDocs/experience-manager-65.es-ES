@@ -1,7 +1,7 @@
 ---
 title: Superposiciones
 seo-title: Overlays
-description: AEM utiliza el principio de las superposiciones para permitirle ampliar y personalizar las consolas y otras funciones
+description: AEM utiliza el principio de superposiciones para permitirle ampliar y personalizar las consolas y otras funcionalidades
 seo-description: AEM uses the principle of overlays to allow you to extend and customize the consoles and other functionality
 uuid: d14c08fe-04c0-4925-8c99-c6644357919d
 contentOwner: Guillaume Carlino
@@ -19,34 +19,34 @@ ht-degree: 0%
 
 # Superposiciones{#overlays}
 
-AEM (y antes de eso, CQ) ha utilizado durante mucho tiempo el principio de superposiciones para permitirle ampliar y personalizar el [consolas](/help/sites-developing/customizing-consoles-touch.md) y otras funciones (por ejemplo, [creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)).
+AEM (y antes de eso, CQ) ha utilizado durante mucho tiempo el principio de las superposiciones para permitirle ampliar y personalizar el [consolas](/help/sites-developing/customizing-consoles-touch.md) y otras funcionalidades (por ejemplo, [creación de páginas](/help/sites-developing/customizing-page-authoring-touch.md)).
 
-La superposición es un término que se puede utilizar en muchos contextos. En este contexto (ampliación de AEM), una superposición implica tomar la funcionalidad predefinida e imponer sus propias definiciones sobre ella (para personalizar la funcionalidad estándar).
+Superposición es un término que se puede utilizar en muchos contextos. AEM En este contexto (ampliar el intervalo de fechas), una superposición implica tomar la funcionalidad predefinida e imponer sus propias definiciones sobre ella (para personalizar la funcionalidad estándar).
 
-En una instancia estándar, la funcionalidad predefinida se mantiene en `/libs` y se recomienda definir la superposición (personalizaciones) en la variable `/apps` rama. AEM utiliza una ruta de búsqueda para encontrar un recurso, buscando primero el `/apps` y luego la `/libs` sucursal (la variable [la ruta de búsqueda se puede configurar](#configuring-the-search-paths)). Este mecanismo significa que la superposición (y las personalizaciones definidas allí) tendrán prioridad.
+En una instancia estándar, la funcionalidad predefinida se encuentra en `/libs` y se recomienda definir la superposición (personalizaciones) en `/apps` Rama. AEM utiliza una ruta de búsqueda para encontrar un recurso. Primero busca en el `/apps` y luego la `/libs` rama (la [se puede configurar la ruta de búsqueda](#configuring-the-search-paths)). Este mecanismo significa que la superposición (y las personalizaciones definidas) tendrán prioridad.
 
-Desde AEM 6.0, se han realizado cambios en la forma en que se implementan y usan las superposiciones:
+AEM Desde la versión 6.0, se han realizado cambios en la implementación y el uso de las superposiciones:
 
-* AEM 6.0 en adelante: para [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)Superposiciones relacionadas (es decir, la IU táctil)
+* AEM 6,0 en adelante: para [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)Superposiciones relacionadas con (es decir, la interfaz de usuario táctil)
 
    * Método
 
-      * Reconstruya el `/libs` estructura `/apps`.
+      * Reconstruya el adecuado `/libs` estructura bajo `/apps`.
 
-         Esto no requiere una copia 1:1, la variable [Fusión de recursos de Sling](/help/sites-developing/sling-resource-merger.md) se utiliza para hacer referencia cruzada a las definiciones originales que son necesarias. La fusión de recursos de Sling proporciona servicios para acceder y fusionar recursos mediante mecanismos de diferenciación (diferenciación).
+         Esto no requiere una copia 1:1, el [Fusión de recursos de Sling](/help/sites-developing/sling-resource-merger.md) se utiliza para hacer referencia a las definiciones originales que son necesarias. La fusión de recursos de Sling proporciona servicios para acceder y combinar recursos mediante mecanismos de diferencia.
 
       * Realice cualquier cambio en `/apps`.
    * Ventajas
 
-      * Más robusto en `/libs`.
-      * Solo redefina lo que realmente se requiere.
+      * Más robustas a los cambios en `/libs`.
+      * Redefina solo lo que realmente se necesita.
 
 
-* Superposiciones y superposiciones no de Granite anteriores a AEM 6.0
+* AEM Superposiciones y superposiciones que no son de Granite anteriores a la versión 6.0 de la
 
    * Método
 
-      * Copiar el contenido de `/libs` a `/apps`
+      * Copie el contenido de `/libs` hasta `/apps`
 
          Debe copiar toda la subrama, incluidas las propiedades.
 
@@ -58,31 +58,31 @@ Desde AEM 6.0, se han realizado cambios en la forma en que se implementan y usan
 
 >[!CAUTION]
 >
->La variable [Fusión de recursos de Sling](/help/sites-developing/sling-resource-merger.md) y los métodos relacionados solo se pueden usar con [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Esto significa que la creación de una superposición con una estructura de esqueletos solo es adecuada para la IU estándar con capacidad táctil.
+>El [Fusión de recursos de Sling](/help/sites-developing/sling-resource-merger.md) y los métodos relacionados solo se pueden utilizar con [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Esto significa que la creación de una superposición con una estructura de esqueleto solo es adecuada para la IU táctil estándar.
 >
->Las superposiciones de otras áreas (incluida la IU clásica) implican copiar el nodo apropiado y toda la subestructura y, a continuación, realizar los cambios necesarios.
+>Las superposiciones de otras áreas (incluida la IU clásica) implican copiar el nodo adecuado y toda la subestructura y, a continuación, realizar los cambios necesarios.
 
-Las superposiciones son el método recomendado para muchos cambios, como [configuración de las consolas](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) o [creación de la categoría de selección en el navegador de recursos del panel lateral](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (se utiliza al crear páginas). Son necesarias como:
+Las superposiciones son el método recomendado para muchos cambios, como [configuración de las consolas](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) o [creación de la categoría de selección en el explorador de recursos del panel lateral](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (se utiliza al crear páginas). Se requieren como sigue:
 
-* You ***no debe* realice cambios en `/libs` Rama **Cualquier cambio que realice puede perderse, ya que esta rama puede cambiar siempre que:
+* Usted ***no debe* realice cambios en la `/libs` ramificación **Cualquier cambio que realice podría perderse, ya que esta rama puede cambiar siempre que haga lo siguiente:
 
-   * actualizar en su instancia
-   * aplicar una corrección
-   * instalar un paquete de características
+   * actualice en su instancia
+   * aplicar una revisión
+   * instalación de un paquete de funciones
 
-* Concentran los cambios en un solo lugar; facilitando el seguimiento, la migración, la copia de seguridad o la depuración de los cambios según sea necesario.
+* Concentran los cambios en una ubicación, lo que facilita el seguimiento, la migración, la realización de copias de seguridad o la depuración de los cambios según sea necesario.
 
 ## Configuración de las rutas de búsqueda {#configuring-the-search-paths}
 
-Para las superposiciones, el recurso enviado es un agregado de los recursos y propiedades recuperados, según las rutas de búsqueda que se puedan definir:
+En el caso de las superposiciones, el recurso enviado es un agregado de los recursos y las propiedades recuperados, según las rutas de búsqueda que se puedan definir:
 
-* El recurso **Ruta de búsqueda de resolución** tal como se define en la variable [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para el **Fábrica de resolución de recursos de Apache Sling**.
+* El recurso **Ruta de búsqueda de resolución** tal como se define en la [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para el **Apache Sling Resource Resolver Factory**.
 
-   * El orden descendente de las rutas de búsqueda indica sus prioridades respectivas.
-   * En una instalación estándar, los valores predeterminados principales son `/apps`, `/libs` - así que el contenido de `/apps` tiene una prioridad mayor que la de `/libs` (es decir, que *superposiciones* ).
+   * El orden descendente de las rutas de búsqueda indica sus respectivas prioridades.
+   * En una instalación estándar, los valores predeterminados principales son `/apps`, `/libs` - así que el contenido de `/apps` tiene una prioridad mayor que la de `/libs` (es decir, it *superposiciones* it).
 
-* Dos usuarios de servicio necesitan acceso JCR:READ a la ubicación donde se almacenan los scripts. Estos usuarios son: components-search-service (utilizado por los com.day.cq.wcm.coreto access/cache components) y sling-scripting (utilizado por org.apache.sling.servlets.resolver para encontrar servlets).
-* La siguiente configuración también debe configurarse según el lugar donde coloque los scripts (en este ejemplo en /etc, /libs o /apps).
+* Dos usuarios del servicio necesitan acceso JCR:READ a la ubicación donde se almacenan los scripts. Estos usuarios son: components-search-service (utilizado por los componentes com.day.cq.wcm.core access/cache) y sling-scripting (utilizado por org.apache.sling.servlets.resolver para buscar servlets).
+* La siguiente configuración también debe configurarse según dónde coloque los scripts (en este ejemplo, en /etc, /libs o /apps).
 
    ```
    PID = org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl
@@ -90,7 +90,7 @@ Para las superposiciones, el recurso enviado es un agregado de los recursos y pr
    resource.resolver.vanitypath.whitelist=["/etc/","/apps/","/libs/","/content/"]
    ```
 
-* Finalmente, Servlet Resolver también debe estar configurado (en este ejemplo para agregar /etc también)
+* Finalmente, también se debe configurar el Servlet Resolver (en este ejemplo también para añadir /etc)
 
    ```
    PID = org.apache.sling.servlets.resolver.SlingServletResolver

@@ -1,5 +1,5 @@
 ---
-title: Configuración de la página para la edición masiva de las propiedades de página
+title: Configurar la página para la edición masiva de propiedades de página
 seo-title: Configuring your Page for Bulk Editing of Page Properties
 description: La edición masiva de propiedades de página permite editar las propiedades de varias páginas a la vez
 seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
@@ -17,36 +17,36 @@ ht-degree: 7%
 
 ---
 
-# Configuración de la página para la edición masiva de las propiedades de página {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configurar la página para la edición masiva de propiedades de página {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 [Edición masiva de propiedades de página](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) permite editar las propiedades de varias páginas a la vez.
 
-Debido a la posibilidad de que haya diferentes valores, las propiedades de página no están habilitadas para la edición por lotes como predeterminadas. Se deben permitir explícitamente (activados). Al definir las propiedades de página que estarán disponibles para la edición por lotes, debe tener en cuenta determinadas implicaciones, como:
+Debido a la posibilidad de que existan diferentes valores, las propiedades de página no están habilitadas para la edición por lotes de forma predeterminada. Deben permitirse explícitamente (habilitarse). Al definir las propiedades de página para que estén disponibles para la edición masiva, debe tener en cuenta determinadas implicaciones, como:
 
-* Determinados campos suelen ser únicos; por ejemplo, un título de página. Debe decidir si es significativo habilitar estos campos para la edición por lotes, cuando se aplicará un valor.
-* Algunos campos pueden tener varios valores, lo que requiere una representación significativa al procesarlos.
+* Algunos campos suelen ser únicos; por ejemplo, un título de página. Debe decidir si es significativo habilitar estos campos para la edición masiva, cuando se aplica un valor.
+* Algunos campos pueden tener varios valores; esto necesita una representación significativa al procesar.
 
-   Por ejemplo, una casilla de verificación que indica &quot;Listo para publicación&quot;. Esto puede tener varios valores antes de la edición masiva (por ejemplo, listo, en revisión, en curso).
+   Por ejemplo, una casilla de verificación que indique &quot;Listo para publicación&quot;. Esto puede tener varios valores antes de la edición por lotes (por ejemplo, listo, en revisión o en curso).
 
 >[!CAUTION]
 >
->La edición masiva de propiedades de página es:
+>La edición masiva de las propiedades de página es:
 >
 >* No disponible en la IU clásica.
->* No está disponible para páginas dentro de una Live Copy.
+>* No disponible para páginas dentro de una Live Copy.
 >* Solo está disponible para páginas con el mismo tipo de recurso.
 >
 
 
 >[!NOTE]
 >
->La edición por lotes también está disponible para Assets. Se parece mucho, pero presenta algunos aspectos diferentes. Consulte [Edición de propiedades de varios recursos](/help/assets/metadata.md) para obtener más información. Puede personalizar los campos del editor de metadatos masivos para los recursos mediante la función [Editor de esquemas](/help/assets/metadata-schemas.md).
+>La edición masiva también está disponible para Assets. Se parece mucho, pero presenta algunos aspectos diferentes. Consulte [Edición de propiedades de varios recursos](/help/assets/metadata.md) para obtener más información. Puede personalizar los campos en el editor de metadatos masivos para los recursos mediante el [Editor de esquemas](/help/assets/metadata-schemas.md).
 
 ## Activación de un campo {#enabling-a-field}
 
 >[!NOTE]
 >
->Algunos campos pueden tener varios valores, lo que requiere una representación significativa al procesarlos. Por este motivo, solo debe habilitar los siguientes tipos de campo:
+>Algunos campos pueden tener varios valores; esto necesita una representación significativa al procesar. Por este motivo, solo debe habilitar los siguientes tipos de campo:
 >
 >* `/libs/granite/ui/components/foundation/form/textfield`
 >* `/libs/granite/ui/components/foundation/form/textarea`
@@ -57,17 +57,17 @@ Debido a la posibilidad de que haya diferentes valores, las propiedades de pági
 >
 
 
-Los campos se activan en el componente de página (*not* en la plantilla):
+Los campos están habilitados en el componente de página (*no* en la plantilla):
 
-1. Con el CRXDE Lite (o un método equivalente), abra el componente de página.
+1. Con un CRXDE Lite (o un método equivalente), abra el componente de página.
 
    Por ejemplo: `/apps/core/wcm/components/page/v1/page`
 
    >[!NOTE]
    >
-   >En este ejemplo se supone que los componentes principales se han instalado en la instancia, como sucede si la instancia se está ejecutando con contenido de muestra de We.Retail. Consulte la [Documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) para obtener más información.
+   >En este ejemplo se supone que los componentes principales se han instalado en la instancia, como sucede si la instancia se ejecuta con contenido de muestra de We.Retail. Consulte la [Documentación de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) para obtener más información.
 
-1. Vaya al campo requerido dentro del `cq:dialog` definición.
+1. Vaya al campo requerido dentro de la variable `cq:dialog` definición.
 1. Defina la siguiente propiedad en el nodo de campo:
 
    * **Nombre**: `allowBulkEdit`
@@ -84,14 +84,14 @@ Los campos se activan en el componente de página (*not* en la plantilla):
 
    >[!CAUTION]
    >
-   >You ***must*** no cambie nada en la variable `/libs` ruta.
+   >Usted ***debe*** no cambie nada en el `/libs` ruta.
    >
-   >Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una corrección o un paquete de funciones).
+   >Esto se debe al contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y es posible que se sobrescriba al aplicar una revisión o un paquete de funciones).
    >
    >El método recomendado para la configuración y otros cambios es:
    >
-   >    1. Volver a crear el elemento requerido (es decir, tal como existe en `/libs`) en `/apps`
-   >    1. Realice cambios dentro de `/apps`
+   >    1. Vuelva a crear el elemento necesario (es decir, tal como existe en `/libs`) en `/apps`
+   >    1. Realice cualquier cambio en `/apps`
 
 
-1. Select **Guardar todo** para mantener las actualizaciones.
+1. Seleccionar **Guardar todo** para mantener las actualizaciones.

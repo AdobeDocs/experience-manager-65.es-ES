@@ -1,6 +1,6 @@
 ---
 title: Creación de páginas de múltiples productos y categorías
-description: Aprenda a enriquecer las páginas de aterrizaje y detalles del producto de categorías con contenido de marketing dirigido.
+description: Aprenda a enriquecer las páginas de aterrizaje de categorías y detalles del producto con contenido de marketing segmentado.
 sub-product: Commerce
 doc-type: feature-video
 activity: use

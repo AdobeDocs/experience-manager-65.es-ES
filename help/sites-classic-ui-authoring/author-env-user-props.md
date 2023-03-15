@@ -24,8 +24,8 @@ AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación.
 
 Al utilizar la [configuración de la cuenta](#account-settings) y las [preferencias de usuario](#user-preferences), se pueden definir las siguientes opciones y preferencias:
 
-* **Barra de herramientas de edición** Seleccione si desea que se muestre la barra de herramientas de edición global. Esta barra de herramientas, que se muestra en la parte superior de la ventana del explorador, le proporciona 
-**Copiar**, **Cortar**, **Pegar**, **Eliminar** botones para utilizar con los componentes de párrafo de esa página:
+* **Barra de herramientas de edición** Seleccione si desea que se muestre la barra de herramientas de edición global. Esta barra de herramientas, que se muestra en la parte superior de la ventana del explorador, le proporciona lo siguiente 
+**Copiar**, **Cortar**, **Pegar**, **Eliminar** botones para usar con los componentes de párrafo en esa página:
 
    * Mostrar si es necesario (predeterminado)
    * Mostrar siempre
@@ -34,7 +34,7 @@ Al utilizar la [configuración de la cuenta](#account-settings) y las [preferenc
 * **Suplantar como** Con la función [Suplantar como](/help/sites-administering/security.md#impersonating-another-user), un usuario puede trabajar en nombre de otro usuario.
 
 * **Idioma**
-El idioma que se utiliza para la IU del entorno de creación. Seleccione el idioma requerido en la lista de idiomas disponibles.
+El idioma que se utilizará para la interfaz de usuario del entorno de creación. Seleccione el idioma en la lista disponible.
 
 * **Gestión de ventanas** Seleccione una de estas opciones:
 

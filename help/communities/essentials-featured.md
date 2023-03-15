@@ -1,7 +1,7 @@
 ---
-title: Elementos esenciales de contenido destacado
+title: Elementos esenciales del contenido destacado
 seo-title: Featured Content Essentials
-description: Trabajo con contenido de funciones
+description: Uso de contenido de funciones
 seo-description: Working with feature content
 uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
 contentOwner: User
@@ -17,14 +17,14 @@ ht-degree: 6%
 
 ---
 
-# Elementos esenciales de contenido destacado  {#featured-content-essentials}
+# Elementos esenciales del contenido destacado  {#featured-content-essentials}
 
-Esta página proporciona la información esencial para trabajar con contenido destacado.
+Esta página proporciona información esencial para trabajar con contenido destacado.
 
-A diferencia de fijar una publicación en la parte superior de un foro, esta función permite que el contenido se resalte en cualquier parte dentro del sitio de la comunidad.
+A diferencia de anclar una publicación en la parte superior de un foro, esta función permite resaltar contenido en cualquier lugar del sitio de la comunidad.
 
 
-## Elementos esenciales para el cliente {#essentials-for-client-side}
+## Essentials para el lado del cliente {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -33,11 +33,11 @@ A diferencia de fijar una publicación en la parte superior de un foro, esta fun
    <td>social/commons/components/hbs/featuredcontent</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
    <td> <i>predeterminada</i></td>
   </tr>
   <tr>
@@ -59,4 +59,4 @@ A diferencia de fijar una publicación en la parte superior de un foro, esta fun
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de la comunidad que incluye el [Función Contenido destacado](functions.md#featured-content-function), incluye un `featured content` componente.
+Una estructura de sitio de la comunidad que incluye [Función Contenido destacado](functions.md#featured-content-function), incluye un configurado `featured content` componente.

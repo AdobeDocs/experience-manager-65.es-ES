@@ -1,7 +1,7 @@
 ---
-title: Desarrollo de aplicaciones móviles en AEM
+title: AEM Desarrollo de aplicaciones móviles en el sector de la
 seo-title: Developing Mobile Applications in AEM
-description: Siga esta página para empezar a desarrollar aplicaciones móviles en AEM con Adobe PhoneGap Enterprise.
+description: AEM Siga esta página para empezar a desarrollar aplicaciones móviles en el uso de la de Adobe PhoneGap Enterprise.
 seo-description: Follow this page to start developing mobile application in AEM using Adobe PhoneGap Enterprise.
 uuid: d8442447-ee04-4bb2-a0d7-17dcc8979dba
 contentOwner: User
@@ -17,49 +17,49 @@ ht-degree: 1%
 
 ---
 
-# Desarrollo de aplicaciones móviles en AEM {#developing-mobile-applications-in-aem}
+# AEM Desarrollo de aplicaciones móviles en el sector de la {#developing-mobile-applications-in-aem}
 
 >[!NOTE]
 >
->Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-AEM aprovecha las soluciones de publicación de Adobe PhoneGap y Adobe, que le permiten crear y administrar aplicaciones móviles multiplataforma, tanto enriquecidas como basadas en utilidades:
+AEM aprovecha Adobe PhoneGap y las soluciones de publicación de Adobe, lo que le permite crear y administrar aplicaciones móviles multiplataforma enriquecidas en contenido y basadas en utilidades:
 
 * Administre todas las aplicaciones móviles de su empresa en un solo lugar.
-* Revise las aplicaciones en entornos de desarrollo y ensayo sin las complejidades de los perfiles de aprovisionamiento ni el esfuerzo adicional para crear y cargar su aplicación para compartirla.
-* Utilice el entorno de creación de AEM para crear y administrar contenido enriquecido para sus aplicaciones.
-* Use el HTML5 con Adobe PhoneGap para crear experiencias enriquecidas con funciones nativas del dispositivo.
-* Presentación de las vistas web de HTML5 a las nuevas o preexistentes **nativo** a través de Cordova WebViews.
-* Cree, depure y comparta contenido multimedia enriquecido en todos los canales de envío, incluidos web, web móvil, aplicación móvil e impresión.
+* Revise las aplicaciones en entornos de ensayo y desarrollo sin las complejidades de los perfiles de aprovisionamiento y sin el esfuerzo adicional de crear y cargar la aplicación para compartirla.
+* AEM Utilice el entorno de creación de para crear y administrar contenido enriquecido para sus aplicaciones.
+* Utilice HTML5 con Adobe PhoneGap para crear experiencias enriquecidas con funciones nativas del dispositivo.
+* Introducción de las vistas web de HTML5 a las nuevas o preexistentes **nativo** aplicaciones a través de Cordova WebViews.
+* Cree, depure y comparta contenido multimedia enriquecido en todos los canales de envío, incluidos el web, el web móvil, la aplicación móvil y la impresión.
 
-AEM se integra con el Adobe **[Servicio de PhoneGap Build](https://build.phonegap.com/)** para simplificar el proceso de creación e implementación de aplicaciones.
+AEM La integración de la con el Adobe **[servicio de PhoneGap Build](https://build.phonegap.com/)** para simplificar el proceso de generación e implementación de la aplicación.
 
-**Adobe ContentSync** permite a los usuarios descargar fácilmente actualizaciones de página y contenido de Over-the-Air (OTA) en sus dispositivos sin tener que volver a instalar la aplicación ni descargar desde la appStore, Google Play u otras fuentes de aplicaciones.
+**Adobe ContentSync** permite a los usuarios descargar fácilmente actualizaciones de páginas y contenido por el aire (OTA) en sus dispositivos sin tener que volver a instalar la aplicación ni descargar desde la AppStore, Google Play u otras fuentes de aplicaciones.
 
-**Adobe Analytics** está totalmente integrado en AEM aplicaciones y permite un seguimiento detallado de la distribución, la geolocalización, los sistemas operativos, los dispositivos, los flujos de clics, el seguimiento de iBeacon y más.
+**Adobe Analytics** AEM está totalmente integrado en aplicaciones de y permite un seguimiento detallado de la distribución, geolocalización, sistemas operativos, dispositivos, flujos de clics, seguimiento de iBeacon y mucho más.
 
 ## Creación de aplicaciones {#creating-apps}
 
-Los desarrolladores pueden utilizar el [AEM Kit de inicio de PhoneGap](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) junto con los recursos adicionales que se encuentran en [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) para arrancar AEM aplicaciones con PhoneGap, incluida una aplicación nativa de referencia que ejecute Cordova Webviews.
+Los desarrolladores pueden utilizar el [AEM Kit de inicio de PhoneGap](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) junto con recursos adicionales que se encuentran en [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) AEM para arrancar aplicaciones de con PhoneGap, incluida una aplicación nativa de referencia que ejecuta Cordova Webviews.
 
-El archivo readme del repositorio de Git del Starter Kit incluye un tutorial para utilizar el kit de inicio:
+El archivo léame del repositorio Git del Starter Kit incluye un tutorial para utilizar el Starter Kit:
 
-* Personalizar la marca
-* Maven muestras de objetivos de compilación e implementación
-* Configuración del repositorio de control de código fuente
-* Instalación e implementación en instancias de AEM locales o remotas
-* Desinstalar desde AEM
+* Personalización de la marca
+* Objetivos de generación e implementación de muestra de Maven
+* Configuración del repositorio de control de origen
+* AEM Instalar e implementar en instancias de locales o remotas
+* AEM Desinstalar desde la
 
 >[!NOTE]
 >
->Puede encontrar fuentes de implementación de referencia adicionales, como laboratorios, en GitHub [here](https://github.com/adobe-marketing-cloud-apps) y, la fuente &quot;fregadero-cocina&quot; [here](https://github.com/blefebvre/aem-phonegap-kitchen-sink).
+>En GitHub, se pueden encontrar fuentes de implementación de referencia adicionales, incluidos laboratorios [aquí](https://github.com/adobe-marketing-cloud-apps) y, la fuente &quot;fregadero-cocina&quot; [aquí](https://github.com/blefebvre/aem-phonegap-kitchen-sink).
 
-## Desarrollo para hosts de IOS 9 y HTTP {#developing-for-ios-and-http-hosts}
+## Desarrollo para hosts HTTP y IOS 9 {#developing-for-ios-and-http-hosts}
 
-Los desarrolladores de iOS deben tener en cuenta un problema abierto con las aplicaciones de Cordova que se ejecutan en iOS 9. Este problema impide que se realicen solicitudes en hosts inseguros (como *http://localhost:4502*). Este problema se resolverá con una próxima versión de cordova-ios (que consume la CLI de Cordova), pero mientras tanto hay dos soluciones alternativas disponibles:
+Los desarrolladores de iOS deben tener en cuenta un problema pendiente con las aplicaciones de Cordova que se ejecutan en iOS 9. Este problema evita que se realicen solicitudes a hosts no seguros (como *http://localhost:4502*). Este problema se resolverá en una próxima versión de cordova-ios (consumido por la CLI de Cordova), pero mientras tanto hay dos soluciones disponibles:
 
-1. Como solución alternativa inmediata, puede seguir utilizando cualquiera de los simuladores de iOS 8 sin problemas.
-1. Si debe utilizar iOS 9, sus aplicaciones -Info.plist (se encuentran después de ejecutar `cordova platform add ios` en &quot;&lt;app root=&quot;&quot;>/plataformas/ios/&lt;app name=&quot;&quot;>/&lt;app name=&quot;&quot;>El archivo -Info.plist&quot;) se puede editar manualmente para incluir la siguiente propiedad:
+1. Como solución alternativa, puede seguir utilizando cualquiera de los simuladores de iOS 8 sin problemas.
+1. Si debe utilizar iOS 9, sus aplicaciones -Info.plist (que se encuentra después de ejecutar `cordova platform add ios` en &quot;&lt;app root=&quot;&quot;>/platform/ios/&lt;app name=&quot;&quot;>/&lt;app name=&quot;&quot;>-Info.plist&quot;) se puede editar manualmente para incluir la siguiente propiedad:
 
 ```
 <key>NSAppTransportSecurity</key>
@@ -73,27 +73,27 @@ Los desarrolladores de iOS deben tener en cuenta un problema abierto con las apl
 
 >[!NOTE]
 >
->Para obtener más información sobre &quot;App Transport Security&quot;, consulte la siguiente sección de [Documentos de la versión preliminar de iOS9 de Apple](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) y [Discusión de desbordamiento de pila](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
+>Para obtener más información sobre &quot;App Transport Security&quot;, consulte la siguiente sección de [Documentos de la versión preliminar de iOS9 de Apple](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) y esto [Discusión de desbordamiento de pila](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
-## Desarrollo de aplicaciones móviles en AEM {#developing-mobile-applications-in-aem-1}
+## AEM Desarrollo de aplicaciones móviles en el sector de la {#developing-mobile-applications-in-aem-1}
 
-* [Inicio AEM PhoneGap](/help/mobile/starting-aem-phonegap-app.md)
+* [AEM Iniciando PhoneGap](/help/mobile/starting-aem-phonegap-app.md)
 * [Creación de aplicaciones móviles](/help/mobile/building-app-mobile-phonegap.md)
-* [Estructura de una aplicación](/help/mobile/phonegap-structure-an-app.md)
-* [Creación y edición de aplicaciones mediante la consola Aplicaciones](/help/mobile/phonegap-apps-console.md)
+* [Estructurar una aplicación](/help/mobile/phonegap-structure-an-app.md)
+* [Creación y edición de aplicaciones mediante la consola de aplicaciones](/help/mobile/phonegap-apps-console.md)
 * [Aplicaciones de una sola página](/help/mobile/phonegap-single-page-applications.md)
-* [Desarrollo de aplicaciones con la CLI de PhoneGap](/help/mobile/phonegap-apps-pg-cli.md)
-* [Acceder a las funciones de los dispositivos](/help/mobile/phonegap-access-device-features.md)
-* [Seguimiento del rendimiento de la aplicación con Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
+* [Desarrollo de aplicaciones con CLI de PhoneGap](/help/mobile/phonegap-apps-pg-cli.md)
+* [Acceso a funciones de dispositivo](/help/mobile/phonegap-access-device-features.md)
+* [Seguimiento del rendimiento de las aplicaciones con Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
 * [Añadir Adobe Analytics a la aplicación móvil](/help/mobile/phonegap-add-analytics-to-apps.md)
 * [Notificaciones push](/help/mobile/phonegap-push-notifications.md)
 * [Personalización de contenido de AEM Mobile](/help/mobile/phonegap-aem-mobile-content-personalization.md)
-* [La anatomía de una aplicación](/help/mobile/phonegap-apps-arch.md)
+* [La estructura de una aplicación](/help/mobile/phonegap-apps-arch.md)
 * [¿Su aplicación híbrida está lista para AEM Mobile?](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
 ### Recursos adicionales {#additional-resources}
 
-Para obtener más información sobre las funciones y responsabilidades de un administrador y desarrollador, consulte los siguientes recursos:
+Para obtener más información sobre las funciones y responsabilidades de un administrador y un desarrollador, consulte los recursos siguientes:
 
-* [Creación para Adobe PhoneGap Enterprise con AEM](/help/mobile/phonegap.md)
-* [Administración de contenido para Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
+* [Creación para Adobe PhoneGap AEM Enterprise con](/help/mobile/phonegap.md)
+* [Administración de contenido para Adobe PhoneGap AEM Enterprise con el servicio de administración de](/help/mobile/administer-phonegap.md)

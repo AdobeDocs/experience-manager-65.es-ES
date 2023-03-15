@@ -19,24 +19,24 @@ ht-degree: 0%
 
 # ¿Qué entornos de prueba se necesitarán?{#which-test-environments-will-be-needed}
 
-Para definir qué configuraciones de prueba, debe tener en cuenta lo siguiente:
+Para definir qué configuraciones se deben probar, se debe tener en cuenta lo siguiente:
 
-**Desarrollo** - Para la unidad y ciertas pruebas de integración.
+**Desarrollo** - Para la unidad, y ciertas pruebas de integración.
 
 **Pruebas** - Para la mayoría de las pruebas.
 
-**Activo** - Para las pruebas de rendimiento y de estrés finales. También para pruebas de aceptación con el cliente.
+**Activo** - Para pruebas de rendimiento y de esfuerzo finales. También para pruebas de aceptación con el cliente.
 
-También deberá decidir qué instancias necesitará donde (normalmente al menos una de cada uno para todos los niveles de prueba):
+También deberá decidir qué instancias necesitará dónde (normalmente, al menos una de cada una para todos los niveles de prueba):
 
 **Autor** : Esta instancia permite a los autores introducir y publicar contenido.
 
-**Publicación** - Esta instancia presenta el sitio web en su formulario publicado para el acceso de los visitantes.
+**Publish** - Esta instancia presenta el sitio web en su forma publicada para el acceso de los visitantes.
 
 Debe probarse junto con Dispatcher.
 
-Finalmente, debe considerarse el hardware real - cualquier prueba de rendimiento debe realizarse en un sistema lo más cerca posible de la configuración del entorno en directo final. Por este motivo, también se recomienda dividir el lanzamiento del proyecto en:
+Por último, debe tenerse en cuenta el hardware real: cualquier prueba de rendimiento debe realizarse en un sistema lo más cerca posible del entorno en directo final. Por este motivo, también se recomienda dividir el lanzamiento del proyecto en un:
 
-**Lanzamiento en software** - Menor disponibilidad; que permite tiempo para pruebas de rendimiento, ajustes y optimización en condiciones realistas en el entorno de producción.
+**Lanzamiento suave** - Disponibilidad reducida; lo que permite tiempo para pruebas de rendimiento, ajuste y optimización en condiciones realistas en el entorno de producción.
 
-**Lanzamiento en disco** - Disponibilidad completa.
+**Lanzamiento duro** - Disponibilidad total.

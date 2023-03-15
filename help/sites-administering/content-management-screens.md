@@ -1,7 +1,7 @@
 ---
-title: Gestión de contenido para Screens
+title: Administración de contenido para Screens
 seo-title: Content Management for Screens
-description: Obtenga información sobre los conceptos básicos de Gestión de contenido para Screens.
+description: Obtenga información acerca de los conceptos básicos de administración de contenido para pantallas.
 seo-description: Learn about the basics of Content Management for Screens.
 uuid: eee0036e-b352-4cde-84d2-04b27d3dfe95
 contentOwner: Jyotika Syal
@@ -17,15 +17,15 @@ ht-degree: 1%
 
 ---
 
-# Gestión de contenido para Screens{#content-management-for-screens}
+# Administración de contenido para Screens{#content-management-for-screens}
 
-A ***Administrador de contenido*** para AEM Screens es un profesional creativo que trabaja estrechamente con el marketing y conoce la campaña, la audiencia y el enfoque deseado. El gestor de contenido es responsable de crear y orquestar la experiencia del usuario final desarrollando diferentes canales y asignando secuencias a una experiencia de canal temporizada.
+A ***Administrador de contenido*** para AEM Screens es un profesional creativo que trabaja estrechamente con el marketing y conoce la campaña, la audiencia y el enfoque deseado. El administrador de contenido es responsable de crear y orquestar la experiencia del usuario final mediante el desarrollo de diferentes canales y la asignación de secuencias en una experiencia de canal cronometrada.
 
-Content Manager para Screens diseña ubicaciones y programaciones, mantiene la integridad del canal, realiza análisis e informes y mantiene perfiles de vídeo.
+El Administrador de contenido para Screens diseña ubicaciones y programaciones, mantiene la integridad del canal, realiza análisis e informes y mantiene perfiles de vídeo.
 
-Un gestor de contenido de AEM Screens es responsable de las siguientes tareas:
+Un administrador de contenido de AEM Screens es responsable de las siguientes tareas:
 
 * Ubicaciones de diseño
-* Programaciones de diseño
+* Diseñar horarios
 * Mantener integridad del canal
 * Perfiles de vídeo

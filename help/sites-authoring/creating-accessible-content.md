@@ -1,6 +1,6 @@
 ---
-title: Creación de contenido accesible para Adobe Experience Manager (Conformidad con WCAG 2.1)
-description: Utilice AEM para ayudar a que el contenido web sea accesible para las personas con discapacidades y lo puedan utilizar.
+title: Crear contenido accesible para Adobe Experience Manager (Conformidad con WCAG 2.1)
+description: AEM Uso para ayudar a las personas con discapacidades a hacer que el contenido web sea accesible para ellas y lo puedan utilizar
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
@@ -52,7 +52,7 @@ La siguiente sección presenta las [capas de las directrices WCAG 2.1](https://w
 
 [Directrices 1.1 Alternativas de texto: proporciona alternativas de texto para cualquier contenido no textual para cambiarlo por otras formas según sea necesario, como letras grandes, braille, voz, símbolos o lenguaje más sencillo.](https://www.w3.org/TR/WCAG/#text-alternatives)
 
-### Contenido no textual (1.1.1)     {#non-text-content}
+### Contenido no textual (1.1.1) {#non-text-content}
 
 * Criterios de éxito 1.1.1
 * Nivel A
@@ -60,11 +60,11 @@ La siguiente sección presenta las [capas de las directrices WCAG 2.1](https://w
 
 #### Objetivo: Contenido no textual (1.1.1) {#purpose-non-text-content}
 
-La información en una página web se puede proporcionar en muchos formatos no textuales distintos, como fotografías, vídeos, animaciones, tablas y gráficos. Las personas ciegas o con deficiencias visuales graves no pueden ver el contenido no textual, pero pueden acceder al contenido textual si lo lee en voz alta un lector de pantalla o si se presenta en un formato táctil a través de un dispositivo de visualización braille. Por ello, al proporcionar alternativas textuales para el contenido en formato gráfico, quienes no puedan ver el contenido gráfico podrán acceder a una versión equivalente de la información que proporcione el contenido.
+La información en una página web se puede proporcionar en muchos formatos no textuales distintos, como fotografías, vídeos, animaciones, tablas y gráficos. Las personas ciegas o con deficiencias visuales graves no pueden ver el contenido no textual, pero pueden acceder al contenido textual si lo lee en voz alta un lector de pantalla o si se presenta en un formato táctil a través de un dispositivo de visualización Braille. Por ello, al proporcionar alternativas textuales para el contenido en formato gráfico, quienes no puedan ver el contenido gráfico podrán acceder a una versión equivalente de la información que proporcione el contenido.
 
 Un beneficio útil adicional es que las alternativas textuales permiten indexar contenido no textual mediante una tecnología de buscadores.
 
-#### Cómo cumplir: Contenido no textual (1.1.1)     {#how-to-meet-non-text-content}
+#### Cómo cumplir: Contenido no textual (1.1.1) {#how-to-meet-non-text-content}
 
 Para gráficos estáticos, el requisito principal es proporcionar una alternativa textual equivalente para el gráfico. Esto se puede hacer en el campo **Texto alternativo**. Por ejemplo, consulte la **[imagen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=es)** del componente principal.
 
@@ -113,7 +113,7 @@ Sin embargo, es importante que se muestre un fondo alternativo cuando la imagen 
 >
 >Debe haber un nivel adecuado de contraste entre el fondo y el texto en primer plano; este es un tema que se analiza en detalle en [Contraste (Mínimo) (1.4.3)](#contrast-minimum).
 
-#### Más información: Contenido no textual (1.1.1)     {#more-information-non-text-content}
+#### Más información: Contenido no textual (1.1.1) {#more-information-non-text-content}
 
 * [Entender los criterios de éxito 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Cumplir los criterios de éxito 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
@@ -943,7 +943,7 @@ La intención de este criterio de éxito es ayudar a una persona a saber qué el
 
 Una persona debe saber cuál elemento de varios elementos tiene el enfoque del teclado. Si solo hay un control accionable por teclado en la pantalla, el criterio de éxito se cumpliría porque el diseño visual presenta solo un elemento procesable por teclado.
 
-Cuando el criterio de éxito indica &quot;modo de funcionamiento&quot;, se tiene en cuenta para las plataformas que pueden no mostrar siempre un indicador de enfoque. En la mayoría de los casos, solo hay un modo de funcionamiento, por lo que se aplican estos criterios de éxito.
+Si el criterio de éxito indica “modo de funcionamiento”, se tiene en cuenta para las plataformas que no siempre muestran un indicador de enfoque. En la mayoría de los casos, solo hay un modo de funcionamiento, por lo que se aplican estos criterios de éxito.
 
 #### Cómo cumplir: Enfoque visible (2.4.7) {#how-to-meet-focus-visible}
 
@@ -1012,7 +1012,7 @@ Las páginas que aplican este criterio de éxito permiten:
 
 #### Cómo cumplir: Idioma de las partes (3.1.2)   {#how-to-meet-language-of-parts}
 
-El atributo `lang` se puede utilizar para identificar los cambios en el idioma del contenido. Por ejemplo, una cita en alemán (ISO 639-1 código &quot;de&quot;) se puede mostrar de la siguiente manera:
+El atributo `lang` se puede utilizar para identificar los cambios en el idioma del contenido. Por ejemplo, una cita en alemán (ISO 639-1 código “de”) se puede mostrar de la manera siguiente:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">

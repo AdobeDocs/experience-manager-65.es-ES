@@ -1,7 +1,7 @@
 ---
-title: Compatibilidad con RDBMS en AEM 6.4
+title: AEM Compatibilidad con RDBMS en 6.4
 seo-title: RDBMS Support in AEM 6.4
-description: Obtenga información sobre la compatibilidad con la persistencia de la base de datos relacional en AEM 6.4 y las opciones de configuración disponibles.
+description: AEM Obtenga información acerca de la compatibilidad con la persistencia de bases de datos relacionales en la versión 6.4 de y las opciones de configuración disponibles.
 seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
 uuid: c8422b0d-c6df-488d-bb6a-af92c9afda50
 contentOwner: User
@@ -19,71 +19,71 @@ ht-degree: 0%
 
 ---
 
-# Compatibilidad con RDBMS en AEM 6.4{#rdbms-support-in-aem}
+# AEM Compatibilidad con RDBMS en 6.4{#rdbms-support-in-aem}
 
 ## Información general {#overview}
 
-La compatibilidad con la persistencia de la base de datos relacional en AEM se implementa mediante Document Microkernel. Document Microkernel es la base que también se usa para implementar la persistencia de MongoDB.
+AEM La compatibilidad con la persistencia de bases de datos relacionales en la base de datos se implementa mediante el Microkernel de documentos. El Microkernel del documento es la base que también se utiliza para implementar la persistencia de MongoDB.
 
-Consiste en una API de Java basada en la API de Java de Mongo. También se proporciona una implementación de la API de BlobStore. De forma predeterminada, los blobs se almacenan en la base de datos.
+Consiste en una API de Java basada en la API de Java de Mongo. También se proporciona una implementación de una API de BlobStore. De forma predeterminada, los blobs se almacenan en la base de datos.
 
-Para obtener más información sobre los detalles de implementación, consulte la [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) y [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) documentación.
+Para obtener más información sobre los detalles de la implementación, consulte la [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) y [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) documentación.
 
 >[!NOTE]
 >
->Compatibilidad con **PostgreSQL 9.4** también se proporciona, pero solo con fines de demostración. No estará disponible para entornos de producción.
+>Compatibilidad con **PostgreSQL 9.4** también se proporciona, pero solo para fines de demostración. No estará disponible para entornos de producción.
 
 ## Bases de datos compatibles {#supported-databases}
 
-Para obtener más información sobre el nivel de soporte de bases de datos relacionales en AEM, consulte la [Página Requisitos técnicos](/help/sites-deploying/technical-requirements.md).
+AEM Para obtener más información sobre el nivel de soporte de la base de datos relacional en el área de la base de datos en el área de la, consulte la [Página de requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
 ## Pasos de configuración {#configuration-steps}
 
-El repositorio se crea configurando el `DocumentNodeStoreService` Servicio OSGi. Se ha ampliado para admitir la persistencia de bases de datos relacionales además de MongoDB.
+El repositorio se crea configurando la variable `DocumentNodeStoreService` Servicio OSGi. Se ha ampliado para admitir la persistencia de bases de datos relacionales, además de MongoDB.
 
-Para que funcione, es necesario configurar una fuente de datos con AEM. Esto se realiza mediante la variable `org.apache.sling.datasource.DataSourceFactory.config` archivo. Los controladores JDBC para la base de datos respectiva deben proporcionarse por separado como paquetes OSGi dentro de la configuración local.
+AEM Para que funcione, es necesario configurar una fuente de datos con la opción de configuración de la fuente de datos de la aplicación de forma. Esto se realiza mediante la variable `org.apache.sling.datasource.DataSourceFactory.config` archivo. Los controladores JDBC para la base de datos correspondiente deben proporcionarse por separado como paquetes OSGi dentro de la configuración local.
 
-Para ver los pasos sobre la creación de paquetes OSGi para controladores JDBC, consulte esta [documentación](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) en el sitio web de Apache Sling.
+Para ver los pasos sobre la creación de paquetes OSGi para controladores JDBC, consulte esto [documentación](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) en el sitio web de Apache Sling.
 
-Una vez configurados los paquetes, siga los siguientes pasos para configurar la AEM con persistencia de RDB:
+AEM Una vez que los paquetes estén en su lugar, siga los siguientes pasos para configurar la persistencia de la RDB en la configuración de la:
 
-1. Asegúrese de que el daemon de base de datos está iniciado y de que dispone de una base de datos activa para su uso con AEM.
-1. Copie el jar AEM 6.3 en el directorio de instalación.
+1. AEM Asegúrese de que se ha iniciado el daemon de base de datos y de que dispone de una base de datos activa para su uso con el servicio de base de datos de.
+1. AEM Copie el JAR de la versión 6.3 de la en el directorio de instalación.
 1. Cree una carpeta llamada `crx-quickstart\install` en el directorio de instalación.
-1. Configure el almacén de nodos del documento creando un archivo de configuración con el siguiente nombre en el `crx-quickstart\install` directorio:
+1. Configure el almacén de nodos del documento creando un archivo de configuración con el siguiente nombre en la `crx-quickstart\install` directorio:
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
-1. Configure la fuente de datos y los parámetros JDBC creando otro archivo de configuración con el siguiente nombre en el `crx-quickstart\install` carpeta:
+1. Configure la fuente de datos y los parámetros JDBC creando otro archivo de configuración con el siguiente nombre en la `crx-quickstart\install` carpeta:
 
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
    >[!NOTE]
    >
-   >Para obtener información detallada sobre la configuración de la fuente de datos para cada base de datos admitida, consulte [Opciones de configuración de fuentes de datos](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
+   >Para obtener información detallada sobre la configuración de la fuente de datos de cada base de datos admitida, consulte [Opciones de configuración de fuente de datos](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
 
-1. A continuación, prepare los paquetes OSGi de JDBC que se van a utilizar con AEM:
+1. AEM A continuación, prepare los paquetes OSGi de JDBC que se van a utilizar con la:
 
-   1. En el `crx-quickstart/install` carpeta, crear una carpeta con el nombre `9`.
+   1. En el `crx-quickstart/install` carpeta, cree una carpeta llamada `9`.
 
-   1. Coloque el jar JDBC en la nueva carpeta.
+   1. Coloque el JDBC jar en la nueva carpeta.
 
-1. Finalmente, comience AEM con el `crx3` y `crx3rdb` modos de ejecución:
+1. AEM Por último, comience por la `crx3` y `crx3rdb` modos de ejecución:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
    ```
 
-## Opciones de configuración de fuentes de datos {#data-source-configuration-options}
+## Opciones de configuración de fuente de datos {#data-source-configuration-options}
 
-La variable `org.apache.sling.datasource.DataSourceFactory-oak.config` La configuración OSGi se utiliza para configurar los parámetros necesarios para la comunicación entre AEM y la capa de persistencia de la base de datos.
+El `org.apache.sling.datasource.DataSourceFactory-oak.config` AEM La configuración de OSGi se utiliza para configurar los parámetros necesarios para la comunicación entre el nivel de persistencia de la base de datos y el nivel de persistencia de la base de datos.
 
 Estas son las opciones de configuración disponibles:
 
-* `datasource.name:` El nombre de la fuente de datos. El valor predeterminado es `oak`.
+* `datasource.name:` Nombre de la fuente de datos. El valor predeterminado es `oak`.
 
-* `url:` La cadena URL de la base de datos que debe utilizarse con JDBC. Cada tipo de base de datos tiene su propio formato de cadena URL. Para obtener más información, consulte [Formatos de cadena de URL](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) más abajo.
+* `url:` Cadena URL de la base de datos que debe utilizarse con JDBC. Cada tipo de base de datos tiene su propio formato de cadena de URL. Para obtener más información, consulte [Formatos de cadena de URL](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) más abajo.
 
-* `driverClassName:` El nombre de clase de controlador JDBC. Esto variará según la base de datos que desee utilizar y, posteriormente, el controlador que se necesite para conectarse a ella. A continuación se muestran los nombres de clase de todas las bases de datos admitidas por AEM:
+* `driverClassName:` El nombre de clase del controlador JDBC. Esto variará según la base de datos que desee utilizar y, posteriormente, el controlador necesario para conectarse a ella. AEM A continuación, se muestran los nombres de clase de todas las bases de datos compatibles con el servicio de bases de datos de:
 
    * `org.postgresql.Driver` para PostgreSQL;
    * `com.ibm.db2.jcc.DB2Driver` para DB2;
@@ -93,11 +93,11 @@ Estas son las opciones de configuración disponibles:
 
 * `username:` El nombre de usuario con el que se ejecuta la base de datos.
 
-* `password:` La contraseña de la base de datos.
+* `password:` Contraseña de la base de datos.
 
 ### Formatos de cadena de URL {#url-string-formats}
 
-Se utiliza un formato de cadena de URL diferente en la configuración de la fuente de datos según el tipo de base de datos que se deba utilizar. A continuación se muestra una lista de formatos para las bases de datos que AEM admite actualmente:
+En la configuración de la fuente de datos se utiliza un formato de cadena de URL diferente en función del tipo de base de datos que se deba utilizar. AEM A continuación se muestra una lista de formatos para las bases de datos que admite actualmente el sistema de bases de datos de que se dispone en la actualidad:
 
 * `jdbc:postgresql:databasename` para PostgreSQL;
 * `jdbc:db2://localhost:port/databasename` para DB2;
@@ -107,6 +107,6 @@ Se utiliza un formato de cadena de URL diferente en la configuración de la fuen
 
 ## Limitaciones conocidas {#known-limitations}
 
-Aunque la persistencia de RDBMS admite el uso simultáneo de varias instancias de AEM con una sola base de datos, las instalaciones simultáneas no lo son.
+AEM Aunque la persistencia de RDBMS admite el uso simultáneo de varias instancias de con una sola base de datos, las instalaciones simultáneas no lo son.
 
-Para solucionar este problema, asegúrese de ejecutar primero la instalación con un solo miembro y añada los demás después de que el primero haya finalizado la instalación.
+Para solucionar esto, asegúrese de ejecutar primero la instalación con un solo miembro y agregue los demás después de que el primero haya finalizado la instalación.

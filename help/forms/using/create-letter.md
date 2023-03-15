@@ -10,7 +10,7 @@ discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3982'
 ht-degree: 100%
 

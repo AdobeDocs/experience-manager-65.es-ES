@@ -1,7 +1,7 @@
 ---
-title: Aprovisionamiento de usuarios justo a tiempo
+title: Aprovisionar usuarios justo a tiempo
 seo-title: Just-in-time user provisioning
-description: Utilice el aprovisionamiento justo a tiempo para añadir usuarios a Administración de usuarios después de una autenticación correcta y asignar dinámicamente funciones y grupos relevantes al nuevo usuario.
+description: Utilice el aprovisionamiento Just-In-Time para agregar usuarios a Administración de usuarios después de la autenticación correcta y asignar dinámicamente funciones y grupos relevantes al nuevo usuario.
 seo-description: Use just-in-time provisioning to add users to User Management after successfull authentication and dynamically assign relevant roles and groups to the new user.
 uuid: a5ad4698-70bb-487b-a069-7133e2f420c2
 contentOwner: admin
@@ -13,38 +13,38 @@ exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Aprovisionamiento de usuarios justo a tiempo {#just-in-time-user-provisioning}
+# Aprovisionar usuarios justo a tiempo {#just-in-time-user-provisioning}
 
-AEM formularios admite el aprovisionamiento puntual de usuarios que aún no existen en Administración de usuarios. Con el aprovisionamiento justo a tiempo, los usuarios se agregan automáticamente a Administración de usuarios después de autenticar sus credenciales correctamente. Además, las funciones y los grupos relevantes se asignan de forma dinámica al nuevo usuario.
+AEM Los formularios adaptables admiten el aprovisionamiento Just-In-Time de usuarios que aún no existen en Administración de usuarios. Con el aprovisionamiento Just-In-Time, los usuarios se agregan automáticamente a Administración de usuarios después de que sus credenciales se hayan autenticado correctamente. Además, las funciones y los grupos relevantes se asignan dinámicamente al nuevo usuario.
 
 ## Necesidad de aprovisionamiento de usuarios justo a tiempo {#need-for-just-in-time-user-provisioning}
 
 Así es como funciona la autenticación tradicional:
 
-1. Cuando un usuario intenta iniciar sesión en formularios AEM, la Administración de usuarios pasa las credenciales del usuario secuencialmente a todos los proveedores de autenticación disponibles. (Las credenciales de inicio de sesión incluyen una combinación de nombre de usuario y contraseña, ticket Kerberos, firma PKCS7, etc.)
+1. AEM Cuando un usuario intenta iniciar sesión en los formularios de la, Administración de usuarios pasa las credenciales del usuario de forma secuencial a todos los proveedores de autenticación disponibles. (Las credenciales de inicio de sesión incluyen una combinación de nombre de usuario y contraseña, vale Kerberos, firma PKCS7, etc.).
 1. El proveedor de autenticación valida las credenciales.
-1. A continuación, el proveedor de autenticación comprueba si el usuario existe en la base de datos de Administración de usuarios. Los siguientes resultados son posibles:
+1. A continuación, el proveedor de autenticación comprueba si el usuario existe en la base de datos de administración de usuarios. Los siguientes resultados son posibles:
 
-   **Existe:** Si el usuario está actualizado y desbloqueado, Administración de usuarios devuelve la autenticación correctamente. Sin embargo, si el usuario no está actualizado o está bloqueado, Administración de usuarios devuelve un error de autenticación.
+   **Existe:** Si el usuario está actualizado y desbloqueado, Administración de usuarios devuelve la autenticación correcta. Sin embargo, si el usuario no está actualizado o bloqueado, Administración de usuarios devolverá un error de autenticación.
 
-   **No existe:** La administración de usuarios devuelve un error de autenticación.
+   **No existe:** Administración de usuarios devuelve un error de autenticación.
 
-   **No válido:** La administración de usuarios devuelve un error de autenticación.
+   **No válido:** Administración de usuarios devuelve un error de autenticación.
 
-1. Se evalúa el resultado devuelto por el proveedor de autenticación. Si el proveedor de autenticación devolvió la autenticación correctamente, el usuario puede iniciar sesión. De lo contrario, la Administración de usuarios comprueba con el siguiente proveedor de autenticación (pasos 2-3).
+1. Se evalúa el resultado devuelto por el proveedor de autenticación. Si el proveedor de autenticación devolvió la autenticación correctamente, el usuario podrá iniciar sesión. De lo contrario, Administración de usuarios consulta con el siguiente proveedor de autenticación (pasos 2-3).
 1. Se devuelve un error de autenticación si ningún proveedor de autenticación disponible valida las credenciales del usuario.
 
-Cuando se implementa el aprovisionamiento justo a tiempo, se crea un nuevo usuario de forma dinámica en Administración de usuarios si uno de los proveedores de autenticación valida las credenciales del usuario. (Después del paso 3 del procedimiento de autenticación tradicional, más arriba).
+Cuando se implementa el aprovisionamiento Just-In-Time, se crea un nuevo usuario de forma dinámica en Administración de usuarios si uno de los proveedores de autenticación valida las credenciales del usuario. (Después del paso 3 del procedimiento de autenticación tradicional, más arriba).
 
 ## Implementación del aprovisionamiento de usuarios justo a tiempo {#implement-just-in-time-user-provisioning}
 
-### API para aprovisionamiento justo a tiempo {#apis-for-just-in-time-provisioning}
+### API para el aprovisionamiento justo a tiempo {#apis-for-just-in-time-provisioning}
 
-AEM forms proporciona las siguientes API para el aprovisionamiento justo a tiempo:
+AEM Los formularios de proporcionan las siguientes API para el aprovisionamiento Just-In-Time:
 
 ```java
 package com.adobe.idp.um.spi.authentication  ;
@@ -81,33 +81,33 @@ public Boolean assign(User user);
 }
 ```
 
-### Consideraciones a la hora de crear un dominio que se active justo en el tiempo {#considerations-while-creating-a-just-in-time-enabled-domain}
+### Consideraciones al crear un dominio habilitado para justo a tiempo {#considerations-while-creating-a-just-in-time-enabled-domain}
 
-* Al crear un `IdentityCreator` para un dominio híbrido, asegúrese de que se ha especificado una contraseña ficticia para el usuario local. No deje vacío este campo de contraseña.
-* Recomendación: Uso `DomainSpecificAuthentication` para validar las credenciales de usuario en un dominio específico.
+* Al crear un personalizado `IdentityCreator` para un dominio híbrido, asegúrese de especificar una contraseña ficticia para el usuario local. No deje este campo de contraseña vacío.
+* Recomendación: uso `DomainSpecificAuthentication` para validar las credenciales de usuario con un dominio específico.
 
-### Creación de un dominio con justo en el tiempo habilitado {#create-a-just-in-time-enabled-domain}
+### Crear un dominio habilitado para justo a tiempo {#create-a-just-in-time-enabled-domain}
 
-1. Escriba un DSC que implemente las API en la sección &quot;API para aprovisionamiento justo a tiempo&quot;.
-1. Implemente el DSC en el servidor de formularios.
-1. Cree un dominio con tiempo justo:
+1. Escriba un DSC que implemente las API en la sección &quot;API para el aprovisionamiento Just-In-Time&quot;.
+1. Implemente el DSC en el servidor de Forms.
+1. Cree un dominio habilitado para justo a tiempo:
 
-   * En la Consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios > Nuevo dominio de empresa.
-   * Configure el dominio y seleccione Habilitar el aprovisionamiento justo a tiempo. <!--Fix broken link (See Setting up and managing domains).-->
-   * Agregue proveedores de autenticación. Al agregar proveedores de autenticación, en la pantalla Nueva autenticación , seleccione un Creador de identidad y Proveedor de asignación registrados.
+   * En la consola de administración, haga clic en Configuración > Administración de usuarios > Administración de dominios > Nuevo dominio de empresa.
+   * Configure el dominio y seleccione Habilitar aprovisionamiento Just In Time. <!--Fix broken link (See Setting up and managing domains).-->
+   * Agregar proveedores de autenticación. Al agregar proveedores de autenticación, en la pantalla Nueva autenticación, seleccione un creador de identidad y un proveedor de asignación registrados.
 
 1. Guarde el nuevo dominio.
 
 ## Entre bastidores {#behind-the-scenes}
 
-Supongamos que un usuario intenta iniciar sesión en AEM formularios y que un proveedor de autenticación acepta sus credenciales de usuario. Si el usuario aún no existe en la base de datos de Administración de usuarios, la comprobación de identidad del usuario falla. AEM formularios ahora realiza las siguientes acciones:
+AEM Supongamos que un usuario está intentando iniciar sesión en formularios y que un proveedor de autenticación acepta sus credenciales de usuario. Si el usuario aún no existe en la base de datos de administración de usuarios, se produce un error en la comprobación de identidad del usuario. AEM Ahora, los formularios de realizan las siguientes acciones:
 
-1. Cree un `UserProvisioningBO` con los datos de autenticación y colóquelos en un mapa de credenciales.
-1. Basado en la información de dominio devuelta por `UserProvisioningBO`, recupere e e invoque el `IdentityCreator` y `AssignmentProvider` para el dominio .
-1. Invocar `IdentityCreator`. Si devuelve un valor correcto `AuthResponse`, extraer `UserInfo` del mapa de credenciales. Págalo a `AssignmentProvider` para la asignación de grupos/funciones y cualquier otro posprocesamiento después de crear el usuario.
-1. Si el usuario se ha creado correctamente, devuelva el intento de inicio de sesión del usuario como correcto.
-1. Para dominios híbridos, extraiga información de usuario de los datos de autenticación proporcionados al proveedor de autenticación. Si esta información se obtiene correctamente, cree el usuario sobre la marcha.
+1. Crear un `UserProvisioningBO` con los datos de autenticación y colóquelo en un mapa de credenciales.
+1. Según la información de dominio devuelta por `UserProvisioningBO`, recupere e invoque el registrado `IdentityCreator` y `AssignmentProvider` para el dominio.
+1. Invocar `IdentityCreator`. Si devuelve un `AuthResponse`, extracto `UserInfo` desde el mapa de credenciales. Páselo a la `AssignmentProvider` para la asignación de grupos/funciones y cualquier otro posprocesamiento después de crear el usuario.
+1. Si el usuario se ha creado correctamente, indique que el intento de inicio de sesión del usuario se ha realizado correctamente.
+1. En el caso de los dominios híbridos, extraiga la información del usuario de los datos de autenticación proporcionados al proveedor de autenticación. Si esta información se obtiene correctamente, cree el usuario sobre la marcha.
 
 >[!NOTE]
 >
->La función de aprovisionamiento justo a tiempo se suministra con una implementación predeterminada de `IdentityCreator` que puede utilizar para crear usuarios de forma dinámica. Los usuarios se crean con la información asociada a los directorios del dominio.
+>La función de aprovisionamiento justo a tiempo se envía con una implementación predeterminada de `IdentityCreator` que puede utilizar para crear usuarios de forma dinámica. Los usuarios se crean con la información asociada a los directorios del dominio.

@@ -89,7 +89,7 @@ Antes de empezar a instalar y configurar AEM Forms Document Services, asegúr
 
 ### Requisitos adicionales para sistemas operativos basados en UNIX {#extrarequirements}
 
-Si está utilizando un sistema operativo basado en UNIX, instale los siguientes paquetes de 32 bits desde el medio de instalación del sistema operativo correspondiente:
+Si utiliza un sistema operativo basado en UNIX, instale los siguientes paquetes de 32 bits desde los medios de instalación del sistema operativo correspondiente:
 <table>
  <tbody>
   <tr>
@@ -471,7 +471,7 @@ En Microsoft® Windows, el servicio PDF Generator utiliza Adobe Acrobat para 
 
    1. Abra el [Administrador de paquetes AEM](http://localhost:4502/crx/packmgr/index.jsp) y descargue el archivo `adobe-aemfd-pdfg-common-pkg-[version].zip` del Administrador de paquetes.
    1. Descomprima el archivo .zip descargado. Abra el Símbolo del sistema con privilegios administrativos.
-   1. Vaya a la `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
+   1. Vaya a `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
    1. Descomprima el `adobe-aemfd-pdfg-common-pkg-[version]`.
    1. Navegue hasta el directorio `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` Ejecute el siguiente archivo por lotes:
 
@@ -583,7 +583,7 @@ El servicio Assembler depende del servicio Extensiones de Reader, del servicio S
 
 ## Herramienta de preparación del sistema (SRT) {#SRT}
 
-La variable [Herramienta de preparación del sistema](#srt-configuration) comprueba si el equipo está configurado correctamente para ejecutar conversiones de PDF Generator. La herramienta genera el informe en la ruta especificada. Para ejecutar la herramienta:
+El [Herramienta Preparación del sistema](#srt-configuration) comprueba si el equipo está configurado correctamente para ejecutar las conversiones de PDF Generator. La herramienta genera el informe en la ruta especificada. Para ejecutar la herramienta:
 
 1. Abra el Símbolo del sistema y navegue hasta la carpeta `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`.
 
@@ -600,9 +600,9 @@ La variable [Herramienta de preparación del sistema](#srt-configuration) compru
 
 1. Navegue hasta `[Path_of_reports_folder]`. Abra el archivo SystemReadinessTool.html. Compruebe el informe y corrija los problemas mencionados.
 
-### Configuración de opciones para la herramienta SRT {#srt-configuration}
+### Configuración de las opciones de la herramienta SRT {#srt-configuration}
 
-Puede utilizar el archivo srt_config.yaml para configurar varias opciones de configuración para la herramienta SRT. El formato del archivo es el siguiente:
+Puede utilizar el archivo srt_config.yaml para configurar varias opciones de la herramienta SRT. El formato del archivo es el siguiente:
 
 ```shell
    # =================================================================
@@ -629,10 +629,10 @@ Puede utilizar el archivo srt_config.yaml para configurar varias opciones de con
    outputDir:
 ```
 
-* **Configuración regional:** Es un parámetro obligatorio. Admite inglés(en), alemán (de), francés (fr) y japonés(ja). El valor predeterminado es en. No afecta a los servicios de Generador de PDF que se ejecutan en AEM Forms en OSGi.
+* **Configuración regional:** Es un parámetro obligatorio. Admite inglés(en), alemán (de), francés (fr) y japonés(ja). El valor predeterminado es en. No afecta a los servicios de PDF Generator que se ejecutan en AEM Forms en OSGi.
 * **aemTempDir:** Es un parámetro opcional. Especifica la ubicación de almacenamiento temporal de Adobe Experience Manager.
-* **usuarios:** Es un parámetro opcional. Puede especificar un usuario para que compruebe si el usuario tiene los permisos necesarios y acceso de lectura y escritura en los directorios necesarios para ejecutar el Generador de PDF. Si no se especifica ningún usuario, las comprobaciones específicas del usuario se omiten y se muestran como fallidas en el informe.
-* **outputDir:** Especifique la ubicación para guardar el informe de SRT. La ubicación predeterminada es el directorio de trabajo actual de la herramienta SRT.
+* **usuarios:** Es un parámetro opcional. Puede especificar un usuario para comprobar si el usuario tiene los permisos necesarios y acceso de lectura y escritura en los directorios necesarios para ejecutar PDF Generator. Si no se especifica ningún usuario, las comprobaciones específicas del usuario se omiten y se muestran como erróneas en el informe.
+* **outputDir:** Especifique la ubicación para guardar el informe SRT. La ubicación predeterminada es el directorio de trabajo actual de la herramienta SRT.
 
 ## Solución de problemas
 
@@ -658,7 +658,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 * Asegúrese de que la [versión compatible ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de 32 bits de Microsoft Office está instalada y de que los cuadros de diálogo de apertura se cancelan para todas las aplicaciones.
 * Asegúrese de que se agrega un usuario de PDF Generator en la interfaz de usuario de la configuración de PDF.
 * Asegúrese de que el usuario de PDF Generator sea miembro del grupo de administradores y de que se establece el privilegio [Reemplazar un (símbolo) token de nivel de proceso](#grant-the-replace-a-process-level-token-privilege) para el usuario.
-* Asegúrese de que el usuario está configurado en la interfaz de usuario del Generador de PDF y realiza las siguientes acciones:
+* Asegúrese de que el usuario está configurado en la interfaz de usuario de PDF Generator y realiza las siguientes acciones:
    1. Inicie sesión en Microsoft® Windows con el usuario de PDF Generator.
    1. Abra las aplicaciones de Microsoft® Office u OpenOffice y cancele todos los cuadros de diálogo.
    1. Establezca AdobePDF como la impresora predeterminada.
@@ -671,7 +671,7 @@ Antes de realizar las siguientes comprobaciones, asegúrese de que [Herramienta 
 
 * Instale la [versión compatible](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de OpenOffice. AEM Forms admite versiones de 32 y 64 bits. Después de la instalación, abra todas las aplicaciones de OpenOffice, cancele todas las ventanas de diálogo y cierre las aplicaciones. Vuelva a abrir las aplicaciones y asegúrese de que no aparece ningún cuadro de diálogo al abrir una aplicación de OpenOffice.
 
-* Crear una variable de entorno `OpenOffice_PATH` y configúrelo para que apunte a que la instalación de OpenOffice está configurada en la [consola](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o el perfil dt (árbol de dispositivos).
+* Crear una variable de entorno `OpenOffice_PATH` y configúrelo para que apunte a que la instalación de OpenOffice está configurada en la [consolar](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o el perfil dt (árbol de dispositivos).
 * Si hay problemas al instalar OpenOffice, asegúrese de que las [bibliotecas de 32 bits](#extrarequirements) requeridas para la instalación de OpenOffice están disponibles.
 
 +++
@@ -690,7 +690,7 @@ Problemas de conversión de ++HTML a PDF
    ldd phantomjs | grep not
    ```
 
-* Asegúrese de que la variable de entorno JAVA_HOME_32 señala a la ubicación correcta.
+* Asegúrese de que la variable de entorno JAVA_HOME_32 apunta a la ubicación correcta.
 
 **Linux® y Solaris™ (ruta de conversión WebKit)**
 
@@ -765,7 +765,7 @@ Problemas de conversión de ++HTML a PDF
 
 * Si tiene una licencia existente de Adobe Acrobat y esta ha caducado, [descargue la versión más reciente de Adobe Application Manager](https://helpx.adobe.com/es/creative-suite/kb/aam-troubleshoot-download-install.html) y migre el número de serie. Antes de [migrar el número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Utilice los siguientes comandos para generar prov.xml y volver a erializar la instalación existente utilizando el archivo prov.xml en lugar de los comandos proporcionados en [migración del número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) artículo numérico.
+   * Utilice los siguientes comandos para generar el archivo prov.xml y vuelva a serializar la instalación existente usando este en lugar de los comandos proporcionados en [migración del número de serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) artículo de número.
 
           ```
           

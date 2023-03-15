@@ -1,7 +1,7 @@
 ---
-title: Seguimiento de resultados y envío de comentarios
+title: Seguimiento de resultados y suministro de comentarios
 seo-title: Tracking results and providing feedback
-description: Cómo y dónde se definen los casos de prueba, y el plan de prueba resultante, está a su discreción
+description: Cómo y dónde se definen los casos de prueba, y el plan de prueba resultante, quedan a su discreción
 seo-description: How and where you define the test cases, and the resulting test plan, is at your own discretion
 uuid: b4b811d4-4ca0-4477-a866-b262f9a698f4
 contentOwner: Guillaume Carlino
@@ -17,18 +17,18 @@ ht-degree: 0%
 
 ---
 
-# Seguimiento de resultados y envío de comentarios{#tracking-results-and-providing-feedback}
+# Seguimiento de resultados y suministro de comentarios{#tracking-results-and-providing-feedback}
 
-Cómo y dónde se definen los casos de prueba, y el plan de prueba resultante, está a su propia discreción; hay muchas herramientas disponibles.
+Cómo y dónde se definen los casos de prueba, y el plan de prueba resultante, dependen de su propia discreción; hay muchas herramientas disponibles.
 
-Sin embargo, independientemente del método o herramienta que elija, la información se almacena:
+Sin embargo, independientemente del método o herramienta que elija, la información se almacena de la siguiente manera:
 
 * Debe ser:
 
-   * Se limita al seguimiento del caso de prueba y sus resultados. Esto garantiza que el mantenimiento sea sencillo y que el documento pueda proporcionar una visión general clara del progreso de las pruebas.
-   * Se mantiene como una copia única, disponible para todos los miembros pertinentes del equipo del proyecto.
-   * Neutro y limitado a los resultados de la prueba. Es responsabilidad del director del proyecto tomar decisiones sobre cualquier acción que resulte de los resultados de la prueba.
+   * Limitado al seguimiento del caso de prueba y sus resultados. Esto garantiza que el mantenimiento sea sencillo y que el documento pueda proporcionar una visión general clara del progreso de las pruebas.
+   * Se mantiene como una sola copia, disponible para todos los miembros adecuados del equipo del proyecto.
+   * Neutro y limitado a los resultados de la prueba. Es responsabilidad del administrador del proyecto tomar decisiones sobre cualquier acción resultante de los resultados de la prueba.
 
 * No debe ser:
 
-   * Se ha ampliado para incluir información de seguimiento, sin errores, nuevas funciones ni acciones de seguimiento. Esta información debe mantenerse en otro lugar, de nuevo hay muchos instrumentos disponibles.
+   * Se ha ampliado para incluir información de seguimiento, sin errores, nuevas funciones ni acciones de seguimiento. Esta información debe mantenerse en otro lugar, una vez más hay muchas herramientas disponibles.

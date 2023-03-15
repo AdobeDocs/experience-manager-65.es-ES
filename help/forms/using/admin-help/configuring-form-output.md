@@ -1,5 +1,5 @@
 ---
-title: Configuración de la salida del formulario
+title: Configurar la salida del formulario
 seo-title: Configuring form output
 description: Obtenga información sobre cómo configurar la salida del formulario.
 seo-description: Learn how to configure form output.
@@ -13,45 +13,45 @@ exl-id: d739806c-ce72-40fd-b304-3262a0988d96
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
-# Configuración de la salida del formulario{#configuring-form-output}
+# Configurar la salida del formulario{#configuring-form-output}
 
-## Especifique el tipo de salida de HTML devuelta al explorador web {#specify-the-type-of-html-output-returned-to-the-web-browser}
+## Especifique el tipo de salida del HTML devuelta al explorador web {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
-1. En la consola de administración, haga clic en Servicios > formularios.
+1. En la consola de administración, haga clic en Servicios > Formularios.
 1. En Salida de formulario, en la lista Tipo de salida, seleccione una de las siguientes opciones:
 
-   **HTML completo:** Para procesar el formulario con etiquetas de HTML completas (una página de HTML completa). Este valor es el predeterminado.
+   **HTML completo:** Para procesar el formulario con las HTML completas (una página completa del HTML). Este valor es el predeterminado.
 
-   **Cuerpo del formulario:** Renderización del formulario en `<BODY>` etiquetas (no es una página de HTML completa).
+   **Cuerpo del formulario:** Para procesar el formulario en `<BODY>` etiquetas (no es una página de HTML completa).
 
 1. Haga clic en Guardar.
 
-## Especifique la ubicación en la que se representa el contenido del PDF {#specify-the-location-where-pdf-content-is-rendered}
+## Especifique la ubicación donde se procesa el contenido del PDF {#specify-the-location-where-pdf-content-is-rendered}
 
 1. En Salida de formulario, en la lista Procesar en, seleccione una de las siguientes opciones:
 
-   **Cliente:** Para procesar PDF forms en Adobe Acrobat o Adobe Reader. La renderización del lado del cliente mejora el rendimiento de AEM formularios y se aplica solo a la transformación PDFForm.
+   **Cliente:** Para procesar PDF forms en Adobe Acrobat o Adobe Reader. AEM El procesamiento del lado del cliente mejora el rendimiento de los formularios de la y se aplica solo a la transformación del formulario PDF.
 
    **Servidor:** Para procesar PDF forms en el servidor de aplicaciones.
 
-   **Automático:** Renderización del formulario de PDF en la ubicación especificada por el `dynamicRender` valor de configuración del archivo XDP. Este valor es el predeterminado.
+   **Automático:** Para procesar el formulario de PDF en la ubicación especificada por la variable `dynamicRender` valor de configuración del archivo XDP. Este valor es el predeterminado.
 
 1. Haga clic en Guardar.
 
-## Configuración de la invocación de secuencias de comandos personalizadas antes del envío del formulario {#configuring-invocation-of-custom-scripts-before-form-submit}
+## Configurar la invocación de scripts personalizados antes del envío del formulario {#configuring-invocation-of-custom-scripts-before-form-submit}
 
-Siga estos pasos para habilitar la función:
+Siga los siguientes pasos para habilitar la función:
 
 1. Inicie sesión en la consola de administración.
-1. Vaya a **Servicios** > **formularios**.
-1. Especifique el tipo Salida como Cuerpo del formulario.
+1. Ir a **Servicios** > **formularios**.
+1. Especifique el Tipo de salida como Cuerpo del formulario.
 1. Guarde la configuración.
-1. Declare una variable de JavaScript, __CUSTOM_SCRIPTS_VERSION, en la sección del encabezado del código del HTML y establezca su valor en 1.
+1. Declare una variable JavaScript, __CUSTOM_SCRIPTS_VERSION, en la sección head del código de HTML y establezca su valor en 1.
 
    >[!NOTE]
    >
-   >*Para deshabilitar la función, puede quitar la variable JavaScript o establecer su valor en 0.*
+   >*Para deshabilitar esta función, puede quitar la variable JavaScript o establecer su valor en 0.*

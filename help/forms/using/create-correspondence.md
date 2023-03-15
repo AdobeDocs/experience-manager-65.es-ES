@@ -11,7 +11,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
 source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3867'
 ht-degree: 100%
 

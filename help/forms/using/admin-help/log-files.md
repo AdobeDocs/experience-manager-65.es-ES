@@ -1,7 +1,7 @@
 ---
 title: Archivos de registro
 seo-title: Log files
-description: Eventos como errores de inicio o en tiempo de ejecución se registran en los archivos de registro del servidor de aplicaciones, que se pueden abrir con cualquier editor de texto.
+description: Los eventos como los errores de tiempo de ejecución o de inicio se registran en los archivos de registro del servidor de aplicaciones, que se pueden abrir con cualquier editor de texto.
 seo-description: Events such as run-time or startup errors are recorded to the application server log files, which can be  opened using any text editor.
 uuid: 6ed9fdcd-ff02-4b35-893f-09261a6a557a
 contentOwner: admin
@@ -13,27 +13,27 @@ exl-id: 23a65be4-3277-4c73-9189-a9b4d7be73cd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '119'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 # Archivos de registro {#log-files}
 
-Eventos como errores de inicio o en tiempo de ejecución se registran en los archivos de registro del servidor de aplicaciones. Si tiene problemas de implementación en el servidor de aplicaciones, puede utilizar los archivos de registro para ayudarle a encontrar el problema. Puede abrir los archivos de registro con cualquier editor de texto.
+Los eventos, como los errores en tiempo de ejecución o de inicio, se registran en los archivos de registro del servidor de aplicaciones. Si tiene algún problema al implementar en el servidor de aplicaciones, puede utilizar los archivos de registro para ayudarle a encontrar el problema. Puede abrir los archivos de registro con cualquier editor de texto.
 
-(JBoss) Los siguientes archivos de registro se encuentran en la `[appserver root]/server/'server'/log` directorio:
+(JBoss) Los siguientes archivos de registro se encuentran en `[appserver root]/server/'server'/log` directorio:
 
 * boot.log
 * server.log.*[aaaa-mm-dd]*
 * server.log
 
-(WebLogic) Los archivos de registro de dominio se encuentran en el `[appserverdomain]` y los archivos de registro del servidor se encuentran en la variable `[appserverdomain]/servers/[appserver name]/logs` directorio:
+(WebLogic) Los archivos de registro de dominio se encuentran en la `[appserverdomain]` Los archivos de registro del directorio y del servidor se encuentran en `[appserverdomain]/servers/[appserver name]/logs` directorio:
 
 * `access.log`
 * `[appserver name].log`
 * `[appserver name].out.[incremental number]`
 
-(WebSphere) Los siguientes archivos de registro se encuentran en la `[appserver root]/profiles/default/logs/[appserver name]` directorio:
+(WebSphere) Los siguientes archivos de registro se encuentran en la variable `[appserver root]/profiles/default/logs/[appserver name]` directorio:
 
 * SystemErr.log
 * SystemOut.log

@@ -132,7 +132,7 @@ Para personalizar una newsletter y simular su aspecto:
 
 >[!NOTE]
 >
->Antes de enviar newsletters, compruebe la configuración OSGi para Day CQ Link Externalizer en `https://localhost:4502/system/console/configMgr`.
+>Antes de enviar boletines informativos, compruebe la configuración de OSGi para el Day CQ Link Externalizer en `https://localhost:4502/system/console/configMgr`.
 >
 >De forma predeterminada, el valor del parámetro es `localhost:4502` y la operación no podrá completarse si se cambia el puerto de ejecución de la instancia.
 
@@ -220,7 +220,7 @@ El boletín se puede enviar desde el propio boletín o desde la lista. Se descri
 
 >[!NOTE]
 >
->Antes de enviar newsletters, compruebe la configuración OSGi para Day CQ Link Externalizer en `https://localhost:4502/system/console/configMgr`.
+>Antes de enviar boletines informativos, compruebe la configuración de OSGi para el Day CQ Link Externalizer en `https://localhost:4502/system/console/configMgr`.
 >
 >De forma predeterminada, el valor del parámetro es `localhost:4502` y la operación no podrá completarse si se cambia el puerto de ejecución de la instancia.
 
@@ -277,7 +277,7 @@ Para enviar un boletín desde una lista:
 
 1. El final de la configuración se ha confirmado. Haga clic en **Enviar** para enviar el boletín seleccionado a la lista especificada de posibles clientes.
 
-   ![mcm_newsletters senddialog_confirmation](assets/mcm_newslettersenddialog_confirmation.png)
+   ![mcm_newslettersenddialog_confirmation](assets/mcm_newslettersenddialog_confirmation.png)
 
    La newsletter se enviará a los destinatarios seleccionados.
 

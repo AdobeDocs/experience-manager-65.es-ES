@@ -22,9 +22,9 @@ ht-degree: 94%
 
 >[!CAUTION]
 >
->Como la IU clásica quedó obsoleta en la AEM 6.4, el contenido de esta página no se ha actualizado para WCAG 2.1.
+>AEM Como la IU clásica estaba en desuso en la versión 6.4, el contenido de esta página no se ha actualizado para WCAG 2.1.
 >
->Consulte las siguientes páginas para obtener detalles relacionados con AEM y WCAG 2.1:
+>AEM Consulte las siguientes páginas para obtener más información relacionada con la y WCAG 2.1:
 >
 >* [AEM y las directrices de accesibilidad web](/help/managing/web-accessibility.md) 
 >* [Guía rápida de WCAG 2.1](/help/managing/qg-wcag.md)
@@ -73,7 +73,7 @@ La siguiente sección presenta las [directrices WCAG 2.0](https://www.w3.org/TR/
 
 [Directrices 1.1 Alternativas de texto: proporciona alternativas de texto para cualquier contenido no textual para cambiarlo por otras formas según sea necesario, como letras grandes, braille, voz, símbolos o lenguaje más sencillo.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
-### Contenido no textual (1.1.1)     {#non-text-content}
+### Contenido no textual (1.1.1) {#non-text-content}
 
 * Criterios de éxito 1.1.1
 * Nivel A
@@ -81,11 +81,11 @@ La siguiente sección presenta las [directrices WCAG 2.0](https://www.w3.org/TR/
 
 #### Objetivo: Contenido no textual (1.1.1) {#purpose-non-text-content}
 
-La información en una página web se puede proporcionar en muchos formatos no textuales distintos, como fotografías, vídeos, animaciones, tablas y gráficos. Las personas ciegas o con deficiencias visuales graves no pueden ver el contenido no textual, pero pueden acceder al contenido textual si lo lee en voz alta un lector de pantalla o si se presenta en un formato táctil a través de un dispositivo de visualización braille. Por ello, al proporcionar alternativas textuales para el contenido en formato gráfico, quienes no puedan ver el contenido gráfico podrán acceder a una versión equivalente de la información que proporcione el contenido.
+La información en una página web se puede proporcionar en muchos formatos no textuales distintos, como fotografías, vídeos, animaciones, tablas y gráficos. Las personas ciegas o con deficiencias visuales graves no pueden ver el contenido no textual, pero pueden acceder al contenido textual si lo lee en voz alta un lector de pantalla o si se presenta en un formato táctil a través de un dispositivo de visualización Braille. Por ello, al proporcionar alternativas textuales para el contenido en formato gráfico, quienes no puedan ver el contenido gráfico podrán acceder a una versión equivalente de la información que proporcione el contenido.
 
 Un beneficio útil adicional es que las alternativas textuales permiten indexar contenido no textual mediante una tecnología de buscadores.
 
-#### Cómo cumplir: Contenido no textual (1.1.1)     {#how-to-meet-non-text-content}
+#### Cómo cumplir: Contenido no textual (1.1.1) {#how-to-meet-non-text-content}
 
 Para gráficos estáticos, el requisito principal es proporcionar una alternativa textual equivalente para el gráfico. Esto se puede llevar a cabo en el campo **Texto alternativo:**
 
@@ -101,19 +101,19 @@ AEM añade un **Texto alternativo** a sus imágenes por defecto. Para la IU clá
 
 * Archivo:
 
-   Se carga una imagen desde el disco duro del usuario. Si agrega un componente de imagen a una página y luego elige una imagen de su disco duro u otra fuente, el valor predeterminado para **Texto alternativo** es `file`. Se deberá cambiar en la pestaña **Avanzado** en propiedades de la imagen. De nuevo, este valor no se mostrará en el campo **Texto alternativo** pero, cuando se cambie el valor, el nuevo aparecerá en el campo.
+   Se carga una imagen desde el disco duro del usuario. Si agrega un componente de imagen a una página y, a continuación, elige una imagen del disco duro u otra fuente, el valor predeterminado para **Texto alternativo** es `file`. Se deberá cambiar en la pestaña **Avanzado** en propiedades de la imagen. De nuevo, este valor no se mostrará en el campo **Texto alternativo** pero, cuando se cambie el valor, el nuevo aparecerá en el campo.
 
 * Recurso:
 
-   Se añade una imagen del repositorio de recursos digital. Si arrastra una imagen del repositorio de recursos digital hasta la página web, los valores de **Título** y **Texto alternativo** para dicha imagen se tomarán de los metadatos de la misma.
+   Se agrega una imagen desde el repositorio de recursos digitales. Si arrastra una imagen del repositorio de recursos digital hasta la página web, los valores de **Título** y **Texto alternativo** para dicha imagen se tomarán de los metadatos de la misma.
 
 >[!NOTE]
 >
->En ambos casos, el valor predeterminado **Texto alternativo** no es visible en la variable **Propiedades de imagen avanzadas** pestaña . Para cambiar el valor predeterminado, simplemente introduzca un nuevo valor en la variable **Texto alternativo** campo .
+>En ambos casos, la opción predeterminada **Texto alternativo** El valor no es visible en **Propiedades de imagen avanzadas** pestaña. Para cambiar el valor predeterminado, simplemente introduzca un nuevo valor en **Texto alternativo** field.
 
 >[!NOTE]
 >
->Si la imagen es puramente decorativa (consulte [Crear buenas alternativas de texto](#creating-good-text-alternatives)), puede introducir un espacio en blanco en el campo **Texto alternativo** utilizando la barra espaciadora. Esto creará un vacío `alt` , lo que hará que un lector de pantalla ignore la imagen.
+>Si la imagen es puramente decorativa (consulte [Crear buenas alternativas de texto](#creating-good-text-alternatives)), puede introducir un espacio en blanco en el campo **Texto alternativo** utilizando la barra espaciadora. Esto creará un vacío `alt` , que pedirá al lector de pantalla que ignore la imagen.
 
 #### Crear buenas alternativas de texto {#creating-good-text-alternatives}
 
@@ -136,19 +136,19 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
 
 * Fotos ilustrativas:
 
-   Estas son imágenes de personas, objetos o lugares. Piense en el papel de la foto en la página; es probable que un texto equivalente apropiado sea *Foto de [object]*, pero puede depender del texto que lo rodea.
+   Son imágenes de personas, objetos o lugares. Considere el papel de la foto en la página; un texto equivalente apropiado probablemente sea *Foto de [objeto]*, pero puede depender del texto que lo rodea.
 
 * Iconos:
 
-   Estos son pequeños pictogramas (gráficos) que transmiten información específica. Se deben utilizar de manera consistente en una página o sitio. Todos los ejemplos del icono en una página o sitio deben contener el mismo texto alternativo, corto y preciso, a menos que se duplique innecesariamente el texto adyacente.
+   Son pequeños pictogramas (gráficos) que transmiten información específica. Se deben utilizar de manera consistente en una página o sitio. Todos los ejemplos del icono en una página o sitio deben contener el mismo texto alternativo, corto y preciso, a menos que se duplique innecesariamente el texto adyacente.
 
-* Gráficos y gráficos:
+* Gráficos y diagramas:
 
-   Normalmente representan datos numéricos. Una opción para proporcionar una alternativa textual podría ser incluir un breve resumen de las tendencias principales que se muestran en la tabla o en el gráfico. Si es necesario, proporcione también una descripción más detallada en el texto utilizando la variable **Descripción** en el campo **Avanzadas** ficha propiedades de imagen. Además, puede proporcionar los datos de origen en formato tabulado en cualquier otra parte de la página o sitio.
+   Normalmente representan datos numéricos. Una opción para proporcionar una alternativa textual podría ser incluir un breve resumen de las tendencias principales que se muestran en la tabla o en el gráfico. Si es necesario, proporcione también una descripción más detallada en el texto utilizando la variable **Descripción** en el campo **Avanzadas** pestaña propiedades de la imagen. Además, puede proporcionar los datos de origen en formato tabulado en cualquier otra parte de la página o sitio.
 
    ![Ejemplo de gráfico. Debajo se representa el mejor enfoque para proporcionar una alternativa.](assets/chlimage_1-2a.jpeg)
 
-   Para proporcionar una alternativa para este gráfico de ejemplo, agregue una `alt` texto a la imagen misma y después seguir la imagen con una alternativa textual completa.
+   Para proporcionar una alternativa a este gráfico de ejemplo, añada una `alt` texto a la propia imagen y, a continuación, siga la imagen con una alternativa de texto completo.
 
    ```xml
    <p><img src="figure1.gif" alt="Figure 1" ></p>
@@ -158,7 +158,7 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
 
    >[!NOTE]
    >
-   >El fragmento anterior solo se utiliza para ilustrar el orden. Se recomienda usar la variable **Imagen** (en lugar de `img src` referencia utilizada anteriormente.
+   >El fragmento anterior solo se utiliza para ilustrar el orden. Se recomienda utilizar la variable **Imagen** componente (en lugar de `img src` Referencia utilizada anteriormente.
 
    Esto se puede hacer en AEM mediante la combinación de los campos **Texto alternativo** y **Descripción** en el cuadro de diálogo de configuración de la imagen, como en [Contenido no textual (1.1.1)](#how-to-meet-non-text-content).
 
@@ -168,7 +168,7 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
 
 * CAPTCHA:
 
-   Un CAPTCHA es un *Prueba de Turing pública completamente automatizada para distinguir entre ordenadores y humanos*. Es una medida de seguridad que se utiliza en páginas web para distinguir a humanos de software maligno, pero que puede originar barreras de accesibilidad. Se trata de imágenes que requieren que los usuarios describan lo que ven para pasar una prueba de seguridad. Como obviamente no es posible proporcionar una alternativa textual para la imagen, en lugar de ello tendrá que considerar una solución alternativa que no sea gráfica.‪
+   Un CAPTCHA es un *Prueba de Turing pública completamente automatizada para diferenciar ordenadores de humanos*. Es una medida de seguridad que se utiliza en páginas web para distinguir a humanos de software maligno, pero que puede originar barreras de accesibilidad. Se trata de imágenes que requieren que los usuarios describan lo que ven para pasar una prueba de seguridad. Como obviamente no es posible proporcionar una alternativa textual para la imagen, en lugar de ello tendrá que considerar una solución alternativa que no sea gráfica.‪
 
 
    W3C proporciona varias sugerencias como: Cada uno de estos enfoques tiene sus propias ventajas e inconvenientes.‪
@@ -187,7 +187,7 @@ Los tipos específicos de contenido no textual que requieren alternativas textua
    >
    >Debe haber un nivel adecuado de contraste entre el fondo y el texto en primer plano; este es un tema que se analiza en detalle en [Contraste (Mínimo) (1.4.3)](#contrast-minimum).
 
-#### Más información: Contenido no textual (1.1.1)     {#more-information-non-text-content}
+#### Más información: Contenido no textual (1.1.1) {#more-information-non-text-content}
 
 * [Entender los criterios de éxito 1.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
 * [Cumplir los criterios de éxito 1.1.1](https://www.w3.org/WAI/WCAG20/quickref/#text-equiv)
@@ -394,7 +394,7 @@ Puede comprobar que sus páginas web contienen la estructura adecuada mediante:
 
 * **Uso de encabezados:**
 
-   Siempre que tenga las características de accesibilidad de RTE activadas (consulte [AEM y accesibilidad](/help/sites-administering/rte-accessible-content.md)), AEM ofrece 3 niveles de encabezado de página. Puede utilizarlos para identificar secciones y subsecciones de contenido. El Encabezado 1 es el nivel más alto, mientras que el Encabezado 3 es el más bajo. El administrador del sistema puede configurar el sistema para permitir el uso de más niveles de encabezado.
+   Siempre que tenga las funciones de accesibilidad de RTE activadas (consulte [AEM Acceso y accesibilidad de la](/help/sites-administering/rte-accessible-content.md)AEM ), ofrece 3 niveles de encabezado de página. Puede utilizarlas para identificar secciones y subsecciones de contenido. El encabezado 1 es el nivel más alto, mientras que el encabezado 3 es el más bajo. El administrador del sistema puede configurar el sistema para permitir el uso de más niveles de encabezado.
 
    La imagen siguiente muestra un ejemplo de los distintos tipos de encabezados.
 
@@ -405,7 +405,7 @@ Puede comprobar que sus páginas web contienen la estructura adecuada mediante:
    Utilice el elemento &lt;strong> o &lt;em> para dar énfasis. No utilice encabezados o texto enfatizado en los párrafos.
 
    * Enfatice el texto que quiera remarcar;
-   * Haga clic en el **B** icono (para &lt;strong>) o **I** icono (para &lt;em>) que se muestra dentro de la variable **Propiedades** (asegúrese de que el HTML está seleccionado).
+   * Haga clic en **B** icono (para &lt;strong>) o el **I** icono (para &lt;em>) mostrado en el **Propiedades** panel (asegúrese de que el HTML está seleccionado).
 
    >[!NOTE]
    >
@@ -419,11 +419,11 @@ Puede comprobar que sus páginas web contienen la estructura adecuada mediante:
 * **Utilizar listas**:
 Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
-   * La variable `<ul>` element se utiliza para *unordered* listas (con viñetas). Los elementos de listas individuales se identifican utilizando el elemento `<li>`.
+   * El `<ul>` se utiliza para *desordenado* listas (listas con viñetas). Los elementos de listas individuales se identifican utilizando el elemento `<li>`. 
 
-      en RTE, utilice la variable **Lista con viñetas** icono.
+      en RTE, utilice el **Lista con viñetas** icono.
 
-   * El elemento `<ol>` se utiliza para listas *numeradas*. Los elementos de listas individuales se identifican utilizando el elemento `<li>`.
+   * El elemento `<ol>` se utiliza para listas *numeradas*. Los elementos de listas individuales se identifican utilizando el elemento `<li>`. 
 
       En RTE, utilice el icono **Lista numerada**.
    Si desea cambiar contenido existente por un tipo de lista específica, remarque el texto adecuado y seleccione el tipo de lista adecuado. Como en el ejemplo anterior, en el que se mostraba cómo se introducía texto en formato párrafo, los elementos de la lista adecuada se añaden automáticamente a tu HTML, pero puede verlo en la vista de editor de la fuente.
@@ -459,7 +459,7 @@ Es posible utilizar HTML para especificar tres tipos de listas distintas.
 
    ![Cuadro de diálogo de Propiedades de la tabla.](assets/chlimage_1-20a.png)
 
-   A continuación, puede usar la variable **Propiedades de celda** para elegir si la celda es un dato o una celda de encabezado y, si es una celda de encabezado, si se refiere a una fila, columna o ambas:
+   A continuación, puede utilizar la variable **Propiedades de celda** para elegir si la celda es una celda de datos o de encabezado y, si es una celda de encabezado, si está relacionada con una fila o columna o con ambas:
 
    ![Cuadro de diálogo de Propiedades de la celda; configurar una fila (normalmente la primera) como encabezado.](assets/chlimage_1-21a.png)
 
@@ -742,7 +742,7 @@ Este criterio de éxito ayuda a todo el mundo, independientemente de cualquier d
 
 Al crear una página HTML nueva en AEM, se puede especificar el título de la página. Asegúrese de que el título describe adecuadamente el contenido de la página para que los usuarios puedan identificar rápidamente si el contenido es relevante o no para sus necesidades.
 
-También puede editar el título de la página al editar una página, a la que se puede acceder mediante **Barra de tareas** - **Página** pestaña - **Propiedades de página...**
+También puede editar el título de la página al editarla. Puede acceder a ella desde **Compañero** - **Página** pestaña - **Propiedades de página...**
 
 #### Más información: Página titulada (2.4.2) {#more-information-page-titled}
 
@@ -871,7 +871,7 @@ Las páginas que aplican este criterio de éxito permiten:
 
 #### Cómo cumplir: Idioma de las partes (3.1.2)   {#how-to-meet-language-of-parts}
 
-El atributo `lang` se puede utilizar para identificar los cambios en el idioma del contenido. Por ejemplo, una cita en alemán (ISO 639-1 código &quot;de&quot;) se puede mostrar de la siguiente manera:
+El atributo `lang` se puede utilizar para identificar los cambios en el idioma del contenido. Por ejemplo, una cita en alemán (ISO 639-1 código “de”) se puede mostrar de la manera siguiente:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -946,9 +946,9 @@ La colocación de las etiquetas también es importante ya que ayuda a localizar 
 
 * Casillas o botones de opción:
 
-   Las etiquetas se colocan inmediatamente a la derecha del campo .
+   Las etiquetas se colocan inmediatamente a la derecha del campo.
 
-* Todos los demás componentes del formulario (por ejemplo, cuadros de texto o cuadros combinados):
+* Otros componentes del formulario (por ejemplo, cuadros de texto o cuadros combinados):
 
    Las etiquetas se colocan inmediatamente encima o bien a la izquierda del campo.
 

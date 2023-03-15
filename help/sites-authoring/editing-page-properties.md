@@ -92,7 +92,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    Permite introducir una URL de vanidad para esta página, que le permitirá disponer de una URL más corta y/o descriptiva.
 
-   Por ejemplo, si la URL de vanidad está configurada en `welcome`a la página identificada por la ruta `/v1.0/startpage`para el sitio web `http://example.com,` then `http://example.com/welcome`sería la URL de vanidad de `http://example.com/content/v1.0/startpage`
+   Por ejemplo, si la URL de vanidad está configurada en `welcome`a la página identificada por la ruta `/v1.0/startpage`para el sitio web `http://example.com,` entonces `http://example.com/welcome`sería la URL de vanidad de `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -103,7 +103,7 @@ Las propiedades se distribuyen entre varias pestañas.
    >* No debe configurarse en una página existente.
 
 
-   También debe configurar Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL mnemónicas](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
+   También debe configurar Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL de vanidad](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
 
 * **Redirigir URL de vanidad**
 
@@ -134,7 +134,7 @@ Las propiedades se distribuyen entre varias pestañas.
    * Por ejemplo, si define un alias de `private` para la página `/content/wknd/us/en/magazine/members-only`, se puede acceder a esta página también mediante `/content/wknd/us/en/magazine/private`
    * La creación de un alias establece la propiedad `sling:alias` en el nodo de página, lo que solo afecta al recurso, no a la ruta del repositorio.
    * Las páginas a las que se accede mediante alias en el editor no se pueden publicar. Las [Opciones de publicación](/help/sites-authoring/publishing-pages.md) del editor solo están disponibles para las páginas a las que se accede a través de sus rutas reales.
-   * Para obtener más información, consulte [Nombres de páginas localizados en Recomendaciones para la administración de direcciones URL y SEO](/help/managing/seo-and-url-management.md#localized-page-names).
+   * Para obtener más información, consulte [Nombres de páginas localizados bajo Prácticas recomendadas de administración de direcciones SEO y URL](/help/managing/seo-and-url-management.md#localized-page-names).
 
 * **Heredado de &lt;*path*>**
 
@@ -158,7 +158,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
    >[!CAUTION]
    >
-   >La variable **[Permisos](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite editar las configuraciones de CUG en función de la presencia de `granite:AuthenticationRequired` mixin. Si los permisos de la página se configuran mediante configuraciones de CUG obsoletas, según la presencia de `cq:cugEnabled` , se mostrará un mensaje de advertencia en **Requisito de autenticación** y la opción no será editable, ni la variable [Permisos](/help/sites-authoring/editing-page-properties.md#permissions) se puede editar.
+   >El **[Permisos](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite editar las configuraciones de CUG en función de la presencia del `granite:AuthenticationRequired` mixin. Si los permisos de página se configuran utilizando configuraciones de CUG obsoletas, según la presencia de `cq:cugEnabled` propiedad, se mostrará un mensaje de advertencia en **Requisito de autenticación** y la opción no será editable, como tampoco lo hará la variable [Permisos](/help/sites-authoring/editing-page-properties.md#permissions) ser editable.
    >
    >
    >En ese caso, los permisos de CUG se deben editar en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
@@ -199,8 +199,7 @@ Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
 
    * **Permitir al usuario que comparta en Facebook**
    * **Permitir al usuario que comparta en Pinterest**
-   * **Variación de XF preferida**
-Define la variación de fragmentos de la experiencia que se utiliza para generar metadatos para la página.
+   * **Variación de XF preferida** Define la variación de fragmentos de la experiencia que se utiliza para generar metadatos para la página
 
 ### Cloud Services {#cloud-services}
 
@@ -233,14 +232,14 @@ Define la variación de fragmentos de la experiencia que se utiliza para generar
    * Ver los [permisos efectivos](/help/sites-administering/user-group-ac-admin.md)
    >[!CAUTION]
    >
-   >La variable **Permisos** permite editar las configuraciones de CUG en función de la presencia de `granite:AuthenticationRequired` mixin. Si los permisos de la página se configuran mediante ajustes de CUG obsoletas, dependiendo de la presencia de la propiedad `cq:cugEnabled`, se mostrará un mensaje de advertencia y los permisos de CUG no se podrán editar, al igual que el Requisito de autenticación de la ficha [Avanzado](/help/sites-authoring/editing-page-properties.md#advanced).
+   >El **Permisos** permite editar las configuraciones de CUG en función de la presencia del `granite:AuthenticationRequired` mixin. Si los permisos de la página se configuran mediante ajustes de CUG obsoletas, dependiendo de la presencia de la propiedad `cq:cugEnabled`, se mostrará un mensaje de advertencia y los permisos de CUG no se podrán editar, al igual que el Requisito de autenticación de la ficha [Avanzado](/help/sites-authoring/editing-page-properties.md#advanced).
    >
    >
    >En ese caso, los permisos de CUG se deben editar en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >La ficha Permisos no permite la creación de grupos CUG vacíos, lo cual puede resultar útil como forma sencilla de denegar el acceso de cada usuario. Para esto, es necesario utilizar CRX Explorer. Consulte el documento [Administración de derechos de usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md) para obtener más información.
+   >La ficha Permisos no permite la creación de grupos CUG vacíos, lo cual puede resultar útil como forma sencilla de denegar el acceso de cada usuario. Para esto, es necesario utilizar CRX Explorer. Ver el documento [Administración de derechos de usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md) para obtener más información.
 
 ### Modelo {#blueprint}
 
@@ -302,7 +301,7 @@ Al editar una página puede, utilizar **Información de página** para definir l
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Select **Abrir propiedades** y se abrirá un cuadro de diálogo que le permitirá editar las propiedades, ordenadas por la ficha adecuada. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
+1. Seleccionar **Abrir propiedades** y se abrirá un cuadro de diálogo que le permitirá editar las propiedades, ordenadas por la pestaña correspondiente. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
 
    * **Cancelar**
    * **Guardar y cerrar**
