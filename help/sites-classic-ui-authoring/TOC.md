@@ -62,7 +62,7 @@ ht-degree: 83%
 + Personalización {#personalization}
    + [Información acerca de la segmentación](classic-personalization-campaigns-segmentation.md)
    + [Administración de campañas](classic-personalization-campaigns.md)
-   + [Páginas de aterrizaje](classic-personalization-campaigns-landingpage.md)
+   + [Páginas de destino](classic-personalization-campaigns-landingpage.md)
    + [Ofertas de Target](classic-personalization-campaigns-target-offers.md)
    + [Marketing por correo electrónico](classic-personalization-campaigns-email.md)
    + [Seguimiento de correos electrónicos devueltos](classic-personalization-campaigns-email-tracking-bounces.md)
