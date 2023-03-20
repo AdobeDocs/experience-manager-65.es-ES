@@ -2,10 +2,10 @@
 title: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
 description: Obtenga información sobre la definición de metadatos y etiquetado para fragmentos de contenido
 exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: d33abafa0478de1f7b637a14df6d2b7712000c03
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 97%
+source-wordcount: '259'
+ht-degree: 91%
 
 ---
 
@@ -31,6 +31,10 @@ Hay tres métodos que se pueden utilizar para añadir metadatos y etiquetas:
 * Al crear el fragmento por primera vez:
 
    ![Crear fragmento de contenido: proporcionar nombre](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+* La variable **Variaciones** pestaña del editor de fragmentos de contenido le permite añadir **Etiquetas** del proyecto:
+
+   ![Editor de fragmentos de contenido: Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 * La pestaña **Metadatos** del editor de fragmentos de contenido permite agregar varios campos de metadatos y **Etiquetas** predefinidas del proyecto:
 
