@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 99%
+source-wordcount: '1098'
+ht-degree: 89%
 
 ---
 
 # Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Una de las muchas formas de iniciar o activar un flujo de trabajo centrado en Forms es mediante las aplicaciones en Bandeja de entrada de AEM. Debe crear una aplicación de flujo de trabajo para que un flujo de trabajo de Forms esté disponible como aplicación en la bandeja de entrada. Para obtener más información sobre la aplicación de flujo de trabajo y otras formas de iniciar flujos de trabajo de Forms, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](../../forms/using/aem-forms-workflow.md#launch).
+Una de las muchas formas de iniciar o activar un flujo de trabajo centrado en Forms es mediante las aplicaciones en Bandeja de entrada de AEM. Para que un flujo de trabajo de Forms esté disponible como aplicación en la Bandeja de entrada, cree una aplicación de flujo de trabajo. Para obtener más información sobre la aplicación de flujo de trabajo y otras formas de iniciar flujos de trabajo de Forms, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](../../forms/using/aem-forms-workflow.md#launch).
 
 Además, Bandeja de entrada de AEM consolida las notificaciones y tareas de varios componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de Forms que contiene una Etapa de tarea de asignación, la aplicación asociada aparece como una tarea en la bandeja de entrada del usuario asignado. Si el usuario asignado es un grupo, la tarea aparece en la bandeja de entrada de todos los miembros del grupo hasta que un individuo solicite o delegue la tarea.
 
@@ -64,7 +64,7 @@ Las tareas asignadas a un grupo aparecen en la bandeja de entrada de todos los m
 Al abrir una tarea, puede ver los detalles de la tarea y realizar las acciones disponibles. Las acciones disponibles para una tarea se definen en la Etapa de tarea de asignación del flujo de trabajo del formulario asociado.
 
 1. Pulse para seleccionar la miniatura de la tarea. Las opciones para abrir o delegar la tarea seleccionada aparecen en la parte superior.
-1. Pulse **Abrir** para ver los detalles de la tarea y realizar acciones. Se abre la vista de tareas detallada. En esta vista, puede ver los detalles de la tarea y realizar acciones respecto a ella.
+1. Toque **Apertura** para ver los detalles de la tarea. Se abre la vista de tareas detallada. En esta vista, puede ver los detalles de la tarea y trabajar en ella.
 
    >[!NOTE]
    >
@@ -99,11 +99,11 @@ Además, la pestaña muestra el historial de tareas para cada fase completada en
 
 La barra de herramientas Acciones muestra todas las opciones disponibles para la tarea. Mientras que Guardar, Restablecer y Delegar son acciones predeterminadas, otras acciones disponibles se configuran en la [Etapa de tarea de asignación](/help/sites-developing/workflows-step-ref.md). En el ejemplo anterior, se configura Aprobar y Rechazar en el flujo de trabajo.
 
-A medida que realiza una acción sobre la tarea, esta continúa en el flujo de trabajo.
+A medida que trabaja en la tarea, esta continúa en el flujo de trabajo.
 
 ### Ver tareas completadas {#view-completed-tasks}
 
-La Bandeja de entrada de AEM solo muestra las tareas activas. Las tareas completadas no aparecen en la lista. Con todo, puede utilizar los filtros de la bandeja de entrada para filtrar las tareas según varios parámetros, como el tipo de tarea, el estado, las fechas de inicio y finalización, etc. Para ver las tareas completadas:
+La Bandeja de entrada de AEM solo muestra las tareas activas. Las tareas completadas no aparecen en la lista. Sin embargo, puede utilizar los filtros de la bandeja de entrada para filtrar las tareas según varios parámetros, como el tipo de tarea, el estado y las fechas de inicio y finalización. Para ver las tareas completadas:
 
 1. En Bandeja de entrada de AEM, pulse ![toggle-side-panel1](assets/toggle-side-panel1.png) para abrir el selector de filtros.
 1. Pulse el acordeón **[!UICONTROL Estado de la tarea]** y seleccione **[!UICONTROL Completar]**. Se mostrarán todas las tareas completadas.
@@ -126,7 +126,7 @@ La pestaña **[!UICONTROL Detalles del flujo de trabajo]** muestra cada paso del
 
 ### No se pueden ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada de AEM {#unable-to-see-aem-worklow-items}
 
-El propietario de un modelo de flujo de trabajo no puede ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada de AEM. Para resolver el problema, añada los siguientes índices a su repositorio de AEM y reconstruya el índice.
+El propietario de un modelo de flujo de trabajo no puede ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada de AEM. Para resolver el problema, agregue los siguientes índices a su repositorio de AEM y reconstruya el índice.
 
 1. Utilice uno de los siguientes métodos para añadir índices:
 
@@ -141,7 +141,7 @@ El propietario de un modelo de flujo de trabajo no puede ver los elementos relac
       | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Implemente los índices mediante un paquete de AEM. Puede usar un proyecto de [Tipo de archivo de AEM](https://docs.adobe.com/content/help/es-ES/experience-manager-core-components/using/developing/archetype) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:
+   * Implemente los índices mediante un paquete de AEM. Puede usar un proyecto de [Tipo de archivo de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=es) para crear un paquete de AEM implementable. Utilice el siguiente código de ejemplo para añadir índices a un proyecto de tipo de archivo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

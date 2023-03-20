@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: d2661ee6614261179b5e8d2d9ffb7c240ce676dc
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
 source-wordcount: '7665'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Antes de instalar AEM Forms en JEE, puede aplicar las soluciones de seguridad e
 
 **Instalación y configuración en UNIX y Linux**
 
-No debe instalar ni configurar AEM Forms en JEE con un shell raíz. De forma predeterminada, los archivos se instalan en el directorio /opt, y el usuario que realiza la instalación necesita todos los permisos de archivo en /opt. De forma alternativa, se puede realizar una instalación en el directorio /user de un usuario individual en el que ya se tengan todos los permisos de archivo.
+No debe instalar ni configurar AEM Forms en JEE con un shell raíz. De forma predeterminada, los archivos se instalan en el directorio /opt, y el usuario que realiza la instalación necesita todos los permisos de archivo en /opt. Alternativamente, se puede realizar una instalación bajo el directorio /user de un usuario individual donde ya tiene todos los permisos de archivo.
 
 **Instalación y configuración en Windows**
 
@@ -193,8 +193,7 @@ Para ejecutar el servidor de aplicaciones en el que se implementa AEM Forms en 
    * **Directorio CRX-Repository**: la ubicación predeterminada es `[AEM-Forms-installation-location]\crx-repository`.
    * **Directorios temporales de AEM Forms**:
       * (Windows) Ruta TMP o TEMP tal como se establece en las variables de entorno
-      * (AIX, Linux o Solaris) Directorio raíz del usuario que ha iniciado sesión
-En sistemas basados en UNIX, un usuario no raíz puede utilizar el siguiente directorio como directorio temporal:
+      * (AIX, Linux o Solaris) Directorio raíz del usuario registrado En sistemas basados en UNIX, un usuario no raíz puede utilizar el siguiente directorio como directorio temporal:
       * (Linux) /var/tmp o /usr/tmp
       * (AIX) /tmp o /usr/tmp
       * (Solaris) /var/tmp o /usr/tmp
@@ -959,7 +958,7 @@ Respecto a la arquitectura física que se describe en la sección [Arquitectura 
 
 Para obtener instrucciones sobre cómo configurar SSL en JBoss, WebLogic y WebSphere, consulte &quot;Configuración de SSL&quot; en la [Ayuda de Administración](https://www.adobe.com/go/learn_aemforms_admin_64_es).
 
-Para obtener instrucciones sobre cómo importar certificados en una JVM (Máquina virtual Java) configurada para un servidor de AEM Forms, consulte la sección Autenticación mutua de la [Ayuda de AEM Forms Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65_es).
+Para obtener instrucciones sobre cómo importar certificados en una JVM (Máquina virtual Java) configurada para un servidor de AEM Forms, consulte la sección Autenticación mutua de la [Ayuda de AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65_es).
 
 ### Configuración del redireccionamiento SSL {#configuring-ssl-redirect}
 
@@ -1016,8 +1015,7 @@ La instalación llave en mano de AEM Forms en JEE configura una cuenta de servi
    * **Directorio CRX-Repository**: la ubicación predeterminada es `[AEM-Forms-installation-location]\crx-repository`.
    * **Directorios temporales de AEM Forms**:
       * (Windows) Ruta TMP o TEMP tal como se establece en las variables de entorno
-      * (AIX, Linux o Solaris) Directorio raíz del usuario que ha iniciado sesión
-En sistemas basados en UNIX, un usuario no raíz puede utilizar el siguiente directorio como directorio temporal:
+      * (AIX, Linux o Solaris) Directorio raíz del usuario registrado En sistemas basados en UNIX, un usuario no raíz puede utilizar el siguiente directorio como directorio temporal:
       * (Linux) /var/tmp o /usr/tmp
       * (AIX) /tmp o /usr/tmp
       * (Solaris) /var/tmp o /usr/tmp
@@ -1056,7 +1054,7 @@ El acceso a la consola de administración de JBoss y la consola JMX ya está con
 
 ### Desactivación del examen de directorios {#disable-directory-browsing}
 
-Después de iniciar sesión en la consola de administración, es posible examinar la lista de directorios de la consola modificando la URL. Por ejemplo, si cambia la URL a una de las siguientes, puede aparecer un listado de directorios:
+Después de iniciar sesión en la Consola de administración, es posible examinar la lista de directorios de la consola modificando la dirección URL. Por ejemplo, si cambia la URL a una de las siguientes, puede aparecer un listado de directorios:
 
 ```java
 https://<servername>:8080/adminui/secured/ 
