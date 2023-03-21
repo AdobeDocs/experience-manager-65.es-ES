@@ -11,10 +11,10 @@ discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 100%
+source-wordcount: '1355'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ Para completar el siguiente escenario o uno similar, necesita conocer:
 
 * CRX
 * JavaScript
-* Java
+* Java™
 
 ## Escenario: agregue un comando a la interfaz de usuario de la lista Cartas para descargar la versión de PDF aplanado de una carta {#addcommandtoletters}
 
@@ -55,7 +55,7 @@ Para personalizar Administración de correspondencia para permitir que los usuar
 
       >[!NOTE]
       >
-      >Esta ruta es específica para crear una acción que funcione con la selección de uno o varios recursos o cartas. Si desea crear una acción que funcione sin selección, debe crear un nodo de superposición para la siguiente ruta y completar los pasos restantes en consecuencia:
+      >Esta ruta es específica para crear una acción que funcione con la selección de uno o varios recursos o cartas. Si desea crear una acción que funcione sin selección, cree un nodo de superposición para la siguiente ruta y complete los pasos restantes en consecuencia:
       >
       >
       >`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/default/items`
@@ -279,7 +279,7 @@ Para personalizar Administración de correspondencia para permitir que los usuar
    1. Haga doble clic en el botón **POST.jsp** para abrirlo en CRX.
    1. Agregue el siguiente código al archivo POST.jsp y haga clic en **Guardar todo**:
 
-      Este código es específico del servicio de procesamiento de cartas. Para cualquier otro recurso, agregue las bibliotecas java de ese recurso a este código. Para obtener más información sobre las API de AEM Forms, consulte [API de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
+      Este código es específico del servicio de procesamiento de cartas. Para cualquier otro recurso, agregue las bibliotecas Java™ de ese recurso a este código. Para obtener más información sobre las API de AEM Forms, consulte [API de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
 
       Para obtener más información sobre las bibliotecas de AEM, consulte [Componentes](/help/sites-developing/components.md) de AEM.
 
