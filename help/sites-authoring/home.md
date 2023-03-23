@@ -1,19 +1,19 @@
 ---
 title: Guía del usuario de creación de AEM 6.5
 seo-title: AEM 6.5 Authoring User Guide
-description: AEM Explore los conceptos clave para la creación de contenido en 6.5. También encontrará información sobre el uso de etiquetas, plantillas y otras funciones de la página.
+description: Explore los conceptos clave para crear contenido y crear contenido en AEM 6.5. También encontrará información sobre el uso de etiquetas, plantillas y otras funciones de página.
 seo-description: Explains the concepts of authoring in AEM.
 exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 80%
+source-wordcount: '343'
+ht-degree: 81%
 
 ---
 
 # Guía del usuario de creación de AEM 6.5
 
-AEM Explore los conceptos clave para la creación de contenido en 6.5. También encontrará información sobre el uso de etiquetas, plantillas y otras funciones de la página.
+Explore los conceptos clave para crear contenido y crear contenido en AEM 6.5. También encontrará información sobre el uso de etiquetas, plantillas y otras funciones de página.
 
 ## Artículos clave de AEM
 
@@ -22,7 +22,7 @@ AEM Explore los conceptos clave para la creación de contenido en 6.5. También 
 * [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
-## AEM Guías del usuario de.5
+## Guías del usuario de AEM 6.5
 
 | Guía del usuario | Descripción |
 |--- |---|
@@ -39,7 +39,6 @@ AEM Explore los conceptos clave para la creación de contenido en 6.5. También 
 | [Guía del usuario de administración](/help/managing/home.md) | Esta guía describe cómo administrar correctamente un proyecto de AEM. |
 | [Guía del usuario de Commerce](/help/commerce/home.md) | Obtenga información sobre Commerce Integration Framework en AEM. |
 | [Guía del usuario de Mobile](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
 
 ## Recursos clave de AEM
 

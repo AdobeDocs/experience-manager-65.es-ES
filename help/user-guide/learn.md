@@ -1,53 +1,49 @@
 ---
-title: AEM Obtenga Información Acerca De Las Funcionalidades De.5
-seo-title: Learn About AEM 6.5 Capabilities
-description: AEM Descripción de las capacidades esenciales de la versión 6.5 de la
-seo-description: An description of the essential capabilities of AEM 6.5
+title: Descubra las funcionalidades de Adobe Experience Manager 6.5
+seo-title: Learn about Adobe Experience Manager 6.5 Capabilities
+description: Obtenga información sobre las funciones esenciales de Adobe Experience Manager 6.5
+seo-description: An description of the essential capabilities of Adobe Experience Manager 6.5
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 29%
+source-wordcount: '362'
+ht-degree: 4%
 
 ---
 
-# AEM Obtenga Información Acerca De Las Funcionalidades De.5 {#learn-about-aem-64-capabilities}
+# Obtenga Más Información Sobre Las Funciones De Adobe Experience Manager 6.5 {#learn-about-aem-64-capabilities}
 
-## AEM Sites {#aem-sites}
+## Experience Manager Sites {#aem-sites}
 
-AEM Sites es un sistema de administración de contenido dentro de Adobe Experience Manager que le proporciona un lugar para crear, administrar y ofrecer experiencias digitales en sitios web, sitios móviles y pantallas en el sitio para convertirlas en globales, pero relevantes y atractivas desde el punto de vista personal. [Más información](https://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) o [descubra algunos de nuestros nuevos tutoriales de funciones de vídeo.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+Experience Manager Sites es un sistema de administración de contenido en Adobe Experience Manager. Le ofrece un lugar para crear, administrar y ofrecer experiencias digitales en sitios web, sitios móviles y pantallas in situ, a fin de que sean globales al alcance, aunque relevantes y atractivas a nivel personal. [Más información](https://business.adobe.com/products/experience-manager/sites/web-content-management.html) o [examine los nuevos tutoriales de funciones de vídeo.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=en)
 
-## AEM Assets {#aem-assets}
+## Experience Manager Assets {#aem-assets}
 
-Activos AEM permite que su organización cree, administre, distribuya y optimice con facilidad activos digitales desde una plataforma en la nube con múltiples propietarios. [Descubra algunos de nuestros nuevos tutoriales de funciones de vídeo sobre AEM Assets.](https://helpx.adobe.com/experience-manager/kt/assets/index/aem-6-4-assets.html)
+Experience Manager Assets permite que su organización cree, administre, distribuya y optimice recursos digitales desde una plataforma en la nube con varios usuarios. [Consulte los nuevos tutoriales de funciones de vídeo sobre AEM Assets.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
 
-* [Uso de Activos AEM](/help/assets/manage-assets.md)
+* [Uso de Experience Manager Assets](/help/assets/manage-assets.md)
 * [Trabajo con Dynamic Media](/help/assets/dynamic-media.md)
-* [Notas de la versión de AEM](/help/release-notes/release-notes.md)
+* [Notas de la versión del Experience Manager](/help/release-notes/release-notes.md)
 
-## AEM Forms {#aem-forms}
+## Experience Manager Forms {#aem-forms}
 
-AEM ofrece una solución fácil de usar para crear, gestionar, publicar y actualizar formularios digitales complejos a la vez que se integra con procesos back-end, reglas comerciales y datos.
+Experience Manager proporciona una solución fácil de usar para crear, administrar, publicar y actualizar formularios digitales complejos a la vez que se integra con procesos back-end, reglas comerciales y datos.
 
-AEM Forms combina la creación, administración y publicación de formularios junto con las capacidades de Administración de correspondencia, Document Security y análisis integrados para crear experiencias de extremo a extremo atractivas. [Descubra algunos de nuestros nuevos tutoriales de funciones de vídeo para AEM Forms.](https://helpx.adobe.com/experience-manager/kt/forms/index/aem-6-5-forms.html)
+Experience Manager Forms combina la creación, administración y publicación de formularios junto con las funciones de administración de correspondencia, seguridad de documentos y análisis integrados para crear experiencias integrales atractivas. [Consulte los nuevos tutoriales de funciones de vídeo de Experience Manager Forms.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
 
-* [Introducción a AEM Forms](/help/forms/using/introduction-aem-forms.md)
-* [Novedades en AEM Forms](/help/forms/using/whats-new.md)
-* [Arquitecturas y topologías de AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
-* [Ajuste del rendimiento en AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
+* [Introducción a Experience Manager Forms](/help/forms/using/introduction-aem-forms.md)
+* [Novedades de Experience Manager Forms](/help/forms/using/whats-new.md)
+* [Arquitecturas y topologías en Experience Manager Forms](/help/forms/using/aem-forms-architecture-deployment.md)
+* [Ajuste del rendimiento en Experience Manager Forms](/help/forms/using/performance-tuning-aem-forms.md)
 
-## AEM Screens {#aem-screens}
+## Experience Manager Screens {#aem-screens}
 
-Screens es una función de Adobe Experience Manager que le permite publicar experiencias digitales dinámicas e interactivas, así como interacciones que implican distintos tipos de pantallas, en conjunción con una plataforma de marketing digital completa.  [Más información.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=es)
+Experience Manager Screens es una función de Adobe Experience Manager que permite publicar experiencias e interacciones digitales dinámicas e interactivas que implican distintos tipos de pantallas, todo ello desde una plataforma de marketing digital completa. [Más información.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=es)
 
-## AEM Communities {#aem-communities}
+## Comunidades de Experience Manager {#aem-communities}
 
-Comunidades es una función de Adobe Experience Manager que le ayuda a crear experiencias de comunidad en línea, incluidos foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales que son valiosas para los clientes, los empleados y la marca. [Más información.](https://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
+Comunidades de Experience Manager es una función de Adobe Experience Manager que le ayuda a crear experiencias de comunidad en línea, incluidos foros, grupos de usuarios, recursos de aprendizaje y otras funciones sociales que son valiosas para los clientes, los empleados y la marca. [Más información.](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/overview.html?lang=en)
 
-## AEM Livefyre {#aem-livefyre}
+## Experience Manager Foundation {#aem-foundation}
 
-AEM Livefyre es una función de Adobe Experience Manager totalmente nueva que le permite aprovechar todo lo que se comparte en la web para crear un flujo constante de contenido fresco y de alta calidad en sus propios sitios. [Más información](https://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) o [salta directamente a nuestras guías.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
-
-## AEM Fundamento de {#aem-foundation}
-
-Obtenga más información acerca de [Fundamentos de Adobe Experience Manager 6.5](/help/sites-deploying/home.md) y nuestro modelo de implementación de servicios administrados o sumérjase en algunos de nuestros [nuevos vídeos introductorios a las funciones de esta versión.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+Obtenga más información sobre [Adobe Experience Manager 6.5 foundation](/help/sites-deploying/home.md) y el modelo de implementación de Managed Services de Adobe, o bien use algunas de las [nuevas introducciones en vídeo a las funciones de esta versión.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)

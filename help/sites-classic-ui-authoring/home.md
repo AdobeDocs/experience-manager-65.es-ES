@@ -1,19 +1,19 @@
 ---
-title: AEM Guía del usuario de creación de IU clásica de.5
+title: Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic
 seo-title: AEM 6.5 Classic UI Authoring User Guide
-description: AEM Esta guía explica los conceptos de creación de la interfaz de usuario clásica de en la.
+description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
 seo-description: Covers the concepts of authoring in AEM in the classic UI.
 exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 82%
+source-wordcount: '327'
+ht-degree: 83%
 
 ---
 
-# AEM Guía del usuario de creación de IU clásica de.5
+# Guía del usuario de creación de la interfaz de usuario de AEM 6.5 Classic
 
-AEM Esta guía explica los conceptos de creación de la interfaz de usuario clásica de en la.
+Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
 
 ## Artículos clave de AEM
 
@@ -22,7 +22,7 @@ AEM Esta guía explica los conceptos de creación de la interfaz de usuario clá
 * [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
-## AEM Guías del usuario de.5
+## Guías del usuario de AEM 6.5
 
 | Guía del usuario | Descripción |
 |--- |---|
@@ -39,7 +39,6 @@ AEM Esta guía explica los conceptos de creación de la interfaz de usuario clá
 | [Guía del usuario de administración](/help/managing/home.md) | Esta guía describe cómo administrar correctamente un proyecto de AEM. |
 | [Guía del usuario de Commerce](/help/commerce/home.md) | Obtenga información sobre Commerce Integration Framework en AEM. |
 | [Guía del usuario de Mobile](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
 
 ## Recursos clave de AEM
 

@@ -1,19 +1,19 @@
 ---
 title: Guía del usuario de AEM 6.5 Mobile
 seo-title: AEM 6.5 Mobile User Guide
-description: AEM Aproveche la compatibilidad con la creación y administración de contenido para aplicaciones móviles. Obtenga una introducción a y aprenda a crear, desarrollar y administrar en la aplicación de servicios bajo demanda y Adobe PhoneGap Enterprise.
+description: Aproveche AEM asistencia para crear y administrar contenido para aplicaciones móviles. Obtenga una introducción y aprenda a crear, desarrollar y administrar en la aplicación de servicios bajo demanda y Adobe PhoneGap Enterprise.
 seo-description: Describes how to create and manage content for mobile applications.
 exl-id: 3531d8ea-614d-465a-8b4a-e3e3f3461e94
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '361'
 ht-degree: 77%
 
 ---
 
 # Guía del usuario de AEM 6.5 Mobile
 
-AEM Aproveche la compatibilidad con la creación y administración de contenido para aplicaciones móviles. Obtenga una introducción a y aprenda a crear, desarrollar y administrar en la aplicación de servicios bajo demanda y Adobe PhoneGap Enterprise.
+Aproveche AEM asistencia para crear y administrar contenido para aplicaciones móviles. Obtenga una introducción y aprenda a crear, desarrollar y administrar en la aplicación de servicios bajo demanda y Adobe PhoneGap Enterprise.
 
 ## Artículos clave de AEM
 
@@ -22,7 +22,7 @@ AEM Aproveche la compatibilidad con la creación y administración de contenido 
 * [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
-## AEM Guías del usuario de.5
+## Guías del usuario de AEM 6.5
 
 | Guía del usuario | Descripción |
 |--- |---|
@@ -39,7 +39,6 @@ AEM Aproveche la compatibilidad con la creación y administración de contenido 
 | [Guía del usuario de administración](/help/managing/home.md) | Esta guía describe cómo administrar correctamente un proyecto de AEM. |
 | [Guía del usuario de Commerce](/help/commerce/home.md) | Obtenga información sobre Commerce Integration Framework en AEM. |
 | [Guía del usuario de Mobile](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
 
 ## Recursos clave de AEM
 

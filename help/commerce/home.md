@@ -1,28 +1,28 @@
 ---
 title: AEM Content and Commerce
-description: AEM AEM Aprenda a utilizar y administrar Contenido y comercio de con nuestros útiles artículos sobre integraciones y cómo empezar a utilizar Tienda de productos de la tienda de la tienda de la manera más sencilla y práctica.
+description: Conozca cómo usar y administrar AEM Contenido y comercio, con nuestros útiles artículos sobre integraciones y cómo empezar a usar AEM Tienda.
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
-source-git-commit: 3ac32e5a2a1b2b266e2fc9f4ba8c7393a0566ff4
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '336'
 ht-degree: 75%
 
 ---
 
 # AEM Content and Commerce {#commerce-guide}
 
-AEM AEM Aprenda a utilizar y administrar Contenido y comercio de con nuestros útiles artículos sobre integraciones y cómo empezar a utilizar Tienda de productos de la tienda de la tienda de la manera más sencilla y práctica.
+Conozca cómo usar y administrar AEM Contenido y comercio, con nuestros útiles artículos sobre integraciones y cómo empezar a usar AEM Tienda.
 
 >[!NOTE]
 >
->AEM AEM Para obtener información sobre Contenido y comercio de la con as a Cloud Service, consulte [AEM Contenido y comercio de](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=es).
+>Para obtener AEM contenido y comercio con AEM as a Cloud Service, consulte [AEM Contenido y comercio](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=es).
 
 ## Artículos clave de Comercio {#key-articles}
 
-* [AEM Introducción al comercio de la](/help/commerce/cif/introduction.md)
+* [Introducción a AEM Comercio](/help/commerce/cif/introduction.md)
 * [Introducción](/help/commerce/cif/getting-started.md)
 
-## AEM Guías del usuario de.5
+## Guías del usuario de AEM 6.5
 
 | Guía del usuario | Descripción |
 |--- |---|
@@ -38,7 +38,6 @@ AEM AEM Aprenda a utilizar y administrar Contenido y comercio de con nuestros ú
 | [Guía del usuario sobre desarrollo](/help/sites-developing/home.md) | Aprenda a crear la instancia de AEM. |
 | [Guía del usuario de administración](/help/managing/home.md) | Esta guía describe cómo administrar correctamente un proyecto de AEM. |
 | [Guía del usuario de Mobile](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
 
 ## Recursos clave de AEM
 

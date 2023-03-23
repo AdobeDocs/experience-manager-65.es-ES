@@ -1,18 +1,18 @@
 ---
-title: AEM Guía del usuario de implementación de.5
+title: Guía del usuario de implementación de AEM 6.5
 seo-title: AEM 6.5 Deploying User Guide
-description: Obtenga información acerca de la instalación e implementación de Adobe Experience Manager 6.5 y su arquitectura, incluida nuestra implementación en la nube de Adobe Managed Services.
+description: Obtenga información sobre la instalación e implementación de Adobe Experience Manager 6.5 y sobre su arquitectura, incluida nuestra implementación en la nube de Adobe Managed Services.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 76%
+source-wordcount: '361'
+ht-degree: 75%
 
 ---
 
-# AEM Guía del usuario de implementación de.5
+# Guía del usuario de implementación de AEM 6.5
 
-AEM AEM Esta guía cubre todas las tareas de implementación de la, como la instalación y el despliegue de los recursos de la aplicación de la aplicación de la aplicación de la.
+Esta guía abarca todas AEM tareas de implementación, como instalar e implementar AEM.
 
 ## Artículos clave de AEM
 
@@ -21,7 +21,7 @@ AEM AEM Esta guía cubre todas las tareas de implementación de la, como la inst
 * [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
-## AEM Guías del usuario de.5
+## Guías del usuario de AEM 6.5
 
 | Guía del usuario | Descripción |
 |--- |---|
@@ -38,7 +38,6 @@ AEM AEM Esta guía cubre todas las tareas de implementación de la, como la inst
 | [Guía del usuario de administración](/help/managing/home.md) | Esta guía describe cómo administrar correctamente un proyecto de AEM. |
 | [Guía del usuario de Commerce](/help/commerce/home.md) | Obtenga información sobre Commerce Integration Framework en AEM. |
 | [Guía del usuario de Mobile](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
 
 ## Recursos clave de AEM
 
@@ -51,8 +50,8 @@ AEM AEM Esta guía cubre todas las tareas de implementación de la, como la inst
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
 * [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)
 
-## Copyright, licencias y exenciones de responsabilidad {#copyright-licenses-and-disclaimers}
+## Derechos de autor, licencias y exenciones de responsabilidad {#copyright-licenses-and-disclaimers}
 
 Para obtener más información, consulte [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
-Aviso de licencias de terceros: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
+Notificación de licencias de terceros: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)

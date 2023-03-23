@@ -1,17 +1,17 @@
 ---
 title: Guía del usuario de administración de AEM 6.5
-description: AEM Obtenga información acerca de la administración de 6.5. Estas guías tratan sobre las funciones del sitio, las operaciones de implementación, las funciones de seguridad, la personalización, la integración, etc.
+description: Obtenga información sobre la administración de AEM 6.5. Estas guías tratan sobre las características del sitio, las operaciones de implementación, las funciones de seguridad, la personalización, la integración y mucho más.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 83%
+source-wordcount: '328'
+ht-degree: 84%
 
 ---
 
 # Guía del usuario de administración de AEM 6.5
 
-AEM Obtenga información acerca de la administración de 6.5. Estas guías tratan sobre las funciones del sitio, las operaciones de implementación, las funciones de seguridad, la personalización, la integración, etc.
+Obtenga información sobre la administración de AEM 6.5. Estas guías tratan sobre las características del sitio, las operaciones de implementación, las funciones de seguridad, la personalización, la integración y mucho más.
 
 ## Artículos clave
 
@@ -20,7 +20,7 @@ AEM Obtenga información acerca de la administración de 6.5. Estas guías trata
 * [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
-## AEM Guías del usuario de.5
+## Guías del usuario de AEM 6.5
 
 | Guía del usuario | Descripción |
 |--- |---|
@@ -37,7 +37,6 @@ AEM Obtenga información acerca de la administración de 6.5. Estas guías trata
 | [Guía del usuario de administración](/help/managing/home.md) | Esta guía describe cómo administrar correctamente un proyecto de AEM. |
 | [Guía del usuario de Commerce](/help/commerce/home.md) | Obtenga información sobre Commerce Integration Framework en AEM. |
 | [Guía del usuario de Mobile](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
 
 ## Recursos clave de AEM
 

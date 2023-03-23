@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Forms Guide
 description: Utilice esta guía de AEM 6.5 para crear, administrar, publicar y actualizar formularios digitales. Obtenga ayuda para instalarlos, actualizarlos y configurarlos, y aprenda a crear formularios adaptables.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 95%
+source-wordcount: '348'
+ht-degree: 96%
 
 ---
 
@@ -39,7 +39,6 @@ Utilice esta guía de AEM 6.5 para crear, administrar, publicar y actualizar fo
 | [Guía del usuario de administración](/help/managing/home.md) | Esta guía describe cómo administrar correctamente un proyecto de AEM. |
 | [Guía del usuario de Commerce](/help/commerce/home.md) | Obtenga información sobre Commerce Integration Framework en AEM. |
 | [Guía del usuario de Mobile](/help/mobile/home.md) | Esta guía describe cómo crear y administrar contenido para aplicaciones móviles. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | Esta guía muestra cómo compartir contenido generado por el usuario con Livefyre. |
 
 ## Recursos clave de AEM
 
