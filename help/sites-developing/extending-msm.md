@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 0caaa4b5de519567df4a527f62a2583abd7ed937
+source-git-commit: 7bed185be14938f1165d56f9b758961ae0f5c479
 workflow-type: tm+mt
-source-wordcount: '2593'
+source-wordcount: '2579'
 ht-degree: 2%
 
 ---
@@ -45,8 +45,8 @@ Esta página le ayuda a ampliar las funcionalidades del administrador de varios 
 
 La administración de varios sitios consta de los siguientes paquetes:
 
-* [com.day.cq.wcm.msm.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 Los principales objetos de la API de MSM interactúan de la siguiente manera (consulte también [Términos utilizados](/help/sites-administering/msm.md#terms-used)):
 
@@ -105,8 +105,8 @@ Los principales objetos de la API de MSM interactúan de la siguiente manera (co
 
 Cree acciones de sincronización personalizadas para utilizarlas con las configuraciones de lanzamiento. Cree una acción de sincronización al [acciones instaladas](/help/sites-administering/msm-sync.md#installed-synchronization-actions) no cumpla los requisitos específicos de la aplicación. Para ello, cree dos clases:
 
-* Una implementación de [ `com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) que realiza la acción.
-* Un componente OSGI que implementa el [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) y crea instancias de su `LiveAction` Clase .
+* Una implementación de [ `com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) que realiza la acción.
+* Un componente OSGI que implementa el [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) y crea instancias de su `LiveAction` Clase .
 
 La variable `LiveActionFactory` crea instancias del `LiveAction` para una configuración determinada:
 
@@ -129,7 +129,7 @@ Utilice la variable `LiveAction` nodo de configuración en el repositorio para a
 
 Por ejemplo, una `LiveAction` debe almacenar el nombre del autor del modelo. Una propiedad del nodo de configuración incluye el nombre de propiedad de la página de modelo que almacena la información. Durante el tiempo de ejecución, la variable `LiveAction` recupera el nombre de propiedad de la configuración y, a continuación, obtiene el valor de propiedad.
 
-El parámetro de la variable ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` es un método `Resource` objeto. Esta `Resource` representa la variable `cq:LiveSyncAction` para esta acción activa en la configuración de lanzamiento; see [Creación de una configuración de lanzamiento](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Como de costumbre, al utilizar un nodo de configuración, debe adaptarlo a un `ValueMap` objeto:
+El parámetro de la variable [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) es un método `Resource` objeto. Esta `Resource` representa la variable `cq:LiveSyncAction` para esta acción activa en la configuración de lanzamiento; see [Creación de una configuración de lanzamiento](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Como de costumbre, al utilizar un nodo de configuración, debe adaptarlo a un `ValueMap` objeto:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -147,9 +147,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 Los siguientes objetos se proporcionan como parámetros de la variable `execute` método de la variable `LiveAction` objeto:
 
-* A [ `Resource`](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) que representa el origen de Live Copy.
+* A [ `Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) que representa el origen de Live Copy.
 * A `Resource` que representa el destino de Live Copy.
-* La variable [ `LiveRelationship`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) para la Live Copy.
+* La variable [ `LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) para la Live Copy.
 * La variable `autoSave` indica si `LiveAction` debe guardar los cambios realizados en el repositorio.
 
 * El valor de restablecimiento indica el modo de restablecimiento de lanzamiento.
@@ -166,7 +166,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->La variable `Resource` los argumentos pueden `null` o `Resources` objetos que no se adaptan a `Node` objetos, como [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objetos.
+>La variable `Resource` los argumentos pueden `null` o `Resources` objetos que no se adaptan a `Node` objetos, como [ `NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objetos.
 
 ## Creación de una nueva configuración de lanzamiento {#creating-a-new-rollout-configuration}
 
@@ -198,12 +198,12 @@ Para crear una nueva configuración de lanzamiento:
 
    >[!NOTE]
    >
-   >No debe cambiar nada en la ruta /libs.
-   >Esto se debe a que el contenido de /libs se sobrescribe la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una corrección o un paquete de funciones).
+   >No debe cambiar nada en la variable `/libs` ruta.
+   >Esto se debe a que el contenido de `/libs` se sobrescribe la próxima vez que actualice la instancia (y puede sobrescribirse al aplicar una corrección o un paquete de funciones).
    >El método recomendado para la configuración y otros cambios es:
    >
-   >* Vuelva a crear el elemento requerido (es decir, tal como existe en /libs) en /apps
-   >* Realice cambios en /apps
+   >* Volver a crear el elemento requerido (es decir, tal como existe en `/libs`) en `/apps`
+   >* Realice cambios dentro de `/apps`
 
 
 1. En **Crear** un nodo con las siguientes propiedades:
