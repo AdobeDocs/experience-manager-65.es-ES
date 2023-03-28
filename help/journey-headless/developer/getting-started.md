@@ -2,7 +2,7 @@
 title: Introducción a AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 40e81b63e28a75c769507654d7f1d75da82f0bd6
 workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 100%
@@ -289,5 +289,5 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin 
 * [Documentación técnica de GraphQL](https://graphql.org): la definición de GraphQL (vínculo externo)
 * [API de GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md): documentación técnica que explica cómo crear solicitudes para acceder y enviar fragmentos de contenido
 * [API de REST de Assets](/help/assets/assets-api-content-fragments.md): documentación técnica que explica cómo crear y modificar fragmentos de contenido (y otros recursos)
-* [Consultas persistentes](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching): documentación técnica sobre consultas persistentes en AEM
+* [Consultas persistentes](/help/assets/content-fragments/persisted-queries.md): documentación técnica sobre consultas persistentes en AEM
 * [Contenido con encabezado y sin encabezado en AEM](/help/sites-developing/headful-headless.md): un análisis completo de los niveles de integración sin encabezado disponibles en AEM
