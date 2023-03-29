@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guía de Assets
 breadcrumb-title: Guía de Assets
 user-guide-description: Cree, administre, procese y distribuya recursos digitales.
-source-git-commit: 0c6c269e9f0cbdcc0c5e3b925ef09b9923cbb2b3
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 49%
+source-wordcount: '723'
+ht-degree: 46%
 
 ---
 
@@ -96,11 +96,11 @@ ht-degree: 49%
    + [Ampliar editor de recursos](asseteditorx.md)
    + [[!DNL Assets] API HTTP](mac-api-assets.md)
    + [Compatibilidad con fragmentos de contenido en [!DNL Assets] API HTTP](assets-api-content-fragments.md)
-   + [API de GraphQL para fragmentos de contenido](content-fragments/graphql-api-content-fragments.md)
-   + [Uso del IDE de GraphiQL](content-fragments/graphiql-ide.md)
-   + [Consultas persistentes](content-fragments/persisted-queries.md)
-   + [Autenticación para consultas de Remote GraphQL en fragmentos de contenido](content-fragments/graphql-authentication-content-fragments.md)
-   + [API de GraphQL con fragmentos de contenido: contenido de muestra y consultas](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [API de GraphQL para fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-api-content-fragments.html)
+   + [Uso del IDE de GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphiql-ide.html)
+   + [Consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html)
+   + [Autenticación para consultas de Remote GraphQL en fragmentos de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-authentication-content-fragments.html)
+   + [API de GraphQL con fragmentos de contenido: contenido de muestra y consultas](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/content-fragments-graphql-samples.html)
    + [[!DNL Assets] desarrollo de proxy](proxy.md)
 + Administración de recursos {#administer}
    + [Formatos de archivo compatibles](assets-formats.md)

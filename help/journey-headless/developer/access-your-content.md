@@ -2,7 +2,7 @@
 title: Cómo acceder al contenido a través de las API de entrega de AEM
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, aprenderá a utilizar las consultas de GraphQL para acceder al contenido de los fragmentos de contenido.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 96%
@@ -36,7 +36,7 @@ Así que tiene mucho contenido bien estructurado (en fragmentos de contenido) pa
 
 Lo que necesita es una forma de segmentar el contenido específico, seleccionar lo que necesita y devolverlo a su aplicación para un procesamiento posterior.
 
-Con Adobe Experience Manager AEM AEM (), puede acceder de forma selectiva a sus fragmentos de contenido mediante la API de GraphQL de para devolver solo el contenido que necesita. Esto significa que puede realizar entrega de contenido sin encabezado estructurado para utilizarlo en sus aplicaciones.
+Con Adobe Experience Manager (AEM), puede acceder de forma selectiva a sus fragmentos de contenido mediante la API de GraphQL de AEM para devolver solo el contenido que necesite. Esto significa que puede realizar entrega de contenido sin encabezado estructurado para utilizarlo en sus aplicaciones.
 
 >[!NOTE]
 >
@@ -242,11 +242,11 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Antes de comenzar con consultas sobre el contenido, debe realizar lo siguiente:
 
 * Habilitar el punto final
-   * Use Herramientas -> Recursos -> GraphQL
-   * [Activación del punto final de GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * Uso de herramientas -> Recursos -> GraphQL
+   * [Activación del punto final de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
-* Acceder a GraphiQL (si es necesario)
-   * [AEM Interfaz de GraphiQL de](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)
+* Acceso a GraphiQL (si es necesario)
+   * [Interfaz AEM GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Estructura de muestra {#sample-structure}
 
@@ -269,7 +269,7 @@ Se utilizarán los modelos de fragmento:
 
 ### Dónde probar las consultas {#where-to-test-your-queries}
 
-Las consultas se pueden introducir en la variable [Interfaz de GraphiQL](/help/assets/content-fragments/graphiql-ide.md), por ejemplo, en:
+Las consultas se pueden introducir en la variable [Interfaz de GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), por ejemplo en:
 
 * `http://localhost:4502/aem/graphiql.html`
 
@@ -362,14 +362,14 @@ Ahora que ha aprendido a acceder al contenido sin encabezado y consultarlo media
    * [Variables](https://graphql.org/learn/queries/#variables)
    * [Bibliotecas Java de GraphQL](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
-* [Formación para utilizar GraphQL con AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * [Activación del punto final de GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
-   * [Instalación de la interfaz de GraphiQL de AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
-* [La estructura de fragmento de contenido de muestra](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Formación para utilizar GraphQL con AEM: contenido y consultas de muestra](/help/assets/content-fragments/content-fragments-graphql-samples.md)
-   * [Consulta de muestra: un solo fragmento de ciudad específico](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
-   * [Consulta de muestra para metadatos: enumera los metadatos de los premios titulados GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
-   * [Consulta de muestra: todas las ciudades con una variación con nombre](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+* [Formación para utilizar GraphQL con AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+   * [Activación del punto final de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
+   * [Instalación de la interfaz de GraphiQL de AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface)
+* [La estructura de fragmento de contenido de muestra](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [Formación para utilizar GraphQL con AEM: contenido y consultas de muestra](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
+   * [Consulta de muestra: un solo fragmento de ciudad específico](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
+   * [Consulta de muestra para metadatos: enumera los metadatos de los premios titulados GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
+   * [Consulta de muestra: todas las ciudades con una variación con nombre](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
 * [Habilitación de la funcionalidad de fragmento de contenido en el explorador de la configuración](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [Trabajar con fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)
    * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)

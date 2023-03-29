@@ -2,7 +2,7 @@
 title: Introducción a AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de contenido sin encabezado de AEM, obtenga información sobre los requisitos previos.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 40e81b63e28a75c769507654d7f1d75da82f0bd6
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 100%
@@ -287,7 +287,7 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin 
 * [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md): documentación técnica para fragmentos de contenido.
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md): documentación técnica para modelos de fragmento de contenido.
 * [Documentación técnica de GraphQL](https://graphql.org): la definición de GraphQL (vínculo externo)
-* [API de GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md): documentación técnica que explica cómo crear solicitudes para acceder y enviar fragmentos de contenido
+* [API de GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md): documentación técnica que explica cómo crear solicitudes para acceder y enviar fragmentos de contenido
 * [API de REST de Assets](/help/assets/assets-api-content-fragments.md): documentación técnica que explica cómo crear y modificar fragmentos de contenido (y otros recursos)
-* [Consultas persistentes](/help/assets/content-fragments/persisted-queries.md): documentación técnica sobre consultas persistentes en AEM
+* [Consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md): documentación técnica sobre consultas persistentes en AEM
 * [Contenido con encabezado y sin encabezado en AEM](/help/sites-developing/headful-headless.md): un análisis completo de los niveles de integración sin encabezado disponibles en AEM

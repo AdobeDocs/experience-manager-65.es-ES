@@ -2,7 +2,7 @@
 title: Ruta hacia la primera experiencia para usar AEM sin encabezado
 description: En esta parte del Recorrido para desarrolladores de AEM sin encabezado, comprenderá los pasos para aplicar su primera experiencia sin encabezado en AEM, incluidas las consideraciones de planificación, y también aprenderá las prácticas recomendadas para que su ruta sea lo más fluida posible.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1982'
 ht-degree: 99%
@@ -147,7 +147,7 @@ Aunque se recomienda pasar a la siguiente parte del recorrido de desarrollo sin 
 * [Tutoriales de contenido sin encabezado de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=es): utilice estos tutoriales prácticos para explorar cómo utilizar las distintas opciones para enviar contenido a puntos de conexión sin encabezado con AEM y elegir el más adecuado para usted.
 * [Administración de contenido sin encabezado mediante las API de GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless&amp;lang=es#courses): siga este curso para obtener una descripción general de la API de GraphQL implementada en AEM. Se requiere autenticación con AdobeID.
 * [AEM Guides de WKND, GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): este proyecto de GitHub incluye aplicaciones de ejemplo que destacan las API de GraphQL de AEM.
-* [Guía de introducción de Headless](/help/sites-developing/headless/introduction.md#getting-started) AEM AEM : Una introducción rápida a las funciones sin encabezado para los usuarios ya familiarizados con el uso de la tecnología de la información de la.
+* [Guía de introducción sin encabezado](/help/sites-developing/headless/introduction.md#getting-started) - Una introducción rápida a AEM funciones sin periféricos para usuarios que ya conocen AEM.
 * [Crear modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md): documentación técnica sobre los modelos de fragmentos de contenido.
 * [Crear fragmentos de contenido](/help/assets/content-fragments/content-fragments.md): documentación técnica sobre fragmentos de contenido.
-* [Consulta de contenido con GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md): documentación técnica sobre la API de GraphQL.
+* [Consulta de contenido con GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md): documentación técnica sobre la API de GraphQL.

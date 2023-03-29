@@ -1,8 +1,8 @@
 ---
 title: Encabezado y sin encabezado en AEM
-description: AEM Los proyectos de se pueden implementar en un modelo con encabezado y sin encabezado, pero la opción no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
+description: AEM proyectos se pueden implementar en un modelo de cabeza y cabeza, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 94%
@@ -11,7 +11,7 @@ ht-degree: 94%
 
 # Encabezado y sin encabezado en AEM {#headful-headless}
 
-Los proyectos de Adobe Experience Manager se pueden implementar en modelos con encabezado y sin encabezado, pero la opción no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto. SPA Este documento proporciona una visión general de los diferentes modelos y describe los niveles de integración de la.
+Los proyectos de Adobe Experience Manager se pueden implementar tanto en modelos encabezados como sin encabezado, pero la elección no es binaria. AEM ofrece la flexibilidad para aprovechar las ventajas de ambos modelos en un proyecto. Este documento proporciona información general sobre los diferentes modelos y describe los niveles de integración de SPA.
 
 ## Información general {#overview}
 
@@ -21,7 +21,7 @@ AEM puede utilizarse simplemente para administrar el contenido, lo que permite q
 
 Pero no tiene por qué ser una elección binaria. AEM ofrece una flexibilidad sin precedentes, lo que le permite aprovechar las ventajas de ambos modelos para su proyecto.
 
-![Modelos de implementación de AEM](headless/assets/aem-implementation-models.png)
+![Modelos de implementación de AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
 En un modelo de pila completa o con periférico, el contenido se administra en el repositorio de AEM, y los componentes de AEM basados en Java, HTL, etc., se utilizan para representar el contenido para la experiencia del usuario. En este modelo, la creación del contenido, el estilo, la presentación y la entrega se realizan en AEM.
 
@@ -54,18 +54,18 @@ La integración de una SPA se encuentra en un rango de cuatro niveles en AEM.
    * El contenido se crea, gestiona y entrega de forma independiente en dos sistemas separados.
 * **Nivel 1: integración de fragmentos de contenido**
    * Los [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) se utilizan en AEM para crear y administrar contenido limitado para las SPA.
-   * Las SPA recuperan este contenido a través de la [API de GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) de AEM.
+   * Las SPA recuperan este contenido a través de la [API de GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) de AEM.
    * Algunos contenidos se administran en AEM, y otros, en un sistema externo.
    * El contenido solo se puede ver en las SPA.
 * **Nivel 2: incrustar las SPA en AEM**
    * Los [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) se utilizan en AEM para crear y administrar el contenido de las SPA.
-   * La SPA recupera este contenido a través de la [API de GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) de AEM.
+   * La SPA recupera este contenido a través de la [API de GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) de AEM.
    * Algunos contenidos se administran en AEM, y otros, en un sistema externo.
    * El contenido se puede ver en contexto dentro de AEM.
    * El contenido limitado se puede editar dentro de AEM.
 * **Nivel 3: incrustar y habilitar completamente la SPA en AEM**
    * Los [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) se utilizan en AEM para crear y administrar el contenido de la SPA.
-   * La SPA recupera este contenido a través de la [API de GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) de AEM.
+   * La SPA recupera este contenido a través de la [API de GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) de AEM.
    * El contenido se puede ver en contexto dentro de AEM.
    * La mayoría del contenido se puede editar dentro de AEM.
 
