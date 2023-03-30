@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
 workflow-type: tm+mt
-source-wordcount: '6065'
+source-wordcount: '6053'
 ht-degree: 2%
 
 ---
@@ -138,9 +138,9 @@ La creación de una comprobación de estado individual implica dos pasos: implem
 
 ### Creación de una comprobación de estado compuesta {#creating-a-composite-health-check}
 
-La función de una comprobación de estado compuesta es agregar varias comprobaciones de estado individuales que compartan un conjunto de características comunes. Por ejemplo, la Comprobación de estado compuesta de seguridad agrupa todas las comprobaciones de estado individuales que realizan verificaciones relacionadas con la seguridad. El primer paso para crear una comprobación compuesta es añadir una configuración OSGI. Para que se muestre en el Tablero de operaciones, se debe añadir un nuevo nodo de configuración, del mismo modo que lo hicimos para una simple comprobación.
+La función de una comprobación de estado compuesta es agregar varias comprobaciones de estado individuales que compartan un conjunto de características comunes. Por ejemplo, la Comprobación de estado compuesta de seguridad agrupa todas las comprobaciones de estado individuales que realizan verificaciones relacionadas con la seguridad. El primer paso para crear una comprobación compuesta es añadir una configuración OSGI. Para que se muestre en el panel de operaciones, se debe añadir un nuevo nodo de configuración de la misma manera que una simple comprobación.
 
-1. Vaya al Administrador de configuración web en la consola OSGI. Para ello, acceda a `https://serveraddress:port/system/console/configMgr`
+1. Vaya al Administrador de configuración web en la consola OSGI. Acceso `https://serveraddress:port/system/console/configMgr`
 1. Busque la entrada denominada **Comprobación del estado compuesto de Apache Sling**. Después de encontrarlo, observe que ya hay dos configuraciones disponibles: una para las comprobaciones del sistema y otra para las comprobaciones de seguridad.
 1. Cree una configuración presionando el botón &quot;+&quot; en el lado derecho de la configuración. Aparece una nueva ventana, como se muestra a continuación:
 
@@ -153,7 +153,7 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
    * **Nombre (hc.name):** Nombre de la comprobación de estado compuesto. Se recomienda un nombre significativo.
    * **Etiquetas (hc.tags):** Las etiquetas de esta comprobación de estado. Si esta comprobación de estado compuesta está pensada para formar parte de otra comprobación de estado compuesta (por ejemplo, en una jerarquía de controles de estado), agregue las etiquetas a las que está relacionada esta combinación.
    * **Nombre de MBean (hc.mbean.name):** El nombre del Mbean que se le da al JMX MBean de esta comprobación de estado compuesta.
-   * **Filtrar etiquetas (filter.tags):** Propiedad específica de las comprobaciones de estado compuestas. Estas son las etiquetas que el compuesto debe acumular. La comprobación de estado compuesta agrega bajo su grupo todas las comprobaciones de estado que tengan alguna etiqueta que coincida con cualquiera de las etiquetas de filtro de esta composición. Por ejemplo, una comprobación de estado compuesta que tenga las etiquetas de filtro **prueba** y **check**, agrega todos los controles de estado individuales y compuestos que tengan alguno de los **prueba** y **check** etiquetas en su propiedad tags ( `hc.tags`).
+   * **Filtrar etiquetas (filter.tags):** Propiedad específica de las comprobaciones de estado compuestas. El compuesto agrega estas etiquetas. La comprobación de estado compuesta agrega bajo su grupo todas las comprobaciones de estado que tengan alguna etiqueta que coincida con cualquiera de las etiquetas de filtro de esta composición. Por ejemplo, una comprobación de estado compuesta que tenga las etiquetas de filtro **prueba** y **check**, agrega todos los controles de estado individuales y compuestos que tengan alguno de los **prueba** y **check** etiquetas en su propiedad tags ( `hc.tags`).
 
    >[!NOTE]
    >
@@ -180,7 +180,7 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
 
    >[!NOTE]
    >
-   >Si crea comprobaciones de estado individuales que lógicamente pertenecen a una comprobación compuesta que ya está presente en el panel de control de forma predeterminada, se capturan y agrupan automáticamente en la comprobación compuesta correspondiente. Debido a esto, no es necesario crear un nodo de configuración para estas comprobaciones.
+   >Si crea comprobaciones de estado individuales que lógicamente pertenecen a una comprobación compuesta que ya está presente en el panel de control de forma predeterminada, se capturan y agrupan automáticamente en la comprobación compuesta correspondiente. Como tal, no es necesario crear un nodo de configuración para estas comprobaciones.
    >
    >Por ejemplo, si crea una comprobación de estado de seguridad individual, asígnele el valor &quot;**seguridad**&quot; y está instalado. Se muestra automáticamente en la comprobación compuesta de comprobaciones de seguridad del panel de operaciones.
 
@@ -309,11 +309,11 @@ La función de una comprobación de estado compuesta es agregar varias comprobac
   </tr>
   <tr>
    <td>Comprobación de caché de código</td>
-   <td><p>Esta es una comprobación de estado que verifica varias condiciones de JVM que pueden almacenar en déclencheur un error de CodeCache presente en Java 7:</p>
+   <td><p>Comprobación de estado que verifica varias condiciones de JVM que pueden almacenar en déclencheur un error de CodeCache presente en Java™ 7:</p>
     <ul>
-     <li>devuelve Advertencia si la instancia se está ejecutando en Java 7, con el vaciado de caché de código habilitado</li>
-     <li>devuelve Advertencia si la instancia se está ejecutando en Java 7 y el tamaño de caché de código reservado es menor que un umbral mínimo (el valor predeterminado es 90 MB)</li>
-    </ul> <p>La variable <code>minimum.code.cache.size</code> umbral es configurable. Para obtener más información sobre el error, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">comprobar esta página</a>.</p> <p>El MBean para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>devuelve Advertencia si la instancia se está ejecutando en Java™ 7, con vaciado de caché de código habilitado</li>
+     <li>devuelve Advertencia si la instancia se está ejecutando en Java™ 7 y el tamaño de caché de código reservado es menor que un umbral mínimo (el valor predeterminado es 90 MB)</li>
+    </ul> <p>La variable <code>minimum.code.cache.size</code> umbral es configurable. Para obtener más información sobre el error, consulte <a href="https://bugs.java.com/bugdatabase/"> y luego busque el identificador de error 8012547</a>.</p> <p>El MBean para esta comprobación de estado es <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthCheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Errores de ruta de búsqueda de medios</td>
@@ -630,7 +630,7 @@ Puede programar la tarea de mantenimiento Purga de versión para eliminar autom�
 
 ## Tareas de mantenimiento personalizadas {#custom-maintenance-tasks}
 
-Las tareas de mantenimiento personalizadas se pueden implementar como servicios OSGi. Como la infraestructura de tareas de mantenimiento se basa en la gestión de trabajos de Apache Sling, una tarea de mantenimiento debe implementar la interfaz java ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Además, debe declarar varias propiedades de registro de servicio para que se detecten como una tarea de mantenimiento, como se indica a continuación:
+Las tareas de mantenimiento personalizadas se pueden implementar como servicios OSGi. Como la infraestructura de tareas de mantenimiento se basa en la gestión de trabajos de Apache Sling, una tarea de mantenimiento debe implementar la interfaz Java™ ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Además, debe declarar varias propiedades de registro de servicio para que se detecten como una tarea de mantenimiento, como se indica a continuación:
 
 <table>
  <tbody>
@@ -767,7 +767,7 @@ También puede descargar un `JSON` resumen de la información del tablero hacien
    <td>Sistema</td>
    <td>
     <ul>
-     <li>sistema operativo y versión del sistema operativo (por ejemplo, Mac OS X)</li>
+     <li>sistema operativo y versión del sistema operativo (por ejemplo, macOS X)</li>
      <li>media de carga del sistema recuperada de <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeantilizable</a></li>
      <li>espacio en disco (en la partición donde se encuentra el directorio raíz)</li>
      <li>pila máxima, como devuelve <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
