@@ -1,6 +1,6 @@
 ---
 title: Vídeo en Dynamic Media
-description: Aprenda a trabajar con vídeo en Dynamic Media, como las prácticas recomendadas para codificar vídeos, publicar vídeos en YouTube y ver informes de vídeo. También aprenderá a añadir subtítulos, subtítulos o marcadores de capítulo a los vídeos.
+description: Aprenda a trabajar con vídeo en Dynamic Media, como prácticas recomendadas para codificar vídeos, publicar vídeos en YouTube y ver informes de vídeo. Aprenda también a añadir subtítulos o marcadores de capítulo a los vídeos.
 mini-toc-levels: 3
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
@@ -12,69 +12,69 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: fb287b3082a9376c01fd609edd0f4782278e6b37
+source-git-commit: 5ac1b0a343c3742f27fecbfb0de577d65c2607d0
 workflow-type: tm+mt
-source-wordcount: '12760'
-ht-degree: 5%
+source-wordcount: '8091'
+ht-degree: 3%
 
 ---
 
 # Vídeo en Dynamic Media {#video}
 
-En esta sección se describe el trabajo con vídeo en Dynamic Media.
+En esta sección se describe cómo trabajar con vídeo en Dynamic Media.
 
-## Inicio rápido: vídeos {#quick-start-videos}
+## Inicio rápido: Vídeos {#quick-start-videos}
 
-La siguiente descripción paso a paso del flujo de trabajo se ha diseñado para ayudarle a ponerse en marcha rápidamente con los conjuntos de vídeos adaptables en Dynamic Media. Después de cada paso, hay referencias cruzadas a encabezados de temas donde puede encontrar más información.
+La siguiente descripción paso a paso del flujo de trabajo está diseñada para ayudarle a poner en marcha rápidamente los conjuntos de vídeos adaptables en Dynamic Media. Después de cada paso, hay referencias cruzadas a encabezados de temas donde puede encontrar más información.
 
 >[!IMPORTANT]
 >
->Antes de trabajar con vídeo en Dynamic Media, asegúrese de que su administrador de Adobe Experience Manager ya haya habilitado y configurado los Cloud Services de Dynamic Media en modo Dynamic Media - Scene7 o Dynamic Media - Hybrid.
+>Antes de trabajar con vídeo en Dynamic Media, asegúrese de que su administrador de Adobe Experience Manager ya haya habilitado y configurado los Cloud Services de Dynamic Media en Dynamic Media - modo Scene7 o Dynamic Media - modo híbrido.
 >
->* Consulte [Configuración de Cloud Services de Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media: modo Scene7 y [Solución de problemas de Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
+>* Consulte [Configuración de Cloud Services de Dynamic Media](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media: modo Scene7 y [Resolución de problemas de Dynamic Media: modo Scene7](/help/assets/troubleshoot-dms7.md).
 >
 >* Consulte [Configuración de Cloud Services de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) en Configuración de Dynamic Media: modo híbrido.
 >
 >Problema de reproducción de vídeo conocido actualmente en Dynamic Media *solo en el Experience Manager 6.5.9.0*:
 >
->* Si se actualiza un vídeo publicado, debe publicarse de nuevo para reflejar los cambios en la entrega.
+>* Si se actualiza un vídeo publicado, debe volver a publicarse para reflejar los cambios en la entrega.
 >
 
 
-1. **Cargar los vídeos de Dynamic Media** haciendo lo siguiente:
+1. **Cargar vídeos de Dynamic Media** haciendo lo siguiente:
 
-   * Cree su propio perfil de codificación de vídeo. O bien, simplemente puede utilizar el predefinido _Codificación de vídeo adaptable_ perfil que viene con Dynamic Media.
+   * Cree su propio perfil de codificación de vídeo. O bien, simplemente puede utilizar el _Codificación de vídeo adaptable_ perfil que viene con Dynamic Media.
 
       * [Creación de un perfil de codificación de vídeo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Más información sobre [Prácticas recomendadas para la codificación de vídeo](#best-practices-for-encoding-videos).
    * Asocie el perfil de procesamiento de vídeo a una o varias carpetas en las que va a cargar los vídeos de origen principales.
 
-      * [Aplicación de un perfil de vídeo a las carpetas](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+      * [Aplicación de un perfil de vídeo a carpetas](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
       * Más información sobre [Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar perfiles de procesamiento](/help/assets/organize-assets.md).
-      * Más información sobre [Organización de recursos digitales](/help/assets/organize-assets.md).
-   * Cargue los vídeos de origen principales en las carpetas. Al añadir vídeos a la carpeta, se codifican según el perfil de procesamiento de vídeo que haya asignado a la carpeta.
+      * Más información sobre [Organizar recursos digitales](/help/assets/organize-assets.md).
+   * Cargue los vídeos de origen principales en las carpetas. Al agregar vídeos a la carpeta, estos se codifican según el perfil de procesamiento de vídeo que asignó a la carpeta.
 
-      * Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima buena a 25 x 25.
+      * Dynamic Media admite principalmente vídeos de formato corto con una longitud máxima de 30 minutos y una resolución mínima buena de 25 x 25.
       * Puede cargar archivos de vídeo de hasta 15 GB cada uno.
-      * [Cargar los vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
-      * Más información sobre [Formatos de archivo de entrada admitidos](/help/assets/assets-formats.md#supported-multimedia-formats).
-   * Monitorizar cómo [la codificación de vídeo está progresando](#monitoring-video-encoding-and-youtube-publishing-progress) desde la vista de recursos o de flujo de trabajo.
+      * [Cargar vídeos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
+      * Más información sobre [Formatos de archivo de entrada compatibles](/help/assets/assets-formats.md#supported-multimedia-formats).
+   * Monitorizar cómo [la codificación de vídeo está progresando](#monitoring-video-encoding-and-youtube-publishing-progress) bien desde la vista de recursos o flujo de trabajo.
 
 
 
 
-1. **Administrar los vídeos de Dynamic Media** al realizar cualquiera de las siguientes acciones:
+1. **Administrar los vídeos de Dynamic Media** realizando cualquiera de las siguientes acciones:
 
    * Organizar, examinar y buscar recursos de vídeo
 
-      * [Organización de recursos digitales](/help/assets/organize-assets.md)
+      * [Organizar recursos digitales](/help/assets/organize-assets.md)
 Más información sobre [Prácticas recomendadas para organizar los recursos digitales con el fin de utilizar perfiles de procesamiento](organize-assets.md)
 
       * [Buscar recursos de vídeo](search-assets.md#custompredicates) o [Buscar recursos](/help/assets/search-assets.md)
-   * Previsualización y publicación de recursos de vídeo
+   * Vista previa y publicación de recursos de vídeo
 
       * Vea el vídeo de origen y las representaciones codificadas del vídeo junto con sus miniaturas asociadas:
-         [Previsualizar vídeos](managing-video-assets.md#upload-and-preview-video-assets) o [Previsualización de recursos](previewing-assets.md)
+         [Vista previa de vídeos](managing-video-assets.md#upload-and-preview-video-assets) o [Vista previa de recursos](previewing-assets.md)
          [Ver representaciones de vídeo](video-renditions.md)
          [Administrar representaciones de vídeo](manage-assets.md#managing-renditions)
 
@@ -82,41 +82,41 @@ Más información sobre [Prácticas recomendadas para organizar los recursos dig
       * [Publicar recursos](publishing-dynamicmedia-assets.md)
    * Trabajo con metadatos de vídeo
 
-      * Vea las propiedades de una representación de vídeo codificada, como velocidad de fotogramas, velocidad de bits de audio y vídeo y códec:
+      * Vea las propiedades de una representación de vídeo codificada, como la velocidad de fotogramas, la velocidad de bits de audio y vídeo y el códec:
          [Ver propiedades de representación de vídeo](video-renditions.md)
 
-      * Edite las propiedades del vídeo, como el título, la descripción y las etiquetas, y campos de metadatos personalizados:
+      * Edite las propiedades del vídeo, como el título, la descripción y las etiquetas, campos de metadatos personalizados:
          [Editar propiedades de vídeo](manage-assets.md#editing-properties)
 
-      * [Administración de metadatos para recursos digitales](metadata.md)
+      * [Administrar metadatos de recursos digitales](metadata.md)
       * [Esquemas de metadatos](metadata-schemas.md)
-   * Revise, apruebe y anote vídeos, y mantenga un control total de las versiones
+   * Revisar, aprobar y anotar vídeos y mantener el control de versiones completo
 
       * [Anotar vídeos](managing-video-assets.md#annotate-video-assets) o [Anotar recursos](manage-assets.md#annotating)
 
       * [Crear una versión](manage-assets.md#asset-versioning)
-      * [Aplicar flujos de trabajo a recursos](assets-workflow.md) o consulte [Iniciar un flujo de trabajo en un recurso](manage-assets.md#starting-a-workflow-on-an-asset)
+      * [Aplicación de flujos de trabajo a recursos](assets-workflow.md) o consulte [Inicio de un flujo de trabajo en un recurso](manage-assets.md#starting-a-workflow-on-an-asset)
 
-      * [Revisar recursos de carpeta](bulk-approval.md)
+      * [Revisar recursos de carpetas](bulk-approval.md)
       * [Proyectos](../sites-authoring/projects.md)
 
 
 
 
-1. **Publicación de vídeos de Dynamic Media** mediante una de las acciones siguientes:
+1. **Publicación de vídeos de Dynamic Media** realizando una de las siguientes acciones:
 
-   * Si utiliza Adobe Experience Manager como sistema de administración de contenido web, puede agregar vídeos directamente a las páginas web.
+   * Si usa Adobe Experience Manager como sistema de administración de contenido web, puede agregar vídeos directamente a las páginas web.
 
-      * [Añadir vídeos a las páginas web](adding-dynamic-media-assets-to-pages.md).
+      * [Agregar vídeos a las páginas web](adding-dynamic-media-assets-to-pages.md).
    * Si utiliza un sistema de administración de contenido web de terceros, puede vincular o incrustar vídeos a sus páginas web.
 
       * Integrar vídeo con URL:
          [Vinculación de URL en la aplicación web](linking-urls-to-yourwebapplication.md).
 
-      * Integración de vídeo mediante código incrustado en la página web:
+      * Integración de vídeo mediante el código incrustado en la página web:
          [Incrustar el visor de vídeo en una página web](embed-code.md).
-   * [Publicación de vídeos en YouTube](#publishing-videos-to-youtube).
-   * [Generación de informes de vídeo](#viewing-video-reports).
+   * [Publicar vídeos en YouTube](#publishing-videos-to-youtube).
+   * [Generar informes de vídeo](#viewing-video-reports).
 
    * [Agregar subtítulos a vídeo](#adding-captions-to-video).
 
@@ -124,87 +124,87 @@ Más información sobre [Prácticas recomendadas para organizar los recursos dig
 
 ## Trabajo con vídeo en Dynamic Media {#working-with-video-in-dynamic-media}
 
-El vídeo en Dynamic Media es una solución completa que facilita la publicación de vídeos adaptables de alta calidad para su transmisión por streaming en varias pantallas, incluidas las de escritorio, las de iOS, las de Android™, las de BlackBerry® y las de dispositivos móviles con Windows. Un conjunto de vídeos adaptable agrupa versiones del mismo vídeo que se codifican a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
+Video in Dynamic Media es una solución integral que facilita la publicación de vídeos adaptables de alta calidad para su transmisión en varias pantallas, incluidos equipos de escritorio, iOS, Android™, BlackBerry® y dispositivos móviles Windows. Un conjunto de vídeos adaptables agrupa versiones del mismo vídeo codificadas a diferentes velocidades de bits y formatos, como 400 kbps, 800 kbps y 1000 kbps. El equipo de escritorio o dispositivo móvil detecta el ancho de banda disponible.
 
-Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas velocidades de bits de vídeo dentro del conjunto de vídeos adaptables. El vídeo se transmite a equipos de escritorio, dispositivos móviles o tabletas.
+Por ejemplo, en un dispositivo móvil iOS, detecta un ancho de banda como 3G, 4G o Wi-Fi. A continuación, selecciona automáticamente el vídeo codificado correcto entre las distintas tasas de bits de vídeo del conjunto de vídeos adaptables. El vídeo se transmite a escritorios, dispositivos móviles o tabletas.
 
-Además, la calidad de vídeo cambia automáticamente si las condiciones de red cambian en el escritorio o en el dispositivo móvil. Además, si un cliente entra en modo de pantalla completa en un equipo de escritorio, el conjunto de vídeos adaptable responde con una mejor resolución, lo que mejora la experiencia de visualización del cliente. El uso de conjuntos de vídeos adaptables proporciona la mejor reproducción posible para los clientes que reproducen vídeo de Dynamic Media en varias pantallas y dispositivos.
+Además, la calidad del vídeo se cambia automáticamente si las condiciones de red cambian en el escritorio o en el dispositivo móvil. Además, si un cliente entra en el modo de pantalla completa en un escritorio, el conjunto de vídeos adaptables responde mediante una mejor resolución, lo que mejora la experiencia de visualización del cliente. El uso de conjuntos de vídeos adaptables le ofrece la mejor reproducción posible para los clientes que reproduzcan vídeo de Dynamic Media en varias pantallas y dispositivos.
 
-La lógica que utiliza un reproductor de vídeo para determinar qué vídeo codificado se reproducirá o seleccionará durante la reproducción se basa en el siguiente algoritmo:
+La lógica que utiliza un reproductor de vídeo para determinar qué vídeo codificado reproducir o seleccionar durante la reproducción se basa en el siguiente algoritmo:
 
 1. El reproductor de vídeo carga el fragmento de vídeo inicial en función de la velocidad de bits más cercana al valor establecido para la &quot;velocidad de bits inicial&quot; en el propio reproductor.
-1. El reproductor de vídeo cambia según los cambios en la velocidad del ancho de banda según los siguientes criterios:
+1. El reproductor de vídeo cambia en función de los cambios en la velocidad de ancho de banda mediante los siguientes criterios:
 
-   1. El jugador elige el flujo de ancho de banda más alto por debajo o igual al ancho de banda estimado.
-   1. El reproductor considera solo el 80% del ancho de banda disponible. Sin embargo, si está subiendo, es más conservador en solo el 70% para evitar la sobreestimación y volver inmediatamente.
+   1. El reproductor elige el flujo de ancho de banda más alto por debajo o igual al ancho de banda estimado.
+   1. El reproductor considera sólo el 80% del ancho de banda disponible. Sin embargo, si está subiendo, es más conservador, con solo el 70%, evitar sobreestimar y volver a empezar de inmediato.
 
 Para obtener información técnica detallada sobre el algoritmo, consulte [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-Para administrar un solo vídeo y conjuntos de vídeos adaptables, se admite lo siguiente:
+Para administrar conjuntos de vídeos adaptables y de vídeo único, se admite lo siguiente:
 
-* Carga de vídeo desde numerosos formatos de vídeo y audio compatibles y codificación de vídeo al formato MP4 H.264 para su reproducción en varias pantallas. Puede utilizar ajustes preestablecidos de vídeo adaptables predefinidos, ajustes preestablecidos de codificación de vídeo únicos o personalizar su propia codificación para controlar la calidad y el tamaño del vídeo.
+* Carga de vídeo desde varios formatos de vídeo y formatos de audio compatibles y codificación de vídeo al formato MP4 H.264 para su reproducción en varias pantallas. Puede utilizar ajustes preestablecidos de vídeo adaptable predefinidos, ajustes preestablecidos de codificación de vídeo único o personalizar su propia codificación para controlar la calidad y el tamaño del vídeo.
 
-   * Cuando se genera un conjunto de vídeos adaptable, incluye vídeos MP4.
-   * **Nota**: los vídeos principal/de origen no se añaden a un conjunto de vídeos adaptable.
+   * Cuando se genera un conjunto de vídeos adaptables, incluye vídeos MP4.
+   * **Nota**: Los vídeos principales/de origen no se agregan a un conjunto de vídeos adaptables.
 
-* Subtítulos de vídeo en todos los visores de vídeo de HTML5.
-* Organice, examine y busque vídeos con compatibilidad total con metadatos para una administración eficaz de los recursos de vídeo.
-* Ofrezca conjuntos de vídeos adaptables a la web, a equipos de escritorio y a dispositivos móviles, incluidos iPhone, iPad, Android™, BlackBerry® y Windows Phone.
+* Subtítulos de vídeo en todos los visualizadores de vídeo de HTML5.
+* Organice, examine y busque vídeos con compatibilidad para metadatos completa para una administración eficiente de los recursos de vídeo.
+* Entregue conjuntos de vídeos adaptables a la Web y a los equipos de escritorio, así como a los dispositivos móviles, incluidos iPhone, iPad, Android™, BlackBerry® y Windows Phone.
 
 La transmisión de vídeo adaptable es compatible con varias plataformas de iOS. Consulte [Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
-Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. Puede encontrar dispositivos BlackBerry® compatibles con este formato de vídeo en los siguientes enlaces: [Formatos de vídeo compatibles con BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Media admite la reproducción de vídeo móvil para vídeo MP4 H.264. Puede encontrar los dispositivos BlackBerry® compatibles con este formato de vídeo en el siguiente enlace: [Formatos de vídeo compatibles con BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-Puede encontrar dispositivos Windows compatibles con este formato de vídeo en los siguientes enlaces: [Códecs multimedia compatibles con Windows Phone 8](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
+Puede encontrar los dispositivos de Windows compatibles con este formato de vídeo en el siguiente enlace: [Códecs multimedia compatibles con Windows Phone 8](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
 
 
 
-* Reproduzca el vídeo con los ajustes preestablecidos del visualizador de vídeo de Dynamic Media, incluidos los siguientes:
+* Reproduzca el vídeo con los ajustes preestablecidos del visualizador de vídeo de Dynamic Media, que incluyen lo siguiente:
 
    * Visores de vídeo únicos.
-   * Visores de medios mixtos que combinan contenido de vídeo e imagen.
+   * Visores de medios mixtos que combinan contenido de vídeo y de imagen.
 
-* Configure reproductores de vídeo para satisfacer sus necesidades de marca.
-* Integre vídeo en su sitio web, sitio móvil o aplicación móvil con una URL simple o código incrustado.
+* Configure reproductores de vídeo para satisfacer sus necesidades de promoción de la marca.
+* Integre vídeo en su sitio web, sitio móvil o aplicación móvil con una URL simple o un código incrustado.
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulte también [Visores para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) y [Solo visores para recursos de Experience Manager](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
+Consulte también [Visualizadores para Experience Manager Assets y Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) y [Visualizadores solo para recursos de Experience Manager](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
-## Práctica recomendada: Uso del visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
+## Práctica recomendada: Uso del visor de vídeo de HTML5 {#best-practice-using-the-html-video-viewer}
 
-Los ajustes preestablecidos del visualizador de vídeo Dynamic Media HTML5 son reproductores de vídeo sólidos. Puede utilizarlas para evitar muchos problemas comunes asociados con la reproducción de vídeo de HTML5. Además, se han corregido problemas asociados con los dispositivos móviles, como la falta de entrega de flujo de bits adaptable y el limitado alcance del explorador de escritorio.
+Los ajustes preestablecidos del visor de vídeo de Dynamic Media HTML5 son reproductores de vídeo sólidos. Puede utilizarlos para evitar muchos problemas comunes asociados con la reproducción de vídeo de HTML5. Además, los problemas asociados con dispositivos móviles como la falta de transmisión de velocidad de bits adaptable y el limitado alcance del navegador de escritorio.
 
-En el lado del diseño del reproductor, puede diseñar la funcionalidad del reproductor de vídeo con herramientas de desarrollo web estándar. Por ejemplo, puede diseñar los botones, los controles y el fondo de imagen de póster personalizado con HTML5 y CSS para ayudarle a llegar a sus clientes con un aspecto personalizado.
+En el lado de diseño del reproductor, puede diseñar la funcionalidad del reproductor de vídeo mediante herramientas de desarrollo web estándar. Por ejemplo, puede diseñar los botones, los controles y el fondo personalizado de la imagen de póster utilizando HTML5 y CSS para ayudarle a llegar a sus clientes con un aspecto personalizado.
 
-En la parte de reproducción del visor, detecta automáticamente la capacidad de vídeo del explorador. A continuación, sirve el vídeo mediante HLS (flujo en directo HTTP) o DASH (flujo adaptable dinámico a través de HTTP) , también conocido como flujo de velocidad de bits adaptable. O bien, si estos métodos de envío no están presentes, se utiliza HTML 5 progressive en su lugar.
+En el lado de reproducción del visor, detecta automáticamente la capacidad de vídeo del explorador. A continuación, sirve el vídeo utilizando HLS (HTTP Live Streaming) o DASH (Dynamic Adaptive Streaming over HTTP) , también conocido como flujo de velocidad de bits adaptable. O, si esos métodos de envío no están presentes, se utiliza HTML5 progresiva en su lugar.
 
-Al combinar en un solo reproductor lo siguiente:
+Combinando en un solo reproductor lo siguiente:
 
 * La capacidad de diseñar los componentes de reproducción mediante HTML5 y CSS
 * Tener reproducción incrustada
-* Utilice flujo continuo adaptable y progresivo según la capacidad del explorador
+* Utilizar flujo adaptable y progresivo según la capacidad del explorador
 
-Amplía el alcance del contenido multimedia enriquecido tanto para usuarios de equipos de escritorio como de dispositivos móviles y garantiza una experiencia de vídeo optimizada.
+Amplía el alcance del contenido multimedia enriquecido tanto a los usuarios de escritorio como a los móviles y garantiza una experiencia de vídeo optimizada.
 
-Consulte también [Acerca de los visores HTML 5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
+Consulte también [Acerca de los visores de HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
-### Reproducción de vídeo en equipos de escritorio y dispositivos móviles mediante el visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Reproducción de vídeo en equipos de escritorio y dispositivos móviles mediante el visor de vídeo de HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
-En el caso de la transmisión de vídeo adaptable de escritorio y móvil, los vídeos utilizados para la conmutación de velocidad de bits se basan en todos los vídeos MP4 del conjunto de vídeos adaptable.
+Para el streaming de vídeo adaptable móvil y de escritorio, los vídeos utilizados para el cambio de velocidad de bits se basan en todos los vídeos MP4 del conjunto de vídeos adaptables.
 
-La reproducción de vídeo se produce mediante DASH o HLS o descarga de vídeo progresivo. En versiones anteriores de Experience Manager, como 6.0, 6.1 y 6.2, los vídeos se transmitían por HTTP.
+La reproducción de vídeo se produce mediante DASH o HLS, o mediante descarga progresiva de vídeo. En versiones anteriores de Experience Manager, como 6.0, 6.1 y 6.2, los vídeos se transmitían por HTTP.
 
-En Experience Manager 6.3 y versiones posteriores, los vídeos se transmiten ahora por HTTPS (es decir, DASH o HLS) porque la URL del servicio de puerta de enlace DM siempre utiliza HTTPS. Este comportamiento predeterminado no afecta a los clientes. Es decir, la transmisión de vídeo siempre se produce a través de HTTPS a menos que el explorador no la admita. (consulte la tabla siguiente). Por tanto,
+En el Experience Manager 6.3 y en adelante, los vídeos ahora se transmiten a través de HTTPS (es decir, DASH o HLS) porque la URL del servicio de puerta de enlace DM también utiliza HTTPS. Este comportamiento predeterminado no afecta al cliente. Es decir, el flujo de vídeo siempre se produce a través de HTTPS a menos que el explorador no lo admita. (véase la tabla siguiente). Por lo tanto,
 
-* Si tiene un sitio web HTTPS con flujo de vídeo HTTPS, el flujo está bien.
-* Si tiene un sitio web HTTP con flujo de vídeo HTTPS, el flujo está bien y no hay problemas de contenido mixto desde el explorador web.
+* Si tiene un sitio web HTTPS con flujo de vídeo HTTPS, la transmisión está bien.
+* Si tiene un sitio web HTTP con flujo de vídeo HTTPS, la transmisión está bien y no hay problemas de contenido mixto en el navegador web.
 
-DASH es el estándar internacional y HLS es un estándar de Apple. Ambos se utilizan para la transmisión de vídeo adaptable. Además, ambas tecnologías ajustan automáticamente la reproducción según la capacidad del ancho de banda de la red. También permite al cliente &quot;buscar&quot; cualquier punto del vídeo sin necesidad de esperar a que se descargue el resto del vídeo.
+DASH es el estándar internacional y HLS es un estándar de Apple. Ambos se utilizan para el flujo de vídeo adaptable. Además, ambas tecnologías ajustan automáticamente la reproducción en función de la capacidad de ancho de banda de la red. También permite al cliente &quot;buscar&quot; en cualquier punto del vídeo sin necesidad de esperar a que se descargue el resto del vídeo.
 
-El vídeo progresivo se proporciona descargando y almacenando el vídeo localmente en el sistema de escritorio o el dispositivo móvil de un usuario.
+El vídeo progresivo se entrega descargando y almacenando el vídeo localmente en el sistema de escritorio o dispositivo móvil del usuario.
 
-En la tabla siguiente se describe el dispositivo, el navegador y el método de reproducción de vídeos en equipos de escritorio y dispositivos móviles mediante el Visor de vídeo de Dynamic Media.
+En la tabla siguiente se describe el dispositivo, el navegador y el método de reproducción de los vídeos en equipos de escritorio y dispositivos móviles que utilizan el visor de vídeo de Dynamic Media.
 
 <table>
  <tbody>
@@ -221,7 +221,7 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   <tr>
    <td>Escritorio</td>
    <td>Internet Explorer 11+</td>
-   <td>En Windows 8 y Windows 10: forzar el uso de HTTPS siempre que se solicite DASH* o HLS. Limitación conocida: HTTP en DASH* o HLS no funciona en esta combinación de navegador/sistema operativo<br /> <br /> En Windows 7: descarga progresiva. Utiliza la lógica estándar para seleccionar el protocolo HTTP frente al protocolo HTTPS.</td>
+   <td>En Windows 8 y Windows 10: forzar el uso de HTTPS siempre que se solicite DASH* o HLS. Limitación conocida: HTTP en DASH* o HLS no funciona en esta combinación de navegador/sistema operativo<br /> <br /> En Windows 7: descarga progresiva. Utiliza lógica estándar para seleccionar protocolo HTTP o HTTPS.</td>
   </tr>
   <tr>
    <td>Escritorio</td>
@@ -231,17 +231,17 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   <tr>
    <td>Escritorio</td>
    <td>Firefox 45 o posterior</td>
-   <td>Velocidad de bits adaptable DASH* o HLS.</td>
+   <td>Flujo continuo de velocidad de bits adaptable DASH* o HLS.</td>
   </tr>
   <tr>
    <td>Escritorio</td>
    <td>Chrome</td>
-   <td>Velocidad de bits adaptable DASH* o HLS.</td>
+   <td>Flujo continuo de velocidad de bits adaptable DASH* o HLS.</td>
   </tr>
   <tr>
    <td>Escritorio</td>
    <td>Safari (Mac)</td>
-   <td>Flujo de velocidad de bits adaptable HLS.</td>
+   <td>Flujo continuo de velocidad de bits adaptable HLS.</td>
   </tr>
   <tr>
    <td>Móvil</td>
@@ -251,38 +251,38 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
   <tr>
    <td>Móvil</td>
    <td>Chrome (Android™ 7 o posterior)</td>
-   <td>Velocidad de bits adaptable DASH* o HLS.</td>
+   <td>Flujo continuo de velocidad de bits adaptable DASH* o HLS.</td>
   </tr>
   <tr>
    <td>Móvil</td>
-   <td>Android™ (explorador predeterminado)</td>
+   <td>Android™ (navegador predeterminado)</td>
    <td>Descarga progresiva.</td>
   </tr>
   <tr>
    <td>Móvil</td>
    <td>Safari (iOS)</td>
-   <td>Flujo de velocidad de bits adaptable HLS.</td>
+   <td>Flujo continuo de velocidad de bits adaptable HLS.</td>
   </tr>
   <tr>
    <td>Móvil</td>
    <td>Chrome (iOS)</td>
-   <td>Flujo de velocidad de bits adaptable HLS.</td>
+   <td>Flujo continuo de velocidad de bits adaptable HLS.</td>
   </tr>
   <tr>
    <td>Móvil</td>
    <td>BlackBerry®</td>
-   <td>Velocidad de bits adaptable DASH* o HLS./td&gt;
+   <td>Flujo continuo de velocidad de bits adaptable DASH* o HLS./td&gt;
   </tr>
  </tbody>
 </table>
 
 >[!IMPORTANT]
 >
->*Para usar DASH para tus videos, primero debes habilitarlo en tu cuenta con el Soporte técnico de Adobe. Consulte [Habilitar DASH en su cuenta](#enable-dash).)
+>*Para usar DASH en tus vídeos, primero debe ser habilitado por el servicio de asistencia técnica de Adobe en tu cuenta. Consulte [Habilitar DASH en su cuenta](#enable-dash).)
 
 ## Arquitectura de la solución de vídeo de Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
-El siguiente gráfico muestra el flujo de trabajo general de creación de vídeos que se cargan y codifican mediante DMGateway (en modo híbrido de Dynamic Media) y que se ponen a disposición del público.
+El siguiente gráfico muestra el flujo de trabajo general de creación de vídeos que se cargan y codifican mediante DMGgateway (en modo híbrido de Dynamic Media) y que están disponibles para el consumo público.
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -290,9 +290,9 @@ El siguiente gráfico muestra el flujo de trabajo general de creación de vídeo
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
-## Prácticas recomendadas para codificar vídeos {#best-practices-for-encoding-videos}
+## Prácticas recomendadas para la codificación de vídeos {#best-practices-for-encoding-videos}
 
-El **Codificar vídeo Dynamic Media** el flujo de trabajo codifica el vídeo si ha activado Dynamic Media y ha configurado los servicios de nube de vídeo. Este flujo de trabajo captura el historial de procesos de flujo de trabajo y la información de errores. Consulte [Monitorización de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Si ha activado Dynamic Media y ha configurado los servicios de nube de vídeo, la variable **[!UICONTROL Codificar vídeo Dynamic Media]** El flujo de trabajo de se aplica automáticamente al cargar un vídeo. (Si no utiliza Dynamic Media, la variable **[!UICONTROL Recurso de actualización DAM]** el flujo de trabajo surte efecto).
+La variable **Codificar vídeo de Dynamic Media** flujo de trabajo codifica el vídeo si ha activado Dynamic Media y ha configurado los servicios de nube de vídeo. Este flujo de trabajo captura el historial de procesos de flujo de trabajo y la información de errores. Consulte [Monitorización de la codificación de vídeo y progreso de publicación de YouTube](#monitoring-video-encoding-and-youtube-publishing-progress). Si ha habilitado Dynamic Media y ha configurado los servicios de nube de vídeo, la variable **[!UICONTROL Codificar vídeo de Dynamic Media]** El flujo de trabajo de se aplica automáticamente al cargar un vídeo. (Si no utiliza Dynamic Media, la variable **[!UICONTROL Recurso de actualización DAM]** tiene efecto).
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
@@ -302,110 +302,110 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 ### Archivos de vídeo de origen {#source-video-files}
 
-Cuando codifique un archivo de vídeo, utilice un archivo de vídeo de origen de la máxima calidad posible. Evite utilizar archivos de vídeo codificados anteriormente porque estos archivos ya están comprimidos y una codificación posterior crea un vídeo de calidad inferior.
+Cuando codifique un archivo de vídeo, utilice un archivo de vídeo de origen de la máxima calidad posible. Evite utilizar archivos de vídeo codificados anteriormente porque estos archivos ya están comprimidos y una codificación adicional crea un vídeo de calidad inferior.
 
-* Dynamic Media admite principalmente vídeos de formato corto con una duración máxima de 30 minutos y una resolución mínima buena a 25 x 25.
-* Puede cargar archivos de vídeo de origen principales de hasta 15 GB cada uno.
+* Dynamic Media admite principalmente vídeos de formato corto con una longitud máxima de 30 minutos y una resolución mínima buena de 25 x 25.
+* Puede cargar archivos de vídeo de origen primarios de hasta 15 GB cada uno.
 
-En la tabla siguiente se describe el tamaño recomendado, la relación de aspecto y la velocidad de bits mínima que deben tener los archivos de vídeo de origen antes de codificarlos:
+En la tabla siguiente se describe el tamaño recomendado, la proporción de aspecto y la velocidad de bits mínima que deben tener los archivos de vídeo de origen antes de codificarlos:
 
-| Tamaño | Proporción de aspecto | Velocidad de bits mínima |
+| Tamaño | Proporción de aspecto | Tasa de bits mínima |
 |--- |--- |--- |
-| 1024 X 768 | 4:3 | 4500 Kbps para la mayoría de los vídeos. |
+| 1024 X 768 | 4:3 | 4500 kbps para la mayoría de los vídeos. |
 | 1280 X 720 | 16:9 | 3000 - 6000 kbps, dependiendo de la cantidad de movimiento en el vídeo. |
-| 1920 X 1080 | 16:9 | 6.000 a 8.000 kbps, en función de la cantidad de movimiento del vídeo. |
+| 1920 X 1080 | 16:9 | 6000 - 8000 kbps, dependiendo de la cantidad de movimiento en el vídeo. |
 
 ### Obtener los metadatos de un archivo {#obtaining-a-file-s-metadata}
 
-Puede obtener los metadatos de un archivo visualizando sus metadatos mediante una herramienta de edición de vídeo o utilizando una aplicación diseñada para obtener metadatos. A continuación se indican instrucciones para utilizar MediaInfo, una aplicación de terceros, para obtener los metadatos de un archivo de vídeo:
+Puede obtener los metadatos de un archivo consultando sus metadatos con una herramienta de edición de vídeo o utilizando una aplicación diseñada para obtener metadatos. A continuación se indican las instrucciones para utilizar MediaInfo, una aplicación de terceros, para obtener los metadatos de un archivo de vídeo:
 
-1. Ir a [Descarga de MediaInfo](https://mediaarea.net/en/MediaInfo/Download).
-1. Seleccione y descargue el instalador para la versión GUI y siga las instrucciones de instalación.
-1. Después de la instalación, haga clic con el botón derecho en el archivo de vídeo (solo Windows) y seleccione MediaInfo o abra MediaInfo y arrastre el archivo de vídeo a la aplicación. Verá todos los metadatos asociados con el archivo de vídeo, incluidos el ancho, el alto y los fps.
+1. Vaya a [Descarga de MediaInfo](https://mediaarea.net/en/MediaInfo/Download).
+1. Seleccione y descargue el instalador para la versión GUI, y siga las instrucciones de instalación.
+1. Después de la instalación, haga clic con el botón derecho en el archivo de vídeo (solo Windows) y seleccione MediaInfo, o abra MediaInfo y arrastre el archivo de vídeo a la aplicación. Verá todos los metadatos asociados con el archivo de vídeo, incluida su anchura, altura y fps.
 
 ### Proporción de aspecto {#aspect-ratio}
 
 Cuando elija o cree un ajuste preestablecido de codificación de vídeo para el archivo de vídeo de origen principal, asegúrese de que el ajuste preestablecido tenga la misma proporción de aspecto que el archivo de vídeo de origen principal. La relación de aspecto es la relación entre la anchura y la altura del vídeo.
 
-Para determinar la proporción de aspecto de un archivo de vídeo, obtenga los metadatos del archivo y anote la anchura y altura del archivo (consulte Obtención de metadatos de un archivo más arriba). A continuación, utilice esta fórmula para determinar la relación de aspecto:
+Para determinar la relación de aspecto de un archivo de vídeo, obtenga los metadatos del archivo y tenga en cuenta la anchura y la altura del archivo (consulte Obtener los metadatos de un archivo más arriba). A continuación, utilice esta fórmula para determinar la relación de aspecto:
 
-anchura/altura = proporción de aspecto
+anchura/altura = relación de aspecto
 
-En la tabla siguiente se describe cómo se traducen los resultados de la fórmula en opciones de relación de aspecto comunes:
+En la tabla siguiente se describe cómo los resultados de la fórmula se traducen en opciones de relación de aspecto comunes:
 
-| Resultado de fórmula | Proporción de aspecto |
+| Resultado de la fórmula | Proporción de aspecto |
 |--- |--- |
 | 1.33 | 4:3 |
 | 0.75 | 3:4 |
 | 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
-Por ejemplo, un vídeo de 1440 anchura x 1080 altura tiene una relación de aspecto de 1440/1080 o 1,33. En este caso, elija un ajuste preestablecido de codificación de vídeo con una relación de aspecto de 4:3 para codificar el archivo de vídeo.
+Por ejemplo, un vídeo con una anchura de 1440 x una altura de 1080 tiene una relación de aspecto de 1440/1080 o 1,33. En este caso, se elige un ajuste preestablecido de codificación de vídeo con una relación de aspecto de 4:3 para codificar el archivo de vídeo.
 
 ### Velocidad de bits {#bitrate}
 
-La velocidad de bits es la cantidad de datos codificados para formar un segundo de reproducción de vídeo. La velocidad de bits se mide en kilobits por segundo (Kbps).
+La velocidad de bits es la cantidad de datos que se codifican para formar un solo segundo de reproducción de vídeo. La velocidad de bits se mide en kilobits por segundo (Kbps).
 
 >[!NOTE]
 >
->Como todos los códecs utilizan compresión con pérdida, la velocidad de bits es el factor más importante en la calidad del vídeo. Con la compresión con pérdida, cuanto más comprime un archivo de vídeo, más se degrada la calidad. Por este motivo, si todas las demás características son iguales (resolución, velocidad de fotogramas y códec), cuanto menor sea la velocidad de bits, menor será la calidad del archivo comprimido.
+>Dado que todos los códecs utilizan compresión con pérdida, la velocidad de bits es el factor más importante en la calidad del vídeo. Con la compresión con pérdidas, cuanto más comprima un archivo de vídeo, más degradará la calidad. Por este motivo, si todas las demás características son iguales (resolución, velocidad de fotogramas y códec), menor es la velocidad de bits, menor es la calidad del archivo comprimido.
 
-Al seleccionar una codificación de velocidad de bits, puede elegir entre dos tipos:
+Al seleccionar una codificación de velocidad de bits, hay dos tipos que puede elegir:
 
-* **[!UICONTROL Codificación de velocidad constante]** (CBR): durante la codificación CBR, la velocidad de bits o el número de bits por segundo se mantienen iguales durante todo el proceso de codificación. La codificación CBR conserva la velocidad de datos establecida en su configuración durante todo el vídeo. Además, la codificación CBR no optimiza los archivos multimedia para la calidad, pero ahorra espacio de almacenamiento.
-Utilice CBR si el vídeo contiene un nivel de movimiento similar en todo el vídeo. CBR se utiliza comúnmente para el contenido de vídeo de streaming. Consulte también [Usar parámetros de codificación de vídeo personalizados](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
+* **[!UICONTROL Codificación de velocidad de bits constante]** (CBR): Durante la codificación CBR, la velocidad de bits o el número de bits por segundo se mantiene igual durante todo el proceso de codificación. La codificación CBR mantiene la velocidad de datos definida en su configuración en todo el vídeo. Además, la codificación CBR no optimiza los archivos multimedia para garantizar la calidad, pero sí ahorra espacio de almacenamiento.
+Utilice CBR si el vídeo contiene un nivel de movimiento similar en todo el vídeo. CBR se utiliza generalmente para transmitir contenido de vídeo. Consulte también [Usar parámetros de codificación de vídeo personalizados](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Codificación de velocidad de bits variable]** (VBR): La codificación VBR ajusta la velocidad de datos hacia abajo y hasta el límite superior establecido, en función de los datos requeridos por el compresor. Esta funcionalidad significa que durante un proceso de codificación VBR la velocidad de bits del archivo multimedia aumenta o disminuye dinámicamente según las necesidades de velocidad de bits de los archivos multimedia.
-VBR tarda más en codificarse, pero produce los resultados más favorables; la calidad del archivo multimedia es superior. VBR se utiliza comúnmente para la entrega progresiva de contenido de vídeo http.
+* **[!UICONTROL Codificación de velocidad de bits variable]** (VBR): La codificación VBR ajusta la velocidad de datos hacia abajo y hasta el límite superior establecido, según los datos requeridos por el compresor. Esta funcionalidad significa que durante un proceso de codificación VBR, la velocidad de bits del archivo multimedia aumenta o disminuye dinámicamente según las necesidades de velocidad de bits de los archivos multimedia.
+El VBR tarda más en codificarse, pero produce los resultados más favorables; la calidad del archivo multimedia es superior. VBR se utiliza generalmente para el envío progresivo http de contenido de vídeo.
 
-¿Cuándo se utiliza VBR o CRB?
-Al seleccionar VBR en comparación con CBR, casi siempre se recomienda utilizar VBR para los archivos multimedia. VBR proporciona archivos de mayor calidad a velocidades de bits competitivas. Cuando utilice VBR, asegúrese de utilizar con codificación de dos pasos y establezca la velocidad de bits máxima en 1,5 veces la velocidad de bits de vídeo de destino.
+¿Cuándo utiliza VBR frente a CRB?
+Al seleccionar VBR en comparación con CBR, casi siempre se recomienda usar VBR para los archivos multimedia. VBR proporciona archivos de mayor calidad a velocidades de bits competitivas. Cuando utilice VBR, asegúrese de utilizar con codificación de dos pasos y establezca que la velocidad de bits máxima sea 1,5 veces la velocidad de bits de vídeo de destino.
 
-Al elegir un ajuste preestablecido de codificación de vídeo, recuerde la velocidad de conexión del usuario final de destino. Elija un ajuste preestablecido con una velocidad de datos del 80 % de esa velocidad. Por ejemplo, si la velocidad de conexión del usuario final de destino es de 1000 Kbps, el mejor ajuste preestablecido es uno con una velocidad de datos de vídeo de 800 Kbps.
+Cuando elija un ajuste preestablecido de codificación de vídeo, recuerde la velocidad de conexión del usuario final objetivo. Elija un ajuste preestablecido con una velocidad de datos del 80 % de esa velocidad. Por ejemplo, si la velocidad de conexión del usuario final objetivo es de 1000 Kbps, el mejor ajuste preestablecido es uno con una velocidad de datos de vídeo de 800 Kbps.
 
 En esta tabla se describe la velocidad de datos de las velocidades de conexión típicas.
 
 | Velocidad (Kbps) | Tipo de conexión |
 |--- |--- |
 | 256 | Conexión de acceso telefónico. |
-| 800 | Conexión móvil típica. Para esta conexión, establezca como objetivo una velocidad de datos en el rango de 400 a un máximo de 800 para experiencias 3G. |
-| 2000 | Conexión de escritorio de banda ancha típica. Para esta conexión, establezca como objetivo una velocidad de datos en el rango de 800-2000 Kbps, con un promedio de la mayoría de los objetivos de 1200-1500 Kbps. |
-| 5000 | Conexión típica de banda ancha alta. No se recomienda la codificación en este rango superior porque la mayoría de los consumidores no pueden acceder a la entrega de vídeo a esta velocidad. |
+| 800 | Conexión móvil típica. Para esta conexión, establezca como objetivo una velocidad de datos del rango de 400 a un máximo de 800 para las experiencias 3G. |
+| 2000 | Conexión de escritorio de banda ancha típica. Para esta conexión, establezca como objetivo una velocidad de datos en el rango de 800 a 2000 Kbps, con la mayoría de objetivos que promedien entre 1200 y 1500 Kbps. |
+| 5000 | Conexión de banda ancha típica. No se recomienda codificar en este rango superior porque la entrega de vídeo a esta velocidad no está disponible para la mayoría de los consumidores. |
 
 ### Resolución {#resolution}
 
-**Resolución** describe la altura y anchura de un archivo de vídeo en píxeles. La mayor parte del vídeo de origen se almacena en alta resolución (por ejemplo, 1920 x 1080). Para fines de streaming, el vídeo de origen se comprime con una resolución más pequeña (640 x 480 o menor).
+**Resolución** describe la altura y anchura de un archivo de vídeo en píxeles. La mayoría de los vídeos de origen se almacenan a alta resolución (por ejemplo, 1920 x 1080). Para fines de transmisión, el vídeo de origen se comprime a una resolución más pequeña (640 x 480 o más pequeña).
 
-La resolución y la velocidad de datos son dos factores integrados que determinan la calidad del vídeo. Para mantener la misma calidad de vídeo, cuanto mayor sea el número de píxeles de un archivo de vídeo (mayor será la resolución), mayor deberá ser la velocidad de datos. Por ejemplo, considere el número de píxeles por fotograma en una resolución de 320 x 240 y un archivo de vídeo de resolución de 640 x 480:
+La resolución y la velocidad de datos son dos factores integrados que determinan la calidad del vídeo. Para mantener la misma calidad de vídeo, cuanto mayor sea el número de píxeles en un archivo de vídeo (mayor es la resolución), mayor será la velocidad de datos. Por ejemplo, considere el número de píxeles por fotograma en una resolución de 320 x 240 y un archivo de vídeo de resolución de 640 x 480:
 
-| Resolución | Píxeles por cuadro |
+| Resolución | Píxeles por fotograma |
 |--- |--- |
 | 320 x 240 | 76,800 |
 | 640 x 480 | 307,200 |
 
-El archivo de 640 x 480 tiene cuatro veces más píxeles por fotograma. Para lograr la misma velocidad de datos para estas dos resoluciones de ejemplo, se aplica cuatro veces la compresión al archivo de 640 x 480, lo que puede reducir la calidad del vídeo. Por lo tanto, una velocidad de datos de vídeo de 250 Kbps produce una visualización de alta calidad con una resolución de 320 x 240, pero no con una resolución de 640 x 480.
+El archivo de 640 x 480 tiene cuatro veces más píxeles por fotograma. Para lograr la misma velocidad de datos para estas dos resoluciones de ejemplo, se aplica cuatro veces la compresión al archivo de 640 x 480, lo que puede reducir la calidad del vídeo. Por lo tanto, una velocidad de datos de vídeo de 250 Kbps produce una visualización de alta calidad a una resolución de 320 x 240, pero no a una resolución de 640 x 480.
 
-En general, cuanto mayor sea la velocidad de datos que utilice, mejor será el aspecto del vídeo y, cuanto mayor sea la resolución que utilice, mayor será la velocidad de datos que deberá mantener la calidad de visualización (en comparación con resoluciones más bajas).
+En general, cuanto mayor sea la velocidad de datos que utilice, mejor será el aspecto del vídeo y, cuanto mayor sea la resolución que utilice, mayor será la velocidad de datos que debe mantener la calidad de visualización (en comparación con resoluciones más bajas).
 
-Como la resolución y la velocidad de datos están vinculadas, tiene dos opciones al codificar vídeo:
+Como la resolución y la velocidad de datos están vinculadas, existen dos opciones al codificar vídeo:
 
-* Elija una velocidad de datos y, a continuación, codifique con la resolución más alta que se vea bien en la velocidad de datos elegida.
-* Elija una resolución y codifique a la velocidad de datos necesaria para conseguir vídeo de alta calidad con la resolución que elija.
+* Elija una velocidad de datos y, a continuación, codifique con la resolución más alta que se muestre bien a la velocidad de datos elegida.
+* Elija una resolución y, a continuación, codifique a la velocidad de datos necesaria para lograr vídeo de alta calidad en la resolución que elija.
 
-Cuando elija (o cree) un ajuste preestablecido de codificación de vídeo para el archivo de vídeo de origen principal, utilice esta tabla para seleccionar la resolución correcta:
+Al elegir (o crear) un ajuste preestablecido de codificación de vídeo para el archivo de vídeo de origen principal, utilice esta tabla para dirigirse a la resolución correcta:
 
-| Resolución | Altura (píxeles) | Tamaño de pantalla |
+| Resolución | Altura (píxeles) | Tamaño de la pantalla |
 |--- |--- |--- |
 | 240p | 240 | Pantalla pequeña |
 | 300p | 300 | Pantalla pequeña normalmente para dispositivos móviles |
 | 360p | 360 | Pantalla pequeña |
-| 480p | 480 | Pantalla mediana |
+| 480p | 480 | Pantalla media |
 | 720p | 720 | Pantalla grande |
 | 1080p | 1080 | Pantalla grande de alta definición |
 
 ### Fps (fotogramas por segundo) {#fps-frames-per-second}
 
-En Estados Unidos y Japón, la mayoría de los vídeos se graban a 29,97 fotogramas por segundo (fps); en Europa, la mayoría de los vídeos se graban a 25 fps. La película se filma a 24 fps.
+En los Estados Unidos y Japón, la mayoría de los vídeos se graban a 29,97 fotogramas por segundo (fps); en Europa, la mayor parte del vídeo se toma a 25 fps. La película es filmada a 24 fps.
 
 Elija un ajuste preestablecido de codificación de vídeo que coincida con la velocidad de fps del archivo de vídeo de origen principal. Por ejemplo, si el vídeo de origen principal es de 25 fps, elija un ajuste preestablecido de codificación con 25 fps. De forma predeterminada, toda la codificación personalizada utiliza el fps del archivo de vídeo de origen principal. Por este motivo, no es necesario especificar explícitamente la configuración de fps al crear un ajuste preestablecido de codificación de vídeo.
 
@@ -413,13 +413,13 @@ Elija un ajuste preestablecido de codificación de vídeo que coincida con la ve
 
 Para obtener resultados óptimos, seleccione dimensiones de codificación de modo que el vídeo de origen sea un múltiplo completo de todos los vídeos codificados.
 
-Para calcular esta proporción, se divide el ancho de origen por el ancho codificado para obtener la proporción de ancho. A continuación, se divide la altura de origen por la altura codificada para obtener la relación de altura.
+Para calcular esta proporción, se divide el ancho de origen por el ancho codificado para obtener la relación de ancho. A continuación, se divide la altura de origen por la altura codificada para obtener la relación de altura.
 
-Si la proporción resultante es un entero, significa que el vídeo se escala de forma óptima. Si la proporción resultante no es un entero, afecta a la calidad del vídeo al dejar artefactos de píxeles sobrantes en la pantalla. Este efecto es más evidente cuando el vídeo tiene texto.
+Si la proporción resultante es un número entero, significa que el vídeo se escala de forma óptima. Si la proporción resultante no es un número entero, afecta a la calidad del vídeo dejando artefactos de píxeles sobrantes en la pantalla. Este efecto es más visible cuando el vídeo tiene texto.
 
-Por ejemplo, supongamos que el vídeo de origen es de 1920 x 1080. En la tabla siguiente, los tres vídeos codificados proporcionan la configuración de codificación óptima para utilizar.
+Por ejemplo, suponga que el vídeo de origen es de 1920 x 1080. En la tabla siguiente, los tres vídeos codificados proporcionan la configuración de codificación óptima para su uso.
 
-| Tipo de vídeo | Anchura x altura | Proporción de anchura | Proporción de altura |
+| Tipo de vídeo | Anchura x Altura | Proporción de anchura | Proporción de altura |
 |--- |--- |--- |--- |
 | Origen | 1920x1080 | 1 | 1 |
 | Codificado | 960 x 540 | 2 | 2 |
@@ -428,590 +428,47 @@ Por ejemplo, supongamos que el vídeo de origen es de 1920 x 1080. En la tabla s
 
 ### Formato de archivo de vídeo codificado {#encoded-video-file-format}
 
-Dynamic Media recomienda utilizar ajustes preestablecidos de codificación de vídeo MP4 H.264. Como los archivos MP4 utilizan el códec de vídeo H.264, proporciona vídeo de alta calidad pero en un tamaño de archivo comprimido.
+Dynamic Media recomienda utilizar ajustes preestablecidos de codificación de vídeo MP4 H.264. Dado que los archivos MP4 utilizan el códec de vídeo H.264, proporcionan vídeo de alta calidad pero en un tamaño de archivo comprimido.
 
 ### Habilitar DASH en su cuenta {#enable-dash}
 
-DASH (Digital Adaptive Streaming over HTTP) es el estándar internacional para streaming de video y es ampliamente adoptado en diferentes visores de video. Cuando DASH está habilitado en su cuenta, tiene la opción de elegir entre DASH o HLS para flujo de vídeo adaptable. O bien, puede optar por ambos con el cambio automático entre los reproductores cuando **[!UICONTROL auto]** está seleccionado como tipo de reproducción en el ajuste preestablecido de Visor.
+DASH (Digital Adaptive Streaming over HTTP) es el estándar internacional para la transmisión de vídeo y se adopta ampliamente en los distintos visores de vídeo. Cuando DASH está habilitado en su cuenta, tiene la opción de elegir entre DASH o HLS para flujo de vídeo adaptable. O bien, puede optar por ambas con el cambio automático entre reproductores cuando **[!UICONTROL auto]** se selecciona como el tipo de reproducción en el ajuste preestablecido de visualizador.
 
-Algunas ventajas clave de habilitar DASH en su cuenta son las siguientes:
+Algunas de las ventajas clave de habilitar DASH en su cuenta son:
 
-* Empaquete el vídeo de flujo DASH para la transmisión de velocidad de bits adaptable. Este método aumenta la eficacia del envío. El streaming adaptable garantiza la mejor experiencia de visualización para sus clientes.
-* El streaming optimizado para el navegador con reproductores Dynamic Media cambia entre el streaming HLS y DASH para garantizar la mejor calidad de servicio. El reproductor de vídeo cambia automáticamente a HLS cuando se utiliza un explorador Safari.
-* Puede configurar su método de flujo preferido (HLS o DASH) editando el ajuste preestablecido del visualizador de vídeo.
-* La codificación de vídeo optimizada garantiza que no se utilice almacenamiento adicional al habilitar la capacidad DASH. Se crea un único conjunto de codificaciones de vídeo para HLS y DASH para optimizar los costes de almacenamiento de vídeo.
-* Ayuda a que la entrega de vídeo sea más accesible para los clientes.
+* Empaquete el vídeo de flujo DASH para el flujo de velocidad de bits adaptable. Este método conduce a una mayor eficacia de la entrega. El flujo adaptable garantiza la mejor experiencia de visualización para sus clientes.
+* La transmisión optimizada para navegadores con reproductores Dynamic Media cambia entre el flujo HLS y el DASH para garantizar la mejor calidad del servicio. El reproductor de vídeo cambia automáticamente a HLS cuando se utiliza un explorador Safari.
+* Puede configurar su método de flujo preferido (HLS o DASH) editando el ajuste preestablecido del visor de vídeo.
+* La codificación de vídeo optimizada garantiza que no se utilice ningún almacenamiento adicional mientras se habilita la capacidad DASH. Se crea un único conjunto de codificaciones de vídeo para HLS y DASH a fin de optimizar los costes de almacenamiento de vídeo.
+* Ayuda a que el envío de vídeo sea más accesible para sus clientes.
 * Obtenga también la URL de flujo continuo mediante API.
 
    >[!IMPORTANT]
    >
    >Actualmente, la activación de DASH en su cuenta solo está disponible en Norteamérica.
 
-Para habilitar DASH en su cuenta de, se requieren dos pasos:
+La activación de DASH en su cuenta requiere dos pasos:
 
-* Configuración de Dynamic Media para utilizar DASH, que puede realizar fácilmente.
-* Configuración de Experience Manager 6.5 para utilizar DASH, que se realiza mediante un caso de Asistencia al cliente de Adobe que crea y envía.
+* Configuración de Dynamic Media para utilizar DASH que puede hacer fácilmente.
+* Configuración de Experience Manager 6.5 para utilizar DASH que se realiza mediante un caso de asistencia al cliente de Adobe que crea y envía.
 
 **Para habilitar DASH en su cuenta:**
 
-1. **Configuración de Dynamic Media** : en Dynamic Media en Experience Manager 6.5, vaya a [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Buscar por **AEM Assets Dynamic Media Video Advanced Streaming** indicador de funcionalidad.
-1. Seleccione la casilla de verificación para activar (activar) DASH.
+1. **Configuración de Dynamic Media** - En Dynamic Media en Experience Manager 6.5, vaya a [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Buscar **Transmisión avanzada de vídeo de AEM Assets Dynamic Media** indicador de función.
+1. Seleccione la casilla de verificación para activar DASH.
 1. Seleccione **[!UICONTROL Guardar]**.
 1. **Configuración de Experience Manager 6.5** - [Utilice el Admin Console para iniciar la creación de un nuevo caso de asistencia](https://helpx.adobe.com/es/enterprise/using/support-for-experience-cloud.html).
-1. Siga las instrucciones para crear un caso de soporte y asegúrese de proporcionar la siguiente información:
+1. Siga las instrucciones para crear un caso de asistencia y, a la vez, proporcione la siguiente información:
 
-   * Nombre del contacto principal, correo electrónico, teléfono.
-   * Nombre de su cuenta de Dynamic Media.
+   * Nombre de contacto principal, correo electrónico, teléfono.
+   * Nombre de la cuenta de Dynamic Media.
    * Especifique que desea habilitar DASH en el Experience Manager 6.5.
 
-1. La Asistencia al cliente de Adobe le añade a la Lista de espera de clientes de DASH en función del orden en que se envían las solicitudes.
-1. Cuando el Adobe de trabajo esté listo para administrar su solicitud, el Servicio de atención al cliente se pondrá en contacto con usted para coordinar y establecer una fecha objetivo para la habilitación de DASH.
-1. Se le notificará una vez que el Servicio de atención al cliente lo haya completado.
-1. Cree su [ajuste preestablecido de visor de vídeo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) como siempre.
-
-## Publicación de vídeos en YouTube {#publishing-videos-to-youtube}
-
-Puede publicar recursos de vídeo de Experience Manager on-premise directamente en un canal de YouTube que haya creado anteriormente.
-
-Para publicar recursos de vídeo en YouTube, debe configurar Experience Manager Assets con etiquetas. Estas etiquetas se asocian a un canal de YouTube. Si la etiqueta de un recurso de vídeo coincide con la de un canal de YouTube, el vídeo se publica en YouTube. La publicación en YouTube se produce junto con la publicación normal del vídeo, siempre y cuando se utilice una etiqueta asociada.
-
-YouTube realiza su propia codificación. De este modo, el archivo de vídeo original que se cargó en Experience Manager se publica en YouTube, en lugar de en cualquier representación de vídeo que haya creado la codificación de Dynamic Media. Aunque no es necesario procesar vídeos con Dynamic Media, se espera que lo hagan en caso de que se necesite un ajuste preestablecido de visualizador para la reproducción.
-
-Cuando evita el perfil de procesamiento de vídeo y publica directamente en YouTube, simplemente significa que el recurso de vídeo en Experience Manager Asset no obtiene una miniatura visible. También significa que si se ejecuta en `dynamicmedia` o `dynamicmedia_scene7` modos de ejecución, los vídeos no codificados no funcionan con ninguno de los tipos de recursos de Dynamic Media.
-
-La publicación de recursos de vídeo en servidores de YouTube implica completar las siguientes tareas para garantizar la autenticación segura y protegida servidor a servidor con YouTube:
-
-1. [Configuración de Google Cloud](#configuring-google-cloud-settings)
-1. [Crear un canal de YouTube](#creating-a-youtube-channel)
-1. [Añadir etiquetas para publicar](#adding-tags-for-publishing)
-1. [Habilitar el agente de replicación de publicación de YouTube](#enabling-the-youtube-publish-replication-agent)
-1. [Configuración de YouTube en Experience Manager](#setting-up-youtube-in-aem)
-1. [(Opcional) Automatice la configuración de las propiedades predeterminadas de YouTube para los vídeos cargados](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Publicación de vídeos en el canal de YouTube](#publishing-videos-to-your-youtube-channel)
-1. [(Opcional) Compruebe el vídeo publicado en YouTube](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
-1. [Vinculación de URL de YouTube a la aplicación web](#linking-youtube-urls-to-your-web-application)
-
-También puede [cancelar la publicación de vídeos para eliminarlos de YouTube](#unpublishing-videos-to-remove-them-from-youtube).
-
-### Configuración de Google Cloud {#configuring-google-cloud-settings}
-
-Para publicar en YouTube, necesita una cuenta de Google. Si tiene una cuenta de GMAIL, entonces ya tiene una cuenta de Google; si no tiene una cuenta de Google, puede crear fácilmente una. Necesita la cuenta de porque necesita credenciales para publicar recursos de vídeo en YouTube. Si ya tiene una cuenta creada, omita esta tarea y continúe directamente a [Crear un canal de YouTube](#creating-a-youtube-channel).
-
-La cuenta utilizada con Google Cloud y la cuenta de Google utilizada para YouTube no tienen por qué ser la misma.
-
-Google cambia periódicamente su interfaz de usuario. Como tal, los pasos para publicar vídeos en YouTube pueden variar ligeramente de lo que se documenta a continuación. Esta advertencia también se aplica a YouTube cuando intenta comprobar si se han cargado vídeos en él.
-
->[!NOTE]
->
->Los siguientes pasos eran precisos en el momento de escribir este artículo. Sin embargo, Google actualiza periódicamente sus sitios web sin previo aviso. Como tal, estos pasos pueden ser ligeramente diferentes.
-
-Para establecer la configuración de Google Cloud:
-
-1. Cree una cuenta de Google.
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
-
-   Si ya tiene una cuenta de Google, vaya al paso siguiente.
-
-1. Ir a [https://cloud.google.com/](https://cloud.google.com/).
-1. En la página de Google Cloud, cerca de la esquina superior derecha, haga clic en **[!UICONTROL Consola]**.
-
-   Si es necesario, **[!UICONTROL Iniciar sesión]** usando las credenciales de su cuenta de Google para ver la **[!UICONTROL Consola]** opción.
-
-1. En la página Panel, a la derecha de **[!UICONTROL Google Cloud Platform]**, haga clic en la lista desplegable Proyecto para abrir el cuadro de diálogo Seleccionar un proyecto.
-1. En el cuadro de diálogo Seleccionar un proyecto, pulse **[!UICONTROL Nuevo proyecto]**.
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
-1. En el cuadro de diálogo Nuevo proyecto, en el campo Nombre del proyecto, escriba el nombre del nuevo proyecto.
-
-   El ID del proyecto se basa en el nombre del proyecto. Como tal, elija el nombre del proyecto con cuidado; no se puede cambiar después de crearlo. Además, debe volver a introducir el mismo ID de proyecto al configurar YouTube en Experience Manager más adelante; considere la posibilidad de escribirlo.
-
-1. Haga clic en **[!UICONTROL Crear]**.
-
-1. Realice una de las siguientes acciones:
-
-   * En el panel del proyecto, en la tarjeta Introducción, pulse **[!UICONTROL Explorar y habilitar API]**.
-   * En el panel del proyecto, en la tarjeta API, pulse **[!UICONTROL Ir a la información general de API]**.
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
-
-1. Cerca de la parte superior de la página API y servicios, pulse **[!UICONTROL Habilitar API y servicios]**.
-1. En la página Biblioteca de API, en el lado izquierdo, debajo de **[!UICONTROL Categoría]**, pulse **[!UICONTROL YouTube]**. En el lado derecho de la página, pulse **[!UICONTROL API de datos de YouTube]**.
-1. En la página API de datos de YouTube v3, pulse **[!UICONTROL Activar]**.
-
-   ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
-
-1. Para utilizar la API, necesita credenciales. Si es necesario, haga clic en **[!UICONTROL Crear credenciales]**.
-
-   ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
-
-1. En el **[!UICONTROL Añadir credenciales al proyecto]** página, paso 1, haga lo siguiente:
-
-   * Desde el **[!UICONTROL ¿Qué API utiliza?]** , seleccione la opción **[!UICONTROL API de datos de YouTube v3]**.
-
-   * Desde el **[!UICONTROL ¿Desde dónde llama a la API?]** , seleccione la opción **[!UICONTROL Servidor web (por ejemplo, node.js, Tomcat)]**
-
-   * Desde el **[!UICONTROL ¿A qué datos accede?]** lista desplegable, pulse **[!UICONTROL Datos de usuario]**.
-
-   ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
-
-1. Tocar **[!UICONTROL ¿Qué credenciales necesito?]**
-1. En la página **[!UICONTROL Agregar credenciales al proyecto]**, paso 2, en el encabezado **[!UICONTROL Crear un ID de cliente de OAuth 2.0]**, introduzca un nombre único (si lo desea) en el campo Nombre. También puede utilizar el nombre predeterminado especificado por Google.
-1. En el **[!UICONTROL Orígenes JavaScript autorizados]** encabezado, en el campo de texto, introduzca la siguiente ruta, sustituyendo su propio dominio y número de puerto en la ruta, y luego presione **[!UICONTROL Entrar]** para añadir la ruta a la lista:
-
-   `https://<servername.domain>:<port_number>`
-
-   Por ejemplo, `https://1a2b3c.mycompany.com:4321`. 
-
-   **Nota**: el ejemplo de ruta anterior está diseñado únicamente para fines de demostración.
-
-   ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
-
-1. En el **[!UICONTROL URI de redireccionamiento autorizados]** encabezado, en el campo de texto, introduzca la siguiente ruta, sustituyendo su propio dominio y número de puerto en la ruta, y luego presione **[!UICONTROL Entrar]** para añadir la ruta a la lista:
-
-   `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
-
-   Por ejemplo, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`. 
-
-   **Nota**: el ejemplo de ruta anterior está diseñado únicamente para fines de demostración.
-
-1. Clic **[!UICONTROL Crear ID de cliente de OAuth]**.
-1. En la página **[!UICONTROL Agregar credenciales a su proyecto]**, paso 3, en el encabezado **[!UICONTROL Configurar la pantalla de consentimiento de OAuth 2.0]**, seleccione la dirección de correo electrónico de Gmail que está utilizando actualmente.
-
-   ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
-
-1. En el **[!UICONTROL Nombre del producto mostrado a los usuarios]** encabezado, en el campo de texto, introduzca lo que desea mostrar en la pantalla de consentimiento.
-
-   La pantalla de consentimiento se muestra al Experience Manager cuando se autentica en YouTube; el Experience Manager se pone en contacto con YouTube para obtener permiso.
-
-1. Haga clic en **[!UICONTROL Continuar]**.
-1. En la página Agregar credenciales a su proyecto, paso 4, bajo el encabezado **[!UICONTROL Descargar credenciales]**, pulse **[!UICONTROL Descargar]**.
-
-   ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
-
-1. Guarde el `client_id.json` archivo.
-
-   Necesita este archivo json descargado cuando configure YouTube en Adobe Experience Manager más adelante.
-
-1. Haga clic en **[!UICONTROL Listo]**.
-
-   Cierre la sesión de su cuenta de Google. Ahora cree un canal de YouTube.
-
-### Crear un canal de YouTube {#creating-a-youtube-channel}
-
-La publicación de vídeos en YouTube requiere que tenga uno o más canales. Si ya ha creado un canal de YouTube, puede omitir esta tarea y ir a [Añadir etiquetas para publicar](/help/assets/video.md#adding-tags-for-publishing).
-
->[!WARNING]
->
->Asegúrese de que ya ha configurado uno o más canales en YouTube *antes* Los canales se agregan en Configuración de YouTube en Experience Manager (consulte [Configuración de YouTube en Experience Manager](#setting-up-youtube-in-aem) abajo). Si no puede configurar uno o más canales, no se le avisará de que hay otros que no existen. Sin embargo, la autenticación de Google sigue ocurriendo cuando se agrega un canal, pero no hay una opción para elegir qué canal se envía el vídeo.
-
-**Para crear un canal de YouTube:**
-
-1. Ir a [https://www.youtube.com](https://www.youtube.com/) e inicie sesión con las credenciales de su cuenta de Google.
-1. En la esquina superior derecha de la página de YouTube, haga clic en la imagen de perfil (también puede aparecer como una letra dentro de un círculo de color sólido) y, a continuación, haga clic en **[!UICONTROL Configuración de YouTube]** (icono de engranaje redondo).
-1. En la página Información general, en el encabezado Características adicionales, haga clic en **[!UICONTROL Ver todos mis canales o crear un canal]**.
-1. En la página Canales, haga clic en **[!UICONTROL Crear un canal nuevo]**.
-1. En la página Cuenta de marca, en el campo Nombre de cuenta de marca, introduzca un nombre de empresa o cualquier otro nombre de canal que elija donde desea publicar los recursos de vídeo y, a continuación, haga clic en **[!UICONTROL Crear]**.
-
-   Recuerde el nombre que introduce aquí porque debe introducirlo de nuevo al configurar YouTube en Experience Manager.
-
-1. (Opcional) Si es necesario, agregue más canales.
-
-   Ahora añada etiquetas para publicar.
-
-### Añadir etiquetas para publicar {#adding-tags-for-publishing}
-
-Para publicar en los vídeos en YouTube, Experience Manager asocia las etiquetas a uno o más canales de YouTube. Para añadir etiquetas para la publicación, consulte [Administración de etiquetas](/help/sites-administering/tags.md).
-
-O bien, si tiene intención de utilizar las etiquetas predeterminadas en Experience Manager, puede omitir esta tarea y ir a [Habilitar el agente de replicación de publicación de YouTube](#enabling-the-youtube-publish-replication-agent).
-
-### Habilitar el agente de replicación de publicación de YouTube {#enabling-the-youtube-publish-replication-agent}
-
-Después de habilitar el agente de replicación de publicación de YouTube, si desea probar la conexión con la cuenta de Google Cloud, pulse **[!UICONTROL Probar conexión]**. Una pestaña del explorador muestra los resultados de la conexión. Si ha añadido canales de YouTube, se mostrará un listado de ellos como parte de la prueba.
-
-1. En la esquina superior izquierda de Experience Manager, haga clic en el logotipo del Experience Manager y, a continuación, en el carril izquierdo, haga clic en **[!UICONTROL Herramientas]** > **[!UICONTROL Implementación]** > **[!UICONTROL Replicación]** > **[!UICONTROL Agentes en Autor]**.
-1. En la página Agentes de autor, haga clic en **[!UICONTROL Publicación de YouTube]**.
-1. En la barra de herramientas, a la derecha de Configuración, haga clic en **[!UICONTROL Editar]**.
-1. Seleccione el **[!UICONTROL Habilitado]** casilla de verificación para activar el agente de replicación.
-1. Haga clic en **[!UICONTROL Aceptar]**.
-
-   Ahora configure YouTube en Experience Manager.
-
-### Configuración de YouTube en Experience Manager {#setting-up-youtube-in-aem}
-
-A partir de Experience Manager 6.4, se introdujo un nuevo método de interfaz de usuario táctil para configurar la publicación de YouTube en Experience Manager. En función de la instancia instalada de Experience Manager que esté utilizando, realice una de las siguientes acciones:
-
-* Para configurar YouTube en Experience Manager anterior a la versión 6.4, consulte [Configuración de YouTube en Experience Manager anterior a 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before).
-* Para configurar YouTube en Experience Manager 6.4 o posterior, consulte [Configuración de YouTube en Experience Manager 6.4 y posterior](#setting-up-youtube-in-aem-and-later).
-
-#### Configuración de YouTube en Experience Manager 6.4 y posterior {#setting-up-youtube-in-aem-and-later}
-
-1. Asegúrese de iniciar sesión en la instancia de Dynamic Media como administrador.
-1. En la esquina superior izquierda, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]**(icono de martillo) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuración de publicación de YouTube]**.
-1. Tocar **[!UICONTROL global]** (no lo seleccione).
-
-1. Cerca de la esquina superior derecha de la página global, pulse **[!UICONTROL Crear]**.
-1. En la página Crear configuración de YouTube, en Configuración de plataforma de Google Cloud, en el campo **[!UICONTROL Nombre de aplicación]**, introduzca el ID de proyecto de Google.
-
-   Especificó el ID del proyecto al establecer inicialmente la configuración de Google Cloud anteriormente.
-Deje abierta la página Crear configuración de YouTube; en un momento, volverá a ella.
-
-   ![6_5_youtubepublish-createyoutubconfig](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
-
-1. Con un editor de texto sin formato, abra el archivo JSON que descargó y guardó anteriormente en la tarea [Configuración de Google Cloud](/help/assets/video.md#configuring-google-cloud-settings).
-1. Seleccione y copie todo el texto JSON.
-1. Vuelva al cuadro de diálogo Configuración de cuenta de YouTube. En el campo **[!UICONTROL Configuración JSON]**, pegue el texto JSON.
-1. Cerca de la esquina superior derecha de la página, pulse **[!UICONTROL Guardar]**.
-
-   Ahora configure los canales de YouTube en Experience Manager.
-
-1. Tocar **[!UICONTROL Añadir canal]**.
-1. En el campo Nombre del canal, introduzca el nombre del canal que ha creado en la tarea **[!UICONTROL Añadir uno o más canales a YouTube]** antes.
-
-   Si lo desea, puede añadir una descripción.
-
-1. Pulse **[!UICONTROL Agregar]**.
-1. Se muestra la autenticación de YouTube/Google. Si aún no ha iniciado sesión en la cuenta de Google Cloud, omita este paso.
-
-   * Introduzca el nombre de usuario y la contraseña de Google asociados con el ID del proyecto de Google y el texto JSON anteriores.
-   * Según el número de canales de su cuenta, verá dos o más elementos. Seleccione un canal. No seleccione la dirección de correo electrónico; no es un canal.
-   * En la página siguiente, pulse **[!UICONTROL Aceptar]** para permitir el acceso a este canal.
-
-1. Tocar **[!UICONTROL Permitir]**.
-
-   Ahora configure etiquetas para la publicación.
-
-1. **[!UICONTROL Configuración de etiquetas para publicar]** : en la página Cloud Services > YouTube, pulse el icono de lápiz para editar la lista de etiquetas que desea utilizar.
-1. Pulse el icono de lista desplegable (acento circunflejo invertido) para que pueda mostrar la lista de etiquetas disponibles en Experience Manager.
-1. Pulse una o varias etiquetas para poder agregarlas.
-
-   Para eliminar una etiqueta que haya agregado, selecciónela y pulse **[!UICONTROL X]**.
-
-1. Cuando termine de agregar las etiquetas que desee, pulse **[!UICONTROL Guardar]**.
-
-   Ahora puede publicar vídeos en su canal de YouTube.
-
-#### Configuración de YouTube en Experience Manager anterior a 6.4 {#setting-up-youtube-in-aem-before}
-
-1. Asegúrese de iniciar sesión en la instancia de Dynamic Media como administrador.
-
-1. En la esquina superior izquierda, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Implementación]** > **[!UICONTROL Cloud Services]**.
-1. En el encabezado Servicios de terceros, en YouTube, pulse **[!UICONTROL Configurar ahora]**.
-1. En el cuadro de diálogo Crear configuración, introduzca un título (obligatorio) y un nombre (opcional) en los campos respectivos.
-1. Pulse **[!UICONTROL Crear]**.
-1. En el cuadro de diálogo Configuración de cuenta de YouTube, en el campo **[!UICONTROL Nombre de la aplicación]**, introduzca el ID del proyecto de Google.
-
-   Especificó el ID del proyecto al [Configuración de Google Cloud configurada](/help/assets/video.md#configuring-google-cloud-settings) antes.
-Deje abierto el cuadro de diálogo Configuración de cuenta de YouTube; volverá a él en un momento.
-
-1. Con un editor de texto sin formato, abra el archivo JSON que descargó y guardó anteriormente en la tarea Configuración de Google Cloud.
-1. Seleccione y copie todo el texto JSON.
-1. Vuelva al cuadro de diálogo Configuración de cuenta de YouTube. En el campo **[!UICONTROL Configuración JSON]**, pegue el texto JSON.
-1. Pulse **[!UICONTROL Aceptar]**.
-
-   Ahora configure los canales de YouTube en Experience Manager.
-
-1. A la derecha de **[!UICONTROL Canales disponibles]**, pulse **+** (icono del signo “más”).
-1. En el cuadro de diálogo Configuración de canal de YouTube, en el apartado Título, escriba el nombre del canal que creó en la tarea **[!UICONTROL Agregar uno o más canales a YouTube]** anteriormente.
-
-   Si lo desea, puede añadir una descripción.
-
-1. Pulse **[!UICONTROL Aceptar]**.
-1. Se muestra la autenticación de YouTube/Google. Si aún no ha iniciado sesión en la cuenta de Google Cloud, omita este paso.
-
-   * Introduzca el nombre de usuario y la contraseña de Google asociados con el ID del proyecto de Google y el texto JSON anteriores.
-   * Según el número de canales de su cuenta, verá dos o más elementos. Seleccione un canal. No seleccione la dirección de correo electrónico; no es un canal.
-   * En la página siguiente, pulse **[!UICONTROL Aceptar]** para permitir el acceso a este canal.
-
-1. Tocar **[!UICONTROL Permitir]**.
-
-   Ahora configure etiquetas para la publicación.
-
-1. **[!UICONTROL Configuración de etiquetas para publicar]** : en la página Cloud Services > YouTube, pulse el icono de lápiz para editar la lista de etiquetas que desea utilizar.
-1. Pulse el icono de lista desplegable (acento circunflejo invertido) para que pueda mostrar la lista de etiquetas disponibles en Experience Manager.
-1. Pulse una o varias etiquetas para poder agregarlas.
-
-   Para eliminar una etiqueta que haya agregado, selecciónela y pulse **X**.
-
-1. Cuando termine de agregar las etiquetas que desee, pulse **[!UICONTROL OK]**.
-
-   Ahora puede publicar vídeos en su canal de YouTube.
-
-### (Opcional) Automatice la configuración de las propiedades predeterminadas de YouTube para los vídeos cargados {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
-
-Si lo desea, puede automatizar la configuración de las propiedades de YouTube al cargar los vídeos creando un perfil de procesamiento de metadatos en Experience Manager.
-
-Para crear el perfil de procesamiento de metadatos, en primer lugar copiará valores de los campos **[!UICONTROL Etiqueta de campo]**, **[!UICONTROL Asignar a propiedad]** y **[!UICONTROL Opciones]**, todos se encuentran en Esquemas de metadatos para vídeo. A continuación, cree su perfil de procesamiento de metadatos de vídeo de YouTube agregándole esos valores.
-
-Para automatizar la configuración de las propiedades predeterminadas de YouTube para los vídeos cargados:
-
-1. En la esquina superior izquierda, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, haga clic en **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadatos]**.
-1. Clic **[!UICONTROL predeterminado]**. (No añada una marca de verificación al cuadro de selección a la izquierda de &quot;predeterminado&quot;.)
-1. En el **[!UICONTROL predeterminado]** , marque la casilla a la izquierda de **[!UICONTROL video]**, y pulse **[!UICONTROL Editar]**.
-1. En la página Editor de esquemas de metadatos, pulse el botón **[!UICONTROL Avanzadas]** pestaña.
-1. Bajo el encabezado Publicación de YouTube, haga clic en **[!UICONTROL Categoría de YouTube]**.
-1. En el lado derecho de la página, debajo de **[!UICONTROL Configuración]** pestaña, haga lo siguiente:
-
-   * En el **[!UICONTROL Asignar a la propiedad]** Campo de texto, seleccione y copie el valor.
-Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
-
-   * En **[!UICONTROL Opciones]**, seleccione y copie el valor predeterminado que desee utilizar (por ejemplo, Personas y blogs o Ciencia y tecnología).
-Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
-
-1. Bajo el encabezado Publicación de YouTube, pulse **[!UICONTROL Privacidad de YouTube]**.
-1. En el lado derecho de la página, debajo de **[!UICONTROL Configuración]** pestaña, haga lo siguiente:
-
-   * En el **[!UICONTROL Asignar a la propiedad]** Campo de texto, seleccione y copie el valor.
-Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
-
-   * En **[!UICONTROL Opciones]**, seleccione y copie el valor predeterminado que desee utilizar. Observe que las Opciones se agrupan en pares de dos. El campo inferior del par es el valor predeterminado que desea copiar, como público, no incluido en la lista o privado.
-Pegue el valor copiado en el editor de texto abierto. Necesitará este valor más adelante cuando cree su perfil de procesamiento de metadatos. Deje abierto el editor de texto.
-
-1. Cerca de la esquina superior derecha de la página Editor de esquemas de metadatos, haga clic en **[!UICONTROL Cancelar]**.
-1. En la esquina superior izquierda de Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, haga clic en **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > **[!UICONTROL Perfiles de metadatos]**.
-
-1. En la página Perfiles de metadatos, cerca de la esquina superior derecha de la página, haga clic en **[!UICONTROL Crear]**.
-1. En el cuadro de diálogo Agregar perfil de metadatos, en el campo de texto **[!UICONTROL Título del perfil]**, escriba el nombre `YouTube Video` y haga clic en **[!UICONTROL Crear]**.
-1. En la página Editor de perfiles de metadatos, haga clic en **[!UICONTROL Avanzar]** pestaña.
-1. Agregue los valores de publicación de YouTube copiados al perfil haciendo lo siguiente:
-
-   * En el lado derecho de la página, haga clic en **[!UICONTROL Generar formulario]** pestaña.
-   * (Opcional) Arrastre el componente etiquetado como **[!UICONTROL Encabezado de sección]** a la izquierda y suéltelo en el área del formulario.
-   * (Opcional) Haga clic en **[!UICONTROL Etiqueta de campo]** para seleccionar el componente.
-   * (Opcional) En el lado derecho de la página, en la pestaña Configuración, en el campo de texto Etiqueta de campo, introduzca `YouTube Publishing`.
-   * Haga clic en **[!UICONTROL Generar formulario]** y, a continuación, arrastre el componente etiquetado **[!UICONTROL Texto con varios valores]** y suéltelo debajo de **[!UICONTROL Publicación de YouTube]** encabezado que ha creado.
-
-   * Clic **[!UICONTROL Etiqueta de campo]** por lo tanto, el componente está seleccionado.
-   * En el lado derecho de la página, en la pestaña Configuración, pegue los valores de publicación de YouTube (valor Etiqueta de campo y Asignar a valor de propiedad) que copió anteriormente, en sus respectivos campos del formulario. Pegue el valor Choices en el campo Default Value.
-
-1. Agregue los valores de privacidad de YouTube copiados al perfil haciendo lo siguiente:
-
-   * En el lado derecho de la página, haga clic en **[!UICONTROL Generar formulario]** pestaña.
-   * (Opcional) Arrastre el componente etiquetado como **[!UICONTROL Encabezado de sección]** a la izquierda y suéltelo en el área del formulario.
-   * (Opcional) Haga clic en **[!UICONTROL Etiqueta de campo]** para seleccionar el componente.
-   * (Opcional) En el lado derecho de la página, en la pestaña Configuración, en el campo de texto Etiqueta de campo, introduzca `YouTube Privacy`.
-   * Haga clic en **[!UICONTROL Generar formulario]** y, a continuación, arrastre el componente etiquetado **[!UICONTROL Texto con varios valores]** y suéltelo debajo de **[!UICONTROL Privacidad de YouTube]** encabezado creado.
-
-   * Clic **[!UICONTROL Etiqueta de campo]** por lo tanto, el componente está seleccionado.
-   * En el lado derecho de la página, en la pestaña Configuración, pegue los valores de publicación de YouTube (valor Etiqueta de campo y Asignar a valor de propiedad) que copió anteriormente, en sus respectivos campos del formulario. Pegue el valor Choices en el campo Default Value.
-
-1. Junto a la esquina superior derecha de la página, haga clic en **[!UICONTROL Guardar]**.
-1. Aplique el perfil de metadatos de publicación de YouTube a las carpetas en las que va a cargar los vídeos. Debe tener establecidos tanto el perfil de metadatos como el perfil de vídeo.
-
-   Consulte [Perfiles de metadatos](/help/assets/metadata-config.md#metadata-profiles) y [Perfiles de vídeo](/help/assets/video-profiles.md).
-
-### Publicación de vídeos en el canal de YouTube {#publishing-videos-to-your-youtube-channel}
-
-Ahora asocia las etiquetas que agregó anteriormente a los recursos de vídeo. Este proceso permite al Experience Manager saber qué recursos publicar en el canal de YouTube.
-
->[!NOTE]
->
->Cuando se ejecuta en el modo Dynamic Media - Scene7, la publicación inmediata no se publica automáticamente en YouTube. Cuando se configura el modo Dynamic Media - Scene7, hay dos opciones de publicación entre las que elegir: **[!UICONTROL Inmediata]** o **[!UICONTROL Tras la activación]**.
->
->**[!UICONTROL Publicar inmediatamente]** significa que el recurso cargado (una vez sincronizado con IPS) se publica automáticamente en el sistema de entrega. Aunque esto se aplica a Dynamic Media, no se aplica a YouTube. Para publicar en YouTube, debe publicar mediante Experience Manager Author.
-
->[!NOTE]
->
->Para publicar contenido desde YouTube, Experience Manager utiliza el **[!UICONTROL Publicar en YouTube]** flujo de trabajo, que permite monitorizar el progreso y ver cualquier información de error.
->
->Consulte [Monitorización de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
->
->Para obtener información de progreso más detallada, puede monitorizar el registro de YouTube en replicación. Sin embargo, tenga en cuenta que esta monitorización requiere acceso de administrador.
-
-**Para publicar vídeos en su canal de YouTube:**
-
-1. En Experience Manager, vaya al recurso de vídeo que desee publicar en el canal de YouTube.
-1. Seleccione el recurso de vídeo (el conjunto de vídeos adaptable).
-1. En la barra de herramientas, haga clic en **[!UICONTROL Propiedades]**.
-1. En la pestaña Básico, debajo del encabezado Metadatos, haga clic en **[!UICONTROL Abrir cuadro de diálogo de selección]** a la derecha del campo Etiquetas.
-1. En la página Seleccionar etiquetas, vaya a las etiquetas que desee utilizar y, a continuación, seleccione una o varias etiquetas.
-
-   Recuerde que las etiquetas deben estar asociadas al canal de YouTube.
-
-1. En la esquina superior derecha de la página, haga clic en **[!UICONTROL Seleccionar]**.
-1. En la esquina superior derecha de la página de propiedades del vídeo, haga clic en **[!UICONTROL Guardar y cerrar]**.
-1. En la barra de herramientas, haga clic en **[!UICONTROL Publicación rápida]**.
-
-   Consulte también [Uso de la administración de publicaciones con Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
-
-   Si lo desea, puede comprobar el vídeo publicado en el canal de YouTube.
-
-### (Opcional) Compruebe el vídeo publicado en YouTube {#optional-verifying-the-published-video-on-youtube}
-
-Si lo desea, puede monitorizar el progreso de la publicación de YouTube (o cancelar la publicación).
-
-Consulte [Monitorización de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
-
-Los tiempos de publicación pueden variar considerablemente según numerosos factores, entre los que se incluyen el formato del vídeo de origen principal, el tamaño del archivo y el tráfico de carga. El proceso de publicación puede tardar entre unos minutos y varias horas. Además, los formatos de mayor resolución se procesan mucho más lentamente. Por ejemplo, 720p y 1080p tardan más en aparecer que 480p.
-
-Después de ocho horas, si sigue viendo un mensaje de estado que dice **[!UICONTROL Cargado (procesando; espere)]**, intente eliminar el vídeo del sitio de Adobe y cargarlo de nuevo.
-
-### Vinculación de URL de YouTube a la aplicación web {#linking-youtube-urls-to-your-web-application}
-
-Puede obtener una cadena URL de YouTube generada por Dynamic Media después de publicar el vídeo. Al copiar la URL de YouTube, esta aterriza en el Portapapeles para que pueda pegarla según sea necesario en las páginas de su sitio web o aplicación.
-
->[!NOTE]
->
->La URL de YouTube no estará disponible para copiar hasta que haya publicado el recurso de vídeo en YouTube.
-
-**Para vincular URL de YouTube a la aplicación web:**
-
-1. Vaya a *YouTube publicado* recurso de vídeo cuya URL desee copiar y, a continuación, selecciónelo.
-
-   Recuerde que las direcciones URL de YouTube solo están disponibles para copiar *después* usted tiene primero *publicado* los recursos de vídeo a YouTube.
-
-1. En la barra de herramientas, haga clic en **[!UICONTROL Propiedades]**.
-1. Haga clic en **[!UICONTROL Avanzadas]** pestaña.
-1. En el encabezado Publicación de YouTube, en la Lista de URL de YouTube, seleccione y copie el texto de la URL en el explorador web para previsualizar el recurso o añadirlo a la página de contenido web.
-
-### Cancele la publicación de vídeos para poder eliminarlos de YouTube {#unpublishing-videos-to-remove-them-from-youtube}
-
-Cuando se cancela la publicación de un recurso de vídeo en Experience Manager, el vídeo se elimina de YouTube.
-
->[!CAUTION]
->
->Si elimina un vídeo directamente desde YouTube, Experience Manager no lo tendrá en cuenta y seguirá comportándose como si el vídeo se publicara en YouTube. Cancele siempre la publicación de un recurso de vídeo de YouTube mediante Experience Manager.
-
->[!NOTE]
->
->Para eliminar contenido de YouTube, Experience Manager utiliza el **[!UICONTROL Cancelar publicación de YouTube]** flujo de trabajo, que permite monitorizar el progreso y ver cualquier información de error.
->
->Consulte [Monitorización de la codificación de vídeo y progreso de publicación en YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
-
-**Para cancelar la publicación de vídeos y eliminarlos de YouTube:**
-
-1. Desplácese hasta los recursos de vídeo cuya publicación desea cancelar del canal de YouTube.
-1. En un modo de selección de recursos, seleccione uno o varios recursos de vídeo publicados.
-1. En la barra de herramientas, haga clic en **[!UICONTROL Administrar publicación]**. Pulse el icono de tres puntos (. . .) en la barra de herramientas, así **[!UICONTROL Administrar publicación]** abre.
-1. En la página Administrar publicación, pulse **[!UICONTROL Cancelar publicación]**.
-1. En la esquina superior derecha de la página, pulse **[!UICONTROL Siguiente]**.
-1. En la esquina superior derecha de la página, pulse **[!UICONTROL Cancelar publicación]**.
-
-## Monitorización de la codificación de vídeo y progreso de publicación en YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
-
-Al cargar un nuevo vídeo en una carpeta a la que se ha aplicado la codificación de vídeo, o al publicar el vídeo en YouTube, puede monitorizar el progreso de la codificación de vídeo y la publicación en Youtube. El progreso real de publicación de YouTube solo está disponible a través de los registros. Sin embargo, su fracaso o éxito se enumera de formas adicionales descritas en el siguiente procedimiento. Además, recibirá notificaciones por correo electrónico cuando se complete o interrumpa un flujo de trabajo de publicación de YouTube o una codificación de vídeo.
-
-### Monitorización del progreso {#monitoring-progress}
-
-1. Vea el progreso de la codificación de vídeo en la carpeta de recursos:
-
-   * En la vista de tarjeta, el progreso de codificación de vídeo se muestra en el recurso en porcentaje. Si hay un error, esta información también se muestra en el recurso.
-
-   ![chlimage_1-429](assets/chlimage_1-429.png)
-
-   * En la vista de lista, el progreso de codificación de vídeo se muestra en la **[!UICONTROL Estado de procesamiento]** columna. Si hay un error, este mensaje se muestra en la misma columna.
-
-   ![chlimage_1-430](assets/chlimage_1-430.png)
-
-   Esta columna no se muestra de forma predeterminada. Para habilitar la columna, seleccione **[!UICONTROL Ver configuración]** en el menú desplegable de vistas, agregue la columna **[!UICONTROL Estado de procesamiento]** y pulse o haga clic en **[!UICONTROL Actualizar]**.
-
-   ![chlimage_1-431](assets/chlimage_1-431.png)
-
-1. Vea el progreso en los detalles del recurso. Al tocar o hacer clic en un recurso, abra el menú desplegable y seleccione **[!UICONTROL Cronología]**. Para reducirlo a actividades de flujo de trabajo como codificación o publicación en YouTube, seleccione **[!UICONTROL Flujos de trabajo]**.
-
-   ![chlimage_1-432](assets/chlimage_1-432.png)
-
-   Cualquier información del flujo de trabajo, como la codificación, se muestra en la cronología. Para la publicación en YouTube, la cronología del flujo de trabajo también incluye el nombre del canal de YouTube y la dirección URL del vídeo de YouTube. Además, verá cualquier notificación de error en la cronología del flujo de trabajo una vez completada la publicación.
-
-   >[!NOTE]
-   >
-   >Los mensajes de error/error pueden tardar mucho tiempo en registrarse finalmente debido a las diversas configuraciones del flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
-   >
-   >    * Configuración de cola de trabajos de Apache Sling
-   >    * Controlador de trabajos de proceso externo de Adobe Granite Workflow
-   >    * Cola de tiempo de espera de Granite Workflow
-
-   >
-   >Puede ajustar la variable **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** propiedades en estas configuraciones.
-
-1. Para los flujos de trabajo en curso, consulte Instancias de flujo de trabajo disponibles en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Instancias]**.
-
-   >[!NOTE]
-   >
-   >Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
-
-   ![chlimage_1-433](assets/chlimage_1-433.png)
-
-   Seleccione la instancia y pulse **[!UICONTROL Abrir historial]**.
-
-   ![chlimage_1-434](assets/chlimage_1-434.png)
-
-   Desde el área Instancias de flujo de trabajo, también puede suspender, finalizar o cambiar el nombre de los flujos de trabajo. Consulte [Administración de flujos de trabajo](/help/sites-administering/workflows-administering.md) para obtener más información.
-
-1. Para los trabajos con errores, consulte Errores de flujo de trabajo disponibles en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Errores]**. El **[!UICONTROL error de flujo de trabajo]** muestra todas las actividades de flujo de trabajo con errores.
-
-   >[!NOTE]
-   >
-   >Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
-
-   ![chlimage_1-435](assets/chlimage_1-435.png)
-
-   >[!NOTE]
-   >
-   >El mensaje de error puede tardar mucho tiempo en registrarse finalmente debido a las diversas configuraciones del flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
-   >
-   >
-   >
-   >    * Configuración de cola de trabajos de Apache Sling
-   >    * Controlador de trabajos de proceso externo de Adobe Granite Workflow
-   >    * Cola de tiempo de espera de Granite Workflow
-
-   >
-   >
-   >Puede ajustar la variable **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** propiedades en estas configuraciones.
-
-1. Para ver los flujos de trabajo completados, consulte Archivo de flujo de trabajo, disponible en **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Archivar]**. El **[!UICONTROL archivo de flujo de trabajo]** enumera todas las actividades de flujo de trabajo completadas.
-
-   >[!NOTE]
-   >
-   >Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
-
-   ![chlimage_1-436](assets/chlimage_1-436.png)
-
-1. Recibirá notificaciones por correo electrónico sobre trabajos de flujo de trabajo anulados o fallidos. Un administrador puede configurar estas notificaciones por correo electrónico. Consulte [Configurar notificaciones por correo electrónico](#configuring-e-mail-notifications).
-
-#### Configurar notificaciones por correo electrónico {#configuring-e-mail-notifications}
-
->[!NOTE]
->
->Necesita derechos administrativos para acceder a **[!UICONTROL Herramientas]** menú.
-
-La configuración de las notificaciones depende de si desea recibir notificaciones para trabajos de codificación o para trabajos de publicación de YouTube:
-
-* Para los trabajos de codificación, puede acceder a la página de configuración de todas las notificaciones por correo electrónico del flujo de trabajo del Experience Manager en **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Consola web]** y buscando... **[!UICONTROL Servicio de notificación por correo electrónico del flujo de trabajo CQ diario]**. Consulte [Configuración de notificaciones por correo electrónico en Experience Manager](/help/sites-administering/notification.md). Puede activar o desactivar las casillas de verificación de **[!UICONTROL Notificar al cancelar]** o **[!UICONTROL Notificar al finalizar]** en consecuencia.
-
-* Para trabajos de publicación de YouTube, haga lo siguiente:
-
-1. En Experience Manager, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
-1. En la página Modelos de flujo de trabajo, seleccione **[!UICONTROL Publicar en YouTube]**, y pulse **[!UICONTROL Editar]** en la barra de herramientas.
-1. Cerca de la esquina superior derecha de la página Flujo de trabajo Publicar en YouTube, pulse **[!UICONTROL Editar]**.
-1. Pase el puntero del ratón sobre el componente Carga de YouTube y, a continuación, pulse una vez para mostrar la barra de herramientas en línea.
-
-   ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
-
-1. En la barra de herramientas en línea, pulse el icono Configuración (llave). Haga clic en **[!UICONTROL Argumentos]** pestaña.
-
-   ![6_5_publishtoyoutubeworkflow-configurationicon](assets/6_5_publishtoyoutubeworkflow-configurationicon.png)
-
-1. En el cuadro de diálogo Proceso de carga de YouTube - Propiedades de la etapa, pulse el botón **[!UICONTROL Argumentos]** pestaña.
-
-   ![6_5_publishtoyoutubeworkflow-arguments-tab](assets/6_5_publishtoyoutubeworkflow-arguments-tab.png)
-
-1. Puede activar o desactivar las siguientes casillas de verificación:
-
-   * Inicio de publicación
-   * Error durante la publicación
-   * Finalización de la publicación: incluye información sobre canales y direcciones URL
-
-   Si desactiva una casilla de verificación, no recibirá la notificación por correo electrónico especificada del flujo de trabajo de publicación de YouTube.
-
-   >[!NOTE]
-   >
-   >Estos correos electrónicos son específicos de YouTube y se añaden a las notificaciones de correo electrónico genéricas del flujo de trabajo. Como resultado, puede recibir dos conjuntos de notificaciones por correo electrónico: la notificación genérica disponible en el **[!UICONTROL Servicio de notificación por correo electrónico del flujo de trabajo CQ diario]** y uno específico de YouTube, en función de los ajustes de configuración.
-
-1. Cuando haya terminado, pulse el botón situado cerca de la esquina superior derecha del cuadro de diálogo **[!UICONTROL Listo]** (marca de verificación).
-1. En la página Flujo de trabajo Publicar en YouTube, cerca de la esquina superior derecha, pulse **[!UICONTROL Sincronización]**.
+1. El servicio de asistencia al cliente de Adobe le agrega a la lista de espera de clientes de DASH en función del orden en que se envían las solicitudes.
+1. Cuando el Adobe está listo para gestionar su solicitud, el Servicio de atención al cliente se pone en contacto con usted para coordinar y establecer una fecha objetivo para la habilitación de DASH.
+1. El Servicio de atención al cliente le notifica cuando haya terminado.
+1. Cree su [ajuste preestablecido del visor de vídeo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costumbre.
 
 ## Ver informes de vídeo {#viewing-video-reports}
 
@@ -1019,7 +476,7 @@ La configuración de las notificaciones depende de si desea recibir notificacion
 >
 >Los informes de vídeo solo están disponibles cuando se ejecuta Dynamic Media en modo híbrido.
 
-Los informes de vídeo muestran varias métricas acumuladas en un tiempo determinado para ayudarle a monitorizar que los vídeos individuales y acumulados *publicados *funcionan según lo esperado. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
+Los informes de vídeo muestran varias métricas agregadas a lo largo de un tiempo específico para ayudarle a supervisar que *los vídeos individuales y agregados publicados están teniendo el rendimiento esperado. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
 
 * Inicios de vídeo
 * Tasa de finalización
@@ -1027,63 +484,63 @@ Los informes de vídeo muestran varias métricas acumuladas en un tiempo determi
 * Tiempo total en vídeo
 * Vídeos por visita
 
-Una tabla de todos *publicado* Los vídeos también se muestran para que pueda rastrear los vídeos más vistos en su sitio web en función del total de inicios de vídeo.
+Una tabla de todas *publicado* Los vídeos también se muestran para que pueda rastrear los vídeos más vistos del sitio web en función del número total de inicios de vídeo.
 
-Al pulsar un nombre de vídeo en la lista, se muestra el informe de retención de audiencia (menú desplegable) del vídeo en forma de gráfico de líneas. El gráfico muestra el número de vistas durante un momento determinado de la reproducción de vídeo. Cuando reproduce el vídeo, la barra vertical rastrea en sincronización con el indicador de tiempo del reproductor. Las caídas en los datos del gráfico de líneas indican dónde cae la audiencia debido al desinterés.
+Al tocar un nombre de vídeo en la lista, se muestra el informe de retención de audiencia (desplegable) del vídeo en forma de gráfico de líneas. El gráfico muestra el número de vistas durante un momento determinado de la reproducción del vídeo. Cuando reproduce el vídeo, la barra vertical realiza el seguimiento en sincronización con el indicador de tiempo del reproductor. Las pérdidas en los datos del gráfico de líneas indican de dónde sale la audiencia del desinterés.
 
-Si el vídeo se ha codificado fuera de Adobe Experience Manager Dynamic Media, el gráfico de retención de audiencia (menú desplegable) y los datos del porcentaje de reproducción de la tabla no están disponibles.
+Si el vídeo se ha codificado fuera de Adobe Experience Manager Dynamic Media, el gráfico de retención de audiencia (desplegable) y los datos de Porcentaje de reproducción de la tabla no están disponibles.
 
 Consulte también [Configuración de Cloud Services de Dynamic Media](/help/assets/config-dynamic.md).
 
 >[!NOTE]
 >
->Los datos de seguimiento y creación de informes se basan exclusivamente en el uso del reproductor de vídeo propio de Dynamic Media y del ajuste preestablecido del reproductor de vídeo asociado. Como tal, no puede rastrear vídeos reproducidos mediante otros reproductores de vídeo ni informar sobre ellos.
+>El seguimiento y los informes de datos se basan exclusivamente en el uso del propio reproductor de vídeo de Dynamic Media y el ajuste preestablecido de reproductor de vídeo asociado. Como tal, no puede rastrear vídeos que se reproducen mediante otros reproductores de vídeo ni crear informes de ellos.
 
-De forma predeterminada, la primera vez que se acceden a Informes de vídeo, el informe muestra los datos de vídeo a partir del primer día del mes en curso y termina con la fecha del mes actual. Sin embargo, puede anular el intervalo de fechas predeterminado especificando su propio intervalo de fechas. La próxima vez que acceda a Informes de vídeo, se utilizará el intervalo de fechas especificado.
+De forma predeterminada, la primera vez que se introduce Informes de vídeo, el informe muestra datos de vídeo a partir del primer mes del mes actual y termina con la fecha del mes actual. Sin embargo, puede anular el intervalo de fechas predeterminado especificando su propio intervalo de fechas. La próxima vez que introduzca Informes de vídeo, se utilizará el intervalo de fechas especificado.
 
-Para que los informes de vídeo funcionen correctamente, se crea automáticamente una ID de grupo de informes al configurar los Cloud Services de Dynamic Media. Al mismo tiempo, el ID del grupo de informes se inserta en el servidor de publicación para que esté disponible para la función Copiar URL al obtener una vista previa de los recursos. Sin embargo, esta funcionalidad requiere que el servidor de publicación ya esté configurado. Si el servidor de publicación no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, debe volver a la configuración de Dynamic Media Cloud y pulsar **[!UICONTROL OK]**.
+Para que los informes de vídeo funcionen correctamente, se crea automáticamente un ID de grupo de informes cuando se configuran los Cloud Services de Dynamic Media. Al mismo tiempo, la ID del grupo de informes se envía al servidor de publicación, de modo que esté disponible para la función Copiar URL cuando se previsualizan los recursos. Sin embargo, esta funcionalidad requiere que el servidor de publicación ya esté configurado. Si el servidor de publicación no está configurado, aún puede publicar para ver el informe de vídeo. Sin embargo, debe volver a la Configuración de Dynamic Media Cloud y pulsar **[!UICONTROL OK]**.
 
 **Para ver informes de vídeo:**
 
-1. En la esquina superior izquierda de Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Assets]** > **[!UICONTROL Informes de vídeo]**.
-1. En la página Informes de vídeo, realice una de las siguientes acciones:
+1. En la esquina superior izquierda del Experience Manager, pulse el logotipo del Experience Manager y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas]** (icono de martillo) > **[!UICONTROL Recursos]** > **[!UICONTROL Informes de vídeo]**.
+1. En la página Informes de vídeo , realice una de las acciones siguientes:
 
-   * Cerca de la esquina superior derecha, pulse el botón **Actualizar informe de vídeo** icono.
-Utilice Actualizar solo si la fecha de finalización del informe es el día actual. Al hacerlo, se asegura de ver el seguimiento de vídeo que se ha producido desde la última vez que se ejecutó el informe.
+   * Cerca de la esquina superior derecha, toque la **Actualizar informe de vídeo** icono.
+Utilice Actualizar solo si la fecha de finalización del informe es el día actual. Al hacerlo, se asegura de que vea el seguimiento de vídeo que se ha producido desde la última vez que ejecutó el informe.
 
-   * Cerca de la esquina superior derecha, pulse el botón **Selector de fecha** icono.
-Especifique el intervalo de fechas de inicio y finalización para el que desea obtener datos de vídeo y, a continuación, pulse **[!UICONTROL Ejecutar informe]**.
+   * Cerca de la esquina superior derecha, toque la **Selector de fechas** icono.
+Especifique el intervalo de fechas de inicio y finalización para el que desee usar datos de vídeo y, a continuación, pulse **[!UICONTROL Ejecutar informe]**.
 
-   El cuadro de grupo Métricas principales identifica varias medidas acumuladas para todos los *publicado* vídeos en el sitio.
+   El cuadro de grupo Métricas principales identifica varias medidas agregadas para todas las *publicado* vídeos en todo el sitio.
 
-1. En la tabla que muestra los vídeos más publicados, pulse un nombre de vídeo para reproducir el vídeo y también consulte el informe de retención de audiencia (menú desplegable) del vídeo.
+1. En la tabla que enumera los vídeos más publicados, pulse un nombre de vídeo para reproducir el vídeo y también consulte el informe de retención de audiencia (desplegable) del vídeo.
 
-### Vea informes de vídeo basados en un visor de vídeo que ha creado mediante el SDK de visualizador de Dynamic Media HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Ver informes de vídeo basados en un visor de vídeo creado con el SDK de visor de Dynamic Media HTML5 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-Si utiliza un visualizador de vídeo incorporado que proporciona Dynamic Media, o si ha creado un ajuste preestablecido de visualizador personalizado basado en un visualizador de vídeo incorporado, no se requieren pasos adicionales para ver informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en la API del SDK de HTML5 Viewer, siga estos pasos para asegurarse de que su visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
+Si utiliza un visualizador de vídeo incorporado proporcionado por Dynamic Media o si ha creado un ajuste preestablecido de visualizador personalizado basado en un visualizador de vídeo incorporado, no se requiere ningún paso adicional para ver los informes de vídeo. Sin embargo, si ha creado su propio visor de vídeo basado en la API del SDK del visor de HTML5, siga los siguientes pasos para asegurarse de que el visor de vídeo envía eventos de seguimiento a los informes de vídeo de Dynamic Media.
 
-Utilice el [Adobe Guía de referencia de visores de Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) y el [API de SDK de visor de HTML 5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visores de vídeo.
+Utilice la variable [Guía de referencia de visores de Dynamic Media de Adobe](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) y [API del SDK del visor HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para crear sus propios visualizadores de vídeo.
 
-**Para ver informes de vídeo basados en un visor de vídeo que ha creado mediante el SDK de Dynamic Media HTML5 Viewer:**
+**Para ver informes de vídeo basados en un visor de vídeo creado con el SDK de visor de Dynamic Media HTML5:**
 
 1. Vaya a cualquier recurso de vídeo publicado.
 1. Junto a la esquina superior izquierda de la página del recurso, en la lista desplegable, seleccione **[!UICONTROL Visualizadores]**.
-1. Seleccione cualquier ajuste preestablecido del visualizador de vídeo y copie el código incrustado.
-1. En el código incrustado de, busque la línea con lo siguiente:
+1. Seleccione cualquier ajuste preestablecido de visualizador de vídeo y copie el código incrustado.
+1. En el código incrustado, busque la línea con lo siguiente:
 
    `videoViewer.setParam("config2", "<value>");`
 
-   El `config2` El parámetro habilita el seguimiento en visores de HTML5. También es un ajuste preestablecido específico de la empresa que contiene la información de configuración de los informes de vídeo y de las configuraciones de Adobe Analytics específicas del cliente.
+   La variable `config2` habilita el seguimiento en los visualizadores de HTML5. También es un ajuste preestablecido específico de la empresa que contiene la información de configuración para los informes de vídeo y para las configuraciones de Adobe Analytics específicas del cliente.
 
    El valor correcto del parámetro config2 se encuentra tanto en el **[!UICONTROL código incrustado]** como en la función de copia de **[!UICONTROL URL]**. En la URL del comando copiar **[!UICONTROL URL]**, el parámetro que se busca es `&config2=<value>`. El valor es casi siempre `companypreset`, pero en algunos casos también puede ser `companypreset-1`, `companypreset-2`, etc.
 
 1. En el código personalizado del visor de vídeo, agregue AppMeasurementBridge .jsp a la página del visor haciendo lo siguiente:
 
-   * En primer lugar, determine si necesita el `&preset` parámetro.
+   * En primer lugar, determine si necesita la variable `&preset` parámetro.
 
-      Si la variable `config2` el parámetro es `companypreset`, sí lo tiene *no* necesidad `&preset=parameter`.
+      Si la variable `config2` el parámetro es `companypreset`, usted *not* need `&preset=parameter`.
 
-      If `config2` Si hay algo más, ajuste el parámetro preestablecido igual que `config2` parámetro. Por ejemplo, si `config2=companypreset-2`, agregue `&param2=companypreset-2` Vaya a la URL de AppMeasurementBridge.jsp.
+      If `config2` es cualquier otra cosa, establezca el parámetro preestablecido igual que la variable `config2` parámetro. Por ejemplo, si `config2=companypreset-2`, agregue `&param2=companypreset-2` a la URL de AppMeasumentBridge.jsp.
 
    * A continuación, agregue el script AppMeasurementBridge.jsp:
 
@@ -1091,13 +548,13 @@ Utilice el [Adobe Guía de referencia de visores de Dynamic Media](https://exper
 
 1. Cree el componente TrackingManager haciendo lo siguiente:
 
-   * Después de llamar a `s7sdk.Util.init();`A continuación, cree una instancia de TrackingManager para realizar el seguimiento de eventos agregando lo siguiente:
+   * Después de llamar a `s7sdk.Util.init();`, cree una instancia de TrackingManager para rastrear eventos agregando lo siguiente:
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
-   * Para conectar componentes a TrackingManager, haga lo siguiente:
+   * Conecte componentes a TrackingManager haciendo lo siguiente:
 
-      En el `s7sdk.Event.SDK_READY` controlador de eventos, adjunte el componente que desee rastrear a TrackingManager.
+      En el `s7sdk.Event.SDK_READY` controlador de eventos, adjunte el componente que desee rastrear al TrackingManager.
 
       Por ejemplo, si el componente es `videoPlayer`, agregue
 
@@ -1111,21 +568,21 @@ Utilice el [Adobe Guía de referencia de visores de Dynamic Media](https://exper
       var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
       ```
 
-   * Añada la función de seguimiento añadiendo lo siguiente:
+   * Añada la función de seguimiento agregando lo siguiente:
 
       ```
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
-   El objeto appMeasurementBridge tiene una función de seguimiento integrada. Sin embargo, puede proporcionar los suyos propios para admitir varios sistemas de seguimiento u otras funciones.
+   El objeto appMeasurementBridge tiene una función de seguimiento integrada. Sin embargo, puede proporcionar su propia compatibilidad con varios sistemas de seguimiento u otra funcionalidad.
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-## Añadir subtítulos o subtítulos a un vídeo {#adding-captions-to-video}
+## Agregar subtítulos o subtítulos cerrados a un vídeo {#adding-captions-to-video}
 
-Puede ampliar el alcance de sus vídeos a los mercados globales añadiendo subtítulos a vídeos únicos o a conjuntos de vídeos adaptables. Al añadir subtítulos opcionales, evitará la necesidad de doblar el audio o la necesidad de utilizar hablantes nativos para volver a grabar el audio para cada idioma diferente. El vídeo se reproduce en el idioma en que se grabó. Los subtítulos en idiomas extranjeros aparecen para que las personas de diferentes idiomas puedan entender la parte del audio.
+Puede ampliar el alcance de sus vídeos a mercados globales añadiendo subtítulos a vídeos individuales o a conjuntos de vídeos adaptables. Al agregar subtítulos cerrados, evita la necesidad de doblar el audio, o la necesidad de usar hablantes nativos para volver a grabar el audio para cada idioma diferente. El vídeo se reproduce en el idioma en que se grabó. Aparecen subtítulos en idiomas extranjeros para que personas de diferentes idiomas puedan entender la parte de audio.
 
-Los subtítulos opcionales también permiten una buena accesibilidad para las personas sordas o con dificultades auditivas.
+Los subtítulos también permiten una buena accesibilidad para las personas sordas o con dificultades auditivas.
 
 >[!NOTE]
 >
@@ -1133,36 +590,36 @@ Los subtítulos opcionales también permiten una buena accesibilidad para las pe
 
 Consulte también [Accesibilidad en Dynamic Media](/help/assets/accessibility-dm.md).
 
-Dynamic Media convierte los archivos de rótulo al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear e indexar el contenido para que los vídeos sean más fáciles de descubrir y dar a los clientes detalles adicionales sobre el contenido del vídeo.
+Dynamic Media convierte los archivos de rótulos al formato JSON (JavaScript Object Notation). Esta conversión significa que puede incrustar el texto JSON en una página web como una transcripción oculta pero completa del vídeo. Los motores de búsqueda pueden rastrear e indexar el contenido para que los vídeos se puedan descubrir más fácilmente y proporcionar a los clientes detalles adicionales sobre el contenido del vídeo.
 
-Consulte [Proporcionar contenido estático (que no sea de imagen)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) en el *Ayuda de la API de servicio y procesamiento de imágenes de Dynamic Media* para obtener más información sobre el uso de la función JSON en una dirección URL.
+Consulte [Proporcionar contenido estático (no de imagen)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) en el *Ayuda de la API de servicio y renderización de imágenes de Dynamic Media* para obtener más información sobre el uso de la función JSON en una URL.
 
-**Para agregar subtítulos o subtítulos al vídeo:**
+**Para agregar subtítulos o subtítulos a un vídeo:**
 
-1. Utilice una aplicación o un servicio de terceros para crear el archivo de subtítulos y rótulos de vídeo.
+1. Utilice una aplicación o servicio de terceros para crear el archivo de subtítulos o subtítulos de vídeo.
 
-   Asegúrese de que el archivo que crea sigue el estándar WebVTT (Web Video Text Tracks). La extensión del nombre del archivo de subtítulos es .vtt. Puede obtener más información sobre el estándar de subtítulos WebVTT.
+   Asegúrese de que el archivo que crea sigue el estándar WebVTT (Web Video Text Tracks). La extensión del nombre de archivo del rótulo es .vtt. Puede obtener más información sobre el estándar de subtítulos WebVTT.
 
-   Consulte [WebVTT: El formato de seguimiento de texto de vídeo web](https://w3c.github.io/webvtt/).
+   Consulte [WebVTT: Formato de seguimiento de texto de vídeo web](https://w3c.github.io/webvtt/).
 
-   Existen herramientas y servicios gratuitos y premium que puede utilizar para crear archivos de subtítulos y subtítulos fuera de Dynamic Media. Por ejemplo, para crear un archivo de subtítulos de vídeo simple sin estilo, puede utilizar la siguiente herramienta gratuita de edición y creación de subtítulos en línea:
+   Existen herramientas y servicios gratuitos y premium que puede utilizar para crear archivos de subtítulos o subtítulos fuera de Dynamic Media. Por ejemplo, para crear un archivo de subtítulos de vídeo sencillo sin estilo, puede utilizar la siguiente herramienta gratuita de edición y creación de subtítulos en línea:
 
    [Creador de subtítulos WebVTT](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
    Para obtener los mejores resultados, utilice la herramienta en Internet Explorer 9 o posterior, Google Chrome o Safari.
 
-   En la herramienta, en la variable **[!UICONTROL Introducir URL del archivo de vídeo]** , pegue la URL copiada del archivo de vídeo y haga clic en **[!UICONTROL Cargar]**. Consulte [Obtener una URL para un recurso](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) para obtener la dirección URL del propio archivo de vídeo, que puede pegar en **[!UICONTROL Introducir URL del campo de archivo de vídeo]**. Internet Explorer, Chrome o Safari pueden reproducir el vídeo de forma predeterminada.
+   En la herramienta, en la **[!UICONTROL Introducir URL del archivo de vídeo]** , pegue la dirección URL copiada del archivo de vídeo y, a continuación, haga clic en **[!UICONTROL Cargar]**. Consulte [Obtener una URL para un recurso](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) para obtener la URL del propio archivo de vídeo, que puede pegar en el **[!UICONTROL Introducir URL del campo de archivo de vídeo]**. Internet Explorer, Chrome o Safari pueden reproducir el vídeo de forma predeterminada.
 
-   Ahora siga las instrucciones en pantalla del sitio para crear y guardar el archivo WebVTT. Cuando haya terminado, copie el contenido del archivo de rótulo, péguelo en un editor de texto sin formato y guárdelo con un `.vtt` Extensión de nombre de archivo.
+   Ahora siga las instrucciones en pantalla del sitio para crear y guardar el archivo WebVTT. Cuando haya terminado, copie el contenido del archivo de rótulo y péguelo en un editor de texto sin formato y guárdelo con un `.vtt` extensión de nombre de archivo.
 
    >[!NOTE]
    >
-   >Para que los subtítulos de vídeo se admitan globalmente en varios idiomas, el estándar WebVTT requiere que cree archivos .vtt independientes y que realice llamadas a cada idioma que desee admitir.
+   >Para la compatibilidad global con subtítulos de vídeo en varios idiomas, el estándar WebVTT requiere que cree archivos .vtt y llamadas independientes para cada idioma que desee admitir.
 
-   Por lo general, debe asignar al archivo VTT de rótulo el mismo nombre que al archivo de vídeo y anexarlo a la configuración regional del idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
+   Normalmente, le interesa asignar al archivo VTT de rótulo el mismo nombre que el archivo de vídeo y añadirlo a la configuración regional del idioma, como -EN, -FR o -DE. Al hacerlo, puede ayudarle a automatizar la generación de las URL de vídeo con su sistema de administración de contenido web existente.
 
 1. En Experience Manager, cargue el archivo de subtítulos WebVTT en DAM.
-1. Vaya a *publicado* recurso de vídeo que desea asociar con el archivo de rótulo que ha cargado.
+1. Vaya a la *publicado* recurso de vídeo que desea asociar al archivo de rótulo que ha cargado.
 
    Recuerde que las direcciones URL solo están disponibles para copiarse *después* de *publicar* los recursos por primera vez.
 
@@ -1170,31 +627,31 @@ Consulte [Proporcionar contenido estático (que no sea de imagen)](https://exper
 
 1. Realice una de las siguientes acciones:
 
-   * Para obtener una experiencia de visor de vídeo emergente, pulse **[!UICONTROL URL]**. En el cuadro de diálogo URL, seleccione y copie la URL en el Portapapeles y, a continuación, pegue la URL en un editor de texto simple. Anexe la URL copiada del vídeo con la siguiente sintaxis:
+   * Para obtener una experiencia del visor de vídeo emergente, pulse **[!UICONTROL URL]**. En el cuadro de diálogo URL, seleccione y copie la dirección URL en el portapapeles y, a continuación, pase la dirección URL a un editor de texto sencillo. Añada la URL copiada del vídeo con la siguiente sintaxis:
 
       `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      Tenga en cuenta `,1` al final de la ruta de título. Inmediatamente después de `.vtt` extensión del nombre del archivo en la ruta, puede habilitar (activar) o deshabilitar (desactivar) el botón de subtítulos opcionales en la barra del reproductor de vídeo estableciendo en `,1` o `,0`, respectivamente.
+      Tenga en cuenta que `,1` al final de la ruta del rótulo. Inmediatamente después de la `.vtt` extensión de nombre de archivo en la ruta, si lo desea, puede activar o desactivar el botón de subtítulos en la barra del reproductor de vídeo configurándolo en `,1` o `,0`, respectivamente.
 
-   * Para obtener una experiencia de visor de vídeo integrada, pulse **[!UICONTROL Código incrustado]**. En el cuadro de diálogo Código incrustado, seleccione, copie el código incrustado en el Portapapeles y, a continuación, pegue el código en un editor de texto simple. Anexe el código incrustado copiado con la siguiente sintaxis:
+   * Para una experiencia de visor de vídeo incrustado, pulse **[!UICONTROL Código incrustado]**. En el cuadro de diálogo Código incrustado , seleccione y copie el código incrustado en el portapapeles y, a continuación, pegue el código en un editor de texto sencillo. Añada el código incrustado copiado con la siguiente sintaxis:
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      Tenga en cuenta `,1` al final de la ruta de título. Inmediatamente después de `.vtt` extensión del nombre del archivo en la ruta, puede habilitar (activar) o deshabilitar (desactivar) el botón de subtítulos opcionales en la barra del reproductor de vídeo estableciendo en `,1` o `,0`, respectivamente.
+      Tenga en cuenta que `,1` al final de la ruta del rótulo. Inmediatamente después de la `.vtt` extensión de nombre de archivo en la ruta, si lo desea, puede activar o desactivar el botón de subtítulos en la barra del reproductor de vídeo configurándolo en `,1` o `,0`, respectivamente.
 
-## Añadir marcadores de capítulo al vídeo {#adding-chapter-markers-to-video}
+## Agregar marcadores de capítulo a vídeo {#adding-chapter-markers-to-video}
 
-Puede facilitar la visualización y navegación de los vídeos de formulario largo añadiendo marcadores de capítulo a vídeos únicos o a conjuntos de vídeos adaptables. Cuando un usuario reproduce el vídeo, puede hacer clic en los marcadores de capítulo de la cronología del vídeo (también conocida como selección manual de vídeo) para desplazarse fácilmente a su punto de interés. O bien, pueden ir inmediatamente a nuevo contenido, demostraciones y tutoriales.
+Puede hacer que los vídeos de formulario largos sean más fáciles de ver y navegar añadiendo marcadores de capítulo a vídeos individuales o a conjuntos de vídeos adaptables. Cuando un usuario reproduce el vídeo, puede hacer clic en los marcadores de capítulo en la cronología del vídeo (también conocida como depurador de vídeo) para desplazarse fácilmente a su punto de interés. O bien, pueden ir de inmediato a contenido, demostraciones y tutoriales nuevos.
 
 >[!NOTE]
 >
->El reproductor de vídeo utilizado debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media admiten marcadores de capítulo, pero es posible que el uso de reproductores de vídeo de terceros no los admita.
+>El reproductor de vídeo que se utilice debe admitir el uso de marcadores de capítulo. Los reproductores de vídeo de Dynamic Media admiten marcadores de capítulo, pero es posible que no utilicen reproductores de vídeo de terceros.
 
-Si lo desea, puede crear y personalizar su propio visor de vídeo personalizado con capítulos en lugar de utilizar un ajuste preestablecido de visualizador de vídeo. Para obtener instrucciones sobre la creación de su propio visor de HTML5 con navegación por capítulos, en la API del SDK del visor de Adobe HTML 5, consulte el encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. Consulte la [API de SDK de visor de HTML 5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) documentación.
+Si lo desea, puede crear y personalizar su propio visor de vídeo con capítulos en lugar de usar un ajuste preestablecido de visualizador de vídeo. Para obtener instrucciones sobre la creación de su propio visor de HTML5 con navegación por capítulos, en la API del SDK de visor de Adobe HTML5, consulte el encabezado &quot;Personalización del comportamiento mediante modificadores&quot; en las clases `s7sdk.video.VideoPlayer` y `s7sdk.video.VideoScrubber`. Consulte la [API del SDK del visor HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) documentación.
 
 <!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading "Customizing Behavior Using Modifiers" under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-Puede crear una lista de capítulos para el vídeo de la misma manera que crea subtítulos. Es decir, se crea un archivo WebVTT. Sin embargo, tenga en cuenta que este archivo debe ser independiente de cualquier archivo de subtítulos WebVTT que también esté utilizando; no puede combinar subtítulos y capítulos en un archivo WebVTT.
+Puede crear una lista de capítulos para el vídeo de la misma manera que crea subtítulos. Es decir, se crea un archivo WebVTT. No obstante, tenga en cuenta que este archivo debe estar separado de cualquier archivo de subtítulos WebVTT que esté utilizando; no se pueden combinar subtítulos y capítulos en un archivo WebVTT.
 
 Puede utilizar el siguiente ejemplo como ejemplo del formato que utiliza para crear un archivo WebVTT con navegación por capítulos:
 
@@ -1216,17 +673,17 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-En el ejemplo anterior, `Chapter 1` es el identificador de referencia y es opcional. El tiempo de referencia de `00:00:000 --> 01:04:364` especifica la hora de inicio y la hora de finalización del capítulo, en `00:00:000` formato. Los tres últimos dígitos son milisegundos y pueden dejarse como `000`, si se prefiere. El título del capítulo de `The bicycle store behind it all` es la descripción real del contenido del capítulo. El identificador de referencia, el tiempo de referencia inicial y el título del capítulo aparecen en una ventana emergente del reproductor de vídeo cuando un usuario pasa el puntero del ratón sobre un punto de referencia visual en la cronología del vídeo.
+En el ejemplo anterior, `Chapter 1` es el identificador de referencia y es opcional. El tiempo de referencia de `00:00:000 --> 01:04:364` especifica la hora de inicio y la hora de finalización del capítulo, en `00:00:000` formato. Los tres últimos dígitos son milisegundos y se pueden dejar como `000`, si se prefiere. El título del capítulo de `The bicycle store behind it all` es la descripción real del contenido del capítulo. El identificador de referencia, el tiempo de referencia de inicio y el título del capítulo aparecen en una ventana emergente del reproductor de vídeo cuando un usuario pasa el puntero del ratón sobre un punto de referencia visual en la cronología del vídeo.
 
-Como está utilizando un visor de vídeo HTML5, asegúrese de que el archivo de capítulo que cree sigue el estándar WebVTT (Web Video Text Tracks). La extensión del nombre del capítulo es `.vtt`. Puede obtener más información sobre el estándar de subtítulos WebVTT.
+Como está utilizando un visor de vídeo de HTML5, asegúrese de que el archivo de capítulo que cree sigue el estándar WebVTT (Web Video Text Tracks). La extensión del nombre del archivo del capítulo es `.vtt`. Puede obtener más información sobre el estándar de subtítulos WebVTT.
 
-Consulte [WebVTT: El formato de seguimiento de texto de vídeo web](https://w3c.github.io/webvtt/)
+Consulte [WebVTT: Formato de seguimiento de texto de vídeo web](https://w3c.github.io/webvtt/)
 
-**Para agregar la navegación por capítulos de vídeo:**
+**Para agregar navegación por capítulos de vídeo:**
 
 1. Guarde el `.vtt` en la codificación UTF8 para evitar problemas con la representación de caracteres en el texto del título del capítulo.
 
-   Por lo general, desea asignar al archivo VTT del capítulo el mismo nombre que al archivo de vídeo y anexarlo con capítulos. Al hacerlo, puede ayudarle con la automatización de la generación de las direcciones URL de vídeo mediante el sistema de administración de contenido web existente.
+   Normalmente, le interesa asignar al archivo VTT de capítulo el mismo nombre que el archivo de vídeo y anexarlo con capítulos. Al hacerlo, puede ayudarle a automatizar la generación de las URL de vídeo con su sistema de administración de contenido web existente.
 1. En Experience Manager, cargue el archivo de capítulo WebVTT.
 
    Consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
@@ -1236,27 +693,27 @@ Consulte [WebVTT: El formato de seguimiento de texto de vídeo web](https://w3c.
    <table>
      <tbody>
       <tr>
-       <td>Para obtener una experiencia de visor de vídeo emergente</td>
+       <td>Para una experiencia de visor de vídeo emergente</td>
        <td>
        <ol>
-       <li>Vaya a <i>publicado </i>recurso de vídeo que desea asociar con el archivo de capítulo que ha cargado. Recuerde que las direcciones URL solo están disponibles para copiarse <i>después</i> de <i>publicar</i> los recursos por primera vez. Consulte <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicando recursos.</a></li>
-       <li>En el menú desplegable, toque o haga clic en <strong>Espectadores</strong>.</li>
-       <li>En el carril izquierdo, pulse o haga clic en el nombre del ajuste preestablecido de visualizador de vídeo. Se abrirá una vista previa del vídeo en una página independiente.</li>
+       <li>Vaya a la <i>publicado </i>recurso de vídeo que desea asociar al archivo de capítulo que ha cargado. Recuerde que las direcciones URL solo están disponibles para copiarse <i>después</i> de <i>publicar</i> los recursos por primera vez. Consulte <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicación de recursos.</a></li>
+       <li>En el menú desplegable, toque o haga clic en <strong>Visualizadores</strong>.</li>
+       <li>En el carril izquierdo, toque o haga clic en el nombre del ajuste preestablecido del visualizador de vídeo. Se abre una vista previa del vídeo en una página independiente.</li>
        <li>En el carril izquierdo, en la parte inferior, haga clic en <strong>URL</strong>.</li>
-       <li>En el cuadro de diálogo URL, seleccione y copie la URL en el Portapapeles, después pegue la URL en un editor de texto simple.</li>
-       <li>Añada la URL copiada del vídeo con la siguiente sintaxis para que pueda asociarla con la URL copiada al archivo de capítulo:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
+       <li>En el cuadro de diálogo URL, seleccione y copie la dirección URL en el portapapeles y, a continuación, pase la dirección URL a un editor de texto sencillo.</li>
+       <li>Añada la URL copiada del vídeo con la siguiente sintaxis para poder asociarla con la URL copiada al archivo de capítulo:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
       </tr>
       <tr>
-       <td>Para una experiencia de visor de vídeo integrada<br /> </td>
+       <td>Para una experiencia de visor de vídeo incrustado<br /> </td>
        <td>
        <ol>
-       <li>Vaya a <i>publicado </i>recurso de vídeo que desea asociar con el archivo de capítulo que ha cargado. Recuerde que las direcciones URL solo están disponibles para copiarse <i>después</i> de <i>publicar</i> los recursos por primera vez. Consulte <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicando recursos.</a></li>
-       <li>En el menú desplegable, toque o haga clic en <strong>Espectadores</strong>.</li>
-       <li>En el carril izquierdo, pulse o haga clic en el nombre del ajuste preestablecido de visualizador de vídeo. Se abrirá una vista previa del vídeo en una página independiente.</li>
+       <li>Vaya a la <i>publicado </i>recurso de vídeo que desea asociar al archivo de capítulo que ha cargado. Recuerde que las direcciones URL solo están disponibles para copiarse <i>después</i> de <i>publicar</i> los recursos por primera vez. Consulte <a href="/help/assets/publishing-dynamicmedia-assets.md">Publicación de recursos.</a></li>
+       <li>En el menú desplegable, toque o haga clic en <strong>Visualizadores</strong>.</li>
+       <li>En el carril izquierdo, toque o haga clic en el nombre del ajuste preestablecido del visualizador de vídeo. Se abre una vista previa del vídeo en una página independiente.</li>
        <li>En el carril izquierdo, en la parte inferior, haga clic en <strong>Incrustar</strong>.</li>
-       <li>En el cuadro de diálogo Código incrustado, seleccione, copie todo el código en el Portapapeles y péguelo en un editor de texto simple.</li>
-       <li>Anexe el código incrustado del vídeo con la siguiente sintaxis para que pueda asociarlo a la dirección URL copiada del archivo de capítulo:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
+       <li>En el cuadro de diálogo Código incrustado, seleccione y copie todo el código en el Portapapeles y, a continuación, péguelo en un editor de texto sencillo.</li>
+       <li>Añada el código incrustado del vídeo con la siguiente sintaxis para poder asociarlo a la URL copiada al archivo de capítulo:<br /> <br /> <code>videoViewer.setParam("navigation","&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;"</code></li>
        </ol> </td>
       </tr>
      </tbody>
@@ -1264,11 +721,11 @@ Consulte [WebVTT: El formato de seguimiento de texto de vídeo web](https://w3c.
 
 ## Acerca de las miniaturas de vídeo en Dynamic Media: modo Scene7 {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
-Una miniatura de vídeo es una versión de tamaño reducido de un fotograma de vídeo o un recurso de imagen que representa el vídeo para el cliente. La miniatura sirve para animar a un cliente a hacer clic en el vídeo.
+Una miniatura de vídeo es una versión reducida de un fotograma de vídeo o un recurso de imagen que representa el vídeo al cliente. La miniatura sirve para animar a un cliente a hacer clic en el vídeo.
 
-Todos los vídeos del Experience Manager deben tener una miniatura asociada; no puede eliminar una miniatura sin reemplazarla. De forma predeterminada, al cargar un vídeo en el Experience Manager, se utiliza el primer fotograma como miniatura. Sin embargo, puede personalizar la miniatura con fines de personalización de marca o búsqueda visual, por ejemplo. Al personalizar una miniatura de vídeo, puede reproducir el vídeo y pausar el fotograma que desee utilizar. También puede seleccionar un recurso de imagen que ya ha cargado y *publicado* en el administrador de recursos digitales.
+Todos los vídeos del Experience Manager deben tener una miniatura asociada; no puede eliminar una miniatura sin reemplazarla. De forma predeterminada, cuando se carga un vídeo en el Experience Manager, el primer fotograma se utiliza como miniatura. Sin embargo, puede personalizar la miniatura con fines de promoción de la marca o búsqueda visual, por ejemplo. Al personalizar una miniatura de vídeo, puede reproducir el vídeo y pausar el fotograma que desee utilizar. O bien, puede seleccionar un recurso de imagen que ya haya cargado y *publicado* en el administrador de recursos digitales.
 
-Una imagen en miniatura de vídeo personalizada que seleccione de un vídeo no se extrae y guarda en DAM como un recurso independiente y distinto. Sin embargo, una miniatura de vídeo personalizada que seleccione de un recurso de imagen existente se guarda en el JCR. La ruta del recurso seleccionado se almacena en el nodo del recurso de vídeo como en la siguiente ruta de ejemplo:
+Una imagen en miniatura de vídeo personalizada que seleccione en un vídeo no se extrae ni se guarda en DAM como un recurso independiente y distinto. Sin embargo, la miniatura de vídeo personalizada que seleccione en un recurso de imagen existente se guarda en el JCR. La ruta del recurso seleccionado se almacena en el nodo del recurso de vídeo como en la siguiente ruta de acceso de ejemplo:
 
 `/content/dam/*<folder_name*>/<*video_name*>/jcr:content/manualThumbnail`
 
@@ -1278,11 +735,11 @@ Consulte también [Acerca de las miniaturas de vídeo en Dynamic Media: modo hí
 
 ### Añadir una miniatura de vídeo personalizada {#adding-a-custom-video-thumbnail}
 
-Estos pasos solo se aplican a Dynamic Media que se ejecuta en el modo &quot;Dynamicmedia_Scene7&quot;.
+Estos pasos se aplican únicamente a Dynamic Media que se ejecuta en modo &quot;Dynamic Media_Scene7&quot;.
 
-**Para añadir una miniatura de vídeo personalizada:**
+**Para agregar una miniatura de vídeo personalizada:**
 
-1. Asegúrese de haber realizado ya lo siguiente:
+1. Asegúrese de que ya ha hecho lo siguiente:
 
    * Se ha creado una carpeta para los recursos de vídeo.
    * [Aplicar un perfil de vídeo a la carpeta](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
@@ -1290,110 +747,110 @@ Estos pasos solo se aplican a Dynamic Media que se ejecuta en el modo &quot;Dyna
    * [Se han cargado los vídeos en la carpeta](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Vaya a un recurso de vídeo cargado cuya imagen en miniatura desee cambiar.
-1. En el modo de selección de recursos desde **[!UICONTROL Vista de lista]** o **[!UICONTROL Vista de tarjeta]**, pulse el recurso de vídeo.
-1. En la barra de herramientas, pulse el botón **[!UICONTROL Propiedades]** (un círculo con una &quot;i&quot; dentro).
+1. En el modo de selección de recursos, desde **[!UICONTROL Vista de lista]** o **[!UICONTROL Vista de tarjeta]**, pulse el recurso de vídeo.
+1. En la barra de herramientas, pulse el botón **[!UICONTROL Propiedades]** (un círculo con una &quot;i&quot;).
 1. En la página Propiedades del vídeo, pulse **[!UICONTROL Cambiar miniatura]**.
-1. En la página Cambiar miniatura, realice una de las acciones siguientes:
+1. En la página Cambiar miniatura, realice una de las siguientes acciones:
 
-   * Para utilizar un fotograma del vídeo como nueva miniatura:
+   * Para utilizar un fotograma del vídeo como la nueva miniatura:
 
       * En la barra de herramientas, pulse **[!UICONTROL Seleccionar fotograma del vídeo]**.
-      * Pulse el botón Reproducir y, a continuación, pulse el botón Pausa en el fotograma que desea capturar como nueva miniatura del vídeo.
-   * Para utilizar un recurso de imagen como nueva miniatura:
+      * Pulse el botón Reproducir y, a continuación, pulse el botón Pausa del fotograma que desee capturar como la nueva miniatura del vídeo.
+   * Para utilizar un recurso de imagen como la nueva miniatura:
 
-      * En la barra de herramientas, pulse **[!UICONTROL Seleccionar una miniatura de los recursos]**.
-      * Tocar **[!UICONTROL Seleccionar miniatura]**.
-      * Vaya a un recurso de imagen previamente cargado y publicado que desee utilizar. El recurso cambia de tamaño automáticamente para servir como imagen en miniatura del vídeo.
-      * Seleccione el recurso de imagen y pulse **[!UICONTROL Seleccionar]**.
+      * En la barra de herramientas, pulse **[!UICONTROL Seleccionar miniatura de recursos]**.
+      * Toque **[!UICONTROL Seleccionar miniatura]**.
+      * Vaya a un recurso de imagen previamente cargado y publicado que desee utilizar. El recurso se cambia de tamaño automáticamente para que sirva como imagen en miniatura para el vídeo.
+      * Seleccione el recurso de imagen y, a continuación, pulse **[!UICONTROL Select]**.
 
 
-1. En la página Cambiar miniatura, pulse **[!UICONTROL Guardar cambio]**.
+1. En la página Cambiar miniatura , pulse **[!UICONTROL Guardar cambio]**.
 1. En la página Propiedades del vídeo, en la esquina superior derecha, pulse **[!UICONTROL Guardar y cerrar]**.
 
 ## Acerca de las miniaturas de vídeo en Dynamic Media: modo híbrido {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
-Puede elegir entre una de las diez imágenes en miniatura generadas automáticamente por Dynamic Media para añadirlas a su vídeo. El reproductor de vídeo muestra la miniatura seleccionada cuando se utiliza un recurso de vídeo con el componente Dynamic Media en el entorno de creación de Experience Manager Sites, Experience Manager Mobile o Experience Manager Screens. La miniatura sirve como una imagen estática que representa mejor el contenido de todo el vídeo y anima a los usuarios a hacer clic en el botón Reproducir.
+Puede elegir entre una de las diez imágenes en miniatura generadas automáticamente por Dynamic Media para añadirlas al vídeo. El reproductor de vídeo muestra la miniatura seleccionada cuando se utiliza un recurso de vídeo con el componente Dynamic Media en el entorno de creación de Experience Manager Sites, Experience Manager Mobile o Experience Manager Screens. La miniatura sirve como imagen estática que representa mejor el contenido de todo el vídeo y además anima a los usuarios a hacer clic en el botón Reproducir .
 
-En función del tiempo total del vídeo, Dynamic Media captura diez imágenes en miniatura (predeterminadas). Las imágenes se capturan al 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% y 91% en el vídeo. Las diez miniaturas persisten, lo que significa que si decide elegir una miniatura diferente más adelante, no necesita volver a generar la serie. Puede previsualizar las diez imágenes en miniatura y, a continuación, seleccionar la que desee utilizar con el vídeo. Si desea cambiar al valor predeterminado, puede utilizar el CRXDE Lite para configurar el intervalo de tiempo durante el cual se generan las imágenes en miniatura. Por ejemplo, si solo desea generar una serie de cuatro imágenes en miniatura de vídeo espaciadas uniformemente, puede configurar el intervalo de tiempo en 24 %, 49 %, 74 % y 99 %.
+En función del tiempo total del vídeo, Dynamic Media captura diez imágenes en miniatura (predeterminadas). Las imágenes se capturan al 1 %, 11 %, 21 %, 31 %, 41 %, 51 %, 61 %, 71 %, 81 % y 91 % en el vídeo. Las diez miniaturas persisten, lo que significa que si decide elegir una miniatura diferente más adelante, no es necesario volver a generar la serie. Obtenga una vista previa de las diez imágenes en miniatura y, a continuación, seleccione la que desee utilizar con el vídeo. Si desea cambiar al valor predeterminado, puede utilizar CRXDE Lite para configurar el intervalo de tiempo en el que se generan las imágenes en miniatura. Por ejemplo, si solo desea generar una serie de cuatro imágenes en miniatura con espaciado uniforme a partir del vídeo, puede configurar el tiempo de intervalo en 24 %, 49 %, 74 % y 99 %.
 
-Lo ideal es añadir una miniatura de vídeo en cualquier momento después de cargarlo, pero antes de publicarlo en el sitio web.
+Lo ideal es agregar una miniatura de vídeo en cualquier momento después de cargar el vídeo, pero antes de publicar el vídeo en su sitio web.
 
-Si lo prefiere, puede elegir cargar una miniatura personalizada para representar el vídeo en lugar de utilizar una miniatura generada por Dynamic Media. Por ejemplo, puede crear una imagen en miniatura personalizada que tenga el título del vídeo, una imagen de apertura llamativa o una imagen específica capturada del vídeo. La imagen en miniatura de vídeo personalizada que cargue debe tener una resolución máxima de 1280 x 720 píxeles (anchura mínima de 640 píxeles) y no debe superar los 2 MB.
+Si lo prefiere, puede elegir cargar una miniatura personalizada para representar el vídeo en lugar de usar una miniatura generada por Dynamic Media. Por ejemplo, puede crear una imagen en miniatura personalizada que tenga el título del vídeo, una imagen de apertura llamativa o una imagen específica capturada del vídeo. La imagen en miniatura del vídeo personalizado que cargue debe tener una resolución máxima de 1280 x 720 píxeles (anchura mínima de 640 píxeles) y no debe superar los 2 MB.
 
 Consulte también [Acerca de las miniaturas de vídeo en Dynamic Media: modo Scene7](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
-### Añadir una miniatura de vídeo {#adding-a-video-thumbnail}
+### Adición de una miniatura de vídeo {#adding-a-video-thumbnail}
 
-Estos pasos solo se aplican a Dynamic Media que se ejecuta en modo híbrido.
+Estos pasos se aplican únicamente a Dynamic Media que se ejecuta en modo híbrido.
 
-**Para añadir una miniatura de vídeo:**
+**Para agregar una miniatura de vídeo:**
 
-1. Vaya a un recurso de vídeo cargado en el que desee agregar una miniatura de vídeo.
-1. En el modo de selección de recursos, ya sea desde la vista de lista o la vista de tarjeta, pulse el recurso de vídeo.
-1. En la barra de herramientas, pulse el botón **[!UICONTROL Ver propiedades]** (un círculo con una &quot;i&quot; dentro).
+1. Vaya a un recurso de vídeo cargado que quiera agregar una miniatura de vídeo.
+1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, pulse el recurso de vídeo.
+1. En la barra de herramientas, pulse el botón **[!UICONTROL Ver propiedades]** (un círculo con una &quot;i&quot;).
 1. En la página Propiedades del vídeo, pulse **[!UICONTROL Cambiar miniatura]**.
-1. En la página Cambiar miniatura, en la barra de herramientas, pulse **[!UICONTROL Seleccionar fotograma]**.
+1. En la página Cambiar miniatura, en la barra de herramientas, pulse **[!UICONTROL Seleccionar marco]**.
 
-   Dynamic Media genera una serie de imágenes en miniatura a partir del vídeo, en función del intervalo de tiempo predeterminado o del intervalo de tiempo que haya personalizado.
+   Dynamic Media genera una serie de imágenes en miniatura a partir del vídeo, en función del intervalo de tiempo o intervalo de tiempo predeterminado que haya personalizado.
 
-1. Previsualice las imágenes en miniatura generadas y, a continuación, seleccione la que desee añadir al vídeo.
-1. Tocar **[!UICONTROL Guardar cambio]**.
+1. Previsualice las imágenes en miniatura generadas y, a continuación, seleccione la que desee agregar al vídeo.
+1. Toque **[!UICONTROL Guardar cambio]**.
 
-   La imagen en miniatura del vídeo se actualiza para utilizar la miniatura seleccionada. Si posteriormente decide cambiar la imagen en miniatura, puede volver a la **[!UICONTROL Cambiar miniatura]** y seleccione una nueva.
+   La imagen en miniatura del vídeo se actualiza para usar la miniatura seleccionada. Si posteriormente decide cambiar la imagen en miniatura, puede volver a la **[!UICONTROL Cambiar miniatura]** y seleccione una nueva.
 
-   Si ha configurado nuevos intervalos de tiempo predeterminados o ha cargado un nuevo vídeo para reemplazar el vídeo existente, pida a Dynamic Media que vuelva a generar las miniaturas.
+   Si ha configurado nuevos intervalos de tiempo predeterminados o ha cargado un nuevo vídeo para reemplazar el vídeo existente, haga que Dynamic Media vuelva a generar las miniaturas.
 
    Consulte [Configure el intervalo de tiempo predeterminado en el que se generan las miniaturas de vídeo](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
 #### Configure el intervalo de tiempo predeterminado en el que se generan las miniaturas de vídeo {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
-Al configurar y guardar el nuevo intervalo de tiempo predeterminado, el cambio se aplica automáticamente solo a los vídeos que cargue en el futuro. No aplica automáticamente el nuevo valor predeterminado a los vídeos que ha cargado anteriormente. Para los vídeos existentes, debe regenerar las miniaturas.
+Cuando configura y guarda el nuevo intervalo de tiempo predeterminado, el cambio se aplica automáticamente solo a los vídeos que cargue en el futuro. No aplica automáticamente el nuevo valor predeterminado a los vídeos que ha cargado anteriormente. Para los vídeos existentes, debe volver a generar las miniaturas.
 
-Consulte [Añadir una miniatura de vídeo](#adding-a-video-thumbnail).
+Consulte [Adición de una miniatura de vídeo](#adding-a-video-thumbnail).
 
-**Para configurar el intervalo de tiempo predeterminado para la generación de miniaturas de vídeo:**
+**Para configurar el intervalo de tiempo predeterminado en el que se generan las miniaturas de vídeo:**
 
-1. En Experience Manager, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. En el Experience Manager, pulse **[!UICONTROL Herramientas]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
-1. En la página CRXDE Lite, en el panel Directorio de la izquierda, navegue hasta `o etc/dam/imageserver/configuration/jcr:content/settings.`
+1. En la página CRXDE Lite, en el panel de directorio de la izquierda, vaya a `o etc/dam/imageserver/configuration/jcr:content/settings.`
 
-   si el panel directorio no está visible, pulse el icono >> a la izquierda de la pestaña Inicio.
+   si el panel de directorio no está visible, pulse el icono >> a la izquierda de la pestaña Inicio .
 
-1. En la pestaña Propiedades del panel inferior derecho, pulse dos veces `thumbnailtime`.
-1. En el **[!UICONTROL Editar tiempo de miniatura]** , utilice los campos de texto para introducir valores de intervalo como porcentajes.
+1. En el panel inferior derecho, en la ficha Propiedades, pulse dos veces `thumbnailtime`.
+1. En el **[!UICONTROL Editar tiempo de miniaturas]** , utilice los campos de texto para introducir valores de intervalo como porcentajes.
 
-   * Pulse el icono del signo más (+) si desea agregar uno o más campos de valor de intervalo. Si es necesario, desplácese hasta la parte inferior del cuadro de diálogo para ver el icono.
+   * Pulse el icono de signo más (+) si desea añadir uno o varios campos de valor de intervalo. Si es necesario, desplácese hasta la parte inferior del cuadro de diálogo para ver el icono.
    * Pulse el icono de signo menos (-) a la derecha de un campo de valor de intervalo si desea eliminarlo de la lista.
-   * Pulse el icono de flecha arriba y el icono de flecha abajo si desea reordenar los valores del intervalo.
+   * Pulse el icono de flecha hacia arriba y el icono de flecha hacia abajo si desea reordenar los valores de intervalo.
 
-1. Tocar **[!UICONTROL OK]** y vuelva a la pestaña Propiedades.
-1. Cerca de la esquina superior izquierda de la página CRXDE Lite, pulse **[!UICONTROL Guardar todo]** y, a continuación, pulse el icono Volver a inicio en la esquina superior izquierda para volver a Experience Manager.
+1. Toque **[!UICONTROL OK]** y vuelva a la ficha Propiedades .
+1. Cerca de la esquina superior izquierda de la página CRXDE Lite, pulse **[!UICONTROL Guardar todo]** y, a continuación, pulse el icono Volver a la página de inicio en la esquina superior izquierda para volver al Experience Manager.
 
-   Consulte [Añadir una miniatura de vídeo](#adding-a-video-thumbnail).
+   Consulte [Adición de una miniatura de vídeo](#adding-a-video-thumbnail).
 
 ### Añadir una miniatura de vídeo personalizada {#adding-a-custom-video-thumbnail-1}
 
-Estos pasos solo se aplican a Dynamic Media que se ejecuta en modo híbrido.
+Estos pasos se aplican únicamente a Dynamic Media que se ejecuta en modo híbrido.
 
-**Para añadir una miniatura de vídeo personalizada:**
+**Para agregar una miniatura de vídeo personalizada:**
 
-1. Vaya a un recurso de vídeo cargado al que desee agregar una miniatura de vídeo personalizada.
-1. En el modo de selección de recursos, ya sea desde la vista de lista o la vista de tarjeta, pulse el recurso de vídeo.
-1. En la barra de herramientas, pulse el botón **[!UICONTROL Ver propiedades]** (un círculo con una &quot;i&quot; dentro).
+1. Vaya a un recurso de vídeo cargado que quiera agregar una miniatura de vídeo personalizada.
+1. En el modo de selección de recursos, ya sea en la vista de lista o en la vista de tarjeta, pulse el recurso de vídeo.
+1. En la barra de herramientas, pulse el botón **[!UICONTROL Ver propiedades]** (un círculo con una &quot;i&quot;).
 1. En la página Propiedades del vídeo, pulse **[!UICONTROL Cambiar miniatura]**.
 1. En la página Cambiar miniatura, en la barra de herramientas, pulse **[!UICONTROL Cargar nueva miniatura]**.
-1. Vaya a la imagen en miniatura que desee utilizar, selecciónela y pulse **[!UICONTROL Abrir]** para empezar a cargar la imagen en el Experience Manager. Después de la carga, asegúrese de publicar la imagen.
+1. Vaya a la imagen en miniatura que desee usar, selecciónela y, a continuación, pulse **[!UICONTROL Apertura]** para empezar a cargar la imagen en el Experience Manager. Después de la carga, asegúrese de publicar la imagen.
 1. Una vez que haya cargado y publicado correctamente la imagen, en la página Cambiar miniatura, pulse **[!UICONTROL Guardar cambios]**.
 
-   La miniatura personalizada se añadirá al vídeo.
+   La miniatura personalizada se añade al vídeo.
 
-## Cambio de la URL de Dynamic Media para los recursos de Dynamic Media {#manifest-urls}
+## Cambiar la URL de Dynamic Media para los recursos de Dynamic Media {#manifest-urls}
 
-Los vídeos procesados en Dynamic Media se pueden utilizar mediante visores predeterminados y también accediendo directamente a las direcciones URL del manifiesto y reproduciéndolas a través de sus propios visores personalizados. A continuación se muestra la API para recuperar las URL de manifiesto de un vídeo.
+Los vídeos procesados en Dynamic Media se pueden utilizar mediante visores integrados, así como accediendo directamente a las direcciones URL de manifiesto y reproduciéndolos a través de sus propios visores personalizados. La siguiente es la API para recuperar direcciones URL de manifiesto para un vídeo.
 
-### Acerca de la API de getVideoManifestURI
+### Acerca de la API getVideoManifestURI
 
-El `getVideoManifestURI`La API se expone a través de c`q-scene7-api:com.day.cq.dam.scene7.api` y se pueden utilizar para generar las siguientes direcciones URL de manifiesto:
+La variable `getVideoManifestURI`La API se expone a través de c`q-scene7-api:com.day.cq.dam.scene7.api` y se pueden usar para generar las siguientes direcciones URL de manifiesto:
 
 ```java
 /**   
@@ -1411,38 +868,38 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 
 #### Parámetros de API getVideoManifestURI
 
-Esta API emplea los tres parámetros siguientes:
+Esta API incorpora los tres parámetros siguientes:
 
 | Parámetro | Descripción |
 | --- | --- |
 | `resource` | El recurso correspondiente al vídeo que Dynamic Media ha introducido. |
-| `manifestType` | Puede ser `ManifestType.DASH` o `ManifestType.HLS` |
-| `onlyIfPublished` | Se establece en true en caso de que el URI de manifiesto se genere solo si está publicado y disponible en el nivel de envío. |
+| `manifestType` | Puede: `ManifestType.DASH` o `ManifestType.HLS` |
+| `onlyIfPublished` | Se establece en true en caso de que el uri de manifiesto se genere solo si se publica y está disponible en el nivel de entrega. |
 
-Para recuperar las direcciones URL del manifiesto para los vídeos mediante el método anterior, agregue una [perfil de codificación de vídeo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) a una carpeta &quot;cargar vídeos&quot;. Dynamic Media procesa estos vídeos en función de las codificaciones encontradas en el archivo de codificación de vídeo asignado a la carpeta. Ahora puede invocar la API anterior para recuperar las URL de manifiesto para los vídeos cargados.
+Para recuperar las direcciones URL de manifiesto para vídeos con el método anterior, agregue una [perfil de codificación de vídeo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) a una carpeta &quot;cargar vídeos&quot;. Dynamic Media procesa estos vídeos en función de las codificaciones que se encuentran en el archivo de codificación de vídeo asignado a la carpeta . Ahora puede invocar la API anterior para recuperar las URL de manifiesto de los vídeos cargados.
 
-### Escenarios de error
+### Situaciones de error
 
-La API devuelve un valor nulo si hay errores. Las excepciones se registran en los registros de errores del Experience Manager. Todos estos errores registrados comienzan con `Could not generate Video Manifest URI`. Los siguientes escenarios pueden provocar estos errores:
+La API devuelve nulo si hay errores. Las excepciones se registran en los registros de errores del Experience Manager. Todos estos errores registrados empiezan con `Could not generate Video Manifest URI`. Los siguientes escenarios pueden provocar estos errores:
 
-* Un `IllegalArgumentException` se registra para cualquiera de las siguientes opciones:
+* Un `IllegalArgumentException` se registra para cualquiera de los siguientes elementos:
 
-   * El `resource` El parámetro pasado es nulo.
-   * El `resource` El parámetro pasado no es un vídeo.
-   * El `manifestType` El parámetro pasado es nulo.
-   * El `onlyIfPublished` El parámetro se pasa como true, pero el vídeo no se publica.
-   * El vídeo no se ha ingerido utilizando un conjunto de vídeos adaptable de Dynamic Media.
+   * La variable `resource` el parámetro pasado es nulo.
+   * La variable `resource` parámetro pasado no es un vídeo.
+   * La variable `manifestType` el parámetro pasado es nulo.
+   * La variable `onlyIfPublished` se pasa como true, pero el vídeo no se publica.
+   * El vídeo no se incorporó mediante un conjunto de vídeos adaptables de Dynamic Media.
 
-* `IOException` se registra cuando hay un problema de conexión con Dynamic Media.
-* `UnsupportedOperationException` se registra cuando un `manifestType` el parámetro pasado es `ManifestType.DASH`, mientras que el vídeo no se ha procesado con el formato DASH.
+* `IOException` se registra cuando hay un problema de conexión a Dynamic Media.
+* `UnsupportedOperationException` se registra cuando una `manifestType` parámetro pasado es `ManifestType.DASH`, mientras que el vídeo no se ha procesado con formato DASH.
 
-A continuación se muestra un ejemplo de la API anterior que utiliza servlets escritos en *HTTPWhiteBoard* especificación. Seleccione cada pestaña para la sintaxis del código.
+El siguiente es un ejemplo de la API anterior que utiliza servlets escritos en *Tablero blanco de TPWite* especificación. Seleccione cada pestaña para la sintaxis del código.
 
 >[!BEGINTABS]
 
->[!TAB Agregar dependencia en pom.xml]
+>[!TAB Añadir dependencia en pom.xml]
 
-+++**Agregar dependencia en pom.xml**
++++**Añadir dependencia en pom.xml**
 
 ```java
 dependency> 
@@ -1587,7 +1044,7 @@ public final class Constants {
 
 +++**ServletContext**
 
-Monte el servlet anterior mediante una `servletContext`. El siguiente es un ejemplo de `servletContext`.
+Monte el servlet anterior utilizando un `servletContext`. El siguiente es un ejemplo de `servletContext`.
 
 ```java
 public class DMSampleApiHttpContext extends ServletContextHelper { 
@@ -1695,29 +1152,29 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 
 >[!ENDTABS]
 
-### Usar el servlet de ejemplo
+### Uso del servlet de ejemplo
 
 Para invocar el servlet, realice una `GET` operación en `/dmSample/dynamicmedia/video/manifestUrl`. Se pasan los siguientes parámetros de consulta:
 
 | Parámetro de consulta | Descripción |
 | --- | --- |
-| `assetPath` | Obligatorio. La ruta al vídeo para el que `manifestUrl` se genera. |
-| `manifestType` | Opcional. El parámetro puede ser DASH o HLS. Si no se pasa, el valor predeterminado es GUIÓN. |
+| `assetPath` | Obligatorio. La ruta al vídeo para la que `manifestUrl` se genera. |
+| `manifestType` | Opcional. El parámetro puede ser DASH o HLS. Si no se pasa, el valor predeterminado es DASH. |
 | `onlyIfPublished` | Opcional. Si se pasa, la variable `manifestUrl` solo se devuelve si se publica el vídeo. |
 
 En este ejemplo, supongamos la siguiente configuración:
 
-* La empresa está `samplecompany`.
+* La empresa es `samplecompany`.
 * La instancia de creación es `http://sample-aem-author.com`.
-* La carpeta `/content/dam/video-example` tiene aplicado un perfil de codificación de vídeo.
-* El vídeo `scenery.mp4` se ha cargado en la carpeta `/content/dam/video-example`.
+* La carpeta `/content/dam/video-example` tiene un perfil de codificación de vídeo aplicado.
+* El vídeo `scenery.mp4` se carga en la carpeta `/content/dam/video-example`.
 
 Puede invocar el servlet de las siguientes maneras:
 
 | Tipo | Descripción |
 | :--- | --- |
-| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>En caso de que la entrega DASH esté habilitada:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>En caso de que la entrega DASH esté deshabilitada:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
-| GUIÓN | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>En caso de que la entrega DASH esté habilitada:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>En caso de que la entrega DASH esté deshabilitada:<br>`{}` |
-| Error: la ruta del recurso es incorrecta | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>En caso de que el envío DASH esté habilitado:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>En caso de que el envío DASH esté desactivado:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
+| DASH | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>En caso de que el envío DASH esté habilitado:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>En caso de que el envío DASH esté desactivado:<br>`{}` |
+| Error: la ruta de acceso del recurso es incorrecta | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
 
 
