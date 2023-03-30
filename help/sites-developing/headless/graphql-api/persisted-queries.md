@@ -1,7 +1,7 @@
 ---
 title: Consultas persistentes de GraphQL
 description: Aprenda a mantener las consultas de GraphQL en Adobe Experience Manager para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método de GET HTTP y la respuesta se puede almacenar en caché en las capas de Dispatcher y CDN, lo que a la larga mejora el rendimiento de las aplicaciones cliente.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: d87b226d846c6d144e8dfe0b06ec4c296edcad05
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 72%
@@ -266,7 +266,7 @@ Se recomiendan las consultas persistentes, ya que se pueden almacenar en caché 
 De forma predeterminada, AEM invalidará la caché en función de una definición de tiempo de vida (TTL). Estos TTL se pueden definir mediante los siguientes parámetros. Se puede acceder a estos parámetros de varias formas, con variaciones en los nombres según el mecanismo utilizado:
 
 | Tipo de caché | [Encabezado HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configuración de OSGi  |
-|--- |--- |--- |--- |--- |
+|--- |--- |--- |--- |
 | Explorador | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | La red de distribución de contenido (CDN) | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
 | La red de distribución de contenido (CDN) | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` |
