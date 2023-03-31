@@ -1,5 +1,5 @@
 ---
-title: Tag Essentials
+title: Aspectos básicos de las etiquetas
 seo-title: Tag Essentials
 description: Información general de etiquetas
 seo-description: Tag overview
@@ -10,28 +10,26 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '252'
 ht-degree: 3%
 
 ---
 
-# Tag Essentials {#tag-essentials}
+# Aspectos básicos de las etiquetas {#tag-essentials}
 
-Cuando los componentes de AEM Communities están configurados con el etiquetado habilitado, los miembros de la comunidad pueden etiquetar el contenido que publican en el entorno de publicación.
+Cuando los componentes de AEM Communities se configuran con el etiquetado habilitado, los miembros de la comunidad pueden etiquetar el contenido que publican en el entorno de publicación.
 
 La infraestructura subyacente para las etiquetas aplicadas en el entorno de publicación es la misma que para las etiquetas aplicadas al contenido en el entorno de creación, como páginas y recursos:
 
-* Consulte [Administración de etiquetas](../../help/sites-administering/tags.md) y [Etiquetado del contenido generado por el usuario](tag-ugc.md) (UGC) para obtener información sobre cómo crear y administrar etiquetas.
+* Consulte [Administración de etiquetas](../../help/sites-administering/tags.md) y [Etiquetado del contenido generado por el usuario](tag-ugc.md) (UGC) para obtener información sobre la creación y administración de etiquetas.
 
-* Consulte [Etiquetado para desarrolladores](../../help/sites-developing/tags.md) para obtener información acerca de [marco de etiquetado](../../help/sites-developing/framework.md) además de incluir y ampliar etiquetas en [aplicaciones personalizadas](../../help/sites-developing/building.md).
+* Consulte [Etiquetado para desarrolladores](../../help/sites-developing/tags.md) para obtener información sobre la variable [marco de etiquetado](../../help/sites-developing/framework.md) , así como la inclusión y ampliación de etiquetas en [aplicaciones personalizadas](../../help/sites-developing/building.md).
 
-* Consulte [Uso de Social Tag Cloud](tagcloud.md) para obtener información para los autores sobre cómo agregar una `social tag cloud` Componente a una página para resaltar las etiquetas aplicadas a UGC en el entorno de publicación.
+* Consulte [Uso de la nube de etiquetas social](tagcloud.md) para obtener información para los autores sobre cómo añadir un `social tag cloud` a una página para resaltar las etiquetas aplicadas a UGC en el entorno de publicación.
 
-* Consulte [Recursos de habilitación de etiquetas](tag-resources.md) para obtener información sobre los recursos de etiquetado para catálogos.
-
-El etiquetado de UGC puede habilitarse al configurar una [sitio comunitario](sites-console.md#tagging) o una de las siguientes funciones:
+El etiquetado de UGC puede estar habilitado al configurar un [sitio de la comunidad](sites-console.md#tagging) o una de las siguientes características:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -39,7 +37,7 @@ El etiquetado de UGC puede habilitarse al configurar una [sitio comunitario](sit
 * [Foro](forum.md)
 * [P y R](working-with-qna.md)
 
-## Essentials para el lado del cliente {#essentials-for-client-side}
+## Elementos esenciales para el cliente {#essentials-for-client-side}
 
 ### Nube de etiquetas social {#social-tag-cloud}
 
@@ -50,11 +48,11 @@ El etiquetado de UGC puede habilitarse al configurar una [sitio comunitario](sit
    <td>social/commons/components/hbs/tagcloud</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
    <td>cq.social.hbs.tagcloud</td>
   </tr>
   <tr>
@@ -67,23 +65,23 @@ El etiquetado de UGC puede habilitarse al configurar una [sitio comunitario](sit
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td>Consulte <a href="tagcloud.md">Uso de Social Tag Cloud</a></td>
+   <td>Consulte <a href="tagcloud.md">Uso de la nube de etiquetas social</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizaciones del lado del cliente](client-customize.md)
 
-## Essentials para servidor {#essentials-for-server-side}
+## Elementos esenciales para el servidor {#essentials-for-server-side}
 
-* [API de nube de etiquetas social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [API de Social Tag Cloud](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Administrador de etiquetas social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Administrador de etiquetas de Social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
 ## Búsqueda de etiquetas {#tag-searching}
 
-A partir de [paquete de funciones 1](deploy-communities.md#latestfeaturepack) (FP1), la búsqueda de etiquetas se realiza mediante [títulos de etiquetas](../../help/sites-developing/framework.md#tag-characteristics).
+A partir de [paquete de características 1](deploy-communities.md#latestfeaturepack) (FP1), la búsqueda de etiquetas se realiza utilizando [títulos de etiquetas](../../help/sites-developing/framework.md#tag-characteristics).
 
 Antes de FP1, la búsqueda se realizaba mediante [id de etiqueta](../../help/sites-developing/framework.md#tagid).
