@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 7%
+source-wordcount: '1178'
+ht-degree: 8%
 
 ---
 
@@ -62,7 +62,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
   <tr>
    <td><strong>Etapa 0</strong></td>
    <td>Analizar el flujo de solicitud</td>
-   <td><p>Se puede utilizar el análisis de solicitud HTTP estándar en el navegador para analizar el flujo de solicitudes. Para obtener más información sobre cómo realizar este análisis en Chrome, consulte:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
+   <td><p>Se puede utilizar el análisis de solicitud HTTP estándar en el navegador para analizar el flujo de solicitudes. Para obtener más información sobre cómo realizar este análisis en Chrome, consulte:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Etapa 2</strong></td>
@@ -97,7 +97,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
   <tr>
    <td><strong>Etapa 8</strong></td>
    <td>¿La lentitud se puede reproducir con una instancia local?</td>
-   <td><br /> <p>Uso <a href="/help/sites-developing/tough-day.md">Día duro</a> para replicar las condiciones del "mundo real" desde las instancias de producción. Si este escenario no es realista para el espacio de desarrollo, asegúrese de probar la instancia de producción (o una instancia de ensayo idéntica) en un contexto de red diferente.<br /> </p> </td>
+   <td><br /> <p>Uso <a href="/help/sites-developing/tough-day.md">Día duro</a> para replicar condiciones "reales" de las instancias de producción. Si este escenario no es realista para el espacio de desarrollo, asegúrese de probar la instancia de producción (o una instancia de ensayo idéntica) en un contexto de red diferente.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Etapa 9</strong></td>
@@ -212,7 +212,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Servicio de sincronización de recursos</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Varias instancias de DAM</a></li>
-     <li>Artículos sobre consejos de rendimiento <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a> y <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a>.<br /> </li>
+     <li>Artículo de consejos de rendimiento <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -228,7 +228,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
   <tr>
    <td><strong>Etapa 31</strong></td>
    <td>Usar CDN delante de Dispatcher</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn">Utilizar Dispatcher con una CDN</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es#using-dispatcher-with-a-cdn">Utilizar Dispatcher con una CDN</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Etapa 32</strong></td>
@@ -240,11 +240,11 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
    <td>Hacer que las solicitudes se almacenen en caché</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">Configuración general de Dispatcher</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es">Configuración general de Dispatcher</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">Configuración de la caché de Dispatcher</a></li>
     </ol> <p>Cómo mejorar la proporción de caché; hacer que las solicitudes se puedan almacenar en caché (prácticas recomendadas de Dispatcher)</p> <p>Además, tenga en cuenta los siguientes ajustes para optimizar las configuraciones de almacenamiento en caché<br /> </p>
     <ol>
-     <li>Establezca una regla de no caché para solicitudes HTTP que no sean de GET</li>
+     <li>Establezca una regla de no caché para una solicitud HTTP que no sea de GET</li>
      <li>Configurar cadenas de consulta que no se pueden almacenar en caché</li>
      <li>No almacene en caché las URL con extensiones que faltan</li>
      <li>Encabezados de autenticación de caché (posible desde la versión 4.1.10 de Dispatcher)</li>
@@ -277,7 +277,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
   <tr>
    <td><strong>Etapa 39</strong></td>
    <td>Utilice la preconexión para reducir la sobrecarga de conexión</td>
-   <td>Consulte la sesión de Gem anterior. Además, la documentación adicional se preconecta en W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
+   <td>Consulte la sesión de Gem anterior. Además, documentación adicional previa a la conexión en W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
   </tr>
   <tr>
    <td><strong>Pasos 40 y 41</strong><br /> </td>
