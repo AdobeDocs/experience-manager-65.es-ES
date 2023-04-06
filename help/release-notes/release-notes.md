@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Busque información sobre la versión, novedades, procedimientos de instalación y una lista detallada de cambios para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: ea90bd913b437a564fb50e01af7719510fa22e74
+source-git-commit: 99a2167fa1eaee8111ad4e3bd7cdd36ad47a9a4c
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2705'
 ht-degree: 3%
 
 ---
@@ -226,7 +226,11 @@ Para obtener instrucciones para instalar el Service Pack en AEM Forms, consulte 
 
 ### Instalación del paquete de índice de GraphQL para fragmentos de contenido de Experience Manager {#install-aem-graphql-index-add-on-package}
 
-Los clientes que utilicen GraphQL deben instalar la variable [AEM fragmento de contenido con el paquete de índice de GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip). Esto les permite añadir la definición de índice necesaria en función de las funciones que realmente utilizan.
+Los clientes que utilicen GraphQL deben instalar la variable [AEM fragmento de contenido con el paquete de índice de GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip).
+
+Esto le permite añadir la definición de índice necesaria en función de las funciones que realmente utilizan.
+
+Si no se instala este paquete, pueden producirse consultas de GraphQL lentas o fallidas.
 
 >[!NOTE]
 >
