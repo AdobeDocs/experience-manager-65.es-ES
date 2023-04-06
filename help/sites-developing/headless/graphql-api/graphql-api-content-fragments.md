@@ -3,9 +3,9 @@ title: API de GraphQL de AEM para su uso con fragmentos de contenido
 description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: ea90bd913b437a564fb50e01af7719510fa22e74
+source-git-commit: cee709161100db6597bdb18ca03b3130d9e242f1
 workflow-type: tm+mt
-source-wordcount: '3224'
+source-wordcount: '3225'
 ht-degree: 89%
 
 ---
@@ -22,12 +22,6 @@ El uso de la API de GraphQL en AEM permite la entrega eficiente de fragmentos de
 * Garantiza que la entrega se limite a los requisitos específicos,
 * Permite la entrega masiva de exactamente lo que se necesita para procesar como respuesta a una sola consulta de API.
 
->[!CAUTION]
->
->Los clientes que utilicen GraphQL deben instalar el fragmento de contenido AEM con el paquete de índice de GraphQL 1.0.5.
->
->Consulte la [Notas de la versión](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) para obtener más información.
-
 >[!NOTE]
 >
 >GraphQL se utiliza actualmente en dos situaciones (independientes) en Adobe Experience Manager (AEM):
@@ -35,6 +29,10 @@ El uso de la API de GraphQL en AEM permite la entrega eficiente de fragmentos de
 >* [AEM Commerce consume datos de una plataforma de Commerce a través de GraphQL](/help/commerce/cif/integrating/magento.md).
 >* Los fragmentos de contenido de AEM trabajan junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar) para ofrecer contenido estructurado para su uso en aplicaciones.
 
+
+## Requisitos previos {#prerequisites}
+
+Los clientes que utilicen GraphQL deben instalar el fragmento de contenido AEM con el paquete de índice de GraphQL 1.0.5. Consulte la [Notas de la versión](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) para obtener más información.
 
 ## La API de GraphQL {#graphql-api}
 
@@ -130,7 +128,7 @@ Aunque GraphQL también admite peticiones GET, estas pueden alcanzar límites (p
 
 ## Interfaz de GraphiQL {#graphiql-interface}
 
-Implementación de la [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) está disponible para su uso con AEM GraphQL.
+Implementación de la norma [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) está disponible para su uso con AEM GraphQL.
 
 >[!NOTE]
 >
