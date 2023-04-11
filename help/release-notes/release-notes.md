@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Busque información sobre la versión, novedades, procedimientos de instalación y una lista detallada de cambios para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
+source-git-commit: a2fa4eacf1b39f185fdf46581ca7c5dcc8083969
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2967'
 ht-degree: 3%
 
 ---
@@ -88,7 +88,7 @@ Consulte [Habilitar DASH en su cuenta](/help/assets/video.md#enable-dash).
 
 ### [!DNL Forms] Correcciones {#forms-fixes-6516}
 
-* Al utilizar un paso Asignar tarea** para enviar una notificación para una tarea asignada, se envían dos correos electrónicos en lugar de uno al individuo asignado. (NPR-40078)
+* Al usar un **Asignar tarea** para enviar una notificación para una tarea asignada, se envían dos correos electrónicos en lugar de uno al individuo asignado. (NPR-40078)
 * Cuando un usuario oculta los encabezados de tabla, anula la configuración del ancho de columna establecido anteriormente y todas las columnas mantienen el mismo ancho. (NPR-40063)
 * En caso de cambiar la contraseña predeterminada del usuario administrador de `admin`, mientras realiza la `Prepare Adobe Experience Manager Server For DSC deployment` compruebe el paquete de servicio JEE de AEM Forms que falla. (NPR-40062), (NPR-39387)
 * Las API de OutputService y AssemblerService no pueden convertir el formulario de PDF a PDF/A. (NPR-39990)
@@ -102,6 +102,18 @@ Consulte [Habilitar DASH en su cuenta](/help/assets/video.md#enable-dash).
 * Después de que un usuario actualice a AEM Service Pack 6.5.15.0, la conversión de PostScript a Pdf no funciona. (NPR-39765), (NPR-39764)
 * Cuando el usuario intenta abrir la pantalla de presentación después de abrir un formulario adaptable, falla con una excepción NullPointer :`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:"` (NPR-39654)
 * En Windows, cuando el usuario habilita la configuración en negro de alto contraste, el contenido de Forms de HTML5 no queda claro cuando se representa como una vista previa de HTML en el explorador. (NPR-39018)
+* Cuando el usuario intenta agregar metadatos, el botón Guardar deja de ser funcional para los componentes Borrador y Envío.(CQ-4349601)
+* Después de actualizar a AEM 6.5.15.0 Service Pack, la redirección de las URL relativas ya no funciona en el Editor visual. (NPR-39947)
+* Cuando un usuario actualiza a AEM 6.5.15.0 Service Pack, la redirección deja de funcionar con Internet Explorer. (CQ-4351745)
+* Después de que un usuario actualice a AEM 6.5.15.0 Service Pack, no se reconoce la etiqueta de encabezado del HTML. El código de HTML de la etiqueta de encabezado se muestra como texto en el formulario de HTML. (NPR-39915)
+* Cuando el usuario intenta enviar un formulario adaptable, se produce un error tipast: `ERROR [10.207.64.167 [1668589530607] POST /app/LS4/content/forms/af/revalidate/jcr:content/guideContainer.af.submit.jsp HTTP/1.1]`(NPR-39809)
+* Cuando un usuario obtiene una vista previa de un documento de registro mediante la variable **Enviar correo electrónico** Enviar acción, no se muestra correctamente. La plantilla de correo se incrusta en la previsualización del documento de registro. (CQ-4352155)
+* Cuando un usuario obtiene una vista previa de un formulario adaptable como HTML en un explorador Microsoft Edge con modo de compatibilidad con IE, no se muestra correctamente.(CQ-4352216)
+* El diccionario debe incluir nuevas configuraciones regionales con caracteres especiales, como guiones bajos o guiones, para habilitar la traducción. (NPR-40088)
+
+Después de instalar el paquete de servicio del complemento Forms AEM 6.5.16.0, los clientes se enfrentaban al siguiente problema. Por lo tanto, se ha publicado una versión actualizada del paquete de servicio de complementos de Forms AEM 6.5.16.0:
+* Cuando un usuario intenta crear un formulario adaptable con un usuario del grupo de usuarios de formularios, la opción para seleccionar cualquier plantilla no está presente y se produce un error similar al siguiente: error interno del servidor: java.lang.NullPointerException en com.adobe.aem.formsndocuments.servlet.ThemeClientLibraryDataSourceServlet.lambda$getThemeClientLibCategoryList$3(ThemeClientLibraryDataServlet.java:76) en java.base/java.util.stream.ReferencePipeline$2$1.1 (ReferencePipeline.java:176) en java.base/java.util.Iterator.foreachRemaining(Iterator.java:133) (FORMS-7629)
+* Los cambios realizados en las reglas del editor de código no se están guardando.(FORMS-7532)
 
 ## Integraciones {#integrations-6516}
 
