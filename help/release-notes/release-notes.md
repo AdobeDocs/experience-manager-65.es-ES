@@ -2,9 +2,9 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Busque información sobre la versión, novedades, procedimientos de instalación y una lista detallada de cambios para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: a2fa4eacf1b39f185fdf46581ca7c5dcc8083969
+source-git-commit: f53dbe7d51ff976f8d79702a86527f984aa00997
 workflow-type: tm+mt
-source-wordcount: '2967'
+source-wordcount: '2983'
 ht-degree: 3%
 
 ---
@@ -111,7 +111,7 @@ Consulte [Habilitar DASH en su cuenta](/help/assets/video.md#enable-dash).
 * Cuando un usuario obtiene una vista previa de un formulario adaptable como HTML en un explorador Microsoft Edge con modo de compatibilidad con IE, no se muestra correctamente.(CQ-4352216)
 * El diccionario debe incluir nuevas configuraciones regionales con caracteres especiales, como guiones bajos o guiones, para habilitar la traducción. (NPR-40088)
 
-Después de instalar el paquete de servicio del complemento Forms AEM 6.5.16.0, los clientes se enfrentaban al siguiente problema. Por lo tanto, se ha publicado una versión actualizada del paquete de servicio de complementos de Forms AEM 6.5.16.0:
+Después de instalar el paquete de servicio del complemento Forms AEM 6.5.16.0, los clientes se enfrentaban a los problemas que se enumeran a continuación. Por lo tanto, una versión actualizada de [Paquete de servicio de complementos de Forms de AEM 6.5.16.0: 6.0.914](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) está disponible. Adobe recomienda utilizar el Service Pack actualizado:
 * Cuando un usuario intenta crear un formulario adaptable con un usuario del grupo de usuarios de formularios, la opción para seleccionar cualquier plantilla no está presente y se produce un error similar al siguiente: error interno del servidor: java.lang.NullPointerException en com.adobe.aem.formsndocuments.servlet.ThemeClientLibraryDataSourceServlet.lambda$getThemeClientLibCategoryList$3(ThemeClientLibraryDataServlet.java:76) en java.base/java.util.stream.ReferencePipeline$2$1.1 (ReferencePipeline.java:176) en java.base/java.util.Iterator.foreachRemaining(Iterator.java:133) (FORMS-7629)
 * Los cambios realizados en las reglas del editor de código no se están guardando.(FORMS-7532)
 
