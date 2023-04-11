@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 5ac1b0a343c3742f27fecbfb0de577d65c2607d0
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '8091'
+source-wordcount: '8098'
 ht-degree: 3%
 
 ---
@@ -278,7 +278,7 @@ En la tabla siguiente se describe el dispositivo, el navegador y el método de r
 
 >[!IMPORTANT]
 >
->*Para usar DASH en tus vídeos, primero debe ser habilitado por el servicio de asistencia técnica de Adobe en tu cuenta. Consulte [Habilitar DASH en su cuenta](#enable-dash).)
+>*Para usar DASH en tus vídeos, primero debe ser habilitado por el servicio de asistencia técnica de Adobe en tu cuenta. Consulte [Habilitar DASH en su cuenta](#enable-dash).
 
 ## Arquitectura de la solución de vídeo de Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
@@ -445,7 +445,7 @@ Algunas de las ventajas clave de habilitar DASH en su cuenta son:
 
    >[!IMPORTANT]
    >
-   >Actualmente, la activación de DASH en su cuenta solo está disponible en Norteamérica.
+   >Actualmente, habilitar DASH en su cuenta solo está disponible en Asia-Pacífico y Norteamérica; próximamente en Europa, Oriente Medio y África.
 
 La activación de DASH en su cuenta requiere dos pasos:
 
@@ -476,7 +476,7 @@ La activación de DASH en su cuenta requiere dos pasos:
 >
 >Los informes de vídeo solo están disponibles cuando se ejecuta Dynamic Media en modo híbrido.
 
-Los informes de vídeo muestran varias métricas agregadas a lo largo de un tiempo específico para ayudarle a supervisar que *los vídeos individuales y agregados publicados están teniendo el rendimiento esperado. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
+Los informes de vídeo muestran varias métricas agregadas a lo largo de un tiempo específico para ayudarle a supervisar que *publicado* los vídeos individuales y agregados están teniendo el rendimiento que se esperaba. Los siguientes datos de métricas principales se agregan para todos los vídeos publicados en todo el sitio web:
 
 * Inicios de vídeo
 * Tasa de finalización
