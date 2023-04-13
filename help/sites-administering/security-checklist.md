@@ -12,7 +12,7 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: e44480535ea7058dc41fc747351446b670d03b7f
+source-git-commit: f23adcf200b625e2ab2a766460c41fd7e38fae83
 workflow-type: tm+mt
 source-wordcount: '2986'
 ht-degree: 1%
@@ -390,7 +390,7 @@ Aunque no se recomienda, puede deshabilitarla en caso de que necesite la impleme
 >
 >Para obtener más información, consulte la documentación de Oak sobre [Generación de nombres de nodo autorizada](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
 
-**Paquete de endurecimiento de permisos anónimos**
+### Paquete de endurecimiento de permisos anónimos {#anonymous-permission-hardening-package}
 
 De forma predeterminada, AEM almacena metadatos del sistema, como `jcr:createdBy` o `jcr:lastModifiedBy` como propiedades de nodo, junto al contenido normal, en el repositorio. Dependiendo de la configuración y de la configuración del control de acceso, en algunos casos esto podría llevar a la exposición de información de identificación personal (PII), por ejemplo cuando esos nodos se procesan como JSON o XML sin procesar.
 
