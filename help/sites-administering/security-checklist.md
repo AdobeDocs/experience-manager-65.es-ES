@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: f23adcf200b625e2ab2a766460c41fd7e38fae83
+source-git-commit: 41752e40f2bceae98d4a9ff8bf130476339fe324
 workflow-type: tm+mt
-source-wordcount: '2986'
+source-wordcount: '3025'
 ht-degree: 1%
 
 ---
@@ -396,7 +396,17 @@ De forma predeterminada, AEM almacena metadatos del sistema, como `jcr:createdBy
 
 Al igual que todos los datos del repositorio, estas propiedades están intermediadas por la pila de autorización de Oak. El acceso a ellos debe restringirse de conformidad con el principio de los privilegios mínimos.
 
-Para admitir esto, Adobe proporciona un paquete de refuerzo de permisos como base para que los clientes puedan basarse en él. Funciona instalando una entrada de control de acceso &quot;negar&quot; en la raíz del repositorio, restringiendo el acceso anónimo a las propiedades del sistema más utilizadas. El paquete está disponible para su descarga [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) y se puede instalar en todas las versiones compatibles de AEM. Consulte las notas de la versión para obtener más información.
+Para admitir esto, Adobe proporciona un paquete de refuerzo de permisos como base para que los clientes puedan basarse en él. Funciona instalando una entrada de control de acceso &quot;negar&quot; en la raíz del repositorio, restringiendo el acceso anónimo a las propiedades del sistema más utilizadas. El paquete está disponible para su descarga [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) y se puede instalar en todas las versiones compatibles de AEM.
+
+Para ilustrar los cambios, podemos comparar las propiedades de los nodos que se pueden ver de forma anónima antes de instalar el paquete:
+
+![Antes de instalar el paquete](/help/sites-administering/assets/before_resized.png)
+
+con los que se pueden ver después de instalar el paquete, donde `jcr:createdBy` y `jcr:lastModifiedBy` no son visibles:
+
+![Después de instalar el paquete](/help/sites-administering/assets/after_resized.png)
+
+Para obtener más información, consulte las notas de la versión del paquete.
 
 ### Impedir el clickjacking {#prevent-clickjacking}
 
