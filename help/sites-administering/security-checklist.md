@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 70c2d7c910f61169869aab9fdcbff4c4564ea9bd
+source-git-commit: e44480535ea7058dc41fc747351446b670d03b7f
 workflow-type: tm+mt
-source-wordcount: '2818'
+source-wordcount: '2986'
 ht-degree: 1%
 
 ---
@@ -389,6 +389,14 @@ Aunque no se recomienda, puede deshabilitarla en caso de que necesite la impleme
 >[!NOTE]
 >
 >Para obtener más información, consulte la documentación de Oak sobre [Generación de nombres de nodo autorizada](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
+
+**Paquete de endurecimiento de permisos anónimos**
+
+De forma predeterminada, AEM almacena metadatos del sistema, como `jcr:createdBy` o `jcr:lastModifiedBy` como propiedades de nodo, junto al contenido normal, en el repositorio. Dependiendo de la configuración y de la configuración del control de acceso, en algunos casos esto podría llevar a la exposición de información de identificación personal (PII), por ejemplo cuando esos nodos se procesan como JSON o XML sin procesar.
+
+Al igual que todos los datos del repositorio, estas propiedades están intermediadas por la pila de autorización de Oak. El acceso a ellos debe restringirse de conformidad con el principio de los privilegios mínimos.
+
+Para admitir esto, Adobe proporciona un paquete de refuerzo de permisos como base para que los clientes puedan basarse en él. Funciona instalando una entrada de control de acceso &quot;negar&quot; en la raíz del repositorio, restringiendo el acceso anónimo a las propiedades del sistema más utilizadas. El paquete está disponible para su descarga [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) y se puede instalar en todas las versiones compatibles de AEM. Consulte las notas de la versión para obtener más información.
 
 ### Impedir el clickjacking {#prevent-clickjacking}
 
