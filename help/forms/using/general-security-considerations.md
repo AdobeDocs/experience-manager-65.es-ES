@@ -11,10 +11,10 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 85%
+source-wordcount: '1059'
+ht-degree: 82%
 
 ---
 
@@ -65,7 +65,7 @@ Para obtener información de seguridad sobre los sistemas operativos compatibles
   </tr>
   <tr>
    <td>Oracle Linux® 7 Update 3</td>
-   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Guía de seguridad de la versión 7</a><br /> </td>
+   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Guía de seguridad de la versión 7</a><br /> </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -245,8 +245,8 @@ El archivo lc_[database].xml no debe contener la contraseña en un formato de te
 >
 >El instalador llave en mano de AEM Forms en JEE JBoss® cifra la contraseña de la base de datos.
 
-El servidor de aplicaciones IBM® WebSphere® y el servidor Oracle WebLogic Server pueden cifrar contraseñas de fuentes de datos de forma predeterminada. No obstante, consulte la documentación del servidor de aplicaciones para asegurarse de que llevan a cabo el cifrado.
+El servidor de aplicaciones IBM® WebSphere® y el servidor Oracle WebLogic Server pueden cifrar contraseñas de fuentes de datos de forma predeterminada. Sin embargo, debe confirmar con la documentación del servidor de aplicaciones para asegurarse de que está ocurriendo.
 
 ### Protección de la clave privada almacenada en el almacén de confianza {#protecting-the-private-key-stored-in-trust-store}
 
-Las claves privadas o credenciales importadas en el almacén de confianza se almacenan en AEM Forms en la base de datos JEE. Tome las precauciones necesarias para proteger la base de datos y restringir el acceso solo a los administradores designados.
+Las claves privadas o credenciales importadas en el almacén de confianza se almacenan en AEM Forms en la base de datos JEE. Para proteger la base de datos y restringir el acceso sólo a los administradores designados, tome las precauciones adecuadas.
