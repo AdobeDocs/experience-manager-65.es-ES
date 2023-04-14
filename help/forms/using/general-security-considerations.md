@@ -11,10 +11,10 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 100%
+source-wordcount: '1060'
+ht-degree: 85%
 
 ---
 
@@ -49,18 +49,18 @@ Para obtener información de seguridad sobre los sistemas operativos compatibles
  <tbody>
   <tr>
    <td><p>IBM® AIX® 7.2</p> </td>
-   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">Ventajas de seguridad de IBM AIX</a></p> </td>
+   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">Ventajas de seguridad de IBM® AIX®</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft Windows Server® 2016 </p> </td>
+   <td><p>Microsoft® Windows Server® 2016 </p> </td>
    <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Guía de seguridad de Windows Server 2016</a></p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® Linux® AP o ES</p> </td>
-   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Guía de seguridad de Red Hat Enterprise Linux</a></p> </td>
+   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Guía de seguridad de Red Hat® Enterprise Linux®</a></p> </td>
   </tr>
   <tr>
-   <td><p>Sun Solaris 11</p> </td>
+   <td><p>Sun Solaris™ 11</p> </td>
    <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Directrices de seguridad y protección</a></p> </td>
   </tr>
   <tr>
@@ -98,15 +98,15 @@ Para obtener información de seguridad sobre los servidores de aplicaciones comp
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Encontrará información sobre la seguridad de WebLogic en <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
+   <td><p>Busque Información sobre la seguridad de WebLogic en <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
   </tr>
   <tr>
-   <td><p>IBM WebSphere®</p> </td>
+   <td><p>IBM® WebSphere®</p> </td>
    <td><p><a href="https://www.ibm.com/developerworks/websphere/zones/was/security/" target="_blank">Protección de las aplicaciones y su entorno</a></p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® JBoss®</p> </td>
-   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security+subsystem+configuration">Configuración del subsistema de seguridad</a></p> </td>
+   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security%20subsystem%20configuration.html">Configuración del subsistema de seguridad</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -118,7 +118,7 @@ Al proteger la base de datos, considere la posibilidad de implementar las medida
 * Restricción de operaciones con listas de control de acceso (ACL)
 * Uso de puertos no estándares
 * Ocultación de la base de datos detrás de un cortafuegos
-* Codificación de datos confidenciales antes de escribirlos en la base de datos (consulte la documentación del creador de la base de datos)
+* Codificación de datos confidenciales antes de escribirlos en la base de datos (consulte la documentación del fabricante de la base de datos)
 
 Para obtener información de seguridad sobre las bases de datos compatibles con AEM Forms en JEE, consulte los recursos de esta tabla.
 
@@ -131,11 +131,11 @@ Para obtener información de seguridad sobre las bases de datos compatibles con 
  </thead>
  <tbody>
   <tr>
-   <td><p>IBM DB2® 11.1</p> </td>
-   <td><p><a href="https://www.ibm.com/es-es/products/db2">Biblioteca de la familia de productos DB2</a></p> </td>
+   <td><p>IBM® DB2® 11.1</p> </td>
+   <td><p><a href="https://www.ibm.com/es-es/products/db2">Biblioteca de la familia de productos DB2®</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
+   <td><p>Microsoft® SQL Server 2016</p> </td>
    <td>Búsqueda en la web de "SQL Server 2016: Seguridad"</td>
   </tr>
   <tr>
@@ -160,7 +160,7 @@ Esta tabla describe los puertos predeterminados que se deben abrir durante el pr
  </thead>
  <tbody>
   <tr>
-   <td><p>JBoss</p> </td>
+   <td><p>JBoss®</p> </td>
    <td><p>8080</p> </td>
   </tr>
   <tr>
@@ -172,7 +172,7 @@ Esta tabla describe los puertos predeterminados que se deben abrir durante el pr
    <td><p>Establecido por el administrador durante la configuración</p> </td>
   </tr>
   <tr>
-   <td>&gt;<p>WebSphere</p> </td>
+   <td>&gt;<p>WebSphere®</p> </td>
    <td><p>9060, si la opción Seguridad global está habilitada, el valor predeterminado del puerto SSL es 9043.</p> <p>9080</p> </td>
   </tr>
   <tr>
@@ -192,7 +192,7 @@ Esta tabla describe los puertos predeterminados que se deben abrir durante el pr
    <td><p>1521</p> </td>
   </tr>
   <tr>
-   <td>&gt;<p>DB2</p> </td>
+   <td>&gt;<p>DB2®</p> </td>
    <td><p>50000</p> </td>
   </tr>
   <tr>
@@ -206,22 +206,22 @@ Esta tabla describe los puertos predeterminados que se deben abrir durante el pr
  </tbody>
 </table>
 
-### Configuración de JBoss para utilizar un puerto HTTP no predeterminado {#configuring-jboss-to-use-a-non-default-http-port}
+### Configuración de JBoss® para utilizar un puerto HTTP no predeterminado {#configuring-jboss-to-use-a-non-default-http-port}
 
-El servidor de aplicaciones JBoss utiliza el puerto 8080 como puerto HTTP predeterminado. JBoss también dispone de los puertos preconfigurados 8180, 8280 y 8380, los cuales se comentan en el archivo jboss-service.xml. Si tiene una aplicación en el equipo que ya utiliza este puerto, cambie el puerto que utiliza AEM Forms en JEE siguiendo estos pasos:
+El servidor de aplicaciones JBoss® utiliza 8080 como puerto HTTP predeterminado. JBoss® también tiene puertos preconfigurados 8180, 8280 y 8380, que se comentan en el archivo jboss-service.xml. Si tiene una aplicación en el equipo que ya utiliza este puerto, cambie el puerto que utiliza AEM Forms en JEE siguiendo estos pasos:
 
 1. Abra el siguiente archivo para editarlo:
 
-   Instalación de un solo servidor: [JBoss root]/standalone/configuration/standalone.xml.
+   Instalación de un solo servidor: [Raíz JBoss®]/standalone/configuration/standalone.xml
 
-   Instalaciones de clúster: [JBoss root]/domain/configuration/domain.xml.
+   Instalaciones de clúster: [Raíz JBoss®]/domain/configuration/domain.xml
 
-1. Cambie el valor del atributo **port** en la etiqueta **&lt;socket-binding>** a un número de puerto personalizado. Por ejemplo, los siguientes usan el puerto 8090:
+1. Cambiar el valor de **puerto** en la variable **&lt;socket-binding>** a un número de puerto personalizado. Por ejemplo, los siguientes usan el puerto 8090:
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. Guarde y cierre el archivo.
-1. Reinicie el servidor de aplicaciones JBoss.
+1. Reinicie el servidor de aplicaciones JBoss®.
 
 ## Consideraciones de seguridad de AEM Forms en JEE {#aem-forms-on-jee-security-considerations}
 
@@ -243,9 +243,9 @@ El archivo lc_[database].xml no debe contener la contraseña en un formato de te
 
 >[!NOTE]
 >
->El programa de instalación llave en mano de JBoss para AEM Forms en JEE cifra la contraseña de la base de datos.
+>El instalador llave en mano de AEM Forms en JEE JBoss® cifra la contraseña de la base de datos.
 
-IBM WebSphere Application Server y Oracle WebLogic Server pueden cifrar contraseñas de fuentes de datos de forma predeterminada. No obstante, consulte la documentación del servidor de aplicaciones para asegurarse de que llevan a cabo el cifrado.
+El servidor de aplicaciones IBM® WebSphere® y el servidor Oracle WebLogic Server pueden cifrar contraseñas de fuentes de datos de forma predeterminada. No obstante, consulte la documentación del servidor de aplicaciones para asegurarse de que llevan a cabo el cifrado.
 
 ### Protección de la clave privada almacenada en el almacén de confianza {#protecting-the-private-key-stored-in-trust-store}
 

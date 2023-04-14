@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '734'
+ht-degree: 91%
 
 ---
 
@@ -27,7 +27,7 @@ Tras instalar el parche, abra AEM Forms Workspace. Si experimenta el error No se
 
 Al instalar el paquete, si se produce un error `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, realice los pasos siguientes:
 
-1. Inicie sesión en CRX DE lite. La URL predeterminada es `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. Inicie sesión en CRXDE Lite. La URL predeterminada es `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Elimine el siguiente nodo:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
@@ -155,9 +155,9 @@ En AEM Forms Workspace:
 
 Los scripts y los estilos se pueden depurar en distintos exploradores.
 
-* **Depuración en IE**: Para depurar AEM Forms Workspace en IE, consulte: [https://msdn.microsoft.com/es-es/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/es-es/library/hh772704(v=vs.85).aspx).
+* **Depuración en IE**: Para depurar el espacio de trabajo de AEM Forms en IE, consulte: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **Depuración en Chrome**: Para abrir el depurador en Chrome, utilice el método abreviado: Ctrl + Mayús + I. Para obtener más información, consulte: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Depuración en Chrome**: Para abrir Debugger en Chrome, utilice el método abreviado: Ctrl + Mayús + I. Para obtener más información, consulte: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
 * **Depuración en Firefox**: Hay varios complementos disponibles para depurar scripts y estilos en Firefox. Por ejemplo, Firebug es una de estas utilidades de depuración ([https://getfirebug.com](https://getfirebug.com)).
 
