@@ -1,7 +1,7 @@
 ---
 title: Variables en flujos de trabajo de AEM Forms
 seo-title: Variables in AEM Forms Workflows
-description: Crear una variable, establecer un valor para ella y usarla en los pasos del flujo de trabajo de AEM Forms.
+description: Cree una variable, establezca un valor para la variable y utilícelo en los pasos del flujo de trabajo de AEM Forms.
 seo-description: Create a variable, set a value for the variable, and use it in AEM Forms workflow steps.
 uuid: 634a75c4-4899-478f-9e5d-a870f5efa583
 contentOwner: khsingh
@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 3d0eb55eb35fcf5da1212b8be7c0aeee11307bb6
+source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
 workflow-type: tm+mt
 source-wordcount: '2208'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -25,9 +25,11 @@ En los modelos de flujo de trabajo de AEM, puede hacer lo siguiente:
 
 * [Crear una variable](../../forms/using/variable-in-aem-workflows.md#create-a-variable) de un tipo de datos basada en el tipo de información que desea almacenar en él.
 * [Configurar un valor para la variable](../../forms/using/variable-in-aem-workflows.md#set-a-variable) mediante el paso del flujo de trabajo Establecer variable.
-* [Utilizar la variable](../../forms/using/variable-in-aem-workflows.md#use-a-variable) en todos los pasos del flujo de trabajo de AEM Forms para recuperar el valor almacenado y en los pasos OR Split y Goto para definir una expresión de enrutamiento.
+* [Utilice la variable](../../forms/using/variable-in-aem-workflows.md#use-a-variable) en todos los pasos del flujo de trabajo de AEM Forms para recuperar el valor almacenado y en los pasos OR Split y Goto para definir una expresión de enrutamiento.
 
 En el siguiente vídeo se muestra cómo crear, establecer y utilizar variables en los modelos de flujo de trabajo de AEM:
+
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/es/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
@@ -115,6 +117,8 @@ Utilice una expresión para calcular la suma de las variables y almacenar el res
 
 En este ejemplo, utilice el editor de expresiones para definir una expresión para calcular la suma de las variables **assetscost** y **balanceamount** y almacenar el resultado en la variable **totalvalue**.
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Usar el editor de expresiones {#use-expression-editor}
@@ -150,7 +154,7 @@ Puede utilizar variables para recuperar entradas y salidas o para guardar el res
 
 ### Pasos del flujo de trabajo compatibles con las variables {#workflow-steps-with-support-for-variables}
 
-El paso Ir a, OR Split y todos pasos del flujo de trabajo de AEM Forms admiten variables.
+El paso Ir a, O Dividir y todos los pasos del flujo de trabajo de AEM Forms admiten variables.
 
 #### Paso OR Split {#or-split-step}
 
@@ -161,6 +165,8 @@ Puede definir la expresión de enrutamiento para una rama mediante una definici�
 Puede utilizar variables para definir la expresión de enrutamiento mediante el editor de expresiones. Para obtener más información sobre el uso de expresiones de enrutamiento para el paso OR Split, consulte [Paso OR Split](/help/sites-developing/workflows-step-ref.md#or-split).
 
 En este ejemplo, antes de definir la expresión de enrutamiento, utilice el [ejemplo 2](../../forms/using/variable-in-aem-workflows.md#example2) para establecer el valor de la variable **totalvalue**. La rama 1 está activa si el valor de la variable **totalvalue** es mayor que 50 000. Del mismo modo, puede definir una regla para que la rama 2 se active si el valor de la variable **totalvalue** es menor que 50 000.
+
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
@@ -271,7 +277,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Almacenar datos confidenciales de usuarios fuera de JCR mediante variables de flujo de trabajo {#jcr-independent-persistance}
 
-Los datos procesados mediante el flujo de trabajo de formularios pueden contener datos confidenciales del usuario, como información de identificación personal e información personal confidencial. Las empresas pueden elegir almacenar los datos, que se procesan mediante varios pasos de flujo de trabajo (y se pasan mediante variables de flujo de trabajo), fuera del almacenamiento JCR en un almacén de datos externo que son propiedad de ellas y que administran. Para obtener más información sobre la persistencia de datos de flujo de trabajo en un almacenamiento externo, consulte [Usar variables de flujo de trabajo para almacenes de datos propiedad del cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+Los datos procesados con Forms Workflow pueden contener datos confidenciales del usuario, como Información de identificación personal e Información personal confidencial. Las empresas pueden elegir almacenar los datos, que se procesan mediante varios pasos de flujo de trabajo (y se pasan mediante variables de flujo de trabajo), fuera del almacenamiento JCR en un almacén de datos externo que son propiedad de ellas y que administran. Para obtener más información sobre la persistencia de datos de flujo de trabajo en un almacenamiento externo, consulte [Usar variables de flujo de trabajo para almacenes de datos propiedad del cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe Experience Manager] proporciona la API de flujo de trabajo [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) para almacenar variables de flujo de trabajo en almacenes de Azure Blob externos. Para obtener más información sobre el uso de la API, consulte [Usar variables de flujo de trabajo para parametrizar datos confidenciales y almacenarlos en almacenes de datos externos](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Editar una variable {#edit-a-variable}
@@ -292,4 +298,4 @@ Siga estos pasos para eliminar una variable:
 
 ## Referencias {#references}
 
-Para obtener más ejemplos sobre el uso de variables en los pasos del flujo de trabajo de AEM Forms, consulte [Variables en flujos de trabajo de AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=es).
+Para obtener más ejemplos sobre el uso de variables en los pasos del flujo de trabajo de AEM Forms, consulte [Variables en flujos de trabajo AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=es).
