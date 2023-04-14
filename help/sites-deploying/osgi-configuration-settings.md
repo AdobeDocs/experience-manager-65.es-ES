@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3431'
 ht-degree: 0%
 
 ---
@@ -269,7 +269,7 @@ Al crear una configuración, no cambie la configuración de fábrica. En su luga
 * Para el desarrollo de JS (especialmente cuando se crea o depura):
 
    * disable **Minificar**
-   * enable **Depuración** para separar los archivos para la depuración y utilizarlos con firebug.
+   * enable **Depuración** para separar los archivos para la depuración y usarlos con el error de activación.
    * enable **Temporización** si está interesado en el tiempo.
    * enable **Depuración** para ver los mensajes de registro de la consola JS.
 
@@ -381,7 +381,7 @@ Se puede acceder a los demás modos desde la barra de tareas o desde el sufijo `
 
 **Configurador del verificador de vínculos de CQ WCM Day** Configurar:
 
-* **Lista de configuraciones de reescritura** para especificar una lista de ubicaciones para las configuraciones de linkchecker basadas en contenido. Las configuraciones se pueden basar en el modo de ejecución. Este hecho es importante para distinguir entre los entornos de autor y publicación, ya que la configuración del verificador de enlaces puede diferir.
+* **Lista de configuraciones de reescritura** para especificar una lista de ubicaciones para las configuraciones del verificador de vínculos basadas en contenido. Las configuraciones se pueden basar en el modo de ejecución. Este hecho es importante para distinguir entre los entornos de autor y publicación, ya que la configuración del verificador de vínculos puede diferir.
 
 **Fábrica de administrador de páginas de CQ WCM Day** Configurar:
 
@@ -443,7 +443,7 @@ Una configuración de fábrica, de modo que se puedan configurar varias instanci
 **Reescritura de CDN** Se debe garantizar la comunicación entre AEM y una CDN para que los recursos y binarios se entreguen a un usuario final de forma segura. Este proceso incluye las dos tareas siguientes:
 
 * Acceso al recurso desde AEM mediante la CDN por primera vez (o después de que caduque en la caché).
-* Acceder al recurso almacenado en caché en CDN de forma segura porque después de que el recurso se almacene en caché en CDN, la solicitud no va a AEM y todos los usuarios que tengan acceso a ese recurso en deben ser servidos desde CDN.
+* Acceso seguro al recurso almacenado en caché en CDN. Una vez que el recurso se almacena en caché en CDN, la solicitud no se dirige a AEM y todos los usuarios que tienen acceso a ese recurso en deben proporcionarse desde CDN.
 
 AEM proporciona un reescritor para reescribir las URL de recursos internos en direcciones URL de CDN externas. Reescribe los vínculos que se pasarán a la CDN, incluida una firma JWS y un tiempo de caducidad para permitir el acceso seguro al recurso. Esta función se utilizará en instancias de autor.
 

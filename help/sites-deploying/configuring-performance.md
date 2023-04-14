@@ -1,8 +1,6 @@
 ---
 title: Optimización del rendimiento
-seo-title: Performance Optimization
 description: Aprenda a configurar ciertos aspectos de AEM para optimizar el rendimiento.
-seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +9,7 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
 source-wordcount: '6503'
 ht-degree: 12%
@@ -26,7 +24,7 @@ ht-degree: 12%
 >
 >Para obtener más información sobre la resolución de problemas y la corrección de problemas de rendimiento, consulte también la [Árbol de rendimiento](/help/sites-deploying/performance-tree.md).
 >
->Además, puede revisar un artículo de la Base de conocimiento en [Sugerencias de ajuste de rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>Además, puede revisar un artículo de la Base de conocimiento en [Sugerencias de ajuste de rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es).
 
 Un problema clave es el tiempo que tarda el sitio web en responder a las solicitudes de los visitantes. Aunque este valor varía para cada solicitud, se puede definir un valor de objetivo promedio. Una vez comprobado que este valor es alcanzable y mantenible, puede utilizarse para monitorear el rendimiento del sitio web e indicar el desarrollo de posibles problemas.
 
@@ -43,7 +41,7 @@ Este entorno contiene contenido que puede poner a disposición de los usuarios. 
 >[!NOTE]
 >
 >* Después de configurar para la optimización del rendimiento, siga los procedimientos descritos en [Día duro](/help/sites-developing/tough-day.md) para probar el entorno bajo una carga pesada.
->* Consulte también [Consejos de ajuste del rendimiento.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+>* Consulte también [Consejos de ajuste del rendimiento.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es)
 
 
 ## Metodología de optimización del rendimiento {#performance-optimization-methodology}
@@ -102,12 +100,12 @@ Este enfoque significa que el desarrollador que implementa la optimización debe
 
 ## Directrices básicas de rendimiento {#basic-performance-guidelines}
 
-En términos generales, mantenga sus solicitudes html sin almacenar en caché a menos de 100 ms. Más concretamente, puede servir de guía:
+En términos generales, mantenga sus solicitudes html sin almacenar en caché a menos de 100 milisegundos. Más concretamente, puede servir de guía:
 
-* El 70 % de las solicitudes de páginas deben responderse en menos de 100 ms.
-* El 25 % de las solicitudes de páginas deben obtener una respuesta entre 100 ms y 300 ms.
-* El 4 % de las solicitudes de páginas deben obtener una respuesta entre 300 ms y 500 ms.
-* El 1 % de las solicitudes de páginas deben obtener una respuesta entre 500 ms y 1000 ms.
+* El 70 % de las solicitudes de páginas deben responderse en menos de 100 milisegundos.
+* El 25 % de las solicitudes de páginas deben obtener una respuesta en 100 milisegundos (300 milisegundos).
+* El 4 % de las solicitudes para páginas deben obtener una respuesta en 300 milisegundos: 500 milisegundos.
+* El 1 % de las solicitudes de páginas deben obtener una respuesta en un plazo de 500 milisegundos: 1000 milisegundos.
 * Ninguna página debe responder más lentamente que 1 segundo.
 
 Los números anteriores asumen las siguientes condiciones:
@@ -206,7 +204,7 @@ Ciertos aspectos de AEM (y/o el repositorio subyacente) se pueden configurar par
 
 >[!NOTE]
 >
->Consulte [Optimización del rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>Consulte [Optimización del rendimiento](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=es).
 
 ### Indexación de búsqueda {#search-indexing}
 
@@ -459,14 +457,12 @@ Las optimizaciones realizadas deberán probarse para garantizar que:
 * No afecta a la funcionalidad
 * Se ha verificado con las pruebas de carga antes de liberarse
 
-Hay una selección de herramientas disponibles para ayudarle con la generación de carga, la monitorización del rendimiento y/o el análisis de resultados:
+Hay una selección de herramientas disponibles para ayudarle con la generación de carga, la supervisión del rendimiento y el análisis de resultados. Algunas de estas herramientas son las siguientes:
 
 * [JMeter](https://jmeter.apache.org/)
 * [Cargar ejecución](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-* [Determyne](https://www.determyne.com/) InsideApps
 * [InfraRED](https://www.infraredsoftware.com/)
 * [Perfil interactivo de Java™](https://jiprof.sourceforge.net/)
-* muchos más...
 
 Después de la optimización, pruebe de nuevo para confirmar el impacto.
 
@@ -691,7 +687,7 @@ La carga consiste en páginas creadas, páginas eliminadas, cruces y consultas c
 
 El impacto de la carga en el performance del backup puede estimarse por la diferencia entre el performance con y sin esta carga de aplicación. El impacto del backup en el rendimiento de las aplicaciones se encuentra comparando el rendimiento del escenario en transacciones por hora con y sin un backup simultáneo en curso, y con backups que operan con diferentes configuraciones de &quot;retraso de backup&quot;.
 
-* **Configuración de retraso** : Para varios casos, la configuración de demora de la copia de seguridad también varió, utilizando valores de 10 ms (predeterminado), 1 ms y 0 ms, para explorar cómo esta configuración afectaba el rendimiento de las copias de seguridad.
+* **Configuración de retraso** : En varias situaciones, la configuración de demora de la copia de seguridad también varió, empleando valores de 10 milisegundos (predeterminado), 1 milisegundos y 0 milisegundos, para explorar cómo esta configuración afectó el rendimiento de las copias de seguridad.
 * **Tipo de copia de seguridad** - Todas las copias de seguridad eran copias de seguridad externas del repositorio realizadas en un directorio de copia de seguridad sin crear un zip, excepto en un caso para comparación donde el comando tar se utilizaba directamente. Dado que las copias de seguridad incrementales no se pueden crear en un archivo zip, o cuando la copia de seguridad completa previa es un archivo zip, el método de directorio de copia de seguridad es el más utilizado en situaciones de producción.
 
 ### Resumen de los resultados {#summary-of-results}
@@ -720,7 +716,7 @@ El parámetro de demora de copia de seguridad se proporciona para limitar la med
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-Para comparar, el rendimiento obtenido utilizando una copia de seguridad del sistema de archivos (&quot;tar&quot;) para realizar copias de seguridad de los mismos archivos del repositorio. El rendimiento del tar es comparable, pero ligeramente superior al de la copia de seguridad con retraso establecido en cero. La configuración de incluso un pequeño retraso reduce considerablemente el rendimiento del backup y el retraso predeterminado de 10 ms da como resultado un rendimiento mucho menor. En situaciones en las que las copias de seguridad pueden programarse cuando el uso general de las aplicaciones es bajo o la aplicación puede estar inactiva, reduzca el retraso por debajo del valor predeterminado para permitir que la copia de seguridad se realice más rápidamente.
+Para comparar, el rendimiento obtenido utilizando una copia de seguridad del sistema de archivos (&quot;tar&quot;) para realizar copias de seguridad de los mismos archivos del repositorio. El rendimiento del tar es comparable, pero ligeramente superior al de la copia de seguridad con retraso establecido en cero. Si se establece incluso un pequeño retraso, se reduce en gran medida el rendimiento del backup y el retraso predeterminado de 10 milisegundos da como resultado un rendimiento mucho menor. En situaciones en las que las copias de seguridad pueden programarse cuando el uso general de las aplicaciones es bajo o la aplicación puede estar inactiva, reduzca el retraso por debajo del valor predeterminado para permitir que la copia de seguridad se realice más rápidamente.
 
 El impacto real del rendimiento de las aplicaciones de un backup en curso depende de los detalles de la infraestructura y las aplicaciones. La elección del valor de retraso debe hacerse mediante un análisis empírico de la aplicación, pero debe elegirse lo más pequeño posible, de modo que las copias de seguridad puedan completarse lo más rápido posible. Debido a que sólo hay una correlación débil entre la elección del valor de demora y el impacto en el rendimiento de las aplicaciones, la elección del retraso debería favorecer tiempos de backup generales más cortos para minimizar el impacto general de los backups. Una copia de seguridad que tarda ocho horas en completarse, pero que afecta al rendimiento en un -20%, probablemente tendrá un bueno impacto general que una que tarde dos horas en completarse pero afecta al rendimiento en un -30%.
 
