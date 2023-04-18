@@ -1,8 +1,6 @@
 ---
-title: Métodos abreviados del teclado para las consolas
-seo-title: Keyboard Shortcuts for Consoles
-description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado
-seo-description: Save time when authoring by using these keyboard shortcuts
+title: Métodos abreviados del teclado para las consolas en AEM
+description: Ahorre tiempo durante la creación utilizando estos métodos abreviados del teclado.
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
-source-git-commit: ad8f98d22c2f2095ee92741331170be996103d95
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 100%
+source-wordcount: '380'
+ht-degree: 53%
 
 ---
 
@@ -29,7 +27,7 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
 
 Los siguientes métodos abreviados están disponibles para las consolas Sitios, Comercio, Pantallas, Recursos, Usuarios, Grupos, Proyectos y Fragmentos de experiencias.
 
-| Lugar de residencia | Método abreviado | Descripción |
+| Lugar de residencia | Acceso directo | Descripción |
 |---|---|---|
 | General | `Ctrl+Click` | Selección múltiple en un dispositivo de escritorio |
 | Consola: vista de columna y vista de contenido | `Right Arrow` | Desplácese hacia abajo en la estructura del sitio web / amplíe el nodo de árbol |
@@ -52,7 +50,7 @@ Los siguientes métodos abreviados están disponibles para las consolas Sitios, 
 
 Las combinaciones de teclas se muestran con las [teclas modificadoras](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) de Windows.
 
-También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan el [editor de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para crear páginas.
+También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan la variable [editor de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para crear páginas.
 
 ## Teclas modificadoras específicas del sistema operativo {#os-specific-modifier-keys}
 
@@ -65,19 +63,19 @@ Las teclas modificadoras utilizadas para los métodos abreviados del teclado var
 
 ## Navegadores y métodos abreviados del teclado {#browsers-and-keyboard-shortcuts}
 
-AEM evita los métodos abreviados del teclado que ya utilizan los navegadores más conocidos; sin embargo, los métodos abreviados de AEM no anulan el comportamiento predeterminado del explorador.
+AEM evita los métodos abreviados comunes que ya utilizan los navegadores más conocidos, pero AEM el comportamiento predeterminado del explorador no se anula.
 
 Además, los métodos abreviados del teclado son los mismos para todas las configuraciones regionales y diseños de teclado.
 
 >[!NOTE]
 >
->Los métodos abreviados de AEM no anulan el comportamiento predeterminado del explorador.
+>AEM métodos abreviados no anulan el comportamiento predeterminado del explorador.
 >
->En caso de conflictos entre AEM y los métodos abreviados del navegador, los métodos abreviados de AEM no funcionarán y darán paso a la funcionalidad del navegador.
+>En el caso de que se produzcan conflictos entre los métodos abreviados del AEM y del navegador, AEM métodos abreviados no funcionarán, lo que dará como resultado la funcionalidad del navegador.
 
 >[!CAUTION]
 >
->Los métodos abreviados del teclado de AEM podrían interferir en los lectores de pantalla, algunas funciones del navegador y otras herramientas de accesibilidad.
+>AEM métodos abreviados del teclado podrían interferir con los lectores de pantalla, algunas funciones del navegador y otras herramientas de accesibilidad.
 >
 >Adobe recomienda [desactivar los métodos abreviados del teclado de AEM](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) al utilizar un lector de pantalla.
 
@@ -85,7 +83,7 @@ Además, los métodos abreviados del teclado son los mismos para todas las confi
 
 AEM proporciona métodos abreviados del teclado para algunas de las funciones que se utilizan con más frecuencia (editar, propiedades, copiar/pegar, mostrar diversos menús de raíl secundarios, etc.).
 
-Para los usuarios que no utilizan métodos abreviados del teclado o tienen determinados requisitos de accesibilidad, se pueden desactivar todos los métodos abreviados del teclado.
+Para los usuarios que no utilizan métodos abreviados del teclado o que tienen determinados requisitos de accesibilidad, se pueden desactivar todos los métodos abreviados del teclado.
 
 Puede desactivar los métodos abreviados del teclado en dos ubicaciones:
 

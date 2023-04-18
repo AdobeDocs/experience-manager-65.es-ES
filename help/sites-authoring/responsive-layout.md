@@ -1,8 +1,6 @@
 ---
-title: Diseño adaptable
-seo-title: Responsive Layout
-description: El AEM le permite llevar a cabo un diseño interactivo para sus páginas
-seo-description: AEM allows you to realize a responsive layout for your pages
+title: Diseño interactivo para sus páginas de contenido
+description: Adobe Experience Manager le permite realizar un diseño interactivo para sus páginas.
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,33 +8,33 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 93%
+source-wordcount: '1787'
+ht-degree: 54%
 
 ---
 
-# Diseño adaptable {#responsive-layout}
+# Diseño adaptable{#responsive-layout}
 
-AEM le permite disponer de un diseño interactivo para sus páginas mediante el uso del componente **Contenedor de diseño**.
+AEM le permite tener un diseño interactivo para sus páginas mediante el uso de la variable **Contenedor de diseño** componente.
 
-Este componente proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. Este componente se utiliza en combinación con el modo [**Diseño**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que le permite crear y editar el diseño interactivo en función del dispositivo.
+Proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula interactiva. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. Este componente se utiliza en combinación con el modo [**Diseño**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que le permite crear y editar el diseño interactivo en función del dispositivo.
 
-El contenedor de diseños:
+El contenedor de diseño:
 
-* Proporciona un ajuste horizontal a la cuadrícula, además de la posibilidad de colocar componentes en la cuadrícula uno al lado de otro y de definir cuándo se deben contraer o redistribuir.
-* Utiliza puntos de interrupción predefinidos (por ejemplo, para un teléfono, una tableta, etc.) que le permiten definir el comportamiento obligatorio del contenido para dispositivos relacionados/su orientación.
+* Proporciona un ajuste horizontal a la cuadrícula, junto con la capacidad de colocar componentes en la cuadrícula en paralelo y definir cuándo deben contraerse o redistribuirse.
+* Utiliza puntos de interrupción predefinidos (por ejemplo, para teléfono, tableta, etc.) para permitirle definir el comportamiento del contenido necesario para los dispositivos o la orientación relacionados.
 
-   * Por ejemplo, puede personalizar el tamaño del componente o si el componente se puede ver en determinados dispositivos.
+   * Por ejemplo, puede personalizar el tamaño del componente o si este se puede ver en determinados dispositivos.
 
 * Se puede anidar para permitir el control de columnas.
 
-El usuario puede utilizar el emulador para ver cómo se representará el contenido en determinados dispositivos.
+A continuación, el usuario puede ver cómo se representará el contenido para dispositivos específicos mediante el emulador.
 
 >[!CAUTION]
 >
->Aunque el componente Contenedor de diseño está disponible en la IU clásica, la funcionalidad completa solo está disponible y se admite en la IU táctil.
+>Aunque el componente Contenedor de diseño está disponible en la IU clásica, su funcionalidad completa solo está disponible y se admite en la IU táctil.
 
 AEM realiza un diseño interactivo para sus páginas mediante una combinación de diferentes mecanismos:
 
@@ -50,9 +48,9 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
 
 * [**Emulador**](#selecting-a-device-to-emulate) Esta opción le permite crear y editar sitios web interactivos que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
 
-Estos mecanismos de cuadrícula interactiva le permiten:
+Con estos mecanismos de cuadrícula adaptable puede:
 
-* Utilizar puntos de interrupción para definir diferentes diseños de contenido según la anchura del dispositivo (en relación con el tipo de dispositivo y la orientación).
+* Utilice puntos de interrupción para definir diferentes diseños de contenido en función del ancho del dispositivo (en relación con el tipo y la orientación del dispositivo).
 * Utilizar estos mismos puntos de interrupción y diseños de contenido para asegurarse de que el contenido es adaptable al tamaño de la ventana del navegador en el escritorio.
 * Utilizar el ajuste horizontal a la cuadrícula que le permite colocar componentes en la cuadrícula, cambiar su tamaño según sea necesario y definir cuándo deben contraerse o redistribuirse lateralmente o arriba/abajo.
 * Ocultar componentes de diseños de dispositivo específicos.
@@ -72,7 +70,7 @@ En función del proyecto, el contenedor de diseño se puede utilizar como sistem
 
 Al crear el contenido de su sitio web desea asegurarse de que el contenido se muestre correctamente según el dispositivo utilizado para ello.
 
-AEM le permite definir diseños en función de la anchura del dispositivo:
+AEM permite definir diseños en función de la anchura del dispositivo:
 
 * El emulador le permite emular estos diseños en una serie de dispositivos. Además del tipo de dispositivo, la orientación, que se selecciona mediante la opción **Rotar dispositivo**, puede afectar al punto de interrupción seleccionado a medida que cambia la anchura.
 * Los puntos de interrupción son puntos que separan las definiciones de diseño.
@@ -88,15 +86,15 @@ El dispositivo **Escritorio** no tiene una anchura específica y está relaciona
 >
 >Es posible definir puntos de interrupción para cada dispositivo individual, pero esto incrementaría drásticamente los trabajos de definición de diseño y mantenimiento.
 
-Al seleccionar en el emulador un dispositivo específico para emular y definir el diseño, el punto de interrupción relacionado también quedará resaltado. Todos los cambios que haga en el diseño se aplicarán a otros dispositivos a los que se aplique el punto de interrupción (por ejemplo, cualquier dispositivo posicionado a la izquierda del marcador de punto de interrupción activo, antes del siguiente marcador de punto de interrupción).
+Al seleccionar en el emulador un dispositivo específico para emular y definir el diseño, el punto de interrupción relacionado también quedará resaltado. Cualquier cambio de diseño que realice se aplicará a otros dispositivos a los que se aplique el punto de interrupción, es decir, cualquier dispositivo posicionado a la izquierda del marcador de punto de interrupción activo, pero antes del siguiente marcador de punto de interrupción.
 
-Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una anchura de 540 píxeles) para emulación y diseño, se activará también el punto de interrupción **Teléfono** (definido como 768 píxeles). Cualquier cambio de diseño que realice para el **iPhone 6** se aplicará a los demás dispositivos que se encuentren bajo el punto de interrupción **Teléfonos**, como **iPhone 5** (definido como 320 píxeles).
+Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una anchura de 540 píxeles) para emulación y diseño, se activará también el punto de interrupción **Teléfono** (definido como 768 píxeles). Cualquier cambio de diseño que realice para la variable **iPhone 6** será aplicable a los demás dispositivos incluidos en el **Teléfonos** punto de interrupción, como **iPhone 5** (definido como 320 píxeles).
 
 ![screen_shot_2018-03-23at084058](assets/screen_shot_2018-03-23at084058.png)
 
 ## Selección de un dispositivo para emular {#selecting-a-device-to-emulate}
 
-1. Abra la página deseada para editarla. Por ejemplo:
+1. Abra la página necesaria para editarla. Por ejemplo:
 
    `http://localhost:4502/editor.html/content/we-retail/us/en/experience.html`
 
@@ -110,7 +108,7 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
    La barra de herramientas del emulador muestra opciones de diseño adicionales:
 
-   * **Rotar dispositivo**: le permite rotar un dispositivo de la orientación vertical a la horizontal y viceversa.
+   * **Rotar dispositivo** - Permite rotar un dispositivo de la orientación vertical a la horizontal y viceversa.
 
    ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
 
@@ -118,10 +116,10 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
    ![](do-not-localize/screen_shot_2018-03-23at084743.png)
 
-1. Al seleccionar un dispositivo específico para emular, puede efectuar cualquiera de las siguientes acciones:
+1. Para seleccionar un dispositivo específico para emular, puede:
 
-   * Utilizar el icono Seleccionar dispositivo y seleccionarlo de un selector desplegable.
-   * Tocar o hacer clic en el indicador del dispositivo de la barra de herramientas del emulador.
+   * Utilice el icono Seleccionar dispositivo y seleccione en un selector desplegable.
+   * Toque o haga clic en el indicador del dispositivo en la barra de herramientas del emulador.
 
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
@@ -132,11 +130,11 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
-   * La línea discontinua azul representa el *pliegue* para el dispositivo seleccionado (en este caso, un **iPhone 6**).
+   * La línea discontinua azul representa la variable *pliegue* para el dispositivo seleccionado (aquí un **iPhone 6**).
 
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
-   * El pliegue también se puede considerar el salto de línea de la página (no confundir con los [puntos de interrupción](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) del contenido. Esto se muestra para mostrar qué parte del contenido verá el usuario en el dispositivo antes de efectuar el desplazamiento.
+   * El pliegue también puede considerarse un salto de línea de página (no confundir con el [puntos de interrupción](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) para el contenido. Esto se muestra para mostrar qué parte del contenido verá el usuario en el dispositivo antes de desplazarse.
    * La línea del pliegue no se mostrará si la altura del dispositivo que se emula es superior al tamaño de la pantalla.
    * El pliegue se muestra para la comodidad del autor y no aparece en la página publicada.
 
@@ -152,7 +150,7 @@ Un **contenedor de diseño** es un sistema de párrafos que:
 
 >[!NOTE]
 >
->Si todavía no está disponible, el **contenedor de diseño** debe [activarse específicamente para un sistema de párrafos o página](/help/sites-administering/configuring-responsive-layout.md) (por ejemplo, usando el modo de [**diseño**](/help/sites-authoring/default-components-designmode.md)).
+>Si no está disponible, la variable **Contenedor de diseño** debe ser explícitamente [activado para un sistema de párrafos o una página](/help/sites-administering/configuring-responsive-layout.md) (por ejemplo, utilizando [**Diseño** mode](/help/sites-authoring/default-components-designmode.md)).
 
 1. El **contenedor de diseño** está disponible como componente estándar en el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser). Desde aquí puede arrastrarlo a la ubicación deseada en la página tras la cual verá el marcador de posición **Arrastrar componentes aquí**.
 1. A continuación, puede agregar componentes al contenedor de diseño. Estos componentes albergarán el contenido real:
@@ -165,9 +163,9 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
 
 >[!CAUTION]
 >
->Dado que los contenedores de diseños son un sistema de párrafos, al eliminar el componente, se eliminará la cuadrícula de diseño y todos los componentes (y su contenido) incluidos en el contenedor.
+>Como un contenedor de diseño es un sistema de párrafos, al eliminar el componente se eliminará la cuadrícula de diseño y todos los componentes (y su contenido) que se mantengan dentro del contenedor.
 
-1. Si pasa el puntero del ratón o toca el marcador de posición de la cuadrícula, se mostrará el menú de acciones.
+1. Si pasa el ratón o toca el marcador de posición de la cuadrícula, se muestra el menú de acción.
 
    ![screen_shot_2018-03-23at085357](assets/screen_shot_2018-03-23at085357.png)
 
@@ -175,13 +173,13 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
 
    ![](do-not-localize/screen_shot_2018-03-23at085417.png)
 
-1. Si el componente de diseño se encuentra anidado, la selección de la opción **Principal** presenta una lista desplegable de opciones que le permite seleccionar el contenedor de diseños anidado o sus elementos principales.
+1. Si el componente de diseño está anidado, seleccione la opción **Principal** presenta una selección desplegable que le permite seleccionar el contenedor de diseño anidado o sus elementos principales.
 
-   Cuando pase el ratón sobre los nombres de contenedor de la lista desplegable, los contornos se mostrarán en la página.
+   Cuando pase el ratón sobre los nombres de contenedor en la lista desplegable, sus contornos se mostrarán en la página.
 
-   * El contenedor de diseños anidado en la parte inferior se mostrará en negro.
-   * El siguiente contenedor de diseños anidado se mostrará de color gris oscuro.
-   * Cada contenedor sucesivo aparecerá en un tono más claro de gris.
+   * El contenedor de diseño anidado más bajo se mostrará en negro.
+   * El siguiente contenedor de diseño anidado en la parte inferior estará en gris oscuro.
+   * Cada contenedor sucesivo estará en un tono más claro de gris.
 
    ![screen_shot_2018-03-23at085636](assets/screen_shot_2018-03-23at085636.png)
 
@@ -204,14 +202,14 @@ El modo **Diseño** puede iniciarse de dos formas.
    * Seleccione el modo **Diseño** del mismo modo que si desea cambiar al modo **Editar** o **Segmentación**.
    * El modo **Diseño** se mantiene y no abandona el modo **Diseño** hasta que se selecciona otro modo a través del selector correspondiente.
 
-* Al [editar un componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
+* When [editar un componente individual.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
-   * Mediante la opción **Diseño** del menú de acciones rápidas del componente, puede cambiar al modo **Diseño**.
-   * El modo **Diseño** se mantiene durante la edición del componente, y se vuelve a acceder al modo **Editar** en cuanto el enfoque cambia a otro componente.
+   * Usando la variable **Diseño** en el menú de acción rápida del componente, puede cambiar a **Diseño** en el menú contextual.
+   * **Diseño** el modo persiste durante la edición del componente y vuelve a **Editar** una vez que el enfoque cambia a otro componente.
 
-En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
+En el modo de diseño puede realizar varias acciones en una cuadrícula:
 
-* Redimensionar los componentes del contenido utilizando los puntos azules. Al redimensionar siempre se hará un ajuste a la cuadrícula. Al redimensionar se mostrará la cuadrícula de fondo como referencia para la alineación: 
+* Cambie el tamaño de los componentes de contenido con los puntos azules. El cambio de tamaño siempre se ajustará a la cuadrícula. Al cambiar el tamaño de la cuadrícula de fondo, se mostrará como ayuda para la alineación:
 
    ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 
@@ -223,26 +221,26 @@ En el modo de diseño, puede ejecutar una serie de acciones a una cuadrícula:
 
    * **Principal**
 
-      Permite seleccionar todo el componente del contenedor de diseños para realizar acciones en conjunto.
+      Permite seleccionar todo el componente contenedor de diseño para realizar acciones en conjunto.
 
    * **Flotar a una línea nueva**
 
-      El componente se moverá a una nueva línea, en función del espacio disponible en la cuadrícula.
+      El componente se moverá a una nueva línea, según el espacio disponible en la cuadrícula.
 
    * **Ocultar componente**
 
-      El componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseño).
+      El componente se volverá invisible (puede restaurarse desde la barra de herramientas del contenedor de diseño).
    ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* En el modo **Diseño** puede pulsar o hacer clic en **Arrastrar componentes aquí** para seleccionar el componente completo. Esto hará que se muestre la barra de herramientas de este modo.
+* En el modo **Diseño** puede pulsar o hacer clic en **Arrastrar componentes aquí** para seleccionar el componente completo. Se mostrará la barra de herramientas de este modo.
 
-   La barra de herramientas mostrará distintas opciones en función del estado del componente del diseño y de los componentes que pertenecen a él. Por ejemplo:
+   La barra de herramientas tendrá diferentes opciones en función del estado del componente de diseño y de los componentes que le pertenecen. Por ejemplo:
 
    * **Principal**: seleccione el componente principal.
 
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Mostrar componentes ocultos** : Muestre todos los componentes o cada componente por separado. El número indica cuántos componentes ocultos hay actualmente. El contador muestra cuántos componentes están ocultos.
+   * **Mostrar componentes ocultos** - Muestra todos los componentes o cada uno de ellos. El número indica cuántos componentes ocultos existen actualmente. El contador muestra cuántos componentes están ocultos.
 
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 

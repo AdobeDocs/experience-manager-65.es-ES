@@ -1,8 +1,6 @@
 ---
 title: Edición de las propiedades de página
-seo-title: Editing Page Properties
-description: Las propiedades de una página pueden variar en función de su naturaleza. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy. Otras no lo están y la información de la Live Copy está disponible según corresponda.
-seo-description: Properties of a page can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
+description: Las propiedades de una página pueden variar en función de su naturaleza. Por ejemplo, es posible que algunas páginas estén conectadas a una Live Copy, mientras que otras no lo están, y la información de la Live Copy estará disponible según corresponda.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +8,16 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 96%
+ht-degree: 34%
 
 ---
 
 # Edición de las propiedades de página  {#editing-page-properties}
 
-Puede definir las propiedades para una página. Estas pueden variar en función de la naturaleza de la página. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy. Otras no lo están y la información de la Live Copy está disponible según corresponda.
+Puede definir las propiedades para una página. Estas pueden variar según la naturaleza de la página. Por ejemplo, algunas páginas pueden estar conectadas a una Live Copy, mientras que otras no lo están, y la información de la Live Copy estará disponible según corresponda.
 
 ## Propiedades de página {#page-properties}
 
@@ -31,19 +29,19 @@ Las propiedades se distribuyen entre varias pestañas:
 
    El título de la página se muestra en varias ubicaciones. Por ejemplo, la lista de la pestaña **Sitios web** y las vistas de lista o tarjeta **Sitios**.
 
-   Es un campo obligatorio.
+   Este es un campo obligatorio.
 
 * **Etiquetas**
 
    Aquí puede agregar o quitar etiquetas de la página al actualizar la lista en el cuadro de diálogo de selección:
 
-   * Tras seleccionar una etiqueta, esta se muestra bajo el cuadro de selección. Para eliminar una etiqueta de esta lista, utilice la x.
+   * Después de seleccionar una etiqueta, aparece debajo del cuadro de selección. Puede quitar una etiqueta de esta lista utilizando la x.
    * Se puede especificar una etiqueta completamente nueva si se escribe el nombre en un cuadro de selección vacío.
 
-      La nueva etiqueta se creará cuando pulse Intro. A continuación, la nueva etiqueta se mostrará en un cuadro, con una pequeña estrella a la derecha que indicará que es una etiqueta nueva.
+      La nueva etiqueta se creará cuando pulse Intro. La nueva etiqueta se mostrará en un cuadro, con una pequeña estrella a la derecha que indicará que es una etiqueta nueva.
 
-   * Con la función de lista desplegable, puede seleccionar etiquetas existentes.
-   * Aparece una x cuando pasa el puntero sobre una entrada de etiqueta en el cuadro de selección; esto puede usarse para quitar esa etiqueta para esta página.
+   * Con la funcionalidad desplegable puede seleccionar etiquetas existentes.
+   * Aparece una x cuando pasa el ratón sobre una entrada de etiqueta en el cuadro de selección; se puede usar para eliminar esa etiqueta para esta página.
 
 * **Ocultar en navegación**
 
@@ -55,7 +53,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Título de navegación**
 
-   Puede especificar un título diferente para utilizarlo en la navegación (por ejemplo, si requiere un título más conciso). Si la opción se deja vacía, se utilizará el **Título**.
+   Puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea un título más conciso). Si está vacío, la variable **Título** se utilizará.
 
 * **Subtítulo**
 
@@ -63,32 +61,32 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Descripción**
 
-   Su descripción de la página, su propósito o cualquier otro detalle que quiera añadir.
+   La descripción de la página, su propósito o cualquier otro detalle que desee añadir.
 
 * **Tiempo de activación**
 
-   La fecha y hora a la que se activará la página publicada. Cuando se publique, esta página se mantendrá inactiva hasta la hora especificada.
+   La fecha y hora a las que se activará la página publicada. Cuando se publique, esta página se mantendrá inactiva hasta la hora especificada.
 
-   Deje vacíos estos campos para las páginas que desee publicar inmediatamente (el caso normal).
+   Deje vacíos estos campos para las páginas que desee publicar inmediatamente (el escenario normal).
 
 * **Tiempo de inactividad**
 
-   La hora a la que se desactivará la página publicada.
+   Hora a la que se desactivará la página publicada.
 
    Nuevamente, deje vacíos estos campos para las páginas que desee publicar inmediatamente.
 
-* **URL de vanidad**
+* **URL mnemónica**
 
-   Permite especificar una URL de vanidad para esta página. Esta opción le permitirá crear URL más cortas y expresivas.
+   Permite introducir una URL de vanidad para esta página. Esto le permite tener una URL más corta y expresiva.
 
-   Por ejemplo, si la URL de vanidad está configurada en w `elcome`a la página identificada por la ruta / `v1.0/startpage`para el sitio web h `ttp://example.com,` entonces h `ttp://example.com/welcome`sería la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
+   Por ejemplo, si la URL de vanidad está configurada en w `elcome`a la página identificada por la ruta / `v1.0/startpage`para el sitio web h `ttp://example.com,` then h `ttp://example.com/welcome`sería la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
    >URL de vanidad:
    >
-   >* Deben ser únicas, por lo que tiene que asegurarse de que ninguna otra página utilice este valor.
-   >* No admiten patrones regex.
+   >* debe ser único, por lo que debe asegurarse de que ninguna otra página utilice el valor.
+   >* no admiten patrones regex.
 
 
 * **Redirigir URL de vanidad**
@@ -103,15 +101,15 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Redirigir**
 
-   Indique la página a la cual esta página debería redirigirse automáticamente.
+   Indique la página a la que esta página debe redirigirse automáticamente.
 
 * **Design**
 
-   Indique el [diseño](/help/sites-developing/designer.md) que se usará para esta página.
+   Indique la variable [diseño](/help/sites-developing/designer.md) para usar en esta página.
 
 * **Alias**
 
-   Especifique un alias para usar con esta página.
+   Especifique un alias para utilizarlo con esta página.
 
 * **Habilitar grupo de usuarios cerrado**
 
@@ -131,17 +129,17 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Configuración de exportación**
 
-   Especificar una configuración de exportación.
+   Especifique una configuración de exportación.
 
 ### Miniatura    {#thumbnail}
 
 * **Miniatura de la página**
 
-   Muestra la imagen de la página en miniatura. Puede hacer lo siguiente:
+   Muestra la imagen en miniatura de la página. Puede hacer lo siguiente:
 
-   * **Generar vista previa**
+   * **Generar previsualización**
 
-      Genere una vista previa de la página para utilizarla como miniatura.
+      Genere una previsualización de la página para utilizarla como miniatura.
 
    * **Cargar imagen**
 
@@ -151,7 +149,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Cloud Services**
 
-   Defina propiedades para [servicios de nube](/help/sites-developing/extending-cloud-config.md).
+   Definir propiedades para [servicios en la nube](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalización {#personalization}
 
@@ -163,19 +161,19 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Permisos** (IU táctil)
 
-   Ver los [permisos en vigor y añadir permisos nuevos](/help/sites-administering/user-group-ac-admin.md).
+   Consulte la [permisos efectivos y añadir permisos nuevos](/help/sites-administering/user-group-ac-admin.md).
 
 ### Modelo {#blueprint}
 
 * **Modelo**
 
-   Defina propiedades para una página de modelo en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
+   Defina propiedades para una página de modelo en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las que se propagarán las modificaciones a Live Copy.
 
 ### Live Copy    {#live-copy}
 
 * **Live Copy**
 
-   Defina propiedades para una página Live Copy en un entorno de [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
+   Defina propiedades para una página de Live Copy en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
 ### Estructura del sitio    {#site-structure}
 
@@ -185,12 +183,12 @@ Las propiedades se distribuyen entre varias pestañas:
 
 ### Edición de las propiedades de una página específica {#editing-page-properties-for-a-specific-page}
 
-Las Propiedades de página definen las diversas propiedades de la página, como los títulos, cuando aparecen en el sitio web y otros.
+Las propiedades de página definen las distintas propiedades de la página, como los títulos, cuando aparecen en el sitio web y otras.
 
 1. Abra la página que desee editar.
 
-1. En la barra de tareas, abra la ficha **Página** y, a continuación, seleccione **Propiedades de página...**
+1. En la barra de tareas, abra la **Página** a continuación, seleccione **Propiedades de página...**
 
    Se abre un cuadro de diálogo con varias fichas.
 
-1. Haga los cambios que necesite y haga clic en **Aceptar** para guardarlos.
+1. Realice los cambios que necesite y haga clic en **OK** para guardar.

@@ -1,13 +1,13 @@
 ---
-title: eCommerce
-description: AEM eCommerce ayuda a los especialistas en marketing a ofrecer experiencias de compra personalizadas y de marca en puntos de contacto web, móviles y sociales.
+title: Marco de integración de eCommerce
+description: AEM comercio electrónico ayuda a los especialistas en marketing a ofrecer experiencias de compra personalizadas y con marca en puntos de contacto web, móviles y sociales.
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '731'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 * [Conceptos ](/help/commerce/cif-classic/administering/concepts.md)
 * [Administración (genérica)](/help/commerce/cif-classic/administering/generic.md)
 
-Adobe ofrece dos versiones del complemento Commerce Integration Framework:
+Adobe proporciona dos versiones de Commerce Integration Framework:
 
 <table>
  <tbody>
@@ -42,34 +42,34 @@ Adobe ofrece dos versiones del complemento Commerce Integration Framework:
    <td>
     <ul>
      <li>Adobe Commerce</li>
-     <li>Java y JavaScript</li>
+     <li>Java y Javascript</li>
      <li>No hay datos de comercio almacenados en el repositorio JCR</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p>Front-end</p> </td>
-   <td><p>AEM Páginas procesadas del lado del servidor de</p> </td>
-   <td>Aplicación de página mixta (procesamiento híbrido)</td>
+   <td><p>AEM páginas procesadas del lado del servidor</p> </td>
+   <td>Aplicación de página mixta (renderización híbrida)</td>
   </tr>
   <tr>
    <td><p>Catálogo de productos</p> </td>
    <td>
     <ul>
-     <li>AEM Importador de productos, editor, almacenamiento en caché en la</li>
-     <li>AEM Catálogos normales con páginas de proxy o de la red de distribución de contenido</li>
+     <li>Importador de productos, editor, almacenamiento en caché en AEM</li>
+     <li>Catálogos regulares con páginas AEM o proxy</li>
     </ul> </td>
    <td>
     <ul>
-     <li>No hay importación de productos</li>
+     <li>Sin importación de productos</li>
      <li>Plantillas genéricas</li>
-     <li>Datos a petición mediante conector</li>
+     <li>Datos bajo demanda mediante conector</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p>Escalabilidad</p> </td>
    <td>
     <ul>
-     <li>Puede admitir hasta unos pocos millones de productos (depende del caso de uso)</li>
+     <li>Pueden admitir hasta unos pocos millones de productos (depende del caso de uso)</li>
      <li>Almacenamiento en caché en Dispatcher</li>
     </ul> </td>
    <td>
@@ -85,33 +85,33 @@ Adobe ofrece dos versiones del complemento Commerce Integration Framework:
   </tr>
   <tr>
    <td>Disponibilidad</td>
-   <td><p>Sí. COMMERCE CLOUD AEM de SAP (extensión actualizada para admitir la versión 6.4 y la versión 5 de Hybris (predeterminada)), que mantiene la compatibilidad con la versión 4 de Hybris).</p> <p>Commerce Cloud AEM de Salesforce (conector de código abierto para admitir la versión 6.4 de)</p> </td>
-   <td>Sí a través de código abierto mediante GitHub. Adobe Commerce (compatible con 2.3.2 (predeterminado) y con 2.3.1).</td>
+   <td><p>Sí. Commerce Cloud de SAP (la extensión se ha actualizado para admitir AEM 6.4 e Hybris 5 (predeterminado) y mantiene la compatibilidad con Hybris 4</p> <p>Commerce Cloud de Salesforce (conector de código abierto compatible con AEM 6.4)</p> </td>
+   <td>Sí, a través de código abierto a través de GitHub. Adobe Commerce (compatible con 2.3.2 (predeterminado) y 2.3.1).</td>
   </tr>
   <tr>
    <td>Cuándo se usa</td>
-   <td>Casos de uso limitados: por ejemplo, en casos en los que sea necesario importar catálogos estáticos pequeños</td>
+   <td>Casos de uso limitados: Por ejemplo, escenarios en los que sea necesario importar catálogos estáticos pequeños</td>
    <td>Solución preferida en la mayoría de los casos de uso</td>
   </tr>
  </tbody>
 </table>
 
-El comercio electrónico, junto con la gestión de la información de los productos (PIM), gestiona las actividades de un sitio web centrado en la venta de productos a través de una tienda en línea:
+El comercio electrónico, junto con la gestión de información de productos (PIM), gestiona las actividades de un sitio web centrado en la venta de productos a través de una tienda en línea:
 
-* Creación, vida útil y obsolescencia de un producto
+* Creación, duración y obsolescencia de un producto
 * Gestión de precios
 * Administración de transacciones
-* Gestión de catálogos completos
-* Registros de almacenamiento activos y centralizados
+* Administración de catálogos completos
+* Registros de almacenamiento activo y centralizado
 * Interfaces web
 
-AEM eCommerce ayuda a los especialistas en marketing a ofrecer experiencias de compra personalizadas y de marca en puntos de contacto web, móviles y sociales. AEM El entorno de creación de segmentos le permite personalizar páginas y componentes en función del contexto del visitante de destino y de las estrategias de comercialización; por ejemplo:
+AEM comercio electrónico ayuda a los especialistas en marketing a ofrecer experiencias de compra personalizadas y con marca en puntos de contacto web, móviles y sociales. El entorno de creación de AEM le permite personalizar páginas y componentes en función del contexto del visitante objetivo y las estrategias de comercialización; por ejemplo:
 
 * Páginas de producto
 * Componentes del carro de compras
-* Componentes de extracción
+* Componentes de cierre de compra
 
-La implementación permite el acceso en tiempo real a la información del producto. Esto se puede utilizar para aplicar lo siguiente:
+La implementación permite el acceso en tiempo real a la información del producto. Esto se puede utilizar para hacer cumplir:
 
 * Integridad de la información del producto
 * Precio
@@ -120,19 +120,19 @@ La implementación permite el acceso en tiempo real a la información del produc
 
 >[!NOTE]
 >
->Para utilizar el marco de integración con proveedores de comercio electrónico externos, primero debe instalar los paquetes necesarios. Para obtener más información, consulte [Implementar eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Para utilizar el marco de integración con proveedores de comercio electrónico externos, primero debe instalar los paquetes necesarios. Para obtener más información, consulte [Implementación de eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
 >Para obtener información sobre la ampliación de las capacidades de comercio electrónico, consulte [Desarrollo del comercio electrónico](/help/commerce/cif-classic/developing/ecommerce.md).
 
-## Características principales {#main-features}
+## Funciones principales {#main-features}
 
-AEM eCommerce proporciona lo siguiente:
+AEM comercio electrónico proporciona:
 
-* Un número de **AEM componentes listos para usar de la interfaz de usuario de la interfaz de usuario de** para ilustrar lo que se puede lograr con su proyecto:
+* Un número de **componentes de AEM listos para usar** para ilustrar lo que se puede lograr para el proyecto:
 
    * Visualización del producto
    * Carro de compras
-   * Fecha de salida
+   * Extracción
    * Productos vistos recientemente
    * Cupones
    * y otros
@@ -141,31 +141,31 @@ AEM eCommerce proporciona lo siguiente:
 
    >[!NOTE]
    >
-   >AEM AEM El marco de trabajo de integración proporcionado por el usuario también le permite crear componentes de integración adicionales para las capacidades de comercio electrónico independientemente de su motor específico de comercio electrónico.
+   >El marco de integración proporcionado por AEM también le permite crear componentes de AEM adicionales para las funciones de comercio independientes del motor de comercio electrónico específico.
 
-* **Buscar** - usando:
+* **Buscar** - mediante:
 
-   * AEM la búsqueda de la
+   * la búsqueda AEM
    * la búsqueda del sistema de comercio electrónico
    * una búsqueda de terceros
-   * o una combinación de los mismos.
+   * o una combinación de ellos.
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
 
-* AEM Utiliza la capacidad de para **presentar el contenido en varios canales**, ya sea una ventana completa del navegador o un dispositivo móvil. Esto ofrece el contenido en el formato que necesitan los visitantes.
+* Utiliza la capacidad de AEM para **presentar el contenido en varios canales**, ya sea la ventana completa del navegador o el dispositivo móvil. Esto ofrece el contenido en el formato que necesitan los visitantes.
 
    ![](/help/sites-administering/assets/chlimage_1-132.png)
 
-* La capacidad de **desarrolle su propia implementación de integración basada en [AEM Marco de eCommerce de](#the-framework)**.
+* La capacidad de **desarrolle su propia implementación de integración basada en [AEM marco de comercio electrónico](#the-framework)**.
 
-   Las dos implementaciones disponibles actualmente se crean sobre la misma base, además de la API general (el marco de trabajo). La implementación de una nueva integración solo implica implementar las funciones que su integración necesita. Cualquier implementación nueva puede utilizar los componentes front-end, ya que utilizan interfaces (por lo que son independientes de la implementación).
+   Las dos implementaciones disponibles actualmente se crean sobre la misma base, además de la API general (el marco de trabajo). La implementación de una nueva integración solo implica implementar las funciones que necesita la integración. Las nuevas implementaciones pueden utilizar los componentes front-end, ya que utilizan interfaces (por lo que son independientes de la implementación).
 
-* La posibilidad de desarrollar **comercio basado en la experiencia y en los datos de los compradores y la actividad**. Esto le permite realizar muchos escenarios:
+* La posibilidad de desarrollar **comercio basado en la experiencia y en la actividad del comprador**. Esto le permite dar cuenta de muchos escenarios:
 
-   * Un ejemplo podría ser proporcionar reducciones en los costes de envío cuando el pedido total supera una cantidad específica.
-   * Otro podría permitirle proporcionar ofertas estacionales que utilicen datos de perfil (por ejemplo, ubicación). A continuación, se pueden resaltar, nuevamente en función de otros factores cuando sea necesario.
+   * Un ejemplo podría ser proporcionar reducciones en los costos de envío cuando el pedido total exceda una cantidad específica.
+   * Otro puede permitirle proporcionar ofertas de temporada que utilicen datos de perfil (por ejemplo, ubicación). A continuación, se pueden resaltar, dependiendo de nuevo de otros factores cuando sea necesario.
 
-   En el ejemplo siguiente, se muestra un teaser porque el contenido del carro de compras es inferior a 75 $:
+   En el ejemplo siguiente, se muestra un teaser, ya que el contenido del carro de compras es inferior a 75 $:
 
    ![](/help/sites-administering/assets/chlimage_1-133.png)
 
@@ -173,25 +173,25 @@ AEM eCommerce proporciona lo siguiente:
 
    ![](/help/sites-administering/assets/chlimage_1-134.png)
 
-* Y otras características que incluyen:
+* Y otras características, entre ellas:
 
-   * Contenido del carro de compras conservado entre sesiones
-   * Historial completo de pedidos
-   * Actualización rápida del catálogo
+   * Contenido del carro de compras retenido entre sesiones
+   * Historial de pedidos completo
+   * Actualización del catálogo exprés
 
 ## El marco {#the-framework}
 
-El [Conceptos](/help/commerce/cif-classic/administering/concepts.md) La sección trata el marco de trabajo con más detalle, pero la siguiente sección proporciona una vista de alto nivel y alta velocidad del marco de trabajo:
+La variable [Conceptos](/help/commerce/cif-classic/administering/concepts.md) esta sección cubre el marco de trabajo con más detalle, pero la siguiente proporciona una vista de alto nivel y alta velocidad del marco de trabajo:
 
 ### ¿Qué? {#what}
 
 * El marco de integración proporciona la API, una serie de componentes para ilustrar la funcionalidad y varias extensiones para proporcionar ejemplos de métodos de conexión.
 * El marco proporciona la estructura básica necesaria para la ejecución de un proyecto.
-* El marco de trabajo es extensible.
-* El marco de trabajo no proporciona un sitio listo para usar y listo para usar. Siempre se necesita una cierta cantidad de trabajo de desarrollo para adaptar el marco a sus especificaciones.
+* El marco es extensible.
+* El marco de trabajo no proporciona un sitio listo para usar. Siempre se necesita una cierta cantidad de trabajo de desarrollo para adaptar el marco a sus especificaciones.
 
 ### ¿Por qué? {#why}
 
 * Proporcionar los mecanismos básicos necesarios para realizar rápidamente un sitio de comercio electrónico personalizado.
-* Los consejos proporcionan la flexibilidad necesaria para desarrollar un sitio de comercio electrónico en la vida real.
-* Ilustrar las prácticas recomendadas.
+* Tp proporciona la flexibilidad necesaria para desarrollar un sitio de comercio electrónico en la vida real.
+* Ilustración de las prácticas recomendadas.

@@ -1,8 +1,6 @@
 ---
-title: Configurar componentes en modo Diseño
-seo-title: Configuring Components in Design Mode
-description: Cuando la instancia de AEM se instala lista para usar, una selección de componentes aparece de inmediato en la barra de tareas. Además de estos, también están disponibles otros componentes. Se puede utilizar el modo Diseño para activarlos o desactivarlos.
-seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
+title: Configuración de componentes en modo de diseño
+description: Cuando AEM instancia está instalada de forma predeterminada, una selección de componentes está disponible inmediatamente en la barra de tareas. Además de estos, también hay otros componentes disponibles. Puede utilizar el modo Diseño para activar o desactivar dichos componentes.
 uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,74 +9,74 @@ content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 92%
+ht-degree: 0%
 
 ---
 
-# Configurar componentes en modo Diseño{#configuring-components-in-design-mode}
+# Configuración de componentes en modo de diseño{#configuring-components-in-design-mode}
 
-Cuando la instancia de AEM se instala lista para usar, una selección de componentes aparece de inmediato en la barra de tareas.
+Cuando AEM instancia está instalada de forma predeterminada, una selección de componentes está disponible inmediatamente en la barra de tareas.
 
-Además de estos, también están disponibles otros componentes. Se puede utilizar el modo Diseño para [activar o desactivar dichos componentes](#enabledisablecomponentsusingdesignmode). Cuando se activan y se localizan en su página, se puede utilizar el modo Diseño para [configurar aspectos del diseño de componentes](#configuringcomponentsusingdesignmode) editando los parámetros del atributo.
-
->[!NOTE]
->
->Es importante tener cuidado al editar estos componentes. Las configuraciones del diseño normalmente suponen una parte integral del diseño de toda la página web, por lo que solo las puede cambiar alguien con los privilegios (y la experiencia) adecuados, normalmente un administrador o programador. Consulte [Desarrollar componentes](/help/sites-developing/components.md) para obtener más información.
-
-Esto implica añadir o eliminar los componentes permitidos en el sistema de párrafos de la página. El sistema de párrafos (`parsys`) es un componente compuesto que contiene todos los demás componentes de párrafos. El sistema de párrafos permite a los autores añadir componentes de distintos tipos a una página, ya que contiene todos los demás componentes de párrafos. Cada tipo de párrafo se representa como un componente.
-
-Por ejemplo, el contenido de la página de un producto puede contener un sistema de párrafos que incluya lo siguiente:
-
-* Una imagen del producto (en forma de imagen o de párrafo de imagen de texto).
-* La descripción del producto (como párrafo de texto).
-* Una tabla con datos técnicos (como párrafo de tabla).
-* Un formulario que rellenan los usuarios (como comienzo de formularios, elemento de formularios y párrafo de final de formulario).
+Además de estos, también hay otros componentes disponibles. Puede utilizar el modo Diseño para [Habilitar o deshabilitar estos componentes](#enabledisablecomponentsusingdesignmode). Cuando esté habilitado y ubicado en su página, puede usar el modo Diseño para [configuración de aspectos del diseño de componentes](#configuringcomponentsusingdesignmode) editando los parámetros del atributo.
 
 >[!NOTE]
 >
->Consulte [Desarrollar componentes](/help/sites-developing/components.md#paragraphsystem) y [Guías para utilizar plantillas y componentes](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) para obtener más información sobre `parsys`.
+>Se debe tener cuidado al editar estos componentes. La configuración de diseño suele formar parte integral del diseño de todo el sitio web, por lo que solo debe modificarla alguien con los privilegios (y la experiencia) adecuados, normalmente un administrador o desarrollador. Consulte [Desarrollo de componentes](/help/sites-developing/components.md) para obtener más información.
+
+Esto implica añadir o eliminar los componentes permitidos en el sistema de párrafos de la página. El sistema de párrafos ( `parsys`) es un componente compuesto que contiene todos los demás componentes de párrafo. El sistema de párrafos permite a los autores añadir componentes de distintos tipos a una página, ya que contiene todos los demás componentes de párrafos. Cada tipo de párrafo se representa como un componente.
+
+Por ejemplo, el contenido de una página de producto puede contener un sistema de párrafos que incluya lo siguiente:
+
+* Una imagen del producto (en forma de imagen o párrafo de imagen de texto)
+* La descripción del producto (como párrafo de texto)
+* Una tabla con datos técnicos (como párrafo de tabla)
+* Un formulario que rellenan los usuarios (como comienzo de formulario, elemento de formulario y párrafo final de formulario)
+
+>[!NOTE]
+>
+>Consulte [Desarrollo de componentes](/help/sites-developing/components.md#paragraphsystem) y [Directrices para el uso de plantillas y componentes](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) para obtener más información sobre `parsys`.
 
 ## Habilitar/deshabilitar componentes {#enable-disable-components}
 
-En el modo Diseño, se minimiza la barra de tareas y se pueden configurar los componentes accesibles para el autor:
+En el modo Diseño, la barra de tareas se minimiza y es posible configurar los componentes accesibles para la creación:
 
-1. Si quiere acceder al modo Diseño, abra una página para editarla y utilice el icono de la barra de tareas:
+1. Para entrar al modo Diseño, abra una página para editarla y utilice el icono de la barra de tareas:
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Clic **Editar** en el sistema de párrafos (**Diseño del par**).
+1. Haga clic en **Editar** en el sistema de párrafos (**Diseño de par**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
-1. Se abrirá un cuadro de diálogo en el que se indican los grupos de componentes que se muestran en la barra de tareas junto con todos los componentes que contienen.
+1. Se abrirá un cuadro de diálogo en el que se enumerarán los grupos de componentes que se muestran en la barra de tareas junto con los componentes individuales que contienen.
 
-   Agregue los componentes que deban estar en la barra de tareas o quite los que quiera.
+   Seleccione los componentes que desee añadir o quitar de la barra de tareas.
 
    ![screen_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
 
-1. La barra de tareas se minimiza en el modo de diseño. Al hacer clic en la flecha, puede minimizar la barra de tareas y regresar al modo de edición:
+1. La barra de tareas se minimiza en el modo Diseño. Al hacer clic en la flecha, puede maximizar la barra de tareas y volver al modo de edición:
 
    ![](do-not-localize/sidekick-collapsed.png)
 
-## Configurar el diseño de un componente {#configuring-the-design-of-a-component}
+## Configuración del diseño de un componente {#configuring-the-design-of-a-component}
 
-En el modo Diseño, también se pueden configurar los atributos de los componentes individuales. Cada componente tiene sus propios parámetros. Los ejemplos siguientes muestran el componente de **Imagen:**
+En el modo Diseño, también se pueden configurar atributos para los componentes individuales. Cada componente tiene sus propios parámetros. El siguiente ejemplo muestra la variable **Imagen** componente:
 
-1. Si quiere acceder al modo Diseño, abra una página para editarla y utilice el icono de la barra de tareas:
+1. Para entrar al modo Diseño, abra una página para editarla y utilice el icono de la barra de tareas:
 
    ![](do-not-localize/chlimage_1-1.png)
 
-1. Se puede configurar el diseño de los componentes.
+1. Puede configurar el diseño de los componentes.
 
    Por ejemplo, si hace clic en **Editar** en el componente Imagen (**Diseño de la imagen**) puede configurar los parámetros específicos del componente:
 
-   ![chlimage_1-5](assets/chlimage_1-5.png)
+   ![Chlimage_1-5](assets/chlimage_1-5.png)
 
-1. Haga clic en **Aceptar** para guardar los cambios.
+1. Haga clic en **OK** para guardar los cambios.
 
-1. La barra de tareas se minimiza en el modo de diseño. Al hacer clic en la flecha, puede minimizar la barra de tareas y regresar al modo de edición:
+1. La barra de tareas se minimiza en el modo Diseño. Al hacer clic en la flecha, puede maximizar la barra de tareas y volver al modo de edición:
 
    ![](do-not-localize/sidekick-collapsed-1.png)

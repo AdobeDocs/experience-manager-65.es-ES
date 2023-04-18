@@ -1,8 +1,6 @@
 ---
-title: Búsqueda
-seo-title: Search
-description: Encuentre contenido más rápidamente con una búsqueda detallada
-seo-description: Find your content faster with comprehensive search
+title: Búsqueda completa
+description: Encuentre su contenido más rápido con una búsqueda completa.
 uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,20 +9,20 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 96%
+source-wordcount: '504'
+ht-degree: 75%
 
 ---
 
-# Búsqueda  {#searching}
+# Búsqueda{#searching}
 
 El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
 
 >[!NOTE]
 >
->Fuera del entorno de creación también hay otros mecanismos disponibles para buscar, como [Query Builder](/help/sites-developing/querybuilder-api.md) y [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Fuera del entorno de creación también hay otros mecanismos disponibles para buscar, como la variable [Generador de consultas](/help/sites-developing/querybuilder-api.md) y [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Conceptos básicos de búsqueda {#search-basics}
 
@@ -65,7 +63,7 @@ Para buscar y filtrar sus recursos:
 
    ![](do-not-localize/screen_shot_2018-03-23at101542.png)
 
-   Según el tipo de recurso, la búsqueda mostrará una selección predefinida de criterios de búsqueda o de filtro.
+   Según el tipo de recurso, la búsqueda mostrará una selección predefinida de criterios de búsqueda/filtro.
 
    El panel lateral permite seleccionar:
 
@@ -80,8 +78,8 @@ Para buscar y filtrar sus recursos:
    >
    >
    >
-   >    * Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de comunidades y recursos son comprensivamente especializados.
-   >    * Su instancia, al igual que los [formularios de búsqueda](/help/sites-administering/search-forms.md), se puede personalizar (según la ubicación en AEM).
+   >    * Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de activos y comunidades son comprensiblemente especializados.
+   >    * Su instancia como el [Buscar en Forms](/help/sites-administering/search-forms.md) se puede personalizar (según la ubicación dentro de AEM).
 
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
@@ -94,7 +92,7 @@ Para buscar y filtrar sus recursos:
 
 >[!NOTE]
 >
->Los criterios de búsqueda se mantienen al seleccionar un elemento en los resultados de la búsqueda.
+>Los criterios de búsqueda se mantienen al seleccionar un elemento en los resultados de búsqueda.
 >
 >Cuando se selecciona un elemento en la página de resultados de la búsqueda, al volver a la página de búsqueda después de usar el botón Atrás del explorador, los criterios de búsqueda se mantienen. 
 
@@ -114,7 +112,7 @@ Además de buscar aplicando una amplia gama de criterios, también puede guardar
 
    ![screen-shot_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
 
-1. Una vez guardada, podrá:
+1. Una vez guardada, puede:
 
    * Use **x** (con el nombre de la búsqueda guardada) para iniciar una nueva consulta (la búsqueda guardada en sí no se eliminará).
    * Use la opción **Editar búsqueda guardada**, cambie las condiciones de búsqueda y luego utilice **Guardar** nuevamente.

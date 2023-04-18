@@ -1,8 +1,6 @@
 ---
-title: Uso de versiones de página
-seo-title: Working with Page Versions
-description: Cree, compare y restaure versiones de una página
-seo-description: Create, compare, and restore versions of a page
+title: Trabajar con versiones de página de contenido
+description: Crear, comparar y restaurar versiones de una página
 uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,41 +9,41 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: b11a97b9b00e6f80fb0243e234ed1dc2c004ed3a
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 96%
+source-wordcount: '1492'
+ht-degree: 66%
 
 ---
 
 # Uso de versiones de página  {#working-with-page-versions}
 
-Al generar una versión, se crea una “instantánea” de una página en un punto específico del tiempo. Con la función de versiones, se pueden realizar las siguientes operaciones:
+Al generar una versión se crea una &quot;instantánea&quot; de una página en un punto específico en el tiempo. Con el control de versiones, puede realizar las siguientes acciones:
 
-* Crear una versión de la página.
-* Restaurar una página a una versión anterior, por ejemplo, para deshacer un cambio realizado en ella.
-* Comparar la versión actual de una página con una versión anterior resaltando las diferencias en el texto y las imágenes. 
+* Cree una versión de una página.
+* Restaurar una página a una versión anterior para deshacer un cambio realizado en una página, por ejemplo.
+* Compare la versión actual de una página con una versión anterior, resaltando las diferencias en el texto y las imágenes.
 
 ## Creación de una nueva versión   {#creating-a-new-version}
 
 Puede crear una versión de su recurso desde:
 
-* el [raíl de la línea de tiempo](#creating-a-new-version-timeline)
-* la opción [Crear](#creating-a-new-version-create-with-a-selected-resource) (cuando hay un recurso seleccionado)
+* el [Carril de cronología](#creating-a-new-version-timeline)
+* el [Crear](#creating-a-new-version-create-with-a-selected-resource) (cuando hay un recurso seleccionado)
 
 ### Crear una nueva versión: línea de tiempo {#creating-a-new-version-timeline}
 
 1. Desplácese para mostrar la página para la que desea crear una versión.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra la columna **Línea de tiempo**.
+1. Abra el **Cronología** para abrir el Navegador.
 1. Toque o haga clic en la punta de la flecha junto al campo de comentarios para mostrar las opciones:
 
    ![screen-shot_2019-03-05at112335](assets/screen-shot_2019-03-05at112335.png)
 
-1. Seleccione **Guardar como versión**.
-1. Si procede, introduzca un valor en **Etiqueta** y en **Comentario**.
+1. Select **Guardar como versión**.
+1. Escriba un **Etiqueta** y **Comentario** si es necesario.
 
-   ![chlimage_1-42](assets/chlimage_1-42.png)
+   ![imagen_1-42](assets/chlimage_1-42.png)
 
 1. Confirme la nueva versión con **Crear**.
 
@@ -55,7 +53,7 @@ Puede crear una versión de su recurso desde:
 
 1. Desplácese para mostrar la página para la que desea crear una versión.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Seleccione la opción **Crear** en la barra de herramientas.
+1. Seleccione el **Crear** en la barra de herramientas.
 1. Se abrirá el cuadro de diálogo. Si procede, puede introducir un valor **Etiqueta** y **Comentario:**
 
    ![screen_shot_2012-02-15at105050am](assets/screen_shot_2012-02-15at105050am.png)
@@ -91,7 +89,7 @@ Una vez creada una versión de la página, existen varios métodos para restable
 >1. Cree una versión de una página cualquiera.
 >1. Las etiquetas y los nombres de nodo iniciales serán 1.0., 1.1, 1.2, etc.
 >1. Restablezca la primera versión; p. ej. 1.0.
->1. Vuelva a crear versiones nuevas.
+>1. Vuelva a crear nuevas versiones.
 >1. Las etiquetas generadas y los nombres de nodo ahora serán 1.0.0, 1.0.1, 1.0.2, etc.
 
 
@@ -99,14 +97,14 @@ Una vez creada una versión de la página, existen varios métodos para restable
 
 Hasta **Revertir** la página seleccionada a una versión anterior:
 
-1. Desplácese para mostrar la página que quiere revertir a una versión anterior.
+1. Desplácese para mostrar la página que desea revertir a una versión anterior.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Abra la columna **Cronología** y seleccione **Mostrar todo** o **Versiones**. Se enumerarán las versiones de página de la página seleccionada.
 1. Seleccione la versión a la que desee revertir. Se mostrarán las opciones posibles:
 
    ![Volver a esta versión](assets/screen-shot_2019-03-05at112505.png)
 
-1. Seleccione **Revertir a esta versión**. Se restaurará la versión seleccionada y se actualizará la información en la línea de tiempo.
+1. Select **Revertir a esta versión**. Se restaurará la versión seleccionada y se actualizará la información en la cronología.
 
 ### Restaurar versión {#restore-version}
 
@@ -166,36 +164,36 @@ Este método puede utilizarse para restaurar una versión de un árbol en una fe
 
 ## Vista previa de una versión   {#previewing-a-version}
 
-Puede previsualizar una versión específica:
+Puede obtener una vista previa de una versión específica:
 
-1. Desplácese para mostrar la página que desea comparar.
+1. Desplácese para mostrar la página que desee comparar.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**.
-1. Se enumerarán las versiones de la página. Seleccione la versión que quiere previsualizar:
+1. Se enumerarán las versiones de la página. Seleccione la versión que desee previsualizar:
 
    ![screen-shot_2019-03-05at112505-1](assets/screen-shot_2019-03-05at112505-1.png)
 
-1. Seleccione **Vista previa**. La página se muestra en una nueva pestaña.
+1. Select **Vista previa**. La página se muestra en una nueva pestaña.
 
    >[!CAUTION]
    >
-   >Si se ha movido una página, ya no podrá realizar vistas previas en ninguna versión realizada antes del movimiento.
+   >Si se ha movido una página, ya no puede realizar una vista previa de ninguna versión realizada antes del movimiento.
    >
-   >* Si tiene problemas con una vista previa, compruebe la [línea de tiempo](/help/sites-authoring/basic-handling.md#timeline) para ver si la página se ha movido.
+   >* Si tiene problemas con una vista previa, consulte la [Cronología](/help/sites-authoring/basic-handling.md#timeline) para que la página vea si se ha movido.
 
 
 ## Comparar una versión con la página actual {#comparing-a-version-with-current-page}
 
 Para comparar una versión anterior con la página actual:
 
-1. Desplácese para mostrar la página que desea comparar.
+1. Desplácese para mostrar la página que desee comparar.
 1. Seleccione la página en [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Abra la columna **Línea de tiempo** y seleccione **Mostrar todo** o **Versiones**.
 1. Se enumerarán las versiones de la página. Seleccione la versión que desee comparar:
 
    ![screen-shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Seleccione **Comparar con actual**. Se abrirá [Diferencias de página](/help/sites-authoring/page-diff.md) para mostrar las diferencias.
+1. Select **Comparar con actual**. La variable [diferenciación de página](/help/sites-authoring/page-diff.md) se abrirán y mostrarán las diferencias.
 
 ## Deformación de tiempo   {#timewarp}
 
@@ -203,22 +201,22 @@ Deformación de tiempo es una función diseñada para simular el estado *publica
 
 >[!TIP]
 >
->[La Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro](/help/sites-authoring/launches.md) AEM al ejecutar la versión 6.5.10.0 o posterior de la versión de.
+>[Deformación de tiempo también se puede utilizar con Lanzamientos para previsualizar el futuro](/help/sites-authoring/launches.md) cuando se ejecuta AEM 6.5.10.0 o posterior.
 
 Debido a que la creación de contenido es un proceso continuo y colaborativo, el propósito de Deformación de tiempo es permitir que los creadores rastreen el sitio web publicado con el paso del tiempo para comprender cómo ha cambiado el contenido. Esta función emplea las versiones de página para determinar el estado del entorno de publicación.
 
 Para ello:
 
-* El sistema busca la versión de la página activa en el tiempo seleccionado.
+* El sistema busca la versión de la página que estaba activa en el momento seleccionado.
 * Esto significa que la versión mostrada se creó o activó *antes del* punto temporal seleccionado en Deformación de tiempo.
 * Al navegar a una página que se haya eliminado, también se procesa, siempre que las versiones anteriores de la página estén disponibles en el repositorio.
 * Si no se encuentran versiones publicadas, Deformación de tiempo volverá al estado actual de la página en el entorno de creación (para evitar una página de error/404, lo que impediría el examen).
 
 ### Utilizar la Deformación de tiempo {#using-timewarp}
 
-Deformación de tiempo es un [modo](/help/sites-authoring/author-environment-tools.md#page-modes) del editor de páginas. Para iniciarlo, basta con activarlo como cualquier otro modo.
+Deformación de tiempo es un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) del editor de páginas. Para iniciarlo, simplemente cambie como lo haría con cualquier otro modo.
 
-1. Inicie el editor de la página donde desee comenzar Deformación de tiempo y, a continuación, elija **Deformación de tiempo** en la selección de modo.
+1. Inicie el editor de la página en la que desea iniciar Deformación de tiempo y, a continuación, seleccione **Deformación de tiempo** en la selección de modo.
 
    ![wpv-01](assets/wwpv-01.png)
 
@@ -226,7 +224,7 @@ Deformación de tiempo es un [modo](/help/sites-authoring/author-environment-too
 
    ![wpv-02](assets/wwpv-02.png)
 
-1. La página se muestra en función de la fecha establecida. El modo Deformación de tiempo se indica mediante la barra de estado azul en la parte superior de la ventana. Utilice los vínculos de la barra de estado para seleccionar una nueva fecha de destino o para salir del modo Deformación de tiempo.
+1. La página se muestra en función de la fecha establecida. El modo Deformación de tiempo se indica mediante la barra de estado azul situada en la parte superior de la ventana. Utilice los vínculos de la barra de estado para seleccionar una nueva fecha de destino o salir del modo Deformación de tiempo.
 
    ![wpv-03](assets/wwpv-03.png)
 

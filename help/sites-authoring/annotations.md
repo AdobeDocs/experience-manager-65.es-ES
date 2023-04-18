@@ -1,8 +1,6 @@
 ---
-title: Anotaciones al editar una página
-seo-title: Annotations when Editing a Page
-description: Muchos componentes directamente relacionados con contenido le permiten añadir una anotación
-seo-description: Many components directly related to content allow you to add an annotation
+title: Anotaciones al editar una página de contenido
+description: Muchos componentes directamente relacionados con el contenido permiten añadir una anotación.
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +8,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 98%
+ht-degree: 40%
 
 ---
 
 # Anotaciones al editar una página{#annotations-when-editing-a-page}
 
-La adición de contenido a las páginas de un sitio web suele someterse a análisis antes de publicarse. Para ayudarle, muchos componentes directamente relacionados con el contenido (en vez de, por ejemplo, el diseño) permiten añadir anotaciones.
+La adición de contenido a las páginas de su sitio web suele someterse a análisis antes de publicarse. Para ayudarle, muchos componentes directamente relacionados con el contenido (en lugar de, por ejemplo, el diseño) permiten añadir una anotación.
 
-Una anotación coloca un marcador o una nota adhesiva de colores en la página. La anotación le permite (a usted o a otros usuarios) dejar comentarios o preguntas para otros autores o revisores.
+Una anotación coloca un marcador o nota adhesiva de color en la página. La anotación le permite (a usted o a otros usuarios) dejar comentarios o preguntas para otros autores o revisores.
 
 >[!NOTE]
 >
@@ -29,11 +27,11 @@ Una anotación coloca un marcador o una nota adhesiva de colores en la página. 
 
 >[!NOTE]
 >
->Las anotaciones creadas en la IU clásica se mostrarán en la IU con capacidad táctil. Sin embargo, los bocetos son específicos de la IU y solo se muestran en la IU en la que se crearon.
+>Las anotaciones creadas en la IU clásica se mostrarán en la IU táctil. Sin embargo, los bocetos son específicos de la IU y solo se muestran en la IU en la que se crearon.
 
 >[!CAUTION]
 >
->Al eliminar un recurso (p. ej. un párrafo), se eliminan todas las anotaciones y bocetos relacionados con ese recurso (independientemente de su posición en la página en general).
+>Al eliminar un recurso (p. ej. un párrafo), se eliminan todas las anotaciones y bocetos relacionados con ese recurso, independientemente de su posición en la página en general.
 
 >[!NOTE]
 >
@@ -49,7 +47,7 @@ Se utiliza un modo [especial](/help/sites-authoring/author-environment-tools.md#
 
 >[!NOTE]
 >
->Puede realizar anotaciones en distintos recursos:
+>Puede realizar anotaciones en varios recursos:
 >
 >* [Anotación de recursos](/help/assets/manage-assets.md#annotating)
 >* [Anotación de recursos de vídeo](/help/assets/managing-video-assets.md#annotate-video-assets)
@@ -68,21 +66,21 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
    >[!NOTE]
    >
-   >Para salir del modo de anotación toque o haga clic en el icono Anotar (símbolo x), en la parte derecha de la barra de herramientas superior.
+   >Para salir del modo Anotación , pulse o haga clic en el icono Anotar (símbolo x) situado a la derecha de la barra de herramientas superior.
 
 1. Haga clic o toque el icono Añadir anotación (símbolo &quot;+&quot; a la izquierda de la barra de herramientas) para empezar a añadir anotaciones.
 
    >[!NOTE]
    >
-   >Para dejar de añadir anotaciones (y volver a la visualización), toque o haga clic en el icono Cancelar (símbolo x en un círculo blanco), en la parte izquierda de la barra de herramientas superior.
+   >Para dejar de añadir anotaciones (y volver a la visualización), toque o haga clic en el icono Cancelar (símbolo x en un círculo blanco) situado a la izquierda de la barra de herramientas superior.
 
-1. Haga clic o toque el componente necesario (los componentes que se pueden anotar se resaltarán con un borde azul) para añadir la anotación y abrir el cuadro de diálogo:
+1. Toque o haga clic en el componente requerido (los componentes que se pueden anotar se resaltarán con un borde azul) para añadir la anotación y abrir el cuadro de diálogo:
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
-   Aquí podrá utilizar el campo o icono apropiados para:
+   Aquí puede utilizar el campo o icono apropiado para:
 
-   * Especificar el texto de la anotación.
+   * Introduzca el texto de la anotación.
    * Crear un boceto (líneas y formas) para resaltar un área del componente.
 
       El cursor cambiará a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. Las líneas del boceto reflejan el color de la anotación y pueden ser una flecha, un círculo u ovaladas.
@@ -96,7 +94,7 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
-1. Para cerrar el cuadro de diálogo de anotaciones, toque o haga clic fuera del mismo. Se mostrará una vista truncada (la primara palabra) de la anotación, junto con los bocetos, si los hay:
+1. Para cerrar el cuadro de diálogo de anotaciones, toque o haga clic fuera del mismo. Se muestra una vista truncada (la primera palabra) de la anotación, junto con los bocetos, si los hay:
 
    ![screen_shot_2018-03-22at110850](assets/screen_shot_2018-03-22at110850.png)
 
@@ -104,15 +102,15 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
    * Hacer clic en el marcador de texto, o tocarlo, para abrir la anotación. Una vez abierto, puede ver el texto completo, realizar cambios o eliminar la anotación.
 
-      * Los bocetos no pueden eliminarse independientemente de la anotación.
+      * Los bocetos no se pueden eliminar independientemente de la anotación.
    * Cambiar la posición del marcador de texto.
    * Tocar o hacer clic en una línea de un boceto para seleccionar el boceto y arrastrarlo a la posición deseada.
-   * Desplazar o copiar un componente
+   * Mover o copiar un componente
 
-      * Todas las anotaciones relacionadas y sus bocetos también se moverán o copiarán; su posición en relación con el párrafo seguirá siendo la misma.
+      * Las anotaciones relacionadas y sus bocetos también se moverán o copiarán, y su posición en relación con el párrafo seguirá siendo la misma.
 
 
-1. Para salir del modo de anotación y volver al modo anterior, toque o haga clic en el icono Anotar (símbolo x), en la parte derecha de la barra de herramientas superior.
+1. Para salir del modo Anotación y volver al modo utilizado anteriormente, toque o haga clic en el icono Anotar (símbolo x) en la parte derecha de la barra de herramientas superior.
 
 >[!NOTE]
 >
