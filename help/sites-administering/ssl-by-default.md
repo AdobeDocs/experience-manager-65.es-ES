@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 252924afb70dd311a27d04278fbe363db15e9519
+source-git-commit: 9273282b26aeab5f65f0f05aa8ad754962dc59ec
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Un usuario de servicio llamado **ssl-service** se ha creado para esta función. 
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Una vez que introduzca las credenciales, haga clic en **Siguiente** en la esquina superior derecha de la página. A continuación, cargue la clave privada y el certificado asociados para la conexión SSL.
+1. Una vez que introduzca las credenciales, haga clic en **Siguiente** en la esquina superior derecha de la página. A continuación, cargue la clave privada y el certificado asociados para la conexión SSL/TLS.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -152,7 +152,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 ### Vía Paquete {#via-package}
 
-Como alternativa, puede automatizar la configuración de SSL cargando un paquete que ya contiene los elementos necesarios:
+Como alternativa, puede automatizar la configuración SSL/TLS cargando un paquete que ya contiene los elementos necesarios:
 
 * El almacén de claves del usuario del servicio ssl. Se encuentra en */home/users/system/security/ssl-service/keystore* en el repositorio.
 * La variable `GraniteSslConnectorFactory` configuración
@@ -178,7 +178,7 @@ A continuación encontrará un ejemplo para crear un certificado autofirmado en 
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
-1. Genere el certificado SSL y firme con la clave privada. En este ejemplo, caducará dentro de un año:
+1. Genere el certificado SSL/TLS y firme con la clave privada. En este ejemplo, caducará dentro de un año:
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
