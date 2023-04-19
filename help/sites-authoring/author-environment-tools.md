@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 45%
+source-wordcount: '2230'
+ht-degree: 44%
 
 ---
 
@@ -264,7 +264,7 @@ Abra la consola en cuestión, desplácese hasta el recurso y abra **Cronología*
 
 ## Información de la página {#page-information}
 
-La Información de página (icono de ecualizador) abre un menú que también muestra detalles de la última edición y la última publicación. En función de las características de la página, del sitio y de su instancia, habrá más o menos opciones disponibles:
+El botón Información de página (icono de ecualizador) abre un menú que también proporciona detalles sobre la última edición y la última publicación. En función de las características de la página, del sitio y de su instancia, habrá más o menos opciones disponibles:
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -277,7 +277,7 @@ La Información de página (icono de ecualizador) abre un menú que también mue
 * [Editar plantilla](/help/sites-authoring/templates.md); cuando la página se basa en un [plantilla editable](/help/sites-authoring/templates.md#editable-and-static-templates)
 
 * [Ver como aparece publicado](/help/sites-authoring/editing-content.md#view-as-published)
-* [Ver en administración](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* Ver en Administración; abre la página en el [consola Sitios](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Ayuda](/help/sites-authoring/basic-handling.md#accessing-help)
 
 Por ejemplo, cuando corresponda, **Información de la página** también tiene las opciones:
