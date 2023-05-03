@@ -1,16 +1,17 @@
 ---
 title: Consultas persistentes de GraphQL
 description: Aprenda a mantener las consultas de GraphQL en Adobe Experience Manager para optimizar el rendimiento. Las aplicaciones cliente pueden solicitar consultas persistentes mediante el método de GET HTTP y la respuesta se puede almacenar en caché en las capas de Dispatcher y CDN, lo que a la larga mejora el rendimiento de las aplicaciones cliente.
-source-git-commit: f4a3b7edc9187c1984afedb4e3b4c558354a4d84
+exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
+source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1424'
 ht-degree: 72%
 
 ---
 
 # Consultas persistentes de GraphQL {#persisted-queries-caching}
 
-Las consultas persistentes son consultas de GraphQL que se crean y almacenan en el servidor de Adobe Experience Manager (AEM) as a Cloud Service. Las consultas persistentes pueden solicitarlas las aplicaciones cliente con una petición GET. La respuesta de una solicitud de GET se puede almacenar en caché en las capas de Dispatcher y Red de Entrega de Contenido (CDN), lo que mejora en última instancia el rendimiento de la aplicación cliente solicitante. Esto difiere de las consultas estándar de GraphQL, que se ejecutan mediante peticiones POST en las que la respuesta no se puede almacenar en caché fácilmente.
+Las consultas persistentes son consultas de GraphQL que se crean y almacenan en el servidor de Adobe Experience Manager (AEM). Las consultas persistentes pueden solicitarlas las aplicaciones cliente con una petición GET. La respuesta de una solicitud de GET se puede almacenar en caché en las capas de Dispatcher y Red de Entrega de Contenido (CDN), lo que mejora en última instancia el rendimiento de la aplicación cliente solicitante. Esto difiere de las consultas estándar de GraphQL, que se ejecutan mediante peticiones POST en las que la respuesta no se puede almacenar en caché fácilmente.
 
 <!--
 >[!NOTE]
@@ -261,7 +262,7 @@ Tenga en cuenta que `%3B` es la codificación UTF-8 para `;` y `%3D` es la codif
 
 ## Almacenamiento en caché de las consultas persistentes {#caching-persisted-queries}
 
-Se recomiendan las consultas persistentes, ya que se pueden almacenar en caché en la variable [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) y capas de la red de distribución de contenido (CDN), lo que mejora en última instancia el rendimiento de la aplicación cliente solicitante.
+Se recomiendan las consultas persistentes, ya que se pueden almacenar en caché en la variable [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es) y capas de la red de distribución de contenido (CDN), lo que mejora en última instancia el rendimiento de la aplicación cliente solicitante.
 
 De forma predeterminada, AEM invalidará la caché en función de una definición de tiempo de vida (TTL). Estos TTL se pueden definir mediante los siguientes parámetros. Se puede acceder a estos parámetros de varias formas, con variaciones en los nombres según el mecanismo utilizado:
 

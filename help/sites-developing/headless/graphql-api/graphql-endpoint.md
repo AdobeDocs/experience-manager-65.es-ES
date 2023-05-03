@@ -1,13 +1,13 @@
 ---
 title: Administración de puntos de conexión de GraphQL en AEM
-description: Aprenda a administrar los puntos de conexión de GraphQL en Adobe Experience Manager as a Cloud Service para la entrega de contenido sin encabezado.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+description: Obtenga información sobre cómo administrar los extremos de GraphQL en Adobe Experience Manager para la entrega de contenido sin encabezado.
+exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
+source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
+source-wordcount: '511'
+ht-degree: 97%
 
 ---
-
 
 # Administración de puntos de conexión de GraphQL en AEM {#graphql-aem-endpoint}
 
