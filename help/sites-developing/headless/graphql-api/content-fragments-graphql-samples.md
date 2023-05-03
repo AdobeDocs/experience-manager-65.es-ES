@@ -3,10 +3,10 @@ title: 'Formación para utilizar GraphQL con AEM: contenido y consultas de muest
 description: Aprenda a utilizar GraphQL con AEM para ofrecer contenido sin encabezado explorando contenido y consultas de muestra.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: e773990c6bd32df65c7f62060f7eca5547b7b614
 workflow-type: tm+mt
-source-wordcount: '1530'
-ht-degree: 93%
+source-wordcount: '1586'
+ht-degree: 91%
 
 ---
 
@@ -1306,15 +1306,15 @@ Esta consulta busca lo siguiente:
 
 **Consulta de muestra**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
@@ -1323,16 +1323,42 @@ Esta consulta busca lo siguiente:
 
 ### Consulta de muestra para un fragmento de contenido anidado: tipo de modelo múltiple {#sample-wknd-nested-fragment-multiple-model}
 
+#### Tipo de modelo al que se hace referencia única
+
 Esta consulta busca lo siguiente:
 
 * para varios fragmentos de contenido de tipo `bookmark`
-   * con referencias de fragmento a otros fragmentos de tipos de modelo específicos `article` y `adventure`
+   * con referencias de fragmento a otros fragmentos del tipo de modelo específico `article`
 
 >[!NOTE]
 >
->El campo `fragments` tiene el tipo de datos `fragment-reference`, con los modelos `Article` y `Adventure` seleccionados.
+>El campo `fragments` tiene el tipo de datos `fragment-reference`, con el modelo `Article` seleccionados. Entregas de consultas `fragments` como una matriz de `[Article]`.
 
-```xml
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Varios tipos de modelo a los que se hace referencia
+
+Esta consulta busca lo siguiente:
+
+* para varios fragmentos de contenido de tipo `bookmark`
+   * con referencias de fragmento a otros fragmentos de tipos de modelo específicos `Article` y `Adventure`
+
+>[!NOTE]
+>
+>El campo `fragments` tiene el tipo de datos `fragment-reference`, con los modelos `Article` y `Adventure` seleccionados. Entregas de consultas `fragments` como una matriz de `[AllFragmentModels]`, al que se hace referencia con el tipo de unión.
+
+```graphql
 {
   bookmarkList {
     items {
