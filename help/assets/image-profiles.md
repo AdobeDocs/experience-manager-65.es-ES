@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: bbb64f44c80e96bafcd53277f6d753d84acf5189
+source-git-commit: bb0658ef33736587fbc191738d57cf586e5cba9d
 workflow-type: tm+mt
-source-wordcount: '3047'
+source-wordcount: '3045'
 ht-degree: 6%
 
 ---
@@ -63,7 +63,7 @@ Para mantener bajo control el uso de Smart Crop y optimizar el tiempo de procesa
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
-Tiene dos opciones de recorte de imagen para elegir. También puede automatizar la creación de muestras de color e imagen o conservar el contenido de recorte en las resoluciones de destino.
+Tiene dos opciones de recorte de imagen para elegir: Recorte de píxeles o recorte inteligente. También puede automatizar la creación de muestras de color e imagen.
 
 >[!IMPORTANT]
 ・ Adobe recomienda revisar los cultivos y muestras generados para asegurarse de que sean adecuados y relevantes para su marca y sus valores.
