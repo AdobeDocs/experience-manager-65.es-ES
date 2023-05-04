@@ -8,10 +8,10 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 76%
+source-wordcount: '1673'
+ht-degree: 77%
 
 ---
 
@@ -29,11 +29,11 @@ Si está utilizando Forms Workflow, la base de datos de AEM Forms puede conten
 
 Los servicios de publicación de Process Reporting publican todos los datos de AEM Forms disponibles actualmente en la base de datos. Esto implica que si la base de datos contiene datos heredados sobre los que no desea ejecutar informes y consultas, todos esos datos también se publicarán en el repositorio aunque no se requieran para realizar informes. Se recomienda depurar estos datos antes de ejecutar los servicios para publicar los datos en el repositorio de Process Reporting. Al hacerlo, mejora el rendimiento tanto del servicio de editor como del servicio que consulta los datos para la realización de informes.
 
-Para obtener más información sobre la depuración de datos de procesos de AEM Forms, consulte [Depuración de datos de procesos](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+Para obtener más información sobre la depuración de datos de procesos de AEM Forms, consulte [Depuración de datos de procesos](/help/forms/using/admin-help/purging-process-data.md).
 
 >[!NOTE]
 >
->Para obtener sugerencias y trucos sobre la utilidad de depuración, consulte el artículo de Adobe Developer Connection sobre la [depuración de procesos y trabajos](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+>Para obtener sugerencias y trucos sobre la utilidad de depuración, consulte el artículo de Adobe Developer Connection sobre la [depuración de procesos y trabajos](/help/forms/using/admin-help/purging-process-data.md).
 
 ## Configuración de los servicios de Process Reporting {#configuring-process-reporting-services}
 

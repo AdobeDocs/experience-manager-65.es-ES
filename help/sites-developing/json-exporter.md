@@ -10,10 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 35%
+source-wordcount: '431'
+ht-degree: 36%
 
 ---
 
@@ -97,7 +97,7 @@ Consulte también lo siguiente:
 
 Para obtener más información, consulte:
 
-* La variable [Tema Fragmentos de contenido en la guía del usuario de Assets](https://experienceleague.adobe.com/docs/experience-manager-64/assets/home.html?lang=en&amp;topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* La variable [Tema Fragmentos de contenido en la guía del usuario de Assets](/help/assets/content-fragments/content-fragments.md)
 
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 * [Creación con fragmentos de contenido](/help/sites-authoring/content-fragments.md)

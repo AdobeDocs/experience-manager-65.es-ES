@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -57,10 +57,10 @@ Si falla un solo nodo de un clúster de nodos múltiples y los nodos restantes d
 1. (Servidor de aplicaciones WebSphere®) Si está recuperando una nueva instancia de WebSphere® Application Server, ejecute el comando restoreConfig.bat/sh.
 1. Recupere la base de datos de formularios AEM ejecutando primero una operación de restauración de la base de datos utilizando los archivos de copia de seguridad de la base de datos y aplicando los redo logs de transacciones a la base de datos recuperada. (Consulte [base de datos de AEM forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Para obtener más información, consulte uno de estos artículos de la base de conocimientos:
 
-   * [Copia de seguridad y recuperación de DB2® para formularios AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#db2)
-   * [Copia de seguridad y recuperación de oracle para formularios AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#oracle)
-   * [Copia de seguridad y recuperación de Microsoft® SQL Server para formularios AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#sql-server)
-   * [Copia de seguridad y recuperación de MySQL para formularios AEM](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#mysql)
+   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [Copia de seguridad y recuperación de oracle para formularios AEM](/help/forms/using/admin-help/files-back-recover.md#oracle)
+   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [Copia de seguridad y recuperación de MySQL para formularios AEM](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Recupere el directorio GDS eliminando primero el contenido del directorio GDS en la instalación existente de AEM formularios y copiando el contenido del directorio GDS de la copia de seguridad de GDS. Si ha cambiado la ubicación del directorio GDS, consulte [Cambio de la ubicación de GDS durante la recuperación](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 1. Cambie el nombre del directorio de copia de seguridad GDS que desea restaurar, como se muestra en estos ejemplos:

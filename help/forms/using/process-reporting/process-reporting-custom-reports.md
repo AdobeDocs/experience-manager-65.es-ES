@@ -10,10 +10,10 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: bd33c0884be55b76ef526c8c938236e743dc3dc6
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 90%
+source-wordcount: '953'
+ht-degree: 92%
 
 ---
 
@@ -632,7 +632,7 @@ response.setCharacterEncoding("utf-8");
 
 ## Integración de la interfaz de usuario del informe en la interfaz de usuario de Process Reporting existente  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-Los requisitos previos para crear una interfaz de usuario independiente para mostrar los resultados son conocer los [conceptos básicos de Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [crear un nodo CRX](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html?lang=en#creating-a-node) y proporcionar [privilegios de acceso](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html?lang=en#access-control).
+Los requisitos previos para crear una interfaz de usuario independiente para mostrar los resultados son conocer los [conceptos básicos de Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [crear un nodo CRX](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) y proporcionar [privilegios de acceso](/help/sites-developing/developing-with-crxde-lite.md#access-control).
 
 1. Cree una interfaz de usuario independiente.
 1. Cree un nodo secundario `nt:unstructured` en el nodo `/content/process-reporting-runtime/custom-reports` para cada informe conectable.

@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1465'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ Si se realizan demasiados cambios y confirmaciones en el repositorio en un corto
 1. Para evitar superar los límites aceptables de las colas de observación, se recomienda:
 
    * Reduzca la velocidad constante de confirmaciones. Los picos cortos en confirmaciones son aceptables, pero la tasa constante debería reducirse.
-   * Aumente el tamaño de la variable `DiffCache` tal como se describe en [Consejos de ajuste de rendimiento > Ajuste de almacenamiento Mongo > Tamaño de la caché del documento](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/configuring-performance.html?lang=en).
+   * Aumente el tamaño de la variable `DiffCache` tal como se describe en [Consejos de ajuste de rendimiento > Ajuste de almacenamiento Mongo > Tamaño de la caché del documento](/help/sites-deploying/configuring-performance.md).
 
 ## Identificación y corrección de un proceso de reindexación atascado {#identifying-and-remediating-a-stuck-re-indexing-process}
 

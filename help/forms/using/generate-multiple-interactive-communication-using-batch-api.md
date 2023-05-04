@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2228'
-ht-degree: 99%
+source-wordcount: '2207'
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Los registros se combinan con una plantilla de comunicación interactiva para ge
 
 Para crear una comunicación interactiva a partir de los registros guardados en un archivo JSON:
 
-1. Cree una [Carpeta inspeccionada](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) y configúrela para utilizar la API por lotes:
+1. Cree una [Carpeta inspeccionada](/help/forms/using/creating-configure-watched-folder.md) y configúrela para utilizar la API por lotes:
    1. Inicie sesión en la instancia de autor de AEM Forms.
    1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta inspeccionada]**. Pulse **[!UICONTROL Nueva]**.
    1. Especifique el **[!UICONTROL Nombre]** y la **[!UICONTROL Ruta]** física de la carpeta. Por ejemplo, `c:\batchprocessing`.
@@ -109,7 +109,7 @@ Para crear una comunicación interactiva a partir de los registros guardados en 
 
 #### Utilice los datos de entrada guardados en una fuente de datos externa y a los que se accede a través del modelo de datos de formulario para generar una comunicación interactiva {#use-fdm-as-data-source}
 
-Los datos (registros) guardados en una fuente de datos externa se combinan con una plantilla de comunicación interactiva para generar una comunicación interactiva. Cuando se crea una comunicación interactiva, se conecta a una fuente de datos externa a través de un modelo de datos de formulario (FDM) para acceder a los datos. Puede configurar el servicio de procesamiento por lotes de las carpetas inspeccionadas para que recupere los datos utilizando el mismo modelo de datos de formulario de una fuente de datos externa. Para [crear una comunicación interactiva a partir de los registros guardados en una fuente de datos externa](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
+Los datos (registros) guardados en una fuente de datos externa se combinan con una plantilla de comunicación interactiva para generar una comunicación interactiva. Cuando se crea una comunicación interactiva, se conecta a una fuente de datos externa a través de un modelo de datos de formulario (FDM) para acceder a los datos. Puede configurar el servicio de procesamiento por lotes de las carpetas inspeccionadas para que recupere los datos utilizando el mismo modelo de datos de formulario de una fuente de datos externa. Para [crear una comunicación interactiva a partir de los registros guardados en una fuente de datos externa](/help/forms/using/work-with-form-data-model.md):
 
 1. Configure el modelo de datos de formulario de la plantilla:
    1. Abra el modelo de datos de formulario asociado a la plantilla de comunicación interactiva.
@@ -141,7 +141,7 @@ Los datos (registros) guardados en una fuente de datos externa se combinan con u
 
    1. Guarde y cierre el archivo.
 
-1. Cree una [carpeta inspeccionada](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) y configúrela para utilizar el servicio de la API por lotes:
+1. Cree una [carpeta inspeccionada](/help/forms/using/creating-configure-watched-folder.md) y configúrela para utilizar el servicio de la API por lotes:
    1. Inicie sesión en la instancia de autor de AEM Forms.
    1. Vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar carpeta inspeccionada]**. Pulse **[!UICONTROL Nueva]**.
    1. Especifique el **[!UICONTROL Nombre]** y la **[!UICONTROL Ruta]** física de la carpeta. Por ejemplo, `c:\batchprocessing`.
