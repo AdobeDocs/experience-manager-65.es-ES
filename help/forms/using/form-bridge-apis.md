@@ -119,6 +119,7 @@ devuelve el número de versión de la biblioteca de scripts.
          "submitUrl" : "`<submitUrl>`"
          });
          ```
+
    * **config:** el valor de la configuración.
 
 
