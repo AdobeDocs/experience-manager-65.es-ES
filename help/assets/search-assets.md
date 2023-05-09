@@ -6,7 +6,8 @@ mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+hide: true
+source-git-commit: eac578f8c8ef3bfc3c94929814398486777094f0
 workflow-type: tm+mt
 source-wordcount: '5601'
 ht-degree: 6%
@@ -245,7 +246,7 @@ El selector de recursos utiliza el HTML 5 `Window.postMessage` para enviar datos
 
 Pase los siguientes parámetros de solicitud en una dirección URL para iniciar el selector de recursos en un contexto determinado:
 
-| Nombre | Valores | Ejemplo | Función |
+| Nombre | Valores | Ejemplos | Función |
 |---|---|---|---|
 | sufijo de recurso (B) | Ruta de carpeta como sufijo de recurso en la URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Para iniciar el selector de recursos con una carpeta concreta seleccionada, por ejemplo, con la carpeta `/content/dam/we-retail/en/activities` seleccionada, la dirección URL debe tener el siguiente formato: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Si necesita seleccionar una carpeta concreta cuando se inicia el selector de recursos, pasarla como sufijo de recurso. |
 | `mode` | único, múltiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | En el modo múltiple, puede seleccionar varios recursos simultáneamente mediante el selector de recursos. |
