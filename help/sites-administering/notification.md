@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: e803fde42cfb7b7c9d3fb6483ca661ce386d6464
+source-git-commit: 144fbe2d0efe20d848e9556f8d652a403d1835b2
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2019'
 ht-degree: 12%
 
 ---
@@ -150,57 +150,6 @@ Donde &lt;text_x> puede ser una mezcla de texto estático y variables de cadena 
 
    PageModified => /content/geometrixx/en/products
 
-### Plantillas de correo electrónico para la notificación del foro {#email-templates-for-forum-notification}
-
-Las plantillas de correo electrónico para las notificaciones del foro se encuentran en:
-
-`/etc/notification/email/default/com.day.cq.collab.forum`
-
-La plantilla predeterminada en inglés ( `en.txt`) se define de la siguiente manera:
-
-```xml
-subject=[CQ Forum Notification]
-
-header=-------------------------------------------------------------------------------------\n \
-Time: Time: ${time}\n \
-Forum Page Path: ${forum.path}\n \
--------------------------------------------------------------------------------------\n\n
-
-message=Page: ${host.prefix}${forum.path}.html\n
-
-footer=\n \
--------------------------------------------------------------------------------------\n \
-This is an automatically generated message. Please do not reply.
-```
-
-#### Personalización de plantillas de correo electrónico para notificaciones de foro {#customizing-email-templates-for-forum-notification}
-
-Para personalizar la plantilla de correo electrónico en inglés para la notificación del foro:
-
-1. En CRXDE, abra el archivo :
-
-   `/etc/notification/email/default/com.day.cq.collab.forum/en.txt`
-
-1. Modifique el archivo según sus necesidades.
-1. Guarde los cambios.
-
-La plantilla debe tener el siguiente formato:
-
-```
- subject=<text_1>
- header=<text_2>
- message=<text_3>
- footer=<text_4>
-```
-
-Donde `<text_x>` puede ser una mezcla de texto estático y variables de cadena dinámicas.
-
-En la plantilla de correo electrónico para las notificaciones del foro se pueden utilizar las siguientes variables:
-
-* `${time}`, la fecha y hora del evento.
-
-* `${forum.path}`, la ruta a la página del foro.
-
 ### Plantillas de correo electrónico para notificación de flujo de trabajo {#email-templates-for-workflow-notification}
 
 La plantilla de correo electrónico para las notificaciones de flujo de trabajo (en inglés) se encuentra en:
@@ -293,7 +242,6 @@ Para añadir una plantilla para un nuevo idioma:
 1. En CRXDE, agregue un archivo `<language-code>.txt` abajo:
 
    * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : para notificaciones de página
-   * `/etc/notification/email/default/com.day.cq.collab.forum` : para notificaciones de foro
    * `/libs/settings/workflow/notification/email/default` : para notificaciones de flujo de trabajo
 
 1. Adapte el archivo al idioma.

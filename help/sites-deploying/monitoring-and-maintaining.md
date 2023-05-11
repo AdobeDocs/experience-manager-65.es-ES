@@ -10,7 +10,7 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: bb27c7dfedd5a16728674f7584b0c462a92646e6
 workflow-type: tm+mt
 source-wordcount: '5934'
 ht-degree: 1%
@@ -247,9 +247,9 @@ Contiene mensajes de registro que indican eventos durante el inicio.
 Proporciona un registro de todas las operaciones de actualización que se ejecutan desde el 
 `com.day.compat.codeupgrade` y `com.adobe.cq.upgradesexecutor` paquetes.
 
-* `<cq-installation-dir>/crx-quickstart/repository`
+* `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
-   * `revision.log`
+   * `journal.log`
 Revisión de la información de diario.
 
 >[!NOTE]
@@ -1095,9 +1095,9 @@ La siguiente es una lista de sugerencias sobre qué comprobar si comienza a expe
 
 >[!NOTE]
 Consulte también los siguientes artículos para obtener más información:
-* [Volcados de subprocesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
-* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
-* [Analizar mediante el perfilador integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
+* [Volcados de subprocesos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=es)
+* [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
+* [Analizar mediante el perfilador integrado](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=es)
 * [Analizar procesos lentos y bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1123,7 +1123,7 @@ En estos casos, compruebe:
 * La configuración de JVM utilizada para [inicio AEM](/help/sites-deploying/deploy.md#getting-started)
 * La base de conocimientos:
 
-   * [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+   * [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es)
 
 ### E/S de disco {#disk-i-o}
 
@@ -1141,7 +1141,7 @@ Si el sistema se está quedando sin espacio en disco o observa que se está bloq
 * Si ha configurado [Depuración de versiones](/help/sites-deploying/version-purging.md)
 * La base de conocimientos:
 
-   * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
+   * [Demasiados archivos abiertos](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=es)
    * [El diario consume demasiado espacio en disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradación del rendimiento normal {#regular-performance-degradation}
