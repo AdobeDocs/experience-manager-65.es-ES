@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 1b57fca352457e973bd7395e060e3d0495a9d920
+source-git-commit: 25f7218355b7715949273c84eb72ddde3d6a0a65
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '994'
 ht-degree: 84%
 
 ---
@@ -23,7 +23,7 @@ La consola de flujo de trabajo proporciona varias herramientas para administrar 
 
 >[!NOTE]
 >
->El [consola JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) proporciona operaciones de mantenimiento de flujo de trabajo adicionales.
+>La variable [Consola JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) proporciona operaciones de mantenimiento de flujo de trabajo adicionales.
 
 Hay una serie de consolas disponibles para administrar los flujos de trabajo. Utilice la variable [navegación global](/help/sites-authoring/basic-handling.md#global-navigation) para abrir el panel **Herramientas** y, a continuación, seleccione **Flujo de trabajo**:
 
@@ -41,26 +41,27 @@ Hay una serie de consolas disponibles para administrar los flujos de trabajo. Ut
 
    ![wf-96](assets/wf-96.png)
 
+<!--
+## Search Workflow Instances {#search-workflow-instances}
 
-## Buscar instancias de flujo de trabajo {#search-workflow-instances}
-
-1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
-1. Seleccione **Instancias** para mostrar la lista de instancias de flujo de trabajo en progreso. En el carril superior, en la esquina izquierda, seleccione **Filtros**. Alternativamente, puede utilizar las pulsaciones de teclas alt+1. Se muestra el cuadro de diálogo siguiente:
+1. Using Navigation select **Tools**, then **Workflow**.
+1. Select **Instances** to display the list of workflow instances currently in progress. On the top rail, in the left corner, select **Filters**. Alternatively, you can use the keystrokes alt+1. The following dialog is displayed:
 
    ![wf-99-1](assets/wf-99-1.png)
 
-1. En el cuadro de diálogo Filtro, seleccione los criterios de búsqueda del flujo de trabajo. Puede buscar según estas entradas:
+1. In the Filter dialog, select the workflow search criteria. You can search based on these inputs:
 
-   * Ruta de carga útil: Seleccionar una ruta específica
-   * Modelo de flujo de trabajo: Seleccionar un modelo de flujo de trabajo
-   * Usuario asignado: Seleccione un usuario asignado del flujo de trabajo
-   * Tipo: Tarea, elemento de flujo de trabajo o error de flujo de trabajo
-   * Estado de la tarea: Activo, completado o finalizado
-   * Donde Estoy: Propietario AND usuario asignado, solo propietario, solo usuario asignado
-   * Fecha de inicio: Fecha de inicio antes o después de una fecha especificada
-   * Fecha de finalización: Fecha de finalización anterior o posterior a una fecha especificada
-   * Fecha de vencimiento: Fecha de vencimiento antes o después de una fecha especificada
-   * Fecha de actualización: Fecha actualizada antes o después de una fecha especificada
+   * Payload path: Select a specific path
+   * Workflow model: Select a workflow model
+   * Assignee: Select a workflow Assignee
+   * Type: Task, Workflow item, or Workflow Failure
+   * Task Status: Active, Complete, or Terminated
+   * Where I Am: Owner AND Assignee, Owner only, Assignee only
+   * Start Date: Start date before or after a specified date
+   * End Date: End date before or after a specified date
+   * Due Date: Due date before or after a specified date
+   * Updated Date: Updated date before or after a specified date
+-->
 
 ## Suspender, reanudar y finalizar una instancia de flujo de trabajo {#suspending-resuming-and-terminating-a-workflow-instance}
 
@@ -98,7 +99,7 @@ Cuando falla un flujo de trabajo, AEM proporciona la consola **Errores** para qu
 
 * **Detalles del error**
 Abre una ventana para mostrar el 
-**Mensaje de error**, **Etapa**, y **Pila de errores**.
+**Mensaje de error**, **Paso** y **Pila de errores**.
 
 * **Abrir historial**
 Muestra detalles del historial del flujo de trabajo.
@@ -119,11 +120,11 @@ Para investigar los errores y luego reanudar o finalizar el flujo de trabajo má
 
 Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujo de trabajo, por lo que puede depurar con regularidad las instancias de flujo de trabajo completadas o en ejecución desde el repositorio.
 
-Configurar **Configuración de depuración del flujo de trabajo de Adobe Granite** para depurar instancias de flujo de trabajo según su antigüedad y estado. También puede depurar instancias de flujo de trabajo de todos los modelos o de uno específico.
+Configurar **Configuración de depuración del flujo de trabajo de Adobe Granite** para depurar instancias de flujo de trabajo según su edad y estado. También puede depurar instancias de flujo de trabajo de todos los modelos o de uno específico.
 
 También puede crear varias configuraciones del servicio para depurar instancias de flujo de trabajo que cumplan distintos criterios. Por ejemplo, cree una configuración que depure las instancias de un modelo de flujo de trabajo concreto cuando se ejecuten durante mucho más tiempo del esperado. Cree otra configuración que depure todos los flujos de trabajo completados después de un determinado número de días para minimizar el tamaño del repositorio.
 
-Para configurar el servicio, puede utilizar el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describen las propiedades que necesita para cualquiera de los métodos.
+Para configurar el servicio, puede utilizar la variable [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describen las propiedades que necesita para cualquiera de los métodos.
 
 >[!NOTE]
 >
@@ -171,7 +172,7 @@ Para configurar el servicio, puede utilizar el [Consola web](/help/sites-deployi
 
 ## Configuración del tamaño máximo de la bandeja de entrada {#setting-the-maximum-size-of-the-inbox}
 
-Puede establecer el tamaño máximo de la bandeja de entrada configurando **Adobe Granite Workflow Service**, usando el [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describe la propiedad que se configura para cualquiera de los métodos.
+Puede configurar el tamaño máximo de la bandeja de entrada configurando la variable **Servicio de flujo de trabajo de Adobe Granite**, usando la variable [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describe la propiedad que se configura para cualquiera de los métodos.
 
 >[!NOTE]
 >
