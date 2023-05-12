@@ -6,10 +6,11 @@ role: User
 feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '9970'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -96,7 +97,7 @@ Para configurar la tarea de limpieza para los trabajos de carga de bloques no fi
 
 >[!CAUTION]
 >
->La carga de bloques se activa cuando el valor predeterminado es 500 MB y el tamaño del fragmento es 50 MB. Si edita [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) y establezca la variable `timeout configuration` si el tiempo de carga de un recurso es inferior al que tarda un recurso, se produce una situación de tiempo de espera de sesión mientras la carga del recurso está en curso. Por lo tanto, cambie la variable `chunkUploadMinFileSize` y `chunksize` para que cada solicitud de fragmento actualice la sesión.
+>La carga de bloques se activa cuando el valor predeterminado es 500 MB y el tamaño del fragmento es 50 MB. Si edita [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=es) y establezca la variable `timeout configuration` si el tiempo de carga de un recurso es inferior al que tarda un recurso, se produce una situación de tiempo de espera de sesión mientras la carga del recurso está en curso. Por lo tanto, cambie la variable `chunkUploadMinFileSize` y `chunksize` para que cada solicitud de fragmento actualice la sesión.
 >
 >Dado el tiempo de espera de caducidad, la latencia, el ancho de banda y las cargas simultáneas esperadas, el valor más alto que le permite asegurarse de que se selecciona lo siguiente:
 >

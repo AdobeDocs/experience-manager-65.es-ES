@@ -12,10 +12,11 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '2076'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
 
@@ -49,7 +50,7 @@ Esta ayuda describe los dos casos de uso siguientes:
 * [Nueva configuración](#configure-new-integration-65): Si es un nuevo usuario de Brand Portal y desea configurar la instancia de autor de AEM Assets con Brand Portal, puede crear la configuración a través de la consola de Adobe Developer.
 * [Actualización de la configuración](#upgrade-integration-65): Si ya es un usuario de Brand Portal con configuración en la puerta de enlace OAuth heredada, elimine la configuración existente y cree una nueva configuración a través de la consola de Adobe Developer.
 
-La información proporcionada se basa en el supuesto de que cualquier persona que lea esta Ayuda está familiarizada con las siguientes tecnologías:
+La información proporcionada se basa en la suposición de que cualquiera que lea esta Ayuda está familiarizado con las siguientes tecnologías:
 
 * Instalación, configuración y administración de paquetes de Adobe Experience Manager y AEM.
 
@@ -65,7 +66,7 @@ Para configurar AEM Assets con Brand Portal, es necesario lo siguiente:
 
 [Descargar e instalar AEM 6.5](#aemquickstart)
 
-[Descargar e instalar AEM Service Pack más reciente](#servicepack)
+[Descargue e instale el Service Pack de AEM más reciente](#servicepack)
 
 ### Descargar e instalar AEM 6.5 {#aemquickstart}
 
@@ -299,7 +300,7 @@ Siga estos pasos para configurar el servicio en la nube de Brand Portal:
 
    ![](assets/create-cloud-service.png)
 
-1. Haga clic en **[!UICONTROL Guardar y cerrar]**. Se crea la configuración de nube.
+1. Haga clic en **[!UICONTROL Guardar y cerrar]**. Se crea la configuración de la nube.
 
    La instancia de autor de AEM Assets ahora está configurada con el inquilino de Brand Portal.
 
