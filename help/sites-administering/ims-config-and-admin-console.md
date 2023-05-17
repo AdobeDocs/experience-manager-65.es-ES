@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 11db7c44853f95380fa5200efaf5691ad08b3729
+source-git-commit: fff35031eaf55b185870da56a0b66f9145b1ec41
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1676'
 ht-degree: 10%
 
 ---
@@ -133,10 +133,10 @@ Puede encontrar más información sobre las nuevas funciones de grupo aquí:
 >
 >La herramienta de sincronización de usuarios debe registrarse como cliente de Adobe I/O UMAPI mediante el procedimiento descrito [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->La documentación de la Consola de Adobe I/O se encuentra [here](https://www.adobe.io/apis/cloudplatform/console.html).
+>La documentación de la Consola de Adobe I/O se encuentra [here](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
->La variable [!DNL User Management] La API que utiliza la herramienta de sincronización de usuarios se explica en esta [ubicación](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>La variable [!DNL User Management] La API que utiliza la herramienta de sincronización de usuarios se explica en esta [ubicación](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >
