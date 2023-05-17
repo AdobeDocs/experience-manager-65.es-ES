@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 7f595bec8ea138d5a73a17d0548320a31544dcd1
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 49%
+source-wordcount: '1018'
+ht-degree: 48%
 
 ---
 
@@ -66,6 +66,8 @@ Puede crear un lanzamiento desde la consola Sitios o Lanzamientos :
    >Para agregar páginas o ramas a un lanzamiento, deben estar dentro de un sitio; es decir, debajo de una raíz de nivel superior común.
    >
    >Si un sitio contiene raíces de idioma por debajo del nivel superior, las páginas y ramas de un lanzamiento deben estar por debajo de una raíz de idioma común.
+   >
+   >Si intenta crear un lanzamiento con una página principal o secundaria en la ruta de origen, fallará y devolverá el error &quot;El destino ya existe en la ruta de acceso :a la página&quot;.
 
 1. Para cada entrada puede especificar si:
 
