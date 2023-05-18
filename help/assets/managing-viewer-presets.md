@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
-source-wordcount: '4523'
+source-wordcount: '4519'
 ht-degree: 8%
 
 ---
@@ -60,7 +60,7 @@ Consulte [Biblioteca de imágenes adaptables](https://experienceleague.adobe.com
 
 >[!NOTE]
 >
->Tenga en cuenta que debe publicar todos los visores integrados antes de usarlos por primera vez.
+>Publique todos los visores integrados antes de usarlos por primera vez.
 >Consulte [Ajustes preestablecidos del visualizador de publicaciones].(#publishing-viewer-presets)
 
 ### Compatibilidad del sistema con ajustes preestablecidos del visor {#viewer-preset-system-compatibility}
@@ -72,7 +72,7 @@ Todos los ajustes preestablecidos de visor integrados que se incluyen con Dynami
 * Apple iPad
 * Smartphone Android™
 * Tableta Android™
-* Para vídeo, se proporciona compatibilidad adicional con la reproducción de MP4 para [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) y [Windows Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
+* Para vídeo, se proporciona compatibilidad adicional con la reproducción de MP4 para [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) y [Windows Phone](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Tipos de medios enriquecidos para ajustes preestablecidos de visor {#rich-media-types-for-viewer-presets}
 
