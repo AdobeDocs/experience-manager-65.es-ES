@@ -11,9 +11,9 @@ discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4edfc51227607b4fb3ee4b97443d2040015b6a65
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '635'
 ht-degree: 100%
 
 ---
@@ -73,12 +73,6 @@ Esta sección describe lo que sucede cuando se crea o configura una revisión.
    * **Fecha límite de la revisión**: disponible para edición. Se puede modificar la fecha límite para establecer cualquier fecha y hora posterior a la fecha y la hora actuales.
 
    * **Revisores**: disponible para edición. Puede agregar o quitar revisores. Si una tarea ha vencido, solo podrá agregar revisores una vez que amplíe la fecha límite hasta pasada la fecha actual.
-
-1. Edite los campos necesarios y, a continuación, haga clic en Actualizar.
-
-   ![Revisar el estado actualizado en el Administrador de tareas](assets/tskmgr.png)
-
-   Revisar el estado actualizado en el Administrador de tareas
 
 1. Para finalizar la revisión, haga clic en Finalizar.
 
