@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
 exl-id: ee5e8ebb-773f-4aa6-9c3e-2cc3bf4a3bbd
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: ce9969c8dd1961ebb2bef69559f8ee13864a90f5
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 32%
+source-wordcount: '118'
+ht-degree: 27%
 
 ---
 
@@ -24,6 +24,7 @@ ht-degree: 32%
 * [Analytics con proveedores externos](/help/sites-administering/external-providers.md)
 * [Productor de catálogos](/help/sites-administering/catalog-producer.md)
 * [Conector de SharePoint](/help/sites-administering/sharepoint-connector.md)
+* [Comprenda, aplique y depure etiquetas inteligentes](/help/assets/enhanced-smart-tags.md)
 
 AEM La siguiente información está disponible acerca de la integración de la integración de con otros servicios de Adobe o de terceros:
 
