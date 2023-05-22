@@ -74,7 +74,7 @@ Las acciones que se pueden realizar en el contenido publicado (UGC) var√≠an seg√
  <tbody>
   <tr>
    <td> </td>
-   <td><strong>Administrador</strong></td>
+   <td><strong>Administradores</strong></td>
    <td><strong>Moderador</strong></td>
    <td><strong>Creador</strong></td>
    <td><strong>Miembro</strong></td>
