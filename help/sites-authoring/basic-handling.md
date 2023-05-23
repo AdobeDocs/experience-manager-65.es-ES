@@ -1,6 +1,6 @@
 ---
-title: Control básico al usar el entorno de creación de AEM
-description: Familiarícese con la navegación AEM y su uso básico
+title: AEM Gestión básica al utilizar el entorno de autor de la
+description: AEM Familiarícese con la navegación por el y su uso básico
 uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -20,9 +20,9 @@ ht-degree: 41%
 
 >[!NOTE]
 >
->* Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de AEM. Utiliza la consola **Sitios** como base. 
+>* AEM Esta página se ha diseñado para ofrecer una descripción general de la gestión básica cuando se utiliza el entorno de creación de. Utiliza la consola **Sitios** como base. 
 >
->* Algunas funciones no están disponibles en todas las consolas y algunas consolas pueden disponer de funcionalidades adicionales. La información específica sobre las consolas individuales y sus funciones relacionadas se tratará con más detalle en otras páginas.
+>* Algunas funcionalidades no están disponibles en todas las consolas y es posible que otras funcionalidades adicionales estén disponibles en algunas consolas. La información específica acerca de las consolas individuales y sus funciones relacionadas se tratará con más detalle en otras páginas.
 >* Los métodos abreviados del teclado están disponibles mediante AEM, sobre todo al [utilizar las consolas](/help/sites-authoring/keyboard-shortcuts.md) y [al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
@@ -31,13 +31,13 @@ ht-degree: 41%
 
 ### Una interfaz con capacidad táctil {#a-touch-enabled-ui}
 
-AEM interfaz de usuario se ha habilitado para el uso táctil. Una interfaz con capacidad táctil le permite utilizar el tacto para interactuar con el software mediante gestos como pulsar, pulsar y mantener o deslizar el dedo. Esto contrasta con el funcionamiento de una interfaz de escritorio tradicional con las acciones del ratón, como hacer clic, hacer doble clic, hacer clic con el botón derecho y pasar el ratón.
+AEM Se ha habilitado la interfaz de usuario para el contacto con el usuario. Una interfaz con capacidad táctil le permite utilizar el tacto para interactuar con el software mediante gestos como pulsar, pulsar y mantener o deslizar el dedo. Esto contrasta con el funcionamiento de una interfaz de escritorio tradicional con acciones del ratón, como hacer clic, hacer doble clic, hacer clic con el botón secundario y pasar el ratón por encima.
 
-Como la interfaz de usuario de AEM es táctil, puede utilizar los gestos táctiles en dispositivos táctiles (por ejemplo, móviles o tabletas) y las acciones del ratón en un dispositivo de escritorio tradicional.
+AEM Como la interfaz de usuario de la pantalla es táctil, puede utilizar los gestos táctiles en sus dispositivos táctiles (por ejemplo, móviles o tabletas) y las acciones del ratón en un dispositivo de escritorio tradicional.
 
 ### Primeros pasos {#first-steps}
 
-Inmediatamente después de iniciar sesión llega al [Panel de navegación](#navigation-panel). Al seleccionar una de las opciones, se abre la consola correspondiente.
+Inmediatamente después de iniciar sesión, llegará a la [Panel de navegación](#navigation-panel). Al seleccionar una de las opciones, se abre la consola correspondiente.
 
 ![bh-01](assets/bh-01.png)
 
@@ -49,7 +49,7 @@ Inmediatamente después de iniciar sesión llega al [Panel de navegación](#navi
 
 ### Navegación de productos    {#product-navigation}
 
-Cada vez que un usuario accede por primera vez a una consola, se inicia un tutorial de navegación por el producto. Tómese un minuto para hacer clic o pulsar para obtener una buena descripción general de la gestión básica de AEM.
+Cada vez que un usuario accede por primera vez a una consola, se inicia un tutorial de navegación de productos. AEM Tómese un minuto para hacer clic o tocar para obtener una buena descripción general de la gestión básica de los problemas de la.
 
 ![bh-02](assets/bh-02.png)
 
@@ -59,7 +59,7 @@ La descripción general se reiniciará la próxima vez que acceda a una consola,
 
 ## Navegación global {#global-navigation}
 
-Puede navegar entre las consolas con el panel de navegación global. Esto se activa como una lista desplegable de pantalla completa cuando toca o hace clic en el vínculo de Adobe Experience Manager en la parte superior izquierda de la pantalla.
+Puede navegar entre las consolas con el panel de navegación global. Se activa como una lista desplegable de pantalla completa cuando se hace clic o se pulsa en el vínculo de Adobe Experience Manager en la parte superior izquierda de la pantalla.
 
 Para volver a la ubicación anterior, puede cerrar el panel de navegación global tocando o haciendo clic en **Cerrar**.
 
@@ -67,18 +67,18 @@ Para volver a la ubicación anterior, puede cerrar el panel de navegación globa
 
 >[!NOTE]
 >
->Al iniciar sesión por primera vez, presentó la variable **Navegación** panel.
+>Cuando inicie sesión por primera vez, presentó el **Navegación** panel.
 
 La navegación global dispone de dos paneles, representados por iconos en el lado izquierdo de la pantalla:
 
 * **[Navegación](/help/sites-authoring/basic-handling.md#navigation-panel)**: se representa mediante una brújula   
 * **[Herramientas](/help/sites-authoring/basic-handling.md#tools-panel)** - Representado por un martillo
 
-A continuación se describen las opciones disponibles en estos paneles.
+A continuación, se describen las opciones disponibles en estos paneles.
 
 ### Panel de navegación    {#navigation-panel}
 
-El panel Navegación proporciona acceso a las consolas de AEM:
+AEM El panel Navegación proporciona acceso a las consolas de la:
 
 ![bh-01](assets/bh-01.png)
 
@@ -94,7 +94,7 @@ En Navegación, las consolas disponibles son:
   </tr>
   <tr>
    <td>Assets<br /> </td>
-   <td>Estas consolas le permiten importar y <a href="/help/assets/home.md">administrar recursos digitales</a> como imágenes, vídeos, documentos y archivos de audio. Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de AEM. </td>
+   <td>Estas consolas permiten importar y <a href="/help/assets/home.md">administrar recursos digitales</a> como imágenes, vídeos, documentos y archivos de audio. AEM Estos recursos se pueden utilizar en cualquier sitio web que ejecute la misma instancia de. </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -102,15 +102,15 @@ En Navegación, las consolas disponibles son:
   </tr>
   <tr>
    <td>Comercio</td>
-   <td>Esto le permite administrar productos, catálogos de productos y pedidos relacionados con su <a href="/help/commerce/cif-classic/administering/ecommerce.md">Comercio</a> sitios web.</td>
+   <td>Esto le permite administrar productos, catálogos de productos y pedidos relacionados con su <a href="/help/commerce/cif-classic/administering/ecommerce.md">Comercio</a> sitios.</td>
   </tr>
   <tr>
    <td>Fragmentos de experiencias</td>
-   <td>Un <a href="/help/sites-authoring/experience-fragments.md">fragmento de experiencia</a> es una experiencia independiente que puede reutilizarse en varios canales y tener variaciones, lo que evita el problema de copiar y pegar repetidas veces experiencias o partes de experiencias.</td>
+   <td>Un <a href="/help/sites-authoring/experience-fragments.md">fragmento de experiencias</a> es una experiencia independiente que se puede reutilizar en todos los canales y que tiene variaciones, de modo que se evita el problema de copiar y pegar repetidas veces experiencias o partes de experiencias.</td>
   </tr>
   <tr>
    <td>Forms</td>
-   <td>Esta consola le permite crear, administrar y procesar sus <a href="/help/forms/home.md">formularios y documentos</a>.</td>
+   <td>Esta consola le permite crear, administrar y procesar su <a href="/help/forms/home.md">formularios y documentos</a>.</td>
   </tr>
   <tr>
    <td>Personalización</td>
@@ -118,28 +118,28 @@ En Navegación, las consolas disponibles son:
   </tr>
   <tr>
    <td>Proyectos</td>
-   <td>La variable <a href="/help/sites-authoring/touch-ui-managing-projects.md">La consola Proyectos le permite acceder directamente a sus proyectos</a>. Los proyectos son tableros virtuales. Se pueden utilizar para crear un equipo y permitirle acceder a recursos, flujos de trabajo y tareas, para que todos puedan trabajar en un objetivo común. <br /> </td>
+   <td>El <a href="/help/sites-authoring/touch-ui-managing-projects.md">La consola Proyectos le proporciona acceso directo a sus proyectos</a>. Los proyectos son paneles virtuales. Se pueden utilizar para crear un equipo y, a continuación, darle acceso a los recursos, flujos de trabajo y tareas, lo que permite a las personas trabajar en un objetivo común. <br /> </td>
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Pantallas</a> le permitirá gestionar todas sus pantallas de cliente, de cualquier tamaño y en cualquier ubicación.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> le permitirá gestionar todas las pantallas del cliente, de cualquier tamaño y en cualquier ubicación.</td>
   </tr>
   <tr>
    <td>Sites</td>
-   <td>Las consolas Sitios le permiten <a href="/help/sites-authoring/page-authoring.md">crear, ver y administrar sitios web</a> en la instancia de AEM. Mediante estas consolas puede crear, editar, copiar, mover y eliminar páginas de sitios web, iniciar flujos de trabajo y publicar páginas.<br /> </td>
+   <td>Las consolas Sitios le permiten <a href="/help/sites-authoring/page-authoring.md">creación, visualización y administración de sitios web</a> AEM ejecución en la instancia de la. A través de estas consolas puede crear, editar, copiar, mover y eliminar páginas de sitios web, iniciar flujos de trabajo y publicar páginas.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ### Panel de herramientas {#tools-panel}
 
-En el panel Herramientas, cada opción del panel lateral contiene una serie de submenús. La variable [Consolas de herramientas](/help/sites-administering/tools-consoles.md) disponible aquí proporciona acceso a una serie de consolas y herramientas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido.
+En el panel Herramientas, cada opción del panel lateral contiene una serie de submenús. El [Herramientas consolas](/help/sites-administering/tools-consoles.md) Las disponibles aquí proporcionan acceso a una serie de herramientas y consolas especializadas que le ayudan a administrar sus sitios web, recursos digitales y otros aspectos de su repositorio de contenido.
 
 ![bh-04](assets/bh-04.png)
 
 ## Encabezado {#the-header}
 
-El encabezado de siempre está presente en la parte superior de la pantalla. Aunque la mayoría de las opciones del encabezado siguen siendo las mismas independientemente de dónde esté en el sistema, algunas dependen del contexto.
+El encabezado de siempre está presente en la parte superior de la pantalla. Aunque la mayoría de las opciones del encabezado siguen siendo las mismas independientemente del lugar del sistema, algunas son específicas del contexto.
 
 ![bh-03](assets/bh-03.png)
 
@@ -171,7 +171,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
    >[!NOTE]
    >
-   >Las AEM integradas vienen precargadas con tareas administrativas asignadas al grupo de usuarios administradores. Consulte [Su bandeja de entrada: tareas administrativas listas para usar](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) para obtener más información.
+   >AEM La configuración predeterminada viene precargada con tareas administrativas asignadas al grupo de usuarios del administrador. Consulte [Su bandeja de entrada: tareas administrativas listas para usar](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) para obtener más información.
 
 * [Propiedades del usuario](/help/sites-authoring/user-properties.md)
 
@@ -181,7 +181,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
    ![](do-not-localize/screen_shot_2018-03-23at103943.png)
 
-   Las opciones presentadas dependen de la consola actual. Por ejemplo, en **Sitios** puede seleccionar contenido solamente (el valor predeterminado), la cronología, las referencias o el panel lateral de filtro.
+   Las opciones presentadas dependen de la consola actual. Por ejemplo, en **Sites** puede seleccionar contenido solamente (el valor predeterminado), la cronología, las referencias o el panel lateral de filtro.
 
    ![screen_shot_2018-03-23at104029](assets/screen_shot_2018-03-23at104029.png)
 
@@ -195,7 +195,7 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
    ![bh-06](assets/bh-06.png)
 
-* Selección de período de tiempo de Analytics
+* Selección del período de tiempo de Analytics
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
@@ -219,9 +219,9 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
 * Navegación por teclado
 
-   Puede navegar por un sitio web utilizando solo el teclado. Utiliza la funcionalidad estándar del explorador de la variable **TAB** clave (o **OPT+TAB**) para desplazarlo entre los elementos de la página que se *enfocable*.
+   Puede navegar por un sitio web utilizando solo el teclado. Utiliza la funcionalidad estándar del explorador de **TABULACIÓN** clave (o **OPT+TAB**) para desplazarlo entre los elementos de la página que *enfocable*.
 
-   En la consola **Sites** hay una opción agregada para **Omitir al contenido principal**. Esto se hace visible a medida que *ficha* a través de las opciones de encabezado y acelera la navegación al permitirle omitir los elementos estándar de la barra de herramientas (producto) y llevarle directamente al contenido principal.
+   En la consola **Sites** hay una opción agregada para **Omitir al contenido principal**. Esto se hace visible a medida que *pestaña* a través de las opciones de encabezado y acelera la navegación permitiéndole omitir los elementos estándar en la barra de herramientas (producto), y lo lleva directamente al contenido principal.
 
    ![bh-30](assets/bh-30.png)
 
@@ -229,9 +229,9 @@ El encabezado de siempre está presente en la parte superior de la pantalla. Aun
 
 Hay varios medios de ayuda disponibles:
 
-* **Barra de herramientas de la consola**
+* **Barra de herramientas de consola**
 
-   Según la ubicación, la variable **Ayuda** abrirá los recursos adecuados:
+   Según su ubicación, la variable **Ayuda** abrirá los recursos adecuados:
 
    ![bh-10](assets/bh-10.png)
 
@@ -241,7 +241,7 @@ Hay varios medios de ayuda disponibles:
 
 * **Editor de página**
 
-   La primera vez que edita una página, una serie de diapositivas presentan el editor de páginas.
+   La primera vez que edita una página, se muestra una serie de diapositivas con el editor de páginas.
 
    ![bh-11](assets/bh-11.png)
 
@@ -251,10 +251,10 @@ Hay varios medios de ayuda disponibles:
 
 * **Consola Herramientas**
 
-   En el **Herramientas** también puede acceder a la consola externa **Recursos**:
+   Desde el **Herramientas** consola también puede acceder a la **Recursos**:
 
    * **Documentación**
-Ver la documentación de Web Experience Management
+Ver la documentación de Web Experience Management.
 
    * **Recursos para desarrolladores**
 Recursos y descargas para desarrolladores
@@ -262,7 +262,7 @@ Recursos y descargas para desarrolladores
    >
    >Puede acceder a una descripción general de las teclas de método abreviado disponibles en cualquier momento mediante la tecla de marcación rápida `?` (signo de interrogación) en una consola.
    >
-   >Para obtener una descripción general de todos los métodos abreviados del teclado, consulte la siguiente documentación:
+   >Para obtener una descripción general de todos los métodos abreviados de teclado, consulte la siguiente documentación:
    >
    >    * [Métodos abreviados del teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    >    * [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
@@ -290,9 +290,9 @@ Debido a las restricciones de espacio en algunas ventanas, es posible que la bar
 
 ## Acciones rápidas    {#quick-actions}
 
-En [Vista de tarjeta](#cardviewquickactions) determinadas acciones están disponibles como iconos de acción rápida, así como en la barra de herramientas. Los iconos de acción rápida están disponibles para un único elemento a la vez y no es necesario preseleccionar.
+Entrada [Vista de tarjeta](#cardviewquickactions) algunas acciones están disponibles como iconos de acción rápida y se encuentran en la barra de herramientas. Los iconos de acción rápida están disponibles para un solo elemento a la vez y eliminan la necesidad de preseleccionar.
 
-Las acciones rápidas se pueden ver al pasar el ratón (dispositivo de escritorio) por encima de una tarjeta de recursos. Las acciones rápidas disponibles pueden depender de la consola y el contexto. Por ejemplo, estas son las acciones rápidas para una página de la consola **Sitios**:
+Las acciones rápidas están visibles al pasar el ratón (dispositivo de escritorio) por una tarjeta de recursos. Las acciones rápidas disponibles pueden depender de la consola y del contexto. Por ejemplo, estas son las acciones rápidas para una página de la consola **Sitios**:
 
 ![bh-13](assets/bh-13.png)
 
@@ -339,8 +339,8 @@ La selección de un recurso específico depende de la vista y el dispositivo com
    <td>Vista de tarjeta<br /> </td>
    <td>
     <ul>
-     <li>Escritorio:<br /> Pase el ratón y, a continuación, utilice la acción rápida de marca de verificación</li>
-     <li>Dispositivo móvil:<br /> Mantenga pulsada la tarjeta</li>
+     <li>Escritorio:<br /> Pase el ratón sobre él y utilice la acción rápida de marca</li>
+     <li>Dispositivo móvil:<br /> Pulsar y mantener pulsada la tarjeta</li>
     </ul> </td>
    <td>
     <ul>
@@ -366,10 +366,10 @@ La selección de un recurso específico depende de la vista y el dispositivo com
 
 #### Seleccionar todo {#select-all}
 
-Para seleccionar todos los elementos de cualquier vista, haga clic en el botón **Seleccionar todo** en la esquina superior derecha de la consola.
+Para seleccionar todos los elementos de cualquier vista, haga clic en el icono **Seleccionar todo** en la esquina superior derecha de la consola.
 
-* En **Vista de tarjeta** todas las tarjetas están seleccionadas.
-* En **Vista de lista** se seleccionan todos los elementos de la lista.
+* Entrada **Vista de tarjeta** se seleccionan todas las tarjetas.
+* Entrada **Vista de lista** se seleccionan todos los elementos de la lista.
 * En **Vista de columna**, se seleccionan todos los elementos de la columna situada más a la izquierda.
 
 ![screen-shot_2019-03-05at094659](assets/screen-shot_2019-03-05at094659.png)
@@ -378,15 +378,15 @@ Para seleccionar todos los elementos de cualquier vista, haga clic en el botón 
 
 En todos los casos, el número de elementos que tiene seleccionados se muestra en la parte superior derecha de la barra de herramientas.
 
-Puede anular la selección de todos los elementos y salir del modo de selección:
+Para anular la selección de todos los elementos y salir del modo de selección:
 
-* toque o haga clic en el botón **X** junto al recuento,
+* al tocar o hacer clic en **X** junto al recuento,
 
-* o **escape**.
+* o usando **escapar**.
 
 ![bh-14](assets/bh-14.png)
 
-En todas las vistas, es posible anular la selección de todos los elementos tocando escape en el teclado si utiliza un dispositivo de escritorio.
+En todas las vistas, es posible anular la selección de todos los elementos pulsando ESC en el teclado si utiliza un dispositivo de escritorio.
 
 #### Ejemplo de selección {#selecting-example}
 
@@ -402,18 +402,18 @@ En todas las vistas, es posible anular la selección de todos los elementos toca
 
 ![bh-16](assets/bh-16.png)
 
-La vista de columna permite la navegación visual de un árbol de contenido a través de una serie de columnas en cascada. Esta vista le permite visualizar y recorrer la estructura de árbol de su sitio web.
+La vista de columna permite una navegación visual de un árbol de contenido a través de una serie de columnas en cascada. Esta vista le permite visualizar y recorrer la estructura de árbol del sitio web.
 
-Al seleccionar un recurso en la columna situada más a la izquierda, se mostrarán los recursos secundarios en una columna de la derecha. Al seleccionar un recurso en la columna derecha, se mostrarán los recursos secundarios en otra columna a la derecha, etc.
+Si se selecciona un recurso en la columna situada más a la izquierda, se muestran los recursos secundarios en una columna situada a la derecha. Si se selecciona un recurso en la columna derecha, se muestran los recursos secundarios en otra columna a la derecha, etc.
 
-* Puede desplazarse hacia arriba o hacia abajo en el árbol tocando o haciendo clic en el nombre del recurso o en las comillas angulares a la derecha del nombre del recurso.
+* Puede desplazarse hacia arriba y hacia abajo en el árbol tocando o haciendo clic en el nombre del recurso o en las comillas angulares a la derecha del nombre del recurso.
 
-   * El nombre del recurso y las comillas angulares se resaltarán al tocar o hacer clic en ellos.
+   * El nombre del recurso y las comillas angulares se resaltarán cuando se pulse o haga clic en él.
 
    ![bh-17](assets/bh-17.png)
 
-   * Los elementos secundarios del recurso en el que se ha hecho clic o tocado se muestran en la columna a la derecha del recurso en el que se ha hecho clic o se ha tocado.
-   * Si toca o hace clic en un nombre de recurso que no tiene elementos secundarios, sus detalles se mostrarán en la última columna.
+   * Los elementos secundarios del recurso en el que se hizo clic o pulsó se muestran en la columna a la derecha del recurso en el que se hizo clic o pulsó.
+   * Si pulsa o hace clic en un nombre de recurso que no tiene tareas secundarias, sus detalles se mostrarán en la última columna.
 
 
 * Al tocar o hacer clic en la miniatura, se selecciona el recurso.
@@ -429,7 +429,7 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se mostrar�
    * Título de página
    * Nombre de página (parte de la dirección URL de la página)
    * Plantilla en la que se basa la página
-   * Detalles de la modificación
+   * Detalles de modificación
    * Idioma de la página
    * Detalles de publicación
 
@@ -446,7 +446,7 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se mostrar�
    * Si la página está bloqueada u oculta, o si es parte de una Live Copy.
    * Si procede, cuando tenga que realizar una acción como parte de un flujo de trabajo.
 
-      * Los marcadores que indican acciones requeridas pueden estar relacionados con entradas en su [Bandeja de entrada](/help/sites-authoring/inbox.md).
+      * Los marcadores que indican las acciones requeridas pueden estar relacionados con las entradas de su [Bandeja de entrada](/help/sites-authoring/inbox.md).
 
 * [Acciones rápidas](#quick-actions) también están disponibles en esta vista, como la selección y acciones comunes como la edición.
 
@@ -465,19 +465,19 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se mostrar�
 
    ![bh-20](assets/bh-20.png)
 
-   * Cuando se seleccionan todos los elementos de la lista, esta casilla aparece marcada.
+   * Cuando se seleccionan todos los elementos de la lista, esta casilla de verificación aparece activada.
 
-      * Toque o haga clic en la casilla para anular toda la selección.
-   * Cuando solo se seleccionan algunos elementos, aparece con un signo menos.
+      * Toque o haga clic en la casilla de verificación para anular toda la selección.
+   * Cuando sólo se seleccionan algunos elementos, aparece con un signo menos.
 
       * Toque o haga clic en la casilla de verificación para seleccionar todo.
-      * Toque o haga clic en la casilla de nuevo para anular la selección de todo.
+      * Vuelva a tocar o hacer clic en la casilla de verificación para anular toda la selección.
 
 
-* Seleccione las columnas a mostrar mediante la opción **Ajustes de visualización**, que se encuentra debajo del botón Vistas. Las columnas siguientes están disponibles para la visualización:
+* Seleccione las columnas a mostrar mediante la opción **Ajustes de visualización**, que se encuentra debajo del botón Vistas. Las siguientes columnas están disponibles para su visualización:
 
-   * **Nombre** - Nombre de página, que puede resultar útil en un entorno de creación multilingüe, ya que forma parte de la dirección URL de la página y no cambia con el idioma
-   * **Modificado** - Última fecha de modificación y última modificación por parte del usuario
+   * **Nombre** : Nombre de página, que puede resultar útil en un entorno de creación multilingüe, ya que forma parte de la dirección URL de la página y no cambia independientemente del idioma
+   * **Modificado** - Fecha de la última modificación y última modificación del usuario
    * **Publicado** - Estado de publicación
    * **Plantilla**: plantilla en la que se basa la página
    * **Flujo de trabajo** - Flujo de trabajo aplicado actualmente a la página. Tiene más información disponible al pasar el ratón o abrir la línea de tiempo.
@@ -488,7 +488,7 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se mostrar�
 
    ![bh-21](assets/bh-21.png)
 
-   De forma predeterminada se muestra la columna **Nombre**, que es parte de la dirección URL de la página. En algunos casos, es posible que el autor necesite acceder a páginas que están en un idioma diferente y ver el nombre de la página (que normalmente no cambia) puede ser de buena ayuda si el autor no conoce el idioma de la página.
+   De forma predeterminada se muestra la columna **Nombre**, que es parte de la dirección URL de la página. En algunos casos, el autor puede tener que acceder a páginas en un idioma diferente y ver el nombre de la página (que no suele variar) puede ser de buena ayuda si no conoce el idioma de la página.
 
 * Cambie el orden de los elementos mediante la barra vertical de puntos en la parte más a la derecha de cada elemento en la lista.
 
@@ -502,9 +502,9 @@ Al seleccionar un recurso en la columna situada más a la izquierda, se mostrar�
 
    ![bh-23](assets/bh-23.png)
 
-* Puede mostrar los datos de Analytics mostrando las columnas apropiadas utilizando la variable **Configuración de vista** diálogo.
+* Puede mostrar los datos de Analytics mostrando las columnas adecuadas mediante la variable **Configuración de vista** diálogo.
 
-   Puede filtrar Datos de análisis de los últimos 30, 90 o 365 días mediante las opciones de filtro que hay a la derecha del encabezado.
+   Puede filtrar datos de Analytics de los últimos 30, 90 o 365 días mediante las opciones de filtro a la derecha del encabezado.
 
    ![bh-24](assets/bh-24.png)
 
@@ -524,9 +524,9 @@ Si se selecciona contenido solamente, después solo aparece el icono de raíl. C
 
 ### Árbol de contenido {#content-tree}
 
-El árbol de contenido se puede utilizar para desplazarse rápidamente por la jerarquía del sitio dentro del panel lateral y ver mucha información sobre las páginas de la carpeta actual.
+El árbol de contenido se puede utilizar para navegar rápidamente por la jerarquía del sitio dentro del panel lateral y ver mucha información sobre las páginas de la carpeta actual.
 
-Con el panel lateral del árbol de contenido junto con una vista de lista o de tarjetas, los usuarios pueden ver fácilmente la estructura jerárquica del proyecto y navegar fácilmente por la estructura de contenido con el panel lateral del árbol de contenido, así como ver información de página detallada en la vista de lista.
+Con el panel lateral del árbol de contenido junto con una vista de lista o una vista de tarjetas, los usuarios pueden ver fácilmente la estructura jerárquica del proyecto y navegar fácilmente por la estructura de contenido con el panel lateral del árbol de contenido, así como ver información detallada de la página en la vista de lista.
 
 ![bh-26](assets/bh-26.png)
 
@@ -534,11 +534,11 @@ Con el panel lateral del árbol de contenido junto con una vista de lista o de t
 >
 >Una vez seleccionada una entrada en la vista de jerarquía, se pueden utilizar las teclas de flecha para desplazarse rápidamente por la jerarquía.
 >
->Consulte la [combinaciones de teclas](/help/sites-authoring/keyboard-shortcuts.md) para obtener más información.
+>Consulte la [métodos abreviados del teclado](/help/sites-authoring/keyboard-shortcuts.md) para obtener más información.
 
 ### Escala de cronología {#timeline}
 
-La cronología puede utilizarse para ver o iniciar eventos que hayan ocurrido en el recurso seleccionado. Para abrir la columna de cronología, utilice el selector del raíl:
+La cronología puede utilizarse para ver o iniciar eventos que se hayan producido en el recurso seleccionado. Para abrir la columna de cronología, utilice el selector del raíl:
 
 La columna de línea de tiempo le permite:
 
@@ -553,8 +553,8 @@ La columna de línea de tiempo le permite:
       * [Versiones](/help/sites-authoring/working-with-page-versions.md)
       * [Flujos de trabajo](/help/sites-authoring/workflows-applying.md)
 
-         * con excepción de [flujos de trabajo transitorios](/help/sites-developing/workflows.md#transient-workflows) ya que no se guarda ninguna información de historial para estas
-      * Mostrar todo
+         * con la excepción de [flujos de trabajo transitorios](/help/sites-developing/workflows.md#transient-workflows) ya que no se guarda información de historial para estos
+      * y Mostrar todo
 
 
 * [Agregar o ver comentarios sobre el elemento seleccionado. ](#timelineaddingandviewingcomments) El cuadro **Comentario** se muestra en la parte inferior de la lista de eventos. Si se escribe un comentario y se presiona Retorno, el comentario se registra. Se mostrará cuando seleccione **Comentarios** o **Mostrar todo**.
@@ -570,7 +570,7 @@ Estas opciones están disponibles mediante las comillas angulares que hay junto 
 
 ### Referencias {#references}
 
-**Referencias** muestra las conexiones al recurso seleccionado. Por ejemplo, en la consola **Sitios**, [Referencias](/help/sites-authoring/author-environment-tools.md#showingpagereferences) muestra lo siguiente para páginas:
+**Referencias** muestra las conexiones con el recurso seleccionado. Por ejemplo, en la consola **Sitios**, [Referencias](/help/sites-authoring/author-environment-tools.md#showingpagereferences) muestra lo siguiente para páginas:
 
 * [Lanzamientos](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
@@ -578,7 +578,7 @@ Estas opciones están disponibles mediante las comillas angulares que hay junto 
 * Referencias de contenido:
 
    * vínculos de otras páginas a la página seleccionada
-   * contenido que el componente de referencia extrae de la página seleccionada o que transfiere a ella
+   * contenido que el componente de referencia extrae de la página seleccionada o que entrega en la misma
 
 ![bh-28](assets/bh-28.png)
 

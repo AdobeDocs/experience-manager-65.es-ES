@@ -1,6 +1,6 @@
 ---
-title: Resolución de problemas al crear en AEM
-description: Algunos problemas que pueden producirse al usar AEM.
+title: AEM Solución de problemas durante la creación en la
+description: AEM Algunos problemas que pueden producirse al utilizar el servicio de asistencia de la aplicación de.
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -21,26 +21,26 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 >[!NOTE]
 >
->Cuando experimenta problemas, también vale la pena comprobar la lista de [Problemas conocidos](/help/release-notes/release-notes.md) para su instancia (versión y service packs).
+>Cuando experimenta problemas, también vale la pena comprobar la lista de [Problemas conocidos](/help/release-notes/release-notes.md) para su instancia (versión y paquetes de servicio).
 
 >[!NOTE]
 >
->Los usuarios que tengan privilegios de administrador y que deseen solucionar problemas con AEM, pueden utilizar los métodos de resolución de problemas descritos en [Solución de problemas de AEM (para administradores)](/help/sites-administering/troubleshoot.md). Si no dispone de suficientes privilegios, consulte con el administrador del sistema sobre la resolución de problemas AEM.
+>AEM Los usuarios que tienen privilegios de administrador y que desean solucionar problemas con la solución de problemas con la solución de problemas con la solución de problemas, pueden utilizar los métodos de solución de problemas descritos en [AEM Solución de problemas (para administradores)](/help/sites-administering/troubleshoot.md). AEM Si no tiene privilegios suficientes, póngase en contacto con el administrador del sistema para solucionar los problemas de la solución de problemas de la forma más sencilla de resolver los problemas de la.
 
 ## La versión anterior de la página sigue en el sitio publicado {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Ha realizado cambios en una página y replicado la página en el sitio de publicación, pero la variable *old* la versión de la página sigue mostrándose en el sitio de publicación.
+   * Ha realizado cambios en una página y replicado la página en el sitio de publicación, pero la variable *viejo* La versión de la página se sigue mostrando en el sitio de publicación.
 
 * **Motivo**:
 
-   * Esto puede tener varias causas, la mayoría de las veces la caché (su navegador local o Dispatcher), aunque a veces puede ser un problema con la cola de replicación.
+   * Esto puede tener varias causas, la mayoría de las veces la caché (el explorador local o Dispatcher), aunque a veces puede ser un problema con la cola de replicación.
 
 * **Soluciones**:
 
    * Aquí hay varias posibilidades:
-   * Confirme que la página se haya replicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
+   * Confirme que la página se ha duplicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
    * Borre la caché del navegador local y vuelva a acceder a la página.
    * Añada `?` al final de la URL de la página. Por ejemplo:
 

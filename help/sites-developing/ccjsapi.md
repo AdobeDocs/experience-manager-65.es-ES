@@ -14,7 +14,7 @@ exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3153'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -696,7 +696,7 @@ Ninguna.
 
 **Devuelve**
 
-this
+esta
 
 #### init() {#init-1}
 
@@ -747,7 +747,7 @@ Quita una propiedad del almacén de sesión. Activa el `update` evento tras la f
 
 No hay valor devuelto.
 
-#### reset() {#reset}
+#### restablecer() {#reset}
 
 Restaura los valores iniciales del almacén de datos. La implementación predeterminada simplemente elimina todos los datos. Activa el `update` evento tras la finalización.
 

@@ -1,5 +1,5 @@
 ---
-title: Trabajar con Adobe Campaign
+title: Trabajo con Adobe Campaign
 description: Adobe Campaign es un conjunto de soluciones que le permite personalizar y entregar campañas en todos sus canales en línea y sin conexión.
 uuid: 1f7b48e2-9ec2-4ee8-b017-78c9d2cac48e
 contentOwner: Guillaume Carlino
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 Adobe Campaign es un conjunto de soluciones que le permite personalizar y entregar campañas en todos sus canales en línea y sin conexión.
 
-Esta documentación describe cómo trabajar con Adobe Campaign:
+En esta documentación se describe cómo trabajar con Adobe Campaign:
 
 * Adobe Campaign Classic
 * Adobe Campaign Standard, que es la solución basada en suscripciones.
@@ -28,12 +28,12 @@ Consulte lo siguiente:
 
 * [Trabajo con Adobe Campaign Classic y Adobe Campaign Standard](/help/sites-authoring/campaign.md)
 * [Componentes de Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md)
-* [Creación de Adobe Campaign Forms en AEM](/help/sites-authoring/adobe-campaign-forms.md)
+* [Creación de Adobe Campaign Forms AEM en](/help/sites-authoring/adobe-campaign-forms.md)
 * [Segmentación de Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
 
-Anteriormente debe tener [AEM integrado con Adobe Campaign](/help/sites-administering/campaign.md).
+Anteriormente, debe tener [AEM integrado con Adobe Campaign](/help/sites-administering/campaign.md).
 
-Además, si desea personalizar las integraciones, consulte los siguientes temas:
+Además, si desea personalizar las integraciones, consulte los temas siguientes:
 
 * [Creación de extensiones personalizadas](/help/sites-developing/extending-campaign-extensions.md)
-* [Creación de asignaciones de formularios personalizados](/help/sites-developing/extending-campaign-form-mapping.md)
+* [Crear asignaciones de formularios personalizadas](/help/sites-developing/extending-campaign-form-mapping.md)

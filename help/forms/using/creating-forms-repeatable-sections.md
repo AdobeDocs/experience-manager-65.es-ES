@@ -12,7 +12,7 @@ exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1119'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -111,10 +111,10 @@ El subformulario repetible es similar a los paneles repetibles de los formulario
 
 1. En la paleta Jerarquía, seleccione el subformulario principal del subformulario que desea que se repita.
 1. En la paleta Objeto, haga clic en la pestaña Subformulario y seleccione De posición variable en la lista Contenido.
-1. Seleccione el subformulario que desea que se repita.
+1. Seleccione el subformulario que desea repetir.
 1. En la paleta Objeto, haga clic en la pestaña Subformulario y seleccione De posición variable o De posición fija en la lista Contenido.
 1. Haga clic en la pestaña Enlace y seleccione Repetir subformulario para cada elemento de datos.
-1. Para especificar el número mínimo de repeticiones, seleccione Mínimo y escriba un número en el cuadro correspondiente. Si la opción se ajusta a 0 y no se suministran datos para los objetos del subformulario en el momento de la combinación de datos, el subformulario no se coloca al procesar el formulario.
+1. Para especificar el número mínimo de repeticiones, seleccione Mínimo y escriba un número en el cuadro correspondiente. Si esta opción se establece en 0 y no se proporcionan datos para los objetos del subformulario en el momento de la combinación de datos, el subformulario no se colocará cuando se represente el formulario.
 1. Para especificar el número máximo de repeticiones de subformulario, seleccione Máx. y escriba un número en el cuadro correspondiente. Si no se especifica un valor en el cuadro Máx., el número de repeticiones de subformulario es ilimitado.
 1. Para especificar un número definido de repeticiones de subformulario, independientemente de la cantidad de datos, seleccione la opción Recuento inicial y escriba un número en el cuadro correspondiente. Si se selecciona esta opción y no hay ningún dato disponible o existen menos entradas de datos que el valor especificado en Recuento inicial, las instancias vacías del subformulario todavía se colocan en el formulario.
 1. Agregue dos botones en el subformulario principal: uno para añadir instancias y otro para eliminar instancias de subformularios repetibles. Para ver los pasos detallados, consulte [Generar una acción](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).

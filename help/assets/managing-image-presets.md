@@ -22,7 +22,7 @@ ht-degree: 8%
 
 # Administrar ajustes preestablecidos de imagen de Dynamic Media{#managing-image-presets}
 
-Los ajustes preestablecidos de imagen permiten que Adobe Experience Manager Assets entregue dinámicamente imágenes en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y diseño para mostrar las imágenes. Al crear un ajuste preestablecido de imagen, elige un tamaño para la entrega de imágenes. También puede elegir comandos de formato para optimizar el aspecto de la imagen cuando se envíe la imagen para su visualización.
+Los ajustes preestablecidos de imagen permiten que Adobe Experience Manager Assets entregue dinámicamente imágenes en diferentes tamaños, en diferentes formatos o con otras propiedades de imagen que se generan dinámicamente. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y formato para mostrar imágenes. Al crear un ajuste preestablecido de imagen, elige un tamaño para la entrega de imágenes. También puede elegir comandos de formato para optimizar el aspecto de la imagen cuando se envíe la imagen para su visualización.
 
 Los administradores pueden crear ajustes preestablecidos para exportar recursos. Los usuarios pueden elegir un ajuste preestablecido al exportar imágenes, que también redistribuye las imágenes según las especificaciones del administrador.
 
@@ -127,12 +127,12 @@ Argumentos para rasterizar el PDF o el flujo de trabajo de IA
    <td>Lista de tipos MIME de documento que se consideran documentos de PDF o Illustrator.<br /> </td>
   </tr>
   <tr>
-   <td>Ancho máximo</td>
+   <td>Anchura máxima</td>
    <td>2048</td>
    <td>Anchura máxima de la representación de vista previa generada, en píxeles.<br /> </td>
   </tr>
   <tr>
-   <td>Alto máximo</td>
+   <td>Altura máxima</td>
    <td>2048</td>
    <td>Altura máxima de la representación de vista previa generada, en píxeles.<br /> </td>
   </tr>

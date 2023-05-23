@@ -14,7 +14,7 @@ exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2516'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -252,7 +252,7 @@ Panel lateral: Filtros
 
 Puede utilizar las siguientes opciones del panel lateral para reducir los resultados de búsqueda:
 
-* Directorio de búsqueda
+* Buscar directorio
 * Etiquetas
 * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de LiveCopy
 

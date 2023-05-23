@@ -1,7 +1,7 @@
 ---
 title: Prácticas recomendadas
 seo-title: Best Practices
-description: Las prácticas recomendadas sobre creación describen cómo utilizar AEM del modo más eficaz y eficiente posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
+description: AEM Las prácticas recomendadas de creación describen cómo utilizar los recursos de la manera más eficiente y eficaz posible. AEM Esta creciente lista de temas incluye una variedad de áreas en el área de la.
 seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
@@ -12,28 +12,28 @@ discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 62%
+ht-degree: 3%
 
 ---
 
 
 # Prácticas recomendadas{#best-practices}
 
-Las prácticas recomendadas sobre creación describen cómo utilizar AEM del modo más eficaz y eficiente posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
+AEM Las prácticas recomendadas de creación describen cómo utilizar los recursos de la manera más eficiente y eficaz posible. AEM Esta creciente lista de temas incluye una variedad de áreas en el área de la.
 
-Existe documentación sobre prácticas recomendadas en relación con las áreas siguientes:
+Las siguientes áreas tienen documentación disponible sobre las prácticas recomendadas:
 
 * [Assets](#assets)
 * [Sites](#sites)
 * [Forms](#forms)
 
-Para conocer las prácticas recomendadas sobre administración, implementación y mantenimiento o desarrollo, consulte uno de estos documentos:
+Para conocer las prácticas recomendadas sobre la administración, la implementación, el mantenimiento o el desarrollo, vea una de las siguientes opciones:
 
-* [Prácticas recomendadas sobre administración](/help/sites-administering/administer-best-practices.md)
-* [Prácticas recomendadas sobre desarrollo](/help/sites-developing/best-practices.md)
-* [Prácticas recomendadas sobre implementación](/help/sites-deploying/best-practices.md)
+* [Prácticas recomendadas de administración](/help/sites-administering/administer-best-practices.md)
+* [Desarrollo de prácticas recomendadas](/help/sites-developing/best-practices.md)
+* [Implementación de prácticas recomendadas](/help/sites-deploying/best-practices.md)
 
-Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
+En las tablas siguientes se describen y vinculan documentos específicos.
 
 ## Assets {#assets}
 
@@ -43,30 +43,30 @@ Las prácticas recomendadas en Assets, incluidas la funcionalidad Dynamic Media 
  <tbody>
   <tr>
    <td>Formatos de archivo</td>
-   <td><a href="/help/assets/assets-file-format-best-practices.md">Prácticas recomendadas de los formatos de archivo de recursos</a></td>
-   <td>Describe las prácticas recomendadas relacionadas con la compatibilidad de archivo dentro de los recursos de AEM Assets.</td>
+   <td><a href="/help/assets/assets-file-format-best-practices.md">Prácticas recomendadas para formatos de archivo de Assets</a></td>
+   <td>Describe las prácticas recomendadas sobre la compatibilidad con archivos en AEM Assets.</td>
   </tr>
   <tr>
    <td>Codificación de vídeo</td>
    <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Prácticas recomendadas de codificación</a></td>
-   <td>Describe sugerencias sobre las prácticas recomendadas relacionadas con la codificación de archivos de vídeo de origen.</td>
+   <td>Describe sugerencias de prácticas recomendadas para codificar archivos de vídeo de origen.</td>
   </tr>
   <tr>
-   <td>Imágenes dinámicas</td>
-   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Prácticas recomendadas de las imágenes dinámicas</a></td>
+   <td>Dynamic Imaging</td>
+   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Prácticas recomendadas para Dynamic Imaging</a></td>
    <td><p>Describe cómo enfocar una imagen para obtener los mejores resultados y la mejor manera de optimizar la calidad de las imágenes si utiliza la funcionalidad de Dynamic Media o si se integra con Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Recursos multilingües</td>
    <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Prácticas recomendadas de traducción</a></td>
-   <td>Describe las prácticas recomendadas relacionadas con la traducción eficaz de los recursos de AEM.</td>
+   <td>AEM Describe las prácticas recomendadas para traducir recursos de forma eficaz.</td>
   </tr>
  </tbody>
 </table>
 
 ## Sites {#sites}
 
-Para administrar y crear contenido en un sitio web, hay que seguir estas prácticas recomendadas:
+La administración y creación del contenido del sitio web tiene algunas prácticas recomendadas descritas a continuación:
 
 Creación: [Herramientas y entorno de creación](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) : Proporciona información general sobre cómo crear páginas.
 

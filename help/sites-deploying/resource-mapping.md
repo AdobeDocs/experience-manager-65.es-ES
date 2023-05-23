@@ -72,7 +72,7 @@ Por ejemplo, el:
 
 almacenará en déclencheur:
 
-**Reemplazo** `/libs/cq/core/content/welcome.html`.
+**Sustitución** `/libs/cq/core/content/welcome.html`.
 
 para redirigir una solicitud:
 

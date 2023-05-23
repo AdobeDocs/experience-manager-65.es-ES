@@ -14,7 +14,7 @@ exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -71,7 +71,7 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 ![configure-message-list](assets/configure-message-list.png)
 
-#### Pestaña Básico {#basic-tab}
+#### Pestaña Básicos {#basic-tab}
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
@@ -145,7 +145,7 @@ Una vez cancelada la herencia, es posible seleccionar el icono de configuración
 
 ![config-compose-message](assets/config-compose-message.png)
 
-#### Pestaña Básico {#basic-tab-1}
+#### Pestaña Básicos {#basic-tab-1}
 
 ![basic-tab-compose](assets/basic-tab-compose.png)
 

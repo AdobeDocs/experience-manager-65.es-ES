@@ -14,7 +14,7 @@ exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2134'
-ht-degree: 8%
+ht-degree: 5%
 
 ---
 
@@ -146,7 +146,7 @@ CRXDE Lite ofrece las siguientes funciones:
 
 Para crear una carpeta con el CRXDE Lite:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En el panel Navegación, haga clic con el botón derecho en la carpeta en la que desea crear la nueva carpeta y seleccione **Crear...**, entonces **Crear carpeta...**.
 
 1. Introduzca la carpeta **Nombre** y haga clic en **OK**.
@@ -157,7 +157,7 @@ Para crear una carpeta con el CRXDE Lite:
 
 Para crear una plantilla con un CRXDE Lite:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En el panel de navegación, haga clic con el botón derecho en la carpeta donde desee crear la plantilla y seleccione **Crear...**, entonces **Crear plantilla...**.
 
 1. Introduzca el **Etiqueta**, **Título**, **Descripción**, **Tipo de medio** y **Clasificación** de la plantilla. Haga clic en **Siguiente**.
@@ -184,7 +184,7 @@ La función que se describe aquí solo está disponible si está instalado CQ5, 
 
 Para crear un componente con un CRXDE Lite:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En el panel de navegación, haga clic con el botón derecho en la carpeta donde desee crear el componente y seleccione **Crear...**, entonces **Crear componente...**.
 
 1. Introduzca el **Etiqueta**, **Título**, **Descripción**, **Tipo de superrecurso** y **Grupo** del componente. Haga clic en **Siguiente**.
@@ -207,7 +207,7 @@ Esto crea lo siguiente:
 
 Para crear un cuadro de diálogo con el CRXDE Lite:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En el panel Navegación, haga clic con el botón derecho en el componente donde desee crear el cuadro de diálogo y seleccione **Crear...**, entonces **Crear diálogo...**.
 
 1. Introduzca el **Etiqueta** y el **Título**. Haga clic en **Aceptar**.
@@ -226,7 +226,7 @@ También puede utilizar el Editor de cuadros de diálogo para editar un cuadro d
 
 Para crear un nodo con un CRXDE Lite:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En el panel de navegación, haga clic con el botón derecho en el nodo en el que desea crear el nuevo nodo y seleccione **Crear...**, entonces **Crear nodo...**.
 1. Introduzca el **Nombre** y el **Tipo**. Haga clic en **Aceptar**.
 1. Haga clic en **Guardar todo** para guardar los cambios en el servidor.
@@ -243,9 +243,9 @@ Ahora puede adaptar el nodo a sus necesidades modificando propiedades o creando 
 
 Para crear una propiedad con el CRXDE Lite:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En el panel Navegación, seleccione el nodo al que desee agregar la nueva propiedad.
-1. En el **Propiedades** en el panel inferior, introduzca la pestaña **Nombre**, el **Tipo** y el **Valor**. Haga clic en **Agregar**.
+1. En el **Propiedades** en el panel inferior, introduzca la pestaña **Nombre**, el **Tipo** y el **Valor**. Clic **Añadir**.
 
 1. Haga clic en **Guardar todo** para guardar los cambios en el servidor.
 
@@ -253,7 +253,7 @@ Para crear una propiedad con el CRXDE Lite:
 
 Para crear un nuevo script:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En el panel Navegación, haga clic con el botón derecho en el componente donde desee crear el script y seleccione **Crear...**, entonces **Crear archivo...**.
 
 1. Introduzca el archivo **Nombre** incluida su extensión. Haga clic en **Aceptar**.
@@ -268,7 +268,7 @@ Con CRXDE Lite puede importar o exportar definiciones de tipo de nodo en [Notaci
 
 Para exportar una definición de tipo de nodo:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. Seleccione el nodo requerido.
 1. Seleccionar **Herramientas** entonces **Exportar tipo de nodo**.
 
@@ -276,7 +276,7 @@ Para exportar una definición de tipo de nodo:
 
 Para importar una definición de tipo de nodo:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. Seleccionar **Herramientas** entonces **Importar tipo de nodo...**.
 
 1. Introduzca la notación CDN para la definición en el cuadro de texto.
@@ -287,7 +287,7 @@ Para importar una definición de tipo de nodo:
 
 Con CRXDE Lite puede mostrar el archivo `error.log` que se encuentra en el sistema de archivos en `<crx-install-dir>/crx-quickstart/server/logs` y filtrarlo con el nivel de registro adecuado. Proceda como se indica a continuación:
 
-1. Abra CRXDE Lite en el navegador 
+1. Abra el CRXDE Lite en el explorador.
 1. En el **Consola** en la parte inferior de la ventana, en el menú desplegable de la derecha, seleccione **Registros de servidor**.
 
 1. Haga clic en **Detener** para mostrar los mensajes.

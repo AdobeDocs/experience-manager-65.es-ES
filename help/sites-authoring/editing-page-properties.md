@@ -1,5 +1,5 @@
 ---
-title: Edición de las propiedades de la página de contenido
+title: Edición de propiedades de página de contenido
 description: Definir las propiedades necesarias para una página.
 uuid: d3a2183b-8082-4cfc-aeed-26facbf3f3e6
 contentOwner: Chris Bohnert
@@ -60,11 +60,11 @@ Las propiedades se distribuyen entre varias pestañas.
       * El valor se anexa al título de la página después de un carácter de barra vertical como “Ciclismo en Toscana | Siempre listo para WKND”
 * **Título de página**
 
-   Un título que se usará en la página. Normalmente se utiliza en los componentes de título. Si está vacío, se utilizará el **Título** de la página.
+   Título que se utilizará en la página. Normalmente se utiliza en los componentes de título. Si está vacío, se utilizará el **Título** de la página.
 
 * **Título de navegación**
 
-   Puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea un título más conciso). Si está vacío, la variable **Título** se utilizará.
+   Puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea algo más conciso). Si está vacío, la variable **Título** se utilizará.
 
 * **Subtítulo**
 
@@ -72,25 +72,25 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Descripción**
 
-   La descripción de la página, su propósito o cualquier otro detalle que desee añadir.
+   La descripción de la página, su propósito o cualquier otro detalle que desee agregar.
 
 * **Tiempo de activación**
 
-   La fecha y hora a las que se activará la página publicada. Cuando se publique, esta página se mantendrá inactiva hasta la hora especificada.
+   La fecha y hora a las que se activará la página publicada. Cuando se publique, esta página se mantendrá inactiva hasta el momento especificado.
 
-   Deje vacíos estos campos para las páginas que desee publicar inmediatamente (el escenario normal).
+   Deje estos campos vacíos para las páginas que desee publicar inmediatamente (el escenario normal).
 
 * **Tiempo de inactividad**
 
    Hora a la que se desactivará la página publicada.
 
-   Nuevamente, deje vacíos estos campos para que se realicen acciones inmediatas.
+   De nuevo, deje estos campos vacíos para una acción inmediata.
 
 * **URL mnemónica**
 
    Permite introducir una URL mnemónica para esta página, lo que le permite tener una URL más corta o expresiva.
 
-   Por ejemplo, si la URL de vanidad está configurada en `welcome`a la página identificada por la ruta `/v1.0/startpage`para el sitio web `http://example.com,` then `http://example.com/welcome`sería la URL de vanidad de `http://example.com/content/v1.0/startpage`
+   Por ejemplo, si la URL de vanidad está configurada en `welcome`a la página identificada por la ruta `/v1.0/startpage`para el sitio web `http://example.com,` entonces `http://example.com/welcome`sería la URL de vanidad de `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -101,7 +101,7 @@ Las propiedades se distribuyen entre varias pestañas.
    >* No debe configurarse en una página existente.
 
 
-   También debe configurar Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL mnemónicas](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
+   También debe configurar Dispatcher para habilitar el acceso a las URL de vanidad. Consulte [Habilitar el acceso a las URL de vanidad](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obtener más información.
 
 * **Redirigir URL de vanidad**
 
@@ -115,7 +115,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Raíz del idioma**
 
-   Debe comprobarse si la página es la raíz de una copia de idioma.
+   Si la página es la raíz de una copia en un idioma, es necesario marcar esta opción.
 
 * **Redirigir**
 
@@ -123,7 +123,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Design**
 
-   Indique la variable [diseño](/help/sites-developing/designer.md) para usar en esta página.
+   Indique el [diseño](/help/sites-developing/designer.md) para utilizar en esta página.
 
 * **Alias**
 
@@ -136,17 +136,17 @@ Las propiedades se distribuyen entre varias pestañas.
 
 * **Heredado de &lt;*ruta*>**
 
-   Indica si la página se ha heredado. y desde dónde.
+   Indica si la página se hereda. y de dónde.
 
 * **Configuración de nube**
 
-   Ruta a la configuración.
+   La ruta a la configuración.
 
 * **Plantillas permitidas**
 
    [Defina la lista de plantillas disponibles](/help/sites-authoring/templates.md#allowingatemplate) dentro de esta subrama.
 
-* **Habilitar** (Requisito de autenticación)
+* **Activar** (Requisito de autenticación)
 
    Habilite (o deshabilite) el uso de la autenticación para acceder a la página.
 
@@ -156,14 +156,14 @@ Las propiedades se distribuyen entre varias pestañas.
 
    >[!CAUTION]
    >
-   >La variable **[Permisos](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite editar las configuraciones de CUG en función de la presencia de `granite:AuthenticationRequired` mixin. Si los permisos de la página se configuran mediante configuraciones de CUG obsoletas, según la presencia de `cq:cugEnabled` , se mostrará un mensaje de advertencia en **Requisito de autenticación** y la opción no será editable, ni la variable [Permisos](/help/sites-authoring/editing-page-properties.md#permissions) se puede editar.
+   >El **[Permisos](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** permite editar las configuraciones de CUG en función de la presencia del `granite:AuthenticationRequired` mixin. Si los permisos de página se configuran utilizando configuraciones de CUG obsoletas, según la presencia de `cq:cugEnabled` propiedad, se mostrará un mensaje de advertencia en **Requisito de autenticación** y la opción no será editable, como tampoco lo hará la variable [Permisos](/help/sites-authoring/editing-page-properties.md#permissions) ser editable.
    >
    >
-   >En este caso, los permisos de CUG deben editarse en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+   >En tal caso, los permisos de CUG deben editarse en la variable [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
 * **Página de inicio de sesión**
 
-   La página que se usará para iniciar sesión.
+   La página que se utilizará para iniciar sesión.
 
 * **Configuración de exportación**
 
@@ -171,7 +171,7 @@ Las propiedades se distribuyen entre varias pestañas.
 
 ### Miniatura    {#thumbnail}
 
-Muestra la imagen en miniatura de la página. Puede hacer lo siguiente:
+Muestra la miniatura de la página. Puede hacer lo siguiente:
 
 * **Generar previsualización**
 
@@ -183,7 +183,7 @@ Muestra la imagen en miniatura de la página. Puede hacer lo siguiente:
 
 * **Seleccionar imagen**
 
-   Seleccione un recurso existente para utilizarlo como la miniatura.
+   Seleccione un recurso existente para utilizarlo como miniatura.
 
 * **Revertir**
 
@@ -193,18 +193,18 @@ Muestra la imagen en miniatura de la página. Puede hacer lo siguiente:
 
 * **Compartir en redes sociales**
 
-   Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para la variable [Uso compartido de componentes principales](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
+   Define las opciones de uso compartido disponibles en la página. Expone las opciones disponibles para [Uso compartido del componente principal](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
 
-   * **Permitir al usuario que comparta en Facebook**
-   * **Permitir al usuario que comparta en Pinterest**
-   * **Variación XF preferida**
-Definir la variación de fragmento de experiencia que se utiliza para generar metadatos para la página
+   * **Habilitar el uso compartido de usuarios en Facebook**
+   * **Habilitar el uso compartido de usuarios en Pinterest**
+   * **Variación de XF preferida**
+Defina la variación del fragmento de experiencia que se utilizará para generar los metadatos de la página
 
 ### Cloud Services {#cloud-services}
 
 * **Cloud Services**
 
-   Definir propiedades para [servicios en la nube](/help/sites-developing/extending-cloud-config.md).
+   Definir propiedades para [cloud services](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalización {#personalization}
 
@@ -231,14 +231,14 @@ Definir la variación de fragmento de experiencia que se utiliza para generar me
    * Ver los [Permisos efectivos](/help/sites-administering/user-group-ac-admin.md)
    >[!CAUTION]
    >
-   >La variable **Permisos** permite editar las configuraciones de CUG en función de la presencia de `granite:AuthenticationRequired` mixin. Si los permisos de la página se configuran mediante configuraciones de CUG obsoletas, según la presencia de `cq:cugEnabled` , se mostrará un mensaje de advertencia y los permisos de CUG no se podrán editar, como tampoco el requisito de autenticación en la variable [Avanzadas](/help/sites-authoring/editing-page-properties.md#advanced) para editarla.
+   >El **Permisos** permite editar las configuraciones de CUG en función de la presencia del `granite:AuthenticationRequired` mixin. Si los permisos de página se configuran utilizando configuraciones de CUG obsoletas, según la presencia de `cq:cugEnabled` , se mostrará un mensaje de advertencia y los permisos de CUG no podrán editarse, como tampoco lo hará el requisito de autenticación de la propiedad [Avanzadas](/help/sites-authoring/editing-page-properties.md#advanced) pestaña puede editarse.
    >
    >
-   >En este caso, los permisos de CUG deben editarse en la [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+   >En tal caso, los permisos de CUG deben editarse en la variable [IU clásica](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >La pestaña Permisos no permite la creación de grupos CUG vacíos, lo que puede resultar útil como una forma sencilla de denegar el acceso a todos los usuarios. Para ello, se debe utilizar CRX Explorer. Consulte el documento [Administración de derechos de usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md) para obtener más información.
+   >La pestaña Permisos no permite la creación de grupos de CUG vacíos, lo que puede resultar útil como una forma sencilla de denegar el acceso a todos los usuarios. Para ello, se debe utilizar el Explorador de CRX. Ver el documento [Administración de derechos de usuario, grupo y acceso](/help/sites-administering/user-group-ac-admin.md) para obtener más información.
 
 ### Modelo {#blueprint}
 
@@ -250,7 +250,7 @@ Definir la variación de fragmento de experiencia que se utiliza para generar me
 
 * **Live Copy**
 
-   Defina propiedades para una página de Live Copy en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
+   Definir propiedades para una página Live Copy en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
 ### Estructura del sitio    {#site-structure}
 
@@ -258,7 +258,7 @@ Definir la variación de fragmento de experiencia que se utiliza para generar me
 
 ## Edición de las propiedades de página   {#editing-page-properties-1}
 
-Puede definir las propiedades de página:
+Puede definir las propiedades de la página:
 
 * Desde la consola **Sitios:**
 
@@ -300,7 +300,7 @@ Al editar una página puede, utilizar **Información de página** para definir l
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Select **Abrir propiedades** y se abrirá un cuadro de diálogo que le permitirá editar las propiedades, ordenadas por la ficha adecuada. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
+1. Seleccionar **Abrir propiedades** y se abrirá un cuadro de diálogo que le permitirá editar las propiedades, ordenadas por la pestaña correspondiente. Los siguientes botones también están disponibles en la parte derecha de la barra de herramientas:
 
    * **Cancelar**
    * **Guardar y cerrar**
@@ -315,7 +315,7 @@ Desde la consola **Sites** puede seleccionar varias páginas y luego utilizar **
 >
 >La edición de propiedades por lotes también está disponible para los archivos. Es muy similar, pero difiere en algunos puntos. Consulte [Edición de propiedades de varios recursos](/help/assets/metadata.md) para obtener más información.
 >
->También hay [Editor por lotes](/help/sites-administering/bulk-editor.md), que le permite buscar contenido de varias páginas mediante GQL (Google Query Language) y, a continuación, editar el contenido directamente en el editor por lotes antes de guardar los cambios en las páginas de origen.
+>También está el [Editor por lotes](/help/sites-administering/bulk-editor.md), que le permite buscar contenido de varias páginas con GQL (Google Query Language) y, a continuación, editar el contenido directamente en el editor por lotes antes de guardar los cambios en las páginas de origen.
 
 Puede seleccionar varias páginas para editarlas por lotes mediante varios métodos, entre ellos:
 
@@ -339,7 +339,7 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
 
 * **Ver**
 
-   Al ver las Propiedades de página de varias páginas, puede ver:
+   Al ver las Propiedades de página de varias páginas, puede ver lo siguiente:
 
    * Una lista de las páginas afectadas
 
@@ -360,7 +360,7 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
 
 * **Editar**
 
-   Al editar las Propiedades de página de varias páginas:
+   Al editar Propiedades de página para varias páginas:
 
    * Puede actualizar los valores en los campos disponibles.
 
@@ -371,4 +371,4 @@ Cuando esté en la edición por lotes, podrá efectuar las siguientes acciones:
 
 >[!NOTE]
 >
->El componente de página se puede configurar para especificar los campos disponibles para la edición por lotes. Consulte [Configuración de la página para la edición masiva de propiedades de página](/help/sites-developing/bulk-editing.md).
+>El componente de página se puede configurar para especificar los campos disponibles para la edición por lotes. Consulte [Configurar la página para la edición masiva de propiedades de página](/help/sites-developing/bulk-editing.md).

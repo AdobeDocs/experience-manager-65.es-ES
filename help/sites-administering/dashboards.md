@@ -13,17 +13,17 @@ exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 59%
+ht-degree: 3%
 
 ---
 
 # Tableros{#dashboards}
 
-Al utilizar AEM, podrá administrar mucho contenido de distintos tipos (p. ej. páginas, recursos). Los tableros AEM permiten definir páginas que muestran datos consolidados de forma fácil y personalizable.
+AEM Al utilizar la aplicación, puede administrar una gran cantidad de contenido de diferentes tipos (p. ej., páginas o recursos). AEM Los paneles de DTM ofrecen una forma fácil de usar y personalizable de definir páginas que muestren datos consolidados.
 
 >[!NOTE]
 >
->Los tableros AEM se crean para cada usuario, para que cada uno pueda acceder a su propio tablero.
+>AEM Los paneles de datos se crean por usuario, de modo que el usuario solo puede acceder a su propio panel.
 >
 >Sin embargo, [Plantillas de panel](#creating-a-dashboard-template) se puede utilizar para compartir la configuración común y el diseño del panel.
 
@@ -31,84 +31,84 @@ Al utilizar AEM, podrá administrar mucho contenido de distintos tipos (p. ej. p
 
 ## Administración de tableros {#administering-dashboards}
 
-### Creación de un tablero {#creating-a-dashboard}
+### Creación De Un Tablero {#creating-a-dashboard}
 
-Para crear un tablero nuevo, realice las acciones siguientes:
+Para crear un nuevo panel, siga estos pasos:
 
-1. En la sección **Herramientas**, haga clic en **Consola de configuración**.
+1. En el **Herramientas** , haga clic en **Consola de configuración**.
 1. En el árbol, haga doble clic **Tablero**.
-1. Haga clic en **Nuevo tablero**.
-1. Especifique el **Título** (p. ej. Mi tablero) y el **Nombre**.
+1. Clic **Nuevo panel**.
+1. Escriba el **Título** (p. ej., Mi panel) y el **Nombre**.
 1. Haga clic en **Crear**.
 
-### Clonación de un tablero {#cloning-a-dashboard}
+### Clonación De Un Tablero {#cloning-a-dashboard}
 
-Es posible que quiera tener varios tableros para ver información sobre el contenido en distintas vistas con rapidez. Para ayudarle a crear un tablero nuevo, AEM dispone de una función de clonación que puede utilizar para duplicar un tablero existente. Para clonar un tablero, haga lo siguiente:
+Es posible que desee tener varios paneles para ver rápidamente información sobre el contenido de diferentes vistas. AEM Para ayudarle a crear un nuevo tablero, proporciona una función de clonado que puede utilizar para duplicar un tablero existente. Para clonar un tablero, siga estos pasos:
 
-1. En la sección **Herramientas**, haga clic en **Consola de configuración**.
+1. En el **Herramientas** , haga clic en **Consola de configuración**.
 
-1. En el árbol, haga clic en **Panel**.
+1. En el árbol, haga clic en **Tablero**.
 1. Haga clic en el tablero que desee clonar.
 
-1. Haga clic en **Clonar**.
+1. Clic **Clonar**.
 
-1. Especifique el **Nombre** del nuevo tablero.
+1. Escriba el **Nombre** del nuevo tablero.
 
-### Eliminación de un tablero {#removing-a-dashboard}
+### Eliminación De Un Tablero {#removing-a-dashboard}
 
-1. En la sección **Herramientas**, haga clic en **Consola de configuración**.
+1. En el **Herramientas** , haga clic en **Consola de configuración**.
 
-1. En el árbol, haga clic en **Panel**.
+1. En el árbol, haga clic en **Tablero**.
 1. Haga clic en el tablero que desee eliminar.
 
 1. Haga clic en **Quitar**.
 
 1. Haga clic en **Sí** para confirmar.
 
-## Componentes del tablero {#dashboard-components}
+## Componentes del panel {#dashboard-components}
 
 ### Información general {#overview}
 
-Los componentes del panel no son más que normales [AEM componentes de](/help/sites-developing/developing-components-samples.md). En esta sección se describen los componentes de informe que se envían con AEM.
+Los componentes del panel no son más que normales [AEM componentes de](/help/sites-developing/developing-components-samples.md). AEM En esta sección se describen los componentes de sistema de informes que se envían con.
 
-### Componentes de informes analíticos web {#web-analytics-reporting-components}
+### Componentes de informes de análisis web {#web-analytics-reporting-components}
 
-AEM se envía con un conjunto de componentes que procesan varias métricas de su [SiteCatalyst](/help/sites-administering/adobeanalytics.md) datos. Estos componentes se enumeran en la barra de tareas de la sección **Tablero**.
+AEM se envía con un conjunto de componentes que procesan varias métricas de su [SiteCatalyst](/help/sites-administering/adobeanalytics.md) datos. Estos componentes se enumeran en la barra de tareas debajo de **Tablero** sección.
 
-Cada componente de informe dispone de tres fichas como mínimo:
+Cada componente del sistema de informes proporciona al menos tres pestañas:
 
 * **Básico**: contiene la configuración principal.
 
 * **Informe:** contiene la configuración específica de cada informe.
-* **Estilo**: contiene configuración de estilo como márgenes y tamaños de gráficos.
+* **Estilo**: contiene la configuración de estilo como el tamaño y el margen del gráfico.
 
-Los componentes de informe se inician con una configuración predeterminada que le ayuda a configurar el tablero con rapidez.
+Los componentes de creación de informes se inicializan con una configuración predeterminada que le ayuda a configurar rápidamente el panel.
 
 #### Configuración básica {#basic-configuration}
 
-La ficha **Básico** permite acceder a las entradas de configuración siguientes:
+El **Básico** proporciona acceso a las siguientes entradas de configuración:
 
 **Título** El título se muestra en el panel.
 
 **Tipo de solicitud** La forma en que se solicitan los datos.
 
-**Configuración de SiteCatalyst (opcional)** La configuración que desea utilizar para conectarse al SiteCatalyst. Si no se define, se asumirá que ya está configurada en la página Panel (mediante las propiedades de página).
+**Configuración de SiteCatalyst (opcional)** La configuración que desea utilizar para conectarse al SiteCatalyst. Si no se proporciona, se supone que la configuración está configurada en la página Tablero (a través de las propiedades de página).
 
 **ID del grupo de informes (opcional)** El grupo de informes de SiteCatalyst que desea utilizar para generar el gráfico.
 
-#### Configuración de informes {#report-configuration}
+#### Configuración del informe {#report-configuration}
 
-Para mostrar las estadísticas de web, debe definir el intervalo de fechas para los datos que desee recopilar. La ficha **Informe** dispone de dos campos para definir dicho intervalo.
+Para mostrar las estadísticas web, debe definir el intervalo de fechas de los datos que desea recuperar. El **Informe** proporciona dos campos para definir ese intervalo.
 
 >[!NOTE]
 >
->Si se elige un intervalo de fechas muy grande, se reducirá el nivel de respuesta del tablero.
+>La configuración de un intervalo de fechas grande puede disminuir la capacidad de respuesta del panel.
 
 **Fecha desde** Fecha absoluta o relativa desde la que se recuperan los datos.
 
 **Fecha de finalización** Fecha absoluta o relativa en la que se recuperan los datos.
 
-Cada componente también define ajustes específicos.
+Cada componente también define configuraciones específicas.
 
 #### Informe de tiempo extra {#overtime-report}
 
@@ -140,7 +140,7 @@ Cada componente también define ajustes específicos.
 
 #### Informe de sección de sitio principal {#top-site-section-report}
 
-Este componente muestra un gráfico sobre la sección más visitada del sitio web según la configuración siguiente.
+Este componente muestra un gráfico con la sección más visitada de un sitio web según la siguiente configuración.
 
 ![chlimage_1-29](assets/chlimage_1-29a.png)
 
@@ -156,41 +156,41 @@ Este componente muestra un gráfico sobre la sección más visitada del sitio we
 
 **Elementos** Elemento que desglosa los datos de las métricas en el gráfico.
 
-## Ampliación del tablero {#extending-dashboard}
+## Ampliación del panel {#extending-dashboard}
 
 ### Información general {#overview-1}
 
-Los tableros son páginas normales (`cq:Page`), por lo que puede utilizarse cualquier componente para crearlos.
+Los paneles son páginas normales ( `cq:Page`), por lo tanto, cualquier componente se puede utilizar para montar paneles.
 
 Hay un grupo de componentes predeterminado `Dashboard` que contiene los componentes de informes de analytics habilitados en la plantilla de forma predeterminada.
 
-### Creación de una plantilla de tablero {#creating-a-dashboard-template}
+### Creación De Una Plantilla De Tablero {#creating-a-dashboard-template}
 
-Una plantilla define el contenido predeterminado de un tablero nuevo. Puede utilizar varias plantillas para crear diferentes tipos de tableros.
+Una plantilla define el contenido predeterminado de un nuevo panel. Puede utilizar varias plantillas para crear diferentes tipos de paneles.
 
 Las plantillas de tablero se crean como otras plantillas de página, excepto que se almacenan en `/libs/cq/dashboards/templates/`. Consulte la [Creando plantilla de página de contenido](/help/sites-developing/website.md#creating-the-contentpage-template) sección.
 
 >[!NOTE]
 >
->Las plantillas de tablero se comparten entre usuarios.
+>Las plantillas de panel se comparten entre los usuarios.
 
-### Desarrollo de un componente de tablero {#developing-a-dashboard-component}
+### Desarrollo de un componente de panel {#developing-a-dashboard-component}
 
-El desarrollo de un componente de tablero consiste en la creación de un componente de AEM normal. En esta sección se describe un ejemplo de un componente que muestra los 10 colaboradores principales.
+AEM El desarrollo de un componente Panel consiste en crear un componente de normal. En esta sección se describe un ejemplo de un componente que muestra los 10 principales colaboradores.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
 Los componentes de autor principales se almacenan en el repositorio en `/apps/geometrixx-outdoors/components/reporting` y se compone de :
 
-1. un archivo `jsp` que lee datos jcr y define el marcador de posición `html`.
+1. a `jsp` que lee datos jcr y define el `html` marcador.
 
-1. una biblioteca de cliente que contiene un archivo `js` que recopila y ordena los datos y rellena el marcador de posición `html`.
+1. una biblioteca del lado del cliente que contiene una `js` que recupera y ordena los datos y, a continuación, rellena el `html` marcador.
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
 El siguiente archivo JavaScript se define en la variable `geout.reporting.topauthors` [Biblioteca de cliente](/help/sites-developing/clientlibs.md) como elemento secundario del propio componente.
 
-El [QueryBuilder](/help/sites-developing/querybuilder-api.md) se utiliza para consultar el repositorio para leer `cq:AuditEvent` nodos. El resultado de la consulta es un objeto JSON desde el que se extraen las contribuciones de autor.
+El [QueryBuilder](/help/sites-developing/querybuilder-api.md) se utiliza para consultar el repositorio para leer `cq:AuditEvent` nodos. El resultado de la consulta es un objeto JSON del que se extraen las contribuciones de los autores.
 
 #### top_authors.js {#top-authors-js}
 

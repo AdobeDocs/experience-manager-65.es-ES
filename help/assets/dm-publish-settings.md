@@ -1,5 +1,5 @@
 ---
-title: Configuración de Dynamic Media Publish Setup para Image Server
+title: Configuración del programa de instalación de Dynamic Media Publish para el servidor de imágenes
 description: Obtenga información sobre cómo configurar la publicación en Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -16,58 +16,58 @@ ht-degree: 3%
 
 ---
 
-# Configuración de Dynamic Media Publish Setup para Image Server
+# Configuración del programa de instalación de Dynamic Media Publish para el servidor de imágenes
 
-La configuración de la publicación de Dynamic Media solo está disponible si:
+La configuración de Dynamic Media Publish solo está disponible si:
 
 * Está ejecutando Dynamic Media en modo Scene7. Consulte [Habilitar Dynamic Media en modo Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Tiene un *existente* **[!UICONTROL Configuración de Dynamic Media]** (en **[!UICONTROL Cloud Services]**) en Adobe Experience Manager 6.5.11 o posterior. Consulte [Crear una configuración de Dynamic Media en Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
-* Es administrador del sistema del Experience Manager con privilegios de administrador.
+* Tiene un *existente* **[!UICONTROL Configuración de Dynamic Media]** (en **[!UICONTROL Cloud Services]**) en Adobe Experience Manager 6.5.11 o superior. Consulte [Creación de una configuración de Dynamic Media en Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* Es administrador del sistema Experience Manager con privilegios de administrador.
 
-La configuración de publicación de Dynamic Media está diseñada para que la utilicen desarrolladores y programadores experimentados de sitios web. Adobe Dynamic Media recomienda que los usuarios que cambien esta configuración de publicación estén familiarizados con Dynamic Media de Adobe, las normas y convenciones del protocolo HTTP y la tecnología básica de imágenes.
+El programa de instalación de publicación de Dynamic Media está diseñado para que lo utilicen programadores y desarrolladores de sitios web experimentados. Adobe Dynamic Media recomienda que los usuarios que cambien esta configuración de publicación estén familiarizados con el Dynamic Media de Adobe, las normas y convenciones del protocolo HTTP y la tecnología básica de creación de imágenes.
 
-La página Configuración de publicación de Dynamic Media establece una configuración predeterminada que determina cómo se envían los recursos desde los servidores de Dynamic Media de Adobe a los sitios web o aplicaciones. Si no se especifica ninguna configuración, el servidor Dynamic Media de Adobe envía un recurso de acuerdo con una configuración predeterminada que se configuró en la página Configuración de publicación de Dynamic Media .
+La página Configuración de publicación de Dynamic Media establece la configuración predeterminada que determina cómo se envían los recursos desde los servidores de Dynamic Media de Adobe a los sitios web o las aplicaciones. Si no se especifica ninguna configuración, el servidor de Dynamic Media de Adobe envía un recurso según una configuración predeterminada que se configuró en la página Configuración de publicación de Dynamic Media.
 
-Consulte también [Opcional: Configuración de Dynamic Media: configuración del modo Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) para tareas de configuración más opcionales.
+Consulte también [Opcional: configuración de Dynamic Media: configuración del modo Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) para tareas de configuración más opcionales.
 
 >[!NOTE]
 >
->¿Desea actualizar de Dynamic Media Classic a Dynamic Media en Adobe Experience Manager? La variable [Configuración general](/help/assets/dm-general-settings.md) La página y la página Configuración de publicación de Dynamic Media se rellenan previamente con los valores tomados de la cuenta de Dynamic Media Classic. Las excepciones son todos los valores que aparecen en la lista **[!UICONTROL Opciones de carga predeterminadas]** de la página Configuración general. Estos valores ya están en Experience Manager. Como tal, cualquier cambio que realice en **[!UICONTROL Opciones de carga predeterminadas]**, en cualquiera de las cinco pestañas, a través de la interfaz de usuario del Experience Manager, se reflejan en Dynamic Media, no en Dynamic Media Classic. Todos los demás valores y configuraciones de la variable [Configuración general](/help/assets/dm-general-settings.md) y la página Configuración de publicación se mantienen entre Dynamic Media Classic y Dynamic Media en Experience Manager.
+>¿Desea actualizar de Dynamic Media Classic a Dynamic Media en Adobe Experience Manager? El [Configuración general](/help/assets/dm-general-settings.md) y la página Ajustes de publicación de Dynamic Media se rellenan previamente con los valores tomados de la cuenta de Dynamic Media Classic. Las excepciones son todos los valores enumerados en la variable **[!UICONTROL Opciones de carga predeterminadas]** de la página Configuración general. Estos valores ya están en Experience Manager. Como tal, cualquier cambio que realice en **[!UICONTROL Opciones de carga predeterminadas]**, en cualquiera de las cinco pestañas, a través de la interfaz de usuario del Experience Manager, se reflejan en Dynamic Media, no en Dynamic Media Classic. El resto de configuraciones y valores de la variable [Configuración general](/help/assets/dm-general-settings.md) y la página Ajustes de publicación se mantienen entre Dynamic Media Classic y Dynamic Media en Experience Manager.
 
-**Para configurar Dynamic Media Publish Setup Image Server:**
+**Para configurar el servidor de imágenes del programa de instalación de Dynamic Media Publish:**
 
 1. En el modo Autor del Experience Manager, seleccione el logotipo del Experience Manager para acceder a la consola de navegación global.
-1. En el carril izquierdo, seleccione el icono Herramientas y, a continuación, vaya a **[!UICONTROL Recursos]** > **[!UICONTROL Configuración de Dynamic Media Publish]**.
-1. En la página Servidor de imágenes , establezca el contexto de publicación de Image Server y, a continuación, utilice las cinco pestañas para configurar los ajustes de publicación predeterminados.
+1. En el carril izquierdo, seleccione el icono Herramientas y vaya a **[!UICONTROL Assets]** > **[!UICONTROL Ajustes de publicación de Dynamic Media]**.
+1. En la página Servidor de imágenes, establezca el contexto Servidor de imágenes: publicar y, a continuación, utilice las cinco pestañas para establecer la configuración de publicación predeterminada.
 
    * [Servidor de imágenes](#image-server)
-   * [Seguridad](#security-tab) ficha
-   * [Administración de catálogos](#catalog-management-tab) ficha
-   * [Atributos de solicitud](#request-attributes-tab) ficha
-   * [Atributos de miniatura comunes](#common-thumbnail-attributes-tab) ficha
-   * [Atributos de gestión de color](#color-management-attributes-tab) ficha
+   * [Seguridad](#security-tab) pestaña
+   * [Administración de catálogos](#catalog-management-tab) pestaña
+   * [Atributos de solicitud](#request-attributes-tab) pestaña
+   * [Atributos de miniatura comunes](#common-thumbnail-attributes-tab) pestaña
+   * [Atributos de gestión de color](#color-management-attributes-tab) pestaña
 
    ![Página Configuración de publicación de Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
-   *Configuración de publicación de Dynamic Media , con la variable **[!UICONTROL Atributos de solicitud]**seleccionada.*<br><br>
+   *página Configuración de publicación de Dynamic Media, con la variable **[!UICONTROL Atributos de solicitud]**pestaña seleccionada.*<br><br>
 
 1. Cuando haya terminado, cerca de la esquina superior derecha de la página, seleccione **[!UICONTROL Guardar]**.
 
 ## Servidor de imágenes {#image-server}
 
-La página Servidor de imágenes establece la configuración predeterminada para enviar imágenes desde los servidores de imágenes. La configuración está disponible en cinco categorías
+La página Servidor de imágenes establece la configuración predeterminada para enviar imágenes desde servidores de imágenes. La configuración está disponible en cinco categorías
 
 | Contexto de publicación | Descripción |
 | --- | --- |
 | Servicio de imágenes | Especifica el contexto para la configuración de publicación. |
-| Probar servicio de imágenes | Especifica el contexto para probar la configuración de publicación.<br>Solo para nuevas cuentas de Dynamic Media, el valor predeterminado **[!UICONTROL Dirección del cliente]** el campo está definido como `127.0.0.1` automáticamente.<br>Consulte [Probar recursos antes de hacerlos públicos](#test-assets-before-making-public). |
+| Probar servicio de imágenes | Especifica el contexto para probar la configuración de publicación.<br>Solo para las nuevas cuentas de Dynamic Media, la opción predeterminada **[!UICONTROL Dirección del cliente]** el campo está configurado como `127.0.0.1` automáticamente.<br>Consulte [Pruebe los recursos antes de hacerlos públicos](#test-assets-before-making-public). |
 
-### Ficha Seguridad {#security-tab}
+### Pestaña Seguridad {#security-tab}
 
-**[!UICONTROL Dirección del cliente]** - Permite especificar una o más direcciones IP o intervalos de direcciones IP. Cuando se especifica, se rechazan las solicitudes a este catálogo de imágenes que se originan en un cliente con una dirección IP no incluida en la lista. Esta regla se aplica tanto a la entrega de imágenes como a las imágenes procesadas.
+**[!UICONTROL Dirección del cliente]** : Permite especificar una o varias direcciones IP o intervalos de direcciones IP. Cuando se especifica, se rechazan las solicitudes a este catálogo de imágenes que se originan desde un cliente con una dirección IP no incluida. Esta regla se aplica tanto a la entrega de imágenes como a las imágenes procesadas.
 
-![Ficha Seguridad ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Pestaña Seguridad que muestra el campo &quot;Permitir&quot; IP.*
+![Pestaña Seguridad ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Pestaña Seguridad que muestra el campo &quot;Permitir&quot; de IP.*
 
-### Ficha Administración del catálogo {#catalog-management-tab}
+### Pestaña Administración de catálogos {#catalog-management-tab}
 
 **[!UICONTROL Ruta del archivo de definición del conjunto de reglas]** - Especifica el archivo que contiene las definiciones del conjunto de reglas para el catálogo de imágenes.
 
@@ -75,53 +75,53 @@ Consulte también [RuleSetFile](https://experienceleague.adobe.com/docs/dynamic-
 
 >[!NOTE]
 >
->Si su cuenta de Dynamic Media Classic ya tiene un **[!UICONTROL Ruta del archivo de definición del conjunto de reglas]** seleccionado (tal como se establece en **[!UICONTROL Configuración]** > **[!UICONTROL Aplicación]** > **[!UICONTROL Configuración de publicación]**, en **[!UICONTROL Administración de catálogos]** ), su cuenta de Dynamic Media en el Experience Manager recupera el archivo desde Dynamic Media Classic. A continuación, el archivo se almacena y se pone a disposición en este campo, al abrir el **[!UICONTROL Configuración de Dynamic Media Publish]** por primera vez.
+>Si su cuenta de Dynamic Media Classic ya tiene un **[!UICONTROL Ruta del archivo de definición del conjunto de reglas]** seleccionado (como se establece en **[!UICONTROL Configurar]** > **[!UICONTROL Aplicación]** > **[!UICONTROL Configuración de publicación]**, en **[!UICONTROL Administración de catálogos]** grupo), su cuenta de Dynamic Media en el Experience Manager recupera el archivo de Dynamic Media Classic. A continuación, el archivo se almacena y se pone a disposición en este campo al abrir **[!UICONTROL Ajustes de publicación de Dynamic Media]** por primera vez.
 
-### Ficha Atributos de solicitud {#request-attributes-tab}
+### Pestaña Atributos de solicitud {#request-attributes-tab}
 
 Estos ajustes pertenecen al aspecto predeterminado de las imágenes.
 
 | Configuración | Descripción |
 | --- | --- |
-| **[!UICONTROL Límite de tamaño de la imagen de respuesta]** | Requerido.<br>Solo para las nuevas cuentas de Dynamic Media, el límite de tamaño predeterminado se establece automáticamente en Anchura: `3000` y altura: `3000` para ambos **[!UICONTROL Servicio de imágenes]** y **[!UICONTROL Probar servicio de imágenes]**.<br>Especifica el ancho y el alto máximo de la imagen de respuesta que se devuelve al cliente. El servidor devuelve un error si una solicitud produce una imagen de respuesta cuya anchura, altura o ambas dimensiones sean superiores a esta configuración.<br>Consulte también [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Modo de ofuscación de solicitud]** | Habilitar si desea aplicar codificación base64 a solicitudes válidas.<br>Consulte también [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Modo de bloqueo de solicitud]** | Habilitar si desea un simple bloqueo hash incluido en las solicitudes.<br>Consulte también [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Límite de tamaño de la imagen de respuesta]** | Requerido.<br>Solo para las cuentas nuevas de Dynamic Media, el límite de tamaño predeterminado se establece automáticamente en Anchura: `3000` y Altura: `3000` para ambos **[!UICONTROL Servicio de imágenes]** y **[!UICONTROL Probar servicio de imágenes]**.<br>Especifica la anchura y altura máximas para la imagen de respuesta que se devuelve al cliente. El servidor devuelve un error si una solicitud genera una imagen de respuesta con una anchura, altura o ambas superiores a esta configuración.<br>Consulte también [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Modo de ofuscación de solicitud]** | Habilite esta opción si desea aplicar la codificación base64 a solicitudes válidas.<br>Consulte también [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Modo de bloqueo de solicitud]** | Habilite esta opción si desea que las solicitudes incluyan un bloqueo hash simple.<br>Consulte también [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) en la Guía de referencia de visores de Dynamic Media. |
 | **[!UICONTROL Atributos de solicitud predeterminados]** |  |
-| **[!UICONTROL Sufijo de archivo de imagen predeterminado]** | Requerido.<br>Extensión de archivo de datos predeterminada que se anexa a los valores de campo Ruta del catálogo y RutaDeMáscara si la ruta no incluye un sufijo de archivo.<br>Consulte también [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Nombre de fuente predeterminada]** | Especifica qué fuente se utiliza si una solicitud de capa de texto no proporciona ninguna fuente. Si se especifica, debe ser un valor de nombre de fuente válido en el mapa de fuentes de este catálogo de imágenes o en el mapa de fuentes del catálogo predeterminado.<br>Consulte también [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Imagen predeterminada]** | Proporciona una imagen predeterminada para devolver en respuesta a una solicitud en la que no se encuentra la imagen solicitada.<br>Consulte también [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) en la Guía de referencia de visores de Dynamic Media.<br>**NOTA**: Si su cuenta de Dynamic Media Classic ya tiene un **[!UICONTROL Imagen predeterminada]** seleccionado (tal como se establece en **[!UICONTROL Configuración]** > **[!UICONTROL Aplicación]** > **[!UICONTROL Configuración de publicación]**, en **[!UICONTROL Atributos de solicitud predeterminados]** ), su cuenta de Dynamic Media en el Experience Manager recupera el archivo desde Dynamic Media Classic. A continuación, el archivo se almacena y se pone a disposición en este campo al abrir el **[!UICONTROL Configuración de Dynamic Media Publish]** por primera vez. |
-| **[!UICONTROL Modo de imagen predeterminado]** | Cuando el cuadro deslizante está activado (control deslizante a la derecha), la variable **[!UICONTROL Imagen predeterminada]** reemplaza cada capa que falta en la imagen de origen por la imagen predeterminada y devuelve el compuesto como de costumbre. Cuando el cuadro deslizante está desactivado (deslizador a la izquierda), la imagen predeterminada reemplaza a la imagen compuesta completa, aunque la imagen que falta sea una de varias capas.<br>Consulte también [DefaultImageMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Tamaño de vista predeterminado]** | Requerido.<br>Solo para las nuevas cuentas de Dynamic Media, el tamaño de vista predeterminado se establece automáticamente en Anchura: `1280` y altura: `1280` para ambos **[!UICONTROL Servicio de imágenes]** y **[!UICONTROL Probar servicio de imágenes]**.<br>El servidor restringe el tamaño de las imágenes de respuesta para que no supere esta anchura y altura si la solicitud no especifica el tamaño de vista de forma explícita mediante `wid=`, `hei=`o `scl=`.<br>Consulte también [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Tamaño de miniatura predeterminado]** | Requerido.<br>Se utiliza en lugar del atributo **[!UICONTROL Tamaño de vista predeterminado]** para solicitudes de miniaturas (`req=tmb`). El servidor restringe el tamaño de las imágenes de respuesta para que no superen esta anchura y altura, si se solicita una miniatura (`req=tmb`) no especifica el tamaño utilizando `wid=`, `hei=`o `scl=`.<br>Consulte también [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Sufijo de archivo de imagen predeterminado]** | Requerido.<br>Extensión de archivo de datos predeterminada que se anexa a los valores de campo de la ruta de máscara y la ruta de catálogo si la ruta no incluye un sufijo de archivo.<br>Consulte también [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Nombre de fuente predeterminada]** | Especifica la fuente que se utilizará en caso de que la solicitud de capa de texto no proporcione ninguna. Si se especifica, debe ser un valor de nombre de fuente válido en el mapa de fuentes de este catálogo de imágenes o en el mapa de fuentes del catálogo predeterminado.<br>Consulte también [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Imagen predeterminada]** | Proporciona una imagen predeterminada en respuesta a una solicitud donde la imagen solicitada no se encuentra.<br>Consulte también [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) en la Guía de referencia de visores de Dynamic Media.<br>**NOTA**: Si su cuenta de Dynamic Media Classic ya tiene un **[!UICONTROL Imagen predeterminada]** seleccionado (como se establece en **[!UICONTROL Configurar]** > **[!UICONTROL Aplicación]** > **[!UICONTROL Configuración de publicación]**, en **[!UICONTROL Atributos de solicitud predeterminados]** grupo), su cuenta de Dynamic Media en el Experience Manager recupera el archivo de Dynamic Media Classic. A continuación, el archivo se almacena y se pone a disposición en este campo al abrir **[!UICONTROL Ajustes de publicación de Dynamic Media]** por primera vez. |
+| **[!UICONTROL Modo de imagen predeterminado]** | Cuando la casilla deslizante está activada (deslizador a la derecha), la **[!UICONTROL Imagen predeterminada]** reemplaza cada capa que falta en la imagen de origen con la imagen predeterminada y devuelve el compuesto de la forma habitual. Cuando el cuadro deslizante está desactivado (deslizador a la izquierda), la imagen predeterminada reemplaza toda la imagen compuesta, incluso si la imagen que falta es solo una de varias capas.<br>Consulte también [DefaultImageMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Tamaño de vista predeterminado]** | Requerido.<br>Solo para las cuentas nuevas de Dynamic Media, el tamaño de vista predeterminado se establece automáticamente en Anchura: `1280` y Altura: `1280` para ambos **[!UICONTROL Servicio de imágenes]** y **[!UICONTROL Probar servicio de imágenes]**.<br>El servidor limita el tamaño de las imágenes de respuesta a esta altura y anchura máximas, a no ser que la solicitud especifique el tamaño de vista explícitamente con `wid=`, `hei=`, o `scl=`.<br>Consulte también [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Tamaño de miniatura predeterminado]** | Requerido.<br>Se utiliza en lugar del atributo **[!UICONTROL Tamaño de vista predeterminado]** para solicitudes de miniatura (`req=tmb`). El servidor limita el tamaño de las imágenes de respuesta a esta altura y anchura máximas, a no ser que se produzca una solicitud de miniatura (`req=tmb`) no especifica el tamaño explícitamente usando `wid=`, `hei=`, o `scl=`.<br>Consulte también [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html) en la Guía de referencia de visores de Dynamic Media. |
 | **[!UICONTROL Color de fondo predeterminado]** | Especifica el valor del RGB utilizado para rellenar cualquier área de una imagen de respuesta que no contenga datos de imagen reales.<br>Consulte también [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html) en la Guía de referencia de visores de Dynamic Media. |
 | **[!UICONTROL Atributos de codificación JPEG]** |  |
-| **[!UICONTROL Calidad]** | <br>Especifica los atributos predeterminados para las imágenes de respuesta del JPEG.<br>Solo para nuevas cuentas de Dynamic Media, la variable **[!UICONTROL Calidad]** el valor predeterminado se establece automáticamente en `80` para ambos **[!UICONTROL Servicio de imágenes]** y **[!UICONTROL Probar servicio de imágenes]**.<br>Este campo se define en el rango de 1 a 100.<br>Consulte también [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Disminución de resolución de cromaticidad]** | Activar o desactivar el muestreo descendente cromático empleado por los codificadores JPEG. |
-| **[!UICONTROL Modo de remuestreo predeterminado]** | Especifica los atributos de remuestreo e interpolación predeterminados que se utilizarán para escalar datos de imagen. Usar cuando `resMode` no se ha especificado en una solicitud.<br>Solo para las nuevas cuentas de Dynamic Media, el modo de remuestreo predeterminado se establece automáticamente en `Sharp2` para ambos **[!UICONTROL Servicio de imágenes]** y **[!UICONTROL Probar servicio de imágenes]**.<br>Consulte también [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Calidad]** | <br>Especifica los atributos predeterminados para las imágenes de respuesta del JPEG.<br>Solo para las nuevas cuentas de Dynamic Media, la variable **[!UICONTROL Calidad]** el valor predeterminado se establece automáticamente como `80` para ambos **[!UICONTROL Servicio de imágenes]** y **[!UICONTROL Probar servicio de imágenes]**.<br>Este campo se define en el intervalo de 1 a 100.<br>Consulte también [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Disminución de resolución de cromaticidad]** | Habilite o deshabilite la disminución de resolución cromática que emplean los codificadores JPEG. |
+| **[!UICONTROL Modo de remuestreo predeterminado]** | Especifica los atributos predeterminados de remuestreo e interpolación que se utilizarán para escalar los datos de imagen. Usar cuando `resMode` no se ha especificado en una solicitud.<br>Solo para las cuentas nuevas de Dynamic Media, el modo de remuestreo predeterminado se establece automáticamente en `Sharp2` para ambos **[!UICONTROL Servicio de imágenes]** y **[!UICONTROL Probar servicio de imágenes]**.<br>Consulte también [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html) en la Guía de referencia de visores de Dynamic Media. |
 
-### Ficha Atributos de miniatura comunes {#common-thumbnail-attributes-tab}
+### Pestaña Atributos de miniatura comunes {#common-thumbnail-attributes-tab}
 
-Estos ajustes pertenecen al aspecto y la alineación predeterminados de las imágenes en miniatura.
+Estos ajustes se refieren al aspecto y la alineación predeterminados de las imágenes en miniatura.
 
 | Configuración | Descripción |
 | --- | --- |
-| **[!UICONTROL Color de fondo predeterminado para la miniatura]** | Especifica el valor del RGB utilizado para rellenar el área de una imagen en miniatura de salida que no contiene datos de imagen reales. Solo se usa para solicitudes de miniaturas (`req=tmb`) y cuándo **[!UICONTROL Tipo de miniatura predeterminado]** está configurada en **[!UICONTROL Ajustar]** o **[!UICONTROL Textura]**.<br>Consulte también [ThumbBkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Alineación horizontal]** | Especifica la alineación horizontal de la imagen en miniatura en el rectángulo de imagen de respuesta especificado por `wid=` y `hei=` valores.<br>Solo se usa para solicitudes de miniaturas (`req=tmb`) y cuándo **[!UICONTROL Tipo de miniatura predeterminado]** está configurada en **[!UICONTROL Ajustar]**.<br>Hay tres alineaciones horizontales entre las que elegir: **[!UICONTROL Alineación central]**, **[!UICONTROL Alineación izquierda]** y **[!UICONTROL Alineación derecha]**.<br>Consulte también [ThumbHorizAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Alineación vertical]** | Especifica la alineación vertical de la imagen en miniatura en el rectángulo de imagen de respuesta especificado por `wid=` y `hei=` valores. Solo se usa para solicitudes de miniaturas (`req=tmb`) y cuándo **[!UICONTROL Tipo de miniatura predeterminado]** está configurada en **[!UICONTROL Ajustar]**.<br>Hay tres alineaciones verticales para elegir: **[!UICONTROL Alineación superior]**, **[!UICONTROL Alineación central]** y **[!UICONTROL Alineación inferior]**.<br>Consulte también [ThumbVertAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Duración predeterminada de la caché]** | Proporciona un intervalo de caducidad predeterminado en horas en caso de que un registro de catálogo en particular no contenga un valor de caducidad de catálogo válido. Establecer como `-1` para marcar como nunca caduca. <br>Consulte también [Caducidad](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Tipo de miniatura predeterminado]** | Proporciona un valor predeterminado para el tipo de miniatura en caso de que un registro de catálogo en particular no contenga un valor de catálogo ThumbType válido. Solo se usa para solicitudes de miniaturas (`req=tmb`).<br>Hay tres tipos de miniaturas entre los que elegir: **[!UICONTROL Recortar]**, **[!UICONTROL Ajustar]** y **[!UICONTROL Textura]**.<br>Consulte también [ThumbType](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Resolución de miniatura predeterminada]** | Proporciona un valor predeterminado para la resolución del objeto de miniatura en caso de que un registro de catálogo concreto no contenga un valor de catálogo ThumbRes válido. Solo se usa para solicitudes de miniaturas (`req=tmb`) y cuando la variable **[!UICONTROL Tipo de miniatura predeterminado]** está configurada en **[!UICONTROL Textura]**.<br>Consulte también [ThumbRes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Color de fondo predeterminado para la miniatura]** | Especifica el valor del RGB que se utiliza para rellenar el área de una imagen en miniatura de salida que no contiene datos de imagen reales. Solo se usa para solicitudes de miniaturas (`req=tmb`) y cuándo **[!UICONTROL Tipo de miniatura predeterminado]** se establece en **[!UICONTROL Ajuste]** o **[!UICONTROL Textura]**.<br>Consulte también [ThumbBkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Alineación horizontal]** | Especifica la alineación horizontal de la imagen en miniatura en el rectángulo de imagen de respuesta especificado por `wid=` y `hei=` valores.<br>Solo se usa para solicitudes de miniaturas (`req=tmb`) y cuándo **[!UICONTROL Tipo de miniatura predeterminado]** se establece en **[!UICONTROL Ajuste]**.<br>Hay tres alineaciones horizontales entre las que elegir: **[!UICONTROL Alineación al centro]**, **[!UICONTROL Alineación izquierda]**, y **[!UICONTROL Alineación derecha]**.<br>Consulte también [ThumbHorizAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Alineación vertical]** | Especifica la alineación vertical de la imagen en miniatura en el rectángulo de imagen de respuesta especificado por `wid=` y `hei=` valores. Solo se usa para solicitudes de miniaturas (`req=tmb`) y cuándo **[!UICONTROL Tipo de miniatura predeterminado]** se establece en **[!UICONTROL Ajuste]**.<br>Hay tres alineaciones verticales entre las que elegir: **[!UICONTROL Alineación superior]**, **[!UICONTROL Alineación al centro]**, y **[!UICONTROL Alineación inferior]**.<br>Consulte también [ThumbVertAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Duración predeterminada de la caché]** | Proporciona un intervalo de caducidad predeterminado en horas en el caso de que el valor de catálogo Expiration no sea válido en un registro de catálogo determinado. Configure como. `-1` para marcar como nunca caduca. <br>Consulte también [Caducidad](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Tipo de miniatura predeterminado]** | Proporciona un tipo de miniatura predeterminado en el caso de que el valor de catálogo ThumbType no sea válido en un registro de catálogo determinado. Solo se usa para solicitudes de miniaturas (`req=tmb`).<br>Hay tres tipos de miniaturas para elegir: **[!UICONTROL Recorte]**, **[!UICONTROL Ajuste]**, y **[!UICONTROL Textura]**.<br>Consulte también [ThumbType](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Resolución de miniatura predeterminada]** | Proporciona una resolución de miniatura predeterminada en el caso de que el valor de catálogo ThumbRes no sea válido en un registro de catálogo determinado. Solo se usa para solicitudes de miniaturas (`req=tmb`) y cuando el **[!UICONTROL Tipo de miniatura predeterminado]** se establece en **[!UICONTROL Textura]**.<br>Consulte también [ThumbRes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres.html) en la Guía de referencia de visores de Dynamic Media. |
 
-### Ficha Atributos de administración de color {#color-management-attributes-tab}
+### Pestaña Atributos de gestión de color {#color-management-attributes-tab}
 
-Estos ajustes determinan qué perfiles de color ICC se utilizan para las imágenes.
+Esta configuración determina qué perfiles de color ICC se utilizan para las imágenes.
 
-**Interpretación de la conversión de color**
-Una interpretación de conversión de color permite anular la interpretación predeterminada de los perfiles de trabajo para determinar cómo se ajustan los colores de origen. Se usa cuando:
+**Interpretación de conversión de color**
+Una interpretación de conversión de color permite anular la interpretación predeterminada de los perfiles de trabajo para determinar cómo se ajustan los colores de origen. Se utiliza cuando:
 
 1. Uno de los perfiles ICC predeterminados es el espacio de color de destino de una conversión de color.
 1. Un dispositivo de salida (impresora o monitor) se caracteriza por este perfil.
-1. Además, la interpretación especificada es válida para este perfil.
+1. Y la interpretación especificada es válida para este perfil.
 
 Las distintas intenciones de renderización utilizan reglas diferentes para determinar cómo se ajustan los colores de origen.
 
@@ -129,133 +129,133 @@ Consulte también [IccRenderIntent](https://experienceleague.adobe.com/docs/dyna
 
 >[!NOTE]
 >
->En general, es mejor utilizar la interpretación predeterminada para la configuración de color seleccionada, que ha sido probada por Adobe para cumplir los estándares del sector. Por ejemplo, si elige una configuración de color para Norteamérica o Europa, la interpretación de conversión de color predeterminada es **[!UICONTROL Colorimétrico relativo]**. Si elige una configuración de color para Japón, la interpretación de conversión de color predeterminada es **[!UICONTROL Percepción]**.
+>En general, es mejor utilizar la interpretación predeterminada para el ajuste de color seleccionado, que ha sido probado por Adobe para cumplir con los estándares del sector. Por ejemplo, si elige una configuración de color para Norteamérica o Europa, la interpretación de la conversión de color por defecto es **[!UICONTROL Colorimétrico relativo]**. Si elige una configuración de color para Japón, la interpretación de la conversión de color por defecto es **[!UICONTROL Perceptual]**.
 
 | Configuración | Características |
 | --- | --- |
-| **[!UICONTROL Espacio de color predeterminado CMYK]** | Especifica el nombre del perfil de color ICC que se utilizará como perfil de trabajo para los datos CMYK. If **[!UICONTROL Ninguno especificado]** se elige, la gestión de color se desactiva para este catálogo de imágenes cuando están involucradas las imágenes de origen CMYK. Todos los espacios de trabajo CMYK dependen del dispositivo, lo que significa que se basan en combinaciones reales de tinta y papel. Los materiales de Adobe para espacios de trabajo CMYK se basan en condiciones estándar de impresión comercial.<br> Consulte también [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Espacio de color predeterminado de escala de grises]** | Especifica el nombre del perfil de color ICC que se utilizará como perfil de trabajo para los datos de escala de grises. If **[!UICONTROL Ninguno especificado]** se elige, la gestión de color se desactiva para este catálogo de imágenes cuando están implicadas imágenes de origen en escala de grises.<br>Consulte también [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Espacio de color predeterminado RGB]** | Especifica el nombre del perfil de color ICC que se utilizará como perfil de trabajo para los datos del RGB. If **[!UICONTROL Ninguno especificado]** se elige, la gestión de color se desactiva para este catálogo de imágenes cuando están involucradas las imágenes de fuentes RGB. En general, es mejor elegir **[!UICONTROL Adobe RGB]** o **[!UICONTROL sRGB]**, en lugar del perfil de un dispositivo específico (como un perfil de monitor). **[!UICONTROL sRGB]** se recomienda cuando prepare imágenes para la web o dispositivos móviles, ya que define el espacio de color del monitor estándar utilizado para ver imágenes en la web. **[!UICONTROL sRGB]** también es una buena opción cuando se trabaja con imágenes de cámaras digitales de consumo, ya que la mayoría de estas cámaras utilizan sRGB como espacio de color predeterminado.<br>Consulte también [IccProfileRBG](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html) en la Guía de referencia de visores de Dynamic Media. |
-| **[!UICONTROL Interpretación de representación de la conversión de color]** | **[!UICONTROL Percepción]** - Su objetivo es preservar la relación visual entre los colores para que se perciba como natural para el ojo humano, aunque los valores de color en sí mismos puedan cambiar. Esta intención es adecuada para imágenes fotográficas con muchos colores fuera de gama. Este ajuste es la interpretación estándar para la industria de impresión japonesa. |
-|  | **[!UICONTROL Colorimétrico relativo]** - Compara el resaltado extremo del espacio de color de origen con el del espacio de color de destino y cambia todos los colores según corresponda. Los colores fuera de gama se desplazan al color reproducible más cercano en el espacio de color de destino. Colorimétrico relativo conserva más de los colores originales en una imagen que Perceptual. Este ajuste es la interpretación estándar para impresión en Norteamérica y Europa. |
-|  | **[!UICONTROL Saturación]** - Trata de producir colores vivos en una imagen a expensas de la precisión del color. Esta interpretación es adecuada para gráficos empresariales, como gráficos o gráficos, en los que los colores saturados brillantes son más importantes que la relación exacta entre los colores. |
-|  | **[!UICONTROL Colorimétrico absoluto]** - Deja sin cambios los colores que entran dentro de la gama de destino. Los colores fuera de gama se recortan. No se aplica ninguna escala de colores a los puntos blancos de destino. Esta intención es mantener la precisión del color a expensas de preservar las relaciones entre los colores y es adecuada para pruebas para simular la salida de un dispositivo en particular. Esta intención es útil para previsualizar cómo el color del papel afecta a los colores impresos. |
+| **[!UICONTROL Espacio de color predeterminado CMYK]** | Especifica el nombre del perfil de color ICC que se utilizará como perfil de trabajo para los datos CMYK. If **[!UICONTROL Ninguno especificado]** se elige, la administración de color se desactiva para este catálogo de imágenes cuando hay imágenes de origen CMYK involucradas. Todos los espacios de trabajo CMYK dependen del dispositivo, lo que significa que se basan en combinaciones reales de tinta y papel. Los suministros de Adobe para espacios de trabajo CMYK se basan en las condiciones de impresión comercial estándar.<br> Consulte también [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Espacio de color predeterminado de escala de grises]** | Especifica el nombre del perfil de color ICC que se utilizará como perfil de trabajo para los datos de escala de grises. If **[!UICONTROL Ninguno especificado]** se elige, la administración de color se desactiva para este catálogo de imágenes cuando hay imágenes con origen de escala de grises involucradas.<br>Consulte también [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Espacio de color predeterminado RGB]** | Especifica el nombre del perfil de color ICC que se utilizará como perfil de trabajo para los datos del RGB. If **[!UICONTROL Ninguno especificado]** se elige, la administración de color se desactiva para este catálogo de imágenes cuando hay imágenes de fuentes de RGB implicadas. En general, es mejor elegir **[!UICONTROL Adobe RGB]** o **[!UICONTROL sRGB]**, en lugar del perfil de un dispositivo específico (como un perfil de monitor). **[!UICONTROL sRGB]** se recomienda cuando se preparan imágenes para la web o dispositivos móviles, ya que define el espacio de color del monitor estándar utilizado para ver imágenes en la web. **[!UICONTROL sRGB]** también es una buena opción cuando se trabaja con imágenes de cámaras digitales de consumo, ya que la mayoría de estas cámaras utilizan sRGB como su espacio de color predeterminado.<br>Consulte también [IccProfileRBG](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html) en la Guía de referencia de visores de Dynamic Media. |
+| **[!UICONTROL Interpretación de representación de la conversión de color]** | **[!UICONTROL Perceptual]** - Pretende preservar la relación visual entre los colores para que se perciba como natural para el ojo humano, aunque los valores de color en sí mismos puedan cambiar. Esta intención es adecuada para imágenes fotográficas con muchos colores fuera de gama. Esta configuración es la interpretación estándar para la industria de impresión japonesa. |
+|  | **[!UICONTROL Colorimétrico relativo]** : compara el resaltado extremo del espacio de color de origen con el del espacio de color de destino y cambia todos los colores en consecuencia. Los colores fuera de gama se desplazan al color reproducible más cercano en el espacio de color de destino. Colorimétrico relativo conserva más de los colores originales en una imagen que Perceptual. Esta configuración es la interpretación estándar de la impresión en Norteamérica y Europa. |
+|  | **[!UICONTROL Saturación]** - Intenta producir colores vivos en una imagen a expensas de la precisión del color. Esta interpretación es adecuada para gráficos empresariales como gráficos o gráficos, donde los colores saturados brillantes son más importantes que la relación exacta entre los colores. |
+|  | **[!UICONTROL Colorimétrico absoluto]** - Deja los colores que caen dentro de la gama de destino sin cambios. Los colores fuera de gama se recortan. No se aplica ninguna escala de colores al punto blanco de destino. Esta intención tiene como objetivo mantener la precisión del color a expensas de preservar las relaciones entre los colores y es adecuada para la prueba para simular la salida de un dispositivo en particular. Esta intención es útil para obtener una vista previa del modo en que el color del papel afecta a los colores impresos. |
 
-## Probar recursos antes de hacerlos públicos {#test-assets-before-making-public}
+## Pruebe los recursos antes de hacerlos públicos {#test-assets-before-making-public}
 
-Secure Testing le ayuda a definir un entorno de prueba seguro y a crear una solución empresarial a empresa sólida, basada en un conjunto configurable de direcciones IP e intervalos. Esta funcionalidad le permite hacer coincidir las implementaciones de Dynamic Media de Adobe con la arquitectura de su sistema empresarial y de administración de contenido.
+Las pruebas seguras le ayudan a definir un entorno de prueba seguro y a crear una solución sólida de empresa a empresa, basada en un conjunto configurable de direcciones IP e intervalos. Esta funcionalidad le permite hacer coincidir las implementaciones de Dynamic Media de Adobe con la arquitectura del sistema empresarial y de administración de contenido.
 
-Con Secure Testing, puede obtener una vista previa de la versión de ensayo del sitio web con contenido no publicado.
+Con Pruebas seguras, puede obtener una vista previa de la versión de ensayo del sitio web con contenido sin publicar.
 
 Si lo desea, cree un entorno de ensayo en lugar de publicar los recursos por los siguientes motivos:
 
 * Previsualizar sitios web antes del lanzamiento público (sitio web de ensayo).
-* Proporcione recursos que requieran acceso restringido, como catálogos electrónicos que muestren precios en una aplicación web B2B.
-* Utilice los recursos detrás de un cortafuegos como parte del sistema de administración de la información del producto, la aplicación de servicio al cliente, el sitio de formación, etc.
+* Proporcione recursos que requieran acceso restringido, como catálogos electrónicos que muestran precios en una aplicación web B2B.
+* Utilice recursos detrás de un cortafuegos como parte de un sistema de administración de la información del producto, una aplicación de servicio al cliente, un sitio de formación, etc.
 
 >[!NOTE]
 >
->Secure Testing no afecta al acceso a Adobe Dynamic Media Classic. La seguridad de Adobe Dynamic Media Classic sigue siendo coherente y requiere las credenciales habituales para acceder a Adobe Dynamic Media Classic y a los servicios web relacionados.
+>Prueba segura no afecta al acceso a Adobe Dynamic Media Classic. La seguridad de Adobe Dynamic Media Classic sigue siendo coherente y requiere las credenciales habituales para acceder a Adobe Dynamic Media Classic y a los servicios web relacionados.
 
-### Funcionamiento de Secure Testing {#how-test-assets-works}
+### Funcionamiento de las pruebas de seguridad {#how-test-assets-works}
 
-La mayoría de las corporaciones ejecutan Internet detrás de un cortafuegos. El acceso a Internet es posible a través de ciertas rutas y, por lo general, a través de una gama limitada de direcciones IP públicas.
+La mayoría de las corporaciones manejan su Internet detrás de un cortafuegos. El acceso a Internet es posible a través de determinadas rutas y, por lo general, a través de un rango limitado de direcciones IP públicas.
 
-Desde su red corporativa, puede averiguar su dirección IP pública utilizando sitios web como [https://www.whatismyip.com](https://www.whatismyip.com/) o solicite esta información a su organización de TI corporativa.
+Desde la red corporativa, puede averiguar su dirección IP pública mediante sitios web como [https://www.whatismyip.com](https://www.whatismyip.com/) o solicite esta información a su organización de TI corporativa.
 
-Con Secure Testing, Adobe Dynamic Media crea un servidor de imágenes dedicado para entornos de ensayo o aplicaciones internas. Cualquier solicitud a este servidor comprueba la dirección IP de origen. Si la solicitud entrante no está dentro de la lista aprobada de direcciones IP, se devuelve una respuesta de error. El administrador de empresa de Dynamic Media de Adobe configura la lista aprobada de direcciones IP para el entorno Secure Testing de su empresa.
+Con las pruebas seguras, Adobe Dynamic Media crea un servidor de imágenes específico para entornos de ensayo o aplicaciones internas. Cualquier solicitud a este servidor comprueba la dirección IP de origen. Si la solicitud entrante no se encuentra dentro de la lista aprobada de direcciones IP, se devuelve una respuesta de error. El administrador de la empresa de Adobe Dynamic Media configura la lista aprobada de direcciones IP para el entorno de prueba segura de su empresa.
 
-Como se debe confirmar la ubicación de la solicitud original, el tráfico del servicio Secure Testing no se enruta a través de una red de distribución de contenido como el tráfico público del servidor de imágenes de Dynamic Media. Las solicitudes al servicio Secure Testing tienen una latencia ligeramente mayor que los servidores públicos de imágenes de Dynamic Media.
+Dado que la ubicación de la solicitud original debe confirmarse, el tráfico del servicio Prueba segura no se enruta a través de una red de distribución de contenido como el tráfico público de Dynamic Media Image Server. Las solicitudes al servicio Secure Testing tienen una latencia ligeramente superior en comparación con los servidores de imágenes de Dynamic Media públicos.
 
-Los recursos no publicados están disponibles inmediatamente desde los servicios Secure Testing, sin necesidad de publicarlos. De este modo, puede ejecutar una vista previa antes de publicar los recursos en su servidor de imágenes público.
+Los recursos sin publicar están disponibles inmediatamente en los servicios de prueba segura, sin necesidad de publicarlos. De este modo, puede ejecutar una previsualización antes de que los recursos se publiquen en su servidor de imágenes público.
 
 >[!NOTE]
 >
->Los servicios de Secure Testing utilizan el servidor de catálogo configurado con un contexto de publicación interno. Por lo tanto, si su empresa está configurada para publicar en Secure Testing, cualquier recurso cargado en Adobe Dynamic Media estará disponible inmediatamente en los servicios de Secure Testing. Esta funcionalidad es verdadera independientemente de si los recursos están marcados para publicarse en la carga.
+>Los servicios de prueba segura utilizan el servidor de catálogos configurado con un contexto de publicación interno. Por lo tanto, si su empresa está configurada para publicar en pruebas seguras, cualquier recurso cargado en Adobe Dynamic Media estará disponible inmediatamente en los servicios de pruebas seguras. Esta funcionalidad se cumple independientemente de si los recursos se marcan para su publicación durante la carga.
 
-Los servicios de Secure Testing admiten actualmente los siguientes tipos de activos y funcionalidades:
+Actualmente, los servicios de prueba segura admiten los siguientes tipos de recursos y funcionalidades:
 
 * Imágenes.
-* Viñetas (Procesar solicitudes del servidor).
-* Procesar solicitudes de servidor (admitidas, pero el cliente debe solicitarlas explícitamente).
-* Conjuntos, incluidos conjuntos de imágenes, catálogos electrónicos, conjuntos de representación y conjuntos de medios.
-* Visores de medios enriquecidos de Dynamic Media de Adobe estándar.
+* Viñetas (solicitudes del servidor de procesamiento).
+* Solicitudes del servidor de procesamiento (admitidas, pero solicitadas explícitamente por el cliente).
+* Conjuntos, incluidos conjuntos de imágenes, catálogos electrónicos, conjuntos de procesamiento y conjuntos de medios.
+* Visores de medios enriquecidos estándar de Adobe Dynamic Media.
 * Adobe de páginas JSP de Dynamic Media OnDemand.
-* Contenido estático, como archivos PDF y vídeos servidos de forma progresiva.
-* Flujo continuo de vídeo HTTP.
-* Flujo continuo de vídeo progresivo.
+* Contenido estático, como archivos de PDF y vídeos servidos progresivamente.
+* Streaming de vídeo HTTP.
+* Flujo de vídeo progresivo.
 
 Actualmente no se admiten los siguientes tipos de recursos y funcionalidades:
 
-* Búsqueda de información o catálogo electrónico de Adobe Dynamic Media Classic
+* Búsqueda en catálogo electrónico o información de Adobe Dynamic Media Classic
 * Flujo de vídeo RTMP
-* Impresión virtual
-* Servicios UGC (contenido generado por el usuario)
+* Web-to-print
+* Servicios de UGC (contenido generado por el usuario)
 
    >[!IMPORTANT]
    >
-   >A partir del 1 de mayo de 2023, los recursos UGC de Dynamic Media estarán disponibles para su uso hasta 60 días después de la fecha de carga. Transcurridos 60 días, los recursos se eliminarán.
+   >A partir del 1 de mayo de 2023, los recursos UGC de Dynamic Media estarán disponibles para su uso durante un máximo de 60 días a partir de la fecha de carga. Después de 60 días, los recursos se eliminarán.
 
    >[!NOTE]
    >
-   >La compatibilidad con recursos de imagen vectoriales UGC nuevos o existentes en Adobe Dynamic Media finalizó el 30 de septiembre de 2021.
+   >La compatibilidad con recursos de imagen vectorial UGC nuevos o existentes en Adobe Dynamic Media finalizó el 30 de septiembre de 2021.
 
-### Probar el servicio Secure Testing {#test-secure-testing-service}
+### Prueba del servicio Secure Testing {#test-secure-testing-service}
 
-Para asegurarse de que el servicio Secure Testing funciona según lo esperado, haga lo siguiente:
+Para asegurarse de que el servicio Prueba segura funciona según lo esperado, haga lo siguiente:
 
-#### Preparar su cuenta
+#### Prepare su cuenta
 
-1. Póngase en contacto con el Servicio de atención al cliente de Adobe y solicite que habiliten Secure Testing en su cuenta.
-1. En Adobe Experience Manager, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Configuración de Dynamic Media Publish]**.
-1. En la página Servidor de imágenes , en la sección **[!UICONTROL Publicar contexto]** lista desplegable, seleccione **[!UICONTROL Probar servicio de imágenes]**.
-1. Seleccione el **[!UICONTROL Seguridad]** pestaña .
-1. Para la variable **[!UICONTROL Dirección del cliente]** filtrar, seleccionar **[!UICONTROL Agregar]**.
+1. Póngase en contacto con el Servicio de atención al cliente de Adobe y solicite que habiliten Prueba segura en su cuenta.
+1. En Adobe Experience Manager, seleccione **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Ajustes de publicación de Dynamic Media]**.
+1. En la página Servidor de imágenes, en **[!UICONTROL Contexto de publicación]** , seleccione la opción **[!UICONTROL Probar servicio de imágenes]**.
+1. Seleccione el **[!UICONTROL Seguridad]** pestaña.
+1. Para el **[!UICONTROL Dirección del cliente]** filtrar, seleccionar **[!UICONTROL Añadir]**.
 1. En el **[!UICONTROL Dirección IP]** , escriba una dirección IP.
 1. En el **[!UICONTROL Máscara]** , escriba una máscara de red.
 
    >[!NOTE]
    >
-   >Si agrega más de una dirección IP y una máscara de red, se permite *all* Direcciones IP para realizar llamadas de recursos y todas se muestran.
+   >Si agrega más de una dirección IP y máscara de red, lo permite *todo* Direcciones IP para realizar llamadas a recursos y todas aparecerán.
 
 1. Realice una de las siguientes acciones:
 
    * Para agregar más direcciones IP, repita los tres pasos anteriores.
    * Continúe con el paso siguiente.
 
-1. En la esquina superior derecha de la página Servidor de imágenes , seleccione **[!UICONTROL Guardar]**.
+1. En la esquina superior derecha de la página Servidor de imágenes, seleccione **[!UICONTROL Guardar]**.
 1. Cargue las imágenes que desee en su cuenta de Dynamic Media de Adobe.
 
 <!--    See [Upload files](uploading-files.md#uploading_files). -->
 
-1. Asegúrese de que algunas imágenes estén marcadas para publicación y otras no estén marcadas y, a continuación, envíe el trabajo de publicación.
+1. Asegúrese de que algunas imágenes estén marcadas para publicación y otras no, y luego envíe el trabajo de publicación.
 
 <!--    See [Publish files](publishing-files.md#publishing_files). -->
 
-1. Determine el nombre de su servicio Secure Testing. Para ello, vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Recursos]** > **[!UICONTROL Configuración general de Dynamic Media]**.
-1. En el **[!UICONTROL Servidor]** , busque el nombre del servidor a la derecha de **[!UICONTROL Nombre del servidor publicado]**.
+1. Determine el nombre del servicio Secure Testing yendo a **[!UICONTROL Herramientas]** > **[!UICONTROL Assets]** > **[!UICONTROL Configuración general de Dynamic Media]**.
+1. En el **[!UICONTROL Servidor]** , busque el nombre del servidor a la derecha de **[!UICONTROL Servidor de publicación]**.
 
-Póngase en contacto con el servicio de atención al Adobe si falta el nombre del servidor o si la URL del servidor no funciona.
+Póngase en contacto con el Servicio de atención al Adobe si falta el nombre del servidor o si la dirección URL del servidor no funciona.
 
-#### Preparación de las variaciones del sitio web
+#### Preparar variaciones de sitios web
 
 Necesita dos variaciones de un sitio web que vincule los recursos publicados y no publicados:
 
-* Versión pública : vincule recursos con su sintaxis de URL tradicional de Dynamic Media de Adobe.
-* Versión de ensayo : vincule los recursos con la misma sintaxis pero con el nombre del sitio Secure Testing.
+* Versión pública: vincule recursos con la sintaxis tradicional de la URL de Dynamic Media de Adobe.
+* Versión de ensayo: vincule los recursos con la misma sintaxis pero con el nombre del sitio de prueba segura.
 
-#### Ejecute las pruebas
+#### Ejecutar las pruebas
 
 Realice las siguientes pruebas:
 
 1. Compruebe si los recursos son visibles desde la red corporativa.
 
-   Desde la red corporativa identificada por el intervalo de direcciones IP definido anteriormente, la versión de ensayo del sitio web muestra todas las imágenes, estén o no marcadas para publicación. De este modo, puede realizar pruebas sin tener que poner las imágenes a disposición por error antes de la aprobación de la vista previa o el inicio del producto.
+   Desde la red corporativa identificada por el intervalo de direcciones IP previamente definido, la versión de ensayo del sitio web muestra todas las imágenes, estén marcadas para publicación o no. Como tal, puede realizar pruebas sin poner accidentalmente las imágenes a disposición antes de la aprobación de la vista previa o el lanzamiento del producto.
 
-   Confirme que la versión pública del sitio muestra los recursos publicados tal y como se experimentaron anteriormente con Adobe Dynamic Media.
+   Confirme que la versión pública del sitio muestra los recursos publicados tal y como se experimentó anteriormente con Adobe Dynamic Media.
 
-1. Desde fuera de la red corporativa, compruebe que los activos no publicados (es decir, sin marcar para publicación) estén protegidos contra el acceso de terceros.
+1. Desde fuera de la red corporativa, compruebe que los recursos no publicados (es decir, sin marcar para publicación) estén protegidos frente al acceso de terceros.
 
-   Acceda a su red desde el exterior (por ejemplo, desde su equipo doméstico o a través de una conexión 4G/5G) y, a continuación, verifique que la versión pública del sitio muestre todos los recursos publicados, excepto ninguno del contenido no publicado.
+   Acceda a su red desde el exterior (por ejemplo, desde su equipo doméstico o a través de una conexión 4G/5G) y, a continuación, compruebe que la versión pública del sitio muestre todos los recursos publicados, pero ninguno del contenido no publicado.
 
-   Confirme que la versión de ensayo no muestra ningún recurso porque está accediendo al servicio Secure Testing desde una dirección IP no aprobada.
+   Confirme que la versión de ensayo no muestra ningún recurso porque está accediendo al servicio de prueba segura desde una dirección IP no aprobada.

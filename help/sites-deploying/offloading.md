@@ -65,7 +65,7 @@ El servicio de detección de todos los miembros de la topología señala al cone
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
-Cada clúster de la topología contiene una instancia que se reconoce como principal. El líder del clúster interactúa con la topología en nombre de los demás miembros del clúster. Cuando la directriz abandona el grupo, se elige automáticamente una nueva directriz para el grupo.
+Cada clúster de la topología contiene una instancia que se reconoce como principal. El coordinador del clúster interactúa con la topología en nombre de los demás miembros del clúster. Cuando la directriz abandona el grupo, se elige automáticamente una nueva directriz para el grupo.
 
 ### Visualización de la topología {#viewing-the-topology}
 
@@ -118,7 +118,7 @@ Utilice la consola web o un nodo sling:OsgiConfig para configurar las siguientes
 <table>
  <tbody>
   <tr>
-   <th>Nombre de propiedad</th>
+   <th>Nombre de la propiedad</th>
    <th>Nombre de OSGi</th>
    <th>Descripción</th>
    <th>Valor predeterminado</th>

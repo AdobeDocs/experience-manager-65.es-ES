@@ -31,7 +31,7 @@ Para los componentes de Communities, aunque es similar a la [editor de texto enr
 
 Los componentes de las comunidades que permiten contenido generado por el usuario (UGC) se pueden habilitar para permitir RTE. En función de si el componente se añadió a una página o se incluyó en una [función](functions.md), RTE puede estar o no habilitado de forma predeterminada.
 
-Si no está activada, simplemente introduzca [modo de edición de autor](sites-console.md#authoring-site-content), seleccione el componente para editarlo y seleccione el `Rich Text Editor` casilla de verificación
+Si no está activada, simplemente introduzca [modo de edición de autor](sites-console.md#authoring-site-content), seleccione el componente para editarlo y seleccione `Rich Text Editor` casilla de verificación
 
 RTE está disponible para los siguientes componentes de Communities:
 
@@ -42,7 +42,7 @@ RTE está disponible para los siguientes componentes de Communities:
 * [Foro](forum.md)
 * [Mensajes](configure-messaging.md)
 * [P y R](working-with-qna.md)
-* [Críticas](reviews.md)
+* [Repasos](reviews.md)
 
 ## Personalización {#customization}
 

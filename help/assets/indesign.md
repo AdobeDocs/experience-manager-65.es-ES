@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Integrar [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
-[!DNL Adobe Experience Manager Assets] utilice:
+[!DNL Adobe Experience Manager Assets] utiliza:
 
 * Un proxy para distribuir la carga de ciertas tareas de procesamiento. Un proxy es un [!DNL Experience Manager] instancia que se comunica con un trabajador proxy para realizar una tarea específica y otras [!DNL Experience Manager] instancias para entregar los resultados.
 * Un trabajador proxy para definir y administrar una tarea específica.
@@ -93,7 +93,7 @@ Para instalar e iniciar el [!DNL InDesign Server] para su uso con [!DNL Experien
 [!DNL Experience Manager Assets] tiene un flujo de trabajo preconfigurado **[!UICONTROL Recurso de actualización DAM]**, que tiene varios pasos de proceso específicos para [!DNL InDesign]:
 
 * [Extracción de medios](#media-extraction)
-* [Extracción de páginas](#page-extraction)
+* [Extracción de página](#page-extraction)
 
 Este flujo de trabajo se configura con valores predeterminados que se pueden adaptar a la configuración en las distintas instancias de autor (se trata de un flujo de trabajo estándar), por lo que encontrará más información en [Edición de un flujo de trabajo](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Si utiliza los valores predeterminados (incluido el puerto SOAP), no es necesaria ninguna configuración.
 
@@ -191,7 +191,7 @@ Para configurar el número de trabajos de IDS paralelos:
 
 1. Seleccione la cola de procesamiento de IDS en `Apache Sling Job Queue Configuration`.
 
-1. Configurar:
+1. Establecer:
 
    * **Tipo** - `Parallel`
    * **Máximo de trabajos paralelos** - `<*x*>` (según el cálculo anterior)

@@ -1,7 +1,7 @@
 ---
 title: Visualización de datos de análisis de la página
 seo-title: Seeing Page Analytics Data
-description: Utilice los datos de análisis de la página para medir la eficacia de su contenido de página.
+description: Utilice datos de análisis de página para medir la eficacia del contenido de su página.
 seo-description: Use page analytics data to gauge the effectiveness of their page content.
 uuid: a3d1e4d6-56af-44a5-832f-63167ea8af52
 contentOwner: Chris Bohnert
@@ -13,18 +13,18 @@ docset: aem65
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 85%
+ht-degree: 16%
 
 ---
 
 
 # Visualización de datos de análisis de la página{#seeing-page-analytics-data}
 
-Utilice los datos de análisis de la página para medir la eficacia de su contenido de página.
+Utilice datos de análisis de página para medir la eficacia del contenido de su página.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
-Los datos de análisis de la página se muestran en la consola Sitios. Cuando los sitios se muestran en formato de lista, las siguientes columnas están disponibles de forma predeterminada:
+Los datos de análisis de página se muestran en la consola Sitios. Cuando los sitios se muestran en formato de lista, las siguientes columnas están disponibles de forma predeterminada:
 
 * Vistas de la página
 * Visitantes únicos
@@ -32,4 +32,4 @@ Los datos de análisis de la página se muestran en la consola Sitios. Cuando lo
 
 >[!NOTE]
 >
->La visualización de datos de análisis del sitio directamente en la consola solo está disponible en la IU táctil. Consulte [Ver datos de análisis de página](/help/sites-authoring/page-analytics-using.md) en la documentación de creación estándar para obtener más información.
+>La visualización de datos de análisis del sitio directamente en la consola solo está disponible en la IU táctil optimizada. Consulte [Ver datos de análisis de página](/help/sites-authoring/page-analytics-using.md) en la documentación de creación estándar para obtener más información.

@@ -24,7 +24,7 @@ AEM El instalador de parches JEE de Forms AEM 6.5 incluye todos los problemas co
 
 ## Requisitos previos para instalar el parche {#prerequisites-to-installing-the-patch}
 
-* AEM.5 Forms
+* AEM 6.5 Forms
 
 ## Instalación y configuración del parche {#installing-and-configuring-the-patch}
 

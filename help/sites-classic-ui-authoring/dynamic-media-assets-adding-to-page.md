@@ -9,7 +9,7 @@ exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 32%
+ht-degree: 4%
 
 ---
 
@@ -21,13 +21,13 @@ Los recursos de Dynamic Media se agregan directamente a la página si utiliza Ad
 
 >[!NOTE]
 >
->Para los titulares de carrusel, hay mapas de imágenes disponibles de fábrica.
+>Los mapas de imágenes están disponibles de forma predeterminada para los titulares de carrusel.
 
 ## Añadir un componente de Dynamic Media a una página {#adding-a-dynamic-media-component-to-a-page}
 
 Añadir el [!UICONTROL Dynamic Media] o [!UICONTROL Medios interactivos] a una página es lo mismo que añadir un componente a una página. El [!UICONTROL Dynamic Media] y [!UICONTROL Medios interactivos] Los componentes de se describen en detalle en las secciones siguientes.
 
-Para añadir un componente o visor de Dynamic Media a una página:
+Para agregar un componente o visualizador de Dynamic Media a una página:
 
 1. En Experience Manager, abra la página donde desee agregar el componente Dynamic Media.
 1. Si no hay ningún componente de Dynamic Media disponible, seleccione la regla en la [!UICONTROL Compañero] para entrar **[!UICONTROL Diseño]** modo.
@@ -46,7 +46,7 @@ Para añadir un componente o visor de Dynamic Media a una página:
 
 ## Componentes de Dynamic Media {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] y [!UICONTROL Medios interactivos] están disponibles en la [!UICONTROL Compañero] bajo **[!UICONTROL Dynamic Media]**. El componente de **[!UICONTROL Medios interactivos]** se utiliza para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para el resto de componentes de Dynamic Media, utilice el **[!UICONTROL Dynamic Media]** componente.
+[!UICONTROL Dynamic Media] y [!UICONTROL Medios interactivos] están disponibles en la [!UICONTROL Compañero] bajo **[!UICONTROL Dynamic Media]**. Utilice el **[!UICONTROL Medios interactivos]** para cualquier recurso interactivo, como vídeo interactivo, imágenes interactivas o conjuntos de carrusel. Para el resto de componentes de Dynamic Media, utilice el **[!UICONTROL Dynamic Media]** componente.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
@@ -54,24 +54,24 @@ Para añadir un componente o visor de Dynamic Media a una página:
 >
 >Estos componentes no están disponibles de forma predeterminada y deben seleccionarse en el modo Diseño antes de utilizar. [Una vez que estén disponibles en el modo Diseño](/help/sites-authoring/default-components-designmode.md)Además, puede agregar los componentes a la página como lo haría con cualquier otro componente del Experience Manager.
 
-### Componente de Dynamic Media {#dynamic-media-component}
+### componente de Dynamic Media {#dynamic-media-component}
 
-El componente Dynamic Media es inteligente: según si agrega una imagen o un vídeo, tiene varias opciones. El componente admite ajustes preestablecidos de imagen, visores basados en imágenes, como conjuntos de imágenes, conjuntos de giros, conjuntos de medios mixtos y vídeo. Además, el visualizador es adaptable. Es decir, el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visualizadores son visualizadores basados en HTML5.
+El componente Dynamic Media es inteligente: según si agrega una imagen o un vídeo, tiene varias opciones. El componente admite ajustes preestablecidos de imagen, visores basados en imágenes como conjuntos de imágenes, conjuntos de giros, conjuntos de medios mixtos y vídeo. Además, el visualizador es adaptable. Es decir, el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visualizadores son visualizadores basados en HTML5.
 
 >[!NOTE]
 >
 >Cuando agregue el [!UICONTROL Dynamic Media] componente, y **[!UICONTROL Configuración de Dynamic Media]** está en blanco o no puede agregar un recurso correctamente, compruebe lo siguiente:
 >
->* [Dynamic Media](/help/assets/config-dynamic.md) se ha activado. Dynamic Media está desactivado de forma predeterminada.
->* La imagen tiene un archivo TIFF piramidal. Las imágenes importadas antes de que Dynamic Media esté habilitado no tienen un archivo tiff piramidal.
+>* Tiene [Dynamic Media habilitado](/help/assets/config-dynamic.md). Dynamic Media está deshabilitado de forma predeterminada.
+>* La imagen tiene un archivo tiff piramidal. Las imágenes importadas antes de que Dynamic Media esté habilitado no tienen un archivo tiff piramidal.
 >
 
 
-#### Uso de imágenes {#when-working-with-images}
+#### Al trabajar con imágenes {#when-working-with-images}
 
-El [!UICONTROL Dynamic Media] Este componente permite agregar imágenes dinámicas, incluidos conjuntos de imágenes, conjuntos de giros y conjuntos de medios mixtos. Puede acercar, alejar y, si procede, girar una imagen en un conjunto de giros o seleccionar una imagen de otro tipo de conjunto.
+El [!UICONTROL Dynamic Media] Este componente permite agregar imágenes dinámicas, incluidos conjuntos de imágenes, conjuntos de giros y conjuntos de medios mixtos. Puede acercar y alejar la imagen y, si procede, girar una imagen dentro de un conjunto de giros o seleccionar una imagen de otro tipo de conjunto.
 
-También puede configurar el ajuste preestablecido de visor, el ajuste preestablecido de imagen o el formato de imagen directamente en el componente. Para que una imagen sea adaptable, puede establecer los puntos de interrupción o aplicar un ajuste preestablecido de imagen adaptable.
+También puede configurar el ajuste preestablecido de visualizador, el ajuste preestablecido de imagen o el formato de imagen directamente en el componente. Para que una imagen sea adaptable, puede establecer los puntos de interrupción o aplicar un ajuste preestablecido de imagen adaptable.
 
 ![chlimage_1-72](assets/chlimage_1-72a.png)
 
@@ -83,21 +83,21 @@ Puede editar la siguiente configuración de Dynamic Media haciendo clic en **[!U
 >
 >De forma predeterminada, el componente de imagen Dynamic Media es adaptable. Si desea que tenga un tamaño fijo, configúrelo en el componente de **[!UICONTROL Avanzadas]** pestaña con el **[!UICONTROL Ancho]** y **[!UICONTROL Altura]** propiedades.
 
-**[!UICONTROL Ajuste preestablecido de visor]** - Seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visualizador que busca no está visible, debe hacerlo visible. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
+**[!UICONTROL Ajuste preestablecido de visor]** - Seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visualizador que busca no está visible, debe hacerlo visible. Consulte [Administrar ajustes preestablecidos del visor](/help/assets/managing-viewer-presets.md). No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
 
 Esta opción solo está disponible si ve conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos. Los ajustes preestablecidos del visualizador mostrados son inteligentes. Es decir, solo aparecen los ajustes preestablecidos de visualizador relevantes.
 
-**[!UICONTROL Ajuste preestablecido de imagen]** - Seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte [Administración de ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md). No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
+**[!UICONTROL Ajuste preestablecido de imagen]** - Seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte [Administrar ajustes preestablecidos de imagen](/help/assets/managing-image-presets.md). No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
 
-Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
 **[!UICONTROL Modificadores de imagen]** - Puede cambiar los efectos de imagen suministrando comandos de imagen adicionales. Estos comandos se describen en [Administrar ajustes preestablecidos de imagen](/help/assets/managing-viewer-presets.md) y el [Referencia de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
-Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-**[!UICONTROL Puntos de interrupción]** : Si utiliza este recurso en un sitio adaptable, debe añadir los puntos de interrupción de página. Los puntos de interrupción de imagen están separados por comas (,). Esta opción funciona cuando no se ha definido ninguna altura o anchura en el ajuste preestablecido de una imagen.
+**[!UICONTROL Puntos de interrupción]** : Si utiliza este recurso en un sitio adaptable, debe añadir los puntos de interrupción de página. Los puntos de interrupción de imagen están separados por comas (,). Esta opción funciona cuando no hay altura o anchura definida en un ajuste preestablecido de imagen.
 
-Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
 Puede editar las siguientes opciones [!UICONTROL Configuración avanzada] haciendo clic en **[!UICONTROL Editar]** en el componente.
 
@@ -105,13 +105,13 @@ Puede editar las siguientes opciones [!UICONTROL Configuración avanzada] hacien
 
 **[!UICONTROL Texto alternativo]** : Añada un título a la imagen para los usuarios que tengan los gráficos desactivados.
 
-Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
 **[!UICONTROL URL, Abrir en]** : puede configurar un recurso desde para abrir un vínculo. Configure las variables **[!UICONTROL URL]** y **[!UICONTROL Abrir en]** para indicar si desea que se abra en la misma ventana o en una nueva.
 
-Esta opción no está disponible si visualiza conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
+Esta opción no está disponible si está viendo conjuntos de imágenes, conjuntos de giros o conjuntos de medios mixtos.
 
-**[!UICONTROL Anchura y altura]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si deja estos valores en blanco, hace que el recurso sea adaptable.
+**[!UICONTROL Anchura y altura]** : introduzca un valor en píxeles si desea que la imagen tenga un tamaño fijo. Si deja estos valores en blanco, el recurso se adaptará.
 
 #### Al trabajar con vídeo {#when-working-with-video}
 
@@ -125,40 +125,40 @@ Puede editar las siguientes opciones [!UICONTROL Configuración de Dynamic Media
 >
 >De forma predeterminada, el componente de vídeo de Dynamic Media es adaptable. Si desea que tenga un tamaño fijo, configúrelo en el componente con el **[!UICONTROL Ancho]** y **[!UICONTROL Altura]** en el **[!UICONTROL Avanzadas]** pestaña.
 
-**[!UICONTROL Ajuste preestablecido de visor]** - Seleccione un ajuste preestablecido de visualizador de vídeo existente en el menú desplegable. Si el ajuste preestablecido de visualizador que busca no está visible, debe hacerlo visible. Consulte [Administración de ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md). 
+**[!UICONTROL Ajuste preestablecido de visor]** - Seleccione un ajuste preestablecido de visualizador de vídeo existente en el menú desplegable. Si el ajuste preestablecido de visualizador que busca no está visible, debe hacerlo visible. Consulte [Administrar ajustes preestablecidos del visor](/help/assets/managing-viewer-presets.md).
 
 Puede editar las siguientes opciones [!UICONTROL Avanzadas] haciendo clic en **[!UICONTROL Editar]** en el componente.
 
 **[!UICONTROL Título]** - Cambiar el título del vídeo.
 
-**[!UICONTROL Anchura y altura]** : introduzca un valor en píxeles si desea que el vídeo tenga un tamaño fijo. Si deja estos valores en blanco, hace que el vídeo sea adaptable.
+**[!UICONTROL Anchura y altura]** : introduzca un valor en píxeles si desea que el vídeo tenga un tamaño fijo. Si se dejan estos valores en blanco, se vuelve adaptable.
 
 #### Proporcionar vídeo seguro {#how-to-delivery-secure-video}
 
-En Experience Manager 6.2, al instalar [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), puede controlar si un vídeo se envía a través de una conexión SSL segura (HTTPS) o una conexión no segura (HTTP). De manera predeterminada, el protocolo de envío de vídeo se hereda automáticamente del protocolo de la página web en el que se integra el vídeo. Si la página web se carga sobre HTTPS, el vídeo también se envía sobre HTTPS. Y a la inversa, si la página web está en HTTP, el vídeo se envía a través de HTTP. Normalmente, este comportamiento predeterminado funciona correctamente y no es necesario realizar ningún cambio en la configuración. Sin embargo, puede anular este comportamiento predeterminado. Añadir `VideoPlayer.ssl=on` al final de una ruta de URL o a la lista de otros parámetros de configuración del visor en un fragmento de código incrustado. Cualquiera de las acciones fuerza la entrega de vídeo segura.
+En Experience Manager 6.2, al instalar [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), puede controlar si un vídeo se envía a través de una conexión SSL segura (HTTPS) o una conexión no segura (HTTP). De forma predeterminada, el protocolo de entrega de vídeo se hereda automáticamente del protocolo de la página web en la que se incorpora. Si la página web se carga a través de HTTPS, el vídeo también se envía a través de HTTPS. Y a la inversa, si la página web está en HTTP, el vídeo se envía a través de HTTP. Normalmente, este comportamiento predeterminado funciona correctamente y no es necesario realizar ningún cambio en la configuración. Sin embargo, puede anular este comportamiento predeterminado. Añadir `VideoPlayer.ssl=on` al final de una ruta de URL o a la lista de otros parámetros de configuración del visor en un fragmento de código incrustado. Cualquiera de las acciones fuerza la entrega de vídeo segura.
 
-Para obtener más información sobre el envío de vídeo seguro y el uso del atributo de configuración `VideoPlayer.ssl`   en la ruta de URL, consulte [Envío de vídeo seguro](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) en la Guía de referencia de visores. Además del visualizador de vídeo, hay una entrega de vídeo segura disponible para el visualizador de medios mixtos y el visualizador de vídeo interactivo.
+Para obtener más información sobre la entrega de vídeo seguro y el uso de `VideoPlayer.ssl` atributo de configuración en la ruta URL, consulte [Entrega segura de vídeos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) en la Guía de referencia de visores. Además del visualizador de vídeo, hay una entrega de vídeo segura disponible para el visualizador de medios mixtos y el visualizador de vídeo interactivo.
 
 ### Componente de medios interactivo {#interactive-media-component}
 
-El componente de Medios interactivos es para los recursos que tienen elementos interactivos integrados en ellos, como puntos interactivos o mapas de imágenes. Si tiene una imagen interactiva, un vídeo interactivo o un titular de carrusel, utilice el componente de **[!UICONTROL Medios interactivos]**.
+El componente de medios interactivos es para aquellos recursos que tienen interactividad en ellos, como puntos interactivos o mapas de imagen. Si tiene una imagen interactiva, un vídeo interactivo o un titular de carrusel, utilice el **[!UICONTROL Medios interactivos]** componente.
 
 El [!UICONTROL Medios interactivos] El componente es inteligente: según si añade una imagen o un vídeo, tiene varias opciones. Además, el visualizador es adaptable. Es decir, el tamaño de la pantalla cambia automáticamente según el tamaño de la pantalla. Todos los visualizadores son visualizadores basados en HTML5.
 
 ![chlimage_1-75](assets/chlimage_1-75a.png)
 
-Puede editar las siguientes opciones de configuración **[!UICONTROL General]** al hacer clic en **[!UICONTROL Editar]** en el componente.
+Puede editar las siguientes opciones **[!UICONTROL General]** haciendo clic en **[!UICONTROL Editar]** en el componente.
 
-**[!UICONTROL Ajuste preestablecido de visor]** - Seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visualizador que busca no está visible, debe hacerlo visible. Los ajustes preestablecidos de visor se deben publicar para que se puedan usar. Consulte [Administrar ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md).
+**[!UICONTROL Ajuste preestablecido de visor]** - Seleccione un ajuste preestablecido de visualizador existente en el menú desplegable. Si el ajuste preestablecido de visualizador que busca no está visible, debe hacerlo visible. Los ajustes preestablecidos del visor deben publicarse para poder utilizarse. Consulte [Administrar ajustes preestablecidos de visor](/help/assets/managing-viewer-presets.md).
 
 **[!UICONTROL Título]** - Cambiar el título del vídeo.
 
-**[!UICONTROL Anchura y altura]** : introduzca un valor en píxeles si desea que el vídeo tenga un tamaño fijo. Si deja estos valores en blanco, hace que el vídeo sea adaptable.
+**[!UICONTROL Anchura y altura]** : introduzca un valor en píxeles si desea que el vídeo tenga un tamaño fijo. Si se dejan estos valores en blanco, se vuelve adaptable.
 
-Puede editar las siguientes opciones de configuración **[!UICONTROL Añadir a carro]** al hacer clic en **[!UICONTROL Editar]** en el componente.
+Puede editar las siguientes opciones **[!UICONTROL Añadir al carro]** haciendo clic en **[!UICONTROL Editar]** en el componente.
 
-**[!UICONTROL Mostrar recurso del producto]** : De forma predeterminada, este valor está seleccionado. El recurso del producto muestra una imagen del producto, según se ha definido en el módulo Commerce. Desactive la casilla para no mostrar el recurso del producto.
+**[!UICONTROL Mostrar recurso del producto]** : De forma predeterminada, este valor está seleccionado. El recurso de producto muestra una imagen del producto tal como se define en el módulo de Commerce. Desactive la marca de verificación para no mostrar el recurso del producto.
 
-**[!UICONTROL Mostrar precio del producto]** : De forma predeterminada, este valor está seleccionado. El precio del producto muestra el precio del artículo, según se ha definido en el módulo Commerce. Desactive la casilla para no mostrar el precio del producto.
+**[!UICONTROL Mostrar precio del producto]** : De forma predeterminada, este valor está seleccionado. El precio del producto muestra el precio del artículo tal como se define en el módulo Comercio. Desactive la marca de verificación para no mostrar el precio del producto.
 
-**[!UICONTROL Mostrar formulario del producto]** - De forma predeterminada, este valor no está seleccionado. En el formulario del producto se incluye las variantes de producto, como talla y color. Desactive la casilla para no mostrar las variantes del producto.
+**[!UICONTROL Mostrar formulario del producto]** - De forma predeterminada, este valor no está seleccionado. El formulario de producto incluye cualquier variante de producto, como tamaño y color. Desactive la marca de verificación para no mostrar las variantes del producto.

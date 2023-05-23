@@ -34,7 +34,7 @@ El rendimiento interactivo se mide en términos de tiempo de respuesta de la pá
 
 **2. Procesamiento de recursos** AEM Un problema de procesamiento de recursos se produce cuando los usuarios cargan recursos y tardan minutos hasta que los recursos se convierten y se incorporan fácilmente en DAM de.
 
-El rendimiento del procesamiento de recursos se mide en términos del tiempo promedio de finalización del proceso de flujo de trabajo. Este es el tiempo que se tarda en invocar el proceso de flujo de trabajo de actualización de recursos hasta su finalización, que se puede determinar desde la interfaz de usuario de los informes de flujo de trabajo. El rendimiento habitual del objetivo depende del tamaño y el tipo de recursos procesados y del número de representaciones. Algunos ejemplos de rendimiento de destino pueden ser los siguientes:
+El rendimiento del procesamiento de recursos se mide en términos del tiempo promedio de finalización del proceso de flujo de trabajo. Este es el tiempo que se tarda en invocar el proceso de flujo de trabajo de actualización de recursos hasta su finalización, que se puede determinar desde la interfaz de usuario de informes de flujo de trabajo. El rendimiento habitual del objetivo depende del tamaño y el tipo de recursos procesados y del número de representaciones. Algunos ejemplos de rendimiento de destino pueden ser los siguientes:
 
 * menos de diez segundos para imágenes de menos de 1280 x 1280 píxeles con representaciones estándar
 * menos de un minuto para imágenes de menos de 100 MB con representaciones estándar

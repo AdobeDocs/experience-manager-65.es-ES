@@ -77,14 +77,14 @@ Haga lo siguiente para configurar su base de datos [!DNL MySQL]:
 
       >[!NOTE]
       >
-      > Cuando la variable [!DNL MySQL] la base de datos está detrás de un servidor de seguridad y el nombre de host de la base de datos no es un DNS público. La dirección IP de la base de datos debe agregarse en la */etc/hosts* del equipo host AEM.
+      > Si la variable [!DNL MySQL] La base de datos está detrás de un cortafuegos, el nombre de host de la base de datos no es un DNS público. La dirección IP de la base de datos debe añadirse en la */etc/hosts* AEM del equipo host de la.
 
       * **Nombre de usuario:** nombre de usuario de la base de datos. Debe permitir que el controlador JDBC establezca una conexión con la base de datos.
       * **Contraseña:** contraseña de la base de datos. Debe permitir que el controlador JDBC establezca una conexión con la base de datos.
 
       >[!NOTE]
       >
-      >AEM Forms no admite la autenticación NT para [!DNL MySQL]. Vaya a AEM consola web en [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) y busque &quot;Fuente de datos agrupada de la conexión Apache Sling&quot;.Para &quot;URI de conexión JDBC&quot; valor de la propiedad &quot;integrationSecurity&quot; como False y utilice el nombre de usuario y la contraseña creados para conectarse con [!DNL MySQL] base de datos.
+      >AEM Forms no admite la autenticación de NT para [!DNL MySQL]. AEM Vaya a la consola web de en [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) y busque &quot;Apache Sling Connection Pooled Datasource&quot;. Para la propiedad &quot;JDBC connection URI&quot;, establezca el valor de &quot;integrationSecurity&quot; como False y utilice el nombre de usuario y la contraseña creados para conectarse con [!DNL MySQL] base de datos.
 
       * **Probar en el préstamo:** habilita la opción **[!UICONTROL Probar en el préstamo]**.
       * **Probar en la devolución:** habilita la opción **[!UICONTROL Probar en la devolución]**.

@@ -1,7 +1,7 @@
 ---
-title: AEM 6.5 Prácticas recomendadas
+title: AEM Prácticas recomendadas de.5
 seo-title: AEM 6.5 Best Practices
-description: Recursos para prácticas recomendadas, resolución de problemas y formación para AEM 6.5
+description: AEM Recursos para prácticas recomendadas, solución de problemas y formación para la versión 6.5 de la
 seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
@@ -11,49 +11,49 @@ ht-degree: 4%
 
 ---
 
-# AEM 6.5 Prácticas recomendadas {#aem-65-best-practices}
+# AEM Prácticas recomendadas de.5 {#aem-65-best-practices}
 
-## ¿Dónde puedo obtener más información sobre formación o educación para AEM? {#training}
+## AEM ¿Dónde puedo obtener más información acerca de la formación o la educación para los? {#training}
 
-Adobe tiene varios recursos clave para ayudarle a sacar el máximo partido a AEM.
+El Adobe AEM tiene varios recursos clave para ayudarle a sacar el máximo partido a los recursos de la.
 
-* [Catálogo oficial AEM de formación](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1).
-* Si está buscando obtener la certificación en AEM, la variable [la guía completa de las certificaciones AEM oficiales está disponible aquí](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+* [AEM Catálogo oficial de formación de la](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1).
+* AEM Si desea obtener la certificación en la certificación de la certificación, puede solicitar una de las siguientes opciones: [AEM La guía completa de las certificaciones oficiales de la está disponible aquí](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
-La comunidad de AEM está produciendo constantemente flujos de trabajo de ejemplo, tutoriales y ejemplos de código de contenido a partir de sugerencias y trabajos colaborativos.
+AEM La comunidad de usuarios de está produciendo constantemente flujos de trabajo de ejemplo, tutoriales y muestras de código de contenido a partir de sugerencias y trabajo colaborativo.
 
-* [Una lista completa de tutoriales y vídeos de AEM 6.5 está disponible aquí](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html).
-* [Una lista completa de AEM artículos prácticos de la comunidad está disponible aquí](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
+* [AEM Aquí puede encontrar una lista completa de tutoriales y vídeos de 6.5](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html).
+* [AEM Aquí puede encontrar una lista completa de los artículos de procedimientos de la comunidad de](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
-## Prácticas recomendadas para AEM {#best-practices}
+## AEM Prácticas recomendadas para la {#best-practices}
 
-* [Prácticas recomendadas para administrar un proyecto para su implementación AEM](/help/managing/best-practices.md)
-* [Prácticas recomendadas para la creación en AEM](/help/sites-authoring/best-practices.md)
+* [AEM Prácticas recomendadas para administrar un proyecto con el fin de implementar la implementación de la](/help/managing/best-practices.md)
+* [AEM Prácticas recomendadas para la creación de contenido en la](/help/sites-authoring/best-practices.md)
 * [Prácticas recomendadas para la administración de AEM](/help/sites-administering/administer-best-practices.md)
-* [Prácticas recomendadas para el desarrollo de AEM](/help/sites-developing/best-practices.md)
-* [Prácticas recomendadas para SEO y administración de URL](/help/managing/seo-and-url-management.md)
-* [AEM y las directrices de accesibilidad web](/help/managing/web-accessibility.md)
-* [Preparación para AEM y RGPD](/help/managing/data-protection-and-privacy.md)
+* [AEM Prácticas recomendadas para el desarrollo de en la](/help/sites-developing/best-practices.md)
+* [Prácticas recomendadas para la optimización de los motores de búsqueda y administración de URL](/help/managing/seo-and-url-management.md)
+* [AEM Directrices de accesibilidad web de y](/help/managing/web-accessibility.md)
+* [AEM Preparación para el RGPD y de](/help/managing/data-protection-and-privacy.md)
 
-## Guías de introducción para diferentes funciones de AEM {#getting-started}
+## AEM Guías de introducción para diferentes funcionalidades de la {#getting-started}
 
-AEM tiene muchos usos en las organizaciones y es lo suficientemente amplio como para ofrecer funcionalidad en toda una empresa. Si quiere profundizar en los primeros pasos, puede visitar las guías de introducción:
+AEM tiene muchos usos en las organizaciones y es lo suficientemente amplio como para proporcionar funcionalidad en toda la compañía. Si desea profundizar en los primeros pasos, puede visitar las Guías de introducción:
 
-* [Introducción a AEM Platform y Sites](/help/sites-deploying/deploy.md#getting-started)
+* [AEM Introducción a Platform y Sites](/help/sites-deploying/deploy.md#getting-started)
 * [Introducción a AEM Forms](/help/forms/using/introduction-aem-forms.md)
 * [Introducción a AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Introducción a AEM Communities](/help/communities/getting-started.md)
 
-El Adobe tiene un nuevo [Tutorial de WKND, que es una guía paso a paso para la creación de su primer sitio web mediante AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es). También hay un [fórmula paso a paso para implementar la solución base digital de Adobe](https://experienceleague.adobe.com/#courses), para el cual AEM es un componente clave.
+El Adobe tiene un nuevo [AEM Tutorial de WKND, que es una guía paso a paso para la creación del primer sitio web mediante el uso de la función de creación de sitios web de tipo de](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=es). También hay un [fórmula paso a paso para implementar la solución Digital Foundation de Adobe](https://experienceleague.adobe.com/#courses)AEM , para el que el es un bloque de creación clave.
 
-## Implementaciones recomendadas para AEM {#deployments}
+## AEM Implementaciones recomendadas para el uso de {#deployments}
 
-Los microkernels actúan como gestores de persistencia y entenderlos es clave para una implementación AEM exitosa. La elección de una que se ajuste a sus necesidades depende del propósito de su instancia y del tipo de implementación que esté considerando. [Obtenga información sobre sus usos recomendados en las configuraciones de AEM más comunes.](/help/sites-deploying/recommended-deploys.md)
+AEM Los microkernels actúan como administradores de persistencia y su comprensión es clave para una implementación exitosa de la aplicación de la. Elegir una que se ajuste a sus necesidades depende del propósito de su instancia y del tipo de implementación que esté considerando. [AEM Obtenga información acerca de sus usos recomendados en las configuraciones de usuario más comunes de la.](/help/sites-deploying/recommended-deploys.md)
 
-## Lista de comprobación de seguridad AEM {#security-checklist}
+## AEM Lista de comprobación de seguridad de {#security-checklist}
 
-La seguridad es una consideración clave en la instalación de AEM. [Obtenga información sobre los distintos pasos y medidas necesarios para garantizar que la instalación de AEM sea segura cuando se implemente.](/help/sites-administering/security-checklist.md) Aplique la lista de verificación de arriba abajo.
+AEM La seguridad es una consideración clave en la instalación de la. [AEM Obtenga información acerca de los distintos pasos y medidas necesarios para garantizar que la instalación de la instalación de la sea segura cuando se implemente.](/help/sites-administering/security-checklist.md) Aplique la lista de comprobación de arriba a abajo.
 
-## Preguntas frecuentes sobre AEM {#faq}
+## AEM Preguntas más frecuentes sobre el {#faq}
 
-Para obtener las respuestas a algunas de las preguntas más frecuentes sobre AEM, consulte la [Preguntas más frecuentes sobre AEM](/help/sites-administering/aem-faqs.md).
+AEM Para obtener las respuestas a algunas de las preguntas más frecuentes acerca de la, consulte la [AEM Preguntas más frecuentess](/help/sites-administering/aem-faqs.md).

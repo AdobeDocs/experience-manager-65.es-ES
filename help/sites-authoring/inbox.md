@@ -1,6 +1,6 @@
 ---
-title: Su bandeja de entrada para administrar tareas
-description: Administración de tareas con la bandeja de entrada.
+title: Bandeja de entrada para administrar tareas
+description: Administrar las tareas con la bandeja de entrada.
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,26 +17,26 @@ ht-degree: 28%
 
 # Su bandeja de entrada{#your-inbox}
 
-Puede recibir notificaciones desde varias áreas de AEM, incluidos flujos de trabajo y proyectos; por ejemplo, acerca de:
+AEM Puede recibir notificaciones de varias áreas de la, incluidos flujos de trabajo y proyectos; por ejemplo, acerca de:
 
 * Tareas:
 
-   * estas también se pueden crear en varios puntos de la interfaz de usuario de AEM, por ejemplo, en **Proyectos**,
-   * pueden ser el producto de un flujo de trabajo **Crear tarea** o **Crear tarea de proyecto** paso a paso.
+   * AEM estas también se pueden crear en varios puntos de la interfaz de usuario de la interfaz de usuario de la aplicación, por ejemplo, en **Proyectos**,
+   * pueden ser el producto de un flujo de trabajo **Crear tarea** o **Crear tarea del proyecto** paso.
 
 * Flujos de trabajo:
 
    * elementos de trabajo que representan acciones que debe realizar en el contenido de la página;
 
-      * son el producto del flujo de trabajo **Participante** pasos
-   * elementos de error, para permitir que los administradores vuelvan a intentar realizar el paso que ha fallado.
+      * estos son el producto del flujo de trabajo **Participante** pasos
+   * elementos de error, para permitir que los administradores reintenten el paso con errores.
 
 
-Estas notificaciones se reciben en su propia bandeja de entrada, donde puede verlas y actuar en consecuencia.
+Recibirá estas notificaciones en su propia bandeja de entrada, donde podrá verlas y realizar acciones.
 
 >[!NOTE]
 >
->Las AEM integradas vienen precargadas con tareas administrativas asignadas al grupo de usuarios administradores. Consulte [Tareas administrativas integradas](#out-of-the-box-administrative-tasks) para obtener más información.
+>AEM La configuración predeterminada viene precargada con tareas administrativas asignadas al grupo de usuarios del administrador. Consulte [Tareas administrativas listas para usar](#out-of-the-box-administrative-tasks) para obtener más información.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Estas notificaciones se reciben en su propia bandeja de entrada, donde puede ver
 
 ## Bandeja de entrada en el encabezado {#inbox-in-the-header}
 
-Desde cualquiera de las consolas, en el encabezado se muestra el número actual de elementos de la bandeja de entrada. También se puede abrir el indicador para acceder rápidamente a las páginas que requieran acciones o acceder a la bandeja de entrada:
+Desde cualquiera de las consolas, el número actual de elementos de la bandeja de entrada se muestra en el encabezado. El indicador también se puede abrir para proporcionar acceso rápido a las páginas que requieren acciones o acceso a la bandeja de entrada:
 
 ![wf-80](assets/wf-80.png)
 
@@ -59,9 +59,9 @@ Desde cualquiera de las consolas, en el encabezado se muestra el número actual 
 >
 >Algunas acciones también se mostrarán en la [vista de tarjeta del recurso adecuado](/help/sites-authoring/basic-handling.md#card-view).
 
-## Tareas administrativas integradas  {#out-of-the-box-administrative-tasks}
+## Tareas administrativas listas para usar  {#out-of-the-box-administrative-tasks}
 
-La AEM predeterminada viene precargada con cuatro tareas asignadas al grupo de usuarios administradores.
+AEM La aplicación predeterminada viene precargada con cuatro tareas asignadas al grupo de usuarios del administrador.
 
 * [Configurar Analytics y Targeting](/help/sites-administering/opt-in.md)
 * [Aplicar la lista comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
@@ -77,7 +77,7 @@ Para abrir la bandeja de entrada de notificaciones AEM:
 1. Seleccione **Ver todo**. Se abrirá la **bandeja de entrada AEM.** La bandeja de entrada muestra elementos de flujos de trabajo, proyectos y tareas.
 1. La vista predeterminada es [Vista de lista](#inbox-list-view), pero también puede cambiar a [Vista de calendario](#inbox-calendar-view). Esto se realiza con el selector de vistas (barra de herramientas, arriba a la derecha).
 
-   Para ambas vistas también puede definir [Configuración de vista](#inbox-view-settings); las opciones disponibles dependen de la vista actual.
+   Para ambas vistas también puede definir lo siguiente [Configuración de vista](#inbox-view-settings); las opciones disponibles dependen de la vista actual.
 
    ![wf-79](assets/inbox-list-view.png)
 
@@ -87,34 +87,34 @@ Para abrir la bandeja de entrada de notificaciones AEM:
 
 ### Bandeja de entrada: vista de lista {#inbox-list-view}
 
-Esta vista enumera todos los elementos, junto con la información relevante clave:
+Esta vista enumera todos los elementos, junto con información clave relevante:
 
 ![wf-82](assets/wf-82.png)
 
 ### Bandeja de entrada: vista de calendario {#inbox-calendar-view}
 
-Esta vista presenta los elementos según su posición en el calendario y la vista precisa seleccionada:
+Esta vista presenta los elementos según su posición en el calendario y la vista exacta que haya seleccionado:
 
 ![wf-93](assets/wf-93.png)
 
 Puede hacer lo siguiente:
 
-* seleccione una vista específica; **Cronología**, **Columna**, **Lista**
+* seleccionar una vista específica; **Cronología**, **Columna**, **Lista**
 
-* especifique las tareas que se mostrarán según **Programación**; **Todo**, **Planificado**, **En curso**, **Vence pronto**, **Vencido**
+* especificar las tareas para mostrar según **Programación**; **Todo**, **Planificado**, **En curso**, **Vence pronto**, **Ya ha vencido**
 
-* explorar en profundidad para obtener información más detallada sobre un elemento
+* explorar en profundidad un elemento para obtener información más detallada
 * seleccione un intervalo de fechas en el que centrar la vista:
 
 ![wf-91](assets/wf-91.png)
 
-### Bandeja de entrada: Configuración {#inbox-view-settings}
+### Bandeja de entrada - Configuración {#inbox-view-settings}
 
 Para ambas vistas (Lista y Calendario) puede definir la configuración:
 
 * **Vista de calendario**
 
-   Para **Vista de calendario** puede configurar:
+   Para **Vista de calendario** puede configurar lo siguiente:
 
    * **Agrupar por**
    * **Programa** o **Ninguno**
@@ -131,35 +131,35 @@ Para ambas vistas (Lista y Calendario) puede definir la configuración:
 
    ![wf-83](assets/inbox-settings.png)
 
-### Bandeja de entrada: Control de administración {#inbox-admin-control}
+### Bandeja de entrada - Control de administración {#inbox-admin-control}
 
-La opción Control de administración permite a los administradores:
+La opción Admin Control permite a los administradores lo siguiente:
 
-* Personalizar las columnas de la bandeja de entrada AEM
+* AEM Personalizar las columnas de la bandeja de entrada
 
-* Personalización del texto y el logotipo del encabezado
+* Personalizar el texto y el logotipo del encabezado
 
 * Controlar la visualización de los vínculos de navegación disponibles en el encabezado
 
 La opción Control de administración solo está visible para los miembros del `administrators` o `workflow-administrators` grupo.
 
-* **Personalización de columnas**: Personalice una Bandeja de entrada AEM para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
-   * **Agregar columna**: Seleccione una columna para agregar en AEM Bandeja de entrada.
-   * **Editar columna**: Pase el ratón sobre el título de la columna y pulse ![editar](assets/edit.svg) para introducir un nombre para mostrar de columna.
-   * **Eliminar columna**: Toque . ![delete](assets/delete_updated.svg) para eliminar la columna de AEM Bandeja de entrada.
-   * **Mover columna**: Arrastre el ![move](assets/move_updated.svg) para mover una columna a una nueva posición en AEM Bandeja de entrada.
+* **Personalización de columnas** AEM : personalice una bandeja de entrada de para cambiar el título predeterminado de una columna, reordenar la posición de una columna y mostrar columnas adicionales basadas en los datos de un flujo de trabajo.
+   * **Agregar columna** AEM : seleccione una columna para añadirla a la bandeja de entrada de la.
+   * **Editar columna**: pase el ratón sobre el título de la columna y pulse ![editar](assets/edit.svg) para introducir un nombre para mostrar en la columna.
+   * **Eliminar columna**: pulse el botón ![eliminar](assets/delete_updated.svg) AEM para eliminar la columna de la bandeja de entrada de la.
+   * **Mover columna**: arrastre el ![mover](assets/move_updated.svg) AEM para mover una columna a una nueva posición en la bandeja de entrada de la bandeja de entrada de la.
 
    ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personalizar la promoción de la marca**
 
-   * **Personalizar texto del encabezado:** Especifique el texto que se mostrará en el encabezado para reemplazar el valor predeterminado **Adobe Experience Manager** texto.
+   * **Personalizar el texto del encabezado:** Especifique el texto que se mostrará en el encabezado para reemplazar el predeterminado **Adobe Experience Manager** texto.
 
-   * **Personalizar logotipo:** Especifique la imagen que se mostrará en el encabezado como logotipo. Cargue una imagen en Digital Asset Management (DAM) y consulte esa imagen en el campo .
+   * **Personalizar logotipo:** Especifique la imagen que se mostrará en el encabezado como logotipo. Cargue una imagen en Digital Asset Management (DAM) y consulte esa imagen en el campo.
 
 * **Navegación del usuario**
-   * **Ocultar opciones de navegación:** Seleccione esta opción para ocultar las opciones de navegación disponibles en el encabezado. Las opciones de navegación incluyen vínculos a otras soluciones, vínculos de ayuda y las opciones de creación disponibles al pulsar el logotipo o el texto de Adobe Experience Manager.
-* **Guardar:** Toque o haga clic en esta opción para guardar la configuración.
+   * **Ocultar opciones de navegación:** Seleccione esta opción para ocultar las opciones de navegación disponibles en el encabezado. Las opciones de navegación incluyen vínculos a otras soluciones de, vínculos de ayuda y las opciones de creación disponibles al pulsar el logotipo o el texto de Adobe Experience Manager.
+* **Guardar:** Pulse o haga clic en esta opción para guardar la configuración.
 
 ## Acción en un elemento {#taking-action-on-an-item}
 
@@ -168,7 +168,7 @@ La opción Control de administración solo está visible para los miembros del `
 >Aunque es posible seleccionar más de un elemento, las acciones solo se pueden realizar en un elemento a la vez.
 
 
-1. Para realizar una acción en un elemento, seleccione la miniatura del elemento correspondiente. Los iconos de las acciones aplicables a ese elemento se mostrarán en la barra de herramientas:
+1. Para realizar una acción sobre un elemento, seleccione la miniatura del elemento correspondiente. Los iconos de las acciones aplicables a ese elemento se mostrarán en la barra de herramientas:
 
    ![wf-84](assets/wf-84.png)
 
@@ -176,10 +176,10 @@ La opción Control de administración solo está visible para los miembros del `
 
    * Acción **Completar**.; por ejemplo, una tarea o un elemento de flujo de trabajo.
    * **Reasignar**/**Delegar** un elemento.
-   * **Apertura** un artículo; según el tipo de elemento, esta acción puede:
+   * **Abrir** un elemento; en función del tipo de elemento, esta acción puede:
 
       * mostrar las propiedades del elemento
-      * abra un tablero o asistente apropiado para realizar más acciones.
+      * abra un tablero o un asistente apropiado para realizar más acciones
       * abrir documentación relacionada
    * **Retroceder** a una etapa anterior.
    * Consultar la carga útil de un flujo de trabajo.
@@ -192,7 +192,7 @@ La opción Control de administración solo está visible para los miembros del `
    >* Elementos de flujo de trabajo - [Participación en flujos de trabajo](/help/sites-authoring/workflows-participating.md)
 
 
-1. Dependiendo del elemento seleccionado, se iniciará una acción; por ejemplo:
+1. En función del elemento seleccionado, se inicia una acción; por ejemplo:
 
    * se abrirá un cuadro de diálogo apropiado para la acción.
    * se iniciará un asistente de acciones.
@@ -204,17 +204,17 @@ La opción Control de administración solo está visible para los miembros del `
 
    En función de si ha abierto un cuadro de diálogo, un asistente o una página de documentación, puede:
 
-   * Confirmar la acción apropiada; Por ejemplo, Reasignar.
+   * Confirme la acción adecuada; por ejemplo, Reasignar.
    * Cancelar la acción.
-   * Flecha hacia atrás; por ejemplo, si se ha abierto un asistente de acciones o una página de documentación, puede volver a la bandeja de entrada.
+   * Flecha hacia atrás; por ejemplo, si se ha abierto un asistente de acciones o una página de documentación, puede volver a la Bandeja de entrada.
 
 
 ## Creación de una tarea {#creating-a-task}
 
 Desde la bandeja de entrada puede crear tareas:
 
-1. Select **Crear**, luego **Tarea**.
-1. Complete los campos necesarios en la variable **Básico** y **Avanzadas** pestañas; solo la variable **Título** es obligatorio, el resto son opcionales:
+1. Seleccionar **Crear**, entonces **Tarea**.
+1. Rellene los campos necesarios en la **Básico** y **Avanzadas** pestañas; solo las pestañas **Título** es obligatorio, el resto son opcionales:
 
    * **Básico**:
 
@@ -231,7 +231,7 @@ Desde la bandeja de entrada puede crear tareas:
 
    * **Avanzado**
 
-      * **Nombre**: se utilizará para formar la dirección URL; si está en blanco, se basará en la variable **Título**.
+      * **Nombre**: se utilizará para formar la dirección URL; si está en blanco, se basará en **Título**.
 
    ![wf-87](assets/wf-87.png)
 
@@ -250,8 +250,8 @@ Para determinadas tareas, puede crear un [Proyecto](/help/sites-authoring/projec
    >Los elementos de trabajo (de un flujo de trabajo) no se pueden utilizar para crear un proyecto.
 
 1. Seleccione **Crear proyecto** en la barra de herramientas para abrir el asistente.
-1. Seleccione la plantilla adecuada y, a continuación, **Siguiente**.
-1. Especifique las propiedades requeridas:
+1. Seleccione la plantilla adecuada y luego **Siguiente**.
+1. Especifique las propiedades necesarias:
 
    * **Básico**
 
@@ -259,15 +259,15 @@ Para determinadas tareas, puede crear un [Proyecto](/help/sites-authoring/projec
       * **Descripción**
       * **Fecha inicial**
       * **Fecha de vencimiento**
-      * **Usuario** y función
+      * **Usuario** Función y
    * **Avanzado**
 
       * **Nombre**
    >[!NOTE]
    >
-   >Consulte [Creación de un proyecto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) para obtener más información.
+   >Consulte [Creación de un proyecto](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) para obtener información completa.
 
-1. Select **Crear** para confirmar la acción.
+1. Seleccionar **Crear** para confirmar la acción.
 
 ## Filtrado de elementos en la bandeja de entrada AEM    {#filtering-items-in-the-aem-inbox}
 
@@ -279,7 +279,7 @@ Puede filtrar los elementos enumerados:
 
    ![wf-88](assets/wf-88.png)
 
-1. Puede filtrar los elementos enumerados según una serie de criterios, muchos de los cuales se pueden refinar; por ejemplo:
+1. Puede filtrar los elementos enumerados según un rango de criterios, muchos de los cuales se pueden refinar; por ejemplo:
 
    ![wf-89](assets/wf-89.png)
 

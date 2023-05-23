@@ -14,7 +14,7 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 source-git-commit: 9052ed3e89fdc67d94fc60bbff64d42255565767
 workflow-type: tm+mt
 source-wordcount: '1802'
-ht-degree: 9%
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ En esta página encontrará:
 * [Conceptos básicos](#basic-concepts)
 
    * [AEM ¿Qué es la?](#what-is-aem)
-   * [Implementaciones habituales ](#typical-deployment-scenarios)
+   * [Implementaciones habituales](#typical-deployment-scenarios)
 
       * [On-Premise](#on-premise)
       * [Managed Services con Cloud Manager](#managed-services-using-cloud-manager)
@@ -46,7 +46,7 @@ Una vez que se haya familiarizado con estos conceptos básicos, encontrará info
 * [Instalación independiente personalizada](/help/sites-deploying/custom-standalone-install.md)
 * [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md)
 * [Solución de problemas](/help/sites-deploying/troubleshooting.md)
-* [Línea de comandos: start y stop](/help/sites-deploying/command-line-start-and-stop.md)
+* [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configurar](/help/sites-deploying/configuring.md)
 * [AEM Actualización a 6.5](/help/sites-deploying/upgrade.md)
 * [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
@@ -64,7 +64,7 @@ Una vez que se haya familiarizado con estos conceptos básicos, encontrará info
 
 ### AEM ¿Qué es la? {#what-is-aem}
 
-Adobe Experience Manager es un sistema de cliente-servidor basado en web para crear, administrar e implementar sitios web comerciales y servicios relacionados. Combina varias funciones a nivel de infraestructura y aplicación en un único paquete integrado.
+Adobe Experience Manager es un sistema cliente-servidor basado en la web para crear, administrar e implementar sitios web comerciales y servicios relacionados. Combina una serie de funciones de nivel de infraestructura y de nivel de aplicación en un único paquete integrado.
 
 AEM A nivel de infraestructura, proporciona lo siguiente:
 
@@ -113,7 +113,7 @@ Para obtener más información sobre las implementaciones locales típicas, cons
 
 ### Managed Services con Cloud Manager {#managed-services-using-cloud-manager}
 
-AEM Managed Services es una solución completa para la administración de experiencias digitales. Proporciona las ventajas de la solución de entrega de experiencias en la nube, al tiempo que conserva todas las ventajas de control, seguridad y personalización de una implementación On-Premise. AEM Managed Services permite a los clientes iniciar más rápido mediante la implementación en la nube y también basándose en las prácticas recomendadas y la asistencia desde el Adobe. Las organizaciones y los usuarios empresariales pueden atraer a los clientes en un tiempo mínimo, aumentar la cuota de mercado y centrarse en la creación de campañas de marketing innovadoras, al tiempo que reducen la carga para la tecnología informática.
+AEM Managed Services es una solución completa para la administración de experiencias digitales. Proporciona las ventajas de la solución de entrega de experiencias en la nube, al tiempo que conserva todas las ventajas de control, seguridad y personalización de una implementación On-Premise. AEM Managed Services permite a los clientes iniciar más rápido mediante la implementación en la nube y también basándose en las prácticas recomendadas y la asistencia desde el Adobe. Las organizaciones y los usuarios empresariales pueden atraer a los clientes en un tiempo mínimo, aumentar la cuota de mercado y centrarse en la creación de campañas de marketing innovadoras, al tiempo que reducen la carga para la TI.
 
 AEM Con Managed Services, los clientes pueden obtener las siguientes ventajas:
 
@@ -127,7 +127,7 @@ AEM Con Managed Services, los clientes pueden obtener las siguientes ventajas:
 
 **Cloud Manager**: Cloud Manager, parte de la oferta de Adobe Experience Manager Managed Services es un portal de autoservicio que permite a las organizaciones autoadministrar Adobe Experience Manager en la nube. Incluye una canalización de integración continua y entrega continua (CI/CD) de última generación que permite a los equipos de TI y a los asociados de la implementación acelerar la entrega de las personalizaciones o actualizaciones sin poner en riesgo el rendimiento o la seguridad. Cloud Manager solo está disponible para los clientes de Adobe Managed Service.
 
-Para obtener más información sobre Cloud Manager y sus recursos, consulte [**Guía del usuario de Cloud Manager**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).
+Para obtener más información sobre Cloud Manager y sus recursos, consulte [**Guía del usuario de Cloud Manager**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es).
 
 ## Introducción {#getting-started}
 
@@ -277,7 +277,7 @@ Esta carpeta contiene los siguientes scripts de shell de Unix bash:
 
 También hay equivalentes **`bat`** archivos para Windows. Para obtener información más detallada, consulte:
 
-* [Línea de comandos: start y stop](/help/sites-deploying/command-line-start-and-stop.md)
+* [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
 
 AEM Se inicia la sesión y redirige automáticamente el explorador web a la página adecuada, normalmente la página de inicio de sesión; por ejemplo:
 
@@ -301,7 +301,7 @@ AEM La sección anterior le proporcionará una buena comprensión de los concept
 * [Instalación independiente personalizada](/help/sites-deploying/custom-standalone-install.md)
 * [Instalación del servidor de aplicaciones](/help/sites-deploying/application-server-install.md)
 * [Solución de problemas](/help/sites-deploying/troubleshooting.md)
-* [Línea de comandos: start y stop](/help/sites-deploying/command-line-start-and-stop.md)
+* [Inicio y parada de la línea de comandos](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configurar](/help/sites-deploying/configuring.md)
 * [AEM Actualización a 6.5](/help/sites-deploying/upgrade.md)
 * [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)

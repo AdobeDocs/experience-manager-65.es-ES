@@ -1,7 +1,7 @@
 ---
-title: Asignación de grupos de usuarios personalizados en AEM 6.5
+title: AEM Asignación de grupos de usuarios personalizados en 6.5
 seo-title: Custom User Group Mapping in AEM 6.5
-description: Descubra cómo funciona la asignación de grupos de usuarios personalizados en AEM.
+description: AEM Descubra cómo funciona la asignación de grupos de usuarios personalizados en la.
 seo-description: Lear how Custom User Group Mapping works in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
@@ -19,45 +19,45 @@ ht-degree: 1%
 
 ---
 
-# Asignación de grupos de usuarios personalizados en AEM 6.5 {#custom-user-group-mapping-in-aem}
+# AEM Asignación de grupos de usuarios personalizados en 6.5 {#custom-user-group-mapping-in-aem}
 
-## Comparación del contenido de JCR relacionado con CUG (grupo de usuarios personalizado) {#comparison-of-jcr-content-related-to-cug}
+## Comparación del contenido JCR relacionado con el CUG (grupo de usuarios personalizados) {#comparison-of-jcr-content-related-to-cug}
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Versiones anteriores AEM</strong></td>
+   <td><strong>AEM Versiones anteriores de la</strong></td>
    <td><strong>AEM 6.5</strong></td>
    <td><strong>Comentarios</strong></td>
   </tr>
   <tr>
-   <td><p>Propiedad: cq:cugEnabled</p> <p>Tipo de nodo declarante: N/A, propiedad residual</p> </td>
-   <td><p>Autorización:</p> <p>Nodo: rep:cugPolicy del tipo de nodo rep:CugPolicy</p> <p>Tipo de nodo declarante: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Autenticación:</p> <p>Tipo de mezcla: granite:AuthenticationRequired</p> </td>
-   <td><p>Para restringir el acceso de lectura, se aplica una directiva CUG dedicada al nodo de destino.</p> <p>NOTA: Las directivas solo se pueden aplicar en las rutas configuradas compatibles.</p> <p>Los nodos con el nombre rep:cugPolicy y tipo rep:CugPolicy están protegidos y no se pueden escribir utilizando llamadas regulares a la API JCR; utilice la administración de control de acceso JCR en su lugar.</p> <p>Consulte <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">esta página</a> para obtener más información.</p> <p>Para hacer cumplir los requisitos de autenticación en un nodo, es suficiente añadir el tipo de mezcla granite:AuthenticationRequired.</p> <p>NOTA: Solo se respeta debajo de las rutas configuradas admitidas.</p> </td>
+   <td><p>Propiedad: cq:cugEnabled</p> <p>Tipo de nodo de declaración: N/D, propiedad residual</p> </td>
+   <td><p>Autorización:</p> <p>Nodo: rep:cugPolicy de tipo de nodo rep:CugPolicy</p> <p>Declarando tipo de nodo: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Autenticación:</p> <p>Tipo de mezcla: granite:AuthenticationRequired</p> </td>
+   <td><p>Para restringir el acceso de lectura, se aplica una política de CUG dedicada al nodo de destino.</p> <p>NOTA: Las directivas solo se pueden aplicar en las rutas admitidas configuradas.</p> <p>Los nodos con el nombre rep:cugPolicy y el tipo rep:CugPolicy están protegidos y no se pueden escribir mediante llamadas normales a la API JCR; utilice en su lugar la administración de control de acceso JCR.</p> <p>Consulte <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">esta página</a> para obtener más información.</p> <p>Para aplicar el requisito de autenticación en un nodo, es suficiente añadir el tipo de mezcla granite:AuthenticationRequired.</p> <p>NOTA: Solo se respeta debajo de las rutas admitidas configuradas.</p> </td>
   </tr>
   <tr>
-   <td><p>Propiedad: cq:cugPrincipals</p> <p>Tipo de nodo declarante: NA, propiedad residual</p> </td>
-   <td><p>Propiedad: rep:principalNames</p> <p>Tipo de nodo declarante: rep:CugPolicy</p> </td>
-   <td><p>La propiedad que contiene los nombres de los principales a los que se permite leer el contenido debajo del CUG restringido está protegida y no se puede escribir utilizando llamadas regulares a la API JCR; utilice la administración de control de acceso JCR en su lugar.</p> <p>Consulte <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">esta página</a> para obtener más información sobre la implementación.</p> </td>
+   <td><p>Propiedad: cq:cugPrincipals</p> <p>Tipo de nodo de declaración: NA, propiedad residual</p> </td>
+   <td><p>Propiedad: rep:principalNames</p> <p>Declarando tipo de nodo: rep:CugPolicy</p> </td>
+   <td><p>La propiedad que contiene los nombres de las principales que pueden leer el contenido debajo del CUG restringido está protegida y no se puede escribir utilizando llamadas regulares a la API de JCR; utilice la administración de control de acceso JCR en su lugar.</p> <p>Consulte <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">esta página</a> para obtener más información sobre la implementación.</p> </td>
   </tr>
   <tr>
-   <td><p>Propiedad: cq:cugLoginPage</p> <p>Tipo de nodo declarante: NA, propiedad residual</p> </td>
-   <td><p>Propiedad: granite:loginPath (opcional)</p> <p>Tipo de nodo declarante: granite:AuthenticationRequired</p> </td>
-   <td><p>Un nodo JCR que tenga el tipo de mezcla granite:AuthenticationRequired definido, puede definir opcionalmente una ruta de inicio de sesión alternativa.</p> <p>NOTA: Solo se respeta debajo de las rutas configuradas admitidas.</p> </td>
+   <td><p>Propiedad: cq:cugLoginPage</p> <p>Tipo de nodo de declaración: NA, propiedad residual</p> </td>
+   <td><p>Propiedad: granite:loginPath (opcional)</p> <p>Tipo de nodo de declaración: granite:AuthenticationRequired</p> </td>
+   <td><p>Un nodo JCR que tenga definido el tipo de mezcla granite:AuthenticationRequired, puede definir opcionalmente una ruta de inicio de sesión alternativa.</p> <p>NOTA: Solo se respeta debajo de las rutas admitidas configuradas.</p> </td>
   </tr>
   <tr>
-   <td><p>Propiedad: cq:cugRealm</p> <p>Tipo de nodo declarante: NA, propiedad residual</p> </td>
+   <td><p>Propiedad: cq:cugRealm</p> <p>Tipo de nodo de declaración: NA, propiedad residual</p> </td>
    <td>ND</td>
-   <td>Ya no se admite con la nueva implementación.</td>
+   <td>Ya no es compatible con la nueva implementación.</td>
   </tr>
  </tbody>
 </table>
 
-## Comparación de los servicios OSGi {#comparison-of-osgi-services}
+## Comparación de los servicios de OSGi {#comparison-of-osgi-services}
 
-**Versiones anteriores AEM**
+**AEM Versiones anteriores de la**
 
-Etiqueta: Compatibilidad con el grupo cerrado de usuarios (CUG) de Adobe Granite
+Etiqueta: Soporte de Adobe Granite Closed User Group (CUG)
 
 Nombre: com.day.cq.auth.impl.CugSupportImpl
 
@@ -67,36 +67,36 @@ Nombre: com.day.cq.auth.impl.CugSupportImpl
 
    Nombre: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration
 
-   ConfigurationPolicy = REQUIRED
+   ConfigurationPolicy = OBLIGATORIO
 
 * Etiqueta: Lista de exclusión de Apache Jackrabbit Oak CUG
 
    Nombre: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl
 
-   ConfigurationPolicy = REQUIRED
+   ConfigurationPolicy = OBLIGATORIO
 
-* Nombre: com.adobe.granite.auth.requirements.impl.RequirementService
+* Nombre: com.adobe.granite.auth.required.impl.RequirementService
 * Etiqueta: Requisito de autenticación de Adobe Granite y controlador de ruta de inicio de sesión
 
-   Nombre: com.adobe.granite.auth.requirements.impl.DefaultRequirementHandler
+   Nombre: com.adobe.granite.auth.required.impl.DefaultRequirementHandler
 
-   ConfigurationPolicy = REQUIRED
+   ConfigurationPolicy = OBLIGATORIO
 
 **Comentarios**
 
-* Configuración de la autorización CUG y habilitar/deshabilitar la evaluación.
-Servicio para configurar la lista de exclusión de entidades principales que no deben verse afectadas por la autorización CUG.
+* Configuración de la autorización de CUG y activación/desactivación de la evaluación.
+Servicio para configurar la lista de exclusión de principales que no deben verse afectados por la autorización de CUG.
 
    >[!NOTE]
    > 
-   >Si la variable `CugExcludeImpl` no está configurado, la variable `CugConfiguration` vuelve al valor predeterminado.
+   >Si la variable `CugExcludeImpl` no está configurado, el `CugConfiguration` vuelve al valor predeterminado.
 
    Es posible conectar una implementación personalizada de CugExclude si hay necesidades especiales.
 
-* Componente OSGi que implementa LoginPathProvider que expone una ruta de inicio de sesión coincidente al LoginSelectorHandler. Tiene una referencia obligatoria a un RequirementHandler que se utiliza para registrar al observador que escucha los requisitos de autenticación modificados almacenados en el contenido mediante el tipo de mezcla granite:AuthenticationRequired .
-* Componente OSGi que implementa RequirementHandler y que notifica a SlingAuthenticator acerca de los cambios en los requisitos de autenticación.
+* Componente OSGi que implementa LoginPathProvider, que expone una ruta de inicio de sesión coincidente a LoginSelectorHandler. Tiene una referencia obligatoria a un RequirementHandler que se utiliza para registrar al observador que escucha los requisitos de autenticación modificados almacenados en el contenido mediante el tipo de mezcla granite:AuthenticationRequired.
+* Componente OSGi que implementa RequirementHandler y que notifica al SlingAuthenticator sobre los cambios en los requisitos de autenticación.
 
-   Como la política de configuración de este componente es REQUERIDA, solo se activa si se especifica un conjunto de rutas admitidas.
+   Como la directiva de configuración de este componente es REQUERIDA, solo se activa si se especifica un conjunto de rutas admitidas.
 
    Al habilitar el servicio, se inicia RequirementService.
 

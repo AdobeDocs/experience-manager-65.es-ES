@@ -9,7 +9,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '60'
-ht-degree: 6%
+ht-degree: 1%
 
 ---
 
@@ -25,5 +25,5 @@ ht-degree: 6%
    + [AEM Recursos para nuevos usuarios de la](new.md)
    + [AEM Obtenga Información Sobre Las Capacidades De](learn.md)
    + [Prácticas recomendadas, procedimientos y formación](best-practice.md)
-   + [La comunidad de AEM](community.md)
+   + [AEM La comunidad de](community.md)
    + [Solución de problemas](troubleshooting.md)

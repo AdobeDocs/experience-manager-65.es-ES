@@ -69,7 +69,7 @@ Antes de realizar una operación de mover, copiar o eliminar, haga lo siguiente:
 
 Al reemplazar un recurso de Dynamic Media existente (mismo nombre y ubicación), puede mantener ambos recursos o reemplazar o crear una versión:
 
-* Al mantener ambos, se crea un recurso con un nombre único para la URL del recurso publicado. Por ejemplo, `image.jpg` es el recurso original y `image1.jpg` es el recurso que acaba de cargar.
+* Al mantener ambos, se crea un recurso con un nombre único para la URL del recurso publicado. Por ejemplo, `image.jpg` es el recurso original y `image1.jpg` es el recurso recién cargado.
 
 * La creación de una versión no es compatible con el modo Dynamic Media - Scene7. La nueva versión reemplaza el recurso existente en la entrega.
 

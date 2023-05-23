@@ -198,7 +198,7 @@ El estado de página se ha reemplazado por dos predicados de propiedad de opcion
  <tbody>
   <tr>
    <td>Nodo/s en el formulario de búsqueda predeterminado en 6.1<br /> <br /> </td>
-   <td>type</td>
+   <td>tipo</td>
   </tr>
   <tr>
    <td><p>Tipo de recurso en 6.1</p> </td>
@@ -399,7 +399,7 @@ En la versión 6.1, el predicado de texto completo estándar formaba parte del f
 
 ### Predicados de tamaño de archivo {#file-size-predicates}
 
-| Nodo/s en el formulario de búsqueda predeterminado en 6.1 | filesize |
+| Nodo/s en el formulario de búsqueda predeterminado en 6.1 | tamaño de archivo |
 |---|---|
 | Tipo de recurso en 6.1 | dam/gui/components/admin/customsearch/searchpredicates/filesizepredicate |
 | Tipo de recurso en 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicate |
@@ -468,7 +468,7 @@ Acción: ajuste la propiedad resourceType (agregue &quot;/coral&quot; como en la
 
 ### Predicado de orientación {#orientation-predicate}
 
-| Nodo/s en el formulario de búsqueda predeterminado en 6.1 | orientation |
+| Nodo/s en el formulario de búsqueda predeterminado en 6.1 | Orientación |
 |---|---|
 | Tipo de recurso en 6.1 | dam/gui/components/admin/customsearch/searchpredicates/tagsfilterpredicate |
 | Tipo de recurso en 6.2 | cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate |
@@ -485,7 +485,7 @@ Acción: ajuste la propiedad resourceType (agregue &quot;/coral&quot; como en la
 
 ### Predicado de estilo {#style-predicate}
 
-| Nodo/s en el formulario de búsqueda predeterminado en 6.1 | el estilo |
+| Nodo/s en el formulario de búsqueda predeterminado en 6.1 | estilo |
 |---|---|
 | Tipo de recurso en 6.1 | dam/gui/components/admin/customsearch/searchpredicates/tagsfilterpredicate |
 | Tipo de recurso en 6.2 | cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate |

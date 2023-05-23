@@ -208,15 +208,15 @@ Esta tabla describe los puertos predeterminados que se deben abrir durante el pr
 
 ### Configuración de JBoss® para utilizar un puerto HTTP no predeterminado {#configuring-jboss-to-use-a-non-default-http-port}
 
-El servidor de aplicaciones JBoss® utiliza 8080 como puerto HTTP predeterminado. JBoss® también tiene puertos preconfigurados 8180, 8280 y 8380, que se comentan en el archivo jboss-service.xml. Si tiene una aplicación en el equipo que ya utiliza este puerto, cambie el puerto que utiliza AEM Forms en JEE siguiendo estos pasos:
+El servidor de aplicaciones JBoss® utiliza el puerto 8080 como puerto HTTP predeterminado. JBoss® también tiene los puertos preconfigurados 8180, 8280 y 8380, los cuales se comentan en el archivo jboss-service.xml. Si tiene una aplicación en el equipo que ya utiliza este puerto, cambie el puerto que utiliza AEM Forms en JEE siguiendo estos pasos:
 
 1. Abra el siguiente archivo para editarlo:
 
-   Instalación de un solo servidor: [Raíz JBoss®]/standalone/configuration/standalone.xml
+   Instalación en un solo servidor: [Raíz de JBoss®]/standalone/configuration/standalone.xml
 
-   Instalaciones de clúster: [Raíz JBoss®]/domain/configuration/domain.xml
+   Instalaciones de clúster: [Raíz de JBoss®]/domain/configuration/domain.xml
 
-1. Cambiar el valor de **puerto** en la variable **&lt;socket-binding>** a un número de puerto personalizado. Por ejemplo, los siguientes usan el puerto 8090:
+1. Cambiar el valor de **puerto** en el **&lt;socket-binding>** a un número de puerto personalizado. Por ejemplo, los siguientes usan el puerto 8090:
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
@@ -245,7 +245,7 @@ El archivo lc_[database].xml no debe contener la contraseña en un formato de te
 >
 >El instalador llave en mano de AEM Forms en JEE JBoss® cifra la contraseña de la base de datos.
 
-El servidor de aplicaciones IBM® WebSphere® y el servidor Oracle WebLogic Server pueden cifrar contraseñas de fuentes de datos de forma predeterminada. Sin embargo, debe confirmar con la documentación del servidor de aplicaciones para asegurarse de que está ocurriendo.
+IBM® WebSphere® Application Server y Oracle WebLogic Server pueden cifrar contraseñas de fuentes de datos de forma predeterminada. Sin embargo, debe confirmar con la documentación del servidor de aplicaciones para asegurarse de que esto sucede.
 
 ### Protección de la clave privada almacenada en el almacén de confianza {#protecting-the-private-key-stored-in-trust-store}
 

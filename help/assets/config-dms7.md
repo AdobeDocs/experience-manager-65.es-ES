@@ -48,7 +48,7 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos de 
 
 ## Habilitar Dynamic Media en modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media está desactivado de forma predeterminada. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Para aprovechar las funciones de Dynamic Media, debe habilitarlas.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) está desactivado de forma predeterminada. Para aprovechar las funciones de Dynamic Media, debe habilitarlas.
 
 >[!WARNING]
 >
@@ -367,7 +367,7 @@ Puede definir qué tipos de recursos procesa Dynamic Media y personalizar los pa
 * Rasterizar un archivo Adobe Illustrator (.AI) o un archivo de PostScript® encapsulado de Adobe Photoshop (.EPS).
 * [Perfiles de vídeo](/help/assets/video-profiles.md) y [Perfiles de imagen](/help/assets/image-profiles.md) se puede utilizar para definir el procesamiento de vídeos e imágenes, respectivamente.
 
-Consulte [Carga de recursos](/help/assets/manage-assets.md#uploading-assets).
+Consulte [Cargando recursos](/help/assets/manage-assets.md#uploading-assets).
 
 **Para editar tipos MIME para formatos compatibles:**
 

@@ -11,7 +11,7 @@ exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '2910'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
@@ -171,7 +171,7 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 #### Edición de información de producto: IU táctil optimizada {#editing-product-information-touch-optimized-ui}
 
 1. Uso del **Productos** consola (mediante **Comercio**) vaya a la información del producto.
-1. Mediante:
+1. Con:
 
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
@@ -330,7 +330,7 @@ El mecanismo para seleccionar la imagen que se va a mostrar es el siguiente:
 >AEM Para casos especiales, también admite la publicación directa desde los datos del producto de, lo que también es compatible con la.
 
 1. Uso del **Productos** consola (mediante **Comercio**) vaya a la información del producto.
-1. Mediante:
+1. Con:
 
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
@@ -373,7 +373,7 @@ Puede verlas en la consola web en los eventos OSGI ( `/system/console/events`), 
 >
 >Lea también [AEM Tratamiento de eventos en la](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/).
 
-### Imagen con vínculos Añadir a carro {#image-with-add-to-cart-links}
+### La imagen con vínculos Añadir a carro {#image-with-add-to-cart-links}
 
 El componente Imagen con vínculos Añadir al carro de compras permite agregar rápidamente un producto al carro de compras creando un punto interactivo vinculado con un producto en una imagen.
 
@@ -453,9 +453,9 @@ Puede configurar el aspecto del cuadro de diálogo al hacer clic en el punto int
 
 Para generar un catálogo:
 
-1.  Abra la consola Sitios (por ejemplo, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
+1. Abra la consola Sitios (por ejemplo, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
 1. Desplácese hasta la ubicación en la que desee crear la nueva página.
-1. Para abrir la lista de opciones, utilice el icono **Crear**:
+1. Para abrir la lista de opciones, utilice el **Crear** icono:
 
    ![create-icon](/help/sites-administering/do-not-localize/chlimage_1-23.png)
 
@@ -516,7 +516,7 @@ Para desplegar un catálogo:
 
 1. Vaya a **Catálogos** consola, mediante **Comercio**.
 1. Desplácese hasta el catálogo que desee desplegar.
-1. Mediante:
+1. Con:
 
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
@@ -594,7 +594,7 @@ Para desplegar un catálogo:
 
    Especifique el **Tipo de promoción**, **Tipo de descuento**, **Valor de descuento** y cualquier otro campo según sea necesario.
 
-1. Haga clic en **Aceptar** para guardar.
+1. Clic **OK** para guardar.
 
 1. Ahora puede activar la promoción para que los compradores la vean en la instancia de publicación.
 
@@ -610,7 +610,7 @@ Para desplegar un catálogo:
 1. Haga clic en **Crear**. La nueva página de cupones se muestra en el panel derecho.
 
 1. Abra la nueva página de cupones haciendo doble clic en y, a continuación, haga clic en **Editar** para configurar la información según sea necesario.
-1. Haga clic en **Aceptar** para guardar.
+1. Clic **OK** para guardar.
 
 1. Ahora puede activar el cupón para que los compradores puedan utilizarlo en sus carros de compras en la instancia de publicación.
 
@@ -672,7 +672,7 @@ En el sitio de demostración (Geometrixx Outdoors - Inglés) puede ver el formul
 #### Edición de información de pedidos: IU táctil optimizada {#editing-order-information-touch-optimized-ui}
 
 1. Uso del **Pedidos** consola navegue hasta el pedido.
-1. Mediante:
+1. Con:
 
    * [acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [modo de selección](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)

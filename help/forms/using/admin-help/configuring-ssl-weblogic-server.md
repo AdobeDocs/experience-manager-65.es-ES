@@ -129,7 +129,7 @@ Para obtener más información sobre el uso del comando keytool, consulte el arc
 
    `-file "ads-ca.cer" -keystore "ads-credentials.jks"`
 
-   `-storepass` `*store*`*_**password**
+   `-storepass` `*store*`*_**contraseña**
 
    >[!NOTE]
    >

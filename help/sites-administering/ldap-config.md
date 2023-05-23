@@ -1,6 +1,6 @@
 ---
-title: Configuración de LDAP con AEM 6
-description: Obtenga información sobre cómo configurar LDAP con AEM.
+title: AEM Configuración de LDAP con 6
+description: AEM Obtenga información sobre cómo configurar LDAP con el uso de la.
 uuid: 0007def4-86f0-401d-aa37-c8d49d5acea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -15,48 +15,48 @@ ht-degree: 0%
 
 ---
 
-# Configuración de LDAP con AEM 6 {#configuring-ldap-with-aem}
+# AEM Configuración de LDAP con 6 {#configuring-ldap-with-aem}
 
-LDAP (el **L** ponderación **D** directorio **A** acceso **P** protocolo) se utiliza para acceder a servicios de directorio centralizados. Ayuda a reducir el esfuerzo necesario para administrar las cuentas de usuario, ya que se puede acceder a ellas desde varias aplicaciones. Uno de estos servidores LDAP es Active Directory. LDAP se utiliza a menudo para lograr el inicio de sesión único, que permite al usuario acceder a varias aplicaciones después de iniciar sesión una vez.
+LDAP (el **L** peso ligero **D** directorio **A** Acceso **P** protocolo) se utiliza para acceder a los servicios de directorio centralizados. Ayuda a reducir el esfuerzo necesario para administrar las cuentas de usuario, ya que varias aplicaciones pueden acceder a ellas. Uno de estos servidores LDAP es Active Directory. LDAP se utiliza a menudo para lograr el inicio de sesión único, que permite al usuario acceder a varias aplicaciones después de iniciar sesión una vez.
 
-Las cuentas de usuario se pueden sincronizar entre el servidor LDAP y el repositorio, y los detalles de las cuentas LDAP se guardan en el repositorio. Esta funcionalidad permite asignar las cuentas a los grupos de repositorios para asignar los permisos y privilegios necesarios.
+Las cuentas de usuario se pueden sincronizar entre el servidor LDAP y el repositorio, y los detalles de la cuenta LDAP se guardan en el repositorio. Esta funcionalidad permite asignar las cuentas a grupos de repositorios para asignar los permisos y privilegios necesarios.
 
-El repositorio utiliza la autenticación LDAP para autenticar a esos usuarios, con credenciales pasadas al servidor LDAP para su validación, que es necesario antes de permitir el acceso al repositorio. Para mejorar el rendimiento, el repositorio puede almacenar en caché las credenciales validadas correctamente, con un tiempo de espera de caducidad para garantizar que la revalidación se produzca después de un periodo adecuado.
+El repositorio utiliza la autenticación LDAP para autenticar a estos usuarios, con credenciales que se pasan al servidor LDAP para su validación, que es necesaria antes de permitir el acceso al repositorio. Para mejorar el rendimiento, el repositorio puede almacenar en caché las credenciales validadas correctamente, con un tiempo de espera de caducidad para garantizar que la revalidación se produzca después de un periodo adecuado.
 
-Cuando se elimina una cuenta del servidor LDAP, ya no se concede la validación y se deniega el acceso al repositorio. Los detalles de las cuentas LDAP que se guardan en el repositorio también se pueden depurar.
+Cuando se quita una cuenta del servidor LDAP, ya no se concede la validación y se deniega el acceso al repositorio. Los detalles de las cuentas LDAP guardadas en el repositorio también se pueden purgar.
 
-El uso de estas cuentas es transparente para los usuarios. Es decir, no ven ninguna diferencia entre las cuentas de usuario y grupo creadas a partir de LDAP y las cuentas creadas únicamente en el repositorio.
+El uso de dichas cuentas es transparente para los usuarios. Es decir, no ven ninguna diferencia entre las cuentas de usuario y de grupo creadas a partir de LDAP y las cuentas creadas únicamente en el repositorio.
 
-En AEM 6, la compatibilidad con LDAP viene con una nueva implementación que requiere un tipo de configuración diferente al de las versiones anteriores.
+AEM En el 6 de marzo, la compatibilidad con LDAP viene con una nueva implementación que requiere un tipo de configuración diferente a la de las versiones anteriores.
 
-Todas las configuraciones LDAP ahora están disponibles como configuraciones de OSGi. Se pueden configurar a través de la consola de administración web en:
+Todas las configuraciones de LDAP están ahora disponibles como configuraciones de OSGi. Se pueden configurar mediante la consola de administración web en:
 `https://serveraddress:4502/system/console/configMgr`
 
-Para que LDAP funcione con AEM, debe crear tres configuraciones OSGi:
+AEM Para que LDAP funcione con la opción de configuración de la aplicación, debe crear tres configuraciones de OSGi:
 
 1. Un proveedor de identidad LDAP (IDP).
-1. Controlador de sincronización.
+1. Un controlador de sincronización.
 1. Un módulo de inicio de sesión externo.
 
 >[!NOTE]
 >
->Watch [Módulo de inicio de sesión externo de Oak: autenticación con LDAP y más allá](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=en) para profundizar en los módulos de inicio de sesión externos.
+>Ver [Módulo de inicio de sesión externo de Oak: autenticación con LDAP y versiones posteriores](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=en) para profundizar en los módulos de inicio de sesión externo.
 >
->Para leer un ejemplo de configuración de Experience Manager con Apache DS, consulte [Configuración de Adobe Experience Manager 6.5 para utilizar el servicio de directorio Apache.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
+>Para leer un ejemplo de configuración de Experience Manager con Apache DS, consulte [Configuración de Adobe Experience Manager 6.5 para utilizar el servicio de directorio de Apache.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 
-## Configuración Del Proveedor De Identidad LDAP {#configuring-the-ldap-identity-provider}
+## Configuración del proveedor de identidad LDAP {#configuring-the-ldap-identity-provider}
 
 El proveedor de identidad LDAP se utiliza para definir cómo se recuperan los usuarios del servidor LDAP.
 
-Se encuentra en la consola de administración, en la sección **Proveedor de identidad de Apache Jackrabbit Oak LDAP** nombre.
+Se encuentra en la consola de administración, en **Proveedor de identidad LDAP Apache Jackrabbit Oak** nombre.
 
 Las siguientes opciones de configuración están disponibles para el proveedor de identidad LDAP:
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Nombre del proveedor LDAP</strong></td>
-   <td>Nombre de esta configuración del proveedor LDAP.</td>
+   <td><strong>Nombre de proveedor LDAP</strong></td>
+   <td>Nombre de esta configuración de proveedor LDAP.</td>
   </tr>
   <tr>
    <td><strong>Nombre de host del servidor LDAP</strong><br /> </td>
@@ -72,75 +72,75 @@ Las siguientes opciones de configuración están disponibles para el proveedor d
   </tr>
   <tr>
    <td><strong>Usar TLS</strong></td>
-   <td>Indica si TLS debe iniciarse en conexiones.</td>
+   <td>Indica si TLS debe iniciarse en las conexiones.</td>
   </tr>
   <tr>
-   <td><strong>Deshabilitar la comprobación de certificados</strong></td>
-   <td>Indica si se debe deshabilitar la validación de certificados de servidor.</td>
+   <td><strong>Deshabilitar comprobación de certificados</strong></td>
+   <td>Indica si la validación de certificados de servidor debe deshabilitarse.</td>
   </tr>
   <tr>
-   <td><strong>Enlace DN</strong></td>
+   <td><strong>Enlazar DN</strong></td>
    <td>DN del usuario para la autenticación. Si este campo se deja vacío, se realiza un enlace anónimo.</td>
   </tr>
   <tr>
-   <td><strong>Vincular contraseña</strong></td>
+   <td><strong>Contraseña de enlace</strong></td>
    <td>Contraseña del usuario para la autenticación</td>
   </tr>
   <tr>
-   <td><strong>Tiempo de espera de la búsqueda</strong></td>
-   <td>Tiempo hasta que se agota el tiempo de espera de una búsqueda</td>
+   <td><strong>Tiempo de espera de búsqueda</strong></td>
+   <td>Tiempo hasta que finaliza la búsqueda</td>
   </tr>
   <tr>
-   <td><strong>Máximo del grupo de administración activo</strong></td>
-   <td>El tamaño máximo activo del grupo de conexiones de administración.</td>
+   <td><strong>Grupo de administradores máximo activo</strong></td>
+   <td>Tamaño máximo activo del grupo de conexión de administrador.</td>
   </tr>
   <tr>
-   <td><strong>Acumulación máxima de usuarios activa</strong></td>
-   <td>Tamaño máximo activo del grupo de conexiones de usuario.</td>
+   <td><strong>Grupo de usuarios máximo activo</strong></td>
+   <td>Tamaño máximo activo del grupo de conexión de usuario.</td>
   </tr>
   <tr>
-   <td><strong>DN de base de usuario</strong></td>
+   <td><strong>DN base de usuario</strong></td>
    <td>DN para búsquedas de usuarios</td>
   </tr>
   <tr>
-   <td><strong>Clases de objetos de usuario</strong></td>
-   <td>Lista de clases de objetos que debe contener una entrada de usuario.</td>
+   <td><strong>Clases de objeto de usuario</strong></td>
+   <td>La lista de clases de objeto que debe contener una entrada de usuario.</td>
   </tr>
   <tr>
    <td><strong>Atributo de ID de usuario</strong></td>
-   <td>Nombre del atributo que contiene el identificador de usuario.</td>
+   <td>Nombre del atributo que contiene el ID de usuario.</td>
   </tr>
   <tr>
-   <td><strong>Filtro extra del usuario</strong></td>
-   <td>Filtro LDAP adicional que se utilizará al buscar usuarios. El filtro final tiene el siguiente formato: '(&amp;(&lt;idattr&gt;=&lt;userid&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)' (user.extraFilter)</td>
+   <td><strong>Filtro adicional de usuario</strong></td>
+   <td>Filtro LDAP adicional que se utiliza al buscar usuarios. El filtro final tiene el siguiente formato: '(&amp;(&lt;idattr&gt;=&lt;userid&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)' (user.extraFilter)</td>
   </tr>
   <tr>
-   <td><strong>Rutas de DN de usuario</strong></td>
+   <td><strong>Rutas DN de usuario</strong></td>
    <td>Controla si el DN debe utilizarse para calcular una parte de la ruta intermedia.</td>
   </tr>
   <tr>
-   <td><strong>DN de base de grupo</strong></td>
+   <td><strong>DN base de grupo</strong></td>
    <td>DN base para búsquedas de grupo.</td>
   </tr>
   <tr>
-   <td><strong>Agrupar clases de objetos</strong></td>
-   <td>La lista de clases de objetos que debe contener una entrada de grupo.</td>
+   <td><strong>Agrupar clases de objeto</strong></td>
+   <td>La lista de clases de objeto que debe contener una entrada de grupo.</td>
   </tr>
   <tr>
    <td><strong>Atributo de nombre de grupo</strong></td>
    <td>Nombre del atributo que contiene el nombre del grupo.</td>
   </tr>
   <tr>
-   <td><strong>Filtro extra de grupo</strong></td>
+   <td><strong>Filtro adicional de grupo</strong></td>
    <td>Filtro LDAP adicional que se utilizará al buscar grupos. El filtro final tiene el siguiente formato: '(&amp;(&lt;nameattr&gt;=&lt;groupname&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)'</td>
   </tr>
   <tr>
-   <td><strong>Rutas de DN de grupo</strong></td>
+   <td><strong>Agrupar rutas DN</strong></td>
    <td>Controla si el DN debe utilizarse para calcular una parte de la ruta intermedia.</td>
   </tr>
   <tr>
-   <td><strong>Atributo de miembro del grupo</strong></td>
-   <td>Atributo de grupo que contiene uno o más miembros de un grupo.</td>
+   <td><strong>Atributo de miembro de grupo</strong></td>
+   <td>Atributo de grupo que contiene uno o varios miembros de un grupo.</td>
   </tr>
  </tbody>
 </table>
@@ -149,9 +149,9 @@ Las siguientes opciones de configuración están disponibles para el proveedor d
 
 El controlador de sincronización define cómo se sincronizan los usuarios y grupos del proveedor de identidad con el repositorio.
 
-Se encuentra debajo de la **Controlador de sincronización predeterminado Apache Jackrabbit Oak** nombre en la consola de administración.
+Se encuentra bajo la **Controlador de sincronización predeterminado Apache Jackrabbit Oak** nombre en la consola de administración.
 
-Las siguientes opciones de configuración están disponibles para el controlador de sincronización:
+Las siguientes opciones de configuración están disponibles para el Controlador de sincronización:
 
 <table>
  <tbody>
@@ -161,75 +161,75 @@ Las siguientes opciones de configuración están disponibles para el controlador
   </tr>
   <tr>
    <td><strong>Hora de caducidad del usuario</strong></td>
-   <td>Duración hasta que un usuario sincronizado caduque.</td>
+   <td>Duración hasta que caduque un usuario sincronizado.</td>
   </tr>
   <tr>
-   <td><strong>Pertenencia automática del usuario</strong></td>
+   <td><strong>Abono automático de usuario</strong></td>
    <td>Lista de grupos a los que se agrega automáticamente un usuario sincronizado.</td>
   </tr>
   <tr>
    <td><strong>Asignación de propiedades de usuario</strong></td>
-   <td>Definición de asignación de lista de propiedades locales de propiedades externas.</td>
+   <td>Definición de asignación de listas de propiedades locales a partir de propiedades externas.</td>
   </tr>
   <tr>
    <td><strong>Prefijo de ruta de usuario</strong></td>
-   <td>Prefijo de ruta que se utiliza al crear usuarios.</td>
+   <td>Prefijo de ruta utilizado al crear usuarios.</td>
   </tr>
   <tr>
-   <td><strong>Caducidad de pertenencia del usuario</strong></td>
-   <td>Tiempo después del cual caduca la pertenencia.<br /> </td>
+   <td><strong>Caducidad de abono de usuario</strong></td>
+   <td>Tiempo tras el cual caduca la pertenencia.<br /> </td>
   </tr>
   <tr>
-   <td><strong>Profundidad de anidación de la pertenencia del usuario</strong></td>
-   <td>Devuelve la profundidad máxima del anidado de grupos cuando se sincronizan las relaciones de pertenencia. Un valor de 0 deshabilita de forma efectiva la búsqueda de miembros del grupo. Un valor de 1 solo agrega los grupos directos de un usuario. Este valor no tiene ningún efecto cuando se sincronizan grupos individuales solo al sincronizar un antecedente de pertenencia de usuarios.</td>
+   <td><strong>Profundidad de anidación de pertenencia a usuario</strong></td>
+   <td>Devuelve la profundidad máxima de anidamiento de grupos cuando se sincronizan las relaciones de pertenencia. Un valor de 0 deshabilita de forma efectiva la búsqueda de miembros del grupo. El valor 1 solo agrega los grupos directos de un usuario. Este valor no tiene ningún efecto cuando se sincronizan grupos individuales únicamente cuando se sincroniza una ascendencia de pertenencia de usuarios.</td>
   </tr>
   <tr>
-   <td><strong>Hora de caducidad del grupo</strong></td>
+   <td><strong>Tiempo de vencimiento del grupo</strong></td>
    <td>Duración hasta que caduque un grupo sincronizado.</td>
   </tr>
   <tr>
-   <td><strong>Pertenencia automática de grupo</strong></td>
+   <td><strong>Pertenencia automática al grupo</strong></td>
    <td>Lista de grupos a los que se agrega automáticamente un grupo sincronizado.</td>
   </tr>
   <tr>
    <td><strong>Asignación de propiedades de grupo</strong></td>
-   <td>Definición de asignación de lista de propiedades locales de propiedades externas.</td>
+   <td>Definición de asignación de listas de propiedades locales a partir de propiedades externas.</td>
   </tr>
   <tr>
    <td><strong>Prefijo de ruta de grupo</strong></td>
-   <td>Prefijo de ruta que se utiliza al crear grupos.</td>
+   <td>Prefijo de ruta utilizado al crear grupos.</td>
   </tr>
  </tbody>
 </table>
 
 ## El módulo de inicio de sesión externo {#the-external-login-module}
 
-El módulo de inicio de sesión externo se encuentra en la sección **Módulo de inicio de sesión externo Apache Jackrabbit Oak** en la consola de administración.
+El módulo de inicio de sesión externo se encuentra en **Módulo de inicio de sesión externo de Apache Jackrabbit Oak** en la consola de administración.
 
 >[!NOTE]
 >
->El Módulo de inicio de sesión externo Apache Jackrabbit Oak implementa las especificaciones de los servicios de autenticación y autorización (JAAS) de Java™. Consulte la [guía de referencia de seguridad de Oracle oficial de Java™](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) para obtener más información.
+>El módulo de inicio de sesión externo Apache Jackrabbit Oak implementa las especificaciones del Servicio de autenticación y autorización de Java™ (JAAS). Consulte la [oracle oficial Guía de referencia de seguridad de Java™](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) para obtener más información.
 
-Su trabajo es definir qué proveedor de identidad y controlador de sincronización utilizar, enlazando efectivamente los dos módulos.
+Su trabajo es definir qué proveedor de identidad y controlador de sincronización utilizar, enlazando de forma eficaz los dos módulos.
 
 Estas son las opciones de configuración disponibles:
 
-| **Clasificación de JAAS** | Especificar la clasificación (es decir, el orden de clasificación) de esta entrada del módulo de inicio de sesión. Las entradas se ordenan en orden descendente (es decir, las configuraciones de clasificación de valores más altos son las primeras). |
+| **Clasificación JAAS** | Especificar la clasificación (es decir, el criterio de ordenación) de esta entrada del módulo de inicio de sesión. Las entradas se ordenan en orden descendente (es decir, las configuraciones con mayor clasificación de valores son las primeras). |
 |---|---|
-| **Indicador de control JAAS** | Propiedad que especifica si es NECESARIO un LoginModule, REQUISITO, SUFICIENTE u OPCIONAL. Consulte la documentación de configuración de JAAS para obtener más información sobre el significado de estos indicadores. |
-| **Dominio de JAAS** | Nombre del territorio (o nombre de aplicación) en el que está registrado LoginModule. Si no se proporciona ningún nombre de dominio, LoginModule se registra con un dominio predeterminado tal como se configura en la configuración Felix JAAS. |
+| **Indicador de control de JAAS** | Propiedad que especifica si LoginModule es REQUIRED, REQUISITE, SUFICIENT u OPTIONAL. Consulte la documentación de configuración de JAAS para obtener más información sobre el significado de estos indicadores. |
+| **Dominio JAAS** | El nombre de territorio (o nombre de aplicación) con el que está registrado LoginModule. Si no se proporciona ningún nombre de dominio kerberos, LoginModule se registra con un dominio kerberos predeterminado según se ha configurado en la configuración de Felix JAAS. |
 | **Nombre del proveedor de identidad** | Nombre del proveedor de identidad. |
 | **Nombre del controlador de sincronización** | Nombre del controlador de sincronización. |
 
 >[!NOTE]
-Si planea tener más de una configuración LDAP con su instancia de AEM, deben crearse proveedores de identidad y controladores de sincronización independientes para cada configuración.
+AEM Si planea tener más de una configuración LDAP con la instancia de la instancia de, se deben crear proveedores de identidad y controladores de sincronización independientes para cada configuración.
 
 ## Configuración de LDAP sobre SSL {#configure-ldap-over-ssl}
 
-AEM 6 se puede configurar para autenticarse con LDAP sobre SSL siguiendo el siguiente procedimiento:
+AEM Se puede configurar 6 para que se autentique con LDAP a través de SSL siguiendo el siguiente procedimiento:
 
-1. Marque la **Usar SSL** o **Usar TLS** casillas de verificación al configurar la variable [Proveedor de identidad LDAP](#configuring-the-ldap-identity-provider).
-1. Configure el controlador de sincronización y el módulo de inicio de sesión externo según su configuración.
+1. Compruebe la **Usar SSL** o **Usar TLS** casillas de verificación al configurar [Proveedor de identidad LDAP](#configuring-the-ldap-identity-provider).
+1. Configure el controlador de sincronización y el módulo de inicio de sesión externo según la configuración.
 1. Instale los certificados SSL en la VM de Java™ si es necesario. Esta instalación se puede realizar utilizando keytool:
 
    `keytool -import -alias localCA -file <certificate location> -keystore <keystore location>`
@@ -238,13 +238,13 @@ AEM 6 se puede configurar para autenticarse con LDAP sobre SSL siguiendo el sigu
 
 ### Creación de certificados SSL {#creating-ssl-certificates}
 
-Los certificados autofirmados se pueden utilizar al configurar AEM para autenticarse con LDAP mediante SSL. A continuación se muestra un ejemplo de un procedimiento de trabajo para generar certificados para su uso con AEM.
+AEM Los certificados autofirmados se pueden utilizar al configurar los certificados para que se autentiquen con LDAP a través de SSL. AEM A continuación se muestra un ejemplo de un procedimiento de trabajo para generar certificados para su uso con la.
 
-1. Asegúrese de tener una biblioteca SSL instalada y funcionando. Este procedimiento utiliza OpenSSL como ejemplo.
+1. Asegúrese de tener una biblioteca SSL instalada y en funcionamiento. Este procedimiento utiliza OpenSSL como ejemplo.
 
-1. Cree un archivo de configuración OpenSSL personalizado (cnf). Esta configuración se puede realizar copiando el archivo de configuración predeterminado **openssl.cnf **y personalizándolo. En sistemas UNIX®, se encuentra en `/usr/lib/ssl/openssl.cnf`
+1. Cree un archivo de configuración OpenSSL (cnf) personalizado. Esta configuración se puede realizar copiando el archivo de configuración **openssl.cnf ** predeterminado y personalizándolo. En sistemas UNIX®, se encuentra en `/usr/lib/ssl/openssl.cnf`
 
-1. Continúe creando la clave raíz de CA ejecutando el siguiente comando en un terminal:
+1. Continúe creando la clave raíz de la CA ejecutando el siguiente comando en un terminal:
 
    ```
    openssl genpkey -algorithm [public key algorithm] -out certificatefile.key -pkeyopt [public key algorithm option]
@@ -258,46 +258,46 @@ Los certificados autofirmados se pueden utilizar al configurar AEM para autentic
 
    `openssl x509 -noout -text -in root-ca.crt`
 
-1. Asegúrese de que todas las carpetas especificadas en el archivo de configuración de certificado (.cnf) existan. Si no es así, créelos.
-1. Cree una semilla aleatoria, ejecutando, por ejemplo:
+1. Asegúrese de que existen todas las carpetas especificadas en el archivo de configuración de certificado (.cnf). Si no es así, créelos.
+1. Cree una semilla aleatoria ejecutando, por ejemplo:
 
    `openssl rand -out private/.rand 8192`
 
 1. Mueva los archivos .pem creados a las ubicaciones configuradas en el archivo .cnf.
 
-1. Finalmente, agregue el certificado al almacén de claves Java™.
+1. Finalmente, agregue el certificado al repositorio de claves Java™.
 
-## Habilitación del registro de depuración {#enabling-debug-logging}
+## Habilitar el registro de depuración {#enabling-debug-logging}
 
-El registro de depuración se puede habilitar tanto para el proveedor de identidad LDAP como para el módulo de inicio de sesión externo para solucionar problemas de conexión.
+El registro de depuración se puede habilitar tanto para el proveedor de identidad LDAP como para el módulo de inicio de sesión externo para solucionar los problemas de conexión.
 
 Para habilitar el registro de depuración, debe hacer lo siguiente:
 
-1. Vaya a la Consola de administración web.
-1. Busque &quot;Configuración del registrador de Sling de Apache&quot; y cree dos registradores con las siguientes opciones:
+1. Vaya a la consola de administración web.
+1. Busque &quot;Configuración del registrador de Apache Sling&quot; y cree dos registradores con las siguientes opciones:
 
-* Nivel de registro: Depuración
+* Nivel de registro: depuración
 * Archivo de registro logs/ldap.log
-* Patrón de mensaje: {0,date,dd.MM.yyyy HH:mm:s.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Patrón de mensajes: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Registrador: org.apache.jackrabbit.oak.security.authentication.ldap
 
-* Nivel de registro: Depuración
+* Nivel de registro: depuración
 * Archivo de registro: logs/external.log
-* Patrón de mensaje: {0,date,dd.MM.yyyy HH:mm:s.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Patrón de mensajes: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Registrador: org.apache.jackrabbit.oak.spi.security.authentication.external
 
-## Una palabra sobre afiliación de grupo {#a-word-on-group-affiliation}
+## Una palabra sobre afiliación grupal {#a-word-on-group-affiliation}
 
-Los usuarios sincronizados a través de LDAP pueden formar parte de diferentes grupos en AEM. Estos grupos pueden ser grupos LDAP externos que se agregan a AEM como parte del proceso de sincronización. Sin embargo, también pueden ser grupos que se agregan por separado y que no forman parte del esquema de afiliación del grupo LDAP original.
+AEM Los usuarios sincronizados a través de LDAP pueden formar parte de diferentes grupos en el espacio de trabajo de. AEM Estos grupos pueden ser grupos LDAP externos que se agregan a los grupos como parte del proceso de sincronización. Sin embargo, también pueden ser grupos que se agregan por separado y que no forman parte del esquema de afiliación de grupo LDAP original.
 
-Normalmente, estos grupos los agrega un administrador de AEM local o cualquier otro proveedor de identidad.
+AEM Por lo general, estos grupos los agrega un administrador local del servicio de identidad o cualquier otro proveedor de identidad.
 
-Si se elimina un usuario de un grupo en el servidor LDAP, el cambio se refleja en el lado AEM de la sincronización. Sin embargo, todas las otras afiliaciones de grupo del usuario que no fueron agregadas por LDAP siguen en su lugar.
+AEM Si se elimina un usuario de un grupo en el servidor LDAP, el cambio se refleja en el lado del usuario en el que se realiza la sincronización, en el que se realiza la sincronización de los datos de forma predeterminada, se produce un cambio en el lado del usuario. Sin embargo, todas las demás afiliaciones de grupo del usuario que no fueron agregadas por LDAP permanecen en su lugar.
 
-AEM detecta y gestiona la depuración de usuarios de grupos externos mediante la variable `rep:externalId` propiedad. Esta propiedad se agrega automáticamente a cualquier usuario o grupo que sincronice el controlador de sincronización y contiene información sobre el proveedor de identidad de origen.
+AEM y gestiona la depuración de usuarios de grupos externos utilizando `rep:externalId` propiedad. Esta propiedad se agrega automáticamente a cualquier usuario o grupo sincronizado por el controlador de sincronización y contiene información sobre el proveedor de identidad de origen.
 
-Consulte la documentación de Apache Oak en [Sincronización de usuarios y grupos](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
+Consulte la documentación de Apache Oak sobre [Sincronización de usuarios y grupos](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
 
 ## Problemas conocidos {#known-issues}
 
-Si planea utilizar LDAP sobre SSL, asegúrese de que los certificados que está utilizando se crean sin la opción de comentario de Netscape. Si esta opción está habilitada, la autenticación falla con un error de protocolo de enlace SSL.
+Si planea utilizar LDAP sobre SSL, asegúrese de que los certificados que está utilizando se crean sin la opción de comentario Netscape. Si esta opción está habilitada, la autenticación falla con un error de protocolo de enlace SSL.

@@ -55,7 +55,7 @@ Al definir la expresión Hide, tenga en cuenta:
 * Los valores son de solo lectura.
 * Las funciones (si son necesarias) deben limitarse a un conjunto determinado proporcionado por el servicio.
 
-## Ejemplo {#example}
+## Ejemplos {#example}
 
 AEM Se pueden encontrar ejemplos de condiciones de ocultación a lo largo de la y la [componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) en particular. Por ejemplo, considere la [componente principal de lista](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
 

@@ -13,13 +13,13 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1760'
-ht-degree: 5%
+ht-degree: 1%
 
 ---
 
 # Administración de etiquetas {#administering-tags}
 
-Las etiquetas son un método rápido y fácil de clasificar contenido dentro de un sitio web. Se pueden considerar como palabras clave o etiquetas (metadatos) que permiten encontrar el contenido más rápidamente como resultado de una búsqueda.
+Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Se pueden considerar como palabras clave o etiquetas (metadatos) que permiten encontrar el contenido más rápidamente como resultado de una búsqueda.
 
 En Adobe Experience Manager AEM (), una etiqueta puede ser una propiedad de
 
@@ -37,14 +37,14 @@ Además de las páginas y los recursos, las etiquetas se utilizan para las funci
 
 AEM Algunas de las funciones de las etiquetas dentro de las etiquetas son las siguientes
 
-* Las etiquetas se pueden agrupar en varias áreas de nombres. Tales jerarquías permiten la construcción de taxonomías. AEM Estas taxonomías son globales en todo el mundo
+* Las etiquetas se pueden agrupar en varias áreas de nombres. Estas jerarquías permiten crear taxonomías. AEM Estas taxonomías son globales en todo el mundo
 * La restricción principal para las etiquetas recién creadas es que deben ser únicas dentro de un área de nombres específica.
 * El título de una etiqueta no debe incluir caracteres de separación de rutas de etiquetas (ni se mostrarán si están presentes)
 
    * dos puntos `:` : delimita la etiqueta de área de nombres
    * barra diagonal `/` - delimita las subetiquetas
 
-* Los autores y visitantes del sitio pueden aplicar las etiquetas. Independientemente del creador, todas las formas de etiquetas están disponibles para selección, tanto durante la asignación a una página como durante la búsqueda.
+* Los autores y visitantes del sitio pueden aplicar las etiquetas. Independientemente de su creador, todas las formas de etiquetas están disponibles para su selección, tanto al asignarlas a una página como al buscar.
 * Los miembros del grupo &quot;administradores de etiquetas&quot; y los miembros que tienen derechos de modificación a pueden crear etiquetas y modificar su taxonomía `/content/cq:tags`.
 
    * Una etiqueta que contiene etiquetas secundarias se denomina etiqueta contenedora
@@ -172,7 +172,7 @@ Una vez introducida la información requerida
 
 * select **Crear**
 
-### Edición de tags {#editing-tags}
+### Edición de etiquetas {#editing-tags}
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
@@ -184,7 +184,7 @@ Para obtener más información sobre cómo añadir traducciones de idioma, consu
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-### Movimiento de tags {#moving-tags}
+### Mover etiquetas {#moving-tags}
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -209,11 +209,11 @@ Muestra inicialmente el actual
 
 * select **Guardar**
 
-### Combinación de tags {#merging-tags}
+### Combinación de etiquetas {#merging-tags}
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
-Se pueden combinar etiquetas cuando una taxonomía tiene duplicados. Cuando la etiqueta A se combina con la etiqueta B, todas las páginas etiquetadas con la etiqueta A se etiquetarán con la etiqueta B y la etiqueta A ya no estará disponible para los autores.
+La combinación de etiquetas se puede utilizar cuando una taxonomía tiene duplicados. Cuando la etiqueta A se combina con la etiqueta B, todas las páginas etiquetadas con la etiqueta A se etiquetarán con la etiqueta B y la etiqueta A ya no estará disponible para los autores.
 
 Cuando se selecciona un área de nombres u otra etiqueta, al seleccionar **Combinar** El icono abrirá un panel en el que se puede seleccionar la ruta de acceso de la combinación.
 
@@ -246,7 +246,7 @@ Para publicar una taxonomía (un área de nombres y subetiquetas), la práctica 
 
 Cuando se selecciona un área de nombres u otra etiqueta, al seleccionar **Cancelar publicación** Este icono desactivará la etiqueta en el entorno de creación y la quitará del entorno de publicación. Similar a la `Delete`, si la etiqueta seleccionada es una etiqueta contenedora, todas sus etiquetas secundarias se desactivarán en el entorno de creación y se eliminarán del entorno de publicación.
 
-### Eliminación de tags {#deleting-tags}
+### Eliminación de etiquetas {#deleting-tags}
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
@@ -283,11 +283,11 @@ Los permisos de etiquetas son [&quot;seguro (de forma predeterminada)&quot;](/he
       * escoger `Replicate` del administrador de paquetes
 
 
-## Administración de tags en distintos idiomas {#managing-tags-in-different-languages}
+## Administración de etiquetas en diferentes idiomas {#managing-tags-in-different-languages}
 
 El `title`La propiedad de una etiqueta se puede traducir a varios idiomas. Una vez traducida, la etiqueta adecuada `title`pueden mostrarse según el idioma del usuario o el idioma de la página.
 
-### Definición de títulos de tags en varios idiomas {#defining-tag-titles-in-multiple-languages}
+### Definición de títulos de etiquetas en varios idiomas {#defining-tag-titles-in-multiple-languages}
 
 A continuación se describe cómo traducir el `title`de la etiqueta **Animales** de inglés a alemán y francés.
 

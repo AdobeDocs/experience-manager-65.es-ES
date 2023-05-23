@@ -13,7 +13,7 @@ exl-id: 4b3acc7c-f1f7-4837-ae3a-9435d6ce1349
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ Siga estos pasos para cargar los recursos compartidos de un artículo:
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
-### El paso siguiente {#the-next-step}
+### El siguiente paso {#the-next-step}
 
 Una vez que haya aprendido a crear y publicar contenido, consulte
 

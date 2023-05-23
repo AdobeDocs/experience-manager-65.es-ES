@@ -102,7 +102,7 @@ Inicialmente, cuando se abre un marco de trabajo de Adobe Analytics, el buscador
 
 * Tráfico
 * Conversión
-* Sucesos
+* Eventos
 
 Cuando se selecciona un RSID, todas las variables que pertenecen a ese RSID se agregan a la lista.\
 El `cf#` es necesario para asignar variables de Analytics a las variables de CQ presentes en los diferentes componentes de seguimiento. Consulte Configuración de un marco de trabajo para el seguimiento básico.

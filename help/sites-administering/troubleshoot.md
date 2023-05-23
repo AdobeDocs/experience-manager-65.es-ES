@@ -1,6 +1,6 @@
 ---
-title: Resolución de problemas de Adobe Experience Manager
-description: Obtenga información sobre la resolución de problemas con AEM.
+title: Solución de problemas de Adobe Experience Manager
+description: AEM Obtenga información acerca de la resolución de problemas con la solución de problemas de.
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,23 +12,23 @@ exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# Resolución de problemas de Adobe Experience Manager {#troubleshooting-aem}
+# Solución de problemas de Adobe Experience Manager {#troubleshooting-aem}
 
-La siguiente sección cubre algunos problemas que pueden producirse al utilizar AEM (Adobe Experience Manager), así como sugerencias para solucionarlos.
-
->[!NOTE]
->
->Si está solucionando problemas de creación en AEM, consulte [Resolución de problemas para autores.](/help/sites-authoring/troubleshooting.md)
+AEM En la siguiente sección se tratan algunos problemas que pueden producirse al utilizar la solución de problemas de (Adobe Experience Manager), junto con sugerencias para solucionarlos.
 
 >[!NOTE]
 >
->Cuando experimenta problemas, también vale la pena comprobar la lista de [Problemas conocidos](/help/release-notes/release-notes.md) para su instancia (versión y service packs).
+>AEM Si está solucionando problemas relacionados con la creación de documentos en la documentación de, consulte la sección [Solución de problemas para autores.](/help/sites-authoring/troubleshooting.md)
 
-## Situaciones de solución de problemas para administradores {#troubleshooting-scenarios-for-administrators}
+>[!NOTE]
+>
+>Cuando experimenta problemas, también vale la pena comprobar la lista de [Problemas conocidos](/help/release-notes/release-notes.md) para su instancia (versión y paquetes de servicio).
+
+## Escenarios de resolución de problemas para administradores {#troubleshooting-scenarios-for-administrators}
 
 En la tabla siguiente se proporciona una descripción general de los problemas que los administradores pueden solucionar:
 
@@ -40,23 +40,23 @@ En la tabla siguiente se proporciona una descripción general de los problemas q
   </tr>
   <tr>
    <td>Administrador del sistema</td>
-   <td><p>Hacer doble clic en el jar de inicio rápido no tiene ningún efecto o abre el archivo jar con otro programa (por ejemplo, el administrador de archivos)</p> </td>
+   <td><p>Al hacer doble clic en el JAR de inicio rápido no se produce ningún efecto o se abre el archivo JAR con otro programa (por ejemplo, archive manager)</p> </td>
   </tr>
   <tr>
    <td><p>Administrador del sistema</p> </td>
-   <td><p>Mi aplicación que se ejecuta en CRX arroja errores de memoria insuficiente</p> </td>
+   <td><p>Mi aplicación que se ejecuta en CRX genera errores de memoria insuficiente</p> </td>
   </tr>
   <tr>
    <td><p>Administrador del sistema</p> </td>
-   <td><p>La pantalla de bienvenida de AEM no se muestra en el explorador después de hacer doble clic en AEM inicio rápido de CM</p> </td>
+   <td><p>AEM AEM La pantalla de bienvenida de la pantalla no se muestra en el explorador después de hacer doble clic en Inicio rápido de CM de la</p> </td>
   </tr>
   <tr>
    <td><p>Administrador del sistema</p> <p>usuario administrador</p> </td>
-   <td><p>Realización de un volcado de subprocesos</p> </td>
+   <td><p>Realización de un volcado de procesos</p> </td>
   </tr>
   <tr>
    <td><p>Administrador del sistema</p> <p>usuario administrador</p> </td>
-   <td><p>Comprobación de sesiones JCR no cerradas</p> </td>
+   <td><p>Comprobación de sesiones JCR sin cerrar</p> </td>
   </tr>
  </tbody>
 </table>
@@ -65,26 +65,26 @@ En la tabla siguiente se proporciona una descripción general de los problemas q
 
 Consulte [Problemas comunes de instalación](/help/sites-deploying/troubleshooting.md#common-installation-issues) para obtener información sobre los siguientes escenarios de solución de problemas:
 
-* Hacer doble clic en el JAR de inicio rápido no tiene ningún efecto o el archivo JAR con otro programa (como el administrador de archivos).
+* Hacer doble clic en el JAR de inicio rápido no tiene efecto o el archivo JAR con otro programa (como el administrador de archivos).
 * Las aplicaciones que se ejecutan en CRX generan errores de memoria insuficiente.
-* La pantalla de bienvenida de AEM no se muestra en el explorador después de hacer doble clic AEM inicio rápido.
+* AEM AEM La pantalla de bienvenida de la pantalla no se muestra en el explorador después de hacer doble clic en el inicio rápido de la aplicación de la.
 
 ## Métodos para el análisis de resolución de problemas {#methods-for-troubleshooting-analysis}
 
-### Realización de un volcado de subprocesos {#making-a-thread-dump}
+### Realización de un volcado de procesos {#making-a-thread-dump}
 
-El volcado de subprocesos es una lista de todos los subprocesos Java™ que están activos actualmente. Si AEM no responde correctamente, el volcado de subprocesos puede ayudarle a identificar interbloqueos u otros problemas.
+El volcado de hilos es una lista de todos los hilos Java™ que están activos actualmente. AEM Si el volcado de hilos no responde correctamente, el volcado de hilos puede ayudarle a identificar interbloqueos u otros problemas.
 
-### Uso del vaciador de subprocesos de Sling {#using-sling-thread-dumper}
+### Uso del volcado de hilos Sling {#using-sling-thread-dumper}
 
-1. Abra el **Consola web AEM**; por ejemplo, en `https://localhost:4502/system/console/`.
-1. Seleccione el **Subprocesos** under **Estado** pestaña .
+1. Abra el **AEM Consola web de**; por ejemplo, en `https://localhost:4502/system/console/`.
+1. Seleccione el **Hilos** bajo **Estado** pestaña.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
 ### Uso de jstack (línea de comandos) {#using-jstack-command-line}
 
-1. Busque el PID (id de proceso) de la instancia de AEM Java™.
+1. AEM Busque el PID (ID de proceso) de la instancia de Java™ de la.
 
    Por ejemplo, puede utilizar `ps -ef` o `jps`.
 
@@ -92,35 +92,35 @@ El volcado de subprocesos es una lista de todos los subprocesos Java™ que est�
 
    `jstack <pid>`
 
-1. Muestra el volcado de subprocesos.
+1. Muestra el volcado de hilos.
 
 >[!NOTE]
 >
->Puede anexar los volcados de subprocesos a un archivo de registro utilizando la variable `>>` redirección de salida:
+>Puede anexar los volcados de procesos a un archivo de registro utilizando el `>>` redirección de salida:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte la [Cómo tomar volcados de subprocesos de una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en) documentación para obtener más información
+Consulte la [Cómo tomar volcados de procesos de una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=es) para obtener más información
 
-### Comprobación de sesiones JCR no cerradas {#checking-for-unclosed-jcr-sessions}
+### Comprobación de sesiones JCR sin cerrar {#checking-for-unclosed-jcr-sessions}
 
-Cuando se desarrolla la funcionalidad para AEM WCM, se pueden abrir sesiones JCR (comparables a la apertura de una conexión de base de datos). Si las sesiones abiertas nunca se cierran, su sistema puede experimentar los siguientes síntomas:
+AEM Cuando la funcionalidad está desarrollada para WCM, se pueden abrir sesiones JCR (comparables a la apertura de una conexión a base de datos). Si las sesiones abiertas nunca se cierran, su sistema puede experimentar los siguientes síntomas:
 
 * El sistema se vuelve más lento.
 * Puede ver gran parte de CacheManager: resizeAll entradas en el archivo de registro; el siguiente número (size=&lt;x>) muestra el número de cachés, cada sesión abre varias cachés.
-* De vez en cuando el sistema se queda sin memoria (después de unas horas, días o semanas, dependiendo de la gravedad).
+* De vez en cuando, el sistema se queda sin memoria (después de unas pocas horas, días o semanas, según la gravedad).
 
-Para analizar sesiones no cerradas y averiguar qué código no está cerrando una sesión, consulte el artículo de la Base de conocimiento [Analizar sesiones no cerradas](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
+Para analizar las sesiones no cerradas y averiguar qué código no cierra una sesión, consulte el artículo de la Base de conocimiento [Analizar sesiones no cerradas](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
 
 ### Uso de la consola web de Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
 El estado de los paquetes OSGi también puede proporcionar una indicación temprana de posibles problemas.
 
-1. Abra el **Consola web AEM**; por ejemplo, en `https://localhost:4502/system/console/`.
-1. Select **Paquetes** under **OSGI** pestaña .
+1. Abra el **AEM Consola web de**; por ejemplo, en `https://localhost:4502/system/console/`.
+1. Seleccionar **Paquetes** bajo **OSGI** pestaña.
 1. Comprobación:
 
-   * el estado de los paquetes. Si alguno está inactivo o insatisfecho, intente detener y reiniciar el paquete. Si el problema persiste, investigue más usando otros métodos.
-   * si faltan dependencias en alguno de los paquetes. Estos detalles se pueden ver haciendo clic en el nombre del paquete individual, que es un vínculo (el siguiente ejemplo no tiene ningún problema):
+   * el estado de los paquetes. Si alguno de ellos está Inactivo o Insatisfecho, intente detener y reiniciar el paquete. Si el problema persiste, investigue más a fondo con otros métodos.
+   * si alguno de los paquetes tiene dependencias que faltan. Estos detalles se pueden ver haciendo clic en el Nombre del paquete individual, que es un vínculo (el siguiente ejemplo no tiene ningún problema):
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)

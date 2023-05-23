@@ -28,9 +28,9 @@ Para no mostrar el avatar junto a cada comentario publicado:
 
 1. Copiar `comment.hbs`de `libs`hasta `apps`
 
-   1. Seleccione `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+   1. Seleccionar `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
    1. Seleccionar **[!UICONTROL Copiar]**
-   1. Seleccione `/apps/social/commons/components/hbs/comments/comment`
+   1. Seleccionar `/apps/social/commons/components/hbs/comments/comment`
    1. Seleccionar **[!UICONTROL Pegar]**
 
 1. Abrir la superposición `comment.hbs`

@@ -1,6 +1,6 @@
 ---
-title: Resolución de problemas de la comunidad
-description: Resolución de problemas de la comunidad, incluidos los problemas conocidos
+title: Solución de problemas de comunidad
+description: Solución de problemas de la comunidad, incluidos problemas conocidos
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -15,23 +15,23 @@ ht-degree: 1%
 
 ---
 
-# Resolución de problemas de la comunidad {#troubleshooting}
+# Solución de problemas de comunidad {#troubleshooting}
 
 Esta sección contiene preocupaciones comunes y problemas conocidos al solucionar problemas de la comunidad.
 
 ## Problemas conocidos {#known-issues}
 
-### Falla la recuperación de Dispatcher {#dispatcher-refetch-fails}
+### Error de recuperación de Dispatcher {#dispatcher-refetch-fails}
 
-Cuando se utiliza Dispatcher 4.1.5 con una versión más reciente de Jetty, una recuperación puede resultar en &quot;No se puede recibir la respuesta del servidor remoto&quot; después de esperar a que la solicitud se agote.
+Cuando se utiliza Dispatcher 4.1.5 con una versión más reciente de Jetty, una recuperación puede dar como resultado &quot;No se puede recibir respuesta del servidor remoto&quot; después de esperar a que se agote el tiempo de espera de la solicitud.
 
-Si utiliza Dispatcher 4.1.6 o posterior, se solucionará este problema.
+Usar Dispatcher 4.1.6 o posterior resolverá este problema.
 
 ### No se puede acceder a la publicación de foro después de actualizar desde CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
-Si se creó un foro en CQ5.4 y se publicaron temas, y luego el sitio se actualizó a AEM 5.6.1 o posterior, intentar ver las publicaciones existentes puede resultar en un error en la página:
+AEM Si se crea un foro sobre CQ 5.4 y se publican temas y, a continuación, el sitio se actualiza a la versión 5.6.1 o posterior de, intentar ver las publicaciones existentes puede provocar un error en la página:
 
-Carácter de patrón no válido &#39;a&#39; No se puede servir la solicitud a `/content/demoforums/forum-test.html` en este servidor y los registros contienen lo siguiente:
+Carácter de patrón no válido &#39;a&#39; No se puede entregar la solicitud a `/content/demoforums/forum-test.html` en este servidor y los registros contienen lo siguiente:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -40,32 +40,32 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.call(DefaultSlingScri
 at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScript.java:171)
 ```
 
-El problema es que la cadena de formato para com.day.cq.commons.date.RelativeTimeFormat se cambió entre 5.4 y 5.5 de forma que ya no se acepta la &quot;a&quot; para &quot;ago&quot;.
+El problema es que la cadena de formato para com.day.cq.commons.date.RelativeTimeFormat se cambió entre 5.4 y 5.5, de modo que ya no se acepta la &quot;a&quot; para &quot;ago&quot;.
 
 Por lo tanto, cualquier código que utilice la API RelativeTimeFormat() tendría que cambiar:
 
 * De: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * A: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-El error es diferente al crear y publicar. Al autor, falla silenciosamente y simplemente no muestra los temas del foro. Al publicar, aparece el error en la página.
+El error es diferente en creación y publicación. En el autor, falla silenciosamente y simplemente no muestra los temas del foro. En la publicación, genera el error de la página.
 
 Consulte la [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API para obtener más información.
 
-## Preocupaciones comunes {#common-concerns}
+## Inquietudes comunes {#common-concerns}
 
-### Advertencia en registros: Manillares obsoletos {#warning-in-logs-handlebars-deprecated}
+### Advertencia en los registros: Handlebars obsoleto {#warning-in-logs-handlebars-deprecated}
 
-Durante el inicio (no el primero, pero cada uno después de eso) se puede ver la siguiente advertencia en los registros:
+Durante el inicio (no el primero, sino todos los posteriores), se puede ver la siguiente advertencia en los registros:
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` se ha reemplazado por `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Esta advertencia se puede ignorar de forma segura como `jknack.handlebars.Handlebars`, utilizado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene con su propia utilidad de ayuda para i18n. Al inicio, se reemplaza por un AEM específico [Ayuda de i18n](handlebars-helpers.md#i-n). Esta advertencia la genera la biblioteca de terceros para confirmar la anulación de un asistente existente.
+Esta advertencia se puede ignorar de forma segura como `jknack.handlebars.Handlebars`, utilizado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), viene con su propia utilidad de ayuda i18n. AEM En el inicio, se reemplaza con un específico de la [i18n helper](handlebars-helpers.md#i-n). Esta advertencia la genera la biblioteca de terceros para confirmar la anulación de un asistente existente.
 
 ### Advertencia en registros: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
-La publicación de varios temas del foro de Comunidades sociales puede resultar en enormes cantidades de registros de advertencia e información del proceso OakResourceListenerOsgiEventQueue.
+La publicación de una serie de temas de foros de comunidades sociales puede dar como resultado enormes cantidades de registros de advertencia e información de OakResourceListener processOsgiEventQueue.
 
-Estas advertencias se pueden ignorar con seguridad.
+Estas advertencias se pueden ignorar sin problemas.
 
 ```xml
 23.04.2014 14:21:18.900 *WARN* [pool-5-thread-3] org.apache.sling.jcr.resource.internal.OakResourceListener processOsgiEventQueue: Resource at /var/search-collections/ugc-sc/_m.frq/jcr:content not found, which is not expected for an added or modified node
@@ -76,9 +76,9 @@ Estas advertencias se pueden ignorar con seguridad.
 23.04.2014 14:21:18.990 *WARN* [pool-5-thread-3] org.apache.sling.jcr.resource.internal.OakResourceListener processOsgiEventQueue: Resource at /var/replication/data/1f799fb4-0aeb-4660-aadb-705657f16048/b9/b91f1690-87e8-41d8-a78e-cd2259f837c8/jcr:content not found, which is not expected for an added or modified node
 ```
 
-### Error en registros: NoClassDefFoundError para IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
+### Error en los registros: NoClassDefFoundError para IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-La actualización de AEM 5.6.1 GA a la última cq-socialcommunities-pkg-1.4.x o a la AEM 6.0 da como resultado errores en el archivo de registro durante el inicio para una condición que se resuelva como se demuestra por el error que no se ve al reiniciar.
+AEM AEM Actualizar la versión 5.6.1 de GA a la última versión cq-socialcommunities-pkg-1.4.x o a la versión 6.0 resulta en errores en el archivo de registro durante el inicio para una condición que se resolverá como se evidencia por el error que no se ve al reiniciar.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException

@@ -15,7 +15,7 @@ exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '816'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -125,7 +125,7 @@ Para las suscripciones de Communities, es posible habilitar o deshabilitar la ca
 
 * **[!UICONTROL Nombre]**
 
-   *(Requerido)* `subscriptions-email`. No Editar.
+   *(Obligatorio)* `subscriptions-email`. No Editar.
 
 * **[!UICONTROL Crear entrada a partir del correo electrónico de respuesta]**
 

@@ -1,5 +1,5 @@
 ---
-title: Actualización del contenido mediante las API de AEM Asset
+title: Actualización del contenido mediante las API de AEM Assets
 description: En esta parte del recorrido para desarrolladores de contenido de AEM sin encabezado, descubra cómo utilizar la API de REST para acceder y actualizar el contenido de sus fragmentos de contenido.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
@@ -9,7 +9,7 @@ ht-degree: 92%
 
 ---
 
-# Actualización del contenido mediante las API de AEM Asset {#update-your-content}
+# Actualización del contenido mediante las API de AEM Assets {#update-your-content}
 
 En esta parte del [Recorrido para desarrolladores de contenido de AEM sin encabezado](overview.md), descubra cómo utilizar la API de REST para acceder y actualizar el contenido de los fragmentos de contenido.
 
@@ -27,7 +27,7 @@ Este artículo se basa en estos aspectos básicos para que pueda comprender cóm
 
 * **Audiencia**: avanzadas
 * **Objetivo**: aprender a utilizar la API de REST para acceder y actualizar el contenido de los fragmentos de contenido.
-   * Presentar la API HTTP de AEM Asset.
+   * Presentar la API HTTP de AEM Assets.
    * Presentar y comentar la compatibilidad de los fragmentos de contenido en la API.
    * Indicar detalles de la API.
 
@@ -298,16 +298,16 @@ El uso se realiza mediante:
 
 `DELETE /{cfParentPath}/{cfName}`
 
-Para obtener más información sobre el uso de la API REST de AEM Asset, puede hacer referencia a lo siguiente:
+Para obtener más información sobre el uso de la API REST de AEM Assets, puede hacer referencia a lo siguiente:
 
 * API HTTP de Adobe Experience Manager Assets (recursos adicionales)
-* Compatibilidad con los fragmentos de contenido en la API HTTP de AEM Asset (recursos adicionales)
+* Compatibilidad con los fragmentos de contenido en la API HTTP de AEM Assets (recursos adicionales)
 
 ## Siguientes pasos {#whats-next}
 
 Ahora que ha completado esta parte del recorrido para desarrolladores de AEM sin encabezado, debería poder hacer lo siguiente:
 
-* Comprender los conceptos básicos de la API HTTP de AEM Asset.
+* Comprender los conceptos básicos de la API HTTP de AEM Assets.
 * Comprender cómo se admiten los fragmentos de contenido en esta API.
 
 <!--

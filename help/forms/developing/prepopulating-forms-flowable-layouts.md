@@ -28,7 +28,7 @@ Rellenar previamente un formulario tiene las siguientes ventajas:
 
 * Permite al usuario ver datos personalizados en un formulario.
 * Reduce la cantidad de tiempo que el usuario escribe para rellenar un formulario.
-* Asegura la integridad de los datos teniendo control sobre dónde se colocan los datos.
+* Garantiza la integridad de los datos al tener control sobre dónde se colocan.
 
 Los dos orígenes de datos XML siguientes pueden rellenar previamente un formulario:
 

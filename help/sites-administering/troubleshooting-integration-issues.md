@@ -1,5 +1,5 @@
 ---
-title: Resolución de problemas de integración
+title: Solución de problemas de integración
 seo-title: Troubleshooting Integration Issues
 description: Obtenga información sobre cómo solucionar problemas de integración.
 seo-description: Learn how to troubleshoot integration issues.
@@ -13,11 +13,11 @@ exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1096'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
-# Resolución de problemas de integración{#troubleshooting-integration-issues}
+# Solución de problemas de integración{#troubleshooting-integration-issues}
 
 ## Sugerencias generales de resolución de problemas {#general-troubleshooting-tips}
 

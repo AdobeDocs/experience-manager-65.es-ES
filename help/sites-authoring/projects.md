@@ -1,7 +1,7 @@
 ---
 title: Proyectos
 seo-title: Projects
-description: Los proyectos permiten agrupar los recursos en una entidad cuyo entorno común compartido facilita la administración de los proyectos.
+description: Los proyectos le permiten agrupar recursos en una entidad cuyo entorno común compartido facilita la administración de sus proyectos.
 seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
 uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,20 +13,20 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 source-git-commit: 85e993000c016240c0fbf398ec8192990e60eee6
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 37%
+ht-degree: 14%
 
 ---
 
 
 # Proyectos {#projects}
 
-Los proyectos le permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de los proyectos. Los tipos de recursos que puede asociar con un proyecto se mencionan en AEM como Mosaicos. Los mosaicos pueden incluir información sobre el proyecto y el equipo, los recursos, los flujos de trabajo y otro tipo de información, tal como se describe detalladamente en [Mosaicos del proyecto.](#project-tiles)
+Los proyectos permiten agrupar los recursos en una entidad. Un entorno común y compartido facilita la administración de sus proyectos. AEM Los tipos de recursos que puede asociar a un proyecto se denominan en la sección Tipos de recursos (mosaicos), que se denominan en la sección Tipos de recursos (mosaicos) de los que se puede hacer referencia en la sección. Los mosaicos pueden incluir información sobre el proyecto y el equipo, los recursos, los flujos de trabajo y otro tipo de información, tal como se describe detalladamente en [Mosaicos del proyecto.](#project-tiles)
 
 Como usuario, puede:
 
 * Creación y eliminación de proyectos
 * Asociar carpetas de contenido y recursos a un proyecto
-* Quitar vínculos de contenido del proyecto
+* Eliminar vínculos de contenido del proyecto
 
 ## Requisitos de acceso {#access-requirements}
 
@@ -38,7 +38,7 @@ La forma más sencilla de hacerlo es dar el **projects-users** acceso de lectura
 
 ## Consola Proyectos {#projects-console}
 
-La consola Proyectos permite acceder a los proyectos en AEM y administrarlos.
+AEM En la consola Proyectos es donde puede acceder a sus proyectos y administrarlos dentro de su propio grupo de trabajo de proyectos de.
 
 ![La consola Proyectos](assets/screen-shot_2019-03-05at125110.png)
 
@@ -106,15 +106,15 @@ Haga clic en el botón de puntos suspensivos en la parte inferior derecha de cua
 
 ### Assets {#assets}
 
-En el mosaico **Recursos**, puede reunir todos los recursos que utilice para un proyecto determinado.
+En el **Assets** mosaico, puede recopilar todos los recursos que utiliza para un proyecto en particular.
 
 ![Mosaico de recursos](assets/project-tile-assets.png)
 
-Los recursos se cargan directamente en el mosaico.
+Puede cargar recursos directamente en el mosaico.
 
 ### Colecciones de recursos {#asset-collections}
 
-Del mismo modo que con los recursos, puede agregar [colecciones de recursos](/help/assets/manage-collections.md) directamente al proyecto. Puede definir colecciones de recursos.
+De forma similar a los recursos, puede agregar [colecciones de recursos](/help/assets/manage-collections.md) directamente en el proyecto. Las colecciones se definen en Assets.
 
 ![Mosaico de colección de recursos](assets/project-tile-asset-collection.png)
 
@@ -141,7 +141,7 @@ Puede asignar al vínculo un nombre fácil de reconocer, así como cambiar la mi
 
 ### Información del proyecto {#project-info}
 
-El **Información del proyecto** El mosaico proporciona información general sobre el proyecto, incluida una descripción, el estado del proyecto (inactivo o activo), una fecha de vencimiento y los miembros. Además, puede añadir una miniatura de proyecto que se muestra en la página principal Proyectos.
+El **Información del proyecto** El mosaico proporciona información general sobre el proyecto, incluida una descripción, el estado del proyecto (inactivo o activo), una fecha de vencimiento y los miembros. Además, puede agregar una miniatura de proyecto, que se mostrará en la página principal Proyectos.
 
 ![Mosaico de información del proyecto](assets/project-tile-info.png)
 
@@ -155,7 +155,7 @@ Para configurar la traducción, consulte el documento [Creación de proyectos de
 
 ### Equipo {#team}
 
-En este mosaico puede especificar los miembros del equipo del proyecto. Durante la edición puede introducir el nombre del miembro del equipo y asignar la función de usuario.
+En este mosaico, puede especificar los miembros del equipo del proyecto. Al editar, puede introducir el nombre del miembro del equipo y asignar la función del usuario.
 
 ![Mosaico de equipo](assets/project-tile-team.png)
 
@@ -163,7 +163,7 @@ Puede añadir y eliminar miembros en el equipo. Además, puede editar la [funci�
 
 ### Páginas de destino {#landing-pages}
 
-El mosaico **** Páginas de aterrizaje permite solicitar una nueva página de aterrizaje.
+El **Páginas de aterrizaje** El mosaico permite solicitar una nueva página de aterrizaje.
 
 ![Mosaico de página de aterrizaje](assets/project-tile-landing.png)
 
@@ -171,11 +171,11 @@ Este flujo de trabajo se describe en el documento[Cree un flujo de trabajo de p�
 
 ### Correos electrónicos {#emails}
 
-El mosaico **Correo electrónico** permite administrar las solicitudes por correo electrónico. Se inicia el **Solicitud de correo electrónico** flujo de trabajo.
+El **Correos electrónicos** Este mosaico le ayuda a administrar solicitudes de correo electrónico. Se inicia el **Solicitud de correo electrónico** flujo de trabajo.
 
 ![Mosaico de correo electrónico](assets/project-tile-email.png)
 
-Puede obtener más información en [Flujo de trabajo de solicitud de correo electrónico.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow) 
+Encontrará más información en la [Flujo de trabajo Solicitar correo electrónico.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
 ### Flujos de trabajo {#workflows}
 
@@ -185,7 +185,7 @@ Puede iniciar flujos de trabajo para el proyecto. Si se está ejecutando algún 
 
 En función del proyecto que cree, hay diferentes flujos de trabajo disponibles.
 
-Estos se describen en [Uso de flujos de trabajo del proyecto.](/help/sites-authoring/projects-with-workflows.md) 
+Estas se describen en [Uso de flujos de trabajo de proyecto.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Lanzamientos {#launches}
 
@@ -195,7 +195,7 @@ El **Lanzamientos** El mosaico muestra todos los lanzamientos que se han solicit
 
 ### Tareas {#tasks}
 
-En Tareas puede supervisar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Las tareas se describen detalladamente en [Uso de tareas](/help/sites-authoring/task-content.md).
+Las tareas permiten monitorizar el estado de cualquier tarea relacionada con el proyecto, incluidos los flujos de trabajo. Las tareas se describen detalladamente en [Uso de tareas](/help/sites-authoring/task-content.md).
 
 ![Mosaico Tareas](assets/project-tile-tasks.png)
 
@@ -217,11 +217,11 @@ Las diferentes funciones de usuario se definen en la plantilla de proyecto y se 
 1. Permisos: las funciones de usuario se encuentran en una de las tres categorías enumeradas: observador, editor, propietario. Por ejemplo, un fotógrafo o redactor tendrá los mismos privilegios que un editor. Los permisos determinan lo que un usuario puede hacer con el contenido de un proyecto.
 1. Flujos de trabajo: los flujos de trabajo determinan a quién se asignan las tareas de un proyecto. Las tareas se pueden asociar a una función del proyecto. Por ejemplo, se puede asignar una tarea a los fotógrafos de modo que todos los miembros del equipo que tengan la función de fotógrafo obtengan la tarea.
 
-Todos los proyectos admiten las siguientes funciones predeterminadas para que pueda administrar los permisos de seguridad y control.
+Todos los proyectos admiten las siguientes funciones predeterminadas para permitirle administrar los permisos de seguridad y control.
 
 | Función | Descripción | Permisos | Miembros del grupo |
 |---|---|---|---|
-| Observador | Un usuario con esta función puede ver los detalles de un proyecto, incluido el estado del proyecto. | Permisos de lectura de un proyecto | grupo `workflow-users` |
+| Observador | Un usuario con esta función puede ver los detalles del proyecto, incluido su estado. | Permisos de solo lectura en un proyecto | grupo `workflow-users` |
 | Editor | Un usuario con esta función puede cargar y editar el contenido de un proyecto. | Acceso de lectura y escritura en un proyecto, metadatos asociados y recursos relacionados<br>Privilegios para cargar una lista de tomas, una sesión fotográfica, y revisar y aprobar recursos<br>Permiso de escritura en `/etc/commerce`<br>Modificación del permiso en un proyecto específico | grupo `workflow-users` |
 | Propietario | Un usuario con esta función puede crear un proyecto, iniciar el trabajo en un proyecto y mover los recursos aprobados a la carpeta de producción. El propietario también puede realizar y visualizar todas las demás tareas del proyecto. | Permiso de escritura en `/etc/commerce` | `dam-users` grupo para poder crear un proyecto<br>`project-administrators` para poder crear un proyecto y mover recursos |
 
@@ -242,4 +242,4 @@ Para obtener más información sobre el uso de proyectos, consulte los siguiente
 * [Administración de proyectos](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Uso de tareas](/help/sites-authoring/task-content.md)
 * [Uso de flujos de trabajo de proyecto](/help/sites-authoring/projects-with-workflows.md)
-* [Creative Project e integración PIM](/help/sites-authoring/managing-product-information.md)
+* [Integración de Creative Project y PIM](/help/sites-authoring/managing-product-information.md)

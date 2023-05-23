@@ -679,7 +679,7 @@ Cree dos páginas ubicadas debajo de la página Productos. Para cada página, qu
       * Nombre: `jcr:description`
       * Tipo: `String`
       * Valor: `This is a description of the Product 1!.`
-   1. Haga clic en **Agregar**.
+   1. Clic **Añadir**.
    1. En el **Propiedades** , cree otra propiedad con los siguientes valores:
 
       * Nombre: date
@@ -698,7 +698,7 @@ Cree dos páginas ubicadas debajo de la página Productos. Para cada página, qu
       * Nombre: jcr:description
       * Tipo: cadena
       * Valor: Esta es una descripción del producto 2.
-   1. Haga clic en **Agregar**.
+   1. Clic **Añadir**.
    1. En los mismos cuadros de texto, reemplace los valores anteriores por los siguientes valores:
 
       * Nombre: date
@@ -1199,7 +1199,7 @@ En esta sección, se utiliza un nodo cq:editConfig para permitir arrastrar recur
 | Nombre | Tipo | Valor  |
 |---|---|---|
 | aceptar | Cadena | image/(gif | jpeg | png) |
-| grupos | Cadena | media |
+| grupos | Cadena | medios |
 | propertyName | Cadena | ./imageReference |
 
 ![chlimage_1-54](assets/chlimage_1-54.png)

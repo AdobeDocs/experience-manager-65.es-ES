@@ -41,7 +41,7 @@ AEM Para ver las recomendaciones para los clientes que actualizan a la versión 
 
 Esta es una lista de funcionalidades que ofrece el clásico Administrador del sitio de IU (`/siteadmin`) tiene y el estado en la IU táctil (`/sites.html`).
 
-| Función | Estado | Comentar |
+| Funcionalidad | Estado | Comentar |
 |--- |--- |--- |
 | Navegar por jerarquía del sitio | Completar | AEM.4 introdujo un [vista de árbol de contenido](/help/sites-authoring/basic-handling.md#content-tree). |
 | Iniciar flujo de trabajo | Completar |  |
@@ -79,7 +79,7 @@ Esta es una lista de funcionalidades que ofrece el clásico Administrador del si
 
 Esta es una lista de funcionalidades del editor de páginas de IU clásico (`/cf#`) tiene y el estado en la opción táctil (`/editor.html`).
 
-| Función | Estado | Comentar |
+| Funcionalidad | Estado | Comentar |
 |--- |--- |--- |
 | Editar páginas web | Completar |  |
 | Editar páginas web móviles | Completar |  |
@@ -126,7 +126,7 @@ Esta es una lista de funcionalidades del editor de páginas de IU clásico (`/cf
 
 Esta es una lista de funcionalidades que tienen la IU clásica del Editor de texto, tablas e imágenes y el estado en la IU táctil.
 
-| Función | Estado | Comentar |
+| Funcionalidad | Estado | Comentar |
 |--- |--- |--- |
 | Editor de texto enriquecido | Completar | Se puede utilizar in situ, en cuadros de diálogo y en pantalla completa. |
 | Habilitar/deshabilitar complementos RTE | Completar | Se puede realizar utilizando la variable [Editor de plantillas](/help/sites-authoring/templates.md). |
@@ -162,7 +162,7 @@ Esta es una lista de funcionalidades que tienen la IU clásica del Editor de tex
 
 Esta es una lista de varias herramientas que tiene la IU clásica y el estado de la IU táctil.
 
-| Función | Estado | Comentar |
+| Funcionalidad | Estado | Comentar |
 |--- |--- |--- |
 | Administración de tareas | Reemplazado | 6.0 presentó Proyectos y tareas. |
 | Bandeja de entrada de flujo | Completar |  |

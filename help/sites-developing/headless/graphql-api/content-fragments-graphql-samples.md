@@ -356,14 +356,14 @@ Si crea una nueva variación, denominada “Centro de Berlín” (`berlin_centre
 }
 ```
 
-### Consulta de muestra: nombres de todas las ciudades Etiquetado como pausas {#sample-names-all-cities-tagged-city-breaks}
+### Consulta de muestra: nombres de todas las ciudades Etiquetado como City Breaks {#sample-names-all-cities-tagged-city-breaks}
 
 Si:
 
-* crear una variedad de etiquetas con el nombre `Tourism` : `Business`, `City Break`, `Holiday`
-* y asignarlas a la variación principal de varias `City` instancias
+* cree una variedad de etiquetas, con el nombre `Tourism` : `Business`, `City Break`, `Holiday`
+* y asignarlas a la variación Principal de varios `City` instances
 
-A continuación, puede utilizar una consulta para devolver detalles de la variable `name` y `tags`de todas las entradas etiquetadas como City Breaks en la `city`esquema.
+A continuación, puede utilizar una consulta para devolver detalles de la `name` y `tags`de todas las entradas etiquetadas como City Breaks en la `city`esquema.
 
 **Consulta de muestra**
 
@@ -1323,7 +1323,7 @@ Esta consulta busca lo siguiente:
 
 ### Consulta de muestra para un fragmento de contenido anidado: tipo de modelo múltiple {#sample-wknd-nested-fragment-multiple-model}
 
-#### Tipo de modelo al que se hace referencia única
+#### Tipo de modelo referenciado único
 
 Esta consulta busca lo siguiente:
 
@@ -1332,7 +1332,7 @@ Esta consulta busca lo siguiente:
 
 >[!NOTE]
 >
->El campo `fragments` tiene el tipo de datos `fragment-reference`, con el modelo `Article` seleccionados. Entregas de consultas `fragments` como una matriz de `[Article]`.
+>El campo `fragments` tiene el tipo de datos `fragment-reference`, con el modelo `Article` seleccionados. La consulta ofrece `fragments` como una matriz de `[Article]`.
 
 ```graphql
 {
@@ -1347,7 +1347,7 @@ Esta consulta busca lo siguiente:
 }
 ```
 
-#### Varios tipos de modelo a los que se hace referencia
+#### Varios tipos de modelos referenciados
 
 Esta consulta busca lo siguiente:
 
@@ -1356,7 +1356,7 @@ Esta consulta busca lo siguiente:
 
 >[!NOTE]
 >
->El campo `fragments` tiene el tipo de datos `fragment-reference`, con los modelos `Article` y `Adventure` seleccionados. Entregas de consultas `fragments` como una matriz de `[AllFragmentModels]`, al que se hace referencia con el tipo de unión.
+>El campo `fragments` tiene el tipo de datos `fragment-reference`, con los modelos `Article` y `Adventure` seleccionados. La consulta ofrece `fragments` como una matriz de `[AllFragmentModels]`, a la que se hace referencia con el tipo de unión.
 
 ```graphql
 {
@@ -1561,7 +1561,7 @@ Esta consulta busca lo siguiente:
 }
 ```
 
-### Consulta de ejemplo para varios fragmentos de contenido y sus variaciones de un modelo determinado {#sample-wknd-multiple-fragment-variations-given-model}
+### Consulta de muestra para varios fragmentos de contenido y sus variaciones de un modelo determinado {#sample-wknd-multiple-fragment-variations-given-model}
 
 Esta consulta busca lo siguiente:
 
@@ -1588,11 +1588,11 @@ query {
 }
 ```
 
-### Consulta de ejemplo para variaciones de fragmento de contenido de un modelo determinado que tiene una etiqueta específica adjunta{#sample-wknd-fragment-variations-given-model-specific-tag}
+### Consulta de muestra para variaciones de fragmentos de contenido de un modelo determinado que tienen una etiqueta específica adjunta{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 Esta consulta busca lo siguiente:
 
-* para fragmentos de contenido de tipo `article` con una o más variaciones que tengan la etiqueta `WKND : Activity / Hiking`
+* para fragmentos de contenido de tipo `article` con una o más variaciones que tienen la etiqueta `WKND : Activity / Hiking`
 
 **Consulta de muestra**
 

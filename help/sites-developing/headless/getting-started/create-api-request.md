@@ -1,6 +1,6 @@
 ---
 title: Acceso y entrega de fragmentos de contenido Guía de inicio rápido sin encabezado
-description: Aprenda a utilizar AEM API de REST de Assets para administrar fragmentos de contenido y la API de GraphQL para ofrecer contenido de fragmentos de contenido sin objetivos.
+description: AEM Aprenda a utilizar la API de REST de Recursos de la aplicación para administrar fragmentos de contenido y la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 67%
 
 # Acceso y entrega de fragmentos de contenido Guía de inicio rápido sin encabezado {#accessing-delivering-content-fragments}
 
-Aprenda a utilizar AEM API de REST de Assets para administrar fragmentos de contenido y la API de GraphQL para ofrecer contenido de fragmentos de contenido sin objetivos.
+AEM Aprenda a utilizar la API de REST de Recursos de la aplicación para administrar fragmentos de contenido y la API de GraphQL para la entrega sin encabezado de contenido de fragmentos de contenido.
 
 ## ¿Qué son las API de REST de GraphQL y Assets? {#what-are-the-apis}
 
@@ -27,7 +27,7 @@ El resto de esta guía se centrará en el acceso a GraphQL y la entrega de fragm
 
 Los arquitectos de la información deberán diseñar consultas para sus puntos de conexión de canal para poder entregar contenido. Por lo general, estas consultas solo tendrán que considerarse una vez por punto de conexión y modelo. Para los fines de esta guía de introducción solo tendremos que crear una.
 
-1. Inicie sesión en AEM y acceda a la [Interfaz de GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
+1. AEM Inicie sesión en la aplicación y acceda a la [Interfaz de GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Por ejemplo: `http://<host>:<port>/aem/graphiql.html`.
 
 1. El de GraphiQL es un editor de consultas en el explorador para GraphQL. Puede utilizarlo para crear consultas, recuperar fragmentos de contenido y entregarlos sin encabezado como JSON.
@@ -58,13 +58,13 @@ Los arquitectos de la información deberán diseñar consultas para sus puntos d
    ![GraphiQL query](assets/graphiql-query.png)
 -->
 
-1. Haga clic en el **Ejecutar consulta** (flecha derecha) o utilice el icono `Ctrl-Enter` teclas de acceso directo y los resultados se muestran como JSON en el panel derecho.
+1. Haga clic en **Ejecutar consulta** (flecha derecha) o utilice el icono `Ctrl-Enter` y los resultados se muestran como JSON en el panel derecho.
    ![Resultados de GraphiQL](assets/graphiql-results.png)
 
 1. Hacer clic:
-   * **Documentos** en la parte superior derecha de la página para mostrar documentación en contexto que le ayude a crear sus consultas que se adapten a sus propios modelos.
-   * **Historial** en la barra de herramientas superior para mostrar consultas anteriores.
-   * **Guardar como** y **Guardar** para guardar las consultas, después de lo cual puede enumerarlas y recuperarlas del **Consultas persistentes** panel y **Publicación**.
+   * **Documentos** en la parte superior derecha de la página para mostrar la documentación en contexto que le ayudará a crear sus consultas, que se adaptan a sus propios modelos.
+   * **Historial** en la barra de herramientas superior para mostrar las consultas anteriores.
+   * **Guardar como** y **Guardar** para guardar las consultas, tras lo cual puede enumerarlas y recuperarlas desde el **Consultas persistentes** panel y **Publish**.
       ![Documentación de GraphiQL](assets/graphiql-documentation.png)
 
 GraphQL permite consultas estructuradas que pueden dirigirse no solo a conjuntos de datos específicos u objetos de datos individuales, sino que también pueden proporcionar elementos específicos de los objetos, resultados anidados, compatibilidad con variables de consulta y mucho más.
@@ -75,9 +75,9 @@ GraphQL puede evitar las solicitudes de API iterativas, así como el exceso de e
 
 ¡Eso es todo! Ahora tiene una comprensión básica de la administración de contenido sin encabezado en AEM. Por supuesto, hay muchos más recursos en los que puede profundizar para comprender las funciones disponibles.
 
-* **[Explorador de configuración](create-configuration.md)** - Para obtener más información sobre el Explorador de configuración de AEM
+* **[Explorador de configuración](create-configuration.md)** AEM : Para obtener más información sobre el explorador de configuración de la
 * **[Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md)**: para obtener más información acerca de la creación y administración de fragmentos de contenido
-* **[GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)** para obtener más información sobre el uso de GraphiQL IDE
+* **[IDE de GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)** para obtener más información sobre el uso del IDE de GraphiQL
 * **[Consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md)** para obtener más información sobre las consultas persistentes
 * **[Compatibilidad con fragmentos de contenido en la API HTTP de AEM Assets](/help/assets/assets-api-content-fragments.md)**: para obtener más información sobre el acceso al contenido de AEM directamente a través de la API HTTP, mediante las operaciones CRUD (Crear, Leer, Actualizar, Eliminar)
 * **[API de GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)**: para obtener más información sobre cómo enviar fragmentos de contenido sin encabezado

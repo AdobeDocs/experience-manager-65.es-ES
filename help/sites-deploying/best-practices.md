@@ -13,28 +13,28 @@ exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 16%
+ht-degree: 9%
 
 ---
 
 # Implementación de prácticas recomendadas{#deploying-best-practices}
 
-AEM Las prácticas recomendadas sobre la implementación describen cómo implementar o mantener los recursos de la manera más eficiente y eficaz posible. Esta lista, cada vez más extensa, incluye una gran variedad de áreas de AEM.
+AEM Las prácticas recomendadas sobre la implementación describen cómo implementar o mantener los recursos de la manera más eficiente y eficaz posible. AEM Esta creciente lista de temas incluye una variedad de áreas en el área de la.
 
 Las siguientes áreas tienen documentación disponible sobre la implementación y el mantenimiento de las prácticas recomendadas y recomendaciones:
 
 * [OAK](#oak)
 * [Communities](#communities)
 * [IU](#ui)
-* [Actuación](#performance)
+* [Rendimiento](#performance)
 
 Para conocer las prácticas recomendadas sobre la administración, el desarrollo o la creación, consulte una de las siguientes opciones:
 
-* [Prácticas recomendadas sobre administración](/help/sites-administering/administer-best-practices.md)
-* [Prácticas recomendadas sobre desarrollo](/help/sites-developing/best-practices.md)
+* [Prácticas recomendadas de administración](/help/sites-administering/administer-best-practices.md)
+* [Desarrollo de prácticas recomendadas](/help/sites-developing/best-practices.md)
 * [Prácticas recomendadas de creación](/help/sites-authoring/best-practices.md)
 
-Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
+En las tablas siguientes se describen y vinculan documentos específicos.
 
 ## OAK {#oak}
 
@@ -86,7 +86,7 @@ Las prácticas recomendadas en la interfaz de usuario se describen aquí:
 
 AEM Actualmente, tiene dos interfaces de usuario: la clásica y la táctil en la misma versión. Por lo tanto, los clientes deben tomar una decisión sobre cuál utilizar durante la implementación del proyecto. El objetivo de este documento es ayudar a encontrar la opción correcta.
 
-## Actuación {#performance}
+## Rendimiento {#performance}
 
 Las prácticas recomendadas en cuanto a rendimiento se enumeran a continuación:
 

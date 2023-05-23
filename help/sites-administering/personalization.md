@@ -13,7 +13,7 @@ exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
 source-git-commit: d6b595b6b5477b5cad662e219f1abd483491897f
 workflow-type: tm+mt
 source-wordcount: '1686'
-ht-degree: 16%
+ht-degree: 2%
 
 ---
 
@@ -46,7 +46,7 @@ En otras palabras, el contenido debe, de alguna manera, depender del usuario. Si
 
 La personalización puede ser:
 
-#### Explícita {#explicit}
+#### Explícito {#explicit}
 
 * Personalización: mediante la cual el usuario realiza selecciones entre una selección de fuentes de contenido.
 
@@ -94,7 +94,7 @@ Las siguientes son las razones por las que se debe utilizar la personalización:
 
 Al utilizar la personalización, tenga en cuenta lo siguiente:
 
-#### Actuación {#performance}
+#### Rendimiento {#performance}
 
 * Naturalmente, el análisis y la evaluación adicionales tienen un impacto en el rendimiento. Sin embargo, los métodos utilizados son muy sofisticados y pueden optimizarse para minimizar el impacto.
 
@@ -140,29 +140,29 @@ AEM Se proporcionan varios componentes con funciones para la personalización de
 
 | Título en Sidekick | Función |
 |---|---|
-| Campo de contraseña activado | Solicita una contraseña y la confirmación de la misma. |
+| Campo de contraseña activado | Solicita la contraseña y la confirmación de la misma. |
 | Registro de inicio de sesión combinado | Permite al usuario iniciar sesión en una cuenta existente o registrarse para obtener una nueva cuenta. |
-| Campo de dirección de Forms | Campo complejo que permite la introducción de una dirección internacional. |
+| Campo de dirección de Forms | Campo complejo que permite la entrada de una dirección internacional. |
 | Forms Begin | Inicia una definición de formulario |
-| Captcha de Forms | Campo que consta de una palabra alfanumérica que se actualiza automáticamente. El componente captcha protege a los sitios web de los robots. |
-| Grupo de casillas de verificación Forms | Varios elementos organizados en una lista y precedidos por casillas de verificación. Los usuarios pueden activar varias casillas de verificación. |
-| Lista desplegable de Forms | Varios elementos organizados en una lista desplegable. El conmutador Selección múltiple especifica si se pueden seleccionar varios elementos de la lista. |
+| Captcha de Forms | Campo formado por una palabra alfanumérica que se actualiza automáticamente. El componente captcha protege los sitios web contra los bots. |
+| Grupo de casillas de verificación Forms | Varios elementos organizados en una lista y precedidos de casillas de verificación. Los usuarios pueden seleccionar varias casillas de verificación. |
+| Lista desplegable de Forms | Varios elementos organizados en una lista desplegable. El modificador Selección múltiple especifica si se pueden seleccionar varios elementos de la lista. |
 | Fin de Forms | Termina la definición del formulario. |
 | Carga de archivo de Forms | Elemento de carga que permite al usuario cargar un archivo en el servidor. |
-| Campo oculto de Forms | Este campo no se muestra al usuario. Se puede emplear para transportar un valor al cliente y devolverlo al servidor. Este campo no debe tener restricciones. |
+| Campo oculto de Forms | Este campo no se muestra al usuario. Se puede utilizar para transportar un valor al cliente y de vuelta al servidor. Este campo no debe tener restricciones. |
 | Botón de imagen de Forms | Botón de envío adicional para el formulario que se procesa como imagen. |
-| Campo de contraseña de Forms | Igual que un campo de texto pero solo se permite una sola línea y la introducción de texto por parte del usuario no está visible en el campo. |
-| Grupo de radio de Forms | Varios elementos organizados en una lista y precedidos por un botón de opción. Los usuarios deben seleccionar únicamente un botón de opción. |
-| Botón Enviar de Forms | Botón de envío adicional para el formulario donde el título se muestra como texto en el botón. |
+| Campo de contraseña de Forms | Es igual que el campo de texto, pero solo se permite una línea y la entrada de texto del usuario no es visible en el campo. |
+| Grupo de radio de Forms | Varios elementos organizados en una lista precedida por un botón de opción. Los usuarios solo deben seleccionar un botón de opción. |
+| Botón Enviar de Forms | Botón de envío adicional para el formulario en el que el título se muestra como texto en el botón. |
 | Campo de texto de Forms | Campo de texto que permite a los usuarios introducir información. |
 | My Gadgets | Permite incluir uno de una selección de gadgets disponibles. |
-| Fotografía de avatar de perfil | Permite la introducción de una fotografía de avatar. |
-| Nombre detallado de perfil | Introducción de la información de nombre, incluyendo elementos como título, segundo nombre y sufijo, si es necesario. |
+| Fotografía de avatar de perfil | Permite la entrada de una fotografía de avatar. |
+| Nombre detallado de perfil | Entrada de detalles del nombre, incluidos elementos como título, segundo nombre y sufijo si es necesario. |
 | Nombre para mostrar en el perfil | Nombre para mostrar. |
 | Correo electrónico del perfil | Introducción de una dirección de correo electrónico. |
-| Género de perfil | Permite la introducción del género. |
-| Número de teléfono principal del perfil | Permite la introducción de un número de teléfono. |
-| URL principal del perfil | Permite la introducción de una dirección URL. |
+| Género de perfil | Permite la entrada del sexo. |
+| Número de teléfono principal del perfil | Permite introducir un número de teléfono. |
+| URL principal del perfil | Permite introducir una dirección URL. |
 | Propiedad Texto general de perfil | Propiedades del perfil. |
 | Inicio de sesión | Permite enviar un nombre de usuario y una contraseña al iniciar sesión. |
 | Cerrar sesión | Indica el usuario que ha iniciado sesión actualmente y le proporciona un vínculo para cerrar la sesión. |

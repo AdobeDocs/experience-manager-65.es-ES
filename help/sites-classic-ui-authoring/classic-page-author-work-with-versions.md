@@ -1,6 +1,6 @@
 ---
 title: Uso de versiones de página
-description: Al generar una versión se crea una "instantánea" de una página en un punto específico en el tiempo.
+description: El control de versiones crea una "captura de pantalla" de una página en un momento específico.
 uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,103 +18,103 @@ ht-degree: 21%
 
 # Uso de versiones de página  {#working-with-page-versions}
 
-Al generar una versión se crea una &quot;instantánea&quot; de una página en un punto específico en el tiempo. Con el control de versiones, puede realizar las siguientes acciones:
+El control de versiones crea una &quot;captura de pantalla&quot; de una página en un momento específico. Con el control de versiones, puede realizar las siguientes acciones:
 
 * Cree una versión de una página.
 * Restaurar una página a una versión anterior para deshacer un cambio realizado en una página, por ejemplo.
-* Compare la versión actual de una página con una versión anterior, resaltando las diferencias en el texto y las imágenes.
+* Comparar la versión actual de una página con una versión anterior con diferencias en el texto y las imágenes resaltadas.
 
 ## Creación de una nueva versión   {#creating-a-new-version}
 
 Para crear una nueva versión de una página:
 
-1. En el explorador, abra la página para la que desee crear una nueva versión.
-1. En la barra de tareas, seleccione la **Versiones** y, a continuación, la pestaña **Crear versión** subpestaña .
+1. En el explorador, abra la página para la que desea crear una nueva versión.
+1. En la barra de tareas, seleccione **Versiones** y, a continuación, **Crear versión** subpestaña.
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
-1. Escriba un **Comentario** (opcional).
-1. Para establecer una etiqueta en la versión (opcional), haga clic en el botón **Más >>** y configure la variable **Etiqueta** para asignar un nombre a la versión. Si no se establece la etiqueta, la versión se incrementa automáticamente.
-1. Haga clic en **Crear versión**. Se muestra un mensaje atenuado en la página; por ejemplo: Versión 1.2 creada para: Camisas.
+1. Introduzca una **Comentario** (opcional).
+1. Para establecer una etiqueta en la versión (opcional), haga clic en **Más >>** y configure el **Etiqueta** para nombrar la versión. Si no se define la etiqueta, la versión es un número incrementado automáticamente.
+1. Clic **Crear versión**. Se muestra un mensaje en gris en la página; por ejemplo: Versión 1.2 creada para: Camisas.
 
 >[!NOTE]
 >
->Se crea una versión automáticamente cuando se activa la página.
+>Se crea automáticamente una versión cuando se activa la página.
 
-## Restaurar una versión de página desde la barra de tareas {#restoring-a-page-version-from-sidekick}
+## Restablecer una versión de página desde la barra de tareas {#restoring-a-page-version-from-sidekick}
 
 Para restaurar la página a una versión anterior:
 
-1. Abra la página para la que desee restaurar una versión anterior.
-1. En la barra de tareas, seleccione la **Versiones** y, a continuación, la pestaña **Restaurar versión** subpestaña .
+1. Abra la página para la que desea restaurar una versión anterior.
+1. En la barra de tareas, seleccione **Versiones** y, a continuación, **Restaurar versión** subpestaña.
 
    ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
 1. Seleccione la versión que desee restaurar y seleccione **Restaurar**.
 
-## Restauración de una versión de página desde la consola {#restoring-a-page-version-from-the-console}
+## Restablecer una versión de página desde la consola {#restoring-a-page-version-from-the-console}
 
-Este método se puede usar para restaurar una versión de página. También se puede usar para restaurar páginas que se hayan eliminado anteriormente:
+Este método se puede utilizar para restaurar una versión de la página. También se puede utilizar para restaurar páginas que se han eliminado anteriormente:
 
-1. En el **Sitios web** , vaya a la página que desee restaurar y selecciónela.
-1. En el menú superior, seleccione **Herramientas**, luego **Restaurar**:
+1. En el **Sitios web** , navegue hasta la página que desee restaurar y selecciónela.
+1. En el menú superior, seleccione **Herramientas**, entonces **Restaurar**:
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Selección **Restaurar versión...** enumera las versiones de los documentos de la carpeta actual. Incluso si se ha eliminado una página, se enumerará la última versión:
+1. Seleccionar **Restaurar versión...** enumera las versiones de los documentos de la carpeta actual. Aunque se haya eliminado una página, se mostrará la última versión:
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
-1. Seleccione la versión que desee restaurar y haga clic en **Restaurar**. AEM restaura las versiones (o árboles) que seleccione.
+1. Seleccione la versión que desee restaurar y haga clic en **Restaurar**. AEM restaura las versiones (o árboles) que ha seleccionado.
 
 ### Restauración de un árbol desde la consola {#restoring-a-tree-from-the-console}
 
-Este método se puede usar para restaurar una versión de página. También se puede usar para restaurar páginas que se hayan eliminado anteriormente:
+Este método se puede utilizar para restaurar una versión de la página. También se puede utilizar para restaurar páginas que se han eliminado anteriormente:
 
 1. En el **Sitios web** , vaya a la carpeta que desee restaurar y selecciónela.
-1. En el menú superior, seleccione **Herramientas**, luego **Restaurar**.
-1. Selección **Restaurar árbol...** abre el cuadro de diálogo para permitirle seleccionar el árbol que desea restaurar:
+1. En el menú superior, seleccione **Herramientas**, entonces **Restaurar**.
+1. Seleccionar **Restaurar árbol...** abre el cuadro de diálogo para que pueda seleccionar el árbol que desea restaurar:
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
-1. Haga clic en **Restaurar**. AEM restaura el árbol seleccionado.
+1. Clic **Restaurar**. AEM restaura el árbol que ha seleccionado.
 
 ## Comparación con una versión anterior {#comparing-with-a-previous-version}
 
 Para comparar la versión actual de la página con una versión anterior:
 
-1. En el explorador, abra la página que desee comparar con una versión anterior.
-1. En la barra de tareas, seleccione la **Versiones** y, a continuación, la pestaña **Restaurar versión** en la subpestaña .
+1. En el explorador, abra la página para la que desea comparar con una versión anterior.
+1. En la barra de tareas, seleccione **Versiones** y, a continuación, **Restaurar versión** En la subpestaña.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
-1. Seleccione la versión que desee comparar y haga clic en el botón **Diff** botón.
+1. Seleccione la versión que desee comparar y haga clic en **Diferencia** botón.
 1. Las diferencias entre la versión actual y la seleccionada se muestran de la siguiente manera:
 
-   * El texto que se ha eliminado aparece en rojo y tachado.
-   * El texto que se ha añadido aparece en verde y resaltado.
-   * Las imágenes que se han añadido o eliminado tienen un marco verde.
+   * El texto que se ha eliminado está en rojo y tachado.
+   * El texto que se ha agregado es verde y está resaltado.
+   * Las imágenes que se han agregado o eliminado aparecen enmarcadas en verde.
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. En la barra de tareas, seleccione la **Restaurar versión** y haga clic en la pestaña **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> para mostrar la versión actual.**
+1. En la barra de tareas, seleccione **Restaurar versión** y haga clic en el icono **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> para mostrar la versión actual.**
 
 ## Deformación de tiempo   {#timewarp}
 
 Deformación de tiempo es una función diseñada para simular el estado ***publicado*** de una página en periodos específicos en el pasado.
 
-El propósito es permitirle realizar un seguimiento del sitio web publicado en el punto temporal seleccionado. Se utilizan las activaciones de página para determinar el estado del entorno de publicación.
+El propósito es permitirle rastrear el sitio web publicado en el momento seleccionado. Utiliza las activaciones de página para determinar el estado del entorno de publicación.
 
 Para ello:
 
-* El sistema busca la versión de la página que estaba activa en el momento seleccionado.
+* El sistema busca la versión de página que estaba activa en el momento seleccionado.
 * Esto significa que la versión mostrada se creó o activó *antes del* punto temporal seleccionado en Deformación de tiempo.
-* Al navegar a una página que se haya eliminado, también se procesará, siempre que las versiones antiguas de la página sigan estando disponibles en el repositorio.
-* Si no se encuentra ninguna versión publicada, Deformación de tiempo volverá al estado actual de la página en el entorno de creación (para evitar un error/página 404, lo que significaría que ya no puede examinarla).
+* Al navegar a una página que se haya eliminado, esto también se procesa, siempre que las versiones anteriores de la página estén disponibles en el repositorio.
+* Si no se encuentra ninguna versión publicada, Deformación de tiempo volverá al estado actual de la página en el entorno de creación (para evitar una página de error/404, lo que significaría que ya no puede examinar).
 
 >[!NOTE]
 >
->Si las versiones se eliminan del repositorio, Deformación de tiempo no puede mostrar la vista correcta. Además, si los elementos (como código, css, imágenes, etc.) para procesar el sitio web han cambiado, la vista será diferente de la original, ya que no hay versiones de esos elementos en el repositorio.
+>Si las versiones se eliminan del repositorio, Deformación de tiempo no puede mostrar la vista correcta. Además, si los elementos (como código, css, imágenes, etc.) para procesar el sitio web han cambiado, la vista diferirá de lo que era originalmente, ya que esos elementos no tienen versiones en el repositorio.
 
 ### Uso del calendario de Deformación de tiempo {#using-the-timewarp-calendar}
 
@@ -122,21 +122,21 @@ Deformación de tiempo está disponible en la barra de tareas.
 
 La versión del calendario se utiliza si tiene un día específico para ver:
 
-1. Abra el **Versiones** y, a continuación, haga clic en **Deformación de tiempo** (cerca de la parte inferior de la barra de tareas). Se mostrará el cuadro de diálogo siguiente:
+1. Abra el **Versiones** y luego haga clic en **Deformación de tiempo** (cerca del final de la barra de tareas). Se mostrará el siguiente cuadro de diálogo:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Con los selectores de fecha y hora, especifique la fecha y la hora que desee y haga clic en **Ir**.
+1. Mediante los selectores de fecha y hora, especifique la fecha y la hora que desee y haga clic en **Ir**.
 
-   Deformación de tiempo mostrará la página en su estado de publicación antes de la fecha o en la fecha seleccionada.
-
-   >[!NOTE]
-   >
-   >Deformación de tiempo solo funcionará completamente si ha publicado la página anteriormente. En caso contrario, Deformación de tiempo mostrará la página actual en el entorno de creación.
+   Deformación de tiempo mostrará la página tal como estaba en estado publicado antes o en la fecha que haya elegido.
 
    >[!NOTE]
    >
-   >Si se desplaza a una página que se ha eliminado del repositorio, se procesará correctamente si aún hay versiones antiguas de la página en el repositorio.
+   >Deformación de tiempo solo funciona a la perfección si ya ha publicado la página. En caso contrario, Deformación de tiempo mostrará la página actual en el entorno de creación.
+
+   >[!NOTE]
+   >
+   >Si se desplaza a una página que se ha eliminado del repositorio, se procesará correctamente si aún hay versiones antiguas de la página disponibles en el repositorio.
 
    >[!NOTE]
    >
@@ -144,39 +144,39 @@ La versión del calendario se utiliza si tiene un día específico para ver:
 
 1. Cuando haya terminado de ver la página, haga clic en:
 
-   * **Deformación de tiempo de salida** para salir y volver a la página de creación actual.
-   * [Mostrar línea de tiempo](#using-the-timewarp-timeline) para ver la línea de tiempo.
+   * **Salir de Deformación de tiempo** para salir y volver a la página de autor actual.
+   * [Mostrar cronograma](#using-the-timewarp-timeline) para ver la cronología.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
-### Uso de la línea de tiempo de Deformación de tiempo {#using-the-timewarp-timeline}
+### Uso de la cronología de deformación {#using-the-timewarp-timeline}
 
-La versión de la cronología se utiliza si desea ver una descripción general de las actividades de publicación en la página.
+La versión de la cronología se utiliza si desea ver una descripción general de las actividades de publicación de la página.
 
-Si desea ver la línea de tiempo del documento:
+Si desea ver la cronología del documento:
 
-1. Para mostrar la línea de tiempo, puede:
+1. Para mostrar la cronología, puede hacer lo siguiente:
 
-   1. Abra el **Versiones** y, a continuación, haga clic en **Deformación de tiempo** (cerca de la parte inferior de la barra de tareas).
+   1. Abra el **Versiones** y luego haga clic en **Deformación de tiempo** (cerca del final de la barra de tareas).
 
-   1. Utilice el cuadro de diálogo de la barra de tareas que se muestra después de [uso del calendario de Deformación de tiempo](#using-the-timewarp-calendar).
+   1. Utilice el cuadro de diálogo de la barra de tareas que aparece después [uso del calendario de Deformación de tiempo](#using-the-timewarp-calendar).
 
-1. Haga clic en **Mostrar línea de tiempo** - aparecerá la cronología del documento; por ejemplo:
+1. Haga clic en **Mostrar cronograma** - aparecerá la línea de tiempo del documento; por ejemplo:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Seleccione y mueva (mantenga presionada y arrastre) la línea de tiempo para moverse por la línea de tiempo del documento.
+1. Seleccione y mueva (mantenga pulsada y arrastre) la línea de tiempo para desplazarse por la línea de tiempo del documento.
 
    * Todas las líneas indican versiones publicadas.
-Cuando se activa una página, se inicia una línea nueva. Cada vez que se edita el documento, aparece un color nuevo.
-En el siguiente ejemplo, la línea roja indica que la página se editó durante el periodo de tiempo de la versión verde inicial y la línea amarilla indica que la página se editó en algún momento de la versión roja, etc.
+Cuando se activa una página, se inicia una nueva línea. Cada vez que se edita el documento, aparece un nuevo color.
+En el ejemplo siguiente, la línea roja indica que la página se editó durante el periodo de tiempo de la versión inicial verde y la línea amarilla indica que la página se editó en algún momento durante la versión roja, etc.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
 1. Hacer clic:
 
-   1. **Ir** para mostrar el contenido de la página publicada en el punto temporal seleccionado.
-   1. Al mostrar ese contenido, utilice **Deformación de tiempo de salida** para salir y volver a la página de creación actual.
+   1. **Ir** para mostrar el contenido de la página publicada en el momento seleccionado.
+   1. Al mostrar ese contenido, utilice **Salir de Deformación de tiempo** para salir y volver a la página de autor actual.
 
 ### Limitaciones de Deformación de tiempo {#timewarp-limitations}
 

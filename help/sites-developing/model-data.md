@@ -57,7 +57,7 @@ Existe un contrato implícito sobre la estructura que la aplicación utiliza de 
 
 Solo deben aplicarse otras restricciones de datos, como obligatorias o restricciones de tipo y valor, cuando sea necesario por motivos de integridad de los datos.
 
-#### Ejemplo {#example-1}
+#### Ejemplos {#example-1}
 
 El ejemplo anterior de uso de una `lastModified` La propiedad de fecha en, por ejemplo, el nodo &quot;publicación de blog&quot;, en realidad no significa que haya una necesidad de un tipo de nodo especial. Definitivamente me vendría bien `nt:unstructured` para los nodos de mi entrada de blog al menos inicialmente. Ya que en mi aplicación de blogueo todo lo que voy a hacer es mostrar la fecha lastModified de todos modos (posiblemente &quot;ordenar por&quot;) apenas me importa si es una fecha en absoluto. Dado que confío implícitamente en mi aplicación de escritura de blogs para poner una &quot;fecha&quot; de todos modos, no hay realmente necesidad de declarar la presencia de una `lastModified` fecha en forma de tipo de nodo.
 
@@ -79,7 +79,7 @@ Personalmente, prefiero las convenciones de jerarquía sobre el sistema de escri
 >
 >Consulte [¿Cuántos datos puede gestionar CRX?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) para obtener más información.
 
-#### Ejemplo {#example-2}
+#### Ejemplos {#example-2}
 
 Yo modelaría un sistema simple de blogueo de la siguiente manera. Tenga en cuenta que al principio ni siquiera me importan los tipos de nodos respectivos que utilizo en este punto.
 
@@ -117,7 +117,7 @@ Los espacios de trabajo no deben utilizarse para el control de acceso. La visibi
 
 Los espacios de trabajo son el límite para referencias y consultas.
 
-#### Ejemplo {#example-3}
+#### Ejemplos {#example-3}
 
 Utilice espacios de trabajo para cosas como:
 
@@ -140,7 +140,7 @@ Cualquier ruta al repositorio de contenido que contenga un SNS en uno de sus seg
 
 Para importar XML o interactuar con SNS XML existente puede ser necesario y útil, pero nunca he utilizado SNS, y nunca lo haré en mis modelos de datos de &quot;campo verde&quot;.
 
-#### Ejemplo {#example-4}
+#### Ejemplos {#example-4}
 
 Uso
 
@@ -164,7 +164,7 @@ Las referencias implican integridad referencial. Considero importante comprender
 
 Personalmente, me aseguro de usar solo referencias cuando realmente no puedo lidiar con una referencia colgada y, de lo contrario, uso una ruta, un nombre o un UUID de cadena para hacer referencia a otro nodo.
 
-#### Ejemplo {#example-5}
+#### Ejemplos {#example-5}
 
 Supongamos que permito &quot;referencias&quot; de un documento a) a otro documento b). Si modelo esta relación con propiedades de referencia, significa que los dos documentos están vinculados en un nivel de repositorio. No puedo exportar/importar el documento (a) individualmente, ya que es posible que el destino de la propiedad de referencia no exista. Otras operaciones como combinar, actualizar, restaurar o clonar también se ven afectadas.
 
@@ -184,7 +184,7 @@ Creo que como buena regla general se podría utilizar lo siguiente: Si necesita 
 
 Si necesita añadir información meta para el recurso, por ejemplo, una propiedad &quot;author&quot; o &quot;description&quot;, amplíe `nt:resource` no el `nt:file`. Rara vez extiendo nt:file y con frecuencia extiendo `nt:resource`.
 
-#### Ejemplo {#example-6}
+#### Ejemplos {#example-6}
 
 Supongamos que alguien desea cargar una imagen en una entrada de blog en:
 
@@ -218,7 +218,7 @@ Más importante aún, lo es **mezclar**: referenciable, lo que significa que se 
 
 Por lo tanto, supongamos que simplemente porque desee poder hacer referencia a un nodo de tipo &quot;Documento&quot; no significa que el tipo de nodo &quot;Documento&quot; tenga que extenderse desde mix:referenceable de forma estática, ya que se puede agregar dinámicamente a cualquier instancia del &quot;Documento&quot;.
 
-#### Ejemplo {#example-7}
+#### Ejemplos {#example-7}
 
 Uso:
 

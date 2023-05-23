@@ -1,6 +1,6 @@
 ---
 title: API de GraphQL de AEM para su uso con fragmentos de contenido
-description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
+description: Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager AEM AEM () con la API de GraphQL de la para la entrega de contenido sin encabezado.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: cf78742614fd2d35f59905895dfacb83190140cd
@@ -12,7 +12,7 @@ ht-degree: 88%
 
 # API de GraphQL de AEM para su uso con fragmentos de contenido {#graphql-api-for-use-with-content-fragments}
 
-Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager (AEM) con la API de GraphQL de AEM para la entrega de contenido sin encabezado.
+Aprenda a utilizar los fragmentos de contenido en Adobe Experience Manager AEM AEM () con la API de GraphQL de la para la entrega de contenido sin encabezado.
 
 La API de GraphQL de AEM que se utiliza con fragmentos de contenido se basa principalmente en la API estándar de código abierto de GraphQL.
 
@@ -24,7 +24,7 @@ El uso de la API de GraphQL en AEM permite la entrega eficiente de fragmentos de
 
 >[!NOTE]
 >
->GraphQL se utiliza actualmente en dos situaciones (independientes) en Adobe Experience Manager (AEM):
+>GraphQL se utiliza actualmente en dos escenarios (independientes) en Adobe Experience Manager AEM ():
 >
 >* [AEM Commerce consume datos de una plataforma de Commerce a través de GraphQL](/help/commerce/cif/integrating/magento.md).
 >* Los fragmentos de contenido de AEM trabajan junto con la API de GraphQL de AEM (una implementación personalizada, basada en GraphQL estándar) para ofrecer contenido estructurado para su uso en aplicaciones.
@@ -32,7 +32,7 @@ El uso de la API de GraphQL en AEM permite la entrega eficiente de fragmentos de
 
 ## Requisitos previos {#prerequisites}
 
-Los clientes que utilicen GraphQL deben instalar el fragmento de contenido AEM con el paquete de índice de GraphQL 1.0.5. Consulte la [Notas de la versión](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) para obtener más información.
+Los clientes que utilizan GraphQL AEM deben instalar el fragmento de contenido de la aplicación con el paquete de índice 1.0.5 de GraphQL. Consulte la [Notas de versión](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) para obtener más información.
 
 ## La API de GraphQL {#graphql-api}
 
@@ -111,12 +111,12 @@ AEM proporciona funcionalidades para convertir consultas (de ambos tipos) a [](/
 Las [consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md) son el método recomendado para usar en instancias de publicación como estas:
 
 * Se almacenan en caché.
-* se administran de forma centralizada mediante AEM
+* AEM se gestionan centralmente mediante el sistema de gestión de la
 
 <!-- is this fully accurate? -->
 >[!NOTE]
 >
->Normalmente no hay ningún Dispatcher/CDN en el autor, por lo que no hay ganancia de rendimiento en el uso de consultas persistentes allí; aparte de probarlas.
+>Normalmente, no hay ninguna instancia de Dispatcher/CDN en el autor, por lo que no hay ninguna mejora de rendimiento en el uso de consultas persistentes allí; aparte de probarlas.
 
 No se recomiendan las consultas GraphQL que utilizan peticiones POST, ya que no se almacenan en caché, por lo que en una instancia predeterminada, Dispatcher está configurado para bloquear dichas consultas.
 
@@ -128,7 +128,7 @@ Aunque GraphQL también admite peticiones GET, estas pueden alcanzar límites (p
 
 ## Interfaz de GraphiQL {#graphiql-interface}
 
-Implementación de la norma [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) está disponible para su uso con AEM GraphQL.
+Una implementación de la norma [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) AEM La interfaz de está disponible para su uso con GraphQL de.
 
 >[!NOTE]
 >
@@ -136,7 +136,7 @@ Implementación de la norma [GraphiQL](https://graphql.org/learn/serving-over-ht
 >
 >En versiones anteriores, se necesitaba un paquete para instalar el IDE de GraphiQL. Si tiene esto instalado, ahora lo puede quitar.
 
-Esta interfaz le permite introducir y probar directamente consultas.
+Esta interfaz le permite introducir y probar consultas directamente.
 
 Por ejemplo:
 
@@ -152,14 +152,14 @@ Esto proporciona funciones como resaltado de sintaxis, autocompletado o autosuge
 
 ## Casos de uso para entornos de creación y publicación {#use-cases-author-publish-environments}
 
-Los casos de uso pueden depender del tipo de entorno AEM:
+AEM Los casos de uso pueden depender del tipo de entorno de:
 
 * Entorno de publicación; se usa para:
    * Datos de consulta para la aplicación JS (caso de uso estándar)
 
 * Entorno de creación; se usa para:
    * Datos de consulta para “fines de administración de contenido”:
-      * GraphQL en AEM es actualmente una API de solo lectura.
+      * GraphQL AEM en la actualidad es una API de solo lectura en el mercado de trabajo.
       * La API de REST se puede utilizar para operaciones CR(u)D.
 
 ## Permisos {#permission}
@@ -261,7 +261,7 @@ GraphQL para AEM admite una lista de tipos. Se representan todos los tipos de da
 | Lista desglosada |  `String` |  Se utiliza para mostrar una opción de una lista de opciones definidas en la creación del modelo |
 |  Etiquetas |  `[String]` |  Se utiliza para mostrar una lista de cadenas que representan las etiquetas utilizadas en AEM |
 | Referencia de contenido |  `String` |  Se utiliza para mostrar la ruta hacia otro recurso en AEM |
-| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo al que se hace referencia directamente <br><br>Multifield, con un tipo al que se hace referencia: `[Model]` - Matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multifield, con varios tipos de referencia: `[AllFragmentModels]` - Matriz de todos los tipos de modelo, referenciada desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
+| Referencia al fragmento |  *Un tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado directamente <br><br>Multicampo, con un tipo referenciado: `[Model]` - Matriz de tipo `Model`, referenciado directamente desde la matriz <br><br>Multicampo, con varios tipos referenciados: `[AllFragmentModels]` : matriz de todos los tipos de modelo, a la que se hace referencia desde matriz con tipo de unión |  Se utiliza para hacer referencia a uno o más fragmentos de contenido de ciertos tipos de modelo, definidos cuando se creó el modelo |
 
 {style="table-layout:auto"}
 
@@ -483,10 +483,10 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
    * añada `List` al nombre del modelo; por ejemplo, `cityList`
    * Consulte [Consulta de muestra: toda la información acerca de todas las ciudades](#sample-all-information-all-cities)
 
-* El filtro `includeVariations` se incluye en la variable `List` tipo de consulta.  Para recuperar las Variaciones de fragmento de contenido en los resultados de la consulta, la variable `includeVariations` El filtro debe estar definido como `true`.
+* El filtro `includeVariations` está incluido en el `List` tipo de consulta.  Para recuperar las variaciones de fragmentos de contenido en los resultados de la consulta, haga clic en `includeVariations` el filtro debe establecerse en `true`.
 
    >[!CAUTION]
-   >El filtro `includeVariations` no se puede utilizar junto con el campo generado por el sistema `_variation`.
+   >El filtro `includeVariations` no se puede usar junto con el campo generado por el sistema `_variation`.
 
 * Si desea utilizar un OR lógico:
    * use ` _logOp: OR`
@@ -518,13 +518,13 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
          >Si la variación dada no existe para un Fragmento de contenido, la variación principal se devolverá como una predeterminada (alternativa).
 
          >[!CAUTION]
-         >Campo generado por el sistema `_variation` no se puede usar junto con el filtro `includeVariations`.
+         >El campo generado por el sistema `_variation` no se puede usar junto con el filtro `includeVariations`.
 
          * Consulte [Consulta de muestra: todas las ciudades con una variación con nombre](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
-      * `_tags` : para mostrar los ID de fragmentos de contenido o variaciones que contienen etiquetas; es una matriz de `cq:tags` identificadores.
+      * `_tags` : para revelar los ID de los fragmentos de contenido o las variaciones que contienen etiquetas; se trata de una matriz de `cq:tags` identificadores.
 
-         * Consulte [Consulta de ejemplo: nombres de todas las ciudades etiquetadas como pausas](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
-         * Consulte [Consulta de ejemplo para variaciones de fragmento de contenido de un modelo determinado que tiene una etiqueta específica adjunta](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+         * Consulte [Consulta de muestra: nombres de todas las ciudades etiquetadas como escapadas](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+         * Consulte [Consulta de muestra para variaciones de fragmentos de contenido de un modelo determinado que tienen una etiqueta específica adjunta](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
 
          >[!NOTE]
          >
@@ -556,7 +556,7 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 
 * Alternativa cuando se consultan fragmentos anidados:
 
-   * Si la variación solicitada no existe en un fragmento anidado, la variable **Maestro** se devolverá la variación.
+   * Si la variación solicitada no existe en un fragmento anidado, la variable **Principal** se devolverá la variación.
 
 ### Filtro CORS {#cors-filter}
 
@@ -564,9 +564,9 @@ El funcionamiento básico de las consultas con GraphQL para AEM se adhiere a la 
 >
 >Para obtener una descripción detallada de la política de uso compartido de recursos CORS en AEM, consulte [Comprender el Intercambio de Recursos de Origen Cruzado (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=es#understand-cross-origin-resource-sharing-(cors)).
 
-Para acceder al extremo GraphQL, se debe configurar una directiva CORS en el repositorio Git del cliente. Para ello, añada un archivo de configuración OSGi CORS apropiado para los puntos de conexión deseados. 
+Para acceder al punto de conexión de GraphQL, se debe configurar una política CORS en el repositorio Git del cliente. Para ello, añada un archivo de configuración OSGi CORS apropiado para los puntos de conexión deseados. 
 
-Esta configuración debe especificar un origen de sitio web de confianza `alloworigin` o `alloworiginregexp` para los que debe concederse acceso.
+Esta configuración debe especificar un origen de sitio web de confianza `alloworigin` o `alloworiginregexp` para los que se debe conceder acceso.
 
 Por ejemplo, para conceder acceso al punto de conexión de GraphQL  y punto de conexión de consultas persistentes para `https://my.domain`, puede utilizar:
 
@@ -607,9 +607,9 @@ Si ha configurado una ruta de vanidad para el punto de conexión, también puede
 
 ### Filtro de referente {#referrer-filter}
 
-Además de la configuración de CORS, se debe configurar un filtro de referente para permitir el acceso desde hosts de terceros.
+Además de la configuración de CORS, debe configurarse un filtro de referente para permitir el acceso desde hosts de terceros.
 
-Para ello, agregue un archivo de configuración de OSGi Referrer Filter apropiado que:
+Para ello, añada un archivo de configuración adecuado del filtro de referente OSGi que:
 
 * especifique un nombre de host de sitio web de confianza; o `allow.hosts` o `allow.hosts.regexp`,
 * conceda acceso a este nombre de host.

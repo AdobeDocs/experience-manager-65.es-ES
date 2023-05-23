@@ -13,7 +13,7 @@ exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
 source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
 source-wordcount: '2483'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -45,19 +45,19 @@ Tiene los atributos siguientes:
 
 **categorías** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluirá todas las bibliotecas de JavaScript y CSS para las categorías dadas. El nombre de la temática se extrae de la solicitud.
 
-Equivale a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
+Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
 **tema** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluirá todas las bibliotecas relacionadas con temas (tanto CSS como JS) para las categorías dadas. El nombre de la temática se extrae de la solicitud.
 
-Equivale a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
+Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
 **js** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluirá todas las bibliotecas de JavaScript para las categorías dadas.
 
-Equivale a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
+Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
 **css** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluirá todas las bibliotecas CSS para las categorías dadas.
 
-Equivale a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
+Equivalente a: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
 **temático** : Se debe incluir un indicador que indique que solo hay bibliotecas temáticas o no temáticas. Si se omite, se incluyen ambos conjuntos. Solo se aplica a inclusiones JS o CSS puras (no para categorías ni inclusiones de temas).
 
@@ -266,7 +266,7 @@ Tiene los atributos siguientes:
 
 **categorías** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluirá todas las bibliotecas de JavaScript y CSS para las categorías dadas. El nombre de la temática se extrae de la solicitud.
 
-Equivale a: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
+Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
 **tema** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluirá todas las bibliotecas relacionadas con temas (tanto CSS como JS) para las categorías dadas. El nombre de la temática se extrae de la solicitud.
 
@@ -274,11 +274,11 @@ Equivalente a: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
 **js** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluirá todas las bibliotecas de JavaScript para las categorías dadas.
 
-Equivale a: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
+Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
 **css** - Una lista de categorías de biblioteca de cliente separadas por comas. Esto incluirá todas las bibliotecas CSS para las categorías dadas.
 
-Equivale a: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
+Equivalente a: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
 **temático** : Se debe incluir un indicador que indique que solo hay bibliotecas temáticas o no temáticas. Si se omite, se incluyen ambos conjuntos. Solo se aplica a inclusiones JS o CSS puras (no para categorías ni inclusiones de temas).
 
@@ -588,7 +588,7 @@ El `<sling:defineObjects>` expone los siguientes objetos de script, que se utili
 **slingResponse**
 
 * Objeto SlingHttpServletResponse, que proporciona acceso a la respuesta HTTP creada por el servidor. Actualmente es el mismo que el HttpServletResponse desde el que se extiende.**solicitud**
-* El objeto de solicitud JSP estándar que es HttpServletRequest puro.**response**
+* El objeto de solicitud JSP estándar que es HttpServletRequest puro.**respuesta**
 * El objeto de respuesta JSP estándar que es HttpServletResponse puro.
 
 **resourceResolver**

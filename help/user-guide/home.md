@@ -7,7 +7,7 @@ exl-id: 51788662-6214-408e-98d9-692950c366be
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 22%
+ht-degree: 13%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 22%
 
 ## Solución de problemas y ayuda {#troubleshooting-and-help}
 
-* [Primera vez con AEM](new.md)
+* [AEM Nuevo en el](new.md)
 * [AEM Más información sobre las funcionalidades de la](learn.md)
 * [AEM Prácticas recomendadas, procedimientos y formación para la aplicación de la práctica de la](best-practice.md)
-* [La comunidad de AEM](community.md)
-* [Solución de problemas de AEM](troubleshooting.md)
+* [AEM La comunidad de](community.md)
+* [AEM Solución de problemas en](troubleshooting.md)
 
 ## Opciones de contacto {#contact-options}
 
@@ -46,10 +46,10 @@ Los delegados de asistencia pueden obtener asistencia mediante:
 
 ## Comunidad {#community}
 
-Únase al foro!
+¡Únase a la conversación!
 
 * [Foro de AEM Sites](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
-* [Foro de Comunidades de AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-communities.html)
+* [Foro de AEM Communities](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-communities.html)
 * [Foro de AEM Forms](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-forms.html)
-* [Foro de Activos AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-assets.html)
+* [Foro de AEM Assets](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-assets.html)
 * [Foro de AEM Mobile](https://forums.adobe.com/community/experiencemanagermobile)

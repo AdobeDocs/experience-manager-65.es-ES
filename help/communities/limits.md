@@ -34,7 +34,7 @@ Mediante la consola Miembros, un administrador de la comunidad puede quitar de f
 
 Esta configuración de OSGi:
 
-* Define las características de los límites de contribución (número de entradas dentro de un período de tiempo).
+* Define las características de los límites de contribución (número de entradas dentro de un periodo de tiempo).
 * Identifica a quién podrá enviar un mensaje el miembro cuando se haya alcanzado el límite.
 * Identifica los dominios que nunca deben restringirse.
 

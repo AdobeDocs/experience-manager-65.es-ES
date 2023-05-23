@@ -110,4 +110,4 @@ Al crear un grupo en el entorno de creación, es necesario publicar primero el s
 * [Administración de usuarios y grupos de usuarios](users.md)
 * [Consola de grupos de Communities](groups.md)
 * [Función Grupos](functions.md#groups-function)
-* [Plantillas de grupos](tools-groups.md)
+* [Plantillas de grupo](tools-groups.md)

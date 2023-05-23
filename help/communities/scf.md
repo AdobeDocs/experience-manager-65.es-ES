@@ -163,7 +163,7 @@ Solo se pueden incluir dinámicamente algunos de los componentes de AEM Communit
 
 * [Comentarios](essentials-comments.md)
 * [Clasificación](rating-basics.md)
-* [Críticas](reviews-basics.md)
+* [Repasos](reviews-basics.md)
 * [Votación](essentials-voting.md)
 
 El [Guía de componentes de la comunidad](components-guide.md) permite que los componentes que se pueden incluir pasen de agregarse a incluirse.

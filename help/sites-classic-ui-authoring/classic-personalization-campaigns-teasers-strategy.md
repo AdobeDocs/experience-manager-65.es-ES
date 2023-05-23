@@ -1,7 +1,7 @@
 ---
-title: Teasers y estrategias
+title: Teasers and Strategies
 seo-title: Teasers and Strategies
-description: Las campañas suelen utilizar teasers como mecanismo para atraer un segmento concreto de la población visitante hacia información centrada en sus intereses. Para una campaña específica se definen uno o varios teasers.
+description: Las campañas suelen utilizar teasers como mecanismo para atraer a un segmento específico de la población de visitantes a contenido centrado en sus intereses. Uno o más teasers están definidos para una campaña específica.
 seo-description: Campaigns often use teasers as a mechanism to entice a specific segment of the visitor population through to content focused on their interests. One or more teasers are defined for a specific campaign.
 uuid: c78ec858-4b0a-48d5-99b2-5ddd9e15183d
 contentOwner: User
@@ -13,44 +13,44 @@ docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 89%
+source-wordcount: '1200'
+ht-degree: 5%
 
 ---
 
-# Teasers y estrategias{#teasers-and-strategies}
+# Teasers and Strategies{#teasers-and-strategies}
 
-Las campañas suelen utilizar teasers como mecanismo para atraer un segmento concreto de la población visitante hacia información centrada en sus intereses. Para una campaña específica se definen uno o varios teasers.
+Las campañas suelen utilizar teasers como mecanismo para atraer a un segmento específico de la población de visitantes a contenido centrado en sus intereses. Uno o más teasers están definidos para una campaña específica.
 
 >[!NOTE]
 >
->El componente Teaser se ha declarado en desuso en AEM 6.2. En su lugar, utilice el [componente Target](/help/sites-authoring/content-targeting-touch.md).
+>AEM El componente Teaser ha quedado obsoleto en la versión 6.2 de. Utilice el [Componente de destino](/help/sites-authoring/content-targeting-touch.md) en su lugar.
 
-* **Páginas de marca** se almacenan en la sección Campañas del sitio web. Una marca contiene campañas individuales.
-* **Páginas de Campaign** se almacenan en la sección Campañas del sitio web. Cada campaña dispone de una página independiente, en la que se incluyen las definiciones del teaser. La página contenedora, o de descripción general, también incluye determinada información y estadísticas relacionadas con las páginas de teaser individuales.
+* **Páginas de marca** se almacenan en la sección Campañas del sitio web. Una marca contiene las campañas individuales.
+* **Páginas de Campaign** se almacenan en la sección Campañas del sitio web. Cada campaña tiene una página individual, en la que se muestran las definiciones del teaser. El contenedor, o página de información general, también contiene cierta información y estadísticas relacionadas con las páginas de teaser individuales.
 
-Los teasers de AEM constan de distintas partes:
+AEM Los teasers dentro de los recursos de la biblioteca de recursos de la red están compuestos por varias partes:
 
-* **Páginas de teaser** se almacenan en la página de campaña adecuada y contienen las definiciones de los párrafos de teaser disponibles para cada campaña específica. Estas definiciones se utilizan al mostrar los párrafos de teaser, incluyendo la variación de contenido, el segmento que se utilizará para seleccionar una variación y el factor de realce.
-* El **componente Teaser** está disponible en la versión básica y permite crear una instancia de un párrafo de teaser específico en una página de contenido. El componente Teaser se puede arrastrar desde la barra de tareas y, a continuación, se puede especificar la definición del teaser para crear un párrafo de teaser propio. **Nota:** AEM El componente Teaser ha quedado obsoleto en la versión 6.2 de. Utilice el [Componente de destino](/help/sites-authoring/content-targeting-touch.md) en su lugar.
-* Los **párrafos de teaser** son instancias reales del teaser en una página de contenido. Estos párrafos animan a un segmento de visitantes a acceder a contenido centrado en sus intereses.
-* Las páginas que incluyen contenido de campaña se centran en un segmento de visitantes concreto. Los párrafos de teaser suelen dirigir a los visitantes a estas páginas
+* **Páginas de teaser** se almacenan en la página de campaña adecuada y contienen las definiciones de los párrafos de teaser disponibles para cada campaña específica. Estas definiciones se utilizan para mostrar los párrafos de teaser; incluidas las variaciones de contenido, el segmento que se utilizará para seleccionar una variación y el factor de ampliación.
+* El **Componente Teaser** está disponible de forma predeterminada y le permite crear una instancia del párrafo de teaser específico en una página de contenido. Puede arrastrar el componente Teaser de la barra de tareas y, a continuación, especificar la definición del teaser para crear su propio párrafo de teaser. **Nota:** AEM El componente Teaser ha quedado obsoleto en la versión 6.2 de. Utilice el [Componente de destino](/help/sites-authoring/content-targeting-touch.md) en su lugar.
+* **Párrafos de teaser** son instancias reales del teaser dentro de una página de contenido. Esto atrae a un segmento de visitantes a través del contenido centrado en sus intereses.
+* Páginas que contienen contenido de la campaña centrado en un segmento de visitante específico. Normalmente, los párrafos de teaser llevan al visitante a dichas páginas.
 
-## asignación de nombres de página {#strategies}
+## Estrategias {#strategies}
 
 Al agregar un párrafo de teaser a una página, debe definir el **Estrategia**.
 
-Esto es así en el caso de que varios teasers estén disponibles para selección conforme sus segmentos asignados se resuelvan correctamente en su totalidad. La **estrategia** especifica criterios adicionales utilizados para seleccionar el teaser mostrado:
+Esto es así en el caso de que haya varios teasers disponibles para su selección, ya que todos sus segmentos asignados se resuelven correctamente. El **Estrategia** a continuación, especifica un criterio adicional para seleccionar el teaser que se muestra:
 
-* La **Puntuación de secuencias de clic** se basa en las etiquetas y en las visitas de etiquetas relacionadas que se incluyen en el ClientContext del visitante (muestran con qué frecuencia ha hecho clic el visitante en las páginas que incluyen la etiqueta respectiva). Se comparan los porcentajes de visitas para las etiquetas definidas en la página de teaser.
+* **Puntuación del flujo de navegación**, se basa en las etiquetas y en las visitas de etiquetas relacionadas que se mantienen dentro del contexto de cliente del visitante (para mostrar la frecuencia con la que un visitante ha hecho clic en páginas que contienen la etiqueta correspondiente). Se comparan las tasas de visitas de las etiquetas definidas en la página de teaser.
 * **Aleatorio**, para la selección &quot;aleatoria&quot;; utiliza el factor aleatorio generado para una página, que se puede ver con el [Client Context](/help/sites-administering/client-context.md).
-* **Primero** en la lista de segmentos resueltos. El orden es el de los teasers en la página que contiene la campaña.
+* **Primero** en la lista de segmentos resueltos. El orden es el de los teasers de la página contenedora de la campaña.
 
-El [Factor de ampliación](/help/sites-administering/campaign-segmentation.md#boost-factor) del segmento también afecta a la selección. Se trata de un factor adicional que se agrega a una definición del segmento para aumentar/disminuir la probabilidad relativa de ser seleccionado.
+El [Factor de ampliación](/help/sites-administering/campaign-segmentation.md#boost-factor) del segmento también afecta a la selección. Se trata de un factor de ponderación añadido a una definición de segmento para aumentar/disminuir la probabilidad relativa de que se seleccione.
 
-El proceso y las interelaciones de los distintos criterios de selección se ilustran mejor con un ejemplo (método que también se puede emplear para garantizar que los teasers llegarán al público objetivo).
+El proceso y las interrelaciones de los distintos criterios de selección se ilustran mejor con un ejemplo (un método que también se puede utilizar para garantizar que los teasers lleguen a la audiencia requerida).
 
-Si los siguientes segmentos ya se han creado y asignado a su factor de ampliación correspondiente:
+Si ya se han creado los siguientes segmentos y se les ha asignado su respectivo factor de ampliación:
 
 | Segmento | Factor de ampliación |
 |---|---|
@@ -61,14 +61,14 @@ Si los siguientes segmentos ya se han creado y asignado a su factor de ampliaci�
 | S5 | 0 |
 | S6 | 100 |
 
-Se utilizan las siguientes definiciones de teaser:
+Y usamos las siguientes definiciones de teaser:
 
 <table>
  <tbody>
   <tr>
    <td>Campaign</td>
    <td>Teaser</td>
-   <td>Segmento(s) asignado(s)</td>
+   <td>Segmentos asignados</td>
    <td>Etiquetas asignadas </td>
   </tr>
   <tr>
@@ -92,7 +92,7 @@ Se utilizan las siguientes definiciones de teaser:
   <tr>
    <td>C1 </td>
    <td>T4</td>
-   <td>, S2, S5</td>
+   <td>S2, S5</td>
    <td><br /> </td>
   </tr>
   <tr>
@@ -110,27 +110,27 @@ Se utilizan las siguientes definiciones de teaser:
  </tbody>
 </table>
 
-Si aplicamos esto a un visitante, donde:
+Entonces, si aplicamos esto a un visitante donde:
 
 * **S1**, **S2** y **S6** resolver correctamente
 
-* La etiqueta **marketing** tiene 3 visitas.
-* La etiqueta **business** tiene 6 visitas.
+* la etiqueta **marketing** tiene 3 visitas
+* la etiqueta **negocio** tiene 6 visitas
 
-Podemos ver los elementos resultantes:
+Podemos ver el resultado:
 
-* Éxito de coincidencia - ¿Se ha resuelto correctamente algún segmento asignado al teaser para el visitante actual?
-* Factor de ampliación: el factor de ampliación más elevado de todos los segmentos aplicables
-* Puntuación de secuencias de clic- Total acumulativo para todas las visitas de tags aplicables
+* coincidencia correcta: ¿alguno de los segmentos asignados al teaser se resuelve correctamente para el visitante actual?
+* factor de ampliación: el factor de ampliación más alto de todos los segmentos aplicables
+* puntuación del flujo de navegación: el total acumulado de todas las visitas de etiquetas aplicables
 
-que se calculan antes de aplicar la estrategia apropiada:
+que se calculan antes de aplicar la estrategia adecuada:
 
 <table>
  <tbody>
   <tr>
    <td>Campaign</td>
    <td>Teaser</td>
-   <td>Segmento(s) asignado(s)</td>
+   <td>Segmentos asignados</td>
    <td>Etiquetas </td>
    <td>¿Coincidencia correcta?</td>
    <td>Factor de ampliación resultante</td>
@@ -166,7 +166,7 @@ que se calculan antes de aplicar la estrategia apropiada:
   <tr>
    <td>C1 </td>
    <td>T4</td>
-   <td>, S2, S5</td>
+   <td>S2, S5</td>
    <td><br /> </td>
    <td>Sí<br /> </td>
    <td>0<br /> </td>
@@ -193,7 +193,7 @@ que se calculan antes de aplicar la estrategia apropiada:
  </tbody>
 </table>
 
-Estos valores se utilizan para determinar los teasers que verá el visitante, dependiendo de la **estrategia** aplicada al párrafo de teaser:
+Estos valores se utilizan para determinar los teaser que verá el visitante, según el **Estrategia** se aplica al párrafo de teaser:
 
 <table>
  <tbody>
@@ -205,68 +205,69 @@ Estos valores se utilizan para determinar los teasers que verá el visitante, de
   <tr>
    <td>Primero</td>
    <td>T5</td>
-   <td>Únicamente T5 y T6 se consideran como sus segmentos resueltos <i>y</i> cuentan con el factor de ampliación más elevado. La lista se devuelve en el orden T5, T6; por lo que T5 se selecciona y se muestra.</td>
+   <td>Solo T5 y T6 se consideran como sus segmentos resueltos <i>y</i> tienen el factor de impulso más alto. La lista devuelta está en el orden T5, T6; por lo tanto, T5 se selecciona y se muestra.</td>
   </tr>
   <tr>
    <td>Aleatorio</td>
    <td>T5 o T6</td>
-   <td>Ambos teasers tienen segmentos que se resuelven en su totalidad y el mismo factor de ampliación. Por lo tanto, los dos teasers se muestran en la misma proporción.</td>
+   <td>Ambos teasers tienen segmentos que se resuelven y tienen el mismo factor de ampliación. Por lo tanto, los dos teasers se muestran en igual proporción.</td>
   </tr>
   <tr>
-   <td>Puntuación de secuencias de clic</td>
+   <td>Puntuación del flujo de navegación</td>
    <td>T6</td>
-   <td><p>Los segmentos para T1, T4, T5 y T6 se resuelven en su totalidad para el visitante. Los factores de ampliación más elevados de T5 y T6; después se excluyen T1 y T4. Finalmente la puntuación de secuencias de clic más elevada de T6 hace que éste valor se seleccione.</p> </td>
+   <td><p>Los segmentos para T1, T4, T5 y T6 se resuelven para el visitante. Los factores de impulso más altos de T5 y T6 excluyen entonces T1 y T4. Finalmente, la mayor puntuación del flujo de navegación de T6 hace que se seleccione esta opción.</p> </td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->Si, tras las técnicas de resolución anteriores, varios teasers están disponibles para selección, una selección interna (aleatoria) seleccionará un solo teaser para mostrar.
+>Si, después de las técnicas de resolución anteriores, hay varios teasers disponibles para seleccionarlos, una selección interna (aleatoria) seleccionará un único teaser para mostrarlo.
 >
->Por ejemplo, si la estrategia era Puntuación de secuencias de clic y T5 tuvo la misma Puntuación de secuencias de clic que T6 (es decir, 6 en lugar de 3), la selección interna (aleatoria) podría utilizarse para seleccionar una de estas dos.
+>Por ejemplo, si la estrategia era Puntuación del flujo de navegación y T5 tenía la misma puntuación del flujo de navegación que T6 (es decir, 6 en lugar de 3), se utilizaría la selección interna (aleatoria) para seleccionar uno de estos dos.
 
-Las páginas o párrafos de teaser se utilizan para dirigir a segmentos concretos de visitantes a contenido centrado en sus intereses. Pueden presentar una gama de opciones que pueden elegir los visitantes o mostrar únicamente un párrafo de teaser, basado en un segmento específico de visitantes; por ejemplo, el párrafo de teaser mostrado puede depender de la edad de los visitantes.
+Las páginas teaser o los párrafos se utilizan para dirigir segmentos específicos de visitantes a contenido centrado en sus intereses. Pueden presentar una serie de opciones entre las que elegir los visitantes o mostrar solo un párrafo de teaser basado en el segmento específico del visitante; por ejemplo, el párrafo de teaser que se muestra puede depender de la edad del visitante.
 
-Generalmente una página de teaser es una acción temporal que durará un período específico de tiempo, hasta que se sustituya por la siguiente página.
+Normalmente, una página teaser es una acción temporal que dura un período de tiempo específico, hasta que se reemplaza por la siguiente página de teaser.
 
-Tras crear su marca y campaña, puede crear y configurar la experiencia de teaser.
+Después de crear la marca y la campaña, puede crear y configurar la experiencia de teaser.
 
-### Creación de un touchpoint para el teaser {#creating-a-touchpoint-for-your-teaser}
+### Creación de un punto de contacto para el teaser {#creating-a-touchpoint-for-your-teaser}
 
 >[!NOTE]
 >
->El componente Teaser se ha declarado en desuso en AEM 6.2. En su lugar, utilice el[componente Target](/help/sites-authoring/content-targeting-touch.md).
+>AEM El componente Teaser ha quedado obsoleto en la versión 6.2 de. Utilice el [Componente de destino](/help/sites-authoring/content-targeting-touch.md) en su lugar.
 
-1. Desplácese a la página de contenido donde desee colocar el párrafo de teaser que dirigirá a la página de campaña.
-1. Añada un componente **Teaser** (disponible en la sección **Personalización** de la barra de tareas) en la posición necesaria. Al crearla, mostrará que la ruta de campaña no se ha configurado:
+1. Vaya a la página de contenido en la que desee colocar el párrafo de teaser que lleva a la página de la campaña.
+1. Añadir un **Teaser** componente (disponible en el **Personalización** sección de la barra de tareas) en la posición requerida. Cuando se cree por primera vez, mostrará que la ruta de campaña aún no está configurada:
 
    ![chlimage_1](assets/chlimage_1.png)
 
 1. Edite el componente teaser para añadir lo siguiente:
 
    * **Ruta de campaña**
-Ruta a la página de campaña que aloja la página de teaser independiente; los segmentos determinan exactamente qué teaser se muestra.
+Ruta a la página de campaña que contiene la página de teaser individual; los segmentos determinan exactamente qué teaser se muestra.
 
-   * **[Estrategia](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)** Método utilizado para la selección cuando varios segmentos se resuelven correctamente.
+   * **[Estrategia](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
+Método utilizado para la selección cuando varios segmentos se resuelven correctamente.
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
-1. Haga clic en **Aceptar** para guardar. Según los segmentos configurados en el teaser y el perfil del usuario con el que haya iniciado sesión, se mostrará el contenido adecuado:
+1. Clic **OK** para guardar. Según los segmentos que haya configurado en el teaser y el perfil del usuario con el que haya iniciado sesión, se mostrará el contenido apropiado:
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
-1. Pase el ratón por el párrafo de teaser para mostrar el icono de signo de interrogación (esquina inferior derecha del componente). Haga clic en el icono para ver los segmentos aplicados y cómo se resuelven en estos momentos.
+1. Pase el ratón sobre el párrafo de teaser para mostrar el icono del signo de interrogación (esquina inferior derecha del componente). Haga clic aquí para ver los segmentos aplicados y si se resuelven actualmente.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
-### Información general de teaser {#teaser-overview}
+### Información general sobre teaser {#teaser-overview}
 
-Además de la vista de campaña en MCM, la página de campaña también le proporciona información sobre los teasers a los que está conectada:
+Además de la vista de campaña en el MCM, la página de campaña también proporciona información sobre los teasers conectados a ella:
 
-1. Desde la consola **Sitios web**, abra la página de campaña, por ejemplo:
+1. Desde el **Sitios web** consola, abra la página de campaña; por ejemplo:
 
    `https://localhost:4502/content/campaigns/geometrixx-outdoors/storefront/summer.html`
 
-   Se mostrará información general sobre las estadísticas de visualización y las definiciones del teaser:
+   Esto muestra una descripción general de las definiciones de teaser y las estadísticas de visualización:
 
    ![chlimage_1-4](assets/chlimage_1-4.png)

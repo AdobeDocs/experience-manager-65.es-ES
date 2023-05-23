@@ -13,7 +13,7 @@ exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 24%
+ht-degree: 20%
 
 ---
 
@@ -37,8 +37,8 @@ Para obtener la documentación completa sobre la creación, administración, uso
 >
 >Los **fragmentos de contenido** y los **[fragmentos de experiencias](/help/sites-authoring/experience-fragments.md)** son funciones distintas de AEM:
 >
->* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
->* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
+>* **Fragmentos de contenido** son contenidos editoriales, principalmente texto e imágenes relacionadas. Son contenidos puros, sin diseño ni diseño.
+>* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web.
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 

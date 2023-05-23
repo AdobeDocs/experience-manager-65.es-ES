@@ -36,7 +36,7 @@ Al migrar, debe tener en cuenta las siguientes diferencias (principales) entre l
  <tbody>
   <tr>
    <td>IU clásica</td>
-   <td>IU táctil</td>
+   <td>IU táctil.</td>
   </tr>
   <tr>
    <td>Se describe en el repositorio JCR como una estructura de nodos. Cada nodo que representa un elemento de la interfaz de usuario se denomina <em>Widget de ExtJS</em> y representado en el lado del cliente por <code>ExtJS</code>.</td>
@@ -138,13 +138,13 @@ Aunque no están directamente relacionados con una migración a la interfaz de u
 
 * [Plantillas](/help/sites-developing/templates.md) - [Plantillas editables](/help/sites-developing/page-templates-editable.md)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 
 >[!NOTE]
 >
 >Consulte también [Desarrollo: prácticas recomendadas](/help/sites-developing/best-practices.md).
 
-## Recursos adicionales {#further-resources}
+## Otros recursos {#further-resources}
 
 AEM Para obtener información completa sobre el desarrollo de los recursos, consulte la recopilación de recursos en:
 

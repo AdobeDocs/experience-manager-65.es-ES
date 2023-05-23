@@ -66,7 +66,7 @@ Una implementación típica de TarMK en modo de espera en frío:
 
 El flujo de datos está diseñado para detectar y gestionar automáticamente los problemas relacionados con la conexión y la red. Todos los paquetes están empaquetados con sumas de comprobación y tan pronto como se producen problemas con la conexión o paquetes dañados, se activan mecanismos de reintento.
 
-#### Actuación {#performance}
+#### Rendimiento {#performance}
 
 Habilitar el modo de espera en frío de TarMK en la instancia principal casi no tiene ningún impacto mensurable en el rendimiento. El consumo adicional de CPU es muy bajo y el disco duro y la E/S de red adicionales no deberían producir problemas de rendimiento y rendimiento.
 

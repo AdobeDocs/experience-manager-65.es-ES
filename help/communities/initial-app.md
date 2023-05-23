@@ -32,7 +32,7 @@ En este ejercicio, todas las páginas se basan en una plantilla simple.
 
 1. En el panel del explorador del CRXDE Lite:
 
-   * Seleccione `/apps/an-scf-sandbox/templates`
+   * Seleccionar `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Crear]** > **[!UICONTROL Crear plantilla]**
 
 1. En el cuadro de diálogo Crear plantilla, escriba los siguientes valores y haga clic en **[!UICONTROL Siguiente]**:

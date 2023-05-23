@@ -13,7 +13,7 @@ exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '750'
-ht-degree: 11%
+ht-degree: 9%
 
 ---
 
@@ -31,17 +31,17 @@ Aunque ilustra un vertical minorista, la forma en que se configura el sitio se p
 
 AEM AEM Como implementación de referencia estándar de, We.Retail muestra algunas de las funciones más potentes de las soluciones de de de.
 
-| **Función** | **Descripción** | **¿Interesado?** |
+| **Funcionalidad** | **Descripción** | **¿Interesado?** |
 |---|---|---|
 | [Estructura del sitio globalizada](/help/sites-administering/tc-bp.md) | We.Retail incluye formatos de idioma que se copian en tiempo real en sitios específicos de cada país. | [¡Pruébalo!](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [Diseño interactivo](/help/sites-authoring/responsive-layout.md) | Todas las páginas tienen un diseño interactivo para adaptarse dinámicamente a la pantalla y al tamaño del dispositivo. | [¡Pruébalo!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Plantillas editables](/help/sites-developing/page-templates-editable.md) | Todas las páginas se basan en plantillas editables, lo que permite a los usuarios que no son desarrolladores adaptar y personalizar las plantillas. | [¡Pruébalo!](/help/sites-developing/we-retail-editable-templates.md) |
-| [Lenguaje de plantilla HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | Todos los componentes se basan en HTL |  |
+| [Lenguaje de plantilla HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) | Todos los componentes se basan en HTL |  |
 | [Funcionalidades de eCommerce](/help/commerce/cif-classic/developing/ecommerce.md) | Incluye un catálogo de productos |  |
 | [Sitios de comunidades](/help/communities/overview.md) | Permite a los visitantes unirse a las discusiones de la comunidad, leer blogs y mucho más |  |
 | [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) | Todos los componentes se basan en los nuevos componentes principales y son más utilizables y configurables por el usuario de forma predeterminada | [¡Pruébalo!](/help/sites-developing/we-retail-core-components.md) |
 | [Fragmentos de contenido](/help/assets/content-fragments/content-fragments.md) | La sección Experiencias de We.Retail muestra la potencia de reutilizar contenido mediante fragmentos de contenido. | [¡Pruébelos!](/help/sites-developing/we-retail-content-fragments.md) |
-| [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md) | Un fragmento de experiencias es un grupo de uno o varios componentes que incluye contenido y diseño que se puede consultar dentro de las páginas. | [¡Pruébelos!](/help/sites-developing/we-retail-experience-fragments.md) |
+| [Fragmentos de experiencias](/help/sites-authoring/experience-fragments.md) | Un fragmento de experiencia es un grupo de uno o más componentes, incluido el contenido y el diseño, a los que se puede hacer referencia dentro de las páginas. | [¡Pruébelos!](/help/sites-developing/we-retail-experience-fragments.md) |
 
 ## Introducción {#getting-started}
 
@@ -79,7 +79,7 @@ La siguiente tabla ofrece información general sobre las principales funciones d
 * **Disponible** significa que los ejemplos de la función se encuentran en el contenido de muestra.
 * **No disponible** significa que los ejemplos de la función no están disponibles en el contenido de muestra, pero no significa que la función en sí no lo esté.
 
-| **Función** | **We.Retail** | **Geometrixx** |
+| **Funcionalidad** | **We.Retail** | **Geometrixx** |
 |---|---|---|
 | Estructura del sitio globalizada | Los formatos de idiomas se copian en tiempo real en sitios específicos de cada país | No disponible |
 | Fragmentos de contenido | Disponible | No disponible |

@@ -281,7 +281,7 @@ Existen varias propiedades que controlan el comportamiento de los comandos Desha
 
 El [Componente de vídeo](/help/sites-authoring/default-components-foundation.md#video) le permite colocar un elemento de vídeo predefinido y listo para usar en la página.
 
-Para que se dé una transcodificación adecuada, su administrador debe [instalar FFmpeg](/help/sites-administering/config-video.md#install-ffmpeg) de manera separada. También pueden [Configurar los perfiles de vídeo](/help/sites-administering/config-video.md#configure-video-profiles) para su uso con elementos html5.
+Para que se produzca la transcodificación adecuada, su administrador debe [Instalar FFmpeg](/help/sites-administering/config-video.md#install-ffmpeg) por separado. También pueden [Configurar los perfiles de vídeo](/help/sites-administering/config-video.md#configure-video-profiles) para su uso con elementos html5.
 
 ### Configuración y personalización de informes {#configuring-and-customizing-reports}
 

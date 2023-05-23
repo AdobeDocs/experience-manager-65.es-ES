@@ -51,7 +51,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >
 >El Día 2 difícil no tiene una etapa de limpieza. Como resultado, se recomienda ejecutar Día difícil 2 en una instancia de ensayo clonada y no en la instancia de producción principal. La instancia de ensayo debe eliminarse después de las pruebas.
 
-### Ayuda {#getting-help}
+### Obtención de ayuda {#getting-help}
 
 Tough Day 2 ofrece una amplia gama de opciones de ayuda a las que se puede acceder desde la línea de comandos. Por ejemplo:
 
@@ -66,7 +66,7 @@ En la tabla siguiente, puede encontrar los parámetros de ayuda relevantes.
   <tr>
    <td><strong>Parámetro</strong></td>
    <td><strong>Descripción</strong></td>
-   <td><strong>Ejemplo</strong></td>
+   <td><strong>Ejemplos</strong></td>
   </tr>
   <tr>
    <td>--help</td>

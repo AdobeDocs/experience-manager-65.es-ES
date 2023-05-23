@@ -95,7 +95,7 @@ Tag[] tags = tagManager.getTags(resource);
 tagManager.setTags(resource, tags);
 ```
 
-### Búsqueda de tags {#searching-for-tags}
+### Búsqueda de etiquetas {#searching-for-tags}
 
 ```java
 // Searching for the Resource objects that are tagged with the tag object:
@@ -114,7 +114,7 @@ long count = tag.getCount();
 >
 >`com.day.cq.commons.RangeIterator`
 
-### Eliminación de tags {#deleting-tags}
+### Eliminación de etiquetas {#deleting-tags}
 
 ```java
 tagManager.deleteTag(tag);

@@ -39,12 +39,12 @@ En la navegación global en una instancia de autor, seleccione **[!UICONTROL Her
 
 ![create-site-template](assets/create-site-template1.png)
 
-* Seleccione `Create button`
+* Seleccionar `Create button`
 * INFORMACIÓN BÁSICA
 
    * `Name`: Plantilla de una sola página
    * `Description`: una plantilla que consta de una sola función Página.
-   * Seleccione `Enabled`
+   * Seleccionar `Enabled`
 
 ![site-template-editor](assets/site-template-editor.png)
 
@@ -86,17 +86,17 @@ Después de crear la plantilla del sitio, en navegación global, seleccione **[!
       ![create-community-site-template](assets/create-community-site-template.png)
 
 
-* Seleccione `Next`
+* Seleccionar `Next`
 * Paso `2 - Design`
 
    * Seleccione cualquier diseño
 
-* Seleccione `Next`
-* Seleccione `Next`
+* Seleccionar `Next`
+* Seleccionar `Next`
 
    (Aceptar todos los ajustes predeterminados)
 
-* Seleccione `Create`
+* Seleccionar `Create`
 
    ![create-community-site](assets/create-community-site.png)
 

@@ -8,7 +8,7 @@ exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 35%
+ht-degree: 0%
 
 ---
 
@@ -18,16 +18,16 @@ ht-degree: 35%
 
 ## ¿Qué es la administración de activos digitales? {#what-is-digital-asset-management}
 
-[!DNL Assets] proporciona un método de uso compartido y distribución en toda la empresa de los activos digitales clave de una organización. Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales, como imágenes, gráficos, audio, vídeo y documentos, a través de una interfaz web (o una carpeta CIFS o WebDAV).
+[!DNL Assets] permite compartir y distribuir en toda la empresa los recursos digitales clave de una organización. Los usuarios de una organización pueden almacenar, administrar y acceder a recursos digitales, como imágenes, gráficos, audio, vídeo y documentos, a través de una interfaz web (o una carpeta CIFS o WebDAV).
 
 [!DNL Assets] capacidad de [!DNL Experience Manager] permite hacer lo siguiente:
 
-* Añadir y compartir imágenes, documentos, audio y vídeo en diversos formatos de archivo.
-* Administre los recursos agrupándolos por etiquetas, lightbox o estrellas (sus favoritos). Añadir anotaciones a los recursos.
-* Buscar recursos por nombres de archivo, texto completo de documentos, fechas, tipo de documento y etiquetas.
-* Añadir o editar información de metadatos para los activos. Automáticamente, se genera una versión de los metadatos junto con el activo correspondiente. Los metadatos de activos se pueden importar o exportar.
-* Realizar funciones de edición de imágenes, como escalar y añadir filtros de imagen. Importar y exportar varios activos digitales de forma simultánea mediante una carpeta WebDAV o CIFS.
-* Usar los flujos de trabajo y las notificaciones para permitir el procesamiento y la descarga de forma conjunta de cualquier grupo de activos y administrar los derechos de acceso a los activos.
+* Agregue y comparta imágenes, documentos, archivos de audio y archivos de vídeo en diversos formatos de archivo.
+* Administre los recursos agrupándolos por etiquetas, lightbox o estrellas (sus favoritos). Agregar anotaciones a recursos.
+* Busque recursos buscando nombres de archivo, el texto completo de los documentos y buscando fechas, tipo de documento y etiquetas.
+* Añada o edite la información de metadatos de los recursos. Las versiones de los metadatos se realizan automáticamente junto con el recurso correspondiente. Puede importar o exportar metadatos de recursos.
+* Realizar funciones de edición de imágenes, como escalar y añadir filtros de imagen. Importe y exporte varios recursos digitales simultáneamente mediante una carpeta WebDAV o CIFS.
+* Utilice flujos de trabajo y notificaciones para permitir el procesamiento y la descarga conjuntos de cualquier conjunto de recursos y administrar los derechos de acceso a los recursos.
 
 ### [!DNL Experience Manager Assets] está integrado con [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
 
@@ -40,13 +40,13 @@ La interfaz de usuario básica es la misma que la de [!DNL Sites]. Consulte [Inf
 Al determinar si colocar una imagen en el repositorio de DAM o utilizar un componente de imagen, tenga en cuenta el ciclo vital de la imagen:
 
 * Si la imagen tiene el mismo ciclo de vida que la página, utilice el componente Imagen.
-* Si la imagen tiene un ciclo de vida independiente, por ejemplo, si utiliza la imagen dos veces o fuera de WCM, emplee [!DNL Assets].
+* Si la imagen tiene un ciclo de vida independiente, por ejemplo, si utiliza la imagen dos veces o fuera de WCM, utilice [!DNL Assets].
 
 ## ¿Qué son los recursos digitales? {#what-are-digital-assets}
 
 Un recurso es un documento digital, una imagen, un vídeo o audio (o parte del mismo) que puede tener varias representaciones y subrecursos (por ejemplo, capas en un archivo de Photoshop, diapositivas en un archivo de PowerPoint, páginas en un PDF o archivos en un ZIP).
 
-Un activo es, en esencia, un binario más metadatos, representaciones y subactivos. Consulte la [Guía de rendimiento de DAM](/help/sites-deploying/assets-performance-sizing.md) para obtener información detallada.
+Un recurso es esencialmente un binario más metadatos más representaciones más recursos secundarios. Consulte la [Guía de rendimiento de DAM](/help/sites-deploying/assets-performance-sizing.md) para obtener información detallada.
 
 >[!CAUTION]
 >
@@ -58,32 +58,32 @@ Cuando se trabaja con recursos digitales en [!DNL Experience Manager], debe comp
 
 * **Colección**: una colección de recursos, ya sea en función de la ubicación física (carpeta), las propiedades comunes (carpeta de búsqueda guardada) o la selección del usuario (carpetas Lightbox).
 
-* **Metadatos** [!DNL Assets] tienen metadatos; por ejemplo, autor, fecha de caducidad, información de DRM (Digital Rights Management), etc. Los metadatos están sujetos a control de acceso. [!DNL Assets] admite los siguientes esquemas comunes de metadatos predefinidos:
+* **Metadatos** [!DNL Assets] tienen metadatos; por ejemplo, autor, fecha de caducidad, información de DRM (Digital Rights Management), etc. Los metadatos están bajo control de acceso. [!DNL Assets] admite los siguientes esquemas de metadatos comunes predeterminados:
 
-   * Dublin Core: incluye autor, descripción, fecha, asunto, etc.
+   * Núcleo de Dublín: incluye autor, descripción, fecha, asunto, etc.
    * IPTC: incluye evento, modelo, ubicación, etc.
    * WCM: incluidas las propiedades de página, [!UICONTROL Tiempo de activación] y [!UICONTROL Tiempo de inactividad], etc.
 
 * **Etiquetado**: [!DNL Assets] pueden etiquetarse y clasificarse. Consulte [organización de recursos](/help/assets/organize-assets.md).
 
-* **Representaciones**: una representación es la representación binaria de un recurso. [!DNL Assets] siempre tienen una representación principal: la del archivo cargado. Pueden tener una multitud de representaciones adicionales que se crean, por ejemplo, por medio de flujos de trabajo personalizados o al cargar un recurso. Las representaciones pueden tener tamaños y resoluciones distintas, y tener agregadas marcas de agua o cualquier otra característica modificada.
+* **Representaciones**: una representación es la representación binaria de un recurso. [!DNL Assets] siempre tienen una representación principal: la del archivo cargado. Pueden tener cualquier número de representaciones adicionales que se creen, por ejemplo, mediante pasos de flujo de trabajo personalizados o cuando se carga un recurso. Las representaciones pueden tener un tamaño diferente, con una resolución diferente, con una marca de agua agregada o cualquier otra característica modificada.
 
-* **Versiones**: el control de versiones crea una instantánea de los recursos digitales en un momento específico. Los activos se pueden restaurar a versiones anteriores. Consulte [versiones en [!DNL Assets]](manage-assets.md#asset-versioning).
+* **Versiones**: el control de versiones crea una instantánea de los recursos digitales en un momento específico. Puede restaurar los recursos a versiones anteriores. Consulte [versiones en [!DNL Assets]](manage-assets.md#asset-versioning).
 
 * **Subrecursos**: los subrecursos son recursos que conforman un recurso, por ejemplo, capas de un [!DNL Adobe Photoshop] archivo o páginas en un archivo de PDF. Entrada [!DNL Assets], puede administrar subrecursos del mismo modo que lo haría con los recursos.
 
 ### Cómo trabajar con recursos digitales {#how-to-work-with-assets}
 
-Las acciones se realizan sobre activos o colecciones. Sirven para crear o modificar activos, colecciones y representaciones. Muchas de las acciones básicas que realiza en los recursos (cargar, eliminar, actualizar, guardar subrecursos) almacenan en déclencheur los flujos de trabajo preconfigurados. Se activan automáticamente en [!DNL Assets] y se describen detalladamente en [!DNL Assets] controladores de medios.
+Realiza una acción en un recurso o una colección. Las acciones pueden crear o modificar recursos, colecciones y representaciones. Muchas de las acciones básicas que realiza en los recursos (cargar, eliminar, actualizar, guardar subrecursos) almacenan en déclencheur los flujos de trabajo preconfigurados. Se activan automáticamente en [!DNL Assets] y se describen detalladamente en [!DNL Assets] controladores de medios.
 
 Las tareas que puede realizar con estos flujos de trabajo preconfigurados:
 
 * Guarde el recurso en el repositorio o elimínelo de él.
 * XMP Extraiga y guarde metadatos para el recurso; los elementos de metadatos individuales se guardan como elementos de metadatos de archivo
 * Generar representaciones y miniaturas del recurso, incluido el cambio de tamaño y el recorte automáticos cuando sea necesario.
-* Transcodifique el recurso donde sea necesario. Por ejemplo, los vídeos para uso en móviles e Internet se transcodifican con 24 fotogramas por segundo y se descargan con 30 fotogramas por segundo. El audio para uso móvil y web se transcodifica con 128 Kbps, el audio para descarga con 192 Kbps.
+* Transcodifique el recurso donde sea necesario. Por ejemplo, el vídeo para uso móvil y web se transcodifica con 24 fotogramas por segundo y el vídeo de descarga con 30 fotogramas por segundo. El audio para uso móvil y web se transcodifica con 128 Kbps, el audio para descarga con 192 Kbps.
 
-Los flujos de trabajo también se pueden aplicar manualmente. Consulte en [Controladores de medios de Assets](media-handlers.md) la lista de flujos de trabajo predeterminados.
+Por supuesto, también puede aplicar flujos de trabajo manualmente. Consulte [Controladores de medios de recursos](media-handlers.md)para obtener una lista de flujos de trabajo predeterminados.
 
 ## [!DNL Experience Manager Assets] y [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 

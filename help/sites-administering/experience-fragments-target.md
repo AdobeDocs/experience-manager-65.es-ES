@@ -245,7 +245,7 @@ El `nocloudconfigs` El selector de se define mediante el uso de HTL y se puede s
 
 El `atoffer` el selector se aplica realmente después del procesamiento utilizando [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Se puede utilizar para eliminar las bibliotecas de cliente.
 
-### Ejemplo {#example}
+### Ejemplos {#example}
 
 Para el propósito aquí, ilustraremos cómo hacer esto con `nocloudconfigs`.
 

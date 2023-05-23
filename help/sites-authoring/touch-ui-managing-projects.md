@@ -13,7 +13,7 @@ exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 23%
+ht-degree: 7%
 
 ---
 
@@ -43,30 +43,30 @@ Siga estos pasos para crear un nuevo proyecto.
 
    ![Asistente de Creación de proyectos](assets/create-project-wizard.png)
 
-1. Defina el **Título** y la **Descripción** y añada una imagen en **miniatura** si es necesario. También puede añadir o eliminar a usuarios y al grupo al que pertenecen.
+1. Defina el **Título** y la **Descripción** y añada una imagen en **miniatura** si es necesario. También puede agregar o eliminar usuarios y a qué grupo pertenecen.
 
    ![Paso Propiedades del asistente](assets/create-project-wizard-properties.png)
 
-1. Toque o haga clic en **Crear**. La confirmación le preguntará si desea abrir el proyecto nuevo o regresar a la consola.
+1. Toque o haga clic en **Crear**. La confirmación le preguntará si desea abrir el nuevo proyecto o volver a la consola.
 
 El procedimiento para crear un proyecto es el mismo para todas las plantillas de proyecto. La diferencia entre los tipos de proyectos se relaciona con los proyectos disponibles [funciones de usuario](/help/sites-authoring/projects.md) y [flujos de trabajo.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Asociación de recursos al proyecto {#associating-resources-with-your-project}
 
-Los proyectos permiten agrupar recursos en una entidad para administrarlos en su conjunto. Por lo tanto, debe asociar recursos al proyecto. Estos recursos se agrupan dentro del proyecto como **Mosaicos**. Los tipos de recursos que puede añadir se describen en [Mosaicos de proyecto](/help/sites-authoring/projects.md#project-tiles).
+Los proyectos permiten agrupar recursos en una entidad para administrarlos en su conjunto. Por lo tanto, debe asociar recursos al proyecto. Estos recursos se agrupan dentro del proyecto como **Mosaicos**. Los tipos de recursos que puede agregar se describen en [Mosaicos del proyecto](/help/sites-authoring/projects.md#project-tiles).
 
 Para asociar recursos al proyecto:
 
-1. Abra el proyecto en la consola **Proyectos**.
-1. Toque o haga clic en **Añadir mosaico** y seleccione el mosaico que desea vincular al proyecto. Puede seleccionar varios tipos de mosaicos.
+1. Abra el proyecto desde el **Proyectos** consola.
+1. Pulse o haga clic en **Añadir mosaico** y seleccione el mosaico que desea vincular a su proyecto. Puede seleccionar varios tipos de mosaicos.
 
    ![Agregar mosaico](assets/project-add-tile.png)
 
 1. Toque o haga clic en **Crear**. El recurso está vinculado al proyecto y, a partir de ahora, podrá acceder a él desde el proyecto.
 
-### Adición de elementos a un mosaico {#adding-items-to-a-tile}
+### Agregar elementos a un mosaico {#adding-items-to-a-tile}
 
-En algunos mosaicos, puede que desee añadir más de un elemento. Por ejemplo, puede tener más de un flujo de trabajo que se ejecuta al mismo tiempo o más de una experiencia.
+En algunos mosaicos, es posible que desee agregar más de un elemento. Por ejemplo, puede tener más de un flujo de trabajo ejecutándose a la vez o más de una experiencia.
 
 Para agregar elementos a un mosaico:
 
@@ -82,11 +82,11 @@ Para agregar elementos a un mosaico:
 
 El propósito principal de los proyectos es agrupar la información asociada en un solo lugar para que sea más accesible y procesable. Existen varias formas de acceder a esta información.
 
-### Apertura de un mosaico {#opening-a-tile}
+### Abrir un mosaico {#opening-a-tile}
 
-Puede que desee ver qué elementos se incluyen en un mosaico actual, o modificar o eliminar elementos del mosaico.
+Es posible que desee ver qué elementos se incluyen en un mosaico actual o modificar o eliminar elementos en el mosaico.
 
-Para abrir un mosaico para que pueda ver o modificar elementos:
+Para abrir un mosaico para poder ver o modificar elementos:
 
 1. Toque o haga clic en el icono de elipses en la parte inferior derecha del mosaico.
 
@@ -96,9 +96,9 @@ Para abrir un mosaico para que pueda ver o modificar elementos:
 
    ![Tareas del proyecto](assets/project-tasks.png)
 
-### Visualización de una línea de tiempo del proyecto {#viewing-a-project-timeline}
+### Visualización de la cronología de un proyecto {#viewing-a-project-timeline}
 
-La línea de tiempo del proyecto proporciona información sobre cuándo se utilizaron por última vez los recursos del proyecto. Para ver la cronología del proyecto, siga estos pasos.
+La cronología del proyecto proporciona información sobre la última vez que se utilizaron los recursos del proyecto. Para ver la cronología del proyecto, siga estos pasos.
 
 1. En el **Proyectos** consola, toque o haga clic en **Cronología** en el selector de raíl en la parte superior izquierda de la consola.
    ![Selección del modo de cronología](assets/projects-timeline-rail.png)

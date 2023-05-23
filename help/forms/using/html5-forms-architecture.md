@@ -33,7 +33,7 @@ La funcionalidad de los formularios HTML5 se implementa como un paquete en la in
 
 Para obtener más información sobre el extremo REST y los parámetros de solicitud admitidos, consulte [Plantilla de formulario de renderización](/help/forms/using/rendering-form-template.md).
 
-Cuando un usuario realiza una solicitud desde un dispositivo cliente, como un explorador iOS o Android™, Sling resuelve primero el nodo de perfil en función de la dirección URL de la solicitud. En este nodo de perfil, se lee **sling:resourceSuperType** y **sling:resourceType** para determinar todos los scripts disponibles que puedan administrar esta solicitud del procesador de Forms. A continuación, se utilizan selectores de solicitud de Sling junto con el método de solicitud para identificar el script más adecuado para administrar esta solicitud. Una vez que la solicitud llega a un JSP del procesador de perfiles, el JSP llama al servicio OSGi de Forms.
+Cuando un usuario realiza una solicitud desde un dispositivo cliente, como un explorador iOS o Android™, Sling resuelve primero el nodo del perfil en función de la dirección URL de la solicitud. En este nodo de perfil, se lee **sling:resourceSuperType** y **sling:resourceType** para determinar todos los scripts disponibles que puedan administrar esta solicitud del procesador de Forms. A continuación, se utilizan selectores de solicitud de Sling junto con el método de solicitud para identificar el script más adecuado para administrar esta solicitud. Una vez que la solicitud llega a un JSP del procesador de perfiles, el JSP llama al servicio OSGi de Forms.
 
 Para obtener más información sobre la resolución de scripts de Sling, consulte [Hoja de características de Sling de AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es) o [Descomposición de la URL de Apache Sling](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
@@ -179,7 +179,7 @@ El nodo Perfil tiene una propiedad **sling:resourceSuperType** con el valor **xf
 * **xfaforms.I18N.&lt;locale>**: esta biblioteca contiene datos localizados.
 * **xfaforms.profile**: esta biblioteca contiene la implementación para el motor de diseño y los scripts XFA.
 
-Estas bibliotecas están modeladas como CQ Client Libraries que aprovechan las capacidades de concatenación, minificación y compresión automáticas de las bibliotecas JavaScript del marco de CQ.
+Estas bibliotecas están modeladas como bibliotecas de cliente de CQ que aprovechan las capacidades de concatenación, minificación y compresión automáticas de las bibliotecas JavaScript del marco de CQ.
 Para obtener más información sobre las bibliotecas de cliente de CQ, consulte [Documentación la biblioteca de cliente de CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
 
 Como se ha descrito anteriormente, el procesador de perfiles JSP llama al servicio Forms a través de una inclusión sling. Este JSP también establece varias opciones de depuración en función de la configuración de administración o los parámetros de solicitud.

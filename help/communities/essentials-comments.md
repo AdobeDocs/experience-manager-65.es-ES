@@ -67,7 +67,7 @@ Otras características ya incluyen el sistema de comentarios. Estos son:
 * [Biblioteca de archivos](essentials-file-library.md)
 * [Foro](essentials-forum.md)
 * [P y R](qna-essentials.md)
-* [Críticas](reviews-basics.md)
+* [Repasos](reviews-basics.md)
 
 ### Lista de motivos de indicación {#flag-reason-list}
 

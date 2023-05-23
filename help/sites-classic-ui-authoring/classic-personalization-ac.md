@@ -19,9 +19,9 @@ ht-degree: 2%
 
 Adobe Campaign es un conjunto de soluciones que le permite personalizar y entregar campañas en todos sus canales en línea y sin conexión.
 
-Esta documentación describe cómo trabajar con Adobe Campaign:
+En esta documentación se describe cómo trabajar con Adobe Campaign:
 
-* Adobe Campaign 6.1, que es la solución local.
+* Adobe Campaign 6.1, que es la solución on-premise.
 * Adobe Campaign Standard, que es la solución basada en suscripciones.
 
 Consulte lo siguiente:
@@ -30,9 +30,9 @@ Consulte lo siguiente:
 * [Componentes de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
 * [Segmentación de Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
-Anteriormente debe tener [AEM integrado con Adobe Campaign](/help/sites-administering/campaign.md).
+Anteriormente, debe tener [AEM integrado con Adobe Campaign](/help/sites-administering/campaign.md).
 
-Además, si desea personalizar las integraciones, consulte los siguientes temas:
+Además, si desea personalizar las integraciones, consulte los temas siguientes:
 
 * [Creación de extensiones personalizadas](/help/sites-developing/extending-campaign-extensions.md)
-* [Creación de asignaciones de formularios personalizados](/help/sites-developing/extending-campaign-form-mapping.md)
+* [Crear asignaciones de formularios personalizadas](/help/sites-developing/extending-campaign-form-mapping.md)

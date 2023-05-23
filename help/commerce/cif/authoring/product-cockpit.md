@@ -59,7 +59,7 @@ Al hacer clic en un producto, se cargarán las variaciones de productos si está
 
 Se proporciona una búsqueda de texto completo sobre el catálogo de productos completo en la pestaña del filtro izquierdo para encontrar productos rápidamente.
 
-![búsqueda](/help/commerce/cif/assets/search-cockpit.png)
+![buscar](/help/commerce/cif/assets/search-cockpit.png)
 
 ## Exploración del catálogo de productos escalonado {#staged-product-catalogs}
 
@@ -79,6 +79,6 @@ Las pestañas general y de variante muestran propiedades de comercio predefinida
 
 ### AEM Pestañas de contenido {#content-tabs}
 
-AEM AEM Estas pestañas, agrupadas por tipos de contenido de (Fragmentos de experiencias, Fragmentos de contenido, Recursos asociados), muestran contenido de la lista de contenido asociado con el objeto de comercio, que se encuentra asociado con el contenido de la lista de distribución de contenido. La acción &quot;Ver detalles&quot; abre una nueva pestaña del explorador con el contenido seleccionado.
+AEM AEM Estas pestañas, agrupadas por tipos de contenido de (Fragmentos de experiencias, Fragmentos de contenido, Recursos asociados), muestran contenido de la lista de contenido asociado con el objeto de comercio, que se encuentra asociado con el contenido de la lista. La acción &quot;Ver detalles&quot; abre una nueva pestaña del explorador con el contenido seleccionado.
 
 ![propiedades de contenido](/help/commerce/cif/assets/content-properties.png)

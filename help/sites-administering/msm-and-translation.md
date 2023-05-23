@@ -13,11 +13,11 @@ exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 43%
+ht-degree: 42%
 
 ---
 
-# Administración de sitios web {#website-administration}
+# Administración de sitios web{#website-administration}
 
 Las siguientes herramientas de administración están disponibles para administrar sitios web y páginas:
 

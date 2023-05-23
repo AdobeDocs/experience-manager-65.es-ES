@@ -352,7 +352,7 @@ El servicio de relleno previo es un servicio OSGi y se empaqueta a través del p
 
 #### Crear un servicio de relleno previo {#create-a-prefill-service}
 
-El paquete de plantillas (paquete de servicio de relleno previo de ejemplo) contiene una implementación de ejemplo del servicio de relleno previo. Abra el paquete de plantillas en un editor de código. Por ejemplo, abra el proyecto de plantillas en Eclipse para editarlo. Después de abrir el paquete de plantillas en un editor de código, realice los siguientes pasos para crear el servicio.
+El paquete de plantillas (paquete de servicio de relleno previo de ejemplo) contiene una implementación de ejemplo del servicio de relleno previo de AEM Forms. Abra el paquete de plantillas en un editor de código. Por ejemplo, abra el proyecto de plantillas en Eclipse para editarlo. Después de abrir el paquete de plantillas en un editor de código, realice los siguientes pasos para crear el servicio.
 
 1. Abra el archivo src\main\java\com\adobe\test\Prefill.java para editarlo.
 1. En el código, establezca el siguiente valor:

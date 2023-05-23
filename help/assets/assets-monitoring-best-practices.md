@@ -193,7 +193,7 @@ Estas son algunas comprobaciones de estado listas para usar que son útiles para
 En el proceso de monitorización, si encuentra problemas, estas son algunas tareas de resolución de problemas que puede realizar para resolver problemas comunes con [!DNL Experience Manager] implementaciones:
 
 * Si usa TarMK, ejecute la compactación de Tar con frecuencia. Para obtener más información, consulte [Mantener el repositorio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Marque `OutOfMemoryError` registros. Para obtener más información, consulte [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
+* Marque `OutOfMemoryError` registros. Para obtener más información, consulte [Analizar problemas de memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=es).
 
 * Consulte en los registros cualquier referencia a consultas sin indexar, recorridos de árbol o recorridos de índice. Indican consultas no indexadas o consultas indexadas inadecuadamente. Para conocer las prácticas recomendadas sobre la optimización del rendimiento de consultas e indexación, consulte [Prácticas recomendadas para consultas e indexación](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilice la consola de flujo de trabajo para comprobar que los flujos de trabajo funcionan según lo esperado. Si es posible, condense varios flujos de trabajo en uno solo.

@@ -674,12 +674,12 @@ AEM Para configurar cómo se añaden los vínculos en los vínculos desde otro p
 
       * **Nombre** `cssInternal`
       * **Tipo** `String`
-      * **Valor** el nombre de la clase CSS (sin &#39;.&#39;); por ejemplo, `cssClass` en lugar de `.cssClass`)
+      * **Valor** el nombre de la clase CSS (sin &#39;.&#39; anterior); por ejemplo, `cssClass` en lugar de `.cssClass`)
    * Estilo CSS para vínculos externos
 
       * **Nombre** `cssExternal`
       * **Tipo** `String`
-      * **Valor** el nombre de la clase CSS (sin &#39;.&#39; anterior); por ejemplo, `cssClass` en lugar de `.cssClass`)
+      * **Valor** el nombre de la clase CSS (sin &#39;.&#39;); por ejemplo, `cssClass` en lugar de `.cssClass`)
    * Matriz de válidos **protocolos**. Los protocolos admitidos son `http://`, `https://`, `file://`, y `mailto:`.
 
       * **Nombre** `protocols`

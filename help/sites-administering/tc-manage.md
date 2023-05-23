@@ -5,7 +5,7 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
 workflow-type: tm+mt
 source-wordcount: '3536'
-ht-degree: 55%
+ht-degree: 57%
 
 ---
 
@@ -374,9 +374,9 @@ Para comparar las copias de idioma con el idioma principal:
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
-1. Las dos páginas (lanzamiento y origen) se abrirán en paralelo.
+1. Las dos páginas (inicio y origen) se abrirán en paralelo.
 
-   Para obtener información completa sobre el uso de esta característica, consulte la [diferencia de la página](/help/sites-authoring/page-diff.md).
+   Para obtener información completa sobre el uso de esta función, consulte [Diferencias de página](/help/sites-authoring/page-diff.md).
 
 ## Finalización y archivado de trabajos de traducción {#completing-and-archiving-translation-jobs}
 
@@ -412,11 +412,11 @@ Rellene la copia de idioma para que albergue contenido de la lengua principal qu
 
 ## Mover una página de origen o cambiarle el nombre {#move-source}
 
-Si una página de origen ya traducida necesita ser [cambiado de nombre o movido](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), volver a traducir la página después del traslado creará una nueva copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior seguirá ahí.
+Si una página de origen ya traducida necesita ser [cambiada de nombre o movida](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), volver a traducir la página después del traslado creará una nueva copia de idioma basada en el nuevo nombre/ubicación de la página. La copia de idioma antigua basada en el nombre/ubicación anterior seguirá ahí.
 
 La práctica recomendada en este escenario es seguir este procedimiento:
 1. Cancele la publicación de las copias de idioma asociadas con la página de origen que desee mover.
-1. Elimínelos.
+1. Elimínelas.
 1. Cree nuevas copias de idioma a partir de la página de origen que acaba de mover.
 1. Publique las copias de idioma recién creadas.
 

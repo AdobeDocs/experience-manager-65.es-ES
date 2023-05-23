@@ -636,7 +636,7 @@ propset -q|-R <propname> <propval> <file1> [<file2> ...]
 | `<propval>` | el valor de la propiedad |
 | `<file> [<file> ...]` | archivo o directorio en el que establecer la propiedad |
 
-### Añada {#add}
+### Añadir {#add}
 
 Pone los archivos y directorios bajo control de versiones y los programa para agregarlos al repositorio. Se agregarán en la próxima confirmación.
 

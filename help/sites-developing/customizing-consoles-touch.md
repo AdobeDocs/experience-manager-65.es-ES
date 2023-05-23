@@ -149,7 +149,7 @@ Para personalizar las columnas en la vista de lista:
    * Añada las columnas nuevas o elimine las existentes.
    Consulte [Uso de superposiciones (y la fusión de recursos de Sling)](/help/sites-developing/overlays.md) para obtener más información.
 
-1. De forma opcional:
+1. Opcionalmente:
 
    * Si desea conectar datos adicionales, debe escribir un [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
       `pageInfoProviderType` propiedad.

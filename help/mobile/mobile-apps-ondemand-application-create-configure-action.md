@@ -13,7 +13,7 @@ exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -61,7 +61,7 @@ Al crear una aplicación nueva basada en la plantilla de otra aplicación, obten
 
 Debe tener una plantilla de aplicación móvil existente (o una aplicación instalada que tenga una plantilla de aplicación) para utilizar esta función.
 
-### El paso siguiente {#the-next-step}
+### El siguiente paso {#the-next-step}
 
 Una vez que haya creado una aplicación bajo demanda desde el panel de aplicaciones, el siguiente paso es asociar la aplicación a la configuración en la nube.
 

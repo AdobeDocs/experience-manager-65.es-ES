@@ -14,7 +14,7 @@ exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 96%
+ht-degree: 54%
 
 ---
 
@@ -28,7 +28,7 @@ Se puede acceder a ella desde **Herramientas ->** **General ->** **Componentes**
 
 >[!NOTE]
 >
->La consola Componentes muestra todos los componentes en el sistema. El [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) muestra los componentes disponibles para los autores y oculta cualquier grupo de componentes que comience con un punto ( `.`).
+>La consola Componentes muestra todos los componentes del sistema. El [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) muestra los componentes disponibles para los autores y oculta cualquier grupo de componentes que comience con un punto ( `.`).
 
 ## Búsqueda {#searching}
 
@@ -38,7 +38,7 @@ Con el icono **Solo contenido** (parte superior izquierda) podrá abrir el panel
 
 ### Detalles de los componentes {#component-details}
 
-Para ver los detalles de un componente específico, toque o haga clic en el recurso necesario. Encontrará lo siguiente en tres fichas:
+Para ver los detalles de un componente específico, toque o haga clic en el recurso requerido. Hay tres pestañas que proporcionan:
 
 * **Propiedades**
 
@@ -47,12 +47,12 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
    En la pestaña Propiedades puede:
 
    * Consulte las propiedades generales del componente.
-   * Ver cómo [se ha definido el icono o la abreviatura](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para el componente.
+   * Ver cómo se [se ha definido un icono o una abreviatura](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para el componente.
 
-      * Si hace clic en el origen del icono, se le dirigirá a dicho componente.
-   * Ver el **tipo de recurso** y el **supertipo de recurso** (si está definido) para el componente.
+      * Al hacer clic en el origen del icono, se le dirigirá a ese componente.
+   * Ver el **Tipo de medio** y **Supertipo de recurso** (si se define) para el componente.
 
-      * Si hace clic en el supertipo de recurso, se le dirigirá a dicho componente.
+      * Al hacer clic en el supertipo de recurso, accederá a ese componente.
    >[!NOTE]
    >
    >Debido a que `/apps` no se puede editar en el tiempo de ejecución, la consola Componentes es de solo lectura.
@@ -71,6 +71,6 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
 
 * **Documentación**
 
-   Si el desarrollador ha proporcionado [documentación del componente](/help/sites-developing/developing-components.md#documenting-your-component), esta aparecerá en la pestaña **Documentación**. Si no hay documentación disponible, no se mostrará la pestaña **Documentación.**
+   Si el desarrollador ha proporcionado [documentación del componente](/help/sites-developing/developing-components.md#documenting-your-component), aparecerá en la **Documentación** pestaña. Si no hay documentación disponible, no se mostrará la pestaña **Documentación.**
 
    ![chlimage_1-171](assets/chlimage_1-171.png)

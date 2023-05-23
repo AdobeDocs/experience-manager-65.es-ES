@@ -77,7 +77,7 @@ A continuación encontrará una lista de los xtype disponibles en Adobe Experien
 
    BlueprintStatus proporciona un panel para ver y editar un modelo y sus relaciones de Live Copies. La exploración se realiza mediante una [CQ.wcm.msm.BlueprintStatus.Tree](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintStatus.Tree), edición a través de un [CQ.wcm.msm.BlueprintConfig](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.BlueprintConfig) y a [CQ.wcm.msm.LiveCopyProperties](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.msm.LiveCopyProperties).
 
-* box
+* caja
 
    [CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent)
 
@@ -293,7 +293,7 @@ A continuación encontrará una lista de los xtype disponibles en Adobe Experien
 
    DateTime permite al usuario introducir una fecha y una hora combinando [CQ.Ext.form.DateField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.DateField) y [CQ.Ext.form.TimeField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TimeField).
 
-* el cuadro de diálogo
+* cuadro de diálogo
 
    [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)
 
@@ -609,7 +609,7 @@ A continuación encontrará una lista de los xtype disponibles en Adobe Experien
 
    El campo de referencia de párrafo permite examinar las páginas y seleccionar uno de sus párrafos. Consiste en un campo de déclencheur y un cuadro de diálogo de exploración de párrafo asociado.
 
-* password
+* contraseña
 
    [CQ.form.Password](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.Password)
 
@@ -787,7 +787,7 @@ A continuación encontrará una lista de los xtype disponibles en Adobe Experien
 
    Botón dividido que proporciona una flecha desplegable integrada que puede activar un evento independientemente del evento de clic predeterminado del botón. Normalmente, esto se utilizaría para mostrar un menú desplegable que proporciona opciones adicionales a la acción del botón principal, pero cualquier controlador personalizado puede proporcionar la implementación mediante flechas.
 
-* static
+* estático
 
    [CQ.Static](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Static)
 

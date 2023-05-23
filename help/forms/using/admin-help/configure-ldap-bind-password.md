@@ -13,7 +13,7 @@ exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 9%
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,7 @@ Para evitar riesgos de seguridad, el campo de contraseña de enlace del archivo 
 
 1. En la consola de administración, haga clic en Configuración > Administración de usuarios > Configuración > Importar y exportar archivos de configuración.
 1. Para exportar la configuración actual a un archivo, haga clic en Exportar y guarde el archivo de configuración en otra ubicación.
-1. En el archivo, busque `Domains` > *[Su nombre de dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` nodo. He aquí un ejemplo:
+1. En el archivo, busque `Domains` > *[Su nombre de dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` nodo. A continuación se muestra un ejemplo:
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -38,7 +38,7 @@ Para evitar riesgos de seguridad, el campo de contraseña de enlace del archivo 
 
    Escriba un valor para `bindpassword` y guarde los cambios.
 
-1. En el archivo, busque `Domains` > *[Su nombre de dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` nodo. He aquí un ejemplo:
+1. En el archivo, busque `Domains` > *[Su nombre de dominio]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` nodo. A continuación se muestra un ejemplo:
 
    ```xml
     <node name="LDAPUserConfig">

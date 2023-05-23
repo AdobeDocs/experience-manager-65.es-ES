@@ -18,7 +18,7 @@ Después de instalar el [AEM Paquete de servicio 6.5.15.0 de](https://experience
 
 AEM Después de instalar el paquete de servicio 6.5.15.0 de, el CRX/paquete y la página de inicio muestran errores de servicio no disponible.
 
-## Aplicable a {#applies-to}
+## Se aplica a {#applies-to}
 
 Esta solución se aplica a:
 * AEM Forms en todos los servidores JEE excepto en los que se ejecutan en JBoss EAP 7.4.0

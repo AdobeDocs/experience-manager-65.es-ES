@@ -24,42 +24,42 @@ ht-degree: 1%
 
 CRX2Oak es una herramienta diseñada para migrar datos entre diferentes repositorios.
 
-Se puede utilizar para migrar datos de versiones de CQ anteriores basadas en Apache Jackrabbit 2 a Oak, y también se puede utilizar para copiar datos entre repositorios Oak.
+Se puede utilizar para migrar datos de versiones de CQ anteriores basadas en Apache Jackrabbit 2 a Oak, y también se puede utilizar para copiar datos entre repositorios de Oak.
 
 Puede descargar la versión más reciente de crx2oak desde el repositorio de Adobe público en esta ubicación:
 [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 >[!NOTE]
 >
->Para obtener más información sobre Apache Oak y los conceptos clave de AEM resistencia, consulte [Introducción a la plataforma AEM](/help/sites-deploying/platform.md).
+>AEM Para obtener más información sobre Apache Oak y los conceptos clave de la persistencia, consulte la página de ayuda de la interfaz de usuario de Apache Oak, en la página de ayuda de [AEM Introducción a la plataforma de](/help/sites-deploying/platform.md).
 
 ## Casos de uso de migración {#migration-use-cases}
 
-La herramienta se puede utilizar para:
+La herramienta se puede utilizar para lo siguiente:
 
-* Migración de versiones anteriores de CQ5 a AEM 6
-* Copia de datos entre varios repositorios Oak
-* Conversión de datos entre diferentes implementaciones de Oak MicroKernel.
+* AEM Migración de versiones anteriores de CQ 5 a 6
+* Copia de datos entre varios repositorios de Oak
+* Conversión de datos entre diferentes implementaciones de MicroKernel de Oak.
 
-La compatibilidad con la migración de repositorios utilizando Blob Stores externos (comúnmente conocidos como Data Stores) se proporciona en diferentes combinaciones. Una posible ruta de migración es desde un repositorio CRX2 que está usando un `FileDataStore` a un repositorio de Oak usando un `S3DataStore`.
+La compatibilidad con la migración de repositorios mediante almacenes de blobs externos (conocidos comúnmente como almacenes de datos) se proporciona en diferentes combinaciones. Una posible ruta de migración es desde un repositorio CRX2 que esté utilizando un `FileDataStore` a un repositorio de Oak mediante una `S3DataStore`.
 
-El diagrama siguiente ilustra todas las combinaciones de migración posibles admitidas por CRX2Oak:
+El diagrama siguiente ilustra todas las combinaciones de migración posibles que admite CRX2Oak:
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
 ## Características {#features}
 
-Se llama a CRX2Oak durante AEM actualizaciones de forma que el usuario pueda especificar un perfil de migración predefinido que automatice la reconfiguración de los modos de persistencia. Esto se denomina modo de inicio rápido.
+AEM Se llama a CRX2Oak durante las actualizaciones de la de forma que el usuario pueda especificar un perfil de migración predefinido que automatice la reconfiguración de los modos de persistencia. Este se denomina modo de inicio rápido.
 
-También se puede ejecutar por separado en caso de que requiera más personalización. Sin embargo, tenga en cuenta que en este modo solo se realizan cambios en el repositorio y que cualquier reconfiguración adicional de AEM debe realizarse manualmente. Esto se denomina modo independiente.
+También se puede ejecutar por separado en caso de que requiera más personalización. AEM Sin embargo, tenga en cuenta que en este modo los cambios se realizan solamente en el repositorio y cualquier reconfiguración adicional de la debe realizarse manualmente. Esto se denomina modo independiente.
 
-Otra cosa a tener en cuenta es que con la configuración predeterminada en modo independiente, solo se migrará el almacén de nodos y el nuevo repositorio reutilizará el antiguo almacenamiento binario.
+Otra cosa que hay que tener en cuenta es que con la configuración predeterminada en modo independiente, solo se migrará el almacén de nodos y el nuevo repositorio reutilizará el antiguo almacenamiento binario.
 
 ### Modo de inicio rápido automatizado {#automated-quickstart-mode}
 
-Desde AEM 6.3, CRX2Oak es capaz de gestionar perfiles de migración definidos por el usuario que pueden configurarse con todas las opciones de migración ya disponibles. Esto permite una mayor flexibilidad y la capacidad de automatizar la configuración de AEM funciones que no están disponibles si utiliza la herramienta en modo independiente.
+AEM Desde la versión 6.3, CRX2Oak es capaz de gestionar perfiles de migración definidos por el usuario que se pueden configurar con todas las opciones de migración ya disponibles. AEM Esto permite una mayor flexibilidad y la capacidad de automatizar la configuración de las funciones, que no están disponibles si utiliza la herramienta en modo independiente, de la manera siguiente:
 
-Para cambiar CRX2Oak al modo de inicio rápido, debe definir la ruta a la carpeta crx-quickstart en el directorio de instalación de AEM a través de esta variable ambiental del sistema operativo:
+AEM Para cambiar CRX2Oak al modo de inicio rápido, debe definir la ruta a la carpeta crx-quickstart en el directorio de instalación de la a través de esta variable ambiental del sistema operativo:
 
 **Para sistemas basados en UNIX y macOS:**
 
@@ -79,49 +79,49 @@ La migración se puede interrumpir en cualquier momento, con la posibilidad de r
 
 #### Lógica de actualización personalizable {#customizable-upgrade-logic}
 
-La lógica personalizada de Java también se puede implementar mediante `CommitHooks`. Personalizado `RepositoryInitializer` se pueden implementar para inicializar el repositorio con valores personalizados.
+La lógica personalizada de Java también se puede implementar utilizando `CommitHooks`. Personalizado `RepositoryInitializer` Las clases se pueden implementar para inicializar el repositorio con valores personalizados.
 
-#### Compatibilidad con operaciones asignadas a memoria {#support-for-memory-mapped-operations}
+#### Compatibilidad con operaciones con asignación de memoria {#support-for-memory-mapped-operations}
 
 CRX2Oak también admite operaciones asignadas a memoria de forma predeterminada. La asignación de memoria mejora considerablemente el rendimiento y debe utilizarse siempre que sea posible.
 
 >[!CAUTION]
 >
->Sin embargo, tenga en cuenta que las operaciones asignadas a memoria no son compatibles con las plataformas Windows. Por lo tanto, se recomienda añadir la variable **—disable-mmap** al realizar la migración en Windows.
+>Sin embargo, tenga en cuenta que las operaciones asignadas a memoria no son compatibles con las plataformas Windows. Por lo tanto, se recomienda añadir la variable **—disable-map** al realizar la migración en Windows.
 
 #### Migración selectiva de contenido {#selective-migration-of-content}
 
-De forma predeterminada, la herramienta migra todo el repositorio bajo el `"/"` ruta. Sin embargo, tiene control absoluto sobre qué contenido se debe migrar.
+De forma predeterminada, la herramienta migra todo el repositorio en `"/"` ruta. Sin embargo, tiene el control completo sobre qué contenido debe migrarse.
 
-Si hay alguna parte del contenido que no sea necesaria en la nueva instancia, puede usar la variable `--exclude-path` para excluir el contenido y optimizar el procedimiento de actualización.
+Si hay alguna parte del contenido que no sea necesaria en la nueva instancia, puede utilizar el `--exclude-path` para excluir el contenido y optimizar el procedimiento de actualización.
 
 #### Combinación de rutas {#path-merging}
 
-Si es necesario copiar los datos entre dos repositorios y si tiene una ruta de contenido diferente en ambas instancias, puede definirlos en la variable `--merge-path` parámetro. Una vez que lo haga, CRX2Oak copiará solamente los nuevos nodos en el repositorio de destino y mantendrá los antiguos en su lugar.
+Si es necesario copiar los datos entre dos repositorios y tiene una ruta de contenido diferente en ambas instancias, puede definirlos en el `--merge-path` parámetro. Una vez hecho esto, CRX2Oak copiará solamente los nuevos nodos al repositorio de destino y mantendrá los antiguos en su lugar.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
 #### Compatibilidad con versiones {#version-support}
 
-De forma predeterminada, AEM creará una versión de cada nodo o página que se modifique y la almacenará en el repositorio. A continuación, se pueden usar las versiones para restaurar la página a un estado anterior.
+AEM De forma predeterminada, los usuarios crearán una versión de cada nodo o página que se modifique y la almacenarán en el repositorio. Las versiones se pueden utilizar para restaurar la página a un estado anterior.
 
-Sin embargo, estas versiones nunca se depuran aunque se elimine la página original. Cuando se trata de repositorios que han estado en funcionamiento durante mucho tiempo, es posible que la migración necesite procesar muchos datos redundantes causados por versiones huérfanas.
+Sin embargo, estas versiones nunca se purgan, aunque se elimine la página original. Al tratar con repositorios que han estado en funcionamiento durante mucho tiempo, la migración puede necesitar procesar una gran cantidad de datos redundantes causados por versiones huérfanas.
 
 Una característica útil para estos tipos de situaciones es la adición de la variable `--copy-versions` parámetro. Se puede utilizar para omitir los nodos de versión durante la migración o la copia de un repositorio.
 
-También puede elegir si desea copiar versiones huérfanas agregando `--copy-orphaned-versions=true`.
+También puede elegir si desea copiar versiones huérfanas añadiendo `--copy-orphaned-versions=true`.
 
-Ambos parámetros también admiten una `YYYY-MM-DD` formato de fecha, en caso de que desee copiar versiones a más tardar en una fecha específica.
+Ambos parámetros también admiten un `YYYY-MM-DD` formato de fecha, en caso de que desee copiar versiones a más tardar en una fecha específica.
 
 ![chlimage_1-153](assets/chlimage_1-153.png)
 
-#### Abrir versión de origen {#open-source-version}
+#### Versión de código abierto {#open-source-version}
 
-Una versión de código abierto de CRX2Oak está disponible en forma de oak-upgrade. Admite todas las funciones excepto:
+Una versión de código abierto de CRX2Oak está disponible en forma de oak-actualización. Admite todas las funciones excepto:
 
 * Compatibilidad con CRX2
-* Compatibilidad con el perfil de migración
-* Compatibilidad con la reconfiguración AEM automatizada
+* Compatibilidad con perfiles de migración
+* AEM Compatibilidad con la reconfiguración automatizada de la
 
 Consulte la [Documentación de Apache](https://jackrabbit.apache.org/oak/docs/migration.html) para obtener más información.
 
@@ -131,36 +131,36 @@ Consulte la [Documentación de Apache](https://jackrabbit.apache.org/oak/docs/mi
 
 * `--cache`: Tamaño de caché en MB (el valor predeterminado es `256`)
 
-* `--mmap`: Habilitar el acceso a archivos asignado a memoria para el almacén de segmentos
-* `--src-password:` Contraseña de la base de datos RDB de origen
+* `--mmap`: Habilite el acceso a archivos asignados en memoria para el almacén de segmentos
+* `--src-password:` Contraseña para la base de datos RDB de origen
 
-* `--src-user:` Usuario para la RDB de origen
+* `--src-user:` Usuario para RDB de origen
 
-* `--user`: Usuario para la RDB de destino
+* `--user`: usuario para la RDB de destino
 
-* `--password`: Contraseña para la RDB de destino.
+* `--password`: contraseña para la RDB de destino.
 
 ### Opciones de migración {#migration-options}
 
-* `--early-shutdown`: Cierra el repositorio JCR2 de origen después de que se copien los nodos y antes de que se apliquen los enlaces de confirmación
-* `--fail-on-error`: Fuerza un error en la migración si los nodos no se pueden leer desde el repositorio de origen.
-* `--ldap`: Migra los usuarios LDAP de una instancia CQ 5.x a una instancia basada en Oak. Para que esto funcione, el proveedor de identidad en la configuración de Oak debe llamarse ldap. Para obtener más información, consulte la [Documentación LDAP](/help/sites-administering/ldap-config.md).
+* `--early-shutdown`: Cierra el repositorio JCR2 de origen después de copiar los nodos y antes de aplicar los enlaces de compromiso
+* `--fail-on-error`: Fuerza un error de la migración si los nodos no se pueden leer desde el repositorio de origen.
+* `--ldap`: Migra usuarios LDAP de una instancia CQ 5.x a una basada en Oak. Para que esto funcione, el proveedor de identidad en la configuración de Oak debe llamarse ldap. Para obtener más información, consulte la [Documentación LDAP](/help/sites-administering/ldap-config.md).
 
-* `--ldap-config:` Utilícelo junto con la variable `--ldap` para repositorios CQ 5.x que usaban varios servidores LDAP para la autenticación. Puede usarlo para apuntar a CQ5.x `ldap_login.conf` o `jaas.conf` archivos de configuración. El formato es `--ldapconfig=path/to/ldap_login.conf`.
+* `--ldap-config:` Utilice esto junto con las `--ldap` parámetro para repositorios CQ 5.x que utilizaban varios servidores LDAP para la autenticación. Puede utilizarlo para señalar al CQ 5.x `ldap_login.conf` o `jaas.conf` archivos de configuración. El formato es `--ldapconfig=path/to/ldap_login.conf`.
 
 ### Opciones del almacén de versiones {#version-store-options}
 
-* `--copy-orphaned-versions`: Omite copiar versiones huérfanas. Los parámetros admitidos son: `true`, `false` y `yyyy-mm-dd`. El valor predeterminado es `true`.
+* `--copy-orphaned-versions`: omite la copia de versiones huérfanas. Los parámetros admitidos son: `true`, `false` y `yyyy-mm-dd`. El valor predeterminado es `true`.
 
-* `--copy-versions:` Copia el almacenamiento de la versión. Parámetros: `true`, `false`, `yyyy-mm-dd`. El valor predeterminado es `true`.
+* `--copy-versions:` Copia el almacenamiento de versiones. Parámetros: `true`, `false`, `yyyy-mm-dd`. El valor predeterminado es `true`.
 
 #### Opciones de ruta {#path-options}
 
-* `--include-paths:` Lista separada por comas de las rutas que se incluirán durante la copia
-* `--merge-paths`: Lista separada por comas de las rutas que se van a combinar durante la copia
-* `--exclude-paths:` Lista de rutas de exclusión durante la copia separadas por comas.
+* `--include-paths:` Lista de rutas separada por comas que se incluirán durante la copia
+* `--merge-paths`: Lista de rutas separada por comas para combinar durante la copia
+* `--exclude-paths:` Lista separada por comas de las rutas que se excluirán durante la copia.
 
-### Opciones del almacén de blob de origen {#source-blob-store-options}
+### Opciones de almacén de blobs de origen {#source-blob-store-options}
 
 * `--src-datastore:` El directorio del almacén de datos que se utilizará como origen `FileDataStore`
 
@@ -168,7 +168,7 @@ Consulte la [Documentación de Apache](https://jackrabbit.apache.org/oak/docs/mi
 
 * `--src-s3datastore`: El directorio del almacén de datos que se utilizará para el origen `S3DataStore`
 
-* `--src-s3config`: El archivo de configuración del origen `S3DataStore`.
+* `--src-s3config`: archivo de configuración para el origen `S3DataStore`.
 
 ### Opciones de BlobStore de destino {#destination-blobstore-options}
 
@@ -176,9 +176,9 @@ Consulte la [Documentación de Apache](https://jackrabbit.apache.org/oak/docs/mi
 
 * `--fileblobstore:` El directorio del almacén de datos que se utilizará como destino `FileBlobStore`
 
-* `--s3datastore`: El directorio del almacén de datos que se utilizará para el destino `S3DataStore`
+* `--s3datastore`: El directorio de almacén de datos que se utilizará para el destino `S3DataStore`
 
-* `--s3config`: El archivo de configuración para el destino `S3DataStore`.
+* `--s3config`: el archivo de configuración para el destino `S3DataStore`.
 
 ### Opciones de ayuda {#help-options}
 
@@ -186,7 +186,7 @@ Consulte la [Documentación de Apache](https://jackrabbit.apache.org/oak/docs/mi
 
 ## Depuración {#debugging}
 
-También puede habilitar la información de depuración para el proceso de migración para solucionar cualquier problema que pueda aparecer durante el proceso. Puede hacerlo de forma diferente en función del modo en el que desee ejecutar la herramienta:
+También puede habilitar la información de depuración para el proceso de migración con el fin de solucionar los problemas que puedan aparecer durante el proceso. Puede hacerlo de forma diferente en función del modo en el que desee ejecutar la herramienta:
 
 <table>
  <tbody>
@@ -196,11 +196,11 @@ También puede habilitar la información de depuración para el proceso de migra
   </tr>
   <tr>
    <td>Modo de inicio rápido</td>
-   <td>Puede añadir la variable <strong>—TRACE de nivel de registro</strong> o <strong>—DEBUG de nivel de registro </strong>al ejecutar CRX2Oak. En este modo, los registros se redirigen automáticamente a la variable <strong>archivo upgrade.log</strong>.</td>
+   <td>Puede añadir la variable <strong>—TRACE de nivel de registro</strong> o <strong>—log-level DEBUG </strong>opciones a la línea de comandos al ejecutar CRX2Oak. En este modo, los registros se redirigen automáticamente a <strong>archivo upgrade.log</strong>.</td>
   </tr>
   <tr>
    <td>Modo independiente</td>
-   <td><p>Agregue la variable <strong>—trace</strong> opciones a la línea de comandos CRX2Oak para mostrar eventos de TRACE en salida estándar (necesita redirigir los registros usted mismo usando el carácter de redirección: '&gt;' o 'tee' para inspección posterior).</p> </td>
+   <td><p>Añada el <strong>—trace</strong> opciones a la línea de comandos CRX2Oak para mostrar los eventos del TRACE en la salida estándar (debe redirigir los registros usando el carácter de redirección: '&gt;' o el comando 'tee' para una inspección posterior).</p> </td>
   </tr>
  </tbody>
 </table>
@@ -209,7 +209,7 @@ También puede habilitar la información de depuración para el proceso de migra
 
 Al migrar a un conjunto de réplicas de MongoDB, asegúrese de establecer la variable `WriteConcern` parámetro a `2` en todas las conexiones a las bases de datos de Mongo.
 
-Para ello, agregue la variable `w=2` al final de la cadena de conexión, así:
+Para ello, añada la variable `w=2` al final de la cadena de conexión, de esta manera:
 
 ```xml
 java -Xmx4092m -jar crx2oak.jar crx-quickstart/repository/ mongodb://localhost:27017/aem-author?replicaset=replica1&w=2

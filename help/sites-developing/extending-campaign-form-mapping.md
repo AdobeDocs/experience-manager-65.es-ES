@@ -1,5 +1,5 @@
 ---
-title: Creación de asignaciones de formularios personalizados
+title: Crear asignaciones de formularios personalizadas
 seo-title: Creating Custom Form Mappings
 description: Al crear una tabla personalizada en Adobe Campaign AEM, es posible que desee crear un formulario en que se asigne a esa tabla personalizada en la que se cree una tabla personalizada.
 seo-description: When you create a custom table in Adobe Campaign, you may want to build a form in AEM that maps to that custom table
@@ -13,11 +13,11 @@ exl-id: bce6c586-9962-4217-82cb-c837e479abc0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
-# Creación de asignaciones de formularios personalizados{#creating-custom-form-mappings}
+# Crear asignaciones de formularios personalizadas{#creating-custom-form-mappings}
 
 Al crear una tabla personalizada en Adobe Campaign AEM, es posible que desee crear un formulario en que se asigne a esa tabla personalizada.
 
@@ -32,7 +32,7 @@ Debe tener instalado lo siguiente:
 
 Consulte [AEM Integración de los usuarios de con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) para obtener más información.
 
-## Creación de asignaciones de formularios personalizados {#creating-custom-form-mappings-2}
+## Crear asignaciones de formularios personalizadas {#creating-custom-form-mappings-2}
 
 Para crear asignaciones de formularios personalizadas, debe seguir estos pasos de alto nivel, que se describen en detalle en las secciones siguientes:
 

@@ -57,7 +57,7 @@ Todos los controladores realizan las siguientes tareas:
 Para ver los controladores de medios activos:
 
 1. En el explorador, vaya a `https://localhost:4502/system/console/components`.
-1. Haga clic `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
+1. Haga clic en `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Se muestra una lista con todos los controladores de medios activos. Por ejemplo:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
@@ -70,7 +70,7 @@ Los controladores de medios son servicios que generalmente se utilizan en combin
 
 Los flujos de trabajo existentes se pueden ampliar y se pueden crear otros nuevos para procesar recursos según requisitos específicos.
 
-En el siguiente ejemplo se muestra cómo mejorar el flujo de trabajo de **[!UICONTROL sincronización de recursos de AEM]** para que se generen subrecursos para todos los recursos, excepto para los documentos PDF.
+En el siguiente ejemplo se muestra cómo mejorar el flujo de trabajo de **[!UICONTROL sincronización de AEM Assets]** para que se generen subrecursos para todos los recursos, excepto para los documentos PDF.
 
 ### Deshabilitar o habilitar un controlador de medios {#disabling-enabling-a-media-handler}
 

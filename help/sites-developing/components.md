@@ -13,7 +13,7 @@ exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -32,7 +32,7 @@ Esta página proporciona información general sobre los componentes de Adobe Exp
 * Disponen de una interfaz de usuario estandarizada.
 * Tienen un comportamiento de edición que se puede configurar.
 * Utilizan cuadros de diálogo creados con subelementos basados en componentes de la IU de Granite
-* Se desarrollan utilizando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) (recomendado) o JSP.
+* Se desarrollan utilizando [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) (recomendado) o JSP.
 * Se pueden desarrollar para crear componentes personalizados que amplíen la funcionalidad predeterminada.
 
 Como los componentes son modulares, puede hacer lo siguiente:

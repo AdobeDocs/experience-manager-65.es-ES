@@ -14,7 +14,7 @@ exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 6%
+ht-degree: 1%
 
 ---
 
@@ -83,7 +83,7 @@ Una plantilla es un nodo de tipo cq:Template y tiene las siguientes propiedades 
    <td>Clasificación de la plantilla. Se utiliza para mostrar la plantilla en la interfaz de usuario de.<br /> </td>
   </tr>
   <tr>
-   <td> jcr:content</td>
+   <td> jcr:contenido</td>
    <td> cq:PageContent</td>
    <td>Nodo que contiene el contenido de la plantilla.<br /> </td>
   </tr>
@@ -148,21 +148,21 @@ AEM Por ejemplo, la viene con varias plantillas, incluidas una página de conten
 
 | **Título** | **Componente** | **Ubicación** | **Función** |
 |---|---|---|---|
-| Página principal | homepage | geometrixx | La plantilla de la página principal de Geometrixx. |
-| Página de contenido | contentpage | geometrixx | La plantilla de la página de contenido de Geometrixx. |
+| Página principal | homepage | geometrixx | Plantilla de la página de inicio de la Geometrixx. |
+| Página de contenido | contentpage | geometrixx | Plantilla de la página de contenido Geometrixx. |
 
 #### Visualización de plantillas predeterminadas {#displaying-default-templates}
 
 Para ver una lista de todas las plantillas del repositorio, siga este procedimiento:
 
-1. En CRXDE Lite, abra el menú **Herramientas** y haga clic en **Consulta**.
+1. En CRXDE Lite, abra el **Herramientas** y haga clic en **Consulta**.
 
-1. En la ficha Consulta
+1. En la pestaña Consulta
 1. Como **Tipo**, seleccione **XPath**.
 
 1. En el **Consulta** campo de entrada, introduzca la siguiente cadena: //element(&#42;, cq:Template)
 
-1. Haga clic en **Ejecutar**. Se muestra la lista en el cuadro de resultados.
+1. Clic **Ejecutar**. La lista se muestra en el cuadro de resultados.
 
 En la mayoría de los casos, tomará una plantilla existente y desarrollará una nueva para su propio uso. Consulte [Desarrollo de plantillas de página](#developing-page-templates) para obtener más información.
 
@@ -176,7 +176,7 @@ Cuando los estilos se definen en la interfaz de usuario mediante [Modo de diseñ
 >
 >Adobe recomienda aplicar únicamente diseños mediante [Modo de diseño](/help/sites-authoring/default-components-designmode.md).
 >
->La modificación de diseños en CRX DE, por ejemplo, no es recomendable y la aplicación de dichos diseños puede diferir del comportamiento esperado.
+>Modificar diseños en CRX DE, por ejemplo, no es una práctica recomendada y la aplicación de dichos diseños puede variar del comportamiento esperado.
 
 Si los diseños solo se aplican mediante el modo de diseño, a continuación, las siguientes secciones, [Resolución de ruta de diseño](/help/sites-developing/page-templates-static.md#design-path-resolution), [Árbol de decisión](/help/sites-developing/page-templates-static.md#decision-tree), y el [Ejemplo](/help/sites-developing/page-templates-static.md#example) no son aplicables.
 
@@ -198,7 +198,7 @@ Esta es una representación gráfica del [Resolución de ruta de diseño](/help/
 
 ![design_path_resolution](assets/design_path_resolution.png)
 
-### Ejemplo {#example}
+### Ejemplos {#example}
 
 Considere una estructura de contenido simple como se muestra a continuación, donde un diseño podría aplicarse a cualquiera de los nodos:
 

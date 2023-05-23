@@ -1,5 +1,5 @@
 ---
-title: Aspectos básicos de las etiquetas
+title: Tag Essentials
 seo-title: Tag Essentials
 description: Información general de etiquetas
 seo-description: Tag overview
@@ -17,19 +17,19 @@ ht-degree: 3%
 
 ---
 
-# Aspectos básicos de las etiquetas {#tag-essentials}
+# Tag Essentials {#tag-essentials}
 
-Cuando los componentes de AEM Communities se configuran con el etiquetado habilitado, los miembros de la comunidad pueden etiquetar el contenido que publican en el entorno de publicación.
+Cuando los componentes de AEM Communities están configurados con el etiquetado habilitado, los miembros de la comunidad pueden etiquetar el contenido que publican en el entorno de publicación.
 
 La infraestructura subyacente para las etiquetas aplicadas en el entorno de publicación es la misma que para las etiquetas aplicadas al contenido en el entorno de creación, como páginas y recursos:
 
-* Consulte [Administración de etiquetas](../../help/sites-administering/tags.md) y [Etiquetado del contenido generado por el usuario](tag-ugc.md) (UGC) para obtener información sobre la creación y administración de etiquetas.
+* Consulte [Administración de etiquetas](../../help/sites-administering/tags.md) y [Etiquetado del contenido generado por el usuario](tag-ugc.md) (UGC) para obtener información sobre cómo crear y administrar etiquetas.
 
-* Consulte [Etiquetado para desarrolladores](../../help/sites-developing/tags.md) para obtener información sobre la variable [marco de etiquetado](../../help/sites-developing/framework.md) , así como la inclusión y ampliación de etiquetas en [aplicaciones personalizadas](../../help/sites-developing/building.md).
+* Consulte [Etiquetado para desarrolladores](../../help/sites-developing/tags.md) para obtener información acerca de [marco de etiquetado](../../help/sites-developing/framework.md) además de incluir y ampliar etiquetas en [aplicaciones personalizadas](../../help/sites-developing/building.md).
 
-* Consulte [Uso de la nube de etiquetas social](tagcloud.md) para obtener información para los autores sobre cómo añadir un `social tag cloud` a una página para resaltar las etiquetas aplicadas a UGC en el entorno de publicación.
+* Consulte [Uso de Social Tag Cloud](tagcloud.md) para obtener información para los autores sobre cómo agregar una `social tag cloud` Componente a una página para resaltar las etiquetas aplicadas a UGC en el entorno de publicación.
 
-El etiquetado de UGC puede estar habilitado al configurar un [sitio de la comunidad](sites-console.md#tagging) o una de las siguientes características:
+El etiquetado de UGC puede habilitarse al configurar una [sitio comunitario](sites-console.md#tagging) o una de las siguientes funciones:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -37,7 +37,7 @@ El etiquetado de UGC puede estar habilitado al configurar un [sitio de la comuni
 * [Foro](forum.md)
 * [P y R](working-with-qna.md)
 
-## Elementos esenciales para el cliente {#essentials-for-client-side}
+## Essentials para el lado del cliente {#essentials-for-client-side}
 
 ### Nube de etiquetas social {#social-tag-cloud}
 
@@ -48,11 +48,11 @@ El etiquetado de UGC puede estar habilitado al configurar un [sitio de la comuni
    <td>social/commons/components/hbs/tagcloud</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusible</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluible</strong></a></td>
    <td>No</td>
   </tr>
   <tr>
-   <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
+   <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td>
    <td>cq.social.hbs.tagcloud</td>
   </tr>
   <tr>
@@ -65,23 +65,23 @@ El etiquetado de UGC puede estar habilitado al configurar un [sitio de la comuni
   </tr>
   <tr>
    <td><strong>propiedades</strong></td>
-   <td>Consulte <a href="tagcloud.md">Uso de la nube de etiquetas social</a></td>
+   <td>Consulte <a href="tagcloud.md">Uso de Social Tag Cloud</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personalizaciones del lado del cliente](client-customize.md)
 
-## Elementos esenciales para el servidor {#essentials-for-server-side}
+## Essentials para servidor {#essentials-for-server-side}
 
-* [API de Social Tag Cloud](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [API de nube de etiquetas social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Administrador de etiquetas de Social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Administrador de etiquetas social](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
 ## Búsqueda de etiquetas {#tag-searching}
 
-A partir de [paquete de características 1](deploy-communities.md#latestfeaturepack) (FP1), la búsqueda de etiquetas se realiza utilizando [títulos de etiquetas](../../help/sites-developing/framework.md#tag-characteristics).
+A partir de [paquete de funciones 1](deploy-communities.md#latestfeaturepack) (FP1), la búsqueda de etiquetas se realiza mediante [títulos de etiquetas](../../help/sites-developing/framework.md#tag-characteristics).
 
 Antes de FP1, la búsqueda se realizaba mediante [id de etiqueta](../../help/sites-developing/framework.md#tagid).

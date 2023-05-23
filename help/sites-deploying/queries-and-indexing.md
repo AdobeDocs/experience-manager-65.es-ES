@@ -155,7 +155,7 @@ Para definir un índice de propiedades de Lucene para la consulta anterior, pued
 
 Una vez creado el nodo, agregue las siguientes propiedades:
 
-* **type:**
+* **tipo:**
 
    ```xml
    lucene (of type String)
@@ -245,7 +245,7 @@ Consideremos esta estructura de nodos como un ejemplo:
          * **Nombre:** `Mapping`
       * **Nombre:** `tokenizer`
 
-         * **Nombre de propiedad:** `name`
+         * **Nombre de la propiedad:** `name`
 
             * **Tipo:** `String`
             * **Valor:** `Standard`

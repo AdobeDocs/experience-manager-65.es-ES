@@ -1,5 +1,5 @@
 ---
-title: 'Línea de comandos: start y stop'
+title: Inicio y parada de la línea de comandos
 seo-title: Command Line Start and Stop
 description: AEM Obtenga información sobre cómo iniciar y detener el inicio de la línea de comandos desde la línea de comandos.
 seo-description: Learn how to start and stop AEM from the command line.
@@ -13,11 +13,11 @@ exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
-# Línea de comandos: start y stop{#command-line-start-and-stop}
+# Inicio y parada de la línea de comandos{#command-line-start-and-stop}
 
 ## Iniciar Adobe Experience Manager desde la línea de comandos {#starting-adobe-experience-manager-from-the-command-line}
 

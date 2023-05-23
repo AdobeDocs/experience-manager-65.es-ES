@@ -1,5 +1,5 @@
 ---
-title: Plantillas de grupos
+title: Plantillas de grupo
 seo-title: Group Templates
 description: Cómo acceder a la consola Plantillas de grupo
 seo-description: How to access the Group Templates console
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ---
 
-# Plantillas de grupos {#group-templates}
+# Plantillas de grupo {#group-templates}
 
 La consola Plantillas de grupo es similar a [Plantillas de sitio](/help/communities/sites.md) consola. Ambos son modelos para un conjunto de páginas precableadas y funciones que forman un sitio de la comunidad. La diferencia es que una plantilla de sitio es para la comunidad principal y una plantilla de grupo es para un grupo de comunidad, una subcomunidad anidada dentro de la comunidad principal.
 

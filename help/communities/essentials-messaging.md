@@ -14,7 +14,7 @@ exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ Esta página documenta los detalles de cómo trabajar con utilizando el componen
 
 ## Essentials para el lado del cliente {#essentials-for-client-side}
 
-**Componer mensaje**
+**Escribir mensaje**
 
 <table>
  <tbody>

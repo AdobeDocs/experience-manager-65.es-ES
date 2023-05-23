@@ -13,7 +13,7 @@ exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 source-git-commit: 6fa3679429527e026313b22d953267503598d1a9
 workflow-type: tm+mt
 source-wordcount: '850'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ Este controlador almacena el mensaje de respuesta SAML cifrado en el nodo de usu
 
 >[!NOTE]
 >
->Consulte [AEM una demostración de la integración de SAML y de los servicios de INTEL](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
+>Consulte [AEM una demostración de la integración de SAML y de los servicios de INTEL](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=es).
 
 ## Configuración del controlador de autenticación SAML 2.0 {#configuring-the-saml-authentication-handler}
 

@@ -1,7 +1,7 @@
 ---
-title: 'Desarrollo de componentes de AEM: ejemplos de código'
+title: 'AEM Desarrollo de componentes: ejemplos de código'
 seo-title: Developing AEM Components - Code Samples
-description: En esta sección se proporcionan algunos ejemplos sobre cómo crear sus propios componentes para AEM.
+description: AEM En esta sección se proporcionan algunos ejemplos sobre cómo crear sus propios componentes para la creación de componentes de la aplicación de componentes de la aplicación de tipo de.
 seo-description: This section provides some examples on how to create your own components for AEM.
 uuid: 764b5dad-d3bb-48c6-9e93-9dc4e3f623db
 contentOwner: User
@@ -18,49 +18,49 @@ ht-degree: 4%
 
 ---
 
-# Desarrollo de componentes de AEM: ejemplos de código{#developing-aem-components-code-samples}
+# AEM Desarrollo de componentes: ejemplos de código{#developing-aem-components-code-samples}
 
-En esta sección se proporcionan algunos ejemplos sobre cómo crear sus propios componentes para AEM.
+AEM En esta sección se proporcionan algunos ejemplos sobre cómo crear sus propios componentes para la creación de componentes de la aplicación de componentes de la aplicación de tipo de.
 
-Para conocer los conceptos subyacentes, consulte:
+Para ver los conceptos subyacentes, consulte:
 
-* [Componentes AEM: conceptos básicos](/help/sites-developing/components-basics.md)
-* [Desarrollo de componentes AEM](/help/sites-developing/developing-components.md)
+* [AEM Componentes de: conceptos básicos](/help/sites-developing/components-basics.md)
+* [AEM Desarrollo de componentes](/help/sites-developing/developing-components.md)
 
-Para obtener información sobre la IU clásica, consulte [Componentes AEM para la IU clásica](/help/sites-developing/developing-components-classic.md).
+Para obtener información sobre la IU clásica, consulte [AEM Componentes para la IU clásica de](/help/sites-developing/developing-components-classic.md).
 
 >[!NOTE]
 >
->Para ayudarle a analizar, probar y depurar los componentes, AEM proporciona:
+>AEM Para ayudarle a analizar, probar y depurar los componentes, proporciona lo siguiente
 >
 >* [Modo de desarrollador](/help/sites-developing/developer-mode.md)
 >* a [marco para automatizar pruebas, basado en la biblioteca Hobbes.js](/help/sites-developing/hobbes.md)
 >
 
 
-## Ejemplo de código: Personalizar campos de cuadro de diálogo {#code-sample-how-to-customize-dialog-fields}
+## Ejemplo de código: cómo personalizar campos de diálogo {#code-sample-how-to-customize-dialog-fields}
 
-CÓDIGO DE GITHUB
+CÓDIGO EN GITHUB
 
 Puede encontrar el código de esta página en GitHub
 
-* [Abra un proyecto de personalización de aem-authoring-dialog-fields en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* [Abra el proyecto aem-authoring-dialog-fields-customization en GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
 * Descargue el proyecto como [un archivo ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/zip/refs/heads/master)
 
 >[!NOTE]
 >
->Este ejemplo de código está relacionado con la sesión de Gems de AEM en [Personalización de campos de cuadro de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+>AEM Este ejemplo de código está relacionado con la sesión de Gems de la en [Personalización de campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
 
 ## Medios relacionados {#related-resources}
 
-### Añadir nueva acción a una barra de herramientas de componentes {#add-new-action-to-a-component-toolbar}
+### Agregar una nueva acción a una barra de herramientas de componentes {#add-new-action-to-a-component-toolbar}
 
-Se pueden agregar nuevas acciones a las barras de herramientas de componentes mediante la capa de edición del editor de páginas.
+Se pueden añadir nuevas acciones a las barras de herramientas de componentes mediante la capa de edición del editor de páginas.
 
-Los detalles, junto con los vínculos a la muestra de código, se encuentran en [Añadir nueva acción a una barra de herramientas de componentes](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar).
+Los detalles, junto con los vínculos al ejemplo de código, se encuentran en [Agregar una nueva acción a una barra de herramientas de componentes](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar).
 
 ### Personalizar y ampliar fragmentos de contenido {#customizing-and-extending-content-fragments}
 
 Es posible que desee ampliar el componente de fragmento de contenido estándar para añadir funciones.
 
-Los detalles están en [Personalizar y ampliar fragmentos de contenido](/help/sites-developing/customizing-content-fragments.md).
+Los detalles se encuentran en [Personalizar y ampliar fragmentos de contenido](/help/sites-developing/customizing-content-fragments.md).

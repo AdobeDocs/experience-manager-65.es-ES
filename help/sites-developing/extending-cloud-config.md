@@ -179,7 +179,7 @@ La propiedad se cifrará automáticamente (con el `CryptoSupport` servicio) por 
    <td>Ruta de referencia a un componente que se incluirá automáticamente en la página.<br /> Se utiliza para funcionalidades adicionales e inclusiones de JS.<br /> Esto incluye el componente de la página donde<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> se incluye (normalmente antes de que <code>body</code> ).<br /> En caso de que el uso de Analytics y Target sea menor, se utiliza para incluir funciones adicionales, como llamadas de JavaScript para rastrear el comportamiento de los visitantes.</td>
   </tr>
   <tr>
-   <td>description</td>
+   <td>descripción</td>
    <td>Breve descripción del servicio.<br /> </td>
   </tr>
   <tr>

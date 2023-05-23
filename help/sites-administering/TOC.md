@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 38%
+ht-degree: 36%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 38%
 
 + [Introducción a la Guía del usuario de administración](home.md)
 + Funciones de sitios {#introduction}
-   + [Administración de sitios web ](msm-and-translation.md)
+   + [Administración de sitios web](msm-and-translation.md)
    + [Trabajos asincrónicos](asynchronous-jobs.md)
    + [Reutilización del contenido: administrador de varios sitios y Live Copy](msm.md)
    + [Información general de Live Copy](msm-livecopy-overview.md)
@@ -56,7 +56,7 @@ ht-degree: 38%
    + [Editor por lotes](bulk-editor.md)
    + [Configuración de notificaciones por correo electrónico](notification.md)
    + [El Verificador De Vínculos](external-link-checker.md)
-   + [AEM Solución de problemas](troubleshoot.md)
+   + [Solución de problemas de AEM](troubleshoot.md)
    + [Administración del acceso a los flujos de trabajo](workflows-managing.md)
    + [Inicio de flujos de trabajo](workflows-starting.md)
    + [Administración de flujos de trabajo](workflows.md)
@@ -102,7 +102,7 @@ ht-degree: 38%
 + Personalización {#personalization}
    + [Personalización](personalization.md)
    + [Configurando ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
-   + [ClientContext](client-context.md)
+   + [Client Context](client-context.md)
    + [Campañas](campaigns.md)
    + [Configuración de la segmentación con ContextHub](segmentation.md)
    + [Configuración de segmentación](campaign-segmentation.md)
@@ -133,7 +133,7 @@ ht-degree: 38%
    + [AEM Portals y portlets de la red](aem-as-portal.md)
    + [Integración con Dynamic Media Classic (Scene7)](scene7.md)
    + [Fórmulas de AEM Livefyre](aem-livefyre-recipes.md)
-   + [Resolución de problemas de integración](troubleshooting-integration-issues.md)
+   + [Solución de problemas de integración](troubleshooting-integration-issues.md)
    + [Integración con el Optimizador de contenido de BrightEdge](brightedge.md)
    + [Productor de catálogos](catalog-producer.md)
    + [Integración con Silverpop Engage](silverpop.md)
@@ -156,8 +156,8 @@ ht-degree: 38%
    + [AEM Sites: Preparación para el RGPD](gdpr-compliance-sites.md)
    + [AEM Gestión de solicitudes de RGPD para la Fundación de la](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Comercio de - Preparación para el RGPD](gdpr-compliance-commerce.md)
-+ Administración de contenido {#contentmanagement}
-   + [el administrador de paquetes](package-manager.md)
++ Gestión de contenido {#contentmanagement}
+   + [El administrador de paquetes](package-manager.md)
    + [Administración de etiquetas](tags.md)
    + [El exportador de página](page-exporter.md)
    + [Consola de etiquetado de IU clásica](classic-console.md)

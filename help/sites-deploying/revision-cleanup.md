@@ -234,7 +234,7 @@ En algunos casos, la alternancia entre los modos cola y compactación completa r
   </tr>
   <tr>
    <td><strong>¿Por qué Online Revision Cleanup no recupera ningún espacio cuando se ejecuta por primera vez?</strong></td>
-   <td>Limpieza de revisiones en línea recupera las revisiones antiguas realizadas por las generaciones. Se genera una nueva generación cada vez que se ejecuta la limpieza de revisión. Solo se recupera el contenido que tenga al menos dos generaciones, lo que significa que en una primera ejecución no hay nada que recuperar.</td>
+   <td>Limpieza de revisiones en línea recupera las revisiones antiguas realizadas por las generaciones. Se genera una nueva generación cada vez que se ejecuta la limpieza de revisión. Solo se recupera el contenido que tiene al menos dos generaciones, lo que significa que en una primera ejecución no hay nada que recuperar.</td>
    <td> </td>
   </tr>
   <tr>

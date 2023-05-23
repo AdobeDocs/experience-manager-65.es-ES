@@ -13,13 +13,13 @@ exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
 # Prueba del diseño interactivo en We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Todas las páginas de We.Retail utilizan el componente Contenedor de diseño para implementar un diseño interactivo. El contenedor de diseño proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño en función del tamaño y formato del dispositivo o ventana. El componente se utiliza junto con el **Diseño** en el editor de páginas, lo que le permite crear y editar su diseño interactivo en función del dispositivo.
+Todas las páginas de We.Retail utilizan el componente Contenedor de diseño para implementar un diseño interactivo. El contenedor de diseño proporciona un sistema de párrafos que le permite colocar componentes en una cuadrícula adaptable. Esta cuadrícula puede reorganizar el diseño según el tamaño y el formato del dispositivo o la ventana. El componente se utiliza junto con el **Diseño** en el editor de páginas, lo que le permite crear y editar su diseño interactivo en función del dispositivo.
 
 ## Probando a cabo {#trying-it-out}
 

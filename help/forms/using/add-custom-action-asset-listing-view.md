@@ -279,7 +279,7 @@ Para personalizar Administración de correspondencia para permitir que los usuar
    1. Haga doble clic en el botón **POST.jsp** para abrirlo en CRX.
    1. Agregue el siguiente código al archivo POST.jsp y haga clic en **Guardar todo**:
 
-      Este código es específico del servicio de procesamiento de cartas. Para cualquier otro recurso, agregue las bibliotecas Java™ de ese recurso a este código. Para obtener más información sobre las API de AEM Forms, consulte [API de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
+      Este código es específico del servicio de procesamiento de cartas. Para cualquier otro recurso, añada las bibliotecas Java™ de ese recurso a este código. Para obtener más información sobre las API de AEM Forms, consulte [API de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).
 
       Para obtener más información sobre las bibliotecas de AEM, consulte [Componentes](/help/sites-developing/components.md) de AEM.
 

@@ -13,7 +13,7 @@ exl-id: e25f0b7f-5f12-4363-b302-e51c81035c7d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '86'
-ht-degree: 23%
+ht-degree: 1%
 
 ---
 
@@ -26,4 +26,4 @@ AEM Con la funcionalidad táctil que alcanza la paridad con y y que de hecho sup
 
 >[!NOTE]
 >
->Para obtener más información sobre el estado de la paridad de funciones con la interfaz clásica, consulte el documento [Paridad de funciones de la IU táctil](/help/release-notes/touch-ui-features-status.md).
+>Para obtener más información sobre el estado de la paridad de las características con la IU clásica, consulte la [Paridad de funciones de IU táctil](/help/release-notes/touch-ui-features-status.md) documento.

@@ -1,6 +1,6 @@
 ---
-title: Creación para usuarios sin encabezado con Adobe Experience Manager
-description: Introducción a las funciones potentes, flexibles y sin encabezado de Adobe Experience Manager y a cómo crear contenido para su proyecto.
+title: Creación para Headless con Adobe Experience Manager
+description: Introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager y a cómo crear contenido para su proyecto.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 90%
 
 # Creación para usuarios sin encabezado con AEM: una introducción {#author-headless-introduction}
 
-En esta parte del [recorrido de autor de contenido sin encabezado de AEM](overview.md), puede conocer los conceptos (básicos) y la terminología necesarios para comprender la creación de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager (AEM).
+En esta parte del [AEM Recorrido de autor de contenido sin encabezado](overview.md), puede aprender los conceptos (básicos) y la terminología necesarios para comprender la creación de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager AEM ().
 
 ## Objetivo {#objective}
 

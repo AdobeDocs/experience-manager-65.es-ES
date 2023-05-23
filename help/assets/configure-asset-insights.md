@@ -8,7 +8,7 @@ exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 8%
    *Figura: Configurar [!DNL Adobe Analytics] para las perspectivas de recursos en [!DNL Experience Manager].*
 
 1. Clic **[!UICONTROL Autenticar]**.
-1. Después [!DNL Experience Manager] autentica sus credenciales, desde el **[!UICONTROL Grupo de informes]** , elija una [!DNL Adobe Analytics] grupo de informes de donde desee que Assets Insights obtenga datos. Haga clic en **[!UICONTROL Agregar]**.
+1. Después [!DNL Experience Manager] autentica sus credenciales, desde el **[!UICONTROL Grupo de informes]** , elija una [!DNL Adobe Analytics] grupo de informes de donde desee que Assets Insights obtenga datos. Clic **[!UICONTROL Añadir]**.
 1. Después [!DNL Experience Manager] Para configurar el grupo de informes, haga clic en **[!UICONTROL Listo]**.
 
 ## Rastreador de página {#page-tracker}

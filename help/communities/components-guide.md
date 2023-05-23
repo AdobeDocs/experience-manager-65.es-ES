@@ -1,5 +1,5 @@
 ---
-title: Guía de componentes de comunidad
+title: Guía de componentes de la comunidad
 seo-title: Community Components Guide
 description: Una herramienta de desarrollo interactiva para empezar a usar el marco de componente social (SCF)
 seo-description: An interactive development tool to get started with the social component framework (SCF)
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ---
 
-# Guía de componentes de comunidad  {#community-components-guide}
+# Guía de componentes de la comunidad  {#community-components-guide}
 
 La guía de componentes de la comunidad es una herramienta de desarrollo interactiva para [marco de componentes sociales (SCF)](scf.md). Proporciona una lista de los componentes de AEM Communities disponibles o las funciones más complejas creadas de varios componentes.
 

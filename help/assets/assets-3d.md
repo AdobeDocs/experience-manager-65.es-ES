@@ -11,7 +11,7 @@ exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
 source-git-commit: 787c0c25da2258f234d3c821038d62bf8ef68932
 workflow-type: tm+mt
 source-wordcount: '2358'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -92,13 +92,13 @@ En esta sección se describe cómo ver recursos 3D e interactuar con ellos de do
 
 El visor 3D interactivo incluye, entre otras cosas, una colección de controles de cámara interactivos que le permiten orbitar, aplicar zoom y recorrer el recurso 3D.
 
-El tiempo que se tarda en abrir un recurso 3D en la vista de página Detalles del recurso depende de varios factores. Estos factores incluyen elementos como los siguientes:
+El tiempo que se tarda en abrir un recurso 3D en la vista de página Detalles del recurso depende de varios factores. Estos factores incluyen cosas como las siguientes:
 
 * Ancho de banda al servidor.
 * Latencias al servidor
 * Complejidad de la imagen.
 
-Además, las capacidades del equipo cliente, como una estación de trabajo, un portátil o un dispositivo táctil móvil, también son importantes a la hora de manipular la cámara de forma interactiva. Un sistema razonablemente potente con buenas capacidades gráficas puede hacer que la experiencia de visualización interactiva en 3D sea más cómoda y agradable.
+Además, las capacidades del equipo cliente, como una estación de trabajo, un portátil o un dispositivo táctil móvil, también son importantes a la hora de manipular la cámara de forma interactiva. Un sistema razonablemente potente con buenas capacidades gráficas puede hacer que la experiencia de visualización 3D interactiva sea más fluida y favorable.
 
 >[!TIP]
 >
@@ -118,7 +118,7 @@ Consulte también [Vista previa de recursos mediante la interfaz de software](/h
 
 1. Del Experience Manager, en el **[!UICONTROL Navegación]** página, vaya a **[!UICONTROL Assets]** > **[!UICONTROL Archivos]**.
 1. Cerca de la esquina superior derecha de la página, desde el **[!UICONTROL Ver]** , seleccione la opción **[!UICONTROL Vista de tarjeta]**.
-1. Vaya a un recurso 3D que desee ver.
+1. Desplácese hasta un recurso 3D que desee ver.
 1. Seleccione la tarjeta del recurso 3D.
 1. En la página de vista de detalles del recurso 3D, realice una de las acciones siguientes:
 
@@ -127,7 +127,7 @@ Consulte también [Vista previa de recursos mediante la interfaz de software](/h
    | **Gire la cámara** | Haga girar la vista alrededor de la escena 3D y de los objetos. | Haga clic con el botón izquierdo + arrastre. | Presione con un solo dedo + arrastre. |
    | **Panorámica de la cámara** | Mueva la vista de forma panorámica a la izquierda, a la derecha, arriba o abajo. | Haga clic con el botón derecho + arrastre. | Presione con dos dedos + arrastre. |
    | **Zoom de la cámara** | Desplazarse dentro y fuera de las áreas de la escena 3D. | Rueda de desplazamiento. | Pellizco de dos dedos. |
-   | **Vuelva a centrar su cámara** | Vuelva a centrar la cámara en un punto de un objeto de la escena 3D. | Hacer doble clic. | Pulse dos veces. |
+   | **Vuelva a centrar su cámara** | Vuelva a centrar la cámara en un punto de un objeto de la escena 3D. | Haga doble clic en. | Pulse dos veces. |
    | **Restablecer** | Cerca de la esquina inferior derecha de la página, seleccione el icono Restablecer para restaurar el punto de destino de vista en el centro del recurso 3D. El restablecimiento también acerca o aleja la cámara para mostrar el recurso en su totalidad y a un tamaño de visualización razonable. |  |  |
    | **Modo de pantalla completa** | Para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, seleccione el icono Pantalla completa. |  |  |
 
@@ -160,7 +160,7 @@ Un recurso 3D completamente interactivo, como se muestra en **[!UICONTROL Previs
    | **Gire la cámara** | Haga girar la vista alrededor de la escena 3D y de los objetos. | Haga clic con el botón izquierdo + arrastre. | Presione con un solo dedo + arrastre. |
    | **Panorámica de la cámara** | Mueva la vista de forma panorámica a la izquierda, a la derecha, arriba o abajo. | Haga clic con el botón derecho + arrastre. | Presione con dos dedos + arrastre. |
    | **Zoom de la cámara** | Desplazarse dentro y fuera de las áreas de la escena 3D. | Rueda de desplazamiento. | Pellizco de dos dedos. |
-   | **Vuelva a centrar su cámara** | Vuelva a centrar la cámara en un punto de un objeto de la escena 3D. | Hacer doble clic. | Pulse dos veces. |
+   | **Vuelva a centrar su cámara** | Vuelva a centrar la cámara en un punto de un objeto de la escena 3D. | Haga doble clic en. | Pulse dos veces. |
    | **Restablecer** | Cerca de la esquina inferior derecha de la página, seleccione el icono Restablecer para restaurar el punto de destino de vista en el centro del recurso 3D. El restablecimiento también acerca o aleja la cámara para mostrar el recurso en su totalidad y a un tamaño de visualización razonable. |  |  |
    | **Modo de pantalla completa** | Para acceder al modo de pantalla completa, en la esquina inferior derecha de la página, seleccione el icono Pantalla completa. |  |  |
 

@@ -60,7 +60,7 @@ El servicio Generate PDF convierte los siguientes formatos de archivo basados en
 
 El servicio Generate PDF convierte PDF a los siguientes formatos de archivo (solo Windows):
 
-* Encapsulated PostScript (EPS)
+* PostScript encapsulado (EPS)
 * HTML3.2
 * HTML 4.01 con CSS 1.0
 * DOC (formato Microsoft Word)

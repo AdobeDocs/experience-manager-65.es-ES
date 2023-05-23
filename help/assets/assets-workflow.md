@@ -47,7 +47,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 -->
 Para aplicar un flujo de trabajo a un recurso, siga estos pasos:
 
-1. Vaya a la ubicación del recurso para el que desea iniciar un flujo de trabajo y haga clic en el recurso para abrir la página del recurso. Seleccionar **[!UICONTROL Cronología]** en el menú para mostrar la cronología.
+1. Vaya a la ubicación del recurso para el que desea iniciar un flujo de trabajo y haga clic en el recurso para abrir la página del mismo. Seleccionar **[!UICONTROL Cronología]** en el menú para mostrar la cronología.
 
    ![cronología-1](assets/timeline.png)
 

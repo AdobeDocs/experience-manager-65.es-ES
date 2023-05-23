@@ -97,7 +97,7 @@ Se pueden crear Truststore y keystore con la utilidad ikeyman o Admin Console. P
 
 1. En la Consola administrativa de WebSphere, seleccione **Seguridad > Certificados SSL y administración de claves**.
 1. Clic **Almacenes de claves y certificados** en Elementos relacionados.
-1. En el **Usos del almacén de claves** , asegúrese de que **Almacenes de claves SSL** está seleccionado. Haga clic en **Nuevo**.
+1. En el **Usos del almacén de claves** , asegúrese de que **Almacenes de claves SSL** está seleccionado. Clic **Nuevo**.
 1. Escriba un nombre lógico y una descripción.
 1. Especifique la ruta en la que desea crear el almacén de claves. Si ya ha creado un repositorio de claves mediante ikeyman, especifique la ruta al archivo del repositorio de claves.
 1. Especifique y confirme la contraseña.

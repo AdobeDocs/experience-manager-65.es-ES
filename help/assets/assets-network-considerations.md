@@ -93,7 +93,7 @@ Estos son algunos elementos que hay que tener en cuenta:
 
 * XMP lectura/escritura de metadatos de la
 * Activación y replicación automáticas
-* Marcas de agua
+* Filigrana
 * Ingesta de subrecursos/extracción de página
 * Flujos de trabajo superpuestos.
 

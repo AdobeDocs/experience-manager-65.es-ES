@@ -14,7 +14,7 @@ exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
 source-wordcount: '3466'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -156,7 +156,7 @@ Las siguientes secciones describen cómo se muestran los elementos de formulario
   </tr>
   <tr>
    <td>Botón Enviar</td>
-   <td><p>Botón de envío por correo electrónico</p> <p>Botón Enviar HTTP</p> </td>
+   <td><p>Botón Enviar correo electrónico</p> <p>Botón Enviar HTTP</p> </td>
    <td>false</td>
    <td> </td>
   </tr>

@@ -1,6 +1,6 @@
 ---
 title: Creación de una página para dispositivos móviles
-description: Al crear una página móvil, esta se muestra de forma que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver qué ve el usuario final al acceder a la página.
+description: Al crear una página móvil, esta se muestra de forma que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que ve el usuario final al acceder a la página.
 uuid: ca16979d-6e5f-444d-b959-ae92542039b2
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,9 +17,9 @@ ht-degree: 20%
 
 # Crear una página para dispositivos móviles{#authoring-a-page-for-mobile-devices}
 
-Al crear una página móvil, esta se muestra de forma que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver qué ve el usuario final al acceder a la página.
+Al crear una página móvil, esta se muestra de forma que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que ve el usuario final al acceder a la página.
 
-Los dispositivos se agrupan en las categorías característica, inteligente y táctil, según las capacidades de los dispositivos para procesar una página. Cuando el usuario final accede a una página móvil, AEM detecta el dispositivo y envía la representación que corresponde a su grupo de dispositivos.
+Los dispositivos se agrupan en las categorías característica, inteligente y táctil, según las capacidades de los dispositivos para procesar una página. AEM Cuando el usuario final accede a una página móvil, detecta el dispositivo y envía la representación que corresponde a su grupo de dispositivos.
 
 >[!NOTE]
 >
@@ -29,21 +29,21 @@ Los dispositivos se agrupan en las categorías característica, inteligente y t�
 
 Utilice el siguiente procedimiento para crear una página para móvil:
 
-1. En el explorador, vaya a la **Siteadmin** consola.
+1. En el explorador, vaya a **Siteadmin** consola.
 1. Abra el **Productos** página siguiente **Sitios web** >> **Sitio de demostración de Geometrixx Mobile** >> **Inglés**.
 
-1. Cambie a un emulador diferente. Para ello, puede:
+1. Cambie a un emulador diferente. Para ello, puede hacer lo siguiente:
 
    * Haga clic en el icono del dispositivo en la parte superior de la página.
-   * Haga clic en el **Editar** en el **Barra de tareas** y seleccione el dispositivo en el menú desplegable.
+   * Haga clic en **Editar** botón en el **Compañero** y seleccione el dispositivo en el menú desplegable.
 
-1. Arrastre y suelte la **Texto e imagen** de la ficha Móvil de la barra de tareas a la página.
-1. Edite el componente y añada texto. Haga clic en **OK** para guardar los cambios.
+1. Arrastre y suelte el **Texto e imagen** de la pestaña Móvil de la barra de tareas a la página.
+1. Edite el componente y añada texto. Clic **OK** para guardar los cambios.
 
-La página tiene el mismo aspecto que la siguiente:
+La página tiene el mismo aspecto que el siguiente:
 
 ![mobileipademu](assets/mobileipademu.png)
 
 >[!NOTE]
 >
->Los emuladores se desactivan cuando se solicita una página de la instancia del autor desde un dispositivo móvil. La creación se puede realizar utilizando la IU táctil.
+>Los emuladores se desactivan cuando se solicita una página de la instancia del autor desde un dispositivo móvil. La creación se puede realizar mediante la IU táctil.

@@ -15,7 +15,7 @@ exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2209'
-ht-degree: 10%
+ht-degree: 4%
 
 ---
 
@@ -29,9 +29,9 @@ El servicio Forms puede procesar formularios basados en fragmentos creados con D
 
 El uso de fragmentos simplifica y acelera la creación y el mantenimiento de una gran cantidad de formularios. Al crear un nuevo formulario, inserte una referencia al fragmento requerido y este aparecerá en el formulario. La referencia de fragmento contiene un subformulario que señala al archivo XDP físico. Para obtener información sobre la creación de diseños de formulario basados en fragmentos, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
-Un fragmento puede incluir varios subformularios envueltos en un conjunto de subformularios de opción. Los conjuntos de subformularios de opción controlan la visualización de subformularios en función del flujo de datos desde una conexión de datos. Se utilizan afirmaciones condicionales para determinar qué subformulario del conjunto aparece en el formulario entregado. Por ejemplo, cada subformulario de un conjunto puede incluir información de una ubicación geográfica determinada y el subformulario que se muestra se puede determinar en función de la ubicación del usuario.
+Un fragmento puede incluir varios subformularios envueltos en un conjunto de subformularios de opción. Los conjuntos de subformularios de opción controlan la visualización de subformularios en función del flujo de datos desde una conexión de datos. Las sentencias condicionales se utilizan para determinar qué subformulario del conjunto aparece en el formulario enviado. Por ejemplo, cada subformulario de un conjunto puede incluir información de una ubicación geográfica determinada y el subformulario que se muestra se puede determinar en función de la ubicación del usuario.
 
-A *fragmento de script* contiene funciones o valores JavaScript reutilizables que se almacenan separadamente de cualquier objeto concreto, como un analizador de fechas o una invocación de servicio web. Estos fragmentos incluyen un único objeto de secuencia de comandos que aparece como un elemento secundario de variables en la paleta Jerarquía. Los fragmentos no pueden crearse a partir de secuencias de comandos que sean propiedades de otros objetos, tales como secuencias de comandos de sucesos validate, calculate o initialize.
+A *fragmento de script* contiene funciones o valores JavaScript reutilizables que se almacenan separadamente de cualquier objeto concreto, como un analizador de fechas o una invocación de servicio web. Estos fragmentos incluyen un solo objeto de script que aparece como un elemento secundario de variables en la paleta Jerarquía. Los fragmentos no se pueden crear a partir de scripts que sean propiedades de otros objetos, como scripts de evento como validate, calculate o initialize.
 
 Estas son las ventajas de utilizar fragmentos:
 
@@ -39,7 +39,7 @@ Estas son las ventajas de utilizar fragmentos:
 * **Actualizaciones globales**: puede utilizar fragmentos para realizar cambios globales en varios formularios solo una vez, en un archivo. Puede cambiar el contenido, los objetos de script, los enlaces de datos, el diseño o los estilos de un fragmento, y todos los formularios XDP que hagan referencia a él reflejarán los cambios.
 * Por ejemplo, un elemento común en muchos formularios podría ser un bloque de direcciones que incluya un objeto de lista desplegable para el país. Si necesita actualizar los valores del objeto de lista desplegable, debe abrir muchos formularios para realizar los cambios. Si incluye el bloque de direcciones en un fragmento, solo necesita abrir un archivo de fragmento para realizar los cambios.
 * Para actualizar un fragmento en un formulario de PDF, debe volver a guardar el formulario en Designer.
-* **Creación de formularios compartidos**: puede utilizar fragmentos para compartir la creación de formularios entre varios recursos. Los desarrolladores de formularios con conocimientos de secuencias de comandos u otras funciones avanzadas de Designer pueden desarrollar y compartir fragmentos que aprovechan las secuencias de comandos y las propiedades dinámicas. Los diseñadores de formularios pueden utilizar tales fragmentos para presentar diseños de formulario y garantizar que todas las partes de un formulario tengan un aspecto y una funcionalidad coherentes en los múltiples formularios diseñados por varias personas.
+* **Creación de formularios compartidos**: puede utilizar fragmentos para compartir la creación de formularios entre varios recursos. Los desarrolladores de formularios con experiencia en scripts u otras funciones avanzadas de Designer pueden desarrollar y compartir fragmentos que aprovechan los scripts y las propiedades dinámicas. Los diseñadores de formularios pueden utilizar esos fragmentos para diseñar diseños de formulario y para asegurarse de que todas las partes de un formulario tienen un aspecto y una funcionalidad coherentes en todos los formularios diseñados por varias personas.
 
 ### Combinar un diseño de formulario ensamblado mediante fragmentos {#assembling-a-form-design-assembled-using-fragments}
 

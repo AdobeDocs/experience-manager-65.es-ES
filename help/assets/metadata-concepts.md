@@ -176,17 +176,17 @@ Además del DCMES, existen otros elementos de metadatos creados por la Iniciativ
 | cobertura | La ubicación geográfica o el período de tiempo que cubre el recurso. |
 | creador | La persona o compañía responsable de la creación del contenido. |
 | fecha | Fecha o período de tiempo asociado al recurso. |
-| description | Más información sobre el recurso. |
-| format | El formato de archivo, el medio físico o las dimensiones del recurso. [!DNL Experience Manager] utiliza `dc:format` para denotar el tipo MIME del recurso. |
+| descripción | Más información sobre el recurso. |
+| formato | El formato de archivo, el medio físico o las dimensiones del recurso. [!DNL Experience Manager] utiliza `dc:format` para denotar el tipo MIME del recurso. |
 | identificador | Una referencia única al recurso. |
 | language | El idioma del recurso (por ejemplo, `en` para inglés). |
 | editor | La persona o compañía responsable de poner a disposición el recurso. |
 | relation | Un recurso relacionado. |
 | derechos | Información sobre quién tiene derechos sobre este recurso. |
-| source | Un recurso relacionado del que se deriva el recurso. |
+| origen | Un recurso relacionado del que se deriva el recurso. |
 | sujeto | El tema del recurso. |
-| título | Un nombre para el recurso. |
-| type | La naturaleza o el género del recurso. |
+| Título | Un nombre para el recurso. |
+| tipo | La naturaleza o el género del recurso. |
 
 ### IPTC {#iptc}
 
@@ -301,4 +301,4 @@ Sin embargo, esta propiedad no está indizada actualmente para evitar conflictos
 
 El **[!UICONTROL IPTC]** de la pestaña [!UICONTROL Propiedades] Esta página también muestra las palabras clave agregadas a los recursos mediante Adobe Bridge y otras aplicaciones de Adobe Creative Cloud. También puede editar estas palabras clave y agregar más desde el **[!UICONTROL IPTC]** pestaña.
 
-![keywords](assets/keywords-in-iptc-tab.png)
+![palabras clave](assets/keywords-in-iptc-tab.png)

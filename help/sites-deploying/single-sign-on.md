@@ -109,7 +109,7 @@ Primero se consulta el controlador que mejor coincida con la ruta. Por ejemplo, 
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
-### Ejemplo {#example}
+### Ejemplos {#example}
 
 Para una solicitud de cookie (mediante la dirección URL) `http://localhost:4502/libs/wcm/content/siteadmin.html`):
 

@@ -10,7 +10,7 @@ role: User
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 83%
+ht-degree: 34%
 
 ---
 
@@ -19,18 +19,18 @@ ht-degree: 83%
 
 + [Información general sobre la Guía de creación de IU clásica](home.md)
 + Introducción a la creación de IU clásica {#introduction}
-   + [Primeros pasos de creación](classic-page-author-first-steps.md)
-   + [Crear en la IU clásica](classicui.md)
+   + [Primeros pasos para los autores](classic-page-author-first-steps.md)
+   + [Creación en la IU clásica](classicui.md)
    + [Uso del entorno de creación](author-env.md)
    + [Gestión básica](author-env-basic-handling.md)
    + [Configuración del entorno de cuenta](author-env-user-props.md)
-   + [Seleccionar la IU](author-env-select-ui.md)
+   + [Selección de la IU](author-env-select-ui.md)
    + [Búsqueda](author-env-search.md)
    + [Su bandeja de entrada](author-env-inbox.md)
    + [Métodos abreviados de teclado para consolas](author-env-keyboard-shortcuts.md)
 + Creación {#authoring}
    + [Creación de páginas](classic-page-author.md)
-   + [Creación: Entorno y herramientas](classic-page-author-env-tools.md)
+   + [Creación: el entorno y las herramientas](classic-page-author-env-tools.md)
    + [Crear y organizar páginas](classic-page-author-manage-pages.md)
    + [Edición del contenido de una página](classic-page-author-edit-content.md)
    + [Editor de texto enriquecido](classic-page-author-rich-text-editor.md)
@@ -42,13 +42,13 @@ ht-degree: 83%
    + [Crear una página para dispositivos móviles](classic-feature-mobile.md)
    + [Componentes para la creación de páginas](classic-page-author-edit-mode.md)
    + [Métodos abreviados de teclado al editar páginas](classic-page-author-keyboard-shortcuts.md)
-+ Funciones de sitio y de página {#siteandpage}
++ Características del sitio y de la página {#siteandpage}
    + [Creación de páginas con fragmentos de contenido](classic-page-author-content-fragments.md)
    + [Diseño adaptable](classic-page-author-responsive-layout.md)
    + [Uso de versiones de página  ](classic-page-author-work-with-versions.md)
    + [Uso de etiquetas](classic-feature-tags.md)
-   + [Scaffolding](classic-feature-scaffolding.md)
-   + [Configurar componentes en modo Diseño](classic-page-author-design-mode.md)
+   + [Andamiaje](classic-feature-scaffolding.md)
+   + [Configuración de componentes en modo de diseño](classic-page-author-design-mode.md)
    + [Componentes](classic-page-author-default-components.md)
 + Flujos de trabajo {#workflows}
    + [Participación en flujos de trabajo](classic-workflows-participating.md)
@@ -61,28 +61,28 @@ ht-degree: 83%
    + [Promoción de lanzamientos](classic-launches-promoting.md)
 + Personalización {#personalization}
    + [Información acerca de la segmentación](classic-personalization-campaigns-segmentation.md)
-   + [Administración de campañas](classic-personalization-campaigns.md)
+   + [Campaign Management](classic-personalization-campaigns.md)
    + [Páginas de destino](classic-personalization-campaigns-landingpage.md)
    + [Ofertas de Target](classic-personalization-campaigns-target-offers.md)
    + [Marketing por correo electrónico](classic-personalization-campaigns-email.md)
-   + [Seguimiento de correos electrónicos devueltos](classic-personalization-campaigns-email-tracking-bounces.md)
-   + [Teasers y estrategias](classic-personalization-campaigns-teasers-strategy.md)
+   + [Seguimiento de correos electrónicos rechazados](classic-personalization-campaigns-email-tracking-bounces.md)
+   + [Teasers and Strategies](classic-personalization-campaigns-teasers-strategy.md)
    + [Configuración de la campaña](classic-personalization-campaigns-setting-up-your.md)
-   + [Publicar un mensaje de correo electrónico para los proveedores de servicios de correo electrónico](classic-personalization-campaigns-email-newsletters.md)
-   + [Trabajo con Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
-   + [Crear una página de aterrizaje del boletín eficaz](classic-personalization-campaigns-email-landingpage.md)
+   + [Publicación de un correo electrónico para proveedores de servicios de correo electrónico](classic-personalization-campaigns-email-newsletters.md)
+   + [Trabajar con el administrador de campañas de marketing](classic-personalization-campaigns-mktg-manager.md)
+   + [Creación de una página de aterrizaje de newsletter efectiva](classic-personalization-campaigns-email-landingpage.md)
    + [Administración de suscripciones](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
-   + [Trabajo con Adobe Campaign 6.1 y Adobe Campaign Standard](classic-personalization-ac-campaign.md)
-   + [Trabajo con Adobe Campaign](classic-personalization-ac.md)
+   + [Uso de Adobe Campaign 6.1 y Adobe Campaign Standard](classic-personalization-ac-campaign.md)
+   + [Uso de Adobe Campaign](classic-personalization-ac.md)
    + [Componentes de Adobe Campaign](classic-personalization-ac-components.md)
-   + [Targeting de Adobe Campaign](classic-personalization-ac-target.md)
-   + [Crear formularios de Adobe Campaign en AEM](classic-personalization-ac-forms.md)
+   + [Segmentación de Adobe Campaign](classic-personalization-ac-target.md)
+   + [Creación de Adobe Campaign Forms AEM en](classic-personalization-ac-forms.md)
 + Creación de recursos en la IU clásica {#assets}
    + [Uso de recursos](classicui-assets.md)
-   + [Envío de recursos de Dynamic Media](dynamic-media-assets-delivering.md)
-   + [Adición de recursos de Dynamic Media a las páginas](dynamic-media-assets-adding-to-page.md)
-   + [Adición de funciones de Scene7 a la página](manage-assets-classic-s7.md)
+   + [Entrega de recursos de Dynamic Media](dynamic-media-assets-delivering.md)
+   + [Añadir recursos de Dynamic Media a las páginas](dynamic-media-assets-adding-to-page.md)
+   + [Añadir funciones de Scene7 a la página](manage-assets-classic-s7.md)
    + [Vídeo](manage-assets-classic-s7-video.md)
    + [Trabajo con Dynamic Media](dynamic-media-assets.md)
-   + [Convenciones de nomenclatura para la prueba de recursos](asset-naming-conventions.md)
+   + [Convenciones de nomenclatura para pruebas de recursos](asset-naming-conventions.md)

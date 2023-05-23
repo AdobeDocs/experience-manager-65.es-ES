@@ -1,7 +1,7 @@
 ---
 title: Diseño interactivo para páginas web
 seo-title: Responsive design for web pages
-description: Con un diseño interactivo, las mismas páginas se pueden mostrar de forma eficaz en varios dispositivos en varias orientaciones
+description: Con un diseño interactivo, las mismas páginas se pueden mostrar de forma eficaz en varios dispositivos y en varias orientaciones
 seo-description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations
 uuid: 3d324557-e7ff-4c82-920f-9b5a906925e8
 contentOwner: Guillaume Carlino
@@ -22,77 +22,77 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe recomienda utilizar el Editor de SPA para proyectos que requieren procesamiento del lado del cliente basado en el marco de aplicaciones de una sola página (por ejemplo, _React_). [Más información](/help/sites-developing/spa-overview.md).
+>El Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (como _Reaccionar_). [Más información](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Varios ejemplos se basan en el contenido de muestra de Geometrixx, que ya no se envía con AEM (Adobe Experience Manager), tras ser reemplazado por We.Retail. Consulte el documento [Implementación de referencia de We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) para obtener información sobre cómo descargar e instalar Geometrixx.
+>Varios ejemplos se basan en el contenido de muestra de Geometrixx AEM, que ya no se envía con (Adobe Experience Manager) y que se ha sustituido por We.Retail. Ver el documento [Implementación de referencia de We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) para obtener información sobre cómo descargar e instalar Geometrixx.
 
-Diseñe las páginas web para que se adapten a la ventanilla del cliente en la que se muestran. Con un diseño interactivo, las mismas páginas se pueden mostrar de forma eficaz en varios dispositivos en ambas orientaciones. La siguiente imagen muestra algunas maneras en que una página puede responder a los cambios en el tamaño de la ventanilla móvil:
+Diseñar las páginas web para que se adapten a la ventanilla del cliente en la que se muestran. Con un diseño interactivo, las mismas páginas se pueden mostrar de forma eficaz en varios dispositivos en ambas orientaciones. La siguiente imagen muestra algunas formas en que una página puede responder a los cambios en el tamaño de la ventanilla móvil:
 
-* Diseño: Utilice diseños de una sola columna para ventanillas más pequeñas y diseños de varias columnas para ventanillas más grandes.
-* Tamaño del texto: Utilice un tamaño de texto mayor (cuando corresponda, como encabezados) en ventanillas más grandes.
-* Contenido: Incluya solo el contenido más importante cuando se muestre en dispositivos más pequeños.
-* Navegación: Se proporcionan herramientas específicas del dispositivo para acceder a otras páginas.
-* Imágenes: Proporcionar representaciones de imagen adecuadas para la ventanilla móvil del cliente. según las dimensiones de la ventana.
+* Diseño: utilice diseños de una sola columna para las ventanillas más pequeñas y diseños de varias columnas para las ventanillas más grandes.
+* Tamaño de texto: utilice un tamaño de texto más grande (cuando corresponda, como encabezados) en las ventanillas móviles más grandes.
+* Contenido: incluya solo el contenido más importante al mostrarlo en dispositivos más pequeños.
+* Navegación: se proporcionan herramientas específicas del dispositivo para acceder a otras páginas.
+* Imágenes: se muestran las representaciones de imágenes apropiadas para la ventanilla del cliente. según las dimensiones de la ventana.
 
-![Chlimage_1-4](assets/chlimage_1-4a.png)
+![chlimage_1-4](assets/chlimage_1-4a.png)
 
-Desarrolle aplicaciones de Adobe Experience Manager (AEM) que generen páginas de HTML5 que se adapten a múltiples tamaños de ventana y orientaciones. Por ejemplo, los siguientes intervalos de anchura de las ventanillas móviles se corresponden con varios tipos de dispositivos y orientaciones
+Desarrolle aplicaciones de Adobe Experience Manager AEM () que generen páginas de HTML5 adaptadas a varios tamaños y orientaciones de ventana. Por ejemplo, los siguientes intervalos de anchuras de ventanilla móvil se corresponden con varios tipos de dispositivos y orientaciones
 
 * Anchura máxima de 480 píxeles (teléfono, vertical)
 * Anchura máxima de 767 píxeles (teléfono, horizontal)
 * Anchura entre 768 píxeles y 979 píxeles (tableta, vertical)
 * Anchura entre 980 píxeles y 1199 píxeles (tableta, horizontal)
-* Anchura de 1200 píxeles o buena (escritorio)
+* Anchura de 1200 píxeles o bueno (escritorio)
 
 Consulte los siguientes temas para obtener información sobre la implementación del comportamiento de diseño interactivo:
 
 * [Consultas de medios](/help/sites-developing/responsive.md#using-media-queries)
-* [Cubiertas fluidas](/help/sites-developing/responsive.md#developing-a-fluid-grid)
+* [Rejillas fluidas](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Imágenes adaptables](/help/sites-developing/responsive.md#using-adaptive-images)
 
-A medida que diseña, use **[!UICONTROL Barra de tareas]** para obtener una vista previa de las páginas de distintos tamaños de pantalla.
+A medida que diseñe, utilice **[!UICONTROL Compañero]** para obtener una vista previa de las páginas para varios tamaños de pantalla.
 
-## Antes de desarrollar {#before-you-develop}
+## Antes de que desarrolle {#before-you-develop}
 
-Antes de desarrollar la aplicación de AEM que admite las páginas web, se deben tomar varias decisiones de diseño. Por ejemplo, debe tener la siguiente información:
+AEM Antes de desarrollar la aplicación que admite sus páginas web, se deben tomar varias decisiones de diseño. Por ejemplo, debe tener la siguiente información:
 
 * Los dispositivos a los que está dirigiendo.
-* Los tamaños de las ventanillas de destino.
-* Los diseños de página para cada uno de los tamaños de la ventanilla objetivo.
+* Tamaños de las ventanillas móviles de destino.
+* Diseños de página para cada uno de los tamaños de ventanilla móvil de destino.
 
-### Estructura de la aplicación {#application-structure}
+### Estructura de aplicación {#application-structure}
 
-La estructura de aplicación AEM típica admite todas las implementaciones de diseño adaptables:
+AEM La estructura típica de la aplicación de la es compatible con todas las implementaciones de diseño adaptables:
 
-* Los componentes de página residen debajo de /apps/*application_name*/componentes
-* Las plantillas residen debajo de /apps/*application_name*/templates
+* Los componentes de página residen debajo de /apps/*application_name*/components
+* Las plantillas se encuentran debajo de /apps/*application_name*/templates
 * Los diseños se encuentran debajo de /etc/designs
 
 ## Uso de consultas de medios {#using-media-queries}
 
-Las consultas de medios permiten el uso selectivo de estilos CSS para el procesamiento de páginas. AEM herramientas y funciones de desarrollo le permiten implementar de forma eficaz y eficiente las consultas de medios en sus aplicaciones.
+Las consultas de medios permiten el uso selectivo de estilos CSS para el procesamiento de páginas. AEM Las herramientas y características de desarrollo de la le permiten implementar de forma eficaz y eficiente las consultas de medios en sus aplicaciones.
 
-El grupo W3C proporciona la variable [Consultas multimedia](https://www.w3.org/TR/mediaqueries-3/) recomendación que describe esta función de CSS3 y la sintaxis.
+El grupo W3C proporciona el [Consultas de medios](https://www.w3.org/TR/mediaqueries-3/) recomendación que describe esta función de CSS3 y la sintaxis.
 
 ### Creación del archivo CSS {#creating-the-css-file}
 
-En el archivo CSS, defina las consultas de medios en función de las propiedades de los dispositivos a los que esté dirigiendo. La siguiente estrategia de implementación es efectiva para administrar estilos para cada consulta de medios:
+En el archivo CSS, defina consultas de medios basadas en las propiedades de los dispositivos a los que está dirigiendo. La siguiente estrategia de implementación es eficaz para administrar estilos para cada consulta de medios:
 
-* Utilice ClientLibraryFolder para definir el CSS que se ensamblará cuando se represente la página.
+* Utilice una ClientLibraryFolder para definir el archivo CSS que se ensambla cuando se representa la página.
 * Defina cada consulta de medios y los estilos asociados en archivos CSS independientes. Es útil utilizar nombres de archivo que representen las características del dispositivo de la consulta de medios.
-* Defina estilos comunes a todos los dispositivos en un archivo CSS independiente.
-* En el archivo css.txt de ClientLibraryFolder, ordene los archivos CSS de la lista como sea necesario en el archivo CSS ensamblado.
+* Defina estilos que sean comunes a todos los dispositivos en un archivo CSS independiente.
+* En el archivo css.txt de ClientLibraryFolder, ordene los archivos CSS de lista según sea necesario en el archivo CSS ensamblado.
 
-La variable `We.Retail` Media sample utiliza esta estrategia para definir estilos en el diseño del sitio. El archivo CSS utilizado por `We.Retail` está en `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
+El `We.Retail` La muestra de medios utiliza esta estrategia para definir estilos en el diseño del sitio. El archivo CSS utilizado por `We.Retail` es el `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
 
-La tabla siguiente muestra los archivos de la carpeta secundaria css.
+La siguiente tabla enumera los archivos de la carpeta secundaria css.
 
 <table>
  <tbody>
   <tr>
-   <th>Nombre del archivo</th>
+   <th>Nombre de archivo</th>
    <th>Descripción</th>
    <th>Consulta de medios</th>
   </tr>
@@ -108,18 +108,18 @@ La tabla siguiente muestra los archivos de la carpeta secundaria css.
   </tr>
   <tr>
    <td>responsive-1200px.css</td>
-   <td>Estilos para todos los medios con una anchura o anchura de 1200 píxeles.</td>
-   <td><p>@media (min-width: 1200 px) {<br /> ...<br /> }</p> </td>
+   <td>Estilos para todos los medios que tengan 1200 píxeles de ancho o más.</td>
+   <td><p>@media (ancho mínimo: 1200 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-980px-1199px.css</td>
-   <td>Estilos para medios con una anchura de entre 980 píxeles y 1199 píxeles.</td>
-   <td><p>@media (min-width: 980 px) y (ancho máximo: 1199 px) {<br /> ...<br /> }</p> </td>
+   <td>Estilos de medios que tienen entre 980 y 1199 píxeles de ancho.</td>
+   <td><p>@media (ancho mínimo: 980 px) y (ancho máximo: 1199 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-768px-979px.css</td>
-   <td>Estilos para medios con una anchura de entre 768 píxeles y 979 píxeles. </td>
-   <td><p>@media (min-width: 768 px) y (ancho máximo: 979 px) {<br /> ...<br /> }</p> </td>
+   <td>Estilos de medios que tienen entre 768 y 979 píxeles de ancho. </td>
+   <td><p>@media (ancho mínimo: 768 px) y (ancho máximo: 979 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-767px-max.css</td>
@@ -134,7 +134,7 @@ La tabla siguiente muestra los archivos de la carpeta secundaria css.
  </tbody>
 </table>
 
-El archivo css.txt en la variable `/etc/designs/weretail/clientlibs` carpeta enumera los archivos CSS que incluye la carpeta de biblioteca del cliente. El orden de los archivos implementa la prioridad de estilo. Los estilos son más específicos a medida que disminuye el tamaño del dispositivo.
+El archivo css.txt en `/etc/designs/weretail/clientlibs` enumera los archivos CSS que incluye la carpeta de biblioteca de cliente. El orden de los archivos implementa la prioridad de estilo. Los estilos son más específicos a medida que disminuye el tamaño del dispositivo.
 
 `#base=css`
 
@@ -151,11 +151,11 @@ responsive-1200px.css
  responsive-480px.css
 ```
 
-**Sugerencia**: Los nombres de archivo descriptivos permiten identificar fácilmente el tamaño de la ventanilla objetivo.
+**Sugerencia**: Los nombres de archivo descriptivos permiten identificar fácilmente el tamaño de la ventanilla móvil de destino.
 
-### Uso de consultas de medios con páginas AEM {#using-media-queries-with-aem-pages}
+### AEM Uso de consultas de medios con páginas de {#using-media-queries-with-aem-pages}
 
-Incluya la carpeta de la biblioteca del cliente en el script JSP del componente de página. De este modo, se genera el archivo CSS que incluye las consultas de medios y hace referencia al archivo.
+Incluya la carpeta de la biblioteca de cliente en el script JSP del componente de página. Al hacerlo, se ayuda a generar el archivo CSS que incluye las consultas de medios y hace referencia al archivo.
 
 ```xml
 <ui:includeClientLib categories="apps.weretail.all"/>
@@ -163,7 +163,7 @@ Incluya la carpeta de la biblioteca del cliente en el script JSP del componente 
 
 >[!NOTE]
 >
->La variable `apps.weretail.all` carpeta de biblioteca de cliente incrusta la biblioteca clientlibs.
+>El `apps.weretail.all` la carpeta de biblioteca del cliente incrusta la biblioteca clientlibs.
 
 El script JSP genera el siguiente código de HTML que hace referencia a las hojas de estilo:
 
@@ -174,34 +174,34 @@ El script JSP genera el siguiente código de HTML que hace referencia a las hoja
 
 ## Vista previa para dispositivos específicos {#previewing-for-specific-devices}
 
-Consulte vistas previas de las páginas en diferentes tamaños de ventanilla para poder probar el comportamiento del diseño interactivo. En **[!UICONTROL Vista previa]** modo, **[!UICONTROL Barra de tareas]** incluye un **[!UICONTROL Dispositivos]** menú desplegable que utiliza para seleccionar un dispositivo. Al seleccionar un dispositivo, la página cambia para adaptarse al tamaño de la ventanilla móvil.
+Vea vistas previas de las páginas en diferentes tamaños de ventanilla móvil para poder probar el comportamiento del diseño interactivo. Entrada **[!UICONTROL Previsualizar]** modo, **[!UICONTROL Compañero]** incluye un **[!UICONTROL Dispositivos]** que se utiliza para seleccionar un dispositivo. Al seleccionar un dispositivo, la página cambia para adaptarse al tamaño de la ventanilla móvil.
 
-![Chlimage_1-5](assets/chlimage_1-5a.png)
+![chlimage_1-5](assets/chlimage_1-5a.png)
 
-Para activar la vista previa del dispositivo en **[!UICONTROL Barra de tareas]**, debe configurar la página y la variable **[!UICONTROL MobileEmulatorProvider]** servicio. Otra configuración de página controla la lista de dispositivos que aparecen en la **[!UICONTROL Dispositivos]** lista.
+Para activar la vista previa del dispositivo en **[!UICONTROL Compañero]**, debe configurar la página y el **[!UICONTROL MobileEmulatorProvider]** servicio. Otra configuración de página controla la lista de dispositivos que aparece en la **[!UICONTROL Dispositivos]** lista.
 
-### Adición de la lista de dispositivos {#adding-the-devices-list}
+### Agregar la lista de dispositivos {#adding-the-devices-list}
 
-La variable **[!UICONTROL Dispositivos]** la lista aparece en **[!UICONTROL Barra de tareas]** cuando su página incluye el script JSP que procesa el **[!UICONTROL Dispositivos]** lista. Para agregar la variable **[!UICONTROL Dispositivos]** a **[!UICONTROL Barra de tareas]**, incluya el `/libs/wcm/mobile/components/simulator/simulator.jsp` en el `head` de su página.
+El **[!UICONTROL Dispositivos]** La lista aparece en **[!UICONTROL Compañero]** cuando la página incluye el script JSP que procesa el **[!UICONTROL Dispositivos]** lista. Para añadir el **[!UICONTROL Dispositivos]** lista para **[!UICONTROL Compañero]**, incluya el `/libs/wcm/mobile/components/simulator/simulator.jsp` secuencia de comandos en `head` de la página.
 
 Incluya el siguiente código en el JSP que define la variable `head` sección:
 
 `<cq:include script="/libs/wcm/mobile/components/simulator/simulator.jsp"/>`
 
-Para ver un ejemplo, abra el `/apps/weretail/components/page/head.jsp` en CRXDE Lite.
+Para ver un ejemplo, abra el `/apps/weretail/components/page/head.jsp` archivo en CRXDE Lite.
 
 ### Registro de componentes de página para simulación {#registering-page-components-for-simulation}
 
-Para permitir que el simulador de dispositivos admita sus páginas, registre los componentes de su página con el servicio de fábrica MobileEmulatorProvider y defina la variable `mobile.resourceTypes` propiedad.
+Para habilitar el simulador de dispositivos para que admita sus páginas, registre los componentes de su página con el servicio de fábrica de MobileEmulatorProvider y defina `mobile.resourceTypes` propiedad.
 
-Al trabajar con AEM, existen varios métodos para administrar los ajustes de configuración de dichos servicios; see [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información.
+AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener información detallada.
 
 Por ejemplo, para crear un ` [sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)` en la aplicación:
 
 * Carpeta principal: `/apps/application_name/config`
 * Nombre: `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
 
-   El `*alias*` es necesario porque el servicio MobileEmulatorProvider es un servicio de fábrica. Utilice cualquier alias que sea único para esta fábrica.
+   El - `*alias*` El sufijo es necesario porque el servicio MobileEmulatorProvider es un servicio de fábrica. Utilice cualquier alias que sea único para esta fábrica.
 
 * jcr:primaryType: `sling:OsgiConfig`
 
@@ -209,7 +209,7 @@ Agregue la siguiente propiedad de nodo:
 
 * Nombre: `mobile.resourceTypes`
 * Tipo: `String[]`
-* Valor: Las rutas a los componentes de página que representan las páginas web. Por ejemplo, la aplicación geometrixx-media utiliza los siguientes valores:
+* Valor: Las rutas a los componentes de página que procesan las páginas web. Por ejemplo, la aplicación geometrixx-media utiliza los siguientes valores:
 
    ```
    geometrixx-media/components/page
@@ -218,53 +218,53 @@ Agregue la siguiente propiedad de nodo:
     geometrixx-unlimited/components/pages/issue
    ```
 
-### Especificación de los grupos de dispositivos {#specifying-the-device-groups}
+### Especificar los grupos de dispositivos {#specifying-the-device-groups}
 
-Para especificar los grupos de dispositivos que aparecen en la lista Dispositivos, agregue una `cq:deviceGroups` a la `jcr:content` nodo de la página raíz del sitio. El valor de la propiedad es una matriz de rutas a los nodos de grupo de dispositivos.
+Para especificar los grupos de dispositivos que aparecen en la lista Dispositivos, agregue un `cq:deviceGroups` a la propiedad `jcr:content` de la página raíz del sitio. El valor de la propiedad es una matriz de rutas a los nodos del grupo de dispositivos.
 
-Los nodos del grupo de dispositivos se encuentran en la variable `/etc/mobile/groups` carpeta.
+Los nodos del grupo de dispositivos se encuentran en la `/etc/mobile/groups` carpeta.
 
-Por ejemplo, la página raíz del sitio de Geometrixx Medias es `/content/geometrixx-media`. La variable `/content/geometrixx-media/jcr:content` incluye la siguiente propiedad:
+Por ejemplo, la página raíz del sitio de Geometrixx Medias es `/content/geometrixx-media`. El `/content/geometrixx-media/jcr:content` El nodo incluye la siguiente propiedad:
 
 * Nombre: `cq:deviceGroups`
 * Tipo: `String[]`
 * Valor: `/etc/mobile/groups/responsive`
 
-Utilice la consola Herramientas para [crear y editar grupos de dispositivos](/help/sites-developing/groupfilters.md).
+Utilice la consola Herramientas para lo siguiente [crear y editar grupos de dispositivos](/help/sites-developing/groupfilters.md).
 
 >[!NOTE]
 >
->Para los grupos de dispositivos que utilice para el diseño interactivo, edite el grupo de dispositivos y, en la ficha General, seleccione Deshabilitar emulador. Esta opción evita que aparezca el carrusel del emulador, lo que no es relevante para el diseño interactivo.
+>Para los grupos de dispositivos que utiliza para el diseño interactivo, edite el grupo de dispositivos y, en la pestaña General, seleccione Deshabilitar emulador. Esta opción evita que aparezca el carrusel del emulador, lo que no es relevante para el diseño interactivo.
 
 ## Uso de imágenes adaptables {#using-adaptive-images}
 
-Puede utilizar consultas de medios para seleccionar un recurso de imagen para mostrar en la página. Sin embargo, todos los recursos que utilizan una consulta de medios para condicionalizar su uso se descargan al cliente. La consulta de medios simplemente determina si se muestra el recurso descargado.
+Puede utilizar consultas de medios para seleccionar un recurso de imagen para mostrarlo en la página. Sin embargo, todos los recursos que utilizan una consulta de medios para condicionar su uso se descargan en el cliente. La consulta de medios simplemente determina si se muestra el recurso descargado.
 
-Para recursos de gran tamaño, como imágenes, la descarga de todos los recursos no es un uso eficiente de la canalización de datos del cliente. Para descargar recursos de forma selectiva, utilice JavaScript para iniciar la solicitud de recursos después de que las consultas de medios realicen la selección.
+Para recursos de gran tamaño, como imágenes, la descarga de todos los recursos no es un uso eficaz de la canalización de datos del cliente. Para descargar recursos de forma selectiva, utilice JavaScript para iniciar la solicitud de recurso después de que las consultas de medios realicen la selección.
 
 La siguiente estrategia carga un único recurso que se elige mediante consultas de medios:
 
 1. Agregue un elemento DIV para cada versión del recurso. Incluya el URI del recurso como el valor de un valor de atributo. El explorador no interpreta el atributo como un recurso.
-1. Agregue una consulta de medios a cada elemento DIV que sea adecuado para el recurso.
+1. Agregue una consulta multimedia a cada elemento DIV que sea apropiado para el recurso.
 1. Cuando se carga el documento o se cambia el tamaño de la ventana, el código JavaScript prueba la consulta de medios de cada elemento DIV.
 1. En función de los resultados de las consultas, determine qué recurso incluir.
 1. Inserte un elemento HTML en el DOM que haga referencia al recurso.
 
 ### Evaluación de consultas de medios mediante JavaScript {#evaluating-media-queries-using-javascript}
 
-Implementación de [Interfaz MediaQueryList](https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface) que define W3C permite evaluar consultas de medios mediante JavaScript. Puede aplicar lógica a los resultados de la consulta de medios y ejecutar secuencias de comandos que estén dirigidas a la ventana actual:
+Implementaciones del [Interfaz de MediaQueryList](https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface) que define W3C le permiten evaluar consultas de medios mediante JavaScript. Puede aplicar lógica a los resultados de la consulta de medios y ejecutar scripts dirigidos a la ventana actual:
 
-* Los navegadores que implementan la interfaz MediaQueryList admiten el `window.matchMedia()` función. Esta función prueba las consultas de medios con una cadena determinada. La función devuelve un valor `MediaQueryList` que proporciona acceso a los resultados de la consulta.
+* Los exploradores que implementan la interfaz MediaQueryList admiten el `window.matchMedia()` función. Esta función prueba las consultas de medios con una cadena determinada. La función devuelve un valor `MediaQueryList` que proporciona acceso a los resultados de la consulta.
 
-* Para los exploradores que no implementan la interfaz, puede utilizar un `matchMedia()` relleno de políticas, como [matchMedia.js](https://github.com/paulirish/matchMedia.js), una biblioteca JavaScript disponible de forma gratuita.
+* En el caso de los exploradores que no implementan la interfaz, puede utilizar un `matchMedia()` relleno poli, como [matchMedia.js](https://github.com/paulirish/matchMedia.js), una biblioteca de JavaScript de libre acceso.
 
 #### Selección de recursos específicos de medios {#selecting-media-specific-resources}
 
-W3C [elemento de imagen](https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element) utiliza consultas de medios para determinar el origen que se utilizará para los elementos de imagen. El elemento de imagen utiliza atributos de elemento para asociar consultas de medios con rutas de imágenes.
+El W3C [elemento de imagen](https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element) utiliza consultas de medios para determinar el origen que se va a utilizar para los elementos de imagen. El elemento de imagen utiliza atributos de elemento para asociar consultas de medios con rutas de imagen.
 
-La disponibilidad gratuita [biblioteca picturefill.js](https://github.com/scottjehl/picturefill) proporciona una funcionalidad similar a la propuesta `picture` y utiliza una estrategia similar. Las llamadas a la biblioteca picturefill.js `window.matchMedia` para evaluar las consultas de medios definidas para un conjunto de `div` elementos. Cada `div` element también especifica un origen de imagen. El origen se utiliza cuando la consulta de medios del `div` elementos devueltos `true`.
+El acceso gratuito [biblioteca picturefill.js](https://github.com/scottjehl/picturefill) proporciona una funcionalidad similar a la propuesta `picture` y utiliza una estrategia similar. Llamadas a la biblioteca picturefill.js `window.matchMedia` para evaluar las consultas de medios definidas para un conjunto de `div` elementos. Cada `div` también especifica un origen de imagen. El origen se utiliza cuando se realiza la consulta de medios del `div` retornos de elemento `true`.
 
-La variable `picturefill.js` La biblioteca de requiere un código de HTML similar al del siguiente ejemplo:
+El `picturefill.js` La biblioteca de requiere un código de HTML similar al siguiente ejemplo:
 
 ```xml
 <div data-picture>
@@ -287,26 +287,26 @@ Cuando se representa la página, picturefull.js inserta un `img` como el último
 </div>
 ```
 
-En una página AEM, el valor de la variable `data-src` es la ruta a un recurso en el repositorio.
+AEM En una página de, el valor de `data-src` attribute es la ruta a un recurso del repositorio.
 
-### Implementación de imágenes adaptables en AEM {#implementing-adaptive-images-in-aem}
+### AEM Implementar imágenes adaptables en el {#implementing-adaptive-images-in-aem}
 
-Para implementar imágenes adaptables en la aplicación de AEM, debe agregar las bibliotecas de JavaScript necesarias e incluir el marcado de HTML requerido en las páginas.
+AEM Para implementar imágenes adaptables en la aplicación de, debe añadir las bibliotecas de JavaScript necesarias e incluir el marcado de HTML necesario en las páginas.
 
 **Bibliotecas**
 
-Obtenga las siguientes bibliotecas JavaScript e inclúyalas en una carpeta de la biblioteca del cliente:
+Obtenga las siguientes bibliotecas JavaScript e inclúyalas en una carpeta de biblioteca de cliente:
 
-* [matchMedia.js](https://github.com/paulirish/matchMedia.js) (para exploradores que no implementan la interfaz MediaQueryList )
+* [matchMedia.js](https://github.com/paulirish/matchMedia.js) (en exploradores que no implementan la interfaz MediaQueryList)
 * [picturefill.js](https://github.com/scottjehl/picturefill)
-* jquery.js (disponible mediante la variable `/etc/clientlibs/granite/jquery` carpeta de la biblioteca del cliente (categoría = jquery)
-* [jquery.debouncedresize.js](https://github.com/louisremi/jquery-smartresize) (un evento jquery que se produce una vez después de cambiar el tamaño de la ventana)
+* jquery.js (disponible a través del `/etc/clientlibs/granite/jquery` carpeta de biblioteca de cliente (category = jquery)
+* [jquery.debouncedresize.js](https://github.com/louisremi/jquery-smartresize) (un evento jquery que se produce una vez que se cambia el tamaño de la ventana)
 
-**Sugerencia:** Puede concatenar automáticamente varias carpetas de la biblioteca de cliente mediante [incrustar](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries).
+**Sugerencia:** Puede concatenar automáticamente varias carpetas de la biblioteca de cliente con [incrustación](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries).
 
 **HTML**
 
-Cree un componente que genere los elementos div necesarios que el código picturefill.js espera. En una página AEM, el valor del atributo data-src es la ruta a un recurso en el repositorio. Por ejemplo, un componente de página puede codificar de forma rígida las consultas de medios y las rutas asociadas para las representaciones de imágenes en DAM. O bien, cree un componente de imagen personalizado que permita a los autores seleccionar representaciones de imagen o especificar opciones de renderización en tiempo de ejecución.
+Cree un componente que genere los elementos div necesarios que espera el código picturefill.js. AEM En una página de, el valor del atributo data-src es la ruta a un recurso del repositorio. Por ejemplo, un componente de página puede codificar de forma rígida las consultas de medios y las rutas asociadas para representaciones de imágenes en DAM. O bien, cree un componente de imagen personalizado que permita a los autores seleccionar representaciones de imágenes o especificar opciones de representación en tiempo de ejecución.
 
 El siguiente HTML de ejemplo selecciona entre dos representaciones DAM de la misma imagen.
 
@@ -320,25 +320,25 @@ El siguiente HTML de ejemplo selecciona entre dos representaciones DAM de la mis
 
 >[!NOTE]
 >
->El componente de base de la imagen adaptable implementa imágenes adaptables:
+>El componente de base Imagen adaptable implementa las imágenes adaptables:
 >
 >* Carpeta de biblioteca de cliente: `/libs/foundation/components/adaptiveimage/clientlibs`
->* Secuencia de comandos que genera el HTML: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
+>* Script que genera el HTML: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
 >
 >La sección siguiente proporciona detalles sobre este componente.
 
-### Explicación de la renderización de imágenes en AEM {#understanding-image-rendering-in-aem}
+### AEM Explicación de la renderización de imágenes en la {#understanding-image-rendering-in-aem}
 
-Para personalizar la renderización de imágenes, debe comprender la implementación AEM de renderización de imágenes estáticas predeterminada. AEM proporciona el componente Imagen y un servlet de renderización de imágenes que trabajan juntos para procesar imágenes para una página web. Las siguientes secuencias de eventos se producen cuando el componente Imagen se incluye en el sistema de párrafos de la página:
+AEM Para personalizar la renderización de imágenes, debe comprender la implementación predeterminada de la renderización de imágenes estáticas de la. AEM proporciona el componente Imagen y un servlet de renderización de imágenes que funcionan juntos para procesar imágenes para páginas web. Las siguientes secuencias de eventos se producen cuando el componente Imagen se incluye en el sistema de párrafos de la página:
 
-1. Creación: Los autores editan el componente Imagen para especificar el archivo de imagen que se incluirá en una página HTML. La ruta del archivo se almacena como un valor de propiedad del nodo del componente Imagen.
-1. Solicitud de página: El JSP del componente de página genera el código de HTML. El JSP del componente Imagen genera y añade un elemento img a la página.
+1. Creación: los autores editan el componente Imagen para especificar el archivo de imagen que desea incluir en una página de HTML. La ruta del archivo se almacena como un valor de propiedad del nodo del componente Imagen.
+1. Solicitud de página: el JSP del componente de página genera el código de HTML. El JSP del componente Imagen genera y añade un elemento img a la página.
 1. Solicitud de imagen: El explorador web carga la página y solicita la imagen según el atributo src del elemento img.
-1. Representación de imágenes: El servlet de renderización de imágenes devuelve la imagen al explorador web.
+1. Image rendering: El servlet de renderización de imágenes devuelve la imagen al explorador web.
 
-![Chlimage_1-6](assets/chlimage_1-6a.png)
+![chlimage_1-6](assets/chlimage_1-6a.png)
 
-Por ejemplo, el JSP del componente Imagen genera el siguiente elemento HTML:
+Por ejemplo, el JSP del componente de imagen genera el siguiente elemento HTML:
 
 `<img title="My Image" alt="My Image" class="cq-dd-image" src="/content/mywebsite/en/_jcr_content/par/image_0.img.jpg/1358372073597.jpg">`
 
@@ -349,23 +349,23 @@ Cuando el explorador carga la página, solicita la imagen utilizando el valor de
 * Selector: `img`
 * Sufijo: `1358372073597.jpg`
 
-La variable `image_0` el nodo tiene un `jcr:resourceType` valor de `foundation/components/image`, que tiene un `sling:resourceSuperType` valor de `foundation/components/parbase`. El componente parbase incluye la secuencia de comandos img.GET.java que coincide con el selector y la extensión de nombre de archivo de la dirección URL de la solicitud. CQ utiliza este script (servlet) para renderizar la imagen.
+El `image_0` el nodo tiene un `jcr:resourceType` valor de `foundation/components/image`, que tiene un `sling:resourceSuperType` valor de `foundation/components/parbase`. El componente parbase incluye el script img.GET.java que coincide con el selector y la extensión de nombre de archivo de la dirección URL de la solicitud. CQ utiliza este script (servlet) para procesar la imagen.
 
-Para ver el código fuente de la secuencia de comandos, utilice CRXDE Lite para abrir el `/libs/foundation/components/parbase/img.GET.java`
+Para ver el código fuente del script, utilice el CRXDE Lite para abrir `/libs/foundation/components/parbase/img.GET.java`
 archivo.
 
-## Escalado de imágenes para el tamaño actual de la ventanilla móvil {#scaling-images-for-the-current-viewport-size}
+## Escala de imágenes para el tamaño de la ventanilla actual {#scaling-images-for-the-current-viewport-size}
 
-Escale las imágenes durante la ejecución según las características de la ventanilla móvil del cliente para proporcionar imágenes que se ajusten a los principios del diseño interactivo. Utilice el mismo patrón de diseño que la representación de imágenes estáticas, utilizando un servlet y un componente de creación.
+Escale imágenes en tiempo de ejecución según las características de la ventanilla del cliente para proporcionar imágenes que se ajusten a los principios del diseño interactivo. Utilice el mismo patrón de diseño que el procesamiento de imágenes estáticas, con un servlet y un componente de creación.
 
 El componente debe realizar las siguientes tareas:
 
 * Almacene la ruta y las dimensiones deseadas del recurso de imagen como valores de propiedad.
-* Generar `div` elementos que contienen selectores de medios y llamadas de servicio para procesar la imagen.
+* Generar `div` elementos que contienen selectores de medios y llamadas al servicio para procesar la imagen.
 
 >[!NOTE]
 >
->El cliente web utiliza las bibliotecas JavaScript matchMedia y Picturefill (o bibliotecas similares) para evaluar los selectores de medios.
+>El cliente web utiliza las bibliotecas de JavaScript matchMedia y Picturefill (o bibliotecas similares) para evaluar los selectores de medios.
 
 El servlet que procesa la solicitud de imagen debe realizar las siguientes tareas:
 
@@ -376,18 +376,18 @@ El servlet que procesa la solicitud de imagen debe realizar las siguientes tarea
 
 AEM instala las siguientes implementaciones que puede utilizar o ampliar.
 
-* Componente de base de imagen adaptable que genera consultas de medios y solicitudes HTTP al servlet del componente de imagen adaptable que escala las imágenes.
-* El paquete de Geometrixx Commons instala los servlets de muestra de Image Reference Modification Servlet que modifican la resolución de la imagen.
+* Componente de base de imagen adaptable que genera consultas de medios y solicitudes HTTP al servlet de componente de imagen adaptable que escala las imágenes.
+* El paquete de Geometrixx Commons instala los servlets de muestra del servlet de modificación de referencia de imagen que modifican la resolución de la imagen.
 
-### Explicación del componente de imagen adaptable {#understanding-the-adaptive-image-component}
+### Explicación del componente Imagen adaptable {#understanding-the-adaptive-image-component}
 
 El componente de imagen adaptable genera llamadas al servlet del componente de imagen adaptable para procesar una imagen cuyo tamaño depende de la pantalla del dispositivo. El componente incluye los siguientes recursos:
 
-* JSP: Agrega elementos div que asocian consultas de medios con llamadas al servlet del componente de imagen adaptable.
-* Bibliotecas de cliente: La carpeta clientlibs es un `cq:ClientLibraryFolder` que monta la biblioteca JavaScript matchMedia polyfill y una biblioteca JavaScript Picturefill modificada.
-* Cuadro de diálogo Editar: La variable `cq:editConfig` el nodo anula el componente de imagen base de CQ, de modo que el destino de colocación crea un componente de imagen adaptable en lugar de un componente de imagen base.
+* JSP: añade elementos div que asocian consultas de medios con llamadas al servlet de componente de imagen adaptable.
+* Bibliotecas de cliente: La carpeta clientlibs es una `cq:ClientLibraryFolder` que combina la biblioteca de JavaScript matchMedia polyfill y una biblioteca de JavaScript Picturefill modificada.
+* Cuadro de diálogo Editar: `cq:editConfig` El nodo anula el componente de imagen de base CQ para que el destino de colocación cree un componente de imagen adaptable en lugar de un componente de imagen de base.
 
-#### Adición de elementos DIV {#adding-the-div-elements}
+#### Adición de los elementos DIV {#adding-the-div-elements}
 
 El script adaptive-image.jsp incluye el siguiente código que genera elementos div y consultas de medios:
 
@@ -407,13 +407,13 @@ El script adaptive-image.jsp incluye el siguiente código que genera elementos d
 </div>
 ```
 
-La variable `path` contiene la ruta del recurso actual (el nodo de componente de imagen adaptable). El código genera una serie de `div` elementos con la siguiente estructura:
+El `path` contiene la ruta del recurso actual (el nodo del componente de imagen adaptable). El código genera una serie de `div` elementos con la siguiente estructura:
 
 `<div data-scr = "*path-to-parent-node*.adaptive-image.adapt.*width*.*quality*.jpg" data-media="*media query*"></div>`
 
-El valor de la variable `data-scr` es una URL que Sling resuelve en el servlet del componente de imagen adaptable que procesa la imagen. El atributo data-media contiene la consulta de medios que se evalúa en relación con las propiedades del cliente.
+El valor del `data-scr` El atributo es una URL que Sling resuelve en el servlet del componente de imagen adaptable que procesa la imagen. El atributo data-media contiene la consulta de medios que se evalúa con las propiedades del cliente.
 
-El siguiente código de HTML es un ejemplo de la variable `div` elementos que genera el JSP:
+El siguiente código de HTML es un ejemplo del `div` elementos que genera el JSP:
 
 ```xml
 <div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.320.low.jpg'></div>
@@ -426,33 +426,33 @@ El siguiente código de HTML es un ejemplo de la variable `div` elementos que ge
 
 #### Cambio de los selectores de tamaño de imagen {#changing-the-image-size-selectors}
 
-Si personaliza el componente de imagen adaptable y cambia los selectores de anchura, también debe configurar el servlet del componente de imagen adaptable para que admita los anchos.
+Si personaliza el componente Imagen adaptable y cambia los selectores de anchura, también debe configurar el servlet del componente de imagen adaptable para que admita las anchuras.
 
-### Explicación del servlet del componente de imagen adaptable {#understanding-the-adaptive-image-component-servlet}
+### Explicación del servlet de componente de imagen adaptable {#understanding-the-adaptive-image-component-servlet}
 
-El servlet del componente de imagen adaptable cambia el tamaño de una imagen de JPEG según una anchura especificada y establece la calidad del JPEG.
+El servlet de componente de imagen adaptable cambia el tamaño de una imagen JPEG según una anchura especificada y establece la calidad JPEG.
 
-#### Interfaz del servlet del componente de imagen adaptable {#the-interface-of-the-adaptive-image-component-servlet}
+#### La interfaz del servlet de componente de imagen adaptable {#the-interface-of-the-adaptive-image-component-servlet}
 
-El servlet del componente de imagen adaptable está enlazado al servlet Sling predeterminado y admite las extensiones de archivo .jpg, .jpeg, .gif y .png. El selector de servlet es img.
+El servlet de componente de imagen adaptable está enlazado al servlet de Sling predeterminado y admite las extensiones de archivo .jpg, .jpeg, .gif y .png. El selector de servlet es img.
 
 >[!CAUTION]
 >
->Los archivos .gif animados no se admiten en AEM para representaciones adaptables.
+>AEM Los archivos .gif animados no son compatibles con las representaciones adaptables en los archivos de formato .gif de la aplicación.
 
-Por lo tanto, Sling resuelve las URL de solicitud HTTP del siguiente formato para este servlet:
+Por lo tanto, Sling resuelve las URL de solicitud HTTP del siguiente formato en este servlet:
 
 `*path-to-node*.img.*extension*`
 
-Por ejemplo, Sling reenvía solicitudes HTTP con la dirección URL `http://localhost:4502/content/geometrixx/adaptiveImage.img.jpg` a Servlet de componente de imagen adaptable.
+Por ejemplo, Sling reenvía solicitudes HTTP con la dirección URL `http://localhost:4502/content/geometrixx/adaptiveImage.img.jpg` al servlet de componente de imagen adaptable.
 
-Dos selectores adicionales especifican la anchura de la imagen solicitada y la calidad del JPEG. El siguiente ejemplo solicita una imagen de anchura de 480 píxeles y calidad media:
+Dos selectores adicionales especifican la anchura y la calidad JPEG de la imagen solicitada. El siguiente ejemplo solicita una imagen de anchura 480 píxeles y calidad media:
 
 `http://localhost:4502/content/geometrixx/adaptiveImage.adapt.480.MEDIUM.jpg`
 
-**Propiedades de imagen admitidas**
+**Propiedades de imagen compatibles**
 
-El servlet acepta un número finito de anchos y cualidades de imagen. Los siguientes anchos son compatibles de forma predeterminada (en píxeles):
+El servlet acepta un número finito de anchuras y calidades de imagen. Las siguientes anchuras son compatibles de forma predeterminada (en píxeles):
 
 * completa
 * 320
@@ -460,45 +460,45 @@ El servlet acepta un número finito de anchos y cualidades de imagen. Los siguie
 * 476
 * 620
 
-El valor completo indica que no se ha realizado ninguna escala.
+El valor completo indica que no hay escala.
 
-Se admiten los siguientes valores para la calidad del JPEG:
+Se admiten los siguientes valores para una calidad JPEG:
 
-* BAJO
+* BAJA
 * MEDIO
-* ALTO
+* ALTA
 
-Los valores numéricos son 0,4, 0,82 y 1,0, respectivamente.
+Los valores numéricos son 0,4; 0,82 y 1,0, respectivamente.
 
-**Cambio de los anchos predeterminados admitidos**
+**Cambio de los anchos admitidos predeterminados**
 
-Utilice la consola web ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) o un nodo sling:OsgiConfig para configurar los anchos compatibles del servlet del componente de imagen adaptable de Adobe CQ.
+Utilizar la consola web ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) o un nodo sling:OsgiConfig para configurar los anchos admitidos del servlet del componente de imagen adaptable de Adobe CQ.
 
-Para obtener información sobre cómo configurar AEM servicios, consulte [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md).
+AEM Para obtener información acerca de cómo configurar los servicios de, consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md).
 
 <table>
  <tbody>
   <tr>
    <th> </th>
-   <th>Consola web</th>
+   <th>consola web</th>
    <th>sling:OsgiConfig</th>
   </tr>
   <tr>
-   <th>Servicio o nombre de nodo</th>
-   <td>El nombre de servicio de la ficha Configuración es Servlet de componente de imagen adaptable de Adobe CQ</td>
+   <th>Nombre del servicio o nodo</th>
+   <td>El nombre de servicio de la pestaña Configuración es Servlet de componente de imagen adaptable de Adobe CQ</td>
    <td>com.day.cq.wcm.foundation.impl. AdaptiveImageComponentServlet</td>
   </tr>
   <tr>
    <th>Propiedad</th>
    <td><p>Anchos admitidos</p>
     <ul>
-     <li>Para añadir una anchura compatible, haga clic en un botón + e introduzca un número entero positivo.</li>
-     <li>Para eliminar una anchura compatible, haga clic en el botón - asociado.</li>
+     <li>Para añadir una anchura admitida, haga clic en un botón + e introduzca un entero positivo.</li>
+     <li>Para quitar una anchura admitida, haga clic en el botón - asociado.</li>
      <li>Para modificar una anchura admitida, edite el valor del campo.</li>
     </ul> </td>
    <td><p>adapt.supported.widths</p>
     <ul>
-     <li>La propiedad es un valor de cadena multivalor.</li>
+     <li>La propiedad es un valor de tipo String multivalor.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -506,7 +506,7 @@ Para obtener información sobre cómo configurar AEM servicios, consulte [Config
 
 #### Detalles de implementación {#implementation-details}
 
-La variable `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` amplía la [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) Clase . El código fuente AdaptiveImageComponentServlet se encuentra en la variable `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` carpeta.
+El `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` La clase amplía el [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) clase. El código fuente AdaptiveImageComponentServlet se encuentra en `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` carpeta.
 
 La clase utiliza anotaciones Felix SCR para configurar el tipo de recurso y la extensión de archivo con los que está asociado el servlet, así como el nombre del primer selector.
 
@@ -526,7 +526,7 @@ La clase utiliza anotaciones Felix SCR para configurar el tipo de recurso y la e
 })
 ```
 
-El servlet utiliza la anotación SCR de propiedad para establecer la calidad y las dimensiones de la imagen admitidas por defecto.
+El servlet utiliza la anotación SCR de propiedad para establecer la calidad de imagen y las dimensiones admitidas de forma predeterminada.
 
 ```java
 @Property(value = {
@@ -539,15 +539,15 @@ El servlet utiliza la anotación SCR de propiedad para establecer la calidad y l
             description = "List of widths this component is permitted to generate.")
 ```
 
-La variable `AbstractImageServlet` proporciona la variable `doGet` método que procesa la solicitud HTTP. Este método determina el recurso asociado a la solicitud, recupera las propiedades de los recursos del repositorio y las devuelve en un [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) objeto.
+El `AbstractImageServlet` proporciona la clase `doGet` método que procesa la solicitud HTTP. Este método determina el recurso asociado a la solicitud, recupera las propiedades del recurso del repositorio y las devuelve en un [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) objeto.
 
 >[!NOTE]
 >
->La variable [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) proporciona la variable `getFileReference method`, que recupera el valor de la variable `fileReference` propiedad.
+>El [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) proporciona la clase `getFileReference method`, que recupera el valor de la variable `fileReference` propiedad.
 
-La variable `AdaptiveImageComponentServlet` la clase anula la función `createLayer` método. El método obtiene la ruta del recurso de imagen y la anchura de la imagen solicitada desde el `ImageContext` objeto. A continuación, llama a los métodos de la variable `info.geometrixx.commons.impl.AdaptiveImageHelper` que realiza el escalado real de la imagen.
+El `AdaptiveImageComponentServlet` anula la clase `createLayer` método. El método obtiene la ruta del recurso de imagen y el ancho de imagen solicitado de la `ImageContext` objeto. A continuación, llama a los métodos del `info.geometrixx.commons.impl.AdaptiveImageHelper` , que realiza el escalado real de la imagen.
 
-La clase AdaptiveImageComponentServlet también anula el método writeLayer. Este método aplica la calidad de JPEG a la imagen.
+La clase AdaptiveImageComponentServlet también reemplaza el método writeLayer. Este método aplica la calidad JPEG a la imagen.
 
 ### Servlet de modificación de referencia de imagen (Geometrixx común) {#image-reference-modification-servlet-geometrixx-common}
 
@@ -555,17 +555,17 @@ El servlet de modificación de referencia de imagen de ejemplo genera atributos 
 
 #### Llamada al servlet {#calling-the-servlet}
 
-El servlet está enlazado a `cq:page` y admite la extensión de archivo .jpg . El selector de servlet es `image`. Por lo tanto, Sling resuelve las URL de solicitud HTTP del siguiente formato para este servlet:
+El servlet está enlazado a `cq:page` dispone de recursos y admite la extensión de archivo .jpg. El selector de servlet es `image`. Por lo tanto, Sling resuelve las URL de solicitud HTTP del siguiente formato en este servlet:
 
 `path-to-page-node.image.jpg`
 
 Por ejemplo, Sling reenvía solicitudes HTTP con la dirección URL `http://localhost:4502/content/geometrixx/en.image.jpg` al servlet de modificación de referencia de imagen.
 
-Tres selectores adicionales especifican la anchura, la altura y la calidad de la imagen solicitada (opcionalmente). En el siguiente ejemplo se solicita una imagen de anchura de 770 píxeles, altura de 360 píxeles y calidad media.
+Otros tres selectores especifican la anchura, altura y (opcionalmente) calidad de la imagen solicitada. El siguiente ejemplo solicita una imagen de anchura 770 píxeles, altura 360 píxeles y calidad media.
 
 `http://localhost:4502/content/geometrixx/en.image.770.360.MEDIUM.jpg`
 
-**Propiedades de imagen admitidas**
+**Propiedades de imagen compatibles**
 
 El servlet acepta un número finito de dimensiones de imagen y valores de calidad.
 
@@ -592,26 +592,26 @@ Se admiten los siguientes valores para la calidad de imagen:
 * mediano
 * alto
 
-Al trabajar con AEM, existen varios métodos para administrar los ajustes de configuración de dichos servicios; see [Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) para obtener más información.
+AEM Al trabajar con los servicios de configuración, existen varios métodos para administrar los parámetros de configuración de dichos servicios; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obtener información detallada.
 
 #### Especificación del recurso de imagen {#specifying-the-image-resource}
 
 La ruta de la imagen, las dimensiones y los valores de calidad deben almacenarse como propiedades de un nodo en el repositorio:
 
 * El nombre del nodo es `image`.
-* El nodo principal es el `jcr:content` nodo de a `cq:page` recurso.
+* El nodo principal es `jcr:content` nodo de a `cq:page` recurso.
 
 * La ruta de la imagen se almacena como el valor de una propiedad denominada `fileReference`.
 
-Al crear una página, utilice **Barra de tareas** para especificar la imagen y agregar la variable `image` a las propiedades de la página:
+Al crear una página, utilice **Compañero** para especificar la imagen y añadir `image` nodo a las propiedades de página:
 
-1. En **Barra de tareas**, haga clic en **Página** y, a continuación, haga clic en **Propiedades de página**.
-1. Haga clic en el **Imagen** y especifique la imagen.
+1. Entrada **Compañero**, haga clic en **Página** y haga clic en **Propiedades de página**.
+1. Haga clic en **Imagen** y especifique la imagen.
 1. Haga clic en **Aceptar**.
 
 #### Detalles de implementación {#implementation-details-1}
 
-La clase info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet amplía la [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) Clase . Si tiene instalado el paquete cq-geometrixx-commons-pkg, el código fuente ImageReferenceModificationServlet se encuentra en la variable `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` carpeta.
+La clase info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet amplía la variable [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) clase. Si tiene instalado el paquete cq-geometrixx-commons-pkg, el código fuente ImageReferenceModificationServlet se encuentra en `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` carpeta.
 
 La clase utiliza anotaciones Felix SCR para configurar el tipo de recurso y la extensión de archivo con los que está asociado el servlet, así como el nombre del primer selector.
 
@@ -626,7 +626,7 @@ La clase utiliza anotaciones Felix SCR para configurar el tipo de recurso y la e
 })
 ```
 
-El servlet utiliza la anotación SCR de propiedad para establecer la calidad y las dimensiones de la imagen admitidas por defecto.
+El servlet utiliza la anotación SCR de propiedad para establecer la calidad de imagen y las dimensiones admitidas de forma predeterminada.
 
 ```java
 @Property(label = "Image Quality",
@@ -651,31 +651,31 @@ El servlet utiliza la anotación SCR de propiedad para establecer la calidad y l
             description = "List of resolutions this component is permitted to generate.")
 ```
 
-La variable `AbstractImageServlet` proporciona la variable `doGet` método que procesa la solicitud HTTP. Este método determina el recurso asociado a la llamada, recupera las propiedades de los recursos del repositorio y las guarda en un [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) objeto.
+El `AbstractImageServlet` proporciona la clase `doGet` método que procesa la solicitud HTTP. Este método determina el recurso asociado a la llamada, recupera las propiedades del recurso del repositorio y las guarda en una [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) objeto.
 
-La variable `ImageReferenceModificationServlet` la clase anula la función `createLayer` e implementa la lógica que determina el recurso de imagen que se va a procesar. El método recupera un nodo secundario del nodo de la página `jcr:content` nodo llamado `image`. Un [Imagen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) el objeto se crea a partir de esta `image` y el `getFileReference` devuelve la ruta al archivo de imagen desde el `fileReference` propiedad del nodo de imagen.
+El `ImageReferenceModificationServlet` anula la clase `createLayer` e implementa la lógica que determina el recurso de imagen que se va a procesar. El método recupera un nodo secundario del `jcr:content` nodo denominado `image`. Un [Imagen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) El objeto se crea a partir de `image` y el nodo `getFileReference` método devuelve la ruta al archivo de imagen desde el `fileReference` propiedad del nodo de imagen.
 
 >[!NOTE]
->La variable [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) proporciona el método getFileReferencemod.
+>El [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) proporciona el método getFileReference.
 
 ## Desarrollo de una cuadrícula fluida {#developing-a-fluid-grid}
 
-AEM le permite implementar redes fluidas de forma eficiente y eficaz. En esta página se explica cómo integrar la cuadrícula fluida o una implementación de cuadrícula existente (por ejemplo, [Bootstrap](https://github.com/topics/twitter-bootstrap?l=css)) en la aplicación de AEM.
+AEM le permite implementar de forma eficiente y eficaz las redes fluidas. En esta página se explica cómo puede integrar la cuadrícula fluida o una implementación de cuadrícula existente (como [Bootstrap](https://github.com/topics/twitter-bootstrap?l=css)AEM ) en la aplicación de su.
 
-Si no está familiarizado con las cuadrículas de fluidos, consulte la sección [Introducción a las cuadrículas fluidas](/help/sites-developing/responsive.md#developing-a-fluid-grid) en la parte inferior de esta página. Esta introducción proporciona una visión general de las cuadrículas fluidas y una guía para diseñarlas.
+Si no está familiarizado con las redes de fluidos, consulte la [Introducción a las rejillas de fluidos](/help/sites-developing/responsive.md#developing-a-fluid-grid) en la parte inferior de esta página. Esta introducción proporciona una visión general de las cuadrículas fluidas y una guía para diseñarlas.
 
 ### Definición de la cuadrícula mediante un componente Página {#defining-the-grid-using-a-page-component}
 
-Utilice los componentes de página para generar los elementos de HTML que definen los bloques de contenido de la página. ClientLibraryFolder al que hace referencia la página proporciona el CSS que controla el diseño de los bloques de contenido:
+Utilice los componentes de página para generar los elementos HTML que definen los bloques de contenido de la página. ClientLibraryFolder, al que hace referencia la página, proporciona el archivo CSS que controla el diseño de los bloques de contenido:
 
-* Componente de página: Agrega elementos div que representan filas de bloques de contenido. Los elementos div que representan bloques de contenido incluyen un componente parsys donde los autores añaden contenido.
-* Carpeta de biblioteca de cliente: Proporciona el archivo CSS que incluye consultas de medios y estilos para los elementos div.
+* Componente Página: añade elementos div que representan filas de bloques de contenido. Los elementos div que representan bloques de contenido incluyen un componente parsys en el que los autores agregan contenido.
+* Carpeta de la biblioteca de cliente: proporciona el archivo CSS que incluye consultas de medios y estilos para los elementos div.
 
-Por ejemplo, la aplicación geometrixx-media de ejemplo contiene el componente media-home. Este componente de página inserta dos secuencias de comandos, que generan dos `div` elementos de la clase `row-fluid`:
+Por ejemplo, la aplicación Geometrixx-media de ejemplo contiene el componente media-home. Este componente de página inserta dos scripts, que generan dos `div` elementos de clase `row-fluid`:
 
-* La primera fila contiene un `div` elemento de clase `span12` (el contenido ocupa 12 columnas). La variable `div` contiene el componente parsys.
+* La primera fila contiene un `div` elemento de clase `span12` (el contenido abarca 12 columnas). El `div` contiene el componente parsys.
 
-* La segunda fila contiene dos `div` elementos, uno de la clase `span8` y el otro de clase `span4`. Cada `div` incluye el componente parsys.
+* La segunda fila contiene dos `div` elementos, uno de clase `span8` y el otro de clase `span4`. Cada `div` incluye el componente parsys.
 
 ```xml
 <div class="page-content">
@@ -697,21 +697,21 @@ Por ejemplo, la aplicación geometrixx-media de ejemplo contiene el componente m
 
 >[!NOTE]
 >
->Cuando un componente incluye varios `cq:include` elementos que hacen referencia al componente parsys, cada `path` debe tener un valor diferente.
+>Cuando un componente incluye varios `cq:include` elementos que hacen referencia al componente parsys, cada uno `path` el atributo debe tener un valor diferente.
 
-#### Escalado de la cuadrícula del componente Página {#scaling-the-page-component-grid}
+#### Escala de la cuadrícula del componente Página {#scaling-the-page-component-grid}
 
-El diseño asociado al componente de página de medios de geometrixx (`/etc/designs/geometrixx-media`) contiene el `clientlibs` ClientLibraryFolder. Esta ClientLibraryFolder define estilos CSS para `row-fluid` clases, `span*` clases y `span*` clases que son hijos de `row-fluid` clases . Las consultas de medios permiten redefinir estilos para diferentes tamaños de ventanilla.
+El diseño asociado con el componente de página geometrixx-media (`/etc/designs/geometrixx-media`) contiene el `clientlibs` ClientLibraryFolder. Esta ClientLibraryFolder define los estilos CSS para `row-fluid` clases, `span*` clases, y `span*` clases que son secundarias de `row-fluid` clases. Las consultas de medios permiten redefinir los estilos para diferentes tamaños de ventanilla.
 
-El siguiente ejemplo de CSS es un subconjunto de esos estilos. Este subconjunto se centra en `span12`, `span8`y `span4` clases y consultas de medios para dos tamaños de ventanilla. Observe las siguientes características de la CSS:
+El siguiente ejemplo de CSS es un subconjunto de esos estilos. Este subconjunto se centra en `span12`, `span8`, y `span4` clases y consultas de medios para dos tamaños de ventanilla. Tenga en cuenta las siguientes características del CSS:
 
-* La variable `.span` los estilos definen los anchos de los elementos utilizando números absolutos.
-* La variable `.row-fluid .span*` los estilos definen los anchos de elemento como porcentajes del elemento principal. Los porcentajes se calculan a partir de los anchos absolutos.
-* Las consultas de medios para ventanillas más grandes asignan anchos absolutos más grandes.
+* El `.span` los estilos definen los anchos de los elementos mediante números absolutos.
+* El `.row-fluid .span*` Los estilos definen las anchuras de los elementos como porcentajes del elemento principal. Los porcentajes se calculan a partir de las anchuras absolutas.
+* Las consultas de medios para ventanillas más grandes asignan anchos absolutos mayores.
 
 >[!NOTE]
 >
->El ejemplo de Geometrixx Medias integra el [Bootstrap](https://getbootstrap.com/2.0.2/) Marco de JavaScript en su implementación de cuadrícula fluida. El marco del Bootstrap proporciona el archivo bootstrap.css.
+>El ejemplo de Geometrixx Medias integra el [Bootstrap](https://getbootstrap.com/2.0.2/) El marco de JavaScript en su implementación de cuadrícula fluida. El marco de trabajo del Bootstrap proporciona el archivo bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */
@@ -741,13 +741,13 @@ El siguiente ejemplo de CSS es un subconjunto de esos estilos. Este subconjunto 
 }
 ```
 
-#### Cambio de posición del contenido en la cuadrícula de componentes Página {#repositioning-content-in-the-page-component-grid}
+#### Cambiar la posición del contenido en la cuadrícula de componentes Página {#repositioning-content-in-the-page-component-grid}
 
-Las páginas de la aplicación de Geometrixx Medias de ejemplo distribuyen filas de bloques de contenido horizontalmente en ventanillas amplias. En ventanillas más pequeñas, los mismos bloques se distribuyen verticalmente. El siguiente ejemplo de CSS muestra los estilos que implementan este comportamiento para el código de HTML que genera el componente de página principal de medios:
+Las páginas de la aplicación de Geometrixx Medias de ejemplo distribuyen filas de bloques de contenido horizontalmente en ventanillas amplias. En las ventanillas móviles más pequeñas, los mismos bloques se distribuyen verticalmente. En el siguiente ejemplo de CSS se muestran los estilos que implementan este comportamiento para el código de HTML que genera el componente de la página principal de medios:
 
-* El CSS predeterminado para la página de bienvenida de medios asigna la variable `float:left` estilo para `span*` clases que están dentro `row-fluid` clases .
+* El CSS predeterminado para la página de bienvenida de medios asigna la variable `float:left` estilo para `span*` clases que se encuentran dentro `row-fluid` clases.
 
-* Las consultas de medios para ventanillas más pequeñas asignan la variable `float:none` para las mismas clases.
+* Las consultas de medios para ventanillas móviles más pequeñas asignan el `float:none` estilo para las mismas clases.
 
 ```xml
 /* default styles (no media queries) */
@@ -764,42 +764,42 @@ Las páginas de la aplicación de Geometrixx Medias de ejemplo distribuyen filas
 }
 ```
 
-#### Modularizar los componentes de la página {#tip-modularize-your-page-components}
+#### Modulice los componentes de la página {#tip-modularize-your-page-components}
 
-Modularizar los componentes para que pueda utilizar el código de forma eficaz. Es probable que el sitio utilice varios tipos diferentes de páginas, como una página de bienvenida, una página de artículos o una página de productos. Cada tipo de página contiene diferentes tipos de contenido y es probable que use diferentes diseños. Sin embargo, cuando ciertos elementos de cada diseño son comunes en varias páginas, puede reutilizar el código que implementa esa parte del diseño.
+Modulice los componentes para poder utilizar el código de forma eficiente. Es probable que el sitio utilice varios tipos diferentes de páginas, como una página de bienvenida, una página de artículo o una página de producto. Cada tipo de página contiene diferentes tipos de contenido y es probable que utilice diferentes diseños. Sin embargo, cuando ciertos elementos de cada diseño son comunes en varias páginas, puede reutilizar el código que implementa esa parte del diseño.
 
-**Usar superposiciones de componentes de página**
+**Uso de superposiciones de componentes de página**
 
-Cree un componente de página principal que proporcione secuencias de comandos para generar las distintas partes de una página, como `head` y `body` secciones y `header`, `content`y `footer` dentro del cuerpo.
+Cree un componente de página principal que proporcione secuencias de comandos para generar las distintas partes de una página, como `head` y `body` secciones, y `header`, `content`, y `footer` secciones dentro del cuerpo.
 
-Cree otros componentes de página que utilicen el componente de página principal como el `cq:resourceSuperType`. Estos componentes incluyen secuencias de comandos que anulan las secuencias de comandos de la página principal según sea necesario.
+Cree otros componentes de página que utilicen el componente de página principal como `cq:resourceSuperType`. Estos componentes incluyen scripts que anulan los scripts de la página principal según sea necesario.
 
-Por ejemplo, la aplicación goemetrixx-media incluye el componente de página (el `sling:resourceSuperType` es el componente de página base). Varios componentes secundarios (como artículo, categoría y media-home) utilizan este componente de página como el `sling:resourceSuperType`. Cada componente secundario incluye un archivo content.jsp que anula el archivo content.jsp del componente de página.
+Por ejemplo, la aplicación goemetrixx-media incluye el componente de página (la variable `sling:resourceSuperType` es el componente de página base). Varios componentes secundarios (como artículo, categoría y media-home) utilizan este componente de página como `sling:resourceSuperType`. Cada componente secundario incluye un archivo content.jsp que anula el archivo content.jsp del componente de página.
 
 **Reutilización de scripts**
 
-Cree varios scripts JSP que generen combinaciones de filas y columnas que son comunes en varios componentes de página. Por ejemplo, la variable `content.jsp` la secuencia de comandos del artículo y los componentes media-home hacen referencia a la variable `8x4col.jsp` secuencia de comandos.
+Cree varios scripts JSP que generen combinaciones de fila y columna comunes para varios componentes de página. Por ejemplo, la variable `content.jsp` del artículo y los componentes de media-home hacen referencia al `8x4col.jsp` script.
 
-**Organizar estilos CSS según el tamaño de la ventanilla de destino**
+**Organizar estilos CSS por tamaño de ventanilla de destino**
 
-Incluya estilos CSS y consultas de medios para diferentes tamaños de ventanilla en archivos independientes. Utilice carpetas de la biblioteca del cliente para concatenarlas.
+Incluya estilos CSS y consultas de medios para diferentes tamaños de ventanilla móvil en archivos independientes. Utilice carpetas de la biblioteca del cliente para concatenarlas.
 
-### Inserción de componentes en la cuadrícula de la página {#inserting-components-into-the-page-grid}
+### Insertar componentes en la cuadrícula de la página {#inserting-components-into-the-page-grid}
 
 Cuando los componentes generan un solo bloque de contenido, generalmente la cuadrícula que establece el componente de página controla la ubicación del contenido.
 
-Como autor, el bloque de contenido se puede representar en varios tamaños y posiciones relativas. El texto del contenido no debe utilizar direcciones relativas para hacer referencia a otros bloques de contenido.
+Como autor, el bloque de contenido se puede representar en varios tamaños y posiciones relativas. El texto de contenido no debe utilizar direcciones relativas para hacer referencia a otros bloques de contenido.
 
-Si es necesario, el componente debe proporcionar todas las bibliotecas CSS o JavaScript necesarias para el código de HTML que genera. Utilice una carpeta de biblioteca de cliente dentro del componente para que se generen los archivos CSS y JS. Para exponer los archivos, [crear una dependencia o incrustar la biblioteca](/help/sites-developing/clientlibs.md#creating-client-library-folders) en otra carpeta de biblioteca de cliente debajo de la carpeta /etc.
+Si es necesario, el componente debe proporcionar las bibliotecas CSS o JavaScript necesarias para el código de HTML que genera. Utilice una carpeta de biblioteca de cliente dentro del componente para generar los archivos CSS y JS. Para exponer los archivos, [crear una dependencia o incrustar la biblioteca](/help/sites-developing/clientlibs.md#creating-client-library-folders) en otra carpeta de biblioteca de cliente debajo de la carpeta /etc.
 
 **Subcuadrículas**
 
-Si el componente contiene varios bloques de contenido, añada los bloques de contenido dentro de una fila para establecer una subcuadrícula en la página:
+Si el componente contiene varios bloques de contenido, agregue los bloques de contenido dentro de una fila para establecer una subcuadrícula en la página:
 
-* Utilice los mismos nombres de clase que el componente de página que contiene para poder expresar elementos div como filas y bloques de contenido.
-* Para anular el comportamiento que implementa el CSS del diseño de página, utilice un nombre de segunda clase para el elemento div de fila y proporcione el CSS asociado en una carpeta de biblioteca de cliente.
+* Utilice los mismos nombres de clase que el componente de página contenedora para poder expresar los elementos div como filas y bloques de contenido.
+* Para anular el comportamiento que implementa la CSS del diseño de página, utilice un segundo nombre de clase para el elemento div de fila y proporcione el CSS asociado en una carpeta de biblioteca de cliente.
 
-Por ejemplo, la variable `/apps/geometrixx-media/components/2-col-article-summary` genera dos columnas de contenido. El HTML que genera tiene la siguiente estructura:
+Por ejemplo, la variable `/apps/geometrixx-media/components/2-col-article-summary` Este componente genera dos columnas de contenido. El HTML que genera tiene la siguiente estructura:
 
 ```xml
 <div class="row-fluid mutli-col-article-summary">
@@ -814,12 +814,12 @@ Por ejemplo, la variable `/apps/geometrixx-media/components/2-col-article-summar
 </div>
 ```
 
-La variable `.row-fluid .span6` selectores de la CSS de la página se aplica al `div` elementos de la misma clase y estructura de este HTML. Sin embargo, el componente también incluye la carpeta de biblioteca cliente /apps/geometrixx-media/components/2-col-article-summary/clientlibs:
+El `.row-fluid .span6` selectores de CSS de la página se aplica al `div` elementos de la misma clase y estructura en este HTML. Sin embargo, el componente también incluye la carpeta de biblioteca de cliente /apps/geometrixx-media/components/2-col-article-summary/clientlibs:
 
-* El CSS utiliza las mismas consultas de medios que el componente de página para establecer cambios en el diseño en los mismos anchos de página discretos.
-* Los selectores utilizan la variable `multi-col-article-summary` clase de la fila `div` para anular el comportamiento de la página `row-fluid` Clase .
+* CSS utiliza las mismas consultas de medios que el componente de página para establecer cambios en el diseño con los mismos anchos de página discretos.
+* Los selectores utilizan el `multi-col-article-summary` clase de la fila `div` para anular el comportamiento del elemento `row-fluid` clase.
 
-Por ejemplo, los siguientes estilos se incluyen en el `/apps/geometrixx-media/components/2-col-article-summary/clientlibs/css/responsive-480px.css` archivo:
+Por ejemplo, los siguientes estilos se incluyen en la variable `/apps/geometrixx-media/components/2-col-article-summary/clientlibs/css/responsive-480px.css` archivo:
 
 ```xml
 @media (max-width: 480px) {
@@ -842,66 +842,66 @@ Por ejemplo, los siguientes estilos se incluyen en el `/apps/geometrixx-media/co
 }
 ```
 
-## Introducción a las cuadrículas de fluidos {#introduction-to-fluid-grids}
+## Introducción a las cuadrículas fluidas {#introduction-to-fluid-grids}
 
 Las cuadrículas fluidas permiten que los diseños de página se adapten a las dimensiones de la ventanilla del cliente. Las cuadrículas constan de columnas lógicas y filas que colocan los bloques de contenido en la página.
 
-* Las columnas determinan las posiciones horizontales y los anchos de los bloques de contenido.
+* Las columnas determinan las posiciones horizontales y las anchuras de los bloques de contenido.
 * Las filas determinan las posiciones verticales relativas de los bloques de contenido.
 
-Con la tecnología HTML5, puede implementar la cuadrícula y manipularla para adaptar los diseños de página a diferentes tamaños de ventanilla:
+Con la tecnología de HTML5 puede implementar la cuadrícula y manipularla para adaptar los diseños de página a diferentes tamaños de ventanilla:
 
-* HTML `div` contienen bloques de contenido que abarcan algunas columnas.
+* HTML `div` Los elementos de contienen bloques de contenido que abarcan algunas columnas.
 * Uno o más de estos elementos div comprenden una fila cuando comparten un elemento div principal común.
 
 ### Uso de anchos discretos {#using-discrete-widths}
 
-Para cada rango de anchuras de las ventanillas móviles objetivo, utilice un ancho de página estático y bloques de contenido de ancho constante. Al cambiar manualmente el tamaño de una ventana del explorador, los cambios en el tamaño del contenido se producen con anchos de ventana discretos (también conocidos como puntos de interrupción). Por lo tanto, los diseños de página se respetan más estrictamente, lo que maximiza la experiencia del usuario.
+Para cada rango de anchos de ventanilla móvil objetivo, utilice un ancho de página estático y bloques de contenido de ancho constante. Al cambiar manualmente el tamaño de una ventana del explorador, los cambios en el tamaño del contenido se producen en anchos de ventana discretos (también conocidos como puntos de interrupción). Por lo tanto, los diseños de página se respetan más estrechamente, lo que maximiza la experiencia del usuario.
 
-#### Escalado de la cuadrícula {#scaling-the-grid}
+#### Escala de la cuadrícula {#scaling-the-grid}
 
-Utilice cuadrículas para escalar bloques de contenido y adaptarse a diferentes tamaños de ventanilla. Los bloques de contenido abarcan un número específico de columnas. A medida que los anchos de columna aumentan o disminuyen para adaptarse a diferentes tamaños de ventanilla, los anchos de los bloques de contenido aumentan o disminuyen en consecuencia. El escalado puede admitir ventanillas grandes y medianas lo suficientemente anchas como para adaptarse a la colocación paralela de bloques de contenido.
+Utilice cuadrículas para escalar bloques de contenido y adaptarse a diferentes tamaños de ventanilla. Los bloques de contenido abarcan un número específico de columnas. A medida que los anchos de columna aumentan o disminuyen para adaptarse a diferentes tamaños de ventanilla, los anchos de los bloques de contenido aumentan o disminuyen en consecuencia. La escala puede admitir ventanillas móviles grandes y medianas lo suficientemente anchas como para admitir la colocación simultánea de bloques de contenido.
 
 ![](do-not-localize/chlimage_1-1a.png)
 
-#### Cambio de posición del contenido en la cuadrícula {#repositioning-content-in-the-grid}
+#### Reposición de contenido en la cuadrícula {#repositioning-content-in-the-grid}
 
-El tamaño de los bloques de contenido puede estar limitado por una anchura mínima, por encima de la cual el escalado ya no es efectivo. Para ventanillas más pequeñas, la cuadrícula se puede utilizar para distribuir bloques de contenido verticalmente en lugar de horizontalmente.
+El tamaño de los bloques de contenido se puede restringir por una anchura mínima, más allá de la cual el escalado ya no es efectivo. Para las ventanillas móviles más pequeñas, la cuadrícula se puede utilizar para distribuir verticalmente bloques de contenido en lugar de horizontalmente.
 
 ![](do-not-localize/chlimage_1-2a.png)
 
 ### Diseño de la cuadrícula {#designing-the-grid}
 
-Determine las columnas y filas en las que debe colocar los bloques de contenido en las páginas. Los diseños de página determinan el número de columnas y filas que abarcan la cuadrícula.
+Determine las columnas y filas en las que debe colocar los bloques de contenido de las páginas. Los diseños de página determinan la cantidad de columnas y filas que abarcan la cuadrícula.
 
 **Número de columnas**
 
-Incluya suficientes columnas para colocar horizontalmente los bloques de contenido en todos los diseños, para todos los tamaños de las ventanillas móviles. Utilice más columnas de las que necesita actualmente para poder dar cabida a futuros diseños de página.
+Incluya suficientes columnas para colocar horizontalmente los bloques de contenido en todos los diseños, para todos los tamaños de ventanilla. Utilice más columnas de las que se necesitan actualmente para poder acomodar futuros diseños de página.
 
 **Contenido de fila**
 
 Utilice filas para controlar la posición vertical de los bloques de contenido. Determine los bloques de contenido que comparten la misma fila:
 
-* Los bloques de contenido que se encuentran uno al lado del otro horizontalmente en cualquiera de los diseños están en la misma fila.
-* Los bloques de contenido que se encuentran uno junto al otro horizontalmente (ventanillas más anchas) y verticalmente (ventanillas más pequeñas) se encuentran en la misma fila.
+* Los bloques de contenido que se encuentran uno junto al otro horizontalmente en cualquiera de los diseños están en la misma fila.
+* Los bloques de contenido que se encuentran uno junto al otro horizontalmente (ventanillas más anchas) y verticalmente (ventanillas más pequeñas) están en la misma fila.
 
 ### Implementaciones de cuadrícula {#grid-implementations}
 
-Cree clases y estilos CSS para poder controlar el diseño de los bloques de contenido en una página. Los diseños de página a menudo se basan en el tamaño y la posición relativos de los bloques de contenido dentro de la ventanilla. La ventanilla determina el tamaño real de los bloques de contenido. El CSS debe tener en cuenta los tamaños relativo y absoluto. Puede implementar una cuadrícula fluida mediante tres tipos de clases CSS:
+Cree clases y estilos CSS para poder controlar el diseño de los bloques de contenido en una página. Los diseños de página suelen basarse en el tamaño y la posición relativos de los bloques de contenido dentro de la ventanilla. La ventanilla determina el tamaño real de los bloques de contenido. El CSS debe tener en cuenta los tamaños relativo y absoluto. Puede implementar una cuadrícula fluida utilizando tres tipos de clases CSS:
 
-* Una clase para un `div` elemento que es un contenedor para todas las filas. Esta clase define la anchura absoluta de la cuadrícula.
+* Una clase para un `div` que es un contenedor para todas las filas. Esta clase establece el ancho absoluto de la cuadrícula.
 * Una clase para `div` elementos que representan una fila. Esta clase controla la posición horizontal o vertical de los bloques de contenido que contiene.
-* Clases para `div` elementos que representan bloques de contenido de distintas anchuras. Los anchos se expresan como un porcentaje del elemento principal (la fila).
+* Clases para `div` elementos que representan bloques de contenido de diferentes anchos. Las anchuras se expresan como un porcentaje del padre (la fila).
 
-Los anchos de las ventanillas de destino (y sus consultas de medios asociadas) delimitan los anchos discretos que se utilizan para un diseño de página.
+Las anchuras de las ventanillas móviles de destino (y sus consultas de medios asociadas) delimitan los anchos discretos que se utilizan para un diseño de página.
 
-#### Anchura de bloques de contenido {#widths-of-content-blocks}
+#### Anchuras de los bloques de contenido {#widths-of-content-blocks}
 
-En general, la variable `width` los estilos de las clases de bloques de contenido se basan en las siguientes características de la página y la cuadrícula:
+Generalmente, la variable `width` los estilos de las clases de bloque de contenido se basan en las siguientes características de la página y la cuadrícula:
 
-* El ancho de página absoluto que utiliza para cada tamaño de ventanilla objetivo. Valores conocidos.
-* Ancho absoluto de las columnas de la cuadrícula para cada ancho de página. Estos valores se determinan.
-* Ancho relativo de cada columna como porcentaje del ancho total de la página. Estos valores se calculan.
+* El ancho de página absoluto que utiliza para cada tamaño de ventanilla de destino. Valores conocidos.
+* Ancho absoluto de las columnas de la cuadrícula para cada ancho de página. Usted determina estos valores.
+* El ancho relativo de cada columna como porcentaje del ancho total de la página. Usted calcula estos valores.
 
 El CSS incluye una serie de consultas de medios que utilizan la siguiente estructura:
 
@@ -923,35 +923,35 @@ El CSS incluye una serie de consultas de medios que utilizan la siguiente estruc
 }
 ```
 
-Utilice el siguiente algoritmo como punto de partida para desarrollar las clases de elementos y los estilos CSS de sus páginas.
+Utilice el siguiente algoritmo como punto de partida para desarrollar las clases de elementos y los estilos CSS para sus páginas.
 
-1. Defina un nombre de clase para el elemento div que contiene todas las filas, por ejemplo `content.`
-1. Defina una clase CSS para elementos div que representen filas, como `row-fluid`.
-1. Defina nombres de clase para elementos de bloque de contenido. Se requiere una clase para todas las anchuras posibles, en términos de espacios de columna. Por ejemplo, use el `span3` clase para `div` elementos que abarcan tres columnas, utilice `span4` clases para espacios de cuatro columnas. Defina tantas clases como columnas de la cuadrícula.
+1. Defina un nombre de clase para el elemento div que contenga todas las filas, por ejemplo `content.`
+1. Defina una clase CSS para los elementos div que representan filas, como `row-fluid`.
+1. Defina nombres de clase para los elementos de bloque de contenido. Se requiere una clase para todas las anchuras posibles, en términos de intervalos de columnas. Por ejemplo, utilice la variable `span3` clase para `div` elementos que abarcan tres columnas, utilice `span4` clases para espacios de cuatro columnas. Defina tantas clases como columnas de la cuadrícula.
 
-1. Para cada tamaño de ventanilla móvil objetivo, agregue la consulta de medios correspondiente al archivo CSS. Agregue los siguientes elementos en cada consulta de medios:
+1. Para cada tamaño de ventanilla móvil que vaya a segmentar, agregue la consulta de medios correspondiente al archivo CSS. Agregue los siguientes elementos en cada consulta de medios:
 
-   * Un selector para la variable `content` class, por ejemplo `.content{}`.
+   * Un selector para `content` por ejemplo, `.content{}`.
    * Selectores para cada clase span, por ejemplo `.span3{ }`.
-   * Un selector para la variable `row-fluid` class, por ejemplo `.row-fluid{ }`
-   * Selectores para clases span que están dentro de clases de fluidos de fila, por ejemplo `.row-fluid span3 { }`.
+   * Un selector para `row-fluid` por ejemplo, `.row-fluid{ }`
+   * Selectores para clases span que están dentro de clases row-flow, por ejemplo `.row-fluid span3 { }`.
 
-1. Agregar estilos de anchura para cada selector:
+1. Agregue estilos de anchura para cada selector:
 
-   1. Establezca la anchura de `content` selectores con el tamaño absoluto de la página, por ejemplo `width:480px`.
-   1. Defina la anchura de todos los selectores de fluidos de fila en 100%.
-   1. Defina la anchura de todos los selectores de span con la anchura absoluta del bloque de contenido. Una cuadrícula trivial utiliza columnas distribuidas uniformemente de la misma anchura: `(absolute width of page)/(number of columns)`.
-   1. Defina la anchura de la variable `.row-fluid .span` selectores como porcentaje de la anchura total. Calcule esta anchura utilizando la variable `(absolute span width)/(absolute page width)*100` fórmula.
+   1. Establecer la anchura de `content` selectores al tamaño absoluto de la página, por ejemplo `width:480px`.
+   1. Establezca la anchura de todos los selectores de líquido de filas en 100%.
+   1. Establezca la anchura de todos los selectores de espacio en la anchura absoluta del bloque de contenido. Una cuadrícula trivial utiliza columnas distribuidas uniformemente de la misma anchura: `(absolute width of page)/(number of columns)`.
+   1. Definir la anchura de la `.row-fluid .span` selectores como un porcentaje de la anchura total. Calcule esta anchura utilizando la variable `(absolute span width)/(absolute page width)*100` fórmula.
 
 #### Colocación de bloques de contenido en filas {#positioning-content-blocks-in-rows}
 
-Utilice el estilo flotante de la variable `.row-fluid` para que pueda controlar si los bloques de contenido de una fila están organizados horizontal o verticalmente.
+Utilizar el estilo flotante de `.row-fluid` para controlar si los bloques de contenido de una fila se organizan horizontal o verticalmente.
 
-* La variable `float:left` o `float:right` este estilo produce la distribución horizontal de elementos secundarios (bloques de contenido).
+* El `float:left` o `float:right` style provoca la distribución horizontal de elementos secundarios (bloques de contenido).
 
-* La variable `float:none` el estilo de crea una distribución vertical de los elementos secundarios.
+* El `float:none` style provoca la distribución vertical de elementos secundarios.
 
-Añada el estilo al `.row-fluid` dentro de cada consulta de medios. Establezca el valor según el diseño de página que esté utilizando para esa consulta de medios. Por ejemplo, el diagrama siguiente ilustra una fila que distribuye el contenido horizontalmente para ventanillas móviles anchas y verticalmente para ventanillas móviles.
+Añada el estilo a `.row-fluid` selector dentro de cada consulta de medios. Establezca el valor según el diseño de página que esté utilizando para esa consulta multimedia. Por ejemplo, el diagrama siguiente ilustra una fila que distribuye el contenido horizontalmente para las ventanillas anchas y verticalmente para las ventanillas estrechas.
 
 ![](do-not-localize/chlimage_1-3a.png)
 
@@ -975,6 +975,6 @@ El siguiente CSS podría implementar este comportamiento:
 
 #### Asignación de clases a bloques de contenido {#assigning-classes-to-content-blocks}
 
-Para el diseño de página de cada tamaño de ventanilla objetivo, determine el número de columnas que ocupa cada bloque de contenido. A continuación, determine qué clase utilizar para los elementos div de esos bloques de contenido.
+Para el diseño de página de cada tamaño de ventanilla móvil que vaya a segmentar, determine el número de columnas que abarca cada bloque de contenido. A continuación, determine qué clase utilizar para los elementos div de esos bloques de contenido.
 
-Cuando haya establecido las clases div, puede implementar la cuadrícula mediante la aplicación AEM.
+AEM Cuando haya establecido las clases div, puede implementar la cuadrícula mediante la aplicación de la aplicación de la.

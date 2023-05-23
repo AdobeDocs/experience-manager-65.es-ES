@@ -580,7 +580,7 @@ ht-degree: 98%
    + [Resolución de problemas de informes de procesos](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Referencia del desarrollador {#developer-reference}
    + [Conceptos básicos del desarrollador](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-   + [Lenguaje de plantilla HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+   + [Lenguaje de plantilla HTML ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
    + [AEM para depurar formularios adaptables](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Referencia de la API de AEM Forms Java](https://helpx.adobe.com/es/experience-manager/6-5/forms/javadocs/index.html)
    + [Referencia de la API de AEM Forms en JEE Java](https://helpx.adobe.com/es/experience-manager/6-5/forms/programlc/javadoc/index.html)

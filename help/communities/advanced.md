@@ -130,7 +130,7 @@ En lugar de asociar puntos con una imagen de distintivo, solo es necesario ident
   <tr>
    <th>Propiedad</th>
    <th>Tipo</th>
-   <th>Value Descripción</th>
+   <th>Valor  Descripción</th>
   </tr>
   <tr>
    <td>badgingPath</td>

@@ -1,6 +1,6 @@
 ---
-title: Comprimir y descomprimir archivos mediante una AEM Forms en una DSC personalizada JEE
-description: Aprenda a comprimir y descomprimir archivos mediante un AEM Forms en el DSC personalizado JEE
+title: Comprimir y descomprimir archivos con un AEM Forms en una DSC personalizada JEE
+description: Aprenda a comprimir y descomprimir archivos mediante AEM Forms en una DSC personalizada JEE
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 ## Conocimientos previos requeridos {#prerequisites}
 
-Experiencia con AEM Forms en administración de procesos JEE, programación básica de Java y creación de componentes personalizados.
+Experiencia con AEM Forms en la administración de procesos JEE, la programación básica de Java y la creación de componentes personalizados.
 
-**Otros productos necesarios**
+**Otros productos adicionales necesarios**
 
 Editor Java como [Eclipse](https://www.eclipse.org/) o [Netbeans IDE](https://netbeans.apache.org/)
 
@@ -23,17 +23,17 @@ Editor Java como [Eclipse](https://www.eclipse.org/) o [Netbeans IDE](https://ne
 
 Intermedio
 
-AEM Forms en JEE permite a los desarrolladores crear DSC personalizado (contenedor de servicio de documentos) para crear funciones enriquecidas de fábrica. La creación de estos componentes se puede conectar al entorno de tiempo de ejecución de AEM Forms en JEE y cumple el propósito deseado. Este artículo explica cómo crear un servicio ZIP personalizado que se pueda utilizar para comprimir una lista de archivos en un archivo .zip y descomprimir un .zip a una lista de documentos.
+AEM Forms en JEE permite a los desarrolladores crear DSC (contenedor de servicio de documentos) personalizado para crear funciones enriquecidas listas para usar. La creación de estos componentes se puede conectar al entorno de tiempo de ejecución de AEM Forms en JEE y cumple el propósito deseado. Este artículo explica cómo crear un servicio ZIP personalizado que se puede utilizar para comprimir una lista de archivos en un archivo .zip y descomprimir un .zip en una lista de documentos.
 
-## Creación de un componente DSC personalizado {#create-custom-dsc-component}
+## Crear un componente DSC personalizado {#create-custom-dsc-component}
 
-Cree un componente DSC personalizado con dos operaciones de servicio para comprimir y descomprimir la lista de documentos. Este componente utiliza el paquete java.util.zip para la compresión y descompresión. Siga los pasos a continuación para crear un componente personalizado:
+Cree un componente DSC personalizado con dos operaciones de servicio para comprimir y descomprimir la lista de documentos. Este componente utiliza el paquete java.util.zip para la compresión y descompresión. Siga los siguientes pasos para crear un componente personalizado:
 
-1. Añadir el archivo adobe-livecycle-client.jar a la biblioteca
+1. Añada el archivo adobe-livecycle-client.jar a la biblioteca
 1. Añadir los iconos necesarios
 1. Crear una clase pública
-1. Cree dos métodos públicos llamados UnzipDocument y ZipDocuments
-1. Escriba la lógica para Compresión y Decompresión
+1. Cree dos métodos públicos denominados UnzipDocument y ZipDocuments
+1. Escriba la lógica para Compresión y Descompresión
 
 El código se puede encontrar aquí:
 
@@ -120,9 +120,9 @@ public class ZIPService {
 }
 ```
 
-## Creación de un archivo Component.XML {#create-component-xml-file}
+## Crear un archivo Component.XML {#create-component-xml-file}
 
-Se debe crear un archivo component.xml dentro de la carpeta raíz del paquete que definió las operaciones de servicio y sus parámetros.
+Se debe crear un archivo component.xml dentro de la carpeta raíz del paquete que definió las operaciones del servicio y sus parámetros.
 
 El archivo component.xml se muestra aquí:
 
@@ -188,10 +188,10 @@ El archivo component.xml se muestra aquí:
 ## Empaquetado e implementación del componente {#packaging-deploying-component}
 
 1. Compile el proyecto java y cree un archivo .JAR.
-1. Implemente el componente (archivo .JAR) en AEM Forms en tiempo de ejecución JEE mediante Workbench.
+1. Implemente el componente (archivo .JAR) en el tiempo de ejecución de AEM Forms en JEE a través de Workbench.
 1. Inicie el servicio desde Workbench (consulte la figura siguiente).
 
-![Diseño de proceso](assets/process-design.jpg)
+![Diseño de procesos](assets/process-design.jpg)
 
 ## Uso del servicio ZIP en flujos de trabajo {#using-zip-service-in-workflows}
 
@@ -199,24 +199,24 @@ La operación UnzipDocument del servicio personalizado ahora puede aceptar una v
 
 ![Descomprimir documento](assets/unzip-doc.jpg)
 
-Del mismo modo, la operación ZipDocuments del componente personalizado puede aceptar una lista de documentos como entrada, comprimirlos como un archivo zip y devolver el documento comprimido.
+Del mismo modo, la operación ZipDocuments del componente personalizado puede aceptar una lista de documentos como entrada, comprimirlos como archivo zip y devolver el documento comprimido.
 
-![Documento postal](assets/zip-doc.jpg)
+![Documento Zip](assets/zip-doc.jpg)
 
-La siguiente orquestación de flujo de trabajo muestra cómo descomprimir el archivo ZIP dado, comprimirlo de nuevo en otro archivo ZIP y devuelve el resultado (consulte la figura a continuación).
+La siguiente orquestación del flujo de trabajo muestra cómo descomprimir el archivo ZIP determinado, comprimirlo de nuevo en otro archivo ZIP y devolver la salida (consulte la figura siguiente).
 
-![Flujo de trabajo Descomprimir código postal](assets/unzip-zip-process.jpg)
+![Descomprimir flujo de trabajo Zip](assets/unzip-zip-process.jpg)
 
-## Algunos casos de uso empresarial {#business-use-cases}
+## Algunos casos de uso empresariales {#business-use-cases}
 
 Puede utilizar este servicio ZIP para los siguientes casos de uso:
 
-* Busque todos los archivos en una carpeta determinada y devuelva los archivos como documento comprimido.
+* Busque todos los archivos de una carpeta determinada y devuélvalos como un documento comprimido.
 
-* Proporcione un archivo ZIP que contenga varios documentos de PDF que se puedan ampliar después de descomprimirlos. Esto requiere AEM Forms en el módulo de extensiones de Reader JEE.
+* Suministre un archivo ZIP que contenga una serie de documentos de PDF que se puedan leer y extender después de descomprimirlos. Esto requiere AEM Forms en el módulo de extensiones de Reader JEE.
 
-* Proporcione un archivo ZIP que contenga un tipo heterogéneo de documento que se pueda descomprimir y convertir como documento PDF mediante el servicio Generate PDF .
+* Proporcione un archivo ZIP que contenga un tipo heterogéneo de documento que se pueda descomprimir y convertir como documento de PDF mediante el servicio Generate PDF.
 
-* La directiva protege una lista de documentos y devuelve como archivo ZIP.
+* Política de proteger una lista de documentos y devolver como archivo ZIP.
 
-* Permita a los usuarios descargar todos los archivos adjuntos de una instancia de proceso como un solo archivo ZIP.
+* Permite a los usuarios descargar todos los archivos adjuntos de una instancia de proceso como un solo archivo ZIP.

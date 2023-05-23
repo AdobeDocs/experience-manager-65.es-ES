@@ -1,7 +1,7 @@
 ---
 title: Perspectiva de contenido
 seo-title: Content Insight
-description: Perspectiva de contenido proporciona información sobre el rendimiento de la página mediante la analítica web y la recomendación de SEO
+description: La perspectiva de contenido proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO
 seo-description: Content Insight provides information about page performance using web analytics and SEO recommendation
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
@@ -13,88 +13,88 @@ exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 93%
+ht-degree: 0%
 
 ---
 
 # Perspectiva de contenido{#content-insight}
 
-La perspectiva de contenido proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO. Utilice la perspectiva de contenido para tomar decisiones sobre cómo modificar las páginas o saber de qué manera los últimos cambios han influido en el rendimiento. En cada página que se cree, puede abrir la perspectiva de contenido para analizar la página.
+La perspectiva de contenido proporciona información sobre el rendimiento de la página mediante análisis web y recomendaciones de SEO. Utilice Perspectiva de contenido para tomar decisiones sobre cómo modificar páginas o conocer cómo los cambios anteriores han cambiado el rendimiento. Para cada página que cree, puede abrir Perspectiva de contenido para analizar la página.
 
 ![chlimage_1-311](assets/chlimage_1-311.png)
 
-El diseño de la página Perspectiva de contenido cambia para adaptarse a las dimensiones de la pantalla y a la orientación del dispositivo que esté utilizando.
+El diseño de la página Perspectiva de contenido cambia para adaptarse a las dimensiones de pantalla y a la orientación del dispositivo que está utilizando.
 
-## Datos de los informes
+## Datos del informe
 
-La página Perspectiva de contenido incluye informes que utilizan datos de las Adobe SiteCatalyst, Adobe Target, Adobe Social y BrightEdge:
+La página Perspectiva de contenido incluye informes que utilizan datos de Adobe SiteCatalyst, Adobe Target, Adobe Social y BrightEdge:
 
-* SiteCatalyst: están disponibles los informes para las métricas siguientes:
+* SiteCatalyst: Hay disponibles informes para las siguientes métricas:
 
-   * Vistas de la página
+   * Page views
    * Tiempo promedio empleado en la página
    * Orígenes
 
-* Target: informes sobre la actividad de la campaña para la que su página incluye ofertas.
-* BrightEdge: informes sobre las funciones de la página que mejoran la visibilidad de la página para los motores de búsqueda; se recomiendan las funciones que deben implementarse.
+* Target: informa sobre la actividad de campaña para la que la página incluye ofertas.
+* BrightEdge: informa sobre las funciones de la página que mejoran la visibilidad de la página para los motores de búsqueda y recomienda las funciones que deben implementarse.
 
-Consulte [Abrir Analítica y recomendaciones para una página](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
+Consulte [Abrir Analytics y Recommendations para una página](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
 ## Período de informe
 
-Los informes muestran los datos durante un período de tiempo que usted mismo controla. Al ajustar el período de informe, los informes se actualizan automáticamente con datos para ese período. Los avisos visuales indican el tiempo en que las versiones de la página han cambiado, lo que le permite comparar el rendimiento de cada versión.
+Los informes muestran datos correspondientes a un período de tiempo que usted controla. Al ajustar el período de informe, los informes se actualizan automáticamente con los datos de ese período. Las indicaciones visuales indican el momento en el que cambiaron las versiones de la página, de modo que puede comparar el rendimiento de cada versión.
 
-También puede especificar la granularidad de los datos del informe; por ejemplo, puede disponer de datos diarios, semanales, mensuales o anuales.
+También puede especificar la granularidad de los datos del informe; por ejemplo, puede ver datos diarios, semanales, mensuales o anuales.
 
-Consulte [Cambio del período de informe](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
+Consulte [Modificación del período de informe](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
 
 >[!NOTE]
 >
->Los informes de Perspectiva de contenido requieren que el administrador haya integrado AEM con SiteCatalyst, Target y BrightEdge. Consulte [Integración con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integración con Adobe Target](/help/sites-administering/target.md), y [Integración con BrightEdge](/help/sites-administering/brightedge.md).
+>AEM Los informes de Perspectivas de contenido requieren que el administrador de haya integrado la aplicación con SiteCatalyst, Target y BrightEdge. Consulte [Integración con SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integración con Adobe Target](/help/sites-administering/target.md), y [Integración con BrightEdge](/help/sites-administering/brightedge.md).
 
 ## El informe Vistas {#the-views-report}
 
-El informe Vistas incluye las funciones siguientes para evaluar el tráfico de la página:
+El informe Vistas incluye las siguientes funciones para evaluar el tráfico de la página:
 
-* La cantidad total de vistas en una página durante el período de informe.
-* Un gráfico de la cantidad de vistas a lo largo del período de informe:
+* Número total de vistas de una página durante el período de informe.
+* Gráfico del número de vistas en el período de informe:
 
-   * Cantidad total de vistas.
+   * Vistas totales.
    * Visitantes únicos.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## El informe Promedio de tiempo de visita a la página {#the-page-average-engaged-report}
+## El informe Promedio de páginas comprometidas {#the-page-average-engaged-report}
 
-El informe Promedio de tiempo de visita a la página incluye las funciones siguientes para evaluar la eficacia de la página:
+El informe Participación media de la página incluye las siguientes funciones para evaluar la eficacia de la página:
 
-* El promedio de tiempo que la página permanece abierta durante todo el período de informe.
-* Un gráfico del promedio de duración de la vista de una página a lo largo del período de informe.
+* Promedio de tiempo que la página permanece abierta durante todo el período de informe.
+* Gráfico de la longitud promedio de una vista de página durante el período de informe.
 
 ![chlimage_1-313](assets/chlimage_1-313.png)
 
-## El informe Orígenes {#the-sources-report}
+## El informe de fuentes {#the-sources-report}
 
-En el informe Orígenes se indica cómo los usuarios navegan a la página, por ejemplo, desde los resultados del motor de búsqueda o mediante una dirección URL conocida.
+El informe Fuentes indica cómo navegaron los usuarios hasta la página, por ejemplo, desde los resultados de los motores de búsqueda o utilizando la URL conocida.
 
 ![chlimage_1-314](assets/chlimage_1-314.png)
 
-## El informe Devoluciones {#the-bounces-report}
+## El informe de devoluciones {#the-bounces-report}
 
-En el informe Devoluciones se incluye un gráfico en que se muestra el número de devoluciones que se han producido en una página durante el período de informe seleccionado.
+El informe Devoluciones incluye un gráfico que muestra el número de devoluciones que se han producido para una página durante el periodo de informe seleccionado.
 
 ![chlimage_1-315](assets/chlimage_1-315.png)
 
 ## El informe Actividad de la campaña {#the-campaign-activity-report}
 
-Para cada campaña para la que la página esté activa, aparece un informe denominado Actividad de *nombre de la campaña*. El informe muestra las impresiones y conversiones de página de cada segmento para el que se proporciona una oferta.
+Aparece un informe con el nombre de todas las campañas para las que está activa la página *Nombre de campaña* Actividad. El informe muestra las impresiones y conversiones de página de cada segmento para el que se proporciona una oferta.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-## El informe Recomendaciones de SEO {#the-seo-recommendations-report}
+## El informe Recommendations de SEO {#the-seo-recommendations-report}
 
-El informe Recomendaciones de SEO contiene los resultados del análisis de BrightEdge para la página. El informe es una lista de comprobación de funciones de la página en que se indica qué funciones se incluyen y cuáles no se incluyen en la página para maximizar el potencial de que los motores de búsqueda la encuentren.
+El informe SEO Recommendations contiene los resultados del análisis de BrightEdge para la página. El informe es una lista de comprobación de las funciones de la página que indica qué funciones incluye y no incluye la página para maximizar la capacidad de búsqueda mediante motores de búsqueda.
 
-El informe le permite crear tareas para realizar mejoras que sirvan para aumentar el potencial de que la página se encuentre. En Recomendaciones se indica que las tareas se han creado para implementar la recomendación. Consulte [Asignación de tareas para Recomendaciones de SEO](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
+El informe permite crear tareas para mejorar la búsqueda de páginas. Recommendations indica que se han creado tareas para implementar la recomendación. Consulte [Asignación de tareas para SEO Recommendations](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)

@@ -1,6 +1,6 @@
 ---
 title: Introducción a la creación de informes de procesos
-description: Pasos para empezar a usar AEM Forms en los informes de procesos JEE
+description: Pasos para empezar a utilizar Process Reporting de AEM Forms en JEE
 uuid: 685cad39-da2c-411d-a0b0-201917438bcf
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -27,7 +27,7 @@ Este artículo detalla los pasos para habilitar la publicación de datos de AEM�
 
 Si está utilizando Forms Workflow, la base de datos de AEM Forms puede contener una gran cantidad de datos
 
-Los servicios de publicación de Process Reporting publican todos los datos de AEM Forms disponibles actualmente en la base de datos. Esto implica que si la base de datos contiene datos heredados sobre los que no desea ejecutar informes y consultas, todos esos datos también se publicarán en el repositorio aunque no se requieran para realizar informes. Se recomienda depurar estos datos antes de ejecutar los servicios para publicar los datos en el repositorio de Process Reporting. Al hacerlo, mejora el rendimiento tanto del servicio de editor como del servicio que consulta los datos para la realización de informes.
+Los servicios de publicación de Process Reporting publican todos los datos de AEM Forms disponibles actualmente en la base de datos. Esto implica que si la base de datos contiene datos heredados sobre los que no desea ejecutar informes y consultas, todos esos datos también se publicarán en el repositorio aunque no sean necesarios para realizar informes. Se recomienda depurar estos datos antes de ejecutar los servicios para publicar los datos en el repositorio de Process Reporting. Al hacerlo, mejora el rendimiento tanto del servicio de publicación como del servicio que consulta los datos para los informes.
 
 Para obtener más información sobre la depuración de datos de procesos de AEM Forms, consulte [Depuración de datos de procesos](/help/forms/using/admin-help/purging-process-data.md).
 
@@ -41,7 +41,7 @@ Para obtener más información sobre la depuración de datos de procesos de AEM�
 
 Los servicios de Process Reporting publican los datos de la base de datos de AEM Forms en el repositorio de Process Reporting de forma programada.
 
-Esta operación puede consumir muchos recursos y afectar al rendimiento de los servidores de AEM Forms. Se recomienda programarlo fuera de los husos horarios ocupados de AEM Forms Server.
+Esta operación puede consumir muchos recursos y afectar al rendimiento de los servidores de AEM Forms. Se recomienda programarla fuera de las franjas temporales de mayor actividad del servidor de AEM Forms.
 
 De forma predeterminada, la publicación de datos está programada para ejecutarse todos los días a las 2:00 a. m.
 
@@ -59,7 +59,7 @@ Para cambiar la programación de publicación, realice los siguientes pasos:
 
 1. Agregue el argumento JVM `-Dreporting.publisher.cron = <expression>.`.
 
-   Ejemplo: La siguiente expresión cron hace que Process Reporting publique los datos de AEM Forms en el repositorio de Process Reporting cada cinco horas:
+   Ejemplo: la siguiente expresión cron hace que Process Reporting publique los datos de AEM Forms en el repositorio de Process Reporting cada cinco horas:
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
@@ -68,15 +68,15 @@ Para cambiar la programación de publicación, realice los siguientes pasos:
 1. Reinicie la instancia de AEM Forms Server.
 
 1. Detenga la instancia de AEM Forms Server.
-1. Inicie sesión en la Consola Administrativa de WebSphere®. En el árbol de navegación, haga clic en **Servidores** > **Servidores de aplicaciones** y, a continuación, haga clic en el nombre del servidor en el panel derecho.
+1. Inicie sesión en la consola administrativa de WebSphere®. En el árbol de navegación, haga clic en **Servidores** > **Servidores de aplicaciones** y, a continuación, haga clic en el nombre del servidor en el panel derecho.
 
-1. En Infraestructura de servidor, haga clic en **Java™ y administración de procesos** > **Definición del proceso**.
+1. En Infraestructura del servidor, haga clic en **Administración de procesos y Java™** > **Definición del proceso**.
 
-1. En Propiedades adicionales, haga clic en **Máquina virtual Java™**.
+1. En Propiedades adicionales, haga clic en **Java™ Virtual Machine**.
 
    En el cuadro Argumentos genéricos de JVM, añada el argumento `-Dreporting.publisher.cron = <expression>.`.
 
-   **Ejemplo**: La siguiente expresión cron hace que Process Reporting publique los datos de AEM Forms en el repositorio de Process Reporting cada cinco horas:
+   **Ejemplo**: la siguiente expresión cron hace que Process Reporting publique los datos de AEM Forms en el repositorio de Process Reporting cada cinco horas:
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
@@ -89,7 +89,7 @@ Para cambiar la programación de publicación, realice los siguientes pasos:
 1. En la siguiente pantalla, haga clic en la pestaña **Configuración** > y luego en la pestaña **Inicio de servidor**.
 1. En el cuadro Argumentos, añada el argumento JVM `-Dreporting.publisher.cron = <expression>`.
 
-   **Ejemplo**: La siguiente expresión cron hace que Process Reporting publique los datos de AEM Forms en el repositorio de Process Reporting cada cinco horas:
+   **Ejemplo**: la siguiente expresión cron hace que Process Reporting publique los datos de AEM Forms en el repositorio de Process Reporting cada cinco horas:
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
@@ -154,7 +154,7 @@ Process Reporting utiliza el servicio ReportConfiguration para configurar el se
    >Esta ubicación es la misma que se especifica en la opción de configuración ProcessDataStorage **Carpeta raíz**.
    >
    >
-   >Si actualiza la opción Carpeta raíz en la configuración ProcessDataStorage , debe actualizar la ubicación Ruta de almacenamiento CRX en el servicio ReportConfiguration.
+   >Si actualiza la opción Carpeta raíz en la configuración de ProcessDataStorage, debe actualizar la ubicación de la ruta de almacenamiento CRX en el servicio ReportConfiguration.
 
 1. Haga clic en **Guardar** y cierre el **Administrador de configuración CQ**.
 
@@ -184,7 +184,7 @@ También puede utilizar esta opción para desactivar la publicación de datos de
 
 **Intervalo de lotes (s)**
 
-Cada vez que se ejecuta el servicio ProcessDataPublisher, este divide primero el tiempo desde la última ejecución del servicio entre el intervalo de lotes. A continuación, el servicio procesa cada intervalo de datos de AEM Forms por separado para ayudar a controlar el tamaño de los datos que el editor procesa de extremo a extremo durante cada ejecución (por lotes) dentro de un ciclo.
+Cada vez que se ejecuta el servicio ProcessDataPublisher, este divide primero el tiempo desde la última ejecución del servicio entre el intervalo de lotes. A continuación, el servicio procesa cada intervalo de datos de AEM Forms de forma independiente para ayudar a controlar el tamaño de los datos que el publicador procesa de extremo a extremo durante cada ejecución (lote) dentro de un ciclo.
 
 Por ejemplo, si el publicador se ejecuta todos los días, en lugar de procesar todos los datos durante el día en una sola ejecución, divide de forma predeterminada el procesamiento en 24 lotes de una hora cada uno.
 
@@ -208,7 +208,7 @@ El entorno de AEM Forms contiene datos desde el momento en el que se configura 
 
 De forma predeterminada, el servicio ProcessDataPublisher importa todos los datos de la base de datos de AEM Forms.
 
-Según sus necesidades de creación de informes, si planea ejecutar informes y consultas sobre datos después de una fecha y hora determinadas, se recomienda especificar la fecha y la hora. A continuación, el servicio de publicación publica la fecha a partir de ese momento.
+Según sus necesidades de creación de informes, si planea ejecutar informes y consultas sobre datos después de una fecha y una hora determinadas, se recomienda especificar la fecha y la hora. A continuación, el servicio de publicación publica la fecha a partir de ese momento.
 
 `Default`: `01-01-1970 00:00:00`
 
@@ -226,7 +226,7 @@ Después de configurar Process Reporting, puede empezar a trabajar con él en l
 
 Cuando vaya a la URL de Process Reporting (https://&lt;server>:&lt;port>/lc/pr), se muestra la pantalla de inicio de sesión.
 
-Para iniciar sesión en el módulo Informes de procesos, especifique sus credenciales.
+Para iniciar sesión en el módulo Process Reporting, especifique sus credenciales.
 
 >[!NOTE]
 >

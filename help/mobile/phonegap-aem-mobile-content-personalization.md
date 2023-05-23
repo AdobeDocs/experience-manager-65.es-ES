@@ -227,7 +227,7 @@ Cuando el autor del contenido ha terminado de crear contenido para la aplicació
    <td>La ubicación de la aplicación.</td>
   </tr>
   <tr>
-   <td>type</td>
+   <td>tipo</td>
    <td>mobileappoffers</td>
    <td>El nombre del controlador que se ofrece en mobileappfers.</td>
   </tr>

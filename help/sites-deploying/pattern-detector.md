@@ -28,7 +28,7 @@ AEM Esta función le permite comprobar las instancias de la existentes para ver 
 1. Infringen ciertas reglas y se realizan en áreas que se verán afectadas o sobrescritas por la actualización
 1. AEM AEM Utilice una función de 6.x o una API que no sea compatible con versiones anteriores en la versión 6.5 y que pueda romperse después de la actualización.
 
-AEM Esto podría servir como evaluación de las actividades de desarrollo que se realizan para pasar a la categoría de 6,5 en el caso de los países en desarrollo, que se han de actualizar a la de los países en desarrollo de la categoría de los países en desarrollo.
+AEM Esto podría servir como evaluación de las actividades de desarrollo que se realizan para pasar a la categoría de 6,5 en el caso de los países en desarrollo, que son los que están en la fase de desarrollo, que es la de la.
 
 ## Configuración {#how-to-set-up}
 

@@ -22,76 +22,76 @@ El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en funci
 
 >[!NOTE]
 >
->Fuera del entorno de creación también hay otros mecanismos disponibles para buscar, como la variable [Generador de consultas](/help/sites-developing/querybuilder-api.md) y [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Fuera del entorno de creación, también hay otros mecanismos disponibles para la búsqueda, como el [Generador de consultas](/help/sites-developing/querybuilder-api.md) y [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Conceptos básicos de búsqueda {#search-basics}
 
-Para acceder al panel de búsqueda, haga clic en el **Buscar** en la parte superior del panel izquierdo de la consola adecuada.
+Para acceder al panel de búsqueda, haga clic en **Buscar** en la parte superior del panel izquierdo de la consola correspondiente.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-El panel de búsqueda permite realizar búsquedas en todas las páginas del sitio web. Contiene campos y utilidades para lo siguiente:
+El panel de búsqueda le permite buscar en todas las páginas del sitio web. Contiene campos y widgets para lo siguiente:
 
-* **Texto completo**: Buscar el texto especificado
-* **Modificado después/antes**: Buscar solo las páginas modificadas entre fechas específicas
-* **Plantilla**: Buscar solo las páginas basadas en la plantilla especificada
-* **Etiquetas**: Buscar solo las páginas con las etiquetas especificadas
+* **Texto completo**: buscar el texto especificado
+* **Modificado después/antes de**: busque solo las páginas que se cambiaron entre las fechas específicas
+* **Plantilla**: busque solo aquellas páginas en función de la plantilla especificada
+* **Etiquetas**: busque solo las páginas con las etiquetas especificadas
 
 >[!NOTE]
 >
->Cuando la instancia está configurada para [Búsqueda de Lucene](/help/sites-deploying/queries-and-indexing.md) puede utilizar lo siguiente en **Texto completo**:
+>Cuando la instancia esté configurada para [Búsqueda de Lucene](/help/sites-deploying/queries-and-indexing.md) puede utilizar lo siguiente en **Texto completo**:
 >
->* [Comodín](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
+>* [Comodines](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Operadores booleanos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
 >
 >* [Expresiones regulares](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Agrupación de campos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
->* [Ampliación](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+>* [Aumento](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
 
-Para ejecutar la búsqueda, haga clic en **Buscar** en la parte inferior del panel. Haga clic en **Restablecer** para borrar los criterios de búsqueda.
+Ejecute la búsqueda haciendo clic en **Buscar** en la parte inferior del panel. Clic **Restablecer** para borrar los criterios de búsqueda.
 
 ## Filter {#filter}
 
-En varias ubicaciones se puede configurar un filtro (y borrarlo) para explorar en profundidad y refinar la vista:
+En varias ubicaciones se puede definir (y borrar) un filtro para explorar en profundidad y acotar la vista:
 
 ![chlimage_1-102](assets/chlimage_1-102.png)
 
 ## Buscar y reemplazar {#find-and-replace}
 
-En el **Sitios web** consola a **Buscar y reemplazar** permite buscar y reemplazar varias instancias de una cadena en una sección del sitio web.
+En el **Sitios web** consola a **Buscar y reemplazar** La opción de menú permite buscar y reemplazar varias instancias de una cadena, dentro de una sección del sitio web.
 
-1. Seleccione la página raíz, o carpeta, donde desea que se realice la acción de buscar y reemplazar.
-1. Select **Herramientas** then **Buscar y reemplazar**:
+1. Seleccione la página raíz, o carpeta, donde desea que tenga lugar la acción de buscar y reemplazar.
+1. Seleccionar **Herramientas** entonces **Buscar y reemplazar**:
 
    ![screen_shot_2012-02-15at120346pm](assets/screen_shot_2012-02-15at120346pm.png)
 
-1. La variable **Buscar y reemplazar** hace lo siguiente:
+1. El **Buscar y reemplazar** El cuadro de diálogo hace lo siguiente:
 
-   * confirma la ruta raíz en la que debería comenzar la acción de búsqueda
-   * define el término que se va a encontrar
-   * define el término que debería reemplazarlo
+   * confirma la ruta raíz en la que debe comenzar la acción de búsqueda
+   * define el término que se busca
+   * define el término que debe reemplazarlo
    * indica si la búsqueda debe distinguir entre mayúsculas y minúsculas
    * indica si solo se deben encontrar palabras completas (de lo contrario, también se encuentran subcadenas)
 
-   Hacer clic **Vista previa** enumera dónde se ha encontrado el término. Puede seleccionar o borrar instancias específicas para reemplazarlas:
+   Clic **Previsualizar** listas en las que se ha encontrado el término. Puede seleccionar o borrar instancias específicas para sustituirlas:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
-1. Haga clic en **Reemplazar** para reemplazar todas las instancias. Se le solicitará que confirme la acción.
+1. Clic **Reemplazar** para reemplazar realmente todas las instancias. Se le solicitará que confirme la acción.
 
-El ámbito predeterminado para el servlet de buscar y reemplazar cubre las siguientes propiedades:
+El ámbito predeterminado del servlet de búsqueda y reemplazo cubre las siguientes propiedades:
 
 * `jcr:title`
 * `jcr:description`
 * `jcr:text`
 * `text`
 
-El ámbito se puede cambiar mediante la consola de gestión web Apache Felix (por ejemplo, en `https://localhost:4502/system/console/configMgr`). Select `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` y configure el ámbito según sea necesario.
+El ámbito se puede cambiar mediante la consola de administración web de Apache Felix (por ejemplo, en `https://localhost:4502/system/console/configMgr`). Seleccionar `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` y configure el ámbito según sea necesario.
 
 >[!NOTE]
 >
->En una instalación de AEM estándar, Buscar y reemplazar utiliza Lucene para la funcionalidad de búsqueda.
+>AEM En una instalación estándar, Buscar y reemplazar utiliza Lucene para la funcionalidad de búsqueda.
 >
->Lucene indexa propiedades de cadena de hasta 16 k de longitud. No se buscarán las cadenas que superen esto.
+>Lucene indexa propiedades de cadena de hasta 16 K de longitud. No se buscarán las cadenas que superen este límite.

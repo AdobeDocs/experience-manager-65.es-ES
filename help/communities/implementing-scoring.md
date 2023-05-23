@@ -218,7 +218,7 @@ Las subreglas son nodos de tipo `cq:Page` con propiedades en su `jcr:content`que
   <tr>
    <th>Propiedad</th>
    <th>Tipo</th>
-   <th> Value Descripción</th>
+   <th> Valor  Descripción</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -341,7 +341,7 @@ El `scoringRules` La propiedad de en una regla de distintivo simplemente restrin
   <tr>
    <th>Propiedad</th>
    <th>Tipo</th>
-   <th>Value Descripción</th>
+   <th>Valor  Descripción</th>
   </tr>
   <tr>
    <td>umbrales</td>
@@ -588,7 +588,7 @@ Es posible probar rápidamente la puntuación y el distintivo con la variable [T
    * Seleccionar **Múltiple**
    * Seleccionar **Añadir**
    * Entrar `/libs/settings/community/badging/rules/forums-badging`
-   * Seleccione **+**
+   * Seleccionar **+**
    * Entrar `/libs/settings/community/badging/rules/comments-badging`
    * Seleccionar **OK**
 
@@ -599,7 +599,7 @@ Es posible probar rápidamente la puntuación y el distintivo con la variable [T
    * Seleccionar **Múltiple**
    * Seleccionar **Añadir**
    * Entrar `/libs/settings/community/scoring/rules/forums-scoring`
-   * Seleccione **+**
+   * Seleccionar **+**
    * Entrar `/libs/settings/community/scoring/rules/comments-scoring`
    * Seleccionar **OK**
 

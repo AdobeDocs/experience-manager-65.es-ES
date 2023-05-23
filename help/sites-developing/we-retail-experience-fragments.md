@@ -13,7 +13,7 @@ exl-id: e17ff611-122a-4d17-97af-071d0234dd16
 source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 40%
+ht-degree: 21%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 40%
 
 Prueba de fragmentos de experiencia en We.Retail
 
-Un [fragmento de experiencias](/help/sites-authoring/experience-fragments.md) es un grupo de uno o varios componentes que incluye contenido y diseño que se puede consultar dentro de las páginas. Estos pueden contener cualquier componente.
+Un [Fragmento de experiencia](/help/sites-authoring/experience-fragments.md) es un grupo de uno o más componentes, incluido el contenido y el diseño, al que se puede hacer referencia en las páginas. Pueden contener cualquier componente.
 
 Permiten a un autor reutilizar partes de una página (un fragmento de una experiencia), sin tener que copiar y pegar el contenido.
 
@@ -31,8 +31,8 @@ AEM Esto es compatible con el caso de uso del Sistema de administración de cont
 >
 >Los **[fragmentos de contenido](/help/sites-developing/we-retail-content-fragments.md)** y los **fragmentos de experiencias** son funciones distintas de AEM:
 >
->* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
->* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
+>* **Fragmentos de contenido** son contenidos editoriales, principalmente texto e imágenes relacionadas. Son contenidos puros, sin diseño ni diseño.
+>* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web.
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.
 

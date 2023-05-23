@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM Portals y portlets de la red{#aem-portals-and-portlets}
 
-En este documento se describe lo siguiente:
+Este documento describe lo siguiente:
 
 * AEM Arquitectura del portal de
 * AEM Administración y configuración de los informes como un portal de
@@ -197,7 +197,7 @@ Para configurar un agente de replicación para el portal:
 
    ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
-1. Haga clic en **Editar.**
+1. Clic **Editar.**
 1. En el **Configuración** , seleccione la pestaña **Habilitado** casilla de verificación, seleccionar **Vaciado de Dispatcher** como el tipo de serialización e introduzca un tiempo de espera de reintento (por ejemplo, 60000).
 
    ![screen_shot_2012-02-15at42101pm](assets/screen_shot_2012-02-15at42101pm.png)

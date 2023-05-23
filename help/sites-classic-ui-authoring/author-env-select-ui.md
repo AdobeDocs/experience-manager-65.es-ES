@@ -1,6 +1,6 @@
 ---
 title: Selección de la IU
-description: Para facilitar la labor de los usuarios que crean contenido, la IU táctil permite cambiar a la IU clásica cuando es necesario.
+description: Para mayor comodidad de los usuarios autores, la IU táctil permite cambiar a la IU clásica cuando es necesario.
 uuid: 755e513e-990c-4dba-8316-623f17bf5c33
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,18 +17,18 @@ ht-degree: 0%
 
 # Selección de la IU{#selecting-your-ui}
 
-Dado que la IU táctil sustituye a la IU clásica, el usuario o administrador de la instancia de AEM debe tomar una decisión activa para continuar utilizando la IU clásica. Como la IU clásica ya no se mantiene, no hay forma de que el usuario autor cambie de la IU clásica al equivalente en la IU táctil.
+AEM Dado que la IU táctil reemplaza a la IU clásica, el usuario o administrador de la instancia de la instancia de la debe tomar una decisión activa para seguir utilizando la IU clásica. Dado que la IU clásica ya no se mantiene, no hay forma de que el usuario autor simplemente cambie de la IU clásica a la equivalente en la IU táctil.
 
-Para facilitar la labor de los usuarios que crean contenido, la IU táctil permite cambiar a la IU clásica cuando es necesario. Consulte la [Selección de la IU](/help/sites-authoring/select-ui.md) en la documentación de creación estándar para obtener más información.
+Para mayor comodidad de los usuarios autores, la IU táctil permite cambiar a la IU clásica cuando es necesario. Consulte la [Selección de la IU](/help/sites-authoring/select-ui.md) en la documentación de creación estándar para obtener más información.
 
 >[!NOTE]
 >
 >Las instancias actualizadas desde una versión anterior conservarán la IU clásica para la creación de páginas.
 >
->Después de la actualización, la creación de páginas no cambiará automáticamente a la IU táctil, pero puede configurar esta opción mediante la función[Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) del **Servicio de modo de IU de creación WCM** ( `AuthoringUIMode` ). Consulte [Omisiones de IU del editor](#uioverridesfortheeditor).
+>Después de la actualización, la creación de páginas no se cambiará automáticamente a la IU táctil, pero puede configurarla con el[Configuración de OSGi](/help/sites-deploying/configuring-osgi.md) de la **Servicio de modo de IU de creación de WCM** ( `AuthoringUIMode` service). Consulte [Anulaciones de IU del editor](#uioverridesfortheeditor).
 
-## Configuración de la IU predeterminada para su instancia {#configuring-the-default-ui-for-your-instance}
+## Configuración de la interfaz de usuario predeterminada para la instancia {#configuring-the-default-ui-for-your-instance}
 
-Un administrador del sistema puede configurar la IU que se ve al inicio y al iniciar sesión mediante [Asignación de raíz](/help/sites-deploying/osgi-configuration-settings.md#daycqrootmapping).
+Un administrador del sistema puede configurar la interfaz de usuario que se ve al iniciar y al iniciar sesión mediante [Asignación raíz](/help/sites-deploying/osgi-configuration-settings.md#daycqrootmapping).
 
-Esto puede anularse por los valores predeterminados del usuario o por la configuración de la sesión.
+Esto se puede sobrescribir por los valores predeterminados de usuario o la configuración de sesión.

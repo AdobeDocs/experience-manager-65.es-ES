@@ -13,7 +13,7 @@ exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
@@ -60,7 +60,7 @@ El `following` El componente enumera los miembros que siguen al miembro actual o
    <td>
     <ul>
      <li>Nombre: <strong><code>outgoing</code></strong></li>
-     <li>Tipo: Boolean (booleano)</li>
+     <li>Tipo: booleano</li>
      <li>Valor:<br />
       <ul>
        <li><i>Verdadero </i>- El <code>following</code> El componente enumerará los miembros que el miembro conectado actualmente <code>follows</code></li>

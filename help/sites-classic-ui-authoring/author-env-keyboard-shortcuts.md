@@ -1,6 +1,6 @@
 ---
 title: Métodos abreviados del teclado para las consolas
-description: Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se aplican al uso de las consolas, mientras que otros se refieren a la edición de páginas.
+description: Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos hacen referencia al uso de las consolas y otros, a la edición de páginas.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -41,9 +41,9 @@ Hay varios métodos abreviados de teclado disponibles mediante AEM. Algunos hace
   <tr>
    <td>Consola</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (en la página requerida)</td>
-   <td>Abra la página en una ventana nueva.<br /> <strong>Nota:</strong> funciona si la variable <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propiedades del usuario</a> se establecen como Ventana única; si es Varias ventanas, este es el comportamiento predeterminado.</td>
+   <td>Abrir página en una nueva ventana.<br /> <strong>Nota:</strong> está en funcionamiento si la variable <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propiedades del usuario</a> se establecen como Ventana única; si Varias ventanas, este es el comportamiento predeterminado.</td>
   </tr>
  </tbody>
 </table>
 
-También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan la variable [editor de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para crear páginas.
+También hay varios métodos abreviados de teclado disponibles para los usuarios de escritorio que utilizan el [editor de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) a las páginas de autor.

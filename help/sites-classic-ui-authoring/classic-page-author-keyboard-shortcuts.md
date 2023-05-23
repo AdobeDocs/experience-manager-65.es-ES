@@ -1,6 +1,6 @@
 ---
 title: Métodos abreviados del teclado al editar páginas
-description: Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se aplican al editar páginas, otros al uso de consolas.
+description: Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la edición de páginas y otros, en el uso de consolas.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,17 +17,17 @@ ht-degree: 19%
 
 # Métodos abreviados de teclado al editar páginas{#keyboard-shortcuts-when-editing-pages}
 
-Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se aplican al editar páginas, otros a la variable [uso de consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la edición de páginas y otros, en la [uso de consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->En las tablas siguientes, para las combinaciones de teclas de la variable **Acceso directo** , las teclas Ctrl y Comando funcionan en macOS.
+>En las tablas siguientes, para las combinaciones de teclas en la variable **Acceso directo** , las teclas Ctrl y Comando funcionan en macOS.
 
 >[!NOTE]
 >
 >Selección múltiple en un dispositivo de escritorio:
 >
->* Windows: Pulse Ctrl y haga clic en los componentes necesarios.
+>* Windows: Ctrl + clic en los componentes necesarios.
 >* Mac: Cmd + clic en los componentes necesarios.
 >
 
@@ -64,7 +64,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-C</code></strong></td>
-   <td>Copiar párrafos seleccionados.</td>
+   <td>Copiar los párrafos seleccionados.</td>
   </tr>
   <tr>
    <td> </td>
@@ -74,32 +74,32 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-V</code></strong></td>
-   <td>Pegar párrafos desde el portapapeles.</td>
+   <td>Pegue párrafos desde el portapapeles.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Alt-Ctrl-V</code></strong></td>
-   <td>Pegar como referencia.</td>
+   <td>Pegue como referencia.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Super-Del (fn-delete)</code></strong></td>
-   <td>Eliminar párrafos seleccionados.</td>
+   <td>Eliminar los párrafos seleccionados.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Cmd-Backspace</code></strong></td>
-   <td>Eliminar párrafos seleccionados.</td>
+   <td>Eliminar los párrafos seleccionados.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forzar menú contextual predeterminado (navegador).<br /> <strong>Nota:</strong> AEM menús contextuales solo aparecen en la IU clásica.</td>
+   <td>Forzar el menú contextual predeterminado (explorador).<br /> <strong>Nota:</strong> AEM Los menús contextuales solo se muestran en la interfaz de usuario clásica.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Alt-c</code></strong></td>
-   <td>Muestra la variable <a href="/help/sites-administering/client-context.md">contexto de cliente</a>.</td>
+   <td>Muestra el <a href="/help/sites-administering/client-context.md">Client Context</a>.</td>
   </tr>
   <tr>
    <td>Editor de texto enriquecido<br /> </td>
@@ -119,22 +119,22 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
   <tr>
    <td>Buscador de contenido: cuadro de búsqueda</td>
    <td><strong><code>down-arrow</code></strong></td>
-   <td>Déclencheur una lista de sugerencias. Necesario cuando se especifican muy pocos caracteres para almacenar en déclencheur la lista automáticamente (esto sucede cuando se introducen 2 o más caracteres).</td>
+   <td>Déclencheur de una lista de sugerencias. Es necesario cuando se han introducido demasiados pocos caracteres para almacenar en déclencheur la lista automáticamente (esto sucede cuando se han introducido 2 o más caracteres).</td>
   </tr>
   <tr>
    <td> </td>
-   <td><strong><code>right-arrow</code></strong><br /> (en una ruta de acceso sugerida)</td>
-   <td>Seleccione las sugerencias de elemento y déclencheur para la ruta seleccionada.</td>
+   <td><strong><code>right-arrow</code></strong><br /> (en una ruta sugerida)</td>
+   <td>Seleccionar sugerencias de elementos y déclencheur para la ruta seleccionada.</td>
   </tr>
   <tr>
    <td> </td>
-   <td><strong><code>left-arrow</code></strong><br /> (en una ruta de acceso sugerida)</td>
-   <td>Seleccione las sugerencias de elementos y déclencheur para sus antecesores (como en los hermanos del padre).</td>
+   <td><strong><code>left-arrow</code></strong><br /> (en una ruta sugerida)</td>
+   <td>Seleccione sugerencias de elementos y déclencheur para sus antecesores (como en los hermanos de la matriz).</td>
   </tr>
   <tr>
    <td> </td>
-   <td><strong><code>Enter</code></strong><br /> (en una ruta de acceso sugerida)</td>
-   <td>Seleccione la búsqueda de artículos y déclencheur.</td>
+   <td><strong><code>Enter</code></strong><br /> (en una ruta sugerida)</td>
+   <td>Seleccione la búsqueda de elementos y déclencheur.</td>
   </tr>
   <tr>
    <td> </td>
@@ -144,16 +144,16 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
   <tr>
    <td>Buscador de contenido<br /> </td>
    <td><strong><code>Alt+drag</code></strong></td>
-   <td><p>Arrastre los recursos y suéltelos en el destino.</p> <p>La acción de colocar crea un párrafo nuevo; en lugar de reemplazar el recurso en el destino.</p> </td>
+   <td><p>Arrastre recursos y suéltelos en el destino.</p> <p>La acción de colocar genera un nuevo párrafo; en lugar de reemplazar el recurso en el destino.</p> </td>
   </tr>
  </tbody>
 </table>
 
 También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan las [consolas](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
-## Métodos abreviados del teclado para desarrollo {#keyboard-shortcuts-for-development}
+## Métodos abreviados de teclado para desarrollo {#keyboard-shortcuts-for-development}
 
-Hay métodos abreviados del teclado adicionales disponibles para los desarrolladores de escritorio que usan el editor de páginas.
+Hay métodos abreviados de teclado adicionales disponibles para los desarrolladores de escritorio que utilizan el editor de páginas.
 
 <table>
  <tbody>
@@ -164,8 +164,8 @@ Hay métodos abreviados del teclado adicionales disponibles para los desarrollad
   </tr>
   <tr>
    <td>Modo de edición</td>
-   <td>Establezca el siguiente sufijo en la URL:<br /> <code>?debugClientLibs=true</code><br /> A continuación, utilice:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
-   <td>Para ver las estadísticas de temporización de la carga de páginas.</td>
+   <td>Establezca el siguiente sufijo en la dirección URL:<br /> <code>?debugClientLibs=true</code><br /> A continuación utilice:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Para ver las estadísticas de tiempo de carga de la página.</td>
   </tr>
  </tbody>
 </table>

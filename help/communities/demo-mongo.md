@@ -14,7 +14,7 @@ exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '774'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -171,8 +171,8 @@ Para probar y verificar el almacén común de MongoDB, publique un comentario en
 
    * Vaya al panel de Solr: [http://localhost:8983/solr/](http://localhost:8983/solr/).
    * Usuario `core selector` para seleccionar `collection1`.
-   * Seleccione `Query`.
-   * Seleccione `Execute Query`.
+   * Seleccionar `Query`.
+   * Seleccionar `Execute Query`.
 
    ![ugc-solr](assets/ugc-solr.png)
 

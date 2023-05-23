@@ -62,7 +62,7 @@ El comportamiento del envoltorio también puede controlarse completamente.
 
 Es posible controlar completamente el comportamiento de las etiquetas envolventes desde los scripts HTL y su lógica asociada.
 
-Para obtener más información sobre el desarrollo en HTL, consulte la [Documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
+Para obtener más información sobre el desarrollo en HTL, consulte la [Documentación de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es).
 
 #### Árbol de decisión {#decision-tree}
 

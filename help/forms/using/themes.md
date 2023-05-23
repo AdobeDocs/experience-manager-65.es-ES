@@ -66,7 +66,7 @@ Puede exportar temáticas como archivo zip y utilizarlas en otros proyectos o in
 
 >[!NOTE]
 >
->Si descarga una temática que tenga asociado un formulario adaptable y este se basa en una plantilla personalizada, descargue también la plantilla personalizada. Al cargar la temática descargada y el formulario adaptable, cargue también la plantilla personalizada relacionada.
+>Si descarga una temática que tenga asociado un formulario adaptable y este se basa en una plantilla personalizada, descargue también la plantilla personalizada. Al cargar la temática descargada y el formulario adaptable a un servidor AEM Forms, cargue también la plantilla personalizada relacionada.
 
 ### Cargar una temática {#uploading-a-theme}
 

@@ -13,7 +13,7 @@ exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
@@ -40,7 +40,7 @@ Debido a la posibilidad de que existan diferentes valores, las propiedades de p�
 
 >[!NOTE]
 >
->La edición masiva también está disponible para Assets. Se parece mucho, pero presenta algunos aspectos diferentes. Consulte [Edición de propiedades de varios recursos](/help/assets/metadata.md) para obtener más información. Puede personalizar los campos en el editor de metadatos masivos para los recursos mediante el [Editor de esquemas](/help/assets/metadata-schemas.md).
+>La edición masiva también está disponible para Assets. Es muy similar, pero difiere en algunos puntos. Consulte [Edición de propiedades de varios recursos](/help/assets/metadata.md) para obtener información completa. Puede personalizar los campos en el editor de metadatos masivos para los recursos mediante el [Editor de esquemas](/help/assets/metadata-schemas.md).
 
 ## Activación de un campo {#enabling-a-field}
 

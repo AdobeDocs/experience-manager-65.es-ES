@@ -13,7 +13,7 @@ exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '6158'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -253,7 +253,7 @@ Para obtener instrucciones sobre cómo acceder a esta configuración, consulte [
 
    * Si es necesario, seleccione un directorio de fuentes diferente en la **Fuente** menú desplegable. Este menú desplegable enumera los directorios de fuentes especificados en **Inicio > Configuración > Sistema principal > Configuraciones principales**.
    * Seleccione una o más fuentes de la lista **Fuentes disponibles** y haga clic en **Añadir**. Estas fuentes se añaden a **Fuentes para desincrustar** lista.
-   * Si desea desincrustar algunas fuentes que no existen en el servidor de Forms, introduzca los nombres de esas fuentes en la **Añadir fuentes para desincrustar** cuadro. Haga clic en **Agregar**.
+   * Si desea desincrustar algunas fuentes que no existen en el servidor de Forms, introduzca los nombres de esas fuentes en la **Añadir fuentes para desincrustar** cuadro. Clic **Añadir**.
 
    >[!NOTE]
    >
@@ -448,9 +448,9 @@ Estas opciones determinan cómo se convierten los archivos de Microsoft PowerPoi
 
 **[!UICONTROL Añadir marcadores a Adobe PDF]**: Convierte los títulos de PowerPoint en marcadores. Esta opción está seleccionada de forma predeterminada.
 
-**[!UICONTROL Adjuntar Archivo De Origen A Adobe PDF]**: añade el archivo de origen al archivo de PDF como datos adjuntos. Esta opción está desactivada de forma predeterminada.
+**[!UICONTROL Adjuntar Archivo De Origen A Adobe PDF]**: añade el archivo de origen al archivo de PDF como datos adjuntos. Esta opción no está seleccionada de forma predeterminada.
 
-**[!UICONTROL Habilitación De La Accesibilidad Y Reflow Con Adobe PDF Etiquetado]**: incrusta las etiquetas en el archivo del PDF. Esta opción está desactivada de forma predeterminada.
+**[!UICONTROL Habilitación De La Accesibilidad Y Reflow Con Adobe PDF Etiquetado]**: incrusta las etiquetas en el archivo del PDF. Esta opción no está seleccionada de forma predeterminada.
 
 **[!UICONTROL Conversión De Multimedia En Multimedia PDF]**: convierte multimedia en multimedia PDF, siempre que sea posible. Esta opción está seleccionada de forma predeterminada.
 
@@ -460,7 +460,7 @@ Estas opciones determinan cómo se convierten los archivos de Microsoft PowerPoi
 
 **[!UICONTROL Diseño del PDF basado en la configuración de la impresora PowerPoint]**: utiliza la configuración de impresora de PowerPoint para diseñar el documento de PDF.
 
-**[!UICONTROL Añadir Vínculos A Adobe PDF]**: conserva los vínculos existentes cuando se convierte el archivo. El aspecto de los vínculos generalmente no cambia. Los vínculos solo se pueden crear si también está seleccionada la opción Habilitar accesibilidad. Esta opción está desactivada de forma predeterminada.
+**[!UICONTROL Añadir Vínculos A Adobe PDF]**: conserva los vínculos existentes cuando se convierte el archivo. El aspecto de los vínculos generalmente no cambia. Los vínculos solo se pueden crear si también está seleccionada la opción Habilitar accesibilidad. Esta opción no está seleccionada de forma predeterminada.
 
 **[!UICONTROL Guardar Transiciones De Diapositivas En Adobe PDF]**: convierte las transiciones de diapositivas. Esta opción está seleccionada de forma predeterminada.
 

@@ -1,7 +1,7 @@
 ---
-title: Crear una página de aterrizaje del boletín eficaz
+title: Creación de una página de aterrizaje de newsletter efectiva
 seo-title: Creating an Effective Newsletter Landing Page
-description: Una página de base de boletín eficaz ayuda a llegar a los máximos visitantes posibles para que éstos se registren en el boletín (u otra campaña de marketing por correo electrónico). La información recopilada de los registros al boletín se puede utilizar para obtener posibles clientes.
+description: Una página de aterrizaje de newsletter efectiva le ayuda a que el mayor número de personas posible se suscriban a su newsletter (u otra campaña de marketing por correo electrónico). Puede utilizar la información que recopila de las suscripciones a la newsletter para obtener posibles clientes.
 seo-description: An effective newsletter landing page helps you get as many people as possible to sign up for your newsletter (or other email marketing campaign). You can use the information you gather from your newsletter sign ups to get leads.
 uuid: 0799b954-076b-4e95-8724-3661ae8fddb6
 contentOwner: User
@@ -14,41 +14,41 @@ exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '613'
-ht-degree: 92%
+ht-degree: 0%
 
 ---
 
-# Crear una página de aterrizaje del boletín eficaz{#creating-an-effective-newsletter-landing-page}
+# Creación de una página de aterrizaje de newsletter efectiva{#creating-an-effective-newsletter-landing-page}
 
-Una página de base de boletín eficaz ayuda a llegar a los máximos visitantes posibles para que éstos se registren en el boletín (u otra campaña de marketing por correo electrónico). La información recopilada de los registros al boletín se puede utilizar para obtener posibles clientes.
+Una página de aterrizaje de newsletter efectiva le ayuda a que el mayor número de personas posible se suscriban a su newsletter (u otra campaña de marketing por correo electrónico). Puede utilizar la información que recopila de las suscripciones a la newsletter para obtener posibles clientes.
 
-Para crear una página de base de boletín eficaz, debe hacer lo siguiente:
+Para crear una página de aterrizaje de newsletter efectiva, debe hacer lo siguiente:
 
-1. Cree una lista para el boletín, de modo que los usuarios se puedan suscribir al mismo.
-1. Cree el formulario de registro. Cuando realice esto, añada una etapa de flujo de trabajo que añada automáticamente la persona que se registre al boletín de la lista de posibles clientes.
-1. Cree una página de confirmación que agradezca a los usuarios el registro y que posiblemente pueda ofrecerles una oferta.
-1. Añada teasers.
+1. Cree una lista para la newsletter, de modo que los usuarios puedan suscribirse a ella.
+1. Cree el formulario de registro. Al hacerlo, agregue un paso del flujo de trabajo que añada automáticamente a la lista de posibles clientes a la persona que se suscribe a la newsletter.
+1. Cree una página de confirmación que agradezca a los usuarios su registro y que posiblemente les proporcione una promoción.
+1. Agregar teasers.
 
 >[!NOTE]
 >
->Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes y listas).
+>El Adobe no tiene previsto mejorar esta capacidad (administración de posibles clientes y listas).
 >La recomendación es aprovechar [Adobe Campaign AEM y la integración para la integración de los recursos](/help/sites-administering/campaign.md).
 
-## Crear una lista para el boletín {#creating-a-list-for-the-newsletter}
+## Creación de una lista para la newsletter {#creating-a-list-for-the-newsletter}
 
-Cree una lista como, por ejemplo, **Boletín de Geometrixx**, en MCM a la que los usuarios deben suscribirse. La creación de la listas se describe en [Crear listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
+Cree una lista, por ejemplo, **Newsletter de Geometrixx**, en MCM para la newsletter a la que deben suscribirse las personas. La creación de listas se describe en [Creación de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
 
-A continuación se incluye un ejemplo de una lista:
+A continuación se muestra un ejemplo de lista:
 
 ![mcm_listcreate](assets/mcm_listcreate.png)
 
-## Crear un formulario de registro {#create-a-sign-up-form}
+## Creación de un formulario de registro {#create-a-sign-up-form}
 
-Cree un formulario de registro al boletín que permita a los usuarios suscribirse a etiquetas. El sitio web de ejemplo de Geometrixx proporciona una página del boletín en la barra de herramientas de Geometrixx donde puede crear su formulario.
+Cree un formulario de registro de newsletter que permita a los usuarios suscribirse a las etiquetas. El sitio web de Geometrixx de ejemplo proporciona una página de newsletter en la barra de herramientas de Geometrixx donde puede crear el formulario.
 
-Para crear su propio formulario del boletín, consulte la información sobre la creación de formularios en la [documentación de los formularios](/help/sites-authoring/default-components.md#form). El boletín utiliza las etiquetas de la biblioteca de etiquetas. Para añadir etiquetas adicionales, consulte [Administración de etiquetas](/help/sites-authoring/tags.md#tagadministration).
+Para crear su propio formulario de newsletter, consulte la información sobre la creación de formularios en la [Documentación de Forms](/help/sites-authoring/default-components.md#form). La newsletter utiliza las etiquetas de la Biblioteca de etiquetas. Para añadir etiquetas adicionales, consulte [Administración de etiquetas](/help/sites-authoring/tags.md#tagadministration).
 
-Los campos ocultos del siguiente ejemplo proporcionan la cantidad mínima de información básica (correo electrónico); asimismo, puede añadir más campos posteriormente, pero esto influirá en el porcentaje de conversión.
+Los campos ocultos en el ejemplo siguiente proporcionan la cantidad mínima de información (correo electrónico); además, puede agregar más campos más adelante, pero esto afectará a la tasa de conversión.
 
 El siguiente ejemplo es un formulario creado en https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
 
@@ -56,40 +56,40 @@ El siguiente ejemplo es un formulario creado en https://localhost:4502/cf#/conte
 
    ![mcm_newsletterpage](assets/mcm_newsletterpage.png)
 
-1. Haga clic en **Editar** en el componente Formulario para configurar el formulario para que se dirija a la página de agradecimiento (consulte [Creación de páginas de agradecimiento](#creating-a-thank-you-page)).
+1. Clic **Editar** en el componente Formulario para configurar el formulario y que vaya a una página de agradecimiento (consulte [Creación de páginas de agradecimiento](#creating-a-thank-you-page)).
 
    ![dc_formstart_thankyou](assets/dc_formstart_thankyou.png)
 
-1. Establezca la acción del formulario (esto es lo que sucederá cuando envíe el formulario) y configure el grupo para asignar los usuarios registrados a la lista que creó previamente (por ejemplo, newsletter de geometrixx).
+1. Establezca la acción Formulario (que es lo que ocurrirá cuando envíe el formulario) y configure el grupo para asignar usuarios registrados a la lista creada anteriormente (por ejemplo, newsletter de Geometrixx).
 
    ![dc_formstart_thankyouadvanced](assets/dc_formstart_thankyouadvanced.png)
 
-### Crear una página de agradecimiento {#creating-a-thank-you-page}
+### Creación de una página de agradecimiento {#creating-a-thank-you-page}
 
-Cuando los usuarios hacen clic en **Suscribirse ahora**, desea que se abra una página de agradecimiento automáticamente. Cree la página de agradecimiento en la página del boletín de Geometrixx. Una vez creado el formulario de la Newsletter, edite el componente Formulario y añada la ruta a la página de agradecimiento.
+Cuando los usuarios hagan clic **Suscribirse ahora**, desea que una página de agradecimiento se abra automáticamente. Cree la página de agradecimiento en la página de la newsletter de Geometrixx. Después de crear el formulario de la newsletter, edite el componente Formulario y añada la ruta a la página de agradecimiento.
 
-Al enviar la solicitud, el usuario se dirige a la página de **agradecimiento** tras la cual recibirá un correo electrónico. Esta página de agradecimiento se creó en /content/geometrixx/en/toolbar/newsletter/thank_you.
+Al enviar la solicitud, el usuario pasa a un **Gracias.** página tras la cual recibirán un correo electrónico. Esta página de agradecimiento se ha creado en /content/geometrixx/en/toolbar/newsletter/thank_you.
 
 ![mcm_newsletter_thank_youpage](assets/mcm_newsletter_thankyoupage.png)
 
 ### Añadir teasers {#adding-teasers}
 
-Añada [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) para dirigirse a audiencias específicas. Por ejemplo, puede añadir teasers a la página de agradecimiento y a la página de registro a la newsletter.
+Añadir [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) para dirigirse a audiencias específicas. Por ejemplo, puede agregar teasers a la página de agradecimiento y a la página de registro de la newsletter.
 
-Para añadir teasers con el fin de que la página de base de la newsletter sea eficaz:
+Para agregar teasers para crear una página de aterrizaje de newsletter efectiva:
 
-1. Cree un párrafo de teaser para obtener un regalo de registro. Seleccione **Primero** como estrategia e incluya texto que informe sobre qué regalo podrán recibir los usuarios.
+1. Cree un párrafo de teaser para un regalo de registro. Seleccionar **Primero** como estrategia e incluir texto que les informe qué regalo recibirán.
 
    ![dc_teaser_thank_you](assets/dc_teaser_thankyou.png)
 
-1. Cree un párrafo de teaser para la página de agradecimiento. Seleccione **Primero** como estrategia e incluya texto que indique que el regalo ya se ha enviado.
+1. Cree un párrafo de teaser para la página de agradecimiento. Seleccionar **Primero** como estrategia e incluir texto que indique que el regalo está en camino.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-1. Cree una campaña con dos teasers -- etiquete uno con la palabra negocio y deje otro sin etiquetar.
+1. Cree una campaña con los dos teasers: etiquete uno con el negocio y otro sin etiquetar.
 
-### Inserción de contenido en suscriptores {#pushing-content-to-subscribers}
+### Inserción de contenido a los suscriptores {#pushing-content-to-subscribers}
 
-Introduzca los cambios en las páginas mediante la funcionalidad del boletín, en MCM. Envíe el contenido actualizado a los suscriptores.
+Insertar cualquier cambio en las páginas a través de la funcionalidad Newsletter en el MCM. A continuación, puede insertar contenido actualizado a los suscriptores.
 
-Consulte [Enviar boletines](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters).
+Consulte [Envío de boletines](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters).

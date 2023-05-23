@@ -14,7 +14,7 @@ exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
 source-git-commit: c7958efbc4557ab3e50732da59faabf4e36c3844
 workflow-type: tm+mt
 source-wordcount: '1564'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ AEM La integración bidireccional y ampliable entre las soluciones de y Salesfor
 * Participación desde el marketing hasta las actividades de ventas.
 * Organizaciones que transmiten y reciben datos automáticamente desde un almacén de datos de Salesforce.
 
-En este documento se describe lo siguiente:
+Este documento describe lo siguiente:
 
 * Cómo configurar los Cloud Services AEM de Salesforce (configurar los parámetros para que se integren con Salesforce).
 * Aprenda a utilizar la información de contacto/posible cliente de Salesforce en Client Context y para personalización.

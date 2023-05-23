@@ -21,7 +21,7 @@ ht-degree: 100%
 
 # Habilitar AEM para buscar documentos PDF protegidos mediante Seguridad de documentos{#enable-aem-to-search-document-security-protected-pdf-documents}
 
-La búsqueda de AEM puede buscar y localizar recursos de AEM y realizar búsquedas de texto en varios formatos de documento de uso común, como archivos de texto sin formato, documentos de Microsoft Office y documentos PDF. También puede ampliar la búsqueda nativa para realizar búsquedas de texto completo en [documentos PDF protegidos con seguridad de documentos de AEM](../../forms/using/admin-help/document-security.md). Para permitir que AEM realice búsquedas de texto completo en dichos documentos, realice los siguientes pasos:
+La búsqueda de AEM puede buscar y localizar AEM Assets y realizar búsquedas de texto en varios formatos de documento de uso común, como archivos de texto sin formato, documentos de Microsoft Office y documentos PDF. También puede ampliar la búsqueda nativa para realizar búsquedas de texto completo en [documentos PDF protegidos con seguridad de documentos de AEM](../../forms/using/admin-help/document-security.md). Para permitir que AEM realice búsquedas de texto completo en dichos documentos, realice los siguientes pasos:
 
 1. Establezca una conexión segura
 1. Indexe un documento PDF de ejemplo protegido por directivas

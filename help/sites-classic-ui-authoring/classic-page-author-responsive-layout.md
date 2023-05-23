@@ -1,6 +1,6 @@
 ---
 title: Diseño interactivo
-description: Aunque el componente Contenedor de diseño está disponible en la IU clásica, su funcionalidad completa solo está disponible y se admite en la IU táctil.
+description: Aunque el componente Contenedor de diseño está disponible en la IU clásica, su funcionalidad completa solo está disponible y es compatible con la IU táctil.
 uuid: 203c7491-ce0e-49fc-ad81-1697325b3d8c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -19,4 +19,4 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Aunque el componente Contenedor de diseño está disponible en la IU clásica, su funcionalidad completa solo está disponible y se admite en la IU táctil. Consulte [Diseño interactivo](/help/sites-authoring/responsive-layout.md) en la documentación de creación estándar para obtener más información.
+>Aunque el componente Contenedor de diseño está disponible en la IU clásica, su funcionalidad completa solo está disponible y es compatible con la IU táctil. Consulte lo siguiente [Diseño interactivo](/help/sites-authoring/responsive-layout.md) en la documentación de creación estándar para obtener más información.

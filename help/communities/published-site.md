@@ -213,8 +213,8 @@ Utilice el botón Atrás del explorador para volver al sitio publicado. La mayor
 
 Después de cerrar la sesión, es posible crear un nuevo registro de usuario.
 
-* Seleccione `Log In`
-* Seleccione `Sign up for a new account`
+* Seleccionar `Log In`
+* Seleccionar `Sign up for a new account`
 
 ![registro](assets/registration.png)
 

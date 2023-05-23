@@ -1,7 +1,7 @@
 ---
-title: Seguimiento de correos electrónicos devueltos
+title: Seguimiento de correos electrónicos rechazados
 seo-title: Tracking Bounced Emails
-description: Cuando envía una newsletter a muchos usuarios, normalmente hay algunas direcciones de correo electrónico no válidas en la lista. Si se envían newsletters a esas direcciones, se devuelven. AEM administrar esas devoluciones y dejar de enviar newsletters a esas direcciones una vez se haya superado el contador de devoluciones configurado.
+description: Cuando envía una newsletter a muchos usuarios, suele haber algunas direcciones de correo electrónico no válidas en la lista. El envío de boletines a esas direcciones se recupera. AEM Puede administrar esas devoluciones y puede dejar de enviar boletines informativos a esas direcciones después de que se exceda el contador de devoluciones configurado.
 seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
 uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
@@ -17,86 +17,86 @@ ht-degree: 0%
 
 ---
 
-# Seguimiento de correos electrónicos devueltos{#tracking-bounced-emails}
+# Seguimiento de correos electrónicos rechazados{#tracking-bounced-emails}
 
 >[!NOTE]
 >
->Adobe no tiene previsto mejorar aún más el seguimiento de los correos electrónicos abiertos o devueltos enviados por AEM servicio SMTP.
+>El Adobe AEM de no planea mejorar aún más el seguimiento de los correos electrónicos abiertos/rechazados enviados por el servicio SMTP de la.
 >
->La recomendación es [usar Adobe Campaign y su integración AEM](/help/sites-administering/campaign.md).
+>La recomendación es [Uso de Adobe Campaign AEM y su integración con el](/help/sites-administering/campaign.md).
 
-Cuando envía una newsletter a muchos usuarios, normalmente hay algunas direcciones de correo electrónico no válidas en la lista. Si se envían newsletters a esas direcciones, se devuelven. AEM administrar esas devoluciones y dejar de enviar newsletters a esas direcciones una vez se haya superado el contador de devoluciones configurado. De forma predeterminada, la tasa de salida hacia otro sitio está definida en 3 pero es configurable.
+Cuando envía una newsletter a muchos usuarios, suele haber algunas direcciones de correo electrónico no válidas en la lista. El envío de boletines a esas direcciones se recupera. AEM Puede administrar esas devoluciones y puede dejar de enviar boletines informativos a esas direcciones después de que se exceda el contador de devoluciones configurado. De forma predeterminada, la tasa de salida hacia otro sitio se establece en 3, pero se puede configurar.
 
-Para configurar AEM para realizar un seguimiento de los correos electrónicos devueltos, configure AEM para sondear un buzón de correo existente en el que se reciben los correos devueltos. Normalmente, esta ubicación es la dirección de correo electrónico &quot;de&quot; que especifica al enviar la newsletter. AEM sondea esta bandeja de entrada e importa todos los correos electrónicos por debajo de la ruta especificada en la configuración de sondeo. A continuación, se activa un flujo de trabajo para buscar las direcciones de correo electrónico devueltas dentro de los usuarios y actualiza el valor de la propiedad bounceCounter del usuario en consecuencia. Una vez superados los rechazos máximos configurados, el usuario se elimina de la lista del boletín informativo.
+AEM AEM Para configurar el seguimiento de correos electrónicos rechazados, configure la configuración de la opción para sondear un buzón de correo existente en el que se reciban los correos electrónicos rechazados. Normalmente, esta ubicación es la dirección de correo electrónico de origen que especifica dónde envía la newsletter. AEM sondea esta bandeja de entrada e importa todos los correos electrónicos por debajo de la ruta especificada en la configuración de sondeo. A continuación, se activa un flujo de trabajo para buscar las direcciones de correo electrónico rechazadas dentro de los usuarios y se actualiza el valor de la propiedad bounceCounter del usuario en consecuencia. Una vez superados los rebotes máximos configurados, el usuario se elimina de la lista del boletín informativo.
 
 ## Configuración del importador de fuentes {#configuring-the-feed-importer}
 
-El importador de fuentes le permite importar repetidamente contenido de fuentes externas en su repositorio. Con esta configuración del importador de fuentes, AEM comprueba si hay correos electrónicos devueltos en el buzón del remitente.
+El importador de fuentes le permite importar repetidamente contenido de fuentes externas al repositorio. AEM Con esta configuración del importador de fuentes, comprueba en el buzón del remitente si hay correos electrónicos devueltos.
 
-Para configurar Feed Importer para que realice el seguimiento de los correos electrónicos devueltos, haga lo siguiente:
+Para configurar el importador de fuentes para el seguimiento de correos electrónicos rechazados, haga lo siguiente:
 
-1. En **Herramientas**, seleccione Feed Importer.
+1. Entrada **Herramientas**, seleccione el Importador de fuentes.
 
-1. Haga clic en **Agregar** para crear una configuración.
+1. Clic **Añadir** para crear una configuración.
 
-   ![imagen_1](assets/chlimage_1a.png)
+   ![chlimage_1](assets/chlimage_1a.png)
 
-1. Para agregar una configuración, seleccione el tipo y añada información a la URL de sondeo para que pueda configurar el host y el puerto. Además, agregue algunos parámetros de correo y protocolo específicos a la consulta de URL. Establezca la configuración para sondear al menos una vez al día.
+1. Añada una configuración seleccionando el tipo y añadiendo información a la URL de sondeo para que pueda configurar el host y el puerto. Además, agregue algunos parámetros de correo electrónico y específicos del protocolo a la consulta de URL. Establezca la configuración para sondear al menos una vez al día.
 
-   Todas las configuraciones necesitan información sobre lo siguiente en la URL de sondeo:
+   Todas las configuraciones necesitan información sobre lo siguiente en la dirección URL de sondeo:
 
    `username`: El nombre de usuario que se utiliza para la conexión
 
-   `password`: La contraseña que se utiliza para la conexión
+   `password`: La contraseña utilizada para conectarse
 
-   Además, según el protocolo, puede configurar ciertos ajustes.
+   Además, según el protocolo, puede configurar ciertas opciones.
 
    **Propiedades de configuración POP3:**
 
-   `pop3.leave.on.server`: Define si los mensajes se dejarán en el servidor o no. Configúrelo en true para dejar mensajes en el servidor; en caso contrario, en false . El valor predeterminado es true.
+   `pop3.leave.on.server`: define si se deben dejar los mensajes en el servidor o no. Si se establece en true, los mensajes se dejarán en el servidor; en caso contrario, en false. El valor predeterminado es True.
 
-   **Ejemplos de POP3:**
+   **Ejemplos POP3:**
 
-   | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret | Usar pop3 sobre SSL para conectarse a GMail en el puerto 995 con user/secret, dejando mensajes en el servidor de forma predeterminada |
+   | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret | Uso de pop3 sobre SSL para conectarse a GMail en el puerto 995 con usuario/secreto, dejando los mensajes en el servidor de forma predeterminada |
    |---|---|
    | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret&amp;pop3.leave.on.server=false | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret&amp;pop3.leave.on.server=false |
 
    **Propiedades de configuración de IMAP:**
 
-   Permite establecer indicadores para buscar.
+   Permite establecer marcas para buscar.
 
-   `imap.flag.SEEN`: establezca false para los mensajes nuevos o no vistos, true para los mensajes ya leídos
+   `imap.flag.SEEN`:Establezca false para los mensajes nuevos o no vistos, true para los mensajes ya leídos
 
-   Consulte [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) para la lista completa de indicadores.
+   Consulte [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) para obtener la lista completa de indicadores.
 
    **Ejemplos de IMAP:**
 
-   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret | Usar IMAP sobre SSL para conectarse a GMail en el puerto 993 con user/secret. Solo se obtienen nuevos mensajes de forma predeterminada. |
+   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret | Uso de IMAP sobre SSL para conectarse a GMail en el puerto 993 con usuario/secreto. Recibir mensajes nuevos solo de forma predeterminada. |
    |---|---|
-   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true | Usar IMAP sobre SSL para conectarse a GMail 993 con usuario/secreto, solo obteniendo un mensaje ya visto. |
-   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true&amp;imap.flag.SEEN=false | Usar IMAP sobre SSL para conectarse a GMail 993 con usuario/secreto, obteniendo mensajes nuevos o ya leídos. |
+   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true | Utilizando IMAP sobre SSL para conectarse a GMail 993 con usuario/secreto, solo recibiendo mensaje ya visto. |
+   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true&amp;imap.flag.SEEN=false | Utilizando IMAP sobre SSL para conectarse a GMail 993 con usuario/secreto, recibiendo mensajes leídos o nuevos. |
 
 1. Guarde la configuración.
 
-## Configuración del componente de servicio de boletín informativo {#configuring-the-newsletter-service-component}
+## Configuración del componente de servicio de newsletter {#configuring-the-newsletter-service-component}
 
-Después de configurar Feed Importer, configure la dirección De y el contador de devoluciones.
+Después de configurar el importador de fuentes, configure la Dirección de origen y el contador de devoluciones.
 
-Para configurar el servicio de boletín informativo:
+Para configurar el servicio del boletín informativo:
 
 1. En la consola OSGi, en `<host>:<port>/system/console/configMgr`, vaya a **Newsletter de MCM**.
 
 1. Configure el servicio y guarde los cambios cuando termine.
 
-   ![Chlimage_1-1](assets/chlimage_1-1a.png)
+   ![chlimage_1-1](assets/chlimage_1-1a.png)
 
    Se pueden configurar las siguientes configuraciones para ajustar el comportamiento:
 
-   | Contador de devoluciones máximo (max.bounce.count) | Define el número de devoluciones hasta que se omite a un usuario al enviar una newsletter. Si este valor se establece en 0, se desactiva completamente la comprobación de devoluciones. |
+   | Contador de rechazos máximo (max.bounce.count) | Define el número de devoluciones hasta que se omite un usuario al enviar un boletín informativo. Si este valor se establece en 0, la comprobación de devoluciones se desactiva por completo. |
    |---|---|
-   | Actividad sin caché (sent.activity.nocache) | Define la configuración de caché que se utilizará para la actividad de newsletter enviada |
+   | Actividad sin caché (sent.activity.nocache) | Define la configuración de caché que se utilizará para la actividad de envío de newsletter |
 
-   Una vez guardado, el servicio MCM newsletter hace lo siguiente:
+   Una vez guardado, el servicio MCM del boletín informativo realiza las siguientes acciones:
 
-   * Escribe una actividad en el flujo oculto de los usuarios tras enviar correctamente una newsletter.
+   * Escribe una actividad en el flujo oculto de usuarios tras el envío correcto de un boletín informativo.
    * Escribe una actividad si se detecta una devolución y cambia el contador de devoluciones de los usuarios.

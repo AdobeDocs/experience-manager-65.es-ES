@@ -1,6 +1,6 @@
 ---
-title: Edición de las propiedades de página
-description: Las propiedades de una página pueden variar en función de su naturaleza. Por ejemplo, es posible que algunas páginas estén conectadas a una Live Copy, mientras que otras no lo están, y la información de la Live Copy estará disponible según corresponda.
+title: Edición de propiedades de página
+description: Las propiedades de una página pueden variar según la naturaleza de la página. Por ejemplo, algunas páginas podrían estar conectadas a una Live Copy, mientras que otras no lo están y la información de la Live Copy estará disponible según corresponda.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -38,22 +38,22 @@ Las propiedades se distribuyen entre varias pestañas:
    * Después de seleccionar una etiqueta, aparece debajo del cuadro de selección. Puede quitar una etiqueta de esta lista utilizando la x.
    * Se puede especificar una etiqueta completamente nueva si se escribe el nombre en un cuadro de selección vacío.
 
-      La nueva etiqueta se creará cuando pulse Intro. La nueva etiqueta se mostrará en un cuadro, con una pequeña estrella a la derecha que indicará que es una etiqueta nueva.
+      La nueva etiqueta se creará cuando pulse Intro. La nueva etiqueta se muestra en un cuadro, con una pequeña estrella a la derecha que indica que es una etiqueta nueva.
 
    * Con la funcionalidad desplegable puede seleccionar etiquetas existentes.
-   * Aparece una x cuando pasa el ratón sobre una entrada de etiqueta en el cuadro de selección; se puede usar para eliminar esa etiqueta para esta página.
+   * Aparece una x cuando pasa el ratón sobre una entrada de etiqueta en el cuadro de selección; esto se puede utilizar para quitar esa etiqueta de esta página.
 
 * **Ocultar en navegación**
 
-   Un conmutador para indicar si la página se muestra o se oculta en el panel de navegación.
+   Conmutador para indicar si se muestra o se oculta la página en la navegación por páginas.
 
 * **Título de página**
 
-   Un título que se usará en la página.
+   Título que se utilizará en la página.
 
 * **Título de navegación**
 
-   Puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea un título más conciso). Si está vacío, la variable **Título** se utilizará.
+   Puede especificar un título independiente para utilizarlo en la navegación (por ejemplo, si desea algo más conciso). Si está vacío, la variable **Título** se utilizará.
 
 * **Subtítulo**
 
@@ -65,27 +65,27 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Tiempo de activación**
 
-   La fecha y hora a las que se activará la página publicada. Cuando se publique, esta página se mantendrá inactiva hasta la hora especificada.
+   La fecha y hora a las que se activará la página publicada. Cuando se publique, esta página se mantendrá inactiva hasta el momento especificado.
 
-   Deje vacíos estos campos para las páginas que desee publicar inmediatamente (el escenario normal).
+   Deje estos campos vacíos para las páginas que desee publicar inmediatamente (el escenario normal).
 
 * **Tiempo de inactividad**
 
    Hora a la que se desactivará la página publicada.
 
-   Nuevamente, deje vacíos estos campos para las páginas que desee publicar inmediatamente.
+   De nuevo, deje estos campos vacíos para las páginas que desee publicar inmediatamente.
 
 * **URL mnemónica**
 
    Permite introducir una URL de vanidad para esta página. Esto le permite tener una URL más corta y expresiva.
 
-   Por ejemplo, si la URL de vanidad está configurada en w `elcome`a la página identificada por la ruta / `v1.0/startpage`para el sitio web h `ttp://example.com,` then h `ttp://example.com/welcome`sería la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
+   Por ejemplo, si la URL de vanidad está configurada en w `elcome`a la página identificada por la ruta / `v1.0/startpage`para el sitio web h `ttp://example.com,` entonces h `ttp://example.com/welcome`sería la URL de vanidad de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
    >URL de vanidad:
    >
-   >* debe ser único, por lo que debe asegurarse de que ninguna otra página utilice el valor.
+   >* debe ser único, por lo que debe tener cuidado de que el valor no lo esté utilizando otra página.
    >* no admiten patrones regex.
 
 
@@ -105,7 +105,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Design**
 
-   Indique la variable [diseño](/help/sites-developing/designer.md) para usar en esta página.
+   Indique el [diseño](/help/sites-developing/designer.md) para utilizar en esta página.
 
 * **Alias**
 
@@ -117,15 +117,15 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Página de inicio de sesión**
 
-   La página que se usará para iniciar sesión.
+   La página que se utilizará para iniciar sesión.
 
 * **Grupos admitidos**
 
-   Grupos elegibles para iniciar sesión en el CUG.
+   Grupos aptos para iniciar sesión en el CUG.
 
 * **Territorio**
 
-   Nombre de territorio para el CUG.
+   Nombre de dominio para el CUG.
 
 * **Configuración de exportación**
 
@@ -135,7 +135,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Miniatura de la página**
 
-   Muestra la imagen en miniatura de la página. Puede hacer lo siguiente:
+   Muestra la miniatura de la página. Puede hacer lo siguiente:
 
    * **Generar previsualización**
 
@@ -149,7 +149,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Cloud Services**
 
-   Definir propiedades para [servicios en la nube](/help/sites-developing/extending-cloud-config.md).
+   Definir propiedades para [cloud services](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalización {#personalization}
 
@@ -159,9 +159,9 @@ Las propiedades se distribuyen entre varias pestañas:
 
 ### Permisos   {#permissions}
 
-* **Permisos** (IU táctil)
+* **Permisos** (IU táctil optimizada)
 
-   Consulte la [permisos efectivos y añadir permisos nuevos](/help/sites-administering/user-group-ac-admin.md).
+   Ver el [permisos efectivos y añadir nuevos permisos](/help/sites-administering/user-group-ac-admin.md).
 
 ### Modelo {#blueprint}
 
@@ -173,7 +173,7 @@ Las propiedades se distribuyen entre varias pestañas:
 
 * **Live Copy**
 
-   Defina propiedades para una página de Live Copy en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
+   Definir propiedades para una página Live Copy en [administración de varios sitios](/help/sites-administering/msm.md). Controla las circunstancias dentro de las cuales se propagarán las modificaciones desde el modelo.
 
 ### Estructura del sitio    {#site-structure}
 
@@ -181,14 +181,14 @@ Las propiedades se distribuyen entre varias pestañas:
 
 ## Edición de las propiedades de página   {#editing-page-properties-2}
 
-### Edición de las propiedades de una página específica {#editing-page-properties-for-a-specific-page}
+### Edición de propiedades de página para una página específica {#editing-page-properties-for-a-specific-page}
 
-Las propiedades de página definen las distintas propiedades de la página, como los títulos, cuando aparecen en el sitio web y otras.
+Propiedades de página define las distintas propiedades de la página, como los títulos, cuando aparecen en el sitio web y en otros.
 
 1. Abra la página que desee editar.
 
-1. En la barra de tareas, abra la **Página** a continuación, seleccione **Propiedades de página...**
+1. En la barra de tareas, abra **Página** pestaña y seleccione **Propiedades de página...**
 
-   Se abre un cuadro de diálogo con varias fichas.
+   Esto abre un cuadro de diálogo con varias pestañas.
 
-1. Realice los cambios que necesite y haga clic en **OK** para guardar.
+1. Realice los cambios necesarios y haga clic en **OK** para guardar.

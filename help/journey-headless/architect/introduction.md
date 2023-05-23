@@ -1,6 +1,6 @@
 ---
-title: recorrido de arquitectos de contenido sin encabezado de Adobe Experience Manager
-description: Introducción a las funciones potentes, flexibles y sin encabezado de Adobe Experience Manager y cómo modelar el contenido de su proyecto.
+title: Recorrido de arquitectos de contenido de Adobe Experience Manager Headless
+description: Introducción a las potentes y flexibles funciones sin encabezado de Adobe Experience Manager y a cómo diseñar contenido para su proyecto.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 88%
 
 # Modelado de contenido para Headless con AEM: introducción {#architect-headless-introduction}
 
-En esta parte del [recorrido de arquitecto de contenido sin encabezado de AEM](overview.md), puede conocer los conceptos (básicos) y la terminología necesarios para comprender el modelado de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager (AEM).
+En esta parte del [AEM Recorrido de arquitectos de contenido sin encabezado](overview.md), puede aprender los conceptos (básicos) y la terminología necesarios para comprender el modelado de contenido para la entrega de contenido sin encabezado con Adobe Experience Manager AEM ().
 
 Este documento le ayuda a comprender la entrega de contenido sin encabezado, cómo AEM admite sin encabezado y cómo se modela el contenido para que no tenga encabezado. Después de leer, debería haber logrado lo siguiente:
 
@@ -68,7 +68,7 @@ Se trata más bien de un detalle de desarrollo, pero puede interesarle para comp
 
 Una vez que haya creado los modelos de fragmento de contenido y que los autores los hayan utilizado para generar el contenido, las aplicaciones sin encabezado tendrán que acceder a este contenido.
 
-Adobe Experience Manager (AEM) puede acceder selectivamente a sus fragmentos de contenido mediante la API de GraphQL de AEM para devolver solo el contenido necesario. Con la API, un desarrollador puede formular consultas que seleccionan contenido específico. Este proceso de selección se basa en *sus* Modelos de fragmento de contenido.
+Adobe Experience Manager AEM AEM () puede acceder de forma selectiva a sus fragmentos de contenido mediante la API de GraphQL de la aplicación de la para devolver solo el contenido necesario. Con la API, un desarrollador puede formular consultas que seleccionan contenido específico. Este proceso de selección se basa en *sus* Modelos de fragmento de contenido.
 
 Esto significa que el proyecto puede realizar una entrega sin encabezado de contenido estructurado para usarlo en las aplicaciones.
 

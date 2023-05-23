@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Información general {#overview}
 
-AEM AEM La extensión de brackets proporciona un flujo de trabajo fluido para editar componentes de y bibliotecas de cliente, y aprovecha la potencia de la [Corchetes](https://brackets.io/) editor de código, que proporciona acceso desde el editor de código a los archivos y capas de Photoshop. AEM La fácil sincronización que proporciona la extensión (no se requiere Maven ni File Vault) aumenta la eficacia del desarrollador y también ayuda a los desarrolladores de front-end con conocimientos limitados a participar en proyectos. Esta extensión también proporciona cierta compatibilidad con el [Lenguaje de plantilla de HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), que elimina la complejidad de JSP para que el desarrollo de componentes sea más fácil y seguro.
+AEM AEM La extensión de brackets proporciona un flujo de trabajo fluido para editar componentes de y bibliotecas de cliente, y aprovecha la potencia de la [Corchetes](https://brackets.io/) editor de código, que proporciona acceso desde el editor de código a los archivos y capas de Photoshop. AEM La fácil sincronización que proporciona la extensión (no se requiere Maven ni File Vault) aumenta la eficacia del desarrollador y también ayuda a los desarrolladores de front-end con conocimientos limitados a participar en proyectos. Esta extensión también proporciona cierta compatibilidad con el [Lenguaje de plantilla de HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es), que elimina la complejidad de JSP para que el desarrollo de componentes sea más fácil y seguro.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 

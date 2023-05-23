@@ -31,7 +31,7 @@ AEM SPA AEM.1 1 soporta la construcción y gestión de los recursos de las aplic
 
 ## SPA AEM en aplicaciones de {#spa-in-aem-apps}
 
-AEM El marco de aplicación de una sola página en las aplicaciones de permite el alto rendimiento de una aplicación AngularJS, a la vez que permite a los autores (u otro personal no técnico) crear y administrar el contenido de la aplicación mediante el entorno de editor de arrastrar y soltar optimizado para el contacto que tradicionalmente se ha reservado para administrar sitios web. AEM ¿Ya tiene un sitio creado con la opción de creación de la? AEM Verá que reutilizar el contenido, los componentes, los flujos de trabajo, los recursos y los permisos es fácil con las aplicaciones de la red de aplicaciones de Adobe (App) de Adobe (App).
+AEM El marco de aplicación de una sola página en las aplicaciones de permite el alto rendimiento de una aplicación AngularJS, a la vez que permite a los autores (u otro personal no técnico) crear y administrar el contenido de la aplicación mediante el entorno de editor de arrastrar y soltar optimizado para el contacto que tradicionalmente se ha reservado para administrar sitios web. AEM ¿Ya tiene un sitio creado con la opción de creación de la? AEM Verá que reutilizar el contenido, los componentes, los flujos de trabajo, los recursos y los permisos es fácil con las aplicaciones de la red de aplicaciones de Adobe (App) de Adobe.
 
 ## Módulo de aplicación AngularJS {#angularjs-application-module}
 

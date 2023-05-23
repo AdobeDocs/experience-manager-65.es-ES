@@ -28,7 +28,7 @@ AEM Para los informes estándar entregados con la ayuda de:
 
 * Estos informes se basan en el marco de informes:
 
-   * [Informe de componentes](/help/sites-administering/reporting.md#component-report)
+   * [Informe sobre componentes](/help/sites-administering/reporting.md#component-report)
    * [Informe de actividad de la página](/help/sites-administering/reporting.md#page-activity-report)
    * [Informe del usuario](/help/sites-administering/reporting.md#user-report)
    * [Informe de instancia de flujo de trabajo](/help/sites-administering/reporting.md#workflow-instance-report)

@@ -14,7 +14,7 @@ exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '784'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ La interfaz de usuario original para Adobe Experience Manager AEM (anteriormente
 
 El Adobe recomienda a los clientes que planifiquen el cambio a la nueva interfaz de usuario en 2018/19. Esto se puede hacer durante la actualización a 6.5 o en un proyecto independiente después de la actualización, que incluiría los ajustes necesarios en las personalizaciones y los cuadros de diálogo de componentes.
 
-AEM La IU clásica ha quedado obsoleta con la versión 6.4 de y Adobe no tiene previsto realizar más mejoras en la IU clásica. Tenga en cuenta que la interfaz de usuario clásica será totalmente compatible mientras esté en desuso.
+AEM La IU clásica ha quedado obsoleta con la versión 6.4 de y Adobe no tiene previsto realizar más mejoras en la IU clásica. Tenga en cuenta que la IU clásica sigue siendo totalmente compatible mientras está en desuso.
 
 ### Reglas y Recommendations {#rules-and-recommendations}
 

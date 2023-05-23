@@ -63,7 +63,7 @@ AEM En una instalación estándar se requiere una implementación específica, p
 |---|---|
 | `cq:commerceProvider = geometrixx` | ejemplo de geometrixx; incluye extensiones mínimas a la API genérica |
 
-### Ejemplo {#example}
+### Ejemplos {#example}
 
 ```shell
 /etc/commerce/products/geometrixx-outdoors
@@ -261,7 +261,7 @@ public class AxisFilter implements VariantFilter {
    * La interfaz de producto representa productos y variantes, pero el nodo de repositorio relacionado es específico sobre cuál es.
    * El nodo de producto describe los atributos de producto y los ejes de variante.
 
-#### Ejemplo {#example-1}
+#### Ejemplos {#example-1}
 
 ```shell
 + banyan_shirt

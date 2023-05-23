@@ -38,7 +38,7 @@ Todas las funcionalidades se implementan utilizando los servicios web nativos de
 >
 >La instalación, configuración, administración y operaciones de TI del servidor de SharePoint y la infraestructura de TI relacionada están fuera del ámbito de este documento. Consulte la documentación del proveedor sobre [SharePoint](https://www.microsoft.com/sharepoint) para obtener información acerca de estos temas. El conector requiere que estas partes de la infraestructura se instalen, configuren y operen correctamente.
 
-## Introducción {#getting-started}
+## Primeros pasos {#getting-started}
 
 Para empezar a usar el conector, haga lo siguiente:
 
@@ -215,7 +215,7 @@ Ir a: [http://localhost:4502/system/console/bundles](http://localhost:4502/syste
 1. Ir a [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 1. Haga clic en OSGI > Configuración.
 1. Buscar por **Conector JCR de día para Microsoft Sharepoint**.
-1. Haga clic `Edit the configuration values`.
+1. Haga clic en `Edit the configuration values`.
 1. Establezca el valor de la Fábrica de conexiones de Sharepoint en `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
 1. Haga clic en **Guardar**.
 

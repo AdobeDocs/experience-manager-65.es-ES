@@ -13,7 +13,7 @@ exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 25%
+ht-degree: 0%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 25%
 
 AEM ha integrado la solución de páginas de aterrizaje de con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) mediante los siguientes componentes de llamada a la acción (CTA):
 
-1. Componente de pulsaciones
-1. Componente de vínculo gráfico
+1. Componente Clic
+1. Componente Vínculo gráfico
 
 Estos componentes exponen ciertos atributos que se pueden asignar a través de variables de Adobe Analytics (tráfico, variables de conversión) y eventos de éxito para enviar información a Adobe Analytics.
 
@@ -30,7 +30,7 @@ Estos componentes exponen ciertos atributos que se pueden asignar a través de v
 
 El Adobe recomienda que revise las [AEM integración existente con Adobe Analytics](/help/sites-administering/adobeanalytics.md) para comprender cómo funciona esta integración.
 
-## Componentes que se pueden asignar {#components-available-for-mapping}
+## Componentes disponibles para asignación {#components-available-for-mapping}
 
 AEM En el caso de los **Llamada a acción** componentes - **ClickThroughLink** y **GraphicalLink** : mostrado aquí en la barra de tareas, se puede asignar a variables de Adobe Analytics.
 
@@ -41,7 +41,7 @@ AEM En el caso de los **Llamada a acción** componentes - **ClickThroughLink** y
 Para asignar componentes de página de aterrizaje a Adobe Analytics:
 
 1. Después de crear la configuración de Adobe Analytics y de crear una nueva estructura, seleccione el grupo de informes adecuado en el menú desplegable. Esto hace que se recuperen las variables de Adobe Analytics y se muestren en el buscador de contenido.
-1. Arrastre los componentes de llamada a acción de la barra de tareas y suéltelos en el área de asignación situada en la parte central de la página, como convenga.
+1. Arrastre y suelte los componentes de llamada a la acción (CTA) de la barra de tareas en el área de asignación situada en el centro de la página, según corresponda.
 
 <table>
  <tbody>
@@ -51,9 +51,9 @@ Para asignar componentes de página de aterrizaje a Adobe Analytics:
    <td><strong>Significado del atributo</strong></td>
   </tr>
   <tr>
-   <td><strong>Llamada a acción: vínculo de pulsaciones</strong></td>
+   <td><strong>Vínculo de pulsación CTA</strong></td>
    <td><i>eventdata.clickthroughLinkLabel</i> <br /> </td>
-   <td>La etiqueta en el vínculo o el texto del vínculo </td>
+   <td>La etiqueta del vínculo o el texto del vínculo </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
@@ -63,33 +63,33 @@ Para asignar componentes de página de aterrizaje a Adobe Analytics:
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.events.clickthroughLinkClick</i> <br /> </td>
-   <td>Evento de clic </td>
+   <td>El evento de clic </td>
   </tr>
   <tr>
-   <td><strong>Llamada a acción: vínculo gráfico</strong></td>
+   <td><strong>Vínculo gráfico de CTA</strong></td>
    <td><i>eventdata.clicktroughImageLabel</i> <br /> </td>
    <td>El título de la imagen de CTA </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clickthroughImageTarget</i> <br /> </td>
-   <td>Destino al que se dirigirá el usuario cuando haga clic en la imagen que contenga un vínculo</td>
+   <td>El destino al que se le lleva al hacer clic en la imagen que contiene un vínculo</td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.clickthroughImageAsset</i> <br /> </td>
-   <td>Ruta al recurso de imagen en el repositorio </td>
+   <td>La ruta al recurso de imagen en el repositorio </td>
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
    <td><i>eventdata.events.clickthroughImageClick</i> <br /> </td>
-   <td>Evento de clic</td>
+   <td>El evento de clic</td>
   </tr>
  </tbody>
 </table>
 
 1. Asigne estos atributos expuestos con cualquier variable de Adobe Analytics desde el buscador de contenido. El marco de trabajo ya está listo para usarse.
-1. Ahora puede crear una nueva página de aterrizaje o abrir una existente con componentes de CTA existentes y hacer clic en **Cloud Services** pestaña en **Propiedades de página** en la barra de tareas (en la IU táctil optimizada, seleccione **Abrir propiedades** y haga clic en **Cloud Services**) y configure el marco de trabajo para utilizarlo con la página de aterrizaje. Seleccione la estructura de la lista desplegable.
+1. Ahora puede crear una nueva página de aterrizaje o abrir una existente con componentes de CTA existentes y hacer clic en **Cloud Services** pestaña en **Propiedades de página** en la barra de tareas (en la IU táctil optimizada, seleccione **Abrir propiedades** y haga clic en **Cloud Services**) y configure el marco de trabajo para utilizarlo con la página de aterrizaje. Seleccione el marco de trabajo de la lista desplegable.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

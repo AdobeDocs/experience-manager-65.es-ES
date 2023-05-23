@@ -34,7 +34,7 @@ Asegúrese de instalar el paquete de servicio y el paquete adecuados según sea 
 |--- |--- |
 | Asset Link funciona de forma predeterminada | Experience Manager 6.5 y 6.5.2 o posterior. </br> Experience Manager 6.4.4 y 6.4.6 o posterior. </br> Adobe recomienda instalar la última [Service Pack (SP) de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=es) antes de usar AAL. |
 | Asset Link funciona después de instalar un paquete | Para el Experience Manager 6.4.0 - 6.4.3, instale [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) paquete. |
-| Integración con Adobe Stock | Experience Manager 6.4.2 o posterior |
+| Integración de Adobe Stock | Experience Manager 6.4.2 o posterior |
 | Búsqueda visual o por similitud | Experience Manager 6.5.0 o posterior |
 
 

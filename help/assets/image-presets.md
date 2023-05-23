@@ -13,7 +13,7 @@ exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
 source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 5%
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,7 @@ Puede aplicar un ajuste preestablecido de imagen a una imagen cada vez que la pr
 
    ![chlimage_1-208](assets/chlimage_1-208.png)
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Seleccione una representación dinámica para poder previsualizar el ajuste preestablecido de imagen.
    * Para mostrar la ventana emergente, seleccione **[!UICONTROL URL]**, **[!UICONTROL Incrustar]**, o **[!UICONTROL RESS]**.

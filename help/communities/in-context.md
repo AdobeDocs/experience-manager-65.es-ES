@@ -38,7 +38,7 @@ La interfaz de usuario presentada al moderador en la instancia de publicación s
 1. Ha iniciado sesión, pero no es administrador, moderador ni autor del contenido.
 1. No se ha iniciado sesión.
 
-## Ejemplo {#example}
+## Ejemplos {#example}
 
 Uso del [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) sitio creado cuando [Introducción a AEM Communities](getting-started.md)Sin embargo, es posible configurar rápidamente un hilo en un foro en el que experimentar varias actividades de moderación en el entorno de publicación, como se ve a continuación.
 

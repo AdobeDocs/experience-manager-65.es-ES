@@ -344,7 +344,7 @@ Añada una imagen al contenido de la aplicación.
 
 Añada texto enriquecido al contenido de la aplicación.
 
-### Ubicaciones de almacenes de campañas {#store-locations}
+### Ubicaciones de las tiendas {#store-locations}
 
 El componente Ubicaciones de almacenamiento proporciona a los usuarios herramientas para encontrar salidas comerciales:
 

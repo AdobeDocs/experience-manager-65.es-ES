@@ -58,8 +58,8 @@ Por ejemplo, para exportar el UGC de un usuario llamado Weston McCall, que utili
 
 Por ejemplo, para eliminar el UGC de un usuario con un ID autorizable weston.mccall@dodgit.com a través de una solicitud http-POST, utilice los siguientes parámetros:
 
-* user = `weston.mccall@dodgit.com`
-* operation = `deleteUgc`
+* usuario = `weston.mccall@dodgit.com`
+* operación = `deleteUgc`
 
 ### Eliminar UGC de Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
@@ -81,8 +81,8 @@ Para las asignaciones de variables de Adobe Analytics utilizadas por AEM Communi
 
 Por ejemplo, para eliminar el perfil de un usuario que tiene un ID autorizado `weston.mccall@dodgit.com` a través de la solicitud http-POST, utilice los siguientes parámetros:
 
-* user = `weston.mccall@dodgit.com`
-* operation = `deleteUser`
+* usuario = `weston.mccall@dodgit.com`
+* operación = `deleteUser`
 
 >[!NOTE]
 >

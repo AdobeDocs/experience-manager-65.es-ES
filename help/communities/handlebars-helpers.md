@@ -115,7 +115,7 @@ Un asistente puede agregar dos espacios bajo un div, uno para el texto completo 
 
    (Opcional) Valor booleano que indica si se debe aplicar Handlebars.SafeString() antes de devolver el resultado. El valor predeterminado es false.
 
-### Ejemplo {#example}
+### Ejemplos {#example}
 
 ```
 {{content-loadmore  context numChars=32  moreText="go on"  ellipsesText="..." }}
@@ -171,7 +171,7 @@ Un asistente para devolver contenido en función de un condicional de igualdad.
 
    El valor de la derecha que se va a comparar.
 
-### Ejemplo {#example-1}
+### Ejemplos {#example-1}
 
 ```
 {{#equals  value "some-value"}}
@@ -195,7 +195,7 @@ Un asistente de bloque que prueba el valor actual de [Modo WCM](https://helpx.ad
 
    (Opcional) Una lista separada por comas de [Modos WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) para comprobar si está configurado.
 
-### Ejemplo {#example-2}
+### Ejemplos {#example-2}
 
 ```xml
 {{#if-wcm-mode mode="DESIGN, EDIT"}}
@@ -225,7 +225,7 @@ Consulte también [Internacionalización de cadenas en código JavaScript](../..
 
    (Opcional) Una sugerencia de traducción
 
-### Ejemplo {#example-3}
+### Ejemplos {#example-3}
 
 ```
 {{i18n "hello"}}
@@ -268,7 +268,7 @@ Este asistente, que solo es adecuado en el lado del servidor, proporciona una fu
 
    (Opcional) El valor predeterminado es falso. Solo para uso interno.
 
-### Ejemplo {#example-4}
+### Ejemplos {#example-4}
 
 ```
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
@@ -359,7 +359,7 @@ Por ejemplo:
 
    Número de días transcurridos antes de cambiar a una fecha real. El valor predeterminado es 60.
 
-### Ejemplo {#example-5}
+### Ejemplos {#example-5}
 
 ```
 {{pretty-time this.published daysCutoff=7}}
@@ -387,7 +387,7 @@ NOTA: no es un validador y no se debe utilizar para escribir valores de atributo
 
    HTML que se va a codificar.
 
-### Ejemplo {#example-6}
+### Ejemplos {#example-6}
 
 ```
 <p>{{xss-html forum-ugc}}</p>
@@ -405,7 +405,7 @@ NOTA: no es un validador y no debe utilizarse para escribir atributos procesable
 
    HTML que se va a codificar.
 
-### Ejemplo {#example-7}
+### Ejemplos {#example-7}
 
 ```
 <div id={{xss-htmlAttr id}} />
@@ -423,7 +423,7 @@ NOTA: este no es un validador y no debe usarse para escribir en JavaScript arbit
 
    HTML que se va a codificar.
 
-### Ejemplo {#example-8}
+### Ejemplos {#example-8}
 
 ```
 var input = {{xss-jsString topic-title}}
@@ -441,7 +441,7 @@ NOTA: esto puede devolver una cadena vacía
 
    Dirección URL para sanear.
 
-### Ejemplo {#example-9}
+### Ejemplos {#example-9}
 
 ```
 <a href="{{xss-validHref url}}">my link</a>

@@ -1,7 +1,7 @@
 ---
-title: Visualización de datos de análisis de página para medir la eficacia del contenido de la página
+title: Ver datos de análisis de página para medir la eficacia del contenido de la página
 seo-title: Seeing Page Analytics Data
-description: Utilice los datos de análisis de la página para medir la eficacia del contenido de la página
+description: Utilice datos de análisis de página para medir la eficacia del contenido de su página
 seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 5398a5d5-0239-4194-a403-77f5e6fcd741
 contentOwner: Guillaume Carlino
@@ -21,56 +21,56 @@ ht-degree: 12%
 
 # Visualización de datos de análisis de la página{#seeing-page-analytics-data}
 
-Utilice los datos de análisis de la página para medir la eficacia del contenido de la página.
+Utilice datos de análisis de página para medir la eficacia del contenido de la página.
 
 ## Analytics visible desde la consola {#analytics-visible-from-the-console}
 
 ![spad-01](assets/spad-01.png)
 
-Los datos de análisis de página se muestran en [Vista de lista](/help/sites-authoring/basic-handling.md#list-view) de la consola Sitios . Cuando las páginas se muestran en formato de lista, las siguientes columnas están disponibles de forma predeterminada:
+Los datos de análisis de página se muestran en [Vista de lista](/help/sites-authoring/basic-handling.md#list-view) de la consola Sitios. Cuando las páginas se muestran en formato de lista, las siguientes columnas están disponibles de forma predeterminada:
 
 * Vistas de la página
 * Visitantes únicos
 * Tiempo empleado en la página
 
-Cada columna muestra un valor para el período de informe actual y también indica si el valor ha aumentado o disminuido desde el período de informe anterior. Los datos que ve se actualizan cada 12 horas.
+Cada columna muestra un valor para el período de informe actual e indica si el valor ha aumentado o disminuido desde el período de informe anterior. Los datos que ve se actualizan cada 12 horas.
 
 >[!NOTE]
 >
 >Para cambiar el periodo de actualización, [configuración del intervalo de importación](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Abra el **Sitios** consola; por ejemplo [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
-1. En el extremo derecho de la barra de herramientas (esquina superior derecha), toque o haga clic en el icono para seleccionar **Vista de lista** (el icono mostrado dependerá de la variable [vista actual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Abra el **Sites** consola; por ejemplo [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
+1. En el extremo derecho de la barra de herramientas (esquina superior derecha), toque o haga clic en el icono para seleccionar **Vista de lista** (el icono mostrado dependerá del [vista actual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. De nuevo, en el extremo derecho de la barra de herramientas (esquina superior derecha), toque o haga clic en el icono y seleccione **Configuración de vista**. La variable **Configurar columnas** se abrirá. Realice los cambios necesarios y confirme con **Actualizar**.
+1. De nuevo, en el extremo derecho de la barra de herramientas (esquina superior derecha), toque o haga clic en el icono y seleccione **Configuración de vista**. El **Configurar columnas** se abrirá. Realice los cambios necesarios y confirme con **Actualizar**.
 
    ![spad-02](assets/spad-02.png)
 
 ### Selección del período de informe {#selecting-the-reporting-period}
 
-Seleccione el período de informe para el que los datos de Analytics aparecen en la consola Sitios :
+Seleccione el período de informe para el que aparecen los datos de Analytics en la consola Sitios:
 
 * Datos de los últimos 30 días
 * Datos de los últimos 90 días
 * Datos de este año
 
-El período de informe actual aparece en la barra de herramientas de la consola Sitios (a la derecha de la barra de herramientas superior). Utilice la lista desplegable para seleccionar el período de informe requerido.
+El periodo de informe actual aparece en la barra de herramientas de la consola Sitios (a la derecha de la barra de herramientas superior). Utilice la lista desplegable para seleccionar el periodo de informe requerido.
 
 ![aa-05](assets/aa-05.png)
 
-### Configuración de las columnas de datos disponibles {#configuring-available-data-columns}
+### Configuración de columnas de datos disponibles {#configuring-available-data-columns}
 
-Los miembros del grupo de usuarios administradores de análisis pueden configurar la consola Sitios para permitir que los autores vean columnas de Analytics adicionales.
+Los miembros del grupo de usuarios administradores de Analytics pueden configurar la consola Sitios para permitir que los autores vean columnas de Analytics adicionales.
 
 >[!NOTE]
 >
->Cuando un árbol de páginas contiene elementos secundarios asociados a distintas configuraciones de nube de Adobe Analytics, no se pueden configurar las columnas de datos disponibles para las páginas.
+>Cuando un árbol de páginas contiene elementos secundarios asociados con diferentes configuraciones de nube de Adobe Analytics, no se pueden configurar las columnas de datos disponibles para las páginas.
 
-1. En la vista de lista, utilice los selectores de vista (derecha de la barra de herramientas) y seleccione **Configuración de vista** y luego **Añadir datos de análisis personalizados**.
+1. En Vista de lista, utilice los selectores de vista (a la derecha de la barra de herramientas), seleccione **Configuración de vista** y luego **Añadir datos personalizados de Analytics**.
 
    ![spad-03](assets/spad-03.png)
 
-1. Seleccione las métricas que desee exponer a los autores en la consola Sitios y, a continuación, haga clic en **Agregar**.
+1. Seleccione las métricas que desea exponer a los autores en la consola Sitios y, a continuación, haga clic en **Añadir**.
 
    Las columnas que aparecen se recuperan de Adobe Analytics.
 
@@ -78,17 +78,17 @@ Los miembros del grupo de usuarios administradores de análisis pueden configura
 
 ### Apertura de perspectivas de contenido desde sitios {#opening-content-insights-from-sites}
 
-Apertura [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
+Abrir [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desde la consola Sitios para investigar más a fondo la eficacia de la página.
 
-1. En la consola Sitios , seleccione la página para la que desea ver Perspectivas de contenido.
-1. En la barra de herramientas, haga clic en el icono Analytics y Recommendations .
+1. En la consola Sitios, seleccione la página para la que desea ver las perspectivas de contenido.
+1. En la barra de herramientas, haga clic en el icono Analytics y Recommendations.
 
    ![](do-not-localize/chlimage_1-14.png)
 
-## Analytics visible desde el Editor de páginas (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
+## Analytics visible desde el editor de páginas (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
 >
->La variable [Complemento Activity Map proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es) debe usarse ahora.
+>El [Complemento Activity Map proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es) debería utilizarse ahora.

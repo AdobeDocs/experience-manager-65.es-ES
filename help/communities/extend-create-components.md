@@ -123,7 +123,7 @@ Uso de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
    * Modifique para incluir el componente de comentario personalizado (línea 75):
 
       * Replace `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
-      * Mediante una de las opciones siguientes `{{include this resourceType='/apps/custom/components/comments/comment'}}`
+      * Con `{{include this resourceType='/apps/custom/components/comments/comment'}}`
 
 
 * Copie `comment.hbs`

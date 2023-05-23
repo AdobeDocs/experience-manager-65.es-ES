@@ -22,7 +22,7 @@ Para procesar archivos de gran tamaño con ImageMagick, tenga en cuenta los requ
 
 >[!NOTE]
 >
->Si está utilizando [!DNL Experience Manager] el [!DNL Adobe Managed Services] (AMS), póngase en contacto con el Servicio de atención al cliente de Adobe si tiene pensado procesar muchos archivos de PSD de alta resolución o PSB. [!DNL Experience Manager] puede que no procese archivos PSB de muy alta resolución que tengan más de 30000 x 23000 píxeles.
+>Si está utilizando [!DNL Experience Manager] el [!DNL Adobe Managed Services] (AMS), póngase en contacto con el Servicio de atención al cliente de Adobe si tiene pensado procesar muchos archivos de PSD de alta resolución o PSB. [!DNL Experience Manager]Es posible que el no procese archivos PSB de muy alta resolución que tengan más de 30000 x 23000 píxeles. 
 
 ## Instalar ImageMagick {#installing-imagemagick}
 
@@ -56,7 +56,7 @@ Puede configurar el paso del proceso de la línea de comandos para su caso de us
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
-1. Haga clic en **[!UICONTROL Aceptar]** para guardar los cambios.
+1. Clic **[!UICONTROL OK]** para guardar los cambios.
 
    >[!NOTE]
    >
@@ -69,7 +69,7 @@ Puede configurar el paso del proceso de la línea de comandos para su caso de us
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. En el **[!UICONTROL Imagen Web]** pestaña, añada el tipo MIME `image/jpeg` en el **[!UICONTROL Lista para omitir]**. Haga clic en **[!UICONTROL Aceptar]** para guardar los cambios.
+1. En el **[!UICONTROL Imagen Web]** pestaña, añada el tipo MIME `image/jpeg` en el **[!UICONTROL Lista para omitir]**. Clic **[!UICONTROL OK]** para guardar los cambios.
 
    ![web_enabled](assets/web_enabled.png)
 

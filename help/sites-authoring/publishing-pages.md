@@ -1,6 +1,6 @@
 ---
 title: Publicación de páginas de contenido
-description: Aprenda a publicar páginas de contenido.
+description: Obtenga información sobre cómo publicar páginas de contenido.
 uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -20,9 +20,9 @@ ht-degree: 59%
 
 Después de crear y revisar el contenido en el entorno de creación, [haga que esté disponible en su sitio web público](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (su entorno de publicación).
 
-Esto se conoce como publicación de una página. Cuando desea eliminar una página del entorno de publicación, se denomina cancelación de publicación. Al publicar y cancelar la publicación, la página permanece disponible en el entorno de creación para realizar más cambios hasta que la elimine.
+Esto se conoce como publicación de una página. Cuando desee eliminar una página del entorno de publicación, se denomina cancelación de publicación. Al publicar y cancelar la publicación, la página permanece disponible en el entorno de creación para realizar más cambios hasta que la elimine.
 
-También puede publicar una página o cancelar su publicación inmediatamente o en un momento posterior predefinido.
+También puede publicar una página (o cancelar su publicación) inmediatamente o en un momento posterior predefinido.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ También puede publicar una página o cancelar su publicación inmediatamente o 
    >  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
 >* **Replicar o replicación**
-   >  Son los términos técnicos que describen el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar a la inversa los comentarios del usuario.
+   >  Son los términos técnicos que describen el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro, como al publicar o replicar de forma inversa comentarios del usuario.
 >
 
 
@@ -43,15 +43,15 @@ También puede publicar una página o cancelar su publicación inmediatamente o 
 >
 >Si no tiene los privilegios necesarios para publicar una página específica:
 >
->* Se activará un flujo de trabajo para notificar a la persona adecuada la solicitud de publicación.
->* Esta [es posible que el flujo de trabajo se haya personalizado](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) por su equipo de desarrollo.
+>* Se activará un flujo de trabajo para notificar a la persona adecuada su solicitud de publicación.
+>* Esta [el flujo de trabajo puede haberse personalizado](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) por parte de su equipo de desarrollo.
 >* Se mostrará brevemente un mensaje para notificarle que el flujo de trabajo se ha activado.
 >
 
 
 ## Publicar páginas {#publishing-pages-1}
 
-Según la ubicación, puede publicar:
+Según su ubicación, puede publicar lo siguiente:
 
 * [Desde el editor de páginas](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
 * [Desde la consola Sitios](/help/sites-authoring/publishing-pages.md#publishing-from-the-console)
@@ -73,7 +73,7 @@ Si está editando una página, puede publicarla directamente desde el editor.
 
       * Utilizar **Cancelar** para anular la acción.
 
-   ![imagen_1](assets/chlimage_1.png)
+   ![chlimage_1](assets/chlimage_1.png)
 
 1. Si selecciona **Publicar**, se replicará la página en el entorno de publicación. En el editor de páginas se mostrará un mensaje que confirma la acción de publicación.
 
@@ -108,15 +108,15 @@ Para publicar una página con Publicación rápida:
 
    ![pp-02](assets/pp-02.png)
 
-1. En el cuadro de diálogo Publicación rápida, confirme la publicación haciendo clic en **Publicación** o cancelar haciendo clic en **Cancelar**. Recuerde que cualquier referencia sin publicar se publicará también automáticamente.
+1. En el diálogo Publicación rápida, confirme la publicación haciendo clic en **Publish** o cancele haciendo clic en **Cancelar**. Recuerde que cualquier referencia sin publicar se publicará también automáticamente.
 
-   ![Chlimage_1-1](assets/chlimage_1-1.png)
+   ![chlimage_1-1](assets/chlimage_1-1.png)
 
 1. Cuando se publica la página, se muestra una alerta que confirma la publicación.
 
 >[!NOTE]
 >
->Publicación rápida no es profunda; es decir, solo se publica la página o páginas seleccionadas y no las páginas secundarias.
+>Publicación rápida es una publicación superficial, es decir, solo se publica la página o páginas seleccionadas y no las páginas secundarias.
 
 #### Administrar publicación     {#manage-publication}
 
@@ -133,15 +133,15 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
    * Elija si publica o cancela la publicación de las páginas seleccionadas.
    * Elija realizar esa acción ahora o en una fecha posterior.
 
-   La publicación posterior inicia un flujo de trabajo para publicar la página o páginas seleccionadas a la hora especificada. Por el contrario, cancelar la publicación inicia más tarde un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas a una hora específica.
+   La publicación inicia posteriormente un flujo de trabajo para publicar la página o páginas seleccionadas a la hora especificada. Por el contrario, cancelar la publicación más adelante inicia un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas en un momento específico.
 
    Si desea cancelar una acción de publicación/cancelación de la publicación posteriormente, vaya a la [consola Flujo de trabajo](/help/sites-administering/workflows.md) para finalizar el flujo de trabajo correspondiente.
 
-   ![Chlimage_1-2](assets/chlimage_1-2.png)
+   ![chlimage_1-2](assets/chlimage_1-2.png)
 
    Haga clic en **Siguiente** para continuar.
 
-1. En el siguiente paso del asistente Administrar publicación , **Ámbito**, puede definir el ámbito de la publicación/cancelación de publicación, por ejemplo, si se incluyen páginas secundarias o referencias.
+1. En el siguiente paso del asistente Administrar publicación, **Ámbito**, puede definir el ámbito de la publicación o cancelación de la publicación, por ejemplo, si desea incluir páginas secundarias o referencias.
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
@@ -151,11 +151,11 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    Seleccione las páginas necesarias y, a continuación, haga clic en **Seleccionar** para añadir el contenido al asistente, o Cancelar para cancelar la selección y volver al asistente.
 
-   De nuevo en el asistente, puede seleccionar un elemento de la lista para configurar las siguientes opciones, como:
+   En el asistente, puede seleccionar un elemento de la lista para configurar sus opciones adicionales, como:
 
-   * Incluir sus elementos secundarios.
-   * Quítela de la selección.
-   * Administre sus referencias publicadas.
+   * Incluya a sus elementos secundarios.
+   * Quítelo de la selección.
+   * Administrar sus referencias publicadas.
 
    ![pp-03](assets/pp-03.png)
 
@@ -167,7 +167,7 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    Haga clic en **Añadir** para añadir las páginas secundarias que se van a publicar o dejar de publicar, en función de las opciones de selección. Haga clic en **Cancelar** para cancelar la selección y volver al asistente.
 
-   ![Chlimage_1-3](assets/chlimage_1-3.png)
+   ![chlimage_1-3](assets/chlimage_1-3.png)
 
    Al volver al asistente verá las páginas añadidas en función de su elección de opciones en el cuadro de diálogo Incluir elementos secundarios.
 
@@ -175,9 +175,9 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    ![pp-04](assets/pp-04.png)
 
-   La variable **Referencias publicadas** muestra las referencias para el contenido seleccionado. De forma predeterminada, todas están seleccionadas y se publican o dejan de publicar, pero puede anular la selección de las que no están incluidas en la acción.
+   El **Referencias publicadas** El cuadro de diálogo muestra las referencias para el contenido seleccionado. De forma predeterminada, todas se seleccionan y se publican o dejan de publicar, pero puede desactivar la casilla para deseleccionarlas y que no se incluyan en la acción.
 
-   Haga clic en **Listo** para guardar los cambios o **Cancelar** para cancelar la selección y volver al asistente.
+   Clic **Listo** para guardar los cambios o **Cancelar** para cancelar la selección y volver al asistente.
 
    En el asistente, la columna **Referencias** se actualizará para reflejar su selección de referencias a publicar o dejar de publicar.
 
@@ -191,17 +191,17 @@ Para publicar o cancelar la publicación de una página con Administrar publicac
 
    >[!NOTE]
    >
-   >El paso **Flujos de trabajo** se muestra o no en función de los derechos del usuario. Consulte la [nota anterior en esta página](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) con respecto a los privilegios de publicación, así como [Administración del acceso a los flujos de trabajo](/help/sites-administering/workflows-managing.md) y [Aplicación de flujos de trabajo a páginas](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) para obtener más información.
+   >El paso **Flujos de trabajo** se muestra o no en función de los derechos del usuario. Consulte la [nota anterior en esta página](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) sobre los privilegios de publicación, así como [Administración del acceso a los flujos de trabajo](/help/sites-administering/workflows-managing.md) y [Aplicación de flujos de trabajo a páginas](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) para obtener más información.
 
-   Los recursos se agrupan por los flujos de trabajo activados y cada uno de ellos tiene opciones para:
+   Los recursos se agrupan por los flujos de trabajo activados y cada una de las opciones dadas para:
 
    * Defina el título del flujo de trabajo.
-   * Mantener el paquete del flujo de trabajo, siempre que el flujo de trabajo tenga [compatibilidad con varios recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+   * Mantener el paquete del flujo de trabajo, siempre que este tenga [compatibilidad con varios recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * Definir un título para el paquete de flujos de trabajo si se eligió la opción para mantener dicho paquete.
 
    Haga clic en **Publicar** o **Publicar más tarde** para completar la publicación.
 
-   ![Chlimage_1-4](assets/chlimage_1-4.png)
+   ![chlimage_1-4](assets/chlimage_1-4.png)
 
 ## Cancelar la publicación de páginas {#unpublishing-pages}
 
@@ -227,7 +227,7 @@ Al igual que [utiliza la opción Administrar publicación para publicar](/help/s
 1. Seleccione la página o páginas en la consola Sitios y haga clic en el botón **Administrar publicación**.
 1. Se inicia el asistente **Administrar publicación**. En el primer paso, **Opciones**, seleccione **Cancelar publicación** en lugar de la opción predeterminada **Publicar**.
 
-   ![Chlimage_1-5](assets/chlimage_1-5.png)
+   ![chlimage_1-5](assets/chlimage_1-5.png)
 
    Igual que posponer la publicación inicia un flujo de trabajo para publicar esta versión de la página en el momento especificado, desactivar más tarde inicia un flujo de trabajo para cancelar la publicación de la página o páginas seleccionadas en un momento concreto.
 
@@ -237,32 +237,32 @@ Al igual que [utiliza la opción Administrar publicación para publicar](/help/s
 
 ## Publicar y cancelar la publicación de un árbol {#publishing-and-unpublishing-a-tree}
 
-Cuando haya introducido o actualizado una cantidad considerable de páginas de contenido (todas ellas residentes dentro de la misma página raíz), puede ser más fácil publicar el árbol completo con una sola acción.
+Cuando ha introducido o actualizado un número considerable de páginas de contenido (todas ellas residentes en la misma página raíz), puede resultar más fácil publicar todo el árbol en una acción.
 
 Para hacerlo, puede utilizar la opción [Administrar publicación](/help/sites-authoring/publishing-pages.md#manage-publication) de la consola Sitios.
 
 1. En la consola Sitios, seleccione la página raíz de árbol que desea publicar o dejar de publicar y seleccione **Administrar publicación**.
-1. Se inicia el asistente **Administrar publicación**. Elija si desea publicar o cancelar la publicación y cuándo debería producirse y seleccione **Siguiente** para continuar.
-1. En el **Ámbito** paso, seleccione la página raíz y seleccione **Incluir elementos secundarios**.
+1. Se inicia el asistente **Administrar publicación**. Elija si publica o cancela la publicación y cuándo debe producirse, y seleccione **Siguiente** para continuar.
+1. En el **Ámbito** , seleccione la página raíz y seleccione **Incluir elementos secundarios**.
 
-   ![Chlimage_1-6](assets/chlimage_1-6.png)
+   ![chlimage_1-6](assets/chlimage_1-6.png)
 
 1. En el **Incluir elementos secundarios** , desmarque las opciones:
 
    * Incluir solo los elementos secundarios inmediatos
    * Incluir solo las páginas ya publicadas
 
-   Estas opciones están seleccionadas de forma predeterminada, por lo que debe recordar desseleccionarlas. Haga clic en **Agregar** para confirmar y añadir el contenido a la publicación/cancelación de publicación.
+   Estas opciones están seleccionadas de forma predeterminada, por lo que debe acordarse de anular su selección. Clic **Añadir** para confirmar y agregar el contenido a la publicación o cancelación de publicación.
 
-   ![Chlimage_1-7](assets/chlimage_1-7.png)
+   ![chlimage_1-7](assets/chlimage_1-7.png)
 
-1. La variable **Administrar publicación** asistente enumera el contenido del árbol para su revisión. Puede personalizar aún más la selección añadiendo páginas adicionales o eliminando las seleccionadas.
+1. El **Administrar publicación** el asistente enumera el contenido del árbol para su revisión. Puede personalizar aún más la selección añadiendo páginas adicionales o eliminando las seleccionadas.
 
    ![screen_shot_2018-03-21at154237](assets/screen_shot_2018-03-21at154237.png)
 
    Recuerde que también puede revisar las referencias que se publican mediante la opción **Referencias publicadas**.
 
-1. [Continúe con el asistente Administrar publicación de forma normal](#manage-publication) para completar la publicación o cancelación de publicación del árbol.
+1. [Continúe con el asistente Administrar publicación normalmente](#manage-publication) para completar la publicación o cancelación de publicación del árbol.
 
 ## Determinar el estado de publicación {#determining-publication-status}
 

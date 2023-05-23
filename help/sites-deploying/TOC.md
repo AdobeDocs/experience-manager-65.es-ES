@@ -11,7 +11,7 @@ role: Architect
 source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 19%
+ht-degree: 14%
 
 ---
 
@@ -24,12 +24,12 @@ ht-degree: 19%
    + [Requisitos técnicos](technical-requirements.md)
    + [AEM Elementos de almacenamiento en 6.5](storage-elements-in-aem-6.md)
    + [AEM con MongoDB](aem-with-mongodb.md)
-+ Implementación de AEM {#deploying}
++ AEM Implementación de {#deploying}
    + [Implementación y mantenimiento](deploy.md)
    + [Implementaciones recomendadas](recommended-deploys.md)
    + [Instalación del servidor de aplicaciones](application-server-install.md)
    + [Instalación independiente personalizada](custom-standalone-install.md)
-   + [Línea de comandos: start y stop](command-line-start-and-stop.md)
+   + [Inicio y parada de la línea de comandos](command-line-start-and-stop.md)
    + [AEM Configuración de almacenes de nodos y almacenes de datos en el 6](data-store-config.md)
    + [Limpieza de revisión](revision-cleanup.md)
    + [Consultas e indexación de Oak](queries-and-indexing.md)

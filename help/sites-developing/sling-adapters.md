@@ -363,6 +363,6 @@ Aún no hay destinos, pero implementa Adaptable y podría utilizarse como origen
 | [Nodo](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nodo de la etiqueta. |
 | ... | Todo a lo que se puede adaptar el recurso de la etiqueta. |
 
-#### Otras {#other}
+#### Otro {#other}
 
 Además, Sling/JCR/OCM también proporciona un ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` para OCM personalizado ([Asignación de contenido de objeto](https://jackrabbit.apache.org/object-content-mapping.html)) objetos.

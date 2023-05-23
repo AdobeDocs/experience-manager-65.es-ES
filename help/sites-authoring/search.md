@@ -22,7 +22,7 @@ El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en funci
 
 >[!NOTE]
 >
->Fuera del entorno de creación también hay otros mecanismos disponibles para buscar, como la variable [Generador de consultas](/help/sites-developing/querybuilder-api.md) y [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Fuera del entorno de creación, también hay otros mecanismos disponibles para la búsqueda, como el [Generador de consultas](/help/sites-developing/querybuilder-api.md) y [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Conceptos básicos de búsqueda {#search-basics}
 
@@ -63,12 +63,12 @@ Para buscar y filtrar sus recursos:
 
    ![](do-not-localize/screen_shot_2018-03-23at101542.png)
 
-   Según el tipo de recurso, la búsqueda mostrará una selección predefinida de criterios de búsqueda/filtro.
+   Según el tipo de recurso, la búsqueda mostrará una selección predefinida de criterios de búsqueda o de filtro.
 
    El panel lateral permite seleccionar:
 
    * Búsquedas guardadas
-   * Directorio de búsqueda
+   * Buscar directorio
    * Etiquetas
    * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de LiveCopy
 
@@ -78,8 +78,8 @@ Para buscar y filtrar sus recursos:
    >
    >
    >
-   >    * Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de activos y comunidades son comprensiblemente especializados.
-   >    * Su instancia como el [Buscar en Forms](/help/sites-administering/search-forms.md) se puede personalizar (según la ubicación dentro de AEM).
+   >    * Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de Recursos y Comunidades son comprensiblemente especializados.
+   >    * Su instancia como [Buscar Forms](/help/sites-administering/search-forms.md) AEM se puede personalizar (según la ubicación dentro de la ubicación de la).
 
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
@@ -100,7 +100,7 @@ Para buscar y filtrar sus recursos:
 
 Además de buscar aplicando una amplia gama de criterios, también puede guardar una configuración de búsqueda determinada para recuperarla y utilizarla en otro momento:
 
-1. Defina sus criterios de búsqueda y seleccione **Guardar**.
+1. Defina los criterios de búsqueda y seleccione **Guardar**.
 
    ![screen-shot_2019-03-05at102613-1](assets/screen-shot_2019-03-05at102613-1.png)
 
@@ -112,7 +112,7 @@ Además de buscar aplicando una amplia gama de criterios, también puede guardar
 
    ![screen-shot_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
 
-1. Una vez guardada, puede:
+1. Una vez guardado, puede:
 
    * Use **x** (con el nombre de la búsqueda guardada) para iniciar una nueva consulta (la búsqueda guardada en sí no se eliminará).
    * Use la opción **Editar búsqueda guardada**, cambie las condiciones de búsqueda y luego utilice **Guardar** nuevamente.

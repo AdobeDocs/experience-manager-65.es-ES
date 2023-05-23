@@ -1,7 +1,7 @@
 ---
 title: Consola Informes
 seo-title: Reports Console
-description: Obtenga información sobre cómo acceder a los informes
+description: Obtenga información sobre cómo acceder a informes
 seo-description: Learn how to access reports
 uuid: 7bb15a15-077b-4bfb-aaf4-50fddc67f237
 contentOwner: Janice Kendall
@@ -23,31 +23,31 @@ ht-degree: 9%
 
 ## Información general {#overview}
 
-Para AEM Communities, existen varios informes a los que se puede acceder de varias formas desde el entorno de creación.
+Para AEM Communities, hay varios informes a los que se puede acceder de varias formas desde el entorno de creación.
 
-En general, los diversos informes son:
+En general, los distintos informes son:
 
 * [Informe de vistas](#views-report)
 
-   Proporciona un gráfico de vistas de contenido por miembros de la comunidad y visitantes del sitio para cualquier sitio de la comunidad.
+   Proporciona un gráfico de vistas del contenido realizadas por los miembros de la comunidad y los visitantes del sitio para cualquier sitio de la comunidad.
 
 * [Informe de anuncios](#posts-report)
 
-   Proporciona un gráfico de varios tipos de anuncios de los miembros de la comunidad en cualquier sitio de la comunidad.
+   Proporciona un gráfico de varios tipos de publicaciones realizadas por los miembros de la comunidad en cualquier sitio de la comunidad.
 
-Los informes tabulares se pueden exportar en formato .csv para su procesamiento posterior.
+Los informes tabulares se pueden exportar en formato .csv para su posterior procesamiento.
 
 ## Consolas de informes {#reporting-consoles}
 
-### Informes para sitios de la comunidad {#reports-for-community-sites}
+### Informes de sitios de la comunidad {#reports-for-community-sites}
 
-* Desde la navegación global: **[!UICONTROL Navegación]** > **[!UICONTROL Comunidades]** >  **[!UICONTROL Informes]**
+* Desde la navegación global: **[!UICONTROL Navegación]** > **[!UICONTROL Communities]** >  **[!UICONTROL Informes]**
 
 * Elija entre:
 
    * **[!UICONTROL Informe de asignaciones]**
 
-      * Genere un informe para el sitio, el usuario o el grupo de la comunidad y la asignación seleccionados.
+      * Genere un informe para el sitio, el usuario o el grupo y la asignación de la comunidad seleccionados.
    * **[!UICONTROL Informe de anuncios]**
 
       * Genere un informe para el sitio de la comunidad, el tipo de contenido y el período de tiempo seleccionados.
@@ -61,7 +61,7 @@ Los informes tabulares se pueden exportar en formato .csv para su procesamiento 
 
 ## Informe de vistas {#views-report}
 
-La consola Vistas permite que las funciones de la comunidad generen informes sobre las vistas de página durante un período de tiempo determinado.
+La consola Vistas permite generar informes sobre vistas de página mediante funciones de la comunidad durante un período de tiempo determinado.
 
 ![view-report](assets/view-report.png)
 
@@ -69,7 +69,7 @@ Seleccione los criterios del informe:
 
 * **[!UICONTROL Sitio]**
 
-   Seleccione un sitio de comunidad.
+   Seleccione un sitio de la comunidad.
 
 * **[!UICONTROL Tipo de contenido]**
 
@@ -84,13 +84,13 @@ Seleccione los criterios del informe:
    * Últimos 90 días
    * Año pasado
 
-Select **[!UICONTROL Generar]** para crear el informe.
+Seleccionar **[!UICONTROL Generar]** para crear el informe.
 
 ![generate-views](assets/generate-views.png)
 
 ## Informe de anuncios {#posts-report}
 
-La consola Anuncios permite generar informes sobre el número de anuncios a las funciones de la comunidad durante un período de tiempo determinado.
+La consola Publicaciones permite generar informes sobre el número de publicaciones en las funciones de la comunidad durante un período de tiempo determinado.
 
 ![post-report](assets/posts-report.png)
 
@@ -98,7 +98,7 @@ Seleccione los criterios del informe:
 
 * **[!UICONTROL Sitio]**
 
-   Seleccione un sitio de comunidad.
+   Seleccione un sitio de la comunidad.
 
 * **[!UICONTROL Tipo de contenido]**
 
@@ -113,7 +113,7 @@ Seleccione los criterios del informe:
    * Últimos 90 días
    * Año pasado
 
-Select **[!UICONTROL Generar]** para crear el informe.
+Seleccionar **[!UICONTROL Generar]** para crear el informe.
 
 ![generate-report](assets/generate-posts-report.png)
 
@@ -121,10 +121,10 @@ Select **[!UICONTROL Generar]** para crear el informe.
 
 ### No hay sitios de la comunidad enumerados {#no-community-sites-listed}
 
-Si no aparece ningún sitio de la comunidad, asegúrese de que Adobe Analytics esté habilitado para un sitio. Si elige informes sobre asignaciones, asegúrese de que la función de asignaciones esté en la estructura del sitio de la comunidad.
+Si no aparece ningún sitio de la comunidad, asegúrese de que Adobe Analytics esté habilitado para un sitio. Si elige informes sobre las asignaciones, asegúrese de que la función de asignaciones esté en la estructura del sitio de la comunidad.
 
 ### Los informes no se muestran en la instancia de autor de AEM {#reports-do-not-show-in-aem-author-instance}
 
-Si los informes no aparecen en la instancia de AEM Author, compruebe las personalizaciones, como la asignación de URL en la instancia de publicación. Si la asignación de URL solo se realiza en la instancia de publicación de AEM del sitio de comunidades, asegúrese de que lo mismo se haya configurado en la instancia de autor de AEM en **Informe de tendencias del sitio Factoría de componentes sociales** configuración.
+Si los informes no se muestran en la instancia de autor de AEM, compruebe las personalizaciones, como la asignación de URL en la instancia de publicación. Si la asignación de URL solo se realiza en la instancia de publicación de AEM del sitio de comunidades, asegúrese de que se ha configurado la misma en la instancia de autor de AEM en **Fábrica de componentes sociales de informe de tendencias del sitio** configuración.
 
 ![Asignación de URL en AEM Author](assets/sitetrend.png)

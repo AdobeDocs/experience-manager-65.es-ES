@@ -13,7 +13,7 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2709'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -151,7 +151,7 @@ Antes de intentar leer el JavaDoc o la propia especificación JCR, es posible qu
 
 **OSGi** AEM - OSGi es la tecnología de tiempo de ejecución basada en servicios que proporciona la base para el desarrollo modular de Java en el mundo de los recursos de la plataforma de desarrollo de la plataforma de datos de la plataforma de datos de la plataforma de. Es un marco de trabajo que proporciona no solo un entorno de carga de clases y ejecución altamente dinámico (y seguro) para los recursos de código (conocidos como paquetes), sino también un control total sobre la visibilidad y el ciclo de vida de los distintos servicios expuestos por los paquetes. Un registro de servicios proporciona un modelo de cooperación para paquetes que tiene en cuenta la dinámica del ciclo vital (y los requisitos de versión). OSGi resuelve muchos de los problemas que los servidores de aplicaciones pretendían resolver, pero lo hace de una manera ligera y altamente dinámica, lo que permite, por ejemplo, implementar servicios en caliente (haciendo que el nuevo código esté disponible inmediatamente sin reiniciar el servidor).
 
-**Parsys, sistema de párrafos** - El sistema de párrafos (parsys) es un componente compuesto que permite a los autores añadir componentes de diferentes tipos a una página y contiene otros componentes de párrafo. Cada tipo de párrafo se representa como un componente. El propio sistema de párrafo también es un componente, que contiene los demás componentes del párrafo.
+**Parsys, sistema de párrafos** - El sistema de párrafos (parsys) es un componente compuesto que permite a los autores añadir componentes de diferentes tipos a una página y contiene otros componentes de párrafo. Cada tipo de párrafo se representa como un componente. El sistema de párrafos en sí también es un componente, que contiene los demás componentes de párrafo.
 
 **Microkernel** - Cada espacio de trabajo del repositorio puede configurarse por separado para almacenar sus datos a través de un microkernel específico (una clase que administra la lectura y escritura de los datos). Del mismo modo, el almacén de versiones en todo el repositorio también puede configurarse de forma independiente para utilizar un microkernel en particular. Hay varios microkernels disponibles, capaces de almacenar datos en una variedad de formatos de archivo o bases de datos relacionales. (Por ejemplo, hay administradores de persistencia para MongoDB, DB2 o Oracle AEM) El microkernel predeterminado para la es TarMK (ver más abajo).
 
@@ -179,6 +179,6 @@ java -jar <quickstartfilename>.jar -help
 
 **Almacenamiento de Tar (TarMK)** AEM - TarMK es el sistema de persistencia por defecto en el mundo de la. AEM Aunque se puede configurar para que utilice un sistema de persistencia diferente (como MongoDB), TarMK tiene ciertas ventajas, ya que está optimizado para el rendimiento de casos de uso típicos de JCR (por lo tanto es muy rápido), utiliza un formato de datos estándar en la industria y se puede realizar una copia de seguridad rápida y fácilmente.
 
-**Plantilla** AEM - En la plantilla, se especifica un tipo de página en particular. Define la estructura de una página (a la vez que especifica una imagen en miniatura y varias propiedades). Por ejemplo, puede tener plantillas diferentes para páginas de producto, mapas del sitio e información de contacto.
+**Plantilla** AEM - En la plantilla, se especifica un tipo de página en particular. Define la estructura de una página (a la vez que especifica una imagen en miniatura y varias propiedades). Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto.
 
 **Flujo de trabajo** AEM : El sistema de flujo de trabajo de la permite la creación de procesos automatizados que implican páginas o activos.

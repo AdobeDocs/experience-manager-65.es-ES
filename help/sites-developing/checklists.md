@@ -21,7 +21,7 @@ ht-degree: 3%
 
 La siguiente lista de comprobación resalta algunos de los principales problemas: lea las otras secciones relacionadas con Pruebas para obtener más información.
 
-| Comprobar | Respuesta | Acción | Propietario | Vence el |
+| Comprobación | Respuesta | Acción | Propietario | Vence el |
 |---|---|---|---|---|
 | ¿Se ha establecido un mecanismo claro y regular de presentación de informes? |  |  |  |  |
 | ¿Participan jugadores clave (del equipo de prueba) en las reuniones de estado? |  |  |  |  |

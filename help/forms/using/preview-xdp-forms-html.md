@@ -13,7 +13,7 @@ exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '834'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -108,11 +108,11 @@ El [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está activa
 
 ## Obtener una vista previa de un formulario mediante datos de ejemplo {#to-preview-a-form-using-sample-data}
 
-Designer permite obtener una vista previa del formulario y probarlo con datos XML de ejemplo. Se recomienda probar con frecuencia el formulario con datos de ejemplo para asegurarse de que el formulario se procesa correctamente.
+Designer permite obtener una vista previa y probar el formulario utilizando datos XML de ejemplo. Se recomienda probar el formulario con frecuencia con datos de ejemplo para asegurarse de que el formulario se procesa correctamente.
 
-Si no dispone de datos de ejemplo, Designer puede crearlos o puede hacerlo usted mismo. (Consulte [Generar automáticamente datos de ejemplo para previsualizar el formulario](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) y [Crear datos de ejemplo para previsualizar el formulario](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Si no tiene datos de ejemplo, Designer puede crearlos, o puede crearlos usted mismo. (Consulte [Para generar automáticamente datos de ejemplo y obtener una vista previa del formulario](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) y [Para crear datos de ejemplo para obtener una vista previa del formulario](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
-Al probar su formulario mediante el uso de datos de ejemplo le garantiza la asignación de datos y campos, además de que los subformularios de repetición se repitan como se espera. Puede crear una presentación equilibrada del formulario que ofrezca el espacio apropiado para que cada objeto muestre los datos combinados.
+La prueba del formulario mediante una fuente de datos de ejemplo garantiza que los datos y los campos se asignen y que los subformularios repetibles se repitan como se esperaba. Puede crear un diseño de formulario equilibrado que proporcione el espacio adecuado para que cada objeto muestre los datos combinados.
 
 1. Seleccione **Archivo > Propiedades del formulario**.
 

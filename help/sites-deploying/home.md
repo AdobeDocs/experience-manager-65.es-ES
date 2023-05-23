@@ -1,18 +1,18 @@
 ---
-title: Guía del usuario de implementación de AEM 6.5
+title: AEM Guía del usuario de implementación de.5
 seo-title: AEM 6.5 Deploying User Guide
-description: Obtenga información sobre la instalación e implementación de Adobe Experience Manager 6.5 y sobre su arquitectura, incluida nuestra implementación en la nube de Adobe Managed Services.
+description: Obtenga información acerca de la instalación e implementación de Adobe Experience Manager 6.5 y su arquitectura, incluida nuestra implementación en la nube de Adobe Managed Services.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 75%
+ht-degree: 78%
 
 ---
 
-# Guía del usuario de implementación de AEM 6.5
+# AEM Guía del usuario de implementación de.5
 
-Esta guía abarca todas AEM tareas de implementación, como instalar e implementar AEM.
+AEM AEM Esta guía cubre todas las tareas de implementación de la, como la instalación y el despliegue de los recursos de la aplicación de la aplicación de la aplicación de la.
 
 ## Artículos clave de AEM
 
@@ -21,7 +21,7 @@ Esta guía abarca todas AEM tareas de implementación, como instalar e implement
 * [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
-## Guías del usuario de AEM 6.5
+## AEM Guías del usuario de.5
 
 | Guía del usuario | Descripción |
 |--- |---|
@@ -43,15 +43,15 @@ Esta guía abarca todas AEM tareas de implementación, como instalar e implement
 
 * [Tutoriales de AEM](https://helpx.adobe.com/es/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
-* [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 * [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
 * [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)
 
-## Derechos de autor, licencias y exenciones de responsabilidad {#copyright-licenses-and-disclaimers}
+## Copyright, licencias y exenciones de responsabilidad {#copyright-licenses-and-disclaimers}
 
 Para obtener más información, consulte [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
-Notificación de licencias de terceros: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
+Aviso de licencias de terceros: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)

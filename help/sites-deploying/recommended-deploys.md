@@ -40,7 +40,7 @@ En esta situación, se ejecuta una sola instancia de TarMK en un solo servidor.
 
 Las ventajas:
 
-* Simples
+* Simple
 * Fácil mantenimiento
 * Buen rendimiento
 
@@ -61,7 +61,7 @@ Las ventajas:
 
 * Simplicidad
 * Mantenimiento
-* Actuación
+* Rendimiento
 * Failover
 
 Los inconvenientes:
@@ -92,7 +92,7 @@ Para AEM Communities, el contenido generado por el usuario (UGC) nunca se duplic
 
 Las ventajas:
 
-* Actuación
+* Rendimiento
 * Escalabilidad para acceso de lectura
 * Failover
 

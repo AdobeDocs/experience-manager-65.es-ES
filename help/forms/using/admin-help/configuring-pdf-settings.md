@@ -341,7 +341,7 @@ Si ha seleccionado Ninguno en el archivo de configuración, el área Directivas 
 
 Independientemente de la opción de compatibilidad que seleccione, las imágenes en escala de grises no se modifican. Esto generalmente reduce el tamaño y aumenta la velocidad de visualización de los archivos de PDF porque se necesita menos información para describir imágenes de RGB que para describir imágenes CMYK. Dado que RGB es el espacio de color nativo que se utiliza en los monitores, no es necesaria ninguna conversión de color durante la visualización, lo que contribuye a una visualización en línea más rápida. Esta opción se recomienda si el archivo de PDF se utiliza en línea o con impresoras de baja resolución.
 
-**Interpretación de documentos:** Método para asignar colores entre espacios de color. El resultado de cualquier método en particular depende de los perfiles de los espacios de color. Por ejemplo, algunos perfiles producen resultados idénticos con métodos diferentes. Las opciones disponibles son:
+**Interpretación de documentos:** Método para asignar colores entre espacios de color. El resultado de cualquier método en particular depende de los perfiles de los espacios de color. Por ejemplo, algunos perfiles producen resultados idénticos con métodos diferentes. Estas opciones están disponibles:
 
 >[!NOTE]
 >
@@ -359,7 +359,7 @@ Independientemente de la opción de compatibilidad que seleccione, las imágenes
 
 ### Espacios de trabajo {#working-spaces}
 
-Para todos los valores de la lista en Políticas de gestión de color, excepto Dejar el color sin cambiar, seleccione en las listas del área de Espacio de trabajo para especificar qué perfiles ICC se utilizan para definir y calibrar los espacios de color de escala de grises, RGB y CMYK en los archivos de PDF destilados. Las opciones disponibles son:
+Para todos los valores de la lista en Políticas de gestión de color, excepto Dejar el color sin cambiar, seleccione en las listas del área de Espacio de trabajo para especificar qué perfiles ICC se utilizan para definir y calibrar los espacios de color de escala de grises, RGB y CMYK en los archivos de PDF destilados. Estas opciones están disponibles:
 
 **Gris:** Define el espacio de color de todas las imágenes en escala de grises de los archivos. Esta opción sólo está disponible si ha elegido Etiquetar todo para la administración de color o Etiquetar sólo imágenes para la administración de color. El perfil ICC predeterminado para imágenes grises es Gray Gamma 2.2. También puede seleccionar Ninguno para evitar que las imágenes en escala de grises se conviertan.
 
@@ -451,7 +451,7 @@ Los archivos compatibles con el PDF/A se utilizan principalmente para el archiva
 
 Para obtener instrucciones sobre el acceso a las opciones de informes y conformidad con las normas, consulte [Agregar o editar la configuración del PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
-**Estándar de cumplimiento:** Seleccione un estándar para generar un informe que indique si el archivo cumple los requisitos y, si no es así, qué problemas se han producido. Cuando la compatibilidad en la página Configuración general está establecida en Acrobat 4.0, se habilitan las siguientes opciones. Cuando Compatibilidad se establece en Acrobat 5.0, solo están disponibles las opciones de Acrobat 5.0. Cuando Compatibilidad se establece en una opción alternativa, las siguientes opciones aparecen atenuadas:
+**Estándar de cumplimiento:** Seleccione un estándar para generar un informe que indique si el archivo cumple los requisitos y, si no es así, qué problemas se han producido. Cuando la compatibilidad en la página Configuración general está establecida en Acrobat 4.0, se activan las siguientes opciones. Cuando Compatibilidad se establece en Acrobat 5.0, solo están disponibles las opciones de Acrobat 5.0. Cuando Compatibilidad se establece en una opción alternativa, las siguientes opciones aparecen atenuadas:
 
 * PDF/X-1a (compatible con Acrobat 4.0)
 * PDF/X-3 (compatible con Acrobat 4.0)

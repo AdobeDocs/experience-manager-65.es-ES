@@ -15,7 +15,7 @@ exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '4150'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ El servicio Forms procesa los formularios como HTML en respuesta a una solicitud
 
 Para procesar un formulario como HTML, el diseño de formulario debe guardarse como archivo XDP. Un diseño de formulario guardado como archivo PDF no se puede procesar como HTML. Al desarrollar un diseño de formulario en Designer que se procesará como HTML, tenga en cuenta los siguientes criterios:
 
-* No utilice las propiedades de borde de un objeto para dibujar líneas, cuadros o cuadrículas en el formulario. Algunos exploradores no alinean los bordes tal como se muestran en la vista previa de Los objetos pueden aparecer en capas diferentes o desplazar otros objetos de la posición prevista.
+* No utilice las propiedades de borde de un objeto para dibujar líneas, cuadros o cuadrículas en el formulario. Es posible que algunos exploradores no alineen los bordes exactamente como aparecen en una vista previa. Los objetos pueden aparecer en capas o empujar a otros objetos fuera de su posición esperada.
 * Puede utilizar líneas, rectángulos y círculos para definir el fondo.
 * Dibuje texto ligeramente más grande que lo que parece necesario para acomodar el texto. Algunos exploradores web no muestran el texto de forma legible.
 

@@ -15,7 +15,7 @@ exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '3425'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -425,7 +425,7 @@ Para configurar la replicación de contenido para una instancia de publicación 
    * En el **Configuración** pestaña:
 
       * Activar **Habilitado**.
-      * Especificar una **Descripción**.
+      * Introduzca una **Descripción**.
       * Configure las variables **Retraso de reintento** hasta `60000`.
 
       * Deje el **Tipo de serialización** as `Default`.
@@ -470,7 +470,7 @@ Los agentes predeterminados se incluyen en la instalación. Sin embargo, cierta 
    * En el **Configuración** pestaña:
 
       * Activar **Habilitado**.
-      * Especificar una **Descripción**.
+      * Introduzca una **Descripción**.
       * Deje el **Tipo de serialización** as `Dispatcher Flush`o configúrelo como tal si crea un nuevo agente.
 
       * (opcional) Seleccione **Actualización de alias** para habilitar las solicitudes de invalidación de alias o de rutas personales en Dispatcher.
@@ -488,7 +488,7 @@ Los agentes predeterminados se incluyen en la instalación. Sin embargo, cierta 
    >
    >AEM Si ha instalado la en un contexto distinto del contexto predeterminado recomendado, debe configurar el [Encabezados HTTP](#extended) en el **Extendido** pestaña.
 
-1. Haga clic en **Aceptar** para guardar los cambios.
+1. Clic **OK** para guardar los cambios.
 1. Vuelva a la **Herramientas** pestaña, desde aquí puede **Activar** el **Vaciado de Dispatcher** agente (**Agentes de publicación**).
 
 El **Vaciado de Dispatcher** el agente de replicación no está activo en el autor. Puede acceder a la misma página en el entorno de publicación utilizando el URI equivalente; por ejemplo, `https://localhost:4503/etc/replication/agents.publish/flush.html`.
@@ -524,7 +524,7 @@ Los dos `agents` mantenga la información de configuración sobre el entorno ade
 Para supervisar un agente de replicación:
 
 1. Acceda a la **Herramientas** AEM pestaña en la lista de.
-1. Haga clic en **Replicación**.
+1. Clic **Replicación**.
 1. Haga doble clic en el vínculo a los agentes para el entorno adecuado (el panel izquierdo o el derecho); por ejemplo **Agentes en el autor**.
 
    La ventana resultante muestra una descripción general de todos los agentes de replicación para el entorno de creación, incluidos su destino y estado.

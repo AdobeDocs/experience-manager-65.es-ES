@@ -42,7 +42,7 @@ En el **Propiedades** para el nuevo `clientlibs` , introduzca el **categorías**
 * Nombre:**categories**
 * Tipo:**cadena**
 * Valor : **apps.an-scf-sandbox**
-* Haga clic en **Agregar**
+* Clic **Añadir**
 * Haga clic en **Guardar todo**
 
 Nota: Se debe anteponer el valor de categorías con &quot;apps&quot;. es una convención para identificar la &quot;aplicación propietaria&quot; como en la carpeta /apps, no /libs.  IMPORTANTE: Añadir marcador de posición `js.tx`t y **`css.txt`** archivos. (No es oficialmente una cq:ClientLibraryFolder sin ellas).
@@ -87,7 +87,7 @@ En este caso, incluyéndolos todos y por lo tanto se prefieren los clientlibs SC
 
 * Nombre : **`embed`**
 * Tipo : **`String`**
-* Haga clic **`Multi`**
+* Haga clic en **`Multi`**
 * Valor: **`cq.social.scf`**
 
    * Aparecerá un cuadro de diálogo, haga clic en **`+`** después de cada entrada para agregar las siguientes categorías clientlib:
@@ -127,7 +127,7 @@ La instrucción include pertenece al `head` de la sección `html` script. El val
 1. Uso de **CRXDE Lite**, seleccione **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Haga clic con el botón derecho y seleccione **Copiar** (o seleccione Copiar en la barra de herramientas)
-1. Seleccione **`/apps/an-scf-sandbox/components/playpage`**
+1. Seleccionar **`/apps/an-scf-sandbox/components/playpage`**
 1. Haga clic con el botón derecho y seleccione **Pegar** (o seleccione Pegar en la barra de herramientas)
 1. Doble clic **`headlibs.jsp`** para abrirlo
 1. Anexe la línea siguiente al final del archivo
@@ -167,7 +167,7 @@ Para crear un paquete:
    * Grupo: `leave as default`
    * Haga clic en **Aceptar**
 
-* Haga clic en **Editar**
+* Clic **Editar**
 
    * Seleccionar **Filtros** pestaña
 

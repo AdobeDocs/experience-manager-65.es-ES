@@ -13,7 +13,7 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '1354'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -187,7 +187,7 @@ En una instalación estándar de AEM:
 
    >[!CAUTION]
    >
-   >AEM Tenga en cuenta que en las proporciones de recorte de la, según lo establecido por la variable `ratio` , se definen como **alto/ancho**. Esto es distinto de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas heredados. Los usuarios autores no notarán ninguna diferencia siempre que defina la variable `name` claramente, ya que esto es lo que se muestra en la interfaz de usuario.
+   >AEM Tenga en cuenta que en las proporciones de recorte de la, según lo establecido por la variable `ratio` , se definen como **alto/ancho**. Esto difiere de la definición convencional de anchura/altura y se realiza por motivos de compatibilidad con sistemas anteriores. Los usuarios autores no notarán ninguna diferencia siempre que defina la variable `name` claramente, ya que esto es lo que se muestra en la interfaz de usuario.
 
 #### Creación de un nuevo editor in situ {#creating-a-new-in-place-editor}
 

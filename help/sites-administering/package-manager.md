@@ -1,5 +1,5 @@
 ---
-title: el administrador de paquetes
+title: El administrador de paquetes
 description: AEM Conozca los conceptos básicos de la administración de paquetes de con el Administrador de paquetes.
 feature: Administering
 role: Admin
@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# el administrador de paquetes {#working-with-packages}
+# El administrador de paquetes {#working-with-packages}
 
 Los paquetes permiten importar y exportar el contenido del repositorio. Puede utilizar paquetes para instalar contenido nuevo, instalar funcionalidad nueva, transferir contenido entre instancias y realizar copias de seguridad del contenido del repositorio.
 
@@ -34,7 +34,7 @@ Un paquete también contiene metainformación de Vault, incluidas las definicion
 >
 >Los paquetes representan la versión actual del contenido en el momento en que se crea el paquete. AEM No incluyen ninguna versión anterior del contenido que se mantiene en el repositorio de la que se haya hecho clic en el botón de la barra de herramientas de la aplicación de la aplicación de la aplicación de la.
 
-## el administrador de paquetes {#package-manager}
+## El administrador de paquetes {#package-manager}
 
 AEM El Administrador de paquetes administra los paquetes en la instalación de la. Después de que tenga [ha asignado los permisos necesarios](#permissions-needed-for-using-the-package-manager) puede utilizar el Administrador de paquetes para realizar diversas acciones, como configurar, crear, descargar e instalar paquetes.
 
@@ -581,7 +581,7 @@ AEM AEM Los paquetes de se pueden utilizar para crear y compartir contenido entr
 
 [Distribución de software](https://downloads.experiencecloud.adobe.com) AEM es un servicio centralizado, diseñado para simplificar la búsqueda y descarga de paquetes de la aplicación de la.
 
-Para obtener más información, consulte la [Documentación de distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Para obtener más información, consulte la [Documentación de distribución de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=es)
 
 >[!NOTE]
 >

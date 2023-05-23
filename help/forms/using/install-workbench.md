@@ -65,7 +65,7 @@ La siguiente ilustración muestra la instalación de Workbench, la cual incluye:
 
 >[!NOTE]
 >
->AEM Forms Server requiere un programa de instalación independiente. Para obtener más información, consulte la documentación de instalación de AEM Forms en JEE.
+>El servidor de AEM Forms requiere un programa de instalación independiente. Para obtener más información, consulte la documentación de instalación de AEM Forms en JEE.
 
 ![representación-de-formulario-predeterminada](assets/installing-workbench.png)
 
@@ -86,7 +86,7 @@ Espacio en disco para la instalación:
 >
 >Si todas estas ubicaciones residen en una sola unidad, es necesario disponer de 1,5 GB de espacio disponible durante la instalación. Los archivos copiados en los directorios temporales se eliminan cuando finaliza la instalación.
 
-* Requisitos de hardware: Procesador Intel® Pentium® 4 o AMD® equivalente, 1 GHz.
+* Requisitos de hardware: Procesador Intel® Pentium® 4 o AMD® equivalente de 1 GHz.
 * Java™ Runtime Environment (JRE) 7.0 Actualización 51 o actualizaciones posteriores a la 7.0.
 * Resolución de monitor mínima de 1024 X 768 píxeles o superior con color de 16 bits o superior.
 * Conexión de red TCP/IPv4 o TCP/IPv6 al servidor de AEM Forms.
@@ -103,8 +103,8 @@ Consulte la lista completa de plataformas compatibles con Workbench en [Platafor
 
 ## Consideraciones sobre la instalación de Designer {#designer-installation-considerations}
 
-De forma predeterminada, la instalación de Workbench incluye únicamente la versión correspondiente de Designer en inglés. Si la aplicación de instalación de Workbench detecta una versión existente de Designer en el equipo, la instalación puede finalizar y es necesario quitar la versión actual de Designer antes de poder continuar.
-La tabla siguiente contiene una lista completa de los posibles escenarios de instalación de Designer que puede encontrar, así como las acciones que debe realizar, al instalar Workbench.
+De forma predeterminada, la instalación de Workbench incluye únicamente la versión correspondiente de Designer en inglés. Si la aplicación de instalación de Workbench detecta una versión existente de Designer en el equipo, es posible que la instalación termine y se le pida que elimine la versión actual de Designer antes de poder continuar.
+La siguiente tabla contiene una lista completa de los posibles escenarios de instalación de Designer que puede encontrar y de las acciones que debe realizar al instalar Workbench.
 
 <table>
  <tbody>
@@ -143,7 +143,7 @@ Antes de instalar Workbench, debe asegurarse de que su entorno incluye el softwa
 **Para instalar y ejecutar Workbench:**
 
 1. Realice una de las siguientes tareas:
-   * Vaya al directorio \workbench en el medio de instalación y haga doble clic en el archivo run_windows_installer.bat.
+   * Vaya al directorio \workbench en los medios de instalación y haga doble clic en el archivo run_windows_installer.bat.
    * Descargue y descomprima Workbench en su sistema de archivos. Una vez descargado, vaya al directorio \workbench y haga doble clic en el archivo run_windows_installer.bat.
 
    >[!IMPORTANT]
@@ -152,7 +152,7 @@ Antes de instalar Workbench, debe asegurarse de que su entorno incluye el softwa
 
    >[!NOTE]
    >
-   >Si encuentra un error &quot;No se pudo crear la máquina virtual Java™&quot;, cree una variable de entorno llamada _JAVA_OPTIONS con valor -Xmx512M y ejecute el instalador.
+   >Si aparece el error &quot;No se pudo crear la máquina virtual Java™&quot;, cree una variable de entorno denominada _JAVA_OPTIONS con valor -Xmx512M y ejecute el programa de instalación.
 
 1. En la pantalla Introducción, haga clic en Siguiente.
 1. Lea el Acuerdo de licencia del producto, seleccione Acepto los términos del Acuerdo de licencia y, a continuación, haga clic en Siguiente.
@@ -161,7 +161,7 @@ Antes de instalar Workbench, debe asegurarse de que su entorno incluye el softwa
    >[!NOTE]
    Puede seguir utilizando la versión de Designer instalada con Acrobat 10 sin seleccionar esta opción.
 
-1. Acepte el directorio predeterminado como se muestra o haga clic en Elegir y vaya al directorio donde desea instalar Workbench y, a continuación, haga clic en Siguiente.
+1. Acepte el directorio predeterminado como se muestra o haga clic en Elegir y vaya al directorio en el que desea instalar Workbench y, a continuación, haga clic en Siguiente.
 
    >[!NOTE]
    La ruta del directorio de instalación no debe contener los caracteres # (libras) y $ (dólares).
@@ -183,7 +183,7 @@ Los procesos de AEM Forms en JEE se pueden actualizar a aplicaciones de AEM Fo
 Para utilizar Workbench, debe tener una instancia de AEM Forms en ejecución, normalmente en un equipo independiente. Debe tener un nombre de usuario y una contraseña para iniciar sesión en AEM Forms, así como detalles sobre la ubicación del servidor.
 
 >[!NOTE]
-Si configuró AEM Forms para utilizar el proveedor de repositorios de Documentum® o IBM® FileNet de EMC y desea iniciar sesión en un repositorio que no sea el repositorio configurado como predeterminado en AEM consola de administración de formularios, proporcione el nombre de usuario como username@Repository.
+Si configuró AEM Forms para utilizar el proveedor de repositorios EMC Documentum® o IBMAEM ® FileNet y desea iniciar sesión en un repositorio que no sea el repositorio configurado como predeterminado en la consola de administración de formularios de forma predeterminada, proporcione el nombre de usuario username@Repository.
 
 ### Configuración del tiempo de espera {#configuring-timeout-settings}
 
@@ -191,7 +191,7 @@ De forma predeterminada, el valor del tiempo de espera de Workbench es de dos ho
 
 ### Configurar Workbench para que se conecte a través de HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
-Para conectar Workbench a un servidor de AEM Forms a través de HTTPS, debe asegurarse de que Workbench reconozca la autoridad de certificación (CA) que emitió la clave pública como de confianza. Si no se reconoce que el certificado proviene de un origen de confianza, debe actualizar el archivo cacert en la variable [Workbench_HOME]/workbench/jre/lib/security.
+Para conectar Workbench a un servidor de AEM Forms a través de HTTPS, debe asegurarse de que Workbench reconozca la autoridad de certificación (CA) que emitió la clave pública como de confianza. Si no se reconoce que el certificado proviene de una fuente de confianza, debe actualizar el archivo cacert en el [Workbench_HOME]directorio /workbench/jre/lib/security.
 
 >[!NOTE]
 [Workbench_HOME] representa el directorio donde instaló Workbench. La ubicación predeterminada es C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
@@ -213,7 +213,7 @@ donde:
    * certname es el certificado seleccionado en el paso 1.
    * Por ejemplo, el alias que elija para el certificado. Este valor puede cambiarse.
 
-1. Cuando se le pida que confíe en el certificado, escriba Yes y pulse la tecla Intro. La herramienta de teclas procede a importar el archivo de cacerts en la variable [Workbench_HOME]/workbench/jre/lib/security.
+1. Cuando se le pida que confíe en el certificado, escriba Yes y pulse la tecla Intro. keytool procede a importar el archivo cacerts en [Workbench_HOME]directorio /workbench/jre/lib/security.
 
 1. Cierre y reinicie Workbench para aplicar los cambios.
 
@@ -234,10 +234,10 @@ Cuando Forms Generator o Output buscan, o actualizan, las entradas en la caché
 
 
 El servicio Forms recibe las plantillas por referencia al nombre de archivo o la ubicación del repositorio, o por valor como objeto XML en la memoria.
-* **Plantillas pasadas por referencia**: utiliza la raíz de contenido y el nombre del formulario. Si se pasan plantillas únicas con diferentes nombres de archivo en cada solicitud utilizando este método, la caché de disco crece sin cesar y nunca se reutiliza. Para evitarlo, las plantillas únicas deben pasarse con el mismo nombre de archivo para garantizar que se actualice la misma caché para todas las solicitudes.
-* **Plantillas transferidas por valor**: utiliza bytes de plantilla pasados junto con los datos mediante el parámetro inDataDoc. Si se pasan plantillas únicas con distintos UUID mediante este método, la caché de disco crece sin cesar y nunca se reutiliza. Para evitarlo, el atributo UUID debe eliminarse de todas las plantillas para garantizar que no se cree ninguna caché para la plantilla. En cambio, pasar el mismo UUID no nulo permite crear los objetos de caché, pero garantiza que se actualice la misma caché con cada solicitud.
+* **Plantillas pasadas por referencia**: utiliza la raíz de contenido y el nombre del formulario. Si se pasan plantillas únicas con diferentes nombres de archivo en cada solicitud utilizando este método, la caché del disco crece constantemente y nunca se reutiliza. Para evitarlo, las plantillas únicas deben pasarse con el mismo nombre de archivo para garantizar que se actualice la misma caché para todas las solicitudes.
+* **Plantillas transferidas por valor**: utiliza bytes de plantilla pasados junto con los datos mediante el parámetro inDataDoc. Si se pasan plantillas únicas con un UUID diferente mediante este método, la caché del disco crece constantemente y nunca se reutilizará. Para evitarlo, el atributo UUID debe eliminarse de todas las plantillas para garantizar que no se cree ninguna caché para la plantilla. En cambio, pasar el mismo UUID no nulo permite crear los objetos de caché, pero garantiza que se actualice la misma caché con cada solicitud.
 
-Para evitar que la caché crezca indefinidamente, tenga en cuenta los siguientes factores para procesar plantillas generadas dinámicamente con las nuevas API de AEM Forms, las que son renderHTMLForm2 y renderPDFForm2.
+Para evitar que la caché crezca indefinidamente, tenga en cuenta los siguientes factores para procesar plantillas generadas dinámicamente con las nuevas API de AEM Forms, que son renderHTMLForm2 y renderPDFForm2.
 
 Al utilizar las nuevas API, la plantilla se pasa como un objeto document, el cual se gestiona en el servicio Forms dependiendo de si está pasivada o no.
 
@@ -247,8 +247,8 @@ Para documentos pasivados en los que el UUID y la raíz de contenido sirven como
 
 En el caso de los documentos no pasivados en los que el nombre de archivo y la raíz de contenido sirven como clave de caché, tenga en cuenta el siguiente aspecto:
 * En el caso de las plantillas de entrada no pasivadas, el almacenamiento en caché depende de la raíz de contenido y del nombre de archivo a partir del cual se generó el documento.
-La misma caché se utiliza solo para solicitudes con la misma raíz de contenido y el mismo nombre de archivo de plantilla.
-Las siguientes prácticas recomendadas garantizan que la caché no crezca indefinidamente cuando se pasen plantillas generadas dinámicamente al servicio de Forms:
+La misma caché solo se utiliza para solicitudes con la misma raíz de contenido y el mismo nombre de archivo de plantilla.
+Las siguientes prácticas recomendadas garantizan que la caché no crezca constantemente al pasar plantillas generadas dinámicamente al servicio Forms:
    * Elimine el UUID o pase el mismo UUID en todas las plantillas generadas dinámicamente.
    * Genere el documento desde bytes de plantilla o desde el mismo nombre de archivo en disco.
 
@@ -263,7 +263,7 @@ Con el Editor XDC, los administradores de impresoras de red pueden crear y modi
 Antes de que el administrador de la impresora de red utilice el Editor XDC, cambie la ubicación de los archivos XDC de ejemplo y consulte la sección Creación de perfiles de dispositivo mediante el Editor XDC.
 
 **Para obtener los archivos XDC de ejemplo**:
-1. En el servidor de AEM Forms, busque la carpeta XDC en [AEM Forms root]\sdk\samples\Output\IVS.
+1. En AEM Forms Server, busque la carpeta XDC en [raíz de AEM Forms]\sdk\samples\Output\IVS.
 1. Copie el contenido de esta carpeta en un directorio al que se pueda acceder desde el sistema Workbench o Eclipse.
 
 **Para obtener ayuda sobre el Editor XDC**:

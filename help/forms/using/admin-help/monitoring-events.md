@@ -64,7 +64,7 @@ Puede buscar eventos en la página Eventos usando una combinación de criterios 
 
 **Eventos relacionados con mis documentos:** Los usuarios pueden encontrar todos los eventos relacionados con sus propios documentos protegidos por directivas. Los usuarios ven los eventos que generan todas las personas que administran sus documentos.
 
-**Coordinadores del conjunto de directivas:** Puede ver eventos auditados, incluidos los eventos de documentos y directivas, para documentos protegidos por directivas desde sus conjuntos de directivas. Las opciones disponibles son:
+**Coordinadores del conjunto de directivas:** Puede ver eventos auditados, incluidos los eventos de documentos y directivas, para documentos protegidos por directivas desde sus conjuntos de directivas. Estas opciones están disponibles:
 
 **Documentar eventos en los que soy coordinador de conjuntos de políticas:** Los coordinadores de conjuntos de directivas que tienen el permiso Ver evento pueden encontrar eventos relacionados con documentos que protegen las directivas de sus conjuntos de directivas.
 

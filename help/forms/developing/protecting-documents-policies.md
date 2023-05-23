@@ -1312,22 +1312,22 @@ En la tabla siguiente se enumeran los pares de clave y valor necesarios al crear
   <tr>
    <td><p><code>WaterBackCmd:IS_USERNAME_ENABLED</code></p></td>
    <td><p>Especifica si el nombre de usuario del usuario que abre el documento forma parte de la marca de agua.</p></td>
-   <td><p>True o false</p></td>
+   <td><p>Verdadero o falso</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:IS_USERID_ENABLED</code></p></td>
    <td><p>Especifica si la identificación del usuario que abre el documento forma parte de la marca de agua.</p></td>
-   <td><p>True o false</p></td>
+   <td><p>Verdadero o falso</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:IS_CURRENTDATE_ENABLED</code></p></td>
    <td><p>Especifica si la fecha actual forma parte de la marca de agua.</p></td>
-   <td><p>True o false</p></td>
+   <td><p>Verdadero o falso</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code></p></td>
    <td><p>Si este valor es true, el valor del texto personalizado debe especificarse usando <code>WaterBackCmd:SRCTEXT</code>.</p></td>
-   <td><p>True o false</p></td>
+   <td><p>Verdadero o falso</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:OPACITY</code></p></td>
@@ -1342,7 +1342,7 @@ En la tabla siguiente se enumeran los pares de clave y valor necesarios al crear
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>
    <td><p>Si se especifica este valor, entonces <code>WaterBackCmd:IS_SIZE_ENABLED</code> debe estar presente y el valor debe ser verdadero. Si no se especifica este atributo, el comportamiento predeterminado se ajusta a la página.</p></td>
-   <td><p>Un valor mayor que 0.0 y menor o igual que 1.0.</p></td>
+   <td><p>Un valor bueno que 0,0 y menor o igual que 1,0.</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:HORIZ_ALIGN</code></p></td>
@@ -1357,17 +1357,17 @@ En la tabla siguiente se enumeran los pares de clave y valor necesarios al crear
   <tr>
    <td><p><code>WaterBackCmd:IS_USE_BACKGROUND</code></p></td>
    <td><p>Especifica si la marca de agua es un fondo. El valor predeterminado es False.</p></td>
-   <td><p>True o false</p></td>
+   <td><p>Verdadero o falso</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:IS_SIZE_ENABLED</code></p></td>
    <td><p>True si se especifica una escala personalizada. Si este valor es true, también se debe especificar SCALE. Si este valor es false, el valor predeterminado se ajusta a la página.</p></td>
-   <td><p>True o false</p></td>
+   <td><p>Verdadero o falso</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SRCTEXT</code></p></td>
    <td><p>Especifica el texto personalizado de una marca de agua. Si este valor está presente, <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code> también debe estar presente y debe establecerse como verdadero.</p></td>
-   <td><p>True o false</p></td>
+   <td><p>Verdadero o falso</p></td>
   </tr>
  </tbody>
 </table>

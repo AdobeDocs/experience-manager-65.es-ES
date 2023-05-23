@@ -1,5 +1,5 @@
 ---
-title: Adición de una marca de agua a los recursos digitales
+title: Agregar una marca de agua a los recursos digitales
 description: Aprenda a utilizar la función de marca de agua para agregar una marca de agua digital a los recursos.
 contentOwner: AG
 role: User, Admin
@@ -13,43 +13,43 @@ ht-degree: 2%
 
 ---
 
-# Marcar sus recursos digitales {#watermarking}
+# Marca de agua de recursos digitales {#watermarking}
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
-[!DNL Adobe Experience Manager Assets] le permite agregar una marca de agua digital a los recursos para ayudar a los usuarios a verificar la autenticidad y propiedad de los recursos protegida por derechos de autor. [!DNL Experience Manager Assets] admite texto que se utilizará como marca de agua en archivos PNG y JPEG.
+[!DNL Adobe Experience Manager Assets] permite agregar una marca de agua digital a los recursos que ayuda a los usuarios a verificar la autenticidad y la propiedad de los derechos de autor de los recursos. [!DNL Experience Manager Assets] admite texto para utilizarlo como marca de agua en archivos PNG y JPEG.
 
-Para poder aplicar una marca de agua a los recursos, agregue el paso de marca de agua en el [!UICONTROL Recurso de actualización DAM] flujo de trabajo.
+Para poder aplicar una marca de agua en los recursos, agregue el paso de marca de agua en [!UICONTROL Recurso de actualización DAM] flujo de trabajo.
 
-1. Acceda a la [!DNL Experience Manager] interfaz de usuario y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
-1. En el **[!UICONTROL Modelos de flujo de trabajo]** seleccione **[!UICONTROL Recurso de actualización DAM]** flujo de trabajo y haga clic en **[!UICONTROL Editar]**.
+1. Acceda a la [!DNL Experience Manager] interfaz de usuario de y vaya a **[!UICONTROL Herramientas]** > **[!UICONTROL Flujo de trabajo]** > **[!UICONTROL Modelos]**.
+1. Desde el **[!UICONTROL Modelos de flujo de trabajo]** , seleccione la **[!UICONTROL Recurso de actualización DAM]** flujo de trabajo y clic **[!UICONTROL Editar]**.
 
-1. En el panel lateral, arrastre el **[!UICONTROL Agregar marca de agua]** paso a [!UICONTROL Recurso de actualización DAM] flujo de trabajo.
+1. En el panel lateral, arrastre el **[!UICONTROL Agregar filigrana]** paso a la [!UICONTROL Recurso de actualización DAM] flujo de trabajo.
 
-   ![Arrastre el [!UICONTROL Agregar marca de agua] y añada al [!UICONTROL Recurso de actualización DAM] flujo de trabajo](assets/add_watermark_step_aem_assets.png)
+   ![Arrastre el [!UICONTROL Agregar filigrana] paso y añadir a [!UICONTROL Recurso de actualización DAM] workflow](assets/add_watermark_step_aem_assets.png)
 
-   *Figura: Arrastre el [!UICONTROL Agregar marca de agua] y añada al [!UICONTROL Recurso de actualización DAM] flujo de trabajo.*
+   *Imagen: arrastre el [!UICONTROL Agregar filigrana] paso y añadir a [!UICONTROL Recurso de actualización DAM] flujo de trabajo.*
 
    >[!NOTE]
    >
-   >Coloque el [!UICONTROL Agregar marca de agua] pase a cualquier lugar antes de que [!UICONTROL Miniatura de proceso] paso a paso.
+   >Coloque el [!UICONTROL Agregar filigrana] paso en cualquier lugar antes de [!UICONTROL Procesar miniatura] paso.
 
-1. Abra el **[!UICONTROL Agregar marca de agua]** para mostrar sus propiedades.
-1. En el **[!UICONTROL Argumentos]** , especifique valores válidos en los distintos campos, como texto, tipo de fuente, tamaño, color, posición, orientación, etc. Para confirmar los cambios, haga clic en **[!UICONTROL Listo]**.
+1. Abra el **[!UICONTROL Agregar filigrana]** paso para mostrar sus propiedades.
+1. En el **[!UICONTROL Argumentos]** , especifique valores válidos en los distintos campos, incluido texto, tipo de fuente, tamaño, color, posición, orientación, etc. Para confirmar los cambios, haga clic en **[!UICONTROL Listo]**.
 
-   ![Proporcione los argumentos en el paso agregar marca de agua de [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
+   ![Proporcione los argumentos en el paso para agregar una marca de agua en [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
 
-   *Figura: Proporcione los argumentos en el paso agregar marca de agua de [!DNL Assets].*
+   *Imagen: proporcione los argumentos en el paso para agregar una marca de agua en [!DNL Assets].*
 
-1. Guarde el **[!UICONTROL Recurso de actualización DAM]** flujo de trabajo con el paso de marca de agua.
-1. En el [!DNL Assets] interfaz de usuario de , cargue un recurso de ejemplo. La marca de agua aparece con el tamaño de fuente, el color, etc., en la posición que configuró en los pasos anteriores.
+1. Guarde el **[!UICONTROL Recurso de actualización DAM]** flujo de trabajo con el paso filigrana.
+1. Desde el [!DNL Assets] interfaz de usuario, cargue un recurso de ejemplo. La marca de agua aparece con el tamaño de fuente, el color, etc., en la posición configurada en los pasos anteriores.
 
-Para marcar con agua documentos de PDF mediante programación o con información dinámica, considere la posibilidad de utilizar [Servicios de documentos de Experience Manager](/help/forms/using/overview-aem-document-services.md) oferta.
+Para marcar como agua documentos de PDF mediante programación o con información dinámica, considere la posibilidad de utilizar [Experience Manager Document Services](/help/forms/using/overview-aem-document-services.md) oferta.
 
 ## Sugerencias y limitaciones {#tips-limitations}
 
-* Solo se admiten marcas de agua basadas en texto. Las imágenes no se utilizan como marcas de agua, aunque se pueden cargar imágenes al crear la variable [!UICONTROL Agregar proceso de marca de agua].
-* Solo se admiten archivos PNG y JPEG para marcar con agua. Otros formatos de recursos no están marcados con agua.
+* Solo se admiten marcas de agua basadas en texto. Las imágenes no se utilizan como marcas de agua, aunque puede cargar imágenes al crear el [!UICONTROL Agregar proceso de filigrana].
+* Solo se admiten archivos PNG y de JPEG para la marca de agua. Otros formatos de recurso no están marcados con agua.

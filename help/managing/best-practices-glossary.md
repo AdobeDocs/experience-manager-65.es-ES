@@ -41,7 +41,7 @@ Cuanto antes planifique y diseñe sus pruebas de aceptación, más fácil será 
 
 Aunque es posible que no pueda definir todos los detalles al principio del proyecto, las definiciones iniciales deben discutirse y acordarse. Las pruebas de aceptación probablemente se basarán en los requisitos fundamentales (funcional y de rendimiento).
 
-### Acceso coordinado al sistema de prueba {#access-to-test-system-coordinated}
+### Acceso coordinado al sistema de pruebas {#access-to-test-system-coordinated}
 
 Asegúrese de que se han concedido los niveles requeridos de acceso al sistema a todas las funciones.
 
@@ -514,7 +514,7 @@ Confirmación de que las partes interesadas aceptan plenamente:
 
 ### Programación del lanzamiento {#go-live-schedule}
 
-Cronología y programación de las actividades necesarias para:
+Cronología y programación de las actividades necesarias para lo siguiente:
 
 * preparación para el lanzamiento
 * el lanzamiento real

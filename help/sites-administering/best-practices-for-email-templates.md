@@ -125,7 +125,7 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
  </tbody>
 </table>
 
-### Genérico {#generic}
+### Genérica {#generic}
 
 | **Práctica recomendada** | **Implementación** |
 |---|---|

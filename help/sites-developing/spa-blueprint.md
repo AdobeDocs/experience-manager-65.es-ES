@@ -33,7 +33,7 @@ SPA AEM SPA AEM En este documento se describe el contrato general que cualquier 
 >
 >Los siguientes requisitos son independientes del marco de trabajo. Si se cumplen estos requisitos, se puede proporcionar una capa específica del marco de trabajo compuesta por módulos, componentes y servicios.
 >
->**Estos requisitos ya se cumplen para los marcos de React y Angular AEM en el caso de los entornos de trabajo de la plataforma de la plataforma de.** AEM Los requisitos de este modelo solo son relevantes si desea implementar otro marco de trabajo para utilizarlo con la.
+>**Estos requisitos ya se cumplen para los marcos de React y Angular AEM en la práctica de la.** AEM Los requisitos de este modelo solo son relevantes si desea implementar otro marco de trabajo para utilizarlo con la.
 
 >[!CAUTION]
 >
@@ -156,7 +156,7 @@ El contenedor obtiene dinámicamente los componentes secundarios del almacén de
 
 El `Page` El componente amplía el `Container` componente. Un contenedor es un componente diseñado para contener y procesar componentes secundarios, incluidas páginas secundarias. Para ello, el contenedor se repite sobre el `:itemsOrder`, `:items`, y `:children` propiedades de su modelo. El `Page` de forma dinámica obtiene los componentes secundarios del almacén del [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping) biblioteca. El `Page` es responsable de crear instancias de componentes secundarios.
 
-### Cuadrícula interactiva {#responsive-grid}
+### Cuadrícula adaptable {#responsive-grid}
 
 El componente Cuadrícula interactiva es un contenedor. Contiene una variante específica del proveedor de modelos que representa sus columnas. La cuadrícula adaptable y sus columnas son responsables de decorar el elemento HTML externo del componente del proyecto con los nombres de clase específicos contenidos en el modelo.
 

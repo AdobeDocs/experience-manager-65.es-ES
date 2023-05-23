@@ -1,5 +1,5 @@
 ---
-title: ClientContext
+title: Client Context
 seo-title: Client Context
 description: AEM Aprenda a utilizar Client Context en la aplicación de.
 seo-description: Learn how to use the Client Context in AEM.
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ---
 
-# ClientContext{#client-context}
+# Client Context{#client-context}
 
 >[!NOTE]
 >

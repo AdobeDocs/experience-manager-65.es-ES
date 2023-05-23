@@ -27,7 +27,7 @@ No se admite la publicación anónima de una revisión. Los visitantes del sitio
 
 ## Essentials para el lado del cliente {#essentials-for-client-side}
 
-### Críticas {#reviews}
+### Repasos {#reviews}
 
 <table>
  <tbody>

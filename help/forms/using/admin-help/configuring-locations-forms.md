@@ -67,7 +67,7 @@ El valor predeterminado es `com/adobe/formServer/PA/pa.xci`.
 
 **URI de mapa de fuente:** Ubicación relativa o absoluta del archivo de asignación de fuentes. AEM Para un valor relativo, se da por hecho que este archivo reside en el archivo EAR de formularios implementable que se puede implementar en el formulario de la aplicación.
 
-El archivo de asignación de fuentes se utiliza para crear asignaciones de fuentes personalizadas para las transformaciones de HTML en los formularios, lo que le permite especificar qué fuente se sustituirá cuando una fuente no esté disponible en el equipo del cliente.
+El archivo de asignación de fuentes se utiliza para crear asignaciones de fuentes personalizadas para las transformaciones de HTML en formularios, lo que le permite especificar qué fuente se sustituirá cuando una fuente no esté disponible en el equipo del cliente.
 
 El valor predeterminado es `com/adobe/formServer/client-font-map.properties`.
 

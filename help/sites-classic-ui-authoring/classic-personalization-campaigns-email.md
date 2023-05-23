@@ -1,7 +1,7 @@
 ---
 title: Marketing por correo electrónico
 seo-title: E-mail Marketing
-description: El marketing por correo electrónico (por ejemplo, boletines), constituye una parte importante de cualquier campaña de marketing, ya que se emplea para destacar contenidos con el fin de que estos lleguen a sus posibles clientes. En AEM, es posible crear boletines a partir de contenido existente de AEM, así como añadir contenido nuevo, específico para los boletines.
+description: El marketing por correo electrónico (por ejemplo, los boletines informativos) es una parte importante de cualquier campaña de marketing, ya que los utiliza para insertar contenido en los posibles clientes. AEM AEM En el caso de los boletines informativos, puede crear boletines informativos a partir de contenido existente, así como añadir contenido nuevo específico a los boletines informativos.
 seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
 uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
 contentOwner: User
@@ -14,7 +14,7 @@ exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1758'
-ht-degree: 96%
+ht-degree: 1%
 
 ---
 
@@ -22,136 +22,143 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->Adobe no tiene previsto mejorar aún más la función de seguimiento de correo electrónico abierto/devuelto (no entregable) enviado por el servicio SMTP de AEM.
->La recomendación es [ aprovechar Adobe Campaign y la integración a AEM](/help/sites-administering/campaign.md).
+>El Adobe AEM de no planea mejorar aún más el seguimiento por correo electrónico de los envíos abiertos/rechazados (no entregables) por el servicio SMTP de la.
+>La recomendación es [Aproveche Adobe Campaign AEM y la integración de para crear un entorno de trabajo con](/help/sites-administering/campaign.md).
 
-El marketing por correo electrónico (por ejemplo, boletines), constituye una parte importante de cualquier campaña de marketing, ya que se emplea para destacar contenidos con el fin de que estos lleguen a sus posibles clientes. En AEM, es posible crear boletines a partir de contenido existente de AEM, así como añadir contenido nuevo, específico para los boletines.
+El marketing por correo electrónico (por ejemplo, los boletines informativos) es una parte importante de cualquier campaña de marketing, ya que los utiliza para insertar contenido en los posibles clientes. AEM AEM En el caso de los boletines informativos, puede crear boletines informativos a partir de contenido existente, así como añadir contenido nuevo específico a los boletines informativos.
 
-Una vez creados, puede enviar los boletines a un grupo específico de usuarios de forma inmediata o en otro momento planificado (mediante el uso de un flujo de trabajo). Asimismo, los usuarios pueden suscribirse a boletines en el formato que seleccionen.
+Una vez creados, puede enviar boletines informativos al grupo específico de usuarios inmediatamente o en otra hora programada (mediante un flujo de trabajo). Además, los usuarios pueden suscribirse a los boletines en el formato que elijan.
 
-Asimismo, AEM permite administrar la funcionalidad de la newsletter, incluyendo el mantenimiento de temas, archivando newsletters y viendo estadísticas de la newsletter.
+AEM Además, le permite administrar la funcionalidad de la newsletter, lo que incluye el mantenimiento de los temas, el archivado de los boletines informativos y la visualización de las estadísticas de la newsletter.
 
 >[!NOTE]
 >
->En Geometrixx, la plantilla de newsletter se abre automáticamente en el editor de correo electrónico. El editor de correo electrónico se puede emplear en otras plantillas en las que desee enviar los correos; por ejemplo, invitaciones. El editor de correo electrónico se muestra siempre que una página se hereda de **mcm/components/newsletter/page**.
+>En Geometrixx, la plantilla de la newsletter abre automáticamente el editor de correo electrónico. Puede utilizar el editor de correo electrónico en otras plantillas en las que desee enviar correos electrónicos, por ejemplo, invitaciones. El editor de correo electrónico se muestra cada vez que se hereda una página de **mcm/components/newsletter/page**.
 
-En este documento se describen los conceptos básicos para crear boletines en AEM. Para obtener más información sobre cómo trabajar con estrategias de marketing por correo electrónico, consulte los siguientes documentos:
+AEM En este documento se describen los conceptos básicos para crear boletines informativos en la creación de informes de correo electrónico en la. Para obtener información más detallada sobre cómo trabajar con el marketing por correo electrónico, consulte los siguientes documentos:
 
-* [Crear una página de aterrizaje del boletín eficaz](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
+* [Creación de una página de aterrizaje de newsletter efectiva](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
 * [Administración de suscripciones](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
-* [Publicar un mensaje de correo electrónico para los proveedores de servicios de correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
-* [Seguimiento de correos electrónicos devueltos](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
+* [Publicación de un correo electrónico para proveedores de servicios de correo electrónico](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
+* [Seguimiento de correos electrónicos rechazados](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
 >
->Si actualiza los proveedores de correo electrónico, haga una prueba piloto o envíe un boletín; estas operaciones fallarán si el boletín no está publicado en la instancia Publicar o si esta instancia no está disponible. Asegúrese de publicar el boletín y de que la instancia Publicar funciona correctamente.
+>Si actualiza los proveedores de correo electrónico, realiza una prueba de vuelo o envía una newsletter, estas operaciones fallan si la newsletter no se publica primero en la instancia de publicación o si la instancia de publicación no está disponible. Asegúrese de publicar la newsletter y de que la instancia de publicación esté activa y en ejecución.
 
-## Crear una experiencia de boletín {#creating-a-newsletter-experience}
+## Creación de una experiencia de newsletter {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
->Las notificaciones por correo electrónico deben configurarse mediante la configuración de OSGI. Consulte [Configurar las notificaciones por correo electrónico.](/help/sites-administering/notification.md)
+>Las notificaciones por correo electrónico deben configurarse mediante la configuración de osgi. Consulte [Configuración de notificaciones por correo electrónico.](/help/sites-administering/notification.md)
 
-1. Seleccione la campaña nueva en el panel izquierdo o haga doble clic en el panel derecho.
+1. Seleccione la nueva campaña en el panel izquierdo o haga doble clic en ella en el panel derecho.
 
 1. Seleccione la vista de lista con el icono:
 
    ![](do-not-localize/mcm_icon_listview-1.png)
 
-1. Haga clic en **Nuevo...**
+1. Clic **Nuevo...**
 
-   Puede especificar el **Título**, **Nombre** y tipo de experiencia que se va a crear; en este caso, Newsletter.
+   Puede especificar la variable **Título**, **Nombre** y tipo de experiencia que se va a crear; en este caso, Newsletter.
 
    ![mcm_createnewsletter](assets/mcm_createnewsletter.png)
 
 1. Haga clic en **Crear**.
 
-1. Se abrirá un nuevo cuadro de diálogo inmediatamente. Aquí podrá especificar las propiedades del boletín.
+1. Se abrirá inmediatamente un nuevo cuadro de diálogo. Aquí puede introducir las propiedades de la newsletter.
 
-   La **Lista de destinatarios predeterminada** es un campo obligatorio ya que constituye el touchpoint del boletín (consulte [Uso de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) para obtener más información sobre las listas).
+   El **Lista de destinatarios predeterminada** es un campo obligatorio, ya que forma el punto de contacto de la newsletter (consulte [Uso de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) para obtener más información sobre listas).
 
    ![mcm_newnewsletterdialog](assets/mcm_newnewsletterdialog.png)
 
-   * **Nombre De** Nombre que aparecerá como remitente de la newsletter.
+   * **Nombre desde**
+Nombre que debe aparecer como remitente de la newsletter.
 
-   * **Dirección De** Dirección de correo que aparecerá como remitente de la newsletter.
+   * **Dirección desde**
+Dirección de correo que debe aparecer como remitente de la newsletter.
 
-   * **Asunto** Asunto de la newsletter.
+   * **Asunto**
+Asunto de la newsletter.
 
-   * **Responder a** Dirección de correo que enviará las respuestas de la newsletter enviada.
+   * **Responder a**
+Dirección de correo que enviará las respuestas de la newsletter enviada.
 
-   * **Descripción** Descripción de la newsletter.
+   * **Descripción**
+Descripción de la newsletter.
 
-   * **Tiempo de activación** Tiempo de activación para enviar la newsletter.
+   * **Tiempo de activación**
+El tiempo de activación para enviar la newsletter.
 
-   * **Lista de destinatarios predeterminada** Lista predeterminada de usuarios que deben recibir la newsletter.
-   Pueden actualizarse posteriormente desde el cuadro de diálogo **Propiedades...**.
+   * **Lista de destinatarios predeterminada**
+Lista predeterminada que debe recibir la newsletter.
+   Se pueden actualizar en una etapa posterior desde el **Propiedades...** diálogo.
 
-1. Haga clic en **Aceptar** para guardar.
+1. Clic **OK** para guardar.
 
-## Añadir contenido a boletines {#adding-content-to-newsletters}
+## Añadir contenido a los boletines {#adding-content-to-newsletters}
 
-Puede añadir contenido, incluyendo contenido dinámico, al boletín tal y como lo haría en cualquier componente de AEM. En Geometrixx, la plantilla de la newsletter dispone de determinados componentes disponibles para añadir y modificar el contenido de las newsletters.
+AEM Puede agregar contenido, incluido contenido dinámico, al boletín informativo como lo haría en cualquier componente de la lista de distribución de contenido de la lista de componentes de la lista de distribución de contenido En Geometrixx, la plantilla Newsletter tiene ciertos componentes disponibles para añadir y modificar contenido en los boletines.
 
-1. En, haga clic en la ficha **Campaigns** y haga doble clic en la newsletter que desee editar o a la que quiera añadir contenido. La newsletter se abre.
+1. En el MCM, haga clic en **Campañas** y haga doble clic en el boletín al que desee agregar contenido o editarlo. Se abre la newsletter.
 
-1. Si los componentes no se pueden ver, vaya a la vista Diseño y active los componentes necesarios (por ejemplo, los componentes de Newsletter) antes de comenzar la edición.
-1. Introduzca cualquier nuevo texto, imagen y otros componentes, según sea necesario. En el ejemplo de Geometrixx, hay 4 componentes disponibles: Texto, Imagen, Encabezado y 2 columnas. El boletín puede tener más o menos componentes en función de su configuración.
+1. Si los componentes no están visibles, vaya a la vista Diseño y habilite los componentes necesarios (por ejemplo, los componentes Newsletter) antes de empezar a editar.
+1. Introduzca texto, imágenes u otros componentes nuevos según corresponda. En el ejemplo de Geometrixx, hay 4 componentes disponibles: texto, imagen, encabezado y 2 columnas. La newsletter puede tener más o menos componentes en función de cómo la configure.
 
    >[!NOTE]
    >
-   >Los boletines se personalizan mediante el uso de variables. En el boletín de Geometrixx, las variables están disponibles en el componente Texto. Los valores para las variables se heredan de la información del perfil de usuario.
+   >Los boletines se personalizan mediante variables. En el boletín informativo de Geometrixx, las variables están disponibles en el componente Texto. Los valores de las variables se heredan de la información del perfil de usuario.
 
    ![mcm_newsletter_content](assets/mcm_newsletter_content.png)
 
-1. Para insertar variables, seleccione la variable de la lista y haga clic en **Insertar**. Las variables se rellenan desde el perfil.
+1. Para insertar variables, seleccione la variable en la lista y haga clic en **Insertar**. Las variables se rellenan desde el perfil.
 
-## Personalizar los boletines {#personalizing-newsletters}
+## Personalización de boletines {#personalizing-newsletters}
 
-Los boletines se personalizan insertando variables predefinidas en el componente Texto de los boletines en Geometrixx. Los valores para las variables se heredan de la información del perfil de usuario.
+Puede personalizar los boletines insertando variables predefinidas en el componente Texto de los boletines en Geometrixx. Los valores de las variables se heredan de la información del perfil de usuario.
 
-También puede simular el modo en que se personaliza una newsletter, utilizando ClientContext y cargando un archivo.
+También puede simular cómo se personaliza un boletín utilizando el contexto de cliente y cargando un perfil.
 
-Para personalizar una newsletter y simular su aspecto:
+Para personalizar un boletín informativo y simular el aspecto que tendrá:
 
-1. En MCM, abra la newsletter para la que desee personalizar la configuración.
+1. En el MCM, abra el boletín para el que desee personalizar la configuración.
 
 1. Abra el componente Texto que desee personalizar.
 
-1. Sitúe el cursor donde desee que aparezca la variable y seleccione una variable en la lista desplegable y haga clic en **Insertar**. Realice esta operación para tantas variables como sea necesario y haga clic en **Aceptar**.
+1. Coloque el cursor donde desee que aparezca la variable, seleccione una variable de la lista desplegable y haga clic en **Insertar**. Haga esto para tantas variables como sea necesario y haga clic en **OK**.
 
    ![mcm_newsletter_variables](assets/mcm_newsletter_variables.png)
 
-1. Para simular el aspecto que tendrá la variable cuando se envíe, presione Ctrl+ALT+C para abrir ClientContext y seleccione **Cargar**. Seleccione el usuario de la lista cuyo perfil desee cargar y haga clic en **Aceptar**.
+1. Para simular el aspecto que tendrá la variable cuando se envíe, presione CTRL+ALT+c para abrir el contexto de cliente y seleccione **Cargar**. Seleccione el usuario de la lista cuyo perfil desee cargar y haga clic en **OK**.
 
-   La información del perfil cargado ha rellenado las variables.
+   La información del perfil que ha cargado ha rellenado las variables.
 
    ![mc_newsletter_testvariables](assets/mc_newsletter_testvariables.png)
 
-## Probar boletines en diferentes clientes de correo electrónico {#testing-newsletters-in-different-e-mail-clients}
+## Prueba de boletines en diferentes clientes de correo electrónico {#testing-newsletters-in-different-e-mail-clients}
 
 >[!NOTE]
 >
 >Antes de enviar boletines informativos, compruebe la configuración de OSGi para el Day CQ Link Externalizer en `https://localhost:4502/system/console/configMgr`.
 >
->De forma predeterminada, el valor del parámetro es `localhost:4502` y la operación no podrá completarse si se cambia el puerto de ejecución de la instancia.
+>El valor predeterminado del parámetro es `localhost:4502` La operación y no se puede completar si se cambia el puerto de la instancia en ejecución.
 
-Cambie entre clientes de correo electrónico comunes para ver el aspecto que tendrá el boletín para los posibles clientes. De forma predeterminada, el boletín no se abre con ninguno de los clientes de correo electrónico seleccionados.
+Cambiar entre clientes de correo electrónico comunes para ver el aspecto que tendrá la newsletter para los posibles clientes. De forma predeterminada, la newsletter se abre sin seleccionar ninguno de los clientes de correo electrónico.
 
 Actualmente, puede ver los boletines en los siguientes clientes de correo electrónico:
 
-* Correo de Yahoo
+* Yahoo mail
 * Gmail
 * Hotmail
 * Thunderbird
 * Microsoft Outlook 2007
-* Apple Mail
+* Correo electrónico de Apple
 
-Para alternar entre clientes, haga clic en el icono correspondiente para ver el boletín en ese cliente de correo electrónico:
+Para cambiar entre clientes, haga clic en el icono correspondiente para ver la newsletter en ese cliente de correo electrónico:
 
-1. En MCM, abra la newsletter para la que desee personalizar la configuración.
+1. En el MCM, abra el boletín para el que desee personalizar la configuración.
 
-1. Haga clic en un cliente de correo electrónico en la barra superior para ver qué aspecto tendría la newsletter en ese cliente.
+1. Haga clic en un cliente de correo electrónico en la barra superior para ver el aspecto que tendría la newsletter en ese cliente.
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -159,138 +166,138 @@ Para alternar entre clientes, haga clic en el icono correspondiente para ver el 
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
-## Personalizar la configuración del boletín {#customizing-newsletter-settings}
+## Personalizar configuración de newsletter {#customizing-newsletter-settings}
 
-Aunque solo los usuarios autorizados pueden enviar un boletín, se debe personalizar lo siguiente:
+Aunque solo los usuarios autorizados pueden enviar una newsletter, debe personalizar lo siguiente:
 
-* La línea de asunto, para que los usuarios deseen abrir el correo y también garantizar que el boletín no termine marcado como correo no deseado.
-* La dirección De; por ejemplo, noreply@geometrixx.com, para que los usuarios reciban el correo electrónico desde una dirección especificada.
+* La línea de asunto, para que los usuarios quieran abrir su correo electrónico y también para asegurarse de que el boletín informativo no termine marcado como correo no deseado.
+* La dirección De, por ejemplo noreply@geometrixx.com, para que los usuarios reciban correo electrónico de una dirección especificada.
 
 Para personalizar la configuración de la newsletter:
 
-1. En MCM, abra la newsletter para la que desee personalizar la configuración.
+1. En el MCM, abra el boletín para el que desee personalizar la configuración.
 
    ![mcm_newsletter_open](assets/mcm_newsletter_open.png)
 
-1. En la parte superior de la newsletter, haga clic en **Ajustes**.
+1. En la parte superior de la newsletter, haga clic en **Configuración**.
 
    ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
-1. Indique la dirección de correo electrónico **De**.
+1. Introduzca el **Desde** dirección de correo electrónico
 
-1. Modifique el **Asunto** del correo, si es necesario.
+1. Modifique la **Asunto** del correo electrónico, si es necesario.
 
-1. Seleccione una **Lista de destinatarios predeterminada** de la lista desplegable.
+1. Seleccione una **Lista de destinatarios predeterminada** en la lista desplegable.
 
 1. Haga clic en **Aceptar**.
 
-   Cuando pruebe o envíe el boletín, los destinatarios recibirán correos electrónicos con el asunto y la dirección especificados.
+   Al probar o enviar la newsletter, los destinatarios recibirán correos electrónicos con la dirección de correo electrónico y el asunto especificados.
 
-## Prueba de envío de boletines {#flight-testing-newsletters}
+## Boletines de prueba de vuelo {#flight-testing-newsletters}
 
-Aunque la prueba de envío no es obligatoria, antes de enviar una, puede que desee probarla para asegurarse de que aparezca del modo deseado.
+Aunque las pruebas de vuelo no son obligatorias, antes de enviar una newsletter, es posible que desee probarla para asegurarse de que tenga el aspecto que desea.
 
-La prueba de envío permite lo siguiente:
+Las pruebas de vuelo le permiten hacer lo siguiente:
 
-* Ver el boletín en [todos los clientes de destino](#testing-newsletters-in-different-e-mail-clients).
-* Validar que el servidor de correo está configurado correctamente.
-* Determinar si el correo se marca como no deseado. (Asegúrese de incluirse a sí mismo en la lista de destinatarios).
+* Consulte la newsletter en [todos los clientes previstos](#testing-newsletters-in-different-e-mail-clients).
+* Compruebe que el servidor de correo está configurado correctamente.
+* Determine si el correo electrónico se marca como correo no deseado. (Asegúrese de incluirse en la lista de destinatarios).
 
 >[!NOTE]
 >
->Si actualiza los proveedores de correo electrónico, haga una prueba piloto o envíe un boletín; estas operaciones fallarán si el boletín no está publicado en la instancia Publicar o si esta instancia no está disponible. Asegúrese de publicar el boletín y de que la instancia Publicar funciona correctamente.
+>Si actualiza los proveedores de correo electrónico, realiza una prueba de vuelo o envía una newsletter, estas operaciones fallan si la newsletter no se publica primero en la instancia de publicación o si la instancia de publicación no está disponible. Asegúrese de publicar la newsletter y de que la instancia de publicación esté activa y en ejecución.
 
-Para probar los boletines:
+Para enviar boletines de prueba:
 
-1. En MCM, abra la newsletter que desee probar y enviar.
+1. En el MCM, abra la newsletter que desea probar y enviar.
 
-1. En la parte superior de la newsletter, haga clic en **Probar** para realizar la prueba antes del envío.
+1. En la parte superior de la newsletter, haga clic en **Prueba** para probar antes de enviar.
 
    ![mcm_newsletter_testsettings](assets/mcm_newsletter_testsettings.png)
 
-1. Especifique la dirección de correo de prueba donde desee enviar el boletín y haga clic en **Enviar**. Si desea cambiar el perfil, cargue otro en ClientContext. Para ello, presione Ctrl+ALT+C y seleccione Cargar para cargar el perfil.
+1. Introduzca la dirección de correo electrónico de prueba a la que desea enviar la newsletter y haga clic en **Enviar**. Si desea cambiar el perfil, se carga otro perfil en el contexto del cliente. Para ello, presione CTRL+ALT+c y seleccione Cargar y cargar un perfil.
 
-## Enviar boletines {#sending-newsletters}
+## Envío de boletines {#sending-newsletters}
 
 >[!NOTE]
 >
->Adobe no tiene previsto mejorar aún más la función de seguimiento de correo electrónico abierto/devuelto (no entregable) enviado por el servicio SMTP de AEM.
->La recomendación es [ aprovechar Adobe Campaign y la integración a AEM](/help/sites-administering/campaign.md).
+>El Adobe AEM de no planea mejorar aún más el seguimiento por correo electrónico de los envíos abiertos/rechazados (no entregables) por el servicio SMTP de la.
+>La recomendación es [Aproveche Adobe Campaign AEM y la integración de para crear un entorno de trabajo con](/help/sites-administering/campaign.md).
 
-El boletín se puede enviar desde el propio boletín o desde la lista. Se describen ambos procedimientos.
+Puede enviar una newsletter desde la newsletter o desde la lista. Se describen ambos procedimientos.
 
 >[!NOTE]
 >
 >Antes de enviar boletines informativos, compruebe la configuración de OSGi para el Day CQ Link Externalizer en `https://localhost:4502/system/console/configMgr`.
 >
->De forma predeterminada, el valor del parámetro es `localhost:4502` y la operación no podrá completarse si se cambia el puerto de ejecución de la instancia.
+>El valor predeterminado del parámetro es `localhost:4502` La operación y no se puede completar si se cambia el puerto de la instancia en ejecución.
 
 >[!NOTE]
 >
->Si actualiza los proveedores de correo electrónico, haga una prueba piloto o envíe un boletín; estas operaciones fallarán si el boletín no está publicado en la instancia Publicar o si esta instancia no está disponible. Asegúrese de publicar el boletín y de que la instancia Publicar funciona correctamente.
+>Si actualiza los proveedores de correo electrónico, realiza una prueba de vuelo o envía una newsletter, estas operaciones fallan si la newsletter no se publica primero en la instancia de publicación o si la instancia de publicación no está disponible. Asegúrese de publicar la newsletter y de que la instancia de publicación esté activa y en ejecución.
 
-### Enviar boletines desde una campaña {#sending-newsletters-from-a-campaign}
+### Envío de boletines informativos desde una campaña {#sending-newsletters-from-a-campaign}
 
-Para enviar un boletín desde la campaña:
+Para enviar una newsletter desde la campaña:
 
-1. En MCM, abra el boletín que desee enviar.
+1. En el MCM, abra la newsletter que desee enviar.
 
    >[!NOTE]
    >
-   >Antes de realizar el envío, compruebe que haya personalizado el asunto del boletín y originado una dirección de correo electrónico; para ello, debe [personalizar su configuración](#customizing-newsletter-settings).
+   >Antes de enviar, asegúrese de haber personalizado el asunto de la newsletter y la dirección de correo electrónico de origen mediante [personalizar su configuración](#customizing-newsletter-settings).
    >
    >
-   >Se recomienda llevar a cabo la [prueba de envío ](#flight-testing-newsletters)de boletines antes de enviar nada.
+   >[Pruebas de vuelo](#flight-testing-newsletters) se recomienda usar la newsletter antes de enviar.
 
-1. En la parte superior del boletín, haga clic en **Enviar**. Se abrirá el asistente para newsletters.
+1. En la parte superior de la newsletter, haga clic en **Enviar**. Se abre el asistente Newsletter.
 
-1. En la lista de destinatarios, seleccione la lista que desee que reciba la newsletter y haga clic en **Siguiente**.
+1. En la lista de destinatarios, seleccione la lista en la que desea recibir la newsletter y haga clic en **Siguiente**.
 
    ![mcm_newslettersend](assets/mcm_newslettersend.png)
 
-1. El final de la configuración se ha confirmado. Haga clic en **Enviar** para mandar realmente el boletín.
+1. Se ha confirmado la instalación. Clic **Enviar** para enviar la newsletter.
 
    ![mcm_newslettersendconfirm](assets/mcm_newslettersendconfirm.png)
 
    >[!NOTE]
    >
-   >Asegúrese de ser uno de los destinatarios para que pueda comprobar la recepción de la newsletter.
+   >Asegúrese de que es uno de los destinatarios para poder asegurarse de que se recibió la newsletter.
 
-### Envío de newsletters desde una lista {#sending-newsletters-from-a-list}
+### Envío de boletines informativos desde una lista {#sending-newsletters-from-a-list}
 
-Para enviar un boletín desde una lista:
+Para enviar una newsletter desde una lista:
 
-1. En MCM, haga clic en **Listas** en el panel izquierdo.
+1. En el MCM, haga clic en **Listas** en el panel izquierdo.
 
    >[!NOTE]
    >
-   >Antes de realizar el envío, compruebe que haya personalizado el asunto del boletín y originado una dirección de correo electrónico; para ello, debe [personalizar su configuración](#customizing-newsletter-settings). No es posible probar un boletín si se envía desde la lista; puede [probarlo](#flight-testing-newsletters) si lo envía desde el propio boletín.
+   >Antes de enviar, asegúrese de haber personalizado el asunto de la newsletter y la dirección de correo electrónico de origen mediante [personalizar su configuración](#customizing-newsletter-settings). No puede probar una newsletter si la envía desde la lista; puede [prueba vuelo](#flight-testing-newsletters) Seleccione esta opción si lo envía desde el boletín informativo.
 
-1. Active la casilla de verificación situada junto a la lista de posibles clientes a los que desee enviar la newsletter.
+1. Seleccione la casilla de verificación situada junto a la lista de posibles clientes a los que desea enviar una newsletter.
 
-1. En el menú **Herramientas**, seleccione **Enviar boletín**. Se abrirá la ventana **Enviar boletín**.
+1. En el **Herramientas** menú, seleccione **Enviar newsletter**. El **Enviar newsletter** se abre.
 
    ![mcm_newslettersendfromlist](assets/mcm_newslettersendfromlist.png)
 
-1. En el campo **Newsletter**, elija la newsletter que desee enviar y haga clic en **Siguiente**.
+1. En el **Newsletter** , seleccione la newsletter que desee enviar y haga clic en **Siguiente**.
 
    ![mcm_newslettersenddialog](assets/mcm_newslettersenddialog.png)
 
-1. El final de la configuración se ha confirmado. Haga clic en **Enviar** para enviar el boletín seleccionado a la lista especificada de posibles clientes.
+1. Se ha confirmado la instalación. Clic **Enviar** para enviar la newsletter seleccionada a la lista especificada de posibles clientes.
 
    ![mcm_newslettersenddialog_confirmation](assets/mcm_newslettersenddialog_confirmation.png)
 
-   La newsletter se enviará a los destinatarios seleccionados.
+   La newsletter se envía a los destinatarios seleccionados.
 
-## Suscripción al boletín {#subscribing-to-a-newsletter}
+## Suscripción a una newsletter {#subscribing-to-a-newsletter}
 
-En esta sección se describe cómo suscribirse a un boletín.
+En esta sección se describe cómo suscribirse a un boletín informativo.
 
-### Suscripción al boletín {#subscribing-to-a-newsletter-1}
+### Suscripción a una newsletter {#subscribing-to-a-newsletter-1}
 
-Para suscribirse a una newsletter (usando el sitio web de Geometrixx como ejemplo):
+Para suscribirse a una newsletter (utilizando el sitio web del Geometrixx como ejemplo):
 
-1. Haga clic en **Sitios web** y desplácese a la **Barra de herramientas** de Geometrixx y ábrala.
+1. Clic **Sitios web** y vaya a la Geometrixx **Barra de herramientas** y ábrela.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
-1. En el campo **Registrarse** del boletín de Geometrixx, introduzca la dirección de correo electrónico y haga clic en **Registrarse**. Ahora está suscrito a la newsletter.
+1. En la Newsletter de Geometrixx **Registrarse** , introduzca su dirección de correo electrónico y haga clic en **Registrarse**. Ahora está suscrito a la newsletter.

@@ -146,7 +146,7 @@ Para los fines de esta zona protegida, comience con lo siguiente **Communities**
 * Comentarios
 * Foro
 * Clasificación
-* Críticas
+* Repasos
 * Resumen de críticas (visualización)
 * Votación
 

@@ -124,7 +124,7 @@ Para que la configuración idéntica esté disponible en el entorno de publicaci
 * En autor:
 
    * Vaya del menú principal a **[!UICONTROL Herramientas]** > **[!UICONTROL Operaciones]** > **[!UICONTROL Replicación]**
-   * Haga doble clic en **[!UICONTROL Activar árbol]**
+   * Doble clic **[!UICONTROL Activar árbol]**
    * **Ruta de inicio**:
 
       * Navegar a `/etc/socialconfig/srpc/`

@@ -22,7 +22,7 @@ ht-degree: 0%
 
 La intención de [superposición](/help/communities/client-customize.md#overlays) un componente predeterminado es modificar el aspecto o el comportamiento de un componente globalmente, para todas las referencias relativas al componente. Se basa en la naturaleza de sling para resolver en la carpeta /apps antes de buscar en la carpeta /libs. Por lo tanto, la ruta al componente es idéntica a la ruta al componente predeterminado, excepto que se encuentra en la carpeta /apps y no en la carpeta /libs.
 
-## Ejemplo {#example}
+## Ejemplos {#example}
 
 **Componente Comentarios de superposición**
 

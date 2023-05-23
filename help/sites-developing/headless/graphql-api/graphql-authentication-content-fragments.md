@@ -12,13 +12,13 @@ ht-degree: 61%
 
 # Autenticación para consultas de AEM de GraphQL remotas en fragmentos de contenido {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Un caso de uso principal para La variable [API de Adobe Experience Manager (AEM) GraphQL para la entrega de fragmentos de contenido](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) es aceptar consultas remotas desde aplicaciones o servicios de terceros. Estas consultas remotas pueden requerir acceso a API autenticado para asegurar la entrega de contenido sin encabezado.
+Un caso de uso principal para [API de Adobe Experience Manager AEM () GraphQL para la entrega de fragmentos de contenido](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) es aceptar consultas remotas desde aplicaciones o servicios de terceros. Estas consultas remotas pueden requerir acceso a API autenticado para asegurar la entrega de contenido sin encabezado.
 
 >[!NOTE]
 >
 >Para pruebas y desarrollo, también puede acceder a la API de GraphQL de AEM directamente mediante la [Interfaz de GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
 
-Para la autenticación, el servicio de terceros debe autenticarse utilizando el nombre de usuario y la contraseña de la cuenta de AEM.
+AEM Para la autenticación, el servicio de terceros debe autenticarse con el nombre de usuario y la contraseña de la cuenta de la cuenta de la.
 
 <!-- 6.5.10.0 - does this content/page need to be migrated? -->
 

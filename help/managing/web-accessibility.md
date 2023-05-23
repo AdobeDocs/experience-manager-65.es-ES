@@ -5,11 +5,11 @@ exl-id: db8785b9-09eb-444a-addc-74c520e710a9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '415'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
-# AEM y las directrices de accesibilidad web {#aem-and-the-web-accessibility-guidelines}
+# AEM Directrices de accesibilidad web de y{#aem-and-the-web-accessibility-guidelines}
 
 Existen muchas motivaciones sociales, económicas y legales para garantizar que el contenido web esté diseñado para ser lo más accesible posible a la audiencia de destino, sin importar la discapacidad o las limitaciones que pueda tener. Por lo tanto, la accesibilidad web con Adobe Experience Manager AEM () es un aspecto cada vez más importante del buen diseño web.
 

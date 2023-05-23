@@ -1,5 +1,5 @@
 ---
-title: Web para móvil
+title: Web móvil
 seo-title: Mobile Web
 description: AEM proporciona varias herramientas que le permiten desarrollar sitios para dispositivos móviles e integrar el contenido en aplicaciones móviles
 seo-description: AEM provides several tools that enable you to develop sites for mobile devices and to integrate your content into mobile applications
@@ -14,11 +14,11 @@ exl-id: 309d256b-c67c-4df9-8851-b1ee3faa55ed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
-# Web para móvil{#mobile-web}
+# Web móvil{#mobile-web}
 
 >[!NOTE]
 >

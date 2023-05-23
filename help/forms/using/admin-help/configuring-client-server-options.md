@@ -761,7 +761,7 @@ En el fichero de configuración de Document Security, se puede especificar la fr
 1. Abra el archivo de configuración en un editor y busque el `PolicyServer` nodo. En ese nodo, busque `ServerSettings` nodo.
 1. En el `ServerSettings` , agregue esta entrada y, a continuación, guarde el archivo:
 
-   `<entry key="BackgroundSyncFrequency" value="`*time* `"/>`
+   `<entry key="BackgroundSyncFrequency" value="`*hora* `"/>`
 
    donde *hora* es el número de segundos entre sincronizaciones automáticas en segundo plano. Si envió este valor a `0`, la sincronización siempre se produce. El valor predeterminado es `14400` segundos (cada cuatro horas).
 
@@ -798,7 +798,7 @@ Si alguna información no es aplicable, la aplicación cliente deja en blanco el
 
 Varias aplicaciones de Adobe incluyen información del producto al solicitar servicios de seguridad de documentos, incluidas las extensiones de Acrobat, Adobe Reader y Acrobat Reader DC para Microsoft Office.
 
-**Acrobat y Adobe Reader**
+**ACROBAT y ADOBE READER**
 
 Cuando Acrobat o Adobe Reader solicitan un servicio de Document Security, proporcionan la siguiente información del producto:
 

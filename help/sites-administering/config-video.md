@@ -13,7 +13,7 @@ exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
 source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '489'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ Para que se produzca la transcodificación adecuada, un administrador instala FF
 
 >[!CAUTION]
 >
->Este componente de base ya no se utiliza. Adobe recomienda aprovechar el [Componente incrustado de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) en su lugar.
+>Este componente de base se ha desaprobado. Adobe recomienda aprovechar el [Componente incrustado de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) en su lugar.
 
 >[!CAUTION]
 >

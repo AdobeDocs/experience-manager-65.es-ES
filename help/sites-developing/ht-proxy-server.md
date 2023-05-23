@@ -104,7 +104,7 @@ Muestra el número de bytes que pasaron entre el cliente ( `C`) y el servidor ( 
 
 Por ejemplo, considere una página que produzca el siguiente código cuando se solicite:
 
-### Ejemplo {#example}
+### Ejemplos {#example}
 
 Por ejemplo, considere un documento HTML muy sencillo ubicado en el repositorio en
 

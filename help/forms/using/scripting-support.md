@@ -14,7 +14,7 @@ exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 source-git-commit: c4045313200ffecbf05abfacd67aabc80ad67e7f
 workflow-type: tm+mt
 source-wordcount: '3892'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -74,7 +74,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
   </tr>
   <tr>
    <td>keydown</td>
-   <td>Determina si un usuario utiliza las teclas de flecha para realizar una selección. Esta propiedad sólo está disponible para cuadros de lista y listas desplegables.</td>
+   <td>Determina si un usuario está presionando una tecla de dirección para realizar una selección. Esta propiedad solo está disponible para cuadros de lista y listas desplegables.</td>
    <td>Ninguno</td>
   </tr>
   <tr>
@@ -141,7 +141,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
   </tr>
   <tr>
    <td><code>pageDown</code></td>
-   <td>Avanza a la siguiente página de un formulario. Utilice el método pageDown en tiempo de ejecución.</td>
+   <td>Se desplaza a la siguiente página de un formulario. Utilice el método pageDown durante la ejecución.</td>
    <td> </td>
   </tr>
   <tr>
@@ -959,7 +959,7 @@ Las propiedades de JavaScript, FormCalc y los métodos compatibles con los formu
   </tr>
   <tr>
    <td>dataNode</td>
-   <td>Consigue el nodo de datos al que está vinculado un nodo de formularios tras la fusión.</td>
+   <td>Obtiene el nodo de datos al que está enlazado un nodo de formulario después de la combinación.</td>
    <td>Ninguno</td>
   </tr>
   <tr>

@@ -498,7 +498,7 @@ Almacena en déclencheur el evento ready cuando finaliza la consulta. Si no se e
 
 * **recargar:** (Booleano) Un valor true elimina la respuesta almacenada en caché y fuerza la llamada al servicio JSONP.
 
-#### reset {#reset}
+#### restablecer {#reset}
 
 Restablece los valores iniciales de los datos persistentes del almacén y, a continuación, llama al servicio JSONP. De forma opcional, puede eliminar todos los demás datos del almacén. El evento se detiene para este almacén mientras se restablecen los valores iniciales. Esta función no devuelve ningún valor.
 
@@ -787,7 +787,7 @@ If `triggerForPastEvents` es `false`, esta función no devuelve ningún valor.
 
 ## ContextHub.Utils.inheritance {#contexthub-utils-inheritance}
 
-Clase de utilidad que permite a un objeto heredar las propiedades y los métodos de otro objeto.
+Clase de utilidad que permite a un objeto heredar las propiedades y métodos de otro objeto.
 
 ### Funciones (ContextHub.Utils.inheritance) {#functions-contexthub-utils-inheritance}
 

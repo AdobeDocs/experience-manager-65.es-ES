@@ -14,7 +14,7 @@ exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 99%
+ht-degree: 57%
 
 ---
 
@@ -24,19 +24,19 @@ AEM le permite configurar su cuenta y ciertos aspectos del entorno de creación.
 
 Mediante la opción [Usuario](/help/sites-authoring/user-properties.md#user-settings) del [encabezado](/help/sites-authoring/basic-handling.md#the-header) y el cuadro de diálogo [Mis preferencias](#userpreferences) asociado, puede modificar las opciones de usuario.
 
-Para comenzar, acceda a la opción [Usuario](/help/sites-authoring/user-properties.md#user-settings) en el encabezado. 
+Comience por acceder a [Usuario](/help/sites-authoring/user-properties.md#user-settings) en el encabezado.
 
 ## Configuración de usuario {#user-settings}
 
-El cuadro de diálogo **Configuración de usuario** le permite acceder a lo siguiente:
+El **Usuario** El cuadro de diálogo de configuración le permite acceder a:
 
 * Suplantar como
 
-   * Con la función [Suplantar como](/help/sites-administering/security.md#impersonating-another-user), un usuario puede trabajar en nombre de otro usuario.
+   * Con el [Suplantar como](/help/sites-administering/security.md#impersonating-another-user) funcionalidad un usuario puede trabajar en nombre de otro usuario.
 
 * Perfil
 
-   * Ofrece un práctico vínculo a la [Configuración del usuario](/help/sites-administering/security.md). 
+   * Ofrece un práctico enlace a su [configuración de usuario](/help/sites-administering/security.md))
 
 * [Mis preferencias](/help/sites-authoring/user-properties.md#my-preferences)
 
@@ -54,36 +54,36 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
 * **Idioma**
 
-   Se trata del idioma que se utiliza para la IU del entorno de creación. Seleccione el idioma requerido de la lista disponible.
+   Define el idioma que se utilizará para la interfaz de usuario del entorno de creación. Seleccione el idioma en la lista disponible.
 
    Esta configuración también se utiliza para la IU clásica.
 
 * **Gestión de ventanas**
 
-   Esta opción permite definir el comportamiento o la apertura de las ventanas. Seleccione:
+   Define el comportamiento para abrir ventanas. Seleccione:
 
-   * **Varias ventanas** (predeterminado)
+   * **Varias ventanas** (Predeterminado)
 
-      * Las páginas se abren en una nueva ventana.
+      * Las páginas se abrirán en una nueva ventana.
    * **Ventana única**
 
-      * Las páginas se abren en la ventana actual.
+      * Las páginas se abrirán en la ventana actual.
 
 
 * **Mostrar las acciones del escritorio para Assets**
 
-   Esta opción requiere la utilización de la aplicación de escritorio de AEM.
+   AEM Esta opción requiere que utilice la aplicación de escritorio de la.
 
 * **Color de anotación**
 
-   Define el color predeterminado que se utiliza al crear anotaciones.
+   Define el color predeterminado que se utiliza para realizar anotaciones.
 
-   * Haga clic en el bloque de color para abrir el selector de muestras para seleccionar un color.
+   * Haga clic en el bloque de colores para abrir el selector de muestras y seleccionar un color.
    * Como alternativa, introduzca el código hexadecimal del color deseado en el campo. 
 
 * **Presentación de fecha relativa**
 
-   Para mejorar la legibilidad, AEM procesará las fechas dentro de los últimos siete días como fechas relativas (por ejemplo, hace tres días) y las fechas más antiguas como fechas exactas (por ejemplo, el 20 de marzo de 2017).
+   AEM Para mejorar la legibilidad, las fechas procesadas dentro de los últimos siete días se procesarán como fechas relativas (por ejemplo, hace tres días) y las fechas más antiguas como fechas exactas (por ejemplo, el 20 de marzo de 2017).
 
    Esta opción define el modo en que se muestran las fechas del sistema. Las opciones disponibles son las siguientes:
 
@@ -105,11 +105,11 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
    * [Métodos abreviados del teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
 
-   Esta opción habilita los métodos abreviados del teclado. De manera predeterminada, los métodos abreviados están habilitados, pero se pueden deshabilitar; por ejemplo, si un usuario tiene determinados requisitos de accesibilidad.
+   Esta opción habilita los métodos abreviados de teclado. De forma predeterminada están habilitadas, pero se pueden deshabilitar, por ejemplo, si un usuario tiene ciertos requisitos de accesibilidad.
 
 * **Usar experiencia de autoría clásica**
 
-   Esta opción permite la creación de páginas basada en la [IU clásica](/help/sites-classic-ui-authoring/home.md). De forma predeterminada, se utiliza la IU estándar. 
+   Esta opción habilita [IU clásica](/help/sites-classic-ui-authoring/home.md)Creación de páginas basada en. De forma predeterminada, se utiliza la interfaz de usuario estándar.
 
 * **Activar la página principal de los recursos**
 
@@ -117,4 +117,4 @@ Cada usuario puede establecer determinadas propiedades para sí mismo.
 
 * **Configuración de Stock**
 
-   Esta opción permite especificar la configuración preferida de Adobe Stock y solo estará disponible si el administrador del sistema ha activado [la integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+   Esta opción permite especificar la configuración preferida de Adobe Stock y solo estará disponible si el administrador del sistema ha activado [Integración de Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

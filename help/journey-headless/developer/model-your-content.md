@@ -214,7 +214,7 @@ Desde el principio, debe habilitar los modelos de fragmento de contenido para su
 >
 >Consulte Recursos adicionales: Fragmentos de contenido en el explorador de configuración
 
-A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede hacer en Herramientas -> Recursos -> Modelos de fragmento de contenido. Por ejemplo:
+A continuación, se pueden crear los modelos de fragmento de contenido y definir la estructura. Esto se puede hacer en Herramientas -> Recursos -> Modelos de fragmentos de contenido. Por ejemplo:
 
 ![Modelo de fragmento de contenido](assets/cfm-model.png)
 

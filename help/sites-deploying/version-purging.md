@@ -93,7 +93,7 @@ Por ejemplo, al definir el número máximo de versiones que se van a conservar Y
 
    * `maxAgeDays` = 30
 
-* Mediante una de las opciones siguientes:
+* Con:
 
    * 10 versiones realizadas en los últimos 60 días
    * 3 de esas versiones creadas en los últimos 30 días
@@ -110,7 +110,7 @@ Por ejemplo, al definir el número máximo Y mínimo de versiones que se van a c
    * `maxAgeDays` = 30
    * `minNumberVersions` = 3
 
-* Mediante una de las opciones siguientes:
+* Con:
 
    * 5 versiones realizadas hace 60 días
 

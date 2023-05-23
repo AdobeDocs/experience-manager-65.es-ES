@@ -1,5 +1,5 @@
 ---
-title: Pautas para configurar el tamaño del hardware
+title: Directrices de tamaño de hardware
 seo-title: Hardware Sizing Guidelines
 description: AEM Estas directrices de tamaño ofrecen una aproximación de los recursos de hardware necesarios para implementar un proyecto de.
 seo-description: These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project.
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ---
 
-# Pautas para configurar el tamaño del hardware {#hardware-sizing-guidelines}
+# Directrices de tamaño de hardware{#hardware-sizing-guidelines}
 
 AEM Estas directrices de tamaño ofrecen una aproximación de los recursos de hardware necesarios para implementar un proyecto de. Las estimaciones de tamaño dependen de la arquitectura del proyecto, la complejidad de la solución, el tráfico esperado y los requisitos del proyecto. Esta guía le ayuda a determinar las necesidades de hardware para una solución específica, o a encontrar una estimación superior e inferior para los requisitos de hardware.
 

@@ -1,6 +1,6 @@
 ---
 title: Uso de etiquetas para clasificar contenido en un sitio web
-description: Las etiquetas son un método rápido y fácil de clasificar contenido dentro de un sitio web.
+description: Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web.
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,7 +18,7 @@ ht-degree: 66%
 
 # Uso de etiquetas{#using-tags}
 
-Las etiquetas son un método rápido y fácil de clasificar contenido dentro de un sitio web. Las etiquetas se pueden considerar como palabras clave o etiquetas que se pueden adjuntar a una página, un recurso u otro contenido para permitir que las búsquedas encuentren ese contenido y el contenido relacionado.
+Las etiquetas son un método rápido y sencillo de clasificar contenido dentro de un sitio web. Las etiquetas se pueden considerar palabras clave o etiquetas que se pueden adjuntar a una página, un recurso u otro contenido para permitir las búsquedas y encontrar ese contenido y el contenido relacionado.
 
 * Consulte [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre la creación y administración de etiquetas, así como sobre las etiquetas de contenido que se han aplicado.
 * Consulte [Etiquetado para desarrolladores](/help/sites-developing/tags.md) para obtener información sobre el marco de etiquetado, así como la forma de incluir y ampliar las etiquetas en aplicaciones personalizadas.
@@ -34,7 +34,7 @@ Las etiquetas son un método rápido y fácil de clasificar contenido dentro de 
 1. **Habilitación de SEO**: las etiquetas aplicadas como propiedades de página se mostrarán automáticamente en las metaetiquetas de la página, por lo que serán visibles a los motores de búsqueda.
 1. **Sofisticación simple**: las etiquetas se pueden crear simplemente a partir de una palabra y pulsar un botón. Después, se pueden añadir un título, una descripción y marcas ilimitadas para proporcionar más semántica a la etiqueta.
 1. **Consistencia central**: el sistema de etiquetado es un componente central de AEM que todas las capacidades de AEM utilizan para categorizar contenido. Además, la API de etiquetado está disponible para los desarrolladores para que creen aplicaciones compatibles con el etiquetado con acceso a las mismas taxonomías.
-1. **Combina estructura y flexibilidad**: AEM es ideal para trabajar con información estructurada, ya que anida páginas y rutas de acceso. Es igualmente útil cuando se trabaja con información no estructurada, debido a la búsqueda de texto completo incorporada. El etiquetado combina las ventajas de la estructura y la flexibilidad.
+1. **Combina estructura y flexibilidad**: AEM es ideal para trabajar con información estructurada, ya que anida páginas y rutas de acceso. Es igualmente potente cuando se trabaja con información no estructurada, debido a la búsqueda de texto completo integrada. El etiquetado combina las ventajas tanto de la estructura como de la flexibilidad.
 
 Al diseñar la estructura de contenido para un sitio y el esquema de metadatos para los recursos, tenga en cuenta el enfoque ligero y accesible que proporciona el etiquetado.
 
@@ -42,9 +42,9 @@ Al diseñar la estructura de contenido para un sitio y el esquema de metadatos p
 
 En el entorno de creación, los creadores pueden aplicar etiquetas si acceden a las propiedades de página e introducen una o varias etiquetas en el campo **Etiquetas y palabras clave**.
 
-Para aplicar [etiquetas predefinidas](/help/sites-administering/tags.md), en el **Propiedades de página** utilice el **Etiquetas** y **Seleccionar etiquetas** ventana. La pestaña **Etiquetas estándar** es el espacio de nombres predeterminado, lo que indica que no hay un valor `namespace-string:` prefijado a la taxonomía.
+Para aplicar [etiquetas predefinidas](/help/sites-administering/tags.md), en el **Propiedades de página** ventana use el **Etiquetas** y el **Seleccionar etiquetas** ventana. La pestaña **Etiquetas estándar** es el espacio de nombres predeterminado, lo que indica que no hay un valor `namespace-string:` prefijado a la taxonomía.
 
-![Seleccionar la ventana Etiquetas ; utilice el botón X para anular la selección de las etiquetas seleccionadas actualmente](assets/chlimage_1-41.png)
+![Ventana Seleccionar etiquetas; utilice el botón X para anular la selección de las etiquetas seleccionadas actualmente](assets/chlimage_1-41.png)
 
 ### Publicación de etiquetas {#publishing-tags}
 
@@ -58,7 +58,7 @@ Al igual que con las páginas, puede realizar lo siguiente en etiquetas y áreas
 
 >[!NOTE]
 >
->Al activar una página, se abre automáticamente un cuadro de diálogo que le permite activar las etiquetas desactivadas que pertenecen a la página.
+>Al activar una página, se abre automáticamente un cuadro de diálogo que le permite activar las etiquetas no activadas que pertenecen a la página.
 
 **Desactivar**
 

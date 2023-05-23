@@ -526,7 +526,7 @@ El componente de almacén de contexto requiere un cuadro de diálogo de edición
    |---|---|---|
    | cls | Cadena | x-form-fieldset-description |
    | text | Cadena | El componente geoloc no requiere ninguna configuración. |
-   | xtype | Cadena | static |
+   | xtype | Cadena | estático |
 
 1. Haga clic en Guardar todo.
 

@@ -14,7 +14,7 @@ exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1222'
-ht-degree: 7%
+ht-degree: 2%
 
 ---
 
@@ -130,7 +130,7 @@ Puede añadir campos a la definición del perfil. Por ejemplo, para agregar un c
    * **Título** - `Favorite Color`
    * **Elementos** - Añadir varios colores como elementos
 
-   Haga clic en **Aceptar** para guardar.
+   Clic **OK** para guardar.
 
 1. Cierre la página y vuelva al **Sitios web** y active la página Mi perfil.
 
@@ -174,7 +174,7 @@ Un proveedor de estado administra el estado actual de la propiedad en cuestión,
 Los proveedores de estado se implementan como componentes, por lo que se pueden personalizar para el proyecto. En Geometrixx, estos incluyen:
 
 * Suscribirse/cancelar suscripción de tema de foro
-* Agregar/eliminar amigo
+* Agregar o quitar amigo
 
 ### Flujos de trabajo {#workflows}
 
@@ -213,12 +213,12 @@ También hay disponible una serie de componentes de perfil para definir los requ
 
 ### Campo de contraseña activado {#checked-password-field}
 
-Este componente proporciona dos campos para:
+Este componente le proporciona dos campos para:
 
-* La introducción de una contraseña.
-* Una verificación para confirmar que la contraseña se ha escrito correctamente.
+* la entrada de una contraseña
+* una comprobación para confirmar que la contraseña se ha introducido correctamente.
 
-Con la configuración predeterminada el componente aparecerá del modo siguiente:
+Con la configuración predeterminada, el componente aparecerá de la siguiente manera:
 
 ![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
 
@@ -230,7 +230,7 @@ Este componente proporciona al usuario un mecanismo para seleccionar y cargar un
 
 ### Nombre detallado de perfil {#profile-detailed-name}
 
-Ese componente permite que usuario introduzca un nombre detallado.
+Este componente permite al usuario introducir un nombre detallado.
 
 ![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
 

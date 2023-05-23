@@ -12,7 +12,7 @@ exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '3511'
-ht-degree: 18%
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 18%
 
 Puede ver los recursos del Experience Manager publicados en Dynamic Media Classic (Scene7) en varios visores:
 
-* Zoom
+* Acercar o alejar
 * Flotante
 * Vídeo
 * Plantilla de imagen
@@ -30,7 +30,7 @@ Puede ver los recursos del Experience Manager publicados en Dynamic Media Classi
 
 Puede publicar recursos digitales directamente desde Experience Manager a Dynamic Media Classic (Scene7) y publicar recursos digitales desde Dynamic Media Classic (Scene7) a Experience Manager.
 
-En este documento se describe cómo publicar recursos digitales de Experience Manager en Dynamic Media Classic (Scene7) y a la inversa. Los visores también se describen en detalle. Para obtener información sobre la configuración de Experience Manager para Dynamic Media Classic (Scene7), consulte [Integración de Dynamic Media Classic (Scene7) con Experience Manager](/help/sites-administering/scene7.md).
+En este documento se describe cómo publicar recursos digitales de Experience Manager en Dynamic Media Classic (Scene7) y a la inversa. Los espectadores también se describen en detalle. Para obtener información sobre la configuración de Experience Manager para Dynamic Media Classic (Scene7), consulte [Integración de Dynamic Media Classic (Scene7) con Experience Manager](/help/sites-administering/scene7.md).
 
 Consulte también [Añadir mapas de imagen](/help/assets/image-maps.md).
 
@@ -78,13 +78,13 @@ Para publicar en Dynamic Media Classic (Scene7) directamente desde un recurso di
 
 1. En Experience Manager, seleccione **[!UICONTROL Recursos digitales]** para acceder al administrador de recursos digitales.
 
-1. Haga doble clic en dicha opción para abrir un recurso.
+1. Haga doble clic para abrir un recurso.
 
 1. En el panel de detalles del recurso, seleccione **[!UICONTROL Publicación en Dynamic Media Classic (Scene7)]**.
 
    ![screen_shot_2012-02-22at34828pm](assets/screen_shot_2012-02-22at34828pm.png)
 
-1. El vínculo cambia a **[!UICONTROL Publicando...]** y, a continuación, a **[!UICONTROL Publicado]**. Vaya a Dynamic Media Classic (Scene7) y confirme que el recurso está disponible.
+1. El vínculo cambia a **[!UICONTROL Publicando...]** y luego **[!UICONTROL Publicado]**. Vaya a Dynamic Media Classic (Scene7) y confirme que el recurso está disponible.
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ El Adobe recomienda publicar los recursos en Dynamic Media Classic (Scene7) úni
 
 **Para publicar recursos desde fuera de la carpeta de destino de CQ:**
 
-1. En Experience Manager, en la IU clásica, seleccione **[!UICONTROL Sitios web]** y vaya a la página web a la que desee agregar un recurso digital que aún no se haya publicado en Dynamic Media Classic (Scene7). (Se aplican las reglas de herencia de página habituales).
+1. En Experience Manager, en la IU clásica, seleccione **[!UICONTROL Sitios web]** y vaya a la página web a la que desee agregar un recurso digital que aún no se haya publicado en Dynamic Media Classic (Scene7). (Se aplican reglas normales de herencia de página).
 
 1. En la barra de tareas, seleccione **[!UICONTROL Página]** y seleccione **[!UICONTROL Propiedades de página]**.
 
@@ -112,7 +112,7 @@ El Adobe recomienda publicar los recursos en Dynamic Media Classic (Scene7) úni
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
 1. En la página web, agregue un componente Dynamic Media Classic (Scene7) a la ubicación deseada en la página.
-1. En el buscador de contenido, arrastre un recurso digital hasta el componente. Verá un vínculo a **[!UICONTROL Comprobar el estado de publicación de Dynamic Media Classic (Scene7)]**.
+1. Desde el buscador de contenido, arrastre un recurso digital al componente. Verá un vínculo a **[!UICONTROL Comprobar el estado de publicación de Dynamic Media Classic (Scene7)]**.
 
    >[!NOTE]
    >
@@ -130,8 +130,8 @@ El Adobe recomienda publicar los recursos en Dynamic Media Classic (Scene7) úni
 
 Los siguientes componentes de Dynamic Media Classic (Scene7) están disponibles en Experience Manager:
 
-* Zoom
-* Flotante (zoom)
+* Acercar o alejar
+* Flotante (Zoom)
 * Plantilla de imagen
 * Imagen
 * Vídeo
@@ -170,9 +170,9 @@ Para añadir un componente o visor de Dynamic Media Classic (Scene7) a una pági
 
 ### Añadir experiencias de visualización interactivas a un sitio web interactivo {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
-El diseño interactivo para sus recursos significa que los recursos se adaptarán según dónde se muestren. Con un diseño interactivo, los mismos recursos se pueden mostrar de forma eficaz en varios dispositivos.
+El diseño interactivo para sus recursos significa que los recursos se adaptarán según dónde se muestren. Con un diseño interactivo, los mismos recursos se pueden visualizar de forma eficaz en varios dispositivos.
 
-Para añadir una experiencia de visualización interactiva a un sitio interactivo en la interfaz de usuario clásica:
+Para agregar una experiencia de visualización interactiva a un sitio adaptable en la IU clásica:
 
 1. Inicie sesión en el Experience Manager de y asegúrese de que dispone de lo siguiente [Cloud Services configurados de Adobe Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#configuring-scene-integration) y que los componentes de Dynamic Media Classic (Scene7) están disponibles.
 
@@ -185,35 +185,35 @@ Para añadir una experiencia de visualización interactiva a un sitio interactiv
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
-1. Confirme que los visores cambian de tamaño de manera interactiva y que las interacciones están optimizadas para dispositivos de escritorio, tabletas y móviles.
+1. Confirme que los visores cambian de tamaño de forma interactiva y que todas las interacciones están optimizadas para equipos de escritorio, tabletas y móviles.
 
 ### Configuración común a todos los componentes de Dynamic Media Classic (Scene7) {#settings-common-to-all-scene-components}
 
 Aunque las opciones de configuración varían, los siguientes elementos son comunes a todos los componentes de Dynamic Media Classic (Scene7):
 
-* **Referencia del archivo**: navegue a un archivo al que quiera hacer referencia. La referencia de archivo muestra la URL del recurso y no necesariamente la URL completa de Dynamic Media Classic (Scene7), incluidos los comandos y parámetros de URL. No puede añadir comandos y parámetros de URL de Dynamic Media Classic (Scene7) en este campo. En su lugar, se deben agregar a través de la funcionalidad correspondiente en el componente.
-* **Anchura**: le permite definir la anchura.
-* **Altura**: le permite definir la altura.
+* **Referencia de archivo**- Busque el archivo al que desee hacer referencia. La referencia de archivo muestra la URL del recurso y no necesariamente la URL completa de Dynamic Media Classic (Scene7), incluidos los comandos y parámetros de URL. No puede añadir comandos y parámetros de URL de Dynamic Media Classic (Scene7) en este campo. En su lugar, se deben agregar a través de la funcionalidad correspondiente en el componente.
+* **Ancho** - Permite establecer la anchura.
+* **Altura** - Permite establecer la altura.
 
 Estas opciones de configuración se establecen abriendo (haciendo doble clic) en un componente de Dynamic Media Classic (Scene7), por ejemplo, al abrir un **Zoom** componente:
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-### Zoom {#zoom}
+### Acercar o alejar {#zoom}
 
-El componente Zoom HTML5 muestra una imagen más grande al pulsar el botón +.
+El componente Zoom HTML 5 muestra una imagen más grande al pulsar el botón +.
 
-El recurso dispone de herramientas de zoom en la parte inferior. Seleccionar **[!UICONTROL +]** para ampliar. Seleccionar **[!UICONTROL -]** para reducir. Selección de la **[!UICONTROL x]** o la flecha para restablecer el zoom devuelve la imagen al tamaño original con el que se importó. Seleccione las flechas diagonales para que pueda hacerlo a pantalla completa. Seleccionar **[!UICONTROL Editar]** para poder configurar el componente. Con este componente, puede configurar lo siguiente [configuración común a todos los componentes de Dynamic Media Classic (Scene7)](#settings-common-to-all-scene-components).
+El recurso tiene herramientas de zoom en la parte inferior. Seleccionar **[!UICONTROL +]** para ampliar. Seleccionar **[!UICONTROL -]** para reducir. Selección de la **[!UICONTROL x]** o la flecha para restablecer el zoom devuelve la imagen al tamaño original con el que se importó. Seleccione las flechas diagonales para que pueda hacerlo a pantalla completa. Seleccionar **[!UICONTROL Editar]** para poder configurar el componente. Con este componente, puede configurar lo siguiente [configuración común a todos los componentes de Dynamic Media Classic (Scene7)](#settings-common-to-all-scene-components).
 
 ![](do-not-localize/chlimage_1-3.png)
 
 ### Flotante {#flyout}
 
-En el componente Flotante HTML5, el recurso se muestra como una pantalla dividida: a la izquierda aparece con el tamaño especificado y a la derecha aparece la porción modificada con el zoom. Seleccionar **[!UICONTROL Editar]** para poder configurar el componente. Con este componente, puede configurar lo siguiente [configuración común a todos los componentes de Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#settingscommontoallscene7components).
+En el componente flotante HTML 5, el recurso se muestra como una pantalla dividida; dejó el recurso en el tamaño especificado; a la derecha, se muestra la parte de zoom. Seleccionar **[!UICONTROL Editar]** para poder configurar el componente. Con este componente, puede configurar lo siguiente [configuración común a todos los componentes de Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#settingscommontoallscene7components).
 
 >[!NOTE]
 >
->Si el componente Flotante utiliza un tamaño personalizado, se utiliza dicho tamaño y se desactiva la configuración interactiva del componente.
+>Si el componente flotante utiliza un tamaño personalizado, se utilizará ese tamaño personalizado y la configuración adaptable del componente estará desactivada.
 >
 >Si el componente flotante utiliza el tamaño predeterminado, tal como se establece en la vista Diseño, se utilizará el tamaño predeterminado. El componente se expande para dar cabida al tamaño del diseño de página con la configuración adaptable del componente habilitada. Sin embargo, tenga en cuenta que existe una limitación en la configuración interactiva del componente. Cuando utilice el componente flotante con configuración adaptable, no debe utilizarlo con ampliación de página completa. De lo contrario, el menú flotante puede extenderse más allá del borde derecho de la página.
 
@@ -227,7 +227,7 @@ El componente Imagen de Dynamic Media Classic (Scene7) permite añadir la funcio
 
 **Título, texto alternativo** : en la pestaña Avanzado, agregue un título a la imagen y texto alternativo para los usuarios que tengan los gráficos desactivados.
 
-**URL, Abrir en** : puede configurar un recurso desde para abrir un vínculo. Defina la dirección URL y, en Abrir en, indique si quiere que se abra en la misma ventana o en una nueva.
+**URL, Abrir en** : puede configurar un recurso desde para abrir un vínculo. Configure la dirección URL y, en Abrir en, indique si desea que se abra en la misma ventana o en una nueva.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -237,17 +237,17 @@ El componente Imagen de Dynamic Media Classic (Scene7) permite añadir la funcio
 
 **Ajuste preestablecido de imagen** - Seleccione un ajuste preestablecido de imagen existente en el menú desplegable. Si el ajuste preestablecido de imagen que está buscando no está visible, debe hacerlo visible. Consulte Administración de ajustes preestablecidos de imagen. No puede seleccionar un ajuste preestablecido de visualizador si utiliza un ajuste preestablecido de imagen y a la inversa.
 
-**Formato de salida** - Seleccione el formato de salida de la imagen, por ejemplo jpeg. En función del formato de salida que seleccione, puede tener opciones de configuración adicionales. Consulte Prácticas recomendadas para ajustes preestablecidos de imagen.
+**Formato de salida** - Seleccione el formato de salida de la imagen, por ejemplo jpeg. Según el formato de salida seleccionado, puede tener opciones de configuración adicionales. Consulte Prácticas recomendadas de ajustes preestablecidos de imagen.
 
-**Enfoque** - Seleccione cómo desea enfocar la imagen. El enfoque se explica en detalle en Prácticas recomendadas para ajustes preestablecidos de imagen y en Prácticas recomendadas para el enfoque.
+**Enfoque** - Seleccione cómo desea enfocar la imagen. El enfoque se explica en detalle en Prácticas recomendadas de ajustes preestablecidos de imagen y Prácticas recomendadas de enfoque.
 
 **Modificadores de URL** : Puede cambiar los efectos de imagen suministrando comandos de imagen S7 adicionales. Estos comandos se describen en Ajustes preestablecidos de imagen y en la Referencia del comando.
 
-**Puntos de interrupción** : Si el sitio web es adaptable, desea ajustar los puntos de interrupción. Los puntos de interrupción deben separarse con comas (,).
+**Puntos de interrupción** : Si el sitio web es adaptable, desea ajustar los puntos de interrupción. Los puntos de interrupción deben estar separados por comas (,).
 
 ### Plantilla de imagen {#image-template}
 
-Las plantillas de imagen de Dynamic Media Classic (Scene7) son contenidos de Photoshop por capas que se importaron a Dynamic Media Classic (Scene7), donde el contenido y las propiedades se parametrizaron para tener en cuenta la variabilidad. El **[!UICONTROL Plantilla de imagen]** Este componente permite importar imágenes y cambiar el texto de forma dinámica en Experience Manager. Además, puede configurar el componente **[!UICONTROL Plantilla de imágenes]** para utilizar valores de ClientContext, de modo que cada usuario experimenta la imagen de una forma personalizada.
+Las plantillas de imagen de Dynamic Media Classic (Scene7) son contenidos de Photoshop por capas que se importaron a Dynamic Media Classic (Scene7), donde el contenido y las propiedades se parametrizaron para tener en cuenta la variabilidad. El **[!UICONTROL Plantilla de imagen]** Este componente permite importar imágenes y cambiar el texto de forma dinámica en Experience Manager. Además, se puede configurar la variable **[!UICONTROL Plantilla de imagen]** para utilizar valores del contexto del cliente, de modo que cada usuario experimente la imagen de forma personalizada.
 
 Seleccionar **[!UICONTROL Editar]** : para configurar el componente. Puede configurar [configuración común a todos los componentes de Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#settingscommontoallscene7components) y otras configuraciones descritas en esta sección.
 
@@ -257,21 +257,21 @@ Seleccionar **[!UICONTROL Editar]** : para configurar el componente. Puede confi
 
 >[!NOTE]
 >
->Los comandos y parámetros de URL de Dynamic Media Classic (Scene7) no se pueden añadir directamente a la URL de referencia de archivos. Solo se pueden definir en la interfaz de usuario del componente en el panel **[!UICONTROL Parámetro]**.
+>Los comandos y parámetros de URL de Dynamic Media Classic (Scene7) no se pueden añadir directamente a la URL de referencia de archivos. Solo se pueden definir en la interfaz de usuario del componente en la **[!UICONTROL Parámetro]** panel.
 
 **Título, texto alternativo** : En la pestaña Plantilla de imagen de Dynamic Media Classic (Scene7) , agregue un título a la imagen y texto alternativo para los usuarios que tengan los gráficos desactivados.
 
-**URL, Abrir en** : puede configurar un recurso desde para abrir un vínculo. Defina la dirección URL y, en Abrir en, indique si quiere que se abra en la misma ventana o en una nueva.
+**URL, Abrir en** : puede configurar un recurso desde para abrir un vínculo. Configure la dirección URL y, en Abrir en, indique si desea que se abra en la misma ventana o en una nueva.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-**Panel de parámetros** : Al importar una imagen, los parámetros se rellenan previamente con información de la imagen. Si no existe contenido que se pueda cambiar de forma dinámica, esta ventana está vacía.
+**Panel de parámetros** : Al importar una imagen, los parámetros se rellenan previamente con información de la imagen. Si no hay contenido que se pueda cambiar dinámicamente, esta ventana está vacía.
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
-#### Cambio del texto de forma dinámica {#changing-text-dynamically}
+#### Cambiar texto dinámicamente {#changing-text-dynamically}
 
-Para cambiar el texto dinámicamente, introduzca el nuevo texto en los campos y seleccione **[!UICONTROL OK]**. En este ejemplo, el **Precio** es ahora $50 y el envío cuesta 99 centavos.
+Para cambiar el texto dinámicamente, introduzca el nuevo texto en los campos y seleccione **[!UICONTROL OK]**. En este ejemplo, la variable **Precio** ahora cuesta 50 dólares y el envío es de 99 centavos.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
@@ -281,11 +281,11 @@ El texto de la imagen cambia. Puede restablecer el texto al valor original selec
 
 #### Cambiar texto para reflejar el valor de un valor de contexto de cliente {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-Para vincular un campo a un valor de contexto de cliente, seleccione **[!UICONTROL Seleccionar]** para abrir el menú client-context, seleccione client context y seleccione **[!UICONTROL OK]**. En este ejemplo, el nombre cambia en función de la vinculación de valor de Nombre con el nombre con formato que consta en el perfil.
+Para vincular un campo a un valor de contexto de cliente, seleccione **[!UICONTROL Seleccionar]** para abrir el menú client-context, seleccione client context y seleccione **[!UICONTROL OK]**. En este ejemplo, el nombre cambia en función de la vinculación del nombre con el nombre con formato del perfil.
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-El texto refleja el nombre del usuario de la sesión actual. Puede restablecer el texto al valor original seleccionando **[!UICONTROL Restablecer]** junto al campo.
+El texto refleja el nombre del usuario que ha iniciado sesión actualmente. Puede restablecer el texto al valor original seleccionando **[!UICONTROL Restablecer]** junto al campo.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -294,7 +294,7 @@ El texto refleja el nombre del usuario de la sesión actual. Puede restablecer e
 Puede hacer que el componente de plantilla de imagen de Dynamic Media Classic (Scene7) sea un vínculo en el que se puede hacer clic.
 
 1. En la página con el componente de plantilla de imagen de Dynamic Media Classic (Scene7), seleccione **[!UICONTROL Editar]**.
-1. En el campo **[!UICONTROL URL]**, introduzca la dirección URL a la que los usuarios se dirigen al hacer clic en la imagen. En el **[!UICONTROL Abrir en]** , seleccione si desea que se abra el destino (una nueva ventana o la misma ventana).
+1. En el **[!UICONTROL URL]** , introduzca la URL a la que van los usuarios cuando se hace clic en la imagen. En el **[!UICONTROL Abrir en]** , seleccione si desea que se abra el destino (una nueva ventana o la misma ventana).
 
    ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -302,9 +302,9 @@ Puede hacer que el componente de plantilla de imagen de Dynamic Media Classic (S
 
 ### Componente de vídeo {#video-component}
 
-Dynamic Media Classic (Scene7) **[!UICONTROL Vídeo]** (disponible en la sección Dynamic Media Classic (Scene7) de la barra de tareas) utiliza la detección de dispositivo y ancho de banda para proporcionar el vídeo adecuado a cada pantalla. Este componente es un reproductor de vídeo HTML5; se trata de un visor único que se puede utilizar en múltiples canales.
+Dynamic Media Classic (Scene7) **[!UICONTROL Vídeo]** (disponible en la sección Dynamic Media Classic (Scene7) de la barra de tareas) utiliza la detección de dispositivo y ancho de banda para proporcionar el vídeo adecuado a cada pantalla. Este componente es un reproductor de vídeo HTML5; es un visualizador único que se puede utilizar en canales múltiples.
 
-Se puede usar para conjuntos de vídeos adaptables, un solo vídeo MP4 o un solo vídeo F4V.
+Se puede utilizar para conjuntos de vídeos adaptables, un solo vídeo MP4 o un solo vídeo F4V.
 
 Consulte [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) para obtener más información sobre cómo funcionan los vídeos con la integración de Dynamic Media Classic (Scene7). Además, vea cómo [el **Vídeo de Dynamic Media Classic (Scene7)** El componente se compara con la base **video** componente](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
 
@@ -312,7 +312,7 @@ Consulte [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-vide
 
 ### Limitaciones conocidas del componente de vídeo {#known-limitations-for-the-video-component}
 
-Adobe DAM y WCM muestra si se ha cargado un vídeo de origen principal. No muestran estos recursos de proxy:
+Adobe DAM y WCM muestra si se ha cargado un vídeo de origen principal. No muestran estos recursos proxy:
 
 * Representaciones codificadas en Dynamic Media Classic (Scene7)
 * Conjuntos de vídeos adaptables de Dynamic Media Classic (Scene7)
@@ -321,7 +321,7 @@ Cuando se utiliza un conjunto de vídeos adaptable con el componente de vídeo d
 
 ## Explorador de contenido de Dynamic Media Classic (Scene7) {#scene-content-browser}
 
-El explorador de contenido Dynamic Media Classic (Scene7) le permite ver contenido de Dynamic Media Classic (Scene7) directamente en Experience Manager. Para acceder al navegador de contenido, en el Buscador de contenido, seleccione **Dynamic Media Classic (Scene7)** en la interfaz de usuario táctil o en el **S7** en la interfaz de usuario clásica de. La funcionalidad es idéntica en ambas interfaces de usuario.
+El explorador de contenido Dynamic Media Classic (Scene7) le permite ver contenido de Dynamic Media Classic (Scene7) directamente en Experience Manager. Para acceder al navegador de contenido, en el Buscador de contenido, seleccione **Dynamic Media Classic (Scene7)** en la interfaz de usuario táctil o en el **S7** en la interfaz de usuario clásica de. La funcionalidad es idéntica entre ambas interfaces de usuario.
 
 Si tiene varias configuraciones, Experience Manager muestra de forma predeterminada la variable [configuración predeterminada](/help/sites-administering/scene7.md#configuring-a-default-configuration). Puede seleccionar diferentes configuraciones directamente en el explorador de contenido de Dynamic Media Classic (Scene7) en el menú desplegable.
 
@@ -331,7 +331,7 @@ Si tiene varias configuraciones, Experience Manager muestra de forma predetermin
 >* Cuándo [La previsualización segura está activada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)Sin embargo, los recursos publicados y no publicados en Dynamic Media Classic (Scene7) no aparecen en el explorador de contenido de Dynamic Media Classic (Scene7).
 >* Si no ve **[!UICONTROL Dynamic Media Classic (Scene7)]** o el **[!UICONTROL S7]** como opción en el navegador de contenido, debe hacer lo siguiente [configuración de Dynamic Media Classic (Scene7) para que funcione con Experience Manager](/help/sites-administering/scene7.md).
 >* Para vídeo, el explorador de contenido de Dynamic Media Classic (Scene7) admite:
-   >   * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
+   >   * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para una reproducción perfecta en varias pantallas
    >   * Vídeo MP4 único
    >   * Vídeo F4V único
 
@@ -344,15 +344,15 @@ Puede cambiar la configuración a la que accede seleccionando la configuración.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Al igual que ocurre con el buscador de contenido para los recursos, puede buscar recursos y filtrar los resultados. Sin embargo, a diferencia del buscador de recursos, al introducir una palabra clave en la pestaña **S7**, el nombre del archivo **comienza por** la cadena introducida, en lugar de **contener** la palabra clave en el nombre de archivo.
+Al igual que con el buscador de contenido para Recursos, puede buscar recursos y filtrar resultados. Sin embargo, a diferencia del buscador de recursos, al introducir una palabra clave en la variable **S7** pestaña, el nombre del archivo **empieza por** la cadena introducida, en lugar de **conteniendo** la palabra clave en el nombre del archivo.
 
-De forma predeterminada, los recursos se muestran por el nombre de archivo. Sin embargo, también puede filtrar los resultados por tipo de recurso.
+De forma predeterminada, los recursos se muestran por nombre de archivo. Sin embargo, también puede filtrar los resultados por tipo de recurso.
 
 >[!NOTE]
 >
 >Para el vídeo, el explorador de contenido Dynamic Media Classic (Scene7) de WCM admite:
 >
->* Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para la reproducción sin errores en varias pantallas.
+>* Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para una reproducción perfecta en varias pantallas
 >* Vídeo MP4 único
 >* Vídeo F4V único
 >
@@ -362,11 +362,11 @@ De forma predeterminada, los recursos se muestran por el nombre de archivo. Sin 
 
 La búsqueda de recursos de Dynamic Media Classic (Scene7) es similar a la búsqueda de recursos de Experience Manager. La excepción es que, al realizar una búsqueda, realmente ve una vista remota de los recursos en el sistema de Dynamic Media Classic (Scene7), en lugar de importarlos directamente a Experience Manager.
 
-Puede utilizar la interfaz de usuario clásica o la optimizada para el uso táctil para ver y buscar recursos. Según la interfaz, la búsqueda es ligeramente diferente.
+Puede utilizar la IU clásica o la UI táctil optimizada para ver y buscar recursos. Según la interfaz, la forma de buscar es ligeramente diferente.
 
-Al buscar en cualquier interfaz de usuario, puede filtrar según los criterios siguientes (aquí se muestra la IU optimizada para el uso táctil):
+Al buscar en cualquiera de las interfaces de usuario, puede filtrar por los siguientes criterios (que se muestran aquí en la interfaz de usuario táctil optimizada):
 
-**Escribir palabras clave** : puede buscar recursos por su nombre. Al buscar las palabras clave, escriba el nombre del archivo por el que comienza. Por ejemplo, al escribir la palabra “natación”, el sistema buscaría cualquier nombre de archivo de recurso que comience por esas letras en ese orden. Asegúrese de seleccionar Intro después de escribir el término para buscar el recurso.
+**Escribir palabras clave** : puede buscar recursos por su nombre. Al buscar las palabras clave, escriba el nombre del archivo por el que comienza. Por ejemplo, si escribe la palabra &quot;nadar&quot;, buscará cualquier nombre de archivo de recursos que comience con esas letras en ese orden. Asegúrese de seleccionar Intro después de escribir el término para buscar el recurso.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -392,9 +392,9 @@ De forma predeterminada, Experience Manager busca en la carpeta seleccionada y e
 
 >[!NOTE]
 >
->* En la interfaz de usuario clásica; también puede buscar **Flash** y **FXG**. No se admite el filtrado para estos dos términos en la IU táctil optimizada.
+>* En la IU clásica, también puede buscar **Flash** y **FXG**. No se admite el filtrado para estos dos términos en la IU táctil optimizada.
 >
->* Al buscar vídeos, se busca una sola representación. Los resultados devuelven la representación original (solo &#42;.mp4) y la representación codificada.
+>* Al buscar vídeo, busca en una sola representación. Los resultados devuelven la representación original (solo &#42;.mp4) y la representación codificada.
 >* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha añadido una palabra clave, Experience Manager no busca en las subcarpetas.
 >
 

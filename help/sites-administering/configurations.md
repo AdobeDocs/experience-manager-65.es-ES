@@ -38,7 +38,7 @@ AEM Se pueden crear configuraciones para muchas funciones diferentes dentro de l
 * [Modelos de fragmento de contenido](/help/assets/content-fragments/content-fragments-models.md)
 * [Plantillas editables](/help/sites-authoring/templates.md)
 
-### Ejemplo {#administrator-example}
+### Ejemplos {#administrator-example}
 
 Por ejemplo, un administrador puede crear dos configuraciones para Plantillas editables.
 
@@ -123,7 +123,7 @@ Aunque la variable [El administrador y los usuarios pueden considerar las config
 
 El contenido hace referencia a su configuración asociada a través de una `cq:conf` propiedad. AEM una búsqueda basada en el contenido y en su contexto `cq:conf` para encontrar la configuración adecuada.
 
-### Ejemplo {#developer-example}
+### Ejemplos {#developer-example}
 
 Para este ejemplo, supongamos que tiene código de aplicación interesado en la configuración de DAM.
 
@@ -135,7 +135,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 El punto de partida de toda la búsqueda de configuración es un recurso de contenido, normalmente en alguna parte bajo `/content`. Podría ser una página, un componente dentro de una página, un recurso o una carpeta DAM. Este es el contenido real para el que buscamos la configuración correcta que se aplica en este contexto.
 
-Ahora, con el `Conf` objeto en mano, podemos recuperar el elemento de configuración específico que nos interesa. En este caso es `dam/imageserver`, que es una colección de configuraciones relacionadas con el `imageserver`. El `getItem` la llamada devuelve un `ValueMap`. Luego leemos un `bgkcolor` y proporcione un valor predeterminado de &quot;FFFFFF&quot; en caso de que la propiedad (o todo el elemento de configuración) no esté presente.
+Ahora, con el `Conf` objeto en mano, podemos recuperar el elemento de configuración específico que nos interesa. En este caso es `dam/imageserver`, que es una colección de configuraciones relacionadas con la variable `imageserver`. El `getItem` la llamada devuelve un `ValueMap`. Luego leemos un `bgkcolor` y proporcione un valor predeterminado de &quot;FFFFFF&quot; en caso de que la propiedad (o todo el elemento de configuración) no esté presente.
 
 Ahora vamos a echar un vistazo al contenido JCR correspondiente:
 

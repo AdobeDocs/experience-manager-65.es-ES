@@ -281,7 +281,7 @@ Los pasos detallados en esta sección se incluyen para ayudarle a localizar el I
 1. Para localizar la URL del recurso o la URL raíz del servicio, vaya al panel de instancias de MS Dynamics.
 1. En la barra de navegación superior, haga clic en &quot;Ventas&quot; o en su propio tipo de instancia y luego en &quot;Seleccionar configuración&quot;.
 1. Haga clic en &quot;Personalizaciones&quot; y &quot;Recursos para desarrolladores&quot; junto a la parte inferior derecha.
-1. Ahí encontrará la URL raíz del servicio: p. ej.
+1. Ahí encontrará la URL raíz del servicio: p. ej.,.
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`.
 
@@ -737,7 +737,7 @@ Esta sección contiene información sobre las funciones de la demostración y la
 ### Consideraciones sobre la demostración {#demo-considerations}
 
 * Según lo establecido en el punto AGRS-159, asegúrese de que el nombre (primer nombre, segundo y apellido) del contacto utilizado en el formulario adaptable de solicitud sea único.
-* El formulario adaptable de inscripción enviará el correo electrónico de Adobe Sign al correo electrónico especificado en el campo de correo electrónico del formulario. Esa dirección de correo electrónico no puede ser la misma dirección de correo que el correo electrónico utilizado para establecer la configuración en la nube de Adobe Sign.
+* El formulario adaptable de solicitud enviará el correo electrónico de Adobe Sign al correo electrónico especificado en el campo de correo electrónico del formulario. Esa dirección de correo electrónico no puede ser la misma dirección de correo que el correo electrónico utilizado para establecer la configuración en la nube de Adobe Sign.
 
 ### Problemas conocidos {#known-issues}
 
@@ -750,10 +750,10 @@ Esta sección contiene información sobre las funciones de la demostración y la
 
 Para realizar pruebas de accesibilidad, instale el complemento de Chrome que se encuentra aquí en `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-Una vez instalada, cargue la página que desee probar en el explorador Chrome (Nota: Si tiene varias pestañas abiertas, puede que la puntuación se vea afectada, es preferible tener una sola pestaña abierta). Una vez cargada la página,
-**haga clic con el botón derecho** sobre ella y seleccione la pestaña **Auditorías**. Los desarrolladores pueden seleccionar el tipo de auditoría que debe realizar el complemento de accesibilidad. Una vez seleccionadas todas las opciones deseadas, el usuario puede hacer clic en el botón Generar informe . Esta acción generará un documento PDF que muestra la clasificación general de accesibilidad y cómo se puede aumentar.
+Una vez instalado, cargue la página que desee probar en el explorador Chrome (Nota: Si tiene varias pestañas abiertas, puede que la puntuación se vea afectada; por eso, es preferible tener una sola pestaña abierta). Una vez cargada la página,
+**haga clic con el botón derecho** sobre ella y seleccione la pestaña **Auditorías**. Los desarrolladores pueden seleccionar el tipo de auditoría que debe realizar el complemento de accesibilidad. Una vez seleccionadas todas las opciones deseadas, el usuario puede hacer clic en el botón Generar informe. Esta acción generará un documento PDF que muestra la clasificación general de accesibilidad y cómo se puede aumentar.
 
-Una vez ejecutado el informe, los usuarios pueden esperar ver lo siguiente:
+Una vez ejecutado el informe, los usuarios podrán ver lo siguiente:
 
 ![Informe de accesibilidad](assets/aftia-accessibility.jpg)
 

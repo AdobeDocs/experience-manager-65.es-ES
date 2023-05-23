@@ -60,7 +60,7 @@ ht-degree: 3%
 * [etiqueta](/help/sites-developing/querybuilder-predicate-reference.md#tag)
 * [tagid](/help/sites-developing/querybuilder-predicate-reference.md#tagid)
 * [tagsearch](/help/sites-developing/querybuilder-predicate-reference.md#tagsearch)
-* [type](/help/sites-developing/querybuilder-predicate-reference.md#type)
+* [tipo](/help/sites-developing/querybuilder-predicate-reference.md#type)
 
 ### boolproperty {#boolproperty}
 
@@ -109,7 +109,7 @@ Este es un predicado solo de filtrado y no puede aprovechar un índice de búsqu
 
    ruta a la segunda propiedad de fecha
 
-* **operation**
+* **operación**
 
    &quot; `equals`&quot; para coincidencia exacta, &quot; `!=`&quot; para comparación de desigualdad, &quot; `greater`&quot; para la propiedad1 buena que la propiedad2, &quot; `>=`&quot; para la propiedad1 buena o igual a la propiedad2. El valor predeterminado es &quot; `equals`&quot;.
 
@@ -378,7 +378,7 @@ Admite extracción de facetas. Proporcionará bloques para cada valor de propied
 
    establezca en true para combinar varios valores ( `N_value`) con AND (desde 5.3)
 
-* **operation**
+* **operación**
 
    &quot;`equals`&quot; para coincidencia exacta (predeterminado), &quot; `unequals`&quot; para comparación de desigualdad, &quot; `like`&quot; para usar el `jcr:like` función xpath (opcional), &quot; `not`&quot; para no coincidir (p. ej. &quot;`not(@prop)`&quot; en xpath, el parámetro value se omitirá) o &quot; `exists`&quot; para la comprobación de existencia (el valor puede ser true - la propiedad debe existir, el valor predeterminado - o false - igual que &quot; `not`&quot;)
 
@@ -583,7 +583,7 @@ No admite la extracción de facetas.
 
    (bool) buscar texto completo de la etiqueta completa, es decir, todos los títulos, descripción, etc. (tiene prioridad sobre &quot;l `ang`&quot;)
 
-### type {#type}
+### tipo {#type}
 
 Restringe los resultados a un tipo de nodo JCR específico, tanto del tipo de nodo principal como del tipo de mezcla. También se encuentran subtipos de ese tipo de nodo. Tenga en cuenta que los índices de búsqueda del repositorio deben cubrir los tipos de nodo para una ejecución eficaz.
 
@@ -591,6 +591,6 @@ Admite extracción de facetas. Proporcionará bloques para cada tipo único en l
 
 #### Propiedades {#Properties-2}
 
-* **type**
+* **tipo**
 
    tipo de nodo o nombre de mezcla que buscar, por ejemplo `cq:Page`

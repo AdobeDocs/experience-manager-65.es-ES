@@ -1,6 +1,6 @@
 ---
 title: Creación de una página de contenido para dispositivos móviles
-description: Al crear para dispositivos móviles, puede cambiar entre varios emuladores para ver lo que ve el usuario final.
+description: Al crear para móviles, puede cambiar entre varios emuladores para ver lo que ve el usuario final.
 uuid: a7a1ba68-d608-4819-88d1-0dab5955d3f4
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,9 +17,9 @@ ht-degree: 29%
 
 # Crear una página para dispositivos móviles{#authoring-a-page-for-mobile-devices}
 
-Al crear una página móvil, esta se muestra de forma que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver qué ve el usuario final al acceder a la página.
+Al crear una página móvil, esta se muestra de forma que emula al dispositivo móvil. Al crear la página, puede cambiar entre varios emuladores para ver lo que ve el usuario final al acceder a la página.
 
-Los dispositivos se agrupan en las categorías característica, inteligente y táctil, según las capacidades de los dispositivos para procesar una página. Cuando el usuario final accede a una página móvil, AEM detecta el dispositivo y envía la representación que corresponde a su grupo de dispositivos.
+Los dispositivos se agrupan en las categorías característica, inteligente y táctil, según las capacidades de los dispositivos para procesar una página. AEM Cuando el usuario final accede a una página móvil, detecta el dispositivo y envía la representación que corresponde a su grupo de dispositivos.
 
 >[!NOTE]
 >
@@ -30,10 +30,10 @@ Los dispositivos se agrupan en las categorías característica, inteligente y t�
 Utilice el siguiente procedimiento para crear una página para móvil:
 
 1. En la navegación global, abra la consola **Sitios**.
-1. Abra la página . **We.Retail** -> **Estados Unidos** -> **Inglés**.
+1. Abra la página. **We.Retail** -> **Estados Unidos** -> **Inglés**.
 
-1. Cambie a **Vista previa** en el menú contextual.
-1. Cambie al emulador que quiera usar haciendo clic en el icono del dispositivo en la parte superior de la página.
+1. Cambiar a **Previsualizar** modo.
+1. Cambie al emulador que desee haciendo clic en el icono del dispositivo en la parte superior de la página.
 1. Arrastre y suelte los componentes desde el navegador de componentes a la página.
 
 La página tiene un aspecto similar al siguiente:

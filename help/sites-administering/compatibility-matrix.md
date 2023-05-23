@@ -91,7 +91,7 @@ aem-screens-player-windows-1.0.48-signed.exe.zip
 |---|---|
 | **AEM.3+SP1+Screens FP1(1.0.64_B002)** | **3.2.68** (Disponible en el sitio de Macromedia) y Google Play Store |
 | **AEM.3+SP1+Screens FP2(1.0.298)** | **3.3.0** |
-| **AEM 6.4** | **3.3.0** |
+| **AEM,4** | **3.3.0** |
 
 ### Vínculo de descarga {#download-link-2}
 

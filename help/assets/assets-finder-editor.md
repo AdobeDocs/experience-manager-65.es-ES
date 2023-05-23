@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Crear y configurar páginas del Editor de recursos {#creating-and-configuring-asset-editor-pages}
 
-En este documento se describe lo siguiente:
+Este documento describe lo siguiente:
 
 * Por qué crear páginas personalizadas del editor de recursos.
 * Crear y personalizar páginas del Editor de recursos, que son páginas de WCM que permiten ver y editar metadatos, así como realizar acciones en el recurso.
@@ -254,7 +254,7 @@ Para agregar componentes del editor de recursos:
 | Componente | Descripción |
 |---|---|
 | **[!UICONTROL Formulario de metadatos] y [!UICONTROL Campo de texto de metadatos]** | Permite agregar metadatos adicionales a un recurso y realizar una acción, como enviar, en ese recurso. |
-| **[!UICONTROL Recursos secundarios]** | Permite personalizar los subrecursos. |
+| **[!UICONTROL Subrecursos]** | Permite personalizar los subrecursos. |
 | **Etiquetas** | Permite que los usuarios seleccionen y agreguen etiquetas a un recurso. |
 | **[!UICONTROL Miniatura]** | Muestra una miniatura del recurso, su nombre de archivo y permite agregar un texto alternativo. Aquí también puede agregar acciones del editor de recursos. |
 | **[!UICONTROL Título]** | Muestra el título del recurso, que se puede personalizar. |
@@ -295,7 +295,7 @@ A continuación se muestra un ejemplo de un formulario de metadatos con varios c
 
 En la página Editor de recursos, los usuarios pueden introducir valores en los campos de metadatos (si se pueden editar) y realizar la acción final (por ejemplo, enviar los cambios).
 
-#### Subactivos {#sub-assets}
+#### Recursos secundarios {#sub-assets}
 
 El componente Subrecursos es donde puede ver y seleccionar subrecursos. Puede determinar qué nombres aparecen bajo la etiqueta [recurso principal](/help/assets/assets.md#what-are-digital-assets) y recursos secundarios.
 

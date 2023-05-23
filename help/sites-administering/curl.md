@@ -224,7 +224,7 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 Consulte [Copia de seguridad y restauración](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup) para obtener más información.
 
-### los paquetes {#osgi}
+### OSGi {#osgi}
 
 #### Inicio de un paquete {#starting-a-bundle}
 

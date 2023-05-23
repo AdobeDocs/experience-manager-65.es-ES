@@ -13,7 +13,7 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ En esta página se explica cómo crear una plantilla de página personalizada qu
 
 >[!NOTE]
 >
->[Los ejemplos de correo electrónico y formularios solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md). Descargue el contenido de ejemplo de Geometrixx de Uso compartido de paquetes.
+>[Los ejemplos de correo electrónico y formularios solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md). Descargue contenido de Geometrixx de ejemplo desde Package Share.
 
 AEM Para crear una plantilla de página de personalizada con componentes de formulario de Adobe Campaign, asegúrese de que dispone de lo siguiente:
 

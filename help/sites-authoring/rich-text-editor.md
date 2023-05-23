@@ -12,7 +12,7 @@ exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 68%
+ht-degree: 60%
 
 ---
 
@@ -59,7 +59,7 @@ Entre las opciones adicionales del editor de texto enriquecido están:
 * **Centrar texto**
 * **Alinear texto a la derecha**
 
-El modo de pantalla completa se cierra haciendo clic en el icono de minimizar.
+Cierre el modo de pantalla completa haciendo clic en el icono de minimizar.
 
 ![screen_shot_2018-03-21at163323](assets/screen_shot_2018-03-21at163323.png)
 

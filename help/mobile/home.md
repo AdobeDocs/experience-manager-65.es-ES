@@ -1,19 +1,19 @@
 ---
 title: Guía del usuario de AEM 6.5 Mobile
 seo-title: AEM 6.5 Mobile User Guide
-description: Aproveche AEM asistencia para crear y administrar contenido para aplicaciones móviles. Obtenga una introducción y aprenda a crear, desarrollar y administrar en la aplicación de servicios bajo demanda y Adobe PhoneGap Enterprise.
+description: AEM Aproveche la compatibilidad con la creación y administración de contenido para aplicaciones móviles. Obtenga una introducción a y aprenda a crear, desarrollar y administrar en la aplicación de servicios bajo demanda y Adobe PhoneGap Enterprise.
 seo-description: Describes how to create and manage content for mobile applications.
 exl-id: 3531d8ea-614d-465a-8b4a-e3e3f3461e94
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 77%
+ht-degree: 80%
 
 ---
 
 # Guía del usuario de AEM 6.5 Mobile
 
-Aproveche AEM asistencia para crear y administrar contenido para aplicaciones móviles. Obtenga una introducción y aprenda a crear, desarrollar y administrar en la aplicación de servicios bajo demanda y Adobe PhoneGap Enterprise.
+AEM Aproveche la compatibilidad con la creación y administración de contenido para aplicaciones móviles. Obtenga una introducción a y aprenda a crear, desarrollar y administrar en la aplicación de servicios bajo demanda y Adobe PhoneGap Enterprise.
 
 ## Artículos clave de AEM
 
@@ -22,7 +22,7 @@ Aproveche AEM asistencia para crear y administrar contenido para aplicaciones m�
 * [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
-## Guías del usuario de AEM 6.5
+## AEM Guías del usuario de.5
 
 | Guía del usuario | Descripción |
 |--- |---|
@@ -44,9 +44,9 @@ Aproveche AEM asistencia para crear y administrar contenido para aplicaciones m�
 
 * [Tutoriales de AEM](https://helpx.adobe.com/es/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
-* [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 * [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
 * [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)

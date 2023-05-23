@@ -186,9 +186,9 @@ AEM Si es necesario editar, en cada instancia de publicación de la:
       * name
       * first_name
       * last_name
-      * link
+      * vincular
       * locale
-      * picture
+      * retratar
       * timezone
       * updated_time
       * verificado
@@ -219,7 +219,7 @@ Siga las instrucciones más recientes para crear una nueva aplicación de Twitte
 En general:
 
 1. Introduzca una *Nombre* que identificará la aplicación de Twitter para los usuarios del sitio web.
-1. Especificar una *Descripción*.
+1. Introduzca una *Descripción*.
 1. Para *sitio web* - introducir `https://<server>`.
 1. Para *URL de devolución de llamada* - introducir `https://server`.
 
@@ -468,7 +468,7 @@ En una instancia de autor, ha iniciado sesión con privilegios administrativos:
    * En el nodo `/oak:index`
    * Seleccionar nodo `ntBaseLucene`
    * Seleccionar **[!UICONTROL Copiar]**
-   * Seleccione `/oak:index`
+   * Seleccionar `/oak:index`
    * Seleccionar **[!UICONTROL Pegar]**
    * Cambie el nombre de la copia de ntBaseLucene a `ntBaseLucene-oauth`
 

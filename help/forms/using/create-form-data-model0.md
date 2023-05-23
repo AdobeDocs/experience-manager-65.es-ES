@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Crear modelo de datos de formulario en AEM Forms"
+title: "Tutorial: Crear un modelo de datos de formulario en AEM Forms"
 description: Crear un modelo de datos de formulario para la comunicación interactiva
 uuid: b56d3dac-be54-4812-b958-38a085686218
 contentOwner: anujkapo

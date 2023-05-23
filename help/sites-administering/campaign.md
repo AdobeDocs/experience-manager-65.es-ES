@@ -13,18 +13,18 @@ exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 32%
+ht-degree: 5%
 
 ---
 
 # Integración con Adobe Campaign{#integrating-with-adobe-campaign}
 
-Adobe Campaign es un conjunto de soluciones que le permite personalizar y entregar campañas en todos sus canales en línea y fuera de línea.
+Adobe Campaign es un conjunto de soluciones que le permite personalizar y entregar campañas en todos sus canales en línea y sin conexión.
 
 AEM Puede integrar esta versión de la aplicación con una de las siguientes versiones de Adobe Campaign:
 
-* Adobe Campaign 6.1, que es la solución de instalación local.
-* Adobe Campaign Standard, que es la solución basada en suscripción.
+* Adobe Campaign 6.1, que es la solución on-premise.
+* Adobe Campaign Standard, que es la solución basada en suscripciones.
 
 AEM En esta documentación se describe cómo integrar los segmentos de con el de Adobe Campaign. Dependiendo de si tiene la solución basada en suscripción o local, los pasos de integración diferirán ligeramente.
 

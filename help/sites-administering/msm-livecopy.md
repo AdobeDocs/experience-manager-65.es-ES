@@ -589,7 +589,7 @@ Para realizar un seguimiento de los cambios realizados, puede ver la página de 
 
 1. Las dos páginas (Live Copy y Modelo) se abrirán en paralelo.
 
-   Para obtener información completa sobre el uso de esta característica, consulte la [diferencia de la página](/help/sites-authoring/page-diff.md).
+   Para obtener información completa sobre el uso de esta función, consulte [Diferencias de página](/help/sites-authoring/page-diff.md).
 
 ## Desasociación de una Live Copy {#detaching-a-live-copy}
 

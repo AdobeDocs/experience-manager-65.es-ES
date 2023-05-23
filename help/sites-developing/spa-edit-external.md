@@ -153,7 +153,7 @@ En este ejemplo, la variable `ModelManager` se ha inicializado y un espacio de `
 
 Una vez creados los componentes React legibles, podemos utilizarlos en toda la aplicación.
 
-SPA Veamos una página de ejemplo en la que necesitamos agregar un texto del proyecto de WKND de la. Para este ejemplo, deseamos mostrar el texto &quot;Hello World!&quot; en `/content/wknd-spa-react/us/en/home.html`.
+SPA Veamos una página de ejemplo en la que necesitamos agregar un texto del proyecto de WKND de la. Para este ejemplo, deseamos mostrar el texto &quot;Hello World!&quot; el `/content/wknd-spa-react/us/en/home.html`.
 
 1. Determine la ruta del nodo que desea mostrar.
 

@@ -5,7 +5,7 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '1314'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
 
@@ -193,7 +193,7 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 | Componentes principales del CIF | 1.9.0 | [Notas de la versión](https://github.com/adobe/aem-core-cif-components/releases) |
 | Sitio de referencia de CIF Venia | 2021.03.25 | [Notas de la versión](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
-### Novedades
+### ¿Qué hay de nuevo?
 
 * Compatibilidad con Adobe Commerce 2.4.2
 

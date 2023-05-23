@@ -1,7 +1,7 @@
 ---
 title: Ofertas de Target
 seo-title: Target offers
-description: Crear ofertas de Target
+description: Creación de ofertas de Target
 seo-description: Create target offers
 uuid: 88206181-9708-454a-a22a-05e3fc0247c2
 contentOwner: User
@@ -13,7 +13,7 @@ exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 69%
+ht-degree: 6%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 69%
 
 ## Creación de una experiencia de oferta de Test&amp;Target {#creating-a-test-target-offer-experience}
 
-1. Seleccione la campaña nueva en el panel izquierdo o haga doble clic en el panel derecho.
-1. Seleccione la vista de lista con el icono:
+1. Seleccione la nueva campaña en el panel izquierdo o haga doble clic en ella en el panel derecho.
+1. Seleccione la vista de lista mediante el icono:
 
    ![](do-not-localize/chlimage_1-11.png)
 
-1. Haga clic en **Nuevo…**
+1. Clic **Nuevo...**
 1. Puede especificar la variable **Título**, **Nombre** y tipo de experiencia que se va a crear; en este caso, Oferta de Test&amp;Target.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
@@ -35,7 +35,7 @@ ht-degree: 69%
 
    >[!NOTE]
    >
-   >Las experiencias de Test&amp;Target no aparecen en el MCM en estos momentos. Se puede acceder a ellas desde la consola **Sitios web**, bajo Campañas.
+   >Las experiencias de Test&amp;Target no aparecen actualmente en el MCM. Se puede acceder a ellas desde el **Sitios web** , en Campañas.
 
 ## Integración con Adobe Target {#integrating-with-adobe-target}
 

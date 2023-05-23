@@ -1,6 +1,6 @@
 ---
 title: Creación de páginas con fragmentos de contenido
-description: Los fragmentos de contenido se crean y administran como recursos independientes de las páginas. Permiten crear contenido neutro con respecto al canal, además de variaciones.
+description: Los fragmentos de contenido se crean y administran como recursos independientes de la página. Permiten crear contenido neutro con respecto al canal, así como variaciones.
 page-status-flag: de-activated
 uuid: 8e3bb1bc-8720-48e2-8d06-98fbab4dd4fd
 contentOwner: Chris Bohnert
@@ -12,7 +12,7 @@ exl-id: b55d9edc-a210-407a-aa4b-a91bb358be7b
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 29%
+ht-degree: 40%
 
 ---
 
@@ -24,6 +24,6 @@ Permiten crear contenido neutro con respecto al canal, así como variaciones (po
 
 >[!CAUTION]
 >
->La funcionalidad completa de la administración de fragmentos de contenido no está disponible en la IU clásica. Consulte [Creación de páginas con fragmentos de contenido](/help/sites-authoring/content-fragments.md) en la documentación de creación estándar.
+>La funcionalidad completa de la Administración de fragmentos de contenido no está disponible en la IU clásica. Consulte [Creación de páginas con fragmentos de contenido](/help/sites-authoring/content-fragments.md) en la documentación de creación estándar.
 >
 >El componente Fragmento de contenido se puede ver en la barra de tareas de la IU clásica, pero no hay más funciones disponibles.

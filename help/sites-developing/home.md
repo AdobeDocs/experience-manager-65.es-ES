@@ -1,19 +1,19 @@
 ---
 title: Guía del usuario sobre desarrollo en AEM 6.5
 seo-title: AEM 6.5 Developing User Guide
-description: Aprenda a crear la instancia de AEM. Obtenga más información sobre la plataforma y los componentes y busque información sobre las herramientas de desarrollo y la personalización.
+description: Aprenda a crear la instancia de AEM. Obtenga más información acerca de la plataforma y los componentes y busque información sobre las herramientas de desarrollo y la personalización.
 seo-description: Covers how to build out your AEM instance.
 exl-id: 4413f5e8-7e52-4ea7-8be3-5717b780a6e2
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 86%
+ht-degree: 90%
 
 ---
 
 # Guía del usuario sobre desarrollo en AEM 6.5
 
-Aprenda a crear la instancia de AEM. Obtenga más información sobre la plataforma y los componentes y busque información sobre las herramientas de desarrollo y la personalización.
+Aprenda a crear la instancia de AEM. Obtenga más información acerca de la plataforma y los componentes y busque información sobre las herramientas de desarrollo y la personalización.
 
 ## Artículos clave de AEM
 
@@ -22,7 +22,7 @@ Aprenda a crear la instancia de AEM. Obtenga más información sobre la platafor
 * [Actualizaciones recientes de la documentación](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=es)
 * [Lista de comprobación de seguridad de AEM](/help/sites-administering/security-checklist.md)
 
-## Guías del usuario de AEM 6.5
+## AEM Guías del usuario de.5
 
 | Guía del usuario | Descripción |
 |--- |---|
@@ -44,9 +44,9 @@ Aprenda a crear la instancia de AEM. Obtenga más información sobre la platafor
 
 * [Tutoriales de AEM](https://helpx.adobe.com/es/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guía del usuario de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=es)
-* [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [Guía del usuario de HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 * [Guía del usuario de componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=es)
 * [Preparación para el RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=es#home)
 * [Foro de la comunidad de AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es)

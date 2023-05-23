@@ -1,5 +1,5 @@
 ---
-title: Creación de fragmentos de contenido Guía de inicio rápido sin encabezado
+title: Guía de inicio rápido Creación de fragmentos de contenido sin encabezado
 description: Aprenda a utilizar fragmentos de contenido de AEM para diseñar, crear, depurar y utilizar contenido independiente de las páginas para una entrega sin encabezado.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
@@ -9,7 +9,7 @@ ht-degree: 91%
 
 ---
 
-# Creación de fragmentos de contenido Guía de inicio rápido sin encabezado {#creating-content-fragments}
+# Guía de inicio rápido Creación de fragmentos de contenido sin encabezado {#creating-content-fragments}
 
 Aprenda a utilizar fragmentos de contenido de AEM para diseñar, crear, depurar y utilizar contenido independiente de las páginas para una entrega sin encabezado.
 
@@ -25,8 +25,8 @@ Los fragmentos de contenido contienen contenido estructurado y se pueden entrega
 
 Los autores de contenido generarán el número de fragmentos de contenido que corresponda para representar el contenido que crean. Esta será su tarea principal en AEM. Para los fines de esta guía de introducción, solo necesitamos crear uno.
 
-1. Inicie sesión en AEM y, en el menú principal, seleccione **Navegación -> Recursos**.
-1. Vaya a la [carpeta creada anteriormente.](create-assets-folder.md)
+1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Navegación -> Recursos**.
+1. Vaya a [carpeta creada anteriormente.](create-assets-folder.md)
 1. Toque o haga clic en **Crear -> Fragmento de contenido**.
 1. La creación de un fragmento de contenido se presenta como un asistente en dos pasos. Seleccione primero qué modelo desea utilizar para crear el fragmento de contenido y toque o haga clic en **Siguiente**.
    * Los modelos disponibles dependen de la [**Configuración de nube** que definió para la carpeta de recursos](create-assets-folder.md) en el que está creando el fragmento de contenido.

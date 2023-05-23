@@ -32,7 +32,7 @@ Hay tres métodos que se pueden utilizar para añadir metadatos y etiquetas:
 
    ![Crear fragmento de contenido: proporcionar nombre](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* La variable **Variaciones** pestaña del editor de fragmentos de contenido le permite añadir **Etiquetas** del proyecto:
+* El **Variaciones** de la pestaña del editor de fragmentos de contenido le permite añadir elementos predefinidos **Etiquetas** del proyecto:
 
    ![Editor de fragmentos de contenido: Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 

@@ -11,7 +11,7 @@ role: User
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 87%
+ht-degree: 68%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 87%
 
 + [Creación de Guía del usuario](home.md)
 + AEM Tareas, herramientas y conceptos esenciales para la creación de {#essentials}
-   + [Primeros pasos de creación](first-steps.md)
+   + [Primeros pasos para los autores](first-steps.md)
    + [Creación de páginas](page-authoring.md)
    + [Guía rápida para la creación de páginas](qg-page-authoring.md)
    + [Concepto de creación](author.md)
@@ -29,7 +29,7 @@ ht-degree: 87%
    + [Configuración del entorno de cuenta](user-properties.md)
    + [Su bandeja de entrada](inbox.md)
    + [Métodos abreviados de teclado para consolas](keyboard-shortcuts.md)
-   + [Seleccionar la IU](select-ui.md)
+   + [Selección de la IU](select-ui.md)
 + Creación {#authoring}
    + [Herramientas y entorno de creación](author-environment-tools.md)
    + [Anotaciones al editar una página](annotations.md)
@@ -46,7 +46,7 @@ ht-degree: 87%
    + [Resolución de problemas de AEM durante la creación](troubleshooting.md)
    + [Métodos abreviados de teclado al editar páginas](page-authoring-keyboard-shortcuts.md)
    + [Prácticas recomendadas](best-practices.md)
-+ Funciones de sitio y de página {#siteandpage}
++ Características del sitio y de la página {#siteandpage}
    + [Uso de etiquetas](tags.md)
    + [Creación de plantillas de página  ](templates.md)
    + [Sistema de estilos](style-system.md)
@@ -56,15 +56,15 @@ ht-degree: 87%
    + [Diseño adaptable](responsive-layout.md)
    + [Perspectiva de contenido](content-insights.md)
    + [Crear contenido accesible (Conformidad con WCAG 2.1)](creating-accessible-content.md)
-   + [Configurar componentes en modo Diseño](default-components-designmode.md)
+   + [Configuración de componentes en modo de diseño](default-components-designmode.md)
    + [Componentes de base](default-components-foundation.md)
-   + [Scaffolding](scaffolding.md)
+   + [Andamiaje](scaffolding.md)
    + [Visualización de datos de análisis de la página](page-analytics-using.md)
 + Proyectos {#projects}
    + [Proyectos](projects.md)
    + [Administración de proyectos](touch-ui-managing-projects.md)
    + [Uso de tareas](task-content.md)
-   + [Creative Project e integración PIM](managing-product-information.md)
+   + [Integración de Creative Project y PIM](managing-product-information.md)
    + [Uso de flujos de trabajo de proyecto](projects-with-workflows.md)
 + Lanzamientos {#launches}
    + [Lanzamientos](launches.md)
@@ -78,7 +78,7 @@ ht-degree: 87%
    + [Uso de flujos de trabajo de proyecto](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
 + Rendimiento de página {#page-performance}
    + [Perspectiva de contenido](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
-   + [Analizar el rendimiento de la página](ci-analyze.md)
+   + [Análisis del rendimiento de la página](ci-analyze.md)
    + [Visualización de datos de análisis de la página](pa-using.md)
 + Personalización {#personalization}
    + [Personalización](personalization.md)
@@ -91,8 +91,8 @@ ht-degree: 87%
    + [Creación y administración de ofertas](offerlib.md)
    + [Información acerca de la segmentación](segmentation-overview.md)
 + AEM y ADOBE CAMPAIGN {#aem-adobe-campaign}
-   + [Trabajo con Adobe Campaign](adobe-campaign.md)
+   + [Uso de Adobe Campaign](adobe-campaign.md)
    + [Trabajo con Adobe Campaign Classic y Adobe Campaign Standard](campaign.md)
-   + [Targeting de Adobe Campaign](target-adobe-campaign.md)
-   + [Crear formularios de Adobe Campaign en AEM](adobe-campaign-forms.md)
+   + [Segmentación de Adobe Campaign](target-adobe-campaign.md)
+   + [Creación de Adobe Campaign Forms AEM en](adobe-campaign-forms.md)
    + [Componentes de Adobe Campaign](adobe-campaign-components.md)

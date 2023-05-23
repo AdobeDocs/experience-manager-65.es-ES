@@ -15,7 +15,7 @@ exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 source-git-commit: 1b2d743f8f2172c4e4663917d598734cb1ea1ea4
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 43%
+ht-degree: 40%
 
 ---
 
@@ -39,7 +39,7 @@ Designer está disponible como programa de instalación independiente y se integ
 
 
 1. Inicie el programa de instalación de AEM Forms Designer haciendo doble clic en setup.exe.
-1. Continúe y proporcione sus detalles y número de serie en la pantalla Personalizar.
+1. Continúe y proporcione sus detalles y el número de serie en la pantalla Personalización.
 1. Si acepta el acuerdo de licencia, haga clic en Siguiente para continuar.
 1. (Opcional) Si desea instalar Designer en una ubicación de su elección, modifique la ruta de instalación. Haga clic en Siguiente.
 1. Haga clic en Atrás para cambiar las preferencias. Para instalar Designer, haga clic en Instalar.

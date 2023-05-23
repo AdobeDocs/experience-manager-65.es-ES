@@ -19,9 +19,9 @@ ht-degree: 98%
 
 # Crear y administrar pruebas A/B para formularios adaptables{#create-and-manage-a-b-test-for-adaptive-forms}
 
-[!BADGE Suspendido]{type=negative tooltip="Esta función ya ha finalizado su vida útil"}
+[!BADGE Suspendido]{type=negative tooltip="Esta función acaba ahora con su vida útil"}
 
-<div class="preview"> La función de prueba A/B para formularios adaptables ha llegado al final de su vida útil y ya no es compatible. </div>
+<div class="preview"> La prueba A/B para la característica de formularios adaptables ha llegado al final de su vida útil y ya no es compatible. </div>
 
 ## Información general {#overview-br}
 

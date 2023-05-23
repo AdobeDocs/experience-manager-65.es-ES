@@ -13,7 +13,7 @@ exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1184'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -109,7 +109,7 @@ A continuación se muestran algunas de las propiedades en las que se pueden busc
 |---|---|
 | isFlagged | *Booleana* |
 | isSpam | *Booleana* |
-| read | *Booleana* |
+| leer | *Booleana* |
 | influenciar | *Booleana* |
 | attachments | *Booleana* |
 | opinión | *Largo* |
@@ -186,9 +186,9 @@ Los operadores de filtro son:
 |---|---|
 | NE | no igual a |
 | LT | menor que |
-| LTE | menor o igual que |
+| LTE | menor que o igual a |
 | GE | bueno que |
-| GTE | mayor o igual que |
+| GTE | bueno que o igual a |
 | LIKE | coincidencia aproximada |
 
 Es importante que la dirección URL haga referencia al componente (recurso) de Communities y no a la página en la que se coloca el componente:

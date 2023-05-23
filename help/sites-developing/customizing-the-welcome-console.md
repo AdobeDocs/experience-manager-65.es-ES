@@ -13,7 +13,7 @@ exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 9%
+ht-degree: 7%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 >[!CAUTION]
 >
->Esta página trata la IU clásica.
+>Esta página trata sobre la IU clásica de.
 >
 >Consulte [Personalización de las consolas](/help/sites-developing/customizing-consoles-touch.md) para obtener más información sobre la IU táctil estándar.
 

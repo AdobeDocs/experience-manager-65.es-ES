@@ -6,7 +6,7 @@ user-guide-description: Aprenda a utilizar y administrar AEM Content and Commerc
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 70%
    + [Adobe Commerce](cif/integrating/magento.md)
    + [Solución de comercio de terceros](cif/integrating/third-party.md)
 + AEM Storefront {#storefront}
-   + [Introducción](cif/getting-started.md)
+   + [Primeros pasos](cif/getting-started.md)
    + Creación {#authoring}
       + [Experiencias de Commerce](cif/authoring/authoring-commerce-experiences.md)
       + [Product Cockpit](cif/authoring/product-cockpit.md)

@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas para AEM Mobile On-demand Services
-description: Obtenga información sobre las prácticas recomendadas y las directrices que ayudan a los desarrolladores experimentados de AEM para sitios, que desean crear plantillas y componentes para aplicaciones móviles.
+description: AEM Conozca las prácticas recomendadas y las directrices que ayudan a los desarrolladores de sitios con experiencia en la creación de plantillas y componentes de aplicaciones móviles, y que tienen mucho experiencia en la creación de sitios web.
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-La creación de una aplicación de AEM Mobile On-demand Services es diferente a la creación de una aplicación que se ejecuta directamente en el shell de Cordova (o PhoneGap). Los desarrolladores deben estar familiarizados con lo siguiente:
+Crear una aplicación de AEM Mobile On-demand Services es diferente a crear una aplicación que se ejecute directamente en el shell de Cordova (o PhoneGap). Los desarrolladores deben estar familiarizados con lo siguiente:
 
-* Los complementos compatibles de serie, así como los complementos específicos de AEM Mobile.
+* Complementos admitidos de forma predeterminada, así como los complementos específicos de AEM Mobile.
 
 >[!NOTE]
 >
@@ -34,56 +34,56 @@ La creación de una aplicación de AEM Mobile On-demand Services es diferente a 
 >
 
 
-* Las plantillas que utilizan la funcionalidad de complemento deben escribirse de forma que puedan seguir utilizándose en el explorador, sin que el puente del complemento esté presente.
+* Las plantillas que utilizan la funcionalidad del complemento deben escribirse de tal manera que se puedan crear en el explorador, sin que esté presente el puente del complemento.
 
-   * Por ejemplo, asegúrese de esperar a que *deviceready* antes de intentar acceder a la API de un complemento.
+   * Por ejemplo, asegúrese de esperar a que *dispositivo preparado* antes de intentar acceder a la API de un complemento.
 
-## Directrices para desarrolladores de AEM {#guidelines-for-aem-developers}
+## AEM Directrices para desarrolladores de {#guidelines-for-aem-developers}
 
-Las siguientes directrices ayudarán a los desarrolladores experimentados de AEM para sitios que deseen crear plantillas y componentes de aplicaciones móviles:
+AEM Las siguientes directrices ayudarán a los desarrolladores de sitios con experiencia en la creación de plantillas y componentes de aplicaciones móviles, que ya tienen experiencia en la creación de sitios:
 
-**Estructura AEM plantillas de sitios para fomentar la reutilización y la extensibilidad**
+**AEM Estructura de plantillas de sitios para fomentar la reutilización y la extensibilidad**
 
-* Preferir varios archivos de script de componente sobre uno solo y monolítico
+* Preferir varios archivos de script de componente sobre uno monolítico
 
-   * Se proporcionan varios puntos de extensión vacíos, como *customheaderlibs.html* y *customfooterlibs.html*, que permiten al desarrollador cambiar la plantilla de página duplicando el menor código principal posible
-   * Las plantillas se pueden ampliar y personalizar mediante Sling *sling:resourceSuperType* mecanismo
+   * Se proporcionan varios puntos de extensión vacíos, como *customheaderlibs.html* y *customfoterlibs.html*, que permiten al desarrollador cambiar la plantilla de página duplicando el menor código principal posible
+   * Las plantillas se pueden ampliar y personalizar mediante las API de Sling *sling:resourceSuperType* mecanismo
 
-* Preferir Sightly/HTL sobre JSP como idioma de plantilla
+* Preferir Sightly/HTL sobre JSP como idioma de creación de plantillas
 
-   * El uso de esto fomenta una separación del código del marcado, ofrece una protección XSS integrada y tiene una sintaxis más familiar
+   * El uso de esto promueve la separación del código del marcado, ofrece protección XSS integrada y tiene una sintaxis más familiar
 
-**Optimizar para el rendimiento en dispositivos**
+**Optimización del rendimiento en el dispositivo**
 
-* La secuencia de comandos específica del artículo y las hojas de estilo deben incluirse en la carga útil del artículo, utilizando la plantilla contentsync dps-article
-* Las hojas de estilo y el script compartidos por más de un artículo deben incluirse en los recursos compartidos, a través de la plantilla dps-HTMLResources contentsync
-* No haga referencia a ninguna secuencia de comandos externa que sea un bloqueo de procesamiento
-
->[!NOTE]
->
->Puede obtener más información detallada sobre los scripts externos de bloqueo de renderización [here](https://developers.google.com/speed/docs/insights/BlockingJS).
-
-**Prefiera las bibliotecas JS y CSS específicas de la aplicación sobre las específicas de la web**
-
-* Para evitar sobrecargas en bibliotecas como jQuery Mobile para gestionar una gran variedad de dispositivos y navegadores
-* Cuando una plantilla se ejecuta en la vista web de una aplicación, usted tiene control sobre las plataformas y versiones que la aplicación va a admitir, así como también el conocimiento de que estará presente el soporte de JavaScript. Por ejemplo, prefiera Ionic (quizá solo el CSS) sobre la interfaz de usuario de jQuery Mobile y Onsen en lugar del Bootstrap.
+* La secuencia de comandos específica del artículo y las hojas de estilo deben incluirse en la carga útil del artículo mediante la plantilla dps-article-contentsync
+* Las secuencias de comandos y las hojas de estilo compartidas por más de un artículo se deben incluir en los recursos compartidos mediante la plantilla contentsync dps-HTMLResources
+* No haga referencia a ningún script externo que bloquee el procesamiento
 
 >[!NOTE]
 >
->Para obtener más información sobre jQuery mobile, haga clic en [here](https://jquerymobile.com/browser-support/1.4/).
+>Puede obtener más información en detalle sobre los scripts externos que bloquean el procesamiento [aquí](https://developers.google.com/speed/docs/insights/BlockingJS).
 
-**Preferir microbibliotecas sobre pilas completas**
+**Preferir bibliotecas JS y CSS del lado del cliente y específicas de la aplicación sobre las específicas de la web**
 
-* El tiempo que tarda en poner el contenido en la copa del dispositivo se verá ralentizado por cada biblioteca de la que dependan sus artículos. Esta ralentización se agrava cuando se utiliza una nueva vista web para procesar cada artículo, por lo que cada biblioteca debe volver a inicializarse desde cero
-* Si los artículos no se crean como SPA (aplicaciones de una sola página), probablemente no necesite incluir una biblioteca de pila completa como Angular
-* Prefiera bibliotecas de un solo propósito más pequeñas para ayudar a agregar la interactividad que requiere su página, como [Fastclick](https://github.com/ftlabs/fastclick) o [Velocity.js](https://velocityjs.org)
+* Para evitar sobrecargas en bibliotecas como jQuery Mobile para gestionar una gran cantidad de dispositivos y navegadores
+* Cuando se ejecuta una plantilla en la vista web de una aplicación, usted tiene control sobre las plataformas y versiones que esa aplicación va a admitir, así como sobre la presencia de compatibilidad con JavaScript. Por ejemplo, prefiera Ionic (quizás solo el CSS) sobre jQuery Mobile y la interfaz de usuario de Onsen sobre Bootstrap.
+
+>[!NOTE]
+>
+>Para obtener más información detallada sobre jQuery mobile, haga clic en [aquí](https://jquerymobile.com/browser-support/1.4/).
+
+**Preferir las microbibliotecas en lugar de la pila completa**
+
+* El tiempo que se tarda en poner el contenido en el cristal del dispositivo se ralentizará con cada biblioteca de la que dependan los artículos. Esta ralentización se agrava cuando se utiliza una nueva vista web para procesar cada artículo, por lo que cada biblioteca debe inicializarse de nuevo desde cero
+* SPA Si los artículos no están diseñados como tal (aplicaciones de una sola página), probablemente no necesite incluir una biblioteca de pila completa como Angular
+* Prefiera bibliotecas de un solo propósito más pequeñas para añadir la interactividad que requiere su página, como [Fastclick](https://github.com/ftlabs/fastclick) o [Velocity.js](https://velocityjs.org)
 
 **Minimizar el tamaño de la carga útil del artículo**
 
 * Utilice los recursos más pequeños posibles que puedan cubrir eficazmente la ventanilla más grande que admita, con una resolución razonable
-* Utilice una herramienta como *ImageOptim* en las imágenes para eliminar cualquier exceso de metadatos
+* Utilice una herramienta como *ImageOptim* en las imágenes para eliminar el exceso de metadatos
 
-## Cómo avanzar {#getting-ahead}
+## Primeros pasos {#getting-ahead}
 
 Para obtener más información sobre las otras dos funciones y responsabilidades, consulte los recursos siguientes:
 

@@ -36,7 +36,7 @@ Así que tiene mucho contenido bien estructurado (en fragmentos de contenido) pa
 
 Lo que necesita es una forma de segmentar el contenido específico, seleccionar lo que necesita y devolverlo a su aplicación para un procesamiento posterior.
 
-Con Adobe Experience Manager (AEM), puede acceder de forma selectiva a sus fragmentos de contenido mediante la API de GraphQL de AEM para devolver solo el contenido que necesite. Esto significa que puede realizar entrega de contenido sin encabezado estructurado para utilizarlo en sus aplicaciones.
+Con Adobe Experience Manager AEM AEM (), puede acceder de forma selectiva a sus fragmentos de contenido mediante la API de GraphQL de para devolver solo el contenido que necesita. Esto significa que puede realizar entrega de contenido sin encabezado estructurado para utilizarlo en sus aplicaciones.
 
 >[!NOTE]
 >
@@ -242,11 +242,11 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Antes de comenzar con consultas sobre el contenido, debe realizar lo siguiente:
 
 * Habilitar el punto final
-   * Uso de herramientas -> Recursos -> GraphQL
+   * Use Herramientas -> Recursos -> GraphQL
    * [Activación del punto final de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
-* Acceso a GraphiQL (si es necesario)
-   * [Interfaz AEM GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
+* Acceder a GraphiQL (si es necesario)
+   * [AEM Interfaz de GraphiQL de](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Estructura de muestra {#sample-structure}
 
@@ -269,7 +269,7 @@ Se utilizarán los modelos de fragmento:
 
 ### Dónde probar las consultas {#where-to-test-your-queries}
 
-Las consultas se pueden introducir en la variable [Interfaz de GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), por ejemplo en:
+Las consultas se pueden introducir en la variable [Interfaz de GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), por ejemplo, en:
 
 * `http://localhost:4502/aem/graphiql.html`
 

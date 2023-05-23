@@ -28,7 +28,7 @@ AEM Las nuevas versiones de la introducen cambios en las definiciones de índice
 
 El problema al que se enfrentan la mayoría de los clientes durante una actualización es la reducción del tiempo de inactividad. La solución es **omitir** la actividad de reindexación durante la actualización. Esto se puede lograr creando nuevos índices **previo** para realizar la actualización y, a continuación, impórtelos durante la actualización.
 
-## Enfoque {#approach}
+## Aproximación {#approach}
 
 ![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-process.png)
 

@@ -22,7 +22,7 @@ ht-degree: 5%
 
 AEM Para ayudarle a monitorizar y analizar el estado de su instancia, proporciona una selección de informes predeterminados, que se pueden configurar para sus necesidades individuales:
 
-* [Informe de componentes](#component-report)
+* [Informe sobre componentes](#component-report)
 * [Uso del disco](#disk-usage)
 * [Comprobación de estado](#health-check)
 * [Informe de actividad de la página](#page-activity-report)
@@ -47,7 +47,7 @@ Las nuevas instancias de un informe también se pueden crear desde el **Herramie
 
 Hay varios formatos de informes disponibles. Los siguientes informes utilizan columnas que se pueden personalizar según se detalla en las secciones siguientes:
 
-* [Informe de componentes](#component-report)
+* [Informe sobre componentes](#component-report)
 * [Informe de actividad de la página](#page-activity-report)
 * [Informe de contenido generado por el usuario](#user-generated-content-report)
 * [Informe del usuario](#user-report)
@@ -296,7 +296,7 @@ Con este cuadro de diálogo puede definir o actualizar su propio título y descr
 
 ## Tipos de informes {#report-types}
 
-### Informe de componentes {#component-report}
+### Informe sobre componentes {#component-report}
 
 El informe de componentes proporciona información sobre cómo utiliza el sitio web los componentes.
 
@@ -348,13 +348,13 @@ Para generar el informe, puede especificar lo siguiente:
 
    Predeterminado: `24`
 
-* **max. Resultados**
+* **máx. Resultados**
 
    Número máximo de líneas de salida.
 
    Predeterminado: `50`
 
-* **max. Solicitudes**
+* **máx. Solicitudes**
 
    Número máximo de solicitudes que analizar.
 
@@ -430,8 +430,8 @@ Este informe proporciona información sobre todos los usuarios que han registrad
 * Correo electrónico
 * Apellido
 * Sexo
-* [Genérico](#generic-column)
-* Nombre de pila
+* [Genérica](#generic-column)
+* Nombre dado
 * Información
 * Interés
 * Idioma
@@ -553,7 +553,7 @@ AEM En una instalación estándar, los siguientes permisos están preestablecido
 
    `contributors` - leer y escribir
 
-* **Informe de componentes**
+* **Informe sobre componentes**
 
    `contributors` - leer y escribir
 

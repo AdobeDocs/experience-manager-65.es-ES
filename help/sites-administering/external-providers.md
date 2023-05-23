@@ -14,7 +14,7 @@ exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -80,7 +80,7 @@ Para la configuración básica:
 
    ![](assets/analytics_snippet.png)
 
-1. Haga clic en **Aceptar** para guardar.
+1. Clic **OK** para guardar.
 
 ## Uso del nuevo servicio en páginas {#using-your-new-service-on-pages}
 
@@ -92,12 +92,12 @@ Una vez creada la configuración del servicio, ahora debe configurar las página
 
    ![](assets/analytics_selectservice.png)
 
-1. Haga clic en **Aceptar** para guardar.
+1. Clic **OK** para guardar.
 1. Se le devolverá a la **Cloud Services** pestaña. El **Fragmento de análisis genérico** ahora aparece con el mensaje `Configuration reference missing`. Utilice la lista desplegable para seleccionar su instancia de servicio específica; por ejemplo, google-analytics:
 
    ![](assets/analytics_selectspecificservice.png)
 
-1. Haga clic en **Aceptar** para guardar.
+1. Clic **OK** para guardar.
 
    Ahora, el fragmento se puede ver si ve el Origen de la página para la página.
 

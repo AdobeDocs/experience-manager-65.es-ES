@@ -1,5 +1,5 @@
 ---
-title: Creación de una carpeta de recursos Guía de inicio rápido sin encabezado
+title: Guía de inicio rápido Creación de una carpeta de recursos sin encabezado
 description: Utilice modelos de fragmentos de contenido de AEM para definir la estructura de los fragmentos de contenido, la base del contenido sin encabezado.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
@@ -9,7 +9,7 @@ ht-degree: 87%
 
 ---
 
-# Creación de una carpeta de recursos Guía de inicio rápido sin encabezado {#creating-an-assets-folder}
+# Guía de inicio rápido Creación de una carpeta de recursos sin encabezado {#creating-an-assets-folder}
 
 Utilice modelos de fragmentos de contenido de AEM para definir la estructura de los fragmentos de contenido, la base del contenido sin encabezado. A continuación, los fragmentos de contenido se almacenan en carpetas de recursos.
 
@@ -25,7 +25,7 @@ Las carpetas de recursos se utilizan para [organizar recursos de contenido tradi
 
 Un administrador solo tendría que crear carpetas ocasionalmente para organizar el contenido a medida que se crea. Para los fines de esta guía de introducción, solo necesitamos crear una carpeta.
 
-1. Inicie sesión en AEM y, en el menú principal, seleccione **Navegación -> Assets -> Archivos**.
+1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Navegación -> Recursos -> Archivos**.
 1. Haga clic o pulse en **Crear -> Carpeta**.
 1. Proporcione un **Título** y **Nombre** para su carpeta.
    * El **Título** debe ser descriptivo.
@@ -34,7 +34,7 @@ Un administrador solo tendría que crear carpetas ocasionalmente para organizar 
       * Se puede modificar si es necesario.
 
    ![Crear carpeta](assets/assets-folder-create.png)
-1. Seleccione la carpeta que acaba de crear y, a continuación, seleccione **Propiedades** en la barra de herramientas (o utilice la `p` [atajo de teclado.](/help/sites-authoring/keyboard-shortcuts.md))
+1. Seleccione la carpeta que acaba de crear y luego seleccione **Propiedades** en la barra de herramientas (o utilice la variable `p` [método abreviado de teclado.](/help/sites-authoring/keyboard-shortcuts.md))
 1. En la ventana **Propiedades**, seleccione la pestaña **Servicios de nube**.
 1. Para la **Configuración de nube**, seleccione la [configuración que creó anteriormente.](create-configuration.md)
 

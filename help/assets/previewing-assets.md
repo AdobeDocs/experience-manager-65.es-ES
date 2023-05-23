@@ -14,7 +14,7 @@ exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '1369'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -152,7 +152,7 @@ Para habilitar o deshabilitar los ajustes preestablecidos de visualizador en la 
 
 1. Prensa `<Enter>` para poder abrir el recurso seleccionado en el modo de vista previa.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Para acercar, pulse `<Tab>` para desplazar el foco al icono de ampliar (+), pulse `<Enter>` una o más veces para aumentar gradualmente.
    * Para alejar, pulse `<Tab>` para desplazar el enfoque al icono de alejar (-), pulse `<Enter>` una o más veces para alejar gradualmente.

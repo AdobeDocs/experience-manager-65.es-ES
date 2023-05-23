@@ -48,7 +48,7 @@ Antes de empezar a configurar o codificar el componente, debe preguntar lo sigui
 
 Antes de que comience una conversación seria sobre el desarrollo de componentes, debe saber qué interfaz de usuario utilizarán los autores:
 
-* **IU táctil**
+* **IU táctil.**
    [Interfaz de usuario estándar](/help/sites-developing/touch-ui-concepts.md) se basa en la experiencia de usuario unificada para Adobe Marketing Cloud, utilizando las tecnologías subyacentes de [IU de Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) y [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **IU clásica**
 AEM Interfaz de usuario basada en la tecnología ExtJS obsoleta con la versión 6.4 de.
@@ -67,13 +67,13 @@ Por esta razón, en esta página trataremos los conceptos básicos de ambos, y c
 
 Se recomienda mantener el código responsable del marcado y el procesamiento separado del código que controla la lógica utilizada para seleccionar el contenido del componente.
 
-Esta filosofía está respaldada por [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), un lenguaje de creación de plantillas que se limita intencionadamente para garantizar que se utiliza un lenguaje de programación real para definir la lógica empresarial subyacente. Esta lógica (opcional) se invoca desde HTL con un comando específico. Este mecanismo resalta el código que se llama para una vista determinada y, si es necesario, permite una lógica específica para diferentes vistas del mismo componente.
+Esta filosofía está respaldada por [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es), un lenguaje de creación de plantillas que se limita intencionadamente para garantizar que se utiliza un lenguaje de programación real para definir la lógica empresarial subyacente. Esta lógica (opcional) se invoca desde HTL con un comando específico. Este mecanismo resalta el código que se llama para una vista determinada y, si es necesario, permite una lógica específica para diferentes vistas del mismo componente.
 
 ### HTL frente a JSP {#htl-vs-jsp}
 
 HTL es un lenguaje de creación de plantillas para HTML AEM incluido en la versión 6.0 de la aplicación de.
 
-El debate sobre si se debe utilizar [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) AEM o JSP (Java Server Pages) al desarrollar sus propios componentes debe ser sencillo, ya que HTL es ahora el lenguaje de script recomendado para los usuarios de la plataforma de scripts de la plataforma de trabajo de la plataforma de.
+El debate sobre si se debe utilizar [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) AEM o JSP (Java Server Pages) al desarrollar sus propios componentes debe ser sencillo, ya que HTL es ahora el lenguaje de script recomendado para los usuarios de la plataforma de scripts de la plataforma de trabajo de la plataforma de.
 
 HTL y JSP se pueden utilizar para desarrollar componentes tanto para la IU clásica como para la táctil. Aunque puede haber una tendencia a suponer que HTL es solo para la IU táctil y JSP para la IU clásica, esta es una idea errónea y más debido al tiempo. AEM La interfaz de usuario táctil y HTL se incorporaron a las herramientas de forma durante aproximadamente el mismo periodo. Dado que HTL es ahora el idioma recomendado, se está utilizando para nuevos componentes, que tienden a ser para la interfaz de usuario táctil.
 
@@ -182,7 +182,7 @@ La definición de un componente se puede desglosar de la siguiente manera:
    * IU clásica:
 
       * `icon.png` : icono para este componente.
-      * `thumbnail.png` : imagen que se muestra si este componente aparece enumerado en el sistema de párrafos.
+      * `thumbnail.png` : imagen que se muestra si este componente aparece en la lista del sistema de párrafos.
    * IU táctil
 
       * Consulte la sección [Icono de componente en la IU táctil](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para obtener más información.
@@ -434,7 +434,7 @@ Las definiciones de los cuadros de diálogo son específicas de la IU:
 >
 
 
-* IU táctil
+* IU táctil.
    * `cq:dialog` ( `nt:unstructured`) nodes:
       * definir el cuadro de diálogo para editar el contenido de este componente
       * específico para la IU táctil
@@ -499,7 +499,7 @@ Una vez definido un componente, debe estar disponible para su uso. Para que un c
 
 Si creamos y configuramos una instancia de **Título** en la página: `<content-path>/Prototype.html`
 
-* IU táctil
+* IU táctil.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
@@ -828,7 +828,7 @@ El nodo de tipo `cq:DropTargetConfig` necesita tener las siguientes propiedades:
 <table>
  <tbody>
   <tr>
-   <td><strong>Nombre de propiedad</strong></td>
+   <td><strong>Nombre de la propiedad</strong></td>
    <td><strong>Valor de propiedad<br /> </strong></td>
   </tr>
   <tr>
@@ -910,7 +910,7 @@ El `cq:inplaceEditing` node (tipo de nodo) `cq:InplaceEditingConfig`) define una
 <table>
  <tbody>
   <tr>
-   <td><strong>Nombre de propiedad</strong></td>
+   <td><strong>Nombre de la propiedad</strong></td>
    <td><strong>Valor de propiedad<br /> </strong></td>
   </tr>
   <tr>
@@ -949,7 +949,7 @@ El `cq:listeners` node (tipo de nodo) `cq:EditListenersConfig`) define lo que su
 <table>
  <tbody>
   <tr>
-   <td><strong>Nombre de propiedad</strong></td>
+   <td><strong>Nombre de la propiedad</strong></td>
    <td><strong>Valor de propiedad<br /> </strong></td>
    <td><p><strong>Valor predeterminado</strong></p> <p>(Solo IU clásica)</p> </td>
   </tr>

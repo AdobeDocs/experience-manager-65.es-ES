@@ -101,7 +101,7 @@ Para algunas funciones (por ejemplo, para procesar solo un intervalo de párrafo
 <table>
  <tbody>
   <tr>
-   <td>Nombre de propiedad</td>
+   <td>Nombre de la propiedad</td>
    <td>Descripción</td>
   </tr>
   <tr>
@@ -131,7 +131,7 @@ Para algunas funciones (por ejemplo, para procesar solo un intervalo de párrafo
 >
 >Esto puede cambiar en los hitos 6.5 posteriores.
 
-## Ejemplo {#example}
+## Ejemplos {#example}
 
 AEM Por ejemplo, consulte lo siguiente (en una instancia de aplicación predeterminada de la interfaz de usuario de la interfaz de usuario de la aplicación de configuración de la aplicación de configuración de la aplicación de configuración de la aplicación):
 

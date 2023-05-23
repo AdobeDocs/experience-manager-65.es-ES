@@ -230,7 +230,7 @@ De forma opcional, puede utilizar estas casillas de verificación con **[!UICONT
 
 1. En **[!UICONTROL Programación]**, establezca el tiempo de desactivación.
 
-   | Programación seleccionada | Qué sucede |
+   | Programación seleccionada | ¿Qué sucede? |
    | --- | --- |
    | Ahora | La acción seleccionada se realiza inmediatamente. |
    | Más tarde | La acción seleccionada se ejecuta en la fecha y la hora seleccionadas. |

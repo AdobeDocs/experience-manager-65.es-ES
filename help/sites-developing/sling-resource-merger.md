@@ -245,7 +245,7 @@ La fusión de recursos de Sling incluye dos proveedores de recursos personalizad
 
    * objetivo: combinar recursos en función de su ruta de búsqueda
    * punto de montaje: `/mnt/overlay`
-   * usage: `mount point + relative path`
+   * uso: `mount point + relative path`
    * ejemplo:
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
@@ -254,7 +254,7 @@ La fusión de recursos de Sling incluye dos proveedores de recursos personalizad
 
    * objetivo: combinar recursos en función de su supertipo
    * punto de montaje: `/mnt/overide`
-   * usage: `mount point + absolute path`
+   * uso: `mount point + absolute path`
    * ejemplo:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`

@@ -1,5 +1,5 @@
 ---
-title: Fragmentos de documento en AEM
+title: Fragmentos de documento AEM en el
 description: Los fragmentos de documento, como texto, listas, condiciones y fragmentos de diseño, de Administración de correspondencia le permiten formar los componentes estáticos, dinámicos y repetibles de la correspondencia del cliente.
 uuid: 4273323d-14f5-4b3b-8fed-80beef641efe
 topic-tags: correspondence-management
@@ -296,12 +296,12 @@ Dependiendo de las opciones que elija, solo se evaluará la primera expresión q
 
 El Editor de condiciones viene con una interfaz de usuario llamada [Generador de expresiones](/help/forms/using/expression-builder.md) que admite la creación de expresiones utilizando varios marcadores de posición y elementos de diccionario de datos. Puede utilizar operandos comunes y funciones locales o globales en dichas expresiones. Cada expresión se puede asociar con un determinado contenido y, alternativamente, puede haber una sección predeterminada si ninguna de las expresiones se evalúa como True. Todas las expresiones se evalúan en la secuencia en la que se definen, se seleccionan las primeras expresiones que devuelven el valor True, y el contenido asociado a ellas se devuelve mediante ese módulo condicional.
 
-Por ejemplo, si el texto de los términos y condiciones de una carta difiere según el estado en que se encuentre el cliente y el diccionario de datos contenga un elemento llamado &quot;state&quot;, puede agregar la condición de la siguiente manera:
-* state = NY, seleccione el párrafo de texto T&amp;C_NY
-* state = NC, seleccione párrafo de texto T&amp;C_NC
+Por ejemplo, si el texto de los términos y condiciones de una carta depende del estado en el que se encuentra el cliente, y el diccionario de datos contiene un elemento llamado &quot;state&quot;, puede agregar la condición de la siguiente manera:
+* state = NY, seleccione T&amp;C_NY text paragraph
+* state = NC, seleccione T&amp;C_NC text paragraph
 
-El Editor de condiciones permite especificar una condición predeterminada. Si el valor de las variables de control no coincide con ninguna de las condiciones, se utiliza el contenido asociado con la condición predeterminada. Después del ejemplo anterior, puede añadir esta fila de condición:
-* Predeterminado, seleccione T&amp;C_Rest
+El Editor de condiciones permite especificar una condición predeterminada. Si el valor de las variables de control no coincide con ninguna de las condiciones, se utiliza el contenido asociado con la condición predeterminada. Después del ejemplo anterior, puede agregar esta fila de condición:
+* De forma predeterminada, seleccione T&amp;C_Rest
 
 ### Creación de una condición {#create-a-condition}
 
@@ -444,7 +444,7 @@ Esto garantiza que a los subformularios insertados mediante el comando Insertar 
 Si la carta final creada en la interfaz de usuario Crear correspondencia se utiliza para rellenar un flujo de trabajo posterior, siga estas recomendaciones relacionadas con la Sección 508 durante la creación del diseño. En caso contrario, la carta PDF está destinada a su exhibición, y puede ignorar estas recomendaciones:
 
 * Todos los subformularios de área de destino y todos los campos del diseño tienen un orden de tabulación.
-* Los campos con pie de ilustración cumplen los requisitos establecidos por la Sección 508 de forma predeterminada. El atributo /field/help/speak@priority del campo está configurado como &quot;personalizado&quot; de forma predeterminada, lo que significa que, a menos que se proporcione texto personalizado del lector de pantalla, el lector de pantalla lee el rótulo del campo.
+* Los campos con pie de ilustración cumplen los requisitos establecidos por la Sección 508 de forma predeterminada. El atributo /field/help/speak@priority del campo está establecido en &quot;personalizado&quot; de forma predeterminada, lo que significa que, a menos que se proporcione texto personalizado para los lectores de pantalla, estos leerán el título del campo.
 * Los campos sin pie de ilustración especifican información sobre herramientas e indican que los lectores de pantalla leen esa información configurando
 
 `/field/assist/speak@priority="toolTip"` y especificando el texto de la información sobre herramientas en `/field/assist/toolTip`.
@@ -503,8 +503,8 @@ En este ejemplo se muestra cómo crear una tabla dinámica y una tabla estática
 
 1. Cree dos XDP (fragmentos de diseño) en Designer: una tabla dinámica y una tabla estática. En ambos diseños:
 
-   * Agregue un subformulario a la columna de la tabla. Asegúrese de cambiar la presentación del subformulario principal de la tabla a una posición variable y elimine los enlaces del subformulario en la tabla.
-   * Agregue un subformulario a la celda de la tabla. Asegúrese de cambiar la presentación del subformulario principal de la tabla a una posición variable y elimine los enlaces del subformulario en la tabla.
+   * Agregue un subformulario a la columna de la tabla. Asegúrese de cambiar el diseño del subformulario principal de la tabla a De posición variable y de quitar los enlaces del subformulario de la tabla.
+   * Agregue un subformulario a la celda de la tabla. Asegúrese de cambiar el diseño del subformulario principal de la tabla a De posición variable y de quitar los enlaces del subformulario de la tabla.
 
    También puede utilizar los XDP estáticos y dinámicos adjuntos a este paso.
 

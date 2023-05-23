@@ -1,5 +1,5 @@
 ---
-title: Creación de modelos de fragmento de contenido Guía de inicio rápido sin encabezado
+title: Guía de inicio rápido Creación de modelos de fragmentos de contenido sin encabezado
 description: Defina la estructura del contenido que creará y servirá con las capacidades sin encabezado de AEM mediante modelos de fragmentos de contenido.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
@@ -9,7 +9,7 @@ ht-degree: 93%
 
 ---
 
-# Creación de modelos de fragmento de contenido Guía de inicio rápido sin encabezado {#creating-content-fragment-models}
+# Guía de inicio rápido Creación de modelos de fragmentos de contenido sin encabezado {#creating-content-fragment-models}
 
 Defina la estructura del contenido que creará y servirá con las capacidades sin encabezado de AEM mediante modelos de fragmentos de contenido.
 
@@ -23,7 +23,7 @@ Los modelos de fragmentos de contenido definen la estructura de los datos y el c
 
 Un arquitecto de la información realizaría estas tareas solo de forma esporádica, a medida que se necesiten nuevos modelos. Para los fines de esta guía de introducción, solo necesitamos crear un modelo.
 
-1. Inicie sesión en AEM y, en el menú principal, seleccione **Herramientas -> Recursos -> Modelos de fragmento de contenido**.
+1. AEM Inicie sesión en el menú principal y, a continuación, seleccione: **Herramientas -> Recursos -> Modelos de fragmentos de contenido**.
 1. Toque o haga clic en la carpeta que se formó al crear su configuración.
 
    ![La carpeta de modelos](assets/models-folder.png)

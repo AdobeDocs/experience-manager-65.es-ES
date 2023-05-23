@@ -208,7 +208,7 @@ Como los emuladores se pueden asociar a un grupo de dispositivos (consulte la se
 
 Para asignar un grupo de dispositivos al sitio:
 
-1. En el navegador, vaya a la consola **Siteadmin**.
+1. En el explorador, vaya a **Siteadmin** consola.
 1. Abra la página raíz del sitio móvil siguiente **Sitios web**.
 1. Abra las propiedades de la página.
 1. Seleccione el **Móvil** pestaña:

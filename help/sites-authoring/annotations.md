@@ -17,9 +17,9 @@ ht-degree: 40%
 
 # Anotaciones al editar una página{#annotations-when-editing-a-page}
 
-La adición de contenido a las páginas de su sitio web suele someterse a análisis antes de publicarse. Para ayudarle, muchos componentes directamente relacionados con el contenido (en lugar de, por ejemplo, el diseño) permiten añadir una anotación.
+La adición de contenido a las páginas del sitio web suele estar sujeta a discusiones antes de que se publique. Para ayudarle, muchos componentes directamente relacionados con el contenido (a diferencia, por ejemplo, del diseño) le permiten añadir una anotación.
 
-Una anotación coloca un marcador o nota adhesiva de color en la página. La anotación le permite (a usted o a otros usuarios) dejar comentarios o preguntas para otros autores o revisores.
+Una anotación coloca un marcador de color/nota adhesiva en la página. La anotación le permite (a usted o a otros usuarios) dejar comentarios o preguntas para otros autores o revisores.
 
 >[!NOTE]
 >
@@ -27,11 +27,11 @@ Una anotación coloca un marcador o nota adhesiva de color en la página. La ano
 
 >[!NOTE]
 >
->Las anotaciones creadas en la IU clásica se mostrarán en la IU táctil. Sin embargo, los bocetos son específicos de la IU y solo se muestran en la IU en la que se crearon.
+>Las anotaciones creadas en la IU clásica se mostrarán en la IU táctil. Sin embargo, los bocetos son específicos de la interfaz de usuario y solo se muestran en la interfaz en la que se crearon.
 
 >[!CAUTION]
 >
->Al eliminar un recurso (p. ej. un párrafo), se eliminan todas las anotaciones y bocetos relacionados con ese recurso, independientemente de su posición en la página en general.
+>Al eliminar un recurso (por ejemplo, un párrafo), se eliminan todas las anotaciones y bocetos relacionados con ese recurso, independientemente de su posición en la página en general.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Se utiliza un modo [especial](/help/sites-authoring/author-environment-tools.md#
 
 >[!NOTE]
 >
->Puede realizar anotaciones en varios recursos:
+>Puede realizar anotaciones en una variedad de recursos:
 >
 >* [Anotación de recursos](/help/assets/manage-assets.md#annotating)
 >* [Anotación de recursos de vídeo](/help/assets/managing-video-assets.md#annotate-video-assets)
@@ -58,7 +58,7 @@ Se utiliza un modo [especial](/help/sites-authoring/author-environment-tools.md#
 
 El modo Anotar permite crear, editar, mover o eliminar anotaciones en el contenido:
 
-1. Puede acceder al modo Anotar mediante el icono de la barra de herramientas (parte superior derecha) al editar una página:
+1. Puede acceder al modo de anotación mediante el icono de la barra de herramientas (parte superior derecha) al editar una página:
 
    ![](do-not-localize/screen_shot_2018-03-22at110414.png)
 
@@ -66,19 +66,19 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
    >[!NOTE]
    >
-   >Para salir del modo Anotación , pulse o haga clic en el icono Anotar (símbolo x) situado a la derecha de la barra de herramientas superior.
+   >Para salir del modo de anotación, pulse o haga clic en el icono Anotar (símbolo x) en la parte derecha de la barra de herramientas superior.
 
 1. Haga clic o toque el icono Añadir anotación (símbolo &quot;+&quot; a la izquierda de la barra de herramientas) para empezar a añadir anotaciones.
 
    >[!NOTE]
    >
-   >Para dejar de añadir anotaciones (y volver a la visualización), toque o haga clic en el icono Cancelar (símbolo x en un círculo blanco) situado a la izquierda de la barra de herramientas superior.
+   >Para detener la adición de anotaciones (y volver a la vista), pulse o haga clic en el icono Cancelar (símbolo x en un círculo blanco) a la izquierda de la barra de herramientas superior.
 
-1. Toque o haga clic en el componente requerido (los componentes que se pueden anotar se resaltarán con un borde azul) para añadir la anotación y abrir el cuadro de diálogo:
+1. Pulse o haga clic en el componente necesario (los componentes que se pueden anotar se resaltarán con un borde azul) para agregar la anotación y abrir el cuadro de diálogo:
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
-   Aquí puede utilizar el campo o icono apropiado para:
+   Aquí puede utilizar el campo o icono apropiado para lo siguiente:
 
    * Introduzca el texto de la anotación.
    * Crear un boceto (líneas y formas) para resaltar un área del componente.
@@ -94,7 +94,7 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
-1. Para cerrar el cuadro de diálogo de anotaciones, toque o haga clic fuera del mismo. Se muestra una vista truncada (la primera palabra) de la anotación, junto con los bocetos, si los hay:
+1. Para cerrar el cuadro de diálogo de anotaciones, toque o haga clic fuera del mismo. Se mostrará una vista truncada (la primera palabra) de la anotación, junto con los bocetos, si los hay:
 
    ![screen_shot_2018-03-22at110850](assets/screen_shot_2018-03-22at110850.png)
 
@@ -107,10 +107,10 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
    * Tocar o hacer clic en una línea de un boceto para seleccionar el boceto y arrastrarlo a la posición deseada.
    * Mover o copiar un componente
 
-      * Las anotaciones relacionadas y sus bocetos también se moverán o copiarán, y su posición en relación con el párrafo seguirá siendo la misma.
+      * Todas las anotaciones relacionadas y sus bocetos también se moverán o copiarán y su posición en relación con el párrafo seguirá siendo la misma.
 
 
-1. Para salir del modo Anotación y volver al modo utilizado anteriormente, toque o haga clic en el icono Anotar (símbolo x) en la parte derecha de la barra de herramientas superior.
+1. Para salir del modo de anotación y volver al anterior, pulse o haga clic en el icono Anotar (símbolo x) en la parte derecha de la barra de herramientas superior.
 
 >[!NOTE]
 >

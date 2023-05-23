@@ -30,7 +30,7 @@ La IU clásica utiliza ExtJS para crear widgets que proporcionen el aspecto de l
 >
 >Aunque el lenguaje de plantilla de HTML (HTL) y JSP se pueden utilizar para desarrollar componentes para la IU clásica, esta página ilustra el desarrollo con JSP. Esto se debe únicamente al historial de uso de JSP en la IU clásica.
 >
->AEM Ahora, HTL es el lenguaje de script recomendado para la ejecución de scripts en el entorno de trabajo de. Consulte [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) y [AEM Desarrollo de componentes](/help/sites-developing/developing-components.md) para comparar métodos.
+>AEM Ahora, HTL es el lenguaje de script recomendado para la ejecución de scripts en el entorno de trabajo de. Consulte [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es) y [AEM Desarrollo de componentes](/help/sites-developing/developing-components.md) para comparar métodos.
 
 ## Estructura {#structure}
 

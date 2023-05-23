@@ -846,7 +846,7 @@ Una manera sencilla de empezar a crear su propio paso personalizado es copiar un
       * Flujo de trabajo DAM
       * Flujo de trabajo de formularios
       * Proyectos
-      * Flujo de trabajo de WCM
+      * Flujo de trabajo WCM
       * Flujo de trabajo
 
    ![wf-35](assets/wf-35.png)

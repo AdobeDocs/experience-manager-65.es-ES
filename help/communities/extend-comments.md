@@ -27,7 +27,7 @@ La ruta al componente es única y hace referencia al componente predeterminado c
 >
 >Ampliación de un [superpuesto](client-customize.md#overlays) no es compatible.
 
-## Ejemplo {#example}
+## Ejemplos {#example}
 
 AEM Supongamos que el encabezado del componente Comentario debe mostrarse con una apariencia alternativa en un sitio de la instancia de la, mientras que aparece con la visualización predeterminada en otro sitio. En lugar de superponer el comentario predeterminado, que cambia el componente de comentario para todas las instancias, una mejor solución es garantizar que haya varios componentes de comentario disponibles para su uso en varios sitios.
 

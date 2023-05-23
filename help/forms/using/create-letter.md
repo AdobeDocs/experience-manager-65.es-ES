@@ -139,7 +139,7 @@ Este documento de Aviso de cancelación es un ejemplo típico de correspondencia
   <tr> 
    <td>Almacenado<br /> Imágenes del repositorio central</td> 
    <td>Imágenes como logotipos e imágenes de firma. Las imágenes como logotipos corporativos aparecerían en la mayoría o en toda la correspondencia. Las imágenes de firma son específicas de la carta y de la persona en cuyo nombre se envía.</td> 
-   <td><p>Imágenes almacenadas en recursos de AEM (DAM)<br /> </p> <p> </p> </td> 
+   <td><p>Imágenes almacenadas en AEM Assets (DAM)<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
 </table>

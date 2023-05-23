@@ -121,4 +121,4 @@ AEM A partir de la versión 6.2 de la versión, las modificaciones que se requer
 
 Los medios enriquecidos se incrustan en un artículo de blog seleccionando la variable `Embed Media from External Sites` icono :
 
-![media](assets/media-icon.png)
+![medios](assets/media-icon.png)

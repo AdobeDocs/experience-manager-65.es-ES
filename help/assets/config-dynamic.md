@@ -140,7 +140,7 @@ Puede elegir implementar Dynamic Media solo para imágenes, solo para vídeo o t
 
 ## Habilitar Dynamic Media {#enabling-dynamic-media}
 
-[Dynamic Media está desactivado de forma predeterminada. ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Para aprovechar las funciones de Dynamic Media, debe habilitar Dynamic Media mediante el `dynamicmedia` modo de ejecución como lo haría, por ejemplo, `publish` modo de ejecución. Antes de habilitar, asegúrese de revisar la [requisitos técnicos](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) está desactivado de forma predeterminada. Para aprovechar las funciones de Dynamic Media, debe habilitar Dynamic Media mediante el `dynamicmedia` modo de ejecución como lo haría, por ejemplo, `publish` modo de ejecución. Antes de habilitar, asegúrese de revisar la [requisitos técnicos](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
 >[!NOTE]
 >
@@ -1178,7 +1178,7 @@ Al hacerlo, se haría lo siguiente:
 * Representaciones dinámicas que devuelven la salida del RGB, devuélvala en el espacio de color *sRGB.
 * Representaciones dinámicas que devuelven salida CMYK, devuélvala en el *WebCoated* espacio de color.
 
-## Distribución de recursos {#delivering-assets}
+## Entrega de recursos {#delivering-assets}
 
 Una vez completadas todas las tareas anteriores, los recursos activados de Dynamic Media se proporcionan desde el servicio de imagen o vídeo. En Experience Manager, esta capacidad se muestra en un **[!UICONTROL Copiar URL de imagen]**, **[!UICONTROL Copiar URL del visor]**, **[!UICONTROL Incrustar código de visor]** y en el WCM.
 

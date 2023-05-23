@@ -112,7 +112,7 @@ El paquete de integración crea automáticamente el `aemserver` AEM operador que
    >
    >De forma predeterminada, no hay ninguna zona de seguridad configurada para el operador. AEM Para conectarse a Adobe Campaign, debe seleccionar una zona tal como se detalla en los pasos anteriores.
    >
-   >El Adobe AEM recomienda encarecidamente crear una zona de seguridad específica para el área de seguridad con el fin de evitar problemas de seguridad. Para obtener más información, consulte la [Documentación de Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
+   >El Adobe AEM recomienda encarecidamente crear una zona de seguridad específica para el área de seguridad con el fin de evitar cualquier problema de seguridad. Para obtener más información, consulte la [Documentación de Adobe Campaign Classic.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
 
 1. En el cliente de Campaign, vuelva a la `aemserver` y seleccione el **General** pestaña.
 

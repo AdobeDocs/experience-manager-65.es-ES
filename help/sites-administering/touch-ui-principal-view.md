@@ -135,7 +135,7 @@ Causó confusión sobre qué se está configurando exactamente. En la tabla sigu
    <th>Privilegio de IU de permisos</th>
   </tr>
   <tr>
-   <td>Lectura</td>
+   <td>Leer</td>
    <td><code>jcr:read</code></td>
   </tr>
   <tr>

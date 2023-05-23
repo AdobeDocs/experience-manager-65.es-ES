@@ -381,7 +381,7 @@ Puede previsualizar los titulares del carrusel desde el Editor de carrusel (mét
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Seleccione **[!UICONTROL Vista previa]**.
+1. Seleccionar **[!UICONTROL Previsualizar]**.
 1. Seleccione las zonas interactivas o los mapas de imagen de la imagen para poder probar sus acciones asociadas.
 
 **Para previsualizar titulares de carrusel desde la lista Visualizadores:**

@@ -17,7 +17,7 @@ ht-degree: 80%
 
 # Métodos abreviados de teclado al editar páginas{#keyboard-shortcuts-when-editing-pages}
 
-Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se aplican al editar páginas, otros a la variable [uso de consolas](/help/sites-authoring/keyboard-shortcuts.md).
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la edición de páginas y otros, en la [uso de consolas](/help/sites-authoring/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 >[!NOTE]
 >
->&amp;ast; Una vez que el usuario empiece a interactuar con la página en el modo de vista previa, la variable `Ctrl-Shift-m` el acceso directo ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el método abreviado vuelva a estar disponible.
+>&amp;ast; Una vez que el usuario empiece a interactuar con la página en modo de vista previa, la variable `Ctrl-Shift-m` el acceso directo ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el método abreviado vuelva a estar disponible.
 
 También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan las [consolas](/help/sites-authoring/keyboard-shortcuts.md).
 

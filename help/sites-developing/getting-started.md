@@ -14,7 +14,7 @@ exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
 source-wordcount: '259'
-ht-degree: 78%
+ht-degree: 81%
 
 ---
 
@@ -36,7 +36,7 @@ El objetivo de este tutorial en varias partes es enseñar a un desarrollador nue
 
 La implementación del tutorial aprovecha muchas funciones potentes de AEM. El sitio se implementará utilizando:
 
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 * [Modelos de Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [IU táctil](/help/sites-developing/touch-ui-concepts.md)
 * [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)

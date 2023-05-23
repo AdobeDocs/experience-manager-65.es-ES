@@ -1,6 +1,6 @@
 ---
-title: Creación y organización de páginas con AEM
-description: Cómo crear y administrar páginas con AEM
+title: AEM Creación y organización de páginas con la función de
+description: AEM Creación y administración de páginas con la función de administración de
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 59%
 
 # Crear y organizar páginas {#creating-and-organizing-pages}
 
-En esta sección se describe cómo crear y administrar páginas con Adobe Experience Manager (AEM) para que luego pueda [crear contenido](/help/sites-authoring/editing-content.md) en esas páginas.
+En esta sección se describe cómo crear y administrar páginas con Adobe Experience Manager AEM () para poder [crear contenido](/help/sites-authoring/editing-content.md) en esas páginas.
 
 >[!NOTE]
 >
@@ -25,16 +25,16 @@ En esta sección se describe cómo crear y administrar páginas con Adobe Experi
 
 ## Organizar el sitio web {#organizing-your-website}
 
-Como creador, deberá organizar el sitio web dentro de AEM. Esto implica crear y dar nombre a las páginas de contenido para que:
+Como creador, deberá organizar el sitio web dentro de AEM. Esto implica crear y asignar un nombre a las páginas de contenido para que:
 
 * Pueda encontrarlas con facilidad en el entorno de creación
 * Los usuarios que visiten el sitio web puedan explorarlas fácilmente en el entorno de publicación
 
 También puede usar [carpetas](#creating-a-new-folder) para organizar el contenido.
 
-La estructura de un sitio web se puede considerar como una estructura de árbol que alberga las páginas de contenido. Los nombres de estas páginas de contenido se usan para formar las direcciones URL, mientras que el título se muestra cuando se visualiza el contenido de la página.
+La estructura de un sitio web se puede considerar como una estructura de árbol que contiene las páginas de contenido. Los nombres de estas páginas de contenido se utilizan para formar las direcciones URL, mientras que el título se muestra cuando se visualiza el contenido de la página.
 
-A continuación se muestra un ejemplo del sitio de We.Retail, en el que una página de pantalones de senderismo ( `desert-sky-shorts`):
+A continuación, se muestra un ejemplo del sitio de We.Retail, donde una página de shorts de senderismo ( `desert-sky-shorts`) se accede a:
 
 * Entorno de creación
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
@@ -42,7 +42,7 @@ A continuación se muestra un ejemplo del sitio de We.Retail, en el que una pág
 * Entorno de publicación
    `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Según la configuración de su instancia, use `/content` puede ser opcional en el entorno de publicación.
+Según la configuración de la instancia, utilice `/content` puede ser opcional en el entorno de publicación.
 
 ```xml
  /content
@@ -78,7 +78,7 @@ Desde cualquier punto, podrá ver la rama hacia arriba desde las rutas en la bar
 
 ### Convenciones de nomenclatura de páginas {#page-naming-conventions}
 
-Al crear una página nueva, hay dos campos clave:
+Al crear una nueva página, hay dos campos de claves:
 
 * **[Título](#title)**:
 
@@ -88,13 +88,13 @@ Al crear una página nueva, hay dos campos clave:
 * **[Nombre](#name)**:
 
    * Se usa para generar la URI.
-   * La entrada del usuario en este campo es opcional. Si no se especifica, el nombre se deriva del título. Consulte la siguiente sección [Restricciones de nombres de páginas y Prácticas recomendadas](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) para obtener más detalles.
+   * La entrada del usuario para este campo es opcional. Si no se especifica, el nombre se deriva del título. Consulte la siguiente sección [Restricciones de nombres de páginas y Prácticas recomendadas](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) para obtener más detalles.
 
 #### Restricciones de nombres de páginas y prácticas recomendadas {#page-name-restrictions-and-best-practices}
 
 El **título** y el **nombre** de la página se pueden crear por separado, pero están relacionados:
 
-* Al crear una página, solo la variable **Título** es obligatorio. Si no **Nombre** se proporciona al crear la página, AEM genera un nombre a partir de los 64 primeros caracteres del título (observe el conjunto de validación a continuación). Solo se utilizan los 64 primeros caracteres para ofrecer compatibilidad con la práctica recomendada de nombres de página cortos.
+* Al crear una página, solo aparece el **Título** Este campo es obligatorio. Si no **Nombre** AEM se proporciona al crear la página, generará un nombre a partir de los primeros 64 caracteres del título (observando la validación que se indica a continuación). Solo se utilizan los 64 primeros caracteres para ofrecer compatibilidad con la práctica recomendada de nombres de página cortos.
 
 * Si el autor especifica manualmente un nombre de página, el límite de 64 caracteres no se aplica. Sin embargo, es posible que se produzcan otras limitaciones técnicas en la longitud del nombre de la página.
 
@@ -108,9 +108,9 @@ Al crear una página nueva, AEM [valida su nombre según las convenciones](/help
 
 El mínimo permitido de caracteres es:
 
-* De &quot;a&quot; a &quot;z&quot;
-* De la &quot;A&quot; a la &quot;Z&quot;
-* De &quot;0&quot; a &quot;9&quot;
+* de &#39;a&#39; a &#39;z&#39;
+* De &#39;A&#39; a &#39;Z&#39;
+* De &#39;0&#39; a &#39;9&#39;
 * `_` (guion bajo)
 * `-` (guion/signo menos)
 
@@ -118,7 +118,7 @@ Para obtener toda la información sobre los caracteres permitidos, consulte las 
 
 >[!NOTE]
 >
->Si AEM se está ejecutando en un [Implementación del administrador de persistencia de MongoMK](/help/sites-deploying/recommended-deploys.md), los nombres de página están limitados a 150 caracteres.
+>AEM Si se está ejecutando un [Implementación del administrador de persistencia MongoMK](/help/sites-deploying/recommended-deploys.md), los nombres de página están limitados a 150 caracteres.
 
 #### Título {#title}
 
@@ -131,7 +131,7 @@ Si proporciona solo un **título** de página al crear una nueva página, AEM de
 
 #### Nombre {#name}
 
-Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. Cuando AEM detecta caracteres no válidos, el campo se resalta con un mensaje explicativo.
+Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR. No se pueden enviar caracteres no válidos desde el campo **Nombre**. AEM Cuando se detecta la existencia de caracteres no válidos, el campo se resalta con un mensaje explicativo.
 
 ![caop-02](assets/caop-02.png)
 
@@ -143,11 +143,11 @@ Al indicar un valor **Nombre** cuando se crea una página, AEM [validará el nom
 
 ### Plantillas {#templates}
 
-En AEM, una plantilla especifica un tipo especializado de página. Se utilizará una plantilla como base para cualquier página nueva que se esté creando.
+AEM En, una plantilla especifica un tipo de página especializado. Se utilizará una plantilla como base para cualquier página nueva que se cree.
 
-La plantilla define la estructura de una página, que incluye una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas separadas para páginas de productos, mapas del sitio e información de contacto. Las plantillas están compuestas de [componentes](#components).
+La plantilla define la estructura de una página, incluida una imagen en miniatura y otras propiedades. Por ejemplo, puede tener plantillas independientes para páginas de productos, mapas del sitio e información de contacto. Las plantillas están formadas por [componentes](#components).
 
-AEM incluye varias plantillas listas para usar. Las plantillas disponibles dependen del sitio web individual. Los campos principales son:
+AEM Se incluye con varias plantillas listas para usar. Se proporciona de forma predeterminada. Las plantillas disponibles dependen del sitio web individual. Los campos principales son:
 
 * **Título** El título se muestra en la página web resultante.
 
@@ -161,7 +161,7 @@ AEM incluye varias plantillas listas para usar. Las plantillas disponibles depen
 
 ### Componentes {#components}
 
-Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de contenido específicos. AEM incluye una amplia gama de [componentes integrados](/help/sites-authoring/default-components-console.md) que proporcionan una amplia funcionalidad. Estos incluyen:
+Componentes son los elementos ofrecidos por AEM para que pueda añadir tipos de contenido específicos. AEM viene con una gama de [componentes listos para usar](/help/sites-authoring/default-components-console.md) que proporcionan una funcionalidad completa. Estos incluyen:
 
 * Texto
 * Imagen
@@ -179,7 +179,7 @@ Una vez que haya creado y abierto una página, puede [añadir contenido mediante
 
 ### Creación de una nueva página {#creating-a-new-page}
 
-A menos que se hayan creado todas las páginas por adelantado, antes de poder empezar a crear contenido, debe crear una página:
+A menos que se hayan creado todas las páginas por adelantado, antes de empezar a crear contenido, debe crear una página:
 
 1. Abra la consola Sitios (por ejemplo, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Desplácese hasta la ubicación en la que desee crear la nueva página.
@@ -199,7 +199,7 @@ A menos que se hayan creado todas las páginas por adelantado, antes de poder em
 
    * Utilice las tres pestañas para especificar las [propiedades de página](/help/sites-authoring/editing-page-properties.md) que desee asignar a la nueva página; a continuación, pulse o haga clic en **Crear** para crear la página.
 
-   * Uso **Atrás** para volver a la selección de plantillas.
+   * Uso **Atrás** para volver a la selección de plantilla.
 
    Los campos clave son:
 
@@ -211,12 +211,12 @@ A menos que se hayan creado todas las páginas por adelantado, antes de poder em
       * Se usa para generar la URI. Si no se especifica, el nombre se deriva del título.
       * Al indicar un valor **Nombre** cuando se cree una página, AEM [validará el nombre según las convenciones](/help/sites-developing/naming-conventions.md) impuestas por AEM y JCR.
 
-      * You **no se pueden enviar caracteres no válidos** en el **Nombre** campo . Cuando AEM detecte caracteres no válidos, se resaltará el campo y se mostrará un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
+      * Usted **no se pueden enviar caracteres no válidos** en el **Nombre** field. AEM Cuando detecta caracteres no válidos, se resalta el campo y se muestra un mensaje explicativo para indicar los caracteres que deben eliminarse o reemplazarse.
    >[!NOTE]
    >
    >Consulte [Convenciones de nomenclatura de páginas](#page-naming-conventions).
 
-   La información mínima necesaria para crear una página nueva es la **Título**.
+   La información mínima necesaria para crear una página nueva es la siguiente **Título**.
 
    ![caop-05](assets/caop-05.png)
 
@@ -234,14 +234,14 @@ A menos que se hayan creado todas las páginas por adelantado, antes de poder em
 
 >[!CAUTION]
 >
->Una vez creada la página, su plantilla no se puede cambiar, a menos que [crear un lanzamiento con una plantilla nueva](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), aunque esto perderá cualquier contenido que ya exista.
+>Una vez creada una página, su plantilla no se puede cambiar, a menos que [creación de un lanzamiento con una plantilla nueva](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), aunque esto perderá cualquier contenido que ya exista.
 
 ### Abrir una página para su edición {#opening-a-page-for-editing}
 
 Después de crear una página o desplazarse a una página existente (en la consola), puede abrirla para editarla:
 
 1. Abra la consola **Sitios**.
-1. Desplácese hasta que encuentre la página que desee editar.
+1. Desplácese hasta que encuentre la página que desea editar.
 1. Seleccione la página mediante:
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
@@ -273,7 +273,7 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
 
    >[!NOTE]
    >
-   >Si se encuentra en el modo de selección, se cerrará automáticamente en cuanto se copie la página.
+   >Si está en modo de selección, esto se abandona automáticamente en cuanto se copia la página.
 
 1. Desplácese hasta la ubicación de la copia nueva de la página.
 1. El icono **Pegar** está disponible con una flecha desplegable directamente a la derecha:
@@ -292,33 +292,33 @@ Puede copiar una página y todas sus subpáginas en una nueva ubicación:
 
 >[!NOTE]
 >
->El cambio de nombre de una página también está sujeto a las [Convenciones de nomenclatura de páginas](#page-naming-conventions) al especificar el nuevo nombre de página.
+>Cambiar el nombre de una página también está sujeto a la [Convenciones de nomenclatura de páginas](#page-naming-conventions) al especificar el nuevo nombre de página.
 
 >[!NOTE]
 >
->Una página solo se puede mover a una ubicación en la que la plantilla en la que se basa la página esté permitida. Consulte [Disponibilidad de plantillas](/help/sites-developing/templates.md#template-availability) para obtener más información.
+>Una página solo se puede mover a una ubicación en la que la plantilla en la que se basa esté permitida. Consulte [Disponibilidad de plantillas](/help/sites-developing/templates.md#template-availability) para obtener más información.
 
-El procedimiento para mover o cambiar el nombre de una página es básicamente el mismo y se controla mediante el mismo asistente. Con este asistente puede:
+El procedimiento para mover o cambiar el nombre de una página es básicamente el mismo y lo gestiona el mismo asistente. Con este asistente puede:
 
 * Cambiar el nombre de una página sin moverla.
 * Mover la página sin cambiar su nombre.
 * Moverla y cambiarle el nombre al mismo tiempo.
 
-AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga referencia a la página que está moviendo o cuyo nombre está cambiando. Esto se puede hacer página por página para proporcionar flexibilidad total.
+AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga referencia a la página que se está moviendo o cambiando de nombre. Esto se puede hacer página por página para proporcionar una flexibilidad total.
 
-1. Desplácese hasta que encuentre la página que desee mover.
+1. Desplácese hasta que encuentre la página que desea mover.
 1. Seleccione la página mediante:
 
    * [Acciones rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [El modo de selección](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) y la barra de herramientas
 
-   A continuación, seleccione la **Mover** icono de página:
+   Y luego seleccione la **Mover** icono de página:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
 
-   Se abrirá el asistente para mover página.
+   Se abrirá el asistente para mover páginas.
 
-1. En el **Cambiar nombre** del asistente puede:
+1. Desde el **Cambiar nombre** fase del asistente puede realizar una de las acciones siguientes:
 
    * Especifique el nombre que desea que tenga la página cuando se haya desplazado y, a continuación, toque o haga clic en **Siguiente** para continuar.
 
@@ -326,23 +326,23 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    ![caop-07](assets/caop-07.png)
 
-   El nombre de la página puede seguir siendo el mismo si solo está moviendo la página.
+   El nombre de página puede ser el mismo si sólo mueve la página.
 
    >[!NOTE]
    >
    >Si mueve una página a una ubicación en la que ya existe una página con el mismo nombre, el sistema generará automáticamente una variación del nombre adjuntándole un número. Por ejemplo, si `winter` ya existe, `winter` pasa a llamarse `winter1`.
 
-1. En el **Seleccionar destino** del asistente puede:
+1. Desde el **Seleccionar destino** fase del asistente puede realizar una de las acciones siguientes:
 
-   * Utilice la variable [vista de columna](/help/sites-authoring/basic-handling.md#column-view) para desplazarse a la nueva ubicación de la página:
+   * Utilice el [vista de columna](/help/sites-authoring/basic-handling.md#column-view) para desplazarse a la nueva ubicación de la página:
 
       * Seleccione el destino haciendo clic en la miniatura de destino.
       * Haga clic en **Siguiente** para continuar.
-   * Uso **Atrás** para volver a la especificación de nombre de página.
+   * Uso **Atrás** para volver a la especificación del nombre de página.
 
    >[!NOTE]
    >
-   >De forma predeterminada, el elemento principal de la página que está moviendo o cuyo nombre está cambiando se seleccionará como destino.
+   >De forma predeterminada, el elemento principal de la página que está moviendo o cambiando de nombre se selecciona como destino.
 
    ![caop-08](assets/caop-08.png)
 
@@ -360,11 +360,11 @@ AEM le ofrece la funcionalidad de actualizar cualquier vínculo interno que haga
 
    ![caop-09](assets/caop-09.png)
 
-1. Selección **Mover** completará el proceso y moverá o cambiará el nombre de la página según corresponda.
+1. Seleccionar **Mover** completará el proceso y moverá o cambiará el nombre de la página según corresponda.
 
 >[!NOTE]
 >
->Si la página ya se ha publicado, al mover la página se cancelará la publicación automáticamente. De forma predeterminada, se volverá a publicar cuando se complete el movimiento, pero esto puede cambiar si se desmarca la casilla **Volver a publicar** en el campo **Ajustar/volver a publicar** paso a paso.
+>Si la página ya se ha publicado, al mover la página se cancelará la publicación automáticamente. De forma predeterminada, se volverá a publicar cuando se complete el movimiento, pero esto puede cambiar desmarcando la opción **Volver a publicar** en el campo **Ajustar/volver a publicar** paso.
 
 >[!NOTE]
 >
@@ -389,16 +389,16 @@ El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado
 
 >[!NOTE]
 >
->Para obtener más información sobre el procesamiento asincrónico de trabajos y cómo configurar el límite para las acciones de mover y cambiar el nombre de la página, consulte la [Trabajos asincrónicos](/help/sites-administering/asynchronous-jobs.md) en la guía de usuario de administración.
+>Para obtener más información sobre el procesamiento asincrónico de trabajos y cómo configurar el límite para las acciones de mover y cambiar el nombre de la página, consulte la [Trabajos asincrónicos](/help/sites-administering/asynchronous-jobs.md) en la guía del usuario de Administración.
 
 >[!NOTE]
 >
->El procesamiento asincrónico de movimiento de página requiere AEM 6.5.3.0 o superior.
+>AEM El procesamiento asincrónico de movimiento de página requiere la versión 6.5.3.0 o superior de la.
 
 ### Eliminar una página {#deleting-a-page}
 
-1. Desplácese hasta que vea la página que desee eliminar.
-1. Uso [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) para seleccionar la página requerida, use **Eliminar** en la barra de herramientas:
+1. Desplácese hasta que vea la página que desea eliminar.
+1. Uso [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) para seleccionar la página requerida, utilice **Eliminar** en la barra de herramientas:
 
    ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
@@ -406,17 +406,17 @@ El estado de los trabajos asincrónicos se puede comprobar en el panel [**Estado
    >
    >Como medida de seguridad, el icono **Eliminar** página no está disponible como acción rápida.
 
-1. Aparecerá un cuadro de diálogo que le pedirá que confirme la acción. Utilice:
+1. Un cuadro de diálogo solicitará confirmación, utilice:
 
-   * **Cancelar** para cancelar la acción
+   * **Cancelar** para anular la acción
    * **Eliminar** para confirmar la acción:
 
-      * Si la página no tiene referencias, la página se eliminará.
+      * Si la página no tiene referencias, se eliminará la página.
       * Si la página dispone de referencias, un cuadro de mensaje le informa de que **Se hace referencia a una o varias páginas.** Puede seleccionar **Forzar eliminación** o **Cancelar**.
 
 >[!NOTE]
 >
->Si una página ya se ha publicado, se cancelará su publicación automáticamente antes de eliminarse.
+>Si una página ya se ha publicado, se cancela su publicación automáticamente antes de eliminarla.
 
 ### Bloquear una página   {#locking-a-page}
 
@@ -441,8 +441,8 @@ Puede crear carpetas para organizar archivos y páginas.
 
 
 1. Abra la consola **Sitios** y vaya hasta la ubicación deseada.
-1. Para abrir la lista de opciones, seleccione **Crear** desde la barra de herramientas
-1. Select **Carpeta** para abrir el cuadro de diálogo. Aquí puede indicar el **Nombre** y el **Título**:
+1. Para abrir la lista de opciones, seleccione **Crear** en la barra de herramientas
+1. Seleccionar **Carpeta** para abrir el cuadro de diálogo. Aquí puede indicar el **Nombre** y el **Título**:
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 

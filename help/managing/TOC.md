@@ -10,7 +10,7 @@ role: User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '72'
-ht-degree: 66%
+ht-degree: 51%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 66%
    + [Glosario](best-practices-glossary.md)
    + [La lista de comprobación: referencia adicional](best-practices-further-reference.md)
 + Gestión: referencia adicional {#managing-further-reference}
-   + [Pautas para configurar el tamaño del hardware ](hardware-sizing-guidelines.md)
+   + [Directrices de tamaño de hardware](hardware-sizing-guidelines.md)
    + [Operaciones de desarrollo empresarial ](enterprise-devops.md)
-   + [Recomendaciones para la administración de direcciones URL y SEO ](seo-and-url-management.md)
+   + [Prácticas recomendadas para la optimización de los motores de búsqueda y administración URL](seo-and-url-management.md)
 + Accesibilidad {#accessibility}
-   + [AEM y las directrices de accesibilidad web ](web-accessibility.md)
+   + [AEM Directrices de accesibilidad web de y](web-accessibility.md)
    + [Guía rápida de WCAG 2.1](qg-wcag.md)
 + Protección de datos {#data-protection}
    + [Preparación de AEM para la protección de datos y las normas de privacidad de datos](data-protection-and-privacy.md)

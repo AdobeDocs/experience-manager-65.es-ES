@@ -125,7 +125,7 @@ Las propiedades incluyen lo siguiente:
    <td>ID de relación del conjunto de datos para el que se ejecutará el trabajo de importación. </td>
   </tr>
   <tr>
-   <td>description</td>
+   <td>descripción</td>
    <td>Descripción del trabajo. <br /> </td>
   </tr>
   <tr>

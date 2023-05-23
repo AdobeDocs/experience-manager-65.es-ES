@@ -607,13 +607,13 @@ Los entregables se utilizan a menudo como **Documentos requeridos** para el hito
 Para conocer las prácticas recomendadas sobre la implementación, administración, desarrollo o creación, consulte los siguientes temas:
 
 * AEM Otras prácticas recomendadas y directrices relacionadas con la administración de un proyecto de:
-   * [Pautas para configurar el tamaño del hardware ](/help/managing/hardware-sizing-guidelines.md)
+   * [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md)
    * [Operaciones de desarrollo empresarial ](/help/managing/enterprise-devops.md)
-   * [Recomendaciones para la administración de direcciones URL y SEO ](/help/managing/seo-and-url-management.md)
-   * [AEM y las directrices de accesibilidad web ](/help/managing/web-accessibility.md)
+   * [Prácticas recomendadas para la optimización de los motores de búsqueda y administración URL](/help/managing/seo-and-url-management.md)
+   * [AEM Directrices de accesibilidad web de y](/help/managing/web-accessibility.md)
    * [Reglamento general de protección de datos](/help/managing/data-protection-and-privacy.md)* [Implementación y mantenimiento de prácticas recomendadas](/help/sites-deploying/best-practices.md)
-* [Prácticas recomendadas sobre administración](/help/sites-administering/administer-best-practices.md)
-* [Prácticas recomendadas sobre desarrollo](/help/sites-developing/best-practices.md)
+* [Prácticas recomendadas de administración](/help/sites-administering/administer-best-practices.md)
+* [Desarrollo de prácticas recomendadas](/help/sites-developing/best-practices.md)
 * [Prácticas recomendadas de creación](/help/sites-authoring/best-practices.md)
 
 ## Áreas clave de documentación {#key-documentation-areas}
@@ -628,7 +628,7 @@ Para conocer las prácticas recomendadas sobre la implementación, administraci�
 
       * [Desarrollo: conceptos básicos](/help/sites-developing/the-basics.md)
       * [Conceptos de MSM](/help/sites-administering/msm.md)
-      * [Lenguaje de plantilla de HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+      * [Lenguaje de plantilla de HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=es)
 
 * Documentación relacionada
 

@@ -1,6 +1,6 @@
 ---
 title: Andamiaje en la creación de Adobe Experience Manager
-description: Con scaffolding, puede crear un scaffold con campos que reflejen la estructura que desee para sus páginas y luego usar este formulario para crear páginas basadas en esta estructura.
+description: Con el andamiaje puede crear un andamiaje con campos que reflejen la estructura que desee para sus páginas y, a continuación, utilizar este formulario para crear páginas basadas en esta estructura.
 uuid: f2542fe2-598f-4631-ae64-a6ee14cd7748
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,10 +17,10 @@ ht-degree: 0%
 
 # Andamiaje{#scaffolding}
 
-A veces, es posible que necesite crear un conjunto grande de páginas que compartan la misma estructura pero tengan contenido diferente. A través de la interfaz de AEM estándar, necesitaría crear cada página, arrastrar los componentes correspondientes a la página y rellenar cada uno individualmente.
+A veces, es posible que tenga que crear un gran conjunto de páginas que compartan la misma estructura pero que tengan contenido diferente. AEM A través de la interfaz de usuario estándar, tendría que crear cada página, arrastrar los componentes adecuados a la página y rellenarlos individualmente.
 
-Con scaffolding, puede crear un formulario (un scaffold) con campos que reflejen la estructura que desee para sus páginas y luego usar este formulario para crear fácilmente páginas basadas en esta estructura.
+Con el andamiaje puede crear un formulario (un andamio) con campos que reflejen la estructura que desee para sus páginas y, a continuación, utilizar este formulario para crear fácilmente páginas basadas en esta estructura.
 
 >[!NOTE]
 >
->Aunque hay un Scaffolding [mode](/help/sites-authoring/author-environment-tools.md#page-modes) está disponible, el mantenimiento y la creación de scaffolds, así como la creación de páginas nuevas a partir de scaffolds, se realizan en la IU clásica. Consulte [Andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) en la documentación de creación de la IU clásica para obtener más información.
+>Aunque hay un andamiaje [modo](/help/sites-authoring/author-environment-tools.md#page-modes) disponible, el mantenimiento y la creación de andamios, así como la creación de nuevas páginas a partir de andamios, se realizan en la IU clásica. Consulte [Andamiaje](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) en la documentación de creación de la IU clásica para obtener más información.

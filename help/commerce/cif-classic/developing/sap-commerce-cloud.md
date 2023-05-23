@@ -72,7 +72,7 @@ Consulte los siguientes ejemplos:
 |--- |--- |
 | `cq:commerceProvider = hybris` | implementación de hybris |
 
-### Ejemplo {#example}
+### Ejemplos {#example}
 
 ```shell
 /content/store
@@ -364,7 +364,7 @@ public class AxisFilter implements VariantFilter {
 
    * El nodo de producto describe los atributos de producto y los ejes de variante.
 
-#### Ejemplo {#example-1}
+#### Ejemplos {#example-1}
 
 ```shell
 + banyan_shirt

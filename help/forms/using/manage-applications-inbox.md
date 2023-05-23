@@ -19,7 +19,7 @@ ht-degree: 89%
 
 # Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Una de las muchas formas de iniciar o activar un flujo de trabajo centrado en Forms es mediante las aplicaciones en Bandeja de entrada de AEM. Para que un flujo de trabajo de Forms esté disponible como aplicación en la Bandeja de entrada, cree una aplicación de flujo de trabajo. Para obtener más información sobre la aplicación de flujo de trabajo y otras formas de iniciar flujos de trabajo de Forms, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](../../forms/using/aem-forms-workflow.md#launch).
+Una de las muchas formas de iniciar o activar un flujo de trabajo centrado en Forms es mediante las aplicaciones en Bandeja de entrada de AEM. Para que un flujo de trabajo de Forms esté disponible como solicitud en la bandeja de entrada, cree una solicitud de flujo de trabajo. Para obtener más información sobre la aplicación de flujo de trabajo y otras formas de iniciar flujos de trabajo de Forms, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](../../forms/using/aem-forms-workflow.md#launch).
 
 Además, Bandeja de entrada de AEM consolida las notificaciones y tareas de varios componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de Forms que contiene una Etapa de tarea de asignación, la aplicación asociada aparece como una tarea en la bandeja de entrada del usuario asignado. Si el usuario asignado es un grupo, la tarea aparece en la bandeja de entrada de todos los miembros del grupo hasta que un individuo solicite o delegue la tarea.
 
@@ -64,7 +64,7 @@ Las tareas asignadas a un grupo aparecen en la bandeja de entrada de todos los m
 Al abrir una tarea, puede ver los detalles de la tarea y realizar las acciones disponibles. Las acciones disponibles para una tarea se definen en la Etapa de tarea de asignación del flujo de trabajo del formulario asociado.
 
 1. Pulse para seleccionar la miniatura de la tarea. Las opciones para abrir o delegar la tarea seleccionada aparecen en la parte superior.
-1. Toque **Apertura** para ver los detalles de la tarea. Se abre la vista de tareas detallada. En esta vista, puede ver los detalles de la tarea y trabajar en ella.
+1. Tocar **Abrir** para ver los detalles de la tarea. Se abre la vista de tareas detallada. En esta vista, puede ver los detalles de la tarea y trabajar en ella.
 
    >[!NOTE]
    >
@@ -103,7 +103,7 @@ A medida que trabaja en la tarea, esta continúa en el flujo de trabajo.
 
 ### Ver tareas completadas {#view-completed-tasks}
 
-La Bandeja de entrada de AEM solo muestra las tareas activas. Las tareas completadas no aparecen en la lista. Sin embargo, puede utilizar los filtros de la bandeja de entrada para filtrar las tareas según varios parámetros, como el tipo de tarea, el estado y las fechas de inicio y finalización. Para ver las tareas completadas:
+La Bandeja de entrada de AEM solo muestra las tareas activas. Las tareas completadas no aparecen en la lista. Sin embargo, puede utilizar los filtros de la bandeja de entrada para filtrar las tareas en función de varios parámetros, como el tipo de tarea, el estado y las fechas de inicio y finalización. Para ver las tareas completadas:
 
 1. En Bandeja de entrada de AEM, pulse ![toggle-side-panel1](assets/toggle-side-panel1.png) para abrir el selector de filtros.
 1. Pulse el acordeón **[!UICONTROL Estado de la tarea]** y seleccione **[!UICONTROL Completar]**. Se mostrarán todas las tareas completadas.
@@ -126,7 +126,7 @@ La pestaña **[!UICONTROL Detalles del flujo de trabajo]** muestra cada paso del
 
 ### No se pueden ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada de AEM {#unable-to-see-aem-worklow-items}
 
-El propietario de un modelo de flujo de trabajo no puede ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada de AEM. Para resolver el problema, agregue los siguientes índices a su repositorio de AEM y reconstruya el índice.
+El propietario de un modelo de flujo de trabajo no puede ver los elementos relacionados con el flujo de trabajo de AEM en Bandeja de entrada de AEM. AEM Para resolver el problema, añada los siguientes índices a su repositorio de y reconstruya el índice.
 
 1. Utilice uno de los siguientes métodos para añadir índices:
 

@@ -14,7 +14,7 @@ exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 source-git-commit: 9052ed3e89fdc67d94fc60bbff64d42255565767
 workflow-type: tm+mt
 source-wordcount: '6036'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -392,7 +392,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
         </tr>
         <tr>
         <td>Para quitar una miniatura del segmento de escala de tiempo seleccionado</td>
-        <td><p>Realice una de las acciones siguientes:</p>
+        <td><p>Realice una de las siguientes acciones:</p>
           <ul>
           <li>En el panel del selector de recursos, seleccione una imagen con una marca de verificación para anular su selección. El recurso de imagen se elimina del segmento de cronología.<br /> </li>
           <li>En el segmento de cronología seleccionado, seleccione una imagen y, en la barra de herramientas, seleccione <strong>Eliminar producto</strong>.</li>
@@ -406,7 +406,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
    Al seleccionar una imagen en el panel selector de recursos, se agrega al segmento de cronología seleccionado.
 
 1. Seleccione una sola imagen en miniatura en uno de los segmentos de la cronología y, a continuación, seleccione la opción **[!UICONTROL Acciones]** pestaña.
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
    <table> 
     <tbody> 
       <tr> 
@@ -414,7 +414,7 @@ Después de guardar el vídeo interactivo, este se abre inmediatamente en Vista 
       <td><p>En Tipo de acción, seleccione <strong>Quickview</strong>.</p> <p>Si es cliente de Experience Manager Sites y de comercio electrónico:</p> 
        <ul> 
        <li>Observe que el campo de texto Valor de SKU está rellenado previamente con el SKU (código de referencia) del producto seleccionado, que es un identificador único para cada producto o servicio distinto que ofrece. Este valor se rellena automáticamente cuando la imagen está asociada a un producto en Experience Manager Commerce.</li> 
-       <li>Si el SKU rellenado previamente es incorrecto, seleccione el icono del selector de productos (lupa) para abrir la página Seleccionar producto. Seleccione el producto que desea utilizar y, a continuación, seleccione la marca de verificación en la esquina superior derecha de la página para poder volver al editor de vídeo interactivo.</li> 
+       <li>Si el SKU rellenado previamente es incorrecto, seleccione el icono del selector de productos (lupa) para abrir la página Seleccionar producto. Seleccione el producto que desea utilizar y, a continuación, active la marca de verificación situada en la esquina superior derecha de la página para volver al editor de vídeo interactivo.</li> 
        </ul> <p> Si es usted <em>no</em> un cliente de Experience Manager Sites o de comercio electrónico</p> 
        <ul> 
        <li>Consulte <a href="/help/assets/carousel-banners.md#identifying-hotspot-and-image-map-variables">Identificación de variables de punto interactivo</a>. Se deben definir las variables.  </li> 

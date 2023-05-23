@@ -15,7 +15,7 @@ exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -53,7 +53,7 @@ El siguiente procedimiento utiliza la IU clásica para crear una raíz de idioma
    | Tipo de copia de idioma | Descripción |
    |---|---|
    | auto | Utiliza el comportamiento de las páginas principales |
-   | ignore | No crea una copia de esta página y sus elementos secundarios |
+   | omitir | No crea una copia de esta página y sus elementos secundarios |
    | `<language>+` (por ejemplo, francés+) | Copia la página y todos sus elementos secundarios de ese idioma |
    | `<language>` (por ejemplo, francés) | Copia sólo la página de ese idioma |
 

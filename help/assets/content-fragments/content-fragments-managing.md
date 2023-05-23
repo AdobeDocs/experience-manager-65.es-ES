@@ -31,7 +31,7 @@ El [Editor de fragmentos de contenido](#opening-the-fragment-editor) proporciona
 >
 >Se pueden utilizar fragmentos de contenido:
 >
->* Al crear páginas; consulte [Creación de páginas con fragmentos de contenido](/help/sites-authoring/content-fragments.md).
+>* al crear páginas; consulte [Creación de páginas con fragmentos de contenido](/help/sites-authoring/content-fragments.md).
 >* para [Entrega de contenido sin encabezado mediante fragmentos de contenido con GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 
