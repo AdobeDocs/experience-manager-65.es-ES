@@ -8,9 +8,9 @@ breadcrumb-title: Guía de desarrollo
 user-guide-description: Esta guía explica cómo crear una instancia de AEM.
 feature: Developing
 role: Developer
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1296'
 ht-degree: 38%
 
 ---
@@ -142,6 +142,8 @@ ht-degree: 38%
       + [Administrar extremos de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
       + [Uso del IDE de GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+      + [Optimización de consultas de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
+      + [Actualización de los fragmentos de contenido para el filtrado optimizado de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Autenticación para consultas de AEM de GraphQL remotas en fragmentos de contenido](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [API de GraphQL de AEM con fragmentos de contenido: contenido de muestra y consultas](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + SPA AEM Desarrollo híbrido y de{#spas}
@@ -192,7 +194,7 @@ ht-degree: 38%
    + [Referencia de la API de JavaScript de ContextHub](contexthub-api.md)
    + Client Context{#client-context}
       + [Client Context en detalle](client-context.md)
-      + [API de JavaScript de Client Context](ccjsapi.md)
+      + [API de JavaScript de ClientContext](ccjsapi.md)
 + AEM Ampliación de la{#extending-aem}
    + [Ampliación de AEM mediante el Generador de aplicaciones para desarrolladores de Adobe](app-builder.md)
    + [Personalización de la creación de páginas](customizing-page-authoring-touch.md)
@@ -233,7 +235,7 @@ ht-degree: 38%
       + [Desarrollo de informes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)
 + Pruebas{#testing}
    + [Planificación](planning.md)
-   + [¿Qué entornos de prueba se necesitarán?](test-environments.md)
+   + [¿Qué entornos de prueba son necesarios?](test-environments.md)
    + [Definición de los casos de prueba](test-cases.md)
    + [Pruebas: ¿cuándo y con quién?](when-who.md)
    + [Compilar el plan de prueba](test-plan.md)
