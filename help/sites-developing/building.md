@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: be028f116ccb83853cd46dc742438babd2207314
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
@@ -199,3 +199,7 @@ El nuevo idioma (finés) ya está disponible en el cuadro de diálogo de etiquet
 >[!NOTE]
 >
 >AEM El nuevo idioma debe ser uno de los idiomas reconocidos por la comunidad, es decir, debe estar disponible como un nodo a continuación `/libs/wcm/core/resources/languages`.
+
+>[!CAUTION]
+>
+>La instalación de un Service Pack restablece la propiedad de idiomas del nodo /content/cq:tags de forma predeterminada. Por lo tanto, es necesario agregarlo desde las propiedades antes de la instalación.
