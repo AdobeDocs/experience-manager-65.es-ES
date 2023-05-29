@@ -6,9 +6,9 @@ role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 8bd103e392bf5630cb2db654dedcfe4f926b2c9d
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '808'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 XMP Esta función de reescritura de la en [!DNL Adobe Experience Manager Assets] replica los cambios de metadatos en las representaciones del recurso original. Al cambiar los metadatos de un recurso desde Recursos o al cargar el recurso, los cambios se almacenan inicialmente en el nodo de metadatos de la jerarquía de recursos.
 
-XMP La función de reescritura de datos le permite propagar los cambios de metadatos a todas las representaciones del recurso o a algunas específicas. La función solo vuelve a escribir las propiedades de metadatos que utilizan `jcr` namespace, es decir, una propiedad denominada `dc:title` se vuelve a escribir, pero una propiedad denominada `mytitle` no es.
+XMP La función de reescritura de datos le permite propagar los cambios de metadatos a todas las representaciones del recurso o a algunas específicas. La función escribe únicamente las propiedades de metadatos que utilizan áreas de nombres registradas, es decir, una propiedad denominada `dc:title` se vuelve a escribir, pero una propiedad denominada `mytitle` no es.
 
 Imagine un escenario en el que modifique la variable [!UICONTROL Título] propiedad del recurso con título `Classic Leather` hasta `Nylon`.
 
