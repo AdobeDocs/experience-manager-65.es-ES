@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 7bfa9a9e143f199c42161b92dcba66ae441ad1fb
 workflow-type: tm+mt
-source-wordcount: '9970'
+source-wordcount: '9993'
 ht-degree: 4%
 
 ---
@@ -402,6 +402,9 @@ Para obtener una vista previa de un recurso mediante el teclado, siga estos paso
    ![Selector de fecha y hora o use las teclas del teclado en el campo Tiempo de activación para agregar la fecha y la hora para la activación del recurso](assets/datepicker.png)
 
    *Imagen: uso del selector de fechas para programar la activación de recursos.*
+
+1. Tienes que comprobar **[!UICONTROL Tiempo de activación/desactivación alcanzado]** si desea actualizar las déclencheur del agente de replicación en las propiedades de metadatos.
+   ![Ajustes de agente](assets-dm/Agent-settings.png)
 
 1. Para desactivar el recurso después de una duración determinada, elija la fecha y la hora de desactivación del selector de fechas situado junto al **[!UICONTROL Tiempo de inactividad]** field. La fecha de desactivación debe ser posterior a la fecha de activación de un recurso. Después del [!UICONTROL Tiempo de inactividad], un recurso y sus representaciones no están disponibles a través del [!DNL Assets] a través de la interfaz web o de la API HTTP.
 
