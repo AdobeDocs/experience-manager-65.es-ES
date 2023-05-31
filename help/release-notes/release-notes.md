@@ -2,9 +2,10 @@
 title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 0bce05571590bc09e2b65f6bd6c1f387c71fba3a
+exl-id: fed4e110-9415-4740-aba1-75da522039a9
+source-git-commit: efd2a41b6b53a72b941ac23386b6aa4c41c9da15
 workflow-type: tm+mt
-source-wordcount: '2620'
+source-wordcount: '2683'
 ht-degree: 2%
 
 ---
@@ -103,6 +104,36 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
 * Al convertir una configuración de Adobe Target IMS a una credencial de usuario en configuraciones de nube heredadas, la variable `connectedWhen` La propiedad no cambia. Este problema hace que todas las llamadas pasen como si la configuración aún estuviera basada en IMS. (CQ-4352810)
 * Agregando `modifyProperties` permiso para `fd-cloudservice` usuario del sistema para la configuración de Adobe Sign. (FORMS-6164)
 * Con Experience Manager integrado con Adobe Target, al crear una actividad de prueba A/B, no se sincronizan las audiencias asociadas con ella, sino con Target. (NPR-40085)
+
+## Oak{#oak-6517}
+
+En Service Pack 13 y versiones posteriores, ha comenzado a aparecer el siguiente registro de errores que afecta a la caché de persistencia:
+
+```shell
+org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+    at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+    at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+    at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+    at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+    at org.h2.mvstore.db.Store.<init>(Store.java:129)
+```
+
+O bien
+
+```shell
+org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.1.214/5].
+```
+
+Para resolver esta excepción, haga lo siguiente:
+
+1. Elimine las dos carpetas siguientes de `crx-quickstart/repository/`
+
+   * `cache`
+   * `diff-cache`
+
+1. Instale el Service Pack o reinicie el Experience Manager as a Cloud Service.
+Nuevas carpetas de `cache` y `diff-cache` se crean automáticamente y ya no experimenta una excepción relacionada con lo siguiente `mvstore` en el `error.log`.
 
 ## Plataforma{#platform-6517}
 
