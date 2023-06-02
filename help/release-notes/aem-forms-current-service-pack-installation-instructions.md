@@ -2,9 +2,9 @@
 title: Instrucciones de instalación de parches de AEM Forms para AEM Forms
 description: Instrucciones de instalación del Service Pack de AEM Forms para el entorno OSGi y JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 01bf12ec46966ab2c78e2e825840230ea1bd3395
+source-git-commit: a54d75ba653f469495203fa4643dbd78dbd7c38f
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1727'
 ht-degree: 18%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 18%
 
 | Producto | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Versión | 6.5.16.0 |
+| Versión | 6.5.17.0 |
 | Tipo | Versión del paquete de servicio |
-| Fecha | 2 de marzo de 2023 |
+| Fecha | 1 de junio de 2023 |
 | Descargar URL | [Últimas versiones de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) |
 
 >[!NOTE]
@@ -33,7 +33,7 @@ El paquete de servicio de Adobe Experience Manager AEM () Forms incluye funcione
 
 >[!NOTE]
 >
-> Adobe lanza un instalador completo cada 6.º paquete de servicio. AEM El paquete de servicio 12 de Forms 6.5 (6.5.12.0) en JEE fue el último instalador completo. El instalador completo proporciona soporte para nuevas plataformas, mientras que el instalador normal de Service Pack incluye nuevas funciones, corrección de errores y mejoras generales. Si realiza una instalación nueva o planea utilizar el software más reciente para su AEM Forms 6.5 en el entorno JEE, Adobe recomienda utilizar AEM 6.5.12.0 Forms en el instalador completo de JEE lanzado el 3 de marzo de 2022, en lugar del instalador de AEM Forms 6.5 lanzado el 8 de abril de 2019. Después de usar el instalador completo, instale el Service Pack más reciente.
+> Adobe lanza un instalador completo cada seis service pack. AEM El paquete de servicio 12 de Forms 6.5 (6.5.12.0) en JEE fue el último instalador completo. El instalador completo proporciona soporte para nuevas plataformas, mientras que el instalador normal de Service Pack incluye nuevas funciones, corrección de errores y mejoras generales. Si realiza una instalación nueva o planea utilizar el software más reciente para su AEM Forms 6.5 en el entorno JEE, Adobe recomienda utilizar AEM 6.5.12.0 Forms en el instalador completo de JEE lanzado el 3 de marzo de 2022, en lugar del instalador de AEM Forms 6.5 lanzado el 8 de abril de 2019. Después de usar el instalador completo, instale el Service Pack más reciente.
 
 ## AEM Descargue e instale el Service Pack en un formulario de la aplicación en un entorno JEE de {#download-and-install-for-jee-service-pack}
 
@@ -112,11 +112,11 @@ Vaya al directorio adecuado, y desde un shell y escriba
 
 +++
 
-+++4. Instalación del fragmento del servlet
++++4. AEM Instale el fragmento del servlet (paquete de servicio 6.5.14.0 o anterior de)
 
 >[!NOTE]
 >
-> * En caso de que esté actualizando desde **AEM Paquete de servicio de 6.5.15.0**, no es necesario instalar el **fragmento de servlet**. Si actualiza desde una versión anterior a la **AEM Paquete de servicio de 6.5.15.0**, es obligatorio instalar el **fragmento de servlet**.
+> * Si está realizando la actualización desde **AEM Paquete de servicio de 6.5.15.0**, la instalación del **fragmento de servlet** no es obligatorio. Para las versiones **AEM Paquete de servicio de 6.5.14.0** Para versiones anteriores, es obligatorio instalar el fragmento de servlet.
 > * Es obligatorio instalar el **fragmento de servlet** para todos los servidores de aplicaciones excepto los que se ejecutan en **JBoss® EAP 7.4.0**.
 
 
@@ -240,4 +240,4 @@ Existen dos métodos diferentes que puede utilizar para instalar automáticament
 
 * Compruebe los registros del monitor (error.log) una vez que se haya completado la instalación de cualquier actividad. Espere unos minutos hasta que no haya actividad en los registros. Reinicie la instancia de AEM.
 
-* En caso de que consigas una **error de servicio no disponible** después de instalar el paquete de servicio de AEM Forms 6.5.15.0, [instalar el fragmento de servlet y el paquete](/help/forms/using/aem-service-pack-installation-solution.md) para corregir el error.
+* En caso de que consigas una **error de servicio no disponible** después de instalar el paquete de servicio de AEM Forms 6.5.15.0 o posterior, [instalar el fragmento de servlet y el paquete](/help/forms/using/aem-service-pack-installation-solution.md) para corregir el error.
