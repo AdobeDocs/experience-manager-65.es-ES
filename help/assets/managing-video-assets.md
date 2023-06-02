@@ -6,7 +6,7 @@ role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: d6587ef59332d6b4d419c7d7b6e29930f366d171
 workflow-type: tm+mt
 source-wordcount: '5499'
 ht-degree: 8%
@@ -386,7 +386,7 @@ Pegue el valor copiado en el editor de texto abierto. Necesitará este valor má
    * (Opcional) Arrastre el componente etiquetado como **[!UICONTROL Encabezado de sección]** a la izquierda y suéltelo en el área del formulario.
    * (Opcional) Haga clic en **[!UICONTROL Etiqueta de campo]** para seleccionar el componente.
    * (Opcional) En el lado derecho de la página, en la pestaña Configuración, en el campo de texto Etiqueta de campo, introduzca `YouTube Publishing`.
-   * Haga clic en **[!UICONTROL Generar formulario]** y, a continuación, arrastre el componente etiquetado como **[!UICONTROL Texto con varios valores]** y suéltelo debajo de **[!UICONTROL Publicación de YouTube]** encabezado que ha creado.
+   * Haga clic en **[!UICONTROL Generar formulario]** y, a continuación, arrastre el componente etiquetado **[!UICONTROL Texto con varios valores]** y suéltelo debajo de **[!UICONTROL Publicación de YouTube]** encabezado que ha creado.
 
    * Clic **[!UICONTROL Etiqueta de campo]** por lo tanto, el componente está seleccionado.
    * En el lado derecho de la página, en la pestaña Configuración, pegue los valores de publicación de YouTube (valor Etiqueta de campo y Asignar a valor de propiedad) que copió anteriormente, en sus respectivos campos del formulario. Pegue el valor Choices en el campo Default Value.
@@ -524,9 +524,9 @@ Al cargar un nuevo vídeo en una carpeta a la que se ha aplicado la codificació
    >
    >Los mensajes de error/error pueden tardar mucho tiempo en registrarse finalmente debido a las diversas configuraciones del flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
    >
-   >    * Configuración de cola de trabajos de Apache Sling
-   >    * Controlador de trabajos de proceso externo de Adobe Granite Workflow
-   >    * Cola de tiempo de espera de Granite Workflow
+   >* Configuración de cola de trabajos de Apache Sling
+   >* Controlador de trabajos de proceso externo de Adobe Granite Workflow
+   >* Cola de tiempo de espera de Granite Workflow
 
    >
    >Puede ajustar la variable **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** propiedades en estas configuraciones.
@@ -557,13 +557,10 @@ Al cargar un nuevo vídeo en una carpeta a la que se ha aplicado la codificació
    >
    >El mensaje de error puede tardar mucho tiempo en registrarse finalmente debido a las diversas configuraciones del flujo de trabajo en **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), por ejemplo:
    >
-   >
-   >
-   >    * Configuración de cola de trabajos de Apache Sling
-   >    * Controlador de trabajos de proceso externo de Adobe Granite Workflow
-   >    * Cola de tiempo de espera de Granite Workflow
+   >* Configuración de cola de trabajos de Apache Sling
+   >* Controlador de trabajos de proceso externo de Adobe Granite Workflow
+   >* Cola de tiempo de espera de Granite Workflow
 
-   >
    >
    >Puede ajustar la variable **[!UICONTROL reintentos]**, **[!UICONTROL retraso de reintento]**, y **[!UICONTROL timeout]** propiedades en estas configuraciones.
 
