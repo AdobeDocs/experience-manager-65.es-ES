@@ -7,9 +7,9 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 56632bd6ce9fc90f0bc61f903f84f7ea8bbcd12d
 workflow-type: tm+mt
-source-wordcount: '3389'
+source-wordcount: '3288'
 ht-degree: 10%
 
 ---
@@ -287,22 +287,6 @@ Si tiene varios recursos en una carpeta de Live Copy, iniciar acciones en cada r
    ![Actualice fácilmente muchos recursos en carpetas de Live Copy desde la consola Información general de Live Copy](assets/livecopyconsole_update_many_assets.png)
 
    *Imagen: actualice fácilmente muchos recursos en carpetas de Live Copy desde [!UICONTROL Información general de Live Copy] consola.*
-
-## Ampliar MSM para [!DNL Assets] {#extend-api}
-
-[!DNL Experience Manager] le permite ampliar la funcionalidad mediante las API de Java de MSM. Para [!DNL Assets], la ampliación funciona igual que con MSM para [!DNL Sites]. Para obtener más información, consulte [Ampliación de los MSM](/help/sites-developing/extending-msm.md) y lo siguiente para obtener información sobre tareas específicas:
-
-* [Información general sobre las API](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-* [Creación de una acción de sincronización](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [Creación de una configuración de despliegue](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
-* [Crear y usar una clase LiveActionFactory simple](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
-
->[!NOTE]
->
->* Modelo en MSM para [!DNL Sites] se denomina origen de Live Copy en MSM para [!DNL Assets].
->* MSM no admite la eliminación del paso de capítulos del asistente para crear sitios para [!DNL Assets].
->* La configuración de los bloqueos de MSM en las propiedades de página (IU táctil) no es compatible con MSM para [!DNL Assets].
-
 
 ## Impacto de las tareas de administración de recursos en Live Copies {#manage-assets}
 
