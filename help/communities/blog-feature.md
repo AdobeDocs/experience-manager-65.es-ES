@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 7%
@@ -77,35 +77,35 @@ En el **Configuración** pestaña, especifique las funciones básicas del blog :
 
 * **Permitir la miniatura del archivo adjunto**
 
-   Si se selecciona, se crea una miniatura de la imagen adjunta.
+  Si se selecciona, se crea una miniatura de la imagen adjunta.
 
 * **Tamaño máximo de la miniatura del archivo adjunto**
 
-   Tamaño máximo (en píxeles) de la imagen en miniatura del archivo adjunto. El valor predeterminado es 800 x 800.
+  Tamaño máximo (en píxeles) de la imagen en miniatura del archivo adjunto. El valor predeterminado es 800 x 800.
 
 * **Tamaño mínimo de la imagen de la miniatura**
 
-   Tamaño mínimo (en bytes) de la imagen para generar miniaturas para imágenes alineadas. El valor predeterminado es 100000 bytes (100 kb).
+  Tamaño mínimo (en bytes) de la imagen para generar miniaturas para imágenes alineadas. El valor predeterminado es 100000 bytes (100 kb).
 
 * **Tamaño máximo de la miniatura**
 
-   Tamaño máximo (en píxeles) de la imagen en miniatura para la imagen alineada. El valor predeterminado es 800 x 800.
+  Tamaño máximo (en píxeles) de la imagen en miniatura para la imagen alineada. El valor predeterminado es 800 x 800.
 
 * **Permitir miembros privilegiados**
 
-   Si se selecciona, solo se permite a los miembros privilegiados crear contenido.
+  Si se selecciona, solo se permite a los miembros privilegiados crear contenido.
 
 * **Miembros privilegiados permitidos**
 
-   Añada los miembros privilegiados que tienen permiso para crear contenido.
+  Añada los miembros privilegiados que tienen permiso para crear contenido.
 
 * **Bloquee el contenido que haya creado el usuario en el modo de edición de autor**
 
-   Si está habilitado, bloquea el contenido generado por el usuario mientras lo edita en el modo Autor.
+  Si está habilitado, bloquea el contenido generado por el usuario mientras lo edita en el modo Autor.
 
 * **Título del diario**
 
-   Título del blog que se mostrará en la página.
+  Título del blog que se mostrará en la página.
 
 >[!NOTE]
 >
@@ -115,85 +115,85 @@ En el **Configuración** pestaña, especifique las funciones básicas del blog :
 
 * **Descripción del diario**
 
-   La descripción del blog.
+  La descripción del blog.
 
 * **Temas por página**
 
-   Define el número de entradas de blog/comentarios que se muestran por página. El valor predeterminado es 10.
+  Define el número de entradas de blog/comentarios que se muestran por página. El valor predeterminado es 10.
 
 * **Moderado**
 
-   Si se selecciona, la publicación de entradas de blog y comentarios debe aprobarse antes de que aparezcan en un sitio publicado. El valor predeterminado es sin marcar.
+  Si se selecciona, la publicación de entradas de blog y comentarios debe aprobarse antes de que aparezcan en un sitio publicado. El valor predeterminado es sin marcar.
 
 * **Cerrado**
 
-   Si se selecciona, el blog se cierra a las nuevas entradas de blog y comentarios. El valor predeterminado está desmarcado.
+  Si se selecciona, el blog se cierra a las nuevas entradas de blog y comentarios. El valor predeterminado está desmarcado.
 
 * **Editor de texto enriquecido**
 
-   Si se selecciona, las entradas de blog y los comentarios se pueden introducir con marcado. La opción predeterminada está activada.
+  Si se selecciona, las entradas de blog y los comentarios se pueden introducir con marcado. La opción predeterminada está activada.
 
 * **Permitir etiquetado**
 
-   Si se selecciona esta opción, permite a los miembros añadir etiquetas de etiqueta a sus publicaciones (consulte **Campo de etiqueta** pestaña). El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, permite a los miembros añadir etiquetas de etiqueta a sus publicaciones (consulte **Campo de etiqueta** pestaña). El valor predeterminado está desmarcado.
 
 * **Permitir cargas de archivos**
 
-   Si se selecciona esta opción, permite que se agreguen archivos adjuntos a una entrada de blog o comentario. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, permite que se agreguen archivos adjuntos a una entrada de blog o comentario. El valor predeterminado está desmarcado.
 
 * **Tamaño máximo de archivo**
 
-   Relevante solo si `Allow File Uploads` está marcada. Este campo limitará el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
+  Relevante solo si `Allow File Uploads` está marcada. Este campo limitará el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
 
 * **Tipos de archivo permitidos**
 
-   Relevante solo si `Allow File Uploads` está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los que no se hayan especificado. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
+  Relevante solo si `Allow File Uploads` está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los que no se hayan especificado. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
-   Solo es relevante si está marcada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 (2 Mb).
+  Solo es relevante si está marcada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 (2 Mb).
 
 * **Permitir respuestas**
 
-   Si está activada, permitir respuestas a comentarios publicados en la entrada de blog. El valor predeterminado está desmarcado.
+  Si está activada, permitir respuestas a comentarios publicados en la entrada de blog. El valor predeterminado está desmarcado.
 
 * **Habilitar la votación**
 
-   Si se selecciona, se debe incluir la función de votación con una entrada de blog. El valor predeterminado está desmarcado.
+  Si se selecciona, se debe incluir la función de votación con una entrada de blog. El valor predeterminado está desmarcado.
 
 * **Permitir que los usuarios eliminen comentarios y temas**
 
-   Si se selecciona esta opción, permite que los miembros eliminen los comentarios y las entradas de blog que hayan publicado. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, permite que los miembros eliminen los comentarios y las entradas de blog que hayan publicado. El valor predeterminado está desmarcado.
 
 * **Permitir seguimiento**
 
-   Si se selecciona esta opción, se incluye la siguiente característica para artículos de blog, que permite a los miembros [notificado](/help/communities/notifications.md) de nuevos puestos. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se incluye la siguiente característica para artículos de blog, que permite a los miembros [notificado](/help/communities/notifications.md) de nuevos puestos. El valor predeterminado está desmarcado.
 
 * **Permitir suscripciones por correo electrónico**
 
-   Si se selecciona esta opción, se notificará a los miembros de las nuevas publicaciones por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere `Allow Following` que se van a comprobar y [correo electrónico configurado](/help/communities/email.md). El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se notificará a los miembros de las nuevas publicaciones por correo electrónico ([suscripción](/help/communities/subscriptions.md)). Requiere `Allow Following` que se van a comprobar y [correo electrónico configurado](/help/communities/email.md). El valor predeterminado está desmarcado.
 
 * **Mostrar insignias**
 
-   Si se selecciona esta opción, se muestran las ganancias y las asignaciones [distintivos](/help/communities/implementing-scoring.md) con la entrada de blog de un miembro. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se muestran las ganancias y las asignaciones [distintivos](/help/communities/implementing-scoring.md) con la entrada de blog de un miembro. El valor predeterminado está desmarcado.
 
 * **No obtener respuestas en la página del listado**
 
 * **Permitir contenido destacado**
 
-   Si se selecciona, la idea puede identificarse como [contenido destacado](/help/communities/featured.md). El valor predeterminado está desmarcado.
+  Si se selecciona, la idea puede identificarse como [contenido destacado](/help/communities/featured.md). El valor predeterminado está desmarcado.
 
 * **Habilitar la mención**
 
-   Si está habilitada, permite a los usuarios de la comunidad registrada identificar a otros miembros registrados (mediante nombre, apellidos y nombre de usuario) y etiquetarlos con la sintaxis común de @user-name. Los usuarios etiquetados reciben notificaciones sobre sus menciones.
+  Si está habilitada, permite a los usuarios de la comunidad registrada identificar a otros miembros registrados (mediante nombre, apellidos y nombre de usuario) y etiquetarlos con la sintaxis común de @user-name. Los usuarios etiquetados reciben notificaciones sobre sus menciones.
 
 * **Menciones máximas**
 
-   Restringir el número máximo de menciones permitidas en una publicación. El valor predeterminado es 10.
+  Restringir el número máximo de menciones permitidas en una publicación. El valor predeterminado es 10.
 
 * **Patrón de menciones en la interfaz de usuario**
 
-   Especifique la cadena de patrón permitida para etiquetar (@mention) al usuario registrado en una publicación. Por ejemplo ~{{familyName}}{{givenName}}.
+  Especifique la cadena de patrón permitida para etiquetar (@mention) al usuario registrado en una publicación. Por ejemplo, `~{{familyName}}{{givenName}}`.
 
 #### Pestaña Moderación de usuario {#user-moderation-tab}
 
@@ -201,31 +201,31 @@ En el **Moderación de usuario** pestaña, especifique la configuración de mode
 
 * **Denegar entradas**
 
-   Si se selecciona, se permitirá a los moderadores miembros de confianza denegar publicaciones e impedir que aparezcan en el foro público. El valor predeterminado está desmarcado.
+  Si se selecciona, se permitirá a los moderadores miembros de confianza denegar publicaciones e impedir que aparezcan en el foro público. El valor predeterminado está desmarcado.
 
 * **Cerrar/abrir de nuevo los temas**
 
-   Si se selecciona esta opción, los moderadores de miembros de confianza pueden cerrar un tema para editarlo y enviarlo a otros comentarios, y también pueden volver a abrir un tema. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, los moderadores de miembros de confianza pueden cerrar un tema para editarlo y enviarlo a otros comentarios, y también pueden volver a abrir un tema. El valor predeterminado está desmarcado.
 
 * **Marcar entradas**
 
-   Si se selecciona esta opción, se permite a los miembros marcar los temas o comentarios de otros como inadecuados. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se permite a los miembros marcar los temas o comentarios de otros como inadecuados. El valor predeterminado está desmarcado.
 
 * **Lista de motivos de indicación**
 
-   Si se selecciona esta opción, se permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se permite a los miembros elegir, en una lista desplegable, el motivo por el que marcan un tema o comentario como inapropiado. El valor predeterminado está desmarcado.
 
 * **Motivo de indicación personalizado**
 
-   Si se selecciona esta opción, permite que los miembros especifiquen su propio motivo para marcar un tema o comentario como inapropiado. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, permite que los miembros especifiquen su propio motivo para marcar un tema o comentario como inapropiado. El valor predeterminado está desmarcado.
 
 * **Umbral de moderación**
 
-   Introduzca el número de veces que los miembros deben marcar un tema o comentario antes de notificarlo a los moderadores. El valor predeterminado es 1 ( una vez).
+  Introduzca el número de veces que los miembros deben marcar un tema o comentario antes de notificarlo a los moderadores. El valor predeterminado es 1 ( una vez).
 
 * **Límite de indicación**
 
-   Introduzca el número de veces que se debe marcar un tema o comentario antes de ocultarlo de la vista pública. Si se establece en -1, el tema o comentario marcado nunca se ocultará de la vista pública. De lo contrario, este número debe ser bueno o igual al umbral de moderación. El valor predeterminado es 5.
+  Introduzca el número de veces que se debe marcar un tema o comentario antes de ocultarlo de la vista pública. Si se establece en -1, el tema o comentario marcado nunca se ocultará de la vista pública. De lo contrario, este número debe ser bueno o igual al umbral de moderación. El valor predeterminado es 5.
 
 #### Pestaña Campo de etiqueta {#tag-field-tab}
 
@@ -233,11 +233,11 @@ En el **Campo de etiqueta** , especifique las etiquetas que se pueden aplicar si
 
 * **Espacios de nombres permitidos**
 
-   Relevante si `Allow Tagging` está marcada en la **Configuración** pestaña. Las etiquetas que se pueden aplicar se limitan a aquellas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) así como &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
+  Relevante si `Allow Tagging` está marcada en la **Configuración** pestaña. Las etiquetas que se pueden aplicar se limitan a aquellas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) así como &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
 
 * **Límite de sugerencias**
 
-   Introduzca el número de etiquetas que desea mostrar como sugerencia al usuario que publica en el foro. Un valor de -1 significa que no hay límites. El valor predeterminado es 0.
+  Introduzca el número de etiquetas que desea mostrar como sugerencia al usuario que publica en el foro. Un valor de -1 significa que no hay límites. El valor predeterminado es 0.
 
 ### Configurar la barra lateral del blog {#configuring-blog-sidebar}
 
@@ -249,7 +249,7 @@ En el **Configuración de barra lateral del diario** , especifique el formato de
 
 * **Formato de fecha**
 
-   Formato utilizado para mostrar los archivos de las entradas de blog. El formato utiliza marcadores de posición siguiendo la convención de Java.
+  Formato utilizado para mostrar los archivos de las entradas de blog. El formato utiliza marcadores de posición siguiendo la convención de Java.
 
    * yyyy : año completo, como &#39;2015&#39;
    * aa : año corto, como &#39;15&#39;
@@ -257,11 +257,11 @@ En el **Configuración de barra lateral del diario** , especifique el formato de
    * MMM : mes corto, como junio
    * MM : número de mes, como 06
 
-   El valor predeterminado es &quot;yyyy MMMMM&quot;, que muestra, por ejemplo, &quot;2015 June&quot;
+  El valor predeterminado es &quot;yyyy MMMMM&quot;, que muestra, por ejemplo, &quot;2015 June&quot;
 
 * **Tipo de vista**
 
-   Título y tipo de entradas de blog que se mostrarán en la barra lateral. La elección es entre
+  Título y tipo de entradas de blog que se mostrarán en la barra lateral. La elección es entre
 
    * Autores
    * Categorías
@@ -269,13 +269,13 @@ En el **Configuración de barra lateral del diario** , especifique el formato de
 
 * **Ruta de componente de blog**
 
-   *(Opcional)* La ubicación del recurso de blog desde el que se enumerarán los artículos de blog. Si se deja en blanco, usará el componente de resourceType `social/journal/components/hbs/journal` que aparece en la misma página.
+  *(Opcional)* La ubicación del recurso de blog desde el que se enumerarán los artículos de blog. Si se deja en blanco, usará el componente de resourceType `social/journal/components/hbs/journal` que aparece en la misma página.
 
    * Por ejemplo, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`. 
 
 * **Límite de sugerencias**
 
-   El número de artículos de blog que se mostrarán. Un valor de -1 significa que no hay límite. El valor predeterminado es -1.
+  El número de artículos de blog que se mostrarán. Un valor de -1 significa que no hay límite. El valor predeterminado es -1.
 
 ## Experiencia del visitante del sitio {#site-visitor-experience}
 

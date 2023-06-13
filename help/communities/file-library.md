@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 9%
@@ -57,67 +57,67 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
 * **Permitir comentarios sobre los archivos**
 
-   Si se selecciona esta opción, se permiten comentarios sobre los archivos cargados. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se permiten comentarios sobre los archivos cargados. El valor predeterminado está desmarcado.
 
 * **Comentarios por página**
 
-   Limita el número de comentarios que se muestran por página y el número de respuestas que se muestran. El valor predeterminado es **10**.
+  Limita el número de comentarios que se muestran por página y el número de respuestas que se muestran. El valor predeterminado es **10**.
 
 * **Tamaño máximo de archivo**
 
-   Este valor limitará el tamaño del archivo cargado. El límite predeterminado es 104857600 (10 Mb).
+  Este valor limitará el tamaño del archivo cargado. El límite predeterminado es 104857600 (10 Mb).
 
 * **Longitud máxima del mensaje**
 
-   Número máximo de caracteres que pueden introducirse en el cuadro de texto. El valor predeterminado es de 4096 caracteres.
+  Número máximo de caracteres que pueden introducirse en el cuadro de texto. El valor predeterminado es de 4096 caracteres.
 
 * **Tipos de archivo permitidos**
 
-   Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los que no se especifiquen. No se ha especificado el valor predeterminado de modo que se permitan todos los tipos de archivo.
+  Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los que no se especifiquen. No se ha especificado el valor predeterminado de modo que se permitan todos los tipos de archivo.
 
 * **Editor de texto enriquecido**
 
-   Si se selecciona, los comentarios se pueden introducir con marcado. El valor predeterminado está desmarcado.
+  Si se selecciona, los comentarios se pueden introducir con marcado. El valor predeterminado está desmarcado.
 
 * **Eliminar comentarios**
 
-   Si se selecciona, los usuarios pueden eliminar sus propios comentarios. La opción predeterminada está activada.
+  Si se selecciona, los usuarios pueden eliminar sus propios comentarios. La opción predeterminada está activada.
 
 * **Permitir etiquetado**
 
-   Si se selecciona, se habilitará la capacidad de agregar una etiqueta al archivo. El valor predeterminado está desmarcado.
+  Si se selecciona, se habilitará la capacidad de agregar una etiqueta al archivo. El valor predeterminado está desmarcado.
 
 * **Espacios de nombres permitidos**
 
-   Si la opción Permitir etiquetado está activada, las etiquetas disponibles se limitarán a las áreas de nombres seleccionadas. Si no se marca ninguna, se permiten todas. El valor predeterminado es todas las áreas de nombres.
+  Si la opción Permitir etiquetado está activada, las etiquetas disponibles se limitarán a las áreas de nombres seleccionadas. Si no se marca ninguna, se permiten todas. El valor predeterminado es todas las áreas de nombres.
 
 * **Límite de sugerencias**
 
-   Si la opción Permitir etiquetado está activada, esta configuración limita el número de etiquetas sugeridas que se deben mostrar. Si se establece en -1, no hay límite. El valor predeterminado es -1.
+  Si la opción Permitir etiquetado está activada, esta configuración limita el número de etiquetas sugeridas que se deben mostrar. Si se establece en -1, no hay límite. El valor predeterminado es -1.
 
 * **Habilitar la votación**
 
-   Si se selecciona, se habilitará la capacidad de votar por un archivo. El valor predeterminado está desmarcado.
+  Si se selecciona, se habilitará la capacidad de votar por un archivo. El valor predeterminado está desmarcado.
 
 * **Permitir seguimiento**
 
-   Si se selecciona esta opción, se incluye la siguiente característica para artículos de blog, que permite a los miembros [notificado](/help/communities/notifications.md) de nuevos puestos. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se incluye la siguiente característica para artículos de blog, que permite a los miembros [notificado](/help/communities/notifications.md) de nuevos puestos. El valor predeterminado está desmarcado.
 
 * **Habilitar la mención**
 
-   Si está habilitada, permite a los usuarios de la comunidad registrada identificar a otros miembros registrados (mediante nombre, apellidos y nombre de usuario) y etiquetarlos con la sintaxis común de @user-name. Los usuarios etiquetados reciben notificaciones sobre sus menciones.
+  Si está habilitada, permite a los usuarios de la comunidad registrada identificar a otros miembros registrados (mediante nombre, apellidos y nombre de usuario) y etiquetarlos con la sintaxis común de @user-name. Los usuarios etiquetados reciben notificaciones sobre sus menciones.
 
 * **Menciones máximas**
 
-   Restringir el número máximo de menciones permitidas en una publicación. El valor predeterminado es 10.
+  Restringir el número máximo de menciones permitidas en una publicación. El valor predeterminado es 10.
 
 * **Patrón de menciones en la interfaz de usuario**
 
-   Especifique la cadena de patrón permitida para etiquetar (@mention) al usuario registrado en una publicación. Por ejemplo ~{{familyName}}{{givenName}}.
+  Especifique la cadena de patrón permitida para etiquetar (@mention) al usuario registrado en una publicación. Por ejemplo, `~{{familyName}}{{givenName}}`.
 
 * **Permitir respuestas de debate**
 
-   Si está activado, permitir respuestas a comentarios publicados. El valor predeterminado está desmarcado.
+  Si está activado, permitir respuestas a comentarios publicados. El valor predeterminado está desmarcado.
 
 #### Pestaña Moderación de usuario {#user-moderation-tab}
 
@@ -125,39 +125,39 @@ En el **Moderación de usuario** pestaña, configurar la moderación de los come
 
 * **Moderación previa**
 
-   Si se selecciona, los comentarios deben aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado está desmarcado.
+  Si se selecciona, los comentarios deben aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado está desmarcado.
 
 * **Eliminar comentarios**
 
-   Si se selecciona, se permite eliminar el comentario al visitante que lo publicó. La opción predeterminada está activada.
+  Si se selecciona, se permite eliminar el comentario al visitante que lo publicó. La opción predeterminada está activada.
 
 * **Denegar comentarios**
 
-   Si se selecciona esta opción, se permite que los moderadores de confianza denieguen comentarios. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se permite que los moderadores de confianza denieguen comentarios. El valor predeterminado está desmarcado.
 
 * **Cerrar/abrir de nuevo los comentarios**
 
-   Si se selecciona esta opción, permite que los moderadores de miembros de confianza cierren y abran de nuevo los comentarios. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, permite que los moderadores de miembros de confianza cierren y abran de nuevo los comentarios. El valor predeterminado está desmarcado.
 
 * **Marcar comentarios**
 
-   Si se selecciona, permite que los visitantes marquen los comentarios como inadecuados. El valor predeterminado está desmarcado.
+  Si se selecciona, permite que los visitantes marquen los comentarios como inadecuados. El valor predeterminado está desmarcado.
 
 * **Lista de motivos de indicación**
 
-   Si se selecciona esta opción, se permite a los visitantes elegir, en una lista desplegable, el motivo por el que marcan un comentario como inapropiado. El valor predeterminado está desmarcado.
+  Si se selecciona esta opción, se permite a los visitantes elegir, en una lista desplegable, el motivo por el que marcan un comentario como inapropiado. El valor predeterminado está desmarcado.
 
 * **Motivo de indicación personalizado**
 
-   Si se selecciona, permite que los visitantes especifiquen su propio motivo para marcar un comentario como inapropiado. El valor predeterminado está desmarcado.
+  Si se selecciona, permite que los visitantes especifiquen su propio motivo para marcar un comentario como inapropiado. El valor predeterminado está desmarcado.
 
 * **Umbral de moderación**
 
-   Introduzca el número de veces que los visitantes deben marcar un comentario antes de notificarlo a los moderadores. El valor predeterminado es una vez (**1**).
+  Introduzca el número de veces que los visitantes deben marcar un comentario antes de notificarlo a los moderadores. El valor predeterminado es una vez (**1**).
 
 * **Límite de indicación**
 
-   Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo de la vista pública. Este número debe ser bueno o igual que **Umbral de moderación**. El valor predeterminado es 5.
+  Introduzca el número de veces que se debe marcar un comentario antes de ocultarlo de la vista pública. Este número debe ser bueno o igual que **Umbral de moderación**. El valor predeterminado es 5.
 
 ### Pestaña Configuración de ordenación {#sort-settings-tab}
 

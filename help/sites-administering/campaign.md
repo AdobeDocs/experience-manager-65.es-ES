@@ -1,8 +1,6 @@
 ---
 title: Integración con Adobe Campaign
-seo-title: Integrating with Adobe Campaign
-description: AEM Obtenga información sobre cómo integrar la con Adobe Campaign.
-seo-description: Learn how to integrate AEM with Adobe Campaign.
+description: AEM Obtenga información acerca de la compatibilidad de los as a Cloud Service de la con las integraciones con Adobe Campaign.
 uuid: 6113279e-d1f5-46c3-ac94-50270fa55060
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,29 +8,48 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d02a8eaba853bf96c7f706e924b4286275d582aa
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 5%
+source-wordcount: '239'
+ht-degree: 8%
 
 ---
 
+
 # Integración con Adobe Campaign{#integrating-with-adobe-campaign}
+
+AEM Obtenga información acerca de la compatibilidad de los as a Cloud Service de la con las integraciones con Adobe Campaign.
 
 Adobe Campaign es un conjunto de soluciones que le permite personalizar y entregar campañas en todos sus canales en línea y sin conexión.
 
-AEM Puede integrar esta versión de la aplicación con una de las siguientes versiones de Adobe Campaign:
+## Integración con Adobe Campaign Classic {#acc}
 
-* Adobe Campaign 6.1, que es la solución on-premise.
-* Adobe Campaign Standard, que es la solución basada en suscripciones.
+Existen varias versiones de Adobe Campaign Classic (ACC). AEM AEM La compatibilidad con la integración con la integración de depende de la versión de ACC que haya implementado y de si la instalación de la aplicación se realiza de forma local en Adobe Manage Services (AMS), y de si la aplicación está instalada en el sitio web de la aplicación (AMS).
 
-AEM En esta documentación se describe cómo integrar los segmentos de con el de Adobe Campaign. Dependiendo de si tiene la solución basada en suscripción o local, los pasos de integración diferirán ligeramente.
+| Versión ACC | AEM Integración con 6.5 <br>En las instalaciones | AEM Integración con 6.5<br>AMS |
+|---|---|---|
+| [Versión 7](https://experienceleague.adobe.com/docs/campaign-classic.html) | Compatible | Compatible  |
+| [Versión 8](https://experienceleague.adobe.com/docs/campaign-v8.html) | Compatible | Compatible  |
+| IU web* | Compatible | Compatible  |
 
-* [Integración con Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md)
+*La interfaz de usuario web para Adobe Campaign Classic está prevista para finales de 2023.
+
+AEM En la siguiente documentación se describe cómo integrar los segmentos de con la interfaz de usuario de Adobe Campaign Classic.
+
+* [Integración con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
+* [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+* [Solución de problemas de integración de Adobe Campaign Classic](/help/sites-administering/troubleshooting-campaignintegration.md)
+
+## Integración con Adobe Campaign Standard {#acs}
+
+La integración de Adobe Campaign Standard AEM AEM (ACS) con los servicios de administración de datos depende de si los servicios de administración de datos (AMS) de Adobe están instalados de forma local en los servicios de administración de datos ().
+
+| AEM Integración con 6.5 <br>En las instalaciones | AEM Integración con 6.5<br>AMS |
+|---|---|
+| Compatible | Compatible |
+| Compatible | Compatible  |
+
+AEM En la siguiente documentación se describe cómo integrar los segmentos de con la interfaz de usuario de Adobe Campaign Standard.
+
 * [Integración con Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)
-* [Prácticas recomendadas para plantillas de correo electrónico](/help/sites-administering/best-practices-for-email-templates.md)
-* [Solución de problemas de integración de Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md)
-
->[!NOTE]
->
->AEM Para revisar un artículo relacionado de la comunidad de, consulte: [Integración de Adobe Experience Manager y Adobe Campaign Standard para crear boletines informativos](https://helpx.adobe.com/experience-manager/using/aem_campaign.html).
+* [Componentes principales de correo electrónico](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
