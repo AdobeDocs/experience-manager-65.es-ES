@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1392'
 ht-degree: 3%
 
 ---
@@ -202,8 +202,7 @@ Para realizar el siguiente procedimiento, debe iniciar sesión como administrado
 ### Instalar el certificado de autor {#install-the-author-certificate}
 
 1. Abra la página User Management de la instancia de publicación. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Busque la cuenta de usuario que utiliza para ejecutar solicitudes de replicación y toque o haga clic en el nombre de usuario.
-1. Si el vínculo Crear almacén de confianza aparece en el área Configuración de cuenta, haga clic en el vínculo, cree una contraseña para el almacén de confianza y haga clic en Aceptar.
+1. Si el vínculo Crear almacén de confianza aparece en el área Almacén de confianza global, haga clic en el vínculo, cree una contraseña para el almacén de confianza y haga clic en Aceptar.
 1. En el área Configuración de cuenta, haga clic en Administrar almacén de confianza.
 1. Haga clic en Agregar certificado del archivo CER.
 1. Asegúrese de que la opción Asignar certificado al usuario esté seleccionada. Haga clic en Seleccionar archivo de certificado, seleccione author.cer y haga clic en Abrir.
