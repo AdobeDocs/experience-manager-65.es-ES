@@ -1,8 +1,6 @@
 ---
 title: Función Blog
-seo-title: Blog Feature
 description: Información de la comunidad en formato de diario
-seo-description: Community information in a journaling format
 uuid: 7323063f-81e8-45c3-9035-bf7df6124830
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1652'
 ht-degree: 7%
 
 ---
@@ -55,17 +53,17 @@ Si desea agregar un blog a una página en modo de autor, utilice el navegador de
 * `Communities / Blog`
 * `Communities / Blog Sidebar`
 
-y arrástrelos a su lugar en una página en la que debería aparecer el blog.
+Y arrástrelos a su lugar en una página donde debería aparecer el blog.
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/blog-developer-basics.md#essentials-for-client-side) están incluidos, así es como se `Blog` el componente aparecerá:
+Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/blog-developer-basics.md#essentials-for-client-side) se incluyen, las variables `Blog` el componente aparece de la siguiente manera:
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### Configurar el blog {#configuring-blog}
 
-Seleccione el colocado `Blog` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `Blog` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
 ![configurar](assets/configure-new.png)
 
@@ -99,7 +97,7 @@ En el **Configuración** pestaña, especifique las funciones básicas del blog :
 
   Añada los miembros privilegiados que tienen permiso para crear contenido.
 
-* **Bloquee el contenido que haya creado el usuario en el modo de edición de autor**
+* **Bloquear contenido generado por el usuario en el modo de edición de autor**
 
   Si está habilitado, bloquea el contenido generado por el usuario mientras lo edita en el modo Autor.
 
@@ -143,11 +141,11 @@ En el **Configuración** pestaña, especifique las funciones básicas del blog :
 
 * **Tamaño máximo de archivo**
 
-  Relevante solo si `Allow File Uploads` está marcada. Este campo limitará el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
+  Relevante solo si `Allow File Uploads` está marcada. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
 
 * **Tipos de archivo permitidos**
 
-  Relevante solo si `Allow File Uploads` está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los que no se hayan especificado. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
+  Relevante solo si `Allow File Uploads` está marcada. Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se podrán cargar los tipos de archivo que no se especifiquen. El valor predeterminado no se ha especificado, de modo que se permiten todos los tipos de archivo.
 
 * **Tamaño máximo de archivo de imagen adjunto**
 
@@ -181,11 +179,11 @@ En el **Configuración** pestaña, especifique las funciones básicas del blog :
 
 * **Permitir contenido destacado**
 
-  Si se selecciona, la idea puede identificarse como [contenido destacado](/help/communities/featured.md). El valor predeterminado está desmarcado.
+  Si se selecciona, la idea se identifica como [contenido destacado](/help/communities/featured.md). El valor predeterminado está desmarcado.
 
 * **Habilitar la mención**
 
-  Si está habilitada, permite a los usuarios de la comunidad registrada identificar a otros miembros registrados (mediante nombre, apellidos y nombre de usuario) y etiquetarlos con la sintaxis común de @user-name. Los usuarios etiquetados reciben notificaciones sobre sus menciones.
+  Si está habilitada, permite a los usuarios de la comunidad registrada identificar a otros miembros registrados (mediante nombre, apellidos y nombre de usuario) y etiquetarlos con la sintaxis común de @user-name. Los usuarios etiquetados reciben notificaciones sobre sus propias menciones.
 
 * **Menciones máximas**
 
@@ -201,7 +199,7 @@ En el **Moderación de usuario** pestaña, especifique la configuración de mode
 
 * **Denegar entradas**
 
-  Si se selecciona, se permitirá a los moderadores miembros de confianza denegar publicaciones e impedir que aparezcan en el foro público. El valor predeterminado está desmarcado.
+  Si se selecciona, los moderadores de confianza pueden denegar las publicaciones e impedir que aparezcan en el foro público. El valor predeterminado está desmarcado.
 
 * **Cerrar/abrir de nuevo los temas**
 
@@ -229,11 +227,11 @@ En el **Moderación de usuario** pestaña, especifique la configuración de mode
 
 #### Pestaña Campo de etiqueta {#tag-field-tab}
 
-En el **Campo de etiqueta** , especifique las etiquetas que se pueden aplicar si **Permitir etiquetado** es una comprobación en **Configuración** pestaña :
+En el **Campo de etiqueta** pestaña, especifique qué etiquetas se pueden aplicar si **Permitir etiquetado** es una comprobación en **Configuración** pestaña :
 
 * **Espacios de nombres permitidos**
 
-  Relevante si `Allow Tagging` está marcada en la **Configuración** pestaña. Las etiquetas que se pueden aplicar se limitan a aquellas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) así como &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
+  Relevante si `Allow Tagging` está marcada en la **Configuración** pestaña. Las etiquetas que se pueden aplicar se limitan a aquellas etiquetas dentro de las categorías de área de nombres comprobadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el área de nombres predeterminada) e &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno marcado, lo que significa que se permiten todas las áreas de nombres.
 
 * **Límite de sugerencias**
 
@@ -249,7 +247,7 @@ En el **Configuración de barra lateral del diario** , especifique el formato de
 
 * **Formato de fecha**
 
-  Formato utilizado para mostrar los archivos de las entradas de blog. El formato utiliza marcadores de posición siguiendo la convención de Java.
+  Formato utilizado para mostrar los archivos de las entradas de blog. El formato utiliza marcadores de posición siguiendo la convención de Java™.
 
    * yyyy : año completo, como &#39;2015&#39;
    * aa : año corto, como &#39;15&#39;
@@ -267,9 +265,9 @@ En el **Configuración de barra lateral del diario** , especifique el formato de
    * Categorías
    * Archivos
 
-* **Ruta de componente de blog**
+* **Ruta de componentes del blog**
 
-  *(Opcional)* La ubicación del recurso de blog desde el que se enumerarán los artículos de blog. Si se deja en blanco, usará el componente de resourceType `social/journal/components/hbs/journal` que aparece en la misma página.
+  *(Opcional)* La ubicación del recurso de blog desde el que se enumerarán los artículos de blog. Si se deja en blanco, se utiliza el componente de resourceType `social/journal/components/hbs/journal` que aparece en la misma página.
 
    * Por ejemplo, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`. 
 
@@ -279,7 +277,7 @@ En el **Configuración de barra lateral del diario** , especifique el formato de
 
 ## Experiencia del visitante del sitio {#site-visitor-experience}
 
-En el entorno de publicación, la función de blog mostrará el artículo de blog más reciente seguido de los artículos de blog más antiguos en orden descendente de creación. Las barras laterales del blog permiten a los visitantes del sitio aplicar filtros para limitar la selección de artículos de blog mostrados.
+En el entorno de publicación, la función de blog muestra el artículo de blog más reciente seguido de los artículos de blog más antiguos en orden descendente de creación. Las barras laterales del blog permiten a los visitantes del sitio aplicar filtros para limitar la selección de artículos de blog mostrados.
 
 El artículo del blog va seguido de un vínculo para publicar o ver comentarios.
 
@@ -289,13 +287,13 @@ Otras capacidades dependen de si el visitante del sitio es un moderador, adminis
 
 ### Trabajar con artículos {#working-with-articles}
 
-Al crear un nuevo artículo de blog, existe la opción de:
+Al crear un artículo de blog, existe la opción de hacer lo siguiente:
 
 1. Publicar inmediatamente
 1. Publicar un borrador
 1. Publicar en una fecha y hora programadas
 
-Los artículos del blog aparecerán en la pestaña correspondiente (Publicado, Borradores o Programado) a los miembros que puedan crear al publicar.
+Los artículos del blog aparecen en la ficha adecuada (Publicado, Borradores o Programado) para que los miembros puedan crear en el momento de la publicación.
 
 #### Moderadores y administradores {#moderators-and-administrators}
 
@@ -309,7 +307,7 @@ Cuando el usuario que ha iniciado sesión es miembro de la comunidad o [miembro 
 
 Concretamente, pueden:
 
-* Crear un nuevo artículo de blog
+* Creación de un artículo de blog
 * Publicar un nuevo artículo de blog en nombre de otro miembro
 * Publicar un comentario en un artículo de blog
 * Editar su propio artículo o comentario del blog

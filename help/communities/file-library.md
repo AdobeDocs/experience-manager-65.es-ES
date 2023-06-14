@@ -1,8 +1,6 @@
 ---
 title: Función Biblioteca de archivos
-seo-title: File Library Feature
 description: La función Biblioteca de archivos permite que los visitantes del sitio que inicien sesión carguen, gestionen y descarguen archivos
-seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '733'
 ht-degree: 9%
 
 ---
@@ -35,17 +33,17 @@ Para agregar un `File Library` a una página en modo de autor, busque el compone
 
 * `Communities / File Library`
 
-y arrástrela a su lugar en una página.
+Y arrástrela a su lugar en una página.
 
 Para obtener la información necesaria, visite [Conceptos básicos de componentes de comunidades](/help/communities/basics.md).
 
-Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) están incluidos, así es como se `File Library` el componente aparecerá:
+Si la variable [bibliotecas requeridas del lado del cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) están incluidos, es como se `File Library` el componente aparece:
 
 ![file-library1](assets/file-library1.png)
 
 ### Configurar la biblioteca de archivos {#configuring-file-library}
 
-Seleccione el colocado `File Library` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
+Seleccione el colocado `File Library` para que pueda acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
 ![configure-new](assets/configure-new.png)
 
@@ -65,7 +63,7 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
 * **Tamaño máximo de archivo**
 
-  Este valor limitará el tamaño del archivo cargado. El límite predeterminado es 104857600 (10 Mb).
+  Este valor limita el tamaño del archivo cargado. El límite predeterminado es 104857600 (10 MB).
 
 * **Longitud máxima del mensaje**
 
@@ -73,7 +71,7 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
 * **Tipos de archivo permitidos**
 
-  Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los que no se especifiquen. No se ha especificado el valor predeterminado de modo que se permitan todos los tipos de archivo.
+  Lista separada por comas de las extensiones de archivo con el separador de &quot;puntos&quot;. Por ejemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirán los tipos de archivo que no se especifiquen. No se ha especificado el valor predeterminado de modo que se permitan todos los tipos de archivo.
 
 * **Editor de texto enriquecido**
 
@@ -85,11 +83,11 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
 * **Permitir etiquetado**
 
-  Si se selecciona, se habilitará la capacidad de agregar una etiqueta al archivo. El valor predeterminado está desmarcado.
+  Si se selecciona, se habilita la capacidad de agregar una etiqueta al archivo. El valor predeterminado está desmarcado.
 
 * **Espacios de nombres permitidos**
 
-  Si la opción Permitir etiquetado está activada, las etiquetas disponibles se limitarán a las áreas de nombres seleccionadas. Si no se marca ninguna, se permiten todas. El valor predeterminado es todas las áreas de nombres.
+  Si la opción Permitir etiquetado está activada, las etiquetas disponibles se limitan a las áreas de nombres seleccionadas. Si no se comprueban áreas de nombres, se permiten todas. El valor predeterminado es todas las áreas de nombres.
 
 * **Límite de sugerencias**
 
@@ -97,7 +95,7 @@ En el **Comentarios** , especifique si aparecen los comentarios de los archivos 
 
 * **Habilitar la votación**
 
-  Si se selecciona, se habilitará la capacidad de votar por un archivo. El valor predeterminado está desmarcado.
+  Si se selecciona, se habilita la capacidad de votar por un archivo. El valor predeterminado está desmarcado.
 
 * **Permitir seguimiento**
 
@@ -125,11 +123,11 @@ En el **Moderación de usuario** pestaña, configurar la moderación de los come
 
 * **Moderación previa**
 
-  Si se selecciona, los comentarios deben aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado está desmarcado.
+  Si se selecciona, los comentarios deben aprobarse antes de aparecer en un sitio de publicación. El valor predeterminado está desmarcado.
 
 * **Eliminar comentarios**
 
-  Si se selecciona, se permite eliminar el comentario al visitante que lo publicó. La opción predeterminada está activada.
+  Si se selecciona, el visitante que publicó el comentario puede eliminarlo, si lo desea. La opción predeterminada está activada.
 
 * **Denegar comentarios**
 

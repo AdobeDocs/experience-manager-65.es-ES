@@ -1,8 +1,6 @@
 ---
 title: Prácticas recomendadas para plantillas de correo electrónico
-seo-title: Best Practices for Email Templates
 description: AEM Encuentre prácticas recomendadas sobre la creación de plantillas de correo electrónico en la.
-seo-description: Find best practices on creating email templates in AEM.
 uuid: 07417a63-7ca6-484c-b55d-57b319428329
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
-source-git-commit: 70be796a50a93267b965d00db1b359d9a809ec08
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1077'
 ht-degree: 1%
 
 ---
@@ -24,7 +22,7 @@ ht-degree: 1%
 >
 >AEM Este artículo se aplica a los componentes de base obsoletos basados en componentes de correo electrónico de la.
 >
->Se recomienda a los usuarios que aprovechen las ventajas de la tecnología moderna [Componentes principales Componentes de correo electrónico.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+>Se recomienda a los usuarios que utilicen el [Componentes principales Componentes de correo electrónico.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 Este documento describe algunas de las prácticas recomendadas en cuanto al diseño de correos electrónicos, lo que da como resultado una plantilla de campaña de correo electrónico bien desarrollada.
 
@@ -40,13 +38,13 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >
->Debe asegurarse de que reside en una `master` página
+>Asegúrese de que se encuentra debajo de `master` página
 >
 >`/content/campaigns/teasers/master/en/campaign-promotion-global`
 
 >[!NOTE]
 >
->Al crear una plantilla de correo electrónico para Adobe Campaign, debe incluir la propiedad **acMapping** con el valor **mapRecipient** en el **jcr:contenido** de la plantilla, o bien no podrá seleccionar la plantilla de Adobe Campaign en **Propiedades de página** AEM de (el campo está desactivado).
+>Al crear una plantilla de correo electrónico para Adobe Campaign, debe incluir la propiedad **acMapping** con el valor **mapRecipient** en el **jcr:contenido** nodo de la plantilla. Si no lo hace, no puede seleccionar la plantilla Adobe Campaign en **Propiedades de página** del Experience Manager (el campo está desactivado).
 
 ## Componente de plantilla/página {#template-page-component}
 
@@ -60,7 +58,7 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
   </tr>
   <tr>
    <td><p>Especifique el tipo de documento para garantizar una representación coherente.</p> <p>Agregar DOCTYPE al principio (HTML o XHTML)</p> </td>
-   <td><p>Es configurable por el diseño cambiando el <i>cq:doctype</i> propiedad en<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>El valor predeterminado es "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Se puede cambiar a "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
+   <td><p>Es configurable por el diseño cambiando el <i>cq:doctype</i> propiedad en<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>El valor predeterminado es "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional/EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Se puede cambiar a "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
    <td><p>Especifique la definición de caracteres para garantizar la correcta representación de los caracteres especiales.</p> <p>Agregue la declaración CHARSET (por ejemplo, iso-8859-15, UTF-8) a &lt;head&gt;</p> </td>
@@ -71,8 +69,8 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
    <td><p>Las tablas se utilizan en toda la plantilla para estructurar el contenido. Actualmente se utiliza un máximo de cuatro tablas anidadas (1 tabla base + máx. 3 niveles de anidación)</p> <p>&lt;div&gt; las etiquetas solo se utilizan en el modo de autor para garantizar la edición adecuada de los componentes.</p> </td>
   </tr>
   <tr>
-   <td>Utilice atributos de elemento (como relleno de celda, validación y anchura) para establecer las dimensiones de la tabla. Esto fuerza una estructura de modelo de cuadro.</td>
-   <td><p>Todas las tablas contienen atributos necesarios como <i>borde</i>, <i>cellpadding</i>, <i>espaciado de celdas</i> y <i>anchura</i>.</p> <p>Para armonizar la colocación de los elementos dentro de las tablas, todas las celdas de la tabla tienen el atributo <i>valign="top"</i> que se está configurando.</p> </td>
+   <td>Utilice atributos de elemento (como relleno de celda, validación y anchura) para establecer las dimensiones de la tabla. Este método fuerza una estructura de modelo de cuadro.</td>
+   <td><p>Todas las tablas contienen atributos necesarios como <i>borde</i>, <i>cellpadding</i>, <i>espaciado de celdas</i>, y <i>anchura</i>.</p> <p>Para armonizar la colocación de los elementos dentro de las tablas, todas las celdas de la tabla tienen el atributo <i>valign="top"</i> que se está configurando.</p> </td>
   </tr>
   <tr>
    <td><p>Tenga en cuenta la compatibilidad con dispositivos móviles, si es posible. Utilice consultas de medios para aumentar el tamaño del texto en pantallas pequeñas y proporcione áreas de visita en miniatura para los vínculos.</p> <p>Hacer que un correo electrónico sea adaptable si el diseño lo permite.</p> </td>
@@ -80,15 +78,15 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
   </tr>
   <tr>
    <td>CSS en línea es mejor que colocar todo el CSS al principio.</td>
-   <td><p>Para mostrar mejor la estructura del HTML subyacente y facilitar la posibilidad de personalizar la estructura del boletín informativo, solo se han insertado algunas definiciones CSS.</p> <p>Los estilos base y las variaciones de plantilla se han extraído a un bloque de estilo en la &lt;head&gt; de la página. Al enviar la newsletter final, estas definiciones de CSS deben insertarse en el HTML. Se ha planificado un mecanismo automático de alineamiento, pero actualmente no está disponible.</p> </td>
+   <td><p>Para mostrar mejor la estructura del HTML subyacente y facilitar la personalización de la estructura del boletín informativo, solo se han insertado algunas definiciones de CSS.</p> <p>Los estilos base y las variaciones de plantilla se han extraído a un bloque de estilo en la &lt;head&gt; de la página. Al enviar la newsletter final, estas definiciones de CSS se insertan en el HTML. Se ha planificado un mecanismo de inline automático, pero actualmente no está disponible.</p> </td>
   </tr>
   <tr>
    <td>Simplifique el código CSS. Evite las declaraciones de estilos compuestos, el código abreviado, las propiedades de diseño CSS, los selectores complejos y los pseudoelementos.</td>
    <td>En cuanto a los estilos CSS que se utilizan para ilustrar el diseño de demostración, se siguen las recomendaciones CSS.</td>
   </tr>
   <tr>
-   <td>Los correos electrónicos deben tener una anchura máxima de 600-800 píxeles. Esto hará que se comporten mejor dentro del tamaño del panel de vista previa proporcionado por muchos clientes.</td>
-   <td>El <i>anchura</i> El número de tablas de contenido está limitado a 600 píxeles en el diseño de demostración.</td>
+   <td>Los correos electrónicos deben tener una anchura máxima de 600-800 píxeles. Este tamaño hace que se comporten mejor dentro del tamaño del panel de vista previa proporcionado por muchos clientes.</td>
+   <td>El <i>anchura</i> El tamaño de la tabla de contenido está limitado a 600 píxeles en el diseño de demostración.</td>
   </tr>
  </tbody>
 </table>
@@ -100,9 +98,9 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
 | **Práctica recomendada** | **Implementación** |
 |---|---|
 | Añadir *alt* atributos a imágenes | El *alt* El atributo se ha definido como obligatorio para el componente de imagen. |
-| Uso *jpg* en lugar de *png* formato para imágenes | El componente de imagen siempre actuará como JPG. |
+| Uso *jpg* en lugar de *png* formato para imágenes | El componente de imagen siempre sirve como JPG a las imágenes. |
 | Uso `<img>` en lugar de imágenes de fondo en una tabla. | No se utilizan datos de imagen de fondo en las plantillas. |
-| Añadir el atributo style=&quot;display block&quot; en las imágenes. Permite mostrar bien en Gmail. | Todas las imágenes contienen de forma predeterminada el *style=&quot;bloque de visualización&quot;* atributo. |
+| Añadir el atributo style=&quot;display block&quot; en las imágenes. Al hacerlo, se muestran bien en Gmail. | Todas las imágenes contienen de forma predeterminada el *style=&quot;bloque de visualización&quot;* atributo. |
 
 ### Texto y vínculos {#text-and-links}
 
@@ -116,11 +114,11 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
   </tr>
   <tr>
    <td>Utilice html en lugar de estilo en CSS (familia de fuentes)</td>
-   <td>Ahora, RichTextEditor (por ejemplo, en el componente textimage) admite la selección y aplicación de familias de fuentes y tamaños de fuente a textos seleccionados. Se representarán como etiquetas.</td>
+   <td>RichTextEditor (por ejemplo, en el componente textimage) ahora admite la selección y aplicación de familias de fuentes y tamaños de fuente a textos seleccionados. Se representan como etiquetas.</td>
   </tr>
   <tr>
-   <td>Utilice fuentes básicas entre plataformas, como <i>Arial, Verdana, Georgia</i> y <i>Times New Roman</i>.</td>
-   <td><p>Depende del diseño de la newsletter.</p> <p>Para el diseño de la demostración se utiliza la fuente "Helvetica", pero volverá a la fuente genérica sans-serif, si no está presente.</p> </td>
+   <td>Utilice fuentes básicas entre plataformas, como <i>Arial®, Verdana, Georgia</i>, y <i>Times New Roman®</i>.</td>
+   <td><p>Depende del diseño de la newsletter.</p> <p>Para el diseño de demostración, se utiliza la fuente "Helvetica®", pero vuelve a una fuente sans-serif genérica, si no está presente.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -129,9 +127,9 @@ Siga estas prácticas recomendadas al crear su propia newsletter.
 
 | **Práctica recomendada** | **Implementación** |
 |---|---|
-| Utilice el validador W3C para corregir el código del HTML. Asegúrese de que todas las etiquetas abiertas estén correctamente cerradas. | Se ha validado el código. Para el documento transitorio de XHTML, escriba solo el atributo xmlns que falta para `<html>` falta el elemento. |
-| No se moleste en utilizar JavaScript o Flash, ya que estas tecnologías no son compatibles con los clientes de correo electrónico. | En la plantilla de la newsletter no se utiliza ni JavaScript ni Flash. |
-| Añada una versión de texto sin formato para el envío de varias partes. | Se ha incorporado un nuevo widget en las propiedades de la página para extraer fácilmente una versión de texto sin formato del contenido de la página. Esto puede utilizarse como punto de partida para la versión final de texto sin formato. |
+| Utilice el validador W3C para corregir el código del HTML. Asegúrese de que todas las etiquetas abiertas estén correctamente cerradas. | Se ha validado el código. Solo para el tipo de documento XHTML transitorio, falta el atributo xmlns para el `<html>` falta el elemento. |
+| Evite utilizar JavaScript o Flash: estas tecnologías suelen ser incompatibles con los clientes de correo electrónico. | JavaScript o Flash no se utilizan en la plantilla del boletín informativo. |
+| Añada una versión de texto sin formato para el envío de varias partes. | Se ha incorporado un nuevo widget en las propiedades de la página para extraer fácilmente una versión de texto sin formato del contenido de la página. Puede utilizarlo como punto de partida para la versión final de texto sin formato. |
 
 ## Plantillas y ejemplos de newsletter de Campaign {#campaign-newsletter-templates-and-examples}
 
@@ -139,9 +137,9 @@ AEM viene con varias plantillas y componentes listos para usar para que cree bol
 
 ### Plantillas {#templates}
 
-Para ofrecer una base sólida y ampliar la variedad de posibilidades de flujo de contenido, hay tres tipos de plantillas ligeramente diferentes disponibles de forma predeterminada. Puede utilizarlas fácilmente para crear un boletín informativo personalizado.
+Para ofrecer una base sólida y ampliar la variedad de posibilidades de flujo de contenido, hay tres tipos de plantillas ligeramente diferentes disponibles de forma predeterminada. Puede utilizar fácilmente estos tres tipos para crear un boletín informativo personalizado.
 
-Todos tienen un **encabezado**, a **pie de página** y una **cuerpo** sección. Debajo de la sección del cuerpo, cada plantilla difiere en **diseño de columna** (1, 2 o 3 columnas).
+Todos tienen un **encabezado**, a **pie de página**, y a **cuerpo** sección. Debajo de la sección del cuerpo, cada plantilla difiere en **diseño de columna** (una, dos o tres columnas).
 
 ![](assets/chlimage_1-69.png)
 
