@@ -2,10 +2,10 @@
 title: AEM Notas de la versión de Content and Commerce de 2022
 description: AEM Notas de la versión de Content and Commerce de 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 42%
+source-wordcount: '816'
+ht-degree: 33%
 
 ---
 
@@ -17,7 +17,7 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 
 | Componente | Requisitos del sistema |
 |:-------|:-----:|
-| Complemento CIF | AEM Mínimo: 6.5.7, Magento 2.3.5 Esquemas de GraphQL |
+| Complemento CIF | AEM Mínimo: 6.5.7, Adobe Commerce 2.3.5 Esquemas de GraphQL |
 | Componentes principales del CIF | [Requisitos del sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Tipo de archivo del proyecto AEM. | [Requisitos del sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -45,7 +45,7 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 ### Novedades {#what-is-new-july}
 
 * AEM AEM Asociación de páginas de productos a productos y categorías a través de las propiedades de página de la página de productos más información general en la cabina de productos
-   ![asociación de página de cabina de productos](/help/assets/CIF/product_cockpit_page_association.png)
+  ![asociación de página de cabina de productos](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Fecha de versión: junio de 2022
 
@@ -57,7 +57,7 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 
 ### Novedades {#what-is-new-june}
 
-* AEM Ahora, el enriquecimiento del catálogo de productos admite páginas de. Esto permite a los autores administrar la asociación página - producto.
+* AEM Ahora, el enriquecimiento del catálogo de productos admite páginas de productos, lo que permite a los autores administrar la asociación entre páginas y productos.
 
 * Varias mejoras en los componentes principales del CIF
 
@@ -65,7 +65,7 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 
 * Añadir token de inicio de sesión a la recuperación de precios del lado del cliente
 
-* Componente de página incorrecto en la capa de datos
+* Componente de página incorrecto en la capa de datos.
 
 ## Fecha de versión: mayo de 2022
 
@@ -83,11 +83,11 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 
 * Compatibilidad y solidez mejoradas para conectores de terceros en I/O Runtime
 
-* Mejore la compatibilidad con las sobrescrituras de configuración del cliente GQL (por ejemplo, establezca el comportamiento de almacenamiento en caché personalizado)
+* Mejorar la compatibilidad con las sobrescrituras de configuración del cliente GQL (por ejemplo, establecer el comportamiento de almacenamiento en caché personalizado)
 
 ### Corrección de errores {#bug-fixes-may}
 
-* El campo de selección de varios valores muestra el segundo y el resto de los productos adicionales como no válidos
+* El campo de selección de varios valores muestra el segundo producto y los productos adicionales como no válidos
 
 * El selector de productos se oculta ocasionalmente detrás de los componentes
 
@@ -103,11 +103,11 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 
 * Acceso rápido a la cabina de productos: acceda fácilmente a la información detallada completa del producto con un solo clic en el Editor de sitios
 
-   ![Habilitar lista de deseos](/help/assets/CIF/enable-wishlist.png)
+  ![Habilitar lista de deseos](/help/assets/CIF/enable-wishlist.png)
 
 * Compatibilidad con componentes de comercio de marketing adicionales: los componentes se pueden configurar para mostrar una llamada a acción de complemento al carro y de complemento a la lista de deseos.
 
-   ![Acceso directo del editor de sitios a la cabina de productos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![Acceso directo del editor de sitios a la cabina de productos](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## Fecha de versión: febrero de 2022
 
@@ -121,9 +121,9 @@ Revise los requisitos mínimos del sistema de la tabla siguiente para la versió
 
 * Beta: compatibilidad del componente principal de búsqueda del CIF de AEM con Commerce LiveSearch
 * SEO mejorado para escenarios de varias tiendas: los formatos de URL para PDP/PLP ahora se pueden configurar en el nivel de tienda mediante las propiedades de configuración en la nube del CIF
-* El selector de productos es compatible con los productos clasificados mediante la nueva opción de filtro de la IU.  Esto permite a los profesionales del contenido preparar la administración de contenido de producto para próximos lanzamientos del producto
+* El selector de productos es compatible con los productos clasificados mediante la nueva opción de filtro en la interfaz de usuario. Permite a los profesionales del contenido preparar la administración de contenido de producto para próximos lanzamientos del producto
 * Administración simplificada de la configuración del CIF y gestión de errores mediante el uso del nombre de configuración en la nube del CIF, en lugar de la URL del proxy de configuración
-* Selección manual de categorías para la lista de productos y los componentes de carrusel. Esto permite a los profesionales del contenido utilizar estos componentes en páginas de contenido, fuera de la experiencia del catálogo
+* Selección manual de categorías para la lista de productos y los componentes de carrusel. Permite a los profesionales del contenido utilizar estos componentes en páginas de contenido, fuera de la experiencia del catálogo
 
 ## Fecha de versión: enero de 2022
 

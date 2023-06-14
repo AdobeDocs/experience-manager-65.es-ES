@@ -1,8 +1,6 @@
 ---
 title: Aspectos básicos de QnA
-seo-title: QnA Essentials
 description: Función de foro de preguntas y respuestas
-seo-description: Questions and answers forum feature
 uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +8,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '239'
 ht-degree: 2%
 
 ---
@@ -30,7 +28,7 @@ Esta página proporciona la información esencial para trabajar con la función 
    <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">incluible</a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component">include</a></td>
    <td>No</td>
   </tr>
   <tr>
@@ -56,15 +54,15 @@ Esta página proporciona la información esencial para trabajar con la función 
 
 ## Essentials para servidor {#essentials-for-server-side}
 
-* [API de QnA](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [API de QnA](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [Puntos finales de control de calidad](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [Puntos finales de control de calidad](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
 ### Función Preguntas y respuestas {#qna-function}
 
-Una estructura de sitio de la comunidad que incluye [Función QnA](functions.md#qna-function) tendrá un configurado `QnA` , así como los ajustes que afectan a la moderación y al etiquetado. La función de control de calidad admite la identificación de [grupo de usuarios miembros privilegiados](users.md#privileged-members-group).
+Una estructura de sitio de la comunidad que incluye [Función QnA](functions.md#qna-function) tiene un configurado `QnA` componente y configuración que afecta a la moderación y el etiquetado. La función de control de calidad admite la identificación de [grupo de usuarios miembros privilegiados](users.md#privileged-members-group).
 
 ### Acceso a las publicaciones del foro de control de calidad (UGC) {#accessing-qna-forum-posts-ugc}
 

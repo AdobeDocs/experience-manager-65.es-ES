@@ -1,8 +1,6 @@
 ---
 title: Modificar el aspecto
-seo-title: Alter the Appearance
 description: Modificación del script
-seo-description: Modify the script
 uuid: 30555b9f-da29-4115-9ed5-25f80a247bd6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -35,7 +33,7 @@ Para no mostrar el avatar junto a cada comentario publicado:
 
 1. Abrir la superposición `comment.hbs`
 
-   * Doble clic en el nodo `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
+   * Haga doble clic en el nodo `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
 
 1. Busque las siguientes líneas y elimínelas o coméntelas:
 
@@ -44,7 +42,7 @@ Para no mostrar el avatar junto a cada comentario publicado:
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Elimine las líneas o rodee con `<!--` y `-->` para comentarlos. Además, los caracteres &quot;xxx&quot; se agregan como indicador visual de dónde habría estado el avatar.
+Elimine las líneas o rodee con `<!--` y `-->` así que los comentas. Además, los caracteres &quot;xxx&quot; se agregan como indicador visual de dónde habría estado el avatar.
 
 ```xml
    xxx
@@ -71,6 +69,6 @@ En Ruta de inicio, escriba `/apps/social/commons` y seleccione **[!UICONTROL Act
 
 Si inicia sesión en la instancia de publicación como administrador, por ejemplo, https://localhost:4503/crx/de como administrador/administrador, puede verificar que los componentes superpuestos estén presentes.
 
-Si cierra la sesión y vuelve a iniciarla como `aaron.mcdonald@mailinator.com/password` y actualice la página, observará que el comentario publicado ya no se muestra con un avatar, sino que se muestra un simple &quot;xxx&quot;.
+Si cierra la sesión y luego la inicia como `aaron.mcdonald@mailinator.com/password` y actualiza la página, observa que no se muestra un avatar con el comentario publicado. En su lugar, se muestra un &quot;xxx&quot; simple.
 
 ![create-template-component](assets/create-template-component.png)

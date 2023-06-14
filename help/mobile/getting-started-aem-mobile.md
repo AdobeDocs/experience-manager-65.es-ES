@@ -1,8 +1,6 @@
 ---
-title: Introducción a AEM Mobile
-seo-title: Getting Started with AEM Mobile
-description: Esta página sirve como página de aterrizaje para AEM Mobile. Siga esta página como punto de partida para conocer las tres formas diferentes de crear aplicaciones.
-seo-description: This page serves as a landing page for AEM Mobile. Follow this page as a starting point to learn about the three different ways for creating apps.
+title: Introducción a Adobe Experience Manager Mobile
+description: Esta página sirve como página de aterrizaje para Adobe Experience Manager Mobile. Siga esta página como punto de partida para conocer las tres formas diferentes de crear aplicaciones.
 uuid: a5398216-f9bb-4009-a9f8-a4f0135db67c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -10,24 +8,24 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 724e09c2-3df3-4080-a0d4-ee2ede483791
 exl-id: a2bc9a50-6455-4703-8829-964fab313e96
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 1%
+source-wordcount: '201'
+ht-degree: 0%
 
 ---
 
-# Introducción a AEM Mobile{#getting-started-with-aem-mobile}
+# Introducción a Adobe Experience Manager Mobile{#getting-started-with-aem-mobile}
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
->Los clientes existentes de AEM Mobile AEM AEM Apps que migren de la versión 6.2 o 6.3 a la versión 6.5 de la versión, pueden seguir usando las aplicaciones de AEM Mobile si descargan un paquete de PackageShare. AEM Sin embargo, las nuevas instalaciones de 6.5 no admiten la funcionalidad de aplicaciones de AEM Mobile.
+>Los clientes existentes de Adobe Experience Manager AEM AEM AEM () Mobile Apps que migran de la versión 6.2 o 6.3 a la versión 6.5 de la aplicación de AEM Mobile pueden seguir usando este servicio descargando un paquete desde Uso compartido de paquetes. AEM Sin embargo, las nuevas instalaciones de 6.5 no admiten la funcionalidad de aplicaciones de AEM Mobile.
 
-Adobe Experience Manager AEM () Mobile forma parte de la plataforma digital multicanal de Adobe Experience Manager que también aprovecha AEM Assets, Sites, Screens, Workflow, User Manager, Commerce y Forms. AEM Mobile ofrece una notable flexibilidad de implementación, lo que permite a las empresas utilizar una variedad de fuentes de contenido.
+AEM Mobile forma parte de la plataforma digital multicanal de Adobe Experience Manager que también utiliza AEM Assets, Sites, Screens, Workflow, User Manager, Commerce y Forms. AEM Mobile ofrece una notable flexibilidad de implementación, lo que permite a las empresas utilizar varias fuentes de contenido.
 
 AEM Mobile ofrece varios métodos para crear aplicaciones. Las tres formas diferentes de crear aplicaciones son las siguientes:
 

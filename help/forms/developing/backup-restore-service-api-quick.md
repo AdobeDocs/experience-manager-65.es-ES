@@ -1,6 +1,5 @@
 ---
 title: Inicio de rápido de la API del servicio de copia de seguridad y restauración
-seo-title: Backup and Restore Service APIQuick Starts
 description: Inicio de rápido de la API del servicio de copia de seguridad y restauración
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '246'
 ht-degree: 4%
 
 ---
@@ -21,21 +20,21 @@ ht-degree: 4%
 
 **Los ejemplos de este documento solo son para AEM Forms en un entorno JEE.**
 
-Inicio rápido (SOAP) de la API de Java están disponibles para la API del servicio de backup y restauración.
+Inicio rápido (SOAP) de la API de Java™ está disponible para la API del servicio de backup y restauración.
 
-[Inicio rápido: Introducción al modo de copia de seguridad mediante la API de Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Inicio rápido: Introducción al modo de copia de seguridad mediante Java](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Inicio rápido: Dejar el modo de copia de seguridad mediante la API de Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Inicio rápido: Salir del modo de copia de seguridad mediante Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-Las operaciones de AEM Forms se pueden realizar mediante la API con establecimiento inflexible de tipos de AEM Forms y el modo de conexión debe establecerse en SOAP.
+Las operaciones de AEM Forms se pueden realizar mediante la API de AEM Forms con establecimiento inflexible de tipos y el modo de conexión debe establecerse en SOAP.
 
 >[!NOTE]
 >
->Los inicios rápidos ubicados en Programación con AEM Forms se basan en el sistema operativo Forms. Sin embargo, si está utilizando otro sistema operativo, como UNIX, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Los inicios rápidos en programación con AEM Forms se basan en el sistema operativo Forms. Sin embargo, si está utilizando otro sistema operativo, como UNIX®, reemplace las rutas específicas de Windows por rutas admitidas por el sistema operativo correspondiente. Del mismo modo, si está utilizando otro servidor de aplicaciones J2EE, asegúrese de especificar propiedades de conexión válidas. Consulte [Estableciendo propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Inicio rápido (modo SOAP): Introducción del modo de copia de seguridad mediante la API de Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## Inicio rápido (modo SOAP): Introducción del modo de copia de seguridad mediante la API de Java™ {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-El siguiente ejemplo de código Java entra en modo de copia de seguridad con una etiqueta única durante dos horas. Una vez transcurrido el tiempo de copia de seguridad o si se sale explícitamente del modo de copia de seguridad, el servidor de Forms vuelve a depurar los archivos de Global Document Storage. (Consulte [Introducción del modo de copia de seguridad en el servidor de Forms](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
+El siguiente ejemplo de código Java™ entra en modo de copia de seguridad con una etiqueta única durante dos horas. Una vez transcurrido el tiempo de copia de seguridad o si se sale explícitamente del modo de copia de seguridad, Forms Server vuelve a depurar los archivos de Global Document Storage. (Consulte [Introducción del modo de copia de seguridad en Forms Server](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -123,7 +122,7 @@ El siguiente ejemplo de código Java entra en modo de copia de seguridad con una
              // Enter backup mode on the forms server server
              BackupModeEntryResult backupResult = backup.enterBackupMode(backUpLabel,minsInBackupMode, continousCoverage);
  
-             // Get information from entering backup mode ontheforms server server.
+             // Get information from entering backup mode on the forms server server.
              if (backupResult != null)
              {
                  System.out.println("Start time is: " + backupResult.getStartTime());
@@ -148,9 +147,9 @@ El siguiente ejemplo de código Java entra en modo de copia de seguridad con una
  
 ```
 
-## Inicio rápido (modo SOAP): Salir del modo de copia de seguridad mediante la API de Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Inicio rápido (modo SOAP): Dejando el modo de copia de seguridad mediante la API de Java™ {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-El siguiente ejemplo de código Java hace que un servidor de Forms deje el modo de copia de seguridad y vuelva a purgar archivos del almacenamiento global de documentos. (Consulte [Dejar el modo de copia de seguridad en el servidor de Forms](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
+El siguiente ejemplo de código Java™ hace que un servidor de Forms deje el modo de copia de seguridad y vuelva a purgar archivos de Global Document Storage. (Consulte [Dejar el modo de copia de seguridad en Forms Server](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*
