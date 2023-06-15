@@ -8,9 +8,9 @@ user-guide-title: Guía de Adobe Experience Manager 6.5 de Forms
 breadcrumb-title: Guía de Forms
 user-guide-description: Cree, gestione, publique y actualice formularios digitales.
 role: User
-source-git-commit: f0ffa552bd4a5b8b20a58aed7847c4de07acc4f4
+source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
 workflow-type: tm+mt
-source-wordcount: '3860'
+source-wordcount: '3870'
 ht-degree: 97%
 
 ---
@@ -134,6 +134,7 @@ ht-degree: 97%
 + Formularios adaptables: creación básica {#adaptive-forms-basic-authoring}
    + [Prácticas recomendadas para usar formularios adaptables ](using/adaptive-forms-best-practices.md)
    + [Crear un formulario adaptable](using/creating-adaptive-form.md)
+   + [Crear o agregar un formulario adaptable a la página de AEM Sites](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
    + [Fragmentos de formularios adaptables](using/adaptive-form-fragments.md)
    + [Configurar la acción de envío](using/configuring-submit-actions.md)
    + [Usar CAPTCHA en formularios adaptables](using/captcha-adaptive-forms.md)
