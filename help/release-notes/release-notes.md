@@ -3,9 +3,9 @@ title: Notas de la versión para [!DNL Adobe Experience Manager] 6,5
 description: Encuentre información de la versión, novedades, instrucciones de instalación y una lista de cambios detallada para [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 36edc2507d9acd7d5f94e433a654ccc1647bb58a
+source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3738'
 ht-degree: 1%
 
 ---
@@ -45,14 +45,20 @@ Algunas de las funciones y mejoras clave de esta versión son las siguientes:
    * Crear una versión
    * Relacionar o desrelacionar recursos
 
-   No es necesario desplazarse a la ubicación del recurso y ver sus propiedades para realizar estas operaciones.
+  No es necesario desplazarse a la ubicación del recurso y ver sus propiedades para realizar estas operaciones.
 * **Dynamic Media _Instantánea_**: Experimente con imágenes de prueba o URL de Dynamic Media para ver la salida de diferentes modificadores de imagen y optimizaciones de imágenes inteligentes para el tamaño de archivo (con entrega WebP y AVIF), el ancho de banda de la red y la proporción de píxeles del dispositivo. Consulte [Instantánea Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 * **Streaming DASH con Dynamic Media** - Se ha lanzado la compatibilidad con el nuevo protocolo (DASH - Dynamic Adaptive Streaming over HTTP) para el streaming adaptable en la entrega de vídeo de Dynamic Media (con CMAF habilitado). Disponible ahora para todas las regiones, [habilitado mediante un ticket de asistencia](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
 * **Integración de Experience Manager Sites y fragmentos de contenido con Dynamic Media de próxima generación de recursos** : Los usuarios de Experience Manager Assets as a Cloud Service Next-Generation Dynamic Media ahora pueden utilizar esos recursos alojados en la nube para la creación y el envío con instancias on-premise o Managed Services de Experience Manager Sites 6.5.
-* **Integración de Forms adaptable en páginas de Experience Manager Sites**: Cree fácilmente experiencias de inscripción digitales utilizando componentes de Forms adaptable dentro del editor de Experience Manager Sites con: - Contenedor de Forms adaptable y Forms adaptable - Componentes incrustados (v2).
-* **Compatibilidad con reCAPTCHA Enterprise en Experience Manager Forms**: Se ha añadido compatibilidad con reCAPTCHA Enterprise en Experience Manager Forms, que proporciona una protección mejorada contra actividades fraudulentas y spam, además de la compatibilidad con reCAPTCHA v2 de Google.
-* **Compatibilidad con Adobe Acrobat Sign para Administración Pública con Experience Manager Forms**: Permita la integración segura y compatible de Experience Manager Forms con Adobe Sign para el gobierno (compatible con FedRAMP).
-* **Habilitar la integración de Salesforce con Experience Manager Forms para el intercambio de datos**: configure la integración entre Experience Manager Forms y la aplicación Salesforce mediante el flujo de credenciales del cliente OAuth 2.0. Esta capacidad permite la autenticación y autorización seguras y directas de la aplicación y permite una comunicación fluida sin la participación del usuario.
+
+**AEM Forms**
+
+* **[Forms AEM adaptable en el editor de páginas de la](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)** AEM : ahora puede utilizar el Editor de páginas de para crear y agregar rápidamente varios formularios a las páginas de Sites. Esta capacidad permite a los autores de contenido crear experiencias de captura de datos sin problemas dentro de las páginas de Sites mediante la potencia de los componentes de los formularios adaptables, incluido el comportamiento dinámico, las validaciones, la integración de datos, la generación de documentos de registro y la automatización de los procesos empresariales. Puede hacer lo siguiente:
+   * Cree un formulario adaptable arrastrando y soltando componentes de formulario en el componente Contenedor de Forms adaptable en el editor de AEM Sites o en los fragmentos de experiencias.
+   * Utilice el asistente de Forms adaptable dentro del editor de AEM Sites para poder crear formularios independientes de cualquier página de Sites, lo que le proporciona la libertad de reutilizar dichos formularios en varias páginas.
+   * Agregue varios formularios a una página de Sites, lo que optimizará la experiencia del usuario y proporcionará la buena flexibilidad.
+* **[Compatibilidad con reCAPTCHA Enterprise en Experience Manager Forms](/help/forms/using/captcha-adaptive-forms.md)**: Se ha añadido compatibilidad con reCAPTCHA Enterprise en Experience Manager Forms, que proporciona una protección mejorada contra actividades fraudulentas y spam, además de la compatibilidad con reCAPTCHA v2 de Google.
+* **[Compatibilidad con Adobe Acrobat Sign para Administración Pública con Experience Manager Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)**: AEM Forms ahora se integra con Adobe Acrobat Sign para Administración Pública (compatible con FedRAMP). Esta integración proporciona un nivel avanzado de cumplimiento y seguridad para las firmas electrónicas con envíos de formularios adaptables para cuentas asociadas con el gobierno (departamentos y agencias gubernamentales). La integración con Adobe Acrobat Sign para Administración Pública permite a los socios de Adobe y a los clientes gubernamentales utilizar firmas electrónicas en Forms adaptable para algunas de las líneas de negocio más importantes y sensibles. Este nivel adicional de seguridad garantiza que todas las firmas electrónicas cumplan plenamente con la normativa FedRAMP Moderate, lo que proporciona tranquilidad a los clientes gubernamentales de Adobe.
+* **[Habilitar la integración de Salesforce con Experience Manager Forms para el intercambio de datos](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)**: configure la integración entre Experience Manager Forms y la aplicación Salesforce mediante el flujo de credenciales del cliente OAuth 2.0. Esta capacidad permite la autenticación y autorización seguras y directas de la aplicación y permite una comunicación fluida sin la participación del usuario.
 * **Optimización y funcionalidad mejorada del motor de flujo de trabajo**: aumente el rendimiento de los motores de flujo de trabajo minimizando el número de instancias de flujo de trabajo. Además de `COMPLETED` y `RUNNING` valores de estado, el flujo de trabajo también admite tres nuevos valores de estado: `ABORTED`, `SUSPENDED`, y `FAILED`.
 
 
@@ -357,14 +363,14 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * Una consulta de GraphQL puede utilizar el complemento `damAssetLucene` índice en lugar de `fragments` índice. Esta acción puede dar como resultado consultas de GraphQL que fallan o que tardan mucho tiempo en ejecutarse.
 
-   Para corregir el problema, `damAssetLucene` debe configurarse para incluir las dos propiedades siguientes:
+  Para corregir el problema, `damAssetLucene` debe configurarse para incluir las dos propiedades siguientes:
 
    * `contentFragment`
    * `model`
 
-   Una vez cambiada la definición del índice, es necesario volver a indexar (`reindex` = `true`).
+  Una vez cambiada la definición del índice, es necesario volver a indexar (`reindex` = `true`).
 
-   Después de estos pasos, las consultas de GraphQL deberían funcionar más rápido.
+  Después de estos pasos, las consultas de GraphQL deberían funcionar más rápido.
 
 * Como [!DNL Microsoft® Windows Server 2019] no admite [!DNL MySQL 5.7] y [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] no admite instalaciones llave en mano para [!DNL Experience Manager Forms 6.5.10.0].
 
@@ -385,12 +391,12 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 * Al intentar mover, eliminar o publicar fragmentos de contenido, sitios o páginas, hay un problema cuando se recuperan las referencias de fragmentos de contenido, ya que la consulta en segundo plano falla. Es decir, la funcionalidad no funciona.
 Para garantizar un funcionamiento correcto, debe agregar las siguientes propiedades al nodo de definición del índice `/oak:index/damAssetLucene` (no se requiere reindexación):
 
-   ```xml
-   "tags": [
-       "visualSimilaritySearch"
-     ]
-   "refresh": true
-   ```
+  ```xml
+  "tags": [
+      "visualSimilaritySearch"
+    ]
+  "refresh": true
+  ```
 
 * En la plataforma JBoss® 7.1.4, cuando el usuario instala el Service Pack de Experience Manager 6.5.16.0 o posterior, `adobe-livecycle-jboss.ear` la implementación falla.
 * La versión de JDK superior a 1.8.0_281 no es compatible con el servidor JEE de WebLogic.
@@ -414,4 +420,3 @@ Estos sitios web solo están disponibles para los clientes de. Si es cliente de 
 >* [[!DNL Experience Manager] página de producto](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] Documentación de 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=es)
 >* [Suscripción a las actualizaciones prioritarias de productos de Adobe](https://www.adobe.com/subscription/priority-product-update.html)
-
