@@ -11,10 +11,10 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 4714554609a10e58b1c7141696d694fac46887a6
+source-git-commit: 66674f0e2621d8786ab4d662cddad373122d8b51
 workflow-type: tm+mt
-source-wordcount: '3826'
-ht-degree: 100%
+source-wordcount: '3855'
+ht-degree: 99%
 
 ---
 
@@ -122,7 +122,8 @@ Realice los siguientes pasos para agregar campos a un formulario adaptable y per
    >
    >    * El uso del bloque [!DNL Adobe Sign] no es obligatorio para utilizar [!DNL Adobe Sign] en un formulario adaptable. Si no usa el bloque de [!DNL Adobe Sign] y agrega campos para los firmantes, el campo de firma predeterminado se muestra al final de los documentos de firma.
    >    * Use el bloque de [!DNL Adobe Sign] solo para los formularios adaptables que generan automáticamente el documento de registro. Si utiliza un XDP personalizado para generar un documento de registro o un formulario basado en un formulario adaptable, el bloque [!DNL Adobe Sign] no es compatible.
-
+   >
+   >
 
 1. Seleccione el componente **[!UICONTROL bloque de Adobe Sign]** y pulse el icono **Editar** ![aem_6_3_edit](assets/aem_6_3_edit.png). Muestra las opciones para agregar campos y formatear la apariencia de un campo.
 
@@ -194,11 +195,13 @@ Solo se puede tener un firmante o varios firmantes para un formulario adaptable.
 
    * **[!UICONTROL Dirección de correo electrónico del firmante]:** Especifique la dirección de correo electrónico del firmante. El firmante recibe los documentos/formularios a firmar en la dirección de correo electrónico especificada. Puede elegir utilizar una dirección de correo electrónico proporcionada en un campo de formulario, en el perfil de AEM del usuario que ha iniciado sesión o escribir manualmente una dirección de correo electrónico. Es un paso obligatorio. Asegúrese de que la dirección de correo electrónico del primer firmante o del único firmante (si hay solo uno) no sea idéntica al de la cuenta de [!DNL Adobe Sign] utilizada para configurar AEM Cloud Services.
 
-   * **[!UICONTROL Método de autenticación del firmante]:** Especifique el método para autenticar a un usuario antes de abrir un formulario para su firma. Puede elegir entre teléfono, base de conocimiento y autenticación social basada en identidad.
+   * **[!UICONTROL Método de autenticación del firmante]:** Especifique el método para autenticar a un usuario antes de abrir un formulario para su firma. Puede elegir entre teléfono, base de conocimiento y autenticación social basada en identidad. Para Adobe Acrobat Sign Solutions para Administración Pública, solo están disponibles las opciones de autenticación por teléfono y basada en conocimientos.
+
    >[!NOTE]
    >
    >    * De forma predeterminada, la autenticación basada en la identidad social proporciona una opción para autenticarse con Facebook, Google y LinkedIn. Puede ponerse en contacto con la ayuda técnica de [!DNL Adobe Sign] para habilitar otros proveedores de autenticación social.
-
+   >
+   >
 
    * Campos de **[!DNL Adobe Sign]para rellenar o firmar:** seleccione campos de [!DNL Adobe Sign] para el firmante. Un formulario adaptable puede tener varios campos de [!DNL Adobe Sign]. Puede elegir habilitar campos específicos para un firmante. El campo muestra todos los bloques del bloque [!DNL Adobe Sign] disponibles. Al seleccionar un bloque, se seleccionan todos los campos del bloque. Puede utilizar el icono X para anular la selección de un campo.
 
@@ -248,7 +251,8 @@ Después de [editar las propiedades del formulario adaptable para Adobe Sign](..
 
    Aplicar firmas digitales al formulario adaptable mediante:
 
-   * Firmas en la nube: firme con un [ID digital](https://helpx.adobe.com/es/sign/kb/digital-certificate-providers.html) alojado por un proveedor de servicios de confianza.
+   * Firmas en la nube: firme con un [ID digital](https://helpx.adobe.com/es/sign/kb/digital-certificate-providers.html) alojado por un proveedor de servicios de confianza. La opción Firma en la nube no está disponible para Adobe Acrobat Sign Solutions para Administración Pública.
+
    * Adobe Acrobat o Reader: descargue y abra el documento con Adobe Acrobat o Reader para firmarlo con una tarjeta inteligente, un token USB o un ID digital basado en archivos.
 
    Después de agregar el campo de firma de nube al formulario adaptable, realice los siguientes pasos para completar el proceso de configuración:
@@ -257,7 +261,6 @@ Después de [editar las propiedades del formulario adaptable para Adobe Sign](..
    * [Seleccionar Adobe Sign Cloud Service para un formulario adaptable](../../forms/using/working-with-adobe-sign.md#selectadobesigncloudserviceforanadaptiveform)
    * [Agregar firmantes de Adobe Sign a un formulario adaptable](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform)
    * [Seleccionar la acción de envío para un formulario adaptable](../../forms/using/working-with-adobe-sign.md#selectsubmitactionforanadaptiveform)
-
 
 ## Crear una experiencia de firma en formularios {#create-in-form-signing-experience}
 
@@ -305,7 +308,6 @@ Realice los siguientes pasos para configurar el componente Paso de firma:
    >* Los formularios adaptables que contienen el paso de firma no pueden tener botón de envío.
    >* El envío de los formularios adaptables que contienen el Paso de firma se administra mediante un servicio en segundo plano o el paso Resumen. Si hay un firmante configurado que también esté rellenando el formulario, la ventaja de administrar el envío del formulario adaptable mediante el paso Resumen es que evalúa inmediatamente que el firmante ha firmado el formulario e invoca la acción de envío. Un servicio en segundo plano tarda más en evaluar si todos los firmantes configurados han firmado el formulario y retrasa la presentación del formulario adaptable.
    >* Diseñe el formulario para que el usuario no pueda volver atrás desde un panel que contenga el paso de Firma o Resumen.
-
 
 
 ### Configurar la página de agradecimiento o el componente de paso de resumen {#configure-the-thank-you-page-or-summary-step-component}
