@@ -11,7 +11,7 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 4e6521f0d40fc10e016bf197d5b31033192e3214
+source-git-commit: 031c683029c61f8f49c07d276c27e05b3fcfd5fc
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 67%
@@ -40,9 +40,9 @@ Los usuarios de AEM Forms pueden utilizar el servicio reCAPTCHA de Google para i
 
 ### Configuración de reCAPTCHA Enterprise  {#steps-to-implement-reCAPTCHA-enterprise-in-forms}
 
-1. Crear un [proyecto reCAPTCHA Enterprise](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) habilitado con [API de reCAPTCHA Enterprise](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-reCAPTCHA-enterprise-api).
+1. Crear un [proyecto reCAPTCHA Enterprise](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) habilitado con [API de reCAPTCHA Enterprise](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api).
 1. [Obtener](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) el ID del proyecto.
-1. Crear un [Clave de API](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) y una [clave del sitio para sitios web](https://cloud.google.com/reCAPTCHA-enterprise/docs/create-key#create-key).
+1. Crear un [Clave de API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) y una [clave del sitio para sitios web](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. Crear un contenedor de configuración para los servicios en la nube.
 
    1. Vaya a **[!UICONTROL Herramientas > General > Explorador de configuración]**. Consulte la documentación del [Explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
@@ -60,7 +60,7 @@ Los usuarios de AEM Forms pueden utilizar el servicio reCAPTCHA de Google para i
    1. Pulse **[!UICONTROL reCAPTCHA]**. Se abre la página de configuración. Seleccione el contenedor de configuración creado en el paso anterior y pulse **[!UICONTROL Crear]**.
    1. Seleccione la versión como reCAPTCHA Enterprise y especifique el nombre, el ID de proyecto, la clave del sitio y la clave de API (obtenida en los pasos 2 y 3) para el servicio reCAPTCHA Enterprise.
    1. Seleccione el tipo de clave, el tipo de clave debe ser el mismo que la clave del sitio configurada en el proyecto de Google Cloud, por ejemplo, **Clave de sitio de casilla** o **Clave de sitio basada en puntuación**.
-   1. Especifique una puntuación de umbral en el rango de 0 a 1 ([Haga clic para obtener más información sobre la puntuación](https://cloud.google.com/reCAPTCHA-enterprise/docs/interpret-assessment#interpret_scores)). Las puntuaciones buenas o iguales a las puntuaciones de umbral identifican la interacción humana; de lo contrario, se considera interacción de bots.
+   1. Especifique una puntuación de umbral en el rango de 0 a 1 ([Haga clic para obtener más información sobre la puntuación](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Las puntuaciones buenas o iguales a las puntuaciones de umbral identifican la interacción humana; de lo contrario, se considera interacción de bots.
 
       > Nota:
       >
@@ -77,7 +77,7 @@ Una vez habilitado el servicio reCAPTCHA Enterprise, estará disponible para su 
 
 ## Configuración de Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
-1. Obtener el [par de claves de la API reCAPTCHA](https://www.google.com/reCAPTCHA/admin) de Google. Incluye un **clave del sitio** y una **clave secreta**.
+1. Obtener el [par de claves de la API reCAPTCHA](https://www.google.com/recaptcha/admin) de Google. Incluye un **clave del sitio** y una **clave secreta**.
 1. Crear un contenedor de configuración para los servicios en la nube.
    1. Vaya a **[!UICONTROL Herramientas > General > Explorador de configuración]**. Consulte la documentación del [Explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
    1. Haga lo siguiente para habilitar la carpeta global para configuraciones de nube u omita este paso para crear y configurar otra carpeta para configuraciones de servicios en la nube.
