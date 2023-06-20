@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Se debe realizar cierto grado de pruebas automatizadas para cubrir la variedad d
 
 ## Pruebas manuales {#manual-testing}
 
-Además de las pruebas automatizadas, la aplicación debe pasar por un ciclo de pruebas manuales. Los clientes que ejecuten la aplicación en un dispositivo real no se pueden duplicar mediante una secuencia de comandos. Aquí también tiene muchas opciones. Puede utilizar una plataforma, como HockeyApp, para definir quién tiene acceso y recopilar comentarios. O bien, puede subcontratar todo el proceso a un servicio como UTest, ElusiveStars o Testin. Si tiene un grupo de probadores internos, pero le falta variación de dispositivos, hay servicios en la nube donde puede realizar pruebas manuales en su grupo de dispositivos. Uno de estos servicios que proporciona esto es SauceLabs. También puede crear aplicaciones de forma remota en PhoneGap Enterprise e instalarlas en dispositivos locales como nivel de aceptación, prueba o degradación. Consulte la [PhoneGap](https://phonegap.com/) para conocer las últimas funciones y documentación. Sea cual sea el enfoque, las pruebas manuales deberían ser;
+Además de las pruebas automatizadas, la aplicación debe pasar por un ciclo de pruebas manuales. Los clientes que ejecuten la aplicación en un dispositivo real no se pueden duplicar mediante una secuencia de comandos. Aquí también tiene muchas opciones. Puede utilizar una plataforma, como HockeyApp, para definir quién tiene acceso y recopilar comentarios. O bien, puede subcontratar todo el proceso a un servicio como UTest, ElusiveStars o Testin. Si tiene un grupo de probadores internos, pero le falta variación de dispositivos, hay servicios en la nube donde puede realizar pruebas manuales en su grupo de dispositivos. Uno de estos servicios que proporciona esto es SauceLabs. También puede crear aplicaciones de forma remota en PhoneGap Enterprise e instalarlas en dispositivos locales como nivel de aceptación, prueba o degradación. Consulte PhoneGap (`https://phonegap.com/`) sitio web para sus últimas funciones y documentación. Sea cual sea el enfoque, las pruebas manuales deberían ser;
 
 * alcanzó un gran objetivo de probadores,
 * realizar pruebas con un gran grupo de dispositivos (idealmente, dispositivos reales, pero simuladores/emuladores si no hay dispositivos reales disponibles),

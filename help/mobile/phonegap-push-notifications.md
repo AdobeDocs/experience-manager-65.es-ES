@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '3293'
+source-wordcount: '3280'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,6 @@ Siga estos pasos para configurar Amazon SNS para notificaciones push:
    1. Haga clic en la pestaña Credenciales de seguridad.
    1. Desde aquí puede ver sus claves y crear nuevas claves. Guarde las claves para usarlas más adelante.
 
-
 1. **Crear un tema**
 
    1. Clic **Crear tema** y elija un nombre de tema. Registre todos los campos, como ARN del tema, Propietario del tema, Región y Nombre para mostrar.
@@ -150,8 +149,8 @@ Siga estos pasos para configurar Amazon SNS para notificaciones push:
 
       1. Para APNS, se debe introducir un archivo P12, una contraseña, un certificado y una clave privada. Estos deberían haberse obtenido en el paso *Uso del servicio de notificaciones push de Apple (APNS)* arriba.
       1. Para GCM, se debe introducir una clave de API. Esto se debería haber obtenido en el paso *Uso del servicio Google Cloud Messaging (GCM)* arriba.
-   1. Repita el paso anterior una vez para cada plataforma que vaya a admitir. Para poder insertar iOS y Android, se deben crear dos aplicaciones de plataforma.
 
+   1. Repita el paso anterior una vez para cada plataforma que vaya a admitir. Para poder insertar iOS y Android, se deben crear dos aplicaciones de plataforma.
 
 1. **Crear un grupo de identidad**
 
@@ -178,7 +177,6 @@ Siga estos pasos para configurar Amazon SNS para notificaciones push:
     </table>
 
    1. Haga clic en **Aplicar directiva**
-
 
 #### Uso del servicio de mensajería de Pushwoosh {#using-the-pushwoosh-messaging-service}
 
@@ -276,9 +274,9 @@ Existen dos maneras de crear e implementar la aplicación mediante PhoneGap.
 
 **Nota:** Para las pruebas de notificaciones push, los emuladores no serán suficientes porque las notificaciones push utilizan un protocolo distinto entre el proveedor push (Apple o Google) y el dispositivo. El hardware y los emuladores actuales de Mac/PC no son compatibles con esto.
 
-1. *PhoneGap Build* es un servicio ofrecido por PhoneGap que creará su aplicación en sus servidores y le permitirá descargarla directamente en su dispositivo. Consulte la [documentación del PhoneGap Build](https://build.phonegap.com/) para aprender a configurar y utilizar PhoneGap Build.
+1. *PhoneGap Build* es un servicio ofrecido por PhoneGap que creará su aplicación en sus servidores y le permitirá descargarla directamente en su dispositivo. Consulte la documentación del PhoneGap Build en `https://build.phonegap.com/` para aprender a configurar y utilizar PhoneGap Build.
 
-1. *Interfaz de línea de comandos de PhoneGap* (CLI) le permite utilizar un completo conjunto de comandos de PhoneGap en la línea de comandos para crear, depurar e implementar la aplicación. Consulte la [Documentación para desarrolladores de PhoneGap](https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface) para aprender a configurar y utilizar la CLI de PhoneGap.
+1. *Interfaz de línea de comandos de PhoneGap* (CLI) le permite utilizar un completo conjunto de comandos de PhoneGap en la línea de comandos para crear, depurar e implementar la aplicación. Consulte la documentación para desarrolladores de PhoneGap (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) para aprender a configurar y utilizar PhoneGap CLI.
 
 ### Paso 7: Envío de una notificación push {#step-send-a-push-notification}
 

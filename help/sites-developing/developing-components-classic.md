@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
 source-wordcount: '2392'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -85,23 +85,23 @@ AEM Existen tres métodos para acceder al contenido en el WCM de la:
 
 * Mediante el objeto de propiedades introducido en `global.jsp`:
 
-   El objeto properties es una instancia de ValueMap (consulte [API de Sling](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) y contiene todas las propiedades del recurso actual.
+  El objeto properties es una instancia de ValueMap (consulte [API de Sling](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) y contiene todas las propiedades del recurso actual.
 
-   Ejemplo: `String pageTitle = properties.get("jcr:title", "no title");` se utiliza en el script de procesamiento de un componente de página.
+  Ejemplo: `String pageTitle = properties.get("jcr:title", "no title");` se utiliza en el script de procesamiento de un componente de página.
 
-   Ejemplo: `String paragraphTitle = properties.get("jcr:title", "no title");` se utiliza en el script de procesamiento de un componente de párrafo estándar.
+  Ejemplo: `String paragraphTitle = properties.get("jcr:title", "no title");` se utiliza en el script de procesamiento de un componente de párrafo estándar.
 
 * Mediante el `currentPage` objeto introducido en `global.jsp`:
 
-   El `currentPage` es una instancia de una página (consulte [AEM API de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). La clase de página proporciona algunos métodos para tener acceso al contenido.
+  El `currentPage` es una instancia de una página (consulte [AEM API de](https://helpx.adobe.com/es/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)). La clase de página proporciona algunos métodos para tener acceso al contenido.
 
-   Ejemplo: `String pageTitle = currentPage.getTitle();`
+  Ejemplo: `String pageTitle = currentPage.getTitle();`
 
 * Mediante `currentNode` objeto introducido en `global.jsp`:
 
-   El `currentNode` es una instancia de un nodo (consulte [API JCR](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). Se puede acceder a las propiedades de un nodo a través de `getProperty()` método.
+  El `currentNode` es una instancia de un nodo (consulte [API JCR](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). Se puede acceder a las propiedades de un nodo a través de `getProperty()` método.
 
-   Ejemplo: `String pageTitle = currentNode.getProperty("jcr:title");`
+  Ejemplo: `String pageTitle = currentNode.getProperty("jcr:title");`
 
 ## Bibliotecas de etiquetas JSP {#jsp-tag-libraries}
 
@@ -167,6 +167,7 @@ AEM AEM Para desarrollar nuevos componentes para la creación de informes basado
 
       * `cq:dialog` - cuadro de diálogo para la IU táctil
       * `dialog` - Cuadro de diálogo para la IU clásica
+
    * se reemplazará el `.jsp` archivo (asígnele el nombre después del nuevo componente)
    * o reprocesamiento completo de todo el componente si lo desea
 
@@ -178,7 +179,6 @@ AEM AEM Para desarrollar nuevos componentes para la creación de informes basado
    >
    >* Usuarios de IU táctil [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) componentes
    >* La IU clásica utiliza [Widgets de ExtJS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
-
 
    >[!NOTE]
    >
@@ -215,9 +215,9 @@ Una vez desarrollado el componente, se añade al sistema de párrafos, que permi
 
    * adición `?wcmmode=design` al final de la dirección URL y volviendo a acceder a, por ejemplo:
 
-      `<contextPath>/ Test.html?wcmmode=design`
+     `<contextPath>/ Test.html?wcmmode=design`
 
-   * haciendo clic en Diseño en barra de tareas
+   * haciendo clic en Diseño en Sidekick
 
    Ahora se encuentra en modo de diseño y puede editar el sistema de párrafos.
 
@@ -275,16 +275,17 @@ Para crear el nuevo componente, se utiliza el componente textimage estándar com
    >* IU táctil: `textimage/cq:dialog`
    >* IU clásica: `textimage/dialog`
 
-
 1. Edite los metadatos del componente:
 
    * Nombre del componente
 
       * Establecer `jcr:description` hasta `Text Image Component (Extended)`
       * Establecer `jcr:title` hasta `Text Image (Extended)`
+
    * Grupo, donde el componente aparece en la barra de tareas (dejar tal cual)
 
       * Salir `componentGroup` establezca en `General`
+
    * Componente principal para el nuevo componente (el componente estándar textimage)
 
       * Establecer `sling:resourceSuperType` hasta `foundation/components/textimage`
@@ -308,6 +309,7 @@ Para crear el nuevo componente, se utiliza el componente textimage estándar com
       * Cambie xtype a cqinclude (para heredar del componente estándar).
       * Añadir una propiedad de ruta con valores `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json`y `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, respectivamente.
       * Elimine todas las demás propiedades o subnodos.
+
    * Para la pestaña 3:
 
       * Deje las propiedades y los subnodos sin cambios
@@ -318,9 +320,11 @@ Para crear el nuevo componente, se utiliza el componente textimage estándar com
          * `xtype`: `selection`
          * `fieldLabel`: `Image Position`
          * `type`: `select`
+
       * Añadir subnodo `position/options` de tipo `cq:WidgetCollection` para representar las dos opciones de colocación de la imagen y, debajo de ella, crear dos nodos, o1 y o2 de tipo `nt:unstructured`.
       * Para el nodo `position/options/o1` establezca las propiedades: `text` hasta `Left` y `value` hasta `left.`
       * Para el nodo `position/options/o2` establezca las propiedades: `text` hasta `Right` y `value` hasta `right`.
+
    * Eliminar ficha4.
 
    La posición de la imagen se mantiene en el contenido como `imagePosition`propiedad del nodo que representa `textimage` párrafo. Después de estos pasos, el cuadro de diálogo del componente tiene este aspecto:

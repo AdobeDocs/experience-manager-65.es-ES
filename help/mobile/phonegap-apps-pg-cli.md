@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '656'
 ht-degree: 1%
 
 ---
@@ -27,17 +27,17 @@ Para ejecutar los siguientes ejemplos, necesita un sistema que ejecute OS X (Mac
 
 ## Bootstrap de su entorno de desarrollo {#bootstrap-your-development-environment}
 
-[Configuración de la CLI de PhoneGap](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
+Configuración de la CLI de PhoneGap (`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface`)
 
 Para iOS: Para desarrollar para iPhones y iPads, necesita el IDE Xcode de Apple.
 
 * Descárguelo de forma gratuita [aquí](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
-* [Guía de la plataforma PhoneGap iOS](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
+* Guía de la plataforma de PhoneGap iOS (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
 Para Android™: Para desarrollar para iPhones y iPads, necesita el Android™ Studio IDE de Google.
 
 * Descárguelo de forma gratuita [aquí](https://developer.android.com/studio).
-* [Guía de plataforma de PhoneGap Android™](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+* Guía de la plataforma PhoneGap Android™ (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
 ## Descargar el origen {#download-the-source}
 
@@ -67,7 +67,7 @@ La CLI de PhoneGap puede crear un proyecto de plataforma, compilar el origen e i
 
 >[!NOTE]
 >
->Puede realizar todos estos pasos por separado; consulte [Documentos CLI de PhoneGap](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
+>Puede realizar todos estos pasos por separado, consulte los documentos de CLI de PhoneGap (`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`).
 
 1. Asegúrese de que ha instalado la CLI de PhoneGap; consulte lo anterior.
 1. En una ventana de consola (o terminal), vaya al directorio raíz del origen extraído.

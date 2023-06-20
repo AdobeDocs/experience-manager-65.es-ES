@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c614a7ff-0d13-4407-bda0-c0a402a13dcd
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Si el código del lado del cliente está perfectamente acoplado a un componente 
 
 ## Configuración de PhoneGap {#phonegap-configuration}
 
-Cada aplicación de AEM Mobile contiene un directorio que aloja los archivos de configuración utilizados por PhoneGap [interfaz de línea de comandos](https://github.com/phonegap/phonegap-cli) y [PhoneGap Build](https://build.phonegap.com/) para convertir el contenido web en una aplicación ejecutable. En el ejemplo de Geometrixx, por ejemplo, este directorio (/content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-content) se encuentra como parte del shell; una decisión de diseño hecha debido al hecho de que solo contiene contenido que no se puede actualizar por el aire, como complementos que tratan con las API de dispositivos y la configuración de la propia aplicación.
+Cada aplicación de AEM Mobile contiene un directorio que aloja los archivos de configuración utilizados por PhoneGap [interfaz de línea de comandos](https://github.com/phonegap/phonegap-cli) y PhoneGap Build en `https://build.phonegap.com/` para convertir el contenido web en una aplicación ejecutable. En el ejemplo de Geometrixx, por ejemplo, este directorio (/content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-content) se encuentra como parte del shell; una decisión de diseño hecha debido al hecho de que solo contiene contenido que no se puede actualizar por el aire, como complementos que tratan con las API de dispositivos y la configuración de la propia aplicación.
 
 En este directorio también encontrará una serie de [Ganchos Cordova](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide) que se puede utilizar para instalar complementos, colocar archivos de recursos en sus ubicaciones específicas de la plataforma y otras acciones que deben ejecutarse como parte de la compilación. Nota: como alternativa a descargar cada complemento como parte de la compilación, puede seguir el patrón de la aplicación Fregadero de cocina y [incluir código fuente del complemento](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins) con el resto del proyecto de la aplicación.
 
