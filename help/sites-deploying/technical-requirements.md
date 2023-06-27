@@ -3,9 +3,9 @@ title: Requisitos técnicos
 description: Una lista de las plataformas de cliente y servidor compatibles con Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: fe9c77644daf3669df8cca18e65fb0f6918f853b
+source-git-commit: 3b08d5001e7d3c683caa021ecf051f44762bb9ac
 workflow-type: tm+mt
-source-wordcount: '3513'
+source-wordcount: '3526'
 ht-degree: 18%
 
 ---
@@ -39,7 +39,6 @@ Requisitos mínimos para ejecutar Adobe Experience Manager:
 >* Los casos de uso de recursos digitales necesitan más memoria base. Consulte [Implementación y mantenimiento](/help/sites-deploying/deploy.md#default-local-install) para obtener más información.
 >* [Paquete de complemento de AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) requiere 15 GB de espacio temporal.
 >
-
 
 Para obtener más información, consulte la [Directrices de tamaño de hardware](/help/managing/hardware-sizing-guidelines.md).
 
@@ -95,8 +94,8 @@ Adobe Experience Manager funciona con las siguientes versiones de las máquinas 
 | Oracle Java™ SE 8 JDK de 64 bits | A: Compatible `[1]` | [Descargar](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | VM IBM® J9: versión 2.9, JRE 1.8.0 | A: Compatible `[2]` |
 | VM IBM® J9: versión 2.8, JRE 1.8.0 | A: Compatible `[2]` |
-| Azul Zulu OpenJDK 11 de 64 bits | A: Compatible `[3]` |  |
-| Azul Zulu OpenJDK 8 - 64 bits | A: Compatible `[3]` |  |
+| Azul Zulu OpenJDK 11 de 64 bits | A: Compatible `[3]` | |
+| Azul Zulu OpenJDK 8 - 64 bits | A: Compatible `[3]` | |
 
 1. Oracle se ha trasladado a un modelo de &quot;Soporte a largo plazo&quot; (LTS) para productos de Oracle Java™ SE. Java™ 9, Java™ 10 y Java™ 12 son versiones no LTS por Oracle (consulte [Oracle Java™ SE: hoja de ruta](https://www.oracle.com/technetwork/java/eol-135779.html)). AEM Para implementar en entornos de producción, Adobe solo es compatible con las versiones LTS de Java™. El soporte y la distribución del Oracle Java™ SE JDK, incluidas todas las actualizaciones de mantenimiento de las versiones de LTS más allá del final de las actualizaciones públicas, es compatible con el Adobe AEM directamente para todos los clientes de que utilizan la tecnología de Oracle Java™ SE. Consulte la [Directiva de soporte de Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Importante: Oracle Java™ 11 es compatible hasta septiembre de 2026 como mínimo. Se está preparando la compatibilidad con Oracle Java™ 17.**
@@ -135,19 +134,29 @@ Existen varias opciones para implementar el repositorio de Adobe Experience Mana
 1. Compatible con los clientes de actualización de AEM Forms. No compatible con nuevas instalaciones.
 
 >[!NOTE]
+>
 Consulte [Implementación de comunidades](/help/communities/deploy-communities.md) para obtener más información sobre la capacidad AEM Communities.
 
 >[!NOTE]
+>
 MongoDB es software de terceros y no está incluido en el paquete de licencias de AEM. Para obtener más información, consulte la [Directiva de licencias de MongoDB](https://www.mongodb.com/community/licensing) página.
+>
 AEM Para sacar el máximo partido a su implementación con MongoDB, Adobe recomienda licenciar la versión de MongoDB Enterprise para beneficiarse del soporte profesional. Consulte [Implementaciones recomendadas](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) para obtener más información.
+>
 La licencia incluye un conjunto de réplicas estándar, que está compuesto por una instancia principal y dos secundarias que se pueden utilizar para las implementaciones de autor o publicación.
+>
 Si desea ejecutar tanto la creación como la publicación en MongoDB, se deben adquirir dos licencias independientes.
+>
 El Servicio de atención al cliente de Adobe AEM ayuda a calificar los problemas relacionados con el uso de MongoDB con el servicio de atención al cliente de.
+>
 Para obtener más información, consulte la [Página MongoDB para Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
 >[!NOTE]
+>
 AEM Las bases de datos relacionales compatibles que se enumeran más arriba son software de terceros y no se incluyen en el paquete de licencias de la.
+>
 AEM Para ejecutar la versión 6.5 con una base de datos relacional compatible, se requiere un contrato de soporte independiente con un proveedor de la base de datos. El Servicio de atención al cliente de Adobe AEM ayuda a calificar los problemas relacionados con el uso de bases de datos relacionales con 6.5.
+>
 **AEM Actualmente, la mayoría de las bases de datos relacionales son compatibles con el nivel R de la versión 6.5, que viene con criterios de compatibilidad y un programa de asistencia, tal como se indica en la descripción del nivel R anterior.**
 
 ### Motores servlet/servidores de aplicaciones {#servlet-engines-application-servers}
@@ -192,11 +201,14 @@ Adobe Experience Manager funciona con las siguientes plataformas de servidor par
 1. AEM Forms es compatible con Microsoft® Window Server sin las restricciones R de nivel de soporte.
 
 >[!NOTE]
+>
 Si va a instalar AEM Forms 6.5, asegúrese de que ha instalado el siguiente Microsoft® Visual C++ de 32 bits redistribuible.
+>
 * Microsoft® Visual C++ 2008 redistribuible
 * Microsoft® Visual C++ 2010 redistribuible
 * Microsoft® Visual C++ 2012 redistribuible
-* Microsoft® Visual C++ 2013 redistribuible (a partir de 6.5)
+* Microsoft® Visual C++ 2013 redistribuible
+* Microsoft® Visual C++ 2019 (VC14.28 o bueno) redistribuible
 
 
 
@@ -240,7 +252,9 @@ La interfaz de usuario de Adobe Experience Manager funciona con las siguientes p
 AEM La interfaz de usuario de la aplicación está optimizada para pantallas más grandes (normalmente portátiles y equipos de escritorio) y para el formato de tableta (como Apple iPad o Microsoft® Surface). El factor de forma del teléfono no es compatible.
 
 >[!NOTE]
+>
 **Compatibilidad con exploradores con ciclos de lanzamiento rápidos:**
+>
 Las versiones de Mozilla Firefox, Google Chrome y Microsoft® Edge se actualizan cada pocos meses. El Adobe de se compromete a proporcionar actualizaciones para Adobe Experience Manager a fin de mantener el nivel de compatibilidad que se indica a continuación con las próximas versiones de estos exploradores.
 
 <table>
@@ -344,7 +358,9 @@ AEM Dynamic Media está desactivado de forma predeterminada. Consulte aquí para
 Con Dynamic Media habilitado, se aplican los siguientes requisitos técnicos adicionales.
 
 >[!NOTE]
+>
 Estos requisitos del sistema **solamente** se aplican si utiliza Dynamic Media (modo híbrido); Dynamic Media (modo híbrido) tiene un servidor de imágenes integrado que solo está certificado en determinados sistemas operativos.
+>
 Para los clientes de Dynamic Media que ejecutan el modo Dynamic Media - Scene7 (es decir, **dynamicmedia_scene7** AEM modo de ejecución), no hay requisitos de sistema adicionales; solo se aplican los mismos requisitos de sistema que los de los demás sistemas de los sistemas de la aplicación de los sistemas de los sistemas de la aplicación de los sistemas de los sistemas de la red. Dynamic Media: La arquitectura de modo Scene7 AEM utiliza el servicio de imágenes basado en la nube y no el servicio incrustado en la.
 
 #### Hardware {#hardware}
@@ -364,19 +380,27 @@ Si utiliza Dynamic Media en Linux®, se deben cumplir los siguientes requisitos 
 * SELinux desactivado (Consulte la nota que sigue)
 
 >[!NOTE]
+>
 Si la configuración regional está establecida de tal manera que LC_CTYPE no es igual a `en_US.UTF-8`, evita que Dynamic Media funcione. Para ver su valor, escriba &quot;locale&quot; en el símbolo del sistema. AEM Si no se configura correctamente, establezca la variable de entorno LC_CTYPE en la cadena vacía escribiendo &quot;export LC_CTYPE=&quot; antes de ejecutar el proceso de ejecución de la.
 
 >[!NOTE]
+>
 **Desactivación de SELinux:** El servicio de imágenes no funciona con SELinux activado. Esta opción está habilitada de forma predeterminada. Para solucionar este problema, edite el **/etc/selinux/config** y cambie el valor de SELinux de:
+>
 `SELINUX=enforcing` **hasta** `SELINUX=disabled`
 
 >[!NOTE]
+>
 **Arquitectura NUMA:** Los sistemas con procesadores con AMD64 e Intel® EM64T suelen configurarse como plataformas de arquitectura de memoria no uniforme (NUMA). Es decir, el núcleo construye varios nodos de memoria durante el arranque en lugar de construir un solo nodo de memoria.
+>
 La construcción de varios nodos puede causar agotamiento de la memoria en uno o más de los nodos antes de que otros nodos se agoten. Cuando se agota la memoria, el núcleo puede decidir matar procesos (por ejemplo, el servidor de imágenes o el servidor de plataforma) aunque haya memoria disponible.
+>
 Por lo tanto, Adobe recomienda que, si está ejecutando un sistema de este tipo, desactive NUMA usando **numa=off** opción de arranque para evitar que el núcleo destruya estos procesos.
 
 >[!NOTE]
+>
 **El nombre de host del servidor debe resolver:** Asegúrese de que el nombre de host del servidor se pueda resolver en una dirección IP. Si no es posible, agregue el nombre de host completo y la dirección IP a **/etc/hosts**:
+>
 `<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
@@ -403,7 +427,7 @@ Para Windows x86:
 * 10.9.x y posterior
 * Solo se admite con fines de prueba y demostración
 
-### Requisitos del AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
+### Requisitos para el AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
 ### Soporte de software para el generador de PDF {#software-support-for-pdf-generator}
 
@@ -461,20 +485,22 @@ Para Windows x86:
 </table>
 
 >[!NOTE]
+>
 El generador de PDF solo admite versiones en alemán, francés, inglés y japonés de los sistemas operativos y aplicaciones compatibles.
+>
 Además,
+>
 * El generador de PDF requiere una versión de 32 bits de [Acrobat 2020 Classic track versión 20.004.30006](https://helpx.adobe.com/es/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versión 17.011.30078 para realizar la conversión.
 * Las conversiones del generador de PDF para OpenOffice solo son compatibles con Windows y Linux®.
-* PDF Generator solo admite la versión comercial de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión en el sistema operativo Windows.
-* PDF Generator es compatible con las versiones de 32 y 64 bits del sistema operativo OpenOffice en Linux®.
-* PDF Generator no es compatible con Microsoft® Office 365.
+* PDF Generator sólo admite la versión comercial de 32 bits de Microsoft® Office Professional Plus y otro software necesario para la conversión en el sistema operativo Windows.
+* PDF Generator admite las versiones de 32 y 64 bits del sistema operativo OpenOffice en Linux®.
+* PDF Generator no admite Microsoft® Office 365.
 * Las características de PDF, Optimizar PDF y Exportar PDF de OCR solo son compatibles con Windows.
-* Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad Generador de PDF. Mediante programación, acceda a la versión agrupada solo con AEM Forms, durante el período de licencia de AEM Forms, para utilizarlo con el Generador de PDF de AEM Forms. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([On-Premise](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html))
-* El servicio PDF Generator no es compatible con Microsoft® Windows 10.
+* Una versión de Acrobat se incluye con AEM Forms para habilitar la funcionalidad Generador de PDF. Mediante programación, acceda a la versión agrupada solo con AEM Forms, durante el periodo de validez de la licencia de AEM Forms, para utilizarlo con AEM Forms PDF Generator. Para obtener más información, consulte la descripción del producto de AEM Forms según la implementación ([On-Premise](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/es/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+* El servicio de PDF Generator no es compatible con Microsoft® Windows 10.
 * PDF Generator no convierte los archivos mediante Microsoft® Visio 2019. Puede seguir utilizando Microsoft® Visio 2016 para convertir `.VSD` y `.VSDX` archivos.
-* PDF Generator no convierte los archivos mediante Microsoft® Project 2019. Puede seguir utilizando Microsoft® Project 2016 para convertir `.VSD` y `.VSDX` archivos.
+* El PDF Generator no puede convertir archivos mediante Microsoft® Project 2019. Puede seguir utilizando Microsoft® Project 2016 para convertir `.VSD` y `.VSDX` archivos.
 >
-
 
 ### Requisitos de AEM Forms Designer {#requirements-for-aem-forms-designer}
 
@@ -486,8 +512,9 @@ Además,
 * 2,35 GB de espacio disponible en disco duro;
 * 1024 X 768 píxeles de resolución de monitor o superior;
 * Aceleración de hardware de vídeo (opcional);
-* Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC;
-* Privilegios administrativos para instalar Designer.
+* Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
+* Privilegios administrativos para instalar Designer
+* Tiempo de ejecución de 32 bits de Microsoft Visual C++ 2019 (VC 14.28 o bueno)
 
 ### Requisitos para la reescritura de metadatos de AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
