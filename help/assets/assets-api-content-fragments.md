@@ -2,9 +2,10 @@
 title: Compatibilidad con fragmentos de contenido de Adobe Experience Manager en la API HTTP de Assets
 description: AEM Obtenga información acerca de la compatibilidad con fragmentos de contenido en la API HTTP de Assets, una parte importante de la función de envío sin encabezado de la aplicación de la interfaz de usuario de.
 feature: Content Fragments,Assets HTTP API
+role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 48131c5accfe73b83197bd581ed5a22bc4890a56
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 24%
@@ -76,7 +77,6 @@ Por ejemplo, para acceder a `/content/dam/wknd/en/adventures/cycling-tuscany`, s
 >
 >* `/api/assets` **no** necesita el uso del selector `.model`.
 >* `/content/path/to/page` **sí** necesita el uso del selector `.model`.
-
 
 El método HTTP determina la operación que se va a ejecutar:
 
@@ -155,7 +155,6 @@ AEM Si la API de REST de Assets se utiliza en un entorno sin requisitos de auten
 >* [Explicación de CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
 >* [Vídeo: Desarrollo para CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
-
 
 En entornos con requisitos de autenticación específicos, se recomienda OAuth.
 
@@ -331,56 +330,59 @@ Los siguientes códigos de estado se pueden ver en las circunstancias relevantes
 
 * **500** (Error interno del servidor)
 
-   >[!NOTE]
-   >
-   >Se devuelve este error:
-   >
-   >* cuando se ha producido un error que no se puede identificar con un código específico
-   >* cuando la carga útil proporcionada no era válida
+  >[!NOTE]
+  >
+  >Se devuelve este error:
+  >
+  >* cuando se ha producido un error que no se puede identificar con un código específico
+  >* cuando la carga útil proporcionada no era válida
 
-
-   A continuación se enumeran los escenarios comunes en los que se devuelve este estado de error, junto con el mensaje de error (monoespacio) generado:
+  A continuación se enumeran los escenarios comunes en los que se devuelve este estado de error, junto con el mensaje de error (monoespacio) generado:
 
    * La carpeta principal no existe (al crear un fragmento de contenido mediante `POST`)
    * No se ha proporcionado ningún modelo de fragmento de contenido (falta cq:model), no se puede leer (debido a una ruta no válida o a un problema de permisos) o no hay ningún modelo de fragmento válido:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
+
    * No se ha podido crear el fragmento de contenido (potencialmente un problema de permisos):
 
       * `Could not create content fragment`
+
    * No se han podido actualizar el título o la descripción:
 
       * `Could not set value on content fragment`
+
    * No se pudieron establecer los metadatos:
 
       * `Could not set metadata on content fragment`
+
    * El elemento de contenido no se ha podido encontrar o actualizar
 
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-   Los mensajes de error detallados suelen devolverse de la siguiente manera:
+  Los mensajes de error detallados suelen devolverse de la siguiente manera:
 
-   ```xml
-   {
-     "class": "core/response",
-     "properties": {
-       "path": "/api/assets/foo/bar/qux",
-       "location": "/api/assets/foo/bar/qux.json",
-       "parentLocation": "/api/assets/foo/bar.json",
-       "status.code": 500,
-       "status.message": "...{error message}.."
-     }
-   }
-   ```
+  ```xml
+  {
+    "class": "core/response",
+    "properties": {
+      "path": "/api/assets/foo/bar/qux",
+      "location": "/api/assets/foo/bar/qux.json",
+      "parentLocation": "/api/assets/foo/bar.json",
+      "status.code": 500,
+      "status.message": "...{error message}.."
+    }
+  }
+  ```
 
 ## Referencia de la API {#api-reference}
 
 Consulte aquí las referencias detalladas de la API:
 
 * [API de Adobe Experience Manager Assets: fragmentos de contenido](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
-* [API HTTP de Recursos](/help/assets/mac-api-assets.md)
+* [API HTTP de recursos](/help/assets/mac-api-assets.md)
 
    * [Funciones disponibles](/help/assets/mac-api-assets.md#assets)
 
