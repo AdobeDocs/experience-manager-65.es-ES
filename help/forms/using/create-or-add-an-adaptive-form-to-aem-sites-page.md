@@ -2,15 +2,20 @@
 title: Crear o agregar un formulario adaptable a la página de AEM Sites
 description: Descubra cómo crear o agregar fácilmente un formulario adaptable a su página de AEM Sites. Conozca las técnicas paso a paso y las prácticas recomendadas para integrar formularios dinámicos y personalizables en su sitio web, optimizando las experiencias digitales para lograr el máximo impacto.
 feature: Adaptive Forms
-source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
+exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
+source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
 workflow-type: tm+mt
-source-wordcount: '2862'
-ht-degree: 1%
+source-wordcount: '2883'
+ht-degree: 2%
 
 ---
 
-
 # Crear o agregar un formulario adaptable a la página de AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | Este artículo |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 
 Con AEM Forms, puede incorporar fácilmente formularios adaptables a sus páginas web. Esto permite a los visitantes rellenar y enviar formularios cómodamente sin salir de la página en la que se encuentran. Al hacerlo, pueden interactuar fácilmente con otros elementos del sitio web e interactuar activamente con el formulario.
 
@@ -246,7 +251,3 @@ Al enviar un formulario, puede redirigir al usuario a otra página web o a un me
    * Para configurar una URL de redireccionamiento, por ejemplo, en la opción Enviar, seleccione la opción Redirigir a URL y proporcione una dirección absoluta, una URL de redireccionamiento o una ruta relativa de una página de AEM Sites.
 
    * Para configurar un mensaje personalizado o de agradecimiento, por ejemplo, al enviar, seleccione la opción Mostrar mensaje y proporcione un mensaje en el cuadro Contenido del mensaje. Es un cuadro de texto enriquecido, puede utilizar la opción de pantalla completa para ver todos los elementos de texto enriquecido disponibles.
-
-
-
-

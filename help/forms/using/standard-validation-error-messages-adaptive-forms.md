@@ -10,14 +10,19 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 100%
+source-wordcount: '1131'
+ht-degree: 98%
 
 ---
 
 # Mensajes de error de validación estándar para formularios adaptables {#standard-validation-error-messages}
+
+| Versión | Vínculo del artículo |
+| -------- | ---------------------------- |
+| AEM 6.5 | Este artículo |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html) |
 
 Los formularios adaptables validan las entradas que se proporcionan en los campos en función de criterios de validación predefinidos. Los criterios de validación hacen referencia a los valores de entrada aceptables para los campos de un formulario adaptable. Puede definir los criterios de validación en función del origen de datos que utilice con el formulario adaptable. Por ejemplo, si utiliza los servicios web RESTful como fuente de datos, puede definir los criterios de validación en un archivo de definición Swagger.
 
