@@ -5,7 +5,7 @@ role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 39930967e2f423b7fbbc79bcb85f78d15809e97d
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 4%
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | Versión | Vínculo del artículo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
+| AEM as a Cloud Service | [Haga clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets-view/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | Este artículo |
 
 Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] instala el conector mejorado. Antes de realizar la instalación, revise la compatibilidad con la plataforma y otros [requisitos previos del conector](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
@@ -31,12 +31,11 @@ Un usuario con acceso de administrador en [!DNL Adobe Experience Manager] instal
 >
 >* Consulte [Examen de certificación de socio para el conector mejorado de Workfront para Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Para obtener más información sobre el examen, consulte [Guía del examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 Para instalar el conector, siga estos pasos:
 
 1. Descargue el conector desde [[!DNL Software Distribution] vincular](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 1. [Configuración del cortafuegos](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
-1. En el despachante, permita los encabezados HTTP llamados `authorization`, `username`, y `apikey`. Permitir `GET`, `POST`, y `PUT` solicitudes a `/bin/workfront-tools`.
+1. En Dispatcher, permita los encabezados HTTP llamados `authorization`, `username`, y `apikey`. Permitir `GET`, `POST`, y `PUT` solicitudes a `/bin/workfront-tools`.
 1. Asegúrese de que las siguientes rutas no existan en [!DNL Experience Manager] repositorio:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
