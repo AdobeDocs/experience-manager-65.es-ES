@@ -1,8 +1,6 @@
 ---
 title: Diseño interactivo para páginas web
-seo-title: Responsive design for web pages
-description: Con un diseño interactivo, las mismas páginas se pueden mostrar de forma eficaz en varios dispositivos y en varias orientaciones
-seo-description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations
+description: Con un diseño interactivo, las mismas páginas se pueden mostrar de forma eficaz en varios dispositivos y en varias orientaciones.
 uuid: 3d324557-e7ff-4c82-920f-9b5a906925e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '5336'
+source-wordcount: '5375'
 ht-degree: 0%
 
 ---
@@ -23,6 +21,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >El Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (como _Reaccionar_). [Más información](/help/sites-developing/spa-overview.md).
+>
 
 >[!NOTE]
 >
@@ -201,7 +200,7 @@ Por ejemplo, para crear un ` [sling:OsgiConfig](/help/sites-deploying/configurin
 * Carpeta principal: `/apps/application_name/config`
 * Nombre: `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
 
-   El - `*alias*` El sufijo es necesario porque el servicio MobileEmulatorProvider es un servicio de fábrica. Utilice cualquier alias que sea único para esta fábrica.
+  El - `*alias*` El sufijo es necesario porque el servicio MobileEmulatorProvider es un servicio de fábrica. Utilice cualquier alias que sea único para esta fábrica.
 
 * jcr:primaryType: `sling:OsgiConfig`
 
@@ -211,12 +210,12 @@ Agregue la siguiente propiedad de nodo:
 * Tipo: `String[]`
 * Valor: Las rutas a los componentes de página que procesan las páginas web. Por ejemplo, la aplicación geometrixx-media utiliza los siguientes valores:
 
-   ```
-   geometrixx-media/components/page
-    geometrixx-unlimited/components/pages/page
-    geometrixx-unlimited/components/pages/coverpage
-    geometrixx-unlimited/components/pages/issue
-   ```
+  ```
+  geometrixx-media/components/page
+   geometrixx-unlimited/components/pages/page
+   geometrixx-unlimited/components/pages/coverpage
+   geometrixx-unlimited/components/pages/issue
+  ```
 
 ### Especificar los grupos de dispositivos {#specifying-the-device-groups}
 
@@ -235,6 +234,7 @@ Utilice la consola Herramientas para lo siguiente [crear y editar grupos de disp
 >[!NOTE]
 >
 >Para los grupos de dispositivos que utiliza para el diseño interactivo, edite el grupo de dispositivos y, en la pestaña General, seleccione Deshabilitar emulador. Esta opción evita que aparezca el carrusel del emulador, lo que no es relevante para el diseño interactivo.
+>
 
 ## Uso de imágenes adaptables {#using-adaptive-images}
 
@@ -326,6 +326,7 @@ El siguiente HTML de ejemplo selecciona entre dos representaciones DAM de la mis
 >* Script que genera el HTML: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
 >
 >La sección siguiente proporciona detalles sobre este componente.
+>
 
 ### AEM Explicación de la renderización de imágenes en la {#understanding-image-rendering-in-aem}
 
@@ -366,6 +367,7 @@ El componente debe realizar las siguientes tareas:
 >[!NOTE]
 >
 >El cliente web utiliza las bibliotecas de JavaScript matchMedia y Picturefill (o bibliotecas similares) para evaluar los selectores de medios.
+>
 
 El servlet que procesa la solicitud de imagen debe realizar las siguientes tareas:
 
@@ -657,6 +659,7 @@ El `ImageReferenceModificationServlet` anula la clase `createLayer` e implementa
 
 >[!NOTE]
 >El [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) proporciona el método getFileReference.
+>
 
 ## Desarrollo de una cuadrícula fluida {#developing-a-fluid-grid}
 
@@ -698,6 +701,7 @@ Por ejemplo, la aplicación Geometrixx-media de ejemplo contiene el componente m
 >[!NOTE]
 >
 >Cuando un componente incluye varios `cq:include` elementos que hacen referencia al componente parsys, cada uno `path` el atributo debe tener un valor diferente.
+>
 
 #### Escala de la cuadrícula del componente Página {#scaling-the-page-component-grid}
 
@@ -862,13 +866,13 @@ Para cada rango de anchos de ventanilla móvil objetivo, utilice un ancho de pá
 
 Utilice cuadrículas para escalar bloques de contenido y adaptarse a diferentes tamaños de ventanilla. Los bloques de contenido abarcan un número específico de columnas. A medida que los anchos de columna aumentan o disminuyen para adaptarse a diferentes tamaños de ventanilla, los anchos de los bloques de contenido aumentan o disminuyen en consecuencia. La escala puede admitir ventanillas móviles grandes y medianas lo suficientemente anchas como para admitir la colocación simultánea de bloques de contenido.
 
-![](do-not-localize/chlimage_1-1a.png)
+![Imagen de dos cuadrículas, una de ellas con una escala menor que la otra.](do-not-localize/chlimage_1-1a.png)
 
 #### Reposición de contenido en la cuadrícula {#repositioning-content-in-the-grid}
 
 El tamaño de los bloques de contenido se puede restringir por una anchura mínima, más allá de la cual el escalado ya no es efectivo. Para las ventanillas móviles más pequeñas, la cuadrícula se puede utilizar para distribuir verticalmente bloques de contenido en lugar de horizontalmente.
 
-![](do-not-localize/chlimage_1-2a.png)
+![Imagen de dos cuadrículas, una de ellas colocada de forma más pequeña que la otra.](do-not-localize/chlimage_1-2a.png)
 
 ### Diseño de la cuadrícula {#designing-the-grid}
 
@@ -953,7 +957,7 @@ Utilizar el estilo flotante de `.row-fluid` para controlar si los bloques de con
 
 Añada el estilo a `.row-fluid` selector dentro de cada consulta de medios. Establezca el valor según el diseño de página que esté utilizando para esa consulta multimedia. Por ejemplo, el diagrama siguiente ilustra una fila que distribuye el contenido horizontalmente para las ventanillas anchas y verticalmente para las ventanillas estrechas.
 
-![](do-not-localize/chlimage_1-3a.png)
+![Dos imágenes de bloques de contenido en una fila, la segunda imagen muestra la fila reposicionada.](do-not-localize/chlimage_1-3a.png)
 
 El siguiente CSS podría implementar este comportamiento:
 

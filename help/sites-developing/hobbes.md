@@ -1,8 +1,6 @@
 ---
 title: Prueba de la IU
-seo-title: Testing Your UI
 description: AEM AEM proporciona un marco de trabajo para automatizar pruebas para la interfaz de usuario de la
-seo-description: AEM provides a framework for automating tests for your AEM UI
 uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '771'
 ht-degree: 2%
 
 ---
@@ -32,7 +30,7 @@ AEM El marco de trabajo de prueba utiliza Hobbes.js, una biblioteca de prueba es
 
 >[!NOTE]
 >
->Consulte Hobbes.js [documentación](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) para obtener información detallada sobre la API.
+>Consulte Hobbes.js [documentación](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) para obtener información detallada sobre la API.
 
 ## Estructura de las pruebas {#structure-of-tests}
 
@@ -53,7 +51,7 @@ Vaya a la consola Herramientas mediante **Navegación global -> Herramientas > O
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
-Al abrir la consola, los grupos de pruebas se muestran a la izquierda junto con una opción para ejecutarlos todos secuencialmente. El espacio a la derecha, que se muestra con un fondo a cuadros, es un marcador de posición para mostrar el contenido de la página mientras se ejecutan las pruebas.
+Al abrir la consola, los grupos de pruebas se muestran a la izquierda junto con una opción para ejecutarlos todos secuencialmente. El espacio a la derecha que se muestra con un fondo a cuadros es un marcador de posición para mostrar el contenido de la página mientras se ejecutan las pruebas.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -63,11 +61,11 @@ Los grupos de pruebas se pueden ejecutar individualmente. Al ejecutar un grupo d
 
 Un icono de marca de verificación indica que la prueba se ha superado:
 
-![](do-not-localize/chlimage_1-2.png)
+![Icono de verificación.](do-not-localize/chlimage_1-2.png)
 
 El icono &quot;X&quot; indica que la prueba ha fallado:
 
-![](do-not-localize/chlimage_1-3.png)
+![Icono de prueba con error indicado por una X dentro de un círculo.](do-not-localize/chlimage_1-3.png)
 
 Para ejecutar un grupo de pruebas:
 
@@ -75,9 +73,9 @@ Para ejecutar un grupo de pruebas:
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Toque o haga clic en **Ejecutar prueba** botón.
+1. Clic **Ejecutar prueba**.
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Imagen del botón Ejecutar pruebas, indicada por un puntero orientado a la derecha dentro de un círculo.](do-not-localize/chlimage_1-4.png)
 
 1. El marcador de posición se reemplaza por el contenido de la página mientras se ejecuta la prueba.
 
@@ -95,9 +93,9 @@ Los grupos de pruebas se ejecutan secuencialmente en el orden en que aparecen en
 
 1. En el panel Pruebas, toque o haga clic en el botón **Ejecutar todas las pruebas** o el botón **Ejecutar pruebas** botón situado debajo del título del grupo de pruebas que desea ejecutar.
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Imagen del botón Ejecutar todas las pruebas y del botón Ejecutar pruebas, indicados por un puntero orientado a la derecha dentro de un círculo.](do-not-localize/chlimage_1-5.png)
 
-1. Para ver los resultados de cada caso de prueba, toque o haga clic en el título del caso de prueba. Al tocar o hacer clic en el nombre de la prueba en la **Resultado** el panel muestra todos los detalles.
+1. Para ver los resultados de cada caso de prueba, haga clic en el título del caso de prueba. Al hacer clic en el nombre de la prueba en el **Resultado** el panel muestra todos los detalles.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -105,7 +103,7 @@ Los grupos de pruebas se ejecutan secuencialmente en el orden en que aparecen en
 
 El siguiente procedimiento le guía durante la creación y ejecución de un grupo de pruebas utilizando [Contenido de We.Retail](/help/sites-developing/we-retail.md), pero puede modificar fácilmente la prueba para que utilice una página web diferente.
 
-Para obtener información detallada sobre la creación de sus propios grupos de pruebas, consulte la [Documentación de la API Hobbes.js](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
+Para obtener información detallada sobre la creación de sus propios grupos de pruebas, consulte la [Documentación de la API Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
 
 1. Abra CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Haga clic con el botón derecho en `/etc/clientlibs` y haga clic en **Crear > Crear carpeta**. Tipo `myTests` para el nombre y haga clic en **OK**.
@@ -118,8 +116,8 @@ Para obtener información detallada sobre la creación de sus propios grupos de 
 
    | Nombre | Tipo | Valor  |
    |---|---|---|
-   | `categories` | Cadena[] | `granite.testing.hobbes.tests` |
-   | `dependencies` | Cadena[] | `granite.testing.hobbes.testrunner` |
+   | `categories` | String[] | `granite.testing.hobbes.tests` |
+   | `dependencies` | String[] | `granite.testing.hobbes.testrunner` |
 
    >[!NOTE]
    >

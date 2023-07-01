@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 14%
+source-wordcount: '1836'
+ht-degree: 13%
 
 ---
 
@@ -207,19 +207,19 @@ Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto pu
 
 Hay dos iconos en el borde inferior de la barra de tareas que son importantes para obtener una vista previa de las páginas:
 
-![](do-not-localize/chlimage_1-5.png)
+![Borde inferior de la barra de tareas con una fila horizontal de siete iconos. Dos de los iconos al principio de la fila, el icono de edición y el icono de modo de vista previa, se indican mediante un símbolo de lápiz y un símbolo de lupa, respectivamente.](do-not-localize/chlimage_1-5.png)
 
 * El icono de lápiz le muestra que está actualmente en modo de edición, donde puede agregar, modificar, mover o eliminar contenido.
 
-   ![](do-not-localize/chlimage_1-6.png)
+  ![Icono de edición indicado por un símbolo de lápiz.](do-not-localize/chlimage_1-6.png)
 
 * El icono de lupa le permite seleccionar el modo de vista previa en el que la página se muestra tal y como se verá en el entorno de publicación (a veces también es necesario actualizar la página):
 
-   ![](do-not-localize/chlimage_1-7.png)
+  ![Icono de modo de vista previa indicado por un símbolo de lupa.](do-not-localize/chlimage_1-7.png)
 
-   En el modo de vista previa, se reducirá la barra de tareas y haga clic en el icono de flecha abajo para volver al modo de edición:
+  En el modo de vista previa, se reducirá la barra de tareas y haga clic en el icono de flecha abajo para volver al modo de edición:
 
-   ![](do-not-localize/chlimage_1-8.png)
+  ![AEM Barra con el título y un icono de modo de edición a la derecha del título, que se indica con un símbolo de flecha hacia abajo.](do-not-localize/chlimage_1-8.png)
 
 ## Buscar y reemplazar {#find-replace}
 
@@ -286,7 +286,6 @@ El comportamiento de los comandos Deshacer y Rehacer es similar al de otros prog
 >* deshacer un máximo de 20 acciones de edición (configuración predeterminada).
 >* también utilice [Métodos abreviados del teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para deshacer y rehacer.
 >
-
 
 Puede utilizar las funciones Deshacer y Rehacer para los siguientes tipos de cambios de página:
 

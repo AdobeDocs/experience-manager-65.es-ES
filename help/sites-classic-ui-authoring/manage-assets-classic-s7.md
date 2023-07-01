@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '3511'
+source-wordcount: '3532'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,7 @@ Puede publicar recursos digitales en Dynamic Media Classic (Scene7) desde la con
 >[!NOTE]
 >
 >Experience Manager publica en Dynamic Media Classic (Scene7) de forma asíncrona. Después de seleccionar **[!UICONTROL Publish]** Sin embargo, su recurso puede tardar varios segundos en publicarse en Dynamic Media Classic (Scene7).
+>
 
 ### Publicación desde la consola Recursos {#publishing-from-the-assets-console}
 
@@ -56,7 +57,7 @@ Puede publicar en Dynamic Media Classic (Scene7) desde la consola Recursos si lo
 
 1. En la IU de Experience Manager Classic, seleccione **[!UICONTROL Recursos digitales]** para acceder al administrador de recursos digitales.
 
-1. Seleccione el recurso (o los recursos) o la carpeta en la carpeta de destino que desea publicar en Dynamic Media Classic (Scene7), haga clic con el botón derecho y seleccione **[!UICONTROL Publicación en Dynamic Media Classic (Scene7)]**. Como alternativa, puede seleccionar **[!UICONTROL Publicación en Dynamic Media Classic (Scene7)]** desde el **[!UICONTROL Herramientas]** menú.
+1. Seleccione el recurso (o los recursos) o la carpeta dentro de la carpeta de destino que desea publicar en Dynamic Media Classic (Scene7), haga clic con el botón derecho y seleccione **[!UICONTROL Publicación en Dynamic Media Classic (Scene7)]**. Como alternativa, puede seleccionar **[!UICONTROL Publicación en Dynamic Media Classic (Scene7)]** desde el **[!UICONTROL Herramientas]** menú.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -205,7 +206,7 @@ El componente Zoom HTML 5 muestra una imagen más grande al pulsar el botón +.
 
 El recurso tiene herramientas de zoom en la parte inferior. Seleccionar **[!UICONTROL +]** para ampliar. Seleccionar **[!UICONTROL -]** para reducir. Selección de la **[!UICONTROL x]** o la flecha para restablecer el zoom devuelve la imagen al tamaño original con el que se importó. Seleccione las flechas diagonales para que pueda hacerlo a pantalla completa. Seleccionar **[!UICONTROL Editar]** para poder configurar el componente. Con este componente, puede configurar lo siguiente [configuración común a todos los componentes de Dynamic Media Classic (Scene7)](#settings-common-to-all-scene-components).
 
-![](do-not-localize/chlimage_1-3.png)
+![Imagen de tulipanes dentro del componente Zoom HTML 5.](do-not-localize/chlimage_1-3.png)
 
 ### Flotante {#flyout}
 
@@ -223,7 +224,7 @@ En el componente flotante HTML 5, el recurso se muestra como una pantalla dividi
 
 El componente Imagen de Dynamic Media Classic (Scene7) permite añadir la funcionalidad de Dynamic Media Classic (Scene7) a las imágenes, como los modificadores de Dynamic Media Classic (Scene7), los ajustes preestablecidos de imagen o visualizador y la función de enfoque. El componente de imagen de Dynamic Media Classic (Scene7) es similar a otros componentes de imagen en Experience Manager con funcionalidad especial de Dynamic Media Classic (Scene7). En este ejemplo, la imagen tiene el modificador de URL Dynamic Media Classic (Scene7), `&op_invert=1` aplicado.
 
-![](do-not-localize/chlimage_1-4.png)
+![Imagen de una esfera dentro del componente de imagen de Dynamic Media Classic (Scene7)](do-not-localize/chlimage_1-4.png)
 
 **Título, texto alternativo** : en la pestaña Avanzado, agregue un título a la imagen y texto alternativo para los usuarios que tengan los gráficos desactivados.
 
@@ -312,7 +313,7 @@ Consulte [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-vide
 
 ### Limitaciones conocidas del componente de vídeo {#known-limitations-for-the-video-component}
 
-Adobe DAM y WCM muestra si se ha cargado un vídeo de origen principal. No muestran estos recursos proxy:
+DAM de Adobe y WCM muestran si se ha cargado un vídeo de origen principal. No muestran estos recursos proxy:
 
 * Representaciones codificadas en Dynamic Media Classic (Scene7)
 * Conjuntos de vídeos adaptables de Dynamic Media Classic (Scene7)
@@ -331,16 +332,15 @@ Si tiene varias configuraciones, Experience Manager muestra de forma predetermin
 >* Cuándo [La previsualización segura está activada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)Sin embargo, los recursos publicados y no publicados en Dynamic Media Classic (Scene7) no aparecen en el explorador de contenido de Dynamic Media Classic (Scene7).
 >* Si no ve **[!UICONTROL Dynamic Media Classic (Scene7)]** o el **[!UICONTROL S7]** como opción en el navegador de contenido, debe hacer lo siguiente [configuración de Dynamic Media Classic (Scene7) para que funcione con Experience Manager](/help/sites-administering/scene7.md).
 >* Para vídeo, el explorador de contenido de Dynamic Media Classic (Scene7) admite:
-   >   * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para una reproducción perfecta en varias pantallas
-   >   * Vídeo MP4 único
-   >   * Vídeo F4V único
-
+>   * Conjuntos de vídeos adaptables: contenedor de todas las representaciones de vídeo necesarias para una reproducción perfecta en varias pantallas
+>   * Vídeo MP4 único
+>   * Vídeo F4V único
 
 ### Examinar contenido {#browsing-content-in-the-classic-ui}
 
 Examine el contenido en Dynamic Media Classic (Scene7) seleccionando la variable **[!UICONTROL S7]** pestaña.
 
-Puede cambiar la configuración a la que accede seleccionando la configuración. Las carpetas cambian según la configuración que seleccione.
+Puede cambiar la configuración a la que accede seleccionando la configuración. Las carpetas cambian según la configuración seleccionada.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -357,7 +357,6 @@ De forma predeterminada, los recursos se muestran por nombre de archivo. Sin emb
 >* Vídeo F4V único
 >
 
-
 ### Busque recursos de Dynamic Media Classic (Scene7) con el explorador de contenido {#searching-for-scene-assets-with-the-content-browser}
 
 La búsqueda de recursos de Dynamic Media Classic (Scene7) es similar a la búsqueda de recursos de Experience Manager. La excepción es que, al realizar una búsqueda, realmente ve una vista remota de los recursos en el sistema de Dynamic Media Classic (Scene7), en lugar de importarlos directamente a Experience Manager.
@@ -366,7 +365,7 @@ Puede utilizar la IU clásica o la UI táctil optimizada para ver y buscar recur
 
 Al buscar en cualquiera de las interfaces de usuario, puede filtrar por los siguientes criterios (que se muestran aquí en la interfaz de usuario táctil optimizada):
 
-**Escribir palabras clave** : puede buscar recursos por su nombre. Al buscar las palabras clave, escriba el nombre del archivo por el que comienza. Por ejemplo, si escribe la palabra &quot;nadar&quot;, buscará cualquier nombre de archivo de recursos que comience con esas letras en ese orden. Asegúrese de seleccionar Intro después de escribir el término para buscar el recurso.
+**Escribir palabras clave** : puede buscar recursos por su nombre. Al buscar las palabras clave, escriba el nombre del archivo por el que comienza. Por ejemplo, si escribe la palabra &quot;nadar&quot;, buscará cualquier nombre de archivo de recursos que comience con esas letras en ese orden. Asegúrese de seleccionar `Enter` después de escribir el término para buscar el recurso.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -397,7 +396,6 @@ De forma predeterminada, Experience Manager busca en la carpeta seleccionada y e
 >* Al buscar vídeo, busca en una sola representación. Los resultados devuelven la representación original (solo &#42;.mp4) y la representación codificada.
 >* Al buscar en un conjunto de vídeos adaptable, está buscando en la carpeta y en todas las subcarpetas, pero solo si ha añadido una palabra clave a la búsqueda. Si no ha añadido una palabra clave, Experience Manager no busca en las subcarpetas.
 >
-
 
 **Estado de publicación** : puede filtrar por recursos en función del estado de publicación: No publicado o Publicado. Si no selecciona ningún Estado de publicación, el Experience Manager busca de forma predeterminada en todos los estados de publicación.
 

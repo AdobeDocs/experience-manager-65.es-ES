@@ -1,8 +1,6 @@
 ---
 title: Consolas de administración de miembros y grupos
-seo-title: Members & Groups Management Consoles
 description: Cómo acceder a las consolas de administración de miembros y grupos
-seo-description: How to access Members and Groups Management consoles
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '942'
 ht-degree: 4%
 
 ---
@@ -55,7 +53,7 @@ En el entorno de creación, para llegar a la consola Miembros para administrar m
 
 Seleccione el icono del panel lateral en el lado izquierdo del `Members` encabezado para alternar y abrir el panel lateral de búsqueda.
 
-![](assets/leftpanel-icon.png)
+![Icono Buscar en el panel lateral.](assets/leftpanel-icon.png)
 
 
 ![member-console2](assets/member-console2.png)
@@ -97,19 +95,19 @@ El miembro puede cambiar su dirección de correo electrónico al actualizar su p
 
 * **[!UICONTROL Contraseña]**
 
-   (*Requerido*) La contraseña de inicio de sesión.
+  (*Requerido*) La contraseña de inicio de sesión.
 
 * **[!UICONTROL Repetir contraseña]**
 
-   (*Requerido*) Vuelva a introducir la contraseña para la verificación.
+  (*Requerido*) Vuelva a introducir la contraseña para la verificación.
 
 * **[!UICONTROL Añadir miembro a los sitios]**
 
-   (*Opcional*) Seleccione entre los sitios de la comunidad existentes para agregar al miembro al grupo de miembros del sitio de la comunidad.
+  (*Opcional*) Seleccione entre los sitios de la comunidad existentes para agregar al miembro al grupo de miembros del sitio de la comunidad.
 
 * **[!UICONTROL Añadir miembro a los grupos]**
 
-   (*Opcional*) Seleccione entre los grupos de miembros existentes para agregar el miembro a ese grupo.
+  (*Opcional*) Seleccione entre los grupos de miembros existentes para agregar el miembro a ese grupo.
 
 * Seleccione **[!UICONTROL Guardar]**
 
@@ -122,17 +120,17 @@ En Configuración de cuenta, un administrador de la comunidad puede hacer lo sig
 
    * No prohibido Un miembro tiene acceso completo al sitio de la comunidad.
 
-   El valor predeterminado es `Not Banned`.
+  El valor predeterminado es `Not Banned`.
 
 * **[!UICONTROL Límites de contribución]**
 
-   Si se selecciona, la capacidad del miembro para publicar contenido es limitada.
+  Si se selecciona, la capacidad del miembro para publicar contenido es limitada.
 El valor predeterminado depende de la configuración de los límites de contribución.
 Consulte [Límites de contribución de miembros](limits.md).
 
 * **[!UICONTROL Cambiar contraseña]**
 
-   Vínculo que está presente al modificar un miembro existente. Proporciona la capacidad para que un administrador de la comunidad restablezca una contraseña para un miembro.
+  Vínculo que está presente al modificar un miembro existente. Proporciona la capacidad para que un administrador de la comunidad restablezca una contraseña para un miembro.
 
 ### GENERAL - Foto {#general-photo}
 
@@ -181,23 +179,23 @@ Los campos obligatorios para crear un nuevo grupo de miembros del lado de public
 
 * **[!UICONTROL ID]**
 
-   (*Requerido*) El ID único del grupo.
+  (*Requerido*) El ID único del grupo.
 
-   *Una vez creada, no se puede modificar la ID.*
+  *Una vez creada, no se puede modificar la ID.*
 
 * **[!UICONTROL Nombre]**
 
-   (*Opcional*) El nombre para mostrar del grupo.
+  (*Opcional*) El nombre para mostrar del grupo.
 
-   El valor predeterminado es el ID.
+  El valor predeterminado es el ID.
 
 * **[!UICONTROL Descripción]**
 
-   (*Opcional*) Una descripción del propósito y los permisos del grupo.
+  (*Opcional*) Una descripción del propósito y los permisos del grupo.
 
 * **[!UICONTROL Añadir miembros al grupo]**
 
-   (*Opcional*) Seleccione los miembros de publicación que se incluirán como miembros iniciales del grupo.
+  (*Opcional*) Seleccione los miembros de publicación que se incluirán como miembros iniciales del grupo.
 
 * Seleccione **[!UICONTROL Guardar]**
 

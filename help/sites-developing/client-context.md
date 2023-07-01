@@ -1,8 +1,6 @@
 ---
 title: Client Context en detalle
-seo-title: Client Context in Detail
 description: Client Context representa una colección ensamblada dinámicamente de datos de usuario
-seo-description: The Client Context represents a dynamically assembled collection of user data
 uuid: 95b08fbd-4f50-44a1-80fb-46335fe04a40
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,9 +10,9 @@ discoiquuid: c881ad66-bcc3-4f99-b77f-0944c23e2d29
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -25,13 +23,13 @@ ht-degree: 0%
 >
 >ContextHub ha reemplazado a Client Context. Consulte la [documentación relacionada](/help/sites-developing/contexthub.md) para obtener más información.
 
-Client Context representa una colección ensamblada dinámicamente de datos de usuario. Puede utilizar los datos para determinar el contenido que se mostrará en una página web en una situación determinada (segmentación de contenido). Los datos también están disponibles para el análisis de sitios web y para cualquier javascript de la página.
+Client Context representa una colección ensamblada dinámicamente de datos de usuario. Puede utilizar los datos para determinar el contenido que se mostrará en una página web en una situación determinada (segmentación de contenido). Los datos también están disponibles para el análisis de sitios web y para cualquier JavaScript de la página.
 
 Client Context consta principalmente de los siguientes aspectos:
 
-* El almacén de sesión, que contiene los datos de usuario.
+* El almacén de sesión que contiene los datos de usuario.
 * Interfaz de usuario que muestra los datos del usuario y proporciona herramientas para simular la experiencia del usuario.
-* A [API de javascript](/help/sites-developing/ccjsapi.md) para interactuar con almacenes de sesión.
+* A [API de JavaScript](/help/sites-developing/ccjsapi.md) para interactuar con almacenes de sesión.
 
 Para crear un almacén de sesiones independiente y agregarlo a Client Context, o para crear un almacén de sesiones vinculado a un componente de almacén de contexto. AEM instala varios componentes de tienda de contexto que puede utilizar de inmediato. Puede utilizar estos componentes como base para sus componentes.
 
@@ -44,9 +42,9 @@ Client Context incluye varios almacenes de sesiones que contienen datos de usuar
 * El explorador web del cliente.
 * El servidor de (consulte [Almacenamiento JSONP](/help/sites-administering/client-context.md#main-pars-variable-8) para almacenar información de fuentes de terceros)
 
-El marco de Client Context proporciona un [API de javascript](/help/sites-developing/ccjsapi.md) que puede utilizar para interactuar con almacenes de sesión y leer y escribir datos de usuario, así como para escuchar y reaccionar a eventos de almacenamiento. También puede crear almacenes de sesión para los datos de usuario que utilice para la segmentación de contenido u otros fines.
+El marco de Client Context proporciona un [API de JavaScript](/help/sites-developing/ccjsapi.md) que puede utilizar para interactuar con almacenes de sesión y leer y escribir datos de usuario, así como para escuchar y reaccionar a eventos de almacenamiento. También puede crear almacenes de sesión para los datos de usuario que utilice para la segmentación de contenido u otros fines.
 
-Los datos del almacén de sesión permanecen en el cliente. Client Context no vuelve a escribir datos en el servidor. Para enviar datos al servidor de, utilice un formulario o desarrolle JavaScript personalizado.
+Los datos del almacén de sesión permanecen en el cliente. Client Context no vuelve a escribir datos en el servidor. Para enviar datos al servidor, utilice un formulario o desarrolle JavaScript personalizado.
 
 Cada almacén de sesión es una colección de pares propiedad-valor. El almacén de sesión representa una colección de datos (de cualquier tipo), cuyo significado conceptual puede decidir el diseñador o el desarrollador. En el siguiente ejemplo de código JavaScript se define un objeto que representa los datos de perfil que el almacén de sesión puede contener:
 
@@ -79,7 +77,7 @@ Los componentes del almacén de contexto pueden incluir los siguientes elementos
 * Scripts JSP que definen el aspecto en Client Context.
 * Propiedades para enumerar el componente en la barra de tareas.
 * Cuadros de diálogo de edición para configurar instancias de componente.
-* Javascript que inicializa el almacén de sesiones.
+* JavaScript que inicializa el almacén de sesión.
 
 Para obtener una descripción de los componentes de tienda de contexto instalados que puede agregar al almacén de contexto, consulte [Componentes de Client Context disponibles](/help/sites-administering/client-context.md#available-client-context-components).
 
@@ -130,13 +128,13 @@ Cree un almacén de sesión para los datos que debe agregar y recuperar de Clien
 
 1. Configure la carpeta de la biblioteca de cliente para que dependa de `personalization.core.kernel` carpeta de la biblioteca del cliente. El `personalization.core.kernel` La biblioteca de cliente de proporciona la API de JavaScript de Client Context.
 
-1. Agregue el javascript que crea e inicializa el almacén de sesiones.
+1. Agregue el JavaScript que crea e inicializa el almacén de sesión.
 
-Si se incluye el javascript en la biblioteca de cliente personalization.store.kernel, el almacén se creará cuando se cargue el marco de Client Context.
+Si se incluye JavaScript en la biblioteca de cliente personalization.store.kernel, el almacén se creará cuando se cargue el marco de Client Context.
 
 >[!NOTE]
 >
->Si está creando un almacén de sesiones como parte de un componente de almacén de contexto, puede colocar alternativamente el javascript en el archivo init.js.jsp del componente. En este caso, el almacén de sesiones se crea únicamente si el componente se agrega a Client Context.
+>Si está creando un almacén de sesiones como parte de un componente de almacén de contexto, puede colocar alternativamente JavaScript en el archivo init.js.jsp del componente. En este caso, el almacén de sesiones se crea únicamente si el componente se agrega a Client Context.
 
 #### Tipos de almacenes de sesión {#types-of-session-stores}
 
@@ -153,7 +151,7 @@ La API también proporciona extensiones de estas clases especializadas en almace
 
 #### Creación del objeto de almacén de sesiones {#creating-the-session-store-object}
 
-El javascript de la carpeta de biblioteca del cliente crea e inicializa el almacén de sesiones. A continuación, el almacén de sesión debe registrarse mediante el Administrador de tienda de contexto. En el siguiente ejemplo se crea y registra un [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) objeto.
+El JavaScript de la carpeta de biblioteca del cliente crea e inicializa el almacén de sesión. A continuación, el almacén de sesión debe registrarse mediante el Administrador de tienda de contexto. En el siguiente ejemplo se crea y registra un [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) objeto.
 
 ```
 //Create the session store
@@ -206,11 +204,11 @@ El ID del div en el que se debe procesar el almacén.
 >
 >Todos los componentes de Client Context son extensiones de los componentes Almacén genérico o Propiedades de almacenamiento genérico. Hay varios ejemplos instalados en la variable `/libs/cq/personalization/components/contextstores` carpeta.
 
-#### Configuración del aspecto en la barra de tareas {#configuring-the-appearance-in-sidekick}
+#### Configuración del aspecto visual en el Sidekick {#configuring-the-appearance-in-sidekick}
 
-Al editar Client Context, los componentes del almacén de contexto aparecen en la barra de tareas. Como con todos los componentes, la variable `componentGroup` y `jcr:title` las propiedades del componente Client Context determinan el grupo y el nombre del componente.
+Al editar Client Context, los componentes del almacén de contexto aparecen en Sidekick. Como con todos los componentes, la variable `componentGroup` y `jcr:title` las propiedades del componente Client Context determinan el grupo y el nombre del componente.
 
-Todos los componentes que tienen un `componentGroup` valor de propiedad de `Client Context` aparecen en la barra de tareas de forma predeterminada. Si utiliza un valor diferente para `componentGroup` , debe añadir manualmente el componente a la barra de tareas utilizando el modo Diseño.
+Todos los componentes que tienen un `componentGroup` valor de propiedad de `Client Context` aparecen en el Sidekick de forma predeterminada. Si utiliza un valor diferente para `componentGroup` , debe añadir manualmente el componente al Sidekick mediante el modo Diseño.
 
 #### Instancias de componente de tienda de contexto {#context-store-component-instances}
 
@@ -220,9 +218,9 @@ Cuando se inicializa Client Context, se procesan estos nodos.
 
 #### Inicialización del almacén de sesión asociado {#initializing-the-associated-session-store}
 
-Agregue un archivo init.js.jsp al componente para generar código javascript que inicialice el almacén de sesiones que utiliza el componente de almacén de contexto. Por ejemplo, utilice el script de inicialización para recuperar las propiedades de configuración del componente y utilizarlas para rellenar el almacén de sesiones.
+Agregue un archivo init.js.jsp al componente para generar código JavaScript que inicialice el almacén de sesión que utiliza el componente de almacén de contexto. Por ejemplo, utilice el script de inicialización para recuperar las propiedades de configuración del componente y utilizarlas para rellenar el almacén de sesiones.
 
-El JavaScript que se genera se agrega a la página cuando Client Context se inicializa al cargar la página tanto en la instancia de autor como en la de publicación. Este JSP se ejecuta antes de que se cargue y procese la instancia del componente de almacén de contexto.
+El JavaScript que se genera se agrega a la página cuando Client Context se inicializa al cargar la página en las instancias de autor y publicación. Este JSP se ejecuta antes de que se cargue y procese la instancia del componente de almacén de contexto.
 
 El código debe establecer el tipo MIME del archivo en `text/javascript`, o no se ejecuta.
 
@@ -325,12 +323,12 @@ La etiqueta tiene el siguiente formato:
 
 El almacén de sesiones necesitará un método &quot;renderer&quot; al que se llamará cada vez que se necesite representar el componente. La función de procesamiento se llama con dos parámetros:
 
-* @param {String} almacenar El almacén que se va a procesar
-* @param {String} divId del div en el que se debe representar el almacén.
+* @param {String} store El almacén que se procesará
+* @param {String} divId Id Id del div en el que se debe representar el almacén.
 
 ## Interactuar con almacenes de sesiones {#interacting-with-session-stores}
 
-Utilice JavaScript para interactuar con los almacenes de sesión.
+Utilice JavaScript para interactuar con almacenes de sesión.
 
 ### Acceso a almacenes de sesión {#accessing-session-stores}
 
@@ -353,7 +351,7 @@ function getName(){
 
 La sesión almacena eventos de activación, por lo que es posible añadir oyentes y eventos de déclencheur basados en estos eventos.
 
-Los almacenes de sesión se basan en la variable `Observable` patrón. Se extienden [ `CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) que proporciona el ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)` método.
+Los almacenes de sesión se basan en la variable `Observable` patrón. Se extienden [`CQ_Analytics.Observable`](/help/sites-developing/ccjsapi.md#cq-analytics-observable) que proporciona el ` [addListener](/help/sites-developing/ccjsapi.md#addlistener-event-fct-scope)` método.
 
 En el siguiente ejemplo se agrega un agente de escucha al `update` evento de la `profile` almacén de sesión.
 
@@ -482,7 +480,7 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
 En este ejemplo, se crea un componente de almacén de contexto que recupera datos de un servicio externo y los almacena en el almacén de sesiones:
 
 * Extiende el componente genericstoreproperties.
-* Inicializa un almacén con un objeto javascript CQ_Analytics.JSONPStore.
+* Inicializa un almacén con un objeto JavaScript CQ_Analytics.JSONPStore.
 * Llama a un servicio JSONP para recuperar datos y agregarlos al almacén.
 * Procesa los datos en Client Context.
 
@@ -599,7 +597,7 @@ Agregue el componente Almacén de ubicaciones a Client Context para que se inici
 1. Haga clic en Ctrl-Alt-c (Windows) o control-opción-c (Mac) para abrir Client Context.
 1. Haga clic en el icono de edición en la parte superior de Client Context para abrir el Diseñador de Client Context.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Icono de edición indicado por un lápiz dentro de un cuadrado.](do-not-localize/chlimage_1.png)
 
 1. Arrastre el componente Almacén de ubicaciones a Client Context.
 
@@ -617,11 +615,11 @@ Para crear un segundo contexto de cliente, debe duplicar la rama:
 `/etc/clientcontext/default`
 
 * La subcarpeta:
-   `/content`
+  `/content`
 contendrá el contenido del contexto de cliente personalizado.
 
 * La carpeta:
-   `/contextstores`
+  `/contextstores`
 permite definir diferentes configuraciones para las tiendas de contexto.
 
 Para utilizar el contexto de cliente personalizado, edite la propiedad

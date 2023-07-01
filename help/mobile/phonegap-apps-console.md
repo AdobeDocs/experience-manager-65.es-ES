@@ -1,8 +1,6 @@
 ---
 title: Creación y edición de aplicaciones mediante la consola de aplicaciones
-seo-title: Creating and Editing Apps Using the Apps Console
 description: Siga esta página para aprender a crear y editar aplicaciones con la consola de aplicaciones.
-seo-description: Follow this page to learn about creating and editing apps using apps console.
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '2615'
+source-wordcount: '2695'
 ht-degree: 0%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe SPA recomienda utilizar el Editor de para proyectos que requieran procesamiento del lado del cliente basado en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
+>Adobe SPA recomienda utilizar el Editor de para proyectos que requieran una representación del lado del cliente basada en el marco de trabajo de la aplicación de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
 AEM El proceso de desarrollo de aplicaciones móviles reconoce que los usuarios con diferentes conocimientos contribuyen al desarrollo de aplicaciones móviles. El siguiente mapa del proceso ilustra el orden general en el que los autores de contenido y los desarrolladores de aplicaciones realizan las tareas.
 
@@ -62,7 +60,7 @@ La página de idioma tiene dos propósitos:
 
 ### La página de inicio {#the-home-page}
 
-La página principal, o página index.html de una variación de idioma de una aplicación, aparece cuando se abre la aplicación. La página principal proporciona a los usuarios un menú de vínculos a varias páginas de la aplicación. El sistema de párrafos permite agregar componentes a la página para crear contenido.
+La página principal o la página index.html de una variación de idioma de una aplicación aparece cuando se abre la aplicación. La página de inicio proporciona a los usuarios un menú de vínculos a varias páginas de la aplicación. El sistema de párrafos permite agregar componentes a la página para crear contenido.
 
 ## Creación de una aplicación móvil {#creating-a-mobile-application}
 
@@ -89,9 +87,9 @@ Existen pestañas adicionales (y opcionales) para crear un servicio en la nube e
 El siguiente procedimiento utiliza la interfaz de usuario táctil para crear una aplicación móvil.
 
 1. En el carril, haga clic en Aplicaciones.
-1. Toque o haga clic en el icono Crear.
+1. Haga clic en el icono Create.
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![El icono Crear se indica con un signo más dentro de un cuadrado.](do-not-localize/chlimage_1-7.png)
 
 1. (Opcional) En la pestaña Avanzado, proporcione una descripción para la aplicación y cambie la dirección URL del servidor si es necesario.
 1. (Opcional) Si utiliza PhoneGap Build para compilar la aplicación, en la pestaña Generar, seleccione la Configuración que desea utilizar.
@@ -114,30 +112,30 @@ Después de crear una aplicación móvil, puede cambiar las propiedades.
 1. En el carril, toque o haga clic en Aplicaciones.
 1. Seleccione la aplicación que desea configurar y haga clic en el icono Ver propiedades de página.
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![El icono Ver propiedades de página está indicado por la letra I dentro de un círculo.](do-not-localize/chlimage_1-8.png)
 
 1. Para cambiar los valores de las propiedades, toque o haga clic en el icono Editar.
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![El icono Editar indicado por un lápiz.](do-not-localize/chlimage_1-9.png)
 
 1. Configure las propiedades Básico y Avanzado y, a continuación, toque o haga clic en el icono Listo.
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![El icono Listo aparece indicado mediante un símbolo de marca de verificación.](do-not-localize/chlimage_1-10.png)
 
 #### Configurar una variación de idioma de la aplicación {#configure-a-language-variation-of-the-application}
 
-1. En el carril, toque o haga clic en Aplicaciones.
-1. Haga clic para explorar en profundidad la aplicación móvil que desea editar en Admin Console de aplicaciones. Seleccione la versión de idioma de la aplicación que desea configurar y haga clic en el icono Ver propiedades de la aplicación.
+1. En el carril, haga clic en Aplicaciones.
+1. Haga clic para explorar en profundidad la aplicación móvil que desea editar en el Admin Console de aplicaciones. Seleccione la versión de idioma de la aplicación que desea configurar y haga clic en el icono Ver propiedades de la aplicación.
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![El icono Ver propiedades de la aplicación está indicado por la letra I dentro de un círculo.](do-not-localize/chlimage_1-11.png)
 
 1. Para cambiar los valores de las propiedades, toque o haga clic en el icono Editar.
 
-   ![](do-not-localize/chlimage_1-12.png)
+   ![El icono Editar indicado por un lápiz.](do-not-localize/chlimage_1-12.png)
 
 1. Configure las propiedades en las pestañas Básico, Avanzado, Generar y Analytics y, a continuación, toque o haga clic en el icono Listo.
 
-   ![](do-not-localize/chlimage_1-13.png)
+   ![El icono Listo aparece indicado mediante un símbolo de marca de verificación.](do-not-localize/chlimage_1-13.png)
 
 ### Creación del contenido de una aplicación móvil {#authoring-the-content-of-a-mobile-application}
 
@@ -167,7 +165,7 @@ Realice el siguiente procedimiento en la instancia en la que desea actualizar la
 1. En el carril, toque o haga clic en Aplicaciones y, a continuación, toque o haga clic en la aplicación.
 1. Seleccione la página de bienvenida y, a continuación, toque o haga clic en el icono Actualizar caché.
 
-   ![](do-not-localize/chlimage_1-14.png)
+   ![El icono Actualizar caché está indicado por un barril rayado con un símbolo de reciclaje encima.](do-not-localize/chlimage_1-14.png)
 
 ### Uso de plantillas de aplicación {#using-app-templates}
 
@@ -222,7 +220,7 @@ Para abrir la aplicación, en el carril, haga clic en Aplicaciones móviles y, a
 Cada página de la aplicación móvil incluye las siguientes funciones:
 
 * Botón Atrás para volver a la página principal. Tenga en cuenta que el botón Atrás no aparece en la página Inicio.
-* Un carril expansible que ofrece un menú de comandos y vínculos:
+* Un carril fungible que ofrece un menú de comandos y vínculos:
 
    * Abra la página Ubicaciones.
    * Abra el carro de compras.
@@ -251,7 +249,7 @@ Cada página de categoría utiliza la misma estructura de contenido que la pági
 
 ### La página Productos: Aplicación móvil de Geometrixx {#the-products-page-geometrixx-mobile-app}
 
-La página Productos y su jerarquía de páginas secundarias implementan un sistema de clasificación para las páginas de productos. Las páginas más bajas de cada rama de la jerarquía es una página de producto que contiene un componente de producto ng.
+La página Productos y su jerarquía de páginas secundarias implementan un sistema de clasificación para las páginas de productos. Las páginas más bajas de cada rama de la jerarquía son una página de producto que contiene un componente de producto ng.
 
 La página Productos no está disponible para los usuarios de la aplicación. La página Engranaje proporciona acceso a cada página de producto.
 
@@ -269,7 +267,7 @@ Al utilizar la aplicación, la página Noticias está disponible en el carrusel 
 
 ### La página Acerca de nosotros - Aplicación móvil de Geometrixx {#the-about-us-page-geometrixx-mobile-app}
 
-La página Acerca de nosotros contiene varios componentes de fila de dos columnas. Cada columna contiene un componente Imagen o Texto. Los componentes son editables y el sistema de párrafos permite agregar componentes.
+La página Acerca de nosotros contiene varios componentes Fila de dos columnas. Cada columna contiene un componente Imagen o Texto. Los componentes son editables y el sistema de párrafos permite agregar componentes.
 
 Al utilizar la aplicación, la página Acerca de nosotros está disponible en el carrusel de la página en inglés.
 
@@ -281,7 +279,7 @@ Al utilizar la aplicación, la página Ubicaciones está disponible en la lista 
 
 ## Componentes móviles de muestra {#sample-mobile-components}
 
-Varios componentes están disponibles inmediatamente en la barra de tareas al crear las páginas de una aplicación móvil. Los componentes pertenecen al grupo de componentes PhoneGap.
+Varios componentes están disponibles inmediatamente en Sidekick al crear las páginas de una aplicación móvil. Los componentes pertenecen al grupo de componentes PhoneGap.
 
 ### Carrusel de barrido {#swipe-carousel}
 

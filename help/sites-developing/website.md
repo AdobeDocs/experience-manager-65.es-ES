@@ -1,8 +1,6 @@
 ---
 title: Creación de un sitio web con todas las funciones (JSP)
-seo-title: Create a Fully-Featured Website (JSP)
 description: AEM Este tutorial le permite crear un sitio web completo con funciones de acceso a la página de inicio de sesión
-seo-description: This tutorial enables you to create a fully featured website with AEM
 uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +9,7 @@ content-type: reference
 discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
 source-wordcount: '4935'
 ht-degree: 3%
@@ -24,7 +22,7 @@ ht-degree: 3%
 >
 >Este artículo describe cómo crear un sitio web con JSP y en función de la IU clásica. El Adobe AEM recomienda aprovechar las últimas tecnologías de la para sus sitios web, tal como se describe en detalle en el artículo [Introducción al desarrollo de AEM Sites](/help/sites-developing/getting-started.md).
 
-Este tutorial le permite crear un sitio web con todas las funciones con Adobe Experience Manager AEM (). El sitio web se basará en un sitio web genérico y está dirigido principalmente a los desarrolladores web. Todo el desarrollo se realizará dentro de un entorno de creación.
+Este tutorial le permite crear un sitio web con todas las funciones con Adobe Experience Manager AEM (). El sitio web se basará en un sitio web genérico y está dirigido principalmente a los desarrolladores web. Todo el desarrollo se realiza dentro de un entorno de creación.
 
 Este tutorial describe cómo:
 
@@ -293,8 +291,8 @@ Por ejemplo, en el código JSP del componente, puede hacer referencia a los scri
       * **Nombre:** sling:resourceSuperType
       * **Tipo:** cadena
       * **Valor:** foundation/components/page
-   1. Haga clic en Guardar todo.
 
+   1. Haga clic en Guardar todo.
 
 1. Abra el `contentpage.jsp` archivo en `/apps/mywebsite/components/contentpage` y reemplace el código existente por el siguiente código:
 
@@ -313,7 +311,7 @@ Por ejemplo, en el código JSP del componente, puede hacer referencia a los scri
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   Abra el origen de la página para ver los elementos de javascript y HTML que generaron los scripts head.jsp y body.jsp. El siguiente fragmento de script abre la barra de tareas al abrir la página:
+   Abra el origen de la página para ver los elementos de javascript y HTML que generaron los scripts head.jsp y body.jsp. El siguiente fragmento de script abre el Sidekick cuando abre la página:
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -481,7 +479,7 @@ Para incluir la navegación superior en el componente de página de contenido:
 El componente Página define las propiedades que permiten proporcionar subtítulos para las páginas. Añada subtítulos que proporcionen información sobre el contenido de la página.
 
 1. En el explorador, abra el **Productos** página.
-1. En la barra de tareas **Página** pestaña, haga clic en **Propiedades de página**.
+1. En el Sidekick **Página** pestaña, haga clic en **Propiedades de página**.
 1. En la pestaña Básico del cuadro de diálogo, expanda **Más títulos y descripciones,** y para el **Subtítulo** propiedad, tipo **lo que hacemos**. Haga clic en **Aceptar**.
 1. Repita los pasos anteriores para agregar el subtítulo **sobre nuestros servicios** a la **Servicios** página.
 1. Repita los pasos anteriores para agregar el subtítulo **la confianza que ganamos** a la **Clientes** página.
@@ -524,9 +522,9 @@ En este ejercicio, Sling hace coincidir estas direcciones URL con el script /app
 
 1. Copie el siguiente código en `navimage.png.java.`El código amplía la clase AbstractImageServlet:
 
-   * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crea un objeto ImageContext que almacena las propiedades del recurso actual.
+   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) crea un objeto ImageContext que almacena las propiedades del recurso actual.
    * La página principal del recurso se extrae del objeto ImageContext. A continuación, se obtienen el título y el subtítulo de la página.
-   * [ImageHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) se utiliza para generar la imagen a partir del archivo navimage_bg.jpg del diseño del sitio, el título de la página y el subtítulo de la página.
+   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) se utiliza para generar la imagen a partir del archivo navimage_bg.jpg del diseño del sitio, el título de la página y el subtítulo de la página.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -656,7 +654,7 @@ Cree el componente listchildren que genera una lista de vínculos de página con
 
 #### Creación de páginas de producto {#creating-product-pages}
 
-Cree dos páginas ubicadas debajo de la página Productos. Para cada página, que describe dos productos específicos, se establece un título, una descripción y una fecha.
+Cree dos páginas ubicadas debajo de la página Productos. Para cada página que describe dos productos específicos, se establece un título, una descripción y una fecha.
 
 1. En el árbol de carpetas de la página Sitios web, seleccione el elemento Sitios web/Mi sitio web/Inglés/Productos y haga clic en Nuevo > Nueva página.
 1. En el cuadro de diálogo, introduzca los siguientes valores de propiedad y haga clic en Crear:
@@ -679,6 +677,7 @@ Cree dos páginas ubicadas debajo de la página Productos. Para cada página, qu
       * Nombre: `jcr:description`
       * Tipo: `String`
       * Valor: `This is a description of the Product 1!.`
+
    1. Clic **Añadir**.
    1. En el **Propiedades** , cree otra propiedad con los siguientes valores:
 
@@ -686,9 +685,8 @@ Cree dos páginas ubicadas debajo de la página Productos. Para cada página, qu
       * Tipo: cadena
       * Valor: 14/02/2008
       * Haga clic en Agregar.
+
    1. Haga clic en Guardar todo.
-
-
 
 1. En CRXDE Lite, defina una descripción y una fecha para la página del producto 2:
 
@@ -698,6 +696,7 @@ Cree dos páginas ubicadas debajo de la página Productos. Para cada página, qu
       * Nombre: jcr:description
       * Tipo: cadena
       * Valor: Esta es una descripción del producto 2.
+
    1. Clic **Añadir**.
    1. En los mismos cuadros de texto, reemplace los valores anteriores por los siguientes valores:
 
@@ -705,9 +704,8 @@ Cree dos páginas ubicadas debajo de la página Productos. Para cada página, qu
       * Tipo: cadena
       * Valor: 11/05/2012
       * Haga clic en Agregar.
+
    1. Haga clic en Guardar todo.
-
-
 
 #### Creación del componente Lista de elementos secundarios {#creating-the-list-children-component-1}
 
@@ -1033,14 +1031,14 @@ En esta sección se describe cómo establecer una imagen como logotipo mediante 
 
 1. Con la página Productos abierta en el explorador, haga clic en el botón Diseño en la parte inferior de la barra de tareas para entrar en el modo de diseño.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Botón Diseño indicado por un cuadrado derecho.](do-not-localize/chlimage_1-1.png)
 
 1. En la barra Diseño del logotipo, haga clic en Editar para utilizar el cuadro de diálogo y editar la configuración del componente Logotipo.
 1. En el cuadro de diálogo, haga clic en el panel de la pestaña Imagen, busque la imagen logo.png que ha extraído del archivo mywebsite.zip y haga clic en Aceptar.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
-1. Haga clic en el triángulo de la barra de título de la barra de tareas para volver al modo de edición.
+1. Haga clic en el triángulo de la barra de título del Sidekick para volver al modo de edición.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -1124,7 +1122,7 @@ Cree un componente que muestre una imagen en el sistema de párrafos. Para ahorr
 
 #### Creación del componente de imagen {#creating-the-image-component-1}
 
-1. Haga clic con el botón derecho `/apps/mywebsite/components/logo` y haga clic en Copiar.
+1. Haga clic con el botón derecho en `/apps/mywebsite/components/logo` y haga clic en Copiar.
 1. Haga clic con el botón derecho en `/apps/mywebsite/components` y haga clic en Pegar.
 1. Haga clic con el botón derecho en `Copy of logo` , haga clic en Cambiar nombre, elimine el texto existente y escriba `image`.
 
@@ -1206,7 +1204,7 @@ En esta sección, se utiliza un nodo cq:editConfig para permitir arrastrar recur
 
 #### Adición del icono {#adding-the-icon}
 
-En esta sección, se agrega el icono para que aparezca junto al componente de imagen cuando aparezca en la barra de tareas:
+En esta sección, se agrega el icono para que aparezca junto al componente de imagen cuando aparece en la lista de Sidekick:
 
 1. En CRXDE Lite, haga clic con el botón derecho en el archivo `/libs/foundation/components/image/icon.png` y seleccione **Copiar.**
 1. Haga clic con el botón derecho en el nodo `/apps/mywebsite/components/image` y haga clic en **Pegar**, luego haga clic en **Guardar todo**.
@@ -1216,7 +1214,7 @@ En esta sección, se agrega el icono para que aparezca junto al componente de im
 En esta sección, verá el **Productos** y agregue el componente de imagen al sistema de párrafos.
 
 1. En el explorador, vuelva a cargar **Productos** página.
-1. En la barra de tareas, haga clic en **modo de diseño** icono.
+1. En el Sidekick, haga clic en **modo de diseño** icono.
 1. Haga clic en el botón Editar para editar el cuadro de diálogo de diseño de la pieza.
 1. En el cuadro de diálogo, una lista de **Componentes permitidos** se muestra; vaya a **MyWebsite**, seleccione la **Mi componente de imagen** y haga clic en **OK.**
 1. Volver a **modo de edición.**
@@ -1281,10 +1279,10 @@ El cuadro de entrada de búsqueda tendrá el siguiente aspecto en la **Inglés**
       * Título: Componente Mi búsqueda
       * Descripción: Este es mi componente de búsqueda
       * Grupo: Mi sitio web
+
    1. Haga clic en Siguiente y, a continuación, en Siguiente.
    1. En el panel Principales permitidos, haga clic en el botón + y escriba `*/parsys`.
    1. Haga clic en Siguiente y, a continuación, en Aceptar.
-
 
 1. Haga clic en Guardar todo.
 1. Copie los siguientes nodos y péguelos en el nodo apps/mywebsite/components/search:
@@ -1503,8 +1501,8 @@ En esta sección, agregará el componente de búsqueda al sistema de párrafos.
 1. En la barra de tareas, haga clic en el icono de modo de diseño.
 1. En el bloque Diseño de la parte (debajo del título Buscar), haga clic en Editar.
 1. En el cuadro de diálogo, desplácese hacia abajo hasta el  **Mis sitios web** grupo, seleccione **Mi componente de búsqueda** y haga clic en **OK**.
-1. En la barra de tareas, haga clic en el triángulo para volver al modo de edición.
-1. Arrastre el componente Mi búsqueda de la barra de tareas al fotograma parsys. Tiene el siguiente aspecto:
+1. En Sidekick, haga clic en el triángulo para volver al modo de edición.
+1. Arrastre el componente Mi búsqueda desde el Sidekick al marco parsys. Tiene el siguiente aspecto:
 
    ![chlimage_1-58](assets/chlimage_1-58.png)
 
