@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 54%
+source-wordcount: '1805'
+ht-degree: 55%
 
 ---
 
@@ -40,11 +40,11 @@ AEM realiza un diseño interactivo para sus páginas mediante una combinación d
 
 * Componente [**Contenedor de diseño**](#adding-a-layout-container-and-its-content-edit-mode)
 
-   Este componente está disponible en el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) y proporciona un sistema de párrafos de red que le permite añadir y colocar componentes en una cuadrícula interactiva. También se puede establecer como sistema de párrafos predeterminado en la página.
+  Este componente está disponible en el [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) y proporciona un sistema de párrafos de red que le permite añadir y colocar componentes en una cuadrícula interactiva. También se puede establecer como sistema de párrafos predeterminado en la página.
 
 * [**Modo de diseño**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
-   Después de colocar el contenedor de diseño en la página, puede usar el modo de **diseño** para colocar el contenido en la red interactiva.
+  Después de colocar el contenedor de diseño en la página, puede usar el modo de **diseño** para colocar el contenido en la red interactiva.
 
 * [**Emulador**](#selecting-a-device-to-emulate) Esta opción le permite crear y editar sitios web interactivos que reorganizan el diseño en función del tamaño del dispositivo o la ventana, mediante el redimensionado activo de los componentes. El usuario puede utilizar el emulador para ver cómo se representará el contenido.
 
@@ -100,7 +100,7 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
 1. Seleccione el icono **Emulador** de la barra de herramientas superior:
 
-   ![](do-not-localize/screen_shot_2018-03-23at084256.png)
+   ![Emulador](do-not-localize/screen_shot_2018-03-23at084256.png)
 
 1. Se abrirá la barra de herramientas del emulador.
 
@@ -108,13 +108,13 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
 
    La barra de herramientas del emulador muestra opciones de diseño adicionales:
 
-   * **Rotar dispositivo** : Permite girar un dispositivo desde la orientación vertical (vertical) a la orientación horizontal (horizontal) y viceversa.
+   * **Rotar dispositivo**: le permite rotar un dispositivo de la orientación vertical a la horizontal y viceversa.
 
-   ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
+     ![Rotar dispositivo](do-not-localize/screen_shot_2018-03-23at084612.png) ![Rotar dispositivo](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **Seleccionar dispositivo**: le permite definir un dispositivo específico para emular de una lista (consulte el paso siguiente para obtener detalles)
 
-   ![](do-not-localize/screen_shot_2018-03-23at084743.png)
+     ![Seleccionar dispositivo](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Para seleccionar un dispositivo específico para emular, puede hacer lo siguiente:
 
@@ -137,8 +137,6 @@ Por ejemplo, si selecciona el dispositivo **iPhone 6 Plus** (definido con una an
    * El pliegue también se puede considerar como el salto de línea de la página (no confundir con el salto de línea de la página) [puntos de interrupción](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) para el contenido. Esto se muestra para mayor comodidad, a fin de mostrar qué parte del contenido verá el usuario en el dispositivo antes de desplazarse.
    * La línea para el pliegue no se mostrará si la altura del dispositivo que se está emulando es mayor que el tamaño de pantalla.
    * El pliegue se muestra para la comodidad del autor y no aparece en la página publicada.
-
-
 
 ## Adición de un contenedor de diseño y su contenido (modo de edición) {#adding-a-layout-container-and-its-content-edit-mode}
 
@@ -171,7 +169,7 @@ Al igual que con otros componentes, puede seleccionar un contenedor de diseños 
 
    Debe seleccionar la opción **Principal**.
 
-   ![](do-not-localize/screen_shot_2018-03-23at085417.png)
+   ![Opción principal](do-not-localize/screen_shot_2018-03-23at085417.png)
 
 1. Si el componente de diseño está anidado, seleccione la opción **Principal** presenta una selección desplegable, que le permite seleccionar el contenedor de diseño anidado o sus elementos principales.
 
@@ -211,62 +209,62 @@ En el modo Diseño, se pueden realizar varias acciones en una cuadrícula:
 
 * Cambie el tamaño de los componentes de contenido mediante los puntos azules. El cambio de tamaño siempre se ajustará a la cuadrícula. Al cambiar el tamaño de la cuadrícula de fondo se mostrará para ayudar a la alineación:
 
-   ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
+  ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 
-   >[!NOTE]
-   >
-   >Se mantendrán las proporciones y relaciones al cambiar el tamaño de componentes como **Imágenes**.
+  >[!NOTE]
+  >
+  >Se mantendrán las proporciones y relaciones al cambiar el tamaño de componentes como **Imágenes**.
 
 * Haga clic o toque un componente de contenido. La barra de herramientas le permite efectuar las siguientes acciones:
 
    * **Principal**
 
-      Permite seleccionar todo el componente del contenedor de diseños para realizar acciones en conjunto.
+     Permite seleccionar todo el componente del contenedor de diseños para realizar acciones en conjunto.
 
    * **Flotar a una línea nueva**
 
-      El componente se moverá a una nueva línea, en función del espacio disponible en la cuadrícula.
+     El componente se moverá a una nueva línea, en función del espacio disponible en la cuadrícula.
 
    * **Ocultar componente**
 
-      El componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseño).
-   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
+     El componente se hace invisible (puede restaurarse desde la barra de herramientas del contenedor de diseño).
+
+  ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * En el modo **Diseño** puede pulsar o hacer clic en **Arrastrar componentes aquí** para seleccionar el componente completo. Se mostrará la barra de herramientas de este modo.
 
-   La barra de herramientas tendrá diferentes opciones en función del estado del componente de diseño y de los componentes que le pertenecen. Por ejemplo:
+  La barra de herramientas tendrá diferentes opciones en función del estado del componente de diseño y de los componentes que le pertenecen. Por ejemplo:
 
    * **Principal**: seleccione el componente principal.
 
-   ![](do-not-localize/screen_shot_2018-03-23at090823.png)
+     ![Principal](do-not-localize/screen_shot_2018-03-23at090823.png)
 
    * **Mostrar componentes ocultos** : Muestre todos los componentes o cada componente por separado. El número indica cuántos componentes ocultos hay actualmente. El contador muestra cuántos componentes están ocultos.
 
-   ![](do-not-localize/screen_shot_2018-03-23at091007.png)
+     ![Mostrar componentes ocultos](do-not-localize/screen_shot_2018-03-23at091007.png)
 
    * **Revertir diseño del punto de interrupción**: permite recuperar el diseño predeterminado. Es decir, no se aplicará ningún diseño personalizado.
 
-   ![](do-not-localize/screen_shot_2018-03-23at091013.png)
+     ![Revertir diseño de punto de interrupción](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **Flotar hasta una nueva línea**: suba el componente una posición si el espacio lo permite.
 
-   ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
+     ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
    * **Ocultar componente**: oculte el componente actual.
 
-   ![](do-not-localize/screen_shot_2018-03-23at090834.png)
+     ![Ocultar componente](do-not-localize/screen_shot_2018-03-23at090834.png)
 
-   >[!NOTE]
-   >
-   >En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
+     >[!NOTE]
+     >
+     >En el ejemplo anterior, las acciones de flotar y ocultar están disponibles porque este contenedor de diseño está anidado en un contenedor de diseño principal.
 
-   * **Mostrar los componentes** 
-Seleccione los componentes principales para mostrar la barra de herramientas de acciones con la 
-Opción **Mostrar componentes ocultos**. En este ejemplo, hay dos componentes ocultos.
-   ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
+   * **Mostrar los componentes:** permite seleccionar los componentes principales para mostrar la barra de herramientas de acciones con la opción **Mostrar componentes ocultos**. En este ejemplo, hay dos componentes ocultos.
 
-   Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.
+     ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
-   ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
+  Si se selecciona la opción **Mostrar componentes ocultos**, se mostrarán en azul los componentes que están ocultos actualmente en sus posiciones originales.
 
-   La selección de la opción **Restaurar todo** permitirá que se muestren todos los componentes ocultos.
+  ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
+
+  La selección de la opción **Restaurar todo** permitirá que se muestren todos los componentes ocultos.

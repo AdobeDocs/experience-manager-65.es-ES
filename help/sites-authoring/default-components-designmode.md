@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -68,13 +68,13 @@ Para habilitar o deshabilitar un componente:
 
 1. Toque o haga clic en **Principal** icono.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103204.png)
+   ![Principal](do-not-localize/screen_shot_2018-03-22at103204.png)
 
    Se seleccionará el sistema de párrafos que contiene el componente actual.
 
 1. El **Configurar** para el sistema de párrafos se mostrará en la barra de acciones del elemento principal.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256.png)
+   ![Configurar](do-not-localize/screen_shot_2018-03-22at103256.png)
 
    Seleccione esta opción para mostrar el cuadro de diálogo.
 
@@ -121,7 +121,7 @@ Para habilitar o deshabilitar un componente:
 
 1. Utilice el **Configurar** para abrir el cuadro de diálogo.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256-1.png)
+   ![Icono Configurar](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
    En el cuadro de diálogo de diseño, puede configurar el componente según los parámetros de diseño disponibles.
 
@@ -151,12 +151,12 @@ Para habilitar o deshabilitar un componente:
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Utilice el icono** Eliminar ** para eliminar una entrada de una lista de cuadros de diálogo de varias entradas.
+   Utilice el **Eliminar** icono para quitar una entrada de una lista de cuadros de diálogo de varias entradas.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103809.png)
+   ![Eliminar](do-not-localize/screen_shot_2018-03-22at103809.png)
 
    Utilice el **Mover** para reorganizar el orden de las entradas en una lista de diálogo de varias entradas.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103816.png)
+   ![Mover](do-not-localize/screen_shot_2018-03-22at103816.png)
 
 1. Toque o haga clic en **Listo** para guardar y cerrar el cuadro de diálogo.
