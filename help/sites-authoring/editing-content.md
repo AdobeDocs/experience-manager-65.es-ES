@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
 workflow-type: tm+mt
-source-wordcount: '3047'
+source-wordcount: '3082'
 ht-degree: 42%
 
 ---
@@ -46,51 +46,51 @@ La barra de herramientas ofrece acceso a numerosas opciones. Según el contexto 
 
 * **Alternar panel lateral**
 
-   Esto abre o cierra el panel lateral, que contiene el [Explorador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser), [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser), y [Árbol de contenido](/help/sites-authoring/author-environment-tools.md#content-tree).
+  Esto abre o cierra el panel lateral, que contiene el [Explorador de recursos](/help/sites-authoring/author-environment-tools.md#assets-browser), [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser), y [Árbol de contenido](/help/sites-authoring/author-environment-tools.md#content-tree).
 
-   ![](do-not-localize/screen_shot_2018-03-22at111425.png)
+  ![Alternar panel lateral](do-not-localize/screen_shot_2018-03-22at111425.png)
 
 * **Información de la página**
 
-   Proporciona acceso al [Información de página](/help/sites-authoring/author-environment-tools.md#page-information) menú que incluye detalles de página y acciones que se pueden realizar en la página, incluida la visualización y edición de información de página, la visualización de propiedades de página y la publicación/cancelación de publicación de la página.
+  Proporciona acceso al [Información de página](/help/sites-authoring/author-environment-tools.md#page-information) menú que incluye detalles de página y acciones que se pueden realizar en la página, incluida la visualización y edición de información de página, la visualización de propiedades de página y la publicación/cancelación de publicación de la página.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111437.png)
+  ![Información de la página](do-not-localize/screen_shot_2018-03-22at111437.png)
 
 * **Emulador**
 
-   Alterna el [barra de herramientas del emulador](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), que se utiliza para emular el aspecto de la página en otro dispositivo. Esto se activa automáticamente en el modo de diseño.
+  Alterna el [barra de herramientas del emulador](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), que se utiliza para emular el aspecto de la página en otro dispositivo. Esto se activa automáticamente en el modo de diseño.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111442.png)
+  ![Emulador](do-not-localize/screen_shot_2018-03-22at111442.png)
 
 * **ContextHub**
 
-   Abre el [Context Hub](/help/sites-authoring/ch-previewing.md). Solo está disponible en el modo de vista previa.
+  Abre el [Context Hub](/help/sites-authoring/ch-previewing.md). Solo está disponible en el modo de vista previa.
 
-   ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+  ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
 
 * **Título de página**
 
-   Esto es puramente informativo.
+  Esto es puramente informativo.
 
-   ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
+  ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
 
 * **Selector de modo**
 
-   Muestra el actual [modo](/help/sites-authoring/author-environment-tools.md#page-modes) y permite seleccionar otro modo, como edición, diseño, deformación de tiempo o segmentación.
+  Muestra el actual [modo](/help/sites-authoring/author-environment-tools.md#page-modes) y permite seleccionar otro modo, como edición, diseño, deformación de tiempo o segmentación.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+  ![chlimage_1-120](assets/chlimage_1-120.png)
 
 * **Vista previa**
 
-   Habilita [modo de previsualización](/help/sites-authoring/editing-content.md#preview-mode). Esto muestra la página tal como aparecerá cuando se publique.
+  Habilita [modo de previsualización](/help/sites-authoring/editing-content.md#preview-mode). Esto muestra la página tal como aparecerá cuando se publique.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+  ![chlimage_1-121](assets/chlimage_1-121.png)
 
 * **Anotar**
 
-   Permite agregar [anotaciones](/help/sites-authoring/annotations.md) a la página cuando revise una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones en la página.
+  Permite agregar [anotaciones](/help/sites-authoring/annotations.md) a la página cuando revise una página. Después de la primera anotación, el icono cambia a un número que indica el número de anotaciones en la página.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111638.png)
+  ![Anotar](do-not-localize/screen_shot_2018-03-22at111638.png)
 
 ### Notificación de estado {#status-notification}
 
@@ -122,11 +122,11 @@ El marcador de posición de componente es un indicador que muestra dónde se col
 
 * Al añadir un componente nuevo a la página (arrastrando desde el explorador de componentes):
 
-   ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+  ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
 
 * Al mover un componente existente:
 
-   ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
+  ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
 
 ## Insertar un componente {#inserting-a-component}
 
@@ -230,77 +230,77 @@ Las acciones disponibles para el usuario se mostrarán según corresponda y es p
 
 * **Editar**
 
-   [En función del tipo de componente](/help/sites-authoring/default-components.md), esta opción le permite [editar el contenido del componente](#edit-content). Normalmente se mostrará una barra de herramientas.
+  [En función del tipo de componente](/help/sites-authoring/default-components.md), esta opción le permite [editar el contenido del componente](#edit-content). Normalmente se mostrará una barra de herramientas.
 
-   ![](do-not-localize/screen_shot_2018-03-22at112936.png)
+  ![Editar](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configurar**
 
-   [En función del tipo de componente](/help/sites-authoring/default-components.md), esta opción le permite editar y configurar las propiedades del componente. A menudo, se abrirá un cuadro de diálogo.
+  [En función del tipo de componente](/help/sites-authoring/default-components.md), esta opción le permite editar y configurar las propiedades del componente. A menudo, se abrirá un cuadro de diálogo.
 
-   ![](do-not-localize/screen_shot_2018-03-22at112955.png)
+  ![Configurar](do-not-localize/screen_shot_2018-03-22at112955.png)
 
 * **Copiar**
 
-   Esto copiará el componente en el portapapeles. Después de la acción de pegar, el componente original se mantiene.
+  Esto copiará el componente en el portapapeles. Después de la acción de pegar, el componente original se mantiene.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113000.png)
+  ![Copiar](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **Cortar**
 
-   Esto copiará el componente en el portapapeles. Después de la acción de pegar, se eliminará el componente original.
+  Esto copiará el componente en el portapapeles. Después de la acción de pegar, se eliminará el componente original.
 
-   ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
+  ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
 
 * **Eliminar**
 
-   Esto eliminará el componente de la página con su confirmación.
+  Esto eliminará el componente de la página con su confirmación.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113012.png)
+  ![Eliminar](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **Insertar componente**
 
-   Esto abre el cuadro de diálogo a [añadir un componente nuevo](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  Esto abre el cuadro de diálogo a [añadir un componente nuevo](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![](do-not-localize/screen_shot_2018-03-22at113017.png)
+  ![Insertar componente](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **Pegar**
 
-   Esto pegará el componente del portapapeles en la página. Si el original permanece, depende de si ha utilizado copiar o cortar.
+  Esto pegará el componente del portapapeles en la página. Si el original permanece, depende de si ha utilizado copiar o cortar.
 
    * Puede pegar en la misma página o en otra página.
    * El elemento pegado se pegará encima del elemento donde seleccione la acción de pegado.
    * La acción Pegar solo se mostrará si hay contenido en el portapapeles.
 
-   ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
+  ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
-   >[!NOTE]
-   >
-   >Si pega en una página diferente que ya estaba abierta antes de la operación de cortar o copiar, debe actualizar la página para ver el contenido pegado.
+  >[!NOTE]
+  >
+  >Si pega en una página diferente que ya estaba abierta antes de la operación de cortar o copiar, debe actualizar la página para ver el contenido pegado.
 
 * **Grupo**
 
-   Esto le permite seleccionar varios componentes a la vez. En un dispositivo de escritorio puede conseguir lo mismo haciendo **Control + clic** o **Comando + clic**.
+  Esto le permite seleccionar varios componentes a la vez. En un dispositivo de escritorio puede conseguir lo mismo haciendo **Control + clic** o **Comando + clic**.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113240.png)
+  ![Grupo](do-not-localize/screen_shot_2018-03-22at113240.png)
 
 * **Principal**
 
-   Permite seleccionar el componente principal del componente seleccionado.
+  Permite seleccionar el componente principal del componente seleccionado.
 
-   ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
+  ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
 
 * **Diseño**
 
-   Esto le permite modificar el [layout](/help/sites-authoring/editing-content.md#edit-component-layout) del componente seleccionado. Esto solo se aplica al componente seleccionado y no activa el [Modo Diseño](/help/sites-authoring/author-environment-tools.md#page-modes) para toda la página.
+  Esto le permite modificar el [layout](/help/sites-authoring/editing-content.md#edit-component-layout) del componente seleccionado. Esto solo se aplica al componente seleccionado y no activa el [Modo Diseño](/help/sites-authoring/author-environment-tools.md#page-modes) para toda la página.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113044.png)
+  ![Diseño](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Conversión en una variación de fragmento de experiencia**
 
-   Esto permite crear un nuevo [fragmento de experiencia](/help/sites-authoring/experience-fragments.md) a partir del componente seleccionado o añadirlo a un fragmento de experiencia. 
+  Esto permite crear un nuevo [fragmento de experiencia](/help/sites-authoring/experience-fragments.md) a partir del componente seleccionado o añadirlo a un fragmento de experiencia. 
 
-   ![](do-not-localize/screen_shot_2018-03-22at113033.png)
+  ![Convertir en variación de fragmento de experiencia](do-not-localize/screen_shot_2018-03-22at113033.png)
 
 ## Editar (contenido) {#edit-content}
 
@@ -317,28 +317,28 @@ Las opciones de edición exactas dependerán del componente. Para algunos compon
 
 * [Componente de texto](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-   ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
+  ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
 
 * Componente de imagen
 
-   ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
+  ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
 
-   >[!NOTE]
-   >
-   >La edición no funciona con un componente de imagen vacío.
-   >
-   >
-   >Usted debe [arrastrar o cargar una imagen (con Configurar)](/help/sites-authoring/default-components-foundation.md#image) antes de empezar a editarlo.
+  >[!NOTE]
+  >
+  >La edición no funciona con un componente de imagen vacío.
+  >
+  >
+  >Usted debe [arrastrar o cargar una imagen (con Configurar)](/help/sites-authoring/default-components-foundation.md#image) antes de empezar a editarlo.
 
 * Componente de imagen: pantalla completa
 
-   [La introducción del modo de pantalla completa](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) para el componente de imagen permite disponer de más espacio para editar la imagen y mostrar opciones de edición adicionales como **Iniciar mapa** y **Restablecer zoom**. Además, la pantalla completa permite seleccionar ajustes preestablecidos de recorte.
+  [La introducción del modo de pantalla completa](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) para el componente de imagen permite disponer de más espacio para editar la imagen y mostrar opciones de edición adicionales como **Iniciar mapa** y **Restablecer zoom**. Además, la pantalla completa permite seleccionar ajustes preestablecidos de recorte.
 
-   ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
+  ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
 
 * Componentes construidos a partir de más de un componente básico, como [Componente de base Texto e imagen](/help/sites-authoring/default-components-foundation.md#text-image), primero pídale que confirme qué conjunto de opciones de edición desea utilizar:
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+  ![chlimage_1-123](assets/chlimage_1-123.png)
 
 ### Arrastrar y colocar recursos en un componente {#drag-and-drop-assets-into-component}
 
@@ -356,7 +356,7 @@ Para tipos de componentes específicos puede arrastrar y soltar recursos desde e
 
 Se puede acceder y salir del modo de pantalla completa de todos los componentes con la siguiente opción:
 
-![](do-not-localize/chlimage_1-20.png)
+![Editar modo de pantalla completa](do-not-localize/chlimage_1-20.png)
 
 Por ejemplo, el componente **Texto**:
 
@@ -391,7 +391,7 @@ En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-au
 
    Pulse o haga clic en la acción **Diseño** para ajustar el diseño del componente.
 
-   ![](do-not-localize/chlimage_1-21.png)
+   ![Barra de herramientas de los componentes](do-not-localize/chlimage_1-21.png)
 
 1. Una vez seleccionada la acción Diseño:
 
@@ -405,7 +405,7 @@ En vez de pasar repetidamente de la edición al [modo de diseño](/help/sites-au
 
 1. Después de realizar los cambios necesarios, haga clic en el botón **Cerrar** del menú de acciones del componente para detener la edición del diseño. La barra de herramientas del componente recuperará su estado de edición normal.
 
-   ![](do-not-localize/screen_shot_2018-03-22at133920.png)
+   ![Cerrar](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
@@ -425,27 +425,27 @@ Puede cancelar (y volver a habilitar) la herencia. Según el componente, esto pu
 
 * **Live Copy**
 
-   La barra de herramientas de componentes, si el componente se encuentra en una página que forma parte de una Live Copy o Launch (basado en una Live Copy). Por ejemplo:
+  La barra de herramientas de componentes, si el componente se encuentra en una página que forma parte de una Live Copy o Launch (basado en una Live Copy). Por ejemplo:
 
-   ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
+  ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
 
-   La opción Cancelar herencia está disponible:
+  La opción Cancelar herencia está disponible:
 
-   ![](do-not-localize/screen_shot_2018-03-22at134406.png)
+  ![Cancelar herencia](do-not-localize/screen_shot_2018-03-22at134406.png)
 
-   O volver a habilitar la herencia si ya se ha cancelado:
+  O volver a habilitar la herencia si ya se ha cancelado:
 
-   ![](do-not-localize/screen_shot_2018-03-22at134417.png)
+  ![Volver a habilitar herencia](do-not-localize/screen_shot_2018-03-22at134417.png)
 
-   La acción Despliegue también está disponible en el modelo o en el origen de Live Copy:
+  La acción Despliegue también está disponible en el modelo o en el origen de Live Copy:
 
-   ![](do-not-localize/screen_shot_2018-03-22at134516.png)
+  ![Despliegue](do-not-localize/screen_shot_2018-03-22at134516.png)
 
 * **Un sistema de párrafos heredado**
 
-   El cuadro de diálogo Configuración. Por ejemplo, como con el sistema de párrafos heredados:
+  El cuadro de diálogo Configuración. Por ejemplo, como con el sistema de párrafos heredados:
 
-   ![chlimage_1-124](assets/chlimage_1-124.png)
+  ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ## Edición de las plantilla de página {#editing-the-page-template}
 
@@ -485,7 +485,6 @@ Existen dos métodos para visualizar la vista previa de una página:
 >* Utilice el [atajo de teclado](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` para cambiar entre la vista previa y el último modo seleccionado.
 >
 
-
 >[!NOTE]
 >
 >La cookie del modo WCM está establecida para ambas opciones.
@@ -517,7 +516,7 @@ Las páginas se pueden bloquear desde las ubicaciones siguientes:
    1. Seleccione la página con [modo de selección](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Seleccione el icono de bloqueo.
 
-   ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
+  ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor de página**
 
@@ -552,7 +551,7 @@ El menú Información de página muestra la opción **Desbloquear** y el icono B
 
 Los iconos siguientes le permiten deshacer o rehacer una acción. Se muestran en la barra de herramientas cuando corresponde:
 
-![](do-not-localize/screen_shot_2018-03-23at093614.png)
+![Deshacer y rehacer](do-not-localize/screen_shot_2018-03-23at093614.png)
 
 >[!NOTE]
 >
@@ -584,7 +583,6 @@ El comportamiento de los comandos Deshacer y Rehacer es similar al de otros prog
 >* Deshacer un máximo de 20 acciones de edición (configuración predeterminada).
 >* También utilice [Métodos abreviados del teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para deshacer y rehacer.
 >
-
 
 Puede utilizar las funciones Deshacer y Rehacer para los siguientes tipos de cambios de página:
 
