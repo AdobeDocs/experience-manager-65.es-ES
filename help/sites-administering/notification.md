@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 144fbe2d0efe20d848e9556f8d652a403d1835b2
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2026'
 ht-degree: 12%
 
 ---
@@ -144,11 +144,11 @@ Donde &lt;text_x> puede ser una combinación de texto estático y variables de c
 * `${userId}`, el ID del usuario que activó el evento.
 * `${modifications}`, describe el tipo del evento de página y la ruta de página con el formato:
 
-   &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
+  &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
 
-   Por ejemplo:
+  Por ejemplo:
 
-   PageModified => /content/geometrixx/en/products
+  PageModified => /content/geometrixx/en/products
 
 ### Plantillas de correo electrónico para notificación de flujo de trabajo {#email-templates-for-workflow-notification}
 
@@ -342,7 +342,7 @@ Finalmente, confirme la configuración mediante lo siguiente:
 1. Busque **Azure Active Directory** en la barra de búsqueda y haga clic en el resultado. También puede navegar directamente a [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Haga clic en **Registro de aplicaciones** - **Nuevo registro**
 
-   ![](assets/oauth-outlook1.png)
+   ![Configuración de Microsoft Outlook](assets/oauth-outlook1.png)
 
 1. Rellene la información según sus necesidades y haga clic en **Registro**
 1. Vaya a la aplicación recién creada y seleccione **Permisos de API**
@@ -397,7 +397,7 @@ AEM A continuación, integre la configuración de OAuth2 con las siguientes opci
 
 Una vez configurada, la configuración debería ser similar a la siguiente:
 
-![](assets/oauth-outlook-smptconfig.png)
+![AEM vista de configuraciones de lado](assets/oauth-outlook-smptconfig.png)
 
 Ahora, active los componentes de OAuth. Para ello:
 

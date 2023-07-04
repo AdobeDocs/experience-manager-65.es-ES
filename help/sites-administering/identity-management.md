@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1226'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Los visitantes individuales del sitio web solo se pueden identificar si se permi
 * [AEM Communities](/help/communities/overview.md)Los visitantes del sitio deben iniciar sesión para publicar contenido en la comunidad.
 * [Grupos de usuarios cerrados](/help/sites-administering/cug.md)
 
-   Es posible que deba limitar el acceso a su sitio web (o a secciones de este) a visitantes específicos.
+  Es posible que deba limitar el acceso a su sitio web (o a secciones de este) a visitantes específicos.
 
 * [Personalización](/help/sites-administering/personalization.md) Permite a los visitantes configurar ciertos aspectos del acceso al sitio web.
 
@@ -33,15 +33,15 @@ La funcionalidad de inicio (y cierre) de sesión la proporciona una [cuenta con 
 
 * Registro automático desde el sitio web
 
-   A [Sitio de comunidad](/help/communities/sites-console.md) pueden configurarse para permitir que los visitantes se registren automáticamente o inicien sesión con sus cuentas de Facebook o Twitter.
+  A [Sitio de comunidad](/help/communities/sites-console.md) pueden configurarse para permitir que los visitantes se registren automáticamente o inicien sesión con sus cuentas de Facebook o Twitter.
 
 * Solicitud de registro en el sitio web
 
-   En el caso de un grupo de usuarios cerrado, puede permitir a los visitantes solicitar el registro, pero exigir la autorización mediante un flujo de trabajo.
+  En el caso de un grupo de usuarios cerrado, puede permitir a los visitantes solicitar el registro, pero exigir la autorización mediante un flujo de trabajo.
 
 * Registre cada cuenta del entorno de creación
 
-   Si tiene un pequeño número de perfiles, que necesitarán autorización de todos modos, puede decidir registrar cada uno directamente.
+  Si tiene un pequeño número de perfiles, que necesitarán autorización de todos modos, puede decidir registrar cada uno directamente.
 
 Para permitir que los visitantes se registren, se puede utilizar una serie de componentes y formularios para recopilar la información de identificación necesaria y, a continuación, la información de perfil adicional (a menudo opcional). Después de registrarse, también deben poder comprobar y actualizar los detalles que han enviado.
 
@@ -106,7 +106,7 @@ Puede ver otro perfil con la variable [Client Context](/help/sites-administering
 1. Prensa **control-alt-C** para abrir el Client Context.
 1. En la esquina superior izquierda del contexto del cliente, haga clic en **Cargar un perfil** botón.
 
-   ![](do-not-localize/loadprofile.png)
+   ![Botón Cargar un perfil](do-not-localize/loadprofile.png)
 
 1. Seleccione otro perfil de la lista desplegable de la ventana de diálogo; por ejemplo, **Alison Parker**.
 1. Haga clic en **Aceptar**.
@@ -156,11 +156,11 @@ Esto se realiza con:
 
 * [Proveedores estatales](#state-providers)
 
-   Para administrar los dos estados de una propiedad específica y las transiciones entre los dos.
+  Para administrar los dos estados de una propiedad específica y las transiciones entre los dos.
 
 * [Flujos de trabajo](#workflows)
 
-   Para administrar acciones relacionadas con los estados.
+  Para administrar acciones relacionadas con los estados.
 
 Se pueden definir varios estados; por ejemplo, en la Geometrixx se incluyen:
 

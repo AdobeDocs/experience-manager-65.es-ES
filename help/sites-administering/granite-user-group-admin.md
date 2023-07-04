@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '945'
 ht-degree: 4%
 
 ---
@@ -32,9 +32,9 @@ Elección de una **Usuarios** o **Grupos** desde la consola Herramientas se abri
 
 * [Administración de usuarios](#user-administration)
 
-   ![chlimage_1-73](assets/chlimage_1-73a.png)
+  ![chlimage_1-73](assets/chlimage_1-73a.png)
 
-   El **Usuarios** listas de la consola:
+  El **Usuarios** listas de la consola:
 
    * el nombre de usuario
    * el nombre de inicio de sesión del usuario (nombre de cuenta)
@@ -42,9 +42,9 @@ Elección de una **Usuarios** o **Grupos** desde la consola Herramientas se abri
 
 * [Administración de grupos](#group-administration)
 
-   ![chlimage_1-74](assets/chlimage_1-74a.png)
+  ![chlimage_1-74](assets/chlimage_1-74a.png)
 
-   El **Grupos** listas de la consola:
+  El **Grupos** listas de la consola:
 
    * el nombre del grupo
    * la descripción del grupo
@@ -56,7 +56,7 @@ Elección de una **Usuarios** o **Grupos** desde la consola Herramientas se abri
 
 1. Utilice el **Añadir usuario** icono:
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Añadir usuario](do-not-localize/chlimage_1-1.png)
 
 1. El **Crear usuario** se abrirá el formulario:
 
@@ -66,16 +66,16 @@ Elección de una **Usuarios** o **Grupos** desde la consola Herramientas se abri
 
    * **ID**
 
-      Esta es la identificación única de la cuenta de usuario. Es obligatorio y no puede contener espacios.
+     Esta es la identificación única de la cuenta de usuario. Es obligatorio y no puede contener espacios.
 
    * **Dirección de correo electrónico**
    * **Contraseña**
 
-      Es obligatorio introducir una contraseña.
+     Es obligatorio introducir una contraseña.
 
    * **Repetir contraseña**
 
-      Esto es obligatorio, ya que es necesario para confirmar la contraseña.
+     Esto es obligatorio, ya que es necesario para confirmar la contraseña.
 
    * **Nombre**
    * **Apellidos**
@@ -93,24 +93,23 @@ Elección de una **Usuarios** o **Grupos** desde la consola Herramientas se abri
    * **Configuración de la cuenta**
 
       * **Estado**
-Puede marcar la cuenta como 
-**activo** o **inactivo**.
+Puede marcar la cuenta como **activo** o **inactivo**.
+
    * **Fotografía**
 
-      Aquí puede cargar una foto para utilizarla como avatar.
+     Aquí puede cargar una foto para utilizarla como avatar.
 
-      Tipos de archivo admitidos: `.jpg .png .tif .gif`
+     Tipos de archivo admitidos: `.jpg .png .tif .gif`
 
-      Tamaño preferido: `240x240px`
+     Tamaño preferido: `240x240px`
 
    * **Añadir usuario a los grupos**
 
-      Utilice la lista desplegable de selección para seleccionar los grupos a los que debe pertenecer el usuario. Una vez seleccionada, utilice el **X** por el nombre para anular la selección antes de guardar.
+     Utilice la lista desplegable de selección para seleccionar los grupos a los que debe pertenecer el usuario. Una vez seleccionada, utilice el **X** por el nombre para anular la selección antes de guardar.
 
    * **Grupos**
 
-      Una lista de los grupos de los que el usuario es miembro actualmente. Utilice el **X** por el nombre para anular la selección antes de guardar.
-
+     Una lista de los grupos de los que el usuario es miembro actualmente. Utilice el **X** por el nombre para anular la selección antes de guardar.
 
 1. Una vez definida la cuenta de usuario, utilice:
 
@@ -146,7 +145,7 @@ Puede marcar la cuenta como
 1. Utilice la casilla de verificación para marcar uno o varios usuarios.
 1. Utilice el **Grupos** icono:
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Uso del icono Grupos](do-not-localize/chlimage_1-2.png)
 
    Para abrir la lista desplegable de selección de grupo:
 
@@ -164,7 +163,7 @@ Puede marcar la cuenta como
 1. Utilice la casilla de verificación para marcar uno o varios usuarios.
 1. Utilice el **Eliminar** icono para eliminar los detalles del usuario:
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Eliminar detalles del usuario existente](do-not-localize/chlimage_1-3.png)
 
 1. Se le pedirá que confirme la eliminación y un mensaje confirmará que la eliminación real se ha realizado.
 
@@ -174,7 +173,7 @@ Puede marcar la cuenta como
 
 1. Utilice el icono Añadir grupo:
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Agregar un nuevo grupo](do-not-localize/chlimage_1-4.png)
 
 1. El **Crear grupo** se abrirá el formulario:
 
@@ -184,23 +183,23 @@ Puede marcar la cuenta como
 
    * **ID**
 
-      Es un identificador único del grupo. Es obligatorio y no puede contener espacios.
+     Es un identificador único del grupo. Es obligatorio y no puede contener espacios.
 
    * **Nombre**
 
-      Un nombre para el grupo; se mostrará en la consola Grupos.
+     Un nombre para el grupo; se mostrará en la consola Grupos.
 
    * **Descripción**
 
-      Una descripción del grupo.
+     Una descripción del grupo.
 
    * **Añadir miembros al grupo**
 
-      Utilice la lista desplegable de selección para seleccionar los usuarios que desea añadir al grupo. Una vez seleccionada, utilice el **X** por el nombre para anular la selección antes de guardar.
+     Utilice la lista desplegable de selección para seleccionar los usuarios que desea añadir al grupo. Una vez seleccionada, utilice el **X** por el nombre para anular la selección antes de guardar.
 
    * **Miembros del grupo**
 
-      Una lista de los usuarios del grupo. Utilice el **X** por el nombre para anular la selección antes de guardar.
+     Una lista de los usuarios del grupo. Utilice el **X** por el nombre para anular la selección antes de guardar.
 
 1. Cuando haya definido el grupo, utilice:
 
@@ -218,7 +217,7 @@ Puede marcar la cuenta como
 1. Utilice la casilla para marcar un grupo.
 1. Utilice el **Copiar** para copiar los detalles del grupo:
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Copiar un grupo existente](do-not-localize/chlimage_1-5.png)
 
 1. El **Editar configuración de grupo** se abrirá el formulario.
 
@@ -231,6 +230,6 @@ Puede marcar la cuenta como
 1. Utilice el cuadro de diálogo para marcar uno o más grupos.
 1. Utilice el **Eliminar** icono para eliminar los detalles del grupo:
 
-   ![](do-not-localize/chlimage_1-6.png)
+   ![Eliminación de un grupo existente](do-not-localize/chlimage_1-6.png)
 
 1. Se le pedirá que confirme la eliminación y un mensaje confirmará que la eliminación real se ha realizado.

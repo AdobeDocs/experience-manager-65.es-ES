@@ -10,9 +10,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5402'
 ht-degree: 1%
 
 ---
@@ -284,14 +284,14 @@ A continuación se ofrecen recomendaciones acerca de la administración de lista
 
 * No asigne permisos directamente a los usuarios. Asígnelos únicamente a grupos.
 
-   Esto simplifica el mantenimiento, ya que el número de grupos es mucho menor que el número de usuarios y también menos volátil.
+  Esto simplifica el mantenimiento, ya que el número de grupos es mucho menor que el número de usuarios y también menos volátil.
 
 * Si desea que un grupo o usuario solo pueda modificar páginas, no le conceda derechos de creación ni de denegación. Conceda solo derechos de modificación y lectura.
 * Utilice Denegar con moderación. En la medida de lo posible, utilice Permitir solamente.
 
-   El uso de denegar puede producir efectos inesperados si los permisos se aplican en un orden diferente al esperado. Si un usuario es miembro de más de un grupo, las instrucciones Denegar de un grupo pueden cancelar la instrucción Permitir de otro grupo o viceversa. Es difícil mantener una visión general cuando sucede algo así y puede llevar fácilmente a resultados imprevistos, mientras que Permitir asignaciones no causa tales conflictos.
+  El uso de denegar puede producir efectos inesperados si los permisos se aplican en un orden diferente al esperado. Si un usuario es miembro de más de un grupo, las instrucciones Denegar de un grupo pueden cancelar la instrucción Permitir de otro grupo o viceversa. Es difícil mantener una visión general cuando sucede algo así y puede llevar fácilmente a resultados imprevistos, mientras que Permitir asignaciones no causa tales conflictos.
 
-   El Adobe recomienda trabajar con Permitir en lugar de Denegar para ver [Prácticas recomendadas](#best-practices).
+  El Adobe recomienda trabajar con Permitir en lugar de Denegar para ver [Prácticas recomendadas](#best-practices).
 
 Antes de modificar cualquiera de los permisos, asegúrese de comprender cómo funcionan y cómo se relacionan entre sí. AEM Consulte la documentación de CRX que ilustra cómo se usa WCM para la administración de la [evalúa los derechos de acceso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)y ejemplos sobre la configuración de listas de control de acceso.
 
@@ -391,7 +391,7 @@ AEM Para tener acceso a la seguridad de WCM de la, siga uno de estos procedimien
 
 * AEM En la pantalla de bienvenida de o en varias ubicaciones de, haga clic en el icono de seguridad:
 
-![](do-not-localize/wcmtoolbar.png)
+![AEM Pestaña Seguridad de WCM de](do-not-localize/wcmtoolbar.png)
 
 * Vaya directamente a `https://<server>:<port>/useradmin`. AEM Asegúrese de iniciar sesión en el servicio de administración de.
 
@@ -640,7 +640,6 @@ El privilegio de replicación es el derecho para publicar contenido y se puede e
 >* Los privilegios de replicación de un usuario reemplazan a los de un grupo.
 >* Los derechos Permitir replicación tienen una prioridad mayor que Denegar derechos de replicación. Consulte [AEM Permisos en la](#permissions-in-aem) para obtener más información.
 >
-
 
 Para establecer privilegios de replicación:
 

@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '760'
 ht-degree: 1%
 
 ---
@@ -30,41 +30,41 @@ AEM.5 presenta la Administración de permisos para usuarios y grupos. La funcion
 
 Se accede a la nueva administración de permisos basada en la interfaz de usuario a través de la tarjeta Permisos en Seguridad, como se muestra a continuación:
 
-![](assets/screen_shot_2019-03-17at63333pm.png)
+![IU de administración de permisos](assets/screen_shot_2019-03-17at63333pm.png)
 
 La nueva vista facilita la visualización de todo el conjunto de privilegios y restricciones para un principal determinado en todas las rutas en las que se han concedido permisos explícitamente. Esto elimina la necesidad de ir a
 
 CRXDE para administrar privilegios y restricciones avanzados. Se ha consolidado en la misma vista. La vista predeterminada es Grupo &quot;todos&quot;.
 
-![](assets/unu-1.png)
+![Vista del grupo &quot;todos&quot;](assets/unu-1.png)
 
 Hay un filtro que permite al usuario seleccionar el tipo de entidades de seguridad que desea ver **Usuarios**, **Grupos**, o **Todo** y buscar cualquier principal **.**
 
-![](assets/image2019-3-20_23-52-51.png)
+![Buscar tipos de identidades](assets/image2019-3-20_23-52-51.png)
 
 ### Visualización de permisos para una entidad principal {#viewing-permissions-for-a-principal}
 
 El marco de la izquierda permite a los usuarios desplazarse hacia abajo para encontrar cualquier principal o buscar un grupo o un usuario en función del filtro seleccionado, como se muestra a continuación:
 
-![](assets/doi-1.png)
+![Ver permisos para una entidad principal](assets/doi-1.png)
 
 Al hacer clic en el nombre, se muestran los permisos asignados a la derecha. El panel de permisos muestra la lista de entradas de control de acceso en rutas específicas junto con las restricciones configuradas.
 
-![](assets/trei-1.png)
+![Ver lista ACL](assets/trei-1.png)
 
 ### Agregar una nueva entrada de control de acceso para una entidad principal {#adding-new-access-control-entry-for-a-principal}
 
 Para agregar nuevos permisos, agregue una nueva Entrada de control de acceso haciendo clic en el botón Agregar ACE.
 
-![](assets/patru.png)
+![Agregar nueva ACL para un principal](assets/patru.png)
 
 Esto abre la ventana que se muestra a continuación. El siguiente paso es elegir una ruta en la que se deba configurar el permiso.
 
-![](assets/cinci-1.png)
+![Configuración de la ruta de permisos](assets/cinci-1.png)
 
 Aquí seleccionamos una ruta en la que queremos configurar un permiso para **dam-users**:
 
-![](assets/sase-1.png)
+![Ejemplo de configuración para usuarios dam](assets/sase-1.png)
 
 Una vez seleccionada la ruta, el flujo de trabajo vuelve a esta pantalla, donde el usuario puede seleccionar uno o varios privilegios de las áreas de nombres disponibles (como `jcr`, `rep` o `crx`) como se muestra a continuación.
 
@@ -74,17 +74,17 @@ Los privilegios se pueden añadir buscando en el campo de texto y seleccionando 
 >
 >Para obtener una lista completa de privilegios y descripciones, consulte [esta página](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
+![Permiso de búsqueda para una ruta determinada](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
 
 Una vez seleccionada la lista de privilegios, el usuario puede elegir el Tipo de permiso : Denegar o Permitir, como se muestra a continuación.
 
-![](assets/screen_shot_2019-03-17at63938pm.png) ![](assets/screen_shot_2019-03-17at63947pm.png)
+![Seleccionar permiso](assets/screen_shot_2019-03-17at63938pm.png) ![Seleccionar permiso](assets/screen_shot_2019-03-17at63947pm.png)
 
 ### Uso de restricciones {#using-restrictions}
 
 Además de la lista de privilegios y el Tipo de permiso en una ruta determinada, esta pantalla también permite agregar restricciones para el control de acceso de grano fino como se muestra a continuación:
 
-![](assets/image2019-3-21_1-4-14.png)
+![Agregar restricciones](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Además de la lista de privilegios y el Tipo de permiso en una ruta determinada,
 
 Las restricciones se pueden añadir como se muestra a continuación seleccionando el tipo de restricción, introduciendo el valor y pulsando el botón **+** icono.
 
-![](assets/sapte-1.png) ![](assets/opt-1.png)
+![Añadir el tipo de restricción](assets/sapte-1.png) ![Añadir el tipo de restricción](assets/opt-1.png)
 
 La nueva ACE se refleja en la Lista de control de acceso como se muestra a continuación. Tenga en cuenta que `jcr:write` es un privilegio agregado que incluye `jcr:removeNode` que se añadió anteriormente, pero no se muestra a continuación como cubierto en `jcr:write`.
 
@@ -110,17 +110,17 @@ La pantalla de edición se muestra con las entradas de control de acceso configu
 
 Aquí se agrega el `addChildNodes` privilegio para **dam-users** en la ruta dada.
 
-![](assets/image2019-3-21_0-45-35.png)
+![Privilegio Add](assets/image2019-3-21_0-45-35.png)
 
-Los cambios se pueden guardar haciendo clic en el **Guardar** en la parte superior derecha, y los cambios se reflejarán en los nuevos permisos para **dam-users **como se muestra a continuación:
+Los cambios se pueden guardar haciendo clic en el **Guardar** en la parte superior derecha, y los cambios se reflejarán en los nuevos permisos para **dam-users** como se muestra a continuación:
 
-![](assets/zece-1.png)
+![Guardar cambios](assets/zece-1.png)
 
 ### Eliminación de ACE {#deleting-aces}
 
 Las entradas de control de acceso se pueden eliminar para eliminar todos los permisos otorgados a una entidad de seguridad en una ruta específica. El icono X situado junto a ACE puede utilizarse para eliminarlo, como se muestra a continuación:
 
-![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
+![Eliminar ACE](assets/image2019-3-21_0-53-19.png) ![Eliminar ACE](assets/unspe.png)
 
 ### Combinaciones de privilegios de IU clásica {#classic-ui-privilege-combinations}
 
