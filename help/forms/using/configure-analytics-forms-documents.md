@@ -10,10 +10,10 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: 66631fd0813f623f3321072fc00fd90f7fa33d21
+source-git-commit: fef4f47794942b1fca4b30ce518b2faa8951f482
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -112,7 +112,7 @@ Siga estos pasos para crear un grupo de informes.
 La configuración de Cloud Service es información sobre su cuenta de Adobe Analytics. La configuración permite que Adobe Experience Manager (AEM) se conecte a Adobe Analytics. Cree una configuración diferente para cada cuenta de Analytics que utilice.
 
 1. Inicie sesión en la instancia de autor de AEM como administrador.
-1. En la esquina superior izquierda, haga clic en **Adobe Experience Manager** > **Herramientas** ![](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services heredados**.
+1. En la esquina superior izquierda, haga clic en **Adobe Experience Manager** > **Herramientas** ![icono de martillo](/help/forms/using/assets/tools.png) > **Cloud Services** > **Cloud Services heredados**.
 1. Localice el icono de **Adobe Analytics**. Haga clic en **Mostrar configuraciones** y, a continuación, haga clic en **[+]** para agregar nueva configuración.
 
    Si es la primera vez que lo hace, haga clic en **Configurar ahora**.
@@ -169,6 +169,7 @@ Un marco de trabajo de Adobe Analytics es un conjunto de asignaciones entre vari
    * **Sincronización de informes de Analytics**: especifique la expresión cron para recuperar informes de Adobe Analytics. El valor predeterminado es 0 0 2 ? &#42; &#42;.
 
    * **Recuperar tiempo de espera de informe:** especifique la duración, en segundos, que se debe esperar para que el servidor responda al informe de análisis. El tiempo predeterminado es 120 segundos.
+
    >[!NOTE]
    >
    >La operación de búsqueda de informes puede tardar hasta 10 segundos más que el número de segundos especificado.

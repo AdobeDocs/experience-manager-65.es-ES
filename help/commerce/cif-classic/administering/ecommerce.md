@@ -5,10 +5,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 745ca1aa7bc96d0938ec550a357d9edcbea341db
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -137,11 +137,11 @@ AEM eCommerce proporciona lo siguiente:
    * Cupones
    * y otros
 
-   ![](/help/sites-administering/assets/chlimage_1-130.png)
+  ![ejemplo de componentes de geometrixx](/help/sites-administering/assets/chlimage_1-130.png)
 
-   >[!NOTE]
-   >
-   >AEM AEM El marco de trabajo de integración proporcionado por el usuario también le permite crear componentes de integración adicionales para las capacidades de comercio electrónico independientemente de su motor específico de comercio electrónico.
+  >[!NOTE]
+  >
+  >AEM AEM El marco de trabajo de integración proporcionado por el usuario también le permite crear componentes de integración adicionales para las capacidades de comercio electrónico independientemente de su motor específico de comercio electrónico.
 
 * **Buscar** - usando:
 
@@ -150,28 +150,28 @@ AEM eCommerce proporciona lo siguiente:
    * una búsqueda de terceros
    * o una combinación de los mismos.
 
-   ![](/help/sites-administering/assets/chlimage_1-131.png)
+  ![ejemplo de búsqueda](/help/sites-administering/assets/chlimage_1-131.png)
 
 * AEM Utiliza la capacidad de para **presentar el contenido en varios canales**, ya sea una ventana completa del navegador o un dispositivo móvil. Esto ofrece el contenido en el formato que necesitan los visitantes.
 
-   ![](/help/sites-administering/assets/chlimage_1-132.png)
+  ![ejemplo de vista móvil](/help/sites-administering/assets/chlimage_1-132.png)
 
 * La capacidad de **desarrolle su propia implementación de integración basada en [AEM Marco de eCommerce de](#the-framework)**.
 
-   Las dos implementaciones disponibles actualmente se crean sobre la misma base, además de la API general (el marco de trabajo). La implementación de una nueva integración solo implica implementar las funciones que su integración necesita. Cualquier implementación nueva puede utilizar los componentes front-end, ya que utilizan interfaces (por lo que son independientes de la implementación).
+  Las dos implementaciones disponibles actualmente se crean sobre la misma base, además de la API general (el marco de trabajo). La implementación de una nueva integración solo implica implementar las funciones que su integración necesita. Cualquier implementación nueva puede utilizar los componentes front-end, ya que utilizan interfaces (por lo que son independientes de la implementación).
 
 * La posibilidad de desarrollar **comercio basado en la experiencia y en los datos de los compradores y la actividad**. Esto le permite realizar muchos escenarios:
 
    * Un ejemplo podría ser proporcionar reducciones en los costes de envío cuando el pedido total supera una cantidad específica.
    * Otro podría permitirle proporcionar ofertas estacionales que utilicen datos de perfil (por ejemplo, ubicación). A continuación, se pueden resaltar, nuevamente en función de otros factores cuando sea necesario.
 
-   En el ejemplo siguiente, se muestra un teaser porque el contenido del carro de compras es inferior a 75 $:
+  En el ejemplo siguiente, se muestra un teaser porque el contenido del carro de compras es inferior a 75 $:
 
-   ![](/help/sites-administering/assets/chlimage_1-133.png)
+  ![carro de compras con contexto de cliente](/help/sites-administering/assets/chlimage_1-133.png)
 
-   Esto se puede cambiar cuando el contenido del carro de compras supera los 75 $:
+  Esto se puede cambiar cuando el contenido del carro de compras supera los 75 $:
 
-   ![](/help/sites-administering/assets/chlimage_1-134.png)
+  ![carro de compras con contexto de cliente después del cambio](/help/sites-administering/assets/chlimage_1-134.png)
 
 * Y otras características que incluyen:
 

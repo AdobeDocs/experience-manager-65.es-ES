@@ -8,10 +8,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 6ebcc7bd5c72c01672244fdfba353a8949f6e331
 workflow-type: tm+mt
-source-wordcount: '2910'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -66,21 +66,22 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 1. Uso del **Productos** consola de navegue hasta la ubicación requerida.
 1. Utilice el **Importar productos** para abrir el asistente.
 
-   ![chlimage_1-1](/help/sites-administering/do-not-localize/chlimage_1-13.png)
+   ![Icono Importar productos](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
 1. Especifique:
 
    * **Importador**
 
-      El importador del específico [proveedor comercial](/help/commerce/cif-classic/administering/concepts.md#commerce-providers), de forma predeterminada `Geometrixx`.
+     El importador del específico [proveedor comercial](/help/commerce/cif-classic/administering/concepts.md#commerce-providers), de forma predeterminada `Geometrixx`.
 
    * **Origen**
 
-      El archivo que desea importar; puede utilizar el explorador para seleccionar un archivo.
+     El archivo que desea importar; puede utilizar el explorador para seleccionar un archivo.
 
    * **Importación incremental**
 
-      Indique si se trata de una importación incremental (en lugar de una importación completa).
+     Indique si se trata de una importación incremental (en lugar de una importación completa).
+
    >[!NOTE]
    >
    >La importación incremental (del importador de muestra de geometrixx-outdoor) funciona en el nivel de producto.
@@ -104,27 +105,27 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 1. Uso del **Herramientas** consola abra el **Comercio** carpeta.
 1. Haga doble clic para abrir **Importador de productos**:
 
-   ![chlimage_1-22](/help/sites-administering/assets/chlimage_1-22.jpeg)
+   ![Consola de importador de productos](/help/sites-administering/assets/chlimage_1-22.jpeg)
 
 1. Especifique:
 
    * **Nombre del almacén**
 
-      Los productos se importarán en:
+     Los productos se importarán en:
 
-      `/etc/commerce/products/<*store name*>/`
+     `/etc/commerce/products/<*store name*>/`
 
    * **Proveedor comercial**
 
-      El importador de su [proveedor comercial](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); de forma predeterminada Geometrixx.
+     El importador de su [proveedor comercial](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); de forma predeterminada Geometrixx.
 
    * **Archivo de origen**
 
-      La ubicación en el repositorio del archivo que desea importar.
+     La ubicación en el repositorio del archivo que desea importar.
 
    * **Importación incremental**
 
-      Indique si se trata de una importación incremental (en lugar de una importación completa).
+     Indique si se trata de una importación incremental (en lugar de una importación completa).
 
 1. Clic **Importar productos**.
 
@@ -142,7 +143,7 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
    * **Crear el producto**
    * **Crear variación del producto**
 
-   ![chlimage_1-14](/help/sites-administering/do-not-localize/chlimage_1-14.png)
+   ![Icono Crear con forma de plus](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
 1. Se abrirá el asistente. Utilice el **Básico** y **Fichas del producto** para introducir el [atributos del producto](/help/commerce/cif-classic/administering/concepts.md#product-attributes) para el nuevo producto o variante de producto.
 
@@ -178,7 +179,7 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 
    Seleccione el **Ver datos del producto** icono:
 
-   ![chlimage_1-3](/help/sites-administering/do-not-localize/chlimage_1-15.png)
+   ![icono ver datos del producto: icono de información](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
 1. El [atributos del producto](/help/commerce/cif-classic/administering/concepts.md#product-attributes) se mostrará. Uso **Editar** y **Listo** para realizar cualquier cambio.
 
@@ -189,11 +190,11 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
 1. Uso del **Productos** consola (mediante **Comercio**) vaya a la información del producto.
 1. Abra el carril secundario de Referencias con el icono:
 
-   ![chlimage_1-4](/help/sites-administering/do-not-localize/chlimage_1-16.png)
+   ![icono de flecha doble](/help/sites-administering/do-not-localize/chlimage_1-16.png)
 
 1. Seleccione el producto necesario; el carril secundario se actualizará para mostrar los tipos de referencia disponibles:
 
-   ![chlimage_1-88](/help/sites-administering/assets/chlimage_1-88.png)
+   ![consola productos con referencias abiertas](/help/sites-administering/assets/chlimage_1-88.png)
 
 1. Pulse o haga clic en el tipo de referencia (p. ej. Páginas de producto) para expandir la lista.
 1. Seleccione una referencia específica para mostrar las opciones:
@@ -201,18 +202,18 @@ Se necesita un andamio para cada tipo de producto distinto. El andamio adecuado 
    * Navegar a pág. producto
    * Editar página del producto
 
-   ![chlimage_1-89](/help/sites-administering/assets/chlimage_1-89.png)
+   ![Panel de referencia de la consola Productos](/help/sites-administering/assets/chlimage_1-89.png)
 
 ### Buscar productos {#search-for-products}
 
 1. Vaya a **Productos** consola, mediante **Comercio**.
 1. Abra el carril secundario para Buscar con el icono:
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-17.png)
+   ![icono de lupa](/help/sites-administering/do-not-localize/chlimage_1-17.png)
 
 1. Hay varias facetas disponibles para que busque productos. Para realizar una búsqueda sólo se pueden utilizar una o varias facetas. Los productos encontrados aparecerán:
 
-   ![chlimage_1-90](/help/sites-administering/assets/chlimage_1-90.png)
+   ![Datos de producto en la consola Productos](/help/sites-administering/assets/chlimage_1-90.png)
 
 1. Al tocar o hacer clic en un producto, se abre. También puede publicarlo o ver los datos del producto.
 
@@ -250,7 +251,7 @@ Puede agregar varios recursos en el componente del producto y, a continuación, 
 1. Toque o haga clic en el icono Editar.
 1. Desplazarse a **Añadir**.
 
-   ![chlimage_1-91](/help/sites-administering/assets/chlimage_1-91.png)
+   ![Adición de datos de producto, captura de pantalla](/help/sites-administering/assets/chlimage_1-91.png)
 
 1. Pulse o haga clic en **Añadir**. Aparece un nuevo marcador de posición de recurso.
 1. Al pulsar o hacer clic en **Cambiar **se abre un cuadro de diálogo que le permite elegir un recurso.
@@ -337,7 +338,7 @@ El mecanismo para seleccionar la imagen que se va a mostrar es el siguiente:
 
    Seleccione el **Publish** o **Cancelar publicación** icono según sea necesario:
 
-   ![chlimage_1-6](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![chlimage_1-7](/help/sites-administering/do-not-localize/chlimage_1-19.png)
+   ![icono mundial](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![icono del mundo con una cruz - sin signo](/help/sites-administering/do-not-localize/chlimage_1-19.png)
 
    La información del producto se publicará o cancelará la publicación según corresponda.
 
@@ -367,7 +368,7 @@ Para el `PRODUCT_*` eventos, la ruta apunta al producto base en `/etc/commerce/p
 
 Puede verlas en la consola web en los eventos OSGI ( `/system/console/events`), por ejemplo:
 
-![](/help/sites-administering/do-not-localize/chlimage_1-20.png)
+![Ejemplos de eventos OSGI](/help/sites-administering/do-not-localize/chlimage_1-20.png)
 
 >[!NOTE]
 >
@@ -389,15 +390,15 @@ Al hacer clic en el punto interactivo se abre un cuadro de diálogo que le permi
 
 1. Haga clic en el icono de pantalla completa.
 
-   ![chlimage_1-92](/help/sites-administering/assets/chlimage_1-92.png)
+   ![icono de pantalla completa](/help/sites-administering/assets/chlimage_1-92.png)
 
 1. Haga clic en el icono Iniciar mapa.
 
-   ![chlimage_1-93](/help/sites-administering/assets/chlimage_1-93.png)
+   ![icono de mapa de launch](/help/sites-administering/assets/chlimage_1-93.png)
 
 1. Haga clic en uno de los iconos de forma.
 
-   ![chlimage_1-21](/help/sites-administering/do-not-localize/chlimage_1-21.png)
+   ![iconos de forma](/help/sites-administering/do-not-localize/chlimage_1-21.png)
 
 1. Modifique y mueva la forma según sea necesario.
 1. Haga clic en la forma.
@@ -407,17 +408,17 @@ Al hacer clic en el punto interactivo se abre un cuadro de diálogo que le permi
    >
    >Como alternativa, puede escribir directamente la ruta de producto que debe estar en el nivel de producto, no en el de variante.
 
-   ![chlimage_1-94](/help/sites-administering/assets/chlimage_1-94.png)
+   ![ruta de tipo](/help/sites-administering/assets/chlimage_1-94.png)
 
 1. Haga clic en el icono de confirmación dos veces y luego haga clic en salir de pantalla completa.
 1. Haga clic en algún lugar de la página junto al componente. La página debería actualizarse y debería ver el siguiente símbolo en su imagen:
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-22.png)
+   ![símbolo más](/help/sites-administering/do-not-localize/chlimage_1-22.png)
 
 1. Cambiar a [previsualización](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) modo.
 1. Haga clic en el punto interactivo +. Se abre un cuadro de diálogo donde puede elegir el tamaño y la cantidad del producto que ha introducido en **Ruta**.
 
-   ![chlimage_1-95](/help/sites-administering/assets/chlimage_1-95.png)
+   ![ejemplo de producto: poncho](/help/sites-administering/assets/chlimage_1-95.png)
 
 1. Introduzca un tamaño y una cantidad.
 1. Haga clic en el botón Añadir al carro de compras. El cuadro de diálogo se cierra.
@@ -429,15 +430,15 @@ Puede configurar el aspecto del cuadro de diálogo al hacer clic en el punto int
 
 1. Haga clic en el componente y haga clic en el icono de configuración.
 
-   ![chlimage_1-96](/help/sites-administering/assets/chlimage_1-96.png)
+   ![icono de configuración](/help/sites-administering/assets/chlimage_1-96.png)
 
 1. Desplazar hacia abajo. Hay un **AÑADIR AL CARRO** pestaña.
 
-   ![chlimage_1-97](/help/sites-administering/assets/chlimage_1-97.png)
+   ![pestaña añadir al carro](/help/sites-administering/assets/chlimage_1-97.png)
 
 1. Clic **AÑADIR AL CARRO**. Hay 3 opciones de configuración que puede utilizar.
 
-   ![chlimage_1-98](/help/sites-administering/assets/chlimage_1-98.png)
+   ![opciones de configuración](/help/sites-administering/assets/chlimage_1-98.png)
 
 1. Haga clic en el icono Listo.
 
@@ -461,18 +462,18 @@ Para generar un catálogo:
 
 1. En la lista, seleccione **Crear catálogo**, se abrirá el asistente Crear catálogo.
 
-   ![chlimage_1-99](/help/sites-administering/assets/chlimage_1-99.png)
+   ![crear asistente de catálogo](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Vaya al modelo de catálogo necesario.
 1. Pulse o haga clic en **Seleccionar** y pulse o haga clic en el modelo de catálogo necesario.
 1. Pulse o haga clic en **Siguiente**.
 
-   ![chlimage_1-100](/help/sites-administering/assets/chlimage_1-100.png)
+   ![asistente de propiedades de catálogo](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. Escriba un **Título** y una **Nombre**.
 1. Pulse o haga clic en **Crear** botón. Se crea el catálogo y se abre un cuadro de diálogo.
 
-   ![chlimage_1-101](/help/sites-administering/assets/chlimage_1-101.png)
+   ![cuadro de diálogo catálogo creado](/help/sites-administering/assets/chlimage_1-101.png)
 
 1. Tocar o hacer clic **Listo** El botón le lleva de nuevo a la consola Sites, donde podrá ver el catálogo.
 
@@ -548,11 +549,11 @@ Para desplegar un catálogo:
 1. Vaya a la ubicación en la que desea importar el modelo de catálogo.
 1. Pulse o haga clic en **Importar modelos** icono.
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-13.png)
+   ![Icono Importar modelos](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
 1. En el asistente, seleccione el Origen según sea necesario y pulse o haga clic en **Siguiente**.
 
-   ![chlimage_1-340](/help/sites-administering/assets/chlimage_1-102.png)
+   ![asistente de modelo](/help/sites-administering/assets/chlimage_1-102.png)
 
 1. Pulse o haga clic en **Listo** una vez finalizada la importación.
 
@@ -661,7 +662,7 @@ En el sitio de demostración (Geometrixx Outdoors - Inglés) puede ver el formul
 1. Uso del **Pedidos** consola de navegue hasta la ubicación requerida.
 1. Utilice el **Crear** icono para seleccionar **Crear pedido**.
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-14.png)
+   ![Icono Crear con forma de plus](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
 1. Se abrirá el asistente. Utilice el **Básico**, **Contenido**, **Pago** y **Cumplimiento** pestañas para introducir el [información sobre el nuevo pedido](/help/commerce/cif-classic/administering/concepts.md#order-information).
 
@@ -679,7 +680,7 @@ En el sitio de demostración (Geometrixx Outdoors - Inglés) puede ver el formul
 
    Seleccione el **Ver datos del pedido** icono:
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-15.png)
+   ![icono de información](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
 1. El [información del pedido](/help/commerce/cif-classic/administering/concepts.md#order-information) se mostrará. Uso **Editar** y **Listo** para realizar cualquier cambio.
 

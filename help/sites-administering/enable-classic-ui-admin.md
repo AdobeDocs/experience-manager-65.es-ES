@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b4370d23c7b1bd43e1f02a862f11952d04892eb3
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ En este ejemplo, volvemos a habilitar la IU clásica para la consola Sitios.
 
    Por ejemplo
 
-   [ `https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
+   [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
 1. Seleccione el nodo correspondiente a la consola para la que desea volver a habilitar la IU clásica. Para nuestro ejemplo, volveremos a habilitar la IU clásica para la consola Sitios.
 
@@ -50,6 +50,6 @@ En este ejemplo, volvemos a habilitar la IU clásica para la consola Sitios.
 
 1. El **IU clásica** La opción está disponible de nuevo como una opción emergente en admin console.
 
-   ![](assets/syui-01-2019-02-27-15-16-55.png)
+   ![opción emergente de IU clásica](assets/syui-01-2019-02-27-15-16-55.png)
 
 Repita estos pasos para cada consola para la que desee volver a habilitar el acceso a la versión de la IU clásica.
