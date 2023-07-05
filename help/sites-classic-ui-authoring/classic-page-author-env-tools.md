@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '902'
 ht-degree: 6%
 
 ---
@@ -40,7 +40,7 @@ Varios **Ayuda** AEM se puede acceder directamente a los recursos desde dentro d
 
 Además de acceder a [ayuda de las barras de herramientas de la consola](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), también puede acceder a la ayuda de la barra de tareas (mediante el icono ? icono) al editar una página:
 
-![](do-not-localize/sidekick-collapsed-2.png)
+![Sidekick contraído](do-not-localize/sidekick-collapsed-2.png)
 
 O utilizando el **Ayuda** en el cuadro de diálogo de edición de componentes específicos; esto mostrará la ayuda contextual.
 
@@ -165,7 +165,7 @@ Para mostrar referencias de página directas:
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
-En determinadas situaciones, hay disponibles más acciones de la barra de tareas, como:
+En determinadas situaciones, el Sidekick puede realizar otras acciones, como las siguientes:
 
 * [Lanzamientos](/help/sites-classic-ui-authoring/classic-launches.md)
 * [Live Copies](/help/sites-administering/msm.md)
@@ -188,9 +188,9 @@ La consola Sitio web también [proporciona información sobre el estado actual d
 
 Al editar una página con la IU clásica, hay varios modos a los que se puede acceder mediante los iconos de la parte inferior de la barra de tareas:
 
-![](do-not-localize/chlimage_1-12.png)
+![Modos de página  ](do-not-localize/chlimage_1-12.png)
 
-La fila de iconos de la parte inferior de la barra de tareas se utiliza para cambiar los modos de trabajo de las páginas:
+La fila de iconos de la parte inferior del Sidekick se utiliza para cambiar los modos de trabajo de las páginas:
 
 * [Editar](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 Este es el modo predeterminado y le permite editar la página, añadir o eliminar componentes y realizar otros cambios.
@@ -209,7 +209,6 @@ En este modo, puede editar el diseño de la página configurando los componentes
 >* [Client Context](/help/sites-administering/client-context.md)
 >* Sitios web: abre la consola Sitios web.
 >* Volver a cargar: actualizará la página.
-
 
 ## Métodos abreviados de teclado {#keyboard-shortcuts}
 

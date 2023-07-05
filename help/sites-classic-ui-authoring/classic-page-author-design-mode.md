@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -43,9 +43,9 @@ Por ejemplo, el contenido de una página de producto puede contener un sistema d
 
 En el modo Diseño, la barra de tareas se minimiza y tiene la posibilidad de configurar los componentes accesibles para la creación:
 
-1. Para entrar al modo Diseño, abra una página para editarla y utilice el icono de la barra de tareas:
+1. Para entrar en el modo Diseño, abra una página para editarla y utilice el icono del Sidekick:
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Modo de diseño](do-not-localize/chlimage_1.png)
 
 1. Clic **Editar** en el sistema de párrafos (**Diseño del par**).
 
@@ -57,17 +57,17 @@ En el modo Diseño, la barra de tareas se minimiza y tiene la posibilidad de con
 
    ![screen_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
 
-1. La barra de tareas se minimiza en el modo Diseño. Al hacer clic en la flecha, puede maximizar la barra de tareas y volver al modo de edición:
+1. El Sidekick minimiza en modo de diseño. Al hacer clic en la flecha, puede maximizar el Sidekick y volver al modo de edición:
 
-   ![](do-not-localize/sidekick-collapsed.png)
+   ![Sidekick minimizado](do-not-localize/sidekick-collapsed.png)
 
 ## Configuración del diseño de un componente {#configuring-the-design-of-a-component}
 
 En el modo Diseño, también puede configurar atributos para los componentes individuales. Cada componente tiene sus propios parámetros. En el siguiente ejemplo se muestra el **Imagen** componente:
 
-1. Para entrar al modo Diseño, abra una página para editarla y utilice el icono de la barra de tareas:
+1. Para entrar en el modo Diseño, abra una página para editarla y utilice el icono del Sidekick:
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Modo de diseño: Sidekick](do-not-localize/chlimage_1-1.png)
 
 1. Puede configurar el diseño de los componentes.
 
@@ -77,6 +77,6 @@ En el modo Diseño, también puede configurar atributos para los componentes ind
 
 1. Clic **OK** para guardar los cambios.
 
-1. La barra de tareas se minimiza en el modo Diseño. Al hacer clic en la flecha, puede maximizar la barra de tareas y volver al modo de edición:
+1. El Sidekick minimiza en modo de diseño. Al hacer clic en la flecha, puede maximizar el Sidekick y volver al modo de edición:
 
-   ![](do-not-localize/sidekick-collapsed-1.png)
+   ![Sidekick minimizado](do-not-localize/sidekick-collapsed-1.png)

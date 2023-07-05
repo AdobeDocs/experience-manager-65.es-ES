@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Para cambiar el período de informe de una página de perspectiva de contenido:
 
 1. Si el periodo de tiempo no aparece en la parte superior de la página, toque o haga clic en el icono Alternar periodo de tiempo.
 
-   ![](do-not-localize/chlimage_1-22.png)
+   ![Alternar intervalo](do-not-localize/chlimage_1-22.png)
 
 1. Para cambiar la fecha de inicio del período de informe, arrastre el círculo que aparece a la izquierda del área sombreada hasta la fecha de inicio deseada.
 
@@ -92,7 +92,7 @@ Utilice el siguiente procedimiento para crear una tarea para una recomendación 
 
 1. Toque o haga clic en el icono de información de la recomendación de SEO.
 
-   ![](do-not-localize/chlimage_1-23.png)
+   ![Icono de información](do-not-localize/chlimage_1-23.png)
 
 1. Haga clic en el icono de triángulo rodeado que aparece junto al icono de información.
 

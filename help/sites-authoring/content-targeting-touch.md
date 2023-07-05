@@ -11,9 +11,9 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '5349'
+source-wordcount: '5390'
 ht-degree: 49%
 
 ---
@@ -253,7 +253,7 @@ Realice el siguiente procedimiento después de [inicio del proceso de direcciona
 
 1. Toque o haga clic en el icono Target.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Destino](do-not-localize/chlimage_1.png)
 
    El contenido del componente es la oferta para la experiencia predeterminada. Al orientar un componente, el nodo predeterminado se replicará para cada experiencia. Esto es necesario para editar el nodo de contenido adecuado durante la creación específica de la experiencia. Para estas experiencias no predeterminadas, [agregue una oferta personalizada](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) o [agregue una oferta de la biblioteca](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
@@ -275,7 +275,7 @@ En el modo de Target, el componente Target tiene un borde azul y el mensaje de d
 
 En el modo de Edición, el componente Target tiene un icono de diana.
 
-![](do-not-localize/chlimage_1-1.png)
+![Componente de destino en modo de edición](do-not-localize/chlimage_1-1.png)
 
 Los componentes que arrastra al componente Target son componentes orientados.
 
@@ -296,6 +296,8 @@ Antes de poder editar contenido orientado, debe tocar o hacer clic en **Iniciar 
    >
    >
    >Los administradores pueden decidir si esta configuración es necesaria en **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   >
+   >
    Para requerir que los usuarios introduzcan una ubicación, active la casilla de verificación **Forzar ubicación **.
 
 1. Seleccione la experiencia para la que desea crear la oferta.
@@ -321,7 +323,7 @@ Si decide que la oferta se puede utilizar para otras experiencias, puede crear u
 
 1. Toque o haga clic en la oferta para mostrar el menú de oferta y, a continuación, toque o haga clic en el icono de edición.
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Menú Oferta](do-not-localize/chlimage_1-2.png)
 
 1. Edite el contenido del componente.
 
@@ -338,7 +340,7 @@ No puede añadir ofertas de la biblioteca a la experiencia predeterminada.
 
 1. Toque o haga clic en el icono Carpeta.
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Icono de carpeta](do-not-localize/chlimage_1-3.png)
 
 1. Seleccione la oferta de la biblioteca y, a continuación, toque o haga clic en el icono de la marca.
 
@@ -371,7 +373,7 @@ Para obtener información sobre el uso de la consola Ofertas para crear una ofer
 1. Seleccione la experiencia para mostrar la oferta personalizada.
 1. Pulse o haga clic en la oferta personalizada para mostrar el menú de oferta y, a continuación, pulse o haga clic en **Guardar Oferta En La Biblioteca De Ofertas** icono.
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Guardar oferta en la Biblioteca de ofertas](do-not-localize/chlimage_1-4.png)
 
 1. Escriba un nombre para la oferta, seleccione la biblioteca a la que está agregando la oferta y, a continuación, toque o haga clic en el icono de marca de verificación.
 
@@ -382,7 +384,7 @@ Convierta una oferta de la biblioteca en una oferta personalizada para cambiar l
 1. Seleccione la experiencia para mostrar la oferta de la biblioteca.
 1. Pulse o haga clic en la oferta de la biblioteca para mostrar el menú de oferta y, a continuación, pulse o haga clic en el icono Convertir en oferta en línea.
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Convertir en oferta en línea](do-not-localize/chlimage_1-5.png)
 
 #### Edición de una oferta de la biblioteca {#editing-a-library-offer}
 
@@ -410,7 +412,7 @@ Para obtener información sobre los motores de segmentación, consulte [Motor de
 
 Una experiencia no debe utilizar más de un público. Aparece un símbolo de advertencia junto a una experiencia cuando se asigna a una audiencia asignada a otra experiencia.
 
-![](do-not-localize/chlimage_1-6.png)
+![Símbolo de advertencia cuando se asigna a una audiencia asignada a otra experiencia](do-not-localize/chlimage_1-6.png)
 
 ### AEM Asociación de experiencias con audiencias (o Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
 
@@ -577,11 +579,13 @@ Para establecer los objetivos y la configuración si utiliza Adobe Target:
    Todas las métricas también tienen configuraciones avanzadas que puede definir. Seleccione **Configuraciones avanzadas** para acceder a las mismas. Consulte la definición de cómo se cuentan las métricas de éxito en la tabla anterior y consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=es).
 
    >[!NOTE]
+   >
    Debe tener un objetivo definido como mínimo.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
    >[!NOTE]
+   >
    Si falta información en la métrica, una línea roja rodea la métrica.
 
 1. Clic **Añadir una nueva métrica** para configurar métricas de éxito adicionales.
@@ -589,6 +593,7 @@ Para establecer los objetivos y la configuración si utiliza Adobe Target:
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
    >[!NOTE]
+   >
    Para quitar los objetivos adicionales, toque o haga clic en los tres puntos y en **Eliminar**. AEM Para realizar esta acción, es necesario que haya definido al menos un objetivo.
 
 1. Si desea tener más control sobre cómo se contabilizan las métricas de éxito, toque o haga clic en **Configuraciones avanzadas** para acceder a las mismas.
@@ -611,6 +616,7 @@ Los siguientes criterios determinan el contenido que aparece al simular la exper
 Si aparece contenido inesperado en la página al cargar un perfil, compruebe la configuración de cada elemento de esta lista.
 
 >[!NOTE]
+>
 Si utiliza la prueba A/B, al simular, las experiencias se muestran según el porcentaje de tráfico. Esto se controla mediante Adobe Target, lo que puede dar lugar a resultados inesperados para los autores. (La actividad del autor se sincroniza con las configuraciones específicas que permiten volver a evaluar durante la simulación). Es posible que los autores tengan que actualizar para ver las otras experiencias en función de su configuración de tráfico.
 
 Para simular la experiencia del visitante, utilice las siguientes herramientas:
@@ -621,7 +627,7 @@ Para simular la experiencia del visitante, utilice las siguientes herramientas:
 1. Para cambiar al modo de Previsualización, en la barra de herramientas, toque o haga clic en **Previsualización**.
 1. En la barra de herramientas, toque o haga clic en el icono de ContextHub.
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![Context Hub](do-not-localize/chlimage_1-7.png)
 
 1. Utilice ContextHub para cambiar las propiedades del contexto. Por ejemplo, toque o haga clic en la propiedad Persona para seleccionar un usuario diferente.
 
@@ -637,7 +643,7 @@ Puede personalizar el componente Target accediendo a las opciones del componente
 
 1. Una vez que haya orientado el componente, en el componente Target, toque o haga clic en el componente y, a continuación, en el icono de configuración (cog).
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![Menú de componente Target](do-not-localize/chlimage_1-8.png)
 
    AEM muestra la ventana de opciones del componente Target.
 
@@ -645,7 +651,7 @@ Puede personalizar el componente Target accediendo a las opciones del componente
 
 1. Como alternativa, para acceder a estas configuraciones en modo de pantalla completa, en la ventana de opciones del componente Target, toque o haga clic en el icono de pantalla completa.
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![Ventana de opciones del componente Target](do-not-localize/chlimage_1-9.png)
 
    AEM muestra la ventana de opciones del componente Target a pantalla completa.
 
@@ -704,6 +710,7 @@ Si selecciona Adobe Target como motor:
 </table>
 
 >[!NOTE]
+>
 Al seleccionar un componente y hacerlo orientable, AEM también reemplaza el componente e introduce un componente de Adobe Target. (El componente Adobe Target no solo se utiliza cuando se añade manualmente a la página, sino también cuando se marca como objetivo un componente existente).
 
 Si selecciona Client Context (lado del cliente) como motor:

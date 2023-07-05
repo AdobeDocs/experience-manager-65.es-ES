@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '369'
 ht-degree: 30%
 
 ---
@@ -42,7 +42,7 @@ La barra de herramientas de ContextHub está disponible en el modo de vista prev
 
 1. Para mostrar la barra de herramientas, toque o haga clic en el icono de ContextHub.
 
-   ![](do-not-localize/screen_shot_2018-03-23at093621.png)
+   ![Context Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
 ## Funciones del módulo de IU {#ui-module-features}
 
@@ -68,4 +68,4 @@ La superposición emergente de un módulo puede incluir elementos de formulario 
 
 Las superposiciones emergentes pueden incluir un icono en el que puede hacer clic o pulsar para expandir el contenido emergente y cubrir toda la ventana o pantalla del explorador.
 
-![](do-not-localize/chlimage_1-18.png)
+![Pantalla completa](do-not-localize/chlimage_1-18.png)

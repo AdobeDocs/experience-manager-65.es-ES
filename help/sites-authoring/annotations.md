@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '641'
 ht-degree: 40%
 
 ---
@@ -53,14 +53,13 @@ Se utiliza un modo [especial](/help/sites-authoring/author-environment-tools.md#
 >* [Anotación de recursos de vídeo](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
 
-
 ### Anotación de un componente {#annotating-a-component}
 
 El modo Anotar permite crear, editar, mover o eliminar anotaciones en el contenido:
 
 1. Puede acceder al modo de anotación mediante el icono de la barra de herramientas (parte superior derecha) al editar una página:
 
-   ![](do-not-localize/screen_shot_2018-03-22at110414.png)
+   ![Anotar](do-not-localize/screen_shot_2018-03-22at110414.png)
 
    Ahora puede ver todas las anotaciones existentes.
 
@@ -83,16 +82,17 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
    * Introduzca el texto de la anotación.
    * Crear un boceto (líneas y formas) para resaltar un área del componente.
 
-      El cursor cambiará a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. Las líneas del boceto reflejan el color de la anotación y pueden ser una flecha, un círculo u ovaladas.
-   ![](do-not-localize/screen_shot_2018-03-22at110640.png)
+     El cursor cambiará a una cruz cuando esté creando un boceto. Puede dibujar varias líneas distintas. Las líneas del boceto reflejan el color de la anotación y pueden ser una flecha, un círculo u ovaladas.
+
+     ![Bosquejar](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Elegir o cambiar el color:
 
-   ![](do-not-localize/chlimage_1-19.png)
+     ![Elegir/cambiar color](do-not-localize/chlimage_1-19.png)
 
    * Eliminar la anotación.
 
-   ![](do-not-localize/screen_shot_2018-03-22at110647.png)
+     ![Eliminar anotación](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. Para cerrar el cuadro de diálogo de anotaciones, toque o haga clic fuera del mismo. Se mostrará una vista truncada (la primera palabra) de la anotación, junto con los bocetos, si los hay:
 
@@ -103,12 +103,12 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
    * Hacer clic en el marcador de texto, o tocarlo, para abrir la anotación. Una vez abierto, puede ver el texto completo, realizar cambios o eliminar la anotación.
 
       * Los bocetos no se pueden eliminar independientemente de la anotación.
+
    * Cambiar la posición del marcador de texto.
    * Tocar o hacer clic en una línea de un boceto para seleccionar el boceto y arrastrarlo a la posición deseada.
    * Mover o copiar un componente
 
       * Todas las anotaciones relacionadas y sus bocetos también se moverán o copiarán y su posición en relación con el párrafo seguirá siendo la misma.
-
 
 1. Para salir del modo de anotación y volver al anterior, pulse o haga clic en el icono Anotar (símbolo x) en la parte derecha de la barra de herramientas superior.
 

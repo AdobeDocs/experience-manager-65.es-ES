@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '507'
 ht-degree: 75%
 
 ---
@@ -28,7 +28,7 @@ El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en funci
 
 La función de búsqueda está disponible en la barra de herramientas superior:
 
-![](do-not-localize/chlimage_1-17.png)
+![Buscar](do-not-localize/chlimage_1-17.png)
 
 Con el carril de búsqueda puede:
 
@@ -61,7 +61,7 @@ Para buscar y filtrar sus recursos:
 
 1. Si desea explorar más en profundidad, seleccione el símbolo de carril (parte superior izquierda) para abrir el panel lateral **Filtros y opciones**.
 
-   ![](do-not-localize/screen_shot_2018-03-23at101542.png)
+   ![Filtros y opciones](do-not-localize/screen_shot_2018-03-23at101542.png)
 
    Según el tipo de recurso, la búsqueda mostrará una selección predefinida de criterios de búsqueda o de filtro.
 
@@ -80,7 +80,8 @@ Para buscar y filtrar sus recursos:
    >
    >    * Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de Recursos y Comunidades son comprensiblemente especializados.
    >    * Su instancia como [Buscar Forms](/help/sites-administering/search-forms.md) AEM se puede personalizar (según la ubicación dentro de la ubicación de la).
-
+   >
+   >
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 

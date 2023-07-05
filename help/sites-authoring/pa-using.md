@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '638'
 ht-degree: 4%
 
 ---
@@ -78,7 +78,7 @@ Abrir [Perspectiva de contenido](/help/sites-authoring/content-insights.md) desd
 1. En la consola Sitios, seleccione la página para la que desea ver las perspectivas de contenido.
 1. En la barra de herramientas, haga clic en el icono Analytics y Recommendations.
 
-   ![](do-not-localize/chlimage_1-16a.png)
+   ![Icono de Analytics y Recommendations](do-not-localize/chlimage_1-16a.png)
 
 ## Analytics visible desde el editor de páginas (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 

@@ -9,9 +9,9 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '2828'
+source-wordcount: '2839'
 ht-degree: 5%
 
 ---
@@ -85,7 +85,7 @@ Puede arrastrar y soltar una imagen desde el [Explorador de recursos](/help/site
 
 Una vez cargada la imagen (y no antes de), puede utilizar [edición in situ](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) para recortar o girar la imagen según sea necesario:
 
-![](do-not-localize/chlimage_1-10.png)
+![Barra de herramientas de edición in situ](do-not-localize/chlimage_1-10.png)
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Una vez cargada la imagen (y no antes de), puede utilizar [edición in situ](/he
 
 Hay varias opciones adicionales disponibles en el modo de edición de pantalla completa; por ejemplo, asignación y zoom:
 
-![](do-not-localize/chlimage_1-11.png)
+![Modo de edición de pantalla completa](do-not-localize/chlimage_1-11.png)
 
 Cuando se carga una imagen, puede configurar lo siguiente:
 
@@ -132,6 +132,7 @@ Establece la altura y la anchura de la imagen.
 >Debe introducir información en la variable **Texto alternativo** en el campo **Avanzadas** o la imagen no se puede guardar y verá el siguiente mensaje de error:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 El siguiente ejemplo muestra un componente de imagen (Campaign).
 
@@ -150,8 +151,7 @@ El pie de ilustración del vínculo. Este es el texto que ven los usuarios.
 Agrega información adicional sobre cómo utilizar el vínculo.
 
 * **LinkType**
-En la lista desplegable, seleccione entre una 
-**URL personalizada** y un **Documento adaptable**. Este campo es obligatorio. Si selecciona Dirección URL personalizada, puede proporcionar la Dirección URL del vínculo. Si selecciona Documento adaptable, puede proporcionar la ruta del documento.
+En la lista desplegable, seleccione entre una **URL personalizada** y un **Documento adaptable**. Este campo es obligatorio. Si selecciona Dirección URL personalizada, puede proporcionar la Dirección URL del vínculo. Si selecciona Documento adaptable, puede proporcionar la ruta del documento.
 
 * **Parámetro de URL adicional**
 Añada cualquier parámetro de URL adicional. Haga clic en Agregar elemento para agregar varios elementos.
@@ -161,6 +161,7 @@ Añada cualquier parámetro de URL adicional. Haga clic en Agregar elemento para
 >Debe introducir información en la variable **Tipo de vínculo** en el campo **Información de URL** o el componente no se puede guardar y verá el siguiente mensaje de error:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 El siguiente ejemplo muestra un componente Vínculo (campaña).
 
@@ -196,11 +197,11 @@ Al hacer clic en para configurar el componente, se selecciona Texto o Imagen.
 
 Seleccionar **Texto** muestra un editor en línea:
 
-![](do-not-localize/chlimage_1-12.png)
+![Barra de herramientas Texto](do-not-localize/chlimage_1-12.png)
 
 Seleccionar **Imagen** muestra el editor en contexto para imágenes:
 
-![](do-not-localize/chlimage_1-13.png)
+![Barra de herramientas Imagen](do-not-localize/chlimage_1-13.png)
 
 Consulte [Componente de imagen (Campaign)](#image-campaign) para obtener más información sobre cómo trabajar con imágenes. Consulte [Componente Texto y personalización (Campaign)](#text-personalization-campaign) para obtener más información sobre cómo trabajar con texto.
 
@@ -234,6 +235,7 @@ Establece la altura y anchura de la imagen.
 >El **Texto alternativo** en el campo **Avanzadas** es obligatorio o el componente no se puede guardar y verá el siguiente mensaje de error:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 El siguiente ejemplo muestra un componente Texto e imagen (Campaign).
 
@@ -300,7 +302,7 @@ En la tabla siguiente se describen los componentes disponibles para mostrar y mo
   <tr>
    <td><p>Casilla (Campaign)</p> </td>
    <td><p>booleano</p> </td>
-   <td><p>Ya no se puede contactar (por ningún canal)</p> </td>
+   <td><p>No contacto más largo (por cualquier canal)</p> </td>
   </tr>
   <tr>
    <td><p>Campo de fecha (Campaign)</p> <p>Campo de fecha/HTML 5 (Campaign)</p> </td>

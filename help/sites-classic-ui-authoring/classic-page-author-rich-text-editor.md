@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 1%
+source-wordcount: '1841'
+ht-degree: 2%
 
 ---
 
@@ -60,7 +60,7 @@ El Editor de texto enriquecido proporciona una serie de funciones, que [dependen
 
 ### Formatos de caracteres básicos {#basic-character-formats}
 
-![](do-not-localize/cq55_rte_basicchars.png)
+![Barra de herramientas Formato de caracteres](do-not-localize/cq55_rte_basicchars.png)
 
 Aquí puede aplicar formato a los caracteres seleccionados (resaltados); algunas opciones también tienen teclas de método abreviado:
 
@@ -98,7 +98,7 @@ Se puede quitar un estilo; coloque el cursor dentro del texto al que se ha aplic
 
 ### Cortar, Copiar, Pegar {#cut-copy-paste}
 
-![](do-not-localize/cq55_rte_cutcopypaste.png)
+![Barra de herramientas Cortar, Copiar y Pegar](do-not-localize/cq55_rte_cutcopypaste.png)
 
 Las funciones estándar de **[!UICONTROL Cortar]** y **[!UICONTROL Copiar]** están disponibles. Varios sabores de **[!UICONTROL Pegar]** se proporcionan para adaptarse a diferentes formatos.
 
@@ -112,7 +112,7 @@ Las funciones estándar de **[!UICONTROL Cortar]** y **[!UICONTROL Copiar]** est
 
 ### Deshacer, Rehacer {#undo-redo}
 
-![](do-not-localize/cq55_rte_undoredo.png)
+![Deshacer, barra de herramientas Rehacer](do-not-localize/cq55_rte_undoredo.png)
 
 AEM mantiene un registro de las últimas 50 acciones del componente actual, retenidas en orden cronológico. Estas acciones se pueden deshacer (y luego rehacer) en orden estricto, si es necesario.
 
@@ -126,7 +126,7 @@ AEM mantiene un registro de las últimas 50 acciones del componente actual, rete
 
 ### Alineación {#alignment}
 
-![](do-not-localize/cq55_rte_alignment.png)
+![Barra de herramientas de alineación ](do-not-localize/cq55_rte_alignment.png)
 
 El texto puede estar alineado a la izquierda, al centro o a la derecha.
 
@@ -134,7 +134,7 @@ El texto puede estar alineado a la izquierda, al centro o a la derecha.
 
 ### Sangría {#indentation}
 
-![](do-not-localize/cq55_rte_indent.png)
+![Barra de herramientas Sangría](do-not-localize/cq55_rte_indent.png)
 
 La sangría de un párrafo se puede aumentar o reducir. Se aplicará sangría al párrafo seleccionado y el texto nuevo introducido conservará el nivel actual de sangría.
 
@@ -142,7 +142,7 @@ La sangría de un párrafo se puede aumentar o reducir. Se aplicará sangría al
 
 ### Listas {#lists}
 
-![](do-not-localize/cq55_rte_lists.png)
+![Barra Listas](do-not-localize/cq55_rte_lists.png)
 
 Se pueden crear listas con viñetas y numeradas dentro del texto. Seleccione el tipo de lista y empiece a escribir o resalte el texto que desea convertir. En ambos casos, una línea de alimentación inicia un nuevo elemento de lista.
 
@@ -154,11 +154,11 @@ El estilo de una lista se puede cambiar simplemente colocando el cursor dentro d
 
 ### Vínculos {#links}
 
-![](do-not-localize/cq55_rte_links.png)
+![Barra de vínculos](do-not-localize/cq55_rte_links.png)
 
 Un vínculo a una dirección URL (ya sea dentro del sitio web o una ubicación externa) se genera resaltando el texto requerido y haciendo clic en el icono de hipervínculo:
 
-![](do-not-localize/chlimage_1-9.png)
+![Icono de hipervínculo](do-not-localize/chlimage_1-9.png)
 
 Un cuadro de diálogo le permitirá especificar la dirección URL de destino, así como si debe abrirse en una nueva ventana.
 
@@ -178,11 +178,11 @@ Puede hacer lo siguiente:
 
 Para romper el vínculo, coloque el cursor en cualquier lugar dentro del texto del vínculo y haga clic en [!UICONTROL Desvincular] icono:
 
-![](do-not-localize/chlimage_1-10.png)
+![Icono de desvincular](do-not-localize/chlimage_1-10.png)
 
 ### Anclajes {#anchors}
 
-![](do-not-localize/cq55_rte_anchor.png)
+![Barra de herramientas Anclajes](do-not-localize/cq55_rte_anchor.png)
 
 Se puede crear un anclaje en cualquier lugar dentro del texto colocando el cursor o seleccionando texto. Luego haga clic en **Anclaje** para abrir el cuadro de diálogo.
 
@@ -196,7 +196,7 @@ El anclaje se muestra cuando se edita el componente y ahora se puede utilizar en
 
 ### Buscar y reemplazar {#find-and-replace}
 
-![](do-not-localize/cq55_rte_findreplace.png)
+![Barra de herramientas Buscar y reemplazar](do-not-localize/cq55_rte_findreplace.png)
 
 AEM proporciona tanto una como una **Buscar** y una **Reemplazar** función (buscar y reemplazar).
 
@@ -222,7 +222,7 @@ Las imágenes se pueden arrastrar desde el buscador de contenido para añadirlas
 
 ### Corrector ortográfico {#spelling-checker}
 
-![](do-not-localize/cq55_rte_spellchecker.png)
+![Corrector ortográfico](do-not-localize/cq55_rte_spellchecker.png)
 
 El corrector ortográfico revisará todo el texto del componente actual.
 
@@ -240,15 +240,15 @@ Las tablas están disponibles tanto:
 
 * Como el **Tabla** componente
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+  ![Componente de la tabla](assets/chlimage_1-105.png)
 
 * Desde dentro de **Texto** componente
 
-   ![](do-not-localize/chlimage_1-11.png)
+  ![Barra de herramientas Texto](do-not-localize/chlimage_1-11.png)
 
-   >[!NOTE]
-   >
-   >Aunque las tablas están disponibles en el RTE, se recomienda utilizar el **Tabla** al crear tablas.
+  >[!NOTE]
+  >
+  >Aunque las tablas están disponibles en el RTE, se recomienda utilizar el **Tabla** al crear tablas.
 
 En ambos **Texto** y **Tabla** la funcionalidad de la tabla componentes está disponible a través del menú contextual (normalmente el botón derecho del ratón) en el que se hace clic dentro de la tabla; por ejemplo:
 
@@ -362,7 +362,6 @@ Si se crea una tabla anidada, se creará una nueva tabla independiente dentro de
 >* Windows IE: Utilice Ctrl+primary-mouse-button-click (normalmente izquierdo) para seleccionar varias celdas.
 >* Firefox: arrastre el puntero para seleccionar un rango de celdas.
 
-
 #### Quitar tabla {#remove-table}
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
@@ -371,7 +370,7 @@ Utilice la opción para quitar la tabla de la tabla de **[!UICONTROL Texto]** co
 
 ### Caracteres especiales {#special-characters}
 
-![](do-not-localize/cq55_rte_specialchars.png)
+![Barra de herramientas Caracteres especiales](do-not-localize/cq55_rte_specialchars.png)
 
 Se pueden poner caracteres especiales a disposición del editor de texto enriquecido; estos pueden variar según la instalación.
 
@@ -381,7 +380,7 @@ Pase el ratón para ver una versión ampliada del carácter y, a continuación, 
 
 ### Modo de edición de origen {#source-editing-mode}
 
-![](do-not-localize/cq55_rte_sourceedit.png)
+![Barra de herramientas del modo de edición de origen](do-not-localize/cq55_rte_sourceedit.png)
 
 El modo de edición de origen permite ver y editar el HTML subyacente del componente.
 

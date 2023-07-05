@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '567'
 ht-degree: 32%
 
 ---
@@ -74,7 +74,7 @@ La comparación de diferencias detecta los cambios en los niveles de componente 
 
 Para centrarse en un contenido específico, puede hacer clic en el icono de pantalla completa para que cualquier &quot;lado&quot; de la comparación de diferencias en paralelo se amplíe en la ventana completa del navegador.
 
-![](do-not-localize/chlimage_1-18.png)
+![Icono de modo de pantalla completa](do-not-localize/chlimage_1-18.png)
 
 El lado seleccionado llenará toda la ventana, pero la barra permanecerá en la parte superior para que pueda cambiar entre las dos páginas.
 
@@ -82,7 +82,7 @@ El lado seleccionado llenará toda la ventana, pero la barra permanecerá en la 
 
 También puede cerrar la vista de pantalla completa haciendo clic en el icono para salir del modo de pantalla completa.
 
-![](do-not-localize/chlimage_1-19.png)
+![Cerrar pantalla completa](do-not-localize/chlimage_1-19.png)
 
 Puede salir de la comparación de diferencias en cualquier momento haciendo clic en el botón Close del encabezado.
 

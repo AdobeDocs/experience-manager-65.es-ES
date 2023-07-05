@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 60%
+source-wordcount: '264'
+ht-degree: 59%
 
 ---
 
@@ -46,7 +46,7 @@ Esta barra de herramientas ofrece las opciones siguientes:
 
 ## Edición en pantalla completa {#full-screen-editing}
 
-Para los componentes basados en texto, pulse el modo de pantalla completa en la barra de herramientas ![](do-not-localize/screen_shot_2018-03-21at163236.png) abre el editor de texto enriquecido y oculta el resto del contenido de la página.
+Para los componentes basados en texto, pulse el modo de pantalla completa en la barra de herramientas ![Modo de edición de pantalla completa](do-not-localize/screen_shot_2018-03-21at163236.png) abre el editor de texto enriquecido y oculta el resto del contenido de la página.
 
 El modo de pantalla completa muestra todas las opciones configuradas que puede utilizar para la creación. La disponibilidad es opciones [depende de la configuración](/help/sites-administering/rich-text-editor.md).
 

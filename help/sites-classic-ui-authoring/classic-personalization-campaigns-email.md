@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1760'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ AEM En este documento se describen los conceptos básicos para crear boletines i
 
 1. Seleccione la vista de lista con el icono:
 
-   ![](do-not-localize/mcm_icon_listview-1.png)
+   ![Vista de lista](do-not-localize/mcm_icon_listview-1.png)
 
 1. Clic **Nuevo...**
 
@@ -92,6 +92,7 @@ El tiempo de activación para enviar la newsletter.
 
    * **Lista de destinatarios predeterminada**
 Lista predeterminada que debe recibir la newsletter.
+
    Se pueden actualizar en una etapa posterior desde el **Propiedades...** diálogo.
 
 1. Clic **OK** para guardar.

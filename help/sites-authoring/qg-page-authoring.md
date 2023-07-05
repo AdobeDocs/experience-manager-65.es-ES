@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1580'
 ht-degree: 52%
 
 ---
@@ -64,7 +64,6 @@ Antes de dar la descripción general de los detalles específicos, aquí hay una
 >* [Atajos de teclado al editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Métodos abreviados del teclado para las consolas](/help/sites-authoring/keyboard-shortcuts.md)
 >
-
 
 ### Encontrar su página {#finding-your-page}
 
@@ -119,6 +118,7 @@ La forma de seleccionar una página depende de la vista que utilice en la consol
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
    * En la tarjeta se superpondrá una marca de verificación que indica que se ha seleccionado la página.
+
    >[!NOTE]
    >
    >Una vez en el modo de selección, la variable **Seleccionar** El icono (una marca) cambiará a **Anular selección** icono (cruz).
@@ -154,8 +154,9 @@ Para editar la página:
       * seleccionar la pestaña componentes (el [explorador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser))
       * arrastre el componente requerido a la página.
 
-      El panel lateral se puede abrir (y cerrar) con:
-   ![](do-not-localize/screen_shot_2018-03-21at160738.png)
+     El panel lateral se puede abrir (y cerrar) con:
+
+     ![Abrir panel lateral](do-not-localize/screen_shot_2018-03-21at160738.png)
 
    * [Editar el contenido de un componente existente](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) en la página:
 
@@ -163,18 +164,21 @@ Para editar la página:
       * Abra el editor en contexto del componente pulsando y manteniendo pulsado o haciendo doble clic lentamente. Se mostrarán las acciones disponibles (para algunos componentes, esta será una selección limitada).
       * Para ver todas las acciones disponibles, acceda al modo de pantalla completa mediante:
 
-   ![](do-not-localize/screen_shot_2018-03-21at160706.png)
+     ![Modo de pantalla completa](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurar las propiedades de un componente existente](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
       * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice el **Configurar** (llave inglesa) para abrir el cuadro de diálogo.
+
    * [Mover un componente](/help/sites-authoring/editing-content.md#moving-a-component) o bien:
 
       * Arrastre el componente en cuestión a su nueva ubicación.
       * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice los iconos **Cortar** y **Pegar** donde sea necesario.
+
    * [Copiar (y pegar)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
       * Abra la barra de herramientas de componentes haciendo clic sobre ella. Utilice los iconos **Copiar** y **Pegar** cuando sea necesario.
+
    >[!NOTE]
    >
    >Puede **pegar** componentes en la misma página o en otra página. Si pega el componente en una página diferente que ya estaba abierta antes de la operación de cortar o copiar, tendrá que actualizase la página. 
@@ -182,15 +186,17 @@ Para editar la página:
    * [Eliminar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un componente:
 
       * Abra la barra de herramientas de componentes haciendo clic sobre ella y utilice el icono **Eliminar.**
+
    * [Añadir anotaciones](/help/sites-authoring/annotations.md#annotations) a la página:
 
       * Seleccione el **Anotar** modo (icono de burbuja de voz). Añadir anotaciones mediante el **Añadir anotación** Icono (más). Salga del modo Anotar utilizando la X en la parte superior derecha.
 
-   ![](do-not-localize/screen_shot_2018-03-21at160813.png)
+     ![Anotar](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Previsualización de una página](/help/sites-authoring/editing-content.md#preview-mode) (para ver cómo aparecerá en el entorno de publicación)
 
       * Seleccionar **Previsualizar** en la barra de herramientas.
+
    * Vuelva al modo de edición (o seleccione otro modo) utilizando **Editar** selector desplegable.
 
    >[!NOTE]
@@ -209,17 +215,16 @@ Existen dos métodos (principales) de [editar propiedades de página](/help/site
       * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
       * La barra de herramientas cuando [su página se haya seleccionado](#selectiingyourpageforfurtheraction).
 
-   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
+  ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
    1. Se mostrarán las propiedades de la página. Puede aplicar actualizaciones según sea necesario y, a continuación, seleccionar Guardar para preservarlas.
-
 
 * Cuándo [editar su página](#editing-your-page-content):
 
    1. Abra el **Información de página** menú.
    1. Seleccionar **Abrir propiedades** para abrir el cuadro de diálogo y editar las propiedades.
 
-   ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
+  ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
 ### Publicar su página (o eliminar la publicación) {#publishing-your-page-or-unpublishing}
 
@@ -233,22 +238,22 @@ Existen dos métodos principales de [publicación de la página](/help/sites-aut
       * [Acciones rápidas (solo vista de tarjeta y escritorio)](#quick-actions-card-view-desktop-only) para el recurso adecuado.
       * La barra de herramientas cuando su [página se haya seleccionado](#selectiingyourpageforfurtheraction) (también permite el acceso a [Publicar posteriormente](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
-   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
+  ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * Cuándo [editar su página](#editing-your-page-content):
 
    1. Abra el **Información de página** menú.
    1. Seleccionar **Publicar página**.
 
-   ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
+  ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * La cancelación de la publicación de una página desde la consola solo se puede realizar mediante la opción **Administrar publicación**, que solo está disponible en la barra de herramientas (no a través de las acciones rápidas).
 
-   El **Cancelar publicación de página** sigue estando disponible a través de la opción **Información de página** en el editor.
+  El **Cancelar publicación de página** sigue estando disponible a través de la opción **Información de página** en el editor.
 
-   ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
+  ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
 
-   Consulte [Publicación de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-pages) para obtener más información.
+  Consulte [Publicación de páginas](/help/sites-authoring/publishing-pages.md#unpublishing-pages) para obtener más información.
 
 ### Mover, copiar y pegar o eliminar su página   {#move-copy-and-paste-or-delete-your-page}
 
@@ -265,12 +270,15 @@ Todas estas acciones se pueden activar mediante:
    * Copiar:
 
       * Desplácese hasta la nueva ubicación y péguelo allí.
+
    * Mover:
 
       * Se abrirá el asistente para recoger la información necesaria para mover la página. Siga las instrucciones que aparecen en la pantalla.
+
    * Eliminar:
 
       * Se le solicitará que confirme la acción.
+
    >[!NOTE]
    >
    >La opción Eliminar no se encuentra disponible como Acción rápida.
@@ -330,6 +338,7 @@ Se utiliza el mismo mecanismo básico cuando se restablecen y/o se comparan vers
    * **Volver a esta versión**
 
       * Se restablecerá la versión.
+
    * **Mostrar diferencias**
 
       * La página se abrirá resaltando las diferencias (entre las dos versiones).
