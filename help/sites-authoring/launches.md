@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 32%
+source-wordcount: '846'
+ht-degree: 31%
 
 ---
 
@@ -53,7 +53,7 @@ Los lanzamientos le permiten lo siguiente:
 
       * Las páginas de origen se pueden tomar de varias ramas (independientes).
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+  ![Información general sobre las acciones de lanzamiento](assets/chlimage_1-111.png)
 
 * Edite la configuración de lanzamiento:
 
@@ -67,32 +67,32 @@ Los lanzamientos le permiten lo siguiente:
       * Promocione el contenido de lanzamiento de nuevo en **Target** (páginas de origen) cuando esté listo para publicarse.
       * Publique el contenido desde las páginas de origen (después de volver a promocionarlo).
       * Promocione todas las páginas o solo las páginas modificadas.
+
    * Automáticamente. Esto implica lo siguiente:
 
       * El campo **Fecha**(**Live**) **de lanzamiento**: esto se puede establecer al crear o editar un lanzamiento. 
 
       * El **Producción lista** indicador: esto solo se puede establecer al editar un lanzamiento.
       * Si la variable **Producción lista** Si se establece el indicador, el lanzamiento se promocionará automáticamente a las páginas de producción del especificado **Launch**(**Activo**) **fecha**. Después de la promoción, las páginas de producción se publican automáticamente.\
-         Si no se ha establecido ninguna fecha, el indicador no tiene ningún efecto.
-
+        Si no se ha establecido ninguna fecha, el indicador no tiene ningún efecto.
 
 * Actualice las páginas de origen y de lanzamiento en paralelo:
 
    * Los cambios que se realicen en las páginas de origen se implementan automáticamente en la copia de lanzamiento (si está configurada con herencia; es decir, como Live Copy). 
    * Los cambios en la copia de lanzamiento se pueden realizar sin interrumpir las actualizaciones automáticas o las páginas de origen. 
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+  ![Resumen de las actualizaciones](assets/chlimage_1-112.png)
 
 * [Crear un lanzamiento anidado](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - un lanzamiento dentro de un lanzamiento:
 
    * El origen es un lanzamiento existente.
    * Puede [promocionar un lanzamiento anidado](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) a cualquier destino; puede ser un lanzamiento principal o las páginas de origen de nivel superior (producción).
 
-   ![chlimage_1-113](assets/chlimage_1-113.png)
+  ![Información general sobre el lanzamiento anidado](assets/chlimage_1-113.png)
 
-   >[!CAUTION]
-   >
-   >Al eliminar un lanzamiento, se quitarán el lanzamiento en sí y todos los lanzamientos anidados descendentes.
+  >[!CAUTION]
+  >
+  >Al eliminar un lanzamiento, se quitarán el lanzamiento en sí y todos los lanzamientos anidados descendentes.
 
 >[!NOTE]
 >
@@ -121,8 +121,8 @@ La consola Lanzamientos proporciona una descripción general de los lanzamientos
 1. Abra el **Referencias** y seleccione la página de origen.
 1. Seleccionar **Lanzamientos**, se enumerarán los lanzamientos existentes:
 
-   ![screen-shot_2019-03-05at121901-1](assets/screen-shot_2019-03-05at121901-1.png)
+   ![Pestaña Referencia: Lanzamientos](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Pulse o haga clic en el lanzamiento adecuado. Se mostrará una lista de acciones posibles:
 
-   ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
+   ![Seleccione iniciar para mostrar las posibles acciones](assets/screen-shot_2019-03-05at121952-1.png)

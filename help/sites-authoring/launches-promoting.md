@@ -10,9 +10,9 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '773'
 ht-degree: 32%
 
 ---
@@ -48,7 +48,6 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 >* [Lanzamientos: el orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obtener más información sobre la promoción y publicación automáticas.
 >
 
-
 Puede promocionar lanzamientos desde el **Sites** o la **Lanzamientos** consola:
 
 1. Abra:
@@ -60,17 +59,18 @@ Puede promocionar lanzamientos desde el **Sites** o la **Lanzamientos** consola:
       1. Seleccionar **Lanzamientos** (por ejemplo, Lanzamientos (1)) para mostrar una lista de los lanzamientos específicos.
       1. Seleccione el lanzamiento específico para mostrar las acciones disponibles.
       1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
+
    * el **Lanzamientos** consola:
 
       1. Seleccione el lanzamiento (toque o haga clic en la miniatura).
       1. Seleccionar **Promocionar**.
-
 
 1. En el primer paso puede especificar:
 
    * **Destino**
 
       * **Eliminar lanzamiento después de la promoción**
+
    * **Ámbito**
 
       * **Promocionar lanzamiento completo**
@@ -89,7 +89,7 @@ Puede promocionar lanzamientos desde el **Sites** o la **Lanzamientos** consola:
 1. Seleccionar **Siguiente** para continuar.
 1. Puede revisar las páginas que se promocionarán, que dependerán del intervalo de páginas que haya elegido:
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![Revisar páginas para promocionar](assets/chlimage_1-102.png)
 
 1. Seleccionar **Promocionar**.
 
@@ -97,7 +97,7 @@ Puede promocionar lanzamientos desde el **Sites** o la **Lanzamientos** consola:
 
 Cuando está editando una página de lanzamiento, la acción **Promocionar lanzamiento** también está disponible en **Información de la página**. Esta acción abrirá el asistente para recopilar la información necesaria.
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![Promocionar lanzamiento](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Cuando está editando una página de lanzamiento, la acción **Promocionar lanza
 
 Después de crear un lanzamiento anidado, puede promoverlo de nuevo a cualquiera de los orígenes, incluido el origen raíz (producción).
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![Información general sobre la promoción de un lanzamiento anidado](assets/chlimage_1-104.png)
 
 1. Al igual que con [Creación de un lanzamiento anidado](#creatinganestedlaunchlaunchwithinalaunch), vaya a y seleccione el lanzamiento necesario en el **Lanzamientos** o la **Referencias** carril.
 1. Seleccione **Promocionar lanzamiento** para abrir el asistente.
@@ -121,6 +121,7 @@ Puede promocionar a cualquiera de los orígenes.
 
       * **Eliminar lanzamiento después de la promoción**
 Después de la promoción, se eliminarán el lanzamiento seleccionado y los lanzamientos anidados en él.
+
    * **Ámbito**
 Aquí puede seleccionar si desea promocionar el lanzamiento completo o solo las páginas que se han editado. En este último caso, puede seleccionar incluir/excluir páginas secundarias. La configuración predeterminada es promocionar solo los cambios de página para la página actual:
 
@@ -129,12 +130,12 @@ Aquí puede seleccionar si desea promocionar el lanzamiento completo o solo las 
       * **Promocionar página actual**
       * **Promocionar la página actual y sus páginas secundarias**
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![Configuración para promocionar un lanzamiento](assets/chlimage_1-105.png)
 
 1. Seleccione **Siguiente**.
 1. Revise los detalles de la promoción antes de seleccionar **Promocionar**:
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![Revisar detalles y promocionar](assets/chlimage_1-106.png)
 
    >[!NOTE]
    >
@@ -142,7 +143,7 @@ Aquí puede seleccionar si desea promocionar el lanzamiento completo o solo las 
 
 1. Sus cambios se promocionarán y reflejarán en la **Lanzamientos** consola:
 
-   ![chlimage_1-107](assets/chlimage_1-107.png)
+   ![Consola de lanzamientos](assets/chlimage_1-107.png)
 
 ## Procesamiento de páginas promocionadas mediante el flujo de trabajo de AEM {#processing-promoted-pages-using-aem-workflow}
 
@@ -156,4 +157,4 @@ Para iniciar un flujo de trabajo automáticamente cuando se promocionan páginas
 
 Por ejemplo, puede generar automáticamente solicitudes de activación de página cuando los autores promocionen páginas de Lanzamiento. Configure un iniciador de flujo de trabajo para iniciar el flujo de trabajo de activación de solicitud cuando se modifique el nodo del paquete.
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![Iniciador de flujo de trabajo](assets/chlimage_1-108.png)

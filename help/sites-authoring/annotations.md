@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '642'
 ht-degree: 40%
 
 ---
@@ -120,4 +120,4 @@ El modo Anotar permite crear, editar, mover o eliminar anotaciones en el conteni
 
 Las anotaciones no aparecen en el modo de edición, pero el distintivo de la esquina superior derecha de la barra de herramientas mostrará el número de anotaciones de la página actual. Este distintivo sustituye al icono Anotaciones predeterminado, y además funciona como vínculo rápido que le permite acceder al modo de anotación y salir de él:
 
-![chlimage_1-242](assets/chlimage_1-242.png)
+![Indicador de anotaciones](assets/chlimage_1-242.png)

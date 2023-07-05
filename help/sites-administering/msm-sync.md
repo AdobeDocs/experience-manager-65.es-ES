@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 96aa75dec7433aa3961944fa57a80c4719316ba5
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '2696'
-ht-degree: 28%
+source-wordcount: '2702'
+ht-degree: 29%
 
 ---
 
@@ -322,7 +322,7 @@ De forma predeterminada, se excluyen varias propiedades y tipos de nodos, que se
 
 De forma predeterminada, las propiedades que coinciden con las siguientes expresiones regulares se excluyen (es decir, no se actualizan) en el despliegue:
 
-![chlimage_1](assets/chlimage_1.png)
+![Acción de actualización de contenido de CQ MSM](assets/chlimage_1.png)
 
 Puede cambiar las expresiones que definen la lista de exclusión según sea necesario.
 
@@ -384,7 +384,7 @@ También puede configurar las opciones de configuración de despliegue para una 
 
    La sección **Configuración** muestra las opciones de configuración de lanzamiento que hereda la página.
 
-   ![chlimage_1-1](assets/chlimage_1-1.png)
+   ![Configuración](assets/chlimage_1-1.png)
 
 1. Si es necesario, ajuste la marca de **Herencia de Live Copy**. Si se selecciona, la configuración de la Live Copy es eficaz en todas las páginas secundarias.
 
@@ -392,7 +392,7 @@ También puede configurar las opciones de configuración de despliegue para una 
 
    Las configuraciones de despliegue seleccionadas aparecen debajo de la lista desplegable.
 
-   ![chlimage_1-2](assets/chlimage_1-2.png)
+   ![Configuraciones de despliegue seleccionadas](assets/chlimage_1-2.png)
 
 1. Haga clic o toque **Guardar**.
 
@@ -413,8 +413,7 @@ Tenga en cuenta que las páginas secundarias de la página de modelo heredan la 
 Especifique una configuración de despliegue para utilizarla como predeterminada del sistema. Para especificar el valor predeterminado, configure el servicio OSGi:
 
 * **Administrador de relaciones dinámicas de CQ WCM por día**
-el PID de servicio es 
-`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+el PID de servicio es `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Configure el servicio mediante las opciones [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o una [nodo del repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 

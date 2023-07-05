@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 54%
+source-wordcount: '263'
+ht-degree: 55%
 
 ---
 
@@ -42,35 +42,37 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
 
 * **Propiedades**
 
-   ![screen_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
+  ![screen_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
 
-   En la pestaña Propiedades puede:
+  En la pestaña Propiedades puede:
 
    * Consulte las propiedades generales del componente.
    * Ver cómo se [se ha definido un icono o una abreviatura](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para el componente.
 
       * Al hacer clic en el origen del icono, se le dirigirá a ese componente.
+
    * Ver el **Tipo de medio** y **Supertipo de recurso** (si se define) para el componente.
 
       * Al hacer clic en el supertipo de recurso, accederá a ese componente.
-   >[!NOTE]
-   >
-   >Debido a que `/apps` no se puede editar en el tiempo de ejecución, la consola Componentes es de solo lectura.
+
+  >[!NOTE]
+  >
+  >Debido a que `/apps` no se puede editar en el tiempo de ejecución, la consola Componentes es de solo lectura.
 
 * **Políticas**
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+  ![Políticas](assets/chlimage_1-169.png)
 
 * **Uso de Live**
 
-   ![chlimage_1-170](assets/chlimage_1-170.png)
+  ![Uso de Live](assets/chlimage_1-170.png)
 
-   >[!CAUTION]
-   >
-   >Dada la naturaleza de la información recopilada para esta vista, puede tardar un rato en recopilarse o mostrarse. 
+  >[!CAUTION]
+  >
+  >Dada la naturaleza de la información recopilada para esta vista, puede tardar un rato en recopilarse o mostrarse. 
 
 * **Documentación**
 
-   Si el desarrollador ha proporcionado [documentación del componente](/help/sites-developing/developing-components.md#documenting-your-component), aparecerá en la **Documentación** pestaña. Si no hay documentación disponible, no se mostrará la pestaña **Documentación.**
+  Si el desarrollador ha proporcionado [documentación del componente](/help/sites-developing/developing-components.md#documenting-your-component), aparecerá en la **Documentación** pestaña. Si no hay documentación disponible, no se mostrará la pestaña **Documentación.**
 
-   ![chlimage_1-171](assets/chlimage_1-171.png)
+  ![Documentación](assets/chlimage_1-171.png).

@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 42%
+source-wordcount: '348'
+ht-degree: 41%
 
 ---
 
@@ -45,7 +45,7 @@ Puede crear contenido de forma eficaz para sitios multinacionales y multilingüe
 
 El diagrama siguiente ilustra cómo se cruzan los conceptos principales (pero no muestra todos los niveles/elementos implicados):
 
-![chlimage_1-71](assets/chlimage_1-71a.png)
+![Diagrama que muestra los conceptos principales de MSM y traducción](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
@@ -61,9 +61,8 @@ El diagrama siguiente ilustra cómo se cruzan los conceptos principales (pero no
 >Para todos los casos de uso, se recomienda leer las siguientes prácticas recomendadas:
 >
 >* [Prácticas recomendadas para MSM](/help/sites-administering/msm-best-practices.md); especialmente:
-   >
-   >   * [Crear sitio](/help/sites-administering/msm-best-practices.md#create-site)
-   >   * [MSM y sitios web multilingües](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>   * [Crear sitio](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [MSM y sitios web multilingües](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Prácticas recomendadas para la traducción](/help/sites-administering/tc-bp.md)
-

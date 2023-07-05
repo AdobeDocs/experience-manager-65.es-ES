@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2667'
 ht-degree: 34%
 
 ---
@@ -45,80 +45,79 @@ Existen muchos casos de uso para MSM y Live Copies, algunos de los cuales son:
 
 * **Multinacionales: empresa global a local**
 
-   Un caso de uso típico que admite MSM es reutilizar contenido en varios sitios multinacionales en el mismo idioma. Esto permite reutilizar el contenido principal, aunque admite variaciones nacionales.
+  Un caso de uso típico que admite MSM es reutilizar contenido en varios sitios multinacionales en el mismo idioma. Esto permite reutilizar el contenido principal, aunque admite variaciones nacionales.
 
-   Por ejemplo, la sección en inglés de la muestra del sitio de referencia de We.Retail se crea para los clientes de EE. UU. La mayor parte del contenido de este sitio también puede utilizarse para otros sitios de We.Retail que atienden a clientes de habla inglesa de diferentes países y culturas. El contenido principal sigue siendo el mismo en todos los sitios, mientras que se pueden llevar a cabo ajustes regionales.
+  Por ejemplo, la sección en inglés de la muestra del sitio de referencia de We.Retail se crea para los clientes de EE. UU. La mayor parte del contenido de este sitio también puede utilizarse para otros sitios de We.Retail que atienden a clientes de habla inglesa de diferentes países y culturas. El contenido principal sigue siendo el mismo en todos los sitios, mientras que se pueden llevar a cabo ajustes regionales.
 
-   La siguiente estructura se puede utilizar para sitios de Estados Unidos, Reino Unido, Canadá y Australia:
+  La siguiente estructura se puede utilizar para sitios de Estados Unidos, Reino Unido, Canadá y Australia:
 
-   ```xml
-   /content
-       |- we.retail
-           |- language-masters
-               |- en
-       |- we.retail
-           |- us
-               |- en
-       |- we.retail
-           |- gb
-               |- en
-       |- we.retail
-           |- ca
-               |- en
-       |- we.retail
-           |- au
-               |- en
-   ```
+  ```xml
+  /content
+      |- we.retail
+          |- language-masters
+              |- en
+      |- we.retail
+          |- us
+              |- en
+      |- we.retail
+          |- gb
+              |- en
+      |- we.retail
+          |- ca
+              |- en
+      |- we.retail
+          |- au
+              |- en
+  ```
 
-   >[!NOTE]
-   >
-   >MSM no traduce el contenido. Se utiliza para crear la estructura necesaria e implementar el contenido.
-   >
-   >
-   >Consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md) si desea ampliar un ejemplo de este tipo.
+  >[!NOTE]
+  >
+  >MSM no traduce el contenido. Se utiliza para crear la estructura necesaria e implementar el contenido.
+  >
+  >
+  >Consulte [Traducción de contenido para sitios multilingües](/help/sites-administering/translation.md) si desea ampliar un ejemplo de este tipo.
 
 * **Nacional: de la sede central a las subdivisiones regionales**
 
-   Alternativamente, una empresa con una red de distribuidores podría querer sitios web separados para sus concesionarios individuales, cada uno de los cuales es una variación del sitio principal proporcionado por la sede central. Esto podría ser para una sola empresa con múltiples oficinas regionales, o un sistema nacional de franquicias compuesto por un franquiciador central y múltiples franquicias locales.
+  Alternativamente, una empresa con una red de distribuidores podría querer sitios web separados para sus concesionarios individuales, cada uno de los cuales es una variación del sitio principal proporcionado por la sede central. Esto podría ser para una sola empresa con múltiples oficinas regionales, o un sistema nacional de franquicias compuesto por un franquiciador central y múltiples franquicias locales.
 
-   La sede central puede proporcionar la información básica, mientras que las entidades regionales pueden añadir información local, como detalles de contacto, horarios de apertura y eventos.
+  La sede central puede proporcionar la información básica, mientras que las entidades regionales pueden añadir información local, como detalles de contacto, horarios de apertura y eventos.
 
-   ```xml
-   /content
-       |- head-office-Berlin
-       |- branch-Hamburg
-       |- branch-Stuttgart
-       |- branch-Munich
-       |- branch-Frankfurt
-   ```
+  ```xml
+  /content
+      |- head-office-Berlin
+      |- branch-Hamburg
+      |- branch-Stuttgart
+      |- branch-Munich
+      |- branch-Frankfurt
+  ```
 
 * **Varias versiones**
 
-   O puede utilizar MSM para crear versiones de una subrama específica. Por ejemplo, un subsitio de soporte que contenga detalles de las diferentes versiones de un producto específico, donde la información base permanece constante y solo es necesario cambiar las funciones actualizadas:
+  O puede utilizar MSM para crear versiones de una subrama específica. Por ejemplo, un subsitio de soporte que contenga detalles de las diferentes versiones de un producto específico, donde la información base permanece constante y solo es necesario cambiar las funciones actualizadas:
 
-   ```xml
-   /content
-       |- support
-           |- product X
-               |- v5.0
-               |- v4.0
-               |- v3.0
-               |- v2.0
-               |- v1.0
-   ```
+  ```xml
+  /content
+      |- support
+          |- product X
+              |- v5.0
+              |- v4.0
+              |- v3.0
+              |- v2.0
+              |- v1.0
+  ```
 
-   >[!NOTE]
-   >
-   >En tal escenario siempre está la cuestión de si hacer una copia directa o usar Live Copies.
-   >
-   >Hay un equilibrio de:
-   >
-   >  * La cantidad de contenido principal que deberá actualizarse en las distintas versiones.
-   >
-   >Frente a:
-   >
-   >  * La cantidad de copias individuales que deberán ajustarse.
-
+  >[!NOTE]
+  >
+  >En tal escenario siempre está la cuestión de si hacer una copia directa o usar Live Copies.
+  >
+  >Hay un equilibrio de:
+  >
+  >  * La cantidad de contenido principal que deberá actualizarse en las distintas versiones.
+  >
+  >Frente a:
+  >
+  >  * La cantidad de copias individuales que deberán ajustarse.
 
 ## MSM desde la IU {#msm-from-the-ui}
 
@@ -304,7 +303,7 @@ La forma básica de Live Copy tiene lo siguiente:
 
 * Los cambios se pueden [sincronizar](/help/sites-administering/msm-livecopy.md#synchronizing-your-live-copy) según los requisitos.
 
-![chlimage_1-367](assets/chlimage_1-367.png)
+![Sincronizar](assets/chlimage_1-367.png)
 
 #### Live Copy con páginas que no sean de Live Copy {#live-copy-with-non-live-copy-pages}
 
@@ -313,7 +312,7 @@ AEM AEM Cuando crea una Live Copy en la rama de Live Copy, puede ver y navegar p
 * Estos recursos no tienen relación activa con las páginas de origen/modelo y no se sincronizan.
 * Pueden producirse escenarios que MSM gestione como casos especiales. Por ejemplo, cuando usted (o un proceso) crea una página con la misma posición y el mismo nombre en las ramas de origen/modelo y Live Copy. Para estas situaciones, consulte [Conflictos de despliegue de MSM](/help/sites-administering/msm-rollout-conflicts.md) para obtener más información.
 
-![chlimage_1-368](assets/chlimage_1-368.png)
+![Despliegue de conflictos](assets/chlimage_1-368.png)
 
 #### Live Copies anidadas {#nested-live-copies}
 
@@ -322,9 +321,9 @@ Cuando usted (o un proceso) crea un [nueva página dentro de una live copy exist
 * Se puede continuar con un despliegue profundo activado para Live Copy de nivel superior en la Live Copy anidada (por ejemplo, si el déclencheur coincide).
 * Cualquier vínculo entre los orígenes se reescribirá dentro de las Live Copies.
 
-   Por ejemplo, los vínculos del segundo al primer modelo se reescribirán como vínculos de la Live Copy anidada/segunda a la primera Live Copy.
+  Por ejemplo, los vínculos del segundo al primer modelo se reescribirán como vínculos de la Live Copy anidada/segunda a la primera Live Copy.
 
-![chlimage_1-369](assets/chlimage_1-369.png)
+![Vínculos entre orígenes](assets/chlimage_1-369.png)
 
 >[!NOTE]
 >
@@ -350,13 +349,13 @@ El origen forma el modelo para la Live Copy. El modelo se define al:
 
 * [Crear una configuración de modelo](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration)
 
-   La configuración define (por adelantado) las páginas que se utilizarán para crear la Live Copy.
+  La configuración define (por adelantado) las páginas que se utilizarán para crear la Live Copy.
 
 * [Crear una Live Copy de una página](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
-   Las páginas utilizadas para crear la Live Copy (las páginas de origen) son las páginas de modelo.
+  Las páginas utilizadas para crear la Live Copy (las páginas de origen) son las páginas de modelo.
 
-   Una configuración de modelo puede hacer referencia a la página de origen o no.
+  Una configuración de modelo puede hacer referencia a la página de origen o no.
 
 ### Desplegar y sincronizar {#rollout-and-synchronize}
 
@@ -365,15 +364,15 @@ Un despliegue es la acción central de MSM que sincroniza Live Copies con su ori
 * Una [configuración de despliegue](#rollout-configurations) puede definirse de modo que [eventos](/help/sites-administering/msm-sync.md#rollout-triggers) específicos puedan provocar un despliegue automáticamente.
 * Al crear una página de modelo puede utilizar el [Despliegue](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) para insertar los cambios en live copy.
 
-   **El comando Despliegue** está disponible en una página de modelo a la que se hace referencia mediante una configuración de modelo.
+  **El comando Despliegue** está disponible en una página de modelo a la que se hace referencia mediante una configuración de modelo.
 
-   ![chlimage_1-370](assets/chlimage_1-370.png)
+  ![Despliegue](assets/chlimage_1-370.png)
 
 * Al crear una página de Live Copy, puede utilizar el complemento [Sincronizar](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) para extraer cambios del origen a la live copy.
 
-   El **Sincronizar** el comando siempre está disponible en la página live copy (independientemente de si la página de origen/modelo está incluida en una configuración de modelo).
+  El **Sincronizar** el comando siempre está disponible en la página live copy (independientemente de si la página de origen/modelo está incluida en una configuración de modelo).
 
-   ![chlimage_1-371](assets/chlimage_1-371.png)
+  ![Sincronizar](assets/chlimage_1-371.png)
 
 ### Opciones de configuración del lanzamiento {#rollout-configurations}
 
@@ -381,15 +380,15 @@ Una configuración de despliegue define cuándo y cómo se sincroniza una Live C
 
 * **Activador**
 
-   Un déclencheur es un evento que hace que se produzca la acción de sincronización dinámica, como la activación de una página de origen. MSM define los activadores que puede utilizar.
+  Un déclencheur es un evento que hace que se produzca la acción de sincronización dinámica, como la activación de una página de origen. MSM define los activadores que puede utilizar.
 
 * **Acciones de sincronización**
 
-   Se realizan en la Live Copy para sincronizarla con el origen. Algunas acciones de ejemplo son copiar contenido, ordenar nodos secundarios y activar la página de Live Copy. MSM proporciona una serie de acciones de sincronización.
+  Se realizan en la Live Copy para sincronizarla con el origen. Algunas acciones de ejemplo son copiar contenido, ordenar nodos secundarios y activar la página de Live Copy. MSM proporciona una serie de acciones de sincronización.
 
-   >[!NOTE]
-   >
-   >Puede crear acciones personalizadas para su instancia mediante la API de Java.
+  >[!NOTE]
+  >
+  >Puede crear acciones personalizadas para su instancia mediante la API de Java.
 
 Las configuraciones de despliegue se pueden reutilizar, de modo que más de una Live Copy pueda utilizar la misma configuración de despliegue. Varias [configuraciones de despliegue](/help/sites-administering/msm-sync.md#installed-rollout-configurations) se incluyen en una instalación estándar.
 
@@ -440,10 +439,10 @@ Los siguientes pasos describen el procedimiento estándar para utilizar MSM para
 MSM proporciona herramientas para que su implementación se pueda adaptar a las complejidades excepcionales que puedan existir al compartir contenido:
 
 * **Configuraciones de despliegue personalizadas**
-   [Creación de una configuración de despliegue](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) cuando las configuraciones de despliegue instaladas no cumplen con sus requisitos. Puede utilizar cualquier activador de despliegue y acción de sincronización disponible.
+  [Creación de una configuración de despliegue](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) cuando las configuraciones de despliegue instaladas no cumplen con sus requisitos. Puede utilizar cualquier activador de despliegue y acción de sincronización disponible.
 
 * **Acciones de sincronización personalizadas**
-   [Crear una acción de sincronización personalizada](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) cuando las acciones instaladas no cumplen los requisitos específicos de la aplicación. MSM proporciona una API de Java para crear acciones de sincronización personalizadas.
+  [Crear una acción de sincronización personalizada](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) cuando las acciones instaladas no cumplen los requisitos específicos de la aplicación. MSM proporciona una API de Java para crear acciones de sincronización personalizadas.
 
 ## Prácticas recomendadas   {#best-practices}
 

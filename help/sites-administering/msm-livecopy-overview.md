@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 34%
+source-wordcount: '553'
+ht-degree: 33%
 
 ---
 
@@ -44,7 +44,7 @@ La **Información general de Live Copy** se puede abrir desde el panel lateral *
 1. En la consola **Sites**, [vaya a la página de modelo y selecciónela](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Abra el **[Referencias](/help/sites-authoring/basic-handling.md#references)** panel y seleccione **Live Copies**.
 
-   ![chlimage_1-359](assets/chlimage_1-359.png)
+   ![Panel Referencias: Live Copies](assets/chlimage_1-359.png)
 
    >[!NOTE]
    >
@@ -60,7 +60,7 @@ La **Información general de Live Copy** se puede abrir al ver las propiedades d
 1. Abra las **Propiedades** de la página de modelo adecuada.
 1. Abra la pestaña **Modelo**, la **Información general de Live Copy** se mostrará en la barra de herramientas superior:
 
-   ![chlimage_1-360](assets/chlimage_1-360.png)
+   ![Pestaña Modelo: Información general de Live Copy](assets/chlimage_1-360.png)
 
 1. Seleccionar **Información general de Live Copy** para mostrar y utilizar la descripción general de todas las live copies relacionadas con el modelo actual.
 
@@ -81,7 +81,7 @@ El **Información general de Live Copy** también se puede utilizar para realiza
 
 Cuando selecciona una página de modelo, están disponibles las siguientes acciones:
 
-![chlimage_1-361](assets/chlimage_1-361.png)
+![Modelo seleccionado: acciones disponibles](assets/chlimage_1-361.png)
 
 * Editar
 
@@ -95,7 +95,7 @@ Cuando selecciona una página de modelo, están disponibles las siguientes accio
 
 Al seleccionar una página de Live Copy, están disponibles las siguientes acciones:
 
-![chlimage_1-362](assets/chlimage_1-362.png)
+![Página Live Copy seleccionada: acciones disponibles](assets/chlimage_1-362.png)
 
 * Editar
 
@@ -136,10 +136,10 @@ La consola **Estado de la relación** tiene dos pestañas que proporcionan una a
 
 Esta pestaña proporciona información detallada sobre el estado de la relación entre el modelo y la Live Copy:
 
-![chlimage_1-363](assets/chlimage_1-363.png)
+![Información del estado de relación](assets/chlimage_1-363.png)
 
 ### Información de Live Copy {#live-copy-information}
 
 Esta pestaña le permite ver y editar la configuración de Live Copy:
 
-![chlimage_1-364](assets/chlimage_1-364.png)
+![Información de Live Copy](assets/chlimage_1-364.png)

@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 7f595bec8ea138d5a73a17d0548320a31544dcd1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 48%
+source-wordcount: '1040'
+ht-degree: 46%
 
 ---
 
@@ -41,6 +41,7 @@ Puede crear un lanzamiento desde la consola Sitios o Lanzamientos:
    * **Lanzamientos**:
 
       1. Seleccionar **Crear lanzamiento** en la barra de herramientas para abrir el asistente.
+
    * **Sites**:
 
       1. Seleccione **Crear** en la barra de herramientas para abrir el cuadro de selección.
@@ -59,7 +60,7 @@ Puede crear un lanzamiento desde la consola Sitios o Lanzamientos:
 
    Repita el proceso tantas veces como sea necesario.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![Seleccionar origen y agregar páginas](assets/chlimage_1-225.png)
 
    >[!NOTE]
    >
@@ -77,7 +78,7 @@ Puede crear un lanzamiento desde la consola Sitios o Lanzamientos:
 
    Continúe con **Siguiente**.
 
-   ![chlimage_1-226](assets/chlimage_1-226.png)
+   ![Especifique si desea incluir las páginas](assets/chlimage_1-226.png)
 
 1. En el paso **Propiedades** del asistente, puede especificar lo siguiente:
 
@@ -86,11 +87,11 @@ Puede crear un lanzamiento desde la consola Sitios o Lanzamientos:
    * **utilice una plantilla nueva para sustituir la página**: consulte [Creación de un lanzamiento con una plantilla nueva](#create-launch-with-new-template) para obtener más información.
    * **Heredar los datos publicados de la página de origen**: seleccione esta opción para actualizar automáticamente el contenido de las páginas de lanzamiento cuando cambien las páginas de origen. Para conseguirlo, esta opción convierte el lanzamiento en una [live copy](/help/sites-administering/msm.md).
 
-      Está opción está seleccionada de forma predeterminada.
+     Está opción está seleccionada de forma predeterminada.
 
    * **Fecha del lanzamiento**: la fecha y hora en que la copia de lanzamiento se debe activar (depende del indicador **Producción lista**; consulte [Lanzamientos: orden de los eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
-   ![chlimage_1-227](assets/chlimage_1-227.png)
+   ![Especificar propiedades](assets/chlimage_1-227.png)
 
 1. Uso **Crear** para completar el proceso y crear el nuevo lanzamiento. El cuadro de diálogo de confirmación le preguntará si desea abrir el lanzamiento inmediatamente.
 
@@ -101,22 +102,20 @@ Puede crear un lanzamiento desde la consola Sitios o Lanzamientos:
 
 ### Creación de un lanzamiento con una plantilla nueva {#create-launch-with-new-template}
 
-Cuándo [creación de un lanzamiento](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) puede seleccionar si desea utilizar una plantilla nueva:
-
-**con una plantilla nueva para sustituir la página**
+Cuándo [creación de un lanzamiento](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) puede seleccionar si desea utilizar una plantilla nueva con la opción: **uso de una nueva plantilla para reemplazar la página**
 
 >[!CAUTION]
 >
 >Esta opción solo está disponible al crear un lanzamiento desde la consola **Sitios**. No está disponible al crear un lanzamiento desde la consola **Lanzamientos**.
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![Utilice una plantilla nueva para reemplazar la página](assets/chlimage_1-228.png)
 
 Al seleccionar esto, ocurrirá lo siguiente:
 
 * actualizar las demás opciones disponibles,
 * incluya un nuevo paso en el que puede seleccionar la plantilla requerida.
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![Seleccionar plantilla](assets/chlimage_1-229.png)
 
 >[!CAUTION]
 >
@@ -139,11 +138,11 @@ Crear un lanzamiento anidado desde la consola **Lanzamientos** es básicamente l
 1. En la consola **Lanzamientos**, seleccione **Crear**.
 1. Seleccione **Agregar páginas** y, a continuación, vaya a la rama de lanzamientos especificando `/content/launches` en el filtro. Seleccione el lanzamiento necesario y confirme con la opción **Seleccionar**:
 
-   ![chlimage_1-230](assets/chlimage_1-230.png)
+   ![Seleccionar lanzamiento](assets/chlimage_1-230.png)
 
 1. Continúe con **Siguiente** y complete la **Propiedades** como con cualquier otro lanzamiento.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![Especificar propiedades](assets/chlimage_1-231.png)
 
 #### Creación de un lanzamiento anidado: consola Sites {#creating-a-nested-launch-sites-console}
 

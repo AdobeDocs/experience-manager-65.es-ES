@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 32%
+source-wordcount: '578'
+ht-degree: 31%
 
 ---
 
@@ -52,7 +52,7 @@ Por ejemplo, si se comparan versiones, la versión actual se muestra a la izquie
 
 El origen de ambas páginas se muestra claramente en la barra de encabezado de la parte superior de la ventana del explorador.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![Origen mostrado en el encabezado](assets/chlimage_1-109.png)
 
 La comparación de diferencias detecta los cambios en los niveles de componente y HTML. Los elementos que se han cambiado se resaltan con colores diferentes.
 
@@ -78,7 +78,7 @@ Para centrarse en un contenido específico, puede hacer clic en el icono de pant
 
 El lado seleccionado llenará toda la ventana, pero la barra permanecerá en la parte superior para que pueda cambiar entre las dos páginas.
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![La barra en la parte superior le permite cambiar entre páginas](assets/chlimage_1-110.png)
 
 También puede cerrar la vista de pantalla completa haciendo clic en el icono para salir del modo de pantalla completa.
 

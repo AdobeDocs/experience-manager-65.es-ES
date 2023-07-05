@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 25%
+source-wordcount: '540'
+ht-degree: 32%
 
 ---
 
@@ -34,7 +34,7 @@ El entorno de creación proporciona los mecanismos para crear, actualizar y revi
 * Un autor crea y revisa el contenido (que puede ser de varios tipos; por ejemplo, páginas, recursos, publicaciones, etc.)
 * que, en algún momento, se publicará en su sitio web.
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+![Información general sobre entornos](assets/chlimage_1-132.png)
 
 AEM En el entorno de creación, la funcionalidad de la creación de informes está disponible a través de dos IU de. Desde el entorno de publicación se diseña todo el aspecto y funcionamiento de la interfaz de usuario.
 
@@ -46,7 +46,7 @@ El creador trabaja en lo que se conoce como **entorno de creación**. Esto propo
 >
 >Su cuenta necesita los derechos de acceso adecuados para crear, editar o publicar contenido.
 
-Según la configuración de su instancia y de sus derechos de acceso personales, puede realizar muchas tareas en su contenido, entre otras:
+Según la configuración de su instancia y sus derechos de acceso personales, puede realizar muchas tareas en el contenido, incluidas (entre otras):
 
 * generar contenido nuevo o editar contenido existente en una página
 * usar plantillas predefinidas para crear páginas de contenido nuevo
@@ -79,15 +79,14 @@ AEM Cuando el sitio de la es un [sitio comunitario](/help/communities/overview.m
 >Lamentablemente, a veces se produce una superposición en la terminología utilizada. Esto puede ocurrir con:
 >
 >* **Publicar o cancelar la publicación**
-   >  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
+>  Estos son los términos principales de las acciones que harán que el contenido esté disponible o no para los visitantes en su entorno de publicación.
 >
 >* **Activar o desactivar**
-   >  Estos términos son sinónimos de publicar y cancelar la publicación.
+>  Estos términos son sinónimos de publicar y cancelar la publicación.
 >
 >* **Replicar o replicación**
-   >  Son los términos técnicos utilizados para indicar el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar de forma inversa los comentarios del usuario.
+>  Son los términos técnicos utilizados para indicar el movimiento de datos (p. ej., contenido de página, archivos, código, comentarios del usuario) de un entorno a otro; es decir, al publicar o replicar de forma inversa los comentarios del usuario.
 >
-
 
 #### Dispatcher {#dispatcher}
 
